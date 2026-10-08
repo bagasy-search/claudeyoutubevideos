@@ -33,8 +33,8 @@ export const Dial: React.FC<{ x: number; y: number; d?: number; ang: number; lab
       <svg width={d} height={d} style={{ position: "absolute" }}>
         {marks.map((m, i) => <path key={i} d={arc(m.a0, m.a1)} fill="none" stroke={m.c} strokeWidth={d * 0.045} />)}
         {Array.from({ length: 9 }, (_, i) => { const a = (-120 + i * 30) * Math.PI / 180 - Math.PI / 2; return <line key={i} x1={r + Math.cos(a) * r * 0.82} y1={r + Math.sin(a) * r * 0.82} x2={r + Math.cos(a) * r * 0.69} y2={r + Math.sin(a) * r * 0.69} stroke="#E7E9EC" strokeWidth={d * 0.014} />; })}
-        {lo ? <text x={r * 0.42} y={r * 1.62} fill="#E7E9EC" fontFamily={LABEL} fontWeight={700} fontSize={d * 0.09}>{lo}</text> : null}
-        {hi ? <text x={r * 1.4} y={r * 1.62} fill="#E7E9EC" fontFamily={LABEL} fontWeight={700} fontSize={d * 0.09}>{hi}</text> : null}
+        {lo ? <text x={r * 0.3} y={r * 1.3} fill="#E7E9EC" fontFamily={LABEL} fontWeight={700} fontSize={d * 0.09}>{lo}</text> : null}
+        {hi ? <text x={r * 1.55} y={r * 1.3} fill="#E7E9EC" fontFamily={LABEL} fontWeight={700} fontSize={d * 0.09}>{hi}</text> : null}
       </svg>
       <div style={{ position: "absolute", left: r - d * 0.014, top: r - r * 0.72, width: d * 0.028, height: r * 0.72, background: "#F27A1A", borderRadius: 6, transformOrigin: "50% 100%", rotate: `${ang}deg`, boxShadow: "0 0 10px rgba(242,122,26,0.6)" }} />
       <div style={{ position: "absolute", left: r - d * 0.05, top: r - d * 0.05, width: d * 0.1, height: d * 0.1, borderRadius: "50%", background: "#3A3F48" }} />

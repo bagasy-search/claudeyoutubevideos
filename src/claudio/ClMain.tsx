@@ -29,6 +29,7 @@ import { ClFoilTest, ClHouseMap, ClWardrobeGap, ClTapeTest } from "./ClAlbanil";
 import { ClHidden50, ClFridgeBack, ClPeroxide, ClTrailMap } from "./ClFumigador";
 import { ClDoorGap, ClBarrierLine, ClPerimeter30 } from "./ClPuerta";
 import { ClFuelGauge, ClCarMap, ClKeyFob3D, ClChildLock, ClAirFlow, ClTireLabel, ClTread3D, ClBatterySwap, ClRangeMeter, ClPanicWaves, ClDoorUnlock, ClProxStart, ClPCV3D, ClEnginePressure, ClSevereChart, ClColdStart, ClFilterLight, ClLogbook } from "./ClMecanico";
+import { ClRadiator3D, ClTempGauge, ClBubbleTest, ClMixJug, ClHotCap } from "./ClMec_mecvinagre";
 import { ClPoisonWall, ClFlourMap, ClCoinHole, ClTrapSet } from "./ClRaton";
 import { ClHeatSides, ClShadeGap, ClCrossVent, ClThermo, ClEarthTube } from "./ClCalor";
 import { ClWickWall, ClThreeDamp, ClPencilLine } from "./ClHumedad";
@@ -82,6 +83,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 
 const COMP: Record<string, React.FC<any>> = {
   ClFuelGauge, ClCarMap, ClKeyFob3D, ClChildLock, ClAirFlow, ClTireLabel, ClTread3D, ClBatterySwap, ClRangeMeter, ClPanicWaves, ClDoorUnlock, ClProxStart, ClPCV3D, ClEnginePressure, ClSevereChart, ClColdStart, ClFilterLight, ClLogbook,
+  ClRadiator3D, ClTempGauge, ClBubbleTest, ClMixJug, ClHotCap,
   ClDoorGap, ClBarrierLine, ClPerimeter30,
   ClPoisonWall, ClFlourMap, ClCoinHole, ClTrapSet,
   ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef, ClWasher3D, ClFilterFind, ClDoseCap, ClSmellTest, ClPores3D, ClSwab, ClSpores, ClFlashlight, ClWallLeak, ClHygrometer, ClTray3D, ClPasteCheck, ClCoating, ClTally, ClReceipt, ClCaulk3D, ClFilmWrap, ClTubMap, ClCaulkGun, ClFoilTest, ClHouseMap, ClWardrobeGap, ClTapeTest, ClHeatSides, ClShadeGap, ClCrossVent, ClThermo, ClEarthTube, ClWickWall, ClThreeDamp, ClPencilLine, ClWaterWalk, ClHoseTest, ClMembrane, ClCoinTest, ClPlasterTell, ClCrackTypes, ClVFill, ClDesiccant, ClClosetAir, ClSaltTest, ClHidden50, ClFridgeBack, ClPeroxide, ClTrailMap,

@@ -6,8 +6,8 @@
  },
  {
   "name": "bd_carradiator1",
-  "q": "car radiator",
-  "scene": "Ordinary real footage: car radiator, real everyday look, no person looking at the camera."
+  "q": "car grille",
+  "scene": "Ordinary real footage: car grille, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_autorepairshop2",
@@ -26,13 +26,13 @@
  },
  {
   "name": "bd_cardashboard5",
-  "q": "car dashboard",
-  "scene": "Ordinary real footage: car dashboard, real everyday look, no person looking at the camera."
+  "q": "dashboard gauges",
+  "scene": "Ordinary real footage: dashboard gauges, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_citytraffic6",
-  "q": "city traffic",
-  "scene": "Ordinary real footage: city traffic, real everyday look, no person looking at the camera."
+  "q": "street cars daytime",
+  "scene": "Ordinary real footage: street cars daytime, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_gasstation7",
@@ -46,8 +46,8 @@
  },
  {
   "name": "bd_coolant9",
-  "q": "coolant",
-  "scene": "Ordinary real footage: coolant, real everyday look, no person looking at the camera."
+  "q": "green liquid pouring",
+  "scene": "Ordinary real footage: green liquid pouring, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_radiatorhose10",
@@ -56,8 +56,8 @@
  },
  {
   "name": "bd_carhoodopen11",
-  "q": "car hood open",
-  "scene": "Ordinary real footage: car hood open, real everyday look, no person looking at the camera."
+  "q": "open car hood engine",
+  "scene": "Ordinary real footage: open car hood engine, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_mechanictools12",
@@ -71,18 +71,18 @@
  },
  {
   "name": "bd_carparkeddriveway14",
-  "q": "car parked driveway",
-  "scene": "Ordinary real footage: car parked driveway, real everyday look, no person looking at the camera."
+  "q": "silver car parked",
+  "scene": "Ordinary real footage: silver car parked, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_kitchencounter15",
-  "q": "kitchen counter",
-  "scene": "Ordinary real footage: kitchen counter, real everyday look, no person looking at the camera."
+  "q": "kitchen",
+  "scene": "Ordinary real footage: kitchen, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_steamengine16",
-  "q": "steam engine",
-  "scene": "Ordinary real footage: steam engine, real everyday look, no person looking at the camera."
+  "q": "hot engine",
+  "scene": "Ordinary real footage: hot engine, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_carfrontgrille17",
@@ -101,8 +101,8 @@
  },
  {
   "name": "bd_vinegar20",
-  "q": "vinegar",
-  "scene": "Ordinary real footage: vinegar, real everyday look, no person looking at the camera."
+  "q": "white vinegar",
+  "scene": "Ordinary real footage: white vinegar, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_waterpouring21",
@@ -131,8 +131,8 @@
  },
  {
   "name": "bd_oldcar26",
-  "q": "old car",
-  "scene": "Ordinary real footage: old car, real everyday look, no person looking at the camera."
+  "q": "used car lot",
+  "scene": "Ordinary real footage: used car lot, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_oilchange27",
@@ -161,8 +161,8 @@
  },
  {
   "name": "bd_carheadlights32",
-  "q": "car headlights",
-  "scene": "Ordinary real footage: car headlights, real everyday look, no person looking at the camera."
+  "q": "car headlight close",
+  "scene": "Ordinary real footage: car headlight close, real everyday look, no person looking at the camera, no logos or text."
  },
  {
   "name": "bd_toolchest33",

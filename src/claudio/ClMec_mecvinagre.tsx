@@ -20,7 +20,7 @@ const rnd = (s: number) => { const x = Math.sin(s * 127.1) * 43758.5453; return 
 
 // ── ClRadiator3D ─────────────────────────────────────────────────────────────
 const TUBES = 7;
-const RadMesh: React.FC<{ crust: number; f: number; flow: number; fluid: THREE.Color; mats: any; fizz: number }> = ({ crust, f, flow, fluid, mats, fizz }) => (
+const RadMesh: React.FC<{ crust: number; f: number; flow: number; fluid: any; mats: any; fizz: number }> = ({ crust, f, flow, fluid, mats, fizz }) => (
   <group rotation={[0.18, -0.5, 0]}>
     {/* tanques de arriba y abajo */}
     <mesh material={mats.tank} position={[0, 1.85, 0]}><boxGeometry args={[4.6, 0.5, 0.9]} /></mesh>
@@ -60,7 +60,7 @@ export const ClRadiator3D: React.FC<{ mode?: "clean" | "scale" | "flush"; bed?: 
   const fluid = new THREE.Color(mode === "clean" ? "#3FA34D" : mode === "scale" ? new THREE.Color("#3FA34D").lerp(new THREE.Color("#7A4A1E"), ease(k)).getStyle() : new THREE.Color("#7A4A1E").lerp(new THREE.Color("#D9C9A0"), ease(k)).getStyle());
   const fizz = mode === "flush" ? 1 - 0.6 * k : 0;
   const a = interpolate(f, [0, T], [-0.25, 0.25]);
-  const target = new THREE.Vector3(0, 0, 0), camPos = new THREE.Vector3(Math.sin(a) * 8, 0.6, Math.cos(a) * 8);
+  const target = new THREE.Vector3(0, 0, 0), camPos = new THREE.Vector3(Math.sin(a) * 11, 0.8, Math.cos(a) * 11);
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={901} dim={0.28} />
@@ -101,9 +101,9 @@ export const ClTempGauge: React.FC<{ mode?: "traffic" | "fixed" | "red"; bed?: s
         <Dial x={120} y={150} d={440} ang={-70} label="RPM" />
         <Dial x={800} y={150} d={440} ang={ang} label="TEMP" lo="C" hi="H" glow={glow} marks={[{ a0: 78, a1: 118, c: CL.red }, { a0: -25, a1: 25, c: "rgba(255,255,255,0.18)" }]} />
       </div>
-      {mode === "traffic" ? <><Tag x={200} y={70} text="En el tráfico" color={CL.navy} o={lin(f, 6, 16)} size={52} /><Note x={1360} y={640} o={lin(f, T * 0.6, T * 0.6 + 10)} big="Más arriba que nunca" small="no al rojo, pero sube" color={CL.red} w={500} /></> : null}
-      {mode === "fixed" ? <><Tag x={200} y={70} text="Una semana después" color={CL.navy} o={lin(f, 6, 16)} size={52} /><Note x={1360} y={640} o={lin(f, 18, 30)} big="En el medio" small="quieta ✓" w={440} /></> : null}
-      {mode === "red" ? <Note x={1300} y={620} o={lin(f, T * 0.6, T * 0.6 + 10)} big="Para, apaga y espera" small="nunca sigas en el rojo" color={CL.red} w={560} /> : null}
+      {mode === "traffic" ? <><Tag x={200} y={70} text="En el tráfico" color={CL.navy} o={lin(f, 6, 16)} size={52} /><Note x={1180} y={820} o={lin(f, T * 0.6, T * 0.6 + 10)} big="Más arriba que nunca" small="no al rojo, pero sube" color={CL.red} w={500} /></> : null}
+      {mode === "fixed" ? <><Tag x={200} y={70} text="Una semana después" color={CL.navy} o={lin(f, 6, 16)} size={52} /><Note x={1180} y={820} o={lin(f, 18, 30)} big="En el medio" small="quieta ✓" w={440} /></> : null}
+      {mode === "red" ? <Note x={1120} y={820} o={lin(f, T * 0.6, T * 0.6 + 10)} big="Para, apaga y espera" small="nunca sigas en el rojo" color={CL.red} w={560} /> : null}
       <RoomLight k={0.5} />
     </AbsoluteFill>
   );
@@ -201,7 +201,7 @@ export const ClMixJug: React.FC<{ mode?: "mix" | "timer"; bed?: string }> = ({ m
           <defs><clipPath id="mj_c"><path d={`M ${X0} 60 L ${X0 + 420} 60 L ${X0 + 400} ${60 + H0} Q ${X0 + 395} ${80 + H0} ${X0 + 370} ${80 + H0} L ${X0 + 50} ${80 + H0} Q ${X0 + 25} ${80 + H0} ${X0 + 20} ${60 + H0} Z`} /></clipPath></defs>
           <g clipPath="url(#mj_c)">
             <rect x={X0} y={60 + H0 - H0 * 0.2 * v} width={420} height={H0 * 0.2 * v + 30} fill="#EADFB8" opacity={0.85} />
-            <rect x={X0} y={60 + H0 - H0 * fill} width={420} height={H0 * (fill - 0.2 * v) + 2} fill="#D7E8F2" opacity={0.75} />
+            <rect x={X0} y={60 + H0 - H0 * fill} width={420} height={H0 * (fill - 0.2 * v) + 2} fill="#8FBBD6" opacity={0.78} />
             <rect x={X0} y={60 + H0 - H0 * fill - 6} width={420} height={10} fill="rgba(255,255,255,0.6)" />
           </g>
           <path d={`M ${X0} 60 L ${X0 + 420} 60 L ${X0 + 400} ${60 + H0} Q ${X0 + 395} ${80 + H0} ${X0 + 370} ${80 + H0} L ${X0 + 50} ${80 + H0} Q ${X0 + 25} ${80 + H0} ${X0 + 20} ${60 + H0} Z`} fill="rgba(255,255,255,0.18)" stroke="rgba(90,95,105,0.8)" strokeWidth={8} />
@@ -232,9 +232,10 @@ export const ClHotCap: React.FC<{ bed?: string }> = ({ bed }) => {
       <AbsoluteFill style={{ background: `radial-gradient(ellipse at 42% 50%, rgba(255,90,40,${0.22 * lin(f, 10, 30)}), rgba(255,90,40,0) 55%)` }} />
       {/* la tapa vista de arriba en perspectiva */}
       <div style={{ position: "absolute", left: 480, top: 240 + (1 - p) * 100, opacity: clamp01(p * 1.4), transform: "perspective(1400px) rotateX(48deg)" }}>
-        <div style={{ width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%, #D9DDE2, #8E949C 60%, #5E646C)", boxShadow: "0 40px 60px rgba(0,0,0,0.5), inset 0 0 0 26px #6F757D" }}>
+        <div style={{ position: "absolute", left: -90, top: -90, width: 700, height: 700, borderRadius: "50%", background: "radial-gradient(#3A3D42 55%, #2A2D33 70%, rgba(0,0,0,0) 72%)" }} />
+        <div style={{ position: "relative", width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%, #E3E6EA, #9AA0A8 60%, #5E646C)", boxShadow: "0 40px 60px rgba(0,0,0,0.5), inset 0 0 0 26px #6F757D" }}>
           {[0, 1].map((i) => <div key={i} style={{ position: "absolute", left: 60, top: 230, width: 400, height: 60, borderRadius: 30, background: "linear-gradient(#A9AEB5,#70767E)", rotate: `${i * 0}deg`, boxShadow: "0 6px 0 rgba(0,0,0,0.25)" }} />)}
-          <div style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: CL.red }}>⚠ NO ABRIR EN CALIENTE</div>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 110, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 54, color: CL.red, lineHeight: 1.05 }}>⚠ NO ABRIR<br />EN CALIENTE</div>
         </div>
       </div>
       {/* vapor */}

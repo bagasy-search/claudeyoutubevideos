@@ -112,6 +112,11 @@ function compFx(n, c, durS) {
   if (n === "ClColdStart") { add("foley/car_engine_start.flac", 0.3, 0.1, 1.8); if (P.mode === "wait") add("design/tick_clock_close.flac", 0.22, 0.4, durS - 0.6); }
   if (n === "ClFilterLight") { add("foley/plastic_snap.flac", 0.3, 0.2, 0.5); add("design/whoosh_slow_sweep.flac", 0.2, 0.4, 1.4); }
   if (n === "ClLogbook") { add("design/page_stiff.flac", 0.3, 0.05, 0.8); if (P.mode !== "gap") add("design/pencil_paper.flac", 0.34, 0.4, Math.min(2.5, durS * 0.6)); if (P.mode === "gap") add("design/impact_heartbeat.flac", 0.32, 0.5, 2); }
+  if (n === "ClRadiator3D") { add("foley/water_bubble.flac", 0.2, 0.2, Math.min(3, durS - 0.4)); if (P.mode === "flush") add("design/pop_soap_bubble.flac", 0.26, durS * 0.3, 1); if (P.mode === "scale") add("design/swell_suspense.flac", 0.24, 0.3, durS - 0.5); }
+  if (n === "ClTempGauge") { add("foley/car_engine_idle.flac", 0.16, 0, Math.min(durS, 4)); if (P.mode === "red") add("design/alarm_short.flac", 0.16, durS * 0.55, 1.2); else add("design/tick_clock_close.flac", 0.2, 0.4, Math.min(2.5, durS - 0.6)); }
+  if (n === "ClBubbleTest") { add("foley/water_bubble.flac", 0.28, 0.3, P.mode === "gasket" ? durS - 0.5 : 1.4); }
+  if (n === "ClMixJug") { if (P.mode === "timer") add("design/tick_clock_close.flac", 0.24, 0.3, durS - 0.6); else { add("foley/water_pour_short.flac", 0.3, 0.3, 1.0); add("foley/water_pour_stream.flac", 0.28, 1.0, Math.min(2, durS - 1.2)); } }
+  if (n === "ClHotCap") { add("foley/air_hiss.flac", 0.3, 0.3, Math.min(2.5, durS - 0.5)); add("design/impact_drum_subtle.flac", 0.36, durS * 0.45, 1.2); }
   if (n === "ClChapter") { add("design/whoosh_sweep_long.flac", 0.32, -0.15, 1.6); add("foley/cutter_cut.flac", 0.34, 0.12, 1.2); add(P.alert ? "design/impact_echo.flac" : "design/impact_drum_subtle.flac", P.alert ? 0.2 : 0.4, 0.35, 1.8); }
   if (n === "ClHidden50") { add("foley/paper_wrinkle.flac", 0.2, durS * 0.3, 2.4); add("design/swell_suspense.flac", 0.26, durS * 0.28, 3); add("design/impact_drum_subtle.flac", 0.36, durS * 0.62, 1.4); }
   if (n === "ClFridgeBack") { add("foley/ceramic_scrape.flac", 0.3, 0.2, 1.4); [0.15, 0.35, 0.55, 0.73].forEach((k) => add("design/tick_single.flac", 0.34, durS * k, 0.6)); }

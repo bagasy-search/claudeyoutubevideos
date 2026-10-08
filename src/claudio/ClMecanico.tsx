@@ -1028,11 +1028,11 @@ export const ClFilterLight: React.FC<{ mode?: "check" | "compare"; bed?: string 
   );
 };
 
-export const ClLogbook: React.FC<{ mode?: "ernesto" | "last" | "gap" | "new" | "two" | "consume"; bed?: string }> = ({ mode = "ernesto", bed }) => {
+export const ClLogbook: React.FC<{ mode?: "ernesto" | "last" | "gap" | "new" | "two" | "consume"; bed?: string; rows?: [string, string, string, string][]; elena?: string[]; tag?: string; note?: [string, string] }> = ({ mode = "ernesto", bed, rows, elena, tag, note }) => {
   const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 0, 16);
   const ERN = "#1F3A8A", ELE = "#1B5E20";
-  const lines: [string, string, string, string][] = mode === "consume"
+  const lines: [string, string, string, string][] = rows ? rows : mode === "consume"
     ? [["1.000 km", "le faltó", "¼ litro", ""], ["2.000 km", "le faltó", "¼ litro", ""], ["3.000 km", "le faltó", "½ litro", "→ PCV"]]
     : [["03/13", "15.200", "aceite+filtro", ""], ["09/13", "20.100", "aceite+filtro", ""], ["04/14", "25.300", "f. aire", ""], ["…", "…", "…", ""], ["03/19", "248.900", "aceite+filtro", ""]];
   const step = Math.max(6, (T * 0.55) / lines.length);
@@ -1059,11 +1059,11 @@ export const ClLogbook: React.FC<{ mode?: "ernesto" | "last" | "gap" | "new" | "
         {/* hoja derecha: en blanco / los 6 años / la letra de Elena */}
         <div style={{ position: "absolute", left: 740, top: 40, width: 620, fontFamily: HAND, fontWeight: 700, fontSize: 60, lineHeight: "120px" }}>
           {mode === "gap" ? <div style={{ opacity: gapK, fontFamily: LABEL, fontSize: 64, color: CL.red, textAlign: "center", marginTop: 220 }}>6 AÑOS EN BLANCO</div> : null}
-          {showNew ? (() => { const k = mode === "two" ? 1 : clamp01((f - 14) / (T * 0.4)); return <div style={{ color: ELE, clipPath: `inset(0 ${100 - k * 100}% 0 0)`, rotate: "-1deg" }}><div>10/2026 · 280.400</div><div>PCV, f. aire, aceite</div><div style={{ fontSize: 34, opacity: 0.8 }}>— Elena</div></div>; })() : null}
+          {showNew ? (() => { const k = mode === "two" ? 1 : clamp01((f - 14) / (T * 0.4)); return <div style={{ color: ELE, clipPath: `inset(0 ${100 - k * 100}% 0 0)`, rotate: "-1deg" }}>{elena ? elena.map((l, i) => <div key={i} style={{ fontSize: elena.length > 4 ? 48 : 60, lineHeight: elena.length > 4 ? "106px" : "120px" }}>{l}</div>) : <><div>10/2026 · 280.400</div><div>PCV, f. aire, aceite</div><div style={{ fontSize: 34, opacity: 0.8 }}>— Elena</div></>}</div>; })() : null}
         </div>
       </div>
-      {mode === "ernesto" ? <Tag x={180} y={70} text="Cada 5.000 km, sin faltar uno" color={CL.navy} o={lin(f, 10, 20)} size={46} /> : null}
-      {mode === "last" ? <Note x={1330} y={70} o={lin(f, 12, 24)} big="La última línea" small="marzo, 6 años atrás" color={CL.red} w={480} /> : null}
+      {mode === "ernesto" ? <Tag x={180} y={70} text={tag || "Cada 5.000 km, sin faltar uno"} color={CL.navy} o={lin(f, 10, 20)} size={46} /> : null}
+      {mode === "last" ? <Note x={1330} y={70} o={lin(f, 12, 24)} big={note ? note[0] : "La última línea"} small={note ? note[1] : "marzo, 6 años atrás"} color={CL.red} w={480} /> : null}
       {mode === "two" ? <Tag x={180} y={70} text="Dos letras" color={CL.navy} o={lin(f, 6, 16)} size={46} /> : null}
       {mode === "consume" ? <Tag x={180} y={70} text="Mide cada 1.000 km" color={CL.navy} o={lin(f, 6, 16)} size={46} /> : null}
       <RoomLight k={0.5} />
