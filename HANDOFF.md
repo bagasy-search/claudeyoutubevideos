@@ -1,5 +1,6 @@
 # HANDOFF — fuagua (Claudio el Fumigador #1 · serie "La casa de los Ramírez" ep. 1: el frasco de agua oxigenada)
-Estado: en entrega (job 784, tarjeta fuagua del row 305).
+Estado: ✅ ENTREGADO 8-oct (job 784, tarjeta plan-own-1791387464226-0 del row 305 → "Video listo · subir", sin YouTube).
+mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fuagua/fuagua.mp4?v=1 (15:15, 27.469 cuadros). Auditor: min1 33 cortes / 0 silencios, negro 0, congelados 0.
 
 ## Cadena = la del Albañil (almoho-render → … → alolor-render) adaptada al FUMIGADOR en ESTA rama (fuagua-render). fu30 y furatas salen de acá.
 - lib.mjs: WHO = camisa caqui de dos bolsillos + anteojos de seguridad en la frente · HOUSE = cocina de los Ramírez (azulejo blanco con guarda
