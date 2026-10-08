@@ -71,7 +71,7 @@ export const SHOTS = [
   S(37, "Todavía me pongo colorado", "cl", "c_blush", { p: CLP(`He covers half of his face with one hand in ${HOUSE}, laughing with embarrassment.`) }),
   S(38, "", "bi", "b_toeswater", { q: "feet in shower water", p: BI("Close view of bare feet on the white floor of a shower with water running over the tops of the feet, the toes pressed together.") }),
   S(38, "catorce horas húmedo", "bi", "b_sockshoe", { q: "putting on shoes socks", p: BI("A man sitting on a bed pulling a sock on and slipping his foot into a worn sneaker in the morning.") }),
-  C(38, "Ningún otro lugar del cuerpo", "ClDryBars", { title: "Entre los dedos, cada día", rows: [{ label: "Húmedo, en el calcetín y el zapato", h: 14, note: "calor, humedad y nada de aire" }, { label: "Al aire, descalzo", h: 10, good: true }], max: 24 }),
+  C(38, "Ningún otro lugar del cuerpo", "ClDryBars", { title: "Entre los dedos, cada día", rows: [{ label: "Húmedo, en el calcetín y el zapato", h: 14, note: "calor, humedad y nada de aire" }], max: 24, unit: "h al día" }),
   S(39, "", "bi", "b_genkan", { q: "japanese genkan shoes entrance", p: BI("The entrance of a Japanese home: a lower tiled floor with several pairs of shoes lined up neatly facing the door, a step up to a light-wood floor, slippers waiting.") }),
   S(39, "y no se usa el mismo par dos días seguidos", "bi", "b_twopairs", { q: "two pairs shoes", p: BI(`Two pairs of men's shoes side by side on a light-wood shoe rack by the door of ${HOUSE}.`) }),
   C(39, "necesita un día entero para secarse", "ClDryBars", { title: "Un zapato, después de un día", rows: [{ label: "Lo vuelves a usar mañana", h: 0, note: "nunca se seca" }, { label: "Descansa un día", h: 24, good: true }] }),

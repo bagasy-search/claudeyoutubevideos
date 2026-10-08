@@ -78,7 +78,7 @@ export const SHOTS = [
   S(12, "Y recién ahí, al agua caliente", "kf", "k_steam", { p: BI("Close view of the surface of a deep Japanese bathtub full of hot water, steam rising."), d1: "still hot water in the tub", d2: "steam drifts across the water", sound: "steam and quiet water in a bath" }),
   S(13, "Diez minutos parados", "bi", "b_longshower", { q: "shower running water", p: BI(`Water running down from a shower head in ${BATH}, the glass fogged.`) }),
   S(13, "y el pelo al final", "bi", "b_shampoohand", { q: "shampoo in hand", p: BI("Close view of a hand squeezing white shampoo from a bottle with a blank white label into the other palm over a bathroom sink.") }),
-  S(13, "Y lo último que te cae por la espalda", "bi", "b_backfoam", { p: BI("The upper back and shoulders of a man seen from behind in a shower, white shampoo foam running down his skin.") }),
+  S(13, "Y lo último que te cae por la espalda", "bi", "b_backfoam", { p: BI("White shampoo and conditioner foam sliding down the white tiles of a shower wall toward the drain, water running, a shampoo bottle with a blank label on the corner shelf.") }),
   S(13, "que se queda pegada a la piel todo el día", "av", ""),
   C(14, "", "ClDoDont", { yes: { label: "Pelo → cuerpo → espalda", img: I + "b_rinseback.jpg" }, no: { label: "Cuerpo → pelo al final", img: I + "b_backfoam.jpg" } }),
   S(14, "treinta segundos de agua sola", "bi", "b_rinseback", { p: BI("A man seen from behind in a shower, head tipped forward, clear water running down his back, no foam.") , ov: { c: "ClChip", props: { text: "30 s" } } }),
