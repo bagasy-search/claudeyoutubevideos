@@ -1,0 +1,72 @@
+// DIRECTOR B — fucasero: la masa (partes iguales, guantes, leche, por qué, bolitas garbanzo, el error) + seguridad (galletas para Bruno, la
+// estación cerrada, cinta, manos, el ácido bórico del ep. 1) + lo que había detrás de la estufa (grasa, cajas de huevos, cápsulas, cartón,
+// afuera, Jorge) + dónde (regla de oro, lugares, cuántas, nada de aerosol, mención 2 pág. 14) (párrafos 24-51).
+import { S, BI, LUCIA, JORGE, KIDS, DOG } from "../claudio/lib.mjs";
+import { H, KITCHEN, ROACH, STOVE, BALLS, STATION, BORIC } from "./dir_a.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+const V = (p, at, n, a, act, b) => S(p, at, "vl", n, { a, act, b });
+const I = "img/fucasero/";
+const BOWL = "a plain white plastic mixing bowl";
+export const SHOTS = [
+  C(24, "", "ClChapter", { n: 4, title: "Paso 1: la masa", sub: "partes iguales" }),
+  V(25, "", "v_partes", `stands at the granite counter in ${KITCHEN} wearing blue nitrile gloves, ${BOWL} in front of him, ${BORIC}, a bag of flour and a bag of sugar beside it.`, "He spoons one level tablespoon from each bag into the bowl, one after the other, counting as he goes.", "he holds the spoon up over the bowl with the three powders in it, nodding."),
+  S(25, "Partes iguales", "c", "ClBoricBalls", {}),
+  S(26, "", "bi", "b_gloves", { q: "putting on rubber gloves", p: BI(`Close view of ${H} pulling on blue nitrile gloves in a kitchen.`) }),
+  S(26, "Mezclas todo en seco primero", "kf", "k_drymix", { p: BI(`Close view of ${H} in a blue nitrile glove stirring white powders together with a spoon in ${BOWL}.`), d1: "the spoon stirs the white powders in circles", d2: "the powders look evenly mixed", sound: "a spoon scraping a plastic bowl" }),
+  V(27, "", "v_leche", `stands at the granite counter in ${KITCHEN} wearing blue nitrile gloves, pouring a little milk from a carton into ${BOWL} with white powder.`, "He pours a thin splash of milk, puts the carton down and kneads the mixture with his gloved fingers, showing the camera the dough.", "he holds up a lump of off-white dough between his gloved fingers."),
+  S(27, "Como masa de galletas", "bi", "b_dough", { p: BI(`Close view of ${H} in blue nitrile gloves holding a smooth lump of off-white dough over ${BOWL}.`) }),
+  S(28, "", "bi", "st_milkpour", { q: "pouring milk", p: BI("Milk being poured from a carton.") }),
+  S(28, "El azúcar las llama desde lejos", "bi", "st_roachsugar", { q: "cockroach eating", p: BI(`${ROACH} eating crumbs.`) }),
+  S(28, "Y el ácido bórico hace el trabajo", "bi", "b_boricpowder2", { p: BI(`Extreme close view of white boric acid powder on a spoon.`) }),
+  V(29, "", "v_bolitas", `stands at the granite counter in ${KITCHEN} wearing blue nitrile gloves, rolling a small piece of dough between his palms, a square of aluminum foil with ${BALLS} in front of him.`, "He rolls a small ball, holds it up next to a chickpea to compare, and places it on the foil.", "he holds a dough ball and a chickpea side by side toward the camera."),
+  S(29, "Una bolita grande se seca por fuera", "bi", "b_bigball", { p: BI("A large cracked dry dough ball next to small fresh ones on aluminum foil.") }),
+  V(30, "", "v_error", `stands at the granite counter in ${KITCHEN} holding ${BORIC} tilted over ${BOWL} as if to pour a lot.`, "He tips the bag as if to pour a lot, stops himself, shakes his head and raises one finger.", "he holds up one finger, the bag set down, firm."),
+  S(30, "la cucaracha la prueba", "bi", "b_roachsniff", { p: BI(`Night, ${ROACH} touching a dough ball with its antennae and turning away.`) }),
+  S(31, "", "bi", "b_luciaballs", { p: BI(`${LUCIA} in the kitchen looking at a square of aluminum foil with ${BALLS} on the counter, a worried half smile.`) }),
+  S(31, "Claudio, parecen galletas para Bruno", "bi", "b_brunolook", { p: BI(`${DOG} sitting by the kitchen counter, nose up, sniffing toward the counter with interest.`) }),
+  V(31, "Y ahí está el punto más importante", "v_punto", `stands at the granite counter in ${KITCHEN} beside ${LUCIA}, ${DOG} sitting at their feet looking up.`, "He looks down at the dog, then turns to the camera suddenly serious and raises one finger.", "he holds up one finger, dead serious, the dog at his feet."),
+  C(32, "", "ClChapter", { n: 5, title: "Paso 2: que no las alcance nadie más", sub: "niños y perro", alert: true }),
+  S(33, "", "bi", "b_brunonose", { p: BI(`Extreme close view of ${DOG}'s nose sniffing at the edge of a kitchen counter.`) }),
+  S(33, "Y el ácido bórico, comido, le hace mal al perro", "c", "ClRoachStation", { props: { mode: "station" } }),
+  S(33, "Así que en una casa con niños y mascotas", "vl", "v_nunca", { a: `crouches on the tiled kitchen floor in ${KITCHEN}, a dough ball on the floor in front of him, shaking his head.`, act: "He picks the loose dough ball up off the floor and shakes his head firmly.", b: "he holds the dough ball up, shaking his head, serious." }),
+  V(34, "", "v_estacion", `kneels on the tiled floor in ${KITCHEN} holding ${STATION.replace(", taped down to the floor", "")}, open, with two dough balls inside.`, "He shows the two pencil-sized holes in the container to the camera, puts a pencil through one hole, then closes the lid tight.", "he holds the closed container up, a pencil poking out of one hole."),
+  S(34, "El hocico de Bruno, no", "bi", "b_brunostation", { p: BI(`${DOG} sniffing a small closed white plastic container taped to the floor behind a cabinet, unable to open it.`) }),
+  S(35, "", "kf", "k_tape", { p: BI(`Close view of ${H} taping a small closed white plastic container to the floor deep behind a kitchen cabinet.`), d1: "the hand presses a strip of tape over the container", d2: "the hand smooths a second strip of tape", sound: "tape being pulled" }),
+  S(36, "", "bi", "st_washhands", { q: "washing hands soap", p: BI("Hands washing with soap at a sink.") }),
+  S(36, "Y el recipiente donde hiciste la masa", "bi", "b_bowlshelf", { p: BI(`${BOWL} set on a high cleaning-supplies shelf, away from the kitchen dishes.`) }),
+  V(37, "", "v_tapita", `kneels beside the old white refrigerator in ${KITCHEN}, pulled a little away from the wall, shining a yellow flashlight behind it.`, "He shines the flashlight behind the fridge, nods approvingly, then shows with his fingers how small and closed the cap is.", "he holds thumb and finger close together, nodding."),
+  S(37, "Todo lo que mata bichos en esa casa va tapado", "bi", "b_borcap", { p: BI("Night, a flashlight beam behind an old white refrigerator on a small closed white plastic cap taped to the floor against the wall.") , ov: { c: "ClChip", props: { text: "Cerrada · lejos de niños y perro" } } }),
+  C(38, "", "ClChapter", { n: 6, title: "Lo que había detrás de la estufa", sub: "algo guardado con cariño" }),
+  // la estufa
+  V(39, "", "v_correr", `pulls ${STOVE} slowly away from the wall in ${KITCHEN} together with ${JORGE}, both bent over it.`, "They slide the stove out slowly; he picks up a yellow flashlight and shines it into the gap behind.", "he is crouched shining the flashlight into the gap behind the stove, Jorge looking over his shoulder."),
+  S(40, "", "bi", "b_grease", { p: BI(`Night, extreme close view of the floor behind a pulled-out stove: black grease, crumbs and a dry piece of spaghetti, a flashlight beam on it.`) }),
+  S(40, "años de comida que se cayó", "bi", "st_crumbs", { q: "dirty floor crumbs", p: BI("Crumbs on a dirty floor.") }),
+  S(41, "", "bi", "b_cartons", { p: BI(`Night, a stack of gray cardboard egg cartons against the wall in the gap behind a pulled-out stove, a flashlight beam on it.`) }),
+  S(41, "Lucía las guardaba para las manualidades de Sofía", "bi", "b_crafts", { p: BI("A child's school craft made of painted cardboard egg cartons on a kitchen table.") }),
+  S(41, "Las levanté", "kf", "k_cartons", { p: BI(`Night, close view of ${H} in a blue nitrile glove lifting a gray cardboard egg carton from a stack behind a stove.`), d1: "the hand lifts the egg carton", d2: "several big brown cockroaches scatter out from under it", sound: "a quick scuttle of many legs" }),
+  S(41, "que salieron corriendo para todos lados", "bi", "st_roachesrun", { q: "cockroaches running", p: BI("Many cockroaches running.") }),
+  S(42, "", "bi", "b_ooth", { p: BI("Night, extreme close view of several small dark brown bean-sized cockroach egg capsules stuck to gray cardboard, a flashlight beam on them.") }),
+  S(42, "Cada una, con muchas cucarachas adentro", "c", "ClRoachHide", { props: { mode: "hide" } }),
+  V(43, "", "v_carton", `crouches beside the pulled-out stove in ${KITCHEN} holding up a gray cardboard egg carton with his gloved hand.`, "He turns the egg carton in the light, pokes one of its hollows, then points at an ordinary grocery cardboard box nearby.", "he points at a cardboard box, the egg carton still in his other hand."),
+  S(43, "Por eso las cucarachas viajan en las cajas de cartón", "bi", "st_boxes", { q: "cardboard boxes", p: BI("A stack of cardboard delivery boxes.") }),
+  S(43, "Lucía se puso pálida", "bi", "b_luciapale", { p: BI(`${LUCIA} in her kitchen at night, pale, a hand over her mouth, looking at a stack of egg cartons.`) }),
+  S(44, "", "bi", "b_bagcartons", { p: BI(`Close view of ${H} stuffing gray cardboard egg cartons into a black trash bag.`) }),
+  S(44, "Y el hueco de la estufa, a limpiar a fondo", "bi", "b_scrub", { p: BI(`Close view of ${H} in a blue nitrile glove scrubbing a greasy tiled floor behind a stove with a brush and soapy water.`) }),
+  S(45, "", "bi", "b_jorgeask", { p: BI(`${JORGE} at night in his kitchen holding up an aerosol can, eyebrows raised, asking.`) }),
+  V(45, "Pero que las que importaban", "v_vista", `stands beside the pulled-out stove in ${KITCHEN} at night next to ${JORGE}, who holds an aerosol can.`, "He shrugs at the can, then points into the dark gaps under the cabinets and taps his temple.", "he points into the dark gap under the cabinet, a knowing look."),
+  C(46, "", "ClChapter", { n: 7, title: "Paso 3: dónde van", sub: "donde viven, no donde pasean" }),
+  // dónde
+  V(47, "", "v_regla2", `stands in the middle of ${KITCHEN} in daylight, pointing down at the middle of the floor and shaking his head.`, "He points at the middle of the floor and shakes his head, then points firmly toward the stove and under the sink.", "he points toward the stove, firm."),
+  S(47, "Si las pones en el medio de la cocina", "c", "ClRoachStation", { props: { mode: "map" } }),
+  S(48, "", "bi", "b_fridgeunder", { p: BI("Night, a flashlight beam under an old white refrigerator, a small closed white container taped to the floor.") }),
+  S(48, "Debajo del fregadero, en el fondo del mueble", "bi", "b_sinkcab", { p: BI("The open cabinet under a kitchen sink, a small closed white container taped in the back corner.") }),
+  S(48, "Detrás de la estufa", "bi", "b_stoveback", { p: BI("The gap behind a white stove, clean now, a small closed white container taped to the floor against the wall.") }),
+  S(48, "Y en los rincones de adentro de los muebles", "bi", "b_potscab", { p: BI("The inside corner of a low kitchen cabinet full of pots, a small closed white container taped in the back.") }),
+  V(49, "", "v_cuantas", `kneels at the open low cabinet in ${KITCHEN}, placing ${STATION} in the back corner behind the pots.`, "He pushes the container deep into the corner behind the pots, presses tape on it, and counts five on his fingers.", "he holds up five fingers, the cabinet open beside him."),
+  S(49, "En los Ramírez pusimos cinco", "c", "ClRoachStation", { props: { mode: "map" } }),
+  S(50, "", "bi", "b_nospray", { p: BI("A plain aerosol can and a strong cleaner bottle pushed to the back of a high shelf.") , ov: { c: "ClChip", props: { text: "Nada cerca", alert: true } } }),
+  S(50, "Ése es el error de casi todos", "vl", "v_casi", { a: `stands at the granite counter in ${KITCHEN}, a plain aerosol can in his hand, exasperated.`, act: "He sighs, puts the aerosol can away in a high cabinet and closes the door firmly.", b: "he closes the high cabinet door, an exasperated look at the camera." }),
+  // mención 2
+  C(51, "", "ClBookPage", { page: I + "page14.jpg", pageNo: 14, stamp: "Las medidas, en la página" }),
+  V(51, "la masa, el tamaño de las bolitas", "v_medidas", `sits at the wooden kitchen table in ${KITCHEN} with a thick printed manual with a green cover open in front of him.`, "He runs a finger down a page of the manual, then turns it toward the camera.", "he holds the open manual toward the camera, pointing at a page."),
+];
