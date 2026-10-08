@@ -1,0 +1,113 @@
+{
+ "b000": {
+  "file": "b000_t1.wav",
+  "gap": 0,
+  "ratio": 0.979,
+  "dur": 79.76,
+  "esperado": 81.93,
+  "cps": 15.41,
+  "ok": true,
+  "intentos": 1
+ },
+ "b001": {
+  "file": "b001_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 82.08,
+  "esperado": 83.27,
+  "cps": 15.22,
+  "ok": true,
+  "intentos": 1
+ },
+ "b002": {
+  "file": "b002_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 92.64,
+  "esperado": 89.0,
+  "cps": 14.41,
+  "ok": true,
+  "intentos": 1
+ },
+ "b003": {
+  "file": "b003_t2.wav",
+  "gap": 0,
+  "ratio": 0.986,
+  "dur": 85.76,
+  "esperado": 85.2,
+  "cps": 14.9,
+  "ok": true,
+  "intentos": 2
+ },
+ "b004": {
+  "file": "b004_t1.wav",
+  "gap": 1,
+  "ratio": 0.994,
+  "dur": 95.92,
+  "esperado": 93.53,
+  "cps": 14.63,
+  "ok": true,
+  "intentos": 1
+ },
+ "b005": {
+  "file": "b005_t1.wav",
+  "gap": 0,
+  "ratio": 0.984,
+  "dur": 99.76,
+  "esperado": 91.53,
+  "cps": 13.76,
+  "ok": true,
+  "intentos": 5,
+  "nota": "hueco FALSO de Modal: whisper-1 oye \"Paso 3. Cerrar la f\u00e1brica.\""
+ },
+ "b006": {
+  "file": "b006_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 93.52,
+  "esperado": 92.2,
+  "cps": 14.79,
+  "ok": true,
+  "intentos": 1
+ },
+ "b007": {
+  "file": "b007_t1.wav",
+  "gap": 1,
+  "ratio": 0.987,
+  "dur": 94.88,
+  "esperado": 92.6,
+  "cps": 14.64,
+  "ok": true,
+  "intentos": 1
+ },
+ "b008": {
+  "file": "b008_t1.wav",
+  "gap": 0,
+  "ratio": 0.976,
+  "dur": 87.12,
+  "esperado": 85.47,
+  "cps": 14.72,
+  "ok": true,
+  "intentos": 1
+ },
+ "b009": {
+  "file": "b009_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 82.56,
+  "esperado": 84.87,
+  "cps": 15.42,
+  "ok": true,
+  "intentos": 1
+ },
+ "b010": {
+  "file": "b010_t1.wav",
+  "gap": 3,
+  "ratio": 0.973,
+  "dur": 57.04,
+  "esperado": 62.33,
+  "cps": 16.39,
+  "ok": true,
+  "intentos": 1
+ }
+}
