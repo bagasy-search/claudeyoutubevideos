@@ -1,11 +1,12 @@
 // Banco de stills del kit Claudio en Japón. npx remotion still src/index_jpkit.tsx <Id> out/kit/<Id>.png --frame=N
 import React from "react";
 import { registerRoot, Composition } from "remotion";
-import { ClGridHook, ClRule, ClSato, ClNumbers, ClDryBars, ClBodyMap, ClDays, ClAges } from "./claudio/ClJapon";
+import { ClGridHook, ClRule, ClSato, ClNumbers, ClDryBars, ClBodyMap, ClDays, ClAges, ClHeroHook } from "./claudio/ClJapon";
 import { ClCheck, ClBookPage, ClQRCard } from "./claudio/ClCards";
-const I = "img/jpviejo/";
+const I = "img/jpgasto/";
 const B = I + "x_t1.jpg";
 const L: [string, React.FC<any>, any][] = [
+  ["Hero", ClHeroHook, { bed: I + "x_thumbbg.jpg", lines: ["Deja de", "comprar esto"], marks: [{ x: 1180, y: 760, text: "10 LIMPIADORES" }, { x: 1420, y: 640, text: "AROMATIZANTES" }, { x: 1640, y: 760, text: "PAPEL" }] }],
   ["Ages", ClAges, { bed: I + "x_t3.jpg" }],
   ["Grid", ClGridHook, { bed: I + "x_thumbbg.jpg", tiles: [1, 2, 3, 4, 5, 6].map((k) => I + `x_t${k}.jpg`), words: ["por esto hueles a", "viejo"], every: 8 }],
   ["Rule", ClRule, { n: 7, title: "Entre los dedos", sub: "y los zapatos", star: true, bed: B }],

@@ -39,7 +39,7 @@ export const ClGridHook: React.FC<{ bed: string; tiles: string[]; words: [string
 };
 
 // ───────────────── ClRule
-export const ClRule: React.FC<{ n: number; total?: number; title: string; sub?: string; bed?: string; star?: boolean }> = ({ n, total = 11, title, sub, bed, star }) => {
+export const ClRule: React.FC<{ n: number; total?: number; title: string; sub?: string; bed?: string; star?: boolean; label?: string; starText?: string }> = ({ n, total = 11, title, sub, bed, star, label = "REGLA", starText = "LA QUE CASI TODOS ROMPEMOS" }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const pc = pop(f, fps, 2, 12), pn = pop(f, fps, 8, 9), w = lin(f, 14, 30), wsub = lin(f, 24, 40);
   const left = total - n;
@@ -50,13 +50,13 @@ export const ClRule: React.FC<{ n: number; total?: number; title: string; sub?: 
       {/* tarjeta washi con el número */}
       <div style={{ position: "absolute", left: 150, top: 170, width: 520, height: 660, rotate: `${interpolate(pc, [0, 1], [-10, -2.5])}deg`, translate: `0 ${(1 - pc) * -700}px` }}>
         <div style={{ position: "absolute", inset: 0, background: CL.tile, borderRadius: 10, boxShadow: `0 40px 80px rgba(0,0,0,0.45)`, borderTop: `22px solid ${CL.nitrile}` }} />
-        <div style={{ position: "absolute", top: 46, left: 0, right: 0, textAlign: "center", fontFamily: LABEL, fontWeight: 600, fontSize: 40, letterSpacing: 10, color: CL.navy }}>REGLA</div>
+        <div style={{ position: "absolute", top: 46, left: 0, right: 0, textAlign: "center", fontFamily: LABEL, fontWeight: 600, fontSize: 40, letterSpacing: 10, color: CL.navy }}>{label}</div>
         <div style={{ position: "absolute", top: 70, left: 0, right: 0, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 470, lineHeight: 1.05, color: CL.nitrile, scale: String(interpolate(pn, [0, 1], [2.2, 1])), opacity: clamp01(pn * 1.4) }}>{n}</div>
         <div style={{ position: "absolute", bottom: 40, left: 0, right: 0, textAlign: "center", fontFamily: LABEL, fontWeight: 500, fontSize: 34, letterSpacing: 4, color: CL.inkSoft }}>DE {total}</div>
         <Tape x={190} y={-30} rot={3} w={150} />
       </div>
       <div style={{ position: "absolute", left: 760, top: 300, width: 1050 }}>
-        {star ? <div style={{ display: "inline-block", background: CL.yellow, color: CL.navyDeep, fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 3, padding: "6px 22px", borderRadius: 8, marginBottom: 18, scale: String(pop(f, fps, 30, 9)) }}>LA QUE CASI TODOS ROMPEMOS</div> : null}
+        {star ? <div style={{ display: "inline-block", background: CL.yellow, color: CL.navyDeep, fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 3, padding: "6px 22px", borderRadius: 8, marginBottom: 18, scale: String(pop(f, fps, 30, 9)) }}>{starText}</div> : null}
         <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 112, color: "#fff", lineHeight: 1.02, textShadow: "0 6px 24px rgba(0,0,0,0.55)", clipPath: `inset(0 ${100 - w * 100}% 0 0)` }}>{title}</div>
         {sub ? <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 66, color: CL.yellow, marginTop: 10, textShadow: "0 4px 14px rgba(0,0,0,0.6)", clipPath: `inset(0 ${100 - wsub * 100}% 0 0)`, whiteSpace: "nowrap" }}>{sub}</div> : null}
       </div>
@@ -247,6 +247,32 @@ export const ClAges: React.FC<{ items?: [string, string][]; bed?: string; title?
         );
       })}
       <RoomLight k={0.4} />
+    </AbsoluteFill>
+  );
+};
+
+// ───────────────── ClHeroHook: la miniatura HÉROE cobra vida (foto de la miniatura con push lento + titular que entra de golpe +
+// sellos rojos sobre lo que no se compra). marks = [{x,y,text}] en px del cuadro 1920x1080.
+export const ClHeroHook: React.FC<{ bed: string; lines: [string, string]; marks?: { x: number; y: number; text: string }[] }> = ({ bed, lines, marks = [] }) => {
+  const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(5);
+  const z = 1 + 0.06 * clamp01(f / Math.max(1, T)), p1 = pop(f, fps, 2, 10), p2 = pop(f, fps, 8, 10);
+  const L: React.CSSProperties = { fontFamily: LABEL, fontWeight: 700, lineHeight: 0.98, WebkitTextStroke: "14px #111", paintOrder: "stroke", textTransform: "uppercase", letterSpacing: 1 };
+  return (
+    <AbsoluteFill style={{ opacity: out, overflow: "hidden", backgroundColor: CL.white }}>
+      <Img src={staticFile(bed)} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover", scale: String(z), transformOrigin: "62% 45%" }} />
+      <div style={{ position: "absolute", left: 60, top: 40 }}>
+        <div style={{ ...L, fontSize: 170, color: "#fff", scale: String(interpolate(p1, [0, 1], [1.6, 1])), opacity: clamp01(p1 * 1.5), transformOrigin: "0 50%" }}>{lines[0]}</div>
+        <div style={{ ...L, fontSize: 170, color: CL.yellow, scale: String(interpolate(p2, [0, 1], [1.6, 1])), opacity: clamp01(p2 * 1.5), transformOrigin: "0 50%" }}>{lines[1]}</div>
+      </div>
+      {marks.map((m, i) => {
+        const at = 22 + i * 9, k = pop(f, fps, at, 9);
+        return f < at ? null : (
+          <div key={i} style={{ position: "absolute", left: m.x, top: m.y, translate: "-50% -50%", scale: String(interpolate(k, [0, 1], [2.2, 1])), opacity: clamp01(k * 1.6), rotate: `${i % 2 ? 8 : -8}deg` }}>
+            <svg width={150} height={150} style={{ display: "block", margin: "0 auto" }}><circle cx={75} cy={75} r={64} fill="none" stroke={CL.nitrile} strokeWidth={12} /><path d="M38 38 L112 112" stroke={CL.nitrile} strokeWidth={12} strokeLinecap="round" /></svg>
+            <div style={{ background: CL.nitrile, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 36, padding: "2px 14px", borderRadius: 8, textAlign: "center", marginTop: -6, whiteSpace: "nowrap" }}>{m.text}</div>
+          </div>
+        );
+      })}
     </AbsoluteFill>
   );
 };

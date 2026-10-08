@@ -1,0 +1,70 @@
+[HOOK|cara] En una casa japonesa no vas a encontrar nada de esto. Y nosotros lo compramos todos los meses.
+[HOOK|sato] Una vez, Sato-san vino a mi casa. Abrió la alacena del baño, delante de mi esposa y de mis hijos, y empezó a contar en voz alta. Siete limpiadores. Cuatro aromatizantes. Tres rollos de papel. Y lo que me dijo después, todavía me da vergüenza.
+[HOOK|nopobre] Y no es que en Japón sean tacaños, ni que ganen más. Con el mismo sueldo, una familia japonesa ahorra mucho más que la nuestra. Y la diferencia está en una lista corta de cosas que allá nunca se compran.
+[HOOK|promesa] Hoy te traigo esas nueve cosas. Casi todas están ahora mismo en tu casa. Y la número siete es la que casi todos pagamos sin darnos cuenta, todos los meses. Yo también la pagaba.
+[HOOK|cred] Soy Claudio. Quince años de conserje en un hotel de Tokio, donde se limpiaban cien habitaciones por día con cuatro productos. Y al final te dejo el test de cinco minutos para saber a qué huele tu casa, que te ahorra el primero de la lista.
+[REF|viejo] Si no viste el video del olor de después de los cuarenta, te lo dejo aquí, porque la regla del perfume encima vuelve hoy, pero en tu casa.
+[HOOK|cap] Empezamos por lo que más se compra para tapar.
+[R1|sato] Número uno: los aromatizantes. En el hotel estaban prohibidos. Ni en las habitaciones, ni en los pasillos, ni en los baños. Un día le pregunté a Sato-san cómo hacían para que todo oliera tan bien. Me dijo: no huele bien, Claudio-san. No huele a nada.
+[R1|por] Un aromatizante no saca ningún olor. Pone otro encima. Y como te conté en el video anterior, si tapas un olor, ahora tienes dos. El de abajo sigue ahí, y el de arriba se termina en una semana, y hay que comprar otro.
+[R1|casa] Piensa cuántos tienes: el del baño, el del enchufe, el del auto, la vela de la sala, el spray de la ropa. Cada uno se termina y se vuelve a comprar, todos los meses, para siempre.
+[R1|hotel] En el hotel, cuando un huésped dejaba un aromatizante en la habitación, Sato-san lo mandaba a objetos perdidos. Nunca lo usaba. Decía que el huésped siguiente tenía derecho a una habitación que no oliera a nadie.
+[R1|regla] En una casa japonesa, el aire se cambia, no se perfuma. La regla: cero aromatizantes, y diez minutos de ventana abierta a la mañana y otros diez a la noche. Si después de ventilar sigue oliendo, hay algo que limpiar, y el aromatizante te lo estaba escondiendo.
+[R1|prueba] Haz la prueba esta semana: saca todos los aromatizantes de la casa, guárdalos en una bolsa, y ventila mañana y noche. A los tres días vas a saber exactamente qué olor estaban tapando, y dónde está. Ése es el que hay que limpiar.
+[R2|sato] Número dos: el papel de cocina. En la cocina del personal del hotel no había rollos de papel. Había una fila de paños colgados, cada uno de un color. Sato-san los lavaba al final del día y los colgaba al sol.
+[R2|por] Nosotros usamos papel para todo: para secar las manos, para limpiar la encimera, el vidrio, el baño, la sartén. Un rollo dura dos días. Y cada hoja que usas es dinero que va directo a la basura.
+[R2|regla] La regla japonesa: seis paños que se lavan, en lugar del papel. Uno para la encimera, uno para los vidrios, uno para el baño, y los demás de recambio. De colores distintos, para no confundirlos nunca.
+[R2|hotel] En el hotel se limpiaban cien baños por día con paños, y al final del turno no había una sola bolsa de basura llena de papel.
+[R2|cuanto] Y un paño de microfibra bueno dura años. Lo que gastas en papel de cocina en un mes alcanza para todos los paños que vas a necesitar.
+[R2|lavar] Los paños se lavan juntos, una vez por semana, con agua caliente y un poco de jabón, y se secan al sol. Nada de suavizante, que les quita lo que absorben. Y cuando uno se gasta, pasa a limpiar el piso o el auto antes de tirarlo.
+[R2|mostrador] Y para esto casi no hay que comprar nada. En el Método te dejé anotado lo único que hace falta, en la página once, y casi siempre es algo que ya tienes. En la tienda, pide así: necesito un paquete de paños de microfibra, un vinagre blanco grande y bicarbonato.
+[R3|sato] Número tres: los diez limpiadores. En el depósito del hotel, Sato-san me mostró el estante de los productos. Yo esperaba una pared llena. Había cuatro botellas. Para cien habitaciones.
+[R3|por] Y en tu casa, abre el mueble de debajo del fregadero. Uno para el baño, otro para la cocina, otro para los vidrios, otro para el piso de madera, otro para el de cerámica, otro para el horno, otro para el acero. Casi todos hacen lo mismo con distinto perfume y distinto color.
+[R3|regla] La regla japonesa: bastan cuatro. Un jabón neutro, vinagre blanco, bicarbonato y un desinfectante. Con eso se limpia toda la casa.
+[R3|vidrio] Para los vidrios, por ejemplo: agua tibia con un chorrito de vinagre y un paño de microfibra seco. Sin espuma, sin marcas, y sin el producto número ocho.
+[R3|seguridad] Y una cosa importante, que Sato-san repetía: nunca mezcles productos. Nunca mezcles el cloro con nada. Y el vinagre y el agua oxigenada se usan por separado, nunca en la misma botella.
+[R3|paso] Haz esto este fin de semana: junta todos los productos de limpieza de la casa en el piso. Quédate con los cuatro básicos, y lo demás termínalo o regálalo. Vas a ver la cantidad de dinero que había ahí, quieta.
+[R3|ahorro] En casa de mi hermana hicimos esa prueba. Salieron diecinueve botellas. Algunas abiertas, otras sin abrir, dos del mismo producto. Ella no podía creer lo que había gastado en limpiar con cosas que hacían lo mismo.
+[R4|sato] Número cuatro: las cajas para organizar. Una vez compré en Tokio unas cajas de plástico para ordenar mi cuarto del hotel. Sato-san las vio y me preguntó: ¿qué vas a guardar ahí que no usas?
+[R4|por] Una caja organizadora no ordena nada. Te deja guardar lo que deberías soltar. Compras la caja, metes las cosas adentro, y el problema que tenías que decidir queda tapado, como un aromatizante.
+[R4|japon] En Japón cada cosa tiene un lugar fijo. Y lo que no tiene lugar, no se queda. Por eso las casas japonesas son chicas y se ven vacías: no es que no tengan nada, es que todo está en su lugar.
+[R4|regla] La regla: antes de comprar una caja, mira qué vas a meter adentro. Si no lo usaste en un año, no necesitas la caja. Necesitas soltarlo.
+[R4|garaje] Seguro tienes un rincón, en el garaje o arriba del armario, con cajas que no abriste desde la última mudanza. Esas cajas no guardan cosas: guardan decisiones que no tomaste. Y además las pagaste.
+[R5|sato] Número cinco: los adornos. Ésta está en casi todas las habitaciones de tu casa. En el hotel, las habitaciones no tenían ni un adorno. Una planta, una taza para el té, y nada más. Sato-san decía: lo que no sirve, junta polvo.
+[R5|por] Una vela nueva, un cuadrito con una frase, un florero, un cojín del color de la temporada. Cada uno cuesta poco, y la sala se ve mejor una semana. Después el ojo se acostumbra, la sala se ve igual, y vuelves a comprar otro.
+[R5|polvo] Y cada adorno es una cosa más para limpiar. El estante se llena, y limpiarlo tarda el doble.
+[R5|regla] En Japón lo lindo es lo que sirve: una taza buena, un paño bien doblado, una tetera que dura toda la vida. La regla: antes de comprar algo para decorar, pregúntate qué trabajo va a hacer en tu casa. Si no hace ninguno, no entra.
+[R5|casa] Mira tu sala ahora mismo, y cuenta las cosas que están ahí sólo para mirar. Después piensa cuánto tiempo pasas cada semana sacándoles el polvo. En Japón ese tiempo se usa para otra cosa.
+[R5|regalo] Y si te regalan un adorno, se puede agradecer el regalo sin quedarse con el objeto. En Japón se regala algo que se usa o algo que se come.
+[R5|rutina] Y si quieres la lista completa de lo que una casa japonesa sí compra, y lo que nunca, está en la página once del Método Japonés de Claudio. Te la dejé anotada para que la lleves al supermercado.
+[R6|sato] Número seis: los aparatitos de cocina. Cuando entré a la cocina del hotel, la primera vez, busqué el exprimidor, el pelador de ajo, el cortador de huevos. No había nada de eso. Había un cuchillo, una tabla de madera, y una sartén.
+[R6|por] Abre el cajón de tu cocina: el cortador de aguacate, el de fresas, el prensador de ajo que nunca usas porque lavarlo tarda más que picar el ajo. Cada uno costó poco, y cada uno te prometió que esta vez sí ibas a cocinar más.
+[R6|regla] En Japón se aprende a usar bien pocas herramientas. La regla: un buen cuchillo, una tabla y una sartén resuelven casi todo. Y antes de comprar un aparatito, prueba una semana con el cuchillo.
+[R6|cuchillo] Y el cuchillo se afila, no se reemplaza. Un cuchillo bueno, bien cuidado, te dura más que la cocina.
+[R6|cajon] Haz esto: vacía el cajón de los aparatitos sobre la mesa. Lo que usaste el último mes vuelve al cajón. Lo demás va a una caja con fecha. Si en tres meses no abriste la caja, ya sabes la respuesta.
+[R7|intro] Y ahora sí, la número siete. La que casi todos pagamos sin darnos cuenta.
+[R7|sato] Cuando volví de Tokio, Sato-san me mandó una carta. Adentro, una sola pregunta, escrita a mano: ¿cuántas cosas pagas todos los meses que ya no usas?
+[R7|por] Las suscripciones. La aplicación de películas que nadie abre desde marzo. La de música que pagas dos veces porque tu hijo tiene otra. El gimnasio al que vas a volver el lunes. La revista que llega cerrada. La prueba gratis que se olvidó de terminar.
+[R7|lista] Y no es sólo lo del teléfono: el seguro del celular que nunca usaste, la garantía extendida que te vendieron en la caja, la tarjeta de la tienda con cuota anual.
+[R7|trampa] Una suscripción no es una compra. Es una decisión que tomaste una sola vez, hace años, y que se sigue cobrando todos los meses sin preguntarte. Por eso no la ves: nunca más tuviste que decidir.
+[R7|japon] En Japón la gente desconfía de todo lo que se cobra solo. Si algo se repite todos los meses, se revisa todos los meses.
+[R7|regla] La regla: agarra el resumen de tu tarjeta del mes pasado y marca con un círculo cada cobro que se repite. Al lado de cada uno, escribe la última vez que lo usaste. Lo que no usaste este mes, se cancela hoy.
+[R7|cuanto] La primera vez que lo hice, encontré cinco cobros que no usaba. Sumados, eran casi lo mismo que pagaba de luz. Todos los meses, durante años. Y ninguno me lo había preguntado nunca.
+[R8|sato] Número ocho: el suavizante. En la lavandería del hotel no se usaba suavizante. Las toallas salían suaves igual. Le pregunté a Sato-san el truco. Me dijo: sol y una sacudida.
+[R8|por] El suavizante deja una capa de perfume en la ropa, y como te conté en el video anterior, esa capa encierra el olor en vez de sacarlo. Y en las toallas es peor: las hace secar menos.
+[R8|regla] La regla: sacude cada prenda antes de colgarla, y sécala al sol o al aire. Si quieres algo en el enjuague, un chorrito de vinagre blanco en el compartimento del suavizante, y nunca junto con el cloro. La ropa sale suave y sin olor.
+[R8|toallas] Y en el hotel había otro truco: las toallas recién secas se doblaban al sol, todavía tibias. Quedaban esponjosas sin nada. Prueba con las tuyas este fin de semana, y deja el suavizante en el estante.
+[R9|sato] Número nueve, la última, y la que une todas. Antes de que yo comprara algo para mi cuarto del hotel, Sato-san siempre me hacía la misma pregunta: ¿dónde lo vas a guardar?
+[R9|por] Si no tienes la respuesta, no lo compres. Así de simple. Esa pregunta frena el aromatizante, la caja, el adorno, el aparatito y el limpiador número once. Todo lo que compramos de más es algo que no tenía lugar en la casa.
+[R9|hotel] En mi cuarto del hotel, en quince años, nunca tuve una caja organizadora. Todo lo que tenía entraba en un armario y dos cajones. Y nunca me faltó nada.
+[R9|regla] La regla de compra japonesa: si no sabes dónde lo vas a guardar, no entra. Y un ejercicio: anota durante un mes todo lo que compras en el supermercado que no es comida. Al final del mes, súmalo. Vas a ver cuánto dinero se va en tapar problemas.
+[R9|mes] Y si te cuesta soltar algo, pruébalo un mes sin comprarlo. Si no lo extrañaste, no lo necesitabas.
+[R9|casa] En Japón, antes de entrar algo nuevo a la casa, muchas veces sale algo viejo. Una camisa nueva, una camisa menos. Una taza nueva, una taza que se regala. Así la casa nunca se llena, y nunca hace falta una caja más.
+[PATRON|todo] Fíjate que las nueve tienen algo en común. Una decisión que tomaste una sola vez, y que te sigue cobrando todos los meses sin que vuelvas a pensar en ella. No son nueve problemas. Es uno solo, en nueve lugares de tu casa.
+[PATRON|sato] Sato-san lo decía más corto: lo que compras para tapar, lo vuelves a comprar.
+[RECAP|todo] Las nueve, en treinta segundos. Cero aromatizantes: ventana abierta. Seis paños en lugar del papel. Cuatro limpiadores, no diez. Nada de cajas para lo que no usas. Adornos sólo si sirven. Un cuchillo, una tabla, una sartén. Revisa las suscripciones. Sol en lugar de suavizante. Y si no sabes dónde guardarlo, no lo compres.
+[CTA3|regalo] Y te prometí el test. Se llama: ¿A qué huele tu casa? El test japonés de cinco minutos. Son tres pruebas: la almohada, la toalla y la puerta cerrada. Te dicen de dónde viene el olor antes de que compres un aromatizante más. Es gratis: apunta el celular a este código, o toca el link de la descripción. Y si quieres todas las reglas con el paso a paso, el Método Japonés de Claudio está en esa misma página, a veintisiete dólares.
+[NEXT|sato] Ah, y lo que me dijo Sato-san aquel día, frente a la alacena. Me dijo: Claudio-san, tu casa no huele mal. Huele a todo lo que compraste para que no huela.
+[NEXT|gancho] Y tenía razón. Hay cosas en tu casa que hacen que huela a viejo, aunque la limpies todos los días. En el próximo video, las once que los japoneses reemplazaron.
+[CLOSE|pregunta] Y ahora cuéntame tú. ¿Cuál de las nueve compras todos los meses? Escríbemelo en los comentarios. Leo todos.
+[CLOSE|chau] Sato-san siempre decía: lo limpio no huele a nada. Nos vemos en el próximo video.
