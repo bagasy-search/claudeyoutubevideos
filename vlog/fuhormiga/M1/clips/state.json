@@ -18,5 +18,65 @@
   "file": "v_borico.mp4",
   "T": 6,
   "own": false
+ },
+ "v_regalo": {
+  "file": "v_regalo.mp4",
+  "T": 9,
+  "own": false
+ },
+ "m2": {
+  "file": "m2.mp4",
+  "T": 5,
+  "own": false
+ },
+ "v_lluvia": {
+  "file": "v_lluvia.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_stuck": {
+  "file": "v_stuck.mp4",
+  "T": 5,
+  "own": false
+ },
+ "v_linterna": {
+  "file": "v_linterna.mp4",
+  "T": 11,
+  "own": false
+ },
+ "v_regla": {
+  "file": "v_regla.mp4",
+  "T": 10,
+  "own": false
+ },
+ "v_secreto": {
+  "file": "v_secreto.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_perfecto": {
+  "file": "v_perfecto.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_err5": {
+  "file": "v_err5.mp4",
+  "T": 4,
+  "own": false
+ },
+ "v_nomates": {
+  "file": "v_nomates.mp4",
+  "T": 8,
+  "own": false
+ },
+ "v_manual": {
+  "file": "v_manual.mp4",
+  "T": 6,
+  "own": false
+ },
+ "v_estufa": {
+  "file": "v_estufa.mp4",
+  "T": 9,
+  "own": false
  }
 }

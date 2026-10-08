@@ -1,0 +1,152 @@
+{
+ "v_borax": {
+  "file": "v_borax.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "El bórax es un polvo blanco, de los de lavar ropa. A veces está en el supermercado,",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_borax.wav",
+  "asr": "El borax es un polvo blanco de los de lavar ropa, a veces está en el supermercado.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_honesto": {
+  "file": "v_honesto.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Y una cosa honesta antes de empezar. Esto no es inmediato. El primer día vas a ver más hormigas, no menos.",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_honesto.wav",
+  "asr": "Y una cosa honesta antes de empezar. Esto no es inmediato. El primer día vas a ver más hormigas, no menos.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_borico": {
+  "file": "v_borico.mp4",
+  "r": 0.994,
+  "lag": 0.0,
+  "text": "la estación, miré detrás del refrigerador: la tapita del ácido bórico de las cucarachas",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_borico.wav",
+  "asr": "la estación, miré detrás del refrigerador. La tapita del ácido bórico de las cucarachas",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_nido": {
+  "file": "v_nido.mp4",
+  "r": 0.997,
+  "lag": 0.0,
+  "text": "Ahí estaba el nido. Debajo de una maceta, afuera, a cuatro metros de la cocina. Ningún aerosol de la cocina iba a llegar ahí.",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_nido.wav",
+  "asr": "Ahí estaba el nido. Debajo de una maceta, afuera, a 4 metros de la cocina. Ningún aerosol de la cocina iba a llegar ahí.",
+  "sim": 0.958,
+  "ok": true
+ },
+ "m2": {
+  "file": "m2.mp4",
+  "r": 0.993,
+  "lag": 0.0,
+  "text": "Un lugar al que nadie iba a llegar con un aerosol. Te lo muestro en un rato. Hoy",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/m2.wav",
+  "asr": "un lugar al que nadie iba a llegar con un aerosol. Te lo muestro en un rato.",
+  "sim": 0.971,
+  "ok": true
+ },
+ "v_lluvia": {
+  "file": "v_lluvia.mp4",
+  "r": 0.609,
+  "lag": 0.0,
+  "text": "y salen a buscar un lugar seco y comida. Es cuando más entran a las casas.",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_lluvia.wav",
+  "asr": "y salen a buscar un lugar seco y comida. Este es cuando ondos, cuando m...",
+  "sim": 0.71,
+  "ok": false
+ },
+ "v_regalo": {
+  "file": "v_regalo.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Te dejé las tres pruebas en una hoja gratis que se llama Antes de Fumigar, la revisión de la noche. La de la linterna, la de la harina,",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_regalo.wav",
+  "asr": "Te dejé las tres pruebas en una hoja gratis que se llama Antes de fumigar, la revisión de la noche. La de la linterna, la de la harina.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_regla": {
+  "file": "v_regla.mp4",
+  "r": 0.997,
+  "lag": 0.0,
+  "text": "Y es lógico. Porque esas hormigas no viven en tu cocina. Vienen a buscar comida y se la llevan. Las que matas, las reemplaza el nido en un día.",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_regla.wav",
+  "asr": "Y es lógico. Porque esas hormigas no viven en tu cocina. Vienen a buscar comida y se la llevan. Las que matas, las reemplaza el nido en un día.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_secreto": {
+  "file": "v_secreto.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Y aquí va lo que casi nadie sabe. Las obreras no comen sólo para ellas.",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_secreto.wav",
+  "asr": "aquí va lo que casi nadie sabe. Las obreras no comen solo para ellas.",
+  "sim": 0.966,
+  "ok": true
+ },
+ "v_nomates": {
+  "file": "v_nomates.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Esto es lo que más cuesta. Vas a ver hormigas en la estación, y vas a tener ganas de matarlas. No las mates.",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_nomates.wav",
+  "asr": "Esto es lo que más cuesta. Vas a ver hormigas en la estación y vas a tener ganas de matarlas. No las mates.",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_perfecto": {
+  "file": "v_perfecto.mp4",
+  "r": 0.996,
+  "lag": 0.0,
+  "text": "Le dije: perfecto. Están avisando a las otras que encontraron comida. Y",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_perfecto.wav",
+  "asr": "Le dije, ¡perfecto! Están avisando a las otras que encontraron comida.",
+  "sim": 0.957,
+  "ok": true
+ },
+ "v_linterna": {
+  "file": "v_linterna.mp4",
+  "r": 0.992,
+  "lag": 0.0,
+  "text": "Esa misma noche, con la linterna, seguimos la fila hacia atrás. Desde la estación, por la pared, hasta el marco de la ventana. Y ahí, entre el marco y la pared,",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_linterna.wav",
+  "asr": "Esa misma noche, con la linterna, seguimos la fila hacia atrás, desde la estación, por la pared, hasta el marco de la ventana. Y ahí, entre el marco y la pared, un",
+  "sim": 0.984,
+  "ok": true
+ },
+ "v_err5": {
+  "file": "v_err5.mp4",
+  "r": 0.995,
+  "lag": 0.0,
+  "text": "Si tienen el azucarero abierto, ¿para qué van a ir al cebo?",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_err5.wav",
+  "asr": "Si tienen el azucarero abierto, ¿para qué van a ir al cebo?",
+  "sim": 1.0,
+  "ok": true
+ },
+ "v_stuck": {
+  "file": "v_stuck.mp4",
+  "r": 0.997,
+  "lag": 0.0,
+  "text": "Si a la semana la fila sigue igual, revisa dos cosas: que",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_stuck.wav",
+  "asr": "Si a la semana la fila sigue igual, revisa dos cosas.",
+  "sim": 0.957,
+  "ok": true
+ },
+ "v_manual": {
+  "file": "v_manual.mp4",
+  "r": 0.997,
+  "lag": 0.0,
+  "text": "Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.",
+  "wav": "D:/Proyectos/video2-wt/fuhormiga/vlog/fuhormiga/M1/_chk/v_manual.wav",
+  "asr": "27 dólares, un solo pago. Y si en 7 días no te sirve, te devuelven el dinero.",
+  "sim": 0.882,
+  "ok": true
+ }
+}
