@@ -227,11 +227,11 @@ export const ClKeyFob3D: React.FC<{ mode?: "tease" | "key" | "dead" | "windows" 
     rubber: new THREE.MeshStandardMaterial({ color: "#3A3D44", roughness: 0.85 }),
     red: new THREE.MeshStandardMaterial({ color: CL.nitrile, roughness: 0.6 }),
     metal: new THREE.MeshStandardMaterial({ color: "#D8DCE1", metalness: 0.85, roughness: 0.25 }),
-    cell: new THREE.MeshStandardMaterial({ color: "#C9CDD2", metalness: 0.9, roughness: 0.18 }),
+    cell: new THREE.MeshStandardMaterial({ color: "#D9DDE2", metalness: 0.6, roughness: 0.25, emissive: "#8A8F96", emissiveIntensity: 0.45 }),
     board: new THREE.MeshStandardMaterial({ color: "#2E6B3A", roughness: 0.6 }),
   }), []);
   const p = pop(f, fps, 0, 15);
-  const spin = mode === "tease" ? Math.sin(f * 0.05) * 0.55 : interpolate(f, [0, T], [-0.5, 0.35]);
+  const spin = mode === "tease" ? Math.sin(f * 0.05) * 0.55 : mode === "battery" ? interpolate(f, [0, T], [-0.25, 0.1]) : interpolate(f, [0, T], [-0.5, 0.35]);
   const keyK = mode === "key" ? ease(clamp01((f - 18) / 26)) : mode === "dead" ? 1 : mode === "tease" ? 0.1 + 0.06 * Math.sin(f * 0.2) : 0;
   const openK = mode === "battery" ? ease(clamp01((f - 16) / 24)) : 0;
   const cellK = mode === "battery" ? ease(clamp01((f - 34) / 22)) : 0;
@@ -254,10 +254,15 @@ export const ClKeyFob3D: React.FC<{ mode?: "tease" | "key" | "dead" | "windows" 
           <group rotation={[0.15, 0, -0.18]}>
             {mode === "battery" ? (
               <>
-                <mesh geometry={geo.half} material={mats.plastic} position={[-0.75 * openK, 0, 0.1]} rotation={[0, -0.9 * openK, 0]} />
-                <mesh geometry={geo.half} material={mats.plastic} position={[0.75 * openK, 0, -0.1]} rotation={[0, 0.9 * openK, 0]} />
-                <mesh material={mats.board} position={[0, 0.1, 0]} scale={[Math.max(0.01, openK), 1, 1]}><boxGeometry args={[0.8, 1.4, 0.04]} /></mesh>
-                <mesh material={mats.cell} rotation={[Math.PI / 2, 0, 0]} position={[0, 0.25 + 0.5 * cellK, 0.08 + 0.6 * cellK]}><cylinderGeometry args={[0.32, 0.32, 0.06, 48]} /></mesh>
+                {/* almeja: la mitad de atrás queda de frente con la placa y la pila; la tapa gira sobre la bisagra de arriba */}
+                <mesh geometry={geo.half} material={mats.plastic} position={[0, 0, -0.12]} />
+                <mesh material={mats.board} position={[0, 0.05, 0.0]}><boxGeometry args={[0.78, 1.45, 0.04]} /></mesh>
+                <mesh material={mats.metal} position={[0, 0.3, 0.03]} rotation={[Math.PI / 2, 0, 0]}><torusGeometry args={[0.36, 0.03, 10, 40]} /></mesh>
+                <mesh material={mats.cell} rotation={[Math.PI / 2, 0, 0]} position={[0, 0.3 + 0.35 * cellK, 0.06 + 0.9 * cellK]}><cylinderGeometry args={[0.32, 0.32, 0.06, 48]} /></mesh>
+                <group position={[0, 1.0, 0.04]} rotation={[-1.75 * openK, 0, 0]}>
+                  <mesh geometry={geo.half} material={mats.plastic} position={[0, -1.0, 0.1]} />
+                  {[0.5, 0.12, -0.26].map((y, i) => <mesh key={i} material={i === 2 ? mats.red : mats.rubber} position={[0, y - 1.0, 0.22]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.17, 0.17, 0.05, 32]} /></mesh>)}
+                </group>
               </>
             ) : (
               <>
