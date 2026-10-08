@@ -1,0 +1,92 @@
+// DIRECTOR C — om500k: #1 el cuaderno (aceite a tiempo y por escrito, la luz no manda, 4 cosas por cambio, vale plata al vender, la
+// primera línea de Doris debajo de la de Frank) · la cuenta de Frank 4/6 · la rutina en una hoja · 3 errores (lifetime, flush, aceite que
+// baja) · preguntas · unas semanas después · cierre: regalo (ClQRCard) + Manual (ClBookPage pág. 11) → gancho al ep. 4 aceite de bebé
+// (ClVideoRef th_ombaby) (párrafos 56-85).
+import { S, BI, CLP, DORIS, CAR, DRIVE, SHOP } from "../claudio/lib.mjs";
+import { H, DH, DASH, BAY, GARAGE, NOTEBOOK, PCV } from "./dir_a.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+const I = "img/om500k/";
+export const SHOTS = [
+  // ── #1 el cuaderno
+  C(56, "", "ClFeatureTag", { n: 1, title: "The notebook", note: "decides the other five" }),
+  S(57, "", "bi", "b_notebookglove", { p: BI(`The open glove box of ${CAR}: an old spiral notebook with a pen clipped to it, on top of the owner's manual.`) }),
+  S(57, "Mileage, date, what oil, what filter", "bi", "st_oilchange", { q: "mechanic oil change drain", p: BI("Old engine oil draining from under a car into a pan.") }),
+  S(58, "", "av", ""),
+  S(58, "Every one", "bi", "st_oldtruck", { q: "old pickup truck driving", p: BI("An old pickup truck driving on a country road.") }),
+  S(58, "you don't let a coupon or a little light", "bi", "b_coupon", { p: BI(`An oil change coupon flyer with a blank logo stuck under the windshield wiper of ${CAR}.`) }),
+  S(58, "decide for you", "av", ""),
+  S(59, "", "bi", "b_severe", { p: BI(`A car owner's manual open to a maintenance table with two columns, a pencil circling the right column, the words too small to read.`) }),
+  S(59, "five thousand miles with full synthetic oil", "bi", "st_newoil", { q: "pouring new motor oil engine", p: BI("Fresh golden motor oil being poured into an engine through a funnel.") }),
+  S(59, "Highway drivers can go longer", "bi", "st_highway", { q: "car driving highway day", p: BI("A sedan driving on a sunny open highway.") }),
+  S(59, "Your manual tells you", "av", ""),
+  S(60, "", "bi", "b_oillife", { p: BI(`Close view of the small screen of ${DASH} showing a plain oil can icon and a percentage bar, no readable words.`) }),
+  S(60, "on the way to church and the grocery store", "bi", "st_shorttrip", { q: "car parking grocery store", p: BI("A car pulling into a grocery store parking spot.") }),
+  S(60, "Your notebook is the boss", "av", ""),
+  S(61, "", "kf", "k_write", { p: BI(`Extreme close view of ${DH} holding a blue pen over an old spiral notebook resting on the hood of ${CAR} in a garage.`), d1: "the pen starts writing a new line", d2: "the pen finishes the line and lifts", sound: "a pen scratching on paper" }),
+  C(61, "And what was done besides the oil", "ClNotebook", { title: "Every oil change", rows: [{ k: "Mileage", v: "280,412" }, { k: "Date", v: "today" }, { k: "Oil", v: "manual grade" }, { k: "Also", v: "air filter ✓" }], mark: "next: +5,000" }),
+  S(61, "set a reminder on your phone", "bi", "st_phonereminder", { q: "setting reminder smartphone", p: BI("A hand setting a reminder on a smartphone.") }),
+  S(62, "", "av", ""),
+  S(62, "A buyer who sees ten years of oil changes", "bi", "b_buyer", { p: BI(`A young couple looking through an old spiral notebook at the open hood of a used silver sedan in a driveway, nodding.`) }),
+  S(62, "and pays faster", "bi", "st_handshake", { q: "handshake car sale keys", p: BI("Two people shaking hands next to a used car, car keys changing hands.") }),
+  S(63, "", "bi", "b_lastline", { p: BI(`Extreme close view of the last line of faded blue handwriting in an old spiral notebook, the rest of the page empty.`) }),
+  S(63, "Doris put it back in the glove box", "bi", "b_dorisglove", { p: BI(`${DH} placing an old spiral notebook into the open glove box of ${CAR}.`) }),
+  S(63, "And she wrote her first line", "kf", "k_firstline", { p: BI(`Extreme close view of ${DH} writing with a black pen in an old spiral notebook, right under an older line of faded blue handwriting.`), d1: "the black pen writes slowly", d2: "she lifts the pen and rests her hand on the page", sound: "a pen on paper, a quiet kitchen" }),
+  S(63, "In her own handwriting", "bi", "b_twohands", { p: BI(`Close view of an old spiral notebook page with lines in faded blue pen above and one new line in black pen below, in two different handwritings, the words too small to read.`) }),
+  // ── la cuenta de Frank
+  S(64, "", "av", ""),
+  C(64, "Warming up gently, yes", "ClCheck", { title: "Frank's score", items: ["Gentle warm-up ✓", "Air filter ✓", "Tires monthly ✓", "The notebook ✓", "Fluids on a calendar ✗", "The PCV valve ✗"], fast: true }),
+  S(64, "starting to hurt his engine", "av", ""),
+  // ── la rutina en una hoja
+  C(65, "", "ClChapter", { n: 2, title: "One sheet of paper", sub: "the whole routine" }),
+  S(66, "", "bi", "st_seatbelt2", { q: "putting on seat belt car", p: BI("A driver buckling a seat belt.") }),
+  S(67, "", "bi", "b_gaugetire", { p: BI(`${DH} pressing a pencil tire pressure gauge onto the valve of a car tire in a driveway, early morning.`) }),
+  S(68, "", "bi", "st_mechanicfilter", { q: "mechanic checking air filter", p: BI("A mechanic inspecting an engine air filter under a car hood.") }),
+  S(68, "write it all in the notebook", "bi", "b_writehood", { p: BI(`A blue pen writing in an old spiral notebook resting on a car fender in a shop.`) }),
+  S(68, "ask about the PCV valve", "av", ""),
+  S(69, "", "bi", "b_calendarpage", { p: BI(`The inside front cover of an old spiral notebook with two dates written in black pen and circled, the words too small to read.`) }),
+  C(69, "Brake fluid every two years", "ClFluidClock", { title: "Write these on page one", items: [{ name: "Brake fluid", years: 2 }, { name: "Coolant", years: 5 }] }),
+  // ── 3 errores
+  C(70, "", "ClChapter", { n: 3, title: "3 expensive mistakes", sub: "I see them every week", alert: true }),
+  S(71, "", "bi", "st_transmission", { q: "car automatic transmission", p: BI("An automatic transmission on a shop workbench.") }),
+  S(71, "Some cars say the transmission fluid is lifetime fluid", "bi", "b_lifetime", { p: BI(`Close view of a yellow transmission dipstick handle under the hood of a car, a printed warning label beside it, the words too small to read.`), ov: { c: "ClStampOv", props: { text: "\"LIFETIME\" FLUID?" } } }),
+  S(71, "about a drain and fill", "av", ""),
+  S(72, "", "bi", "st_flushmachine", { q: "transmission fluid service machine", p: BI("A fluid service machine connected to a car in a shop.") }),
+  S(72, "A gentle drain and fill", "bi", "st_drainpan", { q: "draining car fluid pan", p: BI("Red transmission fluid draining from a car into a pan.") }),
+  S(72, "is the safe way", "av", ""),
+  S(73, "", "av", ""),
+  S(73, "Check the dipstick every thousand miles", "bi", "b_dipcheck", { p: BI(`${DH} holding a car's oil dipstick against a white paper towel, the oil mark below the upper line.`) }),
+  S(73, "check the PCV valve before anybody talks to you about a new engine", "av", ""),
+  // ── preguntas
+  C(74, "", "ClChapter", { n: 4, title: "Quick questions", sub: "the ones I always get" }),
+  S(75, "", "bi", "st_syntheticoil", { q: "motor oil bottle pouring", p: BI("Golden synthetic motor oil pouring from a plain bottle into a funnel.") }),
+  S(75, "Use exactly the grade your manual says", "av", ""),
+  S(76, "", "bi", "b_oilshelf", { p: BI(`A shelf of plain motor oil bottles with blank labels in an auto parts store.`) }),
+  S(76, "It's not magic, but it's not a scam either", "av", ""),
+  S(77, "", "av", ""),
+  S(77, "Start today", "bi", "st_garagedawn", { q: "garage door opening morning car", p: BI("A garage door rolling open on a sunny morning, a car inside.") }),
+  S(77, "Doris started at two hundred eighty thousand", "bi", "b_dorisstart", { p: BI(`${DORIS} in the driver's seat of ${CAR} buckling her seat belt on a sunny morning, the old spiral notebook on the passenger seat.`) }),
+  S(78, "", "bi", "st_timingbelt", { q: "engine timing belt", p: BI("Close view of a toothed rubber timing belt on the front of an engine.") }),
+  S(78, "If it's a belt, that's a shop job", "av", ""),
+  S(79, "", "bi", "st_receipts", { q: "car repair receipts folder", p: BI("A folder of car repair receipts on a kitchen table.") }),
+  S(79, "Another reason for the notebook", "av", ""),
+  // ── unas semanas después
+  S(80, "", "bi", "b_dorisphone2", { p: BI(`${DORIS} at her kitchen window talking on an old cordless phone, smiling, ${CAR} visible in the driveway.`) }),
+  S(80, "the oil spot under it was gone", "bi", "b_cleanfloor", { p: BI(`A clean concrete garage floor under the front of ${CAR}, a fresh white paper towel lying there with no spots.`) }),
+  S(80, "her neighbor had asked her who her mechanic was", "bi", "b_neighbor2", { p: BI(`An older white man in a ball cap at the edge of a driveway talking to ${DORIS}, who stands proudly next to ${CAR}.`) }),
+  S(81, "", "bi", "b_dorisproud", { p: BI(`${DORIS} standing next to ${CAR} in her driveway, one hand on the roof, chin up, smiling.`) }),
+  S(81, "You promised", "av", ""),
+  // ── cierre
+  S(82, "", "av", ""),
+  S(82, "With those six habits", "cl", "c_hood", { p: CLP(`Claudio closing the hood of ${CAR} in ${DRIVE} in late-afternoon light, ${DORIS} watching from the porch steps.`) }),
+  S(82, "Somebody who writes things down", "bi", "b_notebookseat", { p: BI(`An old spiral notebook with a pen clipped to it lying on the passenger seat of ${CAR}, sunlight on it.`) }),
+  S(83, "", "av", ""),
+  C(83, "I made a free guide called Before the Shop", "ClQRCard", { qr: I + "qr.jpg", cover: I + "gift_cover.jpg", text: "the 3 tests, free", kicker: "FREE · BEFORE THE SHOP" }),
+  C(83, "the full Glovebox Manual", "ClBookPage", { page: I + "page11.jpg", pageNo: 11, stamp: "All 6 habits + 58 tricks · $27" }),
+  S(84, "", "bi", "b_babyoil", { p: BI(`${DH} holding up a plain clear bottle of baby oil with a blank label in ${GARAGE}, next to ${CAR}.`) }),
+  S(84, "The rubber, the dashboard, all of it", "bi", "b_doorseal", { p: BI(`Close view of the black rubber door seal around the open door frame of ${CAR}.`) }),
+  S(84, "And some of it can ruin your car", "av", ""),
+  C(84, "That's the next video", "ClVideoRef", { thumb: I + "th_ombaby.jpg", title: "Baby oil on your car", next: true }),
+  S(85, "", "av", ""),
+  S(85, "how many miles your car has right now", "bi", "st_odoclose", { q: "car odometer closeup dashboard", p: BI(`Close view of a car's odometer on the dashboard.`) }),
+  S(85, "See you next week", "av", ""),
+];
