@@ -231,7 +231,7 @@ export const ClKeyFob3D: React.FC<{ mode?: "tease" | "key" | "dead" | "windows" 
     board: new THREE.MeshStandardMaterial({ color: "#2E6B3A", roughness: 0.6 }),
   }), []);
   const p = pop(f, fps, 0, 15);
-  const spin = mode === "tease" ? f * 0.025 : interpolate(f, [0, T], [-0.5, 0.35]);
+  const spin = mode === "tease" ? Math.sin(f * 0.05) * 0.55 : interpolate(f, [0, T], [-0.5, 0.35]);
   const keyK = mode === "key" ? ease(clamp01((f - 18) / 26)) : mode === "dead" ? 1 : mode === "tease" ? 0.1 + 0.06 * Math.sin(f * 0.2) : 0;
   const openK = mode === "battery" ? ease(clamp01((f - 16) / 24)) : 0;
   const cellK = mode === "battery" ? ease(clamp01((f - 34) / 22)) : 0;
@@ -533,6 +533,252 @@ export const ClTread3D: React.FC<{ mode?: "bar" | "worn" | "coin"; bed?: string 
       {mode === "bar" ? <><Tag x={1240} y={220} text="La rayita de desgaste" color={CL.nitrile} o={lin(f, 10, 20)} size={46} /><Note x={1240} y={340} o={lin(f, 26, 38)} big="Atravesada en el canal" small="más baja que el dibujo" /></> : null}
       {mode === "worn" ? <><Tag x={1240} y={220} text={wear > 0.9 ? "A ras: se cambia" : "El dibujo se gasta…"} color={wear > 0.9 ? CL.red : CL.navy} o={lin(f, 8, 18)} size={46} /><Note x={1240} y={340} o={lin(f, T * 0.7, T * 0.7 + 10)} big="Antes, no" small="no te la cambies" /></> : null}
       {mode === "coin" ? <><Tag x={1240} y={220} text="La moneda en el canal" o={lin(f, 8, 18)} size={46} /><Note x={1240} y={340} o={lin(f, 34, 46)} big="Le queda vida" small="un año más ✓" /></> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+// ═════════════════ ep. 2 (mecllave): la pila y el control ═════════════════
+//   ClBatterySwap  la pila CR2032 de cerca, sobre el banco: "id" el número grabado (CR2032 · 3V) con lupa · "plus" el signo más hacia
+//                  arriba y la pila que entra al soporte del control abierto · "edges" agarrarla por el borde ✓ vs con los dedos en la cara ✗
+//   ClRangeMeter   la cochera de Elena desde arriba: casa → auto. "now" el control llega a 1 m · "compare" antes 20 m / ahora 1 m ·
+//                  "drop" la pila baja y el círculo de alcance se achica
+//   ClPanicWaves   el estacionamiento del súper desde arriba: "alarm" el auto de Elena titila y la bocina sale en ondas, la gente se da
+//                  vuelta · "find" entre 30 autos plateados, un toque y el de Elena se ilumina con un pin
+//   ClDoorUnlock   el sedán desde arriba con las 4 trabas: "once" un toque = sólo la del conductor (verde) · "twice" dos toques = las 4
+//   ClProxStart    el botón de encendido en 3D CSS: "press" el control apoyado contra el botón y el motor arranca (aguja del cuentavueltas) ·
+//                  "chip" corte del control: la pila muerta (gris) y el chip que el auto lee de cerca · "key" la llave que gira con el chip adentro
+const Cell: React.FC<{ d?: number; flip?: boolean; glow?: number }> = ({ d = 420, flip, glow = 0 }) => (
+  <div style={{ width: d, height: d, borderRadius: "50%", position: "relative", background: flip ? "radial-gradient(circle at 40% 35%, #F2F3F5, #A9ADB3 70%, #7D8187)" : "radial-gradient(circle at 35% 30%, #FFFFFF, #C9CDD2 55%, #8E9298)", boxShadow: `0 30px 50px rgba(0,0,0,0.45), inset 0 -10px 22px rgba(0,0,0,0.25), 0 0 ${60 * glow}px ${hexA(CL.nitrile, 0.6 * glow)}` }}>
+    <div style={{ position: "absolute", inset: d * 0.06, borderRadius: "50%", border: `${Math.max(2, d * 0.008)}px solid rgba(0,0,0,0.12)` }} />
+    {!flip ? (
+      <>
+        <div style={{ position: "absolute", left: "50%", top: "24%", translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: d * 0.28, color: "#6E737A", textShadow: "1px 1px 0 rgba(255,255,255,0.8), -1px -1px 0 rgba(0,0,0,0.15)" }}>+</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: "56%", textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: d * 0.13, letterSpacing: d * 0.01, color: "#6E737A", textShadow: "1px 1px 0 rgba(255,255,255,0.8)" }}>CR2032</div>
+        <div style={{ position: "absolute", left: 0, right: 0, top: "72%", textAlign: "center", fontFamily: LABEL, fontWeight: 600, fontSize: d * 0.08, color: "#7E838A" }}>3V</div>
+      </>
+    ) : <div style={{ position: "absolute", left: "50%", top: "40%", translate: "-50% 0", fontFamily: LABEL, fontWeight: 700, fontSize: d * 0.2, color: "#6E737A" }}>–</div>}
+  </div>
+);
+export const ClBatterySwap: React.FC<{ mode?: "id" | "plus" | "edges"; bed?: string }> = ({ mode = "id", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 15);
+  if (mode === "edges") {
+    const a = pop(f, fps, 4, 14), b = pop(f, fps, 14, 14);
+    const Fing: React.FC<{ x: number; y: number; r: number }> = ({ x, y, r }) => <div style={{ position: "absolute", left: x, top: y, width: 120, height: 220, borderRadius: 60, background: "linear-gradient(90deg,#C08E6B,#E2B694,#B98563)", rotate: `${r}deg`, boxShadow: "0 16px 26px rgba(0,0,0,0.35)" }}><div style={{ position: "absolute", left: 22, top: 12, width: 76, height: 70, borderRadius: "40px 40px 20px 20px", background: "rgba(255,235,220,0.7)" }} /></div>;
+    return (
+      <AbsoluteFill style={{ opacity: out }}>
+        <Bed src={bed} seed={701} dim={0.3} />
+        {[{ x: 220, ok: true, k: a }, { x: 1020, ok: false, k: b }].map((s, i) => (
+          <div key={i} style={{ position: "absolute", left: s.x, top: 180, width: 680, height: 720, opacity: clamp01(s.k * 1.4), scale: String(0.85 + 0.15 * s.k) }}>
+            <Card style={{ position: "absolute", inset: 0, padding: 0, borderRadius: 18, overflow: "hidden", borderBottom: `10px solid ${s.ok ? CL.navy : CL.red}` }}><div /></Card>
+            <div style={{ position: "absolute", left: 150, top: 130 }}><Cell d={380} /></div>
+            {s.ok ? <><Fing x={40} y={170} r={-80} /><Fing x={520} y={170} r={80} /></> : <><Fing x={250} y={-40} r={0} /><Fing x={260} y={430} r={180} /></>}
+            {!s.ok ? <div style={{ position: "absolute", left: 300, top: 300, width: 90, height: 70, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(120,90,60,0.35), rgba(120,90,60,0) 70%)" }} /> : null}
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: 34, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 52, color: s.ok ? CL.navy : CL.red, letterSpacing: 2 }}>{s.ok ? "✓ POR LOS BORDES" : "✗ LOS DEDOS EN LA CARA"}</div>
+          </div>
+        ))}
+        <RoomLight k={0.5} />
+      </AbsoluteFill>
+    );
+  }
+  const spin = interpolate(f, [0, T], [-14, 8]);
+  const lensK = mode === "id" ? ease(clamp01((f - 12) / 16)) : 0;
+  const drop = mode === "plus" ? ease(clamp01((f - T * 0.45) / 18)) : 0;
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={702} dim={0.28} />
+      <Contact x={mode === "plus" ? 760 : 820} y={880} w={620} o={0.35} />
+      {mode === "plus" ? (
+        // el control abierto (media almeja) con el soporte de la pila
+        <div style={{ position: "absolute", left: 420, top: 420, width: 680, height: 420, transform: "perspective(1400px) rotateX(48deg)", opacity: clamp01(p * 1.4) }}>
+          <div style={{ position: "absolute", inset: 0, borderRadius: 160, background: "linear-gradient(#26292F,#121418)", boxShadow: "0 30px 50px rgba(0,0,0,0.5)" }} />
+          <div style={{ position: "absolute", left: 90, top: 60, width: 500, height: 300, borderRadius: 40, background: "#2E6B3A" }} />
+          <div style={{ position: "absolute", left: 180, top: 40, width: 320, height: 320, borderRadius: "50%", border: "12px solid #B9BDC2" }} />
+        </div>
+      ) : null}
+      <div style={{ position: "absolute", left: mode === "plus" ? 550 : 600, top: mode === "plus" ? 140 + drop * 330 : 250, transform: `perspective(1400px) rotateX(${mode === "plus" ? 20 + 28 * drop : 18}deg) rotateZ(${spin}deg) scale(${(0.8 + 0.2 * p) * (mode === "plus" ? 1 - 0.25 * drop : 1)})`, opacity: clamp01(p * 1.4) }}>
+        <Cell d={420} glow={mode === "plus" ? 0.6 + 0.4 * Math.sin(f * 0.3) : 0} />
+      </div>
+      {mode === "id" ? (
+        <>
+          <div style={{ position: "absolute", left: 980 + (1 - lensK) * 400, top: 260, width: 360, height: 360, borderRadius: "50%", overflow: "hidden", border: "16px solid #2B2F36", opacity: lensK, boxShadow: "0 30px 50px rgba(0,0,0,0.45)", background: "radial-gradient(circle at 35% 30%, #FFFFFF, #C9CDD2 60%, #9EA2A8)" }}>
+            <div style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 110, color: "#5E636A", textShadow: "2px 2px 0 rgba(255,255,255,0.9)" }}>2032</div>
+          </div>
+          <Note x={1400} y={680} o={lin(f, 28, 40)} big="CR2032" small="el número, en la pila vieja" w={440} />
+        </>
+      ) : null}
+      {mode === "plus" ? <><Tag x={1200} y={200} text="El + hacia arriba" color={CL.nitrile} o={lin(f, 8, 18)} size={52} /><Note x={1200} y={330} o={lin(f, T * 0.55, T * 0.55 + 10)} big="Igual que la vieja" small="sácale una foto antes" /></> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+// la cochera / el estacionamiento desde arriba: piso, casa, auto (CarTop) y el alcance del control
+export const ClRangeMeter: React.FC<{ mode?: "now" | "compare" | "drop"; bed?: string }> = ({ mode = "now", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const pct = mode === "drop" ? 1 - ease(clamp01((f - 10) / (T * 0.6))) : mode === "now" ? 0.08 : 1;
+  const HX = 360, CX = 1340, CY = 560; // Elena en la puerta de la casa → el auto
+  const reach = (k: number) => 60 + 980 * k;
+  const before = mode === "compare" ? 1 : pct, after = mode === "compare" ? ease(clamp01((f - T * 0.45) / 16)) : 0;
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={711} dim={0.3} />
+      <div style={{ position: "absolute", left: 120, top: 140 + (1 - p) * 120, width: 1680, height: 820, transform: "perspective(2200px) rotateX(30deg)", transformOrigin: "50% 100%", opacity: clamp01(p * 1.4) }}>
+        <div style={{ position: "absolute", inset: 0, borderRadius: 18, background: "linear-gradient(#C9C5BC,#B4AFA5)", boxShadow: "0 40px 70px rgba(0,0,0,0.45)" }} />
+        {/* la casa */}
+        <div style={{ position: "absolute", left: 40, top: 120, width: 240, height: 580, borderRadius: 10, background: "#EDE6D8", border: `6px solid ${CL.navy}` }}>
+          <div style={{ position: "absolute", right: -10, top: 250, width: 26, height: 110, background: "#6B4A2E", borderRadius: 4 }} />
+          <div style={{ position: "absolute", left: 20, top: 20, fontFamily: LABEL, fontWeight: 700, fontSize: 34, color: CL.navy }}>CASA</div>
+        </div>
+        {/* Elena (punto) en la puerta */}
+        <div style={{ position: "absolute", left: HX - 120 - 24, top: CY - 140 - 24, width: 48, height: 48, borderRadius: "50%", background: CL.nitrile, border: "6px solid #fff", boxShadow: "0 6px 12px rgba(0,0,0,0.4)" }} />
+        {/* alcance */}
+        <svg width={1680} height={820} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
+          {mode !== "compare" ? <circle cx={HX - 120} cy={CY - 140} r={reach(pct)} fill={hexA(pct > 0.5 ? "#4CAF50" : CL.red, 0.14)} stroke={pct > 0.5 ? "#2E7D32" : CL.red} strokeWidth={6} strokeDasharray="20 12" /> : (
+            <>
+              <circle cx={HX - 120} cy={CY - 140} r={reach(1)} fill={hexA("#4CAF50", 0.1)} stroke="#2E7D32" strokeWidth={6} strokeDasharray="20 12" />
+              <circle cx={CX - 120} cy={CY - 140} r={60 + 40 * after} fill={hexA(CL.red, 0.2 * after)} stroke={CL.red} strokeWidth={6} opacity={after} />
+            </>
+          )}
+          <line x1={HX - 120} y1={CY - 140 + 90} x2={CX - 340} y2={CY - 140 + 90} stroke={CL.navy} strokeWidth={5} strokeDasharray="14 10" />
+        </svg>
+        <div style={{ position: "absolute", left: (HX + CX) / 2 - 260, top: CY - 30, fontFamily: HAND, fontWeight: 700, fontSize: 60, color: CL.navy }}>20 metros</div>
+        <div style={{ position: "absolute", left: CX - 520, top: CY - 320 }}><CarTop w={560} /></div>
+      </div>
+      {mode === "now" ? <Note x={1240} y={100} o={lin(f, 12, 24)} big="Ahora: 1 metro" small="pegada a la puerta" color={CL.red} w={520} /> : null}
+      {mode === "compare" ? <><Tag x={160} y={100} text="Antes: 20 m" color={CL.navy} o={lin(f, 6, 16)} size={52} /><Tag x={1260} y={100} text="Ahora: 1 m" color={CL.red} o={after} size={52} /></> : null}
+      {mode === "drop" ? (
+        <div style={{ position: "absolute", left: 1420, top: 110, opacity: lin(f, 4, 14) }}>
+          <svg width={380} height={170}><rect x={8} y={20} width={300} height={130} rx={18} fill="rgba(20,27,46,0.6)" stroke="#fff" strokeWidth={10} /><rect x={308} y={60} width={30} height={50} rx={6} fill="#fff" /><rect x={26} y={38} width={264 * pct} height={94} rx={8} fill={pct > 0.5 ? "#4CAF50" : pct > 0.2 ? "#F2C230" : CL.red} /></svg>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 44, color: "#fff", textShadow: "0 3px 10px rgba(0,0,0,0.6)" }}>LA PILA SE ACABA</div>
+        </div>
+      ) : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClPanicWaves: React.FC<{ mode?: "alarm" | "find"; bed?: string }> = ({ mode = "alarm", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const on = f > 10, blink = on && Math.floor(f / 6) % 2 === 0;
+  const cars: [number, number][] = []; for (let r = 0; r < 3; r++) for (let c = 0; c < 8; c++) cars.push([150 + c * 190, 90 + r * 260]);
+  const ME = mode === "find" ? 13 : 10;
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={721} dim={0.3} />
+      <div style={{ position: "absolute", left: 120, top: 120 + (1 - p) * 120, width: 1680, height: 840, transform: "perspective(2200px) rotateX(32deg)", transformOrigin: "50% 100%", opacity: clamp01(p * 1.4) }}>
+        <div style={{ position: "absolute", inset: 0, borderRadius: 14, background: "#55595F", boxShadow: "0 40px 70px rgba(0,0,0,0.45)" }} />
+        {Array.from({ length: 9 }, (_, i) => <div key={i} style={{ position: "absolute", left: 60 + i * 190, top: 40, width: 6, height: 760, background: "rgba(255,255,255,0.55)" }} />)}
+        {cars.map(([x, y], i) => {
+          const me = i === ME, lit = me && (mode === "alarm" ? blink : f > T * 0.35 && blink);
+          return (
+            <div key={i} style={{ position: "absolute", left: x - 70, top: y, transform: "rotate(90deg)", transformOrigin: "70px 40px" }}>
+              <div style={{ width: 200, height: 90, position: "relative", filter: lit ? `drop-shadow(0 0 26px ${CL.yellow})` : undefined }}>
+                <CarTop w={200} fill={me ? "#F4F6F8" : ["#D7DBE0", "#9BA3AD", "#C9CED4", "#7E8792"][i % 4]} sw={4} />
+              </div>
+            </div>
+          );
+        })}
+        <svg width={1680} height={840} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
+          {on ? [0, 1, 2, 3].map((i) => { const t = ((f * 0.03 + i / 4) % 1); const [x, y] = cars[ME]; return <circle key={i} cx={x + 30} cy={y + 100} r={40 + t * 520} fill="none" stroke={CL.yellow} strokeWidth={8} opacity={(1 - t) * (mode === "alarm" ? 0.9 : f > T * 0.35 ? 0.9 : 0)} />; }) : null}
+        </svg>
+        {mode === "find" ? <div style={{ position: "absolute", left: cars[ME][0] + 4, top: cars[ME][1] - 70 - 30 * lin(f, T * 0.35, T * 0.45), opacity: lin(f, T * 0.35, T * 0.45) }}><svg width={60} height={80}><path d="M30 78 C 10 50 4 38 4 28 A 26 26 0 1 1 56 28 C 56 38 50 50 30 78 Z" fill={CL.nitrile} stroke="#fff" strokeWidth={4} /><circle cx={30} cy={28} r={9} fill="#fff" /></svg></div> : null}
+      </div>
+      {mode === "alarm" ? <><Tag x={160} y={80} text="Botón rojo: pánico" color={CL.red} o={lin(f, 6, 16)} size={52} /><Note x={1260} y={80} o={lin(f, 24, 36)} big="Bocina y luces" small="sin parar" color={CL.red} w={460} /></> : null}
+      {mode === "find" ? <><Tag x={160} y={80} text="Un toque corto" color={CL.navy} o={lin(f, 6, 16)} size={52} /><Note x={1260} y={80} o={lin(f, T * 0.45, T * 0.45 + 10)} big="Ahí está" small="entre 30 autos iguales" w={460} /></> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClDoorUnlock: React.FC<{ mode?: "once" | "twice"; bed?: string }> = ({ mode = "once", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const t1 = 16, t2 = mode === "twice" ? 30 : 9999;
+  const k1 = lin(f, t1, t1 + 6), k2 = lin(f, t2, t2 + 6);
+  // posiciones de las 4 trabas en CarTop (w=1100 → escala 1100/900): conductor arriba-adelante
+  const s = 1100 / 900, D = [[560, 52, true], [360, 52, false], [560, 353, false], [360, 353, false]] as [number, number, boolean][];
+  const Press: React.FC<{ at: number; x: number }> = ({ at, x }) => { const k = lin(f, at, at + 4) * (1 - lin(f, at + 6, at + 12)); return <div style={{ position: "absolute", left: x, top: 70, width: 90, height: 90, borderRadius: "50%", background: CL.nitrile, opacity: 0.25 + 0.75 * lin(f, at - 2, at), scale: String(1 - 0.15 * k), boxShadow: `0 0 ${30 * k}px ${CL.nitrile}`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: "#fff" }}>{at === t1 ? "1" : "2"}</div>; };
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={731} dim={0.3} />
+      <Contact x={960} y={860} w={1200} o={0.32} />
+      <div style={{ position: "absolute", left: 410, top: 300 + (1 - p) * 120, transform: "perspective(1800px) rotateX(36deg)", opacity: clamp01(p * 1.4), filter: "drop-shadow(0 30px 30px rgba(0,0,0,0.35))" }}>
+        <CarTop w={1100} fill="#F2F4F6" />
+        <svg width={1100} height={495} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>
+          {D.map(([x, y, drv], i) => {
+            const open = drv ? k1 : k2;
+            return <g key={i}><circle cx={x * s} cy={y * s} r={46} fill={open > 0.5 ? "#4CAF50" : CL.red} stroke="#fff" strokeWidth={6} /><path d={open > 0.5 ? `M ${x * s - 14} ${y * s} l 9 10 l 18 -20` : `M ${x * s - 12} ${y * s - 12} l 24 24 M ${x * s + 12} ${y * s - 12} l -24 24`} stroke="#fff" strokeWidth={7} fill="none" strokeLinecap="round" /></g>;
+          })}
+        </svg>
+      </div>
+      <Press at={t1} x={1460} />
+      {mode === "twice" ? <Press at={t2} x={1580} /> : null}
+      <Tag x={180} y={110} text={mode === "once" ? "Un toque: sólo tu puerta" : "Dos toques: las 4"} color={mode === "once" ? CL.navy : CL.nitrile} o={lin(f, 4, 14)} size={52} />
+      {mode === "once" ? <Note x={180} y={230} o={lin(f, 28, 40)} big="Subes y cierras" small="nadie entra por atrás" w={520} /> : null}
+      <RoomLight k={0.5} />
+    </AbsoluteFill>
+  );
+};
+
+export const ClProxStart: React.FC<{ mode?: "press" | "chip" | "key"; bed?: string }> = ({ mode = "press", bed }) => {
+  const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
+  const p = pop(f, fps, 0, 16);
+  const near = ease(clamp01((f - 10) / 16)), go = clamp01((f - 34) / 10);
+  const needle = -120 + 40 * go + (go > 0 ? Math.sin(f * 0.6) * 3 : 0);
+  if (mode === "chip") {
+    const k = ease(clamp01((f - 8) / 18));
+    return (
+      <AbsoluteFill style={{ opacity: out }}>
+        <Bed src={bed} seed={741} dim={0.3} />
+        <div style={{ position: "absolute", left: 300, top: 200, width: 760, height: 560, transform: "perspective(1600px) rotateX(30deg) rotateZ(-8deg)", opacity: clamp01(p * 1.4) }}>
+          <div style={{ position: "absolute", inset: 0, borderRadius: 220, background: "linear-gradient(#26292F,#111316)", boxShadow: "0 40px 60px rgba(0,0,0,0.5)" }} />
+          <div style={{ position: "absolute", left: 120, top: 90, width: 520, height: 380, borderRadius: 40, background: "#2E6B3A" }} />
+          {/* pila muerta */}
+          <div style={{ position: "absolute", left: 160, top: 130, width: 260, height: 260, borderRadius: "50%", background: "radial-gradient(circle at 35% 30%, #9A9EA4, #6C7076)", filter: "grayscale(1)", opacity: 0.85 }}>
+            <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 60, color: "#3A3D42" }}>0%</div>
+          </div>
+          {/* el chip */}
+          <div style={{ position: "absolute", left: 470, top: 190, width: 120, height: 120, background: "#15171A", borderRadius: 10, boxShadow: `0 0 ${50 * k}px ${hexA(CL.yellow, 0.9 * k)}`, border: `4px solid ${hexA(CL.yellow, k)}` }} />
+        </div>
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          {[0, 1, 2].map((i) => { const t = ((f * 0.04 + i / 3) % 1); return <path key={i} d={`M ${930 + t * 260} ${420 - t * 90} q 40 60 0 120`} stroke={CL.yellow} strokeWidth={8} fill="none" opacity={(1 - t) * k} />; })}
+        </svg>
+        <Tag x={1240} y={260} text="El chip no usa pila" color={CL.navy} o={lin(f, 14, 24)} size={50} />
+        <Note x={1240} y={380} o={lin(f, 30, 42)} big="El auto lo lee" small="de muy cerca" w={480} />
+        <RoomLight k={0.5} />
+      </AbsoluteFill>
+    );
+  }
+  return (
+    <AbsoluteFill style={{ opacity: out }}>
+      <Bed src={bed} seed={742} dim={0.3} />
+      {/* el botón de encendido / la llave en el tambor */}
+      <div style={{ position: "absolute", left: 560, top: 300, width: 420, height: 420, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%, #3A3F46, #15181C 70%)", boxShadow: "0 30px 50px rgba(0,0,0,0.5), inset 0 0 0 14px #9EA4AB", transform: `perspective(1400px) rotateY(-18deg) scale(${0.85 + 0.15 * p})`, opacity: clamp01(p * 1.4) }}>
+        {mode === "press" ? (
+          <div style={{ position: "absolute", inset: 70, borderRadius: "50%", background: "radial-gradient(circle at 40% 35%, #2B2F35, #0E1013)", boxShadow: `inset 0 0 0 6px ${go > 0 ? "#4CAF50" : "#C9CDD2"}`, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 46, color: "#E7E9EC", letterSpacing: 2 }}>ENGINE</div>
+            <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 34, color: "#C9CDD2" }}>START · STOP</div>
+          </div>
+        ) : (
+          <div style={{ position: "absolute", inset: 120, borderRadius: "50%", background: "linear-gradient(#D8DCE1,#8E949B)", rotate: `${70 * go}deg` }}><div style={{ position: "absolute", left: "50%", top: 20, translate: "-50% 0", width: 26, height: 140, background: "#2B2F36", borderRadius: 6 }} /></div>
+        )}
+      </div>
+      {mode === "press" ? (
+        <div style={{ position: "absolute", left: 980 - 260 * near, top: 300, width: 220, height: 380, borderRadius: 90, background: "linear-gradient(#26292F,#111316)", boxShadow: "0 30px 40px rgba(0,0,0,0.45)", rotate: "-12deg" }}>
+          {[70, 160, 250].map((y, i) => <div key={i} style={{ position: "absolute", left: 66, top: y, width: 88, height: 70, borderRadius: "50%", background: i === 2 ? CL.nitrile : "#3A3D44" }} />)}
+        </div>
+      ) : null}
+      {/* cuentavueltas: el motor arranca */}
+      <div style={{ position: "absolute", left: 1220, top: 520, width: 340, height: 340, borderRadius: "50%", background: "radial-gradient(#1C2330,#07090D)", boxShadow: "0 20px 40px rgba(0,0,0,0.5), inset 0 0 0 12px #9EA4AB", opacity: lin(f, 20, 30) }}>
+        <div style={{ position: "absolute", left: 166, top: 40, width: 8, height: 130, background: "#F27A1A", borderRadius: 4, transformOrigin: "50% 100%", rotate: `${needle}deg` }} />
+        <div style={{ position: "absolute", left: 0, right: 0, bottom: 70, textAlign: "center", fontFamily: LABEL, fontWeight: 700, fontSize: 34, color: "#E7E9EC" }}>RPM</div>
+      </div>
+      <Tag x={1220} y={200} text={mode === "press" ? "Pegado al botón" : "La llave gira"} color={CL.navy} o={lin(f, 6, 16)} size={50} />
+      <Note x={1220} y={320} o={go} big="Arranca igual" small="con la pila muerta ✓" w={480} />
       <RoomLight k={0.5} />
     </AbsoluteFill>
   );
