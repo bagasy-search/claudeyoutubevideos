@@ -333,7 +333,7 @@ export const ClTrapSet: React.FC<{ mode?: "wall" | "box"; bed?: string }> = ({ m
   }
   // "wall": desde arriba, la pared a la derecha; la trampa de costado pegada, gatillo hacia la pared; el ratón llega de frente
   const WALLX = 1440;
-  const m = clamp01((f - T * 0.4) / (T * 0.45));
+  const m = clamp01((f - T * 0.12) / (T * 0.6));
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <Bed src={bed} seed={433} dim={0.55} />
@@ -342,16 +342,16 @@ export const ClTrapSet: React.FC<{ mode?: "wall" | "box"; bed?: string }> = ({ m
         <rect x={WALLX} y={120} width={200} height={860} fill="#E8E1D2" stroke={CL.ink} strokeWidth={8} />
         <Trap x={WALLX - 160} y={560} r={0} s={1.2} />
         {/* la lenteja de cebo */}
-        <g opacity={lin(f, T * 0.15, T * 0.22)}>
+        <g opacity={lin(f, 6, 14)}>
           <circle cx={1060} cy={360} r={34} fill="#B07A3C" stroke="#6E4A20" strokeWidth={4} />
           <path d={`M1094 360 C 1180 360 1230 470 ${WALLX - 160 + 132} 556`} stroke={CL.red} strokeWidth={4} fill="none" strokeDasharray="12 10" />
         </g>
-        <Mouse x={WALLX - 60} y={980 - m * 320} r={-90} s={1.2} walk={f * 0.6} o={lin(f, T * 0.4, T * 0.46)} />
-        <path d={`M${WALLX - 40} 960 V 720`} stroke={CL.nitrile} strokeWidth={5} strokeDasharray="14 10" opacity={lin(f, T * 0.4, T * 0.5)} />
+        <Mouse x={WALLX - 60} y={980 - m * 320} r={-90} s={1.2} walk={f * 0.6} o={lin(f, T * 0.12, T * 0.18)} />
+        <path d={`M${WALLX - 40} 960 V 720`} stroke={CL.nitrile} strokeWidth={5} strokeDasharray="14 10" opacity={lin(f, T * 0.12, T * 0.22)} />
       </svg>
       <Tag x={WALLX - 470} y={420} text="Gatillo hacia la pared" color={CL.navy} o={lin(f, 8, 16)} size={34} />
-      <Tag x={760} y={280} text="Una pizca · como una lenteja" color="#8B5A2B" o={lin(f, T * 0.15, T * 0.22)} size={32} />
-      <Note x={300} y={700} o={lin(f, T * 0.62, T * 0.72)} big="Camina pegado a la pared" small="se la encuentra de frente" color={CL.nitrile} />
+      <Tag x={760} y={280} text="Una pizca · como una lenteja" color="#8B5A2B" o={lin(f, 10, 18)} size={32} />
+      <Note x={300} y={700} o={lin(f, T * 0.45, T * 0.55)} big="Camina pegado a la pared" small="se la encuentra de frente" color={CL.nitrile} />
       <RoomLight k={0.3} />
     </AbsoluteFill>
   );

@@ -20,6 +20,7 @@ export const SHOTS = [
   S(0, "", "kf", "k_wallmouse", { p: BI(`Night, a flashlight beam on the bottom of a painted garage wall: ${MOUSE} squeezing into a dark gap where a gas pipe enters the wall, a green bait block lying on the floor nearby.`), d1: "the mouse sniffs at the dark gap in the wall", d2: "the mouse slips into the gap and its tail disappears", sound: "tiny scratching on cement", ov: { c: "ClStampOv", props: { text: "EL VENENO NO LOS SACA" } } }),
   S(0, "Los mata adentro", "c", "ClPoisonWall", { props: { mode: "wall" } }),
   S(0, "donde no los puedes sacar", "bi", "b_wallgap0", { q: "hole in wall", p: BI("Night, extreme close view of a dark narrow hole at the base of a painted cinder-block wall, a flashlight beam on it, a few gray hairs on its edge.") }),
+  S(0, "dos semanas", "bi", "b_calendar2", { p: BI("A paper wall calendar hanging in a garage, two full weeks crossed out with a marker.") }),
   S(0, "Y la casa huele a podrido dos semanas", "bi", "b_nose", { p: BI(`${LUCIA} in her garage holding her nose with a disgusted face, looking at a metal shelf against the wall.`) }),
   // ── los Ramírez
   S(1, "", "bi", "b_garage0", { q: "garage interior night", p: BI(`Night, ${GARAGE}, the light just switched on, seen from the doorway.`) }),
@@ -31,6 +32,7 @@ export const SHOTS = [
   S(1, "detrás de la estantería", "bi", "b_shelfback", { p: BI(`The dusty narrow gap behind a metal garage shelf full of paint cans, against a painted cinder-block wall, a flashlight beam on it.`) }),
   // ── el loop
   S(2, "", "kf", "k_flour", { p: BI(`Close view of ${H} shaking a small kitchen sieve over a cement garage floor along the base of a wall, white flour falling.`), d1: "the sieve shakes and white flour falls in a thin veil", d2: "a thin white strip of flour covers the floor along the wall", sound: "a soft tapping on a metal sieve" }),
+  S(2, "en el piso", "bi", "b_handful", { p: BI(`Close view of ${H} holding a handful of white flour over a gray cement garage floor next to the wall.`) }),
   S(2, "a la mañana siguiente", "bi", "b_morning0", { q: "garage morning light", p: BI(`Early morning light through a small window into ${GARAGE}, a thin white strip of flour along the base of the wall.`) }),
   S(2, "fue por dónde entraban de verdad", "bi", "b_prints0", { p: BI(`Morning, extreme close view of tiny mouse footprints and a thin tail line in a thin layer of white flour on a gray cement floor along a wall.`) }),
   S(2, "Un lugar que nadie en esa casa había mirado en diez años", "cl", "c_heater0", { p: CLP(`In a dim garage he crouches in the back corner beside a white water heater, pointing a flashlight behind it, looking back at the camera with raised eyebrows.`) }),
