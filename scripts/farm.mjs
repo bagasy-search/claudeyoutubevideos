@@ -18,6 +18,7 @@
 //   - "pref"          → solo img/<pref>* y vid/<pref>* + diagramas dg_*
 //   - sin pref        → empaqueta img/ y vid/ enteros.)
 import * as _cp from "node:child_process";
+import { fileURLToPath } from "node:url";
 // windowsHide por defecto: sin esto cada git/gh/tar abre una ventana de consola que parpadea y roba el foco.
 const execSync = (c, o = {}) => _cp.execSync(c, { windowsHide: true, ...o });
 const execFileSync = (f, a, o = {}) => _cp.execFileSync(f, a, { windowsHide: true, ...o });
@@ -670,7 +671,7 @@ if (process.env.FARM_NOWAIT) {
   process.exit(0);
 }
 console.log("corrida:", runId, "— siguiendo (esto tarda según los pedazos)...");
-try { sh(`gh run watch ${runId} --exit-status`); } catch { console.error("la corrida fallo; revisá: gh run view " + runId); process.exit(1); }
+try { sh(`node "${fileURLToPath(new URL("esperar_run.mjs", import.meta.url))}" ${runId}`); } catch { console.error("la corrida fallo; revisá: gh run view " + runId); process.exit(1); }
 // destino fijo en el disco grande (D:) para no quedarse sin espacio en C: al
 // extraer el mp4 (~1.5 GB). Override con env VIDEO_OUT si hace falta.
 const DEST = process.env.VIDEO_OUT || "D:\\videosdeclaude";

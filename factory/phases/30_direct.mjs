@@ -29,6 +29,9 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
     "- Mencionar un atributo en positivo invoca su cliché: describí objetos por GEOMETRÍA y usá claves de `glosario.json` para lo recurrente.",
     "- Toda frase de más de 7 s lleva un SEGUNDO plano `<n>x` (si no, queda un plano clavado).",
     spec.modo === "avatar" ? "- `p000` es `{\"n\":\"p000\",\"t\":\"avatar\"}` (el video abre con el avatar hablando). Avatar visible ≈25-30 % de los momentos, repartido." : "- Modo narrador: sin planos avatar.",
+    ...(Array.isArray(spec.overrides?.avatarFijo) ? [`- ⛔ AVATAR FIJO: los momentos de avatar son EXACTAMENTE ${spec.overrides.avatarFijo.join(", ")} (el avatar ya está grabado). Ni uno más ni uno menos.`] : []),
+    "- Un segundo plano `x` NUNCA es avatar ni lleva componente `k`: es siempre un plano de imagen.",
+    `- ⛔ IDIOMA: todo texto que se ve en pantalla (las props de \`k\`) va en ${({ en: "INGLÉS", es: "ESPAÑOL", pt: "PORTUGUÉS" })[spec.idioma] || spec.idioma}, el idioma del video, aunque estas instrucciones estén en castellano.`,
     "- Encuadres variados: close ≤20 %, wide ≥25 %. Racha máxima del mismo lugar ≤6.",
     "- ⛔ RITMO HUMANO, NO METRÓNOMO: la duración de cada plano la decide LO QUE SE DICE, no un reloj.",
     "  Momento rápido o que enumera → plano corto. Momento que explica o que merece mirarse → plano",
@@ -75,6 +78,7 @@ export function directorPrompt({ slug, spec, style, mom, secs }) {
       "  una palabra suelta ahí deja el texto NEGRO sobre el velo, sin error.",
       "- ⛔ No inventes props: las que no están en la firma se ignoran en silencio y el dato no se ve.",
       "- `startAt`/`stagger` NO los pongas: los calcula la fábrica según el hueco real.",
+      `- ⛔ Una prop de tipo asset (una foto: src, image…) NUNCA es un nombre inventado: es la imagen de un plano de imagen de ESTE video, "img/${slug}/pNNN.jpg" (la del mismo momento o la de un vecino).`,
       "- Un componente por momento (dos se pisan). Apuntá a que ~1 de cada 8-10 momentos lleve uno.", "",
       docKit(kit), "");
     L.push("## Metraje REAL de stock (`st`) — opcional por plano",
@@ -134,6 +138,59 @@ export default {
     const gf = path.join(P.dirDir, "glosario.json");
     const glosario = fs.existsSync(gf) ? JSON.parse(fs.readFileSync(gf, "utf8")) : {};
     const r = compose({ mom, tramos, style, glosario, secs });
+    // ⛔ Medido 04-oct (hlqwen3, qwen3.8-max): un segundo plano `x` de AVATAR pasaba esta fase y recién
+    //    reventaba en 60_build ("MISMO asset" — el build no usa avatar como segundo plano). Se caza acá,
+    //    donde el director todavía puede corregirlo gratis.
+    for (const x of tramos.filter((t) => /x$/.test(t.n || "") && t.t === "avatar"))
+      r.errores.push(`${x.n}: un segundo plano (x) NO puede ser avatar — el montaje no lo usa y repite la foto del principal. Hacelo un plano de IMAGEN (c, e, l, m, s, q/mo)`);
+    // ⛔ Medido 05-oct (piloto hlqwen3): un componente en un plano `x` pasaba acá y reventaba en 60_build
+    //    ("el plano no es un momento (no se puede anclar)"). Los comps se anclan a la FRASE del momento.
+    for (const x of tramos.filter((t) => /x$/.test(t.n || "") && t.k))
+      r.errores.push(`${x.n}: un segundo plano (x) NO puede llevar componente "k" — se ancla a la frase del momento. Mové el "k" al plano principal ${x.n.replace(/x$/, "")} (si no es avatar) o sacalo`);
+    // ⛔ Medido 05-oct (piloto hlqwen3, qwen3.8-max): props de comps en ESPAÑOL en un canal EN ("margen
+    //    justo", "Resetear sin mirar"). El prompt del director está en castellano y el modelo lo copia.
+    if (spec.idioma === "en") {
+      const textos = (v, out = []) => { if (typeof v === "string") out.push(v); else if (v && typeof v === "object") for (const x of Object.values(v)) textos(x, out); return out; };
+      const ES = /[áéíóúñ¿¡]|(?<![\p{L}])(de|del|la|las|el|los|sin|con|para|que|una|por|más|muy|calentador|enchufe|cable)(?![\p{L}])/giu;
+      for (const t of tramos.filter((x) => x.k)) {
+        const malos = textos(t.k.props).filter((s) => (s.match(ES) || []).length >= (/[áéíóúñ¿¡]/.test(s) ? 1 : 2) || /^(de|la|el|sin|con|para)\s/i.test(s));
+        if (malos.length) r.errores.push(`${t.n}: el texto del componente está en ESPAÑOL (${malos.slice(0, 2).map((s) => `"${s}"`).join(", ")}) y el video es en INGLÉS: todo texto en pantalla va en inglés`);
+      }
+    }
+    // ⛔ Medido 05-oct (piloto hl20ds, deepseek-v4-pro): una prop `asset` de comp con una foto INVENTADA
+    //    (FloatingInsert src:"window_insulation_kit_package") pasaba acá y reventaba en 60_build
+    //    (assetsEnDisco) sin que el piloto supiera a qué plano devolverlo. Una prop asset vale si el archivo
+    //    existe en public/ o si es la imagen de un plano de imagen de ESTE video: img/<slug>/<pNNN>.jpg.
+    if ((style.montaje || "vlog-crudo") === "premium") {
+      const kit = cargarKit(path.join(ROOT, "factory", "styles", "premium"));
+      const planosImg = new Set(tramos.filter((t) => t.t !== "avatar").map((t) => t.n));
+      const defDe = (kind) => kit.kinds?.[kind];
+      for (const t of tramos.filter((x) => x.k?.kind)) {
+        const def = defDe(t.k.kind);
+        for (const [p, tipo] of Object.entries(def?.props || {})) {
+          const v = t.k.props?.[p];
+          if (tipo !== "asset" || v == null || v === "") continue;
+          const s = String(v).replace(/^\/+/, "");
+          const m = s.match(/^img\/[^/]+\/(p\d{3}x?)\.jpg$/);
+          if (fs.existsSync(path.join(ROOT, "public", s)) || (m && planosImg.has(m[1]))) continue;
+          r.errores.push(`${t.n}: la prop "${p}" del componente ${t.k.kind} apunta a "${s}", que NO existe. Usá la imagen de un plano de imagen de este video: "img/${slug}/pNNN.jpg" (por ejemplo la de ${t.n}${planosImg.has(t.n) ? "" : " o la de un plano vecino"}), o sacá el componente`);
+        }
+      }
+    }
+    // Avatar FIJO (spec.overrides.avatarFijo): reusar un reel ya pagado. Cambiar el set de momentos de
+    // avatar cambia las ventanas y obliga a otro /run de RunPod.
+    const fijo = spec.overrides?.avatarFijo;
+    if (Array.isArray(fijo)) {
+      const av = new Set(tramos.filter((t) => t.t === "avatar" && !/x$/.test(t.n || "")).map((t) => t.n));
+      const faltan = fijo.filter((n) => !av.has(n)), sobran = [...av].filter((n) => !fijo.includes(n));
+      if (faltan.length || sobran.length) r.errores.push(`avatar FIJO: los momentos de avatar tienen que ser EXACTAMENTE ${fijo.join(", ")}${faltan.length ? ` · faltan ${faltan.join(", ")}` : ""}${sobran.length ? ` · sobran ${sobran.join(", ")} (hacelos planos de imagen)` : ""}`);
+    }
+    // Premium sin componentes = sólo fotos (medido 04-oct: deepseek-v4-pro dirigió 0 comps y pasó todo).
+    if ((style.montaje || "vlog-crudo") === "premium") {
+      const minComps = Number(spec.overrides?.compsMin ?? Math.ceil(mom.length / 10));
+      const nComps = tramos.filter((t) => t.k).length;
+      if (nComps < minComps) r.errores.push(`componentes: hay ${nComps} y el montaje premium pide al menos ${minComps} (~1 cada 8-10 momentos). Agregá "k": {"kind": …, "props": {…}} del kit en momentos que den un dato, una comparación o una lista`);
+    }
     for (const e of r.errores.slice(0, 20)) log("  ⛔ " + e);
     assertMeasured("direccionErrores", r.errores.length, { max: 0, allowZero: true, log });
     assertMeasured("momentosCubiertos", r.medido.cubiertos, { min: mom.length, total: mom.length, log });

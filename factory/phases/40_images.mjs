@@ -7,6 +7,7 @@ import { assertMeasured } from "../lib/gate.mjs";
 import { withLease } from "../lib/lease.mjs";
 import { submitBatch, pollBatch, fetchBatch } from "../lib/openai_batch.mjs";
 import { pool, sleep } from "../lib/phase.mjs";
+import { ROOT, env } from "../lib/env.mjs";
 
 export default {
   id: "40_images",
@@ -43,7 +44,19 @@ export default {
     const faltaPagar = (it) => faltaJpg(it) && !fs.existsSync(path.join(P.pngDir, `${it.name}.png`));
     const size = style.imagen?.size || "1088x608", quality = style.imagen?.quality || "low";
 
-    await withLease("openai_batch", slug, 1, async () => {
+    // Respaldo GRATIS sin OpenAI (FACTORY_IMG_MOTOR=agnes): scripts/agnes_img.mjs, con la foto ENTERA del
+    // avatar como referencia de identidad y la descripción del presentador del ESTILO (no la quemada del script).
+    if (env("FACTORY_IMG_MOTOR") === "agnes") {
+      const pend = [...listas.edits.map((x) => ({ name: x.name, prompt: x.prompt, ref: [spec.avatar?.face || ref] })), ...listas.gens].filter(faltaPagar);
+      log(`⚠️ motor de imagen = AGNES (gratis; el de la casa es gpt-image-2) · ${pend.length} a generar`);
+      if (pend.length) {
+        const lista = path.join(P.listas, "agnes_img.json");
+        fs.writeFileSync(lista, JSON.stringify(pend, null, 1));
+        const ident = `Preserve the exact identity of the man in the reference photograph: ${String(style.presentador || "").replace(/^the same man from the reference image,?\s*/i, "")}.`;
+        await run("node", [path.join(ROOT, "scripts", "agnes_img.mjs"), lista, P.pngDir, "--conc", "6"],
+          { timeoutMs: 90 * 60_000, cwd: ROOT, allowFail: true, env: { AGNES_IDENT: ident }, onLine: (l) => /MEDIDO|✗|error/i.test(l) && log(l.slice(0, 160)) });
+      }
+    } else await withLease("openai_batch", slug, 1, async () => {
       for (const [k, items] of Object.entries(listas)) {
         const pend = items.filter(faltaPagar);
         if (!pend.length) continue;
@@ -76,6 +89,6 @@ export default {
     const faltan = todos.filter(faltaJpg).map((i) => i.name);
     if (faltan.length) log(`faltan: ${faltan.slice(0, 20).join(", ")} (re-correr la fase las vuelve a pedir)`);
     assertMeasured("imagenesHechas", hechas, { min: todos.length, total: todos.length, log });
-    return { planos: todos.length, conCara: listas.edits.length, sinCara: listas.gens.length, hechas, usdEstimado: +(listas.edits.length * 0.00207 + listas.gens.length * 0.00169).toFixed(2) };
+    return { planos: todos.length, conCara: listas.edits.length, sinCara: listas.gens.length, hechas, usdEstimado: env("FACTORY_IMG_MOTOR") === "agnes" ? 0 : +(listas.edits.length * 0.00207).toFixed(2) };   // agnes no cobra: el estimado de gpt-image mentía
   },
 };

@@ -28,7 +28,7 @@ import path from "node:path";
 const [LIST, OUT0] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 if (!LIST || !OUT0) { console.error("uso: node scripts/agnes_img.mjs <lista.json> <outDir> [--conc N]"); process.exit(1); }
 const OUT = OUT0;
-const CONC = +(process.argv[process.argv.indexOf("--conc") + 1] || 6);
+const CONC = process.argv.includes("--conc") ? +process.argv[process.argv.indexOf("--conc") + 1] || 6 : 6; // sin --conc daba NaN = 0 workers y "0 fallidas"
 fs.mkdirSync(OUT, { recursive: true });
 
 const env = {};
@@ -42,7 +42,9 @@ const SIZE = process.env.AGNES_IMG_SIZE || "1088x608";
 // ⛔ el sufijo de gpt-image, palabra por palabra. Si aparece, se corta.
 const RUIDO = /,?\s*(candid photo taken on a modern smartphone|candid photo on a modern smartphone|bright natural daylight|true-to-life colou?rs?|sharp focus|deep depth of field[^,.]*|the background cluttered with ordinary everyday objects that stay readable|nothing blurred out|realistic|candid everyday snapshot|no filter|no ai look|no text|no letters|no labels|no signs|cinematic|photorealistic|8k|35\s?mm|bokeh)\b/gi;
 
-const IDENT = "Preserve the exact identity, face, white hair combed straight back, short trimmed white beard, "
+// AGNES_IDENT: la cláusula de identidad del PRESENTADOR del canal (la fábrica la pasa desde style.presentador).
+// Sin ella queda la de siempre, que describe a OTRO presentador.
+const IDENT = process.env.AGNES_IDENT || "Preserve the exact identity, face, white hair combed straight back, short trimmed white beard, "
   + "age and skin tone of the man in the reference photograph. He wears a navy blue work shirt with a small "
   + "oval red name patch on the chest.";
 

@@ -1,0 +1,93 @@
+# VIDEO DE PUNTA A PUNTA SIN HUMANO NI CLAUDE: canal + título → video terminado.
+# Qwen escribe el guion y dirige; la fábrica + el piloto automático hacen el resto; el render es local
+# en el runner. Se dispara desde la app de GitHub ("Run workflow") o desde el agente (agente.yml).
+# Único secreto: BRAIN_TOKEN (token con lectura de bautielcrack4-web/claude-brain): las claves y los
+# assets de cada canal salen de ahí, igual que en el entorno de la nube.
+name: video
+
+on:
+  workflow_dispatch:
+    inputs:
+      canal:
+        description: "canal / estilo"
+        required: true
+        type: choice
+        options: [harlan-lineman, claudio-tecnico, claudio-mendoza, ole-camp, lou-diner, freebuilder, taller-de-claudio]
+      titulo: { description: "título del video", required: true }
+      tema: { description: "de qué trata (si queda vacío, usa el título)", required: false, default: "" }
+      minutos: { description: "duración aproximada en minutos", required: false, default: "3" }
+      imagenes:
+        description: "motor de imágenes (agnes = gratis; gpt = gpt-image, si OpenAI está activa)"
+        required: false
+        type: choice
+        options: [agnes, gpt]
+        default: agnes
+      tope_usd: { description: "tope de gasto en modelos (US$)", required: false, default: "2" }
+      issue: { description: "número de issue donde avisar al terminar (opcional)", required: false, default: "" }
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: video-${{ github.run_id }}
+
+jobs:
+  video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      GH_TOKEN: ${{ github.token }}
+      LLM_MODEL: deepseek-v4-pro   # 05-oct: terminó hl20ds (15 min) por US$0,97; qwen descartado
+      LLM_USD_IN: "0.43"
+      LLM_USD_OUT: "0.87"
+      LLM_THINK: "0"
+      FACTORY_WORK: /tmp/fw
+      FACTORY_STATE: /tmp/fw/_state
+      FACTORY_FINALS: /tmp/finals
+    steps:
+      - uses: actions/checkout@v5
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v5
+        with: { node-version: "22" }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - name: entorno (claves y assets desde claude-brain)
+        env: { BRAIN_TOKEN: "${{ secrets.BRAIN_TOKEN }}", GIT_TERMINAL_PROMPT: "0" }
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg jq >/dev/null
+          [ -n "$BRAIN_TOKEN" ] || { echo "::error::falta el secreto BRAIN_TOKEN (ver docs/QWEN_SIN_CLAUDE.md)"; exit 1; }
+          bash scripts/nube_setup.sh > /tmp/setup.log 2>&1 || true
+          [ -f .env ] || { tail -20 /tmp/setup.log; echo "::error::no se pudo traer el .env de claude-brain"; exit 1; }
+          bash scripts/ci_secretos.sh mask
+          pip install -q fish-audio-sdk faster-whisper "rembg[cpu]" opencv-python-headless >/dev/null 2>&1 || true
+          grep -q '^AIHUBMIX_KEY=.\+' .env || { echo "::error::falta AIHUBMIX_KEY en claude-brain/secretos/video2.env"; exit 1; }
+      - name: guion (Qwen)
+        id: nuevo
+        run: |
+          node factory/tools/nuevo_video.mjs --canal "${{ inputs.canal }}" --titulo "${{ inputs.titulo }}" --tema "${{ inputs.tema || inputs.titulo }}" --min "${{ inputs.minutos }}" | tee /tmp/nuevo.log
+          echo "slug=$(sed -n 's/^SLUG=//p' /tmp/nuevo.log)" >> "$GITHUB_OUTPUT"
+      - name: piloto automático (dirección, imágenes, clips, avatar, montaje, render)
+        env:
+          FACTORY_IMG_MOTOR: ${{ inputs.imagenes == 'agnes' && 'agnes' || '' }}
+        run: |
+          node factory/tools/autopilot.mjs "${{ steps.nuevo.outputs.slug }}" --render-local --max-usd "${{ inputs.tope_usd }}" 2>&1 | grep -E '🤖|FIN' | bash scripts/ci_secretos.sh tapar
+          test -f "/tmp/finals/${{ steps.nuevo.outputs.slug }}.mp4"
+      - name: publicar el video
+        if: always()
+        id: pub
+        run: |
+          S="${{ steps.nuevo.outputs.slug }}"; F="/tmp/finals/$S.mp4"
+          R=$(node -e 'try{const r=require(process.argv[1]);console.log("US$ "+r.usd.toFixed(3)+" · "+r.acciones.length+" pasos")}catch{console.log("sin datos del piloto")}' "/tmp/fw/_state/$S/autopilot.json")
+          if [ -f "$F" ]; then
+            gh release create "video-$S" "$F" --title "$S — ${{ inputs.titulo }}" --notes "Canal ${{ inputs.canal }} · $R · hecho por Qwen + la fábrica, sin humano." --prerelease
+            URL="https://github.com/${{ github.repository }}/releases/download/video-$S/$S.mp4"
+            echo "msg=✅ Video listo: $URL ($R)" >> "$GITHUB_OUTPUT"
+          else
+            echo "msg=⛔ El video '$S' no terminó ($R). Log: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" >> "$GITHUB_OUTPUT"
+          fi
+          git config user.name "fabrica-qwen"; git config user.email "fabrica-qwen@users.noreply.github.com"
+          git checkout -b "video/$S" && git add "factory/specs/$S.json" "guiones/GUION_$S.txt" "src/$S" "src/index_$S.tsx" "_${S}_assets.txt" 2>/dev/null; git commit -qm "video $S: spec, guion y montaje (Qwen + piloto)" && git push -q origin "video/$S" || true
+      - name: avisar en el issue
+        if: always() && inputs.issue != ''
+        run: gh issue comment "${{ inputs.issue }}" --body "${{ steps.pub.outputs.msg }}"
