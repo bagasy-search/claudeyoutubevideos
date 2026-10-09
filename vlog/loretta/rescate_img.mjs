@@ -14,13 +14,14 @@ for (const n of pend) for (const f of fs.readdirSync(RJ).filter((f) => f.startsW
 }
 fs.writeFileSync(T + "_lista.json", JSON.stringify(lista));
 const gate = (out, extra) => spawnSync("node", ["scripts/agnes_img_gate.mjs", T + "_lista.json", T, "--out", T + out, "--conc", "4", ...extra], { cwd: R, stdio: "inherit", windowsHide: true });
-gate("_g1.json", []); gate("_g2.json", ["--foco"]);
-const g1 = JSON.parse(fs.readFileSync(T + "_g1.json", "utf8")), g2 = JSON.parse(fs.readFileSync(T + "_g2.json", "utf8"));
+// sólo el juez general (1 llamada por foto): el modo --foco son 9 llamadas por foto y con 429 tardaba >1,5 h por slug
+gate("_g1.json", []); if (process.env.RESCATE_FOCO) gate("_g2.json", ["--foco"]);
+const g1 = JSON.parse(fs.readFileSync(T + "_g1.json", "utf8")), g2 = fs.existsSync(T + "_g2.json") ? JSON.parse(fs.readFileSync(T + "_g2.json", "utf8")) : null;
 const PP = "scale=1280:720:flags=bicubic,eq=saturation=0.88:contrast=0.95:gamma=1.02,gblur=sigma=0.6,unsharp=3:3:0.4,noise=alls=8:allf=t";
 const rep = {};
 for (const n of pend) {
   const c = lista.filter((x) => x.name.startsWith(n + "__r")).map((x) => {
-    const a = g1[x.name], b = g2[x.name];
+    const a = g1[x.name], b = g2 ? g2[x.name] : a;
     const fallas = [...new Set([...(a && !a.ok ? a.fallas : []), ...(b && !b.ok ? b.fallas : [])])];
     return { f: x.name, fallas, ok: a?.ok && b?.ok };
   }).sort((p, q) => (q.ok - p.ok) || (p.fallas.length - q.fallas.length));

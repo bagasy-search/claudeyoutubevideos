@@ -17,6 +17,17 @@ for f in glob.glob(f"public/broll/{S}/K*.mp4") + glob.glob(f"public/broll/{S}_st
     if not os.path.exists(j) or os.path.getmtime(j) < os.path.getmtime(f):
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-sseof", "-0.1", "-i", f, "-frames:v", "1", "-q:v", "3", j], check=True)
 EOF
+# ACEPTAR_FALTAN=1: la cola de agnes da ~20 clips/h para todas las sesiones (9-oct) → los clips que no llegaron van con su ANCLA
+# (foto con Ken-Burns) a propósito; se corta el agnes_i2v de este slug para no gastar cupo.
+if [ -n "$ACEPTAR_FALTAN" ]; then
+  powershell -NoProfile -Command "Get-CimInstance Win32_Process | Where-Object { \$_.CommandLine -match 'agnes_i2v\.mjs _v3/${S}_agnes_clips' } | ForEach-Object { Stop-Process -Id \$_.ProcessId -Force }" || true
+  python - <<EOF
+import json, os
+S = "$S"; n = json.load(open(f"_v3/{S}_need.json", encoding="utf8"))
+f = [c["name"] for c in n["clips"] if not os.path.exists(f"public/broll/{S}/K{c['name']}.mp4")]
+json.dump(f, open(f"_v3/{S}_aceptados.json", "w")); print(S, "clips con su ancla:", len(f), "de", len(n["clips"]))
+EOF
+fi
 node vlog/loretta/gen_timeline.mjs --final
 python - <<EOF
 import json, re

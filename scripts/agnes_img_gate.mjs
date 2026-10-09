@@ -13,6 +13,9 @@
 //    preguntas cerradas una por una, y el prompt original como contrato de qué tiene que haber.
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import crypto from "node:crypto";
+import { execFileSync } from "node:child_process";
 
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
@@ -55,7 +58,15 @@ ${Object.entries(CHECKS).map(([k, v]) => `- ${k}: ${v}`).join("\n")}
 First count the people (and parts of people) you see and compare with the description. Then answer.
 Reply ONLY with JSON: {"personas_vistas": <number>, ${Object.keys(CHECKS).map((k) => `"${k}": true|false`).join(", ")}, "motivo": "<one short sentence about the worst problem, or empty>"}`;
 
-const uri = (f) => `data:image/${/\.jpe?g$/i.test(f) ? "jpeg" : "png"};base64,` + fs.readFileSync(f).toString("base64");
+// ⛔ 9-oct: mandar el PNG entero (1-2 MB) × 9 llamadas por foto (--foco) × varias corridas saturó la SUBIDA del Wi-Fi
+// (~9 MB/s) y los uploads del farm a GitHub cayeron a 50 KB/s. Al juez le alcanza un JPG de 1024 px (~100 KB), cacheado.
+const SMALL = path.join(os.tmpdir(), "gate_small"); fs.mkdirSync(SMALL, { recursive: true });
+const chico = (f) => {
+  const st = fs.statSync(f), o = path.join(SMALL, crypto.createHash("md5").update(f + st.size + st.mtimeMs).digest("hex") + ".jpg");
+  if (!fs.existsSync(o)) { try { execFileSync("ffmpeg", ["-v", "error", "-y", "-i", f, "-vf", "scale='min(1024,iw)':-2", "-q:v", "4", o], { windowsHide: true }); } catch { return f; } }
+  return o;
+};
+const uri = (f0) => { const f = chico(f0); return `data:image/${/\.jpe?g$/i.test(f) ? "jpeg" : "png"};base64,` + fs.readFileSync(f).toString("base64"); };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let ki = 0;
 
