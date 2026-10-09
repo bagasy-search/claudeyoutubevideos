@@ -67,22 +67,22 @@ shots.forEach((s, i) => {
 });
 // ── SONIDO (sin música, sin whoosh en los cortes): foley del mundo según lo que se VE + ambiente continuo por lugar
 const S = (at, file, vol, dur = 45) => sfx.push({ from: Math.max(0, F(at)), dur, src: "sfx/" + file, vol });
-const CSFX = { WinChalkMenu: ["chalk.mp3", 0.35], WinRecipeCard: ["crinkle.mp3", 0.3], CanJarTag: ["crinkle.mp3", 0.3], LarDoorTag: ["knock.mp3", 0.25], WinReceipt: ["crumple.mp3", 0.35], CanLedger: ["pencil.mp3", 0.4], OleBookPage: ["papers.mp3", 0.3], OleCTA: ["papers.mp3", 0.25], OleTrick: ["crinkle.mp3", 0.25], OleFact: ["scribble.mp3", 0.3], OleMythTrick: ["papers.mp3", 0.3], LarThermo: ["knock.mp3", 0.25], LarZones: ["crinkle.mp3", 0.3], CanBagVsCan: ["glassmetal.mp3", 0.3] };
-const FOL = [[/fry|sizzl|bacon fat|skillet of|lard|patties|frying/, "fryegg.mp3", 0.30], [/boil|simmer|bubbl|soup pot|broth|steam/, "boil.mp3", 0.35], [/chop|slic|cutting board|knife/, "cutveg.mp3", 0.30], [/pour|ladl|kettle/, "pour.mp3", 0.30], [/lid /, "potlid.mp3", 0.25], [/door/, "doorcreak.mp3", 0.2]];
-const AMB = (txt) => /outside|snowy road|logging road|in the snow|snowy woods|garden|hillside|porch|truck|sled/.test(txt) ? ["wind.mp3", 0.30] : /cellar/.test(txt) ? ["firewind.mp3", 0.12] : ["fire.mp3", 0.22];
-const AV_AMB = { olwinter2: ["fire.mp3", 0.2], olcanned: ["fire.mp3", 0.2], ollarder2: ["firewind.mp3", 0.12] }["ollarder2"];
+const CSFX = { WinChalkMenu: ["chalk.mp3", 0.8], WinRecipeCard: ["crinkle.mp3", 0.7], CanJarTag: ["crinkle.mp3", 0.7], LarDoorTag: ["knock.mp3", 0.6], WinReceipt: ["crumple.mp3", 0.8], CanLedger: ["pencil.mp3", 0.8], OleBookPage: ["papers.mp3", 0.7], OleCTA: ["papers.mp3", 0.6], OleTrick: ["crinkle.mp3", 0.6], OleFact: ["scribble.mp3", 0.7], OleMythTrick: ["papers.mp3", 0.7], LarThermo: ["knock.mp3", 0.6], LarZones: ["crinkle.mp3", 0.7], CanBagVsCan: ["glassmetal.mp3", 0.7] };
+const FOL = [[/fry|sizzl|bacon fat|skillet of|lard|patties|frying/, "fryegg.mp3", 0.75], [/boil|simmer|bubbl|soup pot|broth|steam/, "boil.mp3", 0.7], [/chop|slic|cutting board|knife/, "cutveg.mp3", 0.7], [/pour|ladl|kettle/, "pour.mp3", 0.7], [/lid /, "potlid.mp3", 0.6], [/door/, "doorcreak.mp3", 0.5]];
+const AMB = (txt) => /outside|snowy road|logging road|in the snow|snowy woods|garden|hillside|porch|truck|sled/.test(txt) ? ["wind.mp3", 0.55] : /cellar/.test(txt) ? ["firewind.mp3", 0.35] : ["fire.mp3", 0.5];
+const AV_AMB = { olwinter2: ["fire.mp3", 0.45], olcanned: ["fire.mp3", 0.45], ollarder2: ["firewind.mp3", 0.35] }["ollarder2"];
 cues.forEach((c, i) => {
   const t = c.from / FPS, sh = shots[i], txt = String(sh.prompt || sh.q || "").toLowerCase();
   if (c.k === "comp" && CSFX[c.name]) S(t + 0.15, CSFX[c.name][0], CSFX[c.name][1], Math.min(c.dur, 120));
-  if (c.k === "comp" && c.name === "OleDutchOven3D") foley.push({ from: c.from, dur: c.dur, src: "sfx/boil.mp3", vol: 0.4, loop: 1 });
-  if (c.k === "comp" && c.name === "LarCellar3D") foley.push({ from: c.from, dur: c.dur, src: "sfx/wind.mp3", vol: 0.2, loop: 1 });
+  if (c.k === "comp" && c.name === "OleDutchOven3D") foley.push({ from: c.from, dur: c.dur, src: "sfx/boil.mp3", vol: 0.7, loop: 1 });
+  if (c.k === "comp" && c.name === "LarCellar3D") foley.push({ from: c.from, dur: c.dur, src: "sfx/wind.mp3", vol: 0.5, loop: 1 });
   if (c.k === "img" || c.k === "vl" || c.k === "kf") { const m = FOL.find(([rx]) => rx.test(txt)); if (m) foley.push({ from: c.from, dur: c.dur, src: "sfx/" + m[1], vol: m[2], loop: 1 }); }
-  if (c.k === "arch") S(t + 0.1, "papers.mp3", 0.15, 25);
+  if (c.k === "arch") S(t + 0.1, "papers.mp3", 0.4, 25);
   // ambiente continuo del lugar (bajo la voz): estufa en la cabaña, viento afuera, casi nada en el sótano
-  const [amb, av] = c.k === "av" ? AV_AMB : c.k === "comp" ? ["fire.mp3", 0.12] : AMB(txt);
+  const [amb, av] = c.k === "av" ? AV_AMB : c.k === "comp" ? ["fire.mp3", 0.35] : AMB(txt);
   foley.push({ from: c.from, dur: c.dur, src: "sfx/" + amb, vol: av, loop: 1, amb: 1 });
 });
-for (const o of ovs) { const t = o.from / FPS; if (o.name === "OleStamp") S(t + (typeof o.props.at === "number" ? o.props.at : 0.5), "knock.mp3", 0.3, 30); else if (o.name === "OleRuleCard") S(t + 0.15, "crinkle.mp3", 0.2, 30); }
+for (const o of ovs) { const t = o.from / FPS; if (o.name === "OleStamp") S(t + (typeof o.props.at === "number" ? o.props.at : 0.5), "knock.mp3", 0.7, 30); else if (o.name === "OleRuleCard") S(t + 0.15, "crinkle.mp3", 0.5, 30); }
 // ambiente: fusionar tomas contiguas del mismo lugar en UN tramo continuo (sin bajones en cada corte)
 { const amb = foley.filter((x) => x.amb).sort((a, b) => a.from - b.from), rest = foley.filter((x) => !x.amb); const m = [];
   for (const x of amb) { const L = m[m.length - 1]; if (L && L.src === x.src && L.vol === x.vol && Math.abs(L.from + L.dur - x.from) <= 1) L.dur = x.from + x.dur - L.from; else m.push({ ...x }); }
@@ -109,7 +109,7 @@ fs.writeFileSync(R + "_v3/ollarder2_cues.json", JSON.stringify(qc, null, 1));
 fs.mkdirSync(R + "src/ollarder2", { recursive: true });
 fs.writeFileSync(R + "src/ollarder2/timeline_ollarder2.gen.ts", out);
 // lista EXPLÍCITA de assets para el tar del farm
-const refs = new Set(["ollarder2.m4a", "ref_ollarder2.png", "qr_ollarder2.png", "qr_ollarder2_book.png", ...fs.readdirSync(PUB + "img/ollarder2/book").map((f) => "img/ollarder2/book/" + f)]);
+const refs = new Set(["ollarder2.m4a", "ref_ollarder2.png", "qr_ollarder2.png", "qr_ollarder2_book.png", ...fs.readdirSync(PUB + "img/ollarder2/book").map((f) => "img/ollarder2/book/" + f), ...fs.readdirSync(PUB + "img/ollarder2").filter((f) => /^bed_.*\.jpg$/.test(f)).map((f) => "img/ollarder2/" + f)]);
 const walk = (o) => { if (typeof o === "string") { if (/^(img|broll|vid|sfx|avatar_clips)\/.+\.(jpg|png|mp4|m4a|mp3|wav)$/.test(o)) refs.add(o); } else if (o && typeof o === "object") Object.values(o).forEach(walk); };
 walk(cues); walk(ovs); walk(sfx); walk(foley);
 for (const c of cues) if (c.clip && c.clipF < c.dur) refs.add(c.clip.replace(/\.mp4$/, "_last.jpg"));
