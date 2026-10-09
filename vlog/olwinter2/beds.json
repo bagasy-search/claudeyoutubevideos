@@ -1,0 +1,5 @@
+[
+ {"name": "bed_table", "prompt": "Looking straight down at an old rough plank table in a log cabin cook shack: worn wide boards with knots, cracks and knife scars, a blue enamel mug at the top left corner, a wooden spoon and a few crumbs at the right edge, a corner of a folded plaid rag at the bottom, warm window daylight from the left, the middle of the table empty and bare. No text, no letters, no logos."},
+ {"name": "bed_wall", "prompt": "A weathered log wall inside an old north-woods logging camp cook shack, seen straight on: dark round logs with chinking between them, a big empty rectangle of bare log wall in the middle, an axe and a coil of rope hanging at the left edge, the corner of a snowy window at the right edge, lantern light and daylight. No text, no letters, no logos."},
+ {"name": "bed_coins", "prompt": "Looking down at an old rough plank table: a small pile of coins and two folded dollar bills on the left half, an empty dented tin plate and a fork on the right half, the boards worn and scarred, warm window daylight. No text, no letters, no logos."}
+]
