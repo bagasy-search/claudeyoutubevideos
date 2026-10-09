@@ -7,7 +7,7 @@ const ch = (await get(`tracked_channels?select=id,channel_key,plan&id=eq.${ROW}`
 const card = ch.plan.find((c) => c.slug === SLUG); if (!card) throw new Error("no hay tarjeta con slug " + SLUG);
 if (card.videoJobId) { console.log("ya tiene job", card.videoJobId, "· tarjeta", card.id); process.exit(0); }
 const old = (await get(`video_jobs?id=eq.740`))[0];
-const job = { user_id: old.user_id, slug: SLUG, format: old.format, niche: old.niche, channel_name: "Claudio Old Mechanic", voice_ref: "claudio_en_definitiva", provider: "claude-code", status: "running", script: "", progress: "Generando video", title: card.title, card_id: card.id, tracked_channel_id: ROW, mode: old.mode, channel_key: ch.channel_key };
+const job = { user_id: old.user_id, slug: SLUG, format: old.format, niche: old.niche, channel_name: "Claudio Old Mechanic", voice_ref: "elevenlabs_v4_turbo:RWL6II44QhopvDMTeB1D", provider: "claude-code", status: "running", script: "", progress: "Generando video", title: card.title, card_id: card.id, tracked_channel_id: ROW, mode: old.mode, channel_key: ch.channel_key };
 for (const k of Object.keys(job)) if (!(k in old) && k !== "slug") delete job[k];
 const r = await fetch(`${U}/rest/v1/video_jobs`, { method: "POST", headers: { ...H, Prefer: "return=representation" }, body: JSON.stringify(job) });
 const nj = await r.json(); console.log(r.status, JSON.stringify(nj).slice(0, 160));
