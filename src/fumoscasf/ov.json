@@ -12,25 +12,52 @@
   "t": 13.49
  },
  {
+  "c": "ClFlyDoor",
+  "from": 2568,
+  "dur": 225,
+  "props": {
+   "bed": "vid/fumoscasf/bed_1.mp4#229"
+  },
+  "t": 85.59
+ },
+ {
   "c": "ClFlyCycle",
   "from": 2898,
   "dur": 210,
   "props": {
-   "bed": "vid/fumoscasf/bed_1.mp4#214"
+   "bed": "vid/fumoscasf/bed_2.mp4#214"
   },
   "t": 96.59
  },
  {
+  "c": "ClLemon10",
+  "from": 9766,
+  "dur": 300,
+  "props": {
+   "bed": "vid/fumoscasf/bed_3.mp4#304"
+  },
+  "t": 325.54
+ },
+ {
+  "c": "ClTapeHigh",
+  "from": 12695,
+  "dur": 375,
+  "props": {
+   "bed": "vid/fumoscasf/bed_4.mp4#379"
+  },
+  "t": 423.18
+ },
+ {
   "c": "ClBookPage",
-  "from": 14070,
-  "dur": 225,
+  "from": 14221,
+  "dur": 165,
   "props": {
    "page": "img/fumoscasf/page16.jpg",
    "pageNo": 16,
    "stamp": "Las medidas, en la página",
-   "bed": "vid/fumoscasf/bed_2.mp4#229"
+   "bed": "vid/fumoscasf/bed_5.mp4#169"
   },
-  "t": 469.0
+  "t": 474.03
  },
  {
   "c": "ClDrainFactory",
@@ -38,9 +65,18 @@
   "dur": 210,
   "props": {
    "mode": "clean",
-   "bed": "vid/fumoscasf/bed_3.mp4#214"
+   "bed": "vid/fumoscasf/bed_6.mp4#214"
   },
   "t": 559.02
+ },
+ {
+  "c": "ClMoscasMap",
+  "from": 18580,
+  "dur": 330,
+  "props": {
+   "bed": "vid/fumoscasf/bed_7.mp4#334"
+  },
+  "t": 619.35
  },
  {
   "c": "ClCheck",
@@ -53,35 +89,35 @@
     "La de la luz, una hora después",
     "La cinta doble faz (no está en ningún video)"
    ],
-   "bed": "vid/fumoscasf/bed_4.mp4#274"
+   "bed": "vid/fumoscasf/bed_8.mp4#274"
   },
   "t": 670.01
  },
  {
   "c": "ClQRCard",
-  "from": 20722,
-  "dur": 180,
+  "from": 20548,
+  "dur": 195,
   "props": {
    "qr": "img/fumoscasf/qr.jpg",
    "cover": "img/fumoscasf/gift_cover.jpg",
    "text": "las 3 pruebas, gratis",
    "kicker": "REGALO · ANTES DE FUMIGAR",
-   "bed": "vid/fumoscasf/bed_5.mp4#184"
+   "bed": "vid/fumoscasf/bed_9.mp4#199"
   },
-  "t": 690.72
+  "t": 684.92
  },
  {
   "c": "ClQRCard",
-  "from": 20909,
-  "dur": 255,
+  "from": 21019,
+  "dur": 210,
   "props": {
    "qr": "img/fumoscasf/qr.jpg",
    "cover": "img/fumoscasf/book_cover.jpg",
    "text": "66 arreglos · garantía 7 días",
    "kicker": "EL MANUAL · US$27",
-   "bed": "vid/fumoscasf/bed_6.mp4#259"
+   "bed": "vid/fumoscasf/bed_10.mp4#214"
   },
-  "t": 696.96
+  "t": 700.62
  },
  {
   "c": "ClVideoRef",
@@ -92,7 +128,7 @@
    "title": "Mosquitos en casa, sin espiral ni aerosol",
    "tag": "PRÓXIMO VIDEO",
    "next": true,
-   "bed": "vid/fumoscasf/bed_7.mp4#154"
+   "bed": "vid/fumoscasf/bed_11.mp4#154"
   },
   "t": 723.86
  }
