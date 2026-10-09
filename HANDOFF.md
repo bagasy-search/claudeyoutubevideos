@@ -19,14 +19,15 @@ Voz: Fish (gratis), `claudio_definitiva` speed 1.0. ⛔ ElevenLabs no se usó (U
 6. `mix.py` → `out/fumoscasf_mix.wav` (48 k estéreo, **−14,0 LUFS**, TP −2,4 dB): voz + ambiente por sección (fundidos 0,8 s, ~24 dB abajo, ducking) + 7 foley. **Sin música.** `chapters.py` → `vlog/fumoscasf/chapters.json`.
 7. `src/index_fumoscasf.tsx` (vlog mudo + OV) · `src/fumoscasf/total.ts` (22.259).
 8. farm: `ENTRY=src/index_fumoscasf.tsx FARM_REF=fumoscasf-render TAR_DIR=D:/rtmp/fu8 FARM_NOWAIT=1 node scripts/farm.mjs fumoscasf Fumoscasf 22259 60 @_fumoscasf_assets.txt`
-   (run **37919581924** · 62 jobs · 0 fallidos · 60 chunks en `chunks-fumoscasf`) → mix a `assets-fumoscasf` (lo necesita encfin) →
-   `bash D:/Proyectos/encfin/push.sh fumoscasf 22259 60` (run **37921496888** ✓) → release `fumoscasf`.
+   (2ª y última pasada: run **37925681001** · 62 jobs · 0 fallidos · 60 chunks en `chunks-fumoscasf`) → mix a `assets-fumoscasf` (lo necesita encfin) →
+   `bash D:/Proyectos/encfin/push.sh fumoscasf 22259 60` (run **37927683478** ✓: "cuadros 22259 (esperados 22259) · video 741.966667s · audio 741.966667s") → release `fumoscasf`.
+   (1ª pasada, sólo como referencia de lo que se midió y se corrigió: render **37919581924** + encfin **37921496888**.)
 
 ## Qué funcionó / números
 - 251 planos / **251 clips distintos** (0 repetidos). Para lograrlo hubo que ampliar la lista: la 1ª armada usaba 237 planos con 192 clips (45 repetidos) → +56 planos nuevos (56 fotos + 56 clips, gratis).
 - Imágenes: 267 pedidos → 251 usadas (16 rerolls). Clips: 252 pedidos → 251 usados (1 reroll).
 - Gasto: **US$0** de OpenAI, ElevenLabs y RunPod. Modal: 15 wavs ≈ 13,4 min de audio (~US$0,0x).
-- Auditor minuto 1 sobre el vlog: silencios >0,4 s @−32 dB **0** · cortes scene>0,3 **31** (≥30) · negro **0** · cuadros muertos **0**.
+- Auditor sobre el **mp4 final del release** (2K, con los 8 componentes): silencios >0,4 s @−32 dB **0** · cortes scene>0,3 en el minuto 1 **31** (≥30) · negro **0** · cuadros muertos **0**. Las 4 compuertas verdes, miradas también a ojo en las hojas del propio auditor.
 
 ## ⛔ Gotchas (para el próximo)
 - **`mkvlog.py` recortaba mal (bug real, arreglado 9-oct).** El `select` acumulaba el índice con el largo del TROZO (`n`) en vez del cuadro del CLIP (`CLIPF`): los rangos quedaban pegados (0-55, 56-114, 115-173…) y el filtro devolvía los primeros `sum(n)` cuadros tal cual → el vlog salía con **clips enteros de 4,033 s pegados**. Se veía así: 14 cortes en el minuto 1 y 2 cuadros muertos. Hay que llevar DOS contadores (`pos` para `-frames:v`, `base += CLIPF` para el select). El `-/vf <archivo>` **sí** aplica el filtro (medido: 30 de 90 cuadros) — no era eso.
