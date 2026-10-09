@@ -1,0 +1,224 @@
+{
+ "dir": "D:/Proyectos/video2-wt/olsup/vlog/olsup/M1",
+ "face": "D:/Proyectos/video2-wt/olsup/public/ref_olsup_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/olsup/public/ref_olsup.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by his grandson with a phone at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered cabin background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands: cold bluish daylight from the small snowy window on the left and warm orange glow from the wood stove fire on the right; correctly exposed, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; hair and beard with stray strands; the shirt and apron with real creases, flour and stains. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld phone video filmed by his grandson at eye level, small natural shakes and casual slightly imperfect framing, everything in the cabin kitchen in focus, only the light the place really has (cold window light plus warm stove glow), correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same moment. Ole, a 75-year-old man with short white hair, a short trimmed white beard, bushy white eyebrows, a dark green flannel shirt buttoned with the collar open over a cream undershirt and a khaki canvas apron, big weathered working hands sits at the worn wooden table of his old log cabin cookhouse kitchen: rough log walls, a black cast iron wood stove with a small black kettle on it and a stovepipe going up on the right, a wooden bunk bed with red and green plaid blankets at the left, a small window with snow outside, a two-man saw and an axe hanging on the wall, stacked firewood, a worn wooden table with a blue enamel mug and a black cast iron Dutch oven. Both his hands wrap around the blue enamel mug in front of him, steam rising from it, and he looks straight at the camera about to talk. Medium shot from about one and a half meters, his upper body, the mug and the black Dutch oven on the table in frame, the stove glowing behind him."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: he has lifted the blue enamel mug a little and points past the camera toward the small snowy window with his other hand, eyebrows raised, mouth open mid-sentence, his whole face saying it was bitterly cold out there."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same cabin, same light, a bit later: he sits with a big raw potato in one hand and a small paring knife in the other, a bowl of peeled potatoes and a long curl of potato peel on the table in front of him, looking at the camera with a warm, wry half smile, mid-sentence."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "Same place a few seconds later: he has put the potato down and taps his chest with two fingers of one hand, looking up at the ceiling as if remembering, a soft proud smile, the knife laid on the table."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same cabin, same light: he leans slightly toward the camera with his index finger pressed vertically against his lips as if asking for silence, eyebrows raised, a plate and the Dutch oven on the table in front of him, an amused look."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "Same place a few seconds later: he has lowered his hand and points one finger down at the empty tin plate on the table, then holds up the same finger, lips pressed together with a stern little smile, mid-sentence."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same cabin, same light: he holds up toward the camera a thick worn cook's notebook with a stained brown cover, held open in one hand with the pages full of handwriting in pencil, looking over the top of it at the camera with a knowing look, mid-sentence."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K6"
+   ],
+   "prompt": "Same place a few seconds later: he taps the open notebook twice with two fingers of his other hand, nodding slowly, a warm honest smile, the blue enamel mug at the edge of the table."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same cabin, same light, a moment later: he sits back a little in his chair and sweeps one open hand out to the side toward an imaginary long table off-camera, the blue enamel mug in his other hand, a warm welcoming smile, mid-sentence."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K8"
+   ],
+   "prompt": "Same place a few seconds later: he leans forward toward the camera and raises one finger with a sly, knowing look and raised eyebrows, as if about to reveal a secret, mid-sentence."
+  },
+  {
+   "id": "D1a",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Close view of the black cast iron Dutch oven on the wooden table filling the frame, its lid closed, a thin wisp of steam escaping from under the lid, his big weathered hand with a folded dish towel reaching in from the right edge to grip the lid handle."
+  },
+  {
+   "id": "D1b",
+   "from": [
+    "D1a"
+   ],
+   "prompt": "Same close view a few seconds later: he has lifted the lid, thick dark brown baked beans with strips of salt pork bubbling gently inside the pot, a big cloud of steam rising, the lid held in his hand at the edge of the frame."
+  },
+  {
+   "id": "D2a",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Close view of a black cast iron griddle on the wood stove in his cabin kitchen: three round pale pancake batter circles with small bubbles on the surface, and his weathered hand holding a flat metal spatula just under the edge of one pancake. Flannel sleeve entering from the right edge."
+  },
+  {
+   "id": "D2b",
+   "from": [
+    "D2a"
+   ],
+   "prompt": "Same close view a few seconds later: the pancake has been flipped in mid-air over the griddle showing its golden brown side, the other two still cooking, a little steam."
+  },
+  {
+   "id": "D3a",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Close view of the open door of the black cast iron wood stove in the cabin, orange fire glowing inside, and his weathered hand in a leather glove holding a split log at the opening, about to feed the fire. Dark green flannel sleeve entering from the left edge."
+  },
+  {
+   "id": "D3b",
+   "from": [
+    "D3a"
+   ],
+   "prompt": "Same close view a few seconds later: the log has been placed into the fire, sparks and flames rising, the glove pulling back, the orange glow lighting the iron door."
+  },
+  {
+   "id": "D4a",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Close view on the worn wooden table: a blackened old enamel coffee pot held by his weathered hand at the right, about to pour into the blue enamel mug on the table, a bit of steam rising from the spout."
+  },
+  {
+   "id": "D4b",
+   "from": [
+    "D4a"
+   ],
+   "prompt": "Same close view a few seconds later: dark steaming coffee pouring in a thin stream from the blackened pot into the blue enamel mug, the mug almost full, steam curling up."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/olsup/vlog/olsup/tramos/m1.wav",
+   "text": "Fourteen hours in the woods. Twenty below. And then",
+   "action": "He talks to his grandson behind the camera, lifts the blue enamel mug and points toward the small snowy window with his other hand. He wears the same dark green flannel shirt over a cream undershirt and khaki apron the whole time, short white beard, no hat."
+  },
+  {
+   "id": "m1b",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/olsup/vlog/olsup/tramos/m1b.wav",
+   "text": "those suppers, ya know, forty men at a time. So pull up a chair, friend. Here are thirty logging camp suppers, counting down to the one every man fought over. And that number one?",
+   "action": "He sweeps his hand toward a long table off-camera in welcome, then leans toward the camera and raises one finger with a sly, knowing look. He wears the same dark green flannel shirt over a cream undershirt and khaki apron the whole time, short white beard, no hat."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/olsup/vlog/olsup/tramos/m2.wav",
+   "text": "Now, I'm Ole. I started as a cookee at fifteen, peeling potatoes before the sun came up, and I stayed in those kitchens for forty years.",
+   "action": "He talks with a potato and a paring knife in his hands, then puts the potato down, taps his chest and looks up remembering with a soft proud smile. He wears the same dark green flannel shirt over a cream undershirt and khaki apron the whole time, short white beard, no hat."
+  },
+  {
+   "id": "m3",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/olsup/vlog/olsup/tramos/m3.wav",
+   "text": "Nobody talked. No talking at the table. You could ask for the beans, or the bread, or the potatoes, and that was all.",
+   "action": "He presses a finger to his lips asking for silence, then points down at the empty tin plate and holds up one finger, stern and amused. He wears the same dark green flannel shirt over a cream undershirt and khaki apron the whole time, short white beard, no hat."
+  },
+  {
+   "id": "m4",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/olsup/vlog/olsup/tramos/m4.wav",
+   "text": "Now, quick word, friend, while I've got you. Everything I cooked in those kitchens, I've been writing down, every recipe and every measure, and the reason under every step.",
+   "action": "He holds up an old cook's notebook toward the camera, speaking to it, then taps the open pages twice and nods slowly with a warm smile. He wears the same dark green flannel shirt over a cream undershirt and khaki apron the whole time, short white beard, no hat."
+  },
+  {
+   "id": "d_beans",
+   "prompt": "he lifts the lid off the black Dutch oven and dark baked beans with salt pork bubble inside in a cloud of steam. He stays silent, focused on his hands.",
+   "a": "D1a",
+   "b": "D1b",
+   "detail": true,
+   "secs": 4,
+   "d1": "a weathered hand grips the lid handle of the black Dutch oven with a folded towel",
+   "d2": "the lid is lifted and dark baked beans with salt pork bubble in a cloud of steam",
+   "sound": "the iron lid scraping and the beans bubbling softly"
+  },
+  {
+   "id": "d_cakes",
+   "prompt": "he slides the spatula under a pancake and flips it in mid-air, it lands golden brown on the griddle. He stays silent, focused on his hands.",
+   "a": "D2a",
+   "b": "D2b",
+   "detail": true,
+   "secs": 4,
+   "d1": "a spatula slides under a pancake on the cast iron griddle",
+   "d2": "the pancake is flipped in the air and lands golden brown",
+   "sound": "batter sizzling on hot iron and the spatula scraping"
+  },
+  {
+   "id": "d_stove",
+   "prompt": "he feeds a split log into the glowing fire of the cast iron wood stove, sparks rising. He stays silent, focused on his hands.",
+   "a": "D3a",
+   "b": "D3b",
+   "detail": true,
+   "secs": 4,
+   "d1": "a gloved hand holds a split log at the open stove door",
+   "d2": "the log goes into the fire and sparks rise",
+   "sound": "wood crackling and the iron door creaking"
+  },
+  {
+   "id": "d_coffee",
+   "prompt": "he pours steaming dark coffee from the blackened pot into the blue enamel mug. He stays silent, focused on his hands.",
+   "a": "D4a",
+   "b": "D4b",
+   "detail": true,
+   "secs": 4,
+   "d1": "a blackened enamel coffee pot tips over the blue enamel mug",
+   "d2": "dark steaming coffee pours into the mug until it is almost full",
+   "sound": "coffee pouring into a metal mug"
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/olsup/vlog/olsup/M1/out.mp4"
+}
