@@ -16,6 +16,7 @@
 //   node scripts/alignfarm.mjs <slug> [modelo=medium]
 //   ej:  node scripts/alignfarm.mjs estiercol medium
 import { execSync, execFileSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import fs from "node:fs";
 
 const [slug, model = "medium"] = process.argv.slice(2);
@@ -60,7 +61,7 @@ execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", s
 const runId = out(`gh run list --workflow=align.yml --limit 1 --json databaseId --jq ".[0].databaseId"`);
 console.log("corrida:", runId, "— siguiendo (CPU, puede tardar mas que con GPU local)...");
 try {
-  sh(`gh run watch ${runId} --exit-status`);
+  sh(`node "${fileURLToPath(new URL("esperar_run.mjs", import.meta.url))}" ${runId}`);
 } catch {
   console.error("la corrida fallo; revisá: gh run view " + runId);
   process.exit(1);
