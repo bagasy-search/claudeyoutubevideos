@@ -69,9 +69,9 @@ export const OleLedger: React.FC<{
           <div style={{ position: "absolute", left: 60, top: 80, width: 720, fontFamily: HAND, fontWeight: 700, fontSize: 64, lineHeight: "72px", color: OLE.ink, whiteSpace: "nowrap", clipPath: clipR(interpolate(f, [4, t0 + 6], [0, 100], CL)) }}>{title}</div>
           {/* encabezados de columnas */}
           <div style={{ position: "absolute", left: 110, top: 176, fontFamily: SLAB, fontSize: 24, letterSpacing: 3, color: OLE.inkSoft }}>SUPPER</div>
-          <div style={{ position: "absolute", left: 470, top: 176, fontFamily: SLAB, fontSize: 24, letterSpacing: 3, color: OLE.inkSoft }}>PLATES</div>
-          <div style={{ position: "absolute", left: 590, top: 176, fontFamily: SLAB, fontSize: 24, letterSpacing: 3, color: OLE.inkSoft }}>THEN</div>
-          <div style={{ position: "absolute", left: 690, top: 176, fontFamily: SLAB, fontSize: 24, letterSpacing: 3, color: OLE.plaid }}>TODAY</div>
+          <div style={{ position: "absolute", left: 474, width: 100, top: 178, textAlign: "center", fontFamily: SLAB, fontSize: 19, letterSpacing: 2, color: OLE.inkSoft }}>PLATES</div>
+          <div style={{ position: "absolute", left: 582, width: 100, top: 178, textAlign: "center", fontFamily: SLAB, fontSize: 19, letterSpacing: 2, color: OLE.inkSoft }}>THEN</div>
+          <div style={{ position: "absolute", left: 682, width: 112, top: 178, textAlign: "center", fontFamily: SLAB, fontSize: 19, letterSpacing: 2, color: OLE.plaid }}>TODAY</div>
           {R.map((r, i) => {
             const p = rowP(i);
             const hi = highlight === i && p >= 99;
