@@ -307,6 +307,9 @@ if (fase === "anclas") {
 
 // ---------- clips ----------
 function tramo(c) { // audio rellenado a segundo entero → mp3
+  // gen_audio (furatones5): el relleno hasta el segundo entero es la CONTINUACIÓN real del máster (no silencio → agnes no
+  // repite la última frase ni queda callado); `armar` igual corta al largo real de c.audio.
+  if (c.gen_audio) { const T = c.T, mp3 = CL + c.id + "_tramo.mp3"; ff("-i", c.gen_audio, "-af", `apad=whole_dur=${T}`, "-t", String(T), "-ac", "1", "-ar", "44100", "-b:a", "160k", mp3); return { T, mp3 }; }
   const T = Math.min(12, Math.max(4, Math.ceil(dur(c.audio) + 0.15)));
   const mp3 = CL + c.id + "_tramo.mp3"; ff("-i", c.audio, "-af", `apad=whole_dur=${T}`, "-t", String(T), "-ac", "1", "-ar", "44100", "-b:a", "160k", mp3);
   return { T, mp3 };

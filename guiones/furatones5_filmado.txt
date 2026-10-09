@@ -1,0 +1,76 @@
+[HOOK|moneda] Las trampas no sacan a los ratones de tu casa.
+[HOOK|pasa] Mira. Entra la moneda. Y mientras quede este hueco, siempre llega el próximo.
+[HOOK|casa] Ésta es la casa de los Ramírez. Ya llegó el frío. Las hojas tapan la entrada.
+[HOOK|jorge] Y Jorge me pidió que viniera antes de que empiecen los ruidos en el techo.
+[HOOK|anio] Porque el año pasado, en cuanto bajó la temperatura, los ratones aparecieron de un día para el otro.
+[HOOK|cinco] Hoy revisamos los cinco lugares por donde entran. Casi todas las casas los tienen abiertos.
+[HOOK|loop] Y el quinto, el que nadie revisa, alguien ya lo había tapado antes que yo. Mal. Te lo enseño al final.
+[HOOK|promesa] Te muestro cómo encontrar cada hueco con una linterna y una moneda.
+[HOOK|tarde] Y cómo taparlo en una sola tarde, con cuatro cosas de la ferretería.
+[HOOK|nunca] Y lo que nunca, nunca se tapa.
+[HOOK|cred] Soy Claudio. Treinta años de fumigador.
+[HOOK|revision] Y al final te doy la revisión de diez minutos con la linterna, para que sepas esta noche si ya tienes visitas.
+[AF|jorge] Jorge, ven, acércate. Cuéntale lo del año pasado.
+[AF|ruidos] Me cuenta que empezó con ruiditos en la pared de la cocina, de noche. Después, cositas negras como granos de arroz detrás del refrigerador. Y una mañana, Lucía abrió la alacena y había una bolsa de pan mordida por una esquina.
+[AF|antes] La semana pasada, en esta misma casa, hicimos las bolitas caseras para las cucarachas; si no la viste, te la dejo aquí. Y cuando ya me iba, Jorge me acompañó a la puerta y me dijo esto mismo.
+[AF|porque] Te explico por qué pasa en otoño. Afuera baja la temperatura, se acaba la comida, y el ratón busca una casa tibia. Y la tuya huele a pan, a croquetas del perro, y está calentita.
+[AF|regla] Y aquí va la regla de todo el video. Un ratón adulto pasa por un hueco del tamaño de una moneda. Si entra la cabeza, entra el cuerpo. Así que traje esto.
+[AF|moneda] Una moneda, de las pequeñas. Y una linterna. Con esto revisamos la casa entera. Si entra la moneda, entra el ratón.
+[AF|trampas] Jorge el año pasado puso trampas. Agarró tres. Y al mes, había otros. Porque la trampa saca al que ya entró, pero el hueco sigue abierto. Primero se tapa, y la trampa es sólo para el que quedó adentro.
+[FE|camino] Antes de empezar, vamos a la ferretería de la esquina. Son cuatro cosas, y no gastas mucho.
+[FE|frase] Buenas tardes. Necesito dos lanas de acero sin jabón, una espuma de poliuretano, un burlete para puerta y una malla metálica fina.
+[FE|lana] Mira, ésta es la lana de acero. Que sea sin jabón, la gruesa. El ratón muerde casi todo, pero esto le lastima los dientes y no lo puede sacar.
+[FE|espuma] La espuma va encima de la lana, para sellar. Sola no sirve: la muerde como si fuera pan. Ya vas a ver por qué te lo digo.
+[FE|burlete] El burlete, para debajo de la puerta. Éste, con cepillo de goma. Y la malla, fina, de metal, no de plástico.
+[FE|manual] En el Manual te dejé esta frase escrita, para que la lleves en el celular y no te vendan otra cosa. Y unos guantes, que la lana de acero corta.
+[PU|uno] Lugar número uno. La puerta de entrada. La más fácil, y la que casi nadie mira.
+[PU|agacho] Me agacho, prendo la linterna del lado de adentro, y Jorge apaga la luz del recibidor. Mira el piso. ¿Ves la rayita de luz que se cuela por abajo?
+[PU|mide] Ahí pruebo la moneda. Entra parada, de lado, sin tocar. Por ahí entra un ratón joven tranquilamente. Y Bruno, que está aquí mirándome, ni se entera.
+[PU|corta] Mido el ancho de la puerta con el metro. Ochenta y dos centímetros. Corto el burlete un poquito más corto, para que no roce el marco.
+[PU|pega] Limpio el canto de abajo con un trapo, que no tenga polvo. Despego la cinta, y lo apoyo de modo que el cepillo toque el piso a lo largo de toda la puerta.
+[PU|prueba] Ahora la prueba. Abro y cierro. Roza, pero no se traba. Apago la luz otra vez. Ya no pasa la rayita de luz. Y la moneda tampoco.
+[PU|patio] Y lo mismo en la puerta del patio, que es la que más usan Bruno y los chicos. Ésta tenía el hueco más grande todavía, de un dedo entero.
+[CO|dos] Lugar número dos. Los caños. Vamos a la cocina.
+[CO|abro] Abro el mueble del fregadero. Saco los productos de limpieza. Y con la linterna, miro donde el caño entra a la pared.
+[CO|hueco] ¿Ves esto? Alrededor del caño, el agujero que hizo el plomero es mucho más grande que el caño. Pruebo la moneda. Pasa sobrada.
+[CO|guantes] Me pongo los guantes. Arranco un pedazo de lana de acero, lo enrollo como una salchicha, y lo empujo con el destornillador hasta el fondo del hueco.
+[CO|aprieta] Apretado. Que no quede flojo. Sigo metiendo hasta que ya no entra más. Si queda suelto, el ratón lo jala con los dientes y lo saca.
+[CO|espuma] Y encima, la espuma. Poca. Agito la lata, y un cordón fino alrededor. Crece sola, el doble. Si pones mucha, se sale por todos lados.
+[CO|refri] Lo mismo detrás del refrigerador, donde entra el caño del agua. Jorge me ayuda a correrlo. Y mira lo que está aquí atrás.
+[CO|borico] La tapita de ácido bórico de la primera visita, la de las cucarachas. Sigue en su lugar, cerrada, donde ni los chicos ni Bruno llegan. Eso no se toca.
+[CO|gas] Y el caño del gas, detrás de la lavadora: el del principio del video. Mismo arreglo. Lana de acero, apretada, y espuma encima. El caño no se toca, sólo el hueco que lo rodea.
+[PA|tres] Lugar número tres. Las rejillas de ventilación. Salimos al patio de al lado.
+[PA|rejilla] Mira esta rejilla, abajo, a ras del piso. Tiene las tablitas, pero detrás no hay nada. Meto la moneda entre las tablitas. Pasa. Por aquí entra un ratón, una lagartija, lo que quiera.
+[PA|corta] Corto un cuadrado de malla metálica un poco más grande que la rejilla, con la tijera de hojalata. Doblo las puntas hacia adentro, para que no corten.
+[PA|fija] Saco los dos tornillos de la rejilla, pongo la malla detrás, y vuelvo a atornillar. El aire pasa igual. El ratón, no.
+[PA|nunca] Y ahora lo más importante del video. Ésta de aquí es la ventilación del gas. Esta rejilla no se tapa nunca. Ni con espuma, ni con cinta, ni con nada.
+[PA|gas] Si tapas la ventilación del gas, el día que haya una fuga, el gas no tiene por dónde salir. Le pones malla, y nada más. Que el aire pase siempre.
+[ME|sienta] Entramos un momento. Lucía nos preparó café, y me siento en la mesa de la cocina.
+[ME|pagina] Las medidas exactas están en la página quince del Manual del Fumigador: cuánta lana de acero por hueco, qué espuma, qué malla, y el orden de los cinco lugares.
+[ME|ninos] Mientras tomamos el café, Sofía me pregunta por qué no ponemos veneno, y ya. Porque el ratón envenenado se muere adentro de la pared, y huele por semanas. Y porque aquí hay un perro y dos niños.
+[SA|cuatro] Lugar número cuatro. Los cables. Vamos a la sala.
+[SA|aire] Mira dónde entra el cable del aire acondicionado. El técnico hizo el agujero, pasó el cable, y se fue. Y quedó un hueco por donde ves la luz de afuera.
+[SA|tv] Y el de la televisión, igual, abajo, detrás del mueble. La moneda entra en los dos.
+[SA|tapa] Lana de acero alrededor del cable, apretada, con el destornillador, sin pelar el cable. Y espuma encima. Cuando se seca, se corta lo que sobra con el cúter, al ras de la pared.
+[GA|cinco] Y ahora sí. Lugar número cinco. El que nadie revisa. El garaje, y el lavadero.
+[GA|linterna] Aquí no basta con mirar. Te agachas, con la linterna pegada al piso, y recorres las esquinas de abajo, una por una. La luz de costado te muestra cada sombra.
+[GA|calentador] Y mira lo que encontré detrás del calentador. Este hueco ya lo había tapado alguien. Con espuma. Sola.
+[GA|mordida] Mira de cerca. ¿Ves las marcas? Está mordida. Le hicieron un túnel por el medio. La espuma sola, para el ratón, es como pan.
+[GA|cacas] Y aquí, en el piso, cacas frescas, negras y brillantes. Eso quiere decir que hay uno adentro, ahora.
+[GA|trampa] Así que hoy este hueco no se tapa. Si lo tapas con el ratón adentro, se queda encerrado en tu casa. Primero la trampa, dentro de una caja con un agujero del tamaño de la moneda, para que no llegue Bruno. Y mañana, se tapa.
+[GA|dia] Al otro día, Jorge me mandó la foto. Había caído uno. Volví, saqué la espuma vieja, metí lana de acero hasta el fondo, y espuma encima. Ahora sí.
+[GA|esquinas] Y en el lavadero, la esquina donde sale el desagüe de la lavadora. Moneda. Pasa. Lana de acero y espuma. Cinco lugares, una tarde.
+[NO|semana] Una semana después volví, de noche. Apagamos todo. Y una hora después, entramos con la linterna.
+[NO|revisa] Detrás del refrigerador, nada. En el mueble del fregadero, nada. En el garaje, la trampa vacía, y ni una caca nueva. Y Lucía me dijo que ya no se escuchan los ruiditos en la pared.
+[NO|honesto] Pero te soy honesto. Si después de tapar todo siguen apareciendo, el problema está más arriba. Los ratones trepan por las paredes, y entran por el techo. Mira esa rama que toca las tejas: es un puente. Jorge la cortó ese mismo fin de semana.
+[NO|cada] Y una vez al año, cuando empieza el frío, repites la vuelta con la linterna y la moneda. Diez minutos. Antes de que entre el primero.
+[CI|revision] Y ahora, la revisión de diez minutos que te prometí.
+[CI|linterna] Es gratis, y la puedes hacer esta noche. Una hora después de apagar todo, entras a la cocina a oscuras y prendes la linterna de golpe. Miras detrás del refrigerador, debajo del fregadero, y en las esquinas del garaje.
+[CI|tabla] Cacas negras como arroz, papel roído, un olor raro en un rincón. Y lo que ves te dice qué bicho tienes, por dónde entra, y qué arreglo te toca.
+[CI|regalo] Te dejé las tres pruebas en una hoja gratis que se llama Antes de Fumigar, la revisión de la noche. La de la linterna, la de la harina, y una tercera que no mostré en ningún video: la de la cinta doble faz, que te dice cuántos son. Al lado de cada resultado está qué arreglo te toca.
+[CI|pega] La imprimes y la pegas por dentro del mueble del fregadero, así, con un poco de cinta. Apunta el celular a este código, o toca el primer link de la descripción.
+[CI|manual] Y si ya sabes que en tu casa hay de todo, en esa misma página está el Manual del Fumigador: los sesenta y seis arreglos de la casa, con lo que pides en la ferretería y las medidas exactas. Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.
+[NX|ventana] Ah, y una cosa más. Cuando terminamos, Lucía abrió la ventana de la cocina para que se fuera el olor de la espuma. Y en dos minutos, entraron tres moscas grandes, de esas que zumban.
+[NX|gancho] Jorge ya buscaba el aerosol. Le dije que no, que en la cocina no. La semana que viene te muestro cómo sacarlas de la cocina sin mosquitero y sin aerosol.
+[CL|pregunta] Y ahora cuéntame tú. ¿Ya probaste la moneda? ¿En cuál de los cinco lugares te entró? Escríbemelo en los comentarios. Leo todos.
+[CL|chau] Si entra la moneda, entra el ratón. Nos vemos la semana que viene.

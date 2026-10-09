@@ -1,0 +1,15 @@
+{"orden": [
+ ["lav", ["HOOK|moneda", "HOOK|pasa"]],
+ ["frente", ["HOOK|casa", "HOOK|jorge", "HOOK|anio", "HOOK|cinco", "HOOK|loop", "HOOK|promesa", "HOOK|tarde", "HOOK|nunca", "HOOK|cred", "HOOK|revision", "AF|jorge", "AF|ruidos", "AF|antes", "AF|porque", "AF|regla", "AF|moneda", "AF|trampas"]],
+ ["ferre", ["FE|camino", "FE|frase", "FE|lana", "FE|espuma", "FE|burlete", "FE|manual"]],
+ ["puerta", ["PU|uno", "PU|agacho", "PU|mide", "PU|corta", "PU|pega", "PU|prueba", "PU|patio"]],
+ ["cocina", ["CO|dos", "CO|abro", "CO|hueco", "CO|guantes", "CO|aprieta", "CO|espuma", "CO|refri", "CO|borico"]],
+ ["lav2", ["CO|gas"]],
+ ["patio", ["PA|tres", "PA|rejilla", "PA|corta", "PA|fija", "PA|nunca", "PA|gas"]],
+ ["mesa", ["ME|sienta", "ME|pagina", "ME|ninos"]],
+ ["sala", ["SA|cuatro", "SA|aire", "SA|tv", "SA|tapa"]],
+ ["garaje", ["GA|cinco", "GA|linterna", "GA|calentador", "GA|mordida", "GA|cacas", "GA|trampa", "GA|dia", "GA|esquinas"]],
+ ["noche", ["NO|semana", "NO|revisa"]],
+ ["techo", ["NO|honesto", "NO|cada"]],
+ ["cierre", ["CI|revision", "CI|linterna", "CI|tabla", "CI|regalo", "CI|pega", "CI|manual", "NX|ventana", "NX|gancho", "CL|pregunta", "CL|chau"]]
+]}

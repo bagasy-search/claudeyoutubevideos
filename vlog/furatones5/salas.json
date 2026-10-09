@@ -1,0 +1,190 @@
+[
+ {
+  "i": 0,
+  "room": "laundry",
+  "s": 0.0,
+  "e": 9.26,
+  "tags": [
+   "HOOK|moneda",
+   "HOOK|pasa"
+  ]
+ },
+ {
+  "i": 1,
+  "room": "out",
+  "s": 9.61,
+  "e": 81.69,
+  "tags": [
+   "HOOK|casa",
+   "HOOK|jorge",
+   "HOOK|anio",
+   "HOOK|cinco",
+   "HOOK|loop",
+   "HOOK|promesa",
+   "HOOK|tarde",
+   "HOOK|nunca",
+   "HOOK|cred",
+   "HOOK|revision",
+   "AF|jorge",
+   "AF|ruidos"
+  ]
+ },
+ {
+  "i": 2,
+  "room": "out",
+  "s": 82.04,
+  "e": 141.78,
+  "tags": [
+   "AF|antes",
+   "AF|porque",
+   "AF|regla",
+   "AF|moneda",
+   "AF|trampas"
+  ]
+ },
+ {
+  "i": 3,
+  "room": "store",
+  "s": 142.13,
+  "e": 191.09,
+  "tags": [
+   "FE|camino",
+   "FE|frase",
+   "FE|lana",
+   "FE|espuma",
+   "FE|burlete",
+   "FE|manual"
+  ]
+ },
+ {
+  "i": 4,
+  "room": "living",
+  "s": 191.44,
+  "e": 254.56,
+  "tags": [
+   "PU|uno",
+   "PU|agacho",
+   "PU|mide",
+   "PU|corta",
+   "PU|pega",
+   "PU|prueba",
+   "PU|patio"
+  ]
+ },
+ {
+  "i": 5,
+  "room": "kitchen",
+  "s": 254.91,
+  "e": 338.38,
+  "tags": [
+   "CO|dos",
+   "CO|abro",
+   "CO|hueco",
+   "CO|guantes",
+   "CO|aprieta",
+   "CO|espuma",
+   "CO|refri",
+   "CO|borico",
+   "CO|gas"
+  ]
+ },
+ {
+  "i": 6,
+  "room": "out",
+  "s": 338.73,
+  "e": 394.5,
+  "tags": [
+   "PA|tres",
+   "PA|rejilla",
+   "PA|corta",
+   "PA|fija",
+   "PA|nunca",
+   "PA|gas"
+  ]
+ },
+ {
+  "i": 7,
+  "room": "kitchen",
+  "s": 394.85,
+  "e": 424.93,
+  "tags": [
+   "ME|sienta",
+   "ME|pagina",
+   "ME|ninos"
+  ]
+ },
+ {
+  "i": 8,
+  "room": "living",
+  "s": 425.28,
+  "e": 455.62,
+  "tags": [
+   "SA|cuatro",
+   "SA|aire",
+   "SA|tv",
+   "SA|tapa"
+  ]
+ },
+ {
+  "i": 9,
+  "room": "garage",
+  "s": 455.97,
+  "e": 529.36,
+  "tags": [
+   "GA|cinco",
+   "GA|linterna",
+   "GA|calentador",
+   "GA|mordida",
+   "GA|cacas",
+   "GA|trampa",
+   "GA|dia",
+   "GA|esquinas"
+  ]
+ },
+ {
+  "i": 10,
+  "room": "kitchen",
+  "s": 529.71,
+  "e": 549.65,
+  "tags": [
+   "NO|semana",
+   "NO|revisa"
+  ]
+ },
+ {
+  "i": 11,
+  "room": "out",
+  "s": 550.0,
+  "e": 574.39,
+  "tags": [
+   "NO|honesto",
+   "NO|cada"
+  ]
+ },
+ {
+  "i": 12,
+  "room": "kitchen",
+  "s": 574.74,
+  "e": 652.47,
+  "tags": [
+   "CI|revision",
+   "CI|linterna",
+   "CI|tabla",
+   "CI|regalo",
+   "CI|pega",
+   "CI|manual",
+   "NX|ventana"
+  ]
+ },
+ {
+  "i": 13,
+  "room": "kitchen",
+  "s": 652.82,
+  "e": 676.93,
+  "tags": [
+   "NX|gancho",
+   "CL|pregunta",
+   "CL|chau"
+  ]
+ }
+]

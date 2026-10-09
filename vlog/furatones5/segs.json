@@ -1,0 +1,762 @@
+[
+ {
+  "sc": "lav",
+  "s": 0.0,
+  "e": 4.56,
+  "id": "c01",
+  "d": 4.56,
+  "T": 5,
+  "text": "Las trampas no sacan a los ratones de tu casa. Mira.",
+  "pad": 0.44
+ },
+ {
+  "sc": "lav",
+  "s": 4.56,
+  "e": 9.58,
+  "id": "c02",
+  "d": 5.02,
+  "T": 6,
+  "text": "Entra la moneda. Y mientras quede este hueco, siempre llega el próximo.",
+  "pad": 0.98
+ },
+ {
+  "sc": "frente",
+  "s": 9.58,
+  "e": 14.9,
+  "id": "c03",
+  "d": 5.32,
+  "T": 6,
+  "text": "Ésta es la casa de los Ramírez. Ya llegó el frío.",
+  "pad": 0.68
+ },
+ {
+  "sc": "frente",
+  "s": 14.9,
+  "e": 21.8,
+  "id": "c04",
+  "d": 6.9,
+  "T": 8,
+  "text": "Las hojas tapan la entrada. Y Jorge me pidió que viniera antes de que empiecen los ruidos en el techo.",
+  "pad": 1.1
+ },
+ {
+  "sc": "frente",
+  "s": 21.8,
+  "e": 28.02,
+  "id": "c05",
+  "d": 6.22,
+  "T": 7,
+  "text": "Porque el año pasado, en cuanto bajó la temperatura, los ratones aparecieron de un día para el otro.",
+  "pad": 0.78
+ },
+ {
+  "sc": "frente",
+  "s": 28.02,
+  "e": 34.22,
+  "id": "c06",
+  "d": 6.2,
+  "T": 7,
+  "text": "Hoy revisamos los cinco lugares por donde entran. Casi todas las casas los tienen abiertos.",
+  "pad": 0.8
+ },
+ {
+  "sc": "frente",
+  "s": 34.22,
+  "e": 39.68,
+  "id": "c07",
+  "d": 5.46,
+  "T": 6,
+  "text": "Y el quinto, el que nadie revisa, alguien ya lo había tapado antes que yo.",
+  "pad": 0.54
+ },
+ {
+  "sc": "frente",
+  "s": 39.68,
+  "e": 46.4,
+  "id": "c08",
+  "d": 6.72,
+  "T": 7,
+  "text": "Mal. Te lo enseño al final. Te muestro cómo encontrar cada hueco con una linterna y una moneda.",
+  "pad": 0.28
+ },
+ {
+  "sc": "frente",
+  "s": 46.4,
+  "e": 50.96,
+  "id": "c09",
+  "d": 4.56,
+  "T": 5,
+  "text": "Y cómo taparlo en una sola tarde, con cuatro cosas de la ferretería.",
+  "pad": 0.44
+ },
+ {
+  "sc": "frente",
+  "s": 50.96,
+  "e": 56.44,
+  "id": "c10",
+  "d": 5.48,
+  "T": 6,
+  "text": "Y lo que nunca, nunca se tapa. Soy Claudio. Treinta años de fumigador.",
+  "pad": 0.52
+ },
+ {
+  "sc": "frente",
+  "s": 56.44,
+  "e": 67.5,
+  "id": "c11",
+  "d": 11.06,
+  "T": 12,
+  "text": "Y al final te doy la revisión de diez minutos con la linterna, para que sepas esta noche si ya tienes visitas. Jorge, ven, acércate. Cuéntale lo del año pasado.",
+  "pad": 0.94
+ },
+ {
+  "sc": "frente",
+  "s": 67.5,
+  "e": 77.1,
+  "id": "c12",
+  "d": 9.6,
+  "T": 10,
+  "text": "Me cuenta que empezó con ruiditos en la pared de la cocina, de noche. Después, cositas negras como granos de arroz detrás del refrigerador. Y una mañana,",
+  "pad": 0.4
+ },
+ {
+  "sc": "frente",
+  "s": 77.1,
+  "e": 87.6,
+  "id": "c13",
+  "d": 10.5,
+  "T": 11,
+  "text": "Lucía abrió la alacena y había una bolsa de pan mordida por una esquina. La semana pasada, en esta misma casa, hicimos las bolitas caseras para las cucarachas;",
+  "pad": 0.5
+ },
+ {
+  "sc": "frente",
+  "s": 87.6,
+  "e": 98.88,
+  "id": "c14",
+  "d": 11.28,
+  "T": 12,
+  "text": "si no la viste, te la dejo aquí. Y cuando ya me iba, Jorge me acompañó a la puerta y me dijo esto mismo. Te explico por qué pasa en otoño. Afuera baja la temperatura,",
+  "pad": 0.72
+ },
+ {
+  "sc": "frente",
+  "s": 98.88,
+  "e": 110.4,
+  "id": "c15",
+  "d": 11.52,
+  "T": 12,
+  "text": "se acaba la comida, y el ratón busca una casa tibia. Y la tuya huele a pan, a croquetas del perro, y está calentita. Y aquí va la regla de todo el video.",
+  "pad": 0.48
+ },
+ {
+  "sc": "frente",
+  "s": 110.4,
+  "e": 122.16,
+  "id": "c16",
+  "d": 11.76,
+  "T": 12,
+  "text": "Un ratón adulto pasa por un hueco del tamaño de una moneda. Si entra la cabeza, entra el cuerpo. Así que traje esto. Una moneda, de las pequeñas. Y una linterna.",
+  "pad": 0.24
+ },
+ {
+  "sc": "frente",
+  "s": 122.16,
+  "e": 133.16,
+  "id": "c17",
+  "d": 11.0,
+  "T": 12,
+  "text": "Con esto revisamos la casa entera. Si entra la moneda, entra el ratón. Jorge el año pasado puso trampas. Agarró tres. Y al mes, había otros.",
+  "pad": 1.0
+ },
+ {
+  "sc": "frente",
+  "s": 133.16,
+  "e": 142.08,
+  "id": "c18",
+  "d": 8.92,
+  "T": 10,
+  "text": "Porque la trampa saca al que ya entró, pero el hueco sigue abierto. Primero se tapa, y la trampa es sólo para el que quedó adentro.",
+  "pad": 1.08
+ },
+ {
+  "sc": "ferre",
+  "s": 142.08,
+  "e": 153.28,
+  "id": "c19",
+  "d": 11.2,
+  "T": 12,
+  "text": "Antes de empezar, vamos a la ferretería de la esquina. Son cuatro cosas, y no gastas mucho. Buenas tardes. Necesito dos lanas de acero sin jabón, una espuma de poliuretano,",
+  "pad": 0.8
+ },
+ {
+  "sc": "ferre",
+  "s": 153.28,
+  "e": 161.0,
+  "id": "c20",
+  "d": 7.72,
+  "T": 8,
+  "text": "un burlete para puerta y una malla metálica fina. Mira, ésta es la lana de acero. Que sea sin jabón, la gruesa.",
+  "pad": 0.28
+ },
+ {
+  "sc": "ferre",
+  "s": 161.0,
+  "e": 172.84,
+  "id": "c21",
+  "d": 11.84,
+  "T": 12,
+  "text": "El ratón muerde casi todo, pero esto le lastima los dientes y no lo puede sacar. La espuma va encima de la lana, para sellar. Sola no sirve: la muerde como si fuera pan.",
+  "pad": 0.16
+ },
+ {
+  "sc": "ferre",
+  "s": 172.84,
+  "e": 182.62,
+  "id": "c22",
+  "d": 9.78,
+  "T": 10,
+  "text": "Ya vas a ver por qué te lo digo. El burlete, para debajo de la puerta. Éste, con cepillo de goma. Y la malla, fina, de metal, no de plástico.",
+  "pad": 0.22
+ },
+ {
+  "sc": "ferre",
+  "s": 182.62,
+  "e": 191.44,
+  "id": "c23",
+  "d": 8.82,
+  "T": 9,
+  "text": "En el Manual te dejé esta frase escrita, para que la lleves en el celular y no te vendan otra cosa. Y unos guantes, que la lana de acero corta.",
+  "pad": 0.18
+ },
+ {
+  "sc": "puerta",
+  "s": 191.44,
+  "e": 201.32,
+  "id": "c24",
+  "d": 9.88,
+  "T": 11,
+  "text": "Lugar número uno. La puerta de entrada. La más fácil, y la que casi nadie mira. Me agacho, prendo la linterna del lado de adentro,",
+  "pad": 1.12
+ },
+ {
+  "sc": "puerta",
+  "s": 201.32,
+  "e": 211.94,
+  "id": "c25",
+  "d": 10.62,
+  "T": 11,
+  "text": "y Jorge apaga la luz del recibidor. Mira el piso. ¿Ves la rayita de luz que se cuela por abajo? Ahí pruebo la moneda. Entra parada, de lado, sin tocar.",
+  "pad": 0.38
+ },
+ {
+  "sc": "puerta",
+  "s": 211.94,
+  "e": 222.56,
+  "id": "c26",
+  "d": 10.62,
+  "T": 11,
+  "text": "Por ahí entra un ratón joven tranquilamente. Y Bruno, que está aquí mirándome, ni se entera. Mido el ancho de la puerta con el metro. Ochenta y dos centímetros.",
+  "pad": 0.38
+ },
+ {
+  "sc": "puerta",
+  "s": 222.56,
+  "e": 230.8,
+  "id": "c27",
+  "d": 8.24,
+  "T": 9,
+  "text": "Corto el burlete un poquito más corto, para que no roce el marco. Limpio el canto de abajo con un trapo, que no tenga polvo.",
+  "pad": 0.76
+ },
+ {
+  "sc": "puerta",
+  "s": 230.8,
+  "e": 241.5,
+  "id": "c28",
+  "d": 10.7,
+  "T": 11,
+  "text": "Despego la cinta, y lo apoyo de modo que el cepillo toque el piso a lo largo de toda la puerta. Ahora la prueba. Abro y cierro. Roza, pero no se traba.",
+  "pad": 0.3
+ },
+ {
+  "sc": "puerta",
+  "s": 241.5,
+  "e": 250.7,
+  "id": "c29",
+  "d": 9.2,
+  "T": 10,
+  "text": "Apago la luz otra vez. Ya no pasa la rayita de luz. Y la moneda tampoco. Y lo mismo en la puerta del patio, que es la que más usan Bruno y los chicos.",
+  "pad": 0.8
+ },
+ {
+  "sc": "puerta",
+  "s": 250.7,
+  "e": 254.62,
+  "id": "c30",
+  "d": 3.92,
+  "T": 5,
+  "text": "Ésta tenía el hueco más grande todavía, de un dedo entero.",
+  "pad": 1.08
+ },
+ {
+  "sc": "cocina",
+  "s": 254.62,
+  "e": 262.96,
+  "id": "c31",
+  "d": 8.34,
+  "T": 9,
+  "text": "Lugar número dos. Los caños. Vamos a la cocina. Abro el mueble del fregadero. Saco los productos de limpieza.",
+  "pad": 0.66
+ },
+ {
+  "sc": "cocina",
+  "s": 262.96,
+  "e": 272.82,
+  "id": "c32",
+  "d": 9.86,
+  "T": 11,
+  "text": "Y con la linterna, miro donde el caño entra a la pared. ¿Ves esto? Alrededor del caño, el agujero que hizo el plomero es mucho más grande que el caño.",
+  "pad": 1.14
+ },
+ {
+  "sc": "cocina",
+  "s": 272.82,
+  "e": 278.54,
+  "id": "c33",
+  "d": 5.72,
+  "T": 6,
+  "text": "Pruebo la moneda. Pasa sobrada. Me pongo los guantes.",
+  "pad": 0.28
+ },
+ {
+  "sc": "cocina",
+  "s": 278.54,
+  "e": 290.32,
+  "id": "c34",
+  "d": 11.78,
+  "T": 12,
+  "text": "Arranco un pedazo de lana de acero, lo enrollo como una salchicha, y lo empujo con el destornillador hasta el fondo del hueco. Apretado. Que no quede flojo.",
+  "pad": 0.22
+ },
+ {
+  "sc": "cocina",
+  "s": 290.32,
+  "e": 298.78,
+  "id": "c35",
+  "d": 8.46,
+  "T": 9,
+  "text": "Sigo metiendo hasta que ya no entra más. Si queda suelto, el ratón lo jala con los dientes y lo saca. Y encima, la espuma.",
+  "pad": 0.54
+ },
+ {
+  "sc": "cocina",
+  "s": 298.78,
+  "e": 309.82,
+  "id": "c36",
+  "d": 11.04,
+  "T": 12,
+  "text": "Poca. Agito la lata, y un cordón fino alrededor. Crece sola, el doble. Si pones mucha, se sale por todos lados. Lo mismo detrás del refrigerador,",
+  "pad": 0.96
+ },
+ {
+  "sc": "cocina",
+  "s": 309.82,
+  "e": 319.7,
+  "id": "c37",
+  "d": 9.88,
+  "T": 11,
+  "text": "donde entra el caño del agua. Jorge me ayuda a correrlo. Y mira lo que está aquí atrás. La tapita de ácido bórico de la primera visita, la de las cucarachas.",
+  "pad": 1.12
+ },
+ {
+  "sc": "cocina",
+  "s": 319.7,
+  "e": 325.96,
+  "id": "c38",
+  "d": 6.26,
+  "T": 7,
+  "text": "Sigue en su lugar, cerrada, donde ni los chicos ni Bruno llegan. Eso no se toca.",
+  "pad": 0.74
+ },
+ {
+  "sc": "lav2",
+  "s": 325.96,
+  "e": 334.78,
+  "id": "c39",
+  "d": 8.82,
+  "T": 9,
+  "text": "Y el caño del gas, detrás de la lavadora: el del principio del video. Mismo arreglo. Lana de acero, apretada, y espuma encima.",
+  "pad": 0.18
+ },
+ {
+  "sc": "lav2",
+  "s": 334.78,
+  "e": 338.74,
+  "id": "c40",
+  "d": 3.96,
+  "T": 5,
+  "text": "El caño no se toca, sólo el hueco que lo rodea.",
+  "pad": 1.04
+ },
+ {
+  "sc": "patio",
+  "s": 338.74,
+  "e": 348.84,
+  "id": "c41",
+  "d": 10.1,
+  "T": 11,
+  "text": "Lugar número tres. Las rejillas de ventilación. Salimos al patio de al lado. Mira esta rejilla, abajo, a ras del piso. Tiene las tablitas,",
+  "pad": 0.9
+ },
+ {
+  "sc": "patio",
+  "s": 348.84,
+  "e": 358.04,
+  "id": "c42",
+  "d": 9.2,
+  "T": 10,
+  "text": "pero detrás no hay nada. Meto la moneda entre las tablitas. Pasa. Por aquí entra un ratón, una lagartija, lo que quiera.",
+  "pad": 0.8
+ },
+ {
+  "sc": "patio",
+  "s": 358.04,
+  "e": 366.88,
+  "id": "c43",
+  "d": 8.84,
+  "T": 9,
+  "text": "Corto un cuadrado de malla metálica un poco más grande que la rejilla, con la tijera de hojalata. Doblo las puntas hacia adentro, para que no corten.",
+  "pad": 0.16
+ },
+ {
+  "sc": "patio",
+  "s": 366.88,
+  "e": 377.68,
+  "id": "c44",
+  "d": 10.8,
+  "T": 11,
+  "text": "Saco los dos tornillos de la rejilla, pongo la malla detrás, y vuelvo a atornillar. El aire pasa igual. El ratón, no. Y ahora lo más importante del video.",
+  "pad": 0.2
+ },
+ {
+  "sc": "patio",
+  "s": 377.68,
+  "e": 387.5,
+  "id": "c45",
+  "d": 9.82,
+  "T": 10,
+  "text": "Ésta de aquí es la ventilación del gas. Esta rejilla no se tapa nunca. Ni con espuma, ni con cinta, ni con nada. Si tapas la ventilación del gas,",
+  "pad": 0.18
+ },
+ {
+  "sc": "patio",
+  "s": 387.5,
+  "e": 394.98,
+  "id": "c46",
+  "d": 7.48,
+  "T": 8,
+  "text": "el día que haya una fuga, el gas no tiene por dónde salir. Le pones malla, y nada más. Que el aire pase siempre.",
+  "pad": 0.52
+ },
+ {
+  "sc": "mesa",
+  "s": 394.98,
+  "e": 406.64,
+  "id": "c47",
+  "d": 11.66,
+  "T": 12,
+  "text": "Entramos un momento. Lucía nos preparó café, y me siento en la mesa de la cocina. Las medidas exactas están en la página quince del Manual del Fumigador:",
+  "pad": 0.34
+ },
+ {
+  "sc": "mesa",
+  "s": 406.64,
+  "e": 417.5,
+  "id": "c48",
+  "d": 10.86,
+  "T": 12,
+  "text": "cuánta lana de acero por hueco, qué espuma, qué malla, y el orden de los cinco lugares. Mientras tomamos el café, Sofía me pregunta por qué no ponemos veneno, y ya.",
+  "pad": 1.14
+ },
+ {
+  "sc": "mesa",
+  "s": 417.5,
+  "e": 425.18,
+  "id": "c49",
+  "d": 7.68,
+  "T": 8,
+  "text": "Porque el ratón envenenado se muere adentro de la pared, y huele por semanas. Y porque aquí hay un perro y dos niños.",
+  "pad": 0.32
+ },
+ {
+  "sc": "sala",
+  "s": 425.18,
+  "e": 436.04,
+  "id": "c50",
+  "d": 10.86,
+  "T": 12,
+  "text": "Lugar número cuatro. Los cables. Vamos a la sala. Mira dónde entra el cable del aire acondicionado. El técnico hizo el agujero, pasó el cable, y se fue.",
+  "pad": 1.14
+ },
+ {
+  "sc": "sala",
+  "s": 436.04,
+  "e": 446.76,
+  "id": "c51",
+  "d": 10.72,
+  "T": 11,
+  "text": "Y quedó un hueco por donde ves la luz de afuera. Y el de la televisión, igual, abajo, detrás del mueble. La moneda entra en los dos. Lana de acero alrededor del cable,",
+  "pad": 0.28
+ },
+ {
+  "sc": "sala",
+  "s": 446.76,
+  "e": 456.04,
+  "id": "c52",
+  "d": 9.28,
+  "T": 10,
+  "text": "apretada, con el destornillador, sin pelar el cable. Y espuma encima. Cuando se seca, se corta lo que sobra con el cúter, al ras de la pared.",
+  "pad": 0.72
+ },
+ {
+  "sc": "garaje",
+  "s": 456.04,
+  "e": 464.86,
+  "id": "c53",
+  "d": 8.82,
+  "T": 9,
+  "text": "Y ahora sí. Lugar número cinco. El que nadie revisa. El garaje, y el lavadero. Aquí no basta con mirar.",
+  "pad": 0.18
+ },
+ {
+  "sc": "garaje",
+  "s": 464.86,
+  "e": 476.38,
+  "id": "c54",
+  "d": 11.52,
+  "T": 12,
+  "text": "Te agachas, con la linterna pegada al piso, y recorres las esquinas de abajo, una por una. La luz de costado te muestra cada sombra. Y mira lo que encontré detrás del calentador.",
+  "pad": 0.48
+ },
+ {
+  "sc": "garaje",
+  "s": 476.38,
+  "e": 486.26,
+  "id": "c55",
+  "d": 9.88,
+  "T": 11,
+  "text": "Este hueco ya lo había tapado alguien. Con espuma. Sola. Mira de cerca. ¿Ves las marcas? Está mordida. Le hicieron un túnel por el medio.",
+  "pad": 1.12
+ },
+ {
+  "sc": "garaje",
+  "s": 486.26,
+  "e": 496.8,
+  "id": "c56",
+  "d": 10.54,
+  "T": 11,
+  "text": "La espuma sola, para el ratón, es como pan. Y aquí, en el piso, cacas frescas, negras y brillantes. Eso quiere decir que hay uno adentro, ahora.",
+  "pad": 0.46
+ },
+ {
+  "sc": "garaje",
+  "s": 496.8,
+  "e": 507.16,
+  "id": "c57",
+  "d": 10.36,
+  "T": 11,
+  "text": "Así que hoy este hueco no se tapa. Si lo tapas con el ratón adentro, se queda encerrado en tu casa. Primero la trampa, dentro de una caja con un agujero del tamaño de la moneda,",
+  "pad": 0.64
+ },
+ {
+  "sc": "garaje",
+  "s": 507.16,
+  "e": 516.64,
+  "id": "c58",
+  "d": 9.48,
+  "T": 10,
+  "text": "para que no llegue Bruno. Y mañana, se tapa. Al otro día, Jorge me mandó la foto. Había caído uno. Volví, saqué la espuma vieja,",
+  "pad": 0.52
+ },
+ {
+  "sc": "garaje",
+  "s": 516.64,
+  "e": 524.18,
+  "id": "c59",
+  "d": 7.54,
+  "T": 8,
+  "text": "metí lana de acero hasta el fondo, y espuma encima. Ahora sí. Y en el lavadero, la esquina donde sale el desagüe de la lavadora.",
+  "pad": 0.46
+ },
+ {
+  "sc": "garaje",
+  "s": 524.18,
+  "e": 529.74,
+  "id": "c60",
+  "d": 5.56,
+  "T": 6,
+  "text": "Moneda. Pasa. Lana de acero y espuma. Cinco lugares, una tarde.",
+  "pad": 0.44
+ },
+ {
+  "sc": "noche",
+  "s": 529.74,
+  "e": 541.38,
+  "id": "c61",
+  "d": 11.64,
+  "T": 12,
+  "text": "Una semana después volví, de noche. Apagamos todo. Y una hora después, entramos con la linterna. Detrás del refrigerador, nada. En el mueble del fregadero,",
+  "pad": 0.36
+ },
+ {
+  "sc": "noche",
+  "s": 541.38,
+  "e": 550.02,
+  "id": "c62",
+  "d": 8.64,
+  "T": 9,
+  "text": "nada. En el garaje, la trampa vacía, y ni una caca nueva. Y Lucía me dijo que ya no se escuchan los ruiditos en la pared.",
+  "pad": 0.36
+ },
+ {
+  "sc": "techo",
+  "s": 550.02,
+  "e": 560.58,
+  "id": "c63",
+  "d": 10.56,
+  "T": 11,
+  "text": "Pero te soy honesto. Si después de tapar todo siguen apareciendo, el problema está más arriba. Los ratones trepan por las paredes, y entran por el techo.",
+  "pad": 0.44
+ },
+ {
+  "sc": "techo",
+  "s": 560.58,
+  "e": 568.92,
+  "id": "c64",
+  "d": 8.34,
+  "T": 9,
+  "text": "Mira esa rama que toca las tejas: es un puente. Jorge la cortó ese mismo fin de semana. Y una vez al año, cuando empieza el frío,",
+  "pad": 0.66
+ },
+ {
+  "sc": "techo",
+  "s": 568.92,
+  "e": 574.7,
+  "id": "c65",
+  "d": 5.78,
+  "T": 6,
+  "text": "repites la vuelta con la linterna y la moneda. Diez minutos. Antes de que entre el primero.",
+  "pad": 0.22
+ },
+ {
+  "sc": "cierre",
+  "s": 574.7,
+  "e": 586.18,
+  "id": "c66",
+  "d": 11.48,
+  "T": 12,
+  "text": "Y ahora, la revisión de diez minutos que te prometí. Es gratis, y la puedes hacer esta noche. Una hora después de apagar todo, entras a la cocina a oscuras y prendes la linterna de golpe.",
+  "pad": 0.52
+ },
+ {
+  "sc": "cierre",
+  "s": 586.18,
+  "e": 592.8,
+  "id": "c67",
+  "d": 6.62,
+  "T": 7,
+  "text": "Miras detrás del refrigerador, debajo del fregadero, y en las esquinas del garaje. Cacas negras como arroz,",
+  "pad": 0.38
+ },
+ {
+  "sc": "cierre",
+  "s": 592.8,
+  "e": 601.1,
+  "id": "c68",
+  "d": 8.3,
+  "T": 9,
+  "text": "papel roído, un olor raro en un rincón. Y lo que ves te dice qué bicho tienes, por dónde entra, y qué arreglo te toca.",
+  "pad": 0.7
+ },
+ {
+  "sc": "cierre",
+  "s": 601.1,
+  "e": 612.6,
+  "id": "c69",
+  "d": 11.5,
+  "T": 12,
+  "text": "Te dejé las tres pruebas en una hoja gratis que se llama Antes de Fumigar, la revisión de la noche. La de la linterna, la de la harina, y una tercera que no mostré en ningún video: la de la cinta doble faz,",
+  "pad": 0.5
+ },
+ {
+  "sc": "cierre",
+  "s": 612.6,
+  "e": 621.0,
+  "id": "c70",
+  "d": 8.4,
+  "T": 9,
+  "text": "que te dice cuántos son. Al lado de cada resultado está qué arreglo te toca. La imprimes y la pegas por dentro del mueble del fregadero, así,",
+  "pad": 0.6
+ },
+ {
+  "sc": "cierre",
+  "s": 621.0,
+  "e": 631.32,
+  "id": "c71",
+  "d": 10.32,
+  "T": 11,
+  "text": "con un poco de cinta. Apunta el celular a este código, o toca el primer link de la descripción. Y si ya sabes que en tu casa hay de todo, en esa misma página está el Manual del Fumigador:",
+  "pad": 0.68
+ },
+ {
+  "sc": "cierre",
+  "s": 631.32,
+  "e": 641.76,
+  "id": "c72",
+  "d": 10.44,
+  "T": 11,
+  "text": "los sesenta y seis arreglos de la casa, con lo que pides en la ferretería y las medidas exactas. Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.",
+  "pad": 0.56
+ },
+ {
+  "sc": "cierre",
+  "s": 641.76,
+  "e": 652.96,
+  "id": "c73",
+  "d": 11.2,
+  "T": 12,
+  "text": "Ah, y una cosa más. Cuando terminamos, Lucía abrió la ventana de la cocina para que se fuera el olor de la espuma. Y en dos minutos, entraron tres moscas grandes, de esas que zumban.",
+  "pad": 0.8
+ },
+ {
+  "sc": "cierre",
+  "s": 652.96,
+  "e": 664.18,
+  "id": "c74",
+  "d": 11.22,
+  "T": 12,
+  "text": "Jorge ya buscaba el aerosol. Le dije que no, que en la cocina no. La semana que viene te muestro cómo sacarlas de la cocina sin mosquitero y sin aerosol.",
+  "pad": 0.78
+ },
+ {
+  "sc": "cierre",
+  "s": 664.18,
+  "e": 672.68,
+  "id": "c75",
+  "d": 8.5,
+  "T": 9,
+  "text": "Y ahora cuéntame tú. ¿Ya probaste la moneda? ¿En cuál de los cinco lugares te entró? Escríbemelo en los comentarios. Leo todos.",
+  "pad": 0.5
+ },
+ {
+  "sc": "cierre",
+  "s": 672.68,
+  "e": 677.53,
+  "id": "c76",
+  "d": 4.85,
+  "T": 6,
+  "text": "Si entra la moneda, entra el ratón. Nos vemos la semana que viene.",
+  "pad": 1.15
+ }
+]

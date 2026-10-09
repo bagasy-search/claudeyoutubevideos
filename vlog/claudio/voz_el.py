@@ -18,9 +18,15 @@ ap = argparse.ArgumentParser(); ap.add_argument("--only", default=""); ap.add_ar
 ap.add_argument("--block-chars", type=int, default=1500); ap.add_argument("--temperature", type=float, default=0.72); ap.add_argument("--top-p", type=float, default=0.70)
 ap.add_argument("--max-try", type=int, default=5); a = ap.parse_args()
 CPS = a.cps
-OUT = Path(R + f"vlog/{S}/voz"); OUT.mkdir(parents=True, exist_ok=True)
+OUT = Path(R + f"vlog/{S}/" + os.environ.get("VOZ_DIR", "voz")); OUT.mkdir(parents=True, exist_ok=True)
 KEY = [l.split("=", 1)[1].strip().strip('"') for l in open(R + ".env", encoding="utf-8") if l.startswith("ELEVENLABS_API_KEY_2=")][0]
-blocks = FF.split_blocks(open(R + f"guiones/{S}_voz.txt", encoding="utf-8").read(), a.block_chars)
+# bloques POR SALA (vlog/claudio/voz_blocks.py) si existen; ROOM_TAGS=1 antepone la etiqueta de ambiente v4 de la sala (A/B de sala "a")
+ROOM_TAG = {"laundry": "[in a small tiled laundry room, slight room echo]", "out": "[outdoors in a windy backyard, open air, no echo]", "store": "[speaking inside a big echoing hardware store]",
+            "living": "[in a furnished living room, soft room tone]", "kitchen": "[in a small tiled kitchen, slight room echo]", "garage": "[in a concrete garage, hollow echo]"}
+BJ = R + f"guiones/{S}_voz_blocks.json"
+if os.path.exists(BJ):
+    BL = json.load(open(BJ, encoding="utf-8")); blocks = [(ROOM_TAG[b["room"]] + " " if os.environ.get("ROOM_TAGS") == "1" else "") + b["text"] for b in BL]
+else: blocks = FF.split_blocks(open(R + f"guiones/{S}_voz.txt", encoding="utf-8").read(), a.block_chars)
 only = [int(x) for x in a.only.split(",") if x != ""]
 todo = only or list(range(len(blocks)))
 clean = lambda t: re.sub(r"\[[^\]]+\]\s*", "", t)
@@ -95,5 +101,5 @@ print(f"MEDIDO: {len(todo)} bloques · {tot_c} car · {tot_d:.1f} s · {tot_c / 
 if not only and not malos:
     lst = OUT / "concat.txt"
     lst.write_text("\n".join(f"file '{(OUT / gate[f'b{i:03d}']['file']).as_posix()}'" for i in range(len(blocks))), encoding="utf-8")
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c:a", "pcm_s16le", "-ar", "44100", "-ac", "1", R + f"public/{S}_raw.wav"], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(lst), "-c:a", "pcm_s16le", "-ar", "44100", "-ac", "1", R + f"public/{S}_raw.wav" if os.environ.get("VOZ_DIR", "voz") == "voz" else str(OUT / "concat.wav")], check=True)
     print("máster crudo → public/" + S + "_raw.wav", round(FF.wav_dur(Path(R + f"public/{S}_raw.wav")), 1), "s")

@@ -5,7 +5,7 @@
 #   SLUG=x python vlog/claudio/vl_check.py      → vlog/<slug>/M1/vl_check.json + rechazados.json (ids que NO van; el avatar los cubre)
 import json, os, re, subprocess, difflib, unicodedata, numpy as np
 S = os.environ["SLUG"]; R = os.environ.get("R") or (os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))).replace("\\", "/") + "/")
-D = R + f"vlog/{S}/M1/"; T = D + "_chk/"; os.makedirs(T, exist_ok=True)
+D = os.environ.get("VL_DIR") or R + f"vlog/{S}/M1/"; T = D + "_chk/"; os.makedirs(T, exist_ok=True)
 plan = json.load(open(D + "plan.json", encoding="utf-8")); st = json.load(open(D + "clips/state.json", encoding="utf-8"))
 OUT = D + "vl_check.json"; res = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
 def pcm(f, ss=0, t=None):
