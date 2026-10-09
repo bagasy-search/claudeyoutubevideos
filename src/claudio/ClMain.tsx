@@ -37,6 +37,7 @@ import { ClDipLevel, ClCrankFoam } from "./ClOil";
 import { ClMpgMath, ClBillSplit } from "./ClFuel";
 import { ClShifter, ClPawl } from "./ClAuto";
 import { ClVoltMeter, ClBucket } from "./ClBatt";
+import { ClTreadCoin, ClPsiDrop } from "./ClWinter";
 import { ClHeatSides, ClShadeGap, ClCrossVent, ClThermo, ClEarthTube } from "./ClCalor";
 import { ClWickWall, ClThreeDamp, ClPencilLine } from "./ClHumedad";
 import { ClWaterWalk, ClHoseTest, ClMembrane } from "./ClGotera";
@@ -89,7 +90,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 
 const COMP: Record<string, React.FC<any>> = {
   ClDoorGap, ClBarrierLine, ClPerimeter30,
-  ClFeatureTag, ClGasArrow, ClCarMap, ClOBDScan, ClFobHold, ClCoinCell, ClOdoRace, ClFluidClock, ClOilDrop, ClYesNo, ClResetSeq, ClBrainMemory, ClDipLevel, ClCrankFoam, ClMpgMath, ClBillSplit, ClShifter, ClPawl, ClVoltMeter, ClBucket,
+  ClFeatureTag, ClGasArrow, ClCarMap, ClOBDScan, ClFobHold, ClCoinCell, ClOdoRace, ClFluidClock, ClOilDrop, ClYesNo, ClResetSeq, ClBrainMemory, ClDipLevel, ClCrankFoam, ClMpgMath, ClBillSplit, ClShifter, ClPawl, ClVoltMeter, ClBucket, ClTreadCoin, ClPsiDrop,
   ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef, ClWasher3D, ClFilterFind, ClDoseCap, ClSmellTest, ClPores3D, ClSwab, ClSpores, ClFlashlight, ClWallLeak, ClHygrometer, ClTray3D, ClPasteCheck, ClCoating, ClTally, ClReceipt, ClCaulk3D, ClFilmWrap, ClTubMap, ClCaulkGun, ClFoilTest, ClHouseMap, ClWardrobeGap, ClTapeTest, ClHeatSides, ClShadeGap, ClCrossVent, ClThermo, ClEarthTube, ClWickWall, ClThreeDamp, ClPencilLine, ClWaterWalk, ClHoseTest, ClMembrane, ClCoinTest, ClPlasterTell, ClCrackTypes, ClVFill, ClDesiccant, ClClosetAir, ClSaltTest, ClHidden50, ClFridgeBack, ClPeroxide, ClTrailMap,
 };
 const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk };
