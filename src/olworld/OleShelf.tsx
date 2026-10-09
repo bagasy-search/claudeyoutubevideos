@@ -130,7 +130,7 @@ export const OleShelf: React.FC<{ title?: string; day?: number; marks?: number; 
         const empty = cur === 0 && it.to === 0 && dep > 0.95;
         return (
           <div key={i} style={{ position: "absolute", left: x, top: y + (1 - inP) * 40, opacity: inP }}>
-            <div style={{ opacity: empty ? 0.25 : 1 }}><Thing kind={it.kind} lvl={lvl} seed={i * 17 + 3} /></div>
+            <div style={{ opacity: empty ? 0.25 : 1, transform: "scale(1.42)", transformOrigin: "50% 100%" }}><Thing kind={it.kind} lvl={lvl} seed={i * 17 + 3} /></div>
             {/* etiqueta de papel colgando del tablón */}
             <div style={{ position: "absolute", left: 300, top: 236, width: 2, height: 30, background: "rgba(40,30,20,0.8)" }} />
             <div style={{ position: "absolute", left: 220, top: 262, width: 250, padding: "10px 14px 12px", ...paperBg(OLE.paperLight), borderRadius: 6, boxShadow: "6px 10px 14px rgba(0,0,0,0.45)", rotate: `${sw - 3 + (i % 2) * 5}deg`, transformOrigin: "50% 0" }}>

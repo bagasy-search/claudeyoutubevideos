@@ -12,6 +12,7 @@
 // Requisitos: los assets ya subidos (o sea, corré esto DESPUÉS de que farm.mjs haya hecho el tarball
 // al menos una vez para este slug — el workflow baja el release assets-<slug>).
 import { execSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -42,7 +43,7 @@ execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", s
 // filtrar por LA RAMA de este video: con varios agentes, sin -b agarrás la corrida de otro
 const runId = out(`gh run list --workflow=stills.yml${process.env.FARM_REF ? ` -b ${process.env.FARM_REF}` : ""} --limit 1 --json databaseId --jq ".[0].databaseId"`);
 console.log("corrida:", runId, "— esperando (~2 min) ...");
-try { sh(`gh run watch ${runId} --exit-status`); }
+try { sh(`node "${fileURLToPath(new URL("esperar_run.mjs", import.meta.url))}" ${runId}`); }
 catch { console.error("falló; revisá: gh run view " + runId); process.exit(1); }
 
 const dest = path.join("public", "_audit", slug);

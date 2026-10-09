@@ -22,6 +22,7 @@ on:
 jobs:
   prepare:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     outputs:
       matrix: ${{ steps.m.outputs.matrix }}
     steps:
@@ -144,6 +145,9 @@ jobs:
     # intenta concatenar (el concat fallará si falta alguno, pero eso ya no se lleva puesto el resto).
     if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
+    # Sin tope, un stitch trabado se come 360 min y el que espera no se entera nunca. 150 cubre el
+    # re-encode completo (STITCH_RAW=0, medido hasta 101 min); el concat crudo tarda segundos. (9-oct)
+    timeout-minutes: 150
     # contents:write es OBLIGATORIO: los permisos por defecto del repo son READ, así que sin esto el
     # release chunks-<slug> NO se puede crear. Era la causa de que la persistencia de chunks nunca
     # funcionara (0 releases chunks-* en 156) y de que TODO re-render parcial saliera truncado.

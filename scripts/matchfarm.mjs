@@ -7,6 +7,7 @@
 //
 // Uso:  node scripts/matchfarm.mjs <slug> [chunks=20]
 import { execSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import fs from "node:fs";
 
 const [slug, chunks = "20"] = process.argv.slice(2);
@@ -37,7 +38,7 @@ execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", s
 const _mfBranch = process.env.FARM_REF || `molino-${slug}`;
 const runId = out(`gh run list --workflow=match.yml -b ${_mfBranch} --limit 1 --json databaseId --jq ".[0].databaseId"`);
 console.log("corrida:", runId, "— siguiendo ...");
-try { sh(`gh run watch ${runId} --exit-status --interval 15`); } catch { console.error("fallo; revisá: gh run view " + runId); process.exit(1); }
+try { sh(`node "${fileURLToPath(new URL("esperar_run.mjs", import.meta.url))}" ${runId} --poll-min 1`); } catch { console.error("fallo; revisá: gh run view " + runId); process.exit(1); }
 sh(`gh run download ${runId} -n matched-${slug} -D public/broll`);
 console.log(`\n✅ listo → public/broll/clips_${slug}_matched.json`);
 console.log(`Revisá los _score y luego: node fetch_clips.mjs public/broll/clips_${slug}_matched.json`);
