@@ -8,11 +8,12 @@ El slug ya está fijado en `vlog/fab/actual.txt`. Estado y siguiente paso: `pyth
 
 ## Orden
 1. Escribí `guion.txt` + `meta.json` → `fab.py guion` (hasta ✓)
-2. `fab.py voz` (fondo, ~15-25 min) → `fab.py esperar voz` hasta que diga TERMINÓ
+2. `fab.py voz` (fondo, ~15-25 min) → `fab.py esperar voz` hasta que diga TERMINÓ (mientras, escribí `avatar.json`)
+2b. ENSEGUIDA `fab.py avatar` (fondo, ~25 min en RunPod): corre en paralelo con todo lo que sigue; no lo esperes ahora
 3. Escribí `planos.json` → `fab.py planos` (te dice cuántos planos necesita cada sección; completá hasta ✓)
 4. `fab.py imgs` (fondo) → `esperar imgs` · después `fab.py clips` (fondo, 30-90 min) → `esperar clips`
-   (mientras esperás, escribí `avatar.json` y `ov.json`: necesitan sólo el guion)
-5. `fab.py armar` · `fab.py avatar` (fondo, ~25 min) → `esperar avatar`
+   (mientras esperás, escribí `ov.json`: necesita sólo el guion)
+5. `fab.py armar` · `fab.py esperar avatar` (si ya terminó, vuelve enseguida)
 6. `fab.py ov` (hasta ✓) · `fab.py editor` (fondo, ~15 min) → `esperar editor`: si marca defectos, arreglá ov.json y repetí `ov` + `editor`
 7. `fab.py mix` · `fab.py render` (fondo, ~60-90 min) → `esperar render` hasta FIN. Terminado: respondé con el link del mp4 y nada más.
 `esperar` vuelve cada ~9 min: llamalo de nuevo (cada llamada es barata). No uses sleep ni mires procesos.

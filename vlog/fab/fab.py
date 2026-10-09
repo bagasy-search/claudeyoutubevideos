@@ -15,6 +15,7 @@
 #   python vlog/fab/fab.py mix                     voz + ambiente + foley, −14 LUFS, sin música
 #   python vlog/fab/fab.py render     (fondo)      commit + farm + encfin + auditor sobre el mp4 final
 #   python vlog/fab/fab.py esperar <etapa>         espera hasta ~9 min a una etapa de fondo y muestra cómo va
+# ⭐ avatar va APENAS termina la voz (RunPod tarda ~25 min): corre en paralelo con planos/imgs/clips.
 # Las etapas (fondo) se lanzan solas en segundo plano y vuelven enseguida: después `esperar <etapa>` (repetir hasta que diga FIN).
 import os, re, sys, json, time, glob, shutil, subprocess, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -24,7 +25,7 @@ LOG = D + "logs/"; HECHO = D + ".hecho/"
 os.makedirs(LOG, exist_ok=True); os.makedirs(HECHO, exist_ok=True)
 ENV = {**os.environ, "SLUG": S, "PYTHONUTF8": "1", "AGNES_KEYS_OTRA_PC": os.environ.get("AGNES_KEYS_OTRA_PC", ",")}
 FONDO = {"voz", "imgs", "clips", "avatar", "editor", "render"}
-ORDEN = ["guion", "voz", "planos", "imgs", "clips", "armar", "avatar", "ov", "editor", "mix", "render"]
+ORDEN = ["guion", "voz", "avatar", "planos", "imgs", "clips", "armar", "ov", "editor", "mix", "render"]
 CLIPF = 121
 
 def sh(cmd, check=True, quiet=False, env=None, **kw):
@@ -241,9 +242,22 @@ PERSONA = re.compile(r"\b(hand|hands|finger|fingers|thumb|arm|arms|sleeve|he|she
 def congelado(p):
     r = subprocess.run(["ffmpeg", "-v", "info", "-i", p, "-vf", "freezedetect=n=-60dB:d=2.4", "-an", "-f", "null", "-"], capture_output=True, text=True, encoding="utf8", errors="replace")
     return "freeze_start" in r.stderr
+def kenburns(i, k, src, dst):
+    """plano QUIETO: la foto con un movimiento de cámara lento (acercamiento / alejamiento / paneo), 121 cuadros a 30 fps"""
+    m = k % 4; n = CLIPF
+    z = ["1.0+0.10*on/%d" % n, "1.10-0.10*on/%d" % n, "1.08", "1.08"][m]
+    x = ["iw/2-(iw/zoom/2)", "iw/2-(iw/zoom/2)", "(iw-iw/zoom)*on/%d" % n, "(iw-iw/zoom)*(1-on/%d)" % n][m]
+    vf = f"scale=3840:2160:flags=lanczos,zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d={n}:s=1920x1080:fps=30,format=yuv420p"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", src, "-vf", vf, "-frames:v", str(n), "-r", "30", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-an", dst], check=True)
 def e_clips():
     if not os.path.exists(HECHO + "imgs"): sys.exit("⛔ primero: imgs")
     P = {p["id"]: p for p in leer_planos()}; CL = R + f"public/broll/{S}"
+    if os.path.exists(D + ".clips_quieto"):          # modo rápido (sin agnes video): fotos con movimiento de cámara
+        os.makedirs(CL, exist_ok=True)
+        from concurrent.futures import ThreadPoolExecutor
+        falt = [(k, i) for k, i in enumerate(P) if not os.path.exists(f"{CL}/{i}.mp4")]
+        with ThreadPoolExecutor(6) as ex: list(ex.map(lambda t: kenburns(t[1], t[0], R + f"public/img/{S}/{t[1]}.png", f"{CL}/{t[1]}.mp4"), falt))
+        hecho("clips", True, "quietos"); print(f"FIN clips: {len(P)} planos con movimiento de cámara (modo sin agnes) → siguiente: python vlog/fab/fab.py armar"); return
     for ronda in range(3):
         falt = [i for i in P if not os.path.exists(f"{CL}/{i}.mp4")]
         print(f"— ronda {ronda + 1}: clips hechos {len(P) - len(falt)}, por hacer {len(falt)}", flush=True)
@@ -317,11 +331,11 @@ def e_armar():
     nf, TF = frames(vl), total_frames()
     if nf != TF: sys.exit(f"⛔ vlog.mp4 tiene {nf} cuadros y tenían que ser {TF}")
     print(f"✓ vlog.mp4 {nf} cuadros ({nf / FPS:.1f} s) · {len(segs)} tramos · minuto 1: {sum(1 for s in segs if s['a'] < 60)} cortes · {len(usados)} clips, 0 repetidos")
-    hecho("armar", True); print("→ siguiente: python vlog/fab/fab.py avatar")
+    hecho("armar", True); print("→ siguiente: python vlog/fab/fab.py ov (cuando avatar haya terminado: esperar avatar)")
 
 # ════════════════════════════════════════ avatar ════════════════════════════════════════
 def ventanas():
-    A = J(D + "avatar.json"); segs = J(D + "tramos.json"); TOT = total_frames() / FPS; M = 0.12
+    A = J(D + "avatar.json"); segs = tramos(); TOT = total_frames() / FPS; M = 0.12
     win, errs = [], []
     for k, w in enumerate(A):
         a, b = at(w.get("desde", "")), at(w.get("hasta", ""), end=True)
@@ -345,7 +359,7 @@ def ventanas():
     if not (15 <= pct <= 32): errs.append(f"el avatar se ve {pct:.1f} % del video: tiene que ser 18-30 %")
     return win, pct, errs
 def e_avatar():
-    if not os.path.exists(HECHO + "armar"): sys.exit("⛔ primero: armar")
+    if not os.path.exists(HECHO + "voz"): sys.exit("⛔ primero: voz")
     win, pct, errs = ventanas()
     for e in errs: print("⛔", e)
     if errs: sys.exit(2)
@@ -367,7 +381,7 @@ def e_avatar():
     os.makedirs(R + f"src/{S}", exist_ok=True)
     sh(["python", "vlog/claudio/avatar_post.py"])
     W(R + "src/fab/data/avwin.json", J(R + f"src/{S}/avwin.json"))
-    hecho("avatar", True, f"{pct:.1f} %"); print(f"FIN avatar: {len(win)} ventanas, {pct:.1f} % → siguiente: python vlog/fab/fab.py ov")
+    hecho("avatar", True, f"{pct:.1f} %"); print(f"FIN avatar: {len(win)} ventanas, {pct:.1f} %")
 
 # ════════════════════════════════════════ ov ════════════════════════════════════════
 LUG = ["puerta", "puerta_patio", "ventana_cocina", "pileta", "heladera", "mesada", "cocina", "comedor", "sala", "ventana_sala", "bano", "inodoro", "rejilla", "dormitorio", "ventana_dormitorio", "lavadero", "garaje", "patio", "desague", "techo"]
@@ -422,7 +436,8 @@ def chk_obj(o, esq, donde, errs, imgs):
         if k in o: chk_prop(o[k], spec, f"{donde}.{k}", errs, imgs)
         elif spec[2]: errs.append(f"{donde}: falta '{k}'")
 def e_ov():
-    if not os.path.exists(HECHO + "avatar"): sys.exit("⛔ primero: avatar")
+    for e in ("avatar", "armar"):
+        if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
     OV = J(D + "ov.json"); TOT = total_frames() / FPS; AV = J(R + "src/fab/data/avwin.json")["win"]
     errs, out, imgs = [], [], set()
     from collections import Counter
