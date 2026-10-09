@@ -1,0 +1,132 @@
+{
+ "b000": {
+  "file": "b000_t1.wav",
+  "gap": 0,
+  "ratio": 0.987,
+  "dur": 55.21,
+  "esperado": 58.64,
+  "cps": 14.87,
+  "ok": true,
+  "intentos": 1
+ },
+ "b001": {
+  "file": "b001_t1.wav",
+  "gap": 0,
+  "ratio": 0.982,
+  "dur": 55.06,
+  "esperado": 59.86,
+  "cps": 15.22,
+  "ok": true,
+  "intentos": 1
+ },
+ "b002": {
+  "file": "b002_t2.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 59.85,
+  "esperado": 61.29,
+  "cps": 14.34,
+  "ok": true,
+  "intentos": 2
+ },
+ "b003": {
+  "file": "b003_t1.wav",
+  "gap": 3,
+  "ratio": 0.992,
+  "dur": 59.05,
+  "esperado": 63.57,
+  "cps": 15.07,
+  "ok": true,
+  "intentos": 1
+ },
+ "b004": {
+  "file": "b004_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 58.77,
+  "esperado": 63.64,
+  "cps": 15.16,
+  "ok": true,
+  "intentos": 1
+ },
+ "b005": {
+  "file": "b005_t1.wav",
+  "gap": 0,
+  "ratio": 0.977,
+  "dur": 61.1,
+  "esperado": 62.14,
+  "cps": 14.24,
+  "ok": true,
+  "intentos": 1
+ },
+ "b006": {
+  "file": "b006_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 61.27,
+  "esperado": 62.21,
+  "cps": 14.22,
+  "ok": true,
+  "intentos": 1
+ },
+ "b007": {
+  "file": "b007_t1.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 60.47,
+  "esperado": 62.43,
+  "cps": 14.45,
+  "ok": true,
+  "intentos": 1
+ },
+ "b008": {
+  "file": "b008_t1.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 54.93,
+  "esperado": 59.0,
+  "cps": 15.04,
+  "ok": true,
+  "intentos": 1
+ },
+ "b009": {
+  "file": "b009_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 62.75,
+  "esperado": 63.0,
+  "cps": 14.06,
+  "ok": true,
+  "intentos": 1
+ },
+ "b010": {
+  "file": "b010_t1.wav",
+  "gap": 1,
+  "ratio": 0.985,
+  "dur": 58.75,
+  "esperado": 61.21,
+  "cps": 14.59,
+  "ok": true,
+  "intentos": 1
+ },
+ "b011": {
+  "file": "b011_t1.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 53.16,
+  "esperado": 56.5,
+  "cps": 14.88,
+  "ok": true,
+  "intentos": 1
+ },
+ "b012": {
+  "file": "b012_t1.wav",
+  "gap": 3,
+  "ratio": 0.971,
+  "dur": 48.59,
+  "esperado": 52.79,
+  "cps": 15.21,
+  "ok": true,
+  "intentos": 1
+ }
+}

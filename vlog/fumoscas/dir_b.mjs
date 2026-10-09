@@ -1,0 +1,82 @@
+// DIRECTOR B — fumoscas: PRIMERO (basura diaria + bote lavado + carne al congelador + nada a la vista, párrafos 19-28) +
+// SEGUNDO (el limón con 10 clavos, párrafos 29-37). bi = agnes-image · anim = agnes-video v2.0 · c = componente.
+import { S, BI, CLP, LUCIA, JORGE, KIDS, DOG, HOUSE } from "../claudio/lib.mjs";
+const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o });
+export const H = "a 58-year-old man's weathered tanned hands, the cuff of a light khaki work shirt at the edge of the frame";
+export const HG = "a 58-year-old man's weathered tanned hands in thin blue nitrile gloves, the cuff of a light khaki work shirt at the edge of the frame";
+const KITCHEN = HOUSE;
+const FLY = "a large blue-green blowfly"; const FLIES = "three large blue-green blowflies";
+const LEMON = "a halved lemon studded with whole brown cloves"; const CLOVE = "whole brown cloves";
+const WINDOW = "a white kitchen window with iron bars and daylight coming through"; const TRASH = "a small kitchen trash bin with a plastic bag";
+const I = "img/fumoscas/";
+export const SHOTS = [
+  // ── capítulo 3 ──
+  C(19, "", "ClChapter", { n: 3, title: "Sin basura ni olor", sub: "el motivo por el que entran" }),
+  S(20, "", "bi", "b_fly_nose", { p: BI(`${FLY} on the outside of the window glass, its head turned toward the kitchen`) }),
+  S(20, "Entra por el olor", "bi", "b_fly_smell", { p: BI(`close view of ${FLY} on the window frame, its antennae up`) }),
+  S(20, "el olor que más la llama", "bi", "b_trash_smell", { p: BI(`${TRASH} with its bag open, food scraps visible inside`) }),
+  S(20, "el del bote de basura", "bi", "b_trash1", { p: BI(`${TRASH} on the tiled kitchen floor near the counter`), anim: `${FLY} circles the trash bin and lands on its rim` }),
+  S(21, "", "bi", "b_eggs", { p: BI(`extreme close view of tiny white fly eggs clustered on a rotting piece of fruit in a trash bin`) }),
+  S(21, "En la basura abierta pone cientos", "bi", "b_eggs_trash", { p: BI(`a mass of tiny white eggs on food scraps inside an open trash bin`) }),
+  S(21, "de esa basura salen más moscas", "bi", "b_hatch", { p: BI(`small flies emerging from a trash bin, crawling up the inside of the bag`), anim: `small flies crawl up the inside of the trash bag` }),
+  S(21, "las fabrica adentro de tu casa", "bi", "b_maggots", { p: BI(`close view of pale maggots on kitchen scraps inside a plastic bag`) }),
+  S(22, "", "bi", "b_summer", { p: BI(`summer daylight through a kitchen window, a full trash bin by the counter`) }),
+  S(22, "se saca todos los días", "bi", "b_takeout", { p: BI(`${H} carrying a tied trash bag out through the kitchen back door`), anim: `${H} lifts the trash bag and carries it away` }),
+  S(22, "No mañana, no cuando esté llena", "bi", "b_full", { p: BI(`an overflowing trash bin in a kitchen, a fly on the lid`) }),
+  S(22, "Todos los días, a la noche", "bi", "b_night_trash", { p: BI(`night, ${H} tying a trash bag closed in a dimly lit kitchen`), anim: `${H} ties the top of the trash bag` }),
+  S(22, "se pudre rápido", "bi", "b_rot", { p: BI(`close view of kitchen scraps turning dark and soft inside a trash bag`) }),
+  S(23, "", "bi", "b_wash_bin", { p: BI(`${HG} scrubbing the inside of a plastic trash bin over a sink, foam and water`), anim: `${HG} scrub the inside of the trash bin` }),
+  S(23, "Con agua caliente", "bi", "b_hot_water", { p: BI(`steam rising from a sink full of hot water, a trash bin tipped into it`) }),
+  S(23, "un chorro de agua oxigenada", "bi", "b_peroxide", { p: BI(`close view of ${H} pouring a splash of clear liquid from a brown plastic bottle into the bottom of a trash bin`) }),
+  S(23, "el olor a podrido que queda en el fondo", "bi", "b_bin_bottom", { p: BI(`the stained bottom of a plastic trash bin, a brown ring of old grime`) }),
+  S(23, "las llama desde la calle", "bi", "b_outside", { p: BI(`${FLIES} outside a kitchen window at night, drawn toward the light`) }),
+  S(24, "", "bi", "b_new_bag", { p: BI(`${H} placing a fresh plastic bag inside a clean trash bin`), anim: `${H} opens a fresh bag into the bin` }),
+  S(24, "restos de carne o de pescado", "bi", "b_meat_scrap", { p: BI(`fish bones and meat trimmings on a plate in the kitchen`) }),
+  S(24, "adentro de una bolsa chica, bien atada", "bi", "b_small_bag", { p: BI(`close view of ${H} tying a small plastic bag with meat scraps into a tight knot`) }),
+  S(24, "La carne podrida es el imán más fuerte", "bi", "b_meat_flies", { p: BI(`${FLIES} clustered on a piece of raw meat left on a counter`) }),
+  S(25, "", "bi", "b_freezer", { p: BI(`${H} placing a tied plastic bag of scraps into an open freezer drawer`), anim: `${H} puts the bag into the freezer` }),
+  S(25, "en el congelador", "bi", "b_freezer2", { p: BI(`a tied plastic bag of kitchen scraps sitting in a freezer compartment, frost on the walls`) }),
+  S(25, "el día que se saca la basura", "bi", "b_take_out2", { p: BI(`night, a hand taking a trash bag out to the street bin`) }),
+  S(25, "Así no huelen nunca", "bi", "b_closed", { p: BI(`a closed freezer drawer, the kitchen quiet and clean`) }),
+  S(26, "", "bi", "b_night_counter", { p: BI(`${KITCHEN} at night with the lights off, the counter empty and clean`) }),
+  S(26, "nada de comida a la vista", "bi", "b_counter_empty", { p: BI(`a clean empty kitchen counter at night, only the window and the sink`) }),
+  S(26, "el plato de fruta", "bi", "b_fruit_bowl", { p: BI(`a bowl of ripe fruit on the counter, a small fruit fly hovering over it`) }),
+  S(26, "el plato del perro con croquetas", "bi", "b_dog_bowl", { p: BI(`${DOG}'s steel bowl with leftover kibble on the tiled floor`) }),
+  S(26, "adentro del refrigerador, con tapa", "bi", "b_fridge_close", { p: BI(`${H} closing the door of an older white refrigerator, a covered plate inside visible`), anim: `${H} pushes the refrigerator door shut` }),
+  S(27, "", "bi", "b_fruit_fridge", { p: BI(`fruit placed on a shelf inside a refrigerator, a mesh bag of oranges`) }),
+  S(27, "tapada con un paño", "bi", "b_cloth", { p: BI(`${H} draping a cloth over a bowl of fruit on the counter`), anim: `${H} covers the fruit bowl with a cloth` }),
+  S(27, "Nunca al aire, de noche, en verano", "bi", "b_fruit_flies", { p: BI(`a bowl of ripe fruit at night with small flies circling it`) }),
+  S(28, "", "bi", "b_bruno_eat", { p: BI(`${DOG} eating kibble from his steel bowl on the kitchen floor`) }),
+  S(28, "se levanta después de comer", "bi", "b_pick_bowl", { p: BI(`${H} picking up ${DOG}'s steel bowl from the floor`), anim: `${H} lifts the dog bowl off the floor` }),
+  S(28, "Las croquetas que quedan, a la bolsa", "bi", "b_kibble_bag", { p: BI(`close view of ${H} shaking leftover kibble into a plastic bag`) }),
+  S(28, "la comida del perro de la tuya", "bi", "b_fly_dog2", { p: BI(`${FLY} on the rim of a dog bowl next to a plate of food`) }),
+  // ── capítulo 4 ──
+  C(29, "", "ClChapter", { n: 4, title: "El limón con diez clavos", sub: "el olor que no soportan" }),
+  S(30, "", "bi", "b_lemon3", { p: BI(`${LEMON} on a small plate on a kitchen counter, the cloves facing up`) }),
+  S(30, "el truco del que te hablé", "cl", "c_truco", { p: CLP(`he holds up ${LEMON} toward the camera with a knowing smile`) }),
+  S(30, "limón con clavos de olor", "bi", "b_lemon_close", { p: BI(`extreme close view of ${LEMON}, the cloves studded into the pale flesh`) }),
+  S(30, "cocina de un restaurante chico", "bi", "b_rest_lemon", { p: BI(`a small restaurant kitchen counter with a ${LEMON} near the window`) }),
+  S(31, "", "bi", "b_cut_lemon", { p: BI(`${H} cutting a lemon in half on a wooden cutting board`), anim: `${H} cuts the lemon in half with a knife` }),
+  S(31, "En cada mitad clavas diez clavos", "bi", "b_clove_push", { p: BI(`close view of ${H} pushing a whole clove into the cut side of a lemon half`), anim: `${H} pushes cloves into the lemon half one by one` }),
+  S(31, "con la cabecita para afuera", "bi", "b_clove_head", { p: BI(`extreme close view of a clove head sticking out of a lemon half`) }),
+  S(31, "Diez. Ni ocho, ni doce.", "bi", "b_ten", { p: BI(`${LEMON} with exactly ten cloves visible, seen from above`), ov: { c: "ClChip", props: { text: "10 CLAVOS" } } }),
+  S(32, "", "bi", "b_finger_clove", { p: BI(`close view of a thumb pressing a clove into a lemon half`), anim: `a thumb presses a clove into the lemon` }),
+  S(32, "La cabecita queda para afuera", "bi", "b_head_out", { p: BI(`extreme close view of clove heads sticking out of lemon flesh`) }),
+  S(32, "el jugo del limón", "bi", "b_lemon_juice", { p: BI(`a drop of lemon juice beading on the cut surface of a lemon half`) }),
+  S(32, "el olor salga despacio", "bi", "b_lemon_aroma", { p: BI(`a ${LEMON} on a windowsill, a faint wisp of air above it`) }),
+  S(33, "", "bi", "b_lemon_window", { p: BI(`${LEMON} placed on the sill of ${WINDOW}`), anim: `${LEMON} sits on the windowsill as the curtain moves slightly` }),
+  S(33, "cada ventana que abres", "bi", "b_windows", { p: BI(`two kitchen windows side by side, each sill with a ${LEMON}`) }),
+  S(33, "la del comedor, también", "bi", "b_dining", { p: BI(`${LEMON} on the sill of a dining-room window, a table in the background`) }),
+  S(34, "", "bi", "b_fly_avoid", { p: BI(`${FLY} hovering near a window, then turning away from the ${LEMON} on the sill`) }),
+  S(34, "La mosca odia el clavo de olor", "bi", "b_fly_away", { p: BI(`${FLY} flying away from a ${LEMON} on a windowsill`) }),
+  S(34, "nos recuerda a Navidad", "bi", "b_xmas", { p: BI(`a small bowl of ${CLOVE} beside a cinnamon stick and an orange on a wooden table`) }),
+  S(34, "durante días", "bi", "b_days", { p: BI(`${LEMON} on the windowsill with the kitchen calm and empty`) }),
+  S(35, "", "bi", "b_old_lemon", { p: BI(`a dried, shrunken, brown lemon half with dark cloves, on a windowsill`) }),
+  S(35, "cada tres o cuatro días", "bi", "b_calendar", { p: BI(`a paper wall calendar in a kitchen with a date circled in red pen`) }),
+  S(35, "se pone marrón y duro", "bi", "b_dry_lemon", { p: BI(`close view of a dried brown lemon half, the flesh shriveled`) }),
+  S(35, "Lo cambias por otro", "bi", "b_swap", { p: BI(`${H} replacing a dry brown lemon with a fresh ${LEMON} on the windowsill`), anim: `${H} swaps the old lemon for a fresh one` }),
+  S(36, "", "c", "ClBookPage", { props: { page: I + "page16.jpg", pageNo: 16, stamp: "Las medidas, en la página" } }),
+  S(37, "", "bi", "b_moth", { p: BI(`a small cloth sachet of ${CLOVE} hanging on a hook inside a wardrobe among clothes`) }),
+  S(37, "contra la polilla", "bi", "b_clothes", { p: BI(`a sachet of cloves tucked between folded shirts in a wardrobe`) }),
+  S(37, "El mismo frasco te sirve para dos cosas", "bi", "b_two_uses", { p: BI(`a jar of ${CLOVE} beside a ${LEMON}, on a kitchen counter`) }),
+];
