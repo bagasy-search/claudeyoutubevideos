@@ -1,22 +1,28 @@
-# HANDOFF — furatas (Claudio el Fumigador #3 · serie "La casa de los Ramírez" ep. 3: los ratones del garaje)
-Estado: ✅ ENTREGADO 8-oct (job 790, tarjeta plan-own-1791387464226-2 → "Video listo · subir", sin YouTube).
-mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/furatas/furatas.mp4?v=1 (16:49, 30.278 cuadros). Auditor: min1 31 cortes / 0 silencios, negro 0, congelados 0.
-Rama `furatas-render`, sale de `fu30-render`.
+# HANDOFF — fufruta (Claudio el Fumigador #4 · serie "La casa de los Ramírez" ep. 4: las mosquitas del frutero)
+Estado: ✅ ENTREGADO 8-oct (job 801, tarjeta → "Video listo · subir", sin YouTube).
+mp4: https://github.com/bagasy-search/claudeyoutubevideos/releases/download/fufruta/fufruta.mp4?v=1 (15:47, 28.402 cuadros). Auditor: min1 30 cortes / 0 silencios, negro 0, congelados 0 (tras +2 cortes con ONLY_CHUNKS=0-4; la 1ª versión midió 29). Real 28,1 % · 16/41 vl agnes. Rama `fufruta-render`, sale de `furatas-render`. Lote 4-6 hecho EN PARALELO el 8-oct.
 
-## Qué cambia respecto de fu30
-- Guion `guiones/furatas_filmado.txt` 14.697 car · Arreglo 3 = pág. 11 (`public/img/furatas/page11.jpg`). Polaroid del ep. 2 (th_fu30) · gancho al ep. 4: mosquitas del frutero (th_fufruta).
-- Seguridad: menta ARRIBA (le hace mal al perro/gato), trampas dentro de caja con agujeritos de moneda (Mateo/Bruno), ácido bórico del ep. 1 en su tapita, limpiar sin barrer en seco (guantes + mascarilla + agua oxigenada).
-- Kit nuevo `src/claudio/ClRaton.tsx`: ClPoisonWall (wall/dog) · ClFlourMap (tracks/clean/mint) · ClCoinHole (coin/plug) · ClTrapSet (wall/box). Registrados igual que ClPuerta.
-- `vlog/furatas/dir_e.mjs` + timeline.mjs lee dir_e: planos de stock extra para llegar a ≥25 % de metraje real.
+## Qué cambia respecto de furatas (pedido único del creador para el lote 4-6)
+- VOZ = ElevenLabs **v4 Turbo** (no Fish): `vlog/claudio/voz_el.py` (ELEVENLABS_API_KEY_2, voz clonada "claudio" HerPIKiYd1lu2EdlfZyx,
+  bloques de 1500 car, misma compuerta Modal). Etiquetas v4 en inglés en `vlog/fufruta/tags.json` (~50, tono/emoción/susurro/risa).
+  15 car/s. Turbo = la mitad de créditos que v4 (medido). ⛔ Modal se come los títulos "Paso N: …" → hueco falso (confirmar con whisper-1).
+- MUCHOS clips HABLADOS agnes 2.5-flash (`vl`): `mkplan.mjs` adaptado a la cocina de los Ramírez (k0 = public/ref_fufruta.png, cara
+  public/ref_fufruta_face256.png recortada de la ref). Anclas por Batch (agnes_vlog anclas) → `clips` → `vl_check.py` (labios por envolvente
+  + ASR Modal, sin OpenAI) → `vl_post.py` (→ public/vid/fufruta, 1080p 30 mudo). Los que no llegaron: avatar RunPod (`_v3/fufruta_aceptados.json`).
+  Entraron 16/41 clips hablados (agnes saturado: ~5-40 clips/h).
+- Kit nuevo `src/claudio/ClFruta.tsx: ClGlassTrap (cone/soap) · ClDrainFactory (cups/larvae/clean) · ClFlyCycle` (registrado con D:/rtmp/fumi/register.py: ClMain, BEDABLE, CMAX, sound.mjs, banco index_fukit).
+- Arreglo 4 de fixes.json = pág. 12 del Manual. Polaroid del ep. anterior (th_furatas) · gancho al siguiente (th_fuhormiga).
+- CTA final: la hoja "Antes de Fumigar" con la 3ª prueba (cinta doble faz) que no salió en ningún video + Manual 66 arreglos, US$27, 7 días.
 
 ## Números
-- Voz 18 bloques (1 reintento) 1011 s → 1008 s. Modal marcó 3 huecos FALSOS; los tiempos de esas palabras se corrigieron con whisper-1 (palabras) en _v3/furatas_wordms.json.
-- Menciones: ~3:27 (frase del mostrador, pág. 11) · ~8:11 (ClBookPage pág. 11) · ~15:40 (QR /r + US$27).
-- Avatar 69 ventanas 324 s, US$0,25 · real 29,4 % · agnes 5/9 (k_bait, k_pour, k_sniff, k_woolpush → fotos).
+- Voz 15:46 (11 bloques, 0 reintentos) · minuto 1 ≥32 cortes · metraje real ≥25 % (stock + camas; varias rondas, mucho rechazado a ojo).
+- Avatar 1 /run US$0,25, lag -0,20..0.
 
 ## Gotchas
-- ⛔ RunPod quedó en saldo NEGATIVO (402 Insufficient Balance) → el creador cargó. Chequear `clientBalance` por GraphQL antes del /run.
-- ⛔ Real 17,8 % al principio: el stock de objetos falla mucho (mouse→pika/hámster/rata blanca, steel wool→lana). Subió con 4 rondas: queries simples + renombrar el plano (stock.mjs salta lo que está en `_rech`).
-- ⛔ Planos extra que caen JUSTO antes de una ventana de avatar la corren (mínimo de duración) → comparar con _v3/<slug>_avwin.json antes del farm.
-- ⛔ Componente casi estático 6 s = congelado del auditor: ClTrapSet "wall" lleva acercamiento continuo.
-- ⛔ Imágenes nuevas tras el farm → render COMPLETO (ONLY_CHUNKS no re-sube assets).
+- ⛔ farm.mjs SIN `FARM_REF=<slug>-render` corre el código de main → "Could not find composition". Y el farm partió en 60 chunks aunque se pidan 150: encfin con el número REAL (`gh release view chunks-<slug>`).
+- ⛔ agnes "You have used up today's video generation quota… 1 request every 3 minutes" se trataba como REJECT y se ABANDONABA el clip →
+  parche "quota" en factory/lib/agnes_pool.mjs (185 s de descanso a esa clave) + `AGNES_IP_REST_MS` configurable. Falta subirlo a main.
+- ⛔ OpenAI llegó al límite duro de facturación a mitad del lote: imágenes extra sin hacer → se sacaron esos planos de dir_e.
+- ⛔ stock.mjs sólo busca los planos que existen AL LANZARLO: correrlo de nuevo después de agregar dir_e/beds.
+- sfx_gate --prev furatas marca efectos repetidos (sound.mjs es el mismo en toda la serie); minuto 1 y ambiente OK.
+- AGNES_KEYS_OTRA_PC="," para usar las 46 claves.
