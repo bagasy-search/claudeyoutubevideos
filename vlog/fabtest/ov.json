@@ -1,0 +1,176 @@
+[
+{
+"c": "ClVideoRef",
+"frase": "La vimos la semana pasada",
+"dur": 2,
+"props": {
+"thumb": "img/fabtest/th_furatones5.jpg",
+"title": "Los 5 huecos por donde entra el ratón",
+"tag": "VIDEO ANTERIOR"
+}
+},
+{
+"c": "FabRuta",
+"frase": "Cuando el bote de basura está abierto",
+"dur": 8,
+"props": {
+"bicho": "mosca",
+"desde": {
+"img": "ba7",
+"txt": "la basura abierta"
+},
+"hasta": {
+"img": "s001",
+"txt": "tu comida"
+},
+"corte": "bote con tapa"
+}
+},
+{
+"c": "FabCiclo",
+"frase": "Una mosca pone cientos de huevos",
+"dur": 8,
+"props": {
+"title": "Por qué vuelven",
+"etapas": [
+{
+"img": "ba7",
+"txt": "basura abierta"
+},
+{
+"img": "s006",
+"txt": "llega la mosca"
+},
+{
+"img": "gr13",
+"txt": "pone huevos"
+},
+{
+"img": "ci6",
+"txt": "nacen más"
+}
+],
+"centro": "una semana"
+}
+},
+{
+"c": "FabPasos",
+"frase": "Cortas un limón por la mitad",
+"dur": 9,
+"props": {
+"title": "El limón, paso a paso",
+"pasos": [
+{
+"img": "li4",
+"txt": "medio limón"
+},
+{
+"img": "li1",
+"txt": "10 clavos de olor"
+},
+{
+"img": "li2",
+"txt": "en cada ventana"
+}
+]
+}
+},
+{
+"c": "FabSiNo",
+"frase": "Una maceta de albahaca en el borde",
+"dur": 7,
+"props": {
+"title": "La albahaca",
+"no": {
+"img": "al1",
+"txt": "hojas sueltas"
+},
+"si": {
+"img": "al3",
+"txt": "planta con raíz"
+}
+}
+},
+{
+"c": "FabAltura",
+"frase": "Uno: lejos de la comida",
+"dur": 10,
+"props": {
+"title": "Dónde va la cinta",
+"max": 250,
+"marcas": [
+{
+"cm": 60,
+"txt": "Bruno llega hasta aquí",
+"alerta": true
+},
+{
+"cm": 210,
+"txt": "la cinta, arriba de todo"
+}
+]
+}
+},
+{
+"c": "FabMapa",
+"frase": "En la casa de los Ramírez no apareció ninguna",
+"dur": 10,
+"props": {
+"title": "La cocina",
+"note": "los 4 arreglos puestos",
+"pins": [
+{
+"lugar": "mesada",
+"txt": "basura"
+},
+{
+"lugar": "ventana_cocina",
+"txt": "limón"
+},
+{
+"lugar": "pileta",
+"txt": "albahaca"
+},
+{
+"lugar": "techo",
+"txt": "cinta"
+}
+],
+"hechos": 4
+}
+},
+{
+"c": "FabCalendario",
+"frase": "La medida que usábamos siempre",
+"dur": 8,
+"props": {
+"title": "El limón",
+"cada": 4,
+"txt": "limón nuevo"
+}
+},
+{
+"c": "ClCheck",
+"frase": "Te dejé las tres pruebas en una hoja gratis",
+"dur": 9,
+"props": {
+"title": "ANTES DE FUMIGAR",
+"items": [
+"La del bote de basura, por dentro",
+"La de la luz, una hora después",
+"La cinta doble faz"
+]
+}
+},
+{
+"c": "ClVideoRef",
+"frase": "La semana que viene te muestro cómo",
+"dur": 3.5,
+"props": {
+"thumb": "img/fabtest/th_fumosquito.jpg",
+"title": "Mosquitos en casa, sin espiral ni aerosol",
+"tag": "PRÓXIMO VIDEO",
+"next": true
+}
+}
+]

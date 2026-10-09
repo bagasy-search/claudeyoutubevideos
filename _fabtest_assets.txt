@@ -1,0 +1,13 @@
+vid/fabtest
+img/fabtest/al1.png
+img/fabtest/al3.png
+img/fabtest/ba7.png
+img/fabtest/ci6.png
+img/fabtest/gr13.png
+img/fabtest/li1.png
+img/fabtest/li2.png
+img/fabtest/li4.png
+img/fabtest/s001.png
+img/fabtest/s006.png
+img/fabtest/th_fumosquito.jpg
+img/fabtest/th_furatones5.jpg

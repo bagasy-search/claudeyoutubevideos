@@ -1,0 +1,268 @@
+[
+ {
+  "name": "ov01a",
+  "c": "FabRuta",
+  "props": {
+   "bicho": "mosca",
+   "desde": {
+    "img": "ba7",
+    "txt": "la basura abierta"
+   },
+   "hasta": {
+    "img": "s001",
+    "txt": "tu comida"
+   },
+   "corte": "bote con tapa"
+  }
+ },
+ {
+  "name": "ov01b",
+  "c": "FabRuta",
+  "props": {
+   "bicho": "mosca",
+   "desde": {
+    "img": "ba7",
+    "txt": "la basura abierta"
+   },
+   "hasta": {
+    "img": "s001",
+    "txt": "tu comida"
+   },
+   "corte": "bote con tapa"
+  }
+ },
+ {
+  "name": "ov02a",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Por qué vuelven",
+   "etapas": [
+    {
+     "img": "ba7",
+     "txt": "basura abierta"
+    },
+    {
+     "img": "s006",
+     "txt": "llega la mosca"
+    },
+    {
+     "img": "gr13",
+     "txt": "pone huevos"
+    },
+    {
+     "img": "ci6",
+     "txt": "nacen más"
+    }
+   ],
+   "centro": "una semana"
+  }
+ },
+ {
+  "name": "ov02b",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Por qué vuelven",
+   "etapas": [
+    {
+     "img": "ba7",
+     "txt": "basura abierta"
+    },
+    {
+     "img": "s006",
+     "txt": "llega la mosca"
+    },
+    {
+     "img": "gr13",
+     "txt": "pone huevos"
+    },
+    {
+     "img": "ci6",
+     "txt": "nacen más"
+    }
+   ],
+   "centro": "una semana"
+  }
+ },
+ {
+  "name": "ov03a",
+  "c": "FabPasos",
+  "props": {
+   "title": "El limón, paso a paso",
+   "pasos": [
+    {
+     "img": "li4",
+     "txt": "medio limón"
+    },
+    {
+     "img": "li1",
+     "txt": "10 clavos de olor"
+    },
+    {
+     "img": "li2",
+     "txt": "en cada ventana"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov03b",
+  "c": "FabPasos",
+  "props": {
+   "title": "El limón, paso a paso",
+   "pasos": [
+    {
+     "img": "li4",
+     "txt": "medio limón"
+    },
+    {
+     "img": "li1",
+     "txt": "10 clavos de olor"
+    },
+    {
+     "img": "li2",
+     "txt": "en cada ventana"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov04a",
+  "c": "FabCalendario",
+  "props": {
+   "title": "El limón",
+   "cada": 4,
+   "txt": "limón nuevo"
+  }
+ },
+ {
+  "name": "ov04b",
+  "c": "FabCalendario",
+  "props": {
+   "title": "El limón",
+   "cada": 4,
+   "txt": "limón nuevo"
+  }
+ },
+ {
+  "name": "ov05a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "La albahaca",
+   "no": {
+    "img": "al1",
+    "txt": "hojas sueltas"
+   },
+   "si": {
+    "img": "al3",
+    "txt": "planta con raíz"
+   }
+  }
+ },
+ {
+  "name": "ov05b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "La albahaca",
+   "no": {
+    "img": "al1",
+    "txt": "hojas sueltas"
+   },
+   "si": {
+    "img": "al3",
+    "txt": "planta con raíz"
+   }
+  }
+ },
+ {
+  "name": "ov06a",
+  "c": "FabAltura",
+  "props": {
+   "title": "Dónde va la cinta",
+   "max": 250,
+   "marcas": [
+    {
+     "cm": 60,
+     "txt": "Bruno llega hasta aquí",
+     "alerta": true
+    },
+    {
+     "cm": 210,
+     "txt": "la cinta, arriba de todo"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov06b",
+  "c": "FabAltura",
+  "props": {
+   "title": "Dónde va la cinta",
+   "max": 250,
+   "marcas": [
+    {
+     "cm": 60,
+     "txt": "Bruno llega hasta aquí",
+     "alerta": true
+    },
+    {
+     "cm": 210,
+     "txt": "la cinta, arriba de todo"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov07a",
+  "c": "FabMapa",
+  "props": {
+   "title": "La cocina",
+   "note": "los 4 arreglos puestos",
+   "pins": [
+    {
+     "lugar": "mesada",
+     "txt": "basura"
+    },
+    {
+     "lugar": "ventana_cocina",
+     "txt": "limón"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "albahaca"
+    },
+    {
+     "lugar": "techo",
+     "txt": "cinta"
+    }
+   ],
+   "hechos": 4
+  }
+ },
+ {
+  "name": "ov07b",
+  "c": "FabMapa",
+  "props": {
+   "title": "La cocina",
+   "note": "los 4 arreglos puestos",
+   "pins": [
+    {
+     "lugar": "mesada",
+     "txt": "basura"
+    },
+    {
+     "lugar": "ventana_cocina",
+     "txt": "limón"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "albahaca"
+    },
+    {
+     "lugar": "techo",
+     "txt": "cinta"
+    }
+   ],
+   "hechos": 4
+  }
+ }
+]

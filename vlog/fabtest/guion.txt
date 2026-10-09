@@ -1,0 +1,99 @@
+[HOOK] En las cocinas de restaurante las moscas no se sacan con aerosol. Y tampoco con mosquitero.
+[HOOK] Y no es sólo por la comida. Es porque ninguna de las dos cosas resuelve el problema.
+[HOOK] Ésta es la casa de los Ramírez. La vimos la semana pasada: tapamos los cinco huecos por donde entraba el ratón.
+[HOOK] Cuando terminamos, Lucía abrió la ventana de la cocina para que se fuera el olor de la espuma.
+[HOOK] En dos minutos entraron tres moscas grandes, de las que zumban. Y la cocina estaba limpia.
+[HOOK] Y ahí está el punto. Las moscas de la cocina no vienen de la calle. Vienen de lo que hay adentro.
+[HOOK] Son tres cosas, y casi todas las cocinas las tienen. La tercera me la enseñó el dueño de un restaurante cuando yo tenía veinte años.
+[HOOK] Hoy te muestro las tres, con cosas que compras en cualquier almacén de barrio: un limón, un frasco de clavo de olor, una planta de albahaca y una cinta pegajosa.
+[HOOK] Sin aerosol, sin mosquitero, y sin nada colgado donde Bruno pueda llegar.
+[HOOK] Soy Claudio. Treinta años de fumigador, en casas, restaurantes y hoteles.
+[HOOK] Y al final te doy la revisión de diez minutos de la noche, con una linterna, para que sepas hoy mismo si tu cocina ya tiene un problema.
+[AF] Te explico por qué entra una mosca a una cocina limpia. No la atrae la suciedad: la atrae el olor. Y el olor que más la llama es el de la basura.
+[AF] Cuando el bote de basura está abierto, o tiene restos de carne o de fruta, la mosca lo huele desde la calle. Entra, pone los huevos alrededor, y en pocos días hay una nube.
+[AF] Una mosca pone cientos de huevos. Y los pone donde va a encontrar comida: en el bote, en el plato del perro, en el desagüe del patio.
+[AF] Por eso, si sólo matas la que ves, en tres días tienes a las hijas. El aerosol mata a la que está volando, y no toca los huevos.
+[AF] Jorge ya estaba buscando el aerosol cuando entraron las tres. Le dije que no. En una cocina con comida a la vista, el aerosol también cae sobre la comida.
+[AF] Eso es lo que hacen en los restaurantes: no matan la que vuela. Le sacan lo que la llama, y le ponen delante algo que no soporta.
+[AF] Vamos a hacerlo igual. Primero le sacamos todo lo que le gusta. Después le ponemos los olores. Y al final, la trampa para las que entren igual.
+[MO] Y antes de seguir, una palabra sobre el mosquitero, porque me lo preguntan siempre.
+[MO] El mosquitero tapa la ventana. Y la mosca de la cocina no entra por la ventana: entra por la puerta.
+[MO] Entra cuando llevas la bolsa al patio, cuando vuelves del patio, cuando alguien deja la puerta abierta un minuto. Y ahí el mosquitero no hace nada.
+[MO] Y hay algo peor. El mosquitero no toca los huevos que ya están adentro: en el bote, en el plato del perro, en el desagüe. Con mosquitero, la mosca te sigue naciendo en la cocina.
+[MO] En treinta años no vi un mosquitero en la cocina de un restaurante. Vi la basura tapada, la puerta cerrada, y el desagüe limpio.
+[ALM] Antes de empezar, vamos al almacén de la esquina. Son cuatro cosas, y no gastas mucho.
+[ALM] Buenas tardes. Necesito un frasco de clavo de olor entero, una planta chica de albahaca y una trampa de cinta pegajosa para moscas.
+[ALM] Y dos limones. Los limones van a ser la mitad del trabajo.
+[ALM] En el Manual te dejé esta frase escrita, para que la lleves en el celular al almacén y no te vendan otra cosa.
+[ALM] Fíjate en el clavo de olor: que sea entero, no molido. Molido se le va el olor en una semana. Entero dura meses.
+[ALM] Y la albahaca tiene que ser planta, con raíz, no hojas cortadas. La planta sigue largando olor mientras esté viva.
+[ALM] La cinta pegajosa: la de mosca común, la que viene en tubo. No la de ratón, que es otra y no sirve para esto.
+[BA] Primer arreglo. El bote de basura. Aquí está el ochenta por ciento del problema.
+[BA] Lo primero: que tenga tapa, y que la tapa cierre. Un bote abierto es una invitación.
+[BA] En verano, la basura sale todos los días. Aunque el bote no esté lleno. La bolsa que queda de un día para el otro es la que trae la próxima generación.
+[BA] Una vez por semana, lavas el bote por dentro con agua oxigenada. Agua oxigenada de farmacia, la de la botellita marrón.
+[BA] Eso no mata moscas. Eso saca el olor que quedó pegado al plástico. Porque el plástico guarda el olor aunque lo laves con detergente.
+[BA] Uno lava el bote con agua y jabón, lo seca, y le pasa un trapo con agua oxigenada. Y lo deja destapado hasta que se seque.
+[BA] Y lo que va adentro: restos de carne y cáscaras de fruta, todo en bolsa cerrada antes de tirarlo. La bolsa abierta en el bote es lo que más las llama.
+[BA] Y el plato de Bruno. Si le dejas comida todo el día, ese plato es un comedero de moscas. Se levanta apenas come, y se lava.
+[BA] Nada dulce a la vista: ni el azúcar abierto, ni la mermelada sin tapa, ni la fruta del frutero pasada.
+[BA] Y la semana en que aparecen, la bolsa va directo al bote de la calle. No se queda en el patio.
+[BA] Y cada bolsa va cerrada con un nudo, no doblada. La bolsa doblada se abre sola adentro del bote.
+[BA] En la semana que aparecen, el bote se lava dos veces, no una. Es un minuto más.
+[LI] Segundo arreglo. El limón con clavo de olor. Éste es el olor que no soportan.
+[LI] Cortas un limón por la mitad. Y le clavas diez clavos de olor, repartidos, con la cabeza afuera.
+[LI] Diez. Ni cinco ni veinte. Diez clavos en medio limón es la medida que usábamos en las cocinas de hotel.
+[LI] Ese medio limón va en el borde de la ventana que abres. En cada ventana que abras en la cocina.
+[LI] Si tienes dos ventanas, dos medios limones. Uno en cada una.
+[LI] Y lo cambias cada tres o cuatro días. Cuando el limón se empieza a secar, deja de soltar olor y ya no sirve.
+[LI] La medida que usábamos siempre: diez clavos, y se cambia cada tres o cuatro días. Con eso no te equivocas.
+[LI] Ojo con una cosa: la ventana tiene que seguir abriendo bien. Si el limón estorba y dejas de ventilar, hiciste lo contrario.
+[AL] Tercer arreglo, y el más lindo. La albahaca.
+[AL] Una maceta de albahaca en el borde de la ventana por donde más entran. No en el centro de la cocina: en la ventana.
+[AL] La albahaca larga un olor que a nosotros nos gusta y a la mosca no. Y la planta no se muere por eso: sigue largando olor todos los días.
+[AL] Si no tienes albahaca, sirve la menta. Cualquiera de las dos, en maceta y con tierra.
+[AL] Necesita luz. Y si es la ventana más usada, tiene luz. La riegas normal, como cualquier planta.
+[AL] Y sirve también para la cocina: cada vez que cocinas, arrancas dos hojas. Mientras la planta esté viva, trabaja.
+[CI] Cuarto arreglo, y es la trampa. Para las que entran igual, porque siempre entra alguna.
+[CI] La cinta pegajosa viene en un tubo. La desenrollas, la cuelgas, y listo.
+[CI] Tres reglas para colgarla. Uno: lejos de la comida. Nunca arriba del fregadero, ni de la mesa, ni del pan.
+[CI] Dos: cerca de la ventana con luz. La mosca va hacia la luz, y ahí la esperas.
+[CI] Tres: colgada bien alta. Por Bruno, y por los chicos. Si tienes un bebé o un perro chico, la cinta va arriba de todo, donde nadie la alcance.
+[CI] Si te queda a la mano, la vas a rozar y se te pega a ti. Yo la colgaba del marco de arriba, del lado de adentro.
+[CI] Y una sola cinta. No llenes la cocina de cintas: una, en el lugar correcto, alcanza.
+[CI] Cuando se llena, la bajas, la envuelves en una bolsa, y la tiras. Y pones otra.
+[ME] Nos sentamos un momento. Lucía nos hizo café, y me siento en la mesa de la cocina.
+[ME] Las medidas exactas están en la página dieciséis del Manual del Fumigador: cuántos clavos por limón, cada cuántos días cambiarlo, y dónde va la cinta.
+[ME] Mientras tomamos el café, Mateo me pregunta por qué no ponemos veneno y listo. Y Sofía me pregunta si la mosca pica.
+[ME] Mateo quería veneno. Le expliqué que el veneno de la mosca es el mismo problema que el aerosol, con otro nombre.
+[ME] No pica. La mosca de la casa no pica: pisa. Y ahí está el problema. Todo lo que tocó antes, lo trae aquí.
+[ME] Por eso limpiamos la mesa antes de comer, y por eso no dejamos la comida a la vista. No es por asco: es porque la mosca camina sobre lo que encuentra.
+[ME] Y por eso, en esta casa, la cinta va alta. Bruno no alcanza, y los chicos tampoco.
+[GR] Ahora, una cosa aparte, y es la que casi nadie sabe.
+[GR] Si las moscas que ves son grandes, negras, y zumban fuerte, no son moscas de cocina. Son moscas que nacieron cerca.
+[GR] Cuando una mosca grande aparece en cantidad, hay algo muerto o podrido a menos de diez metros de tu casa.
+[GR] Un ratón en la pared. Una bolsa de basura olvidada en el patio. El desagüe del patio, que nunca se limpió.
+[GR] Y a ésas no las sacas con limón ni con cinta. Primero hay que encontrar de dónde salen.
+[GR] Le das la vuelta a la casa con una linterna, de noche, oliendo. El olor te lleva.
+[GR] En la casa de los Ramírez, el problema estaba afuera. El desagüe del patio, con hojas y agua estancada.
+[GR] Lo limpiamos, le pusimos agua limpia, y en dos días las moscas grandes bajaron a la mitad. Y después el limón y la albahaca se ocuparon de las otras.
+[GR] Te soy honesto: si aparece una mosca grande sola, no es nada. Si aparecen diez por día, hay algo muerto cerca. Búscalo.
+[GR] ¿Y cómo se encuentra? Con la nariz. Das la vuelta a la casa de noche, despacio, y donde sientas olor a podrido, ahí está.
+[GR] Mira primero lo que no se ve: el fondo de la cochera, la pared que da al vecino, el hueco de abajo del tanque de agua.
+[GR] Y si no encuentras nada y siguen apareciendo, mira la bolsa del patio y el desagüe. Casi siempre es una de esas dos.
+[NO] Una semana después volví, de noche, con la linterna.
+[NO] Apagamos la luz de la cocina y esperamos media hora. Después entramos y prendemos la linterna de golpe.
+[NO] Miro el bote de basura por dentro. Miro el plato de Bruno. Miro el desagüe del fregadero.
+[NO] En la casa de los Ramírez no apareció ninguna. Lucía cambió el limón el martes, y la albahaca sigue en la ventana.
+[NO] Esto se repite cada tres o cuatro días: cambiar el limón, mirar el bote, mirar el plato. Dos minutos. Menos que lavar los platos.
+[CL] Y ahora, la revisión de diez minutos que te prometí. Es gratis, y la haces esta noche.
+[CL] Una hora después de apagar todo, entras a la cocina a oscuras y prendes la linterna de golpe. Miras el bote, el plato de la mascota, el desagüe del fregadero, y las cuatro esquinas del piso.
+[CL] Y no necesitas comprar nada para hacerla: la linterna del celular sirve igual.
+[CL] Lo que ves te dice qué está pasando y qué te toca hacer. Una mosca sola no es nada. Diez moscas en el mismo lugar, todos los días, es un foco.
+[CL] Te dejé las tres pruebas en una hoja gratis que se llama Antes de Fumigar, la revisión de la noche. La del bote, la de la luz, y una tercera que no mostré en ningún video: la de la cinta doble faz, que te dice de dónde salen.
+[CL] La imprimes y la pegas por dentro del mueble del fregadero, así, con un poco de cinta. Apuntas el celular a este código, o tocas el primer link de la descripción.
+[CL] Y si tu casa tiene de todo, en esa misma página está el Manual del Fumigador: los sesenta y seis arreglos de la casa, con lo que pides en el almacén y las medidas exactas. Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.
+[NX] Ah, y una cosa más, que ya me pasó. Cuando bajaron las moscas, aparecieron los mosquitos.
+[NX] Pero ésos son otro problema, y también se sacan sin espiral y sin aerosol. La semana que viene te muestro cómo.
+[CL] Y ahora cuéntame tú. ¿Dónde aparecen las moscas en tu casa: en la basura, en la ventana, o en el patio? Escríbemelo en los comentarios. Leo todos.
+[CL] Limón con clavo, albahaca en la ventana, cinta alta. Nos vemos la semana que viene.

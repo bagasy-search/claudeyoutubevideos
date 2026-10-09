@@ -1,0 +1,72 @@
+{
+ "ov02a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov02b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov01b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov04a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov04b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov01a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov03a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov03b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov05a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov07a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov05b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": "sin respuesta del juez: 429 {\"code\":429,\"message\":\"The rate exceeds the limit. Please try again later\",\"data\":null}"
+ },
+ "ov06a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov06b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "ov07b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ }
+}

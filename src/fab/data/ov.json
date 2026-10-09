@@ -1,0 +1,206 @@
+[
+ {
+  "c": "ClVideoRef",
+  "from": 405,
+  "dur": 60,
+  "props": {
+   "thumb": "img/fabtest/th_furatones5.jpg",
+   "title": "Los 5 huecos por donde entra el ratón",
+   "tag": "VIDEO ANTERIOR",
+   "bed": "vid/fabtest/bed_0.mp4#64"
+  },
+  "t": 13.49,
+  "frase": "La vimos la semana pasada"
+ },
+ {
+  "c": "FabRuta",
+  "from": 2568,
+  "dur": 240,
+  "props": {
+   "bicho": "mosca",
+   "desde": {
+    "img": "ba7",
+    "txt": "la basura abierta"
+   },
+   "hasta": {
+    "img": "s001",
+    "txt": "tu comida"
+   },
+   "corte": "bote con tapa",
+   "bed": "vid/fabtest/bed_1.mp4#244"
+  },
+  "t": 85.59,
+  "frase": "Cuando el bote de basura está abierto"
+ },
+ {
+  "c": "FabCiclo",
+  "from": 2898,
+  "dur": 240,
+  "props": {
+   "title": "Por qué vuelven",
+   "etapas": [
+    {
+     "img": "ba7",
+     "txt": "basura abierta"
+    },
+    {
+     "img": "s006",
+     "txt": "llega la mosca"
+    },
+    {
+     "img": "gr13",
+     "txt": "pone huevos"
+    },
+    {
+     "img": "ci6",
+     "txt": "nacen más"
+    }
+   ],
+   "centro": "una semana",
+   "bed": "vid/fabtest/bed_2.mp4#244"
+  },
+  "t": 96.59,
+  "frase": "Una mosca pone cientos de huevos"
+ },
+ {
+  "c": "FabPasos",
+  "from": 9766,
+  "dur": 270,
+  "props": {
+   "title": "El limón, paso a paso",
+   "pasos": [
+    {
+     "img": "li4",
+     "txt": "medio limón"
+    },
+    {
+     "img": "li1",
+     "txt": "10 clavos de olor"
+    },
+    {
+     "img": "li2",
+     "txt": "en cada ventana"
+    }
+   ],
+   "bed": "vid/fabtest/bed_3.mp4#274"
+  },
+  "t": 325.54,
+  "frase": "Cortas un limón por la mitad"
+ },
+ {
+  "c": "FabCalendario",
+  "from": 10692,
+  "dur": 240,
+  "props": {
+   "title": "El limón",
+   "cada": 4,
+   "txt": "limón nuevo",
+   "bed": "vid/fabtest/bed_4.mp4#244"
+  },
+  "t": 356.4,
+  "frase": "La medida que usábamos siempre"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 11223,
+  "dur": 210,
+  "props": {
+   "title": "La albahaca",
+   "no": {
+    "img": "al1",
+    "txt": "hojas sueltas"
+   },
+   "si": {
+    "img": "al3",
+    "txt": "planta con raíz"
+   },
+   "bed": "vid/fabtest/bed_5.mp4#214"
+  },
+  "t": 374.1,
+  "frase": "Una maceta de albahaca en el borde"
+ },
+ {
+  "c": "FabAltura",
+  "from": 12695,
+  "dur": 300,
+  "props": {
+   "title": "Dónde va la cinta",
+   "max": 250,
+   "marcas": [
+    {
+     "cm": 60,
+     "txt": "Bruno llega hasta aquí",
+     "alerta": true
+    },
+    {
+     "cm": 210,
+     "txt": "la cinta, arriba de todo"
+    }
+   ],
+   "bed": "vid/fabtest/bed_6.mp4#304"
+  },
+  "t": 423.18,
+  "frase": "Uno: lejos de la comida"
+ },
+ {
+  "c": "FabMapa",
+  "from": 18580,
+  "dur": 300,
+  "props": {
+   "title": "La cocina",
+   "note": "los 4 arreglos puestos",
+   "pins": [
+    {
+     "lugar": "mesada",
+     "txt": "basura"
+    },
+    {
+     "lugar": "ventana_cocina",
+     "txt": "limón"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "albahaca"
+    },
+    {
+     "lugar": "techo",
+     "txt": "cinta"
+    }
+   ],
+   "hechos": 4,
+   "bed": "vid/fabtest/bed_7.mp4#304"
+  },
+  "t": 619.35,
+  "frase": "En la casa de los Ramírez no apareció ninguna"
+ },
+ {
+  "c": "ClCheck",
+  "from": 20100,
+  "dur": 270,
+  "props": {
+   "title": "ANTES DE FUMIGAR",
+   "items": [
+    "La del bote de basura, por dentro",
+    "La de la luz, una hora después",
+    "La cinta doble faz"
+   ],
+   "bed": "vid/fabtest/bed_8.mp4#274"
+  },
+  "t": 670.01,
+  "frase": "Te dejé las tres pruebas en una hoja gratis"
+ },
+ {
+  "c": "ClVideoRef",
+  "from": 21716,
+  "dur": 105,
+  "props": {
+   "thumb": "img/fabtest/th_fumosquito.jpg",
+   "title": "Mosquitos en casa, sin espiral ni aerosol",
+   "tag": "PRÓXIMO VIDEO",
+   "next": true,
+   "bed": "vid/fabtest/bed_9.mp4#109"
+  },
+  "t": 723.86,
+  "frase": "La semana que viene te muestro cómo"
+ }
+]
