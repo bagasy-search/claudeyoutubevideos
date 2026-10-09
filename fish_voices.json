@@ -263,71 +263,680 @@
     "text": "Todo para la cara, y nadie, nadie le había revisado lo único que de verdad importaba. Nadie le había tocado la mandíbula. Le dije, doña Remedios, abra y cierre la boca para mí, apriete los dientes, fuerte.",
     "language": "es"
   },
-  "claudio_mendoza_s4": {
-    "language": "es",
-    "refs": [
-      {
-        "wav": "fish_refs/claudio_s4_a.wav",
-        "text": "Mira, hay algo que casi nadie revisa antes de empezar a cambiar piezas y lo peor es que muchas veces el problema está ahí, frente a tus ojos. Me pasó durante años, escuchaba un ruido extraño, asumía que era algo grave y terminaba desmontando medio coche."
-      },
-      {
-        "wav": "fish_refs/claudio_s4_b.wav",
-        "text": "¿Ves esta conexión de aquí? Si tiene apenas un poco de juego, puede provocar vibraciones, fallos e incluso hacerte pensar que el motor está por romperse. Y no, no necesitas una herramienta especial. Sólo paciencia y mirar bien. Parece una tontería, pero te sorprendería saber cuánta gente gasta cientos de dólares por no revisar esto primero."
-      }
-    ]
+  "encias60_avatar": {
+    "wav": "fish_refs/encias60_avatar.wav",
+    "text": "nada. Esa encía que se te está corriendo para atrás tiene nombre, tiene una causa y esto es lo que casi nadie te cuenta. Tiene mucho más para hacerse en tu casa de lo que te imaginás. Antes de que llegue el día en que un diente empiece a moverse, porque ese día te lo digo con el corazón, ya se te complicó mucho más de la cuenta. Soy el doctor Federer y hoy nos vamos a sentar a hablar de las encías. De esas encías que se retraen, que se achican, que dejan el diente...",
+    "language": "es"
   },
-  "ray_rkknock": {
+  "aloebrazo_avatar": {
+    "wav": "fish_refs/aloebrazo_avatar.wav",
+    "text": "detrás. ¿Cuántas nélidas dejaron de ir a un cumpleaños, de meterse a la pileta con los nietos, de ponerse una remera sin mangas en pleno verano por un brazo, por vergüenza de un brazo? Y me dio bronca, mucha bronca, conmigo, con la costumbre de despegar.",
+    "language": "es"
+  },
+  "ray_rksafe": {
+    "wav": "fish_refs/ray_rksafe.wav",
+    "text": "waiting for me to come replace the door that somebody had already walked through the night before I did that about four thousand times Four thousand doors and I'll tell you the strangest thing I learned in all those years",
+    "language": "en"
+  },
+  "ray_raydoor1": {
+    "wav": "fish_refs/ray_raydoor1.wav",
+    "text": "You won't be able to help it Here's the part that's hard to believe The difference between a door that holds and a door that folds is about one dollar one Sometimes less if you already have the part sitting in a drawer out in the garage",
+    "language": "en"
+  },
+  "freebuilder_vm": {
+    "wav": "fish_refs/freebuilder_vm.wav",
+    "text": "Prefiero que te lleves esta sola frase de todo el vídeo y que nunca te intoxiques a que aprendas todo lo demás y un día por apuro cometas ese error. Bien, ahora que ya sabes cómo funciona el vinagre.",
+    "language": "es"
+  },
+  "bastida_quesos": {
+    "wav": "fish_refs/bastida_quesos.wav",
+    "text": "Piensen el riñón como un colador, un colador finito, delicado, de esos que usa para el caldo. Su función es dejar pasar la basura de la sangre hacia la orina, y retener lo que su cuerpo todavía necesita. Cuando somos jóvenes, ese colador está nuevo, los agujeritos están perfectos. Pero con los años, y sobre todo si Hugo presiona",
+    "language": "es"
+  },
+  "bastida8": {
+    "wav": "fish_refs/bastida8.wav",
+    "text": "algo que usted tiene en su cocina. Piensen una esponja, esa esponja con la que lava los platos. Cuando la esponja está seca no pesa nada, pero cuando la dejan el fregadero, en el lava platos, llena de agua, la levanta y chorrea, ¿verdad? Pesa. Bueno, una verdura es una esponja de minerales y hay dos minerales que a su riñón cansado le cuestan muchísimo de sacar. Uno se llama potasio y el otro se llama oxalato. Fíjese bien en estos dos nombres porque son los protagonistas de la historia de hoy. Potasio y oxalato.",
+    "language": "es"
+  },
+  "bastida11": {
+    "wav": "fish_refs/bastida11.wav",
+    "text": "que no quiero que se confunda. Los riñones no son cualquier órgano, son los que le mantienen la sangre limpia, los que le reguran la presión, los que le equilibran el agua y los minerales, los que le ayudan a fabricar glóbulos rojos y hasta mantener los huesos firmes. Todo eso, esos dos fintritos del tamaño de un puño, calladitos, sin pedir nada. Cuando el riñón se apaga, no se apaga una cosa sola, se le desordena el cuerpo entero. Por eso yo les digo a mis pacientes que cuidar el riñón es cuidar la casa desde los cimientos. No es un detalle, es la base.",
+    "language": "es"
+  },
+  "bastida_pesc": {
+    "wav": "fish_refs/bastida_pesc.wav",
+    "text": "La carne roja, sobre todo si es mucha y muy seguido, es de las que más residuo dejan, más trabajo le dan a ese colador cansado. El pescado, en cambio —y esto es clave— es una proteína de altísima calidad que le da al cuerpo todo lo que necesita, pero le deja al riñón bastante menos basura para filtrar. Le da la nutrición sin castigarle tanto el filtro. ¿Se da cuenta de la diferencia? No es magia. Es alivianarle la carga al órgano que está sufriendo.",
+    "language": "es"
+  },
+  "limonayunas": {
+    "wav": "fish_refs/limonayunas.wav",
+    "text": "los famosos cálculos renales. Muchas de esas piedras, no todas, pero muchas, se forman porque el calcio de la orina se junta, se pega, se cristaliza, como el sarro que se forma dentro de una pava vieja. Bueno."
+  },
+  "aguaayunas60_av": {
+    "wav": "fish_refs/aguaayunas60_av.wav",
+    "text": "La filtración mejora casi de inmediato No es magia es física pura Un fluido más diluido pasa mejor por un filtro Estudios de hidratación sugieren que mantener el cuerpo bien hidratado ayuda a que el riñón sostenga mejor su ritmo de filtrado a lo largo de los años"
+  },
+  "bastidates_avatar": {
+    "wav": "fish_refs/bastidates_avatar.wav",
+    "text": "¿Y por qué me importa a mí, como nefrólogo, la inflamación? Porque el riñón que está inflamado filtra peor, se cansa antes, envejece más rápido. Un riñón desinflamado es un riñón que respira. Además, el jengibre le ayuda a la circulación, y a un riñón le llega sangre por una arteria fina, delicada; cuando esa sangre circula mejor y más fluida, el filtro recibe lo que necesita para trabajar. La forma de tomarlo es la más sencilla del mundo. Esa flor de un rojo intenso, casi vino, que tiñe el agua de un color precioso. Y mire, no es solo lindo para la vista. El enemigo número uno de sus riñones, el que más gente manda a diálisis, no es un veneno raro ni una comida exótica. Es la presión alta."
+  },
+  "bastida16": {
+    "wav": "fish_refs/bastida16.wav",
+    "text": "Es una de las señales más tempranas y más honestas que existen. Le pido un favor, mañana mírela, mírela antes de jalar 10 segundos. No cuesta nada y le puede cambiar la vida. Señal número 3. Se levanta a ovinar de noche. Una vez, bueno, pero dos, tres, cuatro veces, cortando el sueño, arrastrando los pies hasta el baño en la oscuridad. Eso tiene nombre, se llama nicturia y no siempre es la próstata, señores, aunque siempre le echen la culpa a la próstata. A veces es el riñón que perdió la capacidad de...",
+    "language": "es"
+  },
+  "mikedalton_mdpnsqn": {
+    "wav": "fish_refs/mikedalton_mdpnsqn.wav",
+    "text": "actually driving toward the hardware store to buy plastic sheeting so I can seal off my own laundry room like it's a crime scene. And I'm sitting at the red light and that quiet voice finally gets loud enough. It goes, Mike, you have killed this exact thing in a dozen bathrooms. You just called it something else every time. Turn the truck around. So I did. Now here's the thing. I nodded. I said, let me think about it. And I walked him to the door and the whole time this quiet little voice in the back of my head.",
+    "language": "en"
+  },
+  "mdboots_avatar": {
+    "wav": "fish_refs/mdboots_avatar.wav",
+    "text": "It doesn't leave a chemical residue soaking in your boot against your skin That's exactly what you want in something that's going right next to your foot all day So that's the whole idea And I know what a few of you are thinking right now Why not just throw them in the washing machine and be done with it"
+  },
+  "bastida15": {
+    "wav": "fish_refs/bastida15.wav",
+    "text": "mientras por dentro va perdiendo soldados en silencio y ahí está el villano de la historia de hoy no es la sal no es un alimento no es una pastilla el villano de hoy es el silencio mismo es esa reserva enorme esa capacidad de",
+    "language": "es"
+  },
+  "freebuilder_sal": {
+    "wav": "fish_refs/freebuilder_sal.wav",
+    "text": "Ahora mira esto de cerca porque cambia todo, me llevo un poco a la lengua, es sal, sal pura, esta pared no está sucia, esta pared está sudando sal y ese polvo blanco no es un problema de limpieza.",
+    "language": "es"
+  },
+  "mdpros_avatar": {
+    "wav": "fish_refs/mdpros_avatar.wav",
+    "text": "I scrubbed that exact spot about four months ago, bleached it, wiped it, stood back, felt real good about myself. And here it is again, same corner, same shape, like it never left. And that right there, that little corner in my own bathroom, that is the whole reason a mold removal company will never.",
+    "language": "en"
+  },
+  "ec_avatar": {
+    "wav": "fish_refs/ec_avatar.wav",
+    "text": "Well, how do you sell somebody a $2 thing they can make in their own bathroom? You can't build a company on that, so instead they sell you the jar. Alright, so let me show you what actually works, and I'm going to make it with you. Now before I show you the how, I want to show you the why, all in one picture, because I think it's going to make everything click. So I need you to do something for me. Put down whatever's in your hand and really look at the screen for the next 30 seconds, because this next image is honestly probably the single most important thing in this whole video.",
+    "language": "en"
+  },
+  "federer_nightly": {
+    "wav": "fish_refs/federer_nightly.wav",
+    "text": "When you lie flat and still, that traffic quiets down. The nerve that spent all day being lightly compressed finally has nothing else to do. And now the only signal it's sending is the irritation. It's like a ringing in your ears that you only hear when the room goes silent. The noise didn't get worse at night.",
+    "language": "en"
+  },
+  "fedmorning60_avatar": {
+    "wav": "fish_refs/fedmorning60_avatar.wav",
+    "text": "Study after study, decade after decade, the same shape on the graph, a big, ugly peak in the morning. Your heart is never asked to do a harder job than in those first few minutes. On the very day, at the very hour, it is least prepared to do it. And here's the cruel part. Most people don't just stand up fast and leave it there. They stack things on top. They make the worst moment of the day worse, three or four times over in a row, and they think they're just having their morning. They reach for coffee first thing. On an empty stomach, dehydrated, blood already thick, and caffeine, no.",
+    "language": "en"
+  },
+  "np_avatar": {
+    "wav": "fish_refs/np_avatar.wav",
+    "text": "Layer one is the dose itself. About a cup of plain cottage cheese, 30 to 60 minutes before you turn off the light. Plain, I'll come back to that. If cottage cheese isn't for you, plain Greek yogurt is your second best, and a glass of milk with a little something is your third.",
+    "language": "en"
+  },
+  "granny1960_avatar": {
+    "wav": "fish_refs/granny1960_avatar.wav",
+    "text": "call a humectant. It literally pulls moisture out of the air and holds it against your skin and it's mildly antibacterial, which is exactly why the grandmother's dabbed it on a stubborn spot or a patch of redness too. In thin skin, skin that's lost its plumpness drinks this right up. One warning and I'll say it straight because I always will. Do a patch test on the inside of your arm first, especially",
+    "language": "en"
+  },
+  "naillines_avatar": {
+    "wav": "fish_refs/naillines_avatar.wav",
+    "text": "iron Okay so now you can read them and I bet some of you have been quietly checking your hands this whole time and your stomach's done a little flip Stay with me because the why is where it gets useful and the fix is closer than you think Why iron of everything Why does the body sacrifice the nails",
+    "language": "en"
+  },
+  "sr_avatar": {
     "language": "en",
-    "backend": "s2.1-pro-free",
-    "nota": "Ray Kessler (EN/US). Clonada del wav REAL del creador public/rkfob.wav, 3 ventanas en FRONTERA DE ORACION con el texto EXACTO del guion viejo canales/rkfob_GUION.txt (NUNCA del ASR). Un bloque POR PARRAFO: con 1100 y 480 chars Fish saltea texto.",
+    "wav": "fish_refs/sr_avatar.wav",
+    "text": "low without ever knowing it, because we don't really test for it. It's the mineral that helps your muscles relax, and your heart is a muscle, and the walls of your blood vessels are muscle, which is why the blood pressure piece is real too. So this one little capsule at night is touching your sleep, your legs, your heart."
+  },
+  "aloearms_avatar": {
+    "wav": "fish_refs/aloearms_avatar.wav",
+    "text": "Thin skin does not want to be attacked. It wants to be fed, okay? Okay. Now I want you to pay very, very close attention to what's on your screen right now because this next part is probably the most important 90 seconds of this whole video. This is the exact protocol.",
+    "language": "en"
+  },
+  "ls_avatar": {
+    "wav": "fish_refs/ls_avatar.wav",
+    "text": "does not print on the front of the box. Walk down that vitamin aisle and you'll see magnesium sold a dozen ways and leg strength pills for $40 a bottle promising you the world. Here's the quiet truth. Nobody can build a big recurring business selling you a $2 bag of pumpkin seeds that sits in your cupboard. There's no money in it. The money is in the $40 bottle you buy every month and as you'll see in a minute the most common cheap version in that bottle barely absorbs it all. I'm not telling you",
+    "language": "en"
+  },
+  "drymouth60_avatar": {
+    "wav": "fish_refs/drymouth60_avatar.wav",
+    "text": "the nose Do the breathing the way it's supposed to Step five the room Get a little humidification Fire for the bedroom the small kind Put it on the dresser Or honestly if you don't want to buy anything a wide bowl of water sitting near the heat vent does a surprising amount You're just putting moisture back into the air so the air stops stealing it from you all night"
+  },
+  "cg_avatar": {
+    "wav": "fish_refs/cg_avatar.wav",
+    "text": "not a drug. It's not going to force anything. It's a nudge. A daily, gentle nudge in the right direction. And a gentle nudge, repeated, is worth more to a tired filter than any harsh thing you could throw at it. You don't want to be harsh with a",
+    "language": "en"
+  },
+  "rg_avatar": {
+    "wav": "fish_refs/rg_avatar.wav",
+    "text": "to rebuild the ropes it's been losing And here's the small hopeful thing that most people never get told that enzyme is not permanent It's not a scar It's a switch and it responds to what you put on it tonight and the night after Which means the same gum line that's been quietly losing ground for years can start holding it again in a matter of weeks Not because of"
+  },
+  "freebuilder_chapa": {
+    "wav": "fish_refs/freebuilder_chapa.wav",
+    "text": "El agua es tramposa, entra por un lado y camina por debajo de la chapa, siguiendo la pendiente, hasta que encuentra un tornillo, una unión, un clavo, y recién ahí cae. Así que la gotera que ves adentro puede estar a un metro y medio de donde el agua realmente...",
+    "language": "es"
+  },
+  "freebuilder_mn": {
+    "wav": "fish_refs/freebuilder_mn.wav",
+    "text": "que cometecasi todo el mundo apenas confirma que es mon negro un error que en lugar de solucionarlo lo hace volver más fuerte y que encima suelta al aire justo lo que menos querías respirar Lo vas a entender clarísimo en un minuto",
+    "language": "es"
+  },
+  "freebuilder_desh": {
+    "wav": "fish_refs/freebuilder_desh.wav",
+    "text": "Quédate conmigo, porque si te equivocas de diagnóstico no sólo tiras el dinero del aparato, también tiras el de la luz todos los meses y encima puedes terminar arruinando la pared todavía más. Soy Tomás y esto es El Constructor Libre.",
+    "language": "es"
+  },
+  "freebuilder_ent": {
+    "wav": "fish_refs/freebuilder_ent.wav",
+    "text": "elástica, tres capas, todo prolijo. Y adivina qué pasó. A los cuatro meses la mancha volvió, pero volvió peor, más grande, más oscura, y encima el cuarto de arriba empezó a oler a húmedo, ese olor azotano cerrado que no te lo sacas ni con la ventana abierta. Él estaba convencido de que lo habían estafado con la membrana. No lo estafaron. El problema es que estaba peleando contra el enemigo equivocado, en el lugar equivocado. Y cuando termines este vídeo vas a entender por qué eso",
+    "language": "es"
+  },
+  "freebuilder_sl": {
+    "wav": "fish_refs/freebuilder_sl.wav",
+    "text": "a un albañil y el albañil te miró la pared, chasqueó la lengua y te tiró un número que te dejó frío, un número por picar todo, revocar de nuevo y pintar, un trabajo de varios días y de mucho dinero. Y tú pensaste tanto por una pared y lo dejaste para más adelante y más adelante llegó el invierno y con el invierno la humedad se puso peor y la mancha de adentro creció y esa cosa que empezó siendo un rincón feo, ahora es",
+    "language": "es"
+  },
+  "claudio_tcaceite": {
+    "wav": "fish_refs/claudio_tcaceite.wav",
+    "text": "la primera vez y pensé que el aceite estaba mojado, que estaba mal, que le faltaba algo. No le faltaba nada. Lo que pasa es que el aceite no es nafta. La nafta a temperatura ambiente ya está evaporándose sola, por eso la huele desde lejos y por eso prende con una chispa. El aceite no. El aceite necesita llegar a más de 200 grados antes de largar vapor y lo que arde no es el líquido, lo que arde es el vapor. Ahí está todo el secreto de este aparato.",
+    "language": "es"
+  },
+  "favaselina_p1": {
+    "wav": "fish_refs/favaselina_p1.wav",
+    "text": "ya vamos a llegar ahí. Primero te tengo que contar algo, porque este vídeo en realidad empezó con una paciente, se llama Doña Rosa, 67 años, una señora de esas que entran al consultorio derechitas, bien peinadas, con la carterita apretada contra el cuerpo, de esas que te piden perdón por hacerte perder el tiempo.",
+    "language": "es"
+  },
+  "faricino": {
+    "wav": "fish_refs/faricino.wav",
+    "text": "no comprarías más el potecito de trescientos y ellos lo saben Y no no es el romero Ya sé ya sé lo que estás pensando ahora mismo ay Federer otra vez con el romero No esto es otra cosa El romero es maravilloso Yo hablé un montón del romero y sigo diciendo que es una bendición"
+  },
+  "farmanos": {
+    "wav": "fish_refs/farmanos.wav",
+    "text": "2. Un aceite, un aceite baratísimo que cuesta como un dólar que quizás tiene en la casa ahora mismo o lo consiguen en cualquier farmacia y que usado de una manera muy precisa, de una manera, porque hay una forma que funciona.",
+    "language": "es"
+  },
+  "pt_explica": {
+    "wav": "fish_refs/pt_explica.wav",
+    "text": "dos semanas, de dónde salen, de la gente que ya te conoce, amigos, familia, compañeros de trabajo, vecinos de la cuadra, el grupo de whatsapp del edificio, los papás del colegio, nada de publicidad, nada de gastar, solamente mostrar las fotos del trabajo cero y decir esto ahora lo hago yo. Y quiero que veas lo que ya es esto, porque mucha gente lo subestima, 150 dólares al mes en la mayoría de nuestros países es el recibo de la",
+    "language": "es"
+  },
+  "pt_enfatico": {
+    "wav": "fish_refs/pt_enfatico.wav",
+    "text": "húmedo del clóset que no se va con nada. Ahora, presta atención a esto. Todo el mundo tiene eso. Todo el mundo. La casa nueva y la casa vieja, la casa del rico y la casa del pobre. Ya hay algo más importante todavía. A todo el mundo le molesta, pero nadie sabe a quién llamar. Ese es el negocio. No es más complicado que eso. Cuando a alguien se le rompe un tubo, sabe que llama al plomero. Cuando se le va la luz,",
+    "language": "es"
+  },
+  "claudio_tcsalcarbon": {
+    "wav": "fish_refs/claudio_tcsalcarbon.wav",
+    "text": "un puñado de sal gruesa por encima y sí, pasa algo, la llama cambia, se pone de un color distinto, más viva y por un momento parece que descubriste algo. Millones de personas llegaron hasta acá y apagaron el fósforo convencidas de que la sal tiene un poder secreto, pero mirá bien esa llama, no es azul de gas, es amarilla, amarilla intensa, casi anaranjada y ese color no es magia, ese color tiene nombre y apellido y lo conoce cualquier persona que haya estudiado química en la secundaria.",
+    "language": "es"
+  },
+  "mdtoiletmold_avatar": {
+    "wav": "fish_refs/mdtoiletmold_avatar.wav",
+    "text": "The bleach isn't failing because it's weak. The bleach is failing because by the time it reaches that mold, it isn't bleach anymore. It's already dead. You're pouring a match down there and you're expecting it to burn like a candle. So today I'm gonna show you the right way to kill toilet mold.",
+    "language": "en"
+  },
+  "mdbootsrt_avatar": {
+    "wav": "fish_refs/mdbootsrt_avatar.wav",
+    "text": "Let me tell you where I really learned this. Years ago I had a buddy work construction with me and this fella had the worst boots you ever smelled in your life. I mean, we would not let him in the truck. We made him ride in the back and he'd tried everything. The sprays, the powders, freezing them, all of it.",
+    "language": "en"
+  },
+  "mikedalton": {
+    "wav": "fish_refs/mikedalton.wav",
+    "text": "see. And the part you can see is not the part that matters. So today I'm going to show you why it keeps coming back. The real reason. The one nobody selling you a spray bottle wants to explain. And then I'm going to show you how to actually kill it. Not hide it. Not bleach it white for a couple of weeks. Kill it at the root with something that costs about a dollar and is probably sitting in your bathroom cabinet right now. That little brown bottle. 3% hydrogen peroxide. Stick with me because the trick",
+    "language": "en"
+  },
+  "mddrainrt_avatar": {
+    "wav": "fish_refs/mddrainrt_avatar.wav",
+    "text": "You can pour water through that pipe for an hour and it will be exactly where it was when you started because it is not sitting in the water. It is stuck to the wall above the water, breathing air, doing fine. And the smell is not the slime itself. The smell is what the bacteria inside it breathe out.",
+    "language": "en"
+  },
+  "ray_raybar1": {
+    "wav": "fish_refs/ray_raybar1.wav",
+    "text": "You can set it in the time it takes you to get your shoes off and you can take it down in one second in the morning Now I know exactly what a lot of you Thinking because I heard it in driveways for 35 years That looks like something they sell at a checkout counter That looks like a gadget If it were that simple everybody would already have one So stay with me for a few minutes and I will tell you why the fellow who spent his",
+    "language": "en"
+  },
+  "mdplumb": {
+    "wav": "fish_refs/mdplumb.wav",
+    "text": "That's it That's all anybody ever sees But right underneath hidden inside that cabinet there's a U shaped bend in the pipe Plumbers call it the P trap It's shaped like that on purpose That U holds a little puddle of standing water in the bottom of it at all times",
+    "language": "en"
+  },
+  "mdringrt_avatar": {
+    "wav": "fish_refs/mdringrt_avatar.wav",
+    "text": "and the new one under the light at the right angle had pores. Little pinholes, like the surface of an orange peel, but very fine. You wouldn't see it standing up. You'd only see it if you were on your knees with a light looking for it. And I've since done this on probably a dozen toilets and he's right.",
+    "language": "en"
+  },
+  "ray_rkvault": {
+    "wav": "fish_refs/ray_rkvault_a.wav",
+    "text": "That is part of the actual house It is framing It is doubled up around every door opening and it is not going anywhere unless the house goes with it All you have to do is reach it Three inch screws That is it Take the short ones out put three inch screws in and drive them until they pull tight Now your bolt is not holding on to trim anymore",
+    "language": "en",
     "refs": [
       {
-        "wav": "_v3/rkknock_refs/ref1.wav",
-        "text": "Don't let go of it. And while you're holding it, press the unlock button twice. Two taps. You'll see the little light on the fob blink at you — on most of them it blinks a couple of times and then holds for a second. That's it. That's the whole thing. Your key just went to sleep."
+        "wav": "fish_refs/ray_rkvault_a.wav",
+        "text": "That is part of the actual house It is framing It is doubled up around every door opening and it is not going anywhere unless the house goes with it All you have to do is reach it Three inch screws That is it Take the short ones out put three inch screws in and drive them until they pull tight Now your bolt is not holding on to trim anymore"
       },
       {
-        "wav": "_v3/rkknock_refs/ref2.wav",
-        "text": "You'll hear that a lot — that a thief scans your fob, downloads the code, burns it onto a blank, and drives off with a duplicate. That's not what's happening on your driveway. Your key doesn't send the same code twice. It rolls. Every press is a new number, and the old number is dead the second it's used, and your car keeps track."
+        "wav": "fish_refs/ray_rkvault_b.wav",
+        "text": "The homeowner did not get beaten By a better lockpicker the homeowner got beaten by the wood around the lock The lock never lost The house let go of the lock and you cannot buy your way out of that You can put a four hundred dollar lock on a door and if the wood around it is soft you have got a four hundred dollar handle on a piece of pine That is the reframe I want you to carry through this whole afternoon You are not upgrading a lock"
       },
       {
-        "wav": "_v3/rkknock_refs/ref3.wav",
-        "text": "It was disarmed by your own key, by the relay, at the moment the door opened. The alarm did exactly what it was supposed to do — it recognized the owner. That's not an alarm failure. That's an alarm doing its job for the wrong person. The third one: I park in the garage. Good. That's real. That's a genuine layer and I'm glad you have it."
+        "wav": "fish_refs/ray_rkvault_c.wav",
+        "text": "I never caught a burglar not once I never outsmarted anybody I never picked an impossible lock And save the day What I did was show up the next morning I was the fellow the family called at seven in the morning while they were still standing in the hallway in a bathrobe looking down at the splinters on the carpet I did that about four thousand times And when you have replaced four thousand doors you stop seeing four thousand different stories"
       }
     ]
   },
-  "claudio_definitiva": {
-    "language": "es",
+  "ray_rkbottle": {
+    "wav": "fish_refs/ray_rkbottle_a.wav",
+    "text": "There is no sloped face to press against nothing to wedge back no spring behind it It does not retreat because there is nothing in its design that knows how to retreat It only moves when the key or the thumb turn moves it So here is the ugly little sentence that explains that woman's front door and I would guess a good third of the doors watching this right now",
+    "language": "en",
     "refs": [
       {
-        "wav": "fish_refs/taller_claudio_a.wav",
-        "text": "Si te falta cualquiera de las dos, tenés humo negro, hollín y olor a taller quemado. ¿Y qué tiene que ver el filtro con todo esto? Acá viene lo lindo. Un filtro de aceite, por dentro es justo la pieza que hace falta para darle aire a esa llama. Mira, por fuera es una lata de acero gruesa, que aguanta presión y aguanta calor. Abajo tiene una placa de acero con un agujero grande en el medio, con rosca y una ronda de agujeritos alrededor. Y adentro, en el centro, tiene un tubo de chapa lleno de agujeros, que es el que sostiene el papel del filtro. Ese tubo agujereado es el corazón del calentador."
+        "wav": "fish_refs/ray_rkbottle_a.wav",
+        "text": "There is no sloped face to press against nothing to wedge back no spring behind it It does not retreat because there is nothing in its design that knows how to retreat It only moves when the key or the thumb turn moves it So here is the ugly little sentence that explains that woman's front door and I would guess a good third of the doors watching this right now"
       },
       {
-        "wav": "fish_refs/taller_claudio_b.wav",
-        "text": "El aceite usado, también gratis, casi siempre, mismo lubricentro, mismo motivo, lleva tu propio bidón, el bidón de pintura de 20 litros, gratis, cualquier obra o pinturería tiene vacíos, y la lata para el plato de abajo, gratis. Lo que si vas a comprar es poco, pero lo tienes que comprar bien, un metro y medio de caño de cobre finito de los de refrigeración, una llave de paso chiquita de las de aguja para regular el goteo, y un par de abrazaderas, eso es todo lo que sale de la ferretería."
+        "wav": "fish_refs/ray_rkbottle_b.wav",
+        "text": "That angle is what lets you pull the door shut behind you with your hip while you are carrying groceries The wedge hits the frame gets pushed back into the door slides past and springs out the other side That is a latch doing its job perfectly Now think about what that means You have a piece of metal on your door whose whole purpose in life is to retreat when something presses on the angled side of it"
+      },
+      {
+        "wav": "fish_refs/ray_rkbottle_c.wav",
+        "text": "and I will not have any Anybody watching this feels stupid I did the same thing at my own house for years before I knew better Pulling a door shut feels like securing it because for your whole life that motion has been the end of the leaving the house routine Nobody ever told you the click was not the lock So that is the first fix and it is free and it is the biggest one on this list"
+      }
+    ]
+  },
+  "dale": {
+    "wav": "fish_refs/dale.wav",
+    "text": "All right, so people ask me what I did for a living, and I say locksmith, and they get this look on their face, like I'm about to teach them how to pick a lock. Nah, that's that's maybe two percent of the job. Here's what I actually did for 35 years: somebody's house gets opened up on a Tuesday afternoon while they're at work. Police come out, they take their pictures, they leave. And then, then somebody's got to come put the door back on. That was me, four thousand times, give or take. And I'll tell you the one thing nobody believes: in thirty-five years, I never once, not one single time, saw a lock that had been picked. Not one. All that business you see on television - the little tension wrench, the the whole routine. Forget it. Nobody is picking your lock. It's too slow. It's too quiet, and they haven't got the patience for it. What I saw was wood every time - splintered pine, right about four inches up from the knob. Because the lock held just fine. The lock was never the problem. It's the frame that let go.",
+    "language": "en"
+  },
+  "dale_nat": {
+    "wav": "fish_refs/dale_nat.wav",
+    "text": "All right, so people ask me what I did for a living, and I say locksmith, and they get this look on their face, like I'm about to teach them how to pick a lock. Nah, that's that's maybe two percent of the job. Here's what I actually did for 35 years: somebody's house gets opened up on a Tuesday afternoon while they're at work. Police come out, they take their pictures, they leave. And then, then somebody's got to come put the door back on. That was me, four thousand times, give or take.",
+    "language": "en"
+  },
+  "dale_int": {
+    "wav": "fish_refs/dale_int.wav",
+    "text": "And I'll tell you the one thing nobody believes: in thirty-five years, I never once, not one single time, saw a lock that had been picked. Not one. All that business you see on television - the little tension wrench, the the whole routine. Forget it. Nobody is picking your lock.",
+    "language": "en"
+  },
+  "dale_ene": {
+    "wav": "fish_refs/dale_ene.wav",
+    "text": "It's too slow. It's too quiet, and they haven't got the patience for it. What I saw was wood every time - splintered pine, right about four inches up from the knob. Because the lock held just fine. The lock was never the problem. It's the frame that let go.",
+    "language": "en"
+  },
+  "scrapworkshop_en": {
+    "wav": "fish_refs/scrapworkshop_en.wav",
+    "text": "And about two weeks later, you have got a hole burned in the bottom of it with hot oil running out through the hole. That is not a small problem. That is a fire on your shop floor. The body has to be thick iron. And the best thing you can get, and it is free, is an old brake drum. Go to any mechanic shop in your town and ask them for the brake drums they have got piled out back. They will give them to you because to them it is scrap and they are paying by weight to get rid of.",
+    "language": "en"
+  },
+  "tswmini": {
+    "wav": "fish_refs/tswmini.wav",
+    "text": "smokes. That puddle is what catches all at once 30 seconds later when the metal comes back up and gives you the little wump out the top that makes people jump back and unplug the whole idea. So the entire design of the small one is a fight against that. Every choice I am going to walk you through exists to put mass back in, to keep heat from leaving, or to make the drop smaller so no single drop can knock the temperature down. Once you understand that you can build 10 versions of this out of whatever junk you have.",
+    "language": "en"
+  },
+  "abuela": {
+    "wav": "fish_refs/abuela.wav",
+    "text": "Bueno a ver La gente me pregunta a qué me dedicaba y cuando les digo que era cerrajera ponen una cara como si estuviera a punto de enseñarles a forzar una cerradura No eso eso era como mucho el dos por ciento del trabajo Lo que realmente hice durante treinta y cinco años fue esto entraban a la casa de alguien un martes por la tarde mientras estaba trabajando llegaba la policía sacaba sus fotos hacía lo suyo y se iba y después después alguien tenía que volver a poner esa puerta en su lugar esa era yo unas cuatro mil veces más o menos y voy a decirte algo que nadie me cree en treinta y cinco años jamás ni una sola vez vi una cerradura que hubieran abierto con ganzúas ni una todo eso que ves en la televisión La ganzúa la palanquita todo todo ese numerito olvídalo Nadie está abriendo tu cerradura así Es demasiado lento demasiado discreto y no tienen paciencia para eso Lo que yo veía era madera siempre pino astillado casi siempre unos diez centímetros por encima de la manija porque la cerradura aguantaba perfectamente La cerradura nunca era el problema Lo que cedía era el marco",
+    "language": "es",
+    "dialect": "espanol neutro latino (tu)",
+    "nota": "DEFAULT — referencia larga completa, maxima fidelidad"
+  },
+  "abuela_nat": {
+    "wav": "fish_refs/abuela_nat.wav",
+    "text": "Bueno a ver La gente me pregunta a qué me dedicaba y cuando les digo que era cerrajera ponen una cara como si estuviera a punto de enseñarles a forzar una cerradura No eso eso era como mucho el dos por ciento del trabajo Lo que realmente hice durante treinta y cinco años fue esto entraban a la casa de alguien un martes por la tarde mientras estaba trabajando llegaba la policía sacaba sus fotos hacía lo suyo y se iba y después",
+    "language": "es",
+    "dialect": "espanol neutro latino (tu)",
+    "nota": "natural/conversacional (el 80% del video)"
+  },
+  "abuela_int": {
+    "wav": "fish_refs/abuela_int.wav",
+    "text": "después alguien tenía que volver a poner esa puerta en su lugar esa era yo unas cuatro mil veces más o menos y voy a decirte algo que nadie me cree en treinta y cinco años jamás ni una sola vez vi una cerradura que hubieran abierto con ganzúas ni una",
+    "language": "es",
+    "dialect": "espanol neutro latino (tu)",
+    "nota": "intimo/revelacion ('nadie me cree')"
+  },
+  "abuela_ene": {
+    "wav": "fish_refs/abuela_ene.wav",
+    "text": "todo eso que ves en la televisión La ganzúa la palanquita todo todo ese numerito olvídalo Nadie está abriendo tu cerradura así Es demasiado lento demasiado discreto y no tienen paciencia para eso Lo que yo veía era madera siempre pino astillado casi siempre unos diez centímetros por encima de la manija porque la cerradura aguantaba perfectamente La cerradura nunca era el problema Lo que cedía era el marco",
+    "language": "es",
+    "dialect": "espanol neutro latino (tu)",
+    "nota": "enfatico/remate"
+  },
+  "fedvet1": {
+    "wav": "fish_refs/fedvet1.wav",
+    "text": "o si tienes una herida abierta aunque sea pequeña en la mano o en la cara no dejes que te lama ahí Deja que te lama la mano Y después te la lavas Es una regla simple y evita justo esos casos raros que terminan mal Tercera zona y esta es la que más me gusta explicar porque nadie la lee bien los pies y los tobillos Si tu perro te lama los pies sobre todo cuando acabas de sacarte los zapatos o al salir de la ducha mucha gente cree que es sumisión",
+    "language": "es"
+  },
+  "olivares": {
+    "wav": "fish_refs/olivares.wav",
+    "text": "aunque lo que más me no lo que me dejó pensando fue esto me dijo pensé que me iba a regañar regañarla hay no acerqué un poco la silla y le dije mire no tiene que explicarme lo bonito empiece por donde pueda si algo no lo entiendo se lo pregunto y ahí ahí sí empezamos a conversar",
+    "language": "es"
+  },
+  "olivares_calmo": {
+    "wav": "fish_refs/olivares_calmo.wav",
+    "text": "todo. Me interrumpía, me preguntaba, me decía no, eso no, lo que siento es otra cosa. Eso, eso era lo que necesitábamos. Después me quedé un ratito sentada, porque yo siempre digo que hay que escuchar, pero hoy me tocó preguntarme si estaba dejando espacio para que me hablaran. Y esa pregunta, ¿es así?",
+    "language": "es"
+  },
+  "olivares_intriga": {
+    "wav": "fish_refs/olivares_intriga.wav",
+    "text": "y la señora me dice doctora hay una cosa más pero me da pena cuénteme tenemos tiempo y entonces dejó la bolsa en el piso la había tenido agarrada toda la consulta como lista para salir no me había dado cuenta hasta ese momento y yo pensando que ya habíamos terminado empezó a contarme lo que de verdad le preocupaba llevaba",
+    "language": "es"
+  },
+  "fedvet3": {
+    "wav": "fish_refs/fedvet3.wav",
+    "text": "notó que su perro hacía algo un poquito distinto y tuvo la valentía de decírmelo aunque sonara a tontería La señora que me dice doctor ahora duerme del otro lado me está dando más información que media analítica Y la cama para un perro viejo es donde se le cae la máscara Durante el día aguanta se levanta cuando tú te levantas camina cuando tú caminas mueve la cola porque llegaste y hace Todo eso incluso con dolor porque para un perro tú eres más importante que su cadera",
+    "language": "es"
+  },
+  "fedvetdolor_av": {
+    "wav": "fish_refs/fedvetdolor_av.wav",
+    "text": "años ya vienen cansados Una sola dosis puede bastar así que si hoy reconoces alguna de estas señales lo que haces es anotarla y llamar al veterinario no abrir el botiquín Vamos con la primera Señal número uno Cómo se levanta del suelo No cuántas veces se levanta cómo Un perro sano se levanta de una pieza Es un solo movimiento casi un resorte Junta las patas debajo del cuerpo y sube Punto",
+    "nota": "Clonada del PROPIO avatar de fedvetdolor (234,48-263,04 s), ventana elegida por PAUSA. Sirve para que la cola no tenga salto de voz."
+  },
+  "fedvet7": {
+    "wav": "fish_refs/fedvet7.wav",
+    "text": "Un perro despierto te esconde el dolor. Aguantan callados, está en su naturaleza. Pero un perro dormido no esconde nada: acomoda el cuerpo exactamente como necesita, y esa forma que elige es la respuesta a una pregunta que no le hizo nadie. Qué te duele, qué te cuesta, qué te falta el aire. Hoy te voy a enseñar a leer eso. Las posturas, dónde se pone, cómo se echa y qué se le escapa mientras duerme. Todo se ve desde tu sillón, de noche, con la luz apagada."
+  },
+  "fedvetdormir": {
+    "wav": "fish_refs/fedvetdormir.wav",
+    "text": "Cada resbalada es un tirón en la cadera y en la rodilla de un animal Que ya tiene la articulación gastada Qué hacer Esta misma noche sin comprar nada una manta doblada en cuatro una toalla gruesa o un edredón viejo puesto exactamente donde él ya duerme No lo muevas de sitio que es lo que se hace mal Póle la cama debajo donde él ya eligió Un perro mayor no quiere un sitio nuevo quiere el mismo sitio más blando Y si tienes baldosa brillante en el camino que él hace todos los días",
+    "language": "es"
+  },
+  "fedvetmemoria": {
+    "wav": "fish_refs/fedvetmemoria.wav",
+    "text": "una de estas señales. En los de quince y dieciséis, casi siete de cada diez. Lo raro no es la enfermedad: lo raro es que alguien la nombre. La primera señal es que se queda plantado, mirando a la nada. Tiene una forma muy particular. El perro está caminando por su casa y de pronto se detiene. No se echa, no se sienta: se queda de pie, con las cuatro patas plantadas, la cabeza un poco baja, mirando a un rincón o al hueco entre el sillón y el mueble. Y se queda ahí.",
+    "language": "es"
+  },
+  "fcshigado_av": {
+    "wav": "fish_refs/fcshigado_av.wav",
+    "text": "y que le dice a tu médico si tu hígado está empezando a endurecerse o no. Gratis, con el papel que ya tienes. Aguántame hasta ahí, porque esa parte vale el vídeo entero. Y de las cinco señales, te lo digo desde ahorita para que no te me vayas, la número cuatro es la que más se confunde. La número cuatro la ve la gente todos los días, todos los días y no la registra, porque pasa en un lugar que uno mira dos segundos y lejala la palanca. Bueno, vámonos por partes, déjame contarte de una persona.",
+    "language": "es"
+  },
+  "fcsclavo": {
+    "wav": "fish_refs/fcsclavo.wav",
+    "text": "o un pedacito de corteza No El clavo de olor es un botón botón de flor Es una flor que nunca se abrió Es el capullo de un árbol que se llama Cissiguium aromaticum que es de Indonesia de unas islas que se llamaron durante siglos las Islas de las especias Y lo que hacen es cortar ese botón justo antes de que abra cuando ya está rosita y secarlo al sol hasta que se pone café oscuro y duro como un clavito",
+    "language": "es",
+    "dialect": "español mexicano (tú)",
+    "origen": "avatar HeyGen v3 del propio creador, video fcsclavo (441,9-468,5 s)"
+  },
+  "fcscolageno": {
+    "wav": "fish_refs/fcscolageno.wav",
+    "text": "agarra dos hebras de colágeno que están allá sin hacer nada y las cose y cuando ya las coseó esa unión ya no se deshace fácil eso es firmeza eso es lo que tú sientes cuando pellizcas una piel joven y regresa de volada y ahora viene lo que quiero que te lleves de este video aunque se te olvide todo lo demás esa enzima la lisiloxidasa no",
+    "dialect": "español mexicano (tú)",
+    "origen": "avatar del creador 6949fe6f… tramo 1 de fcscolageno"
+  },
+  "fcsricino": {
+    "wav": "fish_refs/fcsricino.wav",
+    "text": "hidrátate tómate tus dos litros y está bien eh tomar agua está bien Pero si la maceta tiene un hoyo tú puedes vaciarle la jarra entera encima y a las tres horas está seca otra vez El ricino le tapa el hoyo Bueno ya que dije eso ya podemos hablar en serio y déjame contarte de dónde saqué esto porque yo no lo saqué de un libro Hace unos cuatro años llegó a la consulta una Señora Doña Remedios 68 años",
+    "dialect": "espanol mexicano (tu)",
+    "origen": "avatar propio del video fcsricino, ventana 421.2-448.4s"
+  },
+  "fcstobillo": {
+    "wav": "fish_refs/fcstobillo.wav",
+    "text": "por qué porque el agua obedece a la gravedad igual que todo en este mundo toda la noche estuviste acostado o sea horizontal y el agua que traías en las piernas se repartió por el cuerpo por eso en la mañana los tobillos casi siempreestán finos delgaditos normales y por eso tanta gente se hace la prueba a las siete de la mañana ve que no pasa nada y se queda tranquila En la noche es distinto Llevas doce",
+    "language": "es",
+    "dialect": "español mexicano (tú)",
+    "origen": "ventana 430,6-458,1 s del avatar del propio video fcstobillo"
+  },
+  "fcstaza9_av": {
+    "wav": "fish_refs/fcstaza9_av.wav",
+    "text": "es abrir las ventilas para deshacerse de él, abre las manos, abre los pies, saca la sangre a la piel y al abrirlas empieza a soltar el calor del centro y el centro baja, o sea que la taza caliente no te calienta, te enfría, te enfría por dentro, que es exactamente lo que hace falta para que la señal de dormir se dispare, es de las cosas más contraintuitivas que hay en el cuerpo y por eso casi nadie lo sabe.",
+    "language": "es"
+  },
+  "frioarch": {
+    "wav": "_v3/frio/audio/ref_archivista.wav",
+    "text": "Era oveja negra y en el inventario que Rosalía escribió a mano en la contratapa de un cuaderno de almacén figura como el bien más valioso de la casa después del alado Yo quiero que se entienda el punto de partida porque si no Nada de lo que viene después tiene sentido"
+  },
+  "claudio_cmeciclo": {
+    "wav": "fish_refs/claudio_cmeciclo.wav",
+    "text": "y el comentario más votado de todos, el que quedó primero, con 16 me gusta, dice esto. Las baterías de arranque no son recomendables para eso, se les disminuye la vida útil exponencialmente, lo adecuado es una batería de ciclo profundo, y abajo de ese hay otros 6 diciendo más o menos lo mismo, que con el refrigerador no dura ni una hora, que voy a arruinar la batería, que estoy explicando mal. Tienen razón en una parte.",
+    "language": "es"
+  },
+  "claudio_cmekit": {
+    "wav": "fish_refs/claudio_cmekit.wav",
+    "text": "Yo no te vendo nada, yo mido. Si al final de este video te sale que este equipo no es para ti, te voy a decir que no lo compres y te voy a decir por qué. Y si te sale que sí, te voy a decir exactamente qué pedir y qué precio pagar, para que no te vendan la mitad al precio del todo. Y déjame decirte de entrada lo que esto no es, en el minuto 3 y no escondido en el minuto 20. Esto no es energía gratis, yo no hago videos de motores que giran solos ni de imanes que se mueven para siempre.",
+    "language": "es"
+  },
+  "apafireants": {
+    "wav": "C:/Users/bauti/Downloads/video2/_v3/apa_voiceref.wav",
+    "text": "That is not a fight. That is a donation. And it is worse than that. When you disturb a mound and do not finish it, the colony does something that will make you throw your hat. They pick up the queen and the brood and they move. Overnight.",
+    "lang": "en",
+    "nota": "clonada del PROPIO avatar de apafireants (169.76-182.56s) — timbre identico en la costura"
+  },
+  "ohftermite_avatar": {
+    "wav": "fish_refs/ohftermite.wav",
+    "text": "by the time you can see termite damage they have usually been in your house for three to eight years So today I'm not going to show you termite damage Everybody shows you damage and damage Is the end of the story I'm going to show you the seven things you can catch before the damage in the order you're most likely to run into them And every one of them you can check yourself this weekend with a flashlight and a screwdriver And at the end I'm going to build you a little thing out of cardboard cost you nothing It's a trap",
+    "language": "en"
+  },
+  "ohf_cardboard": {
+    "wav": "fish_refs/ohf_cardboard.wav",
+    "text": "I had set my test out in the one place on that entire property, they were never going to go. So write this one down because it is the whole game. They do not come to your cardboard. You put your cardboard where they already are, damp, dark, undisturbed, touching soil. If a spot has all four of those, that is where the card goes. If it has three, it is worth a shot.",
+    "language": "en"
+  },
+  "freebuilder_jp": {
+    "wav": "fish_refs/freebuilder_jp.wav",
+    "text": "¿Qué le pasa realmente al agua cuando le tiras jabón en polvo? Porque acá hay mucho misterio y en realidad es química de cuarto grado. El jabón en polvo tiene dos cosas que trabajan a favor tuyo.",
+    "lang": "es"
+  },
+  "freebuilder_cv": {
+    "wav": "fish_refs/freebuilder_cv.wav",
+    "text": "que se cayó y nadie vio. Tú haces lo que hacemos todos. Agarras el trapo con detergente o el desinfectante que tengas a mano y las barres. En dos minutos no queda ni una. La cocina queda limpia, huele bien y tú te tomas el café tranquilo pensando que se terminó el asunto. Al otro día están de nuevo, en el mismo lugar, entrando por el mismo rincón. Entonces subes la puesta, compras el aerosol, ese que tiene un olor tan fuerte que hay que abrir la ventana media hora.",
+    "language": "es"
+  },
+  "freebuilder_ai": {
+    "wav": "fish_refs/freebuilder_ai.wav",
+    "text": "que cualquier teoría. Me llamo una señora, muy prolija a ella, la casa impecable, y el problema no era su baño principal, que lo usan cuatro personas todos los días y estaba perfecto. El problema era el baño de visitas. Ese que se usa una vez cada 15 días, estaba muchísimo peor, anillo negro grueso o lo raro al entrar y me dijo la frase que resume todo este vídeo. Tomás, si ese baño",
+    "language": "es"
+  },
+  "apayellow_av": {
+    "wav": "fish_refs/apayellow_av.wav",
+    "text": "Folks have foamed a hole in the evening and found wasps coming through a kitchen light fixture the next day. Never seal a live nest that is touching a building. Spraying the hole with a can of wasp killer. It works sometimes. It also puts poison in the soil where the dog lies down and the grandchildren play, and it kills the ones that come out to meet you while the comb of grubs hatches out later. And when she stings she puts out a smell. An alarm. A message to every sister within reach that says here, this one, right now. That is why the second sting comes so much faster than the first, and why swatting next to the nest is the worst thing a person can do. The other fact is the mower. It is almost always the mower, or a string trimmer, or a wheelbarrow The strength of the mix. The hour of the night. The way you pour it. And the light you carry. Get one of those four wrong and you are not going to kill a nest. You are going to be standing in the dark, over a hole, having just woken up three thousand of them. My grandfather had a rule"
+  },
+  "apamole_enfatico": {
+    "wav": "fish_refs/apamole_enfatico.wav",
+    "text": "My grandfather had a saying about pests that I have never been able to improve on. He said, before you set a trap, find out what the animal came for. Nine times out of 10, you are not fighting the animal. You are fighting what you are feeding him. Now hold on to that, because it is going to explain why the bait fails, and it is going to explain the $6 fix at the end. Both of those come out of the very same fact. So...",
+    "language": "en"
+  },
+  "apamole_calmo": {
+    "wav": "fish_refs/apamole_calmo.wav",
+    "text": "Off to the side of his main run, he dug out a little chamber, and he started stocking it. He would come back with a worm, bite it right behind the head, and set it in there. And the worm did not die. It could not crawl away, either. His spit has something in it that paralyzes an earthworm and leaves it alive. He piles them up like jars on a shelf, alive and helpless, and eats them over the following days. Those who have dug out nests have counted better than a thousand worms in one of those larders.",
+    "language": "en"
+  },
+  "ohfflies": {
+    "wav": "fish_refs/ohfflies.wav",
+    "text": "They walk around on top of it. They have a nice drink and they leave. You have built them a bar. The soap breaks that skin and the second they touch it, they go under and that's it. You will actually see this if you do it wrong. If you've got a jar of straight vinegar and you look close and there are flies sitting on top of it walking around, that's not a trap. That's a water feature.",
+    "language": "en"
+  },
+  "ohfstinkbug_avatar": {
+    "wav": "fish_refs/ohfstinkbug.wav",
+    "text": "That was October In the second week of January that man called me again and he was aggravated and I do not blame him He said I thought you told me they were done for the year he said I have got them in the bathroom on the curtain There is one walking across the television",
+    "language": "en"
+  },
+  "ray_rkbill": {
+    "refs": [
+      {
+        "wav": "fish_refs/ray_rkbill_1.wav",
+        "text": "Maybe you have got somewhere you are supposed to be And the card reader is already out of his pocket That is not a negotiation A negotiation is two people who can both walk away You cannot walk away He knows you cannot walk away He built the whole evening so that you cannot walk away And then he says the line that closes it He says he can do you a discount for cash"
+      },
+      {
+        "wav": "fish_refs/ray_rkbill_2.wav",
+        "text": "Drilling takes about ninety seconds and no skill whatsoever Any man alive can do it You put the bit on the shear line and you lean on it and the pins turn to dust and the cylinder spins and the door opens And here is the reason he reaches for that drill first and I want"
+      },
+      {
+        "wav": "fish_refs/ray_rkbill_3.wav",
+        "text": "That is the only number anybody ever said out loud to you on the telephone and it has already gone up from the nineteen in the advertisement Then there is emergency after hours Another ninety five because it is a Tuesday evening which the call center knew perfectly well when they quoted you Then labor and the labor is not by the hour"
       }
     ],
-    "nota": "VOZ REAL de @TallerClaudioMendoza, clonada el 20-sep-2026 del video ATIU8OUwdwg (130,9-170,4 s y 205,1-237,7 s, cortes en silencio). 15,2 cps, coincide con style.fish.cps=15. NO confundir con claudio_mendoza_s4 (row 207, otra persona, 11 cps)."
-  },
-  "ole_camp": {
-    "wav": "fish_refs/ole_camp.wav",
-    "text": "I was sixteen years old the first winter I peeled potatoes in that shack. I'm seventy-eight now. And I'm going to tell you the ten meals that kept every one of those men on his feet until the spring breakup, what each one cost, and the one trick behind every single one of them that nobody cooks with anymore.\n\nHere's how Emil did it. Saturday afternoon we'd dig a pit behind the cook shack, about three feet deep, lined with rocks. We'd build a hardwood fire in it, birch and maple, and let it burn down for three, four hours until it was nothing but a bed of glowing coals.",
     "language": "en",
-    "backend": "s2.1-pro-free",
-    "nota": "Ole (Ole's Camp Kitchen, EN/US Upper Midwest, 78). Clon zero-shot de la voz publica de Fish 'Old man' 3d40669a01e045329ab4d6d7e25ce10e (deep raspy older, storytelling) generada con s2.1-pro-free sobre el guion de olewinter; ~13,3 c/s. 26-sep-2026."
+    "wav": "fish_refs/ray_rkbill_1.wav",
+    "text": "Maybe you have got somewhere you are supposed to be And the card reader is already out of his pocket That is not a negotiation A negotiation is two people who can both walk away You cannot walk away He knows you cannot walk away He built the whole evening so that you cannot walk away And then he says the line that closes it He says he can do you a discount for cash"
   },
-  "lou_diner": {
-    "wav": "fish_refs/lou_diner.wav",
-    "text": "Fifty years I stood behind that flat-top. Six in the morning, the truckers already lined up at the counter, and every single one of them ordered hash browns. Now here's the thing nobody at home ever figured out. It's not the potato and it's not the grease. It's the water. You get the water out, and I mean all of it, and that potato turns gold and crispy like a cracker. You leave it in, and you get a gray, soggy mess stuck to your pan. Let me show you how we did it.",
+  "raygarage": {
     "language": "en",
-    "backend": "s2.1-pro-free",
-    "nota": "Lou (Lou's Diner Secrets, EN/US, 74, retired roadside-diner cook). Clon zero-shot de la voz PUBLICA de Fish 'Grandpa' 697a707402bf47e9940b95a5f85fbe94 (ganó juez ciego gpt-audio-1.5 en 2 órdenes: ~70, warm raspy, American). ASR whisper-1 = texto exacto. ~12,6 c/s. 26-sep-2026."
+    "wav": "fish_refs/ray_raygarage_1.wav",
+    "text": "It is in every automatic garage door in this country and it is there for a reason I want you to hold on to for a minute The power goes out in an ice storm and a woman needs her car A child gets a hand caught in something There is a fire in the kitchen and the garage is the way out and there is no electricity in the house That cord is the reason those stories end the way they are supposed",
+    "refs": [
+      {
+        "wav": "fish_refs/ray_raygarage_1.wav",
+        "text": "It is in every automatic garage door in this country and it is there for a reason I want you to hold on to for a minute The power goes out in an ice storm and a woman needs her car A child gets a hand caught in something There is a fire in the kitchen and the garage is the way out and there is no electricity in the house That cord is the reason those stories end the way they are supposed"
+      }
+    ],
+    "nota": "clonada del PROPIO avatar de raygarage (ventana limpia de 25,4 s a los 179,2 s). NO usar ray_rkbill: es otro registro de voz."
   },
-  "harlan": {
-    "wav": "fish_refs/harlan.wav",
-    "text": "Forty years I climbed poles for the power company. Ice storms, tornadoes, the big blackout of oh-three. And I'm going to tell you something the utility will never put on a flyer. When the grid goes down, the first hour decides everything. Not the second day. The first hour. So listen close, because number three is the one that kills people every single winter.",
-    "language": "en",
-    "backend": "s2.1-pro-free",
-    "nota": "Harlan the Lineman (EN/US Ohio, 68, retired lineman). Clon zero-shot de la voz PUBLICA de Fish 'GRANDPA' e223051b34524a48940561e9a18a2203 (warm authoritative raspy); ganó juez ciego gpt-audio en 2 órdenes (9/9) contra 5. 27-sep-2026."
+  "pinluz_avatar": {
+    "wav": "fish_refs/pinluz_avatar.wav",
+    "text": "Ese es el video Tres errores que te están inflando la factura de luz y ninguno de los tres es el cargador del teléfono Mi casa venía en 320 kilovatios hora por mes Hoy está en 2 doscientos diez y no dejé de usar nada no apagué la heladera no me bañé con agua fría no anduve a oscuras lo único que hice fue medir encontrar estos tres errores y corregirlos te los voy a mostrar los tres con el número de antes y el número de Es la idea de que los aparatos apagados te siguen chupando corriente y no es mentira es real Yo lo acabo de medir 20 vatios El problema no es que sea mentira el problema es lo que ese dato hace con vos 20 vatios las 24 horas del día son 0 48 kilovatios hora por día por mes 14 kilovatios hora y para ahorrarte esos 14 tenés que andar todas fuera del medio Vamos al segundo error que es donde está casi toda mi factura El segundo error es que miras la etiqueta y no miras el reloj Te lo muestro con la pava eléctrica que es el aparato más potente de mi cocina La pava dice 2000 vatios Con la pinza me da 9 1 amperios Es lo que más chupa de todo lo que hay acá arriba de la mesada Y cuando alguien ve ese número se asusta Ahora",
+    "language": "es"
+  },
+  "pinza_claudio": {
+    "wav": "fish_refs/pinza_claudio.wav",
+    "text": "Entonces cuando te acumulan dos meses de consumo estimado y te lo cobran todo junto en el tercero ese consumo entra de golpe en un escalón más caro Consumiste lo mismo repartido en tres facturas te salía una cosa amontonado en una te sale otra Y como tú nunca leíste el medidor no tienes con qué discutirlo Así que el arreglo de este primer error es aburrido y es la cosa más rentable de todo el video"
+  },
+  "pinza_natural": {
+    "wav": "fish_refs/pinza_natural.wav",
+    "text": "queda ahí para siempre. Y ahora el agua, manguera común, presión de manguera común y desde adentro hacia afuera, eso es lo importante, la suciedad entró de afuera hacia adentro, así que si le tiras el agua desde afuera, lo que haces es empujar la mugre más adentro y compactarla. No uses hidrolabadora, no uses la lavadora de presión del auto, nunca, la letra de aluminio no aguanta esa presión, se aplasta contra su vecino.",
+    "language": "es"
+  },
+  "pinza_enfatico": {
+    "wav": "fish_refs/pinza_enfatico.wav",
+    "text": "es el mismo día, es el mismo equipo, la misma pinza y el mismo cable. Y lo único que pasó en el medio fueron 40 minutos de trabajo míos, con la térmica abajo, con un cepillo, un balde y una manguera. 6,9, no le cargué gas, no le cambié el compresor, no le puse ninguna pieza nueva, no llame a nadie. Esa diferencia, 2,3 amperios, son alrededor de 500 vatios que ese equipo estaba tirando a la basura.",
+    "language": "es"
+  },
+  "claudio_pintermo": {
+    "wav": "fish_refs/claudio_pintermo.wav",
+    "text": "agua caliente de siempre se lleva 54. Y el número final de la factura, el de verdad, te lo voy a mostrar al final de este vídeo con la boleta en la mano, porque es el único lugar donde esto se comprueba. No cambié el termotanque, no compré ninguno nuevo, no puse paneles y nadie en esta casa se bañó con agua fría ni un solo día. Lo único que hice fue dejar de cometer cinco errores, cinco costumbres que tenía yo, que tenía mi papá y que tiene casi todo el mundo, porque nadie te las explicó nunca.",
+    "language": "es"
+  },
+  "pintermo": {
+    "wav": "fish_refs/claudio_pintermo.wav",
+    "text": "agua caliente de siempre se lleva 54. Y el número final de la factura, el de verdad, te lo voy a mostrar al final de este vídeo con la boleta en la mano, porque es el único lugar donde esto se comprueba. No cambié el termotanque, no compré ninguno nuevo, no puse paneles y nadie en esta casa se bañó con agua fría ni un solo día. Lo único que hice fue dejar de cometer cinco errores, cinco costumbres que tenía yo, que tenía mi papá y que tiene casi todo el mundo, porque nadie te las explicó nunca.",
+    "language": "es"
+  },
+  "pincalov_avatar": {
+    "wav": "fish_refs/pincalov_avatar.wav",
+    "text": "es todo lo que necesitas saber sobre cuánto va a consumir Dos aparatos con el mismo número de vatios te van a costar lo mismo por hora punto Uno puede ser más lindo más silencioso más seguro más duradero más barato de usar No Ahora te lo muestro con la pinza con cuatro aparatos distintos que están en mi casa Este es el calentador 8 9 amperios 1960 vatios Este es un panel radiante de esos finitos que se cuelgan en la pared que se vende como la opción moderna de bajo consumo Cinco 5 5 amperios 1200 vatios Este es un radiador de aceite el que parece un acordeón de metal el que todo el mundo",
+    "language": "es"
+  },
+  "pincalov": {
+    "wav": "fish_refs/pincalov_v2.wav",
+    "text": "Y cómo se encuentra ese punto justo, sin adivinar. Se pone el termostato al máximo, se deja que el cuarto llegue a la temperatura donde estás cómodo, y ahí, sin apagar nada, giras el termostato despacio hacia abajo hasta que escuchas el clic y la resistencia se corta. Ahí lo dejas. Ese es tu punto.",
+    "language": "es"
+  },
+  "claudio_definitiva": {
+    "wav": "fish_refs/claudio_definitiva.wav",
+    "text": "Ese es el video Tres errores que te están inflando la factura de luz y ninguno de los tres es el cargador del teléfono Mi casa venía en 320 kilovatios hora por mes Hoy está en 2 doscientos diez y no dejé de usar nada no apagué la heladera no me bañé con agua fría no anduve a oscuras lo único que hice fue medir encontrar estos tres errores y corregirlos te los voy a mostrar los tres con el número de antes y el número de Es la idea de que los aparatos apagados te siguen chupando corriente y no es mentira es real Yo lo acabo de medir 20 vatios El problema no es que sea mentira el problema es lo que ese dato hace con vos 20 vatios las 24 horas del día son 0 48 kilovatios hora por día por mes 14 kilovatios hora y para ahorrarte esos 14 tenés que andar todas fuera del medio Vamos al segundo error que es donde está casi toda mi factura El segundo error es que miras la etiqueta y no miras el reloj Te lo muestro con la pava eléctrica que es el aparato más potente de mi cocina La pava dice 2000 vatios Con la pinza me da 9 1 amperios Es lo que más chupa de todo lo que hay acá arriba de la mesada Y cuando alguien ve ese número se asusta Ahora",
+    "language": "es",
+    "nota": "VOZ CANONICA DE CLAUDIO — usar SIEMPRE esta, no re-clonar del audio de cada video. 87,6 s = 3 fragmentos del avatar real de pinluz (promesa / didactico / arranque enfatico), transcripcion EXACTA del ASR palabra por palabra. Validada en produccion: genero 12:51 de cola con 0 frases comidas y sin artefactos. Registrada 2026-09-10 a pedido del creador."
+  },
+  "freebuilder_fbmoscas": {
+    "wav": "fish_refs/freebuilder_fbmoscas.wav",
+    "text": "y para eso hay dos sustancias que están en tu cocina ahora mismo La primera se llama delimoneno Es el aceite que está en la cáscara de cualquier cítrico en la naranja en el limón en la mandarina Es el noventa y tantos por ciento del aceite de esa cáscara y es lo que te salta a la cara cuando la doblas"
+  },
+  "tfbdesague_cola": {
+    "wav": "fish_refs/tfbdesague_cola.wav",
+    "text": "Mil veces, del mismo polvo, cambiado en tu horno. Ese es el video. Todo lo demás son detalles. Te explico qué pasa adentro del horno, porque cuando lo entiendes, ya no se te olvida nunca. El bicarbonato de sodio es una molécula que trae agua y dióxido de carbono guardados adentro. Cuando la calientas, esa molécula no aguanta.",
+    "language": "es"
+  },
+  "tfbsifon": {
+    "wav": "fish_refs/tfbsifon_ref.wav",
+    "text": "Y de qué está hecha esa capa es toda la historia del video. No es comida. Es grasa. Pero no es grasa sola: la grasa sola es resbalosa y no se agarra tan bien. Lo que se agarra es lo que pasa cuando la grasa caliente de tu sartén se encuentra dentro del tubo con el jabón del lavatrastes y con el calcio que trae el agua dura."
+  },
+  "freebuilder_manguera": {
+    "wav": "fish_refs/freebuilder_manguera.wav",
+    "text": "Por ahí sale el agua del tanque. No sale de un solo chorro grande: sale repartida en veinte o treinta chorritos, y esos chorritos tienen dos misiones, lavar la pared de porcelana y, sobre todo, empujar el agua en círculo para que baje girando. El giro es lo que la ayuda a llenar el sifón sin aire.",
+    "nota": "Clon del PROPIO avatar de tfbmanguera (HeyGen, 15:28). Tramo calmo explicativo 415.20-437.04s. Usar para la cola de este canal."
+  },
+  "freebuilder_esponja": {
+    "wav": "fish_refs/freebuilder_esponja.wav",
+    "text": "la de plástico grueso con la tapa de seguridad la que dice que destapa en 15 minutos La vacías en el desagüe escuchas el borboteo sientes que estás haciendo algo y al día siguiente el agua baja bien baja perfecto y tú dices funcionó funcionó sí durante tres semanas Y esto es lo que pasa realmente ahí abajo",
+    "language": "es"
+  },
+  "vslcurso_tomas": {
+    "wav": "fish_refs/vslcurso_tomas.wav",
+    "text": "Haz esa cuenta ahora y después haz otra Un solo trabajo por semana a 150 dólares son 600 al mes Cuatro trabajos de 200 son 800 Dos trabajos por semana a 150 son 1200 No significa que vas a ganar eso automáticamente",
+    "language": "es",
+    "nota": "Referencia del PROPIO avatar del VSL de la landing (75332239...mp4), 68.24-89.28s, frontera de oracion, limpieza estatica highpass+afftdn (SIN dynaudnorm). Solo para empalmar el hook de ese mismo master."
+  },
+  "faarroz": {
+    "wav": "fish_refs/faarroz.wav",
+    "text": "Y se la di en dos minutos a propósito Se lo explico porque no es casualidad Yo también miro videos y me pasa lo mismo que a usted Uno entra el señor habla diez minutos doce minutos Y la receta no aparece nunca y cuando aparece le dicen el resto está en el enlace y uno se siente tomado por tonto",
+    "language": "es"
+  },
+  "fasenales17_federer": {
+    "wav": "fish_refs/fasenales17_federer.wav",
+    "text": "Fueron cuatro cosas y tres son gratis Pero se perdió un año y medio un año y medio en el que el cuerpo le estuvo hablando en un idioma que nadie le enseñó a leer Y eso es lo único que quiero hacer hoy con usted enseñarle el idioma Diecisiete palabras de ese idioma Ahora presten mucha atención a esta imagen porque es la parte más importante del video Usted vuelve a los treinta segundos y sigue ahí Se lava las manos se peina vuelve Y sigue ahí Por qué pasa eso Porque hay proteína en la orina y la proteína hace espuma igual que la clara de huevo cuando uno la bate Y le explico qué quiere decir eso de la manera más simple que puedo El riñón es un colador oscura de verdad color té cargado color refresco de cola o con un tono como rojizo comoturbio Si usted no está tomando nada que tiña y de golpe está así eso es para consultar sin esperar no la semana que viene esta semana Ahí mando la advertencia derecha sin adornos porque es de las pocas cosas de este video que no admiten paciencia",
+    "language": "es"
+  },
+  "fasilla": {
+    "wav": "fish_refs/fasilla_federer.wav",
+    "text": "Adentro del músculo del muslo, que es el que te levanta, hay dos tipos de fibras distintas, y hacen trabajos distintos. Están las fibras lentas. Esas son las de la resistencia. Son las que te sostienen mientras caminas una hora, mientras barres el patio, mientras vas y vienes por la casa. Son incansables, se fatigan poco, trabajan bajito y trabajan todo el tiempo. Esas, si tú caminas, están perfectas. Don Aurelio caminaba cuarenta minutos todos los días. Doce años sin fallar uno. Y un martes de marzo, en la sala de espera de mi consultorio, Don Aurelio no se pudo levantar de la silla. Lo intentó tres veces. A la tercera lo levantó del codo una muchacha de treinta años que esperaba turno al lado. Ochenta y un años tenía. Y las piernas de un hombre que camina cuarenta minutos por día. Con los años no perdemos los dos tipos de fibra por igual. Perdemos muchísimo más las rápidas. La pérdida de músculo con la edad tiene nombre, se llama sarcopenia, y es muy selectiva: se come primero las rápidas. Tú puedes tener las fibras lentas casi intactas a los ochenta años y haber perdido buena parte de las rápidas sin enterarte de nada. Y ahora la pregunta del millón. ¿Qué tipo de fibra usas cuando caminas por la vereda?",
+    "nota": "3 clips (didactico/relato/enfatico) de 79,2s del PROPIO avatar del video fasilla, de punto a punto, limpieza estatica highpass+afftdn (NUNCA dynaudnorm)"
+  },
+  "fcsaguanoche_av": {
+    "wav": "fish_refs/fcsaguanoche_av.wav",
+    "text": "digamos, vas a notar tres cosas en una hojita, a qué hora orinaste, cuánto salió lo que marque la jarra, y a qué hora te acostaste, y a qué hora te levantaste en la mañana, nada más, y si quieres ser muy ordenado, también lo que tomaste, el café, el vaso de agua, la sopa, el refresco, pero con lo primero ya es muchísimo, ya sé que suena latoso, tres días, pero esa hojita, esa hojita con la letra chueca de las tres de la mañana,",
+    "language": "es"
+  },
+  "fcspellizco_av": {
+    "wav": "fish_refs/fcspellizco_av.wav",
+    "text": "Y manchas que duran meses. Ese error te lo cuento al final. Y no es por hacerte la maldad, ¿eh? Es que si te lo digo ahorita, sin que entiendas lo que hay debajo de tu piel, lo vas a oír, vas a decir \"ah, órale\", y a los tres días se te olvidó. Cuando entiendas el mecanismo, ya no se te va a olvidar nunca. Y te pido una sola cosa, una nada más en todo el video: quédate hasta el final. No miente porque sea mala. Miente porque la hicieron para una piel que tú ya no tienes. Y ese resorte, eso que se gasta, tiene nombre. Y es la protagonista de este video. No es el colágeno, ¿eh? Ya sé que en este canal te he hablado mucho del colágeno, y el colágeno importa. Pero hoy no. Hoy es su prima. Pero hace algo peor. El sol hace que la piel, desesperada, trate de fabricar ligas nuevas para reponer las rotas. Y como ya te dije que de adulto la fábrica de ligas trabaja chueco, lo que fabrica sale mal. Sale hecho bola. Sale como estambre enredado. Como cuando se te enreda el estambre del tejido y ya no hay manera de sacar la hebra.",
+    "language": "es",
+    "dialect": "español mexicano (tú)",
+    "nota": "3 fragmentos de punto a punto del audio del creador (parte 1 de fcspellizco), highpass+afftdn, sin dynaudnorm"
+  },
+  "federer_definitiva": {
+    "wav": "fish_refs/federer_definitiva.wav",
+    "text": "Don Aurelio caminaba cuarenta minutos todos los días. Doce años sin fallar uno. Y un martes de marzo, en la sala de espera de mi consultorio, Don Aurelio no se pudo levantar de la silla. Lo intentó tres veces. A la tercera lo levantó del codo una muchacha de treinta años que esperaba turno al lado. Ochenta y un años tenía. Están las fibras lentas. Esas son las de la resistencia. Son las que te sostienen mientras caminas una hora, mientras barres el patio, mientras vas y vienes por la casa. Son incansables, se fatigan poco, trabajan bajito y trabajan todo el tiempo. Esas, si tú caminas, están perfectas. Las de Don Aurelio estaban perfectas. Tú ya haces este ejercicio cuarenta veces por día. La pregunta no es si lo haces. La pregunta es si lo estás haciendo a favor tuyo o en contra tuyo. Si te levantas cuarenta veces por día empujándote con los brazos, estás practicando cuarenta veces por día a no poder. Le estás enseñando a tu cuerpo, con una insistencia enorme, que las piernas no hacen falta.",
+    "language": "es",
+    "dialect": "español mexicano (tú)",
+    "nota": "VOZ CANONICA DEL DR. FEDERER — usar SIEMPRE esta en todo canal Federer en español con tuteo; no re-clonar del audio de cada video. 69.5 s = 3 fragmentos del AVATAR REAL de fasilla (historia / didactico / enfatico), de punto a punto, PCM sin comprimir, limpieza estatica, transcript exacto del guion verificado contra el ASR. Registrada 2026-09-15 a pedido del creador."
+  },
+  "fasilla_federer": {
+    "wav": "fish_refs/fasilla_federer.wav",
+    "text": "Adentro del músculo del muslo, que es el que te levanta, hay dos tipos de fibras distintas, y hacen trabajos distintos. Están las fibras lentas. Esas son las de la resistencia. Son las que te sostienen mientras caminas una hora, mientras barres el patio, mientras vas y vienes por la casa. Son incansables, se fatigan poco, trabajan bajito y trabajan todo el tiempo. Esas, si tú caminas, están perfectas. Don Aurelio caminaba cuarenta minutos todos los días. Doce años sin fallar uno. Y un martes de marzo, en la sala de espera de mi consultorio, Don Aurelio no se pudo levantar de la silla. Lo intentó tres veces. A la tercera lo levantó del codo una muchacha de treinta años que esperaba turno al lado. Ochenta y un años tenía. Y las piernas de un hombre que camina cuarenta minutos por día. Con los años no perdemos los dos tipos de fibra por igual. Perdemos muchísimo más las rápidas. La pérdida de músculo con la edad tiene nombre, se llama sarcopenia, y es muy selectiva: se come primero las rápidas. Tú puedes tener las fibras lentas casi intactas a los ochenta años y haber perdido buena parte de las rápidas sin enterarte de nada. Y ahora la pregunta del millón. ¿Qué tipo de fibra usas cuando caminas por la vereda?",
+    "language": "es",
+    "nota": "ref por-video de fasilla (historico). Canonica = federer_definitiva."
+  },
+  "rowe": {
+    "wav": "fish_refs/rowe.wav",
+    "text": "answer is surprisingly simple. But there is one thing I've noticed again and again with my patients, and almost nobody talks about it. When your body starts giving you tiny warning signs, we usually ignore them because they seem harmless. That's the mistake. The interesting part is that one of the earliest signs can appear years before you feel anything is actually wrong. And once you know what to look for, it becomes almost",
+    "language": "en"
+  },
+  "federer_s4": {
+    "wav": "fish_refs/federer_s4.wav",
+    "text": "Me pasó durante años, escuchaba un ruido extraño, asumía que era algo grave y terminaba desmontando medio coche. Hasta que aprendí a mirar primero lo simple, acércate un poco, ¿ves esta conexión de aquí? Si tiene apenas un poco de juego, puede provocar vibraciones, fallos e incluso hacerte pensar que el motor está por romperse. Y no, no necesitas una herramienta especial, solo paciencia y mirar bien. Parece una tontería.",
+    "language": "es"
+  },
+  "loretta": {
+    "wav": "fish_refs/loretta.wav",
+    "text": "Oh, now put that camera right here, honey, so they can see it. This is a chess pie. My mother made this one every single Sunday. And I'll be honest with you, I haven't seen one at a potluck in, oh, 30 years? Maybe more. Three eggs, a stick of butter, a spoonful of cornmeal, and a little splash of vinegar. That's it. Now the vinegar, that's the part nobody believes me about. You don't taste it, you just don't. Here, look at that. See how it wobbles in the middle? That's how you know.",
+    "language": "en"
+  },
+  "yc_narrator": {
+    "wav": "fish_refs/yc_narrator.wav",
+    "text": "On a Saturday morning in 1963, a nine-year-old in Dayton, Ohio could take a quarter out of the coffee can on the kitchen shelf, ride his bike two miles across town to the movie theater, and sit in the dark for three and a half hours. Not one adult on earth knew exactly where he was. Nobody called it neglect. They called it Saturday. Today, a parent who did that could get a knock on the door.",
+    "lang": "en",
+    "note": "Yesterday's Classroom (draft:yesterdaysclassroom). Take de la voz publica Fish 'History' 27842b9124fd471cb464944c5d66faa3 (male, old, American), re-clonado 28-sep-2026."
+  },
+  "loretta_amy": {
+    "wav": "fish_refs/loretta_amy.wav",
+    "text": "Now honey, I have been baking pies for the church supper since 1964 and I'll tell you something nobody tells you anymore. That chess pie right there, three eggs, a stick of butter, a spoonful of cornmeal and a little splash of vinegar, that's it. Folks at Zion Methodist used to fight over the last slice, I'm not kidding. And the funny thing is, I haven't seen one at a potluck in oh 30 years, so let me show you how my mother made it and why that little bit of vinegar matters more than you'd think.",
+    "language": "en"
+  },
+  "hank": {
+    "wav": "fish_refs/hank.wav",
+    "text": "Alright, y'all. It's about six in the morning out here in Cameron Parish, and I'm standing at the edge of a marsh that, twenty years ago, was not a marsh anymore. It was mud. Just open, stinking mud. And the thing that ate it is swimming right over there. Now, I'm not a scientist. I'm just a guy from Louisiana with a truck and too many questions. But I wanted to see this with my own eyes.",
+    "lang": "en",
+    "note": "Hank Out Back (draft:hankoutback). Take de la voz publica Fish 'Aged Character Storyteller' 4b6559112e9348bc9bad516515a38eff, re-clonado 28-sep-2026 (gano ranking de 10 por gpt-audio)."
+  },
+  "hank_el": {
+    "wav": "fish_refs/hank_el.wav",
+    "text": "Alright, it's a little after six in the morning down here in Terrebonne Parish, and I want you to look at this water right here. Twenty-some years ago, this wasn't water. It was marsh, grass you could walk on, if you were dumb enough. And the thing that turned it into this, well, it's swimming right over there. I'm Hank. I'm not a scientist, I'm just a guy from Louisiana with an old truck and way too many questions.",
+    "lang": "en",
+    "note": "Hank Out Back v2 (29-sep-2026): diseñada en ElevenLabs Voice Design por el creador (voz sintética, no persona real), clonada en Fish. Reemplaza a 'hank' (sonaba IA)."
+  },
+  "ahnight": {
+    "wav": "fish_refs/ahnight.wav",
+    "text": "Alright, it's a little after 6 in the morning down here in Terrebonne Parish, and I want you to look at this water right here. 20 some years ago, this wasn't water, it was marsh, grass you could walk on, if you were dumb enough, and the thing that turned it into this, well, it's swimming right over there. I'm Hank, I'm not a scientist, I'm just a guy from Louisiana with an old truck and way too many questions.",
+    "language": "en"
+  },
+  "ole": {
+    "wav": "fish_refs/ole.wav",
+    "text": "And by the end of this video I'll show you how to do the exact same thing in your own kitchen with no hole in the yard at all. So pour yourself a cup of coffee and let me take you back to that cook shack. Now before I show you the trick you have to understand why beans mattered so much in those camps. A lumberjack working in the timber at 20 below burned more food in a day than you would believe. The old cooks figured it at seven or eight thousand calories. You couldn't feed that with meat. Meat was expensive. It was heavy to haul in by sled and half the winter you didn't have any fresh.",
+    "language": "en"
   }
 }

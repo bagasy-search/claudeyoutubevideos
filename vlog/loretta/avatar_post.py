@@ -2,7 +2,7 @@
 # (correlación de la envolvente del audio que devolvió RunPod contra el reel.wav que se le mandó) → _v3/lorham_avwin.json.
 # Compuerta: dur(mp4) ≈ dur(reel.wav) (cap medido ~600 s); si viene corto, NO se asume nada: exit 2.
 import json, subprocess, sys, numpy as np, os
-S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lor3/"
+S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lnet/"
 SRC, WAV = R + f"out/{S}_avatar/reel.mp4", R + f"out/{S}_avatar/reel.wav"
 dur = lambda f: float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], capture_output=True, text=True).stdout)
 dm, dw = dur(SRC), dur(WAV)

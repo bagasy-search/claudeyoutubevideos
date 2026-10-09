@@ -1,6 +1,6 @@
 # Post de los clips LTX: vlog/<slug>/ltx/out/<id>.mp4 → public/vid/<slug>/ (1920x1080 30/1 CFR mudo, sin cola negra) + foley d_* + hoja QC. SLUG=x python vlog/loretta/ltx_post.py
 import json, os, re, subprocess, sys
-S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lor3/"; SRC = R + f"vlog/{S}/ltx/out/"; DST = R + f"public/vid/{S}/"; QC = R + f"_v3/{S}_ltxqc/"
+S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lnet/"; SRC = R + f"vlog/{S}/ltx/out/"; DST = R + f"public/vid/{S}/"; QC = R + f"_v3/{S}_ltxqc/"
 os.makedirs(DST, exist_ok=True); os.makedirs(QC, exist_ok=True); H = 0x08000000
 def run(a, **k): return subprocess.run(a, capture_output=True, text=True, creationflags=H, **k)
 ids = sys.argv[1:] or sorted(f[:-4] for f in os.listdir(SRC) if f.endswith(".mp4"))

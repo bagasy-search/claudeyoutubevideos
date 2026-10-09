@@ -2,7 +2,7 @@
 # de fotos y stock (_v3/<slug>_img*.jpg, _v3/<slug>_stock.jpg) con el _last.jpg de cada stock. SLUG=x python vlog/loretta/post_imgs.py
 import glob, os, subprocess, sys
 from PIL import Image
-S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lor3/"; I = R + f"public/img/{S}/"
+S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lnet/"; I = R + f"public/img/{S}/"
 for f in glob.glob(I + "*.png"): Image.open(f).convert("RGB").save(f[:-4] + ".jpg", quality=90); os.remove(f)
 for f in glob.glob(R + f"vlog/{S}/M1/anc/K*.png"):
     n = os.path.basename(f)[1:-4]
