@@ -1,0 +1,161 @@
+[
+ {
+  "name": "ov01a",
+  "c": "FabDato",
+  "props": {
+   "num": "4",
+   "unidad": "de cada 5",
+   "txt": "son fábricas de mosquitos",
+   "img": "ca4",
+   "alerta": true
+  }
+ },
+ {
+  "name": "ov01b",
+  "c": "FabDato",
+  "props": {
+   "num": "4",
+   "unidad": "de cada 5",
+   "txt": "son fábricas de mosquitos",
+   "img": "ca4",
+   "alerta": true
+  }
+ },
+ {
+  "name": "ov02a",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Por qué vuelve",
+   "centro": "agua quieta",
+   "etapas": [
+    {
+     "img": "pq5",
+     "txt": "huevos en el agua"
+    },
+    {
+     "img": "pq1",
+     "txt": "larvas"
+    },
+    {
+     "img": "g7",
+     "txt": "mosquito adulto"
+    },
+    {
+     "img": "g10",
+     "txt": "te pica"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov02b",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Por qué vuelve",
+   "centro": "agua quieta",
+   "etapas": [
+    {
+     "img": "pq5",
+     "txt": "huevos en el agua"
+    },
+    {
+     "img": "pq1",
+     "txt": "larvas"
+    },
+    {
+     "img": "g7",
+     "txt": "mosquito adulto"
+    },
+    {
+     "img": "g10",
+     "txt": "te pica"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov03a",
+  "c": "FabCalendario",
+  "props": {
+   "cada": 2,
+   "txt": "el agua del perro",
+   "title": "El bebedero"
+  }
+ },
+ {
+  "name": "ov03b",
+  "c": "FabCalendario",
+  "props": {
+   "cada": 2,
+   "txt": "el agua del perro",
+   "title": "El bebedero"
+  }
+ },
+ {
+  "name": "ov04a",
+  "c": "FabPasos",
+  "props": {
+   "title": "El plato de la maceta",
+   "pasos": [
+    {
+     "img": "r1_8",
+     "txt": "saca el agua primero"
+    },
+    {
+     "img": "r2_2",
+     "txt": "arena de construcción"
+    },
+    {
+     "img": "r2_3",
+     "txt": "humedece la arena"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov04b",
+  "c": "FabPasos",
+  "props": {
+   "title": "El plato de la maceta",
+   "pasos": [
+    {
+     "img": "r1_8",
+     "txt": "saca el agua primero"
+    },
+    {
+     "img": "r2_2",
+     "txt": "arena de construcción"
+    },
+    {
+     "img": "r2_3",
+     "txt": "humedece la arena"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov05a",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "r3_1",
+   "despues": "r3_8",
+   "nota": "el agua de arriba que no ves"
+  }
+ },
+ {
+  "name": "ov07b",
+  "c": "FabRuta",
+  "props": {
+   "bicho": "mosquito",
+   "desde": {
+    "img": "ca5",
+    "txt": "el agua del patio"
+   },
+   "hasta": {
+    "img": "r4_8",
+    "txt": "la cama de los chicos"
+   },
+   "corte": "el tul mosquitero"
+  }
+ }
+]

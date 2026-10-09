@@ -1,0 +1,221 @@
+[
+ {
+  "c": "ClVideoRef",
+  "from": 529,
+  "dur": 60,
+  "props": {
+   "thumb": "img/fumosquito/th_fumoscas.jpg",
+   "title": "Cómo sacamos las moscas de la cocina",
+   "tag": "VIDEO ANTERIOR",
+   "bed": "vid/fumosquito/bed_0.mp4#64"
+  },
+  "t": 17.63,
+  "frase": "sacamos las moscas de la cocina"
+ },
+ {
+  "c": "FabDato",
+  "from": 1913,
+  "dur": 210,
+  "props": {
+   "num": "4",
+   "unidad": "de cada 5",
+   "txt": "son fábricas de mosquitos",
+   "img": "ca4",
+   "alerta": true,
+   "bed": "vid/fumosquito/bed_1.mp4#214"
+  },
+  "t": 63.78,
+  "frase": "Antes de salir al patio"
+ },
+ {
+  "c": "FabCiclo",
+  "from": 4100,
+  "dur": 210,
+  "props": {
+   "title": "Por qué vuelve",
+   "centro": "agua quieta",
+   "etapas": [
+    {
+     "img": "pq5",
+     "txt": "huevos en el agua"
+    },
+    {
+     "img": "pq1",
+     "txt": "larvas"
+    },
+    {
+     "img": "g7",
+     "txt": "mosquito adulto"
+    },
+    {
+     "img": "g10",
+     "txt": "te pica"
+    }
+   ],
+   "bed": "vid/fumosquito/bed_2.mp4#214"
+  },
+  "t": 136.66,
+  "frase": "Un plato de maceta lleno saca"
+ },
+ {
+  "c": "FabCalendario",
+  "from": 7345,
+  "dur": 240,
+  "props": {
+   "cada": 2,
+   "txt": "el agua del perro",
+   "title": "El bebedero",
+   "bed": "vid/fumosquito/bed_3.mp4#244"
+  },
+  "t": 244.83,
+  "frase": "se cambia cada dos días"
+ },
+ {
+  "c": "FabPasos",
+  "from": 8804,
+  "dur": 300,
+  "props": {
+   "title": "El plato de la maceta",
+   "pasos": [
+    {
+     "img": "r1_8",
+     "txt": "saca el agua primero"
+    },
+    {
+     "img": "r2_2",
+     "txt": "arena de construcción"
+    },
+    {
+     "img": "r2_3",
+     "txt": "humedece la arena"
+    }
+   ],
+   "bed": "vid/fumosquito/bed_4.mp4#304"
+  },
+  "t": 293.46,
+  "frase": "Es llenar el plato con arena húmeda"
+ },
+ {
+  "c": "FabAntesDespues",
+  "from": 9960,
+  "dur": 240,
+  "props": {
+   "antes": "r3_1",
+   "despues": "r3_8",
+   "nota": "el agua de arriba que no ves",
+   "bed": "vid/fumosquito/bed_5.mp4#244"
+  },
+  "t": 332.01,
+  "frase": "Una canaleta tapada con hojas guarda agua"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 12077,
+  "dur": 240,
+  "props": {
+   "title": "Qué mata al mosquito",
+   "no": {
+    "img": "g13",
+    "txt": "el espiral en el cuarto"
+   },
+   "si": {
+    "img": "r4_1",
+    "txt": "el aire toda la noche"
+   },
+   "bed": "vid/fumosquito/bed_6.mp4#244"
+  },
+  "t": 402.57,
+  "frase": "El ventilador no mata a nadie"
+ },
+ {
+  "c": "FabRuta",
+  "from": 12432,
+  "dur": 270,
+  "props": {
+   "bicho": "mosquito",
+   "desde": {
+    "img": "ca5",
+    "txt": "el agua del patio"
+   },
+   "hasta": {
+    "img": "r4_8",
+    "txt": "la cama de los chicos"
+   },
+   "corte": "el tul mosquitero",
+   "bed": "vid/fumosquito/bed_7.mp4#274"
+  },
+  "t": 414.41,
+  "frase": "El tul va donde el mosquito puede entrar"
+ },
+ {
+  "c": "ClBookPage",
+  "from": 13673,
+  "dur": 240,
+  "props": {
+   "page": "img/fumosquito/page17.jpg",
+   "pageNo": 17,
+   "stamp": "cada cuántos días, la arena",
+   "bed": "vid/fumosquito/bed_8.mp4#244"
+  },
+  "t": 455.76,
+  "frase": "Las medidas exactas están en la página diecisiete"
+ },
+ {
+  "c": "ClCheck",
+  "from": 18065,
+  "dur": 300,
+  "props": {
+   "title": "Antes de Fumigar: revisión de la noche",
+   "items": [
+    "hay agua quieta en el patio",
+    "la ventana tiene tul",
+    "un plato con agua y una gota de jabón"
+   ],
+   "bed": "vid/fumosquito/bed_9.mp4#304"
+  },
+  "t": 602.17,
+  "frase": "la revisión de la noche"
+ },
+ {
+  "c": "ClQRCard",
+  "from": 18725,
+  "dur": 210,
+  "props": {
+   "qr": "img/fumosquito/qr.jpg",
+   "cover": "img/fumosquito/gift_cover.jpg",
+   "kicker": "GRATIS",
+   "text": "la hoja de la revisión",
+   "bed": "vid/fumosquito/bed_10.mp4#214"
+  },
+  "t": 624.16,
+  "frase": "apuntas el celular a este código"
+ },
+ {
+  "c": "ClQRCard",
+  "from": 19033,
+  "dur": 210,
+  "props": {
+   "qr": "img/fumosquito/qr.jpg",
+   "cover": "img/fumosquito/book_cover.jpg",
+   "kicker": "EL MANUAL DEL FUMIGADOR",
+   "text": "66 arreglos, 27 dólares",
+   "bed": "vid/fumosquito/bed_11.mp4#214"
+  },
+  "t": 634.43,
+  "frase": "los sesenta y seis arreglos"
+ },
+ {
+  "c": "ClVideoRef",
+  "from": 19865,
+  "dur": 60,
+  "props": {
+   "thumb": "img/fumosquito/th_fucucas10.jpg",
+   "title": "Dónde se esconden las cucarachas",
+   "tag": "PRÓXIMO VIDEO",
+   "next": true,
+   "bed": "vid/fumosquito/bed_12.mp4#64"
+  },
+  "t": 662.16,
+  "frase": "La semana que viene te muestro cuál"
+ }
+]

@@ -1,0 +1,15 @@
+[
+ {"c":"ClVideoRef","frase":"sacamos las moscas de la cocina","dur":2,"props":{"thumb":"img/fumosquito/th_fumoscas.jpg","title":"Cómo sacamos las moscas de la cocina","tag":"VIDEO ANTERIOR"}},
+ {"c":"FabDato","frase":"Antes de salir al patio","dur":7,"props":{"num":"4","unidad":"de cada 5","txt":"son fábricas de mosquitos","img":"ca4","alerta":true}},
+ {"c":"FabCalendario","frase":"se cambia cada dos días","dur":8,"props":{"cada":2,"txt":"el agua del perro","title":"El bebedero"}},
+ {"c":"FabPasos","frase":"Es llenar el plato con arena húmeda","dur":10,"props":{"title":"El plato de la maceta","pasos":[{"img":"r1_8","txt":"saca el agua primero"},{"img":"r2_2","txt":"arena de construcción"},{"img":"r2_3","txt":"humedece la arena"}]}},
+ {"c":"FabAntesDespues","frase":"Una canaleta tapada con hojas guarda agua","dur":8,"props":{"antes":"r3_1","despues":"r3_8","nota":"el agua de arriba que no ves"}},
+ {"c":"FabCiclo","frase":"Un plato de maceta lleno saca","dur":7,"props":{"title":"Por qué vuelve","centro":"agua quieta","etapas":[{"img":"pq5","txt":"huevos en el agua"},{"img":"pq1","txt":"larvas"},{"img":"g7","txt":"mosquito adulto"},{"img":"g10","txt":"te pica"}]}},
+ {"c":"FabSiNo","frase":"El ventilador no mata a nadie","dur":8,"props":{"title":"Qué mata al mosquito","no":{"img":"g13","txt":"el espiral en el cuarto"},"si":{"img":"r4_1","txt":"el aire toda la noche"}}},
+ {"c":"FabRuta","frase":"El tul va donde el mosquito puede entrar","dur":9,"props":{"bicho":"mosquito","desde":{"img":"ca5","txt":"el agua del patio"},"hasta":{"img":"r4_8","txt":"la cama de los chicos"},"corte":"el tul mosquitero"}},
+ {"c":"ClBookPage","frase":"Las medidas exactas están en la página diecisiete","dur":8,"props":{"page":"img/fumosquito/page17.jpg","pageNo":17,"stamp":"cada cuántos días, la arena"}},
+ {"c":"ClCheck","frase":"la revisión de la noche","dur":10,"props":{"title":"Antes de Fumigar: revisión de la noche","items":["hay agua quieta en el patio","la ventana tiene tul","un plato con agua y una gota de jabón"]}},
+ {"c":"ClQRCard","frase":"apuntas el celular a este código","dur":7,"props":{"qr":"img/fumosquito/qr.jpg","cover":"img/fumosquito/gift_cover.jpg","kicker":"GRATIS","text":"la hoja de la revisión"}},
+ {"c":"ClQRCard","frase":"los sesenta y seis arreglos","dur":7,"props":{"qr":"img/fumosquito/qr.jpg","cover":"img/fumosquito/book_cover.jpg","kicker":"EL MANUAL DEL FUMIGADOR","text":"66 arreglos, 27 dólares"}},
+ {"c":"ClVideoRef","frase":"La semana que viene te muestro cuál","dur":2,"props":{"thumb":"img/fumosquito/th_fucucas10.jpg","title":"Dónde se esconden las cucarachas","tag":"PRÓXIMO VIDEO","next":true}}
+]

@@ -1,0 +1,31 @@
+{
+  "titulo": "Así Saca un Fumigador los Mosquitos de la Casa Sin Espirales ni Aerosol",
+  "minutos": 12,
+  "voz": "claudio_definitiva",
+  "amb": {
+    "GANCHO": ["sfx_pro/amb/amb_indoor_generic.flac"],
+    "CASA": ["sfx_pro/amb/amb_suburb_backyard.flac"],
+    "PROMESA": ["sfx_pro/amb/amb_indoor_generic.flac"],
+    "POR_QUE": ["sfx_pro/amb/amb_suburb_backyard.flac"],
+    "ALMACEN": ["sfx_pro/amb/amb_indoor_generic.flac"],
+    "ARREGLO1": ["sfx_pro/amb/amb_suburb_backyard.flac"],
+    "ARREGLO2": ["sfx_pro/amb/amb_suburb_backyard.flac"],
+    "ARREGLO3": ["sfx_pro/amb/amb_suburb_backyard.flac"],
+    "ARREGLO4": ["sfx_pro/amb/amb_indoor_generic.flac"],
+    "ARREGLO5": ["sfx_pro/amb/amb_indoor_generic.flac"],
+    "CAFE": ["sfx_pro/amb/amb_indoor_generic.flac"],
+    "AGUA_OCULTA": ["sfx_pro/amb/amb_suburb_backyard.flac"],
+    "MANTENER": ["sfx_pro/amb/amb_indoor_generic.flac"],
+    "CIERRE": ["sfx_pro/amb/amb_indoor_generic.flac"]
+  },
+  "foley": {
+    "GANCHO": [["stir_coffee.flac", 1.5]],
+    "ARREGLO1": [["bucket_pour.flac", 2.0], ["water_pour_stream.flac", 12.0]],
+    "ARREGLO2": [["powder_pour.flac", 3.0]],
+    "ARREGLO3": [["water_tub_empty.flac", 4.0], ["scrub_pad.flac", 11.0]],
+    "ARREGLO4": [["valve_squeak.flac", 2.0]],
+    "ARREGLO5": [["rubber_stretch.flac", 5.0], ["paper_crinkle.flac", 14.0]],
+    "CAFE": [["stir_cup.flac", 2.0]],
+    "CIERRE": [["paper_wrinkle.flac", 3.0]]
+  }
+}

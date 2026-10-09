@@ -1,0 +1,78 @@
+[GANCHO] El espiral lo respiras tú. Esto lo odian ellos.
+[GANCHO] Una cucharada de café molido, seca, en un plato de barro, y el humito que sube. Eso es lo primero que ves en este video. Y ya te adelanto una cosa: ese humito solo no alcanza.
+[GANCHO] La semana pasada sacamos las moscas de la cocina en la casa de los Ramírez. Hoy volvemos, de noche, y el problema es otro.
+[GANCHO] Mateo, el más chico, amaneció con picaduras en los brazos y en la cara. Siete, contadas. Y Jorge ya tenía el espiral en la mano, para prenderlo en el cuarto de los chicos.
+[GANCHO] Le dije que no. Porque el espiral no se lo llevas al mosquito: se lo llevas al que duerme.
+[CASA] Vamos a ver qué pasó esta noche en esta casa, cuarto por cuarto, y qué hay en el patio que no se ve.
+[CASA] Porque el mosquito que te pica de noche no llega volando desde la calle. Nació a metros de tu cama.
+[CASA] Nació en agua quieta: en el plato de una maceta, en un balde olvidado, en una canaleta tapada, en un neumático en el fondo del patio.
+[CASA] Antes de salir al patio, miramos el cuarto. Ahí está la escena de esta noche: dos camas, una ventana abierta sin tela, y la luz del pasillo quedando encendida. Afuera, en el patio, hay cinco recipientes con agua. Cuatro son fábricas.
+[PROMESA] Hoy te muestro cómo se sacan los mosquitos de una casa sin espiral y sin aerosol. Son cinco cosas, y no te cuestan casi nada.
+[PROMESA] Primero cerramos las fábricas de mosquitos. Después armamos la barrera para los que entren. En ese orden.
+[PROMESA] Lo que pides en la ferretería o en el almacén son tres cosas: un tul mosquitero de dos metros, un ventilador de pie y un paquete de café molido.
+[PROMESA] Nada de esto necesita que contrates a nadie, ni que compres un equipo. Es trabajo de una tarde, y después son cinco minutos por semana.
+[POR_QUE] Soy Claudio. Treinta años de fumigador, en casas, restaurantes y hoteles. Y te voy a explicar por qué ningún espiral le gana a un balde.
+[POR_QUE] Una mosquito pone entre cien y trescientos huevos por vez. Y los pone en agua quieta. Sin agua quieta, no hay mosquito.
+[POR_QUE] Piensa en cada recipiente con agua como una fábrica. Un plato de maceta lleno saca cientos de mosquitos por semana. Un neumático, más.
+[POR_QUE] Y la fábrica trabaja de noche y de día, mientras tú duermes. El espiral mata al que ya te está picando. La fábrica sigue produciendo.
+[POR_QUE] Y hay una razón más para hacerlo en orden. El aerosol y el espiral no distinguen: matan al mosquito, y también te llenan el cuarto de humo a ti. La vuelta del agua no tiene ese problema.
+[POR_QUE] Por eso el orden importa tanto: primero se cierra la fábrica, y después se protege el cuarto.
+[ALMACEN] Antes de empezar, pasamos por el almacén de la esquina. Son tres cosas.
+[ALMACEN] Buenas tardes. Necesito un tul mosquitero de dos metros, un ventilador de pie y un paquete de café molido.
+[ALMACEN] En el Manual te dejé esta frase escrita, para que la leas tal cual en la ferretería: "Necesito un tul mosquitero de 2 metros, un ventilador de pie y un paquete de café molido".
+[ALMACEN] Y fíjate en el tul: tiene que ser tul mosquitero, y no tela. La tela no deja pasar el aire, y en una noche de calor la vas a terminar sacando.
+[ALMACEN] Y el ventilador: cualquiera de pie sirve, no hace falta el más caro. Lo que importa es que mueva el aire a la altura de la cama, no que tenga cien velocidades.
+[ARREGLO1] Primer arreglo, y es el más importante de todos. La vuelta del agua.
+[ARREGLO1] Una vez por semana, das la vuelta al patio y buscas todo lo que tenga agua quieta. Baldes, botellas, juguetes de los chicos, tapas, el neumático que quedó de adorno.
+[ARREGLO1] Todo lo que junte agua se vacía y se guarda boca abajo, o se tira. Con darle la vuelta al balde ya está: el mosquito no pone huevos en un balde sin agua.
+[ARREGLO1] Y hay uno que casi todos olvidan: el bebedero de Bruno. El agua del perro se cambia cada dos días, aunque parezca limpia.
+[ARREGLO1] No es por la mugre. Es porque a los dos días, en esa agua, ya puede haber huevos.
+[ARREGLO1] La vuelta del agua no es limpiar. Es buscar agua. Das la vuelta al patio con el ojo puesto en lo único que importa: lo que pueda juntar agua de lluvia o de riego.
+[ARREGLO1] Y el error más común es hacerlo una vez, al principio del verano, y no volver. En una semana, si llueve, todo se llena otra vez. Por eso es una vuelta, y no una limpieza.
+[ARREGLO2] Segundo arreglo, y es el que casi nadie hace. Los platos de las macetas.
+[ARREGLO2] Casi todas las macetas tienen abajo un plato con agua. Y ese plato es, para el mosquito, la mejor fábrica de la casa: sombra, agua, y quieta.
+[ARREGLO2] La solución no es secar la planta. Es llenar el plato con arena húmeda en vez de agua.
+[ARREGLO2] La planta toma el agua de la arena cuando la necesita. Y el mosquito, por más que quiera, no tiene dónde poner los huevos: la arena no es agua.
+[ARREGLO2] Y ojo con una cosa: si el plato ya está lleno de agua, la arena no sirve. Hay que sacar el agua primero, después poner la arena, y humedecer la arena. Si no, el mosquito pone los huevos sobre el agua que quedó arriba.
+[ARREGLO2] Un poco de arena de construcción, húmeda, en cada plato. Y se acabó ese problema.
+[ARREGLO3] Tercer arreglo. Las canaletas y los desagües del patio. Éste es el que no se ve.
+[ARREGLO3] Una canaleta tapada con hojas guarda agua en un canal de diez metros, y tú no la ves porque está arriba.
+[ARREGLO3] Una vez al mes subes y la destapas con la mano o con una varilla. Y el desagüe del patio: el agua tiene que correr. Una rejilla tapada, con agua adentro, es una fábrica más.
+[ARREGLO3] Y revisa también el caño que baja del techo: a veces termina en un balde o en un hueco de cemento que se llena y nadie mira.
+[ARREGLO3] La regla es simple: el agua del patio corre, o se va. No se queda quieta.
+[ARREGLO4] Cuarto arreglo, y éste es dentro del cuarto. El ventilador.
+[ARREGLO4] Un ventilador de pie, apuntando a la cama, en velocidad media. Y lo dejas prendido toda la noche.
+[ARREGLO4] El mosquito es un bicho liviano. Con viento vuela mal: la corriente se lo lleva y no llega a aterrizar en ti.
+[ARREGLO4] Y hay una segunda razón, que casi nadie sabe. El mosquito te encuentra por tu olor. Con el aire moviéndose, tu olor se dispersa y no llega a su antena.
+[ARREGLO4] La velocidad importa, y por eso te digo media. En baja, el aire no llega a la cama. En alta, es incómodo y lo apagas a la hora. La media es la que se aguanta toda la noche.
+[ARREGLO4] El ventilador no mata a nadie. Te saca el olor y te saca el aterrizaje. Y eso, en una habitación, es la mitad del trabajo.
+[ARREGLO5] Quinto arreglo. El tul mosquitero. Ésa es la barrera.
+[ARREGLO5] El tul va donde el mosquito puede entrar: en la ventana abierta, o en la cama, por la noche.
+[ARREGLO5] Si la ventana no tiene tela mosquitera, el tul le pone esa tela. Se corta un poco más grande, se sujeta con chinches o con cinta, y tiene que quedar tirante.
+[ARREGLO5] Y si no quieres tocar la ventana, el tul va directo sobre la cama, como un pabellón, colgado de las cuatro puntas. Funciona igual de bien.
+[ARREGLO5] Una cosa que aprendí con los años: el tul se limpia una vez por semana con un trapo húmedo, sin mojarlo del todo. Si se llena de polvo, el aire no pasa, y en dos noches lo sacas.
+[CAFE] Nos sentamos un momento. Lucía nos hizo café, y me siento en la mesa de la cocina.
+[CAFE] Las medidas exactas están en la página diecisiete del Manual del Fumigador: cada cuántos días se cambia el agua, cuánta arena va en el plato, y cómo se corta el tul.
+[CAFE] Y ahora te cumplo lo que prometí al principio. El café molido.
+[CAFE] Una cucharada de café molido, seco, en un plato de barro, y el humo que larga mientras se quema. El humo tapa un poco tu olor, y eso ayuda un rato. Una hora, dos.
+[CAFE] Pero no reemplaza al mosquitero, y no cierra ninguna fábrica. Si dejas el plato de café y el balde lleno, el mosquito te sigue naciendo en el patio. El café es un empujón, no un arreglo.
+[CAFE] Y te digo una cosa más, porque me la preguntan siempre: las plantas que venden como repelentes, la citronela en maceta, casi no hacen nada. Es casi un mito. No cuentes con ellas.
+[CAFE] Sofía me preguntó por qué el mosquito la busca a ella y no a Mateo. Le dije la verdad: a unos los pica más por el olor del cuerpo, y no hay nada que lo explique del todo. Por eso el ventilador les sirve a los dos.
+[AGUA_OCULTA] Si hiciste todo esto y siguen apareciendo muchos mosquitos, hay una fábrica que no encontraste. Y hay cuatro lugares que casi nadie mira.
+[AGUA_OCULTA] El tanque de agua sin tapa. Así esté arriba del techo, si está abierto, es la fábrica más grande de la casa.
+[AGUA_OCULTA] El fondo de un pozo, la rejilla del lavadero, y el agua que junta la base del aire acondicionado.
+[AGUA_OCULTA] Para el tanque hay una solución simple: una tapa que cierre, o una tela mosquitera atada arriba. El tanque tapado no produce nada.
+[AGUA_OCULTA] Y no te olvides de lo de al lado: el patio del vecino también cuenta. El mosquito no respeta el muro.
+[MANTENER] Lo que mantiene todo esto en pie es una sola costumbre: la vuelta del agua, cada semana, todo el verano.
+[MANTENER] Y los tanques siempre tapados. Con una tapa que cierre, y no con una chapa encima.
+[MANTENER] Si en tu zona hay dengue, zika o chikungunya, hay algo que no se negocia: si alguien de la casa amanece con fiebre alta y dolor en el cuerpo, va al médico. Eso no lo arregla ningún fumigador.
+[MANTENER] Y si te vas de viaje, antes de cerrar la casa, das la vuelta del agua. Un patio con agua quieta dos semanas vuelve lleno de mosquitos.
+[MANTENER] El mosquito se previene en el patio. La enfermedad se atiende en el consultorio. Cada cosa en su lugar.
+[CIERRE] Y ahora, la hoja gratis que te dejé. Se llama "Antes de Fumigar, la revisión de la noche".
+[CIERRE] Son tres pruebas, y las haces esta noche, en cinco minutos. La del patio, la de la ventana, y una tercera que no mostré en ningún video: un plato con agua y una gota de detergente al lado de la cama. Si al otro día hay huevos ahí, la fábrica está adentro. Si no hay nada, está afuera.
+[CIERRE] La imprimes, y apuntas el celular a este código, o tocas el primer link de la descripción.
+[CIERRE] Y si tu casa tiene de todo, en esa misma página está el Manual del Fumigador: los sesenta y seis arreglos de la casa, con lo que pides en el almacén y las medidas exactas. Veintisiete dólares, un solo pago, y si en siete días no te sirve, te devuelven el dinero.
+[CIERRE] Ah, y una cosa más. Todo esto lo aprendí sacando bichos de casas como la de los Ramírez, y hay uno peor que el mosquito.
+[CIERRE] La cucaracha. Esa no pica, pero hay un lugar en tu cocina, uno solo, donde se cría, y casi nadie lo revisa. La semana que viene te muestro cuál es.
+[CIERRE] Y ahora cuéntame tú. ¿Dónde te pican más: en los brazos, en los tobillos, o en la cara? Escríbemelo en los comentarios. Leo todos.
+[CIERRE] Un ventilador a la cama, el tul en la ventana, y la vuelta del agua. Nos vemos la semana que viene.
