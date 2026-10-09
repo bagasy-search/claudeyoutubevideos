@@ -18,7 +18,7 @@ F=$(grep -oE "TOTAL_FRAMES = [0-9]+" src/$S/timeline.gen.ts | grep -oE "[0-9]+$"
 log "farm ($F cuadros, $CH chunks)"
 for t in 1 2 3; do
   ENTRY=src/index_$S.tsx FARM_REF=$S-render STITCH_RAW=1 FARM_FIXED_CHUNKS=1 FARM_NO_LOCK=1 AUDIO_FILE=$S.wav node scripts/farm.mjs $S $ID $F $CH @_${S}_assets.txt > out/farm_${S}_try$t.log 2>&1
-  grep -q "la corrida fallo" out/farm_${S}_try$t.log && { log "corrida falló, reintento"; sleep 300; continue; }
+  RC=$?; [ $RC = 0 ] || { log "farm salió $RC (ver out/farm_${S}_try$t.log), reintento"; grep -q "PRE-VUELO" out/farm_${S}_try$t.log && { log "pre-vuelo: no reintento"; exit 1; }; sleep 300; continue; }   # sólo exit 0 = OK (antes cualquier salida contaba como OK)
   log "FARM OK"; OK=1; break
 done
 [ "$OK" = 1 ] || { log "agoté reintentos del farm"; exit 1; }
