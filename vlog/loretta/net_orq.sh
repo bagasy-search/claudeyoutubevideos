@@ -3,7 +3,7 @@
 cd D:/Proyectos/video2-wt/lnet46
 L="ckgreenbean cloven fhfrost focasse foslow fopot clpillow cltowels fhfruitfly fhmice suchurch suwidow sunight ck3dollar ck30min"
 while true; do
-  act=$(for s in $L; do [ -f out/assets_$s.log ] && ! grep -q "ASSETS LISTOS" out/assets_$s.log && echo $s; done | wc -l)
+  act=$(for s in $L; do [ -f out/assets_$s.log ] && ! grep -q "ASSETS LISTOS\|\] imágenes:" out/assets_$s.log && echo $s; done | wc -l)  # activo = todavía en IMÁGENES (los clips esperan cola de agnes y no frenan)
   for s in $L; do
     [ $act -ge 4 ] && break
     if grep -q "VOZ+DIRECTOR LISTOS" out/voice_$s.log 2>/dev/null && [ ! -f out/assets_$s.log ]; then
