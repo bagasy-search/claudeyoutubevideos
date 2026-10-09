@@ -6,14 +6,15 @@
 S=$1; cd D:/Proyectos/video2-wt/lnet; export SLUG=$S PYTHONUTF8=1; REPO=bagasy-search/claudeyoutubevideos; CH=${CHUNKS:-60}
 log() { echo "$(date -u +%T) [$S] $*"; }
 until [ -f out/${S}_avatar/status_final.json ]; do sleep 60; done
+python vlog/loretta/post_imgs.py >/dev/null 2>&1   # PNG aprobados → JPG (si no, --final dice "falta imagen")
 if [ ! -f public/avatar_clips/$S/reel30.mp4 ]; then python vlog/loretta/avatar_post.py || { log "avatar_post falló (¿mp4 corto?)"; exit 1; }; fi
 for f in public/broll/$S/*.mp4; do [ -f "${f%.mp4}_last.jpg" ] || ffmpeg -v error -y -sseof -0.1 -i "$f" -frames:v 1 -q:v 3 "${f%.mp4}_last.jpg"; done   # último cuadro de cada clip agnes (el plano sigue congelado si es más largo)
 node vlog/lnet/gen_timeline.mjs --final || { log "--final falló"; exit 1; }
 python vlog/loretta/mix.py || { log "mix falló"; exit 1; }
 node vlog/loretta/mk_entry.mjs
-( flock 9; git add src/$S src/index_$S.tsx tsconfig.$S.json src/loretta vlog/lnet _${S}_assets.txt 2>/dev/null; git commit -qm "$S: timeline final con avatar
+until mkdir out/.gitlock.d 2>/dev/null; do sleep 5; done; ( git add src/$S src/index_$S.tsx tsconfig.$S.json src/loretta vlog/lnet _${S}_assets.txt 2>/dev/null; git commit -qm "$S: timeline final con avatar
 
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"; git push -q origin lnet-render; git push -q -f origin HEAD:refs/heads/$S-render ) 9>out/.gitlock
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"; git push -q origin lnet-render; git push -q -f origin HEAD:refs/heads/$S-render ); rmdir out/.gitlock.d   # lock por mkdir (Git Bash no trae flock)
 F=$(grep -oE "TOTAL_FRAMES = [0-9]+" src/$S/timeline.gen.ts | grep -oE "[0-9]+$"); ID="$(echo ${S:0:1} | tr a-z A-Z)${S:1}"
 log "farm ($F cuadros, $CH chunks)"
 for t in 1 2 3; do
