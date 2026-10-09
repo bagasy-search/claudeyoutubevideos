@@ -69,3 +69,4 @@ _v3probe/
 factory/_state/
 factory/_dry/
 .pubprune/
+vlog/fab/actual.txt

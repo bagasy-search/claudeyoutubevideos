@@ -1,0 +1,257 @@
+{
+ "SiNo": {
+  "c": "FabSiNo",
+  "props": {
+   "title": "En la cocina",
+   "no": {
+    "img": "s002",
+    "txt": "aerosol junto a la comida"
+   },
+   "si": {
+    "img": "s010",
+    "txt": "limón con clavos"
+   },
+   "bed": "vid/fumoscasf/bed_1.mp4#229"
+  }
+ },
+ "Pasos": {
+  "c": "FabPasos",
+  "props": {
+   "title": "El limón, paso a paso",
+   "pasos": [
+    {
+     "img": "li4",
+     "txt": "medio limón"
+    },
+    {
+     "img": "li1",
+     "txt": "10 clavos de olor"
+    },
+    {
+     "img": "li2",
+     "txt": "en cada ventana"
+    }
+   ],
+   "bed": "vid/fumoscasf/bed_3.mp4#304"
+  }
+ },
+ "Pasos4": {
+  "c": "FabPasos",
+  "props": {
+   "title": "La basura",
+   "pasos": [
+    {
+     "img": "ba7",
+     "txt": "bolsa cerrada"
+    },
+    {
+     "img": "ba10",
+     "txt": "agua oxigenada"
+    },
+    {
+     "img": "ba8",
+     "txt": "secar al sol"
+    },
+    {
+     "img": "no3",
+     "txt": "tapa siempre"
+    }
+   ],
+   "bed": "vid/fumoscasf/bed_3.mp4#304"
+  }
+ },
+ "Dato": {
+  "c": "FabDato",
+  "props": {
+   "num": "10",
+   "unidad": "clavos",
+   "txt": "por cada medio limón",
+   "img": "li1",
+   "bed": "vid/fumoscasf/bed_3.mp4#304"
+  }
+ },
+ "Dato2": {
+  "c": "FabDato",
+  "props": {
+   "num": "3-4",
+   "unidad": "días",
+   "txt": "y se cambia el limón",
+   "alerta": true,
+   "bed": "vid/fumoscasf/bed_3.mp4#304"
+  }
+ },
+ "Altura": {
+  "c": "FabAltura",
+  "props": {
+   "title": "Dónde va la cinta",
+   "max": 250,
+   "marcas": [
+    {
+     "cm": 60,
+     "txt": "Bruno llega hasta acá",
+     "alerta": true
+    },
+    {
+     "cm": 210,
+     "txt": "la cinta, arriba de todo"
+    }
+   ],
+   "bed": "vid/fumoscasf/bed_4.mp4#379"
+  }
+ },
+ "Calendario": {
+  "c": "FabCalendario",
+  "props": {
+   "title": "El limón",
+   "cada": 4,
+   "txt": "limón nuevo",
+   "bed": "vid/fumoscasf/bed_3.mp4#304"
+  }
+ },
+ "Precio": {
+  "c": "FabPrecio",
+  "props": {
+   "tienda": {
+    "txt": "Aerosol mata moscas 400 ml",
+    "p": "US$8"
+   },
+   "casa": {
+    "txt": "En casa:",
+    "p": "US$1,50",
+    "items": [
+     {
+      "t": "2 limones",
+      "p": "0,60"
+     },
+     {
+      "t": "clavos de olor",
+      "p": "0,90"
+     }
+    ]
+   },
+   "nota": "y no echas veneno en la cocina",
+   "bed": "vid/fumoscasf/bed_6.mp4#214"
+  }
+ },
+ "Ciclo": {
+  "c": "FabCiclo",
+  "props": {
+   "title": "Por qué vuelven",
+   "etapas": [
+    {
+     "img": "ba7",
+     "txt": "basura abierta"
+    },
+    {
+     "img": "s006",
+     "txt": "llega la mosca"
+    },
+    {
+     "img": "gr13",
+     "txt": "pone huevos"
+    },
+    {
+     "img": "ci6",
+     "txt": "nacen más"
+    }
+   ],
+   "centro": "7 días",
+   "bed": "vid/fumoscasf/bed_2.mp4#214"
+  }
+ },
+ "Ruta": {
+  "c": "FabRuta",
+  "props": {
+   "bicho": "mosca",
+   "desde": {
+    "img": "gr10",
+    "txt": "el desagüe del patio"
+   },
+   "hasta": {
+    "img": "s001",
+    "txt": "tu comida"
+   },
+   "corte": "limón en la ventana",
+   "bed": "vid/fumoscasf/bed_1.mp4#229"
+  }
+ },
+ "RutaCuca": {
+  "c": "FabRuta",
+  "props": {
+   "bicho": "cucaracha",
+   "desde": {
+    "img": "gr11",
+    "txt": "el depósito"
+   },
+   "hasta": {
+    "img": "ba7",
+    "txt": "la basura"
+   },
+   "bed": "vid/fumoscasf/bed_1.mp4#229"
+  }
+ },
+ "Mapa": {
+  "c": "FabMapa",
+  "props": {
+   "title": "Dónde entran",
+   "note": "revisa estos 4",
+   "pins": [
+    {
+     "lugar": "ventana_cocina",
+     "txt": "ventana"
+    },
+    {
+     "lugar": "puerta_patio",
+     "txt": "puerta"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "pileta"
+    },
+    {
+     "lugar": "desague",
+     "txt": "desagüe"
+    }
+   ],
+   "hechos": 3,
+   "foco": 3,
+   "bed": "vid/fumoscasf/bed_7.mp4#334"
+  }
+ },
+ "AntesDespues": {
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "s001",
+   "despues": "cl5",
+   "nota": "una semana después",
+   "bed": "vid/fumoscasf/bed_7.mp4#334"
+  }
+ },
+ "Mapa2": {
+  "c": "FabMapa",
+  "props": {
+   "title": "La cocina",
+   "note": "los 4 arreglos puestos",
+   "pins": [
+    {
+     "lugar": "mesada",
+     "txt": "basura"
+    },
+    {
+     "lugar": "ventana_cocina",
+     "txt": "limón"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "albahaca"
+    },
+    {
+     "lugar": "techo",
+     "txt": "cinta"
+    }
+   ],
+   "hechos": 4,
+   "bed": "vid/fumoscasf/bed_7.mp4#334"
+  }
+ }
+}
