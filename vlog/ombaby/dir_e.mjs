@@ -1,0 +1,128 @@
+// DIRECTOR E — ombaby: preguntas (motor, pintura, aceites de cocina, óxido, plásticos interiores, WD-40 → gancho al ep. 9, trapos
+// aceitosos, barniz, sillas de niños, techos de vinilo) · 3 errores al lavar + túnel de cepillos · lo que hicimos en el auto de Doris
+// (ClBeforeAfter) · Marlene el domingo y el martes · el cliente de los pedales · cuidado = seguridad · la botella con la cinta de Doris ·
+// cierre: regalo (ClQRCard) + Manual (ClBookPage pág. 12) → gancho al ep. 5 el reset (Kevin y la batería) (párrafos 174-214).
+import { S, BI, CLP, DORIS, CAR, DOG, C, I, H, DH, DASH, GARAGE, NOTEBOOK, BOTTLE, CLOTH, MARLENE, MCAR, KEVIN, CHURCH } from "./k.mjs";
+export const SHOTS = [
+  C(174, "", "ClChapter", { n: 4, title: "Your questions", sub: "the ones people always ask me" }),
+  // ── motor
+  S(175, "", "bi", "b_shinyengine", { p: BI(`An engine bay with every plastic cover and hose glossy and wet with oil, dust already stuck to it, the hood of a used car open.`) }),
+  S(175, "Some people do it before selling a car", "bi", "st_usedcarsale", { q: "used car for sale", p: BI("A used car with a for sale sign in the window.") }),
+  S(175, "It can drip on hot parts and smoke", "bi", "b_smokeexhaust", { p: BI(`Close view of a thin wisp of smoke rising from oil dripped on a hot exhaust manifold in an engine bay.`) }),
+  S(175, "And worst of all, it hides leaks", "av", ""),
+  S(175, "A mechanic checking a used car looks for wet spots", "bi", "b_flashlightleak", { p: BI(`${H} shining a flashlight under the engine of a used car on a lift, looking for wet oil spots.`) }),
+  S(175, "a damp cloth on the plastic covers", "bi", "b_wipecover", { p: BI(`${H} wiping a plain black plastic engine cover with a damp cloth, the engine cold, the hood up.`) }),
+  // ── pintura
+  S(176, "", "av", ""),
+  S(176, "A real car wax, or a spray sealant", "bi", "st_waxcar", { q: "waxing car hand", p: BI("A hand applying car wax to shiny paint with a foam pad.") }),
+  S(176, "That's what keeps it looking new", "av", ""),
+  // ── aceites de cocina
+  S(177, "", "bi", "b_kitchenoils", { p: BI(`A jar of coconut oil and a bottle of olive oil on the seat of a car, a cloth beside them.`) }),
+  S(177, "they can feed mold, especially inside the car", "bi", "b_moldseat", { p: BI(`Close view of small spots of mildew on a car's door panel fabric.`) }),
+  S(177, "Keep them in the kitchen", "av", ""),
+  // ── óxido
+  S(178, "", "bi", "b_rustypart", { p: BI(`Close view of a rusty bracket under a car, wet with oil, water drops beading on it.`) }),
+  S(178, "it washes off with the first rain", "bi", "st_rainstreet", { q: "rain street puddles", p: BI("Rain falling on a street with puddles.") }),
+  S(178, "Don't spend your afternoon oiling the frame", "av", ""),
+  // ── plásticos interiores
+  S(179, "", "bi", "b_doorpanel", { p: BI(`Close view of a car's interior door panel glossy and greasy with oil, dust on the armrest.`) }),
+  S(179, "it rubs off on your clothes", "av", ""),
+  // ── WD-40
+  S(180, "", "av", ""),
+  S(180, "made to push out water and loosen things", "bi", "b_bluecan", { p: BI(`A blue and yellow lubricant spray can with a red straw on a garage workbench, the label turned away, next to a rusty bolt.`) }),
+  S(180, "WD-40 and car batteries", "bi", "b_batterycrust", { p: BI(`Close view of a car battery terminal with white and greenish crusty corrosion, the hood open.`), ov: { c: "ClChip", props: { text: "ANOTHER VIDEO", corner: "tr" } } }),
+  S(180, "half of what you hear about it is wrong too", "av", ""),
+  // ── trapos
+  S(181, "", "av", ""),
+  S(181, "Oily rags can heat up by themselves", "bi", "b_ragpile", { p: BI(`A pile of balled-up oily rags in a metal bucket in a garage corner.`), ov: { c: "ClStampOv", props: { text: "FIRE RISK" } } }),
+  S(181, "Spread used rags flat to dry outside", "bi", "b_ragsflat", { p: BI(`Used rags spread flat to dry on a sunny concrete driveway, not touching each other.`) }),
+  S(181, "That's a rule from every shop I ever worked in", "av", ""),
+  // ── barniz
+  S(182, "", "bi", "b_clearcoat", { p: BI(`Extreme close view of glossy silver car paint with a clear reflection of the sky, a single drop of oil on it.`) }),
+  S(182, "Use it, then wash it off", "av", ""),
+  // ── sillas de niños
+  S(183, "", "bi", "st_childseat", { q: "child car seat", p: BI("An empty child car seat in the back seat of a car.") }),
+  S(183, "printed on a label on the seat itself", "bi", "b_seatlabel", { p: BI(`Close view of a care label sewn on the side of a child car seat, the words too small to read.`) }),
+  // ── vinilo
+  S(184, "", "bi", "st_convertible", { q: "convertible car top", p: BI("A classic car with a fabric convertible top.") }),
+  S(184, "on vinyl tops it just attracts dirt", "av", ""),
+  // ── errores al lavar
+  C(185, "", "ClChapter", { n: 5, title: "3 washing mistakes", sub: "they matter more than any bottle" }),
+  S(186, "", "bi", "b_dishsoap", { p: BI(`A bottle of dish soap next to a bucket of suds and a car in a driveway.`), ov: { c: "ClChip", props: { text: "MISTAKE 1", corner: "tl" } } }),
+  S(186, "On your car, it cuts the wax", "bi", "b_nobeading", { p: BI(`Close view of car paint where water no longer beads up, flat sheets of water on a dull surface.`) }),
+  S(186, "Use car wash soap", "av", ""),
+  S(187, "", "bi", "st_washsun", { q: "washing car hot sun", p: BI("A car being washed in bright hot sun, soap drying on the paint.") , ov: { c: "ClChip", props: { text: "MISTAKE 2", corner: "tl" } } }),
+  S(187, "they leave spots that etch into the clear coat", "bi", "b_waterspots", { p: BI(`Extreme close view of dried water spots etched into dark car paint.`) }),
+  S(187, "Wash in the shade", "av", ""),
+  S(188, "", "bi", "b_mittground", { p: BI(`A wash mitt dropped on a sandy driveway next to a car, grit visible on it.`), ov: { c: "ClChip", props: { text: "MISTAKE 3", corner: "tl" } } }),
+  S(188, "Now you're washing your car with sandpaper", "bi", "b_swirls", { p: BI(`Close view of fine circular swirl marks in dark car paint in the sun.`) }),
+  S(188, "And use two buckets", "bi", "b_twobuckets", { p: BI(`Two buckets side by side next to a silver sedan in a driveway, one full of suds, one with clean water, a wash mitt draped on the edge.`) }),
+  S(188, "That's how you keep the swirl marks off", "av", ""),
+  S(189, "", "bi", "st_carwashbrushes", { q: "automatic car wash brushes", p: BI("Big spinning brushes in an automatic car wash.") }),
+  S(189, "a touchless one is easier on the paint", "bi", "st_touchless", { q: "touchless car wash", p: BI("A car in a touchless car wash being sprayed with water jets.") }),
+  // ── lo que hicimos
+  S(190, "", "av", ""),
+  S(190, "We took off the hospital parking sticker", "bi", "b_cleanrearwindow", { p: BI(`The clean rear window of ${CAR}, no sticker, sunlight reflecting.`) }),
+  S(190, "We restored both headlights", "bi", "b_twoheadlights", { p: BI(`The front of ${CAR} in a driveway with both headlights crystal clear, the grille clean.`) }),
+  S(190, "and put silicone on the door seals", "bi", "b_finalseal", { p: BI(`${H} wiping silicone on the rubber seal of the rear door of ${CAR}.`) }),
+  S(190, "And we cleaned the dashboard", "bi", "b_finaldash", { p: BI(`The clean matte dashboard of ${CAR} seen from the passenger seat, clear windshield, ${DOG} sitting in the driver's seat.`) }),
+  S(191, "", "bi", "b_receipt35", { p: BI(`A store receipt and the empty headlight kit box on the trunk of a silver sedan.`), ov: { c: "ClStampOv", props: { text: "≈ $35" } } }),
+  C(191, "the car looked about five years younger", "ClBeforeAfter", { before: I + "b_dorisbumper.jpg", after: I + "b_bothbeatgray.jpg", note: "the right thing on each part" }),
+  S(191, "Because we put the right thing on each part", "av", ""),
+  // ── Marlene
+  S(192, "", "bi", "b_marlenesees", { p: BI(`${MARLENE} coming out of a white wooden church, pointing excitedly at ${CAR} parked in the lot, ${DORIS} beside the car smiling.`) }),
+  S(192, "well, some of it", "bi", "b_dorissmile", { p: BI(`${DORIS} in ${CHURCH} with a small knowing smile, holding her handbag.`) }),
+  S(193, "", "bi", "b_showspecks", { p: BI(`${DORIS} pointing at the black speckles on the white paint behind the wheel of ${MCAR}, ${MARLENE} bending to look, surprised.`) }),
+  S(193, "Marlene went home and washed her steering wheel", "bi", "b_marlenewheel", { p: BI(`${MARLENE} in the driver's seat of ${MCAR} scrubbing the steering wheel with a soapy cloth.`) }),
+  S(194, "", "av", ""),
+  S(195, "", "cl", "c_marlenedash", { p: CLP(`Claudio inside ${MCAR}, leaning in from the open passenger door, wiping a shiny oily dashboard with a wet cloth, ${MARLENE} watching from outside.`) }),
+  S(195, "The haze was so thick, the first cloth came off gray", "bi", "b_graycloth", { p: BI(`Close view of a white cloth turned gray after one wipe of the inside of a hazy car windshield.`) }),
+  S(196, "", "bi", "b_marlenepaint", { p: BI(`${H} wiping black speckles off the white paint behind the wheel of ${MCAR} with a cloth and a spray bottle.`) }),
+  S(196, "they came out a nice clean black", "bi", "b_cleantire", { p: BI(`Close view of a clean satin black tire on ${MCAR}, no shine, the white paint above it clean.`) }),
+  S(197, "", "bi", "b_gummyseal2", { p: BI(`${H} pressing a soft, slightly swollen black rubber door seal on ${MCAR}.`) }),
+  S(197, "We cleaned them with soapy water", "av", ""),
+  S(197, "that's when you replace them", "av", ""),
+  S(198, "", "cl", "c_marlenetrim", { p: CLP(`Claudio buffing the black plastic bumper trim of ${MCAR} with a blue microfiber cloth, ${MARLENE} holding her own bottle of baby oil, nodding.`) }),
+  S(198, "I was just doing too much of it", "bi", "b_marlenelaugh", { p: BI(`${MARLENE} laughing at herself in her driveway, a hand on her forehead, holding a bottle of baby oil.`) }),
+  S(199, "", "av", "", { ov: { c: "ClStampOv", props: { text: "TOO MUCH, TOO MANY PLACES" } } }),
+  S(200, "", "bi", "b_twofriends", { p: BI(`${DORIS} and ${MARLENE} sitting together on a church bench in the sun, Marlene with a tissue, Doris holding her hand.`) }),
+  S(200, "They went to the same church for forty years", "bi", "st_church", { q: "small white church", p: BI("A small white wooden church on a sunny day.") }),
+  // ── el cliente de los pedales
+  S(201, "", "av", ""),
+  S(202, "", "bi", "b_oldtruck", { p: BI(`An old pickup truck parked in ${"an auto repair shop"} bay, a young man standing next to it talking to a mechanic.`) }),
+  S(202, "almost rear-ended somebody", "bi", "st_brakelights", { q: "car brake lights traffic", p: BI("Brake lights of cars stopped in traffic, close.") }),
+  S(202, "Pads, rotors, fluid, all good", "bi", "b_brakecheck", { p: BI(`${H} measuring a brake pad on a truck on a lift with a small gauge, the wheel off.`) }),
+  S(203, "", "bi", "b_slickpedal", { p: BI(`Low close view of the shiny, slick rubber brake pedal and glossy rubber floor mat of an old pickup truck.`) }),
+  S(203, "a spray-on interior shine on everything in the cab", "bi", "b_shinycab", { p: BI(`The cab of an old pickup truck where everything shines: dashboard, steering wheel, pedals and floor mat glossy with spray shine.`) }),
+  S(203, "His shoe had slid right off the brake pedal", "av", ""),
+  S(204, "", "bi", "b_scrubtruckpedal", { p: BI(`${H} scrubbing the brake pedal of an old pickup truck with a brush and soapy water.`) }),
+  S(204, "The brakes were never the problem", "av", ""),
+  S(204, "Nothing slippery where your hands and feet go", "bi", "b_handsfeet", { p: BI(`Inside ${CAR}: ${DH} on a clean matte steering wheel, a sensible shoe on a clean rubber brake pedal.`), ov: { c: "ClStampOv", props: { text: "NOTHING SLIPPERY" } } }),
+  // ── cuidado = seguridad
+  S(205, "", "av", ""),
+  S(205, "by the buyer, when the day comes to sell it", "bi", "st_buyercar", { q: "buying used car", p: BI("A buyer looking over a used car with the seller.") }),
+  S(206, "", "bi", "st_nightheadlights", { q: "car headlights night street", p: BI("A car with bright clear headlights driving down a street at dusk.") }),
+  S(206, "So it's worth the afternoon", "av", ""),
+  S(207, "", "bi", "b_glovebox", { p: BI(`The open glove box of ${CAR}: ${NOTEBOOK} and ${BOTTLE} side by side, a strip of masking tape on the bottle.`) }),
+  S(207, "trim, chrome, stickers, hands", "bi", "b_dorislabel", { p: BI(`Extreme close view of a strip of masking tape on a pale pink plastic bottle with four short words handwritten in a woman's neat blue ballpoint, slightly slanted.`), ov: { c: "ClStampOv", props: { text: "TRIM · CHROME · STICKERS · HANDS" } } }),
+  S(207, "Her handwriting", "av", ""),
+  // ── cierre
+  C(208, "", "ClBookPage", { page: I + "page12.jpg", pageNo: 12, stamp: "Trick 4 · the full yes and no list" }),
+  C(208, "I made a free guide called Before the Shop", "ClQRCard", { qr: I + "qr.jpg", cover: I + "gift_cover.jpg", text: "the 3 tests, free", kicker: "FREE · BEFORE THE SHOP" }),
+  S(208, "The full Glovebox Manual", "av", ""),
+  S(209, "", "av", ""),
+  // ── gancho al ep. 5
+  S(210, "", "bi", "b_kevinbattery", { p: BI(`${KEVIN} in a driveway with the hood of ${CAR} open, lifting a new car battery into place.`) }),
+  S(210, "Did it in fifteen minutes", "bi", "b_kevinwrench", { p: BI(`Close view of a young man's hands tightening a battery clamp with a small wrench under the open hood of a silver sedan.`) }),
+  S(210, "The idle was rough when she stopped at a light", "bi", "b_tachshake", { p: BI(`Close view of the tachometer of ${DASH} while stopped at a red light, the needle wavering just under one.`) }),
+  S(210, "wouldn't go all the way up with one touch anymore", "bi", "b_windowstuck", { p: BI(`${DH} holding the power window button on the driver's door of ${CAR}, the window stopped halfway up.`) }),
+  S(210, "And the radio had forgotten all her stations", "bi", "b_clock12", { p: BI(`Close view of a car radio display blinking twelve o'clock, the preset buttons below.`) }),
+  S(211, "", "bi", "b_kevintalks", { p: BI(`${KEVIN} talking confidently to ${DORIS} in her driveway, gesturing at the open hood of ${CAR}.`) }),
+  S(211, "Disconnect the battery and the computer starts over", "bi", "b_negterminal", { p: BI(`Extreme close view of a wrench on the negative battery terminal of a car, the black cable clamp loosened.`) }),
+  S(212, "", "av", ""),
+  S(212, "it hides a real problem that comes right back", "bi", "st_checkengine", { q: "check engine light", p: BI("A check engine warning light glowing on a car dashboard.") }),
+  C(213, "", "ClVideoRef", { thumb: I + "th_omreset.jpg", title: "The battery reset trick", next: true }),
+  S(214, "", "av", ""),
+  S(214, "And tell me in the comments", "cl", "c_comments", { p: CLP(`Claudio sitting on a stool in his shop with a cup of coffee, smiling at the camera, a car on the lift behind him.`) }),
+  S(214, "See you next week", "av", ""),
+];

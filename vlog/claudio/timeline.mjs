@@ -7,7 +7,7 @@ const P = J(V3 + "paras.json"), W = J(V3 + "wordms.json");
 const norm = (s) => s.toLowerCase().replace(/['’-]/g, "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(Boolean);
 const END = W[W.length - 1].e + 0.6;
 let shots = [];
-for (const f of ["dir_a", "dir_b", "dir_c", "dir_d"]) { const p = R + `vlog/${SLUG}/${f}.mjs`; if (fs.existsSync(p)) shots.push(...(await import("file:///" + p)).SHOTS); }
+for (const f of fs.readdirSync(R + `vlog/${SLUG}`).filter((x) => /^dir_[a-z]\.mjs$/.test(x)).sort()) shots.push(...(await import("file:///" + R + `vlog/${SLUG}/${f}`)).SHOTS);
 const errs = [];
 for (const s of shots) {
   const p = P[s.p]; if (!p) { errs.push(`párrafo ${s.p} no existe`); continue; }
@@ -22,9 +22,9 @@ if (errs.length) { console.error(errs.join("\n")); process.exit(1); }
 shots.sort((a, b) => a.start - b.start);
 shots[0].start = 0;
 // plano fijo largo → corte a avatar en la palabra más cercana (nunca dos av seguidos)
-const MAXFIX = { bi: 7.5, rh: 7.5, kf: 9.5, c: 9 }, KEEP = new Set([]);
+const MAXFIX = { bi: 9, rh: 9, kf: 9.5, c: 9 }, KEEP = new Set([]);
 // tope POR COMPONENTE (el resto pasa al avatar): un separador no se queda 8 s, un 3D lleva su tiempo
-const CMAX = { ClFeatureTag: 3.6, ClOdoRace: 7, ClFluidClock: 9, ClFobHold: 7.5, ClCoinCell: 8, ClGasArrow: 9, ClCarMap: 7, ClOBDScan: 9, ClDoorGap: 9, ClBarrierLine: 9, ClPerimeter30: 9, ClChapter: 3.6, ClColorCode: 6.5, ClCheck: 10, ClBookPage: 9, ClQRCard: 9, ClNeverMix: 9, ClRimCutaway3D: 10.5, ClTimer30: 6, ClMeasureCup: 5.5, ClDoDont: 6.5, ClPins: 8, ClBottle3D: 6.5, ClRimJets: 7, ClSplit: 9, ClMicroscope3D: 11, ClHallway3D: 6, ClBeforeAfter: 5, ClBowl3D: 10.5, ClValve3D: 8.5, ClPumiceTest: 8, ClPasteRecipe: 8.5, ClNotebook: 8, ClVideoRef: 6, ClWasher3D: 10, ClFilterFind: 8, ClDoseCap: 7, ClSmellTest: 8, ClPores3D: 10.5, ClSwab: 8, ClSpores: 7, ClFlashlight: 7, ClWallLeak: 9, ClHygrometer: 7, ClTray3D: 10.5, ClPasteCheck: 7, ClCoating: 8, ClTally: 8, ClReceipt: 8, ClCaulk3D: 10.5, ClFilmWrap: 8, ClTubMap: 9, ClCaulkGun: 9, ClFoilTest: 10, ClHouseMap: 8, ClWardrobeGap: 9, ClTapeTest: 8, ClHeatSides: 10, ClShadeGap: 9, ClCrossVent: 10, ClThermo: 7, ClEarthTube: 10, ClWickWall: 10.5, ClThreeDamp: 10, ClPencilLine: 9, ClWaterWalk: 10.5, ClHoseTest: 10.5, ClMembrane: 10.5, ClCoinTest: 8, ClPlasterTell: 10.5, ClCrackTypes: 10, ClVFill: 10, ClDesiccant: 10.5, ClClosetAir: 10, ClSaltTest: 10, ClHidden50: 8, ClFridgeBack: 10, ClPeroxide: 7, ClTrailMap: 9 };
+const CMAX = { ClOilDrop: 6.5, ClYesNo: 6.5, ClFeatureTag: 4.5, ClOdoRace: 7, ClFluidClock: 9, ClFobHold: 7.5, ClCoinCell: 8, ClGasArrow: 9, ClCarMap: 7, ClOBDScan: 9, ClDoorGap: 9, ClBarrierLine: 9, ClPerimeter30: 9, ClChapter: 4.5, ClColorCode: 6.5, ClCheck: 10, ClBookPage: 9, ClQRCard: 9, ClNeverMix: 9, ClRimCutaway3D: 10.5, ClTimer30: 6, ClMeasureCup: 5.5, ClDoDont: 6.5, ClPins: 8, ClBottle3D: 6.5, ClRimJets: 7, ClSplit: 9, ClMicroscope3D: 11, ClHallway3D: 6, ClBeforeAfter: 5, ClBowl3D: 10.5, ClValve3D: 8.5, ClPumiceTest: 8, ClPasteRecipe: 8.5, ClNotebook: 8, ClVideoRef: 6, ClWasher3D: 10, ClFilterFind: 8, ClDoseCap: 7, ClSmellTest: 8, ClPores3D: 10.5, ClSwab: 8, ClSpores: 7, ClFlashlight: 7, ClWallLeak: 9, ClHygrometer: 7, ClTray3D: 10.5, ClPasteCheck: 7, ClCoating: 8, ClTally: 8, ClReceipt: 8, ClCaulk3D: 10.5, ClFilmWrap: 8, ClTubMap: 9, ClCaulkGun: 9, ClFoilTest: 10, ClHouseMap: 8, ClWardrobeGap: 9, ClTapeTest: 8, ClHeatSides: 10, ClShadeGap: 9, ClCrossVent: 10, ClThermo: 7, ClEarthTube: 10, ClWickWall: 10.5, ClThreeDamp: 10, ClPencilLine: 9, ClWaterWalk: 10.5, ClHoseTest: 10.5, ClMembrane: 10.5, ClCoinTest: 8, ClPlasterTell: 10.5, ClCrackTypes: 10, ClVFill: 10, ClDesiccant: 10.5, ClClosetAir: 10, ClSaltTest: 10, ClHidden50: 8, ClFridgeBack: 10, ClPeroxide: 7, ClTrailMap: 9 };
 const capOf = (s) => (s.kind === "c" ? CMAX[s.name] || MAXFIX.c : MAXFIX[s.kind]);
 const ws = W.map((w) => w.s); const nearW = (x) => ws.reduce((b, v) => (Math.abs(v - x) < Math.abs(b - x) ? v : b), ws[0]);
 let budget = +process.env.AV_AUTO || 90; const cand = [];
