@@ -27,9 +27,9 @@ FONDO = {"voz", "imgs", "clips", "avatar", "editor", "render"}
 ORDEN = ["guion", "voz", "planos", "imgs", "clips", "armar", "avatar", "ov", "editor", "mix", "render"]
 CLIPF = 121
 
-def sh(cmd, check=True, quiet=False, **kw):
+def sh(cmd, check=True, quiet=False, env=None, **kw):
     if not quiet: print("▶", cmd if isinstance(cmd, str) else " ".join(cmd), flush=True)
-    r = subprocess.run(cmd, shell=isinstance(cmd, str), cwd=R, env=ENV, text=True, encoding="utf8", errors="replace", **kw)
+    r = subprocess.run(cmd, shell=isinstance(cmd, str), cwd=R, env={**ENV, **(env or {})}, text=True, encoding="utf8", errors="replace", **kw)
     if check and r.returncode != 0: raise SystemExit(f"⛔ falló (exit {r.returncode}): {cmd if isinstance(cmd, str) else ' '.join(cmd)}")
     return r
 def out(cmd):
@@ -569,9 +569,9 @@ def e_render():
     sh(f'git -c user.email=noreply@local -c user.name=fab commit -qm "{S}: datos del render (fábrica)"', check=False)
     sh(f"git push -q origin HEAD:{rama}")
     t0 = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    env = f"ENTRY=src/index_fab.tsx FARM_REF={rama} TAR_DIR=D:/rtmp/fab_{S} FARM_NOWAIT=1 STITCH_RAW=1"
     os.makedirs(f"D:/rtmp/fab_{S}", exist_ok=True)
-    sh(f"{env} node scripts/farm.mjs {S} Fab {T} 60 @_{S}_assets.txt")
+    sh(["node", "scripts/farm.mjs", S, "Fab", str(T), "60", f"@_{S}_assets.txt"],
+       env={"ENTRY": "src/index_fab.tsx", "FARM_REF": rama, "TAR_DIR": f"D:/rtmp/fab_{S}", "FARM_NOWAIT": "1", "STITCH_RAW": "1"})
     rid = run_id(rama, t0); print("render run", rid, flush=True)
     sh(f"node scripts/esperar_run.mjs {rid}", check=False)
     js = json.loads(out(f"gh run view {rid} --json jobs") or '{"jobs":[]}')["jobs"]
@@ -582,7 +582,7 @@ def e_render():
         rid = run_id(rama, t1); sh(f"node scripts/esperar_run.mjs {rid}", check=False)
     sh(f"gh release upload assets-{S} out/{S}_mix.wav --clobber")
     t2 = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    sh(f"bash D:/Proyectos/encfin/push.sh {S} {T} 60")
+    sh(["bash", "D:/Proyectos/encfin/push.sh", S, str(T), "60"])
     eid = run_id(f"encfin-{S}", t2); print("encfin run", eid, flush=True)
     sh(f"node scripts/esperar_run.mjs {eid}", check=False)
     fin = R + f"out/{S}_final.mp4"
