@@ -1,0 +1,6 @@
+file 'D:/Proyectos/video2-wt/fumoscasf/vlog/fumoscasf/all/_p000.mp4'
+file 'D:/Proyectos/video2-wt/fumoscasf/vlog/fumoscasf/all/_p040.mp4'
+file 'D:/Proyectos/video2-wt/fumoscasf/vlog/fumoscasf/all/_p080.mp4'
+file 'D:/Proyectos/video2-wt/fumoscasf/vlog/fumoscasf/all/_p120.mp4'
+file 'D:/Proyectos/video2-wt/fumoscasf/vlog/fumoscasf/all/_p160.mp4'
+file 'D:/Proyectos/video2-wt/fumoscasf/vlog/fumoscasf/all/_p200.mp4'

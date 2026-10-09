@@ -1,0 +1,99 @@
+[
+ {
+  "c": "ClVideoRef",
+  "from": 405,
+  "dur": 165,
+  "props": {
+   "thumb": "img/fumoscasf/th_furatones5.jpg",
+   "title": "Los 5 huecos por donde entra el ratón",
+   "tag": "VIDEO ANTERIOR",
+   "bed": "vid/fumoscasf/bed_0.mp4#169"
+  },
+  "t": 13.49
+ },
+ {
+  "c": "ClFlyCycle",
+  "from": 2898,
+  "dur": 210,
+  "props": {
+   "bed": "vid/fumoscasf/bed_1.mp4#214"
+  },
+  "t": 96.59
+ },
+ {
+  "c": "ClBookPage",
+  "from": 14070,
+  "dur": 225,
+  "props": {
+   "page": "img/fumoscasf/page16.jpg",
+   "pageNo": 16,
+   "stamp": "Las medidas, en la página",
+   "bed": "vid/fumoscasf/bed_2.mp4#229"
+  },
+  "t": 469.0
+ },
+ {
+  "c": "ClDrainFactory",
+  "from": 16771,
+  "dur": 210,
+  "props": {
+   "mode": "clean",
+   "bed": "vid/fumoscasf/bed_3.mp4#214"
+  },
+  "t": 559.02
+ },
+ {
+  "c": "ClCheck",
+  "from": 20100,
+  "dur": 270,
+  "props": {
+   "title": "ANTES DE FUMIGAR · la revisión de la noche",
+   "items": [
+    "La del bote de basura, por dentro",
+    "La de la luz, una hora después",
+    "La cinta doble faz (no está en ningún video)"
+   ],
+   "bed": "vid/fumoscasf/bed_4.mp4#274"
+  },
+  "t": 670.01
+ },
+ {
+  "c": "ClQRCard",
+  "from": 20722,
+  "dur": 180,
+  "props": {
+   "qr": "img/fumoscasf/qr.jpg",
+   "cover": "img/fumoscasf/gift_cover.jpg",
+   "text": "las 3 pruebas, gratis",
+   "kicker": "REGALO · ANTES DE FUMIGAR",
+   "bed": "vid/fumoscasf/bed_5.mp4#184"
+  },
+  "t": 690.72
+ },
+ {
+  "c": "ClQRCard",
+  "from": 20909,
+  "dur": 255,
+  "props": {
+   "qr": "img/fumoscasf/qr.jpg",
+   "cover": "img/fumoscasf/book_cover.jpg",
+   "text": "66 arreglos · garantía 7 días",
+   "kicker": "EL MANUAL · US$27",
+   "bed": "vid/fumoscasf/bed_6.mp4#259"
+  },
+  "t": 696.96
+ },
+ {
+  "c": "ClVideoRef",
+  "from": 21716,
+  "dur": 150,
+  "props": {
+   "thumb": "img/fumoscasf/th_fumosquito.jpg",
+   "title": "Mosquitos en casa, sin espiral ni aerosol",
+   "tag": "PRÓXIMO VIDEO",
+   "next": true,
+   "bed": "vid/fumoscasf/bed_7.mp4#154"
+  },
+  "t": 723.86
+ }
+]

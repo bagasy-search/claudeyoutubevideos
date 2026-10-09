@@ -1,0 +1,7 @@
+vid/fumoscasf
+img/fumoscasf/page16.jpg
+img/fumoscasf/qr.jpg
+img/fumoscasf/gift_cover.jpg
+img/fumoscasf/book_cover.jpg
+img/fumoscasf/th_furatones5.jpg
+img/fumoscasf/th_fumosquito.jpg
