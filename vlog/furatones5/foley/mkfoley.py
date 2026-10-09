@@ -26,10 +26,11 @@ SND = {
 }
 tl = {c["id"]: c for c in json.load(open(D + "timeline_all.json", encoding="utf8"))}
 os.makedirs(F + "src", exist_ok=True); jobs = []
+SKIP = set(json.load(open(F + "skip.json"))) if os.path.exists(F + "skip.json") else set()
 for i, p in SND.items():
-    if i not in tl or os.path.exists(F + i + ".wav"): continue
+    if i in SKIP or i not in tl or os.path.exists(F + i + ".wav"): continue
     c = tl[i]; v = F + f"src/{i}.mp4"
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(c["vstart"]), "-t", str(c["vdur"]), "-i", D + "all/vlog.mp4", "-an", "-vf", "scale=1280:720", "-r", "24", v], check=True)
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(c["vstart"]), "-t", str(c["vdur"]), "-i", R + "public/vid/furatones5/vlog.mp4", "-an", "-vf", "scale=1280:720", "-r", "24", v], check=True)
     jobs.append({"name": i, "video": v, "dur": round(c["vdur"], 2), "prompt": p})
 json.dump(jobs, open(F + "jobs.json", "w"), indent=1)
 if jobs:

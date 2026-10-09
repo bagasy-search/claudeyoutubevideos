@@ -1,1 +1,1 @@
-export const TOTAL_FRAMES = 20326;
+export const TOTAL_FRAMES = 19969;

@@ -14,10 +14,12 @@ if __name__ == "__main__":
     keep, t = [], 0.0
     for a, b in C: keep.append((t, a)); t = b
     keep.append((t, T))
-    sel = "+".join(f"between(t,{a:.4f},{b - 0.0001:.4f})" for a, b in keep)
-    open(D + "_sel.txt", "w").write(f"select='{sel}',setpts=N/(30*TB)")
+    sel = "+".join(f"between(n,{round(a * 30)},{round(b * 30) - 1})" for a, b in keep)  # por NÚMERO de cuadro (t en float perdía cuadros)
+    sg = [x for x in json.load(open(D + "segs.json", encoding="utf8")) if x["sc"] == "noche"]; na, nb = sg[0]["s"], sg[-1]["e"]
+    noche = f"eq=brightness=-0.05:gamma=0.9:saturation=0.75:enable='between(t,{na:.3f},{nb:.3f})',colorbalance=bs=0.10:bm=0.05:rs=-0.05:enable='between(t,{na:.3f},{nb:.3f})',vignette=PI/6:enable='between(t,{na:.3f},{nb:.3f})',"  # la cocina de noche salió clara en las anclas
+    open(D + "_sel.txt", "w").write(noche + f"select='{sel}',setpts=N/(30*TB)")
     os.makedirs(R + "public/vid/furatones5", exist_ok=True)
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-an", "-/vf", D + "_sel.txt", "-fps_mode", "passthrough", "-r", "30", "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-bf", "0",
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-an", "-/vf", D + "_sel.txt", "-fps_mode", "passthrough", "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-bf", "0",
                     "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", R + "public/vid/furatones5/vlog.mp4"], check=True)
     tl = json.load(open(D + "all/timeline_vlog.json", encoding="utf8"))
     for c in tl:

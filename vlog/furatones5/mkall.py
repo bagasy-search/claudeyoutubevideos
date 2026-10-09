@@ -12,13 +12,19 @@ for s in SC:
     P = D + s + "/"; plan = J(P + "plan.json"); st = J(P + "clips/state.json", {}); chk = J(P + "vl_check.json", {})
     for c in plan["clips"]:
         i = c["id"]; ok = i in st and chk.get(i, {}).get("ok") and chk[i].get("file") == st[i]["file"]
+        lt = D + f"ltx/out/{i}.mp4"
+        if not ok and os.path.exists(lt):  # agnes no entregó/no pasó → LTX-2.5 a2v (Modal) con el tramo exacto
+            import shutil; shutil.copy(lt, P + f"clips/{i}_ltx.mp4"); st[i] = {"file": f"{i}_ltx.mp4", "T": c["T"]}; ov[i] = {"mode": "trunc", "cut": True}; falta.append(i + "(ltx)"); ok = True
         if not ok:
             kb = f"{i}_kb.mp4"
             if "--fallback" in sys.argv and not os.path.exists(P + "clips/" + kb):
                 T = c["T"]; nf = T * 24
-                subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", P + f"anc/{c['a']}.png", "-vf",
-                                f"scale=2560:1440,zoompan=z='1+0.06*on/{nf}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={nf}:s=1280x720:fps=24", "-frames:v", str(nf),
-                                "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "16", P + "clips/" + kb], check=True)
+                X = 1.5; za = f"scale=2560:1440,zoompan=z='1+0.05*on/{nf}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={nf}:s=1280x720:fps=24"
+                zb = f"scale=2560:1440,zoompan=z='1.05-0.05*on/{nf}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={nf}:s=1280x720:fps=24"
+                # Ken-Burns sobre el ancla de inicio y fundido al ancla de FIN (empalma con el clip siguiente sin salto)
+                subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", P + f"anc/{c['a']}.png", "-loop", "1", "-i", P + f"anc/{c['b']}.png", "-filter_complex",
+                                f"[0]{za},trim=end_frame={nf}[a];[1]{zb},trim=end_frame={nf}[b];[a][b]xfade=transition=fade:duration={X}:offset={T - X},trim=end_frame={nf}",
+                                "-frames:v", str(nf), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "16", P + "clips/" + kb], check=True)
             if os.path.exists(P + "clips/" + kb): st[i] = {"file": kb, "T": c["T"]}; ov[i] = {"mode": "trunc", "cut": True}; falta.append(i + "(foto)")
             else: falta.append(i); continue
         state[i] = {**st[i], "file": f"../../{s}/clips/{st[i]['file']}"}

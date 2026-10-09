@@ -1,0 +1,7 @@
+vid/furatones5
+img/furatones5/page15.jpg
+img/furatones5/qr.jpg
+img/furatones5/gift_cover.jpg
+img/furatones5/book_cover.jpg
+img/furatones5/th_fucasero.jpg
+img/furatones5/th_fumoscas.jpg
