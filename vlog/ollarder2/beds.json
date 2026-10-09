@@ -1,0 +1,5 @@
+[
+ {"name": "bed_door", "prompt": "The inside of a heavy old plank root cellar door seen straight on, wide weathered gray boards with iron strap hinges and a wooden latch, a few rusty nails, a bit of frost at the bottom crack, a kerosene lantern hanging on a nail at the far left edge throwing warm light, the middle of the door bare. No text, no letters, no logos."},
+ {"name": "bed_shelves", "prompt": "Inside an old earthen root cellar seen straight on: three levels of rough wooden slat shelves along a stone and log wall, the bottom shelf with crates of potatoes and a box of sand, the middle shelf with braids of onions and squash, the top shelf with apples wrapped in newspaper, a lantern on a nail, a cabbage hanging upside down from the beam. No text, no labels, no logos."},
+ {"name": "bed_basement", "prompt": "The corner of an unheated basement with two bare concrete foundation walls meeting, a small window high up with snow against it, cobwebs, a bare light bulb, a few wooden crates on the floor. No text, no logos."}
+]

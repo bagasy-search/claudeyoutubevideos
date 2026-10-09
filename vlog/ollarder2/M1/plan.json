@@ -1,0 +1,80 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ollarder2/vlog/ollarder2/M1",
+ "face": "D:/Proyectos/video2-wt/ollarder2/public/ref_ollarder2_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/ollarder2/public/ref_ollarder2.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by his grandson with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered cabin background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed and bright enough, the side near the snowy window brighter and cooler, the corners by the stove a little warmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; white hair and beard with stray hairs; flannel and canvas apron with real creases, soot and grease marks. People are caught mid-action, unposed. Bright snowy daylight from the window on the left plus the warm glow of the wood stove.",
+ "look": "Ordinary handheld home video filmed by his grandson with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the cabin in focus, only the light the place really has, bright and correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Outside in the snow by the heavy plank door of the old earthen root cellar of a north-woods logging camp: stone and log walls, wooden slat shelves and crates of potatoes, braids of onions and a cabbage hanging from a log beam, a kerosene lantern on a nail, built into a snowy hillside behind a log cook shack. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins stands beside the cellar door in a wool coat over his flannel, looking at the camera and talking, his breath fogging. Medium shot."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: he turns and points up the snowy logging road behind him with one big hand, still talking to the camera."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Inside an old earthen root cellar of a north-woods logging camp: stone and log walls, wooden slat shelves and crates of potatoes, braids of onions and a cabbage hanging from a log beam, a kerosene lantern on a nail. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins stands among the crates holding the kerosene lantern up, looking at the camera and talking. Medium shot, the shelves behind him."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "A few seconds later, same place: he hangs the lantern on a nail on the beam and opens both hands toward the full shelves, proud."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Inside an old earthen root cellar of a north-woods logging camp: stone and log walls, wooden slat shelves and crates of potatoes, braids of onions and a cabbage hanging from a log beam, a kerosene lantern on a nail. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins picks a potato from a wooden crate and turns it in his hand, looking at the camera and talking. Medium shot."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "A few seconds later, same place: he puts the potato back gently in the crate and looks up at the camera with a warm smile."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ollarder2/vlog/ollarder2/tramos/m1.wav",
+   "text": "October, nineteen sixty-five. The last supply sled of the fall",
+   "action": "Standing by the cellar door in the snow he talks to the camera, then points back up the snowy road. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/ollarder2/vlog/ollarder2/tramos/m2.wav",
+   "text": "We never did find out. Not once. And tonight I'm gonna show you",
+   "action": "He holds up the lantern in the cellar talking to the camera, then hangs it and opens his hands toward the full shelves. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m3",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/ollarder2/vlog/ollarder2/tramos/m3.wav",
+   "text": "I cooked in the logging camps up in the north woods of Minnesota most of my life,",
+   "action": "He picks up a potato from a crate talking to the camera, then puts it back gently and smiles. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/ollarder2/vlog/ollarder2/M1/out.mp4"
+}
