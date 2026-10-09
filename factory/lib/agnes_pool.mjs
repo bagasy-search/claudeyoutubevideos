@@ -36,7 +36,7 @@ const B = "https://apihub.agnes-ai.com/v1", ROOT = "https://apihub.agnes-ai.com"
 const DIR = process.env.AGNES_POOL_DIR || (fs.existsSync("D:/") ? "D:/rtmp/agnes_pool" : path.join(os.tmpdir(), "agnes_pool"));
 fs.mkdirSync(DIR, { recursive: true });
 const ST = path.join(DIR, "state.json"), LOCK = path.join(DIR, "lock"), LOG = path.join(DIR, "log.jsonl");
-const GAP = 61_000, RATE_REST = 65_000, QUEUE_REST = Number(process.env.AGNES_QUEUE_REST_MS || 500), IP_REST = 30_000;  // cola llena: 0,5 s (creador 2-oct: más intentos = más lugares agarrados; medido 1→40 clips/h, 0 bloqueos por ráfaga)
+const GAP = 61_000, RATE_REST = 65_000, QUEUE_REST = Number(process.env.AGNES_QUEUE_REST_MS || 500), IP_REST = 30_000, QUOTA_REST = 185_000;  // cola llena: 0,5 s (creador 2-oct: más intentos = más lugares agarrados; medido 1→40 clips/h, 0 bloqueos por ráfaga)
 const MIN_SPACING = Number(process.env.AGNES_SPACING_MS || 500); // entre DOS envíos cualesquiera de la PC ("rate exceeds the limit" = ráfaga)
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const hk = (k) => crypto.createHash("sha1").update(k).digest("hex").slice(0, 10);
@@ -87,10 +87,11 @@ export async function reportKey(key, res) {
     if (res === "rate") e.next = Math.max(e.next || 0, now + RATE_REST);
     if (res === "iprate") { s.queueUntil = Math.max(s.queueUntil, now + IP_REST); e.next = Math.min(e.next || 0, now + IP_REST); }
     if (res === "queue") { s.queueSetAt = now; s.queueUntil = Math.max(s.queueUntil, now + QUEUE_REST); e.next = Math.min(e.next || 0, now + QUEUE_REST); }
+    if (res === "quota") e.next = Math.max(e.next || 0, now + QUOTA_REST);
     e[res] = (e[res] || 0) + 1; s.keys[hk(key)] = e;
   });
 }
-const clasificar = (m) => /free users/i.test(m) ? "rate" : /rate exceeds|too many|"code":429|\b429\b/i.test(m) ? "iprate" : /rate limit/i.test(m) ? "rate" :/queue|busy|capacity/i.test(m) ? "queue" : /fetch failed|timeout|ECONN|aborted|network|socket|5\d\d/i.test(m) ? "red" : "reject";
+const clasificar = (m) => /free users/i.test(m) ? "rate" : /used up today's video generation quota|1 request every 3 minutes/i.test(m) ? "quota" : /rate exceeds|too many|"code":429|\b429\b/i.test(m) ? "iprate" : /rate limit/i.test(m) ? "rate" :/queue|busy|capacity/i.test(m) ? "queue" : /fetch failed|timeout|ECONN|aborted|network|socket|5\d\d/i.test(m) ? "red" : "reject";
 
 /** Envía un video. Devuelve { vid, key } o tira error si agnes lo rechaza por contenido/parámetros. */
 export async function agnesSubmit(body, { tag = "", maxTries = 2000 } = {}) {
