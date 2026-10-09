@@ -69,3 +69,8 @@ _v3probe/
 factory/_state/
 factory/_dry/
 .pubprune/
+
+# Loretta House Hacks: guiones y material del libro = producto pago, NUNCA al repo público
+guiones/hh*
+_hh*_assets.txt
+fish_refs/

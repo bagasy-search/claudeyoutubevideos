@@ -2,7 +2,7 @@
 # Re-encode de ENTREGA (el mp4 del farm nunca va crudo): PTS rehechos (cuadros == TOTAL_FRAMES), yuv420p/tv/bt709, g=60, faststart,
 # -bf 0, audio = la mezcla final determinista (out/<slug>_mix.wav). uso: SLUG=x bash vlog/loretta/entrega.sh <farm.mp4> <salida.mp4>
 set -e
-IN=$1; OUT=$2; cd D:/Proyectos/video2-wt/lor3
+IN=$1; OUT=$2; cd D:/Proyectos/video2-wt/lhh
 N=$(grep -oE "TOTAL_FRAMES = [0-9]+" src/$SLUG/timeline.gen.ts | grep -oE "[0-9]+$")
 ffmpeg -v error -y -i "$IN" -i out/${SLUG}_mix.wav -map 0:v:0 -map 1:a:0 \
   -vf "setpts=N/(30*TB),scale=in_range=full:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p" \

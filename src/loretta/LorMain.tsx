@@ -19,6 +19,7 @@ import { LorStepCount } from "./LorStepCount";
 import { LorCountdown } from "./LorCountdown";
 import { LorCookbook3D } from "./LorCookbook3D";
 import { LorRecipeSheet } from "./LorRecipeCard";
+import { LorPage, LorQR, LorCareful } from "./LorHH";
 
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % (fotos) / 1,5-4 % (clips), foco 28-72 %,
@@ -69,9 +70,9 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 
 const COMP: Record<string, React.FC<any>> = {
   LorRecipeCard, LorSignUpSheet, LorTrick, LorTwoCards, LorMeasure, LorYear, LorHam3D, LorRoaster3D, LorThermometer,
-  LorOvenDial, LorTwoHourClock, LorSchedule, LorStepCount, LorCountdown, LorCookbook3D, LorRecipeSheet,
+  LorOvenDial, LorTwoHourClock, LorSchedule, LorStepCount, LorCountdown, LorCookbook3D, LorRecipeSheet, LorPage, LorQR,
 };
-const OVC: Record<string, React.FC<any>> = { LorNameTag, LorComments, LorNote, LorArrow, LorAsk, LorSubscribe };
+const OVC: Record<string, React.FC<any>> = { LorNameTag, LorComments, LorNote, LorArrow, LorAsk, LorSubscribe, LorCareful };
 
 const Shot: React.FC<{ c: any }> = ({ c }) => {
   if (c.k === "av") return <Avatar c={c} />;

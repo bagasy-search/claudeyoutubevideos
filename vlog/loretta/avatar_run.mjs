@@ -37,6 +37,10 @@ if (fase === "build") {
 
 if (fase === "run") {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  // reanudar: si ya hay job enviado y no terminó, NO se manda otro /run (cada /run cobra US$0,25)
+  let j = fs.existsSync(OUT + "job.json") && !fs.existsSync(OUT + "status_final.json") ? JSON.parse(fs.readFileSync(OUT + "job.json", "utf8")) : null;
+  if (j) log("reanudo job", j.id);
+  if (!j) {
   const user = sh("gh", ["api", "user", "-q", ".login"]).trim();
   const tok = sh("gh", ["auth", "token"]).trim();
   const repo = "rp-it-test", br = SLUG + "-" + Date.now().toString(36);
@@ -52,18 +56,20 @@ if (fase === "run") {
   for (const u of [img, aud]) { for (let t = 0; t < 20; t++) { const r = await fetch(u, { method: "HEAD" }); if (r.ok) break; await sleep(5000); } }
   log("inputs públicos", img, aud);
   const body = { input: { prompt: "An 81-year-old grandmother talking warmly to her grandson behind the camera in her kitchen, natural small head movements, blinking, expressive old face, background stays still", image: img, audio: aud, size: "720p", enable_safety_checker: false }, policy: { executionTimeout: 7200000 } };
-  const j = await (await fetch("https://api.runpod.ai/v2/infinitetalk/run", { method: "POST", headers: { Authorization: "Bearer " + KEY, "Content-Type": "application/json" }, body: JSON.stringify(body) })).json();
+  j = await (await fetch("https://api.runpod.ai/v2/infinitetalk/run", { method: "POST", headers: { Authorization: "Bearer " + KEY, "Content-Type": "application/json" }, body: JSON.stringify(body) })).json();
   log("RUN", JSON.stringify(j)); if (!j.id) process.exit(1);
   fs.writeFileSync(OUT + "job.json", JSON.stringify({ id: j.id, br, img, aud, t: Date.now() }));
+  }
   for (;;) {
     await sleep(60000);
     let st; try { st = await (await fetch("https://api.runpod.ai/v2/infinitetalk/status/" + j.id, { headers: { Authorization: "Bearer " + KEY }, signal: AbortSignal.timeout(30000) })).json(); } catch (e) { log("poll err", e.message); continue; }
     log("status", st.status, st.executionTime || "");
     if (st.status === "COMPLETED") {
-      fs.writeFileSync(OUT + "status_final.json", JSON.stringify(st, null, 1));
       const url = st.output?.result || st.output?.video || st.output?.url;
-      const buf = Buffer.from(await (await fetch(url)).arrayBuffer()); fs.writeFileSync(OUT + "reel.mp4", buf);
+      let buf; for (let t = 0; t < 20; t++) { try { buf = Buffer.from(await (await fetch(url)).arrayBuffer()); break; } catch (e) { log("bajada err", e.message); await sleep(30000); } }
+      fs.writeFileSync(OUT + "reel.mp4", buf);
       const d = sh("ffprobe", ["-v", "error", "-show_entries", "format=duration:stream=width,height,r_frame_rate", "-of", "csv=p=0", OUT + "reel.mp4"]);
+      fs.writeFileSync(OUT + "status_final.json", JSON.stringify(st, null, 1));
       log("LISTO reel.mp4", d.replace(/\s+/g, " "), "costo", st.output?.cost);
       break;
     }

@@ -1,7 +1,7 @@
 #!/bin/bash
 # Post-farm de un video de Loretta: espera "FARM OK" del auto.sh → re-encode de entrega (cuadros == TOTAL_FRAMES) → auditor del minuto 1
 # (hojas en _v3/audit_<slug>/) → release <slug> con <slug>.mp4 (HTTP 200). El deliver_card lo corro yo tras mirar las hojas.
-S=$1; cd D:/Proyectos/video2-wt/lor3; export SLUG=$S PYTHONUTF8=1; R=bagasy-search/claudeyoutubevideos
+S=$1; cd D:/Proyectos/video2-wt/lhh; export SLUG=$S PYTHONUTF8=1; R=bagasy-search/claudeyoutubevideos
 log() { echo "$(date -u +%T) [$S] $*"; }
 until grep -q "FARM OK" out/auto_$S.log 2>/dev/null; do grep -q "agoté\|falló" out/auto_$S.log 2>/dev/null && { log "auto.sh falló"; exit 1; }; sleep 60; done
 mkdir -p out/up; IN=D:/videosdeclaude/$S.mp4

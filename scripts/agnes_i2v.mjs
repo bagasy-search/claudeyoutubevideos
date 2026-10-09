@@ -16,8 +16,7 @@
 // agnes sin ese sello (scripts/agnes_qc_gate.mjs).
 import fs from "node:fs";
 import path from "node:path";
-import * as __cp from "node:child_process";
-const execFileSync = (c, a, o = {}) => __cp.execFileSync(c, a, { windowsHide: true, ...o }); // sin ventanas de consola (pedido del creador, 2-oct-2026)
+import { execFileSync } from "node:child_process";
 // ⛔ 30-sep-2026: TODO envío a agnes pasa por la reserva de claves compartida de la PC (límite = 1 video/min POR
 // CLAVE + ráfaga por PC, NO por IP). La librería pone el ritmo; acá no se lleva cuenta propia de claves.
 import { agnesSubmit, KEYS as POOL_KEYS } from "../factory/lib/agnes_pool.mjs";
