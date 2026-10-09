@@ -12,7 +12,9 @@ try { for (const l of fs.readFileSync(".env", "utf8").split(/\r?\n/)) { const m 
 const KEYS = (process.env.AGNES_KEYS || env.AGNES_KEYS || "").split(",").map((s) => s.trim()).filter(Boolean);
 if (!KEYS.length) { console.error("faltan AGNES_KEYS en .env"); process.exit(2); }
 const API = (process.env.AGNES_BASE_URL || env.AGNES_BASE_URL || "https://apihub.agnes-ai.com/v1").replace(/\/$/, "") + "/chat/completions";
-const MODEL = process.env.GATE_MODEL || "agnes-3.0-flash";
+const DS = process.env.JUEZ !== "agnes";   // ⭐ 9-oct: DeepSeek Flash VE imágenes (y no está saturado como agnes): juez por defecto
+const DSKEY = (() => { try { return fs.readFileSync("C:/Users/bauti/Downloads/video2/.env", "utf8").match(/^DEEPSEEK_API_KEY=(.*)$/m)[1].replace(/["'\s]/g, ""); } catch { return ""; } })();
+const MODEL = DS ? "deepseek-flash" : (process.env.GATE_MODEL || "agnes-3.0-flash");
 
 const CHECKS = {
   texto_cortado: "A word or label is CUT OFF: part of its letters is hidden by the edge of the picture or by the edge of the card/box it sits in (e.g. 'garantía 7 dí'). Text that is complete but small is NOT this defect.",
@@ -30,18 +32,18 @@ Inspect the frame region by region and answer each check with true (defect clear
 ${Object.entries(CHECKS).map(([k, v]) => `- ${k}: ${v}`).join("\n")}
 Reply ONLY with JSON: {${Object.keys(CHECKS).map((k) => `"${k}": true|false`).join(", ")}, "motivo": "<one short sentence about the worst problem, or empty>"}`;
 
-const uri = (f) => "data:image/png;base64," + fs.readFileSync(f).toString("base64");
+const uri = (f) => `data:image/${/\.jpe?g$/i.test(f) ? "jpeg" : "png"};base64,` + fs.readFileSync(f).toString("base64");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let ki = Math.floor(Math.random() * 1000);
 const T0 = Date.now(), TOPE = 20 * 60_000;   // agnes saturado (429 en todas las claves): a los 20 min lo que falta pasa con aviso
 async function pedir(img, texto) {
   if (Date.now() - T0 > TOPE) return { _error: "tope de 20 min (agnes saturado)" };
   for (let intento = 0; intento < 9; intento++) {
-    const key = KEYS[(ki++) % KEYS.length];
+    const key = DS ? DSKEY : KEYS[(ki++) % KEYS.length];
     try {
-      const r = await fetch(API, {
-        method: "POST", headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" }, signal: AbortSignal.timeout(120_000),
-        body: JSON.stringify({ model: MODEL, temperature: 0, messages: [{ role: "user", content: [{ type: "text", text: texto }, { type: "image_url", image_url: { url: uri(img) } }] }] }),
+      const r = await fetch(DS ? "https://api.deepseek.com/chat/completions" : API, {
+        method: "POST", headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" }, signal: AbortSignal.timeout(180_000),
+        body: JSON.stringify({ model: MODEL, temperature: 0, max_tokens: 1500, messages: [{ role: "user", content: [{ type: "image_url", image_url: { url: uri(img) } }, { type: "text", text: texto }] }] }),
       });
       const txt = await r.text();
       if (!r.ok) throw new Error(`${r.status} ${txt.slice(0, 120)}`);
@@ -60,7 +62,7 @@ const res = {};
 const cola = [...items];
 await Promise.all(Array.from({ length: Math.min(4, cola.length) }, async () => {
   while (cola.length) {
-    const it = cola.shift(), img = path.join(DIR, it.name + ".png");
+    const it = cola.shift(), img = [".png", ".jpg"].map((e) => path.join(DIR, it.name + e)).find((f) => fs.existsSync(f));
     // dos opiniones: un defecto cuenta sólo si lo marcan las DOS (el juez a veces inventa; un defecto real se repite)
     const [a, b] = await Promise.all([pedir(img, Q(it)), pedir(img, Q(it))]);
     if (a._error && b._error) { res[it.name] = { ok: true, fallas: [], motivo: "sin respuesta del juez: " + a._error }; continue; }
