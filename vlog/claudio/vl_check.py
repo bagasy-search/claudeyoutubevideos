@@ -9,7 +9,7 @@ D = os.environ.get("VL_DIR") or R + f"vlog/{S}/M1/"; T = D + "_chk/"; os.makedir
 plan = json.load(open(D + "plan.json", encoding="utf-8")); st = json.load(open(D + "clips/state.json", encoding="utf-8"))
 OUT = D + "vl_check.json"; res = json.load(open(OUT, encoding="utf-8")) if os.path.exists(OUT) else {}
 def pcm(f, ss=0, t=None):
-    a = ["ffmpeg", "-v", "error", "-ss", str(ss), "-i", f] + (["-t", f"{t:.3f}"] if t else []) + ["-ac", "1", "-ar", "8000", "-f", "s16le", "-"]
+    a = ["ffmpeg", "-v", "error", "-ss", str(ss), "-i", f] + (["-t", f"{t:.3f}"] if t else []) + ["-af", "highpass=f=300,lowpass=f=3000", "-ac", "1", "-ar", "8000", "-f", "s16le", "-"]  # banda de voz: el rumble/viento que agrega agnes no cuenta (furatones5)
     return np.frombuffer(subprocess.run(a, capture_output=True).stdout, np.int16).astype(np.float32)
 def env(x, hop=160): n = len(x) // hop; return np.sqrt((x[:n * hop].reshape(n, hop) ** 2).mean(1) + 1e-9)
 nw = lambda w: re.sub(r"[^a-z0-9ñ]", "", "".join(c for c in unicodedata.normalize("NFD", w.lower()) if unicodedata.category(c) != "Mn"))
@@ -38,7 +38,7 @@ if todo:
         A = [nw(w) for w in res[i]["text"].split() if nw(w)]; B = [nw(w) for w in txt.split() if nw(w)]
         res[i]["asr"] = txt; res[i]["sim"] = round(difflib.SequenceMatcher(None, A, B, autojunk=False).ratio(), 3) if txt else None
 for i, v in res.items():
-    v["ok"] = v["r"] >= 0.80 and abs(v["lag"]) <= 0.12 and (v.get("sim") is None or v["sim"] >= 0.80)
+    v["ok"] = (v["r"] >= 0.80 and abs(v["lag"]) <= 0.12 and (v.get("sim") is None or v["sim"] >= 0.80)) or (v["r"] >= 0.95 and abs(v["lag"]) <= 0.06)  # r≥0,95 = agnes devolvió la MISMA voz (el ASR falla con números)
 json.dump(res, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 rech = sorted(i for i, v in res.items() if not v["ok"]); json.dump(rech, open(D + "rechazados.json", "w"), indent=1)
 for i, v in sorted(res.items()): print(f"{'OK' if v['ok'] else 'XX'} {i:14s} r {v['r']:.2f} lag {v['lag']:+.2f} sim {v.get('sim')}")

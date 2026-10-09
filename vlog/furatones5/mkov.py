@@ -1,13 +1,14 @@
 # Componentes ENCIMA del vlog (furatones5): tiempos sacados de las palabras del máster (= tiempos del video: armado trunc sin agregados).
 # → src/furatones5/ov.json [{c, from, dur, props}] (cuadros a 30 fps). bed = el propio vlog en ese momento (vid/furatones5/bed_<n>.mp4).
-import json, re, unicodedata
+import json, re, unicodedata, sys
+sys.path.insert(0, "D:/Proyectos/video2-wt/furatones5/vlog/furatones5"); from recorte import mapear
 R = "D:/Proyectos/video2-wt/furatones5/"; WM = json.load(open(R + "_v3/furatones5_wordms.json", encoding="utf8"))
 nw = lambda w: re.sub(r"[^a-z0-9ñ]", "", "".join(c for c in unicodedata.normalize("NFD", w.lower()) if unicodedata.category(c) != "Mn"))
 W = [nw(w["w"]) for w in WM]
 def at(frase, end=False):
     q = [nw(x) for x in frase.split()]
     for i in range(len(W) - len(q) + 1):
-        if W[i:i + len(q)] == q: return WM[i + len(q) - 1]["e"] if end else WM[i]["s"]
+        if W[i:i + len(q)] == q: return mapear(WM[i + len(q) - 1]["e"] if end else WM[i]["s"])
     raise SystemExit("no encuentro: " + frase)
 I = "img/furatones5/"
 OV = [

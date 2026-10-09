@@ -1,7 +1,7 @@
 [
  {
   "c": "ClCasa5",
-  "from": 836,
+  "from": 797,
   "dur": 126,
   "props": {
    "from": 0,
@@ -9,11 +9,11 @@
    "note": "si entra la moneda, entra el ratón",
    "bed": "vid/furatones5/bed_0.mp4#130"
   },
-  "t": 27.87
+  "t": 26.58
  },
  {
   "c": "ClVideoRef",
-  "from": 2458,
+  "from": 2400,
   "dur": 165,
   "props": {
    "thumb": "img/furatones5/th_fucasero.jpg",
@@ -21,21 +21,21 @@
    "tag": "VIDEO ANTERIOR",
    "bed": "vid/furatones5/bed_1.mp4#169"
   },
-  "t": 81.95
+  "t": 80.0
  },
  {
   "c": "ClChip",
-  "from": 3741,
+  "from": 3666,
   "dur": 108,
   "props": {
    "text": "Si entra la moneda, entra el ratón",
    "corner": "tl"
   },
-  "t": 124.69
+  "t": 122.21
  },
  {
   "c": "ClBookPage",
-  "from": 12059,
+  "from": 11779,
   "dur": 210,
   "props": {
    "page": "img/furatones5/page15.jpg",
@@ -43,11 +43,11 @@
    "stamp": "Las medidas, en la página",
    "bed": "vid/furatones5/bed_3.mp4#214"
   },
-  "t": 401.95
+  "t": 392.64
  },
  {
   "c": "ClCasa5",
-  "from": 13679,
+  "from": 13347,
   "dur": 132,
   "props": {
    "from": 3,
@@ -57,11 +57,11 @@
    "note": "el que nadie revisa",
    "bed": "vid/furatones5/bed_4.mp4#136"
   },
-  "t": 455.97
+  "t": 444.9
  },
  {
   "c": "ClCasa5",
-  "from": 15822,
+  "from": 15428,
   "dur": 108,
   "props": {
    "from": 4,
@@ -69,11 +69,11 @@
    "note": "cinco lugares, una tarde",
    "bed": "vid/furatones5/bed_5.mp4#112"
   },
-  "t": 527.39
+  "t": 514.28
  },
  {
   "c": "ClQRCard",
-  "from": 18656,
+  "from": 18200,
   "dur": 180,
   "props": {
    "qr": "img/furatones5/qr.jpg",
@@ -82,11 +82,11 @@
    "kicker": "REGALO · ANTES DE FUMIGAR",
    "bed": "vid/furatones5/bed_6.mp4#184"
   },
-  "t": 621.85
+  "t": 606.66
  },
  {
   "c": "ClQRCard",
-  "from": 18848,
+  "from": 18392,
   "dur": 255,
   "props": {
    "qr": "img/furatones5/qr.jpg",
@@ -95,11 +95,11 @@
    "kicker": "EL MANUAL · US$27",
    "bed": "vid/furatones5/bed_7.mp4#259"
   },
-  "t": 628.27
+  "t": 613.08
  },
  {
   "c": "ClVideoRef",
-  "from": 19758,
+  "from": 19299,
   "dur": 150,
   "props": {
    "thumb": "img/furatones5/th_fumoscas.jpg",
@@ -107,6 +107,6 @@
    "next": true,
    "bed": "vid/furatones5/bed_8.mp4#154"
   },
-  "t": 658.59
+  "t": 643.3
  }
 ]
