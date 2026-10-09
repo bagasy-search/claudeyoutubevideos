@@ -78,5 +78,40 @@
   "file": "v_estufa.mp4",
   "T": 9,
   "own": false
+ },
+ "v_revision": {
+  "file": "v_revision.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_limpiar": {
+  "file": "v_limpiar.mp4",
+  "T": 9,
+  "own": false
+ },
+ "v_estacion": {
+  "file": "v_estacion.mp4",
+  "T": 7,
+  "own": false
+ },
+ "v_donde": {
+  "file": "v_donde.mp4",
+  "T": 9,
+  "own": false
+ },
+ "v_error": {
+  "file": "v_error.mp4",
+  "T": 9,
+  "own": false
+ },
+ "v_inspector": {
+  "file": "v_inspector.mp4",
+  "T": 8,
+  "own": false
+ },
+ "v_trabajar": {
+  "file": "v_trabajar.mp4",
+  "T": 5,
+  "own": false
  }
 }
