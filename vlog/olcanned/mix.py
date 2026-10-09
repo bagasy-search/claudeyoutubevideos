@@ -21,7 +21,7 @@ def add(x, at, gain=1.0, dur=None, fade=0.0):
         k = int(fade * SR); r = np.linspace(0, 1, k, dtype=np.float32)[:, None]; x[:k] *= r; x[-k:] *= r[::-1]
     e = min(N, i0 + len(x))
     if e > i0: mix[i0:e] += x[: e - i0] * gain
-voice = load("olcanned.wav", 1); add(np.repeat(voice, 2, 1), 0.0)
+voice = load("olcanned.wav", 1); add(np.repeat(voice, 2, 1) * (0.0 if __import__("os").environ.get("NOVOICE") else 1.0), 0.0)
 # SIN música de fondo (canales EN): sólo voz + foley + ambiente del lugar
 fcache = {}
 def floop(src, n):
@@ -44,6 +44,6 @@ for a in SFX:
     add(cache[a["src"]], a["from"] / FPS, a["vol"], a["dur"] / FPS, 0.02)
 peak = np.abs(mix).max(); print("pico", round(float(20 * np.log10(peak + 1e-9)), 2), "dBFS")
 raw = (np.clip(mix, -1, 1)).astype(np.float32).tobytes()
-p = subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-af", "loudnorm=I=-16:TP=-1.5:LRA=11:linear=true", "-ar", str(SR), "-c:a", "pcm_s16le", R + "out/olcanned_mix.wav"], input=raw)
+p = subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-af", ("anull" if __import__("os").environ.get("NOVOICE") else "loudnorm=I=-16:TP=-1.5:LRA=11:linear=true"), "-ar", str(SR), "-c:a", "pcm_s16le", R + "out/olcanned_mix.wav"], input=raw)
 o = subprocess.run(["ffmpeg", "-hide_banner", "-i", R + "out/olcanned_mix.wav", "-af", "ebur128=peak=true:framelog=quiet", "-f", "null", "-"], capture_output=True, text=True).stderr
 print("mezcla:", " ".join(l.strip() for l in o.splitlines() if re.match(r"\s+(I|Peak):", l)), "· dur", N / SR)
