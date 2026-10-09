@@ -46,7 +46,9 @@ jobs:
     # Un chunk que se cuelga (blur/backdrop-filter pesado bajo swangle, o decode trabado) NO debe
     # comerse el default de 360 min de un runner en silencio. Con esto FALLA en 25' y stitch
     # (if:!cancelled()) persiste los buenos → re-render parcial limpio con only_chunks. (21-sep-2026)
-    timeout-minutes: 25
+    # 9-oct-2026 (fumoscasf): 371 cuadros con 3 videos (vlog + cama del componente + avatar) tardan ~25'
+    # bajo swangle en el runner de 2 núcleos: el 25 justo los mataba al borde. 45 los deja terminar.
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
