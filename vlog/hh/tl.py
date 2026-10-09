@@ -58,7 +58,7 @@ for i, s in enumerate(shots):
         if not ex(img): warn.append(f"falta imagen {s['name']}")
         clip = f"broll/{S}/{s['name']}.mp4"
         if k == "cl" and ex(clip): c.update(clip=clip, clipF=int(probe(clip) * FPS) - 1, real=1)
-        elif k == "cl": warn.append(f"falta clip {s['name']}")
+        elif k == "cl" and not os.path.exists(R + f"_v3/bak_{S}/qc/{s['name']}_SACADO"): warn.append(f"falta clip {s['name']}")
     elif k == "ei":
         img = f"img/{S}/{s['name']}.jpg"; c.update(k="snap", img=img if ex(img) else None)
         if not ex(img): warn.append(f"falta snapshot {s['name']}")
@@ -80,6 +80,7 @@ for m in P["marks"]:
         if txt: ovs.append({"from": f0 + 3, "dur": min(F(9), TOTAL - f0 - 3), "name": "LorCareful", "props": {"text": txt}}); sfx.append({"from": f0 + 3, "dur": 20, "src": "sfx/sfx_chime.mp3", "vol": 0.12})
 for o in ovs:
     if o["name"] == "LorNameTag": sfx.append({"from": o["from"] + 4, "dur": 15, "src": "sfx/sfx_paper_tick.mp3", "vol": 0.18})
+json.dump([{"src": c["clip"], "dur": min(c["dur"], c["clipF"]) / FPS, "key": c["clip"]} for c in cues if c.get("clip")], open(R + f"_v3/{S}_cues.json", "w"), indent=0)
 gaps = [i for i in range(1, len(cues)) if cues[i]["from"] != cues[i - 1]["from"] + cues[i - 1]["dur"]]
 assert not gaps, gaps[:5]
 os.makedirs(R + f"src/{S}", exist_ok=True)

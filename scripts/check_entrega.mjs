@@ -21,7 +21,7 @@ const src = process.argv[2];
 if (!src) { console.error("uso: node scripts/check_entrega.mjs <mp4 | url>"); process.exit(1); }
 // El retorno de carro se quita SIEMPRE: en Windows ffprobe lo deja pegado al valor y toda
 // comparacion por igualdad falla en silencio -> la compuerta rechaza un archivo correcto.
-const probe = (args) => execFileSync("ffprobe", ["-v", "error", ...args, src], { encoding: "utf8" }).split(String.fromCharCode(13)).join("").trim();
+const probe = (args) => execFileSync("ffprobe", ["-v", "error", ...(/^https?:/.test(src) ? ["-rw_timeout", "60000000"] : []), ...args, src], { encoding: "utf8" }).split(String.fromCharCode(13)).join("").trim();
 
 const v = Object.fromEntries(probe(["-select_streams", "v:0", "-show_entries",
   "stream=pix_fmt,color_range,color_space,width,height,duration,has_b_frames", "-of", "default=nw=1"])
@@ -48,7 +48,7 @@ if (a.duration && v.duration) {
 
 // keyframes: con GOPs largos el navegador tironea cada vez que se queda sin buffer
 const kf = probe(["-select_streams", "v:0", "-skip_frame", "nokey", "-show_entries", "frame=pts_time",
-  "-read_intervals", "%+120", "-of", "csv=p=0"]).split("\n").map(Number).filter((x) => !isNaN(x));
+  "-read_intervals", "%+120", "-of", "csv=p=0"]).split("\n").map((x) => parseFloat(x)).filter((x) => !isNaN(x)); // parseFloat: ffprobe a veces deja "75.23," (con coma) y Number() lo tiraba → hueco falso
 if (kf.length > 2) {
   const gap = Math.max(...kf.slice(1).map((x, i) => x - kf[i]));
   exigir(gap <= 3.0, `keyframes cada ${gap.toFixed(1)}s`, `keyframes cada ${gap.toFixed(1)}s (máximo 3 s: con GOPs largos el buffer no recupera)`);
