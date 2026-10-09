@@ -108,6 +108,8 @@ function compFx(n, c, durS) {
   if (n === "ClCoinCell") { add("car/plastic_clip.mp3", 0.4, 0.15, 0.8); add("design/click_interface.flac", 0.3, durS * 0.2, 0.5); add("design/click_interface.flac", 0.3, durS * 0.32, 0.5); add("design/click_interface.flac", 0.3, durS * 0.44, 0.5); add("design/impact_drum_subtle.flac", 0.3, durS * 0.62, 1.2); }
   if (n === "ClOdoRace") { add("design/swell_suspense.flac", 0.2, 0.2, durS * 0.6); add("design/impact_drum_subtle.flac", 0.32, durS * 0.5, 1.2); add("design/impact_drum_subtle.flac", 0.3, durS * 0.75, 1.2); }
   if (n === "ClOilDrop") { add("foley/water_bubble.flac", 0.3, 0.6, 1); add("design/swell_suspense.flac", 0.18, 0.7, durS * 0.4); if (P.mode !== "drop") add("foley/scrub_floor.flac", 0.3, durS * 0.45, 1.4); }
+  if (n === "ClVoltMeter") { add("design/click_interface.flac", 0.34, 0.3, 0.5); add("car/obd_beep.mp3", 0.35, 1.0, 1); }
+  if (n === "ClBucket") { add("foley/water_bubble.flac", 0.3, 0.4, Math.min(3, durS * 0.5)); add("design/impact_drum_subtle.flac", 0.3, durS * 0.45, 1.2); }
   if (n === "ClShifter") { add("design/click_slide.flac", 0.34, 0.35, 0.6); add("design/click_interface.flac", 0.34, 0.9, 0.5); }
   if (n === "ClPawl") { add("design/swell_suspense.flac", 0.2, 0.2, durS * 0.5); add(P.mode === "rolling" ? "foley/ceramic_scrape.flac" : "design/impact_drum_subtle.flac", 0.34, 0.6, 1.4); }
   if (n === "ClMpgMath") { add("design/pencil_strokes.flac", 0.3, 0.3, 1.6); add("design/impact_drum_subtle.flac", 0.32, 1.25, 1.2); }
