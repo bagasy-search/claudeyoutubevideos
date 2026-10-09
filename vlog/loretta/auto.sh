@@ -1,7 +1,7 @@
 #!/bin/bash
 # Auto-encadenador de un video de Loretta: espera el avatar → post → timeline --final → mezcla → commit en rama congelada <slug>-render
 # → espera que GitHub Actions esté operativo → farm (reintenta si el runner no se consigue). uso: bash vlog/loretta/auto.sh <slug>
-S=$1; cd D:/Proyectos/video2-wt/lor3; export SLUG=$S PYTHONUTF8=1
+S=$1; cd D:/Proyectos/video2-wt/lnet46; export SLUG=$S PYTHONUTF8=1
 log() { echo "$(date -u +%T) [$S] $*"; }
 until [ -f out/${S}_avatar/status_final.json ]; do sleep 60; done
 if [ ! -f public/avatar_clips/$S/reel30.mp4 ]; then
@@ -10,7 +10,7 @@ if [ ! -f public/avatar_clips/$S/reel30.mp4 ]; then
   python vlog/loretta/mix.py || exit 1
   ( flock 9; git add src/$S/timeline.gen.ts && git commit -qm "$S: timeline final con avatar
 
-Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"; git push -q origin lor3-render; git push -q -f origin HEAD:refs/heads/$S-render ) 9>out/.gitlock
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"; git push -q origin lnet46-render; git push -q -f origin HEAD:refs/heads/$S-render ) 9>out/.gitlock
   log "listo para farm"
 fi
 F=$(grep -oE "TOTAL_FRAMES = [0-9]+" src/$S/timeline.gen.ts | grep -oE "[0-9]+$"); ID="$(echo ${S:0:1} | tr a-z A-Z)${S:1}"

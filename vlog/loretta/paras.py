@@ -1,4 +1,4 @@
-import os; S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lor3/"
+import os; S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lnet46/"
 # Párrafos del guion filmado con su ms real → _v3/<slug>_paras.json. SLUG=x python vlog/loretta/paras.py
 import json, re
 W = json.load(open(R + f"_v3/{S}_wordms.json", encoding="utf8"))

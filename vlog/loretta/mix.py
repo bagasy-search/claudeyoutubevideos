@@ -2,7 +2,7 @@
 # máster de voz (mono→estéreo) + foley real de los clips kf (bajo la voz, fundidos 0,15 s)
 # + sfx puntuales, todo en los cuadros exactos del timeline generado. → out/<slug>_mix.wav (SLUG=x python vlog/loretta/mix.py) (48 kHz estéreo, -16 LUFS)
 import json, re, subprocess, numpy as np
-import os; S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lor3/"
+import os; S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lnet46/"
 SR = 48000; FPS = 30
 ts = open(R + f"src/{S}/timeline.gen.ts", encoding="utf8").read()
 grab = lambda k: json.loads(re.search(rf"export const {k}: any\[\] = (.*);", ts).group(1))

@@ -1,6 +1,6 @@
 # guiones/<slug>_filmado.txt → guiones/<slug>.txt (limpio, 1 párrafo por línea) + _voz.txt (tags Fish moderados). SLUG=x python vlog/loretta/mk_guion.py
 import re, os, subprocess
-S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lor3/"
+S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lnet46/"
 f = open(R + f"guiones/{S}_filmado.txt", encoding="utf8").read().strip().split("\n")
 clean = [re.sub(r"\s{2,}", " ", re.sub(r"\[[^\]]*\]", "", l)).strip() for l in f if l.strip()]
 open(R + f"guiones/{S}.txt", "w", encoding="utf8", newline="\n").write("\n".join(clean))

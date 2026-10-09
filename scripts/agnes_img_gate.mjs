@@ -70,6 +70,9 @@ ${k}: ${CHECKS[k]}
 Reply ONLY with JSON: {"defecto": true|false, "motivo": "<one short sentence>"}`;
 
 async function pedir(img, texto, antes = []) {
+  // 429 "rate exceeds" = ráfaga de la IP (varias corridas en paralelo): NO es una falla de la foto → esperar con jitter y
+  // reintentar sin gastar intentos (9-oct: 17/17 'rechazadas' por sin_respuesta 429 → se regeneraban fotos buenas).
+  let r429 = 0;
   for (let intento = 0; intento < 6; intento++) {
     const key = KEYS[(ki++) % KEYS.length];
     try {
@@ -84,6 +87,7 @@ async function pedir(img, texto, antes = []) {
       if (!m) throw new Error("sin JSON");
       return JSON.parse(m[0]);
     } catch (e) {
+      if (/^429/.test(e.message) && r429++ < 60) { intento--; await sleep(8000 + Math.random() * 22000); continue; }
       if (intento === 5) return { _error: String(e.message).slice(0, 140) };
       await sleep(3000 * (intento + 1));
     }

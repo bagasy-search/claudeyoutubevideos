@@ -1,6 +1,6 @@
 # Alineación GLOBAL guion↔ASR (difflib) → _v3/<slug>_wordms.json + huecos (frases comidas por Fish). SLUG=x python vlog/loretta/align.py
 import json, re, difflib, os
-S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lor3/"
+S = os.environ["SLUG"]; R = "D:/Proyectos/video2-wt/lnet46/"
 norm = lambda w: re.sub(r"[^a-z0-9']", "", w.lower())
 cap = json.load(open(R + f"public/captions_{S}.json", encoding="utf8"))
 asr = [{"word": c["text"].strip(), "start": c["startMs"] / 1000, "end": c["endMs"] / 1000} for c in cap if c["text"].strip()]

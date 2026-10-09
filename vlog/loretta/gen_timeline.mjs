@@ -20,6 +20,11 @@ shots.forEach((s, i) => {
   const f0 = F(s.start), f1 = i + 1 < shots.length ? F(shots[i + 1].start) : TOTAL;
   const c = { k: s.kind, from: f0, dur: Math.max(1, f1 - f0), seed: (f0 * 2654435761) >>> 0 };
   if (s.kind === "av") avCue(c, s);
+  else if (s.kind === "kf" && process.env.AGNES_KF) {
+    const st = `broll/${SLUG}/K${s.name}.mp4`; c.k = "img"; c.img = imgOf("K" + s.name);
+    if (ex(st)) { c.clip = st; c.clipF = Math.floor(probeDur(st) * FPS) - 1; c.real = 1; } else { c.fallback = s.name; if (!ACEPT.has(s.name)) fallback.push(s.name); }
+    if (!c.img) warn.push(`sin ancla ${s.name}`);
+  } else if (s.kind === "pg") { c.k = "img"; c.img = imgOf(s.name); c.real = 1; if (!c.img) warn.push(`falta página ${s.name}`); }
   else if (s.kind === "vl" || s.kind === "kf") {
     const p = `vid/${SLUG}/${s.name}.mp4`;
     if (ex(p)) { c.src = p; c.sf = s.kind === "vl" ? Math.max(0, F(s.start - CLIP0[s.name])) : 0; c.real = 1;
@@ -33,9 +38,9 @@ shots.forEach((s, i) => {
     if (!c.img && !c.clip) warn.push(`falta imagen ${s.name}`);
   } else if (s.kind === "ei") { c.k = "snap"; c.img = imgOf(s.name); if (!c.img) warn.push(`falta snapshot ${s.name}`); }
   else if (s.kind === "c") { c.k = "comp"; c.name = s.name; c.props = s.props || {}; }
-  if (c.k === "comp" && ["LorRecipeCard", "LorTwoCards", "LorTrick", "LorSignUpSheet", "LorYear"].includes(c.name) && !c.props.bed && lastImg) c.props = { ...c.props, bed: lastImg };
+  if (c.k === "comp" && ["LorRecipeCard", "LorTwoCards", "LorTrick", "LorSignUpSheet", "LorYear", "LorSafeTemps", "LorVerse", "LorTwoHourClock"].includes(c.name) && !c.props.bed && lastImg) c.props = { ...c.props, bed: lastImg };
   if ((c.k === "img" || c.k === "snap") && c.img) lastImg = c.img;
-  if (s.ov) ovs.push({ from: f0, dur: c.dur, name: s.ov.c, props: s.ov.props });
+  for (const o of [s.ov, ...(s.ovs || [])].filter(Boolean)) ovs.push({ from: f0, dur: c.dur, name: o.c, props: o.props });
   cues.push(c);
 });
 const S = (at, file, vol, dur = 45) => sfx.push({ from: Math.max(0, F(at)), dur, src: "sfx/" + file, vol });
