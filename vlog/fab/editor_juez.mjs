@@ -33,7 +33,9 @@ Reply ONLY with JSON: {${Object.keys(CHECKS).map((k) => `"${k}": true|false`).jo
 const uri = (f) => "data:image/png;base64," + fs.readFileSync(f).toString("base64");
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let ki = Math.floor(Math.random() * 1000);
+const T0 = Date.now(), TOPE = 20 * 60_000;   // agnes saturado (429 en todas las claves): a los 20 min lo que falta pasa con aviso
 async function pedir(img, texto) {
+  if (Date.now() - T0 > TOPE) return { _error: "tope de 20 min (agnes saturado)" };
   for (let intento = 0; intento < 9; intento++) {
     const key = KEYS[(ki++) % KEYS.length];
     try {
@@ -47,7 +49,7 @@ async function pedir(img, texto) {
       if (!m) throw new Error("sin JSON");
       return JSON.parse(m[0]);
     } catch (e) {
-      if (intento === 8) return { _error: String(e.message).slice(0, 140) };
+      if (intento === 8 || Date.now() - T0 > TOPE) return { _error: String(e.message).slice(0, 140) };
       await sleep((/429/.test(String(e.message)) ? 12000 : 3000) * (intento + 1));
     }
   }
