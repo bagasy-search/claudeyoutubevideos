@@ -26,11 +26,15 @@ const Av: React.FC<{ sf: number }> = ({ sf }) => {
 const Main: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     <OffthreadVideo src={staticFile("vid/fumoscasf/vlog.mp4")} muted />
-    {((AV as any).win as { n: string; ms: number; me: number; off: number; lag?: number }[]).map((w, i) => (
-      <Sequence key={"av" + i} from={Math.round(w.ms * 30)} durationInFrames={Math.round((w.me - w.ms) * 30)}>
-        <Av sf={Math.max(0, Math.round((w.off + (w.lag || 0)) * 30))} />
-      </Sequence>
-    ))}
+    {/* ⛔ GATE DEL MINUTO 1: dentro del minuto 1 el avatar se alterna por TRAMOS ENTEROS del vlog (avwin.py → pieces),
+        así cada cambio avatar↔vlog cae en un corte que ya existía y el conteo de cortes no baja (medido: 31). */}
+    {((AV as any).win as { n: string; ms: number; pieces: [number, number][]; off: number; lag?: number }[])
+      .flatMap((w, i) => (w.pieces || []).map((p, j) => ({ k: "av" + i + "_" + j, a: p[0], b: p[1], sf: w.off + (p[0] - w.ms) + (w.lag || 0) })))
+      .map((p) => (
+        <Sequence key={p.k} from={Math.round(p.a * 30)} durationInFrames={Math.max(1, Math.round((p.b - p.a) * 30))}>
+          <Av sf={Math.max(0, Math.round(p.sf * 30))} />
+        </Sequence>
+      ))}
     {(OV as any[]).map((o, i) => { const K = C[o.c]; return <Sequence key={i} from={o.from} durationInFrames={o.dur}><K {...o.props} /></Sequence>; })}
   </AbsoluteFill>
 );
