@@ -1,0 +1,162 @@
+{
+ "cookstaff": {
+  "file": "img/olsup/arch_cookstaff.jpg",
+  "cap": "Cook staff in the cookhouse, British Columbia, 1920s",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3ACook_staff_inside_of_cookhouse%2C_Grassy_Bay_Timber_Co%2C_British_Columbia%2C_circa_1921-1928_%28INDOCC_306%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Cook staff inside of cookhouse, Grassy Bay Timber Co, British Columbia, circa 1921-1928 (INDOCC 306).jpg",
+  "w": 768,
+  "h": 537
+ },
+ "mess1": {
+  "file": "img/olsup/arch_mess1.jpg",
+  "cap": "Mess hall, Bordeaux Logging Co., Washington, ca 1919",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMess_hall_interior%2C_Bordeaux_Logging_Company%2C_ca_1919_%28KINSEY_6%29.jpeg",
+  "lic": "Public domain",
+  "title": "File:Mess hall interior, Bordeaux Logging Company, ca 1919 (KINSEY 6).jpeg",
+  "w": 757,
+  "h": 600
+ },
+ "mess2": {
+  "file": "img/olsup/arch_mess2.jpg",
+  "cap": "Mess hall, Greenwood Logging Co., Washington, ca 1930",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMess_hall_interior_and_crew%2C_Greenwood_Logging_Company%2C_ca_1930_%28KINSEY_189%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Mess hall interior and crew, Greenwood Logging Company, ca 1930 (KINSEY 189).jpg",
+  "w": 768,
+  "h": 595
+ },
+ "silent": {
+  "file": "img/olsup/arch_silent.jpg",
+  "cap": "Crew at dinner in a lumber camp, 1912",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3ALeo_Bistodeau_at_a_Lumber_Camp_-_DPLA_-_4dbba3217ddbbbbcc3f1d5695214f519.jpg",
+  "lic": "Public domain",
+  "title": "File:Leo Bistodeau at a Lumber Camp - DPLA - 4dbba3217ddbbbbcc3f1d5695214f519.jpg",
+  "w": 1920,
+  "h": 1302
+ },
+ "emptyplates": {
+  "file": "img/olsup/arch_emptyplates.jpg",
+  "cap": "Mess hall, Coats-Fordney Lumber Co., Washington, ca 1918",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMess_hall_interior%2C_Coats-Fordney_Lumber_Company_camp_no_4%2C_ca_1918_%28KINSEY_767%29.jpeg",
+  "lic": "Public domain",
+  "title": "File:Mess hall interior, Coats-Fordney Lumber Company camp no 4, ca 1918 (KINSEY 767).jpeg",
+  "w": 757,
+  "h": 600
+ },
+ "wintermen": {
+  "file": "img/olsup/arch_wintermen.jpg",
+  "cap": "Sawing at a lumber camp, stereoview (J. A. Jenney)",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMen_sawing_at_the_lumber_camp%2C_by_Jenney%2C_J._A._%28James_A.%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Men sawing at the lumber camp, by Jenney, J. A. (James A.).jpg",
+  "w": 950,
+  "h": 969
+ },
+ "butcher": {
+  "file": "img/olsup/arch_butcher.jpg",
+  "cap": "Cookhouse interior, Pacific Northwest, ca 1900",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3ACookhouse_interior%2C_unidentified_logging_camp%2C_Pacific_Northwest%2C_ca_1900_%28INDOCC_192%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Cookhouse interior, unidentified logging camp, Pacific Northwest, ca 1900 (INDOCC 192).jpg",
+  "w": 768,
+  "h": 583
+ },
+ "pastries": {
+  "file": "img/olsup/arch_pastries.jpg",
+  "cap": "Pies and breads on the mess tables, ca 1930",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMess_hall_interior_showing_pastries_and_breads_on_dining_tables%2C_Greenwood_Logging_Company%2C_ca_1930_%28KINSEY_186%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Mess hall interior showing pastries and breads on dining tables, Greenwood Logging Company, ca 1930 (KINSEY 186).jpg",
+  "w": 758,
+  "h": 600
+ },
+ "bigcook": {
+  "file": "img/olsup/arch_bigcook.jpg",
+  "cap": "Mess hall, Donovan-Corkery Logging Co., ca 1928",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMess_hall_interior%2C_Donovan-Corkery_Logging_Company_railroad_camp_no_4%2C_ca_1928_%28KINSEY_117%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Mess hall interior, Donovan-Corkery Logging Company railroad camp no 4, ca 1928 (KINSEY 117).jpg",
+  "w": 768,
+  "h": 600
+ },
+ "northcamp": {
+  "file": "img/olsup/arch_northcamp.jpg",
+  "cap": "Morrison's camp, stereoview (Gaylord & Thompson)",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMorrison%27s%28%3F%29_camp_--_west_view%2C_by_Gaylord_%26_Thompson.jpg",
+  "lic": "Public domain",
+  "title": "File:Morrison's(?) camp -- west view, by Gaylord & Thompson.jpg",
+  "w": 950,
+  "h": 845
+ },
+ "sundaydinner": {
+  "file": "img/olsup/arch_sundaydinner.jpg",
+  "cap": "Decorated camp mess hall, Goodyear Logging Co., ca 1919",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3ADecorated_interior_of_a_railroad_camp_mess_hall%2C_Goodyear_Logging_Company%2C_ca_1919_%28KINSEY_133%29.jpeg",
+  "lic": "Public domain",
+  "title": "File:Decorated interior of a railroad camp mess hall, Goodyear Logging Company, ca 1919 (KINSEY 133).jpeg",
+  "w": 768,
+  "h": 594
+ },
+ "cookportrait": {
+  "file": "img/olsup/arch_cookportrait.jpg",
+  "cap": "Sugar Pine Lumber Co. cookhouse staff, 1924",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3ASugar_Pine_Lumber_Company_Cookhouse_Staff.jpg",
+  "lic": "Public domain",
+  "title": "File:Sugar Pine Lumber Company Cookhouse Staff.jpg",
+  "w": 1920,
+  "h": 1001
+ },
+ "beanscamp": {
+  "file": "img/olsup/arch_beanscamp.jpg",
+  "cap": "Logging camp cookhouse, ca 1904",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3ALogging_camp_cookhouse%2C_ca_1904_%28MOHAI_1440%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Logging camp cookhouse, ca 1904 (MOHAI 1440).jpg",
+  "w": 640,
+  "h": 499
+ },
+ "bunkhouse": {
+  "file": "img/olsup/arch_bunkhouse.jpg",
+  "cap": "Bunkhouse interior, Washington, 1892",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3ABunkhouse_interior%2C_unidentified_logging_camp%2C_Washington%2C_1892_%28INDOCC_55%29.jpg",
+  "lic": "Public domain",
+  "title": "File:Bunkhouse interior, unidentified logging camp, Washington, 1892 (INDOCC 55).jpg",
+  "w": 768,
+  "h": 566
+ },
+ "cookdoor": {
+  "file": "img/olsup/arch_cookdoor.jpg",
+  "cap": "Mess hall, Coats-Fordney Lumber Co., ca 1917",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3AMess_hall_interior%2C_Coats-Fordney_Lumber_Company%2C_Camp_1%2C_ca_1917_%28KINSEY_50%29.jpeg",
+  "lic": "Public domain",
+  "title": "File:Mess hall interior, Coats-Fordney Lumber Company, Camp 1, ca 1917 (KINSEY 50).jpeg",
+  "w": 767,
+  "h": 600
+ },
+ "northnight": {
+  "file": "img/olsup/arch_northnight.jpg",
+  "cap": "Pineries of Minnesota, camp (B. F. Upton)",
+  "credit": "Public domain · Wikimedia Commons",
+  "page": "https://commons.wikimedia.org/wiki/File%3APineries_of_Minnesota_--_camp%2C_by_Upton%2C_B._F._%28Benjamin_Franklin%29%2C_1818_or_1824-after_1901.jpg",
+  "lic": "Public domain",
+  "title": "File:Pineries of Minnesota -- camp, by Upton, B. F. (Benjamin Franklin), 1818 or 1824-after 1901.jpg",
+  "w": 950,
+  "h": 856
+ }
+}

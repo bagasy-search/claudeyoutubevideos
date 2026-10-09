@@ -1,0 +1,43 @@
+{
+ "dir": "D:/Proyectos/video2-wt/olsup/vlog/olsup/M2",
+ "face": "D:/Proyectos/video2-wt/olsup/public/ref_olsup_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/olsup/public/ref_olsup.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by his grandson with a phone at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered cabin background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands: cold bluish daylight from the small snowy window on the left and warm orange glow from the wood stove fire on the right; correctly exposed, the far corners dimmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; hair and beard with stray strands; the shirt and apron with real creases, flour and stains. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld phone video filmed by his grandson at eye level, small natural shakes and casual slightly imperfect framing, everything in the cabin kitchen in focus, only the light the place really has (cold window light plus warm stove glow), correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same moment. Ole, a 75-year-old man with short white hair, a short trimmed white beard, bushy white eyebrows, a dark green flannel shirt buttoned with the collar open over a cream undershirt and a khaki canvas apron, big weathered working hands sits at the worn wooden table of his old log cabin cookhouse kitchen: rough log walls, a black cast iron wood stove with a small black kettle on it and a stovepipe going up on the right, a wooden bunk bed with red and green plaid blankets at the left, a small window with snow outside, a two-man saw and an axe hanging on the wall, stacked firewood, a worn wooden table with a blue enamel mug and a black cast iron Dutch oven. He holds the blue enamel mug in one hand and looks warmly straight at the camera, about to talk, a soft tired-but-content smile. Medium shot from about one and a half meters, the black Dutch oven on the table and the stove glowing behind him."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: he leans forward a little toward the camera with a kind, direct look and raises the blue enamel mug slightly as if toasting the viewer, mid-sentence."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K1"
+   ],
+   "prompt": "Same place a few seconds later: he sits back with a warm crinkled-eyes smile and gives a small friendly nod, the mug lowered to the table, one hand open toward the camera."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m6",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/olsup/vlog/olsup/tramos/m6.wav",
+   "text": "So try one of these this week. If you want every recipe, with the measures and the reasons, it's all in my cookbook, fifty old camp recipes.",
+   "action": "He talks warmly to the camera, raises the mug slightly like a toast, then sits back with a small friendly nod. He wears the same dark green flannel shirt over a cream undershirt and khaki apron the whole time, short white beard, no hat."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/olsup/vlog/olsup/M2/out.mp4"
+}

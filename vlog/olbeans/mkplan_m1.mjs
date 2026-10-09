@@ -1,0 +1,36 @@
+// Plan agnes 2.5-flash del MINUTO 1 (anclas gpt-image-2 + clips reference/keyframe). node vlog/olbeans/mkplan_m1.mjs
+import fs from "node:fs";
+import { R, WHO, KIT, A, act, plan } from "./lib.mjs";
+const T = R + "vlog/olbeans/tramos/";
+const POT = "a big black cast iron Dutch oven with a heavy lid";
+const anchors = [
+  A("K0", ["k0"], `Same cabin, same moment of the day. ${WHO} stands at the black cast iron wood cookstove of ${KIT}. On the stovetop sits ${POT}, a thin wisp of steam at the rim, and he holds the lid handle with a folded plaid rag, about to lift it, looking at the camera and talking. Medium shot from about one and a half meters, the pot, the stove and his upper body in frame, the snowy window behind.`),
+  A("K1", ["K0"], "A few seconds later, same place: he has lifted the heavy lid and holds it up beside the pot, a big cloud of steam rising from the pot full of pinto beans in a thick brown broth, his face lit by the window, eyes on the camera, a proud little smile."),
+  A("K2", ["K1"], "Same place a few seconds later: the lid now rests on the stovetop beside the pot, he looks straight at the camera with raised bushy white eyebrows and one finger raised, a long wooden spoon in his other hand, mid-sentence."),
+  A("K3", ["K2"], "Same place: he shakes his head a little with a kind, knowing half smile, the wooden spoon lowered, his other hand open toward the camera as if saying it's not your fault."),
+  A("K4", ["K1"], "Same place, a little closer: he leans over the open pot and pats its black iron side with the folded rag, the pinto beans whole and glossy in a thick broth, steam rising, looking at the camera, talking."),
+  A("K5", ["K4"], "Same place a few seconds later: he lifts a long wooden spoon heaped with whole creamy pinto beans out of the pot toward the camera, steam curling off the spoon, still talking."),
+  A("K6", ["k0"], `Same cabin, same light. ${WHO} sits at the rough plank table by the snowy window of ${KIT}, a blue enamel mug in front of him, both forearms on the table, talking to the camera like to a friend. Medium shot, the table edge at the bottom of the frame, the bunks and the stove behind.`),
+  A("K7", ["K6"], "Same place a few seconds later: he turns a little and opens one big hand toward the snowy window beside him, looking out at the white woods, remembering, mouth mid-word."),
+  A("K8", ["K6"], "Same place: he leans toward the camera over the table, one finger raised beside his face, eyes narrowed with a sly, secretive grin, as if promising to tell something later."),
+  A("K9", ["K8"], "Same place a few seconds later: he leans back in his chair with a short chuckle, arms folded over the apron, nodding once at the camera."),
+  A("D1a", ["k0"], "A different place: an ordinary home kitchen counter of today in soft morning light, a clear glass mixing bowl full of dried pinto beans sitting in cloudy grayish water, a few loose skins floating, a window above the sink, nobody in frame."),
+  A("D1b", ["D1a"], "Same counter a few seconds later: an adult's hand tips the glass bowl over the stainless sink and the gray cloudy soaking water pours out into the drain, the beans held back with the other hand."),
+  A("D2a", ["K5"], `Close view straight down into ${POT} on the black wood cookstove: pinto beans whole and creamy in a thick glossy brown broth with chunks of salt pork, steam rising, an old man's hand holding a long wooden spoon about to go in. His plaid flannel sleeve enters from the right edge.`),
+  A("D2b", ["D2a"], "Same close view a few seconds later: the wooden spoon stands straight up by itself in the middle of the thick beans, the hand letting go of it, steam curling."),
+  A("D3a", ["K1"], `Close view of ${POT} on the wood cookstove, open, full of cold water with dry pinto beans at the bottom, a halved onion and a bay leaf floating, and an old man's hand holding a tablespoon heaped with coarse kosher salt right above the water. His plaid flannel sleeve enters from the top edge.`),
+  A("D3b", ["D3a"], "Same close view a few seconds later: the salt is tipped in and sinks into the water in a small white cloud, the spoon still above the pot."),
+];
+const clips = [
+  { id: "m1", a: "K0", b: "K1", audio: T + "m1.wav", text: "There's a bowl of beans sitting on a kitchen counter somewhere right now. Been sitting there since last night, in water.", action: act("He talks to his grandson behind the camera while he lifts the heavy lid off the cast iron pot and a big cloud of steam rises.") },
+  { id: "m2", a: "K2", b: "K3", audio: T + "m2.wav", text: "Well, now. It's not the beans. And it's not you. It's one old habit, and I quit it about sixty years ago in a cook shack full of hungry men.", action: act("He sets the lid down, raises a finger and talks straight to the camera, then shakes his head with a kind half smile, opening his hand.") },
+  { id: "m3", a: "K4", b: "K5", audio: T + "m3.wav", text: "This pot right here never saw a soaking bowl. No overnight soak. Salt in at the start.", action: act("He pats the side of the black pot with the rag, then lifts a wooden spoon of whole creamy beans toward the camera, talking.") },
+  { id: "m4", a: "K6", b: "K7", audio: T + "m4.wav", text: "My name's Ole. I'm seventy-eight. I cooked in the logging camps up in the north woods of Minnesota most of my life.", action: act("Sitting at the plank table he introduces himself to the camera, then turns and opens a hand toward the snowy woods outside the window.") },
+  { id: "m5", a: "K8", b: "K9", audio: T + "m5.wav", text: "I'm keeping that one for last, because once you've seen it, the eight rules make sense.", action: act("He leans toward the camera with a sly grin and a raised finger, then leans back chuckling with his arms folded.") },
+  { id: "d_pour", prompt: "a hand tips the glass bowl and the gray cloudy soaking water pours out of it into the sink drain, the beans held back.", a: "D1a", b: "D1b", detail: true, secs: 5, d1: "a glass bowl of beans soaking in cloudy gray water on a counter", d2: "the gray water is poured into the sink drain", sound: "water pouring and gurgling down a sink drain" },
+  { id: "d_spoon", prompt: "the wooden spoon is pushed into the thick creamy beans and let go, and it stays standing straight up by itself while steam curls. He stays silent, focused on his hands.", a: "D2a", b: "D2b", detail: true, secs: 5, d1: "a wooden spoon goes into a pot of thick creamy beans", d2: "the spoon stands up by itself in the beans", sound: "a thick stew bubbling softly and a wooden spoon against cast iron" },
+  { id: "d_salt", prompt: "he tips the tablespoon of coarse salt into the water of the pot and it sinks in a small white cloud. He stays silent, focused on his hands.", a: "D3a", b: "D3b", detail: true, secs: 4, d1: "a tablespoon of salt above a pot of water and dry beans", d2: "the salt is tipped in and sinks", sound: "salt grains hitting water and a spoon tapping the iron rim" },
+];
+fs.mkdirSync(R + "vlog/olbeans/M1", { recursive: true });
+fs.writeFileSync(R + "vlog/olbeans/M1/plan.json", JSON.stringify(plan("vlog/olbeans/M1", anchors, clips), null, 1));
+console.log("plan M1:", anchors.length, "anclas,", clips.length, "clips");
