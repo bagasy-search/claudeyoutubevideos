@@ -83,6 +83,8 @@ cues.forEach((c, i) => {
   foley.push({ from: c.from, dur: c.dur, src: "sfx/" + amb, vol: av, loop: 1, amb: 1 });
 });
 for (const o of ovs) { const t = o.from / FPS; if (o.name === "OleStamp") S(t + (typeof o.props.at === "number" ? o.props.at : 0.5), "knock.mp3", 0.7, 30); else if (o.name === "OleRuleCard") S(t + 0.15, "crinkle.mp3", 0.5, 30); }
+// cama del minuto 1: crepitar continuo (compuerta: 0 silencios en el minuto 1; las pausas de la voz quedaban mudas)
+foley.push({ from: 0, dur: F(64), src: "sfx/fire2.mp3", vol: 0.9, loop: 1 });
 // ambiente: fusionar tomas contiguas del mismo lugar en UN tramo continuo (sin bajones en cada corte)
 { const amb = foley.filter((x) => x.amb).sort((a, b) => a.from - b.from), rest = foley.filter((x) => !x.amb); const m = [];
   for (const x of amb) { const L = m[m.length - 1]; if (L && L.src === x.src && L.vol === x.vol && Math.abs(L.from + L.dur - x.from) <= 1) L.dur = x.from + x.dur - L.from; else m.push({ ...x }); }
