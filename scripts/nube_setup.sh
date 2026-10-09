@@ -9,6 +9,9 @@ echo "=== setup Videos $(date -u +%FT%TZ) · pwd=$(pwd) · HOME=$HOME"
 (apt-get update -qq && apt-get install -y -qq ffmpeg jq gh >/dev/null) || sudo apt-get install -y -qq ffmpeg jq gh >/dev/null || true
 pip install -q modal openai requests yt-dlp "rembg[cpu]" opencv-python-headless 2>/dev/null || true   # rembg: respaldos 2.5D/matte sin Modal (Modal no pasa el proxy)
 
+npm install -g @qwen-code/qwen-code >/dev/null 2>&1 || true   # agente Qwen (trabajador barato, ver CLAUDE.md global)
+pip install -q faster-whisper 2>/dev/null || true             # ASR local: 3er respaldo de 20_asr (sin Modal ni OpenAI)
+
 # 2) cerebro desde claude-brain → ~/.video2-secrets, ~/.claude/skills, ~/.claude/memoria
 # Acceso a claude-brain, en orden:
 #  1) proxy de GitHub de la nube (claude-brain conectado a la sesión como 2º repo) — sin token
@@ -51,6 +54,7 @@ for C in "$S"/canales/*/; do [ -d "$C" ] && cp -r "$C." "$R/"; done
 P=~/.claude/projects/$(echo "$R" | sed 's/[^A-Za-z0-9]/-/g')/memory
 mkdir -p "$P" && cp -r ~/.claude/memoria/. "$P/"
 [ -d "$R/node_modules" ] || (cd "$R" && (npm ci --no-audit --no-fund || npm install --no-audit --no-fund) && npx remotion browser ensure >/dev/null 2>&1)
+[ -f "$R/scripts/brain_to_qwen.sh" ] && bash "$R/scripts/brain_to_qwen.sh" >/dev/null 2>&1 || true   # memoria de Claude → agente Qwen
 echo "bootstrap OK → $R (.env $(grep -c = "$R/.env") claves)"
 BOOT
 chmod +x "$S/bootstrap_repo.sh"
@@ -91,6 +95,16 @@ if ! grep -q 'video2-secrets' ~/.claude/CLAUDE.md 2>/dev/null; then
 - ⛔ MODAL NO ANDA en la nube (usa gRPC y el proxy no lo soporta): el ASR va por el respaldo `whisper-1` de OpenAI.
 - `public/` viene casi vacío (los assets no están en git): se generan en la sesión y el farm los empaqueta desde este disco.
 - Español rioplatense.
+MD
+fi
+
+if ! grep -q 'Qwen como trabajador' ~/.claude/CLAUDE.md 2>/dev/null; then
+  cat >> ~/.claude/CLAUDE.md <<'MD'
+# Qwen como trabajador barato (decisión del creador, 05-oct-2026)
+Claude ORQUESTA; Qwen (AIHubMix, clave AIHUBMIX_KEY) hace el trabajo pesado y lo cobra por API a centavos.
+- "Hacé el video X" → piloto automático: `LLM_MODEL=qwen3.8-max LLM_THINK=0 FACTORY_AVATAR_NO_PAGAR=<1 si se reusa avatar> node factory/tools/autopilot.mjs <slug> --max-usd 2 [--render-local]` (si OpenAI está caída: `FACTORY_IMG_MOTOR=agnes`). Medido: US$0,185 un video de 3 min, ≈US$1,6–1,9 uno de 20.
+- "Creá un componente / estilo / arreglá algo nuevo" → `bash scripts/qwen_agente.sh "<tarea>"` (agente Qwen Code con la memoria clonada; `--razonar` sólo si falla sin razonar). Revisá el resultado (render + cuadros) antes de dárselo por bueno al creador.
+- Claude sólo interviene en lo que estos dos no resuelven, y lo convierte en regla del piloto/compuerta para que no vuelva a pasar.
 MD
 fi
 
