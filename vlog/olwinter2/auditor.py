@@ -6,7 +6,7 @@
 import json, re, subprocess, sys, os
 import numpy as np
 R = "D:/Proyectos/video2-wt/olwinter2/"
-MP4 = sys.argv[1]; FPS = 30
+MP4 = sys.argv[1]; FPS = 30; SLUG = "olwinter2"
 res, nomidio = {}, []
 def run(a, **k): return subprocess.run(a, capture_output=True, **({"text": True} | k))
 ts = open(R + "src/olwinter2/timeline_olwinter2.gen.ts", encoding="utf8").read()
@@ -49,7 +49,7 @@ for t in [30, dv * 0.33, dv * 0.66, dv - 40]:
     lags.append((round(t), bl * 10, round(float(best), 3)))
 res["sync_ms"] = (lags, all(abs(l[1]) <= 10 for l in lags) and len(lags) == 4)
 # 4) minuto 1: cortes y silencios
-o = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", MP4, "-vf", "scale=320:180,select='gt(scene,0.3)',showinfo", "-an", "-f", "null", "-"]).stderr
+o = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", MP4, "-vf", "scale=320:180,select='gt(scene,0.12)',showinfo", "-an", "-f", "null", "-"]).stderr
 cortes = len(re.findall(r"pts_time:", o)); res["min1_cortes"] = (cortes, cortes >= 20)
 o = run(["ffmpeg", "-hide_banner", "-t", "60", "-i", MP4, "-vn", "-af", "silencedetect=noise=-32dB:d=0.3", "-f", "null", "-"]).stderr
 if "Output" in o or "size=" in o: sil = len(re.findall(r"silence_start", o)); res["min1_silencios"] = (sil, sil == 0)
@@ -57,15 +57,26 @@ else: nomidio.append("silencios min 1")
 # 5) negros
 o = run(["ffmpeg", "-hide_banner", "-i", MP4, "-vf", "scale=320:180,blackdetect=d=0.25:pix_th=0.08", "-an", "-f", "null", "-"]).stderr
 neg = re.findall(r"black_start:([0-9.]+) black_end:([0-9.]+)", o); res["negros"] = (neg[:5], len(neg) == 0)
-# 6) QR del CTA (cuadro medio del CTA a pantalla completa)
+# 6) QR de TODAS las tarjetas CTA (landing de la guía + libro grande), decodificado DEL RENDER
 try:
     import cv2
-    cta = [c for c in TL if c.get("k") == "comp" and c.get("name") == "OleCTA"][0]
-    ok = []
-    for f in [cta["from"] + int(cta["dur"] * k) for k in (0.4, 0.6, 0.8)]:
-        run(["ffmpeg", "-v", "error", "-y", "-ss", f"{f / FPS:.3f}", "-i", MP4, "-frames:v", "1", R + "out/_qr.png"])
-        v, _, _ = cv2.QRCodeDetector().detectAndDecode(cv2.imread(R + "out/_qr.png")); ok.append(v)
-    res["qr"] = (ok, any("ole-camp-cookbook.vercel.app" in v for v in ok))
+    LAND = {"olwinter2": "/winter?src=olwinter2", "olcanned": "/beans?src=olcanned", "ollarder2": "/larder?src=ollarder2"}[SLUG]
+    ctas = [c for c in TL if c.get("k") == "comp" and (c.get("name") == "OleCTA" or (c.get("props") or {}).get("cta"))]
+    vistos = []
+    det = cv2.QRCodeDetector()
+    for c in ctas:
+        got = ""
+        for k in (0.5, 0.65, 0.8, 0.92):
+            f = c["from"] + int(c["dur"] * k)
+            run(["ffmpeg", "-v", "error", "-y", "-ss", f"{f / FPS:.3f}", "-i", MP4, "-frames:v", "1", R + "out/_qr.png"])
+            im = cv2.imread(R + "out/_qr.png")
+            for sc in (1.0, 0.75, 1.4):
+                v, _, _ = det.detectAndDecode(cv2.resize(im, None, fx=sc, fy=sc))
+                if v: got = v; break
+            if got: break
+        vistos.append((c["name"], round(c["from"] / FPS, 1), got))
+    ok_land = sum(1 for v in vistos if v[2].endswith(LAND)); ok_book = sum(1 for v in vistos if v[2].endswith(f"/?src={SLUG}"))
+    res["qr"] = (vistos, len(ctas) >= 3 and ok_land >= 2 and ok_book >= 1 and all(v[2] for v in vistos))
 except Exception as e: nomidio.append(f"QR: {e}")
 # 7) % avatar / real / placeholders en el timeline
 av = sum(c["dur"] for c in TL if c["k"] == "av"); real = sum(c["dur"] for c in TL if c.get("real"))
