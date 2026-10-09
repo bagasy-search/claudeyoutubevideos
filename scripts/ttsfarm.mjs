@@ -16,6 +16,7 @@
 //   ej:  node scripts/ttsfarm.mjs svalbard en "" 0.6 0.5
 //   ej (con voz clonada ya guardada en public/):  node scripts/ttsfarm.mjs cronicas es ref_trevor.wav 0.7 0.5
 import { execSync, execFileSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import fs from "node:fs";
 
 const [slug, lang = "en", ref = "", exaggeration = "0.5", cfg = "0.5"] = process.argv.slice(2);
@@ -61,7 +62,7 @@ execSync("sleep 8 2>/dev/null || ping -n 9 127.0.0.1 >NUL", { stdio: "ignore", s
 const runId = out(`gh run list --workflow=tts.yml --limit 1 --json databaseId --jq ".[0].databaseId"`);
 console.log("corrida:", runId, "— siguiendo (CPU, Chatterbox es autoregresivo: bastante mas lento que en GPU)...");
 try {
-  sh(`gh run watch ${runId} --exit-status`);
+  sh(`node "${fileURLToPath(new URL("esperar_run.mjs", import.meta.url))}" ${runId}`);
 } catch {
   console.error("la corrida fallo; revisá: gh run view " + runId);
   process.exit(1);
