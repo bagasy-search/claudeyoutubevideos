@@ -58,5 +58,30 @@
   "file": "v_esconde.mp4",
   "T": 5,
   "own": false
+ },
+ "v_tres": {
+  "file": "v_tres.mp4",
+  "T": 4,
+  "own": false
+ },
+ "v_estacion": {
+  "file": "v_estacion.mp4",
+  "T": 11,
+  "own": false
+ },
+ "v_tapon": {
+  "file": "v_tapon.mp4",
+  "T": 11,
+  "own": false
+ },
+ "v_otra": {
+  "file": "v_otra.mp4",
+  "T": 11,
+  "own": false
+ },
+ "v_revision": {
+  "file": "v_revision.mp4",
+  "T": 8,
+  "own": false
  }
 }
