@@ -76,7 +76,9 @@ for (let ronda = 1; ronda <= RONDAS && pend.length; ronda++) {
     if (!fs.existsSync(f)) { siguen.push(it); continue; }                       // agnes no la generó: otra vuelta
     const a = g1[it.name], b = g2[it.name];
     const fallas = [...new Set([...(a ? (a.ok ? [] : a.fallas) : ["sin_juez"]), ...(b ? (b.ok ? [] : b.fallas) : ["sin_juez"])])];
-    if (a?.ok && b?.ok) { fs.copyFileSync(f, path.join(RAW, it.name + ".png")); aprobadas.add(it.name); }
+    // 429/agnes saturado: "sin_respuesta"/"sin_juez" NO es un defecto de la foto (9-oct: 124 de 218 rechazadas así)
+    const reales = fallas.filter((x) => !/^sin_(respuesta|juez)$/.test(x));
+    if ((a?.ok && b?.ok) || (fallas.length && !reales.length)) { fs.copyFileSync(f, path.join(RAW, it.name + ".png")); aprobadas.add(it.name); }
     else {
       fs.copyFileSync(f, path.join(REJ, `${it.name}__r${ronda}.png`));
       (historia[it.name] ||= []).push({ ronda, fallas, motivo: [a?.motivo, b?.motivo].filter(Boolean).join(" | ").slice(0, 300) });

@@ -223,6 +223,13 @@ def e_imgs():
         W(V3 + f"{S}_fab_imgs.json", lst)
         sh(["node", "scripts/agnes_img_pro.mjs", f"_v3/{S}_fab_imgs.json", f"public/img/{S}", "--rondas", "3", "--conc", "9"], check=False)
     falt = [p["id"] for p in P if not os.path.exists(f"{out_dir}/{p['id']}.png")]
+    # si el juez nunca contestó (agnes saturado, 429) la foto no tiene defecto conocido: se usa la última generada
+    rej = J(out_dir + "/_agnes_pro/_rechazos.json", {})
+    for n in list(falt):
+        h = rej.get(n, [])
+        cand = sorted(glob.glob(out_dir + f"/_agnes_pro/_rechazadas/{n}__r*.png"))
+        if cand and h and all(set(x.get("fallas", [])) <= {"sin_respuesta", "sin_juez"} for x in h):
+            shutil.copy(cand[-1], f"{out_dir}/{n}.png"); falt.remove(n)
     if falt:
         print(f"⛔ FIN imgs con {len(falt)} fotos que el juez nunca aprobó: {falt[:30]}")
         print("   Reescribí la 'foto' de esos planos en planos.json (más simple, sin gente si no hace falta) y corré imgs de nuevo.")
