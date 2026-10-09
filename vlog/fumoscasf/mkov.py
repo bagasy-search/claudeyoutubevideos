@@ -19,7 +19,9 @@ def at(frase, end=False):
     raise SystemExit("⛔ no encuentro: " + frase)
 I = "img/fumoscasf/"
 OV = [
- ("ClVideoRef", at("La vimos la semana pasada"), 5.5, {"thumb": I + "th_furatones5.jpg", "title": "Los 5 huecos por donde entra el ratón", "tag": "VIDEO ANTERIOR"}),
+ # ⛔ 9-oct: 5,5 s tapaba los cortes del minuto 1 (el detector bajó de 31 a 29 con la tarjeta encima). La frase
+ # "La vimos la semana pasada" dura ~1,7 s: la tarjeta entra y sale DENTRO del mismo tramo de 1,95 s y no come ningún corte.
+ ("ClVideoRef", at("La vimos la semana pasada"), 2.0, {"thumb": I + "th_furatones5.jpg", "title": "Los 5 huecos por donde entra el ratón", "tag": "VIDEO ANTERIOR"}),
  ("ClFlyCycle", at("Una mosca pone cientos de huevos"), 7.0, {}),
  ("ClBookPage", at("Las medidas exactas están en la página dieciséis"), 7.5, {"page": I + "page16.jpg", "pageNo": 16, "stamp": "Las medidas, en la página"}),
  ("ClDrainFactory", at("con hojas y agua estancada"), 7.0, {"mode": "clean"}),

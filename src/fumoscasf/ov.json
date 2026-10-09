@@ -2,12 +2,12 @@
  {
   "c": "ClVideoRef",
   "from": 405,
-  "dur": 165,
+  "dur": 60,
   "props": {
    "thumb": "img/fumoscasf/th_furatones5.jpg",
    "title": "Los 5 huecos por donde entra el ratón",
    "tag": "VIDEO ANTERIOR",
-   "bed": "vid/fumoscasf/bed_0.mp4#169"
+   "bed": "vid/fumoscasf/bed_0.mp4#64"
   },
   "t": 13.49
  },
