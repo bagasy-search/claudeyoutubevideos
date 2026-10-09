@@ -1,0 +1,5 @@
+[
+ {"name": "bed_ledger", "prompt": "Looking straight down at an old cloth-bound ledger book lying open on a rough plank table, two blank cream pages with faint printed blue lines and a red margin line, a stubby pencil and a kerosene lamp base at the top edge, an empty tin can at the right edge, warm lamp light. No writing on the pages, no text, no logos."},
+ {"name": "bed_shelf", "prompt": "A rough wooden pantry shelf on a log wall seen straight on at eye level, the shelf board empty in the middle, a few glass jars of dried beans at the far left and a coil of twine at the far right, window daylight from the side. No text, no labels, no logos."},
+ {"name": "bed_jar", "prompt": "A big glass jar full of dried pinto beans standing on a rough plank table in a log cabin, a loop of brown string tied around the neck of the jar with nothing hanging from it, a scatter of beans and a wooden scoop beside it, the snowy window soft behind, daylight. No text, no labels, no logos."}
+]

@@ -1,0 +1,80 @@
+{
+ "dir": "D:/Proyectos/video2-wt/olcanned/vlog/olcanned/M1",
+ "face": "D:/Proyectos/video2-wt/olcanned/public/ref_olcanned_facecrop.png",
+ "k0_from": "D:/Proyectos/video2-wt/olcanned/public/ref_olcanned.png",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld home video shot by his grandson with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the cluttered cabin background stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed and bright enough, the side near the snowy window brighter and cooler, the corners by the stove a little warmer. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores, age spots and uneven tone; white hair and beard with stray hairs; flannel and canvas apron with real creases, soot and grease marks. People are caught mid-action, unposed. Bright snowy daylight from the window on the left plus the warm glow of the wood stove.",
+ "look": "Ordinary handheld home video filmed by his grandson with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the cabin in focus, only the light the place really has, bright and correctly exposed, automatic white balance, mild sensor noise; real skin and natural old hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, gray winter morning. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins stands at the frosted window of the log cabin cook shack of an old north-woods logging camp: weathered log walls, a black cast iron wood cookstove with a stovepipe and a small glowing firebox door, a window with snow outside, a two-man crosscut saw and an axe hanging on the log wall, bunk beds with plaid wool blankets at the left, a rough plank table with a blue enamel mug looking out at the snowy logging road, then turning his head to the camera, talking. Medium shot, the window and his upper body in frame."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "A few seconds later, same place: he has turned fully toward the camera, one hand pointing back out the window at the road, eyebrows raised."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same light. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins stands behind the plank table of the log cabin cook shack of an old north-woods logging camp: weathered log walls, a black cast iron wood cookstove with a stovepipe and a small glowing firebox door, a window with snow outside, a two-man crosscut saw and an axe hanging on the log wall, bunk beds with plaid wool blankets at the left, a rough plank table with a blue enamel mug with a brown paper sack of dried beans in front of him, holding up one empty dented tin can with no label, looking at the camera, talking. Medium shot."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K2"
+   ],
+   "prompt": "A few seconds later, same place: he sets the empty tin can down at the far edge of the table and pats the paper sack of beans with his other hand, a small satisfied smile."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Same cabin, same light. Ole, a 78-year-old man with thinning white hair, a short full white beard, a dark green and black plaid flannel shirt over a cream henley undershirt and a worn tan canvas apron, big old hands with age spots and veins stands at the black wood cookstove of the log cabin cook shack of an old north-woods logging camp: weathered log walls, a black cast iron wood cookstove with a stovepipe and a small glowing firebox door, a window with snow outside, a two-man crosscut saw and an axe hanging on the log wall, bunk beds with plaid wool blankets at the left, a rough plank table with a blue enamel mug lifting the lid of a black iron bean pot, a puff of steam, looking at the camera and talking. Medium shot."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K4"
+   ],
+   "prompt": "A few seconds later, same place: he stirs the beans with a long wooden spoon and looks back at the camera with a warm nod."
+  }
+ ],
+ "clips": [
+  {
+   "id": "m1",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/olcanned/vlog/olcanned/tramos/m1.wav",
+   "text": "The winter of nineteen sixty-six, a truck came up the logging road",
+   "action": "He looks out the window at the snowy road and turns to the camera talking, pointing back outside. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m2",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/olcanned/vlog/olcanned/tramos/m2.wav",
+   "text": "I haven't bought a can of beans since. That's sixty years.",
+   "action": "He holds up an empty tin can talking to the camera, then sets it aside and pats the sack of beans. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  },
+  {
+   "id": "m3",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/olcanned/vlog/olcanned/tramos/m3.wav",
+   "text": "I cooked in the logging camps up in the north woods of Minnesota most of my life,",
+   "action": "He lifts the lid of the bean pot talking to the camera, then stirs the beans and nods. He wears the same dark green and black plaid flannel shirt, cream henley and tan canvas apron the whole time."
+  }
+ ],
+ "out": "D:/Proyectos/video2-wt/olcanned/vlog/olcanned/M1/out.mp4"
+}
