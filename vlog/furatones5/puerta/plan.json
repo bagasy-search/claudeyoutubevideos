@@ -1,0 +1,164 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, inside the house, daylight from a small window next to the door and a warm ceiling bulb. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in the small entrance hall inside the house, next to the inside of the dark green metal front door: beige ceramic floor tiles, a coat rack with jackets, a light switch on the wall, Bruno, a medium-sized short-haired caramel-colored mixed-breed dog with floppy ears lying on a mat nearby. He holds the rolled door draft strip and the flashlight, talking to the camera. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he kneels by the closed green door, the flashlight on the floor, looking at the bottom edge of the door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the dim hall, a bright thin line of daylight shining under the bottom of the door across the tiles, his finger pointing at it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the coin standing upright in the gap under the door, Bruno sniffing his hand, he smiles at the dog. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he holds the cut draft strip up against the bottom of the door, the tape measure on the floor. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the draft strip stuck along the bottom of the green door, its rubber brush touching the tiles, his hand pressing it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. dim hall, no light under the door, the coin lying flat on the floor against the brush, he points at it pleased. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he kneels at the white patio door with his index finger inside the wide gap under the door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c24",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c24.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c24_gen.wav",
+   "T": 11,
+   "text": "Lugar número uno. La puerta de entrada. La más fácil, y la que casi nadie mira. Me agacho, prendo la linterna del lado de adentro,",
+   "action": "Claudio, the man whose face is the third reference image, puts the draft strip down, gets down on one knee by the closed door and switches on the flashlight, aiming it at the floor line under the door. inside the house, daylight from a small window next to the door and a warm ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c25",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c25.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c25_gen.wav",
+   "T": 11,
+   "text": "y Jorge apaga la luz del recibidor. Mira el piso. ¿Ves la rayita de luz que se cuela por abajo? Ahí pruebo la moneda. Entra parada, de lado, sin tocar.",
+   "action": "Claudio, the man whose face is the third reference image, the hall light goes off; in the dim hall a thin bright line of daylight shows under the door along the floor; he points at it. inside the house, daylight from a small window next to the door and a warm ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c26",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c26.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c26_gen.wav",
+   "T": 11,
+   "text": "Por ahí entra un ratón joven tranquilamente. Y Bruno, que está aquí mirándome, ni se entera. Mido el ancho de la puerta con el metro. Ochenta y dos centímetros.",
+   "action": "Claudio, the man whose face is the third reference image, slides a small silver coin about 18 millimeters wide standing on its edge into the gap under the door, it goes through without touching; Bruno the dog comes and sniffs his hand. inside the house, daylight from a small window next to the door and a warm ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c27",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c27.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c27_gen.wav",
+   "T": 9,
+   "text": "Corto el burlete un poquito más corto, para que no roce el marco. Limpio el canto de abajo con un trapo, que no tenga polvo.",
+   "action": "Claudio, the man whose face is the third reference image, the light is back on; he measures the width of the door with a yellow tape measure, then cuts the aluminum draft strip with a small hacksaw on the floor. inside the house, daylight from a small window next to the door and a warm ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c28",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c28.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c28_gen.wav",
+   "T": 11,
+   "text": "Despego la cinta, y lo apoyo de modo que el cepillo toque el piso a lo largo de toda la puerta. Ahora la prueba. Abro y cierro. Roza, pero no se traba.",
+   "action": "Claudio, the man whose face is the third reference image, wipes the bottom edge of the door with a cloth, peels the backing tape off the strip and presses it onto the inside bottom of the door, the rubber brush touching the floor. inside the house, daylight from a small window next to the door and a warm ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c29",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c29.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c29_gen.wav",
+   "T": 10,
+   "text": "Apago la luz otra vez. Ya no pasa la rayita de luz. Y la moneda tampoco. Y lo mismo en la puerta del patio, que es la que más usan Bruno y los chicos.",
+   "action": "Claudio, the man whose face is the third reference image, opens and closes the door to test it, the brush sweeps the floor; the light goes off again and there is no line of light under the door anymore; he tries the coin and it does not go in. inside the house, daylight from a small window next to the door and a warm ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c30",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c30.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/aud/c30_gen.wav",
+   "T": 5,
+   "text": "Ésta tenía el hueco más grande todavía, de un dedo entero.",
+   "action": "Claudio, the man whose face is the third reference image, walks to the back patio door, a white door with a glass pane, kneels and puts his finger in a wide gap under it. inside the house, daylight from a small window next to the door and a warm ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c24": {
+   "mode": "trunc"
+  },
+  "c25": {
+   "mode": "trunc"
+  },
+  "c26": {
+   "mode": "trunc"
+  },
+  "c27": {
+   "mode": "trunc"
+  },
+  "c28": {
+   "mode": "trunc"
+  },
+  "c29": {
+   "mode": "trunc"
+  },
+  "c30": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/puerta/out.mp4"
+}

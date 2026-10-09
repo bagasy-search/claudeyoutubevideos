@@ -1,0 +1,64 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav2/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav/anc/K0.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, afternoon daylight from a small high window plus a bare ceiling bulb. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers kneels on the white ceramic floor of a small laundry room behind a white front-loading washing machine pulled away from the white-painted wall, wearing gray work gloves; a yellow-painted steel gas pipe comes out of the wall through a ragged hole much wider than the pipe. He holds a pad of coarse gray steel wool and a flathead screwdriver, looking at the camera. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the hole around the yellow gas pipe packed with steel wool and a thin ring of pale yellow foam, his gloved hand resting on the wall. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. his gloved hand held open near the sealed hole without touching the yellow pipe, he looks at the camera, serious. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c39",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav2/aud/c39.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav2/aud/c39_gen.wav",
+   "T": 9,
+   "text": "Y el caño del gas, detrás de la lavadora: el del principio del video. Mismo arreglo. Lana de acero, apretada, y espuma encima.",
+   "action": "Claudio, the man whose face is the third reference image, presses the steel wool into the gap around the yellow gas pipe with the screwdriver, packing it tight, then sprays a thin bead of pale yellow foam around it. afternoon daylight from a small high window plus a bare ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c40",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav2/aud/c40.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav2/aud/c40_gen.wav",
+   "T": 5,
+   "text": "El caño no se toca, sólo el hueco que lo rodea.",
+   "action": "Claudio, the man whose face is the third reference image, touches the hole edge and holds his hand away from the pipe, shaking his finger 'no' toward the pipe. afternoon daylight from a small high window plus a bare ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c39": {
+   "mode": "trunc"
+  },
+  "c40": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav2/out.mp4"
+}

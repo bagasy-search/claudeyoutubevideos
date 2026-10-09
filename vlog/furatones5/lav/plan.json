@@ -1,0 +1,64 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, afternoon daylight from a small high window plus a bare ceiling bulb. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers kneels on the white ceramic floor of a small laundry room behind a white front-loading washing machine pulled a little away from the white-painted wall; a yellow-painted steel gas pipe comes out of the wall through a ragged hole much wider than the pipe, dark inside. He holds a small black flashlight in his left hand pointed at the hole and, with the fingertips of his right hand, holds a small silver coin about 18 millimeters wide at the edge of the dark gap around the pipe, looking at the camera over his shoulder. A plastic laundry basket with clothes beside the machine. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the coin has slid halfway into the dark gap around the yellow gas pipe, only its edge visible, held between his fingertips, the flashlight beam on it, he looks at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. his fingers empty next to the ragged hole around the yellow gas pipe, the coin gone through, the flashlight beam lighting the empty dark gap, he looks straight at the camera, serious. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c01",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav/aud/c01.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav/aud/c01_gen.wav",
+   "T": 5,
+   "text": "Las trampas no sacan a los ratones de tu casa. Mira.",
+   "action": "Claudio, the man whose face is the third reference image, kneels behind the washing machine, the flashlight beam on the gap around the yellow gas pipe, and slowly pushes the coin into the dark gap while talking to the camera. afternoon daylight from a small high window plus a bare ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c02",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav/aud/c02.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav/aud/c02_gen.wav",
+   "T": 6,
+   "text": "Entra la moneda. Y mientras quede este hueco, siempre llega el próximo.",
+   "action": "Claudio, the man whose face is the third reference image, lets go and the coin slides all the way through the gap and disappears into the dark hole; he points at the hole with the flashlight and looks at the camera, serious. afternoon daylight from a small high window plus a bare ceiling bulb. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c01": {
+   "mode": "trunc"
+  },
+  "c02": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/lav/out.mp4"
+}

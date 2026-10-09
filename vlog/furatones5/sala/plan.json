@@ -1,0 +1,84 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, daylight from a window with light curtains, a lamp on. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in the modest living room of the house: a beige fabric sofa, a wooden TV stand with a flat TV, family photos on the wall, a white split air-conditioner unit high on the wall with a white cable running down into a hole in the wall. He talks to the camera. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. close to the wall: the white cable going into a hole much bigger than the cable, a sliver of daylight around it, his flashlight on it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. behind the TV stand: his fingers at the gap around the black TV cable at the bottom of the wall, the coin gone in. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the TV cable hole neatly sealed with foam trimmed flush with the wall, the box cutter in his gloved hand. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c50",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/aud/c50.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/aud/c50_gen.wav",
+   "T": 12,
+   "text": "Lugar número cuatro. Los cables. Vamos a la sala. Mira dónde entra el cable del aire acondicionado. El técnico hizo el agujero, pasó el cable, y se fue.",
+   "action": "Claudio, the man whose face is the third reference image, climbs two steps of a small aluminum ladder and shines the flashlight at the hole where the air-conditioner cable goes through the wall, a gap around it showing daylight. daylight from a window with light curtains, a lamp on. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c51",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/aud/c51.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/aud/c51_gen.wav",
+   "T": 11,
+   "text": "Y quedó un hueco por donde ves la luz de afuera. Y el de la televisión, igual, abajo, detrás del mueble. La moneda entra en los dos. Lana de acero alrededor del cable,",
+   "action": "Claudio, the man whose face is the third reference image, gets down, pulls the TV stand a little from the wall and pushes a small silver coin about 18 millimeters wide into the gap where the TV cable enters the wall near the floor. daylight from a window with light curtains, a lamp on. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c52",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/aud/c52.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/aud/c52_gen.wav",
+   "T": 10,
+   "text": "apretada, con el destornillador, sin pelar el cable. Y espuma encima. Cuando se seca, se corta lo que sobra con el cúter, al ras de la pared.",
+   "action": "Claudio, the man whose face is the third reference image, wearing gloves, pushes steel wool around the cable with the screwdriver without scratching it, sprays a little foam, then trims the dried foam flush with a box cutter. daylight from a window with light curtains, a lamp on. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c50": {
+   "mode": "trunc"
+  },
+  "c51": {
+   "mode": "trunc"
+  },
+  "c52": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/sala/out.mp4"
+}

@@ -1,0 +1,124 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, white fluorescent tube light inside the shop plus daylight from the open front door. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands at the worn wooden counter of a small neighborhood hardware store, the counter has a scratched glass top with screws and small parts under it; shelves behind full of boxes of screws, rolls of rope, cans of paint, brooms, tools hanging on a pegboard. the shopkeeper, a Latin American man about 60 with short gray hair and reading glasses, in a red-and-black plaid flannel shirt stands behind the counter. Claudio leans on the counter looking at the camera. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Claudio turned toward the shopkeeper counting on his fingers; the shopkeeper nods and reaches toward a shelf. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Claudio holds a pad of coarse gray steel wool close to the camera in his open hand, the other items on the counter. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he holds the yellow spray can of polyurethane foam up next to his face, the steel wool on the counter. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the door draft strip lies unrolled along the counter, his hand on the rubber brush, the roll of fine metal mesh next to it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. all the items in a pile on the counter with a pair of gray work gloves on top, Claudio paying the shopkeeper with a banknote. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c19",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c19.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c19_gen.wav",
+   "T": 12,
+   "text": "Antes de empezar, vamos a la ferretería de la esquina. Son cuatro cosas, y no gastas mucho. Buenas tardes. Necesito dos lanas de acero sin jabón, una espuma de poliuretano,",
+   "action": "Claudio, the man whose face is the third reference image, leans on the counter talking to the camera, then turns to the shopkeeper and speaks to him, counting four items on his fingers. white fluorescent tube light inside the shop plus daylight from the open front door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c20",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c20.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c20_gen.wav",
+   "T": 8,
+   "text": "un burlete para puerta y una malla metálica fina. Mira, ésta es la lana de acero. Que sea sin jabón, la gruesa.",
+   "action": "Claudio, the man whose face is the third reference image, the shopkeeper puts on the counter two pads of steel wool in a plastic bag, a spray can of polyurethane foam, a rolled door draft brush and a small roll of fine metal mesh; Claudio picks up a pad of coarse gray steel wool and shows it to the camera. white fluorescent tube light inside the shop plus daylight from the open front door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c21",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c21.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c21_gen.wav",
+   "T": 12,
+   "text": "El ratón muerde casi todo, pero esto le lastima los dientes y no lo puede sacar. La espuma va encima de la lana, para sellar. Sola no sirve: la muerde como si fuera pan.",
+   "action": "Claudio, the man whose face is the third reference image, pulls the steel wool a little apart with his fingers showing how coarse it is, then puts it down and picks up the spray can of polyurethane foam and shakes it. white fluorescent tube light inside the shop plus daylight from the open front door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c22",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c22.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c22_gen.wav",
+   "T": 10,
+   "text": "Ya vas a ver por qué te lo digo. El burlete, para debajo de la puerta. Éste, con cepillo de goma. Y la malla, fina, de metal, no de plástico.",
+   "action": "Claudio, the man whose face is the third reference image, puts the can down and unrolls the door draft strip on the counter, a long aluminum strip with a rubber brush, running his thumb along the brush. white fluorescent tube light inside the shop plus daylight from the open front door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c23",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c23.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/aud/c23_gen.wav",
+   "T": 9,
+   "text": "En el Manual te dejé esta frase escrita, para que la lleves en el celular y no te vendan otra cosa. Y unos guantes, que la lana de acero corta.",
+   "action": "Claudio, the man whose face is the third reference image, takes his phone out of his pocket and shows the screen to the camera with a list written on it, then puts a pair of work gloves on the pile; the shopkeeper smiles. white fluorescent tube light inside the shop plus daylight from the open front door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c19": {
+   "mode": "trunc"
+  },
+  "c20": {
+   "mode": "trunc"
+  },
+  "c21": {
+   "mode": "trunc"
+  },
+  "c22": {
+   "mode": "trunc"
+  },
+  "c23": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/ferre/out.mp4"
+}

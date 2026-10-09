@@ -1,0 +1,184 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, a single bare bulb plus daylight from a half-open roller door. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in a concrete-floored garage that is also the laundry area: gray concrete block walls, a white electric water heater tank mounted in the corner, metal shelves with paint cans and cardboard boxes, a bicycle, a utility sink. He holds the flashlight and the coin, talking to the camera. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he gets down on one knee near the bottom corner of the concrete wall, flashlight in hand. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the flashlight lying almost flat on the floor, its beam raking along the bottom of the wall, his face low near the floor. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. close view: an old yellowed lump of foam in a hole at the bottom of the wall behind the water heater, chewed ragged with a tunnel through the middle, lit by the flashlight. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the flashlight beam on small black droppings on the concrete next to the chewed foam, the screwdriver tip pointing at them. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. a closed cardboard box with a small round hole in its side placed against the wall next to the chewed foam. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he holds his phone close to the camera, the screen shows the cardboard box opened with a trap inside. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the hole behind the water heater packed with steel wool and fresh pale yellow foam, his gloved hand next to it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he stands in the garage pulling off his gloves, smiling at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c53",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c53.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c53_gen.wav",
+   "T": 9,
+   "text": "Y ahora sí. Lugar número cinco. El que nadie revisa. El garaje, y el lavadero. Aquí no basta con mirar.",
+   "action": "Claudio, the man whose face is the third reference image, walks along the shelves pointing at the bottom corners of the walls. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c54",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c54.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c54_gen.wav",
+   "T": 12,
+   "text": "Te agachas, con la linterna pegada al piso, y recorres las esquinas de abajo, una por una. La luz de costado te muestra cada sombra. Y mira lo que encontré detrás del calentador.",
+   "action": "Claudio, the man whose face is the third reference image, lays the flashlight almost flat on the concrete floor and sweeps the beam slowly along the bottom of the wall, long shadows of every crack. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c55",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c55.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c55_gen.wav",
+   "T": 11,
+   "text": "Este hueco ya lo había tapado alguien. Con espuma. Sola. Mira de cerca. ¿Ves las marcas? Está mordida. Le hicieron un túnel por el medio.",
+   "action": "Claudio, the man whose face is the third reference image, crawls to the corner behind the white water heater and lights a hole at the bottom of the wall filled with old yellowed foam; a ragged tunnel is chewed through the middle of the foam. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c56",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c56.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c56_gen.wav",
+   "T": 11,
+   "text": "La espuma sola, para el ratón, es como pan. Y aquí, en el piso, cacas frescas, negras y brillantes. Eso quiere decir que hay uno adentro, ahora.",
+   "action": "Claudio, the man whose face is the third reference image, picks at the chewed foam edge with the tip of the screwdriver, then points the flashlight at the floor beside it: small black shiny droppings like grains of rice. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c57",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c57.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c57_gen.wav",
+   "T": 11,
+   "text": "Así que hoy este hueco no se tapa. Si lo tapas con el ratón adentro, se queda encerrado en tu casa. Primero la trampa, dentro de una caja con un agujero del tamaño de la moneda,",
+   "action": "Claudio, the man whose face is the third reference image, takes a small cardboard box with a coin-sized hole cut in one side, puts a snap mouse trap inside and places the box against the wall next to the hole. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c58",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c58.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c58_gen.wav",
+   "T": 10,
+   "text": "para que no llegue Bruno. Y mañana, se tapa. Al otro día, Jorge me mandó la foto. Había caído uno. Volví, saqué la espuma vieja,",
+   "action": "Claudio, the man whose face is the third reference image, stands up and shows his phone to the camera with a photo of the trap. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c59",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c59.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c59_gen.wav",
+   "T": 8,
+   "text": "metí lana de acero hasta el fondo, y espuma encima. Ahora sí. Y en el lavadero, la esquina donde sale el desagüe de la lavadora.",
+   "action": "Claudio, the man whose face is the third reference image, kneels at the hole again with gloves, pulls out the old chewed foam, packs steel wool deep with the screwdriver and sprays fresh foam over it. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c60",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c60.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/aud/c60_gen.wav",
+   "T": 6,
+   "text": "Moneda. Pasa. Lana de acero y espuma. Cinco lugares, una tarde.",
+   "action": "Claudio, the man whose face is the third reference image, moves to the corner where the washing machine drain hose goes into the wall, tries the coin, packs steel wool and foam, then stands up wiping his hands. a single bare bulb plus daylight from a half-open roller door. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c53": {
+   "mode": "trunc"
+  },
+  "c54": {
+   "mode": "trunc"
+  },
+  "c55": {
+   "mode": "trunc"
+  },
+  "c56": {
+   "mode": "trunc"
+  },
+  "c57": {
+   "mode": "trunc"
+  },
+  "c58": {
+   "mode": "trunc"
+  },
+  "c59": {
+   "mode": "trunc"
+  },
+  "c60": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/garaje/out.mp4"
+}

@@ -1,0 +1,84 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, dusk outdoors, last blue daylight, a porch light on. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands in the small back yard of the house at dusk, looking up at the edge of the clay tile roof where a long tree branch touches the tiles; Jorge Ramírez, a stocky 40-year-old Latin American man with short black hair and a trimmed mustache, wearing a navy zip-up jacket over a navy polo shirt beside him holding a pruning saw. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he points up the cream wall toward the edge of the clay tile roof. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the cut branch lying on the grass, Jorge coming down the ladder with the saw, Claudio smiling. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he pats his shirt pocket where the flashlight sticks out, looking at the camera warmly. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c63",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/aud/c63.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/aud/c63_gen.wav",
+   "T": 11,
+   "text": "Pero te soy honesto. Si después de tapar todo siguen apareciendo, el problema está más arriba. Los ratones trepan por las paredes, y entran por el techo.",
+   "action": "Claudio, the man whose face is the third reference image, talks seriously to the camera, then traces with his finger in the air a path up the wall to the roof. dusk outdoors, last blue daylight, a porch light on. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c64",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/aud/c64.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/aud/c64_gen.wav",
+   "T": 9,
+   "text": "Mira esa rama que toca las tejas: es un puente. Jorge la cortó ese mismo fin de semana. Y una vez al año, cuando empieza el frío,",
+   "action": "Claudio, the man whose face is the third reference image, points at the tree branch touching the roof tiles; Jorge climbs a ladder and saws the branch, it falls on the grass. dusk outdoors, last blue daylight, a porch light on. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c65",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/aud/c65.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/aud/c65_gen.wav",
+   "T": 6,
+   "text": "repites la vuelta con la linterna y la moneda. Diez minutos. Antes de que entre el primero.",
+   "action": "Claudio, the man whose face is the third reference image, holds up the flashlight and the coin to the camera one last time, then puts them in his shirt pocket. dusk outdoors, last blue daylight, a porch light on. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c63": {
+   "mode": "trunc"
+  },
+  "c64": {
+   "mode": "trunc"
+  },
+  "c65": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/techo/out.mp4"
+}

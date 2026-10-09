@@ -1,0 +1,344 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, gray overcast late autumn afternoon outdoors, soft even daylight, wind. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers stands on the cement path in front of a modest one-story Latin American family house with a cream stucco front wall, a dark green metal front door and white iron window bars; a small front yard with a thin leafless tree, dry brown and yellow autumn leaves covering the path and the grass, gray cloudy sky. He talks to the camera, wind moving his curly hair and the leaves. Jorge Ramírez, a stocky 40-year-old Latin American man with short black hair and a trimmed mustache, wearing a navy zip-up jacket over a navy polo shirt stands a few steps behind him near the door, hands in his jacket pockets. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he half-turns toward the house pointing at the front door with his thumb, Jorge by the door, leaves on the path. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Jorge has walked up beside him on the path, both facing the camera, dry leaves around their feet. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Jorge with his arms crossed looking worried, Claudio beside him nodding at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he holds up his hand with all five fingers spread toward the camera, Jorge beside him. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he points with his index finger toward the side of the house, toward the garage door, looking at the camera with raised eyebrows. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he holds up the small black flashlight in his right hand close to the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he holds the flashlight in one hand and a small silver coin about 18 millimeters wide between thumb and finger of the other, both raised toward the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he has his right hand flat on his chest, a warm confident half smile, Jorge behind him. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Claudio with his hand on Jorge's shoulder, both facing the camera, Jorge starting to talk. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Jorge holds his thumb and finger a few millimeters apart showing something tiny, Claudio watching him. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Claudio facing the camera again, Jorge beside him shaking his head, the house behind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. both stand at the dark green front door, Claudio looks back over his shoulder at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he crouches slightly pointing at the gap under the green front door where dry leaves are piled. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K14",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. a small silver coin about 18 millimeters wide held very close to the camera between his thumb and index finger, his face behind it. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K15",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he holds the coin and the flashlight together in his hands at chest height, looking at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K16",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. Claudio points firmly at the cream stucco wall of the house, Jorge beside him with three fingers raised. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c03",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c03.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c03_gen.wav",
+   "T": 6,
+   "text": "Ésta es la casa de los Ramírez. Ya llegó el frío.",
+   "action": "Claudio, the man whose face is the third reference image, stands in front of the house, gestures back at the house with his open hand, dry leaves blow across the path. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c04",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c04.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c04_gen.wav",
+   "T": 8,
+   "text": "Las hojas tapan la entrada. Y Jorge me pidió que viniera antes de que empiecen los ruidos en el techo.",
+   "action": "Claudio, the man whose face is the third reference image, kicks a little pile of dry leaves off the cement path with the side of his boot, then nods toward Jorge, who walks up. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c05",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c05.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c05_gen.wav",
+   "T": 7,
+   "text": "Porque el año pasado, en cuanto bajó la temperatura, los ratones aparecieron de un día para el otro.",
+   "action": "Claudio, the man whose face is the third reference image, listens while Jorge rubs his hands from the cold and looks worried, Claudio nodding. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c06",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c06.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c06_gen.wav",
+   "T": 7,
+   "text": "Hoy revisamos los cinco lugares por donde entran. Casi todas las casas los tienen abiertos.",
+   "action": "Claudio, the man whose face is the third reference image, holds up his open hand with five fingers spread to the camera, then counts with his fingers. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c07",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c07.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c07_gen.wav",
+   "T": 6,
+   "text": "Y el quinto, el que nadie revisa, alguien ya lo había tapado antes que yo.",
+   "action": "Claudio, the man whose face is the third reference image, lowers his hand and points with one finger toward the side of the house where the garage is, raising his eyebrows. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c08",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c08.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c08_gen.wav",
+   "T": 7,
+   "text": "Mal. Te lo enseño al final. Te muestro cómo encontrar cada hueco con una linterna y una moneda.",
+   "action": "Claudio, the man whose face is the third reference image, shakes his head 'no' with a small frown, then takes a small black flashlight out of his shirt pocket and shows it. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c09",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c09.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c09_gen.wav",
+   "T": 5,
+   "text": "Y cómo taparlo en una sola tarde, con cuatro cosas de la ferretería.",
+   "action": "Claudio, the man whose face is the third reference image, switches the flashlight on and off once, and shows a small silver coin between two fingers of the other hand. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c10",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c10.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c10_gen.wav",
+   "T": 6,
+   "text": "Y lo que nunca, nunca se tapa. Soy Claudio. Treinta años de fumigador.",
+   "action": "Claudio, the man whose face is the third reference image, lowers both hands, his face becomes very serious, he says it slowly, then puts a hand on his chest. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c11",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c11.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c11_gen.wav",
+   "T": 12,
+   "text": "Y al final te doy la revisión de diez minutos con la linterna, para que sepas esta noche si ya tienes visitas. Jorge, ven, acércate. Cuéntale lo del año pasado.",
+   "action": "Claudio, the man whose face is the third reference image, waves Jorge closer with his hand, Jorge steps in, Claudio puts a hand on his shoulder. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c12",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c12.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c12_gen.wav",
+   "T": 10,
+   "text": "Me cuenta que empezó con ruiditos en la pared de la cocina, de noche. Después, cositas negras como granos de arroz detrás del refrigerador. Y una mañana,",
+   "action": "Claudio, the man whose face is the third reference image, Jorge explains with his hands, making a small scratching gesture with his fingers; Claudio listens and nods. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c13",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c13.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c13_gen.wav",
+   "T": 11,
+   "text": "Lucía abrió la alacena y había una bolsa de pan mordida por una esquina. La semana pasada, en esta misma casa, hicimos las bolitas caseras para las cucarachas;",
+   "action": "Claudio, the man whose face is the third reference image, Jorge mimes opening a cupboard and shows with his hands the corner of a bag being bitten; Claudio grimaces. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c14",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c14.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c14_gen.wav",
+   "T": 12,
+   "text": "si no la viste, te la dejo aquí. Y cuando ya me iba, Jorge me acompañó a la puerta y me dijo esto mismo. Te explico por qué pasa en otoño. Afuera baja la temperatura,",
+   "action": "Claudio, the man whose face is the third reference image, walks a few steps with Jorge toward the front door, pointing at the door, talking over his shoulder to the camera. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c15",
+   "a": "K12",
+   "b": "K13",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c15.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c15_gen.wav",
+   "T": 12,
+   "text": "se acaba la comida, y el ratón busca una casa tibia. Y la tuya huele a pan, a croquetas del perro, y está calentita. Y aquí va la regla de todo el video.",
+   "action": "Claudio, the man whose face is the third reference image, stands at the door rubbing his arms from the cold, a gust blows leaves against the bottom of the door; he points at the leaves. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c16",
+   "a": "K13",
+   "b": "K14",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c16.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c16_gen.wav",
+   "T": 12,
+   "text": "Un ratón adulto pasa por un hueco del tamaño de una moneda. Si entra la cabeza, entra el cuerpo. Así que traje esto. Una moneda, de las pequeñas. Y una linterna.",
+   "action": "Claudio, the man whose face is the third reference image, stands up holding a small silver coin about 18 millimeters wide up to the camera between thumb and index finger, very close. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c17",
+   "a": "K14",
+   "b": "K15",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c17.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c17_gen.wav",
+   "T": 12,
+   "text": "Con esto revisamos la casa entera. Si entra la moneda, entra el ratón. Jorge el año pasado puso trampas. Agarró tres. Y al mes, había otros.",
+   "action": "Claudio, the man whose face is the third reference image, holds the coin in one hand and the flashlight in the other, raises both, then lowers them and taps the coin with the flashlight. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c18",
+   "a": "K15",
+   "b": "K16",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c18.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/aud/c18_gen.wav",
+   "T": 10,
+   "text": "Porque la trampa saca al que ya entró, pero el hueco sigue abierto. Primero se tapa, y la trampa es sólo para el que quedó adentro.",
+   "action": "Claudio, the man whose face is the third reference image, turns to Jorge who holds up three fingers; Claudio shakes his head and points at the house wall. gray overcast late autumn afternoon outdoors, soft even daylight, wind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c03": {
+   "mode": "trunc"
+  },
+  "c04": {
+   "mode": "trunc"
+  },
+  "c05": {
+   "mode": "trunc"
+  },
+  "c06": {
+   "mode": "trunc"
+  },
+  "c07": {
+   "mode": "trunc"
+  },
+  "c08": {
+   "mode": "trunc"
+  },
+  "c09": {
+   "mode": "trunc"
+  },
+  "c10": {
+   "mode": "trunc"
+  },
+  "c11": {
+   "mode": "trunc"
+  },
+  "c12": {
+   "mode": "trunc"
+  },
+  "c13": {
+   "mode": "trunc"
+  },
+  "c14": {
+   "mode": "trunc"
+  },
+  "c15": {
+   "mode": "trunc"
+  },
+  "c16": {
+   "mode": "trunc"
+  },
+  "c17": {
+   "mode": "trunc"
+  },
+  "c18": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/frente/out.mp4"
+}

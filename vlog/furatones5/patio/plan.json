@@ -1,0 +1,144 @@
+{
+ "dir": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/",
+ "face": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5_face256.png",
+ "k0_from": "D:/Proyectos/video2-wt/furatones5/public/ref_furatones5.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a coworker with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the room behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, gray overcast autumn daylight outdoors. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the khaki work shirt with real creases. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a coworker with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the room in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and natural rough hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a 58-year-old Latin American pest-control technician with curly black hair streaked with gray and a short gray-black beard, brown eyes, weathered tanned skin, wearing a light khaki short-sleeve work shirt with two buttoned chest pockets, clear safety glasses pushed up on his forehead and dark work trousers walks out into the narrow side patio of the house: cement floor with dry leaves, a cream stucco exterior wall with a low rectangular louvered metal vent grille near the ground, and further along a small round-holed vent grille next to a yellow gas pipe and a gas meter; potted plants along the wall. He carries the roll of fine metal mesh and tin snips. Seen from a coworker's handheld camera at eye level. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he crouches at the louvered vent grille, the flashlight beam between the slats showing the empty dark hole behind. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. his fingers at the slats of the grille, the coin gone inside, he looks at the camera. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. a square of fine metal mesh with folded edges in his gloved hands, the tin snips on the cement. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the louvered grille screwed back on the wall with fine metal mesh visible behind the slats. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. he stands by the round-holed gas vent grille next to the gas meter, pointing at it with a stern face. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. his open hand in front of the round-holed gas vent grille, the vent open and uncovered, he looks at the camera calmly. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c41",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c41.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c41_gen.wav",
+   "T": 11,
+   "text": "Lugar número tres. Las rejillas de ventilación. Salimos al patio de al lado. Mira esta rejilla, abajo, a ras del piso. Tiene las tablitas,",
+   "action": "Claudio, the man whose face is the third reference image, crouches in front of the low rectangular louvered vent grille and shines the flashlight between the slats: there is nothing behind them, just a dark hole. gray overcast autumn daylight outdoors. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c42",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c42.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c42_gen.wav",
+   "T": 10,
+   "text": "pero detrás no hay nada. Meto la moneda entre las tablitas. Pasa. Por aquí entra un ratón, una lagartija, lo que quiera.",
+   "action": "Claudio, the man whose face is the third reference image, pushes a small silver coin about 18 millimeters wide between the slats of the grille and it falls inside. gray overcast autumn daylight outdoors. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c43",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c43.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c43_gen.wav",
+   "T": 9,
+   "text": "Corto un cuadrado de malla metálica un poco más grande que la rejilla, con la tijera de hojalata. Doblo las puntas hacia adentro, para que no corten.",
+   "action": "Claudio, the man whose face is the third reference image, unrolls the fine metal mesh on the cement and cuts a square bigger than the grille with tin snips, then folds the sharp edges inward with his gloved fingers. gray overcast autumn daylight outdoors. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c44",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c44.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c44_gen.wav",
+   "T": 11,
+   "text": "Saco los dos tornillos de la rejilla, pongo la malla detrás, y vuelvo a atornillar. El aire pasa igual. El ratón, no. Y ahora lo más importante del video.",
+   "action": "Claudio, the man whose face is the third reference image, unscrews the two screws of the grille with a screwdriver, puts the mesh behind it and screws the grille back on. gray overcast autumn daylight outdoors. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c45",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c45.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c45_gen.wav",
+   "T": 10,
+   "text": "Ésta de aquí es la ventilación del gas. Esta rejilla no se tapa nunca. Ni con espuma, ni con cinta, ni con nada. Si tapas la ventilación del gas,",
+   "action": "Claudio, the man whose face is the third reference image, walks along the wall and stops at the small round-holed vent grille next to the yellow gas pipe and the gas meter, pointing at it. gray overcast autumn daylight outdoors. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c46",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c46.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/aud/c46_gen.wav",
+   "T": 8,
+   "text": "el día que haya una fuga, el gas no tiene por dónde salir. Le pones malla, y nada más. Que el aire pase siempre.",
+   "action": "Claudio, the man whose face is the third reference image, holds his open hand in front of the gas vent feeling the air, then shows a small piece of mesh and shakes his head at a roll of tape. gray overcast autumn daylight outdoors. He wears the same light khaki short-sleeve two-pocket work shirt with clear safety glasses pushed up on his forehead the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c41": {
+   "mode": "trunc"
+  },
+  "c42": {
+   "mode": "trunc"
+  },
+  "c43": {
+   "mode": "trunc"
+  },
+  "c44": {
+   "mode": "trunc"
+  },
+  "c45": {
+   "mode": "trunc"
+  },
+  "c46": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/furatones5/vlog/furatones5/patio/out.mp4"
+}

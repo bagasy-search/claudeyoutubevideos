@@ -1,0 +1,112 @@
+[
+ {
+  "c": "ClCasa5",
+  "from": 836,
+  "dur": 126,
+  "props": {
+   "from": 0,
+   "to": 0,
+   "note": "si entra la moneda, entra el ratón",
+   "bed": "vid/furatones5/bed_0.mp4#130"
+  },
+  "t": 27.87
+ },
+ {
+  "c": "ClVideoRef",
+  "from": 2458,
+  "dur": 165,
+  "props": {
+   "thumb": "img/furatones5/th_fucasero.jpg",
+   "title": "Las bolitas caseras para cucarachas",
+   "tag": "VIDEO ANTERIOR",
+   "bed": "vid/furatones5/bed_1.mp4#169"
+  },
+  "t": 81.95
+ },
+ {
+  "c": "ClChip",
+  "from": 3741,
+  "dur": 108,
+  "props": {
+   "text": "Si entra la moneda, entra el ratón",
+   "corner": "tl"
+  },
+  "t": 124.69
+ },
+ {
+  "c": "ClBookPage",
+  "from": 12059,
+  "dur": 210,
+  "props": {
+   "page": "img/furatones5/page15.jpg",
+   "pageNo": 15,
+   "stamp": "Las medidas, en la página",
+   "bed": "vid/furatones5/bed_3.mp4#214"
+  },
+  "t": 401.95
+ },
+ {
+  "c": "ClCasa5",
+  "from": 13679,
+  "dur": 132,
+  "props": {
+   "from": 3,
+   "to": 4,
+   "focus": 5,
+   "title": "EL QUINTO LUGAR",
+   "note": "el que nadie revisa",
+   "bed": "vid/furatones5/bed_4.mp4#136"
+  },
+  "t": 455.97
+ },
+ {
+  "c": "ClCasa5",
+  "from": 15822,
+  "dur": 108,
+  "props": {
+   "from": 4,
+   "to": 5,
+   "note": "cinco lugares, una tarde",
+   "bed": "vid/furatones5/bed_5.mp4#112"
+  },
+  "t": 527.39
+ },
+ {
+  "c": "ClQRCard",
+  "from": 18656,
+  "dur": 180,
+  "props": {
+   "qr": "img/furatones5/qr.jpg",
+   "cover": "img/furatones5/gift_cover.jpg",
+   "text": "las 3 pruebas, gratis",
+   "kicker": "REGALO · ANTES DE FUMIGAR",
+   "bed": "vid/furatones5/bed_6.mp4#184"
+  },
+  "t": 621.85
+ },
+ {
+  "c": "ClQRCard",
+  "from": 18848,
+  "dur": 255,
+  "props": {
+   "qr": "img/furatones5/qr.jpg",
+   "cover": "img/furatones5/book_cover.jpg",
+   "text": "66 arreglos · garantía 7 días",
+   "kicker": "EL MANUAL · US$27",
+   "bed": "vid/furatones5/bed_7.mp4#259"
+  },
+  "t": 628.27
+ },
+ {
+  "c": "ClVideoRef",
+  "from": 19758,
+  "dur": 150,
+  "props": {
+   "thumb": "img/furatones5/th_fumoscas.jpg",
+   "title": "Las moscas de la cocina, sin aerosol",
+   "next": true,
+   "bed": "vid/furatones5/bed_8.mp4#154"
+  },
+  "t": 658.59
+ }
+]
