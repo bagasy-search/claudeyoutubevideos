@@ -121,7 +121,9 @@ export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kic
           <div style={{ background: "#fff", padding: 16, borderRadius: 12, border: `3px solid ${CL.grout}` }}>
             <Img src={staticFile(qr)} style={{ width: 440, height: 440, display: "block", margin: "0 auto", imageRendering: "pixelated" }} />
           </div>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 16, clipPath: `inset(0 ${100 - w * 100}% 0 0)`, whiteSpace: "nowrap" }}>{text}</div>
+          {/* ⛔ el texto va en una sola línea y la tarjeta recorta: si es largo se achica (medido en fumoscasf:
+              "66 arreglos · garantía 7 días" a 52 px salía 700 px y la tarjeta tiene 580 → lo cortaba en "7 dí") */}
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: text.length > 23 ? 40 : 52, color: CL.navy, marginTop: 16, clipPath: `inset(0 ${100 - w * 100}% 0 0)`, whiteSpace: "nowrap" }}>{text}</div>
         </Card>
       </div>
       <RoomLight k={0.4} />

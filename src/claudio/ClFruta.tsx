@@ -191,7 +191,8 @@ export const ClDrainFactory: React.FC<{ mode?: "cups" | "larvae" | "clean"; bed?
 };
 
 // ───────────────── ClFlyCycle
-export const ClFlyCycle: React.FC<{ bed?: string }> = ({ bed }) => {
+// `name` = cómo se llama el bicho en ESTE video: por defecto la mosquita de la fruta (ep. 4); en fumoscasf es la mosca
+export const ClFlyCycle: React.FC<{ bed?: string; name?: string }> = ({ bed, name = "Mosquita" }) => {
   const f = useCurrentFrame(); const { durationInFrames: T, fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2, 14);
   const k = clamp01(f / (T * 0.8));
@@ -214,8 +215,8 @@ export const ClFlyCycle: React.FC<{ bed?: string }> = ({ bed }) => {
           <text x={0} y={80} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={32} fill={CL.inkSoft}>DÍAS</text>
         </g>
       </svg>
-      <Tag x={420} y={900} text={k < 0.3 ? "Huevos" : k < 0.55 ? "Larvas" : "Mosquitas"} color={k < 0.55 ? CL.brown : CL.red} o={lin(f, 6, 14)} />
-      <Note x={1330} y={560} o={lin(f, 10, 20)} big={`${count}`} small="mosquitas" />
+      <Tag x={420} y={900} text={k < 0.3 ? "Huevos" : k < 0.55 ? "Larvas" : name + "s"} color={k < 0.55 ? CL.brown : CL.red} o={lin(f, 6, 14)} />
+      <Note x={1330} y={560} o={lin(f, 10, 20)} big={`${count}`} small={name.toLowerCase() + "s"} />
       <RoomLight k={0.3} />
     </AbsoluteFill>
   );

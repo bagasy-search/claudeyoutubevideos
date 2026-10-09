@@ -27,7 +27,7 @@ OV = [
  ("ClVideoRef", at("La vimos la semana pasada"), 2.0, {"thumb": I + "th_furatones5.jpg", "title": "Los 5 huecos por donde entra el ratón", "tag": "VIDEO ANTERIOR"}),
  # de dónde entra y qué la llama: el olor del bote sale por la puerta y la mosca lo sigue (el mosquitero, en cambio, no la para)
  ("ClFlyDoor", at("Cuando el bote de basura está abierto"), 7.5, {}),
- ("ClFlyCycle", at("Una mosca pone cientos de huevos"), 7.0, {}),
+ ("ClFlyCycle", at("Una mosca pone cientos de huevos"), 7.0, {"name": "Mosca"}),
  # el limón con los diez clavos, en el borde de la ventana
  ("ClLemon10", at("Cortas un limón por la mitad"), 10.0, {}),
  # las tres reglas de la cinta + la línea de altura de Bruno (el perro pasa por abajo)
