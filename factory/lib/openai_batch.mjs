@@ -69,9 +69,19 @@ function agnesSinCara({ pend, outDir, size, total }) {
   const id = `agnes:${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
   const lista = path.join(AGNES_DIR, id.slice(6) + ".json");
   fs.writeFileSync(lista, JSON.stringify(pend.map(({ name, prompt }) => ({ name, prompt })), null, 1));
-  console.log(`🆓 ${pend.length} imágenes SIN cara → agnes-image (gratis, regla 8-oct). gpt-image sólo para planos con cara.`);
-  const r = spawnSync(process.execPath, [path.join(ROOT, "scripts", "agnes_img.mjs"), lista, outDir, "--conc", String(env("AGNES_IMG_CONC") || 8)],
-    { cwd: ROOT, stdio: "inherit", env: { ...process.env, AGNES_IMG_SIZE: process.env.AGNES_IMG_SIZE || size } });
+  // ⭐ (9-oct-2026) agnes_img_pro = prompt → JSON hiperdetallado → agnes-image-2.5 → juez de visión en 2 modos →
+  //    regenera las rechazadas → posproceso de cámara común. Las que no pasan en N rondas quedan en `fallidos`
+  //    y la fase las vuelve a pedir al re-correr (nunca pasa una foto con defecto). FACTORY_AGNES_SIMPLE=1 = el
+  //    generador viejo (agnes_img.mjs, sin JSON ni juez). Con cara sigue gpt-image (decisión del creador 9-oct:
+  //    con referencia agnes sale menos real).
+  const simple = env("FACTORY_AGNES_SIMPLE") === "1";
+  console.log(`🆓 ${pend.length} imágenes SIN cara → agnes ${simple ? "(simple)" : "PRO: JSON + juez + regenerar"} (gratis). gpt-image sólo para planos con cara.`);
+  const r = simple
+    ? spawnSync(process.execPath, [path.join(ROOT, "scripts", "agnes_img.mjs"), lista, outDir, "--conc", String(env("AGNES_IMG_CONC") || 8)],
+      { cwd: ROOT, stdio: "inherit", env: { ...process.env, AGNES_IMG_SIZE: process.env.AGNES_IMG_SIZE || size } })
+    : spawnSync(process.execPath, [path.join(ROOT, "scripts", "agnes_img_pro.mjs"), lista, outDir, "--conc", String(env("AGNES_IMG_CONC") || 9),
+      "--rondas", String(env("AGNES_PRO_RONDAS") || 4), "--work", path.join(AGNES_DIR, id.slice(6))],
+      { cwd: ROOT, stdio: "inherit", env: { ...process.env, AGNES_IMG_SIZE: process.env.AGNES_IMG_SIZE || size } });
   const fallidos = pend.filter((it) => !fs.existsSync(path.join(outDir, `${it.name}.png`))).map((it) => ({ name: it.name, error: `agnes no la generó (exit ${r.status})` }));
   fs.writeFileSync(lista.replace(/\.json$/, ".result.json"), JSON.stringify({ outDir, n: pend.length, ok: pend.length - fallidos.length, fail: fallidos.length, fallidos }, null, 1));
   return { batchId: id, endpoint: "agnes-image", n: pend.length, yaEstaban: total - pend.length };

@@ -10,6 +10,13 @@
 > crop de cara 128x192) es SÓLO para los planos con la cara del presentador. `factory/lib/openai_batch.mjs`
 > (`submitBatch`) ya desvía solo cualquier ítem sin `ref` a `scripts/agnes_img.mjs`; `scripts/gptimg.mjs` y la
 > fábrica lo usan. No llames a `/v1/images/generations` de OpenAI por ningún otro lado (los `gen_*.mjs` viejos tiran error).
+> ⭐ **(9-oct-2026) Las SIN cara van por `scripts/agnes_img_pro.mjs`** (submitBatch ya lo usa): prompt corto →
+> JSON hiperdetallado (`agnes_json_prompt.mjs`, agnes-3.0 gratis) → agnes-image-2.5 → juez de visión en 2 modos
+> (`agnes_img_gate.mjs`: cuerpos dentro de objetos, gente de más/de menos, anatomía, lógica física, duplicados) →
+> regenera las rechazadas → posproceso de cámara común. Una foto rechazada NUNCA se usa: si no pasa en 4 rondas
+> queda faltante y la fase la vuelve a pedir. CON cara: gpt-image-2 low + Batch + crop 128x192, sin cambios
+> (decisión del creador 9-oct: con referencia agnes sale menos real). Para una lista suelta:
+> `node scripts/agnes_img_pro.mjs <lista.json> <outDir>`.
 
 > 🏭 **ORDEN VIGENTE (15-sep-2026): FÁBRICA x10.** Antes de producir o tocar el pipeline de
 > video, leé `factory/PLAN_FABRICA.md` (§0–§2 + §7 LOG), avanzá el próximo ítem del checklist

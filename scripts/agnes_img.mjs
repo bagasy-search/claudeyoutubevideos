@@ -28,7 +28,7 @@ import path from "node:path";
 const [LIST, OUT0] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 if (!LIST || !OUT0) { console.error("uso: node scripts/agnes_img.mjs <lista.json> <outDir> [--conc N]"); process.exit(1); }
 const OUT = OUT0;
-const CONC = +(process.argv[process.argv.indexOf("--conc") + 1] || 6);
+const CONC = process.argv.includes("--conc") ? +process.argv[process.argv.indexOf("--conc") + 1] || 6 : 6; // sin --conc daba NaN = 0 workers y "0 fallidas"
 fs.mkdirSync(OUT, { recursive: true });
 
 const env = {};
