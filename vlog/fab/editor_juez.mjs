@@ -36,7 +36,32 @@ const uri = (f) => `data:image/${/\.jpe?g$/i.test(f) ? "jpeg" : "png"};base64,` 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 let ki = Math.floor(Math.random() * 1000);
 const T0 = Date.now(), TOPE = 20 * 60_000;   // agnes saturado (429 en todas las claves): a los 20 min lo que falta pasa con aviso
+// FAB_LLM=haiku: el juez es Claude Haiku 5.5 vía `claude -p` (suscripción), lee el cuadro con la herramienta Read
+const HAIKU = process.env.FAB_LLM === "haiku";
+import { spawn } from "node:child_process";
+function pedirHaiku(img, texto) {
+  return new Promise((res) => {
+    const envH = Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(ANTHROPIC_|CLAUDE_CODE_SUBAGENT|CLAUDE_CONFIG_DIR)/.test(k)));
+    const abs = path.resolve(img);
+    const args = ["-p", "--model", process.env.FAB_HAIKU_MODEL || "haiku", "--output-format", "json", "--no-session-persistence", "--strict-mcp-config",
+      "--setting-sources", "", "--tools", "Read", "--allowedTools", "Read", "--max-turns", "4", "--add-dir", path.dirname(abs),
+      "--system-prompt", "You are a senior video editor. You answer with JSON only."];
+    fs.mkdirSync("D:/rtmp/fab/haiku_cwd", { recursive: true });
+    const ch = spawn("claude", args, { cwd: "D:/rtmp/fab/haiku_cwd", env: envH, shell: true });
+    let out = ""; ch.stdout.on("data", (d) => (out += d)); ch.stderr.on("data", () => { });
+    const to = setTimeout(() => ch.kill(), 300_000);
+    ch.on("close", () => {
+      clearTimeout(to);
+      try { const d = JSON.parse(out); const m = String(d.result || "").match(/\{[\s\S]*\}/); if (d.is_error || !m) throw new Error(String(d.result).slice(0, 140)); res(JSON.parse(m[0])); }
+      catch (e) { res({ _error: String(e.message || e).slice(0, 140) }); }
+    });
+    ch.stdin.end(`First open this image with the Read tool: ${abs}
+Then answer without any other tool:
+${texto}`);
+  });
+}
 async function pedir(img, texto) {
+  if (HAIKU) return pedirHaiku(img, texto);
   if (Date.now() - T0 > TOPE) return { _error: "tope de 20 min (agnes saturado)" };
   for (let intento = 0; intento < 9; intento++) {
     const key = DS ? DSKEY : KEYS[(ki++) % KEYS.length];

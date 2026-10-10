@@ -16,7 +16,44 @@ def _gasto(pasada, model, u):
     x = g.setdefault(pasada, {"llamadas": 0, "usd": 0.0}); x["llamadas"] += 1; x["usd"] = round(x["usd"] + c, 5)
     W(p, g)
 
+# ── FAB_LLM=haiku: el MISMO equipo, pero cada empleado es Claude Haiku 5.5 vía `claude -p` (suscripción, sin API key) ──
+HAIKU = os.environ.get("FAB_LLM") == "haiku"
+HCWD = "D:/rtmp/fab/haiku_cwd"   # carpeta neutra: sin CLAUDE.md ni memoria del proyecto
+def _haiku(system, user, pasada, imgs=None, intentos=4):
+    import subprocess
+    os.makedirs(HCWD, exist_ok=True)
+    env = {k: v for k, v in os.environ.items() if not k.startswith(("ANTHROPIC_", "CLAUDE_CODE_SUBAGENT", "CLAUDE_CONFIG_DIR"))}
+    cmd = ["claude", "-p", "--model", os.environ.get("FAB_HAIKU_MODEL", "haiku"), "--output-format", "json", "--no-session-persistence",
+           "--strict-mcp-config", "--setting-sources", "", "--system-prompt", system or "You are a careful assistant."]
+    if imgs:
+        cmd += ["--tools", "Read", "--allowedTools", "Read", "--max-turns", str(len(imgs) + 3)]
+        for d in sorted({os.path.dirname(os.path.abspath(p)) for p in imgs}): cmd += ["--add-dir", d]
+        user = ("First open each of these image files with the Read tool, in this order:\n" + "\n".join(f"{i + 1}. {os.path.abspath(p)}" for i, p in enumerate(imgs))
+                + "\n\nThen answer, without any other tool:\n" + user)
+    else:
+        cmd += ["--tools", "", "--max-turns", "1"]
+    for k in range(intentos):
+        r = subprocess.run(cmd, input=user, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=HCWD, env=env, timeout=900)
+        try: d = json.loads(r.stdout)
+        except Exception: d = {"is_error": True, "result": (r.stdout or r.stderr)[-300:]}
+        if not d.get("is_error") and d.get("result"):
+            p = D + "ds_gasto.json"; g = J(p, {}); x = g.setdefault("haiku_" + pasada, {"llamadas": 0, "usd": 0.0, "seg": 0})
+            x["llamadas"] += 1; x["usd"] = round(x["usd"] + float(d.get("total_cost_usd") or 0), 5); x["seg"] = round(x["seg"] + d.get("duration_ms", 0) / 1000)
+            W(p, g)
+            return d["result"]
+        if k == intentos - 1: raise SystemExit(f"⛔ {pasada}: Haiku falló: {str(d.get('result'))[:300]}")
+        time.sleep(10 * (k + 1))
+
 def _post(body, pasada, intentos=5):
+    if HAIKU:
+        msgs = body["messages"]; system = next((m["content"] for m in msgs if m["role"] == "system"), "")
+        u = next(m for m in msgs if m["role"] == "user")["content"]
+        if isinstance(u, list):   # visión: las imágenes llegan como data URI → se pasan por ruta (vision() guarda las rutas en body["_imgs"])
+            txt = " ".join(c["text"] for c in u if c.get("type") == "text")
+            return _haiku(system, txt, pasada, imgs=body.get("_imgs"))
+        if body.get("response_format"): u += "\n\nReply with ONE valid JSON object only, no prose, no code fences."
+        return _haiku(system, u, pasada)
+    body.pop("_imgs", None)
     for k in range(intentos):
         try:
             r = urllib.request.Request(URL, json.dumps(body).encode(), {"Authorization": "Bearer " + KEY, "Content-Type": "application/json"})
@@ -50,7 +87,8 @@ def _uri(p):
 def vision(prompt, imgs, pasada, max_tokens=3000, pensar=False):
     """sin razonamiento por defecto: la imagen cuesta ~800 tokens y el razonamiento ~1500 (50x más caro) y para errores grandes acierta igual"""
     content = [{"type": "image_url", "image_url": {"url": _uri(p)}} for p in imgs] + [{"type": "text", "text": prompt}]
-    body = {"model": "deepseek-flash", "max_tokens": max_tokens, "temperature": 0, "messages": [{"role": "user", "content": content}]}
+    body = {"model": "deepseek-flash", "max_tokens": max_tokens, "temperature": 0, "messages": [{"role": "user", "content": content}], "_imgs": list(imgs)}
+    if HAIKU: prompt += "\n\nReply with ONE valid JSON object only, no prose, no code fences."; content[-1]["text"] = prompt
     if not pensar: body["thinking"] = {"type": "disabled"}
     txt = _post(body, pasada)
     try: return _json(txt)
