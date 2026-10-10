@@ -19,11 +19,12 @@ def _gasto(pasada, model, u):
 # ── FAB_LLM=haiku: el MISMO equipo, pero cada empleado es Claude Haiku 5.5 vía `claude -p` (suscripción, sin API key) ──
 HAIKU = os.environ.get("FAB_LLM") == "haiku"
 HCWD = "D:/rtmp/fab/haiku_cwd"   # carpeta neutra: sin CLAUDE.md ni memoria del proyecto
+CLAUDE_EXE = os.environ.get("FAB_CLAUDE_EXE") or os.path.join(os.environ.get("APPDATA", ""), "npm/node_modules/@anthropic-ai/claude-code/bin/claude.exe")
 def _haiku(system, user, pasada, imgs=None, intentos=4):
     import subprocess
     os.makedirs(HCWD, exist_ok=True)
-    env = {k: v for k, v in os.environ.items() if not k.startswith(("ANTHROPIC_", "CLAUDE_CODE_SUBAGENT", "CLAUDE_CONFIG_DIR"))}
-    cmd = ["claude", "-p", "--model", os.environ.get("FAB_HAIKU_MODEL", "haiku"), "--output-format", "json", "--no-session-persistence",
+    env = {k: v for k, v in os.environ.items() if not k.startswith(("ANTHROPIC_", "CLAUDE"))}   # nada de la sesión que lo llama (supervisor)
+    cmd = [CLAUDE_EXE, "-p", "--model", os.environ.get("FAB_HAIKU_MODEL", "haiku"), "--output-format", "json", "--no-session-persistence",
            "--strict-mcp-config", "--setting-sources", "", "--system-prompt", system or "You are a careful assistant."]
     if imgs:
         cmd += ["--tools", "Read", "--allowedTools", "Read", "--max-turns", str(len(imgs) + 3)]
