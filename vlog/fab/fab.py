@@ -397,6 +397,7 @@ def e_montaje():
         falt = equipo.fotos(P, rondas=3)
         if falt: sys.exit(f"⛔ montaje: faltan fotos {falt[:10]} → corré `fab.py montaje` de nuevo")
         hecho("imgs", True); hecho("clips", False)
+        os.environ["FAB_HEROE_MIN"] = os.environ.get("FAB_HEROE_MIN_MONTAJE", "20")   # en el montaje agnes espera 20 min, no 90 (ya hubo una vuelta)
         try: e_clips()
         except SystemExit: pass
         e_armar()
