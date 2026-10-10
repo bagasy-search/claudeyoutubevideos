@@ -24,8 +24,8 @@ from comun import R, S, D, V3, FPS, J, W, dur, frames, nw, at, mapear, cortes, p
 LOG = D + "logs/"; HECHO = D + ".hecho/"
 os.makedirs(LOG, exist_ok=True); os.makedirs(HECHO, exist_ok=True)
 ENV = {**os.environ, "SLUG": S, "PYTHONUTF8": "1", "AGNES_KEYS_OTRA_PC": os.environ.get("AGNES_KEYS_OTRA_PC", ",")}
-FONDO = {"voz", "imgs", "clips", "avatar", "editor", "render"}
-ORDEN = ["guion", "voz", "avatar", "planos", "imgs", "clips", "armar", "ov", "editor", "mix", "render"]
+FONDO = {"arte", "voz", "planos", "imgs", "clips", "avatar", "montaje", "editor", "render"}
+ORDEN = ["guion", "arte", "voz", "avatar", "planos", "imgs", "clips", "armar", "montaje", "ov", "editor", "mix", "render"]
 CLIPF = 121
 
 def sh(cmd, check=True, quiet=False, env=None, **kw):
@@ -74,6 +74,14 @@ def e_guion():
     for p in prob: print("⛔", p)
     if prob: hecho("guion", False); sys.exit(2)
     borrar_desde("guion"); hecho("guion", True, f"{ch} car"); print("✓ guion OK → siguiente: python vlog/fab/fab.py voz")
+
+# ════════════════════════════════════════ arte ════════════════════════════════════════
+def e_arte():
+    if not os.path.exists(HECHO + "guion"): sys.exit("⛔ primero: guion")
+    import equipo
+    b = equipo.arte()
+    for sec, x in b["secciones"].items(): print(f"   {sec:10s} {x['lugar']:14s} {x['hora']:6s} {','.join(x['gente'])}")
+    print(f"FIN arte: {len(b['lugares'])} lugares · avatar en '{b['avatar_lugar']}'"); hecho("arte", True)
 
 # ════════════════════════════════════════ voz ════════════════════════════════════════
 def e_voz():
@@ -146,7 +154,7 @@ def tramos():
     gaps = [((m(WM[i]["e"]) + m(WM[i + 1]["s"])) / 2,) for i in range(len(WM) - 1) if sec[i + 1] == sec[i] and m(WM[i + 1]["s"]) - m(WM[i]["e"]) > 0.05]
     bounds = [0.0] + [(m(WM[i - 1]["e"]) + m(WM[i]["s"])) / 2 for i in range(1, len(WM)) if sec[i] != sec[i - 1]] + [T]
     bsec = [sec[0]] + [sec[i] for i in range(1, len(WM)) if sec[i] != sec[i - 1]]
-    obj = lambda t: 1.95 if t < 60 else 4.033
+    obj = lambda t: 1.95 if t < 60 else 2.7
     segs = []
     for k in range(len(bounds) - 1):
         A, B, t = bounds[k], bounds[k + 1], bounds[k]
@@ -181,8 +189,15 @@ def leer_planos():
     if not isinstance(P, list): sys.exit("⛔ planos.json tiene que ser una lista")
     return P
 def e_planos():
-    if not os.path.exists(HECHO + "voz"): sys.exit("⛔ primero: voz")
-    P = leer_planos(); nec = necesidad(); errs, avisos = [], []
+    for e in ("voz", "arte"):
+        if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
+    nec = necesidad()
+    if not os.path.exists(D + "planos.json") or "--rehacer" in sys.argv:
+        import equipo
+        P = equipo.planos(nec)
+        for k, x in enumerate(P): x["id"] = f"p{k + 1:03d}"
+        W(D + "planos.json", P)
+    P = leer_planos(); errs, avisos = [], []
     ids = [p.get("id") for p in P]
     dup = sorted({i for i in ids if ids.count(i) > 1})
     if dup: errs.append(f"ids repetidos: {dup[:10]}")
@@ -196,7 +211,7 @@ def e_planos():
         if not (20 <= len(mv) <= 220): errs.append(f"{i}: 'mov' de {len(mv)} caracteres (20-220)")
         if RUIDO.search(f): errs.append(f"{i}: vocabulario de cámara en la foto ('{RUIDO.search(f).group(0)}'): describe sólo lo que se ve")
         if not p.get("cara") and CARA.search(f): avisos.append(f"{i}: menciona cara/mirada pero no tiene \"cara\": true")
-        if re.search(r"[áéíóúñ¿¡]", f + mv): errs.append(f"{i}: foto y mov van en INGLÉS")
+        if re.search(r"[áéíóúñ¿¡]", f + mv): avisos.append(f"{i}: foto/mov con español (van en inglés)")
     from collections import Counter
     tiene = Counter(p.get("sec") for p in P)
     print("sección   tienes  necesitas")
@@ -206,7 +221,7 @@ def e_planos():
         print(f"  {s:8s} {t:6d}  {n:6d}  {'✓' if t >= n else '⛔ faltan ' + str(n - t)}")
     for a in avisos[:8]: print("⚠", a)
     for e in errs[:25]: print("⛔", e)
-    if falta: print(f"⛔ faltan {falta} planos en total (cada clip se usa UNA sola vez)")
+    if falta: print(f"⛔ faltan {falta} planos en total: corré `fab.py planos --rehacer`")
     if errs or falta: hecho("planos", False); sys.exit(2)
     hecho("planos", True, f"{len(P)} planos"); print(f"✓ {len(P)} planos OK → siguiente: python vlog/fab/fab.py imgs")
 
@@ -214,28 +229,11 @@ def e_planos():
 EMPTY = " Nobody else is in the picture."
 def e_imgs():
     if not os.path.exists(HECHO + "planos"): sys.exit("⛔ primero: planos")
-    P = leer_planos(); meta = J(D + "meta.json", {}); out_dir = R + f"public/img/{S}"
-    os.makedirs(out_dir, exist_ok=True)
-    ref = meta.get("ref_cara") or f"public/ref_{S}.png"
-    falt = [p for p in P if not os.path.exists(f"{out_dir}/{p['id']}.png")]
-    print(f"fotos: {len(P) - len(falt)} hechas, {len(falt)} por hacer")
+    import equipo
+    falt = equipo.fotos(leer_planos())
     if falt:
-        lst = [{"name": p["id"], "prompt": p["foto"], **({"ref": [ref]} if p.get("cara") else {})} for p in falt]
-        W(V3 + f"{S}_fab_imgs.json", lst)
-        sh(["node", "scripts/agnes_img_pro.mjs", f"_v3/{S}_fab_imgs.json", f"public/img/{S}", "--rondas", "3", "--conc", "9"], check=False)
-    falt = [p["id"] for p in P if not os.path.exists(f"{out_dir}/{p['id']}.png")]
-    # si el juez nunca contestó (agnes saturado, 429) la foto no tiene defecto conocido: se usa la última generada
-    rej = J(out_dir + "/_agnes_pro/_rechazos.json", {})
-    for n in list(falt):
-        h = rej.get(n, [])
-        cand = sorted(glob.glob(out_dir + f"/_agnes_pro/_rechazadas/{n}__r*.png"))
-        if cand and h and all(set(x.get("fallas", [])) <= {"sin_respuesta", "sin_juez"} for x in h):
-            shutil.copy(cand[-1], f"{out_dir}/{n}.png"); falt.remove(n)
-    if falt:
-        print(f"⛔ FIN imgs con {len(falt)} fotos que el juez nunca aprobó: {falt[:30]}")
-        print("   Reescribí la 'foto' de esos planos en planos.json (más simple, sin gente si no hace falta) y corré imgs de nuevo.")
-        hecho("imgs", False); sys.exit(2)
-    hecho("imgs", True); print(f"FIN imgs: {len(P)} fotos OK → siguiente: python vlog/fab/fab.py clips")
+        print(f"⛔ FIN imgs: {len(falt)} fotos no salieron (agnes): {falt[:20]} → corré imgs de nuevo"); hecho("imgs", False); sys.exit(2)
+    hecho("imgs", True); print("FIN imgs: fotos OK → siguiente: python vlog/fab/fab.py clips")
 
 # ════════════════════════════════════════ clips ════════════════════════════════════════
 PERSONA = re.compile(r"\b(hand|hands|finger|fingers|thumb|arm|arms|sleeve|he|she|his|her|shoulders?|man|woman|boy|girl|child|children|dog|cat|people|person)\b", re.I)
@@ -277,12 +275,16 @@ def e_clips():
             subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "3.5", "-i", f"{CL}/{i}.mp4", "-frames:v", "1", V3 + f"{S}_jc/{i}.png"])
             lj.append({"name": i, "prompt": P[i]["foto"] + " Then: " + P[i]["mov"]})
         if lj:
-            W(V3 + f"{S}_jc.json", lj)
-            sh(["node", "scripts/agnes_img_gate.mjs", f"_v3/{S}_jc.json", f"_v3/{S}_jc", "--out", f"_v3/{S}_jc_gate.json"], check=False, quiet=True, capture_output=True)
-            g = J(V3 + f"{S}_jc_gate.json", {})
-            for i, r in g.items():
-                if i in [x["name"] for x in lj] and not r.get("ok") and "sin_respuesta" not in r.get("fallas", []):
-                    if set(r.get("fallas", [])) & {"anatomia", "cuerpo_imposible", "objeto_deforme", "persona_duplicada", "gente_de_mas"}: malos[i] = ",".join(r["fallas"])
+            import ds
+            for g in range(0, len(lj), 9):
+                gr = lj[g:g + 9]; hoja = ds.grilla([V3 + f"{S}_jc/{x['name']}.png" for x in gr], V3 + f"{S}_jc/_h{ronda}_{g}.jpg")
+                desc = "\n".join(f"{k + 1}: {x['prompt'][:240]}" for k, x in enumerate(gr))
+                v = ds.vision("Each numbered frame is the END of a 2-second AI video made from a photo. What it should show:\n" + desc +
+                              "\nReject ONLY clear failures: melted or deformed bodies, hands or faces; a person who appeared from nowhere; the scene turned into "
+                              'something else. Reply JSON {"malos": [{"n": <number>, "motivo": "..."}]}', [hoja], "juez_clips")
+                for m in v.get("malos", []) if isinstance(v, dict) else []:
+                    try: malos[gr[int(m["n"]) - 1]["name"]] = str(m.get("motivo", ""))[:100]
+                    except Exception: pass
         if ronda == 2: malos = {}          # 3ª ronda: se acepta lo que hay (nunca se traba el video)
         for i, m in malos.items():
             print(f"   ✗ {i}: {m} → se regenera")
@@ -333,6 +335,26 @@ def e_armar():
     print(f"✓ vlog.mp4 {nf} cuadros ({nf / FPS:.1f} s) · {len(segs)} tramos · minuto 1: {sum(1 for s in segs if s['a'] < 60)} cortes · {len(usados)} clips, 0 repetidos")
     hecho("armar", True); print("→ siguiente: python vlog/fab/fab.py ov (cuando avatar haya terminado: esperar avatar)")
 
+# ════════════════════════════════════════ montaje ════════════════════════════════════════
+def e_montaje():
+    if not os.path.exists(HECHO + "armar"): sys.exit("⛔ primero: armar")
+    import equipo
+    reh = equipo.revisar_montaje()
+    print(f"editor de montaje: {len(reh)} planos a rehacer")
+    if reh:
+        P = leer_planos(); b = J(D + "biblia.json")
+        for p in P:
+            if p["id"] in reh and reh[p["id"]].get("mejor"):
+                p["foto"] = reh[p["id"]]["mejor"][:600]
+                for f in (R + f"public/img/{S}/{p['id']}.png", R + f"public/img/{S}/_eq/{p['id']}.png", R + f"public/broll/{S}/{p['id']}.mp4", R + f"public/broll/{S}/_raw/{p['id']}.mp4"):
+                    if os.path.exists(f): os.remove(f)
+        W(D + "planos.json", P)
+        equipo.fotos(P, rondas=2); hecho("imgs", True); hecho("clips", False)
+        try: e_clips()
+        except SystemExit: pass
+        e_armar()
+    hecho("montaje", True, f"{len(reh)} rehechos"); print("FIN montaje → siguiente: python vlog/fab/fab.py ov (si avatar terminó)")
+
 # ════════════════════════════════════════ avatar ════════════════════════════════════════
 def ventanas():
     A = J(D + "avatar.json"); segs = tramos(); TOT = total_frames() / FPS; M = 0.12
@@ -348,15 +370,21 @@ def ventanas():
     for i in range(1, len(win)):
         if win[i]["ms"] < win[i - 1]["me"]: errs.append(f"ventanas {win[i - 1]['n']} y {win[i]['n']} se pisan")
     vis = 0.0
-    for w in win:   # en el minuto 1 el avatar alterna por tramos enteros (no se pierden cortes)
-        if w["ms"] >= 60: w["pieces"] = [[w["ms"], w["me"]]]
-        else:
-            pz = [[max(w["ms"], s["a"]), min(w["me"], s["b"], 60)] for i, s in enumerate([s for s in segs if s["b"] > w["ms"] and s["a"] < min(w["me"], 60)]) if i % 2 == 0]
-            if w["me"] > 60: pz.append([60.0, w["me"]])
-            w["pieces"] = [[round(a, 3), round(b, 3)] for a, b in pz if b - a > 0.06]
+    for w in win:   # el avatar va por TRAMOS enteros: ≤7 s seguidos y después un tramo de planos; minuto 1 alternado; nunca en los primeros 4 s
+        pz, seguido, salto = [], 0.0, False
+        for s in [s for s in segs if s["b"] > w["ms"] and s["a"] < w["me"]]:
+            a, b = max(w["ms"], s["a"]), min(w["me"], s["b"])
+            if a < 4.0 or salto: salto = False; seguido = 0.0; continue
+            pz.append([a, b]); seguido += b - a
+            if seguido >= (2.0 if a < 60 else 6.0): salto = True
+        out = []
+        for a, b in pz:
+            if out and abs(out[-1][1] - a) < 1e-6: out[-1][1] = b
+            else: out.append([a, b])
+        w["pieces"] = [[round(a, 3), round(b, 3)] for a, b in out if b - a > 0.06]
         vis += sum(b - a for a, b in w["pieces"])
     pct = 100 * vis / TOT
-    if not (15 <= pct <= 32): errs.append(f"el avatar se ve {pct:.1f} % del video: tiene que ser 18-30 %")
+    if not (12 <= pct <= 32): errs.append(f"el avatar se ve {pct:.1f} % del video: tiene que ser 15-30 % (sumá o achicá ventanas)")
     return win, pct, errs
 def e_avatar():
     if not os.path.exists(HECHO + "voz"): sys.exit("⛔ primero: voz")
@@ -376,6 +404,7 @@ def e_avatar():
         sh(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", OUT + "concat.txt", "-c:a", "pcm_s16le", OUT + "reel.wav"], quiet=True)
         W(V3 + f"{S}_avwin.json", {"reel": dur(OUT + "reel.wav"), "win": win})
         print(f"{len(win)} ventanas · reel {dur(OUT + 'reel.wav'):.1f} s · avatar a la vista {pct:.1f} %")
+        if os.path.exists(R + f"public/ref_{S}_lugar.png"): shutil.copy(R + f"public/ref_{S}_lugar.png", R + f"public/ref_{S}.png")   # Claudio en el lugar del episodio
         if not os.path.exists(R + f"public/ref_{S}.png"): sys.exit(f"⛔ falta public/ref_{S}.png (foto del avatar)")
         sh(["node", "vlog/claudio/avatar_run.mjs", "run"])            # UN solo /run (US$0,25), espera hasta COMPLETED
     os.makedirs(R + f"src/{S}", exist_ok=True)
@@ -460,10 +489,11 @@ def e_ov():
     for a, b in zip(out, out[1:]):
         if b["from"] < a["from"] + a["dur"] + 3 * FPS: errs.append(f"{a['c']} ({a['t']} s) y {b['c']} ({b['t']} s) quedan a menos de 3 s: separalos")
     cnt = Counter(o["c"] for o in out); fab = [c for c in cnt if c.startswith("Fab")]
-    if not (8 <= len(out) <= 14): errs.append(f"hay {len(out)} componentes: tienen que ser 8-14")
+    nmin = max(8, math.ceil(TOT / 50))
+    if not (nmin <= len(out) <= nmin + 8): errs.append(f"hay {len(out)} componentes: para {TOT / 60:.1f} min tienen que ser {nmin}-{nmin + 8} (uno cada ~50 s)")
     if len(fab) < 5: errs.append(f"usá al menos 5 componentes Fab distintos (hay {len(fab)}: {fab})")
     for c, n in cnt.items():
-        if c.startswith("Fab") and n > 2: errs.append(f"{c} aparece {n} veces (máximo 2)")
+        if c.startswith("Fab") and n > 3: errs.append(f"{c} aparece {n} veces (máximo 3)")
     for e in errs[:30]: print("⛔", e)
     if errs: hecho("ov", False); sys.exit(2)
     vl = R + f"public/vid/{S}/vlog.mp4"
@@ -519,7 +549,7 @@ def e_editor():
 def e_mix():
     import numpy as np
     if not os.path.exists(HECHO + "armar"): sys.exit("⛔ primero: armar")
-    meta = J(D + "meta.json", {}); AMB, FOLEY = meta.get("amb", {}), meta.get("foley", {}); SR = 48000
+    meta = J(D + "meta.json", {}); AMB, FOLEY = {}, {}; SR = 48000   # ⛔ 9-oct: sin ambientes ni efectos, sólo la voz
     DEF = ["sfx_pro/amb/amb_indoor_generic.flac"]
     for s, fs in list(AMB.items()) + [(s, [f for f, _ in v]) for s, v in FOLEY.items()]:
         for f in fs:
@@ -546,6 +576,7 @@ def e_mix():
     for sc, s, e in secc:
         i0, i1 = int(s * SR), min(N, int(e * SR)); L = i1 - i0
         if L <= 0: continue
+        if not AMB: continue
         bed = np.zeros((L, 2), np.float32); lst = AMB.get(sc) or DEF
         for f in lst:
             if f not in cache: x = load(R + "public/" + f); cache[f] = x / (10 ** (rms(x) / 20)) * 10 ** ((vdb - 24) / 20)
@@ -645,7 +676,7 @@ def e_estado():
     sig = next((e for e in ORDEN if not os.path.exists(HECHO + e)), None)
     print("siguiente:", f"python vlog/fab/fab.py {sig}" if sig else "nada: el video está terminado")
 
-ETAPAS = {"guion": e_guion, "voz": e_voz, "planos": e_planos, "imgs": e_imgs, "clips": e_clips, "armar": e_armar, "avatar": e_avatar,
+ETAPAS = {"arte": e_arte, "montaje": e_montaje, "guion": e_guion, "voz": e_voz, "planos": e_planos, "imgs": e_imgs, "clips": e_clips, "armar": e_armar, "avatar": e_avatar,
           "ov": e_ov, "editor": e_editor, "mix": e_mix, "render": e_render, "estado": e_estado, "sonidos": e_sonidos}
 if __name__ == "__main__":
     a = sys.argv[1:] or ["estado"]

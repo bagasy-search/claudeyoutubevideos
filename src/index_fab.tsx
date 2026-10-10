@@ -12,12 +12,13 @@ import AV from "./fab/data/avwin.json";
 const S: string = (META as any).slug;
 const TOTAL: number = (META as any).total || 300;
 const C: Record<string, React.FC<any>> = { ...FAB, ClBookPage, ClQRCard, ClCheck, ClVideoRef };
-const Av: React.FC<{ sf: number }> = ({ sf }) => {
+// avatar: alterna plano abierto / plano cerrado (punch-in) en cada pieza, como un editor con dos cámaras
+const Av: React.FC<{ sf: number; k: number }> = ({ sf, k }) => {
   const f = useCurrentFrame(); const { durationInFrames: d } = useVideoConfig();
   return (
     <AbsoluteFill style={{ backgroundColor: "#EFEBE0" }}>
       <OffthreadVideo src={staticFile(`avatar_clips/${S}/reel30.mp4`)} startFrom={sf} muted
-        style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1 + 0.035 * (f / Math.max(1, d))})`, transformOrigin: "50% 38%" }} />
+        style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${(k % 2 ? 1.22 : 1) + 0.035 * (f / Math.max(1, d))})`, transformOrigin: k % 2 ? "50% 30%" : "50% 38%" }} />
     </AbsoluteFill>
   );
 };
@@ -25,10 +26,10 @@ const Main: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     <OffthreadVideo src={staticFile(`vid/${S}/vlog.mp4`)} muted />
     {(((AV as any).win || []) as { n: string; ms: number; pieces: [number, number][]; off: number; lag?: number }[])
-      .flatMap((w, i) => (w.pieces || []).map((p, j) => ({ k: "av" + i + "_" + j, a: p[0], b: p[1], sf: w.off + (p[0] - w.ms) + (w.lag || 0) })))
+      .flatMap((w, i) => (w.pieces || []).map((p, j) => ({ k: "av" + i + "_" + j, n: j, a: p[0], b: p[1], sf: w.off + (p[0] - w.ms) + (w.lag || 0) })))
       .map((p) => (
         <Sequence key={p.k} from={Math.round(p.a * 30)} durationInFrames={Math.max(1, Math.round((p.b - p.a) * 30))}>
-          <Av sf={Math.max(0, Math.round(p.sf * 30))} />
+          <Av sf={Math.max(0, Math.round(p.sf * 30))} k={(p as any).n} />
         </Sequence>
       ))}
     {(OV as any[]).map((o, i) => { const K = C[o.c]; return K ? <Sequence key={i} from={o.from} durationInFrames={o.dur}><K {...o.props} /></Sequence> : null; })}
