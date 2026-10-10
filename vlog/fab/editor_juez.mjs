@@ -41,13 +41,14 @@ const HAIKU = process.env.FAB_LLM === "haiku";
 import { spawn } from "node:child_process";
 function pedirHaiku(img, texto) {
   return new Promise((res) => {
-    const envH = Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(ANTHROPIC_|CLAUDE_CODE_SUBAGENT|CLAUDE_CONFIG_DIR)/.test(k)));
+    const envH = Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(ANTHROPIC_|CLAUDE)/.test(k)));
     const abs = path.resolve(img);
     const args = ["-p", "--model", process.env.FAB_HAIKU_MODEL || "haiku", "--output-format", "json", "--no-session-persistence", "--strict-mcp-config",
       "--setting-sources", "", "--tools", "Read", "--allowedTools", "Read", "--max-turns", "4", "--add-dir", path.dirname(abs),
       "--system-prompt", "You are a senior video editor. You answer with JSON only."];
     fs.mkdirSync("D:/rtmp/fab/haiku_cwd", { recursive: true });
-    const ch = spawn("claude", args, { cwd: "D:/rtmp/fab/haiku_cwd", env: envH, shell: true });
+    const exe = process.env.FAB_CLAUDE_EXE || path.join(process.env.APPDATA, "npm/node_modules/@anthropic-ai/claude-code/bin/claude.exe");
+    const ch = spawn(exe, args, { cwd: "D:/rtmp/fab/haiku_cwd", env: envH });
     let out = ""; ch.stdout.on("data", (d) => (out += d)); ch.stderr.on("data", () => { });
     const to = setTimeout(() => ch.kill(), 300_000);
     ch.on("close", () => {
