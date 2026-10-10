@@ -23,9 +23,9 @@ if (fase === "img") {
   run(Object.keys(PL).filter((k) => !has("_set_" + k)).map((k) => ({ name: "_set_" + k, prompt: PL[k] + " Empty, nobody in the frame." + FOOD })), "set");
   run(ids.filter((id) => !has(id + "_a") && has("_set_" + plate(id))).map((id) => ({ name: id + "_a", ref_lugar: true, ref: [W + "anc/_set_" + plate(id) + ".png"],
     prompt: DET[id].first + " The same kitchen as the reference image: same stove, same wall, same light." + FOOD })), "a");
-  run(ids.filter((id) => !has(id + "_b") && has(id + "_a")).map((id) => ({ name: id + "_b", ref_lugar: true, ref: [W + "anc/" + id + "_a.png"],
+  run(ids.filter((id) => DET[id].last && !has(id + "_b") && has(id + "_a")).map((id) => ({ name: id + "_b", ref_lugar: true, ref: [W + "anc/" + id + "_a.png"],
     prompt: "Exactly the same shot as the reference image, same camera position and framing, same pan, same food, same kitchen, a few seconds later. " + DET[id].last + FOOD })), "b");
-  console.log("MEDIDO det img:", ids.filter((id) => has(id + "_a") && has(id + "_b")).length, "/", ids.length, "pares completos");
+  console.log("MEDIDO det img:", ids.filter((id) => has(id + "_a") && (!DET[id].last || has(id + "_b"))).length, "/", ids.length, "pares completos (sin last = sólo _a)");
 }
 if (fase === "clips") {
   const uri = (f) => "data:image/png;base64," + fs.readFileSync(f).toString("base64");

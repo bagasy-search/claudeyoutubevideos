@@ -315,6 +315,7 @@ function tramo(c) { // audio rellenado a segundo entero → mp3
   return { T, mp3 };
 }
 async function gen(id, body) {
+  if (fs.existsSync(CL + id + ".mp4")) return log("ya está", id); // relanzar tras un corte no repite lo hecho
   // envío + espera con la RESERVA DE CLAVES COMPARTIDA (factory/lib/agnes_pool.mjs): 1 envío/min por clave entre TODOS los procesos
   let r;
   try { r = await agnesSubmit({ model: MODEL, size: "720P", aspect_ratio: "16:9", ...body }, { tag: path.basename(DIR) + " " + id }); }

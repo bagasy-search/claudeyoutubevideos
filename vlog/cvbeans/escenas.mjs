@@ -176,7 +176,7 @@ export const STOCK = {
   c85: "ranch sunset", c86: "horses sunset",
   c87: "pinto beans", c88: "dry beans", c89: "family dinner", c90: "old ranch",
   c93: "dutch oven campfire", c94: "campfire cooking",
-  c100: "pinto beans", c101: "dried beans", c102: "grocery store",
+  c101: "dried beans", c102: "grocery store",
   c108: "branding cattle", c109: "mule", c110: "campfire pot", c111: "mule farm",
 };
 export const STOCK2 = {
@@ -189,7 +189,7 @@ export const STOCK2 = {
   c85: "corral sunset", c86: "ranch horses",
   c87: "beans bag", c88: "ham hock", c89: "tortillas", c90: "ranch kitchen",
   c93: "cast iron campfire", c94: "campfire coals",
-  c100: "beans closeup", c101: "beans pantry", c102: "supermarket aisle",
+  c101: "beans pantry", c102: "supermarket aisle",
   c108: "cowboy campfire", c109: "donkey", c110: "campfire coals", c111: "old mule",
 };
 const STOVE = "an old black cast-iron wood-burning cook stove, whitewashed adobe wall darkened with soot behind it";
@@ -198,9 +198,11 @@ export const DET = {
          prompt: "The heavy lid lifts away and steam drifts up off the swollen beans in the cloudy water; nothing else moves." },
   c42: { first: `Close view from above into ${POT} on ${STOVE}: swollen pinto beans in brown water, a smoked ham hock and two halves of a white onion just dropped in, two dried red chiles floating.`,
          prompt: "A weathered hand drops smashed garlic cloves and a spoon of lard into the pot; they sink among the beans, the onion halves bob." },
-  c55: { first: `Close view of a white enamel bowl on a long scarred wooden plank table full of ${BEANS_DONE}, a spoon resting in it, a stack of warm flour tortillas beside it, steam rising.`,
+  c55: { first: `Close view of a white enamel bowl on a long scarred wooden plank table full of ${BEANS_DONE}, a spoon resting in it, a stack of warm flour tortillas beside it, steam rising. Nobody in the frame, no hands, no people.`,
          prompt: "A spoon lifts a spoonful of creamy beans and broth out of the bowl, steam rising, and lowers it back." },
-  c24: { first: `Close view into ${POT} on ${STOVE}: pinto beans tumbling in a hard rolling boil, big bubbles, some bean skins split.`,
+  c100: { first: `Close view of a clear plastic one-pound bag of dry pinto beans lying on a long scarred wooden plank table: smooth, slightly shiny beans speckled pink and brown, all about the same size, a few loose beans spilled on the boards beside the bag. Nobody in the frame, no hands, no people.`,
+         prompt: "A few loose pinto beans roll slowly across the wooden boards and come to rest beside the bag; nothing else moves." },
+  c24: { first: `Close view into ${POT} on ${STOVE}: pinto beans tumbling in a hard rolling boil, big bubbles, some bean skins split. Nobody in the frame, no hands, no people.`,
          prompt: "The beans tumble and knock against each other in the hard rolling boil, big bubbles bursting." },
 };
 export const TOPIC = "pinto beans (frijoles de olla)";
