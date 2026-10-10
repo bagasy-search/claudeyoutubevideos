@@ -367,7 +367,7 @@ def e_montaje():
         try: e_clips()
         except SystemExit: pass
         e_armar()
-    hecho("montaje", True, f"{len(reh)} rehechos"); print("FIN montaje → siguiente: python vlog/fab/fab.py ov (si avatar terminó)")
+    borrar_desde("ov"); hecho("montaje", True, f"{len(reh)} rehechos"); print("FIN montaje → siguiente: python vlog/fab/fab.py ov (si avatar terminó)")
 
 # ════════════════════════════════════════ avatar ════════════════════════════════════════
 def ventanas():
@@ -479,7 +479,7 @@ def chk_obj(o, esq, donde, errs, imgs):
         if k in o: chk_prop(o[k], spec, f"{donde}.{k}", errs, imgs)
         elif spec[2]: errs.append(f"{donde}: falta '{k}'")
 def e_ov():
-    for e in ("avatar", "armar"):
+    for e in ("avatar", "armar", "montaje"):   # ⛔ después del montaje: si no, las camas salen del vlog viejo
         if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
     OV = J(D + "ov.json"); TOT = total_frames() / FPS; AV = J(R + "src/fab/data/avwin.json")["win"]
     errs, out, imgs = [], [], set()
