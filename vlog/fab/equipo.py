@@ -349,23 +349,57 @@ def plan():
             + "Every IMAGE prop (img, antes, despues) is NOT an id: write an object {\"foto\": \"exact English description of the photo it needs: who, doing what, which object, where, light; 40-70 words; no text, labels or screens\", "
             + "\"tam\": \"detalle|medio|general\", \"presenter\": true|false, \"face\": true|false}. File props (thumb, qr, cover, page) use the fixed file paths above. "
             + "Texts respect the character limits of the kit exactly.")
-    raw = ds.text_call(sys_p, user, "plan", model="deepseek-v4-pro", max_tokens=48000)
-    P = _json_de(raw)
-    if not P: open(D + "plan_mal.txt", "w", encoding="utf8").write(raw); sys.exit("⛔ plan: el editor jefe no devolvió JSON (vlog/<slug>/plan_mal.txt)")
+    if os.path.exists(D + "plan_raw.json") and "--rehacer" not in sys.argv: P = J(D + "plan_raw.json")   # el plan caro no se repite
+    else:
+        raw = ds.text_call(sys_p, user, "plan", model="deepseek-v4-pro", max_tokens=48000)
+        P = _json_de(raw)
+        if not P: open(D + "plan_mal.txt", "w", encoding="utf8").write(raw); sys.exit("⛔ plan: el editor jefe no devolvió JSON (vlog/<slug>/plan_mal.txt)")
+        W(D + "plan_raw.json", P)
+    # minuto 1 = sólo cortes y avatar: lo que el plan haya puesto ahí se va (salvo una referencia corta)
+    P["componentes"] = [o for o in P.get("componentes", []) if not ((at(str(o.get("frase", ""))) or 99) < 60 and not (o.get("c") == "ClVideoRef" and float(o.get("dur", 9)) <= 2))]
+    def espaciar(comps):
+        """dos componentes a menos de 3 s: el primero se acorta (≥4 s) o, si no alcanza, se va el segundo"""
+        cs = sorted([o for o in comps if isinstance(o, dict) and at(str(o.get("frase", ""))) is not None], key=lambda o: at(o["frase"]))
+        out = []
+        for o in cs:
+            if out:
+                p_ = out[-1]; ta, tb = at(p_["frase"]), at(o["frase"])
+                if tb < ta + float(p_.get("dur", 6)) + 3:
+                    if tb - ta - 3 >= 4: p_["dur"] = round(tb - ta - 3, 1)
+                    else: continue
+            out.append(o)
+        return out
     for ronda in range(4):   # el plan se VALIDA con las mismas compuertas de la fábrica y se corrige hasta que pase
-        W(D + "avatar.json", P.get("avatar", []))
+        P["componentes"] = espaciar(P.get("componentes", []))
+        reg = []; ov = [{**o, "props": _fotos_de(o.get("props", {}), reg)} for o in P["componentes"]]
+        W(D + "avatar.json", P.get("avatar", [])); W(D + "ov.json", ov)   # el avatar se adapta solo a los componentes y al tope del canal
         win, pct, ea = fab.ventanas()
-        reg = []; ov = [{**o, "props": _fotos_de(o.get("props", {}), reg)} for o in P.get("componentes", [])]
         _, eo, _ = fab.validar_ov(ov, win, img=False)
         errs = ea + eo
         print(f"   plan ronda {ronda + 1}: avatar {pct:.1f} % · {len(ov)} componentes · {len(reg)} fotos para componentes · {len(errs)} problemas", flush=True)
-        if not errs: break
-        if ronda == 3: break
+        if not errs or ronda == 3: break
+        nmin = max(8, math.ceil(TOT / 50))
+        if len(ov) < nmin:   # faltan componentes: el editor jefe agrega en los huecos libres (sin componente ni avatar)
+            ocup = sorted([(at(o["frase"]), at(o["frase"]) + float(o.get("dur", 6))) for o in P["componentes"]] + [(w["ms"], w["me"]) for w in win])
+            huecos, t0 = [], 60.0
+            for a_, b_ in ocup:
+                if a_ - t0 > 16: huecos.append(f"{t0 + 3:.0f}-{a_ - 3:.0f} s")
+                t0 = max(t0, b_)
+            if TOT - t0 > 16: huecos.append(f"{t0 + 3:.0f}-{TOT - 2:.0f} s")
+            raw = ds.text_call(sys_p, user + "\n\n## YOUR PLAN SO FAR\n" + json.dumps(P["componentes"], ensure_ascii=False)
+                               + f"\n\nIt has {len(ov)} components and needs at least {nmin + 2}. Add {nmin + 2 - len(ov)} NEW components, each one entering at a phrase "
+                               + f"inside these free gaps (seconds): {', '.join(huecos)}. Choose the moments that most deserve one. "
+                               + 'Return ONLY {"nuevos": [...]} with the same format.', "plan_mas", model="deepseek-v4-pro", max_tokens=24000)
+            n_ = (_json_de(raw) or {}).get("nuevos", [])
+            if isinstance(n_, list): P["componentes"] += [o for o in n_ if isinstance(o, dict)]
+            continue
         fix = ds.json_call("You fix an edit plan so that it passes the factory checks. Change ONLY what the errors require; keep everything else identical. Reply with JSON only.",
-                           "ERRORS:\n" + "\n".join(errs[:40]) + f"\n\nSCRIPT:\n" + "\n".join(f"[{g['sec']}] {g['a']}-{g['b']} s: {g['texto']}" for g in G)
-                           + "\n\nPLAN (avatar + componentes):\n" + json.dumps({"avatar": P.get("avatar", []), "componentes": P.get("componentes", [])}, ensure_ascii=False)
-                           + '\n\nReturn {"avatar": [...], "componentes": [...]} complete and fixed (image props stay as {"foto": ...} objects).', "plan_fix", max_tokens=16000)
-        if isinstance(fix, dict) and fix.get("componentes"): P["avatar"], P["componentes"] = fix.get("avatar", P["avatar"]), fix["componentes"]
+                           "ERRORS:\n" + "\n".join(errs[:40]) + "\n\nSCRIPT:\n" + "\n".join(f"[{g['sec']}] {g['a']}-{g['b']} s: {g['texto']}" for g in G)
+                           + "\n\nCOMPONENTS:\n" + json.dumps(P["componentes"], ensure_ascii=False)
+                           + '\n\nReturn {"componentes": [...]} complete and fixed (image props stay as {"foto": ...} objects).', "plan_fix", max_tokens=16000)
+        if isinstance(fix, dict) and isinstance(fix.get("componentes"), list) and fix["componentes"]: P["componentes"] = fix["componentes"]
+        else: print("   (el corrector no devolvió componentes)", flush=True)
+    W(D + "plan_raw.json", P)
     # fotos de los componentes: un plano más cada una, en el lugar/hora de la sección donde entra el componente
     segs = fab.tramos(); fotos_c = []
     for f in reg:

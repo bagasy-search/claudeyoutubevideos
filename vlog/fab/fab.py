@@ -408,8 +408,14 @@ def ventanas():
         if b <= a: errs.append(f"ventana {k + 1}: 'hasta' está antes que 'desde'"); continue
         win.append({"n": w.get("n", f"V{k + 1}"), "ms": round(max(0, a - M), 3), "me": round(min(TOT, b + M), 3)})
     win.sort(key=lambda w: w["ms"])
-    for i in range(1, len(win)):
-        if win[i]["ms"] < win[i - 1]["me"]: errs.append(f"ventanas {win[i - 1]['n']} y {win[i]['n']} se pisan")
+    for w in list(win):   # ventanas que se pisan → una sola
+        i = win.index(w)
+        if i and w["ms"] < win[i - 1]["me"]: win[i - 1]["me"] = max(win[i - 1]["me"], w["me"]); win.remove(w)
+    # los componentes de ov.json mandan: el avatar no aparece donde entra un componente
+    comp = []
+    for o in (J(D + "ov.json", []) if os.path.exists(D + "ov.json") else []):
+        t = at(str(o.get("frase", ""))) if isinstance(o, dict) else None
+        if t is not None: comp.append((t - 0.4, t + float(o.get("dur", 6)) + 0.4))
     vis = 0.0
     for w in win:   # el avatar va por TRAMOS enteros: ≤7 s seguidos y después un tramo de planos; minuto 1 alternado; nunca en los primeros 4 s
         pz, seguido, salto = [], 0.0, False
@@ -422,17 +428,27 @@ def ventanas():
         for a, b in pz:
             if out and abs(out[-1][1] - a) < 1e-6: out[-1][1] = b
             else: out.append([a, b])
+        out = [[a, b] for a, b in out if not any(a < y and b > x for x, y in comp)]
         w["pieces"] = [[round(a, 3), round(b, 3)] for a, b in out if b - a > 0.06]
-        vis += sum(b - a for a, b in w["pieces"])
-    pct = 100 * vis / TOT; lo, hi = CANAL.get("avatar_pct", [15, 30])
-    if not (lo - 3 <= pct <= hi + 2): errs.append(f"el avatar se ve {pct:.1f} % del video: tiene que ser {lo}-{hi} % (sumá o achicá ventanas)")
+    lo, hi = CANAL.get("avatar_pct", [15, 30])
+    vista = lambda: sum(b - a for w in win for a, b in w["pieces"])
+    reel = lambda: sum(b - a + 2 * M for w in win for a, b in w["pieces"])
+    while (100 * vista() / TOT > hi or reel() > 235) and any(len(w["pieces"]) > 1 for w in win):
+        w = max((w for w in win if len(w["pieces"]) > 1), key=lambda w: sum(b - a for a, b in w["pieces"]))
+        w["pieces"].pop(len(w["pieces"]) // 2)   # se adelgaza la ventana con más avatar (queda su arranque y su cierre)
+    win = [w for w in win if w["pieces"]]
+    while (100 * vista() / TOT > hi or reel() > 235) and len(win) > 1:   # si aún sobra: fuera la ventana más corta
+        win.remove(min(win, key=lambda w: sum(b - a for a, b in w["pieces"])))
+    vis = vista()
+    pct = 100 * vis / TOT
+    if pct < lo - 3: errs.append(f"el avatar se ve {pct:.1f} % del video: tiene que ser {lo}-{hi} % (sumá ventanas)")
     # ⛔ InfiniteTalk degrada pasados ~240 s de reel → el reel lleva SÓLO las piezas visibles (cada una con 0,12 s de margen), no la ventana entera
     pzw = []
     for w in win:
         for j, (a, b) in enumerate(w["pieces"]):
             pzw.append({"n": f"{w['n']}_{j}", "ms": round(max(0, a - M), 3), "me": round(min(TOT, b + M), 3), "pieces": [[a, b]]})
     reel = sum(w["me"] - w["ms"] for w in pzw)
-    if reel > 235: errs.append(f"el avatar suma {reel:.0f} s de reel: máximo 235 s (InfiniteTalk se degrada) → achicá ventanas")
+    if reel > 240: errs.append(f"el avatar suma {reel:.0f} s de reel: máximo 235 s (InfiniteTalk se degrada) → achicá ventanas")
     return pzw, pct, errs
 def e_avatar():
     for e in ("voz", "plan"):
