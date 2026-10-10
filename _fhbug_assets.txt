@@ -55,12 +55,12 @@ pages/fh/p1.jpg
 img/fhbug/b051_1.jpg
 pages/fh/p48.jpg
 img/fhbug/b055_1.jpg
+img/fhbug/b059_1.jpg
 img/fhbug/b057_1.jpg
 broll/fhbug_st/b057_1.mp4
 img/fhbug/x09.jpg
 broll/fhbug_st/x09.mp4
 pages/fh/p47.jpg
-img/fhbug/b059_1.jpg
 img/fhbug/e061_1.jpg
 img/fhbug/b063_1.jpg
 broll/fhbug_st/b063_1.mp4
@@ -68,11 +68,11 @@ img/fhbug/g10.jpg
 img/fhbug/l064_0.jpg
 img/fhbug/g11.jpg
 img/fhbug/b065_1.jpg
+img/fhbug/b072_1.jpg
 pages/fh/p46.jpg
 pages/fh/p45.jpg
 img/fhbug/b070_1.jpg
 broll/fhbug_st/b070_1.mp4
-img/fhbug/b072_1.jpg
 img/fhbug/x12.jpg
 img/fhbug/e073_0.jpg
 img/fhbug/x13.jpg
@@ -87,8 +87,8 @@ broll/fhbug_st/b077_1.mp4
 img/fhbug/x17.jpg
 broll/fhbug_st/x17.mp4
 img/fhbug/b078_1.jpg
-img/fhbug/e080_1.jpg
 img/fhbug/x18.jpg
+img/fhbug/e080_1.jpg
 img/fhbug/b081_1.jpg
 broll/fhbug_st/b081_1.mp4
 img/fhbug/b086_1.jpg
