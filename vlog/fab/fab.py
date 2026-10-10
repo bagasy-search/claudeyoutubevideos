@@ -19,7 +19,7 @@
 # Las etapas (fondo) se lanzan solas en segundo plano y vuelven enseguida: después `esperar <etapa>` (repetir hasta que diga FIN).
 import os, re, sys, json, time, glob, shutil, subprocess, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from comun import R, S, D, V3, FPS, J, W, dur, frames, nw, at, mapear, cortes, palabras, total_frames
+from comun import R, S, D, V3, FPS, J, W, dur, frames, nw, at, mapear, cortes, palabras, total_frames, CANAL, IDIOMA, PROT
 
 LOG = D + "logs/"; HECHO = D + ".hecho/"
 os.makedirs(LOG, exist_ok=True); os.makedirs(HECHO, exist_ok=True)
@@ -62,14 +62,16 @@ def e_guion():
     sh(["python", "vlog/claudio/mk_guion.py"])
     texto = " ".join(re.sub(r"^\[[^\]]*\]\s*", "", l) for l in fil)
     ch = len(texto); meta = J(D + "meta.json", {}); mins = float(meta.get("minutos", 12))
-    est = ch / 14.0 / 60
-    vos = sorted(set(m.group(0).lower() for m in VOSEO.finditer(texto)))
+    cps = float(CANAL.get("cps", 14.0)); est = ch / cps / 60
+    vos = sorted(set(m.group(0).lower() for m in VOSEO.finditer(texto))) if IDIOMA == "es" else []
+    proh = sorted(set(m.group(0).lower() for x in CANAL.get("prohibidas", []) for m in re.finditer(x, texto, re.I)))
     largos = [i + 1 for i, l in enumerate(fil) if len(l) > 900]
     print(f"párrafos {len(fil)} · {ch} caracteres · ~{est:.1f} min de voz (pedido {mins:g}) · secciones {len(orden)}: {' '.join(orden)}")
     prob = []
     if vos: prob.append(f"palabras de voseo/regionales (usa tú neutro: tienes, mira, aquí, refrigerador, fregadero, llave): {vos}")
+    if proh: prob.append(f"palabras PROHIBIDAS en este canal (sacalas o reescribí la frase): {proh}")
     if largos: prob.append(f"párrafos de más de 900 caracteres (partilos): líneas {largos}")
-    if not (0.8 * mins <= est <= 1.25 * mins): prob.append(f"largo fuera de rango: {est:.1f} min para {mins:g} pedidos (14 car/s)")
+    if not (0.8 * mins <= est <= 1.25 * mins): prob.append(f"largo fuera de rango: {est:.1f} min para {mins:g} pedidos ({cps:g} car/s)")
     if len(orden) < 6: prob.append("menos de 6 secciones: separá el guion en bloques (gancho, problema, cada arreglo, cierre)")
     for p in prob: print("⛔", p)
     if prob: hecho("guion", False); sys.exit(2)
@@ -95,10 +97,10 @@ def e_arte():
 def e_voz():
     if not os.path.exists(HECHO + "guion"): sys.exit("⛔ primero: guion")
     meta = J(D + "meta.json", {})
-    sh(["python", "vlog/claudio/voz.py", "--voice", meta.get("voz", "claudio_definitiva")])
+    sh(["python", "vlog/claudio/voz.py", "--voice", meta.get("voz") or CANAL.get("voz", "claudio_definitiva"), "--lang", IDIOMA, "--cps", str(CANAL.get("cps", 14.0))])
     raw = R + f"public/{S}_raw.wav"
     if not os.path.exists(raw): sys.exit("⛔ voz.py no dejó el máster")
-    sh(f'modal run vlog/claudio/modal_asr_blocks.py --files public/{S}_raw.wav --out _v3/{S}_asr_raw.json')
+    sh(f'modal run vlog/claudio/modal_asr_blocks.py --files public/{S}_raw.wav --out _v3/{S}_asr_raw.json --lang {IDIOMA}')
     d = J(V3 + f"{S}_asr_raw.json"); ws = d[list(d)[0]]["words"]
     W(R + f"public/captions_{S}.json", [{"text": w["w"].strip(), "startMs": round(w["s"] * 1000), "endMs": round(w["e"] * 1000)} for w in ws])
     r = sh(["python", "vlog/claudio/align.py"], capture_output=True); print(r.stdout[-1500:])
@@ -162,7 +164,7 @@ def tramos():
     gaps = [((m(WM[i]["e"]) + m(WM[i + 1]["s"])) / 2,) for i in range(len(WM) - 1) if sec[i + 1] == sec[i] and m(WM[i + 1]["s"]) - m(WM[i]["e"]) > 0.05]
     bounds = [0.0] + [(m(WM[i - 1]["e"]) + m(WM[i]["s"])) / 2 for i in range(1, len(WM)) if sec[i] != sec[i - 1]] + [T]
     bsec = [sec[0]] + [sec[i] for i in range(1, len(WM)) if sec[i] != sec[i - 1]]
-    obj = lambda t: 1.95 if t < 60 else 2.7
+    obj = lambda t: 1.8 if t < 60 else 2.7
     segs = []
     for k in range(len(bounds) - 1):
         A, B, t = bounds[k], bounds[k + 1], bounds[k]
@@ -400,16 +402,23 @@ def ventanas():
             a, b = max(w["ms"], s["a"]), min(w["me"], s["b"])
             if a < 4.0 or salto: salto = False; seguido = 0.0; continue
             pz.append([a, b]); seguido += b - a
-            if seguido >= (2.0 if a < 60 else 6.0): salto = True
+            if seguido >= (2.0 if a < 60 else 4.5): salto = True
         out = []
         for a, b in pz:
             if out and abs(out[-1][1] - a) < 1e-6: out[-1][1] = b
             else: out.append([a, b])
         w["pieces"] = [[round(a, 3), round(b, 3)] for a, b in out if b - a > 0.06]
         vis += sum(b - a for a, b in w["pieces"])
-    pct = 100 * vis / TOT
-    if not (12 <= pct <= 32): errs.append(f"el avatar se ve {pct:.1f} % del video: tiene que ser 15-30 % (sumá o achicá ventanas)")
-    return win, pct, errs
+    pct = 100 * vis / TOT; lo, hi = CANAL.get("avatar_pct", [15, 30])
+    if not (lo - 3 <= pct <= hi + 2): errs.append(f"el avatar se ve {pct:.1f} % del video: tiene que ser {lo}-{hi} % (sumá o achicá ventanas)")
+    # ⛔ InfiniteTalk degrada pasados ~240 s de reel → el reel lleva SÓLO las piezas visibles (cada una con 0,12 s de margen), no la ventana entera
+    pzw = []
+    for w in win:
+        for j, (a, b) in enumerate(w["pieces"]):
+            pzw.append({"n": f"{w['n']}_{j}", "ms": round(max(0, a - M), 3), "me": round(min(TOT, b + M), 3), "pieces": [[a, b]]})
+    reel = sum(w["me"] - w["ms"] for w in pzw)
+    if reel > 235: errs.append(f"el avatar suma {reel:.0f} s de reel: máximo 235 s (InfiniteTalk se degrada) → achicá ventanas")
+    return pzw, pct, errs
 def e_avatar():
     if not os.path.exists(HECHO + "voz"): sys.exit("⛔ primero: voz")
     win, pct, errs = ventanas()
@@ -428,7 +437,8 @@ def e_avatar():
         sh(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", OUT + "concat.txt", "-c:a", "pcm_s16le", OUT + "reel.wav"], quiet=True)
         W(V3 + f"{S}_avwin.json", {"reel": dur(OUT + "reel.wav"), "win": win})
         print(f"{len(win)} ventanas · reel {dur(OUT + 'reel.wav'):.1f} s · avatar a la vista {pct:.1f} %")
-        if os.path.exists(R + f"public/ref_{S}_lugar.png"): shutil.copy(R + f"public/ref_{S}_lugar.png", R + f"public/ref_{S}.png")   # Claudio en el lugar del episodio
+        if os.path.exists(R + f"public/ref_{S}_lugar.png"): shutil.copy(R + f"public/ref_{S}_lugar.png", R + f"public/ref_{S}.png")   # el protagonista en el lugar del episodio
+        elif CANAL.get("avatar_ref") and not os.path.exists(R + f"public/ref_{S}.png"): shutil.copy(CANAL["avatar_ref"], R + f"public/ref_{S}.png")   # foto fija del canal
         if not os.path.exists(R + f"public/ref_{S}.png"): sys.exit(f"⛔ falta public/ref_{S}.png (foto del avatar)")
         sh(["node", "vlog/claudio/avatar_run.mjs", "run"])            # UN solo /run (US$0,25), espera hasta COMPLETED
     os.makedirs(R + f"src/{S}", exist_ok=True)
@@ -461,7 +471,7 @@ def chk_prop(v, spec, donde, errs, imgs):
     if tipo == "txt":
         if not isinstance(v, str) or not v.strip(): errs.append(f"{donde}: tiene que ser texto"); return
         if len(v) > lim: errs.append(f"{donde}: \"{v}\" tiene {len(v)} caracteres (máximo {lim})")
-        if VOSEO.search(v): errs.append(f"{donde}: \"{v}\" tiene voseo/regionalismo ('{VOSEO.search(v).group(0)}'): tú neutro")
+        if IDIOMA == "es" and VOSEO.search(v): errs.append(f"{donde}: \"{v}\" tiene voseo/regionalismo ('{VOSEO.search(v).group(0)}'): tú neutro")
     elif tipo == "img":
         if not isinstance(v, str) or not (os.path.exists(R + f"public/img/{S}/{v}.png") or ("/" in v and os.path.exists(R + "public/" + v))): errs.append(f"{donde}: '{v}' no es el id de un plano con foto")
         else: imgs.add(v)
@@ -516,8 +526,9 @@ def e_ov():
     nmin = max(8, math.ceil(TOT / 50))
     if not (nmin <= len(out) <= nmin + 8): errs.append(f"hay {len(out)} componentes: para {TOT / 60:.1f} min tienen que ser {nmin}-{nmin + 8} (uno cada ~50 s)")
     if len(fab) < 5: errs.append(f"usá al menos 5 componentes Fab distintos (hay {len(fab)}: {fab})")
+    cap = max(3, math.ceil(TOT / 300))   # 3 por cada 15 min de video
     for c, n in cnt.items():
-        if c.startswith("Fab") and n > 3: errs.append(f"{c} aparece {n} veces (máximo 3)")
+        if c.startswith("Fab") and n > cap: errs.append(f"{c} aparece {n} veces (máximo {cap})")
     for e in errs[:30]: print("⛔", e)
     if errs: hecho("ov", False); sys.exit(2)
     vl = R + f"public/vid/{S}/vlog.mp4"
@@ -525,7 +536,7 @@ def e_ov():
         nf = o["dur"] + 4; o["props"] = {**o["props"], "bed": f"vid/{S}/bed_{n}.mp4#{nf}"}
         sh(["ffmpeg", "-v", "error", "-y", "-ss", f"{o['t']:.3f}", "-i", vl, "-frames:v", str(nf), "-an", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-bf", "0", "-pix_fmt", "yuv420p", R + f"public/vid/{S}/bed_{n}.mp4"], quiet=True)
     W(R + "src/fab/data/ov.json", out)
-    W(R + "src/fab/data/meta.json", {"slug": S, "total": total_frames()})
+    W(R + "src/fab/data/meta.json", {"slug": S, "total": total_frames(), "lang": IDIOMA})
     pct = 100 * sum(o["dur"] for o in out) / FPS / TOT
     print(f"✓ {len(out)} componentes ({pct:.1f} % del video), {len(fab)} tipos Fab, ninguno pisa avatar")
     for o in out: print(f"   {o['t']:7.1f} s  {o['c']:16s} {o['dur'] / FPS:4.1f} s  «{o['frase']}»")

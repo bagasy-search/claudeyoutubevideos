@@ -75,7 +75,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
   );
 };
 
-export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string }> = ({ page, qr, stamp = "Gratis en la página", pageNo = 9, bed }) => {
+export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string; pagLabel?: string; hint?: string }> = ({ page, qr, stamp = "Gratis en la página", pageNo = 9, bed, pagLabel = "PÁG.", hint = "apunte la cámara acá" }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2, 18), pq = pop(f, fps, 16);
   const y = interpolate(p, [0, 1], [-1000, 0]), r = interpolate(p, [0, 1], [-14, -3]);
@@ -88,13 +88,13 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
           <Img src={staticFile(page)} style={{ width: 760, display: "block" }} />
         </div>
         <Tape x={300} y={-18} rot={4} w={160} />
-        <div style={{ position: "absolute", right: -40, bottom: 40, background: CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 40, padding: "6px 22px", borderRadius: 10, rotate: "4deg", boxShadow: `0 10px 20px ${CL.shadow}` }}>PÁG. {pageNo}</div>
+        <div style={{ position: "absolute", right: -40, bottom: 40, background: CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 40, padding: "6px 22px", borderRadius: 10, rotate: "4deg", boxShadow: `0 10px 20px ${CL.shadow}` }}>{pagLabel} {pageNo}</div>
       </div>
       {qr ? (
         <div style={{ position: "absolute", right: 150, top: 230, opacity: Math.min(out, pq), translate: `${(1 - pq) * 120}px 0`, rotate: "3deg" }}>
           <Card style={{ padding: 26, borderTop: `14px solid ${CL.yellow}`, textAlign: "center" }}>
             <Img src={staticFile(qr)} style={{ width: 420, height: 420, display: "block", imageRendering: "pixelated" }} />
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>apunte la cámara acá</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>{hint}</div>
           </Card>
         </div>
       ) : null}

@@ -8,12 +8,11 @@ El brief del episodio está en `vlog/<slug>/brief.md` (el slug ya está fijado).
 
 ## Orden
 1. `fab.py guionista` (fondo, ~5 min) → `esperar guionista`. Leé `vlog/<slug>/guion.txt` entero UNA vez: si algo contradice el brief
-   (datos, personajes, menciones del Manual) corregí esa línea a mano. Después `fab.py guion` (valida) y escribí `meta.json`:
-   `{"titulo": "...", "minutos": 15, "voz": "claudio_definitiva", "canal": "fumigador"}`.
+   (datos, personajes, menciones del Manual) corregí esa línea a mano. Después `fab.py guion` (valida). `meta.json` ya viene hecho (canal, voz, minutos, idioma): agregale sólo `"titulo"` y no toques lo demás.
 2. `fab.py voz` y `fab.py arte` (los dos en fondo, a la vez) → `esperar voz`, `esperar arte`.
 3. Escribí `avatar.json` (ver abajo) → `fab.py avatar` (fondo, ~25 min en RunPod; NO lo esperes ahora).
 4. `fab.py planos` (fondo: el director de fotografía escribe los planos) → `esperar planos`.
-5. `fab.py imgs` (fondo: fotos con la casa siempre igual; Claudio con su cara) → `esperar imgs` · `fab.py clips` (fondo) → `esperar clips`.
+5. `fab.py imgs` (fondo: fotos con la casa siempre igual; el protagonista con su cara) → `esperar imgs` · `fab.py clips` (fondo) → `esperar clips`.
    Mientras esperás, escribí `ov.json` (necesita sólo el guion).
 6. `fab.py armar` · `fab.py montaje` (fondo: el editor mira cada minuto y rehace lo flojo) → `esperar montaje` · `esperar avatar`.
 7. `fab.py ov` (hasta ✓) · `fab.py editor` (fondo) → `esperar editor`: si marca defectos, arreglá ov.json y repetí `ov` + `editor`.
@@ -21,13 +20,13 @@ El brief del episodio está en `vlog/<slug>/brief.md` (el slug ya está fijado).
    Terminado: respondé con el link del mp4 y una línea. Nada sigue corriendo después de tu respuesta: no respondas antes del FIN.
 `esperar` vuelve cada ~9 min: llamalo de nuevo (cada llamada es barata). No uses sleep ni mires procesos.
 
-## avatar.json — cuando Claudio habla a cámara (RunPod, UN solo /run, US$0,25)
+## avatar.json — cuando el protagonista habla a cámara (RunPod, UN solo /run, US$0,25)
 ```json
 [{"n": "QUIEN", "desde": "Soy Claudio", "hasta": "qué arreglo te toca."}]
 ```
 Frases EXACTAS del guion (inicio y fin). Los momentos de opinión, advertencia, la presentación, las menciones del Manual y el cierre.
 NO el gancho (los primeros segundos son imagen). La fábrica corta solo el avatar cada ~6 s con planos y alterna plano abierto/cerrado.
-Sumá ventanas hasta que `fab.py avatar` diga 15-30 %.
+Sumá o achicá ventanas hasta que `fab.py avatar` no marque ⛔ (el % y el máximo de segundos dependen del canal).
 
 ## ov.json — los componentes (ver KIT.md)
-Uno cada ~50 s (para 15 min: 18-26), donde el guion EXPLICA algo (un número, un procedimiento, un lugar, una comparación, un ciclo).
+Uno cada ~50 s (15 min: 18-26 · 30 min: 36-44), en el idioma del video, donde el guion EXPLICA algo (un número, un procedimiento, un lugar, una comparación, un ciclo).

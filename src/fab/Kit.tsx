@@ -16,6 +16,9 @@ import { Mouse } from "../claudio/ClRaton";
 import META from "./data/meta.json";
 
 const SLUG: string = (META as any).slug;
+// idioma del canal (meta.json "lang": "es" | "en"): los rótulos fijos del kit salen en ese idioma
+const EN = (META as any).lang === "en";
+export const tr = (es: string, en: string) => (EN ? en : es);
 // "s012" → foto del plano; "img/x.jpg" → archivo de public tal cual
 export const imgSrc = (k?: string) => (!k ? undefined : k.includes("/") ? k : `img/${SLUG}/${k}.png`);
 
@@ -165,7 +168,7 @@ export const FabAltura: React.FC<{ title?: string; max?: number; marcas: { cm: n
     <Scene bed={bed} seed={41} dim={0.4}>
       <svg width={1920} height={1080} style={{ position: "absolute" }}>
         <line x1={300} y1={bot} x2={1620} y2={bot} stroke={CL.ink} strokeWidth={6} opacity={0.5} />
-        <text x={310} y={bot + 50} fontFamily={LABEL} fontSize={34} fill={CL.ink} letterSpacing={3} opacity={0.75}>PISO</text>
+        <text x={310} y={bot + 50} fontFamily={LABEL} fontSize={34} fill={CL.ink} letterSpacing={3} opacity={0.75}>{tr("PISO", "FLOOR")}</text>
         <g transform={`translate(${X} 0) scale(1 ${0.2 + 0.8 * pt})`} style={{ transformOrigin: `0px ${bot}px` }}>
           <rect x={-46} y={top - 20} width={92} height={bot - top + 20} fill="#F2C230" stroke="#9A7A10" strokeWidth={4} rx={6} />
           {Array.from({ length: Math.floor(max / 10) + 1 }, (_, i) => {
@@ -204,8 +207,8 @@ export const FabCalendario: React.FC<{ title?: string; cada: number; dias?: numb
             {Array.from({ length: 9 }, (_, i) => <div key={i} style={{ width: 18, height: 50, borderRadius: 9, background: "linear-gradient(90deg,#8D8D8D,#E4E4E4,#8D8D8D)" }} />)}
           </div>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: `5px solid ${CL.navy}`, paddingBottom: 8, marginBottom: 12 }}>
-            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: fit(title || "ESTE MES", 640, 64, "serif"), color: CL.ink }}>{title || "Este mes"}</div>
-            <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: CL.red, letterSpacing: 2 }}>CADA {cada} DÍAS</div>
+            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: fit(title || tr("ESTE MES", "THIS MONTH"), 640, 64, "serif"), color: CL.ink }}>{title || tr("Este mes", "This month")}</div>
+            <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, color: CL.red, letterSpacing: 2 }}>{tr(`CADA ${cada} DÍAS`, `EVERY ${cada} DAYS`)}</div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: `repeat(7, ${cw}px)` }}>
             {Array.from({ length: dias }, (_, i) => {
@@ -236,7 +239,7 @@ export const FabPrecio: React.FC<{ tienda: { txt: string; p: string }; casa: { t
       <div style={{ position: "absolute", left: 560, top: 140, translate: "-50% 0", rotate: "-3deg", opacity: clamp01(pa * 1.6) }}>
         <div style={{ width: 560, clipPath: `inset(0 0 ${100 - 100 * ease(pr)}% 0)` }}>
         <div style={{ width: 560, background: "#FBFBF7", boxShadow: `0 30px 50px ${CL.shadow}`, padding: "30px 40px", fontFamily: "monospace", color: "#2A2A2A", clipPath: "polygon(0 0,100% 0,100% 98%,95% 100%,90% 98%,85% 100%,80% 98%,75% 100%,70% 98%,65% 100%,60% 98%,55% 100%,50% 98%,45% 100%,40% 98%,35% 100%,30% 98%,25% 100%,20% 98%,15% 100%,10% 98%,5% 100%,0 98%)" }}>
-          <div style={{ textAlign: "center", fontSize: 42, fontWeight: 700, letterSpacing: 6 }}>TIENDA</div>
+          <div style={{ textAlign: "center", fontSize: 42, fontWeight: 700, letterSpacing: 6 }}>{tr("TIENDA", "STORE")}</div>
           <div style={{ textAlign: "center", fontSize: 24, opacity: 0.7, marginBottom: 30 }}>**************************</div>
           <div style={{ fontSize: fit(tienda.txt, 480, 48, "label", 28), fontWeight: 700, lineHeight: 1.2 }}>{tienda.txt}</div>
           <div style={{ fontSize: 24, opacity: 0.6, margin: "20px 0" }}>--------------------------------</div>
@@ -373,7 +376,7 @@ export const FabMapa: React.FC<{ title?: string; note?: string; pins: { lugar: s
       <div style={{ position: "absolute", left: 960, top: 560, translate: "-50% -50%", scale: String(0.86 + 0.14 * p), rotate: `${-1.2 + 0.9 * p}deg` }}>
         <Card style={{ width: 1580, padding: "28px 50px 34px", background: "#FFFDF6" }}>
           <div style={{ display: "flex", alignItems: "baseline", gap: 26, marginBottom: 6, whiteSpace: "nowrap" }}>
-            <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: fit(title || "LA CASA", 640, 66, "label"), color: CL.navy, letterSpacing: 3, textTransform: "uppercase" }}>{title || "La casa"}</div>
+            <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: fit(title || tr("LA CASA", "THE HOUSE"), 640, 66, "label"), color: CL.navy, letterSpacing: 3, textTransform: "uppercase" }}>{title || tr("La casa", "The house")}</div>
             {note ? <div style={{ fontFamily: HAND, fontSize: fit(note, 760, 56, "hand"), color: CL.red, rotate: "-2deg", opacity: lin(f, 16, 28) }}>{note}</div> : null}
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 40 }}>
@@ -387,9 +390,9 @@ export const FabMapa: React.FC<{ title?: string; note?: string; pins: { lugar: s
             <path d="M40 300 H 880 M560 60 V 600 M560 450 H 880" {...wall} strokeWidth={6} />
             <path d="M880 60 H 1120 V 600 H 880 M880 330 H 1120" {...wall} />
             <g opacity={draw} fontFamily={LABEL} fontSize={30} fill={CL.inkSoft} letterSpacing={2}>
-              <text x={70} y={290}>COCINA</text><text x={600} y={290}>COMEDOR</text><text x={70} y={585}>SALA</text>
-              <text x={600} y={440}>BAÑO</text><text x={600} y={590}>DORMITORIO</text><text x={900} y={320}>LAVADERO</text><text x={900} y={585}>GARAJE</text>
-              <text x={-30} y={40} fontSize={24}>PATIO</text>
+              <text x={70} y={290}>{tr("COCINA", "KITCHEN")}</text><text x={600} y={290}>{tr("COMEDOR", "DINING")}</text><text x={70} y={585}>{tr("SALA", "LIVING")}</text>
+              <text x={600} y={440}>{tr("BAÑO", "BATH")}</text><text x={600} y={590}>{tr("DORMITORIO", "BEDROOM")}</text><text x={900} y={320}>{tr("LAVADERO", "LAUNDRY")}</text><text x={900} y={585}>{tr("GARAJE", "GARAGE")}</text>
+              <text x={-30} y={40} fontSize={24}>{tr("PATIO", "YARD")}</text>
             </g>
             <g opacity={draw} stroke={CL.navy} strokeWidth={5} fill="none">
               <path d="M260 600 h 80" stroke="#FFFDF6" strokeWidth={12} /><path d="M260 600 a 80 80 0 0 1 80 -80" />
@@ -432,7 +435,7 @@ export const FabMapa: React.FC<{ title?: string; note?: string; pins: { lugar: s
 };
 
 // ── 10. FabAntesDespues: la misma cosa antes y después; una cortina que barre de izquierda a derecha ──────────
-export const FabAntesDespues: React.FC<{ antes: string; despues: string; a?: string; b?: string; nota?: string; bed?: string }> = ({ antes, despues, a = "ANTES", b = "DESPUÉS", nota, bed }) => {
+export const FabAntesDespues: React.FC<{ antes: string; despues: string; a?: string; b?: string; nota?: string; bed?: string }> = ({ antes, despues, a = tr("ANTES", "BEFORE"), b = tr("DESPUÉS", "AFTER"), nota, bed }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig();
   const p = pop(f, fps, 2, 14), k = ease(clamp01((f - T * 0.25) / (T * 0.4))), W = 1280, H = 720;
   const A = imgSrc(antes), B = imgSrc(despues);

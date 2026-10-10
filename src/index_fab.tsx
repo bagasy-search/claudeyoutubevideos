@@ -11,7 +11,14 @@ import OV from "./fab/data/ov.json";
 import AV from "./fab/data/avwin.json";
 const S: string = (META as any).slug;
 const TOTAL: number = (META as any).total || 300;
-const C: Record<string, React.FC<any>> = { ...FAB, ClBookPage, ClQRCard, ClCheck, ClVideoRef };
+// canal en inglés: los rótulos por defecto de las tarjetas del CTA salen en inglés (nunca "free")
+const EN = (META as any).lang === "en";
+const en = (K: React.FC<any>, d: Record<string, any>): React.FC<any> => (p) => <K {...d} {...p} />;
+const C: Record<string, React.FC<any>> = EN
+  ? { ...FAB, ClCheck, ClBookPage: en(ClBookPage, { stamp: "It's on this page", pagLabel: "PAGE", hint: "point your phone here" }),
+      ClQRCard: en(ClQRCard, { text: "point your phone camera here", kicker: "THE WHOLE BOOK" }),
+      ClVideoRef: ((p: any) => <ClVideoRef tag={p.next ? "NEXT VIDEO" : "ON THE CHANNEL"} {...p} />) as React.FC<any> }
+  : { ...FAB, ClBookPage, ClQRCard, ClCheck, ClVideoRef };
 // avatar: alterna plano abierto / plano cerrado (punch-in) en cada pieza, como un editor con dos cámaras
 const Av: React.FC<{ sf: number; k: number }> = ({ sf, k }) => {
   const f = useCurrentFrame(); const { durationInFrames: d } = useVideoConfig();

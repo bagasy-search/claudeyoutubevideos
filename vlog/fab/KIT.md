@@ -1,10 +1,10 @@
 # KIT de componentes (no se programa nada: se eligen y se llenan en `vlog/<slug>/ov.json`)
 
 Cada entrada de `ov.json`: `{"c": "<Componente>", "frase": "<3-8 palabras EXACTAS del guion>", "dur": <segundos 4-12>, "props": {...}}`.
-El componente entra cuando Claudio dice esa frase. `img` = **id de un plano** de `planos.json` (su foto se muestra como polaroid):
+El componente entra cuando el protagonista dice esa frase. `img` = **id de un plano** de `planos.json` (su foto se muestra como polaroid):
 elegí planos cuya foto muestre EXACTAMENTE lo que dice el pie. Los límites de caracteres los controla `fab.py ov`.
-Reglas: uno cada ~50 s (para 15 min: 18-26) · ≥5 tipos Fab distintos · cada Fab máximo 3 veces · nunca en el minuto 1 (salvo ClVideoRef ≤2 s) ·
-nunca dentro de una ventana de avatar · ≥3 s entre uno y otro. Textos en español neutro con TÚ, cortos, sin punto final.
+Reglas: uno cada ~50 s (15 min: 18-26 · 30 min: 36-44) · ≥5 tipos Fab distintos · cada Fab máximo 3 por cada 15 min de video · nunca en el minuto 1 (salvo ClVideoRef ≤2 s) ·
+nunca dentro de una ventana de avatar · ≥3 s entre uno y otro. Textos en el IDIOMA DEL VIDEO (español neutro con TÚ, o inglés si el canal es en inglés), cortos, sin punto final. Canal en inglés: nunca 'free' ni precios del libro.
 Muestras de cómo se ven: `vlog/fab/kit/*.jpg` (no hace falta mirarlas).
 
 | Componente | Para qué (usalo cuando el guion…) | props (límite de caracteres) |

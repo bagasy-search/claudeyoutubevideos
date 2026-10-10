@@ -13,6 +13,10 @@ def slug():
 S = slug()
 D = R + f"vlog/{S}/"          # lo que escribe el director (guion.txt, planos.json, ov.json, avatar.json, meta.json)
 V3 = R + "_v3/"
+# el CANAL manda (idioma, protagonista, voz, largo del avatar…): vlog/fab/canal/<canal>.json, elegido en vlog/<slug>/meta.json
+_canal = json.load(open(D + "meta.json", encoding="utf8")).get("canal", "fumigador") if os.path.exists(D + "meta.json") else "fumigador"
+CANAL = json.load(open(R + f"vlog/fab/canal/{_canal}.json", encoding="utf8")); CANAL["id"] = _canal
+IDIOMA = CANAL.get("idioma", "es"); PROT = CANAL.get("protagonista", "claudio")
 os.makedirs(V3, exist_ok=True)
 def J(p, d=None):
     if not os.path.exists(p):

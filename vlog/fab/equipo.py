@@ -5,10 +5,11 @@
 #   revisar_fotos() revisor (visión): hojas de 9 contra la maestra del lugar → qué foto no coincide / tiene texto / cambió de lugar
 #   revisar_montaje() editor (visión): hoja de cada minuto armado contra lo que se dice → planos flojos o que no pegan
 import json, math, os, re, shutil, subprocess, sys
-from comun import R, S, D, V3, J, W, nw
+from comun import R, S, D, V3, J, W, nw, CANAL, IDIOMA, PROT
 import ds
 
-CANAL = J(R + "vlog/fab/canal/" + J(D + "meta.json", {}).get("canal", "fumigador") + ".json")
+NOM = CANAL["personajes"][PROT]["nombre"]; EL = CANAL.get("pron", "he"); SU = {"he": "his", "she": "her"}.get(EL, "their")
+LUG0 = list(CANAL["lugares_fijos"])[0]
 REFS = CANAL["dir_refs"]; os.makedirs(REFS, exist_ok=True)
 IMG = R + f"public/img/{S}/"; os.makedirs(IMG, exist_ok=True)
 ENV = {**os.environ, "AGNES_KEYS_OTRA_PC": os.environ.get("AGNES_KEYS_OTRA_PC", ",")}
@@ -53,19 +54,19 @@ def arte():
         "task": ("For every section choose: 'lugar' = one of fixed_places if it fits, otherwise a NEW place id (snake_case) with a full English description "
                  "in 'nuevos' (same detail level as fixed_places, a place of THIS family's world: their bathroom, their garden, a neighbour's yard…). "
                  "'hora' = dia | tarde | noche, following what the script says happens. 'gente' = ids of the characters that are physically there "
-                 "(claudio is there whenever he is doing or showing something). Keep a section in ONE place unless the text clearly moves. "
-                 "Also choose 'avatar_lugar': the place where Claudio talks to camera in this episode (the main place of the episode). "
-                 'JSON: {"secciones": {"SEC": {"lugar": "...", "hora": "...", "gente": ["claudio", ...]}}, "nuevos": {"id": "English description"}, "avatar_lugar": "..."}'),
+                 f"({PROT} is there whenever {EL} is doing or showing something). Keep a section in ONE place unless the text clearly moves. "
+                 f"Also choose 'avatar_lugar': the place where {NOM} talks to camera in this episode (the main place of the episode). "
+                 'JSON: {"secciones": {"SEC": {"lugar": "...", "hora": "...", "gente": ["' + PROT + '", ...]}}, "nuevos": {"id": "English description"}, "avatar_lugar": "..."}'),
     }
     b = ds.json_call(sys_p, json.dumps(user, ensure_ascii=False), "arte")
     lug = dict(CANAL["lugares_fijos"]); lug.update(b.get("nuevos", {}))
     for s, _ in secs:
-        x = b["secciones"].setdefault(s, {"lugar": "cocina", "hora": "dia", "gente": ["claudio"]})
-        if x.get("lugar") not in lug: x["lugar"] = "cocina"
+        x = b["secciones"].setdefault(s, {"lugar": LUG0, "hora": "dia", "gente": [PROT]})
+        if x.get("lugar") not in lug: x["lugar"] = LUG0
         if x.get("hora") not in HORAS: x["hora"] = "dia"
         x["gente"] = [g for g in x.get("gente", []) if g in CANAL["personajes"]]
     b["lugares"] = lug
-    if b.get("avatar_lugar") not in lug: b["avatar_lugar"] = "cocina"
+    if b.get("avatar_lugar") not in lug: b["avatar_lugar"] = LUG0
     W(D + "biblia.json", b)
     maestras(b)
     return b
@@ -91,10 +92,10 @@ def maestras(b):
             else: print(f"   maestra {l}/{h} rechazada: {v.get('motivo', '')[:120]}")
     # avatar: Claudio hablando a cámara en el lugar principal del episodio (UNA foto, identidad controlada)
     cara = R + f"public/cara_{S}.png"
-    if os.path.exists(cara) and not os.path.exists(R + f"public/ref_{S}_lugar.png"):
+    if os.path.exists(cara) and not CANAL.get("avatar_ref") and not os.path.exists(R + f"public/ref_{S}_lugar.png"):
         l = b["avatar_lugar"]
         for ronda in range(3):
-            agnes_img([{"name": "avatar_ref", "prompt": f"Medium shot of {CANAL['personajes']['claudio']['desc']}, standing in {b['lugares'][l]} {HORAS['dia']}, "
+            agnes_img([{"name": "avatar_ref", "prompt": f"Medium shot of {CANAL['personajes'][PROT]['desc']}, standing in {b['lugares'][l]} {HORAS['dia']}, "
                         "looking straight at the camera and about to speak, relaxed, both hands visible near his chest, the room clearly visible behind him. "
                         + CANAL["estilo"], "ref": [cara, maestra_path(l, "dia")]}], ident=CANAL["identidad"])
             p = IMG + "_eq/avatar_ref.png"
@@ -132,8 +133,8 @@ def planos(necesidad=None):
                 "Exactly ONE shot per moment, same order and same numbers. The shot shows what is SAID in that moment (the object, the action, the result). "
                 "If the moment is a general statement, show the most concrete visible thing that illustrates it in this house.",
                 "Alternate shot sizes: never two of the same size in a row (wide / medium / close detail).",
-                "Claudio, when present, is SHOWN DOING the actions with his hands (pouring, filling, hanging, checking with a flashlight). "
-                "Mark \"cara\": true only when his face is clearly visible, about ONE shot in three; the others are his hands at work, the objects, the place, the results. "
+                f"{NOM} ({PROT}), when present, is SHOWN DOING the actions with {SU} hands (" + CANAL.get("acciones", "pouring, filling, hanging, checking with a flashlight") + "). "
+                f"Mark \"cara\": true only when {SU} face is clearly visible, about ONE shot in three; the others are {SU} hands at work, the objects, the place, the results. "
                 "Family members appear doing ordinary things; children only fully clothed and safe.",
                 "Nobody looks at the camera: everybody is busy with the task (only the avatar talks to camera).",
                 "Write 'foto' in English: only what is visible (who, doing what, where, objects, light). 50-80 words. No camera words.",
@@ -141,23 +142,23 @@ def planos(necesidad=None):
                 "'mov' = ONE simple visible movement that lasts 2 seconds. Never 'stays still'.",
                 "Everything happens in the given place and time; do not invent other houses or streets.",
             ],
-            "json": '{"planos": [{"n": 1, "tam": "general|medio|detalle", "gente": ["claudio"], "cara": false, "foto": "...", "mov": "..."}]}',
+            "json": '{"planos": [{"n": 1, "tam": "general|medio|detalle", "gente": ["' + PROT + '"], "cara": false, "foto": "...", "mov": "..."}]}',
         }
         r = ds.json_call(sys_p, json.dumps(user, ensure_ascii=False), "planos", max_tokens=12000)
         por_n = {int(q.get("n", 0)): q for q in r.get("planos", []) if isinstance(q, dict)}
         for i, k in enumerate(t):
             q = por_n.get(i + 1) or (r.get("planos", [])[i] if i < len(r.get("planos", [])) else {})
             P.append({"id": "", "tramo": k, "sec": sec, "lugar": x["lugar"], "hora": x["hora"], "gente": [g for g in q.get("gente", []) if g in gente],
-                      "cara": bool(q.get("cara")) and "claudio" in q.get("gente", []), "tam": q.get("tam", ""), "dice": segs[k]["texto"][:200],
+                      "cara": bool(q.get("cara")) and PROT in q.get("gente", []), "tam": q.get("tam", ""), "dice": segs[k]["texto"][:200],
                       "foto": (q.get("foto") or f"A concrete visible detail of the house illustrating: {segs[k]['texto']}")[:700], "mov": (q.get("mov") or "a small natural movement in the scene")[:220]})
         print(f"   {sec}: tramos {t[0]}-{t[-1]}", flush=True)
     for k, p in enumerate(P): p["id"] = f"p{k + 1:03d}"
     return P
 
 def prompt_foto(p, b):
-    gente = "; ".join(CANAL["personajes"][g]["desc"] for g in p["gente"] if g != "claudio")
+    gente = "; ".join(CANAL["personajes"][g]["desc"] for g in p["gente"] if g in CANAL["personajes"])
     return (p["foto"] + f" The place is {b['lugares'][p['lugar']]}, {HORAS[p['hora']]}." + (f" People: {gente}." if gente else "")
-            + (" No other people." if not p["gente"] else "") + " " + CANAL["estilo"])
+            + (" No other people." if not p["gente"] else " Everyone's eyes are on what their hands are doing.") + " " + CANAL["estilo"])
 
 # ═══════════════════════ fotos con referencias + revisor ═══════════════════════
 def fotos(P, rondas=3):
@@ -176,7 +177,10 @@ def fotos(P, rondas=3):
         hilo = threading.Thread(target=gpt_img, args=([{"name": p["id"], "prompt": prompt_foto(p, b) + " " + CANAL["identidad"], "ref": crop} for p in con],))
         hilo.start()
         # detalle = el objeto llena el cuadro, SIN la maestra (con la maestra agnes copia el plano general y se repite la composición)
-        agnes_img([{"name": p["id"], "prompt": ("A close detail where the main object fills most of the frame, seen from very near: " if p.get("tam") == "detalle" else "") + prompt_foto(p, b),
+        # medio = la maestra sólo da paredes y muebles: otro ángulo y mucho más cerca (si no, agnes copia el plano general vacío)
+        PRE = {"detalle": "A close detail where the main object fills most of the frame, seen from very near: ",
+               "medio": "Seen from a different spot of the same room as the reference photo and much closer, the reference only shows what the walls, light and furniture look like: "}
+        agnes_img([{"name": p["id"], "prompt": PRE.get(p.get("tam"), "") + prompt_foto(p, b),
                     **({} if p.get("tam") == "detalle" else {"ref": [maestra_path(p["lugar"], p["hora"])]})} for p in sin])
         hilo.join()
         nuevas = [p for p in falt if os.path.exists(IMG + "_eq/" + p["id"] + ".png")]
@@ -203,7 +207,7 @@ def revisar_fotos(nuevas, b):
             v = ds.vision("The FIRST image is the master photo of the place. The SECOND image is a sheet of numbered photos that must all happen in that SAME place "
                           f"({h}). Expected content of each numbered photo:\n{desc}\n\nReject a photo ONLY for a clear problem: it shows something different from its "
                           "description; it is obviously a different place (other walls, other house, a street); there is readable text or fake letters; a body or hand "
-                          'is deformed; there are extra people. Reply JSON {"malas": [{"n": <number>, "motivo": "..."}]}', [maestra_path(l, h), hoja], "revisor_fotos")
+                          'is deformed; there are extra people; someone stares straight out of the photo at the viewer; it is nearly the same picture as the master photo (same framing, nothing new). Reply JSON {"malas": [{"n": <number>, "motivo": "..."}]}', [maestra_path(l, h), hoja], "revisor_fotos")
             for m in v.get("malas", []) if isinstance(v, dict) else []:
                 try: malas.add(gr[int(m["n"]) - 1]["id"]); print(f"   ✗ {gr[int(m['n']) - 1]['id']}: {str(m.get('motivo', ''))[:110]}")
                 except Exception: pass
@@ -238,23 +242,48 @@ def revisar_montaje():
 
 # ═══════════════════════ equipo de guion: guionista (Pro) → crítico (Flash) → reescritura (Pro) ═══════════════════════
 def guion():
-    canal = J(D + "meta.json", {}).get("canal", "fumigador")
+    """guionista (Pro) → crítico (Flash) → reescritura (Pro) → si quedó corto, ampliación (Pro). Biblia y ejemplos = los del CANAL."""
+    canal = CANAL["id"]; meta = J(D + "meta.json", {}); cps = float(CANAL.get("cps", 14.0))
+    obj = int(float(meta.get("minutos", 12)) * 60 * cps); lo, hi = int(obj * 0.97), int(obj * 1.06)
     biblia = open(R + f"vlog/fab/canal/{canal}_guion.md", encoding="utf8").read()
-    ej = "\n\n".join(f"### EJEMPLO ({os.path.basename(f)}, guion real del canal que funcionó)\n" + open(f, encoding="utf8").read()
-                     for f in sorted(__import__("glob").glob(R + "vlog/fab/canal/ejemplos/*.txt"))[:2])
+    ejs = sorted(__import__("glob").glob(R + f"vlog/fab/canal/ejemplos/{CANAL.get('ejemplos', '')}*.txt"))[:2]
     brief = open(D + "brief.md", encoding="utf8").read()
-    sys_p = ("Eres el guionista del canal. Escribes guiones de YouTube que retienen de verdad, en la voz exacta del personaje. "
-             "Sigues la biblia del canal al pie de la letra. Devuelves SÓLO el guion en el formato pedido, sin comentarios.")
-    user = f"{biblia}\n\n{ej}\n\n## EPISODIO A ESCRIBIR\n{brief}\n\nEscribe el guion completo ahora (12.500-13.500 caracteres), en el formato `[SECCION] párrafo` por línea."
+    if IDIOMA == "en":
+        ej = "\n\n".join(f"### EXAMPLE ({os.path.basename(f)}, a real script of this channel that worked)\n" + open(f, encoding="utf8").read() for f in ejs)
+        sys_p = ("You are the channel's scriptwriter. You write YouTube scripts that truly hold viewers, in the exact voice of the character. "
+                 "You follow the channel bible to the letter. You return ONLY the script in the requested format, no comments.")
+        pide = (f"Write the complete script now, in English: between {lo} and {hi} characters (that is the real length of the video; count it), "
+                "one paragraph per line, each line `[SECTION] paragraph` (SECTION = short uppercase id like HOOK, PAIN, STORY, M1, M2, CTA, END).")
+        crit = (f"Evaluate against the bible: 5-second hook, open mystery, concrete promise, a loop every 60-90 s, specificity (amounts, times, places), honesty, "
+                f"the voice of {NOM}, the book mentions and page numbers exactly as the brief says, forbidden words, length ({lo}-{hi} characters). ")
+        notas_t, borr_t, fin_t = "## EDITOR NOTES (apply them all)", "## YOUR FIRST DRAFT", "Return the complete corrected script, same format."
+    else:
+        ej = "\n\n".join(f"### EJEMPLO ({os.path.basename(f)}, guion real del canal que funcionó)\n" + open(f, encoding="utf8").read() for f in ejs)
+        sys_p = ("Eres el guionista del canal. Escribes guiones de YouTube que retienen de verdad, en la voz exacta del personaje. "
+                 "Sigues la biblia del canal al pie de la letra. Devuelves SÓLO el guion en el formato pedido, sin comentarios.")
+        pide = f"Escribe el guion completo ahora ({lo}-{hi} caracteres), en el formato `[SECCION] párrafo` por línea."
+        crit = (f"Evalúa contra la biblia: gancho de 5 s, misterio abierto, promesa concreta, loops cada 60-90 s, especificidad (cantidades, tiempos, lugares), "
+                f"honestidad, voz de {NOM}, tú neutro, menciones del Manual, largo ({lo}-{hi} caracteres). ")
+        notas_t, borr_t, fin_t = "## NOTAS DEL EDITOR (aplicalas todas)", "## TU PRIMER BORRADOR", "Devuelve el guion completo corregido, mismo formato."
+    user = f"{biblia}\n\n{ej}\n\n## EPISODE / EPISODIO\n{brief}\n\n{pide}"
+    limpio = lambda g: [l.strip() for l in g.split("\n") if re.match(r"^\[[A-Z0-9_]+[^\]]*\]\s*\S", l.strip())]
+    largo = lambda g: len(" ".join(re.sub(r"^\[[^\]]*\]\s*", "", l) for l in limpio(g)))
     g = ds.text_call(sys_p, user, "guionista", model="deepseek-v4-pro")
     open(D + "guion_v1.txt", "w", encoding="utf8").write(g)
-    nota = ds.json_call("Eres un editor de retención de YouTube muy exigente. Reply with JSON only.",
-                        f"BIBLIA:\n{biblia}\n\nGUION:\n{g}\n\nEvalúa contra la biblia: gancho de 5 s, misterio abierto, promesa concreta, loops cada 60-90 s, "
-                        "especificidad (cantidades, tiempos, lugares), honestidad, voz de Claudio, tú neutro, menciones del Manual, largo. "
-                        'JSON {"puntaje": 0-10, "notas": ["cambio concreto 1 (qué línea y cómo)", ...]} con 6-12 notas accionables.', "critico")
+    nota = ds.json_call("You are a very demanding YouTube retention editor. Reply with JSON only.",
+                        f"BIBLE:\n{biblia}\n\nBRIEF:\n{brief}\n\nSCRIPT ({largo(g)} characters):\n{g}\n\n{crit}"
+                        'JSON {"puntaje": 0-10, "notas": ["concrete change 1 (which line and how)", ...]} with 6-12 actionable notes, in the language of the script.', "critico")
     W(D + "guion_notas.json", nota)
-    g2 = ds.text_call(sys_p, f"{user}\n\n## TU PRIMER BORRADOR\n{g}\n\n## NOTAS DEL EDITOR (aplicalas todas)\n" + "\n".join(f"- {n}" for n in nota.get("notas", []))
-                      + "\n\nDevuelve el guion completo corregido, mismo formato.", "guionista", model="deepseek-v4-pro")
-    lineas = [l.strip() for l in g2.split("\n") if re.match(r"^\[[A-Z0-9_]+[^\]]*\]\s*\S", l.strip())]
+    g2 = ds.text_call(sys_p, f"{user}\n\n{borr_t}\n{g}\n\n{notas_t}\n" + "\n".join(f"- {n}" for n in nota.get("notas", []))
+                      + f"\n\n{fin_t} ({lo}-{hi})", "guionista", model="deepseek-v4-pro")
+    for k in range(3):   # el modelo escribe corto (medido: ~60-80 % de lo pedido): se amplía hasta el largo real del video
+        n = largo(g2)
+        if n >= lo * 0.95: break
+        print(f"   guion corto: {n} de {lo} caracteres → ampliación {k + 1}", flush=True)
+        g2 = ds.text_call(sys_p, f"{user}\n\n## CURRENT SCRIPT ({n} characters — TOO SHORT, it must be {lo}-{hi})\n{g2}\n\n"
+                          "Return the COMPLETE script again, same format and same order, keeping every good line, but longer: deepen each section "
+                          "(more concrete steps, the honest-words part, a short personal memory, the exact why) until it reaches the length. Do not pad with repetition.",
+                          "guionista", model="deepseek-v4-pro")
+    lineas = limpio(g2)
     open(D + "guion.txt", "w", encoding="utf8").write("\n".join(lineas) + "\n")
-    return len(" ".join(lineas)), nota.get("puntaje")
+    return largo(g2), nota.get("puntaje")

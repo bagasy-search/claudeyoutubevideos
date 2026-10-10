@@ -321,5 +321,10 @@
   "language": "en",
   "backend": "s2.1-pro-free",
   "nota": "Harlan the Lineman (EN/US Ohio, 68, retired lineman). Clon zero-shot de la voz PUBLICA de Fish 'GRANDPA' e223051b34524a48940561e9a18a2203 (warm authoritative raspy); ganó juez ciego gpt-audio en 2 órdenes (9/9) contra 5. 27-sep-2026."
+ },
+ "loretta": {
+  "wav": "fish_refs/loretta.wav",
+  "text": "Oh, now put that camera right here, honey, so they can see it. This is a chess pie. My mother made this one every single Sunday. And I'll be honest with you, I haven't seen one at a potluck in, oh, 30 years? Maybe more. Three eggs, a stick of butter, a spoonful of cornmeal, and a little splash of vinegar. That's it. Now the vinegar, that's the part nobody believes me about. You don't taste it, you just don't. Here, look at that. See how it wobbles in the middle? That's how you know.",
+  "language": "en"
  }
 }

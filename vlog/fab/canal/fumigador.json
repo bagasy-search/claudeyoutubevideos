@@ -38,5 +38,16 @@
   "ferreteria": "a small neighborhood hardware store in a Latin American town: a glass counter with screws and small items inside, wooden shelves behind full of jars, rolls of mesh and boxes"
  },
  "identidad": "Preserve the exact identity, face, curly black hair going gray, gray-stubbled beard, age and skin tone of the man in the reference photograph. He wears a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead.",
- "cara_crop": "D:/rtmp/fab/canal/fumigador/cara_128x192.png"
+ "cara_crop": "D:/rtmp/fab/canal/fumigador/cara_128x192.png",
+ "idioma": "es",
+ "protagonista": "claudio",
+ "pron": "he",
+ "voz": "claudio_definitiva",
+ "cps": 14.0,
+ "ejemplos": "fu",
+ "avatar_pct": [
+  15,
+  30
+ ],
+ "prohibidas": []
 }
