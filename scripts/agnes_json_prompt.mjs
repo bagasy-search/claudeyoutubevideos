@@ -80,7 +80,7 @@ async function expandir(it) {
         signal: AbortSignal.timeout(120_000),
         body: JSON.stringify({ model: MODEL, temperature: 0.3, messages: [
           { role: "system", content: SYS },
-          { role: "user", content: `Short description${it.ref ? " (the main person's face comes from a reference image)" : ""}:\n${it.prompt}` },
+          { role: "user", content: `Short description${it.ref && !it.ref_lugar ? " (the main person's face comes from a reference image)" : ""}:\n${it.prompt}` },
         ] }),
       });
       const txt = await r.text();

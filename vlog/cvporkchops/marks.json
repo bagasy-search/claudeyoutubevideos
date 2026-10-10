@@ -1,0 +1,257 @@
+{
+ "S00": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chuletas sellándose, chorro de caldo dorado, vapor"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, sartén vacía"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio descuelga la sartén"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuletas crudas sobre papel de carnicero"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio mira el cuaderno de la cuadrilla"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "jarra de agua, sal kosher, azúcar morena"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuletas dentro de la salmuera en un bol"
+ },
+ "S07": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio con el termómetro en la mano, sonríe"
+ },
+ "S08": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuletas fuera de la salmuera, secadas con papel"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "manteca en la sartén caliente, brillando"
+ },
+ "S10": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chuletas entrando a la sartén, chisporroteo"
+ },
+ "S11": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio espera con la espátula en la mano, sin tocar"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chuleta dada vuelta, costra dorada profunda"
+ },
+ "S13": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chuletas corridas a un lado, cebolla y chile verde en la sartén"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chorro de caldo de pollo, vapor que sube"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chuletas apoyadas sobre la cama de cebolla"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa baja sobre la sartén"
+ },
+ "S17": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio mira el reloj de la pared"
+ },
+ "S18": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "termómetro digital pinchado en la chuleta"
+ },
+ "S19": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuletas en un plato, cuadradito de manteca encima"
+ },
+ "S20": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuleta cortada, apenas rosada junto al hueso"
+ },
+ "S21": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cebolla y jugo de la sartén por encima con cuchara"
+ },
+ "S22": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty entra, toma un pedazo con tenedor"
+ },
+ "S23": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty mastica, asiente"
+ },
+ "S24": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia la sartén con un trapo"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno abierto, lee"
+ },
+ "S26": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuletas finas de bandeja sobre la mesa"
+ },
+ "S27": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "sartén chica de diez pulgadas con dos chuletas"
+ },
+ "S28": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "asadera grande con muchas chuletas sobre cebolla, papel aluminio"
+ },
+ "S29": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "calculadora imaginaria, ingredientes con precios"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuleta sobrante en la heladera, tupper"
+ },
+ "S31": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chuleta recalentándose tapada con un chorrito de caldo"
+ },
+ "S32": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuleta en tiras dentro de tortillas con cebolla"
+ },
+ "S33": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos chuletas lado a lado en dos platos, una gris y una jugosa"
+ },
+ "S34": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuleta frita cortada, gris y seca por dentro"
+ },
+ "S35": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuleta del rancho cortada, jugo en el plato"
+ },
+ "S36": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "bandeja de chuletas en la heladera del súper, etiqueta en blanco"
+ },
+ "S37": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio presiona la chuleta con el dedo junto a la palma de su mano"
+ },
+ "S38": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "Dutch oven sobre brasas, Claudio con sombrero"
+ },
+ "S39": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "plato con chuleta, frijoles, repollo y tortillas"
+ },
+ "S40": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "hash de papas con cubos de chuleta y chile verde en la sartén"
+ },
+ "S41": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga la sartén"
+ },
+ "S42": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuleta de lomo, chuleta de costilla y chuleta de paleta lado a lado"
+ },
+ "S43": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "corral al atardecer, Claudio mira afuera"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con la palma abierta junto a una chuleta cruda"
+ },
+ "S45": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "un bowl con sal kosher y otro con sal fina, una cuchara al lado de cada uno"
+ },
+ "S46": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio levanta la tapa un segundo, el vapor sale"
+ },
+ "S47": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "salsa de manzana casera en un frasco, junto a una chuleta"
+ },
+ "S48": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla, páginas manchadas"
+ },
+ "S49": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 29"
+ },
+ "S50": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, la olla de frijoles al fondo"
+ }
+}

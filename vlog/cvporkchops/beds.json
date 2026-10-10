@@ -1,0 +1,372 @@
+[
+ {
+  "name": "c01_1",
+  "q": "cast iron searing",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Your pork chops come out dry because of how you fry them. Out on the ranch, we never fried them.\" — it must show: pale meat like pork searing in a black cast-iron skillet. Not red beef, not chicken pieces, not fish, not bacon."
+ },
+ {
+  "name": "c01_2",
+  "q": "meat skillet sizzling",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Your pork chops come out dry because of how you fry them. Out on the ranch, we never fried them.\" — it must show: pale meat like pork sizzling in a skillet with onions. Not red beef, not chicken pieces, not fish, not bacon."
+ },
+ {
+  "name": "c41_1",
+  "q": "meat frying pan",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Three minutes. Flip. Look at that color. Deep golden brown. That's not burnt. That's flavor. Another three minutes on the second side. Same rule.\" — it must show: a piece of pale meat like pork frying in a pan, being turned. Not red beef, not chicken pieces, not fish, not bacon."
+ },
+ {
+  "name": "c41_2",
+  "q": "flipping meat pan",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Three minutes. Flip. Look at that color. Deep golden brown. That's not burnt. That's flavor. Another three minutes on the second side. Same rule.\" — it must show: a piece of meat being flipped in a frying pan, golden-brown crust. Not red beef, not chicken pieces, not fish, not bacon."
+ },
+ {
+  "name": "c45_1",
+  "q": "deglazing pan",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Now half a cup of chicken broth. Pour it in. It'll sizzle and steam up. Good. Scrape the bottom with your spatula. All that brown stuff stuck to the pan, that's the best part. It goes into the sauce.\" — it must show: deglazing pan."
+ },
+ {
+  "name": "c45_2",
+  "q": "pouring broth skillet",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Now half a cup of chicken broth. Pour it in. It'll sizzle and steam up. Good. Scrape the bottom with your spatula. All that brown stuff stuck to the pan, that's the best part. It goes into the sauce.\" — it must show: pouring broth skillet."
+ },
+ {
+  "name": "c55_1",
+  "q": "slicing pork loin",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Now look at this. Cut into it, right by the bone. See that? A little bit of pink, right next to the bone. That's correct. That's what one-forty-five looks like. It's not raw.\" — it must show: a knife slicing cooked pork loin, juicy, faintly pink inside. Not beef, not salami, not chicken."
+ },
+ {
+  "name": "c55_2",
+  "q": "pork roast sliced",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Now look at this. Cut into it, right by the bone. See that? A little bit of pink, right next to the bone. That's correct. That's what one-forty-five looks like. It's not raw.\" — it must show: cooked pork roast being sliced. Not beef, not salami, not chicken."
+ },
+ {
+  "name": "c58_1",
+  "q": "pork chops sauce",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Spoon the onions and the pan juices over the top. That broth, with the onion and the green chile and the brown bits and the butter running into it?\" — it must show: pork chops sauce."
+ },
+ {
+  "name": "c58_2",
+  "q": "spooning sauce meat",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Spoon the onions and the pan juices over the top. That broth, with the onion and the green chile and the brown bits and the butter running into it?\" — it must show: spooning sauce meat."
+ },
+ {
+  "name": "c83_1",
+  "q": "juicy pork chop",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"His came out at one-sixty-eight. Gray all the way through. When he cut it, nothing came out. You could hear the knife on it. Mine came out at one-forty-five, rested. When I cut it, the juice ran down to the bone.\" — it must show: juicy pork chop."
+ },
+ {
+  "name": "c83_2",
+  "q": "cutting cooked pork",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"His came out at one-sixty-eight. Gray all the way through. When he cut it, nothing came out. You could hear the knife on it. Mine came out at one-forty-five, rested. When I cut it, the juice ran down to the bone.\" — it must show: a knife cutting cooked pork, juicy. Not red beef, not chicken pieces, not fish, not bacon."
+ },
+ {
+  "name": "c13_1",
+  "q": "raw pork chops",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"A pork chop is a lean piece of meat. Not much fat running through it, not like a steak. When it gets hot, the muscle squeezes, like a fist closing, and the water inside gets pushed out. A little squeezing is fine.\" — it must show: raw pork chops."
+ },
+ {
+  "name": "c13_2",
+  "q": "pork loin raw",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"A pork chop is a lean piece of meat. Not much fat running through it, not like a steak. When it gets hot, the muscle squeezes, like a fist closing, and the water inside gets pushed out. A little squeezing is fine.\" — it must show: pork loin raw."
+ },
+ {
+  "name": "c14_1",
+  "q": "pork chop frying",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"That's cooking. But the hotter the meat gets in the middle, the harder that fist closes. And when you fry a chop in an open pan, you have to keep it on the heat until the middle is done.\" — it must show: pork chop frying."
+ },
+ {
+  "name": "c14_2",
+  "q": "frying pan meat",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"That's cooking. But the hotter the meat gets in the middle, the harder that fist closes. And when you fry a chop in an open pan, you have to keep it on the heat until the middle is done.\" — it must show: frying pan meat."
+ },
+ {
+  "name": "c15_1",
+  "q": "meat thermometer",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"By the time the middle gets there, the outside half inch has been cooking way past done for ten minutes. That's your gray, dry ring. And then there's the second problem. Most folks were taught that pork has to be cooked \" — it must show: meat thermometer."
+ },
+ {
+  "name": "c15_2",
+  "q": "pork chop plate",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"By the time the middle gets there, the outside half inch has been cooking way past done for ten minutes. That's your gray, dry ring. And then there's the second problem. Most folks were taught that pork has to be cooked \" — it must show: pork chop plate."
+ },
+ {
+  "name": "c28_1",
+  "q": "pork chop bone",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"The bone slows the cooking down next to it, so the meat around it stays juicy. Thin chops, those half-inch ones that come six to a tray, cook through in the time it takes to brown them. You can't save those with any tric\" — it must show: pork chop bone."
+ },
+ {
+  "name": "c28_2",
+  "q": "thick pork chop",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"The bone slows the cooking down next to it, so the meat around it stays juicy. Thin chops, those half-inch ones that come six to a tray, cook through in the time it takes to brown them. You can't save those with any tric\" — it must show: thick pork chop."
+ },
+ {
+  "name": "c29_1",
+  "q": "butcher counter",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"If that's all you've got, I'll tell you what to do with them in a minute. When I go to the store, I go to the meat counter, and I ask for center-cut rib chops, bone in, an inch and a quarter thick.\" — it must show: butcher counter."
+ },
+ {
+  "name": "c29_2",
+  "q": "meat display case",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"If that's all you've got, I'll tell you what to do with them in a minute. When I go to the store, I go to the meat counter, and I ask for center-cut rib chops, bone in, an inch and a quarter thick.\" — it must show: meat display case."
+ },
+ {
+  "name": "c30_1",
+  "q": "butcher cutting meat",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"If they only have thin ones in the case, ask them to cut you some thick. They'll do it. That's their job, and most butchers are happy somebody asked. Right now that runs about four dollars and thirty cents a pound where \" — it must show: butcher cutting meat."
+ },
+ {
+  "name": "c30_2",
+  "q": "butcher shop",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"If they only have thin ones in the case, ask them to cut you some thick. They'll do it. That's their job, and most butchers are happy somebody asked. Right now that runs about four dollars and thirty cents a pound where \" — it must show: butcher shop."
+ },
+ {
+  "name": "c38_1",
+  "q": "cowboys ranch",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Three minutes is a long time when you're standing there. So let me tell you about Rusty. Rusty's been on the crew about eight years. Skinny kid, well, he's thirty-five now, but he's still a kid to me.\" — it must show: cowboys ranch."
+ },
+ {
+  "name": "c38_2",
+  "q": "ranch horses",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Three minutes is a long time when you're standing there. So let me tell you about Rusty. Rusty's been on the crew about eight years. Skinny kid, well, he's thirty-five now, but he's still a kid to me.\" — it must show: ranch horses."
+ },
+ {
+  "name": "c39_1",
+  "q": "ranch kitchen cooking",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"First week he worked for us, he came in the kitchen while I was searing chops, and he reached over and flipped one with his fingers. Burned himself. Ruined the crust. And he looked at me and said,\" — it must show: ranch kitchen cooking."
+ },
+ {
+  "name": "c39_2",
+  "q": "cowboy hat",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"First week he worked for us, he came in the kitchen while I was searing chops, and he reached over and flipped one with his fingers. Burned himself. Ruined the crust. And he looked at me and said,\" — it must show: cowboy hat."
+ },
+ {
+  "name": "c40_1",
+  "q": "cowboy working horse",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"\"I was just checking.\" Nobody needs to check. The chop will tell you when it's ready. It lets go of the pan on its own.\" — it must show: cowboy working horse."
+ },
+ {
+  "name": "c40_2",
+  "q": "ranch barn",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"\"I was just checking.\" Nobody needs to check. The chop will tell you when it's ready. It lets go of the pan on its own.\" — it must show: ranch barn."
+ },
+ {
+  "name": "c73_1",
+  "q": "grocery meat aisle",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Let me tell you what this costs, because I know you're thinking about it. I always was. When you feed fourteen men every day, you think about it. Four thick bone-in chops, about three pounds, that's around thirteen dolla\" — it must show: grocery meat aisle."
+ },
+ {
+  "name": "c73_2",
+  "q": "grocery shopping",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Let me tell you what this costs, because I know you're thinking about it. I always was. When you feed fourteen men every day, you think about it. Four thick bone-in chops, about three pounds, that's around thirteen dolla\" — it must show: grocery shopping."
+ },
+ {
+  "name": "c76_1",
+  "q": "microwave leftovers",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Leftovers. Keep them in the fridge, three days. The trouble with leftover pork chops is the microwave. It dries them out in about forty seconds, and all that work is gone.\" — it must show: microwave leftovers."
+ },
+ {
+  "name": "c76_2",
+  "q": "leftovers fridge",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Leftovers. Keep them in the fridge, three days. The trouble with leftover pork chops is the microwave. It dries them out in about forty seconds, and all that work is gone.\" — it must show: leftovers fridge."
+ },
+ {
+  "name": "c85_1",
+  "q": "raw pork chops",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Now, a few more things about buying them, because a good chop starts at the store. Look at the color. You want pink to a light red, not pale and gray. Look at the fat on the edge.\" — it must show: raw pork chops."
+ },
+ {
+  "name": "c85_2",
+  "q": "fresh pork",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Now, a few more things about buying them, because a good chop starts at the store. Look at the color. You want pink to a light red, not pale and gray. Look at the fat on the edge.\" — it must show: fresh pork."
+ },
+ {
+  "name": "c86_1",
+  "q": "pork marbling",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"White and firm, not yellow. And a little marbling, little white threads running through the meat, is a good sign. That's flavor and juice.\" — it must show: pork marbling."
+ },
+ {
+  "name": "c86_2",
+  "q": "raw pork closeup",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"White and firm, not yellow. And a little marbling, little white threads running through the meat, is a good sign. That's flavor and juice.\" — it must show: raw pork closeup."
+ },
+ {
+  "name": "c87_1",
+  "q": "meat package label",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"A chop that's perfectly smooth and pale all the way through is going to be dry no matter what you do to it. Then read the label. Some pork is sold already soaked in a salt solution.\" — it must show: meat package label."
+ },
+ {
+  "name": "c87_2",
+  "q": "meat packaging",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"A chop that's perfectly smooth and pale all the way through is going to be dry no matter what you do to it. Then read the label. Some pork is sold already soaked in a salt solution.\" — it must show: meat packaging."
+ },
+ {
+  "name": "c88_1",
+  "q": "supermarket meat",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"The label will say something like enhanced, or contains up to some percent of a solution. That's fine meat, it's just been brined at the plant. If your chops say that, skip my brine.\" — it must show: supermarket meat."
+ },
+ {
+  "name": "c88_2",
+  "q": "meat counter",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"The label will say something like enhanced, or contains up to some percent of a solution. That's fine meat, it's just been brined at the plant. If your chops say that, skip my brine.\" — it must show: meat counter."
+ },
+ {
+  "name": "c89_1",
+  "q": "pork chops seasoning",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Go straight to drying and searing. Brine it again and it'll come out like a salt lick.\" — it must show: pork chops seasoning."
+ },
+ {
+  "name": "c89_2",
+  "q": "seasoning meat",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Go straight to drying and searing. Brine it again and it'll come out like a salt lick.\" — it must show: seasoning meat."
+ },
+ {
+  "name": "c93_1",
+  "q": "dutch oven campfire",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"On the roundup, out in the open, we did the same thing with a Dutch oven on the coals. Same steps. Sear the chops in the bottom of the pot over a hot bed of coals. Onion and chile. Splash of broth.\" — it must show: dutch oven campfire."
+ },
+ {
+  "name": "c93_2",
+  "q": "cast iron campfire",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"On the roundup, out in the open, we did the same thing with a Dutch oven on the coals. Same steps. Sear the chops in the bottom of the pot over a hot bed of coals. Onion and chile. Splash of broth.\" — it must show: cast iron campfire."
+ },
+ {
+  "name": "c94_1",
+  "q": "campfire coals",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Lid on. Then you rake most of the coals out from under it and put a few on the lid, so the heat comes from top and bottom, gentle. Forty men. Six Dutch ovens in a row.\" — it must show: campfire coals."
+ },
+ {
+  "name": "c94_2",
+  "q": "campfire cooking",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Lid on. Then you rake most of the coals out from under it and put a few on the lid, so the heat comes from top and bottom, gentle. Forty men. Six Dutch ovens in a row.\" — it must show: campfire cooking."
+ },
+ {
+  "name": "c95_1",
+  "q": "cattle roundup",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Nobody complained, and that crew complained about everything. Coffee too strong, coffee too weak. Never the chops.\" — it must show: cattle roundup."
+ },
+ {
+  "name": "c95_2",
+  "q": "cowboys cattle",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Nobody complained, and that crew complained about everything. Coffee too strong, coffee too weak. Never the chops.\" — it must show: cowboys cattle."
+ },
+ {
+  "name": "c107_1",
+  "q": "pork loin chop",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"That's the one I like best. It has the curved bone on one side and a little bit of fat running through it. Juicy and forgiving. The loin chop. It looks like a little T-bone steak, with the bone in the middle,\" — it must show: pork loin chop."
+ },
+ {
+  "name": "c107_2",
+  "q": "pork tenderloin",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"That's the one I like best. It has the curved bone on one side and a little bit of fat running through it. Juicy and forgiving. The loin chop. It looks like a little T-bone steak, with the bone in the middle,\" — it must show: pork tenderloin."
+ },
+ {
+  "name": "c108_1",
+  "q": "raw pork meat",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"the loin on one side and a little piece of tenderloin on the other. Good, but the tenderloin side cooks faster, so watch it. The sirloin chop, from the back near the hip.\" — it must show: raw pork meat."
+ },
+ {
+  "name": "c108_2",
+  "q": "pork cuts",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"the loin on one side and a little piece of tenderloin on the other. Good, but the tenderloin side cooks faster, so watch it. The sirloin chop, from the back near the hip.\" — it must show: pork cuts."
+ },
+ {
+  "name": "c109_1",
+  "q": "butcher pork",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Cheaper, a little tougher, with some odd bones in it. Fine for this recipe. And the blade chop, or shoulder chop. That's the cheapest one, darker meat, with a lot of fat and gristle running through it.\" — it must show: butcher pork."
+ },
+ {
+  "name": "c109_2",
+  "q": "cutting pork",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Cheaper, a little tougher, with some odd bones in it. Fine for this recipe. And the blade chop, or shoulder chop. That's the cheapest one, darker meat, with a lot of fat and gristle running through it.\" — it must show: cutting pork."
+ },
+ {
+  "name": "c110_1",
+  "q": "pork shoulder",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"It's not a good chop for one-forty-five. That one wants to be cooked low and slow, like the cheap beef I'll show you later in this series. If you see \"boneless center-cut,\" that's the loin with the bone taken out. Lean.\" — it must show: pork shoulder."
+ },
+ {
+  "name": "c110_2",
+  "q": "pork shoulder raw",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"It's not a good chop for one-forty-five. That one wants to be cooked low and slow, like the cheap beef I'll show you later in this series. If you see \"boneless center-cut,\" that's the loin with the bone taken out. Lean.\" — it must show: pork shoulder raw."
+ },
+ {
+  "name": "c113_1",
+  "q": "ranch cattle",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"So I got the biggest fire going I could, I put the chops in the hottest pan I had, and I cooked them until they looked like the ones in a magazine. Dark brown, almost black on the edges. I put them on the table and I was\" — it must show: ranch cattle."
+ },
+ {
+  "name": "c113_2",
+  "q": "cowboy riding",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"So I got the biggest fire going I could, I put the chops in the hottest pan I had, and I cooked them until they looked like the ones in a magazine. Dark brown, almost black on the edges. I put them on the table and I was\" — it must show: cowboy riding."
+ },
+ {
+  "name": "c114_1",
+  "q": "cowboys riding",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"And nobody said a word. They chewed. And they chewed. One of the old hands, a man named Chuy, he was missing a few teeth, he just put his fork down and ate his beans. When Don Ernesto came back that night,\" — it must show: cowboys riding."
+ },
+ {
+  "name": "c114_2",
+  "q": "cattle herd",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"And nobody said a word. They chewed. And they chewed. One of the old hands, a man named Chuy, he was missing a few teeth, he just put his fork down and ate his beans. When Don Ernesto came back that night,\" — it must show: cattle herd."
+ },
+ {
+  "name": "c115_1",
+  "q": "ranch sunset",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"he took one bite of a cold leftover chop, he looked at me and he said, \"Mijo, you cooked these three times. Once in the pan, once in your pride,\" — it must show: ranch sunset."
+ },
+ {
+  "name": "c115_2",
+  "q": "horses sunset",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"he took one bite of a cold leftover chop, he looked at me and he said, \"Mijo, you cooked these three times. Once in the pan, once in your pride,\" — it must show: horses sunset."
+ },
+ {
+  "name": "c111_1",
+  "q": "boneless pork chops",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Very lean. It works, but it's the one that dries out the fastest, so the brine and the thermometer matter even more.\" — it must show: boneless pork chops."
+ },
+ {
+  "name": "c111_2",
+  "q": "pork loin slices",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"Very lean. It works, but it's the one that dries out the fastest, so the brine and the thermometer matter even more.\" — it must show: pork loin slices."
+ },
+ {
+  "name": "c117_1",
+  "q": "raw meat counter",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"And a word about leaving the meat out before you cook it. A lot of the TV cooks say to let it sit on the counter an hour to come to room temperature. Don't do that with pork. Thirty minutes in the brine, in the fridge if\" — it must show: raw meat counter."
+ },
+ {
+  "name": "c117_2",
+  "q": "meat cutting board",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"And a word about leaving the meat out before you cook it. A lot of the TV cooks say to let it sit on the counter an hour to come to room temperature. Don't do that with pork. Thirty minutes in the brine, in the fridge if\" — it must show: meat cutting board."
+ },
+ {
+  "name": "c119_1",
+  "q": "kosher salt",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"About salt, because people get confused. Kosher salt has big flakes. Table salt is fine like sand. A tablespoon of table salt has almost twice the salt of a tablespoon of some kosher salts.\" — it must show: kosher salt."
+ },
+ {
+  "name": "c119_2",
+  "q": "salt flakes",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"About salt, because people get confused. Kosher salt has big flakes. Table salt is fine like sand. A tablespoon of table salt has almost twice the salt of a tablespoon of some kosher salts.\" — it must show: salt flakes."
+ },
+ {
+  "name": "c120_1",
+  "q": "salt spoon",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"So if your recipe says kosher and you use table salt, use a little less. I said three tablespoons of table salt for the brine instead of a quarter cup of kosher.\" — it must show: salt spoon."
+ },
+ {
+  "name": "c120_2",
+  "q": "table salt",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"So if your recipe says kosher and you use table salt, use a little less. I said three tablespoons of table salt for the brine instead of a quarter cup of kosher.\" — it must show: table salt."
+ },
+ {
+  "name": "c121_1",
+  "q": "salt shaker",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"And never use the salt with the iodine for a brine if you can help it. It can give the meat a little bit of a funny, metal taste. Plain salt, or kosher.\" — it must show: salt shaker."
+ },
+ {
+  "name": "c121_2",
+  "q": "salt bowl",
+  "scene": "Real documentary footage for a ranch cook's video about pork chops, while he says: \"And never use the salt with the iodine for a brine if you can help it. It can give the meat a little bit of a funny, metal taste. Plain salt, or kosher.\" — it must show: salt bowl."
+ }
+]

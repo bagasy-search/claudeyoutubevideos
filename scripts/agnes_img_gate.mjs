@@ -41,6 +41,7 @@ const CHECKS = {
 };
 // Identidad: si el item trae `ref` (cara del presentador), una llamada aparte compara cara vs foto (agnes-3.0
 // acertó 4/4 en identidad el 23-sep). Medido 9-oct: sin esto pasaban fotos con un Claudio más joven / otra cara.
+// `ref_lugar: true` en el item = la ref es un LUGAR/una toma previa (no una cara): se manda igual al generar, pero NO hay chequeo de identidad.
 const QID = `The FIRST image is the reference face of the main man. Look at the SECOND image: find the man who plays that role (the main man, not other people).
 Is he the same person as the reference: same face shape, nose, eyes, eyebrows, hairline and hair type, beard pattern, and about the same age?
 Reply ONLY with JSON: {"misma_persona": <0-10>, "motivo": "<one short sentence>"}`;
@@ -123,7 +124,7 @@ const t0 = Date.now();
 await Promise.all(Array.from({ length: Math.min(CONC, cola.length) }, async () => {
   while (cola.length) {
     const it = cola.shift();
-    res[it.name] = await juzgar(imgOf(it.name), String(it.prompt), it.ref);
+    res[it.name] = await juzgar(imgOf(it.name), String(it.prompt), it.ref_lugar ? null : it.ref);
     const r = res[it.name];
     console.log(`${r.ok ? "✓" : "✗"} ${it.name}${r.ok ? "" : "  [" + r.fallas.join(",") + "] " + r.motivo}`);
   }

@@ -1,0 +1,1322 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 4.84,
+  "id": "c01",
+  "d": 4.84,
+  "T": 5,
+  "text": "Your pork chops come out dry because of how you fry them. Out on the ranch, we never fried them.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S01",
+  "s": 4.84,
+  "e": 9.48,
+  "id": "c02",
+  "d": 4.64,
+  "T": 5,
+  "text": "Now, don't get me wrong. They touch a hot skillet. For about three minutes a side.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S01",
+  "s": 9.48,
+  "e": 14.16,
+  "id": "c03",
+  "d": 4.68,
+  "T": 5,
+  "text": "But frying a pork chop, start to finish, in an open pan, until it's done?",
+  "pad": 0.32
+ },
+ {
+  "sc": "S01",
+  "s": 14.16,
+  "e": 19.98,
+  "id": "c04",
+  "d": 5.82,
+  "T": 6,
+  "text": "That's how you get a gray piece of shoe leather that you have to drown in applesauce to swallow. And I'm going to show you why,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S01",
+  "s": 19.98,
+  "e": 24.14,
+  "id": "c05",
+  "d": 4.16,
+  "T": 5,
+  "text": "and I'm going to show you what we did instead. It takes about twenty minutes on the stove,",
+  "pad": 0.84
+ },
+ {
+  "sc": "S01",
+  "s": 24.14,
+  "e": 29.332,
+  "id": "c06",
+  "d": 5.192,
+  "T": 6,
+  "text": "it costs less than three dollars a plate, and the chop comes out so juicy you'll think somebody else made it.",
+  "pad": 0.81
+ },
+ {
+  "sc": "S01",
+  "s": 29.332,
+  "e": 34.765,
+  "id": "c07",
+  "d": 5.433,
+  "T": 6,
+  "text": "My name is Claudio. I cooked for a cattle crew for forty years. Fourteen men most of the year,",
+  "pad": 0.57
+ },
+ {
+  "sc": "S01",
+  "s": 34.765,
+  "e": 40.485,
+  "id": "c08",
+  "d": 5.72,
+  "T": 6,
+  "text": "forty when the spring roundup came, and every one of them had an opinion about pork chops. So let's get to it.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S02",
+  "s": 40.485,
+  "e": 45.265,
+  "id": "c09",
+  "d": 4.78,
+  "T": 5,
+  "text": "This is my skillet. Twelve inches, cast iron. This skillet is older than my truck,",
+  "pad": 0.22
+ },
+ {
+  "sc": "S02",
+  "s": 45.265,
+  "e": 50.485,
+  "id": "c10",
+  "d": 5.22,
+  "T": 6,
+  "text": "and my truck is a seventy-nine. You don't need this exact one. Any heavy skillet with a lid will do.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S02",
+  "s": 50.485,
+  "e": 54.545,
+  "id": "c11",
+  "d": 4.06,
+  "T": 5,
+  "text": "But it has to have a lid. Remember that, because the lid is half of the trick.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S03",
+  "s": 54.545,
+  "e": 59.745,
+  "id": "c12",
+  "d": 5.2,
+  "T": 6,
+  "text": "First, let's talk about why your chops come out dry. It's not your fault. Nobody told you.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S03",
+  "s": 59.745,
+  "e": 71.223,
+  "id": "c13",
+  "d": 11.478,
+  "T": 12,
+  "text": "A pork chop is a lean piece of meat. Not much fat running through it, not like a steak. When it gets hot, the muscle squeezes, like a fist closing, and the water inside gets pushed out. A little squeezing is fine.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S03",
+  "s": 71.223,
+  "e": 81.043,
+  "id": "c14",
+  "d": 9.82,
+  "T": 10,
+  "text": "That's cooking. But the hotter the meat gets in the middle, the harder that fist closes. And when you fry a chop in an open pan, you have to keep it on the heat until the middle is done.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S03",
+  "s": 81.043,
+  "e": 92.852,
+  "id": "c15",
+  "d": 11.809,
+  "T": 12,
+  "text": "By the time the middle gets there, the outside half inch has been cooking way past done for ten minutes. That's your gray, dry ring. And then there's the second problem. Most folks were taught that pork has to be cooked to one-sixty,",
+  "pad": 0.19
+ },
+ {
+  "sc": "S03",
+  "s": 92.852,
+  "e": 102.572,
+  "id": "c16",
+  "d": 9.72,
+  "T": 10,
+  "text": "or even one-seventy. My mother cooked it to one-seventy-five and served it with gravy because she had to. That was the old advice. The USDA changed it years ago.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S03",
+  "s": 102.572,
+  "e": 109.912,
+  "id": "c17",
+  "d": 7.34,
+  "T": 8,
+  "text": "Whole cuts of pork, chops, roasts, tenderloin, are safe at one hundred and forty-five degrees, with a three-minute rest.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S03",
+  "s": 109.912,
+  "e": 120.821,
+  "id": "c18",
+  "d": 10.909,
+  "T": 12,
+  "text": "One-forty-five. That's fifteen to thirty degrees less than what most people cook it to. And those fifteen degrees are the difference between juicy and sawdust. So, two things are drying out your chops.",
+  "pad": 1.09
+ },
+ {
+  "sc": "S03",
+  "s": 120.821,
+  "e": 124.721,
+  "id": "c19",
+  "d": 3.9,
+  "T": 5,
+  "text": "Too long in the open pan, and too hot in the middle. We fix both.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S04",
+  "s": 124.721,
+  "e": 136.441,
+  "id": "c20",
+  "d": 11.72,
+  "T": 12,
+  "text": "Here's what we did on the ranch. I call it brine, sear, splash, lid. Don Ernesto taught me this. He was the cook before me, an old man when I was a young one, and he didn't own a thermometer in his life.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S04",
+  "s": 136.441,
+  "e": 144.421,
+  "id": "c21",
+  "d": 7.98,
+  "T": 9,
+  "text": "He used to say, \"The fire makes the color. The steam makes the juice.\" It took me about ten years to understand what he meant. Let me show you.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S05",
+  "s": 144.421,
+  "e": 155.231,
+  "id": "c22",
+  "d": 10.81,
+  "T": 11,
+  "text": "Step one. The brine. Four cups of water. A quarter cup of kosher salt. Two tablespoons of brown sugar. Stir it until it's dissolved. You can't see any grains on the bottom, then you're done.",
+  "pad": 0.19
+ },
+ {
+  "sc": "S05",
+  "s": 155.231,
+  "e": 164.131,
+  "id": "c23",
+  "d": 8.9,
+  "T": 10,
+  "text": "If you only have table salt, use a little less. About three tablespoons. Table salt is finer, so a spoonful of it is saltier than a spoonful of kosher.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S06",
+  "s": 164.131,
+  "e": 175.831,
+  "id": "c24",
+  "d": 11.7,
+  "T": 12,
+  "text": "Now the chops go in. Four bone-in chops, an inch to an inch and a quarter thick. Thirty minutes. Not longer. Why does this work? Salt water gets into the meat and loosens up those muscle fibers a little,",
+  "pad": 0.3
+ },
+ {
+  "sc": "S06",
+  "s": 175.831,
+  "e": 186.996,
+  "id": "c25",
+  "d": 11.165,
+  "T": 12,
+  "text": "so they don't squeeze so hard when they get hot. The meat holds on to more of its own juice. And the bit of sugar helps it brown in the pan. But I said thirty minutes, and I mean it. People think, if thirty is good,",
+  "pad": 0.84
+ },
+ {
+  "sc": "S06",
+  "s": 186.996,
+  "e": 197.856,
+  "id": "c26",
+  "d": 10.86,
+  "T": 12,
+  "text": "overnight must be better. It isn't. Leave a chop in that brine all night and it comes out tasting like ham. Spongy. Too salty. Thirty minutes. Set a timer. Go feed the dog.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S07",
+  "s": 197.856,
+  "e": 207.436,
+  "id": "c27",
+  "d": 9.58,
+  "T": 10,
+  "text": "While that's brining, let me tell you something about thickness, because this matters more than anything else you'll do today. Look for chops an inch to an inch and a quarter thick. With the bone in.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S07",
+  "s": 207.436,
+  "e": 218.642,
+  "id": "c28",
+  "d": 11.206,
+  "T": 12,
+  "text": "The bone slows the cooking down next to it, so the meat around it stays juicy. Thin chops, those half-inch ones that come six to a tray, cook through in the time it takes to brown them. You can't save those with any trick.",
+  "pad": 0.79
+ },
+ {
+  "sc": "S07",
+  "s": 218.642,
+  "e": 228.342,
+  "id": "c29",
+  "d": 9.7,
+  "T": 10,
+  "text": "If that's all you've got, I'll tell you what to do with them in a minute. When I go to the store, I go to the meat counter, and I ask for center-cut rib chops, bone in, an inch and a quarter thick.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S07",
+  "s": 228.342,
+  "e": 239.942,
+  "id": "c30",
+  "d": 11.6,
+  "T": 12,
+  "text": "If they only have thin ones in the case, ask them to cut you some thick. They'll do it. That's their job, and most butchers are happy somebody asked. Right now that runs about four dollars and thirty cents a pound where I shop.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S08",
+  "s": 239.942,
+  "e": 250.695,
+  "id": "c31",
+  "d": 10.753,
+  "T": 11,
+  "text": "Thirty minutes. Chops come out of the brine. And now the part everybody skips. Dry them. I mean really dry. Paper towels, both sides, press down. Then flip and do it again.",
+  "pad": 0.25
+ },
+ {
+  "sc": "S08",
+  "s": 250.695,
+  "e": 260.535,
+  "id": "c32",
+  "d": 9.84,
+  "T": 10,
+  "text": "A wet chop won't brown. The pan has to boil off all that water before the meat can start to color, and by then you've overcooked it. Season with pepper and a little ancho chile powder.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S08",
+  "s": 260.535,
+  "e": 271.035,
+  "id": "c33",
+  "d": 10.5,
+  "T": 11,
+  "text": "A teaspoon of each, for four chops. No salt. The brine already did the salting. If you salt again, you'll be drinking water all night. I learned that one the hard way. The crew let me know.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S09",
+  "s": 271.035,
+  "e": 282.254,
+  "id": "c34",
+  "d": 11.219,
+  "T": 12,
+  "text": "Step two. The sear. Skillet on medium-high. Two tablespoons of lard or bacon grease. That's what we always had. Bacon grease in a coffee can by the stove. If you only have vegetable oil,",
+  "pad": 0.78
+ },
+ {
+  "sc": "S09",
+  "s": 282.254,
+  "e": 289.254,
+  "id": "c35",
+  "d": 7.0,
+  "T": 8,
+  "text": "that works fine too. Heat it until it shimmers. You see that? It moves like water on a hot road. That's when it's ready.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S10",
+  "s": 289.254,
+  "e": 300.054,
+  "id": "c36",
+  "d": 10.8,
+  "T": 11,
+  "text": "Chops go in. Listen to that. Now here is the hardest part of this whole recipe. Don't touch them. Three minutes. Don't poke them, don't lift up the corner to see, don't push them around.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S10",
+  "s": 300.054,
+  "e": 304.774,
+  "id": "c37",
+  "d": 4.72,
+  "T": 5,
+  "text": "Leave them alone. The crust only forms when the meat sits still against the hot iron.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S11",
+  "s": 304.774,
+  "e": 315.022,
+  "id": "c38",
+  "d": 10.248,
+  "T": 11,
+  "text": "Three minutes is a long time when you're standing there. So let me tell you about Rusty. Rusty's been on the crew about eight years. Skinny kid, well, he's thirty-five now, but he's still a kid to me.",
+  "pad": 0.75
+ },
+ {
+  "sc": "S11",
+  "s": 315.022,
+  "e": 324.462,
+  "id": "c39",
+  "d": 9.44,
+  "T": 10,
+  "text": "First week he worked for us, he came in the kitchen while I was searing chops, and he reached over and flipped one with his fingers. Burned himself. Ruined the crust. And he looked at me and said,",
+  "pad": 0.56
+ },
+ {
+  "sc": "S11",
+  "s": 324.462,
+  "e": 330.902,
+  "id": "c40",
+  "d": 6.44,
+  "T": 7,
+  "text": "\"I was just checking.\" Nobody needs to check. The chop will tell you when it's ready. It lets go of the pan on its own.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S12",
+  "s": 330.902,
+  "e": 339.662,
+  "id": "c41",
+  "d": 8.76,
+  "T": 9,
+  "text": "Three minutes. Flip. Look at that color. Deep golden brown. That's not burnt. That's flavor. Another three minutes on the second side. Same rule.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S12",
+  "s": 339.662,
+  "e": 344.225,
+  "id": "c42",
+  "d": 4.563,
+  "T": 5,
+  "text": "Don't touch it. Now, here's where everybody else keeps frying, and where we stop.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S13",
+  "s": 344.225,
+  "e": 353.625,
+  "id": "c43",
+  "d": 9.4,
+  "T": 10,
+  "text": "Step three. The splash. Push the chops to the side. Add one large onion, sliced. And two roasted green chiles, chopped. Canned is fine.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S13",
+  "s": 353.625,
+  "e": 362.045,
+  "id": "c44",
+  "d": 8.42,
+  "T": 9,
+  "text": "I'm not going to tell you to roast your own chiles on a Tuesday night. Cook them three minutes in that grease. They'll soak up all the brown bits from the bottom of the pan.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S14",
+  "s": 362.045,
+  "e": 373.468,
+  "id": "c45",
+  "d": 11.423,
+  "T": 12,
+  "text": "Now half a cup of chicken broth. Pour it in. It'll sizzle and steam up. Good. Scrape the bottom with your spatula. All that brown stuff stuck to the pan, that's the best part. It goes into the sauce.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S14",
+  "s": 373.468,
+  "e": 379.608,
+  "id": "c46",
+  "d": 6.14,
+  "T": 7,
+  "text": "Lay the chops back on top of the onions. Not in the liquid. On top of the onions. Like they're lying on a bed.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S16",
+  "s": 379.608,
+  "e": 390.648,
+  "id": "c47",
+  "d": 11.04,
+  "T": 12,
+  "text": "Step four. The lid. Lid on. Turn the heat down to low. This is the trick. This is why we never fried them. With the lid on, the steam from that broth wraps all the way around the chop.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S16",
+  "s": 390.648,
+  "e": 400.388,
+  "id": "c48",
+  "d": 9.74,
+  "T": 10,
+  "text": "The meat finishes cooking gently, from all sides at once, instead of getting blasted from underneath. The outside doesn't overcook while you wait for the middle. That's what Don Ernesto meant.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S16",
+  "s": 400.388,
+  "e": 409.369,
+  "id": "c49",
+  "d": 8.981,
+  "T": 10,
+  "text": "The fire makes the color. The steam makes the juice. Six to eight minutes. Depends how thick your chops are. And here's where I'll tell you, I own one of these.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S18",
+  "s": 409.369,
+  "e": 418.829,
+  "id": "c50",
+  "d": 9.46,
+  "T": 10,
+  "text": "A thermometer. Don Ernesto used his finger. I use this. I'm not proud of it. But I'll tell you what, since I started using it, I haven't served one dry chop.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S18",
+  "s": 418.829,
+  "e": 430.449,
+  "id": "c51",
+  "d": 11.62,
+  "T": 12,
+  "text": "Slide it in from the side into the thickest part, not touching the bone. The bone runs hotter and it'll lie to you. You're looking for one hundred and forty-five degrees. When it says one-forty-five, they come off the heat.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S19",
+  "s": 430.449,
+  "e": 442.215,
+  "id": "c52",
+  "d": 11.766,
+  "T": 12,
+  "text": "Step five. The rest. Off the heat, onto a plate. A tablespoon of butter on top. And then you wait. Five minutes. During those five minutes, the temperature inside keeps creeping up a couple of degrees.",
+  "pad": 0.23
+ },
+ {
+  "sc": "S19",
+  "s": 442.215,
+  "e": 453.215,
+  "id": "c53",
+  "d": 11.0,
+  "T": 12,
+  "text": "And those muscle fibers that were squeezed tight relax a little, and they pull the juice back in. Cut it right away and the juice runs all over the plate. Wait five minutes and it stays in the meat where it belongs.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S19",
+  "s": 453.215,
+  "e": 459.075,
+  "id": "c54",
+  "d": 5.86,
+  "T": 7,
+  "text": "That rest also counts as the three minutes the USDA asks for. So you're safe, and you're juicy.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S20",
+  "s": 459.075,
+  "e": 469.555,
+  "id": "c55",
+  "d": 10.48,
+  "T": 11,
+  "text": "Now look at this. Cut into it, right by the bone. See that? A little bit of pink, right next to the bone. That's correct. That's what one-forty-five looks like. It's not raw.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S20",
+  "s": 469.555,
+  "e": 478.289,
+  "id": "c56",
+  "d": 8.734,
+  "T": 9,
+  "text": "It's done. Our grandmothers were told pink pork would kill you, and back then that might have been good advice. It's not true anymore for a chop cooked to one-forty-five.",
+  "pad": 0.27
+ },
+ {
+  "sc": "S20",
+  "s": 478.289,
+  "e": 482.749,
+  "id": "c57",
+  "d": 4.46,
+  "T": 5,
+  "text": "If you'd rather have no pink at all, take it to one-fifty. Just don't go past that.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S21",
+  "s": 482.749,
+  "e": 490.559,
+  "id": "c58",
+  "d": 7.81,
+  "T": 8,
+  "text": "Spoon the onions and the pan juices over the top. That broth, with the onion and the green chile and the brown bits and the butter running into it?",
+  "pad": 0.19
+ },
+ {
+  "sc": "S21",
+  "s": 490.559,
+  "e": 494.929,
+  "id": "c59",
+  "d": 4.37,
+  "T": 5,
+  "text": "That's your sauce. You didn't even have to make a sauce. It made itself.",
+  "pad": 0.63
+ },
+ {
+  "sc": "S22",
+  "s": 494.929,
+  "e": 502.766,
+  "id": "c60",
+  "d": 7.837,
+  "T": 8,
+  "text": "Rusty, come here. Try that. He says it's all right. That's the highest compliment Rusty has ever given anything. He said the same thing about his wedding.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S24",
+  "s": 502.766,
+  "e": 513.726,
+  "id": "c61",
+  "d": 10.96,
+  "T": 12,
+  "text": "Now, I put every one of these recipes, the way we really made them, in a book. I'll tell you about it at the end. For now, let me tell you what goes wrong, because something always goes wrong the first time.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S25",
+  "s": 513.726,
+  "e": 523.486,
+  "id": "c62",
+  "d": 9.76,
+  "T": 10,
+  "text": "I've got these written down in the crew book. Every time somebody messed one up, I wrote down why. The chop came out dry. Nine times out of ten, you cooked it past one-sixty.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S25",
+  "s": 523.486,
+  "e": 533.164,
+  "id": "c63",
+  "d": 9.678,
+  "T": 10,
+  "text": "Get the thermometer. Pull at one-forty-five. Even a cheap one works. Mine was twelve dollars. There's no crust. Either the chop was wet, or you moved it too soon.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S25",
+  "s": 533.164,
+  "e": 543.644,
+  "id": "c64",
+  "d": 10.48,
+  "T": 11,
+  "text": "Dry it like you mean it. And leave it alone those three minutes. If it sticks when you try to turn it, it's not ready yet. Wait thirty more seconds and it'll let go on its own. It's too salty.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S25",
+  "s": 543.644,
+  "e": 552.224,
+  "id": "c65",
+  "d": 8.58,
+  "T": 9,
+  "text": "You left it in the brine too long, or you salted it again after the brine. Thirty minutes. No extra salt. That's all. The onions burned.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S25",
+  "s": 552.224,
+  "e": 561.444,
+  "id": "c66",
+  "d": 9.22,
+  "T": 10,
+  "text": "Your heat was too high when you added them, or you didn't add the broth fast enough. Turn it down to medium when the chops come out of the pan, and have the broth measured and ready before you start.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S26",
+  "s": 561.444,
+  "e": 572.191,
+  "id": "c67",
+  "d": 10.747,
+  "T": 11,
+  "text": "Now, those thin chops I told you about. Half-inch. If that's what you've got, skip the lid step entirely. Brine them only fifteen minutes. Sear them two minutes a side, and they're done.",
+  "pad": 0.25
+ },
+ {
+  "sc": "S26",
+  "s": 572.191,
+  "e": 580.511,
+  "id": "c68",
+  "d": 8.32,
+  "T": 9,
+  "text": "By the time they're brown, they're cooked through. Make the onions and the splash of broth after they come out, and pour it over the top. You'll still have the sauce.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S27",
+  "s": 580.511,
+  "e": 591.571,
+  "id": "c69",
+  "d": 11.06,
+  "T": 12,
+  "text": "If it's just the two of you, make two chops in a ten-inch skillet. Cut the brine in half. Two cups of water, two tablespoons of kosher salt, one tablespoon of brown sugar. Everything else, the same.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S28",
+  "s": 591.571,
+  "e": 603.017,
+  "id": "c70",
+  "d": 11.446,
+  "T": 12,
+  "text": "And if you've got a crowd. When the roundup came and I had forty men, I didn't do this one skillet at a time. Here's how you do it for twelve. Sear the chops in batches, three or four at a time, and don't crowd the pan,",
+  "pad": 0.55
+ },
+ {
+  "sc": "S28",
+  "s": 603.017,
+  "e": 613.997,
+  "id": "c71",
+  "d": 10.98,
+  "T": 12,
+  "text": "or they'll steam instead of brown. As each batch comes out, lay them in a big roasting pan on a bed of onions and green chile. Pour the pan juices and the broth over the onions, cover the whole thing with foil,",
+  "pad": 1.02
+ },
+ {
+  "sc": "S28",
+  "s": 613.997,
+  "e": 623.474,
+  "id": "c72",
+  "d": 9.477,
+  "T": 10,
+  "text": "and put it in a three-hundred-and-twenty-five-degree oven until the chops hit one-forty-five. Usually fifteen to twenty minutes. The oven does what the lid does, just bigger.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S29",
+  "s": 623.474,
+  "e": 635.054,
+  "id": "c73",
+  "d": 11.58,
+  "T": 12,
+  "text": "Let me tell you what this costs, because I know you're thinking about it. I always was. When you feed fourteen men every day, you think about it. Four thick bone-in chops, about three pounds, that's around thirteen dollars.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S29",
+  "s": 635.054,
+  "e": 644.994,
+  "id": "c74",
+  "d": 9.94,
+  "T": 11,
+  "text": "One onion, a dollar thirty. A can of green chiles, a dollar fifty. Half a cup of broth, a tablespoon of butter, the brine, the grease, call it a dollar together.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S29",
+  "s": 644.994,
+  "e": 655.771,
+  "id": "c75",
+  "d": 10.777,
+  "T": 11,
+  "text": "That's about sixteen dollars and eighty cents. Divided by four, that's about four dollars and twenty cents a plate. Put some beans and tortillas next to it and you've fed a family for less than one drive-through meal.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S30",
+  "s": 655.771,
+  "e": 665.111,
+  "id": "c76",
+  "d": 9.34,
+  "T": 10,
+  "text": "Leftovers. Keep them in the fridge, three days. The trouble with leftover pork chops is the microwave. It dries them out in about forty seconds, and all that work is gone.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S31",
+  "s": 665.111,
+  "e": 676.851,
+  "id": "c77",
+  "d": 11.74,
+  "T": 12,
+  "text": "Here's how you reheat them. Skillet on low. A splash of broth, maybe two tablespoons. Chop goes in, lid on, five or six minutes. Turn it once. It comes back almost as good as the first day.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S31",
+  "s": 676.851,
+  "e": 681.392,
+  "id": "c78",
+  "d": 4.541,
+  "T": 5,
+  "text": "You want it hot all the way through, steaming, that's one-sixty-five for leftovers.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S32",
+  "s": 681.392,
+  "e": 691.972,
+  "id": "c79",
+  "d": 10.58,
+  "T": 11,
+  "text": "But here's what we really did with leftovers on the ranch. Next morning. Slice the cold chop thin, against the grain. Warm some flour tortillas on the dry skillet, thirty seconds a side.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S32",
+  "s": 691.972,
+  "e": 702.772,
+  "id": "c80",
+  "d": 10.8,
+  "T": 11,
+  "text": "Heat the leftover onions and chile from the pan. Put the pork in the tortilla, onions on top, a spoon of salsa. That's breakfast for a man who's going to be on a horse for ten hours. Rusty eats four of them.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S33",
+  "s": 702.772,
+  "e": 712.973,
+  "id": "c81",
+  "d": 10.201,
+  "T": 11,
+  "text": "I want to show you something. A few years back, my nephew told me I was making a big fuss over nothing. He said a pork chop is a pork chop. So we did a test. Same store, same package,",
+  "pad": 0.8
+ },
+ {
+  "sc": "S33",
+  "s": 712.973,
+  "e": 723.333,
+  "id": "c82",
+  "d": 10.36,
+  "T": 11,
+  "text": "two chops cut the same thickness. He fried his the way his mother did, open pan, flipping every couple of minutes until it looked done. I did mine. Brine, sear, splash, lid.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S35",
+  "s": 723.333,
+  "e": 734.893,
+  "id": "c83",
+  "d": 11.56,
+  "T": 12,
+  "text": "His came out at one-sixty-eight. Gray all the way through. When he cut it, nothing came out. You could hear the knife on it. Mine came out at one-forty-five, rested. When I cut it, the juice ran down to the bone.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S35",
+  "s": 734.893,
+  "e": 741.639,
+  "id": "c84",
+  "d": 6.746,
+  "T": 7,
+  "text": "Same chop. Same price. Twenty minutes for both of them. He cooks them my way now. He won't admit it, but his wife told me.",
+  "pad": 0.25
+ },
+ {
+  "sc": "S36",
+  "s": 741.639,
+  "e": 751.799,
+  "id": "c85",
+  "d": 10.16,
+  "T": 11,
+  "text": "Now, a few more things about buying them, because a good chop starts at the store. Look at the color. You want pink to a light red, not pale and gray. Look at the fat on the edge.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S36",
+  "s": 751.799,
+  "e": 759.319,
+  "id": "c86",
+  "d": 7.52,
+  "T": 8,
+  "text": "White and firm, not yellow. And a little marbling, little white threads running through the meat, is a good sign. That's flavor and juice.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S36",
+  "s": 759.319,
+  "e": 768.899,
+  "id": "c87",
+  "d": 9.58,
+  "T": 10,
+  "text": "A chop that's perfectly smooth and pale all the way through is going to be dry no matter what you do to it. Then read the label. Some pork is sold already soaked in a salt solution.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S36",
+  "s": 768.899,
+  "e": 778.827,
+  "id": "c88",
+  "d": 9.928,
+  "T": 11,
+  "text": "The label will say something like enhanced, or contains up to some percent of a solution. That's fine meat, it's just been brined at the plant. If your chops say that, skip my brine.",
+  "pad": 1.07
+ },
+ {
+  "sc": "S36",
+  "s": 778.827,
+  "e": 783.107,
+  "id": "c89",
+  "d": 4.28,
+  "T": 5,
+  "text": "Go straight to drying and searing. Brine it again and it'll come out like a salt lick.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S37",
+  "s": 783.107,
+  "e": 793.847,
+  "id": "c90",
+  "d": 10.74,
+  "T": 11,
+  "text": "And for the folks who don't have a thermometer yet. Don Ernesto's trick. Touch the meat with your finger. Then touch the soft part of your palm, under your thumb, with your hand open and relaxed. That's raw.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S37",
+  "s": 793.847,
+  "e": 803.644,
+  "id": "c91",
+  "d": 9.797,
+  "T": 10,
+  "text": "Now touch your thumb to your middle finger and feel that same spot. It gets firmer. That's about where a chop at one-forty-five feels. Springy, gives a little, comes right back.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S37",
+  "s": 803.644,
+  "e": 812.644,
+  "id": "c92",
+  "d": 9.0,
+  "T": 10,
+  "text": "If it feels like the end of your nose, it's overdone. It's not as good as a thermometer. Don Ernesto was right about a lot of things, but I'd still buy the thermometer.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S38",
+  "s": 812.644,
+  "e": 823.964,
+  "id": "c93",
+  "d": 11.32,
+  "T": 12,
+  "text": "On the roundup, out in the open, we did the same thing with a Dutch oven on the coals. Same steps. Sear the chops in the bottom of the pot over a hot bed of coals. Onion and chile. Splash of broth.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S38",
+  "s": 823.964,
+  "e": 834.044,
+  "id": "c94",
+  "d": 10.08,
+  "T": 11,
+  "text": "Lid on. Then you rake most of the coals out from under it and put a few on the lid, so the heat comes from top and bottom, gentle. Forty men. Six Dutch ovens in a row.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S38",
+  "s": 834.044,
+  "e": 840.365,
+  "id": "c95",
+  "d": 6.321,
+  "T": 7,
+  "text": "Nobody complained, and that crew complained about everything. Coffee too strong, coffee too weak. Never the chops.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S39",
+  "s": 840.365,
+  "e": 852.045,
+  "id": "c96",
+  "d": 11.68,
+  "T": 12,
+  "text": "What do you serve with it? On the ranch, the answer was always the same. A pot of beans and a stack of tortillas. And if there was a cabbage in the cellar, fried cabbage with bacon. I'll show you both of those in this series.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S39",
+  "s": 852.045,
+  "e": 858.485,
+  "id": "c97",
+  "d": 6.44,
+  "T": 7,
+  "text": "A pork chop with beans and tortillas and some of that onion sauce spooned over everything. That's a plate that'll hold you till dark.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S40",
+  "s": 858.485,
+  "e": 870.183,
+  "id": "c98",
+  "d": 11.698,
+  "T": 12,
+  "text": "And here's a second supper out of the leftovers, if you've got a couple of chops left over. Cut the meat off the bone into little cubes. Cut two or three potatoes into small dice. Fry the potatoes in a tablespoon of bacon grease,",
+  "pad": 0.3
+ },
+ {
+  "sc": "S40",
+  "s": 870.183,
+  "e": 880.803,
+  "id": "c99",
+  "d": 10.62,
+  "T": 11,
+  "text": "medium heat, lid on for eight minutes, lid off for five more until they brown. Then the pork, and whatever onions and green chile you saved from the pan, and stir it all until it's hot through.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S40",
+  "s": 880.803,
+  "e": 890.443,
+  "id": "c100",
+  "d": 9.64,
+  "T": 10,
+  "text": "Make two wells in it and crack an egg in each one. Lid on two minutes. That's pork and green chile hash. That one cost us about a dollar a plate, because the pork was already paid for.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S41",
+  "s": 890.443,
+  "e": 901.651,
+  "id": "c101",
+  "d": 11.208,
+  "T": 12,
+  "text": "Before I let you go, a couple of things people ask me. Can I do this with boneless chops? Yes. Same thing. They'll cook a little faster, so start checking with the thermometer at five minutes under the lid instead of six.",
+  "pad": 0.79
+ },
+ {
+  "sc": "S41",
+  "s": 901.651,
+  "e": 913.371,
+  "id": "c102",
+  "d": 11.72,
+  "T": 12,
+  "text": "Can I skip the brine? You can. They'll still be better than fried. But that thirty minutes is cheap insurance, and it's the difference between a good chop and the one your family talks about. What about a nonstick pan?",
+  "pad": 0.28
+ },
+ {
+  "sc": "S41",
+  "s": 913.371,
+  "e": 923.011,
+  "id": "c103",
+  "d": 9.64,
+  "T": 10,
+  "text": "It works, but you won't get the same crust. Cast iron holds the heat when the cold meat goes in. A thin pan drops in temperature, and the chop steams instead of searing.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S41",
+  "s": 923.011,
+  "e": 933.405,
+  "id": "c104",
+  "d": 10.394,
+  "T": 11,
+  "text": "If you don't have cast iron, use the heaviest pan you own. Why the green chile? Because that's what we had. It gives the sauce a little bit of heat and a little bit of smoke, nothing that'll hurt anybody.",
+  "pad": 0.61
+ },
+ {
+  "sc": "S41",
+  "s": 933.405,
+  "e": 938.205,
+  "id": "c105",
+  "d": 4.8,
+  "T": 5,
+  "text": "If your family doesn't like heat, leave it out and use a little extra onion. Nobody will arrest you.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S42",
+  "s": 938.205,
+  "e": 944.845,
+  "id": "c106",
+  "d": 6.64,
+  "T": 7,
+  "text": "Let me tell you about the different chops, because the meat case has four or five kinds and the labels don't help. The rib chop.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S42",
+  "s": 944.845,
+  "e": 955.796,
+  "id": "c107",
+  "d": 10.951,
+  "T": 12,
+  "text": "That's the one I like best. It has the curved bone on one side and a little bit of fat running through it. Juicy and forgiving. The loin chop. It looks like a little T-bone steak, with the bone in the middle,",
+  "pad": 1.05
+ },
+ {
+  "sc": "S42",
+  "s": 955.796,
+  "e": 965.516,
+  "id": "c108",
+  "d": 9.72,
+  "T": 10,
+  "text": "the loin on one side and a little piece of tenderloin on the other. Good, but the tenderloin side cooks faster, so watch it. The sirloin chop, from the back near the hip.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S42",
+  "s": 965.516,
+  "e": 976.656,
+  "id": "c109",
+  "d": 11.14,
+  "T": 12,
+  "text": "Cheaper, a little tougher, with some odd bones in it. Fine for this recipe. And the blade chop, or shoulder chop. That's the cheapest one, darker meat, with a lot of fat and gristle running through it.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S42",
+  "s": 976.656,
+  "e": 988.209,
+  "id": "c110",
+  "d": 11.553,
+  "T": 12,
+  "text": "It's not a good chop for one-forty-five. That one wants to be cooked low and slow, like the cheap beef I'll show you later in this series. If you see \"boneless center-cut,\" that's the loin with the bone taken out. Lean.",
+  "pad": 0.45
+ },
+ {
+  "sc": "S42",
+  "s": 988.209,
+  "e": 994.909,
+  "id": "c111",
+  "d": 6.7,
+  "T": 7,
+  "text": "Very lean. It works, but it's the one that dries out the fastest, so the brine and the thermometer matter even more.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S43",
+  "s": 994.909,
+  "e": 1005.749,
+  "id": "c112",
+  "d": 10.84,
+  "T": 11,
+  "text": "I'll tell you a story about the first time I cooked pork chops for the crew. I was twenty-two. Don Ernesto had gone to town for the day, and he left me in charge of supper. Fourteen men. I wanted to show off.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S43",
+  "s": 1005.749,
+  "e": 1017.469,
+  "id": "c113",
+  "d": 11.72,
+  "T": 12,
+  "text": "So I got the biggest fire going I could, I put the chops in the hottest pan I had, and I cooked them until they looked like the ones in a magazine. Dark brown, almost black on the edges. I put them on the table and I was proud.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S43",
+  "s": 1017.469,
+  "e": 1029.069,
+  "id": "c114",
+  "d": 11.6,
+  "T": 12,
+  "text": "And nobody said a word. They chewed. And they chewed. One of the old hands, a man named Chuy, he was missing a few teeth, he just put his fork down and ate his beans. When Don Ernesto came back that night,",
+  "pad": 0.4
+ },
+ {
+  "sc": "S43",
+  "s": 1029.069,
+  "e": 1037.349,
+  "id": "c115",
+  "d": 8.28,
+  "T": 9,
+  "text": "he took one bite of a cold leftover chop, he looked at me and he said, \"Mijo, you cooked these three times. Once in the pan, once in your pride,",
+  "pad": 0.72
+ },
+ {
+  "sc": "S43",
+  "s": 1037.349,
+  "e": 1045.189,
+  "id": "c116",
+  "d": 7.84,
+  "T": 8,
+  "text": "and once on the plate while they sat there.\" The next week he showed me brine, sear, splash, lid. I never cooked them the other way again.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S44",
+  "s": 1045.189,
+  "e": 1056.324,
+  "id": "c117",
+  "d": 11.135,
+  "T": 12,
+  "text": "And a word about leaving the meat out before you cook it. A lot of the TV cooks say to let it sit on the counter an hour to come to room temperature. Don't do that with pork. Thirty minutes in the brine, in the fridge if your kitchen is warm,",
+  "pad": 0.87
+ },
+ {
+  "sc": "S44",
+  "s": 1056.324,
+  "e": 1064.764,
+  "id": "c118",
+  "d": 8.44,
+  "T": 9,
+  "text": "and that's plenty. Raw meat shouldn't sit out more than two hours total, and it doesn't need to. A cold chop from the brine browns just fine if you dry it well.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S45",
+  "s": 1064.764,
+  "e": 1075.703,
+  "id": "c119",
+  "d": 10.939,
+  "T": 12,
+  "text": "About salt, because people get confused. Kosher salt has big flakes. Table salt is fine like sand. A tablespoon of table salt has almost twice the salt of a tablespoon of some kosher salts.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S45",
+  "s": 1075.703,
+  "e": 1084.843,
+  "id": "c120",
+  "d": 9.14,
+  "T": 10,
+  "text": "So if your recipe says kosher and you use table salt, use a little less. I said three tablespoons of table salt for the brine instead of a quarter cup of kosher.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S45",
+  "s": 1084.843,
+  "e": 1093.123,
+  "id": "c121",
+  "d": 8.28,
+  "T": 9,
+  "text": "And never use the salt with the iodine for a brine if you can help it. It can give the meat a little bit of a funny, metal taste. Plain salt, or kosher.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S46",
+  "s": 1093.123,
+  "e": 1103.393,
+  "id": "c122",
+  "d": 10.27,
+  "T": 11,
+  "text": "And I know you're going to want to lift that lid to look. Everybody does. Rusty does it every time when he thinks I'm not watching. You can look once, quick, if you have to. But every time you lift it,",
+  "pad": 0.73
+ },
+ {
+  "sc": "S46",
+  "s": 1103.393,
+  "e": 1112.45,
+  "id": "c123",
+  "d": 9.057,
+  "T": 10,
+  "text": "the steam goes out and it takes a minute or two to build back up. That's why I say use the thermometer at six minutes, not before. Lift once, check, put it back.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S47",
+  "s": 1112.45,
+  "e": 1123.71,
+  "id": "c124",
+  "d": 11.26,
+  "T": 12,
+  "text": "Now, I made a joke about applesauce, but I'll tell you, applesauce with a pork chop is a good thing when the chop is good. On Sundays my wife made it. Four apples, peeled and cut up, half a cup of water,",
+  "pad": 0.74
+ },
+ {
+  "sc": "S47",
+  "s": 1123.71,
+  "e": 1131.03,
+  "id": "c125",
+  "d": 7.32,
+  "T": 8,
+  "text": "a spoon of sugar and a little cinnamon. Twenty minutes in a covered pot, then mash it with a fork. It's for flavor, not to help you swallow.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S48",
+  "s": 1131.03,
+  "e": 1140.895,
+  "id": "c126",
+  "d": 9.865,
+  "T": 11,
+  "text": "Now, about that book. This crew book is about forty years of what we cooked out here. Some pages you can't even read anymore. Grease, coffee, one of them got rained on.",
+  "pad": 1.13
+ },
+ {
+  "sc": "S48",
+  "s": 1140.895,
+  "e": 1148.695,
+  "id": "c127",
+  "d": 7.8,
+  "T": 8,
+  "text": "A few years ago I sat down and put all of it, every recipe, the way we really made it, into a real book. It's called The Vaquero's Cookbook.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S49",
+  "s": 1148.695,
+  "e": 1158.455,
+  "id": "c128",
+  "d": 9.76,
+  "T": 10,
+  "text": "This pork chop is on page twenty-nine. Brine, sear, splash, lid. With the times, the temperatures, the mistakes, and how to do it for two or for twelve.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S49",
+  "s": 1158.455,
+  "e": 1169.295,
+  "id": "c129",
+  "d": 10.84,
+  "T": 11,
+  "text": "Same as I just showed you, but on paper, so you can have it open on the counter while you cook. The beans, the ribs, the potatoes, the cheap beef that melts like butter, the eggs without a drop of oil.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S49",
+  "s": 1169.295,
+  "e": 1179.04,
+  "id": "c130",
+  "d": 9.745,
+  "T": 10,
+  "text": "All of it. It's twenty-seven dollars. That's every recipe from the ranch for less than one family dinner out. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S50",
+  "s": 1179.04,
+  "e": 1190.04,
+  "id": "c131",
+  "d": 11.0,
+  "T": 12,
+  "text": "That's it. Brine, sear, splash, lid. And pull it at one-forty-five. Next time, I'm going to show you the beans. See that pot back there? Stop boiling your beans.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S50",
+  "s": 1190.04,
+  "e": 1196.76,
+  "id": "c132",
+  "d": 6.72,
+  "T": 7,
+  "text": "I'll show you how we cooked them for forty men, and not one of us ever soaked a bean the night before. Ándale. See you then.",
+  "pad": 0.28
+ }
+]
