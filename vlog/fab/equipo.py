@@ -126,6 +126,7 @@ def planos(necesidad, extra=1.1):
                 "Alternate shot sizes: never two of the same size in a row (wide / medium / close detail).",
                 "Claudio, when present, is SHOWN DOING the actions with his hands (pouring, filling, hanging, checking with a flashlight), face visible in medium and wide shots. "
                 "Mark those shots with \"cara\": true — but only about ONE shot in three: the others are his hands at work, the objects, the place and the results. Family members appear doing ordinary things; children only fully clothed and safe.",
+                "In these shots nobody looks at the camera: Claudio and the family are busy with the task, looking at what they do (only the avatar talks to camera).",
                 "Write 'foto' in English: only what is visible (who, doing what, where, objects, light). 60-90 words. No camera words (cinematic, close-up shot, bokeh, 4k).",
                 "NEVER any paper, sign, label, book, screen, calendar or package where text could be read. No brand names.",
                 "'mov' = ONE simple visible movement that lasts 2 seconds (the hand tips the bucket and water pours out). Never 'stays still'.",
