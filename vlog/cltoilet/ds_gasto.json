@@ -1,0 +1,42 @@
+{
+ "guionista": {
+  "llamadas": 3,
+  "usd": 0.15851
+ },
+ "critico": {
+  "llamadas": 1,
+  "usd": 0.00248
+ },
+ "arte": {
+  "llamadas": 1,
+  "usd": 0.00274
+ },
+ "arte_juez": {
+  "llamadas": 7,
+  "usd": 0.00151
+ },
+ "plan": {
+  "llamadas": 1,
+  "usd": 0.15289
+ },
+ "plan_fix": {
+  "llamadas": 6,
+  "usd": 0.03655
+ },
+ "plan_mas": {
+  "llamadas": 1,
+  "usd": 0.05819
+ },
+ "planos": {
+  "llamadas": 37,
+  "usd": 0.07009
+ },
+ "revisor_fotos": {
+  "llamadas": 87,
+  "usd": 0.05527
+ },
+ "editor_montaje": {
+  "llamadas": 46,
+  "usd": 0.03601
+ }
+}

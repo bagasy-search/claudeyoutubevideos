@@ -1,0 +1,5946 @@
+[
+ {
+  "id": "p001",
+  "tramo": 0,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "You cleaned it yesterday and it",
+  "foto": "A shot of the elderly woman looking at the toilet or holding cleaning supplies.",
+  "mov": "A single drop of water slides down the inside of the bowl."
+ },
+ {
+  "id": "p002",
+  "tramo": 1,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "still smells. Honey,",
+  "foto": "Loretta stands beside the white pedestal sink, her face clearly visible, wearing her lilac blouse, pearl necklace, and floral apron. Her thin wire-rimmed glasses catch the light as she pinches her nose shut with one wrinkled hand. The other hand rests on the sink edge. Behind her, the white square tiles and lace half-curtain are softly lit.",
+  "mov": "She pinches her nose tighter and her eyes narrow slightly."
+ },
+ {
+  "id": "p003",
+  "tramo": 2,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "come here and pinch your nose with me,",
+  "foto": "The elderly woman gesturing for someone to come closer to the bathroom.",
+  "mov": "She beckons with her free hand, then pinches her nose again."
+ },
+ {
+  "id": "p004",
+  "tramo": 3,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "because I want you to really",
+  "foto": "A shot of the woman pointing towards the toilet or the bathroom area.",
+  "mov": "Her pointing finger taps the air twice toward the toilet."
+ },
+ {
+  "id": "p005",
+  "tramo": 4,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "smell what is in that",
+  "foto": "Loretta leans slightly toward the toilet, her profile visible but not facing the camera, one hand still pinching her nose. The other hand rests on the toilet seat. The white tiles and window with lace curtain frame her. The bathroom is clean and bright, with the wicker basket of towels nearby.",
+  "mov": "She leans closer to the toilet, then recoils slightly."
+ },
+ {
+  "id": "p006",
+  "tramo": 5,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "bathroom. It is not",
+  "foto": "A shot of the woman looking at the toilet or the sink.",
+  "mov": "The lace curtain flutters slightly in a draft."
+ },
+ {
+  "id": "p007",
+  "tramo": 6,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the bowl where you have been scrubbing.",
+  "foto": "Close-up of Loretta's hand holding a small scrub brush near the toilet bowl rim. The brush bristles are clean and white, and the porcelain bowl is spotless. Her wrinkled fingers grip the handle firmly. The chrome flush handle and white tiles are in the background, softly lit.",
+  "mov": "She moves the brush away from the bowl and sets it down."
+ },
+ {
+  "id": "p008",
+  "tramo": 7,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Mistake number",
+  "foto": "Loretta stands facing the camera, her face fully visible, with a serious expression. She holds up one finger to indicate 'mistake number one.' Her lilac blouse, pearl necklace, and floral apron are clearly seen. Behind her, the white pedestal sink and tiles are neat and bright.",
+  "mov": "She raises one finger higher and nods slightly."
+ },
+ {
+  "id": "p009",
+  "tramo": 8,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "one is the brush,",
+  "foto": "A shot of the woman holding the toilet brush.",
+  "mov": "A small drop of water seeps from the bottom of the holder."
+ },
+ {
+  "id": "p010",
+  "tramo": 9,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the wet brush sitting in",
+  "foto": "Loretta's hands are shown lifting the closed toilet brush holder slightly off the floor. The white plastic holder is wet at the base, and her wrinkled fingers grip it. The toilet base and white hexagon tiles are visible. The floral apron edge is in the frame.",
+  "mov": "She tilts the holder and a bit of water drips out."
+ },
+ {
+  "id": "p011",
+  "tramo": 10,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "its closed holder, and it is",
+  "foto": "A close-up of the toilet brush fully inserted into its closed holder.",
+  "mov": "The holder wobbles slightly as if touched."
+ },
+ {
+  "id": "p012",
+  "tramo": 11,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "on page 9 of my little",
+  "foto": "of the bathroom: Loretta stands near the sink, holding a small closed book in one hand, pointing at it with the other. The book cover is plain and unmarked. The toilet, sink, tiles, and wicker basket are all visible. Soft daylight fills the room.",
+  "mov": "She taps the book cover twice with her finger."
+ },
+ {
+  "id": "p013",
+  "tramo": 12,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "book. I am going to walk",
+  "foto": "Loretta faces the camera, her face clear, holding the small plain book against her chest with one hand. She gestures with the other hand as if inviting the viewer to follow. Her lilac blouse, pearl necklace, and floral apron are visible. The white tiles and sink are behind her.",
+  "mov": "She takes a step forward and gestures with her hand."
+ },
+ {
+  "id": "p014",
+  "tramo": 13,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "you through all five before",
+  "foto": "The narrator holding the book and gesturing to indicate the five steps.",
+  "mov": "She raises each finger in turn, ending with all five up."
+ },
+ {
+  "id": "p015",
+  "tramo": 14,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "you buy another spray, and",
+  "foto": "Loretta stands near the sink, holding a plain spray bottle in one hand and making a 'stop' gesture with the other. The bottle is unlabeled and contains clear liquid. The white pedestal sink, tiles, and wicker basket are visible. She is not facing the camera.",
+  "mov": "She sets the spray bottle down on the sink edge."
+ },
+ {
+  "id": "p016",
+  "tramo": 15,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the first one is the one you",
+  "foto": "Close-up of Loretta's hand resting on the chrome flush handle of the toilet. Her wrinkled fingers are about to press it. The white porcelain tank and seat are visible. The white square tiles behind are clean. Daylight reflects off the chrome.",
+  "mov": "Her finger presses the flush handle down."
+ },
+ {
+  "id": "p017",
+  "tramo": 16,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "touch every time you flush.",
+  "foto": "Loretta faces the camera, her face visible, with one hand still on the flush handle. She looks directly at the viewer with a knowing expression. The toilet, sink, and white tiles are around her. Her lilac blouse and pearl necklace are clear. The lace curtain is in the background.",
+  "mov": "She lifts her hand off the handle and points at the toilet seat."
+ },
+ {
+  "id": "p018",
+  "tramo": 17,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "The smell is not in the water,",
+  "foto": "A shot of the toilet bowl or tank water while the narrator discusses the source of the smell.",
+  "mov": "The water ripples slightly as if just flushed."
+ },
+ {
+  "id": "p019",
+  "tramo": 18,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "honey, it is in the damp",
+  "foto": "A close-up of a damp, dark corner or hidden area behind a toilet where mold or mildew might grow.",
+  "mov": "A thin trickle of water runs down the porcelain from under the rim."
+ },
+ {
+  "id": "p020",
+  "tramo": 19,
+  "sec": "HOOK",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "dark places around it.",
+  "foto": "A shot pointing to a dark, shadowy area around the base of the toilet or behind the sink.",
+  "mov": "Loretta pinches her nose tighter and her grimace deepens."
+ },
+ {
+  "id": "p021",
+  "tramo": 20,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Before we begin, if you",
+  "foto": "The elderly woman standing in the bathroom, looking at the camera and preparing to speak.",
+  "mov": "The top towel's loops gently settle as if just placed."
+ },
+ {
+  "id": "p022",
+  "tramo": 21,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "watched my last one, The Laundry",
+  "foto": "A shot of a laundry room or a pile of towels to illustrate the previous video being referenced.",
+  "mov": "Loretta's hand gently taps the sink edge."
+ },
+ {
+  "id": "p023",
+  "tramo": 22,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Mistake Silently Destroying",
+  "foto": "A close-up of a towel showing signs of damage or a sour smell, like mildew spots.",
+  "mov": "The towel loops are gently pressed and spring back."
+ },
+ {
+  "id": "p024",
+  "tramo": 23,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Your Towels, you know a",
+  "foto": "The elderly woman smelling a towel with a concerned expression to illustrate the sour smell.",
+  "mov": "Her hands fold the towel once."
+ },
+ {
+  "id": "p025",
+  "tramo": 24,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sour smell usually means",
+  "foto": "A shot of a hidden, dark area in the bathroom, such as behind the toilet or under the sink, where dirt might accumulate.",
+  "mov": "The brush handle is lifted slightly and set back."
+ },
+ {
+  "id": "p026",
+  "tramo": 25,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "something is hiding where you",
+  "foto": "A close-up of hidden grime or residue in a hard-to-reach spot in the bathroom.",
+  "mov": "The lace curtain stirs gently in a draft."
+ },
+ {
+  "id": "p027",
+  "tramo": 26,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "do not look. Waste",
+  "foto": "A shot of dirty residue or buildup being cleaned from a bathroom surface.",
+  "mov": "Her hands lower the towel into the basket."
+ },
+ {
+  "id": "p028",
+  "tramo": 27,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "not, want not, my mother",
+  "foto": "Loretta stands by the white pedestal sink, one hand on her pearl necklace, speaking with a warm, remembering expression. Her lilac blouse and floral apron are neat. Sunlight from the lace-curtained window lights her face and the white tiles.",
+  "mov": "She touches her pearl necklace and smiles softly."
+ },
+ {
+  "id": "p029",
+  "tramo": 28,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "said, and she meant the bathroom",
+  "foto": "Loretta, seen from behind and slightly to the side, stands in the bathroom facing the toilet and sink. Her floral apron ties are visible. The white porcelain, square tiles, wicker basket, and lace curtain are all in view. Daylight fills the room.",
+  "mov": "She gestures with one hand toward the toilet area."
+ },
+ {
+  "id": "p030",
+  "tramo": 29,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "too. Just like those",
+  "foto": "A close-up of a towel with soap held in its loops, in the same bathroom as the other shots.",
+  "mov": "The towel's edge is lifted slightly and falls back."
+ },
+ {
+  "id": "p031",
+  "tramo": 30,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "towels held soap in the loops,",
+  "foto": "Loretta's hands hold a white towel close to the camera, showing the terry loops. A tiny white residue is visible deep in the loops. Her floral apron and lilac sleeve frame the shot. The bathroom background is softly blurred.",
+  "mov": "Her fingers rub the towel loops gently."
+ },
+ {
+  "id": "p032",
+  "tramo": 31,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "this bathroom holds smells",
+  "foto": "A shot of the bathroom elements that hold smells, such as the toilet, brush, or drain, in the same bathroom.",
+  "mov": "A subtle shadow deepens under the toilet rim."
+ },
+ {
+  "id": "p033",
+  "tramo": 32,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "in the brush, the base,",
+  "foto": "A close-up of the toilet brush and its base, highlighting where smells might hide.",
+  "mov": "Her finger moves from the brush base to the hinge."
+ },
+ {
+  "id": "p034",
+  "tramo": 33,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "and the hinge, and we are",
+  "foto": "A close-up of a door hinge, as mentioned in the narration.",
+  "mov": "She gives a small, firm nod."
+ },
+ {
+  "id": "p035",
+  "tramo": 34,
+  "sec": "REMEMBER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "going to find every one of them.",
+  "foto": "A shot of the old woman looking around the bathroom, searching for the smells.",
+  "mov": "She lifts the towel slightly and steps toward the toilet."
+ },
+ {
+  "id": "p036",
+  "tramo": 35,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "People write to Danny about their bathroom every",
+  "foto": "A shot of letters or a computer screen showing messages from people writing to Danny.",
+  "mov": "Loretta slowly turns the top envelope over in her hands."
+ },
+ {
+  "id": "p037",
+  "tramo": 36,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "single week. They scrub the bowl till it",
+  "foto": "Close-up of Loretta's wrinkled hands gripping a toilet brush, scrubbing the inside of the white porcelain toilet bowl. The bowl is spotless, reflecting the daylight. Her floral apron is visible at the edge of the frame. The white plastic seat is raised, and the chrome hinges gleam.",
+  "mov": "The brush moves in a circular scrubbing motion inside the bowl."
+ },
+ {
+  "id": "p038",
+  "tramo": 37,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "shines, they spray a flowery mist into",
+  "foto": "Loretta's hand holds a plain glass spray bottle and presses the nozzle, sending a fine mist into the air above the white pedestal sink. The mist catches the sunlight from the window. Behind her, the white square tiles and wicker basket with towels are visible. No labels are readable.",
+  "mov": "The spray bottle emits a cloud of mist that slowly disperses."
+ },
+ {
+  "id": "p039",
+  "tramo": 38,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "the air, and by the next morning the smell",
+  "foto": "The small farmhouse bathroom in daylight, showing the white porcelain toilet, pedestal sink, and white square tiles. The window with lace half-curtain lets in soft light. The room appears clean and tidy, but a faint shadow in the corner suggests a lingering odor. The wicker basket and bath mat are neatly placed.",
+  "mov": "A slight haze or shimmer in the air near the toilet gradually becomes visible."
+ },
+ {
+  "id": "p040",
+  "tramo": 39,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "is back like a closed-up closet. They",
+  "foto": "A close-up of the woman scrubbing the toilet bowl with a brush.",
+  "mov": "A tiny wisp of dust or odor seems to rise from the dark gap."
+ },
+ {
+  "id": "p041",
+  "tramo": 40,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "think they need a stronger cleaner, so they buy",
+  "foto": "Loretta's hands hold a plain, unlabeled heavy plastic bottle of cleaner. She sets it down on the edge of the white pedestal sink, next to a rag. The bottle is opaque and featureless. The chrome taps and white tiles are in the background.",
+  "mov": "Loretta's hand places the bottle firmly on the sink edge."
+ },
+ {
+  "id": "p042",
+  "tramo": 41,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the heavy bottle with the warning label, and",
+  "foto": "Close-up of Loretta's wrinkled hands scrubbing the outside of the toilet bowl with a rag and the heavy bottle nearby. The white porcelain is being rubbed vigorously. The floral apron is visible at the edge. The chrome hinges and seat are in frame.",
+  "mov": "Her hand moves the rag back and forth rapidly over the porcelain."
+ },
+ {
+  "id": "p043",
+  "tramo": 42,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "then they scrub harder and the smell gets",
+  "foto": "Loretta straightens up from scrubbing, holding the rag, her face showing frustration and fatigue. She looks at the toilet with a sigh. The bathroom is bright, with white tiles and the lace curtain. Her glasses and pearl necklace are clearly visible.",
+  "mov": "Loretta slowly shakes her head and lowers the rag."
+ },
+ {
+  "id": "p044",
+  "tramo": 43,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no better. Honey, that is not your",
+  "foto": "The woman scrubbing the toilet vigorously with a brush, looking tired or frustrated.",
+  "mov": "Her fingers gently pat the toilet seat twice."
+ },
+ {
+  "id": "p045",
+  "tramo": 44,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "fault, and it is not your toilet's fault either.",
+  "foto": "Loretta stands facing the toilet, her expression soft and forgiving. She places a hand on her chest, as if to say 'it's not your fault.' The bathroom is bathed in daylight. Her lilac blouse, pearl necklace, and floral apron are visible.",
+  "mov": "Loretta's hand moves from her chest outward in a gentle, reassuring gesture."
+ },
+ {
+  "id": "p046",
+  "tramo": 45,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "It is the five spots on the outside",
+  "foto": "A wide shot of the bathroom highlighting the five specific spots on the outside.",
+  "mov": "A slow pan across the five spots, from base to hinges to bolts."
+ },
+ {
+  "id": "p047",
+  "tramo": 46,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "that nobody ever looks at.",
+  "foto": "Wide view of the bathroom, emphasizing the toilet and its surroundings. The five spots are not obvious at first glance, blending into the clean white surfaces. The window light casts soft shadows. The wicker basket and bath mat are in place.",
+  "mov": "The camera slowly zooms in slightly toward the toilet base."
+ },
+ {
+  "id": "p048",
+  "tramo": 47,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "You have been cleaning the wrong half of the room,",
+  "foto": "Loretta's hands point to the toilet bowl interior, then move to the outside base, showing the contrast. She holds a rag in one hand. The bathroom is bright and clean. Her floral apron and wrinkled hands are the focus.",
+  "mov": "Her hand moves from inside the bowl to the outside base, tapping it."
+ },
+ {
+  "id": "p049",
+  "tramo": 48,
+  "sec": "PAIN",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "detalle",
+  "dice": "and that is the honest truth.",
+  "foto": "A shot showing the narrator cleaning the wrong half of the bathroom.",
+  "mov": "Loretta gives a small, knowing nod."
+ },
+ {
+  "id": "p050",
+  "tramo": 49,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "So here is what we will do today. I",
+  "foto": "In a bright farmhouse bathroom, Loretta stands beside a white pedestal sink, her floral apron tied at the waist. She gestures toward a small open book on the counter. White square tiles and a lace half-curtain frame the scene. Soft daylight fills the room.",
+  "mov": "Loretta's hand sweeps toward the open book on the counter."
+ },
+ {
+  "id": "p051",
+  "tramo": 50,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "will show you the five mistakes on page 9",
+  "foto": "A close-up of page 9 of the book showing the five mistakes.",
+  "mov": "Loretta's eyes move as she reads, and her hand turns a page."
+ },
+ {
+  "id": "p052",
+  "tramo": 51,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "of my little book, not opinions, and",
+  "foto": "A shot showing the narrator pointing to the first mistake in the book.",
+  "mov": "Her thumb slides along the page edge, turning it."
+ },
+ {
+  "id": "p053",
+  "tramo": 52,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "almost no money, and the first one is",
+  "foto": "Medium shot of Loretta from the side, holding a toilet brush in one hand. She stands next to the white toilet, its lid up. The wicker basket with towels is visible in the corner. Daylight highlights her apron.",
+  "mov": "She lifts the brush slightly and nods toward the toilet."
+ },
+ {
+  "id": "p054",
+  "tramo": 53,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the brush. Then I will give you the ring at",
+  "foto": "Close-up of Loretta's hand pointing at the waterline inside the toilet bowl. The white porcelain is clean, but the waterline is visible. The chrome flush lever is in the background. Soft light reflects off the bowl.",
+  "mov": "Her finger traces along the waterline, then taps it."
+ },
+ {
+  "id": "p055",
+  "tramo": 54,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "the waterline on page 10, because",
+  "foto": "A close-up of page 10 in the narrator's book showing the waterline diagram or instructions.",
+  "mov": "She tilts the mirror to catch the light under the rim."
+ },
+ {
+  "id": "p056",
+  "tramo": 55,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "that is the other thing that makes a clean toilet",
+  "foto": "A shot of the narrator pointing to or holding the cleaning product mentioned as the 'other thing'.",
+  "mov": "A water droplet slowly slides down the porcelain."
+ },
+ {
+  "id": "p057",
+  "tramo": 56,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "look dirty. We will use what is under the",
+  "foto": "The narrator reaching under the bathroom sink to retrieve cleaning supplies.",
+  "mov": "She pulls out a spray bottle and sets it on the counter."
+ },
+ {
+  "id": "p058",
+  "tramo": 57,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sink, on page 4 of my little book,",
+  "foto": "A close-up of page 4 of the narrator's book showing the list of cleaning items.",
+  "mov": "Her finger moves from one item to the next, counting."
+ },
+ {
+  "id": "p059",
+  "tramo": 58,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "the eight things that do forty jobs.",
+  "foto": "A shot showing the eight cleaning items laid out or a page from the book listing them.",
+  "mov": "She gives a small nod and lifts the spray bottle slightly."
+ },
+ {
+  "id": "p060",
+  "tramo": 59,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "You already have everything you need, honey, and",
+  "foto": "The narrator gesturing towards the cleaning supplies or the book to emphasize that the viewer already owns these items.",
+  "mov": "She gestures with the rag toward the toilet and sink."
+ },
+ {
+  "id": "p061",
+  "tramo": 60,
+  "sec": "PROMISE",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "I will prove it.",
+  "foto": "The narrator looking directly at the camera with a confident expression, holding the book or a cleaning tool.",
+  "mov": "She gives the brush a final shake, and water droplets fall."
+ },
+ {
+  "id": "p062",
+  "tramo": 61,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "At Zion United Methodist, the ladies' room",
+  "foto": "A shot of the ladies' room at Zion United Methodist Church or a photo of the church.",
+  "mov": "Loretta's hand slowly lifts from the sink and gestures gently as she speaks."
+ },
+ {
+  "id": "p063",
+  "tramo": 62,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "off the basement had a toilet that would smell",
+  "foto": "A shot of the specific toilet at the church basement that had the odor problem.",
+  "mov": "The hands slowly lower the brush into the holder until it is seated."
+ },
+ {
+  "id": "p064",
+  "tramo": 63,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "on hot summer Sundays, and nobody could",
+  "foto": "A wide shot of the elderly woman looking frustrated in the bathroom on a hot summer day.",
+  "mov": "A faint wisp of vapor rises from the seam of the closed holder lid and dissipates."
+ },
+ {
+  "id": "p065",
+  "tramo": 64,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "figure out why. Irene cleaned that",
+  "foto": "Loretta's wrinkled hands hold a white toilet brush and scrub the inside of the white porcelain toilet bowl. She wears her faded floral cotton apron. The white plastic toilet seat is lifted. White square wall tiles and the white pedestal sink are in the background. Soft daylight from the window illuminates the clean bathroom. The bowl looks spotless.",
+  "mov": "The brush moves in a circular scrubbing motion inside the bowl."
+ },
+ {
+  "id": "p066",
+  "tramo": 65,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "bowl every Saturday like it owed her money,",
+  "foto": "Close-up of Loretta's wrinkled hands wringing out a white rag over the white porcelain toilet bowl. Water drips from the rag into the bowl. The white plastic toilet seat is down. White square wall tiles and a chrome tap are visible. Soft daylight highlights the wet rag and the clean porcelain. The scene is neat and well-kept.",
+  "mov": "The hands twist the rag tightly, and a few drops fall into the bowl."
+ },
+ {
+  "id": "p067",
+  "tramo": 66,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "and still the room smelled like a wet mop.",
+  "foto": "Loretta stands in her small farmhouse bathroom, seen from behind, holding a mop with a gray string head. She is mopping the worn white hexagon tile floor near the white pedestal sink. She wears her lilac blouse and floral apron. White square wall tiles, a small window with a white lace half-curtain, and a wicker basket with folded towels are visible. Soft daylight fills the room.",
+  "mov": "Loretta pushes the mop forward and pulls it back in a slow, steady stroke."
+ },
+ {
+  "id": "p068",
+  "tramo": 67,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "One day Edna Pruitt walked in,",
+  "foto": "A shot of Edna Pruitt entering the bathroom and sniffing the air.",
+  "mov": "The white lace half-curtain flutters slightly in a gentle breeze."
+ },
+ {
+  "id": "p069",
+  "tramo": 68,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sniffed, and said it was the brush in its little closed",
+  "foto": "A close-up of the toilet brush holder as Edna points at it.",
+  "mov": "The holder's lid lifts slightly, as if someone is about to open it."
+ },
+ {
+  "id": "p070",
+  "tramo": 69,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "bucket. We pulled it out, and honey, we",
+  "foto": "Loretta's wrinkled hands grip the handle of a white toilet brush and pull it straight up out of the open white plastic holder. The brush head is wet and dripping. The holder sits on the worn white hexagon tile floor. White square wall tiles and the white porcelain toilet base are in the background. Soft daylight from the window illuminates the wet bristles.",
+  "mov": "The hands lift the brush upward out of the holder, and a drop of water falls."
+ },
+ {
+  "id": "p071",
+  "tramo": 70,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "all stepped back. That wet brush had been",
+  "foto": "The elderly woman and Edna stepping back from the toilet brush in surprise.",
+  "mov": "Loretta takes a small step backward, her hand holding the brush steady."
+ },
+ {
+  "id": "p072",
+  "tramo": 71,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "festering in the dark like a secret. We",
+  "foto": "Close-up of Loretta's wrinkled hand holding the wet white toilet brush over the open white plastic holder. The brush bristles are dark and wet. The holder sits on the worn white hexagon tile floor. White square wall tiles and the white porcelain toilet base are visible. Soft daylight from the window highlights the moisture on the bristles.",
+  "mov": "A drop of water drips from the brush bristles into the holder."
+ },
+ {
+  "id": "p073",
+  "tramo": 72,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "set it out to dry, and the smell went away by",
+  "foto": "Loretta's wrinkled hands place the wet white toilet brush horizontally on the edge of the white pedestal sink, with the bristles hanging over the basin to dry. The white porcelain toilet, white square wall tiles, and small window with a white lace half-curtain are in the background. Soft daylight fills the clean farmhouse bathroom.",
+  "mov": "The hands set the brush down gently on the sink edge and release it."
+ },
+ {
+  "id": "p074",
+  "tramo": 73,
+  "sec": "STORY",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "the next Sunday.",
+  "foto": "Loretta stands in her farmhouse bathroom, facing the camera with a satisfied smile. She holds the dry white toilet brush in one hand, showing it. The white porcelain toilet, white pedestal sink, white square wall tiles, and small window with a white lace half-curtain are visible. Soft daylight fills the room. She wears her lilac blouse, pearl necklace, and floral apron.",
+  "mov": "Loretta gives a small nod and lifts the brush slightly as she smiles."
+ },
+ {
+  "id": "p075",
+  "tramo": 74,
+  "sec": "CTA1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "That one, the five mistakes,",
+  "foto": "In a small old farmhouse bathroom with white square tiles and pale walls, Loretta's wrinkled hands hold an open little book near a white pedestal sink. Her lilac blouse and floral apron are visible. Soft daylight from a lace-curtained window lights the white porcelain and chrome taps.",
+  "mov": "Her hands turn a page of the book."
+ },
+ {
+  "id": "p076",
+  "tramo": 75,
+  "sec": "CTA1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "is on page 9 of my little book, with",
+  "foto": "A close-up of the open book showing page 9 with the five mistakes and steps.",
+  "mov": "A gentle breeze flutters the book's page slightly."
+ },
+ {
+  "id": "p077",
+  "tramo": 76,
+  "sec": "CTA1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "the exact steps in order and the",
+  "foto": "Loretta, an 81-year-old woman with short curly white hair, wire-rimmed glasses, lilac blouse, pearl necklace, and floral apron, stands in her bathroom holding an open book. She looks down at the page, her face softly lit by daylight from a lace-curtained window. White square tiles and a pedestal sink are behind her.",
+  "mov": "She nods slightly as she reads."
+ },
+ {
+  "id": "p078",
+  "tramo": 77,
+  "sec": "CTA1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "card you can read at the bathroom sink. The link",
+  "foto": "Close-up of Loretta's wrinkled hands placing a small white card on the edge of a white pedestal sink. The card is blank. Chrome taps and white square tiles are in the background. Soft daylight from a lace-curtained window illuminates the scene.",
+  "mov": "Her hand adjusts the card's position."
+ },
+ {
+  "id": "p079",
+  "tramo": 78,
+  "sec": "CTA1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "is down in the description, and you can keep",
+  "foto": "Loretta's hands hold an open little book near a white pedestal sink in a bathroom with white square tiles. Her floral apron and lilac blouse are visible. A small window with a lace half-curtain lets in daylight, highlighting the white porcelain and chrome taps.",
+  "mov": "She gently closes the book."
+ },
+ {
+  "id": "p080",
+  "tramo": 79,
+  "sec": "CTA1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the book on the shelf above the towels.",
+  "foto": "The narrator placing the book on the wooden shelf above the basket of towels.",
+  "mov": "A towel in the basket shifts slightly as if touched by a breeze."
+ },
+ {
+  "id": "p081",
+  "tramo": 80,
+  "sec": "CTA1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "The card is short enough to read without your glasses.",
+  "foto": "Close-up of Loretta's wrinkled hands holding a small white card near a white pedestal sink. The card is blank. Chrome taps and white square tiles are in the background. Soft daylight from a lace-curtained window brightens the card and her hands.",
+  "mov": "Her thumb moves across the card as if reading it."
+ },
+ {
+  "id": "p082",
+  "tramo": 81,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Before anybody touches a bottle,",
+  "foto": "Loretta stands at the open cabinet under the bathroom sink, her wrinkled hands resting on the edge of the shelf. Sunlight from a nearby window illuminates the plastic caddy with plain spray bottles, a jug of white vinegar, and a brown bottle of peroxide. She wears her lilac blouse and floral apron, looking down at the bottles with a serious, kind expression.",
+  "mov": "Loretta slowly lifts her right hand and points toward the bottles in the caddy."
+ },
+ {
+  "id": "p083",
+  "tramo": 82,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "look at page 3 of my little book,",
+  "foto": "Close-up of Loretta's wrinkled hands holding a small, open notebook with blank pages, turning to a page marked with a simple tab. The notebook is held above the open cabinet, with the plastic caddy and vinegar jug softly blurred in the background. Daylight highlights the texture of her skin and the old paper.",
+  "mov": "Her fingers flip a page of the notebook, revealing a new spread."
+ },
+ {
+  "id": "p084",
+  "tramo": 83,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "the one called Never mix these. Old-fashioned",
+  "foto": "A close-up of the woman pointing to a page in a handwritten notebook titled 'Never mix these' with a list of cleaning ingredients.",
+  "mov": "She taps the page twice with her index finger."
+ },
+ {
+  "id": "p085",
+  "tramo": 84,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cleaning is safe when you use one thing",
+  "foto": "Loretta's hand places a single plain spray bottle on the clean white countertop next to the sink. The bottle is unlabeled and filled with clear liquid. In the background, the open cabinet shows other bottles kept separate. Sunlight glints off the chrome faucet and the bottle's surface.",
+  "mov": "Her hand releases the bottle and withdraws, leaving it alone on the counter."
+ },
+ {
+  "id": "p086",
+  "tramo": 85,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "at a time, and the mixtures on that page",
+  "foto": "Wide view of the bathroom counter and open cabinet. On the left, a brown bottle of peroxide and a jug of white vinegar are placed far apart with a wide empty gap between them. Loretta's hands are seen at the edges, having just set them down. The white square tiles and floral apron details frame the scene.",
+  "mov": "Loretta's hands slide the vinegar jug further left, increasing the gap."
+ },
+ {
+  "id": "p087",
+  "tramo": 86,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "are not. Bleach never goes with vinegar,",
+  "foto": "A shot of the cleaning supplies under the sink, with the labels on the bottles turned away or blurred.",
+  "mov": "Her hand pushes the ruler firmly between the two bottles."
+ },
+ {
+  "id": "p088",
+  "tramo": 87,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "lemon or acid toilet cleaner, and",
+  "foto": "Loretta's hands hold a bottle of bleach and a bottle of lemon-scented cleaner, keeping them at arm's length from each other. She stands in front of the open cabinet, her floral apron visible. The bottles are plain, with no text. The bathroom's white tiles and a small window with soft daylight form the background.",
+  "mov": "She slowly moves the lemon cleaner bottle away from the bleach, lowering it to the counter."
+ },
+ {
+  "id": "p089",
+  "tramo": 88,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "it never goes with ammonia or rubbing alcohol.",
+  "foto": "Close-up of Loretta's wrinkled hands placing a bottle of ammonia and a bottle of rubbing alcohol on separate shelves of the open cabinet. The bottles are plain and unlabeled. A box of baking soda sits on a lower shelf. The wood of the cabinet and the white tile edge are visible in soft daylight.",
+  "mov": "Her hands set the rubbing alcohol bottle on the upper shelf, then withdraw."
+ },
+ {
+  "id": "p090",
+  "tramo": 89,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Peroxide and vinegar never",
+  "foto": "The woman holding a generic brown bottle and a spray bottle, with the labels facing away from the camera.",
+  "mov": "She brings the two bottles slightly closer, then stops and shakes her head."
+ },
+ {
+  "id": "p091",
+  "tramo": 90,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sit in the same bottle, because together",
+  "foto": "A close-up of the elderly woman holding two unlabeled white spray bottles together over a sink.",
+  "mov": "Her hand slides the bottle to the right, away from the vinegar jug."
+ },
+ {
+  "id": "p092",
+  "tramo": 91,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "they make a burning acid. Rinse between",
+  "foto": "The elderly woman holding a spray bottle and a cloth, preparing to clean a bathroom sink.",
+  "mov": "She rotates the bottle under the stream of water, letting it rinse."
+ },
+ {
+  "id": "p093",
+  "tramo": 92,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "products, open a window,",
+  "foto": "The elderly woman opening a window in a bathroom to improve ventilation.",
+  "mov": "She pushes the window sash up, and the gap widens."
+ },
+ {
+  "id": "p094",
+  "tramo": 93,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "label every bottle, and one product per",
+  "foto": "The elderly woman carefully writing on a blank label attached to a spray bottle.",
+  "mov": "Her fingers smooth the label onto the bottle."
+ },
+ {
+  "id": "p095",
+  "tramo": 94,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "day in the toilet. Gloves on for anything",
+  "foto": "The elderly woman wearing yellow rubber gloves while cleaning the toilet bowl.",
+  "mov": "She tilts the bottle and pours a small amount of liquid into the toilet bowl."
+ },
+ {
+  "id": "p096",
+  "tramo": 95,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "stronger than dish soap, honey, and that",
+  "foto": "The elderly woman putting on a pair of yellow rubber gloves near the sink.",
+  "mov": "She tugs the glove over her fingers, securing it."
+ },
+ {
+  "id": "p097",
+  "tramo": 96,
+  "sec": "SAFETY",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "rule is older than the washing machine.",
+  "foto": "The elderly woman standing in the bathroom doorway, looking at the open cabinet under the sink.",
+  "mov": "She gives a small, affirming nod and lowers the spray bottle to her side."
+ },
+ {
+  "id": "p098",
+  "tramo": 97,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Now here is what is under my sink, on",
+  "foto": "The elderly woman pointing at the organized cleaning supplies under the bathroom sink.",
+  "mov": "Loretta's hand moves slowly across the shelf, pointing at the items."
+ },
+ {
+  "id": "p099",
+  "tramo": 98,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "page 4 of my little book, the eight",
+  "foto": "The elderly woman holding a small notebook and reading from it while standing near the sink.",
+  "mov": "Her hand turns a page of the notebook."
+ },
+ {
+  "id": "p100",
+  "tramo": 99,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "things that do forty jobs. White vinegar",
+  "foto": "A plain white jug of white vinegar with no readable branding or text.",
+  "mov": "A drop of vinegar runs down the side of the jug."
+ },
+ {
+  "id": "p101",
+  "tramo": 100,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "for hard water and soap scum,",
+  "foto": "Loretta's wrinkled hand holds a plain spray bottle and sprays a fine mist onto a white porcelain sink basin. Water droplets bead on the surface. In the background, the open cabinet shows other supplies. The sink is spotless except for the sprayed water.",
+  "mov": "Her hand squeezes the spray bottle, releasing a mist."
+ },
+ {
+  "id": "p102",
+  "tramo": 101,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "but never on stone. Baking soda",
+  "foto": "An unbranded box or container of baking soda with no readable text.",
+  "mov": "The spoon gently stirs the spilled baking soda."
+ },
+ {
+  "id": "p103",
+  "tramo": 102,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "for a gentle scrub and a smell-eater.",
+  "foto": "Loretta's hand uses a damp rag to sprinkle baking soda onto a white porcelain sink. She scrubs gently in circular motions. The baking soda forms a paste. The open cabinet with cleaning supplies is in the background. Her floral apron is visible.",
+  "mov": "Her hand scrubs in circles with the rag."
+ },
+ {
+  "id": "p104",
+  "tramo": 103,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Blue dish soap for grease. Three percent",
+  "foto": "Unlabeled bottles of blue dish soap, baking soda, and hydrogen peroxide.",
+  "mov": "The puddle of blue soap slowly spreads."
+ },
+ {
+  "id": "p105",
+  "tramo": 104,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "hydrogen peroxide in the brown bottle",
+  "foto": "A close-up of a brown bottle of hydrogen peroxide sitting on the counter.",
+  "mov": "Her hand lifts the brown bottle off the shelf."
+ },
+ {
+  "id": "p106",
+  "tramo": 105,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "for whitening and freshening.",
+  "foto": "The woman using a whitening agent, such as hydrogen peroxide, to clean or freshen a surface.",
+  "mov": "The peroxide fizzes and bubbles on the cloth."
+ },
+ {
+  "id": "p107",
+  "tramo": 106,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Washing soda, the strong sister, with gloves.",
+  "foto": "Loretta's hands, wearing yellow rubber gloves, lift a box of washing soda from the shelf. The box is plain with no readable text. She holds it carefully. The open cabinet with other supplies is in the background. Her floral apron is visible.",
+  "mov": "Her gloved hands lift the box and set it down."
+ },
+ {
+  "id": "p108",
+  "tramo": 107,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Rubbing alcohol for streak-free chrome.",
+  "foto": "The woman wiping a chrome faucet with a cloth dampened with rubbing alcohol.",
+  "mov": "Her hand wipes the rag along the faucet, leaving a shine."
+ },
+ {
+  "id": "p109",
+  "tramo": 108,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Dishwasher tablets for six jobs",
+  "foto": "A close-up of a box of dishwasher tablets or the woman holding a dishwasher tablet.",
+  "mov": "Her fingers turn the tablet over."
+ },
+ {
+  "id": "p110",
+  "tramo": 109,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "besides the dishes. And rags,",
+  "foto": "The woman picking up or holding a rag from the shelf.",
+  "mov": "The top rag gently shifts as if touched by a breeze."
+ },
+ {
+  "id": "p111",
+  "tramo": 110,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "an old toothbrush, a squeegee, and",
+  "foto": "The woman holding up an old toothbrush and a squeegee.",
+  "mov": "Her hand lines up the items neatly."
+ },
+ {
+  "id": "p112",
+  "tramo": 111,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "a pumice stone for the toilet ring. That is",
+  "foto": "The woman holding a pumice stone near the toilet bowl.",
+  "mov": "Her hand moves the pumice stone in a small scrubbing motion."
+ },
+ {
+  "id": "p113",
+  "tramo": 112,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "the whole shelf, honey, and we will use four",
+  "foto": "A shot of the entire shelf of cleaning supplies.",
+  "mov": "Loretta nods slightly and smiles."
+ },
+ {
+  "id": "p114",
+  "tramo": 113,
+  "sec": "SINK",
+  "lugar": "bajo_pileta",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "of them today.",
+  "foto": "The woman pointing to or holding four specific cleaning items.",
+  "mov": "Her hand moves the four items forward on the counter."
+ },
+ {
+  "id": "p115",
+  "tramo": 114,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Number one, the brush. My mother said the",
+  "foto": "The woman holding up the toilet brush.",
+  "mov": "Loretta lifts the brush a little and turns it slightly in her hand."
+ },
+ {
+  "id": "p116",
+  "tramo": 115,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "brush is the last thing you rinse and the first",
+  "foto": "The woman rinsing the toilet brush under running water.",
+  "mov": "A drop of water falls from the bristles into the dark holder."
+ },
+ {
+  "id": "p117",
+  "tramo": 116,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "thing you use again, so treat it like a dishrag.",
+  "foto": "The woman holding the toilet brush or a dishrag.",
+  "mov": "Her hands move the brush under the tap, and water runs over the bristles."
+ },
+ {
+  "id": "p118",
+  "tramo": 117,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "A wet brush in a closed holder stinks",
+  "foto": "A close-up of a closed toilet brush holder with a wet brush visibly stored inside.",
+  "mov": "The holder lid is slightly ajar, and a faint wisp of moisture evaporates from the gap."
+ },
+ {
+  "id": "p119",
+  "tramo": 118,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "because the damp sits in the dark",
+  "foto": "A close-up of the dark interior of the closed brush holder, emphasizing the damp environment.",
+  "mov": "The shadow around the holder deepens slightly as the light shifts."
+ },
+ {
+  "id": "p120",
+  "tramo": 119,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "and grows the very smell you are trying to",
+  "foto": "A shot of the woman opening the brush holder with a visible reaction to a bad smell, or a visual representation of the odor.",
+  "mov": "Her hand opens the holder lid, revealing the wet brush inside."
+ },
+ {
+  "id": "p121",
+  "tramo": 120,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "scrub away. You scrub the bowl, rinse",
+  "foto": "A different angle or framing of the woman scrubbing the toilet bowl to avoid being a near duplicate of the previous shot.",
+  "mov": "The brush scrubs the bowl in a circular motion."
+ },
+ {
+  "id": "p122",
+  "tramo": 121,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the brush, and drop it back into its little",
+  "foto": "The woman dropping the wet brush back into its holder.",
+  "mov": "Water runs over the brush as her hands turn it under the tap."
+ },
+ {
+  "id": "p123",
+  "tramo": 122,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "bucket while it is still dripping. Then",
+  "foto": "A close-up of the closed brush holder, emphasizing that the dampness is locked inside.",
+  "mov": "The brush drops into the holder, and water drips from it."
+ },
+ {
+  "id": "p124",
+  "tramo": 123,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the holder keeps the damp locked in, and",
+  "foto": "The woman opening the brush holder, with a focus on the release of the trapped smell.",
+  "mov": "A droplet of condensation runs down the inside of the holder lid."
+ },
+ {
+  "id": "p125",
+  "tramo": 124,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the next time you open it, that sour smell",
+  "foto": "The woman reacting to the sour smell as she opens the brush holder.",
+  "mov": "Her hand lifts the holder lid, and a faint wisp of moisture rises from inside."
+ },
+ {
+  "id": "p126",
+  "tramo": 125,
+  "sec": "M1",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "detalle",
+  "dice": "hits you right in the face.",
+  "foto": "The woman looking disgusted or reacting negatively to the smell, matching the narration.",
+  "mov": "Loretta blinks and turns her head slightly away, her expression tightening."
+ },
+ {
+  "id": "p127",
+  "tramo": 126,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Here is the card from page 9 of my",
+  "foto": "A close-up of the narrator holding a small notebook open to page 9, with a handwritten card visible.",
+  "mov": "Her thumb gently slides the card slightly to the left."
+ },
+ {
+  "id": "p128",
+  "tramo": 127,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "little book. Let the brush dry before it goes",
+  "foto": "The toilet brush resting in its holder or on a surface, with the narrator's hands away, indicating it is drying.",
+  "mov": "She releases the brush handle and it settles into the holder."
+ },
+ {
+  "id": "p129",
+  "tramo": 128,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "back. Lift the seat, lay the brush",
+  "foto": "The narrator lifting the toilet seat and placing the brush handle across the rim.",
+  "mov": "Her hand raises the seat upward."
+ },
+ {
+  "id": "p130",
+  "tramo": 129,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "handle across the rim so the bristles hang",
+  "foto": "A close-up of the brush handle resting on the rim with the bristles hanging down into the bowl.",
+  "mov": "She carefully sets the brush handle down across the rim."
+ },
+ {
+  "id": "p131",
+  "tramo": 130,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "over the bowl, and lower the seat lid to",
+  "foto": "The narrator lowering the toilet seat lid down onto the brush handle to secure it.",
+  "mov": "The lid descends slowly onto the handle."
+ },
+ {
+  "id": "p132",
+  "tramo": 131,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "hold it there. Once a month, pour a",
+  "foto": "The narrator pouring peroxide from a bottle directly into the toilet brush holder.",
+  "mov": "She tilts the bottle and liquid flows into the holder."
+ },
+ {
+  "id": "p133",
+  "tramo": 132,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "little peroxide into the holder and soak the",
+  "foto": "The toilet brush head submerged in the holder filled with peroxide.",
+  "mov": "Bubbles rise gently from the bristles."
+ },
+ {
+  "id": "p134",
+  "tramo": 133,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "brush head. Keep the peroxide in its",
+  "foto": "The brown bottle of peroxide being placed on a shelf, separate from other cleaning supplies.",
+  "mov": "She sets the brown bottle down and adjusts its position."
+ },
+ {
+  "id": "p135",
+  "tramo": 134,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "own brown bottle, away from the vinegar, and",
+  "foto": "The brown bottle of peroxide and a bottle of vinegar placed on separate shelves or clearly apart.",
+  "mov": "A hand briefly touches the brown bottle and withdraws."
+ },
+ {
+  "id": "p136",
+  "tramo": 135,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "pour it out when you are done. The mistake",
+  "foto": "Loretta stands in her bathroom, holding an empty brown bottle, looking down as she pours out the last drops into the sink, her face slightly visible, wearing a lilac blouse and floral apron.",
+  "mov": "She tips the bottle and a few drops fall into the sink."
+ },
+ {
+  "id": "p137",
+  "tramo": 136,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "most people make is cleaning only the bowl,",
+  "foto": "Close-up of Loretta's hand wiping the outside of the toilet bowl with a white rag, revealing hidden grime on the porcelain, in a sunlit bathroom with white square tiles.",
+  "mov": "The rag moves in a circular motion on the bowl's exterior."
+ },
+ {
+  "id": "p138",
+  "tramo": 137,
+  "sec": "M1A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "and the smell is on the outside, honey.",
+  "foto": "Loretta stands beside the white toilet, holding a damp rag, looking down with a gentle smile, her face clearly visible, in a bright farmhouse bathroom with white tiles and a lace curtain.",
+  "mov": "She wrings the rag slightly with both hands."
+ },
+ {
+  "id": "p139",
+  "tramo": 138,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "That whole list costs nothing, instead",
+  "foto": "Loretta's wrinkled hands hold a small glass bottle of white vinegar and a box of baking soda over the white pedestal sink in her farmhouse bathroom. The bottles are plain, no labels. Daylight from the small window with lace half-curtain falls on her faded floral apron. The white square tiles and chrome taps gleam.",
+  "mov": "Her hands gently lower the bottle and box onto the sink edge."
+ },
+ {
+  "id": "p140",
+  "tramo": 139,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "of another bottle of toilet spray. One product",
+  "foto": "The woman holding a single cleaning product in her hand, standing in the bathroom.",
+  "mov": "The brush handle inside the holder slowly shifts a tiny bit as if just placed."
+ },
+ {
+  "id": "p141",
+  "tramo": 140,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "per day, and always open the window",
+  "foto": "Loretta, seen from behind and side, reaches up to open the small window in her bathroom. Her lilac blouse and floral apron are visible. The white lace half-curtain flutters slightly. The white toilet, pedestal sink, and wicker towel basket are in view. Daylight streams in, brightening the pale walls and white tiles.",
+  "mov": "She pushes the window sash upward, and the lace curtain sways."
+ },
+ {
+  "id": "p142",
+  "tramo": 141,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "if the room is small. I live alone now,",
+  "foto": "Loretta stands in her small bathroom, facing slightly away from the camera, her face visible in profile with a gentle, thoughtful expression. Her short curly white hair and wire-rimmed glasses catch the daylight. She wears her lilac blouse, pearl necklace, and floral apron. Behind her, the white toilet and pedestal sink are neat. The window is open.",
+  "mov": "She gives a small, slow nod and her eyes blink softly."
+ },
+ {
+  "id": "p143",
+  "tramo": 142,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "and I still dry my brush on the rim every",
+  "foto": "Extreme close-up of Loretta's old, wrinkled hands placing a white toilet brush on the rim of the white porcelain toilet bowl. The brush bristles are damp. The white square tiles and chrome flush handle are visible. Daylight from the window highlights the clean surfaces and the worn hexagon floor tiles below.",
+  "mov": "Her hand sets the brush down and pats it once."
+ },
+ {
+  "id": "p144",
+  "tramo": 143,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "single time, and the bathroom smells like",
+  "foto": "The woman placing the toilet brush back in its holder, looking satisfied with the clean bathroom.",
+  "mov": "The lace curtain by the window flutters gently in the breeze."
+ },
+ {
+  "id": "p145",
+  "tramo": 144,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "nothing at all. My mother would have tanned",
+  "foto": "A shot of the woman looking at the toilet brush holder with a slightly guilty or remembering expression.",
+  "mov": "She shakes her head slightly and her smile widens."
+ },
+ {
+  "id": "p146",
+  "tramo": 145,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "my hide if I put a wet brush back in the",
+  "foto": "Close-up of Loretta's wrinkled hand holding a wet toilet brush over the white plastic toilet brush holder. The holder is on the floor beside the toilet. Water droplets cling to the bristles. The white hexagon tiles and the base of the white toilet are in view. Daylight from the window casts a soft glow.",
+  "mov": "Her hand moves the wet brush toward the holder as if about to drop it in."
+ },
+ {
+  "id": "p147",
+  "tramo": 146,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "holder, and she was right about that too. Harold",
+  "foto": "Loretta stands in her bathroom, seen from the side, her hands resting on the edge of the white pedestal sink. She looks down thoughtfully. Her lilac blouse, floral apron, and pearl necklace are visible. The white toilet, wicker basket, and open window with lace curtain are in the background. The room is bright and tidy.",
+  "mov": "She lifts her head slightly and her hands slide off the sink edge."
+ },
+ {
+  "id": "p148",
+  "tramo": 147,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "used to call it the stink bucket, and",
+  "foto": "A shot of the woman looking at the toilet with a knowing smile, perhaps gesturing towards it.",
+  "mov": "The toilet lid trembles very slightly as if just closed."
+ },
+ {
+  "id": "p149",
+  "tramo": 148,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "he never once let it stay closed after",
+  "foto": "Close-up of Loretta's wrinkled hand lifting the white plastic toilet lid, holding it open. The white porcelain bowl rim is visible, clean and bright. The chrome hinge gleams. Daylight from the window highlights the white surfaces and the worn hexagon floor tiles below. Her floral apron edge is just in frame.",
+  "mov": "Her hand raises the lid and holds it up for a moment."
+ },
+ {
+  "id": "p150",
+  "tramo": 149,
+  "sec": "M1B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "he cleaned the bathroom.",
+  "foto": "A shot of the woman looking at the toilet with the lid up, or a shot of the toilet itself.",
+  "mov": "She turns her head slightly toward the open window and the curtain sways."
+ },
+ {
+  "id": "p151",
+  "tramo": 150,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "And the third one, honey, is the one nobody",
+  "foto": "A shot of the woman looking at the base of the toilet or pointing to it.",
+  "mov": "Loretta's finger slowly traces a small circle in the air near the toilet base."
+ },
+ {
+  "id": "p152",
+  "tramo": 151,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "looks at. But do not jump ahead, because",
+  "foto": "Close-up of Loretta's wrinkled hand, fingers slightly curled, hovering just above the white plastic toilet seat hinge. The chrome hinge and white porcelain bowl are in focus. Soft daylight reflects off the smooth surfaces, and the worn hexagon tile floor is visible below.",
+  "mov": "Her hand gently lifts the toilet seat an inch and lowers it back down."
+ },
+ {
+  "id": "p153",
+  "tramo": 152,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "the base comes first, and it is",
+  "foto": "Loretta stands with both hands resting on the toilet tank, looking down at the base. Her lilac blouse and floral apron are visible against the white square tiles. The pedestal sink and wicker basket are in the background. She appears to be explaining something, her expression earnest.",
+  "mov": "She nods slightly and pats the toilet tank twice with her right hand."
+ },
+ {
+  "id": "p154",
+  "tramo": 153,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the one you walk past every day without seeing.",
+  "foto": "Extreme close-up of the toilet base where it meets the floor. White porcelain curves down to worn white hexagon tiles. Two chrome bolts with plastic caps sit on either side. A faint shadow line shows where dirt might accumulate. The bath mat edge is visible in the corner.",
+  "mov": "A thin sliver of daylight slowly moves across the base as if a cloud passed outside."
+ },
+ {
+  "id": "p155",
+  "tramo": 154,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "I will hold that thought about under the rim for",
+  "foto": "Loretta's hands hold a small hand mirror, tilting it under the rim of the toilet bowl. Only her hands, the mirror, and the underside of the white porcelain rim are visible. The chrome seat hinge is in the foreground. The mirror reflects a hint of the bowl's interior.",
+  "mov": "She rotates the mirror slightly, adjusting the angle under the rim."
+ },
+ {
+  "id": "p156",
+  "tramo": 155,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "you, because the base is the frame around the",
+  "foto": "Loretta stands back from the toilet, gesturing with both hands as if framing a picture. She is in the center of the bathroom, with the toilet, sink, and window visible. Her face is clearly shown, and she looks toward the toilet base, not the camera. Daylight fills the room.",
+  "mov": "She moves her hands apart slowly, as if expanding a frame."
+ },
+ {
+  "id": "p157",
+  "tramo": 156,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "whole picture, and if the frame smells,",
+  "foto": "Close-up of the toilet base and floor, focusing on the junction where porcelain meets tile. A small area of discolored grout is visible near the bolts. The white bath mat edge is slightly frayed. The chrome bolt caps reflect light. No hands are present.",
+  "mov": "A faint shadow slowly deepens around the base as if something is blocking the light."
+ },
+ {
+  "id": "p158",
+  "tramo": 157,
+  "sec": "LOOP",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "the room smells.",
+  "foto": "A close-up of the toilet base and the bolts on the floor to match the narration about the base.",
+  "mov": "She waves her hand in front of her face twice, as if dispelling an odor."
+ },
+ {
+  "id": "p159",
+  "tramo": 158,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Number two, the base. The floor",
+  "foto": "Loretta kneels on the white hexagon tile floor of her farmhouse bathroom, wearing a lilac blouse and floral apron. She points a wrinkled finger at the floor around the white porcelain toilet base. Chrome taps on the pedestal sink gleam. Daylight from a lace-curtained window illuminates the worn tiles.",
+  "mov": "Loretta's pointing finger traces a small circle on the floor near the toilet base."
+ },
+ {
+  "id": "p160",
+  "tramo": 159,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "and the bolts around the base hold the smell,",
+  "foto": "Extreme close-up of the white toilet base meeting the white hexagon tile floor. Two rusty bolts with white plastic caps sit in the grime. A thin dark line of dust and dampness rings the base. Soft daylight highlights the texture of the dirt.",
+  "mov": "A faint shadow shifts across the bolt caps as Loretta's hand moves out of frame."
+ },
+ {
+  "id": "p161",
+  "tramo": 160,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "and most people never once wipe there.",
+  "foto": "Loretta's wrinkled hands hold a damp rag, wiping the white toilet base near the floor. The rag is slightly gray from dust. Her floral apron is visible. The white square wall tiles and pedestal sink are in the background. Daylight from the window casts soft shadows.",
+  "mov": "The rag moves in a slow circular motion around the base of the toilet."
+ },
+ {
+  "id": "p162",
+  "tramo": 161,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "You scrub the bowl, you scrub the",
+  "foto": "Close-up of the white toilet bowl and seat, with a blue sponge scrubbing the inside of the bowl. Suds and water droplets cling to the porcelain. The white plastic seat is lifted. Chrome hinges are visible. The white hexagon floor tiles are in the lower background.",
+  "mov": "The sponge moves up and down along the inside curve of the bowl."
+ },
+ {
+  "id": "p163",
+  "tramo": 162,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "seat, and you leave the bottom edge and the",
+  "foto": "Loretta stands beside the toilet, holding a rag in one hand and pointing with the other at the bottom edge of the toilet base and the bolt caps. She wears her lilac blouse, pearl necklace, and floral apron. The bathroom is bright with daylight from the lace-curtained window.",
+  "mov": "Loretta's pointing hand moves from the toilet seat down to the floor."
+ },
+ {
+  "id": "p164",
+  "tramo": 163,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "little caps over the bolts untouched.",
+  "foto": "A clear close-up of the toilet seat hinges and bolt caps, showing the area that is left untouched.",
+  "mov": "A tiny dust particle drifts down and lands on one of the caps."
+ },
+ {
+  "id": "p165",
+  "tramo": 164,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "That is where the misses and the dust and",
+  "foto": "Medium shot of the area around the toilet base showing a buildup of dust, hair, and dampness in the seam between the porcelain and the floor tiles. The white plastic caps are visible. The white hexagon tiles are slightly discolored near the grime. Daylight from the window illuminates the scene.",
+  "mov": "A small clump of dust and hair shifts slightly as if disturbed by air."
+ },
+ {
+  "id": "p166",
+  "tramo": 165,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "the damp all settle in together. My mother used",
+  "foto": "Loretta kneels on the bathroom floor, looking down at the toilet base with a gentle, nostalgic expression. She holds a rag in one hand. Her lilac blouse and floral apron are visible. The white pedestal sink, lace-curtained window, and wicker basket with towels are in the background. Daylight fills the room.",
+  "mov": "Loretta's hand reaches out and gently touches the toilet base."
+ },
+ {
+  "id": "p167",
+  "tramo": 166,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "to say that a clean floor is the frame",
+  "foto": "A shot of the clean bathroom floor, emphasizing it as the 'frame' around the room.",
+  "mov": "A soft reflection of light moves across the clean tiles."
+ },
+ {
+  "id": "p168",
+  "tramo": 167,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "around a clean picture, and the toilet",
+  "foto": "Loretta's hands hold a rag and wipe the white toilet base and the floor around it. The toilet seat is down. Her floral apron is visible. The white square wall tiles and pedestal sink are in the background. Daylight from the lace-curtained window casts soft shadows.",
+  "mov": "The rag moves in a steady wiping motion along the base of the toilet."
+ },
+ {
+  "id": "p169",
+  "tramo": 168,
+  "sec": "M2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "base is the frame that nobody dusts.",
+  "foto": "Loretta stands up from kneeling, looking down at the now-clean toilet base with a satisfied smile. She holds a rag in one hand. Her lilac blouse, pearl necklace, and floral apron are visible. The bathroom is bright and tidy, with the white pedestal sink, lace-curtained window, and wicker basket in view.",
+  "mov": "Loretta straightens up and nods slightly, her hands lowering the rag."
+ },
+ {
+  "id": "p170",
+  "tramo": 169,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Here is the card. Once a week, spray the",
+  "foto": "A clear shot of the narrator spraying the base of the toilet and the bolts with the vinegar spray.",
+  "mov": "The spray bottle emits a fine mist that settles on the toilet base."
+ },
+ {
+  "id": "p171",
+  "tramo": 170,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "base and the bolts with your vinegar spray or",
+  "foto": "Loretta's hand, holding the vinegar spray bottle, directs the spray at the chrome bolts securing the toilet to the floor. The other hand rests on the toilet seat. The white porcelain base and hexagon tile floor are in view, with the wicker basket of towels nearby.",
+  "mov": "The spray bottle moves slightly, targeting the bolts with a short burst."
+ },
+ {
+  "id": "p172",
+  "tramo": 171,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "your peroxide, and wipe it with a rag.",
+  "foto": "Loretta's hand, wrapped in a white rag, wipes the damp toilet base and bolts in a circular motion. The rag is slightly soiled. The white porcelain gleams under the rag, and the hexagon floor tiles are visible below.",
+  "mov": "The rag moves in a circular wiping motion over the base and bolts."
+ },
+ {
+  "id": "p173",
+  "tramo": 172,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Get down there, honey, and look at the seam",
+  "foto": "Loretta, in her lilac blouse and floral apron, kneels on the white bath mat beside the toilet. She leans forward, her face visible in profile, looking intently at the seam where the toilet meets the floor. Her glasses catch the daylight from the window.",
+  "mov": "Loretta leans closer to the seam, her head tilting slightly."
+ },
+ {
+  "id": "p174",
+  "tramo": 173,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "where the toilet meets the floor. It is not",
+  "foto": "The elderly woman kneeling down and pointing at the seam where the toilet meets the floor.",
+  "mov": "The camera slowly pans along the seam, revealing the grime line."
+ },
+ {
+  "id": "p175",
+  "tramo": 174,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "a big job, but it is the job that keeps",
+  "foto": "Loretta's hands, one holding a rag, scrub the seam at the base of the toilet. Her floral apron is visible at the edge. The white porcelain and hexagon tiles are in focus, with the wicker basket and pedestal sink in the background.",
+  "mov": "The hand with the rag scrubs back and forth along the seam."
+ },
+ {
+  "id": "p176",
+  "tramo": 175,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "the room from smelling like a public restroom.",
+  "foto": "The elderly woman holding a single cleaning product and applying it to the toilet.",
+  "mov": "Loretta nods slightly and gestures with the rag."
+ },
+ {
+  "id": "p177",
+  "tramo": 176,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Use one product, not both,",
+  "foto": "Loretta's hands hold two spray bottles: one with vinegar, one with peroxide. She sets one down on the counter, keeping only the vinegar bottle. The other bottle is placed aside. The chrome taps and white sink are visible.",
+  "mov": "One bottle is set down, and the hand withdraws, leaving only one bottle."
+ },
+ {
+  "id": "p178",
+  "tramo": 177,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "and dry it off. The mistake most people",
+  "foto": "Loretta's hand uses a dry white rag to wipe the toilet base, drying it. The other hand rests on the toilet seat. The base is now clean and dry. The hexagon floor and white tiles are visible.",
+  "mov": "The dry rag moves over the base, absorbing moisture."
+ },
+ {
+  "id": "p179",
+  "tramo": 178,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "make is the same as the brush: they clean only",
+  "foto": "Close-up of Loretta's hand holding an old toothbrush, scrubbing the hinge area of the toilet seat. The bristles are worn. The white porcelain and chrome hinge are visible. The rag lies nearby.",
+  "mov": "The toothbrush scrubs back and forth on the hinge."
+ },
+ {
+  "id": "p180",
+  "tramo": 179,
+  "sec": "M2A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "the bowl, and the smell is on the outside.",
+  "foto": "The elderly woman pointing at the outside of the toilet bowl to show where the smell comes from.",
+  "mov": "Loretta gestures with her hand toward the outside of the toilet bowl."
+ },
+ {
+  "id": "p181",
+  "tramo": 180,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "The cost is nothing but a rag and a few sprays,",
+  "foto": "An elderly woman holding a rag and a spray bottle, ready to clean the bathroom.",
+  "mov": "The rag slowly unfolds as if just placed down."
+ },
+ {
+  "id": "p182",
+  "tramo": 181,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "against the toilet sprays that cost",
+  "foto": "Loretta's wrinkled hands hold a commercial toilet spray bottle next to her homemade spray bottle over the white pedestal sink. Her faded floral apron is visible at the edge. The window light catches the chrome taps and white tiles, emphasizing the contrast between the two bottles without showing any labels.",
+  "mov": "Her hands gently lower the commercial bottle out of frame."
+ },
+ {
+  "id": "p183",
+  "tramo": 182,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "far more and only cover the smell for an",
+  "foto": "An elderly woman looking at a toilet spray bottle with a skeptical expression.",
+  "mov": "The water surface ripples slightly and then settles."
+ },
+ {
+  "id": "p184",
+  "tramo": 183,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "hour. Remember the page 3 rule, honey,",
+  "foto": "An elderly woman holding up one cleaning product to emphasize the 'one product per day' rule.",
+  "mov": "She nods slightly and her smile deepens."
+ },
+ {
+  "id": "p185",
+  "tramo": 184,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "one product per day, and never wipe",
+  "foto": "Loretta's wrinkled hands carefully fold a white cotton rag on the edge of the white pedestal sink. Only one spray bottle is visible nearby, emphasizing the 'one product per day' rule. The rag is clean and neatly folded, and the chrome taps reflect the soft daylight.",
+  "mov": "Her hands finish folding the rag and pat it flat."
+ },
+ {
+  "id": "p186",
+  "tramo": 185,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the base with bleach and then vinegar on the",
+  "foto": "Loretta's hands hold a bottle of white vinegar and a bottle of bleach, keeping them apart over the bathroom floor. Her floral apron is visible. The white hexagon tile floor and white bath mat are in the background. The scene is lit by daylight, and the bottles are plain, without labels.",
+  "mov": "She moves the vinegar bottle away from the bleach bottle."
+ },
+ {
+  "id": "p187",
+  "tramo": 186,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "same morning. I live alone now, so",
+  "foto": "Loretta's hands wipe the base of the white porcelain toilet with a rag. The toilet bowl cleaner is visible inside the bowl, and the white square tiles and hexagon floor are in the background. The scene is quiet and solitary, with soft daylight from the window.",
+  "mov": "Her hand moves the rag in a circular wiping motion."
+ },
+ {
+  "id": "p188",
+  "tramo": 187,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "I wipe the base while the toilet bowl cleaner sits",
+  "foto": "Loretta, seen from the side, bends slightly to wipe the base of the toilet with a rag while the toilet bowl cleaner sits in the bowl. Her lilac blouse and floral apron are visible. The white pedestal sink and wicker basket are in the background, and the room is bright with daylight.",
+  "mov": "She straightens up slightly and continues wiping."
+ },
+ {
+  "id": "p189",
+  "tramo": 188,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "in the bowl, and it takes less time than waiting",
+  "foto": "An elderly woman cleaning the toilet bowl while the cleaner sits inside.",
+  "mov": "The kettle's handle is gently touched, but it remains still."
+ },
+ {
+  "id": "p190",
+  "tramo": 189,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "for the kettle. That little seam was",
+  "foto": "A close-up of a kettle with a visible seam on its spout or body.",
+  "mov": "Her finger traces along the seam slowly."
+ },
+ {
+  "id": "p191",
+  "tramo": 190,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "the first place Edna looked when the church toilet",
+  "foto": "Loretta stands in her bathroom, looking down at the toilet base with a thoughtful expression. She wears her lilac blouse and pearl necklace. Her face is clearly visible, and she appears to be remembering. The white square tiles and lace curtain are behind her, and the light is soft and natural.",
+  "mov": "She looks up slightly and her eyes narrow in recollection."
+ },
+ {
+  "id": "p192",
+  "tramo": 191,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "still smelled, and she said the floor tells",
+  "foto": "A wide shot showing the church toilet and the bathroom floor.",
+  "mov": "A shadow passes over the floor as if someone walked by."
+ },
+ {
+  "id": "p193",
+  "tramo": 192,
+  "sec": "M2B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "the truth about the room.",
+  "foto": "Wide view of Loretta's small farmhouse bathroom: white porcelain toilet, white pedestal sink, white square tiles, lace-curtained window, wicker basket with towels, and white hexagon floor. Loretta stands near the sink, her back partly to the camera, wiping her hands on her apron. The room is bright and clean, filled with soft daylight.",
+  "mov": "She turns slightly and takes a step toward the door."
+ },
+ {
+  "id": "p194",
+  "tramo": 193,
+  "sec": "LOOP2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "You have the brush and the base, and the bathroom",
+  "foto": "Loretta stands in her small farmhouse bathroom, holding a toilet brush in one hand and a bottle of cleaning base in the other. She wears a lilac blouse, floral apron, and pearl necklace. Soft daylight from the window illuminates the white square tiles and pedestal sink. She looks down at the brush, her face calm and focused.",
+  "mov": "She lifts the brush slightly and gives a small nod."
+ },
+ {
+  "id": "p195",
+  "tramo": 194,
+  "sec": "LOOP2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "already smells better. But the fourth one",
+  "foto": "Close view of Loretta's wrinkled hands holding the toilet brush and base bottle over the white porcelain toilet. The bathroom is bright and clean, with white square tiles and a wicker basket of towels in the background. Her floral apron is visible. The scene suggests freshness and readiness.",
+  "mov": "Her hands bring the brush and bottle closer together."
+ },
+ {
+  "id": "p196",
+  "tramo": 195,
+  "sec": "LOOP2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "is the seat hinges, and they hide a",
+  "foto": "Extreme close-up of the white plastic toilet seat hinges, where they attach to the porcelain. The area is slightly dusty and grimy, contrasting with the otherwise clean toilet. Soft daylight highlights the crevices. No text or labels are visible.",
+  "mov": "A faint shadow moves across the hinges as if something is hidden."
+ },
+ {
+  "id": "p197",
+  "tramo": 196,
+  "sec": "LOOP2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "film you will not believe. Hold that",
+  "foto": "A close-up of the toilet seat hinges.",
+  "mov": "She slowly tilts the mirror downward."
+ },
+ {
+  "id": "p198",
+  "tramo": 197,
+  "sec": "LOOP2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "thought, because under the rim comes first,",
+  "foto": "Close-up of Loretta's wrinkled hand lifting the white plastic toilet seat to reveal the rim. The underside of the rim is not yet visible, but the seat is raised. The porcelain bowl and white hexagon floor tiles are in view. Daylight casts soft shadows.",
+  "mov": "The seat is lifted slowly upward."
+ },
+ {
+  "id": "p199",
+  "tramo": 198,
+  "sec": "LOOP2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "and under the rim is the one that makes a",
+  "foto": "Loretta's hands hold an old toothbrush near the toilet rim, ready to scrub. The rim area is partially visible but not in extreme detail. She wears her floral apron. The bathroom is clean and bright, with white square tiles and a pedestal sink in the background.",
+  "mov": "Her hand moves the toothbrush toward the rim."
+ },
+ {
+  "id": "p200",
+  "tramo": 199,
+  "sec": "LOOP2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "clean toilet still smell.",
+  "foto": "Extreme close-up of the underside of the toilet rim, showing dark grime and buildup that causes odor. The porcelain is stained in the hidden area. Soft daylight from the side highlights the contrast between the clean exterior and dirty underside. No text or labels.",
+  "mov": "A slight shadow shifts across the grime, emphasizing its presence."
+ },
+ {
+  "id": "p201",
+  "tramo": 200,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Number three, under the rim. This is",
+  "foto": "In a sunlit bathroom, a white porcelain toilet with the seat up, showing the underside of the rim. The rim is in sharp focus, with faint brownish-gray film visible along the inner edge. White square tiles and pale wall behind, soft daylight from a small window with lace half-curtain.",
+  "mov": "The camera slowly zooms in on the rim's underside, revealing the hidden film."
+ },
+ {
+  "id": "p202",
+  "tramo": 201,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the one nobody sees, and it hides the",
+  "foto": "Loretta's wrinkled hands hold a small hand mirror angled under the toilet rim. The mirror reflects the hidden underside. Her floral apron and lilac blouse are partially visible. The bathroom is bright with white tiles and a wicker basket nearby.",
+  "mov": "Her hand tilts the mirror slightly, adjusting the reflection to show the rim's underside."
+ },
+ {
+  "id": "p203",
+  "tramo": 202,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "smell because the water never reaches it. Use a",
+  "foto": "Close-up of the toilet bowl interior, focusing on the water line. The water is clear and still, not reaching the rim above. The white porcelain is clean, with a faint shadow under the rim. Soft daylight highlights the curve of the bowl.",
+  "mov": "A gentle ripple moves across the water surface, then settles."
+ },
+ {
+  "id": "p204",
+  "tramo": 203,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "little hand mirror to look up under the rim, and",
+  "foto": "Loretta, an 81-year-old woman with short curly white hair and wire-rimmed glasses, holds a small hand mirror under the toilet rim. She looks intently at the mirror, her face visible in profile. She wears a lilac blouse, pearl necklace, and floral apron. The bathroom is bright with white tiles.",
+  "mov": "She slowly angles the mirror upward, her eyes focused on the reflection."
+ },
+ {
+  "id": "p205",
+  "tramo": 204,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "you will see the brown or gray film that",
+  "foto": "A clear close-up of the narrator holding a hand mirror to inspect the underside of the toilet rim.",
+  "mov": "The reflection shifts slightly as the mirror is adjusted, bringing more of the film into view."
+ },
+ {
+  "id": "p206",
+  "tramo": 205,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "sits there, out of sight, out of mind.",
+  "foto": "Loretta stands in her small farmhouse bathroom, holding the hand mirror at her side. The toilet with seat up is beside her. White square tiles, pedestal sink, and lace-curtained window are visible. She looks down at the toilet, her posture relaxed. Wicker basket with towels on the floor.",
+  "mov": "She lowers the mirror and places it on the sink, then turns slightly toward the toilet."
+ },
+ {
+  "id": "p207",
+  "tramo": 206,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "My mother said the underside of things tells the",
+  "foto": "Loretta faces slightly away from the camera, her expression thoughtful. She holds a cleaning rag in one hand, standing near the toilet. Her lilac blouse and floral apron are visible. The bathroom is bright with white tiles and soft daylight. She looks down at the toilet rim.",
+  "mov": "She gently wipes the rim with the rag, her hand moving in a slow, deliberate circle."
+ },
+ {
+  "id": "p208",
+  "tramo": 207,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "truth about a housekeeper, and she meant the",
+  "foto": "A close-up of the toilet bowl rim and interior to match the narration about scrubbing the bowl and rim.",
+  "mov": "Her hand moves the rag along the rim, then pauses."
+ },
+ {
+  "id": "p209",
+  "tramo": 208,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "rim, not the floor. You scrub the bowl,",
+  "foto": "Loretta scrubs the toilet bowl with a toilet brush. She leans over, her floral apron visible. The bowl is white and clean. The bathroom setting includes white tiles and a pedestal sink. Daylight from the window highlights her working hands.",
+  "mov": "She pushes the brush down into the bowl and scrubs in a circular motion."
+ },
+ {
+  "id": "p210",
+  "tramo": 209,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "you scrub the seat, and that film stays right",
+  "foto": "A close-up of the toilet seat surface showing the film or residue that the narrator is describing.",
+  "mov": "The camera slowly pans from the clean seat to the hidden film under the rim."
+ },
+ {
+  "id": "p211",
+  "tramo": 210,
+  "sec": "M3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "where it is.",
+  "foto": "A shot of the toilet seat or bowl where the film is located, as referenced by the narrator.",
+  "mov": "The camera slowly pulls back, showing the entire bathroom in its tidy state."
+ },
+ {
+  "id": "p212",
+  "tramo": 211,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Here is the card. Dip the old toothbrush in",
+  "foto": "In the daylight of the small farmhouse bathroom, Loretta's wrinkled hand holds an old toothbrush by its worn handle, dipping the bristles into a small clear glass of vinegar on the white pedestal sink edge. The white square tiles and chrome tap gleam softly behind, the lilac sleeve of her blouse visible at the edge.",
+  "mov": "The toothbrush bristles sink slowly into the vinegar, and a few drops run down the glass."
+ },
+ {
+  "id": "p213",
+  "tramo": 212,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "your vinegar or your peroxide, reach",
+  "foto": "Loretta's hands lift the white plastic toilet seat and reach under the rim with the vinegar-wet toothbrush, her floral apron and lilac blouse filling the side of the frame. The white porcelain bowl and hexagon tile floor catch the daylight from the lace-curtained window.",
+  "mov": "Her hand raises the seat, then the brush moves up and disappears under the rim."
+ },
+ {
+  "id": "p214",
+  "tramo": 213,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "up under the rim, and go around the whole circle.",
+  "foto": "Extreme close view under the toilet rim: Loretta's old fingers guide the toothbrush bristles along the hidden inner circle of white porcelain, tracing the whole curve. A little vinegar shines on the surface, and the chrome of the sink tap is a soft blur in the background.",
+  "mov": "The toothbrush travels steadily around the underside of the rim, from left to right."
+ },
+ {
+  "id": "p215",
+  "tramo": 214,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "You will feel the crust come off, and",
+  "foto": "A close-up of the toothbrush scrubbing under the rim to show the crust coming off as described.",
+  "mov": "The brush drags a small line of crust away, leaving a clean white streak behind it."
+ },
+ {
+  "id": "p216",
+  "tramo": 215,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the smell goes with it. Do not skip",
+  "foto": "Loretta's hands lower the toothbrush toward the pedestal sink, her floral apron tied at the waist and the pearl necklace just visible at the top of the frame. The wicker basket of folded towels sits on the hexagon tile floor beside the toilet, and the lace half-curtain glows with daylight.",
+  "mov": "Her hand brings the used toothbrush down out of frame toward the sink."
+ },
+ {
+  "id": "p217",
+  "tramo": 216,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "this one, because it is the place where the toilet",
+  "foto": "The whole small bathroom in daylight: Loretta stands beside the white porcelain toilet, leaning slightly with her back to the camera, one hand lifting the seat. White square tiles, the pedestal sink, the wicker towel basket and the white bath mat are all visible in the soft, clean light.",
+  "mov": "Loretta bends a little and lifts the toilet seat higher with one hand."
+ },
+ {
+  "id": "p218",
+  "tramo": 217,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hides its dirt, and it is the one that makes a",
+  "foto": "Close under the raised toilet rim, showing the narrow hidden ledge where a faint beige crust and dark line have gathered on the white porcelain. The white plastic seat is lifted out of the way, and the hexagon tile floor and bath mat edge are visible below in daylight.",
+  "mov": "The lifted seat casts a small shadow that slides across the hidden rim as it settles."
+ },
+ {
+  "id": "p219",
+  "tramo": 218,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "clean toilet still smell. The mistake",
+  "foto": "Loretta's face is clearly visible as she looks down at the toilet rim, her wire-rimmed glasses catching the daylight, her short curly white hair neat, the pearl necklace and lilac blouse above her floral apron. Behind her, the white square tiles and the lace-curtained window are softly lit.",
+  "mov": "She gives a small, knowing nod and her eyes shift down toward the rim."
+ },
+ {
+  "id": "p220",
+  "tramo": 219,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "most people make is cleaning only the bowl",
+  "foto": "Close on the inside of the toilet bowl: clean white porcelain curving down to clear water, with the brush resting at the edge. The white seat and rim frame the top of the shot, and the daylight from the window makes a bright reflection on the water.",
+  "mov": "The water surface ripples gently as the brush tip touches it."
+ },
+ {
+  "id": "p221",
+  "tramo": 220,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "and never looking up, honey, and that is where",
+  "foto": "A close-up of the elderly woman looking up at the ceiling or the underside of the toilet lid.",
+  "mov": "She tilts the little mirror slowly upward, catching the light under the rim."
+ },
+ {
+  "id": "p222",
+  "tramo": 221,
+  "sec": "M3A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the sour smell lives.",
+  "foto": "A close-up of the hidden area under the toilet rim or the hinges where the smell originates.",
+  "mov": "The mirror shifts slightly, and the reflection of the crusty rim slides across the glass."
+ },
+ {
+  "id": "p223",
+  "tramo": 222,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "This one costs nothing, and it takes about",
+  "foto": "The elderly woman holding a mirror to inspect the back of the toilet.",
+  "mov": "She gently lifts the toothbrush toward the mirror."
+ },
+ {
+  "id": "p224",
+  "tramo": 223,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "five minutes with the mirror and the toothbrush.",
+  "foto": "A close-up of the elderly woman using a toothbrush to clean a hard-to-reach area of the toilet.",
+  "mov": "She slowly raises the toothbrush to her mouth and begins brushing."
+ },
+ {
+  "id": "p225",
+  "tramo": 224,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "One product per day, and keep the peroxide",
+  "foto": "Close-up of Loretta's wrinkled hands holding a small brown glass bottle of peroxide. She tilts it to pour a few drops onto a clean white cloth. The bottle sits on the white sink edge. Chrome tap and white porcelain are visible. No other products are nearby.",
+  "mov": "She carefully tips the bottle to release drops onto the cloth."
+ },
+ {
+  "id": "p226",
+  "tramo": 225,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "in its own brown bottle away",
+  "foto": "Loretta's hands place the brown peroxide bottle into a small wooden cabinet. The cabinet door is open, revealing a shelf with a white vinegar bottle. She pushes the peroxide bottle to the back, away from the vinegar. The bathroom is tidy and bright.",
+  "mov": "She slides the bottle to the back of the shelf and begins to close the cabinet door."
+ },
+ {
+  "id": "p227",
+  "tramo": 226,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "from the vinegar, just like page 3 says.",
+  "foto": "A close-up of a brown bottle of vinegar sitting on a bathroom shelf or counter.",
+  "mov": "The camera slowly pans from the peroxide bottle to the vinegar bottle."
+ },
+ {
+  "id": "p228",
+  "tramo": 227,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "I live alone now, so I do the rim every",
+  "foto": "Wide view of the bathroom. Loretta kneels on the white hexagon floor, holding a toilet brush. She scrubs the rim of the white porcelain toilet. The seat is lifted. A bucket of soapy water and a rag are beside her. The room is clean and sunlit.",
+  "mov": "She scrubs the rim in small circular motions."
+ },
+ {
+  "id": "p229",
+  "tramo": 228,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Saturday morning while the coffee is still",
+  "foto": "Medium shot of Loretta's hands scrubbing the toilet rim with a brush. In the foreground, a white coffee mug sits on the sink edge, steam rising. The white tiles and chrome tap are visible. Her floral apron and lilac blouse are partly seen.",
+  "mov": "She scrubs vigorously, and steam curls from the mug."
+ },
+ {
+  "id": "p230",
+  "tramo": 229,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hot, and it is done before the first cup is",
+  "foto": "Close-up of the toilet rim, now clean and shiny. Loretta's hand holds a white cloth, wiping the rim dry. The white porcelain gleams. In the blurred background, the coffee mug sits on the sink. The scene is bright and hygienic.",
+  "mov": "She wipes the rim with the cloth in a slow, circular motion."
+ },
+ {
+  "id": "p231",
+  "tramo": 230,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "empty. Edna Pruitt once held a mirror",
+  "foto": "Loretta stands in the bathroom, holding a small hand mirror low, near the toilet. She bends slightly, positioning the mirror under the rim. Her expression is focused. The white tiles and lace curtain are in the background. The floor is spotless.",
+  "mov": "She tilts the mirror to catch the light under the rim."
+ },
+ {
+  "id": "p232",
+  "tramo": 231,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "under the rim of the church toilet and said",
+  "foto": "Medium shot of Loretta's face as she looks down at the mirror in her hand. Her glasses are slightly askew. She holds the mirror under the toilet rim. The white porcelain and her lilac blouse are visible. She is not looking at the camera.",
+  "mov": "She slowly shakes her head and frowns slightly."
+ },
+ {
+  "id": "p233",
+  "tramo": 232,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "it looked like a dirty mustache, and Irene did",
+  "foto": "A clear view of a hand holding a small mirror under the rim of a toilet seat.",
+  "mov": "The mirror slowly moves along the rim, revealing more grime."
+ },
+ {
+  "id": "p234",
+  "tramo": 233,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "not speak to her for a week, but then she",
+  "foto": "of the bathroom. Loretta stands with her back partly turned, holding a scrub brush. She looks toward the door as if someone left. The toilet is behind her. The room is quiet and bright. No other person is present.",
+  "mov": "She turns her head slightly and then looks back at the toilet."
+ },
+ {
+  "id": "p235",
+  "tramo": 234,
+  "sec": "M3B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "scrubbed it anyway.",
+  "foto": "Medium shot of Loretta's hands scrubbing the toilet rim with a brush and white cloth. She works diligently. The rim is partially clean. The sink and mirror are in the background. The scene is calm and focused.",
+  "mov": "She scrubs the rim with steady, firm strokes."
+ },
+ {
+  "id": "p236",
+  "tramo": 235,
+  "sec": "CTA2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "This is why I wrote it all down — every one",
+  "foto": "Loretta stands in her sunlit farmhouse bathroom, holding a small open notebook in both hands, her face visible as she looks down at the pages. She wears a lilac blouse, pearl necklace, and floral apron. Behind her, white square tiles and a pedestal sink with chrome taps. Soft daylight from a lace-curtained window.",
+  "mov": "Loretta turns a page in the notebook with her thumb."
+ },
+ {
+  "id": "p237",
+  "tramo": 236,
+  "sec": "CTA2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "of these on its own page, so you never have",
+  "foto": "A close-up of the open book showing a single handwritten page for one cleaning task.",
+  "mov": "Her fingers gently flip one page over."
+ },
+ {
+  "id": "p238",
+  "tramo": 237,
+  "sec": "CTA2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "to hunt for a video again. If you are watching",
+  "foto": "A TV screen displaying a QR code in a living room setting.",
+  "mov": "Loretta lifts her free hand to gesture toward the television."
+ },
+ {
+  "id": "p239",
+  "tramo": 238,
+  "sec": "CTA2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "on the TV, just point your phone at",
+  "foto": "A person pointing a phone at a TV screen showing a QR code.",
+  "mov": "She slowly moves the phone closer to the screen."
+ },
+ {
+  "id": "p240",
+  "tramo": 239,
+  "sec": "CTA2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the square on the screen. The book sits on the",
+  "foto": "A shot of the shelf above the towels with the book sitting on it.",
+  "mov": "A gentle shadow shifts across the notebook as if someone just placed it there."
+ },
+ {
+  "id": "p241",
+  "tramo": 240,
+  "sec": "CTA2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "shelf above the towels, and you can read the",
+  "foto": "The person reading the book while the toilet bowl is filled with vinegar.",
+  "mov": "Her fingers lightly brush the spine of the notebook."
+ },
+ {
+  "id": "p242",
+  "tramo": 241,
+  "sec": "CTA2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "page while the vinegar does its work.",
+  "foto": "A close-up of the open book showing a single handwritten page for one cleaning task.",
+  "mov": "Her right hand squeezes the spray bottle trigger, releasing a fine mist."
+ },
+ {
+  "id": "p243",
+  "tramo": 242,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Number four, the seat hinges.",
+  "foto": "Loretta, an 81-year-old woman with short curly white hair, wire-rimmed glasses, lilac blouse, pearl necklace, and floral apron, stands beside a white porcelain toilet in a sunlit farmhouse bathroom. She lifts the white plastic seat with both hands, revealing the hinges. White square tiles and a lace-curtained window are visible.",
+  "mov": "Loretta lifts the toilet seat upward."
+ },
+ {
+  "id": "p244",
+  "tramo": 243,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "The hinges are the little hinges where the seat",
+  "foto": "Close-up of Loretta's wrinkled hands pointing at the small metal hinges connecting the white plastic toilet seat to the porcelain bowl. The hinges are slightly tarnished. Soft daylight illuminates the white surfaces and chrome accents.",
+  "mov": "Her index finger taps the hinge gently."
+ },
+ {
+  "id": "p245",
+  "tramo": 244,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "attaches to the bowl, and they hold more than",
+  "foto": "Loretta's hands grip the white plastic toilet seat, lifting it to show the hinge mechanism. The seat is raised at an angle, exposing the underside. The white porcelain bowl and square tiles are in the background. Daylight highlights the clean but worn surfaces.",
+  "mov": "She tilts the seat back and forth slightly."
+ },
+ {
+  "id": "p246",
+  "tramo": 245,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "you think. Lift the seat once a month and",
+  "foto": "Loretta's wrinkled hand lifts the white plastic toilet seat, revealing the underside where it meets the porcelain. A faint gray film is visible along the edge. The hinge area is in sharp focus, with soft daylight from the window.",
+  "mov": "She lifts the seat higher, exposing more of the underside."
+ },
+ {
+  "id": "p247",
+  "tramo": 246,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "look at the underside, where the plastic",
+  "foto": "Loretta's hands hold the raised toilet seat, her fingers tracing the plastic underside near the porcelain rim. The camera shows the junction where plastic meets porcelain, with a slight buildup of grime. The bathroom's white tiles and chrome fixtures are softly blurred.",
+  "mov": "Her finger runs along the plastic edge."
+ },
+ {
+  "id": "p248",
+  "tramo": 247,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "meets the porcelain, or unscrew the",
+  "foto": "Close-up of Loretta's hands unscrewing a small metal bolt from the toilet seat hinge using a simple screwdriver. The white plastic seat is partially detached. The porcelain bowl and white square tiles are visible. Daylight reflects off the chrome screwdriver.",
+  "mov": "She turns the screwdriver counterclockwise."
+ },
+ {
+  "id": "p249",
+  "tramo": 248,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "seat if yours lets you. My mother called the",
+  "foto": "Loretta stands beside the toilet, holding the detached white plastic seat in her hands. She looks down at it with a gentle, remembering expression. The bathroom is bright with daylight, showing white tiles, a pedestal sink, and a wicker basket with towels.",
+  "mov": "She turns the seat over in her hands."
+ },
+ {
+  "id": "p250",
+  "tramo": 249,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hinges the armpits of the bathroom, and",
+  "foto": "A close-up of the woman's hands pointing to the hinges or the underside of the toilet seat.",
+  "mov": "Her fingers gesture toward the hinges."
+ },
+ {
+  "id": "p251",
+  "tramo": 250,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "she was not wrong. They sweep up every",
+  "foto": "Loretta's hand wipes the hinge area with a white rag, picking up a faint gray residue. The toilet seat is raised, and the hinge mechanism is visible. The bathroom's white tiles and chrome fixtures are clean and bright. Daylight streams in from the window.",
+  "mov": "She wipes the rag across the hinge."
+ },
+ {
+  "id": "p252",
+  "tramo": 251,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "little drop and every little smell, and they",
+  "foto": "A close-up of the toilet seat hinges and the area where the plastic meets the porcelain.",
+  "mov": "She tilts the mirror to catch the light."
+ },
+ {
+  "id": "p253",
+  "tramo": 252,
+  "sec": "M4",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "sit there and sour.",
+  "foto": "Loretta stands with a bottle of white vinegar in one hand and a rag in the other, looking at the toilet hinges with a knowing expression. The bathroom is sunlit, with white tiles and a lace curtain. She appears ready to clean.",
+  "mov": "She pours a little vinegar onto the rag."
+ },
+ {
+  "id": "p254",
+  "tramo": 253,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Here is the card from page 9 of my little",
+  "foto": "A close-up of the narrator's hands holding a clearly readable card or book page.",
+  "mov": "Her thumb gently traces the hinge illustration on the card."
+ },
+ {
+  "id": "p255",
+  "tramo": 254,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "book. Spray there with your vinegar or peroxide,",
+  "foto": "Loretta's hand, holding a clear spray bottle, directs a fine mist of vinegar onto the metal hinge of the white plastic toilet seat. The spray glistens in the daylight, and the white square wall tiles and pedestal sink are visible in the background.",
+  "mov": "Her index finger presses the spray nozzle, releasing a mist."
+ },
+ {
+  "id": "p256",
+  "tramo": 255,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "scrub the cracks with the old toothbrush,",
+  "foto": "An old toothbrush with worn bristles scrubs the narrow gap between the toilet seat hinge and the porcelain bowl. Loretta's wrinkled fingers grip the brush handle, and small suds form in the crevice. The white porcelain and chrome tap are in soft focus.",
+  "mov": "The toothbrush moves back and forth in the hinge gap."
+ },
+ {
+  "id": "p257",
+  "tramo": 256,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "and wipe it down. That little gap",
+  "foto": "Loretta's hand wipes the hinge area with a white rag, leaving a clean, dry surface. The rag is bunched in her fist, and the toilet seat is lifted slightly, revealing the clean gap. The wicker basket and bath mat are visible on the floor.",
+  "mov": "The rag sweeps across the hinge in a circular motion."
+ },
+ {
+  "id": "p258",
+  "tramo": 257,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "is a trap for everything, and it sits",
+  "foto": "The narrator pointing at or cleaning the gap between the toilet seat and the bowl.",
+  "mov": "A tiny particle of dust drifts into the gap."
+ },
+ {
+  "id": "p259",
+  "tramo": 258,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "there and sours. The mistake most people",
+  "foto": "Loretta stands in her bathroom, looking down at the toilet with a knowing expression. She wears her wire-rimmed glasses and pearl necklace, and her hands rest on the lifted toilet seat. The white square tiles and lace curtain are behind her in the daylight.",
+  "mov": "She slowly shakes her head from side to side."
+ },
+ {
+  "id": "p260",
+  "tramo": 259,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "make is cleaning only the bowl and never lifting",
+  "foto": "A different angle or a closer view showing the narrator lifting the toilet seat to clean underneath.",
+  "mov": "The toilet seat is lifted upward."
+ },
+ {
+  "id": "p261",
+  "tramo": 260,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the seat, because out of sight is out",
+  "foto": "Loretta's hand holds the lifted toilet seat while her other hand points to the hidden area beneath it. The seat is vertical, and the gap between seat and bowl is exposed. The pedestal sink and wicker basket are in the background.",
+  "mov": "Her pointing finger taps the hidden rim twice."
+ },
+ {
+  "id": "p262",
+  "tramo": 261,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "of mind, and the smell stays right where it",
+  "foto": "The woman stands in the bathroom holding a cleaning spray bottle, looking toward the toilet area.",
+  "mov": "The mirror tilts slightly to catch the light."
+ },
+ {
+  "id": "p263",
+  "tramo": 262,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "was. One product per day, honey, and",
+  "foto": "The woman holds a single cleaning product bottle in the bathroom, emphasizing the 'one product per day' line.",
+  "mov": "She gives a small nod and lifts the vinegar bottle slightly."
+ },
+ {
+  "id": "p264",
+  "tramo": 263,
+  "sec": "M4A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "gloves on if your hands are sore.",
+  "foto": "The woman is shown pulling yellow rubber gloves onto her hands in the bathroom.",
+  "mov": "She flexes her gloved fingers once."
+ },
+ {
+  "id": "p265",
+  "tramo": 264,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "This job costs nothing but a spray and a wipe,",
+  "foto": "The woman holds a spray bottle in one hand and a cleaning cloth in the other, ready to wipe a surface.",
+  "mov": "Her finger presses the nozzle, releasing a fine mist toward the hinge."
+ },
+ {
+  "id": "p266",
+  "tramo": 265,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "against the bathroom sprays that cost far",
+  "foto": "The woman holds a spray bottle while looking at the bathroom surfaces, illustrating the cost comparison.",
+  "mov": "She gestures with the spray bottle toward the toilet, then lowers it."
+ },
+ {
+  "id": "p267",
+  "tramo": 266,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "more and do not touch the hinge at",
+  "foto": "The woman points to or inspects the toilet hinge area, highlighting the part that other sprays miss.",
+  "mov": "Her hand moves the rag back and forth over the hinge."
+ },
+ {
+  "id": "p268",
+  "tramo": 267,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "all. I live alone now, so I lift the",
+  "foto": "The woman lifts the toilet seat (not the lid) in the bathroom.",
+  "mov": "She lifts the seat up and it stays raised."
+ },
+ {
+  "id": "p269",
+  "tramo": 268,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "seat every Monday morning and wipe underneath,",
+  "foto": "The woman reaches under the lifted toilet seat to wipe the rim and underside.",
+  "mov": "Her hand moves the rag along the underside of the seat."
+ },
+ {
+  "id": "p270",
+  "tramo": 269,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "and it takes longer to find the toothbrush",
+  "foto": "The woman reaches for a toothbrush in a holder or cabinet in the bathroom.",
+  "mov": "She turns her head slightly and lifts the toothbrush."
+ },
+ {
+  "id": "p271",
+  "tramo": 270,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "than to do the job. Harold used",
+  "foto": "The bathroom interior without Loretta, showing the white toilet with seat down, pedestal sink, and window with lace curtain. Sunlight streams in, casting soft shadows on the white hexagon tile floor.",
+  "mov": "The lace curtain flutters slightly in a breeze."
+ },
+ {
+  "id": "p272",
+  "tramo": 271,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "to say the hinges were the only part of the bathroom",
+  "foto": "Close-up of Loretta's hand pointing at the clean toilet hinge. The chrome hinge is shiny. Her wrinkled finger touches the hinge. The white porcelain and plastic seat are in focus.",
+  "mov": "Her finger taps the hinge twice."
+ },
+ {
+  "id": "p273",
+  "tramo": 272,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "he never had to clean, and that",
+  "foto": "Medium shot of Loretta from behind, slightly to the side, as she wipes the hinge with a rag. Her back and apron are visible. The toilet and sink are in the frame. Daylight illuminates the scene.",
+  "mov": "She wipes the hinge with a circular motion."
+ },
+ {
+  "id": "p274",
+  "tramo": 273,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "was because I did it for fifty-one years while",
+  "foto": "Close-up of Loretta's hands wringing out a white rag over the pedestal sink. Water drips from the rag. The chrome taps and white basin are visible. Her pearl necklace is just out of frame.",
+  "mov": "Her hands twist the rag, squeezing out water."
+ },
+ {
+  "id": "p275",
+  "tramo": 274,
+  "sec": "M4B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "he was out in the field.",
+  "foto": "The elderly woman standing in the bathroom, continuing her story about doing the cleaning while her husband was in the field.",
+  "mov": "The lace curtain sways gently, revealing more of the field."
+ },
+ {
+  "id": "p276",
+  "tramo": 275,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Now the fifth one, honey, is the dirtiest",
+  "foto": "A close-up of the dirty toilet flush handle that the narrator is referring to as the 'fifth one'.",
+  "mov": "Her raised finger wags up and down twice."
+ },
+ {
+  "id": "p277",
+  "tramo": 276,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "thing in the whole room, and you touch it",
+  "foto": "Close view of the white porcelain toilet bowl and seat in Loretta's bathroom, with a wrinkled hand just touching the white plastic seat edge, white square tiles and hexagon floor tiles visible, soft daylight highlighting the clean porcelain.",
+  "mov": "The hand presses lightly on the seat edge and lifts slightly."
+ },
+ {
+  "id": "p278",
+  "tramo": 277,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "every single time before you wash your hands.",
+  "foto": "Loretta's hands, wrinkled and capable, turn on the chrome tap of the white pedestal sink, water flowing over her fingers, floral apron visible at the edge, white square tiles and a wicker basket with towels behind, daylight from the window.",
+  "mov": "Water flows over her hands as she rubs them together."
+ },
+ {
+  "id": "p279",
+  "tramo": 278,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "But before the handle, let me tell",
+  "foto": "A close-up of the toilet flush handle, as the narrator prepares to talk about it.",
+  "mov": "The camera slowly pans from the tank lid toward the handle area."
+ },
+ {
+  "id": "p280",
+  "tramo": 279,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "you about the ring at the waterline, because",
+  "foto": "Loretta leans slightly forward, pointing a finger down toward the toilet bowl, face visible with a knowing expression, pearl necklace and apron clear, white square tiles and pedestal sink behind, daylight from the lace-curtained window.",
+  "mov": "Her pointing hand moves down toward the bowl."
+ },
+ {
+  "id": "p281",
+  "tramo": 280,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "that is page 10, and it is the bonus",
+  "foto": "A close-up of a page in a cleaning guide or book showing a bonus tip.",
+  "mov": "The water surface ripples slightly, making the ring shimmer."
+ },
+ {
+  "id": "p282",
+  "tramo": 281,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "that makes a clean toilet look dirty.",
+  "foto": "Loretta's hand holds a white rag and wipes along the inside of the toilet bowl at the waterline, the brownish ring partially removed, her floral apron visible, white square tiles and hexagon floor tiles, daylight from the window.",
+  "mov": "Her hand moves the rag in a circular wiping motion along the bowl."
+ },
+ {
+  "id": "p283",
+  "tramo": 282,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "I have not forgotten the handle, and it is",
+  "foto": "A close-up of a hand touching a toilet flush handle.",
+  "mov": "The hand hovers and trembles slightly, then pulls back a little."
+ },
+ {
+  "id": "p284",
+  "tramo": 283,
+  "sec": "LOOP3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "coming right after this, so stay with me.",
+  "foto": "A close-up of the toilet flush handle being pointed at or touched.",
+  "mov": "Her raised hand makes a small 'stay' gesture, palm pushing gently forward."
+ },
+ {
+  "id": "p285",
+  "tramo": 284,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Number five, the flush handle. This",
+  "foto": "Loretta stands in her small farmhouse bathroom, lilac blouse and floral apron visible, her right hand pointing directly at the white plastic flush handle on the toilet tank. Soft daylight from the lace-curtained window falls on her face and the white square tiles behind her.",
+  "mov": "Loretta's pointing hand moves slightly closer to the handle."
+ },
+ {
+  "id": "p286",
+  "tramo": 285,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "is the dirtiest thing in the room, and",
+  "foto": "A close-up of the toilet flush handle.",
+  "mov": "A slight glint of light shifts across the handle's curved surface."
+ },
+ {
+  "id": "p287",
+  "tramo": 286,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "it is the one everybody touches before they",
+  "foto": "A shot of a hand touching the toilet flush handle.",
+  "mov": "Her hand moves closer to the handle and gently touches it."
+ },
+ {
+  "id": "p288",
+  "tramo": 287,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "wash their hands. You scrub the bowl,",
+  "foto": "Loretta's hands, one holding a toilet brush, scrub the inside of the white porcelain toilet bowl. The bowl is clean and gleaming, with water visible at the bottom. Her floral apron is partly in frame as she leans over.",
+  "mov": "The brush moves in a circular scrubbing motion inside the bowl."
+ },
+ {
+  "id": "p289",
+  "tramo": 288,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "you scrub the seat, and then you flush with",
+  "foto": "A close-up of hands scrubbing the toilet seat with a cloth.",
+  "mov": "The handle is pressed down and then slowly returns to its original position."
+ },
+ {
+  "id": "p290",
+  "tramo": 289,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the same handle that has been touched by",
+  "foto": "Loretta's hand, holding a white cloth, wipes the flush handle thoroughly. The handle is on the toilet tank, and the bathroom's white tiles and part of the sink are visible. The cloth is slightly damp, and the handle shines after wiping.",
+  "mov": "The hand moves the cloth back and forth over the handle."
+ },
+ {
+  "id": "p291",
+  "tramo": 290,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "every hand in the house. My mother said the handle",
+  "foto": "A shot of the woman looking at the toilet handle while speaking, or a close-up of the handle.",
+  "mov": "Loretta's head nods slightly as she speaks."
+ },
+ {
+  "id": "p292",
+  "tramo": 291,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "is the front door of the toilet, and you would",
+  "foto": "A different angle showing the woman's face as she delivers the line about the front door.",
+  "mov": "A soft reflection of light moves across the handle's surface."
+ },
+ {
+  "id": "p293",
+  "tramo": 292,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "never leave a front door unwashed.",
+  "foto": "Loretta's hands, holding a white cloth, wipe the flush handle one more time. The handle is on the toilet tank, and the bathroom's white tiles and part of the sink are visible. The cloth is slightly damp, and the handle gleams after wiping.",
+  "mov": "The hand moves the cloth over the handle in a final wiping motion."
+ },
+ {
+  "id": "p294",
+  "tramo": 293,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Wipe it every day, or at least every time",
+  "foto": "The woman actively wiping the toilet handle with a cloth.",
+  "mov": "Loretta's hand raises the spray bottle slightly."
+ },
+ {
+  "id": "p295",
+  "tramo": 294,
+  "sec": "M5",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "you clean the bathroom.",
+  "foto": "A wider shot of the woman cleaning the bathroom area.",
+  "mov": "The hand moves the cloth over the handle in a quick wiping motion."
+ },
+ {
+  "id": "p296",
+  "tramo": 295,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Here is the card. Spray the handle with",
+  "foto": "Loretta's wrinkled hand holds a small clear spray bottle of vinegar and points its nozzle at the white plastic flush handle of the porcelain toilet; droplets of mist catch the soft daylight above the white square wall tiles and worn white hexagon floor.",
+  "mov": "The spray bottle's trigger is squeezed and a fine mist settles on the white plastic handle."
+ },
+ {
+  "id": "p297",
+  "tramo": 296,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "your vinegar or peroxide and wipe it",
+  "foto": "A close-up of the woman spraying and wiping the toilet handle.",
+  "mov": "The rag wipes back and forth across the wet handle, leaving a clean shiny streak."
+ },
+ {
+  "id": "p298",
+  "tramo": 297,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "dry with a rag. Do not forget the little stem",
+  "foto": "Close on Loretta's old fingers folding the white rag around the narrow plastic stem where the flush handle enters the white porcelain tank, the seam of the tank and the small gap of the stem filling the frame in soft daylight.",
+  "mov": "The rag is drawn down along the stem, polishing the small plastic joint."
+ },
+ {
+  "id": "p299",
+  "tramo": 298,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "where it goes into the tank, because that",
+  "foto": "Loretta's hand holds the dry rag pressed at the base of the white plastic flush handle stem against the porcelain tank, her floral apron visible at the edge of the frame, the white square tiles and wicker towel basket behind her.",
+  "mov": "The rag twists around the stem base and pulls away clean."
+ },
+ {
+  "id": "p300",
+  "tramo": 299,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "is where the smudge collects. The mistake most",
+  "foto": "Extreme close-up of the narrow gap where the white plastic flush handle stem meets the porcelain tank, a faint dark smudge line visible in the seam against the bright white glaze, with the soft daylight raking across the porcelain.",
+  "mov": "A shadow slides along the seam as the smudge line is revealed in the gap."
+ },
+ {
+  "id": "p301",
+  "tramo": 300,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "people make is cleaning only the bowl",
+  "foto": "Loretta's hands hold the white rag beside the open toilet bowl, the white plastic seat lifted, her faded floral apron across her front, the pedestal sink and white square tiles behind her in the small farmhouse bathroom.",
+  "mov": "The rag is lowered toward the rim of the open bowl and hovers there."
+ },
+ {
+  "id": "p302",
+  "tramo": 301,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "and never the handle, and then they wonder why",
+  "foto": "Loretta's wrinkled hand grips the white plastic flush handle while the other hand holds the rag, the white porcelain tank and square tiles filling the frame, the handle's clean surface catching the daylight.",
+  "mov": "The hand presses the flush handle down and it sinks slowly."
+ },
+ {
+  "id": "p303",
+  "tramo": 302,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the room still smells when they flush. It costs",
+  "foto": "A close-up of the toilet handle being wiped with a rag.",
+  "mov": "Her hand lifts the rag and wipes once across the top of the tank."
+ },
+ {
+  "id": "p304",
+  "tramo": 303,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "nothing, and it stops the smell before",
+  "foto": "Close on Loretta's hands wringing the white rag over the pedestal sink, a thin stream of clear water falling into the white basin, the chrome taps and white square tiles bright in the daylight.",
+  "mov": "Her hands twist the rag and water drips steadily into the sink."
+ },
+ {
+  "id": "p305",
+  "tramo": 304,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "it starts. One product per day, and",
+  "foto": "A shot of a single cleaning product bottle placed on the bathroom sink or toilet tank.",
+  "mov": "She folds the rag once in her hands and nods gently."
+ },
+ {
+  "id": "p306",
+  "tramo": 305,
+  "sec": "M5A",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "keep the rag dry when you are done.",
+  "foto": "Loretta's old hands drape the dry white rag over the chrome bar of the pedestal sink, the clean white porcelain and square tiles glowing around it in the soft daylight of the farmhouse bathroom.",
+  "mov": "The rag is smoothed flat over the chrome bar and her hands withdraw."
+ },
+ {
+  "id": "p307",
+  "tramo": 306,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "I live alone now, so I wipe the",
+  "foto": "Loretta, in her lilac blouse and floral apron, stands in the small sunlit farmhouse bathroom. She holds a white rag and wipes the chrome toilet handle. White square tiles, pedestal sink, lace half-curtain, and worn hexagon floor are visible.",
+  "mov": "Loretta's hand moves the rag across the handle."
+ },
+ {
+  "id": "p308",
+  "tramo": 307,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "handle every morning after I make the",
+  "foto": "Loretta's wrinkled hands hold the white rag and wipe the chrome toilet handle. The white plastic seat and porcelain bowl are in soft focus behind. Daylight from the window reflects on the handle.",
+  "mov": "The rag slides along the handle."
+ },
+ {
+  "id": "p309",
+  "tramo": 308,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "bed, and it takes ten seconds.",
+  "foto": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cloth.",
+  "mov": "The handle shines as the light shifts slightly."
+ },
+ {
+  "id": "p310",
+  "tramo": 309,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "It is the same handle I have wiped since",
+  "foto": "Through the open bathroom doorway, Loretta is seen in the adjacent bedroom, smoothing a white bedspread with her hands. The bathroom's white tiles and sink are in the foreground. Sunlight streams across the floor.",
+  "mov": "Loretta's hands smooth the bedspread."
+ },
+ {
+  "id": "p311",
+  "tramo": 310,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Harold and I were first married, and it",
+  "foto": "Loretta stands at the bathroom sink, her back to the camera, wiping the chrome handle with a white rag. Her lilac blouse and floral apron are visible. The white pedestal sink and tiles surround her.",
+  "mov": "Her arm moves as she wipes the handle."
+ },
+ {
+  "id": "p312",
+  "tramo": 311,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "still shines like a new dime. He used to",
+  "foto": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cloth.",
+  "mov": "The handle glints as the light changes."
+ },
+ {
+  "id": "p313",
+  "tramo": 312,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "say the handle was the handshake of the bathroom, and",
+  "foto": "Loretta looks toward the toilet handle, a gentle smile on her face. She holds the white rag in her wrinkled hands. Her wire-rimmed glasses and pearl necklace are visible. The white bathroom tiles and sink are behind her.",
+  "mov": "Loretta's lips move as she speaks, and her eyes crinkle."
+ },
+ {
+  "id": "p314",
+  "tramo": 313,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "I always answered that a handshake should",
+  "foto": "The elderly woman looking at the camera with a gentle smile while holding the cleaning cloth.",
+  "mov": "Her fingers adjust the rag slightly."
+ },
+ {
+  "id": "p315",
+  "tramo": 314,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "be clean. That little thing, honey, is",
+  "foto": "Loretta stands in the sunlit bathroom, wiping the toilet handle with a white rag. The white square tiles, pedestal sink, and lace half-curtain are visible. The worn hexagon floor and wicker basket are in the scene.",
+  "mov": "Loretta's arm moves as she wipes the handle."
+ },
+ {
+  "id": "p316",
+  "tramo": 315,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the difference between a bathroom that smells clean",
+  "foto": "Loretta's hands hold the white rag and wipe the chrome handle. The white plastic seat and porcelain bowl are in soft focus. Daylight from the window reflects on the handle.",
+  "mov": "The rag slides along the handle."
+ },
+ {
+  "id": "p317",
+  "tramo": 316,
+  "sec": "M5B",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "and a bathroom that smells like a bathroom.",
+  "foto": "A wide shot of the bathroom showing the toilet and sink to illustrate a bathroom that smells like a bathroom.",
+  "mov": "The handle shines as the light shifts."
+ },
+ {
+  "id": "p318",
+  "tramo": 317,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "On my House Hacks channel, I showed six",
+  "foto": "In the small farmhouse bathroom, Loretta's wrinkled hands hold a brown glass bottle above a white shelf. The shelf is mounted on white square tiles, and to the side, a white vinegar bottle sits on a separate shelf. Soft daylight from the window illuminates the scene, highlighting the bottles and Loretta's floral apron.",
+  "mov": "Loretta's hand gently places the brown bottle on the shelf."
+ },
+ {
+  "id": "p319",
+  "tramo": 318,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "uses of peroxide in the bathroom, and one",
+  "foto": "Loretta, wearing her lilac blouse and floral apron, stands in front of the white pedestal sink. Her hands gesture towards the brown bottle on the shelf. The bathroom is bright with daylight, and the white tiles and chrome taps gleam. A wicker basket with towels is visible in the corner.",
+  "mov": "Loretta's hand points to the brown bottle on the shelf."
+ },
+ {
+  "id": "p320",
+  "tramo": 319,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "of them is Put Hydrogen Peroxide in",
+  "foto": "The elderly woman pouring hydrogen peroxide from the brown bottle into the toilet bowl.",
+  "mov": "The toilet seat slowly lifts up."
+ },
+ {
+  "id": "p321",
+  "tramo": 320,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Your Toilet and Watch What Happens. That is",
+  "foto": "Loretta's hands carefully pour a stream of clear liquid from the brown bottle into the toilet bowl. The toilet is white porcelain, and the bathroom is tidy. Her floral apron is visible. The window with lace curtain lets in soft daylight.",
+  "mov": "The liquid pours from the bottle into the toilet bowl."
+ },
+ {
+  "id": "p322",
+  "tramo": 321,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "where I keep the brown bottle on its own shelf,",
+  "foto": "The elderly woman placing the brown bottle on its own shelf away from the vinegar.",
+  "mov": "The brown bottle is slightly nudged to the right, away from the vinegar."
+ },
+ {
+  "id": "p323",
+  "tramo": 322,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "away from the vinegar, and use it on",
+  "foto": "Loretta's hands hold the brown bottle and a white toilet brush. She is standing in the bathroom, with the white pedestal sink and mirror behind her. The bottle is held away from the brush. Her floral apron and lilac blouse are visible. Daylight fills the room.",
+  "mov": "Loretta's hand moves the bottle away from the brush."
+ },
+ {
+  "id": "p324",
+  "tramo": 323,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the brush and the handle. If you want to see the",
+  "foto": "A close-up of Loretta's wrinkled hands holding the white toilet brush and its handle. She is applying the brown liquid from the bottle onto the brush bristles. The white porcelain toilet is in the background. The scene is well-lit by daylight.",
+  "mov": "Loretta's hand wipes the brush handle with a cloth."
+ },
+ {
+  "id": "p325",
+  "tramo": 324,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "other five uses, that video is there waiting",
+  "foto": "Loretta stands in the bathroom, facing slightly away from the camera, looking towards the white pedestal sink. Her face is visible, showing a gentle smile. She gestures with her hand towards the sink area. The bathroom is bright, with white tiles and a window with lace curtain.",
+  "mov": "Loretta's hand waves towards the sink area."
+ },
+ {
+  "id": "p326",
+  "tramo": 325,
+  "sec": "OTHER",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "for you, honey, but today we only need the one.",
+  "foto": "Loretta's hands hold the brown bottle and the toilet brush. She is standing next to the white toilet, ready to work. The bathroom is clean and bright. Her floral apron and pearl necklace are visible. The wicker basket with towels is in the background.",
+  "mov": "Loretta's hand brings the brush towards the toilet bowl."
+ },
+ {
+  "id": "p327",
+  "tramo": 326,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Now the bonus, the ring at the waterline,",
+  "foto": "Extreme close-up of the white porcelain toilet bowl interior at the waterline, showing a distinct brown mineral ring encircling the bowl just above the water surface. The water is clear, and the white square wall tiles and pale painted wall are softly blurred in the background. Daylight from a small window highlights the ring.",
+  "mov": "The camera slowly pans along the curve of the brown ring."
+ },
+ {
+  "id": "p328",
+  "tramo": 327,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "on page 10 of my little book.",
+  "foto": "A close-up of the open book showing page 10 with text about hard-water rings.",
+  "mov": "Her hands gently turn a page of the notebook."
+ },
+ {
+  "id": "p329",
+  "tramo": 328,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "A brown or gray ring that brushing will",
+  "foto": "Close-up of the brown ring at the toilet waterline. A white toilet brush is held just above the ring, as if about to scrub. The bristles are clean and white. The water surface reflects light from the window. The white porcelain and tiles are bright.",
+  "mov": "The brush moves down and rubs against the ring once."
+ },
+ {
+  "id": "p330",
+  "tramo": 329,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "not touch is hard-water mineral, and",
+  "foto": "A shot of the toilet bowl showing the stubborn brown ring at the waterline.",
+  "mov": "She nods slightly and points with the pumice stone at the ring."
+ },
+ {
+  "id": "p331",
+  "tramo": 330,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no amount of scrubbing will move it.",
+  "foto": "A shot showing the ring remaining on the toilet bowl after an attempt to scrub it.",
+  "mov": "Her hand moves the pumice stone back and forth over the ring."
+ },
+ {
+  "id": "p332",
+  "tramo": 331,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "You need a pumice stone, the kind that costs",
+  "foto": "A clear close-up of the narrator holding a pumice stone.",
+  "mov": "She turns the pumice stone over in her fingers."
+ },
+ {
+  "id": "p333",
+  "tramo": 332,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "about three dollars, instead of the ring remover",
+  "foto": "Close-up of Loretta's hands placing the pumice stone next to a small, unlabeled white bottle (representing ring remover) on the edge of the pedestal sink. The contrast in size is clear. The white sink and chrome tap are in the background. Soft daylight.",
+  "mov": "Her hand sets the pumice stone down beside the bottle."
+ },
+ {
+  "id": "p334",
+  "tramo": 333,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "that costs six dollars. Turn off the water",
+  "foto": "The woman's hand turning the toilet water supply valve clockwise to shut off the water.",
+  "mov": "Her hand rotates the valve clockwise until it stops."
+ },
+ {
+  "id": "p335",
+  "tramo": 334,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "behind the toilet, flush so the water",
+  "foto": "The toilet bowl with the water level visibly dropping below the stained ring after flushing.",
+  "mov": "The flush lever moves down and water swirls."
+ },
+ {
+  "id": "p336",
+  "tramo": 335,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "drops below the ring, and pour one cup of",
+  "foto": "The woman pouring a cup of white vinegar directly onto the stained ring inside the toilet bowl.",
+  "mov": "The vinegar streams from the cup onto the ring."
+ },
+ {
+  "id": "p337",
+  "tramo": 336,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "white vinegar on the ring. Wait thirty minutes,",
+  "foto": "A clock or timer showing thirty minutes have passed, or the woman waiting near the toilet.",
+  "mov": "Tiny bubbles rise from the ring."
+ },
+ {
+  "id": "p338",
+  "tramo": 337,
+  "sec": "BONUS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "then rub gently with the wet pumice stone.",
+  "foto": "The woman's hand rubbing a wet pumice stone gently against the stain inside the toilet bowl.",
+  "mov": "Her hand moves the pumice stone in a small circular motion on the ring."
+ },
+ {
+  "id": "p339",
+  "tramo": 338,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Keep the pumice wet the whole time, honey, because",
+  "foto": "The woman dipping the pumice stone into a bowl of water or holding it under the running faucet to keep it wet.",
+  "mov": "The pumice stone is moved slightly under the running water, catching the light."
+ },
+ {
+  "id": "p340",
+  "tramo": 339,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "dry pumice scratches the porcelain.",
+  "foto": "A close-up of a dry pumice stone scratching a piece of white porcelain, or the woman holding the dry stone near the toilet bowl.",
+  "mov": "The dry pumice stone is rubbed gently against the porcelain rim, creating a faint scratch mark that disappears."
+ },
+ {
+  "id": "p341",
+  "tramo": 340,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "White porcelain only, and that is the BE",
+  "foto": "The woman pointing to or touching the white porcelain of the toilet or sink to emphasize the material.",
+  "mov": "She raises a finger slightly, as if emphasizing a point, then lowers it."
+ },
+ {
+  "id": "p342",
+  "tramo": 341,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "CAREFUL line from page 10. When the",
+  "foto": "The woman holding a book or manual open to page 10, pointing to the 'CAREFUL' line.",
+  "mov": "The pumice stone is dipped into the dish, causing ripples in the water."
+ },
+ {
+  "id": "p343",
+  "tramo": 342,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "ring is gone, turn the water back on and flush.",
+  "foto": "Medium shot of Loretta's hands turning the chrome tap of the white pedestal sink. Water flows into the basin. The toilet is in the background with the seat down. The bathroom is bright, with white tiles and a white bath mat on the floor.",
+  "mov": "The hand turns the tap, and water begins to flow steadily."
+ },
+ {
+  "id": "p344",
+  "tramo": 343,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "The mistake most people make is a dry",
+  "foto": "Extreme close-up of a dry pumice stone held in Loretta's fingers, with a faint scratch mark on the white porcelain toilet rim nearby. The stone looks rough and dry. The white tiles and chrome toilet paper holder are visible in the background.",
+  "mov": "The dry pumice stone is rubbed lightly against the porcelain, and a small scratch appears."
+ },
+ {
+  "id": "p345",
+  "tramo": 344,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "pumice stone, so keep a little dish of water",
+  "foto": "Medium shot of a small white dish filled with water sitting on the hexagon tile floor next to the toilet. Loretta's hand places the pumice stone beside the dish. The white porcelain toilet base and a wicker basket are in the frame. Daylight illuminates the scene.",
+  "mov": "The hand sets the pumice stone down next to the dish, then withdraws."
+ },
+ {
+  "id": "p346",
+  "tramo": 345,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "next to you and dip it often. That ring",
+  "foto": "Close-up of Loretta's hand dipping the pumice stone into the small dish of water, then lifting it, dripping. The white porcelain toilet bowl with a faint ring stain is visible. The hexagon tile floor and white wall tiles are in the background.",
+  "mov": "The pumice stone is dipped and lifted, water droplets falling back into the dish."
+ },
+ {
+  "id": "p347",
+  "tramo": 346,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cost me three dollars once a year, and",
+  "foto": "Medium shot of Loretta's hands holding a wet pumice stone, rubbing it gently along the inside of the white porcelain toilet bowl. The ring stain is partially removed. The bathroom is bright, with white tiles and a small window with lace curtain.",
+  "mov": "The pumice stone moves in a circular motion, and the ring stain fades away."
+ },
+ {
+  "id": "p348",
+  "tramo": 347,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the ring remover bottle cost more and",
+  "foto": "A close-up of the elderly woman holding the bottle of ring remover, showing its label.",
+  "mov": "The bottle is gently nudged, causing it to wobble slightly."
+ },
+ {
+  "id": "p349",
+  "tramo": 348,
+  "sec": "BONUS2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "never worked as well.",
+  "foto": "Loretta stands in her bathroom, holding the wet pumice stone in one hand and the plain white bottle in the other, comparing them. Her face is visible, with a gentle, satisfied expression. She wears her lilac blouse, pearl necklace, and floral apron. The white toilet, sink, and tiles are behind her, bathed in daylight.",
+  "mov": "She slightly lifts the pumice stone and then lowers it, as if weighing the two items."
+ },
+ {
+  "id": "p350",
+  "tramo": 349,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "I live alone now, so I do the ring on",
+  "foto": "Loretta stands alone in her bright farmhouse bathroom, holding a grey pumice stone in both hands at chest level, her face visible with a gentle expression as she looks down at the stone. She wears a lilac button-up blouse, a small pearl necklace, and a faded floral apron. Behind her, white square wall tiles and a white pedestal sink with chrome taps catch the soft daylight from a small window with a white lace half-curtain.",
+  "mov": "Loretta turns the pumice stone over slowly in her hands."
+ },
+ {
+  "id": "p351",
+  "tramo": 350,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the first Saturday of spring and the first Saturday",
+  "foto": "The elderly woman standing in the bathroom, looking at a calendar or preparing to clean the toilet.",
+  "mov": "The water in the bowl ripples gently, catching the light."
+ },
+ {
+  "id": "p352",
+  "tramo": 351,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "of fall, and it takes about fifteen",
+  "foto": "Loretta's wrinkled hands hold a small white kitchen timer, her thumb poised over the dial. She stands beside the white pedestal sink in her farmhouse bathroom, wearing her lilac blouse and floral apron. The chrome taps and white square tiles are visible behind her. The timer's face is blank, with no numbers or text. Soft daylight from the lace-curtained window illuminates the scene.",
+  "mov": "Her thumb presses down on the timer dial."
+ },
+ {
+  "id": "p353",
+  "tramo": 352,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "minutes with the waiting. My mother had a pumice",
+  "foto": "A close-up of a pumice stone resting on the edge of a bathroom sink.",
+  "mov": "A single water droplet rolls slowly down the side of the pumice stone."
+ },
+ {
+  "id": "p354",
+  "tramo": 353,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "stone the size of a bar of soap, and she used",
+  "foto": "An elderly woman holding a pumice stone the size of a bar of soap next to a toilet.",
+  "mov": "Her hand moves the pumice stone back and forth in short strokes."
+ },
+ {
+  "id": "p355",
+  "tramo": 354,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "it on every hard-water ring in the house for",
+  "foto": "Close-up of Loretta's wrinkled hand holding the grey pumice stone against the white porcelain toilet bowl, now free of any ring. The stone is worn down, smaller and more rounded than before, showing years of use. The white plastic seat is lifted, and the worn hexagon tile floor is visible below. Daylight from the nearby window catches the clean, gleaming porcelain and the texture of the stone.",
+  "mov": "Her hand lifts the pumice stone away from the clean bowl."
+ },
+ {
+  "id": "p356",
+  "tramo": 355,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "forty years. If it still smells after",
+  "foto": "An elderly woman scrubbing a hard-water ring inside a toilet bowl with a pumice stone.",
+  "mov": "She inhales slowly through her nose, her nostrils flaring slightly."
+ },
+ {
+  "id": "p357",
+  "tramo": 356,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "all that, it may be the wax seal under",
+  "foto": "A close-up of the base of a toilet showing the wax seal area.",
+  "mov": "Her hand slowly lowers the toilet seat back down."
+ },
+ {
+  "id": "p358",
+  "tramo": 357,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "the toilet, and that is a call to a",
+  "foto": "An elderly woman looking at a wax seal under a toilet, preparing to call a handyman.",
+  "mov": "Her thumb hovers over the phone's keypad, then presses a single button."
+ },
+ {
+  "id": "p359",
+  "tramo": 358,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "handyman. Do not be ashamed to call, honey,",
+  "foto": "Close-up of Loretta's wrinkled hand holding the cordless phone to her ear, her fingers curled gently around the receiver. The phone is plain, with no visible text or numbers. In the background, the white pedestal sink and chrome taps are softly out of focus. Daylight from the window catches the fine hairs on her hand and the subtle veins. The mood is calm and reassuring.",
+  "mov": "Her hand adjusts its grip slightly on the phone."
+ },
+ {
+  "id": "p360",
+  "tramo": 359,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "because a wax seal is not something you",
+  "foto": "An elderly woman holding a phone to her ear while looking at a wax seal under a toilet.",
+  "mov": "She nods slowly, her head tilting slightly."
+ },
+ {
+  "id": "p361",
+  "tramo": 360,
+  "sec": "BONUS3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "can order from the grocery store.",
+  "foto": "A shot of a grocery list or a phone/computer screen showing an online grocery order.",
+  "mov": "A water droplet falls from the tap into the sink basin."
+ },
+ {
+  "id": "p362",
+  "tramo": 361,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "So let me say the whole bathroom list in one",
+  "foto": "A shot of the woman holding a written bathroom cleaning checklist.",
+  "mov": "Loretta's hand moves as she counts off one finger."
+ },
+ {
+  "id": "p363",
+  "tramo": 362,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "breath. The brush, dried under the",
+  "foto": "Close-up of Loretta's wrinkled hands holding the toilet brush by its handle, placing it back into its holder beside the white porcelain toilet. The brush head is visibly dry, with no water dripping. The white plastic seat lid is raised, and the worn hexagon tile floor is visible below.",
+  "mov": "The brush is lowered into the holder and released."
+ },
+ {
+  "id": "p364",
+  "tramo": 363,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "seat lid and soaked in peroxide monthly.",
+  "foto": "A shot of the toilet brush soaking in a container of peroxide.",
+  "mov": "The bottle tilts and peroxide flows into the container."
+ },
+ {
+  "id": "p365",
+  "tramo": 364,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "The base and the bolts, wiped every week.",
+  "foto": "Loretta's hand, holding a white rag, wipes the base of the toilet and the bolts that secure it to the floor. The porcelain base is gleaming white, and the chrome bolts are shiny. The rag moves over the curved surface, leaving a clean streak. The hexagon tile floor is visible around the base.",
+  "mov": "The rag moves in a circular motion over the base and bolts."
+ },
+ {
+  "id": "p366",
+  "tramo": 365,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Under the rim, scrubbed with a toothbrush and",
+  "foto": "A shot of the woman scrubbing under the toilet rim with a toothbrush.",
+  "mov": "The toothbrush scrubs back and forth under the rim."
+ },
+ {
+  "id": "p367",
+  "tramo": 366,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "a mirror. The seat hinges, lifted or",
+  "foto": "A shot of the woman cleaning the toilet seat hinges.",
+  "mov": "The seat hinge is lifted upward, revealing the area beneath."
+ },
+ {
+  "id": "p368",
+  "tramo": 367,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "unscrewed once a month and cleaned under. The",
+  "foto": "Loretta's hands use a screwdriver to unscrew the toilet seat hinge. The seat is partially detached, and she is cleaning underneath with a rag. The white porcelain of the toilet and the chrome screws are visible. The bathroom's white tiles and pedestal sink are in the background.",
+  "mov": "The screwdriver turns, loosening the screw."
+ },
+ {
+  "id": "p369",
+  "tramo": 368,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "flush handle, wiped every time",
+  "foto": "Loretta's hand, holding a white rag, wipes the chrome flush handle. The handle gleams after being wiped. The white porcelain tank and seat are visible. The rag moves over the handle, removing any smudges. The bathroom's white tiles are in the background.",
+  "mov": "The rag wipes across the flush handle."
+ },
+ {
+  "id": "p370",
+  "tramo": 369,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "you clean and every day if you can.",
+  "foto": "Loretta's hands wring out a white rag over the pedestal sink. Water drips from the rag into the sink. The chrome taps are visible. The bathroom's white square tiles and the lace-curtained window are in the background. The scene is bright with daylight.",
+  "mov": "Her hands twist the rag, squeezing out water."
+ },
+ {
+  "id": "p371",
+  "tramo": 370,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Then the ring at the waterline, done with",
+  "foto": "Close-up of the toilet bowl waterline, where a faint ring is visible. Loretta's hand holds a wet pumice stone, ready to scrub the ring. The white porcelain is otherwise clean. The water in the bowl is clear. The bathroom's white tiles are in the background.",
+  "mov": "The pumice stone is lowered toward the waterline ring."
+ },
+ {
+  "id": "p372",
+  "tramo": 371,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "vinegar and a wet pumice stone on white",
+  "foto": "Loretta's hand scrubs the waterline ring with the wet pumice stone. The stone moves against the white porcelain, and the ring begins to fade. Her other hand holds a small bottle of vinegar. The toilet bowl and seat are visible. The bathroom's white tiles are in the background.",
+  "mov": "The pumice stone scrubs back and forth along the waterline."
+ },
+ {
+  "id": "p373",
+  "tramo": 372,
+  "sec": "END",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "porcelain.",
+  "foto": "A close-up of the woman's hand using a wet pumice stone to scrub the porcelain toilet bowl.",
+  "mov": "A drop of water slides down the clean porcelain."
+ },
+ {
+  "id": "p374",
+  "tramo": 373,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "The five mistakes are on page 9 of my",
+  "foto": "A close-up of the open book showing the readable text of page 9 listing the five mistakes.",
+  "mov": "Her right hand gently turns a page of the book."
+ },
+ {
+  "id": "p375",
+  "tramo": 374,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "little book, and the ring is on page 10,",
+  "foto": "A close-up of the book showing page 10 with the instructions for removing the ring.",
+  "mov": "She lifts her head slightly and smiles gently."
+ },
+ {
+  "id": "p376",
+  "tramo": 375,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "with the exact amounts and the steps",
+  "foto": "A close-up of the book showing the exact amounts and steps for cleaning.",
+  "mov": "Her finger traces down the list of steps."
+ },
+ {
+  "id": "p377",
+  "tramo": 376,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "in order. The link is right under this video",
+  "foto": "The narrator pointing to the video description area or holding the book while looking at the camera.",
+  "mov": "The lace curtain by the window sways gently in a light breeze."
+ },
+ {
+  "id": "p378",
+  "tramo": 377,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "in the description. Keep the book on",
+  "foto": "The narrator placing the book on a shelf or counter to keep it.",
+  "mov": "Her hands slide the book back against the wall on the shelf."
+ },
+ {
+  "id": "p379",
+  "tramo": 378,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "the shelf above the towels, and you will never",
+  "foto": "The elderly woman standing in the bathroom pointing to the wooden shelf above the wicker basket of towels.",
+  "mov": "A faint shadow of the lace curtain moves across the book cover."
+ },
+ {
+  "id": "p380",
+  "tramo": 379,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "have to hunt for a video again. I wrote",
+  "foto": "The elderly woman holding a notebook and pen, writing down instructions in the bathroom.",
+  "mov": "She nods slightly and gestures with the pen toward the shelf."
+ },
+ {
+  "id": "p381",
+  "tramo": 380,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "it all down so you can walk to the bathroom,",
+  "foto": "The elderly woman walking through the bathroom doorway holding the notebook.",
+  "mov": "She takes a step forward, holding the book open in front of her."
+ },
+ {
+  "id": "p382",
+  "tramo": 381,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "open the book, and do the job without me",
+  "foto": "The elderly woman opening the book while standing next to the toilet.",
+  "mov": "Her hand flips a page of the book."
+ },
+ {
+  "id": "p383",
+  "tramo": 382,
+  "sec": "CTA3",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "standing over your shoulder.",
+  "foto": "The elderly woman standing directly behind the toilet, looking over it as if supervising.",
+  "mov": "She gives a small, final nod and turns slightly toward the door."
+ },
+ {
+  "id": "p384",
+  "tramo": 383,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Now tell me in the comments which spot in your",
+  "foto": "The elderly woman pointing to different areas of the bathroom, such as the toilet brush or base.",
+  "mov": "She leans in and tilts her head, hand to ear."
+ },
+ {
+  "id": "p385",
+  "tramo": 384,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "bathroom you have been ignoring, the brush or",
+  "foto": "The elderly woman looking at the toilet brush holder on the floor with a questioning expression.",
+  "mov": "Her hands slowly rotate the brush, showing the bristles and handle."
+ },
+ {
+  "id": "p386",
+  "tramo": 385,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "the base or the handle. Tell me what your toilet",
+  "foto": "The elderly woman pointing to the base and handle of the toilet brush.",
+  "mov": "She gestures with one hand toward the toilet brush holder beside the toilet."
+ },
+ {
+  "id": "p387",
+  "tramo": 386,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "brush holder looks like when you open it,",
+  "foto": "The elderly woman opening the toilet brush holder to reveal its interior.",
+  "mov": "Her hands slowly open the holder's lid, revealing the inside."
+ },
+ {
+  "id": "p388",
+  "tramo": 387,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "and do not be shy, because Edna Pruitt",
+  "foto": "Medium shot of Loretta standing in her bathroom, a gentle smile on her face, her wire-rimmed glasses catching the light, one hand touching her pearl necklace, the other resting on the white pedestal sink, with the white square wall tiles and the lace-curtained window behind her, a wicker basket of towels on the floor, and the white toilet with its seat down to her left, all in soft daylight.",
+  "mov": "She gives a small, reassuring nod and pats her pearl necklace."
+ },
+ {
+  "id": "p389",
+  "tramo": 388,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "would not have been. I read every one,",
+  "foto": "A close-up of Edna holding a letter or reading a story from a piece of paper.",
+  "mov": "She tilts the mirror slightly, catching the light on the porcelain."
+ },
+ {
+  "id": "p390",
+  "tramo": 389,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "and Danny reads them to me. Your story",
+  "foto": "Edna sitting in a living room chair while Danny reads a story to her from a book or paper.",
+  "mov": "She looks down and then up again, as if listening to someone reading."
+ },
+ {
+  "id": "p391",
+  "tramo": 390,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "might be the one that helps another lady find her",
+  "foto": "A woman smelling a pleasant scent, like a flower or a candle, in a bright room.",
+  "mov": "Her hand moves the brush in a small circular scrubbing motion inside the bowl."
+ },
+ {
+  "id": "p392",
+  "tramo": 391,
+  "sec": "QUESTION",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "smell, honey, so do not keep it to yourself.",
+  "foto": "Edna looking directly at the camera with an encouraging expression, perhaps holding a letter.",
+  "mov": "Her hands gently lower the brush into the holder and release it."
+ },
+ {
+  "id": "p393",
+  "tramo": 392,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Next time, we go into the kitchen for The",
+  "foto": "Loretta's kitchen with white enamel stove and yellow gingham curtains. Loretta, seen from behind, walks toward a stainless steel refrigerator, her floral apron tied at the waist. Sunlight from the window casts a warm glow on the worn wooden table and rooster cookie jar.",
+  "mov": "Loretta takes a step toward the refrigerator and extends her hand."
+ },
+ {
+  "id": "p394",
+  "tramo": 393,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Best Way to Clean Stainless Steel Appliances.",
+  "foto": "Edna walking through a doorway into the kitchen.",
+  "mov": "The cloth slides slightly on the counter as a draft moves the curtain."
+ },
+ {
+  "id": "p395",
+  "tramo": 394,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Those fingerprints on the refrigerator that smear",
+  "foto": "Loretta stands before the refrigerator, her face visible, showing a gentle, knowing expression. She holds up a small bottle of rubbing alcohol in one hand and a clean rag in the other. The white stove with chrome handles and yellow gingham curtains frame her.",
+  "mov": "Loretta lifts the bottle slightly and gives a small nod."
+ },
+ {
+  "id": "p396",
+  "tramo": 395,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "instead of coming off, honey, the answer is",
+  "foto": "Edna holding a cleaning cloth and a bottle of cleaner, ready to demonstrate the solution.",
+  "mov": "The rag's corner flutters as a breeze passes."
+ },
+ {
+  "id": "p397",
+  "tramo": 396,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "not the spray you are using. Come along",
+  "foto": "Loretta, seen from the side, stands at the kitchen counter with the refrigerator behind her. She pours a small amount of rubbing alcohol onto the rag. The white stove, rooster cookie jar, and yellow gingham curtains complete the warm, tidy kitchen.",
+  "mov": "Loretta tilts the bottle, pouring liquid onto the rag."
+ },
+ {
+  "id": "p398",
+  "tramo": 397,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "and see. We will use the rubbing alcohol",
+  "foto": "Loretta faces the refrigerator, her wrinkled hands holding the damp rag. She looks at the smudged stainless steel with concentration. Her lilac blouse and pearl necklace are visible, and the small wooden cross on the wall behind her catches the light.",
+  "mov": "Loretta raises the rag toward the refrigerator door."
+ },
+ {
+  "id": "p399",
+  "tramo": 398,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "from page 4 of my little book, and the",
+  "foto": "Extreme close-up of Loretta's aged hands wiping the stainless steel refrigerator door with the alcohol-dampened rag. The fingerprints vanish, leaving a clean, shiny surface. The chrome handle and a sliver of yellow gingham curtain are reflected in the steel.",
+  "mov": "The rag moves in a circular motion, erasing a smudge."
+ },
+ {
+  "id": "p400",
+  "tramo": 399,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "difference will make your refrigerator look like it was",
+  "foto": "Loretta, seen from a three-quarter angle, steps back from the refrigerator and admires the result. She holds the rag loosely in one hand. The refrigerator door gleams, reflecting the kitchen's warm daylight and the yellow gingham curtains.",
+  "mov": "Loretta takes a small step backward and tilts her head."
+ },
+ {
+  "id": "p401",
+  "tramo": 400,
+  "sec": "NEXT",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "delivered yesterday.",
+  "foto": "A wide shot of the elderly woman smiling while looking at the clean, shiny exterior of the refrigerator.",
+  "mov": "A soft highlight glides across the polished steel as the curtain sways."
+ },
+ {
+  "id": "p402",
+  "tramo": 401,
+  "sec": "BLESS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Clean the outside of the toilet, honey, because",
+  "foto": "Close-up of Loretta's wrinkled hands holding a white rag, wiping the outside of the white porcelain toilet bowl in her small farmhouse bathroom. White square tiles and chrome taps are visible in the background. Soft daylight from the window illuminates the scene.",
+  "mov": "Her hand moves the rag in a circular wiping motion."
+ },
+ {
+  "id": "p403",
+  "tramo": 402,
+  "sec": "BLESS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "that is where the smell lives. Waste not,",
+  "foto": "Medium shot of Loretta from the waist down, spraying a clear liquid from a spray bottle onto the base of the toilet. She wears a faded floral cotton apron over a lilac blouse. The white hexagon tile floor and wicker basket are visible.",
+  "mov": "She squeezes the spray bottle trigger, releasing a mist."
+ },
+ {
+  "id": "p404",
+  "tramo": 403,
+  "sec": "BLESS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "want not, my mother said, and she",
+  "foto": "Extreme close-up of Loretta's hands scrubbing the toilet rim with an old toothbrush. The white porcelain and plastic seat are in focus, with a small amount of cleaner foam visible. The chrome hinge of the seat is also seen.",
+  "mov": "The toothbrush moves back and forth along the rim."
+ },
+ {
+  "id": "p405",
+  "tramo": 404,
+  "sec": "BLESS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "was right about the bathroom too. God bless,",
+  "foto": "Medium shot of Loretta's face as she looks down at the toilet, a gentle smile on her lips. She wears thin wire-rimmed glasses and a pearl necklace. The white tiled wall and window with lace curtain are behind her.",
+  "mov": "She nods slightly, her expression warm."
+ },
+ {
+  "id": "p406",
+  "tramo": 405,
+  "sec": "BLESS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "loretta"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "and I will see you in the next one.",
+  "foto": "A wide shot of the vlogger smiling and waving at the camera in a tidy bathroom to signal the end of the video.",
+  "mov": "She reaches up and sets the towel on the shelf."
+ },
+ {
+  "id": "p407",
+  "tramo": 406,
+  "sec": "BLESS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "A clean bathroom is a quiet blessing, and",
+  "foto": "A clean, well-lit shot of a tidy bathroom with a toilet, sink, and folded towels to illustrate the 'quiet blessing' of a clean space.",
+  "mov": "A subtle reflection of light moves across the chrome handle of the brush."
+ },
+ {
+  "id": "p408",
+  "tramo": 407,
+  "sec": "BLESS",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "you deserve one in your house.",
+  "foto": "A different angle or room in the house showing a clean, welcoming space that the viewer 'deserves'.",
+  "mov": "The lace curtain sways gently from a breeze."
+ }
+]

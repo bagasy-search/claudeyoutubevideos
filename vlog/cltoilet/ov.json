@@ -1,0 +1,296 @@
+[
+ {
+  "c": "ClVideoRef",
+  "frase": "The Laundry Mistake Silently Destroying Your Towels",
+  "dur": 2,
+  "props": {
+   "thumb": "img/cltoilet/th_cltowels.jpg",
+   "title": "The Laundry Mistake",
+   "tag": "PREVIOUS VIDEO"
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "five spots on the outside",
+  "dur": 5,
+  "props": {
+   "num": "5",
+   "unidad": "spots",
+   "txt": "nobody looks"
+  }
+ },
+ {
+  "c": "ClBookPage",
+  "frase": "on page 4 of my little book",
+  "dur": 5,
+  "props": {
+   "page": "img/cltoilet/page4.jpg",
+   "pageNo": 4,
+   "stamp": "8 things, 40 jobs"
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "We set it out to dry",
+  "dur": 8,
+  "props": {
+   "antes": "k001",
+   "despues": "k002",
+   "nota": "smell gone by Sunday"
+  }
+ },
+ {
+  "c": "ClBookPage",
+  "frase": "look at page 3 of my little book",
+  "dur": 5,
+  "props": {
+   "page": "img/cltoilet/page3.jpg",
+   "pageNo": 3,
+   "stamp": "Never mix these"
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "Bleach never goes with vinegar",
+  "dur": 7,
+  "props": {
+   "title": "Never mix",
+   "no": {
+    "img": "k003",
+    "txt": "bleach and vinegar together"
+   },
+   "si": {
+    "img": "k004",
+    "txt": "one product at a time"
+   }
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "one product per day",
+  "dur": 5,
+  "props": {
+   "num": "1",
+   "unidad": "product/day",
+   "txt": "never mix",
+   "img": "k005"
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "Let the brush dry before it goes back",
+  "dur": 10,
+  "props": {
+   "title": "Dry the brush",
+   "pasos": [
+    {
+     "img": "k006",
+     "txt": "lay brush across rim"
+    },
+    {
+     "img": "k007",
+     "txt": "lower the seat lid"
+    },
+    {
+     "img": "k008",
+     "txt": "soak head monthly"
+    },
+    {
+     "img": "k009",
+     "txt": "let it dry"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "the smell is on the outside",
+  "dur": 7,
+  "props": {
+   "title": "Clean the outside",
+   "no": {
+    "img": "k010",
+    "txt": "only the bowl"
+   },
+   "si": {
+    "img": "k011",
+    "txt": "base and outside"
+   }
+  }
+ },
+ {
+  "c": "FabCalendario",
+  "frase": "Once a week, spray the base and the bolts",
+  "dur": 7,
+  "props": {
+   "cada": 7,
+   "txt": "spray base & bolts",
+   "title": "Base care"
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "Dip the old toothbrush in your vinegar",
+  "dur": 4.9,
+  "props": {
+   "title": "Under the rim",
+   "pasos": [
+    {
+     "img": "k012",
+     "txt": "dip toothbrush"
+    },
+    {
+     "img": "k013",
+     "txt": "use a mirror"
+    },
+    {
+     "img": "k014",
+     "txt": "scrub the rim circle"
+    },
+    {
+     "img": "k015",
+     "txt": "rinse"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "the crust come off",
+  "dur": 8,
+  "props": {
+   "antes": "k016",
+   "despues": "k017",
+   "nota": "no film, no smell"
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "takes about five minutes",
+  "dur": 5,
+  "props": {
+   "num": "5",
+   "unidad": "minutes",
+   "txt": "with mirror and toothbrush",
+   "img": "k018"
+  }
+ },
+ {
+  "c": "ClQRCard",
+  "frase": "point your phone at the square on the screen",
+  "dur": 6,
+  "props": {
+   "qr": "img/cltoilet/qr.jpg",
+   "cover": "img/cltoilet/book_cover.jpg",
+   "text": "Scan for the book",
+   "kicker": "Clean Home Manual"
+  }
+ },
+ {
+  "c": "FabCalendario",
+  "frase": "Wipe it every day",
+  "dur": 5,
+  "props": {
+   "cada": 1,
+   "txt": "wipe the handle",
+   "title": "Handle care"
+  }
+ },
+ {
+  "c": "ClVideoRef",
+  "frase": "Put Hydrogen Peroxide in Your Toilet and Watch What Happens",
+  "dur": 5,
+  "props": {
+   "thumb": "img/cltoilet/th_hhtoilet.jpg",
+   "title": "Peroxide in Your Toilet",
+   "tag": "OTHER VIDEO"
+  }
+ },
+ {
+  "c": "ClBookPage",
+  "frase": "on page 10 of my little book",
+  "dur": 5,
+  "props": {
+   "page": "img/cltoilet/page10.jpg",
+   "pageNo": 10,
+   "stamp": "The ring"
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "Turn off the water behind the toilet",
+  "dur": 10,
+  "props": {
+   "title": "Pumice ring care",
+   "pasos": [
+    {
+     "img": "k019",
+     "txt": "turn off water"
+    },
+    {
+     "img": "k020",
+     "txt": "flush to drop water"
+    },
+    {
+     "img": "k021",
+     "txt": "pour vinegar"
+    },
+    {
+     "img": "k022",
+     "txt": "rub with wet pumice"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "dry pumice scratches the porcelain",
+  "dur": 4.7,
+  "props": {
+   "title": "Keep it wet",
+   "no": {
+    "img": "k023",
+    "txt": "dry pumice"
+   },
+   "si": {
+    "img": "k024",
+    "txt": "wet pumice"
+   }
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "When the ring is gone",
+  "dur": 8,
+  "props": {
+   "antes": "k025",
+   "despues": "k026",
+   "nota": "wet pumice, no scratches"
+  }
+ },
+ {
+  "c": "ClCheck",
+  "frase": "The flush handle, wiped",
+  "dur": 8,
+  "props": {
+   "title": "The bathroom list",
+   "items": [
+    "Brush: dry across rim",
+    "Base & bolts: wipe weekly",
+    "Under rim: scrub with mirror",
+    "Handle: wipe every day"
+   ]
+  }
+ },
+ {
+  "c": "ClVideoRef",
+  "frase": "The Best Way to Clean Stainless Steel Appliances",
+  "dur": 6,
+  "props": {
+   "thumb": "img/cltoilet/th_clsteel.jpg",
+   "title": "Clean Stainless Steel",
+   "tag": "NEXT VIDEO",
+   "next": true
+  }
+ }
+]

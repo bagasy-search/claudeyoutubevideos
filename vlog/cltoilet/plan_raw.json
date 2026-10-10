@@ -1,0 +1,594 @@
+{
+ "vision": "Warm, nostalgic, and clean: an 81-year-old church lady in her sunlit farmhouse bathroom, hands wrinkled and capable, with white porcelain and white square tiles glowing. Every shot feels like a well-kept 1950s home, with soft daylight, floral apron, and no clutter. The edit moves between Loretta's face as she teaches, extreme close-ups of the toilet's hidden grime, and clean procedure cards. No dirt is shown for shock; it is shown to teach. The palette is white, lilac, chrome, and old wood, with a gentle, honest pace.",
+ "secciones": {
+  "HOOK": "Shots of the sparkling toilet bowl and white tiles, then a hero shot of Loretta pinching her nose, face visible, as she calls the viewer to smell. Close detail on the wet brush in its closed holder. Avoid actual bathroom smell or disgusting graphics; keep it clean but pointed.",
+  "REMEMBER": "First, a ≤2s clippable reference card to the laundry video over a folded towel. Then hero shot of Loretta speaking, face visible, with folded towels and a clean bathroom behind her. Show the towel loops and the closed brush holder as parallel hiding spots.",
+  "PAIN": "Hero shot of Loretta sympathizing, face visible, with a concerned but not scolding expression. Cut to glossy bowl being scrubbed, a flowery spray mist, then back to her hand touching the outside base and hinges. Avoid brand labels on cleaner bottles.",
+  "PROMISE": "First a clean full-page shot of page 9 over a white tile background, then a hero shot of Loretta pointing to the page, face visible. Follow with the under-sink shelf and the eight products, medium shot of her hand counting them.",
+  "STORY": "Hero shot of Loretta telling the church story, face visible, with a soft slight smile. B-roll of an old church bathroom door, a mop bucket, a closed brush bucket, then hands pulling out a wet brush. Avoid showing any actual filthy brush; keep it suggestive.",
+  "CTA1": "Hero shot of Loretta holding the open book to page 9, face visible, then close-up of the link area? No. Show the book on the shelf above the towels, then the card at the sink. Avoid any URL on screen.",
+  "SAFETY": "Page 3 of the book as a full-page graphic with the title clear. B-roll of bleach and vinegar bottles separated by a wide gap, then a window opening, a gloved hand labeling a bottle. Hero shot of Loretta saying the rules, face visible, grave but kind.",
+  "SINK": "Open cabinet under the sink, camera low and medium. Loretta's wrinkled hand points to each product as she names it: white vinegar, baking soda, blue dish soap, brown peroxide bottle, washing soda, rubbing alcohol, dishwasher tablets, rags, toothbrush, squeegee, pumice stone. Hero shot of her looking at the shelf, face visible at the end.",
+  "M1": "Hero shot of Loretta announcing mistake one, face visible, holding the brush. Then close detail of the wet brush dripping into a closed holder, the dark inside, and her hand opening it. Avoid actual stink lines or flies.",
+  "M1A": "Over-the-shoulder shot of the page 9 card, then a hero shot of Loretta's hands demonstrating: lifting the seat, laying the brush handle across the rim, lowering the seat lid. Close-up of peroxide soaking the brush head in the holder.",
+  "M1B": "Split the screen conceptually: one shot of the toilet bowl being scrubbed only, then a shot of the outside base and holder being wiped. Hero shot of Loretta saying 'My mother would have tanned my hide,' face visible with a rueful smile.",
+  "LOOP": "Hero shot of Loretta pointing to the base, face visible, then a slow pan from the toilet bowl to the base bolts. Avoid cutting to the under-rim yet; build anticipation.",
+  "M2": "Hero shot of Loretta kneeling by the toilet base, face visible, pointing at the floor seam and bolt caps. Close detail of the grimy seam and the little caps, then a wide shot of her wiping it.",
+  "M2A": "Top-down shot of the page 9 card with base section. Hero shot of Loretta's hand spraying vinegar on the base, then wiping with a rag, then drying with another. Show the seam clearly.",
+  "M2B": "Montage: close-up of a single spray bottle, a rag folding, the base after wiping. Hero shot of Loretta saying the church story, face visible, with a knowing look.",
+  "LOOP2": "Hero shot of Loretta holding up a hand mirror, face partially visible behind it, then a slow tilt up under the rim. Avoid showing under the rim yet; keep it mysterious.",
+  "M3": "Hero shot of Loretta with the hand mirror, face visible, then an extreme close-up of the mirror reflecting the brown film under the rim. Show only a clean section of rim after.",
+  "M3A": "Close-up of the old toothbrush dipped in a small glass of vinegar, then Loretta's hand reaching under the rim, scrubbing around the circle. A mirror in the other hand. Show the crust coming off on the brush.",
+  "M3B": "Hero shot of Loretta standing at the sink with mirror and toothbrush, face visible, saying the Saturday coffee line. Cut to the clean underside of the rim, then a clean toothbrush.",
+  "CTA2": "Hero shot of Loretta holding the book, face visible, then a clean QR code card on the screen over her shoulder? Show the phone pointing at the TV screen. The book on the shelf above towels. Avoid showing any URL; use the QR card.",
+  "M4": "Hero shot of Loretta lifting the seat, face visible, pointing at the hinges. Close-up of the hinge area with a little gray film, then her fingers wiping it. Avoid unscrewing if not necessary.",
+  "M4A": "Top-down shot of the page 9 card hinge section. Hero shot of Loretta's hand spraying the hinges and scrubbing with an old toothbrush, then wiping dry. Show the gap clearly.",
+  "M4B": "Close-up of the clean hinges shining. Hero shot of Loretta saying the Harold line, face visible, with a soft smile. Then a quick shot of a field outside the bathroom window.",
+  "LOOP3": "Hero shot of Loretta wagging a finger, face visible, promising the dirtiest thing. Slow pan to the flush handle, but do not show the handle yet. Keep tension.",
+  "M5": "Hero shot of Loretta pointing to the flush handle, face visible, then a close-up of the handle with a slight smudge. Show a hand flushing, then the same handle being wiped.",
+  "M5A": "Top-down page 9 card handle section. Hero shot of Loretta's hand spraying the handle and the stem, then wiping with a dry rag. Close-up of the stem where it enters the tank.",
+  "M5B": "Close-up of the handle shining like a new dime, then a wide shot of Loretta making the bed through the doorway, then her back in the bathroom wiping handle. Hero shot of her face as she says the handshake line.",
+  "OTHER": "A clean video reference card for the House Hacks peroxide video over a shot of the brown bottle on its own shelf. Show the bottle away from the vinegar, then the bathroom. Hero shot of Loretta pointing to the shelf, face visible briefly.",
+  "BONUS": "Full-page shot of page 10, then a close-up of a brown ring at the waterline. Hero shot of Loretta holding a pumice stone, face visible. B-roll of turning off water, flushing, pouring vinegar from a measuring cup.",
+  "BONUS2": "Close-up of a wet pumice stone being dipped in a dish of water, then rubbing the ring gently. Show the ring disappearing. A before/after pair of the same toilet rim. Hero shot of Loretta saying the BE CAREFUL line, face visible, serious.",
+  "BONUS3": "Hero shot of Loretta holding the pumice stone, face visible, saying the spring and fall schedule. Cut to an exterior shot of the farmhouse with a handyman truck? Maybe not. Show a clean ring, then a phone on the counter? Avoid showing a handyman.",
+  "END": "Hero shot of Loretta at the bathroom door, face visible, listing the items on her fingers. Quick cuts to each clean area: brush drying, base, under rim, hinges, handle, ring. Avoid any text overlay; let her count.",
+  "CTA3": "Full-page shot of page 9, then page 10, then the book on the shelf above towels. Hero shot of Loretta pointing to the shelf, face visible. Avoid any URL.",
+  "QUESTION": "Hero shot of Loretta sitting on the edge of the bathtub, face visible, leaning in as if listening. Show the comments section? No; keep her speaking, maybe with a hand to her ear. Avoid reading comments on screen.",
+  "NEXT": "First a clean video reference card for the stainless steel video over a shot of the kitchen refrigerator with fingerprints. Then hero shot of Loretta in the kitchen, face visible, with the rubbing alcohol and a rag. Show the stove and yellow gingham.",
+  "BLESS": "Hero shot of Loretta folding a clean white towel, face visible, then placing it on the shelf above the towels. End on the clean, quiet bathroom with the brush drying across the rim and soft light through the window."
+ },
+ "avatar": [
+  {
+   "n": "HOOK",
+   "desde": "Honey, come here and pinch your nose with me",
+   "hasta": "it is on page 9 of my little book"
+  },
+  {
+   "n": "HOOK_2",
+   "desde": "I am going to walk you through all five before you buy another spray",
+   "hasta": "and the first one is the one you touch every time you flush"
+  },
+  {
+   "n": "HOOK_3",
+   "desde": "The smell is not in the water, honey",
+   "hasta": "it is in the damp dark places around it"
+  },
+  {
+   "n": "REMEMBER",
+   "desde": "Waste not, want not, my mother said, and she meant the bathroom too",
+   "hasta": "we are going to find every one of them"
+  },
+  {
+   "n": "PAIN",
+   "desde": "They scrub the bowl till it shines",
+   "hasta": "that is the honest truth"
+  },
+  {
+   "n": "PROMISE",
+   "desde": "Then I will give you the ring at the waterline on page 10",
+   "hasta": "because that is the other thing that makes a clean toilet look dirty"
+  },
+  {
+   "n": "STORY",
+   "desde": "At Zion United Methodist, the ladies' room off the basement had a toilet",
+   "hasta": "the smell went away by the next Sunday"
+  },
+  {
+   "n": "CTA1",
+   "desde": "The link is down in the description",
+   "hasta": "without your glasses"
+  },
+  {
+   "n": "SAFETY1_0",
+   "desde": "Old-fashioned cleaning is safe when you use one thing at a time",
+   "hasta": "and the mixtures on that page are not"
+  },
+  {
+   "n": "SAFETY2_0",
+   "desde": "Rinse between products, open a window, label every bottle",
+   "hasta": "and one product per day in the toilet"
+  },
+  {
+   "n": "SAFETY2_1",
+   "desde": "Gloves on for anything stronger than dish soap, honey",
+   "hasta": "older than the washing machine"
+  },
+  {
+   "n": "SINK",
+   "desde": "That is the whole shelf, honey",
+   "hasta": "we will use four of them today"
+  },
+  {
+   "n": "M1",
+   "desde": "Number one, the brush",
+   "hasta": "so treat it like a dishrag"
+  },
+  {
+   "n": "M2",
+   "desde": "Number two, the base",
+   "hasta": "the frame that nobody dusts"
+  },
+  {
+   "n": "M3",
+   "desde": "Number three, under the rim",
+   "hasta": "that film stays right where it is"
+  },
+  {
+   "n": "M4",
+   "desde": "Number four, the seat hinges",
+   "hasta": "they sit there and sour"
+  },
+  {
+   "n": "LOOP3",
+   "desde": "Now the fifth one, honey, is the dirtiest thing in the whole room",
+   "hasta": "so stay with me"
+  },
+  {
+   "n": "M5",
+   "desde": "Number five, the flush handle",
+   "hasta": "you would never leave a front door unwashed"
+  },
+  {
+   "n": "CTA2",
+   "desde": "This is why I wrote it all down",
+   "hasta": "hunt for a video again"
+  },
+  {
+   "n": "BONUS_0",
+   "desde": "A brown or gray ring that brushing will not touch",
+   "hasta": "no amount of scrubbing will move it"
+  },
+  {
+   "n": "END",
+   "desde": "So let me say the whole bathroom list in one breath",
+   "hasta": "on white porcelain"
+  },
+  {
+   "n": "CTA3",
+   "desde": "The link is right under this video in the description",
+   "hasta": "without me standing over your shoulder"
+  },
+  {
+   "n": "QUESTION",
+   "desde": "Now tell me in the comments which spot in your bathroom you have been ignoring",
+   "hasta": "so do not keep it to yourself"
+  },
+  {
+   "n": "NEXT_0",
+   "desde": "Those fingerprints on the refrigerator that smear instead of coming off",
+   "hasta": "the answer is not the spray you are using"
+  },
+  {
+   "n": "BLESS",
+   "desde": "Clean the outside of the toilet, honey",
+   "hasta": "you deserve one in your house"
+  }
+ ],
+ "componentes": [
+  {
+   "c": "ClVideoRef",
+   "frase": "The Laundry Mistake Silently Destroying Your Towels",
+   "dur": 2,
+   "props": {
+    "thumb": "img/cltoilet/th_cltowels.jpg",
+    "title": "The Laundry Mistake",
+    "tag": "PREVIOUS VIDEO"
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "five spots on the outside",
+   "dur": 5,
+   "props": {
+    "num": "5",
+    "unidad": "spots",
+    "txt": "nobody looks"
+   }
+  },
+  {
+   "c": "ClBookPage",
+   "frase": "on page 4 of my little book",
+   "dur": 5,
+   "props": {
+    "page": "img/cltoilet/page4.jpg",
+    "pageNo": 4,
+    "stamp": "8 things, 40 jobs"
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "We set it out to dry",
+   "dur": 8,
+   "props": {
+    "antes": {
+     "foto": "Close-up of a white plastic toilet brush holder bucket with its lid closed on the bathroom floor. The brush handle pokes out slightly, and the clear lid has a faint dingy film inside. Soft daylight from a small window, white square wall tiles behind, no person, no text.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "Wide shot of the same white toilet with the seat lid lowered over a brush handle, the bristles hanging inside the bowl to dry. The brush handle rests across the rim. Soft morning light fills the small white-tiled bathroom, no person, no text.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "smell gone by Sunday"
+   }
+  },
+  {
+   "c": "ClBookPage",
+   "frase": "look at page 3 of my little book",
+   "dur": 5,
+   "props": {
+    "page": "img/cltoilet/page3.jpg",
+    "pageNo": 3,
+    "stamp": "Never mix these"
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Bleach never goes with vinegar",
+   "dur": 7,
+   "props": {
+    "title": "Never mix",
+    "no": {
+     "img": {
+      "foto": "Two unlabeled spray bottles, one bleach and one vinegar, sit side by side on a white tile counter, almost touching, with a faint chemical smell suggested by a slight blur. No hands, soft daylight from a small window, white porcelain sink edge in background, no text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "bleach and vinegar together"
+    },
+    "si": {
+     "img": {
+      "foto": "A single unlabeled spray bottle stands alone on a white tile shelf near the sink, with a folded white rag beside it. A hand in a light lilac sleeve is not touching it yet, giving space. Soft daylight, clean composition, no text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "one product at a time"
+    }
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "one product per day",
+   "dur": 5,
+   "props": {
+    "num": "1",
+    "unidad": "product/day",
+    "txt": "never mix",
+    "img": {
+     "foto": "Two simple spray bottles, one white vinegar and one peroxide, sit on separate shelves with a clear gap between them. A small printed label on each? No text. A hand in a lilac sleeve points to one bottle only. Soft daylight, white cabinet.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    }
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "Let the brush dry before it goes back",
+   "dur": 10,
+   "props": {
+    "title": "Dry the brush",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Loretta's wrinkled hands lift the white plastic toilet seat and lay the wet brush handle across the rim so the bristles hang over the bowl, face not visible, lilac apron edge just in frame. White tiles and daylight.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "lay brush across rim"
+     },
+     {
+      "img": {
+       "foto": "Loretta's hand lowers the seat lid down onto the brush handle, holding it in place, with the brush bristles visible hanging over the water below. Close-up from side, soft daylight.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "lower the seat lid"
+     },
+     {
+      "img": {
+       "foto": "Loretta's hand pours brown hydrogen peroxide from its brown bottle into the white brush holder on the floor, with a splash visible. The closed holder is open, no brush inside. White tiles background.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "soak head monthly"
+     },
+     {
+      "img": {
+       "foto": "Wide shot of the toilet with the seat lid down and the brush handle lying across the rim, bristles hanging over the bowl, drying. A clean white bathroom with soft morning light, no person.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "let it dry"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "the smell is on the outside",
+   "dur": 7,
+   "props": {
+    "title": "Clean the outside",
+    "no": {
+     "img": {
+      "foto": "Close-up of a toilet bowl being scrubbed aggressively with a white brush, only the inside bowl visible, water suds, no outside base or seat. Bright white porcelain, hand in lilac sleeve. No text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "only the bowl"
+    },
+    "si": {
+     "img": {
+      "foto": "Loretta's hand wipes the outside base of the toilet with a folded white rag, the plastic seat and floor seam visible, face not visible. Soft daylight, white tiles, clean composition.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "base and outside"
+    }
+   }
+  },
+  {
+   "c": "FabCalendario",
+   "frase": "Once a week, spray the base and the bolts",
+   "dur": 7,
+   "props": {
+    "cada": 7,
+    "txt": "spray base & bolts",
+    "title": "Base care"
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "Dip the old toothbrush in your vinegar",
+   "dur": 4.9,
+   "props": {
+    "title": "Under the rim",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Loretta's wrinkled hand dips an old toothbrush into a small clear glass of white vinegar, the brush head submerged. A hand mirror lies on the sink edge nearby. Soft daylight, white tiles.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "dip toothbrush"
+     },
+     {
+      "img": {
+       "foto": "Loretta's hand holds a small hand mirror up under the toilet rim, reflecting a brown and gray film. Her eye is not visible, just the hand and mirror. Soft daylight, white porcelain.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "use a mirror"
+     },
+     {
+      "img": {
+       "foto": "The old toothbrush reaches up under the toilet rim, scrubbing the hidden curve, while the other hand holds the mirror. White tiles and porcelain, no face visible.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "scrub the rim circle"
+     },
+     {
+      "img": {
+       "foto": "A clean white underside of the toilet rim after scrubbing, with no brown film, the porcelain bright. A hand withdraws the toothbrush. Soft daylight.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "rinse"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "the crust come off",
+   "dur": 8,
+   "props": {
+    "antes": {
+     "foto": "Extreme close-up of the underside of a white toilet rim, showing a brown and gray film line where the water never reaches. A small round hand mirror is angled to reflect the hidden area. Soft daylight, white porcelain, no text.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "Extreme close-up of the same underside of the white toilet rim after scrubbing, now bright white with no brown film. An old damp toothbrush rests on the closed seat nearby. Soft daylight, clean white porcelain, no text.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "no film, no smell"
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "takes about five minutes",
+   "dur": 5,
+   "props": {
+    "num": "5",
+    "unidad": "minutes",
+    "txt": "with mirror and toothbrush",
+    "img": {
+     "foto": "An old analog timer next to a hand mirror and an old toothbrush on the white bathroom sink. The timer shows five minutes, though no numbers are legible. A hand in lilac sleeve adjusts it. Soft daylight, white tiles.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    }
+   }
+  },
+  {
+   "c": "ClQRCard",
+   "frase": "point your phone at the square on the screen",
+   "dur": 6,
+   "props": {
+    "qr": "img/cltoilet/qr.jpg",
+    "cover": "img/cltoilet/book_cover.jpg",
+    "text": "Scan for the book",
+    "kicker": "Clean Home Manual"
+   }
+  },
+  {
+   "c": "FabCalendario",
+   "frase": "Wipe it every day",
+   "dur": 5,
+   "props": {
+    "cada": 1,
+    "txt": "wipe the handle",
+    "title": "Handle care"
+   }
+  },
+  {
+   "c": "ClVideoRef",
+   "frase": "Put Hydrogen Peroxide in Your Toilet and Watch What Happens",
+   "dur": 5,
+   "props": {
+    "thumb": "img/cltoilet/th_hhtoilet.jpg",
+    "title": "Peroxide in Your Toilet",
+    "tag": "OTHER VIDEO"
+   }
+  },
+  {
+   "c": "ClBookPage",
+   "frase": "on page 10 of my little book",
+   "dur": 5,
+   "props": {
+    "page": "img/cltoilet/page10.jpg",
+    "pageNo": 10,
+    "stamp": "The ring"
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "Turn off the water behind the toilet",
+   "dur": 10,
+   "props": {
+    "title": "Pumice ring care",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Loretta's hand turns the shut-off valve behind the toilet, with the white porcelain tank behind her. The valve is chrome. Soft daylight, white tiles.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "turn off water"
+     },
+     {
+      "img": {
+       "foto": "Loretta's hand presses the flush handle, and the water drops below the ring in the bowl, revealing the brown mineral ring. Close-up of the bowl and handle.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "flush to drop water"
+     },
+     {
+      "img": {
+       "foto": "Loretta's hand pours one cup of white vinegar directly onto the brown ring at the waterline; the liquid clings to the porcelain. Soft daylight.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "pour vinegar"
+     },
+     {
+      "img": {
+       "foto": "Loretta's wet pumice stone rubs gently on the brown ring, with a small dish of water next to the toilet. The ring begins to lift. Close-up.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "rub with wet pumice"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "dry pumice scratches the porcelain",
+   "dur": 4.7,
+   "props": {
+    "title": "Keep it wet",
+    "no": {
+     "img": {
+      "foto": "A dry pumice stone rests on the dry white porcelain rim, no water nearby, with a slight scratch mark on the porcelain surface. Bright daylight, no hand, no text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "dry pumice"
+    },
+    "si": {
+     "img": {
+      "foto": "A wet pumice stone being dipped into a small dish of water beside the toilet, drops of water visible on the stone. A hand in lilac sleeve holds it. Soft daylight.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "wet pumice"
+    }
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "When the ring is gone",
+   "dur": 8,
+   "props": {
+    "antes": {
+     "foto": "Close-up of the toilet bowl at the waterline showing a brown and gray mineral ring, no hands, bright white porcelain otherwise clean. Soft daylight from window, white tiles behind.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "Close-up of the same toilet bowl after pumice cleaning, the waterline bright white with no ring, water clear. Soft daylight, white tiles, clean.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "wet pumice, no scratches"
+   }
+  },
+  {
+   "c": "ClCheck",
+   "frase": "The flush handle, wiped",
+   "dur": 8,
+   "props": {
+    "title": "The bathroom list",
+    "items": [
+     "Brush: dry across rim",
+     "Base & bolts: wipe weekly",
+     "Under rim: scrub with mirror",
+     "Handle: wipe every day"
+    ]
+   }
+  },
+  {
+   "c": "ClVideoRef",
+   "frase": "The Best Way to Clean Stainless Steel Appliances",
+   "dur": 6,
+   "props": {
+    "thumb": "img/cltoilet/th_clsteel.jpg",
+    "title": "Clean Stainless Steel",
+    "tag": "NEXT VIDEO",
+    "next": true
+   }
+  }
+ ]
+}

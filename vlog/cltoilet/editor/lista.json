@@ -1,0 +1,110 @@
+[
+ {
+  "name": "ov01a",
+  "c": "FabDato",
+  "props": {
+   "num": "5",
+   "unidad": "spots",
+   "txt": "nobody looks"
+  }
+ },
+ {
+  "name": "ov01b",
+  "c": "FabDato",
+  "props": {
+   "num": "5",
+   "unidad": "spots",
+   "txt": "nobody looks"
+  }
+ },
+ {
+  "name": "ov03a",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k001",
+   "despues": "k002",
+   "nota": "smell gone by Sunday"
+  }
+ },
+ {
+  "name": "ov03b",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k001",
+   "despues": "k002",
+   "nota": "smell gone by Sunday"
+  }
+ },
+ {
+  "name": "ov05a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Never mix",
+   "no": {
+    "img": "k003",
+    "txt": "bleach and vinegar together"
+   },
+   "si": {
+    "img": "k004",
+    "txt": "one product at a time"
+   }
+  }
+ },
+ {
+  "name": "ov05b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Never mix",
+   "no": {
+    "img": "k003",
+    "txt": "bleach and vinegar together"
+   },
+   "si": {
+    "img": "k004",
+    "txt": "one product at a time"
+   }
+  }
+ },
+ {
+  "name": "ov14b",
+  "c": "FabCalendario",
+  "props": {
+   "cada": 1,
+   "txt": "wipe the handle",
+   "title": "Handle care"
+  }
+ },
+ {
+  "name": "ov18b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Keep it wet",
+   "no": {
+    "img": "k023",
+    "txt": "dry pumice"
+   },
+   "si": {
+    "img": "k024",
+    "txt": "wet pumice"
+   }
+  }
+ },
+ {
+  "name": "ov19a",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k025",
+   "despues": "k026",
+   "nota": "wet pumice, no scratches"
+  }
+ },
+ {
+  "name": "ov19b",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k025",
+   "despues": "k026",
+   "nota": "wet pumice, no scratches"
+  }
+ }
+]

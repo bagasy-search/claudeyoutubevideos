@@ -1,0 +1,854 @@
+{
+ "p001": {
+  "motivo": "The shot is a close-up of the toilet bowl, but the narrator is saying 'You cleaned it yesterday and it', which does not match the visual focus on the bowl itself.",
+  "mejor": "A shot of the elderly woman looking at the toilet or holding cleaning supplies."
+ },
+ "p003": {
+  "motivo": "The shot shows the woman pinching her nose, but the narrator is saying 'come here and pinch your nose with me', which implies she is addressing someone else, not doing it herself.",
+  "mejor": "The elderly woman gesturing for someone to come closer to the bathroom."
+ },
+ "p004": {
+  "motivo": "The shot is a close-up of the woman's face, but the narrator is saying 'because I want you to really', which is a continuation of a sentence and does not match the visual focus on her face.",
+  "mejor": "A shot of the woman pointing towards the toilet or the bathroom area."
+ },
+ "p006": {
+  "motivo": "The shot is a wide shot of the bathroom, but the narrator is saying 'bathroom. It is not', which is a continuation of a sentence and does not match the visual focus on the room.",
+  "mejor": "A shot of the woman looking at the toilet or the sink."
+ },
+ "p009": {
+  "motivo": "The shot is a close-up of the toilet brush, but the narrator is saying 'one is the brush,', which is a continuation of a sentence and does not match the visual focus on the brush.",
+  "mejor": "A shot of the woman holding the toilet brush."
+ },
+ "p011": {
+  "motivo": "The narrator is talking about a brush in its closed holder, but the shot shows a toilet brush in an open holder.",
+  "mejor": "A close-up of the toilet brush fully inserted into its closed holder."
+ },
+ "p014": {
+  "motivo": "The narrator is saying 'you through all five before', but the shot shows a close-up of a hand instead of the narrator or the book.",
+  "mejor": "The narrator holding the book and gesturing to indicate the five steps."
+ },
+ "p018": {
+  "motivo": "The narrator is saying 'The smell is not in the water', but the shot shows an empty bathroom with no water or narrator visible.",
+  "mejor": "A shot of the toilet bowl or tank water while the narrator discusses the source of the smell."
+ },
+ "p019": {
+  "motivo": "El texto narrado habla de un problema en un lugar húmedo y oscuro, pero el plano muestra un inodoro limpio y bien iluminado, sin relación con lo que se dice.",
+  "mejor": "A close-up of a damp, dark corner or hidden area behind a toilet where mold or mildew might grow."
+ },
+ "p020": {
+  "motivo": "El texto menciona 'lugares oscuros alrededor', pero el plano muestra una habitación luminosa con una anciana en el centro, sin señalar ningún lugar oscuro.",
+  "mejor": "A shot pointing to a dark, shadowy area around the base of the toilet or behind the sink."
+ },
+ "p021": {
+  "motivo": "El texto introduce el video ('Antes de comenzar...'), pero el plano es un encuadre vacío del baño sin la presentadora ni elementos que ilustren la introducción.",
+  "mejor": "The elderly woman standing in the bathroom, looking at the camera and preparing to speak."
+ },
+ "p022": {
+  "motivo": "El texto hace referencia al video anterior ('El error de lavandería'), pero el plano muestra a la anciana en el baño, no una escena de lavandería o toallas.",
+  "mejor": "A shot of a laundry room or a pile of towels to illustrate the previous video being referenced."
+ },
+ "p023": {
+  "motivo": "El texto habla de un error con las toallas, pero el plano muestra una cortina de ducha, que no es una toalla ni representa el error mencionado.",
+  "mejor": "A close-up of a towel showing signs of damage or a sour smell, like mildew spots."
+ },
+ "p024": {
+  "motivo": "El texto dice 'si sabes que un olor agrio...', pero el plano muestra a la anciana doblando una toalla, una acción que no ilustra el concepto de olor o problema oculto.",
+  "mejor": "The elderly woman smelling a towel with a concerned expression to illustrate the sour smell."
+ },
+ "p025": {
+  "motivo": "El texto menciona 'algo se esconde donde no miras', pero el plano muestra un baño ordenado y visible, sin ningún lugar oculto o sospechoso.",
+  "mejor": "A shot of a hidden, dark area in the bathroom, such as behind the toilet or under the sink, where dirt might accumulate."
+ },
+ "p026": {
+  "motivo": "El texto dice 'no miras. Residuos', pero el plano es un encuadre general del baño que no muestra ningún tipo de residuo o suciedad.",
+  "mejor": "A close-up of hidden grime or residue in a hard-to-reach spot in the bathroom."
+ },
+ "p027": {
+  "motivo": "El texto termina con 'Residuos', pero el plano muestra a la anciana guardando una toalla limpia, lo cual no tiene relación con la palabra final.",
+  "mejor": "A shot of dirty residue or buildup being cleaned from a bathroom surface."
+ },
+ "p030": {
+  "motivo": "No muestra lo que se dice (no hay toallas con presillas de jabón) y parece una casa diferente (azulejos y baño distintos).",
+  "mejor": "A close-up of a towel with soap held in its loops, in the same bathroom as the other shots."
+ },
+ "p032": {
+  "motivo": "No muestra lo que se dice (no hay olores) y es un plano vacío que parece una casa diferente.",
+  "mejor": "A shot of the bathroom elements that hold smells, such as the toilet, brush, or drain, in the same bathroom."
+ },
+ "p033": {
+  "motivo": "Muestra a la anciana limpiando el baño, pero el texto habla de encontrar olores en el cepillo y la base, no de limpiar.",
+  "mejor": "A close-up of the toilet brush and its base, highlighting where smells might hide."
+ },
+ "p034": {
+  "motivo": "Es casi idéntico al plano 4 (misma persona, misma posición y encuadre).",
+  "mejor": "A close-up of a door hinge, as mentioned in the narration."
+ },
+ "p035": {
+  "motivo": "Es casi idéntico al plano 4 y 7 (misma persona, misma posición y encuadre).",
+  "mejor": "A shot of the old woman looking around the bathroom, searching for the smells."
+ },
+ "p036": {
+  "motivo": "Muestra a la anciana leyendo un papel, lo cual no se corresponde con la narración sobre la gente que escribe a Danny.",
+  "mejor": "A shot of letters or a computer screen showing messages from people writing to Danny."
+ },
+ "p040": {
+  "motivo": "The shot is visually broken and does not show the person or the action described in the narration.",
+  "mejor": "A close-up of the woman scrubbing the toilet bowl with a brush."
+ },
+ "p044": {
+  "motivo": "The shot is a near duplicate of shot 9 (same person, same spot, same framing) and does not show the action of scrubbing harder.",
+  "mejor": "The woman scrubbing the toilet vigorously with a brush, looking tired or frustrated."
+ },
+ "p046": {
+  "motivo": "The shot is a close-up of the toilet and does not show the five spots being discussed.",
+  "mejor": "A wide shot of the bathroom highlighting the five specific spots on the outside."
+ },
+ "p049": {
+  "motivo": "The shot is a close-up of the narrator's face and does not show the wrong half of the room being cleaned.",
+  "mejor": "A shot showing the narrator cleaning the wrong half of the bathroom."
+ },
+ "p051": {
+  "motivo": "The shot shows the narrator reading the book but does not show the specific mistakes on page 9.",
+  "mejor": "A close-up of page 9 of the book showing the five mistakes."
+ },
+ "p052": {
+  "motivo": "The shot is a near duplicate of shot 6, showing the same framing of the narrator reading the book.",
+  "mejor": "A shot showing the narrator pointing to the first mistake in the book."
+ },
+ "p055": {
+  "motivo": "The narrator is talking about a 'waterline on page 10', but the shot shows her cleaning the toilet bowl, which does not match the spoken content.",
+  "mejor": "A close-up of page 10 in the narrator's book showing the waterline diagram or instructions."
+ },
+ "p056": {
+  "motivo": "The narrator is discussing what makes a toilet clean, but the shot is a static view of the toilet and sink with no action or relevant visual aid.",
+  "mejor": "A shot of the narrator pointing to or holding the cleaning product mentioned as the 'other thing'."
+ },
+ "p057": {
+  "motivo": "The narrator says 'look dirty' and mentions looking under the sink, but the shot shows her opening a medicine cabinet, not looking under the sink.",
+  "mejor": "The narrator reaching under the bathroom sink to retrieve cleaning supplies."
+ },
+ "p058": {
+  "motivo": "The narrator refers to 'page 4 of my little book', but the shot shows her pointing at a toilet with cleaning products on the side, not showing the book.",
+  "mejor": "A close-up of page 4 of the narrator's book showing the list of cleaning items."
+ },
+ "p059": {
+  "motivo": "The narrator is talking about 'the eight things that do forty jobs', but the shot is a static portrait of her smiling and holding a cloth, which does not illustrate the list.",
+  "mejor": "A shot showing the eight cleaning items laid out or a page from the book listing them."
+ },
+ "p060": {
+  "motivo": "The narrator says 'You already have everything you need, honey', but the shot is a static view of her standing in the bathroom, which is a near duplicate of shot 5.",
+  "mejor": "The narrator gesturing towards the cleaning supplies or the book to emphasize that the viewer already owns these items."
+ },
+ "p061": {
+  "motivo": "The narrator says 'I will prove it', but the shot shows her scrubbing the toilet with a brush, which does not visually represent the act of proving a point.",
+  "mejor": "The narrator looking directly at the camera with a confident expression, holding the book or a cleaning tool."
+ },
+ "p062": {
+  "motivo": "The narrator mentions 'At Zion United Methodist, the ladies' room', but the shot shows her in her own bathroom, not a church restroom.",
+  "mejor": "A shot of the ladies' room at Zion United Methodist Church or a photo of the church."
+ },
+ "p063": {
+  "motivo": "The narrator describes a toilet that 'would smell' at the church, but the shot shows her cleaning her own toilet at home, which is a near duplicate of shot 7.",
+  "mejor": "A shot of the specific toilet at the church basement that had the odor problem."
+ },
+ "p064": {
+  "motivo": "No muestra lo que se dice (el problema del olor en verano) y es un primer plano de un objeto (el baño) sin relación con la narrativa de la anciana limpiando.",
+  "mejor": "A wide shot of the elderly woman looking frustrated in the bathroom on a hot summer day."
+ },
+ "p068": {
+  "motivo": "Es un duplicado casi exacto de la toma 1 (misma habitación vacía, mismo encuadre), lo que rompe la continuidad de la acción.",
+  "mejor": "A shot of Edna Pruitt entering the bathroom and sniffing the air."
+ },
+ "p069": {
+  "motivo": "Es un duplicado casi exacto de la toma 1 (misma habitación vacía, mismo encuadre), sin mostrar a Edna ni el cepillo.",
+  "mejor": "A close-up of the toilet brush holder as Edna points at it."
+ },
+ "p071": {
+  "motivo": "La acción de sostener el cepillo en alto no coincide con la frase 'all stepped back' (todos dieron un paso atrás).",
+  "mejor": "The elderly woman and Edna stepping back from the toilet brush in surprise."
+ },
+ "p076": {
+  "motivo": "The shot shows a giant, oversized book with readable text, which is visually broken and unrealistic.",
+  "mejor": "A close-up of the open book showing page 9 with the five mistakes and steps."
+ },
+ "p080": {
+  "motivo": "The shot does not show the narrator or the book being placed on the shelf as described.",
+  "mejor": "The narrator placing the book on the wooden shelf above the basket of towels."
+ },
+ "p084": {
+  "motivo": "Readable/fake text: The book the woman is holding displays a crude drawing of a skull and crossbones, which is not realistic text for a cleaning guide and appears to be a visual artifact.",
+  "mejor": "A close-up of the woman pointing to a page in a handwritten notebook titled 'Never mix these' with a list of cleaning ingredients."
+ },
+ "p087": {
+  "motivo": "Readable/fake text: The box on the shelf has the text 'CLOROX' visible, which is a real brand name and may be a copyright issue for a vlog.",
+  "mejor": "A shot of the cleaning supplies under the sink, with the labels on the bottles turned away or blurred."
+ },
+ "p090": {
+  "motivo": "Readable/fake text: The bottle the woman is holding has a label that reads 'Gator Shine', which is a fake or nonsensical product name.",
+  "mejor": "The woman holding a generic brown bottle and a spray bottle, with the labels facing away from the camera."
+ },
+ "p091": {
+  "motivo": "Readable text on the bottle label (fake text).",
+  "mejor": "A close-up of the elderly woman holding two unlabeled white spray bottles together over a sink."
+ },
+ "p092": {
+  "motivo": "Readable text on the bottle labels (fake text).",
+  "mejor": "The elderly woman holding a spray bottle and a cloth, preparing to clean a bathroom sink."
+ },
+ "p093": {
+  "motivo": "Readable text on the bottle labels (fake text).",
+  "mejor": "The elderly woman opening a window in a bathroom to improve ventilation."
+ },
+ "p094": {
+  "motivo": "Readable text on the bottle labels (fake text).",
+  "mejor": "The elderly woman carefully writing on a blank label attached to a spray bottle."
+ },
+ "p095": {
+  "motivo": "Readable text on the bottle labels (fake text).",
+  "mejor": "The elderly woman wearing yellow rubber gloves while cleaning the toilet bowl."
+ },
+ "p096": {
+  "motivo": "Readable text on the bottle labels (fake text).",
+  "mejor": "The elderly woman putting on a pair of yellow rubber gloves near the sink."
+ },
+ "p097": {
+  "motivo": "Readable text on the bottle labels (fake text).",
+  "mejor": "The elderly woman standing in the bathroom doorway, looking at the open cabinet under the sink."
+ },
+ "p098": {
+  "motivo": "Readable text on the bottle labels (fake text).",
+  "mejor": "The elderly woman pointing at the organized cleaning supplies under the bathroom sink."
+ },
+ "p099": {
+  "motivo": "Readable text on the bottle labels and the notebook (fake text).",
+  "mejor": "The elderly woman holding a small notebook and reading from it while standing near the sink."
+ },
+ "p100": {
+  "motivo": "Readable text on the bottle label and box.",
+  "mejor": "A plain white jug of white vinegar with no readable branding or text."
+ },
+ "p102": {
+  "motivo": "Readable text on the baking soda box.",
+  "mejor": "An unbranded box or container of baking soda with no readable text."
+ },
+ "p104": {
+  "motivo": "Readable text on the dish soap, baking soda box, and hydrogen peroxide bottle.",
+  "mejor": "Unlabeled bottles of blue dish soap, baking soda, and hydrogen peroxide."
+ },
+ "p105": {
+  "motivo": "The shot shows the woman holding a bottle, but the narration is specifically describing the brown bottle of hydrogen peroxide, which is not visible in her hand or the frame.",
+  "mejor": "A close-up of a brown bottle of hydrogen peroxide sitting on the counter."
+ },
+ "p106": {
+  "motivo": "The shot shows the woman pouring liquid from a brown bottle onto a cloth, but the narration is about whitening and freshening, which does not match the action shown.",
+  "mejor": "The woman using a whitening agent, such as hydrogen peroxide, to clean or freshen a surface."
+ },
+ "p108": {
+  "motivo": "The shot shows the woman cleaning the faucet, but the narration is about using rubbing alcohol for streak-free chrome, and the alcohol bottle is not visible or being used.",
+  "mejor": "The woman wiping a chrome faucet with a cloth dampened with rubbing alcohol."
+ },
+ "p109": {
+  "motivo": "The narrator is talking about dishwasher tablets, but the shot shows the woman holding a small white object (likely a pumice stone) while looking at cleaning supplies under the sink.",
+  "mejor": "A close-up of a box of dishwasher tablets or the woman holding a dishwasher tablet."
+ },
+ "p110": {
+  "motivo": "The narrator mentions rags, but the shot is a static close-up of a shelf with folded cloths and various cleaning bottles, not showing the person or the action.",
+  "mejor": "The woman picking up or holding a rag from the shelf."
+ },
+ "p111": {
+  "motivo": "The narrator lists an old toothbrush and a squeegee, but the shot shows the woman using a squeegee on the sink, with no toothbrush visible.",
+  "mejor": "The woman holding up an old toothbrush and a squeegee."
+ },
+ "p112": {
+  "motivo": "The narrator mentions a pumice stone for the toilet ring, but the shot shows the woman holding a pumice stone over the bathroom sink, not the toilet.",
+  "mejor": "The woman holding a pumice stone near the toilet bowl."
+ },
+ "p113": {
+  "motivo": "The narrator says 'the whole shelf, honey', but the shot shows the woman standing in the middle of the bathroom holding a rag, not showing the shelf.",
+  "mejor": "A shot of the entire shelf of cleaning supplies."
+ },
+ "p114": {
+  "motivo": "The narrator says 'we will use four of them today', but the shot shows the woman wiping the counter, not indicating or counting four items.",
+  "mejor": "The woman pointing to or holding four specific cleaning items."
+ },
+ "p115": {
+  "motivo": "The narrator says 'Number one, the brush', but the shot shows the woman standing empty-handed in the middle of the bathroom.",
+  "mejor": "The woman holding up the toilet brush."
+ },
+ "p116": {
+  "motivo": "The narrator talks about the brush being the last thing to rinse, but the shot shows the woman actively scrubbing the toilet with the brush.",
+  "mejor": "The woman rinsing the toilet brush under running water."
+ },
+ "p117": {
+  "motivo": "The narrator says 'treat it like a dishrag', but the shot shows the woman standing empty-handed in the middle of the bathroom.",
+  "mejor": "The woman holding the toilet brush or a dishrag."
+ },
+ "p118": {
+  "motivo": "The shot shows a toilet with a brush holder, but the narrator is specifically describing a wet brush sitting inside a closed holder. The brush itself is not visible.",
+  "mejor": "A close-up of a closed toilet brush holder with a wet brush visibly stored inside."
+ },
+ "p119": {
+  "motivo": "The shot shows a wide view of the bathroom, but the narration describes the dampness sitting in the dark inside the holder. The shot does not focus on the holder or the darkness inside it.",
+  "mejor": "A close-up of the dark interior of the closed brush holder, emphasizing the damp environment."
+ },
+ "p120": {
+  "motivo": "The shot shows the woman opening the holder, but the narration is about the smell growing. The visual does not depict the growth of the smell.",
+  "mejor": "A shot of the woman opening the brush holder with a visible reaction to a bad smell, or a visual representation of the odor."
+ },
+ "p121": {
+  "motivo": "The shot shows the woman scrubbing the toilet bowl, which matches the narration, but the previous shot (3) and this shot (4) are near duplicates in framing and subject matter, showing the same person in the same spot.",
+  "mejor": "A different angle or framing of the woman scrubbing the toilet bowl to avoid being a near duplicate of the previous shot."
+ },
+ "p122": {
+  "motivo": "The shot shows the woman rinsing the brush in the sink, but the narration says 'the brush, and drop it back into its little bucket'. The shot does not show the brush being dropped back into the holder.",
+  "mejor": "The woman dropping the wet brush back into its holder."
+ },
+ "p123": {
+  "motivo": "The shot shows the woman putting the brush into the holder, but the narration is about the holder keeping the damp locked in. The shot does not emphasize the closed holder or the trapped dampness.",
+  "mejor": "A close-up of the closed brush holder, emphasizing that the dampness is locked inside."
+ },
+ "p124": {
+  "motivo": "The shot shows the closed holder, but the narration is about the next time it is opened. The shot does not show the opening action or the resulting smell.",
+  "mejor": "The woman opening the brush holder, with a focus on the release of the trapped smell."
+ },
+ "p125": {
+  "motivo": "The shot shows the woman opening the holder, but the narration is about the sour smell hitting you in the face. The shot does not show a reaction to the smell or a visual representation of it.",
+  "mejor": "The woman reacting to the sour smell as she opens the brush holder."
+ },
+ "p126": {
+  "motivo": "The shot shows the woman smiling at the camera, but the narration is about the sour smell hitting you in the face. The shot does not match the negative sentiment of the narration.",
+  "mejor": "The woman looking disgusted or reacting negatively to the smell, matching the narration."
+ },
+ "p127": {
+  "motivo": "The narrator says 'Here is the card from page 9 of my little book', but the shot shows her holding a card over the sink, not a book. The text on the card is also readable.",
+  "mejor": "A close-up of the narrator holding a small notebook open to page 9, with a handwritten card visible."
+ },
+ "p128": {
+  "motivo": "The narrator says 'Let the brush dry before it goes back', but the shot shows her holding a brush over the toilet tank, not letting it dry.",
+  "mejor": "The toilet brush resting in its holder or on a surface, with the narrator's hands away, indicating it is drying."
+ },
+ "p129": {
+  "motivo": "The narrator says 'Lift the seat, lay the brush handle across the rim', but the shot shows her lifting the lid, not the seat, and the brush is not visible.",
+  "mejor": "The narrator lifting the toilet seat and placing the brush handle across the rim."
+ },
+ "p130": {
+  "motivo": "The narrator says 'so the bristles hang over the bowl', but the shot shows her holding the brush handle horizontally over the bowl, not the bristles hanging.",
+  "mejor": "A close-up of the brush handle resting on the rim with the bristles hanging down into the bowl."
+ },
+ "p131": {
+  "motivo": "The narrator says 'and lower the seat lid to hold it there', but the shot shows her holding the lid, not lowering it onto the brush handle.",
+  "mejor": "The narrator lowering the toilet seat lid down onto the brush handle to secure it."
+ },
+ "p132": {
+  "motivo": "The narrator says 'Once a month, pour a little peroxide into the holder', but the shot shows her pouring liquid from a brown bottle into a small cup, not the holder.",
+  "mejor": "The narrator pouring peroxide from a bottle directly into the toilet brush holder."
+ },
+ "p133": {
+  "motivo": "The narrator says 'and soak the brush head', but the shot shows her holding a mop, not a brush, and she is not soaking anything.",
+  "mejor": "The toilet brush head submerged in the holder filled with peroxide."
+ },
+ "p134": {
+  "motivo": "The narrator says 'Keep the peroxide in its own brown bottle', but the shot shows her holding a brown bottle and a white bottle, which is confusing and does not clearly show the brown bottle being stored.",
+  "mejor": "The brown bottle of peroxide being placed on a shelf, separate from other cleaning supplies."
+ },
+ "p135": {
+  "motivo": "The narrator says 'away from the vinegar', but the shot shows her holding a brown bottle and a white bottle, not clearly showing the separation from vinegar.",
+  "mejor": "The brown bottle of peroxide and a bottle of vinegar placed on separate shelves or clearly apart."
+ },
+ "p140": {
+  "motivo": "No muestra a la persona ni lo que se dice (un producto al día); es un plano vacío del baño que parece de otro lugar y rompe la continuidad.",
+  "mejor": "The woman holding a single cleaning product in her hand, standing in the bathroom."
+ },
+ "p144": {
+  "motivo": "Es un duplicado casi exacto del plano 3 (misma persona, misma posición y encuadre), sin mostrar la acción final de secar el cepillo.",
+  "mejor": "The woman placing the toilet brush back in its holder, looking satisfied with the clean bathroom."
+ },
+ "p145": {
+  "motivo": "The shot shows the woman smiling at the camera, which does not match the narration about her mother tanning her hide.",
+  "mejor": "A shot of the woman looking at the toilet brush holder with a slightly guilty or remembering expression."
+ },
+ "p148": {
+  "motivo": "The shot is an empty room with no person, which does not match the narration about Harold calling it the stink bucket.",
+  "mejor": "A shot of the woman looking at the toilet with a knowing smile, perhaps gesturing towards it."
+ },
+ "p150": {
+  "motivo": "The shot shows the woman standing by the sink, which does not match the narration about Harold cleaning the bathroom.",
+  "mejor": "A shot of the woman looking at the toilet with the lid up, or a shot of the toilet itself."
+ },
+ "p151": {
+  "motivo": "The shot shows the woman looking down at the toilet, which does not match the narration about the third thing nobody looks at.",
+  "mejor": "A shot of the woman looking at the base of the toilet or pointing to it."
+ },
+ "p158": {
+  "motivo": "Near duplicate of shot 3: same person standing in the same spot with the same framing.",
+  "mejor": "A close-up of the toilet base and the bolts on the floor to match the narration about the base."
+ },
+ "p164": {
+  "motivo": "The shot is visually broken and confusing; it shows a bizarre, extreme close-up of toilet parts that looks like a mistake or a different, unidentifiable object, rather than a clear view of the bathroom.",
+  "mejor": "A clear close-up of the toilet seat hinges and bolt caps, showing the area that is left untouched."
+ },
+ "p167": {
+  "motivo": "The shot is a near duplicate of shot 3 (same empty bathroom, same framing, same angle) and does not show the narrator or the action being described.",
+  "mejor": "A shot of the clean bathroom floor, emphasizing it as the 'frame' around the room."
+ },
+ "p170": {
+  "motivo": "The shot is visually broken; the narrator's head is cut off at the top of the frame, and the action of spraying is not clearly visible.",
+  "mejor": "A clear shot of the narrator spraying the base of the toilet and the bolts with the vinegar spray."
+ },
+ "p174": {
+  "motivo": "No muestra a la persona ni la acción que se describe en la narración (la anciana limpiando la base del inodoro).",
+  "mejor": "The elderly woman kneeling down and pointing at the seam where the toilet meets the floor."
+ },
+ "p176": {
+  "motivo": "La narración habla de usar un solo producto, pero la imagen muestra a la mujer de pie sosteniendo un trapo y un limpiador sin realizar la acción de limpieza.",
+  "mejor": "The elderly woman holding a single cleaning product and applying it to the toilet."
+ },
+ "p180": {
+  "motivo": "La narración dice que limpian solo el bowl y el olor está afuera, pero la imagen muestra a la mujer señalando la ventana en lugar de mostrar la parte exterior del inodoro.",
+  "mejor": "The elderly woman pointing at the outside of the toilet bowl to show where the smell comes from."
+ },
+ "p181": {
+  "motivo": "No muestra lo que se dice; el narrador habla de una bayeta y unos esprays, pero en la imagen no hay ninguna persona ni se ve el acto de limpiar.",
+  "mejor": "An elderly woman holding a rag and a spray bottle, ready to clean the bathroom."
+ },
+ "p183": {
+  "motivo": "No muestra lo que se dice; el narrador menciona que los esprays solo cubren el olor, pero la imagen solo muestra el inodoro y el lavabo vacíos.",
+  "mejor": "An elderly woman looking at a toilet spray bottle with a skeptical expression."
+ },
+ "p184": {
+  "motivo": "No muestra lo que se dice; el narrador habla de una regla sobre productos de limpieza, pero la mujer aparece de pie sin ningún producto en las manos.",
+  "mejor": "An elderly woman holding up one cleaning product to emphasize the 'one product per day' rule."
+ },
+ "p189": {
+  "motivo": "No muestra lo que se dice; el narrador habla de limpiar el inodoro, pero la imagen se centra en una tetera sobre una mesa, sin mostrar a la mujer ni la limpieza.",
+  "mejor": "An elderly woman cleaning the toilet bowl while the cleaner sits inside."
+ },
+ "p190": {
+  "motivo": "The narrator is talking about a kettle seam, but the shot shows an elderly woman pointing in a bathroom.",
+  "mejor": "A close-up of a kettle with a visible seam on its spout or body."
+ },
+ "p192": {
+  "motivo": "The narrator mentions the church toilet and the floor, but the shot is a close-up of a toilet bowl with no floor visible.",
+  "mejor": "A wide shot showing the church toilet and the bathroom floor."
+ },
+ "p197": {
+  "motivo": "The narrator is talking about seat hinges, but the shot shows the woman looking into a hand mirror.",
+  "mejor": "A close-up of the toilet seat hinges."
+ },
+ "p205": {
+  "motivo": "The shot is visually broken and confusing, showing a distorted reflection in a mirror that does not clearly depict the narrator or the toilet rim as described in the narration.",
+  "mejor": "A clear close-up of the narrator holding a hand mirror to inspect the underside of the toilet rim."
+ },
+ "p208": {
+  "motivo": "The shot shows the woman wiping the outside of the toilet tank, but the narration is about a housekeeper's truth regarding the toilet rim and bowl.",
+  "mejor": "A close-up of the toilet bowl rim and interior to match the narration about scrubbing the bowl and rim."
+ },
+ "p210": {
+  "motivo": "This is a near duplicate of shot 8 (same close-up framing of the toilet seat and bowl) and does not show the 'film' mentioned in the narration.",
+  "mejor": "A close-up of the toilet seat surface showing the film or residue that the narrator is describing."
+ },
+ "p211": {
+  "motivo": "The shot is a wide, empty view of the bathroom, but the narration is specifically talking about the location of the film on the toilet.",
+  "mejor": "A shot of the toilet seat or bowl where the film is located, as referenced by the narrator."
+ },
+ "p215": {
+  "motivo": "This is a near duplicate of shot 3 (same close-up framing of the toilet seat and bowl) and does not show the action of the crust coming off.",
+  "mejor": "A close-up of the toothbrush scrubbing under the rim to show the crust coming off as described."
+ },
+ "p221": {
+  "motivo": "Near duplicate of shot 3 (same person, same spot, same framing) and does not show what is being said (looking up).",
+  "mejor": "A close-up of the elderly woman looking up at the ceiling or the underside of the toilet lid."
+ },
+ "p222": {
+  "motivo": "Does not show what is being said (the source of the sour smell) and is a near duplicate of shot 4 (same toilet bowl framing).",
+  "mejor": "A close-up of the hidden area under the toilet rim or the hinges where the smell originates."
+ },
+ "p223": {
+  "motivo": "Near duplicate of shot 3 (same person, same spot, same framing) and does not show what is being said (using a mirror).",
+  "mejor": "The elderly woman holding a mirror to inspect the back of the toilet."
+ },
+ "p224": {
+  "motivo": "Near duplicate of shot 5 (same person, same spot, same framing) and does not show what is being said (using a toothbrush).",
+  "mejor": "A close-up of the elderly woman using a toothbrush to clean a hard-to-reach area of the toilet."
+ },
+ "p227": {
+  "motivo": "No muestra lo que se dice (la botella de vinagre) y parece una habitación diferente (primer plano de una repisa de madera en lugar del baño de los demás planos).",
+  "mejor": "A close-up of a brown bottle of vinegar sitting on a bathroom shelf or counter."
+ },
+ "p233": {
+  "motivo": "No muestra lo que se dice (el espejo bajo el borde del inodoro) y está visualmente roto (primer plano extremo y borroso del interior de la taza).",
+  "mejor": "A clear view of a hand holding a small mirror under the rim of a toilet seat."
+ },
+ "p237": {
+  "motivo": "Near duplicate of shot 2 (same person, same spot, same framing) and the book text is readable/fake.",
+  "mejor": "A close-up of the open book showing a single handwritten page for one cleaning task."
+ },
+ "p238": {
+  "motivo": "Shows a QR code on the wall, but the narration says 'If you are watching on the TV, just point your phone at the square on the screen.' The QR code should be on a TV screen, not a bathroom wall.",
+  "mejor": "A TV screen displaying a QR code in a living room setting."
+ },
+ "p239": {
+  "motivo": "Visually broken: a floating phone with a QR code is superimposed over the shot, and the QR code on the wall is a duplicate of the one in shot 4.",
+  "mejor": "A person pointing a phone at a TV screen showing a QR code."
+ },
+ "p240": {
+  "motivo": "Does not show what is being said. The narration says 'The book sits on the shelf above the towels,' but the shot shows the book on the shelf and the towels below it, which is correct, but the shot is a static close-up that does not match the action of the previous shots.",
+  "mejor": "A shot of the shelf above the towels with the book sitting on it."
+ },
+ "p241": {
+  "motivo": "Does not show what is being said. The narration says 'and you can read the page while the vinegar does its work,' but the shot shows the person reaching for the book, not reading it.",
+  "mejor": "The person reading the book while the toilet bowl is filled with vinegar."
+ },
+ "p242": {
+  "motivo": "Near duplicate of shot 3 (same person, same spot, same framing) and the book text is readable/fake.",
+  "mejor": "A close-up of the open book showing a single handwritten page for one cleaning task."
+ },
+ "p250": {
+  "motivo": "The shot does not show what is being said (the hinges or the underside of the seat); instead, it shows the woman looking at the camera, which breaks the instructional flow.",
+  "mejor": "A close-up of the woman's hands pointing to the hinges or the underside of the toilet seat."
+ },
+ "p252": {
+  "motivo": "The shot does not show what is being said (the hinges sweeping up drops and smells); it shows the woman holding a mirror, which is unrelated to the narration.",
+  "mejor": "A close-up of the toilet seat hinges and the area where the plastic meets the porcelain."
+ },
+ "p254": {
+  "motivo": "The shot shows the narrator holding a card, but the text on the card is not readable and the framing is a close-up that doesn't match the instructional action of the surrounding shots.",
+  "mejor": "A close-up of the narrator's hands holding a clearly readable card or book page."
+ },
+ "p258": {
+  "motivo": "The shot is a close-up of the toilet seat and does not show the narrator or the action of cleaning, which is the focus of the narration.",
+  "mejor": "The narrator pointing at or cleaning the gap between the toilet seat and the bowl."
+ },
+ "p260": {
+  "motivo": "The shot is a near duplicate of shot 7, showing the same action and framing without adding new visual information.",
+  "mejor": "A different angle or a closer view showing the narrator lifting the toilet seat to clean underneath."
+ },
+ "p262": {
+  "motivo": "The shot shows the woman holding a hand mirror, which does not match the narration about a smell staying in place.",
+  "mejor": "The woman stands in the bathroom holding a cleaning spray bottle, looking toward the toilet area."
+ },
+ "p263": {
+  "motivo": "The shot shows the woman holding a bottle and a box, which does not match the narration about using one product per day.",
+  "mejor": "The woman holds a single cleaning product bottle in the bathroom, emphasizing the 'one product per day' line."
+ },
+ "p264": {
+  "motivo": "The shot is a close-up of gloved hands on a sink, which does not match the narration about putting gloves on if hands are sore.",
+  "mejor": "The woman is shown pulling yellow rubber gloves onto her hands in the bathroom."
+ },
+ "p265": {
+  "motivo": "The shot shows the woman holding a cloth, which does not match the narration about the job costing nothing but a spray and a wipe.",
+  "mejor": "The woman holds a spray bottle in one hand and a cleaning cloth in the other, ready to wipe a surface."
+ },
+ "p266": {
+  "motivo": "The shot shows the woman holding a cloth, which does not match the narration comparing the cost to commercial bathroom sprays.",
+  "mejor": "The woman holds a spray bottle while looking at the bathroom surfaces, illustrating the cost comparison."
+ },
+ "p267": {
+  "motivo": "The shot shows the woman wiping the toilet hinge, which does not match the narration stating that other products do not touch the hinge.",
+  "mejor": "The woman points to or inspects the toilet hinge area, highlighting the part that other sprays miss."
+ },
+ "p268": {
+  "motivo": "The shot shows the woman lifting the toilet lid, which does not match the narration about living alone and lifting the seat.",
+  "mejor": "The woman lifts the toilet seat (not the lid) in the bathroom."
+ },
+ "p269": {
+  "motivo": "The shot shows the woman wiping the toilet seat, which does not match the narration about wiping underneath the seat.",
+  "mejor": "The woman reaches under the lifted toilet seat to wipe the rim and underside."
+ },
+ "p270": {
+  "motivo": "The shot shows the woman standing and wiping her hands, which does not match the narration about finding the toothbrush.",
+  "mejor": "The woman reaches for a toothbrush in a holder or cabinet in the bathroom."
+ },
+ "p275": {
+  "motivo": "It looks like a different house/place than its neighbours (the window view and lighting are completely different, and the room appears empty).",
+  "mejor": "The elderly woman standing in the bathroom, continuing her story about doing the cleaning while her husband was in the field."
+ },
+ "p276": {
+  "motivo": "It is a near duplicate of shot 3 (same person standing in the same spot, same framing).",
+  "mejor": "A close-up of the dirty toilet flush handle that the narrator is referring to as the 'fifth one'."
+ },
+ "p279": {
+  "motivo": "It does not show what is being said; the narrator is talking about the handle, but the shot is a close-up of the toilet tank lid.",
+  "mejor": "A close-up of the toilet flush handle, as the narrator prepares to talk about it."
+ },
+ "p281": {
+  "motivo": "The shot shows a bathtub, which does not match the narration about a 'page 10 bonus' and is inconsistent with the toilet-focused content of the surrounding shots.",
+  "mejor": "A close-up of a page in a cleaning guide or book showing a bonus tip."
+ },
+ "p283": {
+  "motivo": "The shot shows a shower handle, but the narration specifically refers to a toilet flush handle.",
+  "mejor": "A close-up of a hand touching a toilet flush handle."
+ },
+ "p284": {
+  "motivo": "The shot shows the person standing and waving, which does not match the narration about a flush handle and is a near duplicate of the framing in shot 6.",
+  "mejor": "A close-up of the toilet flush handle being pointed at or touched."
+ },
+ "p286": {
+  "motivo": "The shot shows a paper towel dispenser, which does not match the narration about the flush handle being the dirtiest thing.",
+  "mejor": "A close-up of the toilet flush handle."
+ },
+ "p287": {
+  "motivo": "The shot shows the person sitting on the toilet, which does not match the narration about touching the handle before washing hands.",
+  "mejor": "A shot of a hand touching the toilet flush handle."
+ },
+ "p289": {
+  "motivo": "The shot shows the woman reaching for the toilet handle, but the narration says 'you scrub the seat', which is not what is being shown.",
+  "mejor": "A close-up of hands scrubbing the toilet seat with a cloth."
+ },
+ "p291": {
+  "motivo": "The shot shows the woman standing idle, which does not match the narration about the mother's quote regarding the handle.",
+  "mejor": "A shot of the woman looking at the toilet handle while speaking, or a close-up of the handle."
+ },
+ "p292": {
+  "motivo": "This is a near duplicate of the framing in shot 1, showing the same toilet tank and handle area.",
+  "mejor": "A different angle showing the woman's face as she delivers the line about the front door."
+ },
+ "p294": {
+  "motivo": "The shot shows the woman standing and wiping her hands, which does not match the narration about wiping the handle every day.",
+  "mejor": "The woman actively wiping the toilet handle with a cloth."
+ },
+ "p295": {
+  "motivo": "The shot shows the woman reaching for the handle, but the narration is about cleaning the bathroom generally.",
+  "mejor": "A wider shot of the woman cleaning the bathroom area."
+ },
+ "p297": {
+  "motivo": "The shot shows the woman wiping the tank, but the narration specifically says to spray and wipe the handle.",
+  "mejor": "A close-up of the woman spraying and wiping the toilet handle."
+ },
+ "p303": {
+  "motivo": "Near duplicate of shot 4 (same person standing in the same spot, same framing).",
+  "mejor": "A close-up of the toilet handle being wiped with a rag."
+ },
+ "p305": {
+  "motivo": "Does not show what is being said; the narrator mentions 'one product per day' but the shot shows the woman sitting on the toilet with a rag.",
+  "mejor": "A shot of a single cleaning product bottle placed on the bathroom sink or toilet tank."
+ },
+ "p309": {
+  "motivo": "No muestra lo que se dice (la mujer limpiando el picaporte); es un primer plano de un pomo de puerta con un reflejo distorsionado.",
+  "mejor": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cloth."
+ },
+ "p312": {
+  "motivo": "Es un duplicado casi exacto del plano 3 (mismo primer plano del pomo de la puerta).",
+  "mejor": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cloth."
+ },
+ "p314": {
+  "motivo": "No muestra lo que se dice (una respuesta sobre la limpieza); muestra a la mujer mirando a cámara con una expresión confusa mientras sostiene un paño.",
+  "mejor": "The elderly woman looking at the camera with a gentle smile while holding the cleaning cloth."
+ },
+ "p317": {
+  "motivo": "El plano es un primer plano de un grifo y no muestra lo que se dice (un baño que huele a baño). Además, el encuadre y la estancia parecen distintos al resto de planos de la anciana.",
+  "mejor": "A wide shot of the bathroom showing the toilet and sink to illustrate a bathroom that smells like a bathroom."
+ },
+ "p320": {
+  "motivo": "El plano muestra únicamente el inodoro sin la anciana ni la acción de verter el peróxido, por lo que no ilustra lo que se dice en ese momento.",
+  "mejor": "The elderly woman pouring hydrogen peroxide from the brown bottle into the toilet bowl."
+ },
+ "p322": {
+  "motivo": "El plano muestra una repisa con una botella, pero no coincide con la acción ni el lugar que se menciona (la anciana guardando la botella en su propia repisa).",
+  "mejor": "The elderly woman placing the brown bottle on its own shelf away from the vinegar."
+ },
+ "p328": {
+  "motivo": "The narrator is talking about a specific page in her book, but the shot is a near duplicate of shot 2 (same person, same spot, same framing) and does not clearly show the book's content.",
+  "mejor": "A close-up of the open book showing page 10 with text about hard-water rings."
+ },
+ "p330": {
+  "motivo": "The narrator is explaining that brushing won't remove the ring, but the shot shows her sitting on the toilet with the lid down, which does not visually support the action of brushing or the ring itself.",
+  "mejor": "A shot of the toilet bowl showing the stubborn brown ring at the waterline."
+ },
+ "p331": {
+  "motivo": "The narrator says 'no amount of scrubbing will move it,' but the shot shows her scrubbing the toilet bowl with a brush, which contradicts the statement that scrubbing is ineffective.",
+  "mejor": "A shot showing the ring remaining on the toilet bowl after an attempt to scrub it."
+ },
+ "p332": {
+  "motivo": "The narrator is introducing a pumice stone, but the shot shows her holding a small, indistinct object that does not clearly look like a pumice stone.",
+  "mejor": "A clear close-up of the narrator holding a pumice stone."
+ },
+ "p334": {
+  "motivo": "The narration says 'Turn off the water', but the shot shows the woman turning the toilet's water supply valve on, not off.",
+  "mejor": "The woman's hand turning the toilet water supply valve clockwise to shut off the water."
+ },
+ "p335": {
+  "motivo": "The narration says 'flush so the water drops below the ring', but the shot shows the woman pressing the flush handle while the toilet bowl is still full of water, not the water level dropping.",
+  "mejor": "The toilet bowl with the water level visibly dropping below the stained ring after flushing."
+ },
+ "p336": {
+  "motivo": "The narration says 'pour one cup of white vinegar on the ring', but the shot shows the woman pouring a white powder, not a liquid, into the toilet bowl.",
+  "mejor": "The woman pouring a cup of white vinegar directly onto the stained ring inside the toilet bowl."
+ },
+ "p337": {
+  "motivo": "The narration says 'Wait thirty minutes', but the shot shows the toilet bowl with dark, dirty water, which does not visually represent a waiting period.",
+  "mejor": "A clock or timer showing thirty minutes have passed, or the woman waiting near the toilet."
+ },
+ "p338": {
+  "motivo": "The narration says 'then rub gently with the wet pumice stone', but the shot shows the woman sitting on the toilet holding a small object, not actively rubbing the pumice stone on the ring.",
+  "mejor": "The woman's hand rubbing a wet pumice stone gently against the stain inside the toilet bowl."
+ },
+ "p339": {
+  "motivo": "The narration says 'Keep the pumice wet the whole time, honey, because', but the shot shows the woman holding a dry-looking pumice stone over the sink, not keeping it wet while working on the toilet.",
+  "mejor": "The woman dipping the pumice stone into a bowl of water or holding it under the running faucet to keep it wet."
+ },
+ "p340": {
+  "motivo": "The narration says 'dry pumice scratches the porcelain', but the shot shows the woman sitting on the toilet looking at a small object, not demonstrating the scratching effect on porcelain.",
+  "mejor": "A close-up of a dry pumice stone scratching a piece of white porcelain, or the woman holding the dry stone near the toilet bowl."
+ },
+ "p341": {
+  "motivo": "The narration says 'White porcelain only, and that is the BE', but the shot shows the woman standing in the middle of the bathroom, not pointing to or showing white porcelain.",
+  "mejor": "The woman pointing to or touching the white porcelain of the toilet or sink to emphasize the material."
+ },
+ "p342": {
+  "motivo": "The narration says 'CAREFUL line from page 10. When the', but the shot shows the woman holding a bowl over the toilet, not reading from a book or pointing to a line on a page.",
+  "mejor": "The woman holding a book or manual open to page 10, pointing to the 'CAREFUL' line."
+ },
+ "p348": {
+  "motivo": "The shot does not show what is being said (the narrator mentions the ring remover bottle, but the shot is an empty bathroom with a bottle on the sink), and it looks like a different framing/place than its neighbours.",
+  "mejor": "A close-up of the elderly woman holding the bottle of ring remover, showing its label."
+ },
+ "p351": {
+  "motivo": "The shot does not show what is being said (the narrator mentions doing the ring on the first Saturday of spring, but the shot is an empty bathroom), and it looks like a different framing/place than its neighbours.",
+  "mejor": "The elderly woman standing in the bathroom, looking at a calendar or preparing to clean the toilet."
+ },
+ "p353": {
+  "motivo": "No muestra lo que se dice (no hay piedra pómez ni se menciona el tiempo de espera); además, parece una casa diferente a la de los planos 1 y 3.",
+  "mejor": "A close-up of a pumice stone resting on the edge of a bathroom sink."
+ },
+ "p354": {
+  "motivo": "No muestra lo que se dice (no se ve una piedra pómez del tamaño de un jabón); parece una casa diferente a la de los planos 1 y 2.",
+  "mejor": "An elderly woman holding a pumice stone the size of a bar of soap next to a toilet."
+ },
+ "p356": {
+  "motivo": "No muestra lo que se dice (no se ve una piedra pómez ni un anillo de agua dura); parece una casa diferente a la de los planos 1, 3 y 4.",
+  "mejor": "An elderly woman scrubbing a hard-water ring inside a toilet bowl with a pumice stone."
+ },
+ "p357": {
+  "motivo": "No muestra lo que se dice (no se ve el anillo de cera debajo del inodoro); parece una casa diferente a la de los planos 1, 3, 4 y 5.",
+  "mejor": "A close-up of the base of a toilet showing the wax seal area."
+ },
+ "p358": {
+  "motivo": "No muestra lo que se dice (no se ve un anillo de cera ni un teléfono); parece una casa diferente a la de los planos 1, 3, 4, 5 y 6.",
+  "mejor": "An elderly woman looking at a wax seal under a toilet, preparing to call a handyman."
+ },
+ "p360": {
+  "motivo": "No muestra lo que se dice (no se ve un anillo de cera); parece una casa diferente a la de los planos 1, 3, 4, 5, 6 y 7.",
+  "mejor": "An elderly woman holding a phone to her ear while looking at a wax seal under a toilet."
+ },
+ "p361": {
+  "motivo": "The shot shows a sink and toilet, but the narration is about ordering from the grocery store, so it does not show what is being said.",
+  "mejor": "A shot of a grocery list or a phone/computer screen showing an online grocery order."
+ },
+ "p362": {
+  "motivo": "The shot shows the woman standing and talking, but the narration is a list of bathroom cleaning tasks, so it does not show what is being said.",
+  "mejor": "A shot of the woman holding a written bathroom cleaning checklist."
+ },
+ "p364": {
+  "motivo": "The shot shows the woman pouring liquid into a container on the toilet tank, but the narration is about soaking the brush in peroxide, so it does not show what is being said.",
+  "mejor": "A shot of the toilet brush soaking in a container of peroxide."
+ },
+ "p366": {
+  "motivo": "The shot shows the woman holding a small dish or lid, but the narration is about scrubbing under the rim with a toothbrush, so it does not show what is being said.",
+  "mejor": "A shot of the woman scrubbing under the toilet rim with a toothbrush."
+ },
+ "p367": {
+  "motivo": "The shot shows the woman holding a small object near the toilet, but the narration is about cleaning the seat hinges, so it does not show what is being said.",
+  "mejor": "A shot of the woman cleaning the toilet seat hinges."
+ },
+ "p373": {
+  "motivo": "The shot is a near duplicate of shot 2 (same person, same spot, same framing) and does not show the porcelain being cleaned as described.",
+  "mejor": "A close-up of the woman's hand using a wet pumice stone to scrub the porcelain toilet bowl."
+ },
+ "p374": {
+  "motivo": "The shot shows the woman holding a book, but the text on the pages is not readable, failing to show the specific content mentioned in the narration.",
+  "mejor": "A close-up of the open book showing the readable text of page 9 listing the five mistakes."
+ },
+ "p375": {
+  "motivo": "The shot is a near duplicate of shot 3 (same person, same spot, same framing) and does not show the specific page 10 mentioned in the narration.",
+  "mejor": "A close-up of the book showing page 10 with the instructions for removing the ring."
+ },
+ "p376": {
+  "motivo": "The shot is a near duplicate of shot 1 (same person, same spot, same framing) and the text in the book is not readable.",
+  "mejor": "A close-up of the book showing the exact amounts and steps for cleaning."
+ },
+ "p377": {
+  "motivo": "The shot is a near duplicate of the empty bathroom view from shot 2 and does not show the narrator or the book as implied by the narration.",
+  "mejor": "The narrator pointing to the video description area or holding the book while looking at the camera."
+ },
+ "p378": {
+  "motivo": "The shot is a near duplicate of shot 3 (same person, same spot, same framing) and does not clearly show the book being kept as stated.",
+  "mejor": "The narrator placing the book on a shelf or counter to keep it."
+ },
+ "p379": {
+  "motivo": "The narrator says 'the shelf above the towels', but the shot shows the shelf and towels without the narrator present, making it disconnected from the spoken context.",
+  "mejor": "The elderly woman standing in the bathroom pointing to the wooden shelf above the wicker basket of towels."
+ },
+ "p380": {
+  "motivo": "The narrator says 'have to hunt for a video again. I wrote', but the shot shows the woman standing empty-handed, not writing or holding a book.",
+  "mejor": "The elderly woman holding a notebook and pen, writing down instructions in the bathroom."
+ },
+ "p381": {
+  "motivo": "The narrator says 'it all down so you can walk to the bathroom,' but the shot shows the woman already in the bathroom reading a book, not walking into it.",
+  "mejor": "The elderly woman walking through the bathroom doorway holding the notebook."
+ },
+ "p382": {
+  "motivo": "The narrator says 'open the book, and do the job without me', but the shot shows the woman placing the book on the toilet tank rather than opening it to perform a task.",
+  "mejor": "The elderly woman opening the book while standing next to the toilet."
+ },
+ "p383": {
+  "motivo": "The narrator says 'standing over your shoulder', but the shot shows the woman standing alone in the middle of the room, not positioned behind anyone.",
+  "mejor": "The elderly woman standing directly behind the toilet, looking over it as if supervising."
+ },
+ "p384": {
+  "motivo": "The narrator asks about 'which spot in your bathroom', but the shot shows the woman on the phone, which does not match the request for a comment.",
+  "mejor": "The elderly woman pointing to different areas of the bathroom, such as the toilet brush or base."
+ },
+ "p385": {
+  "motivo": "The narrator says 'bathroom you have been ignoring, the brush or', but the shot shows the woman holding the toilet brush, which is the opposite of ignoring it.",
+  "mejor": "The elderly woman looking at the toilet brush holder on the floor with a questioning expression."
+ },
+ "p386": {
+  "motivo": "The narrator says 'the base or the handle. Tell me what your toilet', but the shot shows the woman sitting on the edge of the bathtub, not pointing to the base or handle.",
+  "mejor": "The elderly woman pointing to the base and handle of the toilet brush."
+ },
+ "p387": {
+  "motivo": "The narrator says 'brush holder looks like when you open it', but the shot shows the woman holding the brush holder open, which is a near duplicate of the action in shot 7.",
+  "mejor": "The elderly woman opening the toilet brush holder to reveal its interior."
+ },
+ "p389": {
+  "motivo": "Near duplicate of shot 1 (same person, same spot, same framing) and does not match the narration about reading stories.",
+  "mejor": "A close-up of Edna holding a letter or reading a story from a piece of paper."
+ },
+ "p390": {
+  "motivo": "Near duplicate of shot 1 (same person, same spot, same framing) and does not match the narration about Danny reading stories.",
+  "mejor": "Edna sitting in a living room chair while Danny reads a story to her from a book or paper."
+ },
+ "p391": {
+  "motivo": "Does not show what is being said (helping another lady find her smell) and is a near duplicate of shot 1 (same person, same spot, same framing).",
+  "mejor": "A woman smelling a pleasant scent, like a flower or a candle, in a bright room."
+ },
+ "p392": {
+  "motivo": "Does not show what is being said (encouraging people to share their stories) and is a near duplicate of shot 1 (same person, same spot, same framing).",
+  "mejor": "Edna looking directly at the camera with an encouraging expression, perhaps holding a letter."
+ },
+ "p394": {
+  "motivo": "Does not show what is being said (going into the kitchen) and is a near duplicate of shot 6 (same kitchen setting).",
+  "mejor": "Edna walking through a doorway into the kitchen."
+ },
+ "p396": {
+  "motivo": "Does not show what is being said (the answer to cleaning fingerprints) and is a near duplicate of shot 6 (same kitchen setting).",
+  "mejor": "Edna holding a cleaning cloth and a bottle of cleaner, ready to demonstrate the solution."
+ },
+ "p401": {
+  "motivo": "The shot is visually broken and does not show the person or the action being described (the refrigerator looking like new). It is an extreme close-up of a handle that looks like a different location.",
+  "mejor": "A wide shot of the elderly woman smiling while looking at the clean, shiny exterior of the refrigerator."
+ },
+ "p406": {
+  "motivo": "The narrator is saying a closing phrase ('and I will see you in the next one'), but the shot shows a woman actively cleaning a sink, which is a mid-action scene rather than a sign-off. Additionally, the shot is visually broken, with a large white vertical artifact (likely a door frame or wall) obscuring the right side of the frame.",
+  "mejor": "A wide shot of the vlogger smiling and waving at the camera in a tidy bathroom to signal the end of the video."
+ },
+ "p407": {
+  "motivo": "The shot is visually broken and confusing. The toilet tank is detached and floating in the foreground, and a toilet brush is inexplicably hovering in mid-air above the bowl. The perspective is distorted and does not look like a functional bathroom.",
+  "mejor": "A clean, well-lit shot of a tidy bathroom with a toilet, sink, and folded towels to illustrate the 'quiet blessing' of a clean space."
+ },
+ "p408": {
+  "motivo": "The shot is a near duplicate of the previous shot (Shot 2). It shows the same bathroom layout (toilet on the left, sink on the right, window in the center) with the same fixtures and tiling, just from a slightly different angle.",
+  "mejor": "A different angle or room in the house showing a clean, welcoming space that the viewer 'deserves'."
+ }
+}

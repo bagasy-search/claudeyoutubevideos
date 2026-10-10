@@ -1,0 +1,264 @@
+{
+ "secciones": {
+  "HOOK": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "REMEMBER": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "PAIN": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "PROMISE": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "STORY": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "CTA1": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "SAFETY": {
+   "lugar": "bajo_pileta",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "SINK": {
+   "lugar": "bajo_pileta",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M1": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M1A": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M1B": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "LOOP": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M2": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M2A": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M2B": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "LOOP2": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M3": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M3A": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M3B": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "CTA2": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M4": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M4A": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M4B": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "LOOP3": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M5": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M5A": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "M5B": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "OTHER": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "BONUS": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "BONUS2": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "BONUS3": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "END": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "CTA3": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "QUESTION": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "NEXT": {
+   "lugar": "cocina",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  },
+  "BLESS": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "loretta"
+   ]
+  }
+ },
+ "nuevos": {},
+ "avatar_lugar": "bano",
+ "lugares": {
+  "bano": "Loretta's small old farmhouse bathroom: white porcelain toilet with a white plastic seat, white square wall tiles up to waist height and pale painted wall above, a white pedestal sink with chrome taps, a small window with a white lace half-curtain, a white bath mat, worn white hexagon tile floor, a wicker basket with folded towels",
+  "cocina": "Loretta's 1950s white farmhouse kitchen: a white enamel stove with chrome handles, yellow gingham curtains on the window, a small wooden cross on the wall, a rooster cookie jar on a dark wooden dresser, a worn wooden table, a wall calendar",
+  "lavadero": "the small laundry corner off Loretta's kitchen: an old white top-loading washer and dryer, a deep white utility sink, a wooden shelf with plain unlabeled jugs and bottles, a mop and a bucket, a cotton clothesline basket",
+  "bajo_pileta": "the open cabinet under Loretta's bathroom sink: a plastic caddy with plain unlabeled spray bottles, a jug of white vinegar, a brown bottle of peroxide, a box of baking soda, folded old rags, yellow rubber gloves"
+ }
+}
