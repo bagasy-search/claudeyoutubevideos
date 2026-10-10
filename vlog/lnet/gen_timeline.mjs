@@ -28,6 +28,27 @@ shots.forEach((s, i) => {
   } else if (s.kind === "c") { c.k = "comp"; c.name = s.name; c.props = s.props || {}; if (s.page) c.page = 1; for (const v of Object.values(c.props)) if (typeof v === "string" && /\.(jpg|png)$/.test(v) && !ex(v)) warn.push(`falta ${v}`); }
   cues.push(c);
 });
+// ⛔ 9-oct: InfiniteTalk (RunPod público) DEGRADA el reel largo (limpio hasta ~180 s, visible 240, feo 280+: libro en mosaico,
+// brillo arcoíris en la tartera; medido en fhmice y suhouse). Las ventanas de avatar que pasan AV_MAX_OFF s de reel van con la
+// foto del tema más cercana (antes/después) y la voz sigue igual. Default 240 en --final; AV_MAX_OFF=0 lo apaga.
+const AVMAX = Number(process.env.AV_MAX_OFF ?? (FINAL ? 240 : 0));
+if (AVMAX > 0) {
+  const imgAt = (i, dir) => { for (let j = i + dir; j >= 0 && j < cues.length; j += dir) if (cues[j].k === "img" && cues[j].img && !cues[j].clip && !cues[j].avcut) return cues[j].img; return null; };
+  let n = 0;
+  for (let i = 0; i < cues.length; i++) {
+    const c = cues[i];
+    if (c.k !== "av" || (c.sf + c.dur) / FPS <= AVMAX) continue;
+    const a = imgAt(i, -1) || imgAt(i, 1), b = imgAt(i, 1) || a;
+    if (!a) continue;
+    n++;
+    if (c.dur > 12 * FPS && b !== a) {   // ventana larga: dos fotos (la de antes y la de después)
+      const h = Math.round(c.dur / 2), d = { k: "img", img: b, from: c.from + h, dur: c.dur - h, seed: c.seed + 7, avcut: 1 };
+      Object.assign(c, { k: "img", img: a, dur: h, avcut: 1 }); delete c.src; delete c.sf;
+      cues.splice(i + 1, 0, d); i++;
+    } else { Object.assign(c, { k: "img", img: a, avcut: 1 }); delete c.src; delete c.sf; }
+  }
+  if (n) console.log(`  avatar degradado: ${n} ventanas pasadas los ${AVMAX} s de reel → foto del tema`);
+}
 for (const o of OVS) { const f0 = F(o.s), f1 = Math.min(TOTAL, F(o.e)); if (f1 - f0 > 20) ovs.push({ from: f0, dur: f1 - f0, name: o.name, props: o.props }); }
 const S = (at, file, vol, dur = 45) => sfx.push({ from: Math.max(0, F(at)), dur, src: "sfx/" + file, vol });
 cues.forEach((c, i) => {
