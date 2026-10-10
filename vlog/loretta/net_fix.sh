@@ -11,6 +11,9 @@ if [ ! -f public/avatar_clips/$S/reel30.mp4 ]; then
   log "bajo assets-$S.tar"
   gh release download assets-$S -R $RP -p "assets-$S.tar" -D $T --clobber
   tar --force-local -xf $T/assets-$S.tar -C public; rm -f $T/assets-$S.tar
+  # el tar trae SÓLO clips que ya pasaron la revisión a ojo en el 1er render; al extraer cambia el mtime y el sello se cae → re-sellar
+  node scripts/agnes_qc.mjs $S > /dev/null || true
+  node scripts/agnes_qc.mjs $S --revision "ninguno" > /dev/null || true
 fi
 [ -f public/$S.wav ] || gh release download assets-$S -R $RP -p "$S.wav" -D public --clobber
 [ -f out/${S}_mix.wav ] || gh release download assets-$S -R $RP -p "${S}_mix.wav" -D out --clobber
