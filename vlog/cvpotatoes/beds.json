@@ -1,0 +1,302 @@
+[
+ {
+  "name": "c13_1",
+  "q": "boiling potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Let's talk about why boiling ruins them, because nobody ever explained it to you. A potato is mostly water and starch, with the flavor in between. When you drop it in a pot of boiling water, two things happen.\" — it must show: boiling potatoes."
+ },
+ {
+  "name": "c13_2",
+  "q": "potatoes pot",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Let's talk about why boiling ruins them, because nobody ever explained it to you. A potato is mostly water and starch, with the flavor in between. When you drop it in a pot of boiling water, two things happen.\" — it must show: potatoes pot."
+ },
+ {
+  "name": "c14_1",
+  "q": "boiled potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The outside cooks way before the inside, so by the time the middle is tender, the outside is falling apart and full of water. And all that water around it is pulling out the flavor and the sugar,\" — it must show: boiled potatoes."
+ },
+ {
+  "name": "c14_2",
+  "q": "potato water",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The outside cooks way before the inside, so by the time the middle is tender, the outside is falling apart and full of water. And all that water around it is pulling out the flavor and the sugar,\" — it must show: potato water."
+ },
+ {
+  "name": "c15_1",
+  "q": "draining potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"a little at a time. That's why the water turns cloudy. That's potato going down your drain. Then you take that waterlogged potato and try to fry it, for home fries, or hash browns.\" — it must show: draining potatoes."
+ },
+ {
+  "name": "c15_2",
+  "q": "colander potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"a little at a time. That's why the water turns cloudy. That's potato going down your drain. Then you take that waterlogged potato and try to fry it, for home fries, or hash browns.\" — it must show: colander potatoes."
+ },
+ {
+  "name": "c16_1",
+  "q": "frying potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"It's wet. Wet things don't brown, they steam. So you get pale, greasy, soft potatoes that stick to the pan. Everybody's had those. That's the boiled potato's fault.\" — it must show: frying potatoes."
+ },
+ {
+  "name": "c16_2",
+  "q": "home fries",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"It's wet. Wet things don't brown, they steam. So you get pale, greasy, soft potatoes that stick to the pan. Everybody's had those. That's the boiled potato's fault.\" — it must show: home fries."
+ },
+ {
+  "name": "c18_1",
+  "q": "small potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Two pounds of small potatoes. Gold or red. Those little ones that come in a bag, about the size of an egg. Those are perfect, because they hold their shape. Russets, the big brown baking potatoes, work,\" — it must show: small potatoes."
+ },
+ {
+  "name": "c18_2",
+  "q": "baby potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Two pounds of small potatoes. Gold or red. Those little ones that come in a bag, about the size of an egg. Those are perfect, because they hold their shape. Russets, the big brown baking potatoes, work,\" — it must show: baby potatoes."
+ },
+ {
+  "name": "c19_1",
+  "q": "cutting potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"but they're starchier and they fall apart more. If that's what you've got, cut them in big chunks. Cut the small ones in half. If any are bigger than a golf ball, cut them in quarters. Try to make all the pieces about th\" — it must show: cutting potatoes."
+ },
+ {
+  "name": "c19_2",
+  "q": "russet potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"but they're starchier and they fall apart more. If that's what you've got, cut them in big chunks. Cut the small ones in half. If any are bigger than a golf ball, cut them in quarters. Try to make all the pieces about th\" — it must show: russet potatoes."
+ },
+ {
+  "name": "c21_1",
+  "q": "washing potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The skin is where a lot of the flavor is, and it holds the potato together. Just scrub them under the water with your hands.\" — it must show: washing potatoes."
+ },
+ {
+  "name": "c21_2",
+  "q": "scrubbing potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The skin is where a lot of the flavor is, and it holds the potato together. Just scrub them under the water with your hands.\" — it must show: scrubbing potatoes."
+ },
+ {
+  "name": "c40_1",
+  "q": "slicing onion",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"While they fry, get the rest ready. Half an onion, sliced. Two roasted green chiles, chopped. Canned are fine. And three cloves of garlic, sliced thin.\" — it must show: slicing onion."
+ },
+ {
+  "name": "c40_2",
+  "q": "green chiles",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"While they fry, get the rest ready. Half an onion, sliced. Two roasted green chiles, chopped. Canned are fine. And three cloves of garlic, sliced thin.\" — it must show: green chiles."
+ },
+ {
+  "name": "c62_1",
+  "q": "potatoes market",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"At the store. Look for small, firm potatoes with smooth skin. No soft spots, no wrinkles, and no green. If a potato has green on the skin, that's from sitting in the light, and it tastes bitter.\" — it must show: potatoes market."
+ },
+ {
+  "name": "c62_2",
+  "q": "potato bin",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"At the store. Look for small, firm potatoes with smooth skin. No soft spots, no wrinkles, and no green. If a potato has green on the skin, that's from sitting in the light, and it tastes bitter.\" — it must show: potato bin."
+ },
+ {
+  "name": "c63_1",
+  "q": "sprouting potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Cut the green part off, or skip that one. And don't buy them if they're sprouting. Small potatoes run about a dollar thirty a pound. A five-pound bag is cheaper. Keep them in a dark, cool place.\" — it must show: sprouting potatoes."
+ },
+ {
+  "name": "c63_2",
+  "q": "potato bag",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Cut the green part off, or skip that one. And don't buy them if they're sprouting. Small potatoes run about a dollar thirty a pound. A five-pound bag is cheaper. Keep them in a dark, cool place.\" — it must show: potato bag."
+ },
+ {
+  "name": "c64_1",
+  "q": "pantry shelf",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Not the fridge, the cold turns the starch to sugar and they taste sweet and brown too fast. A paper bag in the pantry, away from the onions.\" — it must show: pantry shelf."
+ },
+ {
+  "name": "c64_2",
+  "q": "paper bag",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Not the fridge, the cold turns the starch to sugar and they taste sweet and brown too fast. A paper bag in the pantry, away from the onions.\" — it must show: paper bag."
+ },
+ {
+  "name": "c68_1",
+  "q": "scrambled eggs",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And the second breakfast. Leftover potatoes in the skillet, five minutes until crisp. Push them to the side. Beat four eggs with a pinch of salt and pour them in the empty side. Stir them slowly until they're soft and se\" — it must show: scrambled eggs."
+ },
+ {
+  "name": "c68_2",
+  "q": "eggs skillet",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And the second breakfast. Leftover potatoes in the skillet, five minutes until crisp. Push them to the side. Beat four eggs with a pinch of salt and pour them in the empty side. Stir them slowly until they're soft and se\" — it must show: eggs skillet."
+ },
+ {
+  "name": "c69_1",
+  "q": "breakfast taco",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"then fold the potatoes in. Into a warm flour tortilla, a spoonful of salsa, roll it up. That's a potato and egg taco.\" — it must show: breakfast taco."
+ },
+ {
+  "name": "c69_2",
+  "q": "egg taco",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"then fold the potatoes in. Into a warm flour tortilla, a spoonful of salsa, roll it up. That's a potato and egg taco.\" — it must show: egg taco."
+ },
+ {
+  "name": "c70_1",
+  "q": "cowboy riding",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"That's what the crew took with them in their saddlebags, wrapped in foil, on a long day. Still warm at ten in the morning.\" — it must show: cowboy riding."
+ },
+ {
+  "name": "c70_2",
+  "q": "saddle bag",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"That's what the crew took with them in their saddlebags, wrapped in foil, on a long day. Still warm at ten in the morning.\" — it must show: saddle bag."
+ },
+ {
+  "name": "c74_1",
+  "q": "frying chorizo",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And a variation that the crew asked for every Saturday morning. Before the potatoes go in, brown half a pound of fresh chorizo sausage in the skillet, breaking it up with a spoon, about six minutes.\" — it must show: frying chorizo."
+ },
+ {
+  "name": "c74_2",
+  "q": "chorizo sausage",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And a variation that the crew asked for every Saturday morning. Before the potatoes go in, brown half a pound of fresh chorizo sausage in the skillet, breaking it up with a spoon, about six minutes.\" — it must show: chorizo sausage."
+ },
+ {
+  "name": "c77_1",
+  "q": "burlap sacks",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Back on the ranch, we bought potatoes by the hundred-pound sack, four or five sacks every fall. We kept them in a cellar dug into the hillside behind the kitchen, in burlap, in the dark. Cool, dark, and a little damp,\" — it must show: burlap sacks."
+ },
+ {
+  "name": "c77_2",
+  "q": "root cellar",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Back on the ranch, we bought potatoes by the hundred-pound sack, four or five sacks every fall. We kept them in a cellar dug into the hillside behind the kitchen, in burlap, in the dark. Cool, dark, and a little damp,\" — it must show: root cellar."
+ },
+ {
+  "name": "c78_1",
+  "q": "potato soup",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"that's what a potato wants. They'd keep until March. By then they'd start to sprout and get soft, and that's when we ate a lot of potato soup. But from October to March, every single breakfast had these on the plate.\" — it must show: potato soup."
+ },
+ {
+  "name": "c78_2",
+  "q": "potato sprouts",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"that's what a potato wants. They'd keep until March. By then they'd start to sprout and get soft, and that's when we ate a lot of potato soup. But from October to March, every single breakfast had these on the plate.\" — it must show: potato sprouts."
+ },
+ {
+  "name": "c81_1",
+  "q": "family dinner",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"About four dollars and ninety cents. That's a side for six people. Eighty cents a plate. Potatoes are the cheapest food in the store that can make a whole family happy. That's why every ranch kitchen had a cellar full of\" — it must show: family dinner."
+ },
+ {
+  "name": "c81_2",
+  "q": "potatoes plate",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"About four dollars and ninety cents. That's a side for six people. Eighty cents a plate. Potatoes are the cheapest food in the store that can make a whole family happy. That's why every ranch kitchen had a cellar full of\" — it must show: potatoes plate."
+ },
+ {
+  "name": "c83_1",
+  "q": "roasting potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"tossed in a bowl with six tablespoons of melted fat and two teaspoons of salt. Spread them on the pans, cut side down, one layer. Four hundred and twenty-five degrees, thirty-five minutes,\" — it must show: roasting potatoes."
+ },
+ {
+  "name": "c83_2",
+  "q": "sheet pan potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"tossed in a bowl with six tablespoons of melted fat and two teaspoons of salt. Spread them on the pans, cut side down, one layer. Four hundred and twenty-five degrees, thirty-five minutes,\" — it must show: sheet pan potatoes."
+ },
+ {
+  "name": "c86_1",
+  "q": "campfire skillet",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And outside, on the fire. Same skillet, right on the grate over a medium bed of coals. Lid on for twelve. Lid off.\" — it must show: campfire skillet."
+ },
+ {
+  "name": "c86_2",
+  "q": "cooking over fire",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And outside, on the fire. Same skillet, right on the grate over a medium bed of coals. Lid on for twelve. Lid off.\" — it must show: cooking over fire."
+ },
+ {
+  "name": "c87_1",
+  "q": "campfire cooking",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The only difference is you have to move the pan around a little on the grate, because a fire is never even. Hotter on one side. That's it. We made these at every branding.\" — it must show: campfire cooking."
+ },
+ {
+  "name": "c87_2",
+  "q": "cast iron campfire",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The only difference is you have to move the pan around a little on the grate, because a fire is never even. Hotter on one side. That's it. We made these at every branding.\" — it must show: cast iron campfire."
+ },
+ {
+  "name": "c88_1",
+  "q": "campfire coffee",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Eggs on one side of the fire, potatoes on the other, coffee in the middle.\" — it must show: campfire coffee."
+ },
+ {
+  "name": "c88_2",
+  "q": "cowboy coffee",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Eggs on one side of the fire, potatoes on the other, coffee in the middle.\" — it must show: cowboy coffee."
+ },
+ {
+  "name": "c101_1",
+  "q": "campfire breakfast",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"I'd have three skillets of potatoes going on the fire, and the coffee pot, and a skillet of eggs, and a stack of tortillas wrapped in a towel to keep them warm. And the men would come out of the bunkhouse one at a time, \" — it must show: campfire breakfast."
+ },
+ {
+  "name": "c101_2",
+  "q": "tortillas towel",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"I'd have three skillets of potatoes going on the fire, and the coffee pot, and a skillet of eggs, and a stack of tortillas wrapped in a towel to keep them warm. And the men would come out of the bunkhouse one at a time, \" — it must show: tortillas towel."
+ },
+ {
+  "name": "c102_1",
+  "q": "cowboys campfire",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"and stand around the fire holding their hands out to it. And nobody said much. They'd fill a tortilla with potatoes and eggs, pour a cup of coffee, and eat standing up.\" — it must show: cowboys campfire."
+ },
+ {
+  "name": "c102_2",
+  "q": "ranch hands",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"and stand around the fire holding their hands out to it. And nobody said much. They'd fill a tortilla with potatoes and eggs, pour a cup of coffee, and eat standing up.\" — it must show: ranch hands."
+ },
+ {
+  "name": "c103_1",
+  "q": "sunrise hills",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Then the sun would come up over the hill, and they'd get on their horses and go. Twenty minutes, and the skillets were empty. Those are the best meals I ever cooked. Nobody said thank you. They didn't have to. They clean\" — it must show: sunrise hills."
+ },
+ {
+  "name": "c103_2",
+  "q": "cowboys riding",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Then the sun would come up over the hill, and they'd get on their horses and go. Twenty minutes, and the skillets were empty. Those are the best meals I ever cooked. Nobody said thank you. They didn't have to. They clean\" — it must show: cowboys riding."
+ },
+ {
+  "name": "c105_1",
+  "q": "green potato",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The green part can have a natural bitter stuff in it that'll give you a stomachache. Cut away all the green, and any eyes or sprouts, and be generous about it.\" — it must show: green potato."
+ },
+ {
+  "name": "c105_2",
+  "q": "peeling potato",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"The green part can have a natural bitter stuff in it that'll give you a stomachache. Cut away all the green, and any eyes or sprouts, and be generous about it.\" — it must show: peeling potato."
+ },
+ {
+  "name": "c107_1",
+  "q": "sweet potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And sweet potatoes. People ask me if this works. It does, with one change. Sweet potatoes have a lot of sugar, so they burn faster.\" — it must show: sweet potatoes."
+ },
+ {
+  "name": "c107_2",
+  "q": "cutting sweet potato",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And sweet potatoes. People ask me if this works. It does, with one change. Sweet potatoes have a lot of sugar, so they burn faster.\" — it must show: cutting sweet potato."
+ },
+ {
+  "name": "c115_1",
+  "q": "french fries",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Some cooks will tell you to soak cut potatoes in cold water first, to get the starch off. That's for French fries, in a deep fryer. For this, don't soak them. You want that starch on the cut side.\" — it must show: french fries."
+ },
+ {
+  "name": "c115_2",
+  "q": "soaking potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Some cooks will tell you to soak cut potatoes in cold water first, to get the starch off. That's for French fries, in a deep fryer. For this, don't soak them. You want that starch on the cut side.\" — it must show: soaking potatoes."
+ },
+ {
+  "name": "c117_1",
+  "q": "frozen vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Can you freeze them? Raw, no. A raw potato in the freezer turns dark and mushy when it thaws. Cooked, you can, for about a month, but they lose their crust and go a little grainy.\" — it must show: frozen vegetables."
+ },
+ {
+  "name": "c117_2",
+  "q": "freezer",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"Can you freeze them? Raw, no. A raw potato in the freezer turns dark and mushy when it thaws. Cooked, you can, for about a month, but they lose their crust and go a little grainy.\" — it must show: freezer."
+ },
+ {
+  "name": "c119_1",
+  "q": "steak potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And what goes with them. Anything. That's the beauty of a potato. Next to the pork chops from the first video in this series, with that onion sauce over both. Next to a steak. Under a fried egg.\" — it must show: steak potatoes."
+ },
+ {
+  "name": "c119_2",
+  "q": "fried egg potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about skillet potatoes, while he says: \"And what goes with them. Anything. That's the beauty of a potato. Next to the pork chops from the first video in this series, with that onion sauce over both. Next to a steak. Under a fried egg.\" — it must show: fried egg potatoes."
+ }
+]

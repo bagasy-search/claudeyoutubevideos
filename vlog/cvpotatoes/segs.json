@@ -1,0 +1,1272 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 2.48,
+  "id": "c01",
+  "d": 2.48,
+  "T": 3,
+  "text": "Boiling is why your potatoes taste like nothing.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S01",
+  "s": 2.48,
+  "e": 7.62,
+  "id": "c02",
+  "d": 5.14,
+  "T": 6,
+  "text": "Last time it was ribs, the ones that never touched a grill. And I'll tell you what we always put next to them.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S01",
+  "s": 7.62,
+  "e": 13.3,
+  "id": "c03",
+  "d": 5.68,
+  "T": 6,
+  "text": "These. Potatoes that never touched a pot of water. Think about what you do when you boil a potato.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S01",
+  "s": 13.3,
+  "e": 17.94,
+  "id": "c04",
+  "d": 4.64,
+  "T": 5,
+  "text": "You put it in a big pot of water, and for twenty minutes that water pulls the flavor out of it.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S01",
+  "s": 17.94,
+  "e": 22.8,
+  "id": "c05",
+  "d": 4.86,
+  "T": 6,
+  "text": "The potato gets waterlogged. Then you pour the water down the drain, and the flavor goes with it.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S01",
+  "s": 22.8,
+  "e": 28.76,
+  "id": "c06",
+  "d": 5.96,
+  "T": 7,
+  "text": "Then you have to put half a stick of butter and a fistful of salt on it to make it taste like anything. On the ranch,",
+  "pad": 1.04
+ },
+ {
+  "sc": "S01",
+  "s": 28.76,
+  "e": 34.359,
+  "id": "c07",
+  "d": 5.599,
+  "T": 6,
+  "text": "we never boiled them. Raw potatoes, straight into the cast iron. A little fat, two spoons of water,",
+  "pad": 0.4
+ },
+ {
+  "sc": "S01",
+  "s": 34.359,
+  "e": 38.939,
+  "id": "c08",
+  "d": 4.58,
+  "T": 5,
+  "text": "a lid. Thirty minutes. Creamy inside, crisp and golden outside,",
+  "pad": 0.42
+ },
+ {
+  "sc": "S01",
+  "s": 38.939,
+  "e": 42.939,
+  "id": "c09",
+  "d": 4.0,
+  "T": 5,
+  "text": "and they taste like a potato. I'll show you exactly how. I'm Claudio.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S01",
+  "s": 42.939,
+  "e": 49.579,
+  "id": "c10",
+  "d": 6.64,
+  "T": 7,
+  "text": "I cooked for a cattle crew for forty years. And potatoes were the cheapest thing in the cellar, so I learned to make them taste like they weren't.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S02",
+  "s": 49.579,
+  "e": 55.219,
+  "id": "c11",
+  "d": 5.64,
+  "T": 6,
+  "text": "This is my skillet. Twelve inches, cast iron, older than my truck. And for this one you need the lid too.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S02",
+  "s": 55.219,
+  "e": 60.809,
+  "id": "c12",
+  "d": 5.59,
+  "T": 6,
+  "text": "Any heavy twelve-inch skillet with a lid. If your lid is from a different pan, that's fine, as long as it covers it.",
+  "pad": 0.41
+ },
+ {
+  "sc": "S03",
+  "s": 60.809,
+  "e": 72.515,
+  "id": "c13",
+  "d": 11.706,
+  "T": 12,
+  "text": "Let's talk about why boiling ruins them, because nobody ever explained it to you. A potato is mostly water and starch, with the flavor in between. When you drop it in a pot of boiling water, two things happen.",
+  "pad": 0.29
+ },
+ {
+  "sc": "S03",
+  "s": 72.515,
+  "e": 82.195,
+  "id": "c14",
+  "d": 9.68,
+  "T": 10,
+  "text": "The outside cooks way before the inside, so by the time the middle is tender, the outside is falling apart and full of water. And all that water around it is pulling out the flavor and the sugar,",
+  "pad": 0.32
+ },
+ {
+  "sc": "S03",
+  "s": 82.195,
+  "e": 91.945,
+  "id": "c15",
+  "d": 9.75,
+  "T": 10,
+  "text": "a little at a time. That's why the water turns cloudy. That's potato going down your drain. Then you take that waterlogged potato and try to fry it, for home fries, or hash browns.",
+  "pad": 0.25
+ },
+ {
+  "sc": "S03",
+  "s": 91.945,
+  "e": 101.957,
+  "id": "c16",
+  "d": 10.012,
+  "T": 11,
+  "text": "It's wet. Wet things don't brown, they steam. So you get pale, greasy, soft potatoes that stick to the pan. Everybody's had those. That's the boiled potato's fault.",
+  "pad": 0.99
+ },
+ {
+  "sc": "S04",
+  "s": 101.957,
+  "e": 112.577,
+  "id": "c17",
+  "d": 10.62,
+  "T": 11,
+  "text": "Don Ernesto used to say a potato should be cooked in its own water, not the river's. Took me years to get that one too. A potato already has plenty of water inside. You just have to trap it.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S05",
+  "s": 112.577,
+  "e": 123.997,
+  "id": "c18",
+  "d": 11.42,
+  "T": 12,
+  "text": "Two pounds of small potatoes. Gold or red. Those little ones that come in a bag, about the size of an egg. Those are perfect, because they hold their shape. Russets, the big brown baking potatoes, work,",
+  "pad": 0.58
+ },
+ {
+  "sc": "S05",
+  "s": 123.997,
+  "e": 135.554,
+  "id": "c19",
+  "d": 11.557,
+  "T": 12,
+  "text": "but they're starchier and they fall apart more. If that's what you've got, cut them in big chunks. Cut the small ones in half. If any are bigger than a golf ball, cut them in quarters. Try to make all the pieces about the same size.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S05",
+  "s": 135.554,
+  "e": 144.174,
+  "id": "c20",
+  "d": 8.62,
+  "T": 9,
+  "text": "That's the most important thing in this whole recipe. If some pieces are big and some are small, the small ones are done and the big ones are raw in the middle. Don't peel them.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S05",
+  "s": 144.174,
+  "e": 150.054,
+  "id": "c21",
+  "d": 5.88,
+  "T": 7,
+  "text": "The skin is where a lot of the flavor is, and it holds the potato together. Just scrub them under the water with your hands.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S06",
+  "s": 150.054,
+  "e": 156.454,
+  "id": "c22",
+  "d": 6.4,
+  "T": 7,
+  "text": "And dry them. Pat them with a towel. Wet potatoes splatter in hot fat, and they don't brown as well.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S07",
+  "s": 156.454,
+  "e": 164.411,
+  "id": "c23",
+  "d": 7.957,
+  "T": 9,
+  "text": "Step one. Three tablespoons of fat in the skillet, medium heat. Lard or bacon fat. That's what we used. It's what gives them that ranch taste.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S07",
+  "s": 164.411,
+  "e": 170.191,
+  "id": "c24",
+  "d": 5.78,
+  "T": 6,
+  "text": "If you don't have either, a mix of oil and butter is fine. Let it melt and get hot, about two minutes.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S08",
+  "s": 170.191,
+  "e": 179.331,
+  "id": "c25",
+  "d": 9.14,
+  "T": 10,
+  "text": "Now the potatoes go in, cut side down. Every one of them, flat side against the pan. One layer. Take a minute and do this by hand. Don't dump them in.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S08",
+  "s": 179.331,
+  "e": 188.851,
+  "id": "c26",
+  "d": 9.52,
+  "T": 10,
+  "text": "The flat side touching the iron is what's going to turn golden and crisp later. If one is lying on its round side, it won't brown. One layer. If they don't fit in one layer,",
+  "pad": 0.48
+ },
+ {
+  "sc": "S08",
+  "s": 188.851,
+  "e": 193.827,
+  "id": "c27",
+  "d": 4.976,
+  "T": 6,
+  "text": "use two skillets, or do two batches. Piled up potatoes steam and never crisp.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S09",
+  "s": 193.827,
+  "e": 202.147,
+  "id": "c28",
+  "d": 8.32,
+  "T": 9,
+  "text": "Step two. A teaspoon of kosher salt over the top. Now two tablespoons of water. Just two. Sprinkle it right in the pan, around the potatoes.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S10",
+  "s": 202.147,
+  "e": 211.787,
+  "id": "c29",
+  "d": 9.64,
+  "T": 10,
+  "text": "And the lid goes on right away. Twelve minutes. This is the trick. That little bit of water, plus the water that comes out of the potatoes, turns to steam under the lid.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S10",
+  "s": 211.787,
+  "e": 221.527,
+  "id": "c30",
+  "d": 9.74,
+  "T": 10,
+  "text": "The steam cooks the potatoes all the way through, gently, in their own skins. But there's not enough water to wash anything out. All the flavor stays in the potato. Meanwhile,",
+  "pad": 0.26
+ },
+ {
+  "sc": "S10",
+  "s": 221.527,
+  "e": 225.544,
+  "id": "c31",
+  "d": 4.017,
+  "T": 5,
+  "text": "the cut sides are sitting in hot fat on the iron. They're already starting to brown.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S11",
+  "s": 225.544,
+  "e": 233.304,
+  "id": "c32",
+  "d": 7.76,
+  "T": 8,
+  "text": "Twelve minutes. Don't lift the lid. Every time you lift it, the steam escapes and you start over. While that goes, a story.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S11",
+  "s": 233.304,
+  "e": 243.944,
+  "id": "c33",
+  "d": 10.64,
+  "T": 11,
+  "text": "When I first started cooking for the crew, I was about twenty-two. And I boiled potatoes, because that's what my mother did. Big pot, every morning, then I'd fry them for breakfast. And they were bad.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S11",
+  "s": 243.944,
+  "e": 254.763,
+  "id": "c34",
+  "d": 10.819,
+  "T": 11,
+  "text": "Pale, greasy, falling apart. One morning Don Ernesto came in, looked at my pot of boiling potatoes, picked it up, and poured the whole thing out the back door. Water, potatoes, everything.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S11",
+  "s": 254.763,
+  "e": 261.783,
+  "id": "c35",
+  "d": 7.02,
+  "T": 8,
+  "text": "Then he put a skillet on the stove and said, \"Again.\" That's how I learned this. He didn't say another word about it. He didn't have to.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S12",
+  "s": 261.783,
+  "e": 271.343,
+  "id": "c36",
+  "d": 9.56,
+  "T": 10,
+  "text": "Twelve minutes. Lid off. Look. The potatoes have gone from white to a little see-through. Poke one with a knife. It should be almost tender. It'll get there.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S13",
+  "s": 271.343,
+  "e": 282.163,
+  "id": "c37",
+  "d": 10.82,
+  "T": 11,
+  "text": "Step three. Now the lid stays off. And you don't touch them. Eight minutes. Let them fry on the cut side, just sitting there. The water's gone now, so the pan is frying, not steaming.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S13",
+  "s": 282.163,
+  "e": 290.608,
+  "id": "c38",
+  "d": 8.445,
+  "T": 9,
+  "text": "This is where the crust happens. Same rule as the pork chops. Leave them alone. If you stir them every minute, you'll never get a crust. They'll tell you when they're ready.",
+  "pad": 0.55
+ },
+ {
+  "sc": "S13",
+  "s": 290.608,
+  "e": 299.408,
+  "id": "c39",
+  "d": 8.8,
+  "T": 9,
+  "text": "When you lift one with a spatula and the bottom is deep golden brown, and it comes off the pan easy, it's ready. If it sticks, it's not ready. Wait.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S14",
+  "s": 299.408,
+  "e": 308.968,
+  "id": "c40",
+  "d": 9.56,
+  "T": 10,
+  "text": "While they fry, get the rest ready. Half an onion, sliced. Two roasted green chiles, chopped. Canned are fine. And three cloves of garlic, sliced thin.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S15",
+  "s": 308.968,
+  "e": 316.078,
+  "id": "c41",
+  "d": 7.11,
+  "T": 8,
+  "text": "Eight minutes. Look at that. Deep golden. Now you can turn them. Use a metal spatula and flip them over, golden side up.",
+  "pad": 0.89
+ },
+ {
+  "sc": "S16",
+  "s": 316.078,
+  "e": 327.075,
+  "id": "c42",
+  "d": 10.997,
+  "T": 12,
+  "text": "Step four. Add the onion and the green chiles. Stir them in around the potatoes. Cook six to eight minutes more, turning everything now and then, until the onions are soft and starting to brown at the edges.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S17",
+  "s": 327.075,
+  "e": 337.715,
+  "id": "c43",
+  "d": 10.64,
+  "T": 11,
+  "text": "And the garlic goes in for the last two minutes. Not at the start. Garlic burns fast, and burnt garlic tastes bitter and ruins the whole pan. Two minutes, just until you smell it.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S18",
+  "s": 337.715,
+  "e": 346.835,
+  "id": "c44",
+  "d": 9.12,
+  "T": 10,
+  "text": "Step five. Check them. A knife should slide into the biggest piece with no push at all. Like it's going into butter. If you have to push, give them two or three more minutes.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S19",
+  "s": 346.835,
+  "e": 350.515,
+  "id": "c45",
+  "d": 3.68,
+  "T": 4,
+  "text": "A little chopped cilantro or parsley over the top. And that's it.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S20",
+  "s": 350.515,
+  "e": 359.97,
+  "id": "c46",
+  "d": 9.455,
+  "T": 10,
+  "text": "Look at that. Break one open. Creamy inside, like a baked potato. Crisp and golden on the cut side. And taste it. It tastes like a potato. A real one.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S20",
+  "s": 359.97,
+  "e": 370.25,
+  "id": "c47",
+  "d": 10.28,
+  "T": 11,
+  "text": "Sweet and earthy and a little smoky from the bacon fat. You don't need butter. You don't need ketchup. You'll eat them right out of the pan with your fingers, standing at the stove. Everybody does.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S21",
+  "s": 370.25,
+  "e": 374.69,
+  "id": "c48",
+  "d": 4.44,
+  "T": 5,
+  "text": "I'll show you the difference, because I did this test for my granddaughter when she didn't believe me.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S21",
+  "s": 374.69,
+  "e": 383.345,
+  "id": "c49",
+  "d": 8.655,
+  "T": 9,
+  "text": "Same bag of potatoes. Half of them I boiled for fifteen minutes, then fried them in the same fat, same pan, same time. The other half I did this way.",
+  "pad": 0.35
+ },
+ {
+  "sc": "S22",
+  "s": 383.345,
+  "e": 394.485,
+  "id": "c50",
+  "d": 11.14,
+  "T": 12,
+  "text": "The boiled ones broke apart when I turned them. They soaked up the fat, and they came out pale with a few brown spots. Soft all the way through. When you bit one, it tasted like hot water and salt.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S23",
+  "s": 394.485,
+  "e": 405.525,
+  "id": "c51",
+  "d": 11.04,
+  "T": 12,
+  "text": "These held together. A real crust, the whole flat side, deep gold. And inside, creamy, and they tasted sweet. My granddaughter ate four of them and then asked me to show her again.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S23",
+  "s": 405.525,
+  "e": 413.645,
+  "id": "c52",
+  "d": 8.12,
+  "T": 9,
+  "text": "She's nineteen. She makes them in her apartment now, in a skillet she bought at a yard sale for six dollars. Best six dollars she ever spent.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S24",
+  "s": 413.645,
+  "e": 416.745,
+  "id": "c53",
+  "d": 3.1,
+  "T": 4,
+  "text": "Rusty. See. He's not even waiting for a plate.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S25",
+  "s": 416.745,
+  "e": 422.637,
+  "id": "c54",
+  "d": 5.892,
+  "T": 7,
+  "text": "Careful, they're hot. He knows. He does this every time, and he burns his mouth every time.",
+  "pad": 1.11
+ },
+ {
+  "sc": "S26",
+  "s": 422.637,
+  "e": 429.837,
+  "id": "c55",
+  "d": 7.2,
+  "T": 8,
+  "text": "I put every one of these recipes in a book, the way we really made them. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S27",
+  "s": 429.837,
+  "e": 440.437,
+  "id": "c56",
+  "d": 10.6,
+  "T": 11,
+  "text": "Raw in the middle. The pieces were too big. Halve the small ones, quarter the big ones. Make them all about the same. Or give them three or four more minutes with the lid on at the start. Not crispy.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S27",
+  "s": 440.437,
+  "e": 450.217,
+  "id": "c57",
+  "d": 9.78,
+  "T": 10,
+  "text": "Either you left the lid on too long, or the pan was too crowded. Once the lid comes off, it stays off. And one layer, always. If they're stacked up, they steam.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S27",
+  "s": 450.217,
+  "e": 461.197,
+  "id": "c58",
+  "d": 10.98,
+  "T": 12,
+  "text": "They stuck to the pan. You moved them too soon, or your fat wasn't hot enough when they went in. Let the fat heat two minutes. And wait for them to let go on their own. Burnt garlic. You put it in too early.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S27",
+  "s": 461.197,
+  "e": 472.637,
+  "id": "c59",
+  "d": 11.44,
+  "T": 12,
+  "text": "Garlic goes in at the very end. They're greasy. Too much fat, or the fat wasn't hot. Three tablespoons for two pounds is right. A potato in hot fat fries. A potato in cold fat soaks it up.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S28",
+  "s": 472.637,
+  "e": 481.909,
+  "id": "c60",
+  "d": 9.272,
+  "T": 10,
+  "text": "A variation. If you don't have green chiles, or you're cooking for people who don't want any heat, use bacon fat and a teaspoon of smoked paprika instead. Sprinkle it on with the onion.",
+  "pad": 0.73
+ },
+ {
+  "sc": "S28",
+  "s": 481.909,
+  "e": 486.549,
+  "id": "c61",
+  "d": 4.64,
+  "T": 5,
+  "text": "You get that same smoky, warm color, and not a bit of spice. The kids will eat those.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S29",
+  "s": 486.549,
+  "e": 497.949,
+  "id": "c62",
+  "d": 11.4,
+  "T": 12,
+  "text": "At the store. Look for small, firm potatoes with smooth skin. No soft spots, no wrinkles, and no green. If a potato has green on the skin, that's from sitting in the light, and it tastes bitter.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S29",
+  "s": 497.949,
+  "e": 508.369,
+  "id": "c63",
+  "d": 10.42,
+  "T": 11,
+  "text": "Cut the green part off, or skip that one. And don't buy them if they're sprouting. Small potatoes run about a dollar thirty a pound. A five-pound bag is cheaper. Keep them in a dark, cool place.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S29",
+  "s": 508.369,
+  "e": 516.149,
+  "id": "c64",
+  "d": 7.78,
+  "T": 8,
+  "text": "Not the fridge, the cold turns the starch to sugar and they taste sweet and brown too fast. A paper bag in the pantry, away from the onions.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S29",
+  "s": 516.149,
+  "e": 522.289,
+  "id": "c65",
+  "d": 6.14,
+  "T": 7,
+  "text": "Onions and potatoes stored together make each other go bad faster. My mother taught me that one, and she was right.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S30",
+  "s": 522.289,
+  "e": 527.369,
+  "id": "c66",
+  "d": 5.08,
+  "T": 6,
+  "text": "Leftovers. Three days in the fridge. Don't microwave them. They go soft and gummy.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S31",
+  "s": 527.369,
+  "e": 535.169,
+  "id": "c67",
+  "d": 7.8,
+  "T": 8,
+  "text": "Reheat them in a dry skillet, medium heat, no fat, about five minutes, turning them once. They'll get crisp again, almost as good as the first time.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S32",
+  "s": 535.169,
+  "e": 546.814,
+  "id": "c68",
+  "d": 11.645,
+  "T": 12,
+  "text": "And the second breakfast. Leftover potatoes in the skillet, five minutes until crisp. Push them to the side. Beat four eggs with a pinch of salt and pour them in the empty side. Stir them slowly until they're soft and set,",
+  "pad": 0.36
+ },
+ {
+  "sc": "S32",
+  "s": 546.814,
+  "e": 554.414,
+  "id": "c69",
+  "d": 7.6,
+  "T": 8,
+  "text": "then fold the potatoes in. Into a warm flour tortilla, a spoonful of salsa, roll it up. That's a potato and egg taco.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S32",
+  "s": 554.414,
+  "e": 560.634,
+  "id": "c70",
+  "d": 6.22,
+  "T": 7,
+  "text": "That's what the crew took with them in their saddlebags, wrapped in foil, on a long day. Still warm at ten in the morning.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S33",
+  "s": 560.634,
+  "e": 571.154,
+  "id": "c71",
+  "d": 10.52,
+  "T": 11,
+  "text": "And here's the jar that sat next to my stove for forty years. The crew called it Claudio's dust. Half a cup of kosher salt. Two tablespoons of black pepper. One tablespoon of garlic powder.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S33",
+  "s": 571.154,
+  "e": 582.405,
+  "id": "c72",
+  "d": 11.251,
+  "T": 12,
+  "text": "One tablespoon of ancho chile powder. One teaspoon of cumin. Shake it up in a jar with a lid. A teaspoon of that over the potatoes when the lid comes off, instead of plain salt, and you won't believe it's the same potato.",
+  "pad": 0.75
+ },
+ {
+  "sc": "S33",
+  "s": 582.405,
+  "e": 587.445,
+  "id": "c73",
+  "d": 5.04,
+  "T": 6,
+  "text": "It goes on the pork chops, the eggs, the steak, everything. Rusty puts it on popcorn.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S34",
+  "s": 587.445,
+  "e": 598.165,
+  "id": "c74",
+  "d": 10.72,
+  "T": 11,
+  "text": "And a variation that the crew asked for every Saturday morning. Before the potatoes go in, brown half a pound of fresh chorizo sausage in the skillet, breaking it up with a spoon, about six minutes.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S34",
+  "s": 598.165,
+  "e": 607.838,
+  "id": "c75",
+  "d": 9.673,
+  "T": 10,
+  "text": "Lift it out and leave the red fat behind. Use that fat instead of the lard, and do the potatoes exactly the same way. Lid on twelve minutes, lid off eight, turn them,",
+  "pad": 0.33
+ },
+ {
+  "sc": "S34",
+  "s": 607.838,
+  "e": 618.478,
+  "id": "c76",
+  "d": 10.64,
+  "T": 11,
+  "text": "then stir the chorizo back in with the onion. The potatoes come out red and crisp and smoky. With eggs on top. That one cost us about a dollar fifty a plate and nobody was ever hungry before lunch.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S35",
+  "s": 618.478,
+  "e": 629.918,
+  "id": "c77",
+  "d": 11.44,
+  "T": 12,
+  "text": "Back on the ranch, we bought potatoes by the hundred-pound sack, four or five sacks every fall. We kept them in a cellar dug into the hillside behind the kitchen, in burlap, in the dark. Cool, dark, and a little damp,",
+  "pad": 0.56
+ },
+ {
+  "sc": "S35",
+  "s": 629.918,
+  "e": 641.21,
+  "id": "c78",
+  "d": 11.292,
+  "T": 12,
+  "text": "that's what a potato wants. They'd keep until March. By then they'd start to sprout and get soft, and that's when we ate a lot of potato soup. But from October to March, every single breakfast had these on the plate.",
+  "pad": 0.71
+ },
+ {
+  "sc": "S35",
+  "s": 641.21,
+  "e": 645.53,
+  "id": "c79",
+  "d": 4.32,
+  "T": 5,
+  "text": "Thousands of pans of potatoes. And not one of them ever saw a pot of water.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S36",
+  "s": 645.53,
+  "e": 657.27,
+  "id": "c80",
+  "d": 11.74,
+  "T": 12,
+  "text": "What it costs. Two pounds of small potatoes, about two dollars sixty. Half an onion, sixty cents. Two green chiles, about a dollar. Garlic, fat, salt, herbs, call it seventy cents.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S36",
+  "s": 657.27,
+  "e": 668.302,
+  "id": "c81",
+  "d": 11.032,
+  "T": 12,
+  "text": "About four dollars and ninety cents. That's a side for six people. Eighty cents a plate. Potatoes are the cheapest food in the store that can make a whole family happy. That's why every ranch kitchen had a cellar full of them.",
+  "pad": 0.97
+ },
+ {
+  "sc": "S37",
+  "s": 668.302,
+  "e": 676.782,
+  "id": "c82",
+  "d": 8.48,
+  "T": 9,
+  "text": "For a crowd. A skillet only holds so much. So for a crowd, use the oven. Two sheet pans. Four pounds of potatoes cut the same way,",
+  "pad": 0.52
+ },
+ {
+  "sc": "S37",
+  "s": 676.782,
+  "e": 687.302,
+  "id": "c83",
+  "d": 10.52,
+  "T": 11,
+  "text": "tossed in a bowl with six tablespoons of melted fat and two teaspoons of salt. Spread them on the pans, cut side down, one layer. Four hundred and twenty-five degrees, thirty-five minutes,",
+  "pad": 0.48
+ },
+ {
+  "sc": "S37",
+  "s": 687.302,
+  "e": 696.282,
+  "id": "c84",
+  "d": 8.98,
+  "T": 10,
+  "text": "turning them once halfway. Add the onion and chile when you turn them. Garlic in the last five minutes. It's not quite the same as the skillet, but it's close, and you can feed twelve.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S38",
+  "s": 696.282,
+  "e": 702.35,
+  "id": "c85",
+  "d": 6.068,
+  "T": 7,
+  "text": "For two. One pound of potatoes in a ten-inch skillet. One tablespoon of water. The rest the same.",
+  "pad": 0.93
+ },
+ {
+  "sc": "S39",
+  "s": 702.35,
+  "e": 709.83,
+  "id": "c86",
+  "d": 7.48,
+  "T": 8,
+  "text": "And outside, on the fire. Same skillet, right on the grate over a medium bed of coals. Lid on for twelve. Lid off.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S39",
+  "s": 709.83,
+  "e": 718.95,
+  "id": "c87",
+  "d": 9.12,
+  "T": 10,
+  "text": "The only difference is you have to move the pan around a little on the grate, because a fire is never even. Hotter on one side. That's it. We made these at every branding.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S39",
+  "s": 718.95,
+  "e": 722.89,
+  "id": "c88",
+  "d": 3.94,
+  "T": 5,
+  "text": "Eggs on one side of the fire, potatoes on the other, coffee in the middle.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S40",
+  "s": 722.89,
+  "e": 734.25,
+  "id": "c89",
+  "d": 11.36,
+  "T": 12,
+  "text": "A couple of questions. Can I use a nonstick pan? Yes, and they won't stick. But you won't get the same deep crust, because nonstick doesn't hold heat like iron does. Turn the heat up a little.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S40",
+  "s": 734.25,
+  "e": 745.29,
+  "id": "c90",
+  "d": 11.04,
+  "T": 12,
+  "text": "What about sweet potatoes? Yes. Same method. They cook a little faster, check them at eight minutes with the lid, and watch them closely once the lid comes off, because the sugar in them browns fast.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S40",
+  "s": 745.29,
+  "e": 756.91,
+  "id": "c91",
+  "d": 11.62,
+  "T": 12,
+  "text": "Can I do this with big chunks of russet? Yes, cut them in one-inch cubes, and give them fifteen minutes with the lid instead of twelve. They'll fall apart a little more. That's fine, the broken bits get extra crispy.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S40",
+  "s": 756.91,
+  "e": 767.351,
+  "id": "c92",
+  "d": 10.441,
+  "T": 11,
+  "text": "Do I need cast iron? You need a heavy pan with a lid. Cast iron is best. A heavy stainless pan works. A thin, cheap pan will burn the bottoms before the insides cook.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S40",
+  "s": 767.351,
+  "e": 772.051,
+  "id": "c93",
+  "d": 4.7,
+  "T": 5,
+  "text": "If that's all you have, turn the heat down a notch and add two extra minutes with the lid.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S41",
+  "s": 772.051,
+  "e": 782.131,
+  "id": "c94",
+  "d": 10.08,
+  "T": 11,
+  "text": "Can I make them ahead? Yes, and this is a good trick for Thanksgiving, or any day you've got a lot going on. Do the first step, the fat, the water and the lid, twelve minutes.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S41",
+  "s": 782.131,
+  "e": 793.354,
+  "id": "c95",
+  "d": 11.223,
+  "T": 12,
+  "text": "Then take them out and spread them on a plate to cool. Cover them and put them in the fridge. Up to a day ahead. When it's time to eat, heat the skillet with a tablespoon of fresh fat, put them back in cut side down,",
+  "pad": 0.78
+ },
+ {
+  "sc": "S41",
+  "s": 793.354,
+  "e": 804.154,
+  "id": "c96",
+  "d": 10.8,
+  "T": 11,
+  "text": "and fry them eight to ten minutes until they're golden. Then the onion and the chile. Dinner is on the table twenty minutes later, and the potatoes taste like you started them from scratch. What about frozen potatoes,",
+  "pad": 0.2
+ },
+ {
+  "sc": "S41",
+  "s": 804.154,
+  "e": 813.914,
+  "id": "c97",
+  "d": 9.76,
+  "T": 10,
+  "text": "the bags of diced potatoes? They work in a pinch. Skip the water and the lid, they're already cooked. Put them straight in the hot fat, one layer, and leave them alone until they brown.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S41",
+  "s": 813.914,
+  "e": 820.668,
+  "id": "c98",
+  "d": 6.754,
+  "T": 7,
+  "text": "They'll never taste like fresh, but on a busy morning, nobody's going to complain. Why not just bake them? You can.",
+  "pad": 0.25
+ },
+ {
+  "sc": "S41",
+  "s": 820.668,
+  "e": 832.108,
+  "id": "c99",
+  "d": 11.44,
+  "T": 12,
+  "text": "Baked potatoes are good. But a baked potato takes an hour, and it doesn't get that fried crust. This takes thirty minutes on the stove and gives you both. Creamy like a baked potato, crisp like a french fry.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S42",
+  "s": 832.108,
+  "e": 840.888,
+  "id": "c100",
+  "d": 8.78,
+  "T": 9,
+  "text": "I'll tell you my favorite memory of these. Branding day, in the spring. We'd be up at four in the morning. Still dark, cold, you can see your breath.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S42",
+  "s": 840.888,
+  "e": 852.33,
+  "id": "c101",
+  "d": 11.442,
+  "T": 12,
+  "text": "I'd have three skillets of potatoes going on the fire, and the coffee pot, and a skillet of eggs, and a stack of tortillas wrapped in a towel to keep them warm. And the men would come out of the bunkhouse one at a time, half asleep,",
+  "pad": 0.56
+ },
+ {
+  "sc": "S42",
+  "s": 852.33,
+  "e": 860.97,
+  "id": "c102",
+  "d": 8.64,
+  "T": 9,
+  "text": "and stand around the fire holding their hands out to it. And nobody said much. They'd fill a tortilla with potatoes and eggs, pour a cup of coffee, and eat standing up.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S42",
+  "s": 860.97,
+  "e": 872.47,
+  "id": "c103",
+  "d": 11.5,
+  "T": 12,
+  "text": "Then the sun would come up over the hill, and they'd get on their horses and go. Twenty minutes, and the skillets were empty. Those are the best meals I ever cooked. Nobody said thank you. They didn't have to. They cleaned the pans.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S43",
+  "s": 872.47,
+  "e": 880.203,
+  "id": "c104",
+  "d": 7.733,
+  "T": 8,
+  "text": "A safety thing about potatoes, because nobody tells people anymore. If you see green on a potato skin, that's from the potato sitting in the light.",
+  "pad": 0.27
+ },
+ {
+  "sc": "S43",
+  "s": 880.203,
+  "e": 888.503,
+  "id": "c105",
+  "d": 8.3,
+  "T": 9,
+  "text": "The green part can have a natural bitter stuff in it that'll give you a stomachache. Cut away all the green, and any eyes or sprouts, and be generous about it.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S43",
+  "s": 888.503,
+  "e": 897.303,
+  "id": "c106",
+  "d": 8.8,
+  "T": 9,
+  "text": "If the potato is green all over, or it tastes bitter when you cook it, throw it out. That's why you keep them in a dark place, in a paper bag. Light makes them green.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S44",
+  "s": 897.303,
+  "e": 905.408,
+  "id": "c107",
+  "d": 8.105,
+  "T": 9,
+  "text": "And sweet potatoes. People ask me if this works. It does, with one change. Sweet potatoes have a lot of sugar, so they burn faster.",
+  "pad": 0.89
+ },
+ {
+  "sc": "S44",
+  "s": 905.408,
+  "e": 912.868,
+  "id": "c108",
+  "d": 7.46,
+  "T": 8,
+  "text": "Use medium heat instead of medium-high when you take the lid off, and turn them sooner. Cut them in chunks about the same size as the little potatoes.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S44",
+  "s": 912.868,
+  "e": 919.308,
+  "id": "c109",
+  "d": 6.44,
+  "T": 7,
+  "text": "Same water, same lid, about the same time. With a little chili powder and salt on them at the end, they're good with pork.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S45",
+  "s": 919.308,
+  "e": 927.648,
+  "id": "c110",
+  "d": 8.34,
+  "T": 9,
+  "text": "I'll tell you about the morning I ran out of time. Spring roundup, nineteen ninety-six, forty men, and I overslept. The only time in forty years.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S45",
+  "s": 927.648,
+  "e": 936.168,
+  "id": "c111",
+  "d": 8.52,
+  "T": 9,
+  "text": "Don Ernesto was getting old by then and he was supposed to wake me, but he overslept, too. We had an hour before the men came in. Twenty pounds of potatoes,",
+  "pad": 0.48
+ },
+ {
+  "sc": "S45",
+  "s": 936.168,
+  "e": 947.811,
+  "id": "c112",
+  "d": 11.643,
+  "T": 12,
+  "text": "raw. If I'd boiled them, it would have taken most of that hour just to get the water hot. Instead I put four skillets on the stove, cut the potatoes in half, fat, water, lids. Twenty-five minutes.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S45",
+  "s": 947.811,
+  "e": 953.611,
+  "id": "c113",
+  "d": 5.8,
+  "T": 6,
+  "text": "The men walked in, the potatoes were golden, the eggs were going, and the coffee was on. Nobody knew.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S45",
+  "s": 953.611,
+  "e": 960.731,
+  "id": "c114",
+  "d": 7.12,
+  "T": 8,
+  "text": "Don Ernesto looked at me across the kitchen and just nodded. That's the day I knew this method was faster than boiling, not just better.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S46",
+  "s": 960.731,
+  "e": 971.005,
+  "id": "c115",
+  "d": 10.274,
+  "T": 11,
+  "text": "Some cooks will tell you to soak cut potatoes in cold water first, to get the starch off. That's for French fries, in a deep fryer. For this, don't soak them. You want that starch on the cut side.",
+  "pad": 0.73
+ },
+ {
+  "sc": "S46",
+  "s": 971.005,
+  "e": 976.305,
+  "id": "c116",
+  "d": 5.3,
+  "T": 6,
+  "text": "It's what makes the crust. Cut them, pat the cut side dry on a towel, and straight into the pan.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S47",
+  "s": 976.305,
+  "e": 986.705,
+  "id": "c117",
+  "d": 10.4,
+  "T": 11,
+  "text": "Can you freeze them? Raw, no. A raw potato in the freezer turns dark and mushy when it thaws. Cooked, you can, for about a month, but they lose their crust and go a little grainy.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S47",
+  "s": 986.705,
+  "e": 994.405,
+  "id": "c118",
+  "d": 7.7,
+  "T": 8,
+  "text": "They're fine chopped up in a hash with eggs. But honestly, potatoes keep for weeks in the pantry. Just cook what you need. It's thirty minutes.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S48",
+  "s": 994.405,
+  "e": 1005.144,
+  "id": "c119",
+  "d": 10.739,
+  "T": 11,
+  "text": "And what goes with them. Anything. That's the beauty of a potato. Next to the pork chops from the first video in this series, with that onion sauce over both. Next to a steak. Under a fried egg.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S48",
+  "s": 1005.144,
+  "e": 1015.064,
+  "id": "c120",
+  "d": 9.92,
+  "T": 11,
+  "text": "Next to the ribs, to wipe up the sauce. On the ranch, there were potatoes on the table at breakfast and at supper almost every day of the year, and nobody ever got tired of them.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S49",
+  "s": 1015.064,
+  "e": 1022.424,
+  "id": "c121",
+  "d": 7.36,
+  "T": 8,
+  "text": "Now, about the book. This crew book has every way we ever made potatoes, and believe me, there were a lot of potatoes.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S49",
+  "s": 1022.424,
+  "e": 1029.584,
+  "id": "c122",
+  "d": 7.16,
+  "T": 8,
+  "text": "A few years ago I put all of it, every recipe, the way we really made them, into a real book. The Vaquero's Cookbook.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S50",
+  "s": 1029.584,
+  "e": 1040.939,
+  "id": "c123",
+  "d": 11.355,
+  "T": 12,
+  "text": "These potatoes are on page forty-six. The water and the lid, the crust, the mistakes, and how to do them for two or for a crowd. And the pork chops, the beans and the ribs from the last three times,",
+  "pad": 0.64
+ },
+ {
+  "sc": "S50",
+  "s": 1040.939,
+  "e": 1046.659,
+  "id": "c124",
+  "d": 5.72,
+  "T": 6,
+  "text": "and the steak, the cabbage, the eggs. Everything from the ranch. It's twenty-seven dollars.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S50",
+  "s": 1046.659,
+  "e": 1054.019,
+  "id": "c125",
+  "d": 7.36,
+  "T": 8,
+  "text": "Every recipe from the ranch for less than one family dinner out. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S51",
+  "s": 1054.019,
+  "e": 1065.819,
+  "id": "c126",
+  "d": 11.8,
+  "T": 12,
+  "text": "That's it. Raw into the iron. A spoon of water and the lid. Then the lid comes off and the same pan crisps them. And they taste like potatoes. Next time, steak. Vaqueros didn't have grills.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S51",
+  "s": 1065.819,
+  "e": 1075.642,
+  "id": "c127",
+  "d": 9.823,
+  "T": 10,
+  "text": "They had this skillet. And I'll show you how we got a steak pink from edge to edge with a crust like a steakhouse, in a cast iron pan and a slow oven. Ándale. See you then.",
+  "pad": 0.18
+ }
+]

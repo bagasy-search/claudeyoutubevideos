@@ -1,0 +1,262 @@
+{
+ "S00": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la grasa de tocino cae sobre las papas en la sartén, chisporroteo"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio junto a la sartén con papas doradas"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio descuelga la sartén vieja"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas chicas doradas y rojas en una canasta"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas cortadas por la mitad sobre la tabla"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio seca las papas con un trapo"
+ },
+ "S07": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "manteca derritiéndose en la sartén"
+ },
+ "S08": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "papas puestas con el corte hacia abajo, en una sola capa"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "sal sobre las papas, cucharadas de agua"
+ },
+ "S10": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa baja sobre la sartén, vapor"
+ },
+ "S11": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio con taza de café junto a la ventana"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa se levanta, papas tiernas, vapor que sale"
+ },
+ "S13": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "papas friéndose sin tapa, sin tocar"
+ },
+ "S14": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cebolla en rodajas, chiles verdes, ajo laminado"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "papas dadas vuelta, lado dorado arriba"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "cebolla y chile entrando a la sartén"
+ },
+ "S17": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "ajo agregándose en los últimos minutos"
+ },
+ "S18": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio pincha una papa con un cuchillo"
+ },
+ "S19": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas servidas con cilantro picado encima"
+ },
+ "S20": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papa partida, interior cremoso, costra dorada"
+ },
+ "S21": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "dos platos: papa hervida pálida y papa de sartén dorada"
+ },
+ "S22": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papa hervida rota, aguachenta, pálida"
+ },
+ "S23": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papa de sartén partida al medio, costra pareja"
+ },
+ "S24": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty saca una papa de la sartén con los dedos"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty sopla la papa caliente"
+ },
+ "S26": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia la espátula"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas con tocino y pimentón en un bol"
+ },
+ "S29": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en la verdulería, bolsas de papas"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas sobrantes en recipiente"
+ },
+ "S31": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "papas recalentándose en sartén seca, recuperando lo crocante"
+ },
+ "S32": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "papas sobrantes con huevos revueltos y tortilla"
+ },
+ "S33": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "frasco de vidrio con mezcla de condimentos"
+ },
+ "S34": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "papas con chorizo desmenuzado dorándose"
+ },
+ "S35": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "sótano de papas, costales de arpillera"
+ },
+ "S36": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S37": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos bandejas de horno con papas"
+ },
+ "S38": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "sartén de diez pulgadas con media tanda"
+ },
+ "S39": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "sartén sobre la parrilla del fogón, Claudio con sombrero"
+ },
+ "S40": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga la espátula"
+ },
+ "S41": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas al vapor tapadas, enfriándose en una bandeja"
+ },
+ "S42": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "desayuno de la cuadrilla al amanecer, sartenes en el fuego"
+ },
+ "S43": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papa con manchas verdes, Claudio la corta con el cuchillo"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "batatas cortadas por la mitad al lado de papas"
+ },
+ "S45": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana, cuenta"
+ },
+ "S46": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas cortadas secándose sobre un trapo, un bol de agua al lado"
+ },
+ "S47": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas crudas en una bolsa en el freezer, Claudio niega"
+ },
+ "S48": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "papas de sartén al lado de un bife y chauchas"
+ },
+ "S49": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S50": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 46"
+ },
+ "S51": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, un ribeye envuelto en papel sobre la mesa"
+ }
+}
