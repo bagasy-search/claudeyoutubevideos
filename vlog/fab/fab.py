@@ -268,7 +268,9 @@ def e_clips():
          con todas las claves, cámara estática; los que lleguen antes del tope REEMPLAZAN a su foto 3D."""
     if not os.path.exists(HECHO + "imgs"): sys.exit("⛔ primero: imgs")
     P = {p["id"]: p for p in leer_planos()}; CL = R + f"public/broll/{S}"; os.makedirs(CL, exist_ok=True)
-    heroe = [i for i in P if P[i].get("cara")][:45]
+    # 2.5-flash con TODAS las claves a la vez (46, 1 envío/min c/u): primero los planos con cara, después gente haciendo, después medios
+    orden = sorted(P, key=lambda i: (not P[i].get("cara"), not P[i].get("gente"), P[i].get("tam") != "medio"))
+    heroe = [i for i in orden if P[i].get("cara") or P[i].get("gente") or P[i].get("tam") == "medio"][:int(os.environ.get("FAB_HEROE_MAX", "140"))]
     TOPE = int(os.environ.get("FAB_HEROE_MIN", "90")) * 60
     proc = None
     falt_h = [i for i in heroe if not os.path.exists(f"{CL}/{i}.agnes")]
@@ -276,7 +278,7 @@ def e_clips():
         lst = [{"nombre": i, "motion": "Static camera, the camera does not move at all. " + P[i]["mov"] + " Only ambient sound, nobody speaks."} for i in falt_h]
         W(V3 + f"{S}_i2v_heroe.json", lst); os.makedirs(R + f"public/broll/{S}_heroe", exist_ok=True)
         proc = subprocess.Popen(["node", "scripts/agnes_i2v.mjs", f"_v3/{S}_i2v_heroe.json", S, f"public/img/{S}", f"public/broll/{S}_heroe"], cwd=R,
-                                env={**ENV, "AG_MODEL": "agnes-video-2.5-flash"}, stdout=open(LOG + "clips_heroe.log", "w"), stderr=subprocess.STDOUT)
+                                env={**ENV, "AG_MODEL": "agnes-video-2.5-flash", "AGNES_INFLIGHT": "46"}, stdout=open(LOG + "clips_heroe.log", "w"), stderr=subprocess.STDOUT)
         print(f"agnes 2.5-flash: {len(lst)} planos héroe en paralelo (tope {TOPE // 60} min)", flush=True)
     import foto3d
     segs = tramos(); largo = {i: segs[P[i]["tramo"]]["n"] for i in P if "tramo" in P[i] and P[i]["tramo"] < len(segs)}
