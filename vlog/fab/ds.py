@@ -34,21 +34,25 @@ def _json(txt):
     else: s = s[s.find("{"):s.rfind("}") + 1]
     return json.loads(s)
 
-def json_call(system, user, pasada, model="deepseek-flash", max_tokens=8000):
+def json_call(system, user, pasada, model="deepseek-flash", max_tokens=16000):
     for k in range(3):
-        txt = _post({"model": model, "max_tokens": max_tokens, "temperature": 0.7, "response_format": {"type": "json_object"},
+        txt = _post({"model": model, "max_tokens": max_tokens, "temperature": 0.7, "response_format": {"type": "json_object"}, "thinking": {"type": "disabled"},
                      "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}, pasada)
         try: return _json(txt)
         except Exception:
-            if k == 2: raise SystemExit(f"⛔ {pasada}: DeepSeek no devolvió JSON válido")
+            open(D + f"ds_mal_{pasada}.txt", "w", encoding="utf8").write(txt)
+            if k == 2: raise SystemExit(f"⛔ {pasada}: DeepSeek no devolvió JSON válido (ver vlog/<slug>/ds_mal_{pasada}.txt)")
 
 def _uri(p):
     ext = "jpeg" if p.lower().endswith((".jpg", ".jpeg")) else "png"
     return f"data:image/{ext};base64," + base64.b64encode(open(p, "rb").read()).decode()
 
-def vision(prompt, imgs, pasada, max_tokens=3000):
+def vision(prompt, imgs, pasada, max_tokens=3000, pensar=False):
+    """sin razonamiento por defecto: la imagen cuesta ~800 tokens y el razonamiento ~1500 (50x más caro) y para errores grandes acierta igual"""
     content = [{"type": "image_url", "image_url": {"url": _uri(p)}} for p in imgs] + [{"type": "text", "text": prompt}]
-    txt = _post({"model": "deepseek-flash", "max_tokens": max_tokens, "temperature": 0, "messages": [{"role": "user", "content": content}]}, pasada)
+    body = {"model": "deepseek-flash", "max_tokens": max_tokens, "temperature": 0, "messages": [{"role": "user", "content": content}]}
+    if not pensar: body["thinking"] = {"type": "disabled"}
+    txt = _post(body, pasada)
     try: return _json(txt)
     except Exception: return {"_error": txt[:300]}
 
@@ -64,3 +68,9 @@ def grilla(fotos, salida, cols=3, w=640, h=360, etiquetas=None):
         S.paste(im, ((i % cols) * w, (i // cols) * h))
     S.save(salida, quality=85)
     return salida
+
+def text_call(system, user, pasada, model="deepseek-flash", max_tokens=32000, pensar=True):
+    body = {"model": model, "max_tokens": max_tokens, "temperature": 0.8,
+            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
+    if not pensar: body["thinking"] = {"type": "disabled"}
+    return _post(body, pasada)

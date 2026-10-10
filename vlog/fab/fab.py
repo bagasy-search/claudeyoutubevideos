@@ -24,8 +24,8 @@ from comun import R, S, D, V3, FPS, J, W, dur, frames, nw, at, mapear, cortes, p
 LOG = D + "logs/"; HECHO = D + ".hecho/"
 os.makedirs(LOG, exist_ok=True); os.makedirs(HECHO, exist_ok=True)
 ENV = {**os.environ, "SLUG": S, "PYTHONUTF8": "1", "AGNES_KEYS_OTRA_PC": os.environ.get("AGNES_KEYS_OTRA_PC", ",")}
-FONDO = {"arte", "voz", "planos", "imgs", "clips", "avatar", "montaje", "editor", "render"}
-ORDEN = ["guion", "arte", "voz", "avatar", "planos", "imgs", "clips", "armar", "montaje", "ov", "editor", "mix", "render"]
+FONDO = {"guionista", "arte", "voz", "planos", "imgs", "clips", "avatar", "montaje", "editor", "render"}
+ORDEN = ["guionista", "guion", "arte", "voz", "avatar", "planos", "imgs", "clips", "armar", "montaje", "ov", "editor", "mix", "render"]
 CLIPF = 121
 
 def sh(cmd, check=True, quiet=False, env=None, **kw):
@@ -74,6 +74,14 @@ def e_guion():
     for p in prob: print("⛔", p)
     if prob: hecho("guion", False); sys.exit(2)
     borrar_desde("guion"); hecho("guion", True, f"{ch} car"); print("✓ guion OK → siguiente: python vlog/fab/fab.py voz")
+
+# ════════════════════════════════════════ guionista ════════════════════════════════════════
+def e_guionista():
+    if not os.path.exists(D + "brief.md"): sys.exit("⛔ falta vlog/<slug>/brief.md")
+    import equipo
+    n, p = equipo.guion()
+    print(f"FIN guionista: guion.txt de {n} caracteres (borrador puntuado {p}/10 por el crítico y reescrito) → siguiente: python vlog/fab/fab.py guion")
+    hecho("guionista", True)
 
 # ════════════════════════════════════════ arte ════════════════════════════════════════
 def e_arte():
@@ -198,6 +206,10 @@ def e_planos():
         for k, x in enumerate(P): x["id"] = f"p{k + 1:03d}"
         W(D + "planos.json", P)
     P = leer_planos(); errs, avisos = [], []
+    for p in P:   # arreglos automáticos de lo que escribe el director de fotografía (no vale la pena frenar por esto)
+        p["foto"] = re.sub(r"\s{2,}", " ", RUIDO.sub("", str(p.get("foto", "")))).strip(" ,.") + "."
+        if len(str(p.get("mov", ""))) < 20: p["mov"] = str(p.get("mov", "")).rstrip(". ") + ", slowly and clearly visible"
+    W(D + "planos.json", P)
     ids = [p.get("id") for p in P]
     dup = sorted({i for i in ids if ids.count(i) > 1})
     if dup: errs.append(f"ids repetidos: {dup[:10]}")
@@ -676,7 +688,7 @@ def e_estado():
     sig = next((e for e in ORDEN if not os.path.exists(HECHO + e)), None)
     print("siguiente:", f"python vlog/fab/fab.py {sig}" if sig else "nada: el video está terminado")
 
-ETAPAS = {"arte": e_arte, "montaje": e_montaje, "guion": e_guion, "voz": e_voz, "planos": e_planos, "imgs": e_imgs, "clips": e_clips, "armar": e_armar, "avatar": e_avatar,
+ETAPAS = {"guionista": e_guionista, "arte": e_arte, "montaje": e_montaje, "guion": e_guion, "voz": e_voz, "planos": e_planos, "imgs": e_imgs, "clips": e_clips, "armar": e_armar, "avatar": e_avatar,
           "ov": e_ov, "editor": e_editor, "mix": e_mix, "render": e_render, "estado": e_estado, "sonidos": e_sonidos}
 if __name__ == "__main__":
     a = sys.argv[1:] or ["estado"]

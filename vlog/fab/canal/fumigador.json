@@ -2,20 +2,41 @@
  "canal": "Claudio el Fumigador",
  "serie": "La casa de los Ramírez",
  "dir_refs": "D:/rtmp/fab/canal/fumigador",
- "estilo": "Ordinary candid frame from a phone video of a real modest one-story Latin American family house; mundane light; lived-in, slightly worn objects; nobody poses.",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by a family member with a phone at eye level, in the middle of the action: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a lamp or the daylight from the window or door), automatic white balance a bit off, slight phone noise, ordinary worn objects, people caught mid-movement and not posing, no beautiful composition.",
  "personajes": {
-  "claudio": {"nombre": "Claudio", "desc": "a 58-year-old Latin American pest-control technician with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned weathered skin, wearing a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead", "ref": "public/ref_{slug}.png", "cara": true},
-  "lucia": {"nombre": "Lucía", "desc": "Lucía, a 38-year-old Latin American woman with long dark wavy hair in a low ponytail, wearing a gray t-shirt and jeans"},
-  "jorge": {"nombre": "Jorge", "desc": "Jorge, a stocky 40-year-old Latin American man with short black hair and a trimmed mustache, wearing a navy polo shirt"},
-  "sofia": {"nombre": "Sofía", "desc": "Sofía, a 9-year-old Latin American girl with two dark braids, wearing a yellow t-shirt"},
-  "mateo": {"nombre": "Mateo", "desc": "Mateo, a 6-year-old Latin American boy with short messy black hair, wearing striped pajamas"},
-  "bruno": {"nombre": "Bruno", "desc": "Bruno, a medium-size short-haired caramel-colored mixed-breed dog with a green collar"}
+  "claudio": {
+   "nombre": "Claudio",
+   "desc": "a 58-year-old Latin American pest-control technician with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned weathered skin, wearing a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead",
+   "ref": "public/ref_{slug}.png",
+   "cara": true
+  },
+  "lucia": {
+   "nombre": "Lucía",
+   "desc": "Lucía, a 38-year-old Latin American woman with long dark wavy hair in a low ponytail, wearing a gray t-shirt and jeans"
+  },
+  "jorge": {
+   "nombre": "Jorge",
+   "desc": "Jorge, a stocky 40-year-old Latin American man with short black hair and a trimmed mustache, wearing a navy polo shirt"
+  },
+  "sofia": {
+   "nombre": "Sofía",
+   "desc": "Sofía, a 9-year-old Latin American girl with two dark braids, wearing a yellow t-shirt"
+  },
+  "mateo": {
+   "nombre": "Mateo",
+   "desc": "Mateo, a 6-year-old Latin American boy with short messy black hair, wearing striped pajamas"
+  },
+  "bruno": {
+   "nombre": "Bruno",
+   "desc": "Bruno, a medium-size short-haired caramel-colored mixed-breed dog with a green collar"
+  }
  },
  "lugares_fijos": {
   "cocina": "the kitchen of the Ramírez house: white square wall tiles with a blue-and-white patterned tile strip at eye level, wooden kitchen cabinets, a speckled gray granite countertop, a stainless steel double sink under a window with white iron bars, an older white refrigerator covered with children's crayon drawings held by magnets, a worn beige ceramic floor",
   "patio": "the small cement back patio of the Ramírez house: a stained cement floor, a low white-painted wall with peeling paint and an open drain channel along its base, a row of terracotta flower pots with saucers along the wall, a black plastic water tank on a rusty metal stand in one corner, a green garden hose, the back of the one-story house with a white door and a barred window",
   "cuarto_chicos": "the children's bedroom of the Ramírez house: two narrow single beds with striped woven blankets, pale blue walls, a window with white iron bars and a thin curtain, a small wooden nightstand with a lamp, a few toys on the floor, a beige ceramic floor",
-  "ferreteria": "a small neighborhood hardware store in a Latin American town: a glass counter with screws and small items inside, wooden shelves behind full of jars, rolls of mesh and boxes, a middle-aged shopkeeper behind the counter"
+  "ferreteria": "a small neighborhood hardware store in a Latin American town: a glass counter with screws and small items inside, wooden shelves behind full of jars, rolls of mesh and boxes"
  },
- "identidad": "Preserve the exact identity, face, curly black hair going gray, gray-stubbled beard, age and skin tone of the man in the reference photograph. He wears a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead."
+ "identidad": "Preserve the exact identity, face, curly black hair going gray, gray-stubbled beard, age and skin tone of the man in the reference photograph. He wears a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead.",
+ "cara_crop": "D:/rtmp/fab/canal/fumigador/cara_128x192.png"
 }
