@@ -9,7 +9,8 @@
 //   · el endpoint del batch tiene que coincidir con TODAS las filas: se arma un batch por endpoint.
 import fs from "node:fs";
 import path from "node:path";
-import { env } from "./env.mjs";
+import { spawnSync } from "node:child_process";
+import { env, ROOT } from "./env.mjs";
 import { BlockedError, esSinCredito } from "./budget.mjs";
 
 const API = "https://api.openai.com/v1";
@@ -35,6 +36,13 @@ export async function submitBatch({ items, outDir, size = "1088x608", quality = 
   const endpoint = conRef.length ? "/v1/images/edits" : "/v1/images/generations";
   const pend = items.filter((it) => !["png", "jpg"].some((e) => fs.existsSync(path.join(outDir, `${it.name}.${e}`))));
   if (!pend.length) return { batchId: null, endpoint, n: 0, yaEstaban: items.length };
+  // ⛔⛔⛔ REGLA OBLIGATORIA DEL CREADOR (8-oct-2026): TODA imagen SIN CARA (sin `ref`) va a agnes-image, GRATIS.
+  //    gpt-image-2 queda SÓLO para los planos con la cara del presentador (/edits + crop de cara 128x192).
+  //    Medido el 8-oct: 3.536 imágenes sin cara por día = ~US$6,7 diarios en OpenAI; con agnes = US$0.
+  //    Se genera acá mismo (síncrono) y se devuelve un id "agnes:" que pollBatch/fetchBatch entienden,
+  //    así ningún llamador tiene que cambiar. No hay escape a gpt: si agnes falla, la imagen queda en
+  //    `fallidos` y se reintenta re-corriendo (los PNG ya hechos se saltean).
+  if (!conRef.length) return agnesSinCara({ pend, outDir, size, total: items.length });
   const cache = new Map();
   const lines = pend.map((it) => {
     const body = { model, prompt: it.prompt, size, quality, n: 1 };
@@ -53,13 +61,49 @@ export async function submitBatch({ items, outDir, size = "1088x608", quality = 
   return { batchId: b.id, endpoint, n: pend.length, yaEstaban: items.length - pend.length };
 }
 
+// ── agnes-image para las imágenes sin cara (usa el generador compartido scripts/agnes_img.mjs)
+const AGNES_DIR = path.join(ROOT, "_agnes_sincara");
+function agnesSinCara({ pend, outDir, size, total }) {
+  fs.mkdirSync(AGNES_DIR, { recursive: true });
+  fs.mkdirSync(outDir, { recursive: true });
+  const id = `agnes:${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+  const lista = path.join(AGNES_DIR, id.slice(6) + ".json");
+  fs.writeFileSync(lista, JSON.stringify(pend.map(({ name, prompt }) => ({ name, prompt })), null, 1));
+  // ⭐ (9-oct-2026) agnes_img_pro = prompt → JSON hiperdetallado → agnes-image-2.5 → juez de visión en 2 modos →
+  //    regenera las rechazadas → posproceso de cámara común. Las que no pasan en N rondas quedan en `fallidos`
+  //    y la fase las vuelve a pedir al re-correr (nunca pasa una foto con defecto). FACTORY_AGNES_SIMPLE=1 = el
+  //    generador viejo (agnes_img.mjs, sin JSON ni juez). Con cara sigue gpt-image (decisión del creador 9-oct:
+  //    con referencia agnes sale menos real).
+  const simple = env("FACTORY_AGNES_SIMPLE") === "1";
+  console.log(`🆓 ${pend.length} imágenes SIN cara → agnes ${simple ? "(simple)" : "PRO: JSON + juez + regenerar"} (gratis). gpt-image sólo para planos con cara.`);
+  const r = simple
+    ? spawnSync(process.execPath, [path.join(ROOT, "scripts", "agnes_img.mjs"), lista, outDir, "--conc", String(env("AGNES_IMG_CONC") || 8)],
+      { cwd: ROOT, stdio: "inherit", env: { ...process.env, AGNES_IMG_SIZE: process.env.AGNES_IMG_SIZE || size } })
+    : spawnSync(process.execPath, [path.join(ROOT, "scripts", "agnes_img_pro.mjs"), lista, outDir, "--conc", String(env("AGNES_IMG_CONC") || 9),
+      "--rondas", String(env("AGNES_PRO_RONDAS") || 4), "--work", path.join(AGNES_DIR, id.slice(6))],
+      { cwd: ROOT, stdio: "inherit", env: { ...process.env, AGNES_IMG_SIZE: process.env.AGNES_IMG_SIZE || size } });
+  const fallidos = pend.filter((it) => !fs.existsSync(path.join(outDir, `${it.name}.png`))).map((it) => ({ name: it.name, error: `agnes no la generó (exit ${r.status})` }));
+  fs.writeFileSync(lista.replace(/\.json$/, ".result.json"), JSON.stringify({ outDir, n: pend.length, ok: pend.length - fallidos.length, fail: fallidos.length, fallidos }, null, 1));
+  return { batchId: id, endpoint: "agnes-image", n: pend.length, yaEstaban: total - pend.length };
+}
+const agnesResult = (batchId) => JSON.parse(fs.readFileSync(path.join(AGNES_DIR, batchId.slice(6) + ".result.json"), "utf8"));
+
 export async function pollBatch(batchId) {
+  if (String(batchId).startsWith("agnes:")) {
+    const r = agnesResult(batchId);
+    return { status: "completed", counts: { total: r.n, completed: r.ok, failed: r.fail }, outputFileId: null, errorFileId: null, errors: null };
+  }
   const b = await api(`/batches/${batchId}`);
   return { status: b.status, counts: b.request_counts, outputFileId: b.output_file_id, errorFileId: b.error_file_id, errors: b.errors };
 }
 
 /** Baja resultados en STREAM. → { ok, fail, fallidos: [{name, error}] } */
 export async function fetchBatch({ batchId, outDir, onLog = () => {} }) {
+  if (String(batchId).startsWith("agnes:")) {
+    const r = agnesResult(batchId);
+    for (const f of r.fallidos) onLog(`  ✗ ${f.name} ${f.error}`);
+    return { ok: r.ok, fail: r.fail, fallidos: r.fallidos };
+  }
   const b = await pollBatch(batchId);
   if (b.status !== "completed") throw new Error(`batch ${batchId} todavía ${b.status}`);
   fs.mkdirSync(outDir, { recursive: true });

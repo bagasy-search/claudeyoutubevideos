@@ -81,7 +81,7 @@ const generate = async (prompt, size, bg) => {
   const body = { model: MODEL, prompt, size, quality: QUALITY, n: 1 };
   if (bg) body.background = bg;
   const res = await fetchRetry(
-    "https://api.openai.com/v1/images/generations",
+    (() => { throw new Error("⛔ REGLA 8-oct-2026: imágenes SIN cara → agnes-image GRATIS. Usá scripts/gptimg.mjs (desvía solo las sin ref a agnes) o scripts/agnes_img.mjs."); })(),
     {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${KEY}` },

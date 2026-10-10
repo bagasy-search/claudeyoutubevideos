@@ -75,8 +75,8 @@ console.log(`compuerta: ${items.length} items medidos · ${new Set(items.flatMap
 if (problemas.length) { console.error("⛔ no mando nada:\n  · " + problemas.join("\n  · ")); process.exit(1); }
 
 const conRef = items.filter((i) => i.ref), sinRef = items.filter((i) => !i.ref);
-console.log(`items: ${items.length} · con presentador (/edits): ${conRef.length} · sin presentador (/generations): ${sinRef.length}`);
-console.log(`costo estimado con las 4 palancas: US$${(conRef.length * 0.00207 + sinRef.length * 0.00169).toFixed(3)}`);
+console.log(`items: ${items.length} · con presentador (/edits gpt-image): ${conRef.length} · sin presentador (agnes-image GRATIS, regla 8-oct): ${sinRef.length}`);
+console.log(`costo estimado: US$${(conRef.length * 0.00207).toFixed(3)} (sólo las de cara; las sin cara van a agnes = US$0)`);
 
 // ── estado reanudable
 const ST = path.join(outDir, "_gptimg_batches.json");

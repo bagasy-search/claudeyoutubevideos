@@ -89,6 +89,6 @@ export default {
     const faltan = todos.filter(faltaJpg).map((i) => i.name);
     if (faltan.length) log(`faltan: ${faltan.slice(0, 20).join(", ")} (re-correr la fase las vuelve a pedir)`);
     assertMeasured("imagenesHechas", hechas, { min: todos.length, total: todos.length, log });
-    return { planos: todos.length, conCara: listas.edits.length, sinCara: listas.gens.length, hechas, usdEstimado: env("FACTORY_IMG_MOTOR") === "agnes" ? 0 : +(listas.edits.length * 0.00207 + listas.gens.length * 0.00169).toFixed(2) };   // agnes no cobra: el estimado de gpt-image mentía
+    return { planos: todos.length, conCara: listas.edits.length, sinCara: listas.gens.length, hechas, usdEstimado: env("FACTORY_IMG_MOTOR") === "agnes" ? 0 : +(listas.edits.length * 0.00207).toFixed(2) };   // agnes no cobra: el estimado de gpt-image mentía
   },
 };
