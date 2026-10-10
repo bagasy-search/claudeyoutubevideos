@@ -43,6 +43,28 @@ shots.forEach((s, i) => {
   for (const o of [s.ov, ...(s.ovs || [])].filter(Boolean)) ovs.push({ from: f0, dur: c.dur, name: o.c, props: o.props });
   cues.push(c);
 });
+// ⛔ 9-oct: InfiniteTalk (RunPod público) DEGRADA el reel largo: desde ~400 s del reel el avatar sale con mosaico/flecos de color
+// (medido en fhmice, reel 513 s). Las ventanas de avatar que pasan AV_MAX_OFF segundos de reel van con la foto del tema más
+// cercana (antes/después, Ken-Burns) y la voz sigue igual. Default 240 s en --final; AV_MAX_OFF=0 lo apaga.
+const AVMAX = Number(process.env.AV_MAX_OFF ?? (FINAL ? 240 : 0));  // medido: limpio hasta ~180 s, visible 240, feo 280+
+if (AVMAX > 0) {
+  const imgAt = (i, dir) => { for (let j = i + dir; j >= 0 && j < cues.length; j += dir) if (cues[j].k === "img" && cues[j].img && !cues[j].avcut) return cues[j].img; return null; };
+  let n = 0;
+  for (let i = 0; i < cues.length; i++) {
+    const c = cues[i];
+    if (c.k !== "av" || (c.sf + c.dur) / FPS <= AVMAX) continue;
+    const a = imgAt(i, -1), b = imgAt(i, 1) || a;
+    if (!a) continue;
+    n++;
+    if (c.dur > 12 * FPS && b && b !== a) {   // ventana larga: dos fotos (la de antes y la de después)
+      const h = Math.round(c.dur / 2), d = { ...c, k: "img", img: b, from: c.from + h, dur: c.dur - h, seed: c.seed + 7, avcut: 1 };
+      delete d.src; delete d.sf;
+      Object.assign(c, { k: "img", img: a, dur: h, avcut: 1 }); delete c.src; delete c.sf;
+      cues.splice(i + 1, 0, d); i++;
+    } else { Object.assign(c, { k: "img", img: a, avcut: 1 }); delete c.src; delete c.sf; }
+  }
+  if (n) console.log(`avatar degradado: ${n} ventanas pasadas los ${AVMAX} s de reel → foto del tema`);
+}
 const S = (at, file, vol, dur = 45) => sfx.push({ from: Math.max(0, F(at)), dur, src: "sfx/" + file, vol });
 cues.forEach((c, i) => {
   const t = c.from / FPS;

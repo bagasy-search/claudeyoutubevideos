@@ -676,5 +676,8 @@ try { sh(`node "${fileURLToPath(new URL("esperar_run.mjs", import.meta.url))}" $
 // extraer el mp4 (~1.5 GB). Override con env VIDEO_OUT si hace falta.
 const DEST = process.env.VIDEO_OUT || "D:\\videosdeclaude";
 fs.mkdirSync(DEST, { recursive: true });
-sh(`gh run download ${runId} -n final-${slug} -D "${DEST}"`);
-console.log(`\n✅ listo → ${DEST}\\${slug}.mp4`);
+// 9-oct: la bajada local del crudo es opcional (la entrega la codifica encfin desde chunks-<slug>); un corte de red acá NO
+// debe tirar abajo un render que terminó bien → con FARM_SKIP_DOWNLOAD no baja, y si falla avisa y sale 0.
+if (process.env.FARM_SKIP_DOWNLOAD) { console.log("\n✅ render OK (sin bajar el crudo: FARM_SKIP_DOWNLOAD)"); process.exit(0); }
+try { sh(`gh run download ${runId} -n final-${slug} -D "${DEST}"`); console.log(`\n✅ listo → ${DEST}\\${slug}.mp4`); }
+catch { console.log("\n⚠️ render OK pero no pude bajar el crudo (red); sigo: la entrega sale de chunks-" + slug); }
