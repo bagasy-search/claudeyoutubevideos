@@ -1,0 +1,89 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/",
+ "face": "C:/Users/bauti/Downloads/plan_claudio_cocina/face_hd.png",
+ "k0_from": "D:/rtmp/cc/masters/out/M2_mesa.png",
+ "extra": {
+  "look": "D:/rtmp/cc/masters/out/claudio_look.png",
+  "chuy": "D:/rtmp/cc/masters/out/don_chuy.png"
+ },
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a kitchen helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, correctly exposed, soft morning daylight from a side window. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, natural saturation, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; the cotton shirt and apron with real creases; real food with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a kitchen helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, natural colors, mild sensor noise; real skin and natural working hands; real food, steam rising up; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "look"
+   ],
+   "prompt": "The first image is the place; the second image shows Claudio and exactly how he is dressed. In the kitchen of an old small family-run fonda in a Mexican town: whitewashed walls, blue-and-white talavera tiles, copper and clay pots hanging from hooks, at the thick worn wooden work table with knife marks in the fonda kitchen: a wooden cutting board, small clay bowls with coarse salt and dried red chiles, white onions and heads of garlic, the thick hardcover recipe notebook with grease stains and bent corners; a strip of blue-and-white talavera tiles on the whitewashed wall behind. Claudio, a Latin American cook about 50 with dark curly hair streaked with gray and a short graying beard, warm brown eyes, tanned brown skin with laugh lines, working hands, wearing a light sky-blue long-sleeve cotton shirt with the sleeves rolled to the elbow, a white cotton apron with old faded chile and grease stains, and a red-and-white checkered kitchen towel over his RIGHT shoulder stands at the thick worn wooden work table; on the table a clear plastic one-kilo bag of dry speckled beige-and-brown pinto beans, half a white onion, three garlic cloves, a small clay bowl of white lard and a sprig of green epazote, laid out in a row; he talks to the camera. Seen from a kitchen helper's handheld camera at eye level, framed from the knees or waist up, the place exactly as in the first image. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his hand on the onion and garlic. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. four fingers held up over the ingredients. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his thumb and finger almost touching, a small amount, he looks at the camera. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c77",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/aud/c77.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/aud/c77_gen.wav",
+   "T": 12,
+   "text": "Ahora la cuenta, que es lo que más me preguntan. La bolsa de un kilo de frijol pinto en el súper anda en unos tres dólares. La cebolla y el ajo, unos cincuenta centavos.",
+   "action": "Claudio, the man whose face is the third reference image, taps the bag of beans and then the onion and garlic, counting. soft morning daylight from a side window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c78",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/aud/c78.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/aud/c78_gen.wav",
+   "T": 11,
+   "text": "Las dos cucharadas de manteca, unos quince centavos. El epazote o el laurel, unos cincuenta centavos. Son como cuatro dólares con quince por toda la olla.",
+   "action": "Claudio, the man whose face is the third reference image, touches the bowl of lard and the epazote, then holds up four fingers. soft morning daylight from a side window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c79",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/aud/c79.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/aud/c79_gen.wav",
+   "T": 11,
+   "text": "Y la olla da para nueve platos bien servidos, con su caldo. O sea, menos de cincuenta centavos el plato. Cuarenta y seis centavos, para ser exactos.",
+   "action": "Claudio, the man whose face is the third reference image, counts nine on his fingers, then makes a small 'less than' gesture with thumb and finger. soft morning daylight from a side window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c77": {
+   "mode": "trunc"
+  },
+  "c78": {
+   "mode": "trunc"
+  },
+  "c79": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/costo/out.mp4"
+}

@@ -1,0 +1,189 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/",
+ "face": "C:/Users/bauti/Downloads/plan_claudio_cocina/face_hd.png",
+ "k0_from": "D:/rtmp/cc/masters/out/M3_ventana.png",
+ "extra": {
+  "look": "D:/rtmp/cc/masters/out/claudio_look.png",
+  "chuy": "D:/rtmp/cc/masters/out/don_chuy.png"
+ },
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a kitchen helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, correctly exposed, soft daylight from the window. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, natural saturation, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; the cotton shirt and apron with real creases; real food with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a kitchen helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, natural colors, mild sensor noise; real skin and natural working hands; real food, steam rising up; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "look"
+   ],
+   "prompt": "The first image is the place; the second image shows Claudio and exactly how he is dressed. In the kitchen of an old small family-run fonda in a Mexican town: whitewashed walls, blue-and-white talavera tiles, copper and clay pots hanging from hooks, by the kitchen window with a wooden frame painted blue and small plants in terracotta pots on the sill; under it a wooden shelf with glass jars of dried chiles, a braid of garlic and a black stone molcajete. Claudio, a Latin American cook about 50 with dark curly hair streaked with gray and a short graying beard, warm brown eyes, tanned brown skin with laugh lines, working hands, wearing a light sky-blue long-sleeve cotton shirt with the sleeves rolled to the elbow, a white cotton apron with old faded chile and grease stains, and a red-and-white checkered kitchen towel over his RIGHT shoulder stands by the kitchen window; on the windowsill a small clay jarrito of coffee; he talks to the camera. Seen from a kitchen helper's handheld camera at eye level, framed from the knees or waist up, the place exactly as in the first image. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. one finger raised, a small nod. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. a kind smile, shaking his head. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. two fingers raised. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. three fingers raised. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. four fingers raised. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. five fingers raised. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. six fingers raised with both hands. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his finger pointing at the jarrito, smiling. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c35",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c35.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c35_gen.wav",
+   "T": 11,
+   "text": "Y ahora las preguntas que me hacen siempre. Primera: ¿lo puedo hacer en la cafetera? Puedes poner la canela y el piloncillo en el agua de la cafetera, pero no es lo mismo.",
+   "action": "Claudio, the man whose face is the third reference image, raises one finger, then shrugs with a small nod. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c36",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c36.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c36_gen.wav",
+   "T": 11,
+   "text": "La canela necesita hervor para soltar. Mejor hierves el agua con todo, y luego usas esa agua en tu prensa o en tu cafetera. Segunda: ¿con café soluble?",
+   "action": "Claudio, the man whose face is the third reference image, shakes his head slowly with a kind smile. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c37",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c37.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c37_gen.wav",
+   "T": 12,
+   "text": "Hay quien lo hace, hierve el agua con el piloncillo y la canela y al final le pone el soluble. Sale una bebida rica y caliente. Pero el café de olla de verdad es con café molido.",
+   "action": "Claudio, the man whose face is the third reference image, raises two fingers. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c38",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c38.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c38_gen.wav",
+   "T": 10,
+   "text": "Tercera: ¿lo puedo recalentar? Sí, pero que no hierva. A fuego bajo, hasta que eche vapor, y lo apagas. Si hierve, se amarga.",
+   "action": "Claudio, the man whose face is the third reference image, raises three fingers and nods. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c39",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c39.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c39_gen.wav",
+   "T": 10,
+   "text": "Y cuarta: ¿con descafeinado? Claro. El truco es el mismo. En la fonda tenemos una olla chica de descafeinado para los que vienen en la tarde.",
+   "action": "Claudio, the man whose face is the third reference image, raises four fingers. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c40",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c40.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c40_gen.wav",
+   "T": 12,
+   "text": "Quinta: ¿puedo dejar el agua con especias lista desde la noche? Sí, y en la fonda a veces lo hacemos. Hierves el agua con todo la noche anterior, la dejas tapada, y en la mañana la",
+   "action": "Claudio, the man whose face is the third reference image, raises one open hand with five fingers. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c41",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c41.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c41_gen.wav",
+   "T": 12,
+   "text": "vuelves a hervir, apagas y echas el café. Te ahorras siete minutos en la mañana. Y sexta: ¿se les puede dar a los niños? Lleva cafeína como cualquier café.",
+   "action": "Claudio, the man whose face is the third reference image, raises both hands with six fingers up. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c42",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c42.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/aud/c42_gen.wav",
+   "T": 6,
+   "text": "En la fonda, a los niños se les da el de leche, con más leche que café, o el descafeinado.",
+   "action": "Claudio, the man whose face is the third reference image, points at the jarrito on the windowsill and smiles. soft daylight from the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c35": {
+   "mode": "trunc"
+  },
+  "c36": {
+   "mode": "trunc"
+  },
+  "c37": {
+   "mode": "trunc"
+  },
+  "c38": {
+   "mode": "trunc"
+  },
+  "c39": {
+   "mode": "trunc"
+  },
+  "c40": {
+   "mode": "trunc"
+  },
+  "c41": {
+   "mode": "trunc"
+  },
+  "c42": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccafe/preguntas/out.mp4"
+}

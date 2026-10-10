@@ -1,4 +1,4 @@
-// Claudio el FUMIGADOR (rama fuagua-render y sus hijas): verde fumigador del Manual (#2E8B3E) + caqui de la camisa + amarillo de linterna. Antes: Albañil. (Antes: Conserje) (igual que el libro "El Frasco Marrón de Claudio" y la landing). Reusable por los 12 videos.
+// Claudio COCINA (rama ccfrijoles-render y sus hijas): azul talavera de los azulejos de la fonda + terracota de la olla de barro + ocre/cempasúchil. Antes: Fumigador (verde). Antes: Albañil. (Antes: Conserje) (igual que el libro "El Frasco Marrón de Claudio" y la landing). Reusable por los 12 videos.
 // Identidad de CONSERJE DE HOTEL: azul marino de la chaqueta · amarillo de guante (acento) · latón de la plaqueta de habitación
 // y del llavero · blanco de azulejo · rojo SÓLO para alertas. Fraunces (títulos, como el libro) + Oswald (rótulos) + Caveat (notas
 // a mano de Claudio). Claro y con luz de baño, nunca cine oscuro.
@@ -18,20 +18,20 @@ export const CL = {
   white: "#FBF9F4",     // blanco cálido de azulejo
   tile: "#EFE9DF",      // azulejo crema del hotel
   grout: "#D8CFC1",
-  navy: "#1F4A2C",      // verde fumigador oscuro
-  navyDeep: "#132E1C",
-  navySoft: "#D2E3D5",
-  yellow: "#F2C230",    // guante amarillo (acento)
-  yellowSoft: "#FBE7A2",
-  brass: "#A8925E",     // caqui de la camisa     // plaqueta y llavero
-  brassLight: "#D9C79A",
-  nitrile: "#2E8B3E",   // verde del Manual del Fumigador
+  navy: "#1E3A78",      // azul talavera
+  navyDeep: "#12254F",
+  navySoft: "#D6DEEF",
+  yellow: "#E9A23B",    // guante amarillo (acento)
+  yellowSoft: "#F8DDA8",
+  brass: "#B07A3A",     // caqui de la camisa     // plaqueta y llavero
+  brassLight: "#E3C49A",
+  nitrile: "#B5532E",   // terracota de la olla de barro
   red: "#D23B2E",       // SÓLO alertas
   ink: "#1A2233",
   inkSoft: "#59627A",
   brown: "#5B3416",     // la botella marrón
   slime: "#1C1A14",
-  shadow: "rgba(19,46,28,0.32)",
+  shadow: "rgba(18,37,79,0.30)",
 };
 
 export function hexA(hex: string, a: number) {

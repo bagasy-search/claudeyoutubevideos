@@ -1,0 +1,169 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/",
+ "face": "C:/Users/bauti/Downloads/plan_claudio_cocina/face_hd.png",
+ "k0_from": "D:/rtmp/cc/masters/out/M3_ventana.png",
+ "extra": {
+  "look": "D:/rtmp/cc/masters/out/claudio_look.png",
+  "chuy": "D:/rtmp/cc/masters/out/don_chuy.png"
+ },
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a kitchen helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, correctly exposed, morning daylight coming in sideways through the window. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, natural saturation, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; the cotton shirt and apron with real creases; real food with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a kitchen helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, natural colors, mild sensor noise; real skin and natural working hands; real food, steam rising up; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "look"
+   ],
+   "prompt": "The first image is the place; the second image shows Claudio and exactly how he is dressed. In the kitchen of an old small family-run fonda in a Mexican town: whitewashed walls, blue-and-white talavera tiles, copper and clay pots hanging from hooks, by the kitchen window with a wooden frame painted blue and small plants in terracotta pots on the sill; under it a wooden shelf with glass jars of dried chiles, a braid of garlic and a black stone molcajete. Claudio, a Latin American cook about 50 with dark curly hair streaked with gray and a short graying beard, warm brown eyes, tanned brown skin with laugh lines, working hands, wearing a light sky-blue long-sleeve cotton shirt with the sleeves rolled to the elbow, a white cotton apron with old faded chile and grease stains, and a red-and-white checkered kitchen towel over his RIGHT shoulder stands by the kitchen window with the blue-painted frame, talking to the camera; on the wooden shelf next to him a small clay bowl of cooked pinto beans with a fork in it. Seen from a kitchen helper's handheld camera at eye level, framed from the knees or waist up, the place exactly as in the first image. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. one finger raised, eyebrows up, half smile. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his hand on his stomach, a small shrug. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. two fingers raised, he tilts his head. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his hand tilted as if pouring, explaining. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. three fingers raised, shaking his head. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. the fork pressing mashed beans in the small clay bowl in his hands. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. the bowl on the shelf, he nods at the camera. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c60",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c60.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c60_gen.wav",
+   "T": 9,
+   "text": "Y ahora las preguntas que me hacen siempre, para que no te quedes con la duda. Primera: ¿los frijoles sin remojo dan más gases?",
+   "action": "Claudio, the man whose face is the third reference image, holds up one finger and raises his eyebrows. morning daylight coming in sideways through the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c61",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c61.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c61_gen.wav",
+   "T": 10,
+   "text": "Mira, el frijol da gases porque tiene unos azúcares que el cuerpo no digiere bien. El remojo largo y tirar el agua le quitan un poquito, pero poco.",
+   "action": "Claudio, the man whose face is the third reference image, rubs his stomach in a small circle and shrugs. morning daylight coming in sideways through the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c62",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c62.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c62_gen.wav",
+   "T": 11,
+   "text": "Lo que más ayuda es que estén bien cocidos, cremosos hasta el centro, y comerlos seguido. El estómago se acostumbra. Segunda: ¿y si me quedaron salados?",
+   "action": "Claudio, the man whose face is the third reference image, holds up two fingers. morning daylight coming in sideways through the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c63",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c63.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c63_gen.wav",
+   "T": 12,
+   "text": "Cocina un puñito de frijol aparte, sin sal, y júntalos. O agrega agua caliente sin sal y deja que se espese otra vez. No hay otro truco que sirva de verdad.",
+   "action": "Claudio, the man whose face is the third reference image, mimes pouring from a kettle with one hand, explaining. morning daylight coming in sideways through the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c64",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c64.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c64_gen.wav",
+   "T": 11,
+   "text": "Tercera: ¿la cebolla y el ajo se sacan? En la fonda no. Para cuando están los frijoles, la cebolla ya se deshizo en el caldo, y el ajo queda como mantequilla.",
+   "action": "Claudio, the man whose face is the third reference image, holds up three fingers and shakes his head 'no'. morning daylight coming in sideways through the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c65",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c65.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c65_gen.wav",
+   "T": 12,
+   "text": "Quien se encuentra un ajo, tiene suerte. Y cuarta: ¿cómo espeso el caldo si me quedó aguado? Saco una taza de frijoles, los machaco con un tenedor y los regreso a la olla.",
+   "action": "Claudio, the man whose face is the third reference image, picks up the small clay bowl and mashes a few beans with the fork. morning daylight coming in sideways through the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c66",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c66.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/aud/c66_gen.wav",
+   "T": 5,
+   "text": "Diez minutos más a fuego bajo y el caldo se pone espeso y brilloso.",
+   "action": "Claudio, the man whose face is the third reference image, puts the bowl back on the shelf and nods. morning daylight coming in sideways through the window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c60": {
+   "mode": "trunc"
+  },
+  "c61": {
+   "mode": "trunc"
+  },
+  "c62": {
+   "mode": "trunc"
+  },
+  "c63": {
+   "mode": "trunc"
+  },
+  "c64": {
+   "mode": "trunc"
+  },
+  "c65": {
+   "mode": "trunc"
+  },
+  "c66": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/preguntas/out.mp4"
+}

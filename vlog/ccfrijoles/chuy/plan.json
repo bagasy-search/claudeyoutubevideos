@@ -1,0 +1,50 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/chuy/",
+ "face": "C:/Users/bauti/Downloads/plan_claudio_cocina/face_hd.png",
+ "k0_from": "D:/rtmp/cc/masters/out/M4_salon.png",
+ "extra": {
+  "look": "D:/rtmp/cc/masters/out/claudio_look.png",
+  "chuy": "D:/rtmp/cc/masters/out/don_chuy.png"
+ },
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a kitchen helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, correctly exposed, ordinary morning daylight from the open street door. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, natural saturation, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; the cotton shirt and apron with real creases; real food with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a kitchen helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, natural colors, mild sensor noise; real skin and natural working hands; real food, steam rising up; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "look",
+    "chuy"
+   ],
+   "prompt": "The first image is the place; the second image shows Claudio and exactly how he is dressed; the third image is Don Chuy (same face, sombrero, shirt and mustache). In the kitchen of an old small family-run fonda in a Mexican town: whitewashed walls, blue-and-white talavera tiles, copper and clay pots hanging from hooks, in the small dining room of the fonda: a counter covered in blue-and-white tiles, wooden tables with flowered oilcloth tablecloths, painted wooden chairs, a small blackboard with chalk handwriting, daylight from the open street door. Claudio, a Latin American cook about 50 with dark curly hair streaked with gray and a short graying beard, warm brown eyes, tanned brown skin with laugh lines, working hands, wearing a light sky-blue long-sleeve cotton shirt with the sleeves rolled to the elbow, a white cotton apron with old faded chile and grease stains, and a red-and-white checkered kitchen towel over his RIGHT shoulder stands next to a wooden table with a flowered oilcloth where Don Chuy sits with a deep clay bowl of pinto beans in broth and tortillas in a cloth napkin in front of him; Claudio rests his hand on the back of Don Chuy's chair and talks to the camera. Don Chuy, an old man about 70 with a worn palm-leaf sombrero, a faded blue-and-white plaid shirt and a thick white mustache (the third image), sits at the table. Seen from a kitchen helper's handheld camera at eye level, framed from the knees or waist up, the place exactly as in the first image. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. Claudio's hand on Don Chuy's shoulder, both smiling, Don Chuy holding the spoon. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c59",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/chuy/aud/c59.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/chuy/aud/c59_gen.wav",
+   "T": 7,
+   "text": "Don Chuy, venga, pruébelos. Dice que están como siempre. Para él eso es el mejor elogio que hay.",
+   "action": "Claudio, the man whose face is the third reference image, Don Chuy tastes a spoonful of beans and nods slowly with his eyes closed; Claudio smiles and puts his hand on Don Chuy's shoulder. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c59": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/chuy/out.mp4"
+}

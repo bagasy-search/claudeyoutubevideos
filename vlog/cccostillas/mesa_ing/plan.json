@@ -1,0 +1,89 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/",
+ "face": "C:/Users/bauti/Downloads/plan_claudio_cocina/face_hd.png",
+ "k0_from": "D:/rtmp/cc/masters/out/M2_mesa.png",
+ "extra": {
+  "look": "D:/rtmp/cc/masters/out/claudio_look.png",
+  "chuy": "D:/rtmp/cc/masters/out/don_chuy.png"
+ },
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a kitchen helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, correctly exposed, soft morning daylight from a side window. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, natural saturation, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; the cotton shirt and apron with real creases; real food with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a kitchen helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, natural colors, mild sensor noise; real skin and natural working hands; real food, steam rising up; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "look"
+   ],
+   "prompt": "The first image is the place; the second image shows Claudio and exactly how he is dressed. In the kitchen of an old small family-run fonda in a Mexican town: whitewashed walls, blue-and-white talavera tiles, copper and clay pots hanging from hooks, at the thick worn wooden work table with knife marks in the fonda kitchen: a wooden cutting board, small clay bowls with coarse salt and dried red chiles, white onions and heads of garlic, the thick hardcover recipe notebook with grease stains and bent corners; a strip of blue-and-white talavera tiles on the whitewashed wall behind. Claudio, a Latin American cook about 50 with dark curly hair streaked with gray and a short graying beard, warm brown eyes, tanned brown skin with laugh lines, working hands, wearing a light sky-blue long-sleeve cotton shirt with the sleeves rolled to the elbow, a white cotton apron with old faded chile and grease stains, and a red-and-white checkered kitchen towel over his RIGHT shoulder stands behind the thick worn wooden work table; on the table a dented metal tray with raw pale pink pork spare ribs cut in pieces of three bones, a small clay bowl of coarse salt, a small clay bowl of ground cumin, six dried dark red guajillo chiles, five garlic cloves, three oranges, a brown cone of piloncillo, a bottle of apple cider vinegar and a glass measuring cup of water; he talks to the camera with his hands on the table. Seen from a kitchen helper's handheld camera at eye level, framed from the knees or waist up, the place exactly as in the first image. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his finger points at the small bowl of ground cumin. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. he holds one orange up to the camera. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his hand resting next to the piloncillo cone and the measuring cup. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c17",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/aud/c17.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/aud/c17_gen.wav",
+   "T": 11,
+   "text": "Ahora sí. Esto es para cuatro a seis personas. Dos kilos de costillas de cerdo, en trozos de tres huesos. Dos cucharaditas de sal y una de comino.",
+   "action": "Claudio, the man whose face is the third reference image, points at the tray of raw ribs, then at the bowls of salt and cumin. soft morning daylight from a side window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c18",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/aud/c18.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/aud/c18_gen.wav",
+   "T": 11,
+   "text": "Seis chiles guajillo. Cinco dientes de ajo. Una taza de jugo de naranja y la ralladura de una naranja. Dos cucharadas de vinagre de manzana.",
+   "action": "Claudio, the man whose face is the third reference image, touches the guajillo chiles, the garlic and then picks up one orange. soft morning daylight from a side window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c19",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/aud/c19.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/aud/c19_gen.wav",
+   "T": 6,
+   "text": "Dos cucharadas de piloncillo rallado, o azúcar morena. Y una taza de agua.",
+   "action": "Claudio, the man whose face is the third reference image, puts the orange down and taps the piloncillo cone and the measuring cup of water. soft morning daylight from a side window. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c17": {
+   "mode": "trunc"
+  },
+  "c18": {
+   "mode": "trunc"
+  },
+  "c19": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/mesa_ing/out.mp4"
+}

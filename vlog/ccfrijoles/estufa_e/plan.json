@@ -1,0 +1,189 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/",
+ "face": "C:/Users/bauti/Downloads/plan_claudio_cocina/face_hd.png",
+ "k0_from": "D:/rtmp/cc/masters/out/M1_estufa.png",
+ "extra": {
+  "look": "D:/rtmp/cc/masters/out/claudio_look.png",
+  "chuy": "D:/rtmp/cc/masters/out/don_chuy.png"
+ },
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a kitchen helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, correctly exposed, morning daylight from a side window and a small blue gas flame. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, natural saturation, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; the cotton shirt and apron with real creases; real food with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a kitchen helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, natural colors, mild sensor noise; real skin and natural working hands; real food, steam rising up; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "look"
+   ],
+   "prompt": "The first image is the place; the second image shows Claudio and exactly how he is dressed. In the kitchen of an old small family-run fonda in a Mexican town: whitewashed walls, blue-and-white talavera tiles, copper and clay pots hanging from hooks, at the old white 4-burner gas stove with worn chipped enamel against blue-and-white talavera tiles; on the stove the big black cast-iron comal, smooth and shiny from decades of use, flat and round with no handle, and the big reddish clay olla de barro with two handles and a clay lid; wooden spoons standing in a clay jar; copper pots hanging on the whitewashed wall. Claudio, a Latin American cook about 50 with dark curly hair streaked with gray and a short graying beard, warm brown eyes, tanned brown skin with laugh lines, working hands, wearing a light sky-blue long-sleeve cotton shirt with the sleeves rolled to the elbow, a white cotton apron with old faded chile and grease stains, and a red-and-white checkered kitchen towel over his RIGHT shoulder stands at the old white gas stove; the big reddish clay olla de barro with two handles on the front burner simmering gently on a small low flame, its clay lid slightly ajar, a thin wisp of steam; on the back burner a blue enamel kettle on a low flame; he holds the long wooden spoon. Seen from a kitchen helper's handheld camera at eye level, framed from the knees or waist up, the place exactly as in the first image. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. the lid in one hand, the wooden spoon in the brown broth, beans visible. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. the spoon still, his finger pointing at the beans just under the broth. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. the blue kettle tilted over the olla, a little steam, his eyes on it. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. five beans in the big metal spoon held over the olla. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. a squashed creamy bean between his thumb and finger, he looks at it closely. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. he holds the epazote sprig over the olla. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. the wooden spoon at his lips, eyes half closed, tasting. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. the lid ajar, a satisfied smile at the camera. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c45",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c45.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c45_gen.wav",
+   "T": 12,
+   "text": "Y así se cuecen de hora y media a dos horas. Depende del frijol, de qué tan nuevo es, y de tu agua. Cada veinte minutos, más o menos, le doy una vuelta con el cucharón de madera,",
+   "action": "Claudio, the man whose face is the third reference image, lifts the lid aside and stirs slowly from the bottom with the long wooden spoon, looking at the camera. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c46",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c46.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c46_gen.wav",
+   "T": 12,
+   "text": "desde el fondo, para que no se pegue. Despacio, como quien mueve un bebé. Si ves que los frijoles se asoman por arriba del caldo, les agregas agua. Pero caliente, nunca fría.",
+   "action": "Claudio, the man whose face is the third reference image, keeps stirring very gently, then points at the beans at the surface. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c47",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c47.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c47_gen.wav",
+   "T": 12,
+   "text": "Yo siempre tengo una tetera calentando al lado. El agua fría les corta el hervor, la olla tarda un buen rato en volver a agarrar el paso, y los de arriba se cuecen disparejos.",
+   "action": "Claudio, the man whose face is the third reference image, takes the blue enamel kettle from the back burner and pours a thin stream of hot water into the olla. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c48",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c48.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c48_gen.wav",
+   "T": 10,
+   "text": "Y a la olla de barro, ya te dije, no le gusta el agua helada. Y ahora, la prueba de la fonda. No pruebes un frijol. Prueba cinco. Saco cinco con la cuchara,",
+   "action": "Claudio, the man whose face is the third reference image, puts the kettle back and scoops a few beans in a big metal spoon. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c49",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c49.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c49_gen.wav",
+   "T": 12,
+   "text": "los soplo, y los aprieto uno por uno. Los cinco tienen que estar cremosos por dentro, sin ese centro blanco harinoso. Si uno solo está duro, faltan quince minutos más.",
+   "action": "Claudio, the man whose face is the third reference image, blows on the beans in the spoon and squeezes one between his thumb and finger. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c50",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c50.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c50_gen.wav",
+   "T": 12,
+   "text": "Porque si pruebas uno, siempre te toca el más blandito, y apagas antes de tiempo. Eso lo aprendí a cucharazos. Ya casi. Los últimos quince minutos le echo la rama de epazote.",
+   "action": "Claudio, the man whose face is the third reference image, nods, drops the spoon in the olla and picks up a sprig of green epazote from the counter. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c51",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c51.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c51_gen.wav",
+   "T": 7,
+   "text": "Al final, porque si lo echas desde el principio se cuece de más y pierde todo el olor. Pruebo el caldo de sal.",
+   "action": "Claudio, the man whose face is the third reference image, drops the epazote into the broth, scoops a little broth with the wooden spoon and tastes it. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c52",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c52.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/aud/c52_gen.wav",
+   "T": 7,
+   "text": "Casi nunca le falta, porque la sal entró desde temprano. Si le falta, una pizca más, y ya.",
+   "action": "Claudio, the man whose face is the third reference image, nods satisfied and sets the lid back slightly open. morning daylight from a side window and a small blue gas flame. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c45": {
+   "mode": "trunc"
+  },
+  "c46": {
+   "mode": "trunc"
+  },
+  "c47": {
+   "mode": "trunc"
+  },
+  "c48": {
+   "mode": "trunc"
+  },
+  "c49": {
+   "mode": "trunc"
+  },
+  "c50": {
+   "mode": "trunc"
+  },
+  "c51": {
+   "mode": "trunc"
+  },
+  "c52": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/ccfrijoles/vlog/ccfrijoles/estufa_e/out.mp4"
+}

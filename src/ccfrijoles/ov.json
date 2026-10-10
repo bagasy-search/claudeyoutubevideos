@@ -1,0 +1,253 @@
+[
+ {
+  "c": "ClBeanCut",
+  "k": "corte",
+  "from": 6575,
+  "dur": 369,
+  "props": {
+   "bed": "img/ccfrijoles/bed_corte.jpg",
+   "at": [
+    1.68,
+    4.82,
+    9.45
+   ]
+  },
+  "t": 219.18
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 7916,
+  "dur": 195,
+  "props": {
+   "title": "La olla · 8 a 10 platos",
+   "rows": [
+    {
+     "k": "Frijol pinto o bayo",
+     "v": "1 kg"
+    },
+    {
+     "k": "Agua",
+     "v": "3 litros"
+    },
+    {
+     "k": "Cebolla blanca",
+     "v": "½"
+    },
+    {
+     "k": "Ajo",
+     "v": "3 dientes"
+    },
+    {
+     "k": "Manteca de cerdo",
+     "v": "2 cdas"
+    },
+    {
+     "k": "Sal",
+     "v": "2 cditas"
+    },
+    {
+     "k": "Epazote",
+     "v": "1 rama"
+    }
+   ],
+   "mark": "o 2 hojas de laurel",
+   "note": "sin remojar",
+   "bed": "vid/ccfrijoles/bed_1.mp4#199"
+  },
+  "t": 263.85
+ },
+ {
+  "c": "ClTimer30",
+  "k": "dosmin",
+  "from": 12062,
+  "dur": 90,
+  "props": {
+   "minutes": 2,
+   "label": "2 min",
+   "text": "hervor fuerte",
+   "bed": "vid/ccfrijoles/bed_2.mp4#94"
+  },
+  "t": 402.07
+ },
+ {
+  "c": "ClTimer30",
+  "k": "unahora",
+  "from": 12241,
+  "dur": 120,
+  "props": {
+   "minutes": 60,
+   "label": "1 hora",
+   "text": "apagado y tapado",
+   "fast": true,
+   "bed": "vid/ccfrijoles/bed_3.mp4#124"
+  },
+  "t": 408.05
+ },
+ {
+  "c": "ClChip",
+  "k": "fuego",
+  "from": 13857,
+  "dur": 108,
+  "props": {
+   "text": "Fuego bajo · tapa entreabierta",
+   "corner": "tl"
+  },
+  "t": 461.91
+ },
+ {
+  "c": "ClChip",
+  "k": "cinco",
+  "from": 15556,
+  "dur": 108,
+  "props": {
+   "text": "Prueba 5 frijoles, no 1",
+   "corner": "tl"
+  },
+  "t": 518.54
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 17868,
+  "dur": 204,
+  "props": {
+   "before": "img/ccfrijoles/antes.jpg",
+   "after": "img/ccfrijoles/despues.jpg",
+   "a": "LA BOLSA",
+   "b": "3 HORAS DESPUÉS",
+   "note": "sin remojo"
+  },
+  "t": 595.59
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 18078,
+  "dur": 285,
+  "props": {
+   "title": "La olla de la fonda",
+   "items": [
+    "Hervor fuerte, 2 minutos",
+    "Apagas, tapas: 1 hora",
+    "El agua no se tira",
+    "Sazón y sal en ese momento",
+    "Fuego bajo, 1½ a 2 horas",
+    "Pruebas 5, no 1"
+   ],
+   "bed": "vid/ccfrijoles/bed_7.mp4#289"
+  },
+  "t": 602.59
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "refritos",
+  "from": 27622,
+  "dur": 180,
+  "props": {
+   "title": "Refritos",
+   "rows": [
+    {
+     "k": "Frijoles cocidos, escurridos",
+     "v": "4 tazas"
+    },
+    {
+     "k": "Su caldo",
+     "v": "1½ taza"
+    },
+    {
+     "k": "Manteca",
+     "v": "4 cdas"
+    },
+    {
+     "k": "Cebolla picada finita",
+     "v": "¼"
+    },
+    {
+     "k": "Sal y queso fresco",
+     "v": "al gusto"
+    }
+   ],
+   "mark": "machacados, no licuados",
+   "bed": "vid/ccfrijoles/bed_8.mp4#184"
+  },
+  "t": 920.72
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 31013,
+  "dur": 425,
+  "props": {
+   "head": "LA OLLA DE FRIJOLES",
+   "lines": [
+    [
+     "Frijol pinto, 1 kg",
+     "US$3.00"
+    ],
+    [
+     "Cebolla y ajo",
+     "US$0.50"
+    ],
+    [
+     "Manteca, 2 cdas",
+     "US$0.15"
+    ],
+    [
+     "Epazote o laurel",
+     "US$0.50"
+    ],
+    [
+     "Toda la olla · 9 platos",
+     "US$4.15"
+    ]
+   ],
+   "total": [
+    "Cada plato",
+    "US$0.46"
+   ],
+   "bed": "vid/ccfrijoles/bed_9.mp4#429"
+  },
+  "t": 1033.76
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 32262,
+  "dur": 180,
+  "props": {
+   "page": "img/ccfrijoles/page12.jpg",
+   "pageNo": 12,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/ccfrijoles/bed_10.mp4#184"
+  },
+  "t": 1075.41
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 32596,
+  "dur": 210,
+  "props": {
+   "qr": "img/ccfrijoles/qr.jpg",
+   "cover": "img/ccfrijoles/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/ccfrijoles/bed_11.mp4#214"
+  },
+  "t": 1086.53
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 33025,
+  "dur": 150,
+  "props": {
+   "thumb": "img/ccfrijoles/th_cccostillas.jpg",
+   "title": "Costillas en la olla de barro",
+   "next": true,
+   "bed": "vid/ccfrijoles/bed_12.mp4#154"
+  },
+  "t": 1100.82
+ }
+]

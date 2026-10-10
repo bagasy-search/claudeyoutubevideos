@@ -1,0 +1,289 @@
+{
+ "dir": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/",
+ "face": "C:/Users/bauti/Downloads/plan_claudio_cocina/face_hd.png",
+ "k0_from": "D:/rtmp/cc/masters/out/M4_salon.png",
+ "extra": {
+  "look": "D:/rtmp/cc/masters/out/claudio_look.png",
+  "chuy": "D:/rtmp/cc/masters/out/don_chuy.png"
+ },
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "es",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a kitchen helper with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, correctly exposed, ordinary morning daylight from the open street door. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, natural saturation, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; the cotton shirt and apron with real creases; real food with real texture. People are caught mid-action, unposed.",
+ "look": "Ordinary handheld video filmed by a kitchen helper with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, natural colors, mild sensor noise; real skin and natural working hands; real food, steam rising up; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0",
+    "look"
+   ],
+   "prompt": "The first image is the place; the second image shows Claudio and exactly how he is dressed. In the kitchen of an old small family-run fonda in a Mexican town: whitewashed walls, blue-and-white talavera tiles, copper and clay pots hanging from hooks, in the small dining room of the fonda: a counter covered in blue-and-white tiles, wooden tables with flowered oilcloth tablecloths, painted wooden chairs, a small blackboard with chalk handwriting, daylight from the open street door. Claudio, a Latin American cook about 50 with dark curly hair streaked with gray and a short graying beard, warm brown eyes, tanned brown skin with laugh lines, working hands, wearing a light sky-blue long-sleeve cotton shirt with the sleeves rolled to the elbow, a white cotton apron with old faded chile and grease stains, and a red-and-white checkered kitchen towel over his RIGHT shoulder stands in the small dining room of the fonda between the wooden tables with flowered oilcloth tablecloths, the tables still empty, the small blackboard on the wall behind with chalk handwriting, talking to the camera with one hand open. Seen from a kitchen helper's handheld camera at eye level, framed from the knees or waist up, the place exactly as in the first image. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. he points at the small blackboard with chalk handwriting. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. he taps his bare wrist with two fingers, eyebrows raised. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his right hand flat on his chest. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. he holds up four fingers. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. both arms open toward the street door, smiling. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K6",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. arms crossed, shaking his head with mock seriousness. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K7",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his thumb pointing toward the kitchen door, a laugh. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K8",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. one finger raised, eyebrows up. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K9",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his fingers pinched together as if holding something small, he looks at the camera. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K10",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. a small shrug, half smile. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K11",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. both hands up with all ten fingers. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K12",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his finger pressing down on an invisible button. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "K13",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light, same objects as the first image, a few seconds later. his flat hand low and still, palm down, smiling. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c03",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c03.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c03_gen.wav",
+   "T": 5,
+   "text": "En la fonda, las costillas salen los jueves. Y los jueves se llena.",
+   "action": "Claudio, the man whose face is the third reference image, walks slowly between the empty tables talking and points at the small blackboard on the wall. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c04",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c04.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c04_gen.wav",
+   "T": 6,
+   "text": "Hay gente que viene sólo ese día, y si llegas después de la una, ya no alcanzas.",
+   "action": "Claudio, the man whose face is the third reference image, gestures at all the empty tables with his open hand, then taps his bare wrist. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c05",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c05.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c05_gen.wav",
+   "T": 5,
+   "text": "La receta es de mi amá. Ella nunca tuvo parrilla. Tenía esta estufa de",
+   "action": "Claudio, the man whose face is the third reference image, puts his hand on his chest and nods. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c06",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c06.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c06_gen.wav",
+   "T": 6,
+   "text": "cuatro hornillas, un comal, y ollas. Y con eso hacía unas costillas que la gente",
+   "action": "Claudio, the man whose face is the third reference image, counts four on his fingers. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c07",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c07.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c07_gen.wav",
+   "T": 5,
+   "text": "de otros pueblos venía a comer. Una vez vino un señor de la ciudad,",
+   "action": "Claudio, the man whose face is the third reference image, opens both arms toward the street door, smiling. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c08",
+   "a": "K5",
+   "b": "K6",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c08.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c08_gen.wav",
+   "T": 7,
+   "text": "de esos que hacen asados cada domingo, y me dijo: estas costillas no pueden ser de olla.",
+   "action": "Claudio, the man whose face is the third reference image, crosses his arms and imitates a serious man shaking his head. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c09",
+   "a": "K6",
+   "b": "K7",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c09.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c09_gen.wav",
+   "T": 6,
+   "text": "Le enseñé la olla. No me creyó hasta que lo metí a la cocina. ¿Y por qué los jueves?",
+   "action": "Claudio, the man whose face is the third reference image, uncrosses his arms and points toward the kitchen door behind the counter, laughing. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c10",
+   "a": "K7",
+   "b": "K8",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c10.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c10_gen.wav",
+   "T": 5,
+   "text": "Porque en el pueblo el carnicero mataba los miércoles, y el jueves temprano mi",
+   "action": "Claudio, the man whose face is the third reference image, raises one finger as if remembering. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c11",
+   "a": "K8",
+   "b": "K9",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c11.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c11_gen.wav",
+   "T": 6,
+   "text": "amá ya estaba en la carnicería escogiendo la costilla con más carne.",
+   "action": "Claudio, the man whose face is the third reference image, mimes choosing something with his fingers, picking the best one. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c12",
+   "a": "K9",
+   "b": "K10",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c12.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c12_gen.wav",
+   "T": 5,
+   "text": "Y la costumbre se quedó, aunque ahora la carne llegue cualquier día.",
+   "action": "Claudio, the man whose face is the third reference image, shrugs with a small smile. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c13",
+   "a": "K10",
+   "b": "K11",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c13.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c13_gen.wav",
+   "T": 5,
+   "text": "Las costillas se ponen a las diez de la mañana para salir a la una.",
+   "action": "Claudio, the man whose face is the third reference image, taps his wrist and holds up ten fingers. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c14",
+   "a": "K11",
+   "b": "K12",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c14.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c14_gen.wav",
+   "T": 6,
+   "text": "Así que a las nueve y media ya tengo la salsa licuada, y a las diez en punto la olla está",
+   "action": "Claudio, the man whose face is the third reference image, mimes pressing the button of a blender with one finger. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  },
+  {
+   "id": "c15",
+   "a": "K12",
+   "b": "K13",
+   "audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c15.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/aud/c15_gen.wav",
+   "T": 5,
+   "text": "tapada y en el fuego. Mientras, hago todo lo demás.",
+   "action": "Claudio, the man whose face is the third reference image, lowers his flat hand slowly as if turning down a flame, then smiles. ordinary morning daylight from the open street door. He wears the same sky-blue shirt with rolled sleeves, the same stained white apron and the same red-and-white checkered towel over his right shoulder the whole time, same curly gray-streaked hair and short graying beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c03": {
+   "mode": "trunc"
+  },
+  "c04": {
+   "mode": "trunc"
+  },
+  "c05": {
+   "mode": "trunc"
+  },
+  "c06": {
+   "mode": "trunc"
+  },
+  "c07": {
+   "mode": "trunc"
+  },
+  "c08": {
+   "mode": "trunc"
+  },
+  "c09": {
+   "mode": "trunc"
+  },
+  "c10": {
+   "mode": "trunc"
+  },
+  "c11": {
+   "mode": "trunc"
+  },
+  "c12": {
+   "mode": "trunc"
+  },
+  "c13": {
+   "mode": "trunc"
+  },
+  "c14": {
+   "mode": "trunc"
+  },
+  "c15": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/ccfrijoles/vlog/cccostillas/salon/out.mp4"
+}
