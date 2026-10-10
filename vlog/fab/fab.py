@@ -24,8 +24,8 @@ from comun import R, S, D, V3, FPS, J, W, dur, frames, nw, at, mapear, cortes, p
 LOG = D + "logs/"; HECHO = D + ".hecho/"
 os.makedirs(LOG, exist_ok=True); os.makedirs(HECHO, exist_ok=True)
 ENV = {**os.environ, "SLUG": S, "PYTHONUTF8": "1", "AGNES_KEYS_OTRA_PC": os.environ.get("AGNES_KEYS_OTRA_PC", ",")}
-FONDO = {"guionista", "arte", "voz", "planos", "imgs", "clips", "avatar", "montaje", "editor", "render"}
-ORDEN = ["guionista", "guion", "arte", "voz", "avatar", "planos", "imgs", "clips", "armar", "montaje", "ov", "editor", "mix", "render"]
+FONDO = {"guionista", "arte", "voz", "plan", "planos", "imgs", "clips", "avatar", "montaje", "editor", "render"}
+ORDEN = ["guionista", "guion", "arte", "voz", "plan", "avatar", "planos", "imgs", "clips", "armar", "montaje", "ov", "editor", "mix", "render"]
 CLIPF = 121
 
 def sh(cmd, check=True, quiet=False, env=None, **kw):
@@ -198,8 +198,20 @@ def leer_planos():
     P = J(D + "planos.json")
     if not isinstance(P, list): sys.exit("⛔ planos.json tiene que ser una lista")
     return P
-def e_planos():
+def e_plan():
+    """el EDITOR JEFE (V4 Pro, pensando sin límite) planifica TODA la edición antes de cualquier foto:
+       qué muestra cada sección, avatar.json, ov.json con sus componentes y las fotos exactas que cada componente necesita"""
     for e in ("voz", "arte"):
+        if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
+    import equipo
+    na, pct, nc, nf, errs = equipo.plan()
+    for e in errs[:15]: print("⚠", e)
+    borrar_desde("plan"); hecho("plan", True, f"{na} ventanas · {nc} componentes")
+    print(f"FIN plan: {na} ventanas de avatar ({pct:.1f} %) · {nc} componentes · {nf} fotos para componentes"
+          + (f" · {len(errs)} problemas que quedan: arreglalos en avatar.json / ov.json" if errs else " · sin problemas")
+          + " → leé vlog/<slug>/plan.json, revisá avatar.json y ov.json, y seguí: python vlog/fab/fab.py avatar")
+def e_planos():
+    for e in ("voz", "arte", "plan"):
         if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
     nec = necesidad()
     if not os.path.exists(D + "planos.json") or "--rehacer" in sys.argv:
@@ -245,6 +257,7 @@ def e_imgs():
     if not os.path.exists(HECHO + "planos"): sys.exit("⛔ primero: planos")
     import equipo
     falt = equipo.fotos(leer_planos())
+    if os.path.exists(D + "comp_fotos.json"): falt += equipo.fotos(J(D + "comp_fotos.json"))   # las fotos que pidió el plan para los componentes
     if falt:
         print(f"⛔ FIN imgs: {len(falt)} fotos no salieron (agnes): {falt[:20]} → corré imgs de nuevo"); hecho("imgs", False); sys.exit(2)
     hecho("imgs", True); print("FIN imgs: fotos OK → siguiente: python vlog/fab/fab.py clips")
@@ -422,7 +435,8 @@ def ventanas():
     if reel > 235: errs.append(f"el avatar suma {reel:.0f} s de reel: máximo 235 s (InfiniteTalk se degrada) → achicá ventanas")
     return pzw, pct, errs
 def e_avatar():
-    if not os.path.exists(HECHO + "voz"): sys.exit("⛔ primero: voz")
+    for e in ("voz", "plan"):
+        if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
     win, pct, errs = ventanas()
     for e in errs: print("⛔", e)
     if errs: sys.exit(2)
@@ -500,11 +514,9 @@ def chk_obj(o, esq, donde, errs, imgs):
     for k, spec in esq.items():
         if k in o: chk_prop(o[k], spec, f"{donde}.{k}", errs, imgs)
         elif spec[2]: errs.append(f"{donde}: falta '{k}'")
-def e_ov():
-    for e in ("avatar", "armar", "montaje"):   # ⛔ después del montaje: si no, las camas salen del vlog viejo
-        if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
-    OV = J(D + "ov.json"); TOT = total_frames() / FPS; AV = J(R + "src/fab/data/avwin.json")["win"]
-    errs, out, imgs = [], [], set()
+def validar_ov(OV, AV, img=True):
+    """ov → (componentes resueltos, errores, tipos Fab). img=False: no exige que las fotos ya existan (lo usa el plan)"""
+    TOT = total_frames() / FPS; errs, out, imgs = [], [], set()
     from collections import Counter
     for k, o in enumerate(OV):
         c, donde = o.get("c"), f"ov[{k}] {o.get('c')}"
@@ -531,8 +543,16 @@ def e_ov():
     cap = max(3, math.ceil(TOT / 300))   # 3 por cada 15 min de video
     for c, n in cnt.items():
         if c.startswith("Fab") and n > cap: errs.append(f"{c} aparece {n} veces (máximo {cap})")
+    if not img: errs = [e for e in errs if "no es el id de un plano con foto" not in e]
+    return out, errs, fab
+def e_ov():
+    for e in ("avatar", "armar", "montaje"):   # ⛔ después del montaje: si no, las camas salen del vlog viejo
+        if not os.path.exists(HECHO + e): sys.exit(f"⛔ primero: {e}")
+    OV = J(D + "ov.json"); AV = J(R + "src/fab/data/avwin.json")["win"]
+    out, errs, fab = validar_ov(OV, AV)
     for e in errs[:30]: print("⛔", e)
     if errs: hecho("ov", False); sys.exit(2)
+    TOT = total_frames() / FPS
     vl = R + f"public/vid/{S}/vlog.mp4"
     for n, o in enumerate(out):
         nf = o["dur"] + 4; o["props"] = {**o["props"], "bed": f"vid/{S}/bed_{n}.mp4#{nf}"}
@@ -720,7 +740,7 @@ def e_estado():
     sig = next((e for e in ORDEN if not os.path.exists(HECHO + e)), None)
     print("siguiente:", f"python vlog/fab/fab.py {sig}" if sig else "nada: el video está terminado")
 
-ETAPAS = {"guionista": e_guionista, "arte": e_arte, "montaje": e_montaje, "guion": e_guion, "voz": e_voz, "planos": e_planos, "imgs": e_imgs, "clips": e_clips, "armar": e_armar, "avatar": e_avatar,
+ETAPAS = {"guionista": e_guionista, "plan": e_plan, "arte": e_arte, "montaje": e_montaje, "guion": e_guion, "voz": e_voz, "planos": e_planos, "imgs": e_imgs, "clips": e_clips, "armar": e_armar, "avatar": e_avatar,
           "ov": e_ov, "editor": e_editor, "mix": e_mix, "render": e_render, "estado": e_estado, "sonidos": e_sonidos}
 if __name__ == "__main__":
     a = sys.argv[1:] or ["estado"]

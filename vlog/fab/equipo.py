@@ -5,7 +5,7 @@
 #   revisar_fotos() revisor (visión): hojas de 9 contra la maestra del lugar → qué foto no coincide / tiene texto / cambió de lugar
 #   revisar_montaje() editor (visión): hoja de cada minuto armado contra lo que se dice → planos flojos o que no pegan
 import json, math, os, re, shutil, subprocess, sys
-from comun import R, S, D, V3, J, W, nw, CANAL, IDIOMA, PROT
+from comun import R, S, D, V3, J, W, nw, at, CANAL, IDIOMA, PROT
 import ds
 
 NOM = CANAL["personajes"][PROT]["nombre"]; EL = CANAL.get("pron", "he"); SU = {"he": "his", "she": "her"}.get(EL, "their")
@@ -122,13 +122,14 @@ def planos(necesidad=None):
         if cur and (len(cur) >= 18 or segs[cur[-1]]["sec"] != sg["sec"]): tandas.append(cur); cur = []
         cur.append(k)
     if cur: tandas.append(cur)
-    P = []
+    P = []; PLAN = J(D + "plan.json", {})   # lo que el editor jefe decidió para cada sección
     for t in tandas:
         sec = segs[t[0]]["sec"]; x = b["secciones"][sec]; gente = {g: CANAL["personajes"][g]["desc"] for g in x["gente"]}
         momentos = [{"n": i + 1, "seconds": round(segs[k]["b"] - segs[k]["a"], 1), "says": segs[k]["texto"]} for i, k in enumerate(t)]
         user = {
             "section": sec, "context_before": segs[t[0] - 1]["texto"] if t[0] else "", "moments": momentos,
             "place": b["lugares"][x["lugar"]], "time": HORAS[x["hora"]], "people_present": gente,
+            "chief_editor_plan": {"video": PLAN.get("vision", ""), "this_section": PLAN.get("secciones", {}).get(sec, "")},
             "rules": [
                 "Exactly ONE shot per moment, same order and same numbers. The shot shows what is SAID in that moment (the object, the action, the result). "
                 "If the moment is a general statement, show the most concrete visible thing that illustrates it in this house.",
@@ -287,3 +288,92 @@ def guion():
     lineas = limpio(g2)
     open(D + "guion.txt", "w", encoding="utf8").write("\n".join(lineas) + "\n")
     return largo(g2), nota.get("puntaje")
+
+# ═══════════════════════ editor jefe: MEGA-PLAN de la edición (antes de cualquier foto) ═══════════════════════
+def _json_de(txt):
+    a, b = txt.find("{"), txt.rfind("}")
+    try: return json.loads(txt[a:b + 1])
+    except Exception: return None
+
+def guion_con_tiempos():
+    """[{sec, a, b, texto}] por párrafo, con los segundos del video recortado"""
+    from comun import palabras, mapear, cortes
+    WM = palabras(); C = cortes()
+    paras = [l for l in open(R + f"guiones/{S}.txt", encoding="utf8").read().split("\n") if l.strip()]
+    secs = [re.match(r"\[([^|\]]+)", l).group(1) for l in open(R + f"guiones/{S}_filmado.txt", encoding="utf8").read().split("\n") if l.strip()]
+    out, k = [], 0
+    for i, p in enumerate(paras):
+        n = len(re.findall(r"\S+", p))
+        if k + n > len(WM) or n == 0: break
+        out.append({"sec": secs[i], "a": round(mapear(WM[k]["s"], C), 1), "b": round(mapear(WM[k + n - 1]["e"], C), 1), "texto": p}); k += n
+    return out
+
+SLOTS = ("img", "antes", "despues")
+def _fotos_de(props, reg):
+    """reemplaza cada {"foto": ...} de un slot de imagen por un id kNNN y lo registra"""
+    if isinstance(props, list): return [_fotos_de(x, reg) for x in props]
+    if not isinstance(props, dict): return props
+    o = {}
+    for k, v in props.items():
+        if k in SLOTS and isinstance(v, dict) and v.get("foto"):
+            i = f"k{len(reg) + 1:03d}"; reg.append({**v, "id": i}); o[k] = i
+        else: o[k] = _fotos_de(v, reg)
+    return o
+
+def plan():
+    import fab
+    b = J(D + "biblia.json"); meta = J(D + "meta.json", {})
+    G = guion_con_tiempos(); TOT = round(G[-1]["b"], 1)
+    fijos = sorted(f for f in os.listdir(IMG) if f.endswith(".jpg"))
+    lo, hi = CANAL.get("avatar_pct", [15, 30])
+    sys_p = ("You are the chief editor and creative director of a YouTube channel. Before anything is shot, you plan the WHOLE edit of one video: "
+             "what every section must look like, where the presenter talks to camera, and every on-screen component with the exact photos it needs. "
+             "Think as long as you need; there is no limit. Reply with ONE JSON object only.")
+    user = (open(R + "vlog/fab/EDICION.md", encoding="utf8").read() + "\n\n## THE COMPONENT KIT\n" + open(R + "vlog/fab/KIT.md", encoding="utf8").read()
+            + f"\n\n## THIS VIDEO\nChannel: {CANAL['serie']}. Language of everything written on screen: {'English' if IDIOMA == 'en' else 'Spanish (neutral, tú)'}. "
+            + f"Forbidden on screen: {', '.join(CANAL.get('prohibidas', [])) or 'nothing special'}.\nTitle: {meta.get('titulo', '')}\n"
+            + f"Presenter: {CANAL['personajes'][PROT]['desc']} (id '{PROT}').\nPlaces of each section (already decided): "
+            + json.dumps({s: {"place": b['lugares'][x['lugar']][:120], "time": x['hora'], "people": x['gente']} for s, x in b['secciones'].items()}, ensure_ascii=False)
+            + f"\nFixed files you can use as props (paths): {', '.join('img/' + S + '/' + f for f in fijos)}\n"
+            + f"\n## THE SCRIPT WITH TIMES (seconds of the final video, total {TOT} s)\n"
+            + "\n".join(f"[{g['sec']}] {g['a']}-{g['b']} s: {g['texto']}" for g in G)
+            + "\n\n## WHAT YOU RETURN\n"
+            + "{\n \"vision\": \"3-5 sentences: how this video should feel and look\",\n"
+            + " \"secciones\": {\"SEC\": \"what the shots of this section must show (concrete objects, actions, the hero shots of the presenter with face, what to avoid)\"},\n"
+            + " \"avatar\": [{\"n\": \"short name\", \"desde\": \"EXACT first words of the window (copied from the script)\", \"hasta\": \"EXACT last words\"}],\n"
+            + " \"componentes\": [{\"c\": \"Component\", \"frase\": \"3-8 EXACT words of the script where it enters\", \"dur\": 4-12, \"props\": {...}}]\n}\n"
+            + f"Rules: avatar windows = the presenter on camera; never in the first 4 s; the visible presenter must be {lo}-{hi} % of the video "
+            + f"(the factory shows only ~60 % of each window, cut with photos); windows never overlap; total of all windows ≤ {int(235 / 0.6)} s.\n"
+            + f"Components: between {max(8, math.ceil(TOT / 50))} and {max(8, math.ceil(TOT / 50)) + 8}; ≥5 different Fab types; each Fab type at most {max(3, math.ceil(TOT / 300))} times; "
+            + "none inside an avatar window; ≥3 s apart; none in minute 1 except a ≤2 s ClVideoRef. "
+            + "Every IMAGE prop (img, antes, despues) is NOT an id: write an object {\"foto\": \"exact English description of the photo it needs: who, doing what, which object, where, light; 40-70 words; no text, labels or screens\", "
+            + "\"tam\": \"detalle|medio|general\", \"presenter\": true|false, \"face\": true|false}. File props (thumb, qr, cover, page) use the fixed file paths above. "
+            + "Texts respect the character limits of the kit exactly.")
+    raw = ds.text_call(sys_p, user, "plan", model="deepseek-v4-pro", max_tokens=48000)
+    P = _json_de(raw)
+    if not P: open(D + "plan_mal.txt", "w", encoding="utf8").write(raw); sys.exit("⛔ plan: el editor jefe no devolvió JSON (vlog/<slug>/plan_mal.txt)")
+    for ronda in range(4):   # el plan se VALIDA con las mismas compuertas de la fábrica y se corrige hasta que pase
+        W(D + "avatar.json", P.get("avatar", []))
+        win, pct, ea = fab.ventanas()
+        reg = []; ov = [{**o, "props": _fotos_de(o.get("props", {}), reg)} for o in P.get("componentes", [])]
+        _, eo, _ = fab.validar_ov(ov, win, img=False)
+        errs = ea + eo
+        print(f"   plan ronda {ronda + 1}: avatar {pct:.1f} % · {len(ov)} componentes · {len(reg)} fotos para componentes · {len(errs)} problemas", flush=True)
+        if not errs: break
+        if ronda == 3: break
+        fix = ds.json_call("You fix an edit plan so that it passes the factory checks. Change ONLY what the errors require; keep everything else identical. Reply with JSON only.",
+                           "ERRORS:\n" + "\n".join(errs[:40]) + f"\n\nSCRIPT:\n" + "\n".join(f"[{g['sec']}] {g['a']}-{g['b']} s: {g['texto']}" for g in G)
+                           + "\n\nPLAN (avatar + componentes):\n" + json.dumps({"avatar": P.get("avatar", []), "componentes": P.get("componentes", [])}, ensure_ascii=False)
+                           + '\n\nReturn {"avatar": [...], "componentes": [...]} complete and fixed (image props stay as {"foto": ...} objects).', "plan_fix", max_tokens=16000)
+        if isinstance(fix, dict) and fix.get("componentes"): P["avatar"], P["componentes"] = fix.get("avatar", P["avatar"]), fix["componentes"]
+    # fotos de los componentes: un plano más cada una, en el lugar/hora de la sección donde entra el componente
+    segs = fab.tramos(); fotos_c = []
+    for f in reg:
+        t = next((at(o["frase"]) for o in ov if f["id"] in json.dumps(o["props"])), 0) or 0
+        sec = next((s["sec"] for s in segs if s["a"] <= t < s["b"]), segs[-1]["sec"]); bs = b["secciones"].get(sec, {"lugar": list(b["lugares"])[0], "hora": "dia"})
+        con = bool(f.get("presenter"))
+        fotos_c.append({"id": f["id"], "sec": sec, "lugar": bs["lugar"], "hora": bs["hora"], "gente": [PROT] if con else [], "cara": con and bool(f.get("face")),
+                        "tam": f.get("tam", "detalle"), "foto": str(f["foto"])[:700], "mov": "", "dice": ""})
+    W(D + "comp_fotos.json", fotos_c); W(D + "ov.json", ov)
+    W(D + "plan.json", {"vision": P.get("vision", ""), "secciones": P.get("secciones", {}), "problemas": errs})
+    return len(P.get("avatar", [])), pct, len(ov), len(fotos_c), errs
