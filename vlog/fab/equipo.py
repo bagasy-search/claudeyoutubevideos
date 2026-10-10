@@ -38,7 +38,8 @@ def gpt_img(items):
         print(f"⛔ gpt-image BLOQUEADO: {len(items)} fotos = US${costo:.2f} + US${gastado:.2f} ya gastado > tope US$0,60 por video"); return
     W(D + "gpt_gasto.json", {"usd": round(gastado + costo, 4)})
     lst = V3 + f"{S}_gpt_{abs(hash(items[0]['name'])) % 99999}.json"; W(lst, items)
-    subprocess.run(["node", "scripts/gptimg.mjs", lst, f"public/img/{S}/_eq"], cwd=R, env=ENV)
+    try: subprocess.run(["node", "scripts/gptimg.mjs", lst, f"public/img/{S}/_eq"], cwd=R, env=ENV, timeout=20 * 60)
+    except subprocess.TimeoutExpired: print("   gpt Batch tardó más de 20 min: lo que falte sale con agnes en la vuelta siguiente", flush=True)
 
 # ═══════════════════════ director de arte ═══════════════════════
 def arte():
