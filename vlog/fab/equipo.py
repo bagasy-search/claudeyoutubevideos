@@ -163,7 +163,7 @@ def fotos(P, rondas=3):
         crop = CANAL.get("cara_crop", "")
         con = [p for p in falt if p["cara"] and os.path.exists(crop)]
         if ronda >= 2: con = []   # gpt se regenera UNA vez como mucho (el revisor no es perfecto y cada vuelta cuesta)
-        sin = [p for p in falt if p not in con and not (p["cara"] and ronda >= 2)]
+        sin = [p for p in falt if p not in con]   # en la 3ª vuelta lo que falte de Claudio sale con agnes (nunca queda un hueco)
         import threading
         # Claudio HACIENDO = gpt-image-2 low + Batch + crop de cara 128x192 (identidad); el resto = agnes gratis con la maestra del lugar
         hilo = threading.Thread(target=gpt_img, args=([{"name": p["id"], "prompt": prompt_foto(p, b) + " " + CANAL["identidad"], "ref": crop} for p in con],))
