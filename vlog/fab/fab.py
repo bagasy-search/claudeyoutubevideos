@@ -472,7 +472,16 @@ def e_avatar():
         if os.path.exists(R + f"public/ref_{S}_lugar.png"): shutil.copy(R + f"public/ref_{S}_lugar.png", R + f"public/ref_{S}.png")   # el protagonista en el lugar del episodio
         elif CANAL.get("avatar_ref") and not os.path.exists(R + f"public/ref_{S}.png"): shutil.copy(CANAL["avatar_ref"], R + f"public/ref_{S}.png")   # foto fija del canal
         if not os.path.exists(R + f"public/ref_{S}.png"): sys.exit(f"⛔ falta public/ref_{S}.png (foto del avatar)")
-        sh(["node", "vlog/claudio/avatar_run.mjs", "run"])            # UN solo /run (US$0,25), espera hasta COMPLETED
+        # UN solo /run (US$0,25), espera hasta COMPLETED. Si la cuenta 1 de RunPod no tiene saldo (402 antes de arrancar), la 2 de respaldo.
+        envp = open("C:/Users/bauti/Downloads/video2/.env", encoding="utf8").read()
+        claves = [None] + [m.strip().strip('"') for m in re.findall(r"^RUNPOD_API_KEY_2=(.+)$", envp, re.M)]
+        for k in claves:
+            r = sh(["node", "vlog/claudio/avatar_run.mjs", "run"], check=False, capture_output=True, env={"RUNPOD_KEY": k} if k else None)
+            print(r.stdout[-1500:], flush=True)
+            if r.returncode == 0: break
+            if "Insufficient Balance" not in (r.stdout + r.stderr): sys.exit("⛔ avatar_run falló (ver arriba)")
+            print("⚠ RunPod sin saldo en esta cuenta → pruebo la de respaldo", flush=True)
+        else: sys.exit("⛔ ninguna cuenta de RunPod tiene saldo: cargá saldo")
     os.makedirs(R + f"src/{S}", exist_ok=True)
     sh(["python", "vlog/claudio/avatar_post.py"])
     W(R + "src/fab/data/avwin.json", J(R + f"src/{S}/avwin.json"))
