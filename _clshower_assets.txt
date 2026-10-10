@@ -2,6 +2,7 @@ clshower.m4a
 ref_lor.png
 avatar_clips/clshower/reel30.mp4
 img/clshower/c000_1.jpg
+broll/clshower/c000_1.mp4
 img/clshower/b001_0.jpg
 img/clshower/b001_1.jpg
 img/clshower/b002_1.jpg
@@ -67,11 +68,12 @@ pages/cl/p2.jpg
 qr/clshower.png
 pages/cl/p1.jpg
 img/clshower/c045_1.jpg
+broll/clshower/c045_1.mp4
 img/clshower/c047_1.jpg
-broll/clshower/c047_1.mp4
 img/clshower/c048_0.jpg
 broll/clshower_st/c048_0.mp4
 img/clshower/b049_1.jpg
+img/clshower/b060_1.jpg
 img/clshower/c052_1.jpg
 broll/clshower/c052_1.mp4
 img/clshower/b054_0.jpg
@@ -84,7 +86,6 @@ img/clshower/c058_1.jpg
 broll/clshower_st/c058_1.mp4
 img/clshower/x21.jpg
 broll/clshower_st/x21.mp4
-img/clshower/b060_1.jpg
 img/clshower/x22.jpg
 broll/clshower_st/x22.mp4
 img/clshower/c061_1.jpg
@@ -97,16 +98,16 @@ img/clshower/c067_0.jpg
 img/clshower/x24.jpg
 broll/clshower_st/x24.mp4
 img/clshower/b068_1.jpg
+img/clshower/x25.jpg
 img/clshower/c070_1.jpg
 broll/clshower_st/c070_1.mp4
-img/clshower/x25.jpg
 img/clshower/x01.jpg
 img/clshower/x26.jpg
 pages/cl/p50.jpg
 img/clshower/b073_1.jpg
+img/clshower/g27.jpg
 img/clshower/b075_1.jpg
 broll/clshower_st/b075_1.mp4
-img/clshower/g27.jpg
 img/clshower/b076_1.jpg
 img/clshower/x28.jpg
 img/clshower/b078_1.jpg
@@ -121,8 +122,8 @@ img/clshower/x32.jpg
 img/clshower/b083_1.jpg
 img/clshower/x33.jpg
 broll/clshower_st/x33.mp4
-img/clshower/e085_0.jpg
 img/clshower/x34.jpg
+img/clshower/e085_0.jpg
 img/clshower/x02.jpg
 img/clshower/x35.jpg
 img/clshower/b087_1.jpg
@@ -136,6 +137,7 @@ sfx/sfx_whoosh_soft.mp3
 sfx/lor_paper_pop.mp3
 sfx/lor_whoosh_airy.mp3
 sfx/floraphonic-minimal-pop-click-ui-1-198301.mp3
+broll/clshower/c000_1_last.jpg
 broll/clshower_st/s004_1_last.jpg
 broll/clshower_st/b006_1_last.jpg
 broll/clshower_st/b009_1_last.jpg
@@ -151,7 +153,7 @@ broll/clshower_st/x12_last.jpg
 broll/clshower_st/c036_1_last.jpg
 broll/clshower_st/b037_0_last.jpg
 broll/clshower_st/x15_last.jpg
-broll/clshower/c047_1_last.jpg
+broll/clshower/c045_1_last.jpg
 broll/clshower_st/c048_0_last.jpg
 broll/clshower/c052_1_last.jpg
 broll/clshower_st/c057_1_last.jpg
