@@ -20,7 +20,9 @@ ap.add_argument("--max-try", type=int, default=5); a = ap.parse_args()
 CPS = a.cps
 OUT = Path(R + f"vlog/{S}/voz"); OUT.mkdir(parents=True, exist_ok=True)
 V = json.load(open(R + "fish_voices.json", encoding="utf-8"))[a.voice]
-refs = [ReferenceAudio(audio=open(R + x["wav"], "rb").read(), text=x["text"]) for x in (V.get("refs") or [V])]  # refs CRUDAS, sin filtros
+# ref CRUDA re-empaquetada en FLAC (sin pérdida, cero filtros): el wav de 7,7 MB daba 504 Gateway Timeout en Fish (10-oct)
+_flac = lambda w: subprocess.run(["ffmpeg", "-v", "error", "-i", R + w, "-c:a", "flac", "-compression_level", "8", "-f", "flac", "-"], capture_output=True, check=True).stdout
+refs = [ReferenceAudio(audio=_flac(x["wav"]), text=x["text"]) for x in (V.get("refs") or [V])]  # refs CRUDAS, sin filtros
 blocks = FF.split_blocks(open(R + f"guiones/{S}_voz.txt", encoding="utf-8").read(), a.block_chars)
 only = [int(x) for x in a.only.split(",") if x != ""]
 todo = only or list(range(len(blocks)))
@@ -87,7 +89,7 @@ for ronda in range(1, a.max_try + 1):
         print(f"  {key} t{k0[i]}: hueco {g} · sim {ratio} · {d:.1f}s (esp {esp:.1f}) {'OK' if g < 4 and okdur else 'REINTENTO'}")
         if not (g < 4 and okdur): nxt.append(i)
     json.dump(gate, open(OUT / "gate.json", "w", encoding="utf-8"), indent=1)
-    pend = [i for i in nxt if gate[f"b{i:03d}"]["intentos"] < a.max_try] if ronda < a.max_try else []
+    pend = [i for i in nxt if gate.get(f"b{i:03d}", {"intentos": 0})["intentos"] < a.max_try] if ronda < a.max_try else []
     print(f"RONDA {ronda}: pendientes {len(pend)}")
 malos = [k for k in (f"b{i:03d}" for i in todo) if not gate.get(k, {}).get("ok")]
 if malos: print("⚠️ bloques que NO pasaron tras", a.max_try, "intentos (se usa el mejor):", {k: gate[k] for k in malos})

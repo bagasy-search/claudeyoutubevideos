@@ -1,0 +1,113 @@
+[HOOK|corrida] Esto en la fonda era la comida corrida: tres dólares, y le gana a cualquier restaurante.
+[HOOK|grano] Mira este arroz. Cada grano suelto, rojo parejo, sin una parte pegada ni una parte cruda. Y al lado, unos frijoles refritos en manteca, cremosos, que se untan como mantequilla.
+[HOOK|promesa] Hoy te enseño las dos cosas que van en todos los platos de la fonda: el arroz rojo y los frijoles refritos. Si te salen estas dos, cualquier guisado que pongas en medio es una comida completa.
+[HOOK|cred] Soy Claudio. Cuarenta años en esta cocina, ochenta comidas por día, y las ochenta llevan arroz y frijoles.
+[HOOK|plan] Y te enseño cuánto caldo exacto lleva, por qué no se mueve, cómo se guarda sin riesgo, lo que se hace con lo que sobra, y la cuenta de esos tres dólares.
+[RETOMA|huevos] La semana pasada te enseñé los huevos rancheros del desayuno. Hoy nos vamos al mediodía, a lo que la fonda sirve a las dos de la tarde.
+[FONDA|corrida] Te explico qué es la comida corrida, por si no la conoces. Es la comida del día, a precio fijo. Un caldo o una sopa. Luego el arroz. Luego el plato fuerte, el guisado del día, con frijoles. Tortillas, agua fresca, y a veces un postre chiquito.
+[FONDA|precio] En los tiempos de mi amá, todo eso costaba lo que hoy son unos tres dólares. Y la gente que comía ahí todos los días, comía mejor que en cualquier restaurante del centro.
+[FONDA|base] Y lo que hace posible ese precio son estas dos cosas: el arroz y los frijoles. Son baratos, llenan, y si salen bien, el plato entero sale bien.
+[FONDA|juzgan] Te digo una cosa: a una fonda se le juzga por el arroz. La gente prueba el arroz primero. Si está batido o crudo, ya no confía en lo demás.
+[FONDA|aprendi] Yo aprendí el arroz a los doce años, y me salió batido durante meses. Lo tiraba y lo volvía a hacer. Hasta que entendí que el problema no era la mano: era que yo lo destapaba para ver.
+[FONDA|cazuela] Y en la fonda el arroz se hacía en una cazuela ancha de peltre, siempre la misma, para treinta platos. Lo ancho es lo que importa: el arroz en capa delgada se cuece parejo.
+[ERROR|todos] Ahora, lo que hace casi todo el mundo con el arroz. Y no es tu culpa, el arroz es lo más difícil de lo más fácil.
+[ERROR|crudo] Echa el arroz crudo, sin lavar, directo con el jitomate y el agua. Y lo mueve. Y lo vuelve a mover, para que no se pegue. Y destapa a ver cómo va.
+[ERROR|batido] Y le sale batido, como engrudo, los granos pegados unos con otros. O abajo pegado y quemado, y arriba duro, crudo, con el grano blanco en el centro.
+[ERROR|agua] Y luego le echa más agua a lo crudo, y se le bate más. Y al final tiene una cazuela de arroz que no es ni sopa ni arroz.
+[ERROR|culpa] Y la gente dice: es que yo no tengo mano para el arroz. Y no. El arroz no es de mano. Es de tres reglas, y te las voy a enseñar.
+[CIENCIA|almidon] Te explico por qué, sin palabras raras. El grano de arroz está cubierto de un polvito blanco, almidón. Si no lo lavas, ese polvo se hace engrudo con el agua y pega los granos.
+[CIENCIA|freir] Y luego, el freír. Cuando fríes el arroz en el aceite, cada grano se cubre con una capita de grasa, y se tuesta un poco por fuera. Esa capita hace que el grano absorba el caldo despacio y parejo, y que no se pegue al de al lado.
+[CIENCIA|nuez] Y el tostado le da sabor. Por eso se fríe hasta que huele a nuez, a palomita. Ese olor es la señal.
+[CIENCIA|mover] ¿Y por qué no moverlo? Porque cada vez que lo mueves, los granos se frotan entre ellos y sueltan más almidón. Y el almidón suelto, otra vez, es engrudo.
+[CIENCIA|vapor] Y la tapa. El arroz no se cuece en el agua que ves. Se cuece en el vapor que se queda adentro. Cuando el caldo baja y desaparece, lo de arriba se sigue cociendo con el vapor. Si destapas, se escapa el vapor, y lo de arriba se queda crudo.
+[CIENCIA|caliente] Y el caldo caliente. Si echas caldo frío, el arroz deja de hervir, el grano se empieza a ablandar por fuera mientras la olla vuelve a calentar, y se bate. Con el caldo caliente, el hervor sigue y el grano se cuece parejo.
+[CIENCIA|medida] Mira esta medida. Taza y media de arroz. Dos tazas y media de caldo, más lo que trae el jitomate licuado. Esa es la proporción de la fonda para el arroz largo. Siempre la misma.
+[CIENCIA|reposo] Y el reposo de cinco minutos, con la lumbre apagada y tapado. En esos minutos la humedad que quedó abajo sube y se reparte. Los granos de abajo se secan un poquito, los de arriba terminan de ablandarse. Si destapas sin reposo, abajo está mojado y arriba seco.
+[TRUCO|empieza] Ahora sí. El arroz, para seis platos.
+[TRUCO|ficha] Taza y media de arroz de grano largo. Tres cucharadas de aceite. Dos jitomates, un cuarto de cebolla y un diente de ajo, licuados. Dos tazas y media de caldo caliente. Una zanahoria en cuadritos. Media taza de chícharos. Un chile serrano entero. Y una cucharadita de sal.
+[TRUCO|lavar] Primero, lavar el arroz. En un colador, bajo la llave, frotándolo con la mano, hasta que el agua salga casi clara. Un par de minutos.
+[TRUCO|escurrir] Y lo dejo escurrir bien, unos diez minutos. Mojado no se fríe, se cuece. Lo sacudo de vez en cuando en el colador.
+[TRUCO|licuar] Mientras, licuo los dos jitomates con el cuarto de cebolla y el ajo. Sin agua. El jitomate solo se hace líquido.
+[TRUCO|caldo] Y pongo el caldo a calentar en otra olla chica, que esté a punto de hervir cuando lo necesite. Caldo de pollo, el de los huesos de los muslos, si lo hiciste.
+[TRUCO|aceite] Ahora la cazuela. Las tres cucharadas de aceite, a fuego medio. Y cuando el aceite está caliente, el arroz.
+[TRUCO|freir] Y ahora sí se mueve. Este es el único momento en que el arroz se mueve. Con la cuchara de palo, todo el tiempo, que todos los granos pasen por el aceite.
+[TIMER|ocho] Ocho minutos.
+[TRUCO|color] Mira cómo cambia. Primero se pone transparente en las puntas. Luego blanco opaco, como gis. Y luego empieza a tomar un color dorado claro.
+[TRUCO|nuez] Y huélelo. Cuando huele a nuez tostada, a palomita, está listo. Y si lo mueves, suena como arena seca.
+[TRUCO|jitomate] Ahora el jitomate licuado. Escucha cómo chilla. Lo echo todo, y muevo para que se reparta.
+[TIMER|tres] Tres minutos, moviendo, hasta que el jitomate se fría, cambie a un rojo más oscuro y se seque un poco. El arroz tiene que verse rojo y casi seco, no nadando.
+[TRUCO|porque] ¿Por qué freír el jitomate? Porque el jitomate crudo sabe ácido, y si lo echas con el caldo, el arroz sale pálido y agrio. Frito, se pone dulce, y le da ese rojo profundo.
+[TRUCO|caldo2] Y ahora, el caldo caliente. Las dos tazas y media. Mira cómo hierve de inmediato, porque está caliente.
+[TRUCO|verduras] La zanahoria, los chícharos, el chile serrano entero, y la cucharadita de sal.
+[TRUCO|una] Y ahora, una sola vuelta con la cuchara, para repartir las verduras y que no quede arroz pegado en las paredes. Una. Y ya no se vuelve a tocar.
+[TRUCO|probar] Pruebo el caldo antes de tapar. Tiene que estar un poco más salado de lo que te gusta, porque el arroz se va a tomar esa sal.
+[FUEGO|minimo] Y ahora el truco. La tapa. Fuego mínimo, el más bajo.
+[TIMER|dieciocho] Dieciocho minutos. Sin destapar.
+[TRUCO|nodestapar] Ni para ver. Si destapas, se escapa el vapor y lo de arriba se queda crudo. Ese es el error número uno del arroz.
+[TRUCO|reposo] A los dieciocho, apago. Y lo dejo reposar, tapado, cinco minutos más.
+[TRUCO|esponjar] Y ahora sí, destapo. Mira eso. Con un tenedor, no con cuchara, lo esponjo. Levantando desde abajo, separando los granos.
+[TRUCO|chile] El chile serrano, entero, ya está cocido y suave. Se queda arriba, de adorno, y el que se atreve se lo come.
+[TRUCO|listo] Y ya está. Mira nada más. Rojo, suelto, cada grano entero, sin pegar abajo. Así es el arroz de la fonda.
+[TRUCO|grano] Agarra un grano y apriétalo entre los dedos. Tiene que estar suave hasta el centro, sin punto duro, y no deshacerse en pasta. Si tiene un puntito duro, tapa otros tres minutos con la lumbre apagada.
+[ANTES|despues] Este es el antes y el después: el arroz sin lavar, sin freír, movido y destapado, y este, con las tres reglas.
+[SINO|comparar] Uno batido y crudo arriba. El otro suelto y parejo. Es el mismo arroz de la misma bolsa.
+[TRUCO|resumen] Te lo repito en corto: lavar y escurrir. Freír ocho minutos hasta que huela a nuez. Jitomate licuado tres minutos. Caldo caliente, verduras, chile y sal, una vuelta. Tapa, fuego mínimo, dieciocho minutos sin destapar. Cinco de reposo, y esponjar con tenedor.
+[CTA1|libreta] Esto está en la libreta de la fonda, en la página del arroz, y los refritos un poco antes. Al final te digo dónde.
+[REFRITOS|intro] Ahora los frijoles refritos. Si viste el primer video, ya tienes una olla de frijoles de olla. Esto es lo que se hace con ellos.
+[REFRITOS|ficha] Cuatro tazas de frijoles cocidos, y una taza y media de su caldo. Cuatro cucharadas de manteca. Un cuarto de cebolla picada. Y queso para el final.
+[REFRITOS|manteca] La manteca en el sartén, a fuego medio-alto. Las cuatro cucharadas. Sí, cuatro. Los refritos sin manteca son puré de frijol.
+[REFRITOS|cebolla] La cebolla picada, en la manteca, hasta que se dore un poco en las orillas. Un par de minutos.
+[REFRITOS|chillar] Y ahora los frijoles con su caldo, todos de una vez. Escucha eso. Así chillan los frijoles. Y aquí está el truco: un minuto sin moverlos. Que chillen.
+[REFRITOS|porque] Ese minuto es para que los frijoles de abajo se frían de verdad en la manteca caliente. Por eso se llaman refritos. Si los mueves de inmediato, la manteca se enfría y se cuecen en vez de freírse.
+[REFRITOS|machacar] Y ahora a machacar. Con el machacador de frijoles, o con un vaso de vidrio grueso, o con la cuchara. Apretando contra el fondo del sartén.
+[FUEGO|mediobajo] Bajo el fuego a medio-bajo.
+[TIMER|diez] Diez minutos, machacando y moviendo, hasta que se espesen.
+[REFRITOS|punto] Mira el punto. Cuando los mueves, se despegan del sartén como una masa, y dejan ver el fondo un segundo antes de volver a cubrirlo. Ese es el punto.
+[REFRITOS|espesos] Si los quieres más espesos, unos minutos más. Si se te espesaron mucho, un chorrito de caldo. Se espesan más al enfriarse, así que apágalos un poco aguados.
+[REFRITOS|queso] Y el queso por encima. Queso fresco desmoronado, o un queso añejo rallado.
+[REFRITOS|listo] Y ya están. Cremosos, brillantes de manteca, y saben a frijol de olla, no a lata.
+[SERVIR|plato] Y ahora el plato de la comida corrida. El arroz de un lado, los frijoles del otro, y en medio el guisado del día. Los muslos en salsa, la carne de res, las costillas, lo que te haya tocado.
+[SERVIR|caldo] Y en la fonda, antes del plato, el caldo o la sopa de fideo. Y con el plato, tortillas calientes y agua de jamaica.
+[SERVIR|orden] Y una costumbre de la fonda: el arroz se sirve primero, solo, en un platito, después de la sopa. Así lo comía la gente del pueblo. Hoy, en casa, va todo junto.
+[MERCADO|arroz] Ahora, cómo elegir el arroz. Para esto, arroz de grano largo. Es el que queda suelto. El de grano corto, el redondo, es para otras cosas, para el arroz con leche, porque suelta más almidón.
+[MERCADO|bolsa] Que los granos estén enteros. Si la bolsa tiene mucho grano roto, polvito al fondo, ese arroz se bate más fácil.
+[MERCADO|chicharos] Los chícharos, si no hay frescos, los congelados están muy bien. Directo del congelador a la cazuela, con el caldo.
+[MERCADO|manteca] Y la manteca para los refritos. La de cerdo, de la carnicería, si la consigues. Blanca, que huela a limpio. La del súper también sirve.
+[VARIANTE|blanco] Variantes. El arroz blanco: igual, pero sin jitomate. Lo fríes hasta que esté apenas blanco opaco, sin dorarlo, y le echas caldo o agua con una tira de cebolla y un ajo. Mismos tiempos.
+[VARIANTE|verde] El arroz verde: en lugar del jitomate, un chile poblano asado y pelado, licuado con cilantro y un poco de cebolla. Mismo método.
+[VARIANTE|sincaldo] Si no tienes caldo, agua caliente con un poco más de sal. Sale bien, pero el caldo le da otra cosa.
+[VARIANTE|refritos] Y para los refritos, si no tienes manteca, aceite. Quedan buenos, pero no saben igual. Y si los quieres con más sabor, un pedazo de chorizo frito en la manteca antes de los frijoles.
+[ERRORES|batido] Los errores que más veo. Si el arroz se batió, no lo lavaste, o lo moviste después del caldo. Lava, y una sola vuelta.
+[ERRORES|crudo] Si quedó crudo arriba, destapaste, o el caldo estaba frío, o tu tapa no cierra bien. Si la tapa deja salir vapor, ponle un trapo limpio entre la cazuela y la tapa, doblado hacia arriba para que no se queme.
+[ERRORES|quemado] Si se pegó y quemó abajo, el fuego no estaba en lo más bajo. Si tu estufa no baja tanto, un comal entre la flama y la cazuela.
+[ERRORES|palido] Si salió pálido y sin sabor, no freíste el jitomate los tres minutos, o el arroz no se doró antes. El color se hace antes del caldo.
+[ERRORES|refritos] Y si los refritos te quedaron secos como pasta, los dejaste mucho tiempo o les faltó caldo. Un chorrito de caldo caliente, y se arreglan en un minuto.
+[PREGUNTAS|intro] Y ahora las preguntas que me hacen siempre.
+[PREGUNTAS|doble] Primera: ¿y si hago el doble? Doble de todo, la misma proporción, en una cazuela más ancha, no más alta. El tiempo es casi el mismo, unos veinte minutos. Si la cazuela es muy honda, lo de abajo se aplasta y se bate.
+[PREGUNTAS|olla] Segunda: ¿en olla arrocera? Sí. Lavas y fríes en el sartén igual, con el jitomate, y luego todo a la arrocera con el caldo. Pero el frito en la cazuela no te lo saltes.
+[PREGUNTAS|lata] Tercera: ¿los refritos con frijoles de lata? Sí. Dos latas grandes, escurridas, y en lugar del caldo de la olla, agua o caldo de pollo. Quedan bien. Pero con los de olla, son otra cosa.
+[PREGUNTAS|chile] Y cuarta: ¿el chile entero pica? Casi nada, porque va entero, sin abrir. Le da aroma. Si lo quieres picoso, ábrelo antes de echarlo.
+[PREGUNTAS|integral] Y quinta: ¿con arroz integral? Se puede, pero es otro arroz. Lleva más caldo, unas tres tazas, y como cuarenta minutos tapado. No lo cambies por el blanco en la comida corrida si quieres el sabor de la fonda.
+[GUARDAR|arroz] Cómo se guarda. Y aquí pon atención, porque el arroz es delicado. El arroz cocido no se deja horas en la estufa. Que se enfríe, y al refrigerador antes de dos horas, mejor en la primera.
+[GUARDAR|dias] En el refrigerador, en un recipiente tapado, cómetelo en uno o dos días.
+[GUARDAR|recalentar] Para recalentar, un chorrito de agua o caldo, tapado, a fuego bajo, hasta que esté bien caliente. Y se recalienta una sola vez. Lo que sobró de lo recalentado, ya no se guarda.
+[GUARDAR|refritos] Los refritos aguantan cuatro días en el refrigerador. Y se congelan muy bien, en bolsas planas, hasta tres meses. Para recalentar, al sartén con un chorrito de agua.
+[SOBRA|acorazados] Y con lo que sobra, los tacos de la fonda que más me piden: los acorazados. Tortilla caliente, una cucharada de arroz, y encima el guisado que sobró. Si te quedó carne de res de la otra semana, perfecto.
+[SOBRA|doble] Se hacen con dos tortillas, porque llevan mucho. El arroz abajo absorbe la salsa del guisado.
+[SOBRA|molletes] Y con los refritos que sobran, molletes. Un bolillo abierto, los refritos untados, queso encima, al comal tapado o al horno hasta que se derrita.
+[SOBRA|pico] Y encima, una salsa fresca: jitomate, cebolla, chile y cilantro picados, con sal y limón. Eso es una cena de fonda.
+[COSTO|cuenta] Ahora la cuenta de esos tres dólares.
+[COSTO|arroz] El arroz: la taza y media de arroz, como ochenta centavos. Los jitomates, la cebolla y el ajo, un dólar. El caldo, si es de los huesos del pollo, casi nada; si es de cubo, treinta centavos. Las verduras y el aceite, un dólar. Son unos tres dólares para seis platos. Cincuenta centavos el plato de arroz.
+[COSTO|frijoles] Los refritos: los frijoles de la olla, que ya te dije que salen a centavos el plato, más la manteca, la cebolla y el queso. Unos tres dólares por todo el sartén, que da para ocho platos. Cuarenta centavos el plato.
+[COSTO|guisado] Y el guisado. Un muslo con su salsa, de los que te enseñé, sale como un dólar. Tortillas, veinte centavos. Agua de jamaica, veinte centavos.
+[COSTO|total] Arroz, frijoles, un muslo, tortillas y agua fresca: dos dólares con treinta.
+[PRECIO|plato] Una comida corrida completa por dos dólares con treinta, hecha en tu casa. Menos que los tres de la fonda.
+[COSTO|restaurante] Y el mismo plato en cualquier restaurante, arroz, frijoles y pollo en salsa, te cobra doce o quince dólares. Y muchas veces el arroz es de bolsa recalentado.
+[COSTO|fonda] Por eso la fonda pudo dar de comer a un pueblo durante cuarenta años. No por los ingredientes caros. Por hacer bien lo barato.
+[CTA2|recetario] Y lo que te dije. Todo lo de esta libreta lo pasé a limpio en un recetario: El Recetario de la Fonda.
+[CTA2|cincuenta] Son cincuenta recetas de esta cocina, con las cantidades exactas, los tiempos y el fuego. Este arroz está en la página cuarenta y ocho, los refritos en la catorce, y los huevos de la semana pasada en la cincuenta y cinco.
+[CTA2|precio] Cuesta diecinueve dólares. Las cincuenta recetas de la fonda, por menos de lo que cuesta una comida para dos en cualquier restaurante.
+[CTA2|link] El enlace está en la descripción, y también en el código que ves en la pantalla. Lo apuntas con la cámara del teléfono y ya.
+[CIERRE|resumen] Ya sabes: lavar, freír hasta que huela a nuez, caldo caliente, una vuelta, y dieciocho minutos sin destapar. Y los frijoles, que chillen un minuto en la manteca.
+[CIERRE|proximo] Y la semana que viene, el último guisado de la temporada: las chuletas de cerdo. Porque las chuletas que te quedan secas no son culpa de la carne: es cómo las fríes.
+[CIERRE|adios] Aquí te espero. La cocina se queda abierta.

@@ -1,0 +1,113 @@
+[HOOK|aceite] Deja de freírlos en aceite: así los hacían en la fonda y quedan crujientes y jugosos.
+[HOOK|sonido] Escucha esa piel. Así truena un muslo de pollo cuando se cocina en su propia grasa, sin una gota de aceite.
+[HOOK|promesa] Hoy te enseño los muslos de la fonda. Un sartén frío, veinte minutos sin tocarlos, y una salsa que se pone alrededor, nunca encima.
+[HOOK|cred] Soy Claudio. Cuarenta años en esta cocina, ochenta comidas por día.
+[HOOK|plan] Y te enseño a elegirlos, a saber cuándo están listos sin adivinar, a guardarlos, los tacos que salen con lo que sobra, y cuánto cuesta cada plato.
+[RETOMA|repollo] La semana pasada te enseñé el repollo dorado en el sartén. Y si lo hiciste, ya sabes que la verdura sabe mejor sin agua. Hoy el pollo, que sabe mejor sin aceite.
+[FONDA|miercoles] En la fonda, el pollo sale los miércoles. Y siempre muslo, nunca pechuga.
+[FONDA|muslo] Porque el muslo es la parte del pollo que más sabe, la que no se seca, y además la más barata. Mi amá decía que la pechuga es para los que no saben cocinar el pollo.
+[FONDA|ochenta] Ochenta platos de pollo en un día te enseñan rápido qué funciona. Y lo que funciona es esto.
+[FONDA|aprendi] Y yo también los freí en aceite durante años. Hasta que un día se me acabó el aceite a media mañana, con el pollo ya cortado. No había de otra: los puse en el sartén así, solos. Y salieron mejor que nunca. A veces se aprende por falta de algo.
+[ERROR|todos] Ahora, lo que hace casi todo el mundo. Y no es tu culpa, así lo hacemos casi todos al principio.
+[ERROR|aceite] Calienta un buen chorro de aceite en el sartén, bien caliente. Echa los muslos con la piel abajo, y chisporrotea todo, salpica para todos lados.
+[ERROR|mover] Y a los dos minutos los voltea, los mueve, los vuelve a voltear. Porque le da miedo que se quemen.
+[ERROR|resultado] Y el resultado: la piel por fuera quemada en partes y en otras blanca, gomosa, con grasa debajo que no se derritió. El pollo por dentro, a veces crudo junto al hueso. Y el sartén nadando en aceite.
+[ERROR|salsa] Y luego le echa la salsa encima, por todo el pollo. Y lo poco que estaba crujiente se ablanda en un minuto.
+[ERROR|tapa] Y hay quien, para que se cocine por dentro, tapa el sartén. El vapor se queda adentro, cae sobre la piel, y la piel se cuece como si estuviera hervida.
+[ERROR|culpa] Y la gente piensa: es que la piel del pollo es así. Y no. La piel del pollo puede quedar como chicharrón. Pero hay que dejarla trabajar.
+[CIENCIA|piel] Te explico por qué, sin palabras raras. Mira este corte de la piel del muslo. Arriba está la piel, que es delgadita. Debajo, una capa de grasa. Y debajo, la carne.
+[CIENCIA|grasa] Para que la piel quede crujiente, esa grasa de abajo se tiene que derretir y salir. Si se queda, la piel queda blanda y gomosa, aunque por fuera esté dorada.
+[CIENCIA|frio] Y la grasa se derrite despacio. Por eso el sartén empieza frío. Así, mientras se calienta, la grasa tiene tiempo de derretirse y salir, antes de que la piel se dore por fuera.
+[CIENCIA|caliente] Si el sartén ya está hirviendo, la piel se dora por fuera en dos minutos, y la grasa de abajo se queda atrapada. Por fuera quemado, por dentro gomoso.
+[CIENCIA|propia] Y esa grasa que sale es la que fríe la piel. El pollo se fríe solito en su propia grasa. Por eso no hace falta aceite. Al final, en el sartén hay más grasa de la que habrías echado tú.
+[CIENCIA|agua] Y el agua es la enemiga de lo crujiente. Mientras la piel tenga agua, no se dora, se cuece. Por eso se secan bien, por eso no se tapan, y por eso la salsa va alrededor y no encima.
+[CIENCIA|tocar] ¿Y por qué no tocarlos? Porque al principio la piel se pega al sartén. Si la jalas, se rompe y se queda pegada. Cuando ya está dorada y crujiente, se suelta sola. El sartén te avisa cuándo.
+[CIENCIA|hueso] Y el hueso ayuda. Calienta la carne desde adentro, poco a poco, y la protege. Por eso el muslo con hueso queda más jugoso que el deshuesado, aunque tarde un poco más.
+[CIENCIA|ochenta] Y el muslo se cocina hasta ochenta grados por dentro. El pollo ya es seguro a setenta y cuatro, pero el muslo tiene más tejido, y a ochenta se pone suave y jugoso, se separa del hueso. No se seca, como la pechuga.
+[TRUCO|empieza] Ahora sí. Esto es para cuatro platos, dos muslos por persona.
+[TRUCO|ficha] Ocho muslos de pollo con piel y con hueso. Dos cucharaditas de sal. Una cucharadita de pimienta. Una taza y media de salsa de chile guajillo, o de jitomate con chipotle. Media cebolla en tiras. Y cilantro picado para el final.
+[TRUCO|secar] Lo primero, y lo más importante: secarlos. Con papel o con un trapo limpio, por los dos lados, sobre todo la piel. Que no quede nada mojado.
+[TRUCO|recortar] Si alguno tiene mucha piel colgando por las orillas, la acomodo para que cubra bien el muslo. Y si tiene pedazos de grasa sueltos muy grandes, se los quito con el cuchillo.
+[TRUCO|sal] La sal y la pimienta, por los dos lados. Más del lado de la piel. Si tienes tiempo, déjalos así con la sal media hora en el refrigerador, destapados. La piel se seca todavía más.
+[TRUCO|temperatura] Y una cosa más: si los dejaste en el refrigerador, sácalos quince minutos antes. Un muslo helado tarda más y se cocina disparejo.
+[TRUCO|frio] Y ahora el truco. El sartén frío. Sin aceite. Sin nada.
+[TRUCO|acomodar] Acomodo los muslos con la piel hacia abajo, uno junto al otro, sin que se encimen. Bien planos, que toda la piel toque el sartén.
+[FUEGO|medio] Y ahora prendo. Fuego medio. Ni alto ni bajo.
+[TRUCO|empieza2] Los primeros minutos no pasa nada. Luego empiezas a oír un chisporroteo suavecito. Es la grasa que empieza a salir.
+[TIMER|veinte] Y ahora, dieciocho a veintidós minutos sin tocarlos.
+[TRUCO|notocar] Sin tocarlos. Sin moverlos. Sin levantarlos para ver. Ese es el truco más difícil de todos, porque las manos se te van solas.
+[TRUCO|ver] Mira cómo se va juntando la grasa en el sartén, dorada y transparente. Y mira la orilla de la piel: se va poniendo dorada, de abajo hacia arriba.
+[TRUCO|olor] Y el olor. A los diez minutos ya huele a pollo asado. Ese olor que hace que la gente de la calle pregunte qué hay de comer.
+[TRUCO|sonido] El sonido te dice cómo va. Tiene que ser un chisporroteo constante, como de lluvia. Si suena muy fuerte y humea, baja un poquito el fuego. Si no suena nada, súbele.
+[TRUCO|probar] A los dieciocho minutos, pruebo con una pinza. Si el muslo se suelta solito del sartén, está listo. Si se pega, déjalo dos o tres minutos más.
+[TRUCO|voltear] Y los volteo. Mira esa piel. Dorada, pareja, dura. Le pego con la pinza y suena hueca, como una galleta.
+[TIMER|cinco] Cinco minutos del otro lado.
+[TRUCO|grasa] Y ahora saco los muslos a un plato, con la piel hacia arriba, y miro la grasa que quedó. Hay mucha. Dejo una cucharada en el sartén, y la demás la guardo en un frasco. No la tires, ya te digo para qué.
+[TRUCO|cebolla] La cebolla en tiras, en esa cucharada de grasa. Tres minutos, moviendo, hasta que se ablande.
+[TRUCO|salsa] Y ahora la salsa. La taza y media. Al sartén, con la cebolla.
+[TRUCO|regresar] Y regreso los muslos, con la piel hacia arriba, acomodados encima de la salsa. Y aquí está lo importante: la salsa queda alrededor, abajo. La piel queda fuera, seca, arriba.
+[TRUCO|notapa] Sin tapa. Si tapas, el vapor ablanda la piel.
+[TRUCO|porque] ¿Y por qué la salsa al final y no al principio? Porque si el pollo se cocina en la salsa desde el principio, es un pollo guisado. Rico, pero la piel queda blanda. Aquí el pollo ya está casi cocido cuando entra la salsa. La salsa solo termina el trabajo y le da sabor por abajo.
+[TIMER|diez] Ocho a diez minutos, a fuego medio-bajo, que la salsa hierva suave alrededor y termine de cocinar el pollo por debajo.
+[TRUCO|termometro] Y ahora el termómetro. En la parte más gruesa del muslo, cerca del hueso, sin tocar el hueso. Ochenta grados. Si marca menos, unos minutos más.
+[TRUCO|sintermo] Si no tienes termómetro, consíguete uno. Cuesta lo mismo que dos kilos de pollo y te dura años. Mientras, pica con un cuchillo junto al hueso: el jugo tiene que salir transparente, sin nada de rosa, y la carne se tiene que separar del hueso fácil. Pero el termómetro es lo único seguro.
+[TRUCO|cilantro] Y el cilantro picado por encima, solo en la salsa, no en la piel.
+[TRUCO|listo] Y ya están. Mira nada más. La piel arriba, crujiente, que truena con el cuchillo. Y abajo, la carne jugosa en su salsa.
+[ANTES|despues] Este es el antes y el después: el muslo frito en aceite, volteado cada dos minutos y bañado en salsa, y este, en su propia grasa con la salsa alrededor.
+[SINO|comparar] El primero, la piel blanda y pálida. El segundo, la piel como chicharrón. Mismo pollo, mismo precio.
+[TRUCO|resumen] Te lo repito en corto: secar y salar. Piel abajo en el sartén frío, fuego medio, dieciocho a veintidós minutos sin tocar. Voltear, cinco minutos. Dejar una cucharada de grasa. Cebolla tres minutos, salsa alrededor, piel arriba, ocho a diez minutos hasta ochenta grados.
+[CTA1|libreta] Esto está en la libreta de la fonda, con las demás recetas. Al final te digo dónde.
+[SALSA|guajillo] Y la salsa. Puedes usar la que tengas, pero esta es la de la fonda. Cuatro chiles guajillo, sin semillas y sin venas, en agua caliente diez minutos, hasta que se ablanden.
+[SALSA|licuar] Los licuo con dos jitomates, un diente de ajo, un pedazo de cebolla, media cucharadita de sal y un poco del agua del remojo. Y la cuelo, para que no queden pellejitos. Sale justo la taza y media.
+[SALSA|chipotle] La otra opción: dos jitomates licuados con uno o dos chiles chipotles de lata y un poco de su adobo. Más ahumada, más picosa.
+[SALSA|comprada] Y si no tienes tiempo, una salsa roja de frasco también funciona. Lo importante no es la salsa, es dónde la pones.
+[SERVIR|plato] En la fonda se sirve con arroz rojo y frijoles de olla. Un muslo, o dos si tienes hambre, con salsa por encima del arroz, y la piel aparte.
+[SERVIR|tortilla] Y con tortillas calientes. La gente arranca un pedazo de piel crujiente, lo mete en la tortilla con carne y salsa, y ese es el mejor taco del día.
+[SERVIR|salsa] Y la salsa del sartén, que tiene la grasa del pollo y el jugo que soltó la carne, es lo mejor del plato. Que no se quede en el sartén. Va encima del arroz.
+[MERCADO|elegir] Ahora, cómo elegirlos en el mercado.
+[MERCADO|piel] Lo primero, que tengan piel. Sin piel, este truco no funciona. Y que la piel cubra bien el muslo, sin pedazos que falten.
+[MERCADO|hueso] Con hueso. El hueso hace que la carne se cocine más parejo y quede más jugosa. Y te sale más barato que el muslo sin hueso.
+[MERCADO|color] La carne, rosada, y la piel, de color claro, cremita o amarillenta, sin manchas oscuras. Y que no huela a nada. El pollo fresco casi no huele.
+[MERCADO|tamano] Y que sean parejos de tamaño, para que todos estén listos al mismo tiempo. En la carnicería del mercado se los puedes pedir así.
+[MERCADO|charola] Y en el súper, fíjate que la charola no tenga mucho líquido rosado en el fondo. Mientras menos líquido, más fresco.
+[VARIANTE|pierna] Variantes. Con pierna y muslo juntos, lo que algunos llaman pierna entera, también funciona. Tarda unos cinco minutos más, y el termómetro manda.
+[VARIANTE|verde] Con salsa verde: tomates verdes, serrano, ajo y cilantro, hervidos y licuados. La misma taza y media. Queda más ácido, muy rico con este pollo.
+[VARIANTE|papas] Y en la fonda, cuando hay papas cocidas del día anterior, se doran en la grasa que guardaste, en otro sartén. Papas doradas en grasa de pollo. Eso nada más ya vale el video.
+[VARIANTE|horno] Y si quieres hacer muchos, el horno. Charola, piel arriba, a doscientos grados, unos cuarenta minutos. Sale bien, aunque en el sartén la piel queda más pareja.
+[ERRORES|pegado] Los errores que más veo. Si la piel se te quedó pegada al sartén, la moviste antes de tiempo. Espera. Cuando está lista, se suelta sola.
+[ERRORES|blanda] Si la piel quedó blanda, puede ser que no los secaste, que tapaste el sartén, o que la salsa le cayó encima. Las tres cosas meten agua.
+[ERRORES|quemada] Si la piel se quemó y el pollo está crudo, el fuego estaba muy alto. Fuego medio, y paciencia. Este es un pollo de veinte minutos de un lado, no de cinco.
+[ERRORES|salpica] Si salpicó muchísimo, el pollo estaba mojado o recién salido del refrigerador con hielo. Sécalo bien, y si estaba congelado, que se descongele completo antes.
+[ERRORES|apretados] Y si los encimas, o el sartén es chico, se cuecen en su vapor y no se doran. Ocho muslos necesitan un sartén de treinta centímetros. Si no cabe, dos sartenes, o en dos tandas.
+[MUCHOS|fonda] Para mucha gente, como en la fonda, los sartenes de fierro van en fila en las cuatro hornillas, ocho muslos en cada uno. Y la salsa se hace aparte, en una olla grande, y se reparte al final.
+[DOS|mitad] Y si son dos personas, cuatro muslos en un sartén mediano. Una cucharadita de sal, media de pimienta, tres cuartos de taza de salsa y un cuarto de cebolla. Los tiempos no cambian, porque el muslo es el mismo.
+[PREGUNTAS|intro] Y ahora las preguntas que me hacen siempre.
+[PREGUNTAS|pechuga] Primera: ¿con pechuga? No. La pechuga tiene poca grasa en la piel y se seca a los setenta y cuatro grados. Para la pechuga hay otras recetas. Esta es para el muslo.
+[PREGUNTAS|sinpiel] Segunda: ¿sin piel? Se puede hacer con un chorrito de aceite y la salsa igual, pero ya no es esta receta. Lo crujiente es la piel.
+[PREGUNTAS|antiadherente] Tercera: ¿qué sartén? Uno de fierro o de acero grueso es el mejor. El antiadherente también funciona, y la piel se suelta más fácil. Lo que no sirve es uno muy delgado, porque se calienta disparejo y quema en el centro.
+[PREGUNTAS|freidora] Y cuarta: ¿en la freidora de aire? Sale una piel crujiente, sí. Pero no tienes la grasa para la cebolla y la salsa. En el sartén haces todo en uno.
+[PREGUNTAS|antes] Quinta: ¿los puedo dejar salados desde la noche? Sí, y mejor. Salados, destapados, en un plato en el refrigerador. La piel se seca toda la noche y sale más crujiente. En la fonda, el pollo del miércoles se sala el martes.
+[GUARDAR|refri] Cómo se guarda. Los muslos que sobran, en un recipiente tapado, con su salsa, al refrigerador. Aguantan tres días.
+[GUARDAR|recalentar] Para recalentar, al sartén con su salsa, tapado, hasta que la salsa hierva y el pollo esté bien caliente. La piel ya no va a estar crujiente, eso es solo el primer día.
+[GUARDAR|piel] Si quieres que la piel vuelva a crujir, un truco: quítale la salsa, ponlo con la piel abajo en un sartén seco, tres o cuatro minutos a fuego medio.
+[GUARDAR|grasa] Y la grasa que guardaste en el frasco, al refrigerador. Dura un mes. Para freír papas, para el arroz, para los frijoles refritos. Es de lo más rico que hay en la cocina.
+[SOBRA|tacos] Y con lo que sobra, tacos. Deshebro el pollo que sobró, sin hueso, con los dedos.
+[SOBRA|sarten] Al sartén con una cucharada de esa grasa, la salsa que sobró, y un poco de cebolla. Que se caliente y la salsa se pegue a la carne.
+[SOBRA|servir] En tortillas calientes, con cebolla picada, cilantro y limón. Ocho muslos de ayer dan para unos doce tacos.
+[SOBRA|caldo] Y los huesos no se tiran. A una olla con agua, media cebolla, un ajo, sal, una hora a fuego bajo. Eso es caldo para el arroz de mañana.
+[SOBRA|torta] O una torta: pan bolillo abierto, frijoles refritos untados, el pollo deshebrado con su salsa, aguacate y cebolla. Para llevar al trabajo.
+[COSTO|cuenta] Ahora la cuenta.
+[COSTO|pollo] Los ocho muslos con piel y hueso, como un kilo y medio, andan en unos seis dólares en el súper.
+[COSTO|resto] La salsa de guajillo, con los chiles y los jitomates, como un dólar con veinte. La cebolla, treinta centavos. El cilantro, cincuenta centavos.
+[COSTO|total] Son unos ocho dólares por todo el sartén. Y salen cuatro platos, dos muslos cada uno.
+[PRECIO|plato] O sea, dos dólares el plato. Pollo con piel crujiente y salsa de guajillo, por dos dólares.
+[COSTO|frasco] Y encima te quedas con un frasco de grasa de pollo, que en algunas tiendas venden caro.
+[COSTO|fonda] En la fonda, el miércoles de pollo es el día que más gente llega. Y el muslo es el que nos deja dar un plato así de bueno a ese precio.
+[COSTO|comparar] Y compáralo con un pollo rostizado ya hecho. Cuesta lo mismo o más, es más chico, y no trae la salsa ni la piel así. Hacerlo tú son veinticinco minutos, casi todos sin tocarlo.
+[CTA2|recetario] Y lo que te dije. Todo lo de esta libreta lo pasé a limpio en un recetario: El Recetario de la Fonda.
+[CTA2|cincuenta] Son cincuenta recetas de esta cocina, con las cantidades exactas, los tiempos y el fuego. Estos muslos están en la página treinta, y el repollo de la semana pasada en la cuarenta y siete.
+[CTA2|precio] Cuesta diecinueve dólares. Las cincuenta recetas de la fonda, por menos de lo que cuesta una comida para dos en cualquier restaurante.
+[CTA2|link] El enlace está en la descripción, y también en el código que ves en la pantalla. Lo apuntas con la cámara del teléfono y ya.
+[CIERRE|resumen] Ya sabes: el pollo no necesita aceite. Sartén frío, piel abajo, veinte minutos sin tocar, y la salsa alrededor.
+[CIERRE|proximo] Y la semana que viene, la carne. Te voy a enseñar un pedazo de res que sale a tres dólares de carne por plato, y que la gente pensaba que era carne cara. La fonda vivía de ese truco.
+[CIERRE|adios] Aquí te espero. La cocina se queda abierta.

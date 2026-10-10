@@ -1,0 +1,113 @@
+[HOOK|olor] El repollo hervido huele a hospital. Así lo hacíamos en la fonda.
+[HOOK|sarten] Sin una gota de agua. En el sartén, a fuego fuerte, con tocino, hasta que se dora en las orillas y se pone dulce.
+[HOOK|promesa] Hoy te enseño el repollo de la fonda. Un kilo de repollo, quince minutos, y la gente que dice que odia el repollo te pide otro plato.
+[HOOK|cred] Soy Claudio. Cuarenta años en esta cocina, ochenta comidas por día.
+[HOOK|plan] Y te enseño a elegirlo en el mercado, a cortarlo, a guardarlo, lo que se hace con lo que sobra, y cuánto cuesta cada plato. Que te adelanto: es de lo más barato que vas a comer este año.
+[RETOMA|cafe] La semana pasada te enseñé el café de olla, lo primero que se prende en la mañana. Hoy volvemos a la comida corrida, a lo que va en el plato junto a la carne.
+[FONDA|lunes] En la fonda, el repollo sale los lunes. Porque el repollo aguanta todo el fin de semana sin echarse a perder, y el lunes es el día que llega menos verdura al mercado.
+[FONDA|odian] Y te digo la verdad: cuando lo pusimos por primera vez en el pizarrón, la mitad de la gente pidió que se lo cambiaran por arroz. Decían que el repollo les recordaba la escuela, o el hospital.
+[FONDA|ama] Mi amá les decía: pruébelo, y si no le gusta, le traigo arroz sin cobrarle. Nadie pidió el arroz. Y desde entonces el repollo del lunes se acaba antes que la carne.
+[FONDA|nombres] Y para que nos entendamos: yo le digo repollo. En otros lados le dicen col, o berza. Es la misma cabeza verde, de hojas apretadas.
+[FONDA|barato] Y el repollo tiene otra cosa: es de las verduras más baratas que hay, y de las que más rinden. Un repollo de un kilo da seis platos. Para una fonda que da ochenta comidas al día, eso importa.
+[ERROR|todos] Ahora, lo que hace casi todo el mundo. Y no es tu culpa, así lo dicen muchas recetas, y así se hace en muchos comedores grandes.
+[ERROR|hervir] Corta el repollo en pedazos, lo echa en una olla con agua, y lo deja hervir veinte, treinta minutos, hasta que esté blando.
+[ERROR|olor] Y a los diez minutos la casa entera huele a azufre. Ese olor que se mete en las cortinas, que sale hasta la calle, que te avisa que alguien está cocinando repollo antes de que llegues a la puerta.
+[ERROR|plato] Y en el plato, el repollo sale aguado, transparente, flojo, con un sabor amargo y medio sulfuroso. Y nadie se lo quiere comer.
+[ERROR|culpa] Y la gente dice: es que el repollo es así. Y no. El repollo no huele así. Huele así porque lo hirvieron demasiado.
+[ERROR|crudo] Y está el otro lado: la gente que como no le gusta el repollo cocido, solo lo come crudo, en los tacos o en ensalada. Y está bien, crudo es rico. Pero se pierden el repollo dorado, que es otra verdura.
+[CIENCIA|azufre] Te explico por qué, sin palabras raras. El repollo, como el brócoli y la coliflor, tiene en sus hojas unas sustancias con azufre. Crudo, casi no huelen. Por eso el repollo crudo de los tacos sabe fresco.
+[CIENCIA|calor] Pero cuando lo cocinas, esas sustancias se van rompiendo, y van soltando el olor a azufre. Y mientras más tiempo lo cocines en agua, más se rompen y más huele.
+[CIENCIA|reloj] Mira este reloj del olor. En los primeros cinco minutos, el repollo casi no huele. A los diez ya empieza. Y a los veinte o treinta minutos de hervor, que es lo que dicen muchas recetas, está en lo peor. Ahí es cuando la casa huele a hospital.
+[CIENCIA|agua] Y el agua lo empeora: la olla tapada guarda el olor, y el agua se lleva el sabor dulce del repollo y deja el amargo.
+[CIENCIA|dulce] Porque el repollo es dulce. Tiene azúcar natural. Y cuando lo pones en un sartén caliente y seco, en vez de en agua, esa azúcar se dora en las orillas de las hojas. Se pone como cebolla frita: dulce, tostada.
+[CIENCIA|rapido] Y en el sartén, con fuego medio-alto, el repollo se cocina en diez o doce minutos. Antes de que llegue lo peor del olor. Y el vapor que suelta se va al aire, no se queda encerrado.
+[CIENCIA|vinagre] Y al final, el vinagre. Una cucharada nada más. Le despierta el sabor, como el limón a un taco. Y equilibra lo dulce con lo graso del tocino.
+[CIENCIA|resumen] O sea: poco tiempo, sin agua, sin tapa, y fuego fuerte. Todo lo contrario de la olla.
+[CIENCIA|sal] Y la sal ayuda. Al echarla con la primera tanda, saca un poquito de agua de las hojas, que se evapora en el sartén caliente. El repollo se seca por fuera y se dora más rápido.
+[TRUCO|empieza] Ahora sí. Esto es para seis platos.
+[TRUCO|ficha] Ciento cincuenta gramos de tocino picado. Una cebolla en tiras. Un repollo de un kilo, en tiras de dos centímetros. Una cucharadita de sal. Media cucharadita de pimienta. Media cucharadita de chile de árbol molido. Una cucharada de mantequilla. Y una cucharada de vinagre de manzana.
+[TRUCO|hojas] Primero, el repollo. Le quito las dos o tres hojas de afuera, las que están maltratadas o sucias. Esas no sirven.
+[TRUCO|mitad] Lo parto a la mitad, de arriba abajo, por el tronco. Y cada mitad otra vez a la mitad. Quedan cuatro cuartos.
+[TRUCO|tronco] Y a cada cuarto le corto el tronco, ese triángulo duro y blanco del centro. Un corte en diagonal, y sale.
+[TRUCO|tiras] Y ahora, cada cuarto acostado en la tabla, lo corto en tiras de dos centímetros. Como de un dedo de ancho. Ni muy finas, que se deshacen, ni muy gruesas, que se quedan crudas.
+[TRUCO|separar] Las separo con los dedos, para que no queden bloques pegados. Mira cuánto sale de un kilo. Parece muchísimo, pero se va a hacer la mitad.
+[TRUCO|sarten] El sartén. Necesitas uno grande, de treinta centímetros o más, o una cazuela ancha. Mientras más fondo plano tenga, más repollo toca el metal caliente y más se dora. Este de fierro es el de la fonda, pero uno de los normales sirve.
+[TRUCO|lavar] Si lo quieres lavar, lávalo antes de cortarlo, entero. Y lo secas bien. Lo que no quieres es meter repollo mojado al sartén, porque el agua es justo lo que estamos evitando.
+[TRUCO|tocino] Ahora el tocino. Al sartén frío, picado en cuadritos, y a fuego medio. Que se derrita la grasa despacio y se dore.
+[TRUCO|sacar] Cuando está dorado y crujiente, lo saco con la cuchara y lo dejo en un plato. Aquí sí va dorado del todo, porque ya no vuelve al fuego. Y la grasa se queda en el sartén.
+[TRUCO|cebolla] La cebolla en tiras, en la grasa del tocino. Cuatro minutos, moviendo, hasta que se ablande y empiece a tomar color en las orillas.
+[FUEGO|medioalto] Y ahora subo el fuego. Medio-alto. Que el sartén esté bien caliente antes del repollo.
+[TRUCO|tanda1] El repollo va en dos tandas. La primera mitad, con la sal. Y lo revuelvo en la grasa, que se brille.
+[TRUCO|baja] Lo dejo un par de minutos, moviendo de vez en cuando, hasta que baje y se haga la mitad.
+[TRUCO|tanda2] Y entonces la segunda mitad. Si echas todo de golpe, no cabe, y el de abajo se cuece en su propia agua en vez de dorarse.
+[TRUCO|pinzas] Para moverlo, uso unas pinzas o dos cucharas de palo, levantando de abajo hacia arriba, como si revolvieras una ensalada. Así lo de abajo sube y lo de arriba baja a dorarse.
+[TRUCO|especias] Y ahora la pimienta y el chile de árbol molido.
+[TIMER|doce] Diez a doce minutos en total, sin tapa y sin agua.
+[TRUCO|quieto] Y aquí está el truco que casi nadie hace: lo dejas quieto. Un minuto sin moverlo, para que lo de abajo se dore. Luego lo revuelves, y otro minuto quieto. Así, todo el tiempo.
+[TRUCO|sonido] Escucha cómo suena. Tiene que chisporrotear. Si deja de sonar y empieza a burbujear como si hirviera, el fuego está bajo o echaste demasiado. Súbele.
+[TRUCO|dorado] Mira las orillas. Doraditas, casi tostadas en algunas partes. Eso es lo dulce. El repollo de olla nunca tiene eso.
+[TRUCO|grasa] Si ves que el sartén se secó y el repollo se empieza a pegar, una cucharadita de manteca o de aceite por la orilla. No agua. Grasa.
+[TRUCO|probar] Pruebo una tira. Tiene que estar tierna, pero con un poquito de mordida en la parte blanca de la hoja. Si está dura, un par de minutos más.
+[TRUCO|apagar] Y apago. Y ahora lo que va fuera del fuego.
+[TRUCO|mantequilla] La cucharada de mantequilla, que se derrita con el calor del sartén.
+[TRUCO|regresar] El tocino crujiente de vuelta.
+[TRUCO|vinagrefin] Y la cucharada de vinagre de manzana, por todo el sartén. Revuelvo. Escucha cómo chilla un segundo y se acaba.
+[TRUCO|porque] ¿Por qué fuera del fuego? Porque si lo echas con la lumbre prendida, el vinagre se evapora y te pica en la nariz, y al repollo le llega menos. Apagado, se queda en el repollo.
+[TRUCO|listo] Y ya está. Mira nada más. Dorado en las orillas, brillante, el tocino crujiente por encima. Y huele a tocino y a cebolla frita. Nada de hospital.
+[ANTES|despues] Este es el antes y el después: el repollo hervido treinta minutos en la olla, y este, doce minutos en el sartén.
+[SINO|comparar] El mismo repollo de un kilo. Uno aguado y transparente. El otro dorado y dulce. La diferencia es el agua.
+[TRUCO|resumen] Te lo repito en corto: tocino dorado y fuera. Cebolla cuatro minutos. Repollo en dos tandas, a fuego medio-alto, diez a doce minutos sin tapa y sin agua. Apagas, mantequilla, tocino y vinagre.
+[CTA1|libreta] Esto está escrito en la libreta de la fonda, con todas las demás recetas. Al final te digo dónde las puedes tener.
+[SERVIR|plato] En la fonda lo servimos junto a la carne de puerco, las chuletas, el pollo. Y con unos frijoles de olla al lado, es un plato completo.
+[SERVIR|tortilla] Y mucha gente lo come en taco, solo, con tortilla caliente y salsa verde. Es un taco de guisado de los buenos.
+[SERVIR|caliente] Y se sirve recién hecho. El repollo dorado es como unas papas fritas: en el momento, crujiente en las orillas. Si espera media hora tapado, se ablanda. Bueno igual, pero ya no es lo mismo.
+[MERCADO|elegir] Ahora, cómo elegirlo en el mercado.
+[MERCADO|pesado] Lo agarras con la mano, y tiene que pesar. Un repollo bueno pesa más de lo que parece por su tamaño. Si está ligero, está seco por dentro o tiene las hojas flojas.
+[MERCADO|apretado] Las hojas, apretadas y firmes. Lo aprietas y no cede. Si se hunde, está viejo.
+[MERCADO|hojas] Las hojas de afuera, verdes y brillantes. Si están amarillas, con manchas negras o arrugadas, lleva mucho tiempo cortado.
+[MERCADO|tronco] Y fíjate en el tronco de abajo. Que esté blanco o verde clarito, húmedo. Si está café, seco o con grietas, ya tiene días.
+[MERCADO|uno] Un repollo mediano anda en un kilo, justo lo de la receta. Si es más grande, guarda el sobrante para mañana.
+[MERCADO|morado] Y el repollo morado también sirve, con el mismo truco. Con un detalle que te cuento en un momento.
+[MERCADO|temporada] Y el repollo es de las pocas verduras que hay todo el año. Pero en los meses fríos sale más dulce y más apretado. Es cuando más vale la pena.
+[VARIANTE|chorizo] Variantes. Con chorizo en lugar de tocino: doscientos gramos de chorizo de cerdo sin la tripa, frito hasta que suelte su grasa. Lo sacas, y sigues igual. Eso ya es comida completa con tortillas.
+[VARIANTE|jitomate] A la mexicana: cuando el repollo ya esté dorado, un jitomate picado y un chile serrano, y tres minutos más moviendo. Queda más jugoso, como guisado.
+[VARIANTE|zanahoria] Con zanahoria: una zanahoria en tiras delgaditas junto con la cebolla. Le da color y más dulzor.
+[VARIANTE|morado] El morado: se hace igual, pero el vinagre no es opcional. Sin vinagre, el repollo morado se pone azul grisáceo al cocinarse. Con el vinagre, vuelve a su color morado bonito. Es la misma cosa que pasa con el agua de jamaica cuando le pones limón.
+[VARIANTE|sincerdo] Y si no comes cerdo, dos cucharadas de aceite y un diente de ajo picado con la cebolla. Al final, la mantequilla y el vinagre igual. Queda muy bien.
+[ERRORES|aguado] Los errores que más veo. Si te quedó aguado, o el fuego estaba bajo, o echaste todo el repollo de una vez, o lo tapaste. Las tres cosas hacen lo mismo: lo cuecen en su agua en vez de dorarlo.
+[ERRORES|quemado] Si se te quemó, el fuego estaba muy fuerte y no lo moviste nada. Quieto un minuto, sí. Quieto cinco, no.
+[ERRORES|duro] Si quedó duro, las tiras eran muy gruesas, o le dejaste el tronco del centro. El tronco no se ablanda en doce minutos. Córtalo siempre.
+[ERRORES|soso] Si quedó soso, le faltó sal. Un kilo de repollo necesita su cucharadita completa. Y la sal va con la primera tanda, para que le saque un poco de agua y se dore mejor.
+[ERRORES|olor] Y si te sigue oliendo fuerte, lo cocinaste de más. Pasa de quince minutos y empieza a soltar el azufre aunque esté en el sartén. Doce, y apaga.
+[ERRORES|chico] Y si tu sartén es chico, haz la mitad de la receta. Medio kilo de repollo en un sartén normal sí se dora. Un kilo en un sartén chico se cuece.
+[MUCHOS|fonda] Y si lo haces para mucha gente, como nosotros, no hagas un sartén gigante con cinco kilos. En la fonda son varios sartenes de un kilo, uno tras otro. Cada tanda tarda quince minutos, y la primera se mantiene caliente en una cazuela mientras salen las demás.
+[DOS|mitad] Y si son dos personas, medio repollo: setenta y cinco gramos de tocino, media cebolla, medio kilo de repollo, media cucharadita de sal, una pizca de pimienta y de chile, media cucharada de mantequilla y media de vinagre. Va de una sola tanda, y tarda ocho a diez minutos.
+[PREGUNTAS|intro] Y ahora las preguntas que me hacen siempre.
+[PREGUNTAS|comal] Primera: ¿lo puedo hacer en el comal? En el comal no, porque no tiene orilla y se te sale todo. Un sartén grande o una cazuela de fondo ancho. En la fonda uso este sartén de fierro.
+[PREGUNTAS|cortado] Segunda: ¿sirve el repollo que venden ya cortado en bolsa? Sirve, pero viene muy fino y se cuece en la mitad del tiempo. Seis o siete minutos, y vigílalo.
+[PREGUNTAS|antes] Tercera: ¿lo puedo dejar cortado desde antes? Sí, cortado y seco, en una bolsa en el refrigerador, un día. No más, porque las orillas se ponen oscuras.
+[PREGUNTAS|gases] Y cuarta: ¿por qué me cae pesado el repollo? Al repollo, como a los frijoles, hay gente que le cae pesado. Cocinado así, poco tiempo, a muchos les cae mejor que el hervido, pero no hay truco que lo quite del todo. Come la porción normal, no medio repollo.
+[PREGUNTAS|vinagre] Quinta: ¿puedo usar otro vinagre? Sí. Vinagre blanco, la mitad, porque es más fuerte. O el jugo de medio limón. El de manzana es el que más me gusta, porque es un poco dulce.
+[GUARDAR|refri] Cómo se guarda. Lo que sobra, en un recipiente tapado, al refrigerador. Aguanta cuatro días.
+[GUARDAR|recalentar] Para recalentar, al sartén caliente, sin tapa, dos o tres minutos. Así vuelve a dorarse un poco. En el microondas se pone aguado.
+[GUARDAR|entero] Y el repollo entero, sin cortar, aguanta dos semanas en el cajón de las verduras del refrigerador. Por eso en la fonda siempre hay uno. Es la verdura que nunca te deja mal.
+[GUARDAR|congelar] Ya cocinado no lo congeles. Se descongela aguado y con olor.
+[SOBRA|sopa] Y con lo que sobra, una sopa de la fonda. Calientas el repollo que sobró en una olla, le echas un jitomate licuado con un pedazo de cebolla y un ajo, que se fría un par de minutos.
+[SOBRA|caldo] Y luego cuatro tazas de caldo de pollo, o de agua con un poco de consomé. Diez minutos de hervor, no más.
+[SOBRA|fideo] Si quieres, un puño de fideo dorado en aceite antes de echar el caldo. Y con un poco de queso fresco y limón, eso es sopa de repollo de los martes. Como el repollo ya se cocinó dorado, la sopa no huele a hospital.
+[SOBRA|tostada] O más fácil: unas tostadas con frijoles refritos, el repollo frío de ayer encima, crema, queso y salsa. Una cena en cinco minutos.
+[SOBRA|huevo] Y un desayuno rápido: el repollo de ayer al sartén con un poco de chorizo, y cuando esté caliente, un par de huevos estrellados encima, tapados un minuto. Con salsa y tortillas, eso aguanta hasta la comida.
+[COSTO|cuenta] Ahora la cuenta.
+[COSTO|repollo] El repollo de un kilo anda en unos dos dólares en el súper. En el mercado, menos.
+[COSTO|resto] Los ciento cincuenta gramos de tocino, dos dólares. La cebolla, sesenta centavos. La mantequilla, el vinagre y las especias, unos treinta centavos entre todo.
+[COSTO|total] Son unos cuatro dólares con noventa por todo el sartén. Y salen seis platos.
+[PRECIO|plato] O sea, ochenta y dos centavos el plato. Una guarnición que la gente pide dos veces, por menos de un dólar.
+[COSTO|fonda] En la fonda, el lunes de repollo es el día en que mejor nos salen las cuentas. Y la gente se va contenta. Por eso no lo quitamos nunca del pizarrón.
+[COSTO|bolsa] Y si lo compras ya cortado, en bolsa, te sale casi al doble por kilo. Cortarlo tú son tres minutos con el cuchillo. Ahí se paga tu tiempo a buen precio.
+[CTA2|recetario] Y lo que te dije. Todo lo de esta libreta lo pasé a limpio en un recetario: El Recetario de la Fonda.
+[CTA2|cincuenta] Son cincuenta recetas de esta cocina, con las cantidades exactas, los tiempos y el fuego. Este repollo está en la página cuarenta y siete, y el café de olla de la semana pasada en la sesenta y tres.
+[CTA2|precio] Cuesta diecinueve dólares. Las cincuenta recetas de la fonda, por menos de lo que cuesta una comida para dos en cualquier restaurante.
+[CTA2|link] El enlace está en la descripción, y también en el código que ves en la pantalla. Lo apuntas con la cámara del teléfono y ya.
+[CIERRE|resumen] Ya sabes: el repollo no se hierve. Sartén caliente, dos tandas, doce minutos sin tapa y sin agua, y el vinagre fuera del fuego.
+[CIERRE|proximo] Y la semana que viene, el pollo. Unos muslos con la piel que truena como chicharrón. Y te voy a pedir que hagas algo que te va a parecer un error: deja de freírlos en aceite.
+[CIERRE|adios] Aquí te espero. La cocina se queda abierta.

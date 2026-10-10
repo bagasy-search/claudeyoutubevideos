@@ -1,0 +1,124 @@
+[HOOK|olla] Si todavía dejas los frijoles en remojo toda la noche, estás perdiendo tiempo y sabor. En la fonda nunca lo hicimos.
+[HOOK|cucharon] Mira nada más cómo quedan. Cremosos por dentro, la cáscara entera, y un caldo espeso que se pega a la cuchara.
+[HOOK|promesa] Hoy te enseño la olla de frijoles de la fonda, sin remojar nada, en la mitad del tiempo.
+[HOOK|cred] Soy Claudio. Cuarenta años en esta cocina, ochenta comidas por día.
+[HOOK|plan] Y al final te enseño los refritos con lo que sobra, y te saco la cuenta de cuánto cuesta cada plato. Ya verás que es menos de lo que piensas.
+[FONDA|entrada] Esta es la fonda. La abrió mi amá cuando yo tenía ocho años, y mi primer trabajo aquí fue pelar ajos sentado en ese banquito.
+[FONDA|comida] Aquí se da comida corrida: sopa, arroz, un guisado, frijoles y agua del día. Y los frijoles no faltan nunca, ni un solo día.
+[FONDA|ochenta] Ochenta platos al día. Eso quiere decir que esta olla se llena casi todas las mañanas. Si yo tuviera que acordarme de remojar frijoles cada noche, hace mucho que la fonda habría cerrado.
+[FONDA|chuy] Don Chuy, que viene todos los días desde que yo era niño, dice que aquí los frijoles saben igual que hace treinta años. Y tiene razón, porque los hago igual que siempre.
+[FONDA|amá] Mi amá no remojaba. Nunca. Y cuando yo le pregunté por qué, me dijo: porque el frijol no necesita una noche, necesita una hora y que lo dejes en paz.
+[FONDA|seis] Mi día empieza a las seis. Prendo la estufa, pongo agua para el café de olla, y lo primero que hago, antes que nada, es poner los frijoles. Porque son los que más tardan.
+[FONDA|ritmo] A las seis y cuarto ya hirvieron sus dos minutos y están tapados. A las siete y cuarto ya están con su sazón a fuego bajo. Y a las nueve, cuando llega la primera gente del desayuno, ya hay frijoles. Así, todos los días.
+[FONDA|cuenta] Haz la cuenta: si yo remojara, tendría que acordarme cada noche, a las once, cansado, de poner tres kilos de frijol en agua. Y el día que se me olvidara, ochenta personas sin frijoles. No, señor.
+[ERROR|todos] Ahora, lo que hace casi todo el mundo. Y no es tu culpa, así nos enseñaron a todos.
+[ERROR|noche] Uno: dejas los frijoles en agua toda la noche, y a veces se te olvida y no comes frijoles al otro día.
+[ERROR|tirar] Dos: en la mañana tiras esa agua por el fregadero, y con ella se va parte del color y del sabor.
+[ERROR|borbotones] Tres: los pones a hervir a fuego alto, a borbotones, para que se cuezan rápido. Y se te revientan.
+[ERROR|salfinal] Y cuatro: les echas la sal al final, porque alguien te dijo que la sal los pone duros. Y el frijol queda sabroso por fuera y simple por dentro.
+[ERROR|resultado] Resultado: frijoles aguados, desbaratados, con el centro harinoso, después de un día entero de espera.
+[ERROR|historia] Yo mismo lo hice mal una vez. Tenía veinte años y vi en la tele a un cocinero muy elegante que remojaba toda la noche y tiraba el agua. Y pensé: en esta fonda estamos anticuados.
+[ERROR|amaprueba] Hice la olla a su manera, sin decirle nada. Al mediodía la dueña de la fonda probó un frijol, me miró, y me dijo: estos son frijoles de televisión. Bonitos y sin sabor. Nunca se me olvidó.
+[CIENCIA|cascara] Te explico por qué, sin palabras raras. El frijol seco es como una semilla dormida. Tiene una cáscara dura que casi no deja pasar el agua.
+[CIENCIA|ojito] El agua entra sobre todo por este ojito blanco que tiene el frijol a un lado. Por ahí se va metiendo despacito y el frijol se hincha.
+[CIENCIA|frio] En agua fría eso tarda ocho, diez, doce horas. Por eso la gente remoja toda la noche.
+[CIENCIA|caliente] Pero en agua caliente, el agua entra mucho más rápido. Un hervor corto y una hora tapados hacen casi el mismo trabajo que toda una noche en agua fría.
+[CIENCIA|corte] Mira este corte de la olla. Al principio el frijol está arrugado y chiquito. En la hora de reposo se llena de agua hasta el centro, sin cocerse todavía, y la cáscara se estira lisita.
+[CIENCIA|sal] Y lo de la sal es un cuento. La sal no endurece el frijol. Al contrario: ayuda a que la cáscara se ablande, y como entra desde el principio, el frijol queda sazonado hasta adentro.
+[CIENCIA|acido] Lo que sí los pone duros es otra cosa: el jitomate, el limón, el vinagre, cualquier cosa ácida al principio. Y el agua muy dura, la que deja sarro blanco en la tetera. Y el frijol viejo.
+[CIENCIA|hervor] Y el hervor fuerte los revienta porque el centro todavía está duro mientras la cáscara se infla. La cáscara se abre antes de tiempo, y adiós.
+[TRUCO|empieza] Ahora sí, la olla. Esto es para ocho a diez platos.
+[TRUCO|ficha] Un kilo de frijol pinto o bayo. Tres litros de agua. Media cebolla blanca, tres dientes de ajo, dos cucharadas de manteca de cerdo, dos cucharaditas de sal, y una rama de epazote, o dos hojas de laurel si no consigues epazote.
+[TRUCO|cual] ¿Por qué pinto o bayo? Porque son los que más se comen aquí, se ponen cremosos, y el caldo queda de ese color café que la gente reconoce. En la fonda usamos pinto casi siempre, y bayo cuando el pinto viene feo.
+[TRUCO|todos] Pero el método sirve para cualquier frijol seco. Lo que cambia es el tiempo de la última parte, no el truco.
+[TRUCO|limpiar] Primero se limpian. Los extiendo aquí en la mesa, en una charola, y les paso la mano. Siempre sale una piedrita, un frijol negro, un terroncito.
+[TRUCO|piedra] Esta piedrita, si se te va a la olla, alguien en tu mesa se queda sin muela. En cuarenta años habré sacado un frasco entero de piedritas.
+[TRUCO|enjuagar] Luego se enjuagan con agua de la llave, dos veces, frotándolos con la mano, hasta que el agua salga casi limpia.
+[TRUCO|ollabarro] Esta es la olla de barro de la fonda. Tiene más años que mi sobrino. Si tú no tienes de barro, una olla gruesa de fondo pesado hace lo mismo.
+[TRUCO|plomo] Ojo con una cosa si compras olla de barro: que diga libre de plomo. Las de antes a veces traían plomo en el vidriado, y eso no se usa para cocinar.
+[TRUCO|barrofrio] Y al barro no le gustan los cambios bruscos. Nunca pongas la olla fría en fuego alto de golpe, ni le eches agua helada cuando está caliente. Se raja.
+[TRUCO|agua] Echo el kilo de frijol y los tres litros de agua. Es mucha agua, y está bien: el frijol se va a tomar casi la mitad.
+[TRUCO|fuego1] Fuego alto, ahora sí, y espero a que suelte el hervor fuerte, que el agua brinque.
+[TRUCO|espuma] Esta espumita que sube es proteína del frijol. No hace daño. Yo le quito un poco con el cucharón para que no se derrame, pero no tienes que quitarla toda.
+[TRUCO|dosmin] Ya hirvió. Ahora cuento dos minutos exactos de hervor. Ni uno, ni cinco. Dos.
+[TRUCO|pasarse] ¿Y si me paso y hierve cinco minutos? No pasa nada grave. Pero mientras más hierve antes del reposo, más frijoles se te abren, porque la cáscara se calienta más rápido que el centro. Dos minutos es lo justo para calentar el frijol entero sin romperlo.
+[TIMER|dos] Dos minutos. Ahí tienes el temporizador.
+[TRUCO|apagar] Y ahora viene el truco. Apago el fuego. Tapo la olla. Y me olvido de ella una hora entera.
+[TRUCO|nomover] Sin destapar, sin mover, sin asomarse. Tú te vas a hacer otra cosa. Yo en esa hora pico la verdura de toda la comida del día.
+[TRUCO|unahora] Una hora después. Mira cómo están. Gorditos, lisitos, de color parejo. Muerdo uno: todavía está duro, pero ya no está seco por dentro. Eso es lo que hacía el remojo de toda la noche.
+[TRUCO|notirar] Y fíjate en el agua: está de color café, oscurita. Esa agua no se tira. Ahí está el color del frijol y parte del sabor. Eso va a ser tu caldo.
+[TRUCO|sazon] Ahora sí, el sazón. La media cebolla entera, los tres dientes de ajo enteros, las dos cucharadas de manteca y las dos cucharaditas de sal. Todo de una vez.
+[TRUCO|manteca] La manteca le da ese sabor de fonda que no te da el aceite. Si no comes cerdo, una cucharada de aceite, pero ya no es lo mismo, te lo digo de corazón.
+[TRUCO|fuegobajo] Vuelvo a prender, pero ahora a fuego bajo. Y la tapa la dejo un poquito abierta, así, que salga el vapor por un lado.
+[FUEGO|bajo] Fuego bajo. Que burbujee despacito, como si la olla estuviera pensando. Nunca a borbotones.
+[TRUCO|burbuja] Así tiene que verse. Una burbuja aquí, otra allá. Si la olla brinca, le bajas.
+[TRUCO|tiempo] Y así se cuecen de hora y media a dos horas. Depende del frijol, de qué tan nuevo es, y de tu agua.
+[TRUCO|mover] Cada veinte minutos, más o menos, le doy una vuelta con el cucharón de madera, desde el fondo, para que no se pegue. Despacio, como quien mueve un bebé.
+[TRUCO|aguacaliente] Si ves que los frijoles se asoman por arriba del caldo, les agregas agua. Pero caliente, nunca fría. Yo siempre tengo una tetera calentando al lado.
+[TRUCO|porque] El agua fría les corta el hervor, la olla tarda un buen rato en volver a agarrar el paso, y los de arriba se cuecen disparejos. Y a la olla de barro, ya te dije, no le gusta el agua helada.
+[TRUCO|prueba] Y ahora, la prueba de la fonda. No pruebes un frijol. Prueba cinco.
+[TRUCO|cinco] Saco cinco con la cuchara, los soplo, y los aprieto uno por uno. Los cinco tienen que estar cremosos por dentro, sin ese centro blanco harinoso. Si uno solo está duro, faltan quince minutos más.
+[TRUCO|unosolo] Porque si pruebas uno, siempre te toca el más blandito, y apagas antes de tiempo. Eso lo aprendí a cucharazos.
+[TRUCO|epazote] Ya casi. Los últimos quince minutos le echo la rama de epazote. Al final, porque si lo echas desde el principio se cuece de más y pierde todo el olor.
+[TRUCO|probarsal] Pruebo el caldo de sal. Casi nunca le falta, porque la sal entró desde temprano. Si le falta, una pizca más, y ya.
+[TRUCO|listos] Y ya están. Mira el caldo: espeso, color café brillante, y el frijol entero que se deshace en la boca.
+[SERVIR|plato] Y así se sirven en la fonda. En plato hondo, con bastante caldo. Que el frijol nade.
+[SERVIR|cosas] Al lado, cebolla picada, cilantro, chile serrano picado, un pedazo de queso fresco y tortillas calientes del comal. Cada quien le pone lo suyo.
+[SERVIR|caldito] Y el caldito solo, en jarrito, también se toma. Mucha gente de aquí lo pide en la mañana, calientito, con un poco de chile. Dicen que asienta el estómago.
+[SERVIR|chuy] Don Chuy se lo toma así desde hace treinta años, antes de su café. Cada mañana, el mismo jarrito.
+[ANTES|despues] Este es el antes y el después. De la bolsa a la olla, en tres horas y sin acordarte de nada la noche anterior.
+[TRUCO|resumen] Te lo repito en corto: hervor fuerte dos minutos, apagas, tapas, una hora. No tiras el agua. Sazón y sal en ese momento. Fuego bajo, tapa entreabierta, hora y media a dos horas. Y pruebas cinco, no uno.
+[CTA1|libreta] Esto que te acabo de enseñar está escrito aquí, en la libreta de la fonda. Y la pasé a limpio con las demás recetas de la fonda. Te lo digo al final, no te preocupes.
+[CHUY|prueba] Don Chuy, venga, pruébelos. Dice que están como siempre. Para él eso es el mejor elogio que hay.
+[VARIANTE|negro] Ahora, las variantes. Si usas frijol negro, el método es el mismo, nada más que se cuece unos quince minutos menos.
+[VARIANTE|peruano] El frijol peruano, el amarillito, es de los más rápidos. A veces en hora y cuarto ya está.
+[VARIANTE|bicarbonato] Si vives donde el agua es muy dura, o te tocó un frijol viejo que no se ablanda, una pizca de bicarbonato en el agua de cocción. Una pizca, como la punta de un cuchillo. Más, y saben a jabón.
+[VARIANTE|charros] Y si quieres frijoles de fiesta, estos mismos frijoles se vuelven charros con tocino, chorizo, jitomate y chile. Pero eso es otra receta, y el jitomate va cuando el frijol ya está cocido, nunca antes. Ya sabes por qué.
+[MUCHOS|dosollas] Y si un día te toca cocinar para mucha gente, una fiesta, un velorio, una posada, te doy el consejo que me costó aprender. Para veinticinco personas, cocina tres kilos, pero en dos ollas, no en una gigante.
+[MUCHOS|porque] En la olla gigante el fondo se pega y se quema antes de que el centro se cueza. Y no hay forma de mover tres kilos de frijol desde el fondo sin reventarlos. Dos ollas medianas, y te salen parejos.
+[MUCHOS|agua] Y la proporción es la misma: tres litros de agua por cada kilo. El reposo de una hora no cambia, aunque sean tres kilos.
+[DOS|pocos] Y si en tu casa son dos, no hagas medio kilo. Haz la olla entera. Porque el trabajo es el mismo, el gas es casi el mismo, y lo que sobra se congela mejor que cualquier lata.
+[ERRORES|duros] Los errores que más veo. Si después de tres horas siguen duros, no es tu culpa, es el frijol. Es frijol viejo, de bodega, o tu agua es muy dura. La pizca de bicarbonato, y la próxima vez cómpralo en otro lado.
+[ERRORES|reventados] Si se revientan y quedan aguados, hirvieron muy fuerte. Fuego bajo y tapa entreabierta.
+[ERRORES|sinsabor] Si saben a nada, la sal se echó al final. La sal va después del reposo, junto con la cebolla y el ajo.
+[ERRORES|pegados] Y si se te pegan al fondo, es fuego muy alto o una olla muy delgada. En una olla de lámina delgada, mueve más seguido.
+[MERCADO|elegir] Y como el frijol viejo es el que más te arruina la olla, te enseño a elegirlo en el mercado.
+[MERCADO|brillo] El frijol nuevo brilla. Tiene la cáscara lisa, el color parejo, y suena seco cuando lo mueves en la bolsa.
+[MERCADO|viejo] El frijol viejo está opaco, arrugado, con colores apagados, y a veces con agujeritos. Esos agujeritos son de gorgojo. Ese no lo compres.
+[MERCADO|rotacion] Y cómpralo donde se venda mucho. En el mercado, en el puesto que siempre tiene gente. O en el súper, el de bolsa sirve, nomás fíjate en la fecha de empaque y busca la más reciente.
+[MERCADO|granel] El frijol a granel del costal que nadie toca, ese lleva ahí quién sabe cuánto. Pregúntale al marchante cuándo le llegó. Un marchante honrado te dice la verdad.
+[MERCADO|cuanto] Un kilo de frijol seco te da como dos kilos y medio de frijol cocido. O sea, una olla entera para toda la semana.
+[GUARDAR|enfriar] Ahora, cómo se guardan. Y esto es importante. No dejes la olla toda la noche en la estufa, por más que tu abuela lo hiciera.
+[GUARDAR|dos] Pásalos a recipientes más chicos para que se enfríen rápido, y al refrigerador antes de dos horas. En el refrigerador aguantan cuatro días.
+[GUARDAR|congelar] Lo que no te vas a comer en esos días, lo congelas. En bolsas de dos tazas, con bastante caldo, aplanaditas para que se acomoden. Así duran tres meses, y quedan mejor que los de lata.
+[GUARDAR|recalentar] Y al recalentar, que hiervan. No tibios, que hiervan, aunque sea un minuto. Si el caldo se espesó en el refrigerador, un chorrito de agua caliente.
+[GUARDAR|sabor] Y te digo un secreto de fonda: al otro día saben mejor. El caldo se asienta y el frijol se termina de sazonar.
+[PREGUNTAS|intro] Y ahora las preguntas que me hacen siempre, para que no te quedes con la duda.
+[PREGUNTAS|gases] Primera: ¿los frijoles sin remojo dan más gases? Mira, el frijol da gases porque tiene unos azúcares que el cuerpo no digiere bien. El remojo largo y tirar el agua le quitan un poquito, pero poco. Lo que más ayuda es que estén bien cocidos, cremosos hasta el centro, y comerlos seguido. El estómago se acostumbra.
+[PREGUNTAS|salado] Segunda: ¿y si me quedaron salados? Cocina un puñito de frijol aparte, sin sal, y júntalos. O agrega agua caliente sin sal y deja que se espese otra vez. No hay otro truco que sirva de verdad.
+[PREGUNTAS|cebolla] Tercera: ¿la cebolla y el ajo se sacan? En la fonda no. Para cuando están los frijoles, la cebolla ya se deshizo en el caldo, y el ajo queda como mantequilla. Quien se encuentra un ajo, tiene suerte.
+[PREGUNTAS|espesar] Y cuarta: ¿cómo espeso el caldo si me quedó aguado? Saco una taza de frijoles, los machaco con un tenedor y los regreso a la olla. Diez minutos más a fuego bajo y el caldo se pone espeso y brilloso.
+[SOBRA|refritos] Y con lo que sobra, los refritos. Esto en la fonda sale todas las mañanas con los huevos del desayuno.
+[SOBRA|ficha] Cuatro tazas de frijoles cocidos, escurridos, y aparte una taza y media de su caldo. Cuatro cucharadas de manteca. Un cuarto de cebolla picada finita. Sal al gusto, y queso fresco para el final.
+[SOBRA|manteca] En el sartén, la manteca hasta que brille. Ahí echo la cebolla y la dejo hasta que se dore de las orillas.
+[SOBRA|chillar] Ahora los frijoles. Y los dejo chillar un minuto, sin moverlos. Escucha. Ese sonido es el frijol tostándose en la manteca. Eso es lo refrito.
+[SOBRA|machacar] Y a machacar. Con el machacador, o con el fondo de una taza si no tienes. Y voy agregando el caldo de a poquito, un chorrito, machaco, otro chorrito.
+[SOBRA|nolicuar] No los licúes. Licuados quedan como engrudo, pegajosos. Machacados a mano quedan con textura, con pedacitos.
+[SOBRA|diez] Diez minutos a fuego medio bajo, moviendo, hasta que estén cremosos y se despeguen solos cuando ladeas el sartén. Mira, así.
+[SOBRA|flojos] Déjalos un poquito más flojos de lo que te gustan. Al enfriarse espesan, y si los dejas secos en el sartén, en el plato quedan como piedra.
+[SOBRA|queso] Pruebo de sal, y el queso fresco desmoronado encima. Ya está.
+[SOBRA|mas] Y si todavía te sobra, enfrijoladas: tortillas pasadas por los refritos aguaditos, dobladas, con queso y crema. Pero esa te la enseño otro día.
+[SOBRA|sopa] Y el caldo que te sobra, aunque sea poquito, no lo tires. En la fonda lo licuamos con un poco de jitomate y chile, y ahí echamos tortillas cortadas en tiras y fritas. Sopa de frijol, para un día de frío. Con un pedazo de queso y crema, y nadie se acuerda de la carne.
+[COSTO|cuenta] Ahora la cuenta, que es lo que más me preguntan.
+[COSTO|bolsa] La bolsa de un kilo de frijol pinto en el súper anda en unos tres dólares. La cebolla y el ajo, unos cincuenta centavos. Las dos cucharadas de manteca, unos quince centavos. El epazote o el laurel, unos cincuenta centavos.
+[COSTO|total] Son como cuatro dólares con quince por toda la olla. Y la olla da para nueve platos bien servidos, con su caldo.
+[PRECIO|plato] O sea, menos de cincuenta centavos el plato. Cuarenta y seis centavos, para ser exactos.
+[COSTO|lata] Y esa misma cantidad de frijol cocido, en latas, son como ocho latas. Haz tú la cuenta.
+[COSTO|fonda] Por eso en la fonda los frijoles no faltan nunca. Son lo más barato del plato y lo que la gente más extraña cuando se va.
+[CTA2|recetario] Y ahora sí, lo que te dije. Todo lo de esta libreta lo pasé a limpio en un recetario: El Recetario de la Fonda.
+[CTA2|cincuenta] Son cincuenta recetas de esta cocina, con las cantidades exactas, los tiempos y el fuego, como te lo enseñé hoy. Estos frijoles están en la página doce.
+[CTA2|precio] Cuesta diecinueve dólares. Las cincuenta recetas de la fonda, por menos de lo que cuesta una comida para dos en cualquier restaurante.
+[CTA2|link] El enlace está en la descripción, y también en el código que ves en la pantalla. Lo apuntas con la cámara del teléfono y ya.
+[CIERRE|resumen] Ya sabes: sin remojo, hervor de dos minutos, una hora tapados, y la sal desde el principio.
+[CIERRE|proximo] Y la semana que viene, esta misma olla de barro hace otra cosa. Costillas. Porque las costillas no se hacen en la parrilla: se hacen en una olla, como en la fonda. Y el hueso sale limpio.
+[CIERRE|adios] Aquí te espero. La cocina se queda abierta.

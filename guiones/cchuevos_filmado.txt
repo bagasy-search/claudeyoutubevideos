@@ -1,0 +1,111 @@
+[HOOK|aceite] Cuarenta años friendo huevos en la fonda, y nunca usé aceite.
+[HOOK|tapa] Dos cucharadas de agua alrededor, la tapa, noventa segundos. Y salen así: la clara blanca y firme, la orilla apenas doradita, y la yema que se derrama cuando la rompes con la tortilla.
+[HOOK|promesa] Hoy te enseño los huevos de la fonda. Sin aceite, sin voltear, sin clara cruda arriba ni orillas quemadas. Y la salsa roja que van encima.
+[HOOK|cred] Soy Claudio. Cuarenta años en esta cocina, ochenta comidas por día, y la mitad de las mañanas empiezan con un huevo.
+[HOOK|plan] Y te enseño a saber si un huevo es fresco, a hacer muchos a la vez, los chilaquiles que salen con lo que sobra, y cuánto cuesta cada plato.
+[RETOMA|carne] La semana pasada te enseñé la carne de tres horas, la más lenta de la fonda. Hoy la más rápida. Esto se hace en menos de lo que tarda el café en reposar.
+[FONDA|desayuno] En la fonda, de siete a diez de la mañana, es puro desayuno. Gente que va al trabajo, gente que viene del campo, los del mercado.
+[FONDA|cuantos] En una mañana normal se van cerca de cien huevos. Y cada uno tiene que salir igual: el cliente que pide yema tierna, quiere yema tierna, no dura.
+[FONDA|ama] Y cuando yo empecé a hacerlos, de niño, les echaba un charco de aceite como en mi casa. Mi amá me quitó la botella de la mano y me dijo: el huevo no se fríe, se cuida.
+[FONDA|nombres] Y para que nos entendamos: a estos les digo huevos estrellados. En otros lados son huevos fritos, o huevos de ojo, o huevos al plato. Lo mismo: el huevo entero, con la yema completa.
+[FONDA|comal] Y en la fonda los huevos no se hacen en sartén, se hacen en el comal grande, el de treinta años. Ahora te enseño en el sartén, que es lo que tienes en tu casa, y al final te cuento cómo es en el comal.
+[ERROR|todos] Ahora, lo que hace casi todo el mundo. Y no es tu culpa, así nos enseñaron a casi todos.
+[ERROR|aceite] Un buen chorro de aceite en el sartén, bien caliente, que humee. Echa el huevo, y truena, salpica, y la orilla se infla y se quema en dos segundos.
+[ERROR|cruda] Y la clara de abajo ya está dura y quemada, pero la de arriba, la que está junto a la yema, sigue cruda, transparente, como moco. Y a nadie le gusta eso.
+[ERROR|bañar] Y entonces hay dos caminos. O le echas aceite caliente por encima con la cuchara, y queda grasoso. O lo volteas, y la yema se te rompe o se te cuece dura.
+[ERROR|resultado] Y el resultado: un huevo con la orilla dura como plástico quemado, nadando en aceite, y la yema cocida de más.
+[ERROR|culpa] Y la gente piensa que el huevo frito es así, grasoso por fuerza. Y no. Un huevo estrellado de verdad no necesita casi grasa.
+[ERROR|otro] Y el otro error, al revés: el que le tiene miedo al fuego y los hace en el sartén tibio, despacito. Se pegan, la clara se pone gomosa, y tardan cinco minutos en algo que debería tardar dos.
+[CIENCIA|clara] Te explico por qué, sin palabras raras. La clara y la yema no se cocinan igual. La clara necesita bastante calor para ponerse firme. La yema, con menos calor, ya se espesa. Todo el reto es cocer la clara completa sin pasarte con la yema.
+[CIENCIA|termo] Mira este termómetro del huevo. A los sesenta y pico grados la clara empieza a ponerse blanca, y cerca de los ochenta ya está firme. La yema empieza a espesarse a los sesenta y cinco, y a los setenta y pico ya está cuajada. Por eso la yema líquida es cuestión de segundos: la clara tiene que quedar firme antes de que el calor llegue al centro de la yema.
+[CIENCIA|problema] El problema del sartén es que calienta solo por abajo. La clara de abajo se cocina, pero la de arriba, la gruesa que rodea la yema, no recibe calor. Por eso queda cruda.
+[CIENCIA|vapor] Y aquí entra el agua. Dos cucharadas de agua en el sartén caliente se vuelven vapor de inmediato. Con la tapa, ese vapor se queda adentro y cocina el huevo por arriba. La clara de arriba se pone blanca, y la yema se cubre con una capita blanca, sin voltear nada.
+[CIENCIA|alrededor] Y el agua va alrededor, no encima. Si cae directo sobre el huevo, lo lava y lo deja aguado. Alrededor, toca el sartén caliente y se vuelve vapor.
+[CIENCIA|sartén] ¿Y por qué no se pega sin aceite? Porque el sartén está caliente y parejo antes de que caiga el huevo. Un sartén caliente sella la clara al instante. Lo que se pega es el huevo que cae en un sartén tibio.
+[CIENCIA|gota] Y para saber si el sartén está listo, la gota. Echas unas gotitas de agua, y si se hacen bolitas que bailan y corren por el sartén, está listo. Si se quedan quietas chirriando, todavía no. Si desaparecen de inmediato, también le falta.
+[CIENCIA|velo] Y esa capita blanca que se forma sobre la yema es la clara delgadita que la cubre. Con el vapor se cuaja. Por eso la yema se ve como con un velo, pero adentro sigue líquida.
+[TRUCO|empieza] Ahora sí. Esto es para dos platos, dos huevos cada uno.
+[TRUCO|ficha] Cuatro huevos. Dos cucharadas de agua. Sal y pimienta. Tortillas. Media taza de salsa roja. Y si quieres, una cucharadita de manteca, que es opcional.
+[TRUCO|sarten] El sartén. Este es de fierro, curado de años, liso y negro. Si el tuyo es antiadherente, también sirve, y no se te pega nada. Si es de acero normal, usa la cucharadita de manteca.
+[TRUCO|tapa] Y necesitas una tapa que cierre. Si tu sartén no tiene, un plato grande encima, o la tapa de otra olla.
+[TRUCO|huevos] Los huevos, fuera del refrigerador unos minutos antes, si puedes. Fríos también salen, pero tardan unos segundos más.
+[TRUCO|romper] Y un truco para romperlos: contra la mesa, no contra la orilla del sartén. Un golpe seco en la mesa plana. Así el cascarón se rompe limpio y no se mete al huevo.
+[TRUCO|taza] Si te da miedo, rómpelos antes en una taza, uno por uno. Así si uno sale malo, o se rompe la yema, no echas a perder los demás.
+[TRUCO|cascaron] Y si se te cae un pedacito de cascarón, no lo persigas con el dedo. Sácalo con otro pedazo de cascarón, que corta la clara como cuchillo. Sale al primer intento.
+[FUEGO|medio] Ahora sí. Sartén a fuego medio, dos minutos.
+[TIMER|dos] Dos minutos, que se caliente parejo.
+[TRUCO|gota] Y la prueba de la gota. Mojo los dedos y sacudo unas gotas. Mira cómo bailan. Está listo.
+[TRUCO|manteca] Si vas a usar manteca, ahora. Una cucharadita, que se derrita y la repartes con la espátula.
+[TRUCO|juntitos] Y los huevos. Los rompo juntitos, uno al lado del otro, que se toquen. Así ocupan poco sartén y la clara no se extiende como mantel.
+[TRUCO|sal] La sal y la pimienta encima, ahora, sobre la clara. Sobre la yema, la sal deja manchitas blancas. Si te gusta así, ponla también en la yema.
+[TIMER|treinta] Y ahora, treinta segundos. Sin tocarlos.
+[TRUCO|porque] Esos treinta segundos son para que la clara de abajo se cuaje y se pegue a sí misma, y la orilla se empiece a dorar apenas. Si echas el agua de inmediato, la clara se corre por todo el sartén.
+[TRUCO|agua] Y ahora el truco. Las dos cucharadas de agua, alrededor de los huevos. Por la orilla del sartén. Escucha cómo chilla.
+[TRUCO|taparya] Y tapo, de inmediato.
+[TIMER|noventa] Noventa segundos para yema líquida. Dos minutos y medio para yema cremosa.
+[TRUCO|ver] Si tu tapa es de vidrio, mira cómo la yema se va cubriendo con una capita blanca. Como si tuviera un velo.
+[TRUCO|destapar] Y destapo. Mira eso. La clara toda blanca, firme, sin una parte transparente. La orilla, apenas doradita. Y la yema, brillante, con su velo encima.
+[TRUCO|probar] Le doy un toquecito a la yema con la espátula. Se mueve como gelatina, tiembla. Eso es yema líquida. Si la quieres más firme, otro minuto tapado, y fuera del fuego.
+[TRUCO|sacar] La espátula por abajo, y se despegan solos. Sin romper la yema. Al plato, encima de las tortillas.
+[TRUCO|rapido] Y rápido al plato. El huevo sigue cocinándose con su propio calor. Si lo dejas en el sartén caliente un minuto más mientras buscas el plato, la yema ya no es la misma.
+[TRUCO|listo] Y ya están. Mira nada más. Sin una gota de aceite en el plato.
+[ANTES|despues] Este es el antes y el después: el huevo frito en mucho aceite, y este, con dos cucharadas de agua y la tapa.
+[SINO|comparar] El primero, la orilla quemada, la clara de arriba cruda y el plato lleno de aceite. El segundo, todo cocido parejo y la yema entera.
+[TRUCO|resumen] Te lo repito en corto: sartén a fuego medio dos minutos, que la gota baile. Los huevos juntitos. Treinta segundos. Dos cucharadas de agua alrededor y la tapa. Noventa segundos para yema líquida, dos y medio para cremosa.
+[CTA1|libreta] Esto está escrito en la libreta de la fonda, con la salsa y todo. Al final te digo dónde.
+[SALSA|asar] Y ahora la salsa roja de los desayunos. Dos jitomates, un chile serrano y un diente de ajo con su cáscara, en el comal caliente, sin nada.
+[SALSA|comal] Los dejo hasta que la piel del jitomate se ponga negra en partes y se arrugue, unos diez minutos, volteando. El chile y el ajo están antes, en cinco.
+[SALSA|molcajete] Le quito la cáscara al ajo y lo muelo en el molcajete con el chile y una pizca de sal. Luego el jitomate, con todo y piel, machacándolo. Que quede martajada, con pedacitos, no lisa.
+[SALSA|licuadora] Si no tienes molcajete, en la licuadora, con un pulso o dos. Que no se haga agua.
+[SALSA|cuanto] Eso da como una taza. Para los cuatro huevos usas la mitad, y la otra mitad te sirve mañana. Ya te digo para qué.
+[SERVIR|tortillas] Las tortillas. Las paso por el comal, de los dos lados, hasta que se inflen un poquito y tengan manchitas. Dos por plato.
+[SERVIR|armar] Las tortillas en el plato, un poquito encimadas. Los dos huevos encima. Y la salsa roja alrededor de la yema, no sobre la yema. Que la yema se vea.
+[SERVIR|rancheros] Así, en la fonda, se llaman huevos rancheros. Con unos frijoles de la olla del primer video al lado, y un café de olla. Ese es el desayuno de la gente del campo.
+[SERVIR|caliente] Y todo caliente: la tortilla caliente, el huevo recién salido, la salsa a temperatura de cocina. El huevo estrellado frío no lo arregla nadie.
+[MERCADO|fresco] Ahora, cómo saber si un huevo es fresco. Porque para este método, el huevo fresco hace toda la diferencia.
+[MERCADO|plato] Rompe uno en un plato. El huevo fresco tiene la yema alta, redonda, y la clara gruesa, que se queda junto a la yema. El huevo viejo tiene la yema aplastada y la clara aguada, que se corre por todo el plato.
+[MERCADO|agua] Y la prueba del agua, sin romperlo. Un vaso con agua y el huevo adentro. Si se queda acostado en el fondo, está fresco. Si se para de punta, ya tiene días, pero se puede comer. Si flota, no lo uses.
+[MERCADO|comprar] Y en el súper, fíjate en la fecha del empaque. Y abre la caja antes de llevarla: que ningún huevo esté roto o pegado.
+[MERCADO|color] El color del cascarón, blanco o café, no importa. Es la raza de la gallina. Por dentro es el mismo huevo.
+[MERCADO|rancho] Y si consigues huevo de rancho, de gallinas de patio, mucho mejor. La yema más naranja, la clara más firme. Pero el método funciona igual con el del súper.
+[VARIANTE|divorciados] Variantes. Huevos divorciados: los dos huevos en el mismo plato, uno con salsa roja y otro con salsa verde, separados con una línea de frijoles. En la fonda los piden mucho.
+[VARIANTE|queso] Con queso: cuando echas el agua, antes de tapar, un poco de queso Oaxaca o de queso que funda, encima de las claras. En el vapor se derrite.
+[VARIANTE|chorizo] Con chorizo: fríes un poco de chorizo primero, lo sacas, limpias el sartén con papel, y haces los huevos igual. El chorizo encima al servir.
+[VARIANTE|cuatro] Y si quieres cuatro huevos en un plato, para una persona con hambre, el método es el mismo. Una cucharada más de agua, y los mismos tiempos.
+[ERRORES|cruda] Los errores que más veo. Si la clara de arriba quedó cruda, no tapaste bien, o destapaste antes de tiempo. La tapa es la que hace el trabajo de arriba.
+[ERRORES|dura] Si la yema quedó dura cuando la querías líquida, los dejaste mucho tiempo. Noventa segundos, y fuera. Y no los dejes en el sartén caliente después: se siguen cocinando.
+[ERRORES|pegado] Si se pegaron, el sartén no estaba caliente cuando echaste los huevos. Haz siempre la prueba de la gota. O tu sartén no está bien curado, y entonces la manteca.
+[ERRORES|corrida] Si la clara se te corrió por todo el sartén, el huevo era viejo, o echaste el agua antes de los treinta segundos.
+[ERRORES|quemado] Y si la orilla se quemó, el fuego estaba muy alto. Fuego medio. El huevo es delicado.
+[DOS|uno] Y si es solo para ti, dos huevos, una cucharada de agua, los mismos tiempos. En un sartén chico, de veinte centímetros, para que el vapor alcance.
+[MUCHOS|familia] Y para seis personas en casa, doce huevos, no los hagas todos en un sartén. Dos o tres tandas de cuatro, con el horno a lo más bajo para mantener los platos calientes. Cada tanda son tres minutos.
+[PREGUNTAS|intro] Y ahora las preguntas que me hacen siempre.
+[PREGUNTAS|muchos] Primera: ¿cómo los hacen en la fonda, tantos a la vez? En el comal grande. Se calienta el comal, se ponen los huevos en grupos de dos o cuatro, cada grupo con su chorrito de agua alrededor, y cada uno con su tapa chica de aluminio. Así salen veinte huevos en tres minutos.
+[PREGUNTAS|yema] Segunda: ¿la yema líquida es segura? Con huevo fresco y bien guardado, la mayoría de la gente la come así toda la vida. Pero si es para un niño chiquito, una mujer embarazada o una persona mayor delicada, mejor la yema cremosa o cuajada. Dos minutos y medio, o un poco más.
+[PREGUNTAS|agua] Tercera: ¿el agua tiene que ser caliente? No. Fría del jarrito está bien. Son dos cucharadas, se vuelven vapor en un segundo.
+[PREGUNTAS|mantequilla] Y cuarta: ¿y con mantequilla? Sí, una cucharadita en lugar de la manteca. Pero con el sartén a fuego medio, se dora rápido. Échala justo antes de los huevos.
+[PREGUNTAS|comal] Quinta: ¿en el comal de casa? Sí, si tienes una tapa grande o un plato hondo para taparlos. El comal se calienta más parejo, y ahí salen muy bien. Solo el agua se escurre por la orilla si el comal no es hondo, así que ponla con cuidado.
+[GUARDAR|nunca] Cómo se guardan. Los huevos estrellados no se guardan. Se hacen y se comen. Por eso este método es tan rápido: para que no tengas que hacerlos antes.
+[GUARDAR|crudos] Los huevos crudos, en el refrigerador, en su caja, no en la puerta. En la puerta cambian de temperatura cada vez que abres.
+[GUARDAR|salsa] Y la salsa roja que sobró, en un frasco tapado, al refrigerador. Aguanta cuatro días.
+[SOBRA|chilaquiles] Y con lo que sobra, los chilaquiles de la fonda. Con la salsa de ayer y las tortillas de ayer, que ya están duras.
+[SOBRA|totopos] Las tortillas, cortadas en triángulos. Las frío en un poco de manteca o aceite, hasta que estén doradas y crujientes, y las escurro en papel.
+[SOBRA|salsa] La salsa roja que sobró, al sartén, con un chorrito de agua o caldo, que hierva un minuto.
+[SOBRA|juntar] Los totopos a la salsa, una vuelta, y apago. Que se mojen pero sigan un poco crujientes. Si los dejas, se hacen papilla.
+[SOBRA|servir] Al plato, con crema, queso fresco, cebolla en rodajas. Y encima, claro, un huevo estrellado de los de hoy. Eso es un desayuno de domingo, hecho con lo de ayer.
+[SOBRA|enfrijoladas] Y si sobraron frijoles refritos, enfrijoladas: tortillas pasadas por los frijoles calientes aguaditos, dobladas, con crema, queso y cebolla. Y otra vez, un huevo encima.
+[COSTO|cuenta] Ahora la cuenta.
+[COSTO|huevos] Los cuatro huevos, a precio de súper de hoy, como un dólar con veinte.
+[COSTO|resto] Las cuatro tortillas, unos treinta centavos. La media taza de salsa, con su jitomate, chile y ajo, unos cincuenta centavos. La manteca, si la usas, centavos.
+[COSTO|total] Son unos dos dólares con diez por los dos platos.
+[PRECIO|plato] O sea, un dólar con cinco el plato. Huevos rancheros de fonda por un dólar.
+[COSTO|restaurante] El mismo plato en un restaurante de desayunos anda en diez o doce dólares. Y casi siempre sale con la clara cruda arriba.
+[COSTO|fonda] En la fonda, el desayuno tiene que ser rápido y barato, porque la gente va al trabajo. Y el huevo es lo que lo hace posible.
+[COSTO|precio] Y aunque el huevo subió de precio, sigue siendo la proteína más barata que hay. Dos huevos, menos de un dólar. Ni el pollo te sale así.
+[CTA2|recetario] Y lo que te dije. Todo lo de esta libreta lo pasé a limpio en un recetario: El Recetario de la Fonda.
+[CTA2|cincuenta] Son cincuenta recetas de esta cocina, con las cantidades exactas, los tiempos y el fuego. Estos huevos están en la página cincuenta y cinco, y la carne de la semana pasada en la veinte.
+[CTA2|precio] Cuesta diecinueve dólares. Las cincuenta recetas de la fonda, por menos de lo que cuesta una comida para dos en cualquier restaurante.
+[CTA2|link] El enlace está en la descripción, y también en el código que ves en la pantalla. Lo apuntas con la cámara del teléfono y ya.
+[CIERRE|resumen] Ya sabes: el huevo no se fríe, se cuida. Sartén caliente, treinta segundos, dos cucharadas de agua alrededor, y la tapa.
+[CIERRE|proximo] Y la semana que viene, el arroz rojo de la fonda, con los frijoles refritos. Porque esto en la fonda era la comida corrida: tres dólares, y le gana a cualquier restaurante.
+[CIERRE|adios] Aquí te espero. La cocina se queda abierta.
