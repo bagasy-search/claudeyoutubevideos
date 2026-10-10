@@ -6,5 +6,5 @@ uno() { P=vlog/$SLUG/$1/plan.json; L=vlog/$SLUG/$1/run.log
   node scripts/agnes_vlog.mjs $P clips > $L 2>&1 && node scripts/agnes_vlog.mjs $P check >> $L 2>&1; node scripts/agnes_vlog.mjs $P armar >> $L 2>&1
   echo "$(date -u +%T) $1 fin: $(grep -E 'MEDIDO|⛔' $L | tail -2 | tr '\n' ' ')"; }
 export -f uno; export SLUG R
-printf "%s\n" "$@" | xargs -P 3 -I{} bash -c 'uno {}'
+printf "%s\n" "$@" | xargs -P ${PAR:-3} -I{} bash -c 'uno {}'
 echo "TODAS FIN"

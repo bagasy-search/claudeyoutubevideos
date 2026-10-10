@@ -1,0 +1,4 @@
+vid/cvporkchops
+img/cvporkchops/page29.jpg
+img/cvporkchops/qr.png
+img/cvporkchops/cover.jpg

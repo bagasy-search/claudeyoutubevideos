@@ -1,0 +1,152 @@
+[
+ {
+  "c": "CvMeatThermo",
+  "from": 3009,
+  "dur": 180,
+  "props": {
+   "from": 70,
+   "to": 145,
+   "label": "USDA: whole cuts of pork",
+   "sub": "+ 3 min rest",
+   "bed": "vid/cvporkchops/bed_0.mp4#184"
+  },
+  "t": 100.3
+ },
+ {
+  "c": "ClChip",
+  "from": 3713,
+  "dur": 120,
+  "props": {
+   "text": "Brine · Sear · Splash · Lid",
+   "corner": "tl"
+  },
+  "t": 123.75
+ },
+ {
+  "c": "ClCheck",
+  "from": 4237,
+  "dur": 240,
+  "props": {
+   "title": "THE BRINE",
+   "items": [
+    "4 cups water",
+    "¼ cup kosher salt",
+    "2 tbsp brown sugar",
+    "Stir until dissolved"
+   ],
+   "bed": "vid/cvporkchops/bed_2.mp4#244"
+  },
+  "t": 141.22
+ },
+ {
+  "c": "ClTimer30",
+  "from": 5707,
+  "dur": 135,
+  "props": {
+   "minutes": 30,
+   "text": "30 minutes",
+   "label": "Not overnight",
+   "bed": "vid/cvporkchops/bed_3.mp4#139"
+  },
+  "t": 190.22
+ },
+ {
+  "c": "CvMeatThermo",
+  "from": 12483,
+  "dur": 180,
+  "props": {
+   "from": 110,
+   "to": 145,
+   "label": "Thickest part, off the bone",
+   "sub": "Off the heat",
+   "bed": "vid/cvporkchops/bed_4.mp4#184"
+  },
+  "t": 416.09
+ },
+ {
+  "c": "ClReceipt",
+  "from": 18550,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "4 thick bone-in chops",
+     "$13.00"
+    ],
+    [
+     "1 onion",
+     "$1.30"
+    ],
+    [
+     "Can of green chiles",
+     "$1.50"
+    ],
+    [
+     "Broth, butter, brine, grease",
+     "$1.00"
+    ]
+   ],
+   "total": [
+    "Per plate (÷4)",
+    "$4.20"
+   ],
+   "bed": "vid/cvporkchops/bed_5.mp4#424"
+  },
+  "t": 618.34
+ },
+ {
+  "c": "CvMeatThermo",
+  "from": 21283,
+  "dur": 150,
+  "props": {
+   "from": 120,
+   "to": 168,
+   "label": "His: open pan, flipping",
+   "sub": "Gray · dry",
+   "bed": "vid/cvporkchops/bed_6.mp4#154"
+  },
+  "t": 709.43
+ },
+ {
+  "c": "ClDoDont",
+  "from": 21625,
+  "dur": 165,
+  "props": {
+   "yes": {
+    "label": "Brine, sear, splash, lid"
+   },
+   "no": {
+    "label": "Open pan, flipping"
+   },
+   "bed": "vid/cvporkchops/bed_7.mp4#169"
+  },
+  "t": 720.82
+ },
+ {
+  "c": "ClBookPage",
+  "from": 33820,
+  "dur": 210,
+  "props": {
+   "page": "img/cvporkchops/page29.jpg",
+   "pageNo": 29,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 29",
+   "bed": "vid/cvporkchops/bed_8.mp4#214"
+  },
+  "t": 1127.32
+ },
+ {
+  "c": "ClQRCard",
+  "from": 34648,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvporkchops/qr.png",
+   "cover": "img/cvporkchops/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvporkchops/bed_9.mp4#184"
+  },
+  "t": 1154.93
+ }
+]
