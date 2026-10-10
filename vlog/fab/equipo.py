@@ -32,6 +32,11 @@ def agnes_img(items, ident=" "):
 def gpt_img(items):
     """gpt-image-2 por scripts/gptimg.mjs (las 4 palancas: low · 1088x608 · Batch · crop 128x192); espera y baja a IMG/_eq"""
     if not items: return
+    # ⛔ tope de plata por video (pedido del creador): gpt-image sólo low+Batch ($0,00207 c/u con crop) y NUNCA más de US$0,60 por video
+    gastado = J(D + "gpt_gasto.json", {"usd": 0.0})["usd"]; costo = len(items) * 0.00207
+    if gastado + costo > 0.60:
+        print(f"⛔ gpt-image BLOQUEADO: {len(items)} fotos = US${costo:.2f} + US${gastado:.2f} ya gastado > tope US$0,60 por video"); return
+    W(D + "gpt_gasto.json", {"usd": round(gastado + costo, 4)})
     lst = V3 + f"{S}_gpt_{abs(hash(items[0]['name'])) % 99999}.json"; W(lst, items)
     subprocess.run(["node", "scripts/gptimg.mjs", lst, f"public/img/{S}/_eq"], cwd=R, env=ENV)
 
