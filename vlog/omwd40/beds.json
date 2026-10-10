@@ -198,5 +198,55 @@
   "name": "bd_repairshoplift39",
   "q": "repair shop lift",
   "scene": "Ordinary real footage: repair shop lift, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_mechanicenginebay60",
+  "q": "mechanic engine bay",
+  "scene": "Ordinary real footage: mechanic engine bay, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_carhoodopen61",
+  "q": "car hood open",
+  "scene": "Ordinary real footage: car hood open, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_autorepairgarage62",
+  "q": "auto repair garage",
+  "scene": "Ordinary real footage: auto repair garage, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_jumpercables63",
+  "q": "jumper cables",
+  "scene": "Ordinary real footage: jumper cables, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_parkinglotmorning64",
+  "q": "parking lot morning",
+  "scene": "Ordinary real footage: parking lot morning, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cardashboardnight65",
+  "q": "car dashboard night",
+  "scene": "Ordinary real footage: car dashboard night, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_garageshelvestools66",
+  "q": "garage shelves tools",
+  "scene": "Ordinary real footage: garage shelves tools, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_wintercarstart67",
+  "q": "winter car start",
+  "scene": "Ordinary real footage: winter car start, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_multimetertesting68",
+  "q": "multimeter testing",
+  "scene": "Ordinary real footage: multimeter testing, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_autopartsaisle69",
+  "q": "auto parts aisle",
+  "scene": "Ordinary real footage: auto parts aisle, real everyday look, no person looking at the camera."
  }
 ]
