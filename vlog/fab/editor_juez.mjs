@@ -42,6 +42,7 @@ import { spawn } from "node:child_process";
 function pedirHaiku(img, texto) {
   return new Promise((res) => {
     const envH = Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(ANTHROPIC_|CLAUDE)/.test(k)));
+    if (process.env.FAB_HAIKU_API === "1") envH.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;   // crédito API en vez de la suscripción
     const abs = path.resolve(img);
     const args = ["-p", "--model", process.env.FAB_HAIKU_MODEL || "haiku", "--output-format", "json", "--no-session-persistence", "--strict-mcp-config",
       "--setting-sources", "", "--tools", "Read", "--allowedTools", "Read", "--max-turns", "4", "--add-dir", path.dirname(abs),

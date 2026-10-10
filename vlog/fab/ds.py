@@ -24,6 +24,7 @@ def _haiku(system, user, pasada, imgs=None, intentos=4):
     import subprocess
     os.makedirs(HCWD, exist_ok=True)
     env = {k: v for k, v in os.environ.items() if not k.startswith(("ANTHROPIC_", "CLAUDE"))}   # nada de la sesión que lo llama (supervisor)
+    if os.environ.get("FAB_HAIKU_API") == "1": env["ANTHROPIC_API_KEY"] = os.environ["ANTHROPIC_API_KEY"]   # crédito API (org baubagas) en vez de la suscripción
     cmd = [CLAUDE_EXE, "-p", "--model", os.environ.get("FAB_HAIKU_MODEL", "haiku"), "--output-format", "json", "--no-session-persistence",
            "--strict-mcp-config", "--setting-sources", "", "--system-prompt", system or "You are a careful assistant."]
     if imgs:
