@@ -161,15 +161,20 @@ def fotos(P, rondas=3):
         print(f"— fotos ronda {ronda + 1}: faltan {len(falt)}", flush=True)
         if not falt: break
         crop = CANAL.get("cara_crop", "")
-        con = [p for p in falt if p["cara"] and os.path.exists(crop)]; sin = [p for p in falt if p not in con]
+        con = [p for p in falt if p["cara"] and os.path.exists(crop)]
+        if ronda >= 2: con = []   # gpt se regenera UNA vez como mucho (el revisor no es perfecto y cada vuelta cuesta)
+        sin = [p for p in falt if p not in con and not (p["cara"] and ronda >= 2)]
         import threading
         # Claudio HACIENDO = gpt-image-2 low + Batch + crop de cara 128x192 (identidad); el resto = agnes gratis con la maestra del lugar
         hilo = threading.Thread(target=gpt_img, args=([{"name": p["id"], "prompt": prompt_foto(p, b) + " " + CANAL["identidad"], "ref": crop} for p in con],))
         hilo.start()
-        agnes_img([{"name": p["id"], "prompt": prompt_foto(p, b), "ref": [maestra_path(p["lugar"], p["hora"])]} for p in sin])
+        # detalle = el objeto llena el cuadro, SIN la maestra (con la maestra agnes copia el plano general y se repite la composición)
+        agnes_img([{"name": p["id"], "prompt": ("A close detail where the main object fills most of the frame, seen from very near: " if p.get("tam") == "detalle" else "") + prompt_foto(p, b),
+                    **({} if p.get("tam") == "detalle" else {"ref": [maestra_path(p["lugar"], p["hora"])]})} for p in sin])
         hilo.join()
         nuevas = [p for p in falt if os.path.exists(IMG + "_eq/" + p["id"] + ".png")]
         malas = revisar_fotos(nuevas, b) if ronda < rondas - 1 else set()
+        if ronda >= 1: malas -= {p["id"] for p in con}   # 2ª vuelta de gpt: se acepta
         for p in nuevas:
             if p["id"] not in malas: shutil.copy(IMG + "_eq/" + p["id"] + ".png", IMG + p["id"] + ".png")
     return [p["id"] for p in P if not os.path.exists(IMG + p["id"] + ".png")]
