@@ -1,0 +1,232 @@
+{
+ "S00": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa del Dutch oven se levanta, vapor, frijoles cremosos"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio junto a la olla de frijoles"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio baja la olla abollada"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "bolsa de pintos secos, puñado en la mano"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "frijoles en colador bajo el agua"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno abierto"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio cierra el cuaderno"
+ },
+ "S07": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "frijoles en la olla, agua vertida desde una jarra"
+ },
+ "S08": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la olla hirviendo fuerte, burbujas grandes"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio apaga el fuego y pone la tapa"
+ },
+ "S10": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "corral por la ventana, caballos"
+ },
+ "S11": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ham hock ahumado, cebolla, ajo, chiles secos, manteca"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa se levanta, frijoles hinchados en el agua"
+ },
+ "S13": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio sostiene la olla, no la vuelca"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "ham hock, cebolla, ajo y chiles entrando a la olla"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "hervor suave, burbuja perezosa, tapa entreabierta"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio revuelve desde el fondo con cuchara de madera"
+ },
+ "S17": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio toma café junto a la ventana"
+ },
+ "S18": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cinco frijoles en una cuchara"
+ },
+ "S19": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "ham hock fuera, carne desmenuzada con tenedor"
+ },
+ "S20": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio prueba el caldo con una cuchara"
+ },
+ "S21": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tazón de frijoles con caldo rojizo, tortilla al lado"
+ },
+ "S22": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty llega con su tazón"
+ },
+ "S23": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty come, con la tortilla en la mano"
+ },
+ "S24": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia la cuchara"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto, letra a mano"
+ },
+ "S26": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "pinto seco vs otro tipo de frijol en dos platos"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en el mostrador de la carnicería, ham hock envuelto"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "bolsas de freezer con frijoles y caldo, planas"
+ },
+ "S29": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "sartén con manteca, frijoles aplastados con un pisapapas"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tazón de caldo de frijoles con cebolla picada y queso"
+ },
+ "S31": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio aplasta frijoles contra la pared de la olla"
+ },
+ "S32": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "tocino, tomate, jalapeño y cilantro sobre la tabla junto a la olla"
+ },
+ "S33": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "atardecer en el corral"
+ },
+ "S34": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S35": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos ollas grandes en la estufa"
+ },
+ "S36": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "Dutch oven sobre brasas con el sombrero"
+ },
+ "S37": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio con la cuchara de madera"
+ },
+ "S38": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "un puñado de pintos viejos, arrugados y pálidos, junto a pintos nuevos"
+ },
+ "S39": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sostiene el salero sobre la olla, niega con la cabeza y luego asiente"
+ },
+ "S40": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio mira el corral, cuenta"
+ },
+ "S41": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio habla a cámara, un tazón de frijoles en la mano"
+ },
+ "S42": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "olla enfriándose en un baño de agua fría en la pileta"
+ },
+ "S43": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla, páginas manchadas"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 12"
+ },
+ "S45": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio cierra la olla, al fondo un Dutch oven distinto"
+ }
+}

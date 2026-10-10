@@ -1,0 +1,1242 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 4.2,
+  "id": "c01",
+  "d": 4.2,
+  "T": 5,
+  "text": "Stop boiling your beans. This is how vaqueros cooked them for forty men.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S01",
+  "s": 4.2,
+  "e": 9.08,
+  "id": "c02",
+  "d": 4.88,
+  "T": 6,
+  "text": "Last time I showed you pork chops, and I pointed at this pot in the back. I promised you the beans.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S01",
+  "s": 9.08,
+  "e": 19.9,
+  "id": "c03",
+  "d": 10.82,
+  "T": 11,
+  "text": "Here they are. If your beans come out hard in the middle, or split and mushy on the outside, or they just taste like nothing no matter how much salt you throw at them at the end, you've been doing what everybody does.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S01",
+  "s": 19.9,
+  "e": 25.06,
+  "id": "c04",
+  "d": 5.16,
+  "T": 6,
+  "text": "You soaked them all night, you dumped the water, you boiled them hard, and you salted them at the end.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S01",
+  "s": 25.06,
+  "e": 29.421,
+  "id": "c05",
+  "d": 4.361,
+  "T": 5,
+  "text": "Every one of those steps is working against you. And you don't have to soak them the night before.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S01",
+  "s": 29.421,
+  "e": 33.621,
+  "id": "c06",
+  "d": 4.2,
+  "T": 5,
+  "text": "Not ever. I'll show you how we did it, and why it works. I'm Claudio.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S01",
+  "s": 33.621,
+  "e": 39.401,
+  "id": "c07",
+  "d": 5.78,
+  "T": 6,
+  "text": "I was the cook on a cattle crew for forty years. Fourteen men most of the year, forty at the spring roundup.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S01",
+  "s": 39.401,
+  "e": 43.761,
+  "id": "c08",
+  "d": 4.36,
+  "T": 5,
+  "text": "And there was a pot of beans on the stove every single day. Every single day.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S01",
+  "s": 43.761,
+  "e": 48.501,
+  "id": "c09",
+  "d": 4.74,
+  "T": 5,
+  "text": "I figure I've cooked about fourteen thousand pots of beans. Some of them were even good.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S02",
+  "s": 48.501,
+  "e": 54.661,
+  "id": "c10",
+  "d": 6.16,
+  "T": 7,
+  "text": "This is the bean pot. It's a Dutch oven, heavy cast iron, with a dent in the lid from a mule named Lupe.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S02",
+  "s": 54.661,
+  "e": 60.451,
+  "id": "c11",
+  "d": 5.79,
+  "T": 6,
+  "text": "I'll tell you that story later. A heavy pot matters for beans. A thin pot gets hot spots on the bottom,",
+  "pad": 0.21
+ },
+ {
+  "sc": "S02",
+  "s": 60.451,
+  "e": 67.851,
+  "id": "c12",
+  "d": 7.4,
+  "T": 8,
+  "text": "and the beans that sit on those spots scorch while the ones on top are still hard. Heavy iron, or a heavy enameled pot, spreads the heat even.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S02",
+  "s": 67.851,
+  "e": 72.751,
+  "id": "c13",
+  "d": 4.9,
+  "T": 6,
+  "text": "If all you've got is a thin stockpot, keep the heat lower and stir more. You'll be fine.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S03",
+  "s": 72.751,
+  "e": 83.431,
+  "id": "c14",
+  "d": 10.68,
+  "T": 11,
+  "text": "These are pinto beans. Two pounds. That's about four and a half cups. On the ranch that pot fed about ten people as a side, or six as the main thing with tortillas. First, pick them over.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S03",
+  "s": 83.431,
+  "e": 93.514,
+  "id": "c15",
+  "d": 10.083,
+  "T": 11,
+  "text": "Spread them on a plate or a sheet pan and look. Every bag of beans has a few little stones in it, a bit of dirt, a bean that's shriveled or broken. Pick those out. I know nobody does this anymore.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S03",
+  "s": 93.514,
+  "e": 98.254,
+  "id": "c16",
+  "d": 4.74,
+  "T": 5,
+  "text": "Bite down on a pebble once and you'll do it the rest of your life. Ask Rusty about his tooth.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S04",
+  "s": 98.254,
+  "e": 103.634,
+  "id": "c17",
+  "d": 5.38,
+  "T": 6,
+  "text": "Rinse them in a colander. Cold water, rub them around with your hand, until the water runs clean.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S05",
+  "s": 103.634,
+  "e": 114.619,
+  "id": "c18",
+  "d": 10.985,
+  "T": 12,
+  "text": "Now let me tell you why the old way fails, because it's not your fault. It's what everybody was taught. A dry bean is a seed. It's been dried until it's hard as a rock, so it'll keep for a year in a sack.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S05",
+  "s": 114.619,
+  "e": 124.659,
+  "id": "c19",
+  "d": 10.04,
+  "T": 11,
+  "text": "To cook it, you have to get water back inside it, all the way to the middle. That's what soaking is for. The skin softens, water soaks in slowly, and the bean swells back up.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S05",
+  "s": 124.659,
+  "e": 132.379,
+  "id": "c20",
+  "d": 7.72,
+  "T": 8,
+  "text": "The problem is, soaking all night is slow, and you have to remember to do it the night before. Most people don't. So the beans go in the pot hard,",
+  "pad": 0.28
+ },
+ {
+  "sc": "S05",
+  "s": 132.379,
+  "e": 142.839,
+  "id": "c21",
+  "d": 10.46,
+  "T": 11,
+  "text": "and they boil and boil, and the outside cooks to mush while the middle is still chalky. And then people pour off the soaking water and salt at the end, because somebody told them salt makes beans tough.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S05",
+  "s": 142.839,
+  "e": 153.762,
+  "id": "c22",
+  "d": 10.923,
+  "T": 12,
+  "text": "That's not true. That's an old story. Cooks have tested it a hundred ways. Salt in the water at the start actually makes the skins softer, not harder, and it seasons the bean all the way to the middle.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S05",
+  "s": 153.762,
+  "e": 163.022,
+  "id": "c23",
+  "d": 9.26,
+  "T": 10,
+  "text": "Salt at the end only sits on the outside. That's why your beans taste like nothing, and the broth tastes like salt. The last mistake is the big one. Boiling.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S05",
+  "s": 163.022,
+  "e": 174.062,
+  "id": "c24",
+  "d": 11.04,
+  "T": 12,
+  "text": "A hard, rolling boil bangs the beans against each other and against the pot. The skins split, the outside falls apart, and the middle still isn't done. Beans want a lazy bubble. Not a boil.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S06",
+  "s": 174.062,
+  "e": 182.629,
+  "id": "c25",
+  "d": 8.567,
+  "T": 9,
+  "text": "Don Ernesto, the cook who taught me, used to say, \"Beans don't like to be rushed, and they don't like to wait.\" It took me a while. Here's what he meant.",
+  "pad": 0.43
+ },
+ {
+  "sc": "S07",
+  "s": 182.629,
+  "e": 191.949,
+  "id": "c26",
+  "d": 9.32,
+  "T": 10,
+  "text": "Step one. Beans in the pot. Twelve cups of water. That's three quarts. It looks like way too much water. It isn't. The beans are going to drink a lot of it.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S08",
+  "s": 191.949,
+  "e": 202.509,
+  "id": "c27",
+  "d": 10.56,
+  "T": 11,
+  "text": "Heat on high. Bring it to a hard boil. This is the only time in this whole recipe you're going to let it boil hard. Once it's rolling, set a timer. Two minutes. Exactly two minutes.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S09",
+  "s": 202.509,
+  "e": 212.574,
+  "id": "c28",
+  "d": 10.065,
+  "T": 11,
+  "text": "Two minutes. Turn the heat off. Put the lid on. And walk away. One hour. That's the whole trick. Two minutes of hard boiling, then one hour with the lid on and the heat off.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S09",
+  "s": 212.574,
+  "e": 218.214,
+  "id": "c29",
+  "d": 5.64,
+  "T": 6,
+  "text": "In that hour, the beans soak up hot water a lot faster than they ever would in cold water overnight.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S09",
+  "s": 218.214,
+  "e": 226.054,
+  "id": "c30",
+  "d": 7.84,
+  "T": 8,
+  "text": "The skins soften, the beans swell. When you come back, they're right where they'd be after a whole night of soaking. Except you started them at lunch.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S10",
+  "s": 226.054,
+  "e": 237.594,
+  "id": "c31",
+  "d": 11.54,
+  "T": 12,
+  "text": "While that sits, let me tell you about the roundup. Every spring we gathered the cattle off the summer pasture. That meant forty men, some of them our regular crew and some of them neighbors and kids from town who came out to help.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S10",
+  "s": 237.594,
+  "e": 248.651,
+  "id": "c32",
+  "d": 11.057,
+  "T": 12,
+  "text": "Four days, sometimes five. They'd be on horseback from before sunup until it was too dark to see. And what they ate, at every meal, was beans. Beans for breakfast with eggs and tortillas.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S10",
+  "s": 248.651,
+  "e": 259.431,
+  "id": "c33",
+  "d": 10.78,
+  "T": 11,
+  "text": "Beans at noon with whatever meat we had. Beans at night. I'd cook two big pots, about twenty pounds of dry beans a day. You know what forty tired men will tell you if the beans are hard? Everything.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S10",
+  "s": 259.431,
+  "e": 263.891,
+  "id": "c34",
+  "d": 4.46,
+  "T": 5,
+  "text": "Every last thing. And they'll tell you for a year. So I learned to get them right.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S11",
+  "s": 263.891,
+  "e": 275.071,
+  "id": "c35",
+  "d": 11.18,
+  "T": 12,
+  "text": "Back to the pot. While the beans rest, get your other things ready. One smoked ham hock. Or if you can't find one, four ounces of salt pork. One large white onion, cut in half. Don't chop it.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S11",
+  "s": 275.071,
+  "e": 286.761,
+  "id": "c36",
+  "d": 11.69,
+  "T": 12,
+  "text": "Just cut it in half, skin off. Four cloves of garlic, smashed with the side of your knife. Two dried chiles, ancho or guajillo, with the stems and seeds pulled out. Two tablespoons of lard or bacon grease.",
+  "pad": 0.31
+ },
+ {
+  "sc": "S11",
+  "s": 286.761,
+  "e": 296.461,
+  "id": "c37",
+  "d": 9.7,
+  "T": 10,
+  "text": "And two teaspoons of kosher salt. The chiles aren't for heat. Ancho and guajillo are mild. They give the broth a deep red color and a little sweetness, like raisins.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S11",
+  "s": 296.461,
+  "e": 302.761,
+  "id": "c38",
+  "d": 6.3,
+  "T": 7,
+  "text": "You won't taste them as chile. You'll just taste better beans. If you've only got chili powder in a jar, use a teaspoon.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S12",
+  "s": 302.761,
+  "e": 310.49,
+  "id": "c39",
+  "d": 7.729,
+  "T": 8,
+  "text": "One hour. Lid off. Look at that. They've swollen up, the water's gone a little cloudy and brown. That water has bean flavor in it now.",
+  "pad": 0.27
+ },
+ {
+  "sc": "S13",
+  "s": 310.49,
+  "e": 319.77,
+  "id": "c40",
+  "d": 9.28,
+  "T": 10,
+  "text": "Step two. Do not pour that water off. I know. Everybody pours it off. Some people say it makes you, how do I say it politely, musical.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S13",
+  "s": 319.77,
+  "e": 330.75,
+  "id": "c41",
+  "d": 10.98,
+  "T": 12,
+  "text": "The truth is it doesn't make much difference either way, and it's full of flavor and color. We never poured it off. On the ranch, water came from a well with a windmill, and you didn't throw away water you'd already heated.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S14",
+  "s": 330.75,
+  "e": 336.21,
+  "id": "c42",
+  "d": 5.46,
+  "T": 6,
+  "text": "In goes the ham hock. The onion halves. The garlic. The chiles. The lard. And the salt.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S14",
+  "s": 336.21,
+  "e": 345.099,
+  "id": "c43",
+  "d": 8.889,
+  "T": 10,
+  "text": "Right now. Two teaspoons, at the start. This is the part that'll make you nervous, because you were told never to salt beans at the beginning. Trust me. Salt now.",
+  "pad": 1.11
+ },
+ {
+  "sc": "S15",
+  "s": 345.099,
+  "e": 356.379,
+  "id": "c44",
+  "d": 11.28,
+  "T": 12,
+  "text": "Step three. Heat back on, medium, until it just starts to bubble. Then turn it down until you get what I call a lazy bubble. A bubble comes up here, then over there, slow. Not a rolling boil.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S15",
+  "s": 356.379,
+  "e": 362.819,
+  "id": "c45",
+  "d": 6.44,
+  "T": 7,
+  "text": "Put the lid on, but leave it cracked open about an inch, so the steam can get out. That keeps it from boiling up under the lid.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S16",
+  "s": 362.819,
+  "e": 371.899,
+  "id": "c46",
+  "d": 9.08,
+  "T": 10,
+  "text": "Now, an hour and a half to two hours. Every twenty minutes or so, stir it from the bottom with a wooden spoon. Scrape the bottom. Beans on the bottom are the ones that'll stick.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S16",
+  "s": 371.899,
+  "e": 381.974,
+  "id": "c47",
+  "d": 10.075,
+  "T": 11,
+  "text": "And check the water level. If the beans start peeking up out of the broth, add hot water. Hot, from the kettle. Not cold. Cold water stops the cooking and the skins can crack.",
+  "pad": 0.93
+ },
+ {
+  "sc": "S17",
+  "s": 381.974,
+  "e": 392.694,
+  "id": "c48",
+  "d": 10.72,
+  "T": 11,
+  "text": "That's the hard part. Waiting. This is a Sunday-afternoon pot. Or a pot you start at three and eat at six. It doesn't need you. It just needs you to look in on it now and then.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S18",
+  "s": 392.694,
+  "e": 404.434,
+  "id": "c49",
+  "d": 11.74,
+  "T": 12,
+  "text": "Step four. How do you know when they're done? Here's a trick most people get wrong. They fish out one bean, taste it, and it's soft, and they turn off the pot. And then half the beans in the bowl are still chalky.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S18",
+  "s": 404.434,
+  "e": 413.932,
+  "id": "c50",
+  "d": 9.498,
+  "T": 10,
+  "text": "Beans don't all cook at the same speed. Some are older, some are bigger. So you take five beans. Not one. Five. Blow on them, and bite each one.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S18",
+  "s": 413.932,
+  "e": 423.492,
+  "id": "c51",
+  "d": 9.56,
+  "T": 10,
+  "text": "They should all be creamy all the way through, with no white chalky dot in the middle. If even one of them is chalky, give it fifteen more minutes and test five more.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S19",
+  "s": 423.492,
+  "e": 435.092,
+  "id": "c52",
+  "d": 11.6,
+  "T": 12,
+  "text": "Step five. When they're done, fish out the ham hock. Put it on a plate. When it's cool enough to touch, pull the meat off the bone with a fork, chop it up, and put it back in the pot. Throw away the skin and bone.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S19",
+  "s": 435.092,
+  "e": 439.152,
+  "id": "c53",
+  "d": 4.06,
+  "T": 5,
+  "text": "Fish out the onion and the chile skins, too. They've given everything they had.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S20",
+  "s": 439.152,
+  "e": 448.259,
+  "id": "c54",
+  "d": 9.107,
+  "T": 10,
+  "text": "Now taste the broth. Now, at the end, is when you adjust the salt. It might need another half teaspoon. It might not. The ham hock brings salt too.",
+  "pad": 0.89
+ },
+ {
+  "sc": "S21",
+  "s": 448.259,
+  "e": 459.059,
+  "id": "c55",
+  "d": 10.8,
+  "T": 11,
+  "text": "Look at that. The broth is red-brown and a little thick. The beans are whole, not split. And when you bite one, it's creamy, and it tastes like a bean, all the way through, with a little smoke from the ham hock.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S22",
+  "s": 459.059,
+  "e": 460.499,
+  "id": "c56",
+  "d": 1.44,
+  "T": 2,
+  "text": "Rusty. Come here.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S23",
+  "s": 460.499,
+  "e": 466.239,
+  "id": "c57",
+  "d": 5.74,
+  "T": 6,
+  "text": "He's had about four thousand bowls of these. He still comes back for seconds. That's the best review I can get.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S24",
+  "s": 466.239,
+  "e": 472.819,
+  "id": "c58",
+  "d": 6.58,
+  "T": 7,
+  "text": "I put every one of these recipes, the way we really made them, in a book. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S25",
+  "s": 472.819,
+  "e": 480.349,
+  "id": "c59",
+  "d": 7.53,
+  "T": 8,
+  "text": "The beans are still hard after three hours. This is the one everybody asks me about. Nine times out of ten, it's old beans.",
+  "pad": 0.47
+ },
+ {
+  "sc": "S25",
+  "s": 480.349,
+  "e": 487.889,
+  "id": "c60",
+  "d": 7.54,
+  "T": 8,
+  "text": "Beans that have sat on a shelf or in your pantry for two or three years dry out so hard they never get soft. You can't see it on the outside.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S25",
+  "s": 487.889,
+  "e": 498.339,
+  "id": "c61",
+  "d": 10.45,
+  "T": 11,
+  "text": "Buy your beans from a store that sells a lot of them, where the bags move fast. And don't keep a bag in the pantry for years. The other reason is hard water. If your water has a lot of minerals in it,",
+  "pad": 0.55
+ },
+ {
+  "sc": "S25",
+  "s": 498.339,
+  "e": 509.935,
+  "id": "c62",
+  "d": 11.596,
+  "T": 12,
+  "text": "you'll see white crust on your faucets, the beans have a harder time softening. Add a pinch of baking soda to the pot. A pinch. About an eighth of a teaspoon. It softens the water, and the beans give up.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S25",
+  "s": 509.935,
+  "e": 520.135,
+  "id": "c63",
+  "d": 10.2,
+  "T": 11,
+  "text": "Don't add more than a pinch, or they'll taste like soap. The beans split and went to mush. You boiled them too hard. Lazy bubble. Lid cracked. If your stove runs hot even on low,",
+  "pad": 0.8
+ },
+ {
+  "sc": "S25",
+  "s": 520.135,
+  "e": 525.955,
+  "id": "c64",
+  "d": 5.82,
+  "T": 6,
+  "text": "slide the pot halfway off the burner. They're flat and watery. You salted at the end. Next time,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S25",
+  "s": 525.955,
+  "e": 537.575,
+  "id": "c65",
+  "d": 11.62,
+  "T": 12,
+  "text": "salt goes in with the ham hock. And let the pot cook down a little with the lid off for the last twenty minutes, so the broth thickens. The bottom scorched. Thin pot, or heat too high, or you didn't stir. If it scorches,",
+  "pad": 0.38
+ },
+ {
+  "sc": "S25",
+  "s": 537.575,
+  "e": 545.377,
+  "id": "c66",
+  "d": 7.802,
+  "T": 8,
+  "text": "don't scrape it. Pour the good beans off the top into another pot and leave the burned part behind. Scrape that black stuff in and the whole pot tastes burnt.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S26",
+  "s": 545.377,
+  "e": 555.757,
+  "id": "c67",
+  "d": 10.38,
+  "T": 11,
+  "text": "Can you do this with other beans? Black beans, yes. Same steps, they cook a little faster, start testing at an hour. Great northern or navy beans, yes. Red kidney beans,",
+  "pad": 0.62
+ },
+ {
+  "sc": "S26",
+  "s": 555.757,
+  "e": 566.877,
+  "id": "c68",
+  "d": 11.12,
+  "T": 12,
+  "text": "yes, but those you must boil hard for a full ten minutes at the start, not two. Raw or undercooked kidney beans can make you sick. That's not a story. That's true. Pintos are fine with the two minutes.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S27",
+  "s": 566.877,
+  "e": 577.136,
+  "id": "c69",
+  "d": 10.259,
+  "T": 11,
+  "text": "What do you ask for at the store? Smoked ham hock. They're usually by the bacon or the sausage, in a package of one or two. If you can't find them, ask at the meat counter. If they don't have them,",
+  "pad": 0.74
+ },
+ {
+  "sc": "S27",
+  "s": 577.136,
+  "e": 586.876,
+  "id": "c70",
+  "d": 9.74,
+  "T": 10,
+  "text": "salt pork, which is like an unsmoked slab of bacon. Or four strips of thick bacon, chopped, browned in the bottom of the pot before the beans go back in. And if you don't eat pork,",
+  "pad": 0.26
+ },
+ {
+  "sc": "S27",
+  "s": 586.876,
+  "e": 594.916,
+  "id": "c71",
+  "d": 8.04,
+  "T": 9,
+  "text": "leave it out, use an extra tablespoon of oil, and add a teaspoon of smoked paprika for that smoky taste. It's not the same, but it's good.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S28",
+  "s": 594.916,
+  "e": 602.642,
+  "id": "c72",
+  "d": 7.726,
+  "T": 8,
+  "text": "Storing them. Beans keep in the fridge four days. And they freeze better than almost anything. Here's what I tell young people who are cooking for two.",
+  "pad": 0.27
+ },
+ {
+  "sc": "S28",
+  "s": 602.642,
+  "e": 613.182,
+  "id": "c73",
+  "d": 10.54,
+  "T": 11,
+  "text": "Don't make half a batch. Make the whole pot, and freeze it in two-cup bags, flat, with plenty of broth in each bag. Lay them flat in the freezer so they stack. They'll keep three months.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S28",
+  "s": 613.182,
+  "e": 620.602,
+  "id": "c74",
+  "d": 7.42,
+  "T": 8,
+  "text": "When you want beans, drop a bag in a pot with a splash of water and bring it to a simmer. They come back better than canned, and they cost a fraction.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S29",
+  "s": 620.602,
+  "e": 629.004,
+  "id": "c75",
+  "d": 8.402,
+  "T": 9,
+  "text": "And here's the second supper. The day after, take two cups of beans with a little broth. Heat a tablespoon of lard or bacon grease in a skillet, medium.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S29",
+  "s": 629.004,
+  "e": 639.484,
+  "id": "c76",
+  "d": 10.48,
+  "T": 11,
+  "text": "Beans go in, and you mash them right there in the pan with a potato masher, or the bottom of a cup. Keep mashing and stirring, five or six minutes, until they're thick and creamy and pull away from the pan.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S29",
+  "s": 639.484,
+  "e": 650.104,
+  "id": "c77",
+  "d": 10.62,
+  "T": 11,
+  "text": "Those are refried beans. Real ones. Not from a can. On a warm tortilla with a fried egg on top and some salsa, that's what forty men ate before they got on a horse at five in the morning.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S30",
+  "s": 650.104,
+  "e": 660.929,
+  "id": "c78",
+  "d": 10.825,
+  "T": 11,
+  "text": "And on a cold night, a bowl of just the beans and broth, with some chopped raw onion, a little cilantro, a crumble of cheese, and a squeeze of lime. With a stack of tortillas. That's supper.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S30",
+  "s": 660.929,
+  "e": 665.229,
+  "id": "c79",
+  "d": 4.3,
+  "T": 5,
+  "text": "We called it a bowl of beans, but in town they'd charge you eleven dollars for it.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S31",
+  "s": 665.229,
+  "e": 676.029,
+  "id": "c80",
+  "d": 10.8,
+  "T": 11,
+  "text": "One more trick for the broth. Some people like their beans soupy, some like them thick. If you want it thicker, take a big spoonful of beans, push them against the side of the pot with the back of your spoon,",
+  "pad": 0.2
+ },
+ {
+  "sc": "S31",
+  "s": 676.029,
+  "e": 685.289,
+  "id": "c81",
+  "d": 9.26,
+  "T": 10,
+  "text": "mash them, and stir them back in. Do that two or three times. The mashed beans thicken the broth in about five minutes. No flour, no cornstarch. Just beans.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S32",
+  "s": 685.289,
+  "e": 696.421,
+  "id": "c82",
+  "d": 11.132,
+  "T": 12,
+  "text": "And here's how we dressed up the pot on a Saturday, when somebody had a birthday, or the boss came out from town. Thirty minutes before the beans are done, fry four strips of chopped bacon in a skillet until they're crisp.",
+  "pad": 0.87
+ },
+ {
+  "sc": "S32",
+  "s": 696.421,
+  "e": 707.761,
+  "id": "c83",
+  "d": 11.34,
+  "T": 12,
+  "text": "Add half an onion, chopped, a chopped tomato, and one jalapeño, seeds out if you don't like heat. Cook five minutes, and stir all of it, grease too, into the bean pot. Simmer the last half hour together.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S32",
+  "s": 707.761,
+  "e": 714.741,
+  "id": "c84",
+  "d": 6.98,
+  "T": 8,
+  "text": "Handful of chopped cilantro at the very end. That's what they call cowboy beans in town. We just called them Saturday beans.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S33",
+  "s": 714.741,
+  "e": 724.443,
+  "id": "c85",
+  "d": 9.702,
+  "T": 10,
+  "text": "Don Ernesto had a rule about the bean pot. He said it should never be empty. When it got down to the last third, he'd start a new batch and pour the old beans in on top when the new ones were done.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S33",
+  "s": 724.443,
+  "e": 735.703,
+  "id": "c86",
+  "d": 11.26,
+  "T": 12,
+  "text": "He said the old beans taught the new ones how to taste. I don't know if that's science. But I'll tell you, his beans were better than mine for about twenty years, and I never figured out why. Maybe that was it.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S34",
+  "s": 735.703,
+  "e": 746.283,
+  "id": "c87",
+  "d": 10.58,
+  "T": 11,
+  "text": "What it costs. Two pounds of dry pintos, about three dollars and forty cents. A smoked ham hock, four dollars. An onion, a dollar thirty. Garlic, two chiles, lard,",
+  "pad": 0.42
+ },
+ {
+  "sc": "S34",
+  "s": 746.283,
+  "e": 754.071,
+  "id": "c88",
+  "d": 7.788,
+  "T": 8,
+  "text": "salt, call it a dollar fifty. That's about ten dollars and twenty cents, for a pot that feeds ten people as a side. About a dollar a plate.",
+  "pad": 0.21
+ },
+ {
+  "sc": "S34",
+  "s": 754.071,
+  "e": 758.991,
+  "id": "c89",
+  "d": 4.92,
+  "T": 6,
+  "text": "Fill a bowl, put two tortillas on it, and a family of four eats supper for under five dollars.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S34",
+  "s": 758.991,
+  "e": 766.131,
+  "id": "c90",
+  "d": 7.14,
+  "T": 8,
+  "text": "That's why there was a pot of beans on every ranch stove in the West. Not because we loved beans. Because we could afford to feed men with them.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S35",
+  "s": 766.131,
+  "e": 776.4,
+  "id": "c91",
+  "d": 10.269,
+  "T": 11,
+  "text": "For a crowd. If you've got twenty-five people coming, a church supper, a family reunion, cook four pounds, but in two pots. Not one giant pot. I learned this one at the roundup.",
+  "pad": 0.73
+ },
+ {
+  "sc": "S35",
+  "s": 776.4,
+  "e": 786.6,
+  "id": "c92",
+  "d": 10.2,
+  "T": 11,
+  "text": "A huge pot scorches on the bottom before the middle is done, and it takes forever to come up to temperature. Two pots, same recipe in each, and you'll be done at the same time as one.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S36",
+  "s": 786.6,
+  "e": 797.72,
+  "id": "c93",
+  "d": 11.12,
+  "T": 12,
+  "text": "And if you're ever out camping, or at a cookout with a fire. Same thing in a Dutch oven on the coals. Bring it to the boil over a good bed of coals, two minutes, lid on, pull it off the fire for an hour.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S36",
+  "s": 797.72,
+  "e": 809.024,
+  "id": "c94",
+  "d": 11.304,
+  "T": 12,
+  "text": "Then back over a small bed of coals, just enough for a lazy bubble. Keep a kettle of hot water by the fire for topping it up. That's the original way. That's how beans were cooked on trail drives a hundred and fifty years ago.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S37",
+  "s": 809.024,
+  "e": 818.424,
+  "id": "c95",
+  "d": 9.4,
+  "T": 10,
+  "text": "A couple of questions people always ask. Do I have to use the dried chiles? No. They add color and a little sweetness. Leave them out and the beans are still good.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S37",
+  "s": 818.424,
+  "e": 822.784,
+  "id": "c96",
+  "d": 4.36,
+  "T": 5,
+  "text": "Can I use a pressure cooker or a slow cooker? You can. They work.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S37",
+  "s": 822.784,
+  "e": 830.324,
+  "id": "c97",
+  "d": 7.54,
+  "T": 8,
+  "text": "The pressure cooker is fast and the slow cooker is easy. But you'll lose a little of that thick, red broth that comes from simmering with the lid cracked.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S37",
+  "s": 830.324,
+  "e": 841.135,
+  "id": "c98",
+  "d": 10.811,
+  "T": 11,
+  "text": "If you use a slow cooker, do the two-minute boil and the one-hour rest in a pot on the stove first. Raw beans that never get to a full boil don't cook right in a slow cooker. What about canned beans?",
+  "pad": 0.19
+ },
+ {
+  "sc": "S37",
+  "s": 841.135,
+  "e": 852.475,
+  "id": "c99",
+  "d": 11.34,
+  "T": 12,
+  "text": "Canned beans are fine in a pinch. I've opened plenty of cans. But a can of beans costs about what a whole pound of dry beans does, and a pound of dry beans makes three cans' worth. And they don't taste like this.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S38",
+  "s": 852.475,
+  "e": 863.255,
+  "id": "c100",
+  "d": 10.78,
+  "T": 11,
+  "text": "So how do you pick a good bag at the store, if old beans are the enemy? Look through the plastic. Fresh pintos are smooth and a little shiny, speckled pink and brown, all about the same size.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S38",
+  "s": 863.255,
+  "e": 874.384,
+  "id": "c101",
+  "d": 11.129,
+  "T": 12,
+  "text": "Old ones look pale and dusty, and a lot of them are wrinkled or cracked. Turn the bag over. If there's a pile of broken pieces and bean dust in the corners, put it back. And if the bag has a date on it, read it.",
+  "pad": 0.87
+ },
+ {
+  "sc": "S38",
+  "s": 874.384,
+  "e": 879.564,
+  "id": "c102",
+  "d": 5.18,
+  "T": 6,
+  "text": "Same price, same shelf. One bag cooks in two hours. The other one never gets there.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S39",
+  "s": 879.564,
+  "e": 884.404,
+  "id": "c103",
+  "d": 4.84,
+  "T": 5,
+  "text": "And the salt question. You've heard you can't salt beans at the start or they'll never get soft.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S39",
+  "s": 884.404,
+  "e": 894.544,
+  "id": "c104",
+  "d": 10.14,
+  "T": 11,
+  "text": "Don Ernesto believed that, and so did I for years. Then one roundup I ran out of time and salted a pot at the start, and I cooked a second pot the old way, same beans, same day.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S39",
+  "s": 894.544,
+  "e": 903.131,
+  "id": "c105",
+  "d": 8.587,
+  "T": 9,
+  "text": "The salted pot was softer, and it tasted better all the way to the middle. The men ate that one first. Since then, salt goes in at the start, two teaspoons,",
+  "pad": 0.41
+ },
+ {
+  "sc": "S39",
+  "s": 903.131,
+  "e": 914.431,
+  "id": "c106",
+  "d": 11.3,
+  "T": 12,
+  "text": "and I only taste and adjust at the end, because the ham hock brings its own salt and the broth cooks down. The real enemies are old beans, hard water, and acid. Tomatoes, vinegar, lime.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S39",
+  "s": 914.431,
+  "e": 920.711,
+  "id": "c107",
+  "d": 6.28,
+  "T": 7,
+  "text": "Those do slow the beans down. That's why the tomato for Saturday beans goes in at the end, after the beans are soft.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S40",
+  "s": 920.711,
+  "e": 932.191,
+  "id": "c108",
+  "d": 11.48,
+  "T": 12,
+  "text": "You see the dent in the lid of this pot? Let me tell you about that. Nineteen eighty-nine. We were camped out at the south pasture for a week, branding. I had the beans on the fire, this pot, sitting on the coals.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S40",
+  "s": 932.191,
+  "e": 942.656,
+  "id": "c109",
+  "d": 10.465,
+  "T": 11,
+  "text": "And we had a mule named Lupe. Mean animal. Smart, but mean. She smelled something, I don't know what, and she came over to the fire while I was getting water. She knocked the pot with her head,",
+  "pad": 0.54
+ },
+ {
+  "sc": "S40",
+  "s": 942.656,
+  "e": 952.416,
+  "id": "c110",
+  "d": 9.76,
+  "T": 10,
+  "text": "the lid went flying, and she stepped on it. That's the dent. The pot didn't spill. Not one bean. The men said even the mule knew better than to waste Claudio's beans.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S40",
+  "s": 952.416,
+  "e": 959.576,
+  "id": "c111",
+  "d": 7.16,
+  "T": 8,
+  "text": "All these years, that lid has never sat flat again. I've never bought a new one. Every time I see that dent, I think of Lupe.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S41",
+  "s": 959.576,
+  "e": 970.795,
+  "id": "c112",
+  "d": 11.219,
+  "T": 12,
+  "text": "And I know some of you are wondering about the gas. Everybody jokes about beans. Here's the truth. Your body gets used to beans. If you eat them once a month, they bother you. If you eat them a few times a week,",
+  "pad": 0.78
+ },
+ {
+  "sc": "S41",
+  "s": 970.795,
+  "e": 978.775,
+  "id": "c113",
+  "d": 7.98,
+  "T": 9,
+  "text": "like the crew did, after a couple of weeks they don't bother you much at all. And cooking them all the way, until they're really soft and creamy, helps a lot.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S41",
+  "s": 978.775,
+  "e": 984.635,
+  "id": "c114",
+  "d": 5.86,
+  "T": 7,
+  "text": "Undercooked beans are harder on your stomach. So cook them until five out of five are creamy. That's the rule.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S42",
+  "s": 984.635,
+  "e": 995.724,
+  "id": "c115",
+  "d": 11.089,
+  "T": 12,
+  "text": "One more thing about a big pot. When you make five pounds of beans, that's a lot of hot food, and a big pot holds heat for hours. Don't put the whole hot pot in the fridge, and don't leave it on the stove overnight.",
+  "pad": 0.91
+ },
+ {
+  "sc": "S42",
+  "s": 995.724,
+  "e": 1004.264,
+  "id": "c116",
+  "d": 8.54,
+  "T": 9,
+  "text": "Within two hours, split the beans into shallow containers, or set the pot in a sink of cold water for twenty minutes and stir it, and then into the fridge.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S42",
+  "s": 1004.264,
+  "e": 1012.284,
+  "id": "c117",
+  "d": 8.02,
+  "T": 9,
+  "text": "Beans left warm overnight can make you sick, and you can't smell it or see it. Cool them fast. Then they keep three or four days in the fridge.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S43",
+  "s": 1012.284,
+  "e": 1018.324,
+  "id": "c118",
+  "d": 6.04,
+  "T": 7,
+  "text": "Now, about the book. This crew book has every pot of beans I ever got right, and a few I got wrong.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S43",
+  "s": 1018.324,
+  "e": 1024.724,
+  "id": "c119",
+  "d": 6.4,
+  "T": 7,
+  "text": "A few years back I put all of it, every recipe, the way we really cooked them, in a real book. The Vaquero's Cookbook.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S44",
+  "s": 1024.724,
+  "e": 1034.762,
+  "id": "c120",
+  "d": 10.038,
+  "T": 11,
+  "text": "These beans are on page twelve. The two-minute boil, the one-hour rest, the five-bean test, how to fix them when they won't soften, and how to cook them for two or for twenty-five.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S44",
+  "s": 1034.762,
+  "e": 1044.482,
+  "id": "c121",
+  "d": 9.72,
+  "T": 10,
+  "text": "And the refried beans that come after, and the pork chops from last time, and the ribs, the potatoes, the steak, the eggs. All the way through. It's twenty-seven dollars.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S44",
+  "s": 1044.482,
+  "e": 1051.722,
+  "id": "c122",
+  "d": 7.24,
+  "T": 8,
+  "text": "Every recipe from the ranch for less than one family dinner out. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S45",
+  "s": 1051.722,
+  "e": 1061.869,
+  "id": "c123",
+  "d": 10.147,
+  "T": 11,
+  "text": "That's it. Two minutes of boiling, one hour with the lid on, salt at the start, and a lazy bubble. Never a hard boil. Next time, ribs. And these never touched a grill.",
+  "pad": 0.85
+ },
+ {
+  "sc": "S45",
+  "s": 1061.869,
+  "e": 1071.415,
+  "id": "c124",
+  "d": 9.546,
+  "T": 10,
+  "text": "I'll show you how we made ribs so tender the bone slides right out, in a pot, in the oven, with six dried chiles and an orange. Ándale, mijo. See you then.",
+  "pad": 0.45
+ }
+]
