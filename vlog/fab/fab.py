@@ -379,6 +379,12 @@ def e_montaje():
         reh = J(D + "montaje/rehacer.json"); print(f"retomo el montaje: {len(reh)} planos ya marcados (no se vuelve a revisar)")
     else:
         reh = equipo.revisar_montaje()
+    # medido en cltoilet: el editor marcó 213 de 408 (rehacer media película = 1 h más). Se rehace como mucho el 25 %, primero lo grave.
+    tope = max(10, len(leer_planos()) // 4)
+    if len(reh) > tope:
+        grave = re.compile(r"camera|cámara|text|texto|letr|duplicate|duplicad|repet|same|mismo|different (house|place|room)|otra casa|otro lugar|broken|rot|deform", re.I)
+        orden = sorted(reh, key=lambda i: (not grave.search(reh[i].get("motivo", "")), i))
+        reh = {i: reh[i] for i in orden[:tope]}
     print(f"editor de montaje: {len(reh)} planos a rehacer")
     if reh:
         P = leer_planos(); b = J(D + "biblia.json")
