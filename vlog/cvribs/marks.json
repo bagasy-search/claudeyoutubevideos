@@ -1,0 +1,262 @@
+{
+ "S00": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costilla glaseada, el hueso sale limpio entre los dedos"
+ },
+ "S01": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sostiene el hueso limpio"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio descuelga el Dutch oven grande"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costillas de cerdo crudas sobre papel de carnicero"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno abierto"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costillas cortadas en trozos de tres huesos"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio da vuelta las costillas, membrana plateada"
+ },
+ "S07": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "sal y comino espolvoreados sobre las costillas"
+ },
+ "S08": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chiles guajillo secos en la mano"
+ },
+ "S09": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio corta el tallo y saca las semillas"
+ },
+ "S10": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chiles tostándose en la sartén seca"
+ },
+ "S11": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chiles remojando en un bol de agua caliente"
+ },
+ "S12": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "naranja, ajo, vinagre, azúcar morena junto a la licuadora"
+ },
+ "S13": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "todo en la licuadora, salsa roja lisa"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "costillas de pie dentro del Dutch oven"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio mira el nivel del líquido a mitad de las costillas"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa sobre el Dutch oven, entra al horno"
+ },
+ "S17": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana con café"
+ },
+ "S18": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "corral al atardecer"
+ },
+ "S19": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "horno abierto, la tapa se levanta, vapor"
+ },
+ "S20": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio gira un hueso con pinzas"
+ },
+ "S21": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costillas pasadas a bandeja con papel aluminio"
+ },
+ "S22": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la salsa hirviendo y espesándose en la olla"
+ },
+ "S23": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio pincela las costillas con la salsa espesa"
+ },
+ "S24": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "costillas bajo el gratinador, la salsa burbujea y se tuesta"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costillas glaseadas brillantes en la tabla"
+ },
+ "S26": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio saca un hueso limpio"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty agarra una costilla con la mano"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty con los dedos pegajosos, sonríe"
+ },
+ "S29": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia la tabla"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S31": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costillas de res y costillas country-style en la tabla"
+ },
+ "S32": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en el mostrador de carnicería"
+ },
+ "S33": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costillas en recipiente, bolsas en freezer"
+ },
+ "S34": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "carne desmenuzada en la sartén con salsa, tortillas calientes"
+ },
+ "S35": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cebolla morada en rodajas finas dentro de un frasco con jugo"
+ },
+ "S36": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio prueba la salsa reducida con una cuchara"
+ },
+ "S37": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana, cono de piloncillo en la mano"
+ },
+ "S38": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "plato con costillas, frijoles, repollo y tortillas"
+ },
+ "S39": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S40": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "asadera grande tapada con papel aluminio"
+ },
+ "S41": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "Dutch oven sobre brasas, carbones en la tapa"
+ },
+ "S42": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga las pinzas"
+ },
+ "S43": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio cuenta junto a la ventana, la tarde afuera"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "termómetro en la carne entre dos huesos"
+ },
+ "S45": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "costillas braseadas en recipiente, etiqueta con la fecha"
+ },
+ "S46": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chiles ancho, chipotle en lata y guajillo junto a la licuadora"
+ },
+ "S47": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "huesos de costilla dentro de la olla de frijoles"
+ },
+ "S48": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio quita la membrana con un trapo de papel"
+ },
+ "S49": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S50": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 38"
+ },
+ "S51": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, una bolsa de papas al lado"
+ }
+}

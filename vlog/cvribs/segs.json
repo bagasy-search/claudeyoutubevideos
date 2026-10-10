@@ -1,0 +1,1282 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 1.54,
+  "id": "c01",
+  "d": 1.54,
+  "T": 2,
+  "text": "These never touched a grill.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S01",
+  "s": 1.54,
+  "e": 6.62,
+  "id": "c02",
+  "d": 5.08,
+  "T": 6,
+  "text": "Look at that. The bone slides right out. Clean. Not a scrap of meat on it.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S01",
+  "s": 6.62,
+  "e": 10.92,
+  "id": "c03",
+  "d": 4.3,
+  "T": 5,
+  "text": "Last time I showed you the beans, the two-minute boil and the lazy bubble. Today,",
+  "pad": 0.7
+ },
+ {
+  "sc": "S01",
+  "s": 10.92,
+  "e": 16.5,
+  "id": "c04",
+  "d": 5.58,
+  "T": 6,
+  "text": "what goes next to them. Ribs. Most people think good ribs need a grill, or a smoker,",
+  "pad": 0.42
+ },
+ {
+  "sc": "S01",
+  "s": 16.5,
+  "e": 23.44,
+  "id": "c05",
+  "d": 6.94,
+  "T": 8,
+  "text": "or a whole Saturday standing over a fire with a beer. And most of the ribs people make on a grill at home come out one of two ways.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S01",
+  "s": 23.44,
+  "e": 29.765,
+  "id": "c06",
+  "d": 6.325,
+  "T": 7,
+  "text": "Burnt on the outside and tough on the bone. Or dried out like jerky because they cooked them too long trying to get them tender.",
+  "pad": 0.67
+ },
+ {
+  "sc": "S01",
+  "s": 29.765,
+  "e": 35.545,
+  "id": "c07",
+  "d": 5.78,
+  "T": 6,
+  "text": "I'm going to show you how we made ribs on the ranch, in a pot, in the oven. Six dried chiles.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S01",
+  "s": 35.545,
+  "e": 41.165,
+  "id": "c08",
+  "d": 5.62,
+  "T": 6,
+  "text": "An orange. Some garlic. Two hours. And they come out so tender the bone pulls out clean,",
+  "pad": 0.38
+ },
+ {
+  "sc": "S01",
+  "s": 41.165,
+  "e": 46.585,
+  "id": "c09",
+  "d": 5.42,
+  "T": 6,
+  "text": "with a sticky, shiny, red glaze on the outside, charred a little at the edges. I'm Claudio.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S01",
+  "s": 46.585,
+  "e": 51.965,
+  "id": "c10",
+  "d": 5.38,
+  "T": 6,
+  "text": "I cooked for a ranch crew for forty years. And the night I made these, nobody was late for supper.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S02",
+  "s": 51.965,
+  "e": 56.725,
+  "id": "c11",
+  "d": 4.76,
+  "T": 5,
+  "text": "This is what you need. A Dutch oven. A heavy pot with a tight lid that can go in the oven.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S02",
+  "s": 56.725,
+  "e": 62.811,
+  "id": "c12",
+  "d": 6.086,
+  "T": 7,
+  "text": "Mine's six quarts. If you don't have one, a roasting pan covered tight with two layers of foil works just as well.",
+  "pad": 0.91
+ },
+ {
+  "sc": "S03",
+  "s": 62.811,
+  "e": 74.571,
+  "id": "c13",
+  "d": 11.76,
+  "T": 12,
+  "text": "Let's talk about why grilled ribs at home come out tough. A rib is a working muscle. It's full of what the butchers call connective tissue. That's the stringy, chewy stuff that holds the meat to the bone. It's tough.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S03",
+  "s": 74.571,
+  "e": 85.971,
+  "id": "c14",
+  "d": 11.4,
+  "T": 12,
+  "text": "You can't chew it. But if you cook it low and slow, with some moisture around it, it melts. It turns into gelatin. And gelatin is what makes a rib feel juicy and sticky and tender in your mouth.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S03",
+  "s": 85.971,
+  "e": 95.581,
+  "id": "c15",
+  "d": 9.61,
+  "T": 10,
+  "text": "Here's the thing. That melting needs time. Hours. And it needs to stay wet. On a grill, over direct fire, the outside of the rib is getting blasted.",
+  "pad": 0.39
+ },
+ {
+  "sc": "S03",
+  "s": 95.581,
+  "e": 105.799,
+  "id": "c16",
+  "d": 10.218,
+  "T": 11,
+  "text": "It dries out and burns long before the inside has had time to melt. So you've got two choices on a grill. Pull them early, and they're tough. Or leave them on, and they dry out.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S03",
+  "s": 105.799,
+  "e": 115.519,
+  "id": "c17",
+  "d": 9.72,
+  "T": 10,
+  "text": "Pitmasters with smokers get around it with ten hours of low smoke and a lot of skill. We didn't have ten hours. We had a crew coming in at six. So we did it the other way around.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S03",
+  "s": 115.519,
+  "e": 122.479,
+  "id": "c18",
+  "d": 6.96,
+  "T": 8,
+  "text": "Melt them first, wet and slow, in a covered pot. Then give them the fire at the very end, just long enough to make a crust.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S04",
+  "s": 122.479,
+  "e": 129.52,
+  "id": "c19",
+  "d": 7.041,
+  "T": 8,
+  "text": "Don Ernesto used to call these \"costillas de domingo.\" Sunday ribs. Because the only day he had time to fuss over them was Sunday.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S04",
+  "s": 129.52,
+  "e": 135.26,
+  "id": "c20",
+  "d": 5.74,
+  "T": 6,
+  "text": "Then he figured out he could put them in the oven at two and go take a nap. After that they were Tuesday ribs too.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S05",
+  "s": 135.26,
+  "e": 139.98,
+  "id": "c21",
+  "d": 4.72,
+  "T": 5,
+  "text": "Four pounds of ribs. Pork spare ribs, or beef back ribs. Both work.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S05",
+  "s": 139.98,
+  "e": 151.34,
+  "id": "c22",
+  "d": 11.36,
+  "T": 12,
+  "text": "Pork is cheaper and that's what I'm using today. Have the butcher cut them into pieces three bones wide, or do it yourself with a sharp knife between the bones. Smaller pieces fit in the pot better, and they cook more evenly.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S06",
+  "s": 151.34,
+  "e": 162.646,
+  "id": "c23",
+  "d": 11.306,
+  "T": 12,
+  "text": "Turn them over, bone side up. See that thin, shiny skin on the back of the bones? That's the membrane. Some people pull it off. Slide a butter knife under it at one end, grab it with a paper towel, and pull.",
+  "pad": 0.69
+ },
+ {
+  "sc": "S06",
+  "s": 162.646,
+  "e": 172.906,
+  "id": "c24",
+  "d": 10.26,
+  "T": 11,
+  "text": "It comes off in one sheet if you're lucky. If you braise them, honestly, it gets soft and it doesn't matter much. I usually pull it, because it's thirty seconds. If it fights you, leave it.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S07",
+  "s": 172.906,
+  "e": 181.346,
+  "id": "c25",
+  "d": 8.44,
+  "T": 9,
+  "text": "Step one. Season. Two teaspoons of salt, one teaspoon of cumin. Rub it in all over, both sides. Set them aside while you make the sauce.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S07",
+  "s": 181.346,
+  "e": 187.806,
+  "id": "c26",
+  "d": 6.46,
+  "T": 7,
+  "text": "If you've got time, do this the night before and leave them in the fridge. The salt gets deeper. If you don't, ten minutes is fine.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S08",
+  "s": 187.806,
+  "e": 196.422,
+  "id": "c27",
+  "d": 8.616,
+  "T": 9,
+  "text": "Now the chiles. These are guajillos. Dried. They're long, smooth, a deep red, and they're mild. Mild. Not hot.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S08",
+  "s": 196.422,
+  "e": 201.162,
+  "id": "c28",
+  "d": 4.74,
+  "T": 5,
+  "text": "They taste a little like a sweet pepper and a little like a raisin, with a little bit of tang.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S08",
+  "s": 201.162,
+  "e": 208.442,
+  "id": "c29",
+  "d": 7.28,
+  "T": 8,
+  "text": "You can find them in the Mexican section of almost any grocery store now, in a plastic bag, for about forty cents apiece. Six of them.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S09",
+  "s": 208.442,
+  "e": 215.322,
+  "id": "c30",
+  "d": 6.88,
+  "T": 8,
+  "text": "Cut the stems off with scissors, slit them open down the side, and shake out the seeds. The seeds don't add much but bitterness.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S10",
+  "s": 215.322,
+  "e": 225.236,
+  "id": "c31",
+  "d": 9.914,
+  "T": 11,
+  "text": "Now toast them. Dry skillet, medium heat, no oil. Lay the chiles flat. Fifteen to twenty seconds a side, pressing them down with a spatula. You'll smell them right away.",
+  "pad": 1.09
+ },
+ {
+  "sc": "S10",
+  "s": 225.236,
+  "e": 229.816,
+  "id": "c32",
+  "d": 4.58,
+  "T": 5,
+  "text": "They'll get a little puffy and change color just a shade. That's it. Don't walk away.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S10",
+  "s": 229.816,
+  "e": 237.336,
+  "id": "c33",
+  "d": 7.52,
+  "T": 8,
+  "text": "If they turn black or start smoking, they're burnt and they'll make the whole sauce bitter. Throw them out and start over. I've done it. Everybody's done it.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S11",
+  "s": 237.336,
+  "e": 245.916,
+  "id": "c34",
+  "d": 8.58,
+  "T": 9,
+  "text": "Then into a bowl of hot water from the kettle. Push them down with a plate so they stay under. Twenty minutes. They'll get soft and floppy, like old leather gloves.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S12",
+  "s": 245.916,
+  "e": 257.509,
+  "id": "c35",
+  "d": 11.593,
+  "T": 12,
+  "text": "While they soak, the rest. One cup of orange juice, fresh if you've got oranges, from the carton if you don't. The zest of one orange. That's the orange skin grated fine, only the orange part, not the white.",
+  "pad": 0.41
+ },
+ {
+  "sc": "S12",
+  "s": 257.509,
+  "e": 264.509,
+  "id": "c36",
+  "d": 7.0,
+  "T": 8,
+  "text": "Five cloves of garlic. Two tablespoons of cider vinegar. Two tablespoons of brown sugar, or piloncillo if you can get it.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S12",
+  "s": 264.509,
+  "e": 271.449,
+  "id": "c37",
+  "d": 6.94,
+  "T": 8,
+  "text": "Piloncillo is Mexican brown sugar that comes in a hard cone. It tastes a little like molasses. Brown sugar does the same job.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S13",
+  "s": 271.449,
+  "e": 281.569,
+  "id": "c38",
+  "d": 10.12,
+  "T": 11,
+  "text": "Step two. Everything goes in the blender. The soaked chiles, with the soaking water poured off. The orange juice and zest. Garlic. Vinegar. Sugar. Blend until it's smooth.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S13",
+  "s": 281.569,
+  "e": 289.141,
+  "id": "c39",
+  "d": 7.572,
+  "T": 8,
+  "text": "Really smooth. Two minutes. You should have a dark brick-red sauce, thick like a milkshake. Taste it. It's going to be sharp and strong.",
+  "pad": 0.43
+ },
+ {
+  "sc": "S13",
+  "s": 289.141,
+  "e": 293.521,
+  "id": "c40",
+  "d": 4.38,
+  "T": 5,
+  "text": "Don't worry. Two hours in the oven with the ribs and it all comes together.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S14",
+  "s": 293.521,
+  "e": 300.461,
+  "id": "c41",
+  "d": 6.94,
+  "T": 8,
+  "text": "Step three. Into the pot. Stand the rib pieces up on their ends, or lay them in so they overlap like shingles on a roof.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S14",
+  "s": 300.461,
+  "e": 307.181,
+  "id": "c42",
+  "d": 6.72,
+  "T": 7,
+  "text": "Pour the sauce over them, and then one cup of water. Swirl the water in the blender first to get the rest of the sauce out.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S15",
+  "s": 307.181,
+  "e": 318.421,
+  "id": "c43",
+  "d": 11.24,
+  "T": 12,
+  "text": "Look at the liquid. It should come about halfway up the ribs. Not covering them. Halfway. The bottom half braises in the sauce, the top half steams with the lid on. If you drown them,",
+  "pad": 0.76
+ },
+ {
+  "sc": "S15",
+  "s": 318.421,
+  "e": 326.519,
+  "id": "c44",
+  "d": 8.098,
+  "T": 9,
+  "text": "they boil, and boiled ribs taste like boiled ribs. If you've got a bigger pot and the liquid is low, add a little more water until it's halfway.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S16",
+  "s": 326.519,
+  "e": 331.099,
+  "id": "c45",
+  "d": 4.58,
+  "T": 5,
+  "text": "Lid on, tight. Into the oven at three hundred degrees. Two hours.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S17",
+  "s": 331.099,
+  "e": 336.299,
+  "id": "c46",
+  "d": 5.2,
+  "T": 6,
+  "text": "Three hundred. Not three-fifty. Not four hundred to make it faster. That's the whole trick.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S17",
+  "s": 336.299,
+  "e": 345.439,
+  "id": "c47",
+  "d": 9.14,
+  "T": 10,
+  "text": "Low and slow and covered, so the connective tissue has time to melt and the meat never dries out. While those go, let me tell you about the night we ran out of ribs.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S18",
+  "s": 345.439,
+  "e": 355.987,
+  "id": "c48",
+  "d": 10.548,
+  "T": 11,
+  "text": "It was the last night of a roundup. Forty men, and some of their wives had come out from town for the end, so maybe fifty-five people. I'd made ribs in eight Dutch ovens, and I figured that was plenty.",
+  "pad": 0.45
+ },
+ {
+  "sc": "S18",
+  "s": 355.987,
+  "e": 366.407,
+  "id": "c49",
+  "d": 10.42,
+  "T": 11,
+  "text": "It wasn't. Some of the neighbors' kids, teenagers, had been helping all week, and those boys could eat. The last pot was gone before half the crew had sat down. So I did what Don Ernesto would've done.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S18",
+  "s": 366.407,
+  "e": 376.347,
+  "id": "c50",
+  "d": 9.94,
+  "T": 11,
+  "text": "I put on a pot of beans, I fried every egg we had, and I told them the ribs ran away. Rusty still tells that story. Every time he tells it, there's fewer ribs and more people.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S19",
+  "s": 376.347,
+  "e": 384.047,
+  "id": "c51",
+  "d": 7.7,
+  "T": 8,
+  "text": "Two hours. Take the lid off. Look at that. The meat has pulled back from the ends of the bones, and the sauce has gone darker and thinner.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S20",
+  "s": 384.047,
+  "e": 393.755,
+  "id": "c52",
+  "d": 9.708,
+  "T": 10,
+  "text": "Step four. Test them. Grab a bone with your tongs and give it a little twist. If it turns freely, like it's ready to come out, they're done. If it fights you, they need more time.",
+  "pad": 0.29
+ },
+ {
+  "sc": "S20",
+  "s": 393.755,
+  "e": 404.395,
+  "id": "c53",
+  "d": 10.64,
+  "T": 11,
+  "text": "Lid back on, thirty more minutes, test again. Some ribs take two hours, some take two and a half. Different pigs. Tough means not done yet. It does not mean overdone.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S20",
+  "s": 404.395,
+  "e": 409.275,
+  "id": "c54",
+  "d": 4.88,
+  "T": 6,
+  "text": "Ribs are the one thing you can't really overcook in a covered pot. I'll tell you why in a minute.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S21",
+  "s": 409.275,
+  "e": 417.575,
+  "id": "c55",
+  "d": 8.3,
+  "T": 9,
+  "text": "When they're done, lift them out gently with tongs. They're tender now, they can fall apart. Lay them on a sheet pan lined with foil, bone side down.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S22",
+  "s": 417.575,
+  "e": 428.664,
+  "id": "c56",
+  "d": 11.089,
+  "T": 12,
+  "text": "Step five. The glaze. Here's the part I love. Put the Dutch oven on the stove, with all that sauce left in the bottom, and bring it to a boil over medium-high. Boil it eight to ten minutes,",
+  "pad": 0.91
+ },
+ {
+  "sc": "S22",
+  "s": 428.664,
+  "e": 439.344,
+  "id": "c57",
+  "d": 10.68,
+  "T": 11,
+  "text": "stirring now and then, until it reduces. Watch it get darker and thicker and shiny. All the flavor that cooked out of the ribs went into that liquid. The pork fat, the gelatin, everything.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S22",
+  "s": 439.344,
+  "e": 450.044,
+  "id": "c58",
+  "d": 10.7,
+  "T": 11,
+  "text": "You're boiling the water off and keeping all of that. When it's ready, dip a spoon in and pull it out. If the sauce coats the back of the spoon and you can draw a line through it with your finger, it's a glaze.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S23",
+  "s": 450.044,
+  "e": 456.313,
+  "id": "c59",
+  "d": 6.269,
+  "T": 7,
+  "text": "Brush it on the ribs. Thick. Get it on every side you can reach. Save a little in a bowl for the table.",
+  "pad": 0.73
+ },
+ {
+  "sc": "S24",
+  "s": 456.313,
+  "e": 466.963,
+  "id": "c60",
+  "d": 10.65,
+  "T": 11,
+  "text": "Step six. Under the broiler. Rack about six inches from the top. Three to four minutes. And here's where I'll tell you, stand there and watch them. Don't walk away, don't answer the phone.",
+  "pad": 0.35
+ },
+ {
+  "sc": "S24",
+  "s": 466.963,
+  "e": 478.003,
+  "id": "c61",
+  "d": 11.04,
+  "T": 12,
+  "text": "The sugar in that glaze goes from bubbling, to charred at the edges, to black and burnt, in about thirty seconds. You want it bubbling, with a few dark spots on the edges. That's it. Out.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S25",
+  "s": 478.003,
+  "e": 482.663,
+  "id": "c62",
+  "d": 4.66,
+  "T": 5,
+  "text": "Look at that. Shiny. Sticky. Red. A little bit of char at the edges.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S26",
+  "s": 482.663,
+  "e": 485.983,
+  "id": "c63",
+  "d": 3.32,
+  "T": 4,
+  "text": "And this. The bone, right out. Nothing on it.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S27",
+  "s": 485.983,
+  "e": 487.196,
+  "id": "c64",
+  "d": 1.213,
+  "T": 2,
+  "text": "Rusty. Come here.",
+  "pad": 0.79
+ },
+ {
+  "sc": "S28",
+  "s": 487.196,
+  "e": 491.476,
+  "id": "c65",
+  "d": 4.28,
+  "T": 5,
+  "text": "He's got sauce up to his elbow. He hasn't said a word. That's how you know.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S29",
+  "s": 491.476,
+  "e": 498.116,
+  "id": "c66",
+  "d": 6.64,
+  "T": 7,
+  "text": "I put every one of these recipes in a book, the way we really made them. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S30",
+  "s": 498.116,
+  "e": 509.556,
+  "id": "c67",
+  "d": 11.44,
+  "T": 12,
+  "text": "The ribs came out tough. You pulled them too early. The bone has to twist free. Give them another thirty minutes, covered, and test again. Every oven runs a little different, and every rack of ribs is a little different.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S30",
+  "s": 509.556,
+  "e": 521.251,
+  "id": "c68",
+  "d": 11.695,
+  "T": 12,
+  "text": "The glaze burned. You left it under the broiler too long, or the rack was too close. Three to four minutes, six inches from the heat, and you stand there. If your broiler is very strong, move the rack down one notch.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S30",
+  "s": 521.251,
+  "e": 532.911,
+  "id": "c69",
+  "d": 11.66,
+  "T": 12,
+  "text": "The glaze is thin and runs off. You didn't boil it down enough. Keep boiling it until it coats a spoon. It's worth the extra five minutes. The sauce tastes bitter. The chiles burned when you toasted them.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S30",
+  "s": 532.911,
+  "e": 544.651,
+  "id": "c70",
+  "d": 11.74,
+  "T": 12,
+  "text": "Fifteen to twenty seconds a side, and if they go black, toss them. Bitter chiles ruin everything. The ribs are dry. Usually the pot wasn't covered tight. Steam escaped, the liquid boiled off,",
+  "pad": 0.26
+ },
+ {
+  "sc": "S30",
+  "s": 544.651,
+  "e": 552.341,
+  "id": "c71",
+  "d": 7.69,
+  "T": 8,
+  "text": "and the top halves dried out. If your lid's loose, put a sheet of foil over the pot first, then the lid on top of the foil. That seals it.",
+  "pad": 0.31
+ },
+ {
+  "sc": "S31",
+  "s": 552.341,
+  "e": 562.733,
+  "id": "c72",
+  "d": 10.392,
+  "T": 11,
+  "text": "Other cuts. Beef back ribs, same recipe, same time. They're bigger bones, with less meat between, but they're good. Beef short ribs, the thick ones, give them three hours.",
+  "pad": 0.61
+ },
+ {
+  "sc": "S31",
+  "s": 562.733,
+  "e": 572.093,
+  "id": "c73",
+  "d": 9.36,
+  "T": 10,
+  "text": "And country-style ribs, which aren't really ribs at all, they're cut from the shoulder, those only need an hour and a half. They're meatier and cheaper, and they come out wonderful this way.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S32",
+  "s": 572.093,
+  "e": 582.953,
+  "id": "c74",
+  "d": 10.86,
+  "T": 12,
+  "text": "At the store. Pork spare ribs run about three and a half dollars a pound right now. Baby back ribs cost more and have less meat, and honestly, for braising, spare ribs are better. More fat,",
+  "pad": 1.14
+ },
+ {
+  "sc": "S32",
+  "s": 582.953,
+  "e": 592.625,
+  "id": "c75",
+  "d": 9.672,
+  "T": 10,
+  "text": "more connective tissue, more flavor. Ask the butcher to cut them into three-bone pieces. If you buy a whole rack, ask them to trim it St. Louis style, which takes off the gristly tip.",
+  "pad": 0.33
+ },
+ {
+  "sc": "S32",
+  "s": 592.625,
+  "e": 597.605,
+  "id": "c76",
+  "d": 4.98,
+  "T": 6,
+  "text": "Or leave the tips on and cook them with the rest. Those are the best bites, and they're free.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S33",
+  "s": 597.605,
+  "e": 608.945,
+  "id": "c77",
+  "d": 11.34,
+  "T": 12,
+  "text": "Storing. They keep four days in the fridge. And here's a trick for two people. Braise the whole four pounds. Eat half. Freeze the other half after the braise, before the glaze, in the sauce, in a freezer bag.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S33",
+  "s": 608.945,
+  "e": 615.865,
+  "id": "c78",
+  "d": 6.92,
+  "T": 8,
+  "text": "Three months. When you want them, thaw them overnight in the fridge, warm them in the oven in a covered dish at three hundred for twenty minutes,",
+  "pad": 1.08
+ },
+ {
+  "sc": "S33",
+  "s": 615.865,
+  "e": 621.585,
+  "id": "c79",
+  "d": 5.72,
+  "T": 6,
+  "text": "then boil down the sauce and glaze and broil them just like the first time. They taste like you made them that day.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S34",
+  "s": 621.585,
+  "e": 631.025,
+  "id": "c80",
+  "d": 9.44,
+  "T": 10,
+  "text": "And the second supper. If there's any left over, which there usually isn't, pull the meat off the bones with two forks. Put it in a skillet with any extra glaze and a splash of water,",
+  "pad": 0.56
+ },
+ {
+  "sc": "S34",
+  "s": 631.025,
+  "e": 641.096,
+  "id": "c81",
+  "d": 10.071,
+  "T": 11,
+  "text": "and heat it until it's sizzling and a little crispy on the edges. Warm some corn tortillas. Meat in the tortillas, chopped raw onion, a little cilantro, a squeeze of lime. That's lunch.",
+  "pad": 0.93
+ },
+ {
+  "sc": "S34",
+  "s": 641.096,
+  "e": 649.036,
+  "id": "c82",
+  "d": 7.94,
+  "T": 9,
+  "text": "On the ranch we'd make those for the men who had to ride out to fix fence. They'd eat them cold in the saddle at noon and say they were better than the night before.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S35",
+  "s": 649.036,
+  "e": 659.396,
+  "id": "c83",
+  "d": 10.36,
+  "T": 11,
+  "text": "Now, ribs are rich. All that pork and that sweet glaze. What they need next to them is something sharp. Here's what we put on the table every time. Pickled red onions, in ten minutes.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S35",
+  "s": 659.396,
+  "e": 670.68,
+  "id": "c84",
+  "d": 11.284,
+  "T": 12,
+  "text": "Slice one red onion as thin as you can. Put it in a jar. Squeeze in the juice of two limes, or use the juice of the orange you zested, plus two tablespoons of vinegar. A big pinch of salt, a pinch of sugar.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S35",
+  "s": 670.68,
+  "e": 681.18,
+  "id": "c85",
+  "d": 10.5,
+  "T": 11,
+  "text": "Put the lid on and shake it. In ten minutes the onions turn bright pink and soft. Pile them on top of the ribs. That sharp bite against the sticky glaze, that's what makes you reach for another one.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S36",
+  "s": 681.18,
+  "e": 692.411,
+  "id": "c86",
+  "d": 11.231,
+  "T": 12,
+  "text": "And taste your glaze before it goes on. This is where a cook earns his keep. If it tastes flat, it needs a pinch of salt. If it's too sweet, a splash more vinegar. If it's too sharp, a teaspoon more sugar.",
+  "pad": 0.77
+ },
+ {
+  "sc": "S36",
+  "s": 692.411,
+  "e": 698.831,
+  "id": "c87",
+  "d": 6.42,
+  "T": 7,
+  "text": "Thirty seconds of tasting and fixing, and it goes from good to the best ribs anybody at that table has had all year.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S37",
+  "s": 698.831,
+  "e": 708.891,
+  "id": "c88",
+  "d": 10.06,
+  "T": 11,
+  "text": "Don Ernesto never measured sugar. He kept a cone of piloncillo on the windowsill, and he'd shave some into the sauce with a knife until it tasted right. When I asked him how much, he said,",
+  "pad": 0.94
+ },
+ {
+  "sc": "S37",
+  "s": 708.891,
+  "e": 720.671,
+  "id": "c89",
+  "d": 11.78,
+  "T": 12,
+  "text": "\"Until the chile stops arguing with the orange.\" I've been cooking this for forty years, and that's still the best way I know to say it. You want the chile, the orange, the sugar and the vinegar all talking at once, and none of them shouting.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S38",
+  "s": 720.671,
+  "e": 730.687,
+  "id": "c90",
+  "d": 10.016,
+  "T": 11,
+  "text": "What else goes on the plate? The beans from last time, of course. A stack of warm tortillas. And if you want something green, a pile of fried cabbage with bacon. I'll show you that one in a few weeks.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S38",
+  "s": 730.687,
+  "e": 736.467,
+  "id": "c91",
+  "d": 5.78,
+  "T": 6,
+  "text": "That's a Sunday supper for under four dollars a person, and it'll be the one your family asks for on their birthdays.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S39",
+  "s": 736.467,
+  "e": 747.187,
+  "id": "c92",
+  "d": 10.72,
+  "T": 11,
+  "text": "What it costs. Four pounds of pork spare ribs, at about three-fifty a pound, fourteen dollars. Six guajillo chiles, two forty. An orange and a cup of juice, two dollars.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S39",
+  "s": 747.187,
+  "e": 752.979,
+  "id": "c93",
+  "d": 5.792,
+  "T": 6,
+  "text": "Garlic, vinegar, sugar, salt, cumin, a dollar. That's about nineteen dollars and forty cents.",
+  "pad": 0.21
+ },
+ {
+  "sc": "S39",
+  "s": 752.979,
+  "e": 760.719,
+  "id": "c94",
+  "d": 7.74,
+  "T": 8,
+  "text": "It feeds five people with beans and tortillas, so call it three dollars and ninety cents a plate. Try getting a plate of ribs anywhere for three-ninety.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S40",
+  "s": 760.719,
+  "e": 771.059,
+  "id": "c95",
+  "d": 10.34,
+  "T": 11,
+  "text": "For a crowd. Eight pounds of ribs, two Dutch ovens, or one big roasting pan covered tight with foil, two layers. Double the sauce. Add about twenty minutes to the oven time.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S40",
+  "s": 771.059,
+  "e": 782.239,
+  "id": "c96",
+  "d": 11.18,
+  "T": 12,
+  "text": "Reduce the sauce in a wide pan on the stove, it goes faster. Broil them on two sheet pans, one at a time. That's how I did it for the end of the roundup. Well, the second year. After I learned my lesson.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S41",
+  "s": 782.239,
+  "e": 791.117,
+  "id": "c97",
+  "d": 8.878,
+  "T": 10,
+  "text": "And outside, on the fire. Dutch oven on a small bed of coals, more coals on the lid. You want gentle heat from both sides, about three hundred.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S41",
+  "s": 791.117,
+  "e": 800.797,
+  "id": "c98",
+  "d": 9.68,
+  "T": 10,
+  "text": "That's maybe eight coals under and fifteen on top for a twelve-inch pot, but a fire isn't an oven, so you check it every thirty minutes. At the end, instead of the broiler,",
+  "pad": 0.32
+ },
+ {
+  "sc": "S41",
+  "s": 800.797,
+  "e": 810.357,
+  "id": "c99",
+  "d": 9.56,
+  "T": 10,
+  "text": "you lay the glazed ribs right on a grate over hot coals for a minute or two a side. That's the only time these ever see a fire. And it's at the very end, for the crust.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S42",
+  "s": 810.357,
+  "e": 821.416,
+  "id": "c100",
+  "d": 11.059,
+  "T": 12,
+  "text": "A couple of questions. Can I use a slow cooker? Yes. Low, six to seven hours. Same sauce. Then reduce the sauce on the stove and broil them the same way. You'll get the same tenderness.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S42",
+  "s": 821.416,
+  "e": 832.016,
+  "id": "c101",
+  "d": 10.6,
+  "T": 11,
+  "text": "I can't find guajillos. Use ancho chiles. They're a little sweeter and darker. Or use four tablespoons of a good chili powder, the kind that's mostly ground chile, not mostly salt.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S42",
+  "s": 832.016,
+  "e": 842.836,
+  "id": "c102",
+  "d": 10.82,
+  "T": 11,
+  "text": "It's not the same, but it's good. Is this spicy? No. Guajillos are mild. If you want heat, add one or two dried chiles de árbol to the blender. Those are the little skinny red ones.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S42",
+  "s": 842.836,
+  "e": 851.901,
+  "id": "c103",
+  "d": 9.065,
+  "T": 10,
+  "text": "They're hot. One is plenty for most families. What if I don't have a broiler? Turn your oven up to four hundred and fifty, and put them on the top rack for eight to ten minutes.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S42",
+  "s": 851.901,
+  "e": 856.241,
+  "id": "c104",
+  "d": 4.34,
+  "T": 5,
+  "text": "Or do them in a hot cast iron skillet, a few at a time, a minute a side.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S43",
+  "s": 856.241,
+  "e": 865.901,
+  "id": "c105",
+  "d": 9.66,
+  "T": 10,
+  "text": "Let me tell you why we never put raw ribs on a grill. The Fourth of July, nineteen ninety. The boss decided to have a barbecue for the crew and their families. Sixty people.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S43",
+  "s": 865.901,
+  "e": 875.493,
+  "id": "c106",
+  "d": 9.592,
+  "T": 10,
+  "text": "He bought a big shiny grill, and he wanted to cook the ribs himself. I told him, let me braise them first. He said, \"Claudio, ribs go on a grill.\" So he put them on the grill.",
+  "pad": 0.41
+ },
+ {
+  "sc": "S43",
+  "s": 875.493,
+  "e": 885.913,
+  "id": "c107",
+  "d": 10.42,
+  "T": 11,
+  "text": "The fire was too hot, the sauce burned black, and the middle was tough as rope. Kids were chewing on them like dog bones. About halfway through, he came into the kitchen and asked me if I had anything else.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S43",
+  "s": 885.913,
+  "e": 897.413,
+  "id": "c108",
+  "d": 11.5,
+  "T": 12,
+  "text": "I had a pot of beans and a pan of these ribs I'd made just in case. Braised, glazed, under the broiler. He watched sixty people eat them. The next year he didn't buy a new grill. He bought me a second Dutch oven.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S44",
+  "s": 897.413,
+  "e": 907.462,
+  "id": "c109",
+  "d": 10.049,
+  "T": 11,
+  "text": "And a word about the temperature. The USDA says pork is safe at a hundred and forty-five, with a three-minute rest. Ribs too. But a rib at a hundred and forty-five is tough.",
+  "pad": 0.95
+ },
+ {
+  "sc": "S44",
+  "s": 907.462,
+  "e": 919.282,
+  "id": "c110",
+  "d": 11.82,
+  "T": 12,
+  "text": "All that connective tissue between the bones hasn't melted. For ribs, you want the meat to get up to around a hundred and ninety-five, two hundred, and stay there a while. That's when the collagen turns to gelatin and the bone pulls free.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S44",
+  "s": 919.282,
+  "e": 929.542,
+  "id": "c111",
+  "d": 10.26,
+  "T": 11,
+  "text": "So with ribs, you're not cooking for safe, you're way past safe. You're cooking for tender. That's why it takes two hours or more, and that's why the twist test matters more than the thermometer.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S45",
+  "s": 929.542,
+  "e": 940.005,
+  "id": "c112",
+  "d": 10.463,
+  "T": 11,
+  "text": "And here's a trick for when you have company. Make them the day before. Do everything up to the glaze. Braise them, let them cool a little, and within two hours, put them in the fridge in the sauce.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S45",
+  "s": 940.005,
+  "e": 950.205,
+  "id": "c113",
+  "d": 10.2,
+  "T": 11,
+  "text": "The next day, the fat on top is hard, and you lift it right off. The ribs are firm and cold, so they don't fall apart when you move them. Lay them on the pan, boil down the sauce,",
+  "pad": 0.8
+ },
+ {
+  "sc": "S45",
+  "s": 950.205,
+  "e": 961.385,
+  "id": "c114",
+  "d": 11.18,
+  "T": 12,
+  "text": "brush it on, and into the oven until they're hot all the way through, a hundred and sixty-five, then under the broiler. It looks like you worked all day. On the day of the party, you're not cooking. You're visiting.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S46",
+  "s": 961.385,
+  "e": 971.295,
+  "id": "c115",
+  "d": 9.91,
+  "T": 11,
+  "text": "Ways to change the sauce. If you want it smoky, add one chipotle pepper in adobo from the little can to the blender. Just one. They're hot. If you want it darker and a little sweeter,",
+  "pad": 1.09
+ },
+ {
+  "sc": "S46",
+  "s": 971.295,
+  "e": 977.155,
+  "id": "c116",
+  "d": 5.86,
+  "T": 7,
+  "text": "use three anchos and three guajillos instead of six guajillos. And if you can't find dried chiles at all,",
+  "pad": 1.14
+ },
+ {
+  "sc": "S46",
+  "s": 977.155,
+  "e": 983.775,
+  "id": "c117",
+  "d": 6.62,
+  "T": 7,
+  "text": "use three tablespoons of plain chili powder and a teaspoon of smoked paprika. It's not the same, but it's still a good rib.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S47",
+  "s": 983.775,
+  "e": 992.255,
+  "id": "c118",
+  "d": 8.48,
+  "T": 9,
+  "text": "And save the bones. When everybody's done, the bones go into the next pot of beans. You put them in with the water, just like a ham hock, and pull them out at the end.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S47",
+  "s": 992.255,
+  "e": 1001.335,
+  "id": "c119",
+  "d": 9.08,
+  "T": 10,
+  "text": "The little bits of meat and that sauce stuck to them make the beans taste like they cooked all day next to the ribs. Nothing on this ranch went in the trash if it still had flavor in it.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S48",
+  "s": 1001.335,
+  "e": 1011.735,
+  "id": "c120",
+  "d": 10.4,
+  "T": 11,
+  "text": "One more thing about the membrane, because it gives people trouble. It's slippery, so grab the edge with a paper towel. The paper towel holds on. Then pull slow and steady, at an angle,",
+  "pad": 0.6
+ },
+ {
+  "sc": "S48",
+  "s": 1011.735,
+  "e": 1018.915,
+  "id": "c121",
+  "d": 7.18,
+  "T": 8,
+  "text": "and most of the time it comes off in one sheet. If it tears, start again from the torn edge. And if you just can't get it, don't worry.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S48",
+  "s": 1018.915,
+  "e": 1024.279,
+  "id": "c122",
+  "d": 5.364,
+  "T": 6,
+  "text": "Cut a few slits across the bone side with a knife, so the sauce can get in. It's still a good rib.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S49",
+  "s": 1024.279,
+  "e": 1035.619,
+  "id": "c123",
+  "d": 11.34,
+  "T": 12,
+  "text": "Now, about the book. This crew book is forty years of what we cooked out here. A few years ago I put all of it, every recipe, the way we really made them, into a real book. The Vaquero's Cookbook.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S50",
+  "s": 1035.619,
+  "e": 1044.919,
+  "id": "c124",
+  "d": 9.3,
+  "T": 10,
+  "text": "These ribs are on page thirty-eight. The chile and orange sauce, the two hours at three hundred, the twist test, the glaze, and how to do it for two or for a crowd.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S50",
+  "s": 1044.919,
+  "e": 1051.899,
+  "id": "c125",
+  "d": 6.98,
+  "T": 8,
+  "text": "And the pork chops and the beans from the last two times, and the potatoes, the steak, the cabbage, all of it. It's twenty-seven dollars.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S50",
+  "s": 1051.899,
+  "e": 1058.997,
+  "id": "c126",
+  "d": 7.098,
+  "T": 8,
+  "text": "Every recipe from the ranch for less than one family dinner out. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S51",
+  "s": 1058.997,
+  "e": 1068.977,
+  "id": "c127",
+  "d": 9.98,
+  "T": 11,
+  "text": "That's it. Melt them first in the pot, low and slow and covered. Boil the sauce down into a glaze. Fire at the very end. Next time, potatoes.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S51",
+  "s": 1068.977,
+  "e": 1080.234,
+  "id": "c128",
+  "d": 11.257,
+  "T": 12,
+  "text": "Boiling is why your potatoes taste like nothing. I'll show you how we put them in the skillet raw, and they came out creamy inside and crisp outside, with two spoons of water and a lid. Ándale. See you then.",
+  "pad": 0.74
+ }
+]
