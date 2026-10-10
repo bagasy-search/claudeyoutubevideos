@@ -15,7 +15,7 @@ const TOTAL: number = (META as any).total || 300;
 const EN = (META as any).lang === "en";
 const en = (K: React.FC<any>, d: Record<string, any>): React.FC<any> => (p) => <K {...d} {...p} />;
 const C: Record<string, React.FC<any>> = EN
-  ? { ...FAB, ClCheck, ClBookPage: en(ClBookPage, { stamp: "It's on this page", pagLabel: "PAGE", hint: "point your phone here" }),
+  ? { ...FAB, ClCheck: en(ClCheck, { tag: "MY CHECKLIST" }), ClBookPage: en(ClBookPage, { stamp: "It's on this page", pagLabel: "PAGE", hint: "point your phone here" }),
       ClQRCard: en(ClQRCard, { text: "point your phone camera here", kicker: "THE WHOLE BOOK" }),
       ClVideoRef: ((p: any) => <ClVideoRef tag={p.next ? "NEXT VIDEO" : "ON THE CHANNEL"} {...p} />) as React.FC<any> }
   : { ...FAB, ClBookPage, ClQRCard, ClCheck, ClVideoRef };

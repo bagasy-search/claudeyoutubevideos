@@ -37,7 +37,7 @@ export const ClChapter: React.FC<{ n?: number; title: string; sub?: string; bed?
   );
 };
 
-export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; fast?: boolean }> = ({ title, items, bed, fast }) => {
+export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; fast?: boolean; tag?: string }> = ({ title, items, bed, fast, tag = "ORDEN DE SERVICIO" }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2);
   const step = fast ? Math.max(8, (durationInFrames - 30) / items.length) : Math.max(14, Math.min(40, (durationInFrames - 30) / items.length));
@@ -51,7 +51,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
           <Card style={{ padding: "34px 50px 30px", borderRadius: 6 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: `4px solid ${CL.navy}`, paddingBottom: 10, marginBottom: 22 }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.ink }}>{title}</div>
-              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>ORDEN DE SERVICIO</div>
+              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>{tag}</div>
             </div>
             {items.map((it, i) => {
               const t0 = 16 + i * step, k = lin(f, t0, t0 + 8), hk = lin(f, t0 + 4, t0 + 16);
