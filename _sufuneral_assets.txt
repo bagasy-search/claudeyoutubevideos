@@ -50,6 +50,7 @@ broll/sufuneral_st/b033_1.mp4
 pages/su/p36.jpg
 img/sufuneral/e035_0.jpg
 img/sufuneral/b036_1.jpg
+img/sufuneral/b049_1.jpg
 img/sufuneral/b039_1.jpg
 broll/sufuneral_st/b039_1.mp4
 pages/su/p37.jpg
@@ -59,7 +60,6 @@ pages/su/p1.jpg
 img/sufuneral/e043_1.jpg
 pages/su/p50.jpg
 img/sufuneral/e047_0.jpg
-img/sufuneral/b049_1.jpg
 img/sufuneral/g18.jpg
 img/sufuneral/b050_1.jpg
 img/sufuneral/c052_0.jpg
@@ -82,12 +82,12 @@ pages/su/p51.jpg
 img/sufuneral/x26.jpg
 img/sufuneral/x27.jpg
 broll/sufuneral_st/x27.mp4
-img/sufuneral/e065_0.jpg
 img/sufuneral/g28.jpg
+img/sufuneral/e065_0.jpg
 img/sufuneral/e066_1.jpg
+img/sufuneral/b071_1.jpg
 img/sufuneral/b068_1.jpg
 broll/sufuneral_st/b068_1.mp4
-img/sufuneral/b071_1.jpg
 img/sufuneral/x29.jpg
 img/sufuneral/e073_0.jpg
 img/sufuneral/g30.jpg
