@@ -260,56 +260,43 @@ def kenburns(i, k, src, dst):
     vf = f"scale=3840:2160:flags=lanczos,zoompan=z='{z}':x='{x}':y='ih/2-(ih/zoom/2)':d={n}:s=1920x1080:fps=30,format=yuv420p"
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-loop", "1", "-i", src, "-vf", vf, "-frames:v", str(n), "-r", "30", "-c:v", "libx264", "-crf", "18", "-preset", "veryfast", "-an", dst], check=True)
 def e_clips():
+    """⛔ 9-oct: agnes-video-v2.0 DESAPARECIÓ de la API y la 2.5 normal es paga. Ahora:
+       · TODOS los planos: FOTO 3D (profundidad local, paralaje real, gratis, ~10 s c/u) → nunca se traba el video
+       · planos HÉROE (Claudio haciendo, cara=true): además agnes-video-2.5-flash (gratis, sonido real, 7-17 min c/u) en paralelo
+         con todas las claves, cámara estática; los que lleguen antes del tope REEMPLAZAN a su foto 3D."""
     if not os.path.exists(HECHO + "imgs"): sys.exit("⛔ primero: imgs")
-    P = {p["id"]: p for p in leer_planos()}; CL = R + f"public/broll/{S}"
-    if os.path.exists(D + ".clips_quieto"):          # modo rápido (sin agnes video): fotos con movimiento de cámara
-        os.makedirs(CL, exist_ok=True)
-        from concurrent.futures import ThreadPoolExecutor
-        falt = [(k, i) for k, i in enumerate(P) if not os.path.exists(f"{CL}/{i}.mp4")]
-        with ThreadPoolExecutor(6) as ex: list(ex.map(lambda t: kenburns(t[1], t[0], R + f"public/img/{S}/{t[1]}.png", f"{CL}/{t[1]}.mp4"), falt))
-        hecho("clips", True, "quietos"); print(f"FIN clips: {len(P)} planos con movimiento de cámara (modo sin agnes) → siguiente: python vlog/fab/fab.py armar"); return
-    for ronda in range(3):
-        falt = [i for i in P if not os.path.exists(f"{CL}/{i}.mp4")]
-        print(f"— ronda {ronda + 1}: clips hechos {len(P) - len(falt)}, por hacer {len(falt)}", flush=True)
-        if falt:
-            lst = [{"nombre": i, "motion": P[i]["mov"], "gente": bool(PERSONA.search(P[i]["mov"] + " " + P[i]["foto"]))} for i in falt]
-            W(V3 + f"{S}_i2v_fab{ronda}.json", lst)
-            sh(["node", "scripts/agnes_i2v.mjs", f"_v3/{S}_i2v_fab{ronda}.json", S], check=False)
-        nuevos = [i for i in falt if os.path.exists(f"{CL}/{i}.mp4")]
-        # juez: cuadro de los 3,5 s del clip contra lo pedido (deformaciones, gente que aparece) + congelados
-        malos = {}
-        for i in nuevos:
-            if congelado(f"{CL}/{i}.mp4"): malos[i] = "quieto: casi no se mueve (freeze ≥2,4 s)"
-        os.makedirs(V3 + f"{S}_jc", exist_ok=True)
-        lj = []
-        for i in nuevos:
-            if i in malos: continue
-            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", "3.5", "-i", f"{CL}/{i}.mp4", "-frames:v", "1", V3 + f"{S}_jc/{i}.png"])
-            lj.append({"name": i, "prompt": P[i]["foto"] + " Then: " + P[i]["mov"]})
-        if lj:
-            import ds
-            for g in range(0, len(lj), 9):
-                gr = lj[g:g + 9]; hoja = ds.grilla([V3 + f"{S}_jc/{x['name']}.png" for x in gr], V3 + f"{S}_jc/_h{ronda}_{g}.jpg")
-                desc = "\n".join(f"{k + 1}: {x['prompt'][:240]}" for k, x in enumerate(gr))
-                v = ds.vision("Each numbered frame is the END of a 2-second AI video made from a photo. What it should show:\n" + desc +
-                              "\nReject ONLY clear failures: melted or deformed bodies, hands or faces; a person who appeared from nowhere; the scene turned into "
-                              'something else. Reply JSON {"malos": [{"n": <number>, "motivo": "..."}]}', [hoja], "juez_clips")
-                for m in v.get("malos", []) if isinstance(v, dict) else []:
-                    try: malos[gr[int(m["n"]) - 1]["name"]] = str(m.get("motivo", ""))[:100]
-                    except Exception: pass
-        if ronda == 2: malos = {}          # 3ª ronda: se acepta lo que hay (nunca se traba el video)
-        for i, m in malos.items():
-            print(f"   ✗ {i}: {m} → se regenera")
-            for f in (f"{CL}/{i}.mp4", f"{CL}/_raw/{i}.mp4"):
-                if os.path.exists(f): os.remove(f)
-        if not malos and all(os.path.exists(f"{CL}/{i}.mp4") for i in P): break
-    falt = [i for i in P if not os.path.exists(f"{CL}/{i}.mp4")]
-    if falt: print(f"⛔ FIN clips: faltan {len(falt)} clips: {falt[:20]} → corré clips de nuevo"); hecho("clips", False); sys.exit(2)
-    # sello del QC del farm: medición + revisión registrada (la hizo el juez de arriba)
-    W(V3 + f"{S}_i2v.json", [{"nombre": i, "motion": P[i]["mov"]} for i in P])
-    sh(["node", "scripts/agnes_qc.mjs", S], check=False, quiet=True, capture_output=True)
-    sh(["node", "scripts/agnes_qc.mjs", S, "--revision", "ninguno"], check=False, quiet=True, capture_output=True)
-    hecho("clips", True); print(f"FIN clips: {len(P)} clips OK → siguiente: python vlog/fab/fab.py armar")
+    P = {p["id"]: p for p in leer_planos()}; CL = R + f"public/broll/{S}"; os.makedirs(CL, exist_ok=True)
+    heroe = [i for i in P if P[i].get("cara")][:45]
+    TOPE = int(os.environ.get("FAB_HEROE_MIN", "90")) * 60
+    proc = None
+    falt_h = [i for i in heroe if not os.path.exists(f"{CL}/{i}.agnes")]
+    if falt_h:
+        lst = [{"nombre": i, "motion": "Static camera, the camera does not move at all. " + P[i]["mov"] + " Only ambient sound, nobody speaks."} for i in falt_h]
+        W(V3 + f"{S}_i2v_heroe.json", lst); os.makedirs(R + f"public/broll/{S}_heroe", exist_ok=True)
+        proc = subprocess.Popen(["node", "scripts/agnes_i2v.mjs", f"_v3/{S}_i2v_heroe.json", S, f"public/img/{S}", f"public/broll/{S}_heroe"], cwd=R,
+                                env={**ENV, "AG_MODEL": "agnes-video-2.5-flash"}, stdout=open(LOG + "clips_heroe.log", "w"), stderr=subprocess.STDOUT)
+        print(f"agnes 2.5-flash: {len(lst)} planos héroe en paralelo (tope {TOPE // 60} min)", flush=True)
+    import foto3d
+    t0 = time.time(); hechos = 0
+    for k, i in enumerate(P):
+        if not os.path.exists(f"{CL}/{i}.mp4"):
+            foto3d.clip(R + f"public/img/{S}/{i}.png", f"{CL}/{i}.mp4", (k * 7) % 6); hechos += 1
+            if hechos % 25 == 0: print(f"   foto 3D {hechos} · {(time.time() - t0) / 60:.0f} min", flush=True)
+    print(f"foto 3D: {hechos} clips nuevos en {(time.time() - t0) / 60:.0f} min", flush=True)
+    while proc and proc.poll() is None and time.time() - t0 < TOPE:
+        time.sleep(30)
+    if proc and proc.poll() is None: proc.kill(); print("tope de tiempo: corto agnes (lo que no llegó queda en foto 3D)")
+    usados = 0
+    for i in heroe:   # el clip de agnes reemplaza a la foto 3D (queda marca .agnes para no repetir)
+        f = R + f"public/broll/{S}_heroe/{i}.mp4"
+        if os.path.exists(f) and os.path.getsize(f) > 50_000:
+            shutil.copy(f, f"{CL}/{i}.mp4"); open(f"{CL}/{i}.agnes", "w").close(); usados += 1
+    if falt_h or usados:   # sello del QC que exige el farm para los clips de agnes (medición + revisión registrada)
+        W(V3 + f"{S}_i2v_heroe.json", [{"nombre": i, "motion": P[i]["mov"]} for i in heroe if os.path.exists(f"{CL}/{i}.agnes")])
+        sh(["node", "scripts/agnes_qc.mjs", S], check=False, quiet=True, capture_output=True)
+        sh(["node", "scripts/agnes_qc.mjs", S, "--revision", "ninguno"], check=False, quiet=True, capture_output=True)
+    hecho("clips", True, f"{len(P)} clips · {usados} agnes héroe")
+    print(f"FIN clips: {len(P)} clips ({usados} con agnes 2.5-flash y sonido real, el resto foto 3D) → siguiente: python vlog/fab/fab.py armar")
 
 # ════════════════════════════════════════ armar ════════════════════════════════════════
 def e_armar():
@@ -328,12 +315,17 @@ def e_armar():
     W(D + "tramos.json", segs)
     W(V3 + f"{S}_cues.json", [{"key": u["id"], "src": f"broll/{S}/{u['id']}.mp4", "start": 0, "dur": round(u["n"] / FPS, 4)} for s in segs for u in s["planos"]])
     A = D + "_armar/"; os.makedirs(A, exist_ok=True); os.makedirs(R + f"public/vid/{S}", exist_ok=True)
+    nf_cache = {}
+    def nfc(p):
+        if p not in nf_cache: nf_cache[p] = frames(p) or CLIPF
+        return nf_cache[p]
+    usados = [(p, min(n, nfc(p))) if n <= nfc(p) else (p, n) for p, n in usados]
     partes = []
     for g in range(0, len(usados), 40):
         tro = usados[g:g + 40]
         open(A + f"c{g:03d}.txt", "w").write("".join(f"file '{p}'\n" for p, _ in tro))
         sel, pos, base = [], 0, 0
-        for p, n in tro: sel.append(f"between(n,{base},{base + n - 1})"); pos += n; base += CLIPF
+        for p, n in tro: sel.append(f"between(n,{base},{base + n - 1})"); pos += n; base += nfc(p)
         open(A + f"s{g:03d}.txt", "w").write(f"select='{'+'.join(sel)}',setpts=N/({FPS}*TB),tpad=stop_mode=clone:stop=-1")
         pr = A + f"p{g:03d}.mp4"
         sh(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", A + f"c{g:03d}.txt", "-an", "-/vf", A + f"s{g:03d}.txt", "-fps_mode", "passthrough", "-frames:v", str(pos),
@@ -342,6 +334,16 @@ def e_armar():
     open(A + "partes.txt", "w").write("".join(f"file '{p}'\n" for p in partes))
     vl = R + f"public/vid/{S}/vlog.mp4"
     sh(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", A + "partes.txt", "-c", "copy", vl], quiet=True)
+    # audio REAL de los clips (sólo los que lo traen, p. ej. agnes 2.5-flash): misma línea de tiempo que el video
+    import numpy as np, wave
+    SRA = 48000; pista = []
+    for p, n in usados:
+        L = round(n / FPS * SRA)
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", p, "-t", f"{n / FPS:.4f}", "-ac", "1", "-ar", str(SRA), "-f", "s16le", "-"], capture_output=True).stdout
+        x = np.frombuffer(raw, np.int16)[:L]
+        pista.append(np.pad(x, (0, L - len(x))))
+    with wave.open(R + f"public/{S}_clips.wav", "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SRA); w.writeframes(np.concatenate(pista).astype(np.int16).tobytes())
     nf, TF = frames(vl), total_frames()
     if nf != TF: sys.exit(f"⛔ vlog.mp4 tiene {nf} cuadros y tenían que ser {TF}")
     print(f"✓ vlog.mp4 {nf} cuadros ({nf / FPS:.1f} s) · {len(segs)} tramos · minuto 1: {sum(1 for s in segs if s['a'] < 60)} cortes · {len(usados)} clips, 0 repetidos")
@@ -600,6 +602,11 @@ def e_mix():
             x = load(R + "public/" + (f if f.startswith("sfx") else "sfx_pro/foley/" + f)); i0 = int((s + off) * SR)
             if i0 >= N - 100: continue
             L = min(len(x), N - i0); F[i0:i0 + L] += x[:L] * (10 ** ((vdb - 30) / 20)) * duck[i0:i0 + L, None] ** 2
+    cw = R + f"public/{S}_clips.wav"
+    if os.path.exists(cw):   # ⭐ regla del creador 9-oct: sólo el sonido REAL de los clips, bajo
+        c = load(cw, 2)[:N]; c = np.pad(c, ((0, max(0, N - len(c))), (0, 0)))
+        lv = c[np.abs(c[:, 0]) > 0.003]
+        if len(lv): F += c / (10 ** (rms(lv) / 20)) * 10 ** ((vdb - 22) / 20) * duck[:, None] ** 1.5
     mix = V + A + F; I, tp = lufs(mix); mix *= 10 ** ((-14 - I) / 20)
     for _ in range(4):
         I, tp = lufs(mix)
