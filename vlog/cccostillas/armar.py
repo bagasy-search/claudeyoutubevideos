@@ -30,8 +30,11 @@ def kenburns(a, b, out, n):
     za = f"scale=2560:1440,zoompan=z='1+0.05*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS}"
     if b is None: run(["-loop", "1", "-i", a, "-vf", za, "-frames:v", str(n)] + ENC + [out]); return
     zb = f"scale=2560:1440,zoompan=z='1.05-0.05*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s={W}x{H}:fps={FPS}"
-    X = min(1.5, n / FPS / 2)
-    run(["-loop", "1", "-i", a, "-loop", "1", "-i", b, "-filter_complex", f"[0]{za},trim=end_frame={n}[a];[1]{zb},trim=end_frame={n}[b];[a][b]xfade=transition=fade:duration={X}:offset={n / FPS - X},trim=end_frame={n}",
+    # corte SECO a la mitad (como un cambio de toma), nunca fundido: el fundido entre dos poses dejaba a Claudio "fantasma"
+    if n < 3.2 * FPS: run(["-loop", "1", "-i", a, "-vf", za, "-frames:v", str(n)] + ENC + [out]); return
+    n1 = n // 2; n2 = n - n1
+    za1 = za.replace(f"/{n}'", f"/{n1}'").replace(f"d={n}:", f"d={n1}:"); zb2 = zb.replace(f"/{n}'", f"/{n2}'").replace(f"d={n}:", f"d={n2}:")
+    run(["-loop", "1", "-i", a, "-loop", "1", "-i", b, "-filter_complex", f"[0]{za1},trim=end_frame={n1},setpts=PTS-STARTPTS[a];[1]{zb2},trim=end_frame={n2},setpts=PTS-STARTPTS[b];[a][b]concat=n=2:v=1",
          "-frames:v", str(n)] + ENC + [out])
 
 # ---- fuentes por tramo -------------------------------------------------------------------------------------------------------
@@ -48,6 +51,10 @@ def st_src(i):
         if os.path.exists(f): return f, g
     return None, None
 
+import glob
+KFI = {}
+for pf in sorted(glob.glob(C + "kf/pares*.json")):
+    for p_ in J(pf, []): KFI.setdefault(p_["id"], p_["first"])
 plan = []  # (seg, n, tipo, fuente, ss, speed, gain_db)
 k = 0
 while k < len(segs):
@@ -67,7 +74,10 @@ while k < len(segs):
             plan.append((s, n, "hueco", None, 0, 1, None)); k += 1; continue
         plan.append((s, n, "st", f, 0.0, max(0.5, min(1.0, dur(f) / (n / FPS))), g))
     elif s["kind"] == "kf":
-        f = C + f"kf/out/{s['id']}.mp4"; plan.append((s, n, "kf", f if os.path.exists(f) else None, 0.0, 1.0, -22))
+        f = C + f"kf/out/{s['id']}.mp4"
+        if os.path.exists(f): plan.append((s, n, "kf", f, 0.0, 1.0, -22))
+        elif os.path.exists(KFI.get(s["id"], "")): plan.append((s, n, "kf_kb", KFI[s["id"]], 0, 1, None))   # agnes no llegó: KB de su foto (nunca esperar)
+        else: plan.append((s, n, "kf", None, 0.0, 1.0, -22))
     elif s["kind"] == "av":
         w = next(w for w in AVW["win"] if w["s"] - 0.01 <= s["s"] <= w["e"]); plan.append((s, n, "av", R + "out/cccostillas_avatar/reel.mp4", w["off"] + (s["s"] - w["ms"]) + LIP, 1.0, None))
     elif s["kind"] == "av2":   # 2º /run del avatar (formato nuevo: avatar ~25 %, sin esperar a agnes)
@@ -87,7 +97,7 @@ for i, (s, n, t, f, ss, sp, g) in enumerate(plan):
     if t in ("st", "kf", "vl") and f: clip(f, out, n, ss, sp)
     elif t == "av": clip(f, out, n, ss, 1.0, vf="unsharp=5:5:0.6,")
     elif t == "vl_kb": kenburns(f[0], f[1] if os.path.exists(f[1]) else None, out, n) if os.path.exists(f[0]) else kenburns(R + "public/ref_cccostillas.png", None, out, n)
-    elif t == "cmp": kenburns(f, None, out, n)
+    elif t in ("cmp", "kf_kb"): kenburns(f, None, out, n)
     else: run(["-f", "lavfi", "-i", f"color=c=black:s={W}x{H}:r={FPS}", "-frames:v", str(n)] + ENC + [out])   # hueco / kf aún sin clip
     print(f"{i:03d} {s['id']:<10} {t:<6} {n:>4} cuadros", flush=True)
 open(O + "concat.txt", "w").write("".join(f"file '{x}'\n" for x in lst))

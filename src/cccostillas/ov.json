@@ -1,0 +1,220 @@
+[
+ {
+  "c": "ClRibCut",
+  "k": "tejido",
+  "from": 4784,
+  "dur": 460,
+  "props": {
+   "bed": "img/cccostillas/bed_tejido.jpg",
+   "at": [
+    1.44,
+    4.54,
+    8.03,
+    13.17
+   ]
+  },
+  "t": 159.45
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 6866,
+  "dur": 210,
+  "props": {
+   "title": "Costillas · 4 a 6 personas",
+   "rows": [
+    {
+     "k": "Costilla de cerdo, trozos de 3 huesos",
+     "v": "2 kg"
+    },
+    {
+     "k": "Sal / comino",
+     "v": "2 cditas / 1"
+    },
+    {
+     "k": "Chile guajillo",
+     "v": "6"
+    },
+    {
+     "k": "Ajo",
+     "v": "5 dientes"
+    },
+    {
+     "k": "Jugo de naranja + ralladura",
+     "v": "1 taza"
+    },
+    {
+     "k": "Vinagre de manzana",
+     "v": "2 cdas"
+    },
+    {
+     "k": "Piloncillo rallado",
+     "v": "2 cdas"
+    }
+   ],
+   "mark": "la ralladura ANTES de exprimir",
+   "note": "olla tapada",
+   "bed": "vid/cccostillas/bed_1.mp4#214"
+  },
+  "t": 228.87
+ },
+ {
+  "c": "ClTimer30",
+  "k": "remojo",
+  "from": 10390,
+  "dur": 108,
+  "props": {
+   "minutes": 15,
+   "label": "15 min",
+   "text": "chiles en agua caliente",
+   "fast": true,
+   "bed": "vid/cccostillas/bed_2.mp4#112"
+  },
+  "t": 346.35
+ },
+ {
+  "c": "ClChip",
+  "k": "doshoras",
+  "from": 12586,
+  "dur": 108,
+  "props": {
+   "text": "Tapadas · fuego bajo · 2 horas",
+   "corner": "tl"
+  },
+  "t": 419.52
+ },
+ {
+  "c": "ClChip",
+  "k": "tapa",
+  "from": 13109,
+  "dur": 120,
+  "props": {
+   "text": "Cada destapada: +10 minutos",
+   "corner": "tl"
+  },
+  "t": 436.96
+ },
+ {
+  "c": "ClTimer30",
+  "k": "comal",
+  "from": 15263,
+  "dur": 108,
+  "props": {
+   "minutes": 4,
+   "label": "3 a 4 min",
+   "text": "comal bien caliente",
+   "bed": "vid/cccostillas/bed_5.mp4#112"
+  },
+  "t": 508.78
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 16031,
+  "dur": 191,
+  "props": {
+   "before": "img/cccostillas/antes.jpg",
+   "after": "img/cccostillas/despues.jpg",
+   "a": "CRUDA",
+   "b": "2½ HORAS DESPUÉS",
+   "note": "sin parrilla"
+  },
+  "t": 534.35
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 16228,
+  "dur": 285,
+  "props": {
+   "title": "Las costillas de la fonda",
+   "items": [
+    "Sal y comino",
+    "Salsa de guajillo y naranja",
+    "Líquido a la mitad",
+    "Tapadas, fuego bajo, 2 horas",
+    "Hasta que el hueso gire",
+    "Reduces, barnizas, 3-4 min al comal"
+   ],
+   "bed": "vid/cccostillas/bed_7.mp4#289"
+  },
+  "t": 540.94
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 29261,
+  "dur": 806,
+  "props": {
+   "head": "LA OLLA DE COSTILLAS",
+   "lines": [
+    [
+     "Costilla, 2 kg",
+     "US$13.00"
+    ],
+    [
+     "6 chiles guajillo",
+     "US$0.75"
+    ],
+    [
+     "3 naranjas",
+     "US$1.50"
+    ],
+    [
+     "Ajo, vinagre, piloncillo, sal",
+     "US$0.65"
+    ],
+    [
+     "Toda la olla · 5 platos",
+     "US$15.90"
+    ]
+   ],
+   "total": [
+    "Cada plato",
+    "US$3.20"
+   ],
+   "bed": "vid/cccostillas/bed_8.mp4#810"
+  },
+  "t": 975.35
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 31172,
+  "dur": 180,
+  "props": {
+   "page": "img/cccostillas/page38.jpg",
+   "pageNo": 38,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/cccostillas/bed_9.mp4#184"
+  },
+  "t": 1039.07
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 31543,
+  "dur": 210,
+  "props": {
+   "qr": "img/cccostillas/qr.jpg",
+   "cover": "img/cccostillas/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/cccostillas/bed_10.mp4#214"
+  },
+  "t": 1051.42
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 32028,
+  "dur": 150,
+  "props": {
+   "thumb": "img/cccostillas/th_ccejotes.jpg",
+   "title": "Ejotes con ¼ de taza de agua",
+   "next": true,
+   "bed": "vid/cccostillas/bed_11.mp4#154"
+  },
+  "t": 1067.59
+ }
+]
