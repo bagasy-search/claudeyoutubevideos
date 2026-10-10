@@ -135,7 +135,7 @@ def planos(necesidad=None):
                 "If the moment is a general statement, show the most concrete visible thing that illustrates it in this house.",
                 "Alternate shot sizes: never two of the same size in a row (wide / medium / close detail).",
                 f"{NOM} ({PROT}), when present, is SHOWN DOING the actions with {SU} hands (" + CANAL.get("acciones", "pouring, filling, hanging, checking with a flashlight") + "). "
-                f"Mark \"cara\": true only when {SU} face is clearly visible, about ONE shot in three; the others are {SU} hands at work, the objects, the place, the results. "
+                f"Mark \"cara\": true only when {SU} face is clearly visible, about ONE shot in five, never two in a row; the others are {SU} hands at work, the objects, the place, the results. "
                 "Family members appear doing ordinary things; children only fully clothed and safe.",
                 "Nobody looks at the camera: everybody is busy with the task (only the avatar talks to camera).",
                 "Write 'foto' in English: only what is visible (who, doing what, where, objects, light). 50-80 words. No camera words.",
@@ -175,7 +175,14 @@ def fotos(P, rondas=3):
         sin = [p for p in falt if p not in con]   # en la 3ª vuelta lo que falte de Claudio sale con agnes (nunca queda un hueco)
         import threading
         # Claudio HACIENDO = gpt-image-2 low + Batch + crop de cara 128x192 (identidad); el resto = agnes gratis con la maestra del lugar
-        hilo = threading.Thread(target=gpt_img, args=([{"name": p["id"], "prompt": prompt_foto(p, b) + " " + CANAL["identidad"], "ref": crop} for p in con],))
+        # ⛔ medido en cltoilet: con la cara de ref, gpt pone SIEMPRE a la persona de frente, parada, en el mismo punto del cuarto → 84 fotos iguales.
+        # Se fuerza un punto de vista distinto por plano, cerca, con la mirada en las manos.
+        VISTA = ["Seen from her side, close, at the height of her hands: ", "Seen over her shoulder, close to what her hands are doing: ",
+                 "Seen from low, near the floor, close to the task: ", "A close three-quarter view of her face and hands, eyes down on the task: ",
+                 "Seen from across the object she is working on, close, her face partly visible above it: "]
+        hilo = threading.Thread(target=gpt_img, args=([{"name": p["id"], "prompt": VISTA[k % len(VISTA)] + prompt_foto(p, b)
+                                                        + f" {NOM} is busy and does not look at the viewer; her eyes are on her hands. " + CANAL["identidad"], "ref": crop}
+                                                       for k, p in enumerate(con)],))
         hilo.start()
         # detalle = el objeto llena el cuadro, SIN la maestra (con la maestra agnes copia el plano general y se repite la composición)
         # medio = la maestra sólo da paredes y muebles: otro ángulo y mucho más cerca (si no, agnes copia el plano general vacío)
@@ -231,7 +238,7 @@ def revisar_montaje():
         dicho = "\n".join(f"{i + 1}: «{' '.join(w for t, w in tw if s['a'] <= t < s['b'])[:200]}»" for i, s in enumerate(gr))
         v = ds.vision("You are the editor of a home-vlog YouTube video. The sheet shows one frame of each numbered shot, in order. Next to each number is what the "
                       f"narrator SAYS during that shot:\n{dicho}\n\nFlag a shot ONLY if: it does not show what is being said; it looks like a different house/place "
-                      "than its neighbours; it has readable or fake text; it is a near duplicate of the previous shot; or it is visually broken. "
+                      "than its neighbours; it has readable or fake text; it is a near duplicate of the previous shot or of another shot in the sheet (same person standing in the same spot, same framing); or it is visually broken. "
                       'Reply JSON {"malos": [{"n": <number>, "motivo": "...", "mejor": "<what the shot should show, one English sentence>"}]}', [hoja], "editor_montaje")
         for m in v.get("malos", []) if isinstance(v, dict) else []:
             try:
