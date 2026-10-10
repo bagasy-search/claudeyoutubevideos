@@ -1,0 +1,297 @@
+[
+ {
+  "c": "LChannel",
+  "from": 1195,
+  "dur": 54,
+  "props": {
+   "thumb": "img/cltoilet/th_cltowels.jpg",
+   "title": "The Laundry Mistake",
+   "tag": "PREVIOUS VIDEO"
+  }
+ },
+ {
+  "c": "LNumber",
+  "from": 2753,
+  "dur": 150,
+  "props": {
+   "num": "5",
+   "unidad": "spots on the outside",
+   "txt": "nobody looks"
+  }
+ },
+ {
+  "c": "LPage",
+  "from": 3662,
+  "dur": 167,
+  "props": {
+   "page": "img/cltoilet/page4.jpg",
+   "pageNo": 4,
+   "stamp": "8 things, 40 jobs"
+  }
+ },
+ {
+  "c": "LBeforeAfter",
+  "from": 4839,
+  "dur": 226,
+  "props": {
+   "antes": "k001",
+   "despues": "k009",
+   "a": "SEALED UP WET",
+   "b": "LEFT TO DRY",
+   "nota": "smell gone by Sunday"
+  }
+ },
+ {
+  "c": "LPage",
+  "from": 5587,
+  "dur": 153,
+  "props": {
+   "page": "img/cltoilet/page3.jpg",
+   "pageNo": 3,
+   "stamp": "Never mix these"
+  }
+ },
+ {
+  "c": "LSplit",
+  "from": 5934,
+  "dur": 211,
+  "props": {
+   "title": "Never mix",
+   "no": {
+    "img": "k003",
+    "txt": "bleach and vinegar together"
+   },
+   "si": {
+    "img": "k004",
+    "txt": "one product at a time"
+   }
+  }
+ },
+ {
+  "c": "LNumber",
+  "from": 6513,
+  "dur": 150,
+  "props": {
+   "num": "1",
+   "unidad": "product per day",
+   "txt": "never mix",
+   "img": "k005"
+  }
+ },
+ {
+  "c": "LSteps",
+  "from": 9152,
+  "dur": 324,
+  "props": {
+   "title": "Dry the brush",
+   "pasos": [
+    {
+     "img": "k006",
+     "txt": "lay brush across rim"
+    },
+    {
+     "img": "k007",
+     "txt": "lower the seat lid"
+    },
+    {
+     "img": "k008",
+     "txt": "soak head monthly"
+    },
+    {
+     "img": "k009",
+     "txt": "let it dry"
+    }
+   ]
+  }
+ },
+ {
+  "c": "LSplit",
+  "from": 9962,
+  "dur": 250,
+  "props": {
+   "title": "Clean the outside",
+   "no": {
+    "img": "k010",
+    "txt": "only the bowl"
+   },
+   "si": {
+    "img": "k011",
+    "txt": "base and outside"
+   }
+  }
+ },
+ {
+  "c": "LCalendar",
+  "from": 12532,
+  "dur": 205,
+  "props": {
+   "title": "Base care",
+   "cada": 7,
+   "txt": "spray base & bolts"
+  }
+ },
+ {
+  "c": "LSteps",
+  "from": 15876,
+  "dur": 122,
+  "props": {
+   "title": "Under the rim",
+   "pasos": [
+    {
+     "img": "k012",
+     "txt": "dip toothbrush"
+    },
+    {
+     "img": "k013",
+     "txt": "use a mirror"
+    },
+    {
+     "img": "k014",
+     "txt": "scrub the rim"
+    },
+    {
+     "img": "k015",
+     "txt": "rinse"
+    }
+   ]
+  }
+ },
+ {
+  "c": "LBeforeAfter",
+  "from": 16114,
+  "dur": 240,
+  "props": {
+   "antes": "k016",
+   "despues": "k017",
+   "nota": "no film, no smell"
+  }
+ },
+ {
+  "c": "LNumber",
+  "from": 16780,
+  "dur": 161,
+  "props": {
+   "num": "5",
+   "unidad": "minutes",
+   "txt": "with mirror and toothbrush",
+   "img": "k018"
+  }
+ },
+ {
+  "c": "LQr",
+  "from": 18007,
+  "dur": 194,
+  "props": {
+   "qr": "img/cltoilet/qr.jpg",
+   "cover": "img/cltoilet/book_cover.jpg",
+   "text": "Scan for the book",
+   "kicker": "Clean Home Manual"
+  }
+ },
+ {
+  "c": "LCalendar",
+  "from": 22323,
+  "dur": 150,
+  "props": {
+   "title": "Handle care",
+   "cada": 1,
+   "txt": "wipe the handle"
+  }
+ },
+ {
+  "c": "LChannel",
+  "from": 24374,
+  "dur": 162,
+  "props": {
+   "thumb": "img/cltoilet/th_hhtoilet.jpg",
+   "title": "Peroxide in Your Toilet",
+   "tag": "OTHER VIDEO"
+  }
+ },
+ {
+  "c": "LPage",
+  "from": 25038,
+  "dur": 156,
+  "props": {
+   "page": "img/cltoilet/page10.jpg",
+   "pageNo": 10,
+   "stamp": "The ring"
+  }
+ },
+ {
+  "c": "LSteps",
+  "from": 25594,
+  "dur": 274,
+  "props": {
+   "title": "Pumice ring care",
+   "pasos": [
+    {
+     "img": "k019",
+     "txt": "turn off water"
+    },
+    {
+     "img": "k020",
+     "txt": "flush to drop water"
+    },
+    {
+     "img": "k021",
+     "txt": "pour vinegar"
+    },
+    {
+     "img": "k022",
+     "txt": "rub wet pumice"
+    }
+   ]
+  }
+ },
+ {
+  "c": "LSplit",
+  "from": 26019,
+  "dur": 168,
+  "props": {
+   "title": "Keep it wet",
+   "no": {
+    "img": "k023",
+    "txt": "dry pumice"
+   },
+   "si": {
+    "img": "k024",
+    "txt": "wet pumice"
+   }
+  }
+ },
+ {
+  "c": "LBeforeAfter",
+  "from": 26268,
+  "dur": 243,
+  "props": {
+   "antes": "k025",
+   "despues": "k026",
+   "nota": "wet pumice, no scratches"
+  }
+ },
+ {
+  "c": "LList",
+  "from": 28325,
+  "dur": 235,
+  "props": {
+   "title": "The bathroom list",
+   "items": [
+    "Brush: dry across rim",
+    "Base & bolts: wipe weekly",
+    "Under rim: scrub with mirror",
+    "Handle: wipe every day"
+   ]
+  }
+ },
+ {
+  "c": "LChannel",
+  "from": 30273,
+  "dur": 171,
+  "props": {
+   "thumb": "img/cltoilet/th_clsteel.jpg",
+   "title": "Clean Stainless Steel",
+   "tag": "NEXT VIDEO"
+  }
+ }
+]

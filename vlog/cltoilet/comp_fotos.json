@@ -88,10 +88,12 @@
   "sec": "M1A",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
-  "foto": "Loretta's hand pours brown hydrogen peroxide from its brown bottle into the white brush holder on the floor, with a splash visible. The closed holder is open, no brush inside. White tiles background.",
+  "foto": "Close-up of the elderly narrator's hand pouring brown hydrogen peroxide from its brown bottle into the open white brush holder standing on the white tile floor, her lilac sleeve in frame, only the bottle, the holder and her hand.",
   "mov": "",
   "dice": ""
  },
@@ -160,10 +162,12 @@
   "sec": "M3A",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
-  "foto": "The old toothbrush reaches up under the toilet rim, scrubbing the hidden curve, while the other hand holds the mirror. White tiles and porcelain, no face visible.",
+  "foto": "Extreme close-up of the elderly narrator's hand scrubbing the white porcelain underside of the toilet rim with an old toothbrush, brownish film lifting off the porcelain, her lilac sleeve in frame.",
   "mov": "",
   "dice": ""
  },
@@ -172,10 +176,12 @@
   "sec": "M3A",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
-  "foto": "A clean white underside of the toilet rim after scrubbing, with no brown film, the porcelain bright. A hand withdraws the toothbrush. Soft daylight.",
+  "foto": "Extreme close-up of the elderly narrator's hand withdrawing the toothbrush from the clean white underside of the toilet rim, no film on the porcelain, her lilac sleeve in frame.",
   "mov": "",
   "dice": ""
  },

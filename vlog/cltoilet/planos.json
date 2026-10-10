@@ -121,11 +121,13 @@
   "sec": "HOOK",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "one is the brush,",
-  "foto": "A shot of the woman holding the toilet brush.",
+  "foto": "The elderly narrator with white hair, glasses and a lilac blouse standing at the white porcelain toilet holding up the white toilet brush, her floral apron visible, her face turned to the bowl, only she is in frame.",
   "mov": "A small drop of water seeps from the bottom of the holder."
  },
  {
@@ -293,11 +295,13 @@
   "sec": "REMEMBER",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "Before we begin, if you",
-  "foto": "The elderly woman standing in the bathroom, looking at the camera and preparing to speak.",
+  "foto": "Close-up of the elderly narrator's hands tying the bow of her floral cotton apron in her bathroom, her lilac sleeve in frame, only her hands, no other person, no face.",
   "mov": "The top towel's loops gently settle as if just placed."
  },
  {
@@ -495,9 +499,9 @@
    "loretta"
   ],
   "cara": false,
-  "tam": "general",
+  "tam": "medio",
   "dice": "going to find every one of them.",
-  "foto": "A shot of the old woman looking around the bathroom, searching for the smells.",
+  "foto": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse standing alone in her bathroom looking around the room searching for the smell, one single person in frame, no other person, no reflection, no mirror.",
   "mov": "She lifts the towel slightly and steps toward the toilet."
  },
  {
@@ -564,11 +568,13 @@
   "sec": "PAIN",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "is back like a closed-up closet. They",
-  "foto": "A close-up of the woman scrubbing the toilet bowl with a brush.",
+  "foto": "The elderly narrator with white hair, glasses and a lilac blouse leaning over the white porcelain toilet scrubbing the inside of the bowl with a brush, soapy water, only she is in frame.",
   "mov": "A tiny wisp of dust or odor seems to rise from the dark gap."
  },
  {
@@ -798,11 +804,13 @@
   "sec": "PROMISE",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "that is the other thing that makes a clean toilet",
-  "foto": "A shot of the narrator pointing to or holding the cleaning product mentioned as the 'other thing'.",
+  "foto": "Close-up of the elderly narrator's hands holding a white bottle of toilet bowl cleaner beside the white bathroom sink, her lilac sleeve and floral apron cuff in frame, only her hands, no face, no other person.",
   "mov": "A water droplet slowly slides down the porcelain."
  },
  {
@@ -860,9 +868,9 @@
    "loretta"
   ],
   "cara": false,
-  "tam": "general",
+  "tam": "medio",
   "dice": "You already have everything you need, honey, and",
-  "foto": "The narrator gesturing towards the cleaning supplies or the book to emphasize that the viewer already owns these items.",
+  "foto": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse standing alone at the bathroom sink, one open hand gesturing toward the bottles and folded rags beside her, one single person in frame, no other person, no reflection.",
   "mov": "She gestures with the rag toward the toilet and sink."
  },
  {
@@ -905,9 +913,9 @@
    "loretta"
   ],
   "cara": false,
-  "tam": "medio",
+  "tam": "detalle",
   "dice": "off the basement had a toilet that would smell",
-  "foto": "A shot of the specific toilet at the church basement that had the odor problem.",
+  "foto": "Close-up of the elderly narrator's hand resting on the closed white porcelain toilet seat of a plain church basement bathroom with grey tile floor, her lilac sleeve and floral apron cuff in frame, only her hand, no face, no other person.",
   "mov": "The hands slowly lower the brush into the holder until it is seated."
  },
  {
@@ -987,11 +995,13 @@
   "sec": "STORY",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "sniffed, and said it was the brush in its little closed",
-  "foto": "A close-up of the toilet brush holder as Edna points at it.",
+  "foto": "Close-up of the elderly narrator's hand lifting the lid of the white toilet brush holder standing on the bathroom floor beside the toilet, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "The holder's lid lifts slightly, as if someone is about to open it."
  },
  {
@@ -1590,11 +1600,13 @@
   "sec": "SINK",
   "lugar": "bajo_pileta",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "besides the dishes. And rags,",
-  "foto": "The woman picking up or holding a rag from the shelf.",
+  "foto": "The elderly narrator with white hair, glasses and a lilac blouse taking a folded white rag from the shelf of cleaning supplies in her bathroom cupboard, only she is in frame.",
   "mov": "The top rag gently shifts as if touched by a breeze."
  },
  {
@@ -1794,11 +1806,13 @@
   "sec": "M1",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "the holder keeps the damp locked in, and",
-  "foto": "The woman opening the brush holder, with a focus on the release of the trapped smell.",
+  "foto": "Close-up of the elderly narrator's hand holding the open white toilet brush holder with the dark damp bristles inside, standing on white square tiles, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "A droplet of condensation runs down the inside of the holder lid."
  },
  {
@@ -1888,7 +1902,7 @@
   "cara": false,
   "tam": "medio",
   "dice": "handle across the rim so the bristles hang",
-  "foto": "A close-up of the brush handle resting on the rim with the bristles hanging down into the bowl.",
+  "foto": "The elderly narrator's hands placing the wooden handle of a toilet brush across the white porcelain rim of the bowl with the lid raised, her lilac sleeve and floral apron cuff in frame.",
   "mov": "She carefully sets the brush handle down across the rim."
  },
  {
@@ -2032,11 +2046,13 @@
   "sec": "M1B",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "of another bottle of toilet spray. One product",
-  "foto": "The woman holding a single cleaning product in her hand, standing in the bathroom.",
+  "foto": "Close-up of the elderly narrator's hand holding one bottle of toilet spray beside the white bathroom sink, her lilac sleeve and floral apron cuff in frame, only her hand, no face, no other person.",
   "mov": "The brush handle inside the holder slowly shifts a tiny bit as if just placed."
  },
  {
@@ -2148,11 +2164,13 @@
   "sec": "M1B",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "medio",
   "dice": "used to call it the stink bucket, and",
-  "foto": "A shot of the woman looking at the toilet with a knowing smile, perhaps gesturing towards it.",
+  "foto": "Medium shot of the elderly narrator with white hair and glasses standing alone beside the white porcelain toilet looking down at it with a knowing smile, one single person in frame, no other person, no reflection, no mirror.",
   "mov": "The toilet lid trembles very slightly as if just closed."
  },
  {
@@ -2613,10 +2631,10 @@
   "gente": [
    "loretta"
   ],
-  "cara": true,
-  "tam": "general",
+  "cara": false,
+  "tam": "medio",
   "dice": "the bowl, and the smell is on the outside.",
-  "foto": "The elderly woman pointing at the outside of the toilet bowl to show where the smell comes from.",
+  "foto": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse standing alone beside the white porcelain toilet, one hand pointing at the outside of the bowl, one single person in frame, no other person, no reflection.",
   "mov": "Loretta gestures with her hand toward the outside of the toilet bowl."
  },
  {
@@ -2653,11 +2671,13 @@
   "sec": "M2B",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "far more and only cover the smell for an",
-  "foto": "An elderly woman looking at a toilet spray bottle with a skeptical expression.",
+  "foto": "Close-up of the elderly narrator's hand holding a bottle of toilet spray up beside her lilac sleeve, the white tiled bathroom behind, only her hand and the bottle, no face, no other person.",
   "mov": "The water surface ripples slightly and then settles."
  },
  {
@@ -2741,11 +2761,13 @@
   "sec": "M2B",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "in the bowl, and it takes less time than waiting",
-  "foto": "An elderly woman cleaning the toilet bowl while the cleaner sits inside.",
+  "foto": "The elderly narrator with white hair, glasses and a lilac blouse scrubbing the inside of the white porcelain bowl with a brush while blue cleaner pools at the bottom, only she is in frame.",
   "mov": "The kettle's handle is gently touched, but it remains still."
  },
  {
@@ -2760,7 +2782,7 @@
   "cara": false,
   "tam": "detalle",
   "dice": "for the kettle. That little seam was",
-  "foto": "A close-up of a kettle with a visible seam on its spout or body.",
+  "foto": "The elderly narrator's hand reaching the chrome shut-off valve and the braided water line behind the white porcelain toilet, her lilac sleeve in frame.",
   "mov": "Her finger traces along the seam slowly."
  },
  {
@@ -2772,10 +2794,10 @@
   "gente": [
    "loretta"
   ],
-  "cara": true,
+  "cara": false,
   "tam": "medio",
   "dice": "the first place Edna looked when the church toilet",
-  "foto": "Loretta stands in her bathroom, looking down at the toilet base with a thoughtful expression. She wears her lilac blouse and pearl necklace. Her face is clearly visible, and she appears to be remembering. The white square tiles and lace curtain are behind her, and the light is soft and natural.",
+  "foto": "Medium shot of the elderly narrator with white hair and glasses standing alone in her bathroom looking down at the white porcelain base of the toilet with a thoughtful expression, one single person in frame, no other person, no reflection, no mirror.",
   "mov": "She looks up slightly and her eyes narrow in recollection."
  },
  {
@@ -2859,9 +2881,9 @@
    "loretta"
   ],
   "cara": false,
-  "tam": "medio",
+  "tam": "detalle",
   "dice": "film you will not believe. Hold that",
-  "foto": "A close-up of the toilet seat hinges.",
+  "foto": "Close-up of the elderly narrator's hand pressing the white plastic hinge of the toilet seat down onto the porcelain bowl, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "She slowly tilts the mirror downward."
  },
  {
@@ -2969,11 +2991,13 @@
   "sec": "M3",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "you will see the brown or gray film that",
-  "foto": "A clear close-up of the narrator holding a hand mirror to inspect the underside of the toilet rim.",
+  "foto": "Close-up of the elderly narrator's hand holding a small round hand mirror up under the rim of the white porcelain toilet bowl, her lilac sleeve in frame, only her hand and the mirror, no face, no other person.",
   "mov": "The reflection shifts slightly as the mirror is adjusted, bringing more of the film into view."
  },
  {
@@ -3465,9 +3489,9 @@
    "loretta"
   ],
   "cara": false,
-  "tam": "medio",
+  "tam": "detalle",
   "dice": "on the TV, just point your phone at",
-  "foto": "A person pointing a phone at a TV screen showing a QR code.",
+  "foto": "Close-up of the elderly narrator's hands holding a white smartphone with a QR code on its screen up in front of the white bathroom sink, her lilac sleeve in frame, only her hands and the phone, no face, no other person.",
   "mov": "She slowly moves the phone closer to the screen."
  },
  {
@@ -3744,11 +3768,13 @@
   "sec": "M4A",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "is a trap for everything, and it sits",
-  "foto": "The narrator pointing at or cleaning the gap between the toilet seat and the bowl.",
+  "foto": "Close-up of the elderly narrator's hand cleaning the gap between the white plastic toilet seat and the porcelain bowl with a folded white rag, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "A tiny particle of dust drifts into the gap."
  },
  {
@@ -4238,11 +4264,13 @@
   "sec": "M5",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "is the front door of the toilet, and you would",
-  "foto": "A different angle showing the woman's face as she delivers the line about the front door.",
+  "foto": "Close-up of the elderly narrator's hand tapping the front edge of the white porcelain toilet bowl, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "A soft reflection of light moves across the handle's surface."
  },
  {
@@ -4648,11 +4676,13 @@
   "sec": "OTHER",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "of them is Put Hydrogen Peroxide in",
-  "foto": "The elderly woman pouring hydrogen peroxide from the brown bottle into the toilet bowl.",
+  "foto": "Close-up of the elderly narrator's hand pouring brown hydrogen peroxide from its brown bottle into the white porcelain toilet bowl, pale blue water below, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "The toilet seat slowly lifts up."
  },
  {
@@ -4793,10 +4823,10 @@
   "gente": [
    "loretta"
   ],
-  "cara": true,
-  "tam": "medio",
+  "cara": false,
+  "tam": "detalle",
   "dice": "not touch is hard-water mineral, and",
-  "foto": "A shot of the toilet bowl showing the stubborn brown ring at the waterline.",
+  "foto": "Close-up of the elderly narrator's hand pointing at the brown mineral ring at the waterline inside the white porcelain toilet bowl, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "She nods slightly and points with the pumice stone at the ring."
  },
  {
@@ -5058,11 +5088,13 @@
   "sec": "BONUS2",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "the ring remover bottle cost more and",
-  "foto": "A close-up of the elderly woman holding the bottle of ring remover, showing its label.",
+  "foto": "Close-up of the elderly narrator's hand holding a bottle of hard-water ring remover up beside the white bathroom sink, her lilac sleeve in frame, only her hand and the bottle, no face, no other person.",
   "mov": "The bottle is gently nudged, causing it to wobble slightly."
  },
  {
@@ -5101,11 +5133,13 @@
   "sec": "BONUS3",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "the first Saturday of spring and the first Saturday",
-  "foto": "The elderly woman standing in the bathroom, looking at a calendar or preparing to clean the toilet.",
+  "foto": "Close-up of the elderly narrator's hand hanging a small paper calendar on the white tiled bathroom wall beside the sink, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "The water in the bowl ripples gently, catching the light."
  },
  {
@@ -5294,9 +5328,9 @@
    "loretta"
   ],
   "cara": false,
-  "tam": "medio",
+  "tam": "detalle",
   "dice": "seat lid and soaked in peroxide monthly.",
-  "foto": "A shot of the toilet brush soaking in a container of peroxide.",
+  "foto": "Close-up of the elderly narrator's hand lowering the white toilet brush head into a glass jar of peroxide standing on the bathroom floor, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "The bottle tilts and peroxide flows into the container."
  },
  {
@@ -5513,11 +5547,13 @@
   "sec": "CTA3",
   "lugar": "bano",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
-  "tam": "detalle",
+  "tam": "medio",
   "dice": "the shelf above the towels, and you will never",
-  "foto": "The elderly woman standing in the bathroom pointing to the wooden shelf above the wicker basket of towels.",
+  "foto": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse standing alone reaching up to the wooden shelf above the wicker basket in her bathroom, one single person in frame, no other person, no reflection.",
   "mov": "A faint shadow of the lace curtain moves across the book cover."
  },
  {
@@ -5574,10 +5610,10 @@
   "gente": [
    "loretta"
   ],
-  "cara": true,
-  "tam": "general",
+  "cara": false,
+  "tam": "medio",
   "dice": "standing over your shoulder.",
-  "foto": "The elderly woman standing directly behind the toilet, looking over it as if supervising.",
+  "foto": "Medium shot of the elderly narrator with white hair and glasses standing alone behind the white porcelain toilet looking down at it, one single person in frame, no other person, no reflection, no mirror.",
   "mov": "She gives a small, final nod and turns slightly toward the door."
  },
  {
@@ -5589,10 +5625,10 @@
   "gente": [
    "loretta"
   ],
-  "cara": true,
+  "cara": false,
   "tam": "medio",
   "dice": "Now tell me in the comments which spot in your",
-  "foto": "The elderly woman pointing to different areas of the bathroom, such as the toilet brush or base.",
+  "foto": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse standing alone in her bathroom pointing at the base of the toilet, one single person in frame, no other person, no reflection.",
   "mov": "She leans in and tilts her head, hand to ear."
  },
  {
@@ -5649,10 +5685,10 @@
   "gente": [
    "loretta"
   ],
-  "cara": true,
+  "cara": false,
   "tam": "medio",
   "dice": "and do not be shy, because Edna Pruitt",
-  "foto": "Medium shot of Loretta standing in her bathroom, a gentle smile on her face, her wire-rimmed glasses catching the light, one hand touching her pearl necklace, the other resting on the white pedestal sink, with the white square wall tiles and the lace-curtained window behind her, a wicker basket of towels on the floor, and the white toilet with its seat down to her left, all in soft daylight.",
+  "foto": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse standing alone in her bathroom with a gentle smile looking straight at the camera, one single person in frame, no other person, no reflection.",
   "mov": "She gives a small, reassuring nod and pats her pearl necklace."
  },
  {
@@ -5736,11 +5772,13 @@
   "sec": "NEXT",
   "lugar": "cocina",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
-  "tam": "detalle",
+  "tam": "medio",
   "dice": "Best Way to Clean Stainless Steel Appliances.",
-  "foto": "Edna walking through a doorway into the kitchen.",
+  "foto": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse walking alone through the doorway into her kitchen, the white stove and yellow curtains behind her, one single person in frame, no other person, no mirror.",
   "mov": "The cloth slides slightly on the counter as a draft moves the curtain."
  },
  {
@@ -5764,11 +5802,13 @@
   "sec": "NEXT",
   "lugar": "cocina",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "instead of coming off, honey, the answer is",
-  "foto": "Edna holding a cleaning cloth and a bottle of cleaner, ready to demonstrate the solution.",
+  "foto": "Close-up of the elderly narrator's hands holding a folded white cloth and a bottle of cleaner in her kitchen, her lilac sleeve and floral cotton apron cuff in frame, only her hands, no face, no other person.",
   "mov": "The rag's corner flutters as a breeze passes."
  },
  {
@@ -5835,11 +5875,13 @@
   "sec": "NEXT",
   "lugar": "cocina",
   "hora": "dia",
-  "gente": [],
+  "gente": [
+   "loretta"
+  ],
   "cara": false,
   "tam": "detalle",
   "dice": "delivered yesterday.",
-  "foto": "A wide shot of the elderly woman smiling while looking at the clean, shiny exterior of the refrigerator.",
+  "foto": "Close-up of the elderly narrator's hand wiping the white door of the refrigerator with a folded white cloth in her kitchen, her lilac sleeve in frame, only her hand, no face, no other person.",
   "mov": "A soft highlight glides across the polished steel as the curtain sways."
  },
  {
