@@ -25,8 +25,13 @@ for n, (c, s, d, p) in enumerate(OV):
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{fr / 30:.4f}", "-i", VLOG, "-frames:v", str(nfr + 4), "-an", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", "-pix_fmt", "yuv420p", b], check=True)
         p = {**p, "bed": f"vid/{S}/bed_{n}.mp4#{nfr + 4}"}
     out.append({"c": c, "from": fr, "dur": nfr, "props": p, "t": round(s, 2)})
-for a, b in zip(out, out[1:]):
-    if a["from"] + a["dur"] > b["from"]: print("⚠️ se pisan:", a["c"], a["t"], "→", b["c"], b["t"])
+keep = []  # un chip que pisa a otro componente se cae (LIMPIO gana a denso); otros solapes se avisan
+for o in out:
+    if keep and keep[-1]["from"] + keep[-1]["dur"] > o["from"]:
+        if o["c"] == "ClChip": print("⚠️ chip sacado (pisa a", keep[-1]["c"] + "):", o["t"], o["props"].get("text")); continue
+        print("⚠️ se pisan:", keep[-1]["c"], keep[-1]["t"], "→", o["c"], o["t"])
+    keep.append(o)
+out = keep
 json.dump(out, open(R + f"src/{S}/ov.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
 open(R + f"src/{S}/total.ts", "w").write(f"export const TOTAL_FRAMES = {nf};\n")
 for o in out: print(o["c"], o["t"], round(o["dur"] / 30, 1))

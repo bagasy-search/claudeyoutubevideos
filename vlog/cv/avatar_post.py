@@ -14,11 +14,11 @@ def env(f, sr=8000):
 EA, EB = env(SRC), env(WAV)
 W = json.load(open(A + "avwin.json")); lags = []
 for w in W["win"]:
-    c0 = int(w["off"] * 100); c1 = int((w["off"] + w["me"] - w["ms"]) * 100); b = EB[c0:c1]
+    c0 = int(w["off"] * 100); c1 = min(int((w["off"] + w["me"] - w["ms"]) * 100), len(EB)); b = EB[c0:c1]
     if len(b) < 50: w["lag"] = 0.0; continue
     best, bl = -1e9, 0
     for L in range(-120, 121):
-        if c0 + L < 0 or c1 + L > len(EA): continue
+        if c0 + L < 0 or c1 + L > len(EA) or c1 - c0 != len(b): continue
         r = np.corrcoef(EA[c0 + L:c1 + L], b)[0, 1]
         if r > best: best, bl = r, L
     w["lag"] = bl / 100.0; w["corr"] = round(float(best), 3); lags.append(w["lag"])
