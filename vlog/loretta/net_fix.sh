@@ -10,7 +10,7 @@ T=D:/rtmp/lnet46/fix_$S; mkdir -p $T
 if [ ! -f public/avatar_clips/$S/reel30.mp4 ]; then
   log "bajo assets-$S.tar"
   gh release download assets-$S -R $RP -p "assets-$S.tar" -D $T --clobber
-  tar -xf $T/assets-$S.tar -C public; rm -f $T/assets-$S.tar
+  tar --force-local -xf $T/assets-$S.tar -C public; rm -f $T/assets-$S.tar
 fi
 [ -f public/$S.wav ] || gh release download assets-$S -R $RP -p "$S.wav" -D public --clobber
 [ -f out/${S}_mix.wav ] || gh release download assets-$S -R $RP -p "${S}_mix.wav" -D out --clobber
