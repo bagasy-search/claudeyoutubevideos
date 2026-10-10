@@ -379,6 +379,12 @@ def e_montaje():
         reh = J(D + "montaje/rehacer.json"); print(f"retomo el montaje: {len(reh)} planos ya marcados (no se vuelve a revisar)")
     else:
         reh = equipo.revisar_montaje()
+    # medido en cltoilet: el editor marcó 213 de 408 (rehacer media película = 1 h más). Se rehace como mucho el 25 %, primero lo grave.
+    tope = max(10, len(leer_planos()) // 4)
+    if len(reh) > tope:
+        grave = re.compile(r"camera|cámara|text|texto|letr|duplicate|duplicad|repet|same|mismo|different (house|place|room)|otra casa|otro lugar|broken|rot|deform", re.I)
+        orden = sorted(reh, key=lambda i: (not grave.search(reh[i].get("motivo", "")), i))
+        reh = {i: reh[i] for i in orden[:tope]}
     print(f"editor de montaje: {len(reh)} planos a rehacer")
     if reh:
         P = leer_planos(); b = J(D + "biblia.json")
@@ -391,6 +397,7 @@ def e_montaje():
         falt = equipo.fotos(P, rondas=3)
         if falt: sys.exit(f"⛔ montaje: faltan fotos {falt[:10]} → corré `fab.py montaje` de nuevo")
         hecho("imgs", True); hecho("clips", False)
+        os.environ["FAB_HEROE_MIN"] = os.environ.get("FAB_HEROE_MIN_MONTAJE", "20")   # en el montaje agnes espera 20 min, no 90 (ya hubo una vuelta)
         try: e_clips()
         except SystemExit: pass
         e_armar()
@@ -604,6 +611,10 @@ def e_editor():
             if os.path.exists(p) and o["c"].startswith("Fab"):   # los Cl* son del kit viejo, probados: el juez mira los Fab
                 lst.append({"name": f"ov{i:02d}{tag}", "c": o["c"], "props": {k: v for k, v in o["props"].items() if k != "bed"}})
     W(E + "lista.json", lst)
+    esper = 2 * sum(1 for o in OV if o["c"].startswith("Fab"))
+    if len(lst) < esper:   # ⛔ medido en cltoilet: disco lleno → 10 de 30 cuadros y el juez "aprobó" sin mirar el resto
+        shutil.rmtree(B, ignore_errors=True)
+        print(f"⛔ editor: sólo salieron {len(lst)} de {esper} cuadros (¿disco lleno?): NO se aprueba nada → corré `fab.py editor` de nuevo"); hecho("editor", False); sys.exit(2)
     r = sh(["node", "vlog/fab/editor_juez.mjs", f"vlog/{S}/editor/lista.json", f"vlog/{S}/editor"], check=False, capture_output=True)
     print(r.stdout[-3000:])
     try:
