@@ -1,0 +1,1312 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 2.83,
+  "id": "c01",
+  "d": 2.83,
+  "T": 3,
+  "text": "Vaqueros didn't have grills. They had this.",
+  "pad": 0.17
+ },
+ {
+  "sc": "S01",
+  "s": 2.83,
+  "e": 7.9,
+  "id": "c02",
+  "d": 5.07,
+  "T": 6,
+  "text": "This skillet. And a slow oven. And a little patience. Last time I showed you the potatoes,",
+  "pad": 0.93
+ },
+ {
+  "sc": "S01",
+  "s": 7.9,
+  "e": 12.26,
+  "id": "c03",
+  "d": 4.36,
+  "T": 5,
+  "text": "raw into the iron, with the water and the lid. Today, what goes next to them.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S01",
+  "s": 12.26,
+  "e": 18.26,
+  "id": "c04",
+  "d": 6.0,
+  "T": 7,
+  "text": "A steak. Here's what happens to most steaks at home. You get the grill or the pan as hot as it goes,",
+  "pad": 1.0
+ },
+ {
+  "sc": "S01",
+  "s": 18.26,
+  "e": 22.51,
+  "id": "c05",
+  "d": 4.25,
+  "T": 5,
+  "text": "you throw the steak on, and you cook it until it looks right. And when you cut it,",
+  "pad": 0.75
+ },
+ {
+  "sc": "S01",
+  "s": 22.51,
+  "e": 26.96,
+  "id": "c06",
+  "d": 4.45,
+  "T": 5,
+  "text": "there's a thick gray band all around the outside, a quarter inch, half an inch,",
+  "pad": 0.55
+ },
+ {
+  "sc": "S01",
+  "s": 26.96,
+  "e": 30.987,
+  "id": "c07",
+  "d": 4.027,
+  "T": 5,
+  "text": "and a little bit of pink in the very middle. That gray band is overcooked meat.",
+  "pad": 0.97
+ },
+ {
+  "sc": "S01",
+  "s": 30.987,
+  "e": 35.167,
+  "id": "c08",
+  "d": 4.18,
+  "T": 5,
+  "text": "You paid fifteen dollars a pound for that steak, and half of it is overcooked.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S01",
+  "s": 35.167,
+  "e": 40.107,
+  "id": "c09",
+  "d": 4.94,
+  "T": 6,
+  "text": "I'm going to show you how to cook a steak so it's the same pink from one edge to the other, with a dark,",
+  "pad": 1.06
+ },
+ {
+  "sc": "S01",
+  "s": 40.107,
+  "e": 45.407,
+  "id": "c10",
+  "d": 5.3,
+  "T": 6,
+  "text": "crackling crust on the outside, like the ones in the steakhouses in town. And you don't need a grill to do it.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S01",
+  "s": 45.407,
+  "e": 51.307,
+  "id": "c11",
+  "d": 5.9,
+  "T": 7,
+  "text": "You need what we had on the ranch. This skillet. I'm Claudio. I cooked for a cattle crew for forty years.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S01",
+  "s": 51.307,
+  "e": 57.247,
+  "id": "c12",
+  "d": 5.94,
+  "T": 7,
+  "text": "And on a cattle ranch, the steak had better be right. These men raised the animal. They'll tell you if you ruined it.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S02",
+  "s": 57.247,
+  "e": 68.069,
+  "id": "c13",
+  "d": 10.822,
+  "T": 11,
+  "text": "Let's talk about why you get that gray band. A steak cooks from the outside in. When you put a cold steak in a screaming hot pan, the outside heats up fast, and the heat moves inward slowly,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S02",
+  "s": 68.069,
+  "e": 77.869,
+  "id": "c14",
+  "d": 9.8,
+  "T": 10,
+  "text": "a little at a time. By the time the very middle reaches medium-rare, the outside layers have been sitting at a much higher temperature for minutes. They're well-done. That's the gray band.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S02",
+  "s": 77.869,
+  "e": 83.649,
+  "id": "c15",
+  "d": 5.78,
+  "T": 6,
+  "text": "The thicker the steak, the worse it gets, because the heat has further to travel. So here's what we do instead.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S02",
+  "s": 83.649,
+  "e": 93.997,
+  "id": "c16",
+  "d": 10.348,
+  "T": 11,
+  "text": "We turn it around. We cook the steak low and slow first, in a two-hundred-and-fifty-degree oven, so the heat creeps in gently and the whole steak, edge to edge, comes up to the same temperature.",
+  "pad": 0.65
+ },
+ {
+  "sc": "S02",
+  "s": 93.997,
+  "e": 103.957,
+  "id": "c17",
+  "d": 9.96,
+  "T": 11,
+  "text": "And then, at the very end, we sear it in a smoking hot skillet for ninety seconds a side, just long enough to build a crust. The cooks in fancy restaurants call it a reverse sear.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S02",
+  "s": 103.957,
+  "e": 111.017,
+  "id": "c18",
+  "d": 7.06,
+  "T": 8,
+  "text": "Don Ernesto called it \"slow, then fast.\" He was doing it with a wood stove and a cast iron pan before any of those restaurants opened.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S03",
+  "s": 111.017,
+  "e": 121.24,
+  "id": "c19",
+  "d": 10.223,
+  "T": 11,
+  "text": "On the ranch, steak wasn't an everyday thing, even though we raised beef. Most of the beef went to market. But when we butchered one for the ranch, the boss would set aside a few ribeyes for the crew.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S03",
+  "s": 121.24,
+  "e": 127.42,
+  "id": "c20",
+  "d": 6.18,
+  "T": 7,
+  "text": "And that night, the kitchen was full of men who suddenly had nothing better to do than stand around and watch me cook.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S04",
+  "s": 127.42,
+  "e": 138.06,
+  "id": "c21",
+  "d": 10.64,
+  "T": 11,
+  "text": "Step one is the steak itself. You want a ribeye, an inch and a half thick. That's about a pound and a half, and it'll feed two, or three with beans and potatoes. The thickness is important.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S04",
+  "s": 138.06,
+  "e": 147.768,
+  "id": "c22",
+  "d": 9.708,
+  "T": 10,
+  "text": "This works best on a thick steak. A thin steak, three quarters of an inch, cooks through in the pan before you can build a crust. Just sear those hot and fast. Look at the marbling.",
+  "pad": 0.29
+ },
+ {
+  "sc": "S04",
+  "s": 147.768,
+  "e": 157.168,
+  "id": "c23",
+  "d": 9.4,
+  "T": 10,
+  "text": "Those little white streaks of fat through the red meat. More marbling means more flavor and a juicier steak. The fat melts as it cooks and keeps the meat moist.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S04",
+  "s": 157.168,
+  "e": 161.698,
+  "id": "c24",
+  "d": 4.53,
+  "T": 5,
+  "text": "A ribeye is the steak with the most marbling, that's why the ranch hands always wanted it.",
+  "pad": 0.47
+ },
+ {
+  "sc": "S05",
+  "s": 161.698,
+  "e": 168.698,
+  "id": "c25",
+  "d": 7.0,
+  "T": 8,
+  "text": "Step two. Salt it early. One and a half teaspoons of kosher salt, both sides, at least one hour before you cook it.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S06",
+  "s": 168.698,
+  "e": 179.368,
+  "id": "c26",
+  "d": 10.67,
+  "T": 11,
+  "text": "Better yet, the night before. Salt it, set it on a rack over a plate, and put it in the fridge uncovered overnight. Here's why. When you first salt a steak, the salt pulls juice out to the surface.",
+  "pad": 0.33
+ },
+ {
+  "sc": "S06",
+  "s": 179.368,
+  "e": 189.822,
+  "id": "c27",
+  "d": 10.454,
+  "T": 11,
+  "text": "You'll see it get wet. If you cook it right then, it's wet, and wet meat won't brown. But if you wait, after about forty minutes that juice dissolves the salt and gets drawn back into the meat.",
+  "pad": 0.55
+ },
+ {
+  "sc": "S06",
+  "s": 189.822,
+  "e": 201.022,
+  "id": "c28",
+  "d": 11.2,
+  "T": 12,
+  "text": "The steak is seasoned deep inside, not just on the surface. And if you leave it uncovered in the fridge overnight, the outside dries out. Dry like paper. And a dry surface browns in ninety seconds.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S06",
+  "s": 201.022,
+  "e": 205.782,
+  "id": "c29",
+  "d": 4.76,
+  "T": 5,
+  "text": "That's the secret to a steakhouse crust. It's not the fire. It's a dry steak.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S07",
+  "s": 205.782,
+  "e": 215.939,
+  "id": "c30",
+  "d": 10.157,
+  "T": 11,
+  "text": "Step three. Heat the oven to two hundred and fifty degrees. Set the steak on a wire rack over a sheet pan. The rack lets the hot air get all the way around it, so the bottom doesn't steam.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S07",
+  "s": 215.939,
+  "e": 222.879,
+  "id": "c31",
+  "d": 6.94,
+  "T": 8,
+  "text": "If you don't have a rack, set it right on the sheet pan and turn it over halfway through. Coarse black pepper on both sides. A teaspoon.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S08",
+  "s": 222.879,
+  "e": 225.399,
+  "id": "c32",
+  "d": 2.52,
+  "T": 3,
+  "text": "Into the oven. And now we wait.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S09",
+  "s": 225.399,
+  "e": 237.059,
+  "id": "c33",
+  "d": 11.66,
+  "T": 12,
+  "text": "This is where you need the thermometer. There's no way to guess this. Thirty-five to forty-five minutes, but it depends on your oven and your steak. You're looking for one hundred and fifteen degrees in the middle, for medium-rare.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S09",
+  "s": 237.059,
+  "e": 241.016,
+  "id": "c34",
+  "d": 3.957,
+  "T": 5,
+  "text": "Put the thermometer in from the side, into the very center of the thickest part.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S10",
+  "s": 241.016,
+  "e": 252.276,
+  "id": "c35",
+  "d": 11.26,
+  "T": 12,
+  "text": "Now, I've got to be honest with you about the temperature, because I promised I'd always tell you the truth. The USDA says whole cuts of beef should be cooked to one hundred and forty-five degrees, with a three-minute rest.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S10",
+  "s": 252.276,
+  "e": 262.256,
+  "id": "c36",
+  "d": 9.98,
+  "T": 11,
+  "text": "That's medium. That's the safe number. On the ranch, we ate our steaks pinker than that. Medium-rare. Most steakhouses serve them that way. But I'm a cook, not a doctor,",
+  "pad": 1.02
+ },
+ {
+  "sc": "S10",
+  "s": 262.256,
+  "e": 273.113,
+  "id": "c37",
+  "d": 10.857,
+  "T": 12,
+  "text": "and one-forty-five is the number the USDA gives. Your steak, your call. If you want medium, pull it from the oven at one-thirty and sear it the same way. It'll land around one-forty-five.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S10",
+  "s": 273.113,
+  "e": 278.333,
+  "id": "c38",
+  "d": 5.22,
+  "T": 6,
+  "text": "If you're cooking for someone who's pregnant, or very old, or sick, go to one-forty-five.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S11",
+  "s": 278.333,
+  "e": 289.333,
+  "id": "c39",
+  "d": 11.0,
+  "T": 12,
+  "text": "While the oven works, let me tell you about the first steak I ever cooked for the crew. I was twenty-three. Don Ernesto was sick that week and stayed in bed. The boss brought in eight ribeyes for the crew,",
+  "pad": 1.0
+ },
+ {
+  "sc": "S11",
+  "s": 289.333,
+  "e": 299.593,
+  "id": "c40",
+  "d": 10.26,
+  "T": 11,
+  "text": "and I was terrified. I put them all in the hottest pan I had, at once. They wouldn't fit. They steamed. They came out gray, all the way through, swimming in juice, like boiled meat.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S11",
+  "s": 299.593,
+  "e": 309.582,
+  "id": "c41",
+  "d": 9.989,
+  "T": 11,
+  "text": "And these were men who raised the cattle. One of them, an old cowboy named Fidel, cut into his, chewed it for about a minute, and said, \"This cow died twice.\" Everybody laughed.",
+  "pad": 1.01
+ },
+ {
+  "sc": "S11",
+  "s": 309.582,
+  "e": 319.062,
+  "id": "c42",
+  "d": 9.48,
+  "T": 10,
+  "text": "I wanted to go out and live in the barn. The next week, Don Ernesto was back, and he showed me this. Slow, then fast. I've never served a gray steak since.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S12",
+  "s": 319.062,
+  "e": 321.082,
+  "id": "c43",
+  "d": 2.02,
+  "T": 3,
+  "text": "One-fifteen. Out of the oven.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S13",
+  "s": 321.082,
+  "e": 330.922,
+  "id": "c44",
+  "d": 9.84,
+  "T": 10,
+  "text": "Step four. While the steak sits on the counter for a minute, get the skillet hot. High heat. Really hot. Five minutes. You want it just starting to smoke. Open a window.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S13",
+  "s": 330.922,
+  "e": 337.524,
+  "id": "c45",
+  "d": 6.602,
+  "T": 7,
+  "text": "Turn on the fan. Take the battery out of the smoke alarm if you have to, and put it back after. I'm serious about putting it back.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S14",
+  "s": 337.524,
+  "e": 348.784,
+  "id": "c46",
+  "d": 11.26,
+  "T": 12,
+  "text": "One tablespoon of lard, or a high-heat oil like canola or avocado. Not olive oil, not butter, not yet. They burn at that heat. It'll shimmer and smoke right away.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S15",
+  "s": 348.784,
+  "e": 353.664,
+  "id": "c47",
+  "d": 4.88,
+  "T": 6,
+  "text": "Step five. Steak in. Listen to that. Ninety seconds. Don't move it.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S16",
+  "s": 353.664,
+  "e": 362.164,
+  "id": "c48",
+  "d": 8.5,
+  "T": 9,
+  "text": "Turn it. Look at that crust. Dark brown, almost black at the edges. That's what a dry steak does. Ninety seconds on the other side.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S17",
+  "s": 362.164,
+  "e": 372.61,
+  "id": "c49",
+  "d": 10.446,
+  "T": 11,
+  "text": "Then pick it up with tongs and hold it on its side, fat edge down, against the pan. Thirty seconds. That strip of fat on the edge of a ribeye gets crisp and golden and renders out.",
+  "pad": 0.55
+ },
+ {
+  "sc": "S17",
+  "s": 372.61,
+  "e": 377.97,
+  "id": "c50",
+  "d": 5.36,
+  "T": 6,
+  "text": "That's the best bite on the whole steak. Most people never cook it, and it stays white and chewy.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S18",
+  "s": 377.97,
+  "e": 387.23,
+  "id": "c51",
+  "d": 9.26,
+  "T": 10,
+  "text": "Step six. Turn the heat down to medium. Two tablespoons of butter. Three cloves of garlic, smashed. A sprig of rosemary, or thyme, or whatever you've got.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S19",
+  "s": 387.23,
+  "e": 398.35,
+  "id": "c52",
+  "d": 11.12,
+  "T": 12,
+  "text": "The butter will foam up. Tilt the pan toward you so the butter pools at the edge. Now take a big spoon and scoop that foaming garlic butter over the top of the steak, again and again. Thirty seconds.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S19",
+  "s": 398.35,
+  "e": 404.49,
+  "id": "c53",
+  "d": 6.14,
+  "T": 7,
+  "text": "That's basting. The butter browns and picks up the garlic and the herb, and you're spooning it right onto the crust.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S20",
+  "s": 404.49,
+  "e": 414.947,
+  "id": "c54",
+  "d": 10.457,
+  "T": 11,
+  "text": "Step seven. Off the heat. Onto a cutting board. Rest it five minutes. Between the sear and the rest, the temperature comes up about fifteen degrees. That's why we pulled it at one-fifteen.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S20",
+  "s": 414.947,
+  "e": 422.967,
+  "id": "c55",
+  "d": 8.02,
+  "T": 9,
+  "text": "It'll land right around one-thirty, medium-rare. And the juices settle back into the meat, so they stay in the steak instead of running all over the board.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S21",
+  "s": 422.967,
+  "e": 432.767,
+  "id": "c56",
+  "d": 9.8,
+  "T": 10,
+  "text": "Now cut it. Across the grain. See those lines running through the meat, like the grain in wood? Cut across them, not along them. That makes every bite short and tender.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S21",
+  "s": 432.767,
+  "e": 437.067,
+  "id": "c57",
+  "d": 4.3,
+  "T": 5,
+  "text": "Cut along the grain, and you get long strings, and you'll be chewing it all night.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S22",
+  "s": 437.067,
+  "e": 444.839,
+  "id": "c58",
+  "d": 7.772,
+  "T": 8,
+  "text": "Look at that. Pink, from edge to edge. No gray band. A dark, crackling crust. And the garlic butter running down the sides.",
+  "pad": 0.23
+ },
+ {
+  "sc": "S23",
+  "s": 444.839,
+  "e": 455.519,
+  "id": "c59",
+  "d": 10.68,
+  "T": 11,
+  "text": "Now, don't wash that pan yet. There's one more thing, and this one is pure ranch. While the steak rests, pour off most of the fat, leaving the garlic and the brown bits. Put it back on medium.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S23",
+  "s": 455.519,
+  "e": 461.179,
+  "id": "c60",
+  "d": 5.66,
+  "T": 6,
+  "text": "Pour in a quarter cup of strong black coffee, left over from the morning, and a quarter cup of beef or chicken broth.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S23",
+  "s": 461.179,
+  "e": 472.494,
+  "id": "c61",
+  "d": 11.315,
+  "T": 12,
+  "text": "It'll hiss and steam. Scrape the bottom with your spoon until all those brown bits come loose. Let it boil two minutes until it's cut in half. Off the heat, one more tablespoon of butter, swirl the pan until it melts.",
+  "pad": 0.69
+ },
+ {
+  "sc": "S23",
+  "s": 472.494,
+  "e": 482.554,
+  "id": "c62",
+  "d": 10.06,
+  "T": 11,
+  "text": "Salt to taste. That's a coffee pan sauce. It sounds strange. It tastes like the best steak sauce you've ever had, dark and a little bitter and rich. The coffee pot was always on the stove,",
+  "pad": 0.94
+ },
+ {
+  "sc": "S23",
+  "s": 482.554,
+  "e": 486.594,
+  "id": "c63",
+  "d": 4.04,
+  "T": 5,
+  "text": "so that's what Don Ernesto used. Spoon it over the sliced steak.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S24",
+  "s": 486.594,
+  "e": 488.294,
+  "id": "c64",
+  "d": 1.7,
+  "T": 2,
+  "text": "Rusty. Come here.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S25",
+  "s": 488.294,
+  "e": 493.754,
+  "id": "c65",
+  "d": 5.46,
+  "T": 6,
+  "text": "Rusty doesn't usually say much. He closed his eyes. That's about as close to poetry as he gets.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S26",
+  "s": 493.754,
+  "e": 500.347,
+  "id": "c66",
+  "d": 6.593,
+  "T": 7,
+  "text": "I put every one of these recipes in a book, the way we really made them. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.41
+ },
+ {
+  "sc": "S27",
+  "s": 500.347,
+  "e": 510.527,
+  "id": "c67",
+  "d": 10.18,
+  "T": 11,
+  "text": "Gray band under the crust. You seared first and finished it too long. Reverse it. Low first, sear last. No crust. The pan wasn't hot enough, or the steak was wet.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S27",
+  "s": 510.527,
+  "e": 520.287,
+  "id": "c68",
+  "d": 9.76,
+  "T": 10,
+  "text": "Five minutes on high, until it smokes. And dry the steak with a paper towel right before it goes in, even if you salted it the night before. The steak is overcooked. No thermometer.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S27",
+  "s": 520.287,
+  "e": 530.607,
+  "id": "c69",
+  "d": 10.32,
+  "T": 11,
+  "text": "You can't guess this one. A thermometer costs twelve dollars, and a ribeye costs twenty-two. Pull it at one-fifteen. It rises during the sear and the rest. The butter burned black.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S27",
+  "s": 530.607,
+  "e": 540.718,
+  "id": "c70",
+  "d": 10.111,
+  "T": 11,
+  "text": "The pan was still on high when you added it. Turn it down to medium first, wait ten seconds, then the butter. The kitchen filled with smoke. That's normal. That's how you know the pan was hot enough.",
+  "pad": 0.89
+ },
+ {
+  "sc": "S27",
+  "s": 540.718,
+  "e": 549.458,
+  "id": "c71",
+  "d": 8.74,
+  "T": 9,
+  "text": "Open the windows before you start, not after. It's tough. Either you cut it along the grain, or it was a tough cut to begin with. Across the grain, always.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S28",
+  "s": 549.458,
+  "e": 558.938,
+  "id": "c72",
+  "d": 9.48,
+  "T": 10,
+  "text": "Let me give you the numbers, so you can write them down. Pull it from the oven at these, and after the sear and the rest it lands about fifteen degrees higher. For rare, pull at one-oh-five. For medium-rare, one-fifteen.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S28",
+  "s": 558.938,
+  "e": 569.865,
+  "id": "c73",
+  "d": 10.927,
+  "T": 12,
+  "text": "For medium, one-thirty. For medium-well, one-forty. Tape that inside a cabinet door. I had it written on the wall by the stove in pencil for twenty years.",
+  "pad": 1.07
+ },
+ {
+  "sc": "S29",
+  "s": 569.865,
+  "e": 581.485,
+  "id": "c74",
+  "d": 11.62,
+  "T": 12,
+  "text": "And since I've got you here with a cast iron skillet, let me tell you how to take care of it, because a lot of people are scared of them. When you're done, while the pan is still warm, rinse it with hot water and scrub it with a stiff brush.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S29",
+  "s": 581.485,
+  "e": 592.117,
+  "id": "c75",
+  "d": 10.632,
+  "T": 11,
+  "text": "A little soap won't hurt it, whatever anybody tells you. Just don't let it soak in the sink, and never put it in the dishwasher. Then put it back on the burner for a minute or two until every drop of water is gone.",
+  "pad": 0.37
+ },
+ {
+  "sc": "S29",
+  "s": 592.117,
+  "e": 597.837,
+  "id": "c76",
+  "d": 5.72,
+  "T": 6,
+  "text": "Rub half a teaspoon of oil all over the inside with a paper towel, until it looks dry, not greasy.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S29",
+  "s": 597.837,
+  "e": 606.417,
+  "id": "c77",
+  "d": 8.58,
+  "T": 9,
+  "text": "That's it. Do that every time, and it'll be black and slick and nothing will stick to it, and your grandkids will be cooking in it. That's how this one got older than my truck.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S30",
+  "s": 606.417,
+  "e": 616.217,
+  "id": "c78",
+  "d": 9.8,
+  "T": 10,
+  "text": "Cheaper steaks. You don't have to buy a ribeye. Sirloin works the same way. A little leaner, so it's a little less juicy, but it's half the price. And here's the one I tell everybody about.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S30",
+  "s": 616.217,
+  "e": 627.736,
+  "id": "c79",
+  "d": 11.519,
+  "T": 12,
+  "text": "The chuck-eye steak. It comes from right next to the ribeye, at the end where the chuck starts. Some people call it the poor man's ribeye. It's got good marbling and great flavor, and it's about half the price of a ribeye.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S30",
+  "s": 627.736,
+  "e": 639.356,
+  "id": "c80",
+  "d": 11.62,
+  "T": 12,
+  "text": "Not every store has them, because there's only two per animal. Ask the butcher. Same method, same temperatures. If it's only an inch to an inch and a half thick, start checking the temperature at twenty-five minutes.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S31",
+  "s": 639.356,
+  "e": 649.836,
+  "id": "c81",
+  "d": 10.48,
+  "T": 11,
+  "text": "At the store, ask the butcher for a ribeye cut an inch and a half thick. Most of the steaks in the case are cut to an inch or less, so they'll look like a better deal, but you'll have a harder time cooking them right.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S31",
+  "s": 649.836,
+  "e": 657.647,
+  "id": "c82",
+  "d": 7.811,
+  "T": 8,
+  "text": "A thick steak is easier. Look for bright red meat, white fat, good marbling. A ribeye runs about fifteen dollars a pound right now.",
+  "pad": 0.19
+ },
+ {
+  "sc": "S31",
+  "s": 657.647,
+  "e": 661.987,
+  "id": "c83",
+  "d": 4.34,
+  "T": 5,
+  "text": "That's not cheap. But compare it to what a steakhouse charges, and it's a bargain.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S32",
+  "s": 661.987,
+  "e": 671.787,
+  "id": "c84",
+  "d": 9.8,
+  "T": 10,
+  "text": "Leftovers. Three days in the fridge. Don't reheat a steak. It'll go gray. Slice it cold and thin. And here's what we did. Steak and eggs. Fry two eggs.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S32",
+  "s": 671.787,
+  "e": 683.137,
+  "id": "c85",
+  "d": 11.35,
+  "T": 12,
+  "text": "Warm a tortilla. Put the cold steak slices in the hot skillet for only thirty seconds, just to take the chill off. Steak on the tortilla, eggs on top, salsa. That's breakfast for a man going out to ride all day.",
+  "pad": 0.65
+ },
+ {
+  "sc": "S32",
+  "s": 683.137,
+  "e": 687.137,
+  "id": "c86",
+  "d": 4.0,
+  "T": 5,
+  "text": "We called it the Sunday breakfast, because Saturday night was steak night.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S33",
+  "s": 687.137,
+  "e": 698.177,
+  "id": "c87",
+  "d": 11.04,
+  "T": 12,
+  "text": "Or slice it thin and put it on a plate of lettuce with sliced onion, tomato, and a little vinegar and oil. A steak salad. My wife liked that one. She said it was the only salad that ever filled me up.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S34",
+  "s": 698.177,
+  "e": 707.597,
+  "id": "c88",
+  "d": 9.42,
+  "T": 10,
+  "text": "What it costs. A pound-and-a-half ribeye, about twenty-two dollars fifty. Butter, garlic, rosemary, lard, salt, pepper, about a dollar fifty.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S34",
+  "s": 707.597,
+  "e": 718.809,
+  "id": "c89",
+  "d": 11.212,
+  "T": 12,
+  "text": "That's twenty-four dollars for a steak that feeds two people, or three with beans and potatoes on the plate. With three people, eight dollars a plate. A steak like this at a steakhouse in town is forty-five dollars,",
+  "pad": 0.79
+ },
+ {
+  "sc": "S34",
+  "s": 718.809,
+  "e": 724.149,
+  "id": "c90",
+  "d": 5.34,
+  "T": 6,
+  "text": "and they cook it exactly this way. Make it with a chuck-eye instead, and it's about five dollars a plate.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S35",
+  "s": 724.149,
+  "e": 735.209,
+  "id": "c91",
+  "d": 11.06,
+  "T": 12,
+  "text": "For a crowd. Put several steaks on racks over sheet pans in the oven, all at once. Check each one with the thermometer, because they won't all finish at the same time. As each one hits one-fifteen,",
+  "pad": 0.94
+ },
+ {
+  "sc": "S35",
+  "s": 735.209,
+  "e": 745.509,
+  "id": "c92",
+  "d": 10.3,
+  "T": 11,
+  "text": "take it out. Then sear them two at a time. Don't crowd the pan, or it cools down and they steam. Keep the seared ones on a plate under a loose piece of foil. Baste each batch with fresh butter.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S36",
+  "s": 745.509,
+  "e": 752.409,
+  "id": "c93",
+  "d": 6.9,
+  "T": 8,
+  "text": "And outside. No oven out there. Here's how we did it on the trail. Build a fire, and let it burn down to coals.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S36",
+  "s": 752.409,
+  "e": 757.389,
+  "id": "c94",
+  "d": 4.98,
+  "T": 6,
+  "text": "Rake a pile of coals to one side for a hot zone, and leave the other side with just a few.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S36",
+  "s": 757.389,
+  "e": 764.449,
+  "id": "c95",
+  "d": 7.06,
+  "T": 8,
+  "text": "Steak on a grate over the low side, lid of a Dutch oven turned upside down over it to hold in the heat, and check it with the thermometer.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S36",
+  "s": 764.449,
+  "e": 770.969,
+  "id": "c96",
+  "d": 6.52,
+  "T": 7,
+  "text": "Then put the skillet right on the hot coals until it's smoking, and sear it. Same thing. Slow, then fast.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S37",
+  "s": 770.969,
+  "e": 781.571,
+  "id": "c97",
+  "d": 10.602,
+  "T": 11,
+  "text": "A couple of questions. Can I do this on a grill? Sure. Put the steak on the side with no fire, lid closed, until it hits one-fifteen. Then move it over the hottest coals for a minute a side.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S37",
+  "s": 781.571,
+  "e": 792.011,
+  "id": "c98",
+  "d": 10.44,
+  "T": 11,
+  "text": "But I'll be honest, I think the cast iron makes a better crust, because the whole surface of the steak touches the hot iron. On a grill, only the lines touch. What about a frozen steak?",
+  "pad": 0.56
+ },
+ {
+  "sc": "S37",
+  "s": 792.011,
+  "e": 803.151,
+  "id": "c99",
+  "d": 11.14,
+  "T": 12,
+  "text": "You can actually do this from frozen. Skip the salt-ahead. Put it on the rack in the oven frozen, it'll take about twice as long, and salt it right before it goes in the pan. It works surprisingly well.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S37",
+  "s": 803.151,
+  "e": 813.888,
+  "id": "c100",
+  "d": 10.737,
+  "T": 11,
+  "text": "What if I like it medium-well? Pull it at one-forty and sear it the same way. It'll land around one-fifty-five. It won't be as juicy, but it'll be even all the way through, with no gray band.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S38",
+  "s": 813.888,
+  "e": 823.748,
+  "id": "c101",
+  "d": 9.86,
+  "T": 11,
+  "text": "Now, what if your steak is thin? Less than an inch thick. Skip the oven. A thin steak doesn't need it. The middle cooks through in the time it takes to sear the outside.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S38",
+  "s": 823.748,
+  "e": 834.988,
+  "id": "c102",
+  "d": 11.24,
+  "T": 12,
+  "text": "Still salt it ahead, still dry it, and then straight into the smoking skillet. Two minutes a side, then the butter. And take its temperature at the end, because a thin steak goes from pink to gray in about thirty seconds.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S39",
+  "s": 834.988,
+  "e": 844.86,
+  "id": "c103",
+  "d": 9.872,
+  "T": 11,
+  "text": "And a frozen steak? Thaw it in the fridge, overnight, on a plate. A thick one might take a day. Don't thaw it on the counter, and don't put it in hot water. If you forgot, and it's still frozen,",
+  "pad": 1.13
+ },
+ {
+  "sc": "S39",
+  "s": 844.86,
+  "e": 853.5,
+  "id": "c104",
+  "d": 8.64,
+  "T": 9,
+  "text": "you can actually cook it straight from frozen with this oven method. Just give it more time in the oven, maybe half again as long, and trust the thermometer, not the clock.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S40",
+  "s": 853.5,
+  "e": 864.68,
+  "id": "c105",
+  "d": 11.18,
+  "T": 12,
+  "text": "People ask me about grass-fed beef. Here's what I know from the ranch. Grass-fed beef is leaner. Less fat in the marbling, and the fat it has is a little yellow. It tastes more like beef, a little wild.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S40",
+  "s": 864.68,
+  "e": 876.243,
+  "id": "c106",
+  "d": 11.563,
+  "T": 12,
+  "text": "Corn-finished beef, what most stores sell, has more marbling and tastes richer and milder. Both are good. But grass-fed cooks faster, because there's less fat to protect it. So if you use grass-fed with this method,",
+  "pad": 0.44
+ },
+ {
+  "sc": "S40",
+  "s": 876.243,
+  "e": 882.403,
+  "id": "c107",
+  "d": 6.16,
+  "T": 7,
+  "text": "start checking the thermometer ten minutes earlier, and pull it a few degrees sooner. It goes from right to overdone quicker.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S41",
+  "s": 882.403,
+  "e": 892.323,
+  "id": "c108",
+  "d": 9.92,
+  "T": 11,
+  "text": "And the old advice to let a steak sit on the counter for an hour before you cook it, so it comes up to room temperature. Don't bother. An hour on the counter barely warms the middle of a thick steak,",
+  "pad": 1.08
+ },
+ {
+  "sc": "S41",
+  "s": 892.323,
+  "e": 896.468,
+  "id": "c109",
+  "d": 4.145,
+  "T": 5,
+  "text": "and raw meat shouldn't sit out that long anyway. That's the whole point of the slow oven.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S41",
+  "s": 896.468,
+  "e": 904.468,
+  "id": "c110",
+  "d": 8.0,
+  "T": 9,
+  "text": "The oven warms it gently, all the way through, better than any counter could. Take it out of the fridge, straight onto the rack, straight into the oven.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S42",
+  "s": 904.468,
+  "e": 915.268,
+  "id": "c111",
+  "d": 10.8,
+  "T": 11,
+  "text": "I'll tell you about another steak I ruined. That same first year, the boss came in with four beautiful steaks. Thick ones. His daughter was home from college, and he wanted me to cook them for the family.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S42",
+  "s": 915.268,
+  "e": 925.183,
+  "id": "c112",
+  "d": 9.915,
+  "T": 11,
+  "text": "I'd never cooked a steak that good in my life. I was so scared of it being raw that I cooked them until they were gray all the way through. Gray and dry. The boss ate his and didn't say a word.",
+  "pad": 1.09
+ },
+ {
+  "sc": "S42",
+  "s": 925.183,
+  "e": 936.723,
+  "id": "c113",
+  "d": 11.54,
+  "T": 12,
+  "text": "Then he came into the kitchen, put his hand on my shoulder, and said, \"Claudio, next time, you cook it like it cost me money.\" I never forgot that. It took me years to learn how to do it right. This is what I learned.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S43",
+  "s": 936.723,
+  "e": 946.423,
+  "id": "c114",
+  "d": 9.7,
+  "T": 10,
+  "text": "You may have seen people test a steak by poking it and comparing it to the palm of their hand. Touch your thumb to your finger, and feel the muscle. Some old cooks are very good at that. I'm not,",
+  "pad": 0.3
+ },
+ {
+  "sc": "S43",
+  "s": 946.423,
+  "e": 951.123,
+  "id": "c115",
+  "d": 4.7,
+  "T": 5,
+  "text": "and after forty years I'll tell you, nobody's good at it on a steak they've never cooked before.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S43",
+  "s": 951.123,
+  "e": 959.883,
+  "id": "c116",
+  "d": 8.76,
+  "T": 9,
+  "text": "Every steak is different. Different thickness, different fat. A thermometer costs less than one good steak. Buy one, and you'll never ruin a steak again.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S44",
+  "s": 959.883,
+  "e": 970.643,
+  "id": "c117",
+  "d": 10.76,
+  "T": 11,
+  "text": "How many steaks in one pan? A twelve-inch skillet holds two steaks this size, with space between them. Don't crowd the pan. If the steaks touch, they steam, and you lose the crust.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S44",
+  "s": 970.643,
+  "e": 981.743,
+  "id": "c118",
+  "d": 11.1,
+  "T": 12,
+  "text": "If you're cooking for four, use two pans, or sear them two at a time. The ones that are done can sit on the board, resting, while you do the others. The slow oven means they all finish at the same time anyway.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S45",
+  "s": 981.743,
+  "e": 989.502,
+  "id": "c119",
+  "d": 7.759,
+  "T": 8,
+  "text": "And leftovers, if you have any. Slice it cold, it's good on bread the next day. If you want it warm, don't put it in the microwave on high.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S45",
+  "s": 989.502,
+  "e": 997.722,
+  "id": "c120",
+  "d": 8.22,
+  "T": 9,
+  "text": "It'll go gray and tough. Put the slices in a skillet over low heat with a spoonful of water or broth, put the lid on, and warm them for a minute or two.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S45",
+  "s": 997.722,
+  "e": 1002.062,
+  "id": "c121",
+  "d": 4.34,
+  "T": 5,
+  "text": "They come back pink and tender. Steak keeps three or four days in the fridge.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S46",
+  "s": 1002.062,
+  "e": 1012.982,
+  "id": "c122",
+  "d": 10.92,
+  "T": 12,
+  "text": "And one last thing that matters. Use tongs to turn the steak, not a fork. Every time you stick a fork in a steak, you make a hole, and the juice runs out. Tongs grab it without breaking it.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S46",
+  "s": 1012.982,
+  "e": 1022.671,
+  "id": "c123",
+  "d": 9.689,
+  "T": 10,
+  "text": "Same with the thermometer. Put it in once, from the side, and leave it, instead of poking it ten times. Every hole is a little juice in the pan instead of in your mouth.",
+  "pad": 0.31
+ },
+ {
+  "sc": "S47",
+  "s": 1022.671,
+  "e": 1031.461,
+  "id": "c124",
+  "d": 8.79,
+  "T": 9,
+  "text": "Now, about the book. This crew book has every steak night we ever had out here, and some of the mistakes too. A few years ago I put all of it, every recipe,",
+  "pad": 0.21
+ },
+ {
+  "sc": "S47",
+  "s": 1031.461,
+  "e": 1035.631,
+  "id": "c125",
+  "d": 4.17,
+  "T": 5,
+  "text": "the way we really made them, into a real book. The Vaquero's Cookbook.",
+  "pad": 0.83
+ },
+ {
+  "sc": "S48",
+  "s": 1035.631,
+  "e": 1046.951,
+  "id": "c126",
+  "d": 11.32,
+  "T": 12,
+  "text": "This ribeye is on page thirty. The salt ahead, the slow oven, the temperatures, the sear, and how to do it for one or for twelve. And the pork chops, the beans, the ribs, the potatoes from before,",
+  "pad": 0.68
+ },
+ {
+  "sc": "S48",
+  "s": 1046.951,
+  "e": 1054.664,
+  "id": "c127",
+  "d": 7.713,
+  "T": 8,
+  "text": "and the cabbage, the chicken, the eggs. It's twenty-seven dollars. Every recipe from the ranch for less than one family dinner out.",
+  "pad": 0.29
+ },
+ {
+  "sc": "S48",
+  "s": 1054.664,
+  "e": 1060.584,
+  "id": "c128",
+  "d": 5.92,
+  "T": 7,
+  "text": "Less than one of those forty-five-dollar steaks. The link is right below this video. Or point your phone at this code.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S49",
+  "s": 1060.584,
+  "e": 1070.904,
+  "id": "c129",
+  "d": 10.32,
+  "T": 11,
+  "text": "That's it. Salt it early. Slow oven first, to one-fifteen. Smoking pan last, ninety seconds a side. Baste with butter, rest five minutes, cut across the grain.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S49",
+  "s": 1070.904,
+  "e": 1075.284,
+  "id": "c130",
+  "d": 4.38,
+  "T": 5,
+  "text": "Next time, something cheap. Cabbage. Boiled cabbage smells like a hospital.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S49",
+  "s": 1075.284,
+  "e": 1083.826,
+  "id": "c131",
+  "d": 8.542,
+  "T": 9,
+  "text": "I'll show you how we did it on the ranch, in bacon fat, with a little chile, and a splash at the end that makes it the first bowl empty on the table. Ándale. See you then.",
+  "pad": 0.46
+ }
+]

@@ -1,0 +1,1 @@
+⛔ cortes.json lleva además el tramo c103-c104 (descongelar: repetía y contradecía c99). Si se re-corre pausas.py, volver a agregarlo (bloque en el historial: corte [c103.s, c105.s]).

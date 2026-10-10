@@ -1,0 +1,252 @@
+{
+ "S00": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cuchillo atraviesa el ribeye, centro rosado parejo"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio levanta la sartén de hierro"
+ },
+ "S02": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ribeye crudo, grueso, con marmoleo"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno de la cuadrilla"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ribeye de pulgada y media en la mano"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "sal kosher espolvoreada sobre el ribeye"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ribeye salado sobre rejilla en la heladera, superficie seca"
+ },
+ "S07": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "horno encendido, ribeye sobre rejilla en bandeja"
+ },
+ "S08": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "ribeye entrando al horno"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "termómetro digital pinchado en el costado del ribeye"
+ },
+ "S10": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana"
+ },
+ "S11": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "corral, caballos al atardecer"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio revisa el termómetro, marca 115"
+ },
+ "S13": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la sartén de hierro empieza a humear"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "manteca en la sartén humeante"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "el ribeye entra a la sartén, chisporroteo fuerte"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "ribeye dado vuelta, costra oscura"
+ },
+ "S17": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio sostiene el ribeye de canto con pinzas sobre la grasa"
+ },
+ "S18": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "manteca, ajo machacado y romero entran a la sartén"
+ },
+ "S19": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio inclina la sartén y baña el ribeye con la manteca espumosa"
+ },
+ "S20": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ribeye reposando en la tabla"
+ },
+ "S21": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio corta el ribeye contra la fibra"
+ },
+ "S22": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "lonjas de ribeye, rosado de borde a borde"
+ },
+ "S23": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chorro de café negro en la sartén caliente, vapor"
+ },
+ "S24": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty pincha una lonja con el tenedor"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty mastica, cierra los ojos"
+ },
+ "S26": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia la sartén"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tarjeta de temperaturas junto al termómetro"
+ },
+ "S29": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "sartén de hierro secándose sobre la hornalla, una gota de aceite"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "sirloin y chuck-eye en la tabla junto al ribeye"
+ },
+ "S31": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en el mostrador de carnicería"
+ },
+ "S32": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "lonjas frías de ribeye con huevos fritos y tortilla"
+ },
+ "S33": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ensalada con lonjas de ribeye, cebolla y chile"
+ },
+ "S34": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S35": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "varios bifes sobre rejillas en el horno"
+ },
+ "S36": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "sartén de hierro sobre brasas al rojo, Claudio con sombrero"
+ },
+ "S37": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga la sartén"
+ },
+ "S38": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "un bife fino de una pulgada al lado de uno grueso"
+ },
+ "S39": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sostiene un bife congelado"
+ },
+ "S40": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "dos bifes crudos lado a lado, uno más oscuro y magro"
+ },
+ "S41": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio niega con la cabeza junto a un bife sobre la mesada"
+ },
+ "S42": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana, cuenta"
+ },
+ "S43": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio aprieta la palma de su mano con un dedo, al lado de un bife"
+ },
+ "S44": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos sartenes de hierro, una con un bife chico, otra con dos"
+ },
+ "S45": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "lonjas de bife en recipiente, sartén con un chorrito de agua"
+ },
+ "S46": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sostiene la pinza, habla a cámara"
+ },
+ "S47": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S48": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 30"
+ },
+ "S49": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, un repollo sobre la mesa"
+ }
+}

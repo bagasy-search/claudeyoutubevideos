@@ -1,0 +1,362 @@
+[
+ {
+  "name": "c13_1",
+  "q": "steak frying pan",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Let's talk about why you get that gray band. A steak cooks from the outside in. When you put a cold steak in a screaming hot pan, the outside heats up fast, and the heat moves inward slowly,\" — it must show: steak frying pan."
+ },
+ {
+  "name": "c13_2",
+  "q": "pan seared steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Let's talk about why you get that gray band. A steak cooks from the outside in. When you put a cold steak in a screaming hot pan, the outside heats up fast, and the heat moves inward slowly,\" — it must show: pan seared steak."
+ },
+ {
+  "name": "c14_1",
+  "q": "grilled steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"a little at a time. By the time the very middle reaches medium-rare, the outside layers have been sitting at a much higher temperature for minutes. They're well-done. That's the gray band.\" — it must show: grilled steak."
+ },
+ {
+  "name": "c14_2",
+  "q": "steak grill",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"a little at a time. By the time the very middle reaches medium-rare, the outside layers have been sitting at a much higher temperature for minutes. They're well-done. That's the gray band.\" — it must show: steak grill."
+ },
+ {
+  "name": "c15_1",
+  "q": "thick steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"The thicker the steak, the worse it gets, because the heat has further to travel. So here's what we do instead.\" — it must show: thick steak."
+ },
+ {
+  "name": "c15_2",
+  "q": "raw beef",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"The thicker the steak, the worse it gets, because the heat has further to travel. So here's what we do instead.\" — it must show: raw beef."
+ },
+ {
+  "name": "c23_1",
+  "q": "marbled beef",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Those little white streaks of fat through the red meat. More marbling means more flavor and a juicier steak. The fat melts as it cooks and keeps the meat moist.\" — it must show: marbled beef."
+ },
+ {
+  "name": "c23_2",
+  "q": "beef marbling",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Those little white streaks of fat through the red meat. More marbling means more flavor and a juicier steak. The fat melts as it cooks and keeps the meat moist.\" — it must show: beef marbling."
+ },
+ {
+  "name": "c24_1",
+  "q": "ribeye steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"A ribeye is the steak with the most marbling, that's why the ranch hands always wanted it.\" — it must show: ribeye steak."
+ },
+ {
+  "name": "c24_2",
+  "q": "raw ribeye",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"A ribeye is the steak with the most marbling, that's why the ranch hands always wanted it.\" — it must show: raw ribeye."
+ },
+ {
+  "name": "c26_1",
+  "q": "salting steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Better yet, the night before. Salt it, set it on a rack over a plate, and put it in the fridge uncovered overnight. Here's why. When you first salt a steak, the salt pulls juice out to the surface.\" — it must show: salting steak."
+ },
+ {
+  "name": "c26_2",
+  "q": "seasoning meat",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Better yet, the night before. Salt it, set it on a rack over a plate, and put it in the fridge uncovered overnight. Here's why. When you first salt a steak, the salt pulls juice out to the surface.\" — it must show: seasoning meat."
+ },
+ {
+  "name": "c44_1",
+  "q": "cast iron pan",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Step four. While the steak sits on the counter for a minute, get the skillet hot. High heat. Really hot. Five minutes. You want it just starting to smoke. Open a window.\" — it must show: cast iron pan."
+ },
+ {
+  "name": "c44_2",
+  "q": "hot skillet",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Step four. While the steak sits on the counter for a minute, get the skillet hot. High heat. Really hot. Five minutes. You want it just starting to smoke. Open a window.\" — it must show: hot skillet."
+ },
+ {
+  "name": "c47_1",
+  "q": "steak searing",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Step five. Steak in. Listen to that. Ninety seconds. Don't move it.\" — it must show: steak searing."
+ },
+ {
+  "name": "c47_2",
+  "q": "sizzling steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Step five. Steak in. Listen to that. Ninety seconds. Don't move it.\" — it must show: sizzling steak."
+ },
+ {
+  "name": "c48_1",
+  "q": "seared steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Turn it. Look at that crust. Dark brown, almost black at the edges. That's what a dry steak does. Ninety seconds on the other side.\" — it must show: seared steak."
+ },
+ {
+  "name": "c48_2",
+  "q": "steak crust",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Turn it. Look at that crust. Dark brown, almost black at the edges. That's what a dry steak does. Ninety seconds on the other side.\" — it must show: steak crust."
+ },
+ {
+  "name": "c52_1",
+  "q": "basting steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"The butter will foam up. Tilt the pan toward you so the butter pools at the edge. Now take a big spoon and scoop that foaming garlic butter over the top of the steak, again and again. Thirty seconds.\" — it must show: basting steak."
+ },
+ {
+  "name": "c52_2",
+  "q": "butter steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"The butter will foam up. Tilt the pan toward you so the butter pools at the edge. Now take a big spoon and scoop that foaming garlic butter over the top of the steak, again and again. Thirty seconds.\" — it must show: butter steak."
+ },
+ {
+  "name": "c56_1",
+  "q": "slicing steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Now cut it. Across the grain. See those lines running through the meat, like the grain in wood? Cut across them, not along them. That makes every bite short and tender.\" — it must show: slicing steak."
+ },
+ {
+  "name": "c56_2",
+  "q": "steak knife",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Now cut it. Across the grain. See those lines running through the meat, like the grain in wood? Cut across them, not along them. That makes every bite short and tender.\" — it must show: steak knife."
+ },
+ {
+  "name": "c57_1",
+  "q": "cutting meat",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Cut along the grain, and you get long strings, and you'll be chewing it all night.\" — it must show: cutting meat."
+ },
+ {
+  "name": "c57_2",
+  "q": "carving beef",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Cut along the grain, and you get long strings, and you'll be chewing it all night.\" — it must show: carving beef."
+ },
+ {
+  "name": "c58_1",
+  "q": "medium rare steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Look at that. Pink, from edge to edge. No gray band. A dark, crackling crust. And the garlic butter running down the sides.\" — it must show: medium rare steak."
+ },
+ {
+  "name": "c58_2",
+  "q": "steak slices",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Look at that. Pink, from edge to edge. No gray band. A dark, crackling crust. And the garlic butter running down the sides.\" — it must show: steak slices."
+ },
+ {
+  "name": "c62_1",
+  "q": "coffee pot",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Salt to taste. That's a coffee pan sauce. It sounds strange. It tastes like the best steak sauce you've ever had, dark and a little bitter and rich. The coffee pot was always on the stove,\" — it must show: coffee pot."
+ },
+ {
+  "name": "c62_2",
+  "q": "pouring coffee",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Salt to taste. That's a coffee pan sauce. It sounds strange. It tastes like the best steak sauce you've ever had, dark and a little bitter and rich. The coffee pot was always on the stove,\" — it must show: pouring coffee."
+ },
+ {
+  "name": "c81_1",
+  "q": "butcher shop",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"At the store, ask the butcher for a ribeye cut an inch and a half thick. Most of the steaks in the case are cut to an inch or less, so they'll look like a better deal, but you'll have a harder time cooking them right.\" — it must show: butcher shop."
+ },
+ {
+  "name": "c81_2",
+  "q": "butcher",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"At the store, ask the butcher for a ribeye cut an inch and a half thick. Most of the steaks in the case are cut to an inch or less, so they'll look like a better deal, but you'll have a harder time cooking them right.\" — it must show: butcher."
+ },
+ {
+  "name": "c82_1",
+  "q": "meat counter",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"A thick steak is easier. Look for bright red meat, white fat, good marbling. A ribeye runs about fifteen dollars a pound right now.\" — it must show: meat counter."
+ },
+ {
+  "name": "c82_2",
+  "q": "butcher meat",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"A thick steak is easier. Look for bright red meat, white fat, good marbling. A ribeye runs about fifteen dollars a pound right now.\" — it must show: butcher meat."
+ },
+ {
+  "name": "c83_1",
+  "q": "steakhouse dinner",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"That's not cheap. But compare it to what a steakhouse charges, and it's a bargain.\" — it must show: steakhouse dinner."
+ },
+ {
+  "name": "c83_2",
+  "q": "steak restaurant",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"That's not cheap. But compare it to what a steakhouse charges, and it's a bargain.\" — it must show: steak restaurant."
+ },
+ {
+  "name": "c84_1",
+  "q": "frying eggs",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Leftovers. Three days in the fridge. Don't reheat a steak. It'll go gray. Slice it cold and thin. And here's what we did. Steak and eggs. Fry two eggs.\" — it must show: frying eggs."
+ },
+ {
+  "name": "c84_2",
+  "q": "steak eggs",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Leftovers. Three days in the fridge. Don't reheat a steak. It'll go gray. Slice it cold and thin. And here's what we did. Steak and eggs. Fry two eggs.\" — it must show: steak eggs."
+ },
+ {
+  "name": "c85_1",
+  "q": "breakfast taco",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Warm a tortilla. Put the cold steak slices in the hot skillet for only thirty seconds, just to take the chill off. Steak on the tortilla, eggs on top, salsa. That's breakfast for a man going out to ride all day.\" — it must show: breakfast taco."
+ },
+ {
+  "name": "c85_2",
+  "q": "tortilla",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Warm a tortilla. Put the cold steak slices in the hot skillet for only thirty seconds, just to take the chill off. Steak on the tortilla, eggs on top, salsa. That's breakfast for a man going out to ride all day.\" — it must show: tortilla."
+ },
+ {
+  "name": "c86_1",
+  "q": "cowboy breakfast",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"We called it the Sunday breakfast, because Saturday night was steak night.\" — it must show: cowboy breakfast."
+ },
+ {
+  "name": "c86_2",
+  "q": "cowboys",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"We called it the Sunday breakfast, because Saturday night was steak night.\" — it must show: cowboys."
+ },
+ {
+  "name": "c87_1",
+  "q": "steak salad",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Or slice it thin and put it on a plate of lettuce with sliced onion, tomato, and a little vinegar and oil. A steak salad. My wife liked that one. She said it was the only salad that ever filled me up.\" — it must show: steak salad."
+ },
+ {
+  "name": "c87_2",
+  "q": "beef salad",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Or slice it thin and put it on a plate of lettuce with sliced onion, tomato, and a little vinegar and oil. A steak salad. My wife liked that one. She said it was the only salad that ever filled me up.\" — it must show: beef salad."
+ },
+ {
+  "name": "c91_1",
+  "q": "steaks oven",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"For a crowd. Put several steaks on racks over sheet pans in the oven, all at once. Check each one with the thermometer, because they won't all finish at the same time. As each one hits one-fifteen,\" — it must show: steaks oven."
+ },
+ {
+  "name": "c91_2",
+  "q": "roasting meat",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"For a crowd. Put several steaks on racks over sheet pans in the oven, all at once. Check each one with the thermometer, because they won't all finish at the same time. As each one hits one-fifteen,\" — it must show: roasting meat."
+ },
+ {
+  "name": "c93_1",
+  "q": "campfire",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And outside. No oven out there. Here's how we did it on the trail. Build a fire, and let it burn down to coals.\" — it must show: campfire."
+ },
+ {
+  "name": "c93_2",
+  "q": "camp fire",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And outside. No oven out there. Here's how we did it on the trail. Build a fire, and let it burn down to coals.\" — it must show: camp fire."
+ },
+ {
+  "name": "c94_1",
+  "q": "campfire coals",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Rake a pile of coals to one side for a hot zone, and leave the other side with just a few.\" — it must show: campfire coals."
+ },
+ {
+  "name": "c94_2",
+  "q": "embers",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Rake a pile of coals to one side for a hot zone, and leave the other side with just a few.\" — it must show: embers."
+ },
+ {
+  "name": "c95_1",
+  "q": "dutch oven",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Steak on a grate over the low side, lid of a Dutch oven turned upside down over it to hold in the heat, and check it with the thermometer.\" — it must show: dutch oven."
+ },
+ {
+  "name": "c95_2",
+  "q": "campfire pot",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Steak on a grate over the low side, lid of a Dutch oven turned upside down over it to hold in the heat, and check it with the thermometer.\" — it must show: campfire pot."
+ },
+ {
+  "name": "c96_1",
+  "q": "campfire cooking",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Then put the skillet right on the hot coals until it's smoking, and sear it. Same thing. Slow, then fast.\" — it must show: campfire cooking."
+ },
+ {
+  "name": "c96_2",
+  "q": "cooking fire",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Then put the skillet right on the hot coals until it's smoking, and sear it. Same thing. Slow, then fast.\" — it must show: cooking fire."
+ },
+ {
+  "name": "c97_1",
+  "q": "grilling steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"A couple of questions. Can I do this on a grill? Sure. Put the steak on the side with no fire, lid closed, until it hits one-fifteen. Then move it over the hottest coals for a minute a side.\" — it must show: grilling steak."
+ },
+ {
+  "name": "c97_2",
+  "q": "barbecue steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"A couple of questions. Can I do this on a grill? Sure. Put the steak on the side with no fire, lid closed, until it hits one-fifteen. Then move it over the hottest coals for a minute a side.\" — it must show: barbecue steak."
+ },
+ {
+  "name": "c98_1",
+  "q": "grill marks",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"But I'll be honest, I think the cast iron makes a better crust, because the whole surface of the steak touches the hot iron. On a grill, only the lines touch. What about a frozen steak?\" — it must show: grill marks."
+ },
+ {
+  "name": "c98_2",
+  "q": "steak grill",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"But I'll be honest, I think the cast iron makes a better crust, because the whole surface of the steak touches the hot iron. On a grill, only the lines touch. What about a frozen steak?\" — it must show: steak grill."
+ },
+ {
+  "name": "c103_1",
+  "q": "frozen meat",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And a frozen steak? Thaw it in the fridge, overnight, on a plate. A thick one might take a day. Don't thaw it on the counter, and don't put it in hot water. If you forgot, and it's still frozen,\" — it must show: frozen meat."
+ },
+ {
+  "name": "c103_2",
+  "q": "freezer",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And a frozen steak? Thaw it in the fridge, overnight, on a plate. A thick one might take a day. Don't thaw it on the counter, and don't put it in hot water. If you forgot, and it's still frozen,\" — it must show: freezer."
+ },
+ {
+  "name": "c104_1",
+  "q": "oven steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"you can actually cook it straight from frozen with this oven method. Just give it more time in the oven, maybe half again as long, and trust the thermometer, not the clock.\" — it must show: oven steak."
+ },
+ {
+  "name": "c104_2",
+  "q": "meat thermometer",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"you can actually cook it straight from frozen with this oven method. Just give it more time in the oven, maybe half again as long, and trust the thermometer, not the clock.\" — it must show: meat thermometer."
+ },
+ {
+  "name": "c105_1",
+  "q": "cattle grazing",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"People ask me about grass-fed beef. Here's what I know from the ranch. Grass-fed beef is leaner. Less fat in the marbling, and the fat it has is a little yellow. It tastes more like beef, a little wild.\" — it must show: cattle grazing."
+ },
+ {
+  "name": "c105_2",
+  "q": "cows pasture",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"People ask me about grass-fed beef. Here's what I know from the ranch. Grass-fed beef is leaner. Less fat in the marbling, and the fat it has is a little yellow. It tastes more like beef, a little wild.\" — it must show: cows pasture."
+ },
+ {
+  "name": "c106_1",
+  "q": "cattle feedlot",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Corn-finished beef, what most stores sell, has more marbling and tastes richer and milder. Both are good. But grass-fed cooks faster, because there's less fat to protect it. So if you use grass-fed with this method,\" — it must show: cattle feedlot."
+ },
+ {
+  "name": "c106_2",
+  "q": "beef cattle",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"Corn-finished beef, what most stores sell, has more marbling and tastes richer and milder. Both are good. But grass-fed cooks faster, because there's less fat to protect it. So if you use grass-fed with this method,\" — it must show: beef cattle."
+ },
+ {
+  "name": "c108_1",
+  "q": "raw steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And the old advice to let a steak sit on the counter for an hour before you cook it, so it comes up to room temperature. Don't bother. An hour on the counter barely warms the middle of a thick steak,\" — it must show: raw steak."
+ },
+ {
+  "name": "c108_2",
+  "q": "beef steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And the old advice to let a steak sit on the counter for an hour before you cook it, so it comes up to room temperature. Don't bother. An hour on the counter barely warms the middle of a thick steak,\" — it must show: beef steak."
+ },
+ {
+  "name": "c117_1",
+  "q": "cast iron steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"How many steaks in one pan? A twelve-inch skillet holds two steaks this size, with space between them. Don't crowd the pan. If the steaks touch, they steam, and you lose the crust.\" — it must show: cast iron steak."
+ },
+ {
+  "name": "c117_2",
+  "q": "steak pan",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"How many steaks in one pan? A twelve-inch skillet holds two steaks this size, with space between them. Don't crowd the pan. If the steaks touch, they steam, and you lose the crust.\" — it must show: steak pan."
+ },
+ {
+  "name": "c119_1",
+  "q": "steak sandwich",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And leftovers, if you have any. Slice it cold, it's good on bread the next day. If you want it warm, don't put it in the microwave on high.\" — it must show: steak sandwich."
+ },
+ {
+  "name": "c119_2",
+  "q": "beef sandwich",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And leftovers, if you have any. Slice it cold, it's good on bread the next day. If you want it warm, don't put it in the microwave on high.\" — it must show: beef sandwich."
+ },
+ {
+  "name": "c122_1",
+  "q": "tongs steak",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And one last thing that matters. Use tongs to turn the steak, not a fork. Every time you stick a fork in a steak, you make a hole, and the juice runs out. Tongs grab it without breaking it.\" — it must show: tongs steak."
+ },
+ {
+  "name": "c122_2",
+  "q": "kitchen tongs",
+  "scene": "Real documentary footage for a ranch cook's video about steak, while he says: \"And one last thing that matters. Use tongs to turn the steak, not a fork. Every time you stick a fork in a steak, you make a hole, and the juice runs out. Tongs grab it without breaking it.\" — it must show: kitchen tongs."
+ }
+]
