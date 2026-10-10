@@ -611,6 +611,10 @@ def e_editor():
             if os.path.exists(p) and o["c"].startswith("Fab"):   # los Cl* son del kit viejo, probados: el juez mira los Fab
                 lst.append({"name": f"ov{i:02d}{tag}", "c": o["c"], "props": {k: v for k, v in o["props"].items() if k != "bed"}})
     W(E + "lista.json", lst)
+    esper = 2 * sum(1 for o in OV if o["c"].startswith("Fab"))
+    if len(lst) < esper:   # ⛔ medido en cltoilet: disco lleno → 10 de 30 cuadros y el juez "aprobó" sin mirar el resto
+        shutil.rmtree(B, ignore_errors=True)
+        print(f"⛔ editor: sólo salieron {len(lst)} de {esper} cuadros (¿disco lleno?): NO se aprueba nada → corré `fab.py editor` de nuevo"); hecho("editor", False); sys.exit(2)
     r = sh(["node", "vlog/fab/editor_juez.mjs", f"vlog/{S}/editor/lista.json", f"vlog/{S}/editor"], check=False, capture_output=True)
     print(r.stdout[-3000:])
     try:
