@@ -52,8 +52,8 @@ img/fhperox/c048_1.jpg
 img/fhperox/c049_0.jpg
 img/fhperox/b051_1.jpg
 img/fhperox/c052_1.jpg
-img/fhperox/e054_0.jpg
 img/fhperox/g16.jpg
+img/fhperox/e054_0.jpg
 img/fhperox/b055_1.jpg
 broll/fhperox_st/b055_1.mp4
 img/fhperox/b057_1.jpg
@@ -79,11 +79,11 @@ pages/fh/p45.jpg
 img/fhperox/b079_1.jpg
 img/fhperox/b080_1.jpg
 broll/fhperox_st/b080_1.mp4
+img/fhperox/g22.jpg
 img/fhperox/b082_1.jpg
 broll/fhperox_st/b082_1.mp4
 img/fhperox/e083_0.jpg
 img/fhperox/e085_1.jpg
-img/fhperox/g22.jpg
 pages/fh/p9.jpg
 img/fhperox/b089_1.jpg
 sfx/whoosh.mp3
