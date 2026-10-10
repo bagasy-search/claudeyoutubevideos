@@ -59,12 +59,16 @@ export const ESC = {
       c36: ["smashes a garlic clove with the flat side of the knife", "the smashed garlic cloves on the board, his palm on the flat of the knife"],
       c37: ["pulls the stem off a dried ancho chile and shakes the seeds out", "the opened dark red chile in his hand, seeds on the board"],
       c38: ["holds up the dried chile toward the camera and smiles", "the dark red dried chile held up next to his face, a small smile"] } },
+  S12: { set: "A1", base: `stands at the black range with ${POT} on the burner, the dented lid on, an old wind-up kitchen timer beside it.`,
+    clips: {
+      c39: ["lifts the dented lid off the pot and looks inside", "the lid held up, swollen pinto beans in cloudy light-brown water in the pot, a little steam rising"] } },
   S13: { set: "A1", base: `stands at the black range holding ${POT} by both handles with the lid off, the swollen beans in cloudy brown water inside, as if about to tip it toward the sink, but he does not tip it.`,
     clips: {
       c40: ["sets the pot back down on the burner and wags his finger 'no'", "the pot back on the burner, his finger wagging, a grin"],
       c41: ["points out the window with his thumb toward the windmill outside", "his thumb pointing over his shoulder, a knowing look at the camera"] } },
   S14: { set: "A1", base: `stands at the black range; ${POT} on the burner full of swollen beans in brown water; beside the stove a plate with a smoked ham hock, two onion halves, smashed garlic and two dried red chiles.`,
     clips: {
+      c42: ["drops the ham hock, the two onion halves and the smashed garlic into the pot", "the ham hock and the onion halves floating among the beans, his hand pulling back"],
       c43: ["sprinkles two teaspoons of salt from a little measuring spoon into the pot", "the salt falling into the pot, he looks at the camera with a calm nod"] } },
   S15: { set: "A1", base: `stands at the black range turning the burner knob down; ${POT} on the burner, beans and broth just starting to bubble gently, the ham hock and onion halves floating.`,
     clips: {
@@ -88,6 +92,9 @@ export const ESC = {
   S20: { set: "A3", base: `stands at the wooden plank table holding a wooden spoon of red-brown bean broth up to his mouth, the pot on a trivet in front of him, a small dish of salt beside it.`,
     clips: {
       c54: ["blows on the broth and tastes it from the spoon, thinking", "the spoon lowered, he tilts his head, considering, a pinch of salt between his fingers"] } },
+  S21: { set: "A3", base: `sits at the wooden plank table in front of a white enamel bowl of ${BEANS_DONE}, a spoon in his hand, a stack of warm flour tortillas beside it.`,
+    clips: {
+      c55: ["eats a spoonful of beans and broth slowly, savoring it", "chewing with his eyes closed, the spoon lowered, a happy nod"] } },
   S22: { set: "A3", rusty: true, base: `stands at the wooden plank table with a white enamel bowl of ${BEANS_DONE} and a stack of warm flour tortillas, turning toward the open kitchen door.`,
     clips: {
       c56: ["waves someone over toward the table", "his hand raised in a wave toward the door, smiling"] } },
@@ -135,6 +142,9 @@ export const ESC = {
       c97: ["nods slowly, then tilts his hand side to side, 'so-so'", "his flat hand tilted, a half smile"],
       c98: ["holds up two fingers, then one finger", "one finger raised, a firm look"],
       c99: ["picks up a can of beans from the shelf and looks at it, unimpressed", "the can of beans held at arm's length, an unimpressed face"] } },
+  S38: { set: "A3", base: `stands at the wooden plank table holding up a clear plastic two-pound bag of dry pinto beans in both hands.`,
+    clips: {
+      c100: ["turns the bag of beans slowly in his hands, looking closely through the plastic", "the bag held close to the camera, smooth speckled pink-and-brown pinto beans visible through the plastic"] } },
   S39: { set: "A3", base: `stands at the wooden plank table holding a salt shaker over ${POT} sitting on a trivet, shaking his head.`,
     clips: {
       c103: ["shakes his head slowly, salt shaker held still", "the shaker held still over the pot, a skeptical look"],
@@ -168,9 +178,10 @@ export const ESC = {
 };
 export const STOCK = {
   c17: "rinsing beans", c27: "boiling pot",
+  c24: "boiling beans", 
   c31: "cattle roundup", c32: "cowboys horses", c33: "cattle herd", c34: "cowboy horse",
   c44: "beans simmering", c62: "faucet water",
-  c75: "refried beans", c76: "mashing beans", c77: "eggs tortilla",
+  c75: "refried beans", c76: "pinto beans", c77: "eggs tortilla",
   c78: "bean soup", c79: "bowl soup",
   c82: "frying bacon", c83: "chopping jalapeno", c84: "chopping cilantro",
   c85: "ranch sunset", c86: "horses sunset",
@@ -181,9 +192,10 @@ export const STOCK = {
 };
 export const STOCK2 = {
   c17: "washing beans", c27: "boiling water",
+  c24: "beans boiling pot", 
   c31: "cowboys cattle", c32: "riding horses", c33: "ranch cattle", c34: "ranch horses",
   c44: "simmering pot", c62: "kitchen faucet",
-  c75: "frying beans", c76: "bean paste", c77: "breakfast tacos",
+  c75: "frying beans", c76: "cooked beans", c77: "breakfast tacos",
   c78: "beans bowl", c79: "tortillas",
   c82: "bacon skillet", c83: "chopping tomato", c84: "fresh cilantro",
   c85: "corral sunset", c86: "ranch horses",
@@ -193,7 +205,8 @@ export const STOCK2 = {
   c108: "cowboy campfire", c109: "donkey", c110: "campfire coals", c111: "old mule",
 };
 const STOVE = "an old black cast-iron wood-burning cook stove, whitewashed adobe wall darkened with soot behind it";
-export const DET = {
+export const DET = {}; // los 5 DET de agnes-image salieron sartén/huevos/mortadela → pasaron a STOCK real
+const _DET_VIEJO = {
   c39: { first: `Close view from above into ${POT} on ${STOVE}, the lid just lifted off: plump swollen pinto beans in cloudy light-brown water, a little steam rising. Nobody in the frame, no hands.`,
          prompt: "The heavy lid lifts away and steam drifts up off the swollen beans in the cloudy water; nothing else moves." },
   c42: { first: `Close view from above into ${POT} on ${STOVE}: swollen pinto beans in brown water, a smoked ham hock and two halves of a white onion just dropped in, two dried red chiles floating.`,

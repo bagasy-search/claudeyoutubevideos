@@ -1,0 +1,4 @@
+vid/cvbeans
+img/cvbeans/cover.jpg
+img/cvbeans/page12.jpg
+img/cvbeans/qr.png

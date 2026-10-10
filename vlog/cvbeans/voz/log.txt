@@ -1,0 +1,17 @@
+referencias: 1  (claudio_vaquero_en_b.mp3)
+guion: 19525 chars → 35 bloques de ≤600 (esperado ~20.7 min de audio)
+a generar 35 · ya estaban 0
+
+  ✓ 5/35
+  ✓ 10/35
+  ✓ 15/35
+  ✓ 20/35
+  ✓ 25/35
+  ✓ 30/35
+  ✓ 35/35
+
+RONDA 0: bloques 35 · marcados 0
+
+=== LISTO · ok 35 · fail 0 · 35 bloques · 1071.4s = 17.86 min de audio ===
+lista de concat → vlog\cvbeans\voz\concat.txt
+master → vlog\cvbeans\voz\master.wav (1071.4s)

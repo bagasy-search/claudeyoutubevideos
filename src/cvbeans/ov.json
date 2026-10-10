@@ -1,0 +1,149 @@
+[
+ {
+  "c": "ClTimer30",
+  "from": 5842,
+  "dur": 135,
+  "props": {
+   "minutes": 2,
+   "text": "2 minutes",
+   "label": "The only hard boil",
+   "bed": "vid/cvbeans/bed_0.mp4#139"
+  },
+  "t": 194.73
+ },
+ {
+  "c": "ClTimer30",
+  "from": 6017,
+  "dur": 135,
+  "props": {
+   "minutes": 59.5,
+   "text": "1 hour",
+   "label": "Heat off · lid on",
+   "bed": "vid/cvbeans/bed_1.mp4#139"
+  },
+  "t": 200.56
+ },
+ {
+  "c": "ClCheck",
+  "from": 7842,
+  "dur": 300,
+  "props": {
+   "title": "INTO THE POT",
+   "items": [
+    "1 smoked ham hock",
+    "1 white onion, halved",
+    "4 garlic cloves, smashed",
+    "2 dried ancho chiles",
+    "2 tbsp lard",
+    "2 tsp kosher salt"
+   ],
+   "bed": "vid/cvbeans/bed_3.mp4#304"
+  },
+  "t": 261.4
+ },
+ {
+  "c": "ClDoDont",
+  "from": 10242,
+  "dur": 165,
+  "props": {
+   "yes": {
+    "label": "Lazy bubble, lid cracked"
+   },
+   "no": {
+    "label": "Hard rolling boil"
+   },
+   "bed": "vid/cvbeans/bed_4.mp4#169"
+  },
+  "t": 341.42
+ },
+ {
+  "c": "ClChip",
+  "from": 11971,
+  "dur": 120,
+  "props": {
+   "text": "The 5-bean test",
+   "corner": "tl"
+  },
+  "t": 399.04
+ },
+ {
+  "c": "ClChip",
+  "from": 16342,
+  "dur": 135,
+  "props": {
+   "text": "Kidney beans: hard boil 10 min",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 544.74
+ },
+ {
+  "c": "ClReceipt",
+  "from": 21611,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "2 lb dry pinto beans",
+     "$3.40"
+    ],
+    [
+     "Smoked ham hock",
+     "$4.00"
+    ],
+    [
+     "1 white onion",
+     "$1.30"
+    ],
+    [
+     "Garlic, chiles, lard, salt",
+     "$1.50"
+    ]
+   ],
+   "total": [
+    "Per plate (÷10)",
+    "$1.02"
+   ],
+   "bed": "vid/cvbeans/bed_7.mp4#424"
+  },
+  "t": 720.37
+ },
+ {
+  "c": "ClChip",
+  "from": 29249,
+  "dur": 135,
+  "props": {
+   "text": "Cool it within 2 hours",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 974.95
+ },
+ {
+  "c": "ClBookPage",
+  "from": 30107,
+  "dur": 210,
+  "props": {
+   "page": "img/cvbeans/page12.jpg",
+   "pageNo": 12,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 12",
+   "bed": "vid/cvbeans/bed_9.mp4#214"
+  },
+  "t": 1003.57
+ },
+ {
+  "c": "ClQRCard",
+  "from": 30851,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvbeans/qr.png",
+   "cover": "img/cvbeans/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvbeans/bed_10.mp4#184"
+  },
+  "t": 1028.37
+ }
+]

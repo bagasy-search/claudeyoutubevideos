@@ -20,6 +20,16 @@
   "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"Heat on high. Bring it to a hard boil. This is the only time in this whole recipe you're going to let it boil hard. Once it's rolling, set a timer. Two minutes. Exactly two minutes.\" — it must show: boiling water."
  },
  {
+  "name": "c24_1",
+  "q": "boiling beans",
+  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"A hard, rolling boil bangs the beans against each other and against the pot. The skins split, the outside falls apart, and the middle still isn't done. Beans want a lazy bubble. Not a boil.\" — it must show: boiling beans."
+ },
+ {
+  "name": "c24_2",
+  "q": "beans boiling pot",
+  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"A hard, rolling boil bangs the beans against each other and against the pot. The skins split, the outside falls apart, and the middle still isn't done. Beans want a lazy bubble. Not a boil.\" — it must show: beans boiling pot."
+ },
+ {
   "name": "c31_1",
   "q": "cattle roundup",
   "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"While that sits, let me tell you about the roundup. Every spring we gathered the cattle off the summer pasture. That meant forty men, some of them our regular crew and some of them neighbors and kids from town who came o\" — it must show: cattle roundup."
@@ -91,13 +101,13 @@
  },
  {
   "name": "c76_1",
-  "q": "mashing beans",
-  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"Beans go in, and you mash them right there in the pan with a potato masher, or the bottom of a cup. Keep mashing and stirring, five or six minutes, until they're thick and creamy and pull away from the pan.\" — it must show: mashing beans."
+  "q": "pinto beans",
+  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"Beans go in, and you mash them right there in the pan with a potato masher, or the bottom of a cup. Keep mashing and stirring, five or six minutes, until they're thick and creamy and pull away from the pan.\" — it must show: pinto beans."
  },
  {
   "name": "c76_2",
-  "q": "bean paste",
-  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"Beans go in, and you mash them right there in the pan with a potato masher, or the bottom of a cup. Keep mashing and stirring, five or six minutes, until they're thick and creamy and pull away from the pan.\" — it must show: bean paste."
+  "q": "cooked beans",
+  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"Beans go in, and you mash them right there in the pan with a potato masher, or the bottom of a cup. Keep mashing and stirring, five or six minutes, until they're thick and creamy and pull away from the pan.\" — it must show: cooked beans."
  },
  {
   "name": "c77_1",
@@ -238,16 +248,6 @@
   "name": "c94_2",
   "q": "campfire coals",
   "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"Then back over a small bed of coals, just enough for a lazy bubble. Keep a kettle of hot water by the fire for topping it up. That's the original way. That's how beans were cooked on trail drives a hundred and fifty year\" — it must show: campfire coals."
- },
- {
-  "name": "c100_1",
-  "q": "pinto beans",
-  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"So how do you pick a good bag at the store, if old beans are the enemy? Look through the plastic. Fresh pintos are smooth and a little shiny, speckled pink and brown, all about the same size.\" — it must show: pinto beans."
- },
- {
-  "name": "c100_2",
-  "q": "beans closeup",
-  "scene": "Real documentary footage for a ranch cook's video about pinto beans (frijoles de olla), while he says: \"So how do you pick a good bag at the store, if old beans are the enemy? Look through the plastic. Fresh pintos are smooth and a little shiny, speckled pink and brown, all about the same size.\" — it must show: beans closeup."
  },
  {
   "name": "c101_1",
