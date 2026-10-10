@@ -555,6 +555,7 @@ def e_editor():
         for k, p in enumerate(ims): H.paste(Image.open(p).convert("RGB").resize((480, 270)), ((k % cols) * 480, (k // cols) * 270))
         H.save(E + "hoja.jpg", quality=85)
     except Exception as e: print("hoja:", e)
+    shutil.rmtree(B, ignore_errors=True)   # el bundle copia public/ entero (GBs): se borra al terminar
     res = J(E + "juez.json", {}); malos = sorted({k[:4] for k, v in res.items() if not v.get("ok")})
     n = int(open(D + ".editor_vueltas").read()) + 1 if os.path.exists(D + ".editor_vueltas") else 1
     open(D + ".editor_vueltas", "w").write(str(n))
@@ -655,6 +656,7 @@ def e_render():
     sh(["node", "scripts/farm.mjs", S, "Fab", str(T), "60", f"@_{S}_assets.txt"],
        env={"ENTRY": "src/index_fab.tsx", "FARM_REF": rama, "TAR_DIR": f"D:/rtmp/fab_{S}", "FARM_NOWAIT": "1", "STITCH_RAW": "1"})
     rid = run_id(rama, t0); print("render run", rid, flush=True)
+    shutil.rmtree(f"D:/rtmp/fab_{S}", ignore_errors=True)   # el tar ya está subido al release
     sh(f"node scripts/esperar_run.mjs {rid}", check=False)
     js = json.loads(out(f"gh run view {rid} --json jobs") or '{"jobs":[]}')["jobs"]
     caidos = sorted({int(m.group(1)) for j in js if j.get("conclusion") not in ("success", "skipped") for m in [re.search(r"(\d+)", j["name"])] if m and "chunk" in j["name"].lower()})
