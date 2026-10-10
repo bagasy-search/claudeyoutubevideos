@@ -184,6 +184,11 @@ def fotos(P, rondas=3):
         if ronda >= 1: malas -= {p["id"] for p in con}   # 2ª vuelta de gpt: se acepta
         for p in nuevas:
             if p["id"] not in malas: shutil.copy(IMG + "_eq/" + p["id"] + ".png", IMG + p["id"] + ".png")
+    falt = [p for p in P if not os.path.exists(IMG + p["id"] + ".png")]
+    if falt:   # red de seguridad: lo que falte sale con agnes (sin juez) para que nunca quede un hueco
+        agnes_img([{"name": p["id"], "prompt": prompt_foto(p, b)} for p in falt])
+        for p in falt:
+            if os.path.exists(IMG + "_eq/" + p["id"] + ".png"): shutil.copy(IMG + "_eq/" + p["id"] + ".png", IMG + p["id"] + ".png")
     return [p["id"] for p in P if not os.path.exists(IMG + p["id"] + ".png")]
 
 def revisar_fotos(nuevas, b):

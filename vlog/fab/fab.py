@@ -358,7 +358,10 @@ def e_armar():
 def e_montaje():
     if not os.path.exists(HECHO + "armar"): sys.exit("⛔ primero: armar")
     import equipo
-    reh = equipo.revisar_montaje()
+    if os.path.exists(D + "montaje/rehacer.json") and "--de-nuevo" not in sys.argv:
+        reh = J(D + "montaje/rehacer.json"); print(f"retomo el montaje: {len(reh)} planos ya marcados (no se vuelve a revisar)")
+    else:
+        reh = equipo.revisar_montaje()
     print(f"editor de montaje: {len(reh)} planos a rehacer")
     if reh:
         P = leer_planos(); b = J(D + "biblia.json")
@@ -368,7 +371,9 @@ def e_montaje():
                 for f in (R + f"public/img/{S}/{p['id']}.png", R + f"public/img/{S}/_eq/{p['id']}.png", R + f"public/broll/{S}/{p['id']}.mp4", R + f"public/broll/{S}/_raw/{p['id']}.mp4"):
                     if os.path.exists(f): os.remove(f)
         W(D + "planos.json", P)
-        equipo.fotos(P, rondas=2); hecho("imgs", True); hecho("clips", False)
+        falt = equipo.fotos(P, rondas=3)
+        if falt: sys.exit(f"⛔ montaje: faltan fotos {falt[:10]} → corré `fab.py montaje` de nuevo")
+        hecho("imgs", True); hecho("clips", False)
         try: e_clips()
         except SystemExit: pass
         e_armar()
