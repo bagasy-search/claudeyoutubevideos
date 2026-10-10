@@ -1,0 +1,3717 @@
+[
+ {
+  "id": "p001",
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio, a 58-year-old Latin American pest-control technician with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned weathered skin, wearing a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead, stands in the Ramirez kitchen at night, lit by a ceiling bulb. He holds a white ceramic mug of hot coffee close to his face, blowing gently on it. Steam rises in a thin spiral. The speckled gray granite countertop and white square wall tiles with a blue-and-white patterned tile strip are behind him. The older white refrigerator covered with children's crayon drawings is to his left. Dark outside the window.",
+  "mov": "The steam swirls and dissipates as he blows."
+ },
+ {
+  "id": "p002",
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of a mosquito coil burning, with a person in the background breathing in the smoke.",
+  "mov": "The steam spiral twists upward and fades."
+ },
+ {
+  "id": "p003",
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of a mosquito coil or repellent, emphasizing the object that mosquitoes dislike.",
+  "mov": "He slowly raises the mug to his lips and takes a sip."
+ },
+ {
+  "id": "p004",
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of a clear glass jar filled with murky green water, sitting on the speckled gray granite countertop. Inside the water, tiny mosquito larvae wriggle. The jar is next to the stainless steel double sink. The white square wall tiles with a blue-and-white patterned tile strip are behind. The light from the ceiling bulb shines through the jar, highlighting the green tint and the movement of the larvae.",
+  "mov": "The larvae wiggle and dart in the green water."
+ },
+ {
+  "id": "p005",
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A close-up of the green liquid in the jar showing mosquito larvae wriggling inside.",
+  "mov": "He tilts the jar, and the green water swirls."
+ },
+ {
+  "id": "p006",
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the Ramirez kitchen at night, holding the glass jar of green water at chest level. He looks at it with a serious expression. The kitchen is lit by a ceiling bulb, showing the white square wall tiles with the blue-and-white patterned tile strip, the wooden cabinets, the speckled gray granite countertop, the stainless steel double sink under the window with white iron bars, and the older white refrigerator covered with children's crayon drawings. Dark outside.",
+  "mov": "He slowly lowers the jar to the countertop."
+ },
+ {
+  "id": "p007",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "foto": "Nighttime view of the small cement back patio of the Ramirez house. The stained cement floor and low white-painted wall with peeling paint are visible. Along the wall, terracotta flower pots with saucers sit in a row. In one corner, a black plastic water tank stands on a rusty metal stand. A green garden hose lies coiled nearby. The back of the one-story house has a white door and a barred window. A single ceiling bulb casts dim light, leaving the outside dark.",
+  "mov": "The green garden hose slowly uncoils and shifts on the cement floor."
+ },
+ {
+  "id": "p008",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Mateo, a 6-year-old Latin American boy with short messy black hair, wearing striped pajamas, stands near the white door of the house. He is scratching his left arm, where four red insect bites are visible. Two more bites are on his face. His eyes are half-closed as if still sleepy. The patio is dimly lit by the ceiling bulb, and the barred window behind him shows darkness outside.",
+  "mov": "Mateo's hand moves up and down, scratching his arm."
+ },
+ {
+  "id": "p009",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A clear view of the child's arm showing four distinct mosquito bites.",
+  "mov": "Mateo's fingers rub one of the bites on his arm."
+ },
+ {
+  "id": "p010",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Jorge, a stocky 40-year-old Latin American man with short black hair and a trimmed mustache, wearing a navy polo shirt, stands in the patio near the flower pots. He holds two mosquito coils in his hands and looks down at them. The terracotta pots and peeling wall are behind him. The ceiling bulb lights his face from above, and the night is dark beyond the patio.",
+  "mov": "Jorge turns the mosquito coils over in his hands."
+ },
+ {
+  "id": "p011",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of a person scratching their face or reacting to something on their face.",
+  "mov": "One of the coils slowly rotates on the stand."
+ },
+ {
+  "id": "p012",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Lucia, a 38-year-old Latin American woman with long dark wavy hair in a low ponytail, wearing a gray t-shirt and jeans, stands in the patio looking at Jorge with an expression of exasperation. Her arms are slightly crossed. Behind her, the white-painted wall with peeling paint and the barred window of the house are visible. The ceiling bulb lights her face, and the outside is dark.",
+  "mov": "Lucia slowly shakes her head from side to side."
+ },
+ {
+  "id": "p013",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of two mosquito coils burning inside a room.",
+  "mov": "Claudio raises his right hand and points toward the flower pots."
+ },
+ {
+  "id": "p014",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the kids and Lucia looking at the camera or at someone.",
+  "mov": "Claudio's hand moves the flashlight beam slowly along the wall base."
+ },
+ {
+  "id": "p015",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A close-up of a person's face showing an exasperated or annoyed expression.",
+  "mov": "Claudio leans forward and peers into the drain channel."
+ },
+ {
+  "id": "p016",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the flies being removed or the kitchen area mentioned in the narration.",
+  "mov": "A small trickle of water flows slowly along the drain channel."
+ },
+ {
+  "id": "p017",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia",
+   "jorge",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A shot of the kitchen with flies or the process of removing them.",
+  "mov": "Claudio gestures with his hand toward the drain while the others watch."
+ },
+ {
+  "id": "p018",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands in the patio, facing the camera but looking slightly off to the side, as if explaining something. He holds a small plastic bag of water in his hands. His face is visible, with the gray-stubbled beard and safety glasses on his forehead. Behind him, the white wall and flower pots are visible. The ceiling bulb lights his face.",
+  "mov": "Claudio lifts the plastic bag of water slightly and tilts it."
+ },
+ {
+  "id": "p019",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the water bag trick clearly, possibly with a hand pointing to it or a text overlay indicating a link.",
+  "mov": "The plastic bag sways gently from side to side."
+ },
+ {
+  "id": "p020",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands are shown tying a string around the top of a clear plastic bag filled with water. He is standing near the white wall of the house. The bag is almost ready to hang. The cement floor and a terracotta pot are visible below. The ceiling bulb casts light on his hands and the bag.",
+  "mov": "Claudio's fingers pull the string tight, securing the bag."
+ },
+ {
+  "id": "p021",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The patio at night. Claudio stands back, looking at the plastic bag of water hanging on the wall. Lucia and Jorge are nearby, also looking at the bag. Mateo is not present. The cement floor, flower pots, water tank, and house with white door and barred window are visible. The ceiling bulb lights the scene, and the outside is dark.",
+  "mov": "Claudio takes a step back and nods slightly."
+ },
+ {
+  "id": "p022",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A shot of the kids' bedroom showing them awake and bothered by mosquitoes.",
+  "mov": "The boy turns his head from side to side on the pillow."
+ },
+ {
+  "id": "p023",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A mosquito rests on the boy's bare forearm, its thin legs gripping the skin. The arm is small and pale under the dim light. The background is a soft blur of striped pajama fabric. The mosquito's body is slightly angled, ready to bite.",
+  "mov": "The mosquito's abdomen pulses slightly as it feeds."
+ },
+ {
+  "id": "p024",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "In the small cement back patio at night, Claudio, a 58-year-old pest-control technician with short curly gray-black hair, gray-stubbled beard, and clear safety glasses on his forehead, holds a flashlight. Lucia, a 38-year-old woman with long dark wavy hair in a low ponytail, stands beside him. Claudio shines the light on a black plastic water tank on a rusty metal stand. The patio has a stained cement floor and a low white-painted wall.",
+  "mov": "Claudio moves the flashlight beam slowly across the water tank."
+ },
+ {
+  "id": "p025",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the patio showing the mosquito breeding site being discovered.",
+  "mov": "The flashlight beam moves slightly, making the larvae squirm."
+ },
+ {
+  "id": "p026",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Jorge, a stocky 40-year-old man with short black hair and a trimmed mustache, wearing a navy polo shirt, stands in the patio holding a green garden hose. He looks down at a terracotta flower pot with a saucer, examining it. The pot sits on the cement floor near the white-painted wall. The patio is dimly lit by a ceiling bulb.",
+  "mov": "Jorge lifts the flower pot slightly and tilts it to look underneath."
+ },
+ {
+  "id": "p027",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of the object that can be lifted by hand, such as a small container or lid.",
+  "mov": "A drop of water falls from the pot into the saucer, causing a tiny ripple."
+ },
+ {
+  "id": "p028",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The three adults stand in the patio, looking around. Claudio holds the flashlight, Lucia has her arms crossed, and Jorge stands with the hose. The patio is enclosed by a low white wall with peeling paint. A row of terracotta pots lines the wall. The black water tank is in the corner. The scene is lit by a single ceiling bulb, casting shadows.",
+  "mov": "Claudio sweeps the flashlight beam across the patio from left to right."
+ },
+ {
+  "id": "p029",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the narrator standing in the bedroom, ready to start the tutorial.",
+  "mov": "The hand lifts the lid and holds it open."
+ },
+ {
+  "id": "p030",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio, with his safety glasses on his forehead, looks into the open water tank, his face illuminated by the flashlight he holds. He shines the light into the tank. His expression is focused. The tank is in the foreground, and the patio wall is behind him. The scene is at night.",
+  "mov": "Claudio leans slightly forward and moves the flashlight inside the tank."
+ },
+ {
+  "id": "p031",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Inside the water tank, the flashlight beam reveals hundreds of mosquito larvae wriggling in the water. The water is slightly murky. The larvae are small and dark, moving actively. The tank's interior is smooth and black. The light creates a bright spot on the water surface.",
+  "mov": "The larvae squirm rapidly in the beam of light."
+ },
+ {
+  "id": "p032",
+  "sec": "CASA",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The three adults stand around the water tank in the patio. Claudio has the lid in his hand, Lucia looks into the tank with a concerned expression, and Jorge stands with the hose. The patio is dimly lit. The white wall with peeling paint and the row of flower pots are visible. The scene is at night.",
+  "mov": "Claudio places the lid back on the tank and looks at the others."
+ },
+ {
+  "id": "p033",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the doorway of Mateo's bedroom at night, holding a folded piece of white mosquito netting under one arm. The room is dimly lit by a small lamp on the nightstand. Two narrow single beds with striped woven blankets are visible, and a window with white iron bars and a thin curtain shows darkness outside.",
+  "mov": "Claudio lifts the netting slightly and steps forward into the room."
+ },
+ {
+  "id": "p034",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands hold a two-meter length of white mosquito netting, unrolling it partially. The fabric is translucent and fine. The background shows the beige ceramic floor and the edge of a bed with a striped blanket.",
+  "mov": "His hands pull the netting to unfold it further."
+ },
+ {
+  "id": "p035",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the mosquito net (tul) being held up or displayed to show its size.",
+  "mov": "The fan blades start to rotate slowly."
+ },
+ {
+  "id": "p036",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A close-up of the mosquito net package or the net itself to indicate the 'two meters' size.",
+  "mov": "A hand enters the frame and sprinkles a pinch of coffee onto the paper."
+ },
+ {
+  "id": "p037",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot showing the standing fan and the package of ground coffee together.",
+  "mov": "Claudio turns his head to look at the window."
+ },
+ {
+  "id": "p038",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands drape the mosquito netting over the headboard of Mateo's bed, adjusting it to cover the top and sides. The netting falls in soft folds. The striped blanket and pillow are underneath.",
+  "mov": "His hands tuck the edge of the netting under the mattress."
+ },
+ {
+  "id": "p039",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The mosquito netting is now closed around Mateo's bed, creating a translucent white canopy. Through the netting, the striped blanket and a small pillow are visible. The lamp light filters through the fabric, casting soft shadows.",
+  "mov": "The netting sways slightly as if just released."
+ },
+ {
+  "id": "p040",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot of the bed with the mosquito net fully closed and the fan positioned to the side.",
+  "mov": "The fan oscillates slowly from side to side."
+ },
+ {
+  "id": "p041",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the mosquito netting over the bed, with the fan's breeze causing it to billow slightly. Through the netting, the sleeping form of Mateo is suggested by a lump under the striped blanket. The lamp on the nightstand provides warm light.",
+  "mov": "The netting billows outward and settles."
+ },
+ {
+  "id": "p042",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Mateo, a 6-year-old boy in striped pajamas, lies asleep on his bed under the mosquito netting. His face is relaxed, and his arms are outside the blanket. The netting encloses the bed completely. The room is dim, with the lamp casting a soft glow. The other bed is empty.",
+  "mov": "Mateo's chest rises and falls with a breath."
+ },
+ {
+  "id": "p043",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands at the foot of Mateo's bed, looking down at the sleeping boy with a gentle smile. He holds a small flashlight in one hand, turned off. The netting and fan are visible. The room is quiet and dim.",
+  "mov": "Claudio nods slightly and turns his head toward the window."
+ },
+ {
+  "id": "p044",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Claudio's hand holds a small flashlight, shining it on the window bars. The light reveals that the window is closed and the thin curtain is drawn. No mosquitoes are visible on the glass or bars. The pale blue wall is illuminated by the beam.",
+  "mov": "The flashlight beam sweeps slowly across the window bars."
+ },
+ {
+  "id": "p045",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot of the bedroom interior emphasizing the absence of smoke or chemical sprays, perhaps showing the clean air or the mosquito net.",
+  "mov": "The coffee pours from his hand into the dish."
+ },
+ {
+  "id": "p046",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The shallow dish with ground coffee is placed near the window on the nightstand. The coffee is spread evenly. The window bars and dark night are behind it. The lamp casts a warm glow on the dish.",
+  "mov": "A hand adjusts the dish slightly."
+ },
+ {
+  "id": "p047",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands by the door, looking back at Mateo sleeping under the netting. The fan is on, and the room is tidy. The lamp is the only light. Claudio's face is calm and satisfied. Mateo is peaceful in bed.",
+  "mov": "Claudio reaches for the light switch and turns off the lamp."
+ },
+ {
+  "id": "p048",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "In the dark room, only the faint light from outside the window illuminates Claudio's silhouette as he stands in the doorway. The netting and fan are barely visible. The room is quiet and still.",
+  "mov": "Claudio steps back and closes the door slowly."
+ },
+ {
+  "id": "p049",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The closed door of the bedroom, seen from inside the room. The door is wooden and plain. The beige ceramic floor and pale blue wall are visible. No light comes from under the door. The room is dark except for the window.",
+  "mov": "The door handle turns slightly as if being checked from outside."
+ },
+ {
+  "id": "p050",
+  "sec": "PROMESA",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "foto": "The bedroom at night, now dark except for the faint light from the window. The netting over Mateo's bed is a soft white shape. The fan is off. The coffee dish sits on the nightstand. Everything is still and peaceful.",
+  "mov": "The curtain by the window flutters slightly."
+ },
+ {
+  "id": "p051",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of Claudio standing confidently in his work attire, perhaps holding fumigation equipment or standing next to his vehicle, to introduce himself as a professional fumigator.",
+  "mov": "Claudio slowly turns his head to look at the row of flower pots."
+ },
+ {
+  "id": "p052",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A shot of a clean, closed bedroom with no mosquitoes visible.",
+  "mov": "Claudio tips the saucer and pours the water out onto the cement floor."
+ },
+ {
+  "id": "p053",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the cement floor of the patio, where a small puddle of water spreads from an overturned terracotta saucer. The saucer lies on its side, and the cement is stained and rough. Nearby, the base of the low white wall with peeling paint and the open drain channel are visible. The light from the ceiling bulb reflects on the wet surface. No people are in the frame.",
+  "mov": "The puddle of water slowly spreads and seeps toward the drain channel."
+ },
+ {
+  "id": "p054",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A person holding a flashlight at night, inspecting a room or patio.",
+  "mov": "Claudio bends down and places the flower pot on the ground next to the drain channel."
+ },
+ {
+  "id": "p055",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of a bug bite on skin or a person inspecting a window or door frame for entry points.",
+  "mov": "Claudio shakes the pot once, and a last drop of water falls out."
+ },
+ {
+  "id": "p056",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A person turning on a water tap or managing a water container.",
+  "mov": "The trickle of water flows along the drain channel and disappears into a dark opening."
+ },
+ {
+  "id": "p057",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A person actively repairing a screen, window, or door to keep mosquitoes out.",
+  "mov": "Claudio lifts the end of the garden hose and connects it to a spigot on the wall."
+ },
+ {
+  "id": "p058",
+  "sec": "QUIEN",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio, standing on the cement patio, holds a flashlight in one hand, pointing it at the base of the low white wall. The beam of light illuminates the open drain channel and the surrounding cement. His face is visible, focused on the area. The patio is dimly lit by the ceiling bulb, and the black water tank and green hose are in the background. The back door of the house is closed.",
+  "mov": "Claudio moves the flashlight beam slowly along the drain channel."
+ },
+ {
+  "id": "p059",
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A close-up of a manual or notebook with the specific phrase written on it.",
+  "mov": "He turns a page of the notebook with his thumb."
+ },
+ {
+  "id": "p060",
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A person holding a piece of paper or phone, reading the phrase aloud in a hardware store.",
+  "mov": "A slight breeze from the open door makes the edge of the mesh roll flutter."
+ },
+ {
+  "id": "p061",
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A person at a hardware store counter asking for or holding a roll of mosquito netting.",
+  "mov": "He rubs the mesh between his fingers, testing its strength."
+ },
+ {
+  "id": "p062",
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A standing fan next to a package of ground coffee in a home setting.",
+  "mov": "One glove is lifted slightly by a draft, then settles back down."
+ },
+ {
+  "id": "p063",
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A person firmly declining an offer or a close-up of a specific product being recommended.",
+  "mov": "He nods slightly, acknowledging the owner's words."
+ },
+ {
+  "id": "p064",
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A pair of work gloves resting on a patio surface near sharp tools or debris.",
+  "mov": "He counts the bills and hands them over."
+ },
+ {
+  "id": "p065",
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "On the glass counter, a brown paper bag holds the roll of mesh, the gloves, and the coffee, all partially visible. The bag is slightly crumpled. Warm light from the side creates soft shadows. In the background, out of focus, are shelves with jars and boxes. No text or labels are visible.",
+  "mov": "The bag is lifted off the counter by its handles."
+ },
+ {
+  "id": "p066",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "foto": "The small cement back patio in warm late-afternoon light: stained floor, low white wall with peeling paint, open drain channel along its base, row of terracotta flower pots with saucers, black plastic water tank on rusty stand, green garden hose, back of house with white door and barred window. A mosquito hovers over a saucer with stagnant water. No people.",
+  "mov": "The mosquito lands on the water surface, creating tiny ripples."
+ },
+ {
+  "id": "p067",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A terracotta flower pot saucer filled with stagnant water, sitting on the cement floor near the wall. The water is dark and still, reflecting the warm light. Small particles float on the surface. No people.",
+  "mov": "A mosquito larva wriggles just below the water surface."
+ },
+ {
+  "id": "p068",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A small terracotta plant saucer and a standard plastic bucket containing stagnant water.",
+  "mov": "The mosquito dips toward the water, touching the surface."
+ },
+ {
+  "id": "p069",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of a clogged roof gutter and an old car tire holding rainwater.",
+  "mov": "A mosquito emerges from the water and flies upward."
+ },
+ {
+  "id": "p070",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "foto": "A shot showing multiple water-filled containers (tires, buckets, saucers) to represent the 'factories'.",
+  "mov": "A mosquito flies out from the water inside the tire."
+ },
+ {
+  "id": "p071",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The interior of the tire showing the stagnant water. On the water surface, numerous tiny mosquito larvae and pupae wriggle. The rubber is worn and cracked. Light reflects off the water.",
+  "mov": "Several larvae wiggle simultaneously, disturbing the surface."
+ },
+ {
+  "id": "p072",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio, in khaki work shirt with safety glasses on forehead, stands on the patio holding a mosquito coil in his right hand and a lighter in his left. He looks down at the coil. The white wall and flower pots are behind him. Warm light on his weathered skin.",
+  "mov": "He flicks the lighter, producing a small flame."
+ },
+ {
+  "id": "p073",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A mosquito coil smoldering on a metal stand on the cement floor. Smoke rises in a thin, steady stream. Beside it, a mosquito lies dead on the ground. The cement is stained. Warm light.",
+  "mov": "The smoke drifts and dissipates in the warm air."
+ },
+ {
+  "id": "p074",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands on the patio facing the house, pointing with his right hand toward the white door. His expression is serious. The patio, flower pots, and water tank are visible. Warm late-afternoon light. He looks at the door, not at the camera.",
+  "mov": "He moves his pointing hand from the door to the flower pots."
+ },
+ {
+  "id": "p075",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio crouches by a flower pot saucer, holding a small flashlight in his right hand, shining it on the water. His left hand holds a small empty bucket. The cement floor and wall are visible. Warm light.",
+  "mov": "He tilts the bucket to pour out a small amount of water from the saucer."
+ },
+ {
+  "id": "p076",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A wide shot of the patio showing water flowing or pooling in the yard.",
+  "mov": "The mosquito pulls its proboscis out and flies away."
+ },
+ {
+  "id": "p077",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A person walking through the patio at night holding a flashlight and a bucket.",
+  "mov": "Lucia writes in the notebook while Claudio shines the flashlight on a pot."
+ },
+ {
+  "id": "p078",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands on the patio, holding a green garden hose. He looks at the hose in his hands. His expression is focused. The white wall and flower pots are behind him. Warm late-afternoon light on his face.",
+  "mov": "He coils the hose into a neat loop."
+ },
+ {
+  "id": "p079",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A plastic bottle lying on its side on the cement floor, with a small amount of stagnant water inside. The bottle is clear and slightly crushed. The cement is stained. Warm light.",
+  "mov": "Claudio's hand enters the frame and picks up the bottle."
+ },
+ {
+  "id": "p080",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio stands by the wall, holding a bucket. He tips the bucket over a drain channel, pouring out water. His hands are visible, gripping the bucket handle. The white wall and drain are in view. Warm light.",
+  "mov": "He tips the bucket and water pours out into the drain."
+ },
+ {
+  "id": "p081",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing a collection of empty bottles, children's toys, and an old tire in the yard.",
+  "mov": "Claudio's hand reaches in and turns the toy over, emptying the water."
+ },
+ {
+  "id": "p082",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A shot showing a dog's water bowl in the yard.",
+  "mov": "Mateo points, and Claudio shines the flashlight on the pot."
+ },
+ {
+  "id": "p083",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands on the patio, holding an empty bucket and a flashlight. He looks down at the bucket with a satisfied expression. The white wall and flower pots are behind him. Warm light on his face.",
+  "mov": "He sets the bucket down on the cement floor."
+ },
+ {
+  "id": "p084",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot showing the dog's water bowl being changed or the bowl in its usual spot.",
+  "mov": "Claudio gestures with his right hand toward the bowl, then lowers it."
+ },
+ {
+  "id": "p085",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing a dog's water bowl with water in it, to contrast with the idea of just topping it off.",
+  "mov": "The water ripples slightly as a larva moves."
+ },
+ {
+  "id": "p086",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot showing the process of emptying and scrubbing the dog's water bowl before filling it.",
+  "mov": "The hand tips the bowl and the water pours out into the drain."
+ },
+ {
+  "id": "p087",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the dog Bruno next to his blue plastic water bowl.",
+  "mov": "The hand moves the brush back and forth inside the bowl."
+ },
+ {
+  "id": "p088",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot showing the blue plastic water bowl belonging to the dog Bruno.",
+  "mov": "Claudio holds the bowl under the hose as water flows in, then turns off the hose."
+ },
+ {
+  "id": "p089",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A close-up shot of the dog's water bowl showing the water and possibly mosquito eggs or larvae.",
+  "mov": "Lucia nods slightly and crosses her arms."
+ },
+ {
+  "id": "p090",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A wide shot of the patio showing the overturned bucket, the toy truck, and the cut plastic bottle.",
+  "mov": "The dog's tongue moves in and out as it drinks."
+ },
+ {
+  "id": "p091",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A close-up of the overturned bucket containing green water.",
+  "mov": "Claudio points at the bowl, and Mateo takes a step closer."
+ },
+ {
+  "id": "p092",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of the toy truck filled with rainwater.",
+  "mov": "Claudio writes in the notebook, then looks up."
+ },
+ {
+  "id": "p093",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A close-up of the cut plastic bottle used for watering.",
+  "mov": "Claudio takes a step forward and points toward the objects on the ground."
+ },
+ {
+  "id": "p094",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A shot showing the three objects (bucket, truck, bottle) together to indicate they all contain larvae.",
+  "mov": "Claudio's hand points steadily at the bucket, then he nods slightly."
+ },
+ {
+  "id": "p095",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of the water surface showing small larvae swimming.",
+  "mov": "One larva wriggles rapidly from the bottom to the surface of the water."
+ },
+ {
+  "id": "p096",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A macro shot of the tiny larvae in the water to show their small size.",
+  "mov": "Claudio tilts the toy truck, and water pours out in a thin stream."
+ },
+ {
+  "id": "p097",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the larvae moving up and down in the water.",
+  "mov": "The water in the truck bed ripples as a larva dives downward."
+ },
+ {
+  "id": "p098",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot of the water container or bucket teeming with larvae to represent the 'factory'.",
+  "mov": "Claudio pours water from the bottle into the pot, and the water flows over the rim."
+ },
+ {
+  "id": "p099",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of mosquito larvae or pupae in standing water, or an adult mosquito emerging.",
+  "mov": "A larva wriggles from the bottom of the bottle to the surface."
+ },
+ {
+  "id": "p100",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands in the patio, facing slightly toward the camera but looking down at a small container he holds in his hand. He wears his khaki work shirt and safety glasses on his forehead. His expression is serious. Behind him, the black plastic water tank on its rusty stand and the green garden hose on the ground. Warm late-afternoon light casts soft shadows.",
+  "mov": "Claudio raises the container slightly and tilts it to show the water inside."
+ },
+ {
+  "id": "p101",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the water in the small container Claudio holds. The water is clear, and several tiny mosquito larvae, less than a centimeter long, move up and down. Their bodies are segmented and they have small tails. The water surface reflects the warm light. The container's edge is visible, held by Claudio's fingers.",
+  "mov": "One larva swims upward, then another follows, moving in a wriggling motion."
+ },
+ {
+  "id": "p102",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands hold a small hand over the container of water, focusing on the larvae. His other hand steadies the container. The is simple, with a black rim. In the background, the cement patio floor and the terracotta pots along the wall. The warm light illuminates the water and the larvae inside.",
+  "mov": "Claudio moves the lens slightly closer to the water, adjusting the focus."
+ },
+ {
+  "id": "p103",
+  "sec": "ARREGLO1",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view through the hand : the mosquito larvae appear larger and more detailed. They are pale and segmented, with tiny hairs. They wriggle up and down in the water. The creates a slight distortion at the edges. In the background, out of focus, the cement floor and the base of the white wall with peeling paint.",
+  "mov": "A larva wriggles upward, then dives back down, staying in focus through the lens."
+ },
+ {
+  "id": "p104",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "In the small cement back patio of the Ramirez house, warm late-afternoon light falls on a row of ten terracotta flower pots with saucers along a low white-painted wall with peeling paint. Claudio, in khaki work shirt and safety glasses on forehead, stands beside Lucia, who wears a gray t-shirt and jeans. Each saucer holds water. Claudio gestures toward the pots.",
+  "mov": "Claudio points at the saucers with his right hand."
+ },
+ {
+  "id": "p105",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A wide shot of Lucía's patio showing the row of potted plants with their saucers.",
+  "mov": "A light breeze creates ripples on the water surface."
+ },
+ {
+  "id": "p106",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A clear shot of the ten flower pots lined up with their respective saucers.",
+  "mov": "Claudio's hand tips the saucer and water pours out."
+ },
+ {
+  "id": "p107",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of a saucer filled with water.",
+  "mov": "A last droplet rolls down the inner side of the saucer."
+ },
+ {
+  "id": "p108",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio, with safety glasses on his forehead, holds a small bag of clean sand. He pours sand into the empty saucer held in his other hand. His face is focused on the task. Lucia stands nearby, watching. The patio setting with pots and the water tank is visible.",
+  "mov": "Claudio pours sand from the bag into the saucer."
+ },
+ {
+  "id": "p109",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of the damp sand in the saucer, emphasizing the absence of standing water.",
+  "mov": "A few grains of sand settle as the mound forms."
+ },
+ {
+  "id": "p110",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot showing the damp sand surface in the saucer, illustrating the lack of a water layer.",
+  "mov": "Claudio's hand presses the sand down."
+ },
+ {
+  "id": "p111",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the sand in the saucer after being pressed. The surface is now flat and slightly damp-looking, but not waterlogged. The sand is compacted. The terracotta rim of the saucer is visible.",
+  "mov": "The sand surface settles slightly as it absorbs moisture."
+ },
+ {
+  "id": "p112",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio holds a green garden hose and lets a small stream of water run onto the sand in the saucer. He watches the sand become moist. His face shows concentration. Lucia stands beside him, observing. The patio with pots and the water tank is in the background.",
+  "mov": "Water flows from the hose onto the sand."
+ },
+ {
+  "id": "p113",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The saucer with damp sand: the sand is now darker and clumped together, but no free water stands on the surface. The moisture is absorbed. The terracotta saucer sits on the cement floor, with the white wall behind.",
+  "mov": "A small amount of water is absorbed into the sand."
+ },
+ {
+  "id": "p114",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio and Lucia stand in the patio. Claudio holds the saucer with damp sand and places it under a terracotta pot. Lucia watches. The row of pots is along the wall. The warm late-afternoon light casts long shadows.",
+  "mov": "Claudio slides the saucer under the pot."
+ },
+ {
+  "id": "p115",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of the pot showing the wet sand, or a shot of the woman asking the question.",
+  "mov": "The pot settles onto the saucer."
+ },
+ {
+  "id": "p116",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "The small cement back patio with ten terracotta pots along the white wall. Each pot now sits on a saucer filled with damp sand, no standing water. Claudio and Lucia stand back, looking at the row. Claudio has a satisfied expression. The black water tank and green hose are in the background. Warm late-afternoon light.",
+  "mov": "Claudio nods slightly, and Lucia smiles."
+ },
+ {
+  "id": "p117",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "In the late-afternoon light on the small cement back patio of the Ramirez house, Lucia stands beside a row of terracotta flower pots with saucers, pointing at the dark soil in one pot. Claudio, in his khaki work shirt, stands nearby holding a green garden hose, his back partly to the camera. The stained cement floor, peeling white wall, and black water tank on a rusty stand are visible.",
+  "mov": "Lucia points at the soil in the pot."
+ },
+ {
+  "id": "p118",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio, facing the camera but looking down at the pot, holds the green hose and pours a thin stream of water onto the soil in a terracotta pot. His safety glasses are pushed up on his forehead, and his expression is focused. The pot sits on a saucer on the cement patio, with the peeling white wall behind him.",
+  "mov": "Claudio tips the hose nozzle and water pours onto the soil."
+ },
+ {
+  "id": "p119",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the man explaining the concept while pointing at the pot or the water.",
+  "mov": "A drop of water falls from the pot's drainage hole onto the dry saucer and spreads."
+ },
+ {
+  "id": "p120",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands hold the green hose, directing water into a terracotta pot. The water soaks into the soil without pooling. His khaki shirt sleeve is visible. In the background, the row of pots and the peeling white wall are slightly out of focus. The cement floor shows old stains.",
+  "mov": "Claudio's hand adjusts the hose nozzle, reducing the water flow."
+ },
+ {
+  "id": "p121",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of a potted plant sitting in a saucer filled with water.",
+  "mov": "A thin stream of water from above soaks into the soil and disappears."
+ },
+ {
+  "id": "p122",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A shot of a plant saucer with water being poured out or a plant with dry soil.",
+  "mov": "Lucia takes a step toward the pot with water in its saucer."
+ },
+ {
+  "id": "p123",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of a finger touching the soil to check for moisture.",
+  "mov": "Claudio shakes his head from side to side."
+ },
+ {
+  "id": "p124",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of a terracotta pot's saucer filled with standing water. The water is still and reflects the late-afternoon light. The pot sits on the stained cement floor. The base of the white wall and a bit of the green hose are visible in the background.",
+  "mov": "The water in the saucer ripples slightly as a mosquito larva wriggles."
+ },
+ {
+  "id": "p125",
+  "sec": "ARREGLO2",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands tip the saucer and pour the standing water onto the cement floor, where it spreads and drains away. The terracotta pot is lifted slightly. The green hose lies nearby. The cement floor shows the wet patch. The late-afternoon light highlights the water flow.",
+  "mov": "Claudio tips the saucer and water pours out onto the cement."
+ },
+ {
+  "id": "p126",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of a person cleaning leaves out of a roof gutter.",
+  "mov": "Claudio tilts his head up and points at the gutter with his right hand."
+ },
+ {
+  "id": "p127",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot of a patio drain with water pooling around it.",
+  "mov": "Claudio's hands push the ladder firmly against the wall."
+ },
+ {
+  "id": "p128",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A person climbing a ladder to inspect a roof gutter.",
+  "mov": "A small trickle of water drips from the gutter edge."
+ },
+ {
+  "id": "p129",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of a gutter filled with leaves, stagnant water, and mud.",
+  "mov": "Claudio's hand reaches into the gutter and pulls out a handful of wet leaves."
+ },
+ {
+  "id": "p130",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of mosquito larvae or eggs in stagnant water.",
+  "mov": "Claudio's hand squeezes the mud, and water drips down."
+ },
+ {
+  "id": "p131",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A shot of the Ramirez house patio gutter.",
+  "mov": "Jorge lifts a bucket and holds it up toward Claudio."
+ },
+ {
+  "id": "p132",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Jorge, in his navy polo shirt, stands on the cement patio and holds a bucket under the gutter. His arms are extended. The white wall with peeling paint and the terracotta pots are behind him. The black water tank is in the corner. Warm light.",
+  "mov": "Jorge tilts the bucket to catch falling debris."
+ },
+ {
+  "id": "p133",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The open drain channel along the base of the white wall. Inside, dark stagnant water and black mud are visible, with small larvae wriggling. The cement floor is stained. A terracotta pot saucer is nearby. Warm late-afternoon light shines on the water surface.",
+  "mov": "The water in the channel ripples slightly as larvae move."
+ },
+ {
+  "id": "p134",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio kneels on the cement patio, looking into the drain channel. His face is visible, showing concentration. He wears his khaki shirt and safety glasses on his forehead. The channel is filled with dark water and mud. The white wall and terracotta pots are around him. Warm light.",
+  "mov": "Claudio uses a small trowel to scoop mud from the channel."
+ },
+ {
+  "id": "p135",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the drain channel with black water and mud. Several mosquito larvae are visible, wriggling in the water. The cement edge is stained. A bit of green hose lies nearby. Warm late-afternoon light penetrates the water slightly.",
+  "mov": "Larvae wiggle rapidly in the water."
+ },
+ {
+  "id": "p136",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Claudio and Jorge stand on the cement patio, looking at the now-cleared gutter and drain channel. Claudio holds a bucket of debris. Jorge has a shovel. The patio is tidy, with terracotta pots, black water tank, and green hose. The white wall and back door are visible. Warm late-afternoon light.",
+  "mov": "Claudio pours the bucket of debris into a plastic bag."
+ },
+ {
+  "id": "p137",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands on the patio, holding a plastic bag with debris. He looks at the drain channel, satisfied. His face is visible, with safety glasses on his forehead. The white wall, terracotta pots, and black water tank are in the background. Warm late-afternoon light.",
+  "mov": "Claudio ties the plastic bag closed."
+ },
+ {
+  "id": "p138",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A close-up of a person using a rod to unclog the drain while pouring boiling water into it.",
+  "mov": "Claudio lifts the metal grate of the drain channel with both hands."
+ },
+ {
+  "id": "p139",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Inside the open drain channel, dark stagnant water sits still. The metal grate is lifted and held aside. The cement edges are stained and damp. Bits of debris float on the water surface. Warm light from the side reveals the murky water.",
+  "mov": "The water surface ripples slightly as the grate is moved away."
+ },
+ {
+  "id": "p140",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio kneels beside the open drain, his face visible in profile, focused on the water. He holds a long metal rod in his right hand, inserting it into the drain. His left hand rests on his knee. The patio background shows the white wall and flower pots.",
+  "mov": "Claudio pushes the rod down into the drain and moves it back and forth."
+ },
+ {
+  "id": "p141",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A metal bucket sits on the cement floor next to the drain. Steam rises from the hot water inside. The bucket is plain and dented. The drain opening is nearby, with the rod leaning against the wall. Warm light catches the steam.",
+  "mov": "Steam swirls and rises from the bucket."
+ },
+ {
+  "id": "p142",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands, holding the bucket, tilt it to pour hot water into the open drain. Water flows from the bucket into the drain channel. His hands are visible, the bucket tilted. The drain is below. The patio floor and wall base are in the background.",
+  "mov": "The bucket tips and water pours out into the drain."
+ },
+ {
+  "id": "p143",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Hot water flows into the drain, mixing with the stagnant water. Small bubbles and steam rise. The water level rises slightly. The cement edges are wet. The metal grate lies aside. Warm light highlights the steam.",
+  "mov": "Water swirls and bubbles in the drain."
+ },
+ {
+  "id": "p144",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio stands up, holding the empty bucket. Jorge, in navy polo, stands nearby, looking at the drain. The patio is in warm late-afternoon light. The white wall, flower pots, and water tank are visible. Claudio's safety glasses are on his forehead.",
+  "mov": "Claudio sets the bucket down on the ground."
+ },
+ {
+  "id": "p145",
+  "sec": "ARREGLO3",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The drain grate is back in place over the drain channel. Water droplets on the metal. The cement around is wet. In the background, the green hose and a terracotta pot. Warm light casts soft shadows.",
+  "mov": "A last drop of water falls from the grate into the drain."
+ },
+ {
+  "id": "p146",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the children's bedroom at night, holding a white electric fan. Mateo, in striped pajamas, sits on one of the narrow single beds with striped woven blankets. Pale blue walls, window with white iron bars and thin curtain, dark outside. A small wooden nightstand with a lamp, toys on the beige ceramic floor. Claudio looks at the fan, not at the camera.",
+  "mov": "Claudio turns the fan slightly in his hands."
+ },
+ {
+  "id": "p147",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands place the white electric fan on the beige ceramic floor, aiming it toward the single bed. The bed has a striped woven blanket. In the background, the pale blue wall and the window with white iron bars. The room is lit by a lamp on the nightstand. Toys are scattered on the floor.",
+  "mov": "The hands adjust the fan's tilt, then release it."
+ },
+ {
+  "id": "p148",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The control knob of the white electric fan, set to the medium speed position. The fan is on the beige ceramic floor, near the leg of the single bed with striped woven blanket. The pale blue wall and the window with white iron bars are visible in the background. The lamp on the nightstand casts a warm light.",
+  "mov": "The knob is turned from low to medium speed."
+ },
+ {
+  "id": "p149",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The man points the fan towards the child sitting on the bed.",
+  "mov": "The fan's blades spin, and the thin curtain by the window flutters slightly."
+ },
+ {
+  "id": "p150",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands by the single bed, looking down at the white electric fan on the floor. He wears a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead. The bed has a striped woven blanket. The pale blue wall and the window with white iron bars are behind him. The lamp on the nightstand lights the scene.",
+  "mov": "Claudio nods slightly and gestures with his hand toward the fan."
+ },
+ {
+  "id": "p151",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A mosquito in mid-air near the blowing white electric fan. The fan is on the beige ceramic floor, and its breeze disturbs the mosquito's flight. The leg of the single bed with striped woven blanket is visible. The pale blue wall and the window with white iron bars are in the background. The lamp on the nightstand provides warm light.",
+  "mov": "The mosquito is pushed sideways by the air current."
+ },
+ {
+  "id": "p152",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The white electric fan blows air across the room. Mateo, in striped pajamas, sleeps under a striped woven blanket on the single bed. Claudio stands near the door, watching. The pale blue walls, the window with white iron bars, the nightstand with lamp, and toys on the beige ceramic floor are visible. The room is dimly lit, night outside.",
+  "mov": "The fan oscillates slowly from side to side."
+ },
+ {
+  "id": "p153",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands in the children's bedroom, looking at the white electric fan on the floor. He wears a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead. The single bed with striped woven blanket is beside him. The pale blue wall and the window with white iron bars are behind. The lamp on the nightstand lights his face.",
+  "mov": "Claudio raises his hand and moves it in a sweeping gesture, indicating the air flow."
+ },
+ {
+  "id": "p154",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the boy sleeping in bed with the fan blowing air across the room.",
+  "mov": "The curtain flutters continuously in the fan's breeze."
+ },
+ {
+  "id": "p155",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Mateo, in striped pajamas, sleeps peacefully under a striped woven blanket on the single bed. The white electric fan on the beige ceramic floor blows air toward him. The pale blue walls, the window with white iron bars and thin curtain, and the nightstand with lamp are visible. Toys are on the floor. The room is dimly lit, night outside.",
+  "mov": "Mateo shifts slightly in his sleep, and the blanket moves."
+ },
+ {
+  "id": "p156",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Mateo sleeps peacefully on his narrow single bed with a striped woven blanket in the children's bedroom. A tall standing fan is positioned about one meter from the bed, angled to the side, not directly at his face. The room is dimly lit by a ceiling bulb, and outside the window with white iron bars it is dark. A few toys lie on the beige ceramic floor.",
+  "mov": "Mateo's chest rises and falls slowly as he breathes in his sleep."
+ },
+ {
+  "id": "p157",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A wide shot showing the fan positioned one meter from the bed, pointing sideways rather than directly at the pillow.",
+  "mov": "Claudio's hand reaches out and turns the fan's speed knob to the medium setting."
+ },
+ {
+  "id": "p158",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A clear shot of Mateo sleeping peacefully in his bed, showing his skin free of new mosquito bites.",
+  "mov": "The fan blades continue to spin steadily."
+ },
+ {
+  "id": "p159",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Mateo sleeps on his side, his face relaxed. The standing fan is visible in the background, angled to the side. The striped blanket covers him. On the nightstand, a small lamp casts a warm glow. The window with white iron bars shows night outside. No mosquito net is present.",
+  "mov": "Mateo shifts slightly, pulling the blanket up to his chin."
+ },
+ {
+  "id": "p160",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A clear shot showing the fan placed very close to the bed at a high speed setting, illustrating the mistake being described.",
+  "mov": "A gentle breeze from the fan causes the blanket's edge to flutter slightly."
+ },
+ {
+  "id": "p161",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of the fan oscillating loudly next to a child trying to sleep.",
+  "mov": "Claudio shakes his head slowly and points at the fan's position near the bed."
+ },
+ {
+  "id": "p162",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the standing fan placed very close to the bed, only a few centimeters from the mattress. The fan is set to high speed, and the blades are a blur. The bed's striped blanket is visible. The fan's power cord stretches across the beige ceramic floor. The lighting is from the ceiling bulb.",
+  "mov": "The fan blades spin rapidly, and the fan vibrates slightly."
+ },
+ {
+  "id": "p163",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A close-up of the fan's control dial set to medium speed and its head tilted slightly downward.",
+  "mov": "Mateo turns his head and pulls the blanket over his ear, trying to block the noise."
+ },
+ {
+  "id": "p164",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of Mateo's throat and neck area. The skin appears slightly dry and red. He is wearing striped pajamas. The fan's strong breeze is directed at him from a very short distance. The lighting is dim, and the background is blurred. No text is visible.",
+  "mov": "Mateo swallows uncomfortably, and his hand reaches up to touch his throat."
+ },
+ {
+  "id": "p165",
+  "sec": "ARREGLO4",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands in the children's bedroom, adjusting the standing fan. He moves it to about one meter from the bed and tilts it slightly to the side. He wears his khaki work shirt and safety glasses on his forehead. The room is dimly lit by the ceiling bulb. The window shows night outside.",
+  "mov": "Claudio's hand pushes the fan back and tilts it away from the bed."
+ },
+ {
+  "id": "p166",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "A clear shot of the mosquito net fabric being held up or displayed in the room.",
+  "mov": "Claudio unrolls the mosquito netting a little, letting it hang down."
+ },
+ {
+  "id": "p167",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Claudio's hands hold a measuring tape against the white mosquito netting, marking a length. The netting is spread on the beige ceramic floor of the children's bedroom. In the background, the window with white iron bars and a thin curtain is visible. Warm late-afternoon light falls on the scene.",
+  "mov": "Claudio's hand slides the measuring tape along the netting."
+ },
+ {
+  "id": "p168",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of hands attaching the mosquito net to a window frame using velcro or staples.",
+  "mov": "Claudio's hand closes the scissors, cutting the netting."
+ },
+ {
+  "id": "p169",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the mosquito net draped over a bed frame like a canopy.",
+  "mov": "Claudio's fingers press the velcro firmly onto the netting."
+ },
+ {
+  "id": "p170",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio attaches the mosquito netting to the window with velcro. His hands work at the corner of the window, securing the netting. The white iron bars and the thin curtain are visible. The children's bedroom with pale blue walls and the small wooden nightstand with a lamp is in the background. Warm late-afternoon light.",
+  "mov": "Claudio's hand smooths the velcro strip along the window frame."
+ },
+ {
+  "id": "p171",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A staple gun in Claudio's hand presses a staple into the wooden frame, securing the mosquito netting. The netting is stretched over the frame. The beige ceramic floor and a toy are visible below. Warm late-afternoon light.",
+  "mov": "Claudio's hand squeezes the staple gun, driving a staple into the wood."
+ },
+ {
+  "id": "p172",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "In the children's bedroom, Claudio and Jorge lift a wooden frame covered with mosquito netting and place it over one of the single beds, creating a canopy. The bed has a striped woven blanket. The window with white iron bars is in the background. Warm late-afternoon light fills the room.",
+  "mov": "Claudio and Jorge lower the netted frame over the bed."
+ },
+ {
+  "id": "p173",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A single bed with a striped woven blanket is covered by a mosquito net canopy. The netting hangs down, enclosing the bed. The beige ceramic floor and a toy are visible. Warm late-afternoon light shines through the netting.",
+  "mov": "The netting sways gently as it settles around the bed."
+ },
+ {
+  "id": "p174",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of the mosquito netting material or the window area, emphasizing the absence of chemical sprays or smoke.",
+  "mov": "Claudio nods slightly, his eyes moving over the netting."
+ },
+ {
+  "id": "p175",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the mosquito netting over the bed. Through the mesh, the striped woven blanket and a pillow are visible. The netting is taut and clean. Warm late-afternoon light filters through, creating a soft glow.",
+  "mov": "A slight breeze makes the netting ripple gently."
+ },
+ {
+  "id": "p176",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Claudio and Jorge stand in the children's bedroom, looking at the bed with the mosquito net canopy. The room has two single beds, pale blue walls, a window with white iron bars, a small wooden nightstand with a lamp, and toys on the beige ceramic floor. Warm late-afternoon light fills the space.",
+  "mov": "Claudio gestures with his hand toward the netted bed, and Jorge turns his head to look."
+ },
+ {
+  "id": "p177",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of the window in Mateo's room showing the tulle net attached with velcro on all four sides.",
+  "mov": "Claudio presses a velcro square onto the tulle, securing it to the window frame."
+ },
+ {
+  "id": "p178",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the window's white iron bars. White tulle is stretched over them, held by small velcro squares at the corners. The fabric is slightly translucent, showing the bars underneath. The late-afternoon light filters through the tulle, casting a soft glow on the beige ceramic floor.",
+  "mov": "A gentle breeze makes the tulle billow slightly outward."
+ },
+ {
+  "id": "p179",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot of the closed tulle net on the window at night, or the man standing inside the room looking at the window.",
+  "mov": "The window sash slides upward, opening the window."
+ },
+ {
+  "id": "p180",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the window frame with the tulle attached by velcro on all four sides. The velcro strips are visible at the top, bottom, and sides. The tulle is taut and smooth. Through the window, the late-afternoon sky is seen. The beige ceramic floor below reflects a bit of light.",
+  "mov": "A hand enters the frame and gently tugs on the tulle, testing its attachment."
+ },
+ {
+  "id": "p181",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A close-up of a fan running near a window with a mesh screen, showing insects flying around.",
+  "mov": "Claudio points at the tulle on the window while speaking."
+ },
+ {
+  "id": "p182",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A view of the window screen or net, emphasizing its role in keeping insects out.",
+  "mov": "Claudio switches on the fan, and the blades start to rotate."
+ },
+ {
+  "id": "p183",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing dead insects on the floor or windowsill inside the room.",
+  "mov": "A mosquito lands on the tulle, then flies away."
+ },
+ {
+  "id": "p184",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A shot of the fan operating at night, perhaps with a focus on the airflow or the insects being affected.",
+  "mov": "Claudio nods slightly as he speaks."
+ },
+ {
+  "id": "p185",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the fan on the nightstand. The blades are spinning, creating a blur. A few mosquitoes are caught in the airflow, tumbling and struggling to fly. The fan's oscillation moves the air around the room. The beige ceramic floor and the edge of a bed are visible in the background.",
+  "mov": "The fan oscillates from side to side, blowing air across the room."
+ },
+ {
+  "id": "p186",
+  "sec": "ARREGLO5",
+  "lugar": "cuarto_chicos",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "In the bedroom, Claudio stands by the window with the tulle, and Jorge is near the door. The fan is on the nightstand, blowing air. The room is in warm late-afternoon light. The two single beds with striped blankets are neatly made. Toys are on the floor. Claudio and Jorge look at each other, conversing.",
+  "mov": "Claudio gestures toward the fan and then the window, explaining the setup."
+ },
+ {
+  "id": "p187",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "mateo"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of the materials needed for the coffee fix, such as a bag of coffee or a clay dish.",
+  "mov": "Claudio lifts the clay dish slightly, showing the coffee grounds to Lucia and Mateo."
+ },
+ {
+  "id": "p188",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the coffee being scooped in the same courtyard as the previous shots.",
+  "mov": "The spoon deposits the coffee grounds onto a small clay dish with a soft thud."
+ },
+ {
+  "id": "p189",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A shot of the ground coffee being placed into the clay dish.",
+  "mov": "Claudio strikes a match, and a small flame flickers to life."
+ },
+ {
+  "id": "p190",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of a hand lighting the coffee in the clay dish with a match.",
+  "mov": "The match touches the grounds, and a small flame spreads, turning the coffee into glowing embers."
+ },
+ {
+  "id": "p191",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of the coffee in the clay dish glowing as embers.",
+  "mov": "Claudio gently blows on the embers, and the smoke thickens and swirls upward."
+ },
+ {
+  "id": "p192",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the clay dish on the cement floor. The coffee grounds are now glowing orange embers, and a steady plume of white smoke rises. The smoke drifts upward against the backdrop of the peeling white wall and a green garden hose coiled nearby.",
+  "mov": "The smoke curls and spreads slowly in the warm air."
+ },
+ {
+  "id": "p193",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The patio scene: Claudio stands near the smoking clay dish, Lucia fans the smoke with her hand toward the open area, and Mateo sits on the cement floor, watching the smoke with wide eyes. The row of terracotta pots and the water tank are visible. The late-afternoon light casts long shadows.",
+  "mov": "Lucia waves her hand, and the smoke drifts toward the drain channel."
+ },
+ {
+  "id": "p194",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio looks at the smoking dish, then at the empty patio. He shakes his head slightly. He wears his khaki work shirt, and his safety glasses are still on his forehead. The white door of the house is behind him. The smoke from the coffee grounds continues to rise.",
+  "mov": "Claudio gestures with his hand, indicating the limited area the smoke covers."
+ },
+ {
+  "id": "p195",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the family sitting together in the courtyard at night, with the smoking pot nearby to indicate an emergency situation.",
+  "mov": "His finger moves from the net to the fan, emphasizing them."
+ },
+ {
+  "id": "p196",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Lucia and Mateo sit on the cement patio near the barred window. Lucia is showing Mateo how to use a fly swatter. Mateo, in striped pajamas, holds a small net. The black water tank and terracotta pots are in the background. The warm light highlights the scene.",
+  "mov": "Lucia demonstrates a swatting motion, and Mateo mimics her."
+ },
+ {
+  "id": "p197",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands with his arms crossed, looking at the smoking coffee dish. His expression is serious. He is in the center of the patio, with the low white wall and peeling paint behind him. The smoke has thinned to a faint wisp. The garden hose lies coiled on the ground.",
+  "mov": "Claudio uncrosses his arms and points a finger upward, as if making a point."
+ },
+ {
+  "id": "p198",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the family continuing their conversation or the mother gesturing towards the house to emphasize that the source of the mosquitoes remains outside.",
+  "mov": "A gentle breeze moves the net slightly, but the fan remains still."
+ },
+ {
+  "id": "p199",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The family on the patio: Claudio stands near the smoking dish, Lucia and Mateo sit on the cement floor. The smoke from the coffee grounds is now minimal. The water tank, terracotta pots, and garden hose are all visible. The warm light of late afternoon fills the space.",
+  "mov": "Claudio picks up the clay dish and moves it aside, and the smoke dissipates."
+ },
+ {
+  "id": "p200",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio holds the clay dish with the now-cooled coffee grounds. He looks at it with a resigned expression. He wears his khaki work shirt, and the safety glasses are still on his forehead. The white door and barred window are behind him. The patio is quiet.",
+  "mov": "Claudio sets the dish down on the cement floor with a soft clink."
+ },
+ {
+  "id": "p201",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The clay dish with spent coffee grounds sits on the cement floor. Beside it, the green garden hose is coiled. In the background, the white electric fan and the mosquito net over the window are visible. The warm light fades slightly, signaling the end of the afternoon.",
+  "mov": "A last wisp of smoke rises from the dish and fades away."
+ },
+ {
+  "id": "p202",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The small cement back patio of the Ramirez house in warm late-afternoon light. A stained cement floor, a low white-painted wall with peeling paint and an open drain channel along its base. Terracotta flower pots with saucers line the wall. A black plastic water tank on a rusty metal stand sits in one corner. A green garden hose lies on the ground. The back of the one-story house shows a white door and a barred window. On an outdoor table, a clay dish with coffee. Claudio, Lucia, and Mateo stand around the table.",
+  "mov": "Claudio places the clay dish on the table."
+ },
+ {
+  "id": "p203",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio, a 58-year-old Latin American pest-control technician with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned weathered skin, wearing a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead. He stands beside the outdoor table on the cement patio, looking down at the clay dish with coffee. Thin wisps of smoke rise from the dish. The low white-painted wall and terracotta pots are behind him.",
+  "mov": "Claudio waves his hand over the dish, clearing the smoke."
+ },
+ {
+  "id": "p204",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A clay dish with extinguished, cold ashes and no smoke coming out.",
+  "mov": "The smoke drifts slowly upward and to the side."
+ },
+ {
+  "id": "p205",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "People reacting to mosquitoes returning after the smoke has died down.",
+  "mov": "Lucia gently places her hand on Mateo's shoulder."
+ },
+ {
+  "id": "p206",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The clay dish with coffee on the outdoor table. The coffee surface is still, and no smoke rises from it. The dish is slightly stained. The table surface shows wear. In the background, the low white-painted wall with peeling paint and a terracotta pot with a saucer are visible. Warm late-afternoon light falls on the scene. The cement floor and drain channel are at the bottom.",
+  "mov": "The last wisp of smoke fades and disappears."
+ },
+ {
+  "id": "p207",
+  "sec": "ARREGLO6",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "The small cement back patio of the Ramirez house in warm late-afternoon light. Claudio, Lucia, and Mateo stand around the outdoor table with the clay dish. Several mosquitoes fly near them. Claudio looks at the dish, then at the air around. Lucia waves her hand near her face. Mateo stands close to Lucia. The low white-painted wall, terracotta pots, black water tank, green hose, and the back of the house with a white door and barred window are all visible.",
+  "mov": "A mosquito flies close to Claudio's arm and he swats at it."
+ },
+ {
+  "id": "p208",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A clear shot of the repellent plants (citronella, rosemary, basil) lined up.",
+  "mov": "Claudio waves his hand dismissively toward the plants."
+ },
+ {
+  "id": "p209",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing both the citronella and rosemary plants together.",
+  "mov": "A leaf sways slightly in a gentle breeze."
+ },
+ {
+  "id": "p210",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A close-up of the basil plant being touched or shown.",
+  "mov": "His hand moves over the rosemary leaves."
+ },
+ {
+  "id": "p211",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A basil plant with broad green leaves in a terracotta pot. The pot is on the cement floor, next to a saucer. The white wall with peeling paint is in the background. Warm light highlights the texture of the leaves.",
+  "mov": "A basil leaf trembles slightly."
+ },
+ {
+  "id": "p212",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of a person pausing next to a flower pot, reacting to a smell.",
+  "mov": "Claudio shakes his head slowly."
+ },
+ {
+  "id": "p213",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A mosquito coil burning on a small metal stand on the cement floor. A thin wisp of smoke rises. Nearby, a potted plant is visible. The white wall with peeling paint is in the background. Warm light from the late afternoon.",
+  "mov": "The smoke from the coil drifts upward."
+ },
+ {
+  "id": "p214",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot of a lit mosquito coil placed in the patio area with the door closed in the background.",
+  "mov": "His hand places the coil on the stand."
+ },
+ {
+  "id": "p215",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "An aerosol can on the cement floor next to a terracotta pot. The can is plain, with no visible label. The white wall with peeling paint is behind it. The drain channel runs along the base of the wall.",
+  "mov": "A slight breeze moves a nearby leaf."
+ },
+ {
+  "id": "p216",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Medium shot, late afternoon, outside on the tiled patio of the house. The fumigator, in his khaki work shirt, holds a plain red aerosol can out at arm's length with the nozzle pointing away from himself, and pinches his nose shut with his free hand, turning his face aside. A meter away on the ground, a small metal electric fan blows the thin mist sideways past him into the open air. Behind him, a white wall with a barred window and two terracotta pots. Open sky, plenty of ventilation, nobody else around.",
+  "mov": "Claudio turns the can in his hand."
+ },
+ {
+  "id": "p217",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of a closed room filled with smoke from a mosquito coil.",
+  "mov": "A curtain inside the window moves slightly."
+ },
+ {
+  "id": "p218",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot showing the spray directly hitting and killing a mosquito or insect.",
+  "mov": "His finger presses the nozzle, releasing a spray."
+ },
+ {
+  "id": "p219",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of mosquitoes flying freely in the air outside, unaffected by the spray.",
+  "mov": "The last bit of the coil glows and turns to ash."
+ },
+ {
+  "id": "p220",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands on the patio, looking at the potted plants and the coil. He has a thoughtful expression. The black water tank and green hose are in the background. The cement floor is stained. Late-afternoon light casts shadows.",
+  "mov": "Claudio crosses his arms and looks down at the plants."
+ },
+ {
+  "id": "p221",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A person lying in bed looking unwell, perhaps with a thermometer, to illustrate someone suffering from a high fever.",
+  "mov": "Claudio lowers the clipboard and looks up, his eyes scanning the patio."
+ },
+ {
+  "id": "p222",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A person touching their sore muscles or a person visiting a doctor's office to represent body aches and seeking medical help.",
+  "mov": "The hand makes a checkmark with a pen on the paper."
+ },
+ {
+  "id": "p223",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A view of a neighboring patio or yard to illustrate the area being discussed.",
+  "mov": "Claudio tilts the pot slightly to show the water in the saucer."
+ },
+ {
+  "id": "p224",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "An uncovered water storage tank in a neighbor's yard to match the narration about asking a neighbor to cover it.",
+  "mov": "The water ripples as larvae move."
+ },
+ {
+  "id": "p225",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of mosquitoes or a general view of the yard to transition to the next point about persistent mosquito populations.",
+  "mov": "Claudio takes a step towards the water tank."
+ },
+ {
+  "id": "p226",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A person searching a yard or looking closely at potential hidden water sources to represent the search for stagnant water.",
+  "mov": "The hands lift the lid and hold it open."
+ },
+ {
+  "id": "p227",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A person inspecting a hidden or hard-to-reach area where water might accumulate, to match the narration about finding hidden water.",
+  "mov": "The water surface ripples slightly."
+ },
+ {
+  "id": "p228",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A close-up of an uncovered tank or a well opening to match the narration about specific water sources.",
+  "mov": "Claudio crouches down to inspect the drain channel."
+ },
+ {
+  "id": "p229",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of a sink drain or the base of a washing area to match the narration about specific water collection points.",
+  "mov": "Water in the channel moves slightly, revealing more debris."
+ },
+ {
+  "id": "p230",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of the manual open to page seventeen, showing the exact measurements.",
+  "mov": "Claudio points at the base of the air conditioning unit."
+ },
+ {
+  "id": "p231",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of the base of the air conditioning unit, showing a small puddle of water. The metal base is rusty. The cement floor around is damp. Warm light reflects off the puddle.",
+  "mov": "A drop of water falls from the unit into the puddle, causing a ripple."
+ },
+ {
+  "id": "p232",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the center of the patio, looking around with a satisfied expression. The black water tank, flower pots, and drain channel are all in view. The back of the house with white door and barred window is behind him. Warm late-afternoon light fills the space.",
+  "mov": "Claudio nods slightly and turns his head to look at the water tank."
+ },
+ {
+  "id": "p233",
+  "sec": "ERROR",
+  "lugar": "patio",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands place the lid back on the black water tank. The tank is on a rusty metal stand. The cement floor and a terracotta pot are visible. Warm light from the side.",
+  "mov": "The hands lower the lid onto the tank."
+ },
+ {
+  "id": "p234",
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of the manual's page showing diagrams of the water setup, sand plates, and fan placement.",
+  "mov": "Claudio's right hand turns a page of the manual."
+ },
+ {
+  "id": "p235",
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close-up of the manual showing the specific instructions for the water and sand.",
+  "mov": "Water flows from the faucet into the bucket, raising the water level."
+ },
+ {
+  "id": "p236",
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot showing the manual's page with all the listed items (water, sand, fan, tul) clearly visible.",
+  "mov": "Claudio's hand tips the scoop, and sand pours onto the plate."
+ },
+ {
+  "id": "p237",
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the fan and the tul (mesh) as described in the manual.",
+  "mov": "A few grains of sand settle on the plate as the last of the pour ends."
+ },
+ {
+  "id": "p238",
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of the manual showing the exact times for the process.",
+  "mov": "Claudio extends the tape measure, pulling it out to check the distance."
+ },
+ {
+  "id": "p239",
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "On the speckled gray granite countertop, a piece of white tulle fabric lies next to a pair of scissors. The tulle is partially folded. The blue-and-white patterned tile strip on the wall is visible in the background. Warm late-afternoon light highlights the texture of the tulle. The scene is still, focusing on the materials.",
+  "mov": "A hand (Claudio's) enters the frame and picks up the scissors."
+ },
+ {
+  "id": "p240",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of the man walking through the patio at night with a flashlight.",
+  "mov": "Claudio swings the flashlight beam slowly from left to right across the patio."
+ },
+ {
+  "id": "p241",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot of the bucket turned upside down on the ground.",
+  "mov": "Claudio's hand tilts the flashlight down to illuminate the bucket's rim."
+ },
+ {
+  "id": "p242",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the plates with wet sand and the clean gutter.",
+  "mov": "The flashlight beam moves slowly across the plates, making the wet sand glisten."
+ },
+ {
+  "id": "p243",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A shot of a fan turned on inside Mateo's bedroom.",
+  "mov": "Claudio moves the flashlight along the length of the drain channel, inspecting it."
+ },
+ {
+  "id": "p244",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "foto": "The back of the one-story house at night. A white door is closed, and a barred window shows a faint light inside. Through the window, the silhouette of a ceiling fan can be seen turning. The patio is dark except for the bulb above the door. The low white wall and water tank are visible at the edges.",
+  "mov": "The fan blades inside the window rotate slowly, visible through the bars."
+ },
+ {
+  "id": "p245",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of Lucia speaking to the camera or Mateo sleeping peacefully in his bed.",
+  "mov": "The mosquito net billows gently inward, then settles back."
+ },
+ {
+  "id": "p246",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Lucia stands in the patio near the white door, wearing a gray t-shirt and jeans, her long dark hair in a low ponytail. She looks toward Claudio, who is off-frame, and gestures with one hand as she speaks. The patio is lit by the bulb, and the terracotta pots are visible behind her.",
+  "mov": "Lucia raises her hand and points toward the house's window."
+ },
+ {
+  "id": "p247",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of Jorge holding or turning on a mosquito coil.",
+  "mov": "The child's arm shifts slightly, turning over on the sheet."
+ },
+ {
+  "id": "p248",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "A shot of Jorge speaking to the camera with a look of realization.",
+  "mov": "Jorge lifts the box of coils slightly, then lowers it as he listens."
+ },
+ {
+  "id": "p249",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Jorge stands with the box of mosquito coils in one hand, his other hand raised palm-up as he speaks. His face is earnest, lit by the patio bulb. Behind him, the low white wall and terracotta pots are visible. He looks toward Claudio, who is off-frame.",
+  "mov": "Jorge gestures with his open hand, then brings it to his chest."
+ },
+ {
+  "id": "p250",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing the source of the standing water or the 'factory' mentioned at the beginning.",
+  "mov": "A drop of water falls into the puddle, creating a small ripple."
+ },
+ {
+  "id": "p251",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands alone in the patio, looking down at the drain channel. The flashlight is off in his hand. The patio is lit by the bulb, and the water tank and pots are in shadow. He nods slightly, his expression thoughtful. The night is quiet and dark beyond the patio.",
+  "mov": "Claudio nods once, then turns his head toward the house."
+ },
+ {
+  "id": "p252",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia",
+   "jorge"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "At night on the small cement back patio of the Ramirez house, Claudio, Lucia, and Jorge stand near the open drain channel along the peeling white wall. A row of terracotta flower pots sits nearby, and a black plastic water tank stands on a rusty metal stand in the corner. A single ceiling bulb casts warm light, leaving the window dark. They look down at the drain.",
+  "mov": "Claudio points a finger toward the drain channel."
+ },
+ {
+  "id": "p253",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands lift a rusty metal grate from the drain channel in the cement floor. The grate is covered with dirt and debris. The drain opening is dark and narrow, with damp stains around it. The green garden hose lies coiled nearby. The night light from the bulb reflects on the wet cement.",
+  "mov": "He lifts the grate upward and to the side."
+ },
+ {
+  "id": "p254",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Inside the open drain, dark stagnant water fills the channel. Hundreds of mosquito larvae wriggle at the surface. The water is murky with bits of leaves and dirt. The edges of the drain are stained and cracked. The light from above barely reaches the water, creating a dim, shadowy scene.",
+  "mov": "The larvae squirm and ripple the water surface."
+ },
+ {
+  "id": "p255",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A person pouring boiling water directly onto the metal grate while holding a rod.",
+  "mov": "Claudio tips the bucket and water pours out."
+ },
+ {
+  "id": "p256",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A person using a rod to clean the grate with boiling water.",
+  "mov": "The rod scrapes back and forth inside the drain."
+ },
+ {
+  "id": "p257",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio and Jorge work together to place a fine mesh screen over the drain opening. Claudio holds the mesh while Jorge adjusts it. The mesh is made of a fine metal or plastic grid. The drain channel is now clean and empty. The patio floor is wet around the drain.",
+  "mov": "They lower the mesh into place over the drain."
+ },
+ {
+  "id": "p258",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A person placing the original metal grate back over the drain.",
+  "mov": "A few water droplets fall through the mesh and disappear."
+ },
+ {
+  "id": "p259",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio and Lucia lift the original metal grate and place it back over the drain, on top of the mesh. Claudio holds one side, Lucia the other. The grate is rusty but fits into its frame. They look down at their work. The patio is dimly lit by the bulb.",
+  "mov": "They lower the grate into position."
+ },
+ {
+  "id": "p260",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The original metal grate is now back in place over the drain, covering the mesh underneath. The grate is slightly raised where the mesh adds thickness. The cement around it is wet. The drain is sealed, and no water or debris is visible. The green hose lies nearby.",
+  "mov": "A drop of water drips from the grate edge."
+ },
+ {
+  "id": "p261",
+  "sec": "RESULTADO",
+  "lugar": "patio",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Claudio, Lucia, and Jorge stand back and look at the closed drain. The patio is tidy, with the flower pots in a row and the water tank in the corner. The single bulb lights the scene, and the window is dark. They appear satisfied with their work, tools set aside.",
+  "mov": "Claudio wipes his hands on a rag."
+ },
+ {
+  "id": "p262",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the children's bedroom at night, holding a small flashlight. The room is lit by a single ceiling bulb. Two single beds with striped blankets, pale blue walls, a window with white iron bars, and a nightstand with a lamp are visible. Claudio looks toward the window.",
+  "mov": "Claudio raises the flashlight and turns it on, the beam sweeping across the room."
+ },
+ {
+  "id": "p263",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A person gesturing towards a room or holding a phone, illustrating the promise of a free action.",
+  "mov": "His hand moves the pen across the page, finishing a note."
+ },
+ {
+  "id": "p264",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of a digital clock on the nightstand, its red digits showing 10:00. The lamp beside it is off. The room is dark except for the clock's glow.",
+  "mov": "The clock digits change from 10:00 to 10:01."
+ },
+ {
+  "id": "p265",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands near the window, holding a flashlight. He shines the light toward the window bars. The thin curtain is partly drawn. Outside is dark. The room is lit by the ceiling bulb.",
+  "mov": "Claudio moves the flashlight beam slowly along the window bars."
+ },
+ {
+  "id": "p266",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the window area. The flashlight beam illuminates tiny mosquitoes flying near the white iron bars. The light catches their wings. The curtain is slightly visible at the edge.",
+  "mov": "The mosquitoes flutter in the beam, moving in small circles."
+ },
+ {
+  "id": "p267",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A close-up of a written list or a hand holding a paper titled 'Antes de Fumigar'.",
+  "mov": "His finger taps the first drawing twice."
+ },
+ {
+  "id": "p268",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of a small bowl containing white flour. The bowl sits on the beige ceramic floor near a bed leg. The light from the ceiling bulb casts a soft shadow.",
+  "mov": "A hand enters the frame and sprinkles a pinch of flour onto the floor beside the bowl."
+ },
+ {
+  "id": "p269",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio kneels on the floor, placing a white plate with water and a drop of dish soap beside the bed. He looks at the plate. The bed with striped blanket is behind him. The room is dimly lit.",
+  "mov": "Claudio adjusts the plate's position slightly with both hands."
+ },
+ {
+  "id": "p270",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A plate or surface dusted with flour, demonstrating the flour test.",
+  "mov": "The drop of soap spreads slowly across the water surface."
+ },
+ {
+  "id": "p271",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the middle of the bedroom, looking at the floor where the plate and flour are placed. He holds a flashlight in one hand. The two beds and window are visible. The room is lit by the ceiling bulb.",
+  "mov": "Claudio turns his head from the plate to the flour, then back."
+ },
+ {
+  "id": "p272",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Claudio's hands hold a smartphone, pointing it at a QR code printed on a piece of paper. The phone screen shows a camera view. The background is the bedroom wall. No text is visible on the paper, only the QR code.",
+  "mov": "The phone moves slightly closer to the QR code."
+ },
+ {
+  "id": "p273",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of a smartphone screen displaying a web page with a button. The screen is bright in the dim room. The phone is held by a hand. No readable text is visible, only a simple interface.",
+  "mov": "A finger taps the button on the screen."
+ },
+ {
+  "id": "p274",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of a screen or paper showing a repair result with its corresponding fix clearly indicated next to it.",
+  "mov": "Claudio opens the cabinet door wider with one hand."
+ },
+ {
+  "id": "p275",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of a roll of tape and a pair of scissors on the kitchen counter. The counter is clean. The light from above shows the items clearly.",
+  "mov": "A hand picks up the roll of tape."
+ },
+ {
+  "id": "p276",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot showing the printed QR code being taped or stuck to the inside wall of the wooden cabinet.",
+  "mov": "His hand smooths the tape over the paper."
+ },
+ {
+  "id": "p277",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of the QR code taped to the inside of the cabinet door directly under the kitchen sink.",
+  "mov": "The paper stays in place as the cabinet door is gently closed."
+ },
+ {
+  "id": "p278",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the kitchen, closing the cabinet under the sink. He looks at the closed cabinet. The kitchen is lit by a ceiling light. The counter and sink are visible.",
+  "mov": "Claudio steps back from the cabinet, wiping his hands on his shirt."
+ },
+ {
+  "id": "p279",
+  "sec": "REVISION",
+  "lugar": "cuarto_chicos",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands in the children's bedroom doorway, looking back at the room. The room is lit by the ceiling bulb. The two beds, window, and nightstand are visible. He holds a flashlight in his hand.",
+  "mov": "Claudio turns off the flashlight and lowers it."
+ },
+ {
+  "id": "p280",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio stands in the kitchen, facing slightly left, his right hand raised with palm open as if inviting a response. He wears his khaki work shirt, safety glasses on his forehead. The kitchen is dimly lit by a single ceiling bulb, casting soft shadows on the tiled walls. The window behind him shows darkness outside.",
+  "mov": "His right hand gestures outward, then he tilts his head slightly."
+ },
+ {
+  "id": "p281",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A small puddle of stagnant water on the speckled gray granite countertop, reflecting the dim light. Next to it, a few scattered coffee grounds and a damp sponge. The blue-and-white patterned tile strip is visible in the background.",
+  "mov": "The water surface ripples slightly as if a drop just fell."
+ },
+ {
+  "id": "p282",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "foto": "The entire kitchen seen from a corner: white square tiles, wooden cabinets, the granite countertop with the sink under the barred window, the white refrigerator covered with children's crayon drawings. The beige ceramic floor looks worn. The only light comes from a ceiling bulb, leaving the corners in shadow.",
+  "mov": "The refrigerator door slowly swings open a few inches, then stops."
+ },
+ {
+  "id": "p283",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up of the narrator's hands holding and reading a piece of paper or a list.",
+  "mov": "He nods once and his pointing hand moves slightly downward."
+ },
+ {
+  "id": "p284",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A worn section of the beige ceramic floor near the base of the kitchen cabinets. A small crack runs through one tile, and a few crumbs are scattered. The shadow of the counter falls across the floor.",
+  "mov": "A tiny ant crawls quickly across the cracked tile."
+ },
+ {
+  "id": "p285",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Lucía opening the kitchen cabinet to put away a container of coffee.",
+  "mov": "His hand moves across the notepad as he writes."
+ },
+ {
+  "id": "p286",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Lucia stands in the kitchen, facing the open pantry cabinet. She wears a gray t-shirt and jeans, her dark hair in a low ponytail. She holds a bag of coffee and is reaching toward a shelf. The pantry interior is visible with various food items. The kitchen is dimly lit.",
+  "mov": "She places the coffee bag on the shelf and her hand pauses."
+ },
+ {
+  "id": "p287",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A small blonde cockroach scurrying behind the pantry or kitchen counter.",
+  "mov": "The cockroach darts quickly to the right, disappearing behind the tin."
+ },
+ {
+  "id": "p288",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Lucia steps back from the pantry, her hand still on the door. Her eyes are wide, and her mouth is slightly open. She looks toward the pantry interior. The kitchen counter and sink are visible to her left. The lighting is dim.",
+  "mov": "She pulls the pantry door closed with a quick motion."
+ },
+ {
+  "id": "p289",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot of a hidden area in the kitchen, such as the space behind the refrigerator or under the sink.",
+  "mov": "The door closes completely with a soft click."
+ },
+ {
+  "id": "p290",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "foto": "Claudio stands in the Ramirez kitchen at night, facing a wooden cabinet under the sink. He wears his khaki work shirt and clear safety glasses on his forehead. The white tiled wall with blue patterned strip is behind him. A ceiling bulb casts warm light, and the window with white iron bars shows darkness outside.",
+  "mov": "Claudio raises his hand and points a finger toward the cabinet door."
+ },
+ {
+  "id": "p291",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A specific, hard-to-reach spot in the kitchen where pests might hide, like the back of a cabinet.",
+  "mov": "A tiny antenna slowly emerges from the gap and waves."
+ },
+ {
+  "id": "p292",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A shot of the kitchen stove, highlighting its area and condition.",
+  "mov": "Claudio sweeps the broom along the floor under the cabinet, pushing dust forward."
+ },
+ {
+  "id": "p293",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A small cardboard box with no text sits open on the speckled gray granite countertop. Inside are a folded white mosquito net, a small battery-powered fan, and a bottle of water. The items are arranged neatly. The ceiling bulb reflects on the countertop.",
+  "mov": "A hand reaches in and pulls out the mosquito net."
+ },
+ {
+  "id": "p294",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A shot showing cleaning supplies or insecticides stored safely out of reach in a high cabinet.",
+  "mov": "Lucia shakes the net open and lets it fall over the bed."
+ },
+ {
+  "id": "p295",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A shot showing a fan and a container or glass of clean drinking water.",
+  "mov": "The fan blades spin, and the net sways gently."
+ },
+ {
+  "id": "p296",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "A close-up shot of a live mosquito, perhaps resting on a surface or flying.",
+  "mov": "Claudio turns the faucet handle and water flows into the glass."
+ },
+ {
+  "id": "p297",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A clear glass of water sits on the speckled granite countertop. The water surface is still. No insects are visible. The glass reflects the ceiling bulb. Next to it, a small saucer with a few water drops. The tiled wall with blue pattern is behind.",
+  "mov": "A drop of water falls from the faucet into the glass, creating ripples."
+ },
+ {
+  "id": "p298",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "foto": "Claudio and Lucia stand together in the kitchen, near the sink. Claudio holds the flashlight, Lucia holds the mosquito net. They are looking at the small bed with the net. The kitchen is tidy, with the white refrigerator covered in crayon drawings. The window shows night.",
+  "mov": "Claudio nods and Lucia adjusts the net over the bed."
+ },
+ {
+  "id": "p299",
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A close view of the kitchen floor near the baseboard. A small puddle of water sits on the beige ceramic tiles. No mosquito larvae are visible. The puddle reflects the ceiling light. The baseboard and wall tiles are in the background. The floor is worn.",
+  "mov": "A hand with a cloth wipes the puddle, leaving the floor dry."
+ }
+]

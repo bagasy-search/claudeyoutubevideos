@@ -1,0 +1,142 @@
+{
+ "secciones": {
+  "GANCHO": {
+   "lugar": "cocina",
+   "hora": "noche",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CASA": {
+   "lugar": "patio",
+   "hora": "noche",
+   "gente": [
+    "claudio",
+    "lucia",
+    "jorge",
+    "mateo"
+   ]
+  },
+  "PROMESA": {
+   "lugar": "cuarto_chicos",
+   "hora": "noche",
+   "gente": [
+    "claudio",
+    "mateo"
+   ]
+  },
+  "QUIEN": {
+   "lugar": "patio",
+   "hora": "noche",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOSTRADOR": {
+   "lugar": "ferreteria",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "ARREGLO1": {
+   "lugar": "patio",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "lucia",
+    "mateo"
+   ]
+  },
+  "ARREGLO2": {
+   "lugar": "patio",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "lucia"
+   ]
+  },
+  "ARREGLO3": {
+   "lugar": "patio",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "jorge"
+   ]
+  },
+  "ARREGLO4": {
+   "lugar": "cuarto_chicos",
+   "hora": "noche",
+   "gente": [
+    "claudio",
+    "mateo"
+   ]
+  },
+  "ARREGLO5": {
+   "lugar": "cuarto_chicos",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "jorge"
+   ]
+  },
+  "ARREGLO6": {
+   "lugar": "patio",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "lucia",
+    "mateo"
+   ]
+  },
+  "ERROR": {
+   "lugar": "patio",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "PAGINA": {
+   "lugar": "cocina",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "RESULTADO": {
+   "lugar": "patio",
+   "hora": "noche",
+   "gente": [
+    "claudio",
+    "lucia",
+    "jorge"
+   ]
+  },
+  "REVISION": {
+   "lugar": "cuarto_chicos",
+   "hora": "noche",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CIERRE": {
+   "lugar": "cocina",
+   "hora": "noche",
+   "gente": [
+    "claudio",
+    "lucia"
+   ]
+  }
+ },
+ "nuevos": {
+  "banio": "the bathroom of the Ramírez house: small, with pale green square tiles, a white sink with a mirrored cabinet above, a shower with a white curtain, and a small window with frosted glass."
+ },
+ "avatar_lugar": "patio",
+ "lugares": {
+  "cocina": "the kitchen of the Ramírez house: white square wall tiles with a blue-and-white patterned tile strip at eye level, wooden kitchen cabinets, a speckled gray granite countertop, a stainless steel double sink under a window with white iron bars, an older white refrigerator covered with children's crayon drawings held by magnets, a worn beige ceramic floor",
+  "patio": "the small cement back patio of the Ramírez house: a stained cement floor, a low white-painted wall with peeling paint and an open drain channel along its base, a row of terracotta flower pots with saucers along the wall, a black plastic water tank on a rusty metal stand in one corner, a green garden hose, the back of the one-story house with a white door and a barred window",
+  "cuarto_chicos": "the children's bedroom of the Ramírez house: two narrow single beds with striped woven blankets, pale blue walls, a window with white iron bars and a thin curtain, a small wooden nightstand with a lamp, a few toys on the floor, a beige ceramic floor",
+  "ferreteria": "a small neighborhood hardware store in a Latin American town: a glass counter with screws and small items inside, wooden shelves behind full of jars, rolls of mesh and boxes",
+  "banio": "the bathroom of the Ramírez house: small, with pale green square tiles, a white sink with a mirrored cabinet above, a shower with a white curtain, and a small window with frosted glass."
+ }
+}

@@ -1,0 +1,80 @@
+[
+ {"c": "ClVideoRef", "frase": "Si no lo viste, te lo dejo aquí", "dur": 2.0,
+  "props": {"thumb": "img/fumosquito3/th_fumoscas.jpg", "title": "Las moscas de la cocina, la semana pasada", "tag": "VIDEO ANTERIOR"}},
+
+ {"c": "FabPrecio", "frase": "Cosas de ferretería, por menos", "dur": 6,
+  "props": {"tienda": {"txt": "Tul, ventilador y café molido", "p": "US$10"},
+            "casa": {"txt": "Lo que ya tienes", "p": "US$0", "items": [{"t": "Baldes, botellas", "p": "0"}, {"t": "El bebedero", "p": "0"}]},
+            "nota": "Una vuelta al patio por semana"}},
+
+ {"c": "FabAntesDespues", "frase": "Te muestro cómo cerrar la fábrica", "dur": 6,
+  "props": {"antes": "p033", "despues": "p042", "a": "Antes", "b": "Después", "nota": "Tul cerrado y ventilador"}},
+
+ {"c": "FabCalendario", "frase": "Una vez por semana, recorres el patio", "dur": 7,
+  "props": {"title": "Vuelta de agua", "cada": 7, "dias": 14, "txt": "Todo el verano"}},
+
+ {"c": "FabSiNo", "frase": "El bebedero del perro se cambia cada dos días", "dur": 8,
+  "props": {"title": "El bebedero del perro",
+            "no": {"img": "p085", "txt": "Agua quieta dos días"},
+            "si": {"img": "p090", "txt": "Se vacía y se restriega"}}},
+
+ {"c": "FabDato", "frase": "encontramos tres cosas", "dur": 7,
+  "props": {"num": "3", "unidad": "fábricas", "txt": "balde, juguete y botella", "img": "p081"}},
+
+ {"c": "FabSiNo", "frase": "en vez de agua, ponles arena húmeda", "dur": 7,
+  "props": {"title": "Platos de macetas",
+            "no": {"img": "p105", "txt": "Plato con agua quieta"},
+            "si": {"img": "p111", "txt": "Plato con arena mojada"}}},
+
+ {"c": "FabMapa", "frase": "Tercer arreglo: destapar canaletas", "dur": 8,
+  "props": {"title": "El agua que no se ve", "note": "Ni en el patio se ve",
+            "pins": [{"lugar": "techo", "txt": "La canaleta"}, {"lugar": "desague", "txt": "El fondo"},
+                     {"lugar": "lavadero", "txt": "La rejilla"}, {"lugar": "patio", "txt": "El canal"}]}},
+
+ {"c": "FabPasos", "frase": "Se destapa con una varilla", "dur": 8,
+  "props": {"title": "Cómo se destapa",
+            "pasos": [{"img": "p128", "txt": "Sube y mira"}, {"img": "p139", "txt": "Saca las hojas"},
+                      {"img": "p141", "txt": "Agua hirviendo"}, {"img": "p145", "txt": "Y una malla"}]}},
+
+ {"c": "FabDato", "frase": "Cuarto arreglo: en el cuarto, el ventilador", "dur": 8,
+  "props": {"num": "1", "unidad": "metro", "txt": "el ventilador, de lado", "img": "p160"}},
+
+ {"c": "FabDato", "frase": "Quinto arreglo: el tul mosquitero", "dur": 7,
+  "props": {"num": "2", "unidad": "metros", "txt": "el tul de la ventana", "img": "p171"}},
+
+ {"c": "FabPasos", "frase": "Y aquí entra el último arreglo", "dur": 8,
+  "props": {"title": "El truco del café",
+            "pasos": [{"img": "p188", "txt": "Café molido seco"}, {"img": "p204", "txt": "Un plato de barro"},
+                      {"img": "p190", "txt": "Le prendes un fósforo"}, {"img": "p192", "txt": "Sale un humito"}]}},
+
+ {"c": "FabSiNo", "frase": "Es una ayuda temporal", "dur": 7,
+  "props": {"title": "El humito del café",
+            "no": {"img": "p204", "txt": "Confiarse del humito"},
+            "si": {"img": "p185", "txt": "Ventilador y tul, siempre"}}},
+
+ {"c": "ClBookPage", "frase": "Caminé por el patio con la linterna", "dur": 7,
+  "props": {"page": "img/fumosquito3/page17.jpg", "pageNo": 17, "stamp": "Manual del Fumigador"}},
+
+ {"c": "FabAntesDespues", "frase": "la fábrica que encontramos al principio", "dur": 7,
+  "props": {"antes": "p254", "despues": "p258", "a": "Antes", "b": "Después", "nota": "Estaba en el desagüe del patio"}},
+
+ {"c": "FabPasos", "frase": "Limpiamos esa rejilla", "dur": 7,
+  "props": {"title": "La rejilla del patio",
+            "pasos": [{"img": "p256", "txt": "El agua hirviendo"}, {"img": "p257", "txt": "Se limpia el fondo"},
+                      {"img": "p259", "txt": "Y la rejilla encima"}]}},
+
+ {"c": "ClCheck", "frase": "Y ahora, la revisión de diez minutos", "dur": 8,
+  "props": {"title": "Antes de Fumigar, revisión de la noche",
+            "items": ["La prueba de la linterna", "La prueba de la harina", "La prueba del plato con agua"]}},
+
+ {"c": "ClQRCard", "frase": "o toca el primer link de la descripción", "dur": 6,
+  "props": {"qr": "img/fumosquito3/qr.jpg", "cover": "img/fumosquito3/gift_cover.jpg",
+            "text": "La hoja gratis de la noche", "kicker": "Antes de Fumigar"}},
+
+ {"c": "ClQRCard", "frase": "Lucía abrió la alacena", "dur": 6,
+  "props": {"qr": "img/fumosquito3/qr.jpg", "cover": "img/fumosquito3/book_cover.jpg",
+            "text": "El Manual: 66 arreglos", "kicker": "US$27, un solo pago"}},
+
+ {"c": "ClVideoRef", "frase": "La semana que viene te muestro", "dur": 5,
+  "props": {"thumb": "img/fumosquito3/th_fucucas10.jpg", "title": "Las cucarachas: el lugar que nadie revisa", "tag": "PRÓXIMO VIDEO", "next": true}}
+]

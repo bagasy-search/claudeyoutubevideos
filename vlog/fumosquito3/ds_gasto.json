@@ -1,0 +1,30 @@
+{
+ "guionista": {
+  "llamadas": 2,
+  "usd": 0.10311
+ },
+ "critico": {
+  "llamadas": 1,
+  "usd": 0.00268
+ },
+ "arte": {
+  "llamadas": 1,
+  "usd": 0.00204
+ },
+ "arte_juez": {
+  "llamadas": 4,
+  "usd": 0.00163
+ },
+ "planos": {
+  "llamadas": 27,
+  "usd": 0.04746
+ },
+ "revisor_fotos": {
+  "llamadas": 75,
+  "usd": 0.04967
+ },
+ "editor_montaje": {
+  "llamadas": 30,
+  "usd": 0.0245
+ }
+}

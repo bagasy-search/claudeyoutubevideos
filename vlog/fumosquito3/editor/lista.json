@@ -1,0 +1,460 @@
+[
+ {
+  "name": "ov01a",
+  "c": "FabPrecio",
+  "props": {
+   "tienda": {
+    "txt": "Tul, ventilador y café molido",
+    "p": "US$10"
+   },
+   "casa": {
+    "txt": "Lo que ya tienes",
+    "p": "US$0",
+    "items": [
+     {
+      "t": "Baldes, botellas",
+      "p": "0"
+     },
+     {
+      "t": "El bebedero",
+      "p": "0"
+     }
+    ]
+   },
+   "nota": "Una vuelta al patio por semana"
+  }
+ },
+ {
+  "name": "ov01b",
+  "c": "FabPrecio",
+  "props": {
+   "tienda": {
+    "txt": "Tul, ventilador y café molido",
+    "p": "US$10"
+   },
+   "casa": {
+    "txt": "Lo que ya tienes",
+    "p": "US$0",
+    "items": [
+     {
+      "t": "Baldes, botellas",
+      "p": "0"
+     },
+     {
+      "t": "El bebedero",
+      "p": "0"
+     }
+    ]
+   },
+   "nota": "Una vuelta al patio por semana"
+  }
+ },
+ {
+  "name": "ov02a",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "p033",
+   "despues": "p042",
+   "a": "Antes",
+   "b": "Después",
+   "nota": "Tul cerrado y ventilador"
+  }
+ },
+ {
+  "name": "ov02b",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "p033",
+   "despues": "p042",
+   "a": "Antes",
+   "b": "Después",
+   "nota": "Tul cerrado y ventilador"
+  }
+ },
+ {
+  "name": "ov03a",
+  "c": "FabCalendario",
+  "props": {
+   "title": "Vuelta de agua",
+   "cada": 7,
+   "dias": 14,
+   "txt": "Todo el verano"
+  }
+ },
+ {
+  "name": "ov03b",
+  "c": "FabCalendario",
+  "props": {
+   "title": "Vuelta de agua",
+   "cada": 7,
+   "dias": 14,
+   "txt": "Todo el verano"
+  }
+ },
+ {
+  "name": "ov04a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "El bebedero del perro",
+   "no": {
+    "img": "p085",
+    "txt": "Agua quieta dos días"
+   },
+   "si": {
+    "img": "p090",
+    "txt": "Se vacía y se restriega"
+   }
+  }
+ },
+ {
+  "name": "ov04b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "El bebedero del perro",
+   "no": {
+    "img": "p085",
+    "txt": "Agua quieta dos días"
+   },
+   "si": {
+    "img": "p090",
+    "txt": "Se vacía y se restriega"
+   }
+  }
+ },
+ {
+  "name": "ov05a",
+  "c": "FabDato",
+  "props": {
+   "num": "3",
+   "unidad": "fábricas",
+   "txt": "balde, juguete y botella",
+   "img": "p081"
+  }
+ },
+ {
+  "name": "ov05b",
+  "c": "FabDato",
+  "props": {
+   "num": "3",
+   "unidad": "fábricas",
+   "txt": "balde, juguete y botella",
+   "img": "p081"
+  }
+ },
+ {
+  "name": "ov06a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Platos de macetas",
+   "no": {
+    "img": "p105",
+    "txt": "Plato con agua quieta"
+   },
+   "si": {
+    "img": "p111",
+    "txt": "Plato con arena mojada"
+   }
+  }
+ },
+ {
+  "name": "ov06b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Platos de macetas",
+   "no": {
+    "img": "p105",
+    "txt": "Plato con agua quieta"
+   },
+   "si": {
+    "img": "p111",
+    "txt": "Plato con arena mojada"
+   }
+  }
+ },
+ {
+  "name": "ov07a",
+  "c": "FabMapa",
+  "props": {
+   "title": "El agua que no se ve",
+   "note": "Ni en el patio se ve",
+   "pins": [
+    {
+     "lugar": "techo",
+     "txt": "La canaleta"
+    },
+    {
+     "lugar": "desague",
+     "txt": "El fondo"
+    },
+    {
+     "lugar": "lavadero",
+     "txt": "La rejilla"
+    },
+    {
+     "lugar": "patio",
+     "txt": "El canal"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov07b",
+  "c": "FabMapa",
+  "props": {
+   "title": "El agua que no se ve",
+   "note": "Ni en el patio se ve",
+   "pins": [
+    {
+     "lugar": "techo",
+     "txt": "La canaleta"
+    },
+    {
+     "lugar": "desague",
+     "txt": "El fondo"
+    },
+    {
+     "lugar": "lavadero",
+     "txt": "La rejilla"
+    },
+    {
+     "lugar": "patio",
+     "txt": "El canal"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov08a",
+  "c": "FabPasos",
+  "props": {
+   "title": "Cómo se destapa",
+   "pasos": [
+    {
+     "img": "p128",
+     "txt": "Sube y mira"
+    },
+    {
+     "img": "p139",
+     "txt": "Saca las hojas"
+    },
+    {
+     "img": "p141",
+     "txt": "Agua hirviendo"
+    },
+    {
+     "img": "p145",
+     "txt": "Y una malla"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov08b",
+  "c": "FabPasos",
+  "props": {
+   "title": "Cómo se destapa",
+   "pasos": [
+    {
+     "img": "p128",
+     "txt": "Sube y mira"
+    },
+    {
+     "img": "p139",
+     "txt": "Saca las hojas"
+    },
+    {
+     "img": "p141",
+     "txt": "Agua hirviendo"
+    },
+    {
+     "img": "p145",
+     "txt": "Y una malla"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov09a",
+  "c": "FabDato",
+  "props": {
+   "num": "1",
+   "unidad": "metro",
+   "txt": "el ventilador, de lado",
+   "img": "p160"
+  }
+ },
+ {
+  "name": "ov09b",
+  "c": "FabDato",
+  "props": {
+   "num": "1",
+   "unidad": "metro",
+   "txt": "el ventilador, de lado",
+   "img": "p160"
+  }
+ },
+ {
+  "name": "ov10a",
+  "c": "FabDato",
+  "props": {
+   "num": "2",
+   "unidad": "metros",
+   "txt": "el tul de la ventana",
+   "img": "p171"
+  }
+ },
+ {
+  "name": "ov10b",
+  "c": "FabDato",
+  "props": {
+   "num": "2",
+   "unidad": "metros",
+   "txt": "el tul de la ventana",
+   "img": "p171"
+  }
+ },
+ {
+  "name": "ov11a",
+  "c": "FabPasos",
+  "props": {
+   "title": "El truco del café",
+   "pasos": [
+    {
+     "img": "p188",
+     "txt": "Café molido seco"
+    },
+    {
+     "img": "p204",
+     "txt": "Un plato de barro"
+    },
+    {
+     "img": "p190",
+     "txt": "Le prendes un fósforo"
+    },
+    {
+     "img": "p192",
+     "txt": "Sale un humito"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov11b",
+  "c": "FabPasos",
+  "props": {
+   "title": "El truco del café",
+   "pasos": [
+    {
+     "img": "p188",
+     "txt": "Café molido seco"
+    },
+    {
+     "img": "p204",
+     "txt": "Un plato de barro"
+    },
+    {
+     "img": "p190",
+     "txt": "Le prendes un fósforo"
+    },
+    {
+     "img": "p192",
+     "txt": "Sale un humito"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov12a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "El humito del café",
+   "no": {
+    "img": "p204",
+    "txt": "Confiarse del humito"
+   },
+   "si": {
+    "img": "p185",
+    "txt": "Ventilador y tul, siempre"
+   }
+  }
+ },
+ {
+  "name": "ov12b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "El humito del café",
+   "no": {
+    "img": "p204",
+    "txt": "Confiarse del humito"
+   },
+   "si": {
+    "img": "p185",
+    "txt": "Ventilador y tul, siempre"
+   }
+  }
+ },
+ {
+  "name": "ov14a",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "p254",
+   "despues": "p258",
+   "a": "Antes",
+   "b": "Después",
+   "nota": "Estaba en el desagüe del patio"
+  }
+ },
+ {
+  "name": "ov14b",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "p254",
+   "despues": "p258",
+   "a": "Antes",
+   "b": "Después",
+   "nota": "Estaba en el desagüe del patio"
+  }
+ },
+ {
+  "name": "ov15a",
+  "c": "FabPasos",
+  "props": {
+   "title": "La rejilla del patio",
+   "pasos": [
+    {
+     "img": "p256",
+     "txt": "El agua hirviendo"
+    },
+    {
+     "img": "p257",
+     "txt": "Se limpia el fondo"
+    },
+    {
+     "img": "p259",
+     "txt": "Y la rejilla encima"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov15b",
+  "c": "FabPasos",
+  "props": {
+   "title": "La rejilla del patio",
+   "pasos": [
+    {
+     "img": "p256",
+     "txt": "El agua hirviendo"
+    },
+    {
+     "img": "p257",
+     "txt": "Se limpia el fondo"
+    },
+    {
+     "img": "p259",
+     "txt": "Y la rejilla encima"
+    }
+   ]
+  }
+ }
+]

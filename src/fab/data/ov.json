@@ -1,0 +1,371 @@
+[
+ {
+  "c": "ClVideoRef",
+  "from": 989,
+  "dur": 60,
+  "props": {
+   "thumb": "img/fumosquito3/th_fumoscas.jpg",
+   "title": "Las moscas de la cocina, la semana pasada",
+   "tag": "VIDEO ANTERIOR",
+   "bed": "vid/fumosquito3/bed_0.mp4#64"
+  },
+  "t": 32.98,
+  "frase": "Si no lo viste, te lo dejo aquí"
+ },
+ {
+  "c": "FabPrecio",
+  "from": 1940,
+  "dur": 180,
+  "props": {
+   "tienda": {
+    "txt": "Tul, ventilador y café molido",
+    "p": "US$10"
+   },
+   "casa": {
+    "txt": "Lo que ya tienes",
+    "p": "US$0",
+    "items": [
+     {
+      "t": "Baldes, botellas",
+      "p": "0"
+     },
+     {
+      "t": "El bebedero",
+      "p": "0"
+     }
+    ]
+   },
+   "nota": "Una vuelta al patio por semana",
+   "bed": "vid/fumosquito3/bed_1.mp4#184"
+  },
+  "t": 64.66,
+  "frase": "Cosas de ferretería, por menos"
+ },
+ {
+  "c": "FabAntesDespues",
+  "from": 2312,
+  "dur": 180,
+  "props": {
+   "antes": "p033",
+   "despues": "p042",
+   "a": "Antes",
+   "b": "Después",
+   "nota": "Tul cerrado y ventilador",
+   "bed": "vid/fumosquito3/bed_2.mp4#184"
+  },
+  "t": 77.07,
+  "frase": "Te muestro cómo cerrar la fábrica"
+ },
+ {
+  "c": "FabCalendario",
+  "from": 4868,
+  "dur": 210,
+  "props": {
+   "title": "Vuelta de agua",
+   "cada": 7,
+   "dias": 14,
+   "txt": "Todo el verano",
+   "bed": "vid/fumosquito3/bed_3.mp4#214"
+  },
+  "t": 162.27,
+  "frase": "Una vez por semana, recorres el patio"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 5380,
+  "dur": 240,
+  "props": {
+   "title": "El bebedero del perro",
+   "no": {
+    "img": "p085",
+    "txt": "Agua quieta dos días"
+   },
+   "si": {
+    "img": "p090",
+    "txt": "Se vacía y se restriega"
+   },
+   "bed": "vid/fumosquito3/bed_4.mp4#244"
+  },
+  "t": 179.33,
+  "frase": "El bebedero del perro se cambia cada dos días"
+ },
+ {
+  "c": "FabDato",
+  "from": 5908,
+  "dur": 210,
+  "props": {
+   "num": "3",
+   "unidad": "fábricas",
+   "txt": "balde, juguete y botella",
+   "img": "p081",
+   "bed": "vid/fumosquito3/bed_5.mp4#214"
+  },
+  "t": 196.95,
+  "frase": "encontramos tres cosas"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 6959,
+  "dur": 210,
+  "props": {
+   "title": "Platos de macetas",
+   "no": {
+    "img": "p105",
+    "txt": "Plato con agua quieta"
+   },
+   "si": {
+    "img": "p111",
+    "txt": "Plato con arena mojada"
+   },
+   "bed": "vid/fumosquito3/bed_6.mp4#214"
+  },
+  "t": 231.97,
+  "frase": "en vez de agua, ponles arena húmeda"
+ },
+ {
+  "c": "FabMapa",
+  "from": 8311,
+  "dur": 240,
+  "props": {
+   "title": "El agua que no se ve",
+   "note": "Ni en el patio se ve",
+   "pins": [
+    {
+     "lugar": "techo",
+     "txt": "La canaleta"
+    },
+    {
+     "lugar": "desague",
+     "txt": "El fondo"
+    },
+    {
+     "lugar": "lavadero",
+     "txt": "La rejilla"
+    },
+    {
+     "lugar": "patio",
+     "txt": "El canal"
+    }
+   ],
+   "bed": "vid/fumosquito3/bed_7.mp4#244"
+  },
+  "t": 277.04,
+  "frase": "Tercer arreglo: destapar canaletas"
+ },
+ {
+  "c": "FabPasos",
+  "from": 9368,
+  "dur": 240,
+  "props": {
+   "title": "Cómo se destapa",
+   "pasos": [
+    {
+     "img": "p128",
+     "txt": "Sube y mira"
+    },
+    {
+     "img": "p139",
+     "txt": "Saca las hojas"
+    },
+    {
+     "img": "p141",
+     "txt": "Agua hirviendo"
+    },
+    {
+     "img": "p145",
+     "txt": "Y una malla"
+    }
+   ],
+   "bed": "vid/fumosquito3/bed_8.mp4#244"
+  },
+  "t": 312.28,
+  "frase": "Se destapa con una varilla"
+ },
+ {
+  "c": "FabDato",
+  "from": 9790,
+  "dur": 240,
+  "props": {
+   "num": "1",
+   "unidad": "metro",
+   "txt": "el ventilador, de lado",
+   "img": "p160",
+   "bed": "vid/fumosquito3/bed_9.mp4#244"
+  },
+  "t": 326.32,
+  "frase": "Cuarto arreglo: en el cuarto, el ventilador"
+ },
+ {
+  "c": "FabDato",
+  "from": 11264,
+  "dur": 210,
+  "props": {
+   "num": "2",
+   "unidad": "metros",
+   "txt": "el tul de la ventana",
+   "img": "p171",
+   "bed": "vid/fumosquito3/bed_10.mp4#214"
+  },
+  "t": 375.47,
+  "frase": "Quinto arreglo: el tul mosquitero"
+ },
+ {
+  "c": "FabPasos",
+  "from": 12781,
+  "dur": 240,
+  "props": {
+   "title": "El truco del café",
+   "pasos": [
+    {
+     "img": "p188",
+     "txt": "Café molido seco"
+    },
+    {
+     "img": "p204",
+     "txt": "Un plato de barro"
+    },
+    {
+     "img": "p190",
+     "txt": "Le prendes un fósforo"
+    },
+    {
+     "img": "p192",
+     "txt": "Sale un humito"
+    }
+   ],
+   "bed": "vid/fumosquito3/bed_11.mp4#244"
+  },
+  "t": 426.04,
+  "frase": "Y aquí entra el último arreglo"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 13678,
+  "dur": 210,
+  "props": {
+   "title": "El humito del café",
+   "no": {
+    "img": "p204",
+    "txt": "Confiarse del humito"
+   },
+   "si": {
+    "img": "p185",
+    "txt": "Ventilador y tul, siempre"
+   },
+   "bed": "vid/fumosquito3/bed_12.mp4#214"
+  },
+  "t": 455.95,
+  "frase": "Es una ayuda temporal"
+ },
+ {
+  "c": "ClBookPage",
+  "from": 16564,
+  "dur": 210,
+  "props": {
+   "page": "img/fumosquito3/page17.jpg",
+   "pageNo": 17,
+   "stamp": "Manual del Fumigador",
+   "bed": "vid/fumosquito3/bed_13.mp4#214"
+  },
+  "t": 552.14,
+  "frase": "Caminé por el patio con la linterna"
+ },
+ {
+  "c": "FabAntesDespues",
+  "from": 17346,
+  "dur": 210,
+  "props": {
+   "antes": "p254",
+   "despues": "p258",
+   "a": "Antes",
+   "b": "Después",
+   "nota": "Estaba en el desagüe del patio",
+   "bed": "vid/fumosquito3/bed_14.mp4#214"
+  },
+  "t": 578.2,
+  "frase": "la fábrica que encontramos al principio"
+ },
+ {
+  "c": "FabPasos",
+  "from": 17754,
+  "dur": 210,
+  "props": {
+   "title": "La rejilla del patio",
+   "pasos": [
+    {
+     "img": "p256",
+     "txt": "El agua hirviendo"
+    },
+    {
+     "img": "p257",
+     "txt": "Se limpia el fondo"
+    },
+    {
+     "img": "p259",
+     "txt": "Y la rejilla encima"
+    }
+   ],
+   "bed": "vid/fumosquito3/bed_15.mp4#214"
+  },
+  "t": 591.8,
+  "frase": "Limpiamos esa rejilla"
+ },
+ {
+  "c": "ClCheck",
+  "from": 18062,
+  "dur": 240,
+  "props": {
+   "title": "Antes de Fumigar, revisión de la noche",
+   "items": [
+    "La prueba de la linterna",
+    "La prueba de la harina",
+    "La prueba del plato con agua"
+   ],
+   "bed": "vid/fumosquito3/bed_16.mp4#244"
+  },
+  "t": 602.06,
+  "frase": "Y ahora, la revisión de diez minutos"
+ },
+ {
+  "c": "ClQRCard",
+  "from": 19125,
+  "dur": 180,
+  "props": {
+   "qr": "img/fumosquito3/qr.jpg",
+   "cover": "img/fumosquito3/gift_cover.jpg",
+   "text": "La hoja gratis de la noche",
+   "kicker": "Antes de Fumigar",
+   "bed": "vid/fumosquito3/bed_17.mp4#184"
+  },
+  "t": 637.5,
+  "frase": "o toca el primer link de la descripción"
+ },
+ {
+  "c": "ClQRCard",
+  "from": 19758,
+  "dur": 180,
+  "props": {
+   "qr": "img/fumosquito3/qr.jpg",
+   "cover": "img/fumosquito3/book_cover.jpg",
+   "text": "El Manual: 66 arreglos",
+   "kicker": "US$27, un solo pago",
+   "bed": "vid/fumosquito3/bed_18.mp4#184"
+  },
+  "t": 658.6,
+  "frase": "Lucía abrió la alacena"
+ },
+ {
+  "c": "ClVideoRef",
+  "from": 20064,
+  "dur": 150,
+  "props": {
+   "thumb": "img/fumosquito3/th_fucucas10.jpg",
+   "title": "Las cucarachas: el lugar que nadie revisa",
+   "tag": "PRÓXIMO VIDEO",
+   "next": true,
+   "bed": "vid/fumosquito3/bed_19.mp4#154"
+  },
+  "t": 668.8,
+  "frase": "La semana que viene te muestro"
+ }
+]
