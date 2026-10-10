@@ -106,44 +106,50 @@ def maestras(b):
             print(f"   avatar_ref rechazada: {v.get('motivo', '')[:120]}")
 
 # ═══════════════════════ director de fotografía ═══════════════════════
-def planos(necesidad, extra=1.1):
-    b = J(D + "biblia.json"); secs = secciones(); P = []
-    sys_p = ("You are the director of photography of a home-vlog YouTube series. You write the SHOTS that illustrate a script section, one "
-             "per spoken moment, in order. Every shot is a still photo that will be animated 2 seconds. Reply with JSON only.")
-    tandas = []
-    for s, txt in secs:   # secciones largas → tandas de ≤18 planos con su pedazo de texto (si no, el modelo se corta)
-        n = math.ceil(necesidad.get(s, 0) * extra)
-        if n == 0: continue
-        k = max(1, math.ceil(n / 18)); tot = sum(len(t) for t in txt); acc, parte, hechos = 0, [], 0
-        for t in txt:
-            parte.append(t); acc += len(t)
-            if len(tandas) < 10_000 and acc >= tot * (len([x for x in tandas if x[0] == s]) + 1) / k and t is not txt[-1]:
-                m = round(n * acc / tot) - hechos; tandas.append((s, parte, m)); hechos += m; parte = []
-        tandas.append((s, parte, n - hechos))
-    for s, txt, n in tandas:
-        if n <= 0 or not txt: continue
-        x = b["secciones"][s]; gente = {g: CANAL["personajes"][g]["desc"] for g in x["gente"]}
+def planos(necesidad=None):
+    """UN plano por tramo del video armado, con el texto EXACTO que suena en ese tramo (y el anterior/siguiente como contexto)."""
+    import fab
+    from comun import palabras, mapear, cortes
+    b = J(D + "biblia.json"); segs = fab.tramos(); WM = palabras(); C = cortes()
+    tw = [(mapear(w["s"], C), w["w"]) for w in WM]
+    for k, sg in enumerate(segs): sg["texto"] = " ".join(w for t, w in tw if sg["a"] <= t < sg["b"]) or "(pausa)"
+    sys_p = ("You are the director of photography of a home-vlog YouTube series. For each numbered moment of the video you get the EXACT words "
+             "the narrator says during it; you write the ONE still photo (animated 2 seconds) that shows THAT. Reply with JSON only.")
+    tandas, cur = [], []
+    for k, sg in enumerate(segs):
+        if cur and (len(cur) >= 18 or segs[cur[-1]]["sec"] != sg["sec"]): tandas.append(cur); cur = []
+        cur.append(k)
+    if cur: tandas.append(cur)
+    P = []
+    for t in tandas:
+        sec = segs[t[0]]["sec"]; x = b["secciones"][sec]; gente = {g: CANAL["personajes"][g]["desc"] for g in x["gente"]}
+        momentos = [{"n": i + 1, "seconds": round(segs[k]["b"] - segs[k]["a"], 1), "says": segs[k]["texto"]} for i, k in enumerate(t)]
         user = {
-            "section": s, "spoken_text_in_order": txt, "place": b["lugares"][x["lugar"]], "time": HORAS[x["hora"]], "people_present": gente,
-            "how_many_shots": n,
+            "section": sec, "context_before": segs[t[0] - 1]["texto"] if t[0] else "", "moments": momentos,
+            "place": b["lugares"][x["lugar"]], "time": HORAS[x["hora"]], "people_present": gente,
             "rules": [
-                "Shots follow the spoken text in order: each shot shows EXACTLY what is being said at that moment (the object, the action, the result).",
+                "Exactly ONE shot per moment, same order and same numbers. The shot shows what is SAID in that moment (the object, the action, the result). "
+                "If the moment is a general statement, show the most concrete visible thing that illustrates it in this house.",
                 "Alternate shot sizes: never two of the same size in a row (wide / medium / close detail).",
-                "Claudio, when present, is SHOWN DOING the actions with his hands (pouring, filling, hanging, checking with a flashlight), face visible in medium and wide shots. "
-                "Mark those shots with \"cara\": true — but only about ONE shot in three: the others are his hands at work, the objects, the place and the results. Family members appear doing ordinary things; children only fully clothed and safe.",
-                "In these shots nobody looks at the camera: Claudio and the family are busy with the task, looking at what they do (only the avatar talks to camera).",
-                "Write 'foto' in English: only what is visible (who, doing what, where, objects, light). 60-90 words. No camera words (cinematic, close-up shot, bokeh, 4k).",
-                "NEVER any paper, sign, label, book, screen, calendar or package where text could be read. No brand names.",
-                "'mov' = ONE simple visible movement that lasts 2 seconds (the hand tips the bucket and water pours out). Never 'stays still'.",
+                "Claudio, when present, is SHOWN DOING the actions with his hands (pouring, filling, hanging, checking with a flashlight). "
+                "Mark \"cara\": true only when his face is clearly visible, about ONE shot in three; the others are his hands at work, the objects, the place, the results. "
+                "Family members appear doing ordinary things; children only fully clothed and safe.",
+                "Nobody looks at the camera: everybody is busy with the task (only the avatar talks to camera).",
+                "Write 'foto' in English: only what is visible (who, doing what, where, objects, light). 50-80 words. No camera words.",
+                "NEVER any paper, sign, label, book, manual page, screen, calendar or package where text could be read. No brand names.",
+                "'mov' = ONE simple visible movement that lasts 2 seconds. Never 'stays still'.",
                 "Everything happens in the given place and time; do not invent other houses or streets.",
             ],
-            "json": '{"planos": [{"tam": "general|medio|detalle", "gente": ["claudio"], "cara": true, "foto": "...", "mov": "..."}]}',
+            "json": '{"planos": [{"n": 1, "tam": "general|medio|detalle", "gente": ["claudio"], "cara": false, "foto": "...", "mov": "..."}]}',
         }
         r = ds.json_call(sys_p, json.dumps(user, ensure_ascii=False), "planos", max_tokens=12000)
-        for k, p in enumerate(r.get("planos", [])[:n]):
-            P.append({"id": "", "sec": s, "lugar": x["lugar"], "hora": x["hora"], "gente": [g for g in p.get("gente", []) if g in gente],
-                      "cara": bool(p.get("cara")) and "claudio" in p.get("gente", []), "tam": p.get("tam", ""), "foto": p.get("foto", "")[:700], "mov": p.get("mov", "")[:220]})
-        print(f"   {s}: {len([p for p in P if p['sec'] == s])} planos (necesita {necesidad.get(s, 0)})", flush=True)
+        por_n = {int(q.get("n", 0)): q for q in r.get("planos", []) if isinstance(q, dict)}
+        for i, k in enumerate(t):
+            q = por_n.get(i + 1) or (r.get("planos", [])[i] if i < len(r.get("planos", [])) else {})
+            P.append({"id": "", "tramo": k, "sec": sec, "lugar": x["lugar"], "hora": x["hora"], "gente": [g for g in q.get("gente", []) if g in gente],
+                      "cara": bool(q.get("cara")) and "claudio" in q.get("gente", []), "tam": q.get("tam", ""), "dice": segs[k]["texto"][:200],
+                      "foto": (q.get("foto") or f"A concrete visible detail of the house illustrating: {segs[k]['texto']}")[:700], "mov": (q.get("mov") or "a small natural movement in the scene")[:220]})
+        print(f"   {sec}: tramos {t[0]}-{t[-1]}", flush=True)
     for k, p in enumerate(P): p["id"] = f"p{k + 1:03d}"
     return P
 

@@ -203,7 +203,6 @@ def e_planos():
     if not os.path.exists(D + "planos.json") or "--rehacer" in sys.argv:
         import equipo
         P = equipo.planos(nec)
-        for k, x in enumerate(P): x["id"] = f"p{k + 1:03d}"
         W(D + "planos.json", P)
     P = leer_planos(); errs, avisos = [], []
     for p in P:   # arreglos automáticos de lo que escribe el director de fotografía (no vale la pena frenar por esto)
@@ -225,6 +224,7 @@ def e_planos():
         if not p.get("cara") and CARA.search(f): avisos.append(f"{i}: menciona cara/mirada pero no tiene \"cara\": true")
         if re.search(r"[áéíóúñ¿¡]", f + mv): avisos.append(f"{i}: foto/mov con español (van en inglés)")
     from collections import Counter
+    if all("tramo" in p for p in P): nec = Counter(s["sec"] for s in tramos())
     tiene = Counter(p.get("sec") for p in P)
     print("sección   tienes  necesitas")
     falta = 0
@@ -277,10 +277,11 @@ def e_clips():
                                 env={**ENV, "AG_MODEL": "agnes-video-2.5-flash"}, stdout=open(LOG + "clips_heroe.log", "w"), stderr=subprocess.STDOUT)
         print(f"agnes 2.5-flash: {len(lst)} planos héroe en paralelo (tope {TOPE // 60} min)", flush=True)
     import foto3d
+    segs = tramos(); largo = {i: segs[P[i]["tramo"]]["n"] for i in P if "tramo" in P[i] and P[i]["tramo"] < len(segs)}
     t0 = time.time(); hechos = 0
     for k, i in enumerate(P):
         if not os.path.exists(f"{CL}/{i}.mp4"):
-            foto3d.clip(R + f"public/img/{S}/{i}.png", f"{CL}/{i}.mp4", (k * 7) % 6); hechos += 1
+            foto3d.clip(R + f"public/img/{S}/{i}.png", f"{CL}/{i}.mp4", (k * 7) % 6, n=max(CLIPF, largo.get(i, 0) + 2)); hechos += 1
             if hechos % 25 == 0: print(f"   foto 3D {hechos} · {(time.time() - t0) / 60:.0f} min", flush=True)
     print(f"foto 3D: {hechos} clips nuevos en {(time.time() - t0) / 60:.0f} min", flush=True)
     while proc and proc.poll() is None and time.time() - t0 < TOPE:
@@ -289,7 +290,7 @@ def e_clips():
     usados = 0
     for i in heroe:   # el clip de agnes reemplaza a la foto 3D (queda marca .agnes para no repetir)
         f = R + f"public/broll/{S}_heroe/{i}.mp4"
-        if os.path.exists(f) and os.path.getsize(f) > 50_000:
+        if os.path.exists(f) and os.path.getsize(f) > 50_000 and frames(f) >= largo.get(i, 0):   # más corto que su tramo: queda la foto 3D
             shutil.copy(f, f"{CL}/{i}.mp4"); open(f"{CL}/{i}.agnes", "w").close(); usados += 1
     if falt_h or usados:   # sello del QC que exige el farm para los clips de agnes (medición + revisión registrada)
         W(V3 + f"{S}_i2v_heroe.json", [{"nombre": i, "motion": P[i]["mov"]} for i in heroe if os.path.exists(f"{CL}/{i}.agnes")])
@@ -305,7 +306,11 @@ def e_armar():
     porsec = {}
     for p in P: porsec.setdefault(p["sec"], []).append(p["id"])
     k = {s: 0 for s in porsec}; usados = []
-    for s in segs:
+    portramo = {p["tramo"]: p["id"] for p in P if "tramo" in p}
+    if portramo and len(portramo) == len(segs):   # planos POR TRAMO: cada tramo lleva SU plano (lo dicho en ese segundo)
+        for j, s in enumerate(segs):
+            s["planos"] = [{"id": portramo[j], "n": s["n"]}]; usados.append((f"{CL}/{portramo[j]}.mp4", s["n"]))
+    for s in (segs if not (portramo and len(portramo) == len(segs)) else []):
         lst = porsec.get(s["sec"]) or sys.exit(f"⛔ la sección {s['sec']} no tiene planos")
         s["planos"], resto = [], s["n"]
         while resto > 0:
