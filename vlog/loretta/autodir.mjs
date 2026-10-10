@@ -8,6 +8,8 @@ const CH = SLUG.slice(0, 2);
 const BOOK = { ck: "Loretta's Church Supper Cookbook", fo: "Supper for One", cl: "The Best Way to Clean It", fh: "The Bug-Free Farmhouse", su: "52 Sunday Mornings with Loretta" }[CH];
 const SITE = { ck: "cookbook.lorettaschurch.com", fo: "lorettaschurch.com/one", cl: "lorettaschurch.com/clean", fh: "lorettaschurch.com/farm", su: "lorettaschurch.com/sunday" }[CH];
 const norm = (s) => (s.match(/\S+/g) || []).map((w) => w.toLowerCase().replace(/[^a-z0-9']/g, ""));  // = timeline.mjs: 1 token por palabra del guion (vacíos incluidos)
+// 9-oct: la escena se cierra con punto antes del sufijo (sin punto agnes IMPRIMÍA "Nobody is in the frame…" en libros/tarjetas)
+const endDot = (t) => (/[.!?]$/.test(t) ? t : t + ".");
 const HANDS = " Nobody is in the frame and no hands: show the objects and the result themselves; if the scene mentions hands or a person, show the moment just before or after, with the tools resting where they were used. Plain objects with no writing, no labels and no logos.";
 // ancla = n palabras NO vacías desde la posición w (si la palabra w es "—" se corre a la siguiente), únicas y primeras en el párrafo
 function anchor(pw, w) {
@@ -41,9 +43,9 @@ lines.forEach((line, p) => {
     let m;
     if (mk === "av") last = { p, at, kind: "av", name: "" };
     else if ((m = mk.match(/^pg (\d+)(?: (top|mid|bot))?$/))) { const nm = `pg${m[1]}${m[2] ? "_" + m[2] : ""}`; need.pages.add(nm); last = { p, at, kind: "pg", name: nm }; }
-    else if ((m = mk.match(/^img: (.+)$/))) { const nm = `b${String(++nb).padStart(3, "0")}`; const pr = m[1].trim() + HANDS; need.imgs.push({ name: nm, prompt: pr }); last = { p, at, kind: "bi", name: nm, p_: pr }; }
-    else if ((m = mk.match(/^st: (.+?) \|\| (.+)$/))) { const nm = `s${String(++ns).padStart(3, "0")}`; const pr = m[2].trim() + HANDS; need.stock.push({ name: nm, q: m[1].trim(), prompt: pr }); last = { p, at, kind: "bi", name: nm, q: m[1].trim(), p_: pr }; }
-    else if ((m = mk.match(/^clip: (.+?) \|\| (.+)$/))) { const nm = `k${String(++nk).padStart(3, "0")}`; const pr = m[1].trim() + HANDS; need.clips.push({ name: nm, prompt: pr, motion: m[2].trim(), hands: /hand|finger|glove|arm/i.test(m[1] + m[2]) }); last = { p, at, kind: "kf", name: nm, a: pr, d1: m[2].trim() }; }
+    else if ((m = mk.match(/^img: (.+)$/))) { const nm = `b${String(++nb).padStart(3, "0")}`; const pr = endDot(m[1].trim()) + HANDS; need.imgs.push({ name: nm, prompt: pr }); last = { p, at, kind: "bi", name: nm, p_: pr }; }
+    else if ((m = mk.match(/^st: (.+?) \|\| (.+)$/))) { const nm = `s${String(++ns).padStart(3, "0")}`; const pr = endDot(m[2].trim()) + HANDS; need.stock.push({ name: nm, q: m[1].trim(), prompt: pr }); last = { p, at, kind: "bi", name: nm, q: m[1].trim(), p_: pr }; }
+    else if ((m = mk.match(/^clip: (.+?) \|\| (.+)$/))) { const nm = `k${String(++nk).padStart(3, "0")}`; const pr = endDot(m[1].trim()) + HANDS; need.clips.push({ name: nm, prompt: pr, motion: m[2].trim(), hands: /hand|finger|glove|arm/i.test(m[1] + m[2]) }); last = { p, at, kind: "kf", name: nm, a: pr, d1: m[2].trim() }; }
     else if ((m = mk.match(/^ei (\d{4}): (.+)$/))) { const nm = `e${String(++ne).padStart(3, "0")}`; const pr = EI(m[1], m[2].trim()); need.imgs.push({ name: nm, prompt: pr, ei: 1 }); last = { p, at, kind: "ei", name: nm, p_: pr }; }
     else if ((m = mk.match(/^year (\d{4}): (.+)$/))) last = { p, at, kind: "c", name: "LorYear", props: { year: m[1], text: m[2].trim() } };
     else if ((m = mk.match(/^card: (.+?) \| (.+)$/))) last = { p, at, kind: "c", name: "LorRecipeCard", props: { title: m[1].trim(), lines: m[2].split(";").map((x) => x.trim()).filter(Boolean) } };
