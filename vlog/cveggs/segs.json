@@ -1,0 +1,1292 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 3.5,
+  "id": "c01",
+  "d": 3.5,
+  "T": 4,
+  "text": "Forty years of ranch breakfasts. Never a drop of oil.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S01",
+  "s": 3.5,
+  "e": 7.56,
+  "id": "c02",
+  "d": 4.06,
+  "T": 5,
+  "text": "Every morning, before the sun came up, I fried eggs for fourteen men.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S01",
+  "s": 7.56,
+  "e": 11.72,
+  "id": "c03",
+  "d": 4.16,
+  "T": 5,
+  "text": "Some mornings, at roundup, for forty. And I never poured oil in the pan.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S01",
+  "s": 11.72,
+  "e": 16.84,
+  "id": "c04",
+  "d": 5.12,
+  "T": 6,
+  "text": "Not a drop. And they never stuck, and they came out perfect. Soft, tender whites.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S01",
+  "s": 16.84,
+  "e": 21.72,
+  "id": "c05",
+  "d": 4.88,
+  "T": 6,
+  "text": "No brown, crispy, lacy edges. Runny yolks that sit up tall. Every time.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S01",
+  "s": 21.72,
+  "e": 26.52,
+  "id": "c06",
+  "d": 4.8,
+  "T": 5,
+  "text": "Last time it was the cheap beef, three hours under a lid. Today the fastest thing I cook.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S01",
+  "s": 26.52,
+  "e": 32.02,
+  "id": "c07",
+  "d": 5.5,
+  "T": 6,
+  "text": "Three minutes. And it's the one I've cooked more than anything else in my life. I did the math once.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S01",
+  "s": 32.02,
+  "e": 37.194,
+  "id": "c08",
+  "d": 5.174,
+  "T": 6,
+  "text": "Something like two hundred thousand eggs. Here's how most people fry an egg. They pour oil in the pan.",
+  "pad": 0.83
+ },
+ {
+  "sc": "S01",
+  "s": 37.194,
+  "e": 42.114,
+  "id": "c09",
+  "d": 4.92,
+  "T": 6,
+  "text": "Too much. They get it hot, too hot. The egg goes in and spits and pops,",
+  "pad": 1.08
+ },
+ {
+  "sc": "S01",
+  "s": 42.114,
+  "e": 46.754,
+  "id": "c10",
+  "d": 4.64,
+  "T": 5,
+  "text": "and the edges turn brown and hard like plastic before the top of the white is even set.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S01",
+  "s": 46.754,
+  "e": 53.694,
+  "id": "c11",
+  "d": 6.94,
+  "T": 8,
+  "text": "So they flip it, and the yolk breaks. Or they don't flip it, and the top is raw and slimy, and the bottom is a crust.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S01",
+  "s": 53.694,
+  "e": 58.554,
+  "id": "c12",
+  "d": 4.86,
+  "T": 6,
+  "text": "Then there's oil all over the plate. And if the pan isn't right, it sticks anyway,",
+  "pad": 1.14
+ },
+ {
+  "sc": "S01",
+  "s": 58.554,
+  "e": 68.299,
+  "id": "c13",
+  "d": 9.745,
+  "T": 10,
+  "text": "and half the egg stays in the pan. I'm going to show you the way the old ranch cooks did it. A little bit of water and a lid. That's the whole trick. And a pan you heat up the right way.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S01",
+  "s": 68.299,
+  "e": 74.559,
+  "id": "c14",
+  "d": 6.26,
+  "T": 7,
+  "text": "I'm Claudio. I cooked for a cattle crew for forty years. And the first thing I cooked every single day was eggs.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S02",
+  "s": 74.559,
+  "e": 85.699,
+  "id": "c15",
+  "d": 11.14,
+  "T": 12,
+  "text": "The skillet. The same one. Older than my truck. A seventy-nine. This pan has fried more eggs than any pan in Texas, I'd bet on it. And look at the surface. Black and smooth like glass.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S02",
+  "s": 85.699,
+  "e": 94.719,
+  "id": "c16",
+  "d": 9.02,
+  "T": 10,
+  "text": "That's forty years of seasoning. But I'll tell you something. This trick works in a nonstick pan too. And in a stainless pan, if you do the heat part right. I'll show you.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S03",
+  "s": 94.719,
+  "e": 106.442,
+  "id": "c17",
+  "d": 11.723,
+  "T": 12,
+  "text": "So why do eggs stick, and why do they get tough? Let me tell you what's going on in that pan, because once you see it, it's simple. An egg white is mostly water and protein. When the protein gets hot, it sets.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S03",
+  "s": 106.442,
+  "e": 116.562,
+  "id": "c18",
+  "d": 10.12,
+  "T": 11,
+  "text": "It goes from clear to white. That's cooking. If it gets hot gently, it sets soft and tender. If it gets too hot, too fast, the proteins squeeze tight, push the water out,",
+  "pad": 0.88
+ },
+ {
+  "sc": "S03",
+  "s": 116.562,
+  "e": 124.922,
+  "id": "c19",
+  "d": 8.36,
+  "T": 9,
+  "text": "and turn rubbery and brown. That's the crispy plastic edge. Now, sticking. Raw egg protein grabs onto metal. It holds on like glue.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S03",
+  "s": 124.922,
+  "e": 135.601,
+  "id": "c20",
+  "d": 10.679,
+  "T": 11,
+  "text": "But if the pan is hot enough when the egg goes in, the bottom of the egg sets in a split second, before it can grab on. And the little bit of moisture in the egg turns to steam right under it, and that lifts it.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S03",
+  "s": 135.601,
+  "e": 146.101,
+  "id": "c21",
+  "d": 10.5,
+  "T": 11,
+  "text": "So the pan has to be hot enough. But not so hot it burns the egg. That's the whole trick of the first part. The right heat. And the second part, the top. In an open pan,",
+  "pad": 0.5
+ },
+ {
+  "sc": "S03",
+  "s": 146.101,
+  "e": 157.324,
+  "id": "c22",
+  "d": 11.223,
+  "T": 12,
+  "text": "the bottom cooks and the top doesn't. Heat only comes from below. So people turn up the fire to cook the top, and they burn the bottom. Or they spoon hot oil over it. The water and the lid fix that.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S03",
+  "s": 157.324,
+  "e": 166.284,
+  "id": "c23",
+  "d": 8.96,
+  "T": 10,
+  "text": "The water turns to steam, the lid holds the steam in, and the steam cooks the top of the egg, gently, from above, while the pan cooks it from below.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S03",
+  "s": 166.284,
+  "e": 172.004,
+  "id": "c24",
+  "d": 5.72,
+  "T": 6,
+  "text": "Top and bottom at the same time. Soft all the way through. No flipping. No oil.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S04",
+  "s": 172.004,
+  "e": 180.744,
+  "id": "c25",
+  "d": 8.74,
+  "T": 9,
+  "text": "Don Ernesto taught me this my first week. I was frying eggs in a lake of bacon grease, and he came over and took the pan away from me. He wiped it out with a rag.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S04",
+  "s": 180.744,
+  "e": 184.764,
+  "id": "c26",
+  "d": 4.02,
+  "T": 5,
+  "text": "He said, \"Mijo, the egg doesn't want to swim. It wants to steam.\"",
+  "pad": 0.98
+ },
+ {
+  "sc": "S05",
+  "s": 184.764,
+  "e": 194.385,
+  "id": "c27",
+  "d": 9.621,
+  "T": 10,
+  "text": "Let me show you. Two eggs, for one plate. A cast iron or a nonstick skillet, about ten inches. And a lid that fits it. If you don't have a lid for your skillet,",
+  "pad": 0.38
+ },
+ {
+  "sc": "S05",
+  "s": 194.385,
+  "e": 202.205,
+  "id": "c28",
+  "d": 7.82,
+  "T": 8,
+  "text": "any lid from another pot, or a sheet pan, or a plate, anything that covers it. Step one. The empty pan on medium heat.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S05",
+  "s": 202.205,
+  "e": 209.505,
+  "id": "c29",
+  "d": 7.3,
+  "T": 8,
+  "text": "Not high. Medium. Let it heat up for two full minutes. Don't rush it. A cold pan is the number one reason eggs stick.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S06",
+  "s": 209.505,
+  "e": 219.245,
+  "id": "c30",
+  "d": 9.74,
+  "T": 10,
+  "text": "Step two. Test it. Wet your fingers and flick a few drops of water into the pan. Watch. If the water just sits there and bubbles quietly, the pan isn't ready.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S06",
+  "s": 219.245,
+  "e": 230.369,
+  "id": "c31",
+  "d": 11.124,
+  "T": 12,
+  "text": "Wait another minute. If the drops dance, they ball up and skate around the pan like little beads, it's ready. That's the sign. Dancing. If the water disappears instantly with a loud hiss and smoke,",
+  "pad": 0.88
+ },
+ {
+  "sc": "S06",
+  "s": 230.369,
+  "e": 235.709,
+  "id": "c32",
+  "d": 5.34,
+  "T": 6,
+  "text": "it's too hot. Take it off the heat for thirty seconds. That dancing water, it's an old trick.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S06",
+  "s": 235.709,
+  "e": 242.649,
+  "id": "c33",
+  "d": 6.94,
+  "T": 8,
+  "text": "The pan is hot enough that a layer of steam forms under the drop and it floats. And that's exactly what's going to happen under your egg.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S07",
+  "s": 242.649,
+  "e": 250.969,
+  "id": "c34",
+  "d": 8.32,
+  "T": 9,
+  "text": "Step three. Crack the eggs in, close together. Crack them low, right over the pan, not from up high. From up high the yolk breaks.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S07",
+  "s": 250.969,
+  "e": 255.169,
+  "id": "c35",
+  "d": 4.2,
+  "T": 5,
+  "text": "If you're nervous about shells, crack them into a little cup first and slide them in.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S08",
+  "s": 255.169,
+  "e": 265.433,
+  "id": "c36",
+  "d": 10.264,
+  "T": 11,
+  "text": "Now don't touch it. Thirty seconds. Watch the edge of the white. When the very edge goes from clear to white, opaque, the bottom is set. That's your sign for the next step.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S09",
+  "s": 265.433,
+  "e": 276.553,
+  "id": "c37",
+  "d": 11.12,
+  "T": 12,
+  "text": "Step four. Two tablespoons of water. Around the eggs. In the pan, around the edge. Not on top of the eggs. Pour it in the empty part of the pan. It'll sizzle and steam right away.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S10",
+  "s": 276.553,
+  "e": 278.973,
+  "id": "c38",
+  "d": 2.42,
+  "T": 3,
+  "text": "And the lid goes on. Right away.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S11",
+  "s": 278.973,
+  "e": 290.653,
+  "id": "c39",
+  "d": 11.68,
+  "T": 12,
+  "text": "Step five. Now you wait. Ninety seconds for a runny yolk. The white is set all the way through, and the yolk is warm and liquid. Two and a half minutes for a jammy yolk. That's thick, like honey.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S11",
+  "s": 290.653,
+  "e": 296.684,
+  "id": "c40",
+  "d": 6.031,
+  "T": 7,
+  "text": "Soft, but it won't run all over the plate. Three and a half to four minutes for a firm yolk, all the way through.",
+  "pad": 0.97
+ },
+ {
+  "sc": "S12",
+  "s": 296.684,
+  "e": 307.824,
+  "id": "c41",
+  "d": 11.14,
+  "T": 12,
+  "text": "Lid off. Look at that. The white is soft, tender, set all the way to the top. No brown edge. No crust. The yolk is sitting up tall with a thin white veil over it. And watch this.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S13",
+  "s": 307.824,
+  "e": 312.104,
+  "id": "c42",
+  "d": 4.28,
+  "T": 5,
+  "text": "They slide right out. Nothing stuck. Not one drop of oil.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S14",
+  "s": 312.104,
+  "e": 319.924,
+  "id": "c43",
+  "d": 7.82,
+  "T": 8,
+  "text": "On the ranch, this is breakfast. Two warm tortillas on the plate. Eggs on top. A spoon of red salsa over it. Salt and pepper.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S14",
+  "s": 319.924,
+  "e": 324.104,
+  "id": "c44",
+  "d": 4.18,
+  "T": 5,
+  "text": "Pick it up and eat it with your hands, standing up, before you get on the horse.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S15",
+  "s": 324.104,
+  "e": 327.06,
+  "id": "c45",
+  "d": 2.956,
+  "T": 4,
+  "text": "Rusty. Every morning for eight years, the same plate.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S16",
+  "s": 327.06,
+  "e": 330.82,
+  "id": "c46",
+  "d": 3.76,
+  "T": 4,
+  "text": "He says it's the only thing that gets him out of bed. I believe him.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S17",
+  "s": 330.82,
+  "e": 337.96,
+  "id": "c47",
+  "d": 7.14,
+  "T": 8,
+  "text": "I put every one of these recipes in a book, the way we really made them. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S18",
+  "s": 337.96,
+  "e": 348.44,
+  "id": "c48",
+  "d": 10.48,
+  "T": 11,
+  "text": "It stuck. The pan wasn't hot enough. Two minutes on medium, and wait for the water to dance. And if it's stainless steel, the pan has to be hot, every time, no shortcuts.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S18",
+  "s": 348.44,
+  "e": 358.74,
+  "id": "c49",
+  "d": 10.3,
+  "T": 11,
+  "text": "The edges are brown and crispy. The pan was too hot. Turn it down. Medium. The white is tough and rubbery. Too long under the lid, or the heat was too high once the lid was on.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S18",
+  "s": 358.74,
+  "e": 369.182,
+  "id": "c50",
+  "d": 10.442,
+  "T": 11,
+  "text": "The steam is enough. You can turn it down to medium-low when the lid goes on. There's a white film on the yolk. You poured the water on top of the eggs. Pour it around. Some people like that white film, by the way.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S18",
+  "s": 369.182,
+  "e": 380.202,
+  "id": "c51",
+  "d": 11.02,
+  "T": 12,
+  "text": "In a diner they call that \"basted.\" But if you want the bright yellow yolk, pour the water around. The top of the white is still clear and runny. Not long enough, or your lid isn't tight. Give it thirty more seconds.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S18",
+  "s": 380.202,
+  "e": 389.082,
+  "id": "c52",
+  "d": 8.88,
+  "T": 10,
+  "text": "The yolk broke. You cracked it from too high, or you used old eggs. Fresh eggs have a strong yolk that sits up tall. Old eggs spread out flat and break easy.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S19",
+  "s": 389.082,
+  "e": 398.86,
+  "id": "c53",
+  "d": 9.778,
+  "T": 10,
+  "text": "Now, the old variation. I said not a drop of oil, and that's true. But if you want, the old cooks did this. One teaspoon of lard, or butter. One teaspoon.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S19",
+  "s": 398.86,
+  "e": 405.3,
+  "id": "c54",
+  "d": 6.44,
+  "T": 7,
+  "text": "Just to flavor it. You swirl it in the hot pan, the eggs go in, and the rest is the same. Water, lid.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S19",
+  "s": 405.3,
+  "e": 411.58,
+  "id": "c55",
+  "d": 6.28,
+  "T": 7,
+  "text": "That little bit of butter makes the bottom of the egg taste like butter. That's all. You don't need it. But it's good.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S20",
+  "s": 411.58,
+  "e": 422.38,
+  "id": "c56",
+  "d": 10.8,
+  "T": 11,
+  "text": "I'll tell you about the morning of the big roundup. Nineteen eighty-eight. Forty men to feed before daylight. Neighbors, and their boys, and the hands from two other ranches. I had seven dozen eggs,",
+  "pad": 0.2
+ },
+ {
+  "sc": "S20",
+  "s": 422.38,
+  "e": 432.196,
+  "id": "c57",
+  "d": 9.816,
+  "T": 10,
+  "text": "two skillets and the woodstove. And they all came in at once, hungry, cold, in the dark. I couldn't fry eighty eggs two at a time. So I did what Don Ernesto showed me for crowds.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S20",
+  "s": 432.196,
+  "e": 443.456,
+  "id": "c58",
+  "d": 11.26,
+  "T": 12,
+  "text": "Big sheet pans, greased with a little lard, eggs cracked right onto them, into the hot oven. Eight minutes, and twenty-four eggs came out at once. Three pans. Everybody ate in fifteen minutes.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S20",
+  "s": 443.456,
+  "e": 452.796,
+  "id": "c59",
+  "d": 9.34,
+  "T": 10,
+  "text": "One of the neighbors' old men said it was the best breakfast he'd had since his wife died. I've never forgotten that. Some things matter more than the food. But the food has to be right first.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S21",
+  "s": 452.796,
+  "e": 464.543,
+  "id": "c60",
+  "d": 11.747,
+  "T": 12,
+  "text": "So for a crowd, here's how. Twelve eggs. Heat the oven to four hundred degrees. Put a sheet pan in the oven while it heats, so the pan gets hot. Take it out, rub it with a tablespoon of butter or lard,",
+  "pad": 0.25
+ },
+ {
+  "sc": "S21",
+  "s": 464.543,
+  "e": 471.243,
+  "id": "c61",
+  "d": 6.7,
+  "T": 7,
+  "text": "crack the eggs on it, close together, and back in the oven. Six to eight minutes. Six for runny, eight for firm.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S21",
+  "s": 471.243,
+  "e": 477.103,
+  "id": "c62",
+  "d": 5.86,
+  "T": 7,
+  "text": "Cut them apart with a spatula. Or just use two skillets on the stove, and do two batches. It goes fast.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S22",
+  "s": 477.103,
+  "e": 482.923,
+  "id": "c63",
+  "d": 5.82,
+  "T": 6,
+  "text": "And for one person. Same thing. One egg, a little pan, one tablespoon of water. Done.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S23",
+  "s": 482.923,
+  "e": 493.733,
+  "id": "c64",
+  "d": 10.81,
+  "T": 11,
+  "text": "At the store, let's talk about eggs, because it's confusing now and the prices have been all over the place. Grade A and Grade AA. AA is a little fresher, the white is firmer and the yolk sits higher.",
+  "pad": 0.19
+ },
+ {
+  "sc": "S23",
+  "s": 493.733,
+  "e": 504.973,
+  "id": "c65",
+  "d": 11.24,
+  "T": 12,
+  "text": "For frying, that's nice. But Grade A is fine. Large eggs are what most recipes mean. The color of the shell, brown or white, doesn't matter at all. It's just the breed of the hen. Same egg inside.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S23",
+  "s": 504.973,
+  "e": 515.873,
+  "id": "c66",
+  "d": 10.9,
+  "T": 12,
+  "text": "Cage-free, free-range, pasture-raised. Those are about how the hens are kept. Pasture-raised eggs often have a darker orange yolk, because of what the hens eat. They taste good. They cost more.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S23",
+  "s": 515.873,
+  "e": 527.367,
+  "id": "c67",
+  "d": 11.494,
+  "T": 12,
+  "text": "Buy what fits your budget. A plain carton of large eggs makes a beautiful fried egg with this trick. And look at the date on the carton. Buy the freshest one on the shelf. Reach to the back. That's where the newer ones are.",
+  "pad": 0.51
+ },
+ {
+  "sc": "S24",
+  "s": 527.367,
+  "e": 538.547,
+  "id": "c68",
+  "d": 11.18,
+  "T": 12,
+  "text": "Here's how to tell if an egg is fresh at home. Put it in a glass of water. If it sinks and lies flat on the bottom, it's very fresh. That's your frying egg. If it sinks but stands up on one end,",
+  "pad": 0.82
+ },
+ {
+  "sc": "S24",
+  "s": 538.547,
+  "e": 545.267,
+  "id": "c69",
+  "d": 6.72,
+  "T": 7,
+  "text": "it's older. Still fine, but use it for scrambling or for baking. If it floats, throw it out.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S25",
+  "s": 545.267,
+  "e": 555.907,
+  "id": "c70",
+  "d": 10.64,
+  "T": 11,
+  "text": "Storing. Eggs in the fridge, in their carton, on a shelf inside, not in the door. The door gets warm every time you open it. Forty degrees or colder. They'll keep three to five weeks.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S25",
+  "s": 555.907,
+  "e": 563.26,
+  "id": "c71",
+  "d": 7.353,
+  "T": 8,
+  "text": "And don't wash them. In the US, eggs are already washed before they're sold. Washing them again can push bacteria through the shell.",
+  "pad": 0.65
+ },
+ {
+  "sc": "S26",
+  "s": 563.26,
+  "e": 574.74,
+  "id": "c72",
+  "d": 11.48,
+  "T": 12,
+  "text": "And I want to say something about runny yolks, because I'd be wrong not to. A runny yolk is not fully cooked. For most healthy grown people, eating a fresh egg with a runny yolk is something folks have done forever.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S26",
+  "s": 574.74,
+  "e": 583.46,
+  "id": "c73",
+  "d": 8.72,
+  "T": 9,
+  "text": "But the USDA says for little kids, older folks, pregnant women, and anybody with a weak immune system, cook eggs until the yolk and white are firm.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S26",
+  "s": 583.46,
+  "e": 591.797,
+  "id": "c74",
+  "d": 8.337,
+  "T": 9,
+  "text": "That's the three-and-a-half to four minute egg with this trick. It still comes out tender. And another option, you can buy pasteurized eggs in the shell.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S26",
+  "s": 591.797,
+  "e": 601.777,
+  "id": "c75",
+  "d": 9.98,
+  "T": 11,
+  "text": "They're heated just enough to kill bacteria, and they fry up the same. If you're cooking for your grandkids or your mother, use those, or cook the yolk firm. And fried eggs don't keep.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S26",
+  "s": 601.777,
+  "e": 606.437,
+  "id": "c76",
+  "d": 4.66,
+  "T": 5,
+  "text": "They're the one thing in this whole set you can't make ahead. Eat them right out of the pan.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S27",
+  "s": 606.437,
+  "e": 616.819,
+  "id": "c77",
+  "d": 10.382,
+  "T": 11,
+  "text": "The second breakfast. This is what we ate on Sundays. Take everything from this set and put it on one plate. The skillet potatoes from video four, crispy, made with that little bit of water too.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S27",
+  "s": 616.819,
+  "e": 623.539,
+  "id": "c78",
+  "d": 6.72,
+  "T": 7,
+  "text": "A spoon of the beans from video two, warmed up in the skillet until they're thick. Two of these eggs on top. Salsa.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S27",
+  "s": 623.539,
+  "e": 629.699,
+  "id": "c79",
+  "d": 6.16,
+  "T": 7,
+  "text": "Warm tortillas. That's a ranch Sunday. If you've been cooking along with me, you already have the beans in the freezer.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S28",
+  "s": 629.699,
+  "e": 640.819,
+  "id": "c80",
+  "d": 11.12,
+  "T": 12,
+  "text": "And here's the other one. The leftover breakfast. Chop up whatever you have from last night. The shredded beef from last time. Leftover potatoes. Some onion. Crisp it in the skillet with a little bit of the fat.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S28",
+  "s": 640.819,
+  "e": 650.185,
+  "id": "c81",
+  "d": 9.366,
+  "T": 10,
+  "text": "Make a few holes in it with the spoon. Crack an egg in each hole. A spoon of water around the edge, and the lid. Two and a half minutes. The eggs steam right on top of the hash.",
+  "pad": 0.63
+ },
+ {
+  "sc": "S28",
+  "s": 650.185,
+  "e": 654.725,
+  "id": "c82",
+  "d": 4.54,
+  "T": 5,
+  "text": "One pan. That's the hand's breakfast after a long day of doing nothing but working.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S29",
+  "s": 654.725,
+  "e": 666.065,
+  "id": "c83",
+  "d": 11.34,
+  "T": 12,
+  "text": "What it costs. A dozen large eggs, about four dollars these days, so two eggs is about sixty-seven cents. Two corn tortillas, about fifteen cents. A spoon of salsa, about ten cents.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S29",
+  "s": 666.065,
+  "e": 674.005,
+  "id": "c84",
+  "d": 7.94,
+  "T": 9,
+  "text": "Ninety-two cents. Even with the eggs as expensive as they've been, a ranch breakfast plate under a dollar. And zero for oil, because there's no oil.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S30",
+  "s": 674.005,
+  "e": 681.26,
+  "id": "c85",
+  "d": 7.255,
+  "T": 8,
+  "text": "Outside. On the fire, at dawn. This is where I learned it. Put the skillet on the grate over the coals, not the flames.",
+  "pad": 0.75
+ },
+ {
+  "sc": "S30",
+  "s": 681.26,
+  "e": 693.08,
+  "id": "c86",
+  "d": 11.82,
+  "T": 12,
+  "text": "The heat is harder to control outside, so hold your hand about five inches above the grate. If you can only keep it there three or four seconds, that's medium. Do the water test the same way. Eggs in, thirty seconds,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S30",
+  "s": 693.08,
+  "e": 702.78,
+  "id": "c87",
+  "d": 9.7,
+  "T": 10,
+  "text": "water around, lid on. If you don't have a lid, use a piece of foil, or another skillet turned upside down. That's what we did. On the trail, nobody carries extra lids.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S31",
+  "s": 702.78,
+  "e": 714.201,
+  "id": "c88",
+  "d": 11.421,
+  "T": 12,
+  "text": "A couple of questions. Does this work in stainless steel? Yes, but the heat is everything. Two full minutes on medium, and the water has to dance. If the egg sticks, give it ten more seconds before you move it.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S31",
+  "s": 714.201,
+  "e": 726.001,
+  "id": "c89",
+  "d": 11.8,
+  "T": 12,
+  "text": "When the bottom is set, it lets go by itself. Can I do over easy this way? You don't need to. That's the point. The steam does the top. But if somebody at your table wants them flipped, you can do the first part,",
+  "pad": 0.2
+ },
+ {
+  "sc": "S31",
+  "s": 726.001,
+  "e": 737.781,
+  "id": "c90",
+  "d": 11.78,
+  "T": 12,
+  "text": "thirty seconds, then flip them gently with a thin spatula, and give them thirty more. With no oil, use a nonstick pan for that. What about scrambled eggs? Different thing. Low heat, butter,",
+  "pad": 0.22
+ },
+ {
+  "sc": "S31",
+  "s": 737.781,
+  "e": 744.121,
+  "id": "c91",
+  "d": 6.34,
+  "T": 7,
+  "text": "keep them moving. That's another day. Why does my cast iron pan stick even when it's hot? It needs more seasoning.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S31",
+  "s": 744.121,
+  "e": 755.636,
+  "id": "c92",
+  "d": 11.515,
+  "T": 12,
+  "text": "Fry bacon in it a few times. Rub a thin layer of oil in it after you wash it and dry it on the stove. After a few weeks, it'll be like mine. Well, not like mine. Mine has forty years.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S32",
+  "s": 755.636,
+  "e": 766.576,
+  "id": "c93",
+  "d": 10.94,
+  "T": 12,
+  "text": "Now, the tortillas. Because a cold tortilla out of the bag ruins a good egg. Don't microwave them. They go chewy and then hard. Use a dry skillet, no oil, medium-high.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S32",
+  "s": 766.576,
+  "e": 776.636,
+  "id": "c94",
+  "d": 10.06,
+  "T": 11,
+  "text": "One tortilla at a time. Thirty seconds on the first side, until it gets a few brown spots. Flip it. Thirty seconds more. Sometimes it puffs up. That's a good tortilla.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S32",
+  "s": 776.636,
+  "e": 784.062,
+  "id": "c95",
+  "d": 7.426,
+  "T": 8,
+  "text": "Then stack them inside a clean kitchen towel, folded over. The towel holds the steam, and they stay soft and hot for half an hour.",
+  "pad": 0.57
+ },
+ {
+  "sc": "S32",
+  "s": 784.062,
+  "e": 791.522,
+  "id": "c96",
+  "d": 7.46,
+  "T": 8,
+  "text": "On the ranch, the stack of tortillas in the towel sat in the middle of the table, and the last man to sit down got the warmest one from the bottom.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S33",
+  "s": 791.522,
+  "e": 803.082,
+  "id": "c97",
+  "d": 11.56,
+  "T": 12,
+  "text": "And the salsa, since we're here. The one I made every morning. Two tomatoes, a quarter of an onion, one clove of garlic and one jalapeño, or two if you like it hot. Put them in the dry skillet, medium-high,",
+  "pad": 0.44
+ },
+ {
+  "sc": "S33",
+  "s": 803.082,
+  "e": 813.697,
+  "id": "c98",
+  "d": 10.615,
+  "T": 11,
+  "text": "and let them blacken in spots, turning them, about eight minutes. The garlic comes out sooner, when it's brown. Then everything into a blender with a pinch of salt and a squeeze of lime. A few pulses.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S33",
+  "s": 813.697,
+  "e": 822.937,
+  "id": "c99",
+  "d": 9.24,
+  "T": 10,
+  "text": "Not smooth, a little chunky. That's it. It keeps a week in a jar in the fridge. A jar of salsa and a dozen eggs, and breakfast is ready every day of the week.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S34",
+  "s": 822.937,
+  "e": 831.397,
+  "id": "c100",
+  "d": 8.46,
+  "T": 9,
+  "text": "My first morning cooking for the crew, I was twenty-two. Don Ernesto told me to fry the eggs while he went to get the horses. I had never cooked for more than my brothers.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S34",
+  "s": 831.397,
+  "e": 842.472,
+  "id": "c101",
+  "d": 11.075,
+  "T": 12,
+  "text": "I burned the first dozen black, and I broke half of the second dozen. When the men came in, there were maybe eight good eggs for fourteen men. Nobody said anything. They just ate tortillas and beans.",
+  "pad": 0.93
+ },
+ {
+  "sc": "S34",
+  "s": 842.472,
+  "e": 852.092,
+  "id": "c102",
+  "d": 9.62,
+  "T": 10,
+  "text": "That night I asked Don Ernesto to show me, and the next morning, he did. Hot pan, water, lid. I've never burned an egg since. Well, almost never.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S35",
+  "s": 852.092,
+  "e": 860.652,
+  "id": "c103",
+  "d": 8.56,
+  "T": 9,
+  "text": "And how many eggs per person? On the ranch, the rule was three for a working man and two for everybody else. Rusty took four when I wasn't looking.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S35",
+  "s": 860.652,
+  "e": 866.252,
+  "id": "c104",
+  "d": 5.6,
+  "T": 6,
+  "text": "At home, plan two per person, and keep a few extra in the carton. Somebody always wants one more.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S36",
+  "s": 866.252,
+  "e": 875.032,
+  "id": "c105",
+  "d": 8.78,
+  "T": 9,
+  "text": "A question I get a lot. Fresh eggs or older eggs? For frying, the fresher the better. A fresh egg has a tight white that stays round in the pan.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S36",
+  "s": 875.032,
+  "e": 885.852,
+  "id": "c106",
+  "d": 10.82,
+  "T": 11,
+  "text": "An egg that's a couple of weeks old has a looser white that spreads out thin, and the edges get crispy faster. Some people like that. But if you're going to boil eggs and peel them, older is better.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S36",
+  "s": 885.852,
+  "e": 895.452,
+  "id": "c107",
+  "d": 9.6,
+  "T": 10,
+  "text": "A very fresh boiled egg sticks to the shell, and you tear the white trying to peel it. A week-old egg peels clean. So, fresh ones for the skillet, older ones for the pot.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S37",
+  "s": 895.452,
+  "e": 907.276,
+  "id": "c108",
+  "d": 11.824,
+  "T": 12,
+  "text": "And the pan. People are scared to cook eggs in cast iron because they stick. They stick in a pan that's dry or poorly seasoned. After you wash your skillet, dry it on the fire and rub it with a drop of oil, like I showed you.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S37",
+  "s": 907.276,
+  "e": 916.256,
+  "id": "c109",
+  "d": 8.98,
+  "T": 10,
+  "text": "Every time you do that, the surface gets a little smoother, like glass. And cook bacon in it, fry potatoes in it. The more you use it, the less anything sticks.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S37",
+  "s": 916.256,
+  "e": 920.176,
+  "id": "c110",
+  "d": 3.92,
+  "T": 5,
+  "text": "My skillet from seventy-nine, an egg slides across it like ice.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S38",
+  "s": 920.176,
+  "e": 931.616,
+  "id": "c111",
+  "d": 11.44,
+  "T": 12,
+  "text": "I'll tell you about the morning of the big storm. Nineteen ninety-three. The power went out in the middle of the night, and it stayed out for four days. No electric stove, no lights, no fridge. Forty men to feed.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S38",
+  "s": 931.616,
+  "e": 943.45,
+  "id": "c112",
+  "d": 11.834,
+  "T": 12,
+  "text": "Don Ernesto and I carried two cast iron skillets out to the fire pit in the rain, under a tarp. And every morning for four days, I cooked eggs for forty men, on wood, with a lid, the same way I'm showing you.",
+  "pad": 0.17
+ },
+ {
+  "sc": "S38",
+  "s": 943.45,
+  "e": 952.93,
+  "id": "c113",
+  "d": 9.48,
+  "T": 10,
+  "text": "Steam, lid, ninety seconds. Not one man missed a breakfast. The eggs we couldn't keep cold, we cooked first. That's when I knew this method works on anything.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S38",
+  "s": 952.93,
+  "e": 957.46,
+  "id": "c114",
+  "d": 4.53,
+  "T": 5,
+  "text": "A stove, a fire, a camp. Fat, heat, water, lid.",
+  "pad": 0.47
+ },
+ {
+  "sc": "S39",
+  "s": 957.46,
+  "e": 968.35,
+  "id": "c115",
+  "d": 10.89,
+  "T": 12,
+  "text": "And people ask me about scrambled. The same idea works. Low heat, not high. A little butter. Beat the eggs with a pinch of salt, pour them in, and stir slowly with a spatula,",
+  "pad": 1.11
+ },
+ {
+  "sc": "S39",
+  "s": 968.35,
+  "e": 979.532,
+  "id": "c116",
+  "d": 11.182,
+  "T": 12,
+  "text": "pushing them from the edge to the middle. Take them off the heat when they still look a little wet, because they keep cooking on the plate. High heat makes scrambled eggs hard and dry and squeaky. Low heat makes them soft.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S39",
+  "s": 979.532,
+  "e": 984.492,
+  "id": "c117",
+  "d": 4.96,
+  "T": 6,
+  "text": "Most people cook eggs too hot. That's the whole secret, for fried and for scrambled.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S40",
+  "s": 984.492,
+  "e": 994.112,
+  "id": "c118",
+  "d": 9.62,
+  "T": 10,
+  "text": "And don't wash your eggs. In this country, eggs from the store are already washed at the plant, and then they go in the fridge. If you wash them again at home, water can get through the shell.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S40",
+  "s": 994.112,
+  "e": 1005.148,
+  "id": "c119",
+  "d": 11.036,
+  "T": 12,
+  "text": "Just keep them in their carton in the fridge, and if one has a little dirt on it, wipe it with a dry towel. And if an egg is cracked when you open the carton, don't use it. Throw it out. It's thirty cents. It's not worth it.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S41",
+  "s": 1005.148,
+  "e": 1015.848,
+  "id": "c120",
+  "d": 10.7,
+  "T": 11,
+  "text": "And eggs for supper. On the ranch, when the men came in late and tired, and there was nothing left, I made eggs. Two eggs on rice, with a spoon of salsa and whatever beans were left in the pot.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S41",
+  "s": 1015.848,
+  "e": 1025.168,
+  "id": "c121",
+  "d": 9.32,
+  "T": 10,
+  "text": "Ten minutes. A good meal costs a dollar a plate. A lot of people think eggs are only for breakfast. On this ranch, eggs saved more suppers than anything else.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S42",
+  "s": 1025.168,
+  "e": 1034.773,
+  "id": "c122",
+  "d": 9.605,
+  "T": 10,
+  "text": "Now, about the book. This crew book has every breakfast, every supper, every pot of beans for forty years. A few years ago I put all of it, every recipe,",
+  "pad": 0.39
+ },
+ {
+  "sc": "S42",
+  "s": 1034.773,
+  "e": 1038.763,
+  "id": "c123",
+  "d": 3.99,
+  "T": 5,
+  "text": "the way we really made them, into a real book. The Vaquero's Cookbook.",
+  "pad": 1.01
+ },
+ {
+  "sc": "S43",
+  "s": 1038.763,
+  "e": 1049.523,
+  "id": "c124",
+  "d": 10.76,
+  "T": 11,
+  "text": "These eggs are on page fifty-five. The heat, the dancing water, the lid, the times for runny and jammy and firm, and the sheet pan for a crowd. And every other recipe from this whole set.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S43",
+  "s": 1049.523,
+  "e": 1060.323,
+  "id": "c125",
+  "d": 10.8,
+  "T": 11,
+  "text": "The pork chops. The beans. The ribs. The potatoes. The steak. The cabbage. The chicken. The green beans. The cheap beef. All of it in one place, so you don't have to come back and find the video.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S43",
+  "s": 1060.323,
+  "e": 1069.396,
+  "id": "c126",
+  "d": 9.073,
+  "T": 10,
+  "text": "It's twenty-seven dollars. Every recipe from the ranch for less than one family dinner out. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.93
+ },
+ {
+  "sc": "S44",
+  "s": 1069.396,
+  "e": 1079.176,
+  "id": "c127",
+  "d": 9.78,
+  "T": 10,
+  "text": "That's it. Medium heat, two minutes. Wait for the water to dance. Eggs in, thirty seconds. Two spoons of water around them, not on them. And the lid.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S45",
+  "s": 1079.176,
+  "e": 1090.356,
+  "id": "c128",
+  "d": 11.18,
+  "T": 12,
+  "text": "That's the end of this set. Ten recipes. The ones the crew asked for most. If you missed any, start with the pork chops. That's the one that made people mad at me. Then the beans. And keep cooking.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S45",
+  "s": 1090.356,
+  "e": 1098.721,
+  "id": "c129",
+  "d": 8.365,
+  "T": 9,
+  "text": "Every one of them works for two people or for twenty. I've got more. A crew book this thick doesn't run out. Ándale, mijo. I'll see you at the next one.",
+  "pad": 0.63
+ }
+]

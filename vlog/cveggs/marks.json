@@ -1,0 +1,232 @@
+{
+ "S00": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos huevos en la sartén de hierro, la tapa baja, vapor"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio sostiene un huevo sobre la sartén negra"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio descuelga la sartén del '79"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "un cartón de huevos, un vaso de agua, una tapa"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno de la cuadrilla"
+ },
+ "S05": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la sartén vacía sobre la hornalla, fuego medio"
+ },
+ "S06": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "una gota de agua baila sobre la sartén"
+ },
+ "S07": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos huevos caen en la sartén, juntos"
+ },
+ "S08": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la clara se pone blanca en los bordes"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio echa agua alrededor de los huevos, no encima"
+ },
+ "S10": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa baja, vapor dentro"
+ },
+ "S11": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "a través de la tapa de vidrio, los huevos se cocinan al vapor"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa se levanta, vapor, huevos perfectos"
+ },
+ "S13": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la espátula desliza los huevos de la sartén sin esfuerzo"
+ },
+ "S14": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "huevos sobre dos tortillas calientes con salsa roja"
+ },
+ "S15": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty llega con el sombrero puesto, agarra el plato"
+ },
+ "S16": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty come de pie, la yema corre por la tortilla"
+ },
+ "S17": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia la sartén con un trapo"
+ },
+ "S18": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S19": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "una cucharadita de manteca derritiéndose en la sartén"
+ },
+ "S20": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "corral al amanecer, luz azul"
+ },
+ "S21": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "bandeja de horno con una docena de huevos cocidos"
+ },
+ "S22": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "una sartén chica, un solo huevo"
+ },
+ "S23": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en el súper, frente a la góndola de huevos"
+ },
+ "S24": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "un huevo en un vaso de agua, se hunde"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cartón de huevos dentro de la heladera, en un estante"
+ },
+ "S26": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio habla a cámara, serio"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "plato de desayuno: huevos, papas de sartén, porotos, tortillas"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio pica papas fritas sobrantes y carne desmenuzada en la sartén"
+ },
+ "S29": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S30": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "la sartén de hierro sobre la parrilla del fogón, la tapa encima"
+ },
+ "S31": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga la espátula"
+ },
+ "S32": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "tortillas de maíz calentándose en la sartén seca, se inflan"
+ },
+ "S33": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "tomates, chile y cebolla tostándose en la sartén de hierro, licuadora"
+ },
+ "S34": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio cuenta junto a la ventana, taza en la mano"
+ },
+ "S35": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con dos huevos en la mano"
+ },
+ "S36": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "huevos frescos al lado de huevos de dos semanas, uno pelado"
+ },
+ "S37": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frota la sartén de hierro con una gota de aceite y papel"
+ },
+ "S38": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio cuenta, taza en la mano"
+ },
+ "S39": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "huevos revueltos suaves en un plato al lado de huevos fritos"
+ },
+ "S40": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sostiene un huevo con la cáscara sucia y otro limpio"
+ },
+ "S41": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio habla a cámara, plato de huevos en la mano"
+ },
+ "S42": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S43": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 55"
+ },
+ "S44": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, cuelga la sartén del '79"
+ },
+ "S45": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio mira el corral al amanecer, una taza de café"
+ }
+}

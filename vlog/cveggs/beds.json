@@ -1,0 +1,372 @@
+[
+ {
+  "name": "c17_1",
+  "q": "cracking egg",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"So why do eggs stick, and why do they get tough? Let me tell you what's going on in that pan, because once you see it, it's simple. An egg white is mostly water and protein. When the protein gets hot, it sets.\" — it must show: cracking egg."
+ },
+ {
+  "name": "c17_2",
+  "q": "egg bowl",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"So why do eggs stick, and why do they get tough? Let me tell you what's going on in that pan, because once you see it, it's simple. An egg white is mostly water and protein. When the protein gets hot, it sets.\" — it must show: egg bowl."
+ },
+ {
+  "name": "c18_1",
+  "q": "egg white cooking",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"It goes from clear to white. That's cooking. If it gets hot gently, it sets soft and tender. If it gets too hot, too fast, the proteins squeeze tight, push the water out,\" — it must show: egg white cooking."
+ },
+ {
+  "name": "c18_2",
+  "q": "frying egg",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"It goes from clear to white. That's cooking. If it gets hot gently, it sets soft and tender. If it gets too hot, too fast, the proteins squeeze tight, push the water out,\" — it must show: frying egg."
+ },
+ {
+  "name": "c19_1",
+  "q": "egg stuck pan",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"and turn rubbery and brown. That's the crispy plastic edge. Now, sticking. Raw egg protein grabs onto metal. It holds on like glue.\" — it must show: egg stuck pan."
+ },
+ {
+  "name": "c19_2",
+  "q": "burnt egg",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"and turn rubbery and brown. That's the crispy plastic edge. Now, sticking. Raw egg protein grabs onto metal. It holds on like glue.\" — it must show: burnt egg."
+ },
+ {
+  "name": "c22_1",
+  "q": "frying egg oil",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"the bottom cooks and the top doesn't. Heat only comes from below. So people turn up the fire to cook the top, and they burn the bottom. Or they spoon hot oil over it. The water and the lid fix that.\" — it must show: frying egg oil."
+ },
+ {
+  "name": "c22_2",
+  "q": "fried egg pan",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"the bottom cooks and the top doesn't. Heat only comes from below. So people turn up the fire to cook the top, and they burn the bottom. Or they spoon hot oil over it. The water and the lid fix that.\" — it must show: fried egg pan."
+ },
+ {
+  "name": "c52_1",
+  "q": "broken yolk",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"The yolk broke. You cracked it from too high, or you used old eggs. Fresh eggs have a strong yolk that sits up tall. Old eggs spread out flat and break easy.\" — it must show: broken yolk."
+ },
+ {
+  "name": "c52_2",
+  "q": "egg yolk",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"The yolk broke. You cracked it from too high, or you used old eggs. Fresh eggs have a strong yolk that sits up tall. Old eggs spread out flat and break easy.\" — it must show: egg yolk."
+ },
+ {
+  "name": "c60_1",
+  "q": "sheet pan oven",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"So for a crowd, here's how. Twelve eggs. Heat the oven to four hundred degrees. Put a sheet pan in the oven while it heats, so the pan gets hot. Take it out, rub it with a tablespoon of butter or lard,\" — it must show: sheet pan oven."
+ },
+ {
+  "name": "c60_2",
+  "q": "oven tray",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"So for a crowd, here's how. Twelve eggs. Heat the oven to four hundred degrees. Put a sheet pan in the oven while it heats, so the pan gets hot. Take it out, rub it with a tablespoon of butter or lard,\" — it must show: oven tray."
+ },
+ {
+  "name": "c61_1",
+  "q": "baked eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"crack the eggs on it, close together, and back in the oven. Six to eight minutes. Six for runny, eight for firm.\" — it must show: baked eggs."
+ },
+ {
+  "name": "c61_2",
+  "q": "eggs oven",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"crack the eggs on it, close together, and back in the oven. Six to eight minutes. Six for runny, eight for firm.\" — it must show: eggs oven."
+ },
+ {
+  "name": "c62_1",
+  "q": "eggs skillet",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Cut them apart with a spatula. Or just use two skillets on the stove, and do two batches. It goes fast.\" — it must show: eggs skillet."
+ },
+ {
+  "name": "c62_2",
+  "q": "fried eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Cut them apart with a spatula. Or just use two skillets on the stove, and do two batches. It goes fast.\" — it must show: fried eggs."
+ },
+ {
+  "name": "c64_1",
+  "q": "egg aisle",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"At the store, let's talk about eggs, because it's confusing now and the prices have been all over the place. Grade A and Grade AA. AA is a little fresher, the white is firmer and the yolk sits higher.\" — it must show: egg aisle."
+ },
+ {
+  "name": "c64_2",
+  "q": "grocery eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"At the store, let's talk about eggs, because it's confusing now and the prices have been all over the place. Grade A and Grade AA. AA is a little fresher, the white is firmer and the yolk sits higher.\" — it must show: grocery eggs."
+ },
+ {
+  "name": "c65_1",
+  "q": "brown white eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"For frying, that's nice. But Grade A is fine. Large eggs are what most recipes mean. The color of the shell, brown or white, doesn't matter at all. It's just the breed of the hen. Same egg inside.\" — it must show: brown white eggs."
+ },
+ {
+  "name": "c65_2",
+  "q": "eggs basket",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"For frying, that's nice. But Grade A is fine. Large eggs are what most recipes mean. The color of the shell, brown or white, doesn't matter at all. It's just the breed of the hen. Same egg inside.\" — it must show: eggs basket."
+ },
+ {
+  "name": "c66_1",
+  "q": "chickens pasture",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Cage-free, free-range, pasture-raised. Those are about how the hens are kept. Pasture-raised eggs often have a darker orange yolk, because of what the hens eat. They taste good. They cost more.\" — it must show: chickens pasture."
+ },
+ {
+  "name": "c66_2",
+  "q": "free range hens",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Cage-free, free-range, pasture-raised. Those are about how the hens are kept. Pasture-raised eggs often have a darker orange yolk, because of what the hens eat. They taste good. They cost more.\" — it must show: free range hens."
+ },
+ {
+  "name": "c67_1",
+  "q": "egg carton",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Buy what fits your budget. A plain carton of large eggs makes a beautiful fried egg with this trick. And look at the date on the carton. Buy the freshest one on the shelf. Reach to the back. That's where the newer ones a\" — it must show: egg carton."
+ },
+ {
+  "name": "c67_2",
+  "q": "eggs box",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Buy what fits your budget. A plain carton of large eggs makes a beautiful fried egg with this trick. And look at the date on the carton. Buy the freshest one on the shelf. Reach to the back. That's where the newer ones a\" — it must show: eggs box."
+ },
+ {
+  "name": "c68_1",
+  "q": "egg glass water",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Here's how to tell if an egg is fresh at home. Put it in a glass of water. If it sinks and lies flat on the bottom, it's very fresh. That's your frying egg. If it sinks but stands up on one end,\" — it must show: egg glass water."
+ },
+ {
+  "name": "c68_2",
+  "q": "egg float test",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Here's how to tell if an egg is fresh at home. Put it in a glass of water. If it sinks and lies flat on the bottom, it's very fresh. That's your frying egg. If it sinks but stands up on one end,\" — it must show: egg float test."
+ },
+ {
+  "name": "c70_1",
+  "q": "eggs refrigerator",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Storing. Eggs in the fridge, in their carton, on a shelf inside, not in the door. The door gets warm every time you open it. Forty degrees or colder. They'll keep three to five weeks.\" — it must show: eggs refrigerator."
+ },
+ {
+  "name": "c70_2",
+  "q": "fridge eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Storing. Eggs in the fridge, in their carton, on a shelf inside, not in the door. The door gets warm every time you open it. Forty degrees or colder. They'll keep three to five weeks.\" — it must show: fridge eggs."
+ },
+ {
+  "name": "c71_1",
+  "q": "egg carton fridge",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And don't wash them. In the US, eggs are already washed before they're sold. Washing them again can push bacteria through the shell.\" — it must show: egg carton fridge."
+ },
+ {
+  "name": "c71_2",
+  "q": "eggs fridge",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And don't wash them. In the US, eggs are already washed before they're sold. Washing them again can push bacteria through the shell.\" — it must show: eggs fridge."
+ },
+ {
+  "name": "c77_1",
+  "q": "breakfast plate",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"The second breakfast. This is what we ate on Sundays. Take everything from this set and put it on one plate. The skillet potatoes from video four, crispy, made with that little bit of water too.\" — it must show: breakfast plate."
+ },
+ {
+  "name": "c77_2",
+  "q": "mexican breakfast",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"The second breakfast. This is what we ate on Sundays. Take everything from this set and put it on one plate. The skillet potatoes from video four, crispy, made with that little bit of water too.\" — it must show: mexican breakfast."
+ },
+ {
+  "name": "c78_1",
+  "q": "refried beans",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"A spoon of the beans from video two, warmed up in the skillet until they're thick. Two of these eggs on top. Salsa.\" — it must show: refried beans."
+ },
+ {
+  "name": "c78_2",
+  "q": "beans skillet",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"A spoon of the beans from video two, warmed up in the skillet until they're thick. Two of these eggs on top. Salsa.\" — it must show: beans skillet."
+ },
+ {
+  "name": "c79_1",
+  "q": "corn tortillas",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Warm tortillas. That's a ranch Sunday. If you've been cooking along with me, you already have the beans in the freezer.\" — it must show: corn tortillas."
+ },
+ {
+  "name": "c79_2",
+  "q": "tortillas",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Warm tortillas. That's a ranch Sunday. If you've been cooking along with me, you already have the beans in the freezer.\" — it must show: tortillas."
+ },
+ {
+  "name": "c80_1",
+  "q": "breakfast hash",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And here's the other one. The leftover breakfast. Chop up whatever you have from last night. The shredded beef from last time. Leftover potatoes. Some onion. Crisp it in the skillet with a little bit of the fat.\" — it must show: breakfast hash."
+ },
+ {
+  "name": "c80_2",
+  "q": "potato hash",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And here's the other one. The leftover breakfast. Chop up whatever you have from last night. The shredded beef from last time. Leftover potatoes. Some onion. Crisp it in the skillet with a little bit of the fat.\" — it must show: potato hash."
+ },
+ {
+  "name": "c83_1",
+  "q": "dozen eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"What it costs. A dozen large eggs, about four dollars these days, so two eggs is about sixty-seven cents. Two corn tortillas, about fifteen cents. A spoon of salsa, about ten cents.\" — it must show: dozen eggs."
+ },
+ {
+  "name": "c83_2",
+  "q": "eggs carton",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"What it costs. A dozen large eggs, about four dollars these days, so two eggs is about sixty-seven cents. Two corn tortillas, about fifteen cents. A spoon of salsa, about ten cents.\" — it must show: eggs carton."
+ },
+ {
+  "name": "c85_1",
+  "q": "campfire skillet",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Outside. On the fire, at dawn. This is where I learned it. Put the skillet on the grate over the coals, not the flames.\" — it must show: campfire skillet."
+ },
+ {
+  "name": "c85_2",
+  "q": "cast iron fire",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Outside. On the fire, at dawn. This is where I learned it. Put the skillet on the grate over the coals, not the flames.\" — it must show: cast iron fire."
+ },
+ {
+  "name": "c86_1",
+  "q": "campfire coals",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"The heat is harder to control outside, so hold your hand about five inches above the grate. If you can only keep it there three or four seconds, that's medium. Do the water test the same way. Eggs in, thirty seconds,\" — it must show: campfire coals."
+ },
+ {
+  "name": "c86_2",
+  "q": "hot coals",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"The heat is harder to control outside, so hold your hand about five inches above the grate. If you can only keep it there three or four seconds, that's medium. Do the water test the same way. Eggs in, thirty seconds,\" — it must show: hot coals."
+ },
+ {
+  "name": "c87_1",
+  "q": "campfire cooking",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"water around, lid on. If you don't have a lid, use a piece of foil, or another skillet turned upside down. That's what we did. On the trail, nobody carries extra lids.\" — it must show: campfire cooking."
+ },
+ {
+  "name": "c87_2",
+  "q": "camp cooking",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"water around, lid on. If you don't have a lid, use a piece of foil, or another skillet turned upside down. That's what we did. On the trail, nobody carries extra lids.\" — it must show: camp cooking."
+ },
+ {
+  "name": "c93_1",
+  "q": "tortilla comal",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Now, the tortillas. Because a cold tortilla out of the bag ruins a good egg. Don't microwave them. They go chewy and then hard. Use a dry skillet, no oil, medium-high.\" — it must show: tortilla comal."
+ },
+ {
+  "name": "c93_2",
+  "q": "tortillas pan",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Now, the tortillas. Because a cold tortilla out of the bag ruins a good egg. Don't microwave them. They go chewy and then hard. Use a dry skillet, no oil, medium-high.\" — it must show: tortillas pan."
+ },
+ {
+  "name": "c94_1",
+  "q": "heating tortilla",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"One tortilla at a time. Thirty seconds on the first side, until it gets a few brown spots. Flip it. Thirty seconds more. Sometimes it puffs up. That's a good tortilla.\" — it must show: heating tortilla."
+ },
+ {
+  "name": "c94_2",
+  "q": "tortilla",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"One tortilla at a time. Thirty seconds on the first side, until it gets a few brown spots. Flip it. Thirty seconds more. Sometimes it puffs up. That's a good tortilla.\" — it must show: tortilla."
+ },
+ {
+  "name": "c95_1",
+  "q": "tortillas towel",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Then stack them inside a clean kitchen towel, folded over. The towel holds the steam, and they stay soft and hot for half an hour.\" — it must show: tortillas towel."
+ },
+ {
+  "name": "c95_2",
+  "q": "warm tortillas",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Then stack them inside a clean kitchen towel, folded over. The towel holds the steam, and they stay soft and hot for half an hour.\" — it must show: warm tortillas."
+ },
+ {
+  "name": "c97_1",
+  "q": "tomatoes jalapeno",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And the salsa, since we're here. The one I made every morning. Two tomatoes, a quarter of an onion, one clove of garlic and one jalapeño, or two if you like it hot. Put them in the dry skillet, medium-high,\" — it must show: tomatoes jalapeno."
+ },
+ {
+  "name": "c97_2",
+  "q": "tomatoes onion",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And the salsa, since we're here. The one I made every morning. Two tomatoes, a quarter of an onion, one clove of garlic and one jalapeño, or two if you like it hot. Put them in the dry skillet, medium-high,\" — it must show: tomatoes onion."
+ },
+ {
+  "name": "c98_1",
+  "q": "charred tomatoes",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"and let them blacken in spots, turning them, about eight minutes. The garlic comes out sooner, when it's brown. Then everything into a blender with a pinch of salt and a squeeze of lime. A few pulses.\" — it must show: charred tomatoes."
+ },
+ {
+  "name": "c98_2",
+  "q": "roasting vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"and let them blacken in spots, turning them, about eight minutes. The garlic comes out sooner, when it's brown. Then everything into a blender with a pinch of salt and a squeeze of lime. A few pulses.\" — it must show: roasting vegetables."
+ },
+ {
+  "name": "c99_1",
+  "q": "salsa jar",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Not smooth, a little chunky. That's it. It keeps a week in a jar in the fridge. A jar of salsa and a dozen eggs, and breakfast is ready every day of the week.\" — it must show: salsa jar."
+ },
+ {
+  "name": "c99_2",
+  "q": "salsa",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Not smooth, a little chunky. That's it. It keeps a week in a jar in the fridge. A jar of salsa and a dozen eggs, and breakfast is ready every day of the week.\" — it must show: salsa."
+ },
+ {
+  "name": "c105_1",
+  "q": "fresh eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"A question I get a lot. Fresh eggs or older eggs? For frying, the fresher the better. A fresh egg has a tight white that stays round in the pan.\" — it must show: fresh eggs."
+ },
+ {
+  "name": "c105_2",
+  "q": "eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"A question I get a lot. Fresh eggs or older eggs? For frying, the fresher the better. A fresh egg has a tight white that stays round in the pan.\" — it must show: eggs."
+ },
+ {
+  "name": "c106_1",
+  "q": "boiled eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"An egg that's a couple of weeks old has a looser white that spreads out thin, and the edges get crispy faster. Some people like that. But if you're going to boil eggs and peel them, older is better.\" — it must show: boiled eggs."
+ },
+ {
+  "name": "c106_2",
+  "q": "hard boiled eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"An egg that's a couple of weeks old has a looser white that spreads out thin, and the edges get crispy faster. Some people like that. But if you're going to boil eggs and peel them, older is better.\" — it must show: hard boiled eggs."
+ },
+ {
+  "name": "c107_1",
+  "q": "peeling egg",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"A very fresh boiled egg sticks to the shell, and you tear the white trying to peel it. A week-old egg peels clean. So, fresh ones for the skillet, older ones for the pot.\" — it must show: peeling egg."
+ },
+ {
+  "name": "c107_2",
+  "q": "egg shell",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"A very fresh boiled egg sticks to the shell, and you tear the white trying to peel it. A week-old egg peels clean. So, fresh ones for the skillet, older ones for the pot.\" — it must show: egg shell."
+ },
+ {
+  "name": "c111_1",
+  "q": "storm night",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"I'll tell you about the morning of the big storm. Nineteen ninety-three. The power went out in the middle of the night, and it stayed out for four days. No electric stove, no lights, no fridge. Forty men to feed.\" — it must show: storm night."
+ },
+ {
+  "name": "c111_2",
+  "q": "thunderstorm",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"I'll tell you about the morning of the big storm. Nineteen ninety-three. The power went out in the middle of the night, and it stayed out for four days. No electric stove, no lights, no fridge. Forty men to feed.\" — it must show: thunderstorm."
+ },
+ {
+  "name": "c112_1",
+  "q": "rain fire",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Don Ernesto and I carried two cast iron skillets out to the fire pit in the rain, under a tarp. And every morning for four days, I cooked eggs for forty men, on wood, with a lid, the same way I'm showing you.\" — it must show: rain fire."
+ },
+ {
+  "name": "c112_2",
+  "q": "fire rain",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"Don Ernesto and I carried two cast iron skillets out to the fire pit in the rain, under a tarp. And every morning for four days, I cooked eggs for forty men, on wood, with a lid, the same way I'm showing you.\" — it must show: fire rain."
+ },
+ {
+  "name": "c115_1",
+  "q": "scrambled eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And people ask me about scrambled. The same idea works. Low heat, not high. A little butter. Beat the eggs with a pinch of salt, pour them in, and stir slowly with a spatula,\" — it must show: scrambled eggs."
+ },
+ {
+  "name": "c115_2",
+  "q": "scrambled egg",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And people ask me about scrambled. The same idea works. Low heat, not high. A little butter. Beat the eggs with a pinch of salt, pour them in, and stir slowly with a spatula,\" — it must show: scrambled egg."
+ },
+ {
+  "name": "c116_1",
+  "q": "scrambling eggs pan",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"pushing them from the edge to the middle. Take them off the heat when they still look a little wet, because they keep cooking on the plate. High heat makes scrambled eggs hard and dry and squeaky. Low heat makes them sof\" — it must show: scrambling eggs pan."
+ },
+ {
+  "name": "c116_2",
+  "q": "cooking eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"pushing them from the edge to the middle. Take them off the heat when they still look a little wet, because they keep cooking on the plate. High heat makes scrambled eggs hard and dry and squeaky. Low heat makes them sof\" — it must show: cooking eggs."
+ },
+ {
+  "name": "c120_1",
+  "q": "rice and eggs",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And eggs for supper. On the ranch, when the men came in late and tired, and there was nothing left, I made eggs. Two eggs on rice, with a spoon of salsa and whatever beans were left in the pot.\" — it must show: rice and eggs."
+ },
+ {
+  "name": "c120_2",
+  "q": "fried rice egg",
+  "scene": "Real documentary footage for a ranch cook's video about fried eggs, while he says: \"And eggs for supper. On the ranch, when the men came in late and tired, and there was nothing left, I made eggs. Two eggs on rice, with a spoon of salsa and whatever beans were left in the pot.\" — it must show: fried rice egg."
+ }
+]

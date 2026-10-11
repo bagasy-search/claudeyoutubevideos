@@ -1,0 +1,252 @@
+export const ESC = {
+  S00: { set: "A1", base: "stands at the black range lowering a lid over a big black glassy-smooth cast-iron skillet with two eggs inside, steam rising.",
+    clips: {
+      c01: ["sets the lid down over the eggs", "the lid on, steam at the rim"] } },
+  S01: { set: "A1", base: "stands at the black range holding a brown egg over a big black glassy-smooth cast-iron skillet.",
+    clips: {
+      c02: ["holds the egg up", "the egg beside his face"],
+      c03: ["holds up an empty oil bottle and shakes his head", "the bottle set aside"],
+      c04: ["taps the clean black pan", "his finger on the pan"],
+      c05: ["shakes his head", "a small head shake"],
+      c06: ["holds up three fingers", "three fingers raised"],
+      c07: ["counts on his fingers", "a laugh"],
+      c08: ["mimes pouring oil", "his hand tilted"],
+      c09: ["flinches back from the stove", "a grimace"],
+      c10: ["taps a hard brown egg edge on a plate", "a sour face"],
+      c11: ["mimes flipping with a spatula", "a shrug"],
+      c12: ["shakes his head", "a sour face"],
+      c13: ["holds up a small cup of water and a lid", "the cup and lid held up"],
+      c14: ["touches his chest and smiles", "his hand on his chest"] } },
+  S02: { set: "A2", base: "stands in front of the wall of hanging cast-iron skillets lifting a big black glassy-smooth cast-iron skillet off its hook.",
+    clips: {
+      c15: ["tilts the pan to show the smooth black surface", "the glassy surface catching the light"],
+      c16: ["holds up one finger", "one finger raised"] } },
+  S03: { set: "A3", base: "stands at the long plank table with a carton of brown eggs, a glass of water and a pot lid.",
+    clips: {
+      c20: ["lifts an egg out of the carton", "the egg held up"],
+      c21: ["holds up two fingers", "two fingers raised"],
+      c23: ["holds the lid over an imaginary pan", "the lid held flat"],
+      c24: ["sets the lid down and smiles", "a smile"] } },
+  S04: { set: "A3", base: "sits at the long plank table with an old stained crew notebook open in front of him.",
+    clips: {
+      c25: ["mimes wiping a pan with a rag", "his hand flat"],
+      c26: ["taps the notebook and laughs", "a laugh, his hand on the notebook"] } },
+  S05: { set: "A1", base: "stands at the black range setting a big black glassy-smooth cast-iron skillet empty on a burner with a medium flame.",
+    clips: {
+      c27: ["holds up two eggs", "the eggs held up"],
+      c28: ["turns the knob to medium", "a medium blue flame"],
+      c29: ["holds up two fingers", "two fingers raised"] } },
+  S06: { set: "A1", base: "stands at the black range flicking drops of water from wet fingers into a big black glassy-smooth cast-iron skillet, the drops dancing.",
+    clips: {
+      c30: ["flicks water into the pan", "drops sitting and bubbling"],
+      c31: ["points at drops skating across the pan", "beads of water dancing"],
+      c32: ["lifts the pan off the heat", "the pan held aside"],
+      c33: ["points at a dancing drop", "his finger at the pan"] } },
+  S07: { set: "A1", base: "stands at the black range cracking an egg low over a big black glassy-smooth cast-iron skillet.",
+    clips: {
+      c34: ["cracks two eggs in, close together", "two eggs side by side in the pan"],
+      c35: ["slides an egg in from a little cup", "the cup empty"] } },
+  S08: { set: "A1", base: "stands at the black range watching two eggs in a big black glassy-smooth cast-iron skillet, the edges of the whites turning opaque.",
+    clips: {
+      c36: ["points at the white edge", "the edges white, the middle clear"] } },
+  S09: { set: "A1", base: "stands at the black range pouring a spoon of water into the empty part of a big black glassy-smooth cast-iron skillet around two eggs, steam bursting.",
+    clips: {
+      c37: ["pours the water around the eggs", "steam rising around the eggs"] } },
+  S10: { set: "A1", base: "stands at the black range setting a lid on a big black glassy-smooth cast-iron skillet.",
+    clips: {
+      c38: ["sets the lid on", "the lid on"] } },
+  S11: { set: "A1", base: "stands at the black range beside a big black glassy-smooth cast-iron skillet with a glass lid, two eggs steaming under it, a kitchen timer in his hand.",
+    clips: {
+      c39: ["holds up the timer", "the timer held up"],
+      c40: ["holds up three fingers", "three fingers raised"] } },
+  S12: { set: "A1", base: "stands at the black range lifting the lid off a big black glassy-smooth cast-iron skillet, steam rising off two fried eggs with soft white tops and tall runny yolks, no brown edges.",
+    clips: {
+      c41: ["lifts the lid away", "the perfect eggs in the pan"] } },
+  S13: { set: "A1", base: "stands at the black range sliding two fried eggs with soft white tops and tall runny yolks, no brown edges out of a big black glassy-smooth cast-iron skillet onto a plate with a thin spatula.",
+    clips: {
+      c42: ["slides the eggs out, nothing sticks", "the eggs on the plate, the pan clean"] } },
+  S14: { set: "A3", base: "stands at the long plank table with a plate of two fried eggs with soft white tops and tall runny yolks, no brown edges on two warm corn tortillas with red salsa.",
+    clips: {
+      c43: ["spoons red salsa over the eggs", "salsa on the eggs"],
+      c44: ["picks up a tortilla with the egg and takes a bite", "chewing, grinning"] } },
+  S15: { set: "A3", rusty: true, base: "stands at the long plank table holding out a plate of two fried eggs with soft white tops and tall runny yolks, no brown edges on tortillas.",
+    clips: {
+      c45: ["hands the plate to Rusty in his hat", "Rusty holding the plate"] } },
+  S16: { set: "A3", rusty: true, base: "stands at the long plank table.",
+    clips: {
+      c46: ["watches Rusty eat standing up, the yolk running onto the tortilla", "Rusty chewing, Claudio smiling"] } },
+  S17: { set: "A1", base: "stands at the black range wiping a big black glassy-smooth cast-iron skillet with a rag.",
+    clips: {
+      c47: ["wipes the pan and looks up", "the rag over his shoulder, a smile"] } },
+  S18: { set: "A3", base: "sits at the long plank table with an old stained crew notebook open in front of him, a pencil in his hand.",
+    clips: {
+      c48: ["taps the pencil on the page", "the pencil on the page"],
+      c49: ["holds up two fingers", "two fingers raised"],
+      c50: ["mimes pouring around, not on top", "his hand circling"],
+      c51: ["holds up one finger", "one finger raised"] } },
+  S19: { set: "A1", base: "stands at the black range swirling a small spoon of melting butter in a big black glassy-smooth cast-iron skillet.",
+    clips: {
+      c53: ["holds up one teaspoon of butter", "the spoon held up"],
+      c54: ["swirls the butter in the pan", "the butter melted"],
+      c55: ["shrugs and smiles", "a smile"] } },
+  S20: { set: "A4", base: "stands by the deep window before dawn, blue light outside, a tin cup of coffee in his hand.",
+    clips: {
+      c56: ["looks out the window", "a serious face"],
+      c57: ["shakes his head", "a small laugh"],
+      c58: ["holds up three fingers", "three fingers raised"],
+      c59: ["puts his hand on his heart", "his hand on his heart"] } },
+  S22: { set: "A1", base: "stands at the black range beside a small skillet with one fried egg.",
+    clips: {
+      c63: ["holds up one finger", "one finger raised"] } },
+  S24: { set: "A3", base: "stands at the long plank table beside a tall glass of water with an egg lying on the bottom.",
+    clips: {
+      c69: ["drops a second egg in, it floats, and he shakes his head", "the floating egg"] } },
+  S26: { set: "A3", base: "stands at the long plank table, speaking to the camera, serious.",
+    clips: {
+      c72: ["holds up a fried egg on a plate", "the plate held up"],
+      c73: ["holds up one finger", "one finger raised"],
+      c74: ["shows a firm-yolk egg on a plate", "the firm yolk"],
+      c75: ["holds up a carton of pasteurized eggs", "the carton held up"],
+      c76: ["shakes his head", "a small head shake"] } },
+  S28: { set: "A3", base: "stands at the long plank table with a big black glassy-smooth cast-iron skillet of crisp chopped potatoes and shredded beef hash, four eggs steaming in holes in the hash.",
+    clips: {
+      c81: ["cracks an egg into a hole in the hash", "four eggs in the hash"],
+      c82: ["sets the skillet on a board", "the skillet in front of him"] } },
+  S29: { set: "A3", base: "stands at the long plank table with a carton of eggs, two corn tortillas and a jar of salsa in a row.",
+    clips: {
+      c84: ["holds up an empty oil bottle and sets it aside", "the bottle set aside"] } },
+  S31: { set: "A2", base: "stands in front of the wall of hanging cast-iron skillets, answering questions.",
+    clips: {
+      c88: ["holds up a stainless steel skillet", "the skillet held up"],
+      c89: ["shakes his head", "a small head shake"],
+      c90: ["mimes a gentle flip with a thin spatula", "the spatula held up"],
+      c91: ["shrugs", "a shrug"],
+      c92: ["rubs the black pan with a rag", "the pan shining"] } },
+  S32: { set: "A1", base: "stands at the black range stacking warm corn tortillas inside a folded kitchen towel.",
+    clips: {
+      c96: ["folds the towel over the stack", "the towel bundle on the counter"] } },
+  S34: { set: "A4", base: "stands by the deep window with a tin cup in his hand, telling a story.",
+    clips: {
+      c100: ["smiles, remembering", "a sheepish smile"],
+      c101: ["shakes his head at himself", "a sheepish laugh"],
+      c102: ["raises the cup a little", "a smile"] } },
+  S35: { set: "A3", base: "stands at the long plank table holding two brown eggs.",
+    clips: {
+      c103: ["holds up three fingers, then four", "four fingers, a grin"],
+      c104: ["sets the eggs back in the carton", "the carton in front of him"] } },
+  S37: { set: "A1", base: "stands at the black range rubbing a drop of oil into a big black glassy-smooth cast-iron skillet with a paper towel.",
+    clips: {
+      c108: ["rubs the oil in", "the pan glossy"],
+      c109: ["holds up the shining pan", "the pan held up"],
+      c110: ["slides an egg across the pan", "the egg sliding"] } },
+  S38: { set: "A4", base: "stands by the deep window at night with a tin cup in his hand, rain on the glass.",
+    clips: {
+      c113: ["nods slowly", "a nod"],
+      c114: ["counts on his fingers", "four fingers raised"] } },
+  S39: { set: "A3", base: "stands at the long plank table beside a plate of soft scrambled eggs next to a plate of fried eggs.",
+    clips: {
+      c117: ["wags a finger", "a finger wag"] } },
+  S40: { set: "A3", base: "stands at the long plank table holding an egg with a little dirt on the shell in one hand and a dry towel in the other.",
+    clips: {
+      c118: ["shakes his head at the sink", "a head shake"],
+      c119: ["wipes the egg with the dry towel", "the clean egg"] } },
+  S41: { set: "A3", base: "stands at the long plank table holding a plate of two fried eggs on rice with salsa and beans.",
+    clips: {
+      c121: ["holds the plate up", "the plate held up, a smile"] } },
+  S42: { set: "A3", base: "sits at the long plank table with an old stained crew notebook and a thick printed cookbook with a worn brown cover beside it.",
+    clips: {
+      c122: ["taps the old notebook", "his hand on the notebook"],
+      c123: ["holds up the printed cookbook", "the cookbook beside his face"] } },
+  S43: { set: "A3", base: "stands at the long plank table with a thick printed cookbook with a worn brown cover open in front of him.",
+    clips: {
+      c124: ["turns a page and taps it", "his finger on the page"],
+      c125: ["flips through the pages", "the pages fanning"],
+      c126: ["points below the camera, then at the camera", "his finger pointing at the camera"] } },
+  S44: { set: "A1", base: "stands at the black range hanging a big black glassy-smooth cast-iron skillet back on its hook.",
+    clips: {
+      c127: ["counts on his fingers", "fingers counting"] } },
+  S45: { set: "A4", base: "stands by the deep window at dawn with a tin cup of coffee, the corral outside.",
+    clips: {
+      c128: ["raises the cup", "a warm smile"],
+      c129: ["tips his hat", "waving goodbye"] } },
+};
+export const STOCK = {
+ "c17": "cracking egg",
+ "c18": "egg white cooking",
+ "c19": "egg stuck pan",
+ "c22": "frying egg oil",
+ "c52": "broken yolk",
+ "c60": "sheet pan oven",
+ "c61": "baked eggs",
+ "c62": "eggs skillet",
+ "c64": "egg aisle",
+ "c65": "brown white eggs",
+ "c66": "chickens pasture",
+ "c67": "egg carton",
+ "c68": "egg glass water",
+ "c70": "eggs refrigerator",
+ "c71": "egg carton fridge",
+ "c77": "breakfast plate",
+ "c78": "refried beans",
+ "c79": "corn tortillas",
+ "c80": "breakfast hash",
+ "c83": "dozen eggs",
+ "c85": "campfire skillet",
+ "c86": "campfire coals",
+ "c87": "campfire cooking",
+ "c93": "tortilla comal",
+ "c94": "heating tortilla",
+ "c95": "tortillas towel",
+ "c97": "tomatoes jalapeno",
+ "c98": "charred tomatoes",
+ "c99": "salsa jar",
+ "c105": "fresh eggs",
+ "c106": "boiled eggs",
+ "c107": "peeling egg",
+ "c111": "storm night",
+ "c112": "rain fire",
+ "c115": "scrambled eggs",
+ "c116": "scrambling eggs pan",
+ "c120": "rice and eggs"
+};
+export const STOCK2 = {
+ "c17": "egg bowl",
+ "c18": "frying egg",
+ "c19": "burnt egg",
+ "c22": "fried egg pan",
+ "c52": "egg yolk",
+ "c60": "oven tray",
+ "c61": "eggs oven",
+ "c62": "fried eggs",
+ "c64": "grocery eggs",
+ "c65": "eggs basket",
+ "c66": "free range hens",
+ "c67": "eggs box",
+ "c68": "egg float test",
+ "c70": "fridge eggs",
+ "c71": "eggs fridge",
+ "c77": "mexican breakfast",
+ "c78": "beans skillet",
+ "c79": "tortillas",
+ "c80": "potato hash",
+ "c83": "eggs carton",
+ "c85": "cast iron fire",
+ "c86": "hot coals",
+ "c87": "camp cooking",
+ "c93": "tortillas pan",
+ "c94": "tortilla",
+ "c95": "warm tortillas",
+ "c97": "tomatoes onion",
+ "c98": "roasting vegetables",
+ "c99": "salsa",
+ "c105": "eggs",
+ "c106": "hard boiled eggs",
+ "c107": "egg shell",
+ "c111": "thunderstorm",
+ "c112": "fire rain",
+ "c115": "scrambled egg",
+ "c116": "cooking eggs",
+ "c120": "fried rice egg"
+};
+export const DET = {};
+export const TOPIC = "fried eggs";
