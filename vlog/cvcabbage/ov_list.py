@@ -1,5 +1,7 @@
 # Componentes de cvcabbage (≈5 s, LIMPIO gana a denso). Anclados a la frase exacta del guion.
 OV = [
+ ("CvPromise", at("Last time it was the steak"), 7.0, {"title": "Fried cabbage they fight over", "lines": ["No boiled-cabbage smell", "Browned and sweet in bacon fat", "A whole head for under $3"]}),
+ ("CvOldPhoto", at("I'm Claudio. I cooked for a cattle crew"), 7.5, {"img": I + "joven.jpg", "caption": "Winter supply run, 1987", "date": "'87 01 22", "stamp": "40 years · 14 men"}),
  ("ClDoDont", at("They hate boiled cabbage"), 5.0, {"yes": {"label": "Fried, open pan"}, "no": {"label": "Boiled, lid on"}}),
  ("ClCheck", at("Here's what you need. Six strips of bacon"), 10.0, {"title": "WHAT YOU NEED", "items": ["6 strips bacon", "1 onion, sliced", "1 head green cabbage (2½ lb)", "1 tsp salt · ½ tsp pepper", "½ tsp red chile flakes", "1 tbsp butter + 1 tbsp cider vinegar"]}),
  ("ClChip", at("cut it across into ribbons about an inch wide"), 4.0, {"text": "Ribbons · one inch wide", "corner": "tl"}),
