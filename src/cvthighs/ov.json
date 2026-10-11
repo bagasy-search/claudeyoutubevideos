@@ -1,0 +1,180 @@
+[
+ {
+  "c": "CvPromise",
+  "from": 189,
+  "dur": 210,
+  "props": {
+   "title": "Glass-crisp chicken, no oil",
+   "lines": [
+    "Start them in a cold pan",
+    "The skin fries in its own fat",
+    "The cheapest, best piece"
+   ],
+   "bed": "vid/cvthighs/bed_0.mp4#214"
+  },
+  "t": 6.29
+ },
+ {
+  "c": "CvOldPhoto",
+  "from": 1542,
+  "dur": 225,
+  "props": {
+   "img": "img/cvthighs/joven.jpg",
+   "caption": "The chicken yard, 1986",
+   "date": "'86 07 30",
+   "stamp": "40 years · 14 men",
+   "bed": "vid/cvthighs/bed_1.mp4#229"
+  },
+  "t": 51.4
+ },
+ {
+  "c": "ClDoDont",
+  "from": 478,
+  "dur": 150,
+  "props": {
+   "yes": {
+    "label": "Cold pan, no oil"
+   },
+   "no": {
+    "label": "Hot pan, pour of oil"
+   },
+   "bed": "vid/cvthighs/bed_2.mp4#154"
+  },
+  "t": 15.92
+ },
+ {
+  "c": "ClCheck",
+  "from": 4584,
+  "dur": 300,
+  "props": {
+   "title": "WHAT YOU NEED",
+   "items": [
+    "8 bone-in, skin-on thighs (3 lb)",
+    "Salt and pepper",
+    "½ onion, sliced",
+    "1½ cups red chile sauce",
+    "¼ cup chopped cilantro",
+    "12-inch cast-iron skillet"
+   ],
+   "bed": "vid/cvthighs/bed_3.mp4#304"
+  },
+  "t": 152.8
+ },
+ {
+  "c": "ClChip",
+  "from": 5803,
+  "dur": 135,
+  "props": {
+   "text": "Skin down · COLD pan · no oil",
+   "corner": "tl"
+  },
+  "t": 193.45
+ },
+ {
+  "c": "ClTimer30",
+  "from": 6292,
+  "dur": 135,
+  "props": {
+   "minutes": 20,
+   "text": "18-22 minutes",
+   "label": "Medium heat · don't touch",
+   "bed": "vid/cvthighs/bed_5.mp4#139"
+  },
+  "t": 209.72
+ },
+ {
+  "c": "ClChip",
+  "from": 8608,
+  "dur": 120,
+  "props": {
+   "text": "Flip · 5 min meat side",
+   "corner": "tl"
+  },
+  "t": 286.93
+ },
+ {
+  "c": "ClChip",
+  "from": 11348,
+  "dur": 135,
+  "props": {
+   "text": "AROUND the chicken · never over",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 378.25
+ },
+ {
+  "c": "ClChip",
+  "from": 11899,
+  "dur": 120,
+  "props": {
+   "text": "Medium-low · 8-10 min · no lid",
+   "corner": "tl"
+  },
+  "t": 396.62
+ },
+ {
+  "c": "ClChip",
+  "from": 12352,
+  "dur": 150,
+  "props": {
+   "text": "USDA: 165°F · thighs best at 175°F",
+   "corner": "tl"
+  },
+  "t": 411.74
+ },
+ {
+  "c": "ClReceipt",
+  "from": 19247,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "8 bone-in thighs (3 lb)",
+     "$6.00"
+    ],
+    [
+     "1 can red sauce",
+     "$2.00"
+    ],
+    [
+     "Onion, cilantro, salt, pepper",
+     "$1.30"
+    ]
+   ],
+   "total": [
+    "Per plate (÷4)",
+    "$2.30"
+   ],
+   "bed": "vid/cvthighs/bed_10.mp4#424"
+  },
+  "t": 641.57
+ },
+ {
+  "c": "ClBookPage",
+  "from": 29385,
+  "dur": 210,
+  "props": {
+   "page": "img/cvthighs/page31.jpg",
+   "pageNo": 31,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 31",
+   "bed": "vid/cvthighs/bed_11.mp4#214"
+  },
+  "t": 979.49
+ },
+ {
+  "c": "ClQRCard",
+  "from": 30051,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvthighs/qr.png",
+   "cover": "img/cvthighs/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvthighs/bed_12.mp4#184"
+  },
+  "t": 1001.7
+ }
+]

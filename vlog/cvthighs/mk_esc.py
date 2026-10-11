@@ -120,18 +120,18 @@ sc("S51", "A3", f"stands at the long plank table with {BOOK} open in front of hi
  "c125": ["points below the camera, then at the camera", "his finger pointing at the camera"]})
 sc("S52", "A1", f"stands at the black range beside {SK}, a handful of fresh green beans in his hand.", {
  "c126": ["counts on his fingers", "fingers counting"], "c127": ["holds up the green beans and waves goodbye", "waving, smiling"]})
-STOCK = {"c05": "frying chicken", "c06": "oil splatter", "c07": "chicken skin", "c13": "raw chicken thighs", "c15": "chicken frying pan",
+STOCK = {"c05": "frying chicken", "c06": "oil splatter", "c07": "chicken skin", "c13": "raw chicken thighs", "c15": "chicken thighs skillet",
  "c21": "washing chicken", "c25": "seasoning chicken", "c36": "hens yard", "c37": "backyard chickens", "c38": "stew pot", "c47": "enchilada sauce",
- "c48": "dried chiles", "c49": "toasting chiles", "c50": "blender sauce", "c51": "sauce jar", "c63": "campfire rain", "c65": "rice beans",
- "c73": "grocery chicken", "c74": "raw chicken package", "c81": "shredded chicken", "c82": "enchiladas", "c86": "roasting chicken",
- "c90": "campfire skillet", "c91": "campfire cooking", "c92": "chicken drumsticks", "c93": "chicken breast", "c97": "chicken legs",
- "c99": "cutting chicken", "c104": "pouring oil jar", "c112": "meat package", "c115": "cutting board", "c116": "chopping onion", "c120": "squeezing lime"}
-STOCK2 = {"c05": "chicken oil", "c06": "hot oil", "c07": "fried chicken", "c13": "raw chicken", "c15": "chicken skillet",
+ "c48": "dried chiles", "c49": "toasting chiles", "c50": "blender sauce", "c51": "pouring red sauce", "c63": "campfire rain", "c65": "rice beans",
+ "c73": "grocery chicken", "c74": "raw chicken thighs", "c81": "shredded chicken", "c82": "enchiladas", "c86": "roast chicken oven",
+ "c90": "campfire skillet", "c91": "cooking over fire", "c92": "chicken drumsticks", "c93": "chicken breast", "c97": "chicken legs",
+ "c99": "cutting chicken", "c104": "pouring oil jar", "c112": "meat package", "c115": "raw chicken board", "c116": "chopping onion", "c120": "squeezing lime"}
+STOCK2 = {"c05": "chicken oil", "c06": "hot oil", "c07": "fried chicken", "c13": "raw chicken", "c15": "frying chicken skin",
  "c21": "kitchen sink", "c25": "salt pepper", "c36": "chickens farm", "c37": "hens", "c38": "simmering pot", "c47": "red sauce",
- "c48": "chili peppers", "c49": "dry chiles pan", "c50": "blender", "c51": "red sauce jar", "c63": "campfire night", "c65": "tortillas",
- "c73": "meat aisle", "c74": "chicken package", "c81": "pulled chicken", "c82": "baking enchiladas", "c86": "sheet pan chicken",
- "c90": "cast iron fire", "c91": "camp cooking", "c92": "drumsticks pan", "c93": "raw chicken breast", "c97": "chicken leg quarters",
- "c99": "butchering chicken", "c104": "strainer", "c112": "grocery store", "c115": "washing cutting board", "c116": "onion", "c120": "lime"}
+ "c48": "chili peppers", "c49": "dry chiles pan", "c50": "blender", "c51": "tomato sauce", "c63": "campfire night", "c65": "tortillas",
+ "c73": "meat aisle", "c74": "chicken thighs", "c81": "pulled chicken", "c82": "baking enchiladas", "c86": "baked chicken",
+ "c90": "cast iron fire", "c91": "campfire pan", "c92": "drumsticks pan", "c93": "raw chicken breast", "c97": "chicken leg quarters",
+ "c99": "butchering chicken", "c104": "strainer", "c112": "grocery store", "c115": "cutting raw chicken", "c116": "onion", "c120": "lime"}
 js = "export const ESC = {\n" + "\n".join(f'  {k}: {{ set: "{v["set"]}",{" rusty: true," if v["rusty"] else ""} base: {json.dumps(v["base"])},\n    clips: {{\n' + ",\n".join(f"      {c}: {json.dumps(a)}" for c, a in v["clips"].items()) + " } }," for k, v in E.items()) + "\n};\n"
 js += "export const STOCK = " + json.dumps(STOCK, indent=1) + ";\nexport const STOCK2 = " + json.dumps(STOCK2, indent=1) + ";\nexport const DET = {};\nexport const TOPIC = \"chicken thighs\";\n"
 open("D:/Proyectos/video2-wt/cvthighs/vlog/cvthighs/escenas.mjs", "w", encoding="utf8").write(js)

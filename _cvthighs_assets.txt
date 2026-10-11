@@ -1,0 +1,5 @@
+vid/cvthighs
+img/cvthighs/cover.jpg
+img/cvthighs/joven.jpg
+img/cvthighs/page31.jpg
+img/cvthighs/qr.png

@@ -41,13 +41,13 @@
  },
  {
   "name": "c15_1",
-  "q": "chicken frying pan",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"But when you put the thigh into a hot pan full of oil, the outside of the skin seizes up and browns in a minute. The fat underneath doesn't have time to melt out. So it stays trapped under a brown skin,\" — it must show: chicken frying pan."
+  "q": "chicken thighs skillet",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"But when you put the thigh into a hot pan full of oil, the outside of the skin seizes up and browns in a minute. The fat underneath doesn't have time to melt out. So it stays trapped under a brown skin,\" — it must show: chicken thighs skillet."
  },
  {
   "name": "c15_2",
-  "q": "chicken skillet",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"But when you put the thigh into a hot pan full of oil, the outside of the skin seizes up and browns in a minute. The fat underneath doesn't have time to melt out. So it stays trapped under a brown skin,\" — it must show: chicken skillet."
+  "q": "frying chicken skin",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"But when you put the thigh into a hot pan full of oil, the outside of the skin seizes up and browns in a minute. The fat underneath doesn't have time to melt out. So it stays trapped under a brown skin,\" — it must show: frying chicken skin."
  },
  {
   "name": "c21_1",
@@ -141,13 +141,13 @@
  },
  {
   "name": "c51_1",
-  "q": "sauce jar",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and simmer it fifteen minutes until it's thick enough to coat a spoon. That makes about two cups. Keep it in a jar in the fridge for a week, or freeze it. That sauce is the base of half the ranch kitchen.\" — it must show: sauce jar."
+  "q": "pouring red sauce",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and simmer it fifteen minutes until it's thick enough to coat a spoon. That makes about two cups. Keep it in a jar in the fridge for a week, or freeze it. That sauce is the base of half the ranch kitchen.\" — it must show: pouring red sauce."
  },
  {
   "name": "c51_2",
-  "q": "red sauce jar",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and simmer it fifteen minutes until it's thick enough to coat a spoon. That makes about two cups. Keep it in a jar in the fridge for a week, or freeze it. That sauce is the base of half the ranch kitchen.\" — it must show: red sauce jar."
+  "q": "tomato sauce",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and simmer it fifteen minutes until it's thick enough to coat a spoon. That makes about two cups. Keep it in a jar in the fridge for a week, or freeze it. That sauce is the base of half the ranch kitchen.\" — it must show: tomato sauce."
  },
  {
   "name": "c63_1",
@@ -181,13 +181,13 @@
  },
  {
   "name": "c74_1",
-  "q": "raw chicken package",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Bone-in, skin-on thighs are about two dollars a pound right now. That's the cheapest meat in the whole store, and the best-tasting part of the chicken. Breasts are three times the price and half the flavor.\" — it must show: raw chicken package."
+  "q": "raw chicken thighs",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Bone-in, skin-on thighs are about two dollars a pound right now. That's the cheapest meat in the whole store, and the best-tasting part of the chicken. Breasts are three times the price and half the flavor.\" — it must show: raw chicken thighs."
  },
  {
   "name": "c74_2",
-  "q": "chicken package",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Bone-in, skin-on thighs are about two dollars a pound right now. That's the cheapest meat in the whole store, and the best-tasting part of the chicken. Breasts are three times the price and half the flavor.\" — it must show: chicken package."
+  "q": "chicken thighs",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Bone-in, skin-on thighs are about two dollars a pound right now. That's the cheapest meat in the whole store, and the best-tasting part of the chicken. Breasts are three times the price and half the flavor.\" — it must show: chicken thighs."
  },
  {
   "name": "c81_1",
@@ -211,13 +211,13 @@
  },
  {
   "name": "c86_1",
-  "q": "roasting chicken",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"For a crowd. Sixteen thighs. Two skillets at once, same way. Or if you don't have two skillets, use the oven. Line a sheet pan with foil, put the thighs skin side up, salted,\" — it must show: roasting chicken."
+  "q": "roast chicken oven",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"For a crowd. Sixteen thighs. Two skillets at once, same way. Or if you don't have two skillets, use the oven. Line a sheet pan with foil, put the thighs skin side up, salted,\" — it must show: roast chicken oven."
  },
  {
   "name": "c86_2",
-  "q": "sheet pan chicken",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"For a crowd. Sixteen thighs. Two skillets at once, same way. Or if you don't have two skillets, use the oven. Line a sheet pan with foil, put the thighs skin side up, salted,\" — it must show: sheet pan chicken."
+  "q": "baked chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"For a crowd. Sixteen thighs. Two skillets at once, same way. Or if you don't have two skillets, use the oven. Line a sheet pan with foil, put the thighs skin side up, salted,\" — it must show: baked chicken."
  },
  {
   "name": "c90_1",
@@ -231,13 +231,13 @@
  },
  {
   "name": "c91_1",
-  "q": "campfire cooking",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So put the skillet with the chicken in it on the cool edge of the grate, away from the coals, and slide it slowly toward the heat as the fat renders. It works. It just needs more attention.\" — it must show: campfire cooking."
+  "q": "cooking over fire",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So put the skillet with the chicken in it on the cool edge of the grate, away from the coals, and slide it slowly toward the heat as the fat renders. It works. It just needs more attention.\" — it must show: cooking over fire."
  },
  {
   "name": "c91_2",
-  "q": "camp cooking",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So put the skillet with the chicken in it on the cool edge of the grate, away from the coals, and slide it slowly toward the heat as the fat renders. It works. It just needs more attention.\" — it must show: camp cooking."
+  "q": "campfire pan",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So put the skillet with the chicken in it on the cool edge of the grate, away from the coals, and slide it slowly toward the heat as the fat renders. It works. It just needs more attention.\" — it must show: campfire pan."
  },
  {
   "name": "c92_1",
@@ -301,13 +301,13 @@
  },
  {
   "name": "c115_1",
-  "q": "cutting board",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the cutting board. Raw chicken goes on its own board. When you're done, wash the board, the knife, and your hands with hot soapy water before you touch anything else. Not just a rinse.\" — it must show: cutting board."
+  "q": "raw chicken board",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the cutting board. Raw chicken goes on its own board. When you're done, wash the board, the knife, and your hands with hot soapy water before you touch anything else. Not just a rinse.\" — it must show: raw chicken board."
  },
  {
   "name": "c115_2",
-  "q": "washing cutting board",
-  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the cutting board. Raw chicken goes on its own board. When you're done, wash the board, the knife, and your hands with hot soapy water before you touch anything else. Not just a rinse.\" — it must show: washing cutting board."
+  "q": "cutting raw chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the cutting board. Raw chicken goes on its own board. When you're done, wash the board, the knife, and your hands with hot soapy water before you touch anything else. Not just a rinse.\" — it must show: cutting raw chicken."
  },
  {
   "name": "c116_1",

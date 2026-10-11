@@ -1,0 +1,992 @@
+[
+ {
+  "id": "c01",
+  "kind": "avatar",
+  "f0": 0,
+  "n": 46,
+  "sf": 0.1
+ },
+ {
+  "id": "c02",
+  "kind": "avatar",
+  "f0": 46,
+  "n": 151,
+  "sf": 1.633
+ },
+ {
+  "id": "c03",
+  "kind": "avatar",
+  "f0": 197,
+  "n": 133,
+  "sf": 6.667
+ },
+ {
+  "id": "c04",
+  "kind": "avatar",
+  "f0": 330,
+  "n": 163,
+  "sf": 11.1
+ },
+ {
+  "id": "c05",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c05_2.mp4",
+  "f0": 493,
+  "n": 174
+ },
+ {
+  "id": "c06",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c06_1.mp4",
+  "f0": 667,
+  "n": 63
+ },
+ {
+  "id": "c06",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c06_2.mp4",
+  "f0": 730,
+  "n": 63
+ },
+ {
+  "id": "c07",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c07_1.mp4",
+  "f0": 793,
+  "n": 126
+ },
+ {
+  "id": "c08",
+  "kind": "avatar",
+  "f0": 919,
+  "n": 182,
+  "sf": 16.776
+ },
+ {
+  "id": "c09",
+  "kind": "avatar",
+  "f0": 1101,
+  "n": 262,
+  "sf": 22.843
+ },
+ {
+  "id": "c10",
+  "kind": "avatar",
+  "f0": 1363,
+  "n": 126,
+  "sf": 31.576
+ },
+ {
+  "id": "c11",
+  "kind": "avatar",
+  "f0": 1489,
+  "n": 316,
+  "sf": 35.776
+ },
+ {
+  "id": "c12",
+  "kind": "avatar",
+  "f0": 1805,
+  "n": 341,
+  "sf": 46.31
+ },
+ {
+  "id": "c13",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c13_1.mp4",
+  "f0": 2146,
+  "n": 152
+ },
+ {
+  "id": "c13",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c13_2.mp4",
+  "f0": 2298,
+  "n": 151
+ },
+ {
+  "id": "c14",
+  "kind": "img",
+  "img": "S03/anc/K1.png",
+  "f0": 2449,
+  "n": 202
+ },
+ {
+  "id": "c15",
+  "kind": "img",
+  "img": "fotos/c15_a.png",
+  "f0": 2651,
+  "n": 151
+ },
+ {
+  "id": "c15",
+  "kind": "img",
+  "img": "fotos/c15_b.png",
+  "f0": 2802,
+  "n": 151
+ },
+ {
+  "id": "c16",
+  "kind": "img",
+  "img": "S03/anc/K2.png",
+  "f0": 2953,
+  "n": 312
+ },
+ {
+  "id": "c17",
+  "kind": "img",
+  "img": "S03/anc/K3.png",
+  "f0": 3265,
+  "n": 343
+ },
+ {
+  "id": "c18",
+  "kind": "img",
+  "img": "S03/anc/K4.png",
+  "f0": 3608,
+  "n": 174
+ },
+ {
+  "id": "c19",
+  "kind": "avatar",
+  "f0": 3782,
+  "n": 200,
+  "sf": 57.935
+ },
+ {
+  "id": "c20",
+  "kind": "img",
+  "img": "S05/anc/K1.png",
+  "f0": 3982,
+  "n": 201
+ },
+ {
+  "id": "c21",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c21_1.mp4",
+  "f0": 4183,
+  "n": 166
+ },
+ {
+  "id": "c21",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c21_2.mp4",
+  "f0": 4349,
+  "n": 165
+ },
+ {
+  "id": "c22",
+  "kind": "img",
+  "img": "S05/anc/K2.png",
+  "f0": 4514,
+  "n": 135
+ },
+ {
+  "id": "c23",
+  "kind": "img",
+  "img": "S06/anc/K1.png",
+  "f0": 4649,
+  "n": 258
+ },
+ {
+  "id": "c24",
+  "kind": "img",
+  "img": "S06/anc/K2.png",
+  "f0": 4907,
+  "n": 139
+ },
+ {
+  "id": "c25",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c25_1.mp4",
+  "f0": 5046,
+  "n": 318,
+  "slow": 0.844
+ },
+ {
+  "id": "c26",
+  "kind": "img",
+  "img": "S07/anc/K1.png",
+  "f0": 5364,
+  "n": 187
+ },
+ {
+  "id": "c27",
+  "kind": "img",
+  "img": "S08/anc/K1.png",
+  "f0": 5551,
+  "n": 148
+ },
+ {
+  "id": "c28",
+  "kind": "img",
+  "img": "S08/anc/K2.png",
+  "f0": 5699,
+  "n": 209
+ },
+ {
+  "id": "c29",
+  "kind": "img",
+  "img": "S09/anc/K1.png",
+  "f0": 5908,
+  "n": 170
+ },
+ {
+  "id": "c30",
+  "kind": "img",
+  "img": "S09/anc/K2.png",
+  "f0": 6078,
+  "n": 231
+ },
+ {
+  "id": "c31",
+  "kind": "img",
+  "img": "S10/anc/K1.png",
+  "f0": 6309,
+  "n": 92
+ },
+ {
+  "id": "c32",
+  "kind": "avatar",
+  "f0": 6401,
+  "n": 118,
+  "sf": 64.86
+ },
+ {
+  "id": "c33",
+  "kind": "img",
+  "img": "S12/anc/K1.png",
+  "f0": 6519,
+  "n": 327
+ },
+ {
+  "id": "c34",
+  "kind": "img",
+  "img": "S12/anc/K2.png",
+  "f0": 6846,
+  "n": 290
+ },
+ {
+  "id": "c35",
+  "kind": "img",
+  "img": "S12/anc/K3.png",
+  "f0": 7136,
+  "n": 126
+ },
+ {
+  "id": "c36",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c36_1.mp4",
+  "f0": 7262,
+  "n": 154
+ },
+ {
+  "id": "c36",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c36_2.mp4",
+  "f0": 7416,
+  "n": 154
+ },
+ {
+  "id": "c37",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c37_1.mp4",
+  "f0": 7570,
+  "n": 255
+ },
+ {
+  "id": "c38",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c38_1.mp4",
+  "f0": 7825,
+  "n": 155
+ },
+ {
+  "id": "c38",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c38_2.mp4",
+  "f0": 7980,
+  "n": 154
+ },
+ {
+  "id": "c39",
+  "kind": "avatar",
+  "f0": 8134,
+  "n": 262,
+  "sf": 69.028
+ },
+ {
+  "id": "c40",
+  "kind": "img",
+  "img": "S14/anc/K1.png",
+  "f0": 8396,
+  "n": 222
+ },
+ {
+  "id": "c41",
+  "kind": "img",
+  "img": "S14/anc/K2.png",
+  "f0": 8618,
+  "n": 146
+ },
+ {
+  "id": "c42",
+  "kind": "img",
+  "img": "S15/anc/K1.png",
+  "f0": 8764,
+  "n": 144
+ },
+ {
+  "id": "c43",
+  "kind": "img",
+  "img": "S16/anc/K1.png",
+  "f0": 8908,
+  "n": 320
+ },
+ {
+  "id": "c44",
+  "kind": "img",
+  "img": "S16/anc/K2.png",
+  "f0": 9228,
+  "n": 253
+ },
+ {
+  "id": "c45",
+  "kind": "img",
+  "img": "S17/anc/K1.png",
+  "f0": 9481,
+  "n": 161
+ },
+ {
+  "id": "c46",
+  "kind": "img",
+  "img": "S18/anc/K1.png",
+  "f0": 9642,
+  "n": 287
+ },
+ {
+  "id": "c47",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c47_1.mp4",
+  "f0": 9929,
+  "n": 156
+ },
+ {
+  "id": "c47",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c47_2.mp4",
+  "f0": 10085,
+  "n": 156
+ },
+ {
+  "id": "c48",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c48_2.mp4",
+  "f0": 10241,
+  "n": 313,
+  "slow": 0.708
+ },
+ {
+  "id": "c49",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c49_1.mp4",
+  "f0": 10554,
+  "n": 329,
+  "slow": 0.816
+ },
+ {
+  "id": "c50",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c50_1.mp4",
+  "f0": 10883,
+  "n": 306,
+  "slow": 0.877
+ },
+ {
+  "id": "c51",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c51_2.mp4",
+  "f0": 11189,
+  "n": 319,
+  "slow": 0.663
+ },
+ {
+  "id": "c52",
+  "kind": "img",
+  "img": "S20/anc/K1.png",
+  "f0": 11508,
+  "n": 336
+ },
+ {
+  "id": "c53",
+  "kind": "img",
+  "img": "S20/anc/K2.png",
+  "f0": 11844,
+  "n": 273
+ },
+ {
+  "id": "c54",
+  "kind": "img",
+  "img": "S21/anc/K1.png",
+  "f0": 12117,
+  "n": 312
+ },
+ {
+  "id": "c55",
+  "kind": "img",
+  "img": "S22/anc/K1.png",
+  "f0": 12429,
+  "n": 324
+ },
+ {
+  "id": "c56",
+  "kind": "avatar",
+  "f0": 12753,
+  "n": 295,
+  "sf": 78.022
+ },
+ {
+  "id": "c57",
+  "kind": "img",
+  "img": "S22/anc/K3.png",
+  "f0": 13048,
+  "n": 327
+ },
+ {
+  "id": "c58",
+  "kind": "img",
+  "img": "S23/anc/K1.png",
+  "f0": 13375,
+  "n": 110
+ },
+ {
+  "id": "c59",
+  "kind": "img",
+  "img": "S24/anc/K1.png",
+  "f0": 13485,
+  "n": 326
+ },
+ {
+  "id": "c60",
+  "kind": "img",
+  "img": "S25/anc/K1.png",
+  "f0": 13811,
+  "n": 39
+ },
+ {
+  "id": "c61",
+  "kind": "img",
+  "img": "S26/anc/K1.png",
+  "f0": 13850,
+  "n": 132
+ },
+ {
+  "id": "c62",
+  "kind": "avatar",
+  "f0": 13982,
+  "n": 346,
+  "sf": 88.115
+ },
+ {
+  "id": "c63",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c63_1.mp4",
+  "f0": 14328,
+  "n": 323,
+  "slow": 0.831
+ },
+ {
+  "id": "c64",
+  "kind": "avatar",
+  "f0": 14651,
+  "n": 349,
+  "sf": 99.895
+ },
+ {
+  "id": "c65",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c65_2.mp4",
+  "f0": 15000,
+  "n": 324,
+  "slow": 0.755
+ },
+ {
+  "id": "c66",
+  "kind": "img",
+  "img": "S28/anc/K1.png",
+  "f0": 15324,
+  "n": 148
+ },
+ {
+  "id": "c67",
+  "kind": "avatar",
+  "f0": 15472,
+  "n": 216,
+  "sf": 111.768
+ },
+ {
+  "id": "c68",
+  "kind": "img",
+  "img": "S30/anc/K1.png",
+  "f0": 15688,
+  "n": 317
+ },
+ {
+  "id": "c69",
+  "kind": "img",
+  "img": "S30/anc/K2.png",
+  "f0": 16005,
+  "n": 319
+ },
+ {
+  "id": "c70",
+  "kind": "img",
+  "img": "S30/anc/K3.png",
+  "f0": 16324,
+  "n": 291
+ },
+ {
+  "id": "c71",
+  "kind": "img",
+  "img": "S30/anc/K4.png",
+  "f0": 16615,
+  "n": 192
+ },
+ {
+  "id": "c72",
+  "kind": "avatar",
+  "f0": 16807,
+  "n": 197,
+  "sf": 119.132
+ },
+ {
+  "id": "c73",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c73_1.mp4",
+  "f0": 17004,
+  "n": 313,
+  "slow": 0.858
+ },
+ {
+  "id": "c74",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c74_2.mp4",
+  "f0": 17317,
+  "n": 324,
+  "slow": 0.319
+ },
+ {
+  "id": "c75",
+  "kind": "img",
+  "img": "S31/anc/K1.png",
+  "f0": 17641,
+  "n": 217
+ },
+ {
+  "id": "c76",
+  "kind": "img",
+  "img": "S32/anc/K1.png",
+  "f0": 17858,
+  "n": 221
+ },
+ {
+  "id": "c77",
+  "kind": "img",
+  "img": "S32/anc/K2.png",
+  "f0": 18079,
+  "n": 139
+ },
+ {
+  "id": "c78",
+  "kind": "img",
+  "img": "S33/anc/K1.png",
+  "f0": 18218,
+  "n": 198
+ },
+ {
+  "id": "c79",
+  "kind": "img",
+  "img": "S34/anc/K1.png",
+  "f0": 18416,
+  "n": 247
+ },
+ {
+  "id": "c80",
+  "kind": "img",
+  "img": "S34/anc/K2.png",
+  "f0": 18663,
+  "n": 166
+ },
+ {
+  "id": "c81",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c81_1.mp4",
+  "f0": 18829,
+  "n": 162
+ },
+ {
+  "id": "c81",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c81_2.mp4",
+  "f0": 18991,
+  "n": 161
+ },
+ {
+  "id": "c82",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c82_1.mp4",
+  "f0": 19152,
+  "n": 334,
+  "slow": 0.46
+ },
+ {
+  "id": "c83",
+  "kind": "img",
+  "img": "S35/anc/K1.png",
+  "f0": 19486,
+  "n": 143
+ },
+ {
+  "id": "c84",
+  "kind": "img",
+  "img": "S36/anc/K1.png",
+  "f0": 19629,
+  "n": 327
+ },
+ {
+  "id": "c85",
+  "kind": "avatar",
+  "f0": 19956,
+  "n": 335,
+  "sf": 125.95
+ },
+ {
+  "id": "c86",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c86_1.mp4",
+  "f0": 20291,
+  "n": 158
+ },
+ {
+  "id": "c86",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c86_2.mp4",
+  "f0": 20449,
+  "n": 158
+ },
+ {
+  "id": "c87",
+  "kind": "img",
+  "img": "S37/anc/K1.png",
+  "f0": 20607,
+  "n": 154
+ },
+ {
+  "id": "c88",
+  "kind": "img",
+  "img": "S37/anc/K2.png",
+  "f0": 20761,
+  "n": 248
+ },
+ {
+  "id": "c89",
+  "kind": "img",
+  "img": "S38/anc/K1.png",
+  "f0": 21009,
+  "n": 212
+ },
+ {
+  "id": "c90",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c90_1.mp4",
+  "f0": 21221,
+  "n": 73
+ },
+ {
+  "id": "c90",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c90_2.mp4",
+  "f0": 21294,
+  "n": 72
+ },
+ {
+  "id": "c91",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c91_2.mp4",
+  "f0": 21366,
+  "n": 302,
+  "slow": 0.889
+ },
+ {
+  "id": "c92",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c92_1.mp4",
+  "f0": 21668,
+  "n": 321,
+  "slow": 0.836
+ },
+ {
+  "id": "c93",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c93_1.mp4",
+  "f0": 21989,
+  "n": 171
+ },
+ {
+  "id": "c93",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c93_2.mp4",
+  "f0": 22160,
+  "n": 170
+ },
+ {
+  "id": "c94",
+  "kind": "avatar",
+  "f0": 22330,
+  "n": 352,
+  "sf": 137.351
+ },
+ {
+  "id": "c95",
+  "kind": "img",
+  "img": "S40/anc/K2.png",
+  "f0": 22682,
+  "n": 320
+ },
+ {
+  "id": "c96",
+  "kind": "img",
+  "img": "S40/anc/K3.png",
+  "f0": 23002,
+  "n": 265
+ },
+ {
+  "id": "c97",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c97_1.mp4",
+  "f0": 23267,
+  "n": 309,
+  "slow": 0.866
+ },
+ {
+  "id": "c98",
+  "kind": "img",
+  "img": "S41/anc/K1.png",
+  "f0": 23576,
+  "n": 299
+ },
+ {
+  "id": "c99",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c99_1.mp4",
+  "f0": 23875,
+  "n": 279,
+  "slow": 0.962
+ },
+ {
+  "id": "c100",
+  "kind": "img",
+  "img": "S41/anc/K2.png",
+  "f0": 24154,
+  "n": 124
+ },
+ {
+  "id": "c101",
+  "kind": "img",
+  "img": "S42/anc/K1.png",
+  "f0": 24278,
+  "n": 346
+ },
+ {
+  "id": "c102",
+  "kind": "img",
+  "img": "S42/anc/K2.png",
+  "f0": 24624,
+  "n": 232
+ },
+ {
+  "id": "c103",
+  "kind": "img",
+  "img": "S42/anc/K3.png",
+  "f0": 24856,
+  "n": 157
+ },
+ {
+  "id": "c104",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c104_1.mp4",
+  "f0": 25013,
+  "n": 294,
+  "slow": 0.913
+ },
+ {
+  "id": "c105",
+  "kind": "img",
+  "img": "S43/anc/K1.png",
+  "f0": 25307,
+  "n": 194
+ },
+ {
+  "id": "c106",
+  "kind": "img",
+  "img": "S44/anc/K1.png",
+  "f0": 25501,
+  "n": 306
+ },
+ {
+  "id": "c107",
+  "kind": "img",
+  "img": "S44/anc/K2.png",
+  "f0": 25807,
+  "n": 149
+ },
+ {
+  "id": "c108",
+  "kind": "avatar",
+  "f0": 25956,
+  "n": 305,
+  "sf": 149.336
+ },
+ {
+  "id": "c109",
+  "kind": "avatar",
+  "f0": 26261,
+  "n": 335,
+  "sf": 159.503
+ },
+ {
+  "id": "c110",
+  "kind": "avatar",
+  "f0": 26596,
+  "n": 315,
+  "sf": 170.669
+ },
+ {
+  "id": "c111",
+  "kind": "avatar",
+  "f0": 26911,
+  "n": 194,
+  "sf": 181.169
+ },
+ {
+  "id": "c112",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c112_1.mp4",
+  "f0": 27105,
+  "n": 338,
+  "slow": 0.794
+ },
+ {
+  "id": "c113",
+  "kind": "img",
+  "img": "S46/anc/K1.png",
+  "f0": 27443,
+  "n": 308
+ },
+ {
+  "id": "c114",
+  "kind": "img",
+  "img": "S46/anc/K2.png",
+  "f0": 27751,
+  "n": 182
+ },
+ {
+  "id": "c115",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c115_1.mp4",
+  "f0": 27933,
+  "n": 292,
+  "slow": 0.92
+ },
+ {
+  "id": "c116",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c116_2.mp4",
+  "f0": 28225,
+  "n": 137
+ },
+ {
+  "id": "c117",
+  "kind": "img",
+  "img": "S47/anc/K1.png",
+  "f0": 28362,
+  "n": 225
+ },
+ {
+  "id": "c118",
+  "kind": "img",
+  "img": "S48/anc/K1.png",
+  "f0": 28587,
+  "n": 354
+ },
+ {
+  "id": "c119",
+  "kind": "img",
+  "img": "S48/anc/K2.png",
+  "f0": 28941,
+  "n": 196
+ },
+ {
+  "id": "c120",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c120_1.mp4",
+  "f0": 29137,
+  "n": 147
+ },
+ {
+  "id": "c120",
+  "kind": "stock",
+  "file": "broll/cvthighs_st/c120_2.mp4",
+  "f0": 29284,
+  "n": 147
+ },
+ {
+  "id": "c121",
+  "kind": "img",
+  "img": "S49/anc/K1.png",
+  "f0": 29431,
+  "n": 215
+ },
+ {
+  "id": "c122",
+  "kind": "avatar",
+  "f0": 29646,
+  "n": 329,
+  "sf": 187.869
+ },
+ {
+  "id": "c123",
+  "kind": "img",
+  "img": "S51/anc/K1.png",
+  "f0": 29975,
+  "n": 325
+ },
+ {
+  "id": "c124",
+  "kind": "avatar",
+  "f0": 30300,
+  "n": 202,
+  "sf": 199.069
+ },
+ {
+  "id": "c125",
+  "kind": "avatar",
+  "f0": 30502,
+  "n": 274,
+  "sf": 205.802
+ },
+ {
+  "id": "c126",
+  "kind": "avatar",
+  "f0": 30776,
+  "n": 289,
+  "sf": 214.936
+ },
+ {
+  "id": "c127",
+  "kind": "avatar",
+  "f0": 31065,
+  "n": 322,
+  "sf": 224.569
+ }
+]
