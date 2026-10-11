@@ -1,0 +1,237 @@
+{
+ "S00": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el tenedor desarma la carne braseada, se deshace"
+ },
+ "S01": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sostiene un trozo de jarrete de res crudo con hueso"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio baja el Dutch oven abollado"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chuck roast y jarretes de res en papel de carnicero"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno de la cuadrilla"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "carne cortada en trozos de tres pulgadas"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "sal y pimienta sobre los trozos de carne"
+ },
+ "S07": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "trozos de carne dorándose en la manteca, sin amontonar"
+ },
+ "S08": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio saca la carne dorada a un plato"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "cebolla, ajo y chiles ancho en el fondo de la olla"
+ },
+ "S10": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "botella de cerveza oscura y vinagre de manzana"
+ },
+ "S11": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "cerveza vertida en la olla, espuma, vapor"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la carne vuelve a la olla, líquido a la mitad de la carne"
+ },
+ "S13": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa sobre la olla, entra al horno"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente al horno cerrado, con los brazos cruzados"
+ },
+ "S15": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "corral al atardecer, caballos"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "el horno se abre, papas y zanahorias alrededor de la carne"
+ },
+ "S17": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio toma café junto a la ventana"
+ },
+ "S18": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "tenedor gira un trozo de carne, se separa sin esfuerzo"
+ },
+ "S19": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "carne humeante en un plato hondo con papas, zanahorias y salsa"
+ },
+ "S20": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la salsa reduciéndose en la olla sobre la hornalla"
+ },
+ "S21": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty con un plato hondo y una tortilla"
+ },
+ "S22": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty come, moja la tortilla en la salsa"
+ },
+ "S23": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia la cuchara de madera"
+ },
+ "S24": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en la carnicería, señala cortes"
+ },
+ "S26": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "carne desmenuzada en bolsas de freezer con salsa"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "carne desmenuzada en tortillas con cebolla cruda"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S29": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos asaderas grandes en el horno"
+ },
+ "S30": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la olla entera en la mesa, dos bolsas para el freezer"
+ },
+ "S31": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "Dutch oven sobre brasas, carbones en la tapa"
+ },
+ "S32": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga la cuchara de madera"
+ },
+ "S33": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "cuchara saca la grasa de la superficie de la salsa"
+ },
+ "S34": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con un trozo de carne demasiado seca en un tenedor"
+ },
+ "S35": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "olla tapada enfriándose sobre la mesada, un reloj"
+ },
+ "S36": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio cuenta, mirando afuera"
+ },
+ "S37": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cortes distintos en fila: chuck, jarrete, cola, costilla corta, cachete"
+ },
+ "S38": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "plato con carne, puré de papas y salsa encima"
+ },
+ "S39": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "variantes: café molido, chipotle en lata, naranja"
+ },
+ "S40": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "carne salada sobre una rejilla en la heladera, papel de carnicero al lado"
+ },
+ "S41": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "trozos de carne pasados por harina en una bandeja"
+ },
+ "S42": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "olla tapada, Claudio levanta la tapa y mira el nivel de líquido"
+ },
+ "S43": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio pincha la carne con un tenedor, el tenedor no entra"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S45": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 20"
+ },
+ "S46": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, un cartón de huevos al lado"
+ }
+}

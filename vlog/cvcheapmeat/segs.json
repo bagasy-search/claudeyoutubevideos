@@ -1,0 +1,1262 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 1.72,
+  "id": "c01",
+  "d": 1.72,
+  "T": 2,
+  "text": "This cut cost three dollars.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S01",
+  "s": 1.72,
+  "e": 6.04,
+  "id": "c02",
+  "d": 4.32,
+  "T": 5,
+  "text": "This piece right here. A beef shank. About three dollars a piece at the meat counter.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S01",
+  "s": 6.04,
+  "e": 11.42,
+  "id": "c03",
+  "d": 5.38,
+  "T": 6,
+  "text": "The butcher can hardly give these away. And in three hours, it'll do that. Fall apart under a fork,",
+  "pad": 0.62
+ },
+ {
+  "sc": "S01",
+  "s": 11.42,
+  "e": 15.68,
+  "id": "c04",
+  "d": 4.26,
+  "T": 5,
+  "text": "like butter. Last time it was the green beans, four minutes under the lid.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S01",
+  "s": 15.68,
+  "e": 21.54,
+  "id": "c05",
+  "d": 5.86,
+  "T": 7,
+  "text": "Today, the one I've been waiting to show you. Cheap meat. Here's what happens when most people buy a cheap cut.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S01",
+  "s": 21.54,
+  "e": 25.92,
+  "id": "c06",
+  "d": 4.38,
+  "T": 5,
+  "text": "A chuck roast, a shank, a piece of stew meat. They cook it like a steak,",
+  "pad": 0.62
+ },
+ {
+  "sc": "S01",
+  "s": 25.92,
+  "e": 30.72,
+  "id": "c07",
+  "d": 4.8,
+  "T": 5,
+  "text": "or they throw it in a pot and boil it for an hour, and it comes out tough as a boot. Stringy.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S01",
+  "s": 30.72,
+  "e": 35.094,
+  "id": "c08",
+  "d": 4.374,
+  "T": 5,
+  "text": "Dry. They chew it and chew it, and they decide cheap meat is just bad meat,",
+  "pad": 0.63
+ },
+ {
+  "sc": "S01",
+  "s": 35.094,
+  "e": 39.454,
+  "id": "c09",
+  "d": 4.36,
+  "T": 5,
+  "text": "and they go back to paying fifteen dollars a pound. That's wrong. On the ranch,",
+  "pad": 0.64
+ },
+ {
+  "sc": "S01",
+  "s": 39.454,
+  "e": 48.634,
+  "id": "c10",
+  "d": 9.18,
+  "T": 10,
+  "text": "the cheap cuts were the ones we ate. The good steaks went to market. And I'm going to show you the secret ingredient that makes the toughest, cheapest cut in the store melt in your mouth.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S01",
+  "s": 48.634,
+  "e": 52.614,
+  "id": "c11",
+  "d": 3.98,
+  "T": 5,
+  "text": "It's not in a bottle. It's not a powder. I'll tell you what it is in a minute.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S01",
+  "s": 52.614,
+  "e": 56.614,
+  "id": "c12",
+  "d": 4.0,
+  "T": 5,
+  "text": "And a bottle of dark beer, and a lid you don't lift. I'm Claudio.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S01",
+  "s": 56.614,
+  "e": 62.254,
+  "id": "c13",
+  "d": 5.64,
+  "T": 6,
+  "text": "I cooked for a cattle crew for forty years. And I fed fourteen men on the cuts nobody else wanted.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S02",
+  "s": 62.254,
+  "e": 69.077,
+  "id": "c14",
+  "d": 6.823,
+  "T": 7,
+  "text": "The Dutch oven. The heavy pot with the tight lid. The same one I make beans in. It's going in the oven, so no plastic handles.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S03",
+  "s": 69.077,
+  "e": 79.917,
+  "id": "c15",
+  "d": 10.84,
+  "T": 11,
+  "text": "Let's talk about why cheap meat is tough. Because once you understand it, you'll never be scared of it again. The cheap cuts come from the parts of the animal that work the hardest. The shoulder, that's the chuck.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S03",
+  "s": 79.917,
+  "e": 90.377,
+  "id": "c16",
+  "d": 10.46,
+  "T": 11,
+  "text": "The leg, that's the shank. A cow walks all day, so those muscles are strong, and they're held together with a lot of what the butchers call connective tissue. Collagen. It's that white, shiny,",
+  "pad": 0.54
+ },
+ {
+  "sc": "S03",
+  "s": 90.377,
+  "e": 102.204,
+  "id": "c17",
+  "d": 11.827,
+  "T": 12,
+  "text": "gristly stuff running through the meat. Raw, it's like rubber bands. You can't chew it. But here's the thing. Collagen, if you cook it low and slow, with moisture around it, for a long time, it melts.",
+  "pad": 0.17
+ },
+ {
+  "sc": "S03",
+  "s": 102.204,
+  "e": 113.524,
+  "id": "c18",
+  "d": 11.32,
+  "T": 12,
+  "text": "It turns into gelatin. Gelatin is soft, and rich, and it coats every fiber of the meat. That's what makes a pot roast fall apart and feel juicy in your mouth. And here's the part most people don't know.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S03",
+  "s": 113.524,
+  "e": 120.644,
+  "id": "c19",
+  "d": 7.12,
+  "T": 8,
+  "text": "A cheap cut has more collagen than a steak. So when it's cooked right, it's actually richer and more tender than an expensive cut.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S03",
+  "s": 120.644,
+  "e": 131.043,
+  "id": "c20",
+  "d": 10.399,
+  "T": 11,
+  "text": "The expensive steak doesn't have the collagen to melt. It just dries out if you cook it long. So why does it come out tough at home? Two reasons. Too hot, or too short. If you boil it hard,",
+  "pad": 0.6
+ },
+ {
+  "sc": "S03",
+  "s": 131.043,
+  "e": 141.083,
+  "id": "c21",
+  "d": 10.04,
+  "T": 11,
+  "text": "the meat fibers squeeze and dry out before the collagen has time to melt. And if you take it out after an hour or an hour and a half, the collagen hasn't melted yet. It's still rubber bands.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S03",
+  "s": 141.083,
+  "e": 146.363,
+  "id": "c22",
+  "d": 5.28,
+  "T": 6,
+  "text": "People think it's tough because they cooked it too long. It's the opposite. Tough means it's not done yet.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S04",
+  "s": 146.363,
+  "e": 153.023,
+  "id": "c23",
+  "d": 6.66,
+  "T": 7,
+  "text": "So here's the secret ingredient. It's time. That's it. Time, low heat, and a lid you don't lift.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S04",
+  "s": 153.023,
+  "e": 158.63,
+  "id": "c24",
+  "d": 5.607,
+  "T": 6,
+  "text": "Don Ernesto used to say, \"The cheaper the meat, the more patience it costs. And patience is free.\"",
+  "pad": 0.39
+ },
+ {
+  "sc": "S05",
+  "s": 158.63,
+  "e": 169.27,
+  "id": "c25",
+  "d": 10.64,
+  "T": 11,
+  "text": "Three pounds of boneless chuck roast, or beef shank, or a mix of both. Cut it into big chunks, about three inches. Big. Not little stew-meat cubes. Big chunks stay juicier,",
+  "pad": 0.36
+ },
+ {
+  "sc": "S05",
+  "s": 169.27,
+  "e": 179.79,
+  "id": "c26",
+  "d": 10.52,
+  "T": 11,
+  "text": "and they don't fall into shreds in the pot. If you're using shank, leave the bone in. That round bone in the middle is full of marrow, and it melts into the sauce and makes it rich. When it's done,",
+  "pad": 0.48
+ },
+ {
+  "sc": "S05",
+  "s": 179.79,
+  "e": 185.81,
+  "id": "c27",
+  "d": 6.02,
+  "T": 7,
+  "text": "you can scoop the marrow out with a little spoon and spread it on a tortilla. That's the cook's treat. Don't tell anybody.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S06",
+  "s": 185.81,
+  "e": 195.791,
+  "id": "c28",
+  "d": 9.981,
+  "T": 11,
+  "text": "Step one. Two teaspoons of kosher salt and a teaspoon of black pepper, all over every piece. Let it sit twenty minutes while you heat the oven to three hundred degrees.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S07",
+  "s": 195.791,
+  "e": 206.211,
+  "id": "c29",
+  "d": 10.42,
+  "T": 11,
+  "text": "Step two. Brown it. Two tablespoons of lard or oil in the Dutch oven, medium-high heat, until it shimmers. Put in half the meat. Half. Leave space between the pieces.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S07",
+  "s": 206.211,
+  "e": 216.871,
+  "id": "c30",
+  "d": 10.66,
+  "T": 11,
+  "text": "If you crowd them, they'll steam and turn gray, and you'll lose the best part. Don't touch them for three or four minutes. Then turn them and brown another side. You want a deep, dark brown on at least two sides.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S08",
+  "s": 216.871,
+  "e": 226.847,
+  "id": "c31",
+  "d": 9.976,
+  "T": 11,
+  "text": "Take them out to a plate. Do the second half the same way. This takes about fifteen minutes, and I know it's tempting to skip it. Don't skip it. That brown crust is where the flavor comes from.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S08",
+  "s": 226.847,
+  "e": 234.567,
+  "id": "c32",
+  "d": 7.72,
+  "T": 8,
+  "text": "Meat that goes in the pot without browning comes out tasting gray and boiled. Browning is the difference between pot roast and boiled beef.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S09",
+  "s": 234.567,
+  "e": 246.387,
+  "id": "c33",
+  "d": 11.82,
+  "T": 12,
+  "text": "Step three. Turn the heat down to medium. One large onion, sliced. Four cloves of garlic. Two dried ancho chiles, torn in pieces, stems and seeds out. Into the pot with the drippings.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S09",
+  "s": 246.387,
+  "e": 254.807,
+  "id": "c34",
+  "d": 8.42,
+  "T": 9,
+  "text": "Five minutes, stirring and scraping the bottom with a wooden spoon. All those brown bits stuck on the bottom from the meat, scrape them up. That's flavor.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S10",
+  "s": 254.807,
+  "e": 264.825,
+  "id": "c35",
+  "d": 10.018,
+  "T": 11,
+  "text": "Step four. One bottle of dark beer. Twelve ounces. Any dark beer. A stout, a porter, a dark Mexican lager. And one tablespoon of cider vinegar.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S11",
+  "s": 264.825,
+  "e": 274.605,
+  "id": "c36",
+  "d": 9.78,
+  "T": 10,
+  "text": "Pour it in. It'll foam up. Scrape the bottom one more time. Let it boil two minutes. That cooks off some of the alcohol and the raw beer taste. Now, why beer and vinegar?",
+  "pad": 0.22
+ },
+ {
+  "sc": "S11",
+  "s": 274.605,
+  "e": 284.105,
+  "id": "c37",
+  "d": 9.5,
+  "T": 10,
+  "text": "The dark beer gives the sauce a deep, roasted, a little bit bitter flavor, like coffee. And the vinegar, a little acid, keeps the whole thing from tasting flat and heavy.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S11",
+  "s": 284.105,
+  "e": 290.582,
+  "id": "c38",
+  "d": 6.477,
+  "T": 7,
+  "text": "Rich food needs a little sour to wake it up. You won't taste beer. You won't taste vinegar. You'll just taste better beef.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S11",
+  "s": 290.582,
+  "e": 298.102,
+  "id": "c39",
+  "d": 7.52,
+  "T": 8,
+  "text": "If you don't drink, or you're cooking for kids, use a cup and a half of beef broth and one more tablespoon of vinegar. It's still good.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S11",
+  "s": 298.102,
+  "e": 302.702,
+  "id": "c40",
+  "d": 4.6,
+  "T": 5,
+  "text": "The alcohol cooks off either way, mostly. But I understand.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S12",
+  "s": 302.702,
+  "e": 313.942,
+  "id": "c41",
+  "d": 11.24,
+  "T": 12,
+  "text": "Step five. The meat goes back in, and all the juice that ran out onto the plate. Now look at the liquid. It should come about halfway up the meat. Not covering it. Halfway. Just like the ribs.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S12",
+  "s": 313.942,
+  "e": 322.242,
+  "id": "c42",
+  "d": 8.3,
+  "T": 9,
+  "text": "The bottom half braises in the liquid, the top half steams. If you cover the meat with liquid, you're boiling it, and you'll get a watery, gray stew.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S13",
+  "s": 322.242,
+  "e": 326.555,
+  "id": "c43",
+  "d": 4.313,
+  "T": 5,
+  "text": "Lid on, tight. Into the oven at three hundred degrees. Two hours.",
+  "pad": 0.69
+ },
+ {
+  "sc": "S14",
+  "s": 326.555,
+  "e": 332.155,
+  "id": "c44",
+  "d": 5.6,
+  "T": 6,
+  "text": "And here's the hard part. Don't open it. Not once. Not to check. Not to stir.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S14",
+  "s": 332.155,
+  "e": 340.395,
+  "id": "c45",
+  "d": 8.24,
+  "T": 9,
+  "text": "Every time you lift that lid, the steam and the heat escape, and it takes fifteen minutes to get back. Two hours. Go do something else. Go outside.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S15",
+  "s": 340.395,
+  "e": 351.395,
+  "id": "c46",
+  "d": 11.0,
+  "T": 12,
+  "text": "I'll tell you about the worst winter we ever had. Nineteen ninety-four. Cattle prices dropped way down, and the boss told me in October, \"Claudio, I can give you about half what you had for groceries last year.\"",
+  "pad": 1.0
+ },
+ {
+  "sc": "S15",
+  "s": 351.395,
+  "e": 361.649,
+  "id": "c47",
+  "d": 10.254,
+  "T": 11,
+  "text": "Fourteen men. Half the money. I thought about it for a long time. Then I went to the butcher in town, an old German man named Walter, and I told him what I needed. He laughed and took me in the back.",
+  "pad": 0.75
+ },
+ {
+  "sc": "S15",
+  "s": 361.649,
+  "e": 373.429,
+  "id": "c48",
+  "d": 11.78,
+  "T": 12,
+  "text": "He had shanks and necks and chuck and oxtails that nobody wanted. He sold them to me for almost nothing. And all winter, I cooked them like this. Low, slow, lid on. Not one man complained.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S15",
+  "s": 373.429,
+  "e": 381.469,
+  "id": "c49",
+  "d": 8.04,
+  "T": 9,
+  "text": "In March the boss asked me how I did it, and I told him, and he said, \"Then why have I been buying steaks?\" After that, we bought the cheap cuts every winter.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S16",
+  "s": 381.469,
+  "e": 391.45,
+  "id": "c50",
+  "d": 9.981,
+  "T": 11,
+  "text": "Two hours. Now you can open it. Take the lid off. It'll smell like heaven. Step six. One pound of small potatoes, cut in half, and three carrots cut in big chunks.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S16",
+  "s": 391.45,
+  "e": 396.03,
+  "id": "c51",
+  "d": 4.58,
+  "T": 5,
+  "text": "Tuck them in around the meat, down in the liquid. Lid back on. One more hour.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S17",
+  "s": 396.03,
+  "e": 398.31,
+  "id": "c52",
+  "d": 2.28,
+  "T": 3,
+  "text": "One more hour. You're almost there.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S18",
+  "s": 398.31,
+  "e": 408.43,
+  "id": "c53",
+  "d": 10.12,
+  "T": 11,
+  "text": "Step seven. Three hours. Take it out. Now test it. Push a fork into a chunk of meat and twist it. If it falls apart with no pull at all, it's done. If it resists,",
+  "pad": 0.88
+ },
+ {
+  "sc": "S18",
+  "s": 408.43,
+  "e": 419.11,
+  "id": "c54",
+  "d": 10.68,
+  "T": 11,
+  "text": "if you have to tug, it's not done yet. Put the lid back on and give it twenty more minutes. Then test again. Some cuts take three hours, some take three and a half. Tough means not done.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S19",
+  "s": 419.11,
+  "e": 430.432,
+  "id": "c55",
+  "d": 11.322,
+  "T": 12,
+  "text": "Look at that. Dark and shiny. The meat is falling apart into big tender pieces. The potatoes and carrots soaked up all that sauce. And the sauce is thick and dark and rich from the gelatin.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S20",
+  "s": 430.432,
+  "e": 440.812,
+  "id": "c56",
+  "d": 10.38,
+  "T": 11,
+  "text": "If the sauce is too thin for you, lift out the meat and the vegetables with a slotted spoon, put the pot on the stove, and boil the sauce for ten minutes until it thickens. Taste it for salt.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S21",
+  "s": 440.812,
+  "e": 442.292,
+  "id": "c57",
+  "d": 1.48,
+  "T": 2,
+  "text": "Rusty. Come here.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S22",
+  "s": 442.292,
+  "e": 445.672,
+  "id": "c58",
+  "d": 3.38,
+  "T": 4,
+  "text": "He's using the tortilla as a spoon. That's the right way.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S23",
+  "s": 445.672,
+  "e": 452.892,
+  "id": "c59",
+  "d": 7.22,
+  "T": 8,
+  "text": "I put every one of these recipes in a book, the way we really made them. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S24",
+  "s": 452.892,
+  "e": 462.709,
+  "id": "c60",
+  "d": 9.817,
+  "T": 10,
+  "text": "It's tough and stringy. It's not done. I can't say it enough. Tough means not done. Give it more time. Or your oven was too hot. Three hundred. Not three-fifty.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S24",
+  "s": 462.709,
+  "e": 472.929,
+  "id": "c61",
+  "d": 10.22,
+  "T": 11,
+  "text": "It tastes gray and boiled. You skipped the browning, or you crowded the pot when you browned it. The brown crust is the flavor. Two batches. The sauce is watery. Too much liquid.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S24",
+  "s": 472.929,
+  "e": 480.749,
+  "id": "c62",
+  "d": 7.82,
+  "T": 8,
+  "text": "Halfway up the meat. Or boil it down at the end. The potatoes and carrots are mush. You put them in at the start. They go in for the last hour only.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S24",
+  "s": 480.749,
+  "e": 489.391,
+  "id": "c63",
+  "d": 8.642,
+  "T": 9,
+  "text": "The meat is dry. That's hard to do with a chuck roast. But it happens with a very lean cut, like a bottom round. Use chuck or shank. They have the fat and collagen.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S25",
+  "s": 489.391,
+  "e": 499.051,
+  "id": "c64",
+  "d": 9.66,
+  "T": 10,
+  "text": "At the store. Here's what to ask for. A chuck roast. Look for one with plenty of white fat and gristle running through it. That's what you want for this. The prettiest,",
+  "pad": 0.34
+ },
+ {
+  "sc": "S25",
+  "s": 499.051,
+  "e": 509.331,
+  "id": "c65",
+  "d": 10.28,
+  "T": 11,
+  "text": "leanest roast in the case is the worst one for braising. Beef shank, cross-cut, with the bone. Oxtail, if you can find it, but it's not cheap anymore. Short ribs.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S25",
+  "s": 509.331,
+  "e": 520.061,
+  "id": "c66",
+  "d": 10.73,
+  "T": 11,
+  "text": "Beef cheeks, if you have a good butcher. All of these work. Chuck runs about seven dollars a pound, and shanks around four and a half, a lot cheaper than steaks at fifteen. And ask the butcher what they've got.",
+  "pad": 0.27
+ },
+ {
+  "sc": "S25",
+  "s": 520.061,
+  "e": 526.681,
+  "id": "c67",
+  "d": 6.62,
+  "T": 7,
+  "text": "Ask if they have any shanks or necks in the back. A lot of times they do, and they'll sell them cheap because nobody asks.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S26",
+  "s": 526.681,
+  "e": 536.581,
+  "id": "c68",
+  "d": 9.9,
+  "T": 11,
+  "text": "Storing. Four days in the fridge. And it's actually better the next day. The flavors settle in. Freeze it with the sauce, meat and gravy together, in two-portion bags.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S26",
+  "s": 536.581,
+  "e": 541.981,
+  "id": "c69",
+  "d": 5.4,
+  "T": 6,
+  "text": "Three months. When you thaw it, warm it in a pot with a splash of water until it's bubbling.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S27",
+  "s": 541.981,
+  "e": 552.049,
+  "id": "c70",
+  "d": 10.068,
+  "T": 11,
+  "text": "And the second supper. Shred the leftover meat with two forks. Warm it in a skillet with a few spoons of the sauce until it's sizzling and a little crispy on the edges. Warm tortillas.",
+  "pad": 0.93
+ },
+ {
+  "sc": "S27",
+  "s": 552.049,
+  "e": 563.089,
+  "id": "c71",
+  "d": 11.04,
+  "T": 12,
+  "text": "Meat in, chopped raw onion, cilantro, a squeeze of lime. That's what the crew took for lunch the next day. Or put it on a roll with some of the sauce for dipping. Or fold it into an omelet in the morning.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S28",
+  "s": 563.089,
+  "e": 573.789,
+  "id": "c72",
+  "d": 10.7,
+  "T": 11,
+  "text": "What it costs. Three pounds of chuck roast at about seven dollars a pound, twenty-one dollars. A bottle of dark beer, two dollars. An onion, two chiles, garlic, vinegar,",
+  "pad": 0.3
+ },
+ {
+  "sc": "S28",
+  "s": 573.789,
+  "e": 583.629,
+  "id": "c73",
+  "d": 9.84,
+  "T": 10,
+  "text": "lard, about two-sixty. A pound of potatoes and three carrots, two dollars. That's about twenty-seven dollars and sixty cents for a pot that feeds six people with leftovers.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S28",
+  "s": 583.629,
+  "e": 595.059,
+  "id": "c74",
+  "d": 11.43,
+  "T": 12,
+  "text": "Four dollars and sixty cents a plate. Use beef shank, and it comes down to about three dollars a plate. Three dollars. For something that tastes like you spent all day. Because you did, but the oven did the work.",
+  "pad": 0.57
+ },
+ {
+  "sc": "S29",
+  "s": 595.059,
+  "e": 605.159,
+  "id": "c75",
+  "d": 10.1,
+  "T": 11,
+  "text": "For a crowd. Twenty people. Ten pounds of chuck, in two roasting pans or two big Dutch ovens. Brown it in batches. That takes a while, but don't skip it.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S29",
+  "s": 605.159,
+  "e": 610.979,
+  "id": "c76",
+  "d": 5.82,
+  "T": 6,
+  "text": "Add about thirty minutes to the oven time. That's how I fed the crew for the end-of-season supper. Everybody's favorite.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S30",
+  "s": 610.979,
+  "e": 621.685,
+  "id": "c77",
+  "d": 10.706,
+  "T": 11,
+  "text": "For two. Make the whole pot. Seriously. It's the same amount of work. Eat it tonight, and freeze the rest in two-portion bags. That's three more suppers for two, already done.",
+  "pad": 0.29
+ },
+ {
+  "sc": "S31",
+  "s": 621.685,
+  "e": 631.205,
+  "id": "c78",
+  "d": 9.52,
+  "T": 10,
+  "text": "Outside. This is the original way. A Dutch oven, the kind with legs, nestled into a bed of coals, with more coals on the lid. You want it about three hundred, gentle.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S31",
+  "s": 631.205,
+  "e": 641.625,
+  "id": "c79",
+  "d": 10.42,
+  "T": 11,
+  "text": "Check the coals every hour and add fresh ones from the fire. Three hours, same as the oven. On a cattle drive, a cook would put this on in the afternoon and dig it out of the coals at sundown.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S32",
+  "s": 641.625,
+  "e": 651.831,
+  "id": "c80",
+  "d": 10.206,
+  "T": 11,
+  "text": "A couple of questions. Can I use a slow cooker? Yes. Brown the meat first in a skillet. That part is not optional. Then everything into the slow cooker, on low, eight hours.",
+  "pad": 0.79
+ },
+ {
+  "sc": "S32",
+  "s": 651.831,
+  "e": 662.011,
+  "id": "c81",
+  "d": 10.18,
+  "T": 11,
+  "text": "Add the potatoes and carrots for the last two hours. What about a pressure cooker? It works and it's fast, about an hour. It's good. But I think the slow oven makes a richer sauce.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S32",
+  "s": 662.011,
+  "e": 673.091,
+  "id": "c82",
+  "d": 11.08,
+  "T": 12,
+  "text": "Can I use red wine instead of beer? Yes. One and a half cups of dry red wine. It's more like a French pot roast. Also good. Why ancho chiles? They're mild, a little sweet,",
+  "pad": 0.92
+ },
+ {
+  "sc": "S32",
+  "s": 673.091,
+  "e": 679.111,
+  "id": "c83",
+  "d": 6.02,
+  "T": 7,
+  "text": "like raisins. They make the sauce dark and rich. If you can't find them, use two tablespoons of chili powder.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S33",
+  "s": 679.111,
+  "e": 688.777,
+  "id": "c84",
+  "d": 9.666,
+  "T": 10,
+  "text": "One more thing before you serve it. Look at the top of the sauce. There's a layer of orange fat floating there. That's from the chuck. Some of it is flavor, and some of it is too much.",
+  "pad": 0.33
+ },
+ {
+  "sc": "S33",
+  "s": 688.777,
+  "e": 696.417,
+  "id": "c85",
+  "d": 7.64,
+  "T": 8,
+  "text": "Tip the pot a little so the fat runs to one side, and spoon most of it off. Leave a little. If you make it the day before, this is even easier.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S33",
+  "s": 696.417,
+  "e": 707.417,
+  "id": "c86",
+  "d": 11.0,
+  "T": 12,
+  "text": "Put the whole pot in the fridge overnight, and in the morning the fat is a hard white cap on top. Lift it off in one piece. Don't throw it away. That's beef fat. Fry your potatoes in it tomorrow.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S34",
+  "s": 707.417,
+  "e": 718.372,
+  "id": "c87",
+  "d": 10.955,
+  "T": 12,
+  "text": "Now, can you overcook it? People ask me this. Yes, you can, but it's hard. If you leave it in for five or six hours, the meat fibers start to dry out and the pieces turn to little dry strings.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S34",
+  "s": 718.372,
+  "e": 726.912,
+  "id": "c88",
+  "d": 8.54,
+  "T": 9,
+  "text": "The collagen is all melted and gone, and there's nothing left holding the juice. So it's a window. Three hours, three and a half for a big shank.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S34",
+  "s": 726.912,
+  "e": 731.992,
+  "id": "c89",
+  "d": 5.08,
+  "T": 6,
+  "text": "Test with the fork. When it falls apart, take it out. Don't leave it in the oven while you go to town.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S35",
+  "s": 731.992,
+  "e": 742.432,
+  "id": "c90",
+  "d": 10.44,
+  "T": 11,
+  "text": "And a safety thing, because a big pot of meat is a big pot of meat. When supper's over, don't leave the pot sitting on the stove all night to cool. Get the leftovers in the fridge within two hours.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S35",
+  "s": 742.432,
+  "e": 753.044,
+  "id": "c91",
+  "d": 10.612,
+  "T": 11,
+  "text": "A big heavy pot holds its heat a long time, and that warm middle is where bacteria grow. So split it up into a few shallow containers. It cools fast that way. Then it's good for four days.",
+  "pad": 0.39
+ },
+ {
+  "sc": "S35",
+  "s": 753.044,
+  "e": 759.644,
+  "id": "c92",
+  "d": 6.6,
+  "T": 7,
+  "text": "And when you warm it up the next day, get it bubbling hot all the way through, a hundred and sixty-five degrees, not just warm.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S36",
+  "s": 759.644,
+  "e": 770.504,
+  "id": "c93",
+  "d": 10.86,
+  "T": 12,
+  "text": "I'll tell you about Don Ernesto and the bones. When I was young, maybe nineteen, I threw a pile of shank bones in the trash after supper. He saw them and he didn't say anything. He just took them out of the trash,",
+  "pad": 1.14
+ },
+ {
+  "sc": "S36",
+  "s": 770.504,
+  "e": 780.639,
+  "id": "c94",
+  "d": 10.135,
+  "T": 11,
+  "text": "rinsed them off, and put them in a pot of water with an onion. Next morning, there was soup. He looked at me and he said, \"Mijo, on this ranch, the cow is the only one that gets to throw anything away.\"",
+  "pad": 0.87
+ },
+ {
+  "sc": "S36",
+  "s": 780.639,
+  "e": 789.839,
+  "id": "c95",
+  "d": 9.2,
+  "T": 10,
+  "text": "I never threw a bone away again. If you cook shanks, save the bones. Put them in a pot with water, an onion, a carrot, and let it barely bubble for three or four hours.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S36",
+  "s": 789.839,
+  "e": 794.279,
+  "id": "c96",
+  "d": 4.44,
+  "T": 5,
+  "text": "That's broth. And next time you make this, you use that broth instead of buying it.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S37",
+  "s": 794.279,
+  "e": 804.559,
+  "id": "c97",
+  "d": 10.28,
+  "T": 11,
+  "text": "Let me walk you through the cuts one more time, because the meat case is confusing. Chuck roast. The best all-around cut for this. Marbled, cheap, easy to find in every store in America.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S37",
+  "s": 804.559,
+  "e": 814.379,
+  "id": "c98",
+  "d": 9.82,
+  "T": 10,
+  "text": "Chuck eye, the same, a little more tender. Beef shank, the cross-cut slices with the round bone. The cheapest, and the most gelatin. Short ribs, with the bone,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S37",
+  "s": 814.379,
+  "e": 826.139,
+  "id": "c99",
+  "d": 11.76,
+  "T": 12,
+  "text": "rich and fatty, a little more money. Oxtail, the richest of all, but it went from cheap to expensive over the years. Beef cheeks. If you ever see them, buy them. They're the most tender of all when they're braised.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S37",
+  "s": 826.139,
+  "e": 836.539,
+  "id": "c100",
+  "d": 10.4,
+  "T": 11,
+  "text": "And brisket, the point end, the fatty part. All of these, the same recipe. Same oven, same lid. What doesn't work as well? Eye of round, bottom round, top round.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S37",
+  "s": 836.539,
+  "e": 845.059,
+  "id": "c101",
+  "d": 8.52,
+  "T": 9,
+  "text": "They're lean and cheap, so people buy them for this, but they don't have the collagen and fat. They come out dry no matter what you do. Save those for slicing thin.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S38",
+  "s": 845.059,
+  "e": 856.044,
+  "id": "c102",
+  "d": 10.985,
+  "T": 12,
+  "text": "What to serve it with. On the ranch, it was always tortillas and a pot of beans, because that's what we had. But on Sundays, mashed potatoes. You leave the potatoes out of the pot, make mashed potatoes on the side,",
+  "pad": 1.02
+ },
+ {
+  "sc": "S38",
+  "s": 856.044,
+  "e": 863.824,
+  "id": "c103",
+  "d": 7.78,
+  "T": 8,
+  "text": "and pour that dark sauce right over the top. Or a pan of biscuits to wipe the plate. Or rice. Or egg noodles, the wide ones, with butter.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S38",
+  "s": 863.824,
+  "e": 869.544,
+  "id": "c104",
+  "d": 5.72,
+  "T": 6,
+  "text": "Some sliced raw onion and pickled jalapeños on the side, because the sharp and the sour cut through the richness.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S39",
+  "s": 869.544,
+  "e": 880.366,
+  "id": "c105",
+  "d": 10.822,
+  "T": 11,
+  "text": "A few ways to change it. Use a cup of strong black coffee instead of half the beer. It sounds strange, but it makes the sauce deep and dark. That's an old chuck-wagon trick. Coffee was always on the fire.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S39",
+  "s": 880.366,
+  "e": 886.826,
+  "id": "c106",
+  "d": 6.46,
+  "T": 7,
+  "text": "Or add one chipotle pepper in adobo, out of the little can, chopped. That makes it smoky and a little spicy.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S39",
+  "s": 886.826,
+  "e": 893.946,
+  "id": "c107",
+  "d": 7.12,
+  "T": 8,
+  "text": "Or the peel of one orange, in a long strip, and a stick of cinnamon. Take them out at the end. My wife made it that way at Christmas.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S40",
+  "s": 893.946,
+  "e": 904.766,
+  "id": "c108",
+  "d": 10.82,
+  "T": 11,
+  "text": "A trick that makes a big difference, if you think ahead. Salt the meat the night before. Cut it in big pieces, salt all over, about a teaspoon of kosher salt for every pound, and put it on a plate in the fridge,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S40",
+  "s": 904.766,
+  "e": 914.564,
+  "id": "c109",
+  "d": 9.798,
+  "T": 10,
+  "text": "uncovered. Overnight, the salt goes deep into the meat. It seasons it all the way through, not just the outside, and it helps the meat hold on to its juice in the long cook.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S40",
+  "s": 914.564,
+  "e": 920.084,
+  "id": "c110",
+  "d": 5.52,
+  "T": 6,
+  "text": "The next day, pat it dry and brown it. If you salt it the night before, skip the salt in step one.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S40",
+  "s": 920.084,
+  "e": 926.504,
+  "id": "c111",
+  "d": 6.42,
+  "T": 7,
+  "text": "If you didn't, salt it right before you brown it. Still good. But try it once the night before, and taste the difference.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S41",
+  "s": 926.504,
+  "e": 936.604,
+  "id": "c112",
+  "d": 10.1,
+  "T": 11,
+  "text": "Some cooks dust the meat with flour before they brown it. A little flour, shake off the extra. The flour browns, and later it thickens the sauce a little, so it coats the meat like gravy.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S41",
+  "s": 936.604,
+  "e": 942.975,
+  "id": "c113",
+  "d": 6.371,
+  "T": 7,
+  "text": "Don Ernesto never did it. My wife always did. Both ways are good. If you like a thicker sauce, use the flour.",
+  "pad": 0.63
+ },
+ {
+  "sc": "S41",
+  "s": 942.975,
+  "e": 949.855,
+  "id": "c114",
+  "d": 6.88,
+  "T": 8,
+  "text": "If you like it thinner, so you can soak it up with a tortilla, leave it out. Just don't use too much, or it sticks and burns in the pan.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S42",
+  "s": 949.855,
+  "e": 960.355,
+  "id": "c115",
+  "d": 10.5,
+  "T": 11,
+  "text": "And check the liquid. At the two-hour mark, when you lift the lid for the first time, look. The liquid should come about halfway up the meat. If it's gotten low, add a little hot water or broth.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S42",
+  "s": 960.355,
+  "e": 969.395,
+  "id": "c116",
+  "d": 9.04,
+  "T": 10,
+  "text": "If the meat sits dry for hours, the top of it gets dry and stringy. You don't need to stir it. You don't need to turn it. Just check the liquid, put the lid back, and walk away.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S43",
+  "s": 969.395,
+  "e": 979.152,
+  "id": "c117",
+  "d": 9.757,
+  "T": 10,
+  "text": "And this is important. If you check it at two hours and it's still tough, don't take it off. People think it's tough because it's overcooked, and they stop. It's the opposite.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S43",
+  "s": 979.152,
+  "e": 989.932,
+  "id": "c118",
+  "d": 10.78,
+  "T": 11,
+  "text": "It's tough because it's not done yet. The collagen hasn't melted. Tough meat in a low oven means more time. Give it another thirty minutes, and another thirty. One day it'll be three hours,",
+  "pad": 0.22
+ },
+ {
+  "sc": "S43",
+  "s": 989.932,
+  "e": 996.912,
+  "id": "c119",
+  "d": 6.98,
+  "T": 8,
+  "text": "one day four. The meat tells you when. The fork goes in, and it twists, and it comes apart. Then it's ready.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S44",
+  "s": 996.912,
+  "e": 1002.034,
+  "id": "c120",
+  "d": 5.122,
+  "T": 6,
+  "text": "Now, about the book. This crew book is forty years of feeding men on the cheap cuts.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S44",
+  "s": 1002.034,
+  "e": 1009.374,
+  "id": "c121",
+  "d": 7.34,
+  "T": 8,
+  "text": "A few years ago I put all of it, every recipe, the way we really made them, into a real book. The Vaquero's Cookbook.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S45",
+  "s": 1009.374,
+  "e": 1021.174,
+  "id": "c122",
+  "d": 11.8,
+  "T": 12,
+  "text": "This beef is on page twenty. The browning, the beer, the halfway rule, the lid you don't lift, and how to do it for two or for twenty. And the pork chops, the beans, the ribs, the potatoes, the steak, the cabbage,",
+  "pad": 0.2
+ },
+ {
+  "sc": "S45",
+  "s": 1021.174,
+  "e": 1031.814,
+  "id": "c123",
+  "d": 10.64,
+  "T": 11,
+  "text": "the chicken and the green beans. All of it. It's twenty-seven dollars. Every recipe from the ranch for less than one family dinner out. And if you cook this one just twice instead of buying steaks,",
+  "pad": 0.36
+ },
+ {
+  "sc": "S45",
+  "s": 1031.814,
+  "e": 1037.108,
+  "id": "c124",
+  "d": 5.294,
+  "T": 6,
+  "text": "the book has paid for itself. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.71
+ },
+ {
+  "sc": "S46",
+  "s": 1037.108,
+  "e": 1045.788,
+  "id": "c125",
+  "d": 8.68,
+  "T": 9,
+  "text": "That's it. Brown it hard. Beer and vinegar. Halfway up. Three hundred degrees. And a lid you don't lift for two hours. Tough means not done.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S46",
+  "s": 1045.788,
+  "e": 1056.108,
+  "id": "c126",
+  "d": 10.32,
+  "T": 11,
+  "text": "Next time, the last one in this set, and the one I've cooked more than anything else. Forty years of ranch breakfasts. Never a drop of oil. Eggs. Ándale, mijo. See you then.",
+  "pad": 0.68
+ }
+]
