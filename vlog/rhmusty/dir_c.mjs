@@ -14,7 +14,7 @@ export const SHOTS = [
   B(51, "candles, incense", "b_incense", `A stick of incense burning on a small dish, a thin line of smoke rising.`, "the smoke curls upward; nothing else moves"),
   R(51, "I understand it, believe me", "r_understand", `She sits at a kitchen table in ${KIT} with her hands folded, nodding at the camera with a warm, understanding smile.`),
   C(51, "a cover up doesn't kill anything", "RhDoDont", { yes: { label: "Find the source", img: I("b_dampspot") }, no: { label: "Cover it up", img: I("b_candles") } }),
-  C(51, "the damp spot keeps growing", "RhWetMap", { title: "STILL GROWING" }),
+  C(51, "the damp spot keeps growing", "RhHygrometer", { bed: I("b_dampspot"), from: 62, to: 78, stamp: "STILL GROWING" }),
   // el frasco de sal
   A(52, "I see the one going around", { kick: { txt: "THE SALT JAR", hand: true } }),
   B(52, "salt, alcohol and fabric softener in a jar", "b_saltjar", `A small glass jar filled with coarse salt and a little blue liquid, sitting on a bathroom shelf.`, "the light shifts slowly; nothing else moves"),
