@@ -54,3 +54,30 @@ export const RhPromise: React.FC<{ img: string; items: string[]; result?: string
     </AbsoluteFill>
   );
 };
+
+// RÓTULO (kicker) sobre la toma, en su palabra: chip que entra con resorte y sale con movimiento (vara cltoilet). hand = letra de Rhonda
+export const RhKicker: React.FC<{ txt: string; side?: "l" | "r"; red?: boolean; hand?: boolean }> = ({ txt, side = "l", red, hand }) => {
+  const f = useCurrentFrame(); const { fps, durationInFrames: d } = useVideoConfig();
+  const u = pop(f, fps, 0, 13), o = lin(f, d - 8, d);
+  const pos: React.CSSProperties = side === "l" ? { left: 110 } : { right: 110 };
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <div style={{ position: "absolute", ...pos, bottom: 130, opacity: Math.min(1, u * 1.4) * (1 - o), transform: `translateX(${(side === "l" ? -1 : 1) * ((1 - u) * 80 + o * 120)}px) rotate(${side === "l" ? -2 : 2}deg)` }}>
+        <div style={{ background: red ? RH.red : RH.white, color: red ? "#fff" : RH.ink, fontFamily: hand ? HAND : LABEL, fontWeight: 700, fontSize: hand ? 66 : 54, letterSpacing: hand ? 0 : 3, padding: hand ? "4px 28px" : "8px 26px", borderRadius: 10, boxShadow: `0 14px 30px ${RH.shadow}`, textTransform: hand ? "none" : "uppercase", whiteSpace: "nowrap", borderLeft: red ? undefined : `10px solid ${RH.yellow}` }}>{txt}</div>
+      </div>
+    </AbsoluteFill>
+  );
+};
+// PALABRA CLAVE: una palabra grande en su sílaba, golpe de escala y se va
+export const RhPop: React.FC<{ txt: string }> = ({ txt }) => {
+  const f = useCurrentFrame(); const { fps, durationInFrames: d } = useVideoConfig();
+  const u = pop(f, fps, 0, 9), o = lin(f, d - 5, d);
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 640, textAlign: "center", opacity: Math.min(1, u * 2) * (1 - o), transform: `scale(${1.35 - 0.35 * u + 0.04 * f / Math.max(1, d)})` }}>
+        <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 170, color: "#fff", textShadow: "0 8px 40px rgba(0,0,0,0.7), 0 2px 6px rgba(0,0,0,0.6)" }}>{txt}</span>
+        <div style={{ margin: "0 auto", marginTop: -4, width: 220 * Math.min(1, Math.max(0, (f - 3) / 7)), height: 10, borderRadius: 6, background: RH.yellow }} />
+      </div>
+    </AbsoluteFill>
+  );
+};

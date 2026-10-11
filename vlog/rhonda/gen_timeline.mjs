@@ -4,7 +4,6 @@
 // SLUG=x node vlog/rhonda/gen_timeline.mjs [--final]     (--final = falla si falta avatar, un asset o queda un repuesto)
 import fs from "node:fs"; import { execFileSync } from "node:child_process";
 import { R, SLUG, V3, J } from "./env.mjs";
-import { design } from "./sound.mjs";
 const PUB = R + "public/", FPS = 30, F = (s) => Math.round(s * FPS), FINAL = process.argv.includes("--final");
 const { END, shots, vl } = J(V3 + "shots.json");
 const avwin = fs.existsSync(V3 + "avwin.json") ? J(V3 + "avwin.json").win : [];
@@ -25,7 +24,8 @@ const beds = (fs.existsSync(R + `vlog/${SLUG}/beds.json`) ? J(R + `vlog/${SLUG}/
 let bi = 0;
 shots.forEach((s, i) => {
   const f0 = F(s.start), f1 = i + 1 < shots.length ? F(shots[i + 1].start) : TOTAL;
-  const c = { k: s.kind, from: f0, dur: Math.max(1, f1 - f0), seed: (f0 * 2654435761) >>> 0, name: s.name || undefined, rev: s.rev || undefined };
+  const c = { k: s.kind, from: f0, dur: Math.max(1, f1 - f0), seed: (f0 * 2654435761) >>> 0, name: s.name || undefined, rev: s.rev || undefined,
+    z: s.z, o: s.o, tin: s.tin, beats: s.beats, cofs: s.cofs ? F(s.cofs) : undefined };
   if (s.kind === "av") avCue(c, s);
   else if (s.kind === "vl") {
     const p = `vid/${SLUG}/${s.name}.mp4`;
@@ -53,10 +53,14 @@ shots.forEach((s, i) => {
   }
   if (c.k === "img") lastBed = c.clip && c.real ? c.img || lastBed : c.img || lastBed;
   if (s.ov) ovs.push({ from: f0, dur: s.ov.dur ? F(s.ov.dur) : c.dur, name: s.ov.c, props: s.ov.props });
+  if (s.kick) ovs.push({ from: f0 + 4, dur: Math.min(F(2.4), c.dur + F(1.2)), name: "RhKicker", props: { side: (f0 >> 3) % 2 ? "r" : "l", ...s.kick } });
+  for (const pp of s.pops || []) ovs.push({ from: f0 + F(pp.t), dur: F(1.0), name: "RhPop", props: { txt: pp.txt } });
   cues.push(c);
 });
-// ── sonido: biblioteca sfx_pro (vlog/rhonda/sound.mjs) — ambiente por escena + foley de lo que se ve + diseño de componentes
-const snd = design(cues, shots, PUB); sfx.push(...snd.sfx); const AMBL = snd.amb; warn.push(...snd.warn);
+// ── sonido (regla 9-oct): SÓLO voz + el audio REAL de los clips agnes 2.5-flash (kf, vid/<slug>/) en su cuadro exacto, bajo.
+// Nada de ambientes, foley ni sfx_pro. mix.py lee CLIPAUD.
+const AMBL = [], CLIPAUD = [];
+for (const c of cues) if (c.k === "img" && c.clip && /^vid\//.test(c.clip)) { const of = c.cofs || 0, d = Math.min(c.dur, c.clipF - of); if (d > 6) CLIPAUD.push({ src: c.clip, from: c.from, dur: d, off: of }); }
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }
 fs.mkdirSync(R + `src/${SLUG}`, { recursive: true });
@@ -68,6 +72,7 @@ export const OV: any[] = ${JSON.stringify(ovs)};
 export const SFX: any[] = ${JSON.stringify(sfx)};
 export const FOLEY: any[] = ${JSON.stringify(foley)};
 export const AMB: any[] = ${JSON.stringify(AMBL)};
+export const CLIPAUD: any[] = ${JSON.stringify(CLIPAUD)};
 `);
 // cues para la compuerta de repetición de agnes_qc (los vl partidos son UNA toma continua)
 const qc = [], vlSpan = {};
@@ -85,7 +90,7 @@ const faltan = [...refs].filter((r) => !ex(r));
 fs.writeFileSync(R + `_${SLUG}_assets.txt`, [...refs].filter((r) => ex(r)).join("\n") + "\n");
 console.log("assets al tar:", refs.size - faltan.length, faltan.length ? `· ⛔ FALTAN ${faltan.length}: ${faltan.slice(0, 8).join(" ")}` : "");
 const cnt = {}; for (const c of cues) cnt[c.k] = (cnt[c.k] || 0) + 1;
-console.log("cues", cues.length, JSON.stringify(cnt), "· overlays", ovs.length, "· sfx", sfx.length, "· foley", foley.length, "· frames", TOTAL, "· avatar", AV_READY ? "LISTO" : "placeholder", "· camas de stock", bi, "/", beds.length);
+console.log("cues", cues.length, JSON.stringify(cnt), "· overlays", ovs.length, "· sfx", sfx.length, "· foley", foley.length, "· audio de clips", CLIPAUD.length, "· frames", TOTAL, "· avatar", AV_READY ? "LISTO" : "placeholder", "· camas de stock", bi, "/", beds.length);
 if (fallback.length) console.log("⚠️ repuestos:", fallback.length, fallback.slice(0, 14).join(" "));
 if (warn.length) console.log("⚠️", warn.length, "avisos:", warn.slice(0, 10).join(" · "));
 const stockF = cues.filter((c) => c.real).reduce((a, c) => a + Math.min(c.dur, c.clipF), 0), bedF = cues.filter((c) => c.bedReal).reduce((a, c) => a + c.dur, 0);

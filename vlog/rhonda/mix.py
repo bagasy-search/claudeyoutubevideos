@@ -1,5 +1,5 @@
 # Mezcla FINAL del canal Rhonda (determinista; el audio de los chunks del farm no se usa). SLUG=x R=<worktree> python vlog/rhonda/mix.py
-# Buses: VOZ (máster mono→estéreo, manda) · AMBIENTE (sfx_pro/amb por escena, en loop, fundidos 0,6 s, ~24 dB bajo la voz, ducking suave)
+# (rhgrout 10-oct) Buses: VOZ + AUDIO REAL DE CLIPS. Lo de abajo es histórico. · AMBIENTE (sfx_pro/amb por escena, en loop, fundidos 0,6 s, ~24 dB bajo la voz, ducking suave)
 #        · FOLEY + DISEÑO (sfx_pro, en los cuadros exactos del timeline, ducking -7 dB mientras habla Rhonda; los golpes no tapan palabras).
 # Sin música (canal EN). Minuto 1 sin aire muerto: las pausas de la voz se rellenan subiendo el ambiente.
 # Máster: -14 LUFS integrados, limitador, true peak ≤ -1 dBTP (se mide y se corrige). → out/<slug>_mix.wav 48 kHz estéreo + out/<slug>_mix.json
@@ -44,34 +44,27 @@ for i in range(1, n): sm[i] = sm[i - 1] + (a_up if act[i] > sm[i - 1] else a_dn)
 ACT = np.interp(np.arange(N), np.arange(n) * hop + hop / 2, sm).astype(np.float32)[:, None]
 VI, _ = lufs(V)
 
-# ── AMBIENTE
-amb = np.zeros((N, 2), np.float32); cache = {}
-for a in AMB:
-    if a["src"] not in cache: cache[a["src"]] = load(a["src"])
-    src = cache[a["src"]]; i0 = int(a["from"] / FPS * SR); L = int(a["dur"] / FPS * SR) + int(0.6 * SR)
-    off = int((a["from"] * 7919) % max(1, len(src) - 1))  # cada tramo arranca en otro punto del loop
-    seg = np.concatenate([src[off:]] + [src] * (L // max(1, len(src)) + 2))[:L].copy()
-    seg = fade(seg, int(0.6 * SR)); e = min(N, i0 + L); amb[i0:e] += seg[: e - i0]
-AI, _ = lufs(amb + 1e-7)
-amb *= 10 ** (((VI - 24) - AI) / 20)              # ambiente ~24 dB por debajo de la voz
-amb *= (1 - 0.35 * ACT)                           # ducking suave
-# minuto 1: pausas de la voz ≥0,18 s → el ambiente sube (nunca aire muerto)
-n1 = int(62 * SR); quiet = (ACT[:n1, 0] < 0.08)
-boost = np.convolve(quiet.astype(np.float32), np.ones(int(0.12 * SR)) / int(0.12 * SR), mode="same")
-amb[:n1] *= (1 + 2.2 * boost)[:, None]
-
-# ── FOLEY + DISEÑO
+# ── AUDIO REAL DE LOS CLIPS (regla 9-oct): el sonido nativo de cada clip agnes 2.5-flash (spray, cepillo, espuma, chorro) en su
+# cuadro exacto, -22 dB bajo la voz en los huecos y ~-26 dB mientras habla (ducking). Sin ambientes, sin foley, sin sfx_pro, sin música.
+CA = grab("CLIPAUD"); assert not SFX and not AMB, "⛔ hay SFX/AMB en el timeline: la regla es voz + audio de clips"
 fx = np.zeros((N, 2), np.float32); cache = {}
-for s in SFX:
-    if s["src"] not in cache: cache[s["src"]] = load(s["src"])
-    x = cache[s["src"]][: int(s["dur"] / FPS * SR)].copy(); x = fade(x, int(0.012 * SR))
-    if len(x) > int(0.3 * SR):  # cola: fundido de salida más largo
-        k = min(len(x) // 3, int(0.25 * SR)); x[-k:] *= np.linspace(1, 0, k, dtype=np.float32)[:, None]
-    i0 = int(s["from"] / FPS * SR); e = min(N, i0 + len(x))
-    if e > i0: fx[i0:e] += x[: e - i0] * s["vol"]
-fx *= (1 - 0.55 * ACT)                            # -7 dB mientras habla: los efectos van DEBAJO de la voz
+def load_clip(f):
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", R + "public/" + f, "-vn", "-ac", "2", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True).stdout
+    return np.frombuffer(raw, np.float32).reshape(-1, 2).copy()
+nca = 0
+for c in CA:
+    if c["src"] not in cache: cache[c["src"]] = load_clip(c["src"])
+    src = cache[c["src"]]; o = int(c["off"] / FPS * SR); x = src[o: o + int(c["dur"] / FPS * SR)].copy()
+    if len(x) < int(0.1 * SR): continue
+    x = fade(x, int(0.05 * SR)); i0 = int(c["from"] / FPS * SR); e = min(N, i0 + len(x)); fx[i0:e] += x[: e - i0]; nca += 1
+if nca:
+    FI, _ = lufs(fx + 1e-7)
+    # lufs integra sobre todo el largo (con silencio): se compensa por la fracción con sonido
+    frac = max(1e-3, float((np.abs(fx).max(1) > 1e-5).mean())); FI_act = FI - 10 * np.log10(frac)
+    fx *= 10 ** (((VI - 22) - FI_act) / 20)
+fx *= (1 - 0.37 * ACT)                            # ducking: ~-4 dB más mientras habla (≈ -26 dB bajo la voz)
 
-mix = V + amb + fx
+mix = V + fx
 I0, _ = lufs(mix)
 mix *= 10 ** ((-14 - I0) / 20)
 res = {}; LIM = 0.81
@@ -85,6 +78,6 @@ for it in range(6):  # limitador (true peak ≤ -1 dBTP): alimiter a ~-1,8 dBFS,
     if TP > -1.0: LIM *= 0.95
     mix *= 10 ** ((-14 - I) / 20)
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-c:a", "pcm_s24le", R + f"out/{S}_mix.wav"], input=lim.astype(np.float32).tobytes(), check=True)
-res.update({"voz_LUFS": round(VI, 2), "sfx": len(SFX), "ambientes": len(AMB), "dur": round(N / SR, 2)})
+res.update({"voz_LUFS": round(VI, 2), "clips_con_audio": nca, "sfx": len(SFX), "ambientes": len(AMB), "dur": round(N / SR, 2)})
 json.dump(res, open(R + f"out/{S}_mix.json", "w"), indent=1)
 print("mezcla:", res)

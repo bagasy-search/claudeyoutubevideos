@@ -26,6 +26,10 @@ const exCnt = new Set(shots.map((s) => s.name));
 console.log("stock a buscar:", want.length, "· claves pexels", PEX.length, "· claves agnes", KS.length, "· modelo", MODEL);
 let ki = 0, pk = 0;
 const USEDF = SH + "_used.json"; const used = fs.existsSync(USEDF) ? JSON.parse(fs.readFileSync(USEDF, "utf8")) : {};
+// dedup contra los videos anteriores del canal (mismo id de Pexels / mismo md5 = prohibido repetir)
+const WT = path.dirname(R.replace(/\/$/, ""));
+for (const d of fs.readdirSync(WT).filter((d) => /^rh/.test(d) && d !== SLUG)) { const f = `${WT}/${d}/_v3/${d}_stock/_used.json`; if (fs.existsSync(f)) for (const [k, v] of Object.entries(JSON.parse(fs.readFileSync(f, "utf8")))) used[k] ||= { ...v, prev: d }; }
+console.log("ids pexels ya usados en el canal:", Object.keys(used).length);
 const crypto = await import("node:crypto");
 const md5 = (f) => crypto.createHash("md5").update(fs.readFileSync(f)).digest("hex");
 const hashes = new Set(Object.values(used).map((u) => u.h).filter(Boolean));
