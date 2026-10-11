@@ -1,5 +1,50 @@
 [
  {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 442,
+  "dur": 157,
+  "t": 14.73,
+  "props": {
+   "dish": "Frijoles de olla",
+   "lines": [
+    "Sin remojar nada",
+    "En la mitad del tiempo"
+   ],
+   "at": [
+    2.93,
+    4.21
+   ],
+   "bed": "vid/ccfrijoles/bed_menu.mp4#166"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 605,
+  "dur": 204,
+  "t": 20.18,
+  "props": {
+   "photo": "img/ccfrijoles/joven.jpg",
+   "caption": "con mi amá, en la fonda · 1984",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.36,
+    2.6
+   ],
+   "bed": "vid/ccfrijoles/bed_joven.mp4#208"
+  }
+ },
+ {
   "c": "ClBeanCut",
   "k": "corte",
   "from": 6575,
