@@ -1,0 +1,2067 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 6.58,
+"k": "",
+"c": "DropOpen",
+"props": {
+"k": "n_pot",
+"words": [
+[
+"Every",
+0.0
+],
+[
+"grandchild",
+0.48
+],
+[
+"who",
+1.22
+],
+[
+"walks",
+1.4
+],
+[
+"through",
+1.7
+],
+[
+"my",
+1.92
+],
+[
+"door",
+2.16
+],
+[
+"says",
+2.4
+],
+[
+"the",
+2.7
+],
+[
+"same",
+2.94
+],
+[
+"thing,",
+3.2
+],
+[
+"honey.",
+3.86
+],
+[
+"\"Grandma,",
+4.22
+],
+[
+"it",
+5.02
+],
+[
+"smells",
+5.22
+],
+[
+"like",
+5.5
+],
+[
+"Sunday",
+5.82
+],
+[
+"dinner",
+6.2
+]
+],
+"ripple": 4.22
+}
+},
+{
+"a": 6.58,
+"b": 14.107,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 14.107,
+"b": 19.397,
+"k": "s002_n_cinnamon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 19.397,
+"b": 27.807,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clsunday/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"The",
+21.05
+],
+[
+"Forbidden",
+21.35
+],
+[
+"Carpet",
+21.6
+],
+[
+"Cleaning",
+21.85
+],
+[
+"Trick",
+22.1
+]
+],
+"k": "n_coffee"
+}
+},
+{
+"a": 27.807,
+"b": 35.507,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 35.507,
+"b": 42.783,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_sink",
+"vid": true,
+"cap": "1950 \u00b7 a kitchen window over the sink",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 42.783,
+"b": 50.027,
+"k": "s006_n_trash",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 50.027,
+"b": 55.587,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 55.587,
+"b": 62.893,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 62.893,
+"b": 67.52,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Grandma, what died in here?"
+],
+"sig": "Danny, last winter",
+"k": "n_front_door",
+"size": 84
+}
+},
+{
+"a": 67.52,
+"b": 75.06,
+"k": "s010_l_door",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 75.06,
+"b": 81.904,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 81.904,
+"b": 86.247,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 86.247,
+"b": 95.973,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page49",
+"tab": "PAGE 49",
+"t": 92.95,
+"hl": 14
+}
+],
+"k": "n_coffee"
+}
+},
+{
+"a": 95.973,
+"b": 103.933,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE KIT \u00b7 PAGE 49",
+"page": "PAGE 49",
+"items": [
+{
+"t": 115.14,
+"txt": "Orange peel"
+},
+{
+"t": 98.2,
+"txt": "A cinnamon stick"
+},
+{
+"t": 99.8,
+"txt": "A few cloves and vanilla"
+},
+{
+"t": 113.52,
+"txt": "Baking soda or coffee grounds"
+}
+],
+"k": "n_cinnamon"
+}
+},
+{
+"a": 103.933,
+"b": 110.98,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 110.98,
+"b": 117.96,
+"k": "s016_l_alone",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 117.96,
+"b": 128.577,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 128.577,
+"b": 140.767,
+"k": "",
+"c": "Shelf",
+"props": {
+"head": "UNDER MY SINK \u00b7 PAGE 4",
+"items": [
+{
+"t": 138.65,
+"name": "White vinegar",
+"use": "hard water, glass, laundry",
+"k": "n_towels_vinegar"
+},
+{
+"t": 139.97,
+"name": "Baking soda",
+"use": "a gentle scrub, a smell-eater",
+"k": "n_roomsoda"
+},
+{
+"t": 143.52,
+"name": "Hydrogen peroxide",
+"use": "keep it in the brown bottle",
+"k": "n_seal_mold"
+},
+{
+"t": 157.32,
+"name": "Rags and a squeegee",
+"use": "and an old toothbrush",
+"k": "n_washer_ring"
+}
+],
+"k": "n_towels_vinegar"
+}
+},
+{
+"a": 140.767,
+"b": 148.0,
+"k": "s019_n_towel_pile",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 148.0,
+"b": 155.22,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 155.22,
+"b": 162.923,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 162.923,
+"b": 170.507,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dining_hall_1950s",
+"vid": true,
+"cap": "1950s \u00b7 a dining hall, the tables set",
+"credit": "Hotel and Restaurant Workers (archive.org) \u00b7 Public domain"
+}
+},
+{
+"a": 170.507,
+"b": 178.053,
+"k": "s023_n_dinner_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 178.053,
+"b": 185.913,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 185.913,
+"b": 190.033,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_kettles_1950s",
+"vid": true,
+"cap": "1950s \u00b7 a big church kitchen",
+"credit": "Hotel and Restaurant Workers (archive.org) \u00b7 Public domain"
+}
+},
+{
+"a": 190.033,
+"b": 197.853,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_churchhall",
+"caption": "Bernice \u00b7 never rub",
+"date": "Zion \u00b7 the 1970s",
+"t": 190.0
+}
+},
+{
+"a": 197.853,
+"b": 202.573,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 202.573,
+"b": 209.973,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 209.973,
+"b": 217.067,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_stove_pots",
+"vid": true,
+"cap": "1950 \u00b7 a kitchen stove with pots",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 217.067,
+"b": 226.647,
+"k": "s030_l_sniff",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 226.647,
+"b": 245.0,
+"k": "",
+"c": "NeverMix",
+"props": {
+"rows": [
+{
+"t": 232.17,
+"a": "BLEACH",
+"b": [
+"VINEGAR",
+"AMMONIA"
+]
+},
+{
+"t": 238.32,
+"a": "HYDROGEN PEROXIDE",
+"b": [
+"VINEGAR"
+]
+}
+],
+"gas": [
+235.29,
+"HARMFUL GASES"
+],
+"k": "page3"
+}
+},
+{
+"a": 245.0,
+"b": 251.933,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 251.933,
+"b": 258.187,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 258.187,
+"b": 265.057,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "1",
+"title": "THE SIMMER POT",
+"sub": "PAGE 49",
+"label": "TRICK",
+"k": "n_pot"
+}
+},
+{
+"a": 265.057,
+"b": 271.993,
+"k": "s035_l_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 271.993,
+"b": 279.553,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 279.553,
+"b": 285.973,
+"k": "s037_n_backburner",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 285.973,
+"b": 292.907,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_window",
+"vid": true,
+"cap": "1950 \u00b7 a kitchen with a window",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 292.907,
+"b": 298.767,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 298.767,
+"b": 304.943,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 304.943,
+"b": 312.9,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page49",
+"tab": "PAGE 49",
+"t": 306.4,
+"hl": 12
+}
+],
+"k": "n_coffee"
+}
+},
+{
+"a": 312.9,
+"b": 320.143,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 320.143,
+"b": 323.963,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 323.963,
+"b": 330.0,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "2",
+"title": "FRESH AIR, EVEN IN WINTER",
+"sub": "PAGE 49",
+"label": "TRICK",
+"k": "n_window_open"
+}
+},
+{
+"a": 330.0,
+"b": 337.053,
+"k": "s045_l_windows",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 337.053,
+"b": 343.973,
+"k": "s046_n_breeze",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 343.973,
+"b": 351.687,
+"k": "s047_l_breeze",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 351.687,
+"b": 358.02,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "3",
+"title": "A BOWL OF BAKING SODA",
+"sub": "PAGE 49",
+"label": "TRICK",
+"k": "n_roomsoda"
+}
+},
+{
+"a": 358.02,
+"b": 364.96,
+"k": "s049_l_roomsoda",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 364.96,
+"b": 371.56,
+"k": "s050_n_windowsill_bowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 371.56,
+"b": 378.04,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 378.04,
+"b": 384.81,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_living_room_1951",
+"vid": true,
+"cap": "1951 \u00b7 a living room at home",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 384.81,
+"b": 391.74,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "4",
+"title": "THE TRASH AND THE DISPOSAL",
+"sub": "PAGE 49",
+"label": "TRICK",
+"k": "n_disposal"
+}
+},
+{
+"a": 391.74,
+"b": 399.153,
+"k": "s054_l_trash",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 399.153,
+"b": 406.06,
+"k": "s055_n_disposal",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 406.06,
+"b": 412.927,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_mixer",
+"vid": true,
+"cap": "1951 \u00b7 a kitchen with a mixer",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 412.927,
+"b": 418.98,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "5",
+"title": "THE FRIDGE SHELVES",
+"sub": "PAGE 23",
+"label": "TRICK",
+"k": "n_fridge_open"
+}
+},
+{
+"a": 418.98,
+"b": 426.147,
+"k": "s058_l_shelves",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 426.147,
+"b": 431.907,
+"k": "s059_n_glass_shelf",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 431.907,
+"b": 438.947,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_fridge_open",
+"vid": true,
+"cap": "1957 \u00b7 an open refrigerator",
+"credit": "Frigidaire Finale (1957) \u00b7 Public domain"
+}
+},
+{
+"a": 438.947,
+"b": 445.087,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "6",
+"title": "THE DOOR SEAL",
+"sub": "PAGE 23",
+"label": "TRICK",
+"k": "n_seal_mold"
+}
+},
+{
+"a": 445.087,
+"b": 451.907,
+"k": "s062_l_seal",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 451.907,
+"b": 457.953,
+"k": "s063_n_brown_bottle",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 457.953,
+"b": 463.123,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 463.123,
+"b": 469.213,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "7",
+"title": "THE RANGE HOOD FILTER",
+"sub": "PAGE 24",
+"label": "TRICK",
+"k": "n_hood"
+}
+},
+{
+"a": 469.213,
+"b": 476.013,
+"k": "s066_l_hood",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 476.013,
+"b": 482.793,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 482.793,
+"b": 491.12,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_cooking_girls",
+"vid": true,
+"cap": "1951 \u00b7 girls cooking in aprons",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 491.12,
+"b": 497.06,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "8",
+"title": "TOWELS, VINEGAR, NO DETERGENT",
+"sub": "PAGE 30",
+"label": "TRICK",
+"k": "n_towels_vinegar"
+}
+},
+{
+"a": 497.06,
+"b": 504.04,
+"k": "s070_l_towels",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 504.04,
+"b": 510.68,
+"k": "s071_n_vinegar_jug",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 510.68,
+"b": 519.293,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 519.293,
+"b": 526.12,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "9",
+"title": "TOWELS, BAKING SODA, DRY FAST",
+"sub": "PAGE 30",
+"label": "TRICK",
+"k": "n_towels_vinegar"
+}
+},
+{
+"a": 526.12,
+"b": 532.88,
+"k": "s074_n_towels_line",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 532.88,
+"b": 539.82,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_talk_woman",
+"vid": true,
+"cap": "1950 \u00b7 a woman talking in her kitchen",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 539.82,
+"b": 547.907,
+"k": "s076_l_clothesline",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 547.907,
+"b": 555.773,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 555.773,
+"b": 560.94,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "10",
+"title": "THE WASHER GASKET",
+"sub": "PAGE 32",
+"label": "TRICK",
+"k": "n_washer_ring"
+}
+},
+{
+"a": 560.94,
+"b": 568.113,
+"k": "s079_l_washer",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 568.113,
+"b": 573.88,
+"k": "s080_n_washer_gasket2",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 573.88,
+"b": 578.8,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 578.8,
+"b": 584.933,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "11",
+"title": "THE DRYER LINT SCREEN",
+"sub": "PAGE 38",
+"label": "TRICK",
+"k": "n_lint_screen"
+}
+},
+{
+"a": 584.933,
+"b": 592.1,
+"k": "s083_l_lintscreen",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 592.1,
+"b": 598.013,
+"k": "s084_n_lint_screen",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 598.013,
+"b": 604.343,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 604.343,
+"b": 609.873,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "12",
+"title": "THE CARPET THAT SMELLS",
+"sub": "PAGE 41",
+"label": "TRICK",
+"k": "n_carpet_soda"
+}
+},
+{
+"a": 609.873,
+"b": 616.887,
+"k": "s087_l_carpet",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 616.887,
+"b": 623.92,
+"k": "s088_n_carpet_soda",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 623.92,
+"b": 631.16,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_vacuum_living",
+"vid": true,
+"cap": "1950 \u00b7 vacuuming a living room",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 631.16,
+"b": 637.546,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 637.546,
+"b": 647.323,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_bedroom_carpet",
+"vid": true,
+"cap": "1950s \u00b7 a bedroom carpet",
+"credit": "The Carpet That's Miles Above (1950s film) \u00b7 Public domain"
+}
+},
+{
+"a": 647.323,
+"b": 655.107,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/clsunday/qr.jpg",
+"t": 650.64
+}
+},
+{
+"a": 655.107,
+"b": 663.083,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 663.083,
+"b": 669.06,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "13",
+"title": "THE TOILET",
+"sub": "PAGE 9",
+"label": "TRICK",
+"k": "n_toilet_base"
+}
+},
+{
+"a": 669.06,
+"b": 675.9,
+"k": "s095_l_mirror",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 675.9,
+"b": 682.813,
+"k": "s096_n_mirror_floor",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 682.813,
+"b": 691.433,
+"k": "s097_n_toilet_seat",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 691.433,
+"b": 696.913,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "14",
+"title": "THE SINK AND THE SLOW DRAIN",
+"sub": "PAGE 14",
+"label": "TRICK",
+"k": "n_drain_catcher"
+}
+},
+{
+"a": 696.913,
+"b": 704.033,
+"k": "s099_l_kettle",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 704.033,
+"b": 710.687,
+"k": "s100_n_hanger",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 710.687,
+"b": 717.92,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 717.92,
+"b": 729.13,
+"k": "s102_n_drain_catcher",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 729.13,
+"b": 734.73,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "15",
+"title": "FIND THE SOURCE",
+"sub": "PAGE 49",
+"label": "TRICK",
+"k": "n_source"
+}
+},
+{
+"a": 734.73,
+"b": 741.953,
+"k": "s104_l_dogbed",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 741.953,
+"b": 751.573,
+"k": "s105_n_source",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 751.573,
+"b": 761.953,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_kettle",
+"txt": "Never leave the stove on when you leave the room",
+"tag": "BE CAREFUL \u00b7 PAGE 49"
+}
+},
+{
+"a": 761.953,
+"b": 769.587,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 769.587,
+"b": 778.72,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "BE CAREFUL",
+"items": [
+{
+"t": 771.5,
+"txt": "Boiling water: careful"
+},
+{
+"t": 774.0,
+"txt": "Pets out of the carpet room"
+},
+{
+"t": 776.5,
+"txt": "Never leave towels wet"
+}
+],
+"k": "n_hood"
+}
+},
+{
+"a": 778.72,
+"b": 787.917,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_trash",
+"txt": "Covering a smell: it is still there",
+"cx": 55,
+"cy": 50
+}
+},
+{
+"a": 787.917,
+"b": 794.893,
+"k": "s110_l_hallway",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 794.893,
+"b": 800.513,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 800.513,
+"b": 816.12,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE FIFTEEN, IN ORDER",
+"items": [
+{
+"t": 804.75,
+"txt": "1 \u00b7 The simmer pot"
+},
+{
+"t": 805.93,
+"txt": "2 \u00b7 Two windows, ten minutes"
+},
+{
+"t": 808.31,
+"txt": "3 \u00b7 A bowl of baking soda"
+},
+{
+"t": 811.61,
+"txt": "4 \u00b7 The trash and the disposal"
+}
+],
+"k": "n_pot"
+}
+},
+{
+"a": 816.12,
+"b": 825.927,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE FIFTEEN, IN ORDER",
+"items": [
+{
+"t": 816.0,
+"txt": "5 \u00b7 Fridge shelves"
+},
+{
+"t": 818.0,
+"txt": "6 \u00b7 The door seal"
+},
+{
+"t": 820.0,
+"txt": "7 \u00b7 The range hood filter"
+},
+{
+"t": 822.0,
+"txt": "8 and 9 \u00b7 The towels"
+}
+],
+"k": "n_pot"
+}
+},
+{
+"a": 825.927,
+"b": 831.597,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 831.597,
+"b": 838.23,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 838.23,
+"b": 844.993,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_coffee",
+"caption": "Bernice \u00b7 a clean house tells the truth",
+"date": "Zion \u00b7 fellowship hall",
+"t": 838.0
+}
+},
+{
+"a": 844.993,
+"b": 852.29,
+"k": "s117_l_hallway",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 852.29,
+"b": 862.04,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "What does your house smell like on Sunday?",
+"opts": [
+{
+"txt": "Roast",
+"t": 857.26
+},
+{
+"txt": "Cinnamon",
+"t": 859.26
+},
+{
+"txt": "Coffee",
+"t": 861.26
+}
+],
+"k": "n_cinnamon"
+}
+},
+{
+"a": 862.04,
+"b": 870.093,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 870.093,
+"b": 878.43,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 878.43,
+"b": 890.19,
+"k": "s121_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 890.19,
+"b": 903.903,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clsunday/th_other.jpg",
+"tag": "FROM MY OTHER CHANNEL",
+"words": [
+[
+"The",
+895.89
+],
+[
+"Church",
+896.19
+],
+[
+"Basement",
+896.44
+],
+[
+"Hotdish",
+896.69
+]
+],
+"k": "n_coffee"
+}
+},
+{
+"a": 903.903,
+"b": 910.877,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clsunday/th_a.jpg",
+"tag": "EARLIER ON THIS CHANNEL",
+"words": [
+[
+"The",
+908.96
+],
+[
+"Best",
+909.26
+],
+[
+"Way",
+909.51
+],
+[
+"to",
+909.76
+],
+[
+"Clean",
+910.01
+],
+[
+"Your",
+910.26
+],
+[
+"Shower",
+910.51
+]
+],
+"k": "n_coffee"
+}
+},
+{
+"a": 910.877,
+"b": 917.904,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clsunday/th_b.jpg",
+"tag": "EARLIER ON THIS CHANNEL",
+"words": [
+[
+"The",
+912.95
+],
+[
+"Best",
+913.2
+],
+[
+"Way",
+913.45
+],
+[
+"to",
+917.02
+],
+[
+"Clean",
+917.32
+],
+[
+"Stainless",
+917.57
+],
+[
+"Steel",
+917.82
+]
+],
+"k": "n_coffee"
+}
+},
+{
+"a": 917.904,
+"b": 926.107,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page49",
+"tab": "PAGE 49",
+"t": 920.0
+}
+],
+"k": "n_coffee"
+}
+},
+{
+"a": 926.107,
+"b": 934.87,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+19.4,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+62.89,
+"design/pen_write",
+0.3
+],
+[
+86.25,
+"design/page_turn_big",
+0.4
+],
+[
+95.97,
+"design/paper_slide",
+0.3
+],
+[
+98.35,
+"design/pencil_strokes",
+0.22
+],
+[
+99.95,
+"design/pencil_strokes",
+0.22
+],
+[
+113.67,
+"design/pencil_strokes",
+0.22
+],
+[
+128.58,
+"design/whoosh_air",
+0.25
+],
+[
+190.03,
+"design/camera_shutter",
+0.25
+],
+[
+226.65,
+"design/impact_drum_subtle",
+0.45
+],
+[
+258.19,
+"design/impact_drum_subtle",
+0.45
+],
+[
+304.94,
+"design/page_turn_big",
+0.4
+],
+[
+323.96,
+"design/impact_drum_subtle",
+0.45
+],
+[
+351.69,
+"design/impact_drum_subtle",
+0.45
+],
+[
+384.81,
+"design/impact_drum_subtle",
+0.45
+],
+[
+412.93,
+"design/impact_drum_subtle",
+0.45
+],
+[
+438.95,
+"design/impact_drum_subtle",
+0.45
+],
+[
+463.12,
+"design/impact_drum_subtle",
+0.45
+],
+[
+491.12,
+"design/impact_drum_subtle",
+0.45
+],
+[
+519.29,
+"design/impact_drum_subtle",
+0.45
+],
+[
+555.77,
+"design/impact_drum_subtle",
+0.45
+],
+[
+578.8,
+"design/impact_drum_subtle",
+0.45
+],
+[
+604.34,
+"design/impact_drum_subtle",
+0.45
+],
+[
+647.32,
+"design/click_slide",
+0.3
+],
+[
+663.08,
+"design/impact_drum_subtle",
+0.45
+],
+[
+691.43,
+"design/impact_drum_subtle",
+0.45
+],
+[
+729.13,
+"design/impact_drum_subtle",
+0.45
+],
+[
+751.57,
+"design/stamp_traditional",
+0.35
+],
+[
+769.59,
+"design/paper_slide",
+0.3
+],
+[
+774.15,
+"design/pencil_strokes",
+0.22
+],
+[
+776.65,
+"design/pencil_strokes",
+0.22
+],
+[
+778.72,
+"design/stamp_rubber",
+0.5
+],
+[
+779.02,
+"design/pencil_strokes",
+0.3
+],
+[
+800.51,
+"design/paper_slide",
+0.3
+],
+[
+806.08,
+"design/pencil_strokes",
+0.22
+],
+[
+808.46,
+"design/pencil_strokes",
+0.22
+],
+[
+811.76,
+"design/pencil_strokes",
+0.22
+],
+[
+816.12,
+"design/paper_slide",
+0.3
+],
+[
+818.15,
+"design/pencil_strokes",
+0.22
+],
+[
+820.15,
+"design/pencil_strokes",
+0.22
+],
+[
+822.15,
+"design/pencil_strokes",
+0.22
+],
+[
+838.23,
+"design/camera_shutter",
+0.25
+],
+[
+852.29,
+"design/click_slide",
+0.25
+],
+[
+890.19,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+903.9,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+910.88,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+917.9,
+"design/page_turn_big",
+0.4
+]
+],
+"end": 934.87
+}
