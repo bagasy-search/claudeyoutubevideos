@@ -225,7 +225,7 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
   );
 };
 
-export const NEW: Record<string, React.FC<any>> = { Opening, DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
+export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
 
 // ── APERTURA (regla de 10 s, MEGAPROMPT 5b): 0-0,6 s la miniatura EXACTA, luego se funde al clip de agnes que arranca en la misma imagen
 export const Opening: P<{}> = ({ a, d }) => {
@@ -242,3 +242,5 @@ export const Opening: P<{}> = ({ a, d }) => {
     </AbsoluteFill>
   );
 };
+
+NEW.Opening = Opening;
