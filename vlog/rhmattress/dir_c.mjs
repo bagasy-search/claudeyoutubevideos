@@ -59,7 +59,7 @@ export const SHOTS = [
   A(75, "put a good protector on it and keep sleeping on it"),
   B(75, "A stain under a protector doesn't hurt anybody", "b_protectorbed", `A white mattress protector stretched smoothly over a mattress on a wooden bed, morning light.`, "the light shifts slowly; nothing else moves"),
   B(75, "when it's truly worn out", "b_mattstore", `A row of new mattresses on display in a bright mattress store.`, "the light shifts slowly; nothing else moves"),
-  C(76, "a mattress cleaning visit runs about a hundred and fifty dollars", "RhQuoteStamp", { bed: I("b_halfwide"), price: "$150", stamp: "ONLY IF DEEP", instead: "a yellow top layer: do it yourself" }),
+  C(76, "a mattress cleaning visit runs about a hundred and fifty dollars", "RhQuoteStamp", { bed: I("b_halfwide"), price: "$150", job: "Mattress cleaning visit", lines: ["Hot water extractor", "About 1 hour", "Dries for a day"], stamp: "ONLY IF DEEP", instead: "a yellow top layer: do it yourself" }),
   // ── lo de 20 dólares (loop 3)
   C(77, "", "RhChapter", { n: 14, title: "The $20 thing", sub: "so you never do this again" }),
   A(78, "A washable mattress protector", { kick: { txt: "$20 PROTECTOR", hand: true } }),

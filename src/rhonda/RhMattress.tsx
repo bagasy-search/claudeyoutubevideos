@@ -74,7 +74,7 @@ export const RhMattress3D: React.FC<{ mode?: "layers" | "soak" | "mist"; bed?: s
       {rows.map((r, i) => { const p = proj(3.0, r.y, 1.7), u = lin(f, 6 + i * 6, 16 + i * 6);
         return (<div key={i} style={{ position: "absolute", left: p.x + 30, top: p.y, translate: `${(1 - u) * 40}px -50%`, opacity: u, display: "flex", alignItems: "center", gap: 14 }}>
           <div style={{ width: 60, height: 4, background: RH.ink }} />
-          <div style={{ background: r.on ? RH.blueDeep : RH.white, color: r.on ? "#fff" : RH.ink, fontFamily: LABEL, fontWeight: 700, fontSize: 42, padding: "6px 20px", borderRadius: 10, whiteSpace: "nowrap", boxShadow: `0 10px 22px ${RH.shadow}` }}>{r.t}</div>
+          <div style={{ background: r.on ? RH.blueDeep : RH.white, color: r.on ? "#fff" : RH.ink, fontFamily: LABEL, fontWeight: 700, fontSize: 42, lineHeight: 1.12, padding: "6px 20px", borderRadius: 10, maxWidth: Math.max(300, width - (p.x + 30) - 60 - 74), boxShadow: `0 10px 22px ${RH.shadow}` }}>{r.t}</div>
         </div>); })}
       {mode === "soak" ? <Chip txt={labels.ring || "Soaked: the ring gets bigger"} bg={RH.red} style={{ left: 110, top: 90, opacity: lin(f, T * 0.45, T * 0.55) }} /> : null}
       {mode === "mist" ? <Chip txt={labels.ring || "Damp, top layer only"} bg={RH.blue} style={{ left: 110, top: 90, opacity: lin(f, T * 0.3, T * 0.4) }} /> : null}

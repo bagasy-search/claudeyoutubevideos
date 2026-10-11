@@ -129,7 +129,7 @@ export const RhGroutJoint3D: React.FC<{ mode?: JMode; labels?: JLabels; bed?: st
 };
 
 // ── el presupuesto en el piso, en perspectiva, con sombra; marcador rojo + sello + la caja de bicarbonato
-export const RhQuoteStamp: React.FC<{ bed?: string; price?: string; job?: string; stamp?: string; instead?: string }> = ({ bed, price = "$1,200", job = "Grind out & regrout · kitchen", stamp = "NOT NEEDED", instead = "1 box of baking soda" }) => {
+export const RhQuoteStamp: React.FC<{ bed?: string; price?: string; job?: string; lines?: string[]; stamp?: string; instead?: string }> = ({ bed, price = "$1,200", job = "Grind out & regrout · kitchen", lines = ["Labor · 2 days", "Remove old grout", "New grout + sealer"], stamp = "NOT NEEDED", instead = "1 box of baking soda" }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames: T } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2, 14), strike = lin(f, T * 0.32, T * 0.32 + 10), st = Math.round(T * 0.48), note = pop(f, fps, T * 0.62, 12);
   const z = 1 + 0.07 * f / T, rx = 38 - 6 * f / T;
@@ -142,7 +142,7 @@ export const RhQuoteStamp: React.FC<{ bed?: string; price?: string; job?: string
           <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 6, color: RH.inkSoft }}>ESTIMATE</div>
           <div style={{ height: 3, background: RH.ink, opacity: 0.25, margin: "14px 0 26px" }} />
           <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 50, color: RH.ink }}>{job}</div>
-          {["Labor · 2 days", "Remove old grout", "New grout + sealer"].map((t, i) => <div key={i} style={{ fontFamily: SERIF, fontSize: 38, color: RH.inkSoft, marginTop: 14 }}>{t}</div>)}
+          {lines.map((t, i) => <div key={i} style={{ fontFamily: SERIF, fontSize: 38, color: RH.inkSoft, marginTop: 14 }}>{t}</div>)}
           <div style={{ position: "absolute", right: 60, bottom: 50, fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: RH.ink }}>{price}</div>
           <svg style={{ position: "absolute", right: 30, bottom: 60, overflow: "visible" }} width={460} height={140}>
             <path d="M 0 90 C 140 60, 300 80, 460 40" fill="none" stroke={RH.red} strokeWidth={16} strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - strike} />

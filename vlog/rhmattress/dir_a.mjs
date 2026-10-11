@@ -23,7 +23,7 @@ export const SHOTS = [
   C(2, "let it dry", "RhDryTimer", { hours: "1 to 3 hours", powder: "Then vacuum it up" }),
   K(2, "vacuum it up", "k_vacpowder", `Close view of a vacuum upholstery tool sliding across a white mattress, lifting a thin white powder off the fabric.`, "the vacuum tool rests on the white powder", "the tool slides and the powder disappears", "a vacuum cleaner humming"),
   B(2, "almost all of it is waiting", "b_waiting", `A bare mattress drying in ${ROOM}, a box fan blowing on it and the window open.`, "the curtain moves in the breeze; nothing else moves"),
-  C(2, "And you keep the thousand dollars", "RhQuoteStamp", { bed: I("b_halfwide"), price: "$1,000", stamp: "NOT NEEDED", instead: "a spray bottle and a fan" }),
+  C(2, "And you keep the thousand dollars", "RhQuoteStamp", { bed: I("b_halfwide"), price: "$1,000", job: "New mattress · queen", lines: ["Mattress + box spring", "Delivery", "Haul away the old one"], stamp: "NOT NEEDED", instead: "a spray bottle and a fan" }),
   // ── la ráfaga (con su sonido real)
   K(3, "Strip it", "k_strip", `Close view of hands pulling a white fitted sheet off the corner of a mattress.`, "the hands grip the corner of the sheet", "the sheet pulls off the mattress corner", "a bed sheet being pulled off"),
   K(3, "Vacuum it", "k_vacuum", `Close view of a vacuum upholstery tool moving along the seam of a bare white mattress.`, "the tool sits on the seam", "the tool slides along the seam", "a vacuum cleaner humming"),
@@ -114,5 +114,5 @@ export const SHOTS = [
   A(24, "I had a client in Mansfield", { kick: { txt: "MANSFIELD, OHIO", hand: true } }),
   B(24, "a gray damask cover", "b_damask", `A luxury mattress with a gray damask patterned cover on a bed in a large bedroom.`, "the light shifts slowly; nothing else moves"),
   B(24, "A protector went on", "b_protectoron", `A white mattress protector fitted over a mattress, smooth and tight.`, "the light shifts slowly; nothing else moves"),
-  C(24, "Ten minutes saved her a two thousand dollar mistake", "RhQuoteStamp", { bed: I("b_damask"), price: "$2,000", stamp: "SAVED", instead: "a 10-minute test" }),
+  C(24, "Ten minutes saved her a two thousand dollar mistake", "RhQuoteStamp", { bed: I("b_damask"), price: "$2,000", job: "New mattress · king", lines: ["Pillow-top mattress", "Delivery + setup", "Haul away the old one"], stamp: "SAVED", instead: "a 10-minute test" }),
 ];
