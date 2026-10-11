@@ -1,0 +1,1796 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 3.68,
+"k": "ckyams_apertura",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 3.68,
+"b": 13.17,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 13.17,
+"b": 23.21,
+"k": "s002_l_potatoes_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 23.21,
+"b": 31.533,
+"k": "s003_n_roast_dish_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 31.533,
+"b": 40.16,
+"k": "s004_n_kitchen_window",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 40.16,
+"b": 48.273,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 48.273,
+"b": 55.763,
+"k": "s006_n_boiling_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 55.763,
+"b": 63.733,
+"k": "s007_l_lid_lift",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 63.733,
+"b": 66.583,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 66.583,
+"b": 74.724,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"items": [
+{
+"t": 73.45,
+"txt": "Page forty-seven, every amount"
+},
+{
+"t": 78.34,
+"txt": "The reason behind each step"
+},
+{
+"t": 66.58,
+"txt": "For a crowd, or for one or two"
+}
+],
+"k": "n_cookbook_table"
+}
+},
+{
+"a": 74.724,
+"b": 83.08,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 83.08,
+"b": 92.507,
+"k": "s011_l_apron_stove",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 92.507,
+"b": 100.067,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dining_1950s",
+"vid": true,
+"cap": "1950s · dining room tables set with white cloths",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 100.067,
+"b": 108.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_pie_tins",
+"vid": true,
+"cap": "1950s · pie shells set in baking tins",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 108.0,
+"b": 115.7,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_atkins1",
+"vid": false,
+"cap": "1940s · a housewife preparing dinner in a federal housing kitchen",
+"credit": "U.S. government photograph, federal housing project, 1940s · Public domain"
+}
+},
+{
+"a": 115.7,
+"b": 122.187,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_linen_stacks",
+"vid": true,
+"cap": "1950s · stacks of white linen by the dining room",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 122.187,
+"b": 126.627,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_platter_1951",
+"vid": true,
+"cap": "1951 · a young woman arranges food at the table",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 126.627,
+"b": 134.107,
+"k": "s017_l_basement_dish",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 134.107,
+"b": 141.013,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dough_roll",
+"vid": true,
+"cap": "1950s · a cook rolls dough on a floured board",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 141.013,
+"b": 153.08,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 153.08,
+"b": 162.887,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47",
+"t": 157.31,
+"hl": 47
+}
+],
+"k": "n_cookbook_table"
+}
+},
+{
+"a": 162.887,
+"b": 170.94,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 170.94,
+"b": 182.274,
+"k": "s022_l_read_book",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 182.274,
+"b": 197.096,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT GOES IN",
+"items": [
+{
+"t": 180.91,
+"txt": "4 lb sweet potatoes, about six"
+},
+{
+"t": 178.49,
+"txt": "1/2 cup butter, one stick"
+},
+{
+"t": 190.37,
+"txt": "1 cup packed brown sugar"
+},
+{
+"t": 178.43,
+"txt": "1/4 cup orange juice"
+},
+{
+"t": 178.49,
+"txt": "1 tsp cinnamon, 1/4 tsp nutmeg, 1/2 tsp salt"
+},
+{
+"t": 208.57,
+"txt": "1 tsp vanilla, 1/2 cup pecans (optional)"
+}
+],
+"k": "n_ingredients_flat"
+}
+},
+{
+"a": 197.096,
+"b": 205.033,
+"k": "s024_n_raw_sweet_potatoes",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 205.033,
+"b": 212.727,
+"k": "s025_n_ingredients_flat",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 212.727,
+"b": 220.013,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_class_1951",
+"vid": true,
+"cap": "1951 · a home economics class, Iowa State College",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 220.013,
+"b": 229.087,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"For a crowd: three pans for thirty.",
+"For one or two: a pie plate and a quarter of the syrup."
+],
+"sig": "Loretta",
+"k": "n_church_supper",
+"size": 58
+}
+},
+{
+"a": 229.087,
+"b": 236.993,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 236.993,
+"b": 245.017,
+"k": "s029_l_pie_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 245.017,
+"b": 258.06,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "47",
+"head": "STEP 1 · BAKE IN THE SKIN",
+"steps": [
+{
+"t": 245.99,
+"txt": "Oven to 400°F. Bake whole, skins on, 40 to 45 min",
+"k": "n_foil_pan"
+}
+],
+"bed": "n_foil_pan"
+}
+},
+{
+"a": 258.06,
+"b": 266.12,
+"k": "s031_n_oven_glow",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 266.12,
+"b": 274.113,
+"k": "s032_n_split_potato_steam",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 274.113,
+"b": 280.82,
+"k": "s033_l_oven_knife",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 280.82,
+"b": 289.927,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 289.927,
+"b": 299.307,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Page forty-seven.",
+"The link is right under this video."
+],
+"sig": "Loretta",
+"k": "n_cookbook_table",
+"size": 64
+}
+},
+{
+"a": 299.307,
+"b": 307.12,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_chickens",
+"vid": true,
+"cap": "1952 · hens pecking in the farmyard",
+"credit": "Texas Farm Family (1952) · Public domain"
+}
+},
+{
+"a": 307.12,
+"b": 314.647,
+"k": "s037_n_cooling_potatoes",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 314.647,
+"b": 324.107,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "47",
+"head": "STEP 2 · SLIP AND SLICE",
+"steps": [
+{
+"t": 314.65,
+"txt": "Cool 15 min, slip off skins, cut 1-inch rounds",
+"k": "n_rounds"
+}
+],
+"bed": "n_rounds"
+}
+},
+{
+"a": 324.107,
+"b": 332.7,
+"k": "s039_n_potato_rounds",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 332.7,
+"b": 341.06,
+"k": "s040_l_saucepan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 341.06,
+"b": 349.967,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 375,
+"unit": "°F · 3 MIN",
+"txt": "Lower the oven, then simmer the syrup 3 minutes",
+"k": "n_saucepan"
+}
+},
+{
+"a": 349.967,
+"b": 357.92,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 357.92,
+"b": 366.177,
+"k": "s043_n_syrup_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 366.177,
+"b": 374.867,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "47",
+"head": "STEP 4 · POUR",
+"steps": [
+{
+"t": 367.61,
+"txt": "Syrup over the rounds, spoon it into the gaps",
+"k": "n_pour_syrup"
+}
+],
+"bed": "n_pour_syrup"
+}
+},
+{
+"a": 374.867,
+"b": 382.173,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 382.173,
+"b": 389.703,
+"k": "s046_n_pecans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 389.703,
+"b": 397.94,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "47",
+"head": "STEP 5 · BASTE",
+"steps": [
+{
+"t": 391.19,
+"txt": "30 to 35 min at 375°F, baste every 10 min",
+"k": "n_baste"
+}
+],
+"bed": "n_baste"
+}
+},
+{
+"a": 397.94,
+"b": 405.937,
+"k": "s048_l_baste",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 405.937,
+"b": 414.207,
+"k": "s049_n_baste_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 414.207,
+"b": 420.793,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 420.793,
+"b": 428.92,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Bake the potatoes in their skins.",
+"Do not boil them."
+],
+"sig": "Loretta",
+"k": "n_potatoes_skins",
+"size": 66
+}
+},
+{
+"a": 428.92,
+"b": 436.86,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 436.86,
+"b": 444.98,
+"k": "s053_n_thin_syrup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 444.98,
+"b": 452.053,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kettle_cook",
+"vid": true,
+"cap": "1950s · a commercial kitchen, a cook at the big kettles",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 452.053,
+"b": 457.283,
+"k": "s055_l_grace_kids",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 457.283,
+"b": 465.833,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_watery_plate",
+"txt": "WATERY SYRUP = BOILED POTATOES"
+}
+},
+{
+"a": 465.833,
+"b": 474.033,
+"k": "s057_n_boiling_pot_potatoes",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 474.033,
+"b": 482.053,
+"k": "s058_n_mush",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 482.053,
+"b": 490.707,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 490.707,
+"b": 498.167,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_dry_top",
+"txt": "DRY TOP = NOT BASTED"
+}
+},
+{
+"a": 498.167,
+"b": 506.03,
+"k": "s061_l_spoon_syrup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 506.03,
+"b": 514.227,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 514.227,
+"b": 519.144,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 519.144,
+"b": 527.047,
+"k": "s064_n_corner_piece",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 527.047,
+"b": 535.007,
+"k": "s065_n_corner_dark",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 535.007,
+"b": 546.333,
+"k": "s066_l_harold_photo",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 546.333,
+"b": 556.123,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/ckyams/qr.jpg",
+"t": 550.31
+}
+},
+{
+"a": 556.123,
+"b": 567.917,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 567.917,
+"b": 576.173,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 576.173,
+"b": 586.073,
+"k": "s070_l_kitchen_table_pencil",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 586.073,
+"b": 596.05,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 596.05,
+"b": 606.0,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "KEEPING IT",
+"items": [
+{
+"t": 599.06,
+"txt": "Cover and refrigerate, keeps 4 days"
+},
+{
+"t": 596.05,
+"txt": "Marshmallows last 5 min, if your family insists"
+}
+],
+"k": "n_fridge"
+}
+},
+{
+"a": 606.0,
+"b": 613.813,
+"k": "s073_l_fridge_door",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 613.813,
+"b": 621.733,
+"k": "s074_n_covered_dish_fridge",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 621.733,
+"b": 630.787,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 630.787,
+"b": 640.067,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE WHOLE THING",
+"items": [
+{
+"t": 634.29,
+"txt": "Potatoes in their skins, 400°F"
+},
+{
+"t": 656.15,
+"txt": "Syrup, simmered 3 minutes"
+},
+{
+"t": 630.79,
+"txt": "Over the rounds in a buttered 9x13"
+},
+{
+"t": 634.29,
+"txt": "Basted every 10 minutes until glazed"
+}
+],
+"k": "n_recap_ingredients"
+}
+},
+{
+"a": 640.067,
+"b": 647.94,
+"k": "s077_n_recipe_card",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 647.94,
+"b": 655.867,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Nothing fancy in it at all."
+],
+"sig": "Loretta",
+"k": "n_table_set",
+"size": 72
+}
+},
+{
+"a": 655.867,
+"b": 664.273,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 664.273,
+"b": 672.007,
+"k": "s080_l_recap_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 672.007,
+"b": 679.14,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 679.14,
+"b": 688.107,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47",
+"t": 683.91,
+"hl": 47
+}
+],
+"k": "n_cookbook_table"
+}
+},
+{
+"a": 688.107,
+"b": 696.087,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 696.087,
+"b": 704.07,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 704.07,
+"b": 711.96,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kettle_lid",
+"vid": true,
+"cap": "1950s · a cook lifts the lid of a big kettle",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 711.96,
+"b": 719.847,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 719.847,
+"b": 727.147,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_table_glasses",
+"vid": true,
+"cap": "1950s · a table set with glasses and napkins",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 727.147,
+"b": 735.32,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 735.32,
+"b": 744.053,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_atkins2",
+"vid": false,
+"cap": "1940s · a housewife cooks supper in a government housing kitchen",
+"credit": "U.S. government photograph, federal housing project, 1940s · Public domain"
+}
+},
+{
+"a": 744.053,
+"b": 752.053,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 752.053,
+"b": 759.84,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Stand back from the stove.",
+"Let the pan do its work."
+],
+"sig": "Bernice",
+"k": "n_stove_pot_stir",
+"size": 60
+}
+},
+{
+"a": 759.84,
+"b": 765.95,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 765.95,
+"b": 774.0,
+"k": "s093_n_rest_potatoes",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 774.0,
+"b": 782.02,
+"k": "s094_n_rest_bowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 782.02,
+"b": 789.787,
+"k": "s095_l_rest_dish",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 789.787,
+"b": 799.907,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 799.907,
+"b": 807.88,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"An inch is a good, honest thickness."
+],
+"sig": "Loretta",
+"k": "n_knife_rounds",
+"size": 62
+}
+},
+{
+"a": 807.88,
+"b": 815.86,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 815.86,
+"b": 824.073,
+"k": "s099_n_knife_cut",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 824.073,
+"b": 832.996,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 832.996,
+"b": 840.867,
+"k": "s101_l_saucepan_medium",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 840.867,
+"b": 849.147,
+"k": "s102_n_pot_steam",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 849.147,
+"b": 856.967,
+"k": "s103_n_saucepan_heavy",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 856.967,
+"b": 864.387,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 864.387,
+"b": 869.887,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_roast_carve",
+"vid": true,
+"cap": "1950s · a chef carves a roast in a restaurant kitchen",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 869.887,
+"b": 878.22,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 878.22,
+"b": 885.78,
+"k": "s107_l_harold_coffee",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 885.78,
+"b": 892.94,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 892.94,
+"b": 899.45,
+"k": "s109_n_coffee_percolator",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 899.45,
+"b": 907.053,
+"k": "s110_n_coffee_cup_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 907.053,
+"b": 914.8,
+"k": "s111_n_empty_chair",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 914.8,
+"b": 922.96,
+"k": "s112_l_empty_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 922.96,
+"b": 929.84,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 929.84,
+"b": 938.1,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Cook something, even if it is just for one."
+],
+"sig": "Loretta",
+"k": "n_one_plate",
+"size": 64
+}
+},
+{
+"a": 938.1,
+"b": 948.036,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "FOR ONE OR TWO",
+"items": [
+{
+"t": 939.96,
+"txt": "Two sweet potatoes in a pie plate"
+},
+{
+"t": 946.85,
+"txt": "A quarter of the syrup"
+},
+{
+"t": 948.18,
+"txt": "Same heat, check a few minutes early"
+}
+],
+"k": "n_pie_plate"
+}
+},
+{
+"a": 948.036,
+"b": 955.49,
+"k": "s116_n_plate_one",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 955.49,
+"b": 964.087,
+"k": "s117_n_pie_dish_syrup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 964.087,
+"b": 971.747,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 971.747,
+"b": 981.027,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Next week: Thanksgiving green beans,",
+"no boiling, no can of soup."
+],
+"sig": "Loretta",
+"k": "n_green_beans",
+"size": 58
+}
+},
+{
+"a": 981.027,
+"b": 992.413,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 992.413,
+"b": 1000.25,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckyams/th_other.jpg",
+"tag": "FROM MY OTHER CHANNEL",
+"words": [
+[
+"10",
+992.71
+],
+[
+"Cheap",
+992.76
+],
+[
+"One-Pan",
+992.81
+],
+[
+"Suppers",
+992.86
+],
+[
+"for",
+991.83
+],
+[
+"Seniors",
+991.88
+],
+[
+"Living",
+991.93
+],
+[
+"Alone",
+991.98
+],
+[
+"(The",
+996.67
+],
+[
+"Church",
+1002.07
+],
+[
+"Lady",
+1002.12
+],
+[
+"Way)",
+1023.13
+]
+],
+"k": "n_table_set"
+}
+},
+{
+"a": 1000.25,
+"b": 1007.43,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1007.43,
+"b": 1016.807,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Did your mother bake them, or boil them?",
+"opts": [
+{
+"txt": "Baked",
+"t": 1007.43
+},
+{
+"txt": "Boiled",
+"t": 1007.43
+},
+{
+"txt": "Never tried",
+"t": 1007.43
+}
+],
+"k": "n_window_light"
+}
+},
+{
+"a": 1016.807,
+"b": 1026.816,
+"k": "",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1026.816,
+"b": 1034.013,
+"k": "s125_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 1034.013,
+"b": 1041.14,
+"k": "",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+66.58,
+"design/paper_slide",
+0.25
+],
+[
+153.08,
+"design/page_turn_big",
+0.35
+],
+[
+182.27,
+"design/paper_slide",
+0.25
+],
+[
+220.01,
+"design/pen_write",
+0.25
+],
+[
+245.02,
+"design/paper_slide",
+0.25
+],
+[
+289.93,
+"design/pen_write",
+0.25
+],
+[
+314.65,
+"design/paper_slide",
+0.25
+],
+[
+366.18,
+"design/paper_slide",
+0.25
+],
+[
+389.7,
+"design/paper_slide",
+0.25
+],
+[
+420.79,
+"design/pen_write",
+0.25
+],
+[
+546.33,
+"design/click_slide",
+0.25
+],
+[
+596.05,
+"design/paper_slide",
+0.25
+],
+[
+630.79,
+"design/paper_slide",
+0.25
+],
+[
+647.94,
+"design/pen_write",
+0.25
+],
+[
+679.14,
+"design/page_turn_big",
+0.35
+],
+[
+752.05,
+"design/pen_write",
+0.25
+],
+[
+799.91,
+"design/pen_write",
+0.25
+],
+[
+929.84,
+"design/pen_write",
+0.25
+],
+[
+938.1,
+"design/paper_slide",
+0.25
+],
+[
+971.75,
+"design/pen_write",
+0.25
+],
+[
+1007.43,
+"design/click_slide",
+0.22
+]
+],
+"end": 1041.14
+}
