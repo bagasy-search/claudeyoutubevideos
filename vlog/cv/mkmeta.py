@@ -1,8 +1,11 @@
 # public/<slug>_meta.json para deliver_card: título de la tarjeta + gancho + CTA (página del libro, ?src=<slug>, sin regalo) + capítulos + nota USDA.
-#   SLUG=x python vlog/cv/mkmeta.py "<título>" <página> "<gancho>" "<nota USDA o ''>" < capitulos.txt
+#   SLUG=x python vlog/cv/mkmeta.py "<título>" <página> "<gancho>" "<nota USDA o ''>" "<emoji + CTA de ESTE video>" < capitulos.txt
+# ⛔ renglón 1 = emoji + CTA a medida (lo de este video + 49 recetas más + ancla, SIN precio) + 👉 link (regla 10-oct).
 import sys, json, os
-S = os.environ["SLUG"]; tit, pag, hook, usda = sys.argv[1:5]; ch = sys.stdin.read().strip()
-d = f"""{hook}
+S = os.environ["SLUG"]; tit, pag, hook, usda, cta = sys.argv[1:6]; ch = sys.stdin.read().strip()
+d = f"""{cta} 👉 https://vaquero-cookbook.vercel.app/?src={S}
+
+{hook}
 
 The full recipe, with the trick and the common mistakes, is on page {pag} of The Vaquero's Cookbook. Every recipe from the ranch for less than one family dinner out: https://vaquero-cookbook.vercel.app/?src={S}
 

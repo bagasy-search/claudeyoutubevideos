@@ -1,0 +1,257 @@
+{
+ "S00": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chorro de agua desde una jarra de barro sobre las chauchas en la sartén, vapor"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio junto a la sartén con chauchas verdes brillantes"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio descuelga la sartén"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chauchas frescas en una canasta"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno de la cuadrilla"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio corta las puntas de las chauchas en la tabla"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tocino, cebolla, tomate, ajo sobre la tabla"
+ },
+ "S07": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "tocino friéndose en la sartén"
+ },
+ "S08": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "cebolla en la grasa de tocino"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chauchas entran a la sartén, se revuelven en la grasa"
+ },
+ "S10": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "agua vertida desde la jarra, vapor que sube"
+ },
+ "S11": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa baja sobre la sartén"
+ },
+ "S12": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "huerta de verano por la ventana, plantas de chaucha en cañas"
+ },
+ "S13": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "frascos de vidrio con chauchas, una olla a presión en la estantería"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "la tapa se levanta, chauchas verde brillante"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "tomate y ajo entran a la sartén"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chauchas friéndose, ampolladas, el agua desaparece"
+ },
+ "S17": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio prueba una chaucha con los dedos"
+ },
+ "S18": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chauchas servidas en un plato, tocino, tomate, ampollas doradas"
+ },
+ "S19": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty come chauchas de un plato"
+ },
+ "S20": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty asiente"
+ },
+ "S21": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "mesas largas con manteles, gente afuera de una iglesia de adobe"
+ },
+ "S22": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "plato con muslo en chile rojo, chauchas y tortilla"
+ },
+ "S23": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia las pinzas"
+ },
+ "S24": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en la verdulería, chauchas en un cajón"
+ },
+ "S26": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "bolsa de chauchas congeladas"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "frasco de chauchas en vinagre con ajo y chile"
+ },
+ "S28": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chauchas con chile verde y lima en la sartén"
+ },
+ "S29": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio recorta chauchas el día anterior, recipiente con papel"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chauchas sobrantes en recipiente"
+ },
+ "S31": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chauchas sobrantes con papas y huevo en la sartén"
+ },
+ "S32": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S33": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos sartenes con chauchas lado a lado"
+ },
+ "S34": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "sartén chica con media libra de chauchas"
+ },
+ "S35": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "sartén sobre la parrilla, Claudio con sombrero"
+ },
+ "S36": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga las pinzas"
+ },
+ "S37": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chauchas amarillas, chauchas planas y chauchas verdes en la mesa"
+ },
+ "S38": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "fuente de chauchas en una mesa de Acción de Gracias"
+ },
+ "S39": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "corral de verano, un muchacho joven con sombrero junto a un caballo"
+ },
+ "S40": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sala las chauchas al final y prueba"
+ },
+ "S41": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chauchas grises de lata al lado de chauchas verdes brillantes"
+ },
+ "S42": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana, cuenta"
+ },
+ "S43": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio tira de la hebra de una chaucha vieja"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "chauchas en un bol con agua y hielo, al lado de la olla"
+ },
+ "S45": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio habla a cámara, una chaucha en la mano"
+ },
+ "S46": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "dos niños en la mesa del rancho, uno come chauchas con la mano"
+ },
+ "S47": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chauchas en la sartén, cuchara de madera revolviendo"
+ },
+ "S48": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S49": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 48"
+ },
+ "S50": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, un trozo de carne en papel de carnicero"
+ }
+}
