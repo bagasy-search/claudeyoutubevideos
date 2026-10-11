@@ -16,4 +16,4 @@ const Main: React.FC = () => (
     {(OV as any[]).map((o, i) => { const K = C[o.c]; return <Sequence key={i} from={o.from} durationInFrames={o.dur}><K {...o.props} /></Sequence>; })}
   </AbsoluteFill>
 );
-registerRoot(() => <Composition id="Cvcabbage" component={Main} durationInFrames={TOTAL_FRAMES} fps={30} width={1920} height={1080} />);
+registerRoot(() => <Composition id="Cvcheapmeat" component={Main} durationInFrames={TOTAL_FRAMES} fps={30} width={1920} height={1080} />);
