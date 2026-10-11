@@ -1,0 +1,317 @@
+[
+ {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 547,
+  "dur": 371,
+  "t": 18.22,
+  "props": {
+   "dish": "Arroz rojo y refritos",
+   "lines": [
+    "Arroz rojo",
+    "Frijoles refritos",
+    "Una comida completa"
+   ],
+   "at": [
+    4.49,
+    5.37,
+    10.84
+   ],
+   "bed": "vid/ccarroz/bed_menu.mp4#380"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 924,
+  "dur": 218,
+  "t": 30.81,
+  "props": {
+   "photo": "img/ccarroz/joven.jpg",
+   "caption": "la comida corrida · 1992",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.55,
+    2.95
+   ],
+   "bed": "vid/ccarroz/bed_joven.mp4#222"
+  }
+ },
+ {
+  "c": "ClRiceRatio",
+  "k": "medida",
+  "from": 7113,
+  "dur": -3554,
+  "props": {
+   "bed": "img/ccarroz/bed_medida.jpg",
+   "at": [
+    1.24,
+    2.98,
+    4.76,
+    7.06
+   ]
+  },
+  "t": 237.09
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 7982,
+  "dur": 270,
+  "props": {
+   "title": "Arroz rojo · 6 platos",
+   "rows": [
+    {
+     "k": "Arroz de grano largo",
+     "v": "1½ taza"
+    },
+    {
+     "k": "Aceite",
+     "v": "3 cdas"
+    },
+    {
+     "k": "Jitomate, cebolla, ajo (licuados)",
+     "v": "2 + ¼ + 1"
+    },
+    {
+     "k": "Caldo caliente",
+     "v": "2½ tazas"
+    },
+    {
+     "k": "Zanahoria y chícharos",
+     "v": "1 + ½ taza"
+    },
+    {
+     "k": "Chile serrano entero",
+     "v": "1"
+    },
+    {
+     "k": "Sal",
+     "v": "1 cdita"
+    }
+   ],
+   "mark": "lavado y escurrido",
+   "note": "una sola vuelta",
+   "bed": "vid/ccarroz/bed_1.mp4#274"
+  },
+  "t": 266.06
+ },
+ {
+  "c": "ClTimer30",
+  "k": "ocho",
+  "from": 10161,
+  "dur": 90,
+  "props": {
+   "minutes": 8,
+   "label": "8 min",
+   "text": "hasta que huela a nuez",
+   "bed": "vid/ccarroz/bed_2.mp4#94"
+  },
+  "t": 338.71
+ },
+ {
+  "c": "ClTimer30",
+  "k": "tres",
+  "from": 10882,
+  "dur": 102,
+  "props": {
+   "minutes": 3,
+   "label": "3 min",
+   "text": "freír el jitomate",
+   "bed": "vid/ccarroz/bed_3.mp4#106"
+  },
+  "t": 362.73
+ },
+ {
+  "c": "ClTimer30",
+  "k": "diecio",
+  "from": 12560,
+  "dur": 108,
+  "props": {
+   "minutes": 18,
+   "label": "18 min",
+   "text": "tapado, sin destapar",
+   "fast": true,
+   "bed": "vid/ccarroz/bed_4.mp4#112"
+  },
+  "t": 418.66
+ },
+ {
+  "c": "ClChip",
+  "k": "reposo",
+  "from": 12858,
+  "dur": 120,
+  "props": {
+   "text": "Apagado y tapado · 5 min de reposo",
+   "corner": "tl"
+  },
+  "t": 428.58
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 14110,
+  "dur": 234,
+  "props": {
+   "before": "img/ccarroz/antes.jpg",
+   "after": "img/ccarroz/despues.jpg",
+   "a": "SIN LAS REGLAS",
+   "b": "CON LAS TRES REGLAS",
+   "note": "el mismo arroz"
+  },
+  "t": 470.33
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 14518,
+  "dur": 330,
+  "props": {
+   "title": "El arroz de la fonda",
+   "items": [
+    "Lavar y escurrir",
+    "Freír 8 min, que huela a nuez",
+    "Jitomate licuado, 3 min",
+    "Caldo caliente + verduras, una vuelta",
+    "Tapa, fuego mínimo, 18 min",
+    "5 de reposo, esponjar con tenedor"
+   ],
+   "bed": "vid/ccarroz/bed_7.mp4#334"
+  },
+  "t": 483.92
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "refritos",
+  "from": 15556,
+  "dur": 210,
+  "props": {
+   "title": "Frijoles refritos · 8 platos",
+   "rows": [
+    {
+     "k": "Frijoles de olla",
+     "v": "4 tazas"
+    },
+    {
+     "k": "Su caldo",
+     "v": "1½ taza"
+    },
+    {
+     "k": "Manteca",
+     "v": "4 cdas"
+    },
+    {
+     "k": "Cebolla picada",
+     "v": "¼"
+    },
+    {
+     "k": "Queso fresco",
+     "v": "al final"
+    }
+   ],
+   "mark": "un minuto sin moverlos",
+   "bed": "vid/ccarroz/bed_8.mp4#214"
+  },
+  "t": 518.54
+ },
+ {
+  "c": "ClTimer30",
+  "k": "diez",
+  "from": 17251,
+  "dur": 102,
+  "props": {
+   "minutes": 10,
+   "label": "10 min",
+   "text": "machacando y moviendo",
+   "fast": true,
+   "bed": "vid/ccarroz/bed_9.mp4#106"
+  },
+  "t": 575.02
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 27267,
+  "dur": 1627,
+  "props": {
+   "head": "LA COMIDA CORRIDA",
+   "lines": [
+    [
+     "Arroz rojo, un plato",
+     "US$0.50"
+    ],
+    [
+     "Frijoles refritos",
+     "US$0.40"
+    ],
+    [
+     "Un muslo en salsa",
+     "US$1.00"
+    ],
+    [
+     "Tortillas",
+     "US$0.20"
+    ],
+    [
+     "Agua de jamaica",
+     "US$0.20"
+    ]
+   ],
+   "total": [
+    "El plato completo",
+    "US$2.30"
+   ],
+   "bed": "vid/ccarroz/bed_10.mp4#1631"
+  },
+  "t": 908.91
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 30004,
+  "dur": 180,
+  "props": {
+   "page": "img/ccarroz/page48.jpg",
+   "pageNo": 48,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/ccarroz/bed_11.mp4#184"
+  },
+  "t": 1000.14
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 30514,
+  "dur": 210,
+  "props": {
+   "qr": "img/ccarroz/qr.jpg",
+   "cover": "img/ccarroz/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/ccarroz/bed_12.mp4#214"
+  },
+  "t": 1017.13
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 31071,
+  "dur": 150,
+  "props": {
+   "thumb": "img/ccarroz/th_ccchuletas.jpg",
+   "title": "Chuletas de cerdo jugosas",
+   "next": true,
+   "bed": "vid/ccarroz/bed_13.mp4#154"
+  },
+  "t": 1035.7
+ }
+]
