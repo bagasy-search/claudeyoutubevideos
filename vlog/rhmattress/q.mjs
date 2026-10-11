@@ -8,4 +8,13 @@ export const Q = {
   b_protectorbox: "mattress protector", b_protectoron: "making bed", b_sag: "old mattress", b_sickbed: "sick in bed", b_sleeper: "woman sleeping bed",
   b_sodabox: "baking soda", b_spillprotector: "water drops fabric", b_steamer: "steam cleaner", b_sunbed: "sunlight bedroom", b_twofans: "fans room",
   b_waiting: "waiting clock", b_whitetowel: "white towel", b_yellowpillow: "pillow bed", b_pillowzone: "pillows bed", b_halfwide: "bare mattress",
+  b_fan_night: "fan bedroom night", b_mattstore: "mattress store", b_straw: "hand sprayer bottle", b_steamer: "steam cleaning",
+  k_protectorwash: "washing machine laundry", k_pillowwasher: "pillow washing machine", k_sheeton: "fitted sheet bed", k_sheetoff: "stripping bed sheets",
+  k_vactop: "vacuum mattress", k_vacseam: "vacuum cleaner bed", k_coldcloth: "faucet water cloth", k_tennis: "tennis balls", k_squeezepillow: "fluffing pillow",
+  k_rotate: "moving mattress", k_stripall: "bed sheets removing", k_sprinkleall: "baking soda sprinkle", k_lift: "lifting mattress", k_underbed: "mopping floor bed",
+  b_curb: "old mattress street", b_foampillow: "memory foam pillow", b_emptybottle: "empty bottle", b_calendar: "calendar", b_crib: "baby crib",
+  b_protected: "made bed white", b_protectorbed: "white bed sheets", b_oldmatt: "old mattress", b_dampmatt: "mattress", b_whitetowel: "white towels stack",
+  b_fan_night: "bedroom fan", b_twofans: "electric fan", b_mattstore: "furniture store", b_bleach: "cleaning products", b_foampillow: "pillow",
+  b_soapdrop: "dish soap", k_dab: "wiping fabric cloth", k_wider: "spray bottle cleaning", k_underbed: "mopping floor", k_lift: "making bed",
+  b_sag: "bed", b_emptybottle: "cleaning spray bottle",
 };
