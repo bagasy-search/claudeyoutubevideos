@@ -1,0 +1,83 @@
+[HOOK|golpe] Your house isn't dirty. Something in it is wet.
+[HOOK|linea] Smell that? Clean kitchen, clean floors, fresh sheets, and it still smells like a basement. I lifted the corner of this rug ten seconds ago. That dark spot is the whole smell. Not the floors, not the trash, not you.
+[HOOK|promesa] Six places, five minutes, one flashlight and the brown bottle. Spray it full strength, wait ten minutes, wipe it dry. Musty towels get one cup in a hot wash. And you find the source, instead of buying another candle.
+[HOOK|rafaga] Open the sink cabinet. Lift the rug. Run the drain. Pop the grille off the fridge. Feel the closet wall. Found it.
+[HOOK|loops] But stay with me, because there's one spot behind your refrigerator that nobody has cleaned since the day it was delivered. There's a drain in your house you never use, and it's letting the sewer breathe right into your hallway. And there's one thing almost everybody does about that smell that makes it worse, and you've probably done it this week.
+[HOOK|yo] I'm Rhonda. I cleaned other people's houses in Ohio for thirty four years, and I can tell you where a smell is coming from before I take my coat off. So let me walk you through my six places, in order.
+[WHY|intro] First, the thing nobody tells you. A musty smell is not dirt. You can scrub a house top to bottom and it'll still be there, because that smell is something staying damp somewhere.
+[WHY|que] Mold and mildew need three things. Something to eat, which is dust and soap and skin, a little warmth, and water. Your house has the first two everywhere. So the only one you can take away is the water. Find the damp spot, and you've found the smell.
+[WHY|nariz] And your nose is the best tool you own. Here's how I use it. Walk in from outside, after a few minutes out there, because after ten minutes inside, your nose stops noticing. Close your eyes, walk slow, and go toward it. It gets stronger as you get closer, every time.
+[WHY|tipos] And learn what your nose is telling you. Damp and earthy, like an old basement, that's mildew, something wet that never dries. Rotten eggs that come and go, that's a drain. Sour, like an old dish rag, that's bacteria in something wet you use every day. Three smells, three different places to look.
+[KIT|kit] Here's all you need. A flashlight, even the one on your phone. The brown bottle, plain three percent hydrogen peroxide, with a spray nozzle on it. And a couple of old towels. That's it.
+[ONE|intro] Place number one. Under the sinks.
+[ONE|abrir] Kitchen first, then every bathroom. Open the cabinet, take everything out, and stick your head in there. That's where most musty houses start, because the pipes under there drip so slowly you'd never see it.
+[ONE|tocar] Now feel the floor of the cabinet with your flat hand. Not with your eyes, with your hand. Damp, soft, or swollen, like the wood has puffed up, that's a slow leak. Look for a white crusty line on the pipe joints, too. That's dried water.
+[ONE|prueba] Here's my test. Put one dry paper towel flat under the trap, that curvy pipe, and leave it overnight. In the morning, if it has a wet spot, you've got your leak, and you know exactly which joint it is.
+[ONE|arreglo] A loose slip nut is a hand tighten. A dripping supply line costs a few dollars at the hardware store. Then dry it all out, leave the door open with a fan for a day, spray the cabinet floor full strength with peroxide, wait ten minutes, and wipe it dry.
+[ONE|esponja] And while you're at the kitchen sink, smell your sponge and your dish rag. A sour sponge sitting wet next to the faucet can make a whole kitchen smell. Squeeze it dry after every use, stand it up, and replace it every couple of weeks.
+[TWO|intro] Place number two. The towels.
+[TWO|que] If your towels smell musty right out of the wash, that's not your house. That's your washer, and your towels are just carrying it around to every bathroom.
+[TWO|arreglo] For the towels, one cup of peroxide in the wash, hot water, white towels only, and dry them all the way the same day. Never leave a wet load sitting in the machine overnight. And if it's a front loader, I've got a whole video on the one spot nobody wipes.
+[TWO|bano] And bath mats. Turn yours over. If the rubber back is black and spotty, that's living on your bathroom floor. Wash it, or let it go.
+[THREE|intro] Place number three. Rugs and rug pads.
+[THREE|levantar] Lift the corners of every rug in a kitchen, a bathroom, and by every door. Smell the floor under it, and smell the pad. A rug pad holds water like a sponge, and nobody ever looks at it.
+[THREE|cocina] The worst one is always the rug in front of the kitchen sink. Every drip, every splash, every wet dish towel lands there. And the rug by the back door, where wet boots sit all winter.
+[THREE|historia] I had a client in Elyria who had a candle burning in every room of her house. She was embarrassed to have people over. I walked in, followed my nose, and it was the rug pad under the dining table, right where the dog's water bowl sat. Ten years of little splashes. We threw that pad out, and the smell left with it.
+[THREE|arreglo] If the floor under a rug is damp, take the rug outside, let the floor dry with a fan, spray it with peroxide, ten minutes, wipe it dry. And if the pad smells, don't wash it. Throw it out. A new one is cheaper than a candle habit.
+[FOUR|intro] Place number four. The drains you never use.
+[FOUR|trampa] Every drain has a curve in the pipe that holds a little water. That water is a plug. It keeps the sewer gas down in the sewer, where it belongs.
+[FOUR|seca] But a guest shower nobody uses, a basement floor drain, the tub in the spare bathroom, that water dries up in a few weeks. And now there's nothing between the sewer and your house. It smells musty, sometimes like rotten eggs, and it comes and goes, in little gusts.
+[FOUR|arreglo] The fix costs nothing. Run the water for a minute. That's it. That fills the curve back up and the smell stops, usually within an hour. For a floor drain, pour in a pitcher of water.
+[FOUR|historia] I had a couple selling their house, and the buyers smelled the basement and wanted a mold inspection. Somebody quoted three thousand dollars. I went down there, poured a pitcher of water into the floor drain, and the next day it was gone. Three thousand dollars, and it was a pitcher of water.
+[FOUR|truco] Here's my trick so it doesn't dry out again. After you fill it, pour one tablespoon of cooking oil on top. The oil floats on the water and slows it from drying out for months.
+[FIVE|intro] Place number five. The refrigerator.
+[FIVE|bandeja] Not inside. Underneath. Most refrigerators have a drip pan at the bottom, behind that little grille. Every bit of water from the defrost runs down into that pan and sits there, in the warm air from the motor.
+[FIVE|abrir] The grille just pulls off, or there are two little clips. Shine your flashlight in there. If the pan has slimy water or black fuzz in it, that's your smell, and it's been there since the day the refrigerator came home.
+[FIVE|arreglo] Slide it out if it comes out. Dump it, wash it with hot soapy water, rinse it, and spray it full strength with peroxide. Ten minutes, wipe it dry, slide it back. If it doesn't come out, a long bottle brush and paper towels get it done.
+[FIVE|polvo] While you're down there, vacuum the coils and the dust. Dust holds moisture and smell, too.
+[FIVE|lavavajillas] And open your dishwasher. Pull out the bottom rack and look at the round filter in the floor of it. Food and grease sit in there, wet and warm, every single day. It twists out. Rinse it under hot water with a soft brush, put it back, and leave the door cracked open after every load.
+[SIX|intro] Place number six. Closets on outside walls.
+[SIX|pared] A closet on an outside wall is the coldest spot in the house, with the door closed and no air moving. Warm air from the house hits that cold wall and leaves water on it, like a glass of iced tea.
+[SIX|tocar] Push your clothes to the side and lay your hand flat on the back wall. Cold and clammy is your answer. Then look at the shoes on the floor and the boxes in the corner. Little white or green spots on leather shoes, that's mildew.
+[SIX|arreglo] Pull everything out, wipe the wall, spray it with peroxide, ten minutes, and wipe it dry. Leave the door open for a few days. Don't jam the clothes in tight against that wall, leave a hand's width of air. And never put away anything damp.
+[SIX|zapatos] And the shoes themselves. A pile of shoes by the door that never dries out between wearings smells exactly like a musty house. Let them dry out in the open air, never in a closed closet, and wipe any spots off the leather.
+[SIX|cuenta] That's all six. Sinks, towels, rugs, drains, the refrigerator, and the closets. Five minutes, in that order, and nine houses out of ten, you've found it.
+[SIX|prueba] Try it right now, while it's fresh. Go outside for two minutes, come back in, and walk slow through the kitchen with your eyes closed. Wherever it gets strongest, that's your first place to look. I've done it in hundreds of houses, and it works almost every time.
+[CTA2|libro] The six places, the paper towel test, and the exact amounts for each one are on page fifteen of my book. Ninety two fixes, for less than what one pro charges for a single visit. The link's in the description, or point your phone at the code on the screen.
+[HUMID|intro] Now, sometimes it isn't one spot. It's the whole house. The air itself is too wet.
+[HUMID|medir] Get a little humidity meter. They're called hygrometers, and a cheap one is just as good as an expensive one. Indoors, you want it under sixty percent. Over sixty, everything in your house stays a little damp, and it starts to smell.
+[HUMID|deshum] If it's high, run a dehumidifier, especially in a basement. And here's a question I get all the time. If your dehumidifier fills up every single day, it's not broken. It's telling you water is coming in from somewhere. Check the outside first. Gutters, and where the ground slopes toward the house.
+[HUMID|bano] And in the bathroom, run the fan for twenty minutes after every shower, not just while you're in there. Leave the shower curtain spread open so it dries. Those two habits fix more musty bathrooms than any cleaner.
+[COVER|intro] Now, that thing almost everybody does that makes it worse. You cover it.
+[COVER|que] Sprays, plug ins, candles, incense. I understand it, believe me. But a cover up doesn't kill anything. It just makes your nose stop telling you the truth, and the damp spot keeps growing while it smells like a pine forest.
+[COVER|sal] I see the one going around with salt, alcohol and fabric softener in a jar. It smells nice, I'll give it that. But it's perfume. Use it after you find the source, not instead of finding it.
+[COVER|purificador] Same with an air purifier. If the smell comes back every time you turn it off, the purifier isn't the fix. It's just covering a source you haven't found yet.
+[COVER|regla] My rule is simple. Find it, dry it, clean it, and then make it smell nice if you want to.
+[PRO|intro] And I want to be honest with you. Sometimes it really is a job for a pro. Here's how you tell.
+[PRO|senales] If you smell it but can't find it in my six places, look at the walls behind the toilet, under the windows, and the ceiling under a bathroom. A soft spot, a stain, paint that's bubbling, or a wall that feels cool and damp, that means water inside the wall.
+[PRO|llamar] That's not a spray bottle job. Peroxide cleans what the damp left behind, but only fixing the water keeps it from coming back. Call a plumber for the leak first. You don't always need the big mold company. Fix the water, and a lot of the time, that's the whole job.
+[MIST|intro] Now let me save you some grief. Here are the mistakes I watched people make for thirty four years.
+[MIST|uno] Mistake one. Washing the whole house because it smells. You scrub every floor and wall, and you added more water. Find the spot first.
+[MIST|dos] Mistake two. Bleach on everything. It whitens what it touches, but it's harsh, and it doesn't do anything about the water. And never, ever mix bleach with vinegar or ammonia.
+[MIST|tres] Mistake three. Spraying peroxide and walking away wet. The ten minutes is to let it work. Then you wipe it dry. Dry is the whole point.
+[MIST|cuatro] Mistake four. Closing everything up to keep the heat in. A little air moving through a house is what keeps it from smelling like a cellar. Crack a window, even in winter, for ten minutes a day.
+[MIST|cinco] And mistake five, the big one. Covering it and forgetting it. That smell is a message. Something is wet. The longer you cover it, the more it costs you.
+[QA|intro] A few questions I always get, real quick.
+[QA|nuevo] I just moved into a new apartment and the smell comes and goes. Nine times out of ten, that's a dry drain. A shower or a sink nobody used while the place sat empty. Run every faucet in the place for a minute.
+[QA|deshumidificador] Does a dehumidifier kill mold? No. It dries the air so mold can't grow. What's already there, you still clean, and peroxide does that.
+[QA|alfombra] The whole carpet smells, not one spot. That usually means it got wet underneath and never dried, or the pad is old. Lift a corner by the wall and smell the pad. If the pad is the problem, that carpet needs a pro or a new pad.
+[QA|vinagre] Can I use vinegar instead? You can wipe with vinegar, but not in the same pass as peroxide. Never mix them in a bottle, and never one right on top of the other. One thing at a time, and rinse in between.
+[QA|ropa] My clothes in the closet smell musty. Wash them, dry them all the way, and fix the closet first, or they'll smell again in a week. A cup of peroxide in a hot wash for whites.
+[QA|sotano] The basement always smells. Basements are below the ground, so the walls are cold and a little damp. A dehumidifier down there, set to fifty percent, emptied every day or hooked to a drain, does most of the work.
+[QA|auto] And somebody asked me about the car. Same idea. Pull up the floor mats and feel the carpet underneath. Wet means a leak, usually a door seal. Dry it, and the smell goes.
+[RESET|intro] And here's how you keep it from coming back. Once a week, five minutes.
+[RESET|drenajes] Run the water in every drain you don't use. Guest shower, spare tub, basement floor drain.
+[RESET|toallas] Hang towels spread out, never folded wet, and wash them before they smell.
+[RESET|ventilar] Bathroom fan twenty minutes after every shower. Kitchen fan when you cook.
+[RESET|mes] And once a month, open the sink cabinets, feel the floor with your hand, and pull the refrigerator grille. Two minutes. That's the whole routine.
+[RECAP|todo] So one more time, the whole thing in thirty seconds. A musty smell is something wet. Walk in from outside and follow your nose. Check the sinks, the towels, the rugs, the drains you never use, the drip pan under the refrigerator, and the closets on outside walls. Spray full strength peroxide, wait ten minutes, wipe it dry. Fix the water first. And don't cover it up.
+[CLOSE|nunca] Before I let you go, here's the most important thing I'll ever tell you about cleaning. Never mix. Bleach and vinegar, never. Bleach and ammonia, never. And peroxide and vinegar, never in the same bottle or the same pass. One thing at a time, rinse in between, and open a window.
+[CLOSE|botella] And keep your peroxide in its brown bottle. Light makes it go flat. That's why it comes in brown.
+[CTA3|libro] The exact amounts are on page fifteen of my book. Ninety two fixes, for less than what one pro charges for a single visit. The link's down in the description.
+[CLOSE|pregunta] Now I want to hear from you. Where did you find yours? Under the sink, the drain, the refrigerator? Tell me down in the comments. I bet somebody finds one I haven't heard of.
+[CLOSE|chau] Put the candle down, grab your flashlight, and go start with the kitchen sink. I'll see you next time.

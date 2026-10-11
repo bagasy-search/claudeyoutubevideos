@@ -19,6 +19,7 @@ import { RhPumpFilter, RhCycleThermo, RhDoorCrack, RhDrawerFlashlight } from "./
 import { RhKnifeStop, RhOvernight, RhTwoNightRule, RhTapeLine } from "./RhCaulk";
 import { RhPasteMix, RhWaterLevel, RhPumiceWetDry, RhHardWater, RhRingColors } from "./RhRing";
 import { RhGroutJoint3D, RhQuoteStamp, RhFloorMap, RhBrushCompare } from "./RhGrout";
+import { RhHousePlan3D, RhNoseMeter, RhDrainTrap, RhFridgeGrille, RhHygrometer } from "./RhMusty";
 import { RhMoldCalendar, RhSwabTest, RhWipeReveal, RhFogMirror, RhPatchMeter, RhWetMap, RhStrengthMeter, RhNextVideo } from "./RhMold";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
@@ -76,6 +77,7 @@ const COMP: Record<string, React.FC<any>> = {
   RhCaulkSection3D, RhKnifeStop, RhOvernight, RhTwoNightRule, RhTapeLine,
   RhGasketFold3D, RhPumpFilter, RhCycleThermo, RhDoorCrack, RhDrawerFlashlight,
   RhGroutJoint3D, RhQuoteStamp, RhFloorMap, RhBrushCompare,
+  RhHousePlan3D, RhNoseMeter, RhDrainTrap, RhFridgeGrille, RhHygrometer,
 };
 const OVC: Record<string, React.FC<any>> = { RhNameTag, RhAsk, RhNextVideo, RhPromise, RhKicker, RhPop };
 
