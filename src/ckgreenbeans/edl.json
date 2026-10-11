@@ -891,7 +891,7 @@
 "a": 519.38,
 "b": 527.473,
 "k": "s062_n_thermometer",
-"vid": true,
+"vid": false,
 "z": [
 1.0,
 1.0
