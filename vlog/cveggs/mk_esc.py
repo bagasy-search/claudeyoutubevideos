@@ -18,7 +18,7 @@ sc("S01", "A1", f"stands at the black range holding a brown egg over {SK}.", {
  "c12": ["shakes his head", "a sour face"], "c13": ["holds up a small cup of water and a lid", "the cup and lid held up"],
  "c14": ["touches his chest and smiles", "his hand on his chest"]})
 sc("S02", "A2", f"stands in front of the wall of hanging cast-iron skillets lifting {SK} off its hook.", {
- "c15": ["tilts the pan to show the smooth black surface", "the glassy surface catching the light"], "c16": ["holds up one finger", "one finger raised"]})
+ "c15": ["tilts the pan to show the smooth black surface", "he holds the big black cast-iron skillet up by its handle, tilted toward the camera, its glassy-smooth black cooking surface catching the light"], "c16": ["holds up one finger", "one finger raised"]})
 sc("S03", "A3", "stands at the long plank table with a carton of brown eggs, a glass of water and a pot lid.", {
  "c20": ["lifts an egg out of the carton", "the egg held up"], "c21": ["holds up two fingers", "two fingers raised"],
  "c23": ["holds the lid over an imaginary pan", "the lid held flat"], "c24": ["sets the lid down and smiles", "a smile"]})
@@ -64,7 +64,7 @@ sc("S22", "A1", "stands at the black range beside a small skillet with one fried
 sc("S24", "A3", "stands at the long plank table beside a tall glass of water with an egg lying on the bottom.", {
  "c69": ["drops a second egg in, it floats, and he shakes his head", "the floating egg"]})
 sc("S26", "A3", "stands at the long plank table, speaking to the camera, serious.", {
- "c72": ["holds up a fried egg on a plate", "the plate held up"], "c73": ["holds up one finger", "one finger raised"],
+ "c72": ["holds up a fried egg on a plate", "he holds up a small white plate with one fried egg on it, sunny side up"], "c73": ["holds up one finger", "one finger raised"],
  "c74": ["shows a firm-yolk egg on a plate", "the firm yolk"], "c75": ["holds up a carton of pasteurized eggs", "the carton held up"],
  "c76": ["shakes his head", "a small head shake"]})
 sc("S28", "A3", f"stands at the long plank table with {SK} of crisp chopped potatoes and shredded beef hash, four eggs steaming in holes in the hash.", {
