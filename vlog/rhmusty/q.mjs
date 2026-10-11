@@ -1,0 +1,20 @@
+// consultas de STOCK REAL (Pexels, 2-3 palabras) para tomas bi genéricas: si el juez aprueba, el plano es metraje real; si no, queda la foto agnes
+export const Q = {
+  b_cleankitchen: "clean kitchen interior", b_cleanfloor: "kitchen floor", b_sheets: "making bed sheets", b_basement: "old basement",
+  b_mopfloor: "mop kitchen floor", b_trash: "kitchen trash can", b_flashlight: "flashlight dark", b_candles: "scented candles",
+  b_fridgeback: "refrigerator kitchen", b_guestshower: "bathtub shower", b_hallway: "house hallway", b_plugin: "air freshener",
+  b_spotless: "tidy living room", b_dustmacro: "dust shelf", b_basementwall: "basement wall", b_floordrain: "floor drain",
+  b_dishrag: "dish rag sink", b_phonelight: "phone flashlight", b_oldtowels: "folded towels", b_pipedrip: "pipe leak drip",
+  b_supplyline: "hardware store aisle", b_fancab: "box fan", b_sponge: "kitchen sponge", b_spongeup: "sponge sink",
+  b_towelstack: "laundry towels", b_dryer: "clothes dryer", b_newmat: "bath mat", b_dishtowel: "dish towel",
+  b_boots: "winter boots door", b_candleroom: "candles living room", b_dogbowl: "dog water bowl", b_fanfloor: "electric fan floor",
+  b_ptrap: "sink drain pipe", b_basedrain: "basement floor", b_sparetub: "empty bathtub", b_buyers: "couple house tour",
+  b_coils: "refrigerator coils", b_bottlebrush: "bottle brush", b_filter: "dishwasher open", b_dwcracked: "dishwasher kitchen",
+  b_closetdoor: "bedroom closet", b_handgap: "clothes hanging closet", b_dampshirt: "shirt hanger", b_shoepile: "shoes entryway",
+  b_hygro: "hygrometer", b_dehumid: "dehumidifier", b_dehumidtank: "water tank", b_gutter: "rain gutter", b_slope: "house foundation rain",
+  b_bathfan: "bathroom steam", b_spraycan: "aerosol spray", b_plugin2: "plug in air freshener", b_incense: "incense smoke",
+  b_saltjar: "salt jar", b_purifier: "air purifier", b_toiletwall: "bathroom toilet", b_windowsill: "peeling paint wall",
+  b_ceilingstain: "ceiling water stain", b_bleach: "bleach bottle", b_wetwall: "wall spray cleaning", b_closedup: "closed curtains living room",
+  b_candlestack: "burning candles", b_aptbath: "empty apartment bathroom", b_emptycloset: "empty closet hangers", b_basewall2: "concrete wall",
+  b_doorseal: "car door rubber", b_rangehood: "range hood cooking", b_openwindow: "open window curtain", b_sinkcab2: "under sink cabinet",
+};

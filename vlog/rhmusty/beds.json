@@ -1,0 +1,272 @@
+[
+ {
+  "name": "bd_m1",
+  "q": "cleaning house",
+  "scene": "cleaning house"
+ },
+ {
+  "name": "bd_m2",
+  "q": "musty basement",
+  "scene": "musty basement"
+ },
+ {
+  "name": "bd_m3",
+  "q": "mold wall",
+  "scene": "mold wall"
+ },
+ {
+  "name": "bd_m4",
+  "q": "dehumidifier basement",
+  "scene": "dehumidifier basement"
+ },
+ {
+  "name": "bd_m5",
+  "q": "laundry room",
+  "scene": "laundry room"
+ },
+ {
+  "name": "bd_m6",
+  "q": "washing machine",
+  "scene": "washing machine"
+ },
+ {
+  "name": "bd_m7",
+  "q": "bathroom cleaning",
+  "scene": "bathroom cleaning"
+ },
+ {
+  "name": "bd_m8",
+  "q": "kitchen sink",
+  "scene": "kitchen sink"
+ },
+ {
+  "name": "bd_m9",
+  "q": "under sink pipes",
+  "scene": "under sink pipes"
+ },
+ {
+  "name": "bd_m10",
+  "q": "spray bottle cleaning",
+  "scene": "spray bottle cleaning"
+ },
+ {
+  "name": "bd_m11",
+  "q": "wiping counter",
+  "scene": "wiping counter"
+ },
+ {
+  "name": "bd_m12",
+  "q": "rug cleaning",
+  "scene": "rug cleaning"
+ },
+ {
+  "name": "bd_m13",
+  "q": "carpet closeup",
+  "scene": "carpet closeup"
+ },
+ {
+  "name": "bd_m14",
+  "q": "shower drain",
+  "scene": "shower drain"
+ },
+ {
+  "name": "bd_m15",
+  "q": "bathtub water",
+  "scene": "bathtub water"
+ },
+ {
+  "name": "bd_m16",
+  "q": "refrigerator open",
+  "scene": "refrigerator open"
+ },
+ {
+  "name": "bd_m17",
+  "q": "dishwasher",
+  "scene": "dishwasher"
+ },
+ {
+  "name": "bd_m18",
+  "q": "closet clothes",
+  "scene": "closet clothes"
+ },
+ {
+  "name": "bd_m19",
+  "q": "shoes closet",
+  "scene": "shoes closet"
+ },
+ {
+  "name": "bd_m20",
+  "q": "window rain",
+  "scene": "window rain"
+ },
+ {
+  "name": "bd_m21",
+  "q": "humidity window",
+  "scene": "humidity window"
+ },
+ {
+  "name": "bd_m22",
+  "q": "bathroom fan steam",
+  "scene": "bathroom fan steam"
+ },
+ {
+  "name": "bd_m23",
+  "q": "candle flame",
+  "scene": "candle flame"
+ },
+ {
+  "name": "bd_m24",
+  "q": "air freshener",
+  "scene": "air freshener"
+ },
+ {
+  "name": "bd_m25",
+  "q": "flashlight",
+  "scene": "flashlight"
+ },
+ {
+  "name": "bd_m26",
+  "q": "old house interior",
+  "scene": "old house interior"
+ },
+ {
+  "name": "bd_m27",
+  "q": "ohio house",
+  "scene": "ohio house"
+ },
+ {
+  "name": "bd_m28",
+  "q": "front porch",
+  "scene": "front porch"
+ },
+ {
+  "name": "bd_m29",
+  "q": "opening door",
+  "scene": "opening door"
+ },
+ {
+  "name": "bd_m30",
+  "q": "towels folding",
+  "scene": "towels folding"
+ },
+ {
+  "name": "bd_m31",
+  "q": "hanging towels",
+  "scene": "hanging towels"
+ },
+ {
+  "name": "bd_m32",
+  "q": "mopping floor",
+  "scene": "mopping floor"
+ },
+ {
+  "name": "bd_m33",
+  "q": "water drip",
+  "scene": "water drip"
+ },
+ {
+  "name": "bd_m34",
+  "q": "pipe leak",
+  "scene": "pipe leak"
+ },
+ {
+  "name": "bd_m35",
+  "q": "plumber",
+  "scene": "plumber"
+ },
+ {
+  "name": "bd_m36",
+  "q": "laundry basket",
+  "scene": "laundry basket"
+ },
+ {
+  "name": "bd_m37",
+  "q": "dryer",
+  "scene": "dryer"
+ },
+ {
+  "name": "bd_m38",
+  "q": "rain house",
+  "scene": "rain house"
+ },
+ {
+  "name": "bd_m39",
+  "q": "gutter rain",
+  "scene": "gutter rain"
+ },
+ {
+  "name": "bd_m40",
+  "q": "porch rug",
+  "scene": "porch rug"
+ },
+ {
+  "name": "bd_m41",
+  "q": "dog drinking water",
+  "scene": "dog drinking water"
+ },
+ {
+  "name": "bd_m42",
+  "q": "living room daylight",
+  "scene": "living room daylight"
+ },
+ {
+  "name": "bd_m43",
+  "q": "senior woman cleaning",
+  "scene": "senior woman cleaning"
+ },
+ {
+  "name": "bd_m44",
+  "q": "cleaning gloves",
+  "scene": "cleaning gloves"
+ },
+ {
+  "name": "bd_m45",
+  "q": "scrubbing",
+  "scene": "scrubbing"
+ },
+ {
+  "name": "bd_m46",
+  "q": "vacuum cleaner",
+  "scene": "vacuum cleaner"
+ },
+ {
+  "name": "bd_m47",
+  "q": "dust closeup",
+  "scene": "dust closeup"
+ },
+ {
+  "name": "bd_m48",
+  "q": "kitchen window light",
+  "scene": "kitchen window light"
+ },
+ {
+  "name": "bd_m49",
+  "q": "basement stairs",
+  "scene": "basement stairs"
+ },
+ {
+  "name": "bd_m50",
+  "q": "bedroom closet",
+  "scene": "bedroom closet"
+ },
+ {
+  "name": "bd_m51",
+  "q": "sponge squeeze",
+  "scene": "sponge squeeze"
+ },
+ {
+  "name": "bd_m52",
+  "q": "faucet running",
+  "scene": "faucet running"
+ },
+ {
+  "name": "bd_m53",
+  "q": "drain water",
+  "scene": "drain water"
+ },
+ {
+  "name": "bd_m54",
+  "q": "hallway house",
+  "scene": "hallway house"
+ }
+]

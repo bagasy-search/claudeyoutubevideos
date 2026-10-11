@@ -39,8 +39,8 @@ const WALLS: [number, number, number, number][] = [
 ];
 export const RhHousePlan3D: React.FC<{ active?: number; bed?: string; title?: string }> = ({ active = 0, bed, title = "6 PLACES" }) => {
   const f = useCurrentFrame(); const { width, height, durationInFrames: T } = useVideoConfig();
-  const a = interpolate(f, [0, T], [-0.5, 0.25]), dist = interpolate(f, [0, T], [10.5, 9.2]);
-  const target = new THREE.Vector3(active ? SPOTS[active - 1].x * 0.35 : 0, 0, active ? SPOTS[active - 1].z * 0.35 : 0.2);
+  const a = interpolate(f, [0, T], [-0.5, 0.25]), dist = interpolate(f, [0, T], [12.8, 11.4]);
+  const target = new THREE.Vector3(active ? SPOTS[active - 1].x * 0.18 : 0, 0, active ? SPOTS[active - 1].z * 0.18 : 0.2);
   const camPos = new THREE.Vector3(Math.sin(a) * dist * 0.55, dist * 0.78, Math.cos(a) * dist * 0.62);
   // recorrido: los alfileres aparecen uno por uno; con active, ya están todos y el activo pulsa
   const n = active ? 6 : Math.min(6, Math.floor(lin(f, 8, T * 0.85) * 6 + 0.001) + (f > 8 ? 1 : 0));
@@ -72,10 +72,10 @@ export const RhHousePlan3D: React.FC<{ active?: number; bed?: string; title?: st
           </group>); })}
       </ThreeCanvas>
       {SPOTS.map((s, i) => { const k = pinK(i); if (k <= 0.6 || i >= n) return null; const on = active ? active === i + 1 : i === n - 1; const p = proj(new THREE.Vector3(s.x, 0.95, s.z));
-        return (<div key={i} style={{ position: "absolute", left: p.x, top: p.y, translate: "-50% -100%", opacity: (k - 0.6) / 0.4 * (active && !on ? 0.55 : 1), scale: String(on ? 1.08 : 0.82) }}>
+        return (<div key={i} style={{ position: "absolute", left: Math.max(260, Math.min(width - 260, p.x)), top: Math.max(170, p.y), translate: "-50% -100%", opacity: (k - 0.6) / 0.4 * (active && !on ? 0.55 : 1), scale: String(on ? 1.08 : 0.82) }}>
           <div style={{ background: on ? RH.red : RH.white, color: on ? "#fff" : RH.ink, fontFamily: LABEL, fontWeight: 700, fontSize: 38, letterSpacing: 1, padding: "6px 18px", borderRadius: 10, whiteSpace: "nowrap", boxShadow: `0 10px 22px ${RH.shadow}` }}>{i + 1} · {s.label}</div>
         </div>); })}
-      <Chip txt={title} style={{ left: 110, top: 80, opacity: lin(f, 2, 12) }} />
+      <Chip txt={title} style={{ left: 110, top: height - 170, opacity: lin(f, 2, 12) }} />
       <div style={{ position: "absolute", right: 110, top: 70, background: RH.white, borderRadius: 18, padding: "10px 30px", boxShadow: `0 14px 30px ${RH.shadow}`, fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: cur >= 6 ? RH.blue : RH.ink }}>{cur}<span style={{ fontSize: 50, color: RH.inkSoft }}>/6</span></div>
     </AbsoluteFill>
   );
@@ -145,8 +145,8 @@ export const RhDrainTrap: React.FC<{ mode?: "full" | "dry" | "oil"; bed?: string
               return <g key={i} opacity={show * (1 - ph * 0.6)} transform={`translate(${mode === "full" ? 1000 - i * 60 : 600 + (i % 2 ? 40 : -40)} ${mode === "full" ? 395 + (i % 2) * 20 : yy})`}>
                 <path d="M 0 30 L 0 -20 M -16 -4 L 0 -22 L 16 -4" stroke="#5E9B52" strokeWidth={9} fill="none" strokeLinecap="round" /></g>; })}
             {mode === "full" ? <g><line x1={720} y1={390} x2={760} y2={390} stroke={RH.red} strokeWidth={10} /><text x={770} y={300} fontFamily={LABEL} fontWeight={700} fontSize={40} fill={RH.red}>BLOCKED</text></g> : null}
-            <text x={1130} y={400} fontFamily={LABEL} fontWeight={700} fontSize={36} fill={RH.inkSoft}>SEWER →</text>
-            <text x={360} y={60} fontFamily={LABEL} fontWeight={700} fontSize={36} fill={RH.inkSoft}>↑ YOUR HOUSE</text>
+            <text x={1130} y={400} fontFamily={LABEL} fontWeight={700} fontSize={36} fill={RH.inkSoft}>SEWER</text>
+            <text x={360} y={60} fontFamily={LABEL} fontWeight={700} fontSize={36} fill={RH.inkSoft}>YOUR HOUSE</text>
           </svg>
           <Chip txt={labels.water || "Water plug"} style={{ left: 560, top: 690, opacity: level > 0.3 ? lin(f, 6, 16) : 0.3 }} />
           {mode === "dry" ? <Chip txt={labels.gas || "Dried up: smell comes up"} bg={RH.red} style={{ left: 40, top: 300, opacity: gas }} /> : null}
@@ -206,7 +206,7 @@ export const RhHygrometer: React.FC<{ bed?: string; from?: number; to?: number; 
             {[0, 20, 40, 60, 80, 100].map((p) => { const a = (-135 + 2.7 * p) * Math.PI / 180; return <text key={p} x={354 + 215 * Math.sin(a)} y={354 - 215 * Math.cos(a) + 14} textAnchor="middle" fontFamily={SERIF} fontWeight={700} fontSize={40} fill={p > 60 ? RH.red : RH.ink}>{p}</text>; })}
             <g transform={`translate(354 354) rotate(${ang})`}><line x1={0} y1={40} x2={0} y2={-270} stroke="#1F2A33" strokeWidth={10} strokeLinecap="round" /></g>
             <circle cx={354} cy={354} r={26} fill="#1F2A33" />
-            <text x={354} y={520} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={40} letterSpacing={4} fill={RH.inkSoft}>HUMIDITY %</text>
+            <text x={354} y={520} textAnchor="middle" fontFamily={LABEL} fontWeight={700} fontSize={40} letterSpacing={4} fill={RH.inkSoft}>HUMIDITY</text>
           </svg>
         </div>
       </AbsoluteFill>
