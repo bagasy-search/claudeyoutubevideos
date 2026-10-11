@@ -1,1 +1,240 @@
-[]
+[
+ {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 318,
+  "dur": 309,
+  "t": 10.61,
+  "props": {
+   "dish": "La carne de la fonda",
+   "lines": [
+    "Un corte duro",
+    "Olla tapada",
+    "3 horas sin tocarla"
+   ],
+   "at": [
+    2.32,
+    3.45,
+    4.6
+   ],
+   "bed": "vid/cccarne/bed_menu.mp4#317"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 633,
+  "dur": 205,
+  "t": 21.1,
+  "props": {
+   "photo": "img/cccarne/joven.jpg",
+   "caption": "en el mercado con mi amá · 1991",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.35,
+    3.1
+   ],
+   "bed": "vid/cccarne/bed_joven.mp4#209"
+  }
+ },
+ {
+  "c": "ClMeatClock",
+  "k": "reloj",
+  "from": 5417,
+  "dur": 365,
+  "props": {
+   "bed": "img/cccarne/bed_reloj.jpg",
+   "at": [
+    2.22,
+    4.96,
+    6.9,
+    9.56
+   ]
+  },
+  "t": 180.56
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 7616,
+  "dur": 210,
+  "props": {
+   "title": "Carne de olla · 6 platos",
+   "rows": [
+    {
+     "k": "Chambarete, trozos de 7 cm",
+     "v": "1.5 kg"
+    },
+    {
+     "k": "Sal y pimienta",
+     "v": "2 + 1 cdtas"
+    },
+    {
+     "k": "Manteca",
+     "v": "2 cdas"
+    },
+    {
+     "k": "Cebolla, 4 ajos, 2 chiles",
+     "v": "1"
+    },
+    {
+     "k": "Jitomate y vinagre",
+     "v": "2 + 2 cdas"
+    },
+    {
+     "k": "Cerveza oscura o caldo",
+     "v": "1 taza"
+    }
+   ],
+   "mark": "líquido a la mitad",
+   "note": "+ papas y zanahorias",
+   "bed": "vid/cccarne/bed_1.mp4#214"
+  },
+  "t": 253.88
+ },
+ {
+  "c": "ClTimer30",
+  "k": "dos",
+  "from": 13309,
+  "dur": 108,
+  "props": {
+   "minutes": 30,
+   "label": "2 horas",
+   "text": "sin destapar",
+   "bed": "vid/cccarne/bed_2.mp4#112"
+  },
+  "t": 443.63
+ },
+ {
+  "c": "ClTimer30",
+  "k": "una",
+  "from": 14796,
+  "dur": 102,
+  "props": {
+   "minutes": 30,
+   "label": "+1 hora",
+   "text": "tapado, fuego mínimo",
+   "bed": "vid/cccarne/bed_3.mp4#106"
+  },
+  "t": 493.2
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 16048,
+  "dur": 216,
+  "props": {
+   "before": "img/cccarne/antes.jpg",
+   "after": "img/cccarne/despues.jpg",
+   "a": "BISTEC AL SARTÉN",
+   "b": "3 HORAS EN LA OLLA",
+   "note": "mismo corte"
+  },
+  "t": 534.93
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 16476,
+  "dur": 285,
+  "props": {
+   "title": "La carne de la fonda",
+   "items": [
+    "Sal 20 minutos antes",
+    "Dorar en dos tandas",
+    "Cebolla, ajo y chile raspando",
+    "Jitomate, vinagre y cerveza",
+    "Líquido a la mitad, tapa",
+    "Fuego mínimo, 3 horas"
+   ],
+   "bed": "vid/cccarne/bed_5.mp4#289"
+  },
+  "t": 549.2
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 27669,
+  "dur": 1224,
+  "props": {
+   "head": "LA OLLA DE CARNE",
+   "lines": [
+    [
+     "Chambarete, 1.5 kg",
+     "US$18.00"
+    ],
+    [
+     "Cerveza",
+     "US$1.00"
+    ],
+    [
+     "Jitomate, cebolla, ajo, chiles",
+     "US$2.00"
+    ],
+    [
+     "Papas, zanahorias, manteca",
+     "US$1.70"
+    ],
+    [
+     "Toda la olla · 6 platos",
+     "US$22.70"
+    ]
+   ],
+   "total": [
+    "Cada plato",
+    "US$3.80"
+   ],
+   "bed": "vid/cccarne/bed_6.mp4#1228"
+  },
+  "t": 922.29
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 30025,
+  "dur": 180,
+  "props": {
+   "page": "img/cccarne/page20.jpg",
+   "pageNo": 20,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/cccarne/bed_7.mp4#184"
+  },
+  "t": 1000.84
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 30432,
+  "dur": 210,
+  "props": {
+   "qr": "img/cccarne/qr.jpg",
+   "cover": "img/cccarne/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/cccarne/bed_8.mp4#214"
+  },
+  "t": 1014.42
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 30914,
+  "dur": 150,
+  "props": {
+   "thumb": "img/cccarne/th_cchuevos.jpg",
+   "title": "Los huevos de la fonda",
+   "next": true,
+   "bed": "vid/cccarne/bed_9.mp4#154"
+  },
+  "t": 1030.47
+ }
+]

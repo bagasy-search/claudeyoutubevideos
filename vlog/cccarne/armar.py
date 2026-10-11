@@ -6,7 +6,7 @@
 #   vl  → vlog/cccarne/<esc>/clips (vl_check ok), trunc al tramo, mudo (la voz es el máster) · sin clip: Ken-Burns K(n-1)→Kn
 #   cmp → cama del componente (Ken-Burns lento); el componente lo pone Remotion encima (ov.json)
 # Salida: D:/rtmp/cc/cccarne/arm/vlog_full.mp4 (mudo) + arm/mix_full.wav (voz + clips) + arm/armado.json (qué fuente usó cada tramo)
-#   LIP=0.10 python vlog/cccarne/armar.py [--solo ids,coma]   (re-hace sólo esos tramos y vuelve a concatenar)
+#   LIP=0 python vlog/cccarne/armar.py [--solo ids,coma]   (re-hace sólo esos tramos y vuelve a concatenar)
 import json, os, subprocess, sys, numpy as np
 R = "D:/Proyectos/video2-wt/ccfrijoles/"; D = R + "vlog/cccarne/"; C = "D:/rtmp/cc/cccarne/"; O = os.environ.get("ARM", "C:/rtmp_cc/cccarne/arm/")
 os.makedirs(O + "seg", exist_ok=True)
@@ -40,7 +40,7 @@ def kenburns(a, b, out, n):
 # ---- fuentes por tramo -------------------------------------------------------------------------------------------------------
 vlok = {}
 for sc in sorted({s["sc"] for s in segs if s["kind"] in ("vl", "av2")}):
-    P = D + sc + "/"; st = J(P + "clips/state.json", {}); chk = J(P + "vl_check.json", {}); plan = J(P + "plan.json")
+    P = D + sc + "/"; st = J(P + "clips/state.json", {}); chk = J(P + "vl_check.json", {}); plan = J(P + "plan.json", {"clips": []})   # escenas sólo-av2 no tienen plan agnes
     for c in plan["clips"]:
         i = c["id"]
         hv = J(P + "clips/check_hist.json", {}).get(i, {}).get(st.get(i, {}).get("file"), {}).get("verd")   # veredicto de `agnes_vlog check`
