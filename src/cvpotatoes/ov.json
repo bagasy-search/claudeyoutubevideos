@@ -1,0 +1,169 @@
+[
+ {
+  "c": "ClDoDont",
+  "from": 569,
+  "dur": 150,
+  "props": {
+   "yes": {
+    "label": "Raw into the iron"
+   },
+   "no": {
+    "label": "Boiled, then fried"
+   },
+   "bed": "vid/cvpotatoes/bed_0.mp4#154"
+  },
+  "t": 18.97
+ },
+ {
+  "c": "ClChip",
+  "from": 3918,
+  "dur": 135,
+  "props": {
+   "text": "Same size pieces",
+   "corner": "tl"
+  },
+  "t": 130.6
+ },
+ {
+  "c": "ClCheck",
+  "from": 4605,
+  "dur": 270,
+  "props": {
+   "title": "INTO THE SKILLET",
+   "items": [
+    "2 lb small potatoes, halved",
+    "3 tbsp lard or bacon fat",
+    "1 tsp kosher salt",
+    "2 tbsp water",
+    "1/2 onion + 2 green chiles",
+    "3 garlic cloves, last 2 min"
+   ],
+   "bed": "vid/cvpotatoes/bed_2.mp4#274"
+  },
+  "t": 153.48
+ },
+ {
+  "c": "ClChip",
+  "from": 5091,
+  "dur": 120,
+  "props": {
+   "text": "Cut side down · one layer",
+   "corner": "tl"
+  },
+  "t": 169.71
+ },
+ {
+  "c": "ClTimer30",
+  "from": 5945,
+  "dur": 135,
+  "props": {
+   "minutes": 12,
+   "text": "12 minutes",
+   "label": "Lid on · don't lift it",
+   "bed": "vid/cvpotatoes/bed_4.mp4#139"
+  },
+  "t": 198.16
+ },
+ {
+  "c": "ClTimer30",
+  "from": 8018,
+  "dur": 135,
+  "props": {
+   "minutes": 8,
+   "text": "8 minutes",
+   "label": "Lid off · hands off",
+   "bed": "vid/cvpotatoes/bed_5.mp4#139"
+  },
+  "t": 267.27
+ },
+ {
+  "c": "ClChip",
+  "from": 9632,
+  "dur": 120,
+  "props": {
+   "text": "Garlic: last 2 minutes",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 321.06
+ },
+ {
+  "c": "ClChip",
+  "from": 14955,
+  "dur": 135,
+  "props": {
+   "text": "Store dark & cool · not the fridge",
+   "corner": "tl"
+  },
+  "t": 498.5
+ },
+ {
+  "c": "ClChip",
+  "from": 26148,
+  "dur": 135,
+  "props": {
+   "text": "Green potato: cut it away or toss it",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 871.6
+ },
+ {
+  "c": "ClReceipt",
+  "from": 18998,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "2 lb small potatoes",
+     "$2.60"
+    ],
+    [
+     "1/2 onion",
+     "$0.60"
+    ],
+    [
+     "2 green chiles",
+     "$1.00"
+    ],
+    [
+     "Garlic, fat, salt, herbs",
+     "$0.70"
+    ]
+   ],
+   "total": [
+    "Per plate (÷6)",
+    "$0.80"
+   ],
+   "bed": "vid/cvpotatoes/bed_9.mp4#424"
+  },
+  "t": 633.26
+ },
+ {
+  "c": "ClBookPage",
+  "from": 30281,
+  "dur": 210,
+  "props": {
+   "page": "img/cvpotatoes/page46.jpg",
+   "pageNo": 46,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 46",
+   "bed": "vid/cvpotatoes/bed_10.mp4#214"
+  },
+  "t": 1009.38
+ },
+ {
+  "c": "ClQRCard",
+  "from": 30948,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvpotatoes/qr.png",
+   "cover": "img/cvpotatoes/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvpotatoes/bed_11.mp4#184"
+  },
+  "t": 1031.6
+ }
+]

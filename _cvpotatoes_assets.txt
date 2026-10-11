@@ -1,0 +1,4 @@
+vid/cvpotatoes
+img/cvpotatoes/cover.jpg
+img/cvpotatoes/page46.jpg
+img/cvpotatoes/qr.png

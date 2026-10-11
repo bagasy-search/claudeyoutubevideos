@@ -1,0 +1,8 @@
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p000.wav'
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p001.wav'
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p002.wav'
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p003.wav'
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p004.wav'
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p005.wav'
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p006.wav'
+file 'D:/Proyectos/video2-wt/cvpotatoes/vlog/cvpotatoes/avatar/p007.wav'
