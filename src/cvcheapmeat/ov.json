@@ -1,0 +1,195 @@
+[
+ {
+  "c": "CvPromise",
+  "from": 360,
+  "dur": 210,
+  "props": {
+   "title": "$3 beef that melts like butter",
+   "lines": [
+    "Brown it hard",
+    "Dark beer, lid on, 300°F",
+    "Falls apart under a fork"
+   ],
+   "bed": "vid/cvcheapmeat/bed_0.mp4#214"
+  },
+  "t": 12.0
+ },
+ {
+  "c": "ClDoDont",
+  "from": 717,
+  "dur": 150,
+  "props": {
+   "yes": {
+    "label": "Low oven, 3 hours, lid on"
+   },
+   "no": {
+    "label": "Hard boil for an hour"
+   },
+   "bed": "vid/cvcheapmeat/bed_2.mp4#154"
+  },
+  "t": 23.9
+ },
+ {
+  "c": "CvOldPhoto",
+  "from": 1631,
+  "dur": 225,
+  "props": {
+   "img": "img/cvcheapmeat/joven.jpg",
+   "caption": "The butcher block, 1985",
+   "date": "'85 03 19",
+   "stamp": "40 years · 14 men",
+   "bed": "vid/cvcheapmeat/bed_1.mp4#229"
+  },
+  "t": 54.37
+ },
+ {
+  "c": "ClChip",
+  "from": 4261,
+  "dur": 135,
+  "props": {
+   "text": "Tough = NOT done yet",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 142.03
+ },
+ {
+  "c": "ClCheck",
+  "from": 4672,
+  "dur": 300,
+  "props": {
+   "title": "WHAT YOU NEED",
+   "items": [
+    "3 lb chuck roast or beef shank",
+    "1 bottle dark beer + 1 tbsp cider vinegar",
+    "1 onion · 4 garlic cloves",
+    "2 dried ancho chiles",
+    "1 lb small potatoes · 3 carrots",
+    "Dutch oven with a tight lid"
+   ],
+   "bed": "vid/cvcheapmeat/bed_4.mp4#304"
+  },
+  "t": 155.73
+ },
+ {
+  "c": "ClChip",
+  "from": 5765,
+  "dur": 135,
+  "props": {
+   "text": "Brown in 2 batches · don't crowd",
+   "corner": "tl"
+  },
+  "t": 192.15
+ },
+ {
+  "c": "ClChip",
+  "from": 9089,
+  "dur": 135,
+  "props": {
+   "text": "Liquid HALFWAY up the meat",
+   "corner": "tl"
+  },
+  "t": 302.96
+ },
+ {
+  "c": "ClTimer30",
+  "from": 9496,
+  "dur": 135,
+  "props": {
+   "minutes": 60,
+   "text": "300°F · 2 hours",
+   "label": "Don't open the lid",
+   "bed": "vid/cvcheapmeat/bed_7.mp4#139"
+  },
+  "t": 316.54
+ },
+ {
+  "c": "ClChip",
+  "from": 11663,
+  "dur": 120,
+  "props": {
+   "text": "Potatoes + carrots · 1 more hour",
+   "corner": "tl"
+  },
+  "t": 388.76
+ },
+ {
+  "c": "ClChip",
+  "from": 11842,
+  "dur": 135,
+  "props": {
+   "text": "Fork twist test · falls apart = done",
+   "corner": "tl"
+  },
+  "t": 394.74
+ },
+ {
+  "c": "ClReceipt",
+  "from": 16567,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "3 lb chuck roast",
+     "$21.00"
+    ],
+    [
+     "1 bottle dark beer",
+     "$2.00"
+    ],
+    [
+     "Onion, chiles, garlic, vinegar, lard",
+     "$2.60"
+    ],
+    [
+     "Potatoes + carrots",
+     "$2.00"
+    ]
+   ],
+   "total": [
+    "Per plate (÷6)",
+    "$4.60"
+   ],
+   "bed": "vid/cvcheapmeat/bed_10.mp4#424"
+  },
+  "t": 552.22
+ },
+ {
+  "c": "ClChip",
+  "from": 21742,
+  "dur": 135,
+  "props": {
+   "text": "Fridge within 2 hours · reheat to 165°F",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 724.73
+ },
+ {
+  "c": "ClBookPage",
+  "from": 29653,
+  "dur": 210,
+  "props": {
+   "page": "img/cvcheapmeat/page20.jpg",
+   "pageNo": 20,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 20",
+   "bed": "vid/cvcheapmeat/bed_12.mp4#214"
+  },
+  "t": 988.44
+ },
+ {
+  "c": "ClQRCard",
+  "from": 30367,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvcheapmeat/qr.png",
+   "cover": "img/cvcheapmeat/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvcheapmeat/bed_13.mp4#184"
+  },
+  "t": 1012.22
+ }
+]

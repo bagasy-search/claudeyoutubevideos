@@ -1,0 +1,362 @@
+[
+ {
+  "name": "c15_1",
+  "q": "chuck roast",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Let's talk about why cheap meat is tough. Because once you understand it, you'll never be scared of it again. The cheap cuts come from the parts of the animal that work the hardest. The shoulder, that's the chuck.\" — it must show: chuck roast."
+ },
+ {
+  "name": "c15_2",
+  "q": "beef roast",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Let's talk about why cheap meat is tough. Because once you understand it, you'll never be scared of it again. The cheap cuts come from the parts of the animal that work the hardest. The shoulder, that's the chuck.\" — it must show: beef roast."
+ },
+ {
+  "name": "c16_1",
+  "q": "beef shank",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"The leg, that's the shank. A cow walks all day, so those muscles are strong, and they're held together with a lot of what the butchers call connective tissue. Collagen. It's that white, shiny,\" — it must show: beef shank."
+ },
+ {
+  "name": "c16_2",
+  "q": "beef shin",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"The leg, that's the shank. A cow walks all day, so those muscles are strong, and they're held together with a lot of what the butchers call connective tissue. Collagen. It's that white, shiny,\" — it must show: beef shin."
+ },
+ {
+  "name": "c17_1",
+  "q": "raw beef",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"gristly stuff running through the meat. Raw, it's like rubber bands. You can't chew it. But here's the thing. Collagen, if you cook it low and slow, with moisture around it, for a long time, it melts.\" — it must show: raw beef."
+ },
+ {
+  "name": "c17_2",
+  "q": "beef chunks",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"gristly stuff running through the meat. Raw, it's like rubber bands. You can't chew it. But here's the thing. Collagen, if you cook it low and slow, with moisture around it, for a long time, it melts.\" — it must show: beef chunks."
+ },
+ {
+  "name": "c20_1",
+  "q": "grilling steak",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"The expensive steak doesn't have the collagen to melt. It just dries out if you cook it long. So why does it come out tough at home? Two reasons. Too hot, or too short. If you boil it hard,\" — it must show: grilling steak."
+ },
+ {
+  "name": "c20_2",
+  "q": "steak pan",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"The expensive steak doesn't have the collagen to melt. It just dries out if you cook it long. So why does it come out tough at home? Two reasons. Too hot, or too short. If you boil it hard,\" — it must show: steak pan."
+ },
+ {
+  "name": "c21_1",
+  "q": "boiling meat",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"the meat fibers squeeze and dry out before the collagen has time to melt. And if you take it out after an hour or an hour and a half, the collagen hasn't melted yet. It's still rubber bands.\" — it must show: boiling meat."
+ },
+ {
+  "name": "c21_2",
+  "q": "boiling pot",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"the meat fibers squeeze and dry out before the collagen has time to melt. And if you take it out after an hour or an hour and a half, the collagen hasn't melted yet. It's still rubber bands.\" — it must show: boiling pot."
+ },
+ {
+  "name": "c25_1",
+  "q": "cutting beef",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Three pounds of boneless chuck roast, or beef shank, or a mix of both. Cut it into big chunks, about three inches. Big. Not little stew-meat cubes. Big chunks stay juicier,\" — it must show: cutting beef."
+ },
+ {
+  "name": "c25_2",
+  "q": "butchering beef",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Three pounds of boneless chuck roast, or beef shank, or a mix of both. Cut it into big chunks, about three inches. Big. Not little stew-meat cubes. Big chunks stay juicier,\" — it must show: butchering beef."
+ },
+ {
+  "name": "c26_1",
+  "q": "bone marrow",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"and they don't fall into shreds in the pot. If you're using shank, leave the bone in. That round bone in the middle is full of marrow, and it melts into the sauce and makes it rich. When it's done,\" — it must show: bone marrow."
+ },
+ {
+  "name": "c26_2",
+  "q": "marrow bones",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"and they don't fall into shreds in the pot. If you're using shank, leave the bone in. That round bone in the middle is full of marrow, and it melts into the sauce and makes it rich. When it's done,\" — it must show: marrow bones."
+ },
+ {
+  "name": "c37_1",
+  "q": "dark beer",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"The dark beer gives the sauce a deep, roasted, a little bit bitter flavor, like coffee. And the vinegar, a little acid, keeps the whole thing from tasting flat and heavy.\" — it must show: dark beer."
+ },
+ {
+  "name": "c37_2",
+  "q": "pouring beer",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"The dark beer gives the sauce a deep, roasted, a little bit bitter flavor, like coffee. And the vinegar, a little acid, keeps the whole thing from tasting flat and heavy.\" — it must show: pouring beer."
+ },
+ {
+  "name": "c39_1",
+  "q": "beef broth",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"If you don't drink, or you're cooking for kids, use a cup and a half of beef broth and one more tablespoon of vinegar. It's still good.\" — it must show: beef broth."
+ },
+ {
+  "name": "c39_2",
+  "q": "broth pot",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"If you don't drink, or you're cooking for kids, use a cup and a half of beef broth and one more tablespoon of vinegar. It's still good.\" — it must show: broth pot."
+ },
+ {
+  "name": "c47_1",
+  "q": "butcher shop",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Fourteen men. Half the money. I thought about it for a long time. Then I went to the butcher in town, an old German man named Walter, and I told him what I needed. He laughed and took me in the back.\" — it must show: butcher shop."
+ },
+ {
+  "name": "c47_2",
+  "q": "butcher",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Fourteen men. Half the money. I thought about it for a long time. Then I went to the butcher in town, an old German man named Walter, and I told him what I needed. He laughed and took me in the back.\" — it must show: butcher."
+ },
+ {
+  "name": "c48_1",
+  "q": "beef shanks",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"He had shanks and necks and chuck and oxtails that nobody wanted. He sold them to me for almost nothing. And all winter, I cooked them like this. Low, slow, lid on. Not one man complained.\" — it must show: beef shanks."
+ },
+ {
+  "name": "c48_2",
+  "q": "raw meat",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"He had shanks and necks and chuck and oxtails that nobody wanted. He sold them to me for almost nothing. And all winter, I cooked them like this. Low, slow, lid on. Not one man complained.\" — it must show: raw meat."
+ },
+ {
+  "name": "c64_1",
+  "q": "meat counter",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"At the store. Here's what to ask for. A chuck roast. Look for one with plenty of white fat and gristle running through it. That's what you want for this. The prettiest,\" — it must show: meat counter."
+ },
+ {
+  "name": "c64_2",
+  "q": "meat department",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"At the store. Here's what to ask for. A chuck roast. Look for one with plenty of white fat and gristle running through it. That's what you want for this. The prettiest,\" — it must show: meat department."
+ },
+ {
+  "name": "c65_1",
+  "q": "raw beef shank",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"leanest roast in the case is the worst one for braising. Beef shank, cross-cut, with the bone. Oxtail, if you can find it, but it's not cheap anymore. Short ribs.\" — it must show: raw beef shank."
+ },
+ {
+  "name": "c65_2",
+  "q": "beef shin",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"leanest roast in the case is the worst one for braising. Beef shank, cross-cut, with the bone. Oxtail, if you can find it, but it's not cheap anymore. Short ribs.\" — it must show: beef shin."
+ },
+ {
+  "name": "c66_1",
+  "q": "butcher cutting meat",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Beef cheeks, if you have a good butcher. All of these work. Chuck runs about seven dollars a pound, and shanks around four and a half, a lot cheaper than steaks at fifteen. And ask the butcher what they've got.\" — it must show: butcher cutting meat."
+ },
+ {
+  "name": "c66_2",
+  "q": "butcher knife",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Beef cheeks, if you have a good butcher. All of these work. Chuck runs about seven dollars a pound, and shanks around four and a half, a lot cheaper than steaks at fifteen. And ask the butcher what they've got.\" — it must show: butcher knife."
+ },
+ {
+  "name": "c67_1",
+  "q": "butcher",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Ask if they have any shanks or necks in the back. A lot of times they do, and they'll sell them cheap because nobody asks.\" — it must show: butcher."
+ },
+ {
+  "name": "c67_2",
+  "q": "meat market",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Ask if they have any shanks or necks in the back. A lot of times they do, and they'll sell them cheap because nobody asks.\" — it must show: meat market."
+ },
+ {
+  "name": "c68_1",
+  "q": "freezer bags",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Storing. Four days in the fridge. And it's actually better the next day. The flavors settle in. Freeze it with the sauce, meat and gravy together, in two-portion bags.\" — it must show: freezer bags."
+ },
+ {
+  "name": "c68_2",
+  "q": "frozen food",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Storing. Four days in the fridge. And it's actually better the next day. The flavors settle in. Freeze it with the sauce, meat and gravy together, in two-portion bags.\" — it must show: frozen food."
+ },
+ {
+  "name": "c70_1",
+  "q": "shredded beef",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"And the second supper. Shred the leftover meat with two forks. Warm it in a skillet with a few spoons of the sauce until it's sizzling and a little crispy on the edges. Warm tortillas.\" — it must show: shredded beef."
+ },
+ {
+  "name": "c70_2",
+  "q": "pulled beef",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"And the second supper. Shred the leftover meat with two forks. Warm it in a skillet with a few spoons of the sauce until it's sizzling and a little crispy on the edges. Warm tortillas.\" — it must show: pulled beef."
+ },
+ {
+  "name": "c71_1",
+  "q": "beef tacos",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Meat in, chopped raw onion, cilantro, a squeeze of lime. That's what the crew took for lunch the next day. Or put it on a roll with some of the sauce for dipping. Or fold it into an omelet in the morning.\" — it must show: beef tacos."
+ },
+ {
+  "name": "c71_2",
+  "q": "tacos",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Meat in, chopped raw onion, cilantro, a squeeze of lime. That's what the crew took for lunch the next day. Or put it on a roll with some of the sauce for dipping. Or fold it into an omelet in the morning.\" — it must show: tacos."
+ },
+ {
+  "name": "c75_1",
+  "q": "roasting pan",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"For a crowd. Twenty people. Ten pounds of chuck, in two roasting pans or two big Dutch ovens. Brown it in batches. That takes a while, but don't skip it.\" — it must show: roasting pan."
+ },
+ {
+  "name": "c75_2",
+  "q": "dutch oven",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"For a crowd. Twenty people. Ten pounds of chuck, in two roasting pans or two big Dutch ovens. Brown it in batches. That takes a while, but don't skip it.\" — it must show: dutch oven."
+ },
+ {
+  "name": "c78_1",
+  "q": "dutch oven coals",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Outside. This is the original way. A Dutch oven, the kind with legs, nestled into a bed of coals, with more coals on the lid. You want it about three hundred, gentle.\" — it must show: dutch oven coals."
+ },
+ {
+  "name": "c78_2",
+  "q": "dutch oven campfire",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Outside. This is the original way. A Dutch oven, the kind with legs, nestled into a bed of coals, with more coals on the lid. You want it about three hundred, gentle.\" — it must show: dutch oven campfire."
+ },
+ {
+  "name": "c79_1",
+  "q": "campfire cooking",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Check the coals every hour and add fresh ones from the fire. Three hours, same as the oven. On a cattle drive, a cook would put this on in the afternoon and dig it out of the coals at sundown.\" — it must show: campfire cooking."
+ },
+ {
+  "name": "c79_2",
+  "q": "cooking fire",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Check the coals every hour and add fresh ones from the fire. Three hours, same as the oven. On a cattle drive, a cook would put this on in the afternoon and dig it out of the coals at sundown.\" — it must show: cooking fire."
+ },
+ {
+  "name": "c80_1",
+  "q": "slow cooker",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"A couple of questions. Can I use a slow cooker? Yes. Brown the meat first in a skillet. That part is not optional. Then everything into the slow cooker, on low, eight hours.\" — it must show: slow cooker."
+ },
+ {
+  "name": "c80_2",
+  "q": "crockpot",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"A couple of questions. Can I use a slow cooker? Yes. Brown the meat first in a skillet. That part is not optional. Then everything into the slow cooker, on low, eight hours.\" — it must show: crockpot."
+ },
+ {
+  "name": "c81_1",
+  "q": "pressure cooker",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Add the potatoes and carrots for the last two hours. What about a pressure cooker? It works and it's fast, about an hour. It's good. But I think the slow oven makes a richer sauce.\" — it must show: pressure cooker."
+ },
+ {
+  "name": "c81_2",
+  "q": "instant pot",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Add the potatoes and carrots for the last two hours. What about a pressure cooker? It works and it's fast, about an hour. It's good. But I think the slow oven makes a richer sauce.\" — it must show: instant pot."
+ },
+ {
+  "name": "c82_1",
+  "q": "pouring red wine",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Can I use red wine instead of beer? Yes. One and a half cups of dry red wine. It's more like a French pot roast. Also good. Why ancho chiles? They're mild, a little sweet,\" — it must show: pouring red wine."
+ },
+ {
+  "name": "c82_2",
+  "q": "red wine",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Can I use red wine instead of beer? Yes. One and a half cups of dry red wine. It's more like a French pot roast. Also good. Why ancho chiles? They're mild, a little sweet,\" — it must show: red wine."
+ },
+ {
+  "name": "c90_1",
+  "q": "refrigerator",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"And a safety thing, because a big pot of meat is a big pot of meat. When supper's over, don't leave the pot sitting on the stove all night to cool. Get the leftovers in the fridge within two hours.\" — it must show: refrigerator."
+ },
+ {
+  "name": "c90_2",
+  "q": "fridge",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"And a safety thing, because a big pot of meat is a big pot of meat. When supper's over, don't leave the pot sitting on the stove all night to cool. Get the leftovers in the fridge within two hours.\" — it must show: fridge."
+ },
+ {
+  "name": "c91_1",
+  "q": "food containers",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"A big heavy pot holds its heat a long time, and that warm middle is where bacteria grow. So split it up into a few shallow containers. It cools fast that way. Then it's good for four days.\" — it must show: food containers."
+ },
+ {
+  "name": "c91_2",
+  "q": "meal prep containers",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"A big heavy pot holds its heat a long time, and that warm middle is where bacteria grow. So split it up into a few shallow containers. It cools fast that way. Then it's good for four days.\" — it must show: meal prep containers."
+ },
+ {
+  "name": "c97_1",
+  "q": "raw beef cuts",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Let me walk you through the cuts one more time, because the meat case is confusing. Chuck roast. The best all-around cut for this. Marbled, cheap, easy to find in every store in America.\" — it must show: raw beef cuts."
+ },
+ {
+  "name": "c97_2",
+  "q": "beef cuts",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Let me walk you through the cuts one more time, because the meat case is confusing. Chuck roast. The best all-around cut for this. Marbled, cheap, easy to find in every store in America.\" — it must show: beef cuts."
+ },
+ {
+  "name": "c98_1",
+  "q": "short ribs",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Chuck eye, the same, a little more tender. Beef shank, the cross-cut slices with the round bone. The cheapest, and the most gelatin. Short ribs, with the bone,\" — it must show: short ribs."
+ },
+ {
+  "name": "c98_2",
+  "q": "beef short ribs",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Chuck eye, the same, a little more tender. Beef shank, the cross-cut slices with the round bone. The cheapest, and the most gelatin. Short ribs, with the bone,\" — it must show: beef short ribs."
+ },
+ {
+  "name": "c99_1",
+  "q": "oxtail",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"rich and fatty, a little more money. Oxtail, the richest of all, but it went from cheap to expensive over the years. Beef cheeks. If you ever see them, buy them. They're the most tender of all when they're braised.\" — it must show: oxtail."
+ },
+ {
+  "name": "c99_2",
+  "q": "oxtail stew",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"rich and fatty, a little more money. Oxtail, the richest of all, but it went from cheap to expensive over the years. Beef cheeks. If you ever see them, buy them. They're the most tender of all when they're braised.\" — it must show: oxtail stew."
+ },
+ {
+  "name": "c100_1",
+  "q": "brisket",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"And brisket, the point end, the fatty part. All of these, the same recipe. Same oven, same lid. What doesn't work as well? Eye of round, bottom round, top round.\" — it must show: brisket."
+ },
+ {
+  "name": "c100_2",
+  "q": "beef brisket",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"And brisket, the point end, the fatty part. All of these, the same recipe. Same oven, same lid. What doesn't work as well? Eye of round, bottom round, top round.\" — it must show: beef brisket."
+ },
+ {
+  "name": "c102_1",
+  "q": "mashed potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"What to serve it with. On the ranch, it was always tortillas and a pot of beans, because that's what we had. But on Sundays, mashed potatoes. You leave the potatoes out of the pot, make mashed potatoes on the side,\" — it must show: mashed potatoes."
+ },
+ {
+  "name": "c102_2",
+  "q": "mashed potato",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"What to serve it with. On the ranch, it was always tortillas and a pot of beans, because that's what we had. But on Sundays, mashed potatoes. You leave the potatoes out of the pot, make mashed potatoes on the side,\" — it must show: mashed potato."
+ },
+ {
+  "name": "c103_1",
+  "q": "egg noodles",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"and pour that dark sauce right over the top. Or a pan of biscuits to wipe the plate. Or rice. Or egg noodles, the wide ones, with butter.\" — it must show: egg noodles."
+ },
+ {
+  "name": "c103_2",
+  "q": "noodles",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"and pour that dark sauce right over the top. Or a pan of biscuits to wipe the plate. Or rice. Or egg noodles, the wide ones, with butter.\" — it must show: noodles."
+ },
+ {
+  "name": "c105_1",
+  "q": "black coffee",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"A few ways to change it. Use a cup of strong black coffee instead of half the beer. It sounds strange, but it makes the sauce deep and dark. That's an old chuck-wagon trick. Coffee was always on the fire.\" — it must show: black coffee."
+ },
+ {
+  "name": "c105_2",
+  "q": "coffee pot",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"A few ways to change it. Use a cup of strong black coffee instead of half the beer. It sounds strange, but it makes the sauce deep and dark. That's an old chuck-wagon trick. Coffee was always on the fire.\" — it must show: coffee pot."
+ },
+ {
+  "name": "c106_1",
+  "q": "chipotle peppers",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Or add one chipotle pepper in adobo, out of the little can, chopped. That makes it smoky and a little spicy.\" — it must show: chipotle peppers."
+ },
+ {
+  "name": "c106_2",
+  "q": "chipotle",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Or add one chipotle pepper in adobo, out of the little can, chopped. That makes it smoky and a little spicy.\" — it must show: chipotle."
+ },
+ {
+  "name": "c107_1",
+  "q": "cinnamon stick",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Or the peel of one orange, in a long strip, and a stick of cinnamon. Take them out at the end. My wife made it that way at Christmas.\" — it must show: cinnamon stick."
+ },
+ {
+  "name": "c107_2",
+  "q": "orange peel",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Or the peel of one orange, in a long strip, and a stick of cinnamon. Take them out at the end. My wife made it that way at Christmas.\" — it must show: orange peel."
+ },
+ {
+  "name": "c112_1",
+  "q": "flouring meat",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Some cooks dust the meat with flour before they brown it. A little flour, shake off the extra. The flour browns, and later it thickens the sauce a little, so it coats the meat like gravy.\" — it must show: flouring meat."
+ },
+ {
+  "name": "c112_2",
+  "q": "flour meat",
+  "scene": "Real documentary footage for a ranch cook's video about braised beef, while he says: \"Some cooks dust the meat with flour before they brown it. A little flour, shake off the extra. The flour browns, and later it thickens the sauce a little, so it coats the meat like gravy.\" — it must show: flour meat."
+ }
+]

@@ -1,0 +1,5 @@
+vid/cvcheapmeat
+img/cvcheapmeat/cover.jpg
+img/cvcheapmeat/joven.jpg
+img/cvcheapmeat/page20.jpg
+img/cvcheapmeat/qr.png

@@ -1,0 +1,7 @@
+file 'D:/Proyectos/video2-wt/cvcheapmeat/vlog/cvcheapmeat/avatar/p000.wav'
+file 'D:/Proyectos/video2-wt/cvcheapmeat/vlog/cvcheapmeat/avatar/p001.wav'
+file 'D:/Proyectos/video2-wt/cvcheapmeat/vlog/cvcheapmeat/avatar/p002.wav'
+file 'D:/Proyectos/video2-wt/cvcheapmeat/vlog/cvcheapmeat/avatar/p003.wav'
+file 'D:/Proyectos/video2-wt/cvcheapmeat/vlog/cvcheapmeat/avatar/p004.wav'
+file 'D:/Proyectos/video2-wt/cvcheapmeat/vlog/cvcheapmeat/avatar/p005.wav'
+file 'D:/Proyectos/video2-wt/cvcheapmeat/vlog/cvcheapmeat/avatar/p006.wav'

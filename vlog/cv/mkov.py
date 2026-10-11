@@ -25,6 +25,7 @@ for n, (c, s, d, p) in enumerate(OV):
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{fr / 30:.4f}", "-i", VLOG, "-frames:v", str(nfr + 4), "-an", "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", "-pix_fmt", "yuv420p", b], check=True)
         p = {**p, "bed": f"vid/{S}/bed_{n}.mp4#{nfr + 4}"}
     out.append({"c": c, "from": fr, "dur": nfr, "props": p, "t": round(s, 2)})
+out.sort(key=lambda o: o["from"])  # el ov_list puede no venir en orden (intro agregada arriba)
 keep = []  # un chip que pisa a otro componente se cae (LIMPIO gana a denso); otros solapes se avisan
 for o in out:
     if keep and keep[-1]["from"] + keep[-1]["dur"] > o["from"]:

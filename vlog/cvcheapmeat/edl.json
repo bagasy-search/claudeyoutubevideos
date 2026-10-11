@@ -1,0 +1,1030 @@
+[
+ {
+  "id": "c01",
+  "kind": "avatar",
+  "f0": 0,
+  "n": 52,
+  "sf": 0.1
+ },
+ {
+  "id": "c02",
+  "kind": "avatar",
+  "f0": 52,
+  "n": 129,
+  "sf": 1.833
+ },
+ {
+  "id": "c03",
+  "kind": "avatar",
+  "f0": 181,
+  "n": 162,
+  "sf": 6.133
+ },
+ {
+  "id": "c04",
+  "kind": "avatar",
+  "f0": 343,
+  "n": 127,
+  "sf": 11.533
+ },
+ {
+  "id": "c05",
+  "kind": "avatar",
+  "f0": 470,
+  "n": 176,
+  "sf": 15.767
+ },
+ {
+  "id": "c06",
+  "kind": "avatar",
+  "f0": 646,
+  "n": 132,
+  "sf": 21.633
+ },
+ {
+  "id": "c07",
+  "kind": "avatar",
+  "f0": 778,
+  "n": 144,
+  "sf": 26.033
+ },
+ {
+  "id": "c08",
+  "kind": "avatar",
+  "f0": 922,
+  "n": 131,
+  "sf": 30.833
+ },
+ {
+  "id": "c09",
+  "kind": "avatar",
+  "f0": 1053,
+  "n": 131,
+  "sf": 35.2
+ },
+ {
+  "id": "c10",
+  "kind": "avatar",
+  "f0": 1184,
+  "n": 275,
+  "sf": 39.567
+ },
+ {
+  "id": "c11",
+  "kind": "avatar",
+  "f0": 1459,
+  "n": 119,
+  "sf": 48.733
+ },
+ {
+  "id": "c12",
+  "kind": "avatar",
+  "f0": 1578,
+  "n": 120,
+  "sf": 52.7
+ },
+ {
+  "id": "c13",
+  "kind": "avatar",
+  "f0": 1698,
+  "n": 170,
+  "sf": 56.7
+ },
+ {
+  "id": "c14",
+  "kind": "img",
+  "img": "S02/anc/K1.png",
+  "f0": 1868,
+  "n": 204
+ },
+ {
+  "id": "c15",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c15_1.mp4",
+  "f0": 2072,
+  "n": 163
+ },
+ {
+  "id": "c15",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c15_2.mp4",
+  "f0": 2235,
+  "n": 163
+ },
+ {
+  "id": "c16",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c16_1.mp4",
+  "f0": 2398,
+  "n": 157,
+  "slow": 0.857
+ },
+ {
+  "id": "c16",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c16_2.mp4",
+  "f0": 2555,
+  "n": 156
+ },
+ {
+  "id": "c17",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c17_2.mp4",
+  "f0": 2711,
+  "n": 355,
+  "slow": 0.677
+ },
+ {
+  "id": "c18",
+  "kind": "img",
+  "img": "S03/anc/K1.png",
+  "f0": 3066,
+  "n": 340
+ },
+ {
+  "id": "c19",
+  "kind": "img",
+  "img": "S03/anc/K2.png",
+  "f0": 3406,
+  "n": 213
+ },
+ {
+  "id": "c20",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c20_1.mp4",
+  "f0": 3619,
+  "n": 156
+ },
+ {
+  "id": "c20",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c20_2.mp4",
+  "f0": 3775,
+  "n": 156
+ },
+ {
+  "id": "c21",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c21_1.mp4",
+  "f0": 3931,
+  "n": 151
+ },
+ {
+  "id": "c21",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c21_2.mp4",
+  "f0": 4082,
+  "n": 150
+ },
+ {
+  "id": "c22",
+  "kind": "img",
+  "img": "S03/anc/K3.png",
+  "f0": 4232,
+  "n": 159
+ },
+ {
+  "id": "c23",
+  "kind": "avatar",
+  "f0": 4391,
+  "n": 200,
+  "sf": 62.598
+ },
+ {
+  "id": "c24",
+  "kind": "avatar",
+  "f0": 4591,
+  "n": 168,
+  "sf": 69.264
+ },
+ {
+  "id": "c25",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c25_1.mp4",
+  "f0": 4759,
+  "n": 319,
+  "slow": 0.842
+ },
+ {
+  "id": "c26",
+  "kind": "img",
+  "img": "fotos/c26_a.png",
+  "f0": 5078,
+  "n": 316
+ },
+ {
+  "id": "c27",
+  "kind": "img",
+  "img": "S05/anc/K1.png",
+  "f0": 5394,
+  "n": 180
+ },
+ {
+  "id": "c28",
+  "kind": "img",
+  "img": "S06/anc/K1.png",
+  "f0": 5574,
+  "n": 300
+ },
+ {
+  "id": "c29",
+  "kind": "img",
+  "img": "S07/anc/K1.png",
+  "f0": 5874,
+  "n": 312
+ },
+ {
+  "id": "c30",
+  "kind": "img",
+  "img": "S07/anc/K2.png",
+  "f0": 6186,
+  "n": 320
+ },
+ {
+  "id": "c31",
+  "kind": "img",
+  "img": "S08/anc/K1.png",
+  "f0": 6506,
+  "n": 299
+ },
+ {
+  "id": "c32",
+  "kind": "img",
+  "img": "S08/anc/K2.png",
+  "f0": 6805,
+  "n": 232
+ },
+ {
+  "id": "c33",
+  "kind": "img",
+  "img": "S09/anc/K1.png",
+  "f0": 7037,
+  "n": 355
+ },
+ {
+  "id": "c34",
+  "kind": "img",
+  "img": "S09/anc/K2.png",
+  "f0": 7392,
+  "n": 252
+ },
+ {
+  "id": "c35",
+  "kind": "img",
+  "img": "S10/anc/K1.png",
+  "f0": 7644,
+  "n": 301
+ },
+ {
+  "id": "c36",
+  "kind": "img",
+  "img": "S11/anc/K1.png",
+  "f0": 7945,
+  "n": 293
+ },
+ {
+  "id": "c37",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c37_1.mp4",
+  "f0": 8238,
+  "n": 143
+ },
+ {
+  "id": "c37",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c37_2.mp4",
+  "f0": 8381,
+  "n": 142
+ },
+ {
+  "id": "c38",
+  "kind": "img",
+  "img": "S11/anc/K2.png",
+  "f0": 8523,
+  "n": 194
+ },
+ {
+  "id": "c39",
+  "kind": "img",
+  "img": "fotos/c39_a.png",
+  "f0": 8717,
+  "n": 226
+ },
+ {
+  "id": "c40",
+  "kind": "img",
+  "img": "S11/anc/K3.png",
+  "f0": 8943,
+  "n": 138
+ },
+ {
+  "id": "c41",
+  "kind": "img",
+  "img": "S12/anc/K1.png",
+  "f0": 9081,
+  "n": 337
+ },
+ {
+  "id": "c42",
+  "kind": "img",
+  "img": "S12/anc/K2.png",
+  "f0": 9418,
+  "n": 249
+ },
+ {
+  "id": "c43",
+  "kind": "img",
+  "img": "S13/anc/K1.png",
+  "f0": 9667,
+  "n": 130
+ },
+ {
+  "id": "c44",
+  "kind": "img",
+  "img": "S14/anc/K1.png",
+  "f0": 9797,
+  "n": 168
+ },
+ {
+  "id": "c45",
+  "kind": "img",
+  "img": "S14/anc/K2.png",
+  "f0": 9965,
+  "n": 247
+ },
+ {
+  "id": "c46",
+  "kind": "avatar",
+  "f0": 10212,
+  "n": 330,
+  "sf": 75.106
+ },
+ {
+  "id": "c47",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c47_1.mp4",
+  "f0": 10542,
+  "n": 154
+ },
+ {
+  "id": "c47",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c47_2.mp4",
+  "f0": 10696,
+  "n": 153
+ },
+ {
+  "id": "c48",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c48_2.mp4",
+  "f0": 10849,
+  "n": 354,
+  "slow": 0.566
+ },
+ {
+  "id": "c49",
+  "kind": "avatar",
+  "f0": 11203,
+  "n": 241,
+  "sf": 86.345
+ },
+ {
+  "id": "c50",
+  "kind": "img",
+  "img": "S16/anc/K1.png",
+  "f0": 11444,
+  "n": 300
+ },
+ {
+  "id": "c51",
+  "kind": "img",
+  "img": "S16/anc/K2.png",
+  "f0": 11744,
+  "n": 137
+ },
+ {
+  "id": "c52",
+  "kind": "avatar",
+  "f0": 11881,
+  "n": 68,
+  "sf": 94.624
+ },
+ {
+  "id": "c53",
+  "kind": "img",
+  "img": "S18/anc/K1.png",
+  "f0": 11949,
+  "n": 304
+ },
+ {
+  "id": "c54",
+  "kind": "img",
+  "img": "S18/anc/K2.png",
+  "f0": 12253,
+  "n": 320
+ },
+ {
+  "id": "c55",
+  "kind": "img",
+  "img": "S19/anc/K1.png",
+  "f0": 12573,
+  "n": 340
+ },
+ {
+  "id": "c56",
+  "kind": "img",
+  "img": "S20/anc/K1.png",
+  "f0": 12913,
+  "n": 311
+ },
+ {
+  "id": "c57",
+  "kind": "img",
+  "img": "S21/anc/K1.png",
+  "f0": 13224,
+  "n": 45
+ },
+ {
+  "id": "c58",
+  "kind": "img",
+  "img": "S22/anc/K1.png",
+  "f0": 13269,
+  "n": 101
+ },
+ {
+  "id": "c59",
+  "kind": "img",
+  "img": "S23/anc/K1.png",
+  "f0": 13370,
+  "n": 217
+ },
+ {
+  "id": "c60",
+  "kind": "img",
+  "img": "S24/anc/K1.png",
+  "f0": 13587,
+  "n": 294
+ },
+ {
+  "id": "c61",
+  "kind": "img",
+  "img": "S24/anc/K2.png",
+  "f0": 13881,
+  "n": 307
+ },
+ {
+  "id": "c62",
+  "kind": "img",
+  "img": "S24/anc/K3.png",
+  "f0": 14188,
+  "n": 234
+ },
+ {
+  "id": "c63",
+  "kind": "img",
+  "img": "S24/anc/K4.png",
+  "f0": 14422,
+  "n": 260
+ },
+ {
+  "id": "c64",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c64_2.mp4",
+  "f0": 14682,
+  "n": 290,
+  "slow": 0.926
+ },
+ {
+  "id": "c65",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c65_1.mp4",
+  "f0": 14972,
+  "n": 154
+ },
+ {
+  "id": "c65",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c65_2.mp4",
+  "f0": 15126,
+  "n": 154
+ },
+ {
+  "id": "c66",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c66_1.mp4",
+  "f0": 15280,
+  "n": 161
+ },
+ {
+  "id": "c66",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c66_2.mp4",
+  "f0": 15441,
+  "n": 161
+ },
+ {
+  "id": "c67",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c67_1.mp4",
+  "f0": 15602,
+  "n": 198
+ },
+ {
+  "id": "c68",
+  "kind": "img",
+  "img": "fotos/c68_a.png",
+  "f0": 15800,
+  "n": 149
+ },
+ {
+  "id": "c68",
+  "kind": "img",
+  "img": "fotos/c68_b.png",
+  "f0": 15949,
+  "n": 148
+ },
+ {
+  "id": "c69",
+  "kind": "img",
+  "img": "S26/anc/K1.png",
+  "f0": 16097,
+  "n": 162
+ },
+ {
+  "id": "c70",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c70_1.mp4",
+  "f0": 16259,
+  "n": 302,
+  "slow": 0.889
+ },
+ {
+  "id": "c71",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c71_1.mp4",
+  "f0": 16561,
+  "n": 166
+ },
+ {
+  "id": "c71",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c71_2.mp4",
+  "f0": 16727,
+  "n": 166
+ },
+ {
+  "id": "c72",
+  "kind": "img",
+  "img": "S28/anc/K1.png",
+  "f0": 16893,
+  "n": 321
+ },
+ {
+  "id": "c73",
+  "kind": "img",
+  "img": "S28/anc/K2.png",
+  "f0": 17214,
+  "n": 295
+ },
+ {
+  "id": "c74",
+  "kind": "img",
+  "img": "S28/anc/K3.png",
+  "f0": 17509,
+  "n": 343
+ },
+ {
+  "id": "c75",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c75_2.mp4",
+  "f0": 17852,
+  "n": 303,
+  "slow": 0.886
+ },
+ {
+  "id": "c76",
+  "kind": "img",
+  "img": "S29/anc/K1.png",
+  "f0": 18155,
+  "n": 174
+ },
+ {
+  "id": "c77",
+  "kind": "img",
+  "img": "S30/anc/K1.png",
+  "f0": 18329,
+  "n": 322
+ },
+ {
+  "id": "c78",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c78_1.mp4",
+  "f0": 18651,
+  "n": 143,
+  "slow": 0.808
+ },
+ {
+  "id": "c78",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c78_2.mp4",
+  "f0": 18794,
+  "n": 142
+ },
+ {
+  "id": "c79",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c79_1.mp4",
+  "f0": 18936,
+  "n": 157
+ },
+ {
+  "id": "c79",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c79_2.mp4",
+  "f0": 19093,
+  "n": 156
+ },
+ {
+  "id": "c80",
+  "kind": "img",
+  "img": "fotos/c80_a.png",
+  "f0": 19249,
+  "n": 306
+ },
+ {
+  "id": "c81",
+  "kind": "img",
+  "img": "fotos/c81_a.png",
+  "f0": 19555,
+  "n": 305
+ },
+ {
+  "id": "c82",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c82_2.mp4",
+  "f0": 19860,
+  "n": 333,
+  "slow": 0.806
+ },
+ {
+  "id": "c83",
+  "kind": "img",
+  "img": "S32/anc/K1.png",
+  "f0": 20193,
+  "n": 180
+ },
+ {
+  "id": "c84",
+  "kind": "img",
+  "img": "S33/anc/K1.png",
+  "f0": 20373,
+  "n": 290
+ },
+ {
+  "id": "c85",
+  "kind": "img",
+  "img": "S33/anc/K2.png",
+  "f0": 20663,
+  "n": 230
+ },
+ {
+  "id": "c86",
+  "kind": "img",
+  "img": "S33/anc/K3.png",
+  "f0": 20893,
+  "n": 330
+ },
+ {
+  "id": "c87",
+  "kind": "img",
+  "img": "S34/anc/K1.png",
+  "f0": 21223,
+  "n": 328
+ },
+ {
+  "id": "c88",
+  "kind": "img",
+  "img": "S34/anc/K2.png",
+  "f0": 21551,
+  "n": 256
+ },
+ {
+  "id": "c89",
+  "kind": "img",
+  "img": "S34/anc/K3.png",
+  "f0": 21807,
+  "n": 153
+ },
+ {
+  "id": "c90",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c90_1.mp4",
+  "f0": 21960,
+  "n": 157
+ },
+ {
+  "id": "c90",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c90_2.mp4",
+  "f0": 22117,
+  "n": 156
+ },
+ {
+  "id": "c91",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c91_1.mp4",
+  "f0": 22273,
+  "n": 159
+ },
+ {
+  "id": "c91",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c91_2.mp4",
+  "f0": 22432,
+  "n": 159
+ },
+ {
+  "id": "c92",
+  "kind": "img",
+  "img": "S35/anc/K1.png",
+  "f0": 22591,
+  "n": 198
+ },
+ {
+  "id": "c93",
+  "kind": "avatar",
+  "f0": 22789,
+  "n": 326,
+  "sf": 97.13
+ },
+ {
+  "id": "c94",
+  "kind": "avatar",
+  "f0": 23115,
+  "n": 304,
+  "sf": 107.997
+ },
+ {
+  "id": "c95",
+  "kind": "avatar",
+  "f0": 23419,
+  "n": 276,
+  "sf": 118.13
+ },
+ {
+  "id": "c96",
+  "kind": "avatar",
+  "f0": 23695,
+  "n": 133,
+  "sf": 127.33
+ },
+ {
+  "id": "c97",
+  "kind": "img",
+  "img": "fotos/c97_a.png",
+  "f0": 23828,
+  "n": 309
+ },
+ {
+  "id": "c98",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c98_1.mp4",
+  "f0": 24137,
+  "n": 294,
+  "slow": 0.77
+ },
+ {
+  "id": "c99",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c99_2.mp4",
+  "f0": 24431,
+  "n": 353,
+  "slow": 0.761
+ },
+ {
+  "id": "c100",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c100_1.mp4",
+  "f0": 24784,
+  "n": 156
+ },
+ {
+  "id": "c100",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c100_2.mp4",
+  "f0": 24940,
+  "n": 156
+ },
+ {
+  "id": "c101",
+  "kind": "img",
+  "img": "S37/anc/K1.png",
+  "f0": 25096,
+  "n": 256
+ },
+ {
+  "id": "c102",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c102_1.mp4",
+  "f0": 25352,
+  "n": 165
+ },
+ {
+  "id": "c102",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c102_2.mp4",
+  "f0": 25517,
+  "n": 164,
+  "slow": 0.869
+ },
+ {
+  "id": "c103",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c103_2.mp4",
+  "f0": 25681,
+  "n": 234
+ },
+ {
+  "id": "c104",
+  "kind": "img",
+  "img": "S38/anc/K1.png",
+  "f0": 25915,
+  "n": 171
+ },
+ {
+  "id": "c105",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c105_1.mp4",
+  "f0": 26086,
+  "n": 163
+ },
+ {
+  "id": "c105",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c105_2.mp4",
+  "f0": 26249,
+  "n": 162
+ },
+ {
+  "id": "c106",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c106_1.mp4",
+  "f0": 26411,
+  "n": 97
+ },
+ {
+  "id": "c106",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c106_2.mp4",
+  "f0": 26508,
+  "n": 97
+ },
+ {
+  "id": "c107",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c107_1.mp4",
+  "f0": 26605,
+  "n": 107
+ },
+ {
+  "id": "c107",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c107_2.mp4",
+  "f0": 26712,
+  "n": 106
+ },
+ {
+  "id": "c108",
+  "kind": "img",
+  "img": "S40/anc/K1.png",
+  "f0": 26818,
+  "n": 325
+ },
+ {
+  "id": "c109",
+  "kind": "img",
+  "img": "S40/anc/K2.png",
+  "f0": 27143,
+  "n": 294
+ },
+ {
+  "id": "c110",
+  "kind": "img",
+  "img": "S40/anc/K3.png",
+  "f0": 27437,
+  "n": 166
+ },
+ {
+  "id": "c111",
+  "kind": "img",
+  "img": "S40/anc/K4.png",
+  "f0": 27603,
+  "n": 192
+ },
+ {
+  "id": "c112",
+  "kind": "stock",
+  "file": "broll/cvcheapmeat_st/c112_2.mp4",
+  "f0": 27795,
+  "n": 303,
+  "slow": 0.886
+ },
+ {
+  "id": "c113",
+  "kind": "img",
+  "img": "S41/anc/K1.png",
+  "f0": 28098,
+  "n": 191
+ },
+ {
+  "id": "c114",
+  "kind": "img",
+  "img": "S41/anc/K2.png",
+  "f0": 28289,
+  "n": 207
+ },
+ {
+  "id": "c115",
+  "kind": "img",
+  "img": "S42/anc/K1.png",
+  "f0": 28496,
+  "n": 315
+ },
+ {
+  "id": "c116",
+  "kind": "img",
+  "img": "S42/anc/K2.png",
+  "f0": 28811,
+  "n": 271
+ },
+ {
+  "id": "c117",
+  "kind": "img",
+  "img": "S43/anc/K1.png",
+  "f0": 29082,
+  "n": 293
+ },
+ {
+  "id": "c118",
+  "kind": "img",
+  "img": "S43/anc/K2.png",
+  "f0": 29375,
+  "n": 323
+ },
+ {
+  "id": "c119",
+  "kind": "img",
+  "img": "S43/anc/K3.png",
+  "f0": 29698,
+  "n": 209
+ },
+ {
+  "id": "c120",
+  "kind": "avatar",
+  "f0": 29907,
+  "n": 154,
+  "sf": 131.904
+ },
+ {
+  "id": "c121",
+  "kind": "avatar",
+  "f0": 30061,
+  "n": 220,
+  "sf": 137.037
+ },
+ {
+  "id": "c122",
+  "kind": "avatar",
+  "f0": 30281,
+  "n": 354,
+  "sf": 144.371
+ },
+ {
+  "id": "c123",
+  "kind": "avatar",
+  "f0": 30635,
+  "n": 319,
+  "sf": 156.171
+ },
+ {
+  "id": "c124",
+  "kind": "avatar",
+  "f0": 30954,
+  "n": 159,
+  "sf": 166.804
+ },
+ {
+  "id": "c125",
+  "kind": "avatar",
+  "f0": 31113,
+  "n": 261,
+  "sf": 172.104
+ },
+ {
+  "id": "c126",
+  "kind": "avatar",
+  "f0": 31374,
+  "n": 309,
+  "sf": 180.804
+ }
+]
