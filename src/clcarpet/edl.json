@@ -1,0 +1,2039 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 6.47,
+"k": "",
+"c": "DropOpen",
+"props": {
+"k": "n_ironsteam",
+"words": [
+[
+"The",
+0.0
+],
+[
+"church",
+0.2
+],
+[
+"carpet",
+0.56
+],
+[
+"had",
+1.02
+],
+[
+"fifty",
+1.38
+],
+[
+"years",
+1.78
+],
+[
+"of",
+2.14
+],
+[
+"coffee",
+2.44
+],
+[
+"on",
+2.76
+],
+[
+"it,",
+3.04
+],
+[
+"honey.",
+3.38
+],
+[
+"Fifty",
+3.94
+],
+[
+"years",
+4.34
+],
+[
+"of",
+4.7
+],
+[
+"Sunday",
+4.98
+],
+[
+"coffee",
+5.3
+],
+[
+"hour,",
+5.88
+]
+],
+"ripple": 13.973
+}
+},
+{
+"a": 6.47,
+"b": 19.2,
+"k": "",
+"c": "HalfDoor",
+"props": {
+"k": "n_coffeecarpet",
+"l": 6.9,
+"r": 15.6,
+"same": 11.3
+}
+},
+{
+"a": 19.2,
+"b": 27.76,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clcarpet/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"The",
+21.15
+],
+[
+"Best",
+21.45
+],
+[
+"Way",
+21.7
+],
+[
+"to",
+25.5
+],
+[
+"Clean",
+25.8
+],
+[
+"Stainless",
+26.05
+],
+[
+"Steel",
+26.3
+],
+[
+"Appliances",
+26.55
+]
+],
+"k": "n_coffeecarpet"
+}
+},
+{
+"a": 27.76,
+"b": 36.02,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 36.02,
+"b": 43.094,
+"k": "s004_n_scrubcarpet",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 43.094,
+"b": 52.544,
+"k": "s005_l_knees",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 52.544,
+"b": 57.9,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 57.9,
+"b": 62.25,
+"k": "s007_n_brownring",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 62.25,
+"b": 66.74,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 66.74,
+"b": 75.747,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 69.5,
+"hl": 14
+}
+],
+"k": "n_towelwhite"
+}
+},
+{
+"a": 75.747,
+"b": 87.183,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT YOU NEED \u00b7 PAGE 40",
+"items": [
+{
+"t": 76.4,
+"txt": "One part white vinegar"
+},
+{
+"t": 79.2,
+"txt": "Two parts water"
+},
+{
+"t": 81.7,
+"txt": "A drop of dish soap"
+},
+{
+"t": 83.8,
+"txt": "A clean white cotton towel"
+},
+{
+"t": 87.4,
+"txt": "A steam iron"
+}
+],
+"k": "n_towelwhite"
+}
+},
+{
+"a": 87.183,
+"b": 94.95,
+"k": "",
+"c": "CostTag",
+"props": {
+"price": "PENNIES",
+"sub": "NOT A $40 RENTAL",
+"k": "n_coins"
+}
+},
+{
+"a": 94.95,
+"b": 102.347,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 102.347,
+"b": 108.82,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 108.82,
+"b": 115.86,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dining_hall_1950s",
+"vid": true,
+"cap": "1950s \u00b7 a dining hall, tablecloths set",
+"credit": "Hotel kitchen film (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 115.86,
+"b": 124.853,
+"k": "s015_n_coffeehour",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 124.853,
+"b": 135.777,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_bernice",
+"caption": "Bernice \u00b7 never rub",
+"date": "Zion \u00b7 the 1970s",
+"t": 130.2
+}
+},
+{
+"a": 135.777,
+"b": 143.15,
+"k": "s017_n_ironboard",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 143.15,
+"b": 153.427,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 153.427,
+"b": 160.757,
+"k": "s019_n_steamtowel",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 160.757,
+"b": 167.95,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page3",
+"tab": "PAGE 3",
+"t": 163.5,
+"hl": 15
+}
+],
+"k": "n_bottlesrow"
+}
+},
+{
+"a": 167.95,
+"b": 173.327,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 173.327,
+"b": 180.404,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 180.404,
+"b": 186.06,
+"k": "",
+"c": "NeverMix",
+"props": {
+"rows": [
+{
+"t": 181.5,
+"a": "BLEACH",
+"b": [
+"VINEGAR",
+"RUBBING ALCOHOL"
+]
+},
+{
+"t": 183.0,
+"a": "VINEGAR",
+"b": [
+"HYDROGEN PEROXIDE"
+]
+}
+],
+"gas": [
+184.5,
+"HARMFUL GASES"
+],
+"k": "page3"
+}
+},
+{
+"a": 186.06,
+"b": 191.25,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 191.25,
+"b": 197.746,
+"k": "s025_n_grapejuice",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 197.746,
+"b": 203.48,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_floor_1950",
+"vid": true,
+"cap": "1950 \u00b7 the living room floor",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 203.48,
+"b": 209.06,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 209.06,
+"b": 215.957,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_vacuum_carpet_1950s",
+"vid": true,
+"cap": "1950s \u00b7 a carpet in the living room",
+"credit": "The Carpet That's Miles Above (1950s film) \u00b7 Public domain"
+}
+},
+{
+"a": 215.957,
+"b": 223.613,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page39",
+"tab": "PAGE 39",
+"t": 218.4,
+"hl": 12
+}
+],
+"k": "n_blothand"
+}
+},
+{
+"a": 223.613,
+"b": 228.953,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 228.953,
+"b": 233.476,
+"k": "s031_n_blothand",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 233.476,
+"b": 258.134,
+"k": "",
+"c": "Shelf",
+"props": {
+"head": "WHAT I USE \u00b7 PAGE 40",
+"items": [
+{
+"t": 238.1,
+"name": "Spray bottle",
+"use": "vinegar, water, one drop of soap",
+"k": "n_vinegarspray"
+},
+{
+"t": 242.8,
+"name": "White cotton towel",
+"use": "clean, and white",
+"k": "n_towelwhite"
+},
+{
+"t": 245.1,
+"name": "Steam iron",
+"use": "on steam, and always moving",
+"k": "n_ironsteam"
+},
+{
+"t": 248.4,
+"name": "Plain bottles",
+"use": "no machine, no picture on the front",
+"k": "n_plainbottles"
+}
+]
+}
+},
+{
+"a": 258.134,
+"b": 266.647,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_closetcorner",
+"txt": "Test in a closet corner first",
+"tag": "BE CAREFUL \u00b7 PAGE 40"
+}
+},
+{
+"a": 266.647,
+"b": 272.867,
+"k": "s034_n_closettest",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 272.867,
+"b": 281.85,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 281.85,
+"b": 290.404,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 290.404,
+"b": 297.027,
+"k": "s037_n_woolrug",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 297.027,
+"b": 305.187,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 305.187,
+"b": 311.887,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 40 \u00b7 1 OF 4",
+"head": "SPRAY IT DAMP",
+"steps": [
+{
+"t": 305.8,
+"txt": "Until damp, not soaked",
+"k": "n_spray_mist"
+}
+],
+"bed": "n_spray_mist"
+}
+},
+{
+"a": 311.887,
+"b": 322.223,
+"k": "s040_l_spray",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 322.223,
+"b": 329.993,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 40 \u00b7 2 OF 4",
+"head": "TOWEL ON TOP",
+"steps": [
+{
+"t": 322.6,
+"txt": "Lay it over the spot, smooth it flat",
+"k": "n_towelflat"
+}
+],
+"bed": "n_towelflat"
+}
+},
+{
+"a": 329.993,
+"b": 338.423,
+"k": "s042_l_towel",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 338.423,
+"b": 350.943,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 40 \u00b7 3 OF 4",
+"head": "IRON ON STEAM",
+"steps": [
+{
+"t": 340.0,
+"txt": "15 to 20 seconds, then lift",
+"k": "n_iron_steam"
+},
+{
+"t": 351.1,
+"txt": "Move to a clean part. Repeat.",
+"k": "n_towel_move"
+}
+],
+"bed": "n_iron_steam"
+}
+},
+{
+"a": 350.943,
+"b": 358.06,
+"k": "s044_l_press",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 358.06,
+"b": 364.69,
+"k": "s045_n_steamsteam",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 364.69,
+"b": 371.973,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_ironstill",
+"txt": "Iron held still = scorched carpet",
+"cx": 55,
+"cy": 50
+}
+},
+{
+"a": 371.973,
+"b": 384.933,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 384.933,
+"b": 395.113,
+"k": "s048_l_look_towel",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 395.113,
+"b": 407.123,
+"k": "s049_n_towelstain",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 407.123,
+"b": 414.67,
+"k": "s050_n_dryspot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 414.67,
+"b": 421.027,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_vacuum_rug_1950",
+"vid": true,
+"cap": "1950 \u00b7 vacuuming the rug",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 421.027,
+"b": 427.33,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 427.33,
+"b": 434.613,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 434.613,
+"b": 440.82,
+"k": "s054_n_sockfeet",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 440.82,
+"b": 446.744,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 446.744,
+"b": 451.793,
+"k": "s056_n_cabinetbottle",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 451.793,
+"b": 457.68,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"That is the secret.",
+"Get to it while it is fresh."
+],
+"sig": "Loretta",
+"k": "n_spillfresh",
+"size": 84
+}
+},
+{
+"a": 457.68,
+"b": 465.98,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page41",
+"tab": "PAGE 41",
+"t": 459.5,
+"hl": 9
+}
+],
+"k": "n_sodabox"
+}
+},
+{
+"a": 465.98,
+"b": 475.317,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 475.317,
+"b": 485.787,
+"k": "",
+"c": "CostTag",
+"props": {
+"price": "ABOUT $1",
+"sub": "INSTEAD OF CARPET POWDER $6",
+"k": "n_sodabox",
+"vs": {
+"price": "$6",
+"txt": "carpet powder",
+"t": 478.0
+}
+}
+},
+{
+"a": 485.787,
+"b": 491.07,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 491.07,
+"b": 499.52,
+"k": "s062_n_sodasifter",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 499.52,
+"b": 507.51,
+"k": "s063_l_soda",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 507.51,
+"b": 512.117,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 512.117,
+"b": 517.39,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 517.39,
+"b": 525.327,
+"k": "s066_n_vacuumhead",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 525.327,
+"b": 531.437,
+"k": "s067_n_vacuumbag",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 531.437,
+"b": 540.82,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_dampcake",
+"txt": "Damp carpet cakes. Only on dry carpet.",
+"tag": "BE CAREFUL \u00b7 PAGE 41"
+}
+},
+{
+"a": 540.82,
+"b": 546.18,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 546.18,
+"b": 553.837,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 553.837,
+"b": 562.033,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/clcarpet/qr.jpg",
+"t": 556.5
+}
+},
+{
+"a": 562.033,
+"b": 571.787,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 563.0
+},
+{
+"src": "page41",
+"tab": "PAGE 41",
+"t": 567.0
+}
+],
+"k": "n_bookdesk"
+}
+},
+{
+"a": 571.787,
+"b": 577.867,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 577.867,
+"b": 583.687,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "4",
+"title": "FLOORS, WALLS AND THE WHOLE HOUSE",
+"sub": "PAGE 39",
+"label": "CHAPTER",
+"k": "n_chapterfloor"
+}
+},
+{
+"a": 583.687,
+"b": 592.613,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 592.613,
+"b": 600.02,
+"k": "s076_n_ceilingfan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 600.02,
+"b": 604.96,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 604.96,
+"b": 610.647,
+"k": "s078_l_fanpillow",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 610.647,
+"b": 620.91,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page50",
+"tab": "PAGE 50 \u00b7 CALENDAR",
+"t": 614.0,
+"hl": 12
+}
+],
+"k": "n_closetdoor"
+}
+},
+{
+"a": 620.91,
+"b": 635.637,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "MY CALENDAR",
+"page": "PAGE 50",
+"items": [
+{
+"t": 621.1,
+"txt": "Every day: dishes done, sink dry"
+},
+{
+"t": 625.1,
+"txt": "Every week: floors, sheets, towels"
+},
+{
+"t": 628.5,
+"txt": "Every season: mattress, fans"
+}
+],
+"k": "n_closetdoor"
+}
+},
+{
+"a": 635.637,
+"b": 644.05,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 644.05,
+"b": 651.933,
+"k": "s082_l_alone",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 651.933,
+"b": 659.413,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 659.413,
+"b": 666.613,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 666.613,
+"b": 672.973,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_kettles_1950s",
+"vid": true,
+"cap": "1950s \u00b7 a big church-size kitchen",
+"credit": "Hotel kitchen film (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 672.973,
+"b": 677.95,
+"k": "s086_n_blotfirst",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 677.95,
+"b": 682.727,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 682.727,
+"b": 691.667,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Do not panic.",
+"Press."
+],
+"sig": "Bernice's sign, fellowship hall",
+"k": "n_signpress",
+"size": 96
+}
+},
+{
+"a": 691.667,
+"b": 699.466,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 699.466,
+"b": 709.573,
+"k": "s090_n_coffeeclean",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 709.573,
+"b": 716.907,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 716.907,
+"b": 733.917,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THREE THINGS THAT RUIN A CARPET",
+"items": [
+{
+"t": 717.1,
+"txt": "1. Rubbing the stain"
+},
+{
+"t": 719.7,
+"txt": "2. Iron held still too long"
+},
+{
+"t": 724.4,
+"txt": "3. Baking soda on a damp carpet"
+}
+],
+"k": "n_rubbing"
+}
+},
+{
+"a": 733.917,
+"b": 743.76,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 743.76,
+"b": 752.133,
+"k": "s094_n_spraysitontop",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 752.133,
+"b": 756.88,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 756.88,
+"b": 775.78,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "BEFORE YOU CALL IT DONE",
+"items": [
+{
+"t": 759.9,
+"txt": "Look at the towel for brown"
+},
+{
+"t": 763.8,
+"txt": "Look at the dry carpet from the side"
+},
+{
+"t": 771.6,
+"txt": "Walk across it in bare feet"
+}
+],
+"k": "n_towelclean"
+}
+},
+{
+"a": 775.78,
+"b": 780.613,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 780.613,
+"b": 792.247,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "ONE MORE TIME",
+"items": [
+{
+"t": 780.7,
+"txt": "Closet corner first, never wool"
+},
+{
+"t": 784.6,
+"txt": "Blot it, never rub it"
+},
+{
+"t": 787.1,
+"txt": "Spray damp, not soaked"
+},
+{
+"t": 789.8,
+"txt": "Towel on top"
+}
+],
+"k": "n_towelclean"
+}
+},
+{
+"a": 792.247,
+"b": 807.78,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "ONE MORE TIME",
+"items": [
+{
+"t": 792.4,
+"txt": "Iron 15 to 20 seconds"
+},
+{
+"t": 799.2,
+"txt": "Keep it moving"
+},
+{
+"t": 802.1,
+"txt": "Repeat until it moves"
+},
+{
+"t": 805.2,
+"txt": "Dry, then vacuum slowly"
+}
+],
+"k": "n_iron_steam"
+}
+},
+{
+"a": 807.78,
+"b": 814.514,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 814.514,
+"b": 825.596,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clcarpet/th_other.jpg",
+"tag": "CHURCH KITCHEN",
+"words": [
+[
+"The",
+821.0
+],
+[
+"Church",
+821.22
+],
+[
+"Basement",
+821.6
+],
+[
+"Hotdish",
+822.08
+],
+[
+"That",
+822.66
+],
+[
+"Fed",
+823.08
+],
+[
+"200",
+823.36
+],
+[
+"People",
+823.92
+]
+],
+"k": "n_coffeecarpet"
+}
+},
+{
+"a": 825.596,
+"b": 834.343,
+"k": "s102_n_longtables",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 834.343,
+"b": 844.363,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clcarpet/th_next.jpg",
+"tag": "NEXT TIME",
+"words": [
+[
+"15",
+837.95
+],
+[
+"Tricks",
+838.2
+],
+[
+"That",
+838.35
+],
+[
+"Make",
+838.83
+],
+[
+"My",
+839.05
+],
+[
+"Little",
+839.39
+],
+[
+"House",
+839.65
+],
+[
+"Smell",
+840.09
+],
+[
+"Like",
+840.53
+],
+[
+"Sunday",
+840.81
+],
+[
+"Dinner",
+841.19
+]
+],
+"k": "n_coffeecarpet"
+}
+},
+{
+"a": 844.363,
+"b": 849.533,
+"k": "s104_n_sundaypot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 849.533,
+"b": 855.33,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 855.33,
+"b": 862.454,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 862.454,
+"b": 871.746,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 864.0
+},
+{
+"src": "page41",
+"tab": "PAGE 41",
+"t": 867.0
+}
+],
+"caption": {
+"txt": "the link is right under this video",
+"t": 869.0
+},
+"k": "n_bookdesk"
+}
+},
+{
+"a": 871.746,
+"b": 877.273,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 877.273,
+"b": 886.787,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Which stain stayed the longest?",
+"opts": [
+{
+"txt": "Coffee",
+"t": 880.0
+},
+{
+"txt": "Grape juice",
+"t": 883.0
+},
+{
+"txt": "Gravy",
+"t": 886.0
+}
+],
+"k": "n_coffeecarpet"
+}
+},
+{
+"a": 886.787,
+"b": 893.747,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 893.747,
+"b": 900.24,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 900.24,
+"b": 905.867,
+"k": "s112_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 905.867,
+"b": 908.87,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+19.2,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+66.74,
+"design/page_turn_big",
+0.4
+],
+[
+75.75,
+"design/paper_slide",
+0.3
+],
+[
+79.35,
+"design/pencil_strokes",
+0.22
+],
+[
+81.85,
+"design/pencil_strokes",
+0.22
+],
+[
+83.95,
+"design/pencil_strokes",
+0.22
+],
+[
+87.55,
+"design/pencil_strokes",
+0.22
+],
+[
+87.18,
+"design/stamp_rubber",
+0.35
+],
+[
+124.85,
+"design/camera_shutter",
+0.25
+],
+[
+160.76,
+"design/page_turn_big",
+0.4
+],
+[
+180.4,
+"design/impact_drum_subtle",
+0.45
+],
+[
+215.96,
+"design/page_turn_big",
+0.4
+],
+[
+233.48,
+"design/whoosh_air",
+0.25
+],
+[
+258.13,
+"design/stamp_traditional",
+0.35
+],
+[
+305.19,
+"design/paper_slide",
+0.35
+],
+[
+322.22,
+"design/paper_slide",
+0.35
+],
+[
+338.42,
+"design/paper_slide",
+0.35
+],
+[
+364.69,
+"design/stamp_rubber",
+0.5
+],
+[
+364.99,
+"design/pencil_strokes",
+0.3
+],
+[
+451.79,
+"design/pen_write",
+0.3
+],
+[
+457.68,
+"design/page_turn_big",
+0.4
+],
+[
+475.32,
+"design/stamp_rubber",
+0.35
+],
+[
+531.44,
+"design/stamp_traditional",
+0.35
+],
+[
+553.84,
+"design/click_slide",
+0.3
+],
+[
+562.03,
+"design/page_turn_big",
+0.4
+],
+[
+577.87,
+"design/impact_drum_subtle",
+0.45
+],
+[
+610.65,
+"design/page_turn_big",
+0.4
+],
+[
+620.91,
+"design/paper_slide",
+0.3
+],
+[
+625.25,
+"design/pencil_strokes",
+0.22
+],
+[
+628.65,
+"design/pencil_strokes",
+0.22
+],
+[
+682.73,
+"design/pen_write",
+0.3
+],
+[
+716.91,
+"design/paper_slide",
+0.3
+],
+[
+719.85,
+"design/pencil_strokes",
+0.22
+],
+[
+724.55,
+"design/pencil_strokes",
+0.22
+],
+[
+756.88,
+"design/paper_slide",
+0.3
+],
+[
+763.95,
+"design/pencil_strokes",
+0.22
+],
+[
+771.75,
+"design/pencil_strokes",
+0.22
+],
+[
+780.61,
+"design/paper_slide",
+0.3
+],
+[
+784.75,
+"design/pencil_strokes",
+0.22
+],
+[
+787.25,
+"design/pencil_strokes",
+0.22
+],
+[
+789.95,
+"design/pencil_strokes",
+0.22
+],
+[
+792.25,
+"design/paper_slide",
+0.3
+],
+[
+799.35,
+"design/pencil_strokes",
+0.22
+],
+[
+802.25,
+"design/pencil_strokes",
+0.22
+],
+[
+805.35,
+"design/pencil_strokes",
+0.22
+],
+[
+814.51,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+834.34,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+862.45,
+"design/page_turn_big",
+0.4
+],
+[
+877.27,
+"design/click_slide",
+0.25
+]
+],
+"end": 908.87
+}
