@@ -37,6 +37,8 @@ for (const n of fs.readdirSync(SH).filter((x) => x.endsWith("_raw.mp4"))) { cons
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const SYS = `You pick stock footage for a practical house-cleaning YouTube channel (a 62-year-old Ohio cleaning lady; bathrooms, toilets, sinks, gloves, brushes). You see a numbered contact sheet (8 thumbnails, numbers in the corner, row by row 1-4 top, 5-8 bottom) and the SCENE the narration needs. Choose the ONE thumbnail that clearly shows the NEED (the object and action named in the query); the extra details of the context are optional and need not appear. Reject (answer 0) if none clearly shows it, or if the best one has any of: visible text/logos/watermark, a person posing and looking at the camera, a young influencer or studio-cinematic look, a dark moody or neon grade, a luxury designer bathroom or hotel spa look, a blurred-background stock look, or the wrong object/action. Be practical: a clean, warm, real-looking shot of the NEED is a pass. Prefer ordinary home bathroom realism, ordinary light, gloved hands doing the action, the whole frame readable and in focus. Answer ONLY JSON: {"pick": <0-8>, "why": "<8 words>"}`;
 async function judge(name, sheet) {
+  // STOCK_PICKS=<json {nombre: n}>: elección hecha a ojo sobre la hoja de contactos (sin API; 0 = ninguno)
+  if (process.env.STOCK_PICKS) { const P = JSON.parse(fs.readFileSync(process.env.STOCK_PICKS, "utf8")); if (name in P) return { pick: +P[name], why: "a ojo" }; return { pick: 0, why: "sin elección a ojo" }; }
   for (let a = 1; a <= 4; a++) {
     try {
       const b64 = fs.readFileSync(sheet).toString("base64");
