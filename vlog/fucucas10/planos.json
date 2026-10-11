@@ -1,0 +1,3992 @@
+[
+ {
+  "id": "p001",
+  "tramo": 0,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "El spray que tienes en la mano mata",
+  "foto": "Close view of a hand gripping a white and red aerosol spray can in a kitchen, fingers wrapped around the nozzle. Behind it, the edge of a beige ceramic floor and the lower part of a white refrigerator. Warm ceiling light falls across the knuckles and the can's plastic trigger. Dust particles visible in the light.",
+  "mov": "The hand lifts the spray can slightly and tilts it toward the floor."
+ },
+ {
+  "id": "p002",
+  "tramo": 1,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la cucaracha que ves.",
+  "foto": "Close-up of a cockroach on the tile floor beside the fridge, with the man crouching and pointing at it.",
+  "mov": "His hand presses the spray trigger down in a short, controlled motion."
+ },
+ {
+  "id": "p003",
+  "tramo": 2,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Las que importan están aquí",
+  "foto": "Wide view of the kitchen floor at the base of the white refrigerator, the dark gap underneath visible. Several small cockroaches cluster in the shadow beneath the appliance. Beige ceramic floor, stainless steel sink and window with white iron bars in the background, dark outside.",
+  "mov": "A cockroach moves slowly deeper into the dark gap under the fridge."
+ },
+ {
+  "id": "p004",
+  "tramo": 3,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "atrás, debajo del refrigerador,",
+  "foto": "Close view of the gap between the bottom of the white refrigerator and the beige ceramic floor, deep shadow beneath. Dust and crumbs sit along the edge of the floor. A faint glint of light catches the metal refrigerator foot.",
+  "mov": "A small cockroach antenna twitches at the edge of the shadow."
+ },
+ {
+  "id": "p005",
+  "tramo": 4,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y no les pasa nada.",
+  "foto": "Claudio standing in the kitchen, looking down at the floor beside the white refrigerator with his hands at his sides. Khaki work shirt, short curly graying hair. Speckled gray granite countertop and wooden cabinets behind him. Ceiling light casts a soft glow.",
+  "mov": "He bends his knees slightly and lowers his head toward the floor."
+ },
+ {
+  "id": "p006",
+  "tramo": 5,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Mira. Corro el refrigerador y",
+  "foto": "Claudio kneeling on the beige ceramic floor with both hands gripping the sides of the white refrigerator, pulling it forward. Crayon drawings held by magnets on the fridge door blur slightly. Kitchen cabinets and tile strip behind him.",
+  "mov": "He pulls the refrigerator forward a few inches across the floor."
+ },
+ {
+  "id": "p007",
+  "tramo": 6,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "prendo la linterna.",
+  "foto": "Close view of Claudio's hand holding a black flashlight, its beam pointing into the dark space behind the pulled-out refrigerator. Light reveals dust, crumbs and a cockroach on the floor. Khaki shirt cuff visible at the wrist.",
+  "mov": "The flashlight beam sweeps slowly across the dusty floor."
+ },
+ {
+  "id": "p008",
+  "tramo": 7,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "El motor del refrigerador:",
+  "foto": "Close view of the back of the white refrigerator with its metal grille and motor housing exposed. Claudio's hand rests near the cooling unit. Faint condensation droplets on the metal surface. Flashlight light falls across the dusty motor area.",
+  "mov": "His fingers wipe a drip of moisture from the metal grille."
+ },
+ {
+  "id": "p009",
+  "tramo": 8,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "calor, agua y migas.",
+  "foto": "Claudio crouched behind the pulled-out refrigerator, one hand holding a damp cloth against the motor housing, the other holding the flashlight. Crumbs and dust sit on the floor around his knees. Beige ceramic tiles and wooden cabinets in the background.",
+  "mov": "He wipes the cloth across the motor area, moving crumbs aside."
+ },
+ {
+  "id": "p010",
+  "tramo": 9,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Es el hotel cinco estrellas",
+  "foto": "Wide view of the kitchen with the white refrigerator pulled partly away from the wall. Claudio kneels beside it, flashlight beam shining into the gap. Granite countertop, double sink under window with white iron bars, and blue-and-white tile strip visible. Ceiling bulb lights the room.",
+  "mov": "He shifts his weight and points the flashlight deeper into the gap."
+ },
+ {
+  "id": "p011",
+  "tramo": 10,
+  "sec": "GANCHO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de la cucaracha.",
+  "foto": "Close view of Claudio's hand gently pressing the edge of the refrigerator back toward the wall, a cockroach visible scurrying into the shadow at the baseboard. Beige ceramic floor and dust in the light beam.",
+  "mov": "The refrigerator edge slides slowly back toward the wall, and the cockroach disappears into shadow."
+ },
+ {
+  "id": "p012",
+  "tramo": 11,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "La semana pasada cerramos",
+  "foto": "Ramírez kitchen in daylight, empty patio door glimpsed beyond the room. Claudio stands near the back door with a rolled cloth in one hand, his light khaki work shirt sleeves rolled, wiping a dusty ledge. Wooden cabinets and the worn beige floor visible, dust motes in the sunlight.",
+  "mov": "He wipes the ledge with a slow sweeping motion of his hand."
+ },
+ {
+  "id": "p013",
+  "tramo": 12,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "las fábricas de mosquitos del",
+  "foto": "Close-up of standing water and mosquito breeding spots in a drain or puddle in the outdoor patio, with the narrator's flashlight visible.",
+  "mov": "He tilts the dish slightly so the water settles, then lifts his hand away."
+ },
+ {
+  "id": "p014",
+  "tramo": 13,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "patio. Hoy volvemos adentro.",
+  "foto": "Claudio carries a folded cloth and a small plastic tray across the kitchen toward the open doorway to the patio, daylight spilling through the doorway. Black-and-white floor tiles are visible at the threshold, wooden cabinets along the wall.",
+  "mov": "He steps across the threshold with the tray balanced at his hip."
+ },
+ {
+  "id": "p015",
+  "tramo": 14,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Ésta es la cocina de los",
+  "foto": "A different angle of the Ramírez kitchen, such as a wider shot of the cabinets and fridge, with the narrator saying 'Ésta es la cocina de los'.",
+  "mov": "He slides his hand along the countertop edge and steps aside."
+ },
+ {
+  "id": "p016",
+  "tramo": 15,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Ramírez. Azulejos blancos,",
+  "foto": "Close view of white square wall tiles meeting a blue-and-white patterned tile strip, with a faint shadow line where the tiles meet. The tile grout is clean, daylight falling across the glossy surfaces.",
+  "mov": "A soft shadow shifts slowly across the tile strip as the light moves."
+ },
+ {
+  "id": "p017",
+  "tramo": 16,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "guarda azul, mesada de granito",
+  "foto": "Close view of the blue-and-white tile strip running along the wall above the speckled gray granite countertop, the corner of the granite edge visible, a small crumb scattered on the stone. Warm daylight across the surfaces.",
+  "mov": "A small crumb slides slightly across the granite surface and settles."
+ },
+ {
+  "id": "p018",
+  "tramo": 17,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "gris moteado, rejas",
+  "foto": "Claudio at the stainless steel double sink, his hands moving along the pale iron bars of the window above. He runs a cloth along the bars, daylight coming through the grille onto the granite countertop.",
+  "mov": "He wipes the bars with a short back-and-forth motion of the cloth."
+ },
+ {
+  "id": "p019",
+  "tramo": 18,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "blancas en la ventana. Y el",
+  "foto": "Close view of the white iron bars on the kitchen window, daylight shining through the grille onto the speckled granite and the stainless steel sink edge. A dry leaf rests on the sill.",
+  "mov": "A small beam of sunlight drifts slowly across the granite as the sun moves."
+ },
+ {
+  "id": "p020",
+  "tramo": 19,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "refrigerador blanco,",
+  "foto": "Claudio beside the older white refrigerator, one hand resting on its handle, the other pointing toward its side. Crayon drawings held by magnets are visible on the door, daylight from the window reflecting off the white surface.",
+  "mov": "He taps the refrigerator door lightly with two fingers."
+ },
+ {
+  "id": "p021",
+  "tramo": 20,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "viejo, con los dibujos de Sofía",
+  "foto": "Close view of the refrigerator door covered in children's crayon drawings, bright colored paper with wobbly lines, held in place by small colorful magnets. The white enamel shows a slight yellowing near the edge.",
+  "mov": "One drawing sheet lifts slightly at its corner in a gentle breeze from the window."
+ },
+ {
+  "id": "p022",
+  "tramo": 21,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y de Mateo pegados con imanes.",
+  "foto": "Claudio at the refrigerator, reaching up to press a small magnet firmly onto the edge of a crayon drawing. His khaki sleeve is pushed to the elbow, the children's drawings spread across the white door.",
+  "mov": "He presses the magnet down onto the drawing with his fingertips."
+ },
+ {
+  "id": "p023",
+  "tramo": 22,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Anoche,",
+  "foto": "Dim kitchen at night, the glow of a single light coming from the doorway. A glass of water sits on the granite countertop, its surface catching a faint reflection, the refrigerator edge visible in the shadows.",
+  "mov": "A thin ripple moves across the water in the glass."
+ },
+ {
+  "id": "p024",
+  "tramo": 23,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Lucía se levantó por un vaso de",
+  "foto": "Lucía's shape in the kitchen doorway at night, one hand on the frame, a small glass held in the other. The dim light from the hallway outlines her silhouette against the dark kitchen, the blue-and-white tile strip faintly visible on the wall.",
+  "mov": "She steps forward slowly toward the counter."
+ },
+ {
+  "id": "p025",
+  "tramo": 24,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "agua. Prendió la luz de la cocina,",
+  "foto": "Close view of a hand flipping the light switch on the white wall beside the doorway, the switch plate glowing faintly. The kitchen behind comes into soft light, the speckled granite countertop catching the glow.",
+  "mov": "The hand presses the switch down and the light turns on."
+ },
+ {
+  "id": "p026",
+  "tramo": 25,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y una cucaracha grande,",
+  "foto": "Close-up of a large brown cockroach scurrying across the beige tiled kitchen floor, shot from a new low angle that differs from shot 2.",
+  "mov": "The cockroach scuttles quickly across the floor tiles."
+ },
+ {
+  "id": "p027",
+  "tramo": 26,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "marrón, salió corriendo debajo",
+  "foto": "Close view of the floor at the base of the white refrigerator, a large brown cockroach darting out from the shadowy gap under the appliance onto the beige ceramic tiles. The light from above catches its glossy shell.",
+  "mov": "The cockroach runs quickly out from under the refrigerator edge."
+ },
+ {
+  "id": "p028",
+  "tramo": 27,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "del refrigerador. Una",
+  "foto": "Wide view of the night kitchen with the light on, the speckled granite countertop, the white refrigerator covered in drawings, and the beige floor. A single large brown cockroach near the refrigerator base is the only movement in the frame.",
+  "mov": "The cockroach moves across the floor toward the shadow under the refrigerator."
+ },
+ {
+  "id": "p029",
+  "tramo": 28,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sola. Y se metió de golpe,",
+  "foto": "Close view of the dark gap beneath the white refrigerator, the beige floor tiles at its edge. A large brown cockroach disappears quickly into the shadow under the appliance.",
+  "mov": "The cockroach slips fast into the dark gap and vanishes."
+ },
+ {
+  "id": "p030",
+  "tramo": 29,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "como si supiera exactamente adónde",
+  "foto": "Claudio, in a light khaki short-sleeve work shirt, leans over the kitchen counter by the window, one hand resting on the speckled gray granite. Daylight comes through the white iron bars and lights the beige floor. His back is partly turned toward the sink while he looks down at the counter edge.",
+  "mov": "He slowly slides his hand along the granite edge toward the sink."
+ },
+ {
+  "id": "p031",
+  "tramo": 30,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "ir. Esta mañana",
+  "foto": "Close view of the stainless steel double sink under the window with white iron bars. Daylight falls across the wet steel basin and the speckled granite countertop. A small drop of water sits near the drain.",
+  "mov": "A single drop of water slides down into the drain."
+ },
+ {
+  "id": "p032",
+  "tramo": 31,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Lucía me llamó preocupada.",
+  "foto": "Man on the phone at the sink in the same kitchen, with the family-drawing fridge and the same window and tile visible in the background.",
+  "mov": "He lifts the phone a little closer to his ear while listening."
+ },
+ {
+  "id": "p033",
+  "tramo": 32,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Me dijo: Claudio, ¿y si hay",
+  "foto": "Close-up of the base of the fridge with a few cockroaches scattering across the tiled floor, suggesting there may be more.",
+  "mov": "He pulls open a lower cabinet door a few centimeters."
+ },
+ {
+  "id": "p034",
+  "tramo": 33,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "más? Jorge ya había comprado",
+  "foto": "Spray bottle on the counter with its label blank or out of focus, so no readable text appears.",
+  "mov": "A hand picks up the spray bottle from the granite."
+ },
+ {
+  "id": "p035",
+  "tramo": 34,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "un spray \"mata todo\"",
+  "foto": "Close-up of the man holding a spray bottle labelled as an all-purpose killer, with no legible text, in the same kitchen.",
+  "mov": "He turns the bottle over in his hand, checking its base."
+ },
+ {
+  "id": "p036",
+  "tramo": 35,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "y quería rociar la cocina de piso a techo.",
+  "foto": "Wide view of the kitchen: Claudio stands in the middle of the room, arm raised, aiming a spray bottle toward the upper wall tiles and the cabinets. Daylight from the window spreads across the beige floor and the white wall tiles.",
+  "mov": "He pumps the trigger and a fine mist drifts toward the wall."
+ },
+ {
+  "id": "p037",
+  "tramo": 36,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Y hay algo que nadie miró. Atrás de ese",
+  "foto": "Close view of the gap between the older white refrigerator and the wall tiles. Dust and crumbs lie on the beige floor in the narrow space. A flashlight beam shines into the dark gap from the side.",
+  "mov": "The flashlight beam slowly sweeps along the gap behind the fridge."
+ },
+ {
+  "id": "p038",
+  "tramo": 37,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "refrigerador hay un escondite que no esperabas.",
+  "foto": "Claudio crouches beside the white refrigerator, reaching his arm into the narrow space at the side of the fridge. His light khaki sleeve is pushed up near the elbow. A flashlight lies on the beige floor nearby, its beam pointing into the gap.",
+  "mov": "He slides his hand deeper into the gap behind the fridge."
+ },
+ {
+  "id": "p039",
+  "tramo": 38,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Te lo muestro en un rato. Una cucaracha",
+  "foto": "Close view of the bottom edge of the white refrigerator where it meets the beige ceramic floor. Dust and a few crumbs sit along the baseboard. A flashlight beam lights the dark space underneath.",
+  "mov": "The flashlight beam moves slowly across the dust under the fridge."
+ },
+ {
+  "id": "p040",
+  "tramo": 39,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "que se ve de día, o que sale apenas prendes la",
+  "foto": "Wide view of the dark kitchen at night with the light switch by the doorway. Claudio's hand reaches to flip the switch, and the room is dim except for the window light. The beige floor and the cabinets are visible in the low light.",
+  "mov": "He flips the light switch on and the kitchen lights up."
+ },
+ {
+  "id": "p041",
+  "tramo": 40,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "luz, es la que no encontró lugar donde esconderse.",
+  "foto": "Claudio stands at the counter in the kitchen, leaning slightly forward with a flashlight in one hand, shining it at the floor by the refrigerator. Daylight from the window lights his khaki shirt and the granite countertop.",
+  "mov": "He sweeps the flashlight beam slowly across the beige floor."
+ },
+ {
+  "id": "p042",
+  "tramo": 41,
+  "sec": "CASA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si ves una, hay más. Siempre.",
+  "foto": "Close view of the beige ceramic floor beside the white refrigerator. Dust and tiny crumbs lie in a corner, and a flashlight beam falls across them. The bottom of a wooden cabinet door is visible at the edge of the frame.",
+  "mov": "The flashlight beam slides across the dust and disappears under the cabinet."
+ },
+ {
+  "id": "p043",
+  "tramo": 42,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Hoy te muestro los siete lugares donde viven",
+  "foto": "Claudio stands at the speckled gray granite counter in the Ramírez kitchen, safety glasses pushed up on his forehead, holding a flashlight low by his hip. Daylight pours through the window with white iron bars onto the blue-and-white tile strip and the worn beige floor. The stainless steel sink gleams, and the refrigerator stands covered with crayon drawings.",
+  "mov": "He lifts the flashlight slightly and turns toward the wall."
+ },
+ {
+  "id": "p044",
+  "tramo": 43,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "las cucarachas en una cocina. Cómo encontrarlos",
+  "foto": "The presenter crouched beside the lower cabinets with the flashlight beam probing the gap at the base of the fridge, shot from a different angle than shot 2.",
+  "mov": "He leans in slowly, bringing the flashlight closer to the cabinet base."
+ },
+ {
+  "id": "p045",
+  "tramo": 44,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con una linterna, cómo probarlos con",
+  "foto": "The same mustached presenter in the same kitchen as the neighbouring shots, crouched by the lower cabinets with a flashlight probing the floor gap.",
+  "mov": "The beam slides slowly along the gap toward the corner."
+ },
+ {
+  "id": "p046",
+  "tramo": 45,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "una tira de cinta, y por qué el cebo va ahí,",
+  "foto": "Claudio stands at the baseboard beside the stainless sink, pressing a strip of double-sided tape flat along the wall where the tiles meet the floor. Daylight from the window lights his face as he focuses on the work, sleeves rolled, the speckled granite counter and wooden cabinets behind him.",
+  "mov": "He presses the tape firmly down with his thumb, sliding it along the wall."
+ },
+ {
+  "id": "p047",
+  "tramo": 46,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y no en el medio del piso. Lo que vas a poder",
+  "foto": "Low in the corner where the wall meets the beige tile, a small clear bead of gel bait is dabbed in place from a tube held by a gloved hand. The middle of the floor stays bare and empty, with a few crumbs visible, and the tube's label is turned away from view.",
+  "mov": "The tip presses out a small dab into the corner."
+ },
+ {
+  "id": "p048",
+  "tramo": 47,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "hacer esta noche: prender la luz de golpe y",
+  "foto": "Claudio stands at the light switch by the kitchen doorway, one hand raised to the switch plate. The overhead light is still off, but daylight from the window brightens the stainless sink, the speckled counter and the white square wall tiles. He is focused on the switch with his other hand resting on the wooden cabinet.",
+  "mov": "He flips the switch up, and the overhead light snaps on."
+ },
+ {
+  "id": "p049",
+  "tramo": 48,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "ver por dónde corren. Mañana, con una",
+  "foto": "Under the bright overhead light, the beige floor tiles and the bottom edge of the wooden cabinets are fully lit, with no shadows in the corners. Claudio's khaki sleeve appears at the edge of the scene, his hand resting on the countertop above. The baseboard along the wall shows a few crumbs and a faint dusty line.",
+  "mov": "A few crumbs slide slightly across the beige tiles."
+ },
+ {
+  "id": "p050",
+  "tramo": 49,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "tira de cinta de doble faz de diez centímetros,",
+  "foto": "Claudio stands at the speckled granite countertop, cutting a strip of double-sided tape with a utility knife on a small cutting board. The tape roll sits beside the stainless steel sink. Daylight falls across the counter, and the blue-and-white tile strip shows at eye level behind him.",
+  "mov": "He draws the knife slowly down the tape, cutting a clean strip."
+ },
+ {
+  "id": "p051",
+  "tramo": 50,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "sabes cuál de esos rincones tiene más.",
+  "foto": "Claudio stands back in the kitchen, looking toward two corners: one by the refrigerator and one by the cabinet corner near the sink. A short strip of tape sits along each wall. One strip is dotted with dark specks of dust and crumbs, while the other is clean. Daylight fills the room.",
+  "mov": "He lowers his head slightly, studying the two strips."
+ },
+ {
+  "id": "p052",
+  "tramo": 51,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Y gastas poco: un cebo en gel o ácido",
+  "foto": "On the speckled countertop, a gloved hand sets a tube of gel bait beside a small bag of boric acid, both with labels turned away. Dust and crumbs scatter across the granite nearby, with the stainless steel sink and the window with white iron bars in the background.",
+  "mov": "The hand slides the bag of boric acid closer to the tube."
+ },
+ {
+  "id": "p053",
+  "tramo": 52,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "bórico, la cinta, y la linterna que ya",
+  "foto": "Man opening the wooden drawer in the same kitchen, with the children's crayon drawings on the fridge door visible, showing the flashlight inside the drawer.",
+  "mov": "He slides the drawer open and lifts the flashlight out."
+ },
+ {
+  "id": "p054",
+  "tramo": 53,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "tienes en la cajonera. Y al final te digo el lugar",
+  "foto": "Man crouched or pointing at a specific kitchen corner near the floor, holding the flashlight, to show the spot he is about to reveal.",
+  "mov": "He raises the flashlight to shoulder height."
+ },
+ {
+  "id": "p055",
+  "tramo": 54,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que casi nadie revisa: la caja de los",
+  "foto": "Near the wall by the countertop, a plastic cover plate has been loosened from an electrical outlet box, revealing its inside edges. Claudio's hand holds a small screwdriver against the plate. The white square wall tiles surround the box, and the speckled granite sits just below it.",
+  "mov": "He turns the screwdriver a quarter turn, loosening the plate."
+ },
+ {
+  "id": "p056",
+  "tramo": 55,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "enchufes. Por ahí entran y salen durante",
+  "foto": "Claudio kneels by the wall at counter height, face visible in daylight, safety glasses on his forehead, aiming the flashlight into the open outlet box. His tanned hand steadies the edge of the box. The worn beige floor and wooden cabinets are around him.",
+  "mov": "He tilts the flashlight, lighting the inside of the box."
+ },
+ {
+  "id": "p057",
+  "tramo": 56,
+  "sec": "PROMESA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "meses, y nadie lo sella.",
+  "foto": "A bead of white sealant is pressed into the narrow gap around an outlet box, filling the space where the wall tile meets the box. A gloved hand holds the sealant tube at the edge. Light from the window shows the fresh, smooth line.",
+  "mov": "The sealant bead is smoothed along the gap with a fingertip."
+ },
+ {
+  "id": "p058",
+  "tramo": 57,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Soy Claudio. Treinta años de fumigador.",
+  "foto": "Claudio, a 58-year-old pest-control technician with gray-streaked curly hair and a gray-stubbled beard, stands in a bright kitchen in a light khaki short-sleeve work shirt with two chest pockets, safety glasses pushed up on his forehead. Relaxed arms, warm direct expression. Behind him, white square wall tiles and a blue-and-white patterned tile strip at eye level, wooden cabinets, a window with white iron bars in soft daylight.",
+  "mov": "He lifts one hand slightly open at chest height, as if introducing himself."
+ },
+ {
+  "id": "p059",
+  "tramo": 58,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "En 1996 trabajaba",
+  "foto": "A restaurant-style kitchen corner in daylight: a large stainless steel commercial oven with its door closed, a steel prep counter, a few worn metal pans stacked on a shelf. Light from a high window falls across the speckled tile floor. No people, no visible text.",
+  "mov": "Warm light shifts slowly across the oven door as a faint shimmer of heat rises from its vents."
+ },
+ {
+  "id": "p060",
+  "tramo": 59,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en la cocina de un restaurante de Monterrey,",
+  "foto": "Close view of a speckled gray granite countertop beside a stainless steel sink, with a damp cloth folded on the edge and a few crumbs scattered near the drain. Light from a window with white iron bars reflects off the steel. Wall tiles and worn beige floor visible at the edge of the frame.",
+  "mov": "A small drop of water slides down the faucet and falls into the sink."
+ },
+ {
+  "id": "p061",
+  "tramo": 60,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "con un horno que no se apagaba nunca. Un cocinero",
+  "foto": "Claudio in a light khaki work shirt crouches beside a stainless steel oven, looking down at the base of the appliance with a focused, attentive posture. Safety glasses pushed up on his forehead, one hand resting on his knee. Worn beige floor tiles and the bottom of the oven visible in daylight.",
+  "mov": "He leans slightly closer to the oven base, shifting his weight forward."
+ },
+ {
+  "id": "p062",
+  "tramo": 61,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "rociaba spray cada noche,",
+  "foto": "A line cook in a white apron and dark cap stands by a steel prep counter at the end of a shift, holding a small spray bottle low at his side. Metal pans on a shelf behind him, a stainless steel oven to one side. Daylight from a high window, no visible text anywhere.",
+  "mov": "He raises the spray bottle toward the back of the counter and presses the trigger once."
+ },
+ {
+  "id": "p063",
+  "tramo": 62,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y al día siguiente las cucarachas estaban de vuelta.",
+  "foto": "A clean home kitchen the next morning, with several cockroaches visibly scurrying across the granite counter near the sink.",
+  "mov": "A thin cloud of mist slowly drifts and thins over the counter edge."
+ },
+ {
+  "id": "p064",
+  "tramo": 63,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Lo que lo arregló fue correr la máquina del hielo,",
+  "foto": "Claudio in a light khaki work shirt pulls a stainless steel ice machine away from the wall with both hands, its wheels rolling on the beige floor. Safety glasses on his forehead, sleeves pushed up. Wall tiles and a metal shelf visible behind the machine in daylight.",
+  "mov": "He pulls the ice machine forward about a foot, the wheels rolling across the floor."
+ },
+ {
+  "id": "p065",
+  "tramo": 64,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "ver la rendija pegajosa atrás del motor, y",
+  "foto": "Claudio's gloved hand holds a small flashlight angled into the gap behind a dark motor housing on the floor. The narrow crack shows a dull, sticky sheen on its edges, with dust and crumbs packed into the seam. Daylight and flashlight beam illuminate the grime.",
+  "mov": "He slowly sweeps the flashlight beam along the crack, following the sticky edge."
+ },
+ {
+  "id": "p066",
+  "tramo": 65,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "poner el cebo ahí, donde dormían.",
+  "foto": "Close-up of the narrator's gloved hand placing bait into the dark gap behind the fridge motor, where the rats sleep.",
+  "mov": "He slides the bait station fully into the gap and pushes it gently into place."
+ },
+ {
+  "id": "p067",
+  "tramo": 66,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Desde entonces, busco dónde duermen.",
+  "foto": "Claudio stands in the Ramírez kitchen in a light khaki short-sleeve work shirt, slowly crouching down to the floor near the wall tiles, looking toward the gap behind the appliances with a steady, knowing expression. Safety glasses pushed up on his forehead. Daylight through the window with iron bars.",
+  "mov": "He lowers himself into a crouch, one hand reaching toward the floor."
+ },
+ {
+  "id": "p068",
+  "tramo": 67,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Al final te doy la revisión de diez minutos con la",
+  "foto": "Claudio in a light khaki work shirt holds a small flashlight in one hand and a folded tape roll in the other, standing at the kitchen counter in daylight. A stainless steel sink and speckled granite counter beside him. Safety glasses on his forehead, relaxed posture.",
+  "mov": "He lifts the flashlight and turns it on, beam pointing toward the cabinet doors."
+ },
+ {
+  "id": "p069",
+  "tramo": 68,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "linterna, para que esta misma noche sepas",
+  "foto": "Claudio's gloved hand holds the flashlight beam into the dark space under the white refrigerator, where the floor meets the fridge base. Crayon drawings on the fridge door are visible above. Dust and crumbs lie on the beige floor in the beam.",
+  "mov": "He slowly moves the flashlight beam along the fridge base."
+ },
+ {
+  "id": "p070",
+  "tramo": 69,
+  "sec": "QUIEN",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cuántas tienes, y dónde viven.",
+  "foto": "Claudio at the kitchen counter in a light khaki work shirt sets down a small folded notebook and a pencil beside the speckled granite countertop, checking the flashlight beam on the cabinet. White refrigerator covered with children's crayon drawings in background, daylight through the window.",
+  "mov": "He writes a short note on the notebook with the pencil."
+ },
+ {
+  "id": "p071",
+  "tramo": 70,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Antes de empezar, la lista para la ferretería.",
+  "foto": "A small neighborhood hardware store in daylight: a glass counter holding screws and small items, wooden shelves behind it full of jars and rolls of mesh. Claudio, a 58-year-old pest technician with curly graying hair, khaki work shirt and safety glasses pushed up on his forehead, steps up to the counter and takes a folded sheet from his chest pocket, keeping its printed side hidden against his shirt.",
+  "mov": "He unfolds the sheet just enough to glance down at it, then tucks it back into his pocket."
+ },
+ {
+  "id": "p072",
+  "tramo": 71,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "En el Manual te dejé esta frase escrita,",
+  "foto": "Claudio's tanned hands rest on the glass counter, opening a small worn booklet flat, its pages turned away so only the brown cover and the edge of the paper show. Beside it, brass screws sit in the glass tray and a rolled piece of wire mesh rests on the wood.",
+  "mov": "He smooths the open booklet flat with the side of his hand."
+ },
+ {
+  "id": "p073",
+  "tramo": 72,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "para que la leas tal cual en el mostrador:",
+  "foto": "Two people at the counter, the man pointing to a product catalogue, with no readable or gibberish signage in the background.",
+  "mov": "He runs one finger slowly down the open page, then rests his hand flat on the glass."
+ },
+ {
+  "id": "p074",
+  "tramo": 73,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Necesito una linterna, cinta de",
+  "foto": "Claudio's hand sets a black flashlight on the glass counter beside a roll of tape, the metal and plastic catching daylight from the store window. Small screws glint in the tray below.",
+  "mov": "He lays the flashlight down gently next to the roll of tape."
+ },
+ {
+  "id": "p075",
+  "tramo": 74,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "doble faz y una caja de cebo en gel para cucarachas",
+  "foto": "Close-up on the counter showing a roll of double-sided tape and a box of gel roach bait.",
+  "mov": "He lifts one small box from the shelf and holds it at chest height."
+ },
+ {
+  "id": "p076",
+  "tramo": 75,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "o ácido bórico. La linterna que",
+  "foto": "Claudio stands at the glass counter turning a black flashlight in his hands, its beam pointing down at the glass and throwing a bright round spot over the screws in the tray. His safety glasses sit on his forehead and his khaki sleeves are rolled to the elbow.",
+  "mov": "He clicks the flashlight on, letting the beam sweep across the counter, then off."
+ },
+ {
+  "id": "p077",
+  "tramo": 76,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "ya tienes sirve. La cinta de doble faz es",
+  "foto": "Claudio's thumb presses the edge of a roll of double-sided tape on the glass, peeling back a short strip so both pale sticky sides show clearly. A fine dust of wood and metal lies on the counter beside it.",
+  "mov": "He pulls the strip gently off the roll, letting it hang from his fingers."
+ },
+ {
+  "id": "p078",
+  "tramo": 77,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "la de dos lados pegajosos, la que",
+  "foto": "Close-up of a roll of double-sided tape held up to show its two sticky sides, with the man's hands visible.",
+  "mov": "He presses the strip flat with his palm and holds it there."
+ },
+ {
+  "id": "p079",
+  "tramo": 78,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "se usa para pegar cosas en la pared. Y el cebo:",
+  "foto": "Close-up of the man holding a roll of double-sided tape against a wall, then a gel roach bait box, with no readable brand logos in frame.",
+  "mov": "He turns the tube slowly between his fingers."
+ },
+ {
+  "id": "p080",
+  "tramo": 79,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en gel, en jeringa o en cajita.",
+  "foto": "Three bait packages sit lined up on the glass counter: a narrow gel tube, a small plastic applicator and a little cardboard box, all with their printed sides pressed against the glass. Screws and small items glint in the tray beside them.",
+  "mov": "Claudio's hand slides into view and nudges the cardboard box into line with the others."
+ },
+ {
+  "id": "p081",
+  "tramo": 80,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Si prefieres el ácido bórico en polvo,",
+  "foto": "Claudio stands at the counter holding a small white bag of powder in both hands, opening its top with his thumbs over the glass, a fine dust clinging to the bag's edge. Shelves of jars rise behind him in daylight.",
+  "mov": "He pinches the top of the bag open with his thumbs."
+ },
+ {
+  "id": "p082",
+  "tramo": 81,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "también sirve, pero que diga ácido bórico en",
+  "foto": "Across the hardware store, Claudio lifts a small bag of powder and turns it so its printed side faces his own chest, hidden from view. A neat row of jars sits on the wooden shelves behind him in daylight, rolls of mesh stacked beside them.",
+  "mov": "He turns the bag slowly in his hands, printed side tucked in."
+ },
+ {
+  "id": "p083",
+  "tramo": 82,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la bolsa.",
+  "foto": "Claudio's hand sets the small white bag down on the glass counter beside the tape roll, its printed side pressed flat against the glass so nothing shows. Screws catch the daylight in the tray below.",
+  "mov": "He sets the bag down and lets his hand slide away."
+ },
+ {
+  "id": "p084",
+  "tramo": 83,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "La primera es la que va a hacer que tu familia discuta",
+  "foto": "Claudio, in a light khaki short-sleeve work shirt, stands in the Ramírez kitchen between Jorge in a navy polo with arms crossed and Lucía in a gray t-shirt and jeans, all three looking toward the fridge. Wooden cabinets, white square wall tiles with a blue-and-white strip, and a speckled gray granite countertop are visible in daylight. Claudio's hands rest loosely at his sides.",
+  "mov": "Claudio gestures with one open hand toward the refrigerator."
+ },
+ {
+  "id": "p085",
+  "tramo": 84,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "contigo. Jorge me dijo: Claudio,",
+  "foto": "Close view of Claudio's hand holding a flashlight near the edge of the speckled gray granite countertop, the light beam falling across the beige ceramic floor. Part of his khaki work shirt sleeve and a chest pocket are visible. The stainless steel double sink edge sits blurred in the background.",
+  "mov": "Claudio slightly tilts the flashlight toward the floor."
+ },
+ {
+  "id": "p086",
+  "tramo": 85,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "el spray mata todo, ¿para qué voy a buscar detrás",
+  "foto": "The man in the navy polo holds up a spray bottle at the sink while glancing toward the gap behind the fridge.",
+  "mov": "Jorge shrugs one shoulder while keeping his hand on the fridge."
+ },
+ {
+  "id": "p087",
+  "tramo": 86,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de un refrigerador? Y Lucía lo miraba",
+  "foto": "Lucía in the gray tee, from a different angle, looks doubtfully at the fridge with the drawings on its door.",
+  "mov": "Lucía slowly folds her arms while glancing at the refrigerator."
+ },
+ {
+  "id": "p088",
+  "tramo": 87,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sin estar muy segura. Pero el spray mata",
+  "foto": "The man in the beige shirt holds up and sprays a spray bottle onto the kitchen counter.",
+  "mov": "Claudio presses the trigger and a short mist drifts over the floor."
+ },
+ {
+  "id": "p089",
+  "tramo": 88,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "lo que toca, y eso ya lo sabemos. Lo que",
+  "foto": "Claudio in a light khaki work shirt stands at the wooden kitchen cabinets, his hands wiping a clean section of the speckled gray granite countertop with a cloth. The white square wall tiles and the blue-and-white tile strip are visible behind him in daylight.",
+  "mov": "Claudio wipes the countertop in a short sweeping motion."
+ },
+ {
+  "id": "p090",
+  "tramo": 89,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "importa es lo que no toca. Lugar uno:",
+  "foto": "Claudio, face clearly visible with gray-stubbled beard and clear safety glasses pushed up on his forehead, stands beside Jorge in a navy polo near the white refrigerator. Both look down toward the floor at the gap beside the fridge. The beige ceramic floor and wooden cabinets fill the daylight scene.",
+  "mov": "Claudio raises one finger, pointing down toward the gap beside the fridge."
+ },
+ {
+  "id": "p091",
+  "tramo": 90,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el motor del refrigerador.",
+  "foto": "Close view of Claudio's hand holding a flashlight to the back-bottom corner of the white refrigerator, where the motor housing is visible through the gap. The beige ceramic floor and a dusty edge of the fridge base are lit by the beam in daylight.",
+  "mov": "Claudio moves the flashlight slightly to light the motor area."
+ },
+ {
+  "id": "p092",
+  "tramo": 91,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Éste es el más importante de todo el video.",
+  "foto": "Claudio, face visible with warm brown eyes and tanned skin, stands in the kitchen beside the white refrigerator, leaning slightly toward its lower back edge. Clear safety glasses are pushed up on his forehead. The wooden cabinets and white square wall tiles frame him in daylight.",
+  "mov": "Claudio nods while lowering his hand toward the refrigerator's base."
+ },
+ {
+  "id": "p093",
+  "tramo": 92,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "El motor está atrás, abajo, y tira",
+  "foto": "Close view of the rear-bottom of the white refrigerator where a dark motor housing sits behind a thin grille, with a shallow metal drip tray beside it on the beige ceramic floor. Faint warm haze rises from the grille in daylight.",
+  "mov": "A thin wisp of warm air rises from the grille."
+ },
+ {
+  "id": "p094",
+  "tramo": 93,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "calor. Al lado tiene la bandeja del agua que gotea.",
+  "foto": "Close view of the shallow metal drip tray beside the motor at the back of the white refrigerator, a small puddle of water sitting in it on the beige ceramic floor. Dust and a few crumbs lie around the tray's edge in daylight.",
+  "mov": "A single drop of water falls into the tray."
+ },
+ {
+  "id": "p095",
+  "tramo": 94,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Y las migas caen por el costado",
+  "foto": "Close-up of crumbs falling down the side of the fridge into the gap between the appliance and the wall.",
+  "mov": "A few crumbs slide down the side and settle on the floor."
+ },
+ {
+  "id": "p096",
+  "tramo": 95,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y se quedan ahí. Calor, agua y",
+  "foto": "Claudio's hands, in khaki work shirt sleeves, hold a small pile of crumbs and a damp rag near the back of the white refrigerator. Water droplets, dust and crumbs sit together on the beige ceramic floor in daylight.",
+  "mov": "Claudio gently sweeps the crumbs into a small pile with the rag."
+ },
+ {
+  "id": "p097",
+  "tramo": 96,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "comida, todo junto. Corro el refrigerador despacio,",
+  "foto": "A man slowly sliding the fridge out from the wall with its power cord still plugged in, with food crumbs visible nearby.",
+  "mov": "They push the refrigerator forward a few centimeters from the wall."
+ },
+ {
+  "id": "p098",
+  "tramo": 97,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sin desenchufarlo. Jorge me ayuda,",
+  "foto": "Close view of Jorge's hands in a navy polo sleeve gripping the side of the white refrigerator as it shifts a little away from the wall. A gap of beige floor and a plugged-in cord are visible in daylight.",
+  "mov": "Jorge's hands slide along the fridge side as he pushes it a few centimeters."
+ },
+ {
+  "id": "p099",
+  "tramo": 98,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "y lo movemos de a diez centímetros. Con la",
+  "foto": "Two men gripping the side of the fridge and sliding it about ten centimeters away from the wall.",
+  "mov": "They move the refrigerator another step away from the wall."
+ },
+ {
+  "id": "p100",
+  "tramo": 99,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "linterna pegada al piso, miro la capa de polvo",
+  "foto": "Close view of a flashlight beam angled low across the beige ceramic floor behind the pulled-out refrigerator, lighting a thick gray layer of dust. Claudio's khaki sleeve and hand hold the flashlight close to the floor.",
+  "mov": "The flashlight beam slowly sweeps across the dust layer."
+ },
+ {
+  "id": "p101",
+  "tramo": 100,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "gris, las migas, un pedazo de",
+  "foto": "Close-up of the floor or counter edge showing gray crumbs and a piece of dry bread under the flashlight beam.",
+  "mov": "The beam shifts slightly to reveal a crumb cluster."
+ },
+ {
+  "id": "p102",
+  "tramo": 101,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "pan seco. Y entre los cables y la pared,",
+  "foto": "Close view of the gap between a black power cable and a white painted wall beside a kitchen cabinet base. Crumbs of dry bread and gray dust sit along the bottom of the wall. Dark shadowed crevices open where the light from the kitchen does not reach. The floor edge is worn beige ceramic.",
+  "mov": "A small crumb slides slightly down into the shadowed gap."
+ },
+ {
+  "id": "p103",
+  "tramo": 102,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "huecos oscuros, donde no llega la luz de la cocina.",
+  "foto": "Dark shadowed gaps and crevices at the base of the wall or under cabinets, where the kitchen light does not reach.",
+  "mov": "A thin beam of daylight slowly moves across the floor toward the dark gap."
+ },
+ {
+  "id": "p104",
+  "tramo": 103,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Acerco la mano al motor,",
+  "foto": "The man's hand approaching the old motor unit mounted on the wall, without touching it.",
+  "mov": "His hand moves slowly forward toward the motor, stopping just short of touching it."
+ },
+ {
+  "id": "p105",
+  "tramo": 104,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sin tocarlo: está tibio, como una taza",
+  "foto": "Close view of a dark metal motor at the back of an older white refrigerator, with a thin wisp of warmth above it. A small ceramic coffee cup sits on the kitchen counter nearby. The cup is half full and not steaming.",
+  "mov": "A faint wisp of warm air slowly rises from the motor."
+ },
+ {
+  "id": "p106",
+  "tramo": 105,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de café que ya se enfrió un poco. Ese calor",
+  "foto": "Claudio's hand hovers near the refrigerator's back, palm open and not touching the motor. Behind him, the granite countertop holds a ceramic cup of coffee. Light from the window falls across the speckled gray surface and the wall tiles.",
+  "mov": "His hand slowly lowers toward the cup on the counter."
+ },
+ {
+  "id": "p107",
+  "tramo": 106,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "parejo es lo que la cucaracha busca de noche",
+  "foto": "A warm spot on the wall or motor area, or a cockroach-friendly warm corner, shown from a different angle than shot 7.",
+  "mov": "A slight shimmer of warm air rises in the corner."
+ },
+ {
+  "id": "p108",
+  "tramo": 107,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y en invierno. Y el piso está húmedo",
+  "foto": "Close view of the beige ceramic floor beside the refrigerator, where a damp patch shines under the daylight. The surface is slightly darker and uneven where water collected. Gray dust and crumbs lie in the moisture near the wall.",
+  "mov": "A drop of water slowly trickles across the wet tile."
+ },
+ {
+  "id": "p109",
+  "tramo": 108,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "por el agua de la bandeja. Ahí se siente cómoda.",
+  "foto": "Claudio crouches beside the refrigerator, his tanned hand pointing with a flashlight at the wet floor and a metal drip tray underneath the motor. Water shines on the tray and the beige tiles. His light khaki shirt sleeve is visible.",
+  "mov": "He moves the flashlight beam slowly across the wet tray."
+ },
+ {
+  "id": "p110",
+  "tramo": 109,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Pongo la cinta de doble faz de diez",
+  "foto": "Claudio's hands unroll a strip of double-sided tape on the kitchen floor beside the refrigerator. Its sticky side faces up. The roll sits on the counter's edge and a pair of scissors lies beside it.",
+  "mov": "His fingers press the tape flat against the floor."
+ },
+ {
+  "id": "p111",
+  "tramo": 110,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "centímetros, con el pegamento hacia arriba,",
+  "foto": "Claudio measures a strip of double-sided tape against a metal tape measure on the beige tile floor beside the refrigerator. His hands hold the tape steady while a pair of scissors rests on the floor nearby.",
+  "mov": "His hand slides the tape measure along the strip to check the length."
+ },
+ {
+  "id": "p112",
+  "tramo": 111,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "metida en el rincón, justo debajo del motor.",
+  "foto": "Claudio's hand places a strip of double-sided tape into the narrow corner beneath the refrigerator motor, sticky side up. The tape rests against the wall and the beige floor tiles. Dust and crumbs lie along the edge.",
+  "mov": "His fingers gently push the tape deeper into the corner."
+ },
+ {
+  "id": "p113",
+  "tramo": 112,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "La dejo una noche. Las cucarachas que pasan por",
+  "foto": "Close-up of the masking tape strip placed in the corner under the fridge motor on the tiled floor, with a cockroach walking past it at night.",
+  "mov": "A small shadow slowly passes across the tape strip."
+ },
+ {
+  "id": "p114",
+  "tramo": 113,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el polvo se van pegando, porque caminan despacio",
+  "foto": "Close view of a dusty floor beside the refrigerator, where a small insect's legs are caught on the sticky tape. Gray dust and crumbs lie around the tape. The beige ceramic tile floor catches light from the window.",
+  "mov": "A tiny leg slowly twitches against the sticky surface."
+ },
+ {
+  "id": "p115",
+  "tramo": 114,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y la cinta las agarra. A la mañana,",
+  "foto": "Next-morning close-up of the tape strip with several cockroaches stuck to its adhesive, shot from a different angle than shot 1.",
+  "mov": "One trapped insect slowly struggles against the adhesive."
+ },
+ {
+  "id": "p116",
+  "tramo": 115,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cuatro pegadas, y tres cápsulas",
+  "foto": "Close view of the sticky tape on the tile floor with four small dark insects stuck to it, and three small brown oval capsules lying nearby beside a crumb. The capsules are about the size of a bean. Morning light falls across the tile.",
+  "mov": "A small dark insect slowly shifts its legs on the tape."
+ },
+ {
+  "id": "p117",
+  "tramo": 116,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "marrones del tamaño de un frijol. Eso me",
+  "foto": "Close view of three small brown bean-sized capsules lying on the beige tile beside the refrigerator, next to a few crumbs of dry bread. The capsules sit in a loose group in the dust. Light falls across them from the window.",
+  "mov": "A light breeze moves a single crumb beside the capsules."
+ },
+ {
+  "id": "p118",
+  "tramo": 117,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "dice que es el escondite principal.",
+  "foto": "Claudio kneels beside the refrigerator, his tanned hand pointing with a flashlight into the dark corner where the capsules were found. Dust and crumbs are visible on the floor around the appliance base. His light khaki shirt sleeve is visible.",
+  "mov": "He moves the flashlight beam slowly across the dark corner."
+ },
+ {
+  "id": "p119",
+  "tramo": 118,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Ahora sí, el arreglo. Aspiras todo",
+  "foto": "Wide view of the kitchen with Claudio standing beside Lucía near the refrigerator. Claudio holds a vacuum hose at the lower corner while Lucía stands by the counter with her long dark ponytail. Dust and crumbs are visible on the beige tile, and the window light falls across the room.",
+  "mov": "Claudio slowly moves the vacuum hose along the corner by the refrigerator."
+ },
+ {
+  "id": "p120",
+  "tramo": 119,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "lo que veas, incluidos los huevos.",
+  "foto": "Close-up of the vacuum nozzle sucking up visible eggs and debris from the tile floor.",
+  "mov": "The vacuum nozzle slowly sweeps across the dusty tile, lifting a few crumbs toward the opening."
+ },
+ {
+  "id": "p121",
+  "tramo": 120,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Después pones dos o tres gotas de gel en",
+  "foto": "Claudio, in a light khaki work shirt, crouches beside the refrigerator, holding a small clear plastic bottle of gel. He squeezes two or three drops into the gap at the back corner near the motor. The stainless steel sink and window with white iron bars are visible behind him in daylight.",
+  "mov": "His hand tilts the bottle and releases a small drop into the corner gap."
+ },
+ {
+  "id": "p122",
+  "tramo": 121,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el rincón del motor, o dos o tres bolitas de",
+  "foto": "Man crouched at the white refrigerator's lower motor grille in the same kitchen as the neighbouring shots, reaching into the motor corner.",
+  "mov": "His fingers drop a couple of small pellets one by one into the corner crack."
+ },
+ {
+  "id": "p123",
+  "tramo": 122,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "ácido bórico, en un lugar donde no te",
+  "foto": "Claudio kneels at the side of the kitchen, placing bait pellets into a recessed corner under the cabinet base, far from the open floor. His fingers stay away from the area where people walk. Blue-and-white patterned tile strip and wooden cabinets surround the scene in soft daylight.",
+  "mov": "He slides his hand back after setting the pellets into the tucked-away corner."
+ },
+ {
+  "id": "p124",
+  "tramo": 123,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "toquen los dedos. Nunca en el piso abierto,",
+  "foto": "Wide view of the kitchen floor, open and clear with no product on it. Claudio stands at a distance near the sink, one hand holding a flashlight pointed down at the beige tiles. The granite countertop and white iron-barred window are visible in daylight.",
+  "mov": "He moves the flashlight beam slowly across the empty floor, away from the corners."
+ },
+ {
+  "id": "p125",
+  "tramo": 124,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "nunca al paso. Bruno, el perro,",
+  "foto": "Close view of a clean, open stretch of worn beige ceramic floor in the middle of the kitchen, free of any product or bait. A small pile of crumbs sits near a wooden cabinet leg. Daylight from the window lights the tile surface evenly.",
+  "mov": "A small dust particle drifts slowly across the tile surface in the light."
+ },
+ {
+  "id": "p126",
+  "tramo": 125,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "olfatea el piso y se acerca. Huele",
+  "foto": "Bruno, a dog, sniffs the beige floor near the kitchen doorway, nose low to the tiles. Claudio stands aside near the sink, watching quietly with his arms relaxed. Daylight from the window falls across the speckled floor and cabinets.",
+  "mov": "Bruno lowers his nose and sniffs along the floor toward the refrigerator."
+ },
+ {
+  "id": "p127",
+  "tramo": 126,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el gel y se queda con la nariz pegada",
+  "foto": "Close view of Bruno's nose pressed to the edge of the white refrigerator base, sniffing at the gap near the floor. The crayon drawings on the fridge door are partly visible above. Daylight catches the beige tile and dust at the base.",
+  "mov": "Bruno's nose pushes forward and stays pressed against the fridge edge."
+ },
+ {
+  "id": "p128",
+  "tramo": 127,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "al borde del refrigerador. Por eso el cebo",
+  "foto": "Man crouched at the gap between the fridge's side edge and the wall, pointing a flashlight at the bait placed along the fridge edge.",
+  "mov": "He shifts the flashlight beam along the gap to show the spot where the bait sits."
+ },
+ {
+  "id": "p129",
+  "tramo": 128,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "va dentro del rincón, donde su hocico",
+  "foto": "Close view of the inside corner where the refrigerator meets the wall, showing a small bait placed deep in the crack, well out of reach of a muzzle at the open floor. Dust and a few crumbs surround it. Daylight and flashlight glow fall on the beige tiles.",
+  "mov": "A small sliver of light slides along the corner, highlighting the bait deep in the gap."
+ },
+ {
+  "id": "p130",
+  "tramo": 129,
+  "sec": "ARREGLO1",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "no entra.",
+  "foto": "Claudio, face clearly visible, leans toward the refrigerator corner with his safety glasses pushed up on his forehead. He points with one finger toward the tight gap at the base, showing the spot to the viewer. His khaki shirt and the white fridge are in soft daylight behind him.",
+  "mov": "He taps the gap with his finger and then lowers his hand."
+ },
+ {
+  "id": "p131",
+  "tramo": 130,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Lugar dos: el fondo del mueble del fregadero.",
+  "foto": "Kitchen under the sink cabinet area, wooden cabinet doors, a stainless steel double sink under the window with white iron bars. Claudio kneels on the beige ceramic floor in a light khaki short-sleeve work shirt, one hand resting on the open lower cabinet door, looking into the dim space beneath the sink. Daylight comes through the window.",
+  "mov": "Claudio slowly pulls the cabinet door wider open with his hand."
+ },
+ {
+  "id": "p132",
+  "tramo": 131,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Abrimos la puerta de abajo, y la",
+  "foto": "Close view inside the lower sink cabinet: the bottom door swung open, daylight slanting in through a narrow crack between the wooden panel and the pipe. Claudio's hand rests on the door edge, his khaki sleeve visible. Beige floor tiles at the bottom edge.",
+  "mov": "Claudio pushes the cabinet door fully open, letting more light spill in."
+ },
+ {
+  "id": "p133",
+  "tramo": 132,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "luz entra por la rendija que se hace entre",
+  "foto": "Light shining through the gap between the wooden board and the pipe at the base of the sink cabinet, with the fridge drawing showing no text.",
+  "mov": "Light beam shifts slightly as the cabinet door settles."
+ },
+ {
+  "id": "p134",
+  "tramo": 133,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la madera y el caño. Ahí se guardan",
+  "foto": "Claudio's gloved hands gently sort through a pile of folded cloth rags and plastic grocery bags stored under the sink, next to a rounded pipe. Khaki sleeves, beige floor, wooden cabinet interior lit by daylight.",
+  "mov": "Claudio lifts a damp rag from the pile and sets it aside."
+ },
+ {
+  "id": "p135",
+  "tramo": 134,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "las bolsas, los trapos húmedos, y una",
+  "foto": "Close view of Claudio's hand holding a wet folded cloth over a plastic bag, and a dark plastic detergent bottle with dust on its cap sitting on the cabinet floor. Wooden panels and pipe in soft focus.",
+  "mov": "Claudio pulls the detergent bottle slightly forward to inspect it."
+ },
+ {
+  "id": "p136",
+  "tramo": 135,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "botella de detergente que nadie mueve hace",
+  "foto": "Claudio crouches under the sink, his hand reaching to move a dusty detergent bottle that sits undisturbed on the cabinet floor beside stacked plastic bags. Dust visible on the bottle and wooden floorboards, daylight from the open door.",
+  "mov": "Claudio lifts the dusty bottle slightly and looks at its base."
+ },
+ {
+  "id": "p137",
+  "tramo": 136,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "detalle",
+  "dice": "meses. Lo primero que hago es oler:",
+  "foto": "Claudio's face close beside the open cabinet, eyes lowered and nostrils near the rag pile, khaki collar visible, clear safety glasses pushed up on his forehead. Daylight from the window lights his weathered cheek and gray-stubbled beard.",
+  "mov": "Claudio leans in slowly and breathes in close to the cloth pile."
+ },
+ {
+  "id": "p138",
+  "tramo": 137,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "si huele a rancio, hay algo. Lugar tres:",
+  "foto": "Claudio's hand holding a folded damp rag near his face, with the open cabinet interior and bags visible behind. Wooden cabinet, beige floor, daylight through the window.",
+  "mov": "Claudio lowers the rag slowly and turns his head slightly, sniffing."
+ },
+ {
+  "id": "p139",
+  "tramo": 138,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "las bisagras de los muebles. Abro",
+  "foto": "Claudio's hand grips the edge of a wooden cabinet door on the kitchen base unit, the door swung halfway open on its hinges. Khaki sleeve, stainless steel cabinet hardware, cream-tiled wall behind with blue patterned strip.",
+  "mov": "Claudio pushes the cabinet door open wider along its hinges."
+ },
+ {
+  "id": "p140",
+  "tramo": 139,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la puerta y miro la rendija donde la",
+  "foto": "Close view of Claudio's fingers pointing at the seam where a dark wooden cabinet edge meets the metal hinge. The gap between wood and frame is visible, shadowed and dark. Khaki sleeve at the edge of the frame.",
+  "mov": "Claudio runs his fingertip slowly along the gap."
+ },
+ {
+  "id": "p141",
+  "tramo": 140,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "madera se separa del marco. Es oscura,",
+  "foto": "Dark narrow gap where a wooden cabinet panel separates from its white frame, stained and grimy around the edge, a metal hinge visible above. Faint dust on the surface. No people in frame.",
+  "mov": "Light from the window shifts slowly across the dark crack."
+ },
+ {
+  "id": "p142",
+  "tramo": 141,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "tiene calor cerca de la pared, y las cucarachas",
+  "foto": "Close-up of the gap between the dark wooden door and its frame near the warm wall, with a few cockroaches pressed inside the crack.",
+  "mov": "Dust drifts slowly out of the dark gap."
+ },
+ {
+  "id": "p143",
+  "tramo": 142,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "pasan el día ahí apretadas. Se pega la cinta",
+  "foto": "Claudio's gloved hand presses a strip of sticky tape along the edge of a metal hinge, the tape pressed flat against the dark wood gap beside it. Khaki sleeve visible, cabinet interior in soft shadow.",
+  "mov": "Claudio smooths the tape down along the hinge edge with his thumb."
+ },
+ {
+  "id": "p144",
+  "tramo": 143,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "en el borde de la bisagra, una noche, y se",
+  "foto": "Close-up of a hand pressing a strip of tape onto the edge of a cabinet hinge, with the kitchen dim as if it is night.",
+  "mov": "Claudio presses the tape firmly onto the hinge edge."
+ },
+ {
+  "id": "p145",
+  "tramo": 144,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "revisa a la mañana. Pero hay uno que casi nadie",
+  "foto": "Kitchen at morning light, Claudio standing by the open cabinet with a hand resting on the door and checking the tape strip on the hinge. Stainless sink and window with white iron bars in background, light streaming in.",
+  "mov": "Claudio glances down at the hinge and nudges the tape with a finger."
+ },
+ {
+  "id": "p146",
+  "tramo": 145,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hace, y es el que más cucarachas me ha salvado:",
+  "foto": "Close view of Claudio's hand holding a putty knife, pressing grey caulk into the narrow gap along a cabinet hinge. Dark wood edge and metal hinge visible, khaki sleeve at the frame.",
+  "mov": "Claudio drags the putty knife slowly along the gap, pressing caulk in."
+ },
+ {
+  "id": "p147",
+  "tramo": 146,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cerrar la rendija de la bisagra con",
+  "foto": "Close-up of the man's hand pressing putty into the gap between a cabinet door and its hinge.",
+  "mov": "Claudio smooths the caulk along the crack with the knife."
+ },
+ {
+  "id": "p148",
+  "tramo": 147,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "masilla antes de poner el cebo. Si la",
+  "foto": "Close view of the sealed hinge gap, grey caulk smoothed into the crack beside the metal hinge, Claudio's fingertip wiping excess along the edge. Dust on the wooden surface, khaki sleeve at the frame.",
+  "mov": "Claudio wipes the caulk smooth with his fingertip."
+ },
+ {
+  "id": "p149",
+  "tramo": 148,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cucaracha no tiene adonde meterse, el cebo es",
+  "foto": "Claudio, in a light khaki short-sleeve work shirt, stands at the kitchen counter by the sink. A small dark cardboard-free bait station sits alone on the granite countertop, empty corner of the counter cleared around it. Pale morning light falls across the speckled gray granite. His hands rest near the bait, fingers ready to move it.",
+  "mov": "His hands slide the bait station forward a few centimeters across the granite."
+ },
+ {
+  "id": "p150",
+  "tramo": 149,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "lo único que queda. Y eso es lo que quiero.",
+  "foto": "Close view of the speckled gray granite countertop with a single small bait placed in the center. Nothing else on the counter, no crumbs or clutter around it. Warm daylight from the window with white iron bars lights the surface, making the granite speckles stand out clearly.",
+  "mov": "A thin beam of daylight slowly crosses the granite beside the bait."
+ },
+ {
+  "id": "p151",
+  "tramo": 150,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Lugar cuatro: debajo del microondas y de",
+  "foto": "Wide view of the kitchen: Claudio bends slightly at the counter beside the white refrigerator covered with children's crayon drawings. Blue-and-white tile strip runs at eye level along the wall. Claudio's hands point toward the lower area of the kitchen, near the microwave and coffee maker on the counter.",
+  "mov": "He lifts one arm and points toward the microwave and coffee maker."
+ },
+ {
+  "id": "p152",
+  "tramo": 151,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "la cafetera. Los dos dan calor, y el piso",
+  "foto": "The man kneeling at the underside of the microwave on the same counter with the coffee maker beside it, matching the kitchen in shots 7 and 9.",
+  "mov": "He shifts his weight and slides a hand along the counter edge toward the appliances."
+ },
+ {
+  "id": "p153",
+  "tramo": 152,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "debajo tiene migas de café y de pan.",
+  "foto": "Low view under the counter edge beside the microwave and coffee maker. The beige ceramic floor shows scattered coffee grounds and small bread crumbs in the corner. Dust and crumbs catch the light from the window.",
+  "mov": "A small crumb slides slightly as a draft passes across the floor."
+ },
+ {
+  "id": "p154",
+  "tramo": 153,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Levantas el aparato con cuidado, sin desenchufarlo,",
+  "foto": "Claudio, in khaki work shirt, grips the sides of the coffee maker with both hands and lifts it carefully from the counter. The cord still runs from the coffee maker down to the outlet, not unplugged. Beige tiles and the counter are visible around him.",
+  "mov": "He lifts the coffee maker slowly, the cord stretching gently behind it."
+ },
+ {
+  "id": "p155",
+  "tramo": 154,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y miras el hueco. Si hay restos oscuros,",
+  "foto": "Close-up of the man looking down into the dark gap under the lifted appliance panel, with the gap clearly visible.",
+  "mov": "His hands tilt the microwave a little so the flashlight beam moves into the hollow."
+ },
+ {
+  "id": "p156",
+  "tramo": 155,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "es un escondite. Lugar cinco:",
+  "foto": "Wide view of the kitchen corner under the microwave area: the empty space left by the lifted appliances shows dark crumbs and residue gathered in the hollow of the counter. A small flashlight rests on the counter nearby. Blue-and-white tile strip visible on the wall above.",
+  "mov": "The flashlight beam sweeps slowly across the dark residue in the hollow."
+ },
+ {
+  "id": "p157",
+  "tramo": 156,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "el cajón de abajo de la estufa. Se junta grasa",
+  "foto": "Claudio kneels beside the open bottom drawer under the stove, his khaki shirt sleeves rolled up. He holds the drawer front with one hand while the other hand reaches to the back corners. Grease shows on the drawer's inner back corners.",
+  "mov": "He pulls the drawer partly open and runs a finger along the greasy back corner."
+ },
+ {
+  "id": "p158",
+  "tramo": 157,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en el fondo, en las esquinas, en el costado del",
+  "foto": "Close view inside the stove drawer's back corners: thick grease and dust gathered along the corner seam, and the side of the oven wall is visible beside it. Light from the kitchen falls across the metal surfaces.",
+  "mov": "A drip of grease slowly slides down the corner seam."
+ },
+ {
+  "id": "p159",
+  "tramo": 158,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "horno. Es el rincón que más se olvida. Lo",
+  "foto": "Close view of the oven side wall and the back corner of the drawer. Grease and crumbs gather in the forgotten corner between the drawer and the oven body. Dust sits in the seam, catching the light.",
+  "mov": "A small dust puff drifts out of the corner seam."
+ },
+ {
+  "id": "p160",
+  "tramo": 159,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "sacas entero, lo limpias, y pones",
+  "foto": "Claudio lifts the entire bottom drawer out of the stove base with both hands and sets it on the beige floor. Behind the drawer space, the cabinet interior is open. He holds the drawer steady while the grease-marked corners face up.",
+  "mov": "He lifts the drawer free and sets it down on the floor."
+ },
+ {
+  "id": "p161",
+  "tramo": 160,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la cinta en el hueco que queda detrás.",
+  "foto": "Claudio's hands press a strip of tape into the hollow behind the removed drawer, along the back wall of the stove cabinet. The dark wooden gap is visible beside the tape. Only his hands and the tape are in frame.",
+  "mov": "His fingers press the tape flat into the hollow behind the drawer."
+ },
+ {
+  "id": "p162",
+  "tramo": 161,
+  "sec": "ARREGLO2",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "Una noche, y a la mañana miras.",
+  "foto": "The man opening the same lower cabinet the next morning and looking inside at the cleaned gap, from a closer angle than shot 3.",
+  "mov": "Soft morning light gradually brightens across the beige floor."
+ },
+ {
+  "id": "p163",
+  "tramo": 162,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Lugar seis: los zócalos sueltos.",
+  "foto": "Close view of a worn beige ceramic floor meeting a white painted wall, with a loose wooden baseboard strip visibly standing slightly away from the wall at its lower edge. Dust and a few crumbs sit along the seam. Warm daylight from a window falls across the floor tiles, showing the lifted edge clearly.",
+  "mov": "Sunlight slowly shifts across the floor tiles as the loose baseboard edge stays visible."
+ },
+ {
+  "id": "p164",
+  "tramo": 163,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Es ese listón de madera al pie de la pared.",
+  "foto": "Claudio kneels on the beige floor beside a white kitchen wall, his hand resting on a long pale wooden baseboard strip at the foot of the wall. His khaki work shirt sleeves are rolled up. A flashlight lies on the tiles nearby. Blue-and-white patterned tiles are visible higher on the wall.",
+  "mov": "His hand slides along the wooden strip, feeling its length from one end to the other."
+ },
+ {
+  "id": "p165",
+  "tramo": 164,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Cuando se despega aunque sea un poco,",
+  "foto": "Close view of Claudio's hands gripping a flat-head screwdriver under the top edge of a wooden baseboard strip. The strip has begun to pull away from the white wall, leaving a thin dark gap. Dust collects in the crack.",
+  "mov": "He pries the screwdriver tip gently, lifting the strip a little further from the wall."
+ },
+ {
+  "id": "p166",
+  "tramo": 165,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "queda una abertura por donde entra la cucaracha desde",
+  "foto": "Wide view of the kitchen floor where a thin dark gap opens between the lifted baseboard and the wall, next to a sink plumbing pipe running down behind the cabinets. A small shadowy opening is visible at the base of the wall near the pipe. Crumbs lie on the beige tiles.",
+  "mov": "A slight draft lifts a few crumbs near the opening, showing the gap is open."
+ },
+ {
+  "id": "p167",
+  "tramo": 166,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "el caño. Lo levantas con el destornillador,",
+  "foto": "Close-up of the man's hands prying up the wooden baseboard at the floor corner with a screwdriver.",
+  "mov": "He pushes the screwdriver under the strip and levers it upward away from the wall."
+ },
+ {
+  "id": "p168",
+  "tramo": 167,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "pones la cinta adentro una noche, y a la mañana",
+  "foto": "Close view of Claudio's hand sliding a strip of white adhesive tape into the narrow gap behind a lifted wooden baseboard. The tape is pressed flat against the wall at the base of the blue-and-white tile line. Dust and crumbs lie on the beige floor.",
+  "mov": "His fingers slide the tape deeper into the gap, pressing it flat against the wall."
+ },
+ {
+  "id": "p169",
+  "tramo": 168,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "sabes si es un escondite. Cada rendija",
+  "foto": "Close-up of a visible gap between the baseboard and the tiled wall, with the cabinet base in frame.",
+  "mov": "Morning light slowly brightens the tiles while the tape stays in the gap."
+ },
+ {
+  "id": "p170",
+  "tramo": 169,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "tapada es un escondite menos. Las",
+  "foto": "Same kitchen wall and baseboard from the first angle, with a crack under the baseboard being sealed or shown clearly, and no scribbled text on the fridge.",
+  "mov": "A small puff of dust drifts out of the crack and settles on the tile edge."
+ },
+ {
+  "id": "p171",
+  "tramo": 170,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "rendijas de los muebles y de los zócalos se",
+  "foto": "Claudio kneels by a kitchen cabinet base, running a thin bead of caulk along the joint where the cabinet meets the beige floor and wall. A caulk tube sits on the tiles beside him. His khaki shirt sleeves are rolled up.",
+  "mov": "He moves the caulk gun steadily along the cabinet joint, laying a continuous bead."
+ },
+ {
+  "id": "p172",
+  "tramo": 171,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sellan con silicona o masilla.",
+  "foto": "Close view of Claudio's hand pressing a caulk gun to fill a narrow gap between a wooden baseboard strip and the white wall. A smooth gray-white bead of sealant is visible along the seam. The beige tile floor is clean below.",
+  "mov": "He squeezes the caulk gun trigger slowly, extruding a smooth bead into the gap."
+ },
+ {
+  "id": "p173",
+  "tramo": 172,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Una pasada pareja, bien apretada, y",
+  "foto": "Claudio runs a smooth, even bead of caulk along the joint between the white wall and the beige floor by the cabinet base. His hand guides the nozzle evenly, and the wall tiles are visible above.",
+  "mov": "He draws the caulk gun in one steady pass along the seam."
+ },
+ {
+  "id": "p174",
+  "tramo": 173,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "se seca de noche. Una rendija sellada no",
+  "foto": "Wide view of the kitchen floor at the base of cabinets, where a freshly sealed gray caulk line runs along the joint between the wall and beige tiles. The line looks smooth and firm. Morning light falls across the floor and the caulk line.",
+  "mov": "Light slowly brightens the caulk seam as the sealant stays smooth."
+ },
+ {
+  "id": "p175",
+  "tramo": 174,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "vuelve a ser casa para nadie. Con Bruno y los",
+  "foto": "Claudio stands at the kitchen door with a large brown dog sitting calmly beside his legs. A child's crayon drawing hangs on the white refrigerator behind him, held by a magnet. His khaki shirt is visible and his safety glasses are pushed up.",
+  "mov": "He bends slightly to rest a hand on the dog's head."
+ },
+ {
+  "id": "p176",
+  "tramo": 175,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "chicos, cuidado. El gel y el ácido bórico",
+  "foto": "Close view of Claudio's hand holding a small tube of gel bait near a dark wall crack at the floor line. The beige tiles are clean. A small child's sock lies on the tiles at the edge of the frame, away from the crack.",
+  "mov": "He lowers the gel tube toward the crack, keeping it well away from the open floor."
+ },
+ {
+  "id": "p177",
+  "tramo": 176,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "van siempre dentro de la rendija,",
+  "foto": "Close view of Claudio's fingertip pressing a small amount of gel bait deep inside a narrow dark crack at the base of a white wall. The crack is clearly enclosed, and the surrounding beige tile floor is clean and empty.",
+  "mov": "His fingertip pushes the gel slowly into the crack, then withdraws."
+ },
+ {
+  "id": "p178",
+  "tramo": 177,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "nunca en el piso abierto. Ahí no los alcanzan",
+  "foto": "Wide view of the kitchen floor with open beige tiles completely clear, and a closed narrow crack along the base of the white wall where a small bait has been placed. Crumbs and a child's toy car lie safely at the far side of the room.",
+  "mov": "A faint breeze moves a loose crumb slightly across the clear tile floor."
+ },
+ {
+  "id": "p179",
+  "tramo": 178,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "los dedos de Mateo, que tiene seis años y",
+  "foto": "Claudio stands in the kitchen beside the white refrigerator covered with children's crayon drawings. A small boy in a bright shirt and shorts stands at a safe distance near the sink, busy with a plastic cup. Claudio's hand rests on the counter, away from the boy.",
+  "mov": "The boy lifts the plastic cup to the sink while Claudio watches calmly."
+ },
+ {
+  "id": "p180",
+  "tramo": 179,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "mete la mano en todo, ni el hocico de Bruno,",
+  "foto": "Claudio stands by the kitchen door, holding a closed bag of pet food, while a large brown dog sits calmly on the tiles beside his legs. Crayon drawings hang on the refrigerator behind them. Warm daylight falls across the beige floor.",
+  "mov": "He lowers the bag onto the counter, and the dog shifts its weight slightly."
+ },
+ {
+  "id": "p181",
+  "tramo": 180,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "porque la abertura es más chica que un dedo.",
+  "foto": "Close-up of the small gap in the outlet opening with the man holding a finger beside it to show its width.",
+  "mov": "His hand slides the putty knife a short distance along the gap, pausing at the edge."
+ },
+ {
+  "id": "p182",
+  "tramo": 181,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Lugar siete, el que te prometí al principio: la caja de los enchufes.",
+  "foto": "Man kneeling and pointing at the outlet box on the tiled wall beside the counter.",
+  "mov": "He reaches down and sets the flashlight upright on the floor beside the cabinet."
+ },
+ {
+  "id": "p183",
+  "tramo": 182,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Ésa",
+  "foto": "Close view of a gray-white electrical outlet box set into the bottom of a white square wall tile, its cover plate removed and cables tucked at the side. The beige ceramic floor meets the wall in the lower frame. Dust specks drift in daylight from the window.",
+  "mov": "Dust particles drift slowly across the outlet box in the light."
+ },
+ {
+  "id": "p184",
+  "tramo": 183,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "sólo se mira desde afuera, con la linterna.",
+  "foto": "Medium view from outside the kitchen wall: Claudio crouches beside the outlet box at the base of the wall, holding a small flashlight aimed into the gap, its beam lighting the inside edge of the box. His other hand rests on the floor, away from the opening. Blue-and-white tile strip above, beige floor below, daylight from the window.",
+  "mov": "He tilts the flashlight slightly to angle its beam deeper into the gap."
+ },
+ {
+  "id": "p185",
+  "tramo": 184,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si ves marcas o restos marrón oscuro",
+  "foto": "Close view of the edge of the outlet box where dark brown-black residue specks and small crumbs cling to the wall tile and the box rim. Claudio's gloved fingertip points toward the marks, not touching them. Flashlight beam crosses the marks, daylight from the window on the tile.",
+  "mov": "His fingertip moves slowly along the edge, tracing the dark marks."
+ },
+ {
+  "id": "p186",
+  "tramo": 185,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "alrededor, ahí hay algo. Nunca",
+  "foto": "Close view of the outlet box with dark brown stains and residue visible on the tiles around its edges.",
+  "mov": "He sweeps his gaze slowly along the floor, one hand lifting a small bit of debris from the tile."
+ },
+ {
+  "id": "p187",
+  "tramo": 186,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "metas nada adentro: ni cebo, ni cinta,",
+  "foto": "Close view of Claudio's hands above the outlet box, one hand holding a roll of tape held away from the opening, the other hand kept clear. Sticky tape rests on the beige floor beside the box, edges clean and unused. Flashlight beam in the lower corner, daylight from the window.",
+  "mov": "He sets the roll of tape down on the floor beside the box, keeping his hand away."
+ },
+ {
+  "id": "p188",
+  "tramo": 187,
+  "sec": "ARREGLO3",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "ni la mano. Eso es trabajo de un electricista.",
+  "foto": "Man standing back from the outlet box with both hands kept clearly away from it, as if deliberately not touching it.",
+  "mov": "He lowers the flashlight and steps back a half step from the wall."
+ },
+ {
+  "id": "p189",
+  "tramo": 188,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "El error que casi todos cometen es rociar",
+  "foto": "Claudio, de camisa caqui de manga corta con dos bolsillos, sostiene un spray blanco a la altura del pecho frente a la encimera de granito gris moteado. Sobre la superficie, cerca del fregadero de acero inoxidable, se ve un pequeño cebo de gel. Luz de día entra por la ventana con rejas blancas.",
+  "mov": "Claudio aprieta el gatillo del spray y una fina nube sale apuntando hacia el cebo."
+ },
+ {
+  "id": "p190",
+  "tramo": 189,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el spray encima del cebo. El",
+  "foto": "Close-up of a hand spraying liquid spray directly onto a bait station on the same kitchen counter.",
+  "mov": "La gota de líquido resbala lentamente sobre el gel y deja una marca húmeda."
+ },
+ {
+  "id": "p191",
+  "tramo": 190,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "spray deja un residuo sobre el gel, y",
+  "foto": "Claudio, con las manos a la altura de la cintura, inspecciona el cebo sobre la encimera mientras la luz de la ventana ilumina el fregadero de acero. Al fondo, el refrigerador blanco cubierto de dibujos de crayón.",
+  "mov": "Claudio inclina el cuerpo hacia adelante y pasa el dedo enguantado con suavidad sobre la superficie del gel."
+ },
+ {
+  "id": "p192",
+  "tramo": 191,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la cucaracha lo prueba, lo siente raro,",
+  "foto": "Detalle de una cucaracha junto al borde de la encimera de granito, rozando con las antenas un cebo cubierto de un velo húmedo. Azulejos blancos y la franja de azulejos azules y blancos en la pared al fondo.",
+  "mov": "La cucaracha retrocede y gira las antenas hacia atrás, alejándose del cebo."
+ },
+ {
+  "id": "p193",
+  "tramo": 192,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y lo deja sin comer. Entonces el cebo",
+  "foto": "Claudio, de pie junto al fregadero de acero inoxidable, mira la encimera donde el cebo permanece intacto. Sobre la mesada hay polvo y una cucaracha quieta cerca del borde. Luz de la ventana entra por las rejas blancas.",
+  "mov": "Claudio retira la mano del cebo y la deja caer a su costado mientras observa."
+ },
+ {
+  "id": "p194",
+  "tramo": 193,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "queda de adorno. El segundo error es poner",
+  "foto": "Primer plano de un cebo de gel intacto sobre el suelo de cerámica beige desgastado, junto a la base de un mueble de madera. Pequeñas migas y polvo alrededor del cebo, sin señales de consumo.",
+  "mov": "Una pequeña mota de polvo se desliza lentamente sobre el cebo bajo la luz de la ventana."
+ },
+ {
+  "id": "p195",
+  "tramo": 194,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "el cebo en el medio de la cocina, donde la",
+  "foto": "Claudio, con linterna en mano, se agacha en el centro de la cocina y apunta el haz de luz hacia el suelo beige donde pasan las cucarachas. Muebles de madera y azulejos blancos alrededor.",
+  "mov": "Claudio gira la linterna lentamente de izquierda a derecha sobre el suelo central."
+ },
+ {
+  "id": "p196",
+  "tramo": 195,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "viste correr. Ella corre por el medio,",
+  "foto": "Detalle del suelo de cerámica beige en el centro de la cocina, con un haz de linterna iluminando una cucaracha que corre en diagonal entre migas y polvo. Sombras suaves del mobiliario de madera.",
+  "mov": "La cucaracha corre rápidamente cruzando el haz de luz hacia el mueble."
+ },
+ {
+  "id": "p197",
+  "tramo": 196,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "pero come en el escondite. Y el ácido bórico",
+  "foto": "The man in the beige shirt and glasses, from the same kitchen as the neighbouring shots, peers into a gap behind the cabinets where the cockroach hides.",
+  "mov": "Claudio desliza el cebo dentro de la rendija y retira los dedos despacio."
+ },
+ {
+  "id": "p198",
+  "tramo": 197,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "tarda días en hacer efecto, así que no",
+  "foto": "Detalle de un montón de polvo blanco de ácido bórico sobre el suelo beige, junto a una rendija oscura en la base de un mueble. Pequeñas migas dispersas y una linterna apagada en el borde de la imagen.",
+  "mov": "Una ligera corriente de aire mueve lentamente los granos de polvo blanco hacia la rendija."
+ },
+ {
+  "id": "p199",
+  "tramo": 198,
+  "sec": "ERROR",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "esperes que mañana no quede ninguna.",
+  "foto": "Claudio, de pie en la cocina, guarda la linterna en el bolsillo de su camisa caqui y mira hacia el fregadero de acero y la ventana con rejas blancas. Luz de día llena la habitación y el refrigerador cubierto de dibujos aparece al fondo.",
+  "mov": "Claudio cierra el bolsillo de la camisa con un gesto tranquilo y se gira hacia la ventana."
+ },
+ {
+  "id": "p200",
+  "tramo": 199,
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Las cantidades exactas están en",
+  "foto": "The man stands at the counter holding the open Manual del Fumigador and points to a page with dosage text, matching the narration about exact quantities.",
+  "mov": "Claudio slides his hand across the countertop toward the open book's edge."
+ },
+ {
+  "id": "p201",
+  "tramo": 200,
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la página dieciocho del Manual del Fumigador:",
+  "foto": "Close view of Claudio's hands in his light khaki shirt sleeves, one hand turning a thick manual's pages on the granite countertop. The page edge lifts and the blue-and-white patterned tile strip shows at eye level behind. Daylight from the barred window lights the paper and the speckled granite surface.",
+  "mov": "He flips the page of the manual with one finger."
+ },
+ {
+  "id": "p202",
+  "tramo": 201,
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "cuántas gotas de gel por escondite,",
+  "foto": "Claudio crouches beside the older white refrigerator covered with children's crayon drawings held by magnets, holding a small dropper bottle above the worn beige floor. Daylight from the window falls across the kitchen cabinets. He is focused on the gap at the floor line.",
+  "mov": "He squeezes a few drops of gel from the dropper into a corner under the fridge."
+ },
+ {
+  "id": "p203",
+  "tramo": 202,
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el tamaño de la tira de cinta, y en qué orden",
+  "foto": "The man cuts tape at the same double-basin sink and fridge with children's drawings as the neighbouring kitchen shots, with the tape roll clearly visible.",
+  "mov": "He pulls the tape strip off the roll and presses it flat on the counter."
+ },
+ {
+  "id": "p204",
+  "tramo": 203,
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "se revisa la cocina. Lo tienes en la",
+  "foto": "Claudio in his light khaki work shirt moves along the wooden kitchen cabinets with a flashlight, its beam sweeping the base of the cabinet doors near the worn beige floor. The white square wall tiles and blue-and-white tile strip are visible at eye level. Daylight from the window mixes with the beam.",
+  "mov": "He sweeps the flashlight beam slowly along the cabinet base from left to right."
+ },
+ {
+  "id": "p205",
+  "tramo": 204,
+  "sec": "PAGINA",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "página dieciocho, con dibujos de los siete lugares.",
+  "foto": "Close view of Claudio's hand holding the open manual against the speckled gray granite countertop, his finger tracing a drawing of a small place. The blue-and-white patterned tile strip shows behind. Daylight from the barred window falls across the page and the granite.",
+  "mov": "His finger slides down the page, tracing one small drawing."
+ },
+ {
+  "id": "p206",
+  "tramo": 205,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Te digo lo que no sirve. El spray \"mata",
+  "foto": "The man crouches by the wall crack and aims a plain spray bottle into the gap, with no readable label, as he says the spray kills everything.",
+  "mov": "Hands press the spray trigger and a fine mist drifts toward the crack."
+ },
+ {
+  "id": "p207",
+  "tramo": 206,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "todo\" mata sólo la que toca,",
+  "foto": "Claudio stands at the wall, spraying along the baseboard with a wide arc. Terracotta flower pots with saucers sit in a row beside him. The black water tank on its rusty stand stands in the corner behind. Daylight washes the cement floor.",
+  "mov": "His arm sweeps the spray slowly from left to right along the wall."
+ },
+ {
+  "id": "p208",
+  "tramo": 207,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y no entra a la rendija. Los pedazos de pepino,",
+  "foto": "Close view of Claudio's hand pressing cucumber slices into a narrow gap between the wall and the cement floor. Loose grit and a crumb sit near the open drain channel. His khaki sleeve is visible at the edge of the frame.",
+  "mov": "His fingers push a cucumber slice down into the gap."
+ },
+ {
+  "id": "p209",
+  "tramo": 208,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la cáscara de limón y la menta espantan",
+  "foto": "Claudio sets a lemon peel and a sprig of mint on the rim of a terracotta pot beside the wall. The green garden hose coils on the floor nearby. The back of the house with its white door and barred window stands behind.",
+  "mov": "He places the lemon peel and mint sprig carefully on the pot rim."
+ },
+ {
+  "id": "p210",
+  "tramo": 209,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "un rato, pero no matan nada. Y el",
+  "foto": "Claudio stands on the cement patio, turning slowly toward the low white wall, a flashlight in one hand. Pots with saucers line the wall. The black water tank rests in the corner. The barred window of the house catches light.",
+  "mov": "He turns his body and lifts the flashlight toward the wall."
+ },
+ {
+  "id": "p211",
+  "tramo": 210,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cebo en el medio de la cocina tampoco sirve.",
+  "foto": "Wide shot of the man placing a bait station on the middle of a kitchen floor, with the narrator's hand and the bait clearly visible.",
+  "mov": "He lowers the bait tube onto the floor and lets go of it."
+ },
+ {
+  "id": "p212",
+  "tramo": 211,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Lo que sirve un rato es la cinta",
+  "foto": "Claudio crouches at the base of the wall, unrolling a strip of double-sided tape along the bottom edge. The terracotta pots with saucers sit beside him. The green hose lies coiled on the floor.",
+  "mov": "His hands press the tape strip flat along the baseboard."
+ },
+ {
+  "id": "p213",
+  "tramo": 212,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de doble faz: atrapa mientras esté pegajosa,",
+  "foto": "Close-up of a hand pressing a strip of double-sided sticky tape against the wall edge, with the sticky side visibly holding small insects.",
+  "mov": "His fingertip smooths the tape edge down against the wall."
+ },
+ {
+  "id": "p214",
+  "tramo": 213,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "y te dice dónde están. La limpieza",
+  "foto": "Close-up of the sticky tape with several insects stuck to it at specific spots, showing where they are hiding along the drain.",
+  "mov": "He takes a slow step forward while looking down at the floor."
+ },
+ {
+  "id": "p215",
+  "tramo": 214,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "también ayuda, pero sola no alcanza,",
+  "foto": "Claudio wipes the cement floor near the drain channel with a damp cloth. A bucket of water sits beside him. The green hose lies on the ground. The white wall with peeling paint rises behind.",
+  "mov": "His arm sweeps the cloth in a short back-and-forth wipe across the floor."
+ },
+ {
+  "id": "p216",
+  "tramo": 215,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "porque la que está adentro no sale por una mesada",
+  "foto": "Close view of a dusty corner where the wall meets the cement floor, with loose paint flakes and grit. Claudio's hand holds a small brush, sweeping debris toward the open drain channel.",
+  "mov": "The brush pushes grit slowly toward the drain channel."
+ },
+ {
+  "id": "p217",
+  "tramo": 216,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "brillante. Ahora, la que sí tiene nombre.",
+  "foto": "Claudio stands at the water tank in the corner, rinsing his hands under a tap while the green hose runs beside him. The white wall and terracotta pots surround the patio. Daylight shines on the cement floor.",
+  "mov": "He rubs his hands together under the running water."
+ },
+ {
+  "id": "p218",
+  "tramo": 217,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si las ves chiquitas, rubias, pegadas a",
+  "foto": "Close view of Claudio's fingers pointing at a small pale cockroach resting on the base of a pot near the wall. Its legs are visible on the terracotta rim. Dust lies on the cement floor beside it.",
+  "mov": "His fingertip moves slowly toward the cockroach on the pot rim."
+ },
+ {
+  "id": "p219",
+  "tramo": 218,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "los aparatos, es la cucaracha alemana.",
+  "foto": "Claudio kneels at the base of the white wall, lifting a terracotta saucer to look at the small pale cockroaches gathered underneath. The flashlight rests on the cement floor beside him.",
+  "mov": "He tilts the saucer up to show the cockroaches clustered below."
+ },
+ {
+  "id": "p220",
+  "tramo": 219,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Se reproduce rápido: cada hembra lleva",
+  "foto": "Close-up of a female German cockroach carrying a brown egg capsule (ootheca) on a dark surface, with the narrator's hand or a flashlight nearby.",
+  "mov": "The female cockroach shifts slightly across the cement."
+ },
+ {
+  "id": "p221",
+  "tramo": 220,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "su cápsula con muchos huevos adentro, y en",
+  "foto": "Claudio crouches by the open drain channel, holding a flashlight that lights a cluster of small pale cockroaches along the base of the white wall. Terracotta pots sit nearby.",
+  "mov": "He moves the flashlight beam slowly along the wall base."
+ },
+ {
+  "id": "p222",
+  "tramo": 221,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "pocas semanas la población se multiplica.",
+  "foto": "Claudio stands at the patio wall, pointing with his hand toward a row of small pale cockroaches clustered along the base. The black water tank and green hose sit in the background.",
+  "mov": "His hand sweeps across the wall base, indicating the cockroach cluster."
+ },
+ {
+  "id": "p223",
+  "tramo": 222,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Por eso en esos casos no alcanza con un",
+  "foto": "Wide shot of the patio showing several infested areas around the house, such as the drain, the pots, and the wall base, to suggest the problem is beyond one corner.",
+  "mov": "He lowers the spray can slowly onto the cement."
+ },
+ {
+  "id": "p224",
+  "tramo": 223,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "rincón. Cuándo llamar a un profesional.",
+  "foto": "Wide view of the small cement back patio in daylight. Claudio, in a light khaki short-sleeve work shirt, crouches near the low white wall with peeling paint, pointing his gloved hand toward the dark corner where the wall meets the floor. The open drain channel runs along the base, terracotta pots with saucers line the wall, and the black plastic water tank stands on its rusty stand in the corner.",
+  "mov": "Claudio slowly lowers his hand to point at the corner where the wall meets the floor."
+ },
+ {
+  "id": "p225",
+  "tramo": 224,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si ves muchas de día, si las alemanas están",
+  "foto": "Daytime shot of several German cockroaches visibly running across the patio floor or along the wall base in natural light.",
+  "mov": "A cockroach scurries across the dust inside the drain channel."
+ },
+ {
+  "id": "p226",
+  "tramo": 225,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "en los aparatos y en cuatro semanas no",
+  "foto": "Medium shot of Claudio at the black plastic water tank on its rusty metal stand. He holds a flashlight aimed into the gap between the tank and the wall, checking for cockroaches. Light falls on the stained cement floor and the green garden hose lies coiled nearby.",
+  "mov": "Claudio sweeps the flashlight beam slowly along the gap behind the tank."
+ },
+ {
+  "id": "p227",
+  "tramo": 226,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "baja la cantidad, puede haber una población grande",
+  "foto": "of the back patio with Claudio standing by the row of terracotta flower pots along the wall. He lifts one pot slightly to look at the soil and the wall behind it, while the white door and barred window of the one-story house stay in view behind him.",
+  "mov": "Claudio tilts a flower pot up to look underneath it."
+ },
+ {
+  "id": "p228",
+  "tramo": 227,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "o un foco en el edificio. Un departamento",
+  "foto": "Close view of the base of the peeling white-painted wall where paint has come off in curling flakes. Small dark spots and debris gather in the cracks along the cement floor, and a saucer under a terracotta pot sits beside the wall in daylight.",
+  "mov": "A small flake of peeling paint slowly falls to the floor."
+ },
+ {
+  "id": "p229",
+  "tramo": 228,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "solo no gana contra el vecino.",
+  "foto": "Medium shot of Claudio standing alone in the patio beside the white wall, holding an empty clear pest-trap card in one hand while the other hand rests on the back of a plastic chair. The rusty metal stand of the water tank and the green hose are visible in the background.",
+  "mov": "Claudio lowers the trap card slowly to his side."
+ },
+ {
+  "id": "p230",
+  "tramo": 229,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Habla con los vecinos y con la administración,",
+  "foto": "A man in the courtyard talking with a neighbor at the gate, with a building administrator's notice board visible in the background.",
+  "mov": "Claudio shifts his weight and turns his head toward the gate."
+ },
+ {
+  "id": "p231",
+  "tramo": 230,
+  "sec": "MITOS",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "detalle",
+  "dice": "y si hace falta, llama a un profesional.",
+  "foto": "Close view of Claudio's face in the daylight of the patio, beside the peeling white wall and terracotta pots. His gray-stubbled beard and clear safety glasses pushed up on his forehead are clear. He raises a hand with a phone pressed to his ear, and the wall and pots blur softly behind him.",
+  "mov": "Claudio lifts the phone to his ear and holds it there."
+ },
+ {
+  "id": "p232",
+  "tramo": 231,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "A la semana, Lucía volvió a apagar la",
+  "foto": "Lucía reaching for the wall light switch by the kitchen door as the kitchen light turns off.",
+  "mov": "Lucía flicks the light switch off with her hand."
+ },
+ {
+  "id": "p233",
+  "tramo": 232,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "luz, esperó una hora, y entró con la linterna.",
+  "foto": "Lucía waits in the dim kitchen, back near the doorway, lit by a faint lamp glow from the hallway. She holds a small flashlight at her side, her ponytail resting over one shoulder. Beige ceramic floor, worn and speckled, the white refrigerator covered with children's crayon drawings in the background. Quiet evening stillness.",
+  "mov": "Lucía lifts the flashlight and clicks it on, its beam sweeping forward across the floor."
+ },
+ {
+  "id": "p234",
+  "tramo": 233,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Ninguna corriendo. Sólo una,",
+  "foto": "Close view of the beige ceramic floor beside the kitchen cabinets, a flashlight beam spreading a warm circle across the worn tiles. A single brown cockroach sits still in the pool of light near the cabinet base. Crumbs and dust specks scattered on the tiles. Lucía's hand holding the flashlight enters at the edge of the frame.",
+  "mov": "The flashlight beam slowly drifts across the floor, lighting the cockroach."
+ },
+ {
+  "id": "p235",
+  "tramo": 234,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "quieta, en el rincón de la bisagra del mueble",
+  "foto": "Close detail of the wooden cabinet hinge where the door meets the frame beside the stainless steel sink, a small gap at the corner. A single brown cockroach rests on the edge of the hinge, its antennae visible in the flashlight glow. Dust collected in the corner crevice. Lucía's flashlight illuminates from the side.",
+  "mov": "The cockroach shifts slightly, creeping along the hinge edge."
+ },
+ {
+  "id": "p236",
+  "tramo": 235,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "del fregadero, y la levantó con papel",
+  "foto": "Lucía leans over the sink area in the kitchen, holding a sheet of paper towel between her fingers. Her other hand holds the flashlight pointed at the cabinet hinge. Stainless steel sink, white barred window behind her, dark outside. Warm light from the ceiling bulb mixed with the flashlight glow.",
+  "mov": "She lowers the paper towel toward the hinge, pinching it carefully."
+ },
+ {
+  "id": "p237",
+  "tramo": 236,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y la tiró a la basura. Jorge, que quería",
+  "foto": "The woman drops the tissue with the dead cockroach into an open kitchen trash bin.",
+  "mov": "Lucía lifts the paper towel and cockroach away from the hinge."
+ },
+ {
+  "id": "p238",
+  "tramo": 237,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "el spray en toda la cocina, me mandó una foto",
+  "foto": "The woman sprays insecticide across the kitchen counters while a phone screen shows a photo message from Jorge.",
+  "mov": "She walks toward the bin near the cabinets and pauses."
+ },
+ {
+  "id": "p239",
+  "tramo": 238,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "del refrigerador corrido. La cinta del motor",
+  "foto": "Close view of the back of the white refrigerator pulled out from the wall, the black motor cover and cable tape visible along the lower panel. Dust gathered on the floor where the fridge sat. Crayon-covered refrigerator door edge visible at the side. Flashlight beam resting on the floor.",
+  "mov": "The flashlight beam slowly pans across the motor cover."
+ },
+ {
+  "id": "p240",
+  "tramo": 239,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "tenía las cuatro pegadas, y ni un",
+  "foto": "Close detail of the refrigerator motor area, the wall and floor behind it. Four sealing tape strips clearly stuck along the seams of the motor cover, all pressed flat and intact. Dust and a few crumbs on the beige floor beside the back panel. Warm light from the flashlight across the surface.",
+  "mov": "A small dust particle drifts down past the tape edge."
+ },
+ {
+  "id": "p241",
+  "tramo": 240,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "huevo nuevo. Me dijo: Claudio,",
+  "foto": "Claudio stands in the kitchen by the refrigerator, his hands holding a flashlight pointed at the back panel. He wears a dark jacket and plain trousers. Speckled gray granite countertop, stainless steel sink, white-tiled wall with blue patterned strip. Warm ceiling light and flashlight glow.",
+  "mov": "He tilts the flashlight toward the refrigerator back to check the seams."
+ },
+ {
+  "id": "p242",
+  "tramo": 241,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "pensé que era la casa entera. Y no, era un",
+  "foto": "A close-up of the narrator pointing at a single small crack in the tile corner, with the rest of the house out of focus behind her.",
+  "mov": "Claudio points toward the back corner of the refrigerator with his free hand."
+ },
+ {
+  "id": "p243",
+  "tramo": 242,
+  "sec": "RESULTADO",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "rincón de cinco centímetros.",
+  "foto": "Close view of the narrow gap between the refrigerator edge and the wall, a small corner about five centimeters wide, where dust and a single brown cockroach are visible in the flashlight beam. Beige floor and white tile wall edge in frame. Lucía's flashlight angled into the corner.",
+  "mov": "The cockroach shifts slightly inside the corner gap."
+ },
+ {
+  "id": "p244",
+  "tramo": 243,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Y ahora, la revisión de diez minutos que",
+  "foto": "Dark kitchen lit only by a dim ceiling bulb, dark window with white iron bars behind the stainless double sink. Wooden cabinets, speckled gray granite countertop, blue-and-white tile strip at eye level. Claudio, seen from behind in a light khaki short-sleeve work shirt, stands at the counter with a flashlight in his hand, ready to start the check.",
+  "mov": "He lifts the flashlight from the countertop toward his chest."
+ },
+ {
+  "id": "p245",
+  "tramo": 244,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "te prometí. Esta noche, una hora después de apagar",
+  "foto": "Close view of the ceiling bulb's dim glow on the kitchen counter, with speckled granite, a dish towel and a few crumbs. Claudio's hand rests on the wooden cabinet edge while the other hand holds the flashlight at his side. Dark window and white iron bars in the background.",
+  "mov": "His hand slides off the cabinet edge as he turns toward the switch."
+ },
+ {
+  "id": "p246",
+  "tramo": 245,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la luz, entras a la cocina a oscuras y",
+  "foto": "A man steps into a dark kitchen with the ceiling light off, holding his flashlight at his side, with the room barely visible.",
+  "mov": "He takes one slow step forward into the dark room."
+ },
+ {
+  "id": "p247",
+  "tramo": 246,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "close-up",
+  "dice": "prendes la linterna de golpe. Miras hacia dónde",
+  "foto": "Claudio's face lit sharply by the flashlight beam he has just switched on, eyes narrowed against the glare, clear safety glasses pushed up on his forehead. Speckled granite counter and beige floor fill the frame below. Dark window behind him.",
+  "mov": "He tilts the flashlight down toward the floor and holds it steady."
+ },
+ {
+  "id": "p248",
+  "tramo": 247,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "corren, y qué tamaño tienen. Si las ves",
+  "foto": "The flashlight beam sweeps across the beige ceramic floor near the base of the white refrigerator, lighting dust and crumbs. Claudio's gloved hand holds the light steady. Crayon drawings and magnets are visible on the fridge door above.",
+  "mov": "The beam slowly moves along the floor toward the fridge base."
+ },
+ {
+  "id": "p249",
+  "tramo": 248,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "debajo del refrigerador, es un escondite.",
+  "foto": "Claudio crouches beside the white refrigerator, flashlight aimed into the dark gap underneath, with one hand resting on the beige floor. Crumbs and dust sit on the tiles near the fridge base.",
+  "mov": "He lowers his head closer to the gap under the refrigerator."
+ },
+ {
+  "id": "p250",
+  "tramo": 249,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si las ves subir por la pared, vienen del caño.",
+  "foto": "The flashlight beam lights a section of the white wall tiles where the wall meets the countertop near the sink. Claudio's hand holds the light steady along the tile seam, and the blue-and-white tile strip sits at eye level above.",
+  "mov": "The beam slides slowly up the wall tiles toward the countertop edge."
+ },
+ {
+  "id": "p251",
+  "tramo": 250,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Después, la cinta de doble faz de diez",
+  "foto": "Close-up of a ten-centimeter strip of double-sided tape lying on the kitchen counter with the adhesive side facing up.",
+  "mov": "He pulls the roll of tape from the cabinet shelf."
+ },
+ {
+  "id": "p252",
+  "tramo": 251,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "centímetros, con el pegamento hacia arriba, en",
+  "foto": "Claudio's hands cut a strip of double-sided tape on the speckled gray granite countertop, sticky side facing up. A pair of scissors and the roll of tape lie beside the cut strip. Dark window in the background.",
+  "mov": "He presses the cut strip flat with his thumb on the granite."
+ },
+ {
+  "id": "p253",
+  "tramo": 252,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "cada uno de los siete lugares, una noche.",
+  "foto": "Claudio moves along the kitchen floor placing small tape strips with sticky side up at seven spots: beneath the refrigerator, inside the cabinet, by the baseboard, near the stove drawer. Wooden cabinets and white wall tiles frame the room, lit by a single ceiling bulb.",
+  "mov": "He sets a strip down at the baseboard and moves to the next spot."
+ },
+ {
+  "id": "p254",
+  "tramo": 253,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "A la mañana miras cuál tiene más.",
+  "foto": "Morning light through the window with white iron bars falls across the beige floor. Several tape strips sit in their spots by the baseboard and under the cabinet, one visibly covered with dark specks of crumbs and insects. Claudio's hand points at one strip with a finger.",
+  "mov": "His finger moves from one strip to the next across the floor."
+ },
+ {
+  "id": "p255",
+  "tramo": 254,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Eso te dice dónde va el cebo. La revisión",
+  "foto": "Claudio stands at the kitchen counter, leaning on the speckled gray granite, looking down at the tape strips laid out on the beige floor. A small pile of bait sits on the granite beside him. Blue-and-white tile strip visible on the wall.",
+  "mov": "He picks up the bait and holds it over the floor near the most-covered strip."
+ },
+ {
+  "id": "p256",
+  "tramo": 255,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con la linterna se repite una vez por",
+  "foto": "Claudio's flashlight beam sweeps along the wall tiles and baseboard near the stove drawer, lighting the corner where the tape strip sits. Dust specks show in the beam. Beige ceramic floor and wooden cabinet edge in the frame.",
+  "mov": "The beam moves slowly along the baseboard toward the corner."
+ },
+ {
+  "id": "p257",
+  "tramo": 256,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "semana durante un mes. Para que no vuelvan:",
+  "foto": "The man standing and pointing at a wall calendar with weekly dates circled, or marking a week on it, to show the weekly check over a month.",
+  "mov": "He flips a page of the notebook with his thumb."
+ },
+ {
+  "id": "p258",
+  "tramo": 257,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "corre el refrigerador y limpia atrás",
+  "foto": "Claudio pulls the white refrigerator away from the wall with both hands, the crayon drawings on its door visible. The floor behind it is bare beige tile with dust and crumbs. A cloth lies folded on the granite countertop.",
+  "mov": "He slides the refrigerator forward a few centimeters."
+ },
+ {
+  "id": "p259",
+  "tramo": 258,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cada tres meses. Nada de cajas de cartón",
+  "foto": "Claudio's hand wipes the back of the white refrigerator with a damp cloth, removing dust from the coil area. The wall behind is white tile, and the beige floor below is clean.",
+  "mov": "His cloth wipes slowly across the refrigerator back."
+ },
+ {
+  "id": "p260",
+  "tramo": 259,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "guardadas en la cocina. El fregadero seco de",
+  "foto": "Night in the kitchen: the stainless steel double sink under the dark window is dry and empty, with a folded dish towel on the speckled granite beside it. A plastic bin with a closed lid stands on the beige floor near the cabinets. Lamp light on the wooden cabinets.",
+  "mov": "Claudio sets a small cardboard-free bin lid onto the bin with his hand."
+ },
+ {
+  "id": "p261",
+  "tramo": 260,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "noche, y la basura con tapa. Eso es lo",
+  "foto": "The man beside a trash bin with a lid in the same beige-tiled kitchen as the other shots, with the floor matching the rest of the video.",
+  "mov": "He presses the lid down until it clicks shut."
+ },
+ {
+  "id": "p262",
+  "tramo": 261,
+  "sec": "REVISION",
+  "lugar": "cocina",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que hace que el hotel no reabra.",
+  "foto": "Close view of the speckled gray granite countertop in the Ramírez kitchen at night, lit by a single ceiling bulb. A pair of hands in a light khaki work sleeve wipes the granite with a damp cloth, lifting a few crumbs toward the stainless steel double sink. A blue-and-white patterned tile strip runs along the wall behind. Dark window with white iron bars at the edge of frame.",
+  "mov": "La mano frota la encimera de un lado a otro y arrastra las migas hacia el borde del fregadero."
+ },
+ {
+  "id": "p263",
+  "tramo": 262,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "El Manual del Fumigador tiene 66",
+  "foto": "Ramírez kitchen in daylight. Claudio, in a light khaki short-sleeve work shirt, stands at the counter holding a thick closed booklet with both hands, its cover facing down. Speckled gray granite countertop, wooden cabinets, window with white iron bars behind him.",
+  "mov": "He lifts the booklet slightly toward the window light."
+ },
+ {
+  "id": "p264",
+  "tramo": 263,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "arreglos, cuesta US$27 en",
+  "foto": "Close view of the speckled gray granite countertop. Next to a stack of small coins and a folded cloth lies a stainless steel kitchen scale-free space, with a pile of loose coins beside a blue-and-white patterned tile strip edge visible at the top of the frame. Dust specks catch the window light.",
+  "mov": "A coin slides slightly across the granite toward the stack."
+ },
+ {
+  "id": "p265",
+  "tramo": 264,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "un solo pago y tiene garantía de 7",
+  "foto": "Claudio at the counter, hands resting flat on the speckled granite, with a single coin placed between his fingers. The white square wall tiles and the window with white iron bars are behind him. Light from the window falls across his forearms.",
+  "mov": "He turns the coin over slowly between his fingers."
+ },
+ {
+  "id": "p266",
+  "tramo": 265,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "días: 66 arreglos por",
+  "foto": "The narrator holding up or pointing to the Manual del Fumigador open to the page with its 66 fixes, or a clean shot of the fridge with the same framing as its neighbours.",
+  "mov": "A small crumb is brushed gently along the floor toward the corner."
+ },
+ {
+  "id": "p267",
+  "tramo": 266,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "menos de lo que cuesta UNA visita del fumigador.",
+  "foto": "Claudio kneels by the stainless steel double sink, wiping the counter edge with a folded cloth while looking down at the basin. The white iron bars of the window are visible above. Wooden cabinets surround him.",
+  "mov": "He wipes the countertop edge in one slow pass."
+ },
+ {
+  "id": "p268",
+  "tramo": 267,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Ahora cuéntame tú. ¿Cuántas encontraste",
+  "foto": "Claudio stands at the refrigerator, reaching up to touch one of the children's crayon drawings held by a magnet. The white older refrigerator is covered with colorful drawings. Blue-and-white tile strip runs along the wall at eye level.",
+  "mov": "He lightly taps the drawing to straighten its magnet."
+ },
+ {
+  "id": "p269",
+  "tramo": 268,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "anoche con la linterna, y en cuál de los",
+  "foto": "Claudio's hands hold a small flashlight angled into the gap between the white refrigerator and the wall. The beam lights up the beige ceramic floor and the base of the cabinets. Dust and crumbs show in the light.",
+  "mov": "He moves the flashlight beam slowly along the gap."
+ },
+ {
+  "id": "p270",
+  "tramo": 269,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "siete lugares? Escríbemelo en los comentarios.",
+  "foto": "Claudio at the counter, pulling a pen from his shirt pocket and placing a small notepad flat on the speckled granite. The window with white iron bars is behind him. Morning-like daylight falls across the wooden cabinets.",
+  "mov": "He sets the pen down beside the notepad."
+ },
+ {
+  "id": "p271",
+  "tramo": 270,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Leo todos. Y si después de dos semanas sigues",
+  "foto": "Claudio stands in the kitchen doorway area, holding a clipboard-free hand near the wall. The white square tiles, wooden cabinets and beige floor are visible. A small pile of collected dust sits on the floor near his shoes.",
+  "mov": "He sweeps the dust into a small dustpan with a brush."
+ },
+ {
+  "id": "p272",
+  "tramo": 271,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "viendo muchas de día, no te quedes con",
+  "foto": "Close view of the hinge gap between a wooden cabinet door and its frame. A thin dark line of dust sits along the edge. Daylight from the window hits the wood grain and the blue-and-white tile strip beside it.",
+  "mov": "A fine dust trail slowly shifts along the edge of the hinge."
+ },
+ {
+  "id": "p273",
+  "tramo": 272,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "el spray: llama a alguien del oficio. Donde",
+  "foto": "Claudio holds a small spray can low by the wooden cabinet base, pointing it at the floor, then sets it down on the granite counter. The window with white iron bars stays visible behind him.",
+  "mov": "He lowers the spray can and places it on the counter."
+ },
+ {
+  "id": "p274",
+  "tramo": 273,
+  "sec": "CIERRE",
+  "lugar": "cocina",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "viven, no donde pasean. Nos vemos.",
+  "foto": "Claudio stands at the kitchen window with the white iron bars, calmly looking outside while holding a cloth. Refrigerator with children's drawings sits in the background. Daylight fills the room.",
+  "mov": "He folds the cloth neatly over his arm."
+ }
+]

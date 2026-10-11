@@ -1,0 +1,362 @@
+[
+ {
+  "name": "ov00a",
+  "c": "FabDato",
+  "props": {
+   "num": "10",
+   "unidad": "centímetros",
+   "txt": "tira de cinta de doble faz"
+  }
+ },
+ {
+  "name": "ov00b",
+  "c": "FabDato",
+  "props": {
+   "num": "10",
+   "unidad": "centímetros",
+   "txt": "tira de cinta de doble faz"
+  }
+ },
+ {
+  "name": "ov01a",
+  "c": "FabDato",
+  "props": {
+   "num": "10",
+   "unidad": "minutos",
+   "txt": "revisión con la linterna"
+  }
+ },
+ {
+  "name": "ov01b",
+  "c": "FabDato",
+  "props": {
+   "num": "10",
+   "unidad": "minutos",
+   "txt": "revisión con la linterna"
+  }
+ },
+ {
+  "name": "ov04a",
+  "c": "FabPasos",
+  "props": {
+   "title": "La cinta, paso a paso",
+   "pasos": [
+    {
+     "img": "k001",
+     "txt": "pegamento hacia arriba"
+    },
+    {
+     "img": "k002",
+     "txt": "metida en el rincón"
+    },
+    {
+     "img": "k003",
+     "txt": "una noche, sin tocar"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov04b",
+  "c": "FabPasos",
+  "props": {
+   "title": "La cinta, paso a paso",
+   "pasos": [
+    {
+     "img": "k001",
+     "txt": "pegamento hacia arriba"
+    },
+    {
+     "img": "k002",
+     "txt": "metida en el rincón"
+    },
+    {
+     "img": "k003",
+     "txt": "una noche, sin tocar"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov05a",
+  "c": "FabDato",
+  "props": {
+   "num": "3",
+   "unidad": "cápsulas",
+   "txt": "marrones, como un frijol",
+   "alerta": true,
+   "img": "k004"
+  }
+ },
+ {
+  "name": "ov05b",
+  "c": "FabDato",
+  "props": {
+   "num": "3",
+   "unidad": "cápsulas",
+   "txt": "marrones, como un frijol",
+   "alerta": true,
+   "img": "k004"
+  }
+ },
+ {
+  "name": "ov06a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Dónde va el cebo",
+   "no": {
+    "img": "k005",
+    "txt": "en el piso abierto"
+   },
+   "si": {
+    "img": "k006",
+    "txt": "dentro del rincón del motor"
+   }
+  }
+ },
+ {
+  "name": "ov06b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Dónde va el cebo",
+   "no": {
+    "img": "k005",
+    "txt": "en el piso abierto"
+   },
+   "si": {
+    "img": "k006",
+    "txt": "dentro del rincón del motor"
+   }
+  }
+ },
+ {
+  "name": "ov07a",
+  "c": "FabRuta",
+  "props": {
+   "bicho": "cucaracha",
+   "desde": {
+    "img": "k007",
+    "txt": "el caño del fregadero"
+   },
+   "hasta": {
+    "img": "k008",
+    "txt": "detrás del zócalo"
+   },
+   "corte": "cinta adentro una noche"
+  }
+ },
+ {
+  "name": "ov07b",
+  "c": "FabRuta",
+  "props": {
+   "bicho": "cucaracha",
+   "desde": {
+    "img": "k007",
+    "txt": "el caño del fregadero"
+   },
+   "hasta": {
+    "img": "k008",
+    "txt": "detrás del zócalo"
+   },
+   "corte": "cinta adentro una noche"
+  }
+ },
+ {
+  "name": "ov08a",
+  "c": "FabMapa",
+  "props": {
+   "title": "Dónde se esconden",
+   "note": "revisa cada rincón",
+   "pins": [
+    {
+     "lugar": "heladera",
+     "txt": "motor atrás"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "fondo mueble"
+    },
+    {
+     "lugar": "cocina",
+     "txt": "microondas"
+    },
+    {
+     "lugar": "desague",
+     "txt": "caño y zócalo"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov08b",
+  "c": "FabMapa",
+  "props": {
+   "title": "Dónde se esconden",
+   "note": "revisa cada rincón",
+   "pins": [
+    {
+     "lugar": "heladera",
+     "txt": "motor atrás"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "fondo mueble"
+    },
+    {
+     "lugar": "cocina",
+     "txt": "microondas"
+    },
+    {
+     "lugar": "desague",
+     "txt": "caño y zócalo"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov09a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "El segundo error",
+   "no": {
+    "img": "k009",
+    "txt": "en el medio de la cocina"
+   },
+   "si": {
+    "img": "k010",
+    "txt": "dentro de la rendija"
+   }
+  }
+ },
+ {
+  "name": "ov09b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "El segundo error",
+   "no": {
+    "img": "k009",
+    "txt": "en el medio de la cocina"
+   },
+   "si": {
+    "img": "k010",
+    "txt": "dentro de la rendija"
+   }
+  }
+ },
+ {
+  "name": "ov11a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Lo que sirve de verdad",
+   "no": {
+    "img": "k011",
+    "txt": "pepino, limón y menta"
+   },
+   "si": {
+    "img": "k012",
+    "txt": "la cinta, pegajosa"
+   }
+  }
+ },
+ {
+  "name": "ov11b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Lo que sirve de verdad",
+   "no": {
+    "img": "k011",
+    "txt": "pepino, limón y menta"
+   },
+   "si": {
+    "img": "k012",
+    "txt": "la cinta, pegajosa"
+   }
+  }
+ },
+ {
+  "name": "ov12a",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Por qué se multiplican",
+   "centro": "Se multiplica",
+   "etapas": [
+    {
+     "img": "k013",
+     "txt": "hembra con cápsula"
+    },
+    {
+     "txt": "muchos huevos"
+    },
+    {
+     "img": "k014",
+     "txt": "en pocas semanas"
+    },
+    {
+     "txt": "la población crece"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov12b",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Por qué se multiplican",
+   "centro": "Se multiplica",
+   "etapas": [
+    {
+     "img": "k013",
+     "txt": "hembra con cápsula"
+    },
+    {
+     "txt": "muchos huevos"
+    },
+    {
+     "img": "k014",
+     "txt": "en pocas semanas"
+    },
+    {
+     "txt": "la población crece"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov13a",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k015",
+   "despues": "k016",
+   "nota": "una semana después"
+  }
+ },
+ {
+  "name": "ov13b",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k015",
+   "despues": "k016",
+   "nota": "una semana después"
+  }
+ },
+ {
+  "name": "ov14a",
+  "c": "FabCalendario",
+  "props": {
+   "cada": 7,
+   "txt": "con la linterna",
+   "title": "Cada semana",
+   "dias": 28
+  }
+ },
+ {
+  "name": "ov14b",
+  "c": "FabCalendario",
+  "props": {
+   "cada": 7,
+   "txt": "con la linterna",
+   "title": "Cada semana",
+   "dias": 28
+  }
+ }
+]

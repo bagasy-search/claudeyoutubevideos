@@ -1,0 +1,387 @@
+{
+ "vision": "Warm, close and practical: the presenter is an honest pest technician standing in the same Ramírez kitchen for most of the video, so the viewer feels they are in the room with him. Long presenter stretches carry the personal stories and the warnings, while quick photo inserts of the real corners (under the fridge, the hinge gap, the baseboard, the outlet box seen from outside) carry the procedure. Components are sparse and punctual: one number, one yes/no contrast, one checklist or one book page at a time, never over his face. Dust, crumbs and flashlight beams give texture; there is no spray-can drama and nothing gross for shock, only proof of where the cockroaches hide.",
+ "secciones": {
+  "GANCHO": "0-9 s images only: a close shot of a hand holding the spray can, then the back of the white fridge at floor level with the dark gap underneath, no face. 9.1-18.7 s presenter window A: HERO shot, he kneels in the kitchen pulling the fridge out with both hands, a flashlight in the other hand, face visible and looking into the lens. Avoid any dead-cockroach close-up before the hook line.",
+  "CASA": "18.9-39.2 s presenter window B: HERO shot, wide frame in the Ramírez kitchen, he stands by the counter and points at the blue-and-white tile strip and the children's drawings on the fridge, face visible. 39.6-53.4 s images only: the dark kitchen at night, a hand flipping the light switch, one large brown cockroach running under the fridge, a glass of water on the counter, Lucía's shape in the doorway. 53.9-80.7 s presenter windows C and D, with only tile, granite and window-grille details (no people) cut in between.",
+  "PROMESA": "80.9-93.4 s presenter window E: he stands at the counter with a flashlight and a roll of double-sided tape in front of him, face to camera. 93.6-111.9 s images only: the flashlight beam skimming along the baseboards at night, the tape roll, a gel bait tube and a bag of boric acid on the counter with labels turned away from camera. 112.0-120.5 s presenter window F: he points at the gap between the fridge and the wall, face visible.",
+  "QUIEN": "120.8-147.5 s presenter window G: HERO shot, he stands in the Ramírez kitchen with relaxed arms and a warm, direct face, the wall tiles behind him, no invented restaurant footage. 147.5-155.7 s images only: the flashlight laid on the counter next to a folded notebook and the tape roll, the fridge in the background.",
+  "MOSTRADOR": "155.7-161 s images only: a small neighbourhood hardware store, a glass counter with screws and small items inside, wooden shelves with tape rolls, clerk's hands out of frame. 161-170.9 s presenter window H: HERO shot, he reads the list from the Manual at the counter, face visible, tape roll on the glass. 171.1-189.1 s images only: close shots of the double-sided tape, a gel bait tube and a boric acid bag with labels turned away, and the flashlight already sitting in the kitchen drawer.",
+  "ARREGLO1": "189.3-207.2 s presenter window I: HERO shot, he stands between Jorge (arms crossed, skeptical) and Lucía in the kitchen, face visible. 207.5-225.4 s presenter window J: HERO shot, he points at the motor at the back of the fridge with the drip tray beside it, face visible. 225.8-259.7 s images only: the fridge pulled about 10 cm from the wall, Jorge's hands on its side, the grey dust layer and crumbs in the flashlight beam. 259.7-283.3 s images: the tape placed under the motor with its sticky side up, the component on tape placement. 283.6-301.3 s images: vacuuming the corner, gel dabs placed deep in the crack, nothing on the open floor. 301.7-314.5 s images: Bruno the dog sniffing the floor from the doorway and stopping at the fridge edge.",
+  "ARREGLO2": "314.9-335.6 s presenter window X: HERO shot, he opens the sink cabinet door and leans in to smell the rag pile, face visible. 336.0-353.7 s images only: close shot of the hinge edge with the tape pressed against it and the dark wood gap beside it. 354.0-368.8 s images: caulk pressed into the hinge gap with a putty knife, presenter's hands only. 369.1-384.1 s images: HERO shot, he lifts the microwave and the coffee maker carefully with the cord still plugged in, looking down into the gap, face visible. 384.4-400.7 s images: the bottom drawer of the stove pulled out, grease on the back corners, tape pushed into the hole behind it.",
+  "ARREGLO3": "401.0-419.4 s images only: a loose baseboard lifted with a screwdriver, tape being slid into the gap, the wall tile at the foot. 419.6-434.9 s images: caulk sealing the cabinet and baseboard gaps in one smooth bead, with HERO shot of the presenter sealing with a caulk gun, face visible in the lower frame. 435.2-449 s presenter window L: he stands with Bruno the dog at the kitchen door and Mateo's drawing on the fridge behind him, face visible, warnings. 449-452 s images: gel tip and boric acid placed inside a crack, never on the floor. 452.0-471.8 s presenter window M: he stands by the wall socket box with the flashlight, face visible, hands kept well away from the box, nothing inserted.",
+  "ERROR": "472.1-486.4 s presenter window N: he holds the spray can at arm's length away from a bait dab, face visible, shakes his head. 486.8-501.0 s images: the open-floor bait dab (component), then one cockroach running along the wall toward the middle of the room.",
+  "PAGINA": "501.0-517.5 s images only: the Manual of the Fumigador open on the counter, a hand turning to a page with small drawings of seven places (no readable text), the flashlight beside it. The book page card carries the page number, so no presenter in this stretch.",
+  "MITOS": "517.7-534.0 s presenter window O: HERO shot, he holds a cucumber slice and a lemon peel in one hand and a gel bait tube in the other, face visible, looking skeptical. 534.3-547.5 s images: the tape strip covered with stuck cockroaches (component) next to a sprig of mint. 547.8-566.4 s images: macro of a German cockroach female with her capsule and nymphs clustered on a fridge base (component). 566.6-586.8 s presenter window P: he stands in the building's back hallway with a neighbour's door in soft focus behind him, face visible, no numbers or names on any door.",
+  "RESULTADO": "586.8-618.2 s images only, no presenter: Lucía in the dark kitchen with a flashlight in her hand, one brown cockroach stopped on the hinge edge, Lucía lifting it with paper towel and dropping it into the bin, then the before-and-after pair of the fridge tape (component). Warm, domestic light throughout.",
+  "REVISION": "618.5-637.6 s presenter window Q: HERO shot in the dark kitchen, he switches the flashlight on sharply, face lit by the beam, pointing at the floor. 637.9-655.5 s images only: the seven tape strips laid out in their spots (under the fridge, sink cabinet, hinge, stove drawer, baseboard, outlet box seen from outside), plus the weekly-check card. 655.5-669.2 s images: the fridge pulled out and its back wiped with a cloth, the sink dry at night, a bin with a lid, then the checklist card.",
+  "CIERRE": "669.2-683.3 s presenter window R: HERO shot, he stands in the kitchen with the Manual on the counter and evening light from the window, face visible. 683.6-692.0 s presenter window S: close frame, face visible, he asks the question with no inserts. 692.2-701.5 s presenter window T: wide shot, Mateo's drawings on the fridge and Bruno asleep in the doorway behind him, final face to camera. No components inside any CIERRE window."
+ },
+ "avatar": [
+  {
+   "n": "gancho-refri",
+   "desde": "Mira. Corro el refrigerador y prendo la linterna.",
+   "hasta": "Es el hotel cinco estrellas de la cucaracha."
+  },
+  {
+   "n": "cocina-intro",
+   "desde": "La semana pasada cerramos las fábricas de mosquitos del patio.",
+   "hasta": "pegados con imanes."
+  },
+  {
+   "n": "llamada-lucia",
+   "desde": "Esta mañana Lucía me llamó preocupada.",
+   "hasta": "Te lo muestro en un rato."
+  },
+  {
+   "n": "de-dia",
+   "desde": "Una cucaracha que se ve de día",
+   "hasta": "Siempre."
+  },
+  {
+   "n": "promesa",
+   "desde": "Hoy te muestro los siete lugares",
+   "hasta": "y no en el medio del piso."
+  },
+  {
+   "n": "promesa-final",
+   "desde": "Y al final te digo el lugar que casi nadie revisa",
+   "hasta": "y nadie lo sella."
+  },
+  {
+   "n": "claudio-historia",
+   "desde": "Soy Claudio.",
+   "hasta": "Desde entonces, busco dónde duermen."
+  },
+  {
+   "n": "lista-ferreteria",
+   "desde": "para que la leas tal cual en el mostrador",
+   "hasta": "cebo en gel para cucarachas o ácido bórico."
+  },
+  {
+   "n": "familia-discute",
+   "desde": "La primera es la que va a hacer que tu familia discuta contigo.",
+   "hasta": "Lo que importa es lo que no toca."
+  },
+  {
+   "n": "motor-refri",
+   "desde": "Lugar uno: el motor del refrigerador.",
+   "hasta": "Calor, agua y comida, todo junto."
+  },
+  {
+   "n": "fregadero-mueble",
+   "desde": "Lugar dos: el fondo del mueble del fregadero.",
+   "hasta": "si huele a rancio, hay algo."
+  },
+  {
+   "n": "bruno-cuidado",
+   "desde": "Con Bruno y los chicos, cuidado.",
+   "hasta": "ni el hocico de Bruno,"
+  },
+  {
+   "n": "lugar-siete",
+   "desde": "Lugar siete, el que te prometí al principio",
+   "hasta": "Eso es trabajo de un electricista."
+  },
+  {
+   "n": "error-spray",
+   "desde": "El error que casi todos cometen",
+   "hasta": "Entonces el cebo queda de adorno."
+  },
+  {
+   "n": "mitos-no-sirve",
+   "desde": "Te digo lo que no sirve.",
+   "hasta": "y el cebo en el medio de la cocina tampoco sirve."
+  },
+  {
+   "n": "llamar-profesional",
+   "desde": "Cuándo llamar a un profesional.",
+   "hasta": "y si hace falta, llama a un profesional."
+  },
+  {
+   "n": "revision",
+   "desde": "Y ahora, la revisión de diez minutos que te prometí.",
+   "hasta": "Si las ves subir por la pared, vienen del caño."
+  },
+  {
+   "n": "cta-manual",
+   "desde": "El Manual del Fumigador tiene 66 arreglos",
+   "hasta": "menos de lo que cuesta UNA visita del fumigador."
+  },
+  {
+   "n": "pregunta",
+   "desde": "Ahora cuéntame tú.",
+   "hasta": "Leo todos."
+  },
+  {
+   "n": "cierre",
+   "desde": "Y si después de dos semanas",
+   "hasta": "Nos vemos."
+  }
+ ],
+ "componentes": [
+  {
+   "c": "FabDato",
+   "frase": "una tira de cinta de doble faz",
+   "dur": 6,
+   "props": {
+    "num": "10",
+    "unidad": "centímetros",
+    "txt": "tira de cinta de doble faz"
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "la revisión de diez minutos con la linterna",
+   "dur": 6,
+   "props": {
+    "num": "10",
+    "unidad": "minutos",
+    "txt": "revisión con la linterna"
+   }
+  },
+  {
+   "c": "ClQRCard",
+   "frase": "En el Manual te dejé esta frase escrita",
+   "dur": 4,
+   "props": {
+    "qr": "img/fucucas10/qr.jpg",
+    "cover": "img/fucucas10/book_cover.jpg",
+    "text": "Manual del Fumigador",
+    "kicker": "EL MANUAL"
+   }
+  },
+  {
+   "c": "ClCheck",
+   "frase": "La linterna que ya tienes sirve",
+   "dur": 8,
+   "props": {
+    "title": "Lo que compras",
+    "items": [
+     "Linterna: la que ya tienes",
+     "Cinta de doble faz de 10 cm",
+     "Cebo en gel o ácido bórico"
+    ]
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "Pongo la cinta de doble faz",
+   "dur": 8,
+   "props": {
+    "title": "La cinta, paso a paso",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Medium shot of the presenter kneeling on the cement kitchen floor beside a white fridge, face clearly visible and looking down at his hands, khaki short-sleeve work shirt, safety glasses pushed up on his forehead. He holds a 10 cm strip of double-sided tape with the sticky side facing up, a small grey dust patch and crumbs on the floor, warm light from above. No text, labels or screens."
+      },
+      "txt": "pegamento hacia arriba"
+     },
+     {
+      "img": {
+       "foto": "Close detail of the presenter's hand, khaki sleeve at the wrist, pushing the strip of tape into the dark corner under the fridge motor; the motor's metal housing and a dusty cable are visible, and a dry bread crust sits on the floor nearby. The face is not in frame. Warm flashlight glow from the left. No text, labels or screens."
+      },
+      "txt": "metida en el rincón"
+     },
+     {
+      "img": {
+       "foto": "Dusk view of the same corner under the fridge: the 10 cm double-sided tape lies flat in the dark gap with nothing touching it, the fridge base above, grey dust and crumbs on the cement, wall tiles at the edge of frame. The kitchen light is off and only a faint evening glow comes from the window. No people in frame. No text, labels or screens."
+      },
+      "txt": "una noche, sin tocar"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "tres cápsulas marrones del tamaño de un frijol",
+   "dur": 6,
+   "props": {
+    "num": "3",
+    "unidad": "cápsulas",
+    "txt": "marrones, como un frijol",
+    "alerta": true,
+    "img": {
+     "foto": "Extreme close-up on a 10 cm strip of double-sided tape lying on a dark cement floor under a fridge; three small brown oval egg capsules stuck to the sticky side, four dead cockroaches around them, and a single dry bean placed beside them for scale. Soft natural light, shallow depth of field. No people, no text, labels or screens."
+    }
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Nunca en el piso abierto, nunca al paso",
+   "dur": 7,
+   "props": {
+    "title": "Dónde va el cebo",
+    "no": {
+     "img": {
+      "foto": "Close shot of a gel bait syringe tip squeezed out in a small blob onto an open, bare cement-tiled kitchen floor in the middle of the room, far from any wall or gap, the edge of a bare foot at the bottom of the frame, clean light that makes the open floor obvious. No people in focus, no text, labels or screens."
+     },
+     "txt": "en el piso abierto"
+    },
+    "si": {
+     "img": {
+      "foto": "Close shot of the presenter's hands, khaki sleeve at the wrist, placing tiny dabs of gel bait deep inside the dark gap at the back corner of the fridge motor, where no finger or dog's nose could reach; the face is not in frame, only the hands and the dark crack. Warm flashlight light. No text, labels or screens."
+     },
+     "txt": "dentro del rincón del motor"
+    }
+   }
+  },
+  {
+   "c": "FabRuta",
+   "frase": "por donde entra la cucaracha desde el caño",
+   "dur": 6.5,
+   "props": {
+    "bicho": "cucaracha",
+    "desde": {
+     "img": {
+      "foto": "Detail of the drain pipe under the kitchen sink where it enters the wall, a dark damp gap between the pipe and the wooden cabinet panel, a faint water stain on the cement, the cabinet door open. No people in frame, no text, labels or screens."
+     },
+     "txt": "el caño del fregadero"
+    },
+    "hasta": {
+     "img": {
+      "foto": "Close detail of a loose wooden baseboard pried up slightly at the foot of the wall, a dark opening behind it, a faint cockroach trail in the dust, and a screwdriver resting on the floor nearby, with warm side light from the window. No people in frame, no text, labels or screens."
+     },
+     "txt": "detrás del zócalo"
+    },
+    "corte": "cinta adentro una noche"
+   }
+  },
+  {
+   "c": "FabMapa",
+   "frase": "Cada rendija tapada es un escondite menos",
+   "dur": 10,
+   "props": {
+    "title": "Dónde se esconden",
+    "note": "revisa cada rincón",
+    "pins": [
+     {
+      "lugar": "heladera",
+      "txt": "motor atrás"
+     },
+     {
+      "lugar": "pileta",
+      "txt": "fondo mueble"
+     },
+     {
+      "lugar": "cocina",
+      "txt": "microondas"
+     },
+     {
+      "lugar": "desague",
+      "txt": "caño y zócalo"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "el cebo en el medio de la cocina",
+   "dur": 7,
+   "props": {
+    "title": "El segundo error",
+    "no": {
+     "img": {
+      "foto": "Wide-medium shot of the kitchen floor: a small gel bait dab sits alone on the open tiles in the middle of the room, between table legs and a chair, with a dark cockroach trail running past it across the floor. No hiding place nearby. No people, no text, labels or screens."
+     },
+     "txt": "en el medio de la cocina"
+    },
+    "si": {
+     "img": {
+      "foto": "Close detail of a dark narrow crack behind the stove drawer, a small gel dab placed deep inside the gap so it is hidden from view, with the drawer's wooden edge and grease stains around the opening. Warm kitchen light from the side. No people in frame, no text, labels or screens."
+     },
+     "txt": "dentro de la rendija"
+    }
+   }
+  },
+  {
+   "c": "ClBookPage",
+   "frase": "Las cantidades exactas están en la página dieciocho",
+   "dur": 8,
+   "props": {
+    "page": "img/fucucas10/page18.jpg",
+    "pageNo": 18,
+    "stamp": "Manual, página 18"
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Lo que sirve un rato es la cinta",
+   "dur": 7,
+   "props": {
+    "title": "Lo que sirve de verdad",
+    "no": {
+     "img": {
+      "foto": "Top-down shot of a cucumber slice, a lemon peel and a sprig of mint lying on the kitchen counter next to the sink, in soft daylight, none of them touching any crack or gap, clean granite surface with grey speckles. No people, no text, labels or screens."
+     },
+     "txt": "pepino, limón y menta"
+    },
+    "si": {
+     "img": {
+      "foto": "Detail of a 10 cm strip of double-sided tape lying under the fridge motor, its sticky side covered with several small brown cockroaches stuck fast, the tape pressed against a dark cement corner, dust and crumbs around it. No people in frame, no text, labels or screens."
+     },
+     "txt": "la cinta, pegajosa"
+    }
+   }
+  },
+  {
+   "c": "FabCiclo",
+   "frase": "cada hembra lleva su cápsula",
+   "dur": 10,
+   "props": {
+    "title": "Por qué se multiplican",
+    "centro": "Se multiplica",
+    "etapas": [
+     {
+      "img": {
+       "foto": "Macro photo of a small light-brown German cockroach female on a dark kitchen cabinet edge, the egg capsule visible at the tip of her abdomen, her legs gripping the wood, shallow focus and neutral daylight. No people, no text, labels or screens."
+      },
+      "txt": "hembra con cápsula"
+     },
+     {
+      "txt": "muchos huevos"
+     },
+     {
+      "img": {
+       "foto": "Macro shot of several small German cockroach nymphs clustered on the dark rim of a fridge base, a small brown capsule lying next to them on grey dust, the metal and cables in soft focus behind. No people, no text, labels or screens."
+      },
+      "txt": "en pocas semanas"
+     },
+     {
+      "txt": "la población crece"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "La cinta del motor tenía las cuatro pegadas",
+   "dur": 8,
+   "props": {
+    "antes": {
+     "foto": "Wide shot of a white fridge pulled about 10 cm away from the kitchen wall, a strip of double-sided tape under the motor with four small cockroaches stuck to it, the wall tiles behind with their blue-and-white strip, grey dust on the floor, warm evening light. No people in frame, no text, labels or screens.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "The same view one week later, same fridge position and same tape under the motor, now clean with no cockroaches and no new eggs on it, the floor swept, the wall tiles and blue-and-white strip identical, warm evening light. No people in frame, no text, labels or screens.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "una semana después"
+   }
+  },
+  {
+   "c": "FabCalendario",
+   "frase": "se repite una vez por semana",
+   "dur": 7,
+   "props": {
+    "cada": 7,
+    "txt": "con la linterna",
+    "title": "Cada semana",
+    "dias": 28
+   }
+  }
+ ]
+}

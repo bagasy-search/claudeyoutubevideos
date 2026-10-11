@@ -1,0 +1,15 @@
+{
+ "puntaje": 5,
+ "notas": [
+  "[CIERRE] Falta el CTA del Manual que exige la biblia y el brief. Agrega un párrafo antes del cierre final: 'El Manual del Fumigador tiene 66 arreglos, cuesta US$27 en un solo pago y tiene garantía de 7 días: 66 arreglos por menos de lo que cuesta UNA visita del fumigador.' Después ubica el ClQRCard con su QR y su portada. No menciones nada gratis.",
+  "[GANCHO] La segunda línea ('ahí está la fábrica') revela el misterio antes de tiempo, y luego [CASA] lo promete como algo por resolver. Cambia a algo como 'Mira. Corro el refrigerador y prendo la linterna. Hay algo ahí atrás que no esperabas.' Así el misterio se abre en CASA y se cierra en ARREGLO1.",
+  "[GANCHO] La frase de la tarjeta 'El motor del refrigerador: calor, agua y migas. Es el hotel cinco estrellas de la cucaracha' no aparece en el gancho. Pásala a la segunda línea de GANCHO, dentro de los primeros 5-10 s, y quita el 'Es un hotel' de ARREGLO1 para no repetirla.",
+  "[QUIEN] Falta la historia personal concreta (un lugar, un objeto, un año) que pide el molde. Agrega un recuerdo real de la cocina de un restaurante o de una casa, con año y detalle, por ejemplo la cucaracha que apareció en una cocina de restaurante en un año puntual y lo que hiciste.",
+  "[PROMESA] Dices 'Y al final te digo el lugar que casi nadie revisa', pero la caja de los enchufes aparece en el medio de ARREGLO3 y el cierre no vuelve a ese punto. Reordena: deja la caja de los enchufes para el final de ARREGLO3 o cumple la promesa en REVISION.",
+  "[ARREGLO1] Falta el loop de la primera, de la forma 'la primera va a hacer que tu familia discuta contigo'. Agrégalo al principio de ARREGLO1 o al final de PROMESA. Y como los loops tienen que caer cada 60-90 s, pon otro en ARREGLO2 entre el lugar dos y el cuatro.",
+  "[ERROR] 'Deja un olor que la cucaracha reconoce de lejos' es una afirmación sin porqué comprobable. Reformúlala a algo honesto y físico: 'el spray deja un residuo sobre el gel, y la cucaracha lo prueba y lo deja'. Cada dato necesita su porqué.",
+  "[MITOS] Falta identificar la cucaracha alemana, que el brief pide como seguridad: 'si son chiquitas, rubias y están pegadas a los aparatos, es la alemana, se reproduce rápido'. Hoy solo aparece como lista de síntomas, sin la explicación del porqué.",
+  "[ARREGLO3] La seguridad con Mateo y Bruno está bien pero cierra con una frase suelta. Agrega un porqué práctico (por ejemplo, el ácido bórico dentro de la rendija no lo alcanzan los dedos ni el hocico) y deja la advertencia del electricista en la caja de enchufes.",
+  "[ARREGLO1] El largo total es de 8842 caracteres, por debajo del rango de 9777-10684. Suma unos 1000-1800 caracteres con detalle de oficio: qué sientes al tocar el motor, cuánto tarda la cinta en atrapar, qué hace Bruno al olfatear el cebo. No agregues relleno."
+ ]
+}

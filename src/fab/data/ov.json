@@ -1,0 +1,287 @@
+[
+ {
+  "c": "FabDato",
+  "from": 2981,
+  "dur": 180,
+  "props": {
+   "num": "10",
+   "unidad": "centímetros",
+   "txt": "tira de cinta de doble faz",
+   "bed": "vid/fucucas10/bed_0.mp4#184"
+  },
+  "t": 99.36,
+  "frase": "una tira de cinta de doble faz"
+ },
+ {
+  "c": "FabDato",
+  "from": 4452,
+  "dur": 180,
+  "props": {
+   "num": "10",
+   "unidad": "minutos",
+   "txt": "revisión con la linterna",
+   "bed": "vid/fucucas10/bed_1.mp4#184"
+  },
+  "t": 148.4,
+  "frase": "la revisión de diez minutos con la linterna"
+ },
+ {
+  "c": "ClQRCard",
+  "from": 4750,
+  "dur": 120,
+  "props": {
+   "qr": "img/fucucas10/qr.jpg",
+   "cover": "img/fucucas10/book_cover.jpg",
+   "text": "Manual del Fumigador",
+   "kicker": "EL MANUAL",
+   "bed": "vid/fucucas10/bed_2.mp4#124"
+  },
+  "t": 158.35,
+  "frase": "En el Manual te dejé esta frase escrita"
+ },
+ {
+  "c": "ClCheck",
+  "from": 5128,
+  "dur": 240,
+  "props": {
+   "title": "Lo que compras",
+   "items": [
+    "Linterna: la que ya tienes",
+    "Cinta de doble faz de 10 cm",
+    "Cebo en gel o ácido bórico"
+   ],
+   "bed": "vid/fucucas10/bed_3.mp4#244"
+  },
+  "t": 170.93,
+  "frase": "La linterna que ya tienes sirve"
+ },
+ {
+  "c": "FabPasos",
+  "from": 7787,
+  "dur": 240,
+  "props": {
+   "title": "La cinta, paso a paso",
+   "pasos": [
+    {
+     "img": "k001",
+     "txt": "pegamento hacia arriba"
+    },
+    {
+     "img": "k002",
+     "txt": "metida en el rincón"
+    },
+    {
+     "img": "k003",
+     "txt": "una noche, sin tocar"
+    }
+   ],
+   "bed": "vid/fucucas10/bed_4.mp4#244"
+  },
+  "t": 259.56,
+  "frase": "Pongo la cinta de doble faz"
+ },
+ {
+  "c": "FabDato",
+  "from": 8318,
+  "dur": 180,
+  "props": {
+   "num": "3",
+   "unidad": "cápsulas",
+   "txt": "marrones, como un frijol",
+   "alerta": true,
+   "img": "k004",
+   "bed": "vid/fucucas10/bed_5.mp4#184"
+  },
+  "t": 277.26,
+  "frase": "tres cápsulas marrones del tamaño de un frijol"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 8944,
+  "dur": 210,
+  "props": {
+   "title": "Dónde va el cebo",
+   "no": {
+    "img": "k005",
+    "txt": "en el piso abierto"
+   },
+   "si": {
+    "img": "k006",
+    "txt": "dentro del rincón del motor"
+   },
+   "bed": "vid/fucucas10/bed_6.mp4#214"
+  },
+  "t": 298.14,
+  "frase": "Nunca en el piso abierto, nunca al paso"
+ },
+ {
+  "c": "FabRuta",
+  "from": 12300,
+  "dur": 195,
+  "props": {
+   "bicho": "cucaracha",
+   "desde": {
+    "img": "k007",
+    "txt": "el caño del fregadero"
+   },
+   "hasta": {
+    "img": "k008",
+    "txt": "detrás del zócalo"
+   },
+   "corte": "cinta adentro una noche",
+   "bed": "vid/fucucas10/bed_7.mp4#199"
+  },
+  "t": 410.0,
+  "frase": "por donde entra la cucaracha desde el caño"
+ },
+ {
+  "c": "FabMapa",
+  "from": 12585,
+  "dur": 300,
+  "props": {
+   "title": "Dónde se esconden",
+   "note": "revisa cada rincón",
+   "pins": [
+    {
+     "lugar": "heladera",
+     "txt": "motor atrás"
+    },
+    {
+     "lugar": "pileta",
+     "txt": "fondo mueble"
+    },
+    {
+     "lugar": "cocina",
+     "txt": "microondas"
+    },
+    {
+     "lugar": "desague",
+     "txt": "caño y zócalo"
+    }
+   ],
+   "bed": "vid/fucucas10/bed_8.mp4#304"
+  },
+  "t": 419.48,
+  "frase": "Cada rendija tapada es un escondite menos"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 14645,
+  "dur": 210,
+  "props": {
+   "title": "El segundo error",
+   "no": {
+    "img": "k009",
+    "txt": "en el medio de la cocina"
+   },
+   "si": {
+    "img": "k010",
+    "txt": "dentro de la rendija"
+   },
+   "bed": "vid/fucucas10/bed_9.mp4#214"
+  },
+  "t": 488.16,
+  "frase": "el cebo en el medio de la cocina"
+ },
+ {
+  "c": "ClBookPage",
+  "from": 15027,
+  "dur": 240,
+  "props": {
+   "page": "img/fucucas10/page18.jpg",
+   "pageNo": 18,
+   "stamp": "Manual, página 18",
+   "bed": "vid/fucucas10/bed_10.mp4#244"
+  },
+  "t": 500.9,
+  "frase": "Las cantidades exactas están en la página dieciocho"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 16024,
+  "dur": 210,
+  "props": {
+   "title": "Lo que sirve de verdad",
+   "no": {
+    "img": "k011",
+    "txt": "pepino, limón y menta"
+   },
+   "si": {
+    "img": "k012",
+    "txt": "la cinta, pegajosa"
+   },
+   "bed": "vid/fucucas10/bed_11.mp4#214"
+  },
+  "t": 534.14,
+  "frase": "Lo que sirve un rato es la cinta"
+ },
+ {
+  "c": "FabCiclo",
+  "from": 16692,
+  "dur": 300,
+  "props": {
+   "title": "Por qué se multiplican",
+   "centro": "Se multiplica",
+   "etapas": [
+    {
+     "img": "k013",
+     "txt": "hembra con cápsula"
+    },
+    {
+     "txt": "muchos huevos"
+    },
+    {
+     "img": "k014",
+     "txt": "en pocas semanas"
+    },
+    {
+     "txt": "la población crece"
+    }
+   ],
+   "bed": "vid/fucucas10/bed_12.mp4#304"
+  },
+  "t": 556.4,
+  "frase": "cada hembra lleva su cápsula"
+ },
+ {
+  "c": "FabAntesDespues",
+  "from": 18220,
+  "dur": 240,
+  "props": {
+   "antes": "k015",
+   "despues": "k016",
+   "nota": "una semana después",
+   "bed": "vid/fucucas10/bed_13.mp4#244"
+  },
+  "t": 607.32,
+  "frase": "La cinta del motor tenía las cuatro pegadas"
+ },
+ {
+  "c": "FabCalendario",
+  "from": 19574,
+  "dur": 210,
+  "props": {
+   "cada": 7,
+   "txt": "con la linterna",
+   "title": "Cada semana",
+   "dias": 28,
+   "bed": "vid/fucucas10/bed_14.mp4#214"
+  },
+  "t": 652.46,
+  "frase": "se repite una vez por semana"
+ },
+ {
+  "c": "ClQRCard",
+  "from": 20073,
+  "dur": 330,
+  "props": {
+   "qr": "img/fucucas10/qr.jpg",
+   "cover": "img/fucucas10/book_cover.jpg",
+   "text": "66 arreglos · US$27",
+   "kicker": "MANUAL DEL FUMIGADOR",
+   "bed": "vid/fucucas10/bed_15.mp4#334"
+  },
+  "t": 669.09,
+  "frase": "El Manual del Fumigador tiene 66 arreglos"
+ }
+]
