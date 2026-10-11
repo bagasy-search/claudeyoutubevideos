@@ -4,20 +4,24 @@ avatar_clips/rhmattress/reel30.mp4
 img/rhmattress/k_halfline.jpg
 img/rhmattress/r_halfbed.jpg
 img/rhmattress/b_halfwide.jpg
+broll/rhmattress/b_halfwide.mp4
 img/rhmattress/b_bottlefan.jpg
 img/rhmattress/b_yellowmacro.jpg
 img/rhmattress/b_cleanmatt.jpg
 img/rhmattress/k_sodaspoon.jpg
 img/rhmattress/k_onedrop.jpg
 img/rhmattress/k_mistlight.jpg
+vid/rhmattress/k_mistlight.mp4
 img/rhmattress/k_vacpowder.jpg
 img/rhmattress/b_waiting.jpg
 broll/rhmattress_st/b_waiting.mp4
 img/rhmattress/k_vacuum.jpg
 img/rhmattress/k_swirl.jpg
 img/rhmattress/k_mist2.jpg
+vid/rhmattress/k_mist2.mp4
 img/rhmattress/k_fanon.jpg
 img/rhmattress/k_vacpowder2.jpg
+vid/rhmattress/k_vacpowder2.mp4
 img/rhmattress/r_white.jpg
 img/rhmattress/k_pour.jpg
 img/rhmattress/b_protectorbox.jpg
@@ -30,8 +34,10 @@ img/rhmattress/r_itsyou.jpg
 img/rhmattress/b_sleeper.jpg
 broll/rhmattress_st/b_sleeper.mp4
 img/rhmattress/k_sheetwash.jpg
+vid/rhmattress/k_sheetwash.mp4
 img/rhmattress/b_pillowzone.jpg
 img/rhmattress/b_collar.jpg
+broll/rhmattress/b_collar.mp4
 img/rhmattress/k_sheetoff.jpg
 img/rhmattress/b_fan_night.jpg
 broll/rhmattress_st/b_fan_night.mp4
@@ -62,6 +68,7 @@ broll/rhmattress_st/bd_m10.mp4
 img/rhmattress/k_cuppour.jpg
 broll/rhmattress_st/bd_m12.mp4
 img/rhmattress/k_funnel.jpg
+vid/rhmattress/k_funnel.mp4
 img/rhmattress/b_sticky.jpg
 img/rhmattress/b_whitetowel.jpg
 broll/rhmattress_st/b_whitetowel.mp4
@@ -69,6 +76,7 @@ img/rhmattress/b_powdermacro.jpg
 img/rhmattress/b_soapdrop.jpg
 broll/rhmattress_st/b_soapdrop.mp4
 img/rhmattress/k_swirl2.jpg
+vid/rhmattress/k_swirl2.mp4
 img/rhmattress/b_bottomsoda.jpg
 img/rhmattress/r_warn.jpg
 img/rhmattress/k_sinkpour.jpg
@@ -86,6 +94,7 @@ img/rhmattress/k_foot.jpg
 img/rhmattress/k_press.jpg
 img/rhmattress/b_edge.jpg
 img/rhmattress/b_foam.jpg
+broll/rhmattress/b_foam.mp4
 broll/rhmattress_st/bd_m15.mp4
 img/rhmattress/k_pat.jpg
 img/rhmattress/b_emptybottle.jpg
@@ -99,6 +108,7 @@ img/rhmattress/b_fanmatt.jpg
 img/rhmattress/b_sunbed.jpg
 broll/rhmattress_st/b_sunbed.mp4
 img/rhmattress/b_grassmatt.jpg
+broll/rhmattress/b_grassmatt.mp4
 img/rhmattress/b_powder.jpg
 img/rhmattress/r_powder.jpg
 img/rhmattress/k_pillowcase.jpg
@@ -123,10 +133,12 @@ broll/rhmattress_st/b_guestroom.mp4
 img/rhmattress/b_curb.jpg
 img/rhmattress/r_proud.jpg
 img/rhmattress/k_sheeton.jpg
+vid/rhmattress/k_sheeton.mp4
 broll/rhmattress_st/bd_m22.mp4
 img/rhmattress/k_blot.jpg
 img/rhmattress/b_standtowel.jpg
 img/rhmattress/k_sprinkle.jpg
+vid/rhmattress/k_sprinkle.mp4
 img/rhmattress/b_sodaspot.jpg
 broll/rhmattress_st/bd_m23.mp4
 img/rhmattress/b_kidbed.jpg
@@ -148,6 +160,7 @@ img/rhmattress/b_sickbed.jpg
 broll/rhmattress_st/b_sickbed.mp4
 broll/rhmattress_st/bd_m33.mp4
 img/rhmattress/b_mistakes.jpg
+broll/rhmattress/b_mistakes.mp4
 img/rhmattress/b_bleach.jpg
 broll/rhmattress_st/b_bleach.mp4
 broll/rhmattress_st/bd_m34.mp4
@@ -165,6 +178,7 @@ broll/rhmattress_st/b_carpetmachine.mp4
 img/rhmattress/k_sprinkleall.jpg
 broll/rhmattress_st/bd_m38.mp4
 img/rhmattress/b_ring2.jpg
+broll/rhmattress/b_ring2.mp4
 img/rhmattress/k_wider.jpg
 img/rhmattress/b_crib.jpg
 broll/rhmattress_st/b_crib.mp4
@@ -174,6 +188,7 @@ img/rhmattress/b_protected.jpg
 broll/rhmattress_st/b_protected.mp4
 broll/rhmattress_st/bd_m39.mp4
 img/rhmattress/r_honest.jpg
+broll/rhmattress/r_honest.mp4
 img/rhmattress/b_sag.jpg
 broll/rhmattress_st/b_sag.mp4
 img/rhmattress/b_protectorbed.jpg
@@ -194,3 +209,7 @@ img/rhmattress/b_openwindow.jpg
 broll/rhmattress_st/b_openwindow.mp4
 img/rhmattress/b_oldmatt.jpg
 img/rhmattress/r_bye.jpg
+broll/rhmattress/b_collar_last.jpg
+broll/rhmattress_st/b_fan_night_last.jpg
+broll/rhmattress/b_foam_last.jpg
+broll/rhmattress/r_honest_last.jpg
