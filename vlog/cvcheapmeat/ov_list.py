@@ -1,5 +1,7 @@
 # Componentes de cvcheapmeat (≈5 s, LIMPIO gana a denso). Anclados a la frase exacta del guion.
 OV = [
+ ("CvPromise", at("Last time it was the green beans"), 7.0, {"title": "$3 beef that melts like butter", "lines": ["Brown it hard", "Dark beer, lid on, 300°F", "Falls apart under a fork"]}),
+ ("CvOldPhoto", at("I'm Claudio. I cooked for a cattle crew"), 7.5, {"img": I + "joven.jpg", "caption": "The butcher block, 1985", "date": "'85 03 19", "stamp": "40 years · 14 men"}),
  ("ClDoDont", at("They cook it like a steak"), 5.0, {"yes": {"label": "Low oven, 3 hours, lid on"}, "no": {"label": "Hard boil for an hour"}}),
  ("ClChip", at("Tough means it's not done yet."), 4.5, {"text": "Tough = NOT done yet", "alert": True, "corner": "tl"}),
  ("ClCheck", at("Three pounds of boneless chuck roast"), 10.0, {"title": "WHAT YOU NEED", "items": ["3 lb chuck roast or beef shank", "1 bottle dark beer + 1 tbsp cider vinegar", "1 onion · 4 garlic cloves", "2 dried ancho chiles", "1 lb small potatoes · 3 carrots", "Dutch oven with a tight lid"]}),

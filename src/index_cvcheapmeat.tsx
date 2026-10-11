@@ -6,10 +6,10 @@ import { ClReceipt } from "./claudio/ClBandeja";
 import { ClCheck, ClBookPage, ClQRCard, ClDoDont } from "./claudio/ClCards";
 import { ClTimer30 } from "./claudio/ClGauges";
 import { ClChip } from "./claudio/ClOverlays";
-import { CvMeatThermo } from "./claudio/CvVaquero";
+import { CvMeatThermo, CvOldPhoto, CvPromise } from "./claudio/CvVaquero";
 import OV from "./cvcheapmeat/ov.json";
 import { TOTAL_FRAMES } from "./cvcheapmeat/total";
-const C: Record<string, React.FC<any>> = { ClReceipt, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClTimer30, ClChip, CvMeatThermo };
+const C: Record<string, React.FC<any>> = { ClReceipt, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClTimer30, ClChip, CvMeatThermo, CvOldPhoto, CvPromise };
 const Main: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     <OffthreadVideo src={staticFile("vid/cvcheapmeat/vlog.mp4")} muted />
