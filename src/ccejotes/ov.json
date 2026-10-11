@@ -1,1 +1,184 @@
-[]
+[
+ {
+  "c": "ClGreenClock",
+  "k": "reloj",
+  "from": 6761,
+  "dur": 529,
+  "props": {
+   "bed": "img/ccejotes/bed_reloj.jpg",
+   "at": [
+    2.04,
+    5.97,
+    10.49,
+    12.97
+   ]
+  },
+  "t": 225.37
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 8401,
+  "dur": 210,
+  "props": {
+   "title": "Ejotes con tocino · 6 platos",
+   "rows": [
+    {
+     "k": "Ejotes, en trozos de 5 cm",
+     "v": "1 kg"
+    },
+    {
+     "k": "Tocino picado",
+     "v": "150 g"
+    },
+    {
+     "k": "Cebolla en tiras",
+     "v": "½"
+    },
+    {
+     "k": "Jitomates picados",
+     "v": "2"
+    },
+    {
+     "k": "Ajo / chile serrano",
+     "v": "2 dientes / 1"
+    },
+    {
+     "k": "Agua",
+     "v": "¼ de taza"
+    },
+    {
+     "k": "Sal",
+     "v": "1 cdita"
+    }
+   ],
+   "mark": "la tapa: 4 minutos, ni uno más",
+   "note": "sin olla",
+   "bed": "vid/ccejotes/bed_1.mp4#214"
+  },
+  "t": 280.04
+ },
+ {
+  "c": "ClTimer30",
+  "k": "tapa",
+  "from": 13191,
+  "dur": 108,
+  "props": {
+   "minutes": 4,
+   "label": "4 min",
+   "text": "tapados, ni uno más",
+   "bed": "vid/ccejotes/bed_2.mp4#112"
+  },
+  "t": 439.71
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 15262,
+  "dur": 229,
+  "props": {
+   "before": "img/ccejotes/antes.jpg",
+   "after": "img/ccejotes/despues.jpg",
+   "a": "HERVIDOS 15 MIN",
+   "b": "TAPADOS 4 MIN",
+   "note": "mismo ejote"
+  },
+  "t": 508.74
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 15748,
+  "dur": 285,
+  "props": {
+   "title": "Los ejotes de la fonda",
+   "items": [
+    "Tocino casi dorado",
+    "Cebolla 3 minutos",
+    "Ejotes y sal",
+    "¼ de taza de agua",
+    "Tapa 4 minutos",
+    "Destapas: jitomate, ajo, chile, hasta secar"
+   ],
+   "bed": "vid/ccejotes/bed_4.mp4#289"
+  },
+  "t": 524.94
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 28600,
+  "dur": 706,
+  "props": {
+   "head": "EL SARTÉN DE EJOTES",
+   "lines": [
+    [
+     "Ejotes, 1 kg",
+     "US$5.00"
+    ],
+    [
+     "Tocino, 150 g",
+     "US$2.00"
+    ],
+    [
+     "Cebolla y 2 jitomates",
+     "US$1.10"
+    ],
+    [
+     "Ajo y chile",
+     "US$0.25"
+    ],
+    [
+     "Todo el sartén · 6 platos",
+     "US$8.35"
+    ]
+   ],
+   "total": [
+    "Cada plato",
+    "US$1.40"
+   ],
+   "bed": "vid/ccejotes/bed_5.mp4#710"
+  },
+  "t": 953.32
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 30719,
+  "dur": 180,
+  "props": {
+   "page": "img/ccejotes/page46.jpg",
+   "pageNo": 46,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/ccejotes/bed_6.mp4#184"
+  },
+  "t": 1023.98
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 31112,
+  "dur": 210,
+  "props": {
+   "qr": "img/ccejotes/qr.jpg",
+   "cover": "img/ccejotes/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/ccejotes/bed_7.mp4#214"
+  },
+  "t": 1037.06
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 31574,
+  "dur": 150,
+  "props": {
+   "thumb": "img/ccejotes/th_cccafe.jpg",
+   "title": "El café de olla de la fonda",
+   "next": true,
+   "bed": "vid/ccejotes/bed_8.mp4#154"
+  },
+  "t": 1052.47
+ }
+]
