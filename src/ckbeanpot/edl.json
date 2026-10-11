@@ -1,0 +1,1647 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 4.0,
+"k": "",
+"c": "Opening",
+"props": {}
+},
+{
+"a": 4.0,
+"b": 15.6,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 15.6,
+"b": 23.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 23.0,
+"b": 36.5,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckbeanpot/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"Most",
+23.0
+],
+[
+"People",
+23.05
+],
+[
+"Are",
+37.33
+],
+[
+"Cooking",
+37.38
+],
+[
+"Pot",
+33.55
+],
+[
+"Roast",
+33.6
+],
+[
+"Wrong",
+33.65
+]
+],
+"k": "b_thumb_stove"
+}
+},
+{
+"a": 36.5,
+"b": 46.0,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"items": [
+{
+"t": 39.85,
+"txt": "Every amount, every step"
+},
+{
+"t": 46.86,
+"txt": "The one trick that makes these beans"
+},
+{
+"t": 53.54,
+"txt": "The mistake most pots of beans get"
+}
+],
+"k": "b_checklist_counter"
+}
+},
+{
+"a": 46.0,
+"b": 52.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 52.0,
+"b": 61.1,
+"k": "s006_l_promise",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 61.1,
+"b": 69.0,
+"k": "s007_l_carry_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 69.0,
+"b": 77.0,
+"k": "s008_n_church_night",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 77.0,
+"b": 85.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dp_plate",
+"vid": true,
+"cap": "1945 \u00b7 a hand setting a plate on a dinner table",
+"credit": "Dinner Party (1945), Edward C. Simmel \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 85.0,
+"b": 96.7,
+"k": "s010_n_oven_door",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 96.7,
+"b": 104.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 104.0,
+"b": 112.0,
+"k": "s012_n_lid_steam",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 112.0,
+"b": 122.2,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 122.2,
+"b": 131.0,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Dried beans are stubborn.",
+"They care about the water, the heat,",
+"and the patience you bring."
+],
+"sig": "Loretta",
+"k": "b_note_linen",
+"size": 80
+}
+},
+{
+"a": 131.0,
+"b": 140.0,
+"k": "s015_n_navy_beans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 140.0,
+"b": 150.8,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hb_horses",
+"vid": true,
+"cap": "1942 \u00b7 horses and a farmer working the fields",
+"credit": "Henry Browne, Farmer (1942), Roger Barlow \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 150.8,
+"b": 158.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 158.0,
+"b": 166.0,
+"k": "s018_n_salt_pork",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 166.0,
+"b": 173.0,
+"k": "s019_n_bacon_board",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 173.0,
+"b": 180.6,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 180.6,
+"b": 203.5,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT YOU NEED",
+"items": [
+{
+"t": 185.71,
+"txt": "Two pounds dried navy beans, sorted and rinsed"
+},
+{
+"t": 190.11,
+"txt": "Half a pound salt pork or thick bacon"
+},
+{
+"t": 195.77,
+"txt": "One large onion, halved"
+},
+{
+"t": 198.78,
+"txt": "Two-thirds cup dark molasses"
+},
+{
+"t": 190.11,
+"txt": "Half a cup packed brown sugar"
+},
+{
+"t": 210.46,
+"txt": "A quarter cup ketchup"
+}
+],
+"k": "b_checklist_counter"
+}
+},
+{
+"a": 203.5,
+"b": 210.5,
+"k": "s022_n_ingredients",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 210.5,
+"b": 215.1,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 215.1,
+"b": 233.0,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 1 \u00b7 THE SOAK",
+"head": "Soak the beans",
+"steps": [
+{
+"t": 220.79,
+"txt": "Overnight in plenty of water",
+"k": "s1a_beans_dry"
+},
+{
+"t": 226.07,
+"txt": "Or boil two minutes, stand one hour",
+"k": "s1b_soak_water"
+},
+{
+"t": 236.22,
+"txt": "Drain them. Even beans cook even.",
+"k": "s1c_colander"
+}
+],
+"bed": "b_stepcard_bed"
+}
+},
+{
+"a": 233.0,
+"b": 240.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hb_wash",
+"vid": true,
+"cap": "1942 \u00b7 a farmer washing up at a basin",
+"credit": "Henry Browne, Farmer (1942), Roger Barlow \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 240.0,
+"b": 247.0,
+"k": "s026_n_soaking_bowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 247.0,
+"b": 257.5,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 2 \u00b7 THE BOIL",
+"head": "Boil, then simmer",
+"steps": [
+{
+"t": 248.07,
+"txt": "Boil hard ten minutes",
+"k": "s2a_pot_boil"
+},
+{
+"t": 259.05,
+"txt": "Simmer about forty-five minutes",
+"k": "s2b_skins"
+},
+{
+"t": 268.34,
+"txt": "Save two cups of the liquid",
+"k": "s2c_liquid"
+}
+],
+"bed": "b_stepcard_bed"
+}
+},
+{
+"a": 257.5,
+"b": 265.0,
+"k": "s028_n_boiling_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 265.0,
+"b": 272.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 272.0,
+"b": 278.9,
+"k": "s030_n_hands_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 278.9,
+"b": 294.0,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The blow test.",
+"Blow on a spoonful. When the skins",
+"curl back and split, they are ready."
+],
+"sig": "Loretta",
+"k": "b_mistake_pot",
+"size": 72
+}
+},
+{
+"a": 294.0,
+"b": 303.0,
+"k": "s032_l_blow_test",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 303.0,
+"b": 313.1,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 313.1,
+"b": 322.5,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 3 \u00b7 THE POT",
+"head": "Layer the pot",
+"steps": [
+{
+"t": 315.83,
+"txt": "Heat the oven to three hundred",
+"k": "s3c_oven_pot"
+},
+{
+"t": 321.72,
+"txt": "Onion and half the salt pork in the bottom",
+"k": "s3a_onion"
+},
+{
+"t": 327.06,
+"txt": "Beans on top. Don't press them down.",
+"k": "s3b_pork"
+}
+],
+"bed": "b_stepcard_bed"
+}
+},
+{
+"a": 322.5,
+"b": 330.0,
+"k": "s035_n_onion_pork",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 330.0,
+"b": 339.1,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 339.1,
+"b": 354.0,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 300,
+"unit": "DEGREES F \u00b7 THE OVEN",
+"txt": "Heat the oven first",
+"k": "b_bignum_oven",
+"dur": 24
+}
+},
+{
+"a": 354.0,
+"b": 362.0,
+"k": "s038_n_molasses_sauce",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 362.0,
+"b": 370.2,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 370.2,
+"b": 377.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dp_eat",
+"vid": true,
+"cap": "1945 \u00b7 a man eating at a dinner table",
+"credit": "Dinner Party (1945), Edward C. Simmel \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 377.0,
+"b": 385.0,
+"k": "s041_n_soupy_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 385.0,
+"b": 392.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 392.0,
+"b": 400.6,
+"k": "s043_n_wooden_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 400.6,
+"b": 417.0,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "EVERY HOUR",
+"items": [
+{
+"t": 410.09,
+"txt": "Lift the lid and look"
+},
+{
+"t": 416.09,
+"txt": "Add bean liquid or hot water"
+},
+{
+"t": 420.15,
+"txt": "Keep the beans just covered"
+}
+],
+"k": "b_checklist_counter"
+}
+},
+{
+"a": 417.0,
+"b": 426.0,
+"k": "s045_l_check_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 426.0,
+"b": 434.0,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 1,
+"unit": "HOUR \u00b7 LID OFF",
+"txt": "The top browns",
+"k": "b_bignum_flour",
+"dur": 22
+}
+},
+{
+"a": 434.0,
+"b": 442.0,
+"k": "s047_n_brown_top",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 442.0,
+"b": 452.2,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 452.2,
+"b": 471.0,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "img/ckbeanpot/page49.png",
+"tab": "PAGE 49",
+"t": 455.98,
+"hl": 40
+}
+],
+"k": "b_qr_checkered"
+}
+},
+{
+"a": 471.0,
+"b": 480.2,
+"k": "s050_n_coffee_cup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 480.2,
+"b": 488.0,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"txt": "HARD BEANS AFTER HOURS",
+"k": "b_mistake2_bowl"
+}
+},
+{
+"a": 488.0,
+"b": 495.0,
+"k": "s052_n_hard_beans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 495.0,
+"b": 504.2,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 504.2,
+"b": 516.0,
+"k": "",
+"c": "DoDont",
+"props": {
+"yes": {
+"k": "b_donot_yes",
+"txt": "Keep them covered",
+"t": 517.99
+},
+"no": {
+"k": "b_donot_no",
+"txt": "Let them dry out",
+"t": 505.65
+}
+}
+},
+{
+"a": 516.0,
+"b": 525.5,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 525.5,
+"b": 533.0,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"txt": "OLD BEANS NEVER SOFTEN",
+"k": "b_mistake3_shelf"
+}
+},
+{
+"a": 533.0,
+"b": 541.0,
+"k": "s057_n_bag_beans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 541.0,
+"b": 548.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 548.0,
+"b": 556.0,
+"k": "s059_n_flour_canister",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 556.0,
+"b": 565.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dp_platter",
+"vid": true,
+"cap": "1945 \u00b7 a platter of food passed at a dinner table",
+"credit": "Dinner Party (1945), Edward C. Simmel \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 565.0,
+"b": 572.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 572.0,
+"b": 581.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dp_table",
+"vid": true,
+"cap": "1945 \u00b7 two women in aprons setting a dinner table",
+"credit": "Dinner Party (1945), Edward C. Simmel \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 581.0,
+"b": 590.1,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dp_roast",
+"vid": true,
+"cap": "1945 \u00b7 a roast on a platter at a dinner table",
+"credit": "Dinner Party (1945), Edward C. Simmel \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 590.1,
+"b": 598.0,
+"k": "s064_l_harold_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 598.0,
+"b": 606.0,
+"k": "s065_n_bread_slice",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 606.0,
+"b": 614.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dp_family",
+"vid": true,
+"cap": "1945 \u00b7 a family at a dinner table",
+"credit": "Dinner Party (1945), Edward C. Simmel \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 614.0,
+"b": 618.6,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 618.6,
+"b": 628.5,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/ckbeanpot/qr.jpg",
+"t": 623.09
+}
+},
+{
+"a": 628.5,
+"b": 641.2,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 641.2,
+"b": 648.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 648.0,
+"b": 657.0,
+"k": "s071_l_danny_phone",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 657.0,
+"b": 665.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dp_toast",
+"vid": true,
+"cap": "1945 \u00b7 guests talking over dinner",
+"credit": "Dinner Party (1945), Edward C. Simmel \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 665.0,
+"b": 674.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hb_supper",
+"vid": true,
+"cap": "1942 \u00b7 a farm family sitting down to a meal",
+"credit": "Henry Browne, Farmer (1942), Roger Barlow \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 674.0,
+"b": 683.0,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 6,
+"unit": "POUNDS DRIED BEANS",
+"txt": "A roaster feeds sixty",
+"k": "b_bignum_pantry",
+"dur": 22
+}
+},
+{
+"a": 683.0,
+"b": 690.0,
+"k": "s075_n_big_roaster",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 690.0,
+"b": 698.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 698.0,
+"b": 708.0,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "FOR ONE OR TWO",
+"items": [
+{
+"t": 705.11,
+"txt": "Make the whole recipe"
+},
+{
+"t": 708.8,
+"txt": "Freeze in one-cup containers"
+},
+{
+"t": 698.0,
+"txt": "Fridge five days, freezer three months"
+}
+],
+"k": "b_checklist_counter"
+}
+},
+{
+"a": 708.0,
+"b": 716.0,
+"k": "s078_l_one_cup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 716.0,
+"b": 724.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 724.0,
+"b": 731.5,
+"k": "s080_n_beans_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 731.5,
+"b": 741.0,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Two cans of navy beans per pound.",
+"Skip the soak. Bake an hour and a half."
+],
+"sig": "Loretta",
+"k": "b_comment_window",
+"size": 80
+}
+},
+{
+"a": 741.0,
+"b": 749.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 749.0,
+"b": 756.0,
+"k": "s083_n_roast_platter",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 756.0,
+"b": 763.4,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hb_tomatoes",
+"vid": true,
+"cap": "1942 \u00b7 tomatoes ripening on the vine in a farm garden",
+"credit": "Henry Browne, Farmer (1942), Roger Barlow \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 763.4,
+"b": 771.0,
+"k": "s085_n_green_beans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 771.0,
+"b": 780.0,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Calico beans, page thirty-six.",
+"Three beans, bacon, ground beef."
+],
+"sig": "Loretta",
+"k": "b_comment_table",
+"size": 72
+}
+},
+{
+"a": 780.0,
+"b": 790.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 790.0,
+"b": 799.0,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckbeanpot/th_other.jpg",
+"tag": "FROM MY OTHER CHANNEL",
+"words": [
+[
+"The",
+791.03
+],
+[
+"Best",
+791.08
+],
+[
+"Way",
+791.97
+],
+[
+"to",
+789.07
+],
+[
+"Clean",
+796.01
+],
+[
+"Your",
+796.06
+],
+[
+"Oven",
+796.11
+],
+[
+"Before",
+796.16
+],
+[
+"Thanksgiving",
+796.21
+]
+],
+"k": "b_thumb_stove"
+}
+},
+{
+"a": 799.0,
+"b": 809.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 809.0,
+"b": 817.0,
+"k": "s090_l_line_plates",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 817.0,
+"b": 823.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hb_wagon",
+"vid": true,
+"cap": "1942 \u00b7 a mule wagon on a farm road",
+"credit": "Henry Browne, Farmer (1942), Roger Barlow \u00b7 Public domain \u00b7 no audio"
+}
+},
+{
+"a": 823.0,
+"b": 831.0,
+"k": "s092_n_long_tables",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 831.0,
+"b": 839.4,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 839.4,
+"b": 855.0,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE WHOLE RECIPE",
+"items": [
+{
+"t": 845.53,
+"txt": "Soak, boil two minutes, stand an hour"
+},
+{
+"t": 855.69,
+"txt": "Simmer until the skins split"
+},
+{
+"t": 857.08,
+"txt": "Pork on the bottom, beans on top"
+},
+{
+"t": 839.4,
+"txt": "Three hundred degrees, five to six hours"
+},
+{
+"t": 839.4,
+"txt": "Lid off the last hour"
+}
+],
+"k": "b_checklist_counter"
+}
+},
+{
+"a": 855.0,
+"b": 862.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 862.0,
+"b": 869.0,
+"k": "s096_n_church_pass",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 869.0,
+"b": 877.0,
+"k": "s097_l_recap_stove",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 877.0,
+"b": 884.7,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 884.7,
+"b": 893.0,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "img/ckbeanpot/page49.png",
+"tab": "PAGE 49",
+"t": 890.57,
+"hl": 40
+}
+],
+"k": "b_qr_checkered"
+}
+},
+{
+"a": 893.0,
+"b": 904.3,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 904.3,
+"b": 921.0,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Next time: the smothered pork chops",
+"our church served at every funeral dinner."
+],
+"sig": "Loretta",
+"k": "b_sig_wood",
+"size": 72
+}
+},
+{
+"a": 921.0,
+"b": 928.5,
+"k": "s102_n_kitchen_towel",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 928.5,
+"b": 938.0,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "What did your mother put in her beans?",
+"opts": [
+{
+"txt": "Mustard",
+"t": 939.94
+},
+{
+"txt": "Bacon",
+"t": 941.24
+},
+{
+"txt": "Something sweet",
+"t": 943.3
+}
+],
+"k": "b_comment_table"
+}
+},
+{
+"a": 938.0,
+"b": 945.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 945.0,
+"b": 952.1,
+"k": "s105_n_pie_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 952.1,
+"b": 962.0,
+"k": "s106_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 962.0,
+"b": 972.08,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+23.0,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+36.5,
+"design/paper_slide",
+0.25
+],
+[
+122.2,
+"design/pen_write",
+0.25
+],
+[
+180.6,
+"design/paper_slide",
+0.25
+],
+[
+215.1,
+"design/paper_slide",
+0.25
+],
+[
+247.0,
+"design/paper_slide",
+0.25
+],
+[
+278.9,
+"design/pen_write",
+0.25
+],
+[
+313.1,
+"design/paper_slide",
+0.25
+],
+[
+339.1,
+"design/click_slide",
+0.2
+],
+[
+400.6,
+"design/paper_slide",
+0.25
+],
+[
+426.0,
+"design/click_slide",
+0.2
+],
+[
+452.2,
+"design/page_turn_big",
+0.35
+],
+[
+480.2,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+504.2,
+"design/click_slide",
+0.22
+],
+[
+525.5,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+618.6,
+"design/click_slide",
+0.25
+],
+[
+674.0,
+"design/click_slide",
+0.2
+],
+[
+698.0,
+"design/paper_slide",
+0.25
+],
+[
+731.5,
+"design/pen_write",
+0.25
+],
+[
+771.0,
+"design/pen_write",
+0.25
+],
+[
+790.0,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+839.4,
+"design/paper_slide",
+0.25
+],
+[
+884.7,
+"design/page_turn_big",
+0.35
+],
+[
+904.3,
+"design/pen_write",
+0.25
+],
+[
+928.5,
+"design/click_slide",
+0.22
+]
+],
+"end": 972.08
+}
