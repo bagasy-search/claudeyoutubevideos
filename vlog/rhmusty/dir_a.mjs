@@ -36,7 +36,7 @@ export const SHOTS = [
   K(3, "Pop the grille off the fridge", "k_grille", `Close view of a hand pulling the plastic grille off the bottom front of a white refrigerator, kneeling on beige vinyl floor.`, "the hand grips the grille", "the grille pops off and shows the dark gap underneath", "a plastic grille clicking off"),
   K(3, "Feel the closet wall", "k_closetwall", `Close view of a hand pushing hanging clothes aside in a closet and laying flat on the white back wall.`, "the hand pushes the clothes aside", "the flat hand presses on the wall", "clothes hangers sliding on a rod"),
   R(3, "Found it", "r_foundit", `She kneels in front of an open cabinet under a kitchen sink in ${KIT}, shining a flashlight inside and looking back at the camera, delighted.`),
-  C(3, "", "RhNoseMeter", { bed: I("b_sinkcab"), steps: ["Sinks", "Towels", "Rugs", "Drains", "Fridge", "Closets"], found: "FOUND IT" }),
+  C(3, "", "RhWipeReveal", { before: I("b_stainmacro"), after: I("b_cleanfloor"), lb: "Before", la: "After" }),
   // ── 3 loops
   A(4, "", { kick: { txt: "stay with me", hand: true } }),
   B(4, "one spot behind your refrigerator", "b_fridgeback", `The narrow dark gap beside a white refrigerator pulled out a little from the wall, dust on the floor behind it.`, "dust drifts in the dark gap; nothing else moves"),
