@@ -43,7 +43,7 @@
   "c": "ClPorkTemp",
   "k": "temp",
   "from": 4735,
-  "dur": 126,
+  "dur": 444,
   "props": {
    "bed": "img/ccchuletas/bed_temp.jpg",
    "at": [
@@ -54,17 +54,6 @@
    ]
   },
   "t": 157.83
- },
- {
-  "c": "ClChip",
-  "k": "sesenta",
-  "from": 4867,
-  "dur": 126,
-  "props": {
-   "text": "63 °C · 145 °F · ahí la saco",
-   "corner": "tl"
-  },
-  "t": 162.23
  },
  {
   "c": "ClRecipeCard",
@@ -109,7 +98,7 @@
    ],
    "mark": "gruesas, como un pulgar acostado",
    "note": "sin sal al sazonar",
-   "bed": "vid/ccchuletas/bed_2.mp4#304"
+   "bed": "vid/ccchuletas/bed_1.mp4#304"
   },
   "t": 243.71
  },
@@ -123,7 +112,7 @@
    "label": "30 min",
    "text": "en la salmuera, no más",
    "fast": true,
-   "bed": "vid/ccchuletas/bed_3.mp4#82"
+   "bed": "vid/ccchuletas/bed_2.mp4#82"
   },
   "t": 282.33
  },
@@ -137,7 +126,7 @@
    "label": "10 min",
    "text": "los poblanos sudan",
    "fast": true,
-   "bed": "vid/ccchuletas/bed_4.mp4#100"
+   "bed": "vid/ccchuletas/bed_3.mp4#100"
   },
   "t": 298.87
  },
@@ -150,7 +139,7 @@
    "minutes": 3,
    "label": "3 min",
    "text": "por lado, sin moverlas",
-   "bed": "vid/ccchuletas/bed_5.mp4#94"
+   "bed": "vid/ccchuletas/bed_4.mp4#94"
   },
   "t": 387.16
  },
@@ -163,7 +152,7 @@
    "minutes": 3,
    "label": "3 min",
    "text": "cebolla y rajas",
-   "bed": "vid/ccchuletas/bed_6.mp4#106"
+   "bed": "vid/ccchuletas/bed_5.mp4#106"
   },
   "t": 424.92
  },
@@ -177,9 +166,20 @@
    "label": "6-8 min",
    "text": "tapado, fuego bajo",
    "fast": true,
-   "bed": "vid/ccchuletas/bed_7.mp4#82"
+   "bed": "vid/ccchuletas/bed_6.mp4#82"
   },
   "t": 447.18
+ },
+ {
+  "c": "ClChip",
+  "k": "sesenta",
+  "from": 13796,
+  "dur": 126,
+  "props": {
+   "text": "63 °C · 145 °F · ahí la saco",
+   "corner": "tl"
+  },
+  "t": 459.87
  },
  {
   "c": "ClChip",
