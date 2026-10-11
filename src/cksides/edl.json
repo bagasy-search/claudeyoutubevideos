@@ -1,0 +1,1887 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 3.8,
+"k": "",
+"c": "Opening",
+"props": {}
+},
+{
+"a": 3.8,
+"b": 10.107,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 10.107,
+"b": 16.06,
+"k": "s002_l_fridge",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 16.06,
+"b": 20.067,
+"k": "s003_n_milk_jug",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 20.067,
+"b": 25.527,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 25.527,
+"b": 31.967,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 31.967,
+"b": 36.587,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_talk_woman",
+"vid": true,
+"cap": "1950 · a smiling woman talks to the camera",
+"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+}
+},
+{
+"a": 36.587,
+"b": 45.9,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "IN THIS VIDEO",
+"k": "n_windowsill",
+"items": [
+{
+"t": 37.21,
+"txt": "Sides for the refrigerator on Tuesday"
+},
+{
+"t": 35.53,
+"txt": "Sides that bake on Wednesday"
+},
+{
+"t": 38.05,
+"txt": "Sides that wait for Thursday morning"
+}
+]
+}
+},
+{
+"a": 45.9,
+"b": 51.413,
+"k": "s008_n_oven_glow",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 51.413,
+"b": 57.58,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 57.58,
+"b": 66.767,
+"k": "s010_n_roast_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 66.767,
+"b": 78.367,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_nine_by_thirteen",
+"txt": "EVERYTHING ON THURSDAY",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 78.367,
+"b": 84.787,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 84.787,
+"b": 94.807,
+"k": "s013_l_basement_stairs",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 94.807,
+"b": 104.693,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_kettles_1950s",
+"vid": true,
+"cap": "1950s · two cooks in white hats in a big kitchen",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 104.693,
+"b": 113.356,
+"k": "s015_n_church_hall",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 113.356,
+"b": 119.967,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 119.967,
+"b": 127.113,
+"k": "s017_l_bernice_step",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 127.113,
+"b": 136.233,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Loretta, a supper is just arithmetic with gravy on it."
+],
+"sig": "Bernice",
+"k": "n_coffee_cup",
+"size": 80
+}
+},
+{
+"a": 136.233,
+"b": 141.91,
+"k": "s019_n_sign_sheet",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 141.91,
+"b": 148.747,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 148.747,
+"b": 155.207,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dining_hall_1950s",
+"vid": true,
+"cap": "1950s · a man sets the tables in a dining hall",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 155.207,
+"b": 166.313,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE CROWD CHART",
+"k": "n_sign_sheet",
+"items": [
+{
+"t": 156.35,
+"txt": "Twenty-five people"
+},
+{
+"t": 165.57,
+"txt": "About eight pounds of potatoes"
+},
+{
+"t": 155.81,
+"txt": "Then add ten percent"
+}
+]
+}
+},
+{
+"a": 166.313,
+"b": 173.974,
+"k": "s023_l_crowd_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 173.974,
+"b": 180.513,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 180.513,
+"b": 190.993,
+"k": "s025_n_bowl_eggs",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 190.993,
+"b": 202.676,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_corn",
+"vid": true,
+"cap": "1952 · a farmer in the corn",
+"credit": "Texas Farm Family (1952) · Public domain"
+}
+},
+{
+"a": 202.676,
+"b": 209.287,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 209.287,
+"b": 220.96,
+"k": "",
+"c": "WeekCal",
+"props": {
+"k": "n_windowsill",
+"days": [
+{
+"d": "MON",
+"txt": "Dry the bread",
+"t": 212.07
+},
+{
+"d": "TUE",
+"txt": "Potatoes into the fridge",
+"t": 213.29
+},
+{
+"d": "WED",
+"txt": "Bake sweets, make the sauces",
+"t": 217.68
+},
+{
+"d": "THU",
+"txt": "The oven runs",
+"t": 220.96
+}
+]
+}
+},
+{
+"a": 220.96,
+"b": 228.397,
+"k": "s029_l_week_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 228.397,
+"b": 234.953,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 234.953,
+"b": 244.84,
+"k": "s031_l_bread_pans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 244.84,
+"b": 255.063,
+"k": "s032_n_flour_canister",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 255.063,
+"b": 261.573,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 261.573,
+"b": 267.327,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_mixer",
+"vid": true,
+"cap": "1951 · a woman at a kitchen mixer",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 267.327,
+"b": 274.047,
+"k": "s035_n_fridge_shelf",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 274.047,
+"b": 280.34,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 2,
+"unit": "DAYS",
+"txt": "COVERED IN THE FRIDGE",
+"k": "n_sweet_baked",
+"dur": 24
+}
+},
+{
+"a": 280.34,
+"b": 284.736,
+"k": "s037_n_potatoes_raw",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 284.736,
+"b": 291.293,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 291.293,
+"b": 310.013,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page51",
+"tab": "PAGE 51",
+"t": 292.45,
+"hl": 40
+}
+],
+"k": "n_cream_cheese_sour"
+}
+},
+{
+"a": 310.013,
+"b": 322.06,
+"k": "s040_n_cream_cheese_sour",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 322.06,
+"b": 328.76,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 328.76,
+"b": 340.387,
+"k": "s042_l_potatoes_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 340.387,
+"b": 349.857,
+"k": "s043_n_red_potatoes",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 349.857,
+"b": 356.417,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 356.417,
+"b": 365.167,
+"k": "s045_n_green_peas",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 365.167,
+"b": 374.087,
+"k": "s046_l_mash_bowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 374.087,
+"b": 380.613,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 380.613,
+"b": 394.767,
+"k": "s048_l_cream_cheese",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 394.767,
+"b": 406.217,
+"k": "s049_n_spoon_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 406.217,
+"b": 413.267,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 413.267,
+"b": 422.687,
+"k": "s051_l_spread_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 422.687,
+"b": 432.423,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_nine_by_thirteen",
+"yes": {
+"k": "n_nine_by_thirteen",
+"txt": "Covered, in the fridge",
+"t": 446.54
+},
+"no": {
+"k": "n_nine_by_thirteen",
+"txt": "Uncovered, dried out",
+"t": 423.14
+}
+}
+},
+{
+"a": 432.423,
+"b": 439.047,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 439.047,
+"b": 449.0,
+"k": "s054_l_oven_open",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 449.0,
+"b": 458.62,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 165,
+"unit": "°F IN THE CENTER",
+"k": "n_thermometer",
+"dur": 22
+}
+},
+{
+"a": 458.62,
+"b": 464.75,
+"k": "s056_n_pie_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 464.75,
+"b": 471.56,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 471.56,
+"b": 482.5,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The cream cheese and the sour cream keep them creamy."
+],
+"sig": "Loretta",
+"k": "n_open_book",
+"size": 80
+}
+},
+{
+"a": 482.5,
+"b": 491.04,
+"k": "s059_l_book_read",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 491.04,
+"b": 497.76,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 497.76,
+"b": 510.953,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_bowl_eggs",
+"yes": {
+"k": "n_bowl_eggs",
+"txt": "A hand masher, a quick beat",
+"t": 501.02
+},
+"no": {
+"k": "n_bowl_eggs",
+"txt": "Mixed too long, gluey",
+"t": 498.18
+}
+}
+},
+{
+"a": 510.953,
+"b": 519.01,
+"k": "s062_n_clock_wall",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 519.01,
+"b": 525.527,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 525.527,
+"b": 536.033,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page1",
+"tab": "COOKBOOK",
+"t": 526.31,
+"hl": 40
+}
+],
+"k": "n_open_book"
+}
+},
+{
+"a": 536.033,
+"b": 543.453,
+"k": "s065_l_pointing",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 543.453,
+"b": 550.453,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 550.453,
+"b": 562.893,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WEDNESDAY",
+"k": "n_sage_thyme",
+"items": [
+{
+"t": 578.11,
+"txt": "Bake the sweet potatoes whole"
+},
+{
+"t": 554.97,
+"txt": "Make the onion and butter mix"
+},
+{
+"t": 558.61,
+"txt": "Make the pea sauce"
+}
+]
+}
+},
+{
+"a": 562.893,
+"b": 571.434,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_reading_book_1951",
+"vid": true,
+"cap": "1951 · hands turning the pages of a book",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 571.434,
+"b": 578.113,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 578.113,
+"b": 591.457,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47",
+"t": 578.6,
+"hl": 40
+}
+],
+"k": "n_sweet_baked"
+}
+},
+{
+"a": 591.457,
+"b": 601.35,
+"k": "s071_l_sweet_slice",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 601.35,
+"b": 607.934,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 607.934,
+"b": 625.02,
+"k": "s073_l_glaze_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 625.02,
+"b": 640.573,
+"k": "s074_n_pecans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 640.573,
+"b": 647.247,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 647.247,
+"b": 655.547,
+"k": "s076_l_skillet_onion",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 655.547,
+"b": 665.62,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page54",
+"tab": "PAGE 54",
+"t": 656.17,
+"hl": 40
+}
+],
+"k": "n_onion_celery"
+}
+},
+{
+"a": 665.62,
+"b": 672.624,
+"k": "s078_n_sage_thyme",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 672.624,
+"b": 679.347,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 679.347,
+"b": 688.033,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/cksides/qr.jpg",
+"t": 678.57
+}
+},
+{
+"a": 688.033,
+"b": 691.653,
+"k": "s081_n_rolling_pin",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 691.653,
+"b": 698.513,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 698.513,
+"b": 708.873,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page53",
+"tab": "PAGE 53",
+"t": 699.21,
+"hl": 40
+}
+],
+"k": "n_green_peas"
+}
+},
+{
+"a": 708.873,
+"b": 717.007,
+"k": "s084_l_cream_sauce",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 717.007,
+"b": 722.267,
+"k": "s085_n_coffee_urn",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 722.267,
+"b": 728.727,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 728.727,
+"b": 741.233,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_cooking_girls",
+"vid": true,
+"cap": "1951 · three young women tying on aprons",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 741.233,
+"b": 754.22,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Three minutes keeps the peas green."
+],
+"sig": "Loretta",
+"k": "n_red_potatoes",
+"size": 80
+}
+},
+{
+"a": 754.22,
+"b": 761.663,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 761.663,
+"b": 776.407,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page50",
+"tab": "PAGE 50",
+"t": 762.11,
+"hl": 40
+}
+],
+"k": "n_crackers"
+}
+},
+{
+"a": 776.407,
+"b": 787.12,
+"k": "s091_l_corn_pour",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 787.12,
+"b": 794.36,
+"k": "s092_n_windowsill",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 794.36,
+"b": 801.073,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 801.073,
+"b": 813.41,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_crackers",
+"yes": {
+"k": "n_crackers",
+"txt": "Some inside, the rest on top",
+"t": 808.45
+},
+"no": {
+"k": "n_crackers",
+"txt": "All of them inside: soggy top",
+"t": 809.74
+}
+}
+},
+{
+"a": 813.41,
+"b": 822.187,
+"k": "s095_n_bread_cubes",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 822.187,
+"b": 829.31,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 829.31,
+"b": 841.333,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page52",
+"tab": "PAGE 52",
+"t": 829.85,
+"hl": 40
+}
+],
+"k": "n_beet_slices"
+}
+},
+{
+"a": 841.333,
+"b": 851.4,
+"k": "s098_l_beets_sauce",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 851.4,
+"b": 859.973,
+"k": "s099_n_beet_slices",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 859.973,
+"b": 866.907,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 866.907,
+"b": 875.833,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Use the juice from the can."
+],
+"sig": "Loretta",
+"k": "n_gravy_boat",
+"size": 80
+}
+},
+{
+"a": 875.833,
+"b": 881.513,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_couple",
+"vid": true,
+"cap": "1952 · a young farm woman walks through the tall grass",
+"credit": "Texas Farm Family (1952) · Public domain"
+}
+},
+{
+"a": 881.513,
+"b": 887.55,
+"k": "s103_n_gravy_boat",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 887.55,
+"b": 894.193,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 894.193,
+"b": 909.633,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THURSDAY MORNING",
+"k": "n_roast_pan",
+"items": [
+{
+"t": 894.73,
+"txt": "Potatoes out 30 minutes early"
+},
+{
+"t": 897.73,
+"txt": "Dressing covered in the oven"
+},
+{
+"t": 912.73,
+"txt": "Corn in while the beets cook"
+}
+]
+}
+},
+{
+"a": 909.633,
+"b": 918.967,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_stove_pots",
+"vid": true,
+"cap": "1950 · a woman cooking at a stove with pots",
+"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+}
+},
+{
+"a": 918.967,
+"b": 926.147,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 926.147,
+"b": 933.26,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_fridge_open",
+"vid": true,
+"cap": "1957 · a man opens a refrigerator full of food",
+"credit": "Frigidaire Finale (1957) · Public domain"
+}
+},
+{
+"a": 933.26,
+"b": 940.72,
+"k": "s109_l_thermometer",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 940.72,
+"b": 950.38,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 140,
+"unit": "°F OR HOTTER",
+"k": "n_spoon_pot",
+"dur": 22
+}
+},
+{
+"a": 950.38,
+"b": 956.86,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 956.86,
+"b": 966.653,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"A little card by the dish.",
+"A separate spoon for every dish."
+],
+"sig": "Loretta",
+"k": "n_church_hall",
+"size": 76
+}
+},
+{
+"a": 966.653,
+"b": 973.053,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_sink",
+"vid": true,
+"cap": "1950 · a woman washing dishes at a window sink",
+"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+}
+},
+{
+"a": 973.053,
+"b": 979.853,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 979.853,
+"b": 987.033,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_living_room_1951",
+"vid": true,
+"cap": "1951 · a mother and child in a living room",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 987.033,
+"b": 997.34,
+"k": "s116_l_danny_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 997.34,
+"b": 1008.657,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_clock_wall",
+"caption": "Harold always carried the heavy roasting pan up the basement stairs.",
+"date": "THANKSGIVING",
+"t": 997.85
+}
+},
+{
+"a": 1008.657,
+"b": 1015.227,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1015.227,
+"b": 1022.463,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page1",
+"tab": "COOKBOOK",
+"t": 1013.73,
+"hl": 40
+}
+],
+"k": "n_open_book"
+}
+},
+{
+"a": 1022.463,
+"b": 1029.566,
+"k": "s120_n_butter_dish",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 1029.566,
+"b": 1036.16,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1036.16,
+"b": 1053.147,
+"k": "",
+"c": "WeekCal",
+"props": {
+"k": "n_windowsill",
+"days": [
+{
+"d": "MON",
+"txt": "Dry the bread",
+"t": 1034.44
+},
+{
+"d": "TUE",
+"txt": "Potatoes covered in the fridge",
+"t": 1036.32
+},
+{
+"d": "WED",
+"txt": "Sweets, onion mix, pea sauce",
+"t": 1040.4
+},
+{
+"d": "THU",
+"txt": "Glaze, bake, warm, serve",
+"t": 1046.56
+}
+]
+}
+},
+{
+"a": 1053.147,
+"b": 1064.347,
+"k": "s123_n_cookbook_shelf",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 1064.347,
+"b": 1070.84,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1070.84,
+"b": 1083.26,
+"k": "",
+"c": "Tease",
+"props": {
+"k": "n_church_hall",
+"txt": "The All-Day Bean Pot",
+"tag": "NEXT WEEK",
+"t": 1072.2
+}
+},
+{
+"a": 1083.26,
+"b": 1092.483,
+"k": "s126_n_serving_bowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 1092.483,
+"b": 1099.26,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1099.26,
+"b": 1107.153,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Who is the one who always stands at the stove?",
+"opts": [
+{
+"txt": "My mother",
+"t": 1099.61
+},
+{
+"txt": "Me",
+"t": 1103.16
+},
+{
+"txt": "Bernice",
+"t": 1099.61
+}
+],
+"k": "n_window_light"
+}
+},
+{
+"a": 1107.153,
+"b": 1111.143,
+"k": "s129_n_wooden_spoons",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 1111.143,
+"b": 1117.78,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1117.78,
+"b": 1129.533,
+"k": "s131_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 1129.533,
+"b": 1135.873,
+"k": "s132_n_bowl_peas",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+}
+],
+"sfx": [
+[
+36.59,
+"design/paper_slide",
+0.25
+],
+[
+66.77,
+"design/click_slide",
+0.25
+],
+[
+127.11,
+"design/pen_write",
+0.25
+],
+[
+155.21,
+"design/paper_slide",
+0.25
+],
+[
+209.29,
+"design/paper_slide",
+0.25
+],
+[
+274.05,
+"design/whoosh_slow_sweep",
+0.2
+],
+[
+291.29,
+"design/page_turn_big",
+0.35
+],
+[
+422.69,
+"design/click_slide",
+0.22
+],
+[
+449.0,
+"design/whoosh_slow_sweep",
+0.2
+],
+[
+471.56,
+"design/pen_write",
+0.25
+],
+[
+497.76,
+"design/click_slide",
+0.22
+],
+[
+525.53,
+"design/page_turn_big",
+0.35
+],
+[
+550.45,
+"design/paper_slide",
+0.25
+],
+[
+578.11,
+"design/page_turn_big",
+0.35
+],
+[
+655.55,
+"design/page_turn_big",
+0.35
+],
+[
+679.35,
+"design/click_slide",
+0.25
+],
+[
+698.51,
+"design/page_turn_big",
+0.35
+],
+[
+741.23,
+"design/pen_write",
+0.25
+],
+[
+761.66,
+"design/page_turn_big",
+0.35
+],
+[
+801.07,
+"design/click_slide",
+0.22
+],
+[
+829.31,
+"design/page_turn_big",
+0.35
+],
+[
+866.91,
+"design/pen_write",
+0.25
+],
+[
+894.19,
+"design/paper_slide",
+0.25
+],
+[
+940.72,
+"design/whoosh_slow_sweep",
+0.2
+],
+[
+956.86,
+"design/pen_write",
+0.25
+],
+[
+1015.23,
+"design/page_turn_big",
+0.35
+],
+[
+1036.16,
+"design/paper_slide",
+0.25
+],
+[
+1099.26,
+"design/click_slide",
+0.22
+]
+],
+"end": 1135.873
+}
