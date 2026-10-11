@@ -1,0 +1,312 @@
+[
+ {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 499,
+  "dur": 322,
+  "t": 16.62,
+  "props": {
+   "dish": "Chuletas en rajas",
+   "lines": [
+    "Un truco de media hora",
+    "Un número que lo cambia todo"
+   ],
+   "at": [
+    5.13,
+    7.55
+   ],
+   "bed": "vid/ccchuletas/bed_menu.mp4#331"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 827,
+  "dur": 195,
+  "t": 27.56,
+  "props": {
+   "photo": "img/ccchuletas/joven.jpg",
+   "caption": "con mi amá, en la fonda · 1998",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    }
+   ],
+   "at": [
+    1.71
+   ],
+   "bed": "vid/ccchuletas/bed_joven.mp4#199"
+  }
+ },
+ {
+  "c": "ClPorkTemp",
+  "k": "temp",
+  "from": 4735,
+  "dur": 126,
+  "props": {
+   "bed": "img/ccchuletas/bed_temp.jpg",
+   "at": [
+    4.4,
+    6.26,
+    8.73,
+    10.97
+   ]
+  },
+  "t": 157.83
+ },
+ {
+  "c": "ClChip",
+  "k": "sesenta",
+  "from": 4867,
+  "dur": 126,
+  "props": {
+   "text": "63 °C · 145 °F · ahí la saco",
+   "corner": "tl"
+  },
+  "t": 162.23
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 7311,
+  "dur": 300,
+  "props": {
+   "title": "Chuletas en rajas · 4 platos",
+   "rows": [
+    {
+     "k": "Chuletas con hueso, 2½ cm",
+     "v": "4"
+    },
+    {
+     "k": "Salmuera: agua fría",
+     "v": "1 litro"
+    },
+    {
+     "k": "Sal + azúcar",
+     "v": "4 + 2 cdas"
+    },
+    {
+     "k": "Pimienta y chile ancho",
+     "v": "1 cdita"
+    },
+    {
+     "k": "Manteca",
+     "v": "2 cdas"
+    },
+    {
+     "k": "Cebolla + poblanos en rajas",
+     "v": "1 + 2"
+    },
+    {
+     "k": "Caldo",
+     "v": "½ taza"
+    },
+    {
+     "k": "Mantequilla",
+     "v": "1 cda"
+    }
+   ],
+   "mark": "gruesas, como un pulgar acostado",
+   "note": "sin sal al sazonar",
+   "bed": "vid/ccchuletas/bed_2.mp4#304"
+  },
+  "t": 243.71
+ },
+ {
+  "c": "ClTimer30",
+  "k": "treinta",
+  "from": 8470,
+  "dur": 78,
+  "props": {
+   "minutes": 30,
+   "label": "30 min",
+   "text": "en la salmuera, no más",
+   "fast": true,
+   "bed": "vid/ccchuletas/bed_3.mp4#82"
+  },
+  "t": 282.33
+ },
+ {
+  "c": "ClTimer30",
+  "k": "diez",
+  "from": 8966,
+  "dur": 96,
+  "props": {
+   "minutes": 10,
+   "label": "10 min",
+   "text": "los poblanos sudan",
+   "fast": true,
+   "bed": "vid/ccchuletas/bed_4.mp4#100"
+  },
+  "t": 298.87
+ },
+ {
+  "c": "ClTimer30",
+  "k": "tres",
+  "from": 11615,
+  "dur": 90,
+  "props": {
+   "minutes": 3,
+   "label": "3 min",
+   "text": "por lado, sin moverlas",
+   "bed": "vid/ccchuletas/bed_5.mp4#94"
+  },
+  "t": 387.16
+ },
+ {
+  "c": "ClTimer30",
+  "k": "rajas",
+  "from": 12747,
+  "dur": 102,
+  "props": {
+   "minutes": 3,
+   "label": "3 min",
+   "text": "cebolla y rajas",
+   "bed": "vid/ccchuletas/bed_6.mp4#106"
+  },
+  "t": 424.92
+ },
+ {
+  "c": "ClTimer30",
+  "k": "seis",
+  "from": 13415,
+  "dur": 78,
+  "props": {
+   "minutes": 8,
+   "label": "6-8 min",
+   "text": "tapado, fuego bajo",
+   "fast": true,
+   "bed": "vid/ccchuletas/bed_7.mp4#82"
+  },
+  "t": 447.18
+ },
+ {
+  "c": "ClChip",
+  "k": "reposo",
+  "from": 14679,
+  "dur": 120,
+  "props": {
+   "text": "Destapado · 5 min de reposo",
+   "corner": "tl"
+  },
+  "t": 489.3
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 15659,
+  "dur": 489,
+  "props": {
+   "before": "img/ccchuletas/antes.jpg",
+   "after": "img/ccchuletas/despues.jpg",
+   "a": "DELGADA Y APLASTADA",
+   "b": "GRUESA, SALMUERA Y 63°",
+   "note": "el mismo cerdo"
+  },
+  "t": 521.98
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 16221,
+  "dur": 360,
+  "props": {
+   "title": "Las chuletas del viernes",
+   "items": [
+    "Gruesas, 2½ cm",
+    "Salmuera 30 min, no más",
+    "Secar bien · pimienta y chile, sin sal",
+    "3 min por lado, sin moverlas",
+    "Rajas, caldo, tapar a fuego bajo",
+    "Sacar a 63 °C · mantequilla · 5 de reposo"
+   ],
+   "bed": "vid/ccchuletas/bed_10.mp4#364"
+  },
+  "t": 540.7
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 26260,
+  "dur": 800,
+  "props": {
+   "head": "EL PLATO DEL VIERNES",
+   "lines": [
+    [
+     "4 chuletas gruesas",
+     "US$8.00"
+    ],
+    [
+     "Poblanos y cebolla",
+     "US$1.50"
+    ],
+    [
+     "Manteca, mantequilla, chile, sal",
+     "US$1.00"
+    ],
+    [
+     "Caldo de huesos",
+     "centavos"
+    ]
+   ],
+   "total": [
+    "Cada chuleta con sus rajas",
+    "US$2.60"
+   ],
+   "bed": "vid/ccchuletas/bed_11.mp4#804"
+  },
+  "t": 875.34
+ },
+ {
+  "c": "ClCheck",
+  "k": "temporada",
+  "from": 27994,
+  "dur": 460,
+  "props": {
+   "title": "La temporada de la fonda",
+   "fast": true,
+   "items": [
+    "Frijoles de olla",
+    "Costillas",
+    "Ejotes",
+    "Café de olla",
+    "Repollo",
+    "Muslos en salsa",
+    "Carne que se deshace",
+    "Huevos del desayuno",
+    "Arroz y refritos",
+    "Chuletas en rajas"
+   ],
+   "bed": "vid/ccchuletas/bed_12.mp4#464"
+  },
+  "t": 933.15
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 29375,
+  "dur": 180,
+  "props": {
+   "page": "img/ccchuletas/page29.jpg",
+   "pageNo": 29,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/ccchuletas/bed_13.mp4#184"
+  },
+  "t": 979.16
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 29982,
+  "dur": 210,
+  "props": {
+   "qr": "img/ccchuletas/qr.jpg",
+   "cover": "img/ccchuletas/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/ccchuletas/bed_14.mp4#214"
+  },
+  "t": 999.39
+ }
+]
