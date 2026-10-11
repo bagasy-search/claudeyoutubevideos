@@ -1,19 +1,20 @@
 // Banco de prueba del kit Rhonda en el FARM (antes del render completo): cada componente 5 s con props y assets REALES del video en curso.
-// rhmusty: la casa 3D (recorrido + lugar activo), olfatómetro, codo del desagüe (3 modos), rejilla de la heladera, higrómetro.
+// rhmattress: colchón 3D en corte (capas / empapado / rociado), húmedo-no-mojado, secado, prueba de esquina, botella que se infla.
 import React from "react";
 import { AbsoluteFill, Sequence } from "remotion";
-import { RhHousePlan3D, RhNoseMeter, RhDrainTrap, RhFridgeGrille, RhHygrometer } from "./RhMusty";
+import { RhMattress3D, RhDampMeter, RhDryTimer, RhCornerTest, RhPressureBottle } from "./RhMattress";
 
 const I = (n: string) => `img/rhgrout/${n}.jpg`;
 export const KIT: [React.FC<any>, any][] = [
-  [RhHousePlan3D, { bed: I("r_satisfied") }],
-  [RhHousePlan3D, { active: 4, bed: I("r_satisfied"), title: "PLACE 4" }],
-  [RhNoseMeter, { bed: I("r_explain") }],
-  [RhDrainTrap, { mode: "full", bed: I("r_explain") }],
-  [RhDrainTrap, { mode: "dry", bed: I("r_explain") }],
-  [RhDrainTrap, { mode: "oil", bed: I("r_explain") }],
-  [RhFridgeGrille, { bed: I("r_shrug") }],
-  [RhHygrometer, { bed: I("r_coffee") }],
+  [RhMattress3D, { mode: "layers", bed: I("r_satisfied") }],
+  [RhMattress3D, { mode: "soak", bed: I("r_satisfied") }],
+  [RhMattress3D, { mode: "mist", bed: I("r_satisfied") }],
+  [RhDampMeter, { bed: I("r_explain") }],
+  [RhDampMeter, { bed: I("r_explain"), over: true }],
+  [RhDryTimer, { bed: I("r_shrug") }],
+  [RhCornerTest, { bed: I("r_coffee") }],
+  [RhCornerTest, { bed: I("r_coffee"), fabric: "color" }],
+  [RhPressureBottle, { bed: I("r_explain") }],
 ];
 export const RhKitTest: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#fff" }}>
