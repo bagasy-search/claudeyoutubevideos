@@ -1,0 +1,56 @@
+{
+ "c55_a": [
+  {
+   "ronda": 1,
+   "fallas": [
+    "gente_de_mas",
+    "sombra_fantasma"
+   ],
+   "motivo": "The description explicitly restricts the visible person to only the right hand and forearm from the wrist up, but the image shows the upper arm, shoulder, and a section of the torso wearing the denim shirt. | Se observa una mancha oscura en el cielo rascado cerca del armazón superior que no correspo"
+  },
+  {
+   "ronda": 2,
+   "fallas": [
+    "falta_lo_pedido",
+    "gente_de_mas"
+   ],
+   "motivo": "The central object described as a white enamel bowl with pinto beans and a metal spoon is replaced by a small brown ceramic bowl with orange food and a wooden spoon. | La imagen muestra el torso y el torso superior del hombre con la camisa de mezclilla, el cual no está solicitado en la descripción q"
+  },
+  {
+   "ronda": 3,
+   "fallas": [
+    "gente_de_mas"
+   ],
+   "motivo": "The description strictly limits the visible body parts to a single right hand and forearm, but the image shows the torso and leg of the person."
+  }
+ ],
+ "c24_a": [
+  {
+   "ronda": 1,
+   "fallas": [
+    "gente_de_mas",
+    "logica_fisica",
+    "objeto_deforme",
+    "sombra_fantasma"
+   ],
+   "motivo": "El rostro (barba, nariz y labio inferior) del hombre aparece en el borde derecho superior de la imagen, mientras que la descripción especifica que solo debe verse su mano y antebrazo derecho y que el resto de su cuerpo está fuera del cuadro. | The pans hanging on the upper wooden beam have no visibl"
+  },
+  {
+   "ronda": 2,
+   "fallas": [
+    "anatomia",
+    "falta_lo_pedido",
+    "logica_fisica",
+    "gente_de_mas"
+   ],
+   "motivo": "la mano tiene un dedo extra y la postura física del brazo y el hombro es anatómicamente imposible. | La mano derecha de la persona tiene los dedos deformados y desproporcionados. | The image includes the person's face and head in the top right corner, which the description explicitly excludes. | The"
+  },
+  {
+   "ronda": 3,
+   "fallas": [
+    "gente_de_mas"
+   ],
+   "motivo": "Se muestra parte de la cabeza y el torso del hombre, cuando la descripción especifica que solo debe estar visible su mano derecha y antebrazo."
+  }
+ ]
+}

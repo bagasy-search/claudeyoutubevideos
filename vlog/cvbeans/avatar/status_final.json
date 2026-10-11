@@ -1,0 +1,11 @@
+{
+ "delayTime": 179,
+ "executionTime": 1472738,
+ "id": "ce24e831-fd2e-453b-b62c-7c54e63d7d09-u1",
+ "output": {
+  "cost": 0.25,
+  "result": "https://image.runpod.ai/infinitetalk/3982dcf1bb2d437bb1bc656c434cd577/result.mp4"
+ },
+ "status": "COMPLETED",
+ "workerId": "lst037rsnwg9ud"
+}

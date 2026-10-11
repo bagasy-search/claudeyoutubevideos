@@ -1,0 +1,124 @@
+{
+ "dir": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/",
+ "face": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_face_hd2.png",
+ "k0_from": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_A2.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a ranch hand with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, daylight from the window and the open door, no lamps. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the denim shirt faded and creased, the leather apron scuffed. Food looks like real home cooking, not styled. People are caught mid-action, unposed.",
+ "look": " Ordinary handheld video filmed by a ranch hand with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and rough working hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a weathered 58-year-old Mexican-American ranch cook with curly black hair streaked with gray under a worn natural straw cowboy hat, a short gray-black beard and mustache, brown eyes, sun-tanned lined skin, wearing a faded blue denim work shirt with pearl snap buttons and the sleeves rolled to the forearms, a red bandana knotted at the neck and a worn brown leather apron stands in front of the wall of hanging cast-iron skillets holding a long wooden spoon, an old pressure cooker and an electric slow cooker on the shelf beside him. The place: the old cook house kitchen of a working cattle ranch: whitewashed adobe walls, heavy dark wooden ceiling beams, worn terracotta tile floor; a whitewashed wall covered with black cast-iron skillets of every size hanging from iron nails, a long string of dried red chiles hanging beside them, a wooden shelf with tin cans and clay pots. Seen from a ranch hand's handheld camera at eye level, a medium shot from the waist up. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the dried chile held up, a relaxed shrug. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the spoon pointing at the slow cooker. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. his flat hand tilted, a half smile. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. one finger raised, a firm look. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K5",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the can of beans held at arm's length, an unimpressed face. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c95",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c95.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c95_gen.wav",
+   "T": 10,
+   "text": "A couple of questions people always ask. Do I have to use the dried chiles? No. They add color and a little sweetness. Leave them out and the beans are still good.",
+   "action": "Claudio, the man whose face is the third reference image, holds up a dried red chile and shrugs. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c96",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c96.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c96_gen.wav",
+   "T": 5,
+   "text": "Can I use a pressure cooker or a slow cooker? You can. They work.",
+   "action": "Claudio, the man whose face is the third reference image, points the wooden spoon at the pressure cooker, then the slow cooker. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c97",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c97.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c97_gen.wav",
+   "T": 8,
+   "text": "The pressure cooker is fast and the slow cooker is easy. But you'll lose a little of that thick, red broth that comes from simmering with the lid cracked.",
+   "action": "Claudio, the man whose face is the third reference image, nods slowly, then tilts his hand side to side, 'so-so'. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c98",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c98.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c98_gen.wav",
+   "T": 11,
+   "text": "If you use a slow cooker, do the two-minute boil and the one-hour rest in a pot on the stove first. Raw beans that never get to a full boil don't cook right in a slow cooker. What about canned beans?",
+   "action": "Claudio, the man whose face is the third reference image, holds up two fingers, then one finger. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c99",
+   "a": "K4",
+   "b": "K5",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c99.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/aud/c99_gen.wav",
+   "T": 12,
+   "text": "Canned beans are fine in a pinch. I've opened plenty of cans. But a can of beans costs about what a whole pound of dry beans does, and a pound of dry beans makes three cans' worth. And they don't taste like this.",
+   "action": "Claudio, the man whose face is the third reference image, picks up a can of beans from the shelf and looks at it, unimpressed. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c95": {
+   "mode": "trunc"
+  },
+  "c96": {
+   "mode": "trunc"
+  },
+  "c97": {
+   "mode": "trunc"
+  },
+  "c98": {
+   "mode": "trunc"
+  },
+  "c99": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S37/out.mp4"
+}

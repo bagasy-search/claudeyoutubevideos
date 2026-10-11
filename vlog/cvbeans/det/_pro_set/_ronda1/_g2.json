@@ -1,0 +1,14 @@
+{
+ "_set_table": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas"
+  ],
+  "motivo": "Se observa el torso y parte de la pierna de la persona a la derecha del encuadre, elementos que la descripción especifica como completamente fuera del marco."
+ },
+ "_set_stove": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ }
+}

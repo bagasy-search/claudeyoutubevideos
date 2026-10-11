@@ -1,0 +1,212 @@
+{
+ "b000": {
+  "chars": 592,
+  "dur": 29.501088,
+  "esperado": 37.71,
+  "status": "ok"
+ },
+ "b001": {
+  "chars": 513,
+  "dur": 28.65,
+  "esperado": 32.68,
+  "status": "ok"
+ },
+ "b002": {
+  "chars": 508,
+  "dur": 27.36288,
+  "esperado": 32.36,
+  "status": "ok"
+ },
+ "b003": {
+  "chars": 545,
+  "dur": 29.185057,
+  "esperado": 34.71,
+  "status": "ok"
+ },
+ "b004": {
+  "chars": 599,
+  "dur": 32.382494,
+  "esperado": 38.15,
+  "status": "ok"
+ },
+ "b005": {
+  "chars": 586,
+  "dur": 33.227052,
+  "esperado": 37.32,
+  "status": "ok"
+ },
+ "b006": {
+  "chars": 554,
+  "dur": 32.345261,
+  "esperado": 35.29,
+  "status": "ok"
+ },
+ "b007": {
+  "chars": 581,
+  "dur": 30.617211,
+  "esperado": 37.01,
+  "status": "ok"
+ },
+ "b008": {
+  "chars": 594,
+  "dur": 33.590431,
+  "esperado": 37.83,
+  "status": "ok"
+ },
+ "b009": {
+  "chars": 596,
+  "dur": 33.708027,
+  "esperado": 37.96,
+  "status": "ok"
+ },
+ "b010": {
+  "chars": 599,
+  "dur": 33.589615,
+  "esperado": 38.15,
+  "status": "ok"
+ },
+ "b011": {
+  "chars": 597,
+  "dur": 32.554943,
+  "esperado": 38.03,
+  "status": "ok"
+ },
+ "b012": {
+  "chars": 588,
+  "dur": 35.017551,
+  "esperado": 37.45,
+  "status": "ok"
+ },
+ "b013": {
+  "chars": 597,
+  "dur": 33.447778,
+  "esperado": 38.03,
+  "status": "ok"
+ },
+ "b014": {
+  "chars": 562,
+  "dur": 30.089864,
+  "esperado": 35.8,
+  "status": "ok"
+ },
+ "b015": {
+  "chars": 581,
+  "dur": 31.926077,
+  "esperado": 37.01,
+  "status": "ok"
+ },
+ "b016": {
+  "chars": 558,
+  "dur": 31.161995,
+  "esperado": 35.54,
+  "status": "ok"
+ },
+ "b017": {
+  "chars": 564,
+  "dur": 31.558277,
+  "esperado": 35.92,
+  "status": "ok"
+ },
+ "b018": {
+  "chars": 561,
+  "dur": 30.266213,
+  "esperado": 35.73,
+  "status": "ok"
+ },
+ "b019": {
+  "chars": 547,
+  "dur": 28.902154,
+  "esperado": 34.84,
+  "status": "ok"
+ },
+ "b020": {
+  "chars": 585,
+  "dur": 31.924989,
+  "esperado": 37.26,
+  "status": "ok"
+ },
+ "b021": {
+  "chars": 562,
+  "dur": 29.891633,
+  "esperado": 35.8,
+  "status": "ok"
+ },
+ "b022": {
+  "chars": 514,
+  "dur": 27.822381,
+  "esperado": 32.74,
+  "status": "ok"
+ },
+ "b023": {
+  "chars": 525,
+  "dur": 29.208367,
+  "esperado": 33.44,
+  "status": "ok"
+ },
+ "b024": {
+  "chars": 527,
+  "dur": 28.548594,
+  "esperado": 33.57,
+  "status": "ok"
+ },
+ "b025": {
+  "chars": 538,
+  "dur": 29.363651,
+  "esperado": 34.27,
+  "status": "ok"
+ },
+ "b026": {
+  "chars": 560,
+  "dur": 29.791814,
+  "esperado": 35.67,
+  "status": "ok"
+ },
+ "b027": {
+  "chars": 596,
+  "dur": 32.668798,
+  "esperado": 37.96,
+  "status": "ok"
+ },
+ "b028": {
+  "chars": 581,
+  "dur": 31.566893,
+  "esperado": 37.01,
+  "status": "ok"
+ },
+ "b029": {
+  "chars": 600,
+  "dur": 33.944807,
+  "esperado": 38.22,
+  "status": "ok"
+ },
+ "b030": {
+  "chars": 585,
+  "dur": 32.919274,
+  "esperado": 37.26,
+  "status": "ok"
+ },
+ "b031": {
+  "chars": 568,
+  "dur": 29.069093,
+  "esperado": 36.18,
+  "status": "ok"
+ },
+ "b032": {
+  "chars": 550,
+  "dur": 30.977664,
+  "esperado": 35.03,
+  "status": "ok"
+ },
+ "b033": {
+  "chars": 589,
+  "dur": 33.48712,
+  "esperado": 37.52,
+  "status": "ok"
+ },
+ "b034": {
+  "chars": 188,
+  "dur": 11.145578,
+  "esperado": 11.97,
+  "status": "ok"
+ }
+}

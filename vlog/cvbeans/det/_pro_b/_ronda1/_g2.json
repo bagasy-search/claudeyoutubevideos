@@ -1,0 +1,15 @@
+{
+ "c42_b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "c39_b": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas",
+   "objeto_deforme"
+  ],
+  "motivo": "La descripción pide explícitamente que solo se vea la mano y el antebrazo del hombre, pero la imagen muestra su cabeza, torso y ambos brazos completos. | El objeto de amasar en la sartén aparece como una masa amorfa e imposible, con una textura y forma no coherente ni realista."
+ }
+}

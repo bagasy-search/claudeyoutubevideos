@@ -1,0 +1,20 @@
+{
+ "c55_a": {
+  "ok": true,
+  "fallas": [],
+  "personas": 1,
+  "motivo": ""
+ },
+ "c24_a": {
+  "ok": true,
+  "fallas": [],
+  "personas": 1,
+  "motivo": ""
+ },
+ "c100_a": {
+  "ok": true,
+  "fallas": [],
+  "personas": 0,
+  "motivo": ""
+ }
+}

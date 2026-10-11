@@ -1,0 +1,64 @@
+{
+ "dir": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S14/",
+ "face": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_face_hd2.png",
+ "k0_from": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_A1.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a ranch hand with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, daylight from the window and the open door, no lamps. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the denim shirt faded and creased, the leather apron scuffed. Food looks like real home cooking, not styled. People are caught mid-action, unposed.",
+ "look": " Ordinary handheld video filmed by a ranch hand with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and rough working hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a weathered 58-year-old Mexican-American ranch cook with curly black hair streaked with gray under a worn natural straw cowboy hat, a short gray-black beard and mustache, brown eyes, sun-tanned lined skin, wearing a faded blue denim work shirt with pearl snap buttons and the sleeves rolled to the forearms, a red bandana knotted at the neck and a worn brown leather apron stands at the black range; a heavy black cast-iron Dutch oven with a heavy black lid that has a visible dent in it on the burner full of swollen beans in brown water; beside the stove a plate with a smoked ham hock, two onion halves, smashed garlic and two dried red chiles. The place: the old cook house kitchen of a working cattle ranch: whitewashed adobe walls, heavy dark wooden ceiling beams, worn terracotta tile floor; a big black cast-iron range with a dented steel kettle on the back, the whitewash above the stove darkened with old soot, a row of black cast-iron skillets hanging from iron hooks on the wall beside it, a coffee can of bacon grease next to the burners. Seen from a ranch hand's handheld camera at eye level, a medium shot from the waist up. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the ham hock and the onion halves floating among the beans, his hand pulling back. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the salt falling into the pot, he looks at the camera with a calm nod. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c42",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S14/aud/c42.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S14/aud/c42_gen.wav",
+   "T": 6,
+   "text": "In goes the ham hock. The onion halves. The garlic. The chiles. The lard. And the salt.",
+   "action": "Claudio, the man whose face is the third reference image, drops the ham hock, the two onion halves and the smashed garlic into the pot. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c43",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S14/aud/c43.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S14/aud/c43_gen.wav",
+   "T": 10,
+   "text": "Right now. Two teaspoons, at the start. This is the part that'll make you nervous, because you were told never to salt beans at the beginning. Trust me. Salt now.",
+   "action": "Claudio, the man whose face is the third reference image, sprinkles two teaspoons of salt from a little measuring spoon into the pot. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c42": {
+   "mode": "trunc"
+  },
+  "c43": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S14/out.mp4"
+}

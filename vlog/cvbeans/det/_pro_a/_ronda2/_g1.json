@@ -1,0 +1,20 @@
+{
+ "c55_a": {
+  "ok": false,
+  "fallas": [
+   "falta_lo_pedido"
+  ],
+  "personas": 1,
+  "motivo": "The central object described as a white enamel bowl with pinto beans and a metal spoon is replaced by a small brown ceramic bowl with orange food and a wooden spoon."
+ },
+ "c24_a": {
+  "ok": false,
+  "fallas": [
+   "anatomia",
+   "falta_lo_pedido",
+   "logica_fisica"
+  ],
+  "personas": 1,
+  "motivo": "la mano tiene un dedo extra y la postura física del brazo y el hombro es anatómicamente imposible."
+ }
+}

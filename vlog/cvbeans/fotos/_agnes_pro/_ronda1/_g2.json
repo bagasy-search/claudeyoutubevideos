@@ -1,0 +1,19 @@
+{
+ "c76_c": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "c76_b": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "c76_a": {
+  "ok": false,
+  "fallas": [
+   "objeto_deforme"
+  ],
+  "motivo": "El tenedor de patatas está deformado de manera imposible, con una cabeza que se funde en una red incoherente de agujeros que no corresponde a un objeto real."
+ }
+}

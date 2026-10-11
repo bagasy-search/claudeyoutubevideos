@@ -1,0 +1,104 @@
+{
+ "dir": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/",
+ "face": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_face_hd2.png",
+ "k0_from": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_A2.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a ranch hand with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, daylight from the window and the open door, no lamps. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the denim shirt faded and creased, the leather apron scuffed. Food looks like real home cooking, not styled. People are caught mid-action, unposed.",
+ "look": " Ordinary handheld video filmed by a ranch hand with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and rough working hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a weathered 58-year-old Mexican-American ranch cook with curly black hair streaked with gray under a worn natural straw cowboy hat, a short gray-black beard and mustache, brown eyes, sun-tanned lined skin, wearing a faded blue denim work shirt with pearl snap buttons and the sleeves rolled to the forearms, a red bandana knotted at the neck and a worn brown leather apron stands in front of the wall of hanging cast-iron skillets holding a heavy black cast-iron Dutch oven with a heavy black lid that has a visible dent in it by its handle with both hands at chest height. The place: the old cook house kitchen of a working cattle ranch: whitewashed adobe walls, heavy dark wooden ceiling beams, worn terracotta tile floor; a whitewashed wall covered with black cast-iron skillets of every size hanging from iron nails, a long string of dried red chiles hanging beside them, a wooden shelf with tin cans and clay pots. Seen from a ranch hand's handheld camera at eye level, a medium shot from the waist up. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. his finger on the dent in the black lid, the pot held toward the camera. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. the Dutch oven resting on the shelf, both his hands on the lid. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. his knuckles against the thick black side of the pot, he looks at the camera. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K4",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. an open palm turned up, a kind half smile. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c10",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c10.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c10_gen.wav",
+   "T": 7,
+   "text": "This is the bean pot. It's a Dutch oven, heavy cast iron, with a dent in the lid from a mule named Lupe.",
+   "action": "Claudio, the man whose face is the third reference image, turns the pot so the dented lid faces the camera and taps the dent with a finger. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c11",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c11.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c11_gen.wav",
+   "T": 6,
+   "text": "I'll tell you that story later. A heavy pot matters for beans. A thin pot gets hot spots on the bottom,",
+   "action": "Claudio, the man whose face is the third reference image, sets the heavy pot down on a wooden shelf in front of him with both hands. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c12",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c12.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c12_gen.wav",
+   "T": 8,
+   "text": "and the beans that sit on those spots scorch while the ones on top are still hard. Heavy iron, or a heavy enameled pot, spreads the heat even.",
+   "action": "Claudio, the man whose face is the third reference image, knocks on the thick iron side of the pot with his knuckles. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c13",
+   "a": "K3",
+   "b": "K4",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c13.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/aud/c13_gen.wav",
+   "T": 6,
+   "text": "If all you've got is a thin stockpot, keep the heat lower and stir more. You'll be fine.",
+   "action": "Claudio, the man whose face is the third reference image, shrugs and opens one palm, reassuring. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c10": {
+   "mode": "trunc"
+  },
+  "c11": {
+   "mode": "trunc"
+  },
+  "c12": {
+   "mode": "trunc"
+  },
+  "c13": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S02/out.mp4"
+}

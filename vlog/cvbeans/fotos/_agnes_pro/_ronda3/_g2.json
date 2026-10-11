@@ -1,0 +1,9 @@
+{
+ "c76_a": {
+  "ok": false,
+  "fallas": [
+   "objeto_deforme"
+  ],
+  "motivo": "La cabeza del machicafuertes está deformada, mostrando una forma aplanada y metálica con objetos extraños dentro que no corresponden a una malla de metal real."
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "c39_b": {
+  "ok": false,
+  "fallas": [
+   "anatomia",
+   "gente_de_mas",
+   "falta_lo_pedido",
+   "sombra_fantasma"
+  ],
+  "motivo": "The hand gripping the wooden spoon has a fused, deformed thumb area with unclear digit separation and an unnatural shape. | The image shows a man's face, head, and full torso, whereas the description explicitly specifies that only his right hand and forearm are visible. | El sujeto debe verse únicamente por la mano y el antebrazo, pero en la imagen se muestra a una persona completa de pie y mirando hacia el caldero. | Hay una silueta negra extraña y desalineada pegada a la sartén, que no corresponde a ninguna olla ni objeto real existente en el marco."
+ }
+}

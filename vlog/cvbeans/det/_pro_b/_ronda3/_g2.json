@@ -1,0 +1,10 @@
+{
+ "c39_b": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas",
+   "falta_lo_pedido"
+  ],
+  "motivo": "El hombre está completamente visible, incluyendo su cabeza, torso y brazo izquierdo, cuando la descripción especifica que solo debe verse su mano derecha y antebrazo. | The description specifies that only the man's right hand and forearm are visible, but the image shows his face, head, and full upper body."
+ }
+}

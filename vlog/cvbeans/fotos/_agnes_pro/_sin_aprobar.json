@@ -1,0 +1,30 @@
+[
+ {
+  "name": "c76_a",
+  "historia": [
+   {
+    "ronda": 1,
+    "fallas": [
+     "anatomia",
+     "objeto_deforme"
+    ],
+    "motivo": "The hand is missing fingers and the thumb appears fused to the palm, making it anatomically incorrect. | El tenedor de patatas está deformado de manera imposible, con una cabeza que se funde en una red incoherente de agujeros que no corresponde a un objeto real."
+   },
+   {
+    "ronda": 2,
+    "fallas": [
+     "anatomia",
+     "objeto_deforme"
+    ],
+    "motivo": "The hand gripping the potato masher has a deformed, missing index finger. | El machacador de patatas se fusiona de forma imposible con una cuchara metálica dentro de la sartén."
+   },
+   {
+    "ronda": 3,
+    "fallas": [
+     "objeto_deforme"
+    ],
+    "motivo": "La cabeza del machicafuertes está deformada, mostrando una forma aplanada y metálica con objetos extraños dentro que no corresponden a una malla de metal real."
+   }
+  ]
+ }
+]

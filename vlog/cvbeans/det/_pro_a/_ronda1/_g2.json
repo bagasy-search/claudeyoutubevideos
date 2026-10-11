@@ -1,0 +1,25 @@
+{
+ "c55_a": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas",
+   "sombra_fantasma"
+  ],
+  "motivo": "The description explicitly restricts the visible person to only the right hand and forearm from the wrist up, but the image shows the upper arm, shoulder, and a section of the torso wearing the denim shirt. | Se observa una mancha oscura en el cielo rascado cerca del armazón superior que no corresponde a una fuente de luz, sombra u objeto físico existente en la escena."
+ },
+ "c100_a": {
+  "ok": true,
+  "fallas": [],
+  "motivo": ""
+ },
+ "c24_a": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas",
+   "logica_fisica",
+   "objeto_deforme",
+   "sombra_fantasma"
+  ],
+  "motivo": "El rostro (barba, nariz y labio inferior) del hombre aparece en el borde derecho superior de la imagen, mientras que la descripción especifica que solo debe verse su mano y antebrazo derecho y que el resto de su cuerpo está fuera del cuadro. | The pans hanging on the upper wooden beam have no visible hooks or supports to hold them in place. | El mango de la sartén frontal se funde de manera imposible y se desvanece en la superficie de la estufa sin estructura coherente. | La silueta de una cara masculina visible en el borde superior derecho corresponde a una persona que no está presente en el escenario descrito."
+ }
+}

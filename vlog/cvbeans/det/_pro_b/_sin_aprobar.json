@@ -1,0 +1,33 @@
+[
+ {
+  "name": "c39_b",
+  "historia": [
+   {
+    "ronda": 1,
+    "fallas": [
+     "gente_de_mas",
+     "objeto_deforme"
+    ],
+    "motivo": "La descripción pide explícitamente que solo se vea la mano y el antebrazo del hombre, pero la imagen muestra su cabeza, torso y ambos brazos completos. | El objeto de amasar en la sartén aparece como una masa amorfa e imposible, con una textura y forma no coherente ni realista."
+   },
+   {
+    "ronda": 2,
+    "fallas": [
+     "anatomia",
+     "gente_de_mas",
+     "falta_lo_pedido",
+     "sombra_fantasma"
+    ],
+    "motivo": "The hand gripping the wooden spoon has a fused, deformed thumb area with unclear digit separation and an unnatural shape. | The image shows a man's face, head, and full torso, whereas the description explicitly specifies that only his right hand and forearm are visible. | El sujeto debe verse únicam"
+   },
+   {
+    "ronda": 3,
+    "fallas": [
+     "gente_de_mas",
+     "falta_lo_pedido"
+    ],
+    "motivo": "El hombre está completamente visible, incluyendo su cabeza, torso y brazo izquierdo, cuando la descripción especifica que solo debe verse su mano derecha y antebrazo. | The description specifies that only the man's right hand and forearm are visible, but the image shows his face, head, and full uppe"
+   }
+  ]
+ }
+]

@@ -1,0 +1,84 @@
+{
+ "dir": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/",
+ "face": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_face_hd2.png",
+ "k0_from": "D:/Proyectos/video2-wt/cvbeans/public/ref_cv_A3.png",
+ "prev_box": "512x288",
+ "pronoun": "he",
+ "lang": "en",
+ "light": "This is one ordinary frame pulled from a normal handheld video shot by a ranch hand with a consumer camera at eye level, simply recording what happens, not composing a photo. The framing is casual and a little off: something is cut by the edge of the frame. Almost everything in the frame is in focus, nothing blurred out: the kitchen behind stays fully readable. The only light is what the place really has, and each person and object gets light according to where it stands; correctly exposed, daylight from the window and the open door, no lamps. Colours of an ordinary video with automatic white balance and almost no correction: moderate contrast, soft highlights, mild sensor noise and light compression, faint motion blur on anything moving. Skin with pores and uneven tone; hair with stray curls; the denim shirt faded and creased, the leather apron scuffed. Food looks like real home cooking, not styled. People are caught mid-action, unposed.",
+ "look": " Ordinary handheld video filmed by a ranch hand with a consumer camera at eye level, small natural shakes and casual slightly imperfect framing, everything in the kitchen in focus, only the light the place really has, correctly exposed, automatic white balance, mild sensor noise; real skin and rough working hands; he moves naturally and unposed, nothing staged; no music.",
+ "anchors": [
+  {
+   "id": "K0",
+   "from": [
+    "k0"
+   ],
+   "prompt": "Claudio, a weathered 58-year-old Mexican-American ranch cook with curly black hair streaked with gray under a worn natural straw cowboy hat, a short gray-black beard and mustache, brown eyes, sun-tanned lined skin, wearing a faded blue denim work shirt with pearl snap buttons and the sleeves rolled to the forearms, a red bandana knotted at the neck and a worn brown leather apron stands at the wooden plank table holding a big spoon with five cooked pinto beans in it, a white enamel bowl of beans in broth beside him. The place: the old cook house kitchen of a working cattle ranch: whitewashed adobe walls, heavy dark wooden ceiling beams, worn terracotta tile floor; a long scarred wooden plank table with a worn wooden cutting board, glass jars of dried beans and chiles, a clay jug, and behind it a deep window in the thick adobe wall looking out on a weathered wooden corral fence under the sun. Seen from a ranch hand's handheld camera at eye level, a medium shot from the waist up. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K1",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. one bean on the spoon held up, he shakes his head with a frown. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K2",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. five beans in his open palm, held toward the camera. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "K3",
+   "from": [
+    "K0"
+   ],
+   "prompt": "Same place, same people, same light as the first image, a few seconds later. half a bean held up between his fingers showing the creamy inside, he nods. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "clips": [
+  {
+   "id": "c49",
+   "a": "K0",
+   "b": "K1",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/aud/c49.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/aud/c49_gen.wav",
+   "T": 12,
+   "text": "Step four. How do you know when they're done? Here's a trick most people get wrong. They fish out one bean, taste it, and it's soft, and they turn off the pot. And then half the beans in the bowl are still chalky.",
+   "action": "Claudio, the man whose face is the third reference image, holds up the spoon with one bean, then shakes his head. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c50",
+   "a": "K1",
+   "b": "K2",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/aud/c50.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/aud/c50_gen.wav",
+   "T": 10,
+   "text": "Beans don't all cook at the same speed. Some are older, some are bigger. So you take five beans. Not one. Five. Blow on them, and bite each one.",
+   "action": "Claudio, the man whose face is the third reference image, counts five beans into his palm from the spoon and blows on them. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  },
+  {
+   "id": "c51",
+   "a": "K2",
+   "b": "K3",
+   "audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/aud/c51.wav",
+   "gen_audio": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/aud/c51_gen.wav",
+   "T": 10,
+   "text": "They should all be creamy all the way through, with no white chalky dot in the middle. If even one of them is chalky, give it fifteen more minutes and test five more.",
+   "action": "Claudio, the man whose face is the third reference image, bites one bean in half and looks closely at the inside. daylight from the window and the open door, no lamps. He wears the same worn straw cowboy hat, faded blue denim snap shirt with rolled sleeves, red bandana and brown leather apron the whole time, same curly black-and-gray hair and short gray-black beard, same face as the reference."
+  }
+ ],
+ "overrides": {
+  "c49": {
+   "mode": "trunc"
+  },
+  "c50": {
+   "mode": "trunc"
+  },
+  "c51": {
+   "mode": "trunc"
+  }
+ },
+ "out": "D:/Proyectos/video2-wt/cvbeans/vlog/cvbeans/S18/out.mp4"
+}

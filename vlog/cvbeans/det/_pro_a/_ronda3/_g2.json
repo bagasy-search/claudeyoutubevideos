@@ -1,0 +1,16 @@
+{
+ "c55_a": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas"
+  ],
+  "motivo": "The description strictly limits the visible body parts to a single right hand and forearm, but the image shows the torso and leg of the person."
+ },
+ "c24_a": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas"
+  ],
+  "motivo": "Se muestra parte de la cabeza y el torso del hombre, cuando la descripción especifica que solo debe estar visible su mano derecha y antebrazo."
+ }
+}

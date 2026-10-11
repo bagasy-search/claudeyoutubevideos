@@ -1,0 +1,19 @@
+{
+ "c24_a": {
+  "ok": false,
+  "fallas": [
+   "anatomia",
+   "gente_de_mas",
+   "logica_fisica"
+  ],
+  "motivo": "La mano derecha de la persona tiene los dedos deformados y desproporcionados. | The image includes the person's face and head in the top right corner, which the description explicitly excludes. | The two pans hanging on the wall are not attached to any visible hook, nail, or beam, appearing to float in mid-air."
+ },
+ "c55_a": {
+  "ok": false,
+  "fallas": [
+   "gente_de_mas",
+   "falta_lo_pedido"
+  ],
+  "motivo": "La imagen muestra el torso y el torso superior del hombre con la camisa de mezclilla, el cual no está solicitado en la descripción que solo pide el antebrazo y la mano. | The description specifies a 'large white enamel bowl with chipped blue rim', but the image shows a small beige bowl instead."
+ }
+}

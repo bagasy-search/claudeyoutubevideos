@@ -1,0 +1,10 @@
+{
+ "c76_a": {
+  "ok": false,
+  "fallas": [
+   "anatomia",
+   "objeto_deforme"
+  ],
+  "motivo": "The hand gripping the potato masher has a deformed, missing index finger. | El machacador de patatas se fusiona de forma imposible con una cuchara metálica dentro de la sartén."
+ }
+}

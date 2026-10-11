@@ -1,0 +1,22 @@
+{
+ "c76_b": {
+  "ok": true,
+  "fallas": [],
+  "personas": 0,
+  "motivo": ""
+ },
+ "c76_c": {
+  "ok": true,
+  "fallas": [],
+  "personas": 0,
+  "motivo": ""
+ },
+ "c76_a": {
+  "ok": false,
+  "fallas": [
+   "anatomia"
+  ],
+  "personas": 1,
+  "motivo": "The hand is missing fingers and the thumb appears fused to the palm, making it anatomically incorrect."
+ }
+}

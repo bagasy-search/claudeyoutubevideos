@@ -1,0 +1,14 @@
+{
+ "_set_stove": {
+  "ok": true,
+  "fallas": [],
+  "personas": 0,
+  "motivo": ""
+ },
+ "_set_table": {
+  "ok": true,
+  "fallas": [],
+  "personas": 1,
+  "motivo": ""
+ }
+}
