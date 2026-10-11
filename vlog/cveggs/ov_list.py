@@ -1,5 +1,7 @@
 # Componentes de cveggs (≈5 s, LIMPIO gana a denso). Anclados a la frase exacta del guion.
 OV = [
+ ("CvPromise", at("Last time it was the cheap beef"), 7.0, {"title": "Ranch eggs without a drop of oil", "lines": ["Soft whites, no brown crispy edge", "Nothing sticks to the pan", "Three minutes · 92¢ a plate"]}),
+ ("CvOldPhoto", at("I'm Claudio. I cooked for a cattle crew"), 7.5, {"img": I + "joven.jpg", "caption": "Me, 1985 · first winter with the crew", "date": "'85 11 02", "stamp": "40 years · 14 men"}),
  ("ClDoDont", at("Here's how most people fry an egg."), 5.0, {"yes": {"label": "Medium pan, water + lid"}, "no": {"label": "Hot oil, high heat"}}),
  ("ClCheck", at("Let me show you. Two eggs, for one plate."), 9.0, {"title": "WHAT YOU NEED", "items": ["2 fresh eggs", "10-inch cast iron or nonstick skillet", "A lid that fits (or a sheet pan, a plate)", "2 tablespoons of water", "No oil"]}),
  ("ClChip", at("Step one. The empty pan on medium heat."), 4.5, {"text": "Empty pan · MEDIUM · 2 full minutes", "corner": "tl"}),
