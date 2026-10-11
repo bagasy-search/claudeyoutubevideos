@@ -1,0 +1,1743 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 13.29,
+"k": "",
+"c": "DropOpen",
+"props": {
+"k": "n_hook_pan",
+"words": [
+[
+"Look",
+0.0
+],
+[
+"at",
+0.24
+],
+[
+"this,",
+0.46
+],
+[
+"honey.",
+0.66
+],
+[
+"One",
+1.44
+],
+[
+"sheet",
+1.76
+],
+[
+"pan,",
+2.14
+],
+[
+"one",
+3.0
+],
+[
+"turkey",
+3.24
+],
+[
+"leg,",
+3.6
+],
+[
+"one",
+4.3
+],
+[
+"sweet",
+4.6
+],
+[
+"potato",
+4.88
+],
+[
+"and",
+5.8
+],
+[
+"a",
+5.98
+],
+[
+"handful",
+6.16
+],
+[
+"of",
+6.46
+],
+[
+"green",
+6.78
+],
+[
+"beans,",
+7.04
+],
+[
+"all",
+7.76
+],
+[
+"cooking",
+8.1
+],
+[
+"together",
+8.44
+],
+[
+"for",
+8.94
+],
+[
+"one",
+9.3
+],
+[
+"person.",
+9.62
+],
+[
+"Nobody",
+10.587
+],
+[
+"should",
+10.847
+],
+[
+"eat",
+11.167
+],
+[
+"a",
+11.327
+],
+[
+"frozen",
+11.507
+],
+[
+"dinner",
+11.847
+],
+[
+"on",
+12.167
+],
+[
+"Thanksgiving.",
+12.447
+]
+],
+"ripple": 0.0
+}
+},
+{
+"a": 13.29,
+"b": 26.407,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 26.407,
+"b": 36.63,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ofthanks/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"One-Pan",
+29.37
+],
+[
+"Suppers",
+29.95
+],
+[
+"for",
+30.47
+],
+[
+"Seniors",
+30.75
+],
+[
+"Living",
+31.13
+],
+[
+"Alone",
+31.43
+]
+],
+"k": "n_hook_pan"
+}
+},
+{
+"a": 36.63,
+"b": 43.413,
+"k": "s003_l_intro",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 43.413,
+"b": 51.07,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 51.07,
+"b": 55.547,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 55.547,
+"b": 65.377,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hc_chair",
+"vid": true,
+"cap": "1951 \u00b7 a woman alone with a book in her chair",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 65.377,
+"b": 70.227,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_boy",
+"vid": true,
+"cap": "1951 \u00b7 a boy with a book in a quiet living room",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 70.227,
+"b": 79.15,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 79.15,
+"b": 87.313,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_food",
+"vid": true,
+"cap": "1951 \u00b7 a family around the food",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 87.313,
+"b": 91.63,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 91.63,
+"b": 99.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_pie",
+"vid": true,
+"cap": "1950s \u00b7 a kitchen table and a pie",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 99.0,
+"b": 103.71,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 103.71,
+"b": 112.027,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_table",
+"vid": true,
+"cap": "1951 \u00b7 a family at the dinner table",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 112.027,
+"b": 121.68,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 121.68,
+"b": 132.453,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_setting",
+"vid": true,
+"cap": "1951 \u00b7 a dining table set for supper",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 132.453,
+"b": 137.01,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 137.01,
+"b": 148.853,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"A holiday is just a meal",
+"with the lights left on."
+],
+"sig": "Bernice, the basement kitchen",
+"k": "n_oven_glow",
+"size": 70
+}
+},
+{
+"a": 148.853,
+"b": 154.073,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 154.073,
+"b": 163.763,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page2",
+"tab": "PAGE 2",
+"t": 160.0,
+"hl": 12
+}
+],
+"k": "n_table_one"
+}
+},
+{
+"a": 163.763,
+"b": 172.397,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 172.397,
+"b": 181.647,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hc_cafe",
+"vid": true,
+"cap": "1951 \u00b7 a kitchen line with pots and pans",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 181.647,
+"b": 191.973,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 191.973,
+"b": 209.82,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE HOLIDAY PLATE \u00b7 PAGE 47",
+"items": [
+{
+"t": 193.0,
+"txt": "One turkey leg or thigh"
+},
+{
+"t": 196.0,
+"txt": "One sweet potato"
+},
+{
+"t": 198.4,
+"txt": "A handful of green beans"
+},
+{
+"t": 201.6,
+"txt": "One cup of stuffing"
+},
+{
+"t": 205.0,
+"txt": "Butter, salt, pepper, sage"
+}
+],
+"k": "n_butter_hands"
+}
+},
+{
+"a": 209.82,
+"b": 215.506,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 215.506,
+"b": 225.01,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47",
+"t": 218.0,
+"hl": 14
+}
+],
+"caption": {
+"txt": "the link is down in the description",
+"t": 226.0
+},
+"k": "n_hook_pan"
+}
+},
+{
+"a": 225.01,
+"b": 234.207,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 234.207,
+"b": 243.067,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 243.067,
+"b": 257.88,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "PLAN IT THE WEEK BEFORE",
+"items": [
+{
+"t": 243.4,
+"txt": "Buy your turkey leg early"
+},
+{
+"t": 247.0,
+"txt": "Check the freezer has room"
+},
+{
+"t": 251.0,
+"txt": "Set your table in your head"
+}
+],
+"k": "n_calendar"
+}
+},
+{
+"a": 257.88,
+"b": 270.197,
+"k": "s029_n_leftover_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 270.197,
+"b": 282.65,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 282.65,
+"b": 300.06,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 1 OF 8",
+"head": "THE TURKEY",
+"steps": [
+{
+"t": 284.7,
+"txt": "One turkey leg or one thigh",
+"k": "n_turkey_carve"
+},
+{
+"t": 291.9,
+"txt": "Freeze the big package in portions",
+"k": "n_bread_heels"
+}
+],
+"bed": "n_turkey_carve"
+}
+},
+{
+"a": 300.06,
+"b": 310.347,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 310.347,
+"b": 326.653,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 2 OF 8",
+"head": "THE STUFFING GOES FIRST",
+"steps": [
+{
+"t": 316.1,
+"txt": "Two cups of dry bread cubes",
+"k": "n_bread_heels"
+},
+{
+"t": 318.7,
+"txt": "Onion and celery, softened in butter",
+"k": "n_onion_board"
+}
+],
+"bed": "n_bread_heels"
+}
+},
+{
+"a": 326.653,
+"b": 336.144,
+"k": "s034_l_stuffing",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 336.144,
+"b": 346.807,
+"k": "s035_n_stuffing_cup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 346.807,
+"b": 357.733,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 357.733,
+"b": 369.98,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 3 OF 8",
+"head": "THE TURKEY, THIRTY MINUTES",
+"steps": [
+{
+"t": 360.3,
+"txt": "Oven at three seventy-five",
+"k": "n_oven_glow"
+},
+{
+"t": 370.2,
+"txt": "Butter, salt, pepper and sage",
+"k": "n_butter_dish"
+}
+],
+"bed": "n_oven_glow"
+}
+},
+{
+"a": 369.98,
+"b": 378.983,
+"k": "s038_l_butter",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 378.983,
+"b": 384.15,
+"k": "s039_n_sage_jar",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 384.15,
+"b": 393.427,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_oven_mitts",
+"txt": "Two oven mitts, the rack pulled slowly",
+"tag": "BE CAREFUL"
+}
+},
+{
+"a": 393.427,
+"b": 401.697,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 401.697,
+"b": 410.557,
+"k": "s042_n_sweetpotato",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 410.557,
+"b": 426.217,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 4 OF 8",
+"head": "THE SWEET POTATO",
+"steps": [
+{
+"t": 413.9,
+"txt": "Twenty-five more minutes",
+"k": "n_oven_glow"
+}
+],
+"bed": "n_oven_glow"
+}
+},
+{
+"a": 426.217,
+"b": 441.77,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 5 OF 8",
+"head": "GREEN BEANS AND STUFFING",
+"steps": [
+{
+"t": 429.4,
+"txt": "A handful of green beans",
+"k": "n_greenbeans"
+},
+{
+"t": 438.6,
+"txt": "Fifteen to twenty minutes more",
+"k": "n_stuffing_cup"
+}
+],
+"bed": "n_greenbeans"
+}
+},
+{
+"a": 441.77,
+"b": 450.29,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 450.29,
+"b": 455.38,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 455.38,
+"b": 466.0,
+"k": "s047_n_thermo",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 466.0,
+"b": 476.02,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 476.02,
+"b": 488.65,
+"k": "s049_l_thermo",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 488.65,
+"b": 500.266,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 165,
+"unit": "\u00b0F",
+"txt": "at the thickest part, not touching the bone",
+"k": "n_thermo",
+"dur": 12
+}
+},
+{
+"a": 500.266,
+"b": 514.427,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_thermo",
+"txt": "Guessing by the color",
+"cx": 55,
+"cy": 50
+}
+},
+{
+"a": 514.427,
+"b": 521.97,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 521.97,
+"b": 534.99,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/ofthanks/qr.jpg",
+"t": 526.0
+}
+},
+{
+"a": 534.99,
+"b": 541.03,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47",
+"t": 536.5
+}
+],
+"k": "n_hook_pan"
+}
+},
+{
+"a": 541.03,
+"b": 556.077,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ofthanks/th_other.jpg",
+"tag": "CHURCH KITCHEN",
+"words": [
+[
+"The",
+545.5
+],
+[
+"Church",
+545.55
+],
+[
+"Basement",
+545.95
+],
+[
+"Hotdish",
+546.43
+],
+[
+"That",
+546.73
+],
+[
+"Fed",
+546.98
+],
+[
+"200",
+547.23
+],
+[
+"People",
+547.48
+]
+],
+"k": "n_hook_pan"
+}
+},
+{
+"a": 556.077,
+"b": 564.327,
+"k": "s056_n_pie_glass",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 564.327,
+"b": 583.343,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 7 OF 8",
+"head": "SIX LITTLE PIES",
+"steps": [
+{
+"t": 564.5,
+"txt": "Six circles with a wide glass",
+"k": "n_pie_glass"
+},
+{
+"t": 571.9,
+"txt": "Press each into a muffin tin",
+"k": "n_muffin_pies"
+}
+],
+"bed": "n_pie_glass"
+}
+},
+{
+"a": 583.343,
+"b": 596.68,
+"k": "s058_l_pies",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 596.68,
+"b": 608.62,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hc_kitchen",
+"vid": true,
+"cap": "1951 \u00b7 two women in a kitchen",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 608.62,
+"b": 617.397,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 617.397,
+"b": 624.867,
+"k": "s061_n_widow_porch",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 624.867,
+"b": 634.01,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 634.01,
+"b": 640.947,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_muffin_pies",
+"txt": "Pumpkin pie stays in the refrigerator",
+"tag": "KEEP IT SAFE \u00b7 PAGE 49"
+}
+},
+{
+"a": 640.947,
+"b": 652.42,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 652.42,
+"b": 670.516,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 8 OF 8",
+"head": "SET THE TABLE",
+"steps": [
+{
+"t": 658.2,
+"txt": "The good plate and the good napkin",
+"k": "n_napkin"
+},
+{
+"t": 664.4,
+"txt": "A candle where the light falls",
+"k": "n_candle"
+}
+],
+"bed": "n_table_one"
+}
+},
+{
+"a": 670.516,
+"b": 675.944,
+"k": "s066_l_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 675.944,
+"b": 685.937,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 685.937,
+"b": 699.077,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_grace",
+"vid": true,
+"cap": "1951 \u00b7 grace before the supper",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 699.077,
+"b": 721.69,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE WHOLE THING \u00b7 PART 1",
+"items": [
+{
+"t": 704.7,
+"txt": "1 \u00b7 Plan it the week before"
+},
+{
+"t": 707.2,
+"txt": "2 \u00b7 Stuffing first, with bread heels"
+},
+{
+"t": 711.5,
+"txt": "3 \u00b7 Butter, salt, pepper, sage"
+},
+{
+"t": 716.5,
+"txt": "4 \u00b7 Sweet potato, twenty-five minutes"
+}
+],
+"k": "n_plate_hands"
+}
+},
+{
+"a": 721.69,
+"b": 740.337,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE WHOLE THING \u00b7 PART 2",
+"items": [
+{
+"t": 721.8,
+"txt": "5 \u00b7 Green beans and stuffing"
+},
+{
+"t": 726.9,
+"txt": "6 \u00b7 One hundred sixty-five degrees"
+},
+{
+"t": 732.5,
+"txt": "7 \u00b7 Six little pies, two to the widow"
+},
+{
+"t": 736.7,
+"txt": "8 \u00b7 The good plate and a candle"
+}
+],
+"k": "n_napkin"
+}
+},
+{
+"a": 740.337,
+"b": 748.067,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 748.067,
+"b": 757.616,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_bowl",
+"vid": true,
+"cap": "1950s \u00b7 a woman with a bowl in the kitchen",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 757.616,
+"b": 764.976,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 764.976,
+"b": 781.42,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page4",
+"tab": "PAGE 4 \u00b7 WHAT IT COSTS",
+"t": 770.8,
+"hl": 10
+}
+],
+"caption": {
+"txt": "A whole holiday plate \u00b7 $5.50",
+"t": 781.7
+},
+"k": "n_coffee_cup"
+}
+},
+{
+"a": 781.42,
+"b": 787.49,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 787.49,
+"b": 794.27,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen",
+"vid": true,
+"cap": "1950s \u00b7 a kitchen at work",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 794.27,
+"b": 803.74,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 803.74,
+"b": 813.953,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_landline",
+"caption": "Danny, on the speaker",
+"date": "Last Thanksgiving",
+"t": 806.0
+}
+},
+{
+"a": 813.953,
+"b": 821.803,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 821.803,
+"b": 826.62,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 826.62,
+"b": 838.306,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_hug",
+"vid": true,
+"cap": "1951 \u00b7 a hug",
+"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+}
+},
+{
+"a": 838.306,
+"b": 848.093,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"It is for you.",
+"You are worth feeding."
+],
+"sig": "Loretta",
+"k": "n_candle",
+"size": 80
+}
+},
+{
+"a": 848.093,
+"b": 856.683,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ofthanks/th_next.jpg",
+"tag": "NEXT TIME",
+"words": [
+[
+"Ten",
+850.07
+],
+[
+"Muffin",
+850.35
+],
+[
+"Tin",
+850.75
+],
+[
+"Suppers",
+851.03
+],
+[
+"for",
+851.47
+],
+[
+"Seniors",
+851.77
+],
+[
+"Living",
+852.17
+],
+[
+"Alone",
+852.51
+]
+],
+"k": "n_hook_pan"
+}
+},
+{
+"a": 856.683,
+"b": 870.413,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 870.413,
+"b": 887.057,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47",
+"t": 873.0
+},
+{
+"src": "page55",
+"tab": "PAGE 55",
+"t": 880.5
+}
+],
+"caption": {
+"txt": "the link is right under this video",
+"t": 876.5
+},
+"k": "n_window_dusk"
+}
+},
+{
+"a": 887.057,
+"b": 891.917,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 891.917,
+"b": 910.274,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Which one do you miss most?",
+"opts": [
+{
+"txt": "The stuffing",
+"t": 894.0
+},
+{
+"txt": "The sweet potato",
+"t": 898.9
+},
+{
+"txt": "The little pie",
+"t": 902.2
+}
+],
+"k": "n_plate_hands"
+}
+},
+{
+"a": 910.274,
+"b": 920.69,
+"k": "s088_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 920.69,
+"b": 925.43,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+26.41,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+137.01,
+"design/pen_write",
+0.3
+],
+[
+154.07,
+"design/page_turn_big",
+0.4
+],
+[
+191.97,
+"design/paper_slide",
+0.3
+],
+[
+196.15,
+"design/pencil_strokes",
+0.22
+],
+[
+198.55,
+"design/pencil_strokes",
+0.22
+],
+[
+201.75,
+"design/pencil_strokes",
+0.22
+],
+[
+205.15,
+"design/pencil_strokes",
+0.22
+],
+[
+215.51,
+"design/page_turn_big",
+0.4
+],
+[
+243.07,
+"design/paper_slide",
+0.3
+],
+[
+247.15,
+"design/pencil_strokes",
+0.22
+],
+[
+251.15,
+"design/pencil_strokes",
+0.22
+],
+[
+282.65,
+"design/paper_slide",
+0.35
+],
+[
+310.35,
+"design/paper_slide",
+0.35
+],
+[
+357.73,
+"design/paper_slide",
+0.35
+],
+[
+384.15,
+"design/stamp_traditional",
+0.35
+],
+[
+410.56,
+"design/paper_slide",
+0.35
+],
+[
+426.22,
+"design/paper_slide",
+0.35
+],
+[
+500.27,
+"design/stamp_rubber",
+0.5
+],
+[
+500.57,
+"design/pencil_strokes",
+0.3
+],
+[
+521.97,
+"design/click_slide",
+0.3
+],
+[
+534.99,
+"design/page_turn_big",
+0.4
+],
+[
+541.03,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+564.33,
+"design/paper_slide",
+0.35
+],
+[
+634.01,
+"design/stamp_traditional",
+0.35
+],
+[
+652.42,
+"design/paper_slide",
+0.35
+],
+[
+699.08,
+"design/paper_slide",
+0.3
+],
+[
+707.35,
+"design/pencil_strokes",
+0.22
+],
+[
+711.65,
+"design/pencil_strokes",
+0.22
+],
+[
+716.65,
+"design/pencil_strokes",
+0.22
+],
+[
+721.69,
+"design/paper_slide",
+0.3
+],
+[
+727.05,
+"design/pencil_strokes",
+0.22
+],
+[
+732.65,
+"design/pencil_strokes",
+0.22
+],
+[
+736.85,
+"design/pencil_strokes",
+0.22
+],
+[
+764.98,
+"design/page_turn_big",
+0.4
+],
+[
+803.74,
+"design/camera_shutter",
+0.25
+],
+[
+838.31,
+"design/pen_write",
+0.3
+],
+[
+848.09,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+870.41,
+"design/page_turn_big",
+0.4
+],
+[
+891.92,
+"design/click_slide",
+0.25
+]
+],
+"end": 925.43
+}

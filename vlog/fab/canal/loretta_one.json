@@ -1,0 +1,41 @@
+{
+ "canal": "Loretta Cooks for One",
+ "serie": "Loretta Cooks for One (Supper for One): an 81-year-old Iowa church lady cooks one small supper for herself in her own farmhouse kitchen, step by step, the old way, with the book she wrote, and tells you what it costs",
+ "idioma": "en",
+ "protagonista": "loretta",
+ "pron": "she",
+ "voz": "loretta",
+ "cps": 14.6,
+ "ejemplos": "lor_",
+ "avatar_pct": [
+  10,
+  16
+ ],
+ "avatar_ref": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor.png",
+ "acciones": "rubbing butter and sage on a turkey leg, cutting a sweet potato into chunks, lining a sheet pan with foil, pushing a meat thermometer into a turkey leg, pressing pie crust circles into a muffin tin, lighting a candle on a table set for one, stirring bread cubes with broth in a small bowl",
+ "prohibidas": [
+  "\bfree\b",
+  "\bgratis\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bwhop\b"
+ ],
+ "dir_refs": "D:/rtmp/fab/canal/loretta",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by her grandson with a phone at eye level, in the middle of the action: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a lamp or the daylight from the window), automatic white balance a bit off, slight phone noise, ordinary worn objects of an old Iowa farmhouse, plain bottles and rags with no labels, no beautiful composition.",
+ "personajes": {
+  "loretta": {
+   "nombre": "Loretta",
+   "cara": true,
+   "desc": "Loretta, an 81-year-old white American grandmother with short curly snow-white hair, thin wire-rimmed glasses, a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron, with old wrinkled hands"
+  }
+ },
+ "lugares_fijos": {
+  "cocina": "Loretta's 1950s white farmhouse kitchen: a white enamel stove with chrome handles, yellow gingham curtains on the window, a small wooden cross on the wall, a rooster cookie jar on a dark wooden dresser, a worn wooden table with one place set, a wall calendar showing November",
+  "mesa": "Loretta's small dining corner: a worn wooden table set for one with a lilac cloth napkin folded on a plate, a white candle, a glass of iced tea, a small wall calendar",
+  "horno": "Loretta's white enamel oven: the oven door open a little, warm light from inside, a sheet pan lined with foil on the rack"
+ },
+ "identidad": "Preserve the exact identity, face, short curly snow-white hair, thin wire-rimmed glasses, age and skin of the elderly woman in the reference photograph. She wears a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron.",
+ "cara_crop": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor_face.png"
+}
