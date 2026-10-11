@@ -1,0 +1,2253 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 6.543,
+"k": "",
+"c": "DropOpen",
+"props": {
+"k": "n_drop",
+"words": [
+[
+"One",
+0.0
+],
+[
+"drop",
+0.4
+],
+[
+"of",
+0.68
+],
+[
+"what",
+0.9
+],
+[
+"is",
+1.1
+],
+[
+"in",
+1.34
+],
+[
+"your",
+1.4
+],
+[
+"pantry,",
+1.7
+],
+[
+"honey.",
+2.3
+],
+[
+"That",
+2.813
+],
+[
+"is",
+3.073
+],
+[
+"all",
+3.413
+],
+[
+"it",
+3.693
+],
+[
+"takes.",
+3.953
+],
+[
+"Look",
+4.713
+],
+[
+"at",
+4.873
+],
+[
+"this",
+5.053
+],
+[
+"refrigerator",
+5.353
+],
+[
+"door.",
+5.933
+]
+],
+"ripple": 0.4
+}
+},
+{
+"a": 6.543,
+"b": 21.11,
+"k": "",
+"c": "HalfDoor",
+"props": {
+"k": "n_halfdoor",
+"l": 6.9,
+"r": 15.6,
+"same": 17.973
+}
+},
+{
+"a": 21.11,
+"b": 25.154,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 25.154,
+"b": 31.537,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 31.537,
+"b": 41.087,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clsteel/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"5",
+33.57
+],
+[
+"Toilet",
+33.99
+],
+[
+"Cleaning",
+34.41
+],
+[
+"Mistakes",
+34.77
+],
+[
+"That",
+35.27
+],
+[
+"Make",
+35.59
+],
+[
+"Your",
+35.75
+],
+[
+"Bathroom",
+36.03
+],
+[
+"Smell",
+36.37
+]
+],
+"k": "n_kitchenwide"
+}
+},
+{
+"a": 41.087,
+"b": 47.61,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 47.61,
+"b": 58.24,
+"k": "s006_n_spray_streaks",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 58.24,
+"b": 63.79,
+"k": "s007_l_xmas",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 63.79,
+"b": 72.923,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_storycounty",
+"vid": false,
+"cap": "Story County, Iowa",
+"credit": "Photo: Rural Story County Iowa \u00b7 Phil Roeder \u00b7 CC BY 2.0"
+}
+},
+{
+"a": 72.923,
+"b": 80.227,
+"k": "s009_n_wetrag",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 80.227,
+"b": 87.227,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 87.227,
+"b": 93.757,
+"k": "s011_n_sunstreaks",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 93.757,
+"b": 102.78,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page21",
+"tab": "PAGE 21",
+"t": 96.1,
+"hl": 9
+}
+],
+"k": "n_halfdoor"
+}
+},
+{
+"a": 102.78,
+"b": 110.473,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT YOU NEED",
+"items": [
+{
+"t": 102.9,
+"txt": "Two soft cloths",
+"k": "n_cloths"
+},
+{
+"t": 104.6,
+"txt": "Rubbing alcohol",
+"k": "n_alcohol"
+},
+{
+"t": 106.6,
+"txt": "One drop of oil",
+"k": "n_oil"
+},
+{
+"t": 108.4,
+"txt": "Pennies, not a store bottle"
+}
+],
+"k": "n_cloths"
+}
+},
+{
+"a": 110.473,
+"b": 118.906,
+"k": "",
+"c": "Pins",
+"props": {
+"k": "n_kitchenwide",
+"head": "The whole kitchen",
+"pins": [
+{
+"x": 88,
+"y": 34,
+"t": 111.6,
+"txt": "Refrigerator"
+},
+{
+"x": 62,
+"y": 64,
+"t": 113.3,
+"txt": "Dishwasher"
+},
+{
+"x": 22,
+"y": 64,
+"t": 114.6,
+"txt": "Oven front"
+},
+{
+"x": 14,
+"y": 40,
+"t": 116.6,
+"txt": "Microwave"
+},
+{
+"x": 42,
+"y": 50,
+"t": 117.9,
+"txt": "Sink"
+}
+]
+}
+},
+{
+"a": 118.906,
+"b": 126.163,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 126.163,
+"b": 134.993,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_church1956",
+"vid": false,
+"cap": "A Methodist church, 1956",
+"credit": "McCool Methodist Church, 1956 \u00b7 CC BY 2.0"
+}
+},
+{
+"a": 134.993,
+"b": 145.613,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar017",
+"vid": true,
+"cap": "A real big kitchen, 1950s",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 145.613,
+"b": 155.774,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_bernice",
+"caption": "Bernice \u00b7 always two cloths",
+"date": "Zion, 1974",
+"t": 149.5
+}
+},
+{
+"a": 155.774,
+"b": 160.59,
+"k": "s019_n_lake",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 160.59,
+"b": 170.51,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 170.51,
+"b": 177.12,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 177.12,
+"b": 183.753,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page3",
+"tab": "PAGE 3",
+"t": 179.0,
+"hl": 16
+}
+],
+"k": "n_alcohol"
+}
+},
+{
+"a": 183.753,
+"b": 190.19,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 190.19,
+"b": 196.5,
+"k": "",
+"c": "NeverMix",
+"props": {
+"rows": [
+{
+"t": 190.5,
+"a": "BLEACH",
+"b": [
+"RUBBING ALCOHOL"
+]
+}
+],
+"gas": [
+192.6,
+"HARMFUL GASES"
+],
+"k": "page3"
+}
+},
+{
+"a": 196.5,
+"b": 204.403,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 204.403,
+"b": 210.573,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 210.573,
+"b": 216.933,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 216.933,
+"b": 242.584,
+"k": "",
+"c": "Shelf",
+"props": {
+"head": "WHAT I USE \u00b7 PAGE 4",
+"items": [
+{
+"t": 217.0,
+"name": "Rubbing alcohol",
+"use": "no streak on stainless, dries in seconds",
+"k": "n_alcohol"
+},
+{
+"t": 226.7,
+"name": "Vinegar spray",
+"use": "works for the first wipe",
+"k": "n_vinegar"
+},
+{
+"t": 231.2,
+"name": "A drop of oil",
+"use": "mineral oil or olive oil",
+"k": "n_oil"
+},
+{
+"t": 236.2,
+"name": "Two soft cloths",
+"use": "two. not one.",
+"k": "n_cloths"
+}
+]
+}
+},
+{
+"a": 242.584,
+"b": 247.507,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar029",
+"vid": true,
+"cap": "Making steel, 1936",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 247.507,
+"b": 257.653,
+"k": "",
+"c": "GrainMacro",
+"props": {
+"k": "n_grain",
+"oak": "n_oak",
+"t1": 251.0,
+"t2": 255.6
+}
+},
+{
+"a": 257.653,
+"b": 262.82,
+"k": "",
+"c": "GrainDir",
+"props": {
+"k": "n_fridgeclose",
+"v": 257.9,
+"h": 260.8
+}
+},
+{
+"a": 262.82,
+"b": 272.017,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 272.017,
+"b": 297.313,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 21",
+"head": "STAINLESS \u00b7 4 STEPS",
+"steps": [
+{
+"t": 274.5,
+"txt": "Alcohol on cloth one: off come the prints",
+"k": "l_step1"
+},
+{
+"t": 281.4,
+"txt": "One drop of oil on cloth two",
+"k": "n_oildrop"
+},
+{
+"t": 287.0,
+"txt": "Wipe WITH the grain, top to bottom",
+"k": "l_step3"
+},
+{
+"t": 293.8,
+"txt": "Buff it dry",
+"k": "l_step4"
+}
+],
+"bed": "n_fridgeclose"
+}
+},
+{
+"a": 297.313,
+"b": 304.387,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar034",
+"vid": true,
+"cap": "5 minutes a door",
+"big": "5 MINUTES",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 304.387,
+"b": 312.867,
+"k": "s035_n_greasesmear",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 312.867,
+"b": 318.077,
+"k": "s036_n_alcoholwipe",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 318.077,
+"b": 325.904,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The oil is what makes it shine,",
+"and it keeps the prints",
+"off for a week."
+],
+"sig": "Loretta's trick, p. 21",
+"k": "n_oildrop",
+"size": 84
+}
+},
+{
+"a": 325.904,
+"b": 332.467,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 332.467,
+"b": 338.88,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 338.88,
+"b": 347.264,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_circles",
+"txt": "Wiping across the grain = streaks",
+"cx": 55,
+"cy": 50
+}
+},
+{
+"a": 347.264,
+"b": 353.14,
+"k": "s041_l_longway",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 353.14,
+"b": 359.93,
+"k": "s042_l_phone",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 359.93,
+"b": 364.8,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar043",
+"vid": true,
+"cap": "1926 \u00b7 an early electric refrigerator ad",
+"credit": "1926 film \u00b7 Public domain"
+}
+},
+{
+"a": 364.8,
+"b": 372.167,
+"k": "s044_l_topdown",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 372.167,
+"b": 377.157,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar045",
+"vid": true,
+"cap": "1952 \u00b7 every hand grabs the handle",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 377.157,
+"b": 384.087,
+"k": "s046_n_handlewrap",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 384.087,
+"b": 391.937,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 391.937,
+"b": 401.84,
+"k": "",
+"c": "Pins",
+"props": {
+"k": "n_frenchdoor",
+"head": "The part people skip",
+"pins": [
+{
+"x": 18,
+"y": 46,
+"t": 394.2,
+"txt": "The edges"
+},
+{
+"x": 50,
+"y": 34,
+"t": 396.6,
+"txt": "Middle strip"
+},
+{
+"x": 50,
+"y": 72,
+"t": 398.7,
+"txt": "Milk drips"
+}
+]
+}
+},
+{
+"a": 401.84,
+"b": 409.117,
+"k": "s049_n_toekick",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 409.117,
+"b": 414.673,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 414.673,
+"b": 420.573,
+"k": "s051_l_standback",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 420.573,
+"b": 426.103,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 426.103,
+"b": 436.78,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 436.78,
+"b": 445.307,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar054",
+"vid": true,
+"cap": "1950 \u00b7 loading the new dishwasher",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 445.307,
+"b": 455.54,
+"k": "",
+"c": "GrainDir",
+"props": {
+"k": "n_dishwasher",
+"h": 446.5,
+"lab": "SIDE TO SIDE"
+}
+},
+{
+"a": 455.54,
+"b": 465.533,
+"k": "s056_n_dishedge",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 465.533,
+"b": 471.833,
+"k": "s057_l_dishwipe",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 471.833,
+"b": 477.59,
+"k": "s058_n_percolator",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 477.59,
+"b": 486.257,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar059",
+"vid": true,
+"cap": "Wipe the stovetop while it's warm \u00b7 page 17",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 486.257,
+"b": 490.973,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 490.973,
+"b": 497.953,
+"k": "s061_n_warmshimmer",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 497.953,
+"b": 506.887,
+"k": "s062_l_ovenfront",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 506.887,
+"b": 514.97,
+"k": "s063_n_knobs",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 514.97,
+"b": 520.66,
+"k": "s064_n_knobpoint",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 520.66,
+"b": 526.843,
+"k": "s065_n_ovenoil",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 526.843,
+"b": 536.15,
+"k": "",
+"c": "DoDont",
+"props": {
+"yes": {
+"k": "n_ovenoil",
+"txt": "Oil on the door & front",
+"t": 532.3
+},
+"no": {
+"k": "n_cooktop",
+"txt": "Never on the cooktop",
+"t": 527.0
+},
+"k": "n_knobs"
+}
+},
+{
+"a": 536.15,
+"b": 544.693,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 544.693,
+"b": 552.237,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "n_kitchenwide",
+"t": 546.0
+}
+},
+{
+"a": 552.237,
+"b": 561.043,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page21",
+"tab": "21 \u00b7 STEEL",
+"t": 552.4
+},
+{
+"src": "page26",
+"tab": "26 \u00b7 SINK",
+"t": 554.5
+},
+{
+"src": "page22",
+"tab": "22 \u00b7 MICROWAVE",
+"t": 556.8
+}
+],
+"k": "n_kitchenwide"
+}
+},
+{
+"a": 561.043,
+"b": 570.513,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 570.513,
+"b": 589.793,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 22",
+"head": "THE MICROWAVE",
+"steps": [
+{
+"t": 574.6,
+"txt": "1 cup water + 2 tbsp vinegar (or lemon)",
+"k": "n_bowl"
+},
+{
+"t": 580.6,
+"txt": "Microwave it 5 minutes",
+"k": "n_microon"
+},
+{
+"t": 582.3,
+"txt": "Door shut 3 more minutes. No peeking!",
+"k": "n_microsteam"
+}
+],
+"bed": "n_microon"
+}
+},
+{
+"a": 589.793,
+"b": 596.487,
+"k": "s072_l_microwipe",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 596.487,
+"b": 603.91,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 603.91,
+"b": 612.006,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_steambowl",
+"txt": "Microwaved water can boil up suddenly",
+"tag": "BE CAREFUL \u00b7 PAGE 22"
+}
+},
+{
+"a": 612.006,
+"b": 618.58,
+"k": "s075_l_potholder",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 618.58,
+"b": 626.42,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 626.42,
+"b": 631.787,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar077",
+"vid": true,
+"cap": "1950 \u00b7 the kitchen sink",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 631.787,
+"b": 641.37,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page26",
+"tab": "PAGE 26",
+"t": 632.2,
+"hl": 9
+}
+],
+"k": "n_sinkdry"
+}
+},
+{
+"a": 641.37,
+"b": 660.46,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 26",
+"head": "A SINK THAT SHINES",
+"steps": [
+{
+"t": 643.2,
+"txt": "Baking soda on the WET sink",
+"k": "l_sinksoda"
+},
+{
+"t": 647.1,
+"txt": "Spray vinegar, let it fizz, rinse",
+"k": "n_fizz"
+},
+{
+"t": 653.0,
+"txt": "Dry it completely",
+"k": "n_sinkdry"
+},
+{
+"t": 656.7,
+"txt": "One drop of oil, soft cloth",
+"k": "n_sinkoil"
+}
+],
+"bed": "n_sinkdry"
+}
+},
+{
+"a": 660.46,
+"b": 667.284,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"A clean, dry sink",
+"at bedtime."
+],
+"sig": "Mother",
+"k": "l_nightsink",
+"size": 104
+}
+},
+{
+"a": 667.284,
+"b": 676.687,
+"k": "s081_l_nightsink",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 676.687,
+"b": 686.593,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "EVERY DAY",
+"page": "PAGE 50",
+"items": [
+{
+"t": 683.0,
+"txt": "Dishes done"
+},
+{
+"t": 684.4,
+"txt": "Sink dry"
+}
+],
+"k": "l_nightsink"
+}
+},
+{
+"a": 686.593,
+"b": 692.657,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 692.657,
+"b": 697.813,
+"k": "",
+"c": "Chapter",
+"props": {
+"label": "RUINS IT",
+"n": "1",
+"title": "BLEACH",
+"sub": "PAGE 26",
+"k": "n_bleachbed"
+}
+},
+{
+"a": 697.813,
+"b": 704.3,
+"k": "s085_n_bleachpour",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 704.3,
+"b": 709.393,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_pitting",
+"vid": false,
+"cap": "Real pitting in steel, under a microscope",
+"credit": "Pitting corrosion on duplex stainless steel \u00b7 CC BY 4.0"
+}
+},
+{
+"a": 709.393,
+"b": 715.073,
+"k": "",
+"c": "Chapter",
+"props": {
+"label": "RUINS IT",
+"n": "2",
+"title": "SCOURING POWDER",
+"sub": "PAGE 21",
+"k": "n_powderbed"
+}
+},
+{
+"a": 715.073,
+"b": 722.047,
+"k": "s088_n_scratch",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 722.047,
+"b": 727.393,
+"k": "",
+"c": "Chapter",
+"props": {
+"label": "RUINS IT",
+"n": "3",
+"title": "STEEL WOOL",
+"sub": "PAGE 21",
+"k": "n_woolbed"
+}
+},
+{
+"a": 727.393,
+"b": 732.91,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 732.91,
+"b": 739.377,
+"k": "s091_n_rust",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 739.377,
+"b": 747.05,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "All stainless ever needs",
+"items": [
+{
+"t": 739.5,
+"txt": "A soft cloth",
+"k": "n_cloths"
+},
+{
+"t": 740.6,
+"txt": "A sponge",
+"k": "n_sponge"
+},
+{
+"t": 741.6,
+"txt": "Baking soda",
+"k": "n_sodabox"
+},
+{
+"t": 743.3,
+"txt": "Patience",
+"k": "n_coffee"
+}
+],
+"k": "n_cloths"
+}
+},
+{
+"a": 747.05,
+"b": 753.887,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 753.887,
+"b": 760.313,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar094",
+"vid": true,
+"cap": "1951 \u00b7 Iowa State College, Ames",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 760.313,
+"b": 767.603,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clsteel/th_other.jpg",
+"tag": "CHURCH KITCHEN",
+"words": [
+[
+"The",
+763.11
+],
+[
+"Church",
+763.35
+],
+[
+"Basement",
+763.65
+],
+[
+"Hotdish",
+764.11
+],
+[
+"That",
+764.69
+],
+[
+"Fed",
+765.09
+],
+[
+"200",
+765.41
+],
+[
+"People",
+765.93
+]
+],
+"k": "n_kitchenwide"
+}
+},
+{
+"a": 767.603,
+"b": 776.403,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar096",
+"vid": true,
+"cap": "1950s \u00b7 supper served off the stainless",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 776.403,
+"b": 781.89,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar097",
+"vid": true,
+"cap": "1952 \u00b7 open the refrigerator",
+"credit": "Prelinger Archives \u00b7 Public domain"
+}
+},
+{
+"a": 781.89,
+"b": 789.18,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page23",
+"tab": "PAGE 23",
+"t": 782.0,
+"hl": 9
+}
+],
+"k": "n_seal"
+}
+},
+{
+"a": 789.18,
+"b": 794.267,
+"k": "s099_n_seal",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 794.267,
+"b": 800.477,
+"k": "s100_n_bottles",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 800.477,
+"b": 807.23,
+"k": "s101_l_shelfwipe",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 807.23,
+"b": 814.76,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_crack",
+"txt": "Cold glass shelf + hot water = it cracks",
+"cx": 50,
+"cy": 55
+}
+},
+{
+"a": 814.76,
+"b": 820.274,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 820.274,
+"b": 827.447,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 827.447,
+"b": 837.2,
+"k": "s105_n_sodashelf",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 837.2,
+"b": 846.093,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 846.093,
+"b": 850.693,
+"k": "s107_l_saturday",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 850.693,
+"b": 861.506,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "Living alone? My week",
+"items": [
+{
+"t": 842.6,
+"txt": "Refrigerator \u00b7 Saturday"
+},
+{
+"t": 850.9,
+"txt": "The handle \u00b7 more often"
+},
+{
+"t": 855.4,
+"txt": "The sink \u00b7 every night"
+},
+{
+"t": 857.2,
+"txt": "Oven front \u00b7 once a week"
+}
+],
+"k": "l_saturday"
+}
+},
+{
+"a": 861.506,
+"b": 867.09,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 867.09,
+"b": 881.917,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "One more time",
+"items": [
+{
+"t": 869.9,
+"txt": "Find the grain"
+},
+{
+"t": 871.7,
+"txt": "Alcohol \u00b7 cloth one"
+},
+{
+"t": 875.0,
+"txt": "One drop of oil \u00b7 cloth two"
+},
+{
+"t": 878.1,
+"txt": "The long way, with the grain"
+},
+{
+"t": 880.9,
+"txt": "Buff it dry"
+}
+],
+"k": "n_fridgeclose"
+}
+},
+{
+"a": 881.917,
+"b": 896.9,
+"k": "",
+"c": "Pins",
+"props": {
+"k": "n_kitchenwide",
+"head": "Around the kitchen",
+"pins": [
+{
+"x": 88,
+"y": 34,
+"t": 882.4,
+"txt": "Top to bottom"
+},
+{
+"x": 62,
+"y": 64,
+"t": 885.4,
+"txt": "Side to side"
+},
+{
+"x": 22,
+"y": 64,
+"t": 887.5,
+"txt": "Only when cool"
+},
+{
+"x": 14,
+"y": 40,
+"t": 890.0,
+"txt": "Vinegar water"
+},
+{
+"x": 42,
+"y": 50,
+"t": 893.2,
+"txt": "Dry every night"
+}
+]
+}
+},
+{
+"a": 896.9,
+"b": 902.0,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "Never on stainless",
+"items": [
+{
+"t": 897.4,
+"txt": "Bleach",
+"no": true
+},
+{
+"t": 898.6,
+"txt": "Scouring powder",
+"no": true
+},
+{
+"t": 900.2,
+"txt": "Steel wool",
+"no": true
+}
+],
+"k": "n_scratch"
+}
+},
+{
+"a": 902.0,
+"b": 911.09,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page21",
+"tab": "PAGE 21",
+"t": 902.6
+},
+{
+"src": "page26",
+"tab": "PAGE 26",
+"t": 906.0
+}
+],
+"caption": {
+"txt": "the link is right under this video",
+"t": 908.0
+},
+"k": "n_kitchenwide"
+}
+},
+{
+"a": 911.09,
+"b": 918.54,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 918.54,
+"b": 928.83,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Which one shows every fingerprint?",
+"opts": [
+{
+"txt": "The refrigerator",
+"t": 921.0
+},
+{
+"txt": "The dishwasher",
+"t": 922.6
+},
+{
+"txt": "The oven",
+"t": 924.0
+}
+],
+"k": "n_halfdoor"
+}
+},
+{
+"a": 928.83,
+"b": 937.016,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 937.016,
+"b": 943.983,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/clsteel/th_next.jpg",
+"tag": "NEXT TIME",
+"words": [
+[
+"The",
+940.37
+],
+[
+"Forbidden",
+940.63
+],
+[
+"Carpet",
+941.17
+],
+[
+"Cleaning",
+941.61
+],
+[
+"Trick",
+941.99
+],
+[
+"That",
+942.31
+],
+[
+"Works",
+942.61
+],
+[
+"in",
+942.83
+],
+[
+"10",
+943.15
+],
+[
+"Minutes",
+943.35
+]
+],
+"k": "n_kitchenwide"
+}
+},
+{
+"a": 943.983,
+"b": 952.263,
+"k": "s118_n_carpet",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 952.263,
+"b": 957.033,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 957.033,
+"b": 969.833,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+31.54,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+93.76,
+"design/page_turn_big",
+0.4
+],
+[
+102.78,
+"design/paper_slide",
+0.3
+],
+[
+104.75,
+"design/pencil_strokes",
+0.22
+],
+[
+106.75,
+"design/pencil_strokes",
+0.22
+],
+[
+108.55,
+"design/pencil_strokes",
+0.22
+],
+[
+110.47,
+"design/click_slide",
+0.25
+],
+[
+145.61,
+"design/camera_shutter",
+0.25
+],
+[
+177.12,
+"design/page_turn_big",
+0.4
+],
+[
+190.19,
+"design/impact_drum_subtle",
+0.45
+],
+[
+216.93,
+"design/whoosh_air",
+0.25
+],
+[
+272.02,
+"design/paper_slide",
+0.35
+],
+[
+318.08,
+"design/pen_write",
+0.3
+],
+[
+338.88,
+"design/stamp_rubber",
+0.5
+],
+[
+339.18,
+"design/pencil_strokes",
+0.3
+],
+[
+391.94,
+"design/click_slide",
+0.25
+],
+[
+526.84,
+"design/stamp_rubber",
+0.35
+],
+[
+544.69,
+"design/click_slide",
+0.3
+],
+[
+552.24,
+"design/page_turn_big",
+0.4
+],
+[
+570.51,
+"design/paper_slide",
+0.35
+],
+[
+603.91,
+"design/stamp_traditional",
+0.35
+],
+[
+631.79,
+"design/page_turn_big",
+0.4
+],
+[
+641.37,
+"design/paper_slide",
+0.35
+],
+[
+660.46,
+"design/pen_write",
+0.3
+],
+[
+676.69,
+"design/paper_slide",
+0.3
+],
+[
+684.55,
+"design/pencil_strokes",
+0.22
+],
+[
+692.66,
+"design/impact_drum_subtle",
+0.45
+],
+[
+709.39,
+"design/impact_drum_subtle",
+0.45
+],
+[
+722.05,
+"design/impact_drum_subtle",
+0.45
+],
+[
+739.38,
+"design/paper_slide",
+0.3
+],
+[
+740.75,
+"design/pencil_strokes",
+0.22
+],
+[
+741.75,
+"design/pencil_strokes",
+0.22
+],
+[
+743.45,
+"design/pencil_strokes",
+0.22
+],
+[
+760.31,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+781.89,
+"design/page_turn_big",
+0.4
+],
+[
+807.23,
+"design/stamp_rubber",
+0.5
+],
+[
+807.53,
+"design/pencil_strokes",
+0.3
+],
+[
+850.69,
+"design/paper_slide",
+0.3
+],
+[
+851.05,
+"design/pencil_strokes",
+0.22
+],
+[
+855.55,
+"design/pencil_strokes",
+0.22
+],
+[
+857.35,
+"design/pencil_strokes",
+0.22
+],
+[
+867.09,
+"design/paper_slide",
+0.3
+],
+[
+871.85,
+"design/pencil_strokes",
+0.22
+],
+[
+875.15,
+"design/pencil_strokes",
+0.22
+],
+[
+878.25,
+"design/pencil_strokes",
+0.22
+],
+[
+881.05,
+"design/pencil_strokes",
+0.22
+],
+[
+881.92,
+"design/click_slide",
+0.25
+],
+[
+896.9,
+"design/paper_slide",
+0.3
+],
+[
+898.75,
+"design/pencil_strokes",
+0.22
+],
+[
+900.35,
+"design/pencil_strokes",
+0.22
+],
+[
+902.0,
+"design/page_turn_big",
+0.4
+],
+[
+918.54,
+"design/click_slide",
+0.25
+],
+[
+937.02,
+"design/whoosh_slow_sweep",
+0.28
+]
+],
+"end": 969.833
+}
