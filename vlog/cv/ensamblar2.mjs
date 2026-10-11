@@ -39,7 +39,9 @@ segs.forEach((s, i) => {
     piece(["-ss", sf.toFixed(4), "-i", REEL, "-vf", POST(n), "-frames:v", String(n)], s.id + "_av"); edl.push({ id: s.id, kind: "avatar", f0, n, sf: +sf.toFixed(3) });
   } else if (STOCK[s.id]) {
     const a = ST + `${s.id}_1.mp4`, b = ST + `${s.id}_2.mp4`, have = [a, b].filter((x) => fs.existsSync(x));
-    if (!have.length) { if (ANC[s.id]) { still(ANC[s.id], n, s.id + "_kb"); edl.push({ id: s.id, kind: "img", f0, n, nota: "stock faltante" }); } else falta.push(s.id + " (stock)"); return; }
+    if (!have.length) { if (ANC[s.id]) { still(ANC[s.id], n, s.id + "_kb"); edl.push({ id: s.id, kind: "img", f0, n, nota: "stock faltante" }); } else { const fo = fs.existsSync(D + "fotos") ? fs.readdirSync(D + "fotos").filter((f) => f.startsWith(s.id + "_") && f.endsWith(".png")).sort() : [];
+      // sin stock aprobado ni ancla: fotos agnes-image SIN cara (vlog/<slug>/fotos/<id>_a.png…), el tramo repartido entre ellas con KB
+      if (!fo.length) falta.push(s.id + " (stock)"); else { let g = f0; fo.forEach((f, j) => { const m = j === fo.length - 1 ? f0 + n - g : Math.round(n / fo.length); still(D + "fotos/" + f, m, s.id + "_f" + j); edl.push({ id: s.id, kind: "img", img: "fotos/" + f, f0: g, n: m }); g += m; }); } } return; }
     const na = have.length === 2 ? Math.round(n / 2) : n;
     have.forEach((x, k) => { const nn = k === 0 ? na : n - na, L = dur(x), slow = Math.min(1, (L - 0.05) / (nn / FPS));
       piece(["-i", x, "-vf", POST(nn, slow), "-frames:v", String(nn)], `${s.id}_${k + 1}`); edl.push({ id: s.id, kind: "stock", file: x.replace(R + "public/", ""), f0: f0 + (k ? na : 0), n: nn, slow: slow < 1 ? +slow.toFixed(3) : undefined }); });

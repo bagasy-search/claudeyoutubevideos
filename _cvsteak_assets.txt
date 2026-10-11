@@ -1,0 +1,4 @@
+vid/cvsteak
+img/cvsteak/cover.jpg
+img/cvsteak/page30.jpg
+img/cvsteak/qr.png

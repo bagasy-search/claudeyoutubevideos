@@ -1,0 +1,191 @@
+[
+ {
+  "c": "ClChip",
+  "from": 2985,
+  "dur": 135,
+  "props": {
+   "text": "Slow oven first · smoking pan last",
+   "corner": "tl"
+  },
+  "t": 99.5
+ },
+ {
+  "c": "ClCheck",
+  "from": 3761,
+  "dur": 240,
+  "props": {
+   "title": "THE STEAK",
+   "items": [
+    "Ribeye, 1½ inches thick",
+    "About 1½ lb · feeds 2-3",
+    "1½ tsp kosher salt",
+    "Salt the night before"
+   ],
+   "bed": "vid/cvsteak/bed_1.mp4#244"
+  },
+  "t": 125.38
+ },
+ {
+  "c": "ClChip",
+  "from": 5989,
+  "dur": 120,
+  "props": {
+   "text": "The secret: a dry steak",
+   "corner": "tl"
+  },
+  "t": 199.65
+ },
+ {
+  "c": "CvMeatThermo",
+  "from": 6862,
+  "dur": 180,
+  "props": {
+   "from": 40,
+   "to": 115,
+   "mark": 115,
+   "over": 145,
+   "label": "Pull from the oven",
+   "sub": "Medium-rare · it rises ~15°",
+   "bed": "vid/cvsteak/bed_4.mp4#184"
+  },
+  "t": 228.75
+ },
+ {
+  "c": "CvMeatThermo",
+  "from": 7253,
+  "dur": 195,
+  "props": {
+   "from": 70,
+   "to": 145,
+   "mark": 145,
+   "over": 160,
+   "label": "USDA: whole cuts of beef",
+   "sub": "+ 3 min rest",
+   "bed": "vid/cvsteak/bed_5.mp4#199"
+  },
+  "t": 241.75
+ },
+ {
+  "c": "ClTimer30",
+  "from": 10266,
+  "dur": 135,
+  "props": {
+   "minutes": 1.5,
+   "text": "90 seconds",
+   "label": "Don't move it",
+   "bed": "vid/cvsteak/bed_6.mp4#139"
+  },
+  "t": 342.21
+ },
+ {
+  "c": "ClCheck",
+  "from": 11124,
+  "dur": 210,
+  "props": {
+   "title": "THE BASTE",
+   "items": [
+    "Heat down to medium",
+    "2 tbsp butter",
+    "3 garlic cloves, smashed",
+    "Rosemary or thyme · 30 seconds"
+   ],
+   "bed": "vid/cvsteak/bed_7.mp4#214"
+  },
+  "t": 370.8
+ },
+ {
+  "c": "ClChip",
+  "from": 11998,
+  "dur": 120,
+  "props": {
+   "text": "Rest 5 minutes",
+   "corner": "tl"
+  },
+  "t": 399.92
+ },
+ {
+  "c": "ClDoDont",
+  "from": 12437,
+  "dur": 165,
+  "props": {
+   "yes": {
+    "label": "Across the grain"
+   },
+   "no": {
+    "label": "Along the grain"
+   },
+   "bed": "vid/cvsteak/bed_9.mp4#169"
+  },
+  "t": 414.56
+ },
+ {
+  "c": "ClCheck",
+  "from": 16172,
+  "dur": 300,
+  "props": {
+   "title": "PULL FROM THE OVEN AT",
+   "items": [
+    "Rare · 105°F",
+    "Medium-rare · 115°F",
+    "Medium · 130°F (lands ~145°F)",
+    "Medium-well · 140°F"
+   ],
+   "bed": "vid/cvsteak/bed_10.mp4#304"
+  },
+  "t": 539.05
+ },
+ {
+  "c": "ClReceipt",
+  "from": 20571,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "1½ lb ribeye",
+     "$22.50"
+    ],
+    [
+     "Butter, garlic, rosemary",
+     "$1.00"
+    ],
+    [
+     "Lard, salt, pepper",
+     "$0.50"
+    ]
+   ],
+   "total": [
+    "Per plate (÷3)",
+    "$8.00"
+   ],
+   "bed": "vid/cvsteak/bed_11.mp4#424"
+  },
+  "t": 685.71
+ },
+ {
+  "c": "ClBookPage",
+  "from": 29930,
+  "dur": 210,
+  "props": {
+   "page": "img/cvsteak/page30.jpg",
+   "pageNo": 30,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 30",
+   "bed": "vid/cvsteak/bed_12.mp4#214"
+  },
+  "t": 997.68
+ },
+ {
+  "c": "ClQRCard",
+  "from": 30621,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvsteak/qr.png",
+   "cover": "img/cvsteak/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvsteak/bed_13.mp4#184"
+  },
+  "t": 1020.7
+ }
+]
