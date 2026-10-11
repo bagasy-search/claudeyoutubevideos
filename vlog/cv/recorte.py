@@ -17,14 +17,25 @@ if __name__ == "__main__":
     keep, t = [], 0.0
     for a, b in C: keep.append((t, a)); t = b
     keep.append((t, T))
-    sel = "+".join(f"between(n,{round(a * 30)},{round(b * 30) - 1})" for a, b in keep)
-    open(D + "_sel.txt", "w").write(f"select='{sel}',setpts=N/(30*TB)")
-    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", src, "-an", "-/vf", D + "_sel.txt", "-fps_mode", "passthrough", "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-bf", "0",
-                    "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", R + f"public/vid/{S}/vlog.mp4"], check=True)
-    # audio: los mismos tramos en muestras (48 kHz: 1 cuadro = 1600 muestras exactas)
-    asel = "+".join(f"between(t,{round(a * 30) / 30:.5f},{round(b * 30) / 30 - 1e-5:.5f})" for a, b in keep)
-    open(D + "_asel.txt", "w").write(f"aresample=48000,aselect='{asel}',asetpts=N/SR/TB")
+    # SIN expresiones select gigantes (184 cortes → ffmpeg "Cannot allocate memory"): cuadros por tubería y audio con numpy
+    import numpy as np
+    K = set()
+    for a, b in keep: K.update(range(round(a * 30), round(b * 30)))
+    W, H = 1920, 1080; FS = W * H * 3 // 2
+    dec = subprocess.Popen(["ffmpeg", "-v", "error", "-i", src, "-an", "-f", "rawvideo", "-pix_fmt", "yuv420p", "-s", f"{W}x{H}", "-"], stdout=subprocess.PIPE, bufsize=FS * 4)
+    enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "yuv420p", "-s", f"{W}x{H}", "-r", "30", "-i", "-", "-c:v", "libx264", "-crf", "17", "-preset", "medium", "-bf", "0",
+                            "-pix_fmt", "yuv420p", "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709", R + f"public/vid/{S}/vlog.mp4"], stdin=subprocess.PIPE, bufsize=FS * 4)
+    n = 0
+    while True:
+        f = dec.stdout.read(FS)
+        if len(f) < FS: break
+        if n in K: enc.stdin.write(f)
+        n += 1
+    enc.stdin.close(); assert enc.wait() == 0 and dec.wait() == 0
     for i, o in ((R + f"public/{S}.wav", "voz_cut.wav"), (D + "det_bed.wav", "det_cut.wav")):
-        if os.path.exists(i): subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", i, "-/af", D + "_asel.txt", "-ar", "48000", "-c:a", "pcm_s16le", D + o], check=True)
+        if not os.path.exists(i): continue
+        x = np.frombuffer(subprocess.run(["ffmpeg", "-v", "error", "-i", i, "-ar", "48000", "-ac", "2", "-f", "s16le", "-"], capture_output=True, check=True).stdout, np.int16).reshape(-1, 2)
+        y = np.concatenate([x[round(a * 30) * 1600:round(b * 30) * 1600] for a, b in keep])
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", "48000", "-ac", "2", "-i", "-", "-c:a", "pcm_s16le", D + o], input=y.tobytes(), check=True)
     nf = int(subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries", "stream=nb_read_packets", "-of", "csv=p=0", R + f"public/vid/{S}/vlog.mp4"], capture_output=True, text=True).stdout)
     print(f"MEDIDO recorte: vlog {nf} cuadros = {nf / 30:.2f} s · voz recortada {dur(D + 'voz_cut.wav'):.2f} s · esperado {mapear(T):.2f} s")

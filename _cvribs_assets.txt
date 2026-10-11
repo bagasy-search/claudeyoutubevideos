@@ -1,0 +1,4 @@
+vid/cvribs
+img/cvribs/cover.jpg
+img/cvribs/page38.jpg
+img/cvribs/qr.png

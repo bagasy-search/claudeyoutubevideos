@@ -46,9 +46,9 @@ export const ESC = {
     clips: {
       c25: ["sprinkles salt and cumin over the ribs and rubs it in with his hands", "the ribs dusted with salt and cumin, his hands on them"],
       c26: ["covers the pan with a clean cloth", "the pan covered with the cloth, his hands on its edge"] } },
-  S08: { set: "A3", base: `stands at the long plank table holding a handful of long, smooth, deep red dried guajillo chiles.`,
+  S08: { set: "A3", base: `stands at the long plank table with a small woven basket of dried red guajillo chiles on the table in front of him.`,
     clips: {
-      c27: ["holds one long dried guajillo chile up to the camera", "one smooth deep red chile held up close to the camera"],
+      c27: ["picks one dried red chile out of the basket and shows it", "a dried red chile in his fingers beside the basket"],
       c28: ["smells the chile and smiles", "the chile under his nose, eyes closed, smiling"] } },
   S09: { set: "A3", base: `stands at the long plank table; dried guajillo chiles on a wooden cutting board, a pair of kitchen scissors in his hand.`,
     clips: {
@@ -107,6 +107,7 @@ export const ESC = {
       c59: ["brushes thick glaze over the ribs", "the ribs coated in shiny red glaze, the brush in his hand"] } },
   S24: { set: "A1", base: `stands at the black range holding a sheet pan of glazed rib pieces with oven mitts, the oven door open.`,
     clips: {
+      c60: ["opens the oven door and pulls the top rack up toward the broiler", "the top rack high under the glowing broiler, his hand on the door"],
       c61: ["slides the sheet pan into the oven and bends down to watch through the half-open door", "bent down, watching closely at the half-open oven door"] } },
   S25: { set: "A3", base: `stands at the long plank table behind a wooden board piled with ${GLAZED}.`,
     clips: {
@@ -137,6 +138,7 @@ export const ESC = {
   S33: { set: "A3", base: `stands at the long plank table; a glass dish of ${BRAISED} and a box of freezer bags.`,
     clips: {
       c77: ["spoons ribs and sauce into a freezer bag and seals it", "the filled freezer bag lying sealed on the table"],
+      c78: ["writes the date on the freezer bag with a pencil", "the dated freezer bag held up"],
       c79: ["pats the freezer bag and smiles", "his hand on the freezer bag, smiling"] } },
   S34: { set: "A1", base: `stands at the black range; a black skillet on the burner with pulled rib meat in red glaze, corn tortillas warming on a flat iron comal beside it, two forks in his hands.`,
     clips: {
@@ -176,6 +178,7 @@ export const ESC = {
   S44: { set: "A3", base: `stands at the long plank table; a braised rib piece on a cutting board, an instant-read meat thermometer in his hand.`,
     clips: {
       c109: ["pushes the thermometer probe into the meat between two bones", "the thermometer in the rib, he looks at the dial"],
+      c110: ["taps the thick tissue between two bones with the thermometer tip", "the thermometer tip between two bones, a serious look"],
       c111: ["pulls the thermometer out and twists a bone free with his fingers", "the bone free in his fingers"] } },
   S45: { set: "A3", base: `stands at the long plank table; a glass dish of ${BRAISED}, a lid, a roll of tape and a marker.`,
     clips: {
@@ -210,22 +213,26 @@ export const ESC = {
       c128: ["picks a potato out of the sack, holds it up and waves goodbye", "a potato in one hand, the other waving, smiling"] } },
 };
 export const STOCK = {
+  c27: "dried chiles", c28: "dried peppers",
+  c05: "backyard grill",
   c13: "raw pork ribs", c14: "braised ribs", c15: "grilling ribs", c16: "burnt ribs", c17: "bbq smoker",
   c29: "dried chiles", c31: "toasting chiles", c38: "blender sauce",
-  c48: "cowboys campfire", c49: "cowboys eating", c56: "simmering sauce", c60: "oven broiler",
-  c74: "butcher counter", c75: "butcher cutting ribs", c76: "rib tips", c78: "freezer bag",
+  c48: "cowboys campfire", c49: "cowboys eating", c56: "simmering sauce",
+  c74: "butcher counter", c75: "butcher cutting ribs", c76: "rib tips",
   c81: "pork tacos", c82: "cowboy fence", c84: "slicing red onion", c90: "beans tortillas", c94: "bbq ribs plate",
   c95: "roasting pan", c97: "dutch oven coals", c98: "campfire coals", c99: "ribs campfire",
-  c100: "slow cooker", c105: "family barbecue", c106: "new grill", c107: "grill fire", c110: "meat thermometer",
+  c100: "slow cooker", c105: "family barbecue", c106: "new grill", c107: "grill fire",
 };
 export const STOCK2 = {
+  c27: "red chili peppers", c28: "chili peppers",
+  c05: "grilling ribs",
   c13: "pork spare ribs", c14: "slow cooked ribs", c15: "ribs grill", c16: "grill flames", c17: "smoker pit",
   c29: "guajillo chiles", c31: "dried chiles skillet", c38: "chili sauce",
-  c48: "ranch dinner", c49: "outdoor dinner", c56: "red sauce boiling", c60: "ribs oven",
-  c74: "meat counter", c75: "butcher ribs", c76: "pork ribs", c78: "frozen meat",
+  c48: "ranch dinner", c49: "outdoor dinner", c56: "red sauce boiling",
+  c74: "meat counter", c75: "butcher ribs", c76: "pork ribs",
   c81: "corn tortillas", c82: "cowboy riding", c84: "pickled onions", c90: "mexican dinner", c94: "glazed ribs",
   c95: "aluminum foil pan", c97: "campfire dutch oven", c98: "charcoal coals", c99: "grilling ribs coals",
-  c100: "crock pot", c105: "fourth july", c106: "gas grill", c107: "burnt grill", c110: "thermometer meat",
+  c100: "crock pot", c105: "fourth july", c106: "gas grill", c107: "burnt grill",
 };
 export const DET = {};
 export const TOPIC = "pork ribs";

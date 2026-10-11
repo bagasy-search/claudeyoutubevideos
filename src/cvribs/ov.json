@@ -1,0 +1,183 @@
+[
+ {
+  "c": "ClChip",
+  "from": 6504,
+  "dur": 120,
+  "props": {
+   "text": "Toast 15-20 s a side · never black",
+   "corner": "tl"
+  },
+  "t": 216.81
+ },
+ {
+  "c": "ClCheck",
+  "from": 8007,
+  "dur": 300,
+  "props": {
+   "title": "INTO THE BLENDER",
+   "items": [
+    "6 guajillo chiles, toasted & soaked",
+    "1 cup orange juice",
+    "Zest of 1 orange",
+    "5 garlic cloves",
+    "2 tbsp cider vinegar",
+    "2 tbsp brown sugar"
+   ],
+   "bed": "vid/cvribs/bed_1.mp4#304"
+  },
+  "t": 266.91
+ },
+ {
+  "c": "ClDoDont",
+  "from": 9099,
+  "dur": 165,
+  "props": {
+   "yes": {
+    "label": "Sauce halfway up"
+   },
+   "no": {
+    "label": "Ribs drowned"
+   },
+   "bed": "vid/cvribs/bed_2.mp4#169"
+  },
+  "t": 303.29
+ },
+ {
+  "c": "ClTimer30",
+  "from": 9630,
+  "dur": 135,
+  "props": {
+   "minutes": 119.5,
+   "text": "2 hours",
+   "label": "Lid on · 300°F",
+   "bed": "vid/cvribs/bed_3.mp4#139"
+  },
+  "t": 321.02
+ },
+ {
+  "c": "ClChip",
+  "from": 9766,
+  "dur": 120,
+  "props": {
+   "text": "300°F · low, slow, covered",
+   "corner": "tl"
+  },
+  "t": 325.53
+ },
+ {
+  "c": "ClChip",
+  "from": 11380,
+  "dur": 135,
+  "props": {
+   "text": "The twist test",
+   "corner": "tl"
+  },
+  "t": 379.35
+ },
+ {
+  "c": "ClChip",
+  "from": 13478,
+  "dur": 150,
+  "props": {
+   "text": "Broiler: 3-4 min · 6 in · stand there",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 449.25
+ },
+ {
+  "c": "CvMeatThermo",
+  "from": 26512,
+  "dur": 180,
+  "props": {
+   "from": 70,
+   "to": 145,
+   "label": "USDA: pork is safe",
+   "sub": "+ 3 min rest",
+   "bed": "vid/cvribs/bed_7.mp4#184"
+  },
+  "t": 883.74
+ },
+ {
+  "c": "CvMeatThermo",
+  "from": 26860,
+  "dur": 180,
+  "props": {
+   "from": 145,
+   "to": 195,
+   "label": "Ribs: cook for tender",
+   "sub": "Collagen melts",
+   "bed": "vid/cvribs/bed_8.mp4#184"
+  },
+  "t": 895.33
+ },
+ {
+  "c": "ClChip",
+  "from": 27625,
+  "dur": 135,
+  "props": {
+   "text": "Fridge within 2 hours",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 920.84
+ },
+ {
+  "c": "ClReceipt",
+  "from": 21745,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "4 lb pork spare ribs",
+     "$14.00"
+    ],
+    [
+     "6 guajillo chiles",
+     "$2.40"
+    ],
+    [
+     "Orange + 1 cup juice",
+     "$2.00"
+    ],
+    [
+     "Garlic, vinegar, sugar, salt, cumin",
+     "$1.00"
+    ]
+   ],
+   "total": [
+    "Per plate (÷5)",
+    "$3.90"
+   ],
+   "bed": "vid/cvribs/bed_10.mp4#424"
+  },
+  "t": 724.83
+ },
+ {
+  "c": "ClBookPage",
+  "from": 30518,
+  "dur": 210,
+  "props": {
+   "page": "img/cvribs/page38.jpg",
+   "pageNo": 38,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 38",
+   "bed": "vid/cvribs/bed_11.mp4#214"
+  },
+  "t": 1017.28
+ },
+ {
+  "c": "ClQRCard",
+  "from": 31167,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvribs/qr.png",
+   "cover": "img/cvribs/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvribs/bed_12.mp4#184"
+  },
+  "t": 1038.89
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "name": "c27_1",
+  "q": "dried chiles",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Now the chiles. These are guajillos. Dried. They're long, smooth, a deep red, and they're mild. Mild. Not hot.\" — it must show: dried chiles."
+ },
+ {
+  "name": "c27_2",
+  "q": "red chili peppers",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Now the chiles. These are guajillos. Dried. They're long, smooth, a deep red, and they're mild. Mild. Not hot.\" — it must show: red chili peppers."
+ },
+ {
+  "name": "c28_1",
+  "q": "dried peppers",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"They taste a little like a sweet pepper and a little like a raisin, with a little bit of tang.\" — it must show: dried peppers."
+ },
+ {
+  "name": "c28_2",
+  "q": "chili peppers",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"They taste a little like a sweet pepper and a little like a raisin, with a little bit of tang.\" — it must show: chili peppers."
+ },
+ {
+  "name": "c05_1",
+  "q": "backyard grill",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"or a whole Saturday standing over a fire with a beer. And most of the ribs people make on a grill at home come out one of two ways.\" — it must show: backyard grill."
+ },
+ {
+  "name": "c05_2",
+  "q": "grilling ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"or a whole Saturday standing over a fire with a beer. And most of the ribs people make on a grill at home come out one of two ways.\" — it must show: grilling ribs."
+ },
+ {
+  "name": "c13_1",
+  "q": "raw pork ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Let's talk about why grilled ribs at home come out tough. A rib is a working muscle. It's full of what the butchers call connective tissue. That's the stringy, chewy stuff that holds the meat to the bone. It's tough.\" — it must show: raw pork ribs."
+ },
+ {
+  "name": "c13_2",
+  "q": "pork spare ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Let's talk about why grilled ribs at home come out tough. A rib is a working muscle. It's full of what the butchers call connective tissue. That's the stringy, chewy stuff that holds the meat to the bone. It's tough.\" — it must show: pork spare ribs."
+ },
+ {
+  "name": "c14_1",
+  "q": "braised ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"You can't chew it. But if you cook it low and slow, with some moisture around it, it melts. It turns into gelatin. And gelatin is what makes a rib feel juicy and sticky and tender in your mouth.\" — it must show: braised ribs."
+ },
+ {
+  "name": "c14_2",
+  "q": "slow cooked ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"You can't chew it. But if you cook it low and slow, with some moisture around it, it melts. It turns into gelatin. And gelatin is what makes a rib feel juicy and sticky and tender in your mouth.\" — it must show: slow cooked ribs."
+ },
+ {
+  "name": "c15_1",
+  "q": "grilling ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Here's the thing. That melting needs time. Hours. And it needs to stay wet. On a grill, over direct fire, the outside of the rib is getting blasted.\" — it must show: grilling ribs."
+ },
+ {
+  "name": "c15_2",
+  "q": "ribs grill",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Here's the thing. That melting needs time. Hours. And it needs to stay wet. On a grill, over direct fire, the outside of the rib is getting blasted.\" — it must show: ribs grill."
+ },
+ {
+  "name": "c16_1",
+  "q": "burnt ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It dries out and burns long before the inside has had time to melt. So you've got two choices on a grill. Pull them early, and they're tough. Or leave them on, and they dry out.\" — it must show: burnt ribs."
+ },
+ {
+  "name": "c16_2",
+  "q": "grill flames",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It dries out and burns long before the inside has had time to melt. So you've got two choices on a grill. Pull them early, and they're tough. Or leave them on, and they dry out.\" — it must show: grill flames."
+ },
+ {
+  "name": "c17_1",
+  "q": "bbq smoker",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Pitmasters with smokers get around it with ten hours of low smoke and a lot of skill. We didn't have ten hours. We had a crew coming in at six. So we did it the other way around.\" — it must show: bbq smoker."
+ },
+ {
+  "name": "c17_2",
+  "q": "smoker pit",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Pitmasters with smokers get around it with ten hours of low smoke and a lot of skill. We didn't have ten hours. We had a crew coming in at six. So we did it the other way around.\" — it must show: smoker pit."
+ },
+ {
+  "name": "c29_1",
+  "q": "dried chiles",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"You can find them in the Mexican section of almost any grocery store now, in a plastic bag, for about forty cents apiece. Six of them.\" — it must show: dried chiles."
+ },
+ {
+  "name": "c29_2",
+  "q": "guajillo chiles",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"You can find them in the Mexican section of almost any grocery store now, in a plastic bag, for about forty cents apiece. Six of them.\" — it must show: guajillo chiles."
+ },
+ {
+  "name": "c31_1",
+  "q": "toasting chiles",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Now toast them. Dry skillet, medium heat, no oil. Lay the chiles flat. Fifteen to twenty seconds a side, pressing them down with a spatula. You'll smell them right away.\" — it must show: toasting chiles."
+ },
+ {
+  "name": "c31_2",
+  "q": "dried chiles skillet",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Now toast them. Dry skillet, medium heat, no oil. Lay the chiles flat. Fifteen to twenty seconds a side, pressing them down with a spatula. You'll smell them right away.\" — it must show: dried chiles skillet."
+ },
+ {
+  "name": "c38_1",
+  "q": "blender sauce",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Step two. Everything goes in the blender. The soaked chiles, with the soaking water poured off. The orange juice and zest. Garlic. Vinegar. Sugar. Blend until it's smooth.\" — it must show: blender sauce."
+ },
+ {
+  "name": "c38_2",
+  "q": "chili sauce",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Step two. Everything goes in the blender. The soaked chiles, with the soaking water poured off. The orange juice and zest. Garlic. Vinegar. Sugar. Blend until it's smooth.\" — it must show: chili sauce."
+ },
+ {
+  "name": "c48_1",
+  "q": "cowboys campfire",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It was the last night of a roundup. Forty men, and some of their wives had come out from town for the end, so maybe fifty-five people. I'd made ribs in eight Dutch ovens, and I figured that was plenty.\" — it must show: cowboys campfire."
+ },
+ {
+  "name": "c48_2",
+  "q": "ranch dinner",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It was the last night of a roundup. Forty men, and some of their wives had come out from town for the end, so maybe fifty-five people. I'd made ribs in eight Dutch ovens, and I figured that was plenty.\" — it must show: ranch dinner."
+ },
+ {
+  "name": "c49_1",
+  "q": "cowboys eating",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It wasn't. Some of the neighbors' kids, teenagers, had been helping all week, and those boys could eat. The last pot was gone before half the crew had sat down. So I did what Don Ernesto would've done.\" — it must show: cowboys eating."
+ },
+ {
+  "name": "c49_2",
+  "q": "outdoor dinner",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It wasn't. Some of the neighbors' kids, teenagers, had been helping all week, and those boys could eat. The last pot was gone before half the crew had sat down. So I did what Don Ernesto would've done.\" — it must show: outdoor dinner."
+ },
+ {
+  "name": "c56_1",
+  "q": "simmering sauce",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Step five. The glaze. Here's the part I love. Put the Dutch oven on the stove, with all that sauce left in the bottom, and bring it to a boil over medium-high. Boil it eight to ten minutes,\" — it must show: simmering sauce."
+ },
+ {
+  "name": "c56_2",
+  "q": "red sauce boiling",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Step five. The glaze. Here's the part I love. Put the Dutch oven on the stove, with all that sauce left in the bottom, and bring it to a boil over medium-high. Boil it eight to ten minutes,\" — it must show: red sauce boiling."
+ },
+ {
+  "name": "c74_1",
+  "q": "butcher counter",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"At the store. Pork spare ribs run about three and a half dollars a pound right now. Baby back ribs cost more and have less meat, and honestly, for braising, spare ribs are better. More fat,\" — it must show: butcher counter."
+ },
+ {
+  "name": "c74_2",
+  "q": "meat counter",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"At the store. Pork spare ribs run about three and a half dollars a pound right now. Baby back ribs cost more and have less meat, and honestly, for braising, spare ribs are better. More fat,\" — it must show: meat counter."
+ },
+ {
+  "name": "c75_1",
+  "q": "butcher cutting ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"more connective tissue, more flavor. Ask the butcher to cut them into three-bone pieces. If you buy a whole rack, ask them to trim it St. Louis style, which takes off the gristly tip.\" — it must show: butcher cutting ribs."
+ },
+ {
+  "name": "c75_2",
+  "q": "butcher ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"more connective tissue, more flavor. Ask the butcher to cut them into three-bone pieces. If you buy a whole rack, ask them to trim it St. Louis style, which takes off the gristly tip.\" — it must show: butcher ribs."
+ },
+ {
+  "name": "c76_1",
+  "q": "rib tips",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Or leave the tips on and cook them with the rest. Those are the best bites, and they're free.\" — it must show: rib tips."
+ },
+ {
+  "name": "c76_2",
+  "q": "pork ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Or leave the tips on and cook them with the rest. Those are the best bites, and they're free.\" — it must show: pork ribs."
+ },
+ {
+  "name": "c81_1",
+  "q": "pork tacos",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"and heat it until it's sizzling and a little crispy on the edges. Warm some corn tortillas. Meat in the tortillas, chopped raw onion, a little cilantro, a squeeze of lime. That's lunch.\" — it must show: pork tacos."
+ },
+ {
+  "name": "c81_2",
+  "q": "corn tortillas",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"and heat it until it's sizzling and a little crispy on the edges. Warm some corn tortillas. Meat in the tortillas, chopped raw onion, a little cilantro, a squeeze of lime. That's lunch.\" — it must show: corn tortillas."
+ },
+ {
+  "name": "c82_1",
+  "q": "cowboy fence",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"On the ranch we'd make those for the men who had to ride out to fix fence. They'd eat them cold in the saddle at noon and say they were better than the night before.\" — it must show: cowboy fence."
+ },
+ {
+  "name": "c82_2",
+  "q": "cowboy riding",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"On the ranch we'd make those for the men who had to ride out to fix fence. They'd eat them cold in the saddle at noon and say they were better than the night before.\" — it must show: cowboy riding."
+ },
+ {
+  "name": "c84_1",
+  "q": "slicing red onion",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Slice one red onion as thin as you can. Put it in a jar. Squeeze in the juice of two limes, or use the juice of the orange you zested, plus two tablespoons of vinegar. A big pinch of salt, a pinch of sugar.\" — it must show: slicing red onion."
+ },
+ {
+  "name": "c84_2",
+  "q": "pickled onions",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Slice one red onion as thin as you can. Put it in a jar. Squeeze in the juice of two limes, or use the juice of the orange you zested, plus two tablespoons of vinegar. A big pinch of salt, a pinch of sugar.\" — it must show: pickled onions."
+ },
+ {
+  "name": "c90_1",
+  "q": "beans tortillas",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"What else goes on the plate? The beans from last time, of course. A stack of warm tortillas. And if you want something green, a pile of fried cabbage with bacon. I'll show you that one in a few weeks.\" — it must show: beans tortillas."
+ },
+ {
+  "name": "c90_2",
+  "q": "mexican dinner",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"What else goes on the plate? The beans from last time, of course. A stack of warm tortillas. And if you want something green, a pile of fried cabbage with bacon. I'll show you that one in a few weeks.\" — it must show: mexican dinner."
+ },
+ {
+  "name": "c94_1",
+  "q": "bbq ribs plate",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It feeds five people with beans and tortillas, so call it three dollars and ninety cents a plate. Try getting a plate of ribs anywhere for three-ninety.\" — it must show: bbq ribs plate."
+ },
+ {
+  "name": "c94_2",
+  "q": "glazed ribs",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"It feeds five people with beans and tortillas, so call it three dollars and ninety cents a plate. Try getting a plate of ribs anywhere for three-ninety.\" — it must show: glazed ribs."
+ },
+ {
+  "name": "c95_1",
+  "q": "roasting pan",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"For a crowd. Eight pounds of ribs, two Dutch ovens, or one big roasting pan covered tight with foil, two layers. Double the sauce. Add about twenty minutes to the oven time.\" — it must show: roasting pan."
+ },
+ {
+  "name": "c95_2",
+  "q": "aluminum foil pan",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"For a crowd. Eight pounds of ribs, two Dutch ovens, or one big roasting pan covered tight with foil, two layers. Double the sauce. Add about twenty minutes to the oven time.\" — it must show: aluminum foil pan."
+ },
+ {
+  "name": "c97_1",
+  "q": "dutch oven coals",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"And outside, on the fire. Dutch oven on a small bed of coals, more coals on the lid. You want gentle heat from both sides, about three hundred.\" — it must show: dutch oven coals."
+ },
+ {
+  "name": "c97_2",
+  "q": "campfire dutch oven",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"And outside, on the fire. Dutch oven on a small bed of coals, more coals on the lid. You want gentle heat from both sides, about three hundred.\" — it must show: campfire dutch oven."
+ },
+ {
+  "name": "c98_1",
+  "q": "campfire coals",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"That's maybe eight coals under and fifteen on top for a twelve-inch pot, but a fire isn't an oven, so you check it every thirty minutes. At the end, instead of the broiler,\" — it must show: campfire coals."
+ },
+ {
+  "name": "c98_2",
+  "q": "charcoal coals",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"That's maybe eight coals under and fifteen on top for a twelve-inch pot, but a fire isn't an oven, so you check it every thirty minutes. At the end, instead of the broiler,\" — it must show: charcoal coals."
+ },
+ {
+  "name": "c99_1",
+  "q": "ribs campfire",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"you lay the glazed ribs right on a grate over hot coals for a minute or two a side. That's the only time these ever see a fire. And it's at the very end, for the crust.\" — it must show: ribs campfire."
+ },
+ {
+  "name": "c99_2",
+  "q": "grilling ribs coals",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"you lay the glazed ribs right on a grate over hot coals for a minute or two a side. That's the only time these ever see a fire. And it's at the very end, for the crust.\" — it must show: grilling ribs coals."
+ },
+ {
+  "name": "c100_1",
+  "q": "slow cooker",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"A couple of questions. Can I use a slow cooker? Yes. Low, six to seven hours. Same sauce. Then reduce the sauce on the stove and broil them the same way. You'll get the same tenderness.\" — it must show: slow cooker."
+ },
+ {
+  "name": "c100_2",
+  "q": "crock pot",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"A couple of questions. Can I use a slow cooker? Yes. Low, six to seven hours. Same sauce. Then reduce the sauce on the stove and broil them the same way. You'll get the same tenderness.\" — it must show: crock pot."
+ },
+ {
+  "name": "c105_1",
+  "q": "family barbecue",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Let me tell you why we never put raw ribs on a grill. The Fourth of July, nineteen ninety. The boss decided to have a barbecue for the crew and their families. Sixty people.\" — it must show: family barbecue."
+ },
+ {
+  "name": "c105_2",
+  "q": "fourth july",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"Let me tell you why we never put raw ribs on a grill. The Fourth of July, nineteen ninety. The boss decided to have a barbecue for the crew and their families. Sixty people.\" — it must show: fourth july."
+ },
+ {
+  "name": "c106_1",
+  "q": "new grill",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"He bought a big shiny grill, and he wanted to cook the ribs himself. I told him, let me braise them first. He said, \"Claudio, ribs go on a grill.\" So he put them on the grill.\" — it must show: new grill."
+ },
+ {
+  "name": "c106_2",
+  "q": "gas grill",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"He bought a big shiny grill, and he wanted to cook the ribs himself. I told him, let me braise them first. He said, \"Claudio, ribs go on a grill.\" So he put them on the grill.\" — it must show: gas grill."
+ },
+ {
+  "name": "c107_1",
+  "q": "grill fire",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"The fire was too hot, the sauce burned black, and the middle was tough as rope. Kids were chewing on them like dog bones. About halfway through, he came into the kitchen and asked me if I had anything else.\" — it must show: grill fire."
+ },
+ {
+  "name": "c107_2",
+  "q": "burnt grill",
+  "scene": "Real documentary footage for a ranch cook's video about pork ribs, while he says: \"The fire was too hot, the sauce burned black, and the middle was tough as rope. Kids were chewing on them like dog bones. About halfway through, he came into the kitchen and asked me if I had anything else.\" — it must show: burnt grill."
+ }
+]
