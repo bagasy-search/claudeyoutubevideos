@@ -1,0 +1,1710 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 3.86,
+"k": "",
+"c": "Apertura",
+"props": {
+"thumb": "img/ckgreenbeans/ckgreenbeans_thumb.jpg",
+"clip": "broll/ckgreenbeans/ckgreenbeans_apertura.mp4"
+}
+},
+{
+"a": 3.86,
+"b": 11.027,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 11.027,
+"b": 18.73,
+"k": "s002_n_bacon_sizzle",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 18.73,
+"b": 25.743,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 25.743,
+"b": 33.073,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckgreenbeans/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"Most",
+43.96
+],
+[
+"People",
+44.01
+],
+[
+"Are",
+60.95
+],
+[
+"Cooking",
+61.0
+],
+[
+"Pot",
+61.05
+],
+[
+"Roast",
+61.1
+],
+[
+"Wrong",
+61.15
+]
+],
+"k": "b1"
+}
+},
+{
+"a": 33.073,
+"b": 42.95,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 42.95,
+"b": 49.74,
+"k": "s006_l_pot_stove",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 49.74,
+"b": 57.48,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_pot_film",
+"vid": true,
+"cap": "1945 · a maid and a hostess in a dining room kitchen",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 57.48,
+"b": 64.58,
+"k": "s008_n_canned_beans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 64.58,
+"b": 72.007,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 72.007,
+"b": 82.093,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"items": [
+{
+"t": 72.5,
+"txt": "Cook the bacon fat first"
+},
+{
+"t": 76.0,
+"txt": "Let the beans drink the broth"
+},
+{
+"t": 80.0,
+"txt": "Taste one before you serve"
+}
+],
+"k": "b2"
+}
+},
+{
+"a": 82.093,
+"b": 88.973,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 88.973,
+"b": 97.013,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_01",
+"vid": false,
+"cap": "1946 · a woman cooking at a wood stove in a plain kitchen",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 97.013,
+"b": 105.873,
+"k": "s013_l_basement_pass",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 105.873,
+"b": 113.873,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_06",
+"vid": false,
+"cap": "1946 · a girl at the range in a farm kitchen",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 113.873,
+"b": 122.433,
+"k": "s015_l_church_stairs",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 122.433,
+"b": 128.947,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_cook_girls",
+"vid": true,
+"cap": "1951 · a college cafeteria kitchen, women serving food from steel pans",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 128.947,
+"b": 136.913,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_08",
+"vid": false,
+"cap": "1946 · a woman at the kitchen sink",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 136.913,
+"b": 145.1,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_04",
+"vid": false,
+"cap": "1942 · a woman cooking at a stove in a small kitchen",
+"credit": "Wikimedia Commons · OWI / US government · public domain"
+}
+},
+{
+"a": 145.1,
+"b": 152.253,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 152.253,
+"b": 162.187,
+"k": "s020_l_taste_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 162.187,
+"b": 170.013,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_pot_film",
+"vid": true,
+"cap": "1945 · a maid and a hostess in a dining room kitchen",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 170.013,
+"b": 179.967,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE BEANS AND THE BACON",
+"items": [
+{
+"t": 170.5,
+"txt": "2 lb fresh green beans, trimmed"
+},
+{
+"t": 177.8,
+"txt": "6 slices bacon, chopped"
+}
+],
+"k": "b3"
+}
+},
+{
+"a": 179.967,
+"b": 189.733,
+"k": "s023_n_onion_garlic",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 189.733,
+"b": 202.793,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE SEASONINGS",
+"items": [
+{
+"t": 190.5,
+"txt": "1 Tbsp brown sugar"
+},
+{
+"t": 193.5,
+"txt": "1 cup chicken broth"
+},
+{
+"t": 197.5,
+"txt": "1 tsp salt, less if canned"
+},
+{
+"t": 205.5,
+"txt": "1/2 tsp pepper"
+},
+{
+"t": 207.5,
+"txt": "1 tsp cider vinegar"
+},
+{
+"t": 211.2,
+"txt": "1 Tbsp butter"
+}
+],
+"k": "b4"
+}
+},
+{
+"a": 202.793,
+"b": 210.827,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 210.827,
+"b": 220.483,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_beans_film",
+"vid": true,
+"cap": "1951 · a kitchen counter with a stand mixer and a woman cooking",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 220.483,
+"b": 229.013,
+"k": "s027_l_bacon_lift",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 229.013,
+"b": 237.373,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_film",
+"vid": true,
+"cap": "1945 · a dinner table with platters of food",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 237.373,
+"b": 246.02,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "STEP ONE",
+"items": [
+{
+"t": 238.0,
+"txt": "Cook slowly until crisp"
+},
+{
+"t": 242.5,
+"txt": "Lift the bacon out"
+},
+{
+"t": 244.4,
+"txt": "Leave the fat in the pan"
+}
+],
+"k": "b5"
+}
+},
+{
+"a": 246.02,
+"b": 254.487,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 254.487,
+"b": 262.033,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_06",
+"vid": false,
+"cap": "1946 · a girl at the range in a farm kitchen",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 262.033,
+"b": 270.593,
+"k": "s032_l_stir_garlic",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 270.593,
+"b": 279.573,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 279.573,
+"b": 287.557,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_beans_film",
+"vid": true,
+"cap": "1951 · a kitchen counter with a stand mixer and a woman cooking",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 287.557,
+"b": 296.144,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 296.144,
+"b": 305.807,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "STEP FOUR",
+"items": [
+{
+"t": 297.5,
+"txt": "Brown sugar"
+},
+{
+"t": 299.7,
+"txt": "Chicken broth"
+},
+{
+"t": 301.0,
+"txt": "Salt and pepper"
+}
+],
+"k": "b6"
+}
+},
+{
+"a": 305.807,
+"b": 313.34,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_cook_girls",
+"vid": true,
+"cap": "1951 · a college cafeteria kitchen, women serving food from steel pans",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 313.34,
+"b": 320.897,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 320.897,
+"b": 329.587,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 20,
+"unit": "MINUTES",
+"txt": "covered, medium-low",
+"k": "b1"
+}
+},
+{
+"a": 329.587,
+"b": 337.847,
+"k": "s040_l_lid_taste",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 337.847,
+"b": 345.75,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_sink_film",
+"vid": true,
+"cap": "1957 · a woman at a kitchen sink by the window",
+"credit": "Power to Serve (1957) · Public domain"
+}
+},
+{
+"a": 345.75,
+"b": 351.587,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE LAST FIVE",
+"items": [
+{
+"t": 345.9,
+"txt": "Lid off for the last five minutes"
+},
+{
+"t": 350.1,
+"txt": "Taste one, honey"
+}
+],
+"k": "b2"
+}
+},
+{
+"a": 351.587,
+"b": 362.027,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 362.027,
+"b": 370.053,
+"k": "s044_n_bacon_crisp_top",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 370.053,
+"b": 378.053,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 378.053,
+"b": 388.08,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Let the beans cook in broth and bacon fat,",
+"not a pot full of water."
+],
+"sig": "Loretta's trick",
+"k": "b3",
+"size": 84
+}
+},
+{
+"a": 388.08,
+"b": 396.877,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_sink_film",
+"vid": true,
+"cap": "1957 · a woman at a kitchen sink by the window",
+"credit": "Power to Serve (1957) · Public domain"
+}
+},
+{
+"a": 396.877,
+"b": 405.5,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 405.5,
+"b": 416.353,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page48",
+"tab": "PAGE 48",
+"t": 411.0,
+"hl": 40
+}
+],
+"k": "b4"
+}
+},
+{
+"a": 416.353,
+"b": 428.284,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 428.284,
+"b": 436.607,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_skillet_film",
+"vid": true,
+"cap": "1951 · a couple sharing a meal at a kitchen table",
+"credit": "Marriage Is a Partnership, Coronet (1951) · Public domain"
+}
+},
+{
+"a": 436.607,
+"b": 445.493,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 445.493,
+"b": 455.1,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "ON THE PAGE",
+"items": [
+{
+"t": 446.0,
+"txt": "Ingredients come first"
+},
+{
+"t": 452.5,
+"txt": "Numbered steps, one at a time"
+}
+],
+"k": "b5"
+}
+},
+{
+"a": 455.1,
+"b": 461.66,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 461.66,
+"b": 468.163,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_05",
+"vid": false,
+"cap": "1938 · a young woman cooking at a wood-burning stove",
+"credit": "Wikimedia Commons · FSA · public domain"
+}
+},
+{
+"a": 468.163,
+"b": 476.42,
+"k": "s056_l_roaster",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 476.42,
+"b": 483.907,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 30,
+"unit": "PEOPLE",
+"txt": "eight pounds of beans, low heat",
+"k": "b6"
+}
+},
+{
+"a": 483.907,
+"b": 491.85,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_film",
+"vid": true,
+"cap": "1951 · a woman at a kitchen counter",
+"credit": "Marriage Is a Partnership, Coronet (1951) · Public domain"
+}
+},
+{
+"a": 491.85,
+"b": 503.83,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE CROWD CHART",
+"items": [
+{
+"t": 492.5,
+"txt": "25 people: 5 lb of beans"
+},
+{
+"t": 494.5,
+"txt": "50 people: 10 lb"
+},
+{
+"t": 496.5,
+"txt": "100 people: 20 lb"
+}
+],
+"k": "b1"
+}
+},
+{
+"a": 503.83,
+"b": 512.043,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 512.043,
+"b": 519.38,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 140,
+"unit": "DEGREES OR HOTTER",
+"txt": "hot food stays hot",
+"k": "b2"
+}
+},
+{
+"a": 519.38,
+"b": 527.473,
+"k": "s062_n_thermometer",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 527.473,
+"b": 537.6,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_02",
+"vid": false,
+"cap": "1946 · a family eating dinner at their kitchen table",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 537.6,
+"b": 545.473,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 545.473,
+"b": 553.533,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_skillet_film",
+"vid": true,
+"cap": "1951 · a couple sharing a meal at a kitchen table",
+"credit": "Marriage Is a Partnership, Coronet (1951) · Public domain"
+}
+},
+{
+"a": 553.533,
+"b": 561.573,
+"k": "s066_l_one_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 561.573,
+"b": 569.547,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 569.547,
+"b": 577.387,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Smoked turkey wing",
+"in place of the bacon."
+],
+"sig": "The book's swap",
+"k": "b3",
+"size": 84
+}
+},
+{
+"a": 577.387,
+"b": 585.387,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_03",
+"vid": false,
+"cap": "1946 · children eating at a round table while a woman stands at the sink",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 585.387,
+"b": 591.404,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 591.404,
+"b": 598.893,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 4,
+"unit": "DAYS IN THE FRIDGE",
+"txt": "in a covered container",
+"k": "b4"
+}
+},
+{
+"a": 598.893,
+"b": 607.647,
+"k": "s072_n_container_fridge",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 607.647,
+"b": 616.94,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 616.94,
+"b": 626.14,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"txt": "Squeaky raw beans: the pan was not covered",
+"k": "b5"
+}
+},
+{
+"a": 626.14,
+"b": 634.667,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_04",
+"vid": false,
+"cap": "1942 · a woman cooking at a stove in a small kitchen",
+"credit": "Wikimedia Commons · OWI / US government · public domain"
+}
+},
+{
+"a": 634.667,
+"b": 643.23,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"txt": "Flat taste: no vinegar",
+"k": "b6"
+}
+},
+{
+"a": 643.23,
+"b": 650.28,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 650.28,
+"b": 657.59,
+"k": "s078_n_vinegar_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 657.59,
+"b": 666.06,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"txt": "Soggy bacon: cooked with the beans",
+"k": "b1"
+}
+},
+{
+"a": 666.06,
+"b": 673.87,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 673.87,
+"b": 682.02,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_05",
+"vid": false,
+"cap": "1938 · a young woman cooking at a wood-burning stove",
+"credit": "Wikimedia Commons · FSA · public domain"
+}
+},
+{
+"a": 682.02,
+"b": 690.04,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_07",
+"vid": false,
+"cap": "1940 · a farmer with two horses in a bean field",
+"credit": "Wikimedia Commons · Library of Congress · public domain"
+}
+},
+{
+"a": 690.04,
+"b": 697.947,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 697.947,
+"b": 709.007,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_02",
+"vid": false,
+"cap": "1946 · a family eating dinner at their kitchen table",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 709.007,
+"b": 720.947,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/ckgreenbeans/qr.jpg",
+"t": 710.0
+}
+},
+{
+"a": 720.947,
+"b": 729.327,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 729.327,
+"b": 737.44,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_film",
+"vid": true,
+"cap": "1945 · a dinner table with platters of food",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 737.44,
+"b": 745.513,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 745.513,
+"b": 751.973,
+"k": "s089_l_ear_listen",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 751.973,
+"b": 757.233,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 757.233,
+"b": 765.82,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The first spoon is only for you.",
+"The second one is for the people you're cooking for."
+],
+"sig": "Edna Pruitt",
+"k": "b2",
+"size": 80
+}
+},
+{
+"a": 765.82,
+"b": 775.167,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 775.167,
+"b": 781.747,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_07",
+"vid": false,
+"cap": "1940 · a farmer with two horses in a bean field",
+"credit": "Wikimedia Commons · Library of Congress · public domain"
+}
+},
+{
+"a": 781.747,
+"b": 789.283,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 789.283,
+"b": 807.073,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE WHOLE RECIPE",
+"items": [
+{
+"t": 789.6,
+"txt": "Bacon crisp, lift it out"
+},
+{
+"t": 798.4,
+"txt": "Onion golden, garlic one minute"
+},
+{
+"t": 804.0,
+"txt": "Toss in the beans"
+},
+{
+"t": 806.5,
+"txt": "Brown sugar, broth, salt, pepper"
+},
+{
+"t": 810.4,
+"txt": "Cover 15 to 20 min, uncover 5"
+},
+{
+"t": 817.1,
+"txt": "Vinegar, butter, bacon"
+}
+],
+"k": "b3"
+}
+},
+{
+"a": 807.073,
+"b": 814.677,
+"k": "s096_n_finished_beans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 814.677,
+"b": 825.443,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_01",
+"vid": false,
+"cap": "1946 · a woman cooking at a wood stove in a plain kitchen",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 825.443,
+"b": 834.513,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckgreenbeans/th_next.jpg",
+"tag": "COMING UP",
+"words": [
+[
+"Make-Ahead",
+836.33
+],
+[
+"Church",
+836.38
+],
+[
+"Mashed",
+836.83
+],
+[
+"Potatoes",
+837.11
+]
+],
+"k": "b4"
+}
+},
+{
+"a": 834.513,
+"b": 842.543,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 842.543,
+"b": 850.26,
+"k": "s100_n_mash_bowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 850.26,
+"b": 858.56,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckgreenbeans/th_other.jpg",
+"tag": "FROM MY OTHER CHANNEL",
+"words": [
+[
+"15",
+857.2
+],
+[
+"Tricks",
+858.06
+],
+[
+"That",
+858.56
+],
+[
+"Make",
+859.04
+],
+[
+"My",
+855.22
+],
+[
+"Little",
+859.46
+],
+[
+"House",
+859.64
+],
+[
+"Smell",
+860.0
+],
+[
+"Like",
+860.24
+],
+[
+"Sunday",
+860.5
+],
+[
+"Dinner",
+860.86
+]
+],
+"k": "b5"
+}
+},
+{
+"a": 858.56,
+"b": 865.46,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 865.46,
+"b": 872.534,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_film",
+"vid": true,
+"cap": "1951 · a woman at a kitchen counter",
+"credit": "Marriage Is a Partnership, Coronet (1951) · Public domain"
+}
+},
+{
+"a": 872.534,
+"b": 881.527,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 50,
+"unit": "RECIPES",
+"txt": "one page each, with the trick in every one",
+"k": "b6"
+}
+},
+{
+"a": 881.527,
+"b": 889.407,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 889.407,
+"b": 900.746,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_06",
+"vid": false,
+"cap": "1946 · a girl at the range in a farm kitchen",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 900.746,
+"b": 911.9,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "What does your family ask for at Thanksgiving?",
+"opts": [
+{
+"txt": "Green beans",
+"t": 905.0
+},
+{
+"txt": "Sweet potatoes",
+"t": 907.5
+},
+{
+"txt": "The pie",
+"t": 910.5
+}
+],
+"k": "b1"
+}
+},
+{
+"a": 911.9,
+"b": 923.033,
+"k": "s108_l_comment_look",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 923.033,
+"b": 930.993,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 930.993,
+"b": 938.933,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_03",
+"vid": false,
+"cap": "1946 · children eating at a round table while a woman stands at the sink",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+},
+{
+"a": 938.933,
+"b": 946.967,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 946.967,
+"b": 960.1,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_photo_08",
+"vid": false,
+"cap": "1946 · a woman at the kitchen sink",
+"credit": "Wikimedia Commons · NARA · public domain"
+}
+}
+],
+"sfx": [
+[
+25.74,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+72.01,
+"design/paper_slide",
+0.25
+],
+[
+170.01,
+"design/paper_slide",
+0.25
+],
+[
+189.73,
+"design/paper_slide",
+0.25
+],
+[
+237.37,
+"design/paper_slide",
+0.25
+],
+[
+296.14,
+"design/paper_slide",
+0.25
+],
+[
+345.75,
+"design/paper_slide",
+0.25
+],
+[
+378.05,
+"design/pen_write",
+0.25
+],
+[
+405.5,
+"design/page_turn_big",
+0.35
+],
+[
+445.49,
+"design/paper_slide",
+0.25
+],
+[
+491.85,
+"design/paper_slide",
+0.25
+],
+[
+569.55,
+"design/pen_write",
+0.25
+],
+[
+709.01,
+"design/click_slide",
+0.25
+],
+[
+757.23,
+"design/pen_write",
+0.25
+],
+[
+789.28,
+"design/paper_slide",
+0.25
+],
+[
+825.44,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+850.26,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+900.75,
+"design/click_slide",
+0.22
+]
+],
+"end": 960.1
+}
