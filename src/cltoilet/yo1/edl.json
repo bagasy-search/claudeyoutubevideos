@@ -1,0 +1,9194 @@
+{
+"shots": [
+{
+"a": 61.44,
+"b": 62.82,
+"vid": true,
+"k": "cltoilet/p034",
+"ofs": 0.67,
+"z": [
+1.2,
+1.235
+],
+"o": [
+42,
+48
+],
+"desc": "A close-up of a door hinge, as mentioned in the narration."
+},
+{
+"a": 62.82,
+"b": 63.8,
+"vid": true,
+"k": "cltoilet/p034",
+"ofs": 2.05,
+"z": [
+1.606,
+1.636
+],
+"o": [
+42,
+48
+],
+"desc": "A close-up of a door hinge, as mentioned in the narration.",
+"dx": 0,
+"punch": true
+},
+{
+"a": 63.8,
+"b": 64.94,
+"k": "p035",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse "
+},
+{
+"a": 64.94,
+"b": 66.6,
+"k": "p038",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "Loretta's hand holds a plain glass spray bottle and presses the nozzle, sending "
+},
+{
+"a": 66.6,
+"b": 67.6,
+"k": "p039",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "The small farmhouse bathroom in daylight, showing the white porcelain toilet, pe"
+},
+{
+"a": 67.6,
+"b": 69.02,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 69.02,
+"b": 70.6,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.03
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 70.6,
+"b": 72.0,
+"k": "p040",
+"z": [
+1.04,
+1.008
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "The elderly narrator with white hair, glasses and a lilac blouse leaning over th"
+},
+{
+"a": 72.0,
+"b": 73.22,
+"k": "p040",
+"z": [
+1.31,
+1.34
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "The elderly narrator with white hair, glasses and a lilac blouse leaning over th",
+"punch": true
+},
+{
+"a": 73.22,
+"b": 74.58,
+"vid": true,
+"k": "cltoilet/p041",
+"ofs": 1.37,
+"z": [
+1.12,
+1.148
+],
+"o": [
+58,
+32
+],
+"desc": "Loretta's hands hold a plain, unlabeled heavy plastic bottle of cleaner. She set"
+},
+{
+"a": 74.58,
+"b": 76.16,
+"vid": true,
+"k": "cltoilet/p041",
+"ofs": 2.73,
+"z": [
+1.492,
+1.522
+],
+"o": [
+58,
+32
+],
+"desc": "Loretta's hands hold a plain, unlabeled heavy plastic bottle of cleaner. She set",
+"dx": 0,
+"punch": true
+},
+{
+"a": 76.16,
+"b": 78.14,
+"vid": true,
+"k": "cltoilet/p043",
+"ofs": 0.37,
+"z": [
+1.42,
+1.48
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta straightens up from scrubbing, holding the rag, her face showing frustra"
+},
+{
+"a": 78.14,
+"b": 79.48,
+"vid": true,
+"k": "cltoilet/p045",
+"ofs": 0.9,
+"z": [
+1.12,
+1.07
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands facing the toilet, her expression soft and forgiving. She places "
+},
+{
+"a": 79.48,
+"b": 80.5,
+"k": "p046",
+"z": [
+1.22,
+1.16
+],
+"o": [
+30,
+70
+],
+"dx": 0,
+"desc": "A wide shot of the bathroom highlighting the five specific spots on the outside."
+},
+{
+"a": 80.5,
+"b": 82.14,
+"vid": true,
+"k": "cltoilet/p048",
+"ofs": 1.02,
+"z": [
+1.42,
+1.52
+],
+"o": [
+50,
+40
+],
+"desc": "Loretta's hands point to the toilet bowl interior, then move to the outside base"
+},
+{
+"a": 82.14,
+"b": 83.98,
+"k": "p047",
+"z": [
+1.02,
+1.089
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Wide view of the bathroom, emphasizing the toilet and its surroundings. The five"
+},
+{
+"a": 83.98,
+"b": 85.32,
+"k": "p047",
+"z": [
+1.416,
+1.446
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Wide view of the bathroom, emphasizing the toilet and its surroundings. The five",
+"punch": true
+},
+{
+"a": 85.32,
+"b": 86.32,
+"k": "p049",
+"z": [
+1.22,
+1.3
+],
+"o": [
+30,
+70
+],
+"dx": 40,
+"desc": "A shot showing the narrator cleaning the wrong half of the bathroom."
+},
+{
+"a": 86.32,
+"b": 88.0,
+"vid": true,
+"k": "cltoilet/p051",
+"ofs": 1.08,
+"z": [
+1.3,
+1.354
+],
+"o": [
+58,
+32
+],
+"desc": "A close-up of page 9 of the book showing the five mistakes."
+},
+{
+"a": 88.0,
+"b": 89.46,
+"vid": true,
+"k": "cltoilet/p051",
+"ofs": 2.76,
+"z": [
+1.597,
+1.627
+],
+"o": [
+58,
+32
+],
+"desc": "A close-up of page 9 of the book showing the five mistakes.",
+"dx": 0,
+"punch": true
+},
+{
+"a": 89.46,
+"b": 91.2,
+"k": "p050",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "In a bright farmhouse bathroom, Loretta stands beside a white pedestal sink, her"
+},
+{
+"a": 91.2,
+"b": 100.34,
+"k": "",
+"c": "Pins",
+"props": {
+"k": "p193",
+"head": "5 spots on the outside",
+"pins": [
+{
+"x": 35,
+"y": 86,
+"t": 92.2,
+"txt": "BRUSH"
+},
+{
+"x": 48,
+"y": 90,
+"t": 92.46,
+"txt": "BASE"
+},
+{
+"x": 46,
+"y": 58,
+"t": 93.52,
+"txt": "HINGE"
+},
+{
+"x": 40,
+"y": 48,
+"t": 94.5,
+"txt": "HANDLE"
+},
+{
+"x": 52,
+"y": 70,
+"t": 94.98,
+"txt": "WATERLINE"
+}
+],
+"wrong": 97.32
+},
+"beats": [
+92.2,
+92.46,
+93.52,
+94.5,
+94.98,
+97.58,
+98.92
+]
+},
+{
+"a": 100.34,
+"b": 101.8,
+"k": "p052",
+"z": [
+1.1,
+1.2200000000000002
+],
+"o": [
+30,
+70
+],
+"dx": 0,
+"desc": "A shot showing the narrator pointing to the first mistake in the book.",
+"tin": "whip"
+},
+{
+"a": 101.8,
+"b": 102.93,
+"k": "p053",
+"z": [
+1.02,
+1.081
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Medium shot of Loretta from the side, holding a toilet brush in one hand. She st"
+},
+{
+"a": 102.93,
+"b": 104.01,
+"k": "p053",
+"z": [
+1.406,
+1.436
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Medium shot of Loretta from the side, holding a toilet brush in one hand. She st",
+"punch": true
+},
+{
+"a": 104.01,
+"b": 105.63,
+"k": "p060",
+"z": [
+1.02,
+1.078
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse "
+},
+{
+"a": 105.63,
+"b": 107.34,
+"k": "p060",
+"z": [
+1.402,
+1.432
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse ",
+"punch": true
+},
+{
+"a": 107.34,
+"b": 108.18,
+"k": "p061",
+"z": [
+1.1,
+1.076
+],
+"o": [
+30,
+40
+],
+"dx": 40,
+"desc": "The narrator looking directly at the camera with a confident expression, holding"
+},
+{
+"a": 108.18,
+"b": 109.4,
+"k": "p061",
+"z": [
+1.398,
+1.428
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "The narrator looking directly at the camera with a confident expression, holding",
+"punch": true
+},
+{
+"a": 109.4,
+"b": 110.82,
+"k": "p063",
+"z": [
+1.1,
+1.069
+],
+"o": [
+70,
+70
+],
+"dx": 40,
+"desc": "Close-up of the elderly narrator's hand resting on the closed white porcelain to"
+},
+{
+"a": 110.82,
+"b": 112.18,
+"k": "p063",
+"z": [
+1.39,
+1.42
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand resting on the closed white porcelain to",
+"punch": true
+},
+{
+"a": 112.18,
+"b": 114.36,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 114.36,
+"b": 116.7,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 116.7,
+"b": 118.0,
+"k": "",
+"c": "PageUp",
+"props": {
+"k": "p056",
+"pages": [
+{
+"src": "img/cltoilet/page10.jpg",
+"tab": "PAGE 10",
+"t": 116.75,
+"hl": 40
+}
+],
+"caption": {
+"txt": "the ring at the waterline",
+"t": 117.2
+}
+}
+},
+{
+"a": 118.0,
+"b": 120.41,
+"k": "",
+"c": "Tease",
+"props": {
+"k": "p346",
+"txt": "the $3 fix \u00b7 at the end"
+}
+},
+{
+"a": 120.41,
+"b": 123.75,
+"k": "",
+"c": "PageUp",
+"props": {
+"k": "p057",
+"pages": [
+{
+"src": "img/cltoilet/page4.jpg",
+"tab": "PAGE 4",
+"t": 120.45,
+"hl": 30
+}
+]
+}
+},
+{
+"a": 123.75,
+"b": 124.51,
+"k": "p064",
+"z": [
+1.1,
+1.2200000000000002
+],
+"o": [
+45,
+70
+],
+"dx": 0,
+"desc": "A wide shot of the elderly woman looking frustrated in the bathroom on a hot sum",
+"tin": "whip"
+},
+{
+"a": 124.51,
+"b": 126.27,
+"k": "p065",
+"z": [
+1.02,
+1.063
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "Loretta's wrinkled hands hold a white toilet brush and scrub the inside of the w"
+},
+{
+"a": 126.27,
+"b": 127.79,
+"k": "p065",
+"z": [
+1.382,
+1.412
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hands hold a white toilet brush and scrub the inside of the w",
+"punch": true
+},
+{
+"a": 127.79,
+"b": 129.31,
+"k": "p066",
+"z": [
+1.22,
+1.3
+],
+"o": [
+70,
+55
+],
+"dx": -40,
+"desc": "Close-up of Loretta's wrinkled hands wringing out a white rag over the white por",
+"tin": "whip"
+},
+{
+"a": 129.31,
+"b": 130.61,
+"k": "p067",
+"z": [
+1.02,
+1.1
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Loretta stands in her small farmhouse bathroom, seen from behind, holding a mop "
+},
+{
+"a": 130.61,
+"b": 131.79,
+"k": "p068",
+"z": [
+1.02,
+1.1
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "A shot of Edna Pruitt entering the bathroom and sniffing the air."
+},
+{
+"a": 131.79,
+"b": 134.34,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 134.34,
+"b": 137.1,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 137.1,
+"b": 141.08,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "p062",
+"caption": "Zion United Methodist",
+"date": "hot summer Sundays",
+"t": 137.6
+},
+"beats": [
+139.28
+]
+},
+{
+"a": 141.08,
+"b": 142.24,
+"k": "p070",
+"z": [
+1.02,
+1.084
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "Loretta's wrinkled hands grip the handle of a white toilet brush and pull it str",
+"tin": "whip"
+},
+{
+"a": 142.24,
+"b": 143.26,
+"k": "p070",
+"z": [
+1.409,
+1.439
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hands grip the handle of a white toilet brush and pull it str",
+"punch": true
+},
+{
+"a": 143.26,
+"b": 145.68,
+"vid": true,
+"k": "cltoilet/p073",
+"ofs": 0.38,
+"z": [
+1.2,
+1.229
+],
+"o": [
+42,
+32
+],
+"desc": "Loretta's wrinkled hands place the wet white toilet brush horizontally on the ed"
+},
+{
+"a": 145.68,
+"b": 148.23,
+"vid": true,
+"k": "cltoilet/p073",
+"ofs": 2.8,
+"z": [
+1.598,
+1.628
+],
+"o": [
+42,
+32
+],
+"desc": "Loretta's wrinkled hands place the wet white toilet brush horizontally on the ed",
+"dx": 0,
+"punch": true
+},
+{
+"a": 148.23,
+"b": 150.65,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 150.65,
+"b": 153.2,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.03
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 153.2,
+"b": 154.64,
+"vid": true,
+"k": "cltoilet/p074",
+"ofs": 0.78,
+"z": [
+1.12,
+1.095
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands in her farmhouse bathroom, facing the camera with a satisfied smi"
+},
+{
+"a": 154.64,
+"b": 156.1,
+"vid": true,
+"k": "cltoilet/p074",
+"ofs": 2.22,
+"z": [
+1.424,
+1.454
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands in her farmhouse bathroom, facing the camera with a satisfied smi",
+"dx": 0,
+"punch": true
+},
+{
+"a": 156.1,
+"b": 157.44,
+"k": "p072",
+"z": [
+1.04,
+1.12
+],
+"o": [
+70,
+70
+],
+"dx": 40,
+"desc": "Close-up of Loretta's wrinkled hand holding the wet white toilet brush over the "
+},
+{
+"a": 157.44,
+"b": 160.76,
+"k": "",
+"c": "Flashlight",
+"props": {
+"k": "p119",
+"on": 158.84,
+"from": [
+30,
+25
+],
+"to": [
+50,
+60
+],
+"words": [
+[
+"festering",
+158.84,
+1060,
+520
+],
+[
+"in the dark",
+159.32,
+1160,
+650
+],
+[
+"like a secret",
+159.88,
+1260,
+780
+]
+]
+}
+},
+{
+"a": 160.76,
+"b": 161.9,
+"vid": true,
+"k": "cltoilet/p075",
+"ofs": 1.03,
+"z": [
+1.2,
+1.177
+],
+"o": [
+58,
+48
+],
+"desc": "In a small old farmhouse bathroom with white square tiles and pale walls, Lorett",
+"tin": "whip"
+},
+{
+"a": 161.9,
+"b": 163.2,
+"vid": true,
+"k": "cltoilet/p075",
+"ofs": 2.17,
+"z": [
+1.53,
+1.56
+],
+"o": [
+58,
+48
+],
+"desc": "In a small old farmhouse bathroom with white square tiles and pale walls, Lorett",
+"dx": 0,
+"punch": true
+},
+{
+"a": 163.2,
+"b": 163.9,
+"vid": true,
+"k": "cltoilet/p077",
+"ofs": 1.28,
+"z": [
+1.42,
+1.3699999999999999
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta, an 81-year-old woman with short curly white hair, wire-rimmed glasses, "
+},
+{
+"a": 163.9,
+"b": 164.96,
+"k": "p078",
+"z": [
+1.1,
+1.2200000000000002
+],
+"o": [
+30,
+55
+],
+"dx": -40,
+"desc": "Close-up of Loretta's wrinkled hands placing a small white card on the edge of a"
+},
+{
+"a": 164.96,
+"b": 168.6,
+"k": "",
+"c": "PageUp",
+"props": {
+"k": "p076",
+"pages": [
+{
+"src": "img/cltoilet/page9.jpg",
+"tab": "PAGE 9",
+"t": 165.3,
+"hl": 26
+}
+]
+}
+},
+{
+"a": 168.6,
+"b": 169.42,
+"vid": true,
+"k": "cltoilet/p079",
+"ofs": 0.28,
+"z": [
+1.2,
+1.26
+],
+"o": [
+50,
+32
+],
+"desc": "Loretta's hands hold an open little book near a white pedestal sink in a bathroo",
+"tin": "whip"
+},
+{
+"a": 169.42,
+"b": 170.72,
+"k": "p080",
+"z": [
+1.1,
+1.04
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "The narrator placing the book on the wooden shelf above the basket of towels."
+},
+{
+"a": 170.72,
+"b": 172.06,
+"k": "p081",
+"z": [
+1.22,
+1.3
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "Close-up of Loretta's wrinkled hands holding a small white card near a white ped"
+},
+{
+"a": 172.06,
+"b": 173.1,
+"vid": true,
+"k": "cltoilet/p082",
+"ofs": 0.94,
+"z": [
+1.2,
+1.26
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta stands at the open cabinet under the bathroom sink, her wrinkled hands r"
+},
+{
+"a": 173.1,
+"b": 174.08,
+"vid": true,
+"k": "cltoilet/p084",
+"ofs": 0.77,
+"z": [
+1.3,
+1.329
+],
+"o": [
+50,
+40
+],
+"desc": "A close-up of the woman pointing to a page in a handwritten notebook titled 'Nev"
+},
+{
+"a": 174.08,
+"b": 175.12,
+"vid": true,
+"k": "cltoilet/p084",
+"ofs": 1.75,
+"z": [
+1.568,
+1.598
+],
+"o": [
+50,
+40
+],
+"desc": "A close-up of the woman pointing to a page in a handwritten notebook titled 'Nev",
+"dx": 0,
+"punch": true
+},
+{
+"a": 175.12,
+"b": 177.68,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 177.68,
+"b": 180.46,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 180.46,
+"b": 182.35,
+"k": "p085",
+"z": [
+1.1,
+1.163
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "Loretta's hand places a single plain spray bottle on the clean white countertop "
+},
+{
+"a": 182.35,
+"b": 184.07,
+"k": "p085",
+"z": [
+1.512,
+1.542
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "Loretta's hand places a single plain spray bottle on the clean white countertop ",
+"punch": true
+},
+{
+"a": 184.07,
+"b": 187.7,
+"k": "",
+"c": "PageUp",
+"props": {
+"k": "p083",
+"pages": [
+{
+"src": "img/cltoilet/page3.jpg",
+"tab": "PAGE 3",
+"t": 184.4,
+"hl": 22
+}
+]
+}
+},
+{
+"a": 187.7,
+"b": 188.77,
+"k": "p086",
+"z": [
+1.02,
+1.08
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "Wide view of the bathroom counter and open cabinet. On the left, a brown bottle ",
+"tin": "whip"
+},
+{
+"a": 188.77,
+"b": 189.85,
+"k": "p086",
+"z": [
+1.404,
+1.434
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Wide view of the bathroom counter and open cabinet. On the left, a brown bottle ",
+"punch": true
+},
+{
+"a": 189.85,
+"b": 190.69,
+"k": "p088",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": -30,
+"desc": "Loretta's hands hold a bottle of bleach and a bottle of lemon-scented cleaner, k"
+},
+{
+"a": 190.69,
+"b": 191.95,
+"vid": true,
+"k": "cltoilet/p090",
+"ofs": 1.03,
+"z": [
+1.2,
+1.233
+],
+"o": [
+58,
+40
+],
+"desc": "The woman holding a generic brown bottle and a spray bottle, with the labels fac"
+},
+{
+"a": 191.95,
+"b": 193.01,
+"vid": true,
+"k": "cltoilet/p090",
+"ofs": 2.29,
+"z": [
+1.602,
+1.632
+],
+"o": [
+58,
+40
+],
+"desc": "The woman holding a generic brown bottle and a spray bottle, with the labels fac",
+"dx": 0,
+"punch": true
+},
+{
+"a": 193.01,
+"b": 194.17,
+"k": "p089",
+"z": [
+1.22,
+1.3399999999999999
+],
+"o": [
+55,
+40
+],
+"dx": 40,
+"desc": "Close-up of Loretta's wrinkled hands placing a bottle of ammonia and a bottle of"
+},
+{
+"a": 194.17,
+"b": 195.91,
+"k": "p091",
+"z": [
+1.22,
+1.16
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "A close-up of the elderly woman holding two unlabeled white spray bottles togeth"
+},
+{
+"a": 195.91,
+"b": 197.05,
+"k": "p092",
+"z": [
+1.02,
+1.065
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "The elderly woman holding a spray bottle and a cloth, preparing to clean a bathr"
+},
+{
+"a": 197.05,
+"b": 197.94,
+"k": "p092",
+"z": [
+1.384,
+1.414
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "The elderly woman holding a spray bottle and a cloth, preparing to clean a bathr",
+"punch": true
+},
+{
+"a": 197.94,
+"b": 209.14,
+"k": "",
+"c": "NeverMix",
+"props": {
+"k": "p087",
+"rows": [
+{
+"t": 197.94,
+"a": "BLEACH",
+"b": [
+"VINEGAR",
+"LEMON",
+"ACID CLEANER"
+]
+},
+{
+"t": 202.46,
+"a": "BLEACH",
+"b": [
+"AMMONIA",
+"RUBBING ALCOHOL"
+]
+},
+{
+"t": 205.94,
+"a": "PEROXIDE",
+"b": [
+"VINEGAR \u00b7 SAME BOTTLE"
+]
+}
+]
+},
+"beats": [
+200.08,
+202.46,
+204.12,
+205.94,
+207.3
+]
+},
+{
+"a": 209.14,
+"b": 210.9,
+"k": "p094",
+"z": [
+1.04,
+0.98
+],
+"o": [
+70,
+55
+],
+"dx": 0,
+"desc": "The elderly woman carefully writing on a blank label attached to a spray bottle.",
+"tin": "whip"
+},
+{
+"a": 210.9,
+"b": 212.42,
+"k": "p095",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "The elderly woman wearing yellow rubber gloves while cleaning the toilet bowl."
+},
+{
+"a": 212.42,
+"b": 219.28,
+"k": "",
+"c": "Checklist",
+"props": {
+"k": "p093",
+"head": "Every single time",
+"page": "PAGE 3",
+"items": [
+{
+"t": 212.6,
+"txt": "Rinse between products"
+},
+{
+"t": 214.28,
+"txt": "Open a window"
+},
+{
+"t": 215.62,
+"txt": "Label every bottle"
+},
+{
+"t": 217.26,
+"txt": "One product per day"
+}
+]
+},
+"beats": [
+214.28,
+215.62,
+217.26
+]
+},
+{
+"a": 219.28,
+"b": 221.08,
+"vid": true,
+"k": "cltoilet/p097",
+"ofs": 0.74,
+"z": [
+1.3,
+1.25
+],
+"o": [
+50,
+40
+],
+"desc": "The elderly woman standing in the bathroom doorway, looking at the open cabinet ",
+"tin": "whip"
+},
+{
+"a": 221.08,
+"b": 222.14,
+"k": "p096",
+"z": [
+1.04,
+1.12
+],
+"o": [
+45,
+55
+],
+"dx": 0,
+"desc": "The elderly woman putting on a pair of yellow rubber gloves near the sink."
+},
+{
+"a": 222.14,
+"b": 223.36,
+"k": "p098",
+"z": [
+1.02,
+1.064
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "The elderly woman pointing at the organized cleaning supplies under the bathroom"
+},
+{
+"a": 223.36,
+"b": 224.38,
+"k": "p098",
+"z": [
+1.383,
+1.413
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "The elderly woman pointing at the organized cleaning supplies under the bathroom",
+"punch": true
+},
+{
+"a": 224.38,
+"b": 225.12,
+"vid": true,
+"k": "cltoilet/p099",
+"ofs": 1.29,
+"z": [
+1.42,
+1.52
+],
+"o": [
+58,
+32
+],
+"desc": "The elderly woman holding a small notebook and reading from it while standing ne"
+},
+{
+"a": 225.12,
+"b": 226.18,
+"vid": true,
+"k": "cltoilet/p101",
+"ofs": 1.14,
+"z": [
+1.42,
+1.48
+],
+"o": [
+50,
+32
+],
+"desc": "Loretta's wrinkled hand holds a plain spray bottle and sprays a fine mist onto a"
+},
+{
+"a": 226.18,
+"b": 227.32,
+"vid": true,
+"k": "cltoilet/p103",
+"ofs": 0.3,
+"z": [
+1.3,
+1.276
+],
+"o": [
+50,
+40
+],
+"desc": "Loretta's hand uses a damp rag to sprinkle baking soda onto a white porcelain si",
+"tin": "whip"
+},
+{
+"a": 227.32,
+"b": 228.6,
+"vid": true,
+"k": "cltoilet/p103",
+"ofs": 1.44,
+"z": [
+1.506,
+1.536
+],
+"o": [
+50,
+40
+],
+"desc": "Loretta's hand uses a damp rag to sprinkle baking soda onto a white porcelain si",
+"dx": 0,
+"punch": true
+},
+{
+"a": 228.6,
+"b": 229.92,
+"k": "p106",
+"z": [
+1.22,
+1.259
+],
+"o": [
+45,
+40
+],
+"dx": 0,
+"desc": "The woman using a whitening agent, such as hydrogen peroxide, to clean or freshe"
+},
+{
+"a": 229.92,
+"b": 231.34,
+"k": "p106",
+"z": [
+1.485,
+1.515
+],
+"o": [
+45,
+40
+],
+"dx": 0,
+"desc": "The woman using a whitening agent, such as hydrogen peroxide, to clean or freshe",
+"punch": true
+},
+{
+"a": 231.34,
+"b": 232.16,
+"k": "p110",
+"z": [
+1.04,
+0.98
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "The elderly narrator with white hair, glasses and a lilac blouse taking a folded"
+},
+{
+"a": 232.16,
+"b": 233.75,
+"k": "p112",
+"z": [
+1.22,
+1.3399999999999999
+],
+"o": [
+45,
+70
+],
+"dx": 0,
+"desc": "The woman holding a pumice stone near the toilet bowl."
+},
+{
+"a": 233.75,
+"b": 266.45,
+"k": "",
+"c": "Shelf",
+"props": {
+"k": "p113",
+"items": [
+{
+"t": 233.75,
+"name": "White vinegar",
+"use": "hard water & soap scum \u2014 never on stone",
+"k": "p100"
+},
+{
+"t": 238.87,
+"name": "Baking soda",
+"use": "a gentle scrub & a smell-eater",
+"k": "p102"
+},
+{
+"t": 242.33,
+"name": "Blue dish soap",
+"use": "for grease",
+"k": "p104"
+},
+{
+"t": 244.36,
+"name": "3% peroxide",
+"use": "brown bottle \u2014 whitening & freshening",
+"k": "p105"
+},
+{
+"t": 250.26,
+"name": "Washing soda",
+"use": "the strong sister \u2014 with gloves",
+"k": "p107"
+},
+{
+"t": 253.57,
+"name": "Rubbing alcohol",
+"use": "streak-free chrome",
+"k": "p108"
+},
+{
+"t": 256.39,
+"name": "Dishwasher tablets",
+"use": "six jobs besides the dishes",
+"k": "p109"
+},
+{
+"t": 259.79,
+"name": "Rags & friends",
+"use": "old toothbrush \u00b7 squeegee \u00b7 pumice",
+"k": "p111"
+}
+]
+}
+},
+{
+"a": 266.45,
+"b": 268.51,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+],
+"tin": "whip"
+},
+{
+"a": 268.51,
+"b": 270.77,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 270.77,
+"b": 274.1,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "1",
+"title": "THE BRUSH",
+"sub": "PAGE 9",
+"k": "p115"
+}
+},
+{
+"a": 274.1,
+"b": 276.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 276.0,
+"b": 277.11,
+"vid": true,
+"k": "cltoilet/p117",
+"ofs": 1.16,
+"z": [
+1.12,
+1.097
+],
+"o": [
+58,
+32
+],
+"desc": "The woman holding the toilet brush or a dishrag."
+},
+{
+"a": 277.11,
+"b": 278.43,
+"vid": true,
+"k": "cltoilet/p117",
+"ofs": 2.27,
+"z": [
+1.426,
+1.456
+],
+"o": [
+58,
+32
+],
+"desc": "The woman holding the toilet brush or a dishrag.",
+"dx": 0,
+"punch": true
+},
+{
+"a": 278.43,
+"b": 280.93,
+"k": "p120",
+"z": [
+1.22,
+1.26
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "A shot of the woman opening the brush holder with a visible reaction to a bad sm"
+},
+{
+"a": 280.93,
+"b": 283.39,
+"k": "p120",
+"z": [
+1.487,
+1.517
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "A shot of the woman opening the brush holder with a visible reaction to a bad sm",
+"punch": true
+},
+{
+"a": 283.39,
+"b": 284.17,
+"k": "p121",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "A different angle or framing of the woman scrubbing the toilet bowl to avoid bei"
+},
+{
+"a": 284.17,
+"b": 285.85,
+"k": "p122",
+"z": [
+1.22,
+1.3399999999999999
+],
+"o": [
+55,
+70
+],
+"dx": -40,
+"desc": "The woman dropping the wet brush back into its holder."
+},
+{
+"a": 285.85,
+"b": 287.81,
+"k": "p123",
+"z": [
+1.02,
+1.1
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "A close-up of the closed brush holder, emphasizing that the dampness is locked i"
+},
+{
+"a": 287.81,
+"b": 289.55,
+"vid": true,
+"k": "cltoilet/p125",
+"ofs": 1.19,
+"z": [
+1.42,
+1.393
+],
+"o": [
+42,
+48
+],
+"desc": "The woman reacting to the sour smell as she opens the brush holder."
+},
+{
+"a": 289.55,
+"b": 291.09,
+"vid": true,
+"k": "cltoilet/p125",
+"ofs": 2.93,
+"z": [
+1.62,
+1.65
+],
+"o": [
+42,
+48
+],
+"desc": "The woman reacting to the sour smell as she opens the brush holder.",
+"dx": 0,
+"punch": true
+},
+{
+"a": 291.09,
+"b": 292.65,
+"k": "p116",
+"z": [
+1.22,
+1.16
+],
+"o": [
+30,
+55
+],
+"dx": 0,
+"desc": "The woman rinsing the toilet brush under running water."
+},
+{
+"a": 292.65,
+"b": 293.43,
+"k": "p114",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "The woman pointing to or holding four specific cleaning items."
+},
+{
+"a": 293.43,
+"b": 295.11,
+"vid": true,
+"k": "cltoilet/p136",
+"ofs": 0.87,
+"z": [
+1.12,
+1.171
+],
+"o": [
+58,
+48
+],
+"desc": "Loretta stands in her bathroom, holding an empty brown bottle, looking down as s"
+},
+{
+"a": 295.11,
+"b": 296.75,
+"vid": true,
+"k": "cltoilet/p136",
+"ofs": 2.55,
+"z": [
+1.522,
+1.552
+],
+"o": [
+58,
+48
+],
+"desc": "Loretta stands in her bathroom, holding an empty brown bottle, looking down as s",
+"dx": 0,
+"punch": true
+},
+{
+"a": 296.75,
+"b": 298.47,
+"k": "p132",
+"z": [
+1.02,
+1.06
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "The narrator pouring peroxide from a bottle directly into the toilet brush holde"
+},
+{
+"a": 298.47,
+"b": 300.17,
+"k": "p132",
+"z": [
+1.378,
+1.408
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "The narrator pouring peroxide from a bottle directly into the toilet brush holde",
+"punch": true
+},
+{
+"a": 300.17,
+"b": 301.25,
+"vid": true,
+"k": "cltoilet/p138",
+"ofs": 0.53,
+"z": [
+1.2,
+1.228
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta stands beside the white toilet, holding a damp rag, looking down with a "
+},
+{
+"a": 301.25,
+"b": 302.49,
+"vid": true,
+"k": "cltoilet/p138",
+"ofs": 1.61,
+"z": [
+1.596,
+1.626
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta stands beside the white toilet, holding a damp rag, looking down with a ",
+"dx": 0,
+"punch": true
+},
+{
+"a": 302.49,
+"b": 328.78,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 9",
+"head": "THE BRUSH",
+"bed": "p127",
+"steps": [
+{
+"t": 306.01,
+"txt": "Let it dry before it goes back",
+"k": "p128"
+},
+{
+"t": 308.87,
+"txt": "Lay the handle across the rim",
+"k": "p129"
+},
+{
+"t": 314.02,
+"txt": "Lower the lid to hold it",
+"k": "p131"
+},
+{
+"t": 317.11,
+"txt": "Once a month: soak in peroxide",
+"k": "p133"
+},
+{
+"t": 322.37,
+"txt": "Brown bottle, away from vinegar",
+"k": "p135"
+}
+]
+},
+"beats": [
+304.01,
+306.01,
+307.47,
+308.87,
+310.3,
+311.56,
+314.02,
+315.44,
+317.11,
+318.41,
+319.85,
+322.37,
+324.01,
+325.69,
+327.29
+]
+},
+{
+"a": 328.78,
+"b": 335.11,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "p137",
+"txt": "Cleaning only the bowl. The smell is on the outside.",
+"cx": 36,
+"cy": 80
+},
+"beats": [
+330.5,
+332.06,
+333.6
+]
+},
+{
+"a": 335.11,
+"b": 339.67,
+"k": "",
+"c": "CostTag",
+"props": {
+"k": "p139",
+"price": "$0",
+"sub": "the whole list",
+"vs": {
+"price": "$$",
+"txt": "ANOTHER TOILET SPRAY",
+"t": 336.95
+}
+},
+"beats": [
+336.95,
+338.23
+]
+},
+{
+"a": 339.67,
+"b": 340.28,
+"k": "p141",
+"z": [
+1.02,
+1.1
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Loretta, seen from behind and side, reaches up to open the small window in her b",
+"tin": "whip"
+},
+{
+"a": 340.28,
+"b": 341.92,
+"vid": true,
+"k": "cltoilet/p142",
+"ofs": 0.74,
+"z": [
+1.3,
+1.25
+],
+"o": [
+50,
+48
+],
+"desc": "Loretta stands in her small bathroom, facing slightly away from the camera, her "
+},
+{
+"a": 341.92,
+"b": 343.52,
+"k": "p143",
+"z": [
+1.22,
+1.16
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "Extreme close-up of Loretta's old, wrinkled hands placing a white toilet brush o"
+},
+{
+"a": 343.52,
+"b": 345.2,
+"k": "p144",
+"z": [
+1.02,
+1.062
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "The woman placing the toilet brush back in its holder, looking satisfied with th"
+},
+{
+"a": 345.2,
+"b": 346.7,
+"k": "p144",
+"z": [
+1.381,
+1.411
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "The woman placing the toilet brush back in its holder, looking satisfied with th",
+"punch": true
+},
+{
+"a": 346.7,
+"b": 348.8,
+"vid": true,
+"k": "cltoilet/p145",
+"ofs": 0.58,
+"z": [
+1.42,
+1.394
+],
+"o": [
+42,
+40
+],
+"desc": "A shot of the woman looking at the toilet brush holder with a slightly guilty or"
+},
+{
+"a": 348.8,
+"b": 350.8,
+"vid": true,
+"k": "cltoilet/p145",
+"ofs": 2.68,
+"z": [
+1.62,
+1.65
+],
+"o": [
+42,
+40
+],
+"desc": "A shot of the woman looking at the toilet brush holder with a slightly guilty or",
+"dx": 0,
+"punch": true
+},
+{
+"a": 350.8,
+"b": 352.02,
+"k": "p147",
+"z": [
+1.02,
+1.065
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta stands in her bathroom, seen from the side, her hands resting on the edg"
+},
+{
+"a": 352.02,
+"b": 352.99,
+"k": "p147",
+"z": [
+1.384,
+1.414
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta stands in her bathroom, seen from the side, her hands resting on the edg",
+"punch": true
+},
+{
+"a": 352.99,
+"b": 354.19,
+"vid": true,
+"k": "cltoilet/p153",
+"ofs": 1.33,
+"z": [
+1.2,
+1.174
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta stands with both hands resting on the toilet tank, looking down at the b"
+},
+{
+"a": 354.19,
+"b": 355.29,
+"vid": true,
+"k": "cltoilet/p153",
+"ofs": 2.53,
+"z": [
+1.526,
+1.556
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta stands with both hands resting on the toilet tank, looking down at the b",
+"dx": 0,
+"punch": true
+},
+{
+"a": 355.29,
+"b": 356.65,
+"k": "p150",
+"z": [
+1.02,
+1.075
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "A shot of the woman looking at the toilet with the lid up, or a shot of the toil"
+},
+{
+"a": 356.65,
+"b": 358.25,
+"k": "p150",
+"z": [
+1.398,
+1.428
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "A shot of the woman looking at the toilet with the lid up, or a shot of the toil",
+"punch": true
+},
+{
+"a": 358.25,
+"b": 359.29,
+"k": "p152",
+"z": [
+1.22,
+1.3
+],
+"o": [
+70,
+55
+],
+"dx": 0,
+"desc": "Close-up of Loretta's wrinkled hand, fingers slightly curled, hovering just abov"
+},
+{
+"a": 359.29,
+"b": 366.05,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p148",
+"lines": [
+"The stink bucket.",
+"Never leave it closed."
+],
+"sig": "Harold"
+},
+"beats": [
+361.03,
+362.71,
+364.49
+]
+},
+{
+"a": 366.05,
+"b": 367.53,
+"vid": true,
+"k": "cltoilet/p156",
+"ofs": 1.05,
+"z": [
+1.2,
+1.174
+],
+"o": [
+50,
+40
+],
+"desc": "Loretta stands back from the toilet, gesturing with both hands as if framing a p",
+"tin": "whip"
+},
+{
+"a": 367.53,
+"b": 368.93,
+"vid": true,
+"k": "cltoilet/p156",
+"ofs": 2.53,
+"z": [
+1.527,
+1.557
+],
+"o": [
+50,
+40
+],
+"desc": "Loretta stands back from the toilet, gesturing with both hands as if framing a p",
+"dx": 0,
+"punch": true
+},
+{
+"a": 368.93,
+"b": 370.21,
+"k": "p155",
+"z": [
+1.02,
+1.061
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Loretta's hands hold a small hand mirror, tilting it under the rim of the toilet"
+},
+{
+"a": 370.21,
+"b": 371.45,
+"k": "p155",
+"z": [
+1.379,
+1.409
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands hold a small hand mirror, tilting it under the rim of the toilet",
+"punch": true
+},
+{
+"a": 371.45,
+"b": 372.63,
+"k": "p157",
+"z": [
+1.22,
+1.3399999999999999
+],
+"o": [
+30,
+55
+],
+"dx": -40,
+"desc": "Close-up of the toilet base and floor, focusing on the junction where porcelain "
+},
+{
+"a": 372.63,
+"b": 374.25,
+"vid": true,
+"k": "cltoilet/p158",
+"ofs": 0.66,
+"z": [
+1.12,
+1.093
+],
+"o": [
+58,
+40
+],
+"desc": "A close-up of the toilet base and the bolts on the floor to match the narration "
+},
+{
+"a": 374.25,
+"b": 375.67,
+"vid": true,
+"k": "cltoilet/p158",
+"ofs": 2.28,
+"z": [
+1.421,
+1.451
+],
+"o": [
+58,
+40
+],
+"desc": "A close-up of the toilet base and the bolts on the floor to match the narration ",
+"dx": 0,
+"punch": true
+},
+{
+"a": 375.67,
+"b": 376.75,
+"k": "p161",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hands hold a damp rag, wiping the white toilet base near the "
+},
+{
+"a": 376.75,
+"b": 377.49,
+"k": "p163",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta stands beside the toilet, holding a rag in one hand and pointing with th"
+},
+{
+"a": 377.49,
+"b": 378.75,
+"k": "p165",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "Medium shot of the area around the toilet base showing a buildup of dust, hair, "
+},
+{
+"a": 378.75,
+"b": 379.75,
+"vid": true,
+"k": "cltoilet/p168",
+"ofs": 0.38,
+"z": [
+1.42,
+1.397
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta's hands hold a rag and wipe the white toilet base and the floor around i"
+},
+{
+"a": 379.75,
+"b": 380.93,
+"vid": true,
+"k": "cltoilet/p168",
+"ofs": 1.38,
+"z": [
+1.62,
+1.65
+],
+"o": [
+58,
+40
+],
+"desc": "Loretta's hands hold a rag and wipe the white toilet base and the floor around i",
+"dx": 0,
+"punch": true
+},
+{
+"a": 380.93,
+"b": 382.03,
+"vid": true,
+"k": "cltoilet/p169",
+"ofs": 0.53,
+"z": [
+1.12,
+1.093
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands up from kneeling, looking down at the now-clean toilet base with "
+},
+{
+"a": 382.03,
+"b": 382.99,
+"vid": true,
+"k": "cltoilet/p169",
+"ofs": 1.63,
+"z": [
+1.421,
+1.451
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands up from kneeling, looking down at the now-clean toilet base with ",
+"dx": 0,
+"punch": true
+},
+{
+"a": 382.99,
+"b": 384.01,
+"vid": true,
+"k": "cltoilet/p173",
+"ofs": 1.33,
+"z": [
+1.3,
+1.25
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta, in her lilac blouse and floral apron, kneels on the white bath mat besi"
+},
+{
+"a": 384.01,
+"b": 384.73,
+"vid": true,
+"k": "cltoilet/p176",
+"ofs": 0.28,
+"z": [
+1.2,
+1.26
+],
+"o": [
+50,
+32
+],
+"desc": "The elderly woman holding a single cleaning product and applying it to the toile"
+},
+{
+"a": 384.73,
+"b": 386.61,
+"vid": true,
+"k": "cltoilet/p184",
+"ofs": 1.31,
+"z": [
+1.42,
+1.52
+],
+"o": [
+58,
+32
+],
+"desc": "An elderly woman holding up one cleaning product to emphasize the 'one product p"
+},
+{
+"a": 386.61,
+"b": 389.9,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "2",
+"title": "THE BASE",
+"sub": "PAGE 9",
+"k": "p159"
+}
+},
+{
+"a": 389.9,
+"b": 392.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 392.0,
+"b": 392.82,
+"k": "p177",
+"z": [
+1.22,
+1.16
+],
+"o": [
+45,
+40
+],
+"dx": 0,
+"desc": "Loretta's hands hold two spray bottles: one with vinegar, one with peroxide. She"
+},
+{
+"a": 392.82,
+"b": 394.3,
+"vid": true,
+"k": "cltoilet/p191",
+"ofs": 0.42,
+"z": [
+1.12,
+1.179
+],
+"o": [
+58,
+40
+],
+"desc": "Medium shot of the elderly narrator with white hair and glasses standing alone i"
+},
+{
+"a": 394.3,
+"b": 395.33,
+"vid": true,
+"k": "cltoilet/p191",
+"ofs": 1.9,
+"z": [
+1.533,
+1.563
+],
+"o": [
+58,
+40
+],
+"desc": "Medium shot of the elderly narrator with white hair and glasses standing alone i",
+"dx": 0,
+"punch": true
+},
+{
+"a": 395.33,
+"b": 396.99,
+"vid": true,
+"k": "cltoilet/p194",
+"ofs": 0.73,
+"z": [
+1.3,
+1.25
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands in her small farmhouse bathroom, holding a toilet brush in one ha"
+},
+{
+"a": 396.99,
+"b": 398.19,
+"k": "p179",
+"z": [
+1.04,
+1.107
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "Close-up of Loretta's hand holding an old toothbrush, scrubbing the hinge area o"
+},
+{
+"a": 398.19,
+"b": 399.13,
+"k": "p179",
+"z": [
+1.439,
+1.469
+],
+"o": [
+30,
+40
+],
+"dx": 0,
+"desc": "Close-up of Loretta's hand holding an old toothbrush, scrubbing the hinge area o",
+"punch": true
+},
+{
+"a": 399.13,
+"b": 400.81,
+"vid": true,
+"k": "cltoilet/p204",
+"ofs": 0.49,
+"z": [
+1.42,
+1.52
+],
+"o": [
+42,
+48
+],
+"desc": "Loretta, an 81-year-old woman with short curly white hair and wire-rimmed glasse"
+},
+{
+"a": 400.81,
+"b": 401.71,
+"k": "p182",
+"z": [
+1.02,
+1.06
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta's wrinkled hands hold a commercial toilet spray bottle next to her homem"
+},
+{
+"a": 401.71,
+"b": 403.51,
+"k": "p182",
+"z": [
+1.378,
+1.408
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hands hold a commercial toilet spray bottle next to her homem",
+"punch": true
+},
+{
+"a": 403.51,
+"b": 404.49,
+"k": "p183",
+"z": [
+1.22,
+1.259
+],
+"o": [
+45,
+55
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand holding a bottle of toilet spray up besi"
+},
+{
+"a": 404.49,
+"b": 405.53,
+"k": "p183",
+"z": [
+1.485,
+1.515
+],
+"o": [
+45,
+55
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand holding a bottle of toilet spray up besi",
+"punch": true
+},
+{
+"a": 405.53,
+"b": 407.4,
+"k": "p186",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands hold a bottle of white vinegar and a bottle of bleach, keeping t"
+},
+{
+"a": 407.4,
+"b": 409.16,
+"k": "p187",
+"z": [
+1.04,
+1.082
+],
+"o": [
+55,
+55
+],
+"dx": 0,
+"desc": "Loretta's hands wipe the base of the white porcelain toilet with a rag. The toil"
+},
+{
+"a": 409.16,
+"b": 410.75,
+"k": "p187",
+"z": [
+1.407,
+1.437
+],
+"o": [
+55,
+55
+],
+"dx": 0,
+"desc": "Loretta's hands wipe the base of the white porcelain toilet with a rag. The toil",
+"punch": true
+},
+{
+"a": 410.75,
+"b": 412.16,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 412.16,
+"b": 413.4,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.03
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 413.4,
+"b": 416.5,
+"k": "",
+"c": "FrameArt",
+"props": {
+"k": "p160",
+"bed": "p166",
+"caption": "the frame that nobody dusts",
+"t": 413.98
+},
+"beats": [
+413.98
+]
+},
+{
+"a": 416.5,
+"b": 438.96,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 9",
+"head": "THE BASE",
+"bed": "p170",
+"steps": [
+{
+"t": 417.89,
+"txt": "Once a week: spray base & bolts",
+"k": "p171"
+},
+{
+"t": 423.03,
+"txt": "Wipe it with a rag",
+"k": "p172"
+},
+{
+"t": 425.08,
+"txt": "Get down & look at the seam",
+"k": "p175"
+},
+{
+"t": 435.66,
+"txt": "One product, not both. Dry it.",
+"k": "p178"
+}
+]
+},
+"beats": [
+417.89,
+419.33,
+420.57,
+423.03,
+425.08,
+426.4,
+427.8,
+430.33,
+431.73,
+432.97,
+434.31,
+435.66,
+437.28
+]
+},
+{
+"a": 438.96,
+"b": 446.79,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "p189",
+"txt": "Same as the brush: only the bowl.",
+"cx": 40,
+"cy": 78
+},
+"beats": [
+440.88,
+442.87,
+444.95
+]
+},
+{
+"a": 446.79,
+"b": 455.15,
+"k": "",
+"c": "CostTag",
+"props": {
+"k": "p185",
+"price": "$0",
+"sub": "a rag & a few sprays",
+"vs": {
+"price": "$$$",
+"txt": "SPRAYS THAT LAST AN HOUR",
+"t": 449.95
+}
+},
+"beats": [
+448.27,
+449.95,
+452.35,
+453.85
+]
+},
+{
+"a": 455.15,
+"b": 456.05,
+"k": "p188",
+"z": [
+1.02,
+1.1
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta, seen from the side, bends slightly to wipe the base of the toilet with ",
+"tin": "whip"
+},
+{
+"a": 456.05,
+"b": 458.01,
+"k": "p190",
+"z": [
+1.22,
+1.3
+],
+"o": [
+55,
+40
+],
+"dx": -40,
+"desc": "The elderly narrator's hand reaching the chrome shut-off valve and the braided w"
+},
+{
+"a": 458.01,
+"b": 459.55,
+"k": "p195",
+"z": [
+1.02,
+1.1
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Close view of Loretta's wrinkled hands holding the toilet brush and base bottle "
+},
+{
+"a": 459.55,
+"b": 460.25,
+"k": "p196",
+"z": [
+1.1,
+1.2200000000000002
+],
+"o": [
+55,
+70
+],
+"dx": 40,
+"desc": "Extreme close-up of the white plastic toilet seat hinges, where they attach to t"
+},
+{
+"a": 460.25,
+"b": 461.89,
+"k": "p197",
+"z": [
+1.04,
+1.1600000000000001
+],
+"o": [
+45,
+55
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand pressing the white plastic hinge of the "
+},
+{
+"a": 461.89,
+"b": 462.75,
+"k": "p198",
+"z": [
+1.1,
+1.2200000000000002
+],
+"o": [
+30,
+55
+],
+"dx": 40,
+"desc": "Close-up of Loretta's wrinkled hand lifting the white plastic toilet seat to rev"
+},
+{
+"a": 462.75,
+"b": 463.97,
+"k": "p199",
+"z": [
+1.02,
+1.1
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands hold an old toothbrush near the toilet rim, ready to scrub. The "
+},
+{
+"a": 463.97,
+"b": 465.25,
+"k": "p202",
+"z": [
+1.02,
+1.082
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hands hold a small hand mirror angled under the toilet rim. T"
+},
+{
+"a": 465.25,
+"b": 466.43,
+"k": "p202",
+"z": [
+1.407,
+1.437
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hands hold a small hand mirror angled under the toilet rim. T",
+"punch": true
+},
+{
+"a": 466.43,
+"b": 468.65,
+"k": "p203",
+"z": [
+1.22,
+1.261
+],
+"o": [
+70,
+40
+],
+"dx": 40,
+"desc": "Close-up of the toilet bowl interior, focusing on the water line. The water is c"
+},
+{
+"a": 468.65,
+"b": 470.75,
+"k": "p203",
+"z": [
+1.488,
+1.518
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "Close-up of the toilet bowl interior, focusing on the water line. The water is c",
+"punch": true
+},
+{
+"a": 470.75,
+"b": 472.42,
+"k": "p206",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": -30,
+"desc": "Loretta stands in her small farmhouse bathroom, holding the hand mirror at her s"
+},
+{
+"a": 472.42,
+"b": 480.72,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p192",
+"lines": [
+"The floor tells the truth",
+"about the room."
+],
+"sig": "Edna Pruitt",
+"size": 88
+},
+"beats": [
+474.6,
+476.5,
+478.64
+]
+},
+{
+"a": 480.72,
+"b": 483.09,
+"k": "p208",
+"z": [
+1.04,
+1.008
+],
+"o": [
+70,
+55
+],
+"dx": -40,
+"desc": "A close-up of the toilet bowl rim and interior to match the narration about scru",
+"tin": "whip"
+},
+{
+"a": 483.09,
+"b": 485.17,
+"k": "p208",
+"z": [
+1.31,
+1.34
+],
+"o": [
+70,
+55
+],
+"dx": 0,
+"desc": "A close-up of the toilet bowl rim and interior to match the narration about scru",
+"punch": true
+},
+{
+"a": 485.17,
+"b": 486.57,
+"k": "p209",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+60,
+50
+],
+"dx": -30,
+"desc": "Loretta scrubs the toilet bowl with a toilet brush. She leans over, her floral a"
+},
+{
+"a": 486.57,
+"b": 487.89,
+"k": "p210",
+"z": [
+1.04,
+0.98
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "A close-up of the toilet seat surface showing the film or residue that the narra"
+},
+{
+"a": 487.89,
+"b": 488.71,
+"k": "p211",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "A shot of the toilet seat or bowl where the film is located, as referenced by th"
+},
+{
+"a": 488.71,
+"b": 489.37,
+"k": "p216",
+"z": [
+1.02,
+1.1
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta's hands lower the toothbrush toward the pedestal sink, her floral apron "
+},
+{
+"a": 489.37,
+"b": 490.31,
+"k": "p217",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "The whole small bathroom in daylight: Loretta stands beside the white porcelain "
+},
+{
+"a": 490.31,
+"b": 491.19,
+"vid": true,
+"k": "cltoilet/p219",
+"ofs": 0.95,
+"z": [
+1.12,
+1.07
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta's face is clearly visible as she looks down at the toilet rim, her wire-"
+},
+{
+"a": 491.19,
+"b": 492.23,
+"vid": true,
+"k": "cltoilet/p232",
+"ofs": 0.75,
+"z": [
+1.12,
+1.15
+],
+"o": [
+58,
+48
+],
+"desc": "Medium shot of Loretta's face as she looks down at the mirror in her hand. Her g"
+},
+{
+"a": 492.23,
+"b": 493.29,
+"vid": true,
+"k": "cltoilet/p232",
+"ofs": 1.79,
+"z": [
+1.495,
+1.525
+],
+"o": [
+58,
+48
+],
+"desc": "Medium shot of Loretta's face as she looks down at the mirror in her hand. Her g",
+"dx": 0,
+"punch": true
+},
+{
+"a": 493.29,
+"b": 494.63,
+"k": "p220",
+"z": [
+1.22,
+1.16
+],
+"o": [
+30,
+70
+],
+"dx": -40,
+"desc": "Close on the inside of the toilet bowl: clean white porcelain curving down to cl"
+},
+{
+"a": 494.63,
+"b": 496.61,
+"vid": true,
+"k": "cltoilet/p236",
+"ofs": 1.22,
+"z": [
+1.12,
+1.1800000000000002
+],
+"o": [
+58,
+32
+],
+"desc": "Loretta stands in her sunlit farmhouse bathroom, holding a small open notebook i"
+},
+{
+"a": 496.61,
+"b": 497.83,
+"vid": true,
+"k": "cltoilet/p241",
+"ofs": 0.79,
+"z": [
+1.42,
+1.467
+],
+"o": [
+42,
+40
+],
+"desc": "The person reading the book while the toilet bowl is filled with vinegar."
+},
+{
+"a": 497.83,
+"b": 499.18,
+"vid": true,
+"k": "cltoilet/p241",
+"ofs": 2.01,
+"z": [
+1.62,
+1.65
+],
+"o": [
+42,
+40
+],
+"desc": "The person reading the book while the toilet bowl is filled with vinegar.",
+"dx": 0,
+"punch": true
+},
+{
+"a": 499.18,
+"b": 502.4,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "3",
+"title": "UNDER THE RIM",
+"sub": "PAGE 9",
+"k": "p201"
+}
+},
+{
+"a": 502.4,
+"b": 504.4,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 504.4,
+"b": 505.57,
+"k": "p221",
+"z": [
+1.02,
+1.06
+],
+"o": [
+60,
+50
+],
+"dx": -30,
+"desc": "A close-up of the elderly woman looking up at the ceiling or the underside of th"
+},
+{
+"a": 505.57,
+"b": 506.75,
+"k": "p221",
+"z": [
+1.378,
+1.408
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "A close-up of the elderly woman looking up at the ceiling or the underside of th",
+"punch": true
+},
+{
+"a": 506.75,
+"b": 515.63,
+"k": "",
+"c": "Mirror",
+"props": {
+"k": "p205",
+"zoomK": "p200",
+"zx": 38,
+"zy": 25,
+"words": [
+[
+"BROWN OR GRAY FILM",
+511.25
+],
+[
+"out of sight, out of mind",
+513.58
+]
+]
+}
+},
+{
+"a": 515.63,
+"b": 522.21,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p207",
+"lines": [
+"The underside of things",
+"tells the truth."
+],
+"sig": "Mama",
+"size": 88
+},
+"beats": [
+517.19,
+518.91,
+520.53
+]
+},
+{
+"a": 522.21,
+"b": 523.9,
+"k": "p222",
+"z": [
+1.04,
+0.98
+],
+"o": [
+45,
+55
+],
+"dx": 40,
+"desc": "A close-up of the hidden area under the toilet rim or the hinges where the smell",
+"tin": "whip"
+},
+{
+"a": 523.9,
+"b": 525.77,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 525.77,
+"b": 527.99,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.03
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 527.99,
+"b": 540.31,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 9",
+"head": "UNDER THE RIM",
+"bed": "p213",
+"steps": [
+{
+"t": 529.35,
+"txt": "Old toothbrush + vinegar OR peroxide",
+"k": "p212"
+},
+{
+"t": 532.87,
+"txt": "Reach up under, all the way around",
+"k": "p214"
+},
+{
+"t": 536.51,
+"txt": "Feel the crust come off",
+"k": "p215"
+}
+]
+},
+"beats": [
+529.35,
+531.05,
+532.87,
+534.73,
+536.51,
+538.45
+]
+},
+{
+"a": 540.31,
+"b": 542.15,
+"k": "p223",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "The elderly woman holding a mirror to inspect the back of the toilet.",
+"tin": "whip"
+},
+{
+"a": 542.15,
+"b": 543.03,
+"k": "p225",
+"z": [
+1.1,
+1.2200000000000002
+],
+"o": [
+30,
+70
+],
+"dx": 0,
+"desc": "Close-up of Loretta's wrinkled hands holding a small brown glass bottle of perox"
+},
+{
+"a": 543.03,
+"b": 544.55,
+"k": "p226",
+"z": [
+1.02,
+1.077
+],
+"o": [
+60,
+50
+],
+"dx": -30,
+"desc": "Loretta's hands place the brown peroxide bottle into a small wooden cabinet. The"
+},
+{
+"a": 544.55,
+"b": 546.23,
+"k": "p226",
+"z": [
+1.4,
+1.43
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands place the brown peroxide bottle into a small wooden cabinet. The",
+"punch": true
+},
+{
+"a": 546.23,
+"b": 547.73,
+"k": "p227",
+"z": [
+1.1,
+1.169
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "A close-up of a brown bottle of vinegar sitting on a bathroom shelf or counter."
+},
+{
+"a": 547.73,
+"b": 548.84,
+"k": "p227",
+"z": [
+1.52,
+1.55
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "A close-up of a brown bottle of vinegar sitting on a bathroom shelf or counter.",
+"punch": true
+},
+{
+"a": 548.84,
+"b": 556.79,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "p218",
+"txt": "Never looking up. That is where the sour smell lives.",
+"cx": 48,
+"cy": 52
+},
+"beats": [
+550.62,
+552.66,
+554.66
+]
+},
+{
+"a": 556.79,
+"b": 561.83,
+"k": "",
+"c": "BigNumber",
+"props": {
+"k": "p224",
+"num": 5,
+"unit": "MINUTES",
+"txt": "mirror + toothbrush \u00b7 costs nothing"
+},
+"beats": [
+558.15,
+559.47
+]
+},
+{
+"a": 561.83,
+"b": 562.83,
+"k": "p228",
+"z": [
+1.02,
+1.056
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Wide view of the bathroom. Loretta kneels on the white hexagon floor, holding a ",
+"tin": "whip"
+},
+{
+"a": 562.83,
+"b": 564.03,
+"k": "p228",
+"z": [
+1.373,
+1.403
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Wide view of the bathroom. Loretta kneels on the white hexagon floor, holding a ",
+"punch": true
+},
+{
+"a": 564.03,
+"b": 565.95,
+"k": "p229",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": -30,
+"desc": "Medium shot of Loretta's hands scrubbing the toilet rim with a brush. In the for"
+},
+{
+"a": 565.95,
+"b": 567.67,
+"k": "p230",
+"z": [
+1.1,
+1.162
+],
+"o": [
+45,
+40
+],
+"dx": 0,
+"desc": "Close-up of the toilet rim, now clean and shiny. Loretta's hand holds a white cl"
+},
+{
+"a": 567.67,
+"b": 569.27,
+"k": "p230",
+"z": [
+1.511,
+1.541
+],
+"o": [
+45,
+40
+],
+"dx": 0,
+"desc": "Close-up of the toilet rim, now clean and shiny. Loretta's hand holds a white cl",
+"punch": true
+},
+{
+"a": 569.27,
+"b": 570.49,
+"k": "p233",
+"z": [
+1.04,
+0.98
+],
+"o": [
+55,
+55
+],
+"dx": 0,
+"desc": "A clear view of a hand holding a small mirror under the rim of a toilet seat."
+},
+{
+"a": 570.49,
+"b": 572.85,
+"k": "p234",
+"z": [
+1.02,
+1.079
+],
+"o": [
+40,
+50
+],
+"dx": -30,
+"desc": "of the bathroom. Loretta stands with her back partly turned, holding a scrub bru"
+},
+{
+"a": 572.85,
+"b": 575.25,
+"k": "p234",
+"z": [
+1.403,
+1.433
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "of the bathroom. Loretta stands with her back partly turned, holding a scrub bru",
+"punch": true
+},
+{
+"a": 575.25,
+"b": 576.99,
+"k": "p235",
+"z": [
+1.02,
+1.058
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Medium shot of Loretta's hands scrubbing the toilet rim with a brush and white c"
+},
+{
+"a": 576.99,
+"b": 578.93,
+"k": "p235",
+"z": [
+1.375,
+1.405
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Medium shot of Loretta's hands scrubbing the toilet rim with a brush and white c",
+"punch": true
+},
+{
+"a": 578.93,
+"b": 590.63,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p231",
+"lines": [
+"Looks like",
+"a dirty mustache!"
+],
+"sig": "Edna Pruitt",
+"chip": {
+"txt": "Irene didn\u2019t speak to her for a week",
+"t": 586.47
+}
+},
+"beats": [
+580.75,
+582.63,
+584.53,
+586.47,
+588.73
+]
+},
+{
+"a": 590.63,
+"b": 593.31,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+],
+"tin": "whip"
+},
+{
+"a": 593.31,
+"b": 595.9,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 595.9,
+"b": 596.99,
+"k": "p237",
+"z": [
+1.04,
+1.083
+],
+"o": [
+30,
+55
+],
+"dx": -40,
+"desc": "A close-up of the open book showing a single handwritten page for one cleaning t"
+},
+{
+"a": 596.99,
+"b": 597.93,
+"k": "p237",
+"z": [
+1.408,
+1.438
+],
+"o": [
+30,
+55
+],
+"dx": 0,
+"desc": "A close-up of the open book showing a single handwritten page for one cleaning t",
+"punch": true
+},
+{
+"a": 597.93,
+"b": 609.44,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "p240",
+"t": 600.37
+},
+"beats": [
+600.37,
+602.86,
+604.98,
+607.1
+]
+},
+{
+"a": 609.44,
+"b": 612.6,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "4",
+"title": "THE SEAT HINGES",
+"sub": "PAGE 9",
+"k": "p243"
+}
+},
+{
+"a": 612.6,
+"b": 614.6,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 614.6,
+"b": 615.93,
+"k": "p245",
+"z": [
+1.02,
+1.078
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands grip the white plastic toilet seat, lifting it to show the hinge"
+},
+{
+"a": 615.93,
+"b": 617.35,
+"k": "p245",
+"z": [
+1.401,
+1.431
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands grip the white plastic toilet seat, lifting it to show the hinge",
+"punch": true
+},
+{
+"a": 617.35,
+"b": 618.5,
+"k": "p246",
+"z": [
+1.1,
+1.156
+],
+"o": [
+55,
+40
+],
+"dx": 40,
+"desc": "Loretta's wrinkled hand lifts the white plastic toilet seat, revealing the under"
+},
+{
+"a": 618.5,
+"b": 619.82,
+"k": "p246",
+"z": [
+1.503,
+1.533
+],
+"o": [
+55,
+40
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hand lifts the white plastic toilet seat, revealing the under",
+"punch": true
+},
+{
+"a": 619.82,
+"b": 620.6,
+"k": "p247",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Loretta's hands hold the raised toilet seat, her fingers tracing the plastic und"
+},
+{
+"a": 620.6,
+"b": 621.68,
+"k": "p248",
+"z": [
+1.04,
+0.98
+],
+"o": [
+30,
+70
+],
+"dx": 40,
+"desc": "Close-up of Loretta's hands unscrewing a small metal bolt from the toilet seat h"
+},
+{
+"a": 621.68,
+"b": 623.6,
+"vid": true,
+"k": "cltoilet/p249",
+"ofs": 0.28,
+"z": [
+1.3,
+1.4000000000000001
+],
+"o": [
+58,
+32
+],
+"desc": "Loretta stands beside the toilet, holding the detached white plastic seat in her"
+},
+{
+"a": 623.6,
+"b": 624.7,
+"k": "p251",
+"z": [
+1.02,
+1.08
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta's hand wipes the hinge area with a white rag, picking up a faint gray re"
+},
+{
+"a": 624.7,
+"b": 625.8,
+"k": "p251",
+"z": [
+1.404,
+1.434
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta's hand wipes the hinge area with a white rag, picking up a faint gray re",
+"punch": true
+},
+{
+"a": 625.8,
+"b": 627.23,
+"k": "p252",
+"z": [
+1.04,
+1.12
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "A close-up of the toilet seat hinges and the area where the plastic meets the po"
+},
+{
+"a": 627.23,
+"b": 632.01,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p250",
+"lines": [
+"The armpits",
+"of the bathroom."
+],
+"sig": "Mama"
+},
+"beats": [
+629.67
+]
+},
+{
+"a": 632.01,
+"b": 633.5,
+"vid": true,
+"k": "cltoilet/p253",
+"ofs": 0.72,
+"z": [
+1.3,
+1.4000000000000001
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands with a bottle of white vinegar in one hand and a rag in the other",
+"tin": "whip"
+},
+{
+"a": 633.5,
+"b": 635.59,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 635.59,
+"b": 637.75,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 637.75,
+"b": 652.62,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 9",
+"head": "THE HINGES",
+"bed": "p254",
+"steps": [
+{
+"t": 641.09,
+"txt": "Spray: vinegar OR peroxide",
+"k": "p255"
+},
+{
+"t": 643.95,
+"txt": "Scrub the cracks: old toothbrush",
+"k": "p256"
+},
+{
+"t": 646.07,
+"txt": "Wipe it down",
+"k": "p257"
+},
+{
+"t": 647.73,
+"txt": "That little gap traps everything",
+"k": "p258"
+}
+]
+},
+"beats": [
+639.23,
+641.09,
+642.45,
+643.95,
+646.07,
+647.73,
+650.11
+]
+},
+{
+"a": 652.62,
+"b": 662.34,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "p260",
+"txt": "Never lifting the seat. Out of sight, out of mind.",
+"cx": 30,
+"cy": 70
+},
+"beats": [
+654.78,
+657.2,
+659.74,
+661.14
+]
+},
+{
+"a": 662.34,
+"b": 663.67,
+"k": "p264",
+"z": [
+1.04,
+1.011
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "The woman is shown pulling yellow rubber gloves onto her hands in the bathroom.",
+"tin": "whip"
+},
+{
+"a": 663.67,
+"b": 665.07,
+"k": "p264",
+"z": [
+1.314,
+1.344
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "The woman is shown pulling yellow rubber gloves onto her hands in the bathroom.",
+"punch": true
+},
+{
+"a": 665.07,
+"b": 666.27,
+"k": "p262",
+"z": [
+1.04,
+0.98
+],
+"o": [
+70,
+55
+],
+"dx": 0,
+"desc": "The woman stands in the bathroom holding a cleaning spray bottle, looking toward"
+},
+{
+"a": 666.27,
+"b": 667.07,
+"k": "p266",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": -30,
+"desc": "The woman holds a spray bottle while looking at the bathroom surfaces, illustrat"
+},
+{
+"a": 667.07,
+"b": 675.25,
+"k": "",
+"c": "CostTag",
+"props": {
+"k": "p265",
+"price": "$0",
+"sub": "a spray & a wipe",
+"vs": {
+"price": "$$$",
+"txt": "SPRAYS THAT DON'T TOUCH IT",
+"t": 669.77
+}
+},
+"beats": [
+668.53,
+669.77,
+671.27,
+672.59,
+673.91
+]
+},
+{
+"a": 675.25,
+"b": 676.81,
+"k": "p268",
+"z": [
+1.02,
+1.1
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "The woman lifts the toilet seat (not the lid) in the bathroom.",
+"tin": "whip"
+},
+{
+"a": 676.81,
+"b": 678.51,
+"vid": true,
+"k": "cltoilet/p270",
+"ofs": 0.56,
+"z": [
+1.3,
+1.275
+],
+"o": [
+58,
+48
+],
+"desc": "The woman reaches for a toothbrush in a holder or cabinet in the bathroom."
+},
+{
+"a": 678.51,
+"b": 680.19,
+"vid": true,
+"k": "cltoilet/p270",
+"ofs": 2.26,
+"z": [
+1.504,
+1.534
+],
+"o": [
+58,
+48
+],
+"desc": "The woman reaches for a toothbrush in a holder or cabinet in the bathroom.",
+"dx": 0,
+"punch": true
+},
+{
+"a": 680.19,
+"b": 681.85,
+"k": "p271",
+"z": [
+1.02,
+1.074
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "The bathroom interior without Loretta, showing the white toilet with seat down, "
+},
+{
+"a": 681.85,
+"b": 683.85,
+"k": "p271",
+"z": [
+1.397,
+1.427
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "The bathroom interior without Loretta, showing the white toilet with seat down, ",
+"punch": true
+},
+{
+"a": 683.85,
+"b": 685.62,
+"k": "p272",
+"z": [
+1.1,
+1.071
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "Close-up of Loretta's hand pointing at the clean toilet hinge. The chrome hinge "
+},
+{
+"a": 685.62,
+"b": 687.52,
+"k": "p272",
+"z": [
+1.392,
+1.422
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "Close-up of Loretta's hand pointing at the clean toilet hinge. The chrome hinge ",
+"punch": true
+},
+{
+"a": 687.52,
+"b": 688.8,
+"k": "p274",
+"z": [
+1.04,
+1.074
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "Close-up of Loretta's hands wringing out a white rag over the pedestal sink. Wat"
+},
+{
+"a": 688.8,
+"b": 690.56,
+"k": "p274",
+"z": [
+1.396,
+1.426
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "Close-up of Loretta's hands wringing out a white rag over the pedestal sink. Wat",
+"punch": true
+},
+{
+"a": 690.56,
+"b": 692.14,
+"k": "p276",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "A close-up of the dirty toilet flush handle that the narrator is referring to as"
+},
+{
+"a": 692.14,
+"b": 695.67,
+"k": "",
+"c": "BigNumber",
+"props": {
+"k": "p273",
+"num": 51,
+"unit": "YEARS",
+"txt": "while Harold was out in the field",
+"dur": 20
+},
+"beats": [
+693.8
+]
+},
+{
+"a": 695.67,
+"b": 698.27,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+],
+"tin": "whip"
+},
+{
+"a": 698.27,
+"b": 700.9,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.03
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 700.9,
+"b": 702.25,
+"k": "p278",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands, wrinkled and capable, turn on the chrome tap of the white pedes"
+},
+{
+"a": 702.25,
+"b": 703.55,
+"k": "p279",
+"z": [
+1.1,
+1.04
+],
+"o": [
+30,
+55
+],
+"dx": 0,
+"desc": "A close-up of the toilet flush handle, as the narrator prepares to talk about it"
+},
+{
+"a": 703.55,
+"b": 704.91,
+"k": "p280",
+"z": [
+1.02,
+1.085
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta leans slightly forward, pointing a finger down toward the toilet bowl, f"
+},
+{
+"a": 704.91,
+"b": 706.05,
+"k": "p280",
+"z": [
+1.411,
+1.441
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta leans slightly forward, pointing a finger down toward the toilet bowl, f",
+"punch": true
+},
+{
+"a": 706.05,
+"b": 706.83,
+"k": "p282",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Loretta's hand holds a white rag and wipes along the inside of the toilet bowl a"
+},
+{
+"a": 706.83,
+"b": 708.51,
+"vid": true,
+"k": "cltoilet/p284",
+"ofs": 0.52,
+"z": [
+1.42,
+1.48
+],
+"o": [
+50,
+40
+],
+"desc": "A close-up of the toilet flush handle being pointed at or touched."
+},
+{
+"a": 708.51,
+"b": 709.65,
+"k": "p286",
+"z": [
+1.04,
+1.012
+],
+"o": [
+45,
+40
+],
+"dx": 40,
+"desc": "A close-up of the toilet flush handle."
+},
+{
+"a": 709.65,
+"b": 710.93,
+"k": "p286",
+"z": [
+1.315,
+1.345
+],
+"o": [
+45,
+40
+],
+"dx": 0,
+"desc": "A close-up of the toilet flush handle.",
+"punch": true
+},
+{
+"a": 710.93,
+"b": 711.8,
+"k": "p287",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "A shot of a hand touching the toilet flush handle."
+},
+{
+"a": 711.8,
+"b": 714.23,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 714.23,
+"b": 716.8,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 716.8,
+"b": 718.29,
+"vid": true,
+"k": "cltoilet/p291",
+"ofs": 1.34,
+"z": [
+1.42,
+1.448
+],
+"o": [
+42,
+32
+],
+"desc": "A shot of the woman looking at the toilet handle while speaking, or a close-up o"
+},
+{
+"a": 718.29,
+"b": 719.99,
+"vid": true,
+"k": "cltoilet/p291",
+"ofs": 2.83,
+"z": [
+1.62,
+1.65
+],
+"o": [
+42,
+32
+],
+"desc": "A shot of the woman looking at the toilet handle while speaking, or a close-up o",
+"dx": 0,
+"punch": true
+},
+{
+"a": 719.99,
+"b": 723.0,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "5",
+"title": "THE FLUSH HANDLE",
+"sub": "PAGE 9",
+"k": "p285"
+}
+},
+{
+"a": 723.0,
+"b": 725.2,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 725.2,
+"b": 726.33,
+"k": "p288",
+"z": [
+1.02,
+1.07
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta's hands, one holding a toilet brush, scrub the inside of the white porce"
+},
+{
+"a": 726.33,
+"b": 727.89,
+"k": "p288",
+"z": [
+1.392,
+1.422
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands, one holding a toilet brush, scrub the inside of the white porce",
+"punch": true
+},
+{
+"a": 727.89,
+"b": 728.75,
+"k": "p289",
+"z": [
+1.04,
+1.1600000000000001
+],
+"o": [
+70,
+55
+],
+"dx": 0,
+"desc": "A close-up of hands scrubbing the toilet seat with a cloth."
+},
+{
+"a": 728.75,
+"b": 729.67,
+"k": "p290",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta's hand, holding a white cloth, wipes the flush handle thoroughly. The ha"
+},
+{
+"a": 729.67,
+"b": 731.07,
+"k": "p293",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": -30,
+"desc": "Loretta's hands, holding a white cloth, wipe the flush handle one more time. The",
+"tin": "whip"
+},
+{
+"a": 731.07,
+"b": 731.83,
+"vid": true,
+"k": "cltoilet/p294",
+"ofs": 1.14,
+"z": [
+1.12,
+1.1800000000000002
+],
+"o": [
+58,
+32
+],
+"desc": "The woman actively wiping the toilet handle with a cloth."
+},
+{
+"a": 731.83,
+"b": 732.81,
+"k": "p297",
+"z": [
+1.02,
+1.057
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "A close-up of the woman spraying and wiping the toilet handle."
+},
+{
+"a": 732.81,
+"b": 733.97,
+"k": "p297",
+"z": [
+1.374,
+1.404
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "A close-up of the woman spraying and wiping the toilet handle.",
+"punch": true
+},
+{
+"a": 733.97,
+"b": 735.41,
+"vid": true,
+"k": "cltoilet/p305",
+"ofs": 0.32,
+"z": [
+1.12,
+1.171
+],
+"o": [
+58,
+48
+],
+"desc": "A shot of a single cleaning product bottle placed on the bathroom sink or toilet"
+},
+{
+"a": 735.41,
+"b": 736.77,
+"vid": true,
+"k": "cltoilet/p305",
+"ofs": 1.76,
+"z": [
+1.523,
+1.553
+],
+"o": [
+58,
+48
+],
+"desc": "A shot of a single cleaning product bottle placed on the bathroom sink or toilet",
+"dx": 0,
+"punch": true
+},
+{
+"a": 736.77,
+"b": 738.07,
+"k": "p299",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta's hand holds the dry rag pressed at the base of the white plastic flush "
+},
+{
+"a": 738.07,
+"b": 739.81,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 739.81,
+"b": 741.7,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.03
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 741.7,
+"b": 744.2,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p292",
+"lines": [
+"The front door",
+"of the toilet."
+],
+"sig": "Mama"
+},
+"beats": []
+},
+{
+"a": 744.2,
+"b": 746.39,
+"k": "p301",
+"z": [
+1.02,
+1.063
+],
+"o": [
+40,
+50
+],
+"dx": -30,
+"desc": "Loretta's hands hold the white rag beside the open toilet bowl, the white plasti",
+"tin": "whip"
+},
+{
+"a": 746.39,
+"b": 748.31,
+"k": "p301",
+"z": [
+1.381,
+1.411
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands hold the white rag beside the open toilet bowl, the white plasti",
+"punch": true
+},
+{
+"a": 748.31,
+"b": 761.03,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 9",
+"head": "THE HANDLE",
+"bed": "p295",
+"steps": [
+{
+"t": 749.41,
+"txt": "Spray: vinegar OR peroxide",
+"k": "p296"
+},
+{
+"t": 752.59,
+"txt": "Wipe it dry with a rag",
+"k": "p298"
+},
+{
+"t": 754.87,
+"txt": "Don't forget the little stem",
+"k": "p300"
+}
+]
+},
+"beats": [
+749.41,
+750.91,
+752.59,
+754.87,
+756.21,
+757.81,
+759.49
+]
+},
+{
+"a": 761.03,
+"b": 769.47,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "p302",
+"txt": "Never the handle. Then they wonder why it smells.",
+"cx": 44,
+"cy": 48
+},
+"beats": [
+763.09,
+765.19,
+767.43
+]
+},
+{
+"a": 769.47,
+"b": 773.15,
+"k": "",
+"c": "CostTag",
+"props": {
+"k": "p306",
+"price": "$0",
+"sub": "stops it before it starts"
+},
+"beats": [
+771.37
+]
+},
+{
+"a": 773.15,
+"b": 774.25,
+"k": "p304",
+"z": [
+1.1,
+1.159
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "Close on Loretta's hands wringing the white rag over the pedestal sink, a thin s",
+"tin": "whip"
+},
+{
+"a": 774.25,
+"b": 775.37,
+"k": "p304",
+"z": [
+1.507,
+1.537
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "Close on Loretta's hands wringing the white rag over the pedestal sink, a thin s",
+"punch": true
+},
+{
+"a": 775.37,
+"b": 777.07,
+"k": "p307",
+"z": [
+1.02,
+1.061
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta, in her lilac blouse and floral apron, stands in the small sunlit farmho"
+},
+{
+"a": 777.07,
+"b": 778.67,
+"k": "p307",
+"z": [
+1.38,
+1.41
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta, in her lilac blouse and floral apron, stands in the small sunlit farmho",
+"punch": true
+},
+{
+"a": 778.67,
+"b": 779.83,
+"k": "p309",
+"z": [
+1.1,
+1.071
+],
+"o": [
+55,
+40
+],
+"dx": 0,
+"desc": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cl"
+},
+{
+"a": 779.83,
+"b": 781.11,
+"k": "p309",
+"z": [
+1.393,
+1.423
+],
+"o": [
+55,
+40
+],
+"dx": 0,
+"desc": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cl",
+"punch": true
+},
+{
+"a": 781.11,
+"b": 782.15,
+"k": "p310",
+"z": [
+1.02,
+1.074
+],
+"o": [
+60,
+50
+],
+"dx": -30,
+"desc": "Through the open bathroom doorway, Loretta is seen in the adjacent bedroom, smoo"
+},
+{
+"a": 782.15,
+"b": 783.41,
+"k": "p310",
+"z": [
+1.397,
+1.427
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Through the open bathroom doorway, Loretta is seen in the adjacent bedroom, smoo",
+"punch": true
+},
+{
+"a": 783.41,
+"b": 785.09,
+"k": "",
+"c": "BigNumber",
+"props": {
+"k": "p308",
+"num": 10,
+"unit": "SECONDS",
+"txt": "every morning, after the bed",
+"dur": 14
+},
+"beats": []
+},
+{
+"a": 785.09,
+"b": 787.1,
+"k": "p311",
+"z": [
+1.02,
+1.057
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta stands at the bathroom sink, her back to the camera, wiping the chrome h",
+"tin": "whip"
+},
+{
+"a": 787.1,
+"b": 789.4,
+"k": "p311",
+"z": [
+1.375,
+1.405
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta stands at the bathroom sink, her back to the camera, wiping the chrome h",
+"punch": true
+},
+{
+"a": 789.4,
+"b": 791.04,
+"k": "p312",
+"z": [
+1.1,
+1.139
+],
+"o": [
+70,
+40
+],
+"dx": 40,
+"desc": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cl"
+},
+{
+"a": 791.04,
+"b": 792.75,
+"k": "p312",
+"z": [
+1.481,
+1.511
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "A close-up of the elderly woman's hand wiping the bathroom door handle with a cl",
+"punch": true
+},
+{
+"a": 792.75,
+"b": 799.59,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p313",
+"lines": [
+"The handshake",
+"of the bathroom."
+],
+"sig": "Harold",
+"chip": {
+"txt": "\u2026and a handshake should be clean",
+"t": 797.95
+}
+},
+"beats": [
+794.13,
+795.43,
+797.95
+]
+},
+{
+"a": 799.59,
+"b": 800.93,
+"k": "p315",
+"z": [
+1.02,
+1.078
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta stands in the sunlit bathroom, wiping the toilet handle with a white rag",
+"tin": "whip"
+},
+{
+"a": 800.93,
+"b": 802.37,
+"k": "p315",
+"z": [
+1.401,
+1.431
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta stands in the sunlit bathroom, wiping the toilet handle with a white rag",
+"punch": true
+},
+{
+"a": 802.37,
+"b": 803.95,
+"k": "p316",
+"z": [
+1.02,
+1.1
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "Loretta's hands hold the white rag and wipe the chrome handle. The white plastic"
+},
+{
+"a": 803.95,
+"b": 805.05,
+"k": "p317",
+"z": [
+1.04,
+1.1600000000000001
+],
+"o": [
+45,
+55
+],
+"dx": 0,
+"desc": "A wide shot of the bathroom showing the toilet and sink to illustrate a bathroom"
+},
+{
+"a": 805.05,
+"b": 806.01,
+"k": "p319",
+"z": [
+1.02,
+1.073
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "Loretta, wearing her lilac blouse and floral apron, stands in front of the white"
+},
+{
+"a": 806.01,
+"b": 807.21,
+"k": "p319",
+"z": [
+1.395,
+1.425
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta, wearing her lilac blouse and floral apron, stands in front of the white",
+"punch": true
+},
+{
+"a": 807.21,
+"b": 817.27,
+"k": "",
+"c": "Thumb",
+"props": {
+"k": "p318",
+"thumb": "img/cltoilet/th_hhtoilet.jpg",
+"tag": "ON MY HOUSE HACKS CHANNEL",
+"words": [
+[
+"Put",
+813.31
+],
+[
+"Hydrogen",
+813.53
+],
+[
+"Peroxide",
+814.13
+],
+[
+"in",
+814.93
+],
+[
+"Your",
+815.31
+],
+[
+"Toilet",
+815.59
+],
+[
+"and",
+815.93
+],
+[
+"Watch",
+816.21
+],
+[
+"What",
+816.41
+],
+[
+"Happens",
+816.67
+]
+]
+}
+},
+{
+"a": 817.27,
+"b": 819.15,
+"k": "p321",
+"z": [
+1.02,
+1.1
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta's hands carefully pour a stream of clear liquid from the brown bottle in",
+"tin": "zoom"
+},
+{
+"a": 819.15,
+"b": 820.47,
+"k": "p323",
+"z": [
+1.02,
+1.1
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "Loretta's hands hold the brown bottle and a white toilet brush. She is standing "
+},
+{
+"a": 820.47,
+"b": 821.41,
+"k": "p324",
+"z": [
+1.22,
+1.3
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "A close-up of Loretta's wrinkled hands holding the white toilet brush and its ha"
+},
+{
+"a": 821.41,
+"b": 822.23,
+"vid": true,
+"k": "cltoilet/p325",
+"ofs": 0.7,
+"z": [
+1.2,
+1.15
+],
+"o": [
+42,
+32
+],
+"desc": "Loretta stands in the bathroom, facing slightly away from the camera, looking to"
+},
+{
+"a": 822.23,
+"b": 823.59,
+"k": "p326",
+"z": [
+1.02,
+1.083
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta's hands hold the brown bottle and the toilet brush. She is standing next"
+},
+{
+"a": 823.59,
+"b": 824.81,
+"k": "p326",
+"z": [
+1.408,
+1.438
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Loretta's hands hold the brown bottle and the toilet brush. She is standing next",
+"punch": true
+},
+{
+"a": 824.81,
+"b": 825.99,
+"k": "p328",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "A close-up of the open book showing page 10 with text about hard-water rings."
+},
+{
+"a": 825.99,
+"b": 827.59,
+"k": "p329",
+"z": [
+1.04,
+0.98
+],
+"o": [
+70,
+40
+],
+"dx": 40,
+"desc": "Close-up of the brown ring at the toilet waterline. A white toilet brush is held"
+},
+{
+"a": 827.59,
+"b": 828.91,
+"k": "p330",
+"z": [
+1.1,
+1.161
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand pointing at the brown mineral ring at th"
+},
+{
+"a": 828.91,
+"b": 830.17,
+"k": "p330",
+"z": [
+1.51,
+1.54
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand pointing at the brown mineral ring at th",
+"punch": true
+},
+{
+"a": 830.17,
+"b": 831.07,
+"k": "p331",
+"z": [
+1.04,
+1.1600000000000001
+],
+"o": [
+30,
+55
+],
+"dx": -40,
+"desc": "A shot showing the ring remaining on the toilet bowl after an attempt to scrub i"
+},
+{
+"a": 831.07,
+"b": 832.03,
+"k": "p320",
+"z": [
+1.22,
+1.3
+],
+"o": [
+70,
+55
+],
+"dx": 40,
+"desc": "Close-up of the elderly narrator's hand pouring brown hydrogen peroxide from its"
+},
+{
+"a": 832.03,
+"b": 836.97,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": "BONUS",
+"title": "THE RING AT THE WATERLINE",
+"sub": "PAGE 10",
+"av": false,
+"k": "p327"
+}
+},
+{
+"a": 836.97,
+"b": 838.29,
+"k": "p339",
+"z": [
+1.04,
+1.079
+],
+"o": [
+70,
+40
+],
+"dx": 40,
+"desc": "The woman dipping the pumice stone into a bowl of water or holding it under the ",
+"tin": "whip"
+},
+{
+"a": 838.29,
+"b": 839.69,
+"k": "p339",
+"z": [
+1.402,
+1.432
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "The woman dipping the pumice stone into a bowl of water or holding it under the ",
+"punch": true
+},
+{
+"a": 839.69,
+"b": 841.25,
+"k": "p340",
+"z": [
+1.02,
+1.059
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "A close-up of a dry pumice stone scratching a piece of white porcelain, or the w"
+},
+{
+"a": 841.25,
+"b": 842.93,
+"k": "p340",
+"z": [
+1.376,
+1.406
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "A close-up of a dry pumice stone scratching a piece of white porcelain, or the w",
+"punch": true
+},
+{
+"a": 842.93,
+"b": 844.11,
+"k": "p342",
+"z": [
+1.04,
+1.009
+],
+"o": [
+70,
+40
+],
+"dx": -40,
+"desc": "The woman holding a book or manual open to page 10, pointing to the 'CAREFUL' li"
+},
+{
+"a": 844.11,
+"b": 845.19,
+"k": "p342",
+"z": [
+1.311,
+1.341
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "The woman holding a book or manual open to page 10, pointing to the 'CAREFUL' li",
+"punch": true
+},
+{
+"a": 845.19,
+"b": 852.43,
+"k": "",
+"c": "CostTag",
+"props": {
+"k": "p332",
+"price": "$3",
+"sub": "a pumice stone",
+"vs": {
+"price": "$6",
+"txt": "RING REMOVER",
+"t": 851.03
+}
+},
+"beats": [
+846.57,
+848.13,
+849.61,
+851.03
+]
+},
+{
+"a": 852.43,
+"b": 878.87,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 10",
+"head": "THE RING",
+"bed": "p333",
+"steps": [
+{
+"t": 852.43,
+"txt": "Water off behind the toilet",
+"k": "p334"
+},
+{
+"t": 854.45,
+"txt": "Flush: water below the ring",
+"k": "p335"
+},
+{
+"t": 857.65,
+"txt": "1 cup white vinegar on the ring",
+"k": "p336"
+},
+{
+"t": 860.55,
+"txt": "Wait 30 minutes",
+"k": "p337"
+},
+{
+"t": 862.13,
+"txt": "Rub gently, WET pumice",
+"k": "p338"
+},
+{
+"t": 870.31,
+"txt": "BE CAREFUL: white porcelain only",
+"k": "p341"
+},
+{
+"t": 875.32,
+"txt": "Water back on, flush",
+"k": "p343"
+}
+]
+},
+"beats": [
+854.45,
+856.19,
+857.65,
+858.99,
+860.55,
+862.13,
+864.01,
+866.27,
+868.37,
+870.31,
+872.79,
+875.32,
+877.16
+]
+},
+{
+"a": 878.87,
+"b": 886.11,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "p344",
+"txt": "A dry pumice stone. Keep a dish of water by you.",
+"cx": 28,
+"cy": 76
+},
+"beats": [
+880.67,
+882.45,
+884.21
+]
+},
+{
+"a": 886.11,
+"b": 893.13,
+"k": "",
+"c": "CostTag",
+"props": {
+"k": "p347",
+"price": "$3",
+"sub": "once a year",
+"vs": {
+"price": "$$",
+"txt": "RING REMOVER BOTTLE",
+"t": 889.23
+}
+},
+"beats": [
+887.55,
+889.23,
+891.43
+]
+},
+{
+"a": 893.13,
+"b": 894.03,
+"vid": true,
+"k": "cltoilet/p350",
+"ofs": 0.24,
+"z": [
+1.42,
+1.48
+],
+"o": [
+42,
+40
+],
+"desc": "Loretta stands alone in her bright farmhouse bathroom, holding a grey pumice sto",
+"tin": "whip"
+},
+{
+"a": 894.03,
+"b": 895.43,
+"vid": true,
+"k": "cltoilet/p349",
+"ofs": 1.28,
+"z": [
+1.12,
+1.167
+],
+"o": [
+50,
+40
+],
+"desc": "Loretta stands in her bathroom, holding the wet pumice stone in one hand and the"
+},
+{
+"a": 895.43,
+"b": 897.01,
+"vid": true,
+"k": "cltoilet/p349",
+"ofs": 2.68,
+"z": [
+1.517,
+1.547
+],
+"o": [
+50,
+40
+],
+"desc": "Loretta stands in her bathroom, holding the wet pumice stone in one hand and the",
+"dx": 0,
+"punch": true
+},
+{
+"a": 897.01,
+"b": 898.59,
+"k": "p352",
+"z": [
+1.02,
+1.056
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "Loretta's wrinkled hands hold a small white kitchen timer, her thumb poised over"
+},
+{
+"a": 898.59,
+"b": 900.49,
+"k": "p352",
+"z": [
+1.373,
+1.403
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "Loretta's wrinkled hands hold a small white kitchen timer, her thumb poised over",
+"punch": true
+},
+{
+"a": 900.49,
+"b": 902.19,
+"k": "p353",
+"z": [
+1.1,
+1.156
+],
+"o": [
+30,
+70
+],
+"dx": 0,
+"desc": "A close-up of a pumice stone resting on the edge of a bathroom sink."
+},
+{
+"a": 902.19,
+"b": 904.16,
+"k": "p353",
+"z": [
+1.502,
+1.532
+],
+"o": [
+30,
+70
+],
+"dx": 0,
+"desc": "A close-up of a pumice stone resting on the edge of a bathroom sink.",
+"punch": true
+},
+{
+"a": 904.16,
+"b": 905.26,
+"k": "p354",
+"z": [
+1.02,
+1.058
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "An elderly woman holding a pumice stone the size of a bar of soap next to a toil"
+},
+{
+"a": 905.26,
+"b": 906.46,
+"k": "p354",
+"z": [
+1.376,
+1.406
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "An elderly woman holding a pumice stone the size of a bar of soap next to a toil",
+"punch": true
+},
+{
+"a": 906.46,
+"b": 908.74,
+"vid": true,
+"k": "cltoilet/p356",
+"ofs": 1.15,
+"z": [
+1.42,
+1.472
+],
+"o": [
+50,
+32
+],
+"desc": "An elderly woman scrubbing a hard-water ring inside a toilet bowl with a pumice "
+},
+{
+"a": 908.74,
+"b": 910.87,
+"vid": true,
+"k": "cltoilet/p356",
+"ofs": 3.43,
+"z": [
+1.62,
+1.65
+],
+"o": [
+50,
+32
+],
+"desc": "An elderly woman scrubbing a hard-water ring inside a toilet bowl with a pumice ",
+"dx": 0,
+"punch": true
+},
+{
+"a": 910.87,
+"b": 912.41,
+"k": "p357",
+"z": [
+1.04,
+1.077
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "A close-up of the base of a toilet showing the wax seal area."
+},
+{
+"a": 912.41,
+"b": 914.17,
+"k": "p357",
+"z": [
+1.401,
+1.431
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "A close-up of the base of a toilet showing the wax seal area.",
+"punch": true
+},
+{
+"a": 914.17,
+"b": 915.77,
+"k": "p358",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": 30,
+"desc": "An elderly woman looking at a wax seal under a toilet, preparing to call a handy"
+},
+{
+"a": 915.77,
+"b": 916.97,
+"vid": true,
+"k": "cltoilet/p360",
+"ofs": 0.81,
+"z": [
+1.12,
+1.17
+],
+"o": [
+42,
+32
+],
+"desc": "An elderly woman holding a phone to her ear while looking at a wax seal under a "
+},
+{
+"a": 916.97,
+"b": 918.15,
+"vid": true,
+"k": "cltoilet/p360",
+"ofs": 2.01,
+"z": [
+1.522,
+1.552
+],
+"o": [
+42,
+32
+],
+"desc": "An elderly woman holding a phone to her ear while looking at a wax seal under a ",
+"dx": 0,
+"punch": true
+},
+{
+"a": 918.15,
+"b": 919.57,
+"k": "p359",
+"z": [
+1.04,
+1.01
+],
+"o": [
+30,
+55
+],
+"dx": 40,
+"desc": "Close-up of Loretta's wrinkled hand holding the cordless phone to her ear, her f"
+},
+{
+"a": 919.57,
+"b": 921.01,
+"k": "p359",
+"z": [
+1.313,
+1.343
+],
+"o": [
+30,
+55
+],
+"dx": 0,
+"desc": "Close-up of Loretta's wrinkled hand holding the cordless phone to her ear, her f",
+"punch": true
+},
+{
+"a": 921.01,
+"b": 922.49,
+"k": "p364",
+"z": [
+1.1,
+1.1800000000000002
+],
+"o": [
+30,
+55
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand lowering the white toilet brush head int"
+},
+{
+"a": 922.49,
+"b": 923.69,
+"k": "p355",
+"z": [
+1.04,
+1.096
+],
+"o": [
+70,
+70
+],
+"dx": -40,
+"desc": "Close-up of Loretta's wrinkled hand holding the grey pumice stone against the wh"
+},
+{
+"a": 923.69,
+"b": 925.07,
+"k": "p355",
+"z": [
+1.425,
+1.455
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "Close-up of Loretta's wrinkled hand holding the grey pumice stone against the wh",
+"punch": true
+},
+{
+"a": 925.07,
+"b": 926.87,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.28
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 926.87,
+"b": 928.56,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.03
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 928.56,
+"b": 955.8,
+"k": "",
+"c": "Checklist",
+"props": {
+"k": "p362",
+"head": "The whole list",
+"items": [
+{
+"t": 928.6,
+"txt": "Brush: dry under the lid",
+"k": "p363"
+},
+{
+"t": 933.32,
+"txt": "Base & bolts: weekly",
+"k": "p365"
+},
+{
+"t": 936.22,
+"txt": "Under the rim: toothbrush",
+"k": "p366"
+},
+{
+"t": 939.59,
+"txt": "Hinges: monthly",
+"k": "p367"
+},
+{
+"t": 944.13,
+"txt": "Flush handle: daily",
+"k": "p369"
+},
+{
+"t": 949.39,
+"txt": "The ring: wet pumice",
+"k": "p372"
+}
+]
+},
+"beats": [
+930.94,
+933.32,
+934.58,
+936.22,
+937.78,
+939.59,
+941.61,
+944.13,
+945.15,
+946.73,
+947.99,
+949.39,
+951.19,
+952.57,
+954.15
+]
+},
+{
+"a": 955.8,
+"b": 964.78,
+"k": "",
+"c": "PageUp",
+"props": {
+"k": "p376",
+"pages": [
+{
+"src": "img/cltoilet/page9.jpg",
+"tab": "PAGE 9",
+"t": 955.9,
+"hl": 26
+},
+{
+"src": "img/cltoilet/page10.jpg",
+"tab": "PAGE 10",
+"t": 960.08,
+"hl": 40
+}
+],
+"caption": {
+"txt": "exact amounts \u00b7 steps in order",
+"t": 961.44
+}
+}
+},
+{
+"a": 964.78,
+"b": 966.42,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+],
+"tin": "whip"
+},
+{
+"a": 966.42,
+"b": 968.3,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 968.3,
+"b": 969.73,
+"k": "p378",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 30,
+"desc": "The narrator placing the book on a shelf or counter to keep it."
+},
+{
+"a": 969.73,
+"b": 970.79,
+"vid": true,
+"k": "cltoilet/p380",
+"ofs": 1.1,
+"z": [
+1.2,
+1.176
+],
+"o": [
+42,
+40
+],
+"desc": "The elderly woman holding a notebook and pen, writing down instructions in the b"
+},
+{
+"a": 970.79,
+"b": 971.9,
+"vid": true,
+"k": "cltoilet/p380",
+"ofs": 2.16,
+"z": [
+1.528,
+1.558
+],
+"o": [
+42,
+40
+],
+"desc": "The elderly woman holding a notebook and pen, writing down instructions in the b",
+"dx": 0,
+"punch": true
+},
+{
+"a": 971.9,
+"b": 974.29,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 974.29,
+"b": 976.19,
+"k": "p381",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "The elderly woman walking through the bathroom doorway holding the notebook."
+},
+{
+"a": 976.19,
+"b": 978.39,
+"k": "p382",
+"z": [
+1.1,
+1.04
+],
+"o": [
+55,
+40
+],
+"dx": -40,
+"desc": "The elderly woman opening the book while standing next to the toilet."
+},
+{
+"a": 978.39,
+"b": 980.2,
+"k": "p383",
+"z": [
+1.02,
+1.1
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Medium shot of the elderly narrator with white hair and glasses standing alone b"
+},
+{
+"a": 980.2,
+"b": 981.97,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 981.97,
+"b": 988.69,
+"k": "",
+"c": "Comment",
+"props": {
+"k": "p385",
+"q": "Which spot have you been ignoring?",
+"opts": [
+{
+"txt": "the brush",
+"t": 986.37
+},
+{
+"txt": "the base",
+"t": 987.35
+},
+{
+"txt": "the handle",
+"t": 988.0500000000001
+}
+]
+},
+"beats": [
+984.19,
+986.37,
+987.35,
+988.05
+]
+},
+{
+"a": 988.69,
+"b": 990.13,
+"vid": true,
+"k": "cltoilet/p386",
+"ofs": 1.26,
+"z": [
+1.3,
+1.25
+],
+"o": [
+42,
+40
+],
+"desc": "The elderly woman pointing to the base and handle of the toilet brush.",
+"tin": "whip"
+},
+{
+"a": 990.13,
+"b": 991.35,
+"k": "p387",
+"z": [
+1.1,
+1.162
+],
+"o": [
+45,
+70
+],
+"dx": 0,
+"desc": "The elderly woman opening the toilet brush holder to reveal its interior."
+},
+{
+"a": 991.35,
+"b": 992.51,
+"k": "p387",
+"z": [
+1.51,
+1.54
+],
+"o": [
+45,
+70
+],
+"dx": 0,
+"desc": "The elderly woman opening the toilet brush holder to reveal its interior.",
+"punch": true
+},
+{
+"a": 992.51,
+"b": 993.83,
+"k": "p388",
+"z": [
+1.02,
+1.084
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse "
+},
+{
+"a": 993.83,
+"b": 994.99,
+"k": "p388",
+"z": [
+1.409,
+1.439
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse ",
+"punch": true
+},
+{
+"a": 994.99,
+"b": 996.59,
+"vid": true,
+"k": "cltoilet/p390",
+"ofs": 1.26,
+"z": [
+1.42,
+1.453
+],
+"o": [
+50,
+40
+],
+"desc": "Edna sitting in a living room chair while Danny reads a story to her from a book"
+},
+{
+"a": 996.59,
+"b": 997.9,
+"vid": true,
+"k": "cltoilet/p390",
+"ofs": 2.86,
+"z": [
+1.62,
+1.65
+],
+"o": [
+50,
+40
+],
+"desc": "Edna sitting in a living room chair while Danny reads a story to her from a book",
+"dx": 0,
+"punch": true
+},
+{
+"a": 997.9,
+"b": 999.85,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 999.85,
+"b": 1000.67,
+"k": "p391",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "A woman smelling a pleasant scent, like a flower or a candle, in a bright room."
+},
+{
+"a": 1000.67,
+"b": 1001.55,
+"k": "p392",
+"z": [
+1.04,
+0.98
+],
+"o": [
+45,
+40
+],
+"dx": 40,
+"desc": "Edna looking directly at the camera with an encouraging expression, perhaps hold"
+},
+{
+"a": 1001.55,
+"b": 1002.81,
+"k": "p389",
+"z": [
+1.1,
+1.04
+],
+"o": [
+55,
+70
+],
+"dx": 0,
+"desc": "A close-up of Edna holding a letter or reading a story from a piece of paper."
+},
+{
+"a": 1002.81,
+"b": 1003.69,
+"k": "p394",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Medium shot of the elderly narrator with white hair, glasses and a lilac blouse "
+},
+{
+"a": 1003.69,
+"b": 1005.13,
+"k": "p395",
+"z": [
+1.02,
+1.08
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta stands before the refrigerator, her face visible, showing a gentle, know"
+},
+{
+"a": 1005.13,
+"b": 1006.57,
+"k": "p395",
+"z": [
+1.404,
+1.434
+],
+"o": [
+40,
+50
+],
+"dx": 0,
+"desc": "Loretta stands before the refrigerator, her face visible, showing a gentle, know",
+"punch": true
+},
+{
+"a": 1006.57,
+"b": 1019.44,
+"k": "",
+"c": "Thumb",
+"props": {
+"k": "p393",
+"thumb": "img/cltoilet/th_clsteel.jpg",
+"tag": "NEXT TIME",
+"words": [
+[
+"The",
+1008.95
+],
+[
+"Best",
+1009.21
+],
+[
+"Way",
+1009.51
+],
+[
+"to",
+1009.73
+],
+[
+"Clean",
+1010.03
+],
+[
+"Stainless",
+1010.27
+],
+[
+"Steel",
+1010.81
+],
+[
+"Appliances",
+1011.21
+]
+]
+}
+},
+{
+"a": 1019.44,
+"b": 1021.09,
+"vid": true,
+"k": "cltoilet/p398",
+"ofs": 0.25,
+"z": [
+1.3,
+1.25
+],
+"o": [
+58,
+32
+],
+"desc": "Loretta faces the refrigerator, her wrinkled hands holding the damp rag. She loo",
+"tin": "zoom"
+},
+{
+"a": 1021.09,
+"b": 1021.91,
+"k": "p397",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "Loretta, seen from the side, stands at the kitchen counter with the refrigerator"
+},
+{
+"a": 1021.91,
+"b": 1022.95,
+"k": "p399",
+"z": [
+1.04,
+1.011
+],
+"o": [
+55,
+40
+],
+"dx": 0,
+"desc": "Extreme close-up of Loretta's aged hands wiping the stainless steel refrigerator"
+},
+{
+"a": 1022.95,
+"b": 1024.09,
+"k": "p399",
+"z": [
+1.315,
+1.345
+],
+"o": [
+55,
+40
+],
+"dx": 0,
+"desc": "Extreme close-up of Loretta's aged hands wiping the stainless steel refrigerator",
+"punch": true
+},
+{
+"a": 1024.09,
+"b": 1024.93,
+"k": "p400",
+"z": [
+1.02,
+1.1400000000000001
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Loretta, seen from a three-quarter angle, steps back from the refrigerator and a"
+},
+{
+"a": 1024.93,
+"b": 1026.05,
+"k": "p401",
+"z": [
+1.1,
+1.1800000000000002
+],
+"o": [
+70,
+70
+],
+"dx": 0,
+"desc": "Close-up of the elderly narrator's hand wiping the white door of the refrigerato"
+},
+{
+"a": 1026.05,
+"b": 1026.87,
+"k": "p402",
+"z": [
+1.22,
+1.3
+],
+"o": [
+70,
+70
+],
+"dx": 40,
+"desc": "Close-up of Loretta's wrinkled hands holding a white rag, wiping the outside of "
+},
+{
+"a": 1026.87,
+"b": 1028.43,
+"k": "p403",
+"z": [
+1.02,
+1.08
+],
+"o": [
+60,
+50
+],
+"dx": 30,
+"desc": "Medium shot of Loretta from the waist down, spraying a clear liquid from a spray"
+},
+{
+"a": 1028.43,
+"b": 1029.99,
+"k": "p403",
+"z": [
+1.404,
+1.434
+],
+"o": [
+60,
+50
+],
+"dx": 0,
+"desc": "Medium shot of Loretta from the waist down, spraying a clear liquid from a spray",
+"punch": true
+},
+{
+"a": 1029.99,
+"b": 1032.53,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1032.53,
+"b": 1034.71,
+"k": "av",
+"av": true,
+"z": [
+1.24,
+1.27
+],
+"o": [
+50,
+34
+],
+"punch": true
+},
+{
+"a": 1034.71,
+"b": 1039.83,
+"k": "",
+"c": "Note",
+"props": {
+"k": "p405",
+"lines": [
+"Waste not, want not."
+],
+"sig": "Mama",
+"chip": {
+"txt": "\u2026about the bathroom too",
+"t": 1038.45
+}
+},
+"beats": [
+1036.57,
+1038.45
+]
+},
+{
+"a": 1039.83,
+"b": 1041.89,
+"k": "p406",
+"z": [
+1.02,
+1.062
+],
+"o": [
+50,
+50
+],
+"dx": -30,
+"desc": "A wide shot of the vlogger smiling and waving at the camera in a tidy bathroom t",
+"tin": "whip"
+},
+{
+"a": 1041.89,
+"b": 1043.79,
+"k": "p406",
+"z": [
+1.38,
+1.41
+],
+"o": [
+50,
+50
+],
+"dx": 0,
+"desc": "A wide shot of the vlogger smiling and waving at the camera in a tidy bathroom t",
+"punch": true
+},
+{
+"a": 1043.79,
+"b": 1044.83,
+"k": "p407",
+"z": [
+1.1,
+1.159
+],
+"o": [
+70,
+40
+],
+"dx": 40,
+"desc": "A clean, well-lit shot of a tidy bathroom with a toilet, sink, and folded towels"
+},
+{
+"a": 1044.83,
+"b": 1045.9,
+"k": "p407",
+"z": [
+1.507,
+1.537
+],
+"o": [
+70,
+40
+],
+"dx": 0,
+"desc": "A clean, well-lit shot of a tidy bathroom with a toilet, sink, and folded towels",
+"punch": true
+},
+{
+"a": 1045.9,
+"b": 1047.79,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"kick": [
+{
+"txt": "every single week",
+"a": 65.98,
+"b": 68.38,
+"hand": true
+},
+{
+"txt": "NOT OPINIONS",
+"a": 107.34,
+"b": 109.54
+},
+{
+"txt": "ALMOST NO MONEY",
+"a": 108.76,
+"b": 111.16,
+"side": "r"
+},
+{
+"txt": "ONE THING AT A TIME",
+"a": 193.67,
+"b": 196.47
+},
+{
+"txt": "GLOVES ON",
+"a": 219.28,
+"b": 221.88,
+"red": true
+},
+{
+"txt": "8 THINGS \u00b7 40 JOBS",
+"a": 231.18,
+"b": 233.98
+},
+{
+"txt": "treat it like a dishrag",
+"a": 277.49,
+"b": 279.69,
+"hand": true
+},
+{
+"txt": "DAMP + DARK = SMELL",
+"a": 282.51,
+"b": 285.51,
+"red": true
+},
+{
+"txt": "ONE PRODUCT PER DAY",
+"a": 340.1,
+"b": 342.3
+},
+{
+"txt": "OPEN THE WINDOW",
+"a": 341.92,
+"b": 344.22,
+"side": "r"
+},
+{
+"txt": "NEVER BLEACH THEN VINEGAR",
+"a": 459.55,
+"b": 462.75,
+"red": true
+},
+{
+"txt": "ONE PRODUCT PER DAY",
+"a": 562.2,
+"b": 564.5
+},
+{
+"txt": "peroxide in its own brown bottle",
+"a": 564.03,
+"b": 566.83,
+"hand": true,
+"side": "r"
+},
+{
+"txt": "GLOVES ON IF YOUR HANDS ARE SORE",
+"a": 664.71,
+"b": 667.11,
+"red": true
+},
+{
+"txt": "ONE PRODUCT \u00b7 KEEP THE RAG DRY",
+"a": 773.6,
+"b": 776.4
+},
+{
+"txt": "1st Saturday of spring & fall",
+"a": 896.13,
+"b": 899.53,
+"hand": true
+},
+{
+"txt": "STILL SMELLS? THE WAX SEAL",
+"a": 913.87,
+"b": 916.87
+},
+{
+"txt": "CALL A HANDYMAN",
+"a": 916.81,
+"b": 919.61,
+"red": true,
+"side": "r"
+},
+{
+"txt": "what does YOUR brush holder look like?",
+"a": 989.35,
+"b": 992.35,
+"hand": true
+},
+{
+"txt": "a clean bathroom is a quiet blessing",
+"a": 1043.33,
+"b": 1045.93,
+"hand": true
+},
+{
+"txt": "8 things that do 40 jobs",
+"a": 125.19,
+"b": 127.59,
+"hand": true
+},
+{
+"txt": "the card you read at the sink",
+"a": 172.06,
+"b": 174.46,
+"hand": true
+},
+{
+"txt": "Never mix these",
+"a": 189.43,
+"b": 191.83,
+"hand": true
+},
+{
+"txt": "BONUS: THE $3 RING FIX",
+"a": 710.93,
+"b": 713.53,
+"red": true
+}
+],
+"pop": [
+{
+"t": 104.24,
+"txt": "5 MISTAKES",
+"d": 1.0
+},
+{
+"t": 281.28,
+"txt": "STINKS",
+"d": 1.0
+},
+{
+"t": 368.5,
+"txt": "NOBODY",
+"d": 1.0
+},
+{
+"t": 393.45,
+"txt": "NEVER",
+"d": 1.0
+},
+{
+"t": 505.54,
+"txt": "NEVER",
+"d": 1.0
+},
+{
+"t": 909.67,
+"txt": "40 YEARS",
+"d": 1.0
+}
+],
+"hud": {
+"a": 270.77,
+"b": 832.03,
+"chs": [
+270.77,
+386.61,
+499.18,
+609.44,
+719.99
+],
+"hide": [
+[
+270.77,
+274.1
+],
+[
+386.61,
+389.9
+],
+[
+499.18,
+502.4
+],
+[
+609.44,
+612.6
+],
+[
+719.99,
+723.0
+],
+[
+807.21,
+817.27
+],
+[
+832.03,
+836.97
+],
+[
+981.97,
+988.69
+],
+[
+1006.57,
+1019.44
+]
+]
+},
+"sfx": [
+[
+65.02,
+"foley/spray_trigger_a",
+0.15
+],
+[
+65.98,
+"design/whoosh_quick",
+0.18
+],
+[
+76.24,
+"foley/scrub_toilet",
+0.2
+],
+[
+86.4,
+"design/page_stiff",
+0.2
+],
+[
+88.08,
+"design/page_stiff",
+0.2
+],
+[
+92.2,
+"design/pop_soap_bubble",
+0.3
+],
+[
+92.46,
+"design/pop_soap_bubble",
+0.3
+],
+[
+93.52,
+"design/pop_soap_bubble",
+0.3
+],
+[
+94.5,
+"design/pop_soap_bubble",
+0.3
+],
+[
+94.98,
+"design/pop_soap_bubble",
+0.3
+],
+[
+97.32,
+"design/stamp_rubber",
+0.45
+],
+[
+100.16,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+104.18,
+"design/whoosh_quick",
+0.14
+],
+[
+107.34,
+"design/whoosh_quick",
+0.18
+],
+[
+108.76,
+"design/whoosh_quick",
+0.18
+],
+[
+116.6,
+"design/riser_rev",
+0.22
+],
+[
+116.75,
+"design/page_turn_big",
+0.45
+],
+[
+117.08,
+"design/stamp_traditional",
+0.22
+],
+[
+120.45,
+"design/page_turn_big",
+0.45
+],
+[
+120.78,
+"design/stamp_traditional",
+0.22
+],
+[
+123.57,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+125.19,
+"design/whoosh_quick",
+0.18
+],
+[
+126.35,
+"foley/scrub_toilet",
+0.15
+],
+[
+127.61,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+127.87,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+137.1,
+"design/swell_wind",
+0.18
+],
+[
+137.2,
+"design/camera_shutter",
+0.3
+],
+[
+140.9,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+157.44,
+"design/swell_suspense",
+0.2
+],
+[
+158.82,
+"foley/light_pull_switch",
+0.5
+],
+[
+160.58,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+165.3,
+"design/page_turn_big",
+0.45
+],
+[
+165.63,
+"design/stamp_traditional",
+0.22
+],
+[
+168.42,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+168.68,
+"design/page_stiff",
+0.2
+],
+[
+169.5,
+"design/page_stiff",
+0.15
+],
+[
+172.06,
+"design/whoosh_quick",
+0.18
+],
+[
+173.18,
+"design/page_stiff",
+0.2
+],
+[
+174.16,
+"design/page_stiff",
+0.2
+],
+[
+180.54,
+"foley/spray_trigger_a",
+0.15
+],
+[
+184.4,
+"design/page_turn_big",
+0.45
+],
+[
+184.73,
+"design/stamp_traditional",
+0.22
+],
+[
+187.52,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+189.43,
+"design/whoosh_quick",
+0.18
+],
+[
+190.77,
+"foley/spray_trigger_a",
+0.2
+],
+[
+192.03,
+"foley/spray_trigger_a",
+0.2
+],
+[
+193.67,
+"design/whoosh_quick",
+0.18
+],
+[
+197.94,
+"design/impact_drum_subtle",
+0.45
+],
+[
+197.94,
+"design/swell_suspense",
+0.18
+],
+[
+197.99,
+"design/alarm_short",
+0.1
+],
+[
+202.46,
+"design/impact_drum_subtle",
+0.45
+],
+[
+202.51,
+"design/alarm_short",
+0.1
+],
+[
+205.94,
+"design/impact_drum_subtle",
+0.45
+],
+[
+205.99,
+"design/alarm_short",
+0.1
+],
+[
+208.96,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+210.98,
+"foley/glove_pull",
+0.15
+],
+[
+212.42,
+"design/whoosh_sweep_small",
+0.3
+],
+[
+212.77,
+"design/pencil_strokes",
+0.3
+],
+[
+214.45,
+"design/pencil_strokes",
+0.3
+],
+[
+215.79,
+"design/pencil_strokes",
+0.3
+],
+[
+217.43,
+"design/pencil_strokes",
+0.3
+],
+[
+219.1,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+219.28,
+"design/whoosh_quick",
+0.18
+],
+[
+221.16,
+"foley/glove_pull",
+0.15
+],
+[
+224.46,
+"design/page_stiff",
+0.2
+],
+[
+225.2,
+"foley/spray_trigger_a",
+0.2
+],
+[
+226.0,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+226.26,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+227.4,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+231.18,
+"design/whoosh_quick",
+0.18
+],
+[
+233.75,
+"design/click_slide",
+0.3
+],
+[
+233.8,
+"foley/cap_open",
+0.18
+],
+[
+238.87,
+"design/click_slide",
+0.3
+],
+[
+238.92,
+"foley/cap_open",
+0.18
+],
+[
+242.33,
+"design/click_slide",
+0.3
+],
+[
+242.38,
+"foley/cap_open",
+0.18
+],
+[
+244.36,
+"design/click_slide",
+0.3
+],
+[
+244.41,
+"foley/cap_open",
+0.18
+],
+[
+250.26,
+"design/click_slide",
+0.3
+],
+[
+250.31,
+"foley/cap_open",
+0.18
+],
+[
+253.57,
+"design/click_slide",
+0.3
+],
+[
+253.62,
+"foley/cap_open",
+0.18
+],
+[
+256.39,
+"design/click_slide",
+0.3
+],
+[
+256.44,
+"foley/cap_open",
+0.18
+],
+[
+259.79,
+"design/click_slide",
+0.3
+],
+[
+259.84,
+"foley/cap_open",
+0.18
+],
+[
+266.27,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+269.37,
+"design/riser_rev",
+0.22
+],
+[
+270.74,
+"design/impact_drum_deep",
+0.45
+],
+[
+270.82,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+273.8,
+"design/whoosh_air",
+0.25
+],
+[
+277.49,
+"design/whoosh_quick",
+0.18
+],
+[
+281.22,
+"design/whoosh_quick",
+0.14
+],
+[
+282.51,
+"design/whoosh_quick",
+0.18
+],
+[
+283.47,
+"foley/scrub_toilet",
+0.15
+],
+[
+291.17,
+"foley/water_sink_run",
+0.15
+],
+[
+298.55,
+"foley/water_pour_short",
+0.15
+],
+[
+300.25,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+301.33,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+302.49,
+"design/paper_slide",
+0.4
+],
+[
+306.01,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+306.11,
+"design/pencil_strokes",
+0.3
+],
+[
+308.87,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+308.97,
+"design/pencil_strokes",
+0.3
+],
+[
+314.02,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+314.12,
+"design/pencil_strokes",
+0.3
+],
+[
+317.11,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+317.21,
+"design/pencil_strokes",
+0.3
+],
+[
+322.37,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+322.47,
+"design/pencil_strokes",
+0.3
+],
+[
+327.38,
+"design/riser_rev",
+0.22
+],
+[
+328.78,
+"design/impact_drum_subtle",
+0.35
+],
+[
+328.88,
+"design/stamp_rubber",
+0.6
+],
+[
+329.03,
+"design/pencil_strokes",
+0.35
+],
+[
+333.71,
+"design/riser_rev",
+0.22
+],
+[
+335.11,
+"design/whoosh_air_quick",
+0.3
+],
+[
+335.46,
+"design/click_slide",
+0.35
+],
+[
+337.22,
+"design/pencil_strokes",
+0.4
+],
+[
+339.49,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+340.1,
+"design/whoosh_quick",
+0.18
+],
+[
+341.92,
+"design/whoosh_quick",
+0.18
+],
+[
+359.29,
+"design/paper_slide",
+0.4
+],
+[
+359.39,
+"design/pen_write",
+0.32
+],
+[
+365.87,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+368.44,
+"design/whoosh_quick",
+0.14
+],
+[
+378.83,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+379.83,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+385.21,
+"design/riser_rev",
+0.22
+],
+[
+386.58,
+"design/impact_drum_deep",
+0.45
+],
+[
+386.66,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+389.6,
+"design/whoosh_air",
+0.25
+],
+[
+393.39,
+"design/whoosh_quick",
+0.14
+],
+[
+397.07,
+"foley/scrub_toothbrush",
+0.15
+],
+[
+398.27,
+"foley/scrub_toilet",
+0.15
+],
+[
+401.79,
+"foley/spray_trigger_a",
+0.15
+],
+[
+413.4,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+416.5,
+"design/paper_slide",
+0.4
+],
+[
+417.89,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+417.99,
+"design/pencil_strokes",
+0.3
+],
+[
+423.03,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+423.13,
+"design/pencil_strokes",
+0.3
+],
+[
+425.08,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+425.18,
+"design/pencil_strokes",
+0.3
+],
+[
+435.66,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+435.76,
+"design/pencil_strokes",
+0.3
+],
+[
+437.56,
+"design/riser_rev",
+0.22
+],
+[
+438.96,
+"design/impact_drum_subtle",
+0.35
+],
+[
+439.06,
+"design/stamp_rubber",
+0.6
+],
+[
+439.21,
+"design/pencil_strokes",
+0.35
+],
+[
+445.39,
+"design/riser_rev",
+0.22
+],
+[
+446.79,
+"design/whoosh_air_quick",
+0.3
+],
+[
+447.14,
+"design/click_slide",
+0.35
+],
+[
+450.22,
+"design/pencil_strokes",
+0.4
+],
+[
+454.97,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+455.23,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+459.55,
+"design/whoosh_quick",
+0.18
+],
+[
+462.83,
+"foley/scrub_toilet",
+0.15
+],
+[
+472.42,
+"design/paper_slide",
+0.4
+],
+[
+472.52,
+"design/pen_write",
+0.32
+],
+[
+480.54,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+485.25,
+"foley/scrub_toilet",
+0.15
+],
+[
+494.71,
+"design/page_stiff",
+0.2
+],
+[
+497.78,
+"design/riser_rev",
+0.22
+],
+[
+497.91,
+"design/page_stiff",
+0.2
+],
+[
+499.15,
+"design/impact_drum_deep",
+0.45
+],
+[
+499.23,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+502.1,
+"design/whoosh_air",
+0.25
+],
+[
+505.48,
+"design/whoosh_quick",
+0.14
+],
+[
+507.0,
+"design/swell_wind",
+0.2
+],
+[
+507.0,
+"foley/ceramic_scrape",
+0.15
+],
+[
+515.63,
+"design/paper_slide",
+0.4
+],
+[
+515.73,
+"design/pen_write",
+0.32
+],
+[
+522.03,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+527.99,
+"design/paper_slide",
+0.4
+],
+[
+529.35,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+529.45,
+"design/pencil_strokes",
+0.3
+],
+[
+532.87,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+532.97,
+"design/pencil_strokes",
+0.3
+],
+[
+536.51,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+536.61,
+"design/pencil_strokes",
+0.3
+],
+[
+540.13,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+547.44,
+"design/riser_rev",
+0.22
+],
+[
+548.84,
+"design/impact_drum_subtle",
+0.35
+],
+[
+548.94,
+"design/stamp_rubber",
+0.6
+],
+[
+549.09,
+"design/pencil_strokes",
+0.35
+],
+[
+555.39,
+"design/riser_rev",
+0.22
+],
+[
+556.79,
+"design/tick_timer",
+0.3
+],
+[
+557.49,
+"design/impact_drum_subtle",
+0.3
+],
+[
+561.65,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+562.2,
+"design/whoosh_quick",
+0.18
+],
+[
+564.03,
+"design/whoosh_quick",
+0.18
+],
+[
+570.57,
+"foley/scrub_toilet",
+0.15
+],
+[
+572.93,
+"foley/scrub_toilet",
+0.15
+],
+[
+575.33,
+"foley/scrub_toilet",
+0.15
+],
+[
+577.07,
+"foley/scrub_toilet",
+0.15
+],
+[
+578.93,
+"design/paper_slide",
+0.4
+],
+[
+579.03,
+"design/pen_write",
+0.32
+],
+[
+590.45,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+597.07,
+"design/page_stiff",
+0.15
+],
+[
+597.93,
+"design/whoosh_sweep_small",
+0.3
+],
+[
+600.37,
+"design/camera_shutter",
+0.3
+],
+[
+608.04,
+"design/riser_rev",
+0.22
+],
+[
+609.41,
+"design/impact_drum_deep",
+0.45
+],
+[
+609.49,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+612.3,
+"design/whoosh_air",
+0.25
+],
+[
+614.68,
+"foley/seat_toilet_close",
+0.15
+],
+[
+616.01,
+"foley/seat_toilet_close",
+0.15
+],
+[
+618.58,
+"foley/seat_toilet_close",
+0.15
+],
+[
+620.68,
+"foley/seat_toilet_close",
+0.15
+],
+[
+627.23,
+"design/paper_slide",
+0.4
+],
+[
+627.33,
+"design/pen_write",
+0.32
+],
+[
+631.83,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+632.09,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+637.75,
+"design/paper_slide",
+0.4
+],
+[
+641.09,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+641.19,
+"design/pencil_strokes",
+0.3
+],
+[
+643.95,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+644.05,
+"design/pencil_strokes",
+0.3
+],
+[
+646.07,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+646.17,
+"design/pencil_strokes",
+0.3
+],
+[
+647.73,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+647.83,
+"design/pencil_strokes",
+0.3
+],
+[
+651.22,
+"design/riser_rev",
+0.22
+],
+[
+652.62,
+"design/impact_drum_subtle",
+0.35
+],
+[
+652.72,
+"design/stamp_rubber",
+0.6
+],
+[
+652.87,
+"design/pencil_strokes",
+0.35
+],
+[
+662.16,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+663.75,
+"foley/glove_pull",
+0.15
+],
+[
+664.71,
+"design/whoosh_quick",
+0.18
+],
+[
+665.67,
+"design/riser_rev",
+0.22
+],
+[
+667.07,
+"design/whoosh_air_quick",
+0.3
+],
+[
+667.42,
+"design/click_slide",
+0.35
+],
+[
+670.04,
+"design/pencil_strokes",
+0.4
+],
+[
+675.07,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+676.89,
+"foley/scrub_toothbrush",
+0.2
+],
+[
+678.59,
+"foley/scrub_toothbrush",
+0.2
+],
+[
+680.27,
+"foley/seat_toilet_close",
+0.15
+],
+[
+681.93,
+"foley/seat_toilet_close",
+0.15
+],
+[
+687.6,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+688.88,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+690.64,
+"foley/flush_bathroom",
+0.15
+],
+[
+690.74,
+"design/riser_rev",
+0.22
+],
+[
+692.14,
+"design/tick_timer",
+0.3
+],
+[
+692.84,
+"design/impact_drum_subtle",
+0.3
+],
+[
+695.49,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+706.13,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+706.91,
+"foley/flush_bathroom",
+0.2
+],
+[
+708.59,
+"foley/flush_bathroom",
+0.15
+],
+[
+710.93,
+"design/whoosh_quick",
+0.18
+],
+[
+718.59,
+"design/riser_rev",
+0.22
+],
+[
+719.96,
+"design/impact_drum_deep",
+0.45
+],
+[
+720.04,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+722.7,
+"design/whoosh_air",
+0.25
+],
+[
+728.83,
+"foley/flush_bathroom",
+0.15
+],
+[
+729.49,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+729.75,
+"foley/flush_bathroom",
+0.15
+],
+[
+731.15,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+731.91,
+"foley/spray_trigger_a",
+0.15
+],
+[
+732.89,
+"foley/spray_trigger_a",
+0.15
+],
+[
+736.85,
+"foley/flush_bathroom",
+0.15
+],
+[
+741.7,
+"design/paper_slide",
+0.4
+],
+[
+741.8,
+"design/pen_write",
+0.32
+],
+[
+744.02,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+748.31,
+"design/paper_slide",
+0.4
+],
+[
+749.41,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+749.51,
+"design/pencil_strokes",
+0.3
+],
+[
+752.59,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+752.69,
+"design/pencil_strokes",
+0.3
+],
+[
+754.87,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+754.97,
+"design/pencil_strokes",
+0.3
+],
+[
+759.63,
+"design/riser_rev",
+0.22
+],
+[
+761.03,
+"design/impact_drum_subtle",
+0.35
+],
+[
+761.13,
+"design/stamp_rubber",
+0.6
+],
+[
+761.28,
+"design/pencil_strokes",
+0.35
+],
+[
+768.07,
+"design/riser_rev",
+0.22
+],
+[
+769.47,
+"design/whoosh_air_quick",
+0.3
+],
+[
+769.82,
+"design/click_slide",
+0.35
+],
+[
+772.97,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+773.23,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+773.6,
+"design/whoosh_quick",
+0.18
+],
+[
+774.33,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+779.91,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+782.01,
+"design/riser_rev",
+0.22
+],
+[
+783.41,
+"design/tick_timer",
+0.3
+],
+[
+784.11,
+"design/impact_drum_subtle",
+0.3
+],
+[
+784.91,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+789.48,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+791.12,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+792.75,
+"design/paper_slide",
+0.4
+],
+[
+792.85,
+"design/pen_write",
+0.32
+],
+[
+799.41,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+799.67,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+801.01,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+807.21,
+"design/whoosh_sweep_small",
+0.3
+],
+[
+807.91,
+"design/click_interface",
+0.3
+],
+[
+816.97,
+"design/whoosh_cine_wind",
+0.3
+],
+[
+817.07,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+817.35,
+"foley/water_pour_short",
+0.15
+],
+[
+824.89,
+"design/page_stiff",
+0.15
+],
+[
+830.63,
+"design/riser_rev",
+0.22
+],
+[
+832.0,
+"design/impact_drum_deep",
+0.45
+],
+[
+832.08,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+836.67,
+"design/whoosh_air",
+0.25
+],
+[
+836.79,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+838.37,
+"foley/pumice_griddle",
+0.15
+],
+[
+839.77,
+"foley/pumice_griddle",
+0.15
+],
+[
+843.01,
+"design/page_stiff",
+0.15
+],
+[
+843.79,
+"design/riser_rev",
+0.22
+],
+[
+845.19,
+"design/whoosh_air_quick",
+0.3
+],
+[
+845.54,
+"design/click_slide",
+0.35
+],
+[
+851.3,
+"design/pencil_strokes",
+0.4
+],
+[
+852.43,
+"design/paper_slide",
+0.4
+],
+[
+852.43,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+852.53,
+"design/pencil_strokes",
+0.3
+],
+[
+854.45,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+854.55,
+"design/pencil_strokes",
+0.3
+],
+[
+857.65,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+857.75,
+"design/pencil_strokes",
+0.3
+],
+[
+860.55,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+860.65,
+"design/pencil_strokes",
+0.3
+],
+[
+862.13,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+862.23,
+"design/pencil_strokes",
+0.3
+],
+[
+870.31,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+870.41,
+"design/pencil_strokes",
+0.3
+],
+[
+875.32,
+"design/whoosh_sweep_small",
+0.18
+],
+[
+875.42,
+"design/pencil_strokes",
+0.3
+],
+[
+877.47,
+"design/riser_rev",
+0.22
+],
+[
+878.87,
+"design/impact_drum_subtle",
+0.35
+],
+[
+878.97,
+"design/stamp_rubber",
+0.6
+],
+[
+879.12,
+"design/pencil_strokes",
+0.35
+],
+[
+884.71,
+"design/riser_rev",
+0.22
+],
+[
+886.11,
+"design/whoosh_air_quick",
+0.3
+],
+[
+886.46,
+"design/click_slide",
+0.35
+],
+[
+889.5,
+"design/pencil_strokes",
+0.4
+],
+[
+892.95,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+894.11,
+"foley/pumice_griddle",
+0.2
+],
+[
+895.51,
+"foley/pumice_griddle",
+0.2
+],
+[
+896.13,
+"design/whoosh_quick",
+0.18
+],
+[
+906.54,
+"foley/scrub_toilet",
+0.2
+],
+[
+908.82,
+"foley/scrub_toilet",
+0.2
+],
+[
+909.61,
+"design/whoosh_quick",
+0.14
+],
+[
+913.87,
+"design/whoosh_quick",
+0.18
+],
+[
+916.81,
+"design/whoosh_quick",
+0.18
+],
+[
+922.57,
+"foley/pumice_griddle",
+0.15
+],
+[
+923.77,
+"foley/pumice_griddle",
+0.15
+],
+[
+928.56,
+"design/whoosh_sweep_small",
+0.3
+],
+[
+928.77,
+"design/pencil_strokes",
+0.3
+],
+[
+933.49,
+"design/pencil_strokes",
+0.3
+],
+[
+936.39,
+"design/pencil_strokes",
+0.3
+],
+[
+939.76,
+"design/pencil_strokes",
+0.3
+],
+[
+944.3,
+"design/pencil_strokes",
+0.3
+],
+[
+949.56,
+"design/pencil_strokes",
+0.3
+],
+[
+955.9,
+"design/page_turn_big",
+0.45
+],
+[
+956.23,
+"design/stamp_traditional",
+0.22
+],
+[
+960.08,
+"design/page_turn_big",
+0.45
+],
+[
+960.41,
+"design/stamp_traditional",
+0.22
+],
+[
+964.6,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+968.38,
+"design/page_stiff",
+0.15
+],
+[
+969.81,
+"design/page_stiff",
+0.2
+],
+[
+970.87,
+"design/page_stiff",
+0.2
+],
+[
+974.37,
+"design/page_stiff",
+0.15
+],
+[
+981.97,
+"design/click_interface",
+0.3
+],
+[
+986.37,
+"design/pop_soap_bubble",
+0.3
+],
+[
+987.35,
+"design/pop_soap_bubble",
+0.3
+],
+[
+988.05,
+"design/pop_soap_bubble",
+0.3
+],
+[
+988.51,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+989.35,
+"design/whoosh_quick",
+0.18
+],
+[
+995.07,
+"design/page_stiff",
+0.2
+],
+[
+996.67,
+"design/page_stiff",
+0.2
+],
+[
+1006.57,
+"design/whoosh_sweep_small",
+0.3
+],
+[
+1007.27,
+"design/click_interface",
+0.3
+],
+[
+1019.14,
+"design/whoosh_cine_wind",
+0.3
+],
+[
+1019.24,
+"design/whoosh_cine_fast",
+0.28
+],
+[
+1019.52,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+1021.99,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+1023.03,
+"foley/towel_wipe_hands",
+0.15
+],
+[
+1028.51,
+"foley/spray_trigger_a",
+0.15
+],
+[
+1034.71,
+"design/paper_slide",
+0.4
+],
+[
+1034.81,
+"design/pen_write",
+0.32
+],
+[
+1039.65,
+"design/whoosh_fast_trans",
+0.3
+],
+[
+1043.33,
+"design/whoosh_quick",
+0.18
+]
+]
+}
