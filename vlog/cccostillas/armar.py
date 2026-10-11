@@ -13,7 +13,7 @@ os.makedirs(O + "seg", exist_ok=True)
 FPS, W, H, SR = 30, 1920, 1080, 48000
 LIP = float(os.environ.get("LIP", "0"))
 J = lambda f, d=None: json.load(open(f, encoding="utf8")) if os.path.exists(f) else d
-segs = J(D + "segs.json"); AVW = J(R + "_v3/cccostillas_avwin.json"); AVW2 = J(R + "_v3/cccostillas_avwin2.json")
+segs = J(D + "segs.json"); AVW = J(R + "_v3/cccostillas_avwin.json"); AVW2 = J(R + "_v3/cccostillas_avwin2.json"); LG2 = J(R + "_v3/cccostillas_lag2.json", {"scale": 1.0, "lag": LIP})
 SOLO = set(sys.argv[sys.argv.index("--solo") + 1].split(",")) if "--solo" in sys.argv else None
 fr = lambda t: round(t * FPS)
 dur = lambda f: float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", f], capture_output=True, text=True).stdout or 0)
@@ -81,7 +81,7 @@ while k < len(segs):
     elif s["kind"] == "av":
         w = next(w for w in AVW["win"] if w["s"] - 0.01 <= s["s"] <= w["e"]); plan.append((s, n, "av", R + "out/cccostillas_avatar/reel.mp4", w["off"] + (s["s"] - w["ms"]) + LIP, 1.0, None))
     elif s["kind"] == "av2":   # 2º /run del avatar (formato nuevo: avatar ~25 %, sin esperar a agnes)
-        w = next(w for w in AVW2["win"] if w["s"] - 0.01 <= s["s"] <= w["e"]); plan.append((s, n, "av", R + "out/cccostillas_avatar2/reel.mp4", w["off"] + (s["s"] - w["ms"]) + LIP, 1.0, None))
+        w = next(w for w in AVW2["win"] if w["s"] - 0.01 <= s["s"] <= w["e"]); plan.append((s, n, "av", R + "out/cccostillas_avatar2/reel.mp4", LG2["scale"] * (w["off"] + (s["s"] - w["ms"])) + LG2["lag"], 1.0, None))   # deriva lineal InfiniteTalk (vlog/cc/avlag.py)
     elif s["kind"] == "vl":
         f, kb = vlok[s["id"]]; plan.append((s, n, "vl" if f else "vl_kb", f or kb, 0.0, 1.0, None))
     elif s["kind"] == "cmp":
