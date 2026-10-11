@@ -1035,14 +1035,12 @@
 {
 "a": 596.68,
 "b": 608.62,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ar_hc_kitchen",
+"k": "s059_n_spoon_bowl",
 "vid": true,
-"cap": "1951 \u00b7 two women in a kitchen",
-"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
-}
+"z": [
+1.0,
+1.0
+]
 },
 {
 "a": 608.62,
@@ -1242,10 +1240,10 @@
 "k": "",
 "c": "Arc",
 "props": {
-"src": "ar_bowl",
+"src": "ar_hc_kitchen",
 "vid": true,
-"cap": "1950s \u00b7 a woman with a bowl in the kitchen",
-"credit": "A Day of Thanksgiving (1951, Prelinger Archives) \u00b7 Public domain"
+"cap": "1951 \u00b7 two women in a kitchen",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
 }
 },
 {
