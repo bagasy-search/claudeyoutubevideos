@@ -1,1 +1,240 @@
-[]
+[
+ {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 311,
+  "dur": 271,
+  "t": 10.38,
+  "props": {
+   "dish": "Café de olla",
+   "lines": [
+    "Piloncillo y canela",
+    "Un clavito, una tira de naranja",
+    "5 minutos de reposo"
+   ],
+   "at": [
+    2.62,
+    4.26,
+    6.26
+   ],
+   "bed": "vid/cccafe/bed_menu.mp4#279"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 588,
+  "dur": 215,
+  "t": 19.59,
+  "props": {
+   "photo": "img/cccafe/joven.jpg",
+   "caption": "mi primer café de olla · 1986",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.51,
+    2.77
+   ],
+   "bed": "vid/cccafe/bed_joven.mp4#219"
+  }
+ },
+ {
+  "c": "ClCoffeeThermo",
+  "k": "termo",
+  "from": 6171,
+  "dur": 442,
+  "props": {
+   "bed": "img/cccafe/bed_termo.jpg",
+   "at": [
+    1.54,
+    3.4,
+    6.12,
+    7.42
+   ]
+  },
+  "t": 205.71
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 8307,
+  "dur": 210,
+  "props": {
+   "title": "Café de olla · 6 tazas",
+   "rows": [
+    {
+     "k": "Agua",
+     "v": "6 tazas"
+    },
+    {
+     "k": "Piloncillo",
+     "v": "120 g"
+    },
+    {
+     "k": "Canela en raja",
+     "v": "2 rajas"
+    },
+    {
+     "k": "Clavos de olor",
+     "v": "2"
+    },
+    {
+     "k": "Cáscara de naranja (sin lo blanco)",
+     "v": "1 tira"
+    },
+    {
+     "k": "Café molido grueso, tostado oscuro",
+     "v": "½ taza"
+    }
+   ],
+   "mark": "lo duro hierve, el café no",
+   "note": "molido grueso",
+   "bed": "vid/cccafe/bed_1.mp4#214"
+  },
+  "t": 276.9
+ },
+ {
+  "c": "ClTimer30",
+  "k": "siete",
+  "from": 10492,
+  "dur": 108,
+  "props": {
+   "minutes": 7,
+   "label": "7 min",
+   "text": "hasta que se derrita el piloncillo",
+   "bed": "vid/cccafe/bed_2.mp4#112"
+  },
+  "t": 349.74
+ },
+ {
+  "c": "ClTimer30",
+  "k": "cinco",
+  "from": 12052,
+  "dur": 108,
+  "props": {
+   "minutes": 5,
+   "label": "5 min",
+   "text": "tapado, con la lumbre apagada",
+   "bed": "vid/cccafe/bed_3.mp4#112"
+  },
+  "t": 401.72
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 14119,
+  "dur": 303,
+  "props": {
+   "before": "img/cccafe/antes.jpg",
+   "after": "img/cccafe/despues.jpg",
+   "a": "HERVIDO 10 MIN",
+   "b": "APAGADO + 5 DE REPOSO",
+   "note": "mismo grano"
+  },
+  "t": 470.65
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 14585,
+  "dur": 285,
+  "props": {
+   "title": "El café de olla de la fonda",
+   "items": [
+    "Agua, piloncillo, canela, clavo y naranja",
+    "7 minutos hirviendo",
+    "Apagas la lumbre",
+    "Café, una vuelta y tapa",
+    "5 minutos de reposo",
+    "Cuelas. Nunca vuelve a hervir"
+   ],
+   "bed": "vid/cccafe/bed_5.mp4#289"
+  },
+  "t": 486.18
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 27197,
+  "dur": 853,
+  "props": {
+   "head": "LA OLLA DE CAFÉ",
+   "lines": [
+    [
+     "Café molido, 45 g",
+     "US$1.10"
+    ],
+    [
+     "Piloncillo, 120 g",
+     "US$0.60"
+    ],
+    [
+     "Canela",
+     "US$0.30"
+    ],
+    [
+     "Clavos y naranja",
+     "US$0.20"
+    ],
+    [
+     "Toda la olla · 6 tazas",
+     "US$2.20"
+    ]
+   ],
+   "total": [
+    "Cada taza",
+    "US$0.37"
+   ],
+   "bed": "vid/cccafe/bed_6.mp4#857"
+  },
+  "t": 906.56
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 29431,
+  "dur": 180,
+  "props": {
+   "page": "img/cccafe/page63.jpg",
+   "pageNo": 63,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/cccafe/bed_7.mp4#184"
+  },
+  "t": 981.03
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 29839,
+  "dur": 210,
+  "props": {
+   "qr": "img/cccafe/qr.jpg",
+   "cover": "img/cccafe/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/cccafe/bed_8.mp4#214"
+  },
+  "t": 994.64
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 30289,
+  "dur": 150,
+  "props": {
+   "thumb": "img/cccafe/th_ccrepollo.jpg",
+   "title": "El repollo de la fonda",
+   "next": true,
+   "bed": "vid/cccafe/bed_9.mp4#154"
+  },
+  "t": 1009.63
+ }
+]
