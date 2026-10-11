@@ -90,7 +90,7 @@ fs.writeFileSync(V3 + "cues.json", JSON.stringify(qc, null, 1));
 const refs = new Set([`${SLUG}.m4a`, `ref_${SLUG}.png`]);
 const walk = (o) => { if (typeof o === "string") { o = o.replace(/#\d+$/, ""); if (/^(img|broll|vid|sfx|avatar_clips)\/.+\.(jpg|png|mp4|m4a|mp3|wav)$/.test(o)) refs.add(o); } else if (o && typeof o === "object") Object.values(o).forEach(walk); };
 walk(cues); walk(ovs); walk(sfx); walk(foley);
-for (const c of cues) if (c.clip && c.clipF < c.dur) refs.add(c.clip.replace(/\.mp4$/, "_last.jpg"));
+for (const c of cues) if (c.clip && c.clipF < (c.cofs || 0) + c.dur) refs.add(c.clip.replace(/\.mp4$/, "_last.jpg"));
 const faltan = [...refs].filter((r) => !ex(r));
 fs.writeFileSync(R + `_${SLUG}_assets.txt`, [...refs].filter((r) => ex(r)).join("\n") + "\n");
 console.log("assets al tar:", refs.size - faltan.length, faltan.length ? `· ⛔ FALTAN ${faltan.length}: ${faltan.slice(0, 8).join(" ")}` : "");

@@ -329,3 +329,16 @@ img/rhgrout/b_brownbottle2.jpg
 broll/rhgrout_st/bd_g45.mp4
 broll/rhgrout_st/bd_g46.mp4
 img/rhgrout/r_glovesoff.jpg
+vid/rhgrout/k_soapscrub_last.jpg
+vid/rhgrout/k_mudmop_last.jpg
+broll/rhgrout/r_oneline_last.jpg
+broll/rhgrout/b_wirebrush2_last.jpg
+broll/rhgrout/b_scratched_last.jpg
+broll/rhgrout/b_steelwool_last.jpg
+broll/rhgrout/b_whitegrout_last.jpg
+broll/rhgrout/b_soapbucket_last.jpg
+broll/rhgrout/r_killed_last.jpg
+vid/rhgrout/k_nailtest_last.jpg
+broll/rhgrout/b_epoxy_last.jpg
+vid/rhgrout/k_vacuum3_last.jpg
+vid/rhgrout/k_towelfoot_last.jpg
