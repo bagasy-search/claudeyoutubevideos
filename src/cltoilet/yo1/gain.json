@@ -11,6 +11,7 @@
 "design/pencil_strokes": 4,
 "design/pen_write": 4,
 "design/pop_soap_bubble": 1.189,
+"design/riser_rev": 0.692,
 "design/stamp_rubber": 0.733,
 "design/stamp_traditional": 0.891,
 "design/swell_suspense": 0.708,
@@ -41,5 +42,5 @@
 "foley/towel_wipe_hands": 1.096,
 "foley/water_bubble": 1.95,
 "foley/water_pour_short": 1.096,
-"design/riser_rev": 0.631
+"foley/water_sink_run": 0.785
 }
