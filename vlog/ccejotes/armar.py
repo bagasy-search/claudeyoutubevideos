@@ -6,7 +6,7 @@
 #   vl  → vlog/ccejotes/<esc>/clips (vl_check ok), trunc al tramo, mudo (la voz es el máster) · sin clip: Ken-Burns K(n-1)→Kn
 #   cmp → cama del componente (Ken-Burns lento); el componente lo pone Remotion encima (ov.json)
 # Salida: D:/rtmp/cc/ccejotes/arm/vlog_full.mp4 (mudo) + arm/mix_full.wav (voz + clips) + arm/armado.json (qué fuente usó cada tramo)
-#   LIP=0.10 python vlog/ccejotes/armar.py [--solo ids,coma]   (re-hace sólo esos tramos y vuelve a concatenar)
+#   LIP=0 python vlog/ccejotes/armar.py [--solo ids,coma]   (re-hace sólo esos tramos y vuelve a concatenar)
 import json, os, subprocess, sys, numpy as np
 R = "D:/Proyectos/video2-wt/ccfrijoles/"; D = R + "vlog/ccejotes/"; C = "D:/rtmp/cc/ccejotes/"; O = os.environ.get("ARM", "C:/rtmp_cc/ccejotes/arm/")
 os.makedirs(O + "seg", exist_ok=True)

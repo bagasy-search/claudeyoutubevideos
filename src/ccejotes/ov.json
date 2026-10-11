@@ -1,5 +1,52 @@
 [
  {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 445,
+  "dur": 210,
+  "t": 14.85,
+  "props": {
+   "dish": "Ejotes de la fonda",
+   "lines": [
+    "Un solo sartén",
+    "15 minutos",
+    "Nunca más la olla de agua"
+   ],
+   "at": [
+    2.52,
+    3.76,
+    4.61
+   ],
+   "bed": "vid/ccejotes/bed_menu.mp4#218"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 661,
+  "dur": 211,
+  "t": 22.05,
+  "props": {
+   "photo": "img/ccejotes/joven.jpg",
+   "caption": "con mi amá, en la fonda · 1987",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.49,
+    2.75
+   ],
+   "bed": "vid/ccejotes/bed_joven.mp4#215"
+  }
+ },
+ {
   "c": "ClGreenClock",
   "k": "reloj",
   "from": 6761,
