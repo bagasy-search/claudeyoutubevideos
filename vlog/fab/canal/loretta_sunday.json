@@ -1,0 +1,42 @@
+{
+ "canal": "Loretta's Clean Home",
+ "serie": "Loretta's Clean Home (The Church Lady Way): an 81-year-old Iowa church lady shows, in her own little farmhouse, the old right way to clean one thing",
+ "idioma": "en",
+ "protagonista": "loretta",
+ "pron": "she",
+ "voz": "loretta",
+ "cps": 14.6,
+ "ejemplos": "lor_",
+ "avatar_pct": [
+  10,
+  16
+ ],
+ "avatar_ref": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor.png",
+ "acciones": "spraying, wiping with a rag, scrubbing with an old toothbrush, pouring vinegar, lifting the toilet seat, holding a little hand mirror under the rim",
+ "prohibidas": [
+  "\bfree\b",
+  "\bgratis\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bwhop\b"
+ ],
+ "dir_refs": "D:/rtmp/fab/canal/loretta",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by her grandson with a phone at eye level, in the middle of the action: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a lamp or the daylight from the window), automatic white balance a bit off, slight phone noise, ordinary worn objects of an old Iowa farmhouse, plain bottles and rags with no labels, no beautiful composition.",
+ "personajes": {
+  "loretta": {
+   "nombre": "Loretta",
+   "cara": true,
+   "desc": "Loretta, an 81-year-old white American grandmother with short curly snow-white hair, thin wire-rimmed glasses, a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron, with old wrinkled hands"
+  }
+ },
+ "lugares_fijos": {
+  "bano": "Loretta's small old farmhouse bathroom: white porcelain toilet with a white plastic seat, white square wall tiles up to waist height and pale painted wall above, a white pedestal sink with chrome taps, a small window with a white lace half-curtain, a white bath mat, worn white hexagon tile floor, a wicker basket with folded towels",
+  "cocina": "Loretta's 1950s white farmhouse kitchen: a white enamel stove with chrome handles, yellow gingham curtains on the window, a small wooden cross on the wall, a rooster cookie jar on a dark wooden dresser, a worn wooden table, a wall calendar",
+  "lavadero": "the small laundry corner off Loretta's kitchen: an old white top-loading washer and dryer, a deep white utility sink, a wooden shelf with plain unlabeled jugs and bottles, a mop and a bucket, a cotton clothesline basket",
+  "bajo_pileta": "the open cabinet under Loretta's bathroom sink: a plastic caddy with plain unlabeled spray bottles, a jug of white vinegar, a brown bottle of peroxide, a box of baking soda, folded old rags, yellow rubber gloves"
+ },
+ "identidad": "Preserve the exact identity, face, short curly snow-white hair, thin wire-rimmed glasses, age and skin of the elderly woman in the reference photograph. She wears a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron.",
+ "cara_crop": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor_face.png"
+}

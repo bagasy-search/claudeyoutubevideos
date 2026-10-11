@@ -1,0 +1,1809 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 6.993,
+"k": "",
+"c": "DropOpen",
+"props": {
+"k": "n_hands_fold",
+"words": [
+[
+"Hands",
+0.0
+],
+[
+"folded",
+0.4
+],
+[
+"on",
+0.82
+],
+[
+"the",
+1.08
+],
+[
+"table,",
+1.26
+],
+[
+"honey.",
+1.76
+],
+[
+"She",
+2.36
+],
+[
+"said",
+2.62
+],
+[
+"it",
+2.78
+],
+[
+"the",
+3.02
+],
+[
+"same",
+3.22
+],
+[
+"way",
+3.4
+],
+[
+"every",
+3.64
+],
+[
+"year,",
+3.98
+],
+[
+"and",
+4.24
+],
+[
+"I'll",
+4.46
+],
+[
+"say",
+4.74
+],
+[
+"it",
+4.94
+],
+[
+"for",
+5.12
+],
+[
+"you",
+5.34
+],
+[
+"today.",
+5.6
+],
+[
+"It's",
+6.273
+],
+[
+"a",
+6.593
+],
+[
+"short",
+6.713
+]
+],
+"ripple": 0.4
+}
+},
+{
+"a": 6.993,
+"b": 15.713,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 15.713,
+"b": 23.58,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 23.58,
+"b": 32.2,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/smprayer/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"6",
+27.2
+],
+[
+"Things",
+27.25
+],
+[
+"My",
+27.14
+],
+[
+"Mother",
+27.42
+],
+[
+"Did",
+27.47
+],
+[
+"Every",
+28.36
+],
+[
+"Night",
+28.41
+],
+[
+"Before",
+28.46
+],
+[
+"Bed",
+28.51
+]
+],
+"k": "n_table_set"
+}
+},
+{
+"a": 32.2,
+"b": 40.47,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 40.47,
+"b": 46.913,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 46.913,
+"b": 54.533,
+"k": "s006_n_steam_kettle",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 54.533,
+"b": 61.973,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 61.973,
+"b": 72.42,
+"k": "s008_l_pickup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 72.42,
+"b": 86.797,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"items": [
+{
+"t": 76.76,
+"txt": "Read the prayer, slowly"
+},
+{
+"t": 83.65,
+"txt": "Find where each part comes from"
+},
+{
+"t": 93.61,
+"txt": "Say it together at the end"
+}
+],
+"k": "n_hands_tea"
+}
+},
+{
+"a": 86.797,
+"b": 94.013,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 94.013,
+"b": 100.47,
+"k": "s011_n_pie_window",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 100.47,
+"b": 112.653,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_bible",
+"verse": "In every thing give thanks: for this is the will of God in Christ Jesus concerning you.",
+"ref": "1 THESSALONIANS 5:18",
+"t": 100.81
+}
+},
+{
+"a": 112.653,
+"b": 117.675,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 117.675,
+"b": 122.697,
+"k": "s014_l_garden",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 122.697,
+"b": 130.373,
+"k": "s015_n_bread",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 130.373,
+"b": 138.14,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 138.14,
+"b": 145.887,
+"k": "s017_n_hands_pen",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 145.887,
+"b": 153.36,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 153.36,
+"b": 155.41,
+"k": "s019_n_apron",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 155.41,
+"b": 171.233,
+"k": "",
+"c": "PrayerLines",
+"props": {
+"k": "n_hands_fold",
+"head": "HER PRAYER",
+"lines": [
+{
+"t": 158.02,
+"txt": "Lord, thank you"
+},
+{
+"t": 159.86,
+"txt": "for the hands that grew it,"
+},
+{
+"t": 161.34,
+"txt": "the hands that cooked it,"
+},
+{
+"t": 162.94,
+"txt": "and the hands we're holding."
+}
+]
+}
+},
+{
+"a": 171.233,
+"b": 175.931,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 175.931,
+"b": 180.63,
+"k": "s022_l_table_prayer",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 180.63,
+"b": 189.827,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page39",
+"tab": "PAGE 39",
+"t": 180.63,
+"hl": 40
+}
+],
+"k": "n_table_set"
+}
+},
+{
+"a": 189.827,
+"b": 198.28,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 198.28,
+"b": 203.83,
+"k": "s025_l_soup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 203.83,
+"b": 211.12,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_corn",
+"vid": true,
+"cap": "1952 \u00b7 a farmer in the corn",
+"credit": "Texas Farm Family (1952) \u00b7 Public domain"
+}
+},
+{
+"a": 211.12,
+"b": 217.62,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 217.62,
+"b": 227.6,
+"k": "s028_l_pull_chair",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 227.6,
+"b": 234.04,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 234.04,
+"b": 239.575,
+"k": "s030_l_quilt",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 239.575,
+"b": 245.11,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_caudill",
+"vid": false,
+"cap": "1940 \u00b7 a family at supper on a farm",
+"credit": "Farm Security Administration (1940) \u00b7 Public domain"
+}
+},
+{
+"a": 245.11,
+"b": 256.207,
+"k": "s032_n_butter",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 256.207,
+"b": 266.947,
+"k": "s033_n_hallway",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 266.947,
+"b": 275.04,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 275.04,
+"b": 283.55,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_couple",
+"vid": true,
+"cap": "1952 \u00b7 a farm couple in the field",
+"credit": "Texas Farm Family (1952) \u00b7 Public domain"
+}
+},
+{
+"a": 283.55,
+"b": 300.8,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_field",
+"verse": "And let us not be weary in well doing: for in due season we shall reap, if we faint not.",
+"ref": "GALATIANS 6:9",
+"t": 284.22
+}
+},
+{
+"a": 300.8,
+"b": 305.673,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 305.673,
+"b": 310.547,
+"k": "s038_l_church_pew",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 310.547,
+"b": 326.683,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Nobody remembers the sandwiches.",
+"Everybody remembers that somebody brought them."
+],
+"sig": "Loretta",
+"k": "n_cooler",
+"size": 84
+}
+},
+{
+"a": 326.683,
+"b": 332.038,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 332.038,
+"b": 337.393,
+"k": "s041_l_kitchen_sink",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 337.393,
+"b": 344.393,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_stove_pots",
+"vid": true,
+"cap": "1950 \u00b7 a kitchen stove with pots",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 344.393,
+"b": 345.573,
+"k": "s043_n_grain_elevator",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 345.573,
+"b": 352.647,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 352.647,
+"b": 359.72,
+"k": "s045_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 359.72,
+"b": 369.0,
+"k": "s046_n_window_light",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 369.0,
+"b": 376.404,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 376.404,
+"b": 383.807,
+"k": "s048_l_rocker_porch",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 383.807,
+"b": 390.217,
+"k": "s049_l_hall",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 390.217,
+"b": 396.627,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_door",
+"vid": false,
+"cap": "1940s \u00b7 a farm kitchen with a wood stove",
+"credit": "Farm Security Administration (1940s) \u00b7 Public domain"
+}
+},
+{
+"a": 396.627,
+"b": 403.813,
+"k": "s051_n_hand_wood",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 403.813,
+"b": 409.501,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 409.501,
+"b": 415.19,
+"k": "s053_l_seeds",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 415.19,
+"b": 422.19,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_kettles_1950s",
+"vid": true,
+"cap": "1950s \u00b7 a big kitchen, pots at the stove",
+"credit": "Hotel and Restaurant Workers (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 422.19,
+"b": 428.98,
+"k": "s055_n_rug_floor",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 428.98,
+"b": 439.613,
+"k": "s056_n_hands_fold",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 439.613,
+"b": 446.395,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 446.395,
+"b": 453.177,
+"k": "s058_l_church_door",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 453.177,
+"b": 470.993,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_table_set",
+"verse": "And they, continuing daily with one accord in the temple, and breaking bread from house to house, did eat their meat with gladness and singleness of heart.",
+"ref": "ACTS 2:46",
+"t": 462.39
+}
+},
+{
+"a": 470.993,
+"b": 475.88,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 475.88,
+"b": 486.656,
+"k": "s061_l_wave",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 486.656,
+"b": 492.544,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_grimm",
+"vid": false,
+"cap": "1943 \u00b7 a family at Sunday dinner",
+"credit": "Office of War Information (1943) \u00b7 Public domain"
+}
+},
+{
+"a": 492.544,
+"b": 498.433,
+"k": "s063_l_dish_towel",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 498.433,
+"b": 503.756,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 503.756,
+"b": 515.271,
+"k": "s065_l_doorway",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 515.271,
+"b": 521.463,
+"k": "s066_n_sun_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 521.463,
+"b": 527.333,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 527.333,
+"b": 539.073,
+"k": "s068_l_coffee_book",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 539.073,
+"b": 546.073,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_mixer",
+"vid": true,
+"cap": "1951 \u00b7 a kitchen mixer going, a woman cooking",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 546.073,
+"b": 554.847,
+"k": "s070_n_fence_post",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 554.847,
+"b": 568.94,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THIS WEEK",
+"items": [
+{
+"t": 560.23,
+"txt": "Invite someone to eat with you"
+},
+{
+"t": 566.21,
+"txt": "A bowl of soup is plenty"
+}
+],
+"k": "n_table_set"
+}
+},
+{
+"a": 568.94,
+"b": 574.537,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 574.537,
+"b": 580.133,
+"k": "s073_l_church_kitchen",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 580.133,
+"b": 589.713,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/smprayer/qr.jpg",
+"t": 589.95
+}
+},
+{
+"a": 589.713,
+"b": 595.13,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 595.13,
+"b": 605.943,
+"k": "s076_l_grace_kids",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 605.943,
+"b": 611.34,
+"k": "s077_l_piano",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 611.34,
+"b": 618.567,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 618.567,
+"b": 624.567,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_reading_book_1951",
+"vid": true,
+"cap": "1951 \u00b7 a book, read slowly",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 624.567,
+"b": 629.58,
+"k": "s080_n_apple_blossom",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 629.58,
+"b": 651.007,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_bible",
+"verse": "He healeth the broken in heart, and bindeth up their wounds.",
+"ref": "PSALM 147:3",
+"t": 638.69
+}
+},
+{
+"a": 651.007,
+"b": 656.993,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 656.993,
+"b": 662.978,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_winn",
+"vid": false,
+"cap": "1940s \u00b7 a family at the dinner table",
+"credit": "Office of War Information photograph \u00b7 Public domain"
+}
+},
+{
+"a": 662.978,
+"b": 668.964,
+"k": "s084_n_clock",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 668.964,
+"b": 675.099,
+"k": "s085_n_jars",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 675.099,
+"b": 681.233,
+"k": "s086_n_potluck_dish",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 681.233,
+"b": 687.828,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 687.828,
+"b": 694.423,
+"k": "s088_l_grace_quiet",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 694.423,
+"b": 703.423,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_chickens",
+"vid": true,
+"cap": "1952 \u00b7 a farm wife and her chickens",
+"credit": "Texas Farm Family (1952) \u00b7 Public domain"
+}
+},
+{
+"a": 703.423,
+"b": 706.683,
+"k": "s090_n_turkey_soup",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 706.683,
+"b": 722.26,
+"k": "",
+"c": "PrayerLines",
+"props": {
+"k": "n_hands_fold",
+"head": "ONCE MORE, SLOWLY",
+"lines": [
+{
+"t": 712.49,
+"txt": "Lord, thank you for the hands that grew it."
+},
+{
+"t": 723.42,
+"txt": "The hands that cooked it."
+},
+{
+"t": 730.66,
+"txt": "And the hands we're holding."
+}
+]
+}
+},
+{
+"a": 722.26,
+"b": 728.657,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 728.657,
+"b": 735.053,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_grace1942",
+"vid": false,
+"cap": "1942 \u00b7 a Thanksgiving grace at the table",
+"credit": "Office of War Information (1942) \u00b7 Public domain"
+}
+},
+{
+"a": 735.053,
+"b": 741.1,
+"k": "s094_n_hands_rosary",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 741.1,
+"b": 747.147,
+"k": "s095_n_gravy",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 747.147,
+"b": 754.54,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 754.54,
+"b": 760.54,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_sink",
+"vid": true,
+"cap": "1950 \u00b7 a kitchen window over the sink",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
+}
+},
+{
+"a": 760.54,
+"b": 769.41,
+"k": "s098_l_gravy",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 769.41,
+"b": 776.887,
+"k": "s099_l_thermos",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 776.887,
+"b": 795.873,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_turkey_soup",
+"verse": "Gather up the fragments that remain, that nothing be lost.",
+"ref": "JOHN 6:12",
+"t": 802.59
+}
+},
+{
+"a": 795.873,
+"b": 801.113,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 801.113,
+"b": 806.353,
+"k": "s102_l_pie_window",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 806.353,
+"b": 814.025,
+"k": "s103_n_sandwich_wrap",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 814.025,
+"b": 821.698,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ph_fazio",
+"vid": false,
+"cap": "1940s \u00b7 a family at supper at home",
+"credit": "Office of War Information photograph \u00b7 Public domain"
+}
+},
+{
+"a": 821.698,
+"b": 829.37,
+"k": "s105_n_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 829.37,
+"b": 834.864,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 834.864,
+"b": 845.853,
+"k": "s107_l_beans",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 845.853,
+"b": 860.28,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/smprayer/th_next.jpg",
+"tag": "COMING UP",
+"words": [
+[
+"5",
+805.7
+],
+[
+"Habits",
+805.75
+],
+[
+"That",
+803.83
+],
+[
+"Push",
+803.88
+],
+[
+"God",
+803.93
+],
+[
+"Away",
+803.98
+],
+[
+"Without",
+804.03
+],
+[
+"You",
+826.86
+],
+[
+"Noticing",
+854.43
+]
+],
+"k": "n_table_set"
+}
+},
+{
+"a": 860.28,
+"b": 867.536,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 867.536,
+"b": 880.413,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/smprayer/th_other.jpg",
+"tag": "FROM MY OTHER CHANNEL",
+"words": [
+[
+"Most",
+829.7
+],
+[
+"People",
+829.75
+],
+[
+"Make",
+829.52
+],
+[
+"Turkey",
+827.22
+],
+[
+"Gravy",
+827.27
+],
+[
+"Wrong",
+827.32
+]
+],
+"k": "n_table_set"
+}
+},
+{
+"a": 880.413,
+"b": 888.623,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 888.623,
+"b": 898.607,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page39",
+"tab": "PAGE 39",
+"t": 888.62,
+"hl": 40
+}
+],
+"k": "n_table_set"
+}
+},
+{
+"a": 898.607,
+"b": 906.967,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 906.967,
+"b": 922.173,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Who taught YOU to say grace?",
+"opts": [
+{
+"txt": "Mother",
+"t": 917.23
+},
+{
+"txt": "Grandmother",
+"t": 917.75
+},
+{
+"txt": "Pastor",
+"t": 918.31
+}
+],
+"k": "n_window_light"
+}
+},
+{
+"a": 922.173,
+"b": 927.695,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 927.695,
+"b": 933.216,
+"k": "s116_l_bread",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 933.216,
+"b": 959.373,
+"k": "",
+"c": "PrayerLines",
+"props": {
+"k": "n_hands_fold",
+"head": "FOLD YOUR HANDS WITH ME",
+"lines": [
+{
+"t": 942.4,
+"txt": "Lord, thank you for the hands that grew it,"
+},
+{
+"t": 945.64,
+"txt": "the hands that cooked it,"
+},
+{
+"t": 947.3,
+"txt": "and the hands we're holding."
+}
+]
+}
+},
+{
+"a": 959.373,
+"b": 966.047,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 966.047,
+"b": 972.72,
+"k": "s119_l_tailgate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 972.72,
+"b": 979.04,
+"k": "s120_l_final_look",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 979.04,
+"b": 985.36,
+"k": "s121_l_stairs",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+}
+],
+"sfx": [
+[
+23.58,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+72.42,
+"design/paper_slide",
+0.25
+],
+[
+100.47,
+"design/page_turn_big",
+0.3
+],
+[
+155.41,
+"design/paper_slide",
+0.2
+],
+[
+180.63,
+"design/page_turn_big",
+0.35
+],
+[
+283.55,
+"design/page_turn_big",
+0.3
+],
+[
+310.55,
+"design/pen_write",
+0.25
+],
+[
+453.18,
+"design/page_turn_big",
+0.3
+],
+[
+554.85,
+"design/paper_slide",
+0.25
+],
+[
+580.13,
+"design/click_slide",
+0.25
+],
+[
+629.58,
+"design/page_turn_big",
+0.3
+],
+[
+706.68,
+"design/paper_slide",
+0.2
+],
+[
+776.89,
+"design/page_turn_big",
+0.3
+],
+[
+845.85,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+867.54,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+888.62,
+"design/page_turn_big",
+0.35
+],
+[
+906.97,
+"design/click_slide",
+0.22
+],
+[
+933.22,
+"design/paper_slide",
+0.2
+]
+],
+"end": 985.36
+}
