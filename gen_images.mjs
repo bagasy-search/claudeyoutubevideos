@@ -69,7 +69,7 @@ const genOne = async (item) => {
   let res, attempt = 0;
   while (true) {
     await slot(); // espaciado global
-    res = await fetch("https://api.openai.com/v1/images/generations", {
+    res = await fetch((() => { throw new Error("⛔ REGLA 8-oct-2026: imágenes SIN cara → agnes-image GRATIS. Usá scripts/gptimg.mjs (desvía solo las sin ref a agnes) o scripts/agnes_img.mjs."); })(), {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${KEY}` },
       body: JSON.stringify(body),

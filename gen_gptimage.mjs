@@ -55,7 +55,7 @@ async function gen(it, attempt = 1) {
       fd.set("image", new Blob([fs.readFileSync(it.ref)], { type: mime }), rfn);
       res = await fetch("https://api.openai.com/v1/images/edits", { method: "POST", headers: { "Authorization": `Bearer ${KEY}` }, body: fd });
     } else {
-      res = await fetch("https://api.openai.com/v1/images/generations", {
+      res = await fetch((() => { throw new Error("⛔ REGLA 8-oct-2026: imágenes SIN cara → agnes-image GRATIS. Usá scripts/gptimg.mjs (desvía solo las sin ref a agnes) o scripts/agnes_img.mjs."); })(), {
         method: "POST",
         headers: { "Authorization": `Bearer ${KEY}`, "Content-Type": "application/json" },
         body: JSON.stringify({ model: MODEL, prompt: it.prompt, n: 1, size: it.size || sizeArg, quality: qualArg, ...(it.background ? { background: it.background } : {}) }),

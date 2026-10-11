@@ -59,18 +59,59 @@ export async function releaseAsset(repo, tag, name, o = {}) {
   return { existe: !!a, size: a?.size || 0 };
 }
 
-/** Espera un run por POLL espaciado (≥ 5 min por defecto: reference_gh_actions_rate_limit_secundario). */
-export async function waitRun(repo, runId, { pollMs = 5 * 60_000, maxMs = 4 * 3600_000, log = console.log, ...o } = {}) {
+/**
+ * Espera un run SIN quemar la API (9-oct-2026, plan de escalar a 50 videos/día).
+ *
+ * ⛔ `gh run watch` consulta cada 3 s: con varios renders en paralelo dispara el 403 de límite SECUNDARIO
+ *    (que `gh api rate_limit` NO muestra) y el que espera se muere diciendo "falló" con el render sano.
+ *    El cuelgue NO se detecta preguntando seguido: lo corta GitHub solo (`timeout-minutes` de cada job en
+ *    render.yml → el run termina en failure y acá se ve en el próximo poll).
+ * Reglas: (1) 1 llamada liviana (`runs/<id>`) cada pollMs; (2) la lista de jobs (paginada, cara) sólo
+ *    cada jobsEveryMs y al terminar; (3) un 403/429 NO es "falló el render": se avisa y se sigue esperando;
+ *    (4) avisa si GitHub no asigna runners o si un job pasa su timeout sin que lo corten.
+ */
+export async function waitRun(repo, runId, { pollMs = 5 * 60_000, firstMs = 90_000, jobsEveryMs = 20 * 60_000, maxMs = 5 * 3600_000, jobTimeoutMin = 25, log = console.log, ...o } = {}) {
   const t0 = Date.now();
+  let ultJobs = 0, sinRespuesta = 0;
+  const jobsDe = async () => {
+    const r = await gh(["api", "--paginate", `repos/${repo}/actions/runs/${runId}/jobs?per_page=100`, "--jq", '.jobs[] | [.name, .status, (.conclusion // ""), (.started_at // "")] | @tsv'], { ...o, retries: 2, allowFail: true });
+    if (r.failed) return null;
+    return r.stdout.split(/\r?\n/).filter(Boolean).map((l) => { const [name, status, conclusion, started] = l.split("\t"); return { name, status, conclusion, started }; });
+  };
+  await sleep(Math.min(firstMs, pollMs));
   for (;;) {
-    const j = await ghJson(["run", "view", String(runId), "-R", repo, "--json", "status,conclusion,jobs"], o);
-    const jobs = j.jobs || [];
-    const ok = jobs.filter((x) => x.conclusion === "success").length;
-    const bad = jobs.filter((x) => ["failure", "cancelled", "timed_out"].includes(x.conclusion)).length;
-    log(`run ${runId}: ${j.status}${j.conclusion ? "/" + j.conclusion : ""} · jobs ok ${ok} · fallidos ${bad} · total ${jobs.length}`);
-    if (j.status === "completed") {
-      // ⛔ "cancelled" o 0 jobs NO es éxito aunque gh salga con 0
-      return { conclusion: j.conclusion, jobsOk: ok, jobsBad: bad, jobsTotal: jobs.length, ok: j.conclusion === "success" && bad === 0 && ok > 0 };
+    const r = await gh(["api", `repos/${repo}/actions/runs/${runId}`, "--jq", "[.status, (.conclusion // \"\")] | @tsv"], { ...o, retries: 2, allowFail: true });
+    if (r.failed) {
+      sinRespuesta++;
+      log(`run ${runId}: no pude consultar (${(r.out.match(/HTTP \d{3}|secondary rate limit|rate limit/i) || ["error"])[0]}) — el render SIGUE, vuelvo a mirar en ${Math.round(pollMs / 60000)} min`);
+      if (Date.now() - t0 > maxMs) throw new Error(`run ${runId}: sin respuesta de GitHub y pasaron ${Math.round(maxMs / 60000)} min`);
+      await sleep(pollMs);
+      continue;
+    }
+    sinRespuesta = 0;
+    const [status, conclusion] = r.stdout.trim().split("\t");
+    const terminado = status === "completed";
+    if (terminado || Date.now() - ultJobs > jobsEveryMs) {
+      ultJobs = Date.now();
+      const jobs = await jobsDe();
+      if (jobs) {
+        const ok = jobs.filter((x) => x.conclusion === "success").length;
+        const bad = jobs.filter((x) => ["failure", "cancelled", "timed_out"].includes(x.conclusion)).length;
+        const corriendo = jobs.filter((x) => x.status === "in_progress");
+        const enCola = jobs.filter((x) => x.status === "queued" || x.status === "waiting").length;
+        log(`run ${runId}: ${status}${conclusion ? "/" + conclusion : ""} · ok ${ok} · fallidos ${bad} · corriendo ${corriendo.length} · en cola ${enCola} · total ${jobs.length}`);
+        const min = (iso) => (Date.now() - Date.parse(iso)) / 60000;
+        const pasados = corriendo.filter((x) => /chunk|render/i.test(x.name) && x.started && min(x.started) > jobTimeoutMin + 10);
+        if (pasados.length) log(`  ⚠️ ${pasados.length} tramo(s) corriendo hace más de ${jobTimeoutMin + 10} min (${pasados.slice(0, 5).map((x) => x.name).join(", ")}): GitHub debería haberlos cortado — revisar el timeout-minutes del workflow`);
+        if (!terminado && enCola && !corriendo.length && !ok && (Date.now() - t0) > 20 * 60_000) log(`  ⚠️ hace ${Math.round((Date.now() - t0) / 60000)} min que GitHub no le da runners a ningún job (¿cola llena o Actions bloqueado por billing?)`);
+        if (terminado) return { conclusion, jobsOk: ok, jobsBad: bad, jobsTotal: jobs.length, ok: conclusion === "success" && bad === 0 && ok > 0 };
+      } else if (terminado) {
+        // ⛔ sin la lista de jobs no se puede confirmar que no haya chunks caídos: "success" del run alcanza
+        log(`run ${runId}: ${status}/${conclusion} (no pude bajar la lista de jobs)`);
+        return { conclusion, jobsOk: null, jobsBad: null, jobsTotal: null, ok: conclusion === "success" };
+      }
+    } else {
+      log(`run ${runId}: ${status} · ${Math.round((Date.now() - t0) / 60000)} min`);
     }
     if (Date.now() - t0 > maxMs) throw new Error(`run ${runId} no terminó en ${Math.round(maxMs / 60000)} min`);
     await sleep(pollMs);
