@@ -18,8 +18,12 @@ for q in json.load(open(R + f"_v3/{S}_paras.json", encoding="utf8")):
         caps.append((t, NOM[sec]))
 fmt = lambda t: f"{int(t // 60)}:{int(t % 60):02d}"
 link = f"https://recetario-de-la-fonda.vercel.app/?src={S}"
-cta = (f"📖 El Recetario de la Fonda: las 50 recetas de la fonda en un libro, por US$19 — menos de lo que cuesta una comida para dos.\n{link}")
-d = card["yt_description"].replace("[[CHAPTERS]]", "\n".join(f"{fmt(t)} {n}" for t, n in caps))
-d = d.replace("\n\nCapítulos:", f"\n\n{cta}\n\nCapítulos:", 1) if "Capítulos:" in d else d + "\n\n" + cta
+LO = {"ccfrijoles": "Los frijoles de olla sin remojar", "cccostillas": "Las costillas en la olla con su glaseado",
+      "ccejotes": "Los ejotes de un solo sartén", "cccafe": "El café de olla con piloncillo y canela", "ccrepollo": "El repollo de la fonda",
+      "ccmuslos": "Los muslos en su grasa con salsa", "cccarne": "La carne que se deshace en 3 horas", "cchuevos": "Los huevos sin aceite y la salsa roja",
+      "ccarroz": "El arroz rojo suelto y los refritos", "ccchuletas": "Las chuletas jugosas en rajas"}
+# renglón 1 = CTA a medida del video (feedback_cta_primer_renglon_todos_los_videos): lo de ESTE video + lo demás + ancla, sin precio de la guía
+cta = f"📖 {LO[S]}, con cantidades y tiempos exactos, + 49 recetas más de la fonda que en un restaurante te cobran US$15 o más el plato 👉 {link}"
+d = cta + "\n\n" + card["yt_description"].replace("[[CHAPTERS]]", "\n".join(f"{fmt(t)} {n}" for t, n in caps))
 json.dump({"title": card["title"], "description": d}, open(R + f"public/{S}_meta.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
 print(d)
