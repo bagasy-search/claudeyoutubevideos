@@ -1,5 +1,52 @@
 [
  {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 423,
+  "dur": 246,
+  "t": 14.09,
+  "props": {
+   "dish": "Costillas en la olla",
+   "lines": [
+    "2 horas en la olla",
+    "Tapadas en su salsa",
+    "La salsa se vuelve glaseado"
+   ],
+   "at": [
+    2.51,
+    3.75,
+    5.94
+   ],
+   "bed": "vid/cccostillas/bed_menu.mp4#255"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 675,
+  "dur": 215,
+  "t": 22.5,
+  "props": {
+   "photo": "img/cccostillas/joven.jpg",
+   "caption": "jueves de costillas · 1990",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.29,
+    2.67
+   ],
+   "bed": "vid/cccostillas/bed_joven.mp4#219"
+  }
+ },
+ {
   "c": "ClRibCut",
   "k": "tejido",
   "from": 4784,

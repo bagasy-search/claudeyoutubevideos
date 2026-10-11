@@ -8,9 +8,10 @@ import { ClVideoRef } from "./claudio/ClSarro";
 import { ClChip } from "./claudio/ClOverlays";
 import { ClTimer30 } from "./claudio/ClGauges";
 import { ClRibCut, ClRecipeCard } from "./claudio/ClCocina";
+import { ClMenuBoard, ClOldPhoto } from "./claudio/ClIntro";
 import OV from "./cccostillas/ov.json";
 import { TOTAL_FRAMES } from "./cccostillas/total";
-const C: Record<string, React.FC<any>> = { ClBookPage, ClQRCard, ClReceipt, ClBeforeAfter, ClCheck, ClVideoRef, ClChip, ClTimer30, ClRibCut, ClRecipeCard };
+const C: Record<string, React.FC<any>> = { ClMenuBoard, ClOldPhoto, ClBookPage, ClQRCard, ClReceipt, ClBeforeAfter, ClCheck, ClVideoRef, ClChip, ClTimer30, ClRibCut, ClRecipeCard };
 const Main: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     <OffthreadVideo src={staticFile("vid/cccostillas/vlog.mp4")} muted />
