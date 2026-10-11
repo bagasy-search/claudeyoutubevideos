@@ -1,5 +1,7 @@
 # Componentes de cvthighs (≈5 s, LIMPIO gana a denso). Anclados a la frase exacta del guion.
 OV = [
+ ("CvPromise", at("Last time I showed you the cabbage"), 7.0, {"title": "Glass-crisp chicken, no oil", "lines": ["Start them in a cold pan", "The skin fries in its own fat", "The cheapest, best piece"]}),
+ ("CvOldPhoto", at("I'm Claudio. I cooked for a cattle crew"), 7.5, {"img": I + "joven.jpg", "caption": "The chicken yard, 1986", "date": "'86 07 30", "stamp": "40 years · 14 men"}),
  ("ClDoDont", at("Here's what usually happens. You heat up a pan"), 5.0, {"yes": {"label": "Cold pan, no oil"}, "no": {"label": "Hot pan, pour of oil"}}),
  ("ClCheck", at("Step one. Eight bone-in, skin-on chicken thighs"), 10.0, {"title": "WHAT YOU NEED", "items": ["8 bone-in, skin-on thighs (3 lb)", "Salt and pepper", "½ onion, sliced", "1½ cups red chile sauce", "¼ cup chopped cilantro", "12-inch cast-iron skillet"]}),
  ("ClChip", at("Step two. Lay the thighs skin side down in the cold skillet"), 4.5, {"text": "Skin down · COLD pan · no oil", "corner": "tl"}),
