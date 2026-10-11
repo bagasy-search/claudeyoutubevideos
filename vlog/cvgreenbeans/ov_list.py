@@ -1,5 +1,7 @@
 # Componentes de cvgreenbeans (≈5 s, LIMPIO gana a denso). Anclados a la frase exacta del guion.
 OV = [
+ ("CvPromise", at("Last time I showed you the chicken thighs"), 7.0, {"title": "Bright green beans in 4 minutes", "lines": ["A quarter cup of water + a lid", "Never gray, never soggy", "Better than anything in a can"]}),
+ ("CvOldPhoto", at("I'm Claudio. I cooked for a cattle crew"), 7.5, {"img": I + "joven.jpg", "caption": "Summer garden, 1989", "date": "'89 08 11", "stamp": "40 years · 14 men"}),
  ("ClDoDont", at("Or they boil fresh ones in a big pot of water"), 5.0, {"yes": {"label": "Skillet, bacon fat, 4 min lid"}, "no": {"label": "Boiled 30 minutes"}}),
  ("ClCheck", at("Two pounds of fresh green beans. That serves six."), 10.0, {"title": "WHAT YOU NEED", "items": ["2 lb fresh green beans", "5 strips bacon, chopped", "½ onion, sliced", "1 Roma tomato, chopped", "2 cloves garlic, sliced", "¼ cup water · salt at the end"]}),
  ("ClChip", at("Step one. The bacon goes into the skillet"), 4.5, {"text": "Bacon · medium · 6-7 min", "corner": "tl"}),
