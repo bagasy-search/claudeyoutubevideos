@@ -1,0 +1,1709 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 4.08,
+"k": "",
+"c": "Apertura",
+"props": {}
+},
+{
+"a": 4.08,
+"b": 15.354,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 15.354,
+"b": 19.653,
+"k": "s002_l_skillet_lid",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 19.653,
+"b": 27.94,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 27.94,
+"b": 34.497,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 34.497,
+"b": 42.107,
+"k": "s005_n_dry_chop",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 42.107,
+"b": 51.647,
+"k": "s006_l_thin_chop",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 51.647,
+"b": 59.97,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 59.97,
+"b": 66.953,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 66.953,
+"b": 78.52,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckchops/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"Most",
+67.55
+],
+[
+"People",
+67.83
+],
+[
+"Are",
+68.11
+],
+[
+"Cooking",
+68.39
+],
+[
+"Pot",
+68.67
+],
+[
+"Roast",
+68.95
+],
+[
+"Wrong!",
+69.23
+]
+],
+"k": "n_bg_thumb"
+}
+},
+{
+"a": 78.52,
+"b": 87.594,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 87.594,
+"b": 97.25,
+"k": "s011_n_empty_chair",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 97.25,
+"b": 105.744,
+"k": "s012_l_funeral_line",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 105.744,
+"b": 113.077,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_serving_line",
+"vid": true,
+"cap": "1951 · a serving line of steam trays",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 113.077,
+"b": 120.73,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 120.73,
+"b": 145.32,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "TODAY YOU LEARN",
+"items": [
+{
+"t": 123.66,
+"txt": "The salt bath, for juice to the bone"
+},
+{
+"t": 129.89,
+"txt": "A hard sear, for a golden crust"
+},
+{
+"t": 134.03,
+"txt": "A slow finish under the onions"
+}
+],
+"k": "n_flour_board"
+}
+},
+{
+"a": 145.32,
+"b": 155.257,
+"k": "s016_l_point_page",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 155.257,
+"b": 163.603,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_maids",
+"vid": true,
+"cap": "1945 · two women in aprons at a dinner party",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 163.603,
+"b": 175.033,
+"k": "s018_l_bernice_stove",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 175.033,
+"b": 179.183,
+"k": "s019_n_towel_chops",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 179.183,
+"b": 188.683,
+"k": "s020_n_skillet_oil",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 188.683,
+"b": 193.98,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 193.98,
+"b": 204.1,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Grandma, write it down",
+"before it's gone."
+],
+"sig": "Danny, her grandson",
+"k": "n_sugar_jar",
+"size": 84
+}
+},
+{
+"a": 204.1,
+"b": 214.913,
+"k": "s023_n_hands_flour",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 214.913,
+"b": 220.31,
+"k": "s024_l_grandson_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 220.31,
+"b": 228.75,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 228.75,
+"b": 239.78,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_setting",
+"vid": true,
+"cap": "1945 · a woman sets the dinner table",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 239.78,
+"b": 248.83,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_guests",
+"vid": true,
+"cap": "1945 · guests talking at a table",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 248.83,
+"b": 254.176,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 254.176,
+"b": 269.817,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE NEED",
+"items": [
+{
+"t": 259.05,
+"txt": "6 bone-in pork chops, 1 to 1 1/4 inch thick"
+},
+{
+"t": 263.15,
+"txt": "4 cups cool water, 1/4 cup salt, 2 Tbsp brown sugar"
+},
+{
+"t": 261.89,
+"txt": "Brine: salt and brown sugar, stirred in"
+}
+],
+"k": "n_raw_chops"
+}
+},
+{
+"a": 269.817,
+"b": 276.337,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "KEEP GOING",
+"items": [
+{
+"t": 269.97,
+"txt": "1 tsp pepper, 1 tsp paprika, 1/2 tsp garlic powder"
+},
+{
+"t": 276.52,
+"txt": "2 Tbsp oil + 2 Tbsp butter"
+},
+{
+"t": 280.65,
+"txt": "2 large onions, sliced"
+},
+{
+"t": 283.77,
+"txt": "2 Tbsp flour"
+}
+],
+"k": "n_spice_dish"
+}
+},
+{
+"a": 276.337,
+"b": 286.61,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 286.61,
+"b": 297.24,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE LAST TWO",
+"items": [
+{
+"t": 286.81,
+"txt": "1/2 cup milk or cream"
+},
+{
+"t": 288.33,
+"txt": "1 tsp fresh thyme, or 1/2 tsp dried"
+}
+],
+"k": "n_rolling_pin"
+}
+},
+{
+"a": 297.24,
+"b": 306.487,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_ham_platter",
+"vid": true,
+"cap": "1956 · a whole ham on a platter with greens",
+"credit": "Pork People Like (1956) · Public domain"
+}
+},
+{
+"a": 306.487,
+"b": 311.85,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 311.85,
+"b": 321.137,
+"k": "s035_n_cast_iron_wall",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 321.137,
+"b": 329.417,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 1",
+"head": "THE BRINE",
+"steps": [
+{
+"t": 323.11,
+"txt": "Salt and brown sugar into 4 cups of cool water",
+"k": "n_brine_bowl"
+},
+{
+"t": 331.87,
+"txt": "Soak 30 minutes, never over 2 hours",
+"k": "n_bg_water"
+}
+]
+}
+},
+{
+"a": 329.417,
+"b": 336.644,
+"k": "s037_l_brine_stir",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 336.644,
+"b": 342.974,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 342.974,
+"b": 351.17,
+"k": "s039_n_bg_pan_bottom",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 351.17,
+"b": 357.276,
+"k": "s040_l_pat_dry",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 357.276,
+"b": 364.01,
+"k": "s041_n_patted_chops",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 364.01,
+"b": 374.05,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_gravy_boat",
+"yes": {
+"k": "n_gravy_boat",
+"txt": "Pat dry, all over",
+"t": 364.16
+},
+"no": {
+"k": "n_gravy_boat",
+"txt": "A wet chop steams, no crust",
+"t": 364.46
+}
+}
+},
+{
+"a": 374.05,
+"b": 383.1,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 325,
+"unit": "DEGREES F",
+"txt": "Heat the oven, then season",
+"k": "n_oven_dial",
+"dur": 24
+}
+},
+{
+"a": 383.1,
+"b": 393.06,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 393.06,
+"b": 400.073,
+"k": "s045_l_season_chops",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 400.073,
+"b": 406.047,
+"k": "s046_l_sear_tongs",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 406.047,
+"b": 417.344,
+"k": "s047_l_lay_chops",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 417.344,
+"b": 426.234,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Do not fuss with them.",
+"Let the pan do the work."
+],
+"sig": "Loretta",
+"k": "n_bg_skillet_hot",
+"size": 84
+}
+},
+{
+"a": 426.234,
+"b": 437.287,
+"k": "s049_l_steam_smile",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 437.287,
+"b": 442.86,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 442.86,
+"b": 452.384,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 452.384,
+"b": 460.55,
+"k": "s052_l_scrape_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 460.55,
+"b": 468.543,
+"k": "s053_n_sliced_onions",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 468.543,
+"b": 477.39,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 477.39,
+"b": 485.163,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 485.163,
+"b": 494.443,
+"k": "s056_l_pour_broth",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 494.443,
+"b": 501.87,
+"k": "s057_n_gravy_spoon",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 501.87,
+"b": 509.144,
+"k": "s058_n_lid_steam",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 509.144,
+"b": 518.183,
+"k": "s059_l_oven_door",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 518.183,
+"b": 527.85,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 527.85,
+"b": 533.677,
+"k": "s061_l_thermometer",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 533.677,
+"b": 542.004,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_plate",
+"vid": true,
+"cap": "1945 · a plate and a folded napkin on the table",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 542.004,
+"b": 548.127,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 548.127,
+"b": 555.183,
+"k": "s064_l_spoon_gravy",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 555.183,
+"b": 565.187,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 565.187,
+"b": 573.527,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 573.527,
+"b": 584.214,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_counter",
+"vid": true,
+"cap": "1951 · glass jars and a kitchen scale on a shelf",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 584.214,
+"b": 594.673,
+"k": "s068_n_window_lace",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 594.673,
+"b": 600.813,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 597.69,
+"hl": 40
+}
+],
+"k": "n_bg_window"
+}
+},
+{
+"a": 600.813,
+"b": 611.154,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_reading_book",
+"vid": true,
+"cap": "1951 · a woman reading a book, page by page",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 611.154,
+"b": 617.214,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 40,
+"unit": "MINUTES",
+"txt": "cook time, plus a 30-minute brine",
+"k": "n_bg_bench",
+"dur": 22
+}
+},
+{
+"a": 617.214,
+"b": 623.38,
+"k": "s072_l_cookbook_point",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 623.38,
+"b": 629.08,
+"k": "s073_l_book_wide",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 629.08,
+"b": 634.65,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The thirty-minute salt bath.",
+"It holds the juice in."
+],
+"sig": "Loretta's trick",
+"k": "n_bg_towel",
+"size": 84
+}
+},
+{
+"a": 634.65,
+"b": 642.134,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 642.134,
+"b": 648.917,
+"k": "s076_n_pepper_shaker",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 648.917,
+"b": 654.227,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 654.227,
+"b": 658.917,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_thermo_chop",
+"txt": "FRIED TO LEATHER"
+}
+},
+{
+"a": 658.917,
+"b": 668.25,
+"k": "s079_n_fried_chop",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 668.25,
+"b": 675.47,
+"k": "s080_n_thin_chop_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 675.47,
+"b": 682.51,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 682.51,
+"b": 691.74,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_salt_box",
+"txt": "SALTED TWICE"
+}
+},
+{
+"a": 691.74,
+"b": 699.167,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 699.167,
+"b": 707.003,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 707.003,
+"b": 712.807,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 712.807,
+"b": 722.357,
+"k": "s086_n_broth_jug",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 722.357,
+"b": 732.593,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 732.593,
+"b": 742.593,
+"k": "s088_l_harold_chair",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 742.593,
+"b": 750.173,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 750.173,
+"b": 756.043,
+"k": "s090_n_single_plate",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 756.043,
+"b": 767.41,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 24,
+"unit": "PEOPLE",
+"txt": "brine in a clean cooler, sear in batches",
+"k": "n_bg_table_cloth",
+"dur": 22
+}
+},
+{
+"a": 767.41,
+"b": 775.6,
+"k": "s092_l_roasters_crowd",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 775.6,
+"b": 783.813,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_eating",
+"vid": true,
+"cap": "1945 · guests eating dinner at a table",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 783.813,
+"b": 791.89,
+"k": "s094_l_one_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 791.89,
+"b": 800.096,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 800.096,
+"b": 810.34,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Leftovers keep three days in the fridge.",
+"Reheat to 165 degrees, until steaming."
+],
+"sig": "From the book, page 40",
+"k": "n_kitchen_clock",
+"size": 80
+}
+},
+{
+"a": 810.34,
+"b": 821.267,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 821.267,
+"b": 833.42,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/ckchops/qr.jpg",
+"t": 823.73
+}
+},
+{
+"a": 833.42,
+"b": 837.113,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 837.113,
+"b": 842.57,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 842.57,
+"b": 850.366,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Taste it before you serve it,",
+"and then taste it again."
+],
+"sig": "The rule above the sink",
+"k": "n_bg_wood_spoon",
+"size": 80
+}
+},
+{
+"a": 850.366,
+"b": 858.733,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 858.733,
+"b": 866.633,
+"k": "s103_n_gravy_bubble",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 866.633,
+"b": 889.327,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE WHOLE RECIPE",
+"items": [
+{
+"t": 870.18,
+"txt": "Brine the thick chops 30 minutes"
+},
+{
+"t": 872.52,
+"txt": "Pat them very dry"
+},
+{
+"t": 879.93,
+"txt": "Sear 3 minutes a side, deep golden"
+},
+{
+"t": 885.39,
+"txt": "Cook the onions 8 minutes, scrape the pan"
+}
+],
+"k": "n_bg_skillet_row"
+}
+},
+{
+"a": 889.327,
+"b": 896.797,
+"k": "s105_l_ingredients_table",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 896.797,
+"b": 906.306,
+"k": "s106_n_pot_roast_steam",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 906.306,
+"b": 917.903,
+"k": "s107_l_rest_chop",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 917.903,
+"b": 927.02,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 918.97,
+"hl": 40
+}
+],
+"k": "n_bg_plain_table"
+}
+},
+{
+"a": 927.02,
+"b": 934.9,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckchops/th_other.jpg",
+"tag": "FROM MY OTHER CHANNEL",
+"words": [
+[
+"The",
+927.62
+],
+[
+"Best",
+927.9
+],
+[
+"Way",
+928.18
+],
+[
+"to",
+928.46
+],
+[
+"Clean",
+928.74
+],
+[
+"Your",
+929.02
+],
+[
+"Oven",
+929.3
+]
+],
+"k": "n_bg_thumb2"
+}
+},
+{
+"a": 934.9,
+"b": 945.14,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 945.14,
+"b": 950.303,
+"k": "",
+"c": "Tease",
+"props": {
+"k": "n_bg_flour",
+"txt": "One Pound of Ground Beef, Four Church Suppers",
+"tag": "NEXT TIME"
+}
+},
+{
+"a": 950.303,
+"b": 960.547,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 960.547,
+"b": 972.433,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "What dish did your church ladies serve at the funeral dinners?",
+"opts": [
+{
+"txt": "Tell me the dish",
+"t": 965.81
+},
+{
+"txt": "Tell me who made it",
+"t": 971.75
+}
+],
+"k": "n_bg_comment"
+}
+},
+{
+"a": 972.433,
+"b": 977.096,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 977.096,
+"b": 986.88,
+"k": "s115_l_blessing_door",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 986.88,
+"b": 995.3,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+5.21,
+"foley/lid_close_a",
+0.22
+],
+[
+66.95,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+120.73,
+"design/paper_slide",
+0.25
+],
+[
+193.98,
+"design/pen_write",
+0.25
+],
+[
+254.18,
+"design/paper_slide",
+0.25
+],
+[
+269.82,
+"design/paper_slide",
+0.25
+],
+[
+286.61,
+"design/paper_slide",
+0.25
+],
+[
+321.14,
+"design/paper_slide",
+0.25
+],
+[
+329.53,
+"foley/stir_ceramic",
+0.2
+],
+[
+351.29,
+"foley/towel_wipe_hands",
+0.2
+],
+[
+364.01,
+"design/click_slide",
+0.22
+],
+[
+374.05,
+"design/whoosh_slow_sweep",
+0.2
+],
+[
+417.34,
+"design/pen_write",
+0.25
+],
+[
+468.75,
+"foley/ceramic_scrape",
+0.2
+],
+[
+485.35,
+"foley/water_pour_short",
+0.2
+],
+[
+594.67,
+"design/page_turn_big",
+0.35
+],
+[
+611.15,
+"design/whoosh_slow_sweep",
+0.2
+],
+[
+629.08,
+"design/pen_write",
+0.25
+],
+[
+654.23,
+"design/click_slide",
+0.25
+],
+[
+682.51,
+"design/click_slide",
+0.25
+],
+[
+756.04,
+"design/whoosh_slow_sweep",
+0.2
+],
+[
+800.1,
+"design/pen_write",
+0.25
+],
+[
+821.27,
+"design/click_slide",
+0.25
+],
+[
+842.57,
+"design/pen_write",
+0.25
+],
+[
+866.63,
+"design/paper_slide",
+0.25
+],
+[
+917.9,
+"design/page_turn_big",
+0.35
+],
+[
+927.02,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+945.14,
+"design/whoosh_slow_sweep",
+0.25
+],
+[
+960.55,
+"design/click_slide",
+0.22
+]
+],
+"end": 995.3
+}

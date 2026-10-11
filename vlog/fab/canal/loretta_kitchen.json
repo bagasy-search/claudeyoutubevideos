@@ -1,0 +1,41 @@
+{
+ "canal": "Loretta's Church Kitchen",
+ "serie": "Loretta's Church Kitchen: an 81-year-old Iowa church lady cooks the church supper recipes of her little cookbook, one page each, in her farmhouse kitchen and the basement kitchen of Zion United Methodist",
+ "idioma": "en",
+ "protagonista": "loretta",
+ "pron": "she",
+ "voz": "loretta",
+ "cps": 15.8,
+ "ejemplos": "lor_",
+ "avatar_pct": [
+  25,
+  30
+ ],
+ "avatar_ref": "D:/claude-brain/canales/loretta-red/refs/ref_loretta_avatar_hd.png",
+ "acciones": "stirring a skillet, sliding a pan into the oven, lifting a lid, tasting from a wooden spoon, carrying a covered dish, setting a church supper table, pointing at a cookbook page",
+ "prohibidas": [
+  "\bfree\b",
+  "\bgratis\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bwhop\b"
+ ],
+ "dir_refs": "D:/rtmp/fab/canal/loretta",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by her grandson with a phone at eye level, in the middle of the cooking: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a window's daylight), automatic white balance a bit off, slight phone noise, ordinary worn kitchen objects, plain unlabeled jars and a black cast-iron skillet, no beautiful composition.",
+ "personajes": {
+  "loretta": {
+   "nombre": "Loretta",
+   "cara": true,
+   "desc": "Loretta, an 81-year-old white American grandmother with short curly snow-white hair, thin wire-rimmed glasses, a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron, with old wrinkled hands"
+  }
+ },
+ "lugares_fijos": {
+  "cocina": "Loretta's 1950s farmhouse kitchen: a white enamel stove with chrome handles, yellow gingham curtains on the window, a worn wooden table, a wall calendar, a rooster cookie jar on a dark wooden dresser",
+  "sotano_iglesia": "the basement kitchen of Zion United Methodist: long folding tables with white paper covers, a big steel steam table, stacked aluminum roasters, a cork bulletin board with church notices, a wall clock over the sink",
+  "mesa": "a long church supper table with a red-checked plastic tablecloth, casserole dishes with foil, a pitcher of iced tea"
+ },
+ "identidad": "Preserve the exact identity, face, short curly snow-white hair, thin wire-rimmed glasses, age and skin of the elderly woman in the reference photograph. She wears a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron.",
+ "cara_crop": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor_face.png"
+}
