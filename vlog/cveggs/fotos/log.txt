@@ -1,0 +1,33 @@
+1. expandiendo 10 prompts a JSON …
+   MEDIDO: 10 expandidos · 0 fallidos · 10 en vlog\cveggs\fotos\_agnes_pro\_json.json
+2. ronda 1: generando 10 … (0.4 min)
+   MEDIDO: 10 items · 0 con referencia de identidad
+   10/10 · ok 10 · fallidos 0 · 0.4 min · 22.3 img/min
+   MEDIDO: 10 generadas · 0 fallidas · 0.4 min
+3. ronda 1: juez en dos modos …
+   ✗ c61_b  [falta_lo_pedido] The steam rising from the eggs is missing.
+   ✗ c22_a  [anatomia] El pulgar de la mano parece fundirse o malformarse en la palma de una manera no anatómicamente correcta.
+   MEDIDO: 10 juzgadas · 2 rechazadas · 18 s · agnes-3.0-flash → vlog\cveggs\fotos\_agnes_pro\_ronda1\_g1.json
+   ✗ c62_a  [gente_de_mas] There is an extra person in the bottom right corner of the frame that is not described in the prompt.
+   ✗ c111_b  [sombra_fantasma] Una figura o sombra oscura no identificable es visible en el panel oscuro de la estufa, lo que contradice la ausencia total de personas o cuerpos.
+   MEDIDO: 10 juzgadas · 2 rechazadas · 85 s · agnes-3.0-flash → vlog\cveggs\fotos\_agnes_pro\_ronda1\_g2.json
+   ronda 1: 6 aprobadas · 4 van de nuevo
+2. ronda 2: generando 4 … (2.6 min)
+   MEDIDO: 4 items · 0 con referencia de identidad
+   MEDIDO: 4 generadas · 0 fallidas · 0.2 min
+3. ronda 2: juez en dos modos …
+   ✗ c62_a  [anatomia] La mano que sujeta la espátula tiene los dedos muy deformes y fusionados (anatomia) y el codo del brazo parece imposible (codo roto hacia atrás); el brazo además parece emerger de la camiseta de cuadros del lado izquierdo en lugar de del sujeto.
+   MEDIDO: 4 juzgadas · 1 rechazadas · 6 s · agnes-3.0-flash → vlog\cveggs\fotos\_agnes_pro\_ronda2\_g1.json
+   ✗ c22_a  [objeto_deforme] El mango de la cuchara y el puño de la mano están fusionados de forma anatómicamente imposible y deformada.
+   ✗ c111_b  [sombra_fantasma] Hay una iluminación y una sombra fantasma en la parte inferior derecha del marco de la ventana que no corresponden a ninguna fuente de luz del escenario.
+   MEDIDO: 4 juzgadas · 2 rechazadas · 33 s · agnes-3.0-flash → vlog\cveggs\fotos\_agnes_pro\_ronda2\_g2.json
+   ronda 2: 1 aprobadas · 3 van de nuevo
+2. ronda 3: generando 3 … (3.5 min)
+   MEDIDO: 3 items · 0 con referencia de identidad
+   MEDIDO: 3 generadas · 0 fallidas · 0.2 min
+3. ronda 3: juez en dos modos …
+   MEDIDO: 3 juzgadas · 0 rechazadas · 14 s · agnes-3.0-flash → vlog\cveggs\fotos\_agnes_pro\_ronda3\_g1.json
+   ✗ c62_a  [piernas,objeto_deforme] The body of the person is swallowed by the counter, with no hips, legs, or feet visible. | El brazo que sostiene el mango de la espátula no está conectado a la mano visible sobre la sartén, sino que parece emerger de forma imposible desde la parte inferior de la misma mano, creando una anatomía fusionada y errónea.
+   MEDIDO: 3 juzgadas · 1 rechazadas · 21 s · agnes-3.0-flash → vlog\cveggs\fotos\_agnes_pro\_ronda3\_g2.json
+   ronda 3: 2 aprobadas · 1 van de nuevo
+MEDIDO: 10 pedidas · 9 aprobadas (9 con posproceso) · 1 sin aprobar tras 3 rondas → vlog\cveggs\fotos\_agnes_pro/_sin_aprobar.json · 4.3 min

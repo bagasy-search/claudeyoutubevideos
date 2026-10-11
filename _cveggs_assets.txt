@@ -1,0 +1,5 @@
+vid/cveggs
+img/cveggs/cover.jpg
+img/cveggs/joven.jpg
+img/cveggs/page55.jpg
+img/cveggs/qr.png

@@ -1,0 +1,197 @@
+[
+ {
+  "c": "CvPromise",
+  "from": 647,
+  "dur": 210,
+  "props": {
+   "title": "Ranch eggs without a drop of oil",
+   "lines": [
+    "Soft whites, no brown crispy edge",
+    "Nothing sticks to the pan",
+    "Three minutes · 92¢ a plate"
+   ],
+   "bed": "vid/cveggs/bed_0.mp4#214"
+  },
+  "t": 21.55
+ },
+ {
+  "c": "ClDoDont",
+  "from": 996,
+  "dur": 150,
+  "props": {
+   "yes": {
+    "label": "Medium pan, water + lid"
+   },
+   "no": {
+    "label": "Hot oil, high heat"
+   },
+   "bed": "vid/cveggs/bed_2.mp4#154"
+  },
+  "t": 33.18
+ },
+ {
+  "c": "CvOldPhoto",
+  "from": 2011,
+  "dur": 225,
+  "props": {
+   "img": "img/cveggs/joven.jpg",
+   "caption": "Me, 1985 · first winter with the crew",
+   "date": "'85 11 02",
+   "stamp": "40 years · 14 men",
+   "bed": "vid/cveggs/bed_1.mp4#229"
+  },
+  "t": 67.03
+ },
+ {
+  "c": "ClCheck",
+  "from": 5420,
+  "dur": 270,
+  "props": {
+   "title": "WHAT YOU NEED",
+   "items": [
+    "2 fresh eggs",
+    "10-inch cast iron or nonstick skillet",
+    "A lid that fits (or a sheet pan, a plate)",
+    "2 tablespoons of water",
+    "No oil"
+   ],
+   "bed": "vid/cveggs/bed_3.mp4#274"
+  },
+  "t": 180.68
+ },
+ {
+  "c": "ClChip",
+  "from": 5860,
+  "dur": 135,
+  "props": {
+   "text": "Empty pan · MEDIUM · 2 full minutes",
+   "corner": "tl"
+  },
+  "t": 195.34
+ },
+ {
+  "c": "ClChip",
+  "from": 6158,
+  "dur": 135,
+  "props": {
+   "text": "Water drops DANCE = ready",
+   "corner": "tl"
+  },
+  "t": 205.27
+ },
+ {
+  "c": "ClChip",
+  "from": 7801,
+  "dur": 135,
+  "props": {
+   "text": "2 tbsp water AROUND the eggs · not on top",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 260.03
+ },
+ {
+  "c": "ClCheck",
+  "from": 8190,
+  "dur": 270,
+  "props": {
+   "title": "LID ON · HOW LONG",
+   "items": [
+    "90 seconds · runny yolk",
+    "2½ minutes · jammy yolk",
+    "3½ to 4 minutes · firm yolk"
+   ],
+   "bed": "vid/cveggs/bed_7.mp4#274"
+  },
+  "t": 273.0
+ },
+ {
+  "c": "ClChip",
+  "from": 13321,
+  "dur": 135,
+  "props": {
+   "text": "Crowd: hot sheet pan · 400°F · 6–8 min",
+   "corner": "tl"
+  },
+  "t": 444.05
+ },
+ {
+  "c": "ClChip",
+  "from": 15579,
+  "dur": 135,
+  "props": {
+   "text": "Sinks flat = fresh · floats = toss it",
+   "corner": "tl"
+  },
+  "t": 519.28
+ },
+ {
+  "c": "ClChip",
+  "from": 16878,
+  "dur": 150,
+  "props": {
+   "text": "Kids, elders, pregnant: firm yolk (USDA)",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 562.6
+ },
+ {
+  "c": "ClReceipt",
+  "from": 19213,
+  "dur": 390,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "2 large eggs",
+     "$0.67"
+    ],
+    [
+     "2 corn tortillas",
+     "$0.15"
+    ],
+    [
+     "Spoon of salsa",
+     "$0.10"
+    ],
+    [
+     "Oil",
+     "$0.00"
+    ]
+   ],
+   "total": [
+    "Per plate",
+    "$0.92"
+   ],
+   "bed": "vid/cveggs/bed_11.mp4#394"
+  },
+  "t": 640.42
+ },
+ {
+  "c": "ClBookPage",
+  "from": 30537,
+  "dur": 210,
+  "props": {
+   "page": "img/cveggs/page55.jpg",
+   "pageNo": 55,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 55",
+   "bed": "vid/cveggs/bed_12.mp4#214"
+  },
+  "t": 1017.89
+ },
+ {
+  "c": "ClQRCard",
+  "from": 31331,
+  "dur": 180,
+  "props": {
+   "qr": "img/cveggs/qr.png",
+   "cover": "img/cveggs/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cveggs/bed_13.mp4#184"
+  },
+  "t": 1044.37
+ }
+]

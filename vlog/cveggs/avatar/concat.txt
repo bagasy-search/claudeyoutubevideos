@@ -1,0 +1,8 @@
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p000.wav'
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p001.wav'
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p002.wav'
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p003.wav'
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p004.wav'
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p005.wav'
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p006.wav'
+file 'D:/Proyectos/video2-wt/cveggs/vlog/cveggs/avatar/p007.wav'
