@@ -64,7 +64,7 @@ export const CvOldPhoto: React.FC<{ img: string; caption: string; date?: string;
       <div style={{ position: "absolute", left: "50%", top: 70, translate: `-50% ${y}px`, rotate: `${r}deg`, scale: String(lin(f, 10, T, 1, 1.04)), transformOrigin: "50% 40%" }}>
         <div style={{ background: "#F4EFE4", padding: "26px 26px 110px", boxShadow: `0 50px 90px ${CL.shadow}, 0 8px 16px rgba(0,0,0,0.18)`, position: "relative" }}>
           <div style={{ width: 1180, height: 660, overflow: "hidden", position: "relative" }}>
-            <Img src={staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: String(kb), filter: "sepia(0.22) saturate(0.88) contrast(0.96) brightness(1.02)" }} />
+            <Img src={img.startsWith("data:") ? img : staticFile(img)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: String(kb), filter: "sepia(0.22) saturate(0.88) contrast(0.96) brightness(1.02)" }} />
             <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(40,20,0,0.35) 100%)" }} />
             <div style={{ position: "absolute", right: 34, bottom: 22, fontFamily: "'Courier New', monospace", fontWeight: 700, fontSize: 40, color: "#FF8A2A", textShadow: "0 0 6px rgba(255,120,30,0.7)", letterSpacing: 3, opacity: lin(f, 12, 20) }}>{date}</div>
           </div>
