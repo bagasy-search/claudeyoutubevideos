@@ -25,10 +25,11 @@ export const Bed: React.FC<{ src?: string; seed?: number; dim?: number; warm?: n
   const inn = rnd(seed) > 0.5, z = inn ? 1.04 + 0.05 * k : 1.09 - 0.05 * k;
   const st: React.CSSProperties = { position: "absolute", width: "100%", height: "100%", objectFit: "cover", scale: String(z), transformOrigin: `${30 + 40 * rnd(seed + 3)}% ${30 + 40 * rnd(seed + 5)}%` };
   if (!src) return <AbsoluteFill style={{ ...tileBg() }} />;
-  const [file, nf] = src.split("#"); const rate = nf ? Math.max(0.35, Math.min(1, (+nf - 2) / Math.max(1, durationInFrames))) : 1;
+  const [file0, nf] = src.split("#"); const [file, at0] = file0.split("@"); // "vid/x/vlog.mp4@<cuadro>" = la cama sale del propio vlog desde ese cuadro
+  const rate = nf ? Math.max(0.35, Math.min(1, (+nf - 2) / Math.max(1, durationInFrames))) : 1;
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: CL.white }}>
-      {/\.mp4$/.test(file) ? <OffthreadVideo src={staticFile(file)} muted playbackRate={rate} style={st} /> : <Img src={staticFile(file)} style={st} />}
+      {/\.mp4$/.test(file) ? <OffthreadVideo src={staticFile(file)} muted playbackRate={rate} startFrom={at0 ? +at0 : 0} style={st} /> : <Img src={staticFile(file)} style={st} />}
       {dim > 0 ? <AbsoluteFill style={{ backgroundColor: hexA(CL.white, dim) }} /> : null}
       {warm > 0 ? <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% -10%, rgba(255,226,170,${0.22 * warm}), rgba(255,226,170,0) 60%), radial-gradient(ellipse at 50% 120%, rgba(19,29,53,${0.18 * warm}), rgba(19,29,53,0) 55%)` }} /> : null}
     </AbsoluteFill>
