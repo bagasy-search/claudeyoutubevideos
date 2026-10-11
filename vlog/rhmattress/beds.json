@@ -1,0 +1,252 @@
+[
+ {
+  "name": "bd_m1",
+  "q": "making bed",
+  "scene": "making bed"
+ },
+ {
+  "name": "bd_m2",
+  "q": "bedroom morning",
+  "scene": "bedroom morning"
+ },
+ {
+  "name": "bd_m3",
+  "q": "white sheets bed",
+  "scene": "white sheets bed"
+ },
+ {
+  "name": "bd_m4",
+  "q": "bare mattress",
+  "scene": "bare mattress"
+ },
+ {
+  "name": "bd_m5",
+  "q": "stripping bed sheets",
+  "scene": "stripping bed sheets"
+ },
+ {
+  "name": "bd_m6",
+  "q": "pillows bed",
+  "scene": "pillows bed"
+ },
+ {
+  "name": "bd_m7",
+  "q": "laundry room",
+  "scene": "laundry room"
+ },
+ {
+  "name": "bd_m8",
+  "q": "washing machine",
+  "scene": "washing machine"
+ },
+ {
+  "name": "bd_m9",
+  "q": "spray bottle cleaning",
+  "scene": "spray bottle cleaning"
+ },
+ {
+  "name": "bd_m10",
+  "q": "cleaning bedroom",
+  "scene": "cleaning bedroom"
+ },
+ {
+  "name": "bd_m11",
+  "q": "vacuum mattress",
+  "scene": "vacuum mattress"
+ },
+ {
+  "name": "bd_m12",
+  "q": "vacuum cleaner",
+  "scene": "vacuum cleaner"
+ },
+ {
+  "name": "bd_m13",
+  "q": "woman sleeping",
+  "scene": "woman sleeping"
+ },
+ {
+  "name": "bd_m14",
+  "q": "bedroom window",
+  "scene": "bedroom window"
+ },
+ {
+  "name": "bd_m15",
+  "q": "sunlight bedroom",
+  "scene": "sunlight bedroom"
+ },
+ {
+  "name": "bd_m16",
+  "q": "electric fan",
+  "scene": "electric fan"
+ },
+ {
+  "name": "bd_m17",
+  "q": "open window breeze",
+  "scene": "open window breeze"
+ },
+ {
+  "name": "bd_m18",
+  "q": "folding laundry",
+  "scene": "folding laundry"
+ },
+ {
+  "name": "bd_m19",
+  "q": "clean bedroom",
+  "scene": "clean bedroom"
+ },
+ {
+  "name": "bd_m20",
+  "q": "cozy bedroom",
+  "scene": "cozy bedroom"
+ },
+ {
+  "name": "bd_m21",
+  "q": "fluffing pillow",
+  "scene": "fluffing pillow"
+ },
+ {
+  "name": "bd_m22",
+  "q": "bed linen",
+  "scene": "bed linen"
+ },
+ {
+  "name": "bd_m23",
+  "q": "cleaning gloves",
+  "scene": "cleaning gloves"
+ },
+ {
+  "name": "bd_m24",
+  "q": "baking soda",
+  "scene": "baking soda"
+ },
+ {
+  "name": "bd_m25",
+  "q": "hydrogen peroxide",
+  "scene": "hydrogen peroxide"
+ },
+ {
+  "name": "bd_m26",
+  "q": "mixing bowl",
+  "scene": "mixing bowl"
+ },
+ {
+  "name": "bd_m27",
+  "q": "measuring spoon",
+  "scene": "measuring spoon"
+ },
+ {
+  "name": "bd_m28",
+  "q": "dish soap",
+  "scene": "dish soap"
+ },
+ {
+  "name": "bd_m29",
+  "q": "cleaning supplies",
+  "scene": "cleaning supplies"
+ },
+ {
+  "name": "bd_m30",
+  "q": "towel",
+  "scene": "towel"
+ },
+ {
+  "name": "bd_m31",
+  "q": "laundry basket",
+  "scene": "laundry basket"
+ },
+ {
+  "name": "bd_m32",
+  "q": "bedroom interior",
+  "scene": "bedroom interior"
+ },
+ {
+  "name": "bd_m33",
+  "q": "hotel bed",
+  "scene": "hotel bed"
+ },
+ {
+  "name": "bd_m34",
+  "q": "mattress",
+  "scene": "mattress"
+ },
+ {
+  "name": "bd_m35",
+  "q": "sleeping dog bed",
+  "scene": "sleeping dog bed"
+ },
+ {
+  "name": "bd_m36",
+  "q": "kid bed",
+  "scene": "kid bed"
+ },
+ {
+  "name": "bd_m37",
+  "q": "night stand",
+  "scene": "night stand"
+ },
+ {
+  "name": "bd_m38",
+  "q": "coffee bed",
+  "scene": "coffee bed"
+ },
+ {
+  "name": "bd_m39",
+  "q": "sick bed",
+  "scene": "sick bed"
+ },
+ {
+  "name": "bd_m40",
+  "q": "guest room",
+  "scene": "guest room"
+ },
+ {
+  "name": "bd_m41",
+  "q": "old house bedroom",
+  "scene": "old house bedroom"
+ },
+ {
+  "name": "bd_m42",
+  "q": "curtains wind",
+  "scene": "curtains wind"
+ },
+ {
+  "name": "bd_m43",
+  "q": "dust sunlight",
+  "scene": "dust sunlight"
+ },
+ {
+  "name": "bd_m44",
+  "q": "dryer laundry",
+  "scene": "dryer laundry"
+ },
+ {
+  "name": "bd_m45",
+  "q": "tennis balls",
+  "scene": "tennis balls"
+ },
+ {
+  "name": "bd_m46",
+  "q": "house cleaning",
+  "scene": "house cleaning"
+ },
+ {
+  "name": "bd_m47",
+  "q": "housekeeper",
+  "scene": "housekeeper"
+ },
+ {
+  "name": "bd_m48",
+  "q": "fresh sheets",
+  "scene": "fresh sheets"
+ },
+ {
+  "name": "bd_m49",
+  "q": "duvet",
+  "scene": "duvet"
+ },
+ {
+  "name": "bd_m50",
+  "q": "bed making hotel",
+  "scene": "bed making hotel"
+ }
+]
