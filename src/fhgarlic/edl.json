@@ -1,0 +1,2170 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 6.887,
+"k": "",
+"c": "DropOpen",
+"props": {
+"words": [
+[
+"One",
+0.0
+],
+[
+"single",
+0.34
+],
+[
+"garlic",
+0.94
+],
+[
+"clove,",
+1.52
+],
+[
+"pressed",
+2.06
+],
+[
+"right",
+2.56
+],
+[
+"into",
+2.96
+],
+[
+"the",
+3.26
+],
+[
+"dark",
+3.56
+],
+[
+"October",
+3.84
+],
+[
+"soil,",
+4.38
+],
+[
+"pointy",
+5.29
+],
+[
+"side",
+5.67
+],
+[
+"up.",
+5.85
+],
+[
+"One",
+6.57
+]
+],
+"ripple": 6.567,
+"k": "n_clove"
+}
+},
+{
+"a": 6.887,
+"b": 9.954,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 1,
+"unit": "CLOVE IN OCTOBER",
+"txt": "A WHOLE HEAD IN JULY",
+"k": "n_head"
+}
+},
+{
+"a": 9.954,
+"b": 14.447,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 14.447,
+"b": 17.67,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 17.67,
+"b": 28.607,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/fhgarlic/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"How",
+23.89
+],
+[
+"My",
+24.09
+],
+[
+"Mother",
+24.37
+],
+[
+"Kept",
+24.57
+],
+[
+"Every",
+24.85
+],
+[
+"Fly",
+25.33
+]
+],
+"k": "n_fly"
+}
+},
+{
+"a": 28.607,
+"b": 35.314,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/fhgarlic/th_a.jpg",
+"tag": "THE VIDEO BEFORE",
+"words": [
+[
+"Mice",
+30.33
+],
+[
+"Are",
+30.45
+],
+[
+"Moving",
+30.71
+],
+[
+"In",
+30.93
+],
+[
+"RIGHT",
+31.29
+],
+[
+"NOW",
+31.57
+]
+],
+"k": "n_seedcat"
+}
+},
+{
+"a": 35.314,
+"b": 41.356,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 41.356,
+"b": 52.003,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 52.003,
+"b": 61.963,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 52.313,
+"hl": 12
+}
+],
+"k": "n_bookdesk"
+}
+},
+{
+"a": 61.963,
+"b": 69.323,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT IT COSTS · PAGE 40",
+"items": [
+{
+"t": 63.213,
+"txt": "COSTS PENNIES"
+},
+{
+"t": 64.753,
+"txt": "TAKES 20 MINUTES IN OCTOBER"
+}
+],
+"k": "n_coins"
+}
+},
+{
+"a": 69.323,
+"b": 72.353,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_farmgarden",
+"vid": true,
+"cap": "1943 · a home garden beside the house",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 72.353,
+"b": 79.43,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_barn",
+"vid": true,
+"cap": "1942 · a barn and a corn field",
+"credit": "Henry Browne, Farmer (1942) · Public domain · archive.org"
+}
+},
+{
+"a": 79.43,
+"b": 89.397,
+"k": "s012_l_kneel",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 89.397,
+"b": 94.61,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 94.61,
+"b": 97.367,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 97.367,
+"b": 107.56,
+"k": "s015_l_braid",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 107.56,
+"b": 113.537,
+"k": "s016_n_braid",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 113.537,
+"b": 117.24,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 117.24,
+"b": 122.013,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"A whole year",
+"of garlic"
+],
+"sig": "Loretta's trick",
+"k": "n_head",
+"size": 84
+}
+},
+{
+"a": 122.013,
+"b": 126.177,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_plant",
+"vid": true,
+"cap": "1943 · setting plants by hand",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 126.177,
+"b": 132.24,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_fork",
+"vid": true,
+"cap": "1943 · digging by hand",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 132.24,
+"b": 140.803,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 140.803,
+"b": 152.683,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/fhgarlic/qr.jpg",
+"t": 141.047
+}
+},
+{
+"a": 152.683,
+"b": 156.863,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 141.047
+}
+],
+"k": "n_coins"
+}
+},
+{
+"a": 156.863,
+"b": 158.543,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 158.543,
+"b": 172.23,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47 · CALENDAR",
+"t": 159.433,
+"hl": 12
+}
+],
+"k": "n_calendar"
+}
+},
+{
+"a": 172.23,
+"b": 178.587,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_dig",
+"vid": true,
+"cap": "1943 · digging by hand",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 178.587,
+"b": 182.313,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 182.313,
+"b": 188.533,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_hoe",
+"vid": true,
+"cap": "1943 · rows between the beds",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 188.533,
+"b": 197.383,
+"k": "s029_n_bededge",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 197.383,
+"b": 207.183,
+"k": "s030_l_bedstep",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 207.183,
+"b": 214.66,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_handbulb",
+"vid": true,
+"cap": "1943 · hands sorting the harvest",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 214.66,
+"b": 220.906,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 220.906,
+"b": 225.64,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Take the morning slow."
+],
+"sig": "Loretta",
+"k": "n_gloves",
+"size": 84
+}
+},
+{
+"a": 225.64,
+"b": 242.563,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 1 OF 12",
+"head": "CHOOSE THE BIGGEST CLOVES",
+"steps": [
+{
+"t": 225.82,
+"txt": "Fattest cloves from the bulb",
+"k": "n_cloves"
+},
+{
+"t": 234.713,
+"txt": "Big cloves make big heads",
+"k": "n_cloves"
+},
+{
+"t": 236.593,
+"txt": "Little cloves, little heads",
+"k": "n_cloves"
+}
+],
+"bed": "n_cloves"
+}
+},
+{
+"a": 242.563,
+"b": 258.7,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 2 OF 12",
+"head": "KEEP THE PAPERY SKIN ON",
+"steps": [
+{
+"t": 242.753,
+"txt": "Keep the papery skin on",
+"k": "n_papery"
+},
+{
+"t": 246.153,
+"txt": "Do not peel them",
+"k": "n_papery"
+},
+{
+"t": 247.693,
+"txt": "Wait in the wrapper",
+"k": "n_papery"
+}
+],
+"bed": "n_papery"
+}
+},
+{
+"a": 258.7,
+"b": 276.5,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 3 OF 12",
+"head": "PICK YOUR SPOT",
+"steps": [
+{
+"t": 258.9,
+"txt": "Pick the edges of the bed",
+"k": "n_bededge"
+},
+{
+"t": 265.607,
+"txt": "Around the edges, not the middle",
+"k": "n_bededge"
+},
+{
+"t": 269.82,
+"txt": "A sunny spot, loose soil",
+"k": "n_bededge"
+}
+],
+"bed": "n_bededge"
+}
+},
+{
+"a": 276.5,
+"b": 294.637,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 4 OF 12",
+"head": "POINTY SIDE UP, TWO INCHES DEEP",
+"steps": [
+{
+"t": 276.72,
+"txt": "Pointy side up",
+"k": "l_plant"
+},
+{
+"t": 280.613,
+"txt": "Two inches deep",
+"k": "l_plant"
+}
+],
+"bed": "l_plant"
+}
+},
+{
+"a": 294.637,
+"b": 308.437,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 5 OF 12",
+"head": "A HAND'S WIDTH APART",
+"steps": [
+{
+"t": 294.927,
+"txt": "About a hand's width",
+"k": "n_spacing"
+},
+{
+"t": 299.1,
+"txt": "Crowded cloves go small",
+"k": "n_spacing"
+}
+],
+"bed": "n_spacing"
+}
+},
+{
+"a": 308.437,
+"b": 324.817,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 6 OF 12",
+"head": "STRAW OVER THE BED",
+"steps": [
+{
+"t": 308.633,
+"txt": "Loose straw, not packed",
+"k": "n_straw"
+},
+{
+"t": 312.233,
+"txt": "Like a warm quilt",
+"k": "n_straw"
+},
+{
+"t": 317.047,
+"txt": "Let it breathe",
+"k": "n_straw"
+}
+],
+"bed": "n_straw"
+}
+},
+{
+"a": 324.817,
+"b": 331.113,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 331.113,
+"b": 340.913,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 340.913,
+"b": 346.143,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 346.143,
+"b": 352.203,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 352.203,
+"b": 367.607,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE OCTOBER LIST",
+"items": [
+{
+"t": 356.073,
+"txt": "Choose the biggest cloves"
+},
+{
+"t": 357.467,
+"txt": "Keep the papery skin on"
+},
+{
+"t": 359.367,
+"txt": "Pick the edges of the beds"
+},
+{
+"t": 361.587,
+"txt": "Pointy side up, two inches deep"
+},
+{
+"t": 364.107,
+"txt": "A hand's width apart"
+},
+{
+"t": 365.867,
+"txt": "Straw for the winter"
+}
+],
+"k": "n_recap"
+}
+},
+{
+"a": 367.607,
+"b": 375.837,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_seedcat",
+"vid": true,
+"cap": "1943 · the seed catalog",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 375.837,
+"b": 379.663,
+"k": "s046_n_smallheads",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 379.663,
+"b": 382.653,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 382.653,
+"b": 388.76,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_seedcat",
+"txt": "Planting in spring = small heads",
+"cx": 55,
+"cy": 50
+}
+},
+{
+"a": 388.76,
+"b": 402.857,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 402.857,
+"b": 408.367,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Why do we plant it",
+"when it's getting cold?"
+],
+"sig": "Danny, my grandson",
+"k": "n_boots",
+"size": 76
+}
+},
+{
+"a": 408.367,
+"b": 417.406,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 417.406,
+"b": 424.53,
+"k": "s052_n_garlicbread",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 424.53,
+"b": 440.117,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_pail",
+"caption": "Bernice · garlic bread",
+"date": "Zion · the basement kitchen",
+"t": 434.333
+}
+},
+{
+"a": 440.117,
+"b": 445.357,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 445.357,
+"b": 455.02,
+"k": "s055_n_wirefence",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 455.02,
+"b": 459.83,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 459.83,
+"b": 464.42,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 464.42,
+"b": 475.84,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"A small help,",
+"not a fence."
+],
+"sig": "The book says so",
+"k": "n_bedtop",
+"size": 84
+}
+},
+{
+"a": 475.84,
+"b": 480.333,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 480.333,
+"b": 490.99,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 490.99,
+"b": 497.067,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_fence",
+"vid": true,
+"cap": "1942 · a fence along the field",
+"credit": "Henry Browne, Farmer (1942) · Public domain · archive.org"
+}
+},
+{
+"a": 497.067,
+"b": 502.143,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 502.143,
+"b": 510.893,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/fhgarlic/qr.jpg",
+"t": 505.093
+}
+},
+{
+"a": 510.893,
+"b": 521.007,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 511.133,
+"hl": 12
+},
+{
+"src": "page47",
+"tab": "PAGE 47",
+"t": 513.573
+}
+],
+"k": "n_bookdesk"
+}
+},
+{
+"a": 521.007,
+"b": 529.833,
+"k": "s065_n_strawtop",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 529.833,
+"b": 534.64,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 534.64,
+"b": 538.12,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_rows",
+"vid": true,
+"cap": "1943 · the garden at work",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 538.12,
+"b": 544.536,
+"k": "s068_n_frostbed",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 544.536,
+"b": 552.293,
+"k": "s069_l_walk",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 552.293,
+"b": 562.363,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE FALL WALK",
+"items": [
+{
+"t": 555.933,
+"txt": "Door sweeps"
+},
+{
+"t": 557.593,
+"txt": "The screen door spring"
+}
+],
+"k": "n_doorsweep"
+}
+},
+{
+"a": 562.363,
+"b": 567.893,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 567.893,
+"b": 578.99,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page6",
+"tab": "PAGE 6 · RULES",
+"t": 568.833,
+"hl": 10
+}
+],
+"k": "n_kitchentable"
+}
+},
+{
+"a": 578.99,
+"b": 586.77,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 586.77,
+"b": 593.803,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_kitchen",
+"vid": true,
+"cap": "1942 · a kitchen stove and a kettle",
+"credit": "Henry Browne, Farmer (1942) · Public domain · archive.org"
+}
+},
+{
+"a": 593.803,
+"b": 601.06,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 601.06,
+"b": 605.16,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_weed",
+"vid": true,
+"cap": "1943 · pulling weeds by hand",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 605.16,
+"b": 610.05,
+"k": "s077_n_kitchentable",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 610.05,
+"b": 615.04,
+"k": "s078_l_kitchen",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 615.04,
+"b": 626.933,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 7 OF 12",
+"head": "NEXT SPRING: THE SHOOTS",
+"steps": [
+{
+"t": 615.04,
+"txt": "Green shoots through the straw",
+"k": "n_shoots"
+},
+{
+"t": 617.8,
+"txt": "Let them come up",
+"k": "n_shoots"
+}
+],
+"bed": "n_shoots"
+}
+},
+{
+"a": 626.933,
+"b": 634.243,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 634.243,
+"b": 640.94,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 8 OF 12",
+"head": "KEEP THE WEEDS OFF",
+"steps": [
+{
+"t": 634.473,
+"txt": "Keep the weeds off",
+"k": "n_weeding"
+},
+{
+"t": 637.233,
+"txt": "Pull them by hand",
+"k": "n_weeding"
+}
+],
+"bed": "n_weeding"
+}
+},
+{
+"a": 640.94,
+"b": 650.947,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 650.947,
+"b": 675.536,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 9 OF 12",
+"head": "CUT THE CURLY STALK",
+"steps": [
+{
+"t": 651.087,
+"txt": "Cut it when it curls",
+"k": "n_scape"
+},
+{
+"t": 655.387,
+"txt": "The curly flower stalk",
+"k": "n_scape"
+},
+{
+"t": 665.827,
+"txt": "Good in a pan",
+"k": "n_scape"
+}
+],
+"bed": "n_scape"
+}
+},
+{
+"a": 675.536,
+"b": 679.123,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 679.123,
+"b": 689.0,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 10 OF 12",
+"head": "STOP WATERING BEFORE HARVEST",
+"steps": [
+{
+"t": 673.58,
+"txt": "Let the soil dry out",
+"k": "n_drybed"
+},
+{
+"t": 679.273,
+"txt": "A dry bed firms the heads",
+"k": "n_drybed"
+}
+],
+"bed": "n_drybed"
+}
+},
+{
+"a": 689.0,
+"b": 713.067,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 11 OF 12",
+"head": "DIG THE WHOLE HEADS",
+"steps": [
+{
+"t": 689.18,
+"txt": "Lower leaves brown, then dig",
+"k": "n_forkdig"
+},
+{
+"t": 702.127,
+"txt": "Lift them out gently",
+"k": "n_forkdig"
+},
+{
+"t": 708.847,
+"txt": "One clove made every one",
+"k": "n_forkdig"
+}
+],
+"bed": "n_forkdig"
+}
+},
+{
+"a": 713.067,
+"b": 721.93,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "STEP 12 OF 12",
+"head": "DRY IN THE SHADE",
+"steps": [
+{
+"t": 713.267,
+"txt": "Dry them in the shade",
+"k": "n_hang"
+},
+{
+"t": 718.48,
+"txt": "Hang them in an airy shed",
+"k": "n_hang"
+},
+{
+"t": 720.64,
+"txt": "Two or three weeks",
+"k": "n_hang"
+}
+],
+"bed": "n_hang"
+}
+},
+{
+"a": 721.93,
+"b": 735.637,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_braid",
+"yes": {
+"k": "n_braid",
+"txt": "Softneck: braids well",
+"t": 727.053
+},
+"no": {
+"k": "n_hang",
+"txt": "Hardneck: small bunches",
+"t": 722.12
+}
+}
+},
+{
+"a": 735.637,
+"b": 739.504,
+"k": "s089_l_harvest",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 739.504,
+"b": 745.847,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_woman",
+"vid": true,
+"cap": "1943 · a woman in her garden",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 745.847,
+"b": 754.86,
+"k": "s091_n_pulledhead",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 754.86,
+"b": 757.873,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_basket",
+"vid": true,
+"cap": "1943 · carrying the harvest in",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 757.873,
+"b": 765.85,
+"k": "s093_n_kitchenhead",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 765.85,
+"b": 783.754,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE SUMMER LIST",
+"items": [
+{
+"t": 767.707,
+"txt": "Shoots come up in spring"
+},
+{
+"t": 769.44,
+"txt": "Keep the weeds off"
+},
+{
+"t": 770.88,
+"txt": "Cut the curly stalk early"
+},
+{
+"t": 773.5,
+"txt": "Stop watering before harvest"
+},
+{
+"t": 775.18,
+"txt": "Dig the whole heads in July"
+}
+],
+"k": "n_cloves"
+}
+},
+{
+"a": 783.754,
+"b": 787.73,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 787.73,
+"b": 793.766,
+"k": "s096_n_headclean",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 793.766,
+"b": 803.313,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 803.313,
+"b": 815.236,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/fhgarlic/qr.jpg",
+"t": 803.313
+}
+},
+{
+"a": 815.236,
+"b": 821.15,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page40",
+"tab": "PAGE 40",
+"t": 821.307
+}
+],
+"k": "n_seedcat"
+}
+},
+{
+"a": 821.15,
+"b": 826.097,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 826.097,
+"b": 837.787,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/fhgarlic/th_other.jpg",
+"tag": "FARM KITCHEN",
+"words": [
+[
+"12",
+829.79
+],
+[
+"Farm",
+830.17
+],
+[
+"Kitchen",
+830.53
+],
+[
+"Habits",
+830.89
+]
+],
+"k": "n_kitchenhead"
+}
+},
+{
+"a": 837.787,
+"b": 847.717,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/fhgarlic/th_next.jpg",
+"tag": "NEXT TIME",
+"words": [
+[
+"13",
+840.37
+],
+[
+"Kitchen",
+840.99
+],
+[
+"Items",
+841.45
+]
+],
+"k": "n_kitchentable"
+}
+},
+{
+"a": 847.717,
+"b": 857.61,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 857.61,
+"b": 869.207,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_supper",
+"caption": "Bernice · whose garlic bread?",
+"date": "Zion · the church supper",
+"t": 862.96
+}
+},
+{
+"a": 869.207,
+"b": 873.957,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 873.957,
+"b": 883.887,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 883.887,
+"b": 888.157,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_summer",
+"vid": true,
+"cap": "1943 · the garden in summer",
+"credit": "The Gardens of Victory (1943) · Public domain · archive.org"
+}
+},
+{
+"a": 888.157,
+"b": 895.857,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "arc_fieldrows",
+"vid": true,
+"cap": "1942 · rows of young plants",
+"credit": "Henry Browne, Farmer (1942) · Public domain · archive.org"
+}
+},
+{
+"a": 895.857,
+"b": 900.537,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 900.537,
+"b": 905.353,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Do you plant garlic in the fall or the spring?",
+"opts": [
+{
+"txt": "FALL",
+"t": 904.007
+},
+{
+"txt": "SPRING",
+"t": 904.807
+}
+],
+"k": "n_bigheads"
+}
+},
+{
+"a": 905.353,
+"b": 912.853,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 912.853,
+"b": 915.157,
+"k": "s112_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 915.157,
+"b": 921.813,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 921.813,
+"b": 925.7,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [
+[
+6.89,
+"design/stamp_rubber",
+0.35
+],
+[
+17.67,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+28.61,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+52.0,
+"design/page_turn_big",
+0.4
+],
+[
+61.96,
+"design/paper_slide",
+0.3
+],
+[
+64.9,
+"design/pencil_strokes",
+0.22
+],
+[
+117.24,
+"design/pen_write",
+0.3
+],
+[
+140.8,
+"design/click_slide",
+0.3
+],
+[
+152.68,
+"design/page_turn_big",
+0.4
+],
+[
+158.54,
+"design/page_turn_big",
+0.4
+],
+[
+220.91,
+"design/pen_write",
+0.3
+],
+[
+225.64,
+"design/paper_slide",
+0.35
+],
+[
+242.56,
+"design/paper_slide",
+0.35
+],
+[
+258.7,
+"design/paper_slide",
+0.35
+],
+[
+276.5,
+"design/paper_slide",
+0.35
+],
+[
+294.64,
+"design/paper_slide",
+0.35
+],
+[
+308.44,
+"design/paper_slide",
+0.35
+],
+[
+352.2,
+"design/paper_slide",
+0.3
+],
+[
+357.62,
+"design/pencil_strokes",
+0.22
+],
+[
+359.52,
+"design/pencil_strokes",
+0.22
+],
+[
+361.74,
+"design/pencil_strokes",
+0.22
+],
+[
+364.26,
+"design/pencil_strokes",
+0.22
+],
+[
+366.02,
+"design/pencil_strokes",
+0.22
+],
+[
+382.65,
+"design/stamp_rubber",
+0.5
+],
+[
+382.95,
+"design/pencil_strokes",
+0.3
+],
+[
+402.86,
+"design/pen_write",
+0.3
+],
+[
+424.53,
+"design/camera_shutter",
+0.25
+],
+[
+464.42,
+"design/pen_write",
+0.3
+],
+[
+502.14,
+"design/click_slide",
+0.3
+],
+[
+510.89,
+"design/page_turn_big",
+0.4
+],
+[
+552.29,
+"design/paper_slide",
+0.3
+],
+[
+557.74,
+"design/pencil_strokes",
+0.22
+],
+[
+567.89,
+"design/page_turn_big",
+0.4
+],
+[
+615.04,
+"design/paper_slide",
+0.35
+],
+[
+634.24,
+"design/paper_slide",
+0.35
+],
+[
+650.95,
+"design/paper_slide",
+0.35
+],
+[
+679.12,
+"design/paper_slide",
+0.35
+],
+[
+689.0,
+"design/paper_slide",
+0.35
+],
+[
+713.07,
+"design/paper_slide",
+0.35
+],
+[
+721.93,
+"design/paper_slide",
+0.3
+],
+[
+765.85,
+"design/paper_slide",
+0.3
+],
+[
+769.59,
+"design/pencil_strokes",
+0.22
+],
+[
+771.03,
+"design/pencil_strokes",
+0.22
+],
+[
+773.65,
+"design/pencil_strokes",
+0.22
+],
+[
+775.33,
+"design/pencil_strokes",
+0.22
+],
+[
+803.31,
+"design/click_slide",
+0.3
+],
+[
+815.24,
+"design/page_turn_big",
+0.4
+],
+[
+826.1,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+837.79,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+857.61,
+"design/camera_shutter",
+0.25
+],
+[
+900.54,
+"design/click_slide",
+0.25
+]
+],
+"counts": [
+{
+"a": 225.82,
+"b": 242.373,
+"n": 1
+},
+{
+"a": 242.753,
+"b": 258.5,
+"n": 2
+},
+{
+"a": 258.9,
+"b": 276.28,
+"n": 3
+},
+{
+"a": 276.72,
+"b": 294.347,
+"n": 4
+},
+{
+"a": 294.927,
+"b": 308.24,
+"n": 5
+},
+{
+"a": 308.633,
+"b": 324.62,
+"n": 6
+},
+{
+"a": 615.04,
+"b": 634.013,
+"n": 7
+},
+{
+"a": 634.473,
+"b": 650.807,
+"n": 8
+},
+{
+"a": 651.087,
+"b": 671.64,
+"n": 9
+},
+{
+"a": 671.88,
+"b": 688.82,
+"n": 10
+},
+{
+"a": 689.18,
+"b": 712.867,
+"n": 11
+},
+{
+"a": 713.267,
+"b": 735.493,
+"n": 12
+}
+],
+"end": 925.7
+}
