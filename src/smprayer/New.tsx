@@ -1,7 +1,7 @@
 // smprayer · componentes nuevos (Claude, 11-oct-2026). Público mayor: planos largos, movimiento lento, texto grande y poco.
 // Mismas reglas del kit: a = segundo de entrada, d = cuadros, los tiempos de las props son segundos absolutos de la voz.
 import React from "react";
-import { AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { SERIF, LABEL, HAND, fr, cl, ez, eo, lin, img, C, Grade, Grain, Mark, Print, Chip, Bed, Stage, sp } from "./Base";
 
 type P<T> = React.FC<T & { a: number; d: number }>;
@@ -41,6 +41,28 @@ export const DropOpen: P<{ k: string; vid?: boolean; words: [string, number][]; 
       {r > 0 && r < 1.4 ? [0, 0.25].map((o, i) => { const q = cl(r - o); return q > 0 ? <div key={i} style={{ position: "absolute", left: 960, top: 470, width: 40 + 700 * eo(q), height: (40 + 700 * eo(q)) * 0.36, translate: "-50% -50%", borderRadius: "50%", border: `${5 * (1 - q) + 1}px solid rgba(255,236,190,${0.7 * (1 - q)})` }} /> : null; }) : null}
       <Words f={f} at={at} words={words} />
       <Grade vig={0.35} />
+    </AbsoluteFill>
+  );
+};
+
+// ── APERTURA (regla de todos los videos, 11-oct): 0-0,6 s la MINIATURA exacta, sin zoom; fundido de 6 cuadros
+//    al clip de agnes que la anima; corte a un 2º clip de agnes antes de Loretta. Sin texto ni títulos. ──
+export const Apertura: P<{ thumb: string; clip: string; clip2: string; cut2: number }> = ({ a, d, thumb, clip, clip2, cut2 }) => {
+  const { f, at } = useT(a);
+  const HOLD = 18, X = 6;                       // 0,6 s de miniatura, luego 6 cuadros de fundido
+  const cut = at(cut2);
+  const xf = cl((f - HOLD) / X);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#000" }}>
+      <Img src={staticFile(thumb)} style={{ position: "absolute", width: 1920, height: 1080, left: 0, top: 0, objectFit: "cover" }} />
+      <AbsoluteFill style={{ opacity: xf }}>
+        <Sequence from={HOLD} durationInFrames={Math.max(1, cut - HOLD)}>
+          <OffthreadVideo src={staticFile(clip)} muted style={{ width: 1920, height: 1080, objectFit: "cover" }} />
+        </Sequence>
+        <Sequence from={cut} durationInFrames={Math.max(1, d - cut)}>
+          <OffthreadVideo src={staticFile(clip2)} muted style={{ width: 1920, height: 1080, objectFit: "cover" }} />
+        </Sequence>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -225,4 +247,4 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
   );
 };
 
-export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
+export const NEW: Record<string, React.FC<any>> = { Apertura, DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
