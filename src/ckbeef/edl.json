@@ -1,0 +1,1443 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 3.66,
+"k": "ckbeef_open",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 3.66,
+"b": 7.373,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 7.373,
+"b": 18.797,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 18.797,
+"b": 22.69,
+"k": "s003_l_counter_pound",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 22.69,
+"b": 31.877,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 31.877,
+"b": 44.813,
+"k": "s005_n_skillet_grease",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 44.813,
+"b": 56.563,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 56.563,
+"b": 64.303,
+"k": "s007_l_church_counter",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 64.303,
+"b": 66.173,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 66.173,
+"b": 67.487,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ckbeef/th_prev.jpg",
+"tag": "LAST TIME",
+"words": [
+[
+"Most",
+66.12
+],
+[
+"People",
+66.42
+],
+[
+"Are",
+66.72
+],
+[
+"Cooking",
+70.38
+],
+[
+"Pot",
+70.68
+],
+[
+"Roast",
+71.56
+],
+[
+"Wrong",
+71.86
+]
+],
+"k": "n_empty_kitchen"
+}
+},
+{
+"a": 67.487,
+"b": 81.353,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 81.353,
+"b": 87.69,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_reading_book_1951",
+"vid": true,
+"cap": "1951 · hands turning the pages of an open book",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 87.69,
+"b": 93.754,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 93.754,
+"b": 99.423,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 99.423,
+"b": 108.51,
+"k": "s014_n_cutting_onion",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 108.51,
+"b": 119.883,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_noodles_pot",
+"txt": "Too fast means paste",
+"at2": 111.54
+}
+},
+{
+"a": 119.883,
+"b": 124.1,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 124.1,
+"b": 129.724,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_kettles_1950s",
+"vid": true,
+"cap": "1950s · cooks working at large steam kettles",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 129.724,
+"b": 131.99,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "FOUR SUPPERS · ONE POUND EACH",
+"k": "n_measure_spoons",
+"items": [
+{
+"t": 133.54,
+"txt": "Hamburger hotdish · page 29"
+},
+{
+"t": 130.45,
+"txt": "Potato puff hotdish · page 30"
+},
+{
+"t": 130.81,
+"txt": "Church supper goulash · page 35"
+},
+{
+"t": 131.17,
+"txt": "Loose-meat sandwich · page 42"
+}
+],
+"at2": 131.72
+}
+},
+{
+"a": 131.99,
+"b": 137.74,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 137.74,
+"b": 144.17,
+"k": "s020_l_cookbook_open",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 144.17,
+"b": 154.887,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 154.887,
+"b": 162.007,
+"k": "s022_n_measure_spoons",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 162.007,
+"b": 172.764,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dining_hall_1950s",
+"vid": true,
+"cap": "1950s · two people standing in a dining room with tables",
+"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+}
+},
+{
+"a": 172.764,
+"b": 178.45,
+"k": "s024_n_coffee_urn",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 178.45,
+"b": 181.594,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_homeec_cafeteria",
+"vid": true,
+"cap": "1951 · women in white aprons serving food from a steam line",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 181.594,
+"b": 192.12,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 192.12,
+"b": 198.25,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 198.25,
+"b": 204.1,
+"k": "",
+"c": "Chapter",
+"props": {
+"label": "SUPPER",
+"k": "n_church_tables",
+"n": "4",
+"title": "Church Basement Hamburger Hotdish",
+"sub": "PAGE 29",
+"at2": 200.25
+}
+},
+{
+"a": 204.1,
+"b": 216.167,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_boy_cow",
+"vid": true,
+"cap": "1952 · a boy walking beside a brown and white cow",
+"credit": "Texas Farm Family (1952) · Public domain"
+}
+},
+{
+"a": 216.167,
+"b": 227.25,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 227.25,
+"b": 256.713,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "ONE POUND · HOTDISH",
+"k": "n_pound_beef",
+"items": [
+{
+"t": 230.33,
+"txt": "1 lb ground beef"
+},
+{
+"t": 232.69,
+"txt": "1/2 large onion, chopped"
+},
+{
+"t": 234.99,
+"txt": "1 celery stalk, chopped"
+},
+{
+"t": 237.95,
+"txt": "6 oz wide egg noodles"
+},
+{
+"t": 240.29,
+"txt": "1 can cream of mushroom soup"
+},
+{
+"t": 243.33,
+"txt": "1/2 cup milk"
+},
+{
+"t": 244.67,
+"txt": "1 cup corn, drained"
+},
+{
+"t": 247.07,
+"txt": "1/2 tsp salt, 1/4 tsp pepper"
+},
+{
+"t": 250.53,
+"txt": "1 cup shredded cheddar"
+},
+{
+"t": 253.91,
+"txt": "1/2 cup crushed saltines, 1 Tbsp melted butter"
+}
+],
+"at2": 229.25
+}
+},
+{
+"a": 256.713,
+"b": 260.64,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 350,
+"unit": "°F OVEN",
+"txt": "Butter the pan",
+"k": "n_old_stove",
+"at2": 258.71
+}
+},
+{
+"a": 260.64,
+"b": 272.44,
+"k": "s033_n_beef_onion",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 272.44,
+"b": 279.88,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 279.88,
+"b": 287.207,
+"k": "s035_n_noodles_pot",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 287.207,
+"b": 295.093,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "29",
+"head": "STEP 2 · STIR IN THE SOUP",
+"steps": [
+{
+"t": 287.75,
+"txt": "Soup and milk go into the beef",
+"k": "n_ladle_pot"
+},
+{
+"t": 293.31,
+"txt": "Fold the noodles in gently",
+"k": "n_ladle_pot"
+}
+],
+"at2": 289.21
+}
+},
+{
+"a": 295.093,
+"b": 302.633,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 302.633,
+"b": 306.863,
+"k": "s038_n_foil_pan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 306.863,
+"b": 314.366,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 20,
+"unit": "MIN COVERED",
+"txt": "Steam keeps it moist",
+"k": "n_bubbling_cheese",
+"at2": 308.86
+}
+},
+{
+"a": 314.366,
+"b": 326.473,
+"k": "s040_l_oven_look",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 326.473,
+"b": 332.073,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 332.073,
+"b": 346.8,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 10,
+"unit": "MIN REST",
+"txt": "Then scoop",
+"k": "n_hotdish_rest",
+"at2": 334.07
+}
+},
+{
+"a": 346.8,
+"b": 363.08,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_noodles_pot",
+"yes": {
+"k": "n_noodles_pot",
+"txt": "Take them out 2 minutes early",
+"t": 351.15
+},
+"no": {
+"k": "n_bubbling_cheese",
+"txt": "Cook them all the way",
+"t": 350.8
+},
+"at2": 348.8
+}
+},
+{
+"a": 363.08,
+"b": 366.693,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 366.693,
+"b": 376.48,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_hotdish_rest",
+"txt": "Mushy: noodles cooked all the way",
+"at2": 368.67
+}
+},
+{
+"a": 376.48,
+"b": 386.88,
+"k": "s046_n_bubbling_cheese",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 386.88,
+"b": 390.994,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 390.994,
+"b": 411.453,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 411.453,
+"b": 417.04,
+"k": "",
+"c": "Chapter",
+"props": {
+"label": "SUPPER",
+"k": "n_church_tables",
+"n": "3",
+"title": "Potato Puff Hotdish",
+"sub": "PAGE 30",
+"at2": 413.45
+}
+},
+{
+"a": 417.04,
+"b": 423.103,
+"k": "s050_n_potato_puffs",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 423.103,
+"b": 439.99,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 439.99,
+"b": 471.83,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "ONE POUND · TWO-THIRDS OF THE BOOK",
+"k": "n_potato_masher",
+"items": [
+{
+"t": 444.55,
+"txt": "2/3 large onion, chopped"
+},
+{
+"t": 452.55,
+"txt": "2/3 tsp Worcestershire sauce"
+},
+{
+"t": 449.54,
+"txt": "2/3 can each cream soup"
+},
+{
+"t": 462.05,
+"txt": "1/3 cup milk"
+},
+{
+"t": 463.71,
+"txt": "2 cups frozen green beans"
+},
+{
+"t": 465.95,
+"txt": "1 cup shredded cheddar"
+},
+{
+"t": 468.61,
+"txt": "about 20 oz frozen potato puffs"
+}
+],
+"at2": 441.99
+}
+},
+{
+"a": 471.83,
+"b": 495.247,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 375,
+"unit": "°F OVEN",
+"txt": "Brown, drain, season",
+"k": "n_potato_puffs",
+"at2": 473.83
+}
+},
+{
+"a": 495.247,
+"b": 519.944,
+"k": "s054_l_potato_rows",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 519.944,
+"b": 543.913,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_potato_puffs",
+"yes": {
+"k": "n_potato_puffs",
+"txt": "Frozen, in close rows",
+"t": 525.06
+},
+"no": {
+"k": "n_potato_puffs",
+"txt": "Thawed: soggy top",
+"t": 528.03
+},
+"at2": 521.94
+}
+},
+{
+"a": 543.913,
+"b": 567.763,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_potato_puffs",
+"txt": "Soggy top: thawed or covered",
+"at2": 546.04
+}
+},
+{
+"a": 567.763,
+"b": 582.94,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "n_empty_kitchen",
+"t": 571.61,
+"at2": 569.76
+}
+},
+{
+"a": 582.94,
+"b": 588.457,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 588.457,
+"b": 591.207,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 591.207,
+"b": 600.1,
+"k": "s060_l_grandson_phone",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 600.1,
+"b": 616.88,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_sink",
+"vid": true,
+"cap": "1950 · a woman washing dishes at a window sink",
+"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+}
+},
+{
+"a": 616.88,
+"b": 622.974,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 622.974,
+"b": 628.2,
+"k": "",
+"c": "Chapter",
+"props": {
+"label": "SUPPER",
+"k": "n_church_tables",
+"n": "2",
+"title": "Church Supper Goulash",
+"sub": "PAGE 35",
+"at2": 624.97
+}
+},
+{
+"a": 628.2,
+"b": 646.87,
+"k": "s064_n_goulash_dutch",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 646.87,
+"b": 687.726,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_serving",
+"vid": true,
+"cap": "1945 · people at a dinner table passing a platter",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 687.726,
+"b": 708.913,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 160,
+"unit": "°F BEEF DONE",
+"txt": "No pink left",
+"k": "n_beef_onion",
+"at2": 689.73
+}
+},
+{
+"a": 708.913,
+"b": 712.893,
+"k": "s067_l_stove_stir",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 712.893,
+"b": 732.2,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_stove_pots",
+"vid": true,
+"cap": "1950s · a woman at an electric range with pots",
+"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+}
+},
+{
+"a": 732.2,
+"b": 750.023,
+"k": "",
+"c": "DoDont",
+"props": {
+"k": "n_goulash_dutch",
+"yes": {
+"k": "n_goulash_dutch",
+"txt": "Macaroni cooks in the sauce",
+"t": 735.85
+},
+"no": {
+"k": "n_goulash_dutch",
+"txt": "A second pot of water",
+"t": 739.61
+},
+"at2": 734.2
+}
+},
+{
+"a": 750.023,
+"b": 766.15,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_goulash_dutch",
+"txt": "Burnt bottom: nobody stirred it",
+"at2": 752.79
+}
+},
+{
+"a": 766.15,
+"b": 771.16,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 771.16,
+"b": 777.453,
+"k": "",
+"c": "Chapter",
+"props": {
+"label": "SUPPER",
+"k": "n_church_tables",
+"n": "1",
+"title": "Loose-Meat Sandwich",
+"sub": "PAGE 42",
+"at2": 773.16
+}
+},
+{
+"a": 777.453,
+"b": 794.68,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_corn",
+"vid": true,
+"cap": "1952 · a man standing in a cornfield",
+"credit": "Texas Farm Family (1952) · Public domain"
+}
+},
+{
+"a": 794.68,
+"b": 827.877,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "LOOSE-MEAT · ONE POUND",
+"k": "n_cold_skillet",
+"items": [
+{
+"t": 795.88,
+"txt": "1 lb ground beef, 85% lean"
+},
+{
+"t": 801.5,
+"txt": "1/2 small onion, very fine"
+},
+{
+"t": 805.13,
+"txt": "1/2 cup beef broth"
+},
+{
+"t": 807.93,
+"txt": "1 1/2 tsp yellow mustard"
+},
+{
+"t": 812.57,
+"txt": "1 1/2 tsp Worcestershire"
+},
+{
+"t": 814.97,
+"txt": "1/2 tsp sugar"
+},
+{
+"t": 820.79,
+"txt": "1 1/2 tsp cider vinegar"
+},
+{
+"t": 823.11,
+"txt": "4 soft buns, warmed"
+}
+],
+"at2": 796.68
+}
+},
+{
+"a": 827.877,
+"b": 852.393,
+"k": "s075_l_mash_beef",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 852.393,
+"b": 861.493,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 861.493,
+"b": 875.62,
+"k": "s077_l_spoon_bun2",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 875.62,
+"b": 895.576,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_cooking_girls",
+"vid": true,
+"cap": "1951 · two young women in white aprons at a kitchen counter",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 895.576,
+"b": 898.523,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_potato_masher",
+"txt": "Dry crumbles: stop while moist",
+"at2": 898.71
+}
+},
+{
+"a": 898.523,
+"b": 917.05,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 917.05,
+"b": 929.577,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dinner_platter",
+"vid": true,
+"cap": "1945 · plates and platters on a dinner table",
+"credit": "Dinner Party (1945) · Public domain"
+}
+},
+{
+"a": 929.577,
+"b": 939.46,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page36",
+"tab": "PAGE 36",
+"t": null
+}
+],
+"k": "n_cookbook_coffee",
+"at2": 931.58
+}
+},
+{
+"a": 939.46,
+"b": 969.006,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE FOUR · PAGES 29, 30, 35, 42",
+"k": "n_church_tables",
+"items": [
+{
+"t": 940.36,
+"txt": "Hotdish · noodles out 2 min early"
+},
+{
+"t": 949.55,
+"txt": "Potato puffs · frozen, in rows"
+},
+{
+"t": 955.29,
+"txt": "Goulash · macaroni in the sauce"
+},
+{
+"t": 958.37,
+"txt": "Loose-meat · cold pan, masher"
+}
+],
+"at2": 941.46
+}
+},
+{
+"a": 969.006,
+"b": 973.6,
+"k": "",
+"c": "CostTag",
+"props": {
+"price": "UNDER TWO",
+"sub": "A PLATE, ROUGH FIGURE",
+"k": "n_church_tables",
+"at2": 971.01
+}
+},
+{
+"a": 973.6,
+"b": 978.863,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 978.863,
+"b": 982.034,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 982.034,
+"b": 989.107,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_ladle_pot",
+"txt": "Hot food stays at 140 degrees or above. Nothing out more than two hours.",
+"tag": "KEEP IT SAFE",
+"at2": 984.03
+}
+},
+{
+"a": 989.107,
+"b": 999.714,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 999.714,
+"b": 1009.763,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_chickens",
+"vid": true,
+"cap": "1952 · a woman with a basin in a farmyard with chickens",
+"credit": "Texas Farm Family (1952) · Public domain"
+}
+},
+{
+"a": 1009.763,
+"b": 1014.913,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page1",
+"tab": "COOKBOOK",
+"t": null
+}
+],
+"k": "n_cookbook_coffee",
+"at2": 1011.76
+}
+},
+{
+"a": 1014.913,
+"b": 1017.723,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1017.723,
+"b": 1022.803,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Your family's favorite supper with one pound of beef?",
+"k": "n_empty_kitchen",
+"opts": [
+{
+"txt": "Hotdish",
+"t": 1018.54
+},
+{
+"txt": "Goulash",
+"t": 1019.35
+},
+{
+"txt": "Loose-meat",
+"t": 1020.16
+},
+{
+"txt": "Something else",
+"t": 1020.97
+}
+],
+"at2": 1019.72
+}
+},
+{
+"a": 1022.803,
+"b": 1033.08,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1033.08,
+"b": 1039.993,
+"k": "",
+"c": "Tease",
+"props": {
+"k": "n_old_stove",
+"txt": "The candied sweet potatoes every church lady brought to Thanksgiving",
+"tag": "NEXT TIME",
+"at2": 1035.08
+}
+},
+{
+"a": 1039.993,
+"b": 1045.19,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 1045.19,
+"b": 1052.637,
+"k": "s096_l_doorway_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 1052.637,
+"b": 1055.77,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+}
+],
+"sfx": [],
+"end": 1055.77
+}

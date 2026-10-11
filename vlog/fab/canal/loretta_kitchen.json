@@ -1,0 +1,42 @@
+{
+ "canal": "Loretta's Church Kitchen",
+ "serie": "Loretta's Church Kitchen: an 81-year-old Iowa church lady cooks the church supper recipes of her little cookbook, one page at a time",
+ "idioma": "en",
+ "protagonista": "loretta",
+ "pron": "she",
+ "voz": "loretta",
+ "cps": 15.9,
+ "ejemplos": "lor_",
+ "avatar_pct": [
+  10,
+  16
+ ],
+ "avatar_ref": "D:/wt/ckbeef/public/ref_ckbeef.png",
+ "acciones": "stirring a pot of ground beef with a wooden spoon, sliding a 9x13 pan into the oven, lifting the foil off a hotdish, mashing crumbled beef with a potato masher, tasting from a wooden spoon, carrying a covered dish, setting a church supper table",
+ "prohibidas": [
+  "\bfree\b",
+  "\bgratis\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bwhop\b",
+  "\bbrand\b"
+ ],
+ "dir_refs": "D:/rtmp/fab/canal/loretta",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by her grandson with a phone at eye level, in the middle of the cooking: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the kitchen really has (a ceiling light or the daylight from the window), automatic white balance a bit off, slight phone noise, ordinary worn kitchen objects, plain unlabeled cans and bowls, no beautiful composition.",
+ "personajes": {
+  "loretta": {
+   "nombre": "Loretta",
+   "cara": true,
+   "desc": "Loretta, an 81-year-old white American grandmother with short curly snow-white hair, thin wire-rimmed glasses, a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron, with old wrinkled hands"
+  }
+ },
+ "lugares_fijos": {
+  "cocina": "Loretta's farmhouse kitchen: a white enamel stove with chrome handles, yellow gingham curtains on the window, a wooden table with a plastic tablecloth, a rooster cookie jar on a dark wooden dresser, a wall calendar",
+  "sotano": "the church basement kitchen of Zion United Methodist: a long steel counter, a big industrial stove with pots, a stack of white plates, a metal serving window, long folding tables with white paper tablecloths in the next room",
+  "mesa": "a long folding table in the church basement with paper plates, plastic cups and a row of covered hotdish pans, a coffee urn at the end"
+ },
+ "identidad": "Preserve the exact identity, face, short curly snow-white hair, thin wire-rimmed glasses, age and skin of the elderly woman in the reference photograph. She wears a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron.",
+ "cara_crop": "D:/wt/ckbeef/public/ref_ckbeef.png"
+}
