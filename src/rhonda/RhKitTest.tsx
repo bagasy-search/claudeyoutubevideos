@@ -17,7 +17,7 @@ export const KIT: [React.FC<any>, any][] = [
   [RhGroutJoint3D, { mode: "seal", bed: I("r_sealing"), labels: { seal: "Sealer fills the holes" } }],
   [RhQuoteStamp, { bed: I("r_client"), price: "$1,200", job: "Grind out + regrout", stamp: "NOT NEEDED", instead: "a box of baking soda" }],
   [RhFloorMap, { bed: I("r_satisfied"), title: "3 WORST SPOTS", zones: [{ label: "STOVE", x: 0.2, y: 0.3 }, { label: "SINK", x: 0.6, y: 0.25 }, { label: "BACK DOOR", x: 0.82, y: 0.78 }] }],
-  [RhBrushCompare, { img: I("r_knees"), wire: "✕ Wire brush", nylon: "✓ Nylon brush" }],
+  [RhBrushCompare, { img: I("r_knees"), wire: I("r_headshake"), nylon: I("r_kneelbrush") }],
   [() => <Over bg={I("r_wow")}><Sequence durationInFrames={75}><RhKicker txt="LIVE TEST" hand /></Sequence><Sequence from={75}><RhKicker txt="WET + GRIT = MUD" red side="r" /></Sequence><Sequence from={40} durationInFrames={30}><RhPop txt="NEVER" /></Sequence></Over>, {}],
 ];
 export const RhKitTest: React.FC = () => (

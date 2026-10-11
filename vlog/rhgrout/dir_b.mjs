@@ -52,7 +52,7 @@ export const SHOTS = [
   A(31, "The one that ruins grout"),
   B(32, "", "b_wirebrush2", `A small wire brush with a wooden handle and steel bristles lying next to a barbecue grill tool set.`, "a light glint runs along the steel; nothing else moves"),
   K(32, "It works fast", "k_wirescrub", `Close view of a small wire brush scrubbing a gray grout line between beige tiles, grout dust flying.`, "the wire brush scrubs hard", "gray grout dust comes off the line", "a wire brush scraping"),
-  C(32, "But it's chewing off the top of your grout", "RhBrushCompare", { img: I("b_floorbefore"), wire: "✕ Wire brush", nylon: "✓ Nylon brush" }),
+  C(32, "But it's chewing off the top of your grout", "RhBrushCompare", { img: I("b_floorbefore"), wire: I("b_wirebrush"), nylon: I("b_nylonbrush") }),
   B(32, "it scratches the glaze on your tile", "b_scratched", `Extreme close view of fine scratches on a beige glazed ceramic tile next to a grout line.`, "the light slides across the scratches; nothing else moves"),
   R(32, "it's never the same", "r_headshake", `She kneels on the floor of ${KIT}, holding up a small wire brush and shaking her head at the camera.`),
   B(33, "The right one is a stiff nylon brush", "b_nylonbrush2", `A narrow stiff white nylon grout brush with a blue handle held in a yellow-gloved hand.`, "the gloved hand turns the brush slightly; nothing else moves"),
