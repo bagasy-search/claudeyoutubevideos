@@ -1,0 +1,155 @@
+{
+ "secciones": {
+  "GANCHO": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "mateo",
+    "bruno"
+   ]
+  },
+  "CASA": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "jorge",
+    "lucia",
+    "sofia",
+    "mateo",
+    "bruno"
+   ]
+  },
+  "PROMESA": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "QUIEN": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOSTRADOR": {
+   "lugar": "ferreteria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "ARREGLO1": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "jorge"
+   ]
+  },
+  "ARREGLO2": {
+   "lugar": "bano",
+   "hora": "dia",
+   "gente": [
+    "claudio",
+    "lucia",
+    "bruno"
+   ]
+  },
+  "PAGINA": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "SEGURIDAD": {
+   "lugar": "living",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "ARREGLO3": {
+   "lugar": "living",
+   "hora": "dia",
+   "gente": [
+    "claudio",
+    "jorge"
+   ]
+  },
+  "ARREGLO4": {
+   "lugar": "patio",
+   "hora": "dia",
+   "gente": [
+    "claudio",
+    "jorge",
+    "bruno"
+   ]
+  },
+  "ERROR": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MITOS": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "PREGUNTAS": {
+   "lugar": "living",
+   "hora": "tarde",
+   "gente": [
+    "claudio",
+    "sofia",
+    "lucia"
+   ]
+  },
+  "RESULTADO": {
+   "lugar": "living",
+   "hora": "dia",
+   "gente": [
+    "claudio",
+    "jorge",
+    "lucia",
+    "mateo",
+    "bruno"
+   ]
+  },
+  "REVISION": {
+   "lugar": "living",
+   "hora": "noche",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CIERRE": {
+   "lugar": "living",
+   "hora": "noche",
+   "gente": [
+    "claudio"
+   ]
+  }
+ },
+ "nuevos": {
+  "living": "The living room of the Ramírez house: a worn beige fabric sofa with loose cushions and a stitched seam along the base, a thin gray shag carpet covering most of the floor, cream painted walls, a small wooden side table with a lamp, and a window with pale cotton curtains letting in soft daylight. A cheap TV stand sits against one wall with a few family photos on top.",
+  "bano": "The small bathroom of the Ramírez house: white ceramic tub with a plastic shower curtain, pale green tiles halfway up the walls, a white sink with a chrome tap, a small window high on the wall, and a plastic bucket and folded towels on the floor by the tub. The floor is gray non-slip tile with a drain in the corner."
+ },
+ "avatar_lugar": "living",
+ "lugares": {
+  "cocina": "the kitchen of the Ramírez house: white square wall tiles with a blue-and-white patterned tile strip at eye level, wooden kitchen cabinets, a speckled gray granite countertop, a stainless steel double sink under a window with white iron bars, an older white refrigerator covered with children's crayon drawings held by magnets, a worn beige ceramic floor",
+  "patio": "the small cement back patio of the Ramírez house: a stained cement floor, a low white-painted wall with peeling paint and an open drain channel along its base, a row of terracotta flower pots with saucers along the wall, a black plastic water tank on a rusty metal stand in one corner, a green garden hose, the back of the one-story house with a white door and a barred window",
+  "cuarto_chicos": "the children's bedroom of the Ramírez house: two narrow single beds with striped woven blankets, pale blue walls, a window with white iron bars and a thin curtain, a small wooden nightstand with a lamp, a few toys on the floor, a beige ceramic floor",
+  "ferreteria": "a small neighborhood hardware store in a Latin American town: a glass counter with screws and small items inside, wooden shelves behind full of jars, rolls of mesh and boxes",
+  "living": "The living room of the Ramírez house: a worn beige fabric sofa with loose cushions and a stitched seam along the base, a thin gray shag carpet covering most of the floor, cream painted walls, a small wooden side table with a lamp, and a window with pale cotton curtains letting in soft daylight. A cheap TV stand sits against one wall with a few family photos on top.",
+  "bano": "The small bathroom of the Ramírez house: white ceramic tub with a plastic shower curtain, pale green tiles halfway up the walls, a white sink with a chrome tap, a small window high on the wall, and a plastic bucket and folded towels on the floor by the tub. The floor is gray non-slip tile with a drain in the corner."
+ }
+}

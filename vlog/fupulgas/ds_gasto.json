@@ -1,0 +1,47 @@
+{
+ "haiku_guionista": {
+  "llamadas": 2,
+  "usd": 0.01881,
+  "seg": 109
+ },
+ "haiku_critico": {
+  "llamadas": 1,
+  "usd": 0.00392,
+  "seg": 27
+ },
+ "haiku_arte": {
+  "llamadas": 1,
+  "usd": 0.00214,
+  "seg": 13
+ },
+ "haiku_arte_juez": {
+  "llamadas": 9,
+  "usd": 0.00707,
+  "seg": 57
+ },
+ "haiku_plan": {
+  "llamadas": 2,
+  "usd": 0.06256,
+  "seg": 509
+ },
+ "haiku_plan_fix": {
+  "llamadas": 1,
+  "usd": 0.00296,
+  "seg": 12
+ },
+ "haiku_planos": {
+  "llamadas": 21,
+  "usd": 0.06929,
+  "seg": 587
+ },
+ "haiku_revisor_fotos": {
+  "llamadas": 62,
+  "usd": 0.10916,
+  "seg": 900
+ },
+ "haiku_editor_montaje": {
+  "llamadas": 28,
+  "usd": 0.05328,
+  "seg": 539
+ }
+}

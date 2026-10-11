@@ -1,0 +1,226 @@
+[
+ {
+  "id": "k001",
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up side view of a caramel-colored dog's fur on its back in soft afternoon light, with one tiny dark flea mid-jump just above the fur, shallow depth of field, the dog's body filling the frame, no people, no hands, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k002",
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of a worn beige fabric sofa cushion in a living room, a tiny dark flea landing on the woven fabric beside a stitched seam, soft window light from the side, fabric texture clearly visible, no people, no hands, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k003",
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of a white painted wall meeting a gray floor, a narrow dark crack along the baseboard, a tiny dark flea just entering the crack, low angle, soft natural light, no hands, no people, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k004",
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Macro close-up inside the same narrow crack at the base of a painted wall, a few tiny white oval specks like eggs and small pale husks tucked into the crack, sharp focus, shallow depth, no people, no hands, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k005",
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of the bottom seam of a beige fabric sofa, a thin even layer of loose gray dust lying along the stitching like fine sand, soft daylight from a window, no fingers, no people, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k006",
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of the same beige sofa seam with small pale brown oval husks stuck firmly to the stitching, the gloved fingertip of a man in a khaki shirt sleeve touching them, sharp detail, soft daylight, no face, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k007",
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A can of spray insecticide aimed at a gray rug on a living room floor, a young boy's bare feet on the rug right beside it, bright daylight, medium shot, no readable labels, no text, no faces.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k008",
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "foto": "Claudio, 58, Latin American pest-control technician with short curly graying black hair, gray-stubbled beard, warm brown eyes, khaki short-sleeve work shirt and safety glasses pushed up on forehead, sits on the arm of a beige sofa holding a folded paper note, face visible, warm living room light, medium shot, paper shows no legible text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k009",
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Claudio's gloved hands in blue nitrile gloves unplugging a vacuum cleaner cord from a wall socket in a living room, khaki shirt sleeve visible, face not in frame, daylight from a window, medium close shot, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k010",
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of Claudio's gloved hands tying a knot in the top of a gray vacuum bag, the bag bulging slightly, standing on a clean outdoor cement patio in daylight, no faces, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k011",
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A thick black garbage bag placed over a tied vacuum bag on an outdoor cement patio, the outer bag held open by a gloved hand, medium shot, daylight, no faces, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k012",
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of a beige sofa cover's stitched care tag, a gloved hand turning the fabric to inspect it, sharp focus, soft living room light, the tag shows no readable text, no faces, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k013",
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of a sofa seam held under gentle tension between two gloved fingers to test the stitching, sharp detail, soft daylight, no faces, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k014",
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "Medium shot of a clean beige sofa in a living room, its cushions fluffed, a vacuum cleaner standing beside it, afternoon light from the window, no people, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k015",
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A freshly bathed caramel dog sitting on a clean white towel on a tiled floor, fluffy and clean, bright daylight, medium shot, no people's faces, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k016",
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "The same caramel dog lying on a beige rug in a living room, scratching, a few tiny pale specks falling from its fur onto the carpet fibers, close medium shot, no people, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k017",
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A beige living room sofa seen straight on, the cover dull and dirty with a darker gray grime line along the base seam, flat afternoon light, no people, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k018",
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "The same beige sofa from the same angle, its cover clean and bright and cushions fluffed, same room, soft afternoon light, no people, no text, no labels.",
+  "mov": "",
+  "dice": ""
+ }
+]

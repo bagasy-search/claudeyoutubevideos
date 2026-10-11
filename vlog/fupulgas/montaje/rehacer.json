@@ -1,0 +1,230 @@
+{
+ "p004": {
+  "motivo": "El sofá y el mueble de TV son distintos a los de los planos vecinos (3, 5, 6), así que parece otra casa o lugar pese a que la narración dice «Ésta es la casa de los Ramírez».",
+  "mejor": "The man presents the same living room as the neighbouring shots, with the same tan textured sofa, lamp, window and TV cabinet, while saying 'This is the Ramírez house'."
+ },
+ "p010": {
+  "motivo": "No muestra lo que se dice: no hay nadie rascándose. Aparece una niña sentada con un perro, y el texto habla de un niño con ronchas.",
+  "mejor": "Mateo, a young boy, sitting on the sofa and scratching his ankle with his hand."
+ },
+ "p014": {
+  "motivo": "No muestra lo que se dice: el narrador dice que Jorge estaba parado en la puerta, pero aquí el hombre camina descalzo por la sala lejos de la puerta.",
+  "mejor": "Jorge standing at the front door, holding the truck keys in his hand, while looking into the living room."
+ },
+ "p020": {
+  "motivo": "Parece una habitación distinta a sus vecinas: alfombra estampada, mueble de madera y sofá diferentes, con otra iluminación y encuadre, cuando el resto del video ocurre en la misma sala beige con el sofá de tela y la cómoda con el televisor.",
+  "mejor": "The woman with arms crossed looks skeptically at the man, framed in the same beige living room with the same sofa as the neighbouring shots."
+ },
+ "p026": {
+  "motivo": "No muestra lo que se dice: 'pero con las pulgas' no se refleja, ya que el hombre solo está de rodillas sobre la alfombra sin nada que indique pulgas. Además, el encuadre se parece al de la toma 7 y no aporta nada nuevo.",
+  "mejor": "Close-up of the man kneeling on the carpet by the sofa, pointing at tiny dark flea specks in the carpet fibers under a flashlight."
+ },
+ "p027": {
+  "motivo": "Casi duplicado de la toma 3: mismo hombre con gafas en el mismo encuadre cerrado, con el brazo del sillón a la izquierda y la misma pared y cómoda al fondo. No muestra al narrador mirando el sillón.",
+  "mejor": "The man leans over the sofa arm and studies the upholstery closely with a magnifying glass, looking at the sofa rather than at the camera."
+ },
+ "p029": {
+  "motivo": "La frase habla de dónde viven las pulgas de verdad (afuera), pero el plano muestra a dos personas revisando un sofá con una herramienta dentro de la sala; no muestra nada exterior ni relacionado con el lugar exterior.",
+  "mejor": "A wide exterior shot of the dog's yard or outdoor area where the fleas actually live, with the narrator's crew looking around outside."
+ },
+ "p030": {
+  "motivo": "La frase trata de que la pista no es lo que Jorge pensaba, pero el plano solo muestra una mano con llaves frente a un sofá, sin relación visible con esa idea.",
+  "mejor": "Jorge, the man in the navy polo, looking puzzled while holding up a clue next to the sofa, to show the clue is not what he expected."
+ },
+ "p045": {
+  "motivo": "La narración dice «cortar el pasto donde duerme Bruno», pero el plano muestra a un hombre con guantes y tijeras en una alfombra interior, sin pasto ni zona exterior donde duerma el perro.",
+  "mejor": "A gloved man trimming the grass of an outdoor lawn in the spot where the dog Bruno sleeps."
+ },
+ "p051": {
+  "motivo": "No muestra la frase: el narrador dice «Soy Claudio. Treinta años de fumigador», pero el plano muestra a un hombre apoyando la mano en un sofá y mirando hacia abajo, sin presentarse a cámara. Además, el sofá, la mesa auxiliar y la pared con puerta parecen de otra habitación que las tomas vecinas.",
+  "mejor": "Claudio facing the camera in the same living room as the neighbouring shots, with the same sofa and framing, introducing himself to the viewer."
+ },
+ "p061": {
+  "motivo": "La narración habla del Manual con una frase escrita, pero el plano solo muestra a un hombre hablando por teléfono detrás del mostrador; no aparece el manual ni ninguna frase escrita.",
+  "mejor": "A man at the hardware counter holding open a printed manual and pointing to a handwritten phrase on its page."
+ },
+ "p062": {
+  "motivo": "Imagen visualmente rota: las manos son desproporcionadas y el rostro aparece incrustado tras el cristal del mostrador, con una composición anatómicamente incoherente.",
+  "mejor": "A clean medium shot of the man at the hardware counter with his hands resting naturally on the glass display case, looking toward the camera."
+ },
+ "p063": {
+  "motivo": "Casi duplicado del plano 6: misma tienda, mismo encuadre y mismas posiciones de los dos hombres junto al mostrador.",
+  "mejor": "A close-up of the man at the counter holding a heavy-duty green residue bag up to the camera, with the shelves of the store behind him."
+ },
+ "p065": {
+  "motivo": "No muestra lo que se dice: el narrador habla de alquilar una herramienta para el pasto y de bolsas, pero el plano muestra a un hombre contando monedas en una bandeja.",
+  "mejor": "The narrator holds up a stack of heavy-duty black waste bags beside a rented lawn trimmer at the shop counter."
+ },
+ "p069": {
+  "motivo": "Lugar distinto a sus vecinos: el techo metálico, los estantes y el letrero Stanley no coinciden con la tienda de madera de los demás planos, y la herramienta se ve deformada.",
+  "mejor": "The narrator stands in the same wooden-shelved hardware store as the neighbouring shots, holding a correctly shaped borrowed string trimmer."
+ },
+ "p072": {
+  "motivo": "No muestra lo que se dice: el narrador habla de clientes que vuelven a las dos semanas, pero el plano es una sala de estar con un sofá, un lugar distinto a la tienda de los demás planos.",
+  "mejor": "The narrator stands at the hardware store counter explaining why customers come back after two weeks."
+ },
+ "p075": {
+  "motivo": "Casi duplicado de la toma 1: el mismo hombre arrodillado junto al sofá, en el mismo lugar y con un encuadre casi idéntico (sofá a la izquierda, ventana y mueble de TV a la derecha). No muestra nada de lo que dice la narración sobre larvas y capullos en la alfombra.",
+  "mejor": "Close-up of the carpet fibers with a man's gloved fingers lifting a small flea cocoon and tiny larvae, shot from a low angle."
+ },
+ "p080": {
+  "motivo": "No muestra lo que se dice: la narración habla de la pulga metiéndose en la grieta del zócalo, pero el plano muestra al hombre agachado junto a la pata del sofá, sin ninguna grieta visible en el zócalo.",
+  "mejor": "A man crouching with a flashlight, pointing it into a narrow dark gap between the white baseboard and the carpet edge, with the sofa visible behind him."
+ },
+ "p087": {
+  "motivo": "La toma muestra a un hombre sentado en el sofá y no muestra los capullos esperando inmóviles semanas ni la sensibilidad a vibración o calor que dice la narración.",
+  "mejor": "Close-up of cocoon-like egg cases lying still in the carpet fibers near the sofa base, waiting undisturbed."
+ },
+ "p090": {
+  "motivo": "Casi duplicado de la toma 6: mismo encuadre de cámara, misma ventana, lámpara, mueble de TV y luz del techo, con la misma ubicación de la cámara.",
+  "mejor": "Close-up of the sofa cushion seams with hidden egg cases tucked inside, teasing the sofa reveal the narrator mentions."
+ },
+ "p097": {
+  "motivo": "La narración dice «el perro, con el veterinario», pero el plano muestra a un hombre bañando al perro en una bañera; no aparece ningún veterinario.",
+  "mejor": "The dog being examined by a veterinarian in a clinic exam room, with the vet visible beside it."
+ },
+ "p100": {
+  "motivo": "El plano muestra a un hombre junto al lavabo y no muestra ningún producto para perro ni para gato, así que no ilustra la advertencia de usar producto de perro en un gato.",
+  "mejor": "A close-up of a pet shampoo bottle held beside a cat and a dog, with no readable brand text, while the man points at it."
+ },
+ "p106": {
+  "motivo": "La mujer está sentada en una bañera seca con una manta; no se ve un ciclo de lavado ni agua en marcha que ilustre los treinta minutos del ciclo completo.",
+  "mejor": "A washing machine or tub with running water and a visible timer or clock reading thirty minutes, with the full wash cycle in progress."
+ },
+ "p109": {
+  "motivo": "No muestra lo que se dice: la narración habla de las fibras y del secado, pero la toma muestra a una mujer sujetando una cortina de ducha de plástico transparente sobre la bañera, sin fibras ni secado a la vista.",
+  "mejor": "Lucía scrubbing the gray bed cover's fibers with a blue sponge in the green-tiled tub, so the fibers are visibly being cleaned."
+ },
+ "p117": {
+  "motivo": "Parece otra casa: es un salón con alfombra, sofá y lámpara de pie, sin azulejos verdes ni elementos de baño, a diferencia de los planos vecinos.",
+  "mejor": "Claudio and Lucía in the same green-tiled house, showing the freshly cleaned carpet and the patio visible through the back door."
+ },
+ "p120": {
+  "motivo": "No muestra lo que se dice (pasos, tiempos y lista exacta): el hombre aparece sentado sin leer ni señalar nada. Además es casi un duplicado del plano 2: mismo hombre, mismo lugar en el sofá y mismo encuadre.",
+  "mejor": "The man sits on the sofa holding the manual open, pointing at a printed list of steps, times and hardware items."
+ },
+ "p125": {
+  "motivo": "No muestra lo que se dice: no aparecen los niños ni Bruno yendo afuera; sólo se ve a un hombre de pie en el cuarto.",
+  "mejor": "The children and Bruno walk out through the open door to the yard while the room airs out with the windows open."
+ },
+ "p127": {
+  "motivo": "La narración habla de que el perro se lame y se lleva cosas a la boca, pero el plano muestra a un hombre cepillando al perro o la alfombra; no se ve al perro lamiéndose ni llevándose nada a la boca.",
+  "mejor": "The dog licking its own paw on the carpet, then bringing a small object up to its mouth."
+ },
+ "p129": {
+  "motivo": "La narración dice que sólo se usa el tratamiento del veterinario y nada de productos fuertes, pero el plano muestra a un hombre rociando un aerosol, lo que contradice el mensaje.",
+  "mejor": "The man standing in the living room holding up a veterinary prescription bottle and gesturing to the camera, with no spray can."
+ },
+ "p131": {
+  "motivo": "La narración dice «hay chicos en la casa» y menciona al veterinario, pero el plano muestra a un hombre con un recipiente de plástico; no aparecen niños ni nada relacionado con el veterinario.",
+  "mejor": "Children playing on the carpet in the living room while the man stands nearby, with the sofa and window visible."
+ },
+ "p142": {
+  "motivo": "No muestra lo que se dice: el narrador habla de repetir la aspiración todos los días durante dos semanas, pero el plano muestra a dos hombres de pie sosteniendo trapos, sin aspirar. Además es casi un duplicado del plano 1: los mismos dos hombres en el mismo punto, con el mismo encuadre de sala, ventana y mueble de TV.",
+  "mejor": "A man vacuuming the carpet beside the sofa from a new angle, different from shot 1, with a visible daily-routine cue such as a wall calendar or a checklist."
+ },
+ "p152": {
+  "motivo": "La narración dice 'desenchufa la aspiradora', pero el plano muestra al hombre enchufando la aspiradora en la toma de pared. Además, la aspiradora es un modelo vertical rojo distinto y el sofá y la pared parecen de otra casa.",
+  "mejor": "A man in the same living room unplugs the canister vacuum from the wall outlet with gloved hands before changing the bag."
+ },
+ "p156": {
+  "motivo": "El narrador dice que vacía la aspiradora sobre la bolsa abierta, afuera, con el viento de espaldas, pero el plano muestra al hombre de pie dentro de la sala con el depósito en la mano, sin bolsa ni exterior.",
+  "mejor": "A man stands outdoors on the patio, tipping the vacuum canister over an open black trash bag with the wind at his back."
+ },
+ "p164": {
+  "motivo": "El narrador dice 'es su casa de verano', pero el plano muestra a un hombre agachado junto a una rejilla de desagüe, sin casa, cucha ni refugio de verano a la vista.",
+  "mejor": "The dog's summer shelter or hideout under the plants, with the man pointing at it or crouching beside it."
+ },
+ "p167": {
+  "motivo": "El narrador dice 'cortar el pasto con la bordeadora', pero el plano muestra a un hombre de pie sosteniendo una herramienta de mango largo, no una bordeadora; la bordeadora sí aparece en el plano 6.",
+  "mejor": "The man operating a brush cutter (bordeadora) low over the grass strip, as in shot 6."
+ },
+ "p174": {
+  "motivo": "Casi duplicado del plano 2: el mismo hombre, en el mismo patio, con el mismo encuadre y la misma toma. No muestra la frente sudada ni el patio que se menciona.",
+  "mejor": "A medium close-up of the same man in the same patio wiping sweat from his forehead with his arm, filmed from a different angle so it does not repeat shot 2."
+ },
+ "p185": {
+  "motivo": "Parece otra casa: la sala tiene otra lámpara, otro sofá y otra disposición que las tomas vecinas (4, 6 y 7), así que rompe la continuidad del espacio.",
+  "mejor": "The man kneeling and washing the sofa cover in the same living room as shots 4, 6 and 7, with the same white table lamp, TV cabinet and window."
+ },
+ "p187": {
+  "motivo": "Visualmente roto: el objeto curvo de madera que sostiene no tiene sentido y no muestra la costura ni la aspiradora que se mencionan en la narración.",
+  "mejor": "The man close-up inspecting a sofa seam by pulling the fabric taut, in the same living room, while the narrator says the seam must hold."
+ },
+ "p190": {
+  "motivo": "El narrador habla de sacar al perro al sol una hora, pero el plano muestra a un hombre con un teléfono junto al sofá, sin perro ni sol.",
+  "mejor": "The man takes the golden retriever outside into bright sunlight and they stand together on a sunny lawn."
+ },
+ "p197": {
+  "motivo": "El plano parece de otro lugar: la disposición de la mesa auxiliar, la lámpara y la ventana no coinciden con la sala de los vecinos, y el perro es de pelo largo y de otro aspecto.",
+  "mejor": "The same golden retriever lies clean on a towel on the grey carpet of the same living room, with the matching sofa and window visible."
+ },
+ "p203": {
+  "motivo": "Casi duplicado del plano 8: el mismo hombre con linterna inclinado sobre el mismo sofá, con el mismo encuadre cercano. El plano 5 no muestra lo que se dice, que es cuándo las pulgas siguen apareciendo a las semanas.",
+  "mejor": "A wide shot of the man checking a calendar or a flea-count log while the sofa and carpet are visible in the background."
+ },
+ "p204": {
+  "motivo": "No muestra la consulta al veterinario que se narra; solo aparece una mujer con el perro en el sofá. El encuadre es casi idéntico al del plano 3 (mismo sofá, lámpara, ventana y mueble de TV).",
+  "mejor": "A veterinarian examining the dog on an exam table in a clinic."
+ },
+ "p205": {
+  "motivo": "No muestra una casa infestada con pulgas en cada rincón; el hombre está de pie en una habitación limpia y vacía, sin pulgas visibles.",
+  "mejor": "A close-up of fleas crawling along the carpet edges and sofa seams to show an infestation."
+ },
+ "p208": {
+  "motivo": "La narración habla del perro y del veterinario, pero el plano muestra a un hombre aplicando un producto sobre el sillón y la alfombra. No aparece ningún perro ni veterinario.",
+  "mejor": "A dog being brought to or examined by a veterinarian, or the dog itself, as the narrator mentions the vet."
+ },
+ "p210": {
+  "motivo": "Casi duplicado del plano 2: misma composición, la mujer de pie en el mismo lugar junto al sillón y el hombre arrodillado limpiando, con el mismo encuadre.",
+  "mejor": "A medium shot of an apartment living room or balcony-style space with a different framing, showing the narrator's question about living in an apartment."
+ },
+ "p212": {
+  "motivo": "La narración habla de un patio y de un balcón con sombra, pero el plano es un living interior con un hombre sosteniendo un aparato. No se ve ningún balcón ni espacio exterior con sombra.",
+  "mejor": "A shaded apartment balcony with a chair or plants, contrasting with the sunny patio the narrator says is not suitable."
+ },
+ "p225": {
+  "motivo": "Near duplicate of shot 8: same room, same camera framing, same wall, window, curtain and furniture, with the same man in the same spot. It does not add new visual information.",
+  "mejor": "A low side-angle shot of the man's socked feet walking along the carpet beside the baseboard, matching the narration about walking past the baseboards."
+ },
+ "p231": {
+  "motivo": "Near duplicate of shot 5: same man, same spot on the sofa, same framing, and he is not showing anything concrete for the 'good sign, but repeat tomorrow' line.",
+  "mejor": "Close-up of the clean white cloth with no black dots, with the man's hand giving a thumbs-up or a calendar card reading 'mañana'."
+ },
+ "p232": {
+  "motivo": "Looks like a different house: hardwood floor and a rug, while every other shot is in the grey shag-carpet living room.",
+  "mejor": "Wide shot of the grey shag-carpet living room with the vacuum nozzle under the sofa, showing where the fleas come from."
+ },
+ "p233": {
+  "motivo": "Looks like a different house: hardwood floor, dining chairs and a different room, and a woman in the foreground. The vacuum is on the floor, not on the sofa the narration names.",
+  "mejor": "The man vacuuming the sofa cushions and seams in the grey shag-carpet living room."
+ },
+ "p234": {
+  "motivo": "Near duplicate of shot 3: identical room framing and camera position, same ceiling light, window and curtains. It is also indoors in the living room, while the narration is about the patio.",
+  "mejor": "Exterior or patio shot of the backyard floor or patio tiles where fleas jump, with no living room visible."
+ },
+ "p237": {
+  "motivo": "No muestra lo que dice el narrador: se ve a un hombre de pie con un aparato junto a la lámpara, pero no hay puntitos negros sobre tela blanca.",
+  "mejor": "Close-up of tiny black specks scattered on a white sock or white cloth."
+ },
+ "p240": {
+  "motivo": "Parece otro lugar que sus vecinos: el sofá tiene la tapicería rasgada y el hombre es distinto al de los planos 5 y 2.",
+  "mejor": "The same narrator and the same sofa as the neighbouring shots, with the booklet resting on the side table beside the lamp."
+ },
+ "p245": {
+  "motivo": "La narración habla del precio frente a una visita del fumigador, pero la toma muestra a una pareja revisando un papel con fotos; no aparece ningún fumigador ni una comparación de precios.",
+  "mejor": "A technician with a sprayer or a service estimate beside a price tag, showing the cost comparison with a pest-control visit."
+ },
+ "p248": {
+  "motivo": "La narración dice que hay un enlace en la descripción y el Manual, pero la toma solo muestra a un hombre haciendo un gesto hacia el sofá; no hay enlace ni manual.",
+  "mejor": "The narrator pointing toward the video description area or holding up a manual, with the link visible on screen."
+ },
+ "p250": {
+  "motivo": "La narración menciona las medias blancas y los puntitos, pero no se ven medias ni puntos. Además, el encuadre y la posición de cámara son casi idénticos a la toma 4.",
+  "mejor": "A close-up of white socks with small dots on them, filmed from a different angle than shot 4."
+ },
+ "p251": {
+  "motivo": "La narración pide escribir en los comentarios, pero el hombre sentado en el suelo con las manos juntas no muestra ninguna acción de escribir ni de comentarios.",
+  "mejor": "The narrator typing a comment on a phone or laptop while sitting on the sofa."
+ }
+}

@@ -1,0 +1,407 @@
+{
+ "vision": "Una visita de fumigador filmada como un trabajo honesto y ordenado: la casa de los Ramírez de tarde y de noche, con luz cálida y cámara cercana a las manos. Claudio aparece con cara y voz en pocas ventanas bien elegidas (advertencias, historias, errores y cierre), y el resto del tiempo mandan los planos de la casa, el perro, la alfombra y el patio. Los componentes son pocos y precisos: cada uno aparece donde el guion explica un ciclo, un procedimiento, un número o una regla de seguridad. El video respira entre componentes y termina con el QR y la pregunta a la audiencia.",
+ "secciones": {
+  "GANCHO": "Sin presentador. Planos rápidos: tobillos de Mateo con ronchitas rojas, la alfombra gris, el sillón de tela beige con la costura visible, y Bruno, el perro color caramelo, en el medio del piso. Luz de tarde, cortes cortos.",
+  "CASA": "Planos generales y medios del living: sillón de tela, alfombra gris, Bruno rascándose en el medio del piso, Sofía sentada con las piernas cruzadas mirando al perro, Lucía con los brazos cruzados, Jorge en la puerta con las llaves de la camioneta en la mano. Detalle de la ronchita en el tobillo de Mateo. HERO H1 (dentro de la ventana de apertura): Claudio en el living, cara visible, lentes de seguridad subidos en la frente, camisa caqui, presentando la casa.",
+  "PROMESA": "Claudio de pie en el living con el sillón y la alfombra detrás, enumerando el plan. Mientras habla de los resultados, planos de Mateo en la cama sin ronchitas y la alfombra de vuelta en su lugar (la foto del antes y después está en el componente). HERO H2: Claudio con la mano abierta señalando el sillón, cara visible.",
+  "QUIEN": "Historia personal de Claudio. HERO H3: Claudio apoyado en el brazo del sillón, cara visible, con la mano sobre la tela. Intercalar planos de una alfombra vieja tirada en la vereda y de una casa limpia con alfombra en su lugar.",
+  "MOSTRADOR": "Ferretería chica de barrio: mostrador de vidrio con tornillos adentro, estantes de madera, bolsas de residuo gruesas colgadas, rastrillo para hojas apoyado contra la pared, bordeadora en el fondo. HERO H4: Claudio en el mostrador, cara visible, de costado, con la lista de papel en la mano.",
+  "ARREGLO1": "El ciclo de la pulga: perro en el sillón, pulga que salta del pelo a la tela, la grieta del zócalo, huevos y capullos. Después el sillón con el cojín levantado y la costura de abajo con una capa de polvo gris y cáscaras pequeñas. Nada de primeros planos de gore: sólo manchas y puntitos. HERO H5: Claudio con guantes levantando el cojín del medio del sillón, cara visible mirando la costura.",
+  "ARREGLO2": "Paso uno: el veterinario con Bruno, sin producto a la vista. Paso dos: la cama del perro en la bañera, el agua caliente saliendo del grifo, el dial de la lavadora en sesenta grados, la secadora o el sol sobre el patio. Lucía con la cama en la bañera y el agua gris con pelos. HERO H6: Claudio junto a Lucía en el baño, cara visible, las manos sobre la bañera. HERO H7 (ventana del paso uno): Claudio con una hoja de papel doblada en la mano, cara visible.",
+  "PAGINA": "Sin presentador. El Manual del Fumigador abierto en la página treinta y cinco, con una mano apoyada al lado. Corte breve de vuelta al living.",
+  "SEGURIDAD": "Mateo y Bruno saliendo del living hacia el patio. Un aerosol en un estante alto, fuera de alcance. La ventana abierta airea el cuarto. HERO H8 (ventana de seguridad): Claudio abriendo la ventana del living, cara visible, con gesto serio.",
+  "ARREGLO3": "Aspirado por zonas: la boquilla recorriendo las costuras del sillón, la alfombra con pasadas lentas en la línea de la puerta, la boquilla angosta en el zócalo. Calendario de dos semanas marcado en la pared o en la heladera. Bolsa cerrada con nudo afuera, en el patio, con guantes. HERO H9: Claudio aspirando la costura del sillón, cara visible, camisa caqui.",
+  "ARREGLO4": "Patio trasero: cemento manchado, muro bajo con pintura descascarada, arbusto y la sombra donde duerme Bruno. Bordeadora cortando el pasto corto, rastrillo juntando hojarasca en bolsas cerradas, la cucha movida al sol de la mañana. Jorge rastrillando con la frente sudada. HERO H10: Claudio con la bordeadora, cara visible, en el patio.",
+  "ERROR": "Errores típicos en planos cortos: un perro en la bañera, un sillón sacado a la vereda, una aspiradora apagada sobre el piso. Contraste visual entre tirar el mueble y lavar la funda. HERO H11 (ventana del error): Claudio señalando al perro, cara visible.",
+  "MITOS": "Perro limpio con olor a jabón sobre una toalla blanca, la aspiradora sola sin hacer nada, el sol y el pasto corto sin prisa. Nada de dramatismo. HERO H12 (ventana de mitos): Claudio sentado en el sillón con las manos cruzadas, cara visible, hablando de cuándo llamar al profesional.",
+  "PREGUNTAS": "Sofía preguntando y un gato sobre el sillón. Lucía en la puerta del living. Un balcón con sombra y una planta, como alternativa de departamento. HERO H13: Claudio mirando a Sofía, cara visible.",
+  "RESULTADO": "Tres semanas después: Mateo sentado en la cama con los tobillos limpios, Lucía con cara tranquila, Bruno acostado en el sol del patio sin rascarse, el sillón con la tela limpia y la funda lavada colgando, la alfombra en su lugar. HERO H14 (encuadre con Jorge): Claudio y Jorge en el living, cara visible de Claudio, Jorge con las llaves en la mano mirando la alfombra.",
+  "REVISION": "De noche, luz baja en el living. Medias blancas hasta la rodilla caminando sobre la alfombra, el sillón y el zócalo. Primer plano de la tela blanca con puntitos oscuros que saltan. HERO H15 (ventana de revisión): Claudio sentado en el sillón con medias blancas hasta la rodilla, cara visible, explicando la prueba.",
+  "CIERRE": "De noche. Claudio en el living con la cara visible, el Manual del Fumigador sobre la mesa. Después la tarjeta del QR con el celular apuntando. Cierre con Claudio asintiendo y la pregunta a la audiencia."
+ },
+ "avatar": [
+  {
+   "n": "apertura",
+   "desde": "Ésta es la casa de los Ramírez",
+   "hasta": "de las que pican de noche."
+  },
+  {
+   "n": "promesa",
+   "desde": "Hoy te digo qué cosas hacen falta",
+   "hasta": "y cortar el pasto donde duerme Bruno."
+  },
+  {
+   "n": "quien",
+   "desde": "Soy Claudio.",
+   "hasta": "sin llamar a nadie."
+  },
+  {
+   "n": "seguridad",
+   "desde": "Ahora, la seguridad, antes de seguir.",
+   "hasta": "sólo el tratamiento que indique el veterinario."
+  },
+  {
+   "n": "regla_veterinario",
+   "desde": "Paso uno: el perro, con el veterinario.",
+   "hasta": "y no se negocia."
+  },
+  {
+   "n": "error_1",
+   "desde": "El error que todos cometen",
+   "hasta": "hasta la segunda semana."
+  },
+  {
+   "n": "mito_1",
+   "desde": "Te digo lo que no sirve.",
+   "hasta": "Eso hay que decirlo sin vergüenza."
+  },
+  {
+   "n": "llamar_profesional",
+   "desde": "Y cuándo llamar al profesional.",
+   "hasta": "conviene que venga un profesional."
+  },
+  {
+   "n": "preguntas",
+   "desde": "Sofía pregunta: ¿y el gato?",
+   "hasta": "un balcón con sombra sí."
+  },
+  {
+   "n": "resultado",
+   "desde": "Tres semanas después volví.",
+   "hasta": "y ni se mira la pata."
+  },
+  {
+   "n": "revision",
+   "desde": "Ahora la revisión de diez minutos que te prometí.",
+   "hasta": "para que se vean los puntitos."
+  },
+  {
+   "n": "cierre",
+   "desde": "Y lo último.",
+   "hasta": "una visita del fumigador."
+  },
+  {
+   "n": "final",
+   "desde": "Y ahora cuéntame tú.",
+   "hasta": "Leo todos."
+  }
+ ],
+ "componentes": [
+  {
+   "c": "FabCalendario",
+   "frase": "Todos los días, durante dos semanas",
+   "dur": 8,
+   "props": {
+    "cada": 1,
+    "txt": "dos semanas",
+    "title": "Aspirar",
+    "dias": 14
+   }
+  },
+  {
+   "c": "ClCheck",
+   "frase": "la lista para la ferretería",
+   "dur": 10,
+   "props": {
+    "title": "Para la ferretería",
+    "items": [
+     "Bolsas de residuo resistentes, gruesas",
+     "Un rastrillo para hojas",
+     "Una bordeadora prestada o alquilada"
+    ]
+   }
+  },
+  {
+   "c": "FabCiclo",
+   "frase": "Mira el recorrido de una pulga",
+   "dur": 12,
+   "props": {
+    "title": "Recorrido de una pulga",
+    "centro": "cada 2 semanas",
+    "etapas": [
+     {
+      "img": {
+       "foto": "Close-up side view of a caramel-colored dog's fur on its back in soft afternoon light, with one tiny dark flea mid-jump just above the fur, shallow depth of field, the dog's body filling the frame, no people, no hands, no text, no labels.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "salta del pelo"
+     },
+     {
+      "img": {
+       "foto": "Close-up of a worn beige fabric sofa cushion in a living room, a tiny dark flea landing on the woven fabric beside a stitched seam, soft window light from the side, fabric texture clearly visible, no people, no hands, no text, no labels.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "cae en la tela"
+     },
+     {
+      "img": {
+       "foto": "Close-up of a white painted wall meeting a gray floor, a narrow dark crack along the baseboard, a tiny dark flea just entering the crack, low angle, soft natural light, no hands, no people, no text, no labels.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "a la grieta"
+     },
+     {
+      "img": {
+       "foto": "Macro close-up inside the same narrow crack at the base of a painted wall, a few tiny white oval specks like eggs and small pale husks tucked into the crack, sharp focus, shallow depth, no people, no hands, no text, no labels.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "pone huevos ahí"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Eso no es polvo. Son capullos",
+   "dur": 8,
+   "props": {
+    "title": "Lo que parece polvo",
+    "no": {
+     "img": {
+      "foto": "Close-up of the bottom seam of a beige fabric sofa, a thin even layer of loose gray dust lying along the stitching like fine sand, soft daylight from a window, no fingers, no people, no text, no labels.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "Polvo gris, parece arena"
+    },
+    "si": {
+     "img": {
+      "foto": "Close-up of the same beige sofa seam with small pale brown oval husks stuck firmly to the stitching, the gloved fingertip of a man in a khaki shirt sleeve touching them, sharp detail, soft daylight, no face, no text, no labels.",
+      "tam": "detalle",
+      "presenter": true,
+      "face": false
+     },
+     "txt": "Capullos en la costura"
+    }
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "Lavado en agua a sesenta grados",
+   "dur": 8,
+   "props": {
+    "num": "60",
+    "unidad": "grados",
+    "txt": "30 minutos, ciclo completo"
+   }
+  },
+  {
+   "c": "ClBookPage",
+   "frase": "están en la página treinta y cinco",
+   "dur": 8,
+   "props": {
+    "page": "img/fupulgas/page35.jpg",
+    "pageNo": 35,
+    "stamp": "Manual del Fumigador"
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Nada de productos fuertes en la alfombra",
+   "dur": 8,
+   "props": {
+    "title": "Con chicos en casa",
+    "no": {
+     "img": {
+      "foto": "A can of spray insecticide aimed at a gray rug on a living room floor, a young boy's bare feet on the rug right beside it, bright daylight, medium shot, no readable labels, no text, no faces.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "veneno en la alfombra"
+    },
+    "si": {
+     "img": {
+      "foto": "Claudio, 58, Latin American pest-control technician with short curly graying black hair, gray-stubbled beard, warm brown eyes, khaki short-sleeve work shirt and safety glasses pushed up on forehead, sits on the arm of a beige sofa holding a folded paper note, face visible, warm living room light, medium shot, paper shows no legible text.",
+      "tam": "medio",
+      "presenter": true,
+      "face": true
+     },
+     "txt": "Lo que diga el veterinario"
+    }
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "Paso cuatro: la bolsa, o el depósito",
+   "dur": 10,
+   "props": {
+    "title": "Vaciar fuera de casa",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Claudio's gloved hands in blue nitrile gloves unplugging a vacuum cleaner cord from a wall socket in a living room, khaki shirt sleeve visible, face not in frame, daylight from a window, medium close shot, no text, no labels.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": false
+      },
+      "txt": "Desenchufa y guantes"
+     },
+     {
+      "img": {
+       "foto": "Close-up of Claudio's gloved hands tying a knot in the top of a gray vacuum bag, the bag bulging slightly, standing on a clean outdoor cement patio in daylight, no faces, no text, no labels.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": false
+      },
+      "txt": "Nudo en la bolsa"
+     },
+     {
+      "img": {
+       "foto": "A thick black garbage bag placed over a tied vacuum bag on an outdoor cement patio, the outer bag held open by a gloved hand, medium shot, daylight, no faces, no text, no labels.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "Otra bolsa encima"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabMapa",
+   "frase": "viven en la sombra y el pasto alto",
+   "dur": 10,
+   "props": {
+    "title": "Dónde viven las pulgas",
+    "pins": [
+     {
+      "lugar": "sala",
+      "txt": "sillón"
+     },
+     {
+      "lugar": "patio",
+      "txt": "pasto alto"
+     }
+    ],
+    "hechos": 2,
+    "foco": 1,
+    "note": "el patio: casa de verano"
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "a cuatro centímetros del suelo",
+   "dur": 8,
+   "props": {
+    "num": "4",
+    "unidad": "cm",
+    "txt": "de alto, no más"
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "Antes de tirar un mueble",
+   "dur": 10,
+   "props": {
+    "title": "Antes de tirar un mueble",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Close-up of a beige sofa cover's stitched care tag, a gloved hand turning the fabric to inspect it, sharp focus, soft living room light, the tag shows no readable text, no faces, no labels.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "¿la tela se lava?"
+     },
+     {
+      "img": {
+       "foto": "Close-up of a sofa seam held under gentle tension between two gloved fingers to test the stitching, sharp detail, soft daylight, no faces, no text, no labels.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "¿la costura aguanta?"
+     },
+     {
+      "img": {
+       "foto": "Medium shot of a clean beige sofa in a living room, its cushions fluffed, a vacuum cleaner standing beside it, afternoon light from the window, no people, no text, no labels.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "¿ya la aspiraste bien?"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "El mito de que un perro limpio",
+   "dur": 9,
+   "props": {
+    "title": "Perro limpio",
+    "no": {
+     "img": {
+      "foto": "A freshly bathed caramel dog sitting on a clean white towel on a tiled floor, fluffy and clean, bright daylight, medium shot, no people's faces, no text, no labels.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "Perro limpio, ya está listo"
+    },
+    "si": {
+     "img": {
+      "foto": "The same caramel dog lying on a beige rug in a living room, scratching, a few tiny pale specks falling from its fur onto the carpet fibers, close medium shot, no people, no text, no labels.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "Limpio también trae huevos"
+    }
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "En el sillón, la tela estaba limpia",
+   "dur": 10,
+   "props": {
+    "antes": {
+     "foto": "A beige living room sofa seen straight on, the cover dull and dirty with a darker gray grime line along the base seam, flat afternoon light, no people, no text, no labels.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "The same beige sofa from the same angle, its cover clean and bright and cushions fluffed, same room, soft afternoon light, no people, no text, no labels.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "Mismo sillón, mismo ángulo"
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "Si después de un minuto aparecen",
+   "dur": 8,
+   "props": {
+    "num": "1",
+    "unidad": "minuto",
+    "txt": "y ves puntitos negros",
+    "alerta": true
+   }
+  },
+  {
+   "c": "ClQRCard",
+   "frase": "Apunta el celular al código QR",
+   "dur": 7,
+   "props": {
+    "qr": "img/fupulgas/qr.jpg",
+    "cover": "img/fupulgas/book_cover.jpg",
+    "text": "66 arreglos, un solo pago",
+    "kicker": "El Manual"
+   }
+  }
+ ]
+}

@@ -1,0 +1,228 @@
+[
+ {
+  "c": "FabCalendario",
+  "frase": "Todos los días, durante dos semanas",
+  "dur": 8,
+  "props": {
+   "cada": 1,
+   "txt": "dos semanas",
+   "title": "Aspirar",
+   "dias": 14
+  }
+ },
+ {
+  "c": "ClCheck",
+  "frase": "la lista para la ferretería",
+  "dur": 10,
+  "props": {
+   "title": "Para la ferretería",
+   "items": [
+    "Bolsas de residuo resistentes, gruesas",
+    "Un rastrillo para hojas",
+    "Una bordeadora prestada o alquilada"
+   ]
+  }
+ },
+ {
+  "c": "FabCiclo",
+  "frase": "Mira el recorrido de una pulga",
+  "dur": 12,
+  "props": {
+   "title": "Recorrido de una pulga",
+   "centro": "cada 2 semanas",
+   "etapas": [
+    {
+     "img": "k001",
+     "txt": "salta del pelo"
+    },
+    {
+     "img": "k002",
+     "txt": "cae en la tela"
+    },
+    {
+     "img": "k003",
+     "txt": "a la grieta"
+    },
+    {
+     "img": "k004",
+     "txt": "pone huevos ahí"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "Eso no es polvo. Son capullos",
+  "dur": 8,
+  "props": {
+   "title": "Lo que parece polvo",
+   "no": {
+    "img": "k005",
+    "txt": "Polvo gris, parece arena"
+   },
+   "si": {
+    "img": "k006",
+    "txt": "Capullos en la costura"
+   }
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "Lavado en agua a sesenta grados",
+  "dur": 8,
+  "props": {
+   "num": "60",
+   "unidad": "grados",
+   "txt": "30 minutos, ciclo completo"
+  }
+ },
+ {
+  "c": "ClBookPage",
+  "frase": "están en la página treinta y cinco",
+  "dur": 8,
+  "props": {
+   "page": "img/fupulgas/page35.jpg",
+   "pageNo": 35,
+   "stamp": "Manual del Fumigador"
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "Nada de productos fuertes en la alfombra",
+  "dur": 8,
+  "props": {
+   "title": "Con chicos en casa",
+   "no": {
+    "img": "k007",
+    "txt": "veneno en la alfombra"
+   },
+   "si": {
+    "img": "k008",
+    "txt": "Lo que diga el veterinario"
+   }
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "Paso cuatro: la bolsa, o el depósito",
+  "dur": 10,
+  "props": {
+   "title": "Vaciar fuera de casa",
+   "pasos": [
+    {
+     "img": "k009",
+     "txt": "Desenchufa y guantes"
+    },
+    {
+     "img": "k010",
+     "txt": "Nudo en la bolsa"
+    },
+    {
+     "img": "k011",
+     "txt": "Otra bolsa encima"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabMapa",
+  "frase": "viven en la sombra y el pasto alto",
+  "dur": 10,
+  "props": {
+   "title": "Dónde viven las pulgas",
+   "pins": [
+    {
+     "lugar": "sala",
+     "txt": "sillón"
+    },
+    {
+     "lugar": "patio",
+     "txt": "pasto alto"
+    }
+   ],
+   "hechos": 2,
+   "foco": 1,
+   "note": "el patio: casa de verano"
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "a cuatro centímetros del suelo",
+  "dur": 8,
+  "props": {
+   "num": "4",
+   "unidad": "cm",
+   "txt": "de alto, no más"
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "Antes de tirar un mueble",
+  "dur": 10,
+  "props": {
+   "title": "Antes de tirar un mueble",
+   "pasos": [
+    {
+     "img": "k012",
+     "txt": "¿la tela se lava?"
+    },
+    {
+     "img": "k013",
+     "txt": "¿la costura aguanta?"
+    },
+    {
+     "img": "k014",
+     "txt": "¿ya la aspiraste bien?"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "El mito de que un perro limpio",
+  "dur": 9,
+  "props": {
+   "title": "Perro limpio",
+   "no": {
+    "img": "k015",
+    "txt": "Perro limpio, ya está listo"
+   },
+   "si": {
+    "img": "k016",
+    "txt": "Limpio también trae huevos"
+   }
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "En el sillón, la tela estaba limpia",
+  "dur": 10,
+  "props": {
+   "antes": "k017",
+   "despues": "k018",
+   "nota": "Mismo sillón, mismo ángulo"
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "Si después de un minuto aparecen",
+  "dur": 8,
+  "props": {
+   "num": "1",
+   "unidad": "minuto",
+   "txt": "y ves puntitos negros",
+   "alerta": true
+  }
+ },
+ {
+  "c": "ClQRCard",
+  "frase": "Apunta el celular al código QR",
+  "dur": 7,
+  "props": {
+   "qr": "img/fupulgas/qr.jpg",
+   "cover": "img/fupulgas/book_cover.jpg",
+   "text": "66 arreglos, un solo pago",
+   "kicker": "El Manual"
+  }
+ }
+]

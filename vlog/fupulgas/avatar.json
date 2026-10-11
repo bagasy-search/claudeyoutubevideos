@@ -1,0 +1,67 @@
+[
+ {
+  "n": "apertura",
+  "desde": "Ésta es la casa de los Ramírez",
+  "hasta": "de las que pican de noche."
+ },
+ {
+  "n": "promesa",
+  "desde": "Hoy te digo qué cosas hacen falta",
+  "hasta": "y cortar el pasto donde duerme Bruno."
+ },
+ {
+  "n": "quien",
+  "desde": "Soy Claudio.",
+  "hasta": "sin llamar a nadie."
+ },
+ {
+  "n": "seguridad",
+  "desde": "Ahora, la seguridad, antes de seguir.",
+  "hasta": "sólo el tratamiento que indique el veterinario."
+ },
+ {
+  "n": "regla_veterinario",
+  "desde": "Paso uno: el perro, con el veterinario.",
+  "hasta": "y no se negocia."
+ },
+ {
+  "n": "error_1",
+  "desde": "El error que todos cometen",
+  "hasta": "hasta la segunda semana."
+ },
+ {
+  "n": "mito_1",
+  "desde": "Te digo lo que no sirve.",
+  "hasta": "Eso hay que decirlo sin vergüenza."
+ },
+ {
+  "n": "llamar_profesional",
+  "desde": "Y cuándo llamar al profesional.",
+  "hasta": "conviene que venga un profesional."
+ },
+ {
+  "n": "preguntas",
+  "desde": "Sofía pregunta: ¿y el gato?",
+  "hasta": "un balcón con sombra sí."
+ },
+ {
+  "n": "resultado",
+  "desde": "Tres semanas después volví.",
+  "hasta": "y ni se mira la pata."
+ },
+ {
+  "n": "revision",
+  "desde": "Ahora la revisión de diez minutos que te prometí.",
+  "hasta": "para que se vean los puntitos."
+ },
+ {
+  "n": "cierre",
+  "desde": "Y lo último.",
+  "hasta": "una visita del fumigador."
+ },
+ {
+  "n": "final",
+  "desde": "Y ahora cuéntame tú.",
+  "hasta": "Leo todos."
+ }
+]

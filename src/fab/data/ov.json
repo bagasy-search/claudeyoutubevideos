@@ -1,0 +1,273 @@
+[
+ {
+  "c": "FabCalendario",
+  "from": 2590,
+  "dur": 240,
+  "props": {
+   "cada": 1,
+   "txt": "dos semanas",
+   "title": "Aspirar",
+   "dias": 14,
+   "bed": "vid/fupulgas/bed_0.mp4#244"
+  },
+  "t": 86.32,
+  "frase": "Todos los días, durante dos semanas"
+ },
+ {
+  "c": "ClCheck",
+  "from": 3856,
+  "dur": 300,
+  "props": {
+   "title": "Para la ferretería",
+   "items": [
+    "Bolsas de residuo resistentes, gruesas",
+    "Un rastrillo para hojas",
+    "Una bordeadora prestada o alquilada"
+   ],
+   "bed": "vid/fupulgas/bed_1.mp4#304"
+  },
+  "t": 128.54,
+  "frase": "la lista para la ferretería"
+ },
+ {
+  "c": "FabCiclo",
+  "from": 5251,
+  "dur": 360,
+  "props": {
+   "title": "Recorrido de una pulga",
+   "centro": "cada 2 semanas",
+   "etapas": [
+    {
+     "img": "k001",
+     "txt": "salta del pelo"
+    },
+    {
+     "img": "k002",
+     "txt": "cae en la tela"
+    },
+    {
+     "img": "k003",
+     "txt": "a la grieta"
+    },
+    {
+     "img": "k004",
+     "txt": "pone huevos ahí"
+    }
+   ],
+   "bed": "vid/fupulgas/bed_2.mp4#364"
+  },
+  "t": 175.03,
+  "frase": "Mira el recorrido de una pulga"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 6623,
+  "dur": 240,
+  "props": {
+   "title": "Lo que parece polvo",
+   "no": {
+    "img": "k005",
+    "txt": "Polvo gris, parece arena"
+   },
+   "si": {
+    "img": "k006",
+    "txt": "Capullos en la costura"
+   },
+   "bed": "vid/fupulgas/bed_3.mp4#244"
+  },
+  "t": 220.76,
+  "frase": "Eso no es polvo. Son capullos"
+ },
+ {
+  "c": "FabDato",
+  "from": 7452,
+  "dur": 240,
+  "props": {
+   "num": "60",
+   "unidad": "grados",
+   "txt": "30 minutos, ciclo completo",
+   "bed": "vid/fupulgas/bed_4.mp4#244"
+  },
+  "t": 248.41,
+  "frase": "Lavado en agua a sesenta grados"
+ },
+ {
+  "c": "ClBookPage",
+  "from": 8505,
+  "dur": 240,
+  "props": {
+   "page": "img/fupulgas/page35.jpg",
+   "pageNo": 35,
+   "stamp": "Manual del Fumigador",
+   "bed": "vid/fupulgas/bed_5.mp4#244"
+  },
+  "t": 283.49,
+  "frase": "están en la página treinta y cinco"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 9491,
+  "dur": 240,
+  "props": {
+   "title": "Con chicos en casa",
+   "no": {
+    "img": "k007",
+    "txt": "veneno en la alfombra"
+   },
+   "si": {
+    "img": "k008",
+    "txt": "Lo que diga el veterinario"
+   },
+   "bed": "vid/fupulgas/bed_6.mp4#244"
+  },
+  "t": 316.36,
+  "frase": "Nada de productos fuertes en la alfombra"
+ },
+ {
+  "c": "FabPasos",
+  "from": 11070,
+  "dur": 300,
+  "props": {
+   "title": "Vaciar fuera de casa",
+   "pasos": [
+    {
+     "img": "k009",
+     "txt": "Desenchufa y guantes"
+    },
+    {
+     "img": "k010",
+     "txt": "Nudo en la bolsa"
+    },
+    {
+     "img": "k011",
+     "txt": "Otra bolsa encima"
+    }
+   ],
+   "bed": "vid/fupulgas/bed_7.mp4#304"
+  },
+  "t": 369.0,
+  "frase": "Paso cuatro: la bolsa, o el depósito"
+ },
+ {
+  "c": "FabMapa",
+  "from": 12136,
+  "dur": 300,
+  "props": {
+   "title": "Dónde viven las pulgas",
+   "pins": [
+    {
+     "lugar": "sala",
+     "txt": "sillón"
+    },
+    {
+     "lugar": "patio",
+     "txt": "pasto alto"
+    }
+   ],
+   "hechos": 2,
+   "foco": 1,
+   "note": "el patio: casa de verano",
+   "bed": "vid/fupulgas/bed_8.mp4#304"
+  },
+  "t": 404.55,
+  "frase": "viven en la sombra y el pasto alto"
+ },
+ {
+  "c": "FabDato",
+  "from": 12595,
+  "dur": 240,
+  "props": {
+   "num": "4",
+   "unidad": "cm",
+   "txt": "de alto, no más",
+   "bed": "vid/fupulgas/bed_9.mp4#244"
+  },
+  "t": 419.82,
+  "frase": "a cuatro centímetros del suelo"
+ },
+ {
+  "c": "FabPasos",
+  "from": 13992,
+  "dur": 300,
+  "props": {
+   "title": "Antes de tirar un mueble",
+   "pasos": [
+    {
+     "img": "k012",
+     "txt": "¿la tela se lava?"
+    },
+    {
+     "img": "k013",
+     "txt": "¿la costura aguanta?"
+    },
+    {
+     "img": "k014",
+     "txt": "¿ya la aspiraste bien?"
+    }
+   ],
+   "bed": "vid/fupulgas/bed_10.mp4#304"
+  },
+  "t": 466.41,
+  "frase": "Antes de tirar un mueble"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 14807,
+  "dur": 270,
+  "props": {
+   "title": "Perro limpio",
+   "no": {
+    "img": "k015",
+    "txt": "Perro limpio, ya está listo"
+   },
+   "si": {
+    "img": "k016",
+    "txt": "Limpio también trae huevos"
+   },
+   "bed": "vid/fupulgas/bed_11.mp4#274"
+  },
+  "t": 493.56,
+  "frase": "El mito de que un perro limpio"
+ },
+ {
+  "c": "FabAntesDespues",
+  "from": 16510,
+  "dur": 300,
+  "props": {
+   "antes": "k017",
+   "despues": "k018",
+   "nota": "Mismo sillón, mismo ángulo",
+   "bed": "vid/fupulgas/bed_12.mp4#304"
+  },
+  "t": 550.34,
+  "frase": "En el sillón, la tela estaba limpia"
+ },
+ {
+  "c": "FabDato",
+  "from": 17443,
+  "dur": 240,
+  "props": {
+   "num": "1",
+   "unidad": "minuto",
+   "txt": "y ves puntitos negros",
+   "alerta": true,
+   "bed": "vid/fupulgas/bed_13.mp4#244"
+  },
+  "t": 581.45,
+  "frase": "Si después de un minuto aparecen"
+ },
+ {
+  "c": "ClQRCard",
+  "from": 18847,
+  "dur": 210,
+  "props": {
+   "qr": "img/fupulgas/qr.jpg",
+   "cover": "img/fupulgas/book_cover.jpg",
+   "text": "66 arreglos, un solo pago",
+   "kicker": "El Manual",
+   "bed": "vid/fupulgas/bed_14.mp4#214"
+  },
+  "t": 628.23,
+  "frase": "Apunta el celular al código QR"
+ }
+]

@@ -1,0 +1,3760 @@
+[
+ {
+  "id": "p001",
+  "tramo": 0,
+  "sec": "GANCHO",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Las ronchitas de tu hijo no",
+  "foto": "Close detail of Mateo's bare shins and ankles as he sits on the worn beige fabric sofa in striped pajamas, the stitched seam along the base cushion visible beside him. Several small red bumps dot his skin in warm late-afternoon light falling through pale cotton curtains. Cream wall and soft daylight behind him.",
+  "mov": "Mateo slowly pulls up his striped pajama leg to show the red bumps on his shin."
+ },
+ {
+  "id": "p002",
+  "tramo": 1,
+  "sec": "GANCHO",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "vienen del perro. Vienen de",
+  "foto": "Wide view of the living room: Bruno, a medium caramel-colored short-haired dog with a green collar, stands in the middle of the thin gray shag carpet. The beige sofa sits against the back wall, a small wooden side table with a lamp beside it, and cream walls glow in warm late-afternoon light through the pale curtains.",
+  "mov": "Bruno lifts his head and takes three slow steps forward across the gray carpet."
+ },
+ {
+  "id": "p003",
+  "tramo": 2,
+  "sec": "GANCHO",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la alfombra.",
+  "foto": "Close detail of Claudio's tanned hand, the light khaki shirt cuff visible at the wrist, pressing down into the thin gray shag carpet. Warm late-afternoon light moves across the dense gray fibers, showing a faint dust sheen. The sofa edge blurs softly in the background.",
+  "mov": "His fingers slide slowly through the gray fibers, pulling them apart."
+ },
+ {
+  "id": "p004",
+  "tramo": 3,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Ésta es la casa de los Ramírez.",
+  "foto": "The man presents the same living room as the neighbouring shots, with the same tan textured sofa, lamp, window and TV cabinet, while saying 'This is the Ramírez house'.",
+  "mov": "Claudio slowly turns his open hand from the sofa toward the carpet."
+ },
+ {
+  "id": "p005",
+  "tramo": 4,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Living con sillón de tela,",
+  "foto": "A worn beige fabric sofa with loose cushions and a stitched seam along its base sits against cream painted walls. Soft daylight through pale cotton curtains lights the fabric, showing its texture and wear. A small wooden side table with a lamp stands beside the sofa. The room is quiet and ordered, with no one in it yet, and the thin gray carpet runs out across the floor in front.",
+  "mov": "Specks of dust drift slowly through the sunlight above the sofa."
+ },
+ {
+  "id": "p006",
+  "tramo": 5,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "alfombra gris, y en el medio",
+  "foto": "Close to the floor, Claudio's hands, sleeves of a light khaki work shirt, hold a small flashlight angled low over thin gray shag carpet. The light rakes across the fibers, revealing the pile, loose threads, and specks caught deep in the carpet. The edge of the beige sofa is visible at the edge of the picture, lit by warm late-afternoon light coming through the curtains.",
+  "mov": "He slides the flashlight slowly along the carpet fibers."
+ },
+ {
+  "id": "p007",
+  "tramo": 6,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "bruno",
+   "sofia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "del piso, Bruno, el perro",
+  "foto": "Bruno, a medium caramel-colored mixed-breed dog with a green collar, lies in the middle of the thin gray shag carpet. Sofía, nine years old in a yellow t-shirt with two dark braids, sits cross-legged on the carpet beside him with her hands resting in her lap. Warm light from the window falls across the floor, with the beige sofa and cream walls behind them.",
+  "mov": "Bruno lifts his head and turns it toward Sofía."
+ },
+ {
+  "id": "p008",
+  "tramo": 7,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "lucia",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "color caramelo, que ya se",
+  "foto": "Lucía's hand, with the sleeve of her gray t-shirt pushed up to the elbow, runs a soft brush through Bruno's short caramel fur. The coat catches the warm light and shows a healthy sheen along the dog's back. Thin gray carpet fibers are visible beneath his body, and the green collar sits at the edge of the picture.",
+  "mov": "The brush glides in one slow stroke down along Bruno's back."
+ },
+ {
+  "id": "p009",
+  "tramo": 8,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "bañó dos veces esta semana y",
+  "foto": "Jorge, a stocky man with a trimmed mustache in a navy polo shirt, kneels on the gray carpet beside Bruno. He rubs the dog's damp back with a folded towel. Bruno waits calmly, his caramel coat still slightly wet and shining. Cream painted walls and the beige fabric sofa sit behind them in warm, late-afternoon light.",
+  "mov": "Jorge slides the towel down Bruno's back in one slow stroke."
+ },
+ {
+  "id": "p010",
+  "tramo": 9,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "bruno",
+   "sofia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "sigue rascándose.",
+  "foto": "Mateo, a young boy, sitting on the sofa and scratching his ankle with his hand.",
+  "mov": "Bruno's hind leg scratches rhythmically behind his ear."
+ },
+ {
+  "id": "p011",
+  "tramo": 10,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Mateo tiene seis años",
+  "foto": "Claudio, with graying curly hair and his khaki work shirt, kneels beside the beige fabric sofa. Mateo, a six-year-old boy with messy short black hair in striped pajamas, sits on the sofa with his legs stretched out in front of him. Claudio's face is clearly visible in profile as he leans toward the boy's feet, with cream walls and the lamp behind them in warm light.",
+  "mov": "Claudio lowers his hand gently toward Mateo's ankle."
+ },
+ {
+  "id": "p012",
+  "tramo": 11,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y cuatro ronchitas rojas en",
+  "foto": "Close view of Mateo's bare ankle resting on the gray shag carpet, the edge of striped pajama fabric just visible above it. Four small red bumps show on the skin. Claudio's fingers, in a khaki work sleeve, hold a flashlight beside the ankle, lighting the bumps clearly. Warm late-afternoon light comes through the curtains.",
+  "mov": "Claudio's fingers angle the flashlight slowly across the ankle."
+ },
+ {
+  "id": "p013",
+  "tramo": 12,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "lucia",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "los tobillos, de las que pican de",
+  "foto": "Lucía, with long dark wavy hair in a low ponytail, kneels beside Mateo on the sofa and dabs a cool cloth on his ankle. Mateo sits in striped pajamas, looking down at his foot. The beige fabric sofa has loose cushions, and a lamp on a small wooden table stands behind them, with pale curtains and warm light filling the room.",
+  "mov": "Lucía presses the cloth gently to his ankle and lifts it away."
+ },
+ {
+  "id": "p014",
+  "tramo": 13,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "noche. Jorge estaba parado",
+  "foto": "Jorge standing at the front door, holding the truck keys in his hand, while looking into the living room.",
+  "mov": "Jorge shifts his weight and steps one pace forward from the doorway."
+ },
+ {
+  "id": "p015",
+  "tramo": 14,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en la puerta con las llaves de",
+  "foto": "Jorge's hand, the navy polo sleeve pushed back slightly, rests on the cream-painted edge of the doorway. His fingers reach toward a metal door handle. Warm light from outside falls across his knuckles and the painted wood, while the gray carpet edge is visible at the bottom of the picture.",
+  "mov": "His fingers tighten slowly around the metal handle."
+ },
+ {
+  "id": "p016",
+  "tramo": 15,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge",
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "la camioneta en la mano. Me dijo:",
+  "foto": "Jorge stands by the doorway, holding a set of car keys loosely in one hand. Claudio, in his light khaki work shirt with safety glasses pushed up on his forehead, faces him from inside the living room. Claudio's face is clearly visible and calm as he looks at Jorge. The beige fabric sofa and the gray carpet lie between them in warm light.",
+  "mov": "Jorge raises the keys slightly and lets them dangle."
+ },
+ {
+  "id": "p017",
+  "tramo": 16,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge",
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Claudio, ya decidí.",
+  "foto": "Warm late light fills the living room. Jorge stands near the gray shag carpet, one arm extended down toward the floor. Claudio stands beside the beige fabric sofa with his hands at his sides, facing the carpet. Cream painted walls, a TV stand against one wall, and a small lamp on the wooden side table complete the room.",
+  "mov": "Jorge's arm lowers as he points toward the carpet."
+ },
+ {
+  "id": "p018",
+  "tramo": 17,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "La alfombra se va. Y Lucía,",
+  "foto": "Claudio's hands, in khaki work sleeves, grip the edge of the thin gray shag carpet and fold it back into a loose roll. Jorge's navy polo sleeve reaches in to help. The carpet fibers curl under the light, and the bare floor beneath shows at the edge of the picture in warm late-afternoon light.",
+  "mov": "They roll the carpet slowly toward the middle of the room."
+ },
+ {
+  "id": "p019",
+  "tramo": 18,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "detrás, con los brazos cruzados,",
+  "foto": "Lucía, in a gray t-shirt and jeans, stands beside the beige fabric sofa with her arms folded across her chest. Her long dark wavy hair is tied in a low ponytail. Cream walls and pale cotton curtains sit behind her, and warm light from the window falls across the cushions. She watches the room quietly.",
+  "mov": "She shifts her weight from one foot to the other."
+ },
+ {
+  "id": "p020",
+  "tramo": 19,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "me miró como diciendo: a ver,",
+  "foto": "The woman with arms crossed looks skeptically at the man, framed in the same beige living room with the same sofa as the neighbouring shots.",
+  "mov": "Claudio tilts his head slightly toward Lucía and lifts one open hand."
+ },
+ {
+  "id": "p021",
+  "tramo": 20,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "explícale. La semana",
+  "foto": "Claudio's hand, in a khaki work sleeve, rests on the seam along the base of the beige fabric sofa. His fingertips trace the stitching, where the thread lines show small wear. The loose cushions and cream painted wall sit softly behind his hand in warm late light.",
+  "mov": "His fingers slide slowly along the seam toward the corner."
+ },
+ {
+  "id": "p022",
+  "tramo": 21,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "pasada encontramos los escondites",
+  "foto": "Warm late-afternoon light spreads across the cream living room. Claudio, in a light khaki work shirt with clear safety glasses pushed up on his forehead, kneels beside the worn beige sofa. Jorge, in a navy polo shirt, stands near the window with pale cotton curtains, looking down at the sofa. A thin gray shag carpet covers the floor, and a small wooden side table holds a lamp.",
+  "mov": "Claudio leans forward and slides one hand slowly along the sofa's base seam."
+ },
+ {
+  "id": "p023",
+  "tramo": 22,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "de las cucarachas con la linterna;",
+  "foto": "Claudio sits on his heels beside the sofa edge, his face clearly visible, safety glasses still pushed up on his forehead. He holds a small flashlight in one hand, its beam angled low into the dark gap between the sofa base and the gray shag carpet. Warm window light falls across his khaki sleeve and tanned, weathered hands.",
+  "mov": "He sweeps the flashlight beam slowly along the gap from left to right."
+ },
+ {
+  "id": "p024",
+  "tramo": 23,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "si no la viste,",
+  "foto": "Close view of Claudio's bare tanned fingers lifting the loose fringe of gray shag carpet beside a sofa leg. Beneath it, a dark seam runs along the floorboards. A small flashlight rests on the carpet nearby, and the khaki cuff of his shirt is visible at the edge of the frame.",
+  "mov": "His fingers lift the carpet edge a little higher and hold it there."
+ },
+ {
+  "id": "p025",
+  "tramo": 24,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "te la dejo aquí. Hoy pasa algo parecido,",
+  "foto": "In the living room, Claudio stands at the wooden side table packing tools into a plastic tool bag, a folded cloth and a small flashlight nearby. Lucía, with her long dark wavy hair in a low ponytail and wearing a gray t-shirt and jeans, stands by the TV stand with her arms crossed, listening. Gray carpet and cream walls surround them in soft daylight.",
+  "mov": "Claudio zips the tool bag closed with one steady pull."
+ },
+ {
+  "id": "p026",
+  "tramo": 25,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "pero con las pulgas.",
+  "foto": "Close-up of the man kneeling on the carpet by the sofa, pointing at tiny dark flea specks in the carpet fibers under a flashlight.",
+  "mov": "He lowers his hand slowly until his fingertips touch the carpet pile."
+ },
+ {
+  "id": "p027",
+  "tramo": 26,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Cuando miramos el sillón,",
+  "foto": "The man leans over the sofa arm and studies the upholstery closely with a magnifying glass, looking at the sofa rather than at the camera.",
+  "mov": "He tilts the magnifying lens slightly over the seam."
+ },
+ {
+  "id": "p028",
+  "tramo": 27,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "encontramos una pista. Pero el lugar",
+  "foto": "Bruno, a medium caramel-colored mixed-breed dog with a green collar, walks across the gray shag carpet in the middle of the living room. Claudio kneels near the sofa, watching the dog. The cream walls, wooden side table with lamp, and window with pale curtains fill the background in warm late-afternoon light.",
+  "mov": "Bruno steps onto the carpet and stops in the middle of the room."
+ },
+ {
+  "id": "p029",
+  "tramo": 28,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "donde viven de verdad está afuera,",
+  "foto": "A wide exterior shot of the dog's yard or outdoor area where the fleas actually live, with the narrator's crew looking around outside.",
+  "mov": "He lowers the tool case slowly to the floor beside his boots."
+ },
+ {
+  "id": "p030",
+  "tramo": 29,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y no es lo que Jorge pensaba.",
+  "foto": "Jorge, the man in the navy polo, looking puzzled while holding up a clue next to the sofa, to show the clue is not what he expected.",
+  "mov": "He turns the keys over slowly in his palm."
+ },
+ {
+  "id": "p031",
+  "tramo": 30,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Te lo muestro en un rato.",
+  "foto": "Claudio and Jorge stand together in the living room near the doorway. Claudio, in his khaki work shirt, gestures toward the window with an open hand. Jorge, in his navy polo, listens with his keys in one hand. The beige sofa, thin gray carpet, and TV stand with family photos fill the warm afternoon space.",
+  "mov": "Claudio lifts his open hand toward the window and holds it there."
+ },
+ {
+  "id": "p032",
+  "tramo": 31,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "sofia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Sofía, la de nueve,",
+  "foto": "Sofía, a 9-year-old girl with two dark braids and wearing a yellow t-shirt, sits on the gray shag carpet in the living room. She faces the sofa, and warm afternoon light falls across her shoulders from the window. The beige sofa with loose cushions and the wooden side table with a lamp are visible behind her.",
+  "mov": "She shifts one dark braid over her shoulder."
+ },
+ {
+  "id": "p033",
+  "tramo": 32,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "sofia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "está sentada con las piernas cruzadas",
+  "foto": "Close view of Sofía's legs crossed on the thin gray shag carpet, her yellow t-shirt sleeve at the frame's edge. Her small hands rest on her knees. The carpet fibers catch soft daylight, and the bottom edge of the beige sofa is visible behind her.",
+  "mov": "She settles her crossed legs slightly and smooths the carpet with one hand."
+ },
+ {
+  "id": "p034",
+  "tramo": 33,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "sofia",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "en la alfombra,",
+  "foto": "Sofía sits cross-legged on the gray shag carpet, and Bruno stands in the middle of the room with his green collar. The cream walls, TV stand with family photos, and pale curtains frame the scene in warm late-afternoon light. Loose beige sofa cushions are visible at the side of the room.",
+  "mov": "Bruno lowers himself slowly onto the carpet."
+ },
+ {
+  "id": "p035",
+  "tramo": 34,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "sofia",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "mirando a Bruno como si fuera un libro. Y pregunta:",
+  "foto": "Sofía sits cross-legged on the carpet with her head tilted, watching Bruno, a caramel-colored dog with a green collar, seated upright in front of her. Warm window light falls across both of them. The edge of the beige sofa and the wooden side table are visible at the edge of the frame.",
+  "mov": "Sofía tilts her head toward Bruno."
+ },
+ {
+  "id": "p036",
+  "tramo": 35,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Claudio, ¿las pulgas son de",
+  "foto": "Close view of Claudio's tanned hands holding a fine-toothed metal comb through Bruno's short caramel fur, just below the green collar. The khaki cuff of his shirt is visible at the frame's edge. The fur looks smooth under the warm afternoon light coming through the window.",
+  "mov": "He draws the comb slowly through the fur."
+ },
+ {
+  "id": "p037",
+  "tramo": 36,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "lucia",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "la alfombra o son del perro? Buena pregunta.",
+  "foto": "Claudio kneels on the gray shag carpet with Bruno beside him, combing the dog's caramel fur. Lucía, with her long dark ponytail and gray t-shirt, stands by the beige sofa with her arms crossed, watching. The cream walls, pale curtains, and TV stand fill the background in soft warm light.",
+  "mov": "Claudio lifts the comb and studies it in the light."
+ },
+ {
+  "id": "p038",
+  "tramo": 37,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Son de los dos: el perro las",
+  "foto": "Claudio kneels on the carpet near the sofa, his face clearly visible with safety glasses still pushed up on his forehead. He holds a fine metal comb up toward the window light in his other hand. His khaki shirt and tanned forearms catch the warm late-afternoon sun, and the beige sofa stands behind him.",
+  "mov": "He taps the comb twice against his open palm."
+ },
+ {
+  "id": "p039",
+  "tramo": 38,
+  "sec": "CASA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "trae, y la alfombra las guarda.",
+  "foto": "Close view of Bruno's caramel paw resting on the thin gray shag carpet beside Claudio's tanned fingers. Claudio's fingers gently hold a tuft of carpet fibers near the sofa's stitched base. The khaki sleeve edge is visible at the frame's side, and warm window light falls across the fibers.",
+  "mov": "The dog's paw shifts slightly on the carpet."
+ },
+ {
+  "id": "p040",
+  "tramo": 39,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Hoy te digo qué cosas hacen falta, y",
+  "foto": "Claudio stands in the living room in his light khaki short-sleeve work shirt, clear safety glasses pushed up on his forehead, gray-stubbled face visible in warm late-afternoon light. Behind him the worn beige fabric sofa with loose cushions and its stitched seam along the base, thin gray shag carpet on the floor, cream walls, a small wooden side table with a lamp, and pale curtains at the window. He looks down toward the sofa seam.",
+  "mov": "his raised open hand lowers slowly toward the sofa armrest"
+ },
+ {
+  "id": "p041",
+  "tramo": 40,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "qué puedes hacer esta noche. Vamos a hacer cuatro",
+  "foto": "Claudio stands beside the beige sofa with his sleeves rolled, bare fingers spread in the warm light as he counts on his hand. Four fingers are raised one by one, and his other hand rests on the sofa armrest. Gray shag carpet and a cream wall sit behind him, and the lamp on the wooden side table glows softly beside pale curtains.",
+  "mov": "he folds down one finger, counting the steps"
+ },
+ {
+  "id": "p042",
+  "tramo": 41,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cosas en esta casa: revisar al perro con",
+  "foto": "A brown-and-white dog lies on the gray shag carpet beside the sofa, its side turned up. Claudio's gloved fingers part the fur along its flank to check the skin under warm late-afternoon light. Tufts of gray shag fibers lie around the dog's paws. The sofa's stitched seam is visible at the edge of the frame.",
+  "mov": "his fingers slowly part the fur along the flank"
+ },
+ {
+  "id": "p043",
+  "tramo": 42,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "su veterinario, lavar la cama y las fundas,",
+  "foto": "A woman in a light blouse kneels by the beige fabric sofa in the living room, pulling loose cushion covers off the cushions and piling them on the gray shag carpet. A folded bedsheet rests on the arm of the sofa. Cream walls, the wooden side table with its lamp, and pale curtains glow in soft daylight behind her.",
+  "mov": "she tugs one cushion cover free from the cushion"
+ },
+ {
+  "id": "p044",
+  "tramo": 43,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "aspirar todos los días durante dos semanas,",
+  "foto": "A teenage boy in a plain t-shirt and jeans pushes an upright vacuum across the gray shag carpet in the living room. The beige sofa and the cheap TV stand with family photos on top stand against the wall behind him. Warm late-afternoon light crosses the floor from the window with pale cotton curtains, and his shoulders lean into the handle.",
+  "mov": "he pushes the vacuum forward in one long stroke"
+ },
+ {
+  "id": "p045",
+  "tramo": 44,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y cortar el pasto donde duerme Bruno.",
+  "foto": "A gloved man trimming the grass of an outdoor lawn in the spot where the dog Bruno sleeps.",
+  "mov": "the scissors snip one tuft of shag fibers"
+ },
+ {
+  "id": "p046",
+  "tramo": 45,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Y te muestro el resultado antes de empezar:",
+  "foto": "Claudio stands in the living room in his khaki work shirt, safety glasses on his forehead, face turned toward the beige sofa with its loose cushions. His arm is extended, open hand pointing at the sofa. Behind him the gray shag carpet, cream walls, the TV stand with family photos, and pale curtains glow in late-afternoon light.",
+  "mov": "his open hand sweeps from the window toward the sofa"
+ },
+ {
+  "id": "p047",
+  "tramo": 46,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "en tres semanas, Mateo sin ronchitas, y",
+  "foto": "A young boy sits on the beige sofa, his bare forearm resting across a cushion, the skin clear and smooth in warm light. His mother's hand gently holds his wrist as she turns his arm toward the window. Gray shag carpet and a wooden side table with a lamp are visible, with cream walls behind them.",
+  "mov": "she slowly turns his arm toward the light"
+ },
+ {
+  "id": "p048",
+  "tramo": 47,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la alfombra en su lugar. Al final del video",
+  "foto": "A pair of hands smooths a thin gray shag carpet back into place on the living room floor, pressing its edge flat against the floor beside the sofa's base. Pale curtain light falls across the fibers, and the stitched seam of the beige sofa is visible at the edge of the frame in warm late-afternoon light.",
+  "mov": "the hands smooth the carpet edge flat"
+ },
+ {
+  "id": "p049",
+  "tramo": 48,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "te digo cómo comprobarlo tú, con medias",
+  "foto": "Bare feet in white socks walk across the gray shag carpet in the living room toward the beige sofa. The socks are clean and bright against the pile. Cream walls, the lamp on the wooden side table, and pale curtains frame the scene in warm late-afternoon light. A man in a khaki work shirt stands near the window, watching the feet.",
+  "mov": "one sock-clad foot steps forward onto the carpet"
+ },
+ {
+  "id": "p050",
+  "tramo": 49,
+  "sec": "PROMESA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "blancas, para que sepas si funcionó.",
+  "foto": "Claudio kneels on the gray shag carpet by the sofa, pressing a clean white sock flat against the pile with his gloved hand. His khaki sleeve is rolled to the elbow. The beige sofa's stitched seam and cream walls are behind him, and the lamp glows on the wooden side table in warm late-afternoon light.",
+  "mov": "he slides the white sock slowly across the carpet pile"
+ },
+ {
+  "id": "p051",
+  "tramo": 50,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Soy Claudio. Treinta años de fumigador.",
+  "foto": "Claudio facing the camera in the same living room as the neighbouring shots, with the same sofa and framing, introducing himself to the viewer.",
+  "mov": "He slowly slides his palm along the sofa arm."
+ },
+ {
+  "id": "p052",
+  "tramo": 51,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "He visto alfombras que se tiraron por pulgas,",
+  "foto": "A thick gray shag carpet is rolled up into a heavy bundle beside the beige sofa. Claudio, in his khaki work shirt with sleeves rolled, grips one end with both hands and hauls it toward the doorway. Warm light from the window falls across the cream walls, and the wooden side table with its lamp sits behind him.",
+  "mov": "He drags the rolled carpet one step toward the doorway."
+ },
+ {
+  "id": "p053",
+  "tramo": 52,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y casas que se quedaron con ellas y",
+  "foto": "A woman in a plain blue sweater sits at the edge of the beige sofa, one hand resting on a loose cushion. The gray shag carpet still covers most of the floor in front of her. Claudio stands beside the sofa in khaki, a flashlight in one hand, looking down at the carpet. Warm afternoon light fills the room.",
+  "mov": "She lifts the loose cushion slightly and sets it back down."
+ },
+ {
+  "id": "p054",
+  "tramo": 53,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no volvieron a tenerlas. La diferencia no",
+  "foto": "Claudio's bare hand guides a small flashlight beam along the stitched seam at the base of the beige fabric sofa. The light catches the thread line and the worn cloth. A few gray carpet fibers lie at the edge of the seam. Warm late-afternoon light comes through the nearby window.",
+  "mov": "He slides the flashlight slowly along the seam."
+ },
+ {
+  "id": "p055",
+  "tramo": 54,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "es el veneno. Es saber dónde están los huevos.",
+  "foto": "Claudio kneels on the gray shag carpet beside the sofa, pulling back a fold of carpet to expose the base of the cushions. Warm light from the pale curtains spreads across the cream walls and the wooden side table with its lamp. He holds a small flashlight angled into the dark gap.",
+  "mov": "He pulls the carpet fold back a few more centimeters."
+ },
+ {
+  "id": "p056",
+  "tramo": 55,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Y al final te explico la revisión de diez minutos,",
+  "foto": "Claudio sits on the arm of the beige sofa in his khaki shirt, clear safety glasses still pushed up on his forehead. One hand presses the stitched seam under a cushion while the other holds the flashlight steady. Family photos on the TV stand catch the warm light behind him.",
+  "mov": "He tilts his head and runs his thumb along the seam."
+ },
+ {
+  "id": "p057",
+  "tramo": 56,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con una media blanca, para que sepas",
+  "foto": "A white cotton sock is pressed flat onto the gray shag carpet by Claudio's bare fingers, lying against the thin pile near the sofa base. The fibers are soft and lit warmly by the window. Only his hand and the sock are visible in the frame of the room's floor.",
+  "mov": "He lifts the sock slowly off the carpet."
+ },
+ {
+  "id": "p058",
+  "tramo": 57,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "esta noche si tienes pulgas en tu casa, sin",
+  "foto": "A woman in a blue sweater sits relaxed on the beige sofa, her feet resting on the gray shag carpet and her hands folded in her lap. The lamp on the wooden side table is switched on, casting warm light across the cream walls. Pale curtains glow softly at the window as evening comes. The room feels calm and ordinary.",
+  "mov": "She draws her feet up slowly onto the cushion."
+ },
+ {
+  "id": "p059",
+  "tramo": 58,
+  "sec": "QUIEN",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "llamar a nadie.",
+  "foto": "Claudio stands by the wooden side table, one hand setting a small flashlight down, his other hand relaxed at his side. He wears a light khaki work shirt with two chest pockets. Warm lamp light and pale curtains glow behind him. The beige sofa and gray carpet are visible in the room.",
+  "mov": "He sets the flashlight down on the side table."
+ },
+ {
+  "id": "p060",
+  "tramo": 59,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Antes de empezar, la lista para la ferretería.",
+  "foto": "A small neighborhood hardware store in daylight. A glass counter holds screws and small items, and wooden shelves behind it are full of jars, rolls of mesh and boxes. Claudio, a 58-year-old technician with short curly graying black hair and a light khaki short-sleeve work shirt with two chest pockets, stands at the counter with safety glasses pushed up on his forehead. One tanned hand rests flat on the glass, the other holds a pen.",
+  "mov": "He leans forward and sets the pen down on the glass counter."
+ },
+ {
+  "id": "p061",
+  "tramo": 60,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "En el Manual te dejé esta frase escrita, para que",
+  "foto": "A man at the hardware counter holding open a printed manual and pointing to a handwritten phrase on its page.",
+  "mov": "He slides the safety glasses down from his forehead onto his nose."
+ },
+ {
+  "id": "p062",
+  "tramo": 61,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la leas tal cual en el mostrador: necesito",
+  "foto": "A clean medium shot of the man at the hardware counter with his hands resting naturally on the glass display case, looking toward the camera.",
+  "mov": "His fingers slide slowly across the glass counter top."
+ },
+ {
+  "id": "p063",
+  "tramo": 62,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "bolsas de residuo resistentes, un rastrillo",
+  "foto": "A close-up of the man at the counter holding a heavy-duty green residue bag up to the camera, with the shelves of the store behind him.",
+  "mov": "He reaches up and lifts the bundle of bags off the hook."
+ },
+ {
+  "id": "p064",
+  "tramo": 63,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "para hojas y una bordeadora prestada",
+  "foto": "Claudio stands in profile beside a wooden shelf in the hardware store, his face clearly visible in daylight. He looks down at a garden rake leaning against his side, its wooden handle in his tanned hand. Short curly graying black hair, gray stubble, and the light khaki work shirt with its chest pockets are all in view.",
+  "mov": "He grips the rake handle and tilts the rake upright against his shoulder."
+ },
+ {
+  "id": "p065",
+  "tramo": 64,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "o alquilada para el pasto. Bolsas",
+  "foto": "The narrator holds up a stack of heavy-duty black waste bags beside a rented lawn trimmer at the shop counter.",
+  "mov": "He pushes one coin across the glass into the tray."
+ },
+ {
+  "id": "p066",
+  "tramo": 65,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "de residuo resistentes, de las gruesas,",
+  "foto": "The hardware store in daylight, with the glass counter at the front and wooden shelves full of jars and rolls of mesh behind. Claudio stands in the middle of the floor holding up a thick black garbage bag by its neck. His light khaki work shirt and two chest pockets are clearly visible as he lifts the bag at arm's length.",
+  "mov": "He shakes the bag open with a sharp snap of his wrist."
+ },
+ {
+  "id": "p067",
+  "tramo": 66,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "porque la que se rompe en el camino suelta todo lo",
+  "foto": "Claudio holds a thick garbage bag stretched between his two hands in the hardware store. Daylight from the front window lights the plastic. Behind him the wooden shelves hold jars and boxes. His light khaki work shirt and tanned forearms are in view as he tests the bag's strength.",
+  "mov": "He slowly pulls the two sides of the bag apart until the plastic stretches tight."
+ },
+ {
+  "id": "p068",
+  "tramo": 67,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que aspiraste. Un rastrillo para hojas,",
+  "foto": "Close detail of a garden rake leaning against a wooden shelf in the hardware store. The metal tines point toward the floor and the wooden handle is grasped by Claudio's tanned hand with gray-dusted fingers. Part of his light khaki sleeve shows at the edge, with daylight falling across the wood.",
+  "mov": "His hand slides down the wooden rake handle."
+ },
+ {
+  "id": "p069",
+  "tramo": 68,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "para el patio. Y la bordeadora, prestada",
+  "foto": "The narrator stands in the same wooden-shelved hardware store as the neighbouring shots, holding a correctly shaped borrowed string trimmer.",
+  "mov": "He lifts the string trimmer off the floor and holds it upright."
+ },
+ {
+  "id": "p070",
+  "tramo": 69,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "o alquilada, sólo para el pasto alto.",
+  "foto": "Claudio holds a string trimmer upright in the hardware store, his tanned hands gripping the long shaft. He is inspecting the cutting head at its lower end. Daylight falls across the metal and the wooden shelves behind him are full of jars and boxes. His light khaki work shirt is visible at the shoulders.",
+  "mov": "He turns the trimmer's cutting head slowly in his hands to check it."
+ },
+ {
+  "id": "p071",
+  "tramo": 70,
+  "sec": "MOSTRADOR",
+  "lugar": "ferreteria",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si te ofrecen otra cosa, pregunta por qué.",
+  "foto": "Close detail of the glass counter in the hardware store, with a small heap of screws inside the case. Claudio's tanned hand rests open, palm up, on the glass beside them. His gray-dusted fingers and the edge of his light khaki sleeve are visible in daylight from the front window.",
+  "mov": "He raises his open palm slightly off the glass and then lowers it back down."
+ },
+ {
+  "id": "p072",
+  "tramo": 71,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Primero, por qué vuelven a las dos semanas.",
+  "foto": "The narrator stands at the hardware store counter explaining why customers come back after two weeks.",
+  "mov": "He leans in and slides his bare fingers slowly along the sofa's base seam."
+ },
+ {
+  "id": "p073",
+  "tramo": 72,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "De cada pulga que ves en el perro, la mayoría",
+  "foto": "Bruno, a short-haired dog, lies on the gray shag carpet in front of the sofa, belly down with his head resting on his paws. Claudio sits on his heels beside him, his tanned hands parting the dog's fur along the back. His head is bent low, so only his hair and shoulders show. Light from the window washes over the carpet and the dog's coat in the warm late afternoon.",
+  "mov": "His fingers slowly part the fur along Bruno's back."
+ },
+ {
+  "id": "p074",
+  "tramo": 73,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de la familia está en la casa: huevos,",
+  "foto": "Gray shag carpet fibers packed together, with tiny pale specks scattered among the pile and a few small dark dots tucked deep at the base. Warm late-afternoon light comes in low through the window and catches each strand. Nothing else is in view except thick carpet strands and the soft shadows they cast across the floor.",
+  "mov": "A thin beam of light slides slowly across the pile, catching the specks one by one."
+ },
+ {
+  "id": "p075",
+  "tramo": 74,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "larvas y capullos escondidos en la alfombra,",
+  "foto": "Close-up of the carpet fibers with a man's gloved fingers lifting a small flea cocoon and tiny larvae, shot from a low angle.",
+  "mov": "He lifts the clump of carpet fibers slowly toward the cup."
+ },
+ {
+  "id": "p076",
+  "tramo": 75,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "en el sillón, en los zócalos y en",
+  "foto": "The whole living room sits in warm late-afternoon light: the beige sofa with loose cushions, the gray carpet, the wooden side table with its lamp, and pale curtains glowing at the window. Claudio stands beside the sofa holding a flashlight, its beam angled down along the baseboard. His face is in profile, turned toward the wall, eyes fixed on the gap where the wall meets the floor.",
+  "mov": "The flashlight beam sweeps slowly along the baseboard."
+ },
+ {
+  "id": "p077",
+  "tramo": 76,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la cama del perro. Mira el recorrido de una pulga.",
+  "foto": "Corner of a dog bed cushion in dull gray fabric, its stitched edge and fine loose threads clearly visible. A small dark speck rests on the fabric surface. The bed sits on the bare wooden floor beside the sofa, its fabric worn and pale at the edges. Afternoon light falls softly across the cushion, casting a faint shadow beneath it.",
+  "mov": "The tiny dark speck jumps off the fabric in one quick hop."
+ },
+ {
+  "id": "p078",
+  "tramo": 77,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Bruno se echa en el sillón, la pulga",
+  "foto": "Bruno, a short-haired dog, settles onto the beige sofa cushion, his front legs folding under his chest. Claudio sits on the sofa arm beside him, one hand resting lightly on the dog's shoulder. His face is angled toward the dog, not the room. Cream curtains and soft afternoon light fill the background behind them.",
+  "mov": "Bruno lowers his body slowly onto the cushion."
+ },
+ {
+  "id": "p079",
+  "tramo": 78,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "salta de su pelo a la tela, y cae.",
+  "foto": "Close view of the beige sofa cushion fabric with a dark tuft of dog hair resting on the weave. Tiny specks are scattered across the woven surface around the tuft. A pale stitched seam runs along the lower edge. Warm late-afternoon light catches the texture of the fabric and the fine fibers of the hair.",
+  "mov": "A tiny dark speck leaps off the tuft and drops onto the fabric."
+ },
+ {
+  "id": "p080",
+  "tramo": 79,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Después se mete en la grieta del zócalo,",
+  "foto": "A man crouching with a flashlight, pointing it into a narrow dark gap between the white baseboard and the carpet edge, with the sofa visible behind him.",
+  "mov": "He slowly angles the flashlight into the crack."
+ },
+ {
+  "id": "p081",
+  "tramo": 80,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "donde no llega ninguna mano. Ahí pone",
+  "foto": "A narrow dark gap between a cream painted wooden baseboard and the floor, lined with dust and tiny pale specks. The gap is too tight for a finger, and its edges are slightly chipped. Soft afternoon light slants across the paint and the wood grain, showing every small ridge. The floor beside the baseboard is bare and gray with dust.",
+  "mov": "A thin beam of light slides slowly into the gap."
+ },
+ {
+  "id": "p082",
+  "tramo": 81,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "sus huevos. Eso es tratar sólo al perro:",
+  "foto": "Bruno stands on the gray carpet with his fur parted along the neck. Claudio kneels beside him, holding a damp cloth in one hand and wiping the dog's neck with care. The sofa and its loose cushions remain behind them, still dusty along the base. Warm light from the window falls across the room and the dog's coat.",
+  "mov": "He wipes the cloth slowly down along the dog's neck."
+ },
+ {
+  "id": "p083",
+  "tramo": 82,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "sacas la que está en el pelo, y la fábrica queda",
+  "foto": "Claudio stands in the living room holding a fine-toothed comb, drawing it through Bruno's fur near the dog's flank. Behind them the beige sofa and gray carpet are still dusted with specks, and the lamp on the side table glows in the warm late-afternoon light coming through the curtains. The cream walls frame the scene.",
+  "mov": "The comb pulls down through the fur in one slow stroke."
+ },
+ {
+  "id": "p084",
+  "tramo": 83,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en el sillón. Los huevos caen del pelo cuando",
+  "foto": "Beige sofa cushion surface with a scattering of tiny pale specks lying on the woven fabric. A few specks are caught in a dog hair tuft near the middle. The stitched seam edge is visible along the bottom of the cushion. Warm light lies across the fabric, showing the texture of every fiber and each small speck.",
+  "mov": "A few pale specks slowly drop from the tuft onto the cushion."
+ },
+ {
+  "id": "p085",
+  "tramo": 84,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Bruno se rasca y se mueve, y quedan en las",
+  "foto": "Bruno, a short-haired dog, scratches hard with a hind leg on the gray carpet beside the sofa. Claudio stands a step back, his khaki sleeve pushed up, one hand on his hip. His face is visible and turned down toward the dog with a concentrated look. Pale curtains and warm late-afternoon light fill the room behind them.",
+  "mov": "The dog's hind leg kicks back in quick scratching strokes."
+ },
+ {
+  "id": "p086",
+  "tramo": 85,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "grietas. Los capullos son lo peor: esperan",
+  "foto": "Edge of gray shag carpet pulled slightly back at a seam, revealing pale cocoons packed in the backing fibers. A few tiny larvae curl among them. Warm late-afternoon light falls across the exposed fibers and the wooden floor beside them, making every small pale shape stand out against the dark backing.",
+  "mov": "The carpet corner lifts slowly, showing more pale cocoons underneath."
+ },
+ {
+  "id": "p087",
+  "tramo": 86,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "semanas, quietos, hasta que sienten",
+  "foto": "Close-up of cocoon-like egg cases lying still in the carpet fibers near the sofa base, waiting undisturbed.",
+  "mov": "A soft patch of sunlight slides slowly across the gray carpet toward the sofa."
+ },
+ {
+  "id": "p088",
+  "tramo": 87,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "vibración o calor. Por eso no alcanza con",
+  "foto": "Claudio presses his bare palm flat onto a beige sofa cushion near the seam, his fingers spread wide and his khaki sleeve rolled to the elbow. He leans forward with his shoulders relaxed, his head bent toward his hand. Behind him Bruno sits on the carpet, watching. The cream wall and curtains glow softly in the afternoon light.",
+  "mov": "He slowly presses his palm down into the cushion."
+ },
+ {
+  "id": "p089",
+  "tramo": 88,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "bañar al perro. Hay que buscar la fábrica. Y",
+  "foto": "Claudio's fingertips lift the edge of a beige sofa cushion at the stitched seam, revealing a dusty gray layer along the base of the sofa and a few tiny pale shells scattered in it. Warm late-afternoon light falls across the fabric and his tanned hand, showing every crease in the upholstery and every small speck of dust.",
+  "mov": "The cushion edge lifts slowly, opening the seam to view."
+ },
+ {
+  "id": "p090",
+  "tramo": 89,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "lo del sillón te va a sorprender.",
+  "foto": "Close-up of the sofa cushion seams with hidden egg cases tucked inside, teasing the sofa reveal the narrator mentions.",
+  "mov": "Jorge shifts his weight and turns his head slightly toward the sofa."
+ },
+ {
+  "id": "p091",
+  "tramo": 90,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Jorge levantó el cojín del medio, y en la",
+  "foto": "Close view of a beige fabric sofa cushion in warm afternoon light. Jorge's hand, wearing a navy polo sleeve at the edge of the frame, grips the middle cushion and begins lifting it upward. The fabric shows a soft weave, and the stitched seam runs along the base of the sofa.",
+  "mov": "Jorge lifts the middle cushion up off the sofa."
+ },
+ {
+  "id": "p092",
+  "tramo": 91,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "costura de abajo había una capa de polvo",
+  "foto": "Medium shot of Claudio, a gray-stubbled pest-control technician in a light khaki work shirt with clear safety glasses pushed up on his forehead. He wears thin gloves and holds the lifted cushion to one side with one hand. He leans over the sofa to look closely at the stitched seam along the base. Warm light falls across the beige fabric.",
+  "mov": "Claudio tilts his head down to study the seam at the base of the sofa."
+ },
+ {
+  "id": "p093",
+  "tramo": 92,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "gris, con cáscaras pequeñas, como granitos",
+  "foto": "Extreme close detail of the sofa's underside seam in warm light. A thin gray dusty layer lies along the stitching, with small pale husks scattered like grains of sand. A gloved fingertip hovers just above the dust without touching it. The beige fabric and gray shag carpet edge fill the frame.",
+  "mov": "The gloved fingertip slowly moves closer to the gray dusty layer along the seam."
+ },
+ {
+  "id": "p094",
+  "tramo": 93,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de arena. Eso no es polvo. Son",
+  "foto": "Medium shot of Claudio's gloved hands holding a small flashlight over the lower seam of the sofa. The beam lights up gray dust and tiny pale husks clinging to the stitching. His khaki sleeves are visible at the edge of the frame. The room behind is softly lit by late-afternoon light from the window.",
+  "mov": "Claudio sweeps the flashlight beam slowly along the seam."
+ },
+ {
+  "id": "p095",
+  "tramo": 94,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "capullos, pegados a la costura.",
+  "foto": "Close detail of gloved fingers pinching the sofa seam, revealing small oval husks stuck to the fabric. The husks are pale and tiny, scattered among gray dust specks. The beige fabric and stitching fill the frame in warm light.",
+  "mov": "The gloved fingers gently press along the seam, revealing more clinging husks."
+ },
+ {
+  "id": "p096",
+  "tramo": 95,
+  "sec": "ARREGLO1",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Te lo muestro en el paso tres.",
+  "foto": "Wide view of the living room in warm late-afternoon light. Claudio kneels by the sofa base with his gloved hands ready beside a small pump sprayer on the carpet. Jorge stands nearby holding the lifted cushion against his hip. The cream walls, TV stand with family photos, and pale curtains frame the scene.",
+  "mov": "Claudio lifts the sprayer from the carpet and steadies it in his hand."
+ },
+ {
+  "id": "p097",
+  "tramo": 96,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Paso uno: el perro, con el veterinario.",
+  "foto": "The dog being examined by a veterinarian in a clinic exam room, with the vet visible beside it.",
+  "mov": "Claudio slowly strokes Bruno's back and the dog lowers its head."
+ },
+ {
+  "id": "p098",
+  "tramo": 97,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Él elige el tratamiento según el",
+  "foto": "Claudio's hands part the short caramel fur along Bruno's neck, slowly and carefully, fingers spread wide. The green collar sits at the edge of the visible area. Pale green tiles and the white ceramic rim of the tub blur in the background. Light from the window falls across the dog's back. Only hands, fur and collar are visible, with no product or container near them.",
+  "mov": "His fingers slide slowly along the fur toward the collar."
+ },
+ {
+  "id": "p099",
+  "tramo": 98,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "peso y la edad de Bruno. Nunca un",
+  "foto": "Claudio stands beside the white tub holding Bruno against his chest with both arms, the dog's paws just off the gray tile. He lifts him gently to judge his weight. The khaki shirt pockets are visible and the plastic shower curtain hangs pulled back behind them. Pale green tiles and the chrome tap sit in the background, with daylight from the small high window.",
+  "mov": "Claudio lowers Bruno gently back onto the gray tile."
+ },
+ {
+  "id": "p100",
+  "tramo": 99,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "producto de perro en un gato, y nunca nada",
+  "foto": "A close-up of a pet shampoo bottle held beside a cat and a dog, with no readable brand text, while the man points at it.",
+  "mov": "Claudio pushes the cabinet door shut with one hand."
+ },
+ {
+  "id": "p101",
+  "tramo": 100,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en el pelo sin que el veterinario lo mire.",
+  "foto": "Claudio's hands move a small wooden comb through Bruno's caramel fur at the shoulder, parting it to check the skin underneath. The dog sits still on the gray tile. Only hands, fur and the green collar are visible, and there is no bottle, spray or container anywhere near them.",
+  "mov": "The comb glides slowly down through the fur."
+ },
+ {
+  "id": "p102",
+  "tramo": 101,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Ésa es la regla de oficio, y no se negocia.",
+  "foto": "Claudio stands at the edge of the white tub beside Lucía, his face clearly visible and his eyes focused on the tub. Both his hands rest on the rim. Lucía wears a gray t-shirt and jeans, her dark hair in a low ponytail, and stands with her arms at her sides. The plastic shower curtain is pulled back, and pale green tiles rise behind them in daylight from the high window.",
+  "mov": "Claudio taps the tub rim with one finger and gives a slight nod toward Lucía."
+ },
+ {
+  "id": "p103",
+  "tramo": 102,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Paso dos: la cama del perro,",
+  "foto": "Full bathroom: Lucía lifts Bruno's cushioned dog bed from the gray tile and holds it against her hip, the fabric sagging. The white tub is empty beside her. Folded towels and the plastic bucket sit on the floor near the drain. Pale green tiles and the white sink with its chrome tap fill the back wall, lit by the small high window.",
+  "mov": "Lucía lowers the bed toward the empty tub."
+ },
+ {
+  "id": "p104",
+  "tramo": 103,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "las mantas, y las fundas del sillón.",
+  "foto": "Lucía's hands pull a thick folded blanket and a sofa cover out of the plastic bucket onto the gray tile. The fabric folds spill out in soft heaps. Only her hands, sleeves and the bucket rim are visible, with the tile texture and drain in the background.",
+  "mov": "She lifts the blanket and lets it drop toward the tub."
+ },
+ {
+  "id": "p105",
+  "tramo": 104,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Lavado en agua a sesenta grados, durante",
+  "foto": "Claudio's hand turns the chrome tap at the side of the white tub. Hot water pours from the spout and steam rises into the room. His khaki sleeve is rolled to the elbow and his safety glasses are pushed up on his forehead. The pale green tiles behind him are streaked with condensation in the daylight from the small high window.",
+  "mov": "He slowly turns the hot tap and steam rises from the water."
+ },
+ {
+  "id": "p106",
+  "tramo": 105,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "treinta minutos, con el ciclo completo.",
+  "foto": "A washing machine or tub with running water and a visible timer or clock reading thirty minutes, with the full wash cycle in progress.",
+  "mov": "The fabric shifts slowly as the water swirls around it."
+ },
+ {
+  "id": "p107",
+  "tramo": 106,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Por qué: el calor mata lo que está en la tela,",
+  "foto": "Claudio's hands press a blanket down under the steaming water in the white tub, his khaki sleeves rolled to the elbow. Steam rises around the fabric and the tub edge. The white ceramic and pale green tiles blur in the background, lit by daylight from the high window.",
+  "mov": "His hands push the blanket down beneath the water."
+ },
+ {
+  "id": "p108",
+  "tramo": 107,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "y el lavado saca los huevos que se pegaron",
+  "foto": "Claudio leans over the white tub with his face clearly visible, working beside Lucía. Both rub the dog bed fabric under running water, and gray water swirls toward the drain in the tile corner. Lucía's dark ponytail is visible at the side. Pale green tiles and the chrome tap sit behind them, with daylight from the window.",
+  "mov": "They rub the fabric together and the water runs off."
+ },
+ {
+  "id": "p109",
+  "tramo": 108,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "a las fibras. Después,",
+  "foto": "Lucía scrubbing the gray bed cover's fibers with a blue sponge in the green-tiled tub, so the fibers are visibly being cleaned.",
+  "mov": "She twists the blanket tighter and more water drips down."
+ },
+ {
+  "id": "p110",
+  "tramo": 109,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "secar al sol o en secadora a temperatura",
+  "foto": "A damp blanket is draped over the edge of the white tub, with sunlight from the small high window falling across its fibers. Lucía's hand smooths the fabric flat. Only the blanket, her hand and the gray tile below are visible, with the pale green tiles blurred behind.",
+  "mov": "Her hand slides across the blanket, smoothing it flat."
+ },
+ {
+  "id": "p111",
+  "tramo": 110,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "alta, cuarenta minutos. Lucía lo",
+  "foto": "Lucía kneels by the white tub, scrubbing the dog bed with both hands, sleeves pushed up and dark ponytail falling forward. Bruno sits on the gray tile near the door, green collar visible. Pale green tiles, the chrome tap and the plastic shower curtain are in the background, with daylight from the high window.",
+  "mov": "She rubs the fabric in small circles with both hands."
+ },
+ {
+  "id": "p112",
+  "tramo": 111,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "hizo esa misma tarde, con la cama de Bruno en la",
+  "foto": "Full bathroom: Bruno's cushioned bed sits inside the white bathtub, and Lucía's hands arrange its edges. Bruno sits calmly on the gray tile nearby with his green collar on. The plastic shower curtain hangs at the side, pale green tiles rise on the walls, and the white sink with chrome tap is visible in daylight from the small high window.",
+  "mov": "Lucía tucks a corner of the bed neatly into the tub."
+ },
+ {
+  "id": "p113",
+  "tramo": 112,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "bañera. Me llamó desde el patio: Claudio,",
+  "foto": "Lucía's hands lift a dripping cushion from the white tub. Water runs down her wrists and sleeves and back into the gray water below. Only her hands, the cushion and the tub rim are visible, with pale green tiles blurred behind.",
+  "mov": "She lifts the cushion slowly and water runs off it."
+ },
+ {
+  "id": "p114",
+  "tramo": 113,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "¿y esto que sale? Era agua gris, con",
+  "foto": "Claudio leans over the white tub, his face clearly visible, looking down at cloudy gray water with dog hair floating on its surface. He grips the tub rim with one hand. The pale green tiles, chrome tap and plastic shower curtain are behind him, lit by daylight from the small high window.",
+  "mov": "He lowers his other hand into the gray water."
+ },
+ {
+  "id": "p115",
+  "tramo": 114,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "pelos y puntitos oscuros flotando. Le",
+  "foto": "Close view of the white ceramic tub filled with cloudy gray water, with strands of hair and small dark specks floating on the surface. Claudio's tanned hand, with a light khaki shirt cuff, holds a small flashlight angled low over the water. Pale green tiles rise behind the tub, and the gray non-slip floor is visible at the edge. Warm daylight comes through the small high window.",
+  "mov": "Claudio's hand slowly sweeps the flashlight beam across the floating hair and specks."
+ },
+ {
+  "id": "p116",
+  "tramo": 115,
+  "sec": "ARREGLO2",
+  "lugar": "bano",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "dije que eso era justamente lo que había que sacar de la casa.",
+  "foto": "Medium shot in the small bathroom. Claudio, in his light khaki work shirt, lifts a plastic bucket of gray water from beside the tub. Lucía, in her gray t-shirt and jeans, holds the edge of the tub steady with both hands. The gray non-slip floor has a drain in the corner, and folded towels lie nearby. Warm daylight falls across the pale green tiles.",
+  "mov": "Claudio lifts the bucket and tilts it, beginning to pour the gray water out."
+ },
+ {
+  "id": "p117",
+  "tramo": 116,
+  "sec": "PAGINA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "Los dos arreglos de la alfombra y del patio están",
+  "foto": "Claudio and Lucía in the same green-tiled house, showing the freshly cleaned carpet and the patio visible through the back door.",
+  "mov": "Soft sunlight slowly shifts across the gray shag carpet."
+ },
+ {
+  "id": "p118",
+  "tramo": 117,
+  "sec": "PAGINA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en la página treinta y cinco del Manual",
+  "foto": "Close detail on the wooden side table beside the lamp. An open paper booklet lies angled toward the window light, its pages turned so no writing faces the camera. A man's weathered hand with a khaki shirt cuff rests flat on the table beside it, relaxed. Warm light and dust motes drift in the air.",
+  "mov": "Fingers slowly smooth the booklet's edge flat on the wood."
+ },
+ {
+  "id": "p119",
+  "tramo": 118,
+  "sec": "PAGINA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "del Fumigador. Ahí tienes el orden de los",
+  "foto": "Medium shot from the hips up of a man seated on the beige sofa, leaning forward with his head angled down. He wears a light khaki short-sleeve work shirt with chest pockets. He holds a closed paper booklet in both hands and turns it so its cover catches the window light. Cream walls and the TV stand with family photos sit behind him.",
+  "mov": "He turns the closed booklet over slowly in his hands."
+ },
+ {
+  "id": "p120",
+  "tramo": 119,
+  "sec": "PAGINA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "pasos, los tiempos, y la lista exacta",
+  "foto": "The man sits on the sofa holding the manual open, pointing at a printed list of steps, times and hardware items.",
+  "mov": "He turns his wrist slightly to angle the watch toward the window light."
+ },
+ {
+  "id": "p121",
+  "tramo": 120,
+  "sec": "PAGINA",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de la ferretería, para que no te vendan otra cosa.",
+  "foto": "Close detail on the small wooden side table. A plain cloth bag lies open beside a neat row of metal screws, a coiled cord, and a brass hook set out on the wood. A man's hand with a khaki sleeve picks up one screw and places it back in the row. Warm afternoon light falls across the wood grain.",
+  "mov": "Fingers lift one screw and set it down in the row."
+ },
+ {
+  "id": "p122",
+  "tramo": 121,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Ahora, la seguridad, antes de seguir.",
+  "foto": "Claudio, a 58-year-old technician with graying curly hair and a gray-stubbled beard, wearing a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead, sets a canvas tool bag down beside the beige fabric sofa in the living room. Daylight from the pale cotton curtains falls across the thin gray shag carpet and cream walls. His face is calm and attentive as he looks toward the rug.",
+  "mov": "He lowers the bag onto the carpet with both hands."
+ },
+ {
+  "id": "p123",
+  "tramo": 122,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "Mateo y Bruno duermen y juegan en",
+  "foto": "Two young boys, Mateo and Bruno, fully dressed in t-shirts and shorts, sit cross-legged on the thin gray shag carpet in the living room, building a tower of wooden blocks between them. The beige sofa with loose cushions stands behind them, and a wooden side table with a lamp sits by the window. Soft daylight warms the cream walls. The dog lies nearby on the carpet.",
+  "mov": "Mateo stacks another block on top of the tower."
+ },
+ {
+  "id": "p124",
+  "tramo": 123,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "esa alfombra. Por eso, mientras aspiras",
+  "foto": "A vacuum hose and its flat brush head glide over the thin gray shag carpet beside the leg of the beige sofa, lifting loose fibers. Claudio's hand in a khaki sleeve holds the wand steady, his fingers resting on the handle. The stitched seam along the sofa base is visible at the edge of the view.",
+  "mov": "The brush head slides forward across the carpet in one long stroke."
+ },
+ {
+  "id": "p125",
+  "tramo": 124,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "y mientras se airea el cuarto, los niños y",
+  "foto": "The children and Bruno walk out through the open door to the yard while the room airs out with the windows open.",
+  "mov": "The two boys step through the doorway, one after the other."
+ },
+ {
+  "id": "p126",
+  "tramo": 125,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Bruno van afuera. Y el veneno en el pelo del",
+  "foto": "Bruno, in a plain blue shirt and shorts, stands at the open patio door with the dog pressing against his leg, his small hand resting on the dog's back. Mateo waits just outside in the sunny yard. The cream wall and the edge of the beige sofa border the doorway in the background.",
+  "mov": "Bruno steps down onto the patio step, the dog following close behind."
+ },
+ {
+  "id": "p127",
+  "tramo": 126,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "perro se lame, y el perro lo lleva a la boca",
+  "foto": "The dog licking its own paw on the carpet, then bringing a small object up to its mouth.",
+  "mov": "He draws the brush slowly down the dog's back in one stroke."
+ },
+ {
+  "id": "p128",
+  "tramo": 127,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "de Mateo. Por eso no hay veneno,",
+  "foto": "Claudio kneels on the thin gray carpet beside the dog, sliding his fingers through the thick fur at its neck while looking closely at the coat. His face is serious and focused, and his graying curly hair catches light from the window. The dog's head is turned toward him. A folded cloth and a small empty bowl sit by the beige sofa leg.",
+  "mov": "He gently lifts the dog's chin with one hand as he studies its coat."
+ },
+ {
+  "id": "p129",
+  "tramo": 128,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "sólo el tratamiento que indique el veterinario. Nada",
+  "foto": "The man standing in the living room holding up a veterinary prescription bottle and gesturing to the camera, with no spray can.",
+  "mov": "He sets the closed can on the high shelf and steps back."
+ },
+ {
+  "id": "p130",
+  "tramo": 129,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de productos fuertes en la alfombra si",
+  "foto": "A small cloth wipes a dry patch of thin gray shag carpet beside the sofa, with no liquid poured and the fibers bent loosely under the fabric. The sofa's stitched seam runs along the base above the rug edge. Claudio's hand, with a light khaki cuff, rests flat on the carpet fibers to check them.",
+  "mov": "He draws his palm slowly across the carpet fibers."
+ },
+ {
+  "id": "p131",
+  "tramo": 130,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "hay chicos en la casa. Si el veterinario indica",
+  "foto": "Children playing on the carpet in the living room while the man stands nearby, with the sofa and window visible.",
+  "mov": "He slides the container to the back of the TV stand top."
+ },
+ {
+  "id": "p132",
+  "tramo": 131,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "algo para el perro, va como él diga, en la",
+  "foto": "A small plastic dropper rests between Claudio's fingers above a clean glass on the wooden side table, the lamp beside it. He draws a measured dose for the dog, his knuckles steady. The beige sofa fabric and the stitched base seam glow faintly at the edge of the view.",
+  "mov": "He slowly squeezes the dropper bulb to draw in the liquid."
+ },
+ {
+  "id": "p133",
+  "tramo": 132,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "dosis y el día que diga. Y después del tratamiento,",
+  "foto": "The dog lies calmly on the thin gray carpet near the beige sofa while Claudio kneels beside it, a glass of water on the side table nearby. The lamp is on, and soft daylight through pale curtains fills the cream room. The TV stand with family photos stands against the wall. Claudio's khaki shirt pockets catch the light.",
+  "mov": "The dog lifts its head and turns toward Claudio's hand."
+ },
+ {
+  "id": "p134",
+  "tramo": 133,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "ventila el cuarto veinte minutos",
+  "foto": "Claudio stands at the living room window, gripping the latch of the pale cotton curtains and pushing the sash wide open. His face is serious and focused, with safety glasses pushed up on his forehead. The thin gray carpet lies beneath the window, and the beige sofa and wooden side table stand near. Warm daylight streams in.",
+  "mov": "He pushes the window sash fully open, and the curtains swing in the breeze."
+ },
+ {
+  "id": "p135",
+  "tramo": 134,
+  "sec": "SEGURIDAD",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con la ventana abierta.",
+  "foto": "A hand grips the window latch while the edge of a pale cotton curtain flutters inward as fresh air enters the living room. The cream painted wall and the edge of the beige sofa stay in view. Daylight falls across the thin gray carpet below the sill.",
+  "mov": "The curtain edge swings slightly inward with the rush of air."
+ },
+ {
+  "id": "p136",
+  "tramo": 135,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Paso tres: aspirar. Por zonas, con",
+  "foto": "Living room in soft daylight through pale cotton curtains. Claudio in his light khaki work shirt pushes an upright vacuum across the thin gray shag carpet near the worn beige sofa, its cord trailing toward the wall outlet. Cream walls, a small wooden side table with a lamp, family photos on the TV stand. Jorge in a navy polo stands by the window, arms folded, watching the room.",
+  "mov": "Claudio pushes the vacuum forward one slow stroke across the carpet."
+ },
+ {
+  "id": "p137",
+  "tramo": 136,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "tiempos exactos. Tres minutos en",
+  "foto": "Claudio's wristwatch on his tanned wrist, his thumb pressing its side button, while his other hand holds the vacuum wand above the beige sofa cushions. Pale daylight falls across the worn fabric and the stitched seam at the sofa's base. Gray shag fibers lie in the soft light beside the cushion.",
+  "mov": "His thumb presses the watch button and his wrist lifts slightly."
+ },
+ {
+  "id": "p138",
+  "tramo": 137,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "el sillón, por todas las costuras.",
+  "foto": "Claudio, face visible, kneels beside the beige sofa in his light khaki shirt, safety glasses pushed up on his forehead. He guides the narrow vacuum nozzle along the stitched seam at the base of the cushions. Soft daylight from the window, cream wall behind him, lamp on the side table.",
+  "mov": "He slides the nozzle slowly along the seam from left to right."
+ },
+ {
+  "id": "p139",
+  "tramo": 138,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Tres minutos en la alfombra, pasando despacio,",
+  "foto": "The whole living room in daylight through pale curtains. Claudio sweeps the upright vacuum in long even strokes across the gray shag carpet, moving from the sofa toward the middle of the room. Jorge crouches by the TV stand, gently moving a few family photos aside so the carpet beneath is clear.",
+  "mov": "Claudio pulls the vacuum back in a long stroke across the carpet."
+ },
+ {
+  "id": "p140",
+  "tramo": 139,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "dos veces en la línea de la puerta. Dos",
+  "foto": "Floor level at a doorway threshold: the vacuum head moves over the gray shag carpet in a straight line along the edge where carpet meets the wooden door track. Claudio's khaki trouser cuffs and work boots visible at the edge, his hand steady on the handle. Daylight reflects faintly off the cream painted wall.",
+  "mov": "The vacuum head moves forward along the threshold line."
+ },
+ {
+  "id": "p141",
+  "tramo": 140,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "minutos en cada zócalo, con la boquilla angosta",
+  "foto": "Claudio, face visible, kneels along a cream painted baseboard in soft daylight, holding a narrow crevice nozzle into the gap between the wall and the gray carpet. Safety glasses still pushed up on his forehead, his other hand resting on his knee. The small wooden side table with its lamp sits nearby.",
+  "mov": "He moves the narrow nozzle slowly along the baseboard gap."
+ },
+ {
+  "id": "p142",
+  "tramo": 141,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "en las grietas. Todos los días, durante dos",
+  "foto": "A man vacuuming the carpet beside the sofa from a new angle, different from shot 1, with a visible daily-routine cue such as a wall calendar or a checklist.",
+  "mov": "Claudio wipes his hands with the cloth in short strokes."
+ },
+ {
+  "id": "p143",
+  "tramo": 142,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "semanas. Por qué: la vibración de la aspiradora",
+  "foto": "Vacuum nozzle pressed against the base of the TV stand, gray shag carpet fibers bristling in the airflow. Jorge's hand grips the vacuum body to steady it, his navy polo sleeve at the edge. The cord loops across the floor, and daylight from the window touches the cream wall.",
+  "mov": "Jorge steadies the vacuum as the nozzle moves along the base."
+ },
+ {
+  "id": "p144",
+  "tramo": 143,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "hace salir a las que estaban en el capullo,",
+  "foto": "Claudio, face visible, lies on his side on the gray shag carpet with a small flashlight, peering into the dark gap beneath the beige sofa. The vacuum hose rests on the carpet beside him. His light khaki sleeve is rolled to the elbow, and soft daylight from the window lights the sofa's fabric.",
+  "mov": "He angles the flashlight deeper beneath the sofa."
+ },
+ {
+  "id": "p145",
+  "tramo": 144,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "y las saca al aire donde las puedes tirar.",
+  "foto": "The window stands open with pale cotton curtains moving in the breeze. Claudio stands by the sill holding the vacuum hose, turning it toward the open air over the patio so the airflow carries tiny insects out past the curtain. The cream walls, lamp and beige sofa stay in soft daylight behind him.",
+  "mov": "He turns the hose outward and the curtain billows toward the window."
+ },
+ {
+  "id": "p146",
+  "tramo": 145,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "La aspiradora no mata los huevos. Pero los saca",
+  "foto": "Inside a dark crevice where the beige sofa base meets the gray carpet, a small pale silk cocoon sits tucked into the seam. A flashlight beam from above lights it in clear soft light. Claudio's gloved fingertip hovers beside the cocoon without touching it.",
+  "mov": "The flashlight beam slowly sweeps across the cocoon."
+ },
+ {
+  "id": "p147",
+  "tramo": 146,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de su escondite, y los llevas a la bolsa.",
+  "foto": "Claudio holds the vacuum canister open over a plastic bag on the gray carpet, lifting the dust bag gently with both hands. Jorge kneels beside him, holding the neck of the bag open. Daylight from the window falls on the sofa and side table in the background.",
+  "mov": "Claudio lifts the dust bag and lowers it into the open plastic bag."
+ },
+ {
+  "id": "p148",
+  "tramo": 147,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Por eso se aspira el lugar de Bruno, donde duerme,",
+  "foto": "The corner by the window where Bruno's bed lies: a round cushion on the gray shag carpet, a worn blanket folded beside it. Claudio runs the upright vacuum slowly around the edge of the bed while the pale curtains move in the daylight. Jorge stands behind him, watching the cord.",
+  "mov": "Claudio guides the vacuum in a slow circle around the bed."
+ },
+ {
+  "id": "p149",
+  "tramo": 148,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "porque ahí es donde más caen. Paso cuatro:",
+  "foto": "The vacuum nozzle slides along the floor under the rim of a round dog cushion, gray carpet fibers lifting in the airflow. Claudio's hand grips the wand, his wristwatch visible on his wrist. The worn cushion and carpet fill the lower part of the view in daylight.",
+  "mov": "The nozzle slides under the cushion rim and pulls back out."
+ },
+ {
+  "id": "p150",
+  "tramo": 149,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "jorge",
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "la bolsa, o el depósito, se vacía afuera",
+  "foto": "Outdoor patio in soft daylight. Jorge in his navy polo carries a closed plastic bag across the tiles to a covered outdoor bin against the back wall. Claudio stands near the doorway holding the vacuum canister, watching him. A potted plant sits on the tiled floor.",
+  "mov": "Jorge lifts the bag and walks it toward the bin."
+ },
+ {
+  "id": "p151",
+  "tramo": 150,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de la casa, cerrada, cada vez.",
+  "foto": "Claudio's gloved hands tie a tight knot in the neck of a sealed plastic bag resting on the patio tiles. The bag is held firm and closed. Soft daylight lights the tiles, with a corner of the cream wall and Jorge's shoe visible at the edge.",
+  "mov": "His gloved hands pull the knot tight."
+ },
+ {
+  "id": "p152",
+  "tramo": 151,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Para no levantar polvo: desenchufa la aspiradora,",
+  "foto": "A man in the same living room unplugs the canister vacuum from the wall outlet with gloved hands before changing the bag.",
+  "mov": "He pulls the plug out of the wall socket."
+ },
+ {
+  "id": "p153",
+  "tramo": 152,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "saca la bolsa con las manos enguantadas,",
+  "foto": "Gloved hands open the vacuum's dust compartment and carefully pull out a closed plastic bag, held upright above the gray shag carpet. Claudio's khaki sleeve shows at the wrist. Daylight from the window lights the bag and the vacuum's gray housing.",
+  "mov": "The gloved hands lift the sealed bag out of the vacuum."
+ },
+ {
+  "id": "p154",
+  "tramo": 153,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "ciérrala con un nudo y ponla dentro de otra",
+  "foto": "Close detail of Claudio's gloved hands near the beige sofa, tying a knot at the neck of a black waste bag held over a second open bag on the thin gray shag carpet. Soft daylight from the pale cotton curtains falls across the gloves and the folds of plastic. The khaki sleeve of his shirt shows at the frame edge, and the room behind is out of focus.",
+  "mov": "his hands pull the knot tight and slip the tied bag into the second bag"
+ },
+ {
+  "id": "p155",
+  "tramo": 154,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "bolsa de residuo. Si es depósito,",
+  "foto": "Wide view of the living room: Claudio kneels beside the worn beige sofa, setting a gray vacuum canister on the carpet next to an open waste bag. Cream walls, a small wooden side table with its lamp, and the TV stand with family photos stay in warm window light.",
+  "mov": "he lifts the canister's lid and sets it down beside the bag"
+ },
+ {
+  "id": "p156",
+  "tramo": 155,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "vacíalo sobre la bolsa abierta, afuera, con",
+  "foto": "A man stands outdoors on the patio, tipping the vacuum canister over an open black trash bag with the wind at his back.",
+  "mov": "he tilts the canister slowly so the contents pour into the bag"
+ },
+ {
+  "id": "p157",
+  "tramo": 156,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el viento de espaldas. Jorge aspira un rato,",
+  "foto": "Close detail of Jorge in his navy polo, guiding a vacuum nozzle along the stitched seam at the base of the beige fabric sofa. Loose cushions are pushed aside, and gray carpet fibers show at the edge. Daylight from the window highlights the stitching and the nozzle.",
+  "mov": "he slides the nozzle slowly along the seam from left to right"
+ },
+ {
+  "id": "p158",
+  "tramo": 157,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "mira, y dice: ya no hay nada. Y no.",
+  "foto": ": Claudio, face clearly visible, khaki shirt and clear safety glasses pushed up on his forehead, holds a small flashlight low over the sofa base. Jorge stands behind the sofa with the vacuum hose resting on the arm. Warm daylight crosses the cream walls and the gray shag carpet.",
+  "mov": "Claudio sweeps the flashlight beam slowly along the seam"
+ },
+ {
+  "id": "p159",
+  "tramo": 158,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Ése es el error que te cuento después. Pero antes,",
+  "foto": "Medium shot of Jorge in his navy polo, with the unplugged vacuum cord coiled on the carpet, lifting a loose cushion off the beige sofa. Window light falls across the cushion's cover and the cream wall behind him, and the seam below stays in shadow.",
+  "mov": "he lifts the cushion off the sofa and sets it on the armrest"
+ },
+ {
+  "id": "p160",
+  "tramo": 159,
+  "sec": "ARREGLO3",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hay una que es la más importante, y casi nadie la hace.",
+  "foto": "Close detail of the back of a wall calendar, its blank backing facing the room beside the TV stand. Claudio's gloved hand holds a marker against the cream wall next to it. Daylight from the curtains softens the paint texture and the fabric of the sofa edge.",
+  "mov": "his hand moves the marker in a short stroke on the wall beside the calendar"
+ },
+ {
+  "id": "p161",
+  "tramo": 160,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "Esa que casi nadie hace es el patio.",
+  "foto": "Wide view of the small cement back patio in daylight: a stained grey cement floor, a low white-painted wall with peeling paint and an open drain channel along its base, a row of terracotta flower pots with saucers, a black plastic water tank on a rusty metal stand in the corner, and the back of the one-story house with a white door and barred window. No people. Dry leaves lie scattered across the floor.",
+  "mov": "a dry leaf slowly drifts across the cement floor in a light breeze."
+ },
+ {
+  "id": "p162",
+  "tramo": 161,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Las pulgas viven en la sombra y el pasto",
+  "foto": "Close detail of tall dark grass growing in deep shadow at the base of the white wall, beside the open drain channel, blades damp and tangled, dry leaves caught among the stems, a strip of stained cement and a cool shadow falling across the edge.",
+  "mov": "the tall grass blades bend slightly in a breeze."
+ },
+ {
+  "id": "p163",
+  "tramo": 162,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "alto. El lugar bajo el arbusto donde duerme Bruno",
+  "foto": "Medium view of Bruno, a medium-size short-haired caramel-colored mixed-breed dog with a green collar, lying asleep in the shade under a low shrub at the edge of the patio, body relaxed on dry soil, dry leaves scattered around him, and patches of sunlight on the cement beyond the shadow.",
+  "mov": "his ribs rise and fall slowly with each breath."
+ },
+ {
+  "id": "p164",
+  "tramo": 163,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "es su casa de verano. Ahí se",
+  "foto": "The dog's summer shelter or hideout under the plants, with the man pointing at it or crouching beside it.",
+  "mov": "he moves the flashlight beam slowly along the dark soil."
+ },
+ {
+  "id": "p165",
+  "tramo": 164,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "juntan las que salen a buscar un perro para subirse.",
+  "foto": "Close detail of Claudio's hand holding a flashlight and parting the caramel fur on Bruno's back, the edge of the green collar visible, khaki sleeve at the frame's edge, the dog lying calmly on the grass, the fur lit by the warm daylight.",
+  "mov": "his fingers slowly part the fur along the dog's back."
+ },
+ {
+  "id": "p166",
+  "tramo": 165,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Y ahí estaba el lugar que te prometí. Paso cinco:",
+  "foto": "Medium view of Claudio kneeling by the shrub, face clearly visible and focused, safety glasses pushed up on his forehead, lifting a clump of grass with one hand to show the shaded bare soil beneath, his light khaki work shirt and the white wall behind him in daylight.",
+  "mov": "he lifts the grass clump aside slowly."
+ },
+ {
+  "id": "p167",
+  "tramo": 166,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "cortar el pasto con la bordeadora a",
+  "foto": "The man operating a brush cutter (bordeadora) low over the grass strip, as in shot 6.",
+  "mov": "he sweeps the trimmer head slowly left across the grass."
+ },
+ {
+  "id": "p168",
+  "tramo": 167,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "cuatro centímetros del suelo, sacar la hojarasca",
+  "foto": "Medium view of Claudio holding the bordeadora at grass height, his face clearly visible, safety glasses on his forehead, head tilted down toward the cutting line, the trimmer head just above the grass near the cement edge, and short clean grass in front of him in the daylight.",
+  "mov": "he guides the trimmer steadily along the cutting line."
+ },
+ {
+  "id": "p169",
+  "tramo": 168,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con el rastrillo, y mover la cucha al sol",
+  "foto": "Close detail of Jorge's hands gripping a wooden-handled rake, gathering dry leaves into a pile on the grey cement, the sleeve of his navy polo visible at the edge, a few leaves caught between the rake teeth, and bits of grass scattered beside the wall.",
+  "mov": "the rake pulls a heap of leaves toward him."
+ },
+ {
+  "id": "p170",
+  "tramo": 169,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "de la mañana. Por qué: el sol seca la",
+  "foto": "Medium view of Claudio carrying the round dog house out into the morning sunlight at the edge of the patio, his face visible and calm, the khaki sleeves rolled, the cement and grass lit by the low sun, and the white wall with peeling paint behind him.",
+  "mov": "he sets the dog house down slowly in the sun."
+ },
+ {
+  "id": "p171",
+  "tramo": 170,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "tierra donde ponen los huevos, y el pasto corto",
+  "foto": "Wide view of the sunlit middle of the patio: bright morning sun on the bare dark soil and short grass, the dog house standing in the warm light, the shadow of the white wall shrinking across the cement, and terracotta pots along the edge catching the light.",
+  "mov": "the bright sunny patch slowly widens across the bare soil."
+ },
+ {
+  "id": "p172",
+  "tramo": 171,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "les quita el escondite. Las hojas, en bolsas",
+  "foto": "Close detail of short cut grass blades along the base of the cement edge, cut evenly, with bare dark soil showing between them, a few dry leaves on the cement, and no shadow left to hide in under the warm daylight.",
+  "mov": "a small breeze moves the short blades."
+ },
+ {
+  "id": "p173",
+  "tramo": 172,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cerradas, afuera. Jorge lo hizo el sábado,",
+  "foto": "Medium view of Jorge, a stocky man in a navy polo shirt, tying a sealed black plastic bag full of dry leaves by twisting and knotting the top, standing beside the white-painted wall, with the cement floor clean and the rake leaning nearby.",
+  "mov": "he twists the top of the bag and ties it shut."
+ },
+ {
+  "id": "p174",
+  "tramo": 173,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "con la frente sudada, y dice que el patio",
+  "foto": "A medium close-up of the same man in the same patio wiping sweat from his forehead with his arm, filmed from a different angle so it does not repeat shot 2.",
+  "mov": "he wipes his forehead with his forearm."
+ },
+ {
+  "id": "p175",
+  "tramo": 174,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "le quedó más lindo. Y Bruno, que no entiende",
+  "foto": "Close detail of Bruno's head tilted to one side, ears up, green collar visible, eyes half-open, caramel fur catching the warm daylight beside the white-painted wall, and a patch of cement and grass visible at the edge of the frame.",
+  "mov": "he slowly tilts his head the other way."
+ },
+ {
+  "id": "p176",
+  "tramo": 175,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "nada, se echó en el sol del medio del patio,",
+  "foto": "Medium view of Bruno lying down in the middle of the sunny patio, on the warm cement and bright trimmed grass, body stretched out, sunlight on his back, and an empty patch of shade behind him near the shrub, with the white wall in the background.",
+  "mov": "he lowers himself slowly onto the sunny floor and stretches out."
+ },
+ {
+  "id": "p177",
+  "tramo": 176,
+  "sec": "ARREGLO4",
+  "lugar": "patio",
+  "hora": "dia",
+  "gente": [
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sin rascarse.",
+  "foto": "Close detail of Bruno's side and hind leg resting on the warm sunlit cement, the paw still and not scratching, the caramel fur shining in the sun, with the green collar edge visible at the frame's edge.",
+  "mov": "his tail sweeps once slowly across the warm cement."
+ },
+ {
+  "id": "p178",
+  "tramo": 177,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "El error que todos cometen: bañar al perro",
+  "foto": "Claudio, face clearly visible, kneels on the thin gray shag carpet beside a wet dog standing in a plastic basin in the living room. His short graying curly hair is damp at the temples, safety glasses pushed up on his forehead, khaki work shirt sleeves rolled. He points one finger toward the dog's back. Beige sofa behind him, cream walls and pale curtains glow in warm late-afternoon light.",
+  "mov": "his arm lifts and points slowly toward the dog's back"
+ },
+ {
+  "id": "p179",
+  "tramo": 178,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "dos veces, tirar la alfombra, y dejar de",
+  "foto": "Claudio, sleeves rolled, pours water from a plastic cup over the back of a soapy dog standing in a basin on the gray shag carpet. Suds run down the fur onto the carpet. A folded towel rests on the beige sofa arm. Soft daylight through pale curtains, warm late-afternoon light.",
+  "mov": "he tips the cup and water flows down over the dog's fur"
+ },
+ {
+  "id": "p180",
+  "tramo": 179,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "aspirar al tercer día porque ya no ven nada.",
+  "foto": "An upright vacuum cleaner stands unused against the cream painted wall, its cord neatly coiled and its dust canister closed. The gray shag carpet in front of it shows flattened fibers. A small wooden side table with a lamp sits at the edge. Warm late-afternoon light falls across the floor.",
+  "mov": "a thin band of light slides slowly across the carpet"
+ },
+ {
+  "id": "p181",
+  "tramo": 180,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "El baño sólo saca las pulgas de hoy.",
+  "foto": "Claudio kneels on the gray shag carpet drying the dog with a towel, while the dog shakes off droplets near the beige sofa. Wet towels hang over the armchair. Cream walls, a cheap TV stand with family photos on top, and pale curtains glow in warm late-afternoon light.",
+  "mov": "the dog shakes its body and droplets fly outward"
+ },
+ {
+  "id": "p182",
+  "tramo": 181,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Las que están en la alfombra siguen naciendo, y",
+  "foto": "Gray shag carpet fibers near the baseboard, with a few tiny dark specks scattered among them under warm late-afternoon light. Claudio's hand holds a small flashlight angled low over the fibers. A white saucer with a little damp soap residue sits beside the wall.",
+  "mov": "a tiny dust speck drifts slowly down through the beam of light"
+ },
+ {
+  "id": "p183",
+  "tramo": 182,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "nadie lo nota hasta la segunda semana.",
+  "foto": "Claudio crouches by the gray shag carpet and presses a sheet of clear tape onto the fibers, then lifts it to check. Clear safety glasses are pushed up on his forehead. Pale curtains let in soft daylight, and warm light falls on the beige sofa leg nearby.",
+  "mov": "he peels the tape slowly up off the carpet"
+ },
+ {
+  "id": "p184",
+  "tramo": 183,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Y el otro error: tirar el sillón entero cuando",
+  "foto": "The beige fabric sofa stands on the gray shag carpet with its loose cushions piled on the floor. Claudio grips the sofa's wooden base with both hands, tilting it toward the cream wall. The wooden side table with a lamp stands nearby. Warm late-afternoon light fills the room.",
+  "mov": "he tilts the sofa slowly toward the wall"
+ },
+ {
+  "id": "p185",
+  "tramo": 184,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sólo hacía falta lavar la funda.",
+  "foto": "The man kneeling and washing the sofa cover in the same living room as shots 4, 6 and 7, with the same white table lamp, TV cabinet and window.",
+  "mov": "his hands twist the cover and water drips into the bucket"
+ },
+ {
+  "id": "p186",
+  "tramo": 185,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Antes de tirar un mueble, mira si la tela se puede",
+  "foto": "Claudio sits on the arm of the beige sofa, turning its loose fabric cover in his hands. He pinches the stitched seam along the base to test it, while a folded inner label is turned toward the wall. Pale curtains and warm late-afternoon light surround him.",
+  "mov": "his thumbs press slowly along the stitched seam"
+ },
+ {
+  "id": "p187",
+  "tramo": 186,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "lavar, si la costura aguanta, y si la aspiradora",
+  "foto": "The man close-up inspecting a sofa seam by pulling the fabric taut, in the same living room, while the narrator says the seam must hold.",
+  "mov": "he pulls the cover tight and holds it there"
+ },
+ {
+  "id": "p188",
+  "tramo": 187,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "ya lo dejó limpio. Si la funda no se",
+  "foto": "Claudio, face clearly visible, bends over the beige sofa and runs a vacuum's crevice nozzle along the stitched seam at its base. Clear safety glasses are pushed up on his forehead, khaki shirt with two chest pockets. The seam looks freshly cleared, with a little gray dust on the nozzle tip. Warm late-afternoon light across the cream wall.",
+  "mov": "he slides the nozzle steadily along the seam"
+ },
+ {
+  "id": "p189",
+  "tramo": 188,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "lava, aspírala por dentro y por fuera,",
+  "foto": "A vacuum hose end runs over the inside of a loose sofa cushion cover turned inside out on the gray shag carpet. Claudio's hand holds the fabric flat. Dust gathers in the clear nozzle. Warm light glows on the fabric and the carpet fibers around it.",
+  "mov": "the nozzle moves slowly across the fabric"
+ },
+ {
+  "id": "p190",
+  "tramo": 189,
+  "sec": "ERROR",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "y sácala al sol una hora.",
+  "foto": "The man takes the golden retriever outside into bright sunlight and they stand together on a sunny lawn.",
+  "mov": "he smooths the fabric flat with both hands"
+ },
+ {
+  "id": "p191",
+  "tramo": 190,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Te digo lo que no sirve. El baño por sí",
+  "foto": "Warm late-afternoon light fills the living room. Claudio kneels on the thin gray shag carpet beside a freshly bathed dog wrapped in a white towel, its coat fluffy and clean. A bar of soap and a folded towel rest on the wooden side table near a lamp. Pale curtains glow with soft daylight behind them, and the worn beige sofa sits in the background.",
+  "mov": "Claudio slowly rubs the dog's back with the towel."
+ },
+ {
+  "id": "p192",
+  "tramo": 191,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "solo no alcanza. La aspiradora no mata los",
+  "foto": "Claudio's hand rests on the handle of an upright vacuum cleaner standing on the gray shag carpet beside the worn beige sofa. Its hose lies coiled on the floor. Warm late-afternoon light enters through pale cotton curtains and lights the cream walls and the small side table with its lamp.",
+  "mov": "He pushes the vacuum slowly a short way across the carpet."
+ },
+ {
+  "id": "p193",
+  "tramo": 192,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "huevos, sólo los saca. El sol y",
+  "foto": "Close view of the gray shag carpet at the base of the beige sofa, where the stitched seam runs along the floor. The tip of a vacuum hose rests on a small tuft of fibers, with warm light grazing the strands. Tiny dust specks drift in the sunlight just above the carpet.",
+  "mov": "The hose tip lifts a small tuft of gray fibers."
+ },
+ {
+  "id": "p194",
+  "tramo": 193,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "el pasto corto les quitan el escondite,",
+  "foto": "Claudio stands at the window in his light khaki work shirt, with clear safety glasses pushed up on his forehead. He gathers a pale cotton curtain with one hand. Warm late-afternoon sunlight pours onto the gray shag carpet, lighting the cream wall and the TV stand with its family photos. His face is visible as he looks down at the carpet below the window.",
+  "mov": "He draws the curtain aside slowly, widening the sunbeam on the floor."
+ },
+ {
+  "id": "p195",
+  "tramo": 194,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "pero no matan de un día para el otro. Eso hay que",
+  "foto": "Wide view of the living room: the worn beige sofa, the wooden side table with its lamp, the cheap TV stand with family photos, and a wall clock above it. A patch of warm sunlight lies on the gray shag carpet, its edge a little farther from the window than before. The room is quiet and ordered.",
+  "mov": "The sunbeam slides slowly across the carpet toward the sofa."
+ },
+ {
+  "id": "p196",
+  "tramo": 195,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "decirlo sin vergüenza. El mito de que un perro",
+  "foto": "A woman of the household sits on the beige sofa with a dog lying across her lap, brushing its fur with a soft brush. The dog's coat is light and clean. The cream wall and pale curtains catch soft daylight behind them, and the loose cushions are stacked neatly at the side of the sofa.",
+  "mov": "She brushes the fur in long strokes down the dog's back."
+ },
+ {
+  "id": "p197",
+  "tramo": 196,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "limpio ya no trae nada. El perro puede estar",
+  "foto": "The same golden retriever lies clean on a towel on the grey carpet of the same living room, with the matching sofa and window visible.",
+  "mov": "A soft breeze from the window lifts a strand of fur on the towel."
+ },
+ {
+  "id": "p198",
+  "tramo": 197,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "lindo y oliendo a jabón, y los huevos",
+  "foto": "A child, fully clothed in a t-shirt and shorts, sits on the gray shag carpet hugging a clean dog that smells of soap. The child's arms wrap around the dog's neck. The wooden side table with its lamp stands behind them, and warm sunlight falls on the cream wall.",
+  "mov": "The child strokes the dog's back with one hand."
+ },
+ {
+  "id": "p199",
+  "tramo": 198,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "caen igual en la alfombra, porque se caen del",
+  "foto": "Claudio kneels on the gray shag carpet beside the sofa, wearing his light khaki shirt with clear safety glasses pushed up on his forehead. He brushes a dog lying on a white towel. Tiny pale specks fall from the fur onto the carpet in warm late-afternoon light. His face is visible as he looks down at the carpet.",
+  "mov": "He brushes the dog's side in a slow stroke, and a few specks drop onto the shag."
+ },
+ {
+  "id": "p200",
+  "tramo": 199,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "pelo cuando se rasca y se mueve.",
+  "foto": "Close view of a dog's back leg mid-scratch on the gray shag carpet. The short fur is ruffled, and a few loose hairs drift down toward the fibers in warm light. The edge of a white towel shows in the corner of the frame.",
+  "mov": "The back leg scratches sideways twice, sending hairs drifting down."
+ },
+ {
+  "id": "p201",
+  "tramo": 200,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Un perro limpio puede traer lo mismo que uno",
+  "foto": "A clean dog walks across the gray shag carpet past the beige sofa. Its coat is fluffy and pale, and its paw pads press small prints into the fibers. Warm sunlight from the window lights the cream wall and the wooden side table with its lamp in the background.",
+  "mov": "The dog takes two steps forward across the carpet."
+ },
+ {
+  "id": "p202",
+  "tramo": 201,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "sucio. Y cuándo llamar al profesional.",
+  "foto": "Claudio sits on the beige sofa with his hands crossed on his knee, wearing his khaki shirt with two chest pockets and clear safety glasses pushed up on his forehead. His face is clearly visible, turned toward the wooden side table with its lamp. Pale curtains glow behind him, a dog rests on the carpet at his feet, and the family photos sit on the TV stand.",
+  "mov": "He lifts his gaze slowly toward the side table, then back."
+ },
+ {
+  "id": "p203",
+  "tramo": 202,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si a las tres o cuatro semanas siguen apareciendo,",
+  "foto": "A wide shot of the man checking a calendar or a flea-count log while the sofa and carpet are visible in the background.",
+  "mov": "The flashlight beam sweeps slowly along the seam."
+ },
+ {
+  "id": "p204",
+  "tramo": 203,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "vuelve a consultar al veterinario.",
+  "foto": "A veterinarian examining the dog on an exam table in a clinic.",
+  "mov": "She lifts the dog's paw and turns it slowly to look."
+ },
+ {
+  "id": "p205",
+  "tramo": 204,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Y si la casa está muy tomada, con pulgas en",
+  "foto": "A close-up of fleas crawling along the carpet edges and sofa seams to show an infestation.",
+  "mov": "Claudio lifts a loose cushion from the sofa and sets it aside."
+ },
+ {
+  "id": "p206",
+  "tramo": 205,
+  "sec": "MITOS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cada rincón, ahí conviene que venga un profesional.",
+  "foto": "Close view of the corner where the cream wall meets the wooden TV stand, and the gray shag carpet runs up to the baseboard. Claudio's hand holds a flashlight angled into the corner, its beam showing the fibers in warm light. His khaki sleeve is visible at the edge of the frame.",
+  "mov": "The flashlight beam moves slowly along the baseboard into the corner."
+ },
+ {
+  "id": "p207",
+  "tramo": 206,
+  "sec": "PREGUNTAS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "sofia",
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Sofía pregunta: ¿y el gato? Lo mismo",
+  "foto": "Warm late-afternoon light falls across a worn beige fabric sofa in a living room with cream walls and thin gray shag carpet. Sofía, a 9-year-old girl with two dark braids in a yellow t-shirt, sits at the sofa's end, looking down at a gray cat curled on the cushion. Claudio, a 58-year-old pest-control technician with graying curly hair, khaki work shirt and safety glasses pushed up on his forehead, crouches beside her, his warm face turned toward her, listening.",
+  "mov": "Claudio slowly tilts his head toward Sofía and lifts one hand to point gently at the cat."
+ },
+ {
+  "id": "p208",
+  "tramo": 207,
+  "sec": "PREGUNTAS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que el perro: con el veterinario, y nunca",
+  "foto": "A dog being brought to or examined by a veterinarian, or the dog itself, as the narrator mentions the vet.",
+  "mov": "Claudio sets the container down on the wooden side table next to the lamp."
+ },
+ {
+  "id": "p209",
+  "tramo": 208,
+  "sec": "PREGUNTAS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "un producto de perro. Lucía pregunta:",
+  "foto": "Wide view of the living room in warm late-afternoon light. Lucía, a 38-year-old woman with long dark wavy hair in a low ponytail, wears a gray t-shirt and jeans and stands in the doorway, one hand resting on the frame. Beyond her, the cream walls, the beige sofa, the TV stand with family photos, and the pale curtains fill the room, while Claudio kneels near the carpet with a cloth.",
+  "mov": "Lucía takes one step forward into the living room, toward the sofa."
+ },
+ {
+  "id": "p210",
+  "tramo": 209,
+  "sec": "PREGUNTAS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "lucia",
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "¿y si vivo en departamento? Igual: la",
+  "foto": "A medium shot of an apartment living room or balcony-style space with a different framing, showing the narrator's question about living in an apartment.",
+  "mov": "Claudio slides his hand slowly across the carpet, smoothing it out."
+ },
+ {
+  "id": "p211",
+  "tramo": 210,
+  "sec": "PREGUNTAS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "alfombra, el sillón y los zócalos.",
+  "foto": "Close detail of Claudio's hand holding a small pump sprayer, aimed low at the base of a cream painted wall where it meets the carpet. The wall's baseboard edge, the gray shag fibers and the worn beige sofa seam are visible in warm light. Only his forearm and sleeve are in frame.",
+  "mov": "Claudio squeezes the sprayer trigger once, releasing a fine mist along the baseboard."
+ },
+ {
+  "id": "p212",
+  "tramo": 211,
+  "sec": "PREGUNTAS",
+  "lugar": "living",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "El patio no, pero un balcón con sombra sí.",
+  "foto": "A shaded apartment balcony with a chair or plants, contrasting with the sunny patio the narrator says is not suitable.",
+  "mov": "Claudio moves the potted plant a few centimeters farther into the shade of the curtain."
+ },
+ {
+  "id": "p213",
+  "tramo": 212,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Tres semanas después volví. Mateo ya",
+  "foto": "Wide view of a bright living room with cream walls and a worn beige fabric sofa. Mateo, a six-year-old boy in striped pajamas, sits on the sofa with his bare legs stretched out. Claudio, in a light khaki work shirt, stands by the window with his tool bag at his feet, his back partly turned. Pale cotton curtains let in soft daylight. A thin gray shag carpet covers the floor.",
+  "mov": "Claudio sets his tool bag down on the carpet."
+ },
+ {
+  "id": "p214",
+  "tramo": 213,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "mateo"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no se rasca. Sus tobillos están limpios, y",
+  "foto": "Close view of a boy's bare ankles resting on thin gray shag carpet at the edge of a beige sofa. The skin is clean and unmarked, and the striped pajama hem is visible above them. Warm daylight from the window falls across the fibers. No hands scratch the skin.",
+  "mov": "Mateo's bare foot slowly shifts on the carpet."
+ },
+ {
+  "id": "p215",
+  "tramo": 214,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "lucia"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Lucía dice que se acabó el llanto de la noche.",
+  "foto": "Medium view of Lucía, a woman with long dark wavy hair in a low ponytail, sitting on the sofa in a gray t-shirt and jeans. She folds a soft blanket on her lap with a calm expression, looking down at her hands. Cream walls and pale curtains sit behind her in soft daylight.",
+  "mov": "Lucía smooths the folded blanket with both hands."
+ },
+ {
+  "id": "p216",
+  "tramo": 215,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "bruno"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Bruno se acuesta en el sol del patio y ni",
+  "foto": "Wide view of a caramel-colored short-haired dog with a green collar lying on his side in a warm patch of sunlight on the floor by the window. The sunlight spreads over the gray carpet. He rests relaxed, not scratching, with the sofa and wall visible in the background.",
+  "mov": "Bruno lifts his head and lets it drop back down."
+ },
+ {
+  "id": "p217",
+  "tramo": 216,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "se mira la pata. En el sillón, la tela",
+  "foto": "Close view of a beige sofa cushion fabric with a visible stitched seam along its base, clean and smooth in daylight. Claudio's hand, in a khaki shirt sleeve, rests on the fabric checking its surface. No stains or marks remain on the weave.",
+  "mov": "Claudio's hand slides slowly across the cushion fabric."
+ },
+ {
+  "id": "p218",
+  "tramo": 217,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "estaba limpia, y la funda salió lavada.",
+  "foto": "Medium view of Claudio in a light khaki short-sleeve work shirt standing beside the beige sofa. He holds a freshly washed, clean cushion cover up in both hands, letting it hang open. The fabric looks crisp and soft in the window light. The sofa and cream wall are visible behind him.",
+  "mov": "Claudio lifts the cushion cover higher to show it."
+ },
+ {
+  "id": "p219",
+  "tramo": 218,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "La alfombra quedó en su lugar. Jorge se quedó",
+  "foto": "Wide view of the living room with the thin gray shag carpet laid back in its place in the center of the floor. A stocky man in a navy polo shirt, Jorge, stands on the carpet near the sofa and looks down at it. The small wooden side table with its lamp and the TV stand are visible in soft daylight.",
+  "mov": "Jorge takes a slow step back to look at the carpet."
+ },
+ {
+  "id": "p220",
+  "tramo": 219,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "jorge"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "mirándola un rato, con las llaves todavía en",
+  "foto": "Close view of a man's hand holding a set of house keys loosely at his side. The navy polo sleeve is visible at the edge of the frame. Below, the gray shag carpet fibers catch soft daylight. The keys rest still in his fingers.",
+  "mov": "The keys swing slightly in his loose hand."
+ },
+ {
+  "id": "p221",
+  "tramo": 220,
+  "sec": "RESULTADO",
+  "lugar": "living",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "jorge"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "la mano, y dijo: Claudio, ya no la tiro.",
+  "foto": "Medium view of Claudio, a middle-aged man with short curly graying hair and a gray-stubbled beard, wearing a light khaki work shirt and safety glasses pushed up on his forehead. Beside him, Jorge in a navy polo shirt holds keys in one hand and looks down at the carpet. Both stand in the warm-lit living room near the beige sofa.",
+  "mov": "Jorge turns his head toward Claudio, who nods."
+ },
+ {
+  "id": "p222",
+  "tramo": 221,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "Ahora la revisión de diez minutos que te prometí.",
+  "foto": "Claudio sits on the worn beige fabric sofa in the living room, lit by a warm ceiling bulb and a small lamp on the wooden side table. He wears a light khaki short-sleeve work shirt with two chest pockets and clear safety glasses pushed up on his forehead. His face is clearly visible, relaxed and focused. He is pulling his long white knee-high socks up with both hands. Thin gray shag carpet covers the floor, and the window behind him shows dark night outside.",
+  "mov": "Claudio tugs both white socks up to the knees, then settles back into the sofa cushions."
+ },
+ {
+  "id": "p223",
+  "tramo": 222,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Es con tus medias blancas, hasta la rodilla.",
+  "foto": "Close view of Claudio's lower legs on the beige sofa edge. A smooth white knee-high sock is pulled up over his tanned calf, and the khaki hem of his work trousers sits above it. Warm lamplight falls across the fabric, showing its clean weave. The stitched seam along the sofa base runs beside his leg. Thin gray shag carpet is visible below, and no other people are in the frame.",
+  "mov": "His hand smooths the top edge of the white sock flat against his calf."
+ },
+ {
+  "id": "p224",
+  "tramo": 223,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Esta noche, camina por la alfombra, por el",
+  "foto": "Claudio stands in the living room on the thin gray shag carpet, walking slowly in white knee-high socks. His khaki work shirt sleeves are rolled slightly, and clear safety glasses hang on his forehead. The cream painted walls and a dim ceiling bulb light the room softly. The cheap TV stand sits along the wall with family photos on top. He keeps his eyes down on the carpet beneath his feet.",
+  "mov": "He takes one slow step forward across the carpet, lifting his foot."
+ },
+ {
+  "id": "p225",
+  "tramo": 224,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "sillón, y pasa por los zócalos. Con la luz",
+  "foto": "A low side-angle shot of the man's socked feet walking along the carpet beside the baseboard, matching the narration about walking past the baseboards.",
+  "mov": "He moves steadily past the sofa end, sliding his hand lightly along the wall base."
+ },
+ {
+  "id": "p226",
+  "tramo": 225,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "del living bien baja, para que se vean los puntitos.",
+  "foto": "Close view of the small wooden side table with a lamp turned down low, casting a dim warm glow. The light falls across the gray shag carpet and the bottom of the beige sofa. Nearby the cream wall shows a soft shadow. The lampshade and table surface are plain, with no writing. The room is quiet and dim, and no one is in the frame.",
+  "mov": "The lamp glow brightens slightly as a hand turns its knob a little lower."
+ },
+ {
+  "id": "p227",
+  "tramo": 226,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Las pulgas saltan y se agarran a la",
+  "foto": "Claudio crouches beside the beige sofa in the dim living room, his face clearly visible and focused. He wears his khaki work shirt and clear safety glasses pushed up on his forehead. His white knee-high socks sit against the gray shag carpet. He leans in close to the sofa base, looking at the pale fabric by the stitched seam. Low lamplight outlines his features and the window stays dark behind him.",
+  "mov": "He leans forward slightly toward the sofa fabric, bringing his eyes closer to it."
+ },
+ {
+  "id": "p228",
+  "tramo": 227,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "tela blanca, por eso se ven. Si después de un minuto",
+  "foto": "Wide view of the living room at night. Claudio sits on the beige fabric sofa with his white-socked legs stretched onto the gray shag carpet. A small flashlight beam lights the pale sofa cushion. The cream walls, the TV stand with family photos, and the pale curtains fill the background. His khaki sleeves and hands are in the light, and his face turned down toward the cushion.",
+  "mov": "The flashlight beam sweeps slowly across the white fabric of the cushion."
+ },
+ {
+  "id": "p229",
+  "tramo": 228,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "aparecen puntitos negros que saltan,",
+  "foto": "Extreme close view of a pale white cushion fabric under low warm light. Several tiny dark specks sit on the weave, and one dark speck springs upward off the surface. The stitching of the seam runs along the edge. The fabric fibers are sharp in the frame. No hands or faces appear, only the cloth and the small dark specks.",
+  "mov": "One tiny dark speck jumps up off the white fabric and lands again."
+ },
+ {
+  "id": "p230",
+  "tramo": 229,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "quedan pulgas. Si no aparece ninguno,",
+  "foto": "Claudio sits on the beige sofa with his white knee-high socks, leaning toward the sofa cushion. His khaki work shirt and clear safety glasses are visible, and his hand is near the cushion. A lamp on the wooden side table lights the scene from one side. The gray shag carpet is at his feet. He watches the sock fabric in his other hand with close attention.",
+  "mov": "His index finger taps the white fabric to point at a dark speck."
+ },
+ {
+  "id": "p231",
+  "tramo": 230,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "es buena señal, pero repite mañana.",
+  "foto": "Close-up of the clean white cloth with no black dots, with the man's hand giving a thumbs-up or a calendar card reading 'mañana'.",
+  "mov": "He breathes out and slowly leans back into the sofa cushions."
+ },
+ {
+  "id": "p232",
+  "tramo": 231,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Y lo que ves te dice dónde empezar: si salen",
+  "foto": "Wide shot of the grey shag-carpet living room with the vacuum nozzle under the sofa, showing where the fleas come from.",
+  "mov": "The nozzle slides slowly along the stitched seam from one end to the other."
+ },
+ {
+  "id": "p233",
+  "tramo": 232,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "del sillón, aspira el sillón;",
+  "foto": "The man vacuuming the sofa cushions and seams in the grey shag-carpet living room.",
+  "mov": "He lifts the hose and moves it to the other side of the sofa."
+ },
+ {
+  "id": "p234",
+  "tramo": 233,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "si salen del patio, es el patio. Y el",
+  "foto": "Exterior or patio shot of the backyard floor or patio tiles where fleas jump, with no living room visible.",
+  "mov": "He slides the pale curtain edge aside a little, then lets it fall back."
+ },
+ {
+  "id": "p235",
+  "tramo": 234,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "resultado de la prueba es tuyo, no mío. Una",
+  "foto": "Close view of a folded white cloth lying flat on the beige sofa cushion beside a dark rubber nozzle. The fabric is smooth and clean in the warm lamp light. The gray shag carpet edge shows at the bottom of the frame. The nozzle sits still on the cloth, and no faces or hands are present in the scene.",
+  "mov": "A hand slides the white cloth gently across the cushion to straighten it."
+ },
+ {
+  "id": "p236",
+  "tramo": 235,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "casa que ya cortó la vuelta no deja",
+  "foto": "Claudio sits on the beige fabric sofa with a white knee-high sock resting across his lap. His khaki work shirt and clear safety glasses on his forehead are visible. The gray shag carpet is under his feet and the wooden side table with its lamp sits beside the sofa. He looks down at the sock while his hands work it, and the room is softly lit.",
+  "mov": "He folds the white sock in half and sets it down on the sofa cushion."
+ },
+ {
+  "id": "p237",
+  "tramo": 236,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "puntitos negros en la tela blanca.",
+  "foto": "Close-up of tiny black specks scattered on a white sock or white cloth.",
+  "mov": "He turns slightly toward the sofa and lowers his arms to his sides."
+ },
+ {
+  "id": "p238",
+  "tramo": 237,
+  "sec": "REVISION",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si aparecen, ya sabes por dónde empezar.",
+  "foto": "Close view of a clean white sock lying flat on the beige fabric of the sofa cushion under warm lamp light. The weave of the cloth looks even and smooth, with no dark specks anywhere. The stitched seam runs along the edge beside it. The gray shag carpet shows at the bottom. No faces or hands appear, only the cloth and the warm light.",
+  "mov": "A hand gently smooths the sock flat across the cushion."
+ },
+ {
+  "id": "p239",
+  "tramo": 238,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Y lo último. Si quieres los arreglos en orden,",
+  "foto": "Night in the Ramírez living room, lit by a warm ceiling bulb. Claudio sits on the worn beige fabric sofa, leaning slightly forward, his tanned face clearly visible, clear safety glasses pushed up on his forehead, light khaki work shirt. He holds a small closed booklet with both hands on his knee. Thin gray shag carpet below, cream walls behind him.",
+  "mov": "He slowly raises the closed booklet a few centimeters toward the lamp light."
+ },
+ {
+  "id": "p240",
+  "tramo": 239,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con cantidades y tiempos, está el Manual",
+  "foto": "The same narrator and the same sofa as the neighbouring shots, with the booklet resting on the side table beside the lamp.",
+  "mov": "His fingers slide the booklet a few centimeters toward the lamp."
+ },
+ {
+  "id": "p241",
+  "tramo": 240,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "del Fumigador: sesenta y seis arreglos de",
+  "foto": "Wide view of the dark living room at night, lit only by the ceiling bulb and a table lamp. Claudio sits on the beige sofa with loose cushions, bent over a closed booklet on his lap, its pages turned away from the camera. Gray shag carpet covers the floor. Pale cotton curtains hang at the window, dark outside. Family photos stand on the cheap TV stand against the wall.",
+  "mov": "He slowly opens the booklet's cover halfway, as if about to start reading."
+ },
+ {
+  "id": "p242",
+  "tramo": 241,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la casa, por veintisiete dólares,",
+  "foto": "Medium view inside the living room at night. Claudio sits on the edge of the beige sofa in his khaki work shirt with two chest pockets. Beside him, a small wooden side table holds a lamp and a closed booklet. He rests a single silver coin on the polished wood. Gray shag carpet below, pale curtains behind him.",
+  "mov": "He lowers the coin gently onto the table with two fingers."
+ },
+ {
+  "id": "p243",
+  "tramo": 242,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "un solo pago. Si en siete días no te sirve,",
+  "foto": "Wide view of the living room at night. A woman of the household sits on the worn beige sofa, lifting loose cushions to check the stitched seam along the base. Claudio stands near the window with his arms folded, dark outside, pale cotton curtains softly lit. Cream walls, gray shag carpet, and the lamp on the side table glowing warmly.",
+  "mov": "She lifts a cushion and smooths it back into place."
+ },
+ {
+  "id": "p244",
+  "tramo": 243,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "te devuelven el dinero. Sesenta y seis arreglos",
+  "foto": "Close view of Claudio's weathered hands turning a plain pump sprayer with no label, adjusting its nozzle on the wooden side table. His khaki sleeve is rolled to the forearm, tanned skin, fine hair on his wrist. Warm lamp light falls across the nozzle and the table grain, with the blurred cream wall behind.",
+  "mov": "He twists the nozzle a quarter turn."
+ },
+ {
+  "id": "p245",
+  "tramo": 244,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "por menos de lo que cuesta una visita del",
+  "foto": "A technician with a sprayer or a service estimate beside a price tag, showing the cost comparison with a pest-control visit.",
+  "mov": "He lowers his gaze slightly toward the lamp and nods once."
+ },
+ {
+  "id": "p246",
+  "tramo": 245,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "fumigador. Apunta el celular al código",
+  "foto": "Close detail of Claudio's hand holding a phone with its back toward the viewer, the screen not visible. The phone is angled over a plain card lying on the wooden side table, the card showing only a black-and-white square code pattern with no writing. Lamp light warms the wood, and the khaki sleeve cuff sits at the edge of the frame.",
+  "mov": "The phone tilts slowly down over the card."
+ },
+ {
+  "id": "p247",
+  "tramo": 246,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "QR que aparece en pantalla, o toca el",
+  "foto": "Wide view of the dark living room at night, lit by the ceiling bulb and the lamp. Claudio sits on the sofa leaning toward the side table, holding a phone in one hand, its back facing us. Cream walls, pale cotton curtains, a cheap TV stand with family photos, and gray shag carpet fill the quiet room.",
+  "mov": "His thumb taps the edge of the phone once."
+ },
+ {
+  "id": "p248",
+  "tramo": 247,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "enlace de la descripción, y ahí tienes el Manual.",
+  "foto": "The narrator pointing toward the video description area or holding up a manual, with the link visible on screen.",
+  "mov": "He slides the booklet to the center of the table and lets go."
+ },
+ {
+  "id": "p249",
+  "tramo": 248,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Y ahora cuéntame tú. Esta noche,",
+  "foto": "Close detail of Claudio's hands resting open on his knees, fingers relaxed, tanned weathered skin, a light khaki sleeve cuff. Beside them, the worn beige fabric of the sofa shows its stitched seam along the base. Warm lamp light falls from one side, with soft shadows across the cushion and the gray carpet blurred below.",
+  "mov": "His fingers slowly curl toward his palms."
+ },
+ {
+  "id": "p250",
+  "tramo": 249,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "con las medias blancas, ¿cuántos puntitos aparecieron?",
+  "foto": "A close-up of white socks with small dots on them, filmed from a different angle than shot 4.",
+  "mov": "He sweeps the flashlight beam slowly across the socks."
+ },
+ {
+  "id": "p251",
+  "tramo": 250,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Escríbemelo en los comentarios.",
+  "foto": "The narrator typing a comment on a phone or laptop while sitting on the sofa.",
+  "mov": "He nods slowly, once."
+ },
+ {
+  "id": "p252",
+  "tramo": 251,
+  "sec": "CIERRE",
+  "lugar": "living",
+  "hora": "noche",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Leo todos.",
+  "foto": "Close detail of Claudio's hand reaching toward the lamp on the wooden side table, fingers near its base switch. The warm glow falls over the wood grain and the edge of a closed booklet. A khaki sleeve cuff sits at the frame edge, with the cream wall blurred behind and the rest of the room dark.",
+  "mov": "His finger presses the lamp switch, and the light goes out."
+ }
+]

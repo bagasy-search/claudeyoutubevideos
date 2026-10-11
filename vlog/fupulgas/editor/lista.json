@@ -1,0 +1,362 @@
+[
+ {
+  "name": "ov00a",
+  "c": "FabCalendario",
+  "props": {
+   "cada": 1,
+   "txt": "dos semanas",
+   "title": "Aspirar",
+   "dias": 14
+  }
+ },
+ {
+  "name": "ov00b",
+  "c": "FabCalendario",
+  "props": {
+   "cada": 1,
+   "txt": "dos semanas",
+   "title": "Aspirar",
+   "dias": 14
+  }
+ },
+ {
+  "name": "ov02a",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Recorrido de una pulga",
+   "centro": "cada 2 semanas",
+   "etapas": [
+    {
+     "img": "k001",
+     "txt": "salta del pelo"
+    },
+    {
+     "img": "k002",
+     "txt": "cae en la tela"
+    },
+    {
+     "img": "k003",
+     "txt": "a la grieta"
+    },
+    {
+     "img": "k004",
+     "txt": "pone huevos ahí"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov02b",
+  "c": "FabCiclo",
+  "props": {
+   "title": "Recorrido de una pulga",
+   "centro": "cada 2 semanas",
+   "etapas": [
+    {
+     "img": "k001",
+     "txt": "salta del pelo"
+    },
+    {
+     "img": "k002",
+     "txt": "cae en la tela"
+    },
+    {
+     "img": "k003",
+     "txt": "a la grieta"
+    },
+    {
+     "img": "k004",
+     "txt": "pone huevos ahí"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov03a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Lo que parece polvo",
+   "no": {
+    "img": "k005",
+    "txt": "Polvo gris, parece arena"
+   },
+   "si": {
+    "img": "k006",
+    "txt": "Capullos en la costura"
+   }
+  }
+ },
+ {
+  "name": "ov03b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Lo que parece polvo",
+   "no": {
+    "img": "k005",
+    "txt": "Polvo gris, parece arena"
+   },
+   "si": {
+    "img": "k006",
+    "txt": "Capullos en la costura"
+   }
+  }
+ },
+ {
+  "name": "ov04a",
+  "c": "FabDato",
+  "props": {
+   "num": "60",
+   "unidad": "grados",
+   "txt": "30 minutos, ciclo completo"
+  }
+ },
+ {
+  "name": "ov04b",
+  "c": "FabDato",
+  "props": {
+   "num": "60",
+   "unidad": "grados",
+   "txt": "30 minutos, ciclo completo"
+  }
+ },
+ {
+  "name": "ov06a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Con chicos en casa",
+   "no": {
+    "img": "k007",
+    "txt": "veneno en la alfombra"
+   },
+   "si": {
+    "img": "k008",
+    "txt": "Lo que diga el veterinario"
+   }
+  }
+ },
+ {
+  "name": "ov06b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Con chicos en casa",
+   "no": {
+    "img": "k007",
+    "txt": "veneno en la alfombra"
+   },
+   "si": {
+    "img": "k008",
+    "txt": "Lo que diga el veterinario"
+   }
+  }
+ },
+ {
+  "name": "ov07a",
+  "c": "FabPasos",
+  "props": {
+   "title": "Vaciar fuera de casa",
+   "pasos": [
+    {
+     "img": "k009",
+     "txt": "Desenchufa y guantes"
+    },
+    {
+     "img": "k010",
+     "txt": "Nudo en la bolsa"
+    },
+    {
+     "img": "k011",
+     "txt": "Otra bolsa encima"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov07b",
+  "c": "FabPasos",
+  "props": {
+   "title": "Vaciar fuera de casa",
+   "pasos": [
+    {
+     "img": "k009",
+     "txt": "Desenchufa y guantes"
+    },
+    {
+     "img": "k010",
+     "txt": "Nudo en la bolsa"
+    },
+    {
+     "img": "k011",
+     "txt": "Otra bolsa encima"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov08a",
+  "c": "FabMapa",
+  "props": {
+   "title": "Dónde viven las pulgas",
+   "pins": [
+    {
+     "lugar": "sala",
+     "txt": "sillón"
+    },
+    {
+     "lugar": "patio",
+     "txt": "pasto alto"
+    }
+   ],
+   "hechos": 2,
+   "foco": 1,
+   "note": "el patio: casa de verano"
+  }
+ },
+ {
+  "name": "ov08b",
+  "c": "FabMapa",
+  "props": {
+   "title": "Dónde viven las pulgas",
+   "pins": [
+    {
+     "lugar": "sala",
+     "txt": "sillón"
+    },
+    {
+     "lugar": "patio",
+     "txt": "pasto alto"
+    }
+   ],
+   "hechos": 2,
+   "foco": 1,
+   "note": "el patio: casa de verano"
+  }
+ },
+ {
+  "name": "ov09a",
+  "c": "FabDato",
+  "props": {
+   "num": "4",
+   "unidad": "cm",
+   "txt": "de alto, no más"
+  }
+ },
+ {
+  "name": "ov09b",
+  "c": "FabDato",
+  "props": {
+   "num": "4",
+   "unidad": "cm",
+   "txt": "de alto, no más"
+  }
+ },
+ {
+  "name": "ov10a",
+  "c": "FabPasos",
+  "props": {
+   "title": "Antes de tirar un mueble",
+   "pasos": [
+    {
+     "img": "k012",
+     "txt": "¿la tela se lava?"
+    },
+    {
+     "img": "k013",
+     "txt": "¿la costura aguanta?"
+    },
+    {
+     "img": "k014",
+     "txt": "¿ya la aspiraste bien?"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov10b",
+  "c": "FabPasos",
+  "props": {
+   "title": "Antes de tirar un mueble",
+   "pasos": [
+    {
+     "img": "k012",
+     "txt": "¿la tela se lava?"
+    },
+    {
+     "img": "k013",
+     "txt": "¿la costura aguanta?"
+    },
+    {
+     "img": "k014",
+     "txt": "¿ya la aspiraste bien?"
+    }
+   ]
+  }
+ },
+ {
+  "name": "ov11a",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Perro limpio",
+   "no": {
+    "img": "k015",
+    "txt": "Perro limpio, ya está listo"
+   },
+   "si": {
+    "img": "k016",
+    "txt": "Limpio también trae huevos"
+   }
+  }
+ },
+ {
+  "name": "ov11b",
+  "c": "FabSiNo",
+  "props": {
+   "title": "Perro limpio",
+   "no": {
+    "img": "k015",
+    "txt": "Perro limpio, ya está listo"
+   },
+   "si": {
+    "img": "k016",
+    "txt": "Limpio también trae huevos"
+   }
+  }
+ },
+ {
+  "name": "ov12a",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k017",
+   "despues": "k018",
+   "nota": "Mismo sillón, mismo ángulo"
+  }
+ },
+ {
+  "name": "ov12b",
+  "c": "FabAntesDespues",
+  "props": {
+   "antes": "k017",
+   "despues": "k018",
+   "nota": "Mismo sillón, mismo ángulo"
+  }
+ },
+ {
+  "name": "ov13a",
+  "c": "FabDato",
+  "props": {
+   "num": "1",
+   "unidad": "minuto",
+   "txt": "y ves puntitos negros",
+   "alerta": true
+  }
+ },
+ {
+  "name": "ov13b",
+  "c": "FabDato",
+  "props": {
+   "num": "1",
+   "unidad": "minuto",
+   "txt": "y ves puntitos negros",
+   "alerta": true
+  }
+ }
+]
