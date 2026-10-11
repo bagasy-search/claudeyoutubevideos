@@ -1,30 +1,272 @@
 [
- {"name":"bd_g1","q":"kitchen floor cleaning","scene":"kitchen floor cleaning"},
- {"name":"bd_g2","q":"scrubbing tile floor","scene":"scrubbing tile floor"},
- {"name":"bd_g3","q":"kitchen interior daylight","scene":"kitchen interior daylight"},
- {"name":"bd_g4","q":"mopping kitchen","scene":"mopping kitchen"},
- {"name":"bd_g5","q":"cleaning supplies","scene":"cleaning supplies"},
- {"name":"bd_g6","q":"bathroom tiles","scene":"bathroom tiles"},
- {"name":"bd_g7","q":"tile floor closeup","scene":"tile floor closeup"},
- {"name":"bd_g8","q":"vacuum cleaner floor","scene":"vacuum cleaner floor"},
- {"name":"bd_g9","q":"kitchen sink window","scene":"kitchen sink window"},
- {"name":"bd_g10","q":"wiping kitchen counter","scene":"wiping kitchen counter"},
- {"name":"bd_g11","q":"rubber gloves cleaning","scene":"rubber gloves cleaning"},
- {"name":"bd_g12","q":"cleaning bathroom","scene":"cleaning bathroom"},
- {"name":"bd_g13","q":"old house kitchen","scene":"old house kitchen"},
- {"name":"bd_g14","q":"spray bottle cleaning","scene":"spray bottle cleaning"},
- {"name":"bd_g15","q":"cozy kitchen morning","scene":"cozy kitchen morning"},
- {"name":"bd_g16","q":"floor tiles pattern","scene":"floor tiles pattern"},
- {"name":"bd_g17","q":"sponge bucket","scene":"sponge bucket"},
- {"name":"bd_g18","q":"shower cleaning","scene":"shower cleaning"},
- {"name":"bd_g19","q":"hardware store","scene":"hardware store"},
- {"name":"bd_g20","q":"brush scrubbing","scene":"brush scrubbing"},
- {"name":"bd_g21","q":"laundry room","scene":"laundry room"},
- {"name":"bd_g22","q":"kitchen table coffee","scene":"kitchen table coffee"},
- {"name":"bd_g23","q":"tiled kitchen","scene":"tiled kitchen"},
- {"name":"bd_g24","q":"cleaning floor hands","scene":"cleaning floor hands"},
- {"name":"bd_g25","q":"suburban house","scene":"suburban house"},
- {"name":"bd_g26","q":"bucket and mop","scene":"bucket and mop"},
- {"name":"bd_g27","q":"kitchen stove","scene":"kitchen stove"},
- {"name":"bd_g28","q":"open window curtain","scene":"open window curtain"}
+ {
+  "name": "bd_g1",
+  "q": "kitchen floor cleaning",
+  "scene": "kitchen floor cleaning"
+ },
+ {
+  "name": "bd_g2",
+  "q": "scrubbing tile floor",
+  "scene": "scrubbing tile floor"
+ },
+ {
+  "name": "bd_g3",
+  "q": "kitchen interior daylight",
+  "scene": "kitchen interior daylight"
+ },
+ {
+  "name": "bd_g4",
+  "q": "mopping kitchen",
+  "scene": "mopping kitchen"
+ },
+ {
+  "name": "bd_g5",
+  "q": "cleaning supplies",
+  "scene": "cleaning supplies"
+ },
+ {
+  "name": "bd_g6",
+  "q": "bathroom tiles",
+  "scene": "bathroom tiles"
+ },
+ {
+  "name": "bd_g7",
+  "q": "tile floor closeup",
+  "scene": "tile floor closeup"
+ },
+ {
+  "name": "bd_g8",
+  "q": "vacuum cleaner floor",
+  "scene": "vacuum cleaner floor"
+ },
+ {
+  "name": "bd_g9",
+  "q": "kitchen sink window",
+  "scene": "kitchen sink window"
+ },
+ {
+  "name": "bd_g10",
+  "q": "wiping kitchen counter",
+  "scene": "wiping kitchen counter"
+ },
+ {
+  "name": "bd_g11",
+  "q": "rubber gloves cleaning",
+  "scene": "rubber gloves cleaning"
+ },
+ {
+  "name": "bd_g12",
+  "q": "cleaning bathroom",
+  "scene": "cleaning bathroom"
+ },
+ {
+  "name": "bd_g13",
+  "q": "old house kitchen",
+  "scene": "old house kitchen"
+ },
+ {
+  "name": "bd_g14",
+  "q": "spray bottle cleaning",
+  "scene": "spray bottle cleaning"
+ },
+ {
+  "name": "bd_g15",
+  "q": "cozy kitchen morning",
+  "scene": "cozy kitchen morning"
+ },
+ {
+  "name": "bd_g16",
+  "q": "floor tiles pattern",
+  "scene": "floor tiles pattern"
+ },
+ {
+  "name": "bd_g17",
+  "q": "sponge bucket",
+  "scene": "sponge bucket"
+ },
+ {
+  "name": "bd_g18",
+  "q": "shower cleaning",
+  "scene": "shower cleaning"
+ },
+ {
+  "name": "bd_g19",
+  "q": "hardware store",
+  "scene": "hardware store"
+ },
+ {
+  "name": "bd_g20",
+  "q": "brush scrubbing",
+  "scene": "brush scrubbing"
+ },
+ {
+  "name": "bd_g21",
+  "q": "laundry room",
+  "scene": "laundry room"
+ },
+ {
+  "name": "bd_g22",
+  "q": "kitchen table coffee",
+  "scene": "kitchen table coffee"
+ },
+ {
+  "name": "bd_g23",
+  "q": "tiled kitchen",
+  "scene": "tiled kitchen"
+ },
+ {
+  "name": "bd_g24",
+  "q": "cleaning floor hands",
+  "scene": "cleaning floor hands"
+ },
+ {
+  "name": "bd_g25",
+  "q": "suburban house",
+  "scene": "suburban house"
+ },
+ {
+  "name": "bd_g26",
+  "q": "bucket and mop",
+  "scene": "bucket and mop"
+ },
+ {
+  "name": "bd_g27",
+  "q": "kitchen stove",
+  "scene": "kitchen stove"
+ },
+ {
+  "name": "bd_g28",
+  "q": "open window curtain",
+  "scene": "open window curtain"
+ },
+ {
+  "name": "bd_g29",
+  "q": "woman cleaning kitchen",
+  "scene": "woman cleaning kitchen"
+ },
+ {
+  "name": "bd_g30",
+  "q": "cleaning tiles",
+  "scene": "cleaning tiles"
+ },
+ {
+  "name": "bd_g31",
+  "q": "washing floor",
+  "scene": "washing floor"
+ },
+ {
+  "name": "bd_g32",
+  "q": "kitchen morning light",
+  "scene": "kitchen morning light"
+ },
+ {
+  "name": "bd_g33",
+  "q": "house cleaning",
+  "scene": "house cleaning"
+ },
+ {
+  "name": "bd_g34",
+  "q": "bathroom cleaning sponge",
+  "scene": "bathroom cleaning sponge"
+ },
+ {
+  "name": "bd_g35",
+  "q": "scrubbing bathtub",
+  "scene": "scrubbing bathtub"
+ },
+ {
+  "name": "bd_g36",
+  "q": "folding laundry",
+  "scene": "folding laundry"
+ },
+ {
+  "name": "bd_g37",
+  "q": "sweeping floor",
+  "scene": "sweeping floor"
+ },
+ {
+  "name": "bd_g38",
+  "q": "tidy kitchen",
+  "scene": "tidy kitchen"
+ },
+ {
+  "name": "bd_g39",
+  "q": "kitchen counter",
+  "scene": "kitchen counter"
+ },
+ {
+  "name": "bd_g40",
+  "q": "living room daylight",
+  "scene": "living room daylight"
+ },
+ {
+  "name": "bd_g41",
+  "q": "cleaning window",
+  "scene": "cleaning window"
+ },
+ {
+  "name": "bd_g42",
+  "q": "dish washing hands",
+  "scene": "dish washing hands"
+ },
+ {
+  "name": "bd_g43",
+  "q": "front porch house",
+  "scene": "front porch house"
+ },
+ {
+  "name": "bd_g44",
+  "q": "cleaning spray wipe",
+  "scene": "cleaning spray wipe"
+ },
+ {
+  "name": "bd_g45",
+  "q": "mop bucket floor",
+  "scene": "mop bucket floor"
+ },
+ {
+  "name": "bd_g46",
+  "q": "kitchen cabinets",
+  "scene": "kitchen cabinets"
+ },
+ {
+  "name": "bd_g47",
+  "q": "old house interior",
+  "scene": "old house interior"
+ },
+ {
+  "name": "bd_g48",
+  "q": "bathroom sink",
+  "scene": "bathroom sink"
+ },
+ {
+  "name": "bd_g49",
+  "q": "garden house",
+  "scene": "garden house"
+ },
+ {
+  "name": "bd_g50",
+  "q": "cleaning gloves sink",
+  "scene": "cleaning gloves sink"
+ },
+ {
+  "name": "bd_g51",
+  "q": "bucket water",
+  "scene": "bucket water"
+ },
+ {
+  "name": "bd_g52",
+  "q": "hallway floor",
+  "scene": "hallway floor"
+ },
+ {
+  "name": "bd_g53",
+  "q": "kitchen dining table",
+  "scene": "kitchen dining table"
+ },
+ {
+  "name": "bd_g54",
+  "q": "laundry basket",
+  "scene": "laundry basket"
+ }
 ]

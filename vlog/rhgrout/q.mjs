@@ -13,3 +13,5 @@ export const Q = {
   b_garage: "garage tools wall", b_contractor: "contractor measuring floor", b_timer: "kitchen timer", b_mopbucket: "mop bucket floor",
   b_kneepad: "kneeling scrubbing floor", b_newfloor: "new tile floor", b_dishcloth: "kitchen sink dish towel", b_tinytile: "hexagon tile floor",
 };
+Object.assign(Q, { b_wirebrush2: "wire brush", b_screwdriver: "screwdriver", b_caulkline: "bathtub caulk", b_nylonbrush2: "scrub brush",
+  b_pickup: "pickup truck driveway", b_scratched: "ceramic tile floor", b_greasegrout: "kitchen stove", b_onerow: "tile floor" });
