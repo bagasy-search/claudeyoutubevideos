@@ -1,23 +1,23 @@
 [
  {
   "name": "c12_1",
-  "q": "blanching green beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"for the first few minutes, it actually gets brighter green. You've seen that. That's the air in the bean escaping, so you can see the color better. But if you keep cooking it, especially in a covered pot of water,\" — it must show: blanching green beans."
+  "q": "green beans cooking",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"for the first few minutes, it actually gets brighter green. You've seen that. That's the air in the bean escaping, so you can see the color better. But if you keep cooking it, especially in a covered pot of water,\" — it must show: green beans cooking."
  },
  {
   "name": "c12_2",
-  "q": "green beans pot",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"for the first few minutes, it actually gets brighter green. You've seen that. That's the air in the bean escaping, so you can see the color better. But if you keep cooking it, especially in a covered pot of water,\" — it must show: green beans pot."
+  "q": "string beans pan",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"for the first few minutes, it actually gets brighter green. You've seen that. That's the air in the bean escaping, so you can see the color better. But if you keep cooking it, especially in a covered pot of water,\" — it must show: string beans pan."
  },
  {
   "name": "c13_1",
-  "q": "boiling green beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the acids that come out of the beans go into the water and attack the chlorophyll. After about seven or eight minutes, the green fades to that dull army-olive color. And it never comes back.\" — it must show: boiling green beans."
+  "q": "boiling vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the acids that come out of the beans go into the water and attack the chlorophyll. After about seven or eight minutes, the green fades to that dull army-olive color. And it never comes back.\" — it must show: boiling vegetables."
  },
  {
   "name": "c13_2",
-  "q": "boiled vegetables",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the acids that come out of the beans go into the water and attack the chlorophyll. After about seven or eight minutes, the green fades to that dull army-olive color. And it never comes back.\" — it must show: boiled vegetables."
+  "q": "pot of vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the acids that come out of the beans go into the water and attack the chlorophyll. After about seven or eight minutes, the green fades to that dull army-olive color. And it never comes back.\" — it must show: pot of vegetables."
  },
  {
   "name": "c14_1",
@@ -31,33 +31,33 @@
  },
  {
   "name": "c18_1",
-  "q": "trimming green beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"A fast way: line up a handful with the ends even on the cutting board, and cut them all at once with one slice of the knife.\" — it must show: trimming green beans."
- },
- {
-  "name": "c18_2",
   "q": "cutting green beans",
   "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"A fast way: line up a handful with the ends even on the cutting board, and cut them all at once with one slice of the knife.\" — it must show: cutting green beans."
  },
  {
+  "name": "c18_2",
+  "q": "chopping beans",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"A fast way: line up a handful with the ends even on the cutting board, and cut them all at once with one slice of the knife.\" — it must show: chopping beans."
+ },
+ {
   "name": "c19_1",
-  "q": "rinsing green beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Then turn them around and do the other end, if you want. Rinse them in a colander and shake them dry.\" — it must show: rinsing green beans."
+  "q": "colander vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Then turn them around and do the other end, if you want. Rinse them in a colander and shake them dry.\" — it must show: colander vegetables."
  },
  {
   "name": "c19_2",
-  "q": "washing beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Then turn them around and do the other end, if you want. Rinse them in a colander and shake them dry.\" — it must show: washing beans."
+  "q": "washing vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Then turn them around and do the other end, if you want. Rinse them in a colander and shake them dry.\" — it must show: washing vegetables."
  },
  {
   "name": "c30_1",
-  "q": "pole beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"onions, and green beans. Pole beans, climbing up on a fence of cedar posts and baling wire. In July, those beans came in faster than we could pick them.\" — it must show: pole beans."
+  "q": "bean vines",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"onions, and green beans. Pole beans, climbing up on a fence of cedar posts and baling wire. In July, those beans came in faster than we could pick them.\" — it must show: bean vines."
  },
  {
   "name": "c30_2",
-  "q": "bean plants",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"onions, and green beans. Pole beans, climbing up on a fence of cedar posts and baling wire. In July, those beans came in faster than we could pick them.\" — it must show: bean plants."
+  "q": "climbing beans",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"onions, and green beans. Pole beans, climbing up on a fence of cedar posts and baling wire. In July, those beans came in faster than we could pick them.\" — it must show: climbing beans."
  },
  {
   "name": "c31_1",
@@ -71,43 +71,43 @@
  },
  {
   "name": "c33_1",
-  "q": "canning jars",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Now, about that canning. I want to say one thing, because it matters. Green beans are what they call a low-acid food. If you put them up in jars at home, they have to go in a pressure canner.\" — it must show: canning jars."
+  "q": "preserved vegetables jars",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Now, about that canning. I want to say one thing, because it matters. Green beans are what they call a low-acid food. If you put them up in jars at home, they have to go in a pressure canner.\" — it must show: preserved vegetables jars."
  },
  {
   "name": "c33_2",
-  "q": "mason jars",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Now, about that canning. I want to say one thing, because it matters. Green beans are what they call a low-acid food. If you put them up in jars at home, they have to go in a pressure canner.\" — it must show: mason jars."
+  "q": "jars shelf",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Now, about that canning. I want to say one thing, because it matters. Green beans are what they call a low-acid food. If you put them up in jars at home, they have to go in a pressure canner.\" — it must show: jars shelf."
  },
  {
   "name": "c34_1",
-  "q": "pressure canner",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Not a pot of boiling water like you'd use for jam or pickles. A boiling-water bath doesn't get hot enough to make green beans safe on a shelf. Don Ernesto had an old pressure canner with a gauge on top,\" — it must show: pressure canner."
- },
- {
-  "name": "c34_2",
   "q": "home canning",
   "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Not a pot of boiling water like you'd use for jam or pickles. A boiling-water bath doesn't get hot enough to make green beans safe on a shelf. Don Ernesto had an old pressure canner with a gauge on top,\" — it must show: home canning."
  },
  {
+  "name": "c34_2",
+  "q": "canning jars",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Not a pot of boiling water like you'd use for jam or pickles. A boiling-water bath doesn't get hot enough to make green beans safe on a shelf. Don Ernesto had an old pressure canner with a gauge on top,\" — it must show: canning jars."
+ },
+ {
   "name": "c46_1",
-  "q": "church potluck",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"a roaster pan full, cooked this way in three batches on my stove at home and carried over in the truck under a towel. The first year, a lady from town brought green beans too,\" — it must show: church potluck."
+  "q": "potluck dinner",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"a roaster pan full, cooked this way in three batches on my stove at home and carried over in the truck under a towel. The first year, a lady from town brought green beans too,\" — it must show: potluck dinner."
  },
  {
   "name": "c46_2",
-  "q": "community dinner",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"a roaster pan full, cooked this way in three batches on my stove at home and carried over in the truck under a towel. The first year, a lady from town brought green beans too,\" — it must show: community dinner."
+  "q": "church dinner",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"a roaster pan full, cooked this way in three batches on my stove at home and carried over in the truck under a towel. The first year, a lady from town brought green beans too,\" — it must show: church dinner."
  },
  {
   "name": "c47_1",
-  "q": "green bean casserole",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the kind with the canned soup and the fried onions on top. Good woman. Good cook. And at the end of the night, her pan was half full, and mine was scraped clean. She came over and asked me what I put in them. I told her,\" — it must show: green bean casserole."
+  "q": "baked casserole",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the kind with the canned soup and the fried onions on top. Good woman. Good cook. And at the end of the night, her pan was half full, and mine was scraped clean. She came over and asked me what I put in them. I told her,\" — it must show: baked casserole."
  },
  {
   "name": "c47_2",
-  "q": "casserole dish",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the kind with the canned soup and the fried onions on top. Good woman. Good cook. And at the end of the night, her pan was half full, and mine was scraped clean. She came over and asked me what I put in them. I told her,\" — it must show: casserole dish."
+  "q": "casserole",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"the kind with the canned soup and the fried onions on top. Good woman. Good cook. And at the end of the night, her pan was half full, and mine was scraped clean. She came over and asked me what I put in them. I told her,\" — it must show: casserole."
  },
  {
   "name": "c56_1",
@@ -131,13 +131,13 @@
  },
  {
   "name": "c59_1",
-  "q": "frozen green beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Frozen green beans. They're fine, and they're good to have in the freezer. Frozen beans have already been blanched, so they're partly cooked. Skip the water and the lid. Straight into the bacon fat,\" — it must show: frozen green beans."
+  "q": "frozen vegetables bag",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Frozen green beans. They're fine, and they're good to have in the freezer. Frozen beans have already been blanched, so they're partly cooked. Skip the water and the lid. Straight into the bacon fat,\" — it must show: frozen vegetables bag."
  },
  {
   "name": "c59_2",
-  "q": "frozen vegetables",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Frozen green beans. They're fine, and they're good to have in the freezer. Frozen beans have already been blanched, so they're partly cooked. Skip the water and the lid. Straight into the bacon fat,\" — it must show: frozen vegetables."
+  "q": "freezer vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Frozen green beans. They're fine, and they're good to have in the freezer. Frozen beans have already been blanched, so they're partly cooked. Skip the water and the lid. Straight into the bacon fat,\" — it must show: freezer vegetables."
  },
  {
   "name": "c61_1",
@@ -151,23 +151,23 @@
  },
  {
   "name": "c62_1",
-  "q": "pickled green beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"And here's what we did with the extra beans that we didn't cook. Fridge pickles. You don't need a canner for these, because they live in the fridge. Trim a pound of green beans so they fit standing up in a quart jar.\" — it must show: pickled green beans."
+  "q": "pickles",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"And here's what we did with the extra beans that we didn't cook. Fridge pickles. You don't need a canner for these, because they live in the fridge. Trim a pound of green beans so they fit standing up in a quart jar.\" — it must show: pickles."
  },
  {
   "name": "c62_2",
-  "q": "pickles jar",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"And here's what we did with the extra beans that we didn't cook. Fridge pickles. You don't need a canner for these, because they live in the fridge. Trim a pound of green beans so they fit standing up in a quart jar.\" — it must show: pickles jar."
+  "q": "pickled vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"And here's what we did with the extra beans that we didn't cook. Fridge pickles. You don't need a canner for these, because they live in the fridge. Trim a pound of green beans so they fit standing up in a quart jar.\" — it must show: pickled vegetables."
  },
  {
   "name": "c63_1",
-  "q": "pickling jar",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Pack them in with two cloves of garlic, a dried red chile, and a teaspoon of dill seed or a few sprigs of fresh dill. In a pot, bring one cup of white vinegar, one cup of water,\" — it must show: pickling jar."
+  "q": "pouring vinegar",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Pack them in with two cloves of garlic, a dried red chile, and a teaspoon of dill seed or a few sprigs of fresh dill. In a pot, bring one cup of white vinegar, one cup of water,\" — it must show: pouring vinegar."
  },
  {
   "name": "c63_2",
-  "q": "vinegar brine",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Pack them in with two cloves of garlic, a dried red chile, and a teaspoon of dill seed or a few sprigs of fresh dill. In a pot, bring one cup of white vinegar, one cup of water,\" — it must show: vinegar brine."
+  "q": "pickling",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Pack them in with two cloves of garlic, a dried red chile, and a teaspoon of dill seed or a few sprigs of fresh dill. In a pot, bring one cup of white vinegar, one cup of water,\" — it must show: pickling."
  },
  {
   "name": "c67_1",
@@ -231,8 +231,8 @@
  },
  {
   "name": "c85_1",
-  "q": "yellow wax beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"The skinny ones cook faster. Take one minute off the lid time. The flat Romano beans are thicker. Add a minute. The yellow wax beans cook just like the green ones, and if you mix the green and the yellow in one pan,\" — it must show: yellow wax beans."
+  "q": "yellow beans",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"The skinny ones cook faster. Take one minute off the lid time. The flat Romano beans are thicker. Add a minute. The yellow wax beans cook just like the green ones, and if you mix the green and the yellow in one pan,\" — it must show: yellow beans."
  },
  {
   "name": "c85_2",
@@ -291,23 +291,23 @@
  },
  {
   "name": "c101_1",
-  "q": "snapping green beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"he'd sit on an upside-down crate by the back door, and snap them, one after another, all afternoon, and talk to whoever came by. The men would sit with him, and before they knew it, they were snapping beans too. Grown me\" — it must show: snapping green beans."
- },
- {
-  "name": "c101_2",
   "q": "green beans bowl",
   "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"he'd sit on an upside-down crate by the back door, and snap them, one after another, all afternoon, and talk to whoever came by. The men would sit with him, and before they knew it, they were snapping beans too. Grown me\" — it must show: green beans bowl."
  },
  {
+  "name": "c101_2",
+  "q": "snapping beans",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"he'd sit on an upside-down crate by the back door, and snap them, one after another, all afternoon, and talk to whoever came by. The men would sit with him, and before they knew it, they were snapping beans too. Grown me\" — it must show: snapping beans."
+ },
+ {
   "name": "c104_1",
-  "q": "green beans closeup",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Most of the beans in the store today don't have it anymore. But if you get beans from a garden, or an old variety, snap the end and pull down along the seam.\" — it must show: green beans closeup."
+  "q": "green beans",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Most of the beans in the store today don't have it anymore. But if you get beans from a garden, or an old variety, snap the end and pull down along the seam.\" — it must show: green beans."
  },
  {
   "name": "c104_2",
-  "q": "string beans",
-  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Most of the beans in the store today don't have it anymore. But if you get beans from a garden, or an old variety, snap the end and pull down along the seam.\" — it must show: string beans."
+  "q": "fresh beans",
+  "scene": "Real documentary footage for a ranch cook's video about green beans, while he says: \"Most of the beans in the store today don't have it anymore. But if you get beans from a garden, or an old variety, snap the end and pull down along the seam.\" — it must show: fresh beans."
  },
  {
   "name": "c106_1",

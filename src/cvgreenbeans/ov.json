@@ -1,0 +1,181 @@
+[
+ {
+  "c": "CvPromise",
+  "from": 213,
+  "dur": 210,
+  "props": {
+   "title": "Bright green beans in 4 minutes",
+   "lines": [
+    "A quarter cup of water + a lid",
+    "Never gray, never soggy",
+    "Better than anything in a can"
+   ],
+   "bed": "vid/cvgreenbeans/bed_0.mp4#214"
+  },
+  "t": 7.11
+ },
+ {
+  "c": "ClDoDont",
+  "from": 677,
+  "dur": 150,
+  "props": {
+   "yes": {
+    "label": "Skillet, bacon fat, 4 min lid"
+   },
+   "no": {
+    "label": "Boiled 30 minutes"
+   },
+   "bed": "vid/cvgreenbeans/bed_2.mp4#154"
+  },
+  "t": 22.58
+ },
+ {
+  "c": "CvOldPhoto",
+  "from": 1500,
+  "dur": 225,
+  "props": {
+   "img": "img/cvgreenbeans/joven.jpg",
+   "caption": "Summer garden, 1989",
+   "date": "'89 08 11",
+   "stamp": "40 years · 14 men",
+   "bed": "vid/cvgreenbeans/bed_1.mp4#229"
+  },
+  "t": 49.99
+ },
+ {
+  "c": "ClCheck",
+  "from": 3794,
+  "dur": 300,
+  "props": {
+   "title": "WHAT YOU NEED",
+   "items": [
+    "2 lb fresh green beans",
+    "5 strips bacon, chopped",
+    "½ onion, sliced",
+    "1 Roma tomato, chopped",
+    "2 cloves garlic, sliced",
+    "¼ cup water · salt at the end"
+   ],
+   "bed": "vid/cvgreenbeans/bed_3.mp4#304"
+  },
+  "t": 126.47
+ },
+ {
+  "c": "ClChip",
+  "from": 4828,
+  "dur": 135,
+  "props": {
+   "text": "Bacon · medium · 6-7 min",
+   "corner": "tl"
+  },
+  "t": 160.94
+ },
+ {
+  "c": "ClChip",
+  "from": 5589,
+  "dur": 135,
+  "props": {
+   "text": "¼ cup water · it hisses",
+   "corner": "tl"
+  },
+  "t": 186.31
+ },
+ {
+  "c": "ClTimer30",
+  "from": 5751,
+  "dur": 135,
+  "props": {
+   "minutes": 4,
+   "text": "4 minutes",
+   "label": "Lid on · steam, not boil",
+   "bed": "vid/cvgreenbeans/bed_6.mp4#139"
+  },
+  "t": 191.71
+ },
+ {
+  "c": "ClChip",
+  "from": 7733,
+  "dur": 150,
+  "props": {
+   "text": "Canning green beans = pressure canner only",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 257.76
+ },
+ {
+  "c": "ClChip",
+  "from": 8486,
+  "dur": 135,
+  "props": {
+   "text": "Lid OFF · tomato + garlic now",
+   "corner": "tl"
+  },
+  "t": 282.88
+ },
+ {
+  "c": "ClReceipt",
+  "from": 17661,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "2 lb green beans",
+     "$5.00"
+    ],
+    [
+     "5 strips bacon",
+     "$2.00"
+    ],
+    [
+     "Onion, tomato, garlic, salt",
+     "$1.30"
+    ]
+   ],
+   "total": [
+    "Per plate (÷6)",
+    "$1.40"
+   ],
+   "bed": "vid/cvgreenbeans/bed_10.mp4#424"
+  },
+  "t": 588.68
+ },
+ {
+  "c": "ClChip",
+  "from": 22992,
+  "dur": 135,
+  "props": {
+   "text": "Salt at the END · taste first",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 766.4
+ },
+ {
+  "c": "ClBookPage",
+  "from": 28931,
+  "dur": 210,
+  "props": {
+   "page": "img/cvgreenbeans/page48.jpg",
+   "pageNo": 48,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 48",
+   "bed": "vid/cvgreenbeans/bed_11.mp4#214"
+  },
+  "t": 964.37
+ },
+ {
+  "c": "ClQRCard",
+  "from": 29507,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvgreenbeans/qr.png",
+   "cover": "img/cvgreenbeans/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvgreenbeans/bed_12.mp4#184"
+  },
+  "t": 983.57
+ }
+]

@@ -118,19 +118,19 @@ sc("S49", "A3", f"stands at the long plank table with {BOOK} open in front of hi
  "c120": ["points below the camera, then at the camera", "his finger pointing at the camera"]})
 sc("S50", "A1", "stands at the black range beside a chunk of beef chuck on butcher paper.", {
  "c121": ["counts on his fingers", "fingers counting"], "c122": ["taps the butcher paper and waves goodbye", "waving, smiling"]})
-STOCK = {"c12": "blanching green beans", "c13": "boiling green beans", "c14": "pot boiling water", "c18": "trimming green beans", "c19": "rinsing green beans",
- "c30": "pole beans", "c31": "picking green beans", "c33": "canning jars", "c34": "pressure canner", "c46": "church potluck", "c47": "green bean casserole",
- "c56": "fresh green beans", "c57": "green beans market", "c59": "frozen green beans", "c61": "canned green beans", "c62": "pickled green beans",
- "c63": "pickling jar", "c67": "squeezing lime", "c69": "chopping bacon", "c73": "breakfast hash", "c78": "campfire skillet", "c79": "cooking over fire",
- "c84": "green beans variety", "c85": "yellow wax beans", "c87": "thanksgiving dinner", "c88": "thanksgiving table", "c95": "black pepper grinder",
- "c99": "vegetable garden", "c100": "watering garden", "c101": "snapping green beans", "c104": "green beans closeup", "c106": "blanching vegetables",
+STOCK = {"c12": "green beans cooking", "c13": "boiling vegetables", "c14": "pot boiling water", "c18": "cutting green beans", "c19": "colander vegetables",
+ "c30": "bean vines", "c31": "picking green beans", "c33": "preserved vegetables jars", "c34": "home canning", "c46": "potluck dinner", "c47": "baked casserole",
+ "c56": "fresh green beans", "c57": "green beans market", "c59": "frozen vegetables bag", "c61": "canned green beans", "c62": "pickles",
+ "c63": "pouring vinegar", "c67": "squeezing lime", "c69": "chopping bacon", "c73": "breakfast hash", "c78": "campfire skillet", "c79": "cooking over fire",
+ "c84": "green beans variety", "c85": "yellow beans", "c87": "thanksgiving dinner", "c88": "thanksgiving table", "c95": "black pepper grinder",
+ "c99": "vegetable garden", "c100": "watering garden", "c101": "green beans bowl", "c104": "green beans", "c106": "blanching vegetables",
  "c107": "ice water bowl", "c112": "kids eating dinner"}
-STOCK2 = {"c12": "green beans pot", "c13": "boiled vegetables", "c14": "boiling water", "c18": "cutting green beans", "c19": "washing beans",
- "c30": "bean plants", "c31": "harvesting beans", "c33": "mason jars", "c34": "home canning", "c46": "community dinner", "c47": "casserole dish",
- "c56": "green beans", "c57": "vegetable market", "c59": "frozen vegetables", "c61": "canned vegetables", "c62": "pickles jar",
- "c63": "vinegar brine", "c67": "lime juice", "c69": "raw bacon", "c73": "potato hash", "c78": "cast iron fire", "c79": "camp cooking",
+STOCK2 = {"c12": "string beans pan", "c13": "pot of vegetables", "c14": "boiling water", "c18": "chopping beans", "c19": "washing vegetables",
+ "c30": "climbing beans", "c31": "harvesting beans", "c33": "jars shelf", "c34": "canning jars", "c46": "church dinner", "c47": "casserole",
+ "c56": "green beans", "c57": "vegetable market", "c59": "freezer vegetables", "c61": "canned vegetables", "c62": "pickled vegetables",
+ "c63": "pickling", "c67": "lime juice", "c69": "raw bacon", "c73": "potato hash", "c78": "cast iron fire", "c79": "camp cooking",
  "c84": "string beans", "c85": "wax beans", "c87": "family dinner", "c88": "holiday table", "c95": "pepper mill",
- "c99": "garden vegetables", "c100": "watering can", "c101": "green beans bowl", "c104": "string beans", "c106": "ice bath vegetables",
+ "c99": "garden vegetables", "c100": "watering can", "c101": "snapping beans", "c104": "fresh beans", "c106": "ice bath vegetables",
  "c107": "ice water", "c112": "family dinner kids"}
 js = "export const ESC = {\n" + "\n".join(f'  {k}: {{ set: "{v["set"]}",{" rusty: true," if v["rusty"] else ""} base: {json.dumps(v["base"])},\n    clips: {{\n' + ",\n".join(f"      {c}: {json.dumps(a)}" for c, a in v["clips"].items()) + " } }," for k, v in E.items()) + "\n};\n"
 js += "export const STOCK = " + json.dumps(STOCK, indent=1) + ";\nexport const STOCK2 = " + json.dumps(STOCK2, indent=1) + ";\nexport const DET = {};\nexport const TOPIC = \"green beans\";\n"

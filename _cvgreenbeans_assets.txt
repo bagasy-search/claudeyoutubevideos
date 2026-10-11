@@ -1,0 +1,5 @@
+vid/cvgreenbeans
+img/cvgreenbeans/cover.jpg
+img/cvgreenbeans/joven.jpg
+img/cvgreenbeans/page48.jpg
+img/cvgreenbeans/qr.png
