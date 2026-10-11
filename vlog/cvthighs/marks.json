@@ -1,0 +1,267 @@
+{
+ "S00": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "muslo crocante levantado con el tenedor, la piel cruje"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio junto a la sartén de hierro fría"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio descuelga la sartén de doce pulgadas"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "muslos de pollo crudos con piel y hueso"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno de la cuadrilla"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio niega con la cabeza junto a la pileta"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio seca los muslos con papel, aprieta"
+ },
+ "S07": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "sal y pimienta sobre los muslos"
+ },
+ "S08": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio recorta piel colgante de un muslo"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "muslos con la piel hacia abajo en la sartén fría"
+ },
+ "S10": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio enciende el fuego a medio"
+ },
+ "S11": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "muslos empezando a chisporrotear, grasa derritiéndose"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio con el reloj, sin tocar la sartén"
+ },
+ "S13": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "gallinas en el corral, Claudio por la ventana"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio levanta un muslo con pinzas, piel dorada profunda"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "muslos dados vuelta, piel arriba"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio inclina la sartén y saca la grasa"
+ },
+ "S17": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "cebolla en rodajas alrededor de los muslos"
+ },
+ "S18": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "frasco de salsa de chile rojo"
+ },
+ "S19": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chiles rojos secos tostándose, licuadora con salsa roja"
+ },
+ "S20": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "salsa roja vertida alrededor de los muslos, no encima"
+ },
+ "S21": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "salsa hirviendo suave alrededor de los muslos"
+ },
+ "S22": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "termómetro en un muslo, junto al hueso"
+ },
+ "S23": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cilantro picado sobre los muslos en salsa roja"
+ },
+ "S24": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio corta un muslo, piel crocante, carne jugosa, salsa roja"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty agarra un muslo con la mano"
+ },
+ "S26": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty muerde, la piel cruje"
+ },
+ "S27": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "camioneta vieja frente al galpón, atardecer"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "plato con muslos, arroz, frijoles y tortillas"
+ },
+ "S29": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia las pinzas"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S31": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en la carnicería, bandeja de muslos"
+ },
+ "S32": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "salsa verde junto a los muslos"
+ },
+ "S33": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "muslos sobrantes en recipiente"
+ },
+ "S34": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "muslo recalentándose con la piel hacia abajo en sartén seca"
+ },
+ "S35": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "pollo desmenuzado en salsa roja dentro de tortillas"
+ },
+ "S36": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S37": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "dos sartenes con muslos, y una bandeja de horno"
+ },
+ "S38": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "sartén chica de diez pulgadas con cuatro muslos"
+ },
+ "S39": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "sartén de hierro sobre la parrilla del fogón, Claudio con sombrero"
+ },
+ "S40": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga la sartén"
+ },
+ "S41": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "cuartos traseros de pollo enteros, cuchillo separando muslo y pata"
+ },
+ "S42": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "pechuga de pollo seca al lado de un muslo jugoso"
+ },
+ "S43": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "frasco de grasa de pollo dorada, papas friéndose en ella"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con un muslo deshuesado en la mano"
+ },
+ "S45": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana, cuenta"
+ },
+ "S46": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "paquete de muslos con la fecha, Claudio lo huele"
+ },
+ "S47": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "dos tablas de cortar, una para el pollo crudo, una para la verdura"
+ },
+ "S48": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chorrito de agua en la sartén para levantar el fondo dorado"
+ },
+ "S49": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "muslos crocantes con limón, sin salsa"
+ },
+ "S50": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S51": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 31"
+ },
+ "S52": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, un puñado de chauchas en la mano"
+ }
+}

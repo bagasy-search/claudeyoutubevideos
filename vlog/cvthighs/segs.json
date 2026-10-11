@@ -1,0 +1,1272 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 1.54,
+  "id": "c01",
+  "d": 1.54,
+  "T": 2,
+  "text": "Stop frying them in oil.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S01",
+  "s": 1.54,
+  "e": 6.56,
+  "id": "c02",
+  "d": 5.02,
+  "T": 6,
+  "text": "Look at that skin. It cracks like glass. And there wasn't one drop of oil in that pan.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S01",
+  "s": 6.56,
+  "e": 11.0,
+  "id": "c03",
+  "d": 4.44,
+  "T": 5,
+  "text": "Last time I showed you the cabbage, fried in bacon fat, no lid, no water.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S01",
+  "s": 11.0,
+  "e": 16.42,
+  "id": "c04",
+  "d": 5.42,
+  "T": 6,
+  "text": "Today, chicken thighs. The cheapest, best piece of the chicken. And the one most people ruin.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S01",
+  "s": 16.42,
+  "e": 22.24,
+  "id": "c05",
+  "d": 5.82,
+  "T": 6,
+  "text": "Here's what usually happens. You heat up a pan with a good pour of oil, you put the thighs in skin side down,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S01",
+  "s": 22.24,
+  "e": 26.44,
+  "id": "c06",
+  "d": 4.2,
+  "T": 5,
+  "text": "and the oil spits all over the stove and all over you. The skin sticks,",
+  "pad": 0.8
+ },
+ {
+  "sc": "S01",
+  "s": 26.44,
+  "e": 30.617,
+  "id": "c07",
+  "d": 4.177,
+  "T": 5,
+  "text": "tears off when you try to flip it, and what's left is pale and rubbery and greasy.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S01",
+  "s": 30.617,
+  "e": 36.697,
+  "id": "c08",
+  "d": 6.08,
+  "T": 7,
+  "text": "Or it burns on the outside while the meat next to the bone is still pink. I'm going to show you how we did them on the ranch.",
+  "pad": 0.92
+ },
+ {
+  "sc": "S01",
+  "s": 36.697,
+  "e": 45.437,
+  "id": "c09",
+  "d": 8.74,
+  "T": 9,
+  "text": "Skin side down, in a cold skillet. No oil at all. You turn on the heat and you walk away for twenty minutes. And the chicken fries itself, in its own fat.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S01",
+  "s": 45.437,
+  "e": 49.647,
+  "id": "c10",
+  "d": 4.21,
+  "T": 5,
+  "text": "Then we finish them in a bath of red chile, poured around the chicken, not over it,",
+  "pad": 0.79
+ },
+ {
+  "sc": "S01",
+  "s": 49.647,
+  "e": 60.157,
+  "id": "c11",
+  "d": 10.51,
+  "T": 11,
+  "text": "so that skin stays crisp to the last bite. I'm Claudio. I cooked for a cattle crew for forty years. And on a ranch, chicken was the everyday meat. Beef was for selling. Chicken was for eating.",
+  "pad": 0.49
+ },
+ {
+  "sc": "S02",
+  "s": 60.157,
+  "e": 71.545,
+  "id": "c12",
+  "d": 11.388,
+  "T": 12,
+  "text": "The skillet. Twelve inches, cast iron, older than my truck. A heavy pan is important for this. Cast iron or heavy stainless steel. A thin nonstick pan will work, but the skin won't get as crisp.",
+  "pad": 0.61
+ },
+ {
+  "sc": "S03",
+  "s": 71.545,
+  "e": 81.645,
+  "id": "c13",
+  "d": 10.1,
+  "T": 11,
+  "text": "Let's talk about why oil is the wrong answer. A chicken thigh with the skin on is already carrying plenty of fat. It's right under the skin, a layer of it. If you can melt that fat out,",
+  "pad": 0.9
+ },
+ {
+  "sc": "S03",
+  "s": 81.645,
+  "e": 88.371,
+  "id": "c14",
+  "d": 6.726,
+  "T": 7,
+  "text": "slowly, it collects in the pan and fries the skin from underneath. That's how you get skin that's thin and crackling, like a potato chip.",
+  "pad": 0.27
+ },
+ {
+  "sc": "S03",
+  "s": 88.371,
+  "e": 98.431,
+  "id": "c15",
+  "d": 10.06,
+  "T": 11,
+  "text": "But when you put the thigh into a hot pan full of oil, the outside of the skin seizes up and browns in a minute. The fat underneath doesn't have time to melt out. So it stays trapped under a brown skin,",
+  "pad": 0.94
+ },
+ {
+  "sc": "S03",
+  "s": 98.431,
+  "e": 108.831,
+  "id": "c16",
+  "d": 10.4,
+  "T": 11,
+  "text": "and you get skin that looks golden but it's flabby and chewy and greasy underneath. Then you've got extra oil in the pan on top of all the chicken fat. That's the grease that spits all over your stove.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S03",
+  "s": 108.831,
+  "e": 120.28,
+  "id": "c17",
+  "d": 11.449,
+  "T": 12,
+  "text": "Starting in a cold pan does the opposite. As the pan slowly heats up, the fat under the skin melts out a little at a time. The skin gets thinner and thinner as it renders. And then, once all that fat's in the pan,",
+  "pad": 0.55
+ },
+ {
+  "sc": "S03",
+  "s": 120.28,
+  "e": 126.06,
+  "id": "c18",
+  "d": 5.78,
+  "T": 6,
+  "text": "the skin fries in it and turns deep gold and crisp. It just takes patience. Twenty minutes of it.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S04",
+  "s": 126.06,
+  "e": 132.74,
+  "id": "c19",
+  "d": 6.68,
+  "T": 7,
+  "text": "Don Ernesto said, \"A chicken brings its own lard. You just have to ask it nicely.\" I didn't understand it until I did this.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S05",
+  "s": 132.74,
+  "e": 139.42,
+  "id": "c20",
+  "d": 6.68,
+  "T": 7,
+  "text": "And one thing before we start. Don't rinse the chicken in the sink. My mother did it, and her mother did it, and I did it for years.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S05",
+  "s": 139.42,
+  "e": 150.452,
+  "id": "c21",
+  "d": 11.032,
+  "T": 12,
+  "text": "The USDA says don't, and they're right. Rinsing doesn't wash anything off that the cooking won't kill, and it splashes raw chicken juice all over your sink and your counter, a couple of feet in every direction.",
+  "pad": 0.97
+ },
+ {
+  "sc": "S05",
+  "s": 150.452,
+  "e": 154.972,
+  "id": "c22",
+  "d": 4.52,
+  "T": 5,
+  "text": "Just pat it dry with paper towels, throw the towels away, and wash your hands.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S06",
+  "s": 154.972,
+  "e": 163.552,
+  "id": "c23",
+  "d": 8.58,
+  "T": 9,
+  "text": "Step one. Eight bone-in, skin-on chicken thighs. Pat them very dry with paper towels. The skin especially. Both sides, then again.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S06",
+  "s": 163.552,
+  "e": 168.212,
+  "id": "c24",
+  "d": 4.66,
+  "T": 5,
+  "text": "Water is the enemy of crisp skin. If the skin is wet, it steams before it can fry.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S07",
+  "s": 168.212,
+  "e": 178.798,
+  "id": "c25",
+  "d": 10.586,
+  "T": 11,
+  "text": "Two teaspoons of salt and a teaspoon of pepper, both sides. If you have time, do it a few hours ahead, or the night before, and leave them uncovered on a plate in the fridge. Just like the steak.",
+  "pad": 0.41
+ },
+ {
+  "sc": "S07",
+  "s": 178.798,
+  "e": 185.018,
+  "id": "c26",
+  "d": 6.22,
+  "T": 7,
+  "text": "The salt seasons the meat deep, and the cold air dries out the skin. The drier the skin, the crisper it gets.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S08",
+  "s": 185.018,
+  "e": 189.978,
+  "id": "c27",
+  "d": 4.96,
+  "T": 6,
+  "text": "And look at the edges. If there's a big flap of skin hanging off, or a big lump of fat,",
+  "pad": 1.04
+ },
+ {
+  "sc": "S08",
+  "s": 189.978,
+  "e": 196.918,
+  "id": "c28",
+  "d": 6.94,
+  "T": 8,
+  "text": "trim it with scissors so the skin lies flat on the meat. Skin that hangs over the edge just curls up and doesn't touch the pan.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S09",
+  "s": 196.918,
+  "e": 202.598,
+  "id": "c29",
+  "d": 5.68,
+  "T": 6,
+  "text": "Step two. Lay the thighs skin side down in the cold skillet. A cold one. Not preheated.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S09",
+  "s": 202.598,
+  "e": 210.295,
+  "id": "c30",
+  "d": 7.697,
+  "T": 8,
+  "text": "Not a drop of oil. Fit them in snug. They'll shrink as they cook, so they can be close together. Eight thighs fit in a twelve-inch skillet.",
+  "pad": 0.3
+ },
+ {
+  "sc": "S10",
+  "s": 210.295,
+  "e": 213.355,
+  "id": "c31",
+  "d": 3.06,
+  "T": 4,
+  "text": "Now turn the heat to medium. Medium. Not high.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S11",
+  "s": 213.355,
+  "e": 217.295,
+  "id": "c32",
+  "d": 3.94,
+  "T": 5,
+  "text": "Step three. And now you leave them alone. Eighteen to twenty-two minutes.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S12",
+  "s": 217.295,
+  "e": 228.215,
+  "id": "c33",
+  "d": 10.92,
+  "T": 12,
+  "text": "In about five minutes, you'll hear them start to sizzle. In ten, there'll be a pool of fat around them. Don't touch them. Don't move them. Don't lift up the corner to look. The skin will stick to the pan at first.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S12",
+  "s": 228.215,
+  "e": 237.867,
+  "id": "c34",
+  "d": 9.652,
+  "T": 10,
+  "text": "That's normal. As it renders and crisps, it lets go of the pan all on its own. If the sizzle gets loud and angry, and it smells like it's burning, turn it down a notch.",
+  "pad": 0.35
+ },
+ {
+  "sc": "S12",
+  "s": 237.867,
+  "e": 242.067,
+  "id": "c35",
+  "d": 4.2,
+  "T": 5,
+  "text": "If it's quiet, turn it up a notch. You want a steady, gentle fry.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S13",
+  "s": 242.067,
+  "e": 252.347,
+  "id": "c36",
+  "d": 10.28,
+  "T": 11,
+  "text": "While that goes, let me tell you about the chickens. We kept about thirty hens behind the kitchen. For the eggs. And every fall, when some of the older ones quit laying, they went in the pot.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S13",
+  "s": 252.347,
+  "e": 260.827,
+  "id": "c37",
+  "d": 8.48,
+  "T": 9,
+  "text": "So most of my chicken came from my own backyard, and those birds had walked around for three years. They were tough. You couldn't fry those, you had to braise them.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S13",
+  "s": 260.827,
+  "e": 271.133,
+  "id": "c38",
+  "d": 10.306,
+  "T": 11,
+  "text": "That's where this sauce comes from. Don Ernesto would cook them for hours in red chile. When we started buying chicken from the store, which is young and tender, I kept the chile but I changed how I started them.",
+  "pad": 0.69
+ },
+ {
+  "sc": "S13",
+  "s": 271.133,
+  "e": 279.873,
+  "id": "c39",
+  "d": 8.74,
+  "T": 9,
+  "text": "Cold pan, skin down. The crew said it was the best of both. Crisp like fried chicken, but with that red chile underneath that they'd been eating their whole lives.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S14",
+  "s": 279.873,
+  "e": 287.253,
+  "id": "c40",
+  "d": 7.38,
+  "T": 8,
+  "text": "Twenty minutes. Lift one with tongs and look. See that? Deep golden brown, and it lifted right off the pan without sticking.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S14",
+  "s": 287.253,
+  "e": 292.133,
+  "id": "c41",
+  "d": 4.88,
+  "T": 6,
+  "text": "That's when it's ready. If it sticks, it's not ready. Give it two or three more minutes.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S15",
+  "s": 292.133,
+  "e": 296.933,
+  "id": "c42",
+  "d": 4.8,
+  "T": 5,
+  "text": "Step four. Flip them all, skin side up. Five minutes on the meat side.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S16",
+  "s": 296.933,
+  "e": 307.609,
+  "id": "c43",
+  "d": 10.676,
+  "T": 11,
+  "text": "Now pour off the fat. Hold the thighs back with the tongs and tip the pan into a heatproof bowl or a can. Leave about a tablespoon in the pan. And don't throw out that fat. That's chicken fat.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S16",
+  "s": 307.609,
+  "e": 316.029,
+  "id": "c44",
+  "d": 8.42,
+  "T": 9,
+  "text": "Some folks call it schmaltz. We just called it chicken fat, and it's gold. Fry potatoes in it, fry eggs in it, it keeps in the fridge for weeks.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S17",
+  "s": 316.029,
+  "e": 321.389,
+  "id": "c45",
+  "d": 5.36,
+  "T": 6,
+  "text": "Step five. Half an onion, sliced, in around the chicken. Three minutes, until it softens.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S18",
+  "s": 321.389,
+  "e": 330.972,
+  "id": "c46",
+  "d": 9.583,
+  "T": 10,
+  "text": "Now the red chile. One and a half cups of red chile sauce. If you've made chile colorado, that's what this is. It's in the book. Dried red chiles, toasted, soaked,",
+  "pad": 0.42
+ },
+ {
+  "sc": "S18",
+  "s": 330.972,
+  "e": 341.352,
+  "id": "c47",
+  "d": 10.38,
+  "T": 11,
+  "text": "blended with garlic and a little broth and cumin, and simmered. But on a busy weeknight, a can of red enchilada sauce works fine. I've used it plenty of times. Don't tell Don Ernesto.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S19",
+  "s": 341.352,
+  "e": 351.792,
+  "id": "c48",
+  "d": 10.44,
+  "T": 11,
+  "text": "And if you want to make the red chile yourself, it's not hard, and it's cheaper than the can. Eight dried red chiles. New Mexico chiles or guajillos, both are mild. Stems and seeds out.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S19",
+  "s": 351.792,
+  "e": 362.757,
+  "id": "c49",
+  "d": 10.965,
+  "T": 12,
+  "text": "Toast them in a dry skillet, fifteen seconds a side, just until you smell them. Soak them twenty minutes in hot water. Into the blender with two cloves of garlic, two cups of chicken broth, half a teaspoon of cumin,",
+  "pad": 1.04
+ },
+ {
+  "sc": "S19",
+  "s": 362.757,
+  "e": 372.967,
+  "id": "c50",
+  "d": 10.21,
+  "T": 11,
+  "text": "half a teaspoon of dried oregano, and a teaspoon of salt. Blend it smooth, about two minutes. Then heat a tablespoon of lard in a pot, pour the sauce in, it'll spit, stand back,",
+  "pad": 0.79
+ },
+ {
+  "sc": "S19",
+  "s": 372.967,
+  "e": 383.597,
+  "id": "c51",
+  "d": 10.63,
+  "T": 11,
+  "text": "and simmer it fifteen minutes until it's thick enough to coat a spoon. That makes about two cups. Keep it in a jar in the fridge for a week, or freeze it. That sauce is the base of half the ranch kitchen.",
+  "pad": 0.37
+ },
+ {
+  "sc": "S20",
+  "s": 383.597,
+  "e": 394.784,
+  "id": "c52",
+  "d": 11.187,
+  "T": 12,
+  "text": "And here's the important part. Pour the sauce around the chicken. Around. Not over it. Into the spaces between the thighs. The sauce should come up the sides of the meat, but the skin stays up on top,",
+  "pad": 0.81
+ },
+ {
+  "sc": "S20",
+  "s": 394.784,
+  "e": 403.884,
+  "id": "c53",
+  "d": 9.1,
+  "T": 10,
+  "text": "out of the sauce, dry and crisp. If you pour sauce over that skin, all that work is gone in thirty seconds. It goes soft. You'd have been better off boiling it.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S21",
+  "s": 403.884,
+  "e": 414.304,
+  "id": "c54",
+  "d": 10.42,
+  "T": 11,
+  "text": "Step six. Turn the heat down to medium-low. Let it simmer eight to ten minutes. No lid. The lid would steam the skin. The sauce thickens and the meat finishes cooking from below.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S22",
+  "s": 414.304,
+  "e": 425.086,
+  "id": "c55",
+  "d": 10.782,
+  "T": 11,
+  "text": "Check the temperature. Thermometer into the thickest part of the thigh, near the bone but not touching it. Chicken is safe at one hundred and sixty-five degrees. That's the USDA number, for any part of the chicken.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S22",
+  "s": 425.086,
+  "e": 434.946,
+  "id": "c56",
+  "d": 9.86,
+  "T": 11,
+  "text": "But here's something not everybody knows. Thighs are better cooked further. At one-sixty-five, the meat near the bone can still be a little chewy and pink-looking. At one hundred and seventy-five,",
+  "pad": 1.14
+ },
+ {
+  "sc": "S22",
+  "s": 434.946,
+  "e": 445.826,
+  "id": "c57",
+  "d": 10.88,
+  "T": 12,
+  "text": "the connective tissue melts and the meat gets tender and falls off the bone. Thighs have enough fat that they stay juicy. So you're safe at one-sixty-five. But for thighs, go to one-seventy-five.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S23",
+  "s": 445.826,
+  "e": 449.486,
+  "id": "c58",
+  "d": 3.66,
+  "T": 4,
+  "text": "Off the heat. A quarter cup of chopped cilantro over the top.",
+  "pad": 0.34
+ },
+ {
+  "sc": "S24",
+  "s": 449.486,
+  "e": 460.38,
+  "id": "c59",
+  "d": 10.894,
+  "T": 12,
+  "text": "Look at that. Cut into it. Hear the skin? It cracks. The meat is juicy and comes right off the bone. And underneath, that dark red chile sauce. Dip a piece of tortilla in that sauce.",
+  "pad": 1.11
+ },
+ {
+  "sc": "S25",
+  "s": 460.38,
+  "e": 461.66,
+  "id": "c60",
+  "d": 1.28,
+  "T": 2,
+  "text": "Rusty. Come here.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S26",
+  "s": 461.66,
+  "e": 466.06,
+  "id": "c61",
+  "d": 4.4,
+  "T": 5,
+  "text": "You heard that. That crunch. That's the sound I've been listening to for forty years.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S27",
+  "s": 466.06,
+  "e": 477.611,
+  "id": "c62",
+  "d": 11.551,
+  "T": 12,
+  "text": "Let me tell you about the night the power went out. It was July, a big storm came through, lightning hit the pole down by the road, and the whole ranch went dark right at supper time. Electric stove, no stove.",
+  "pad": 0.45
+ },
+ {
+  "sc": "S27",
+  "s": 477.611,
+  "e": 488.371,
+  "id": "c63",
+  "d": 10.76,
+  "T": 11,
+  "text": "So I carried two skillets full of raw chicken out to the fire pit, got a fire going in the rain, right by the open door of the shed, and did these exactly the same way. Cold pan, skin down, no oil,",
+  "pad": 0.24
+ },
+ {
+  "sc": "S27",
+  "s": 488.371,
+  "e": 499.991,
+  "id": "c64",
+  "d": 11.62,
+  "T": 12,
+  "text": "red chile around them. The men ate standing up in the shed by the light of the truck headlights. Fourteen men, the rain pounding on the tin. Rusty says it's the best supper he's ever had. I think it was the headlights.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S28",
+  "s": 499.991,
+  "e": 510.784,
+  "id": "c65",
+  "d": 10.793,
+  "T": 11,
+  "text": "What goes with it? Something to catch the sauce. A pot of beans, from a few weeks ago. Warm tortillas, to tear and dip. Plain white rice is good too, cooked in a little of that chicken fat.",
+  "pad": 0.21
+ },
+ {
+  "sc": "S28",
+  "s": 510.784,
+  "e": 515.724,
+  "id": "c66",
+  "d": 4.94,
+  "T": 6,
+  "text": "And the ranch slaw from the cabbage video, cold and sharp on the side. That's a plate.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S29",
+  "s": 515.724,
+  "e": 522.944,
+  "id": "c67",
+  "d": 7.22,
+  "T": 8,
+  "text": "I put every one of these recipes in a book, the way we really made them. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S30",
+  "s": 522.944,
+  "e": 533.504,
+  "id": "c68",
+  "d": 10.56,
+  "T": 11,
+  "text": "The skin is flabby. Either the pan was hot when the chicken went in, or you moved them too early. Cold pan, medium heat, and don't touch them for at least eighteen minutes. The skin stuck and tore.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S30",
+  "s": 533.504,
+  "e": 544.14,
+  "id": "c69",
+  "d": 10.636,
+  "T": 11,
+  "text": "You flipped too soon. When the skin is crisp, it lets go of the pan on its own. If you have to pull, it's not ready. The skin burned before the fat rendered out. Your heat was too high.",
+  "pad": 0.36
+ },
+ {
+  "sc": "S30",
+  "s": 544.14,
+  "e": 553.82,
+  "id": "c70",
+  "d": 9.68,
+  "T": 10,
+  "text": "Medium. Every stove is different, so if yours runs hot, go medium-low and give it a few more minutes. The skin went soggy at the end. You poured the sauce over the top.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S30",
+  "s": 553.82,
+  "e": 560.22,
+  "id": "c71",
+  "d": 6.4,
+  "T": 7,
+  "text": "Around, not over. Or you put a lid on it. No lid. The meat near the bone is still pink and chewy.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S30",
+  "s": 560.22,
+  "e": 566.8,
+  "id": "c72",
+  "d": 6.58,
+  "T": 7,
+  "text": "At one-sixty-five it's safe, but a thigh isn't tender until about one-seventy-five. Give it a few more minutes in the sauce.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S31",
+  "s": 566.8,
+  "e": 577.219,
+  "id": "c73",
+  "d": 10.419,
+  "T": 11,
+  "text": "At the store. Bone-in, skin-on thighs. Not boneless, skinless. Those are fine for other things, but for this you need the skin and the bone. They're also cheaper.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S31",
+  "s": 577.219,
+  "e": 588.019,
+  "id": "c74",
+  "d": 10.8,
+  "T": 11,
+  "text": "Bone-in, skin-on thighs are about two dollars a pound right now. That's the cheapest meat in the whole store, and the best-tasting part of the chicken. Breasts are three times the price and half the flavor.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S31",
+  "s": 588.019,
+  "e": 595.259,
+  "id": "c75",
+  "d": 7.24,
+  "T": 8,
+  "text": "Look for skin that covers the whole thigh, not torn or pulled back. If the package has a lot of liquid in it, they've been sitting a while.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S32",
+  "s": 595.259,
+  "e": 602.619,
+  "id": "c76",
+  "d": 7.36,
+  "T": 8,
+  "text": "A variation. Instead of red chile, use green salsa. The tomatillo kind, in a jar. Same way, around the chicken,",
+  "pad": 0.64
+ },
+ {
+  "sc": "S32",
+  "s": 602.619,
+  "e": 607.254,
+  "id": "c77",
+  "d": 4.635,
+  "T": 5,
+  "text": "eight to ten minutes. It's brighter and a little tart. The crew liked it in the summer.",
+  "pad": 0.37
+ },
+ {
+  "sc": "S33",
+  "s": 607.254,
+  "e": 613.874,
+  "id": "c78",
+  "d": 6.62,
+  "T": 7,
+  "text": "Leftovers. Three days in the fridge. The skin won't stay crisp in the fridge. That's the truth. But here's how you bring it back.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S34",
+  "s": 613.874,
+  "e": 622.114,
+  "id": "c79",
+  "d": 8.24,
+  "T": 9,
+  "text": "Put the thighs skin side down in a dry skillet, medium-low, for eight to ten minutes. The skin crisps back up in its own fat again.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S34",
+  "s": 622.114,
+  "e": 627.624,
+  "id": "c80",
+  "d": 5.51,
+  "T": 6,
+  "text": "Warm the sauce separately and pour it around them on the plate. Hot all the way through, one-sixty-five.",
+  "pad": 0.49
+ },
+ {
+  "sc": "S35",
+  "s": 627.624,
+  "e": 638.408,
+  "id": "c81",
+  "d": 10.784,
+  "T": 11,
+  "text": "And the second supper. Pull the meat off the bones and shred it with two forks, skin and all, chopped up. Put it in a pot with the leftover sauce and a splash of water, and heat it until it's bubbling.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S35",
+  "s": 638.408,
+  "e": 649.548,
+  "id": "c82",
+  "d": 11.14,
+  "T": 12,
+  "text": "Warm some corn tortillas. Roll the chicken up in the tortillas, lay them in a baking dish, pour the rest of the sauce over the top, and some cheese, and into a three-hundred-and-fifty-degree oven for fifteen minutes.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S35",
+  "s": 649.548,
+  "e": 654.308,
+  "id": "c83",
+  "d": 4.76,
+  "T": 5,
+  "text": "That's supper on a cold night. On the ranch, that was Thursday. Every Thursday.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S36",
+  "s": 654.308,
+  "e": 665.189,
+  "id": "c84",
+  "d": 10.881,
+  "T": 12,
+  "text": "What it costs. Eight bone-in thighs, about three pounds, six dollars. A can of red sauce, two dollars. Half an onion, cilantro, salt and pepper, about a dollar thirty.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S36",
+  "s": 665.189,
+  "e": 676.369,
+  "id": "c85",
+  "d": 11.18,
+  "T": 12,
+  "text": "That's about nine dollars and thirty cents. Feeds four people, two thighs each. Two dollars and thirty cents a plate. With beans and tortillas, call it three dollars. That's less than a chicken sandwich at a drive-through.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S37",
+  "s": 676.369,
+  "e": 686.909,
+  "id": "c86",
+  "d": 10.54,
+  "T": 11,
+  "text": "For a crowd. Sixteen thighs. Two skillets at once, same way. Or if you don't have two skillets, use the oven. Line a sheet pan with foil, put the thighs skin side up, salted,",
+  "pad": 0.46
+ },
+ {
+  "sc": "S37",
+  "s": 686.909,
+  "e": 692.035,
+  "id": "c87",
+  "d": 5.126,
+  "T": 6,
+  "text": "and roast them at four hundred and twenty-five degrees for forty minutes. The skin crisps in the hot oven.",
+  "pad": 0.87
+ },
+ {
+  "sc": "S37",
+  "s": 692.035,
+  "e": 700.295,
+  "id": "c88",
+  "d": 8.26,
+  "T": 9,
+  "text": "Then warm the chile sauce in a pot with the onion and serve it on the side, or spoon it around the chicken on the plate. Not quite as crisp as the skillet, but close.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S38",
+  "s": 700.295,
+  "e": 707.355,
+  "id": "c89",
+  "d": 7.06,
+  "T": 8,
+  "text": "For two. Four thighs in a ten-inch skillet. Same time, same heat. Use about three quarters of a cup of sauce.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S39",
+  "s": 707.355,
+  "e": 712.215,
+  "id": "c90",
+  "d": 4.86,
+  "T": 6,
+  "text": "Outside. On a fire, it's harder to start cold, because the grate is already hot.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S39",
+  "s": 712.215,
+  "e": 722.275,
+  "id": "c91",
+  "d": 10.06,
+  "T": 11,
+  "text": "So put the skillet with the chicken in it on the cool edge of the grate, away from the coals, and slide it slowly toward the heat as the fat renders. It works. It just needs more attention.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S40",
+  "s": 722.275,
+  "e": 732.981,
+  "id": "c92",
+  "d": 10.706,
+  "T": 11,
+  "text": "A couple of questions. Can I use drumsticks? Yes, but they're round, so the skin doesn't lie flat. Roll them every five minutes to brown them on all sides. Give them about thirty minutes total.",
+  "pad": 0.29
+ },
+ {
+  "sc": "S40",
+  "s": 732.981,
+  "e": 744.341,
+  "id": "c93",
+  "d": 11.36,
+  "T": 12,
+  "text": "What about chicken breasts? With the skin and bone, you can do it, but breasts don't have much fat, so you'll need a teaspoon of oil. And pull them at one-sixty-five. Not one-seventy-five. They'll dry out.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S40",
+  "s": 744.341,
+  "e": 756.081,
+  "id": "c94",
+  "d": 11.74,
+  "T": 12,
+  "text": "Is red chile sauce spicy? Most of it is mild. It's earthy and a little bitter, not hot. If you want it hot, add a pinch of cayenne or a chopped chile de árbol. Can I use frozen thighs?",
+  "pad": 0.26
+ },
+ {
+  "sc": "S40",
+  "s": 756.081,
+  "e": 766.732,
+  "id": "c95",
+  "d": 10.651,
+  "T": 11,
+  "text": "Thaw them first. Overnight in the fridge, on a plate. A frozen thigh in a cold pan will give off so much water that the skin steams and never crisps. And don't thaw chicken on the counter.",
+  "pad": 0.35
+ },
+ {
+  "sc": "S40",
+  "s": 766.732,
+  "e": 775.552,
+  "id": "c96",
+  "d": 8.82,
+  "T": 9,
+  "text": "What do I do with the chicken fat? Keep it in a jar in the fridge. Fry potatoes in it next time, with the lid trick from a few weeks ago. You'll never want to use oil again.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S41",
+  "s": 775.552,
+  "e": 785.872,
+  "id": "c97",
+  "d": 10.32,
+  "T": 11,
+  "text": "Here's a way to make it even cheaper. Look for chicken leg quarters. That's the thigh and the drumstick still together, in a big bag. They're usually the cheapest chicken in the whole store. Some weeks,",
+  "pad": 0.68
+ },
+ {
+  "sc": "S41",
+  "s": 785.872,
+  "e": 795.823,
+  "id": "c98",
+  "d": 9.951,
+  "T": 11,
+  "text": "less than a dollar and a half a pound. You cut them apart yourself. It's easy. Put the quarter skin-side down, bend the leg so you can see the joint, and there's a line of fat right over it.",
+  "pad": 1.05
+ },
+ {
+  "sc": "S41",
+  "s": 795.823,
+  "e": 805.143,
+  "id": "c99",
+  "d": 9.32,
+  "T": 10,
+  "text": "Cut along that line, straight down through the joint. If you hit bone, move the knife a little. The knife goes through the joint like butter when you find it. Drumsticks and thighs,",
+  "pad": 0.68
+ },
+ {
+  "sc": "S41",
+  "s": 805.143,
+  "e": 809.283,
+  "id": "c100",
+  "d": 4.14,
+  "T": 5,
+  "text": "same pan, same recipe. The drumsticks take maybe five minutes less.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S42",
+  "s": 809.283,
+  "e": 820.803,
+  "id": "c101",
+  "d": 11.52,
+  "T": 12,
+  "text": "And why thighs, and not breasts? Breasts are lean. There's very little fat in them, and almost no collagen. So if you go past a hundred and sixty-five, even a few degrees, they turn dry and stringy.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S42",
+  "s": 820.803,
+  "e": 828.543,
+  "id": "c102",
+  "d": 7.74,
+  "T": 8,
+  "text": "That's why so many people think chicken is dry. Thighs are forgiving. They have fat and collagen, and they get better past one-sixty-five.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S42",
+  "s": 828.543,
+  "e": 833.763,
+  "id": "c103",
+  "d": 5.22,
+  "T": 6,
+  "text": "You can't really dry them out in this pan. And they cost about half as much. Everybody wins.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S43",
+  "s": 833.763,
+  "e": 843.563,
+  "id": "c104",
+  "d": 9.8,
+  "T": 10,
+  "text": "And that chicken fat you poured out of the pan. Don't throw it in the trash. Let it cool, pour it through a strainer into a little jar, and keep it in the fridge. It keeps a few weeks.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S43",
+  "s": 843.563,
+  "e": 850.043,
+  "id": "c105",
+  "d": 6.48,
+  "T": 7,
+  "text": "Fry potatoes in it, or eggs, or warm your tortillas in it. On the ranch, nothing that tasted that good went in the garbage.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S44",
+  "s": 850.043,
+  "e": 860.223,
+  "id": "c106",
+  "d": 10.18,
+  "T": 11,
+  "text": "Can I use boneless, skinless thighs? You can. But you lose the crispy skin, and that's half the reason for this recipe. If that's what you've got, brown them in a tablespoon of fat,",
+  "pad": 0.82
+ },
+ {
+  "sc": "S44",
+  "s": 860.223,
+  "e": 865.203,
+  "id": "c107",
+  "d": 4.98,
+  "T": 6,
+  "text": "three minutes a side, then the sauce, and fifteen minutes. Check them with the thermometer.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S45",
+  "s": 865.203,
+  "e": 875.383,
+  "id": "c108",
+  "d": 10.18,
+  "T": 11,
+  "text": "Let me tell you how I learned the cold pan. Nineteen eighty-seven. My mother came to visit the ranch for the first time. She wanted to see where her son cooked. I wanted to show off. I made her chicken,",
+  "pad": 0.82
+ },
+ {
+  "sc": "S45",
+  "s": 875.383,
+  "e": 886.535,
+  "id": "c109",
+  "d": 11.152,
+  "T": 12,
+  "text": "and I did everything the way I thought a real cook did it. Very hot pan, chicken in, sizzle, smoke. The skin stuck to the pan and tore off, half of it burned, and the inside was raw by the bone.",
+  "pad": 0.85
+ },
+ {
+  "sc": "S45",
+  "s": 886.535,
+  "e": 897.035,
+  "id": "c110",
+  "d": 10.5,
+  "T": 11,
+  "text": "I had to put it back. My mother didn't say anything. The next morning she went into my kitchen, took my skillet off the wall, put the chicken in it cold, skin down, turned on the fire, and walked away.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S45",
+  "s": 897.035,
+  "e": 903.495,
+  "id": "c111",
+  "d": 6.46,
+  "T": 7,
+  "text": "Twenty minutes later, the skin was like glass. She looked at me and said, \"Mijo, you don't have to fight the food.\"",
+  "pad": 0.54
+ },
+ {
+  "sc": "S46",
+  "s": 903.495,
+  "e": 914.759,
+  "id": "c112",
+  "d": 11.264,
+  "T": 12,
+  "text": "How to buy good chicken. Look at the date on the package. Raw chicken is good for one or two days in the fridge after you buy it, not a week. If you're not going to cook it in two days, freeze it. Look at the color.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S46",
+  "s": 914.759,
+  "e": 925.039,
+  "id": "c113",
+  "d": 10.28,
+  "T": 11,
+  "text": "Pink and fresh, not gray. And if there's a lot of liquid in the bottom of the package, that's water they added, and you're paying for water. That water also makes the skin harder to crisp.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S46",
+  "s": 925.039,
+  "e": 931.099,
+  "id": "c114",
+  "d": 6.06,
+  "T": 7,
+  "text": "And always put raw chicken on the bottom shelf of the fridge, on a plate, so nothing drips onto anything else.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S47",
+  "s": 931.099,
+  "e": 940.844,
+  "id": "c115",
+  "d": 9.745,
+  "T": 10,
+  "text": "And the cutting board. Raw chicken goes on its own board. When you're done, wash the board, the knife, and your hands with hot soapy water before you touch anything else. Not just a rinse.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S47",
+  "s": 940.844,
+  "e": 945.404,
+  "id": "c116",
+  "d": 4.56,
+  "T": 5,
+  "text": "Don't cut the onion on the same board you just cut the chicken on. That's how people get sick,",
+  "pad": 0.44
+ },
+ {
+  "sc": "S47",
+  "s": 945.404,
+  "e": 952.884,
+  "id": "c117",
+  "d": 7.48,
+  "T": 8,
+  "text": "not from the chicken itself, from the knife and the board and the hands. It takes one minute and it's the most important minute in this video.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S48",
+  "s": 952.884,
+  "e": 964.704,
+  "id": "c118",
+  "d": 11.82,
+  "T": 12,
+  "text": "And the brown stuff left in the pan when you take the thighs out. Don't wash it out. That's the best part. Before you pour in the red sauce, you can add a splash of water or broth to the hot pan, and scrape the bottom with a wooden spoon.",
+  "pad": 0.18
+ },
+ {
+  "sc": "S48",
+  "s": 964.704,
+  "e": 971.242,
+  "id": "c119",
+  "d": 6.538,
+  "T": 7,
+  "text": "All that brown comes up into the sauce. That's what makes the sauce taste like it cooked with chicken all day, when it's only been twenty minutes.",
+  "pad": 0.46
+ },
+ {
+  "sc": "S49",
+  "s": 971.242,
+  "e": 981.042,
+  "id": "c120",
+  "d": 9.8,
+  "T": 10,
+  "text": "And if you don't want the red sauce, these are just as good plain. Take them out of the pan when they're done, squeeze a little lime over the skin, salt, and eat them. The crew ate them that way at lunch,",
+  "pad": 0.2
+ },
+ {
+  "sc": "S49",
+  "s": 981.042,
+  "e": 988.202,
+  "id": "c121",
+  "d": 7.16,
+  "T": 8,
+  "text": "standing up, out of their hands. With a piece of tortilla and some salsa on the side. The skin was so crisp you could hear it across the kitchen.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S50",
+  "s": 988.202,
+  "e": 999.16,
+  "id": "c122",
+  "d": 10.958,
+  "T": 12,
+  "text": "Now, about the book. This crew book has forty years of chicken in it. A few years ago I put all of it, every recipe, the way we really made them, into a real book. The Vaquero's Cookbook.",
+  "pad": 1.04
+ },
+ {
+  "sc": "S51",
+  "s": 999.16,
+  "e": 1010.0,
+  "id": "c123",
+  "d": 10.84,
+  "T": 11,
+  "text": "These thighs are on page thirty-one. The cold pan, the red chile, the temperatures. And the red chile sauce itself is in there, from scratch. And the pork chops, the beans,",
+  "pad": 0.16
+ },
+ {
+  "sc": "S51",
+  "s": 1010.0,
+  "e": 1016.72,
+  "id": "c124",
+  "d": 6.72,
+  "T": 7,
+  "text": "the ribs, the potatoes, the steak, the cabbage from before. And the green beans, the eggs, and more.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S51",
+  "s": 1016.72,
+  "e": 1025.86,
+  "id": "c125",
+  "d": 9.14,
+  "T": 10,
+  "text": "It's twenty-seven dollars. Every recipe from the ranch for less than one family dinner out. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S52",
+  "s": 1025.86,
+  "e": 1035.491,
+  "id": "c126",
+  "d": 9.631,
+  "T": 10,
+  "text": "That's it. Cold pan, skin down, no oil, twenty minutes. Flip, pour off the fat, sauce around, never over. Next time, green beans.",
+  "pad": 0.37
+ },
+ {
+  "sc": "S52",
+  "s": 1035.491,
+  "e": 1046.237,
+  "id": "c127",
+  "d": 10.746,
+  "T": 11,
+  "text": "Boiled green beans are soggy and gray. I'll show you how we made them green and bright, with bacon, in a skillet, with a quarter cup of water and four minutes under a lid. Ándale. See you then.",
+  "pad": 0.25
+ }
+]

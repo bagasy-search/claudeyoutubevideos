@@ -1,0 +1,332 @@
+[
+ {
+  "name": "c05_1",
+  "q": "frying chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Here's what usually happens. You heat up a pan with a good pour of oil, you put the thighs in skin side down,\" — it must show: frying chicken."
+ },
+ {
+  "name": "c05_2",
+  "q": "chicken oil",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Here's what usually happens. You heat up a pan with a good pour of oil, you put the thighs in skin side down,\" — it must show: chicken oil."
+ },
+ {
+  "name": "c06_1",
+  "q": "oil splatter",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and the oil spits all over the stove and all over you. The skin sticks,\" — it must show: oil splatter."
+ },
+ {
+  "name": "c06_2",
+  "q": "hot oil",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and the oil spits all over the stove and all over you. The skin sticks,\" — it must show: hot oil."
+ },
+ {
+  "name": "c07_1",
+  "q": "chicken skin",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"tears off when you try to flip it, and what's left is pale and rubbery and greasy.\" — it must show: chicken skin."
+ },
+ {
+  "name": "c07_2",
+  "q": "fried chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"tears off when you try to flip it, and what's left is pale and rubbery and greasy.\" — it must show: fried chicken."
+ },
+ {
+  "name": "c13_1",
+  "q": "raw chicken thighs",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Let's talk about why oil is the wrong answer. A chicken thigh with the skin on is already carrying plenty of fat. It's right under the skin, a layer of it. If you can melt that fat out,\" — it must show: raw chicken thighs."
+ },
+ {
+  "name": "c13_2",
+  "q": "raw chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Let's talk about why oil is the wrong answer. A chicken thigh with the skin on is already carrying plenty of fat. It's right under the skin, a layer of it. If you can melt that fat out,\" — it must show: raw chicken."
+ },
+ {
+  "name": "c15_1",
+  "q": "chicken frying pan",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"But when you put the thigh into a hot pan full of oil, the outside of the skin seizes up and browns in a minute. The fat underneath doesn't have time to melt out. So it stays trapped under a brown skin,\" — it must show: chicken frying pan."
+ },
+ {
+  "name": "c15_2",
+  "q": "chicken skillet",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"But when you put the thigh into a hot pan full of oil, the outside of the skin seizes up and browns in a minute. The fat underneath doesn't have time to melt out. So it stays trapped under a brown skin,\" — it must show: chicken skillet."
+ },
+ {
+  "name": "c21_1",
+  "q": "washing chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"The USDA says don't, and they're right. Rinsing doesn't wash anything off that the cooking won't kill, and it splashes raw chicken juice all over your sink and your counter, a couple of feet in every direction.\" — it must show: washing chicken."
+ },
+ {
+  "name": "c21_2",
+  "q": "kitchen sink",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"The USDA says don't, and they're right. Rinsing doesn't wash anything off that the cooking won't kill, and it splashes raw chicken juice all over your sink and your counter, a couple of feet in every direction.\" — it must show: kitchen sink."
+ },
+ {
+  "name": "c25_1",
+  "q": "seasoning chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Two teaspoons of salt and a teaspoon of pepper, both sides. If you have time, do it a few hours ahead, or the night before, and leave them uncovered on a plate in the fridge. Just like the steak.\" — it must show: seasoning chicken."
+ },
+ {
+  "name": "c25_2",
+  "q": "salt pepper",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Two teaspoons of salt and a teaspoon of pepper, both sides. If you have time, do it a few hours ahead, or the night before, and leave them uncovered on a plate in the fridge. Just like the steak.\" — it must show: salt pepper."
+ },
+ {
+  "name": "c36_1",
+  "q": "hens yard",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"While that goes, let me tell you about the chickens. We kept about thirty hens behind the kitchen. For the eggs. And every fall, when some of the older ones quit laying, they went in the pot.\" — it must show: hens yard."
+ },
+ {
+  "name": "c36_2",
+  "q": "chickens farm",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"While that goes, let me tell you about the chickens. We kept about thirty hens behind the kitchen. For the eggs. And every fall, when some of the older ones quit laying, they went in the pot.\" — it must show: chickens farm."
+ },
+ {
+  "name": "c37_1",
+  "q": "backyard chickens",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So most of my chicken came from my own backyard, and those birds had walked around for three years. They were tough. You couldn't fry those, you had to braise them.\" — it must show: backyard chickens."
+ },
+ {
+  "name": "c37_2",
+  "q": "hens",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So most of my chicken came from my own backyard, and those birds had walked around for three years. They were tough. You couldn't fry those, you had to braise them.\" — it must show: hens."
+ },
+ {
+  "name": "c38_1",
+  "q": "stew pot",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"That's where this sauce comes from. Don Ernesto would cook them for hours in red chile. When we started buying chicken from the store, which is young and tender, I kept the chile but I changed how I started them.\" — it must show: stew pot."
+ },
+ {
+  "name": "c38_2",
+  "q": "simmering pot",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"That's where this sauce comes from. Don Ernesto would cook them for hours in red chile. When we started buying chicken from the store, which is young and tender, I kept the chile but I changed how I started them.\" — it must show: simmering pot."
+ },
+ {
+  "name": "c47_1",
+  "q": "enchilada sauce",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"blended with garlic and a little broth and cumin, and simmered. But on a busy weeknight, a can of red enchilada sauce works fine. I've used it plenty of times. Don't tell Don Ernesto.\" — it must show: enchilada sauce."
+ },
+ {
+  "name": "c47_2",
+  "q": "red sauce",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"blended with garlic and a little broth and cumin, and simmered. But on a busy weeknight, a can of red enchilada sauce works fine. I've used it plenty of times. Don't tell Don Ernesto.\" — it must show: red sauce."
+ },
+ {
+  "name": "c48_1",
+  "q": "dried chiles",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And if you want to make the red chile yourself, it's not hard, and it's cheaper than the can. Eight dried red chiles. New Mexico chiles or guajillos, both are mild. Stems and seeds out.\" — it must show: dried chiles."
+ },
+ {
+  "name": "c48_2",
+  "q": "chili peppers",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And if you want to make the red chile yourself, it's not hard, and it's cheaper than the can. Eight dried red chiles. New Mexico chiles or guajillos, both are mild. Stems and seeds out.\" — it must show: chili peppers."
+ },
+ {
+  "name": "c49_1",
+  "q": "toasting chiles",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Toast them in a dry skillet, fifteen seconds a side, just until you smell them. Soak them twenty minutes in hot water. Into the blender with two cloves of garlic, two cups of chicken broth, half a teaspoon of cumin,\" — it must show: toasting chiles."
+ },
+ {
+  "name": "c49_2",
+  "q": "dry chiles pan",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Toast them in a dry skillet, fifteen seconds a side, just until you smell them. Soak them twenty minutes in hot water. Into the blender with two cloves of garlic, two cups of chicken broth, half a teaspoon of cumin,\" — it must show: dry chiles pan."
+ },
+ {
+  "name": "c50_1",
+  "q": "blender sauce",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"half a teaspoon of dried oregano, and a teaspoon of salt. Blend it smooth, about two minutes. Then heat a tablespoon of lard in a pot, pour the sauce in, it'll spit, stand back,\" — it must show: blender sauce."
+ },
+ {
+  "name": "c50_2",
+  "q": "blender",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"half a teaspoon of dried oregano, and a teaspoon of salt. Blend it smooth, about two minutes. Then heat a tablespoon of lard in a pot, pour the sauce in, it'll spit, stand back,\" — it must show: blender."
+ },
+ {
+  "name": "c51_1",
+  "q": "sauce jar",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and simmer it fifteen minutes until it's thick enough to coat a spoon. That makes about two cups. Keep it in a jar in the fridge for a week, or freeze it. That sauce is the base of half the ranch kitchen.\" — it must show: sauce jar."
+ },
+ {
+  "name": "c51_2",
+  "q": "red sauce jar",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"and simmer it fifteen minutes until it's thick enough to coat a spoon. That makes about two cups. Keep it in a jar in the fridge for a week, or freeze it. That sauce is the base of half the ranch kitchen.\" — it must show: red sauce jar."
+ },
+ {
+  "name": "c63_1",
+  "q": "campfire rain",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So I carried two skillets full of raw chicken out to the fire pit, got a fire going in the rain, right by the open door of the shed, and did these exactly the same way. Cold pan, skin down, no oil,\" — it must show: campfire rain."
+ },
+ {
+  "name": "c63_2",
+  "q": "campfire night",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So I carried two skillets full of raw chicken out to the fire pit, got a fire going in the rain, right by the open door of the shed, and did these exactly the same way. Cold pan, skin down, no oil,\" — it must show: campfire night."
+ },
+ {
+  "name": "c65_1",
+  "q": "rice beans",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"What goes with it? Something to catch the sauce. A pot of beans, from a few weeks ago. Warm tortillas, to tear and dip. Plain white rice is good too, cooked in a little of that chicken fat.\" — it must show: rice beans."
+ },
+ {
+  "name": "c65_2",
+  "q": "tortillas",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"What goes with it? Something to catch the sauce. A pot of beans, from a few weeks ago. Warm tortillas, to tear and dip. Plain white rice is good too, cooked in a little of that chicken fat.\" — it must show: tortillas."
+ },
+ {
+  "name": "c73_1",
+  "q": "grocery chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"At the store. Bone-in, skin-on thighs. Not boneless, skinless. Those are fine for other things, but for this you need the skin and the bone. They're also cheaper.\" — it must show: grocery chicken."
+ },
+ {
+  "name": "c73_2",
+  "q": "meat aisle",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"At the store. Bone-in, skin-on thighs. Not boneless, skinless. Those are fine for other things, but for this you need the skin and the bone. They're also cheaper.\" — it must show: meat aisle."
+ },
+ {
+  "name": "c74_1",
+  "q": "raw chicken package",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Bone-in, skin-on thighs are about two dollars a pound right now. That's the cheapest meat in the whole store, and the best-tasting part of the chicken. Breasts are three times the price and half the flavor.\" — it must show: raw chicken package."
+ },
+ {
+  "name": "c74_2",
+  "q": "chicken package",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Bone-in, skin-on thighs are about two dollars a pound right now. That's the cheapest meat in the whole store, and the best-tasting part of the chicken. Breasts are three times the price and half the flavor.\" — it must show: chicken package."
+ },
+ {
+  "name": "c81_1",
+  "q": "shredded chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the second supper. Pull the meat off the bones and shred it with two forks, skin and all, chopped up. Put it in a pot with the leftover sauce and a splash of water, and heat it until it's bubbling.\" — it must show: shredded chicken."
+ },
+ {
+  "name": "c81_2",
+  "q": "pulled chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the second supper. Pull the meat off the bones and shred it with two forks, skin and all, chopped up. Put it in a pot with the leftover sauce and a splash of water, and heat it until it's bubbling.\" — it must show: pulled chicken."
+ },
+ {
+  "name": "c82_1",
+  "q": "enchiladas",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Warm some corn tortillas. Roll the chicken up in the tortillas, lay them in a baking dish, pour the rest of the sauce over the top, and some cheese, and into a three-hundred-and-fifty-degree oven for fifteen minutes.\" — it must show: enchiladas."
+ },
+ {
+  "name": "c82_2",
+  "q": "baking enchiladas",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Warm some corn tortillas. Roll the chicken up in the tortillas, lay them in a baking dish, pour the rest of the sauce over the top, and some cheese, and into a three-hundred-and-fifty-degree oven for fifteen minutes.\" — it must show: baking enchiladas."
+ },
+ {
+  "name": "c86_1",
+  "q": "roasting chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"For a crowd. Sixteen thighs. Two skillets at once, same way. Or if you don't have two skillets, use the oven. Line a sheet pan with foil, put the thighs skin side up, salted,\" — it must show: roasting chicken."
+ },
+ {
+  "name": "c86_2",
+  "q": "sheet pan chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"For a crowd. Sixteen thighs. Two skillets at once, same way. Or if you don't have two skillets, use the oven. Line a sheet pan with foil, put the thighs skin side up, salted,\" — it must show: sheet pan chicken."
+ },
+ {
+  "name": "c90_1",
+  "q": "campfire skillet",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Outside. On a fire, it's harder to start cold, because the grate is already hot.\" — it must show: campfire skillet."
+ },
+ {
+  "name": "c90_2",
+  "q": "cast iron fire",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Outside. On a fire, it's harder to start cold, because the grate is already hot.\" — it must show: cast iron fire."
+ },
+ {
+  "name": "c91_1",
+  "q": "campfire cooking",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So put the skillet with the chicken in it on the cool edge of the grate, away from the coals, and slide it slowly toward the heat as the fat renders. It works. It just needs more attention.\" — it must show: campfire cooking."
+ },
+ {
+  "name": "c91_2",
+  "q": "camp cooking",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"So put the skillet with the chicken in it on the cool edge of the grate, away from the coals, and slide it slowly toward the heat as the fat renders. It works. It just needs more attention.\" — it must show: camp cooking."
+ },
+ {
+  "name": "c92_1",
+  "q": "chicken drumsticks",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"A couple of questions. Can I use drumsticks? Yes, but they're round, so the skin doesn't lie flat. Roll them every five minutes to brown them on all sides. Give them about thirty minutes total.\" — it must show: chicken drumsticks."
+ },
+ {
+  "name": "c92_2",
+  "q": "drumsticks pan",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"A couple of questions. Can I use drumsticks? Yes, but they're round, so the skin doesn't lie flat. Roll them every five minutes to brown them on all sides. Give them about thirty minutes total.\" — it must show: drumsticks pan."
+ },
+ {
+  "name": "c93_1",
+  "q": "chicken breast",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"What about chicken breasts? With the skin and bone, you can do it, but breasts don't have much fat, so you'll need a teaspoon of oil. And pull them at one-sixty-five. Not one-seventy-five. They'll dry out.\" — it must show: chicken breast."
+ },
+ {
+  "name": "c93_2",
+  "q": "raw chicken breast",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"What about chicken breasts? With the skin and bone, you can do it, but breasts don't have much fat, so you'll need a teaspoon of oil. And pull them at one-sixty-five. Not one-seventy-five. They'll dry out.\" — it must show: raw chicken breast."
+ },
+ {
+  "name": "c97_1",
+  "q": "chicken legs",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Here's a way to make it even cheaper. Look for chicken leg quarters. That's the thigh and the drumstick still together, in a big bag. They're usually the cheapest chicken in the whole store. Some weeks,\" — it must show: chicken legs."
+ },
+ {
+  "name": "c97_2",
+  "q": "chicken leg quarters",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Here's a way to make it even cheaper. Look for chicken leg quarters. That's the thigh and the drumstick still together, in a big bag. They're usually the cheapest chicken in the whole store. Some weeks,\" — it must show: chicken leg quarters."
+ },
+ {
+  "name": "c99_1",
+  "q": "cutting chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Cut along that line, straight down through the joint. If you hit bone, move the knife a little. The knife goes through the joint like butter when you find it. Drumsticks and thighs,\" — it must show: cutting chicken."
+ },
+ {
+  "name": "c99_2",
+  "q": "butchering chicken",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Cut along that line, straight down through the joint. If you hit bone, move the knife a little. The knife goes through the joint like butter when you find it. Drumsticks and thighs,\" — it must show: butchering chicken."
+ },
+ {
+  "name": "c104_1",
+  "q": "pouring oil jar",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And that chicken fat you poured out of the pan. Don't throw it in the trash. Let it cool, pour it through a strainer into a little jar, and keep it in the fridge. It keeps a few weeks.\" — it must show: pouring oil jar."
+ },
+ {
+  "name": "c104_2",
+  "q": "strainer",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And that chicken fat you poured out of the pan. Don't throw it in the trash. Let it cool, pour it through a strainer into a little jar, and keep it in the fridge. It keeps a few weeks.\" — it must show: strainer."
+ },
+ {
+  "name": "c112_1",
+  "q": "meat package",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"How to buy good chicken. Look at the date on the package. Raw chicken is good for one or two days in the fridge after you buy it, not a week. If you're not going to cook it in two days, freeze it. Look at the color.\" — it must show: meat package."
+ },
+ {
+  "name": "c112_2",
+  "q": "grocery store",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"How to buy good chicken. Look at the date on the package. Raw chicken is good for one or two days in the fridge after you buy it, not a week. If you're not going to cook it in two days, freeze it. Look at the color.\" — it must show: grocery store."
+ },
+ {
+  "name": "c115_1",
+  "q": "cutting board",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the cutting board. Raw chicken goes on its own board. When you're done, wash the board, the knife, and your hands with hot soapy water before you touch anything else. Not just a rinse.\" — it must show: cutting board."
+ },
+ {
+  "name": "c115_2",
+  "q": "washing cutting board",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And the cutting board. Raw chicken goes on its own board. When you're done, wash the board, the knife, and your hands with hot soapy water before you touch anything else. Not just a rinse.\" — it must show: washing cutting board."
+ },
+ {
+  "name": "c116_1",
+  "q": "chopping onion",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Don't cut the onion on the same board you just cut the chicken on. That's how people get sick,\" — it must show: chopping onion."
+ },
+ {
+  "name": "c116_2",
+  "q": "onion",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"Don't cut the onion on the same board you just cut the chicken on. That's how people get sick,\" — it must show: onion."
+ },
+ {
+  "name": "c120_1",
+  "q": "squeezing lime",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And if you don't want the red sauce, these are just as good plain. Take them out of the pan when they're done, squeeze a little lime over the skin, salt, and eat them. The crew ate them that way at lunch,\" — it must show: squeezing lime."
+ },
+ {
+  "name": "c120_2",
+  "q": "lime",
+  "scene": "Real documentary footage for a ranch cook's video about chicken thighs, while he says: \"And if you don't want the red sauce, these are just as good plain. Take them out of the pan when they're done, squeeze a little lime over the skin, salt, and eat them. The crew ate them that way at lunch,\" — it must show: lime."
+ }
+]
