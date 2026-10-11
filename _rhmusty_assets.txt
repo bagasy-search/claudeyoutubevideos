@@ -4,7 +4,6 @@ avatar_clips/rhmusty/reel30.mp4
 img/rhmusty/k_rugcorner.jpg
 img/rhmusty/r_sniff.jpg
 img/rhmusty/b_cleanfloor.jpg
-broll/rhmusty/b_cleanfloor.mp4
 img/rhmusty/b_sheets.jpg
 broll/rhmusty_st/b_sheets.mp4
 img/rhmusty/b_basement.jpg
@@ -24,9 +23,7 @@ img/rhmusty/k_cuptowels.jpg
 img/rhmusty/b_candles.jpg
 broll/rhmusty_st/b_candles.mp4
 img/rhmusty/k_opencab.jpg
-img/rhmusty/b_sinkcab.jpg
 img/rhmusty/k_liftrug.jpg
-vid/rhmusty/k_liftrug.mp4
 img/rhmusty/k_rundrain.jpg
 vid/rhmusty/k_rundrain.mp4
 img/rhmusty/k_grille.jpg
@@ -70,6 +67,7 @@ img/rhmusty/b_brownbottle.jpg
 img/rhmusty/b_oldtowels.jpg
 broll/rhmusty/b_oldtowels.mp4
 img/rhmusty/k_emptycab.jpg
+vid/rhmusty/k_emptycab.mp4
 img/rhmusty/r_headin.jpg
 img/rhmusty/b_pipedrip.jpg
 img/rhmusty/k_flathand.jpg
@@ -94,6 +92,7 @@ vid/rhmusty/k_squeeze.mp4
 img/rhmusty/b_spongeup.jpg
 broll/rhmusty_st/b_spongeup.mp4
 img/rhmusty/b_towelstack.jpg
+broll/rhmusty/b_towelstack.mp4
 img/rhmusty/r_washer.jpg
 img/rhmusty/k_washer.jpg
 vid/rhmusty/k_washer.mp4
@@ -105,6 +104,7 @@ img/rhmusty/k_bathmat.jpg
 img/rhmusty/b_newmat.jpg
 broll/rhmusty/b_newmat.mp4
 img/rhmusty/k_liftrug2.jpg
+vid/rhmusty/k_liftrug2.mp4
 img/rhmusty/r_smellrug.jpg
 img/rhmusty/k_pad.jpg
 img/rhmusty/r_sinkrug.jpg
@@ -151,13 +151,13 @@ img/rhmusty/r_flashfridge.jpg
 img/rhmusty/b_drippan.jpg
 broll/rhmusty/b_drippan.mp4
 img/rhmusty/r_disgust.jpg
+broll/rhmusty/r_disgust.mp4
 img/rhmusty/k_washpan.jpg
 img/rhmusty/k_spraypan.jpg
 vid/rhmusty/k_spraypan.mp4
 broll/rhmusty_st/bd_m15.mp4
 img/rhmusty/b_bottlebrush.jpg
 img/rhmusty/k_coils.jpg
-vid/rhmusty/k_coils.mp4
 img/rhmusty/k_rack.jpg
 img/rhmusty/b_filter.jpg
 img/rhmusty/k_filter.jpg
@@ -173,7 +173,6 @@ vid/rhmusty/k_icedtea.mp4
 img/rhmusty/k_clothes.jpg
 img/rhmusty/r_closetwall.jpg
 img/rhmusty/b_mildewshoe.jpg
-broll/rhmusty/b_mildewshoe.mp4
 img/rhmusty/k_wipewall.jpg
 vid/rhmusty/k_wipewall.mp4
 broll/rhmusty_st/bd_m16.mp4
@@ -185,7 +184,6 @@ img/rhmusty/b_shoepile.jpg
 broll/rhmusty_st/b_shoepile.mp4
 img/rhmusty/k_shoesdry.jpg
 img/rhmusty/k_porch.jpg
-vid/rhmusty/k_porch.mp4
 img/rhmusty/b_cleankitchen.jpg
 img/rhmusty/r_hundreds.jpg
 broll/rhmusty/r_hundreds.mp4
@@ -208,7 +206,6 @@ broll/rhmusty_st/b_gutter.mp4
 img/rhmusty/b_slope.jpg
 broll/rhmusty_st/b_slope.mp4
 img/rhmusty/b_bathfan.jpg
-broll/rhmusty/b_bathfan.mp4
 img/rhmusty/k_curtain.jpg
 vid/rhmusty/k_curtain.mp4
 broll/rhmusty_st/bd_m20.mp4
@@ -216,6 +213,7 @@ broll/rhmusty_st/bd_m21.mp4
 img/rhmusty/b_spraycan.jpg
 broll/rhmusty/b_spraycan.mp4
 img/rhmusty/b_incense.jpg
+broll/rhmusty/b_incense.mp4
 img/rhmusty/r_understand.jpg
 broll/rhmusty/r_understand.mp4
 broll/rhmusty_st/bd_m24.mp4
@@ -224,6 +222,7 @@ broll/rhmusty_st/b_saltjar.mp4
 img/rhmusty/r_shrug.jpg
 broll/rhmusty_st/bd_m28.mp4
 img/rhmusty/b_purifier.jpg
+broll/rhmusty/b_purifier.mp4
 broll/rhmusty_st/bd_m31.mp4
 broll/rhmusty_st/bd_m32.mp4
 img/rhmusty/r_honest.jpg
@@ -234,11 +233,13 @@ broll/rhmusty_st/b_windowsill.mp4
 img/rhmusty/b_ceilingstain.jpg
 broll/rhmusty_st/st_plumber.mp4
 img/rhmusty/r_fixwater.jpg
+broll/rhmusty/r_fixwater.mp4
 broll/rhmusty_st/bd_m33.mp4
 img/rhmusty/k_mophard.jpg
 img/rhmusty/b_bleach.jpg
 broll/rhmusty_st/bd_m34.mp4
 img/rhmusty/b_wetwall.jpg
+broll/rhmusty/b_wetwall.mp4
 img/rhmusty/k_wipedry2.jpg
 img/rhmusty/b_closedup.jpg
 broll/rhmusty_st/b_closedup.mp4
@@ -247,6 +248,7 @@ vid/rhmusty/k_window.mp4
 img/rhmusty/b_candlestack.jpg
 broll/rhmusty_st/b_candlestack.mp4
 img/rhmusty/r_message.jpg
+broll/rhmusty/r_message.mp4
 broll/rhmusty_st/bd_m37.mp4
 img/rhmusty/b_aptbath.jpg
 broll/rhmusty_st/b_aptbath.mp4
@@ -257,19 +259,18 @@ broll/rhmusty_st/bd_m39.mp4
 img/rhmusty/r_onething.jpg
 img/rhmusty/b_emptycloset.jpg
 img/rhmusty/b_basewall2.jpg
+broll/rhmusty/b_basewall2.mp4
 img/rhmusty/k_carmat.jpg
 vid/rhmusty/k_carmat.mp4
 img/rhmusty/b_doorseal.jpg
 broll/rhmusty_st/bd_m41.mp4
 img/rhmusty/k_runtub2.jpg
 img/rhmusty/k_hangtowel.jpg
-vid/rhmusty/k_hangtowel.mp4
 img/rhmusty/b_rangehood.jpg
 broll/rhmusty_st/b_rangehood.mp4
 broll/rhmusty_st/bd_m42.mp4
 img/rhmusty/r_routine.jpg
 img/rhmusty/k_frontdoor2.jpg
-vid/rhmusty/k_frontdoor2.mp4
 broll/rhmusty_st/bd_m43.mp4
 img/rhmusty/k_spraylast.jpg
 broll/rhmusty_st/bd_m44.mp4
@@ -283,3 +284,9 @@ broll/rhmusty_st/bd_m52.mp4
 broll/rhmusty_st/bd_m54.mp4
 img/rhmusty/b_sinkcab2.jpg
 img/rhmusty/r_blowcandle.jpg
+vid/rhmusty/k_liftrug2_last.jpg
+broll/rhmusty/r_hygro_last.jpg
+broll/rhmusty/b_dehumidtank_last.jpg
+broll/rhmusty/b_purifier_last.jpg
+broll/rhmusty/r_message_last.jpg
+vid/rhmusty/k_carmat_last.jpg
