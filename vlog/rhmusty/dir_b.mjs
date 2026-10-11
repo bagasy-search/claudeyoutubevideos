@@ -52,7 +52,7 @@ export const SHOTS = [
   // historia $3,000
   A(30, "I had a couple selling their house"),
   B(30, "the buyers smelled the basement", "b_buyers", `A couple in their thirties standing in an unfinished basement, the woman holding her hand near her nose.`, "the woman turns her head a tiny bit; nothing else moves"),
-  C(30, "Somebody quoted three thousand dollars", "RhQuoteStamp", { bed: I("b_basedrain"), price: "$3,000", stamp: "NOT NEEDED", instead: "a pitcher of water" }),
+  C(30, "Somebody quoted three thousand dollars", "RhQuoteStamp", { bed: I("b_basedrain"), price: "$3,000", job: "Mold remediation · basement", lines: ["Inspection + air test", "Tear out drywall", "Treat + seal"], stamp: "NOT NEEDED", instead: "a pitcher of water" }),
   R(30, "poured a pitcher of water into the floor drain", "r_pitcher", `She crouches in an unfinished basement, pouring a plastic pitcher of water into a round floor drain and glancing at the camera.`),
   R(30, "and it was a pitcher of water", "r_laugh", `She stands in an unfinished basement holding an empty plastic pitcher, laughing at the camera.`),
   // truco del aceite

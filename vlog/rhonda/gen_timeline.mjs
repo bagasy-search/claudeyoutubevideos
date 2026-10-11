@@ -78,7 +78,12 @@ export const CLIPAUD: any[] = ${JSON.stringify(CLIPAUD)};
 const qc = [], vlSpan = {};
 for (const c of cues) {
   if ((c.k === "vl" || c.k === "kf") && c.src) { const v = (vlSpan[c.src] ||= { key: c.src, src: c.src, a: c.from, b: c.from + c.dur }); v.b = c.from + c.dur; }
-  if (c.k === "img" && c.clip) qc.push({ key: c.clip, src: c.clip, start: c.from / FPS, dur: Math.min(c.dur, c.clipF) / FPS });
+  if (c.k === "img" && c.clip) {
+    // punch-in (cofs): el mismo clip SIGUE desde el cuadro cofs → es UNA toma continua, no un segundo uso
+    const prev = qc[qc.length - 1];
+    if (c.cofs && prev && prev.src === c.clip && Math.abs(prev.start * FPS + c.cofs - c.from) <= 1.5) prev.dur = Math.min(c.cofs + c.dur, c.clipF) / FPS;
+    else qc.push({ key: c.clip, src: c.clip, start: c.from / FPS, dur: Math.min(c.dur, c.clipF) / FPS });
+  }
 }
 for (const v of Object.values(vlSpan)) qc.push({ key: v.key, src: v.src, start: v.a / FPS, dur: (v.b - v.a) / FPS });
 fs.writeFileSync(V3 + "cues.json", JSON.stringify(qc, null, 1));
