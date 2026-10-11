@@ -4,7 +4,7 @@
 set -e
 S=$1; C=$(python -c "print('$S'[0].upper()+'$S'[1:])"); cd /d/Proyectos/video2-wt/ccfrijoles
 N=$(grep -o '[0-9]\+' src/$S/total.ts)
-git add src/$S src/index_$S.tsx src/claudio/ClIntro.tsx vlog/cc vlog/$S/armar.py _${S}_assets.txt 2>/dev/null || true
+git add src/$S src/index_$S.tsx src/claudio vlog/cc vlog/$S/armar.py _${S}_assets.txt 2>/dev/null || true
 git diff --cached --quiet || git commit -qm "$S: montaje $(python -c "print(round($N/30/60,2))") min
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
