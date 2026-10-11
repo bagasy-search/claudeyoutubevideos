@@ -1,0 +1,412 @@
+[
+ {
+  "name": "c05_1",
+  "q": "boiling cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"You know the smell. You walk into a house where somebody's boiling cabbage, and it hits you at the front door.\" — it must show: boiling cabbage."
+ },
+ {
+  "name": "c05_2",
+  "q": "cabbage pot",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"You know the smell. You walk into a house where somebody's boiling cabbage, and it hits you at the front door.\" — it must show: cabbage pot."
+ },
+ {
+  "name": "c07_1",
+  "q": "boiled cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And the cabbage itself comes out limp, gray-green, watery, and it tastes like that smell.\" — it must show: boiled cabbage."
+ },
+ {
+  "name": "c07_2",
+  "q": "cooked cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And the cabbage itself comes out limp, gray-green, watery, and it tastes like that smell.\" — it must show: cooked cabbage."
+ },
+ {
+  "name": "c14_1",
+  "q": "green cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Let's talk about the smell, because once you understand it, you'll never make it again. Cabbage has sulfur in it. Natural.\" — it must show: green cabbage."
+ },
+ {
+  "name": "c14_2",
+  "q": "cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Let's talk about the smell, because once you understand it, you'll never make it again. Cabbage has sulfur in it. Natural.\" — it must show: cabbage."
+ },
+ {
+  "name": "c15_1",
+  "q": "cabbage field",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"It's part of what makes it healthy. When cabbage is raw, that sulfur is locked up and you don't notice it. But when you cook it a long time in water, or steam it with a lid on,\" — it must show: cabbage field."
+ },
+ {
+  "name": "c15_2",
+  "q": "cabbage farm",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"It's part of what makes it healthy. When cabbage is raw, that sulfur is locked up and you don't notice it. But when you cook it a long time in water, or steam it with a lid on,\" — it must show: cabbage farm."
+ },
+ {
+  "name": "c16_1",
+  "q": "boiling pot",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"those sulfur compounds break apart and get released into the air. The longer it cooks, the worse it gets. After five minutes in boiling water, it's fine. After twenty, it's a hospital.\" — it must show: boiling pot."
+ },
+ {
+  "name": "c16_2",
+  "q": "steaming pot",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"those sulfur compounds break apart and get released into the air. The longer it cooks, the worse it gets. After five minutes in boiling water, it's fine. After twenty, it's a hospital.\" — it must show: steaming pot."
+ },
+ {
+  "name": "c18_1",
+  "q": "frying cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"something else happens. The water in the leaves cooks off before the sulfur has time to build up. The edges brown. And the natural sugar in the cabbage, there's a lot of sugar in cabbage, it caramelizes.\" — it must show: frying cabbage."
+ },
+ {
+  "name": "c18_2",
+  "q": "cabbage pan",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"something else happens. The water in the leaves cooks off before the sulfur has time to build up. The edges brown. And the natural sugar in the cabbage, there's a lot of sugar in cabbage, it caramelizes.\" — it must show: cabbage pan."
+ },
+ {
+  "name": "c19_1",
+  "q": "frying onions",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"The cabbage turns sweet. Sweet and a little smoky. It's like the difference between a boiled onion and a fried onion. Same vegetable. Completely different food.\" — it must show: frying onions."
+ },
+ {
+  "name": "c19_2",
+  "q": "onions pan",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"The cabbage turns sweet. Sweet and a little smoky. It's like the difference between a boiled onion and a fried onion. Same vegetable. Completely different food.\" — it must show: onions pan."
+ },
+ {
+  "name": "c21_1",
+  "q": "raw bacon",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Here's what you need. Six strips of bacon, chopped into pieces about half an inch. One onion, sliced. One head of green cabbage, about two and a half pounds. A teaspoon of salt, half a teaspoon of black pepper.\" — it must show: raw bacon."
+ },
+ {
+  "name": "c21_2",
+  "q": "bacon",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Here's what you need. Six strips of bacon, chopped into pieces about half an inch. One onion, sliced. One head of green cabbage, about two and a half pounds. A teaspoon of salt, half a teaspoon of black pepper.\" — it must show: bacon."
+ },
+ {
+  "name": "c23_1",
+  "q": "bacon strips",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"A word about the bacon, because it matters more than you'd think. Buy regular bacon, not the thick-cut, and not the kind that says \"maple\" or \"brown sugar\" on the package. The thick-cut doesn't give up its fat fast enoug\" — it must show: bacon strips."
+ },
+ {
+  "name": "c23_2",
+  "q": "bacon package",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"A word about the bacon, because it matters more than you'd think. Buy regular bacon, not the thick-cut, and not the kind that says \"maple\" or \"brown sugar\" on the package. The thick-cut doesn't give up its fat fast enoug\" — it must show: bacon package."
+ },
+ {
+  "name": "c24_1",
+  "q": "cutting bacon",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"and the sweet ones burn in the pan before the cabbage is done. Plain, smoked, regular bacon. If you can find it at a meat counter, ask for slab bacon, and cut it yourself into little sticks.\" — it must show: cutting bacon."
+ },
+ {
+  "name": "c24_2",
+  "q": "slicing bacon",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"and the sweet ones burn in the pan before the cabbage is done. Plain, smoked, regular bacon. If you can find it at a meat counter, ask for slab bacon, and cut it yourself into little sticks.\" — it must show: slicing bacon."
+ },
+ {
+  "name": "c26_1",
+  "q": "cutting cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"First, the cabbage. Pull off the two or three outside leaves if they're torn or wilted. Cut the head in half, top to bottom, through the core. Then in quarters. Now cut out the core.\" — it must show: cutting cabbage."
+ },
+ {
+  "name": "c26_2",
+  "q": "chopping cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"First, the cabbage. Pull off the two or three outside leaves if they're torn or wilted. Cut the head in half, top to bottom, through the core. Then in quarters. Now cut out the core.\" — it must show: chopping cabbage."
+ },
+ {
+  "name": "c30_1",
+  "q": "frying bacon",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Step one. The bacon goes in the pot, cold, and then turn the heat to medium. Starting it cold lets the fat melt out slowly. Fry it, stirring now and then, until it's crisp. About eight minutes.\" — it must show: frying bacon."
+ },
+ {
+  "name": "c30_2",
+  "q": "bacon pan",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Step one. The bacon goes in the pot, cold, and then turn the heat to medium. Starting it cold lets the fat melt out slowly. Fry it, stirring now and then, until it's crisp. About eight minutes.\" — it must show: bacon pan."
+ },
+ {
+  "name": "c39_1",
+  "q": "sauteed cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"You'll see the cabbage go from bright green to soft and glossy. Then the edges start to brown. Little golden-brown spots, a little char here and there. That's the sugar caramelizing.\" — it must show: sauteed cabbage."
+ },
+ {
+  "name": "c39_2",
+  "q": "stir fry cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"You'll see the cabbage go from bright green to soft and glossy. Then the edges start to brown. Little golden-brown spots, a little char here and there. That's the sugar caramelizing.\" — it must show: stir fry cabbage."
+ },
+ {
+  "name": "c42_1",
+  "q": "snowy ranch",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"While it finishes, let me tell you about winter on the ranch. From about December to March, the crew went down to six or seven men. The rest went home. It was cold. We'd get snow some years,\" — it must show: snowy ranch."
+ },
+ {
+  "name": "c42_2",
+  "q": "winter farm",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"While it finishes, let me tell you about winter on the ranch. From about December to March, the crew went down to six or seven men. The rest went home. It was cold. We'd get snow some years,\" — it must show: winter farm."
+ },
+ {
+  "name": "c43_1",
+  "q": "snow road",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"and the road to town would close for a week. And in the cellar, we had potatoes, onions, dried beans, dried chiles, a side of bacon, and cabbage. Thirty, forty heads of cabbage, wrapped in newspaper,\" — it must show: snow road."
+ },
+ {
+  "name": "c43_2",
+  "q": "snowy road",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"and the road to town would close for a week. And in the cellar, we had potatoes, onions, dried beans, dried chiles, a side of bacon, and cabbage. Thirty, forty heads of cabbage, wrapped in newspaper,\" — it must show: snowy road."
+ },
+ {
+  "name": "c44_1",
+  "q": "root cellar",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"lined up on a shelf. Cabbage keeps for months if it's cold and dark. So for those three months, we ate a lot of cabbage. A lot. And if I had boiled it every day, those six men would have walked off the ranch in the snow.\" — it must show: root cellar."
+ },
+ {
+  "name": "c44_2",
+  "q": "pantry shelves",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"lined up on a shelf. Cabbage keeps for months if it's cold and dark. So for those three months, we ate a lot of cabbage. A lot. And if I had boiled it every day, those six men would have walked off the ranch in the snow.\" — it must show: pantry shelves."
+ },
+ {
+  "name": "c45_1",
+  "q": "lettuce",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"So I fried it, every way I could think of. And I'll tell you, in March, when the first lettuce came in from town, half the crew asked me to keep making the cabbage.\" — it must show: lettuce."
+ },
+ {
+  "name": "c45_2",
+  "q": "fresh lettuce",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"So I fried it, every way I could think of. And I'll tell you, in March, when the first lettuce came in from town, half the crew asked me to keep making the cabbage.\" — it must show: fresh lettuce."
+ },
+ {
+  "name": "c66_1",
+  "q": "cabbage market",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"At the store, pick up the cabbage and feel the weight. It should feel heavy for its size, like a bowling ball. A light one is old and dried out inside. The leaves should be tight and shiny, not loose or wilted.\" — it must show: cabbage market."
+ },
+ {
+  "name": "c66_2",
+  "q": "grocery produce",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"At the store, pick up the cabbage and feel the weight. It should feel heavy for its size, like a bowling ball. A light one is old and dried out inside. The leaves should be tight and shiny, not loose or wilted.\" — it must show: grocery produce."
+ },
+ {
+  "name": "c67_1",
+  "q": "vegetable market",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"No black spots. A head of green cabbage runs about ninety cents a pound right now, so a two-and-a-half-pound head is about two dollars and twenty cents. That's a side dish for six people.\" — it must show: vegetable market."
+ },
+ {
+  "name": "c67_2",
+  "q": "supermarket vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"No black spots. A head of green cabbage runs about ninety cents a pound right now, so a two-and-a-half-pound head is about two dollars and twenty cents. That's a side dish for six people.\" — it must show: supermarket vegetables."
+ },
+ {
+  "name": "c69_1",
+  "q": "red cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"What about other kinds of cabbage? Red cabbage works, but it turns a little blue-purple when it cooks. The vinegar brings the red color back. Savoy cabbage, the crinkly one, is more tender,\" — it must show: red cabbage."
+ },
+ {
+  "name": "c69_2",
+  "q": "savoy cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"What about other kinds of cabbage? Red cabbage works, but it turns a little blue-purple when it cooks. The vinegar brings the red color back. Savoy cabbage, the crinkly one, is more tender,\" — it must show: savoy cabbage."
+ },
+ {
+  "name": "c70_1",
+  "q": "napa cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"so cook it about eight minutes instead of twelve. Napa cabbage is too delicate for this. It turns to water.\" — it must show: napa cabbage."
+ },
+ {
+  "name": "c70_2",
+  "q": "chinese cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"so cook it about eight minutes instead of twelve. Napa cabbage is too delicate for this. It turns to water.\" — it must show: chinese cabbage."
+ },
+ {
+  "name": "c71_1",
+  "q": "smoked sausage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Now here's how you turn it into supper. Instead of bacon, use a pound of smoked sausage. The kind that comes in a horseshoe ring.\" — it must show: smoked sausage."
+ },
+ {
+  "name": "c71_2",
+  "q": "sausage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Now here's how you turn it into supper. Instead of bacon, use a pound of smoked sausage. The kind that comes in a horseshoe ring.\" — it must show: sausage."
+ },
+ {
+  "name": "c72_1",
+  "q": "frying sausage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Slice it into coins and brown them in a tablespoon of lard until they're golden on both sides. Lift them out,\" — it must show: frying sausage."
+ },
+ {
+  "name": "c72_2",
+  "q": "sausage pan",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Slice it into coins and brown them in a tablespoon of lard until they're golden on both sides. Lift them out,\" — it must show: sausage pan."
+ },
+ {
+  "name": "c73_1",
+  "q": "sausage cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"then do the onion and the cabbage in the fat, exactly the same way, and stir the sausage back in at the end with the vinegar. That's a whole supper in one pot. Cabbage and sausage.\" — it must show: sausage cabbage."
+ },
+ {
+  "name": "c73_2",
+  "q": "sausage skillet",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"then do the onion and the cabbage in the fat, exactly the same way, and stir the sausage back in at the end with the vinegar. That's a whole supper in one pot. Cabbage and sausage.\" — it must show: sausage skillet."
+ },
+ {
+  "name": "c74_1",
+  "q": "cornbread",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"With a piece of cornbread or some tortillas, that fed the winter crew once a week. About two dollars and fifty cents a plate.\" — it must show: cornbread."
+ },
+ {
+  "name": "c74_2",
+  "q": "tortillas",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"With a piece of cornbread or some tortillas, that fed the winter crew once a week. About two dollars and fifty cents a plate.\" — it must show: tortillas."
+ },
+ {
+  "name": "c76_1",
+  "q": "shredding cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Ranch slaw. No mayonnaise. Slice a quarter of a head of cabbage as thin as you can. Thin this time, like hair. Put it in a bowl with a big pinch of salt and squeeze it with your hands for a minute.\" — it must show: shredding cabbage."
+ },
+ {
+  "name": "c76_2",
+  "q": "sliced cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Ranch slaw. No mayonnaise. Slice a quarter of a head of cabbage as thin as you can. Thin this time, like hair. Put it in a bowl with a big pinch of salt and squeeze it with your hands for a minute.\" — it must show: sliced cabbage."
+ },
+ {
+  "name": "c77_1",
+  "q": "squeezing lime",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"It'll soften and give up a little water. Pour that water off. Add a quarter of an onion sliced thin, a handful of chopped cilantro, the juice of two limes, a tablespoon of oil,\" — it must show: squeezing lime."
+ },
+ {
+  "name": "c77_2",
+  "q": "chopping cilantro",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"It'll soften and give up a little water. Pour that water off. Add a quarter of an onion sliced thin, a handful of chopped cilantro, the juice of two limes, a tablespoon of oil,\" — it must show: chopping cilantro."
+ },
+ {
+  "name": "c78_1",
+  "q": "coleslaw",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"and if you like, a little chopped jalapeño. Toss it and let it sit ten minutes. It's crunchy and sharp and cold. Pile that on top of the ribs, or the beans, or a pork chop in a tortilla.\" — it must show: coleslaw."
+ },
+ {
+  "name": "c78_2",
+  "q": "cabbage salad",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"and if you like, a little chopped jalapeño. Toss it and let it sit ten minutes. It's crunchy and sharp and cold. Pile that on top of the ribs, or the beans, or a pork chop in a tortilla.\" — it must show: cabbage salad."
+ },
+ {
+  "name": "c81_1",
+  "q": "sailing ship",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"cabbage kept the men healthy. One cup of raw cabbage has about a third of the vitamin C a grown man needs in a day. Sailors used to carry it on ships for that reason. It's cheap, it keeps for weeks, and it's good for you\" — it must show: sailing ship."
+ },
+ {
+  "name": "c81_2",
+  "q": "old ship",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"cabbage kept the men healthy. One cup of raw cabbage has about a third of the vitamin C a grown man needs in a day. Sailors used to carry it on ships for that reason. It's cheap, it keeps for weeks, and it's good for you\" — it must show: old ship."
+ },
+ {
+  "name": "c84_1",
+  "q": "soup pot",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And on the third day, if there's still cabbage in the fridge, it becomes soup. That's the last thing we did with it. Put the leftover fried cabbage in a pot with four cups of chicken broth, a can of tomatoes,\" — it must show: soup pot."
+ },
+ {
+  "name": "c84_2",
+  "q": "vegetable soup",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And on the third day, if there's still cabbage in the fridge, it becomes soup. That's the last thing we did with it. Put the leftover fried cabbage in a pot with four cups of chicken broth, a can of tomatoes,\" — it must show: vegetable soup."
+ },
+ {
+  "name": "c85_1",
+  "q": "diced potatoes",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"a potato cut in small cubes, and a little of the smoked sausage if you've got it. Bring it up to a simmer and let it go twenty minutes, until the potato is soft. Taste it, a pinch of salt,\" — it must show: diced potatoes."
+ },
+ {
+  "name": "c85_2",
+  "q": "potatoes cubes",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"a potato cut in small cubes, and a little of the smoked sausage if you've got it. Bring it up to a simmer and let it go twenty minutes, until the potato is soft. Taste it, a pinch of salt,\" — it must show: potatoes cubes."
+ },
+ {
+  "name": "c88_1",
+  "q": "fried eggs",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"But here's the breakfast. Leftover cabbage in a skillet with a spoon of bacon grease, medium-high, until it's hot and browning again. Make two wells in it, crack an egg into each one. Lid on, two minutes,\" — it must show: fried eggs."
+ },
+ {
+  "name": "c88_2",
+  "q": "eggs skillet",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"But here's the breakfast. Leftover cabbage in a skillet with a spoon of bacon grease, medium-high, until it's hot and browning again. Make two wells in it, crack an egg into each one. Lid on, two minutes,\" — it must show: eggs skillet."
+ },
+ {
+  "name": "c90_1",
+  "q": "tacos",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Or put it in a warm tortilla with a little crumbled cheese and some hot sauce. It sounds strange. It's one of the best tacos I know.\" — it must show: tacos."
+ },
+ {
+  "name": "c90_2",
+  "q": "tortilla",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Or put it in a warm tortilla with a little crumbled cheese and some hot sauce. It sounds strange. It's one of the best tacos I know.\" — it must show: tortilla."
+ },
+ {
+  "name": "c99_1",
+  "q": "dutch oven",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Outside. In a Dutch oven on a grate over a good hot fire, lid off. Same thing. We did this at brandings.\" — it must show: dutch oven."
+ },
+ {
+  "name": "c99_2",
+  "q": "campfire cooking",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Outside. In a Dutch oven on a grate over a good hot fire, lid off. Same thing. We did this at brandings.\" — it must show: campfire cooking."
+ },
+ {
+  "name": "c100_1",
+  "q": "cowboys campfire",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"The smell of bacon frying would bring the whole crew over to the fire before I'd even started the cabbage.\" — it must show: cowboys campfire."
+ },
+ {
+  "name": "c100_2",
+  "q": "campfire",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"The smell of bacon frying would bring the whole crew over to the fire before I'd even started the cabbage.\" — it must show: campfire."
+ },
+ {
+  "name": "c105_1",
+  "q": "smoked turkey",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"If you don't eat pork, here's what you do. Smoked turkey. A smoked turkey leg or smoked turkey wings, the meat pulled off and chopped. Fry it in two tablespoons of oil until it's brown on the edges.\" — it must show: smoked turkey."
+ },
+ {
+  "name": "c105_2",
+  "q": "turkey leg",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"If you don't eat pork, here's what you do. Smoked turkey. A smoked turkey leg or smoked turkey wings, the meat pulled off and chopped. Fry it in two tablespoons of oil until it's brown on the edges.\" — it must show: turkey leg."
+ },
+ {
+  "name": "c108_1",
+  "q": "skillet cornbread",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And what to eat with it. When it was cold, I made a skillet of cornbread to go with this. Cornbread and cabbage and a pot of beans. Nothing else. The men called it the poor man's feast, and they meant it as a compliment.\" — it must show: skillet cornbread."
+ },
+ {
+  "name": "c108_2",
+  "q": "cornbread",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And what to eat with it. When it was cold, I made a skillet of cornbread to go with this. Cornbread and cabbage and a pot of beans. Nothing else. The men called it the poor man's feast, and they meant it as a compliment.\" — it must show: cornbread."
+ },
+ {
+  "name": "c115_1",
+  "q": "cabbage leaves",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"A little thing about cleaning cabbage. The outside leaves are the ones that got handled at the store and sat in the dust. Pull off the first two or three leaves and throw them away, or into the stock pot.\" — it must show: cabbage leaves."
+ },
+ {
+  "name": "c115_2",
+  "q": "peeling cabbage",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"A little thing about cleaning cabbage. The outside leaves are the ones that got handled at the store and sat in the dust. Pull off the first two or three leaves and throw them away, or into the stock pot.\" — it must show: peeling cabbage."
+ },
+ {
+  "name": "c116_1",
+  "q": "rinsing vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Underneath, the cabbage is clean and tight. You don't need to wash every leaf. Rinse the head under the tap, dry it, and cut it.\" — it must show: rinsing vegetables."
+ },
+ {
+  "name": "c116_2",
+  "q": "washing vegetables",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"Underneath, the cabbage is clean and tight. You don't need to wash every leaf. Rinse the head under the tap, dry it, and cut it.\" — it must show: washing vegetables."
+ },
+ {
+  "name": "c117_1",
+  "q": "vegetable garden",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"If you see little holes or a worm or two, that happens with cabbage from a garden. Cut that part away. It's a sign nobody sprayed it.\" — it must show: vegetable garden."
+ },
+ {
+  "name": "c117_2",
+  "q": "cabbage garden",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"If you see little holes or a worm or two, that happens with cabbage from a garden. Cut that part away. It's a sign nobody sprayed it.\" — it must show: cabbage garden."
+ },
+ {
+  "name": "c120_1",
+  "q": "breakfast burrito",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And one more way the crew ate this that I haven't told you. Breakfast. On a cold morning, I'd put fried cabbage in a hot tortilla with a spoon of beans and a fried egg on top.\" — it must show: breakfast burrito."
+ },
+ {
+  "name": "c120_2",
+  "q": "tortilla eggs",
+  "scene": "Real documentary footage for a ranch cook's video about cabbage, while he says: \"And one more way the crew ate this that I haven't told you. Breakfast. On a cold morning, I'd put fried cabbage in a hot tortilla with a spoon of beans and a fried egg on top.\" — it must show: tortilla eggs."
+ }
+]

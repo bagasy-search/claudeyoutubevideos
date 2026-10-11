@@ -32,6 +32,7 @@ for o in out:
         print("⚠️ se pisan:", keep[-1]["c"], keep[-1]["t"], "→", o["c"], o["t"])
     keep.append(o)
 out = keep
+os.makedirs(R + f"src/{S}", exist_ok=True)
 json.dump(out, open(R + f"src/{S}/ov.json", "w", encoding="utf8"), ensure_ascii=False, indent=1)
 open(R + f"src/{S}/total.ts", "w").write(f"export const TOTAL_FRAMES = {nf};\n")
 for o in out: print(o["c"], o["t"], round(o["dur"] / 30, 1))

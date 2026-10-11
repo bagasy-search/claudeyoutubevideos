@@ -2,13 +2,15 @@
 # Cadena final de un cv* (formato híbrido): ensamblar2 → recorte → mkov → mezcla → commit+push → farm (nowait) → post_farm (encfin, cuadros).
 # Requiere: avatar reel30 listo, anclas listas, stock revisado, src/index_<slug>.tsx, public/img/<slug>/{page*.jpg,qr.png,cover.jpg}.
 # uso: bash vlog/cv/cadena.sh <slug>
-S=$1; V=D:/Proyectos/video2-wt; cd $V/$S || exit 1; export SLUG=$S PYTHONIOENCODING=utf8
+set -o pipefail; S=$1; V=D:/Proyectos/video2-wt; cd $V/$S || exit 1; export SLUG=$S PYTHONIOENCODING=utf8
 log() { echo "$(date -u +%T) [$S] $*"; }
 [ -f public/avatar_clips/$S/reel30.mp4 ] || { log "⛔ falta reel30 del avatar"; exit 1; }
+if [ -z "$DESDE_MKOV" ]; then
 node vlog/cv/ensamblar2.mjs | tail -2 || { log "⛔ ensamblar2"; exit 1; }
 rm -rf vlog/$S/_ens2
 python vlog/cv/recorte.py | tail -1 || { log "⛔ recorte"; exit 1; }
 rm -f public/vid/$S/vlog_raw.mp4
+fi
 python vlog/cv/mkov.py | grep -E "⚠️|MEDIDO" || { log "⛔ mkov"; exit 1; }
 python vlog/cv/mezcla.py | tail -1 || { log "⛔ mezcla"; exit 1; }
 [ -d public/sfx ] || cp -r C:/Users/bauti/Downloads/video2/public/sfx public/sfx

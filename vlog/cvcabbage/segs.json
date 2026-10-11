@@ -1,0 +1,1272 @@
+[
+ {
+  "sc": "S00",
+  "s": 0.0,
+  "e": 4.0,
+  "id": "c01",
+  "d": 4.0,
+  "T": 5,
+  "text": "Boiled cabbage smells like a hospital. This is how we did it on the ranch.",
+  "pad": 1.0
+ },
+ {
+  "sc": "S01",
+  "s": 4.0,
+  "e": 8.04,
+  "id": "c02",
+  "d": 4.04,
+  "T": 5,
+  "text": "Last time it was the steak, slow then fast, in the skillet. Today,",
+  "pad": 0.96
+ },
+ {
+  "sc": "S01",
+  "s": 8.04,
+  "e": 12.24,
+  "id": "c03",
+  "d": 4.2,
+  "T": 5,
+  "text": "the cheapest thing in the whole store. A head of cabbage. Under three dollars.",
+  "pad": 0.8
+ },
+ {
+  "sc": "S01",
+  "s": 12.24,
+  "e": 18.08,
+  "id": "c04",
+  "d": 5.84,
+  "T": 6,
+  "text": "And I'm going to show you how to make it so good that it's the first bowl empty on the table. Even before the meat.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S01",
+  "s": 18.08,
+  "e": 23.88,
+  "id": "c05",
+  "d": 5.8,
+  "T": 6,
+  "text": "You know the smell. You walk into a house where somebody's boiling cabbage, and it hits you at the front door.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S01",
+  "s": 23.88,
+  "e": 28.245,
+  "id": "c06",
+  "d": 4.365,
+  "T": 5,
+  "text": "Sulfur. Like old eggs. Like a school cafeteria, like a hospital hallway.",
+  "pad": 0.63
+ },
+ {
+  "sc": "S01",
+  "s": 28.245,
+  "e": 33.665,
+  "id": "c07",
+  "d": 5.42,
+  "T": 6,
+  "text": "And the cabbage itself comes out limp, gray-green, watery, and it tastes like that smell.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S01",
+  "s": 33.665,
+  "e": 38.825,
+  "id": "c08",
+  "d": 5.16,
+  "T": 6,
+  "text": "That's why most people think they hate cabbage. They don't hate cabbage. They hate boiled cabbage.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S01",
+  "s": 38.825,
+  "e": 45.605,
+  "id": "c09",
+  "d": 6.78,
+  "T": 7,
+  "text": "On the ranch, we never boiled it. We fried it. In bacon fat, with onion and a little chile, in an open pan.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S01",
+  "s": 45.605,
+  "e": 50.745,
+  "id": "c10",
+  "d": 5.14,
+  "T": 6,
+  "text": "No water. No lid. And at the very end, one little splash that changes everything.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S01",
+  "s": 50.745,
+  "e": 55.165,
+  "id": "c11",
+  "d": 4.42,
+  "T": 5,
+  "text": "About twenty-five minutes. I'm Claudio. I cooked for a cattle crew for forty years.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S01",
+  "s": 55.165,
+  "e": 62.201,
+  "id": "c12",
+  "d": 7.036,
+  "T": 8,
+  "text": "And in the winter, when the garden was done and the store was two hours away, cabbage was what we had. So I learned to make the men want it.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S02",
+  "s": 62.201,
+  "e": 72.821,
+  "id": "c13",
+  "d": 10.62,
+  "T": 11,
+  "text": "For this you want a deep skillet or a Dutch oven. Something wide with tall sides, because a whole head of cabbage is a lot of cabbage before it cooks down. It looks like it'll never fit. It will.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S03",
+  "s": 72.821,
+  "e": 79.501,
+  "id": "c14",
+  "d": 6.68,
+  "T": 7,
+  "text": "Let's talk about the smell, because once you understand it, you'll never make it again. Cabbage has sulfur in it. Natural.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S03",
+  "s": 79.501,
+  "e": 88.421,
+  "id": "c15",
+  "d": 8.92,
+  "T": 10,
+  "text": "It's part of what makes it healthy. When cabbage is raw, that sulfur is locked up and you don't notice it. But when you cook it a long time in water, or steam it with a lid on,",
+  "pad": 1.08
+ },
+ {
+  "sc": "S03",
+  "s": 88.421,
+  "e": 98.632,
+  "id": "c16",
+  "d": 10.211,
+  "T": 11,
+  "text": "those sulfur compounds break apart and get released into the air. The longer it cooks, the worse it gets. After five minutes in boiling water, it's fine. After twenty, it's a hospital.",
+  "pad": 0.79
+ },
+ {
+  "sc": "S03",
+  "s": 98.632,
+  "e": 105.432,
+  "id": "c17",
+  "d": 6.8,
+  "T": 7,
+  "text": "And the lid traps all of it, and the water soaks right back into the leaves. But when you fry cabbage hot and fast in an open pan,",
+  "pad": 0.2
+ },
+ {
+  "sc": "S03",
+  "s": 105.432,
+  "e": 116.232,
+  "id": "c18",
+  "d": 10.8,
+  "T": 11,
+  "text": "something else happens. The water in the leaves cooks off before the sulfur has time to build up. The edges brown. And the natural sugar in the cabbage, there's a lot of sugar in cabbage, it caramelizes.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S03",
+  "s": 116.232,
+  "e": 125.404,
+  "id": "c19",
+  "d": 9.172,
+  "T": 10,
+  "text": "The cabbage turns sweet. Sweet and a little smoky. It's like the difference between a boiled onion and a fried onion. Same vegetable. Completely different food.",
+  "pad": 0.83
+ },
+ {
+  "sc": "S04",
+  "s": 125.404,
+  "e": 131.764,
+  "id": "c20",
+  "d": 6.36,
+  "T": 7,
+  "text": "Don Ernesto used to say there are two kinds of people who don't like cabbage. People who've only had it boiled, and liars.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S05",
+  "s": 131.764,
+  "e": 143.504,
+  "id": "c21",
+  "d": 11.74,
+  "T": 12,
+  "text": "Here's what you need. Six strips of bacon, chopped into pieces about half an inch. One onion, sliced. One head of green cabbage, about two and a half pounds. A teaspoon of salt, half a teaspoon of black pepper.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S05",
+  "s": 143.504,
+  "e": 149.084,
+  "id": "c22",
+  "d": 5.58,
+  "T": 6,
+  "text": "Half a teaspoon of red chile flakes. A tablespoon of butter. And a tablespoon of apple cider vinegar.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S06",
+  "s": 149.084,
+  "e": 160.441,
+  "id": "c23",
+  "d": 11.357,
+  "T": 12,
+  "text": "A word about the bacon, because it matters more than you'd think. Buy regular bacon, not the thick-cut, and not the kind that says \"maple\" or \"brown sugar\" on the package. The thick-cut doesn't give up its fat fast enough,",
+  "pad": 0.64
+ },
+ {
+  "sc": "S06",
+  "s": 160.441,
+  "e": 171.581,
+  "id": "c24",
+  "d": 11.14,
+  "T": 12,
+  "text": "and the sweet ones burn in the pan before the cabbage is done. Plain, smoked, regular bacon. If you can find it at a meat counter, ask for slab bacon, and cut it yourself into little sticks.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S06",
+  "s": 171.581,
+  "e": 178.601,
+  "id": "c25",
+  "d": 7.02,
+  "T": 8,
+  "text": "That's what we had on the ranch. A whole side of bacon hanging in the cellar, wrapped in cloth, and I'd cut what I needed every morning.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S07",
+  "s": 178.601,
+  "e": 188.763,
+  "id": "c26",
+  "d": 10.162,
+  "T": 11,
+  "text": "First, the cabbage. Pull off the two or three outside leaves if they're torn or wilted. Cut the head in half, top to bottom, through the core. Then in quarters. Now cut out the core.",
+  "pad": 0.84
+ },
+ {
+  "sc": "S07",
+  "s": 188.763,
+  "e": 198.803,
+  "id": "c27",
+  "d": 10.04,
+  "T": 11,
+  "text": "That's the hard white triangle at the bottom of each quarter. One angled cut and it comes right out. The core is tough and woody. Throw it to the chickens, if you've got chickens. We did.",
+  "pad": 0.96
+ },
+ {
+  "sc": "S08",
+  "s": 198.803,
+  "e": 208.203,
+  "id": "c28",
+  "d": 9.4,
+  "T": 10,
+  "text": "Now lay each quarter flat and cut it across into ribbons about an inch wide. An inch. Not thin like coleslaw, it'll turn to mush. Not big chunks either,",
+  "pad": 0.6
+ },
+ {
+  "sc": "S08",
+  "s": 208.203,
+  "e": 216.354,
+  "id": "c29",
+  "d": 8.151,
+  "T": 9,
+  "text": "or they'll still be raw and crunchy in the middle when the outside is done. An inch. Then separate the layers with your fingers so they're not stuck together in clumps.",
+  "pad": 0.85
+ },
+ {
+  "sc": "S09",
+  "s": 216.354,
+  "e": 227.874,
+  "id": "c30",
+  "d": 11.52,
+  "T": 12,
+  "text": "Step one. The bacon goes in the pot, cold, and then turn the heat to medium. Starting it cold lets the fat melt out slowly. Fry it, stirring now and then, until it's crisp. About eight minutes.",
+  "pad": 0.48
+ },
+ {
+  "sc": "S10",
+  "s": 227.874,
+  "e": 235.114,
+  "id": "c31",
+  "d": 7.24,
+  "T": 8,
+  "text": "Lift the bacon out with a slotted spoon and put it on a paper towel. Leave all the fat in the pot. That fat is what's going to cook the cabbage.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S10",
+  "s": 235.114,
+  "e": 239.914,
+  "id": "c32",
+  "d": 4.8,
+  "T": 5,
+  "text": "You should have about three tablespoons. If you have a lot less, add a spoon of lard or butter.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S11",
+  "s": 239.914,
+  "e": 247.819,
+  "id": "c33",
+  "d": 7.905,
+  "T": 9,
+  "text": "Step two. The onion goes into the bacon fat. Four minutes, stirring, until it's soft and turning gold at the edges.",
+  "pad": 1.09
+ },
+ {
+  "sc": "S12",
+  "s": 247.819,
+  "e": 252.599,
+  "id": "c34",
+  "d": 4.78,
+  "T": 5,
+  "text": "Step three. Turn the heat up to medium-high. Now the cabbage, but not all at once.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S12",
+  "s": 252.599,
+  "e": 260.019,
+  "id": "c35",
+  "d": 7.42,
+  "T": 8,
+  "text": "Half of it. One big double handful. It'll fill the pot right up to the top. Toss it with tongs so it gets coated in the fat.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S13",
+  "s": 260.019,
+  "e": 269.299,
+  "id": "c36",
+  "d": 9.28,
+  "T": 10,
+  "text": "Give it two or three minutes. Look. It's already falling. Cabbage is mostly water, and as that water cooks off, it shrinks way down. Now you have room.",
+  "pad": 0.72
+ },
+ {
+  "sc": "S14",
+  "s": 269.299,
+  "e": 275.679,
+  "id": "c37",
+  "d": 6.38,
+  "T": 7,
+  "text": "The rest of the cabbage goes in. Now the salt. The pepper. And the chile flakes. Toss it all together.",
+  "pad": 0.62
+ },
+ {
+  "sc": "S15",
+  "s": 275.679,
+  "e": 286.008,
+  "id": "c38",
+  "d": 10.329,
+  "T": 11,
+  "text": "Step four. Now ten to twelve minutes, medium-high, and toss it every minute or two. No lid. No water. I'll say it again because it's the whole trick. No lid. No water.",
+  "pad": 0.67
+ },
+ {
+  "sc": "S15",
+  "s": 286.008,
+  "e": 295.948,
+  "id": "c39",
+  "d": 9.94,
+  "T": 11,
+  "text": "You'll see the cabbage go from bright green to soft and glossy. Then the edges start to brown. Little golden-brown spots, a little char here and there. That's the sugar caramelizing.",
+  "pad": 1.06
+ },
+ {
+  "sc": "S15",
+  "s": 295.948,
+  "e": 300.808,
+  "id": "c40",
+  "d": 4.86,
+  "T": 6,
+  "text": "That's what you want. Let it sit a minute between tosses so the bottom has a chance to brown.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S16",
+  "s": 300.808,
+  "e": 308.118,
+  "id": "c41",
+  "d": 7.31,
+  "T": 8,
+  "text": "Taste a piece at about ten minutes. It should be tender, but still have a little bite. Not crunchy-raw. Not mush. Like a good noodle.",
+  "pad": 0.69
+ },
+ {
+  "sc": "S17",
+  "s": 308.118,
+  "e": 318.578,
+  "id": "c42",
+  "d": 10.46,
+  "T": 11,
+  "text": "While it finishes, let me tell you about winter on the ranch. From about December to March, the crew went down to six or seven men. The rest went home. It was cold. We'd get snow some years,",
+  "pad": 0.54
+ },
+ {
+  "sc": "S17",
+  "s": 318.578,
+  "e": 329.978,
+  "id": "c43",
+  "d": 11.4,
+  "T": 12,
+  "text": "and the road to town would close for a week. And in the cellar, we had potatoes, onions, dried beans, dried chiles, a side of bacon, and cabbage. Thirty, forty heads of cabbage, wrapped in newspaper,",
+  "pad": 0.6
+ },
+ {
+  "sc": "S17",
+  "s": 329.978,
+  "e": 341.42,
+  "id": "c44",
+  "d": 11.442,
+  "T": 12,
+  "text": "lined up on a shelf. Cabbage keeps for months if it's cold and dark. So for those three months, we ate a lot of cabbage. A lot. And if I had boiled it every day, those six men would have walked off the ranch in the snow.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S17",
+  "s": 341.42,
+  "e": 349.86,
+  "id": "c45",
+  "d": 8.44,
+  "T": 9,
+  "text": "So I fried it, every way I could think of. And I'll tell you, in March, when the first lettuce came in from town, half the crew asked me to keep making the cabbage.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S18",
+  "s": 349.86,
+  "e": 354.84,
+  "id": "c46",
+  "d": 4.98,
+  "T": 6,
+  "text": "Step five. Turn the heat off. Now the finish, and this is the part nobody does.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S19",
+  "s": 354.84,
+  "e": 359.26,
+  "id": "c47",
+  "d": 4.42,
+  "T": 5,
+  "text": "A tablespoon of butter. Toss until it melts. The crisp bacon goes back in.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S20",
+  "s": 359.26,
+  "e": 369.845,
+  "id": "c48",
+  "d": 10.585,
+  "T": 11,
+  "text": "And a tablespoon of apple cider vinegar. Right over the top. It'll sizzle and steam. Toss it all together. That splash of vinegar at the end is the secret. It's what makes people ask you what you put in it.",
+  "pad": 0.41
+ },
+ {
+  "sc": "S20",
+  "s": 369.845,
+  "e": 379.725,
+  "id": "c49",
+  "d": 9.88,
+  "T": 11,
+  "text": "The bacon fat and the sweet cabbage are rich and heavy. The vinegar cuts right through that and wakes the whole thing up. You won't taste vinegar. You'll just taste cabbage that's brighter and better.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S20",
+  "s": 379.725,
+  "e": 384.085,
+  "id": "c50",
+  "d": 4.36,
+  "T": 5,
+  "text": "It has to go in at the end, off the heat. If you cook it, it fades.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S21",
+  "s": 384.085,
+  "e": 393.485,
+  "id": "c51",
+  "d": 9.4,
+  "T": 10,
+  "text": "Look at that. Glossy, sweet, with brown edges and bits of bacon all through it. And smell it. It smells like bacon and onion. Not one bit of hospital.",
+  "pad": 0.6
+ },
+ {
+  "sc": "S22",
+  "s": 393.485,
+  "e": 394.705,
+  "id": "c52",
+  "d": 1.22,
+  "T": 2,
+  "text": "Rusty. Come here.",
+  "pad": 0.78
+ },
+ {
+  "sc": "S23",
+  "s": 394.705,
+  "e": 402.492,
+  "id": "c53",
+  "d": 7.787,
+  "T": 8,
+  "text": "Rusty told me once he hated cabbage until he was twenty-seven. That's the year he came to work here. He's eaten more of this than anybody alive.",
+  "pad": 0.21
+ },
+ {
+  "sc": "S24",
+  "s": 402.492,
+  "e": 409.232,
+  "id": "c54",
+  "d": 6.74,
+  "T": 7,
+  "text": "Let me tell you about the bet. There was a hand on the crew one winter named Tomás. He swore up and down he would never eat cabbage.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S24",
+  "s": 409.232,
+  "e": 419.852,
+  "id": "c55",
+  "d": 10.62,
+  "T": 11,
+  "text": "His mother boiled it every Sunday when he was a boy, and he said the smell was still in his clothes. So Rusty bet him five dollars he'd eat a whole bowl of mine and ask for more. Tomás took the bet.",
+  "pad": 0.38
+ },
+ {
+  "sc": "S24",
+  "s": 419.852,
+  "e": 430.63,
+  "id": "c56",
+  "d": 10.778,
+  "T": 11,
+  "text": "He didn't know what was in the pot. I fried it just like this, and I didn't tell him. He ate the bowl. He asked for more. When Rusty told him it was cabbage, he didn't believe it. He went and looked in the pot.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S24",
+  "s": 430.63,
+  "e": 437.31,
+  "id": "c57",
+  "d": 6.68,
+  "T": 7,
+  "text": "Then he paid Rusty the five dollars, and he ate a third bowl. He said if he was paying for it, he was going to get his money's worth.",
+  "pad": 0.32
+ },
+ {
+  "sc": "S25",
+  "s": 437.31,
+  "e": 444.89,
+  "id": "c58",
+  "d": 7.58,
+  "T": 8,
+  "text": "What goes with it? Everything we've made so far. It's perfect next to the pork chops. With the ribs, it cuts the sweetness of the glaze.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S25",
+  "s": 444.89,
+  "e": 451.47,
+  "id": "c59",
+  "d": 6.58,
+  "T": 7,
+  "text": "With a bowl of beans and a tortilla, it's a whole meal for someone who doesn't eat meat, if you make it with butter instead of bacon.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S25",
+  "s": 451.47,
+  "e": 457.27,
+  "id": "c60",
+  "d": 5.8,
+  "T": 6,
+  "text": "Next to a steak, it's better than any salad. On the ranch, it was on the table more nights than not.",
+  "pad": 0.2
+ },
+ {
+  "sc": "S26",
+  "s": 457.27,
+  "e": 464.291,
+  "id": "c61",
+  "d": 7.021,
+  "T": 8,
+  "text": "I put every one of these recipes in a book, the way we really made them. I'll tell you about it at the end. First, what goes wrong.",
+  "pad": 0.98
+ },
+ {
+  "sc": "S27",
+  "s": 464.291,
+  "e": 475.191,
+  "id": "c62",
+  "d": 10.9,
+  "T": 12,
+  "text": "It's smelly and soggy. You covered it, or you added water. Open pan, medium-high, nothing wet. If your pot's too small and the cabbage is piled up deep, it'll steam in its own water.",
+  "pad": 1.1
+ },
+ {
+  "sc": "S27",
+  "s": 475.191,
+  "e": 486.371,
+  "id": "c63",
+  "d": 11.18,
+  "T": 12,
+  "text": "Use a bigger pot, or cook it in two batches. It's still crunchy and raw. You cut it too thick, or you didn't cook it long enough. Inch-wide ribbons. And give it the full twelve minutes. It tastes flat.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S27",
+  "s": 486.371,
+  "e": 497.76,
+  "id": "c64",
+  "d": 11.389,
+  "T": 12,
+  "text": "You skipped the vinegar. Or the salt. Cabbage needs a full teaspoon of salt for a whole head. Taste it at the end. If it needs more, add a pinch and toss. It burned. The heat was too high and you didn't toss it.",
+  "pad": 0.61
+ },
+ {
+  "sc": "S27",
+  "s": 497.76,
+  "e": 509.24,
+  "id": "c65",
+  "d": 11.48,
+  "T": 12,
+  "text": "Medium-high, not high. And keep it moving every minute or two. It's greasy. Too much bacon fat. Three tablespoons is right. If your bacon was very fatty, pour some off before the onion goes in.",
+  "pad": 0.52
+ },
+ {
+  "sc": "S28",
+  "s": 509.24,
+  "e": 520.42,
+  "id": "c66",
+  "d": 11.18,
+  "T": 12,
+  "text": "At the store, pick up the cabbage and feel the weight. It should feel heavy for its size, like a bowling ball. A light one is old and dried out inside. The leaves should be tight and shiny, not loose or wilted.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S28",
+  "s": 520.42,
+  "e": 530.351,
+  "id": "c67",
+  "d": 9.931,
+  "T": 11,
+  "text": "No black spots. A head of green cabbage runs about ninety cents a pound right now, so a two-and-a-half-pound head is about two dollars and twenty cents. That's a side dish for six people.",
+  "pad": 1.07
+ },
+ {
+  "sc": "S28",
+  "s": 530.351,
+  "e": 540.691,
+  "id": "c68",
+  "d": 10.34,
+  "T": 11,
+  "text": "And keep it in the crisper drawer of your fridge, whole. Don't cut it until you use it. A whole cabbage will keep three or four weeks in there. Once you cut it, wrap the rest tight and use it in a few days.",
+  "pad": 0.66
+ },
+ {
+  "sc": "S29",
+  "s": 540.691,
+  "e": 550.717,
+  "id": "c69",
+  "d": 10.026,
+  "T": 11,
+  "text": "What about other kinds of cabbage? Red cabbage works, but it turns a little blue-purple when it cooks. The vinegar brings the red color back. Savoy cabbage, the crinkly one, is more tender,",
+  "pad": 0.97
+ },
+ {
+  "sc": "S29",
+  "s": 550.717,
+  "e": 556.637,
+  "id": "c70",
+  "d": 5.92,
+  "T": 7,
+  "text": "so cook it about eight minutes instead of twelve. Napa cabbage is too delicate for this. It turns to water.",
+  "pad": 1.08
+ },
+ {
+  "sc": "S30",
+  "s": 556.637,
+  "e": 563.617,
+  "id": "c71",
+  "d": 6.98,
+  "T": 8,
+  "text": "Now here's how you turn it into supper. Instead of bacon, use a pound of smoked sausage. The kind that comes in a horseshoe ring.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S30",
+  "s": 563.617,
+  "e": 569.457,
+  "id": "c72",
+  "d": 5.84,
+  "T": 6,
+  "text": "Slice it into coins and brown them in a tablespoon of lard until they're golden on both sides. Lift them out,",
+  "pad": 0.16
+ },
+ {
+  "sc": "S30",
+  "s": 569.457,
+  "e": 578.948,
+  "id": "c73",
+  "d": 9.491,
+  "T": 10,
+  "text": "then do the onion and the cabbage in the fat, exactly the same way, and stir the sausage back in at the end with the vinegar. That's a whole supper in one pot. Cabbage and sausage.",
+  "pad": 0.51
+ },
+ {
+  "sc": "S30",
+  "s": 578.948,
+  "e": 585.788,
+  "id": "c74",
+  "d": 6.84,
+  "T": 7,
+  "text": "With a piece of cornbread or some tortillas, that fed the winter crew once a week. About two dollars and fifty cents a plate.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S31",
+  "s": 585.788,
+  "e": 593.628,
+  "id": "c75",
+  "d": 7.84,
+  "T": 8,
+  "text": "And while you've got a cabbage, here's the other thing we did with it, raw. Because sometimes you've only used half a head, and the other half is sitting there.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S32",
+  "s": 593.628,
+  "e": 604.728,
+  "id": "c76",
+  "d": 11.1,
+  "T": 12,
+  "text": "Ranch slaw. No mayonnaise. Slice a quarter of a head of cabbage as thin as you can. Thin this time, like hair. Put it in a bowl with a big pinch of salt and squeeze it with your hands for a minute.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S32",
+  "s": 604.728,
+  "e": 614.548,
+  "id": "c77",
+  "d": 9.82,
+  "T": 10,
+  "text": "It'll soften and give up a little water. Pour that water off. Add a quarter of an onion sliced thin, a handful of chopped cilantro, the juice of two limes, a tablespoon of oil,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S32",
+  "s": 614.548,
+  "e": 625.108,
+  "id": "c78",
+  "d": 10.56,
+  "T": 11,
+  "text": "and if you like, a little chopped jalapeño. Toss it and let it sit ten minutes. It's crunchy and sharp and cold. Pile that on top of the ribs, or the beans, or a pork chop in a tortilla.",
+  "pad": 0.44
+ },
+ {
+  "sc": "S32",
+  "s": 625.108,
+  "e": 629.168,
+  "id": "c79",
+  "d": 4.06,
+  "T": 5,
+  "text": "That's what we put on everything in the summer, when it was too hot to want anything heavy.",
+  "pad": 0.94
+ },
+ {
+  "sc": "S33",
+  "s": 629.168,
+  "e": 635.888,
+  "id": "c80",
+  "d": 6.72,
+  "T": 7,
+  "text": "And I'll tell you something the old cooks knew without any books. On a ranch in the winter, with no fresh fruit for weeks,",
+  "pad": 0.28
+ },
+ {
+  "sc": "S33",
+  "s": 635.888,
+  "e": 647.189,
+  "id": "c81",
+  "d": 11.301,
+  "T": 12,
+  "text": "cabbage kept the men healthy. One cup of raw cabbage has about a third of the vitamin C a grown man needs in a day. Sailors used to carry it on ships for that reason. It's cheap, it keeps for weeks, and it's good for you.",
+  "pad": 0.7
+ },
+ {
+  "sc": "S33",
+  "s": 647.189,
+  "e": 651.169,
+  "id": "c82",
+  "d": 3.98,
+  "T": 5,
+  "text": "Most people only think of it on Saint Patrick's Day. We ate it twice a week.",
+  "pad": 1.02
+ },
+ {
+  "sc": "S34",
+  "s": 651.169,
+  "e": 659.609,
+  "id": "c83",
+  "d": 8.44,
+  "T": 9,
+  "text": "Leftovers. Three days in the fridge. It's actually good cold, straight out of the container, with a fork. I'm not ashamed to say I've eaten it that way at midnight.",
+  "pad": 0.56
+ },
+ {
+  "sc": "S35",
+  "s": 659.609,
+  "e": 670.107,
+  "id": "c84",
+  "d": 10.498,
+  "T": 11,
+  "text": "And on the third day, if there's still cabbage in the fridge, it becomes soup. That's the last thing we did with it. Put the leftover fried cabbage in a pot with four cups of chicken broth, a can of tomatoes,",
+  "pad": 0.5
+ },
+ {
+  "sc": "S35",
+  "s": 670.107,
+  "e": 680.067,
+  "id": "c85",
+  "d": 9.96,
+  "T": 11,
+  "text": "a potato cut in small cubes, and a little of the smoked sausage if you've got it. Bring it up to a simmer and let it go twenty minutes, until the potato is soft. Taste it, a pinch of salt,",
+  "pad": 1.04
+ },
+ {
+  "sc": "S35",
+  "s": 680.067,
+  "e": 691.887,
+  "id": "c86",
+  "d": 11.82,
+  "T": 12,
+  "text": "and a squeeze of lime right before you serve it. Because the cabbage was fried first, the soup tastes smoky and sweet, not like hospital soup at all. In the winter, a pot of that sat on the back of the stove all day,",
+  "pad": 0.18
+ },
+ {
+  "sc": "S35",
+  "s": 691.887,
+  "e": 697.102,
+  "id": "c87",
+  "d": 5.215,
+  "T": 6,
+  "text": "and the men would come in from the cold and help themselves. Nobody asked what was in it. Nobody had to.",
+  "pad": 0.79
+ },
+ {
+  "sc": "S36",
+  "s": 697.102,
+  "e": 708.942,
+  "id": "c88",
+  "d": 11.84,
+  "T": 12,
+  "text": "But here's the breakfast. Leftover cabbage in a skillet with a spoon of bacon grease, medium-high, until it's hot and browning again. Make two wells in it, crack an egg into each one. Lid on, two minutes,",
+  "pad": 0.16
+ },
+ {
+  "sc": "S36",
+  "s": 708.942,
+  "e": 716.112,
+  "id": "c89",
+  "d": 7.17,
+  "T": 8,
+  "text": "until the whites are set. That one I made for myself every morning in the winter. Cabbage and eggs. Nobody believes me until they try it.",
+  "pad": 0.83
+ },
+ {
+  "sc": "S37",
+  "s": 716.112,
+  "e": 723.142,
+  "id": "c90",
+  "d": 7.03,
+  "T": 8,
+  "text": "Or put it in a warm tortilla with a little crumbled cheese and some hot sauce. It sounds strange. It's one of the best tacos I know.",
+  "pad": 0.97
+ },
+ {
+  "sc": "S38",
+  "s": 723.142,
+  "e": 732.813,
+  "id": "c91",
+  "d": 9.671,
+  "T": 10,
+  "text": "What it costs. One head of cabbage, about two dollars twenty. Six strips of bacon, about two dollars forty. An onion, a dollar thirty. Butter, vinegar,",
+  "pad": 0.33
+ },
+ {
+  "sc": "S38",
+  "s": 732.813,
+  "e": 744.653,
+  "id": "c92",
+  "d": 11.84,
+  "T": 12,
+  "text": "salt, pepper, chile, call it sixty cents. That's six dollars and fifty cents. It feeds six people as a side. About a dollar and ten cents a plate. With the sausage version as supper, it's about two-fifty a plate.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S38",
+  "s": 744.653,
+  "e": 748.793,
+  "id": "c93",
+  "d": 4.14,
+  "T": 5,
+  "text": "You can't feed a family on that little with anything else in the store that tastes this good.",
+  "pad": 0.86
+ },
+ {
+  "sc": "S39",
+  "s": 748.793,
+  "e": 753.973,
+  "id": "c94",
+  "d": 5.18,
+  "T": 6,
+  "text": "For a crowd. Two heads. Here's the thing, you can't just double it in one pot.",
+  "pad": 0.82
+ },
+ {
+  "sc": "S39",
+  "s": 753.973,
+  "e": 765.4,
+  "id": "c95",
+  "d": 11.427,
+  "T": 12,
+  "text": "Too much cabbage piled up will steam instead of fry, and you're back to the hospital. Use a big roasting pan across two burners, or two pots. Or do it in batches, and keep the first batch warm in a low oven,",
+  "pad": 0.57
+ },
+ {
+  "sc": "S39",
+  "s": 765.4,
+  "e": 771.76,
+  "id": "c96",
+  "d": 6.36,
+  "T": 7,
+  "text": "two hundred degrees, while the second one cooks. Put all the bacon and all the vinegar in at the end when you combine them.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S40",
+  "s": 771.76,
+  "e": 778.12,
+  "id": "c97",
+  "d": 6.36,
+  "T": 7,
+  "text": "For two. Half a head, three strips of bacon, half an onion, half of everything. In a twelve-inch skillet.",
+  "pad": 0.64
+ },
+ {
+  "sc": "S40",
+  "s": 778.12,
+  "e": 784.7,
+  "id": "c98",
+  "d": 6.58,
+  "T": 7,
+  "text": "Wrap the other half of the cabbage tight and use it in a few days. Or make the whole thing and have it for breakfast with eggs.",
+  "pad": 0.42
+ },
+ {
+  "sc": "S41",
+  "s": 784.7,
+  "e": 791.436,
+  "id": "c99",
+  "d": 6.736,
+  "T": 7,
+  "text": "Outside. In a Dutch oven on a grate over a good hot fire, lid off. Same thing. We did this at brandings.",
+  "pad": 0.26
+ },
+ {
+  "sc": "S41",
+  "s": 791.436,
+  "e": 796.696,
+  "id": "c100",
+  "d": 5.26,
+  "T": 6,
+  "text": "The smell of bacon frying would bring the whole crew over to the fire before I'd even started the cabbage.",
+  "pad": 0.74
+ },
+ {
+  "sc": "S42",
+  "s": 796.696,
+  "e": 807.456,
+  "id": "c101",
+  "d": 10.76,
+  "T": 11,
+  "text": "A couple of questions. Can I make it without bacon? Yes. Use three tablespoons of butter, or butter and oil, and a teaspoon of smoked paprika for that smoky taste. It's still good.",
+  "pad": 0.24
+ },
+ {
+  "sc": "S42",
+  "s": 807.456,
+  "e": 817.056,
+  "id": "c102",
+  "d": 9.6,
+  "T": 10,
+  "text": "Is it spicy? Half a teaspoon of chile flakes in a whole head of cabbage is just a little warm. If your family doesn't like any heat, leave it out. Add a little extra black pepper.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S42",
+  "s": 817.056,
+  "e": 826.488,
+  "id": "c103",
+  "d": 9.432,
+  "T": 10,
+  "text": "Can I use bagged coleslaw mix? It works in a pinch, and it's fast. But it's cut very thin, so it cooks in about five minutes. Watch it. Why apple cider vinegar?",
+  "pad": 0.57
+ },
+ {
+  "sc": "S42",
+  "s": 826.488,
+  "e": 834.208,
+  "id": "c104",
+  "d": 7.72,
+  "T": 8,
+  "text": "It's a little sweet and fruity, and it goes with the bacon. White vinegar is sharper. Use half as much. A squeeze of lemon or lime works too.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S43",
+  "s": 834.208,
+  "e": 844.808,
+  "id": "c105",
+  "d": 10.6,
+  "T": 11,
+  "text": "If you don't eat pork, here's what you do. Smoked turkey. A smoked turkey leg or smoked turkey wings, the meat pulled off and chopped. Fry it in two tablespoons of oil until it's brown on the edges.",
+  "pad": 0.4
+ },
+ {
+  "sc": "S43",
+  "s": 844.808,
+  "e": 849.228,
+  "id": "c106",
+  "d": 4.42,
+  "T": 5,
+  "text": "You'll get that smoky flavor. Or salt pork, if you want it even more old-fashioned.",
+  "pad": 0.58
+ },
+ {
+  "sc": "S43",
+  "s": 849.228,
+  "e": 856.728,
+  "id": "c107",
+  "d": 7.5,
+  "T": 8,
+  "text": "That's like bacon without the smoke. Or just oil, with a teaspoon of smoked paprika. It's not the same as bacon. But it's still good cabbage.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S44",
+  "s": 856.728,
+  "e": 868.448,
+  "id": "c108",
+  "d": 11.72,
+  "T": 12,
+  "text": "And what to eat with it. When it was cold, I made a skillet of cornbread to go with this. Cornbread and cabbage and a pot of beans. Nothing else. The men called it the poor man's feast, and they meant it as a compliment.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S44",
+  "s": 868.448,
+  "e": 873.948,
+  "id": "c109",
+  "d": 5.5,
+  "T": 6,
+  "text": "Crumble the cornbread right into the bowl and pour the juice from the cabbage over it. That's how Rusty eats it.",
+  "pad": 0.5
+ },
+ {
+  "sc": "S45",
+  "s": 873.948,
+  "e": 884.673,
+  "id": "c110",
+  "d": 10.725,
+  "T": 11,
+  "text": "A whole cabbage keeps, and that's why the old cooks loved it. In winter, when nothing else was fresh, there was always cabbage. Once you cut it, wrap the cut side tight and use it within a few days.",
+  "pad": 0.28
+ },
+ {
+  "sc": "S46",
+  "s": 884.673,
+  "e": 896.513,
+  "id": "c111",
+  "d": 11.84,
+  "T": 12,
+  "text": "Let me tell you why cabbage saved this ranch one winter. Nineteen ninety-two. The snow came early, in October, and it didn't stop. The roads closed for almost three weeks. No trucks, no store.",
+  "pad": 0.16
+ },
+ {
+  "sc": "S46",
+  "s": 896.513,
+  "e": 906.833,
+  "id": "c112",
+  "d": 10.32,
+  "T": 11,
+  "text": "We had beef in the freezer and beans in the pantry, and in the cellar, Don Ernesto had put up sixty heads of cabbage that fall, twice what we usually kept. Everybody laughed at him that fall.",
+  "pad": 0.68
+ },
+ {
+  "sc": "S46",
+  "s": 906.833,
+  "e": 917.956,
+  "id": "c113",
+  "d": 11.123,
+  "T": 12,
+  "text": "\"Sixty cabbages, old man?\" By the second week, there was nothing green on this ranch except those cabbages. I fried them, I made slaw, I put them in soup. Every night. Nobody laughed anymore.",
+  "pad": 0.88
+ },
+ {
+  "sc": "S46",
+  "s": 917.956,
+  "e": 925.836,
+  "id": "c114",
+  "d": 7.88,
+  "T": 9,
+  "text": "A head of cabbage keeps for weeks, even months in a cold cellar. That winter, the men started calling him \"Don Repollo.\" He liked it.",
+  "pad": 1.12
+ },
+ {
+  "sc": "S47",
+  "s": 925.836,
+  "e": 936.076,
+  "id": "c115",
+  "d": 10.24,
+  "T": 11,
+  "text": "A little thing about cleaning cabbage. The outside leaves are the ones that got handled at the store and sat in the dust. Pull off the first two or three leaves and throw them away, or into the stock pot.",
+  "pad": 0.76
+ },
+ {
+  "sc": "S47",
+  "s": 936.076,
+  "e": 942.936,
+  "id": "c116",
+  "d": 6.86,
+  "T": 8,
+  "text": "Underneath, the cabbage is clean and tight. You don't need to wash every leaf. Rinse the head under the tap, dry it, and cut it.",
+  "pad": 1.14
+ },
+ {
+  "sc": "S47",
+  "s": 942.936,
+  "e": 949.868,
+  "id": "c117",
+  "d": 6.932,
+  "T": 8,
+  "text": "If you see little holes or a worm or two, that happens with cabbage from a garden. Cut that part away. It's a sign nobody sprayed it.",
+  "pad": 1.07
+ },
+ {
+  "sc": "S48",
+  "s": 949.868,
+  "e": 959.328,
+  "id": "c118",
+  "d": 9.46,
+  "T": 10,
+  "text": "Can you put a lid on it? For a few minutes, at the start, yes. If you've got a really big pile of cabbage, and it won't all fit, put the lid on for three minutes, and it wilts down fast.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S48",
+  "s": 959.328,
+  "e": 971.078,
+  "id": "c119",
+  "d": 11.75,
+  "T": 12,
+  "text": "But then the lid comes off and stays off. With the lid on, it steams, and it goes soft and pale. You want the edges to touch the hot pan and brown. That brown is the flavor. A wet cabbage never browns.",
+  "pad": 0.25
+ },
+ {
+  "sc": "S49",
+  "s": 971.078,
+  "e": 980.17,
+  "id": "c120",
+  "d": 9.092,
+  "T": 10,
+  "text": "And one more way the crew ate this that I haven't told you. Breakfast. On a cold morning, I'd put fried cabbage in a hot tortilla with a spoon of beans and a fried egg on top.",
+  "pad": 0.91
+ },
+ {
+  "sc": "S49",
+  "s": 980.17,
+  "e": 988.63,
+  "id": "c121",
+  "d": 8.46,
+  "T": 9,
+  "text": "That was a full meal for a man going out to ride fence all day, and it cost almost nothing. If you've got leftover cabbage tomorrow morning, try it. You'll see.",
+  "pad": 0.54
+ },
+ {
+  "sc": "S50",
+  "s": 988.63,
+  "e": 998.25,
+  "id": "c122",
+  "d": 9.62,
+  "T": 10,
+  "text": "Now, about the book. This crew book has every way we ever cooked a cabbage, and in the winter, that's a lot of pages. A few years ago I put all of it, every recipe,",
+  "pad": 0.38
+ },
+ {
+  "sc": "S50",
+  "s": 998.25,
+  "e": 1002.35,
+  "id": "c123",
+  "d": 4.1,
+  "T": 5,
+  "text": "the way we really made them, into a real book. The Vaquero's Cookbook.",
+  "pad": 0.9
+ },
+ {
+  "sc": "S51",
+  "s": 1002.35,
+  "e": 1013.903,
+  "id": "c124",
+  "d": 11.553,
+  "T": 12,
+  "text": "This cabbage is on page forty-seven. The cut, the bacon, the open pan, the vinegar at the end, and the sausage supper. And the pork chops, the beans, the ribs, the potatoes and the steak from before, and the chicken,",
+  "pad": 0.45
+ },
+ {
+  "sc": "S51",
+  "s": 1013.903,
+  "e": 1024.133,
+  "id": "c125",
+  "d": 10.23,
+  "T": 11,
+  "text": "the green beans, the eggs. It's twenty-seven dollars. Every recipe from the ranch for less than one family dinner out. The link is right below this video. Or point your phone at this code.",
+  "pad": 0.77
+ },
+ {
+  "sc": "S52",
+  "s": 1024.133,
+  "e": 1033.913,
+  "id": "c126",
+  "d": 9.78,
+  "T": 10,
+  "text": "That's it. Bacon fat, an open pan, medium-high. No water, no lid. Vinegar at the very end. Next time, chicken thighs. Stop frying them in oil.",
+  "pad": 0.22
+ },
+ {
+  "sc": "S52",
+  "s": 1033.913,
+  "e": 1043.019,
+  "id": "c127",
+  "d": 9.106,
+  "T": 10,
+  "text": "I'll show you how we got the skin so crisp it shatters, in a cold skillet, without one drop of oil, and then finished them in red chile. Ándale, mijo. See you then.",
+  "pad": 0.89
+ }
+]

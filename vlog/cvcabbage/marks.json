@@ -1,0 +1,267 @@
+{
+ "S00": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chorro ámbar de grasa de tocino sobre el repollo en la olla"
+ },
+ "S01": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio junto a la olla, repollo al lado"
+ },
+ "S02": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio descuelga la olla honda"
+ },
+ "S03": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo verde entero sobre la tabla"
+ },
+ "S04": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio con el cuaderno de la cuadrilla"
+ },
+ "S05": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tocino cortado en trozos sobre la tabla"
+ },
+ "S06": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tocino grueso y tocino fino lado a lado sobre la tabla"
+ },
+ "S07": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio corta el repollo en cuartos y saca el corazón"
+ },
+ "S08": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo cortado en tiras de una pulgada"
+ },
+ "S09": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "tocino friéndose en la olla"
+ },
+ "S10": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio saca el tocino crocante con una espumadera"
+ },
+ "S11": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "cebolla en la grasa de tocino"
+ },
+ "S12": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "primera tanda de repollo entra a la olla"
+ },
+ "S13": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "repollo marchitándose, el volumen baja"
+ },
+ "S14": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "segunda tanda de repollo, sal y chile"
+ },
+ "S15": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "repollo friéndose, bordes dorándose, sin tapa"
+ },
+ "S16": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio prueba un trozo de repollo con pinzas"
+ },
+ "S17": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "nieve liviana afuera, corral gris de invierno"
+ },
+ "S18": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio apaga el fuego"
+ },
+ "S19": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "manteca y tocino vuelven al repollo"
+ },
+ "S20": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "chorrito de vinagre de manzana sobre el repollo"
+ },
+ "S21": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tazón de repollo frito con tocino, bordes dorados"
+ },
+ "S22": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty come del tazón con un tenedor"
+ },
+ "S23": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Rusty sigue comiendo"
+ },
+ "S24": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana, olla al fondo"
+ },
+ "S25": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "plato de cerdo, repollo frito y frijoles"
+ },
+ "S26": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio limpia las pinzas"
+ },
+ "S27": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno abierto"
+ },
+ "S28": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio en la verdulería, sosteniendo un repollo"
+ },
+ "S29": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo morado y repollo crespo junto al verde"
+ },
+ "S30": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "salchicha ahumada en rodajas sobre la tabla"
+ },
+ "S31": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "Claudio sostiene la otra mitad de un repollo crudo"
+ },
+ "S32": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo cortado muy fino en un bol, lima, cebolla, cilantro"
+ },
+ "S33": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo crudo picado, vitamina, un vaso de agua"
+ },
+ "S34": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo sobrante en recipiente"
+ },
+ "S35": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "olla de caldo de repollo con salchicha y papas"
+ },
+ "S36": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "repollo sobrante frito con huevos en la sartén"
+ },
+ "S37": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tortillas con repollo frito y queso"
+ },
+ "S38": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "ingredientes con precios"
+ },
+ "S39": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "asadera grande sobre dos hornallas, repollo en tandas"
+ },
+ "S40": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "media cabeza en la sartén chica"
+ },
+ "S41": {
+  "set": "B1",
+  "lugar": "fogón afuera",
+  "estado": "Dutch oven abierto sobre el fuego con repollo"
+ },
+ "S42": {
+  "set": "A2",
+  "lugar": "pared de sartenes",
+  "estado": "Claudio cuelga la espumadera"
+ },
+ "S43": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "tocino salado, pavo ahumado y aceite junto al repollo"
+ },
+ "S44": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo frito servido con pan de maíz en una sartén de hierro"
+ },
+ "S45": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "un repollo partido al medio, envuelto en plástico, en la heladera"
+ },
+ "S46": {
+  "set": "A4",
+  "lugar": "ventana",
+  "estado": "Claudio junto a la ventana, cuenta"
+ },
+ "S47": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "hojas exteriores de repollo descartadas, cabeza limpia al lado"
+ },
+ "S48": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "repollo en la olla tapada con la tapa de vidrio"
+ },
+ "S49": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "repollo frito en una tortilla con frijoles y salsa"
+ },
+ "S50": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el cuaderno de la cuadrilla"
+ },
+ "S51": {
+  "set": "A3",
+  "lugar": "mesa",
+  "estado": "el libro impreso abierto en la página 47"
+ },
+ "S52": {
+  "set": "A1",
+  "lugar": "estufa",
+  "estado": "Claudio frente a la estufa, muslos de pollo en una bandeja"
+ }
+}
