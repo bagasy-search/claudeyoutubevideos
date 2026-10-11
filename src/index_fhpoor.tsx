@@ -1,0 +1,6 @@
+// fhpoor · editado a mano por Claude: entry propio (farm con public reducida)
+import { registerRoot, Composition } from "remotion";
+import { Full, TOTAL_S } from "./fhpoor/Full";
+registerRoot(() => (
+  <Composition id="Full" component={Full} durationInFrames={Math.round(TOTAL_S * 30)} fps={30} width={1920} height={1080} />
+));
