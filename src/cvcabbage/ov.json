@@ -1,0 +1,184 @@
+[
+ {
+  "c": "CvPromise",
+  "from": 113,
+  "dur": 210,
+  "props": {
+   "title": "Fried cabbage they fight over",
+   "lines": [
+    "No boiled-cabbage smell",
+    "Browned and sweet in bacon fat",
+    "A whole head for under $3"
+   ],
+   "bed": "vid/cvcabbage/bed_0.mp4#214"
+  },
+  "t": 3.76
+ },
+ {
+  "c": "CvOldPhoto",
+  "from": 1535,
+  "dur": 225,
+  "props": {
+   "img": "img/cvcabbage/joven.jpg",
+   "caption": "Winter supply run, 1987",
+   "date": "'87 01 22",
+   "stamp": "40 years · 14 men",
+   "bed": "vid/cvcabbage/bed_1.mp4#229"
+  },
+  "t": 51.17
+ },
+ {
+  "c": "ClDoDont",
+  "from": 1097,
+  "dur": 150,
+  "props": {
+   "yes": {
+    "label": "Fried, open pan"
+   },
+   "no": {
+    "label": "Boiled, lid on"
+   },
+   "bed": "vid/cvcabbage/bed_2.mp4#154"
+  },
+  "t": 36.55
+ },
+ {
+  "c": "ClCheck",
+  "from": 3896,
+  "dur": 300,
+  "props": {
+   "title": "WHAT YOU NEED",
+   "items": [
+    "6 strips bacon",
+    "1 onion, sliced",
+    "1 head green cabbage (2½ lb)",
+    "1 tsp salt · ½ tsp pepper",
+    "½ tsp red chile flakes",
+    "1 tbsp butter + 1 tbsp cider vinegar"
+   ],
+   "bed": "vid/cvcabbage/bed_3.mp4#304"
+  },
+  "t": 129.86
+ },
+ {
+  "c": "ClChip",
+  "from": 5899,
+  "dur": 120,
+  "props": {
+   "text": "Ribbons · one inch wide",
+   "corner": "tl"
+  },
+  "t": 196.63
+ },
+ {
+  "c": "ClChip",
+  "from": 6371,
+  "dur": 135,
+  "props": {
+   "text": "Bacon in COLD · then medium",
+   "corner": "tl"
+  },
+  "t": 212.35
+ },
+ {
+  "c": "ClTimer30",
+  "from": 8091,
+  "dur": 135,
+  "props": {
+   "minutes": 12,
+   "text": "10-12 minutes",
+   "label": "No lid · no water",
+   "bed": "vid/cvcabbage/bed_6.mp4#139"
+  },
+  "t": 269.71
+ },
+ {
+  "c": "ClChip",
+  "from": 10264,
+  "dur": 120,
+  "props": {
+   "text": "Heat OFF · then the finish",
+   "corner": "tl"
+  },
+  "t": 342.12
+ },
+ {
+  "c": "ClChip",
+  "from": 10541,
+  "dur": 135,
+  "props": {
+   "text": "1 tbsp cider vinegar · at the very end",
+   "alert": true,
+   "corner": "tl"
+  },
+  "t": 351.36
+ },
+ {
+  "c": "ClChip",
+  "from": 15015,
+  "dur": 120,
+  "props": {
+   "text": "Heavy for its size · tight shiny leaves",
+   "corner": "tl"
+  },
+  "t": 500.52
+ },
+ {
+  "c": "ClReceipt",
+  "from": 21221,
+  "dur": 420,
+  "props": {
+   "head": "WHAT IT COSTS",
+   "lines": [
+    [
+     "1 head green cabbage",
+     "$2.20"
+    ],
+    [
+     "6 strips bacon",
+     "$2.40"
+    ],
+    [
+     "1 onion",
+     "$1.30"
+    ],
+    [
+     "Butter, vinegar, salt, chile",
+     "$0.60"
+    ]
+   ],
+   "total": [
+    "Per plate (÷6)",
+    "$1.10"
+   ],
+   "bed": "vid/cvcabbage/bed_10.mp4#424"
+  },
+  "t": 707.37
+ },
+ {
+  "c": "ClBookPage",
+  "from": 29441,
+  "dur": 210,
+  "props": {
+   "page": "img/cvcabbage/page47.jpg",
+   "pageNo": 47,
+   "pageLabel": "PAGE",
+   "stamp": "This recipe, page 47",
+   "bed": "vid/cvcabbage/bed_11.mp4#214"
+  },
+  "t": 981.38
+ },
+ {
+  "c": "ClQRCard",
+  "from": 29985,
+  "dur": 180,
+  "props": {
+   "qr": "img/cvcabbage/qr.png",
+   "cover": "img/cvcabbage/cover.jpg",
+   "kicker": "THE VAQUERO'S COOKBOOK · $27",
+   "text": "point your phone here",
+   "bed": "vid/cvcabbage/bed_12.mp4#184"
+  },
+  "t": 999.5
+ }
+]

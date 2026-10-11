@@ -1,0 +1,5 @@
+vid/cvcabbage
+img/cvcabbage/cover.jpg
+img/cvcabbage/joven.jpg
+img/cvcabbage/page47.jpg
+img/cvcabbage/qr.png
