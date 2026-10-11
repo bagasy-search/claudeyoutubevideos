@@ -1,1 +1,227 @@
-[]
+[
+ {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 359,
+  "dur": 232,
+  "t": 11.97,
+  "props": {
+   "dish": "Repollo de la fonda",
+   "lines": [
+    "1 kilo de repollo",
+    "15 minutos",
+    "Y te piden otro plato"
+   ],
+   "at": [
+    2.23,
+    3.51,
+    6.73
+   ],
+   "bed": "vid/ccrepollo/bed_menu.mp4#241"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 597,
+  "dur": 210,
+  "t": 19.91,
+  "props": {
+   "photo": "img/ccrepollo/joven.jpg",
+   "caption": "el pizarrón del lunes · 1993",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.02,
+    3.19
+   ],
+   "bed": "vid/ccrepollo/bed_joven.mp4#214"
+  }
+ },
+ {
+  "c": "ClSmellClock",
+  "k": "olor",
+  "from": 5436,
+  "dur": 449,
+  "props": {
+   "bed": "img/ccrepollo/bed_reloj.jpg",
+   "at": [
+    1.78,
+    5.34,
+    7.05,
+    12.61
+   ]
+  },
+  "t": 181.21
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 7655,
+  "dur": 210,
+  "props": {
+   "title": "Repollo · 6 platos",
+   "rows": [
+    {
+     "k": "Tocino picado",
+     "v": "150 g"
+    },
+    {
+     "k": "Cebolla en tiras",
+     "v": "1"
+    },
+    {
+     "k": "Repollo, tiras de 2 cm",
+     "v": "1 kg"
+    },
+    {
+     "k": "Sal",
+     "v": "1 cdta"
+    },
+    {
+     "k": "Pimienta y chile de árbol",
+     "v": "½ + ½ cdta"
+    },
+    {
+     "k": "Mantequilla y vinagre",
+     "v": "1 + 1 cda"
+    }
+   ],
+   "mark": "sin agua y sin tapa",
+   "note": "en dos tandas",
+   "bed": "vid/ccrepollo/bed_1.mp4#214"
+  },
+  "t": 255.18
+ },
+ {
+  "c": "ClTimer30",
+  "k": "doce",
+  "from": 12317,
+  "dur": 108,
+  "props": {
+   "minutes": 12,
+   "label": "10-12 min",
+   "text": "sin tapa y sin agua",
+   "bed": "vid/ccrepollo/bed_2.mp4#112"
+  },
+  "t": 410.58
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 14928,
+  "dur": 250,
+  "props": {
+   "before": "img/ccrepollo/antes.jpg",
+   "after": "img/ccrepollo/despues.jpg",
+   "a": "HERVIDO 30 MIN",
+   "b": "SARTÉN 12 MIN",
+   "note": "mismo repollo"
+  },
+  "t": 497.59
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 15382,
+  "dur": 285,
+  "props": {
+   "title": "El repollo de la fonda",
+   "items": [
+    "Tocino dorado y fuera",
+    "Cebolla, 4 minutos",
+    "Repollo en dos tandas",
+    "Fuego medio-alto, 10 a 12 min",
+    "Sin tapa y sin agua",
+    "Apagas: mantequilla, tocino y vinagre"
+   ],
+   "bed": "vid/ccrepollo/bed_4.mp4#289"
+  },
+  "t": 512.73
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 27568,
+  "dur": 695,
+  "props": {
+   "head": "EL SARTÉN DE REPOLLO",
+   "lines": [
+    [
+     "Repollo, 1 kg",
+     "US$2.00"
+    ],
+    [
+     "Tocino, 150 g",
+     "US$2.00"
+    ],
+    [
+     "Cebolla",
+     "US$0.60"
+    ],
+    [
+     "Mantequilla, vinagre, especias",
+     "US$0.30"
+    ],
+    [
+     "Todo el sartén · 6 platos",
+     "US$4.90"
+    ]
+   ],
+   "total": [
+    "Cada plato",
+    "US$0.82"
+   ],
+   "bed": "vid/ccrepollo/bed_5.mp4#699"
+  },
+  "t": 918.92
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 29497,
+  "dur": 180,
+  "props": {
+   "page": "img/ccrepollo/page47.jpg",
+   "pageNo": 47,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/ccrepollo/bed_6.mp4#184"
+  },
+  "t": 983.24
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 29926,
+  "dur": 210,
+  "props": {
+   "qr": "img/ccrepollo/qr.jpg",
+   "cover": "img/ccrepollo/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/ccrepollo/bed_7.mp4#214"
+  },
+  "t": 997.52
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 30438,
+  "dur": 150,
+  "props": {
+   "thumb": "img/ccrepollo/th_ccmuslos.jpg",
+   "title": "Los muslos de la fonda",
+   "next": true,
+   "bed": "vid/ccrepollo/bed_8.mp4#154"
+  },
+  "t": 1014.58
+ }
+]
