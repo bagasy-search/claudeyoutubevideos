@@ -1,1 +1,253 @@
-[]
+[
+ {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 386,
+  "dur": 261,
+  "t": 12.86,
+  "props": {
+   "dish": "Muslos en su grasa",
+   "lines": [
+    "Sartén frío",
+    "20 minutos sin tocarlos",
+    "Salsa alrededor, nunca encima"
+   ],
+   "at": [
+    2.6,
+    3.92,
+    5.7
+   ],
+   "bed": "vid/ccmuslos/bed_menu.mp4#270"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 653,
+  "dur": 209,
+  "t": 21.77,
+  "props": {
+   "photo": "img/ccmuslos/joven.jpg",
+   "caption": "con mi amá, en la fonda · 1996",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.07,
+    2.69
+   ],
+   "bed": "vid/ccmuslos/bed_joven.mp4#213"
+  }
+ },
+ {
+  "c": "ClSkinLayers",
+  "k": "piel",
+  "from": 4351,
+  "dur": 571,
+  "props": {
+   "bed": "img/ccmuslos/bed_piel.jpg",
+   "at": [
+    2.3,
+    4.85,
+    6.63,
+    12.0
+   ]
+  },
+  "t": 145.02
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 7386,
+  "dur": 210,
+  "props": {
+   "title": "Muslos · 4 platos",
+   "rows": [
+    {
+     "k": "Muslos con piel y hueso",
+     "v": "8"
+    },
+    {
+     "k": "Sal",
+     "v": "2 cdtas"
+    },
+    {
+     "k": "Pimienta",
+     "v": "1 cdta"
+    },
+    {
+     "k": "Salsa de guajillo",
+     "v": "1 ½ tazas"
+    },
+    {
+     "k": "Cebolla en tiras",
+     "v": "½"
+    },
+    {
+     "k": "Cilantro picado",
+     "v": "al final"
+    }
+   ],
+   "mark": "sartén frío, sin aceite",
+   "note": "piel abajo",
+   "bed": "vid/ccmuslos/bed_1.mp4#214"
+  },
+  "t": 246.2
+ },
+ {
+  "c": "ClTimer30",
+  "k": "veinte",
+  "from": 9872,
+  "dur": 108,
+  "props": {
+   "minutes": 20,
+   "label": "18-22 min",
+   "text": "sin tocarlos",
+   "bed": "vid/ccmuslos/bed_2.mp4#112"
+  },
+  "t": 329.08
+ },
+ {
+  "c": "ClTimer30",
+  "k": "cinco",
+  "from": 11570,
+  "dur": 90,
+  "props": {
+   "minutes": 5,
+   "label": "5 min",
+   "text": "del otro lado",
+   "bed": "vid/ccmuslos/bed_3.mp4#94"
+  },
+  "t": 385.68
+ },
+ {
+  "c": "ClTimer30",
+  "k": "diez",
+  "from": 13305,
+  "dur": 108,
+  "props": {
+   "minutes": 10,
+   "label": "8-10 min",
+   "text": "salsa alrededor, sin tapa",
+   "bed": "vid/ccmuslos/bed_4.mp4#112"
+  },
+  "t": 443.51
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 14763,
+  "dur": 327,
+  "props": {
+   "before": "img/ccmuslos/antes.jpg",
+   "after": "img/ccmuslos/despues.jpg",
+   "a": "EN ACEITE + SALSA ENCIMA",
+   "b": "SU PROPIA GRASA",
+   "note": "mismo pollo"
+  },
+  "t": 492.1
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 15296,
+  "dur": 285,
+  "props": {
+   "title": "Los muslos de la fonda",
+   "items": [
+    "Secar y salar",
+    "Piel abajo, sartén frío",
+    "Fuego medio, 18-22 min sin tocar",
+    "Voltear, 5 minutos",
+    "Salsa alrededor, nunca encima",
+    "Sin tapa, hasta 80 °C"
+   ],
+   "bed": "vid/ccmuslos/bed_6.mp4#289"
+  },
+  "t": 509.88
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 27245,
+  "dur": 734,
+  "props": {
+   "head": "EL SARTÉN DE MUSLOS",
+   "lines": [
+    [
+     "8 muslos, 1.5 kg",
+     "US$6.00"
+    ],
+    [
+     "Salsa de guajillo",
+     "US$1.20"
+    ],
+    [
+     "Cebolla",
+     "US$0.30"
+    ],
+    [
+     "Cilantro",
+     "US$0.50"
+    ],
+    [
+     "Todo el sartén · 4 platos",
+     "US$8.00"
+    ]
+   ],
+   "total": [
+    "Cada plato",
+    "US$2.00"
+   ],
+   "bed": "vid/ccmuslos/bed_7.mp4#738"
+  },
+  "t": 908.17
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 29329,
+  "dur": 180,
+  "props": {
+   "page": "img/ccmuslos/page30.jpg",
+   "pageNo": 30,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/ccmuslos/bed_8.mp4#184"
+  },
+  "t": 977.65
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 29734,
+  "dur": 210,
+  "props": {
+   "qr": "img/ccmuslos/qr.jpg",
+   "cover": "img/ccmuslos/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/ccmuslos/bed_9.mp4#214"
+  },
+  "t": 991.15
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 30211,
+  "dur": 150,
+  "props": {
+   "thumb": "img/ccmuslos/th_cccarne.jpg",
+   "title": "La carne de la fonda",
+   "next": true,
+   "bed": "vid/ccmuslos/bed_10.mp4#154"
+  },
+  "t": 1007.02
+ }
+]
