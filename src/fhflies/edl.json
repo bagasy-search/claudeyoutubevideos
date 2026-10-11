@@ -1,0 +1,2143 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 7.84,
+"k": "",
+"c": "DropOpen",
+"props": {
+"k": "n_lemoncloves",
+"words": [
+[
+"See",
+0.0
+],
+[
+"this",
+0.26
+],
+[
+"lemon,",
+0.56
+],
+[
+"honey,",
+1.0
+],
+[
+"studded",
+1.36
+],
+[
+"with",
+1.84
+],
+[
+"cloves?",
+2.14
+],
+[
+"A",
+2.98
+],
+[
+"farm",
+3.14
+],
+[
+"kitchen",
+3.42
+],
+[
+"with",
+3.82
+],
+[
+"cows",
+4.08
+],
+[
+"next",
+4.44
+],
+[
+"door,",
+4.84
+],
+[
+"and",
+5.46
+],
+[
+"not",
+5.7
+],
+[
+"one",
+5.94
+],
+[
+"fly",
+6.36
+],
+[
+"on",
+6.62
+],
+[
+"the",
+6.86
+],
+[
+"supper",
+7.08
+],
+[
+"table.",
+7.3
+]
+],
+"ripple": 0.56
+}
+},
+{
+"a": 7.84,
+"b": 14.603,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 12,
+"unit": "OLD FARM WAYS",
+"txt": "NO SPRAY",
+"k": "n_farmwindow",
+"dur": 6
+}
+},
+{
+"a": 14.603,
+"b": 20.98,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 20.98,
+"b": 29.53,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 29.53,
+"b": 37.894,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/fhflies/th_other.jpg",
+"tag": "MY OTHER CHANNEL",
+"words": [
+[
+"12",
+31.72
+],
+[
+"Farm",
+32.06
+],
+[
+"Kitchen",
+32.4
+],
+[
+"Habits",
+32.78
+],
+[
+"That",
+33.22
+],
+[
+"Make",
+33.7
+],
+[
+"Your",
+33.9
+],
+[
+"Groceries",
+34.14
+],
+[
+"Last",
+34.54
+],
+[
+"Twice",
+34.9
+],
+[
+"as",
+35.24
+],
+[
+"Long",
+35.54
+]
+],
+"k": "n_barnyard"
+}
+},
+{
+"a": 37.894,
+"b": 48.416,
+"k": "s005_l_doorhold",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 48.416,
+"b": 54.593,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 12,
+"unit": "OLD FARM WAYS",
+"txt": "NO SPRAY",
+"k": "n_barnyard",
+"dur": 6
+}
+},
+{
+"a": 54.593,
+"b": 62.38,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page26",
+"tab": "CHAPTER 3 \u00b7 PAGE 26",
+"t": 56.773
+}
+],
+"k": "n_cornerib"
+}
+},
+{
+"a": 62.38,
+"b": 71.34,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 71.34,
+"b": 74.62,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 74.62,
+"b": 84.773,
+"k": "s010_n_barnyard",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 84.773,
+"b": 92.483,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_sink",
+"vid": true,
+"cap": "1950s \u00b7 a kitchen window and a sink",
+"credit": "The Last Word in Automatic Dishwashing (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 92.483,
+"b": 94.993,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 94.993,
+"b": 101.227,
+"k": "s013_n_screendoor",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 101.227,
+"b": 105.614,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 105.614,
+"b": 112.477,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_door",
+"vid": true,
+"cap": "1951 \u00b7 a doorway, Iowa State College",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 112.477,
+"b": 121.393,
+"k": "s016_l_morning",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 121.393,
+"b": 124.583,
+"k": "s017_n_sinkdry",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 124.583,
+"b": 129.267,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 129.267,
+"b": 134.9,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 134.9,
+"b": 138.08,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 138.08,
+"b": 144.283,
+"k": "s021_n_screentear",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 144.283,
+"b": 150.803,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 150.803,
+"b": 154.626,
+"k": "s023_n_garbagecan",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 154.626,
+"b": 158.46,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 158.46,
+"b": 168.337,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page27",
+"tab": "PAGE 27",
+"t": 158.46
+}
+],
+"k": "n_doorsweep"
+}
+},
+{
+"a": 168.337,
+"b": 172.87,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 172.87,
+"b": 182.9,
+"k": "s027_n_lemoncloves",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 182.9,
+"b": 203.29,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 27",
+"head": "A LIDDED GARBAGE CAN",
+"steps": [
+{
+"t": 187.847,
+"txt": "Flies come for the smell",
+"k": "n_garbagecan"
+},
+{
+"t": 196.207,
+"txt": "Out before it smells",
+"k": "n_garbagecan"
+},
+{
+"t": 199.213,
+"txt": "Meat scraps in the freezer",
+"k": "n_meatbag"
+}
+],
+"bed": "n_garbagecan"
+}
+},
+{
+"a": 203.29,
+"b": 209.047,
+"k": "s029_l_garbage",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 209.047,
+"b": 218.524,
+"k": "s030_n_canrinse",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 218.524,
+"b": 220.947,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 220.947,
+"b": 232.803,
+"k": "",
+"c": "CostTag",
+"props": {
+"price": "$5 \u2013 $25",
+"sub": "TAKES ABOUT 1 HOUR \u00b7 PAGE 27",
+"k": "n_jars"
+}
+},
+{
+"a": 232.803,
+"b": 243.983,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The door closes by itself.",
+"Or the flies walk right in."
+],
+"sig": "Mother's rule four \u00b7 page 6",
+"k": "n_screendoor",
+"size": 84
+}
+},
+{
+"a": 243.983,
+"b": 249.87,
+"k": "s034_n_doorsweep",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 249.87,
+"b": 252.667,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 252.667,
+"b": 264.084,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_door2",
+"vid": true,
+"cap": "1951 \u00b7 a doorway, Iowa State College",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 264.084,
+"b": 276.253,
+"k": "s037_n_paperbag",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 276.253,
+"b": 284.01,
+"k": "s038_n_flourweb",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 284.01,
+"b": 293.147,
+"k": "s039_l_sinkdry",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 293.147,
+"b": 297.84,
+"k": "s040_n_wetrag",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 297.84,
+"b": 304.58,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_scrub2",
+"vid": true,
+"cap": "1950s \u00b7 a kitchen sink",
+"credit": "The Last Word in Automatic Dishwashing (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 304.58,
+"b": 323.747,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 28",
+"head": "THE VINEGAR GLASS",
+"steps": [
+{
+"t": 311.193,
+"txt": "One inch of apple cider vinegar",
+"k": "n_vinegarglass"
+},
+{
+"t": 316.007,
+"txt": "One drop of dish soap",
+"k": "n_dropsoap"
+},
+{
+"t": 324.167,
+"txt": "A paper cone, narrow end down",
+"k": "n_vinegarglass"
+}
+],
+"bed": "n_vinegarglass"
+}
+},
+{
+"a": 323.747,
+"b": 330.844,
+"k": "s043_l_vinegar",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 330.844,
+"b": 342.47,
+"k": "s044_n_fruitbowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 342.47,
+"b": 346.42,
+"k": "s045_n_fridgefruit",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 346.42,
+"b": 361.596,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page48",
+"tab": "PAGE 48 \u00b7 SAFE AROUND KIDS",
+"t": 346.42
+}
+],
+"k": "n_basilpot"
+}
+},
+{
+"a": 361.596,
+"b": 369.976,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 369.976,
+"b": 379.827,
+"k": "s048_n_drainclear",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 379.827,
+"b": 390.853,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE SINK DRAIN",
+"page": "PAGE 29",
+"items": [
+{
+"t": 379.827,
+"txt": "Half a cup of baking soda"
+},
+{
+"t": 382.907,
+"txt": "One cup of white vinegar"
+},
+{
+"t": 389.927,
+"txt": "Boiling water, three nights in a row"
+}
+],
+"k": "n_bakingsoda"
+}
+},
+{
+"a": 390.853,
+"b": 397.233,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_scrub",
+"vid": true,
+"cap": "1950s \u00b7 scrubbing a kitchen sink",
+"credit": "The Last Word in Automatic Dishwashing (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 397.233,
+"b": 401.123,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kettle",
+"vid": true,
+"cap": "1950s \u00b7 a kettle at the sink",
+"credit": "The Last Word in Automatic Dishwashing (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 401.123,
+"b": 411.8,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_drainbrush",
+"txt": "Never after a chemical drain cleaner",
+"tag": "BE CAREFUL \u00b7 PAGE 29"
+}
+},
+{
+"a": 411.8,
+"b": 437.983,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "PAGE 32",
+"head": "CLOVE LEMONS ON THE SILL",
+"steps": [
+{
+"t": 418.72,
+"txt": "Ten or fifteen cloves per half",
+"k": "l_lemons"
+},
+{
+"t": 423.1,
+"txt": "On the sill or the table",
+"k": "n_basilpot"
+},
+{
+"t": 429.2,
+"txt": "Replace them when they dry out",
+"k": "n_lemoncloves"
+}
+],
+"bed": "l_lemons"
+}
+},
+{
+"a": 437.983,
+"b": 451.153,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"A small help.",
+"The screen does the real work."
+],
+"sig": "Mother's honest word \u00b7 page 32",
+"k": "n_basilpot",
+"size": 84
+}
+},
+{
+"a": 451.153,
+"b": 460.093,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 460.093,
+"b": 469.587,
+"k": "s056_n_porchlight",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 469.587,
+"b": 474.82,
+"k": "s057_l_porch",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 474.82,
+"b": 477.79,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 477.79,
+"b": 486.187,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page30",
+"tab": "PAGE 30 \u00b7 PANTRY MOTHS",
+"t": 477.98
+}
+],
+"k": "n_jars"
+}
+},
+{
+"a": 486.187,
+"b": 492.273,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_jars",
+"vid": true,
+"cap": "1951 \u00b7 jars on a kitchen counter",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 492.273,
+"b": 498.317,
+"k": "s061_n_pantryjars",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 498.317,
+"b": 506.966,
+"k": "s062_l_pantry",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 506.966,
+"b": 511.603,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 511.603,
+"b": 519.687,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/fhflies/qr.jpg",
+"t": 511.753
+}
+},
+{
+"a": 519.687,
+"b": 523.54,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 523.54,
+"b": 528.907,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "n_flourweb",
+"txt": "Keeping the good part of the bag",
+"cx": 50,
+"cy": 60
+}
+},
+{
+"a": 528.907,
+"b": 534.58,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_flourweb",
+"txt": "Throw out the whole bag",
+"tag": "THE RIGHT WAY \u00b7 PAGE 30"
+}
+},
+{
+"a": 534.58,
+"b": 537.493,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 537.493,
+"b": 547.8,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 547.8,
+"b": 553.627,
+"k": "s070_n_petbowl",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 553.627,
+"b": 563.477,
+"k": "s071_n_compost",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 563.477,
+"b": 566.767,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 566.767,
+"b": 576.92,
+"k": "s073_n_firewood",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 576.92,
+"b": 579.1,
+"k": "s074_n_cedar",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 579.1,
+"b": 584.137,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 584.137,
+"b": 596.247,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "ONE PEST, ONE PLAN",
+"page": "THING 12 OF 12 \u00b7 PAGE 6",
+"items": [
+{
+"t": 587.853,
+"txt": "Find what it is after"
+},
+{
+"t": 589.733,
+"txt": "Take that away"
+},
+{
+"t": 591.233,
+"txt": "Close the door it used"
+},
+{
+"t": 595.047,
+"txt": "Then, and only then, bait or trap"
+}
+],
+"k": "n_rubber"
+}
+},
+{
+"a": 596.247,
+"b": 610.123,
+"k": "s077_l_mother",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 610.123,
+"b": 614.867,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_writing",
+"vid": true,
+"cap": "1951 \u00b7 writing at a desk",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 614.867,
+"b": 630.12,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page47",
+"tab": "PAGE 47 \u00b7 BUG CALENDAR",
+"t": 614.867
+}
+],
+"k": "n_calendar"
+}
+},
+{
+"a": 630.12,
+"b": 632.84,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 632.84,
+"b": 639.663,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_child",
+"vid": true,
+"cap": "1951 \u00b7 a child on the rug, Iowa State College",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 639.663,
+"b": 651.56,
+"k": "",
+"c": "Memory",
+"props": {
+"k": "n_stovekettle",
+"caption": "Grandma, why are there no flies in here?",
+"date": "DANNY",
+"t": 639.793
+}
+},
+{
+"a": 651.56,
+"b": 658.49,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 658.49,
+"b": 674.173,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dining_hall_1950s",
+"vid": true,
+"cap": "1950s \u00b7 tables set for a dinner",
+"credit": "Hotel and Restaurant Workers (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 674.173,
+"b": 680.533,
+"k": "s085_n_potatosalad",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 680.533,
+"b": 686.423,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_elder",
+"vid": true,
+"cap": "1950s \u00b7 a dining room",
+"credit": "Hotel and Restaurant Workers (1950s) \u00b7 Public domain"
+}
+},
+{
+"a": 686.423,
+"b": 690.627,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Well, Loretta,",
+"we just fed half of Story County's flies."
+],
+"sig": "Bernice, Zion fellowship hall",
+"k": "n_zionhall",
+"size": 78
+}
+},
+{
+"a": 690.627,
+"b": 696.127,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 696.127,
+"b": 703.91,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 703.91,
+"b": 715.973,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT DOES NOT WORK",
+"page": "THE INTERNET'S TRICKS",
+"items": [
+{
+"t": 704.073,
+"txt": "Garbage uncovered, hoping for the best"
+},
+{
+"t": 709.113,
+"txt": "Fruit left out on the counter"
+},
+{
+"t": 711.233,
+"txt": "One lemon at an open door"
+}
+],
+"k": "n_meatbag"
+}
+},
+{
+"a": 715.973,
+"b": 720.003,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 720.003,
+"b": 726.33,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page2",
+"tab": "PAGE 2 \u00b7 THE BOOK",
+"t": 720.293
+}
+],
+"k": "n_churchkitchen"
+}
+},
+{
+"a": 726.33,
+"b": 731.35,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_reading",
+"vid": true,
+"cap": "1951 \u00b7 reading a book",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
+}
+},
+{
+"a": 731.35,
+"b": 734.66,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page48",
+"tab": "PAGE 48 \u00b7 WHAT'S SAFE WHERE",
+"t": 731.5
+}
+],
+"k": "n_vinegarjug"
+}
+},
+{
+"a": 734.66,
+"b": 752.24,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 752.24,
+"b": 755.274,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 755.274,
+"b": 765.72,
+"k": "",
+"c": "Careful",
+"props": {
+"k": "n_cornerib",
+"txt": "Termites, bedbugs, mice in the walls? Call a professional",
+"tag": "WHEN TO CALL SOMEONE"
+}
+},
+{
+"a": 765.72,
+"b": 774.33,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 774.33,
+"b": 786.22,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Close the door.",
+"Take away the food.",
+"Make them want to leave."
+],
+"sig": "Mother's three ideas \u00b7 page 2",
+"k": "n_doorsweep",
+"size": 88
+}
+},
+{
+"a": 786.22,
+"b": 793.06,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 793.06,
+"b": 796.657,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 796.657,
+"b": 800.973,
+"k": "s102_n_screentear",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 800.973,
+"b": 805.893,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 805.893,
+"b": 811.727,
+"k": "s104_n_vinegarglass",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 811.727,
+"b": 817.163,
+"k": "s105_n_lemoncloves",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 817.163,
+"b": 821.613,
+"k": "s106_l_mother",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 821.613,
+"b": 827.08,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 827.08,
+"b": 836.996,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 836.996,
+"b": 844.04,
+"k": "s109_n_supper",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 844.04,
+"b": 853.793,
+"k": "s110_n_screendoor",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+},
+{
+"a": 853.793,
+"b": 862.783,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 862.783,
+"b": 874.38,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE TWELVE",
+"page": "ONE LINE EACH",
+"items": [
+{
+"t": 864.833,
+"txt": "The lid on the garbage"
+},
+{
+"t": 866.467,
+"txt": "The screen that closes by itself"
+},
+{
+"t": 868.467,
+"txt": "Nothing in a paper bag"
+},
+{
+"t": 870.32,
+"txt": "A dry sink at bedtime"
+},
+{
+"t": 872.093,
+"txt": "The vinegar glass"
+},
+{
+"t": 873.473,
+"txt": "The drain"
+}
+],
+"k": "n_lemoncloves"
+}
+},
+{
+"a": 874.38,
+"b": 887.84,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE TWELVE, CONTINUED",
+"page": "ONE LINE EACH",
+"items": [
+{
+"t": 874.38,
+"txt": "Lemons on the sill"
+},
+{
+"t": 875.86,
+"txt": "The porch light off"
+},
+{
+"t": 877.453,
+"txt": "The pantry in jars"
+},
+{
+"t": 879.013,
+"txt": "Pet food put away"
+},
+{
+"t": 880.74,
+"txt": "Nothing leaning on the house"
+},
+{
+"t": 882.78,
+"txt": "One pest, one plan"
+}
+],
+"k": "n_farmwindow"
+}
+},
+{
+"a": 887.84,
+"b": 893.257,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/fhflies/th_next.jpg",
+"tag": "NEXT TIME",
+"words": [
+[
+"Plant",
+890.07
+],
+[
+"Garlic",
+890.29
+],
+[
+"in",
+890.83
+],
+[
+"October",
+891.29
+],
+[
+"the",
+891.77
+],
+[
+"Old",
+892.03
+],
+[
+"Farm",
+892.39
+],
+[
+"Way",
+892.73
+],
+[
+"and",
+893.03
+],
+[
+"Never",
+893.28
+],
+[
+"Buy",
+893.53
+],
+[
+"It",
+896.81
+],
+[
+"Again",
+897.11
+]
+],
+"k": "n_barnyard"
+}
+},
+{
+"a": 893.257,
+"b": 901.167,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 901.167,
+"b": 914.627,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Which of the twelve do you already do?",
+"opts": [
+{
+"txt": "Lidded garbage",
+"t": 905.267
+},
+{
+"txt": "Dry sink",
+"t": 907.767
+},
+{
+"txt": "Vinegar glass",
+"t": 909.687
+}
+],
+"k": "n_zionhall"
+}
+},
+{
+"a": 914.627,
+"b": 922.867,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page26",
+"tab": "PAGE 26",
+"t": 915.407
+}
+],
+"caption": {
+"txt": "the link is under this video",
+"t": 919.887
+},
+"k": "n_farmwindow"
+}
+},
+{
+"a": 922.867,
+"b": 929.287,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 929.287,
+"b": 940.59,
+"k": "s119_l_bless",
+"vid": true,
+"z": [
+1.0,
+1.0
+]
+}
+],
+"sfx": [
+[
+29.53,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+54.59,
+"design/page_turn_big",
+0.4
+],
+[
+158.46,
+"design/page_turn_big",
+0.4
+],
+[
+182.9,
+"design/paper_slide",
+0.35
+],
+[
+220.95,
+"design/stamp_rubber",
+0.35
+],
+[
+232.8,
+"design/pen_write",
+0.3
+],
+[
+304.58,
+"design/paper_slide",
+0.35
+],
+[
+346.42,
+"design/page_turn_big",
+0.4
+],
+[
+379.83,
+"design/paper_slide",
+0.3
+],
+[
+383.06,
+"design/pencil_strokes",
+0.22
+],
+[
+390.08,
+"design/pencil_strokes",
+0.22
+],
+[
+401.12,
+"design/stamp_traditional",
+0.35
+],
+[
+411.8,
+"design/paper_slide",
+0.35
+],
+[
+437.98,
+"design/pen_write",
+0.3
+],
+[
+477.79,
+"design/page_turn_big",
+0.4
+],
+[
+511.6,
+"design/click_slide",
+0.3
+],
+[
+523.54,
+"design/stamp_rubber",
+0.5
+],
+[
+523.84,
+"design/pencil_strokes",
+0.3
+],
+[
+528.91,
+"design/stamp_traditional",
+0.35
+],
+[
+584.14,
+"design/paper_slide",
+0.3
+],
+[
+589.88,
+"design/pencil_strokes",
+0.22
+],
+[
+591.38,
+"design/pencil_strokes",
+0.22
+],
+[
+595.2,
+"design/pencil_strokes",
+0.22
+],
+[
+614.87,
+"design/page_turn_big",
+0.4
+],
+[
+639.66,
+"design/camera_shutter",
+0.25
+],
+[
+686.42,
+"design/pen_write",
+0.3
+],
+[
+703.91,
+"design/paper_slide",
+0.3
+],
+[
+709.26,
+"design/pencil_strokes",
+0.22
+],
+[
+711.38,
+"design/pencil_strokes",
+0.22
+],
+[
+720.0,
+"design/page_turn_big",
+0.4
+],
+[
+731.35,
+"design/page_turn_big",
+0.4
+],
+[
+755.27,
+"design/stamp_traditional",
+0.35
+],
+[
+774.33,
+"design/pen_write",
+0.3
+],
+[
+862.78,
+"design/paper_slide",
+0.3
+],
+[
+866.62,
+"design/pencil_strokes",
+0.22
+],
+[
+868.62,
+"design/pencil_strokes",
+0.22
+],
+[
+870.47,
+"design/pencil_strokes",
+0.22
+],
+[
+872.24,
+"design/pencil_strokes",
+0.22
+],
+[
+873.62,
+"design/pencil_strokes",
+0.22
+],
+[
+874.38,
+"design/paper_slide",
+0.3
+],
+[
+876.01,
+"design/pencil_strokes",
+0.22
+],
+[
+877.6,
+"design/pencil_strokes",
+0.22
+],
+[
+879.16,
+"design/pencil_strokes",
+0.22
+],
+[
+880.89,
+"design/pencil_strokes",
+0.22
+],
+[
+882.93,
+"design/pencil_strokes",
+0.22
+],
+[
+887.84,
+"design/whoosh_slow_sweep",
+0.28
+],
+[
+901.17,
+"design/click_slide",
+0.25
+],
+[
+914.63,
+"design/page_turn_big",
+0.4
+]
+],
+"counts": [
+{
+"a": 182.9,
+"b": 232.803,
+"n": 1
+},
+{
+"a": 232.803,
+"b": 264.084,
+"n": 2
+},
+{
+"a": 264.084,
+"b": 284.01,
+"n": 3
+},
+{
+"a": 284.01,
+"b": 304.58,
+"n": 4
+},
+{
+"a": 304.58,
+"b": 361.596,
+"n": 5
+},
+{
+"a": 361.596,
+"b": 411.8,
+"n": 6
+},
+{
+"a": 411.8,
+"b": 460.093,
+"n": 7
+},
+{
+"a": 460.093,
+"b": 477.79,
+"n": 8
+},
+{
+"a": 477.79,
+"b": 547.8,
+"n": 9
+},
+{
+"a": 547.8,
+"b": 566.767,
+"n": 10
+},
+{
+"a": 566.767,
+"b": 584.137,
+"n": 11
+},
+{
+"a": 584.137,
+"b": 609.99,
+"n": 12
+}
+],
+"end": 940.59
+}
