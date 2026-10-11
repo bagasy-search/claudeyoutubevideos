@@ -1,0 +1,255 @@
+[
+ {
+  "c": "ClMenuBoard",
+  "k": "menu",
+  "from": 481,
+  "dur": 270,
+  "t": 16.04,
+  "props": {
+   "dish": "Huevos de la fonda",
+   "lines": [
+    "Sin aceite",
+    "Sin voltear",
+    "Con su salsa roja"
+   ],
+   "at": [
+    2.28,
+    3.37,
+    6.99
+   ],
+   "bed": "vid/cchuevos/bed_menu.mp4#279"
+  }
+ },
+ {
+  "c": "ClOldPhoto",
+  "k": "joven",
+  "from": 757,
+  "dur": 216,
+  "t": 25.24,
+  "props": {
+   "photo": "img/cchuevos/joven.jpg",
+   "caption": "mi primer huevo · 1985",
+   "stats": [
+    {
+     "n": 40,
+     "label": "años en esta cocina"
+    },
+    {
+     "n": 80,
+     "label": "comidas por día"
+    }
+   ],
+   "at": [
+    1.41,
+    2.77
+   ],
+   "bed": "vid/cchuevos/bed_joven.mp4#220"
+  }
+ },
+ {
+  "c": "ClEggThermo",
+  "k": "termo",
+  "from": 5554,
+  "dur": 680,
+  "props": {
+   "bed": "img/cchuevos/bed_termo.jpg",
+   "at": [
+    2.18,
+    5.91,
+    8.99,
+    11.19,
+    15.0
+   ]
+  },
+  "t": 185.13
+ },
+ {
+  "c": "ClRecipeCard",
+  "k": "ficha",
+  "from": 8536,
+  "dur": 240,
+  "props": {
+   "title": "Huevos de la fonda · 2 platos",
+   "rows": [
+    {
+     "k": "Huevos",
+     "v": "4"
+    },
+    {
+     "k": "Agua",
+     "v": "2 cdas"
+    },
+    {
+     "k": "Sal y pimienta",
+     "v": "al gusto"
+    },
+    {
+     "k": "Tortillas",
+     "v": "4"
+    },
+    {
+     "k": "Salsa roja",
+     "v": "½ taza"
+    },
+    {
+     "k": "Manteca (opcional)",
+     "v": "1 cdita"
+    }
+   ],
+   "mark": "sin aceite",
+   "note": "agua + tapa",
+   "bed": "vid/cchuevos/bed_1.mp4#244"
+  },
+  "t": 284.55
+ },
+ {
+  "c": "ClTimer30",
+  "k": "dosmin",
+  "from": 10681,
+  "dur": 108,
+  "props": {
+   "minutes": 2,
+   "label": "2 min",
+   "text": "fuego medio",
+   "bed": "vid/cchuevos/bed_2.mp4#112"
+  },
+  "t": 356.04
+ },
+ {
+  "c": "ClTimer30",
+  "k": "treinta",
+  "from": 11787,
+  "dur": 96,
+  "props": {
+   "minutes": 1,
+   "label": "30 seg",
+   "text": "sin tocarlos",
+   "fast": true,
+   "bed": "vid/cchuevos/bed_3.mp4#100"
+  },
+  "t": 392.9
+ },
+ {
+  "c": "ClTimer30",
+  "k": "noventa",
+  "from": 12524,
+  "dur": 126,
+  "props": {
+   "minutes": 2,
+   "label": "90 seg",
+   "text": "yema líquida",
+   "bed": "vid/cchuevos/bed_4.mp4#130"
+  },
+  "t": 417.46
+ },
+ {
+  "c": "ClBeforeAfter",
+  "k": "antes",
+  "from": 14169,
+  "dur": 217,
+  "props": {
+   "before": "img/cchuevos/antes.jpg",
+   "after": "img/cchuevos/despues.jpg",
+   "a": "EN MUCHO ACEITE",
+   "b": "AGUA Y TAPA",
+   "note": "sin una gota de aceite"
+  },
+  "t": 472.29
+ },
+ {
+  "c": "ClCheck",
+  "k": "resumen",
+  "from": 14644,
+  "dur": 315,
+  "props": {
+   "title": "Los huevos de la fonda",
+   "items": [
+    "Sartén a fuego medio, 2 min",
+    "La gota tiene que bailar",
+    "Huevos juntitos",
+    "30 segundos sin tocar",
+    "2 cdas de agua alrededor + tapa",
+    "90 seg líquida · 2½ min cremosa"
+   ],
+   "bed": "vid/cchuevos/bed_6.mp4#319"
+  },
+  "t": 488.14
+ },
+ {
+  "c": "ClReceipt",
+  "k": "costo",
+  "from": 27097,
+  "dur": 786,
+  "props": {
+   "head": "HUEVOS RANCHEROS",
+   "lines": [
+    [
+     "Huevos, 4",
+     "US$1.20"
+    ],
+    [
+     "Tortillas, 4",
+     "US$0.30"
+    ],
+    [
+     "Salsa roja, ½ taza",
+     "US$0.50"
+    ],
+    [
+     "Manteca (si la usas)",
+     "US$0.10"
+    ],
+    [
+     "Los dos platos",
+     "US$2.10"
+    ]
+   ],
+   "total": [
+    "Cada plato",
+    "US$1.05"
+   ],
+   "bed": "vid/cchuevos/bed_7.mp4#790"
+  },
+  "t": 903.22
+ },
+ {
+  "c": "ClBookPage",
+  "k": "pagina",
+  "from": 28978,
+  "dur": 180,
+  "props": {
+   "page": "img/cchuevos/page55.jpg",
+   "pageNo": 55,
+   "stamp": "Esta receta, en la página",
+   "bed": "vid/cchuevos/bed_8.mp4#184"
+  },
+  "t": 965.92
+ },
+ {
+  "c": "ClQRCard",
+  "k": "qr",
+  "from": 29388,
+  "dur": 210,
+  "props": {
+   "qr": "img/cchuevos/qr.jpg",
+   "cover": "img/cchuevos/book_cover.jpg",
+   "text": "50 recetas · US$19",
+   "kicker": "EL RECETARIO DE LA FONDA",
+   "bed": "vid/cchuevos/bed_9.mp4#214"
+  },
+  "t": 979.61
+ },
+ {
+  "c": "ClVideoRef",
+  "k": "proximo",
+  "from": 29862,
+  "dur": 150,
+  "props": {
+   "thumb": "img/cchuevos/th_ccarroz.jpg",
+   "title": "Arroz rojo y frijoles refritos",
+   "next": true,
+   "bed": "vid/cchuevos/bed_10.mp4#154"
+  },
+  "t": 995.41
+ }
+]
