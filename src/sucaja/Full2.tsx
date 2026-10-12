@@ -160,6 +160,19 @@ export const Full2: React.FC = () => (
     <Still from={883.20} dur={3.50} file="F88320.png" />
     <Still from={924.60} dur={3.50} file="F92460.png" />
     <Still from={966.00} dur={3.50} file="F96600.png" />
+    {/* P3: fotos recuperadas/extra en huecos libres (sin avatar ni componente) */}
+    <Still from={88.16} dur={4.00} file="F09100.png" />
+    <Still from={93.90} dur={4.00} file="F08620.png" />
+    <Still from={151.17} dur={4.00} file="F15120.png" />
+    <Still from={182.86} dur={4.00} file="F41200.png" />
+    <Still from={246.30} dur={3.80} file="F25040.png" />
+    <Still from={363.76} dur={4.00} file="F72400.png" />
+    <Still from={369.00} dur={3.80} file="F38180.png" />
+    <Still from={431.24} dur={4.00} file="F40800.png" />
+    <Still from={510.04} dur={4.00} file="F49680.png" />
+    <Still from={715.18} dur={4.00} file="F25540.png" />
+    <Still from={890.85} dur={4.00} file="F87760.png" />
+    <Still from={952.80} dur={4.00} file="F50080.png" />
     <Grade />
     <Grain />
   </AbsoluteFill>
