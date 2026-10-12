@@ -229,3 +229,58 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
 };
 
 export const NEW: Record<string, React.FC<any>> = { Apertura, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
+
+// ── HERO (ckrules, UPDATE 5): 60 años que cuentan + las 12 reglas que se apilan, sobre foto real con paralaje ──
+const Hero: React.FC<{ k: string; f: number; d: number }> = ({ k, f, d }) => {
+  const z = 1.0 + 0.08 * (f / Math.max(1, d));
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
+      <AbsoluteFill style={{ transform: `scale(${z})`, transformOrigin: "40% 40%" }}>
+        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </AbsoluteFill>
+      <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(20,12,8,0.82) 0%, rgba(20,12,8,0.35) 60%, rgba(20,12,8,0.1) 100%)" }} />
+    </AbsoluteFill>
+  );
+};
+export const HeroSixty: P<{ k: string; num: number; unit: string; sub: string; t: number }> = ({ a, d, k, num, unit, sub, t }) => {
+  const { f, at } = useT(a);
+  const u = cl((f - at(t)) / 60), cnt = Math.round(num * ez(u));
+  const hw = sp(f, at(t), 14, 120), sub2 = sp(f, at(t) + 22, 14, 140);
+  return (
+    <Stage f={f} T={d} push={[1.0, 1.06, 0]}>
+      <Hero k={k} f={f} d={d} />
+      <div style={{ position: "absolute", left: 120, top: 250, transform: `translateY(${(1 - hw) * 60}px)`, opacity: hw }}>
+        <div style={{ fontFamily: SERIF, fontSize: 300, fontWeight: 700, color: "#FBF8F2", lineHeight: 0.9, textShadow: shadowTxt }}>{cnt}</div>
+        <div style={{ fontFamily: LABEL, fontSize: 64, letterSpacing: 6, color: "#E9C46A", textShadow: shadowTxt }}>{unit}</div>
+      </div>
+      <div style={{ position: "absolute", left: 124, top: 730, width: 900, opacity: sub2, transform: `translateY(${(1 - sub2) * 30}px)` }}>
+        <div style={{ width: 160, height: 4, background: "#C0392B", marginBottom: 26 }} />
+        <div style={{ fontFamily: SERIF, fontSize: 56, lineHeight: 1.25, color: "#FBF8F2", textShadow: shadowTxt }}>{sub}</div>
+      </div>
+    </Stage>
+  );
+};
+export const HeroRules: P<{ k: string; head: string; items: { t: number; txt: string }[] }> = ({ a, d, k, head, items }) => {
+  const { f, at } = useT(a);
+  const hh = sp(f, 0, 14, 120);
+  return (
+    <Stage f={f} T={d} push={[1.0, 1.05, 0]}>
+      <Hero k={k} f={f} d={d} />
+      <div style={{ position: "absolute", right: 110, top: 120, width: 760, padding: "40px 52px", background: "#f6efe2", borderRadius: 6, boxShadow: "0 40px 90px rgba(0,0,0,0.55)", opacity: hh, transform: `translateY(${(1 - hh) * 40}px)` }}>
+        <div style={{ fontFamily: LABEL, fontSize: 30, letterSpacing: 5, color: "#C0392B" }}>{head}</div>
+        <div style={{ height: 3, background: "#2B2620", margin: "16px 0 22px" }} />
+        {items.map((x, i) => {
+          const s = sp(f, at(x.t), 13, 150);
+          return (
+            <div key={i} style={{ display: "flex", gap: 22, alignItems: "baseline", marginBottom: 12, opacity: s, transform: `translateX(${(1 - s) * 60}px)` }}>
+              <span style={{ fontFamily: SERIF, fontSize: 40, fontWeight: 700, color: "#C0392B", width: 52 }}>{i + 1}</span>
+              <span style={{ fontFamily: SERIF, fontSize: 36, color: "#2B2620", lineHeight: 1.2 }}>{x.txt}</span>
+            </div>
+          );
+        })}
+      </div>
+    </Stage>
+  );
+};
+export const NEW2 = { HeroSixty, HeroRules };
+Object.assign(NEW, NEW2);
