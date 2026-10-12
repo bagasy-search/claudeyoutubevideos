@@ -1,0 +1,1565 @@
+{
+ "end": 1002.55,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 3.7,
+   "k": "thumb0",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 3.7,
+   "b": 15.47,
+   "av": true
+  },
+  {
+   "a": 15.47,
+   "b": 24.74,
+   "c": "TrickHero",
+   "props": {
+    "base": "x_skillet",
+    "cam": [
+     {
+      "t": 15.47,
+      "s": 1.0,
+      "x": 960,
+      "y": 540
+     },
+     {
+      "t": 21.7,
+      "s": 1.6,
+      "x": 760,
+      "y": 560
+     }
+    ],
+    "prints": [
+     {
+      "k": "x_loafpan_set",
+      "t": 18.99,
+      "x": 1440,
+      "y": 360,
+      "w": 400,
+      "h": 280,
+      "rot": 3,
+      "from": "r",
+      "out": 21.7
+     },
+     {
+      "k": "x_slicing",
+      "t": 20.16,
+      "x": 1440,
+      "y": 720,
+      "w": 400,
+      "h": 280,
+      "rot": -3,
+      "from": "r",
+      "out": 21.7
+     }
+    ]
+   }
+  },
+  {
+   "a": 24.74,
+   "b": 31.933,
+   "av": true
+  },
+  {
+   "a": 31.93,
+   "b": 37.5,
+   "c": "Arc",
+   "props": {
+    "src": "arc_men_breakfast_table",
+    "vid": true,
+    "cap": "Family breakfast together at a table, 1951",
+    "credit": "Prelinger Archives"
+   }
+  },
+  {
+   "a": 37.5,
+   "b": 50.17,
+   "c": "Deal",
+   "props": {
+    "bed": "p3_rolls_pull",
+    "cam": [
+     {
+      "t": 37.5,
+      "s": 1.0,
+      "x": 960,
+      "y": 540
+     },
+     {
+      "t": 35.29,
+      "s": 1.45,
+      "x": 440,
+      "y": 330
+     },
+     {
+      "t": 36.09,
+      "s": 1.45,
+      "x": 1040,
+      "y": 330
+     },
+     {
+      "t": 36.89,
+      "s": 1.45,
+      "x": 1640,
+      "y": 330
+     },
+     {
+      "t": 37.69,
+      "s": 1.45,
+      "x": 440,
+      "y": 800
+     },
+     {
+      "t": 38.49,
+      "s": 1.45,
+      "x": 1040,
+      "y": 800
+     },
+     {
+      "t": 48.43,
+      "s": 1.45,
+      "x": 1640,
+      "y": 800
+     },
+     {
+      "t": 51.03,
+      "s": 1.0,
+      "x": 960,
+      "y": 540
+     }
+    ],
+    "cards": [
+     {
+      "k": "p3_banana_sliced",
+      "t": 35.09,
+      "lab": "PAGE 58 · 6"
+     },
+     {
+      "k": "p3_rolls_pull",
+      "t": 35.89,
+      "lab": "PAGE 56 · 5"
+     },
+     {
+      "k": "p3_cinnamon_one",
+      "t": 36.69,
+      "lab": "PAGE 57 · 4"
+     },
+     {
+      "k": "p3_egg_square",
+      "t": 37.49,
+      "lab": "PAGE 60 · 3"
+     },
+     {
+      "k": "p3_biscuit_gravy",
+      "t": 38.29,
+      "lab": "PAGE 61 · 2"
+     },
+     {
+      "k": "x_skillet",
+      "t": 39.09,
+      "lab": "PAGE 59 · 1"
+     }
+    ],
+    "flip": {
+     "t": 48.43,
+     "k": "x_skillet",
+     "idx": 5
+    }
+   }
+  },
+  {
+   "a": 50.167,
+   "b": 60.49,
+   "av": true
+  },
+  {
+   "a": 60.49,
+   "b": 66.55,
+   "c": "TrickHero",
+   "props": {
+    "base": "x_cereal",
+    "dim": 0.0,
+    "prints": [
+     {
+      "k": "x_plate",
+      "t": 61.6,
+      "x": 380,
+      "y": 640,
+      "w": 520,
+      "h": 350,
+      "rot": -3,
+      "from": "l"
+     }
+    ],
+    "chips": [
+     {
+      "txt": "MAKE IT THE NIGHT BEFORE",
+      "t": 63.0,
+      "x": 960,
+      "y": 170,
+      "size": 50
+     }
+    ]
+   }
+  },
+  {
+   "a": 66.547,
+   "b": 75.72,
+   "av": true
+  },
+  {
+   "a": 75.72,
+   "b": 82.0,
+   "c": "Arc",
+   "props": {
+    "src": "arc_farm_kitchen_1930s",
+    "vid": false,
+    "cap": "A farm kitchen in the 1930s, the cookstove going",
+    "credit": "FSA/OWI photo, public domain (Wikimedia)"
+   }
+  },
+  {
+   "a": 82.0,
+   "b": 88.46,
+   "c": "Arc",
+   "props": {
+    "src": "arc_church_kitchen_women",
+    "vid": true,
+    "cap": "Women working in a large institutional kitchen, 1941",
+    "credit": "Prelinger Archives"
+   }
+  },
+  {
+   "a": 88.46,
+   "b": 93.02,
+   "av": true
+  },
+  {
+   "a": 93.02,
+   "b": 103.86,
+   "c": "NumCard",
+   "props": {
+    "k": "b_loaf_hero",
+    "num": "6",
+    "name": "Bake Sale Banana Bread",
+    "page": "PAGE 58",
+    "t": 93.46,
+    "o": [
+     50,
+     55
+    ]
+   }
+  },
+  {
+   "a": 103.86,
+   "b": 109.7,
+   "av": true
+  },
+  {
+   "a": 109.7,
+   "b": 130.23,
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "bp58",
+      "tab": "PAGE 58",
+      "t": 109.7,
+      "hl": 36
+     }
+    ],
+    "k": "b_pan"
+   }
+  },
+  {
+   "a": 130.227,
+   "b": 137.233,
+   "av": true
+  },
+  {
+   "a": 137.23,
+   "b": 165.57,
+   "c": "StepCard",
+   "props": {
+    "page": "350°F · 55-65 MIN",
+    "head": "BAKE SALE BANANA BREAD",
+    "bed": "b_pan",
+    "steps": [
+     {
+      "t": 137.23,
+      "txt": "Heat to 350, butter and flour the pan",
+      "k": "b_pan"
+     },
+     {
+      "t": 142.47,
+      "txt": "Mash the bananas right in the bowl",
+      "k": "b_mash"
+     },
+     {
+      "t": 154.87,
+      "txt": "Fold just until the streaks are gone",
+      "k": "b_fold"
+     },
+     {
+      "t": 160.77,
+      "txt": "Sugar on top for the crackly crust",
+      "k": "b_sugar_top"
+     },
+     {
+      "t": 168.67,
+      "txt": "Bake until a toothpick comes out clean",
+      "k": "b_toothpick"
+     }
+    ]
+   }
+  },
+  {
+   "a": 165.573,
+   "b": 171.713,
+   "av": true
+  },
+  {
+   "a": 171.71,
+   "b": 184.03,
+   "c": "TrickHero",
+   "props": {
+    "base": "b_spotted",
+    "dim": 0.45,
+    "prints": [
+     {
+      "k": "b_yellow",
+      "t": 179.92,
+      "x": 480,
+      "y": 500,
+      "w": 440,
+      "h": 330,
+      "rot": -3,
+      "from": "l"
+     },
+     {
+      "k": "b_spotted",
+      "t": 175.71,
+      "x": 960,
+      "y": 500,
+      "w": 440,
+      "h": 330,
+      "rot": 1
+     },
+     {
+      "k": "b_black",
+      "t": 181.64,
+      "x": 1420,
+      "y": 480,
+      "w": 620,
+      "h": 440,
+      "rot": 3,
+      "from": "r"
+     }
+    ],
+    "chips": [
+     {
+      "txt": "BREAD",
+      "t": 179.92,
+      "x": 480,
+      "y": 820
+     },
+     {
+      "txt": "ALMOST",
+      "t": 175.71,
+      "x": 960,
+      "y": 820
+     },
+     {
+      "txt": "BANANA BREAD",
+      "t": 181.64,
+      "x": 1440,
+      "y": 820,
+      "bg": "#C0392B",
+      "color": "#fff"
+     }
+    ],
+    "mark": {
+     "t": 181.64,
+     "x": 1215,
+     "y": 330,
+     "w": 450,
+     "h": 340
+    }
+   }
+  },
+  {
+   "a": 184.033,
+   "b": 190.033,
+   "av": true
+  },
+  {
+   "a": 190.03,
+   "b": 202.09,
+   "c": "DoDont",
+   "props": {
+    "k": "b_tender",
+    "yes": {
+     "k": "b_tender",
+     "txt": "FOLD JUST UNTIL IT COMES TOGETHER",
+     "t": 199.41
+    },
+    "no": {
+     "k": "b_tunnels",
+     "txt": "TOUGH LOAF, TUNNELS",
+     "t": 196.53
+    }
+   }
+  },
+  {
+   "a": 202.087,
+   "b": 213.1,
+   "av": true
+  },
+  {
+   "a": 213.1,
+   "b": 215.02,
+   "k": "b_freezer_slices",
+   "z": [
+    1.03,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 215.02,
+   "b": 221.353,
+   "av": true
+  },
+  {
+   "a": 221.35,
+   "b": 229.0,
+   "c": "NumCard",
+   "props": {
+    "k": "r_hero",
+    "num": "5",
+    "name": "Irene's Potato-Water Dinner Rolls",
+    "page": "PAGE 56",
+    "t": 221.61
+   }
+  },
+  {
+   "a": 229.0,
+   "b": 237.74,
+   "c": "Arc",
+   "props": {
+    "src": "arc_kneading_women",
+    "vid": true,
+    "cap": "Hands kneading dough on a towel, 1948",
+    "credit": "Prelinger Archives"
+   }
+  },
+  {
+   "a": 237.74,
+   "b": 242.26,
+   "av": true
+  },
+  {
+   "a": 242.26,
+   "b": 264.59,
+   "c": "TrickHero",
+   "props": {
+    "base": "r_potato_pot",
+    "prints": [
+     {
+      "k": "r_sink",
+      "t": 247.51,
+      "x": 1480,
+      "y": 520,
+      "w": 480,
+      "h": 330,
+      "rot": 3,
+      "from": "r"
+     }
+    ],
+    "chips": [
+     {
+      "txt": "POURED DOWN THE SINK",
+      "t": 247.51,
+      "x": 1480,
+      "y": 860,
+      "bg": "#C0392B",
+      "color": "#fff"
+     }
+    ]
+   }
+  },
+  {
+   "a": 264.59,
+   "b": 270.91,
+   "c": "RingCount",
+   "props": {
+    "k": "r_foam",
+    "t0": 265.09,
+    "t1": 268.91,
+    "from": 60,
+    "to": 110,
+    "suffix": "°F",
+    "label": "WARM, NOT HOT"
+   }
+  },
+  {
+   "a": 270.91,
+   "b": 272.54,
+   "c": "TrickHero",
+   "props": {
+    "base": "r_jar",
+    "prints": [],
+    "chips": [
+     {
+      "txt": "SHE SAVED IT",
+      "t": 248.79,
+      "x": 960,
+      "y": 880
+     }
+    ],
+    "paper": {
+     "t": 248.79,
+     "x": 960,
+     "y": 300,
+     "txt": "Irene saved the water",
+     "size": 70,
+     "rot": -2
+    }
+   }
+  },
+  {
+   "a": 272.54,
+   "b": 288.49,
+   "c": "StepCard",
+   "props": {
+    "page": "10 MIN",
+    "head": "THE YEAST",
+    "bed": "r_foam",
+    "steps": [
+     {
+      "t": 272.54,
+      "txt": "Yeast foams in the warm potato water",
+      "k": "r_foam"
+     },
+     {
+      "t": 288.49,
+      "txt": "Milk and butter warm until the butter melts",
+      "k": "r_milk"
+     }
+    ]
+   }
+  },
+  {
+   "a": 288.493,
+   "b": 296.253,
+   "av": true
+  },
+  {
+   "a": 296.25,
+   "b": 318.29,
+   "c": "StepCard",
+   "props": {
+    "page": "24 ROLLS",
+    "head": "THE DOUGH",
+    "bed": "r_dough",
+    "steps": [
+     {
+      "t": 296.52,
+      "txt": "Stir in the yeast, the milk, the egg, the potato",
+      "k": "r_dough"
+     },
+     {
+      "t": 312.62,
+      "txt": "Knead eight minutes, then cover it",
+      "k": "r_knead"
+     },
+     {
+      "t": 314.94,
+      "txt": "Let it rise until it doubles",
+      "k": "r_rise"
+     },
+     {
+      "t": 318.29,
+      "txt": "Cut into 24 and roll into smooth balls",
+      "k": "r_balls"
+     }
+    ]
+   }
+  },
+  {
+   "a": 318.287,
+   "b": 323.847,
+   "av": true
+  },
+  {
+   "a": 323.85,
+   "b": 340.0,
+   "c": "DoDont",
+   "props": {
+    "k": "r_touching",
+    "yes": {
+     "k": "r_touching",
+     "txt": "TOUCHING, HONEY",
+     "t": 328.17
+    },
+    "no": {
+     "k": "r_apart",
+     "txt": "SPACED APART: HARD CRUST",
+     "t": 329.31
+    }
+   }
+  },
+  {
+   "a": 340.0,
+   "b": 352.0,
+   "c": "TrickHero",
+   "props": {
+    "base": "r_dead_yeast",
+    "chips": [
+     {
+      "txt": "110°F",
+      "t": 359.08,
+      "x": 960,
+      "y": 880,
+      "size": 80
+     }
+    ],
+    "mark": {
+     "t": 359.08,
+     "x": 620,
+     "y": 260,
+     "w": 680,
+     "h": 480
+    }
+   }
+  },
+  {
+   "a": 352.0,
+   "b": 363.61,
+   "c": "BigNumber",
+   "props": {
+    "num": 375,
+    "unit": "°F · 18-20 MIN",
+    "k": "r_touching",
+    "dur": 12
+   }
+  },
+  {
+   "a": 363.61,
+   "b": 369.46,
+   "av": true
+  },
+  {
+   "a": 369.46,
+   "b": 378.0,
+   "k": "r_freezer_bags",
+   "z": [
+    1.03,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 378.02,
+   "b": 388.32,
+   "c": "NumCard",
+   "props": {
+    "k": "c_hero",
+    "num": "4",
+    "name": "Fellowship Hour Cinnamon Rolls",
+    "page": "PAGE 57",
+    "t": 378.02
+   }
+  },
+  {
+   "a": 388.32,
+   "b": 393.48,
+   "av": true
+  },
+  {
+   "a": 393.48,
+   "b": 414.54,
+   "c": "StepCard",
+   "props": {
+    "page": "18 × 12 IN",
+    "head": "THE CINNAMON LOG",
+    "bed": "c_rect",
+    "steps": [
+     {
+      "t": 398.71,
+      "txt": "Roll to 18 by 12 inches on a floured board",
+      "k": "c_rect"
+     },
+     {
+      "t": 402.77,
+      "txt": "Soft butter all the way to the edges",
+      "k": "c_butter"
+     },
+     {
+      "t": 407.25,
+      "txt": "Brown sugar and cinnamon pressed in",
+      "k": "c_sugar"
+     },
+     {
+      "t": 414.54,
+      "txt": "Roll it up tight and pinch the seam",
+      "k": "c_log"
+     }
+    ]
+   }
+  },
+  {
+   "a": 414.54,
+   "b": 418.22,
+   "av": true
+  },
+  {
+   "a": 418.22,
+   "b": 430.47,
+   "c": "TrickHero",
+   "props": {
+    "base": "c_thread",
+    "line": {
+     "t": 425.95,
+     "x0": 300,
+     "y0": 330,
+     "x1": 1620,
+     "y1": 720
+    },
+    "prints": [
+     {
+      "k": "c_squashed",
+      "t": 428.31,
+      "x": 1480,
+      "y": 560,
+      "w": 500,
+      "h": 340,
+      "rot": 3,
+      "from": "r"
+     }
+    ],
+    "mark": {
+     "t": 428.31,
+     "x": 1220,
+     "y": 380,
+     "w": 520,
+     "h": 340,
+     "kind": "strike"
+    }
+   }
+  },
+  {
+   "a": 430.467,
+   "b": 438.507,
+   "av": true
+  },
+  {
+   "a": 438.51,
+   "b": 450.0,
+   "c": "TrickHero",
+   "props": {
+    "base": "c_cream_pour",
+    "chips": [
+     {
+      "txt": "½ CUP WARM CREAM",
+      "t": 443.65,
+      "x": 960,
+      "y": 180,
+      "size": 60
+     }
+    ]
+   }
+  },
+  {
+   "a": 450.0,
+   "b": 462.17,
+   "c": "TrickHero",
+   "props": {
+    "base": "c_gooey_bottom",
+    "chips": [
+     {
+      "txt": "350°F · 22-25 MIN · GOLDEN, NOT BROWN",
+      "t": 458.15,
+      "x": 960,
+      "y": 880,
+      "size": 46
+     }
+    ]
+   }
+  },
+  {
+   "a": 462.17,
+   "b": 476.76,
+   "c": "StepCard",
+   "props": {
+    "page": "GLAZE",
+    "head": "THE GLAZE",
+    "bed": "c_glaze",
+    "steps": [
+     {
+      "t": 462.17,
+      "txt": "Cream cheese, butter, powdered sugar, vanilla",
+      "k": "c_glaze"
+     },
+     {
+      "t": 478.16,
+      "txt": "The night before: let them rise in the fridge",
+      "k": "c_fridge_rise"
+     }
+    ]
+   }
+  },
+  {
+   "a": 476.76,
+   "b": 489.37,
+   "av": true
+  },
+  {
+   "a": 489.37,
+   "b": 500.15,
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "bp1",
+      "tab": "THE COOKBOOK",
+      "t": 489.4
+     },
+     {
+      "src": "bp57",
+      "tab": "PAGE 57",
+      "t": 491.6
+     }
+    ],
+    "k": "c_hero"
+   }
+  },
+  {
+   "a": 500.15,
+   "b": 505.05,
+   "av": true
+  },
+  {
+   "a": 505.05,
+   "b": 512.5,
+   "c": "Arc",
+   "props": {
+    "src": "arc_church_small",
+    "vid": false,
+    "cap": "A small shingled wooden church, United States",
+    "credit": "Rijksmuseum (CC0), via Wikimedia Commons"
+   }
+  },
+  {
+   "a": 512.5,
+   "b": 520.5,
+   "c": "Arc",
+   "props": {
+    "src": "arc_men_cooking_supper",
+    "vid": true,
+    "cap": "One cook in an apron in a mess kitchen, 1943",
+    "credit": "Prelinger Archives"
+   }
+  },
+  {
+   "a": 520.5,
+   "b": 526.87,
+   "c": "TrickHero",
+   "props": {
+    "base": "x_coffeecan",
+    "paper": {
+     "t": 521.0,
+     "x": 960,
+     "y": 780,
+     "txt": "OFFERING",
+     "size": 90,
+     "rot": -3
+    }
+   }
+  },
+  {
+   "a": 526.867,
+   "b": 529.987,
+   "av": true
+  },
+  {
+   "a": 529.99,
+   "b": 530.61,
+   "k": "x_coffeecan",
+   "z": [
+    1.03,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 530.61,
+   "b": 535.13,
+   "av": true
+  },
+  {
+   "a": 535.13,
+   "b": 543.22,
+   "c": "Arc",
+   "props": {
+    "src": "arc_community_dinner",
+    "vid": true,
+    "cap": "Guests seated at a long dinner table, 1945",
+    "credit": "Prelinger Archives"
+   }
+  },
+  {
+   "a": 543.22,
+   "b": 548.06,
+   "av": true
+  },
+  {
+   "a": 548.06,
+   "b": 559.07,
+   "c": "NumCard",
+   "props": {
+    "k": "e_hero",
+    "num": "3",
+    "name": "Overnight Church Breakfast Egg Bake",
+    "page": "PAGE 60",
+    "t": 548.32
+   }
+  },
+  {
+   "a": 559.073,
+   "b": 562.213,
+   "av": true
+  },
+  {
+   "a": 562.21,
+   "b": 578.04,
+   "c": "Everybody",
+   "props": {
+    "bed": "e_bread",
+    "head": {
+     "t": 562.3,
+     "txt": "THE LAYERS"
+    },
+    "cards": [
+     {
+      "k": "e_sausage",
+      "t": 562.7,
+      "lab": "SAUSAGE"
+     },
+     {
+      "k": "e_bread",
+      "t": 567.32,
+      "lab": "BREAD"
+     },
+     {
+      "k": "e_cheese",
+      "t": 576.82,
+      "lab": "ONION + CHEESE"
+     },
+     {
+      "k": "e_whisk",
+      "t": 578.04,
+      "lab": "EGGS + MILK"
+     }
+    ],
+    "focus": 581.04,
+    "circ": 581.4399999999999,
+    "note": {
+     "t": 582.04,
+     "txt": "the custard goes over all of it"
+    }
+   }
+  },
+  {
+   "a": 578.04,
+   "b": 588.48,
+   "av": true
+  },
+  {
+   "a": 588.48,
+   "b": 593.0,
+   "c": "TrickHero",
+   "props": {
+    "base": "e_press",
+    "chips": [
+     {
+      "txt": "THE OVERNIGHT SOAK",
+      "t": 596.92,
+      "x": 960,
+      "y": 880,
+      "size": 58
+     }
+    ]
+   }
+  },
+  {
+   "a": 593.0,
+   "b": 598.4,
+   "c": "TrickHero",
+   "props": {
+    "base": "e_fridge_night",
+    "chips": [
+     {
+      "txt": "9 PM → 7 AM",
+      "t": 593.5,
+      "x": 960,
+      "y": 880,
+      "size": 58
+     }
+    ]
+   }
+  },
+  {
+   "a": 598.4,
+   "b": 613.26,
+   "av": true
+  },
+  {
+   "a": 613.26,
+   "b": 624.5,
+   "c": "DoDont",
+   "props": {
+    "k": "e_knife_clean",
+    "yes": {
+     "k": "e_knife_clean",
+     "txt": "COMES OUT CLEAN",
+     "t": 623.49
+    },
+    "no": {
+     "k": "e_runny",
+     "txt": "RUNNY MIDDLE",
+     "t": 615.85
+    }
+   }
+  },
+  {
+   "a": 624.5,
+   "b": 630.0,
+   "c": "TrickHero",
+   "props": {
+    "base": "e_soufle",
+    "chips": [
+     {
+      "txt": "160°F",
+      "t": 625.47,
+      "x": 960,
+      "y": 260,
+      "size": 64
+     }
+    ]
+   }
+  },
+  {
+   "a": 630.0,
+   "b": 636.75,
+   "c": "TrickHero",
+   "props": {
+    "base": "e_mustard",
+    "chips": [
+     {
+      "txt": "IT MAKES IT TASTE LIKE CHEESE",
+      "t": 635.71,
+      "x": 960,
+      "y": 880,
+      "size": 52
+     }
+    ]
+   }
+  },
+  {
+   "a": 636.747,
+   "b": 646.787,
+   "av": true
+  },
+  {
+   "a": 646.79,
+   "b": 666.06,
+   "c": "Memory",
+   "props": {
+    "k": "e_basket",
+    "caption": "Not one square was lost.",
+    "date": "Bernice, on the ice",
+    "t": 663.98
+   }
+  },
+  {
+   "a": 666.06,
+   "b": 673.64,
+   "av": true
+  },
+  {
+   "a": 673.64,
+   "b": 682.0,
+   "c": "NumCard",
+   "props": {
+    "k": "g_hero",
+    "num": "2",
+    "name": "Biscuits and Sausage Gravy",
+    "page": "PAGE 61",
+    "t": 674.12
+   }
+  },
+  {
+   "a": 682.0,
+   "b": 689.14,
+   "c": "TrickHero",
+   "props": {
+    "base": "g_corkboard",
+    "paper": {
+     "t": 679.29,
+     "x": 960,
+     "y": 500,
+     "txt": "MEN'S BREAKFAST · 2nd SATURDAY",
+     "size": 66,
+     "rot": -2
+    },
+    "chips": [
+     {
+      "txt": "10 LB · 2½ GAL · 60 PLATES",
+      "t": 691.06,
+      "x": 960,
+      "y": 860,
+      "size": 56
+     }
+    ]
+   }
+  },
+  {
+   "a": 689.14,
+   "b": 694.5,
+   "av": true
+  },
+  {
+   "a": 694.5,
+   "b": 723.11,
+   "c": "StepCard",
+   "props": {
+    "page": "450°F · 12-14 MIN",
+    "head": "THE BISCUITS",
+    "bed": "g_dry",
+    "steps": [
+     {
+      "t": 697.47,
+      "txt": "Flour, baking powder, salt, sugar, soda",
+      "k": "g_dry"
+     },
+     {
+      "t": 706.87,
+      "txt": "Cold butter cut in to coarse crumbs",
+      "k": "g_crumbs"
+     },
+     {
+      "t": 711.69,
+      "txt": "Cold buttermilk, just until shaggy",
+      "k": "g_shaggy"
+     },
+     {
+      "t": 719.05,
+      "txt": "Fold it in thirds, twice",
+      "k": "g_fold"
+     },
+     {
+      "t": 720.95,
+      "txt": "Cut straight down, no twisting",
+      "k": "g_cut"
+     },
+     {
+      "t": 723.11,
+      "txt": "Bake them touching, 12 to 14 minutes",
+      "k": "g_touching"
+     }
+    ]
+   }
+  },
+  {
+   "a": 723.113,
+   "b": 726.573,
+   "av": true
+  },
+  {
+   "a": 726.57,
+   "b": 737.5,
+   "c": "TrickHero",
+   "props": {
+    "base": "g_skillet_fat",
+    "prints": [
+     {
+      "k": "g_colander",
+      "t": 736.41,
+      "x": 1480,
+      "y": 520,
+      "w": 480,
+      "h": 330,
+      "rot": 3,
+      "from": "r"
+     }
+    ],
+    "mark": {
+     "t": 736.41,
+     "x": 1230,
+     "y": 330,
+     "w": 470,
+     "h": 330,
+     "kind": "strike"
+    }
+   }
+  },
+  {
+   "a": 737.5,
+   "b": 748.19,
+   "c": "TrickHero",
+   "props": {
+    "base": "g_flour_on",
+    "chips": [
+     {
+      "txt": "⅓ CUP FLOUR · 2 MIN",
+      "t": 740.12,
+      "x": 960,
+      "y": 880,
+      "size": 56
+     }
+    ],
+    "prints": [
+     {
+      "k": "g_pasty",
+      "t": 747.33,
+      "x": 1420,
+      "y": 520,
+      "w": 460,
+      "h": 320,
+      "rot": 3,
+      "from": "b"
+     }
+    ]
+   }
+  },
+  {
+   "a": 748.19,
+   "b": 756.0,
+   "c": "TrickHero",
+   "props": {
+    "base": "g_milk1",
+    "chips": [
+     {
+      "txt": "A LITTLE AT A TIME",
+      "t": 751.41,
+      "x": 960,
+      "y": 880,
+      "size": 58
+     }
+    ]
+   }
+  },
+  {
+   "a": 756.0,
+   "b": 769.66,
+   "c": "DoDont",
+   "props": {
+    "k": "g_milk3",
+    "yes": {
+     "k": "g_milk3",
+     "txt": "A LITTLE AT A TIME",
+     "t": 751.41
+    },
+    "no": {
+     "k": "g_lumpy",
+     "txt": "LUMPS, FROM ALL AT ONCE",
+     "t": 755.22
+    }
+   }
+  },
+  {
+   "a": 769.66,
+   "b": 782.54,
+   "av": true
+  },
+  {
+   "a": 782.54,
+   "b": 785.64,
+   "k": "g_freeze_unbaked",
+   "z": [
+    1.03,
+    1.09
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 785.64,
+   "b": 791.0,
+   "c": "QrCard",
+   "props": {
+    "k": "x_coffee_table",
+    "t": 788.22
+   }
+  },
+  {
+   "a": 791.0,
+   "b": 799.58,
+   "av": true
+  },
+  {
+   "a": 799.58,
+   "b": 806.0,
+   "c": "NumCard",
+   "props": {
+    "k": "m_hero",
+    "num": "1",
+    "name": "Fried Cornmeal Mush",
+    "page": "PAGE 59",
+    "t": 799.84
+   }
+  },
+  {
+   "a": 806.0,
+   "b": 813.47,
+   "c": "Arc",
+   "props": {
+    "src": "arc_serving_line_men",
+    "vid": true,
+    "cap": "Soldiers crowd into a mess hall for a meal, 1943",
+    "credit": "Prelinger Archives"
+   }
+  },
+  {
+   "a": 813.467,
+   "b": 819.647,
+   "av": true
+  },
+  {
+   "a": 819.65,
+   "b": 827.6,
+   "c": "Arc",
+   "props": {
+    "src": "arc_mother_wood_stove",
+    "vid": true,
+    "cap": "A woman cooking at a range, 1941",
+    "credit": "Prelinger Archives"
+   }
+  },
+  {
+   "a": 827.6,
+   "b": 836.58,
+   "c": "Memory",
+   "props": {
+    "k": "m_sack",
+    "caption": "We didn't know we were poor, honey.",
+    "date": "Mother's kitchen",
+    "t": 834.38
+   }
+  },
+  {
+   "a": 836.58,
+   "b": 840.18,
+   "av": true
+  },
+  {
+   "a": 840.18,
+   "b": 849.93,
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "bp59",
+      "tab": "PAGE 59",
+      "t": 840.2,
+      "hl": 36
+     }
+    ],
+    "k": "m_sack"
+   }
+  },
+  {
+   "a": 849.927,
+   "b": 859.593,
+   "av": true
+  },
+  {
+   "a": 859.59,
+   "b": 879.09,
+   "c": "ColdStart",
+   "props": {
+    "left": "m_lumps",
+    "right": "m_smooth",
+    "mid": "m_whisk_in",
+    "tR": 862.55,
+    "tM": 867.33,
+    "tL": 873.43,
+    "tC": 877.13,
+    "chip": "START IT COLD"
+   }
+  },
+  {
+   "a": 879.09,
+   "b": 898.25,
+   "c": "StepCard",
+   "props": {
+    "page": "LOW · 20-25 MIN",
+    "head": "THE LOAF",
+    "bed": "m_thick",
+    "steps": [
+     {
+      "t": 879.09,
+      "txt": "Thick mush on low, stirred often",
+      "k": "m_thick"
+     },
+     {
+      "t": 886.59,
+      "txt": "Pour into a buttered loaf pan",
+      "k": "m_pour_pan"
+     },
+     {
+      "t": 890.89,
+      "txt": "Cover it and let it set overnight",
+      "k": "m_fridge"
+     }
+    ]
+   }
+  },
+  {
+   "a": 898.25,
+   "b": 913.69,
+   "c": "StepCard",
+   "props": {
+    "page": "4-5 MIN A SIDE",
+    "head": "THE GOLDEN FRY",
+    "bed": "m_slices",
+    "steps": [
+     {
+      "t": 899.31,
+      "txt": "Turn it out of the pan",
+      "k": "m_turnout"
+     },
+     {
+      "t": 900.19,
+      "txt": "Cut half-inch slices",
+      "k": "m_slices"
+     },
+     {
+      "t": 901.87,
+      "txt": "Dredge them lightly in flour",
+      "k": "m_dredge"
+     },
+     {
+      "t": 906.91,
+      "txt": "Let the fat shimmer",
+      "k": "m_shimmer"
+     },
+     {
+      "t": 908.41,
+      "txt": "Fry four to five minutes a side",
+      "k": "m_frying"
+     }
+    ]
+   }
+  },
+  {
+   "a": 913.69,
+   "b": 938.86,
+   "av": true
+  },
+  {
+   "a": 938.86,
+   "b": 959.21,
+   "c": "Deal",
+   "props": {
+    "bed": "m_four_pans",
+    "cards": [
+     {
+      "k": "b_loaf_hero",
+      "t": 940.54,
+      "lab": "BLACK BANANAS"
+     },
+     {
+      "k": "r_hero",
+      "t": 944.18,
+      "lab": "POTATO WATER"
+     },
+     {
+      "k": "c_hero",
+      "t": 948.41,
+      "lab": "CREAM POURED OVER"
+     },
+     {
+      "k": "e_hero",
+      "t": 951.97,
+      "lab": "SOAKS ALL NIGHT"
+     },
+     {
+      "k": "g_hero",
+      "t": 955.13,
+      "lab": "DON'T DRAIN"
+     },
+     {
+      "k": "m_hero",
+      "t": 960.75,
+      "lab": "START IT COLD"
+     }
+    ]
+   }
+  },
+  {
+   "a": 959.213,
+   "b": 963.873,
+   "av": true
+  },
+  {
+   "a": 963.87,
+   "b": 972.29,
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "bp59",
+      "tab": "PAGE 59 · LINK UNDER THIS VIDEO",
+      "t": 963.9
+     }
+    ],
+    "k": "m_four_pans"
+   }
+  },
+  {
+   "a": 972.29,
+   "b": 989.01,
+   "av": true
+  },
+  {
+   "a": 989.01,
+   "b": 991.41,
+   "k": "x_coffee_table",
+   "z": [
+    1.03,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 991.41,
+   "b": 1002.55,
+   "av": true
+  }
+ ]
+}
