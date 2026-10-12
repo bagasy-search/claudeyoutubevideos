@@ -1,0 +1,1755 @@
+{
+ "version": "lkit-2026-10-12",
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "conventions": {
+  "plan_entry": "C shot in the plan: {a, b, kind:'C', c:'<name>', props:{...}}; the Player injects a (s) and d (frames)",
+  "times": "EVERY prop of type 'time' is an ABSOLUTE video second (the word in words.json) and must fall inside [a, b) of its shot. For kind=track/overlay, inside the video.",
+  "time_paths": "'x' = prop; 'x.y' = object field; 'x[].y' = each element; 'x[][1]' = 2nd value of each tuple",
+  "images": "type 'image' = key in KCFG.imgDir (no extension = .png) or a public/ path containing '/'; the file must exist",
+  "duration": "min_s/max_s in seconds (b - a); null = not applicable",
+  "kinds": {
+   "shot": "full shot (kind C)",
+   "overlay": "edl.overlays on top of another shot",
+   "track": "whole-video track (edl.counts)"
+  }
+ },
+ "components": [
+  {
+   "name": "ThumbOpen",
+   "kind": "shot",
+   "file": "src/lkit/items.tsx",
+   "use_when": "Opening: the REAL thumbnail held still ~1.5 s, soft fade + slow push into the L photo that matches it; optional kinetic words.",
+   "min_s": 4,
+   "max_s": 15,
+   "props": {
+    "thumb": {
+     "type": "image",
+     "desc": "real thumbnail (th_card.jpg)",
+     "required": true
+    },
+    "k": {
+     "type": "image",
+     "desc": "L photo matching the thumbnail framing",
+     "required": true
+    },
+    "vid": {
+     "type": "boolean",
+     "required": false
+    },
+    "fade": {
+     "type": "time",
+     "desc": "second the fade starts; default a+1.5",
+     "required": false
+    },
+    "o": {
+     "type": "array",
+     "items": {
+      "type": "number"
+     },
+     "desc": "[x%, y%] push focus",
+     "required": false
+    },
+    "words": {
+     "type": "array",
+     "items": {
+      "type": "tuple",
+      "items": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "time"
+       }
+      ]
+     },
+     "desc": "[[word, second], ...] - each word lands on its second",
+     "required": false
+    }
+   },
+   "time_props": [
+    "fade",
+    "words[][1]"
+   ],
+   "image_props": [
+    "thumb",
+    "k"
+   ],
+   "notes": "Only at second 0. No words ON the thumbnail (words must land after the fade)."
+  },
+  {
+   "name": "ItemCard",
+   "kind": "shot",
+   "file": "src/lkit/items.tsx",
+   "use_when": "Every list item (ITEM n): number, name (struck out at t), INSTEAD: what we used, PAGE tag.",
+   "min_s": 6,
+   "max_s": 12,
+   "props": {
+    "n": {
+     "type": "number",
+     "required": true
+    },
+    "of": {
+     "type": "number",
+     "desc": "total, e.g. 13",
+     "required": false
+    },
+    "word": {
+     "type": "string",
+     "desc": "default ITEM",
+     "required": false
+    },
+    "name": {
+     "type": "string",
+     "desc": "the modern thing",
+     "required": true
+    },
+    "instead": {
+     "type": "string",
+     "desc": "what was used instead",
+     "required": true
+    },
+    "page": {
+     "type": "string",
+     "desc": "'PAGE 20' - the real book page",
+     "required": false
+    },
+    "k": {
+     "type": "image",
+     "desc": "real photo of the modern thing",
+     "required": true
+    },
+    "k2": {
+     "type": "image",
+     "desc": "photo of the old way; slides in at t",
+     "required": false
+    },
+    "t": {
+     "type": "time",
+     "desc": "the word 'instead' (or the replacement)",
+     "required": true
+    },
+    "bed": {
+     "type": "image",
+     "required": false
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "k",
+    "k2",
+    "bed"
+   ],
+   "notes": ">= 6 s. Put its [a,b] in edl.hide so the ItemCounter steps aside."
+  },
+  {
+   "name": "ItemCounter",
+   "kind": "track",
+   "file": "src/lkit/items.tsx",
+   "use_when": "'ITEM n OF N' badge top-right during EVERY item section.",
+   "min_s": null,
+   "max_s": null,
+   "props": {
+    "counts": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "a": {
+        "type": "time",
+        "required": true
+       },
+       "b": {
+        "type": "time",
+        "required": true
+       },
+       "n": {
+        "type": "number",
+        "required": true
+       }
+      }
+     },
+     "desc": "one span per item; n = the REAL item number",
+     "required": true
+    },
+    "of": {
+     "type": "number",
+     "required": true
+    },
+    "word": {
+     "type": "string",
+     "desc": "ITEM / STEP / THING",
+     "required": false
+    },
+    "hide": {
+     "type": "array",
+     "items": {
+      "type": "tuple",
+      "items": [
+       {
+        "type": "time"
+       },
+       {
+        "type": "time"
+       }
+      ]
+     },
+     "required": false
+    }
+   },
+   "time_props": [
+    "counts[].a",
+    "counts[].b",
+    "hide[][0]",
+    "hide[][1]"
+   ],
+   "image_props": [],
+   "notes": "Not a shot: goes in edl.counts / edl.of / edl.word / edl.hide; the Player mounts it over the whole video. n must be the real number (no skips, no repeats, increasing)."
+  },
+  {
+   "name": "SwapCard",
+   "kind": "shot",
+   "file": "src/lkit/items.tsx",
+   "use_when": "'What most homes do today' vs 'what we used instead': wipe on the word 'instead'.",
+   "min_s": 6,
+   "max_s": 12,
+   "props": {
+    "old": {
+     "type": "object",
+     "props": {
+      "k": {
+       "type": "image",
+       "required": true
+      },
+      "txt": {
+       "type": "string",
+       "required": true
+      }
+     },
+     "required": true
+    },
+    "neu": {
+     "type": "object",
+     "props": {
+      "k": {
+       "type": "image",
+       "required": true
+      },
+      "txt": {
+       "type": "string",
+       "required": true
+      }
+     },
+     "required": true
+    },
+    "t": {
+     "type": "time",
+     "desc": "the word 'instead'",
+     "required": true
+    },
+    "head": {
+     "type": "string",
+     "desc": "default WHAT WE USED INSTEAD",
+     "required": false
+    },
+    "oldHead": {
+     "type": "string",
+     "desc": "default MOST HOMES TODAY",
+     "required": false
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "old.k",
+    "neu.k"
+   ]
+  },
+  {
+   "name": "DropList",
+   "kind": "shot",
+   "file": "src/lkit/items.tsx",
+   "use_when": "An EMPTY shelf/table that fills: each thing drops on ITS word with a hand-written label (pantry jars, tools...).",
+   "min_s": 6,
+   "max_s": 22,
+   "props": {
+    "k": {
+     "type": "image",
+     "desc": "photo of the EMPTY shelf",
+     "required": true
+    },
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "txt": {
+        "type": "string",
+        "required": true
+       },
+       "k": {
+        "type": "image",
+        "desc": "small photo of the thing; without k = kraft label",
+        "required": false
+       }
+      }
+     },
+     "minItems": 2,
+     "maxItems": 8,
+     "required": true
+    },
+    "head": {
+     "type": "string",
+     "required": false
+    },
+    "shelfY": {
+     "type": "number",
+     "desc": "% height where things rest; default 72",
+     "required": false
+    },
+    "x0": {
+     "type": "number",
+     "desc": "% row start; default 12",
+     "required": false
+    },
+    "x1": {
+     "type": "number",
+     "desc": "% row end; default 88",
+     "required": false
+    }
+   },
+   "time_props": [
+    "items[].t"
+   ],
+   "image_props": [
+    "k",
+    "items[].k"
+   ],
+   "notes": "First item should drop <= 1 s after the cut (Opus: 'its first jar drops at once')."
+  },
+  {
+   "name": "GoneList",
+   "kind": "shot",
+   "file": "src/lkit/items.tsx",
+   "use_when": "Recap: photo of a cluttered home; each thing gets a red circle + number on its word, then fades out.",
+   "min_s": 8,
+   "max_s": 25,
+   "props": {
+    "k": {
+     "type": "image",
+     "desc": "real photo full of things (L/N)",
+     "required": true
+    },
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "txt": {
+        "type": "string",
+        "required": true
+       },
+       "x": {
+        "type": "number",
+        "desc": "% width of the center",
+        "required": true
+       },
+       "y": {
+        "type": "number",
+        "desc": "% height",
+        "required": true
+       },
+       "r": {
+        "type": "number",
+        "desc": "radius in % width; default 9",
+        "required": false
+       }
+      }
+     },
+     "minItems": 2,
+     "maxItems": 13,
+     "required": true
+    },
+    "head": {
+     "type": "string",
+     "required": false
+    },
+    "fade": {
+     "type": "number",
+     "desc": "seconds until it fades; default 1.2",
+     "required": false
+    }
+   },
+   "time_props": [
+    "items[].t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "CheckScene",
+   "kind": "shot",
+   "file": "src/lkit/items.tsx",
+   "use_when": "End-of-day round (the kitchen at 10 pm, the house before bed): checklist ticks on its words over the photo.",
+   "min_s": 6,
+   "max_s": 20,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "vid": {
+     "type": "boolean",
+     "required": false
+    },
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "txt": {
+        "type": "string",
+        "required": true
+       },
+       "x": {
+        "type": "number",
+        "desc": "% - green check on the photo",
+        "required": false
+       },
+       "y": {
+        "type": "number",
+        "required": false
+       }
+      }
+     },
+     "minItems": 2,
+     "maxItems": 7,
+     "required": true
+    },
+    "head": {
+     "type": "string",
+     "required": false
+    },
+    "clock": {
+     "type": "string",
+     "desc": "'10 PM'",
+     "required": false
+    },
+    "night": {
+     "type": "boolean",
+     "desc": "night tint; default true",
+     "required": false
+    }
+   },
+   "time_props": [
+    "items[].t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "PhotoSeq",
+   "kind": "shot",
+   "file": "src/lkit/items.tsx",
+   "use_when": "One shot with 2-4 photos changing on their words (merges short shots); optional red/chalk mark.",
+   "min_s": 6,
+   "max_s": 14,
+   "props": {
+    "photos": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "k": {
+        "type": "image",
+        "required": true
+       },
+       "t": {
+        "type": "time",
+        "desc": "required from the 2nd photo on",
+        "required": false
+       },
+       "vid": {
+        "type": "boolean",
+        "required": false
+       },
+       "cap": {
+        "type": "string",
+        "required": false
+       },
+       "mark": {
+        "type": "object",
+        "props": {
+         "kind": {
+          "type": "string",
+          "enum": [
+           "circle",
+           "strike",
+           "under"
+          ],
+          "required": true
+         },
+         "x": {
+          "type": "number",
+          "desc": "% width",
+          "required": true
+         },
+         "y": {
+          "type": "number",
+          "desc": "% height",
+          "required": true
+         },
+         "w": {
+          "type": "number",
+          "desc": "% width",
+          "required": true
+         },
+         "h": {
+          "type": "number",
+          "desc": "% height",
+          "required": true
+         },
+         "t": {
+          "type": "time",
+          "required": true
+         }
+        },
+        "required": false
+       }
+      }
+     },
+     "minItems": 1,
+     "maxItems": 4,
+     "required": true
+    }
+   },
+   "time_props": [
+    "photos[].t",
+    "photos[].mark.t"
+   ],
+   "image_props": [
+    "photos[].k"
+   ]
+  },
+  {
+   "name": "Chapter",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Giant number + title + Loretta (avatar) inside a frame; the camera pushes into the frame.",
+   "min_s": 4,
+   "max_s": 9,
+   "props": {
+    "n": {
+     "type": "string",
+     "required": true
+    },
+    "title": {
+     "type": "string",
+     "required": true
+    },
+    "sub": {
+     "type": "string",
+     "required": false
+    },
+    "label": {
+     "type": "string",
+     "desc": "default CHAPTER",
+     "required": false
+    },
+    "k": {
+     "type": "image",
+     "desc": "background, and photo if no avatar",
+     "required": true
+    },
+    "av": {
+     "type": "boolean",
+     "desc": "default true",
+     "required": false
+    }
+   },
+   "time_props": [],
+   "image_props": [
+    "k"
+   ],
+   "notes": "av=true needs setKit({av}); the span counts as an avatar window."
+  },
+  {
+   "name": "StepCard",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A recipe/procedure from the book: lined card that ticks + big photo of the active step.",
+   "min_s": 6,
+   "max_s": 25,
+   "props": {
+    "head": {
+     "type": "string",
+     "required": true
+    },
+    "page": {
+     "type": "string",
+     "required": false
+    },
+    "steps": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "txt": {
+        "type": "string",
+        "required": true
+       },
+       "k": {
+        "type": "image",
+        "required": true
+       }
+      }
+     },
+     "minItems": 1,
+     "maxItems": 6,
+     "required": true
+    },
+    "bed": {
+     "type": "image",
+     "required": false
+    }
+   },
+   "time_props": [
+    "steps[].t"
+   ],
+   "image_props": [
+    "steps[].k",
+    "bed"
+   ]
+  },
+  {
+   "name": "MistakeStamp",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A mistake: photo with red circle + THE MISTAKE stamp + sentence.",
+   "min_s": 5,
+   "max_s": 10,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "txt": {
+     "type": "string",
+     "required": true
+    },
+    "stamp": {
+     "type": "string",
+     "desc": "default THE MISTAKE",
+     "required": false
+    },
+    "cx": {
+     "type": "number",
+     "desc": "% circle center",
+     "required": false
+    },
+    "cy": {
+     "type": "number",
+     "required": false
+    },
+    "t": {
+     "type": "time",
+     "desc": "sentence lands",
+     "required": false
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "CostTag",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Costs from the book (ON SCREEN ONLY, no $ in the voice): hanging tag + struck store price.",
+   "min_s": 5,
+   "max_s": 10,
+   "props": {
+    "price": {
+     "type": "string",
+     "required": true
+    },
+    "sub": {
+     "type": "string",
+     "required": true
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "vs": {
+     "type": "object",
+     "props": {
+      "price": {
+       "type": "string",
+       "required": true
+      },
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": false
+    }
+   },
+   "time_props": [
+    "vs.t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Note",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A saying (mother, Bernice) or 3 ideas: hand-written, each line on ITS word.",
+   "min_s": 5,
+   "max_s": 14,
+   "props": {
+    "lines": {
+     "type": "array",
+     "items": {
+      "type": "string|object",
+      "props": {
+       "txt": {
+        "type": "string",
+        "required": true
+       },
+       "t": {
+        "type": "time",
+        "required": false
+       }
+      }
+     },
+     "minItems": 1,
+     "maxItems": 5,
+     "desc": "string or {txt, t}; use {txt, t} so each line lands on its word",
+     "required": true
+    },
+    "sig": {
+     "type": "string",
+     "required": false
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "chip": {
+     "type": "object",
+     "props": {
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": false
+    },
+    "size": {
+     "type": "number",
+     "required": false
+    }
+   },
+   "time_props": [
+    "lines[].t",
+    "chip.t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "PageUp",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A book page that is named: rises to camera, PAGE n tab, highlighter on the line.",
+   "min_s": 5,
+   "max_s": 16,
+   "props": {
+    "pages": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "src": {
+        "type": "image",
+        "desc": "pageN.png",
+        "required": true
+       },
+       "tab": {
+        "type": "string",
+        "required": true
+       },
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "hl": {
+        "type": "number",
+        "desc": "% height of the line to highlight",
+        "required": false
+       },
+       "hlT": {
+        "type": "time",
+        "desc": "word of the highlight",
+        "required": false
+       }
+      }
+     },
+     "minItems": 1,
+     "maxItems": 3,
+     "required": true
+    },
+    "caption": {
+     "type": "object",
+     "props": {
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": false
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    }
+   },
+   "time_props": [
+    "pages[].t",
+    "pages[].hlT",
+    "caption.t"
+   ],
+   "image_props": [
+    "pages[].src",
+    "k"
+   ]
+  },
+  {
+   "name": "Checklist",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Rules or RECAP: lines tick on their words; >6 items -> 2 columns (13 fit).",
+   "min_s": 6,
+   "max_s": 25,
+   "props": {
+    "head": {
+     "type": "string",
+     "required": true
+    },
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "txt": {
+        "type": "string",
+        "required": true
+       },
+       "k": {
+        "type": "image",
+        "required": false
+       },
+       "no": {
+        "type": "boolean",
+        "desc": "red cross instead of tick",
+        "required": false
+       }
+      }
+     },
+     "minItems": 2,
+     "maxItems": 14,
+     "required": true
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "page": {
+     "type": "string",
+     "required": false
+    },
+    "cols": {
+     "type": "number",
+     "enum": [
+      1,
+      2
+     ],
+     "required": false
+    }
+   },
+   "time_props": [
+    "items[].t"
+   ],
+   "image_props": [
+    "k",
+    "items[].k"
+   ]
+  },
+  {
+   "name": "NeverMix",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Combination warning: 'A x B, C' on its word + verdict.",
+   "min_s": 5,
+   "max_s": 12,
+   "props": {
+    "head": {
+     "type": "string",
+     "required": false
+    },
+    "tag": {
+     "type": "string",
+     "required": false
+    },
+    "rows": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "a": {
+        "type": "string",
+        "required": true
+       },
+       "b": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "required": true
+       }
+      }
+     },
+     "minItems": 1,
+     "maxItems": 3,
+     "required": true
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "verdict": {
+     "type": "object",
+     "props": {
+      "t": {
+       "type": "time",
+       "required": true
+      },
+      "txt": {
+       "type": "string",
+       "required": true
+      }
+     },
+     "required": false
+    }
+   },
+   "time_props": [
+    "rows[].t",
+    "verdict.t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Lineup",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Parade of 2-6 things full screen with n/N + name + use.",
+   "min_s": 6,
+   "max_s": 25,
+   "props": {
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "name": {
+        "type": "string",
+        "required": true
+       },
+       "use": {
+        "type": "string",
+        "required": true
+       },
+       "k": {
+        "type": "image",
+        "required": true
+       }
+      }
+     },
+     "minItems": 2,
+     "maxItems": 6,
+     "required": true
+    },
+    "head": {
+     "type": "string",
+     "required": false
+    }
+   },
+   "time_props": [
+    "items[].t"
+   ],
+   "image_props": [
+    "items[].k"
+   ]
+  },
+  {
+   "name": "BigNumber",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A number that weighs (51 years, 3 days) counting up over the photo.",
+   "min_s": 4,
+   "max_s": 9,
+   "props": {
+    "num": {
+     "type": "number",
+     "required": true
+    },
+    "unit": {
+     "type": "string",
+     "required": true
+    },
+    "txt": {
+     "type": "string",
+     "required": false
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "t": {
+     "type": "time",
+     "desc": "counting starts",
+     "required": false
+    },
+    "prefix": {
+     "type": "string",
+     "required": false
+    },
+    "suffix": {
+     "type": "string",
+     "required": false
+    },
+    "dur": {
+     "type": "number",
+     "desc": "count frames; default 24",
+     "required": false
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Thumb",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Another channel video (previous/next): 3D thumbnail + title word by word.",
+   "min_s": 6,
+   "max_s": 14,
+   "props": {
+    "thumb": {
+     "type": "image",
+     "required": true
+    },
+    "tag": {
+     "type": "string",
+     "required": true
+    },
+    "words": {
+     "type": "array",
+     "items": {
+      "type": "tuple",
+      "items": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "time"
+       }
+      ]
+     },
+     "desc": "[[word, second], ...] - each word lands on its second",
+     "required": true
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "push": {
+     "type": "boolean",
+     "desc": "camera enters the thumbnail on exit; default true",
+     "required": false
+    }
+   },
+   "time_props": [
+    "words[][1]"
+   ],
+   "image_props": [
+    "thumb",
+    "k"
+   ]
+  },
+  {
+   "name": "QrCard",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Mid CTA: book cover + QR that appears on its word.",
+   "min_s": 8,
+   "max_s": 14,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "t": {
+     "type": "time",
+     "desc": "the QR/phone word",
+     "required": true
+    },
+    "txt": {
+     "type": "string",
+     "required": false
+    },
+    "qr": {
+     "type": "image",
+     "desc": "default KCFG.qr",
+     "required": false
+    },
+    "cover": {
+     "type": "image",
+     "desc": "default KCFG.cover",
+     "required": false
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "k",
+    "qr",
+    "cover"
+   ],
+   "notes": ">= 8 s on screen; if the CTA runs longer, follow with a PageUp of the cover (never 18 s of one still card)."
+  },
+  {
+   "name": "Comment",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Audience question: comment box types itself + options on their words.",
+   "min_s": 6,
+   "max_s": 12,
+   "props": {
+    "q": {
+     "type": "string",
+     "required": true
+    },
+    "opts": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "txt": {
+        "type": "string",
+        "required": true
+       },
+       "t": {
+        "type": "time",
+        "required": true
+       }
+      }
+     },
+     "minItems": 1,
+     "maxItems": 3,
+     "required": true
+    },
+    "k": {
+     "type": "image",
+     "required": true
+    }
+   },
+   "time_props": [
+    "opts[].t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Memory",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A memory (mother, that fall): sepia polaroid with date and caption.",
+   "min_s": 5,
+   "max_s": 10,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "caption": {
+     "type": "string",
+     "required": true
+    },
+    "date": {
+     "type": "string",
+     "required": true
+    },
+    "t": {
+     "type": "time",
+     "required": false
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Careful",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A warning (mothballs, bug bombs): caution tape + big sentence.",
+   "min_s": 5,
+   "max_s": 10,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "vid": {
+     "type": "boolean",
+     "required": false
+    },
+    "txt": {
+     "type": "string",
+     "required": true
+    },
+    "tag": {
+     "type": "string",
+     "desc": "'CAREFUL - PAGE 4'",
+     "required": true
+    },
+    "t": {
+     "type": "time",
+     "required": false
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "DoDont",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "'What homes do now vs what we did': two photos, cross at no.t and tick at yes.t.",
+   "min_s": 6,
+   "max_s": 12,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "no": {
+     "type": "object",
+     "props": {
+      "k": {
+       "type": "image",
+       "required": true
+      },
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": true
+    },
+    "yes": {
+     "type": "object",
+     "props": {
+      "k": {
+       "type": "image",
+       "required": true
+      },
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": true
+    }
+   },
+   "time_props": [
+    "no.t",
+    "yes.t"
+   ],
+   "image_props": [
+    "k",
+    "no.k",
+    "yes.k"
+   ]
+  },
+  {
+   "name": "Arc",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "REAL archive material (public-domain film or photo) with a year/place caption.",
+   "min_s": 4,
+   "max_s": 12,
+   "props": {
+    "src": {
+     "type": "string",
+     "desc": "vid: name in KCFG.arcDir without .mp4; photo: image key",
+     "required": true
+    },
+    "vid": {
+     "type": "boolean",
+     "required": false
+    },
+    "cap": {
+     "type": "string",
+     "desc": "'1951 - Iowa farm kitchen'",
+     "required": true
+    },
+    "big": {
+     "type": "string",
+     "desc": "'51 YEARS' number + unit beside",
+     "required": false
+    },
+    "credit": {
+     "type": "string",
+     "required": false
+    },
+    "ofs": {
+     "type": "number",
+     "desc": "seconds into the cut",
+     "required": false
+    }
+   },
+   "time_props": [],
+   "image_props": [],
+   "notes": "Counts toward the archive total (>= 14 shots, >= 100 s, no gap > 120 s)."
+  },
+  {
+   "name": "Pins",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Places on a photo (where they get in): numbered pins on their words.",
+   "min_s": 6,
+   "max_s": 14,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "head": {
+     "type": "string",
+     "required": true
+    },
+    "pins": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "props": {
+       "x": {
+        "type": "number",
+        "required": true
+       },
+       "y": {
+        "type": "number",
+        "required": true
+       },
+       "t": {
+        "type": "time",
+        "required": true
+       },
+       "txt": {
+        "type": "string",
+        "required": true
+       }
+      }
+     },
+     "minItems": 1,
+     "maxItems": 6,
+     "required": true
+    },
+    "wrong": {
+     "type": "object",
+     "props": {
+      "t": {
+       "type": "time",
+       "required": true
+      },
+      "txt": {
+       "type": "string",
+       "required": true
+      }
+     },
+     "required": false
+    }
+   },
+   "time_props": [
+    "pins[].t",
+    "wrong.t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "FrameArt",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A photo worth a frame (mother's kitchen) hanging, with a hand caption.",
+   "min_s": 5,
+   "max_s": 10,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "bed": {
+     "type": "image",
+     "required": true
+    },
+    "caption": {
+     "type": "string",
+     "required": true
+    },
+    "t": {
+     "type": "time",
+     "required": true
+    }
+   },
+   "time_props": [
+    "t"
+   ],
+   "image_props": [
+    "k",
+    "bed"
+   ]
+  },
+  {
+   "name": "Flashlight",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "A dark corner revealed by a flashlight (night round, the mouse hole).",
+   "min_s": 5,
+   "max_s": 10,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "from": {
+     "type": "array",
+     "items": {
+      "type": "number"
+     },
+     "desc": "[x%, y%]",
+     "required": true
+    },
+    "to": {
+     "type": "array",
+     "items": {
+      "type": "number"
+     },
+     "required": true
+    },
+    "on": {
+     "type": "time",
+     "required": true
+    },
+    "words": {
+     "type": "array",
+     "items": {
+      "type": "tuple",
+      "items": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "time"
+       },
+       {
+        "type": "number",
+        "desc": "x px"
+       },
+       {
+        "type": "number",
+        "desc": "y px"
+       }
+      ]
+     },
+     "required": true
+    }
+   },
+   "time_props": [
+    "on",
+    "words[][1]"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Tease",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "1.5-3 s teaser of the payoff to come (COMING UP).",
+   "min_s": 1.5,
+   "max_s": 3,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "txt": {
+     "type": "string",
+     "required": true
+    },
+    "tag": {
+     "type": "string",
+     "required": false
+    }
+   },
+   "time_props": [],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Kinetic",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Key sentence as big kinetic text over a photo/clip (one sentence at a time).",
+   "min_s": 3,
+   "max_s": 10,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "vid": {
+     "type": "boolean",
+     "required": false
+    },
+    "words": {
+     "type": "array",
+     "items": {
+      "type": "tuple",
+      "items": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "time"
+       }
+      ]
+     },
+     "desc": "[[word, second], ...] - each word lands on its second",
+     "required": true
+    },
+    "size": {
+     "type": "number",
+     "required": false
+    }
+   },
+   "time_props": [
+    "words[][1]"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "SplitHalf",
+   "kind": "shot",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Same photo split: 'most homes' half (red) vs 'my mother's' half (shine).",
+   "min_s": 5,
+   "max_s": 10,
+   "props": {
+    "k": {
+     "type": "image",
+     "required": true
+    },
+    "vid": {
+     "type": "boolean",
+     "required": false
+    },
+    "l": {
+     "type": "object",
+     "props": {
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": true
+    },
+    "r": {
+     "type": "object",
+     "props": {
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": true
+    },
+    "foot": {
+     "type": "object",
+     "props": {
+      "txt": {
+       "type": "string",
+       "required": true
+      },
+      "t": {
+       "type": "time",
+       "required": true
+      }
+     },
+     "required": false
+    }
+   },
+   "time_props": [
+    "l.t",
+    "r.t",
+    "foot.t"
+   ],
+   "image_props": [
+    "k"
+   ]
+  },
+  {
+   "name": "Kicker",
+   "kind": "overlay",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "Small label over another shot on its word ('STAY FOR #9').",
+   "min_s": 1,
+   "max_s": 6,
+   "props": {
+    "txt": {
+     "type": "string",
+     "required": true
+    },
+    "side": {
+     "type": "string",
+     "enum": [
+      "l",
+      "r"
+     ],
+     "required": false
+    },
+    "red": {
+     "type": "boolean",
+     "required": false
+    },
+    "hand": {
+     "type": "boolean",
+     "required": false
+    }
+   },
+   "time_props": [],
+   "image_props": [],
+   "notes": "Goes in edl.overlays [{a, b, c, props}]: a = the word; must fall inside an existing shot."
+  },
+  {
+   "name": "Pop",
+   "kind": "overlay",
+   "file": "src/lkit/kit.tsx",
+   "use_when": "One big key word with a punch, over another shot.",
+   "min_s": 0.8,
+   "max_s": 3,
+   "props": {
+    "txt": {
+     "type": "string",
+     "required": true
+    }
+   },
+   "time_props": [],
+   "image_props": [],
+   "notes": "Goes in edl.overlays."
+  }
+ ]
+}
