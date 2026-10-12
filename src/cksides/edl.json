@@ -77,8 +77,8 @@
 "props": {
 "src": "ar_talk_woman",
 "vid": true,
-"cap": "1950 · a smiling woman talks to the camera",
-"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+"cap": "1950 \u00b7 a smiling woman talks to the camera",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
 }
 },
 {
@@ -183,8 +183,8 @@
 "props": {
 "src": "ar_kitchen_kettles_1950s",
 "vid": true,
-"cap": "1950s · two cooks in white hats in a big kitchen",
-"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+"cap": "1950s \u00b7 two cooks in white hats in a big kitchen",
+"credit": "Hotel and Restaurant Workers (1950s) \u00b7 Public domain"
 }
 },
 {
@@ -267,8 +267,8 @@
 "props": {
 "src": "ar_dining_hall_1950s",
 "vid": true,
-"cap": "1950s · a man sets the tables in a dining hall",
-"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+"cap": "1950s \u00b7 a man sets the tables in a dining hall",
+"credit": "Hotel and Restaurant Workers (1950s) \u00b7 Public domain"
 }
 },
 {
@@ -337,8 +337,8 @@
 "props": {
 "src": "ar_t_corn",
 "vid": true,
-"cap": "1952 · a farmer in the corn",
-"credit": "Texas Farm Family (1952) · Public domain"
+"cap": "1952 \u00b7 a farmer in the corn",
+"credit": "Texas Farm Family (1952) \u00b7 Public domain"
 }
 },
 {
@@ -452,8 +452,8 @@
 "props": {
 "src": "ar_kitchen_mixer",
 "vid": true,
-"cap": "1951 · a woman at a kitchen mixer",
-"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+"cap": "1951 \u00b7 a woman at a kitchen mixer",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
 }
 },
 {
@@ -706,7 +706,7 @@
 "c": "BigNumber",
 "props": {
 "num": 165,
-"unit": "°F IN THE CENTER",
+"unit": "\u00b0F IN THE CENTER",
 "k": "n_thermometer",
 "dur": 22
 }
@@ -889,8 +889,8 @@
 "props": {
 "src": "ar_reading_book_1951",
 "vid": true,
-"cap": "1951 · hands turning the pages of a book",
-"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+"cap": "1951 \u00b7 hands turning the pages of a book",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
 }
 },
 {
@@ -1126,8 +1126,8 @@
 "props": {
 "src": "ar_cooking_girls",
 "vid": true,
-"cap": "1951 · three young women tying on aprons",
-"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+"cap": "1951 \u00b7 three young women tying on aprons",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
 }
 },
 {
@@ -1325,8 +1325,8 @@
 "props": {
 "src": "ar_t_couple",
 "vid": true,
-"cap": "1952 · a young farm woman walks through the tall grass",
-"credit": "Texas Farm Family (1952) · Public domain"
+"cap": "1952 \u00b7 a young farm woman walks through the tall grass",
+"credit": "Texas Farm Family (1952) \u00b7 Public domain"
 }
 },
 {
@@ -1385,8 +1385,8 @@
 "props": {
 "src": "ar_stove_pots",
 "vid": true,
-"cap": "1950 · a woman cooking at a stove with pots",
-"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+"cap": "1950 \u00b7 a woman cooking at a stove with pots",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
 }
 },
 {
@@ -1411,8 +1411,8 @@
 "props": {
 "src": "ar_fridge_open",
 "vid": true,
-"cap": "1957 · a man opens a refrigerator full of food",
-"credit": "Frigidaire Finale (1957) · Public domain"
+"cap": "1957 \u00b7 a man opens a refrigerator full of food",
+"credit": "Frigidaire Finale (1957) \u00b7 Public domain"
 }
 },
 {
@@ -1432,7 +1432,7 @@
 "c": "BigNumber",
 "props": {
 "num": 140,
-"unit": "°F OR HOTTER",
+"unit": "\u00b0F OR HOTTER",
 "k": "n_spoon_pot",
 "dur": 22
 }
@@ -1474,8 +1474,8 @@
 "props": {
 "src": "ar_window_sink",
 "vid": true,
-"cap": "1950 · a woman washing dishes at a window sink",
-"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+"cap": "1950 \u00b7 a woman washing dishes at a window sink",
+"credit": "The Last Word in Automatic Dishwashing (1950) \u00b7 Public domain"
 }
 },
 {
@@ -1500,8 +1500,8 @@
 "props": {
 "src": "ar_living_room_1951",
 "vid": true,
-"cap": "1951 · a mother and child in a living room",
-"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+"cap": "1951 \u00b7 a mother and child in a living room",
+"credit": "The Home Economics Story, Iowa State College (1951) \u00b7 Public domain"
 }
 },
 {
