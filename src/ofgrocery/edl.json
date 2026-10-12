@@ -1211,7 +1211,8 @@
      "k": "n_soup_cold",
      "txt": "Don't reheat it lukewarm",
      "t": 5.18
-    }
+    },
+    "k": "n_soup_boil"
    }
   },
   {
@@ -1807,7 +1808,8 @@
      "k": "n_packet_open",
      "txt": "Open it away from your face",
      "t": 4.97
-    }
+    },
+    "k": "n_foil_fold"
    }
   },
   {
