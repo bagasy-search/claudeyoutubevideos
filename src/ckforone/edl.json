@@ -1,0 +1,1343 @@
+{
+"end": 1102.5,
+"shots": [
+{
+"a": 0.0,
+"b": 3.5,
+"k": "img/ckforone/ckforone_thumb.jpg",
+"z": [
+1.0,
+1.07
+],
+"tout": "cut"
+},
+{
+"a": 3.5,
+"b": 29.473,
+"av": true,
+"qr": false
+},
+{
+"a": 29.473,
+"b": 46.613,
+"av": true,
+"qr": false
+},
+{
+"a": 46.613,
+"b": 59.993,
+"av": true,
+"qr": false
+},
+{
+"a": 59.993,
+"b": 69.09,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L01.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 69.09,
+"b": 92.54,
+"av": true,
+"qr": false
+},
+{
+"a": 92.54,
+"b": 105.02,
+"av": true,
+"qr": false
+},
+{
+"a": 105.02,
+"b": 112.877,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ar_ph_fazio.jpg",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 112.877,
+"b": 121.197,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L02.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 121.197,
+"b": 130.967,
+"av": true,
+"qr": false
+},
+{
+"a": 130.967,
+"b": 141.747,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ncloth.png",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "img/ckforone/page8.png",
+"tab": "PAGE 8",
+"t": 131.57
+}
+],
+"k": "img/ckforone/ncloth.png"
+}
+},
+{
+"a": 141.747,
+"b": 153.036,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ar_ph_caudill.jpg",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 153.036,
+"b": 162.987,
+"av": true,
+"qr": false
+},
+{
+"a": 162.987,
+"b": 169.793,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nthermo.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 169.793,
+"b": 176.46,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nscale.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 176.46,
+"b": 186.433,
+"av": true,
+"qr": false
+},
+{
+"a": 186.433,
+"b": 198.7,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n10a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 198.7,
+"b": 210.8,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L03.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 210.8,
+"b": 223.28,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n10b.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 223.28,
+"b": 235.467,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n10c.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 235.467,
+"b": 247.406,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n10d.png",
+"c": "MistakeStamp",
+"props": {
+"k": "img/ckforone/n10d.png",
+"txt": "LUMPY FILLING",
+"at2": 236.47
+}
+},
+{
+"a": 247.406,
+"b": 256.473,
+"av": true,
+"qr": false
+},
+{
+"a": 256.473,
+"b": 267.267,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n9a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 267.267,
+"b": 278.273,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n9b.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 278.273,
+"b": 289.3,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L04.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 289.3,
+"b": 300.053,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n9d.png",
+"c": "Checklist",
+"props": {
+"k": "img/ckforone/n9d.png",
+"head": "THE BEANS",
+"items": [
+{
+"t": 290.3,
+"txt": "Half a pound of beans"
+},
+{
+"t": 293.22,
+"txt": "Two slices of bacon"
+},
+{
+"t": 296.14,
+"txt": "A third of a cup of broth"
+}
+]
+}
+},
+{
+"a": 300.053,
+"b": 310.773,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ntbl2.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 310.773,
+"b": 321.52,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nbas.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 321.52,
+"b": 331.08,
+"av": true,
+"qr": false
+},
+{
+"a": 331.08,
+"b": 343.66,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n8a.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 343.66,
+"b": 356.147,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n8b.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 356.147,
+"b": 366.733,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n8c.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 366.733,
+"b": 377.007,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/noven.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 377.007,
+"b": 387.48,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n8d.png",
+"c": "MistakeStamp",
+"props": {
+"k": "img/ckforone/n8d.png",
+"txt": "TOUGH MEAT",
+"at2": 378.01
+}
+},
+{
+"a": 387.48,
+"b": 397.6,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ntbl3.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 397.6,
+"b": 407.127,
+"av": true,
+"qr": false
+},
+{
+"a": 407.127,
+"b": 417.813,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n7a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 417.813,
+"b": 428.457,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n7b.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 428.457,
+"b": 438.54,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n7c.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 438.54,
+"b": 448.99,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nstove.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 448.99,
+"b": 459.427,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n7d.png",
+"c": "MistakeStamp",
+"props": {
+"k": "img/ckforone/n7d.png",
+"txt": "DRY CHOPS",
+"at2": 449.99
+}
+},
+{
+"a": 459.427,
+"b": 469.667,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/napron.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 469.667,
+"b": 480.22,
+"tin": "cut",
+"tout": "cut",
+"k": "ar_fa_tomatoes",
+"vid": true,
+"ofs": 0
+},
+{
+"a": 480.22,
+"b": 490.35,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nchair.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 490.35,
+"b": 500.626,
+"av": true,
+"qr": false
+},
+{
+"a": 500.626,
+"b": 510.66,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n6a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 510.66,
+"b": 520.62,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n6b.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 520.62,
+"b": 530.74,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L07.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 530.74,
+"b": 540.677,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n6c.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 540.677,
+"b": 550.66,
+"tin": "cut",
+"tout": "cut",
+"k": "ar_home_line",
+"vid": true,
+"ofs": 0
+},
+{
+"a": 550.66,
+"b": 560.73,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n6d.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 560.73,
+"b": 570.96,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ntbl1.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 570.96,
+"b": 580.776,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ncoffee.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 580.776,
+"b": 590.323,
+"av": true,
+"qr": false
+},
+{
+"a": 590.323,
+"b": 601.407,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ar_ph_door.jpg",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 601.407,
+"b": 612.627,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n5a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 612.627,
+"b": 623.547,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n5b.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 623.547,
+"b": 634.787,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L06.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 634.787,
+"b": 645.57,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n5c.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 645.57,
+"b": 656.9,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n5d.png",
+"c": "MistakeStamp",
+"props": {
+"k": "img/ckforone/n5d.png",
+"txt": "HOT WATER KILLS YEAST",
+"at2": 646.57
+}
+},
+{
+"a": 656.9,
+"b": 667.947,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nroll.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 667.947,
+"b": 678.677,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nfarm.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 678.677,
+"b": 688.527,
+"av": true,
+"qr": false
+},
+{
+"a": 688.527,
+"b": 701.46,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n4a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 701.46,
+"b": 714.154,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n4b.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 714.154,
+"b": 726.95,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L09.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 726.95,
+"b": 739.573,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n4c.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 739.573,
+"b": 752.343,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n4d.png",
+"c": "MistakeStamp",
+"props": {
+"k": "img/ckforone/n4d.png",
+"txt": "COATING FALLS OFF",
+"at2": 740.57
+}
+},
+{
+"a": 752.343,
+"b": 762.533,
+"av": true,
+"qr": false
+},
+{
+"a": 762.533,
+"b": 771.987,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n3a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 771.987,
+"b": 781.8,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n3b.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 781.8,
+"b": 791.773,
+"tin": "cut",
+"tout": "cut",
+"k": "ar_home_dine",
+"vid": true,
+"ofs": 0
+},
+{
+"a": 791.773,
+"b": 801.673,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n3c.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 801.673,
+"b": 811.573,
+"tin": "cut",
+"tout": "cut",
+"k": "ar_fa_apples",
+"vid": true,
+"ofs": 0
+},
+{
+"a": 811.573,
+"b": 821.043,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nplate.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 821.043,
+"b": 831.633,
+"av": true,
+"qr": false
+},
+{
+"a": 831.633,
+"b": 837.793,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L10.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 837.793,
+"b": 844.013,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ar_ph_winn.jpg",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 844.013,
+"b": 850.16,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n2a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 850.16,
+"b": 861.203,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n2c.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 861.203,
+"b": 872.687,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L12.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 872.687,
+"b": 883.51,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n2d.png",
+"c": "MistakeStamp",
+"props": {
+"k": "img/ckforone/n2d.png",
+"txt": "WATERY SYRUP",
+"at2": 873.69
+}
+},
+{
+"a": 883.51,
+"b": 893.167,
+"av": true,
+"qr": false
+},
+{
+"a": 893.167,
+"b": 902.18,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L08.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 902.18,
+"b": 911.033,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n1a.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 911.033,
+"b": 919.45,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/nfreezer.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 919.45,
+"b": 930.16,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n1c.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 930.16,
+"b": 940.907,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/ar_ph_grimm.jpg",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 940.907,
+"b": 951.487,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/L11.png",
+"z": [
+1.0,
+1.1
+],
+"o": [
+60,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 951.487,
+"b": 961.843,
+"tin": "cut",
+"tout": "cut",
+"k": "img/ckforone/n1d.png",
+"z": [
+1.1,
+1.02
+],
+"o": [
+50,
+42
+],
+"dx": 0,
+"dy": 0
+},
+{
+"a": 961.843,
+"b": 990.007,
+"av": true,
+"qr": false
+},
+{
+"a": 990.007,
+"b": 1011.21,
+"av": true,
+"qr": false
+},
+{
+"a": 1011.21,
+"b": 1029.966,
+"av": true,
+"qr": true
+},
+{
+"a": 1029.966,
+"b": 1052.17,
+"av": true,
+"qr": false
+},
+{
+"a": 1052.17,
+"b": 1063.713,
+"av": true,
+"qr": false
+},
+{
+"a": 1063.713,
+"b": 1076.42,
+"av": true,
+"qr": false
+},
+{
+"a": 1076.42,
+"b": 1089.807,
+"av": true,
+"qr": false
+},
+{
+"a": 1089.807,
+"b": 1102.5,
+"av": true,
+"qr": false
+}
+]
+}
