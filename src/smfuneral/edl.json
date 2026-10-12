@@ -1,0 +1,1232 @@
+{
+ "end": 1032.57,
+ "shots": [
+  {
+   "k": "smfuneral_thumb",
+   "z": [
+    1.0,
+    1.08
+   ],
+   "tin": "cut",
+   "tout": "cut",
+   "a": 0.0,
+   "b": 3.6
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 3.6,
+   "b": 20.03
+  },
+  {
+   "a": 20.03,
+   "b": 20.27,
+   "k": "l_church_kitchen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 20.27,
+   "b": 41.97
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_serving_line",
+    "vid": true,
+    "cap": "1951 · women serve from a steam table in a college dining kitchen",
+    "credit": "Iowa State College, The Home Economics Story (1951) · Public domain"
+   },
+   "k": "",
+   "a": 41.97,
+   "b": 52.0
+  },
+  {
+   "a": 52.0,
+   "b": 59.97,
+   "k": "l_bread_rise",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 59.97,
+   "b": 67.93,
+   "k": "l_casserole_door",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 67.93,
+   "b": 95.33
+  },
+  {
+   "a": 95.33,
+   "b": 95.58,
+   "k": "l_empty_chair",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 95.58,
+   "b": 128.79
+  },
+  {
+   "a": 128.79,
+   "b": 129.12,
+   "k": "l_cups_morning",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n_chairs_row",
+    "verse": "Bear ye one another's burdens, and so fulfil the law of Christ.",
+    "ref": "GALATIANS 6:2",
+    "t": 137.44
+   },
+   "k": "n_chairs_row",
+   "a": 129.12,
+   "b": 147.03
+  },
+  {
+   "a": 147.03,
+   "b": 147.45,
+   "k": "l_pull_chair",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 147.45,
+   "b": 174.61
+  },
+  {
+   "a": 174.61,
+   "b": 182.97,
+   "k": "l_names_list",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 182.97,
+   "b": 191.32,
+   "k": "l_coffee_urn",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 191.32,
+   "b": 199.68,
+   "k": "l_fold_napkins",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_stew_pots",
+    "vid": true,
+    "cap": "1950s hotel kitchen · potatoes in a big pot of water",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 199.68,
+   "b": 210.0
+  },
+  {
+   "a": 210.0,
+   "b": 218.93,
+   "k": "l2_ladle_ham",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 218.93,
+   "b": 227.86,
+   "k": "l2_wipe_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n2_bread_board",
+    "verse": "I am the bread of life: he that cometh to me shall never hunger.",
+    "ref": "JOHN 6:35",
+    "t": 233.41
+   },
+   "k": "n2_bread_board",
+   "a": 227.86,
+   "b": 244.81
+  },
+  {
+   "a": 244.81,
+   "b": 251.91,
+   "k": "l2_pie_slice",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 251.91,
+   "b": 259.0,
+   "k": "l2_hands_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_hotel_linens",
+    "vid": true,
+    "cap": "1950s hotel kitchen · stacks of folded white linens",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 259.0,
+   "b": 271.0
+  },
+  {
+   "a": 271.0,
+   "b": 273.21,
+   "k": "l2_dish_car",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 273.21,
+   "b": 298.17
+  },
+  {
+   "a": 298.17,
+   "b": 298.37,
+   "k": "l2_family_photos",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n_hymnal_page",
+    "verse": "He healeth the broken in heart, and bindeth up their wounds.",
+    "ref": "PSALM 147:3",
+    "t": 304.63
+   },
+   "k": "n_hymnal_page",
+   "a": 298.37,
+   "b": 314.79
+  },
+  {
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Say the name out loud.",
+     "Let the family say it back to you."
+    ],
+    "sig": "Loretta",
+    "k": "n_candle_kitchen",
+    "size": 70
+   },
+   "k": "n_candle_kitchen",
+   "a": 314.79,
+   "b": 334.31
+  },
+  {
+   "a": 334.31,
+   "b": 334.47,
+   "k": "l2_window_coffee",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 334.47,
+   "b": 362.47
+  },
+  {
+   "a": 362.47,
+   "b": 362.73,
+   "k": "l2_pickup_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n_apples_table",
+    "verse": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.",
+    "ref": "MATTHEW 7:7",
+    "t": 367.78
+   },
+   "k": "n_apples_table",
+   "a": 362.73,
+   "b": 386.49
+  },
+  {
+   "a": 386.49,
+   "b": 396.0,
+   "k": "n_hash_browns",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_cook_pot",
+    "vid": true,
+    "cap": "1950s hotel kitchen · a cook at a big pot on the range",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 396.0,
+   "b": 406.0
+  },
+  {
+   "a": 406.0,
+   "b": 407.25,
+   "k": "n_bread_loaves",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "DoDont",
+   "props": {
+    "k": "n2_church_pew",
+    "yes": {
+     "k": "n2_church_pew",
+     "txt": "Say it to her face, over the coffee urn",
+     "t": 425.16
+    },
+    "no": {
+     "k": "n2_coffee_cups",
+     "txt": "Say it across the room",
+     "t": 420.0
+    }
+   },
+   "k": "n2_church_pew",
+   "a": 407.25,
+   "b": 432.68
+  },
+  {
+   "a": 432.68,
+   "b": 432.93,
+   "k": "n_foil_dishes",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n2_steam_table",
+    "verse": "Death and life are in the power of the tongue.",
+    "ref": "PROVERBS 18:21",
+    "t": 438.33
+   },
+   "k": "n2_steam_table",
+   "a": 432.93,
+   "b": 452.51
+  },
+  {
+   "a": 452.51,
+   "b": 452.82,
+   "k": "n_serving_line",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page9",
+      "tab": "PAGE 9",
+      "t": 456.0,
+      "hl": 9
+     }
+    ],
+    "k": "n2_church_clock"
+   },
+   "k": "n2_church_clock",
+   "a": 452.82,
+   "b": 474.4
+  },
+  {
+   "a": 474.4,
+   "b": 474.66,
+   "k": "n_sugar_jar",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_rinse_plate",
+    "vid": true,
+    "cap": "1950 kitchen · hands rinse a plate in the sink",
+    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+   },
+   "k": "",
+   "a": 474.66,
+   "b": 484.0
+  },
+  {
+   "a": 484.0,
+   "b": 488.0,
+   "k": "n_pie_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_hotel_pots",
+    "vid": true,
+    "cap": "1950s hotel kitchen · a cook stirs a big pot",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 488.0,
+   "b": 498.0
+  },
+  {
+   "a": 498.0,
+   "b": 502.57,
+   "k": "n_sink_dishes",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n2_scoops",
+    "verse": "Gather up the fragments that remain, that nothing be lost.",
+    "ref": "JOHN 6:12",
+    "t": 507.85
+   },
+   "k": "n2_scoops",
+   "a": 502.57,
+   "b": 525.91
+  },
+  {
+   "a": 525.91,
+   "b": 526.0,
+   "k": "n_stove_kettle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_sink_window",
+    "vid": true,
+    "cap": "1950 kitchen · a woman washes dishes at the window sink",
+    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+   },
+   "k": "",
+   "a": 526.0,
+   "b": 538.0
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_dish_towel",
+    "vid": true,
+    "cap": "1950 kitchen · a woman dries a dish",
+    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+   },
+   "k": "",
+   "a": 538.0,
+   "b": 548.0
+  },
+  {
+   "a": 548.0,
+   "b": 557.66,
+   "k": "n_wicker_basket",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n2_name_cards",
+    "verse": "Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight.",
+    "ref": "HEBREWS 12:1",
+    "t": 562.43
+   },
+   "k": "n2_name_cards",
+   "a": 557.66,
+   "b": 579.36
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_hotel_tables",
+    "vid": true,
+    "cap": "1950s hotel dining room · tables set for a meal",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 579.36,
+   "b": 590.0
+  },
+  {
+   "a": 590.0,
+   "b": 600.47,
+   "k": "n_roast_platter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 600.47,
+   "b": 610.94,
+   "k": "n_steam_pot",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "VerseCard",
+   "props": {
+    "k": "n2_gravy_boat",
+    "verse": "And they, continuing daily with one accord in the temple, and breaking bread from house to house, did eat their meat with gladness and singleness of heart.",
+    "ref": "ACTS 2:46",
+    "t": 615.72
+   },
+   "k": "n2_gravy_boat",
+   "a": 610.94,
+   "b": 631.57
+  },
+  {
+   "a": 631.57,
+   "b": 641.98,
+   "k": "n_pulled_chair",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 641.98,
+   "b": 652.38,
+   "k": "n2_cookie_tin",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Checklist",
+   "props": {
+    "head": "THE LIST",
+    "items": [
+     {
+      "t": 653.2,
+      "txt": "One thirty-ounce bag of frozen shredded hash browns, thawed."
+     },
+     {
+      "t": 656.4,
+      "txt": "One ten-and-a-half-ounce can of cream soup."
+     },
+     {
+      "t": 659.6,
+      "txt": "Two cups of sour cream."
+     },
+     {
+      "t": 662.8,
+      "txt": "Half a cup of butter, melted."
+     },
+     {
+      "t": 666.0,
+      "txt": "Half a cup of onion, finely chopped."
+     },
+     {
+      "t": 669.2,
+      "txt": "Two cups of shredded sharp cheddar."
+     },
+     {
+      "t": 672.4,
+      "txt": "One teaspoon of salt and half a teaspoon of pepper."
+     },
+     {
+      "t": 675.6,
+      "txt": "Two cups of crushed cornflakes."
+     }
+    ],
+    "k": "n2_potato_bag"
+   },
+   "k": "n2_potato_bag",
+   "a": 652.38,
+   "b": 679.85
+  },
+  {
+   "a": 679.85,
+   "b": 680.21,
+   "k": "n2_butter_knife",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 33",
+    "head": "STEP 1 AND 2",
+    "steps": [
+     {
+      "t": 681.28,
+      "txt": "Heat the oven to 350°F. Butter a 9x13 pan.",
+      "k": "n_pan_empty"
+     },
+     {
+      "t": 701.24,
+      "txt": "Squeeze the thawed potatoes dry in a towel.",
+      "k": "l_potatoes_towel"
+     }
+    ],
+    "k": "n_pan_empty"
+   },
+   "k": "n_pan_empty",
+   "a": 680.21,
+   "b": 714.22
+  },
+  {
+   "a": 714.22,
+   "b": 714.55,
+   "k": "n2_flower_vase",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 33",
+    "head": "STEP 3 AND 4",
+    "steps": [
+     {
+      "t": 716.59,
+      "txt": "Mix the soup, sour cream, butter, onion, cheese, salt and pepper.",
+      "k": "n_cream_mix"
+     },
+     {
+      "t": 734.28,
+      "txt": "Fold in the potatoes and spread them in the pan.",
+      "k": "n2_mixing_bowls"
+     }
+    ],
+    "k": "n_cream_mix"
+   },
+   "k": "n_cream_mix",
+   "a": 714.55,
+   "b": 749.21
+  },
+  {
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 33",
+    "head": "STEP 5 AND 6",
+    "steps": [
+     {
+      "t": 753.53,
+      "txt": "Toss the cornflakes with the last butter. Scatter on top.",
+      "k": "n_cornflakes"
+     },
+     {
+      "t": 770.01,
+      "txt": "Bake uncovered 50 to 55 minutes, until golden.",
+      "k": "l_oven_pan"
+     }
+    ],
+    "k": "n_cornflakes"
+   },
+   "k": "n_cornflakes",
+   "a": 749.21,
+   "b": 790.63
+  },
+  {
+   "a": 790.63,
+   "b": 790.87,
+   "k": "n2_rolling_pin",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "BigNumber",
+   "props": {
+    "num": 350,
+    "unit": "DEGREES F · 55 MIN",
+    "txt": "bake uncovered",
+    "k": "n2_spoon_pot",
+    "dur": 10
+   },
+   "k": "n2_spoon_pot",
+   "a": 790.87,
+   "b": 802.54
+  },
+  {
+   "a": 802.54,
+   "b": 802.9,
+   "k": "n2_casserole_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_pan_baked",
+    "txt": "Watery pan: never squeeze the potatoes"
+   },
+   "k": "n_pan_baked",
+   "a": 802.9,
+   "b": 829.37
+  },
+  {
+   "a": 829.37,
+   "b": 829.65,
+   "k": "n2_quilt_chair",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_hotel_roast",
+    "vid": true,
+    "cap": "1950s hotel kitchen · a chef loads a roasting tray",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 829.65,
+   "b": 839.0
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_hotel_meat",
+    "vid": true,
+    "cap": "1950s hotel kitchen · a cook cuts meat on a block",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 839.0,
+   "b": 849.0
+  },
+  {
+   "c": "Arc",
+   "props": {
+    "src": "arc_hotel_oven",
+    "vid": true,
+    "cap": "1950s hotel kitchen · trays come out of the oven",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   },
+   "k": "",
+   "a": 849.0,
+   "b": 859.0
+  },
+  {
+   "a": 859.0,
+   "b": 859.45,
+   "k": "n2_beans_pot",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 859.45,
+   "b": 893.23
+  },
+  {
+   "a": 893.23,
+   "b": 893.47,
+   "k": "n2_pie_crust",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 893.47,
+   "b": 913.35
+  },
+  {
+   "a": 913.35,
+   "b": 921.4,
+   "k": "n2_tea_towel",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 921.4,
+   "b": 929.44,
+   "k": "n2_church_sign",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "a": 929.44,
+   "b": 937.49,
+   "k": "n2_front_porch",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Checklist",
+   "props": {
+    "head": "THE SEVEN THINGS",
+    "items": [
+     {
+      "t": 938.5,
+      "txt": "Bring a covered dish after the third month."
+     },
+     {
+      "t": 942.5,
+      "txt": "Make the bread slow and talk while it rises."
+     },
+     {
+      "t": 946.5,
+      "txt": "Say the name of the one who is gone."
+     },
+     {
+      "t": 950.5,
+      "txt": "Let people bring you supper."
+     },
+     {
+      "t": 954.5,
+      "txt": "Keep the talk to someone's face."
+     },
+     {
+      "t": 958.5,
+      "txt": "Gather up the fragments."
+     },
+     {
+      "t": 962.5,
+      "txt": "Pull up another chair."
+     }
+    ],
+    "k": "l_blessing"
+   },
+   "k": "l_blessing",
+   "a": 937.49,
+   "b": 967.15
+  },
+  {
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Write one of those down this week.",
+     "On the back of an envelope, if that is what you have."
+    ],
+    "sig": "",
+    "k": "n2_church_clock",
+    "size": 60
+   },
+   "k": "n2_church_clock",
+   "a": 967.15,
+   "b": 977.11
+  },
+  {
+   "a": 977.11,
+   "b": 977.42,
+   "k": "n2_cold_dish",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 977.42,
+   "b": 995.93
+  },
+  {
+   "av": true,
+   "k": "",
+   "tin": "cut",
+   "tout": "cut",
+   "a": 995.93,
+   "b": 1015.75
+  },
+  {
+   "a": 1015.75,
+   "b": 1016.1,
+   "k": "n2_heirloom_spoon",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "o": [
+    50,
+    40
+   ],
+   "tin": "cut",
+   "tout": "cut"
+  },
+  {
+   "c": "Note",
+   "props": {
+    "lines": [
+     "This video shares one family's faith and memories from an old church lady's little book.",
+     "It is not a sermon or professional counsel.",
+     "Recipes from an old church lady's kitchen. Cook meat to safe temperatures and check every ingredient for allergies."
+    ],
+    "sig": "",
+    "k": "cover1",
+    "size": 36
+   },
+   "k": "cover1",
+   "a": 1016.1,
+   "b": 1032.57
+  }
+ ]
+}

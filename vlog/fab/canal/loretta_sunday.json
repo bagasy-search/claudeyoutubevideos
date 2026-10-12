@@ -1,6 +1,6 @@
 {
- "canal": "Loretta's Clean Home",
- "serie": "Loretta's Clean Home (The Church Lady Way): an 81-year-old Iowa church lady shows, in her own little farmhouse, the old right way to clean one thing",
+ "canal": "Loretta's Sunday Morning",
+ "serie": "Loretta's Sunday Morning: an 81-year-old Iowa church lady reads one verse, tells one story from her church and her farm, and asks one small thing of you each week",
  "idioma": "en",
  "protagonista": "loretta",
  "pron": "she",
@@ -11,8 +11,8 @@
   10,
   16
  ],
- "avatar_ref": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor.png",
- "acciones": "spraying, wiping with a rag, scrubbing with an old toothbrush, pouring vinegar, lifting the toilet seat, holding a little hand mirror under the rim",
+ "avatar_ref": "D:/claude-brain/canales/loretta-red/refs/ref_loretta_avatar_hd.png",
+ "acciones": "stirring a pot, squeezing thawed potatoes in a dish towel, folding a casserole into a pan, sliding a 9x13 pan into the oven, lifting a foil-covered dish, setting a long table with a row of cups, holding a little hymnal, sitting by a kitchen window with a cup of coffee",
  "prohibidas": [
   "\bfree\b",
   "\bgratis\b",
@@ -22,7 +22,7 @@
   "\\$\\s?\\d",
   "\bwhop\b"
  ],
- "dir_refs": "D:/rtmp/fab/canal/loretta",
+ "dir_refs": "D:/rtmp/ck6/smfuneral/refs",
  "estilo": "One ordinary frame pulled from a normal handheld video shot by her grandson with a phone at eye level, in the middle of the action: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a lamp or the daylight from the window), automatic white balance a bit off, slight phone noise, ordinary worn objects of an old Iowa farmhouse, plain bottles and rags with no labels, no beautiful composition.",
  "personajes": {
   "loretta": {
@@ -32,11 +32,11 @@
   }
  },
  "lugares_fijos": {
-  "bano": "Loretta's small old farmhouse bathroom: white porcelain toilet with a white plastic seat, white square wall tiles up to waist height and pale painted wall above, a white pedestal sink with chrome taps, a small window with a white lace half-curtain, a white bath mat, worn white hexagon tile floor, a wicker basket with folded towels",
   "cocina": "Loretta's 1950s white farmhouse kitchen: a white enamel stove with chrome handles, yellow gingham curtains on the window, a small wooden cross on the wall, a rooster cookie jar on a dark wooden dresser, a worn wooden table, a wall calendar",
-  "lavadero": "the small laundry corner off Loretta's kitchen: an old white top-loading washer and dryer, a deep white utility sink, a wooden shelf with plain unlabeled jugs and bottles, a mop and a bucket, a cotton clothesline basket",
-  "bajo_pileta": "the open cabinet under Loretta's bathroom sink: a plastic caddy with plain unlabeled spray bottles, a jug of white vinegar, a brown bottle of peroxide, a box of baking soda, folded old rags, yellow rubber gloves"
+  "sotano": "the church basement kitchen: long fold-out tables with white paper cloths, a steel counter, big stainless steel pots, a serving window, pie tins stacked on a shelf, a coffee urn, cinder-block walls painted cream",
+  "comedor": "the church basement dining room: folding tables in rows, plain white plates, a bulletin board with a hand-lettered sign, folding metal chairs",
+  "ventana": "Loretta's kitchen window at the sink: a lace curtain, a view of the yard and the barn in daylight, a small cup of coffee on the sill"
  },
  "identidad": "Preserve the exact identity, face, short curly snow-white hair, thin wire-rimmed glasses, age and skin of the elderly woman in the reference photograph. She wears a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron.",
- "cara_crop": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor_face.png"
+ "cara_crop": "D:/claude-brain/canales/loretta-red/refs/ref_loretta_avatar_hd.png"
 }
