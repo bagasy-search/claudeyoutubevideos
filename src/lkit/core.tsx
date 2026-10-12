@@ -198,3 +198,15 @@ export const CompWrap: React.FC<{ lead: number; d: number; tout?: Tr; children: 
   if (f >= d && tout === "zoom") { const u = (f - d + 1) / OV; sc = 1 + 0.9 * ez(u); bl = 16 * u; }
   return <AbsoluteFill style={{ transform: `translateX(${tx}px) scale(${sc})`, filter: bl ? `blur(${bl}px)` : undefined }}><Sequence from={lead} layout="none">{children}</Sequence></AbsoluteFill>;
 };
+
+// ── cámara por claves (de los héroes de ckeggs): lleva el punto (x,y) del lienzo 1920x1080 al centro con escala s; cada clave arranca en SU palabra (t) ──
+export type Cam = { t: number; s: number; x: number; y: number };
+export const camAt = (f: number, at: (t: number) => number, K: Cam[], dur = 1.1): Cam => {
+  let c = K[0];
+  for (let i = 1; i < K.length; i++) {
+    const p = c, q = K[i], u = ez((f - at(q.t)) / (dur * FPS));
+    if (f >= at(q.t)) c = { t: q.t, s: p.s + (q.s - p.s) * u, x: p.x + (q.x - p.x) * u, y: p.y + (q.y - p.y) * u };
+  }
+  return c;
+};
+export const camStyle = (c: Cam): React.CSSProperties => ({ transformOrigin: "0 0", transform: `translate(${960 - c.x * c.s}px, ${540 - c.y * c.s}px) scale(${c.s})` });

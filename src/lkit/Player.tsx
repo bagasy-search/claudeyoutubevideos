@@ -14,13 +14,14 @@ export type Edl = {
   overlays?: { a: number; b: number; c: string; props?: any }[];
 };
 
-export const makePlayer = (E: Edl): React.FC => () => (
+// extra = escenas HÉROE propias del video (src/<slug>/heroes.tsx): mismo contrato que un componente del kit ({a, d, ...props}); pisan al kit si se llaman igual.
+export const makePlayer = (E: Edl, extra: Record<string, React.FC<any>> = {}): React.FC => () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     {E.shots.map((s, i) => {
       const lead = s.tin && s.tin !== "cut" ? OV : 0;
       const tail = s.tout && s.tout !== "cut" ? OV : 0;
       const from = fr(s.a) - lead, d = fr(s.b) - fr(s.a);
-      const K = s.c ? LKIT[s.c] : null;
+      const K = s.c ? (extra[s.c] || LKIT[s.c]) : null;
       if (s.c && !K) throw new Error(`lkit: componente desconocido "${s.c}" en el plano ${i} (${s.a}s)`);
       return (
         <Sequence key={i} from={from} durationInFrames={d + lead + tail}>
@@ -29,7 +30,7 @@ export const makePlayer = (E: Edl): React.FC => () => (
       );
     })}
     {(E.overlays || []).map((o, i) => {
-      const K = LKIT_OVERLAYS[o.c];
+      const K = extra[o.c] || LKIT_OVERLAYS[o.c];
       if (!K) throw new Error(`lkit: superposición desconocida "${o.c}"`);
       const d = fr(o.b) - fr(o.a);
       return <Sequence key={"o" + i} from={fr(o.a)} durationInFrames={d}><K {...o.props} d={d} /></Sequence>;
