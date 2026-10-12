@@ -147,7 +147,7 @@ export const SuenganoRoot1080: React.FC = () => (
     </Sequence>
     {/* voz maestra del resto: desde 65 s original */}
     <Sequence from={fr(rel(65))}>
-      <Audio src={staticFile("suenganocut.wav")} trimBefore={fr(65)} />
+      <Audio src={staticFile("suengano_fish.wav")} trimBefore={fr(65)} />
     </Sequence>
     <Shots list={s65 as Shot[]} />
     <Shots list={s400 as Shot[]} />
