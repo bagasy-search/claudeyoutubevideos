@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "noEmit": true, "skipLibCheck": true },
+  "include": ["src/sucaja/Final.tsx", "src/sucaja/Min1.tsx", "src/sucaja/Full2.tsx", "src/sucaja/Avatar.tsx", "src/index_final988.tsx", "src/repkit/Kit.tsx", "src/repkit/Rk.tsx"]
+}
