@@ -1,0 +1,1641 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 4.1,
+"k": "smblessing_thumb",
+"z": [
+1.0,
+1.06
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 4.1,
+"b": 14.137,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 14.137,
+"b": 22.953,
+"k": "n_hands_coffee",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 22.953,
+"b": 30.88,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 30.88,
+"b": 39.913,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"k": "n_checklist_bg",
+"items": [
+{
+"t": 31,
+"txt": "Read three short verses, slowly"
+},
+{
+"t": 66.93,
+"txt": "Hear the story behind each one"
+},
+{
+"t": 36.5,
+"txt": "Do one small thing this week"
+}
+]
+}
+},
+{
+"a": 39.913,
+"b": 46.89,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 46.89,
+"b": 55.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_dining_hall_1950s",
+"vid": true,
+"cap": "1950s · a man setting a restaurant table",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 55.0,
+"b": 61.886,
+"k": "n_thanks_table",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 61.886,
+"b": 69.913,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 69.913,
+"b": 78.0,
+"k": "n_clock_hall",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 78.0,
+"b": 85.007,
+"k": "n_hat_hook",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 85.007,
+"b": 93.02,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 93.02,
+"b": 102.0,
+"k": "l_porch",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 102.0,
+"b": 111.82,
+"k": "n_dish_towel",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 111.82,
+"b": 119.093,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 119.093,
+"b": 126.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_living_room_1951",
+"vid": true,
+"cap": "1951 · a mother and child in a lamp-lit living room",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 126.0,
+"b": 133.21,
+"k": "n_empty_porch",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 133.21,
+"b": 140.893,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 140.893,
+"b": 150.893,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_stove_pots",
+"vid": true,
+"cap": "1950s · pots on a kitchen stove",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 150.893,
+"b": 154.013,
+"k": "n2_13",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 154.013,
+"b": 161.833,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 161.833,
+"b": 166.0,
+"k": "n_wood_stove",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 166.0,
+"b": 176.0,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_hymnal",
+"verse": "God is our refuge and strength, a very present help in trouble.",
+"ref": "PSALM 46:1",
+"t": 164
+}
+},
+{
+"a": 176.0,
+"b": 180.966,
+"k": "n_list_phone",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 180.966,
+"b": 188.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 188.0,
+"b": 200.0,
+"k": "l_calendar_b",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 200.0,
+"b": 211.947,
+"k": "n_calendar",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 211.947,
+"b": 219.107,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 219.107,
+"b": 229.107,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_calendar_week",
+"verse": "It is of the Lord's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
+"ref": "LAMENTATIONS 3:22-23",
+"t": 219
+}
+},
+{
+"a": 229.107,
+"b": 236.0,
+"k": "n2_14",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 236.0,
+"b": 242.873,
+"k": "n_pencil_drawer",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 242.873,
+"b": 250.013,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 250.013,
+"b": 259.223,
+"k": "n_stove_kettle",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 259.223,
+"b": 266.073,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 266.073,
+"b": 276.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_reading_book_1951",
+"vid": true,
+"cap": "1951 · a book, read slowly",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 276.0,
+"b": 284.88,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_bible_window",
+"verse": "The Lord shall preserve thy going out and thy coming in from this time forth, and even for evermore.",
+"ref": "PSALM 121:8",
+"t": 279.8
+}
+},
+{
+"a": 284.88,
+"b": 292.113,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 292.113,
+"b": 299.0,
+"k": "l_window_curtain",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 299.0,
+"b": 307.007,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_window_sink",
+"vid": true,
+"cap": "1950s · a woman at a window and sink",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 307.007,
+"b": 314.107,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 314.107,
+"b": 322.0,
+"k": "n_soap_bucket",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 322.0,
+"b": 330.113,
+"k": "n_cloth_corner",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 330.113,
+"b": 337.19,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 337.19,
+"b": 348.0,
+"k": "l_table_extra",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 348.0,
+"b": 359.74,
+"k": "n_table_set",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 359.74,
+"b": 365.913,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 365.913,
+"b": 376.0,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_bread_board",
+"verse": "And they, continuing daily with one accord in the temple, and breaking bread from house to house, did eat their meat with gladness and singleness of heart.",
+"ref": "ACTS 2:46",
+"t": 375.04
+}
+},
+{
+"a": 376.0,
+"b": 385.647,
+"k": "n_pot_steam",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 385.647,
+"b": 392.047,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 392.047,
+"b": 400.0,
+"k": "l_fridge",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 400.0,
+"b": 407.667,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_cooking_girls",
+"vid": true,
+"cap": "1951 · two girls in blue aprons by a window",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 407.667,
+"b": 414.053,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 414.053,
+"b": 426.0,
+"k": "l_coffee_book",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 426.0,
+"b": 437.88,
+"k": "",
+"c": "PrayerLines",
+"props": {
+"k": "n_book_open",
+"head": "THE BLESSING",
+"lines": [
+{
+"t": 426,
+"txt": "The Lord bless thee, and keep thee:"
+},
+{
+"t": 430,
+"txt": "The Lord make his face shine upon thee,"
+},
+{
+"t": 436,
+"txt": "The Lord lift up his countenance upon thee,"
+},
+{
+"t": 438,
+"txt": "and give thee peace."
+}
+]
+}
+},
+{
+"a": 437.88,
+"b": 444.85,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 444.85,
+"b": 454.85,
+"k": "",
+"c": "BigNumber",
+"props": {
+"k": "n_wedding_table",
+"num": 52,
+"unit": "SUNDAY MORNINGS",
+"txt": "one verse, one story, one prayer, three minutes each",
+"dur": 22
+}
+},
+{
+"a": 454.85,
+"b": 458.0,
+"k": "n2_16",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 458.0,
+"b": 468.0,
+"k": "n_church_hall",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 468.0,
+"b": 471.033,
+"k": "n2_17",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 471.033,
+"b": 476.787,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 476.787,
+"b": 485.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_mixer",
+"vid": true,
+"cap": "1951 · a kitchen mixer going, a woman cooking",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 485.0,
+"b": 492.873,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_couple",
+"vid": true,
+"cap": "1952 · a farm woman out in the field",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 492.873,
+"b": 499.893,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 499.893,
+"b": 508.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_kitchen_kettles_1950s",
+"vid": true,
+"cap": "1950s · cooks at big steam kettles",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 508.0,
+"b": 516.0,
+"k": "n_supper_dish",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 516.0,
+"b": 522.877,
+"k": "n_small_bowl",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 522.877,
+"b": 530.087,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 530.087,
+"b": 540.0,
+"k": "l_church_kitchen",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 540.0,
+"b": 549.02,
+"k": "n_pew_light",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 549.02,
+"b": 556.08,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 556.08,
+"b": 567.0,
+"k": "l_pew",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 567.0,
+"b": 577.993,
+"k": "n_two_cups",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 577.993,
+"b": 585.167,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 585.167,
+"b": 595.0,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_lamp_porch",
+"verse": "For a day in thy courts is better than a thousand.",
+"ref": "PSALM 84:10",
+"t": 604.29
+}
+},
+{
+"a": 595.0,
+"b": 604.593,
+"k": "n_kitchen_clean",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 604.593,
+"b": 611.927,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 611.927,
+"b": 621.927,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THIS WEEK",
+"k": "n_disclaimer_bg",
+"items": [
+{
+"t": 612,
+"txt": "Thank someone who has been there a long time"
+},
+{
+"t": 620,
+"txt": "Tell them their seat is still warm"
+}
+]
+}
+},
+{
+"a": 621.927,
+"b": 625.0,
+"k": "n2_18",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 625.0,
+"b": 635.0,
+"k": "n_homecoming_pies",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 635.0,
+"b": 638.08,
+"k": "n2_19",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 638.08,
+"b": 645.093,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 645.093,
+"b": 653.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_talk_woman",
+"vid": true,
+"cap": "1950s · a smiling woman, close up",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 653.0,
+"b": 660.813,
+"k": "n_phone_table",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 660.813,
+"b": 667.86,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 667.86,
+"b": 678.0,
+"k": "l_empty_chair",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 678.0,
+"b": 687.0,
+"k": "n_candle",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 687.0,
+"b": 693.877,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 693.877,
+"b": 702.053,
+"k": "n_knock_door",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 702.053,
+"b": 709.007,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 709.007,
+"b": 714.0,
+"k": "n_dusk",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 714.0,
+"b": 721.933,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "qr",
+"t": 722
+}
+},
+{
+"a": 721.933,
+"b": 729.1,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 729.1,
+"b": 741.0,
+"k": "l_quiet",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 741.0,
+"b": 752.053,
+"k": "n_quilts",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 752.053,
+"b": 758.893,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 758.893,
+"b": 767.0,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_chickens",
+"vid": true,
+"cap": "1952 · a farm wife and her chickens",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 767.0,
+"b": 777.0,
+"k": "n_window_light",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 777.0,
+"b": 780.907,
+"k": "n2_20",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 780.907,
+"b": 788.16,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 788.16,
+"b": 796.0,
+"k": "",
+"c": "Note",
+"props": {
+"k": "n2_01",
+"lines": [
+"Contentment is a pie that's good enough."
+],
+"sig": "Loretta",
+"size": 58
+}
+},
+{
+"a": 796.0,
+"b": 803.66,
+"k": "n2_02",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 803.66,
+"b": 811.14,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 811.14,
+"b": 821.0,
+"k": "l_sit_porch",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 821.0,
+"b": 831.873,
+"k": "n2_03",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 831.873,
+"b": 838.673,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 838.673,
+"b": 849.0,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n2_04",
+"verse": "Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.",
+"ref": "MATTHEW 7:7",
+"t": 839
+}
+},
+{
+"a": 849.0,
+"b": 857.98,
+"k": "n2_05",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 857.98,
+"b": 864.933,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 864.933,
+"b": 876.0,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "ONE SMALL THING",
+"k": "n2_06",
+"items": [
+{
+"t": 868.01,
+"txt": "One small thing this week. Not ten."
+},
+{
+"t": 870,
+"txt": "Read the verse twice"
+}
+]
+}
+},
+{
+"a": 876.0,
+"b": 885.673,
+"k": "n2_07",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 885.673,
+"b": 893.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 893.0,
+"b": 901.0,
+"k": "n2_08",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 901.0,
+"b": 909.163,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "ar_t_corn",
+"vid": true,
+"cap": "1952 · a farmer out in the corn",
+"credit": "Public domain archive film"
+}
+},
+{
+"a": 909.163,
+"b": 916.007,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 916.007,
+"b": 927.843,
+"k": "",
+"c": "Note",
+"props": {
+"k": "n2_09",
+"lines": [
+"Tell me in the comments on Loretta's Sunday Morning:",
+"what is one room where you have felt the blessing?"
+],
+"sig": "Loretta",
+"size": 72
+}
+},
+{
+"a": 927.843,
+"b": 935.027,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 935.027,
+"b": 945.833,
+"k": "n2_10",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 945.833,
+"b": 953.06,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 953.06,
+"b": 958.6,
+"k": "n2_11",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 958.6,
+"b": 969.893,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 969.893,
+"b": 972.27,
+"k": "n2_12",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+}
+],
+"sfx": [],
+"end": 972.27
+}
