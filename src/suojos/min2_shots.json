@@ -1,0 +1,306 @@
+[
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_19896989.mp4",
+  "from": 0.0,
+  "to": 6.67,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 6.67,
+  "to": 17.08,
+  "off": 19.05
+ },
+ {
+  "kind": "COMP",
+  "name": "MAQUINA",
+  "from": 17.08,
+  "to": 30.08,
+  "props": {
+   "bg": "img/suojos/bg_03.jpg",
+   "dot": false
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_20315763.mp4",
+  "from": 30.08,
+  "to": 35.08,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_29376327.mp4",
+  "from": 35.08,
+  "to": 40.08,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 40.08,
+  "to": 50.5,
+  "off": 29.46
+ },
+ {
+  "kind": "COMP",
+  "name": "MAQUINA",
+  "from": 50.5,
+  "to": 63.5,
+  "props": {
+   "bg": "img/suojos/bg_03.jpg",
+   "dot": true
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_2948582.mp4",
+  "from": 63.5,
+  "to": 68.81,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_29824279.mp4",
+  "from": 68.81,
+  "to": 74.11,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 74.11,
+  "to": 87.48,
+  "off": 39.88
+ },
+ {
+  "kind": "COMP",
+  "name": "CLIPBOARD",
+  "from": 87.48,
+  "to": 99.48,
+  "props": {
+   "bg": "img/suojos/bg_01.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_30557963.mp4",
+  "from": 99.48,
+  "to": 103.52,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_30747264.mp4",
+  "from": 103.52,
+  "to": 107.57,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 107.57,
+  "to": 119.54,
+  "off": 53.253
+ },
+ {
+  "kind": "COMP",
+  "name": "BEFORE",
+  "from": 119.54,
+  "to": 131.54,
+  "props": {
+   "a": "img/suojos/bg_10.jpg",
+   "b": "img/suojos/bg_11.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_3119255.mp4",
+  "from": 131.54,
+  "to": 136.06,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_3191886.mp4",
+  "from": 136.06,
+  "to": 140.57,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 140.57,
+  "to": 149.04,
+  "off": 65.23
+ },
+ {
+  "kind": "COMP",
+  "name": "COUNT",
+  "from": 149.04,
+  "to": 161.04,
+  "props": {
+   "bg": "img/suojos/bg_05.jpg",
+   "n": 1,
+   "of": 9,
+   "title": "Entrada: fruta y carrito"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_34765007.mp4",
+  "from": 161.04,
+  "to": 167.1,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_34813666.mp4",
+  "from": 167.1,
+  "to": 173.17,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 173.17,
+  "to": 185.1,
+  "off": 73.7
+ },
+ {
+  "kind": "COMP",
+  "name": "SHELFTAG",
+  "from": 185.1,
+  "to": 197.1,
+  "props": {
+   "bg": "img/suojos/bg_06.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_34988877.mp4",
+  "from": 197.1,
+  "to": 201.78,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_36074343.mp4",
+  "from": 201.78,
+  "to": 206.46,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 206.46,
+  "to": 214.22,
+  "off": 85.63
+ },
+ {
+  "kind": "COMP",
+  "name": "CLOCK",
+  "from": 214.22,
+  "to": 224.22,
+  "props": {
+   "bg": "img/suojos/bg_12.jpg"
+  }
+ },
+ {
+  "kind": "COMP",
+  "name": "TICKET",
+  "from": 224.22,
+  "to": 234.84,
+  "props": {
+   "bg": "img/suojos/bg_08.jpg"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 234.84,
+  "to": 246.73,
+  "off": 93.39
+ },
+ {
+  "kind": "COMP",
+  "name": "CTA",
+  "from": 246.73,
+  "to": 256.73,
+  "props": {
+   "bg": "img/suojos/bg_07.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_39238831.mp4",
+  "from": 256.73,
+  "to": 261.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 261.0,
+  "to": 271.0,
+  "props": {
+   "bg": "img/suojos/bg_02.jpg",
+   "label": "AL FONDO"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_39240107.mp4",
+  "from": 271.0,
+  "to": 277.76,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 277.76,
+  "to": 290.12,
+  "off": 105.283
+ },
+ {
+  "kind": "COMP",
+  "name": "COUNT",
+  "from": 290.12,
+  "to": 301.12,
+  "props": {
+   "bg": "img/suojos/bg_extra.jpg",
+   "n": 3,
+   "of": 9,
+   "title": "La leche al fondo"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_4091009.mp4",
+  "from": 301.12,
+  "to": 305.94,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_4121744.mp4",
+  "from": 305.94,
+  "to": 310.75,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 310.75,
+  "to": 318.37,
+  "off": 117.637
+ },
+ {
+  "kind": "COMP",
+  "name": "HEIGHTS",
+  "from": 318.37,
+  "to": 328.37,
+  "props": {
+   "bg": "img/suojos/bg_00.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxc_4122971.mp4",
+  "from": 328.37,
+  "to": 335.0,
+  "off": 0
+ }
+]

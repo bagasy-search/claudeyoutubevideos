@@ -1,0 +1,76 @@
+[
+ {
+  "from": 0.0,
+  "to": 0.6,
+  "kind": "TH",
+  "src": "img/suojos/thumb_orig.png"
+ },
+ {
+  "from": 0.6,
+  "to": 4.41,
+  "kind": "WOW",
+  "src": "broll/suojos/wow_forklift_b.mp4",
+  "off": 0
+ },
+ {
+  "from": 4.41,
+  "to": 13.82,
+  "kind": "AV",
+  "off": 0,
+  "chip": "CLAUDIO · 30 AÑOS EN EL SÚPER",
+  "chipDur": 3.0
+ },
+ {
+  "from": 13.82,
+  "to": 19.5,
+  "kind": "WOW",
+  "src": "broll/suojos/wow_distcenter.mp4",
+  "off": 0
+ },
+ {
+  "from": 19.5,
+  "to": 25.5,
+  "kind": "WOW",
+  "src": "broll/suojos/px_cinta.mp4",
+  "off": 0
+ },
+ {
+  "from": 25.5,
+  "to": 31.5,
+  "kind": "WOW",
+  "src": "broll/suojos/wow_conveyor.mp4",
+  "off": 0
+ },
+ {
+  "from": 31.5,
+  "to": 35.63,
+  "kind": "IMG",
+  "src": "img/suojos/N01.png"
+ },
+ {
+  "from": 35.63,
+  "to": 45.28,
+  "kind": "AV",
+  "off": 9.407
+ },
+ {
+  "from": 45.28,
+  "to": 52.0,
+  "kind": "ST",
+  "src": "broll/suojos/px_pov_carrito.mp4",
+  "off": 0
+ },
+ {
+  "from": 52.0,
+  "to": 60.0,
+  "kind": "SEAL",
+  "src": "img/suojos/N06.png"
+ },
+ {
+  "from": 60.0,
+  "to": 65.0,
+  "kind": "ST",
+  "src": "broll/suojos/st_reponer.mp4",
+  "off": 0
+ }
+]

@@ -1,0 +1,636 @@
+[
+ {
+  "kind": "COMP",
+  "name": "HEIGHTS",
+  "from": 0.0,
+  "to": 8.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_00.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_26926581.mp4",
+  "from": 8.0,
+  "to": 11.8,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 11.8,
+  "to": 19.94,
+  "off": 125.257
+ },
+ {
+  "kind": "COMP",
+  "name": "PERKILO",
+  "from": 19.94,
+  "to": 30.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_01.jpg",
+   "left": {
+    "img": "img/suojos/r6_bg_02.jpg",
+    "name": "Arroz 500 g",
+    "price": 1240,
+    "grams": 500
+   },
+   "right": {
+    "img": "img/suojos/r6_bg_03.jpg",
+    "name": "Arroz 1 kg",
+    "price": 2190,
+    "grams": 1000
+   }
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_28827282.mp4",
+  "from": 30.0,
+  "to": 38.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "SHELFTAG",
+  "from": 38.0,
+  "to": 44.33,
+  "props": {
+   "bg": "img/suojos/r6_bg_04.jpg"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 44.33,
+  "to": 58.54,
+  "off": 133.397
+ },
+ {
+  "kind": "COMP",
+  "name": "COUNT",
+  "from": 58.54,
+  "to": 70.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_05.jpg",
+   "n": 5,
+   "of": 9,
+   "title": "Lo raro, arriba"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_28988753.mp4",
+  "from": 70.0,
+  "to": 76.5,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_29068393.mp4",
+  "from": 76.5,
+  "to": 83.2,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 83.2,
+  "to": 91.68,
+  "off": 147.607
+ },
+ {
+  "kind": "COMP",
+  "name": "MIRAR",
+  "from": 91.68,
+  "to": 105.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_06.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_33006235.mp4",
+  "from": 105.0,
+  "to": 111.25,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 111.25,
+  "to": 117.92,
+  "off": 156.083
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 117.92,
+  "to": 126.0,
+  "props": {
+   "bg": "img/suojos/r6_fix_yolo.jpg",
+   "label": "YO LO VI"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_34785311.mp4",
+  "from": 126.0,
+  "to": 131.0,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_35226314.mp4",
+  "from": 131.0,
+  "to": 136.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "COUNT",
+  "from": 136.0,
+  "to": 145.68,
+  "props": {
+   "bg": "img/suojos/r6_bg_08.jpg",
+   "n": 2,
+   "of": 9,
+   "title": "Lo de los chicos"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 145.68,
+  "to": 154.32,
+  "off": 162.75
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_37326360.mp4",
+  "from": 154.32,
+  "to": 162.0,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_3735225.mp4",
+  "from": 162.0,
+  "to": 170.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 170.0,
+  "to": 178.14,
+  "props": {
+   "bg": "img/suojos/r6_bg_09.jpg",
+   "label": "A SU ALTURA"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 178.14,
+  "to": 191.32,
+  "off": 171.39
+ },
+ {
+  "kind": "COMP",
+  "name": "OFFER",
+  "from": 191.32,
+  "to": 201.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_10.jpg",
+   "big": "2x1",
+   "small": "OFERTA"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_3794065.mp4",
+  "from": 201.0,
+  "to": 206.5,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_39221979.mp4",
+  "from": 206.5,
+  "to": 212.06,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 212.06,
+  "to": 221.44,
+  "off": 184.57
+ },
+ {
+  "kind": "COMP",
+  "name": "SHELFTAG",
+  "from": 221.44,
+  "to": 229.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_11.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_39240105.mp4",
+  "from": 229.0,
+  "to": 236.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "BEFORE",
+  "from": 236.0,
+  "to": 243.45,
+  "props": {
+   "a": "img/suojos/r6_bg_12.jpg",
+   "b": "img/suojos/r6_bg_13.jpg",
+   "labels": [
+    "LUZ FRÍA",
+    "LUZ CÁLIDA"
+   ]
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 243.45,
+  "to": 256.77,
+  "off": 193.95
+ },
+ {
+  "kind": "COMP",
+  "name": "CLOCK",
+  "from": 256.77,
+  "to": 267.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_14.jpg",
+   "hf": 8,
+   "ht": 9,
+   "label": "MÚSICA LENTA"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4098420.mp4",
+  "from": 267.0,
+  "to": 273.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 273.0,
+  "to": 279.1,
+  "props": {
+   "bg": "img/suojos/r6_bg_15.jpg",
+   "label": "RITMO LENTO"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 279.1,
+  "to": 289.49,
+  "off": 207.27
+ },
+ {
+  "kind": "COMP",
+  "name": "LUPA",
+  "from": 289.49,
+  "to": 299.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_16.jpg",
+   "label": "Juntos, separados"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4121625.mp4",
+  "from": 299.0,
+  "to": 305.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "COUNT",
+  "from": 305.0,
+  "to": 310.8,
+  "props": {
+   "bg": "img/suojos/r6_bg_17.jpg",
+   "n": 8,
+   "of": 9,
+   "title": "Las papas lejos de la salsa"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 310.8,
+  "to": 319.1,
+  "off": 217.66
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 319.1,
+  "to": 327.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_18.jpg",
+   "label": "JUNTAS, SEPARADAS"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4121714.mp4",
+  "from": 327.0,
+  "to": 334.0,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4121739.mp4",
+  "from": 334.0,
+  "to": 340.57,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 340.57,
+  "to": 348.92,
+  "off": 225.96
+ },
+ {
+  "kind": "COMP",
+  "name": "SCANNER",
+  "from": 348.92,
+  "to": 359.0,
+  "props": {
+   "img": "img/suojos/r6_bg_19.jpg",
+   "price": 3400
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4121746.mp4",
+  "from": 359.0,
+  "to": 363.5,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4121747.mp4",
+  "from": 363.5,
+  "to": 368.24,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 368.24,
+  "to": 379.44,
+  "off": 234.307
+ },
+ {
+  "kind": "COMP",
+  "name": "COUNT",
+  "from": 379.44,
+  "to": 389.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_20.jpg",
+   "n": 9,
+   "of": 9,
+   "title": "La caja"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4139401.mp4",
+  "from": 389.0,
+  "to": 395.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 395.0,
+  "to": 399.88,
+  "props": {
+   "bg": "img/suojos/r6_bg_21.jpg",
+   "label": "LA SALIDA"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 399.88,
+  "to": 409.26,
+  "off": 245.5
+ },
+ {
+  "kind": "COMP",
+  "name": "CLIPBOARD",
+  "from": 409.26,
+  "to": 421.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_22.jpg",
+   "title": "5 reglas del súper",
+   "lines": [
+    {
+     "txt": "1 · Lista por pasillo",
+     "t": 1.5
+    },
+    {
+     "txt": "2 · El fondo primero",
+     "t": 3.5
+    },
+    {
+     "txt": "3 · Mira arriba y abajo",
+     "t": 5.5
+    },
+    {
+     "txt": "4 · Compara por kilo",
+     "t": 7.5
+    },
+    {
+     "txt": "5 · Nada de carrito grande",
+     "t": 9
+    }
+   ]
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4186967.mp4",
+  "from": 421.0,
+  "to": 428.76,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 428.76,
+  "to": 437.24,
+  "off": 254.887
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 437.24,
+  "to": 444.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_23.jpg",
+   "label": "1 · LA LISTA"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4281235.mp4",
+  "from": 444.0,
+  "to": 450.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 450.0,
+  "to": 457.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_24.jpg",
+   "label": "2 · EL FONDO"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4292301.mp4",
+  "from": 457.0,
+  "to": 463.37,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 463.37,
+  "to": 473.68,
+  "off": 263.367
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 473.68,
+  "to": 482.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_25.jpg",
+   "label": "3 · ARRIBA Y ABAJO"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4309719.mp4",
+  "from": 482.0,
+  "to": 488.0,
+  "off": 0
+ },
+ {
+  "kind": "COMP",
+  "name": "STAMP",
+  "from": 488.0,
+  "to": 493.6,
+  "props": {
+   "bg": "img/suojos/r6_bg_26.jpg",
+   "label": "4 · POR KILO"
+  }
+ },
+ {
+  "kind": "AV",
+  "from": 493.6,
+  "to": 504.36,
+  "off": 273.68
+ },
+ {
+  "kind": "COMP",
+  "name": "CLIPBOARD",
+  "from": 504.36,
+  "to": 516.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_27.jpg",
+   "title": "Resumen",
+   "lines": [
+    {
+     "txt": "Nueve estaciones",
+     "t": 1.5
+    },
+    {
+     "txt": "Cinco reglas",
+     "t": 3.5
+    }
+   ]
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_4366190.mp4",
+  "from": 516.0,
+  "to": 524.0,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_5100068.mp4",
+  "from": 524.0,
+  "to": 531.61,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 531.61,
+  "to": 541.02,
+  "off": 284.44
+ },
+ {
+  "kind": "COMP",
+  "name": "CTA",
+  "from": 541.02,
+  "to": 553.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_28.jpg"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_5100073.mp4",
+  "from": 553.0,
+  "to": 557.5,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_5103990.mp4",
+  "from": 557.5,
+  "to": 562.07,
+  "off": 0
+ },
+ {
+  "kind": "AV",
+  "from": 562.07,
+  "to": 574.05,
+  "off": 293.853
+ },
+ {
+  "kind": "COMP",
+  "name": "COMMENT",
+  "from": 574.05,
+  "to": 582.0,
+  "props": {
+   "bg": "img/suojos/r6_bg_29.jpg",
+   "q": "¿Qué te hace gastar más en el súper?"
+  }
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_5103996.mp4",
+  "from": 582.0,
+  "to": 587.0,
+  "off": 0
+ },
+ {
+  "kind": "ST",
+  "src": "broll/suojos/pxr_5103999.mp4",
+  "from": 587.0,
+  "to": 592.0,
+  "off": 0
+ }
+]
