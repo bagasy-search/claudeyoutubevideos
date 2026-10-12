@@ -1,0 +1,49 @@
+{
+ "canal": "Loretta Cooks for One",
+ "serie": "Loretta Cooks for One (The Church Lady Way): an 81-year-old widowed Iowa church lady cooks one small supper for herself in her farmhouse kitchen, using the recipes of her little book Supper for One",
+ "idioma": "en",
+ "protagonista": "loretta",
+ "pron": "she",
+ "voz": "loretta",
+ "cps": 15.9,
+ "ejemplos": "lor_",
+ "avatar_pct": [
+  25,
+  32
+ ],
+ "avatar_ref": "D:/claude-brain/canales/loretta-red/refs/ref_loretta_avatar_hd.png",
+ "acciones": "cutting a recipe down to one portion, lining a sheet pan with foil, folding and crimping a foil packet, opening a packet away from her face, setting a small table for one, lifting a lid to check, tasting from a wooden spoon, wrapping a portion and labeling a freezer bag",
+ "prohibidas": [
+  "\bfree\b",
+  "\bgratis\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bwhop\b",
+  "\bcheap\b",
+  "\bdiscount\b",
+  "\bcoupon\b"
+ ],
+ "dir_refs": "D:/rtmp/fab/canal/loretta_one",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by her grandson with a phone at eye level, in the middle of the action: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a lamp or the daylight from the window), automatic white balance a bit off, slight phone noise, ordinary worn objects of an old Iowa farmhouse, plain foil and plain pans with no labels, no beautiful composition.",
+ "personajes": {
+  "loretta": {
+   "nombre": "Loretta",
+   "cara": true,
+   "desc": "Loretta, an 81-year-old white American grandmother with short curly snow-white hair, thin wire-rimmed glasses, a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron, with old wrinkled hands"
+  }
+ },
+ "lugares_fijos": {
+  "cocina": "Loretta's small 1950s white farmhouse kitchen: a white enamel stove with chrome handles, yellow gingham curtains on the window, a small wooden cross on the wall, a rooster cookie jar on a dark wooden dresser, a wall calendar",
+  "mesa": "Loretta's small wooden kitchen table set for one: a single good plate, a folded cloth napkin, a glass of milk, a small candle, the window light behind",
+  "encimera": "the counter by Loretta's stove: a roll of heavy aluminum foil on its box, a quarter sheet pan lined with foil, a wooden cutting board, a bowl of potatoes, a paring knife, a small pile of paper towels",
+  "iglesia": "the church basement kitchen of Zion United Methodist: long folding tables with white paper tablecloths, steel steam pans, a big old range, cafeteria trays, a bulletin board with church supper signs"
+ },
+ "identidad": "Preserve the exact identity, face, short curly snow-white hair, thin wire-rimmed glasses, age and skin of the elderly woman in the reference photograph. She wears a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron.",
+ "cara_crop": "D:/claude-brain/canales/loretta-red/refs/ref_loretta_avatar_hd.png",
+ "acciones_prohibidas_extra": [
+  "brand names of foil, soup or spice",
+  "any store name"
+ ]
+}

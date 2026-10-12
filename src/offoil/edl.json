@@ -1,0 +1,1641 @@
+{
+ "end": 1066.77,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 4.0,
+   "k": "offoil_thumb.jpg",
+   "z": [
+    1.0,
+    1.07
+   ],
+   "o": [
+    50,
+    46
+   ]
+  },
+  {
+   "a": 4.0,
+   "b": 12.77,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 13.05,
+   "b": 20.19,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 20.19,
+   "b": 27.32,
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_remember.jpg",
+    "tag": "LAST TIME",
+    "words": [
+     [
+      "sheet",
+      20.87
+     ],
+     [
+      "foil",
+      25.9
+     ]
+    ],
+    "k": "page7.png"
+   }
+  },
+  {
+   "a": 27.32,
+   "b": 34.46,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 34.77,
+   "b": 43.25,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 43.25,
+   "b": 51.73,
+   "k": "PAIN_43",
+   "vid": true,
+   "ofs": 0,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 51.73,
+   "b": 60.21,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Neither one is living.",
+     "You deserve better than",
+     "a cracker over the sink."
+    ],
+    "sig": "Loretta",
+    "k": "page8.png"
+   }
+  },
+  {
+   "a": 60.48,
+   "b": 68.67,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 68.67,
+   "b": 76.86,
+   "c": "Checklist",
+   "props": {
+    "head": "EVERY PACKET",
+    "items": [
+     {
+      "t": 69.41,
+      "txt": "One plate"
+     },
+     {
+      "t": 75.83,
+      "txt": "One piece of heavy foil"
+     }
+    ],
+    "k": "page40.png"
+   }
+  },
+  {
+   "a": 76.86,
+   "b": 85.04,
+   "k": "P_PROMISE.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 85.04,
+   "b": 93.23,
+   "c": "BigNumber",
+   "props": {
+    "num": 4,
+    "unit": "FOIL PACKETS",
+    "txt": "one plate each, one fork to wash",
+    "k": "page41.png",
+    "dur": 24
+   }
+  },
+  {
+   "a": 93.41,
+   "b": 100.44,
+   "k": "R_93.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 100.44,
+   "b": 107.48,
+   "k": "P_STORY1_BASEMENT.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 107.48,
+   "b": 114.51,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 114.51,
+   "b": 121.55,
+   "k": "R_114.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 121.55,
+   "b": 128.58,
+   "k": "P_STORY1_CASSEROLE.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 128.58,
+   "b": 135.62,
+   "k": "R_128.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 135.62,
+   "b": 142.65,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 143.09,
+   "b": 151.43,
+   "c": "Checklist",
+   "props": {
+    "head": "THREE THINGS YOU NEED",
+    "items": [
+     {
+      "t": 146.36,
+      "txt": "Heavy foil, about 14 inches"
+     }
+    ],
+    "k": "page42.png"
+   }
+  },
+  {
+   "a": 151.43,
+   "b": 159.76,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 159.76,
+   "b": 168.1,
+   "c": "DoDont",
+   "props": {
+    "k": "page43.png",
+    "yes": {
+     "k": "page8.png",
+     "txt": "Fold the edges twice",
+     "t": 166.24
+    },
+    "no": {
+     "k": "page7.png",
+     "txt": "One fold: the steam gets out",
+     "t": 160.96
+    }
+   }
+  },
+  {
+   "a": 168.1,
+   "b": 176.44,
+   "k": "P_BEFORE_FOIL.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 176.73,
+   "b": 188.28,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 188.28,
+   "b": 199.84,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Open every packet",
+     "away from your face.",
+     "The steam is hotter than it looks."
+    ],
+    "sig": "Loretta",
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 199.84,
+   "b": 211.39,
+   "k": "P_SAFE_THERMOMETER.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 211.73,
+   "b": 220.23,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 220.23,
+   "b": 228.73,
+   "k": "P_P1_INTRO.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 228.73,
+   "b": 237.23,
+   "c": "CostTag",
+   "props": {
+    "price": "$3.80",
+    "sub": "salmon packet, one plate",
+    "k": "page40.png",
+    "vs": {
+     "price": "$5 to $7",
+     "txt": "frozen salmon dinner",
+     "t": 232.23
+    }
+   }
+  },
+  {
+   "a": 237.23,
+   "b": 245.73,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Good for your pocket,",
+     "and better for your supper."
+    ],
+    "sig": "Loretta",
+    "k": "page41.png"
+   }
+  },
+  {
+   "a": 245.97,
+   "b": 260.6,
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 40",
+    "head": "STEP 1",
+    "steps": [
+     {
+      "t": 245.97,
+      "txt": "Oven to 400 degrees",
+      "k": "page40.png"
+     },
+     {
+      "t": 250.33,
+      "txt": "Slice the potatoes thin",
+      "k": "page40.png"
+     }
+    ],
+    "bed": "page40.png"
+   }
+  },
+  {
+   "a": 260.6,
+   "b": 275.23,
+   "k": "P_P1_STEP1.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 275.49,
+   "b": 286.64,
+   "k": "P_P1_STEP2.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 286.64,
+   "b": 297.79,
+   "k": "R_286.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 298.17,
+   "b": 309.35,
+   "c": "BigNumber",
+   "props": {
+    "num": 25,
+    "unit": "MINUTES AT 400 DEGREES",
+    "txt": "Fish to 145 degrees, then open it away from your face",
+    "k": "page42.png",
+    "dur": 24
+   }
+  },
+  {
+   "a": 309.35,
+   "b": 320.53,
+   "k": "R_309.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 320.53,
+   "b": 331.71,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 331.99,
+   "b": 344.99,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "The mistake I see most:",
+     "thick potato chunks.",
+     "They stay hard while the fish is done."
+    ],
+    "sig": "Loretta",
+    "k": "page43.png"
+   }
+  },
+  {
+   "a": 344.99,
+   "b": 357.98,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 358.34,
+   "b": 367.69,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 367.69,
+   "b": 377.05,
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page40.png",
+      "tab": "40",
+      "t": 368.69,
+      "hl": 40
+     }
+    ],
+    "caption": {
+     "txt": "Supper for One, page 40",
+     "t": 369.69
+    },
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 377.27,
+   "b": 387.47,
+   "k": "P_P2_INTRO.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 387.47,
+   "b": 397.66,
+   "k": "R_387.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 397.91,
+   "b": 409.23,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 409.23,
+   "b": 420.56,
+   "k": "P_P2_STEP1.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 420.56,
+   "b": 431.88,
+   "c": "Checklist",
+   "props": {
+    "head": "FAJITA PACKET",
+    "items": [
+     {
+      "t": 421.06,
+      "txt": "1/2 bell pepper, 1/4 onion"
+     },
+     {
+      "t": 424.56,
+      "txt": "1 tsp oil, 1 tsp taco seasoning"
+     }
+    ],
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 432.2,
+   "b": 442.66,
+   "c": "BigNumber",
+   "props": {
+    "num": 165,
+    "unit": "DEGREES, CHICKEN DONE",
+    "txt": "Check the chicken, not the clock",
+    "k": "page41.png",
+    "dur": 24
+   }
+  },
+  {
+   "a": 442.66,
+   "b": 453.13,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 453.13,
+   "b": 465.36,
+   "k": "P_P2_STEP3.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 465.36,
+   "b": 477.59,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Two small tortillas,",
+     "the last two minutes, on top."
+    ],
+    "sig": "Loretta",
+    "k": "page42.png"
+   }
+  },
+  {
+   "a": 477.83,
+   "b": 495.07,
+   "c": "QrCard",
+   "props": {
+    "k": "page1.png",
+    "t": 480.27
+   }
+  },
+  {
+   "a": 495.44,
+   "b": 505.39,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 505.39,
+   "b": 515.35,
+   "k": "R_505.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 515.35,
+   "b": 525.3,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "A church youth group",
+     "campfire supper, in the oven."
+    ],
+    "sig": "Loretta",
+    "k": "page43.png"
+   }
+  },
+  {
+   "a": 525.58,
+   "b": 537.0,
+   "k": "P_P3_LAYERS.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 537.0,
+   "b": 548.43,
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 42",
+    "head": "LAYERS",
+    "steps": [
+     {
+      "t": 537.5,
+      "txt": "Potato, carrot, onion",
+      "k": "page42.png"
+     },
+     {
+      "t": 542.0,
+      "txt": "Patty on top, butter on that",
+      "k": "page42.png"
+     }
+    ],
+    "bed": "page42.png"
+   }
+  },
+  {
+   "a": 548.8,
+   "b": 558.24,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 558.24,
+   "b": 567.68,
+   "c": "BigNumber",
+   "props": {
+    "num": 160,
+    "unit": "DEGREES BEEF, 40 MINUTES",
+    "txt": "Seal it tight. Fold the edges twice.",
+    "k": "page42.png",
+    "dur": 24
+   }
+  },
+  {
+   "a": 567.96,
+   "b": 576.29,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "A spoon of cream of mushroom soup",
+     "on the patty makes its own gravy."
+    ],
+    "sig": "Loretta",
+    "k": "page42.png"
+   }
+  },
+  {
+   "a": 576.29,
+   "b": 584.62,
+   "k": "P_P3_SOUP.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 584.62,
+   "b": 592.95,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 593.42,
+   "b": 601.75,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 601.75,
+   "b": 610.07,
+   "k": "P_P4_INTRO.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 610.07,
+   "b": 618.4,
+   "k": "R_610.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 618.73,
+   "b": 632.86,
+   "k": "P_P4_STEP1.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 632.86,
+   "b": 646.99,
+   "c": "Checklist",
+   "props": {
+    "head": "SAUSAGE PACKET",
+    "items": [
+     {
+      "t": 633.36,
+      "txt": "3 inches smoked sausage, coins"
+     },
+     {
+      "t": 636.86,
+      "txt": "5 baby potatoes, quartered"
+     },
+     {
+      "t": 632.87,
+      "txt": "1/2 cup green beans or corn"
+     }
+    ],
+    "k": "page43.png",
+    "page": "PAGE 43"
+   }
+  },
+  {
+   "a": 647.27,
+   "b": 660.73,
+   "k": "P_P4_STEP2.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 660.73,
+   "b": 674.19,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Make three on Sunday.",
+     "Raw packets: one day in the fridge, no more."
+    ],
+    "sig": "Loretta",
+    "k": "page43.png"
+   }
+  },
+  {
+   "a": 674.49,
+   "b": 683.68,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 683.68,
+   "b": 692.87,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "If you only make one this week,",
+     "make the sausage one first."
+    ],
+    "sig": "Loretta",
+    "k": "page43.png"
+   }
+  },
+  {
+   "a": 693.22,
+   "b": 706.09,
+   "k": "R_693.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 706.09,
+   "b": 718.95,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 719.4,
+   "b": 730.38,
+   "k": "P_SHEET_STEP1.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 730.38,
+   "b": 741.35,
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 7",
+    "head": "CHICKEN THIGH",
+    "steps": [
+     {
+      "t": 730.88,
+      "txt": "Pat the chicken skin dry",
+      "k": "page7.png"
+     },
+     {
+      "t": 737.81,
+      "txt": "Potatoes spread out, not stacked",
+      "k": "page7.png"
+     }
+    ],
+    "bed": "page7.png"
+   }
+  },
+  {
+   "a": 741.35,
+   "b": 752.33,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 752.73,
+   "b": 761.93,
+   "k": "R_752.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 761.93,
+   "b": 771.12,
+   "k": "P_SHEET_STEP2.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 771.12,
+   "b": 780.32,
+   "c": "BigNumber",
+   "props": {
+    "num": 165,
+    "unit": "DEGREES, NEXT TO THE BONE",
+    "txt": "Crisp skin, golden potatoes",
+    "k": "page7.png",
+    "dur": 24
+   }
+  },
+  {
+   "a": 780.64,
+   "b": 791.63,
+   "k": "P_SHEET_STEP3.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 791.63,
+   "b": 802.61,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 802.61,
+   "b": 813.6,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Two sausage links on the peppers,",
+     "turn them once, 25 to 30 minutes."
+    ],
+    "sig": "Loretta",
+    "k": "page8.png"
+   }
+  },
+  {
+   "a": 813.9,
+   "b": 824.63,
+   "c": "DoDont",
+   "props": {
+    "k": "page7.png",
+    "yes": {
+     "k": "page7.png",
+     "txt": "Pat it dry",
+     "t": 815.9
+    },
+    "no": {
+     "k": "page8.png",
+     "txt": "A crowded pan",
+     "t": 819.64
+    }
+   }
+  },
+  {
+   "a": 824.63,
+   "b": 835.36,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 835.89,
+   "b": 846.3,
+   "k": "STORY2_835",
+   "vid": true,
+   "ofs": 0,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 846.3,
+   "b": 856.72,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 856.72,
+   "b": 867.13,
+   "k": "R_856.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 867.17,
+   "b": 876.12,
+   "k": "P_STORY3_TABLE.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": 30,
+   "dy": -14
+  },
+  {
+   "a": 876.12,
+   "b": 885.06,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 885.06,
+   "b": 894.01,
+   "k": "R_885.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 894.19,
+   "b": 902.36,
+   "c": "Checklist",
+   "props": {
+    "head": "FROM THE FRONT OF THE BOOK",
+    "items": [
+     {
+      "t": 900.77,
+      "txt": "Small sizes only when cheaper"
+     },
+     {
+      "t": 898.19,
+      "txt": "Freeze one-supper portions"
+     }
+    ],
+    "k": "page7.png"
+   }
+  },
+  {
+   "a": 902.36,
+   "b": 910.54,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 910.54,
+   "b": 918.71,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Half an egg?",
+     "Freeze the rest in the muffin tin."
+    ],
+    "sig": "Loretta",
+    "k": "page8.png"
+   }
+  },
+  {
+   "a": 918.71,
+   "b": 926.88,
+   "k": "R_918.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 927.27,
+   "b": 941.83,
+   "c": "CostTag",
+   "props": {
+    "price": "$15 to $18",
+    "sub": "seven suppers a week from this book",
+    "k": "page1.png",
+    "vs": {
+     "price": "$25 to $35",
+     "txt": "a week of frozen dinners",
+     "t": 933.77
+    }
+   }
+  },
+  {
+   "a": 941.83,
+   "b": 956.38,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 956.65,
+   "b": 966.17,
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_oven.jpg",
+    "tag": "CLEAN HOME · WATCH NEXT",
+    "words": [
+     [
+      "oven",
+      957.15
+     ]
+    ],
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 966.17,
+   "b": 975.7,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 976.04,
+   "b": 984.43,
+   "c": "Checklist",
+   "props": {
+    "head": "THE FOUR PACKETS",
+    "items": [
+     {
+      "t": 981.98,
+      "txt": "Salmon, page 40"
+     },
+     {
+      "t": 984.04,
+      "txt": "Chicken fajita, page 41"
+     }
+    ],
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 984.43,
+   "b": 992.82,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 992.82,
+   "b": 1001.2,
+   "c": "Checklist",
+   "props": {
+    "head": "THE SHEET PAN",
+    "items": [
+     {
+      "t": 992.89,
+      "txt": "Chicken thigh, page 7"
+     },
+     {
+      "t": 997.57,
+      "txt": "Sausage and peppers, page 8"
+     }
+    ],
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 1001.2,
+   "b": 1009.59,
+   "k": "R_1001.png",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "o": [
+    50,
+    50
+   ],
+   "dx": -24,
+   "dy": 10
+  },
+  {
+   "a": 1009.59,
+   "b": 1016.09,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1016.09,
+   "b": 1022.59,
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Supper for One,",
+     "the link is right under this video."
+    ],
+    "sig": "Loretta",
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 1022.59,
+   "b": 1029.09,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1029.09,
+   "b": 1034.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1034.12,
+   "b": 1039.16,
+   "c": "Tease",
+   "props": {
+    "k": "page1.png",
+    "txt": "Next: my grocery haul for one",
+    "tag": "COMING UP"
+   }
+  },
+  {
+   "a": 1039.16,
+   "b": 1044.19,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1044.19,
+   "b": 1051.82,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1051.82,
+   "b": 1059.45,
+   "c": "Comment",
+   "props": {
+    "q": "Did you ever throw half of it away?",
+    "opts": [
+     {
+      "txt": "Yes, every time",
+      "t": 1054.32
+     },
+     {
+      "txt": "Not anymore",
+      "t": 1056.32
+     }
+    ],
+    "k": "page1.png"
+   }
+  },
+  {
+   "a": 1059.45,
+   "b": 1066.77,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  }
+ ]
+}
