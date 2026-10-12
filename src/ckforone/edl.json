@@ -619,7 +619,7 @@
 },
 {
 "a": 500.626,
-"b": 510.66,
+"b": 509.6,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/n6a.png",
@@ -635,8 +635,8 @@
 "dy": 0
 },
 {
-"a": 510.66,
-"b": 520.62,
+"a": 509.6,
+"b": 518.44,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/n6b.png",
@@ -652,8 +652,8 @@
 "dy": 0
 },
 {
-"a": 520.62,
-"b": 530.74,
+"a": 518.44,
+"b": 527.3,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/L07.png",
@@ -669,8 +669,8 @@
 "dy": 0
 },
 {
-"a": 530.74,
-"b": 540.677,
+"a": 527.3,
+"b": 536.227,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/n6c.png",
@@ -686,8 +686,8 @@
 "dy": 0
 },
 {
-"a": 540.677,
-"b": 550.66,
+"a": 536.227,
+"b": 545.147,
 "tin": "cut",
 "tout": "cut",
 "k": "ar_home_line",
@@ -695,8 +695,8 @@
 "ofs": 0
 },
 {
-"a": 550.66,
-"b": 560.73,
+"a": 545.147,
+"b": 554.033,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/n6d.png",
@@ -712,8 +712,17 @@
 "dy": 0
 },
 {
-"a": 560.73,
-"b": 570.96,
+"a": 554.033,
+"b": 563.247,
+"tin": "cut",
+"tout": "cut",
+"k": "ar_home_steam",
+"vid": true,
+"ofs": 0
+},
+{
+"a": 563.247,
+"b": 571.84,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/ntbl1.png",
@@ -729,11 +738,11 @@
 "dy": 0
 },
 {
-"a": 570.96,
+"a": 571.84,
 "b": 580.776,
 "tin": "cut",
 "tout": "cut",
-"k": "img/ckforone/ncoffee.png",
+"k": "img/ckforone/ntable.png",
 "z": [
 1.0,
 1.1
@@ -1121,7 +1130,7 @@
 },
 {
 "a": 850.16,
-"b": 861.203,
+"b": 858.593,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/n2c.png",
@@ -1137,8 +1146,17 @@
 "dy": 0
 },
 {
-"a": 861.203,
-"b": 872.687,
+"a": 858.593,
+"b": 867.02,
+"tin": "cut",
+"tout": "cut",
+"k": "ar_fa_vats",
+"vid": true,
+"ofs": 0
+},
+{
+"a": 867.02,
+"b": 875.077,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/L12.png",
@@ -1154,7 +1172,7 @@
 "dy": 0
 },
 {
-"a": 872.687,
+"a": 875.077,
 "b": 883.51,
 "tin": "cut",
 "tout": "cut",
@@ -1163,7 +1181,7 @@
 "props": {
 "k": "img/ckforone/n2d.png",
 "txt": "WATERY SYRUP",
-"at2": 873.69
+"at2": 876.08
 }
 },
 {
@@ -1177,7 +1195,7 @@
 "b": 902.18,
 "tin": "cut",
 "tout": "cut",
-"k": "img/ckforone/L08.png",
+"k": "img/ckforone/L13.png",
 "z": [
 1.1,
 1.02
@@ -1225,7 +1243,7 @@
 },
 {
 "a": 919.45,
-"b": 930.16,
+"b": 928.08,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/n1c.png",
@@ -1241,8 +1259,8 @@
 "dy": 0
 },
 {
-"a": 930.16,
-"b": 940.907,
+"a": 928.08,
+"b": 936.54,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/ar_ph_grimm.jpg",
@@ -1258,8 +1276,17 @@
 "dy": 0
 },
 {
-"a": 940.907,
-"b": 951.487,
+"a": 936.54,
+"b": 944.807,
+"tin": "cut",
+"tout": "cut",
+"k": "ar_fa_cream",
+"vid": true,
+"ofs": 0
+},
+{
+"a": 944.807,
+"b": 953.507,
 "tin": "cut",
 "tout": "cut",
 "k": "img/ckforone/L11.png",
@@ -1275,7 +1302,7 @@
 "dy": 0
 },
 {
-"a": 951.487,
+"a": 953.507,
 "b": 961.843,
 "tin": "cut",
 "tout": "cut",
