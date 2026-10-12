@@ -1,0 +1,240 @@
+[
+ {
+  "from": 65.0,
+  "to": 72.5,
+  "kind": "ST",
+  "file": "img/suengano/caja_a.png",
+  "motive": "caja de super sin gente, de espaldas al cliente (N agnes, reemplaza cajera con barbijo)"
+ },
+ {
+  "from": 72.5,
+  "to": 77.5,
+  "kind": "WOW",
+  "file": "broll/suengano/w072.mp4",
+  "motive": "vista aerea del centro de distribucion (la voz habla de empezar por el 17)"
+ },
+ {
+  "from": 77.5,
+  "to": 86.95,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 86.95,
+  "to": 97.51,
+  "kind": "ST",
+  "file": "broll/suengano/s127.mp4",
+  "motive": "repositor cargando cajas en el estante (16 anos primera noche)"
+ },
+ {
+  "from": 97.51,
+  "to": 108.31,
+  "kind": "AR",
+  "file": "img/suengano/N097_gondola.png",
+  "motive": "repositor de espaldas reponiendo en la gondola (N de agnes, sin cara)"
+ },
+ {
+  "from": 108.31,
+  "to": 126.75,
+  "kind": "L",
+  "file": "img/suengano/L540.png",
+  "motive": "Claudio en el pasillo habla de su encargado (foto L, identidad verificada)"
+ },
+ {
+  "from": 126.75,
+  "to": 135.71,
+  "kind": "ST",
+  "file": "broll/suengano/s087.mp4",
+  "motive": "pasillo lleno de productos (la voz dice que parece llena)"
+ },
+ {
+  "from": 135.71,
+  "to": 145.03,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 145.03,
+  "to": 154.94,
+  "kind": "N",
+  "file": "img/suengano/N145.png",
+  "motive": "pasillo largo vacio con luz pareja (la voz describe los pasillos)"
+ },
+ {
+  "from": 154.94,
+  "to": 164.51,
+  "kind": "ST",
+  "file": "broll/suengano/s373.mp4",
+  "motive": "gente caminando despacio por el pasillo"
+ },
+ {
+  "from": 164.51,
+  "to": 174.42,
+  "kind": "ST",
+  "file": "broll/suengano/s265.mp4",
+  "motive": "POV de carrito avanzando (musica lenta, el carrito manda)"
+ },
+ {
+  "from": 174.42,
+  "to": 184.72,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 184.72,
+  "to": 199.97,
+  "kind": "C",
+  "file": null,
+  "motive": "componente repkit (CountCard) con bg propio"
+ },
+ {
+  "from": 199.97,
+  "to": 208.75,
+  "kind": "ST",
+  "file": "img/suengano/N199_bakery.png",
+  "motive": "panaderia de super de barrio con pan recien horneado (N de agnes, sin cara)"
+ },
+ {
+  "from": 208.75,
+  "to": 216.05,
+  "kind": "AR",
+  "file": "img/suengano/oferta_a.png",
+  "motive": "cartel OFERTA en espanol (N agnes, reemplaza cartel en ingles)"
+ },
+ {
+  "from": 216.05,
+  "to": 226.27,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 226.27,
+  "to": 236.28,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 236.28,
+  "to": 243.31,
+  "kind": "ST",
+  "file": "broll/suengano/s087.mp4",
+  "motive": "REUSO 2 de 2: pasillo largo para cruzar el super (encuadre distinto)"
+ },
+ {
+  "from": 243.31,
+  "to": 250.55,
+  "kind": "AR",
+  "file": "img/suengano/N429b.png",
+  "motive": "planilla del encargado con clip sobre tabla (N de agnes, sin texto legible)"
+ },
+ {
+  "from": 250.55,
+  "to": 264.68,
+  "kind": "C",
+  "file": null,
+  "motive": "componente repkit (Clipboard) con bg propio"
+ },
+ {
+  "from": 264.68,
+  "to": 273.63,
+  "kind": "ST",
+  "file": "img/suengano/caja_b.png",
+  "motive": "caja vacia sin gente (N agnes, reemplaza cajera con barbijo)"
+ },
+ {
+  "from": 273.63,
+  "to": 287.63,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 287.63,
+  "to": 294.65,
+  "kind": "N",
+  "file": "img/suengano/N288.png",
+  "motive": "carrito lleno de bolsas en estante vacio (la voz dice que el espacio estaba)"
+ },
+ {
+  "from": 294.65,
+  "to": 303.97,
+  "kind": "ST",
+  "file": "broll/suengano/s265.mp4",
+  "motive": "REUSO 2 de 2: POV de carrito lleno (mirar el fondo del carrito)"
+ },
+ {
+  "from": 303.97,
+  "to": 314.17,
+  "kind": "ST",
+  "file": "img/suengano/oferta_b2.png",
+  "motive": "cartel 2x1 en espanol sin marcas (N agnes, reemplaza cartel en ingles)"
+ },
+ {
+  "from": 314.17,
+  "to": 326.85,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 326.85,
+  "to": 338.99,
+  "kind": "C",
+  "file": null,
+  "motive": "componente repkit (ShelfTag) con bg propio"
+ },
+ {
+  "from": 338.99,
+  "to": 346.27,
+  "kind": "ST",
+  "file": "img/suengano/N730_blur.png",
+  "motive": "precio en cartel difuminado (dolar, sin lectura)"
+ },
+ {
+  "from": 346.27,
+  "to": 352.91,
+  "kind": "AR",
+  "file": "broll/suengano/s409.mp4",
+  "motive": "estantes de cereal a la altura de los ojos"
+ },
+ {
+  "from": 352.91,
+  "to": 361.9,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 361.9,
+  "to": 373.3,
+  "kind": "AV",
+  "file": null,
+  "motive": "avatar pendiente"
+ },
+ {
+  "from": 373.3,
+  "to": 380.52,
+  "kind": "ST",
+  "file": "broll/suengano/s236.mp4",
+  "motive": "REUSO 2 de 2: estante bajo, agacharse y comparar (encuadre distinto)"
+ },
+ {
+  "from": 380.52,
+  "to": 392.69,
+  "kind": "AR",
+  "file": "broll/suengano/s165.mp4",
+  "motive": "estantes vacios con piso (la diferencia esta en el piso)"
+ },
+ {
+  "from": 392.69,
+  "to": 409.11,
+  "kind": "L",
+  "file": "img/suengano/L392.png",
+  "motive": "mujer adulta con cereal (altura de un nino; foto L, identidad verificada)"
+ }
+]

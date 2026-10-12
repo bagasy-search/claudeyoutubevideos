@@ -1,0 +1,176 @@
+[
+ {
+  "from": 540.0,
+  "to": 544.3,
+  "kind": "L",
+  "file": "img/suengano/L839.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 544.3,
+  "to": 548.6,
+  "kind": "L",
+  "file": "img/suengano/L540.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 548.6,
+  "to": 553.0,
+  "kind": "L",
+  "file": "img/suengano/L392.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 553.0,
+  "to": 557.33,
+  "kind": "L",
+  "file": "img/suengano/L689.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 557.33,
+  "to": 561.4,
+  "kind": "ST",
+  "file": "broll/suengano/s705.mp4",
+  "zoom": 1,
+  "motive": "pan envuelto en mostrador (footage)",
+  "clip": 10.72
+ },
+ {
+  "from": 561.4,
+  "to": 565.57,
+  "kind": "ST",
+  "file": "broll/suengano/s739.mp4",
+  "zoom": 1,
+  "motive": "estantes y caja (footage)",
+  "clip": 13.28
+ },
+ {
+  "from": 565.57,
+  "to": 574.35,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av13"
+ },
+ {
+  "from": 574.35,
+  "to": 580.7,
+  "kind": "N",
+  "file": "img/suengano/oferta_b2.png",
+  "zoom": 1,
+  "motive": "cartel 2x1 en espanol (N de agnes)"
+ },
+ {
+  "from": 580.7,
+  "to": 587.14,
+  "kind": "N",
+  "file": "img/suengano/cesta_a.png",
+  "zoom": 1,
+  "motive": "cesta con dos paquetes iguales (N de agnes)"
+ },
+ {
+  "from": 587.14,
+  "to": 592.2,
+  "kind": "ST",
+  "file": "broll/suengano/s786.mp4",
+  "zoom": 1,
+  "motive": "pasillo de productos (footage)",
+  "clip": 8.08
+ },
+ {
+  "from": 592.2,
+  "to": 597.31,
+  "kind": "ST",
+  "file": "broll/suengano/s705.mp4",
+  "zoom": 1,
+  "motive": "pan envuelto (2da vez)",
+  "clip": 10.72
+ },
+ {
+  "from": 597.31,
+  "to": 604.9,
+  "kind": "ST",
+  "file": "broll/suengano/s739.mp4",
+  "zoom": 1,
+  "motive": "estantes y caja (2da vez)",
+  "clip": 13.28
+ },
+ {
+  "from": 604.9,
+  "to": 615.38,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av14"
+ },
+ {
+  "from": 615.38,
+  "to": 623.0,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "CountCard TRUCO 2 x 1 (bg cartel 2x1)"
+ },
+ {
+  "from": 623.0,
+  "to": 630.0,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "Clipboard precio por unidad (bg N574)"
+ },
+ {
+  "from": 630.0,
+  "to": 636.79,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "ShelfTag cafe por kilo (bg N145)"
+ },
+ {
+  "from": 636.79,
+  "to": 644.09,
+  "kind": "ST",
+  "file": "broll/suengano/s786.mp4",
+  "zoom": 1,
+  "motive": "pasillo de productos (2da vez)",
+  "clip": 8.08
+ },
+ {
+  "from": 644.09,
+  "to": 649.1,
+  "kind": "N",
+  "file": "img/suengano/precio_c.png",
+  "zoom": 1,
+  "motive": "etiquetas de precio (N de agnes)"
+ },
+ {
+  "from": 649.1,
+  "to": 654.17,
+  "kind": "N",
+  "file": "img/suengano/precio_c.png",
+  "zoom": 1.3,
+  "motive": "etiquetas de precio, encuadre distinto (N de agnes)"
+ },
+ {
+  "from": 654.17,
+  "to": 673.85,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av15"
+ },
+ {
+  "from": 673.85,
+  "to": 680.0,
+  "kind": "N",
+  "file": "img/suengano/fruta_fix.png",
+  "zoom": 1,
+  "motive": "fruta mojada con aspersor (N de agnes, reemplaza cereal)"
+ }
+]

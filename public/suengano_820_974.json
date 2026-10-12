@@ -1,0 +1,200 @@
+[
+ {
+  "from": 820.0,
+  "to": 824.25,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av18 (parte final de la ventana)"
+ },
+ {
+  "from": 824.25,
+  "to": 831.79,
+  "kind": "ST",
+  "file": "broll/suengano/deli_counter.mp4",
+  "zoom": 1,
+  "motive": "fiambreria, mostrador (footage)",
+  "clip": 10.12
+ },
+ {
+  "from": 831.79,
+  "to": 839.67,
+  "kind": "ST",
+  "file": "broll/suengano/cheese_counter.mp4",
+  "zoom": 1,
+  "motive": "queso cortado a mano (footage)",
+  "clip": 20.68
+ },
+ {
+  "from": 839.67,
+  "to": 847.67,
+  "kind": "L",
+  "file": "img/suengano/L540.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 847.67,
+  "to": 852.3,
+  "kind": "L",
+  "file": "img/suengano/L689.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 852.3,
+  "to": 856.95,
+  "kind": "L",
+  "file": "img/suengano/L839.png",
+  "zoom": 1.2,
+  "motive": "foto L identidad verificada, encuadre distinto"
+ },
+ {
+  "from": 856.95,
+  "to": 861.8,
+  "kind": "N",
+  "file": "img/suengano/etiqueta_kilo.png",
+  "zoom": 1,
+  "motive": "bandeja de carne con etiqueta de precio (N de agnes)"
+ },
+ {
+  "from": 861.8,
+  "to": 866.77,
+  "kind": "ST",
+  "file": "broll/suengano/deli_counter.mp4",
+  "zoom": 1,
+  "motive": "fiambreria (2da vez)",
+  "clip": 10.12
+ },
+ {
+  "from": 866.77,
+  "to": 876.89,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av19"
+ },
+ {
+  "from": 876.89,
+  "to": 881.8,
+  "kind": "ST",
+  "file": "broll/suengano/cashreg.mp4",
+  "zoom": 1,
+  "motive": "manos en la caja pasando el codigo (footage, sin caras)",
+  "clip": 23.92
+ },
+ {
+  "from": 881.8,
+  "to": 887.23,
+  "kind": "N",
+  "file": "img/suengano/caja_b.png",
+  "zoom": 1,
+  "motive": "mostrador de caja vacio (N de agnes)"
+ },
+ {
+  "from": 887.23,
+  "to": 891.5,
+  "kind": "ST",
+  "file": "broll/suengano/ticket_impresora.mp4",
+  "zoom": 1,
+  "motive": "papel de ticket en el mostrador (footage)",
+  "clip": 15.84
+ },
+ {
+  "from": 891.5,
+  "to": 895.73,
+  "kind": "N",
+  "file": "img/suengano/ticket_blank.png",
+  "zoom": 1,
+  "motive": "rollo de ticket en blanco (N de agnes)"
+ },
+ {
+  "from": 895.73,
+  "to": 900.0,
+  "kind": "N",
+  "file": "img/suengano/ticket_blank.png",
+  "zoom": 1.3,
+  "motive": "rollo de ticket, encuadre distinto (N de agnes)"
+ },
+ {
+  "from": 900.0,
+  "to": 904.31,
+  "kind": "ST",
+  "file": "broll/suengano/ticket_impresora.mp4",
+  "zoom": 1,
+  "motive": "papel de ticket (2da vez)",
+  "clip": 15.84
+ },
+ {
+  "from": 904.31,
+  "to": 914.81,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av20 parte 1"
+ },
+ {
+  "from": 914.81,
+  "to": 921.8,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "CountCard TRUCO 1/3 antes de salir mira el ticket"
+ },
+ {
+  "from": 921.8,
+  "to": 930.0,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av20 parte 2"
+ },
+ {
+  "from": 930.0,
+  "to": 937.0,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "CountCard TRUCO 2/3 busca el producto y compara"
+ },
+ {
+  "from": 937.0,
+  "to": 944.0,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av20 parte 3"
+ },
+ {
+  "from": 944.0,
+  "to": 951.51,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "CountCard TRUCO 3/3 pide que lo verifiquen"
+ },
+ {
+  "from": 951.51,
+  "to": 955.8,
+  "kind": "N",
+  "file": "img/suengano/lista_recap.png",
+  "zoom": 1,
+  "motive": "pizarron con lista (N de agnes)"
+ },
+ {
+  "from": 955.8,
+  "to": 960.15,
+  "kind": "N",
+  "file": "img/suengano/lista_recap.png",
+  "zoom": 1.3,
+  "motive": "pizarron, encuadre distinto (N de agnes)"
+ },
+ {
+  "from": 960.15,
+  "to": 974.57,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av21"
+ }
+]

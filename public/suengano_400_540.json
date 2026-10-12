@@ -1,0 +1,186 @@
+[
+ {
+  "from": 400.0,
+  "to": 404.5,
+  "kind": "L",
+  "file": "img/suengano/L392.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada (cierre del plano 392-409)"
+ },
+ {
+  "from": 404.5,
+  "to": 409.11,
+  "kind": "L",
+  "file": "img/suengano/L689.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 409.11,
+  "to": 414.0,
+  "kind": "ST",
+  "file": "broll/suengano/s304.mp4",
+  "zoom": 1,
+  "motive": "frutillas (la caja con personaje: footage sin marca)",
+  "clip": 10.72
+ },
+ {
+  "from": 414.0,
+  "to": 418.93,
+  "kind": "ST",
+  "file": "broll/suengano/s200.mp4",
+  "zoom": 1,
+  "motive": "carne en mostrador (footage)",
+  "clip": 8.6
+ },
+ {
+  "from": 418.93,
+  "to": 429.11,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av10"
+ },
+ {
+  "from": 429.11,
+  "to": 433.2,
+  "kind": "N",
+  "file": "img/suengano/guia_a.png",
+  "zoom": 1,
+  "motive": "cuaderno con lista (N de agnes)"
+ },
+ {
+  "from": 433.2,
+  "to": 437.45,
+  "kind": "N",
+  "file": "img/suengano/guia_a.png",
+  "zoom": 1.3,
+  "motive": "cuaderno con lista, encuadre distinto (N de agnes)"
+ },
+ {
+  "from": 437.45,
+  "to": 441.5,
+  "kind": "N",
+  "file": "img/suengano/precio_a.png",
+  "zoom": 1,
+  "motive": "precio 2.999 en el estante (N de agnes)"
+ },
+ {
+  "from": 441.5,
+  "to": 445.63,
+  "kind": "N",
+  "file": "img/suengano/precio_a.png",
+  "zoom": 1.3,
+  "motive": "precio 2.999, encuadre distinto (N de agnes)"
+ },
+ {
+  "from": 445.63,
+  "to": 450.2,
+  "kind": "ST",
+  "file": "broll/suengano/s446.mp4",
+  "zoom": 1,
+  "motive": "caja con producto en el suelo (marca difuminada)",
+  "clip": 9.2
+ },
+ {
+  "from": 450.2,
+  "to": 454.87,
+  "kind": "ST",
+  "file": "broll/suengano/s200.mp4",
+  "zoom": 1,
+  "motive": "carne en mostrador (2da vez)",
+  "clip": 8.6
+ },
+ {
+  "from": 454.87,
+  "to": 468.23,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av11"
+ },
+ {
+  "from": 468.23,
+  "to": 475.5,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "CountCard TRUCO 1/2 (bg caja sin gente)"
+ },
+ {
+  "from": 475.5,
+  "to": 483.1,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "Clipboard 2.999 y 3.000 (bg N574)"
+ },
+ {
+  "from": 483.1,
+  "to": 487.7,
+  "kind": "ST",
+  "file": "broll/suengano/s523.mp4",
+  "zoom": 1,
+  "motive": "pasillo vacio (footage)",
+  "clip": 12.04
+ },
+ {
+  "from": 487.7,
+  "to": 492.47,
+  "kind": "ST",
+  "file": "broll/suengano/s587.mp4",
+  "zoom": 1,
+  "motive": "mostrador de quesos (footage)",
+  "clip": 10.12
+ },
+ {
+  "from": 492.47,
+  "to": 497.5,
+  "kind": "N",
+  "file": "img/suengano/envase_a.png",
+  "zoom": 1,
+  "motive": "dos cajas iguales (N de agnes)"
+ },
+ {
+  "from": 497.5,
+  "to": 503.37,
+  "kind": "N",
+  "file": "img/suengano/envase_b.png",
+  "zoom": 1,
+  "motive": "cajas de distinto tamano (N de agnes)"
+ },
+ {
+  "from": 503.37,
+  "to": 522.51,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av12"
+ },
+ {
+  "from": 522.51,
+  "to": 528.3,
+  "kind": "ST",
+  "file": "broll/suengano/s597.mp4",
+  "zoom": 1,
+  "motive": "carrito en pasillo (footage)",
+  "clip": 8.16
+ },
+ {
+  "from": 528.3,
+  "to": 534.05,
+  "kind": "ST",
+  "file": "broll/suengano/s304.mp4",
+  "zoom": 1,
+  "motive": "frutillas (2da vez, encuadre distinto)",
+  "clip": 10.72
+ },
+ {
+  "from": 534.05,
+  "to": 540.0,
+  "kind": "N",
+  "file": "img/suengano/frente_a.png",
+  "zoom": 1,
+  "motive": "caja con letra chica (N de agnes)"
+ }
+]

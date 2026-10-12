@@ -1,0 +1,184 @@
+[
+ {
+  "from": 680.0,
+  "to": 681.75,
+  "kind": "N",
+  "file": "img/suengano/fruta_b.png",
+  "zoom": 1.3,
+  "motive": "fruta mojada (N de agnes)"
+ },
+ {
+  "from": 681.75,
+  "to": 688.95,
+  "kind": "ST",
+  "file": "broll/suengano/frutas_sel.mp4",
+  "zoom": 1,
+  "motive": "fruta sobre cinta (footage, marca no visible)",
+  "clip": 20.88
+ },
+ {
+  "from": 688.95,
+  "to": 696.5,
+  "kind": "L",
+  "file": "img/suengano/L689.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 696.5,
+  "to": 700.7,
+  "kind": "L",
+  "file": "img/suengano/L839.png",
+  "zoom": 1,
+  "motive": "foto L identidad verificada"
+ },
+ {
+  "from": 700.7,
+  "to": 704.89,
+  "kind": "L",
+  "file": "img/suengano/L839.png",
+  "zoom": 1.2,
+  "motive": "foto L identidad verificada, encuadre distinto"
+ },
+ {
+  "from": 704.89,
+  "to": 710.89,
+  "kind": "N",
+  "file": "img/suengano/cartel_viejo.png",
+  "zoom": 1,
+  "motive": "cartel viejo HOY (N de agnes), parte 1"
+ },
+ {
+  "from": 710.89,
+  "to": 716.89,
+  "kind": "N",
+  "file": "img/suengano/cartel_blank.png",
+  "zoom": 1,
+  "motive": "cartel de oferta en blanco (N de agnes)"
+ },
+ {
+  "from": 716.89,
+  "to": 719.95,
+  "kind": "N",
+  "file": "img/suengano/etiqueta_fecha2.png",
+  "zoom": 1,
+  "motive": "etiqueta con fecha en blanco (N de agnes), sin HOY"
+ },
+ {
+  "from": 719.95,
+  "to": 730.43,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av16"
+ },
+ {
+  "from": 730.43,
+  "to": 734.5,
+  "kind": "N",
+  "file": "img/suengano/etiqueta_fecha2.png",
+  "zoom": 1,
+  "motive": "etiqueta de precio con fecha (N de agnes)"
+ },
+ {
+  "from": 734.5,
+  "to": 738.61,
+  "kind": "N",
+  "file": "img/suengano/etiqueta_fecha2.png",
+  "zoom": 1.3,
+  "motive": "etiqueta de precio con fecha (N de agnes), encuadre distinto"
+ },
+ {
+  "from": 738.61,
+  "to": 744.5,
+  "kind": "ST",
+  "file": "broll/suengano/shelf_stock.mp4",
+  "zoom": 1,
+  "motive": "estantes de lacteos (footage)",
+  "clip": 14.28
+ },
+ {
+  "from": 744.5,
+  "to": 751.37,
+  "kind": "ST",
+  "file": "broll/suengano/empty_shelf.mp4",
+  "zoom": 1,
+  "motive": "estantes vacios con etiquetas (footage)",
+  "clip": 12.76
+ },
+ {
+  "from": 751.37,
+  "to": 757.0,
+  "kind": "ST",
+  "file": "broll/suengano/cart_aisle.mp4",
+  "zoom": 1,
+  "motive": "carrito en pasillo (footage)",
+  "clip": 15.08
+ },
+ {
+  "from": 757.0,
+  "to": 762.71,
+  "kind": "N",
+  "file": "img/suengano/dulces2.png",
+  "zoom": 1,
+  "motive": "dulces a la altura de un chico (N de agnes)"
+ },
+ {
+  "from": 762.71,
+  "to": 771.81,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av17"
+ },
+ {
+  "from": 771.81,
+  "to": 778.9,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "ShelfTag chocolates por kilo (bg N145)"
+ },
+ {
+  "from": 778.9,
+  "to": 785.82,
+  "kind": "C",
+  "file": null,
+  "zoom": 1,
+  "motive": "Clipboard golosinas lejos de los chicos (bg N574)"
+ },
+ {
+  "from": 785.82,
+  "to": 793.31,
+  "kind": "ST",
+  "file": "broll/suengano/w033b.mp4",
+  "zoom": 1,
+  "motive": "racks de deposito, reposicion (footage)",
+  "clip": 11.08
+ },
+ {
+  "from": 793.31,
+  "to": 798.2,
+  "kind": "ST",
+  "file": "broll/suengano/pallet_boxes.mp4",
+  "zoom": 1,
+  "motive": "cajones apilados (footage)",
+  "clip": 18.6
+ },
+ {
+  "from": 798.2,
+  "to": 803.18,
+  "kind": "N",
+  "file": "img/suengano/reposicion_b.png",
+  "zoom": 1,
+  "motive": "latas en cajas, lo nuevo atras (N de agnes)"
+ },
+ {
+  "from": 803.18,
+  "to": 824.37,
+  "kind": "AV",
+  "file": null,
+  "zoom": 1,
+  "motive": "avatar av18"
+ }
+]
