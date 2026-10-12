@@ -48,8 +48,8 @@
    "props": {
     "src": "arc_serving_line",
     "vid": true,
-    "cap": "1951 · women serve from a steam table in a college dining kitchen",
-    "credit": "Iowa State College, The Home Economics Story (1951) · Public domain"
+    "cap": "1951 : women serve from a steam table in a college dining kitchen",
+    "credit": "Iowa State College, The Home Economics Story (1951) : Public domain"
    },
    "k": "",
    "a": 41.97,
@@ -216,8 +216,8 @@
    "props": {
     "src": "arc_stew_pots",
     "vid": true,
-    "cap": "1950s hotel kitchen · potatoes in a big pot of water",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel kitchen : potatoes in a big pot of water",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 199.68,
@@ -300,8 +300,8 @@
    "props": {
     "src": "arc_hotel_linens",
     "vid": true,
-    "cap": "1950s hotel kitchen · stacks of folded white linens",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel kitchen : stacks of folded white linens",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 259.0,
@@ -442,8 +442,8 @@
    "props": {
     "src": "arc_cook_pot",
     "vid": true,
-    "cap": "1950s hotel kitchen · a cook at a big pot on the range",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel kitchen : a cook at a big pot on the range",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 396.0,
@@ -562,8 +562,8 @@
    "props": {
     "src": "arc_rinse_plate",
     "vid": true,
-    "cap": "1950 kitchen · hands rinse a plate in the sink",
-    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+    "cap": "1950 kitchen : hands rinse a plate in the sink",
+    "credit": "The Last Word in Automatic Dishwashing (1950) : Public domain"
    },
    "k": "",
    "a": 474.66,
@@ -589,8 +589,8 @@
    "props": {
     "src": "arc_hotel_pots",
     "vid": true,
-    "cap": "1950s hotel kitchen · a cook stirs a big pot",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel kitchen : a cook stirs a big pot",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 488.0,
@@ -643,8 +643,8 @@
    "props": {
     "src": "arc_sink_window",
     "vid": true,
-    "cap": "1950 kitchen · a woman washes dishes at the window sink",
-    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+    "cap": "1950 kitchen : a woman washes dishes at the window sink",
+    "credit": "The Last Word in Automatic Dishwashing (1950) : Public domain"
    },
    "k": "",
    "a": 526.0,
@@ -655,8 +655,8 @@
    "props": {
     "src": "arc_dish_towel",
     "vid": true,
-    "cap": "1950 kitchen · a woman dries a dish",
-    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+    "cap": "1950 kitchen : a woman dries a dish",
+    "credit": "The Last Word in Automatic Dishwashing (1950) : Public domain"
    },
    "k": "",
    "a": 538.0,
@@ -694,8 +694,8 @@
    "props": {
     "src": "arc_hotel_tables",
     "vid": true,
-    "cap": "1950s hotel dining room · tables set for a meal",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel dining room : tables set for a meal",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 579.36,
@@ -840,7 +840,7 @@
     "steps": [
      {
       "t": 681.28,
-      "txt": "Heat the oven to 350°F. Butter a 9x13 pan.",
+      "txt": "Heat the oven to 350 degrees F. Butter a 9x13 pan.",
       "k": "n_pan_empty"
      },
      {
@@ -935,7 +935,7 @@
    "c": "BigNumber",
    "props": {
     "num": 350,
-    "unit": "DEGREES F · 55 MIN",
+    "unit": "DEGREES F, 55 MIN",
     "txt": "bake uncovered",
     "k": "n2_spoon_pot",
     "dur": 10
@@ -989,8 +989,8 @@
    "props": {
     "src": "arc_hotel_roast",
     "vid": true,
-    "cap": "1950s hotel kitchen · a chef loads a roasting tray",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel kitchen : a chef loads a roasting tray",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 829.65,
@@ -1001,8 +1001,8 @@
    "props": {
     "src": "arc_hotel_meat",
     "vid": true,
-    "cap": "1950s hotel kitchen · a cook cuts meat on a block",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel kitchen : a cook cuts meat on a block",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 839.0,
@@ -1013,8 +1013,8 @@
    "props": {
     "src": "arc_hotel_oven",
     "vid": true,
-    "cap": "1950s hotel kitchen · trays come out of the oven",
-    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+    "cap": "1950s hotel kitchen : trays come out of the oven",
+    "credit": "Hotel and Restaurant Workers (1950s) : Public domain"
    },
    "k": "",
    "a": 849.0,
