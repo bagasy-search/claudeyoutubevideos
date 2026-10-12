@@ -243,85 +243,54 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
 };
 
 
-// ── HERO 1 · la bandeja de muffins sale del cajón: 12 copas que se llenan una por una, el número cuenta hasta 12 ──
-// t0 = segundo de la palabra "pan" (la sartén que ya tiene en el cajón); t1 = "drawer" (el cajón)
+// ── HERO 1 · 12 suppers, one pan: la cámara entra a la bandeja real (foto), el titular cae en "pan", el número sube en "drawer" ──
+// t0 = "pan" (28,13 s) · t1 = "drawer" (30,03 s). Sin objetos dibujados: sólo la foto real y texto.
 export const HeroMuffinDrawer: P<{ t0: number; t1: number }> = ({ a, d, t0, t1 }) => {
   const { f, at } = useT(a);
   const T0 = at(t0), T1 = at(t1);
-  const tin = sp(f, T0 - 8, 15, 110);
+  const push = 1.02 + 0.2 * ez(f / Math.max(1, d));           // empuje hacia la bandeja
   const head = sp(f, T0, 13, 150), sub = sp(f, T1 + 6, 13, 150);
   const count = Math.round(12 * cl((f - T1) / 120));
-  const push = 1 + 0.06 * f / Math.max(1, d);
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0d0b09" }}>
-      <AbsoluteFill style={{ transform: `scale(${1.04 + 0.06 * f / Math.max(1, d)})`, filter: "brightness(0.5) saturate(0.85)" }}>
-        <Img src={img("freezer_bags_meatloaf")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      <AbsoluteFill style={{ transform: `scale(${push})`, transformOrigin: "50% 58%" }}>
+        <Img src={img("oven_door")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </AbsoluteFill>
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 60% at 62% 60%, rgba(255,226,180,0.16), rgba(0,0,0,0) 65%)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 0, bottom: 0, transform: `scale(${push})`, transformOrigin: "50% 60%" }}>
-        {/* sombra de la bandeja (capa lenta) */}
-        <div style={{ position: "absolute", left: 1010, top: 800 - (1 - tin) * 420, width: 880, height: 110, borderRadius: "50%", background: "rgba(0,0,0,0.55)", filter: "blur(22px)", opacity: tin }} />
-        {/* la bandeja: 3 filas x 4 copas */}
-        <div style={{ position: "absolute", left: 1010 - 440, top: 560 + (1 - tin) * 420, width: 880, height: 330, borderRadius: 26, background: "linear-gradient(180deg,#4a4540,#24211e)", boxShadow: "0 30px 60px rgba(0,0,0,0.6), inset 0 2px 0 rgba(255,255,255,0.18)", padding: 34, display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gridTemplateRows: "repeat(3, 1fr)", gap: 22 }}>
-          {Array.from({ length: 12 }, (_, i) => {
-            const fill = sp(f, T1 + 30 + i * 9, 12, 180);
-            return (
-              <div key={i} style={{ borderRadius: "50%", background: "radial-gradient(circle at 50% 35%, #2a2623, #100e0c)", position: "relative", overflow: "hidden", boxShadow: "inset 0 6px 14px rgba(0,0,0,0.7)" }}>
-                <div style={{ position: "absolute", left: "12%", right: "12%", top: "16%", bottom: "16%", borderRadius: "50%", background: "radial-gradient(circle at 45% 35%, #c27a4a, #7b3e22)", transform: `scale(${fill})`, opacity: fill, boxShadow: "0 6px 12px rgba(0,0,0,0.5)" }} />
-              </div>
-            );
-          })}
-        </div>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(10,8,6,0.62) 0%, rgba(10,8,6,0) 42%, rgba(10,8,6,0) 70%, rgba(10,8,6,0.5) 100%)" }} />
+      <div style={{ position: "absolute", left: 120, top: 130, opacity: head, transform: `translateY(${(1 - head) * -40}px)` }}>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 200, lineHeight: 0.92, color: C.porc, textShadow: shadowTxt }}>12 suppers</div>
       </div>
-      {/* titular que cae en la palabra "pan" */}
-      <div style={{ position: "absolute", left: 120, top: 150, opacity: head, transform: `translateY(${(1 - head) * -40}px)` }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 210, lineHeight: 0.92, color: C.porc, textShadow: shadowTxt }}>12 suppers</div>
-      </div>
-      <div style={{ position: "absolute", left: 124, top: 470, opacity: sub, transform: `translateX(${(1 - sub) * -60}px)` }}>
+      <div style={{ position: "absolute", left: 124, bottom: 150, opacity: sub, transform: `translateX(${(1 - sub) * -60}px)` }}>
         <Chip txt="in one hour · one pan" size={58} bg={C.red} color="#fff" rot={-1.5} />
       </div>
-      {/* el número sube de 0 a 12 mientras se llenan las copas */}
-      <div style={{ position: "absolute", right: 140, top: 130, textAlign: "right", fontFamily: SERIF, fontWeight: 900, fontSize: 170, color: C.porc, textShadow: shadowTxt, opacity: cl((f - T1) / 20) }}>{count}<div style={{ fontFamily: LABEL, fontSize: 50, letterSpacing: 6, color: C.lilac }}>MEALS READY</div></div>
+      <div style={{ position: "absolute", right: 140, top: 130, textAlign: "right", fontFamily: SERIF, fontWeight: 900, fontSize: 170, color: C.porc, textShadow: shadowTxt, opacity: cl((f - T1) / 20) }}>{count}<div style={{ fontFamily: LABEL, fontSize: 50, letterSpacing: 6, color: C.porc, textShadow: shadowTxt }}>MEALS READY</div></div>
       <Grade vig={0.42} />
     </AbsoluteFill>
   );
 };
 
-// ── HERO 2 · un trozo para mí, el resto al congelador: el plato con una rebanada, la rebanada se va y las bolsas se apilan ──
-// t0 = "slice" (la rebanada sale del plato); t1 = "rest" (el resto va a las bolsas)
+// ── HERO 2 · eat one, freeze the rest: el plato real con un solo plato, la cámara entra; en "rest" la foto de las bolsas entra como tarjeta impresa ──
+// t0 = "slice" (47,09 s) · t1 = "rest" (48,41 s)
 export const HeroPlateFreeze: P<{ t0: number; t1: number }> = ({ a, d, t0, t1 }) => {
   const { f, at } = useT(a);
   const T0 = at(t0), T1 = at(t1);
-  const slice = sp(f, T0, 14, 120);
-  const plateLayer = Math.sin(f / 90) * 6;          // capa del plato: se mueve poco
-  const bagsLayer = -10 * (f / Math.max(1, d)) + 6; // capa de las bolsas: parallax contrario
-  const head = sp(f, T0 - 4, 13, 150), head2 = sp(f, T1, 13, 150);
-  const bags = Array.from({ length: 6 }, (_, i) => sp(f, T1 + 12 + i * 12, 12, 170));
+  const push = 1.0 + 0.16 * ez(f / Math.max(1, d));
+  const head = sp(f, T0, 13, 150), head2 = sp(f, T1, 13, 150);
+  const card = sp(f, T1 + 4, 12, 130);
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0d0b09" }}>
-      <AbsoluteFill style={{ transform: `scale(${1.03 + 0.06 * f / Math.max(1, d)})`, filter: "brightness(0.45) saturate(0.8)" }}>
-        <Img src={img("empty_chair_table")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      <AbsoluteFill style={{ transform: `scale(${push})`, transformOrigin: "50% 60%" }}>
+        <Img src={img("sink_crackers")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </AbsoluteFill>
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse 60% 70% at 40% 48%, rgba(255,226,180,0.18), rgba(0,0,0,0) 65%)" }} />
-      {/* plato (capa 1) */}
-      <div style={{ position: "absolute", left: 1040, top: 260, width: 640, height: 640, borderRadius: "50%", transform: `translateX(${plateLayer}px) scale(${1 + 0.02 * f / Math.max(1, d)})`, background: "radial-gradient(circle at 50% 45%, #fffdf6 0%, #ece4d2 62%, #d6c9ae 100%)", boxShadow: "0 40px 70px rgba(0,0,0,0.6)" }}>
-        <div style={{ position: "absolute", left: 60, top: 60, right: 60, bottom: 60, borderRadius: "50%", border: "3px solid rgba(180,160,120,0.5)" }} />
-        {/* rebanada (sale del plato hacia la derecha) */}
-        <div style={{ position: "absolute", left: 210 + slice * 230, top: 240 - slice * 60, width: 240, height: 150, borderRadius: 22, background: "linear-gradient(160deg,#a9653a,#6e3b1f)", boxShadow: "0 18px 30px rgba(0,0,0,0.45)", transform: `rotate(${slice * 8}deg)`, opacity: 1 - 0.25 * slice }} />
-      </div>
-      {/* bolsas del congelador (capa 2) */}
-      <div style={{ position: "absolute", left: 230, top: 330 + bagsLayer, width: 420, height: 560 }}>
-        {bags.map((b, i) => (
-          <div key={i} style={{ position: "absolute", left: (i % 2) * 40, top: 430 - i * 70, width: 330, height: 120, borderRadius: 14, background: "linear-gradient(140deg, rgba(190,220,240,0.85), rgba(120,160,190,0.75))", boxShadow: "0 14px 26px rgba(0,0,0,0.5)", opacity: b, transform: `translateX(${(1 - b) * 260}px) rotate(${(i % 2 ? -2 : 2)}deg)` }}>
-            <div style={{ position: "absolute", left: 20, top: 40, width: 150, height: 6, background: "rgba(40,40,60,0.45)", borderRadius: 3 }} />
-          </div>
-        ))}
-      </div>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(10,8,6,0.55) 0%, rgba(10,8,6,0) 36%, rgba(10,8,6,0) 75%, rgba(10,8,6,0.45) 100%)" }} />
       <div style={{ position: "absolute", left: 120, top: 130, opacity: head, transform: `translateY(${(1 - head) * -40}px)` }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 150, lineHeight: 0.95, color: C.porc, textShadow: shadowTxt }}>Eat one.</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 170, lineHeight: 0.95, color: C.porc, textShadow: shadowTxt }}>Eat one.</div>
       </div>
-      <div style={{ position: "absolute", right: 110, bottom: 150, opacity: head2, transform: `translateY(${(1 - head2) * -30}px)` }}>
-        <Chip txt="freeze the rest" size={64} bg={C.red} color="#fff" rot={2} />
+      <div style={{ position: "absolute", right: 150 + (1 - card) * 500, top: 250, transform: `rotate(${(1 - card) * 6 + 2}deg)`, opacity: card }}>
+        <Print k="freezer_bags_meatloaf" w={520} h={390} f={f} mat={14} />
+      </div>
+      <div style={{ position: "absolute", right: 150, bottom: 150, opacity: head2, transform: `translateY(${(1 - head2) * 30}px)` }}>
+        <Chip txt="freeze the rest" size={64} bg={C.red} color="#fff" rot={-2} />
       </div>
       <Grade vig={0.4} />
     </AbsoluteFill>
