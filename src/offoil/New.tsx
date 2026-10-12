@@ -225,4 +225,50 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
   );
 };
 
-export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
+
+// ── HÉROE (offoil, UPDATE 5): título que aterriza en su palabra sobre una hoja de papel de aluminio que se levanta; cámara empuja ──
+export const FoilHero: P<{ head: string; sub: string; t: number; k: string }> = ({ a, d, head, sub, t, k }) => {
+  const { f, at } = useT(a);
+  const L = at(t);
+  const h = sp(f, L, 12, 120), s = sp(f, L + 12, 14, 130), sheet = sp(f, 0, 16, 90), cam = f / d;
+  return (
+    <Stage f={f} T={d} drift={0.5}>
+      <Bed k={k} f={f} T={d} dim={0.58} z={[1.1, 1.2]} />
+      <div style={{ position: "absolute", left: 960, top: 520, translate: "-50% -50%", width: 1280, height: 640, borderRadius: 18,
+        background: "linear-gradient(135deg,#2a2f34 0%,#5d666e 30%,#8e979c 48%,#3a4046 72%,#1f2328 100%)", boxShadow: "0 70px 130px rgba(0,0,0,0.62)",
+        transform: `perspective(1600px) rotateX(${(1 - sheet) * 46 + 4 - 3 * cam}deg) rotateZ(${-2 + 1.2 * cam}deg) scale(${0.9 + 0.1 * sheet})`, opacity: cl(sheet * 2) }} />
+      <div style={{ position: "absolute", left: 960, top: 470, translate: "-50% -50%", fontFamily: SERIF, fontWeight: 900, fontSize: head.length > 14 ? 124 : 168, lineHeight: 1, color: C.porc,
+        textShadow: shadowTxt, whiteSpace: "nowrap", opacity: h, transform: `translateY(${(1 - h) * 110}px) scale(${0.95 + 0.05 * h})` }}>{head}</div>
+      <div style={{ position: "absolute", left: 960, top: 640, translate: "-50% 0", fontFamily: HAND, fontSize: 70, color: C.porc, textShadow: shadowTxt,
+        whiteSpace: "nowrap", opacity: s, transform: `translateY(${(1 - s) * 36}px)` }}>{sub}</div>
+      <Grade vig={0.35} />
+    </Stage>
+  );
+};
+
+// ── HÉROE contador (offoil, UPDATE 5): tarjeta de libro que gira hacia cámara + número que sube al ritmo de la voz ──
+export const CountHero: P<{ to: number; unit: string; head: string; t: number; k: string; bed: string }> = ({ a, d, to, unit, head, t, k, bed }) => {
+  const { f, at } = useT(a);
+  const L = at(t);
+  const n = Math.round(to * ez(cl((f - L) / 60)));
+  const h = sp(f, 0, 14, 110), cam = f / d, hd = sp(f, L, 12, 130);
+  return (
+    <Stage f={f} T={d} drift={0.5}>
+      <Bed k={bed} f={f} T={d} dim={0.5} z={[1.08, 1.16]} />
+      <div style={{ position: "absolute", left: 520, top: 540, translate: "-50% -50%", width: 700, height: 960, borderRadius: 8, overflow: "hidden",
+        boxShadow: "0 60px 110px rgba(0,0,0,0.62)", background: "#000",
+        transform: `perspective(1600px) rotateY(${26 - 16 * cam}deg) translateY(${(1 - h) * 380}px)`, opacity: cl(h * 2) }}>
+        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.03 + 0.05 * cam})` }} />
+      </div>
+      <div style={{ position: "absolute", left: 1290, top: 300, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 96, color: C.porc,
+        textShadow: shadowTxt, whiteSpace: "nowrap", opacity: hd, transform: `translateY(${(1 - hd) * 40}px)` }}>{head}</div>
+      <div style={{ position: "absolute", left: 1290, top: 520, translate: "-50% -50%", textAlign: "center", opacity: h }}>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 300, lineHeight: 0.9, color: C.porc, textShadow: shadowTxt }}>{n}</div>
+        <div style={{ fontFamily: HAND, fontSize: 70, color: C.porc, textShadow: shadowTxt, marginTop: 6 }}>{unit}</div>
+      </div>
+      <Grade vig={0.35} />
+    </Stage>
+  );
+};
+
+export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines, FoilHero, CountHero };

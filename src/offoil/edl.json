@@ -45,21 +45,12 @@
   {
    "a": 20.19,
    "b": 27.32,
-   "c": "Thumb",
+   "c": "FoilHero",
    "props": {
-    "thumb": "th_remember.jpg",
-    "tag": "LAST TIME",
-    "words": [
-     [
-      "sheet",
-      20.87
-     ],
-     [
-      "foil",
-      25.9
-     ]
-    ],
-    "k": "page7.png"
+    "head": "THE FOIL PACKET",
+    "sub": "Today it's the foil packet.",
+    "t": 25.9,
+    "k": "th_remember.jpg"
    }
   },
   {
@@ -108,15 +99,12 @@
   {
    "a": 51.73,
    "b": 60.21,
-   "c": "Note",
+   "c": "FoilHero",
    "props": {
-    "lines": [
-     "Neither one is living.",
-     "You deserve better than",
-     "a cracker over the sink."
-    ],
-    "sig": "Loretta",
-    "k": "page8.png"
+    "head": "BETTER THAN CRACKERS",
+    "sub": "you deserve better than a cracker over the sink",
+    "t": 57.37,
+    "k": "page7.png"
    }
   },
   {
@@ -149,7 +137,7 @@
       "txt": "One piece of heavy foil"
      }
     ],
-    "k": "page40.png"
+    "k": "page7.png"
    }
   },
   {
@@ -175,7 +163,7 @@
     "num": 4,
     "unit": "FOIL PACKETS",
     "txt": "one plate each, one fork to wash",
-    "k": "page41.png",
+    "k": "page8.png",
     "dur": 24
    }
   },
@@ -294,7 +282,7 @@
       "txt": "Heavy foil, about 14 inches"
      }
     ],
-    "k": "page42.png"
+    "k": "page40.png"
    }
   },
   {
@@ -316,7 +304,7 @@
    "b": 168.1,
    "c": "DoDont",
    "props": {
-    "k": "page43.png",
+    "k": "page41.png",
     "yes": {
      "k": "page8.png",
      "txt": "Fold the edges twice",
@@ -689,7 +677,7 @@
       "txt": "1 tsp oil, 1 tsp taco seasoning"
      }
     ],
-    "k": "page1.png"
+    "k": "page42.png"
    }
   },
   {
@@ -1340,7 +1328,7 @@
       "txt": "Freeze one-supper portions"
      }
     ],
-    "k": "page7.png"
+    "k": "page43.png"
    }
   },
   {
@@ -1367,7 +1355,7 @@
      "Freeze the rest in the muffin tin."
     ],
     "sig": "Loretta",
-    "k": "page8.png"
+    "k": "page1.png"
    }
   },
   {
