@@ -1,0 +1,242 @@
+[
+{
+"name": "F0093",
+"cara": "true",
+"t0": 100.76,
+"t1": 105.74,
+"kind": "suelta",
+"frase": "Yo me quedé parado entre cajas de aceite, con olor a cartón húmedo y el corazón a mil."
+},
+{
+"name": "F0101",
+"cara": "false",
+"t0": 112.01,
+"t1": 116.01,
+"kind": "reubicada",
+"frase": "Secreto número uno: la reposición de noche."
+},
+{
+"name": "F0121",
+"cara": "true",
+"t0": 129.4,
+"t1": 135.4,
+"kind": "suelta",
+"frase": "El silencio de la tienda vacía es raro: sólo se escuchan los refrigeradores zumbando y, de vez en cuando, la etiquetadora haciendo clic."
+},
+{
+"name": "F0130",
+"cara": "true",
+"t0": 138.28,
+"t1": 142.86,
+"kind": "suelta",
+"frase": "Por eso, si compras algo que se repuso esa noche, lo encuentras lleno."
+},
+{
+"name": "F0135",
+"cara": "true",
+"t0": 147.35,
+"t1": 151.35,
+"kind": "reubicada",
+"frase": "Fíjate en esta góndola a las diez de la noche, y después a las seis."
+},
+{
+"name": "F0147",
+"cara": "true",
+"t0": 154.96,
+"t1": 158.46,
+"kind": "suelta",
+"frase": "A medianoche, el repositor empieza por el fondo, saca los cartones y pone cada producto de frente, con la etiqueta hacia el pasillo."
+},
+{
+"name": "F0154",
+"cara": "true",
+"t0": 162.35,
+"t1": 166.71,
+"kind": "suelta",
+"frase": "A las tres de la mañana aparecen las cajas nuevas, apiladas en el suelo."
+},
+{
+"name": "F0200",
+"cara": "true",
+"t0": 210.39,
+"t1": 214.39,
+"kind": "inserto",
+"frase": "Todo se tira hacia adelante, se alinea la fila, y el hueco que quedó atrás no se ve desde el pasillo."
+},
+{
+"name": "F0223",
+"cara": "false",
+"t0": 231.02,
+"t1": 237.02,
+"kind": "suelta",
+"frase": "A la izquierda, la góndola después de una tarde de compras: cajas corridas, un hueco en el medio, envases tirados de costado."
+},
+{
+"name": "F0231",
+"cara": "false",
+"t0": 244.17,
+"t1": 248.17,
+"kind": "reubicada",
+"frase": "A la derecha, la misma góndola frenteada: todo tirado al borde, los envases alineados, y ninguna señal de que atrás ya no queda casi nada."
+},
+{
+"name": "F0258",
+"cara": "false",
+"t0": 266.0,
+"t1": 271.33,
+"kind": "suelta",
+"frase": "Y si buscas algo que se vende mucho, pide que te digan cuántas unidades quedan en depósito."
+},
+{
+"name": "F0304",
+"cara": "false",
+"t0": 312.28,
+"t1": 316.2,
+"kind": "suelta",
+"frase": "Un paquete de quinientos gramos a cien sale a doscientos por kilo."
+},
+{
+"name": "F0309",
+"cara": "false",
+"t0": 316.6,
+"t1": 320.7,
+"kind": "suelta",
+"frase": "Un paquete de un kilo a ciento cincuenta sale a ciento cincuenta por kilo."
+},
+{
+"name": "F0313",
+"cara": "true",
+"t0": 323.08,
+"t1": 326.5,
+"kind": "inserto",
+"frase": "El que está a la altura de los ojos puede ser el de quinientos, y el de un kilo ser más barato."
+},
+{
+"name": "F0416",
+"cara": "true",
+"t0": 423.49,
+"t1": 429.49,
+"kind": "suelta",
+"frase": "En la práctica, el repositor tiene prisa, y muchas veces pone lo nuevo adelante porque es lo que llegó en la última caja."
+},
+{
+"name": "F0423",
+"cara": "true",
+"t0": 431.21,
+"t1": 437.21,
+"kind": "suelta",
+"frase": "Por eso, cuando agarras un lácteo o un fiambre envasado, mira la fecha del fondo del estante, no sólo la del frente."
+},
+{
+"name": "F0473",
+"cara": "true",
+"t0": 472.79,
+"t1": 476.79,
+"kind": "reubicada",
+"frase": "En mi época, cada mañana tirábamos una caja de cosas que nadie se llevó."
+},
+{
+"name": "F0488",
+"cara": "false",
+"t0": 495.88,
+"t1": 501.88,
+"kind": "suelta",
+"frase": "Cómo lo esquivas en diez segundos: si un producto se ve cortado, no te desesperes por la última unidad."
+},
+{
+"name": "F0541",
+"cara": "true",
+"t0": 549.87,
+"t1": 553.87,
+"kind": "inserto",
+"frase": "Llega el jueves, o el miércoles si el proveedor fue puntual, y la góndola vuelve a quedar llena."
+},
+{
+"name": "F0575",
+"cara": "true",
+"t0": 582.88,
+"t1": 588.88,
+"kind": "suelta",
+"frase": "El encargado decide qué producto va ahí, y casi siempre es algo que la tienda quiere vender rápido: una oferta, un producto con buen margen, o algo de temporada."
+},
+{
+"name": "F0585",
+"cara": "true",
+"t0": 595.28,
+"t1": 599.18,
+"kind": "inserto",
+"frase": "Mira cómo lo presentan: la pila alta, el cartel grande, el color que llama la atención."
+},
+{
+"name": "F0633",
+"cara": "true",
+"t0": 640.46,
+"t1": 643.96,
+"kind": "suelta",
+"frase": "Entre todos, el repositor, la cajera y yo, llevamos cada caja a la cámara de frío del otro lado del pasillo."
+},
+{
+"name": "F0668",
+"cara": "true",
+"t0": 668.16,
+"t1": 672.16,
+"kind": "reubicada",
+"frase": "Cuando la fila se hace larga, el encargado tiene que abrir otra caja, y eso lleva un par de minutos, porque hay que buscar a alguien y cambiar el cajón de billetes."
+},
+{
+"name": "F0716",
+"cara": "true",
+"t0": 723.55,
+"t1": 729.55,
+"kind": "suelta",
+"frase": "Eso lo llamábamos rediseñar la tienda, y se hacía cada cierto tiempo, casi siempre cuando la venta de algún producto bajaba."
+},
+{
+"name": "F0767",
+"cara": "true",
+"t0": 777.41,
+"t1": 781.4,
+"kind": "inserto",
+"frase": "En la pantalla del depósito veíamos dos cosas: el largo de la fila en la caja, y los huecos vacíos en los estantes."
+},
+{
+"name": "F0794",
+"cara": "true",
+"t0": 801.83,
+"t1": 805.53,
+"kind": "suelta",
+"frase": "El personal sabe cuándo llega la mercadería y cuándo se repone."
+},
+{
+"name": "F0798",
+"cara": "true",
+"t0": 805.81,
+"t1": 809.63,
+"kind": "suelta",
+"frase": "Y si la cola es larga, sabe que el encargado ya está mirando."
+},
+{
+"name": "F0818",
+"cara": "true",
+"t0": 825.8,
+"t1": 831.08,
+"kind": "suelta",
+"frase": "Llegaba una lista nueva desde la oficina, y el encargado la pasaba por la etiquetadora."
+},
+{
+"name": "F0824",
+"cara": "true",
+"t0": 831.46,
+"t1": 837.46,
+"kind": "suelta",
+"frase": "Esa etiquetadora hace clic, clic, clic, y cada clic es una etiqueta nueva en el borde de la góndola."
+},
+{
+"name": "F0831",
+"cara": "true",
+"t0": 838.54,
+"t1": 844.53,
+"kind": "suelta",
+"frase": "Cuando ves una etiqueta fresca, con el precio más claro que el de al lado, ese es el momento del cambio."
+}
+]
