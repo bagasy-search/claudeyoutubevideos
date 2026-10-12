@@ -226,3 +226,59 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
 };
 
 export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
+
+// ── HÉROES DEL PRIMER MINUTO (UPDATE 5): escenas con capas, movimiento dentro, texto que cae en su palabra ──
+const guardWords = (w: [string, number][], f: number, at: (t: number) => number, size: number, bottom: number) =>
+  w.length ? <Words f={f} at={at} words={w} size={size} bottom={bottom} /> : null;
+
+export const HeroBag: P<{ k: string; words: [string, number][] }> = ({ a, d, k, words }) => {
+  const { f, at } = useT(a);
+  const tot = Math.round(85 * ez(cl((f - 18) / Math.max(1, d - 40))));
+  const paper = sp(f, 4, 13, 120);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#0d0b09", overflow: "hidden" }}>
+      <Stage f={f} T={d} drift={1.2}><Full k={k} f={f} d={d} o="40% 60%" dim={0.35} /></Stage>
+      <div style={{ position: "absolute", right: 170, top: 110, width: 540, background: "#FFFDF6", padding: "46px 50px 56px", boxShadow: "0 40px 80px rgba(0,0,0,0.55)", transform: `translateY(${(1 - paper) * -760}px) rotate(${-2 + 2 * paper}deg)`, color: C.ink, fontFamily: LABEL }}>
+        <div style={{ fontSize: 30, letterSpacing: 4, textTransform: "uppercase", color: C.inkSoft }}>Two weeks · one trip</div>
+        <div style={{ height: 2, background: C.ink, opacity: 0.35, margin: "18px 0" }} />
+        {["Chicken thighs, family pack", "Ground beef, two pounds", "Pork chops and sausage", "Eggs, milk, butter, cheddar"].map((t, i) => { const u = sp(f, 14 + i * 14, 16, 160); return <div key={i} style={{ fontFamily: HAND, fontSize: 36, opacity: u, transform: `translateX(${(1 - u) * 40}px)`, margin: "12px 0" }}>{t}</div>; })}
+        <div style={{ height: 2, background: C.ink, opacity: 0.35, margin: "18px 0" }} />
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontSize: 58, fontWeight: 700 }}><span>TOTAL</span><span>{tot}</span></div>
+      </div>
+      {guardWords(words, f, at, 96, 120)}
+      <Grade vig={0.35} />
+    </AbsoluteFill>
+  );
+};
+
+export const HeroPlate: P<{ k: string; words: [string, number][]; t1: number }> = ({ a, d, k, words, t1 }) => {
+  const { f, at } = useT(a);
+  const big = sp(f, at(t1) - 8, 12, 170);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#0d0b09", overflow: "hidden" }}>
+      <Stage f={f} T={d} push={[50, 60, 1.5]} drift={0.8}><Full k={k} f={f} d={d} o="50% 60%" dim={0.3} /></Stage>
+      <div style={{ position: "absolute", right: 150, top: 120, fontFamily: SERIF, fontWeight: 900, fontSize: 250, color: C.porc, textShadow: shadowTxt, opacity: big, transform: `translateY(${(1 - big) * 60}px)` }}>ONE</div>
+      {guardWords(words, f, at, 90, 110)}
+      <Grade vig={0.32} />
+    </AbsoluteFill>
+  );
+};
+
+export const HeroList: P<{ k: string; head: string; items: string[]; words: [string, number][] }> = ({ a, d, k, head, items, words }) => {
+  const { f, at } = useT(a);
+  const h = sp(f, 0, 14, 130);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#0d0b09", overflow: "hidden" }}>
+      <Stage f={f} T={d} drift={0.8}><Full k={k} f={f} d={d} o="30% 40%" dim={0.55} /></Stage>
+      <div style={{ position: "absolute", left: 150, top: 140, fontFamily: LABEL, fontWeight: 700, fontSize: 42, letterSpacing: 6, color: C.porc, opacity: h, transform: `translateY(${(1 - h) * 30}px)`, textShadow: shadowTxt }}>{head}</div>
+      {items.map((t, i) => { const u = sp(f, 24 + i * 66, 15, 150); return (
+        <div key={i} style={{ position: "absolute", left: 150, top: 250 + i * 150, display: "flex", alignItems: "center", gap: 34, opacity: u, transform: `translateX(${(1 - u) * -120}px)` }}>
+          <div style={{ width: 96, height: 96, borderRadius: 48, background: C.red, color: C.porc, fontFamily: SERIF, fontWeight: 900, fontSize: 60, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: "0 14px 30px rgba(0,0,0,0.45)" }}>{i + 1}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 92, color: C.porc, textShadow: shadowTxt, lineHeight: 1.05 }}>{t}</div>
+        </div>); })}
+      {guardWords(words, f, at, 64, 70)}
+      <Grade vig={0.35} />
+    </AbsoluteFill>
+  );
+};
+Object.assign(NEW, { HeroBag, HeroPlate, HeroList });
