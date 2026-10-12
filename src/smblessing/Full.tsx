@@ -5,12 +5,13 @@ import { AbsoluteFill, Sequence } from "remotion";
 import { Plate, CompWrap, Grain, OV, fr, type Shot } from "./Base";
 import { KIT } from "./Kit";
 import { NEW } from "./New";
+import { HeroPromise, HeroBook } from "./Hero";
 import EDL from "./edl.json";
 
 export const TOTAL_S = (EDL as any).end as number;
 type S2 = Shot & { c?: string; props?: any };
 const SH = (EDL as any).shots as S2[];
-const ALL: Record<string, React.FC<any>> = { ...KIT, ...NEW };
+const ALL: Record<string, React.FC<any>> = { ...KIT, ...NEW, HeroPromise, HeroBook };
 
 export const Full: React.FC = () => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
