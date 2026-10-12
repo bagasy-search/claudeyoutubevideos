@@ -82,8 +82,8 @@ export const Full: React.FC = () => (
     <Shot a={370.03} b={378.53} img={staticFile("img/suempl/storeroom.png")} />
     <Shot a={378.53} b={389.0} img={staticFile("img/suempl/tally_sheet.png")} />
     <Shot a={389.0} b={400.46} img={staticFile("img/suempl/pallet_yard.png")} />
-    <Shot a={345.2} b={350.2} img={staticFile("img/suempl/L_frio2.png")} />
-    <Shot a={369.1} b={374.5} img={staticFile("img/suempl/L_frio1.png")} />
+    <Shot a={345.2} b={350.2} img={staticFile("img/suempl/l_frio2.png")} />
+    <Shot a={369.1} b={374.5} img={staticFile("img/suempl/l_frio1.png")} />
     <Shot a={412.2} b={419.2} img={staticFile("img/suempl/n4_store_h.png")} />
     <Shot a={437.4} b={445.3} vid={staticFile("broll/suempl/cfr/b1_emptyshelf.mp4")} />
     <Shot a={445.3} b={453.2} img={staticFile("img/suempl/n4_store_a.png")} />
@@ -97,10 +97,10 @@ export const Full: React.FC = () => (
     <Shot a={517.5} b={524.9} img={staticFile("img/suempl/n4_store_e.png")} />
     <Shot a={524.9} b={532.3} img={staticFile("img/suempl/n4_store_f.png")} />
     <Shot a={532.3} b={541.0} img={staticFile("img/suempl/n4_store_g.png")} />
-    <Shot a={456.0} b={461.0} img={staticFile("img/suempl/L_ticket.png")} />
-    <Shot a={499.2} b={504.0} img={staticFile("img/suempl/L_cafe.png")} />
-    <Shot a={518.0} b={523.0} img={staticFile("img/suempl/L_cajon.png")} />
-    <Shot a={541.0} b={546.0} img={staticFile("img/suempl/L_planilla2.png")} />
+    <Shot a={456.0} b={461.0} img={staticFile("img/suempl/l_ticket.png")} />
+    <Shot a={499.2} b={504.0} img={staticFile("img/suempl/l_cafe.png")} />
+    <Shot a={518.0} b={523.0} img={staticFile("img/suempl/l_cajon.png")} />
+    <Shot a={541.0} b={546.0} img={staticFile("img/suempl/l_planilla2.png")} />
     <Shot a={546.0} b={552.4} img={staticFile("img/suempl/n5_a.png")} />
     <Shot a={552.4} b={558.8} vid={staticFile("broll/suempl/cfr/b2_apples.mp4")} />
     <Shot a={558.8} b={565.2} img={staticFile("img/suempl/n5_b.png")} />
@@ -116,15 +116,15 @@ export const Full: React.FC = () => (
     <Shot a={679.6} b={684.0} vid={staticFile("broll/suempl/cfr/b3_ticket.mp4")} />
     <Shot a={684.0} b={691.6} img={staticFile("img/suempl/n6_a.png")} />
     <Shot a={691.6} b={694.0} img={staticFile("img/suempl/n6_b.png")} />
-    <Shot a={694.0} b={699.0} img={staticFile("img/suempl/L_b2a.png")} />
+    <Shot a={694.0} b={699.0} img={staticFile("img/suempl/l_b2a.png")} />
     <Shot a={699.0} b={706.0} img={staticFile("img/suempl/n6_c.png")} />
     <Shot a={706.0} b={712.8} vid={staticFile("broll/suempl/cfr/b3_centro.mp4")} />
     <Shot a={712.8} b={716.0} img={staticFile("img/suempl/n6_d.png")} />
-    <Shot a={716.0} b={721.0} img={staticFile("img/suempl/L_b2b.png")} />
+    <Shot a={716.0} b={721.0} img={staticFile("img/suempl/l_b2b.png")} />
     <Shot a={721.0} b={729.0} img={staticFile("img/suempl/n6_e.png")} />
     <Shot a={729.0} b={733.5} img={staticFile("img/suempl/n6_f.png")} />
     <Shot a={733.5} b={738.0} img={staticFile("img/suempl/n6_g.png")} />
-    <Shot a={738.0} b={743.0} img={staticFile("img/suempl/L_b2c.png")} />
+    <Shot a={738.0} b={743.0} img={staticFile("img/suempl/l_b2c.png")} />
     <Shot a={743.0} b={750.6} img={staticFile("img/suempl/n6_h.png")} />
     <Shot a={750.6} b={757.9} img={staticFile("img/suempl/n6_i.png")} />
     <Shot a={757.9} b={761.3} img={staticFile("img/suempl/n6_j.png")} />
