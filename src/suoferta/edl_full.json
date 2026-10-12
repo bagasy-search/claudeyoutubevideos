@@ -1,1325 +1,1325 @@
 [
-{
-"kind": "img",
-"src": "img/suoferta/thumb_orig.png",
-"from": 0,
-"dur": 0.6
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_a_linea_envasado.mp4",
-"from": 0.6,
-"dur": 4.6,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_b_conveyor.mp4",
-"from": 5.2,
-"dur": 0.64,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 5.84,
-"dur": 12.81,
-"reelStart": 0.12,
-"lead": 0.1744
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_c_cheese.mp4",
-"from": 18.65,
-"dur": 4.867,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_d_dc_aerial.mp4",
-"from": 23.517,
-"dur": 0.683,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/L2/L1_deposito.png",
-"from": 24.2,
-"dur": 6.8
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/gap/cold_36024517.mp4",
-"from": 31.0,
-"dur": 4.0,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/L2/L2_gondola.png",
-"from": 35.0,
-"dur": 4.84
-},
-{
-"kind": "av",
-"from": 39.84,
-"dur": 11.1,
-"reelStart": 13.17,
-"lead": 0.205
-},
-{
-"kind": "poster",
-"from": 50.94,
-"dur": 5.06
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/gap/dock_855823.mp4",
-"from": 56.0,
-"dur": 4.0,
-"startFrom": 0.0
-},
-{
-"kind": "count",
-"from": 60.0,
-"dur": 4.0,
-"n": 15,
-"of": 15,
-"word": "TRAMPA",
-"title": "La cuenta de los cinco segundos",
-"bg": "img/suoferta/t/t01_cartel_hoy.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cart_aisle.mp4",
-"from": 65.0,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cash_register.mp4",
-"from": 71.0,
-"dur": 0.31,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 71.31,
-"dur": 11.87,
-"reelStart": 24.51,
-"lead": 0.2344
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cheese_counter.mp4",
-"from": 83.18,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/price_tag.mp4",
-"from": 89.18,
-"dur": 0.82,
-"startFrom": 0.0
-},
-{
-"kind": "shelf",
-"from": 90.0,
-"dur": 8.0,
-"bg": "img/suoferta/gondola_precio_arroz.png",
-"at": [
-960,
-470
-],
-"product": "Arroz 500 g",
-"price": 1240,
-"unitLine": "$ 2.480 el kg",
-"tPrint": 90.8,
-"tLupa": 92.5,
-"tCircle": 94.2
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/shelf_stock.mp4",
-"from": 98.0,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/wow_produce.mp4",
-"from": 104.0,
-"dur": 0.76,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 104.76,
-"dur": 12.9,
-"reelStart": 36.62,
-"lead": 0.2657
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/l039.mp4",
-"from": 117.66,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st003.mp4",
-"from": 123.66,
-"dur": 4.133,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st015.mp4",
-"from": 127.793,
-"dur": 2.817,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 130.61,
-"dur": 12.6,
-"reelStart": 49.76,
-"lead": 0.2895
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st024.mp4",
-"from": 143.21,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/cinco_scan.mp4",
-"from": 149.21,
-"dur": 0.79,
-"startFrom": 0.0
-},
-{
-"kind": "count",
-"from": 149.92,
-"dur": 3.0,
-"n": 15,
-"of": 15,
-"word": "TRAMPA",
-"title": "El cartel amarillo que no dice nada",
-"bg": "img/suoferta/t/t03_bolsa_papel.png"
-},
-{
-"kind": "img",
-"src": "img/suoferta/L3/L4_marcador.png",
-"from": 150.0,
-"dur": 6.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e06.mp4",
-"from": 156.0,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e08.mp4",
-"from": 162.0,
-"dur": 1.09,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 163.09,
-"dur": 13.17,
-"reelStart": 62.6,
-"lead": 0.3197
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e31.mp4",
-"from": 176.26,
-"dur": 3.74,
-"startFrom": 0.0
-},
-{
-"kind": "perkilo",
-"from": 180.0,
-"dur": 12.0,
-"left": {
-"img": "img/suoferta/perkilo_izq.png",
-"name": "Arroz 500 g",
-"price": 1240,
-"grams": 500
-},
-"right": {
-"img": "img/suoferta/perkilo_der.png",
-"name": "Arroz 1 kg",
-"price": 2190,
-"grams": 1000
-},
-"tA": 180.8,
-"tB": 181.6,
-"tCalc": 182.8,
-"tWin": 186.5
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e38.mp4",
-"from": 192.0,
-"dur": 4.43,
-"startFrom": 0.0
-},
-{
-"kind": "count",
-"from": 192.2,
-"dur": 3.0,
-"n": 14,
-"of": 15,
-"word": "TRAMPA",
-"title": "Hasta 50% off",
-"bg": "img/suoferta/t/t04_paquete_grande.png"
-},
-{
-"kind": "av",
-"from": 196.43,
-"dur": 18.01,
-"reelStart": 76.01,
-"lead": 0.3527
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e62.mp4",
-"from": 214.44,
-"dur": 3.56,
-"startFrom": 0.0
-},
-{
-"kind": "lupa",
-"from": 218.0,
-"dur": 9.0,
-"bg": "img/suoferta/etiqueta_lupa.png",
-"path": [
-{
-"x": 1480,
-"y": 420,
-"t": 219.0
-},
-{
-"x": 1480,
-"y": 420,
-"t": 226.0
-}
-],
-"zoom": 1.6,
-"label": {
-"box": [
-740,
-400,
-440,
-200
-],
-"lines": [
-{
-"txt": "Precio por kilo",
-"size": 26
-},
-{
-"txt": "$ 2.480",
-"bold": true,
-"size": 46
-}
-],
-"keyIdx": 1
-}
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_a_linea_envasado.mp4",
-"from": 227.0,
-"dur": 4.6,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_b_conveyor.mp4",
-"from": 231.6,
-"dur": 1.09,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 232.69,
-"dur": 12.62,
-"reelStart": 94.26,
-"lead": 0.3837
-},
-{
-"kind": "count",
-"from": 237.61,
-"dur": 3.0,
-"n": 13,
-"of": 15,
-"word": "TRAMPA",
-"title": "El cartel HOY",
-"bg": "img/suoferta/t/t05_ticket_caja.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_c_cheese.mp4",
-"from": 245.31,
-"dur": 4.867,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_d_dc_aerial.mp4",
-"from": 250.177,
-"dur": 1.823,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/L3/L5_imprenta.png",
-"from": 252.0,
-"dur": 6.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/gap/cold_36024517.mp4",
-"from": 258.0,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/gap/dock_855823.mp4",
-"from": 264.0,
-"dur": 0.29,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 264.29,
-"dur": 12.96,
-"reelStart": 107.12,
-"lead": 0.413
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cart_aisle.mp4",
-"from": 277.25,
-"dur": 5.75,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v07_carro_lleno.png",
-"from": 283.0,
-"dur": 5.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cash_register.mp4",
-"from": 288.0,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "count",
-"from": 292.74,
-"dur": 3.0,
-"n": 12,
-"of": 15,
-"word": "TRAMPA",
-"title": "Lleva 3, paga 2",
-"bg": "img/suoferta/t/t06_estante_galletas.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cheese_counter.mp4",
-"from": 294.0,
-"dur": 4.33,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 298.33,
-"dur": 15.14,
-"reelStart": 120.32,
-"lead": 0.4454
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/price_tag.mp4",
-"from": 313.47,
-"dur": 4.53,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/L3/L3_carteles.png",
-"from": 318.0,
-"dur": 6.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/shelf_stock.mp4",
-"from": 324.0,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/wow_produce.mp4",
-"from": 330.0,
-"dur": 2.53,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 332.53,
-"dur": 12.26,
-"reelStart": 135.7,
-"lead": 0.4757
-},
-{
-"kind": "count",
-"from": 336.27,
-"dur": 3.0,
-"n": 11,
-"of": 15,
-"word": "TRAMPA",
-"title": "La oferta por unidad",
-"bg": "img/suoferta/t/t07_carro_vacio.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/l039.mp4",
-"from": 344.79,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st003.mp4",
-"from": 350.79,
-"dur": 4.133,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st015.mp4",
-"from": 354.923,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/etiquetadora.png",
-"from": 360.923,
-"dur": 5.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st024.mp4",
-"from": 365.923,
-"dur": 1.067,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 366.99,
-"dur": 13.5,
-"reelStart": 148.2,
-"lead": 0.5081
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e06.mp4",
-"from": 380.49,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "count",
-"from": 380.67,
-"dur": 3.0,
-"n": 10,
-"of": 15,
-"word": "TRAMPA",
-"title": "El segundo al 70%",
-"bg": "img/suoferta/t/t08_pallet_cajas.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e08.mp4",
-"from": 386.49,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e31.mp4",
-"from": 392.49,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/gondola_precio_arroz.png",
-"from": 398.49,
-"dur": 2.49
-},
-{
-"kind": "av",
-"from": 400.98,
-"dur": 11.06,
-"reelStart": 161.94,
-"lead": 0.5383
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e38.mp4",
-"from": 412.04,
-"dur": 5.8,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e62.mp4",
-"from": 417.84,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_a_linea_envasado.mp4",
-"from": 423.84,
-"dur": 4.6,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/mostrador_ticket.png",
-"from": 428.44,
-"dur": 2.98
-},
-{
-"kind": "av",
-"from": 431.42,
-"dur": 12.26,
-"reelStart": 173.24,
-"lead": 0.567
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_b_conveyor.mp4",
-"from": 443.68,
-"dur": 4.867,
-"startFrom": 0.0
-},
-{
-"kind": "count",
-"from": 444.1,
-"dur": 3.0,
-"n": 9,
-"of": 15,
-"word": "TRAMPA",
-"title": "Punta de góndola",
-"bg": "img/suoferta/t/t09_punta_gondola.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_c_cheese.mp4",
-"from": 448.547,
-"dur": 4.867,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/wow_d_dc_aerial.mp4",
-"from": 453.413,
-"dur": 4.8,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/planilla_encargado.png",
-"from": 458.213,
-"dur": 3.987
-},
-{
-"kind": "av",
-"from": 462.2,
-"dur": 10.18,
-"reelStart": 185.74,
-"lead": 0.5944
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/gap/cold_36024517.mp4",
-"from": 472.38,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/gap/dock_855823.mp4",
-"from": 478.38,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cart_aisle.mp4",
-"from": 484.38,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "count",
-"from": 485.7,
-"dur": 3.0,
-"n": 8,
-"of": 15,
-"word": "TRAMPA",
-"title": "Paquete grande",
-"bg": "img/suoferta/t/t10_latas_aceite.png"
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t01_cartel_hoy.png",
-"from": 490.38,
-"dur": 3.12
-},
-{
-"kind": "av",
-"from": 493.5,
-"dur": 13.97,
-"reelStart": 196.16,
-"lead": 0.6251
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cash_register.mp4",
-"from": 507.47,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/cheese_counter.mp4",
-"from": 513.47,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/price_tag.mp4",
-"from": 519.47,
-"dur": 5.22,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 524.69,
-"dur": 11.86,
-"reelStart": 210.37,
-"lead": 0.6529
-},
-{
-"kind": "count",
-"from": 532.0,
-"dur": 3.0,
-"n": 7,
-"of": 15,
-"word": "TRAMPA",
-"title": "El combo",
-"bg": "img/suoferta/t/t11_bolsas_pan.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/shelf_stock.mp4",
-"from": 536.55,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool/wow_produce.mp4",
-"from": 542.55,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/l039.mp4",
-"from": 548.55,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t02_precio_tachado.png",
-"from": 554.55,
-"dur": 2.98
-},
-{
-"kind": "av",
-"from": 557.53,
-"dur": 10.44,
-"reelStart": 222.47,
-"lead": 0.6825
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st003.mp4",
-"from": 567.97,
-"dur": 4.133,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st015.mp4",
-"from": 572.103,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/st024.mp4",
-"from": 578.103,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t03_bolsa_papel.png",
-"from": 584.103,
-"dur": 5.0
-},
-{
-"kind": "count",
-"from": 585.9,
-"dur": 3.0,
-"n": 6,
-"of": 15,
-"word": "TRAMPA",
-"title": "Oferta con tarjeta",
-"bg": "img/suoferta/t/t12_caja_registro.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/cinco_scan.mp4",
-"from": 589.103,
-"dur": 0.927,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 590.03,
-"dur": 10.2,
-"reelStart": 233.15,
-"lead": 0.7124
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e06.mp4",
-"from": 600.23,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e08.mp4",
-"from": 606.23,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e31.mp4",
-"from": 612.23,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t04_paquete_grande.png",
-"from": 618.23,
-"dur": 0.59
-},
-{
-"kind": "av",
-"from": 618.82,
-"dur": 11.38,
-"reelStart": 243.59,
-"lead": 0.7396
-},
-{
-"kind": "count",
-"from": 627.0,
-"dur": 3.0,
-"n": 5,
-"of": 15,
-"word": "TRAMPA",
-"title": "No pasó a la caja",
-"bg": "img/suoferta/t/t13_canasta.png"
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e38.mp4",
-"from": 630.2,
-"dur": 5.8,
-"startFrom": 0.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/ext/e62.mp4",
-"from": 636.0,
-"dur": 6.0,
-"startFrom": 0.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t05_ticket_caja.png",
-"from": 642.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t06_estante_galletas.png",
-"from": 647.0,
-"dur": 4.59
-},
-{
-"kind": "av",
-"from": 651.59,
-"dur": 11.8,
-"reelStart": 255.21,
-"lead": 0.77
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t07_carro_vacio.png",
-"from": 663.39,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t08_pallet_cajas.png",
-"from": 668.39,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t09_punta_gondola.png",
-"from": 673.39,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t10_latas_aceite.png",
-"from": 678.39,
-"dur": 5.0
-},
-{
-"kind": "vid",
-"src": "broll/suoferta/pool2/cinco_scan.mp4",
-"from": 683.39,
-"dur": 1.76,
-"startFrom": 0.0
-},
-{
-"kind": "av",
-"from": 685.15,
-"dur": 13.32,
-"reelStart": 267.25,
-"lead": 0.8017
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t11_bolsas_pan.png",
-"from": 698.47,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t12_caja_registro.png",
-"from": 703.47,
-"dur": 5.0
-},
-{
-"kind": "count",
-"from": 707.6,
-"dur": 3.0,
-"n": 4,
-"of": 15,
-"word": "TRAMPA",
-"title": "Precio tachado",
-"bg": "img/suoferta/t/t14_frascos.png"
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t13_canasta.png",
-"from": 708.47,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t14_frascos.png",
-"from": 713.47,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t15_bolsillo_ticket.png",
-"from": 718.47,
-"dur": 0.47
-},
-{
-"kind": "av",
-"from": 718.94,
-"dur": 13.82,
-"reelStart": 280.81,
-"lead": 0.8331
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t16_pila_cajas_estante.png",
-"from": 732.76,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t17_refrigerador.png",
-"from": 737.76,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t18_sobre_mostrador.png",
-"from": 742.76,
-"dur": 5.0
-},
-{
-"kind": "count",
-"from": 747.2,
-"dur": 3.0,
-"n": 3,
-"of": 15,
-"word": "TRAMPA",
-"title": "Marca propia",
-"bg": "img/suoferta/t/t15_bolsillo_ticket.png"
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t19_pasillo_vacio.png",
-"from": 747.76,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t20_balanza.png",
-"from": 752.76,
-"dur": 2.13
-},
-{
-"kind": "av",
-"from": 754.89,
-"dur": 12.54,
-"reelStart": 294.87,
-"lead": 0.8657
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v01_cartel_hoy.png",
-"from": 767.43,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v02_precio_tachado.png",
-"from": 772.43,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v03_bolsa_papel.png",
-"from": 777.43,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v04_paquete_grande.png",
-"from": 782.43,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v05_ticket_caja.png",
-"from": 787.43,
-"dur": 1.02
-},
-{
-"kind": "av",
-"from": 788.45,
-"dur": 12.68,
-"reelStart": 307.65,
-"lead": 0.8967
-},
-{
-"kind": "count",
-"from": 788.5,
-"dur": 3.0,
-"n": 2,
-"of": 15,
-"word": "TRAMPA",
-"title": "Lo que vence",
-"bg": "img/suoferta/t/t16_pila_cajas_estante.png"
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v06_estante_galletas.png",
-"from": 801.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v07_carro_lleno.png",
-"from": 806.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v08_pallet_envuelto.png",
-"from": 811.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v09_gondola_punta.png",
-"from": 816.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v10_latas_caidas.png",
-"from": 821.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v11_bolsa_pan.png",
-"from": 826.13,
-"dur": 5.0
-},
-{
-"kind": "count",
-"from": 829.1,
-"dur": 3.0,
-"n": 1,
-"of": 15,
-"word": "TRAMPA",
-"title": "El 2x1 de siempre",
-"bg": "img/suoferta/t/t17_refrigerador.png"
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v12_caja_abierta.png",
-"from": 831.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v13_canasta_vacia.png",
-"from": 836.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v14_frascos_mueven.png",
-"from": 841.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v15_ticket_mano.png",
-"from": 846.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v16_cajas_apiladas.png",
-"from": 851.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v17_heladera_abre.png",
-"from": 856.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v18_sobre_precio.png",
-"from": 861.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v19_pasillo_pasos.png",
-"from": 866.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/v/v20_balanza_pesa.png",
-"from": 871.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/etiquetadora.png",
-"from": 876.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/gondola_precio_arroz.png",
-"from": 881.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/mostrador_ticket.png",
-"from": 886.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/planilla_encargado.png",
-"from": 891.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t01_cartel_hoy.png",
-"from": 896.13,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t02_precio_tachado.png",
-"from": 901.13,
-"dur": 3.87
-},
-{
-"kind": "img",
-"src": "img/suoferta/L3/L4_marcador.png",
-"from": 905.0,
-"dur": 6.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t03_bolsa_papel.png",
-"from": 911.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t04_paquete_grande.png",
-"from": 916.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t05_ticket_caja.png",
-"from": 921.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t06_estante_galletas.png",
-"from": 926.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t07_carro_vacio.png",
-"from": 931.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t08_pallet_cajas.png",
-"from": 936.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t09_punta_gondola.png",
-"from": 941.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t10_latas_aceite.png",
-"from": 946.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t11_bolsas_pan.png",
-"from": 951.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t12_caja_registro.png",
-"from": 956.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t13_canasta.png",
-"from": 961.0,
-"dur": 5.0
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t14_frascos.png",
-"from": 966.0,
-"dur": 1.7
-},
-{
-"kind": "cta",
-"from": 967.7,
-"dur": 13.9,
-"t": 968.4,
-"cover": "img/suoferta/guia_cover.png",
-"bg": "img/suoferta/v/v20_balanza_pesa.png"
-},
-{
-"kind": "img",
-"src": "img/suoferta/t/t15_bolsillo_ticket.png",
-"from": 981.6,
-"dur": 0.2
-},
-{
-"kind": "commentq",
-"from": 981.8,
-"dur": 11.7,
-"q": "¿qué oferta te hizo caer?",
-"t": 983.2,
-"bg": "img/suoferta/L3/L5_imprenta.png",
-"name": "Espectador",
-"initial": "E",
-"when": "ahora"
-}
+ {
+  "kind": "img",
+  "src": "img/suoferta/thumb_orig.png",
+  "from": 0,
+  "dur": 0.6
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_a_linea_envasado.mp4",
+  "from": 0.6,
+  "dur": 4.6,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_b_conveyor.mp4",
+  "from": 5.2,
+  "dur": 0.64,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 5.84,
+  "dur": 12.81,
+  "reelStart": 0.12,
+  "lead": 0.1744
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_c_cheese.mp4",
+  "from": 18.65,
+  "dur": 4.867,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_d_dc_aerial.mp4",
+  "from": 23.517,
+  "dur": 0.683,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/L2/L1_deposito.png",
+  "from": 24.2,
+  "dur": 6.8
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/gap/cold_36024517.mp4",
+  "from": 31.0,
+  "dur": 4.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/L2/L2_gondola.png",
+  "from": 35.0,
+  "dur": 4.84
+ },
+ {
+  "kind": "av",
+  "from": 39.84,
+  "dur": 11.1,
+  "reelStart": 13.17,
+  "lead": 0.205
+ },
+ {
+  "kind": "poster",
+  "from": 50.94,
+  "dur": 5.06
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/gap/dock_855823.mp4",
+  "from": 56.0,
+  "dur": 4.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "count",
+  "from": 60.0,
+  "dur": 4.0,
+  "n": 15,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "La cuenta de los cinco segundos",
+  "bg": "img/suoferta/t/t01_cartel_hoy.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cart_aisle.mp4",
+  "from": 64.0,
+  "dur": 7.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cash_register.mp4",
+  "from": 71.0,
+  "dur": 0.31,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 71.31,
+  "dur": 11.87,
+  "reelStart": 24.51,
+  "lead": 0.2344
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cheese_counter.mp4",
+  "from": 83.18,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/price_tag.mp4",
+  "from": 89.18,
+  "dur": 0.82,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "shelf",
+  "from": 90.0,
+  "dur": 8.0,
+  "bg": "img/suoferta/gondola_precio_arroz.png",
+  "at": [
+   960,
+   470
+  ],
+  "product": "Arroz 500 g",
+  "price": 1240,
+  "unitLine": "$ 2.480 el kg",
+  "tPrint": 90.8,
+  "tLupa": 92.5,
+  "tCircle": 94.2
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/shelf_stock.mp4",
+  "from": 98.0,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/wow_produce.mp4",
+  "from": 104.0,
+  "dur": 0.76,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 104.76,
+  "dur": 12.9,
+  "reelStart": 36.62,
+  "lead": 0.2657
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/l039.mp4",
+  "from": 117.66,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st003.mp4",
+  "from": 123.66,
+  "dur": 4.133,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st015.mp4",
+  "from": 127.793,
+  "dur": 2.817,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 130.61,
+  "dur": 12.6,
+  "reelStart": 49.76,
+  "lead": 0.2895
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st024.mp4",
+  "from": 143.21,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/cinco_scan.mp4",
+  "from": 149.21,
+  "dur": 0.79,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "count",
+  "from": 149.92,
+  "dur": 3.0,
+  "n": 15,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "El cartel amarillo que no dice nada",
+  "bg": "img/suoferta/t/t03_bolsa_papel.png"
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/L3/L4_marcador.png",
+  "from": 150.0,
+  "dur": 6.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e06.mp4",
+  "from": 156.0,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e08.mp4",
+  "from": 162.0,
+  "dur": 1.09,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 163.09,
+  "dur": 13.17,
+  "reelStart": 62.6,
+  "lead": 0.3197
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e31.mp4",
+  "from": 176.26,
+  "dur": 3.74,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "perkilo",
+  "from": 180.0,
+  "dur": 12.0,
+  "left": {
+   "img": "img/suoferta/perkilo_izq.png",
+   "name": "Arroz 500 g",
+   "price": 1240,
+   "grams": 500
+  },
+  "right": {
+   "img": "img/suoferta/perkilo_der.png",
+   "name": "Arroz 1 kg",
+   "price": 2190,
+   "grams": 1000
+  },
+  "tA": 180.8,
+  "tB": 181.6,
+  "tCalc": 182.8,
+  "tWin": 186.5
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e38.mp4",
+  "from": 192.0,
+  "dur": 4.43,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "count",
+  "from": 192.2,
+  "dur": 3.0,
+  "n": 14,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Hasta 50% off",
+  "bg": "img/suoferta/t/t04_paquete_grande.png"
+ },
+ {
+  "kind": "av",
+  "from": 196.43,
+  "dur": 18.01,
+  "reelStart": 76.01,
+  "lead": 0.3527
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e62.mp4",
+  "from": 214.44,
+  "dur": 3.56,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "lupa",
+  "from": 218.0,
+  "dur": 9.0,
+  "bg": "img/suoferta/etiqueta_lupa.png",
+  "path": [
+   {
+    "x": 1480,
+    "y": 420,
+    "t": 219.0
+   },
+   {
+    "x": 1480,
+    "y": 420,
+    "t": 226.0
+   }
+  ],
+  "zoom": 1.6,
+  "label": {
+   "box": [
+    740,
+    400,
+    440,
+    200
+   ],
+   "lines": [
+    {
+     "txt": "Precio por kilo",
+     "size": 26
+    },
+    {
+     "txt": "$ 2.480",
+     "bold": true,
+     "size": 46
+    }
+   ],
+   "keyIdx": 1
+  }
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_a_linea_envasado.mp4",
+  "from": 227.0,
+  "dur": 4.6,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_b_conveyor.mp4",
+  "from": 231.6,
+  "dur": 1.09,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 232.69,
+  "dur": 12.62,
+  "reelStart": 94.26,
+  "lead": 0.3837
+ },
+ {
+  "kind": "count",
+  "from": 237.61,
+  "dur": 3.0,
+  "n": 13,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "El cartel HOY",
+  "bg": "img/suoferta/t/t05_ticket_caja.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_c_cheese.mp4",
+  "from": 245.31,
+  "dur": 4.867,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_d_dc_aerial.mp4",
+  "from": 250.177,
+  "dur": 1.823,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/L3/L5_imprenta.png",
+  "from": 252.0,
+  "dur": 6.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/gap/cold_36024517.mp4",
+  "from": 258.0,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/gap/dock_855823.mp4",
+  "from": 264.0,
+  "dur": 0.29,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 264.29,
+  "dur": 12.96,
+  "reelStart": 107.12,
+  "lead": 0.413
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cart_aisle.mp4",
+  "from": 277.25,
+  "dur": 5.75,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v07_carro_lleno.png",
+  "from": 283.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cash_register.mp4",
+  "from": 288.0,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "count",
+  "from": 292.74,
+  "dur": 3.0,
+  "n": 12,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Lleva 3, paga 2",
+  "bg": "img/suoferta/t/t06_estante_galletas.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cheese_counter.mp4",
+  "from": 294.0,
+  "dur": 4.33,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 298.33,
+  "dur": 15.14,
+  "reelStart": 120.32,
+  "lead": 0.4454
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/price_tag.mp4",
+  "from": 313.47,
+  "dur": 4.53,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/L3/L3_carteles.png",
+  "from": 318.0,
+  "dur": 6.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/shelf_stock.mp4",
+  "from": 324.0,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/wow_produce.mp4",
+  "from": 330.0,
+  "dur": 2.53,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 332.53,
+  "dur": 12.26,
+  "reelStart": 135.7,
+  "lead": 0.4757
+ },
+ {
+  "kind": "count",
+  "from": 336.27,
+  "dur": 3.0,
+  "n": 11,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "La oferta por unidad",
+  "bg": "img/suoferta/t/t07_carro_vacio.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/l039.mp4",
+  "from": 344.79,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st003.mp4",
+  "from": 350.79,
+  "dur": 4.133,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st015.mp4",
+  "from": 354.923,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/etiquetadora.png",
+  "from": 360.923,
+  "dur": 5.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st024.mp4",
+  "from": 365.923,
+  "dur": 1.067,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 366.99,
+  "dur": 13.5,
+  "reelStart": 148.2,
+  "lead": 0.5081
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e06.mp4",
+  "from": 380.49,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "count",
+  "from": 380.67,
+  "dur": 3.0,
+  "n": 10,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "El segundo al 70%",
+  "bg": "img/suoferta/t/t08_pallet_cajas.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e08.mp4",
+  "from": 386.49,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e31.mp4",
+  "from": 392.49,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/gondola_precio_arroz.png",
+  "from": 398.49,
+  "dur": 2.49
+ },
+ {
+  "kind": "av",
+  "from": 400.98,
+  "dur": 11.06,
+  "reelStart": 161.94,
+  "lead": 0.5383
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e38.mp4",
+  "from": 412.04,
+  "dur": 5.8,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e62.mp4",
+  "from": 417.84,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_a_linea_envasado.mp4",
+  "from": 423.84,
+  "dur": 4.6,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/mostrador_ticket.png",
+  "from": 428.44,
+  "dur": 2.98
+ },
+ {
+  "kind": "av",
+  "from": 431.42,
+  "dur": 12.26,
+  "reelStart": 173.24,
+  "lead": 0.567
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_b_conveyor.mp4",
+  "from": 443.68,
+  "dur": 4.867,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "count",
+  "from": 444.1,
+  "dur": 3.0,
+  "n": 9,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Punta de góndola",
+  "bg": "img/suoferta/t/t09_punta_gondola.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_c_cheese.mp4",
+  "from": 448.547,
+  "dur": 4.867,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/wow_d_dc_aerial.mp4",
+  "from": 453.413,
+  "dur": 4.8,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/planilla_encargado.png",
+  "from": 458.213,
+  "dur": 3.987
+ },
+ {
+  "kind": "av",
+  "from": 462.2,
+  "dur": 10.18,
+  "reelStart": 185.74,
+  "lead": 0.5944
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/gap/cold_36024517.mp4",
+  "from": 472.38,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/gap/dock_855823.mp4",
+  "from": 478.38,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cart_aisle.mp4",
+  "from": 484.38,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "count",
+  "from": 485.7,
+  "dur": 3.0,
+  "n": 8,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Paquete grande",
+  "bg": "img/suoferta/t/t10_latas_aceite.png"
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t01_cartel_hoy.png",
+  "from": 490.38,
+  "dur": 3.12
+ },
+ {
+  "kind": "av",
+  "from": 493.5,
+  "dur": 13.97,
+  "reelStart": 196.16,
+  "lead": 0.6251
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cash_register.mp4",
+  "from": 507.47,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/cheese_counter.mp4",
+  "from": 513.47,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/price_tag.mp4",
+  "from": 519.47,
+  "dur": 5.22,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 524.69,
+  "dur": 11.86,
+  "reelStart": 210.37,
+  "lead": 0.6529
+ },
+ {
+  "kind": "count",
+  "from": 532.0,
+  "dur": 3.0,
+  "n": 7,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "El combo",
+  "bg": "img/suoferta/t/t11_bolsas_pan.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/shelf_stock.mp4",
+  "from": 536.55,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool/wow_produce.mp4",
+  "from": 542.55,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/l039.mp4",
+  "from": 548.55,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t02_precio_tachado.png",
+  "from": 554.55,
+  "dur": 2.98
+ },
+ {
+  "kind": "av",
+  "from": 557.53,
+  "dur": 10.44,
+  "reelStart": 222.47,
+  "lead": 0.6825
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st003.mp4",
+  "from": 567.97,
+  "dur": 4.133,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st015.mp4",
+  "from": 572.103,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/st024.mp4",
+  "from": 578.103,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t03_bolsa_papel.png",
+  "from": 584.103,
+  "dur": 5.0
+ },
+ {
+  "kind": "count",
+  "from": 585.9,
+  "dur": 3.0,
+  "n": 6,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Oferta con tarjeta",
+  "bg": "img/suoferta/t/t12_caja_registro.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/cinco_scan.mp4",
+  "from": 589.103,
+  "dur": 0.927,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 590.03,
+  "dur": 10.2,
+  "reelStart": 233.15,
+  "lead": 0.7124
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e06.mp4",
+  "from": 600.23,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e08.mp4",
+  "from": 606.23,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e31.mp4",
+  "from": 612.23,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t04_paquete_grande.png",
+  "from": 618.23,
+  "dur": 0.59
+ },
+ {
+  "kind": "av",
+  "from": 618.82,
+  "dur": 11.38,
+  "reelStart": 243.59,
+  "lead": 0.7396
+ },
+ {
+  "kind": "count",
+  "from": 627.0,
+  "dur": 3.0,
+  "n": 5,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "No pasó a la caja",
+  "bg": "img/suoferta/t/t13_canasta.png"
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e38.mp4",
+  "from": 630.2,
+  "dur": 5.8,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/ext/e62.mp4",
+  "from": 636.0,
+  "dur": 6.0,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t05_ticket_caja.png",
+  "from": 642.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t06_estante_galletas.png",
+  "from": 647.0,
+  "dur": 4.59
+ },
+ {
+  "kind": "av",
+  "from": 651.59,
+  "dur": 11.8,
+  "reelStart": 255.21,
+  "lead": 0.77
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t07_carro_vacio.png",
+  "from": 663.39,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t08_pallet_cajas.png",
+  "from": 668.39,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t09_punta_gondola.png",
+  "from": 673.39,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t10_latas_aceite.png",
+  "from": 678.39,
+  "dur": 5.0
+ },
+ {
+  "kind": "vid",
+  "src": "broll/suoferta/pool2/cinco_scan.mp4",
+  "from": 683.39,
+  "dur": 1.76,
+  "startFrom": 0.0
+ },
+ {
+  "kind": "av",
+  "from": 685.15,
+  "dur": 13.32,
+  "reelStart": 267.25,
+  "lead": 0.8017
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t11_bolsas_pan.png",
+  "from": 698.47,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t12_caja_registro.png",
+  "from": 703.47,
+  "dur": 5.0
+ },
+ {
+  "kind": "count",
+  "from": 707.6,
+  "dur": 3.0,
+  "n": 4,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Precio tachado",
+  "bg": "img/suoferta/t/t14_frascos.png"
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t13_canasta.png",
+  "from": 708.47,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t14_frascos.png",
+  "from": 713.47,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t15_bolsillo_ticket.png",
+  "from": 718.47,
+  "dur": 0.47
+ },
+ {
+  "kind": "av",
+  "from": 718.94,
+  "dur": 13.82,
+  "reelStart": 280.81,
+  "lead": 0.8331
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t16_pila_cajas_estante.png",
+  "from": 732.76,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t17_refrigerador.png",
+  "from": 737.76,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t18_sobre_mostrador.png",
+  "from": 742.76,
+  "dur": 5.0
+ },
+ {
+  "kind": "count",
+  "from": 747.2,
+  "dur": 3.0,
+  "n": 3,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Marca propia",
+  "bg": "img/suoferta/t/t15_bolsillo_ticket.png"
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t19_pasillo_vacio.png",
+  "from": 747.76,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t20_balanza.png",
+  "from": 752.76,
+  "dur": 2.13
+ },
+ {
+  "kind": "av",
+  "from": 754.89,
+  "dur": 12.54,
+  "reelStart": 294.87,
+  "lead": 0.8657
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v01_cartel_hoy.png",
+  "from": 767.43,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v02_precio_tachado.png",
+  "from": 772.43,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v03_bolsa_papel.png",
+  "from": 777.43,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v04_paquete_grande.png",
+  "from": 782.43,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v05_ticket_caja.png",
+  "from": 787.43,
+  "dur": 1.02
+ },
+ {
+  "kind": "av",
+  "from": 788.45,
+  "dur": 12.68,
+  "reelStart": 307.65,
+  "lead": 0.8967
+ },
+ {
+  "kind": "count",
+  "from": 788.5,
+  "dur": 3.0,
+  "n": 2,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "Lo que vence",
+  "bg": "img/suoferta/t/t16_pila_cajas_estante.png"
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v06_estante_galletas.png",
+  "from": 801.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v07_carro_lleno.png",
+  "from": 806.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v08_pallet_envuelto.png",
+  "from": 811.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v09_gondola_punta.png",
+  "from": 816.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v10_latas_caidas.png",
+  "from": 821.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v11_bolsa_pan.png",
+  "from": 826.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "count",
+  "from": 829.1,
+  "dur": 3.0,
+  "n": 1,
+  "of": 15,
+  "word": "TRAMPA",
+  "title": "El 2x1 de siempre",
+  "bg": "img/suoferta/t/t17_refrigerador.png"
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v12_caja_abierta.png",
+  "from": 831.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v13_canasta_vacia.png",
+  "from": 836.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v14_frascos_mueven.png",
+  "from": 841.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v15_ticket_mano.png",
+  "from": 846.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v16_cajas_apiladas.png",
+  "from": 851.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v17_heladera_abre.png",
+  "from": 856.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v18_sobre_precio.png",
+  "from": 861.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v19_pasillo_pasos.png",
+  "from": 866.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/v/v20_balanza_pesa.png",
+  "from": 871.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/etiquetadora.png",
+  "from": 876.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/gondola_precio_arroz.png",
+  "from": 881.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/mostrador_ticket.png",
+  "from": 886.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/planilla_encargado.png",
+  "from": 891.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t01_cartel_hoy.png",
+  "from": 896.13,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t02_precio_tachado.png",
+  "from": 901.13,
+  "dur": 3.87
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/L3/L4_marcador.png",
+  "from": 905.0,
+  "dur": 6.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t03_bolsa_papel.png",
+  "from": 911.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t04_paquete_grande.png",
+  "from": 916.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t05_ticket_caja.png",
+  "from": 921.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t06_estante_galletas.png",
+  "from": 926.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t07_carro_vacio.png",
+  "from": 931.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t08_pallet_cajas.png",
+  "from": 936.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t09_punta_gondola.png",
+  "from": 941.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t10_latas_aceite.png",
+  "from": 946.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t11_bolsas_pan.png",
+  "from": 951.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t12_caja_registro.png",
+  "from": 956.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t13_canasta.png",
+  "from": 961.0,
+  "dur": 5.0
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t14_frascos.png",
+  "from": 966.0,
+  "dur": 1.7
+ },
+ {
+  "kind": "cta",
+  "from": 967.7,
+  "dur": 13.9,
+  "t": 968.4,
+  "cover": "img/suoferta/guia_cover.png",
+  "bg": "img/suoferta/v/v20_balanza_pesa.png"
+ },
+ {
+  "kind": "img",
+  "src": "img/suoferta/t/t15_bolsillo_ticket.png",
+  "from": 981.6,
+  "dur": 0.2
+ },
+ {
+  "kind": "commentq",
+  "from": 981.8,
+  "dur": 11.7,
+  "q": "¿qué oferta te hizo caer?",
+  "t": 983.2,
+  "bg": "img/suoferta/L3/L5_imprenta.png",
+  "name": "Espectador",
+  "initial": "E",
+  "when": "ahora"
+ }
 ]
