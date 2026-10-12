@@ -1,0 +1,22 @@
+{
+ "arte": {
+  "llamadas": 1,
+  "usd": 0.00216
+ },
+ "arte_juez": {
+  "llamadas": 4,
+  "usd": 0.00083
+ },
+ "plan": {
+  "llamadas": 1,
+  "usd": 0.19601
+ },
+ "plan_mas": {
+  "llamadas": 1,
+  "usd": 0.06616
+ },
+ "plan_fix": {
+  "llamadas": 2,
+  "usd": 0.01511
+ }
+}

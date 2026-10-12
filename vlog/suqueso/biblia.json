@@ -1,0 +1,126 @@
+{
+ "secciones": {
+  "GANCHO": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "PROMESA": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "HORMA": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "HISTORIA": {
+   "lugar": "deposito",
+   "hora": "noche",
+   "gente": [
+    "claudio",
+    "ramon"
+   ]
+  },
+  "MOMENTO1": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOMENTO2": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CTA1": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOMENTO3": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOMENTO4": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "ESTO": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOMENTO5": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOMENTO6": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "MOMENTO7": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "RESUMEN": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CTA2": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CIERRE": {
+   "lugar": "fiambreria",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  }
+ },
+ "nuevos": {},
+ "avatar_lugar": "fiambreria",
+ "lugares": {
+  "pasillo": "the aisle of an ordinary neighborhood supermarket in Latin America: long metal gondola shelves full of generic unbranded packages, white shelf-edge price labels, a worn speckled vinyl floor, long fluorescent tubes on the ceiling, a shopping cart left half-way",
+  "deposito": "the back storeroom of a neighborhood supermarket: gray metal racks with cardboard boxes, a wooden pallet with shrink-wrapped boxes, a pallet jack, a bare fluorescent tube, a swinging door with a small round window to the sales floor",
+  "fiambreria": "the deli counter of a neighborhood supermarket: a curved glass refrigerated display with cheeses and cold cuts on steel trays, a slicer machine, a white digital scale with a small label printer, white tiles behind",
+  "carniceria": "the meat case of a neighborhood supermarket: an open refrigerated case with plastic-wrapped meat trays on white foam, white price labels, some trays with a red markdown sticker",
+  "caja": "the checkout of a neighborhood supermarket: a black conveyor belt, a scanner window glowing red, a small customer display, a thermal receipt printer, candy racks next to the belt"
+ }
+}

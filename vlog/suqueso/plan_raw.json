@@ -1,0 +1,574 @@
+{
+ "vision": "Un recorrido visual dentro de una fiambrería de barrio, con cámara cercana a las manos, las etiquetas y la balanza. El plano general muestra a Claudio detrás del mostrador, con su delantal verde y su credencial, sereno y didáctico. La luz fluorescente da textura real a los quesos, papeles y acero. Cada componente aparece como una polaroid que documenta el detalle exacto que Claudio explica, nunca como decoración. El ritmo alterna planos detalle de objetos y manos con testimonios a cámara, para que el espectador sienta que está frente al mostrador con un encargado que le enseña a leer el sistema.",
+ "secciones": {
+  "GANCHO": "Close-up de una etiqueta amarilla de precio con un número grande y la línea chica por kilo; después una balanza digital y un ticket impreso sobre el mostrador. A los 4 segundos, plano medio de Claudio detrás de la vitrina de quesos, señalando la etiqueta con un dedo, rostro visible. Evitar mostrar otros productos, solo queso, papel y balanza.",
+  "PROMESA": "Hero shot de Claudio en el mostrador de fiambres, plano medio, credencial CLAUDIO visible y pistola etiquetadora amarilla en el bolsillo del delantal. Tomas de sus manos apoyadas en el mostrador y un paneo lento desde una rueda de queso a la balanza y al ticket. Rostro visible, tranquilo y mirando a cámara.",
+  "HORMA": "Picada de una rueda entera de queso sobre tabla de corte con etiqueta de precio al lado. Secuencia de cuatro insertos rápidos: una cuña al corte sobre papel, una bandeja con plástico, un cartel de precio especial y una pieza oculta detrás del vidrio. Plano medio de Claudio con ambas manos sobre la rueda, rostro visible.",
+  "HISTORIA": "Depósito nocturno con estanterías metálicas, cajas de cartón y palet con film. Claudio y un hombre mayor, Don Ramón, con delantales junto a la puerta de frío. Close-up de una planilla manuscrita en una tablilla, la hoja de la cortadora de fiambre y una mano sosteniendo papel. Hero shots de Claudio hablando con Ramón, rostro visible, cálido pero cansado.",
+  "MOMENTO1": "Close-up del cartel de la vitrina con dos números, uno grande y uno chico por kilo; un dedo señala cada uno. Luego una cuña de queso sobre la balanza. Plano medio de Claudio sosteniendo la etiqueta, explicando a cámara, rostro visible.",
+  "MOMENTO2": "Plano de lado a lado de una bandeja envasada y una cuña al corte sobre el mostrador. Tilt lento desde un estante bajo a la altura de la mano. Hero shot de Claudio sosteniendo ambos productos y comparando etiquetas, rostro visible. Close-up de la línea chica del precio por kilo en la etiqueta de la bandeja.",
+  "MOMENTO3": "Close-up de una cuña de queso con corteza gruesa de parafina, luego un corte limpio del centro. Manos desprenden migas de parafina roja del borde. Hero shot de Claudio sosteniendo la corteza a contraluz, rostro visible, y descartándola.",
+  "MOMENTO4": "Macro de una hoja de papel de fiambrería colocada sobre la balanza digital; un dedo presiona el botón tara; el display muestra cero. Hero shot de Claudio haciendo el gesto papel-tara-queso con sus manos, rostro visible, explicando los pasos.",
+  "ESTO": "Reconstrucción del reclamo de la clienta: una mano de mujer señala la balanza mientras Claudio se inclina a mirar, rostro visible y sereno. Luego picada de una planilla vieja manuscrita con lápiz y un celular mostrando una lista simple de notas. Hero shot de Claudio hablando a cámara, rostro visible, sin música dramática.",
+  "MOMENTO5": "Close-up de un display digital subiendo de 250 a 310 mientras caen rebanadas sobre papel. Manos sostienen un cuchillo y agregan una rebanada más. Hero shot de Claudio parado junto a la cortadora, rostro visible, levantando una mano como para detener.",
+  "MOMENTO6": "Cartel colorido de precio especial sobre una pieza de queso con su etiqueta de peso chica. Plano lado a lado de una pieza chica y una grande. Hero shot de Claudio comparando las dos piezas, rostro visible, señalando la etiqueta chica.",
+  "MOMENTO7": "Close-up de la etiqueta impresa de la balanza con tres líneas: precio por kilo, peso neto y total. Papel y lápiz con la cuenta \"250 g = 1/4 kg\". Hero shot de Claudio sosteniendo la etiqueta y un ticket, rostro visible, verificando los números.",
+  "RESUMEN": "Cortes rápidos de los siete momentos: cartel, bandeja, corteza, tara, poquito más, precio especial y etiqueta. Hero shot de Claudio recapitulando a cámara, contando con los dedos, rostro visible.",
+  "CTA2": "Hero shot de Claudio sosteniendo un cuadernillo impreso de la guía a la altura del pecho y luego señalando hacia abajo a cámara, rostro visible y cálido. No mostrar QR ni URL en pantalla; solo sus manos y el cuadernillo.",
+  "CIERRE": "Plano medio corto de Claudio hablando a cámara, rostro visible, sonrisa suave. Toma final del mostrador de quesos con una cuña y un ticket, y fundido a negro."
+ },
+ "avatar": [
+  {
+   "n": "Apertura",
+   "desde": "La mayoría de la gente llega",
+   "hasta": "distinta de la que imaginaste."
+  },
+  {
+   "n": "Presentación",
+   "desde": "Soy Claudio. Treinta años",
+   "hasta": "todo el recorrido."
+  },
+  {
+   "n": "Promesa del video",
+   "desde": "Hoy vamos a seguir un solo queso",
+   "hasta": "saber dónde mirar."
+  },
+  {
+   "n": "Explicación de la horma",
+   "desde": "Empecemos por la horma.",
+   "hasta": "el que menos miras."
+  },
+  {
+   "n": "Las cuatro lógicas",
+   "desde": "Un mismo queso, cuatro lógicas de precio.",
+   "hasta": "refrigeradores de fondo."
+  },
+  {
+   "n": "Historia primer día",
+   "desde": "Mi primer día en la fiambrería",
+   "hasta": "lo que de verdad importa."
+  },
+  {
+   "n": "La señora del queso",
+   "desde": "En esos primeros meses atendía",
+   "hasta": "no iba a comer."
+  },
+  {
+   "n": "La más lista",
+   "desde": "Esa señora era la más lista",
+   "hasta": "la misma frase que ella usaba."
+  },
+  {
+   "n": "El depósito",
+   "desde": "A las tres de la mañana",
+   "hasta": "sin conocerte."
+  },
+  {
+   "n": "Anuncio momento 1",
+   "desde": "Momento uno.",
+   "hasta": "contra el precio por pieza."
+  },
+  {
+   "n": "Qué pedir momento 1",
+   "desde": "Qué pedir: pregunta siempre",
+   "hasta": "lo más normal del mundo."
+  },
+  {
+   "n": "Anuncio momento 2",
+   "desde": "Momento dos.",
+   "hasta": "contra el trozo envasado."
+  },
+  {
+   "n": "CTA intermedio",
+   "desde": "Todas estas, y muchas más",
+   "hasta": "lo mejor viene ahora."
+  },
+  {
+   "n": "Anuncio momento 3",
+   "desde": "Momento tres.",
+   "hasta": "La cáscara y la parafina."
+  },
+  {
+   "n": "Anuncio momento 4",
+   "desde": "Momento cuatro.",
+   "hasta": "El papel y la bandeja."
+  },
+  {
+   "n": "Anécdota del reclamo",
+   "desde": "Te cuento algo que me pasó",
+   "hasta": "antes de que te pase."
+  },
+  {
+   "n": "Comentarios",
+   "desde": "Y te pido algo, de paso",
+   "hasta": "Yo los leo todos."
+  },
+  {
+   "n": "Anuncio momento 5",
+   "desde": "Momento cinco.",
+   "hasta": "¿Le dejo un poquito más?"
+  },
+  {
+   "n": "Anuncio momento 6",
+   "desde": "Momento seis.",
+   "hasta": "El precio especial del mostrador."
+  },
+  {
+   "n": "Anuncio momento 7",
+   "desde": "Momento siete.",
+   "hasta": "La etiqueta impresa de la balanza."
+  },
+  {
+   "n": "Resumen",
+   "desde": "Recapitulemos, para que te lo lleves",
+   "hasta": "la cuenta del cuarto."
+  },
+  {
+   "n": "CTA final",
+   "desde": "Si quieres tener todas estas trampas",
+   "hasta": "la usas en el mostrador."
+  },
+  {
+   "n": "Pregunta cierre",
+   "desde": "Y ahora te pregunto a ti.",
+   "hasta": "que los leo todos."
+  },
+  {
+   "n": "Despedida",
+   "desde": "Nos vemos en el próximo video.",
+   "hasta": "que el queso te salga justo."
+  }
+ ],
+ "componentes": [
+  {
+   "c": "ClCheck",
+   "frase": "cuatro cosas distintas",
+   "dur": 8,
+   "props": {
+    "title": "Un queso, cuatro precios",
+    "items": [
+     "trozo al corte",
+     "trozo envasado",
+     "precio especial",
+     "el que menos miras"
+    ]
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Casi siempre hay dos números",
+   "dur": 7,
+   "props": {
+    "title": "En el cartel",
+    "no": {
+     "img": {
+      "foto": "Close-up of a yellow supermarket price label stuck to the glass of a deli cheese case. A finger taps a large printed number at the top, while the smaller line below is slightly out of focus. The label is bright under cool fluorescent light, with blurred cheese wheels behind the glass. No face, no other readable text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "precio por pieza en grande"
+    },
+    "si": {
+     "img": {
+      "foto": "Tight detail of the same yellow price label, now focused on the small printed line under the big number. A fingertip points to the per-kilo text. The large number above is blurred. The deli case and a row of round cheeses appear as soft shapes in the background. Cool fluorescent light, no person.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "precio por kilo, abajo"
+    }
+   }
+  },
+  {
+   "c": "FabAltura",
+   "frase": "el número grande te dice cuánto cuesta",
+   "dur": 8,
+   "props": {
+    "title": "Dónde está cada número",
+    "max": 200,
+    "marcas": [
+     {
+      "cm": 170,
+      "txt": "precio grande a la vista"
+     },
+     {
+      "cm": 130,
+      "txt": "precio por kilo abajo"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "el kilo cuesta ocho mil",
+   "dur": 6,
+   "props": {
+    "num": "8.000",
+    "unidad": "el kilo",
+    "txt": "solo un ejemplo",
+    "img": {
+     "foto": "A weathered hand with age spots places a wedge of hard pale-yellow cheese onto a sheet of white deli paper on a stainless-steel scale. The cheese is unwrapped and the cut side shows small eyes. The scale display is out of frame; only the platform, paper, cheese, and hand are visible. Overhead fluorescent light.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    }
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "compara los dos precios por kilo",
+   "dur": 9,
+   "props": {
+    "title": "Dos números, una etiqueta",
+    "pasos": [
+     {
+      "img": {
+       "foto": "A packaged tray of sliced cheese wrapped in clear plastic sits on a white deli counter. A small rectangular white and red price label is stuck to the plastic, slightly curled. The tray is sharp, while the curved glass of the deli case behind is blurred. No human present, cool fluorescent light from above.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "envasado por kilo"
+     },
+     {
+      "img": {
+       "foto": "A single unwrapped wedge of hard cheese rests on a folded sheet of white deli paper. The cut side is pale yellow and smooth. The background is the same deli counter, softly blurred, with the edge of a stainless scale. The wedge is the only object in focus. No person.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "corte por kilo"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "La diferencia son dos mil por kilo",
+   "dur": 6,
+   "props": {
+    "num": "2.000",
+    "unidad": "por kilo",
+    "txt": "corte 8.000 · envasado 10.000"
+   }
+  },
+  {
+   "c": "FabAltura",
+   "frase": "a la altura de la mano",
+   "dur": 8,
+   "props": {
+    "title": "Dónde va el envasado",
+    "max": 200,
+    "marcas": [
+     {
+      "cm": 110,
+      "txt": "mano adulta"
+     },
+     {
+      "cm": 160,
+      "txt": "envasado a la vista"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "no compares por el aspecto",
+   "dur": 7,
+   "props": {
+    "title": "La bandeja",
+    "no": {
+     "img": {
+      "foto": "Two similar-looking white plastic trays of cheese sit side by side on the deli counter. They appear the same size, but one tray is full of slices and the other holds only one thin slice. The clear plastic wrap reflects the overhead lights, making the amount inside hard to judge. No person, no labels readable.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "parecidas, distinto peso"
+    },
+    "si": {
+     "img": {
+      "foto": "A close-up of a cheese tray label shows the small per-kilo price and net weight line. A finger points to the fine print. The tray and plastic wrap are sharp, while the background deli case is blurred. The cool fluorescent light makes the white label bright and clear. No face.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "mira el precio por kilo"
+    }
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "esa capa de cera de color",
+   "dur": 7,
+   "props": {
+    "antes": {
+     "foto": "A thick wedge of semi-hard cheese with a waxy reddish-brown rind along one side sits on white deli paper. The waxy surface is cracked and clearly not food. The cut interior is pale yellow. A digital scale and curved glass deli case are blurred in the background. Cool fluorescent light, no person.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "A clean center cut of the same pale-yellow cheese, with no wax rind, sits on the same white paper. The cut faces are smooth and slightly glossy. The scale and deli case remain as blurred background. The image has the same cool counter light and tight framing. No person.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "protección, no comida"
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "había pagado una buena parte",
+   "dur": 7,
+   "props": {
+    "antes": {
+     "foto": "A weathered hand with age spots holds a wedge of semi-hard cheese with an unusually thick dark brown rind and cracked wax coating. The wedge sits over white deli paper on a stainless counter. Next to it, a small pile of discarded rind pieces. The curved glass deli case is blurred behind; cool fluorescent light, no face.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "The same weathered hand places a smaller, clean-cut wedge of pale-yellow cheese onto the white deli paper. The rind and wax have been removed, leaving only dense cheese. A few dark rind pieces rest at the edge of the frame. Same cool fluorescent counter and blurred deli case, no face.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "la cáscara no es queso"
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "Cinco segundos de atención",
+   "dur": 6,
+   "props": {
+    "antes": {
+     "foto": "A very close detail of a cut piece of hard cheese on white paper. Along the cut edge there are small crumbs of red paraffin wax and a thin line of hard dark rind. The contrast between wax, rind, and pale interior is extremely sharp. The background is completely blurred. No person.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "The same cut edge of hard cheese after the paraffin crumbs and hard rind have been peeled away. The edge is clean and smooth, pale yellow. The white paper below is empty except for the cheese. The same macro framing and cool light. No person.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "antes de pesar"
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "la balanza no está en cero",
+   "dur": 7,
+   "props": {
+    "title": "La tara",
+    "no": {
+     "img": {
+      "foto": "A digital deli scale shows a small positive reading on its red display while a sheet of white paper rests on the platform. The reading is just above zero. A hand hovers near the tare button. The background shows the blurred curved glass of the cheese case. Cool fluorescent light.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "papel sin descontar"
+    },
+    "si": {
+     "img": {
+      "foto": "The same digital deli scale with white paper on the platform now shows zero on the red display. A gloved finger points to the zero. The hand and scale are sharp, the cheese case behind is completely blurred. Cool fluorescent light, no person.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "balanza en cero"
+    }
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "papel, tara, queso",
+   "dur": 8,
+   "props": {
+    "title": "La tara en 3 pasos",
+    "pasos": [
+     {
+      "img": {
+       "foto": "A hand places a fresh sheet of crisp white deli paper onto the clean platform of a digital scale. The paper is flat and square. The scale display shows zero but is slightly blurred. The curved glass of the cheese case glows softly in the background. No person, cool light.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "pon el papel"
+     },
+     {
+      "img": {
+       "foto": "A weathered finger presses the tare button on the side of the digital scale. The white paper remains on the platform. The red display is blurred but suggests zero. The hand has visible wrinkles and no jewelry. The deli case and steel counter are soft behind. No face.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "tara"
+     },
+     {
+      "img": {
+       "foto": "A wedge of pale-yellow cheese sits on the white paper on the scale. The digital display shows a weight in red, slightly out of focus. The cheese is unwrapped and the cut side faces the camera. The stainless-steel counter is clean, and the deli case is blurred. No person.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "pesa el queso"
+     }
+    ]
+   }
+  },
+  {
+   "c": "ClCheck",
+   "frase": "tu propia planilla",
+   "dur": 8,
+   "props": {
+    "title": "Tu planilla del súper",
+    "items": [
+     "precio del kilo",
+     "día de compra",
+     "peso del trozo"
+    ]
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "sube a trescientos diez",
+   "dur": 6,
+   "props": {
+    "num": "310",
+    "unidad": "gramos",
+    "txt": "pediste 250",
+    "alerta": true,
+    "img": {
+     "foto": "A digital scale display shows the number 310 in bright red while several slices of cheese lie on white paper on the platform. A hand holds one extra slice above the pile, about to add it. The deli counter is cool and fluorescent, with the cheese case blurred behind.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    }
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Doscientos cincuenta, justo.",
+   "dur": 7,
+   "props": {
+    "title": "El pedido exacto",
+    "no": {
+     "img": {
+      "foto": "A deli worker's hand offers one extra slice of cheese on the tip of a knife toward the camera. The background shows a scale with a pile of slices and white paper. The worker's face is not visible, only the dark green apron and the hand. Cool fluorescent light.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "¿Un poquito más?"
+    },
+    "si": {
+     "img": {
+      "foto": "A digital scale shows 250 grams in red digits. A neat stack of three cheese slices rests on white paper. A hand is placed flat on the counter beside the scale. No extra slices, no knife in motion. The deli case is soft in the background. Cool light.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "250 gramos justos"
+    }
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "pide que paren ahí",
+   "dur": 6,
+   "props": {
+    "antes": {
+     "foto": "A digital scale display shows 310 grams while a pile of four cheese slices sits on white paper. A hand is about to add another slice. The scene is bright under fluorescent lights, with the cheese case blurred behind. No face.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "The same digital scale now shows 250 grams. The pile has been reduced to two or three slices on the same white paper. A hand rests near the scale; no one is holding a knife. The background is the same blurred deli case and steel counter.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "sin disculpas"
+   }
+  },
+  {
+   "c": "ClCheck",
+   "frase": "pregunta antes de decir que sí",
+   "dur": 8,
+   "props": {
+    "title": "Precio especial",
+    "items": [
+     "peso justo",
+     "precio por kilo",
+     "solo esta pieza"
+    ]
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "la etiqueta trae tres cosas",
+   "dur": 9,
+   "props": {
+    "title": "La etiqueta real",
+    "pasos": [
+     {
+      "img": {
+       "foto": "A close-up of a printed deli label on a cheese package. The line with the per-kilo price is highlighted by a fingertip. The label is white with black and red printed lines, slightly curled on the plastic wrap. The cheese case is blurred behind. No face.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "precio por kilo"
+     },
+     {
+      "img": {
+       "foto": "A digital deli scale displays the net weight in large red digits. A white paper and a cheese wedge sit on the platform. The display is sharp and the rest blurred. No person visible, only the scale and cheese. Cool fluorescent light.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "peso neto"
+     },
+     {
+      "img": {
+       "foto": "A supermarket receipt lies on a white counter. The total line is visible but only as a printed number, not readable. A hand holds the receipt flat. The background is the deli case, softly blurred. Cool fluorescent light from above. No face.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "total"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "el trozo tiene que dar dos mil",
+   "dur": 6,
+   "props": {
+    "num": "2.000",
+    "unidad": "el cuarto",
+    "txt": "si el kilo está a 8.000"
+   }
+  },
+  {
+   "c": "ClCheck",
+   "frase": "escribe la cuenta en el papel",
+   "dur": 8,
+   "props": {
+    "title": "Tu cuenta del queso",
+    "items": [
+     "peso neto",
+     "precio por kilo",
+     "total"
+    ]
+   }
+  }
+ ]
+}

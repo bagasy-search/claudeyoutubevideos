@@ -1,0 +1,302 @@
+[
+ {
+  "c": "ClCheck",
+  "frase": "cuatro cosas distintas",
+  "dur": 8,
+  "props": {
+   "title": "Un queso, cuatro precios",
+   "items": [
+    "trozo al corte",
+    "trozo envasado",
+    "precio especial",
+    "el que menos miras"
+   ]
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "Casi siempre hay dos números",
+  "dur": 7,
+  "props": {
+   "title": "En el cartel",
+   "no": {
+    "img": "k001",
+    "txt": "precio por pieza en grande"
+   },
+   "si": {
+    "img": "k002",
+    "txt": "precio por kilo, abajo"
+   }
+  }
+ },
+ {
+  "c": "FabAltura",
+  "frase": "el número grande te dice cuánto cuesta",
+  "dur": 8,
+  "props": {
+   "title": "Dónde está cada número",
+   "max": 200,
+   "marcas": [
+    {
+     "cm": 170,
+     "txt": "precio grande a la vista"
+    },
+    {
+     "cm": 130,
+     "txt": "precio por kilo abajo"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "el kilo cuesta ocho mil",
+  "dur": 6,
+  "props": {
+   "num": "8.000",
+   "unidad": "el kilo",
+   "txt": "solo un ejemplo",
+   "img": "k003"
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "compara los dos precios por kilo",
+  "dur": 9,
+  "props": {
+   "title": "Dos números, una etiqueta",
+   "pasos": [
+    {
+     "img": "k004",
+     "txt": "envasado por kilo"
+    },
+    {
+     "img": "k005",
+     "txt": "corte por kilo"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "La diferencia son dos mil por kilo",
+  "dur": 6,
+  "props": {
+   "num": "2.000",
+   "unidad": "por kilo",
+   "txt": "corte 8.000 · envasado 10.000"
+  }
+ },
+ {
+  "c": "FabAltura",
+  "frase": "a la altura de la mano",
+  "dur": 8,
+  "props": {
+   "title": "Dónde va el envasado",
+   "max": 200,
+   "marcas": [
+    {
+     "cm": 110,
+     "txt": "mano adulta"
+    },
+    {
+     "cm": 160,
+     "txt": "envasado a la vista"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "no compares por el aspecto",
+  "dur": 7,
+  "props": {
+   "title": "La bandeja",
+   "no": {
+    "img": "k006",
+    "txt": "parecidas, distinto peso"
+   },
+   "si": {
+    "img": "k007",
+    "txt": "mira el precio por kilo"
+   }
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "esa capa de cera de color",
+  "dur": 7,
+  "props": {
+   "antes": "k008",
+   "despues": "k009",
+   "nota": "protección, no comida"
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "había pagado una buena parte",
+  "dur": 7,
+  "props": {
+   "antes": "k010",
+   "despues": "k011",
+   "nota": "la cáscara no es queso"
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "Cinco segundos de atención",
+  "dur": 6,
+  "props": {
+   "antes": "k012",
+   "despues": "k013",
+   "nota": "antes de pesar"
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "la balanza no está en cero",
+  "dur": 7,
+  "props": {
+   "title": "La tara",
+   "no": {
+    "img": "k014",
+    "txt": "papel sin descontar"
+   },
+   "si": {
+    "img": "k015",
+    "txt": "balanza en cero"
+   }
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "papel, tara, queso",
+  "dur": 8,
+  "props": {
+   "title": "La tara en 3 pasos",
+   "pasos": [
+    {
+     "img": "k016",
+     "txt": "pon el papel"
+    },
+    {
+     "img": "k017",
+     "txt": "tara"
+    },
+    {
+     "img": "k018",
+     "txt": "pesa el queso"
+    }
+   ]
+  }
+ },
+ {
+  "c": "ClCheck",
+  "frase": "tu propia planilla",
+  "dur": 8,
+  "props": {
+   "title": "Tu planilla del súper",
+   "items": [
+    "precio del kilo",
+    "día de compra",
+    "peso del trozo"
+   ]
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "sube a trescientos diez",
+  "dur": 6,
+  "props": {
+   "num": "310",
+   "unidad": "gramos",
+   "txt": "pediste 250",
+   "alerta": true,
+   "img": "k019"
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "Doscientos cincuenta, justo.",
+  "dur": 7,
+  "props": {
+   "title": "El pedido exacto",
+   "no": {
+    "img": "k020",
+    "txt": "¿Un poquito más?"
+   },
+   "si": {
+    "img": "k021",
+    "txt": "250 gramos justos"
+   }
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "pide que paren ahí",
+  "dur": 6,
+  "props": {
+   "antes": "k022",
+   "despues": "k023",
+   "nota": "sin disculpas"
+  }
+ },
+ {
+  "c": "ClCheck",
+  "frase": "pregunta antes de decir que sí",
+  "dur": 8,
+  "props": {
+   "title": "Precio especial",
+   "items": [
+    "peso justo",
+    "precio por kilo",
+    "solo esta pieza"
+   ]
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "la etiqueta trae tres cosas",
+  "dur": 9,
+  "props": {
+   "title": "La etiqueta real",
+   "pasos": [
+    {
+     "img": "k024",
+     "txt": "precio por kilo"
+    },
+    {
+     "img": "k025",
+     "txt": "peso neto"
+    },
+    {
+     "img": "k026",
+     "txt": "total"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "el trozo tiene que dar dos mil",
+  "dur": 6,
+  "props": {
+   "num": "2.000",
+   "unidad": "el cuarto",
+   "txt": "si el kilo está a 8.000"
+  }
+ },
+ {
+  "c": "ClCheck",
+  "frase": "escribe la cuenta en el papel",
+  "dur": 8,
+  "props": {
+   "title": "Tu cuenta del queso",
+   "items": [
+    "peso neto",
+    "precio por kilo",
+    "total"
+   ]
+  }
+ }
+]
