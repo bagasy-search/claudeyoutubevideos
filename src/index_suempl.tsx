@@ -3,9 +3,11 @@ import React from "react";
 import { registerRoot, Composition } from "remotion";
 import { Min1 } from "./suempl/Min1";
 import { Full } from "./suempl/Full";
+import { Pasada2 } from "./suempl/Pasada2";
 registerRoot(() => (
   <>
     <Composition id="Min1" component={Min1} durationInFrames={65 * 30} fps={30} width={1920} height={1080} />
+    <Composition id="Pasada2" component={Pasada2} durationInFrames={965 * 30} fps={30} width={1920} height={1080} />
     <Composition id="Full" component={Full} durationInFrames={965 * 30} fps={30} width={1920} height={1080} />
   </>
 ));
