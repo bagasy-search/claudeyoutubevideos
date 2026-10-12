@@ -29,6 +29,6 @@ export const FinalPrecio: React.FC = () => (
         <Sequence from={0} durationInFrames={fr(962)}><Full2 bg={false} /></Sequence>
       </Sequence>
     </Sequence>
-    <Audio src={staticFile("supreciocut_v2_m14.wav")} />
+    <Audio src={staticFile("supreciocut_v2_m14.wav")} trimBefore={fr(9.70)} />
   </AbsoluteFill>
 );
