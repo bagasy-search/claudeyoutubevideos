@@ -1,0 +1,90 @@
+# Codificación FINAL de entrega en el farm (rama encfin-<slug>, sale de un push con params.json {slug, frames, chunks}).
+# Cada runner baja SU chunk del release chunks-<slug> (los que guardó el render), lo re-codifica sólo video (PTS rehechos N/30,
+# bt709 tv, -bf 0, GOP cerrado de 60) → el job "unir" los pega con -c copy, rehace los tiempos a 30 CFR exacto, le pone la
+# mezcla final (<slug>_mix.wav del release assets-<slug>), verifica cuadros == frames y sube <slug>.mp4 al release <slug>.
+name: encfin
+on:
+  push:
+    branches: ['encfin-*']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(python3 -c "import json;print(json.dumps(list(range(json.load(open('params.json'))['chunks']))))")" >> "$GITHUB_OUTPUT"
+  tramo:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      max-parallel: 64
+      matrix:
+        k: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg (estático; apt-get se traba con 60 runners a la vez)
+        timeout-minutes: 5
+        run: |
+          for n in 1 2 3 4; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && break; sleep $((n*5)); done
+          mkdir -p /tmp/ff && tar xf ff.tar.xz -C /tmp/ff --strip-components=1 && echo "/tmp/ff/bin" >> "$GITHUB_PATH" && rm ff.tar.xz
+      - name: codificar el chunk
+        run: |
+          S=$(python3 -c "import json;print(json.load(open('params.json'))['slug'])")
+          for n in 1 2 3 4 5; do gh release download "chunks-$S" -R "$GITHUB_REPOSITORY" -p "chunk_${{ matrix.k }}.mp4" --clobber && break; sleep $((n*6)); done
+          test -s chunk_${{ matrix.k }}.mp4
+          RG=$(ffprobe -v error -select_streams v:0 -show_entries stream=color_range,pix_fmt -of csv=p=0 chunk_${{ matrix.k }}.mp4)
+          echo "chunk ${{ matrix.k }}: $RG"
+          IR=tv; case "$RG" in *pc*|*yuvj*) IR=full;; esac
+          ffmpeg -v error -y -i chunk_${{ matrix.k }}.mp4 -map 0:v:0 -an \
+            -vf "setpts=N/(30*TB),scale=in_range=$IR:out_range=limited:in_color_matrix=bt470bg:out_color_matrix=bt709,format=yuv420p" \
+            -fps_mode passthrough -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+            -c:v libx264 -preset medium -crf 19 -bf 0 -maxrate 10M -bufsize 16M -g 60 -keyint_min 60 -sc_threshold 0 -threads 0 \
+            -bsf:v h264_mp4toannexb -f h264 t_${{ matrix.k }}.h264
+          ffprobe -v error -count_packets -show_entries stream=nb_read_packets -of csv=p=0 -f h264 t_${{ matrix.k }}.h264
+      - uses: actions/upload-artifact@v4
+        with: { name: "t${{ matrix.k }}", path: "t_${{ matrix.k }}.h264", retention-days: 2 }
+  unir:
+    needs: tramo
+    runs-on: ubuntu-latest
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg (estático; apt-get se traba con 60 runners a la vez)
+        timeout-minutes: 5
+        run: |
+          for n in 1 2 3 4; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && break; sleep $((n*5)); done
+          mkdir -p /tmp/ff && tar xf ff.tar.xz -C /tmp/ff --strip-components=1 && echo "/tmp/ff/bin" >> "$GITHUB_PATH" && rm ff.tar.xz
+      - uses: actions/download-artifact@v4
+        with: { path: arts }
+      - name: unir + mezcla + publicar
+        run: |
+          S=$(python3 -c "import json;print(json.load(open('params.json'))['slug'])")
+          N=$(python3 -c "import json;print(json.load(open('params.json'))['frames'])")
+          C=$(python3 -c "import json;print(json.load(open('params.json'))['chunks'])")
+          : > all.h264; for i in $(seq 0 $((C-1))); do test -s arts/t$i/t_$i.h264 || { echo "falta tramo $i"; exit 1; }; cat arts/t$i/t_$i.h264 >> all.h264; done
+          for n in 1 2 3 4; do gh release download "assets-$S" -R "$GITHUB_REPOSITORY" -p "${S}_mix.wav" --clobber && break; sleep $((n*6)); done
+          test -s "${S}_mix.wav"
+          # ⛔ audio codificado APARTE y mezclado con -c copy + max_interleave_delta 0: con -frames:v el muxer cortaba la cola
+          #    del audio que tenía en espera (almoho salió con el audio 10 s corto)
+          echo "cuadros en el h264 unido: $(ffprobe -v error -count_packets -show_entries stream=nb_read_packets -of csv=p=0 -f h264 all.h264)"
+          ffmpeg -v error -y -i "${S}_mix.wav" -c:a aac -b:a 192k -ar 48000 -ac 2 a.m4a
+          ffmpeg -v error -y -r 30 -f h264 -i all.h264 -i a.m4a -map 0:v:0 -map 1:a:0 -c copy -max_interleave_delta 0 \
+            -t $(python3 -c "print($N/30)") -movflags +faststart "$S.mp4"
+          F=$(ffprobe -v error -count_packets -select_streams v -show_entries stream=nb_read_packets -of csv=p=0 "$S.mp4")
+          VD=$(ffprobe -v error -select_streams v -show_entries stream=duration -of csv=p=0 "$S.mp4"); AD=$(ffprobe -v error -select_streams a -show_entries stream=duration -of csv=p=0 "$S.mp4")
+          echo "cuadros $F (esperados $N) · video ${VD}s · audio ${AD}s"
+          ffprobe -v error -select_streams v -show_entries stream=pix_fmt,color_range,color_space,r_frame_rate -of csv=p=0 "$S.mp4"
+          [ "$F" = "$N" ] || { echo "::error::cuadros $F != $N"; exit 1; }
+          if awk -v a="${AD:-0}" -v v="${VD:-1}" 'BEGIN{exit !(a < v-0.3)}'; then echo "::error::audio ${AD}s más corto que el video ${VD}s"; exit 1; fi
+          gh release view "$S" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$S" -R "$GITHUB_REPOSITORY" --title "$S" --notes "MP4 final de entrega (encfin)"
+          gh release upload "$S" "$S.mp4" -R "$GITHUB_REPOSITORY" --clobber
+          echo "RELEASE_URL: https://github.com/$GITHUB_REPOSITORY/releases/download/$S/$S.mp4"
+      - name: borrar la rama
+        if: success()
+        run: git push origin --delete "$GITHUB_REF_NAME" || true
