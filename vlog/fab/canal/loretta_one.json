@@ -1,0 +1,41 @@
+{
+ "canal": "Loretta Cooks for One",
+ "serie": "Loretta Cooks for One: an 81-year-old widow from Iowa cooks small suppers for one from her little cookbook Supper for One",
+ "idioma": "en",
+ "protagonista": "loretta",
+ "pron": "she",
+ "voz": "loretta",
+ "cps": 15.9,
+ "ejemplos": "lor_",
+ "avatar_pct": [
+  10,
+  16
+ ],
+ "avatar_ref": "D:/wt/ofgrocery/public/ref_ofgrocery.png",
+ "acciones": "cutting a recipe down, wrapping a portion in foil, labeling a freezer bag, lifting a lid on a small pot, setting a small table for one, carrying a small baking dish out of the oven",
+ "prohibidas": [
+  "\bfree\b",
+  "\bgratis\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bwhop\b"
+ ],
+ "dir_refs": "D:/rtmp/fab/canal/loretta",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by her grandson with a phone at eye level, in the middle of the action: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a lamp or the daylight from the window), automatic white balance a bit off, slight phone noise, ordinary worn objects of an old Iowa farmhouse, plain bottles and rags with no labels, no beautiful composition.",
+ "personajes": {
+  "loretta": {
+   "nombre": "Loretta",
+   "cara": true,
+   "desc": "Loretta, an 81-year-old white American grandmother with short curly snow-white hair, thin wire-rimmed glasses, a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron, with old wrinkled hands"
+  }
+ },
+ "lugares_fijos": {
+  "cocina": "Loretta's small 1950s farmhouse kitchen: white enamel stove, yellow gingham curtains, a worn wooden table with one place set, a wall calendar",
+  "mesa": "her small kitchen table set for one: the good plate, a folded napkin, a candle",
+  "congelador": "the freezer drawer of an old white refrigerator, full of flat freezer bags labeled in marker"
+ },
+ "identidad": "Preserve the exact identity, face, short curly snow-white hair, thin wire-rimmed glasses, age and skin of the elderly woman in the reference photograph. She wears a lilac button-up blouse, a small pearl necklace and a faded floral cotton apron.",
+ "cara_crop": "D:/claude-brain/canales/loretta-house-hacks/refs/ref_lor_face.png"
+}

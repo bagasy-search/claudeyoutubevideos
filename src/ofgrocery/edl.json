@@ -1,0 +1,2106 @@
+{
+ "end": 1111.533,
+ "sfx": [
+  [
+   23.25,
+   "design/whoosh_slow_sweep",
+   0.22
+  ],
+  [
+   49.88,
+   "design/camera_shutter",
+   0.22
+  ],
+  [
+   58.61,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   91.66,
+   "design/camera_shutter",
+   0.22
+  ],
+  [
+   99.74,
+   "design/camera_shutter",
+   0.22
+  ],
+  [
+   107.89,
+   "design/camera_shutter",
+   0.22
+  ],
+  [
+   124.04,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   147.45,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   191.49,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   254.07,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   271.07,
+   "design/pencil_paper",
+   0.22
+  ],
+  [
+   298.39,
+   "design/pencil_paper",
+   0.22
+  ],
+  [
+   342.41,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   355.15,
+   "design/page_turn_big",
+   0.22
+  ],
+  [
+   379.12,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   388.59,
+   "design/camera_shutter",
+   0.22
+  ],
+  [
+   428.72,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   473.26,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   510.04,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   527.36,
+   "design/camera_shutter",
+   0.22
+  ],
+  [
+   536.0,
+   "design/pencil_paper",
+   0.22
+  ],
+  [
+   552.52,
+   "design/click_interface",
+   0.22
+  ],
+  [
+   580.57,
+   "design/camera_shutter",
+   0.22
+  ],
+  [
+   589.04,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   623.17,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   673.4,
+   "design/pencil_paper",
+   0.22
+  ],
+  [
+   698.9,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   742.82,
+   "design/pencil_paper",
+   0.22
+  ],
+  [
+   780.35,
+   "design/pen_write",
+   0.22
+  ],
+  [
+   825.95,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   862.99,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   901.08,
+   "design/pencil_paper",
+   0.22
+  ],
+  [
+   928.69,
+   "design/click_interface",
+   0.22
+  ],
+  [
+   976.36,
+   "design/pen_write",
+   0.22
+  ],
+  [
+   996.37,
+   "design/click_slide",
+   0.22
+  ],
+  [
+   1007.65,
+   "design/paper_slide",
+   0.22
+  ],
+  [
+   1048.17,
+   "design/stamp_rubber",
+   0.22
+  ],
+  [
+   1055.86,
+   "design/page_turn_big",
+   0.22
+  ],
+  [
+   1078.82,
+   "design/click_interface",
+   0.22
+  ],
+  [
+   1085.95,
+   "design/whoosh_quick",
+   0.22
+  ],
+  [
+   1096.57,
+   "design/whoosh_quick",
+   0.22
+  ]
+ ],
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 3.8,
+   "k": "img/ofgrocery/ofgrocery_thumb.jpg",
+   "z": [
+    1.0,
+    1.07
+   ],
+   "o": [
+    50,
+    40
+   ]
+  },
+  {
+   "a": 3.8,
+   "b": 14.0,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 14.0,
+   "b": 23.2,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 23.2,
+   "b": 32.563,
+   "k": "",
+   "c": "Thumb",
+   "props": {
+    "thumb": "img/ofgrocery/th_prev.jpg",
+    "tag": "LAST TIME",
+    "words": [
+     [
+      "One-Pan",
+      23.5
+     ],
+     [
+      "Suppers",
+      23.95
+     ],
+     [
+      "for",
+      24.4
+     ],
+     [
+      "Seniors",
+      24.85
+     ]
+    ],
+    "k": "n_checklist_bg"
+   }
+  },
+  {
+   "a": 32.563,
+   "b": 41.3,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 41.3,
+   "b": 49.833,
+   "k": "n_empty_chair",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 49.833,
+   "b": 58.563,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_homeecon_book",
+    "vid": true,
+    "cap": "Iowa State College, 1951: a woman reading an open book at a library table",
+    "credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+   }
+  },
+  {
+   "a": 58.563,
+   "b": 66.964,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "WHAT WE ARE DOING",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "The shopping list"
+     },
+     {
+      "t": 2.93,
+      "txt": "How to split the packages"
+     },
+     {
+      "t": 5.27,
+      "txt": "One supper, step by step"
+     }
+    ],
+    "k": "n_checklist_bg"
+   }
+  },
+  {
+   "a": 66.964,
+   "b": 75.007,
+   "k": "n_list_paper",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 75.007,
+   "b": 83.54,
+   "k": "n_sheet_pan",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 83.54,
+   "b": 91.607,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 91.607,
+   "b": 99.687,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_homeecon_line",
+    "vid": true,
+    "cap": "Iowa State College, 1951: a serving line of hot food in a big institutional kitchen",
+    "credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+   }
+  },
+  {
+   "a": 99.687,
+   "b": 107.843,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_dining_hall_1950s",
+    "vid": true,
+    "cap": "A 1950s dining room being set for a meal, black and white film",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   }
+  },
+  {
+   "a": 107.843,
+   "b": 115.973,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_kitchen_kettles_1950s",
+    "vid": true,
+    "cap": "Cooks at steam kettles in a big 1950s kitchen",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   }
+  },
+  {
+   "a": 115.973,
+   "b": 123.993,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 123.993,
+   "b": 131.767,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "RULE ONE",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "Big package, most of the time cheaper"
+     },
+     {
+      "t": 2.72,
+      "txt": "Freeze it the same day"
+     },
+     {
+      "t": 4.85,
+      "txt": "Chicken thighs two to a bag"
+     }
+    ],
+    "k": "n_bag_bg"
+   }
+  },
+  {
+   "a": 131.767,
+   "b": 139.353,
+   "k": "n_thighs_bags",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 139.353,
+   "b": 147.4,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 147.4,
+   "b": 156.82,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "THE LIST · PAGE 50",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "Chicken thighs, family pack"
+     },
+     {
+      "t": 2.6,
+      "txt": "Ground beef, 2 pounds"
+     },
+     {
+      "t": 4.61,
+      "txt": "Pork chops, smoked sausage, ham steak"
+     },
+     {
+      "t": 6.61,
+      "txt": "Eggs, milk, butter, cheddar"
+     }
+    ],
+    "k": "n_grocery_bg"
+   }
+  },
+  {
+   "a": 156.82,
+   "b": 166.03,
+   "k": "n_butter_eggs",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 166.03,
+   "b": 174.92,
+   "k": "n_grocery_bag",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 174.92,
+   "b": 184.16,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 184.16,
+   "b": 191.44,
+   "k": "n_receipt_table",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 191.44,
+   "b": 198.873,
+   "k": "",
+   "c": "BigNumber",
+   "props": {
+    "num": 85,
+    "unit": "DOLLARS, ONE TRIP",
+    "txt": "About fourteen suppers",
+    "k": "n_coins_bg",
+    "dur": 2.6
+   }
+  },
+  {
+   "a": 198.873,
+   "b": 206.45,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 206.45,
+   "b": 215.647,
+   "k": "n_pans_set",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 215.647,
+   "b": 224.233,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 224.233,
+   "b": 233.33,
+   "k": "n_muffin_tin",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 233.33,
+   "b": 243.69,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 243.69,
+   "b": 254.024,
+   "k": "l_pan_table",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 254.024,
+   "b": 262.413,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "YOU'LL NEED",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "1 bone-in chicken thigh"
+     },
+     {
+      "t": 2.93,
+      "txt": "5 or 6 baby potatoes, halved"
+     },
+     {
+      "t": 5.26,
+      "txt": "Half a small onion, one tablespoon oil"
+     }
+    ],
+    "k": "n_ingr_bg"
+   }
+  },
+  {
+   "a": 262.413,
+   "b": 271.02,
+   "k": "n_cutting_board",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 271.02,
+   "b": 282.94,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 7",
+    "head": "STEP 1",
+    "steps": [
+     {
+      "t": 0.8,
+      "txt": "Heat the oven to 425°F",
+      "k": "n_oven_dial"
+     },
+     {
+      "t": 3.3,
+      "txt": "Line the pan with foil",
+      "k": "n_foil_pan"
+     }
+    ],
+    "bed": "n_foil_pan"
+   }
+  },
+  {
+   "a": 282.94,
+   "b": 290.827,
+   "k": "l_pat_chicken",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 290.827,
+   "b": 298.343,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 298.343,
+   "b": 306.02,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 7",
+    "head": "STEP 2",
+    "steps": [
+     {
+      "t": 0.8,
+      "txt": "Toss the potatoes and onion with half the oil",
+      "k": "n_potatoes_pan"
+     }
+    ],
+    "bed": "n_potatoes_pan"
+   }
+  },
+  {
+   "a": 306.02,
+   "b": 313.743,
+   "k": "n_potatoes_spread",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 313.743,
+   "b": 321.22,
+   "k": "n_chicken_skin_up",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 321.22,
+   "b": 329.37,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 329.37,
+   "b": 335.973,
+   "k": "n_golden_potatoes",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 335.973,
+   "b": 342.356,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 342.356,
+   "b": 348.687,
+   "k": "",
+   "c": "BigNumber",
+   "props": {
+    "num": 165,
+    "unit": "DEGREES F",
+    "txt": "Chicken, thickest part",
+    "k": "n_thermo_bg",
+    "dur": 2.6
+   }
+  },
+  {
+   "a": 348.687,
+   "b": 355.103,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 355.103,
+   "b": 362.273,
+   "k": "",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "img/ofgrocery/page7.png",
+      "tab": "PAGE 7",
+      "t": 355.6
+     }
+    ],
+    "caption": {
+     "txt": "Chicken Thigh and Little Potatoes",
+     "t": 356.6
+    },
+    "k": "p7"
+   }
+  },
+  {
+   "a": 362.273,
+   "b": 369.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 369.547,
+   "b": 379.067,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 379.067,
+   "b": 388.54,
+   "k": "",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_big_package",
+    "txt": "COOKED FOR TWO, THREW HALF AWAY",
+    "at2": 0.9
+   }
+  },
+  {
+   "a": 388.54,
+   "b": 396.193,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_homeecon_counter",
+    "vid": true,
+    "cap": "Iowa State College, 1951: a woman in a white blouse working at a kitchen counter",
+    "credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+   }
+  },
+  {
+   "a": 396.193,
+   "b": 403.933,
+   "k": "n_casseroles_counter",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 403.933,
+   "b": 411.553,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 411.553,
+   "b": 419.953,
+   "k": "n_labeled_bag",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 419.953,
+   "b": 428.667,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 428.667,
+   "b": 437.387,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "FREEZER PLAN · PAGE 51",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "Week 1: 12 meatloaves, 4 soups"
+     },
+     {
+      "t": 2.43,
+      "txt": "Week 2: 3 bags of chicken, 12 breakfasts"
+     },
+     {
+      "t": 4.26,
+      "txt": "Week 3: 4 sandwiches, 3 soups"
+     },
+     {
+      "t": 6.09,
+      "txt": "Week 4: 4 plates, 3 chilis"
+     }
+    ],
+    "k": "n_freezer_bg"
+   }
+  },
+  {
+   "a": 437.387,
+   "b": 446.047,
+   "k": "n_freezer_open",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 446.047,
+   "b": 454.407,
+   "k": "n_freezer_drawer",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 454.407,
+   "b": 463.287,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 463.287,
+   "b": 473.207,
+   "k": "n_slow_cooker_salsa",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 473.207,
+   "b": 482.593,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "SALSA CHICKEN",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "Low, four hours, lid on"
+     },
+     {
+      "t": 3.26,
+      "txt": "Shred with two forks"
+     },
+     {
+      "t": 5.92,
+      "txt": "Three freezer bags"
+     }
+    ],
+    "k": "n_salsa_bg"
+   }
+  },
+  {
+   "a": 482.593,
+   "b": 492.36,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 492.36,
+   "b": 501.28,
+   "k": "n_pulled_pork",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 501.28,
+   "b": 509.987,
+   "k": "n_pork_shoulder",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 509.987,
+   "b": 518.707,
+   "k": "",
+   "c": "BigNumber",
+   "props": {
+    "num": 4,
+    "unit": "SANDWICHES",
+    "txt": "from one small pork shoulder",
+    "k": "n_sandwich_bg",
+    "dur": 2.6
+   }
+  },
+  {
+   "a": 518.707,
+   "b": 527.307,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 527.307,
+   "b": 535.947,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_stove_pots",
+    "vid": true,
+    "cap": "A 1950 kitchen: a woman at an electric stove stirring pots",
+    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+   }
+  },
+  {
+   "a": 535.947,
+   "b": 543.893,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 27",
+    "head": "BEAN AND HAM SOUP",
+    "steps": [
+     {
+      "t": 0.8,
+      "txt": "Simmer about two hours, until the beans are soft",
+      "k": "n_soup_pot"
+     }
+    ],
+    "bed": "n_soup_pot"
+   }
+  },
+  {
+   "a": 543.893,
+   "b": 552.47,
+   "k": "n_soup_bowls",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 552.47,
+   "b": 562.037,
+   "k": "",
+   "c": "DoDont",
+   "props": {
+    "yes": {
+     "k": "n_soup_boil",
+     "txt": "Bring reheated soup to a boil",
+     "t": 0.8
+    },
+    "no": {
+     "k": "n_soup_cold",
+     "txt": "Don't reheat it lukewarm",
+     "t": 5.18
+    }
+   }
+  },
+  {
+   "a": 562.037,
+   "b": 571.97,
+   "k": "n_soup_simmer",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 571.97,
+   "b": 580.524,
+   "k": "n_egg_cups",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 580.524,
+   "b": 588.987,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_kitchen_mixer",
+    "vid": true,
+    "cap": "A 1951 home kitchen: a woman at a stand mixer with a bowl and carrots",
+    "credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+   }
+  },
+  {
+   "a": 588.987,
+   "b": 597.08,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "EGG CUPS",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "Ten eggs, half a cup of milk"
+     },
+     {
+      "t": 2.83,
+      "txt": "Bake 20 to 22 minutes at 350°F"
+     },
+     {
+      "t": 5.06,
+      "txt": "Microwave one 45 seconds from frozen"
+     }
+    ],
+    "k": "n_egg_bg"
+   }
+  },
+  {
+   "a": 597.08,
+   "b": 605.75,
+   "k": "n_english_muffin",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 605.75,
+   "b": 614.42,
+   "k": "n_muffin_meatloaves",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 614.42,
+   "b": 623.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 623.12,
+   "b": 631.74,
+   "k": "",
+   "c": "BigNumber",
+   "props": {
+    "num": 160,
+    "unit": "DEGREES F",
+    "txt": "Beef, middle of each one",
+    "k": "n_beef_bg",
+    "dur": 2.6
+   }
+  },
+  {
+   "a": 631.74,
+   "b": 640.083,
+   "k": "n_meatloaf_bag",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 640.083,
+   "b": 648.15,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 648.15,
+   "b": 656.063,
+   "k": "l_freezer_full",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 656.063,
+   "b": 664.793,
+   "k": "n_salmon_thaw",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 664.793,
+   "b": 673.353,
+   "k": "n_salmon_fridge",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 673.353,
+   "b": 681.403,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 10",
+    "head": "SALMON AND GREEN BEANS",
+    "steps": [
+     {
+      "t": 0.8,
+      "txt": "Roast the green beans five minutes",
+      "k": "n_green_beans_pan"
+     }
+    ],
+    "bed": "n_green_beans_pan"
+   }
+  },
+  {
+   "a": 681.403,
+   "b": 690.28,
+   "k": "n_salmon_lemon",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 690.28,
+   "b": 698.846,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 698.846,
+   "b": 707.393,
+   "k": "",
+   "c": "BigNumber",
+   "props": {
+    "num": 145,
+    "unit": "DEGREES F",
+    "txt": "Fish, thickest part",
+    "k": "n_fish_bg",
+    "dur": 2.6
+   }
+  },
+  {
+   "a": 707.393,
+   "b": 715.86,
+   "k": "n_salmon_plate",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 715.86,
+   "b": 724.266,
+   "k": "n_packet_steam",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 724.266,
+   "b": 733.347,
+   "k": "n_pork_chop_pan",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 733.347,
+   "b": 742.773,
+   "k": "n_chop_raw",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 742.773,
+   "b": 752.21,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 9",
+    "head": "PORK CHOP WITH APPLES",
+    "steps": [
+     {
+      "t": 0.8,
+      "txt": "Toss the apples and onion with butter and cinnamon",
+      "k": "n_apples_pan"
+     }
+    ],
+    "bed": "n_apples_pan"
+   }
+  },
+  {
+   "a": 752.21,
+   "b": 761.24,
+   "k": "n_apple_juice",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 761.24,
+   "b": 770.743,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 770.743,
+   "b": 780.3,
+   "k": "n_meatballs_carrots",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 780.3,
+   "b": 789.567,
+   "k": "",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Grape jelly and chili sauce",
+     "is the church potluck sauce.",
+     "Nobody ever guesses."
+    ],
+    "sig": "LORETTA",
+    "k": "n_jelly_bg",
+    "size": 40
+   }
+  },
+  {
+   "a": 789.567,
+   "b": 798.753,
+   "k": "n_meatball_jar",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 798.753,
+   "b": 808.236,
+   "k": "n_meatball_sauce",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 808.236,
+   "b": 817.18,
+   "k": "n_shrimp_corn",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 817.18,
+   "b": 825.9,
+   "k": "n_shrimp_raw",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 825.9,
+   "b": 834.96,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "SHRIMP AND CORN",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "Thaw shrimp 10 minutes"
+     },
+     {
+      "t": 3.15,
+      "txt": "Roast the corn 15 minutes"
+     },
+     {
+      "t": 5.71,
+      "txt": "Pink and curled, not overdone"
+     }
+    ],
+    "k": "n_shrimp_bg"
+   }
+  },
+  {
+   "a": 834.96,
+   "b": 843.877,
+   "k": "n_lemon_shrimp",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 843.877,
+   "b": 853.387,
+   "k": "n_turkey_fries",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 853.387,
+   "b": 862.94,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 862.94,
+   "b": 872.62,
+   "k": "",
+   "c": "BigNumber",
+   "props": {
+    "num": 165,
+    "unit": "DEGREES F",
+    "txt": "Turkey. Beef is 160.",
+    "k": "n_turkey_bg",
+    "dur": 2.6
+   }
+  },
+  {
+   "a": 872.62,
+   "b": 882.18,
+   "k": "n_bun_toast",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 882.18,
+   "b": 891.667,
+   "k": "n_loaf_meatloaf",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 891.667,
+   "b": 901.033,
+   "k": "n_loaf_bake",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 901.033,
+   "b": 909.933,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "page": "PAGE 11",
+    "head": "LOAF-PAN MEATLOAF",
+    "steps": [
+     {
+      "t": 0.8,
+      "txt": "Press it into the small loaf pan",
+      "k": "n_loaf_press"
+     }
+    ],
+    "bed": "n_loaf_press"
+   }
+  },
+  {
+   "a": 909.933,
+   "b": 919.267,
+   "k": "n_ketchup_top",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 919.267,
+   "b": 928.643,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 928.643,
+   "b": 937.787,
+   "k": "",
+   "c": "DoDont",
+   "props": {
+    "yes": {
+     "k": "n_foil_fold",
+     "txt": "Fold the edges twice",
+     "t": 0.8
+    },
+    "no": {
+     "k": "n_packet_open",
+     "txt": "Open it away from your face",
+     "t": 4.97
+    }
+   }
+  },
+  {
+   "a": 937.787,
+   "b": 947.113,
+   "k": "n_foil_packet",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 947.113,
+   "b": 956.593,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 956.593,
+   "b": 966.373,
+   "k": "n_pumpkin_tin",
+   "z": [
+    1.09,
+    1.0
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 966.373,
+   "b": 976.307,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 976.307,
+   "b": 986.19,
+   "k": "",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Give two to the widow",
+     "down the road.",
+     "That's what they're for."
+    ],
+    "sig": "LORETTA",
+    "k": "n_pumpkin_bg",
+    "size": 40
+   }
+  },
+  {
+   "a": 986.19,
+   "b": 996.316,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 996.316,
+   "b": 1007.603,
+   "k": "",
+   "c": "QrCard",
+   "props": {
+    "k": "qr",
+    "t": 0
+   }
+  },
+  {
+   "a": 1007.603,
+   "b": 1015.517,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "RECAP",
+    "items": [
+     {
+      "t": 0.6,
+      "txt": "Buy the big package, freeze it"
+     },
+     {
+      "t": 2.23,
+      "txt": "Write the list from page 50"
+     },
+     {
+      "t": 3.86,
+      "txt": "Label every bag"
+     },
+     {
+      "t": 5.49,
+      "txt": "Dry skin is crisp skin"
+     }
+    ],
+    "k": "n_recap_bg"
+   }
+  },
+  {
+   "a": 1015.517,
+   "b": 1024.127,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1024.127,
+   "b": 1032.033,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1032.033,
+   "b": 1040.486,
+   "k": "n_good_plate",
+   "z": [
+    1.0,
+    1.09
+   ],
+   "o": [
+    50,
+    42
+   ]
+  },
+  {
+   "a": 1040.486,
+   "b": 1048.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1048.12,
+   "b": 1055.81,
+   "k": "",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_crackers",
+    "txt": "CRACKERS OVER THE SINK",
+    "at2": 0.9
+   }
+  },
+  {
+   "a": 1055.81,
+   "b": 1063.507,
+   "k": "",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "img/ofgrocery/page50.png",
+      "tab": "PAGE 50",
+      "t": 1056.31
+     }
+    ],
+    "caption": {
+     "txt": "Supper for One, 40 small suppers",
+     "t": 1057.31
+    },
+    "k": "p50"
+   }
+  },
+  {
+   "a": 1063.507,
+   "b": 1071.687,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1071.687,
+   "b": 1078.773,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 1078.773,
+   "b": 1085.896,
+   "k": "",
+   "c": "Comment",
+   "props": {
+    "q": "What's the supper you still cook too big?",
+    "opts": [
+     {
+      "txt": "Chicken thighs",
+      "t": 3.92
+     },
+     {
+      "txt": "Soup, always soup",
+      "t": 5.34
+     }
+    ],
+    "k": "n_comment_bg"
+   }
+  },
+  {
+   "a": 1085.896,
+   "b": 1096.52,
+   "k": "",
+   "c": "Tease",
+   "props": {
+    "k": "n_foil_tease",
+    "txt": "Foil packets, one fork to wash",
+    "tag": "NEXT"
+   }
+  },
+  {
+   "a": 1096.52,
+   "b": 1107.14,
+   "k": "",
+   "c": "Tease",
+   "props": {
+    "k": "n_crackers_bg",
+    "txt": "Also from this kitchen: one-pan suppers",
+    "tag": "ALSO FROM THIS KITCHEN"
+   }
+  },
+  {
+   "a": 1107.14,
+   "b": 1111.27,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  }
+ ]
+}
