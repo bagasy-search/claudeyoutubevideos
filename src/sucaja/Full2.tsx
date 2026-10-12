@@ -137,6 +137,29 @@ export const Full2: React.FC = () => (
     <CountCard from={838.90} dur={3.6} n={23} of={25} word="TRUCO" title="Truco número 23" bg="img/sucaja/N_bolsa_caja.png" t={839.10} />
     <CountCard from={869.40} dur={3.6} n={24} of={25} word="TRUCO" title="Truco número 24" bg="img/sucaja/N_cartel_fila.png" t={869.60} />
     <CountCard from={899.94} dur={3.6} n={25} of={25} word="TRUCO" title="Truco número 25" bg="img/sucaja/N_ticket_largo.png" t={900.14} />
+    {/* P2 fotos (fotos2) sobre su frase; las de ventana de avatar van encima del avatar */}
+    <Still from={83.00} dur={3.20} file="F08300.png" />
+    <Still from={120.40} dur={5.00} file="F12040.png" />
+    <Still from={215.60} dur={4.00} file="F21560.png" />
+    <Still from={387.80} dur={5.00} file="F38780.png" />
+    <Still from={415.40} dur={4.00} file="F41540.png" />
+    <Still from={419.40} dur={4.00} file="F41940.png" />
+    <Still from={471.40} dur={5.00} file="F47140.png" />
+    <Still from={476.40} dur={4.00} file="F47640.png" />
+    <Still from={597.60} dur={3.50} file="F59760.png" />
+    <Still from={669.40} dur={5.00} file="F66940.png" />
+    <Still from={674.40} dur={4.00} file="F67440.png" />
+    <Still from={700.00} dur={5.00} file="F70000.png" />
+    <Still from={705.00} dur={4.00} file="F70500.png" />
+    <Still from={758.80} dur={3.50} file="F75880.png" />
+    <Still from={780.40} dur={3.50} file="F78040.png" />
+    <Still from={791.00} dur={5.00} file="F79100.png" />
+    <Still from={796.00} dur={4.00} file="F79600.png" />
+    <Still from={846.20} dur={4.00} file="F84620.png" />
+    <Still from={850.60} dur={4.00} file="F85060.png" />
+    <Still from={883.20} dur={3.50} file="F88320.png" />
+    <Still from={924.60} dur={3.50} file="F92460.png" />
+    <Still from={966.00} dur={3.50} file="F96600.png" />
     <Grade />
     <Grain />
   </AbsoluteFill>

@@ -66,6 +66,9 @@ export const Min1: React.FC = () => (
     <Clip from={14.2} dur={4.27} file="st004.mp4" />
     <Clip from={18.47} dur={4.0} file="st005.mp4" />
     <Clip from={22.47} dur={3.04} file="st005b.mp4" />
+    {/* P2 fotos (fotos2) sobre su frase */}
+    <Still from={14.68} dur={2.64} file="F01468.png" />
+    <Still from={18.68} dur={4.00} file="F01868.png" />
     {/* 25.5-32.5 sello DETRÁS DE LA GÓNDOLA sobre la puerta */}
     <SealDoor from={25.51} dur={7.02} bg="img/sucaja/door.png" tPush={31.0} tStamp={27.0} />
     {/* 41.6-57.5 HERO Cinco cajas: fondo real + 5 momentos en palabras, con 2 WOW de caja en el medio */}
