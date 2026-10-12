@@ -225,4 +225,76 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
   );
 };
 
-export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines };
+
+// ── HEROES (UPDATE 5, 11-oct): primeros 60 s con componentes propios, cada beat en su palabra ──
+export const HeroPlatter: P<{ k: string; eggs: number[]; big: string; bigT: number; timerT: number }> = ({ a, d, k, eggs, big, bigT, timerT }) => {
+  const { f, at } = useT(a);
+  const par = (f / Math.max(1, d)) * -26; // paralaje: la bandeja se corre contra el fondo
+  const bigU = sp(f, at(bigT), 12, 170), bigS = 0.9 + 0.1 * bigU;
+  const tf = Math.max(0, f - at(timerT)); const secs = Math.max(0, 120 - Math.floor(tf / 30));
+  const tim = sp(f, at(timerT), 14, 150);
+  const mm = Math.floor(secs / 60), ss = String(secs % 60).padStart(2, "0");
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#15110c" }}>
+      <AbsoluteFill style={{ transform: `scale(${1.08 + 0.06 * f / Math.max(1, d)})`, filter: "blur(4px) brightness(0.6) saturate(1.1)" }}>
+        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </AbsoluteFill>
+      <div style={{ position: "absolute", left: 960, top: 540, width: 1320, height: 600, translate: "-50% -50%", transform: `translateX(${par}px)`, borderRadius: "50%",
+        background: "radial-gradient(ellipse at 50% 40%, #ffffff 0%, #f7f4ec 46%, #d9d2c3 78%, #b9b0a0 100%)", border: "14px solid rgba(255,255,255,0.85)", boxShadow: "0 60px 110px rgba(0,0,0,0.6), 0 0 0 4px rgba(255,255,255,0.25), inset 0 -22px 46px rgba(120,100,70,0.3)" }}>
+        {eggs.map((et, i) => {
+          const u = sp(f, at(et), 13, 180); const col = i % 6, row = Math.floor(i / 6);
+          const x = 200 + col * 185, y = 170 + row * 190;
+          return (
+            <div key={i} style={{ position: "absolute", left: x, top: y, width: 168, height: 110, borderRadius: "50%", opacity: cl(u * 1.6),
+              transform: `translateY(${(1 - u) * -90}px) scale(${0.3 + 0.7 * u})`, background: "radial-gradient(circle at 50% 42%, #ffffff 0%, #fbf8f1 66%, #e2d9c8 100%)", boxShadow: "0 16px 26px rgba(60,40,20,0.36)" }}>
+              <div style={{ position: "absolute", left: 51, top: 22, width: 66, height: 66, borderRadius: "50%", background: "radial-gradient(circle at 45% 40%, #fff09a, #eab43a 78%)", boxShadow: "inset 0 -4px 8px rgba(160,100,20,0.35)" }} />
+              <div style={{ position: "absolute", left: 76, top: 47, width: 10, height: 10, borderRadius: "50%", background: "#c25a1e", opacity: 0.75 }} />
+            </div>
+          );
+        })}
+      </div>
+      <div style={{ position: "absolute", left: 960, bottom: 118, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 168, color: C.porc, textShadow: shadowTxt, letterSpacing: -2,
+        opacity: cl(bigU * 1.4), transform: `scale(${bigS})`, whiteSpace: "nowrap" }}>{big}</div>
+      <div style={{ position: "absolute", right: 110, top: 96, opacity: cl(tim * 1.3), transform: `translateY(${(1 - tim) * -30}px)` }}>
+        <Chip txt={`${mm}:${ss}`} size={96} bg="#FFFDF4" color={C.red} rot={3} font={SERIF} ls={1} />
+      </div>
+      <Grade warm={1.2} vig={0.42} />
+      <Grain />
+    </AbsoluteFill>
+  );
+};
+
+export const HeroCard: P<{ k: string; head: string; page: string; stamp: { t: number; txt: string }; lines: { t: number; txt: string }[]; hd: number }> = ({ a, d, k, head, page, stamp, lines, hd }) => {
+  const { f, at } = useT(a);
+  const drift = (f / Math.max(1, d)) * 16;
+  const hu = sp(f, at(hd), 14, 150);
+  const st = sp(f, at(stamp.t), 9, 260), sS = 1.7 - 0.7 * st;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#15110c" }}>
+      <AbsoluteFill style={{ transform: `scale(${1.06 + 0.06 * f / Math.max(1, d)})`, filter: "blur(12px) brightness(0.4) saturate(1.05)" }}>
+        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </AbsoluteFill>
+      <div style={{ position: "absolute", left: 960, top: 540, width: 1240, translate: "-50% -50%", transform: `translateY(${-drift}px) rotate(-1.2deg)`,
+        background: "linear-gradient(180deg, #fffdf6 0%, #f8f0dc 100%)", borderRadius: 6, padding: "52px 64px 60px", boxShadow: "0 50px 90px rgba(0,0,0,0.55)", color: C.ink }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", opacity: cl(hu * 1.5) }}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 70, color: C.ink, clipPath: `inset(0 ${(1 - hu) * 100}% 0 0)` }}>{head}</div>
+          <Chip txt={page} size={38} bg={C.red} color="#fff" rot={3} />
+        </div>
+        <div style={{ height: 3, background: C.ink, margin: "44px 0 40px", transformOrigin: "left", transform: `scaleX(${hu})` }} />
+        {lines.map((x, i) => {
+          const u = sp(f, at(x.t), 16, 170);
+          return (
+            <div key={i} style={{ fontFamily: HAND, fontSize: 60, lineHeight: 1.45, color: C.ink, clipPath: `inset(0 ${(1 - u) * 100}% 0 0)`, opacity: cl(u * 2) }}>{x.txt}</div>
+          );
+        })}
+      </div>
+      <div style={{ position: "absolute", left: 1290, top: 790, transform: `translate(-50%,-50%) rotate(-8deg) scale(${sS})`, opacity: cl(st * 2.2),
+        border: `8px solid ${C.red}`, borderRadius: 10, padding: "14px 28px", background: "rgba(255,253,244,0.0)", fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: C.red,
+        textShadow: "0 4px 16px rgba(0,0,0,0.35)", whiteSpace: "nowrap", letterSpacing: 1 }}>{stamp.txt}</div>
+      <Grade warm={1.2} vig={0.42} />
+      <Grain />
+    </AbsoluteFill>
+  );
+};
+
+export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines, HeroPlatter, HeroCard };

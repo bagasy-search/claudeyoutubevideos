@@ -31,16 +31,28 @@
 {
 "a": 10.0,
 "b": 22.0,
+"k": "",
+"c": "HeroPlatter",
+"props": {
 "k": "img/ckeggs/n_egg_carton.png",
-"vid": false,
-"z": [
-1.0,
-1.08
+"eggs": [
+10.53,
+11.37,
+11.67,
+12.03,
+12.37,
+12.55,
+12.83,
+13.47,
+13.85,
+14.11,
+14.33,
+14.55
 ],
-"o": [
-50,
-50
-]
+"big": "TWO MINUTES.",
+"bigT": 16.03,
+"timerT": 16.35
+}
 },
 {
 "a": 22,
@@ -58,31 +70,29 @@
 },
 {
 "a": 38.0,
-"b": 47.0,
-"k": "img/ckeggs/l_pain_plate.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
+"b": 56.0,
+"k": "",
+"c": "HeroCard",
+"props": {
+"k": "img/ckeggs/n_cold_table.png",
+"head": "CHURCH POTLUCK DEVILED EGGS",
+"page": "PAGE 20",
+"hd": 40.81,
+"stamp": {
+"t": 42.19,
+"txt": "THE ONE STEP NOBODY TAKES"
+},
+"lines": [
+{
+"t": 49.37,
+"txt": "Every amount, written out"
 },
 {
-"a": 47.0,
-"b": 56.0,
-"k": "img/ckeggs/n_pot_simmer.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
+"t": 50.41,
+"txt": "So you can make it at home"
+}
 ]
+}
 },
 {
 "a": 56,
@@ -90,8 +100,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -101,7 +111,7 @@
 {
 "a": 70.0,
 "b": 81.0,
-"k": "img/ckeggs/n_ice_bowl.png",
+"k": "img/ckeggs/n_pot_simmer.png",
 "vid": false,
 "z": [
 1.0,
@@ -132,8 +142,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -155,7 +165,7 @@
 {
 "a": 116.0,
 "b": 126.0,
-"k": "img/ckeggs/n_yolk_paste.png",
+"k": "img/ckeggs/n_ice_bowl.png",
 "vid": false,
 "z": [
 1.0,
@@ -172,8 +182,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -210,8 +220,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -235,7 +245,7 @@
 {
 "a": 184.0,
 "b": 192.0,
-"k": "img/ckeggs/n_pickle_jar.png",
+"k": "img/ckeggs/n_yolk_paste.png",
 "vid": false,
 "z": [
 1.0,
@@ -252,8 +262,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -263,7 +273,7 @@
 {
 "a": 206.0,
 "b": 214.0,
-"k": "img/ckeggs/n_halves_platter.png",
+"k": "img/ckeggs/n_pickle_jar.png",
 "vid": false,
 "z": [
 1.0,
@@ -281,7 +291,7 @@
 "c": "Checklist",
 "props": {
 "head": "WHAT PEOPLE GET WRONG",
-"k": "img/ckeggs/n_white_boats.png",
+"k": "img/ckeggs/n_halves_platter.png",
 "items": [
 {
 "t": 214,
@@ -301,7 +311,7 @@
 {
 "a": 232.0,
 "b": 246.0,
-"k": "img/ckeggs/n_cutting_board.png",
+"k": "img/ckeggs/n_white_boats.png",
 "vid": false,
 "z": [
 1.0,
@@ -318,8 +328,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -341,7 +351,7 @@
 {
 "a": 266.0,
 "b": 270.0,
-"k": "img/ckeggs/n_kitchen_timer.png",
+"k": "img/ckeggs/n_cutting_board.png",
 "vid": false,
 "z": [
 1.0,
@@ -369,7 +379,7 @@
 {
 "t": 284,
 "txt": "Straight into ice water, 10 minutes",
-"k": "img/ckeggs/n_cold_table.png"
+"k": "img/ckeggs/n_kitchen_timer.png"
 }
 ]
 }
@@ -436,8 +446,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -478,8 +488,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -518,8 +528,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -560,8 +570,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -602,8 +612,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -675,8 +685,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -715,8 +725,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -755,8 +765,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -822,8 +832,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -864,8 +874,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -938,8 +948,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -967,8 +977,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -991,8 +1001,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -1046,8 +1056,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -1086,8 +1096,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -1128,8 +1138,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
@@ -1168,8 +1178,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.12,
-1.16
+1.0,
+1.04
 ],
 "o": [
 50,
@@ -1277,8 +1287,8 @@
 "k": "av",
 "av": true,
 "z": [
-1.0,
-1.04
+1.12,
+1.16
 ],
 "o": [
 50,
