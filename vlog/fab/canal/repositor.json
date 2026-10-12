@@ -1,0 +1,63 @@
+{
+ "canal": "Claudio el Repositor",
+ "serie": "Detrás de la góndola: un ex repositor y encargado de supermercado cuenta cómo funciona el súper por dentro y cómo comprar sin caer",
+ "dir_refs": "D:/rtmp/claudio_new/build",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by a family member with a phone at eye level, in the middle of the action: framing casual and a little off, something cut by the edge of the frame, almost everything in focus and nothing blurred out, only the light the place really has (a ceiling bulb, a lamp or the daylight from the window or door), automatic white balance a bit off, slight phone noise, ordinary worn objects, people caught mid-movement and not posing, no beautiful composition.",
+ "personajes": {
+  "claudio": {
+   "nombre": "Claudio",
+   "desc": "a 72-year-old Latin American man with thick short curly silver-white hair, a short white beard, deep wrinkles and age spots, warm dark brown eyes and a wise calm look, wearing a faded navy polo shirt under a plain dark green apron with no logo, a small white badge reading CLAUDIO and a yellow price-labeling gun in the apron pocket",
+   "ref": "public/ref_{slug}.png",
+   "cara": true
+  },
+  "ramon": {
+   "nombre": "don Ramón",
+   "desc": "don Ramón, a heavy-set 65-year-old supermarket manager in the 1990s with a gray mustache, white short-sleeve shirt and a dark tie, holding a clipboard"
+  },
+  "negra": {
+   "nombre": "la Negra",
+   "desc": "la Negra, a 45-year-old Latin American cashier with dark curly hair tied back, wearing a light blue cashier smock"
+  }
+ },
+ "lugares_fijos": {
+  "pasillo": "the aisle of an ordinary neighborhood supermarket in Latin America: long metal gondola shelves full of generic unbranded packages, white shelf-edge price labels, a worn speckled vinyl floor, long fluorescent tubes on the ceiling, a shopping cart left half-way",
+  "deposito": "the back storeroom of a neighborhood supermarket: gray metal racks with cardboard boxes, a wooden pallet with shrink-wrapped boxes, a pallet jack, a bare fluorescent tube, a swinging door with a small round window to the sales floor",
+  "fiambreria": "the deli counter of a neighborhood supermarket: a curved glass refrigerated display with cheeses and cold cuts on steel trays, a slicer machine, a white digital scale with a small label printer, white tiles behind",
+  "carniceria": "the meat case of a neighborhood supermarket: an open refrigerated case with plastic-wrapped meat trays on white foam, white price labels, some trays with a red markdown sticker",
+  "caja": "the checkout of a neighborhood supermarket: a black conveyor belt, a scanner window glowing red, a small customer display, a thermal receipt printer, candy racks next to the belt"
+ },
+ "identidad": "Preserve the exact identity, face, thick short curly silver-white hair, short white beard, deep wrinkles, age and skin tone of the man in the reference photograph. He wears a faded navy polo shirt under a plain dark green apron with no logo and a small white badge reading CLAUDIO.",
+ "cara_crop": "D:/rtmp/claudio_new/build/face2.png",
+ "idioma": "es",
+ "protagonista": "claudio",
+ "pron": "he",
+ "voz": "claudio_repositor",
+ "cps": 14.0,
+ "ejemplos": "su",
+ "avatar_pct": [
+  28,
+  35
+ ],
+ "prohibidas": [
+  "\\bilegal",
+  "\\bfraude",
+  "\\bestafa",
+  "te roban",
+  "\\bgratis",
+  "walmart",
+  "carrefour",
+  "\\bcoto\\b",
+  "\\bjumbo\\b",
+  "\\bd[ií]a%",
+  "\\baldi\\b",
+  "costco",
+  "\\blidl\\b",
+  "chedraui",
+  "soriana",
+  "mercadona",
+  "\\bdisco\\b",
+  "\\bvea\\b",
+  "la an[oó]nima",
+  "marolio"
+ ]
+}
