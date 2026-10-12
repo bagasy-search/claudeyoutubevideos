@@ -1,0 +1,1952 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 0.6,
+"k": "img/ofmuffin/ofmuffin_thumb.jpg",
+"z": [
+1.0,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 0.6,
+"b": 4.0,
+"k": "img/ofmuffin/ofmuffin_thumb.jpg",
+"z": [
+1.0,
+1.1
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 0.0,
+"b": 0.6,
+"k": "img/ofmuffin/ofmuffin_thumb.jpg",
+"z": [
+1.0,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 0.6,
+"b": 10.585,
+"k": "img/ofmuffin/ofmuffin_thumb.jpg",
+"z": [
+1.0,
+1.1
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 10.585,
+"b": 17.17,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 17.17,
+"b": 23.77,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 23.77,
+"b": 33.01,
+"k": "",
+"c": "HeroMuffinDrawer",
+"props": {
+"t0": 28.13,
+"t1": 30.03
+}
+},
+{
+"a": 33.01,
+"b": 39.61,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 39.61,
+"b": 46.037,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 46.037,
+"b": 52.465,
+"k": "",
+"c": "HeroPlateFreeze",
+"props": {
+"t0": 47.09,
+"t1": 48.41
+}
+},
+{
+"a": 52.465,
+"b": 58.892,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 58.892,
+"b": 65.32,
+"k": "img/ofmuffin/crackers_one_plate.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 65.32,
+"b": 71.5,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 71.5,
+"b": 77.68,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"items": [
+{
+"t": 72.7,
+"txt": "Four muffin tin recipes"
+},
+{
+"t": 74.03,
+"txt": "Every step, and why"
+},
+{
+"t": 75.35,
+"txt": "A month of suppers from one Sunday"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 77.68,
+"b": 83.86,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"items": [
+{
+"t": 78.88,
+"txt": "Four muffin tin recipes"
+},
+{
+"t": 80.21,
+"txt": "Every step, and why"
+},
+{
+"t": 81.53,
+"txt": "A month of suppers from one Sunday"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 83.86,
+"b": 90.04,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 90.04,
+"b": 96.22,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page2",
+"tab": "PAGE 2",
+"t": 90.84
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 96.22,
+"b": 103.026,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 103.026,
+"b": 109.832,
+"k": "img/ofmuffin/basement_kitchen.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 109.832,
+"b": 116.638,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 116.638,
+"b": 123.444,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "hec_cafeteria",
+"vid": true,
+"cap": "1951 · a food service kitchen, trays and steam",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 123.444,
+"b": 130.25,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 130.25,
+"b": 136.86,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 136.86,
+"b": 143.47,
+"k": "img/ofmuffin/empty_muffin_tin.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 143.47,
+"b": 150.08,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 150.08,
+"b": 156.69,
+"k": "img/ofmuffin/freezer_bags_meatloaf.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 156.69,
+"b": 163.165,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 163.165,
+"b": 169.64,
+"k": "img/ofmuffin/half_egg_hands.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 169.64,
+"b": 176.115,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 176.115,
+"b": 182.59,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_wrap_345b",
+"vid": true,
+"cap": "1940s · a package sealed for the freezer",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 182.59,
+"b": 190.418,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 190.418,
+"b": 198.245,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_pack_450",
+"vid": true,
+"cap": "1940s · meat wrapped in paper for the freezer",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 198.245,
+"b": 206.072,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 206.072,
+"b": 213.9,
+"k": "img/ofmuffin/chicken_thighs_bag.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 213.9,
+"b": 222.16,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page44",
+"tab": "RECIPE 35",
+"t": 214.7
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 222.16,
+"b": 230.677,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "YOU'LL NEED",
+"items": [
+{
+"t": 223.36,
+"txt": "Two pounds ground beef"
+},
+{
+"t": 224.94,
+"txt": "One cup quick oats"
+},
+{
+"t": 226.52,
+"txt": "Two eggs, half a cup of milk"
+},
+{
+"t": 228.1,
+"txt": "Topping: ketchup, brown sugar, mustard"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 230.677,
+"b": 239.193,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "YOU'LL NEED",
+"items": [
+{
+"t": 231.88,
+"txt": "Two pounds ground beef"
+},
+{
+"t": 233.46,
+"txt": "One cup quick oats"
+},
+{
+"t": 235.03,
+"txt": "Two eggs, half a cup of milk"
+},
+{
+"t": 236.61,
+"txt": "Topping: ketchup, brown sugar, mustard"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 239.193,
+"b": 247.71,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 247.71,
+"b": 257.235,
+"k": "img/ofmuffin/greased_tin.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 257.235,
+"b": 266.76,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 266.76,
+"b": 273.955,
+"k": "img/ofmuffin/mixing_meat.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 273.955,
+"b": 281.15,
+"k": "img/ofmuffin/mixing_meat.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 281.15,
+"b": 292.49,
+"k": "img/ofmuffin/topping_on_cups.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 292.49,
+"b": 299.643,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 299.643,
+"b": 306.797,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 375,
+"unit": "°F",
+"txt": "25 TO 30 MIN",
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 306.797,
+"b": 313.95,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_packing_600",
+"vid": true,
+"cap": "1940s · packed portions going into the freezer",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 313.95,
+"b": 322.08,
+"k": "img/ofmuffin/freezer_label.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 322.08,
+"b": 330.21,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_wrap_345",
+"vid": true,
+"cap": "1940s · a package sealed for the freezer",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 330.21,
+"b": 339.51,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page44",
+"tab": "RECIPE 35",
+"t": 331.01
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 339.51,
+"b": 348.81,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page44",
+"tab": "RECIPE 35",
+"t": 340.31
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 348.81,
+"b": 356.3,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "freezer_bags_meatloaf",
+"txt": "TOO DRY",
+"at2": 351.31
+}
+},
+{
+"a": 356.3,
+"b": 363.79,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 363.79,
+"b": 372.16,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 372.16,
+"b": 380.53,
+"k": "img/ofmuffin/empty_chair_table.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 380.53,
+"b": 388.9,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 388.9,
+"b": 395.67,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page45",
+"tab": "RECIPE 36",
+"t": 389.7
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 395.67,
+"b": 402.44,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page45",
+"tab": "RECIPE 36",
+"t": 396.47
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 402.44,
+"b": 409.29,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "EGG CUPS",
+"items": [
+{
+"t": 403.64,
+"txt": "Ten eggs, half a cup of milk"
+},
+{
+"t": 405.19,
+"txt": "One cup ham, sausage or vegetables"
+},
+{
+"t": 406.74,
+"txt": "Half a cup of shredded cheese"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 409.29,
+"b": 416.14,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "EGG CUPS",
+"items": [
+{
+"t": 410.49,
+"txt": "Ten eggs, half a cup of milk"
+},
+{
+"t": 412.04,
+"txt": "One cup ham, sausage or vegetables"
+},
+{
+"t": 413.59,
+"txt": "Half a cup of shredded cheese"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 416.14,
+"b": 422.99,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 422.99,
+"b": 431.41,
+"k": "img/ofmuffin/ham_in_cups.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 431.41,
+"b": 439.83,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 439.83,
+"b": 446.0,
+"k": "img/ofmuffin/pour_eggs.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 446.0,
+"b": 452.17,
+"k": "img/ofmuffin/pour_eggs.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 452.17,
+"b": 462.895,
+"k": "img/ofmuffin/egg_cups_baked.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 462.895,
+"b": 473.62,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 473.62,
+"b": 480.515,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "freezer_bags_meatloaf",
+"txt": "RUBBERY",
+"at2": 476.12
+}
+},
+{
+"a": 480.515,
+"b": 487.41,
+"k": "img/ofmuffin/egg_cups_closeup.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 487.41,
+"b": 494.347,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "homeec_kitchen_women",
+"vid": true,
+"cap": "1951 · women cooking in a home kitchen",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 494.347,
+"b": 501.283,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 501.283,
+"b": 508.22,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "bd_kitchen_185",
+"vid": true,
+"cap": "1949 · cooks in a kitchen, a window and the sink",
+"credit": "Brighter Day in Your Kitchen (1949) · Public domain"
+}
+},
+{
+"a": 508.22,
+"b": 519.96,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "freezer_bags_meatloaf",
+"t": 509.22
+}
+},
+{
+"a": 519.96,
+"b": 526.805,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page46",
+"tab": "RECIPE 37",
+"t": 520.76
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 526.805,
+"b": 533.65,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page46",
+"tab": "RECIPE 37",
+"t": 527.6
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 533.65,
+"b": 540.143,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "MAC AND CHEESE CUPS",
+"items": [
+{
+"t": 534.85,
+"txt": "Two cups elbow macaroni, cooked"
+},
+{
+"t": 536.28,
+"txt": "Two tablespoons butter, flour, a cup and a half of milk"
+},
+{
+"t": 537.71,
+"txt": "Two cups cheddar, one egg, crumbs"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 540.143,
+"b": 546.637,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "MAC AND CHEESE CUPS",
+"items": [
+{
+"t": 541.34,
+"txt": "Two cups elbow macaroni, cooked"
+},
+{
+"t": 542.77,
+"txt": "Two tablespoons butter, flour, a cup and a half of milk"
+},
+{
+"t": 544.21,
+"txt": "Two cups cheddar, one egg, crumbs"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 546.637,
+"b": 553.13,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 553.13,
+"b": 560.62,
+"k": "img/ofmuffin/cheese_sauce.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 560.62,
+"b": 568.11,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 568.11,
+"b": 575.7,
+"k": "img/ofmuffin/egg_into_macaroni.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 575.7,
+"b": 583.29,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 583.29,
+"b": 589.92,
+"k": "img/ofmuffin/crumbs_on_cups.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 589.92,
+"b": 596.55,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 596.55,
+"b": 605.58,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Ten full minutes.",
+"Then they lift clean."
+],
+"sig": "Loretta",
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 605.58,
+"b": 614.61,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 614.61,
+"b": 621.99,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "freezer_bags_meatloaf",
+"txt": "TOO THIN",
+"at2": 617.11
+}
+},
+{
+"a": 621.99,
+"b": 629.37,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 629.37,
+"b": 640.385,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "homeec_kitchen_mixer",
+"vid": true,
+"cap": "1951 · a kitchen mixer on the counter",
+"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+}
+},
+{
+"a": 640.385,
+"b": 651.4,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 651.4,
+"b": 660.97,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page49",
+"tab": "RECIPE 40",
+"t": 652.2
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 660.97,
+"b": 671.757,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "LITTLE PUMPKIN PIES",
+"items": [
+{
+"t": 662.17,
+"txt": "One refrigerated pie crust"
+},
+{
+"t": 665.03,
+"txt": "One cup canned pumpkin, a third cup sugar"
+},
+{
+"t": 667.89,
+"txt": "One egg, half a cup evaporated milk, spice"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 671.757,
+"b": 677.15,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 677.15,
+"b": 687.02,
+"k": "img/ofmuffin/pie_crust_glass.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 687.02,
+"b": 696.89,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 696.89,
+"b": 704.37,
+"k": "img/ofmuffin/pumpkin_filling.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 704.37,
+"b": 711.85,
+"k": "img/ofmuffin/pumpkin_filling.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 711.85,
+"b": 718.97,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 718.97,
+"b": 726.09,
+"k": "img/ofmuffin/pies_in_tin.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 726.09,
+"b": 732.52,
+"k": "img/ofmuffin/give_two_pies.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 732.52,
+"b": 738.95,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 738.95,
+"b": 747.08,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page48",
+"tab": "PAGE 48",
+"t": 739.75
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 747.08,
+"b": 755.21,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 755.21,
+"b": 763.34,
+"k": "img/ofmuffin/bread_cubes.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 763.34,
+"b": 773.125,
+"k": "img/ofmuffin/stuffing_foil_cup.png",
+"z": [
+1.08,
+1.0
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 773.125,
+"b": 782.91,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 782.91,
+"b": 789.85,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "freezer_bags_meatloaf",
+"txt": "SOGGY",
+"at2": 785.41
+}
+},
+{
+"a": 789.85,
+"b": 796.79,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 796.79,
+"b": 804.42,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_packing_630",
+"vid": true,
+"cap": "1940s · packaged portions on the work table",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 804.42,
+"b": 812.05,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 812.05,
+"b": 819.68,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 14,
+"unit": "",
+"txt": "SUPPERS PER SHOPPING TRIP",
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 819.68,
+"b": 825.312,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_kitchen_900",
+"vid": true,
+"cap": "1940s · a woman cooking at a home stove",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 825.312,
+"b": 830.945,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 830.945,
+"b": 842.21,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE FREEZER PLAN",
+"items": [
+{
+"t": 832.15,
+"txt": "Week one: meatloaves and soup"
+},
+{
+"t": 836.68,
+"txt": "Week two: salsa chicken and egg cups"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 842.21,
+"b": 853.31,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_boxes_540",
+"vid": true,
+"cap": "1940s · packed boxes going into the freezer",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 853.31,
+"b": 864.41,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 864.41,
+"b": 873.643,
+"k": "",
+"c": "PageUp",
+"props": {
+"pages": [
+{
+"src": "page50",
+"tab": "PAGE 50",
+"t": 865.21
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 873.643,
+"b": 882.877,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 882.877,
+"b": 892.11,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fl_kitchen_690",
+"vid": true,
+"cap": "1940s · a woman sits down to a small meal",
+"credit": "Frozen Food Locker (1940s) · Public domain"
+}
+},
+{
+"a": 892.11,
+"b": 899.695,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "TODAY",
+"items": [
+{
+"t": 893.31,
+"txt": "Twelve little meatloaves"
+},
+{
+"t": 895.11,
+"txt": "Egg cups, mac and cheese cups"
+},
+{
+"t": 896.9,
+"txt": "Six little pumpkin pies"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 899.695,
+"b": 907.28,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "TODAY",
+"items": [
+{
+"t": 900.9,
+"txt": "Twelve little meatloaves"
+},
+{
+"t": 902.69,
+"txt": "Egg cups, mac and cheese cups"
+},
+{
+"t": 904.49,
+"txt": "Six little pumpkin pies"
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 907.28,
+"b": 914.865,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 914.865,
+"b": 922.45,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "bd_pie_150",
+"vid": true,
+"cap": "1949 · a pie cooling on a rack",
+"credit": "Brighter Day in Your Kitchen (1949) · Public domain"
+}
+},
+{
+"a": 922.45,
+"b": 931.3,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "freezer_bags_meatloaf",
+"t": 923.45
+}
+},
+{
+"a": 931.3,
+"b": 940.15,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 940.15,
+"b": 947.82,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "What supper are you tired of cooking?",
+"opts": [
+{
+"txt": "For one",
+"t": 942.15
+}
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 947.82,
+"b": 955.49,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 955.49,
+"b": 962.815,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ofmuffin/th_next.jpg",
+"tag": "COMING UP",
+"words": [
+[
+"12",
+956.09
+],
+[
+"Foil-Packet",
+957.24
+],
+[
+"Suppers",
+958.38
+],
+[
+"for",
+959.53
+],
+[
+"One",
+960.67
+]
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 962.815,
+"b": 970.14,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 970.14,
+"b": 977.035,
+"k": "",
+"c": "Thumb",
+"props": {
+"thumb": "img/ofmuffin/th_other.jpg",
+"tag": "FROM MY OTHER CHANNEL",
+"words": [
+[
+"7",
+970.74
+],
+[
+"Things",
+971.33
+],
+[
+"Widows",
+971.92
+],
+[
+"Should",
+972.5
+],
+[
+"Never",
+973.09
+],
+[
+"Do",
+973.68
+],
+[
+"the",
+974.27
+],
+[
+"First",
+974.86
+],
+[
+"Year",
+975.45
+]
+],
+"k": "freezer_bags_meatloaf"
+}
+},
+{
+"a": 977.035,
+"b": 983.93,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 983.93,
+"b": 993.05,
+"k": "img/ofmuffin/bless_table.png",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+}
+],
+"sfx": [],
+"end": 993.05
+}
