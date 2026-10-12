@@ -357,11 +357,7 @@ export const QrCard: P<{ k: string; t: number }> = ({ a, d, k, t }) => {
       <Bed k={k} f={f} T={d} dim={0.5} />
       <div style={{ position: "absolute", left: 640, top: 540, translate: "-50% -50%", transform: `perspective(1600px) rotateY(${18 - 10 * cam}deg) translateY(${(1 - b) * 600}px) rotateZ(-3deg)` }}>
         <div style={{ width: 520, height: 674, borderRadius: 6, boxShadow: "0 60px 110px rgba(0,0,0,0.6)", background: "#f6efe2", border: "10px solid #5b2a4a", boxSizing: "border-box", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 40, textAlign: "center", fontFamily: "Georgia, serif", color: "#3b1f33" }}>
-          <div style={{ fontSize: 30, letterSpacing: 4, textTransform: "uppercase", color: "#7a4a6a" }}>Fifty-Two</div>
-          <div style={{ fontSize: 66, fontWeight: 700, lineHeight: 1.05, margin: "18px 0" }}>Sunday Mornings</div>
-          <div style={{ fontSize: 34, fontStyle: "italic" }}>with Loretta</div>
-          <div style={{ width: 120, height: 3, background: "#5b2a4a", margin: "34px 0" }} />
-          <div style={{ fontSize: 26, lineHeight: 1.35 }}>A verse, a story and a prayer for every week of the year</div>
+          <Img src={img("img/ofgrocery/page1.png")} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: 6 }} />
         </div>
       </div>
       <div style={{ position: "absolute", left: 1330, top: 520, translate: "-50% -50%", opacity: q, transform: `scale(${(0.7 + 0.3 * q) * pulse}) rotate(2deg)` }}>
