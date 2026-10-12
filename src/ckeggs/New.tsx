@@ -226,75 +226,164 @@ export const PrayerLines: P<{ k: string; lines: { t: number; txt: string }[]; he
 };
 
 
-// ── HEROES (UPDATE 5, 11-oct): primeros 60 s con componentes propios, cada beat en su palabra ──
-export const HeroPlatter: P<{ k: string; eggs: number[]; big: string; bigT: number; timerT: number }> = ({ a, d, k, eggs, big, bigT, timerT }) => {
-  const { f, at } = useT(a);
-  const par = (f / Math.max(1, d)) * -26; // paralaje: la bandeja se corre contra el fondo
-  const bigU = sp(f, at(bigT), 12, 170), bigS = 0.9 + 0.1 * bigU;
-  const tf = Math.max(0, f - at(timerT)); const secs = Math.max(0, 120 - Math.floor(tf / 30));
-  const tim = sp(f, at(timerT), 14, 150);
-  const mm = Math.floor(secs / 60), ss = String(secs % 60).padStart(2, "0");
-  return (
-    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#15110c" }}>
-      <AbsoluteFill style={{ transform: `scale(${1.08 + 0.06 * f / Math.max(1, d)})`, filter: "blur(4px) brightness(0.6) saturate(1.1)" }}>
-        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-      </AbsoluteFill>
-      <div style={{ position: "absolute", left: 960, top: 540, width: 1320, height: 600, translate: "-50% -50%", transform: `translateX(${par}px)`, borderRadius: "50%",
-        background: "radial-gradient(ellipse at 50% 40%, #ffffff 0%, #f7f4ec 46%, #d9d2c3 78%, #b9b0a0 100%)", border: "14px solid rgba(255,255,255,0.85)", boxShadow: "0 60px 110px rgba(0,0,0,0.6), 0 0 0 4px rgba(255,255,255,0.25), inset 0 -22px 46px rgba(120,100,70,0.3)" }}>
-        {eggs.map((et, i) => {
-          const u = sp(f, at(et), 13, 180); const col = i % 6, row = Math.floor(i / 6);
-          const x = 200 + col * 185, y = 170 + row * 190;
-          return (
-            <div key={i} style={{ position: "absolute", left: x, top: y, width: 168, height: 110, borderRadius: "50%", opacity: cl(u * 1.6),
-              transform: `translateY(${(1 - u) * -90}px) scale(${0.3 + 0.7 * u})`, background: "radial-gradient(circle at 50% 42%, #ffffff 0%, #fbf8f1 66%, #e2d9c8 100%)", boxShadow: "0 16px 26px rgba(60,40,20,0.36)" }}>
-              <div style={{ position: "absolute", left: 51, top: 22, width: 66, height: 66, borderRadius: "50%", background: "radial-gradient(circle at 45% 40%, #fff09a, #eab43a 78%)", boxShadow: "inset 0 -4px 8px rgba(160,100,20,0.35)" }} />
-              <div style={{ position: "absolute", left: 76, top: 47, width: 10, height: 10, borderRadius: "50%", background: "#c25a1e", opacity: 0.75 }} />
-            </div>
-          );
-        })}
-      </div>
-      <div style={{ position: "absolute", left: 960, bottom: 118, translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 168, color: C.porc, textShadow: shadowTxt, letterSpacing: -2,
-        opacity: cl(bigU * 1.4), transform: `scale(${bigS})`, whiteSpace: "nowrap" }}>{big}</div>
-      <div style={{ position: "absolute", right: 110, top: 96, opacity: cl(tim * 1.3), transform: `translateY(${(1 - tim) * -30}px)` }}>
-        <Chip txt={`${mm}:${ss}`} size={96} bg="#FFFDF4" color={C.red} rot={3} font={SERIF} ls={1} />
-      </div>
-      <Grade warm={1.2} vig={0.42} />
-      <Grain />
-    </AbsoluteFill>
-  );
+// ── HEROES minuto 1 (Claude, 12-oct): fotos reales en capas, cámara continua, cada beat en su palabra ──
+// cámara: lleva el punto (px,py) del lienzo 1920x1080 al centro de pantalla con escala s
+type Cam = { t: number; s: number; x: number; y: number };
+const camAt = (f: number, at: (t: number) => number, K: Cam[], dur = 1.1) => {
+  let c = K[0];
+  for (let i = 1; i < K.length; i++) {
+    const p = c, q = K[i], u = ez((f - at(q.t)) / (dur * 30));
+    if (f >= at(q.t)) c = { t: q.t, s: p.s + (q.s - p.s) * u, x: p.x + (q.x - p.x) * u, y: p.y + (q.y - p.y) * u };
+  }
+  return c;
 };
+const camStyle = (c: Cam): React.CSSProperties => ({ transformOrigin: "0 0", transform: `translate(${960 - c.x * c.s}px, ${540 - c.y * c.s}px) scale(${c.s})` });
 
-export const HeroCard: P<{ k: string; head: string; page: string; stamp: { t: number; txt: string }; lines: { t: number; txt: string }[]; hd: number }> = ({ a, d, k, head, page, stamp, lines, hd }) => {
+// 10-22 s: la mesa larga del sótano con las bandejas → círculo en la primera bandeja → zoom a través al huevo macro → reloj 2:00 que corre de verdad
+export const FirstPlate: P<{ table: string; macro: string; circ: number; why: number; cut: number; timer: number }> = ({ a, d, table, macro, circ, why, cut, timer }) => {
   const { f, at } = useT(a);
-  const drift = (f / Math.max(1, d)) * 16;
-  const hu = sp(f, at(hd), 14, 150);
-  const st = sp(f, at(stamp.t), 9, 260), sS = 1.7 - 0.7 * st;
+  const fc = at(cut), PP = 12;
+  const out = ez((f - fc) / PP); // zoom a través
+  const tS = (1.02 + 0.13 * cl(f / Math.max(1, fc))) * (1 + 1.6 * out);
+  const mIn = ez((f - fc + 4) / PP);
+  const mS = 1.28 - 0.28 * mIn + 0.1 * cl((f - fc) / Math.max(1, d - fc));
+  const w = sp(f, at(why), 15, 150);
+  const tu = sp(f, at(timer), 14, 140);
+  const el = Math.max(0, (f - at(timer)) / 30), secs = Math.max(0, 120 - Math.floor(el));
+  const R = 150, L = 2 * Math.PI * R;
   return (
-    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#15110c" }}>
-      <AbsoluteFill style={{ transform: `scale(${1.06 + 0.06 * f / Math.max(1, d)})`, filter: "blur(12px) brightness(0.4) saturate(1.05)" }}>
-        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-      </AbsoluteFill>
-      <div style={{ position: "absolute", left: 960, top: 540, width: 1240, translate: "-50% -50%", transform: `translateY(${-drift}px) rotate(-1.2deg)`,
-        background: "linear-gradient(180deg, #fffdf6 0%, #f8f0dc 100%)", borderRadius: 6, padding: "52px 64px 60px", boxShadow: "0 50px 90px rgba(0,0,0,0.55)", color: C.ink }}>
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", opacity: cl(hu * 1.5) }}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 70, color: C.ink, clipPath: `inset(0 ${(1 - hu) * 100}% 0 0)` }}>{head}</div>
-          <Chip txt={page} size={38} bg={C.red} color="#fff" rot={3} />
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#100c08" }}>
+      {f < fc + PP ? (
+        <AbsoluteFill style={{ transform: `scale(${tS})`, transformOrigin: "50% 62%", filter: out > 0.02 ? `blur(${14 * out}px)` : undefined, opacity: 1 - out * 0.6 }}>
+          <Img src={img(table)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          <Mark kind="circle" x={700} y={540} w={520} h={250} f={f} at={at(circ)} dur={12} sw={10} />
+        </AbsoluteFill>
+      ) : null}
+      {f < fc + PP ? (
+        <div style={{ position: "absolute", left: 110, top: 96, opacity: cl(w * 1.4) * (1 - out), transform: `translateY(${(1 - w) * 24}px) rotate(-2deg)` }}>
+          <div style={{ background: "#F3E7CC", padding: "22px 40px 26px", boxShadow: "0 24px 50px rgba(0,0,0,0.45)", fontFamily: HAND, fontSize: 78, color: C.ink, lineHeight: 1.05 }}>
+            Nobody could tell me why.
+          </div>
         </div>
-        <div style={{ height: 3, background: C.ink, margin: "44px 0 40px", transformOrigin: "left", transform: `scaleX(${hu})` }} />
-        {lines.map((x, i) => {
-          const u = sp(f, at(x.t), 16, 170);
-          return (
-            <div key={i} style={{ fontFamily: HAND, fontSize: 60, lineHeight: 1.45, color: C.ink, clipPath: `inset(0 ${(1 - u) * 100}% 0 0)`, opacity: cl(u * 2) }}>{x.txt}</div>
-          );
-        })}
-      </div>
-      <div style={{ position: "absolute", left: 1290, top: 790, transform: `translate(-50%,-50%) rotate(-8deg) scale(${sS})`, opacity: cl(st * 2.2),
-        border: `8px solid ${C.red}`, borderRadius: 10, padding: "14px 28px", background: "rgba(255,253,244,0.0)", fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: C.red,
-        textShadow: "0 4px 16px rgba(0,0,0,0.35)", whiteSpace: "nowrap", letterSpacing: 1 }}>{stamp.txt}</div>
-      <Grade warm={1.2} vig={0.42} />
+      ) : null}
+      {f >= fc - 4 ? (
+        <AbsoluteFill style={{ opacity: mIn }}>
+          <AbsoluteFill style={{ transform: `scale(${mS})`, transformOrigin: "42% 50%", filter: mIn < 0.98 ? `blur(${12 * (1 - mIn)}px)` : undefined }}>
+            <Img src={img(macro)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          </AbsoluteFill>
+          <AbsoluteFill style={{ background: `linear-gradient(90deg, rgba(0,0,0,0) 45%, rgba(16,11,7,${0.62 * cl(tu * 1.2)}) 78%)` }} />
+          <div style={{ position: "absolute", right: 150, top: 540, translate: "0 -50%", width: 420, display: "flex", flexDirection: "column", alignItems: "center",
+            opacity: cl(tu * 1.3), transform: `scale(${0.85 + 0.15 * tu})` }}>
+            <div style={{ position: "relative", width: 2 * R + 40, height: 2 * R + 40 }}>
+              <svg width={2 * R + 40} height={2 * R + 40} style={{ position: "absolute", left: 0, top: 0, transform: "rotate(-90deg)", filter: "drop-shadow(0 10px 24px rgba(0,0,0,0.5))" }}>
+                <circle cx={R + 20} cy={R + 20} r={R} fill="rgba(251,248,242,0.10)" stroke="rgba(251,248,242,0.28)" strokeWidth={14} />
+                <circle cx={R + 20} cy={R + 20} r={R} fill="none" stroke="#F2C94C" strokeWidth={14} strokeLinecap="round" strokeDasharray={L} strokeDashoffset={L * (el / 120)} />
+              </svg>
+              <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 118, color: C.porc, textShadow: shadowTxt }}>
+                {Math.floor(secs / 60)}:{String(secs % 60).padStart(2, "0")}
+              </div>
+            </div>
+            <div style={{ marginTop: 26, fontFamily: LABEL, fontWeight: 700, fontSize: 46, letterSpacing: 8, color: C.porc, textShadow: shadowTxt }}>TWO MINUTES</div>
+          </div>
+        </AbsoluteFill>
+      ) : null}
+      <Grade warm={1.15} vig={0.4} />
       <Grain />
     </AbsoluteFill>
   );
 };
 
-export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines, HeroPlatter, HeroCard };
+// 28-38.6 s: "lo que hace todo el mundo": 4 fotos reales que caen en su verbo; la última (mayonesa encima) viene al centro, círculo en los grumos
+export const Everybody: P<{ bed: string; head: { t: number; txt: string }; cards: { k: string; t: number; lab: string }[]; focus: number; circ: number; note: { t: number; txt: string } }> = ({ a, d, bed, head, cards, focus, circ, note }) => {
+  const { f, at } = useT(a);
+  const hu = sp(f, at(head.t), 14, 160);
+  const fu = ez((f - at(focus)) / 24);
+  const nu = sp(f, at(note.t), 14, 150);
+  const W = 380, H = 285, G = 44, x0 = 960 - (4 * (W + 32) + 3 * G) / 2;
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#15110c" }}>
+      <Bed k={bed} f={f} T={d} dim={0.6} />
+      <div style={{ position: "absolute", left: 110, top: 90, opacity: cl(hu * 1.4) * (1 - fu), transform: `translateX(${(1 - hu) * -40}px)` }}>
+        <Chip txt={head.txt} size={50} bg="#FFFDF4" color={C.ink} rot={-1.5} />
+      </div>
+      {cards.map((c, i) => {
+        const u = sp(f, at(c.t), 13, 150);
+        const last = i === cards.length - 1;
+        const bx = x0 + i * (W + 32 + G), by = 330 + (i % 2) * 36;
+        const rot = [-3, 2.2, -1.6, 2.8][i % 4];
+        // foco: las tres primeras se corren y apagan; la última viene al centro y crece
+        const tx = last ? (960 - (W + 32) / 2 - bx) * fu : -260 * fu;
+        const ty = last ? (540 - (H + 56) / 2 - by) * fu : 0;
+        const sc = last ? 1 + 1.15 * fu : 1 - 0.1 * fu;
+        const op = last ? 1 : 1 - 0.85 * fu;
+        if (f < at(c.t) - 2) return null;
+        return (
+          <div key={i} style={{ position: "absolute", left: bx, top: by, opacity: cl(u * 2) * op, zIndex: last ? 5 : i,
+            transform: `translate(${tx}px, ${ty + (1 - u) * -140}px) rotate(${rot * (1 - fu * (last ? 1 : 0))}deg) scale(${sc * (0.9 + 0.1 * u)})` }}>
+            <Print k={c.k} w={W} h={H} f={f}>
+              {last ? <Mark kind="circle" x={W * 0.12} y={H * 0.18} w={W * 0.76} h={H * 0.7} f={f} at={at(circ)} dur={11} sw={5} /> : null}
+            </Print>
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: -64, textAlign: "center", opacity: cl(u * 1.5) * (last ? 1 - fu : 1) }}>
+              <Chip txt={c.lab} size={40} bg={last ? C.red : "#FFFDF4"} color={last ? "#fff" : C.ink} rot={-rot / 2} />
+            </div>
+          </div>
+        );
+      })}
+      <div style={{ position: "absolute", left: 960, bottom: 70, translate: "-50% 0", opacity: cl(nu * 1.4), transform: `translateY(${(1 - nu) * 30}px) rotate(-1.5deg)`, zIndex: 9,
+        fontFamily: HAND, fontSize: 92, color: C.porc, textShadow: shadowTxt, whiteSpace: "nowrap" }}>{note.txt}</div>
+      <Grade warm={1.1} vig={0.42} />
+      <Grain />
+    </AbsoluteFill>
+  );
+};
+
+// 38.6-56 s: arranca DENTRO de la foto de la página 20 y se abre la cámara hasta ver el libro; el truco tapado con un papelito; zoom a los ingredientes que se marcan
+export const PageTwenty: P<{ k: string; bed: string; reveal: number; step: number; recipe: number; tab: number; amounts: number; back: number }> = ({ a, d, k, bed, reveal, step, recipe, tab, amounts, back }) => {
+  const { f, at } = useT(a);
+  const PW = 757, PH = 980, PL = 582, PT = 50, sc = PH / 1650;
+  const ING = [739, 777, 812, 850, 885, 923, 960, 996];
+  const ingC = { x: PL + 280 * sc, y: PT + 868 * sc };
+  const K: Cam[] = [
+    { t: a, s: 2.5, x: 960, y: PT + 128 },
+    { t: reveal - 1.6, s: 2.36, x: 960, y: PT + 132 },
+    { t: reveal, s: 1, x: 960, y: 540 },
+    { t: recipe, s: 1.95, x: ingC.x + 30, y: ingC.y },
+    { t: back, s: 1.04, x: 960, y: 548 },
+  ];
+  const drift = 1 + 0.02 * Math.sin(f / 90);
+  const c = camAt(f, at, K, 1.3);
+  const nu = sp(f, at(step), 8, 220);
+  const tb = sp(f, at(tab), 13, 180);
+  const pd = cl((f - at(reveal)) / 40);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#15110c" }}>
+      <Bed k={bed} f={f} T={d} dim={0.55} />
+      <AbsoluteFill style={camStyle({ ...c, s: c.s * drift })}>
+        <div style={{ position: "absolute", left: PL, top: PT, width: PW, height: PH, transform: `rotate(${-1.2 * pd}deg)`, boxShadow: `0 ${50 * pd}px ${100 * pd}px rgba(0,0,0,${0.6 * pd})`, background: "#fff" }}>
+          <Img src={img(k)} style={{ width: "100%", height: "100%" }} />
+          {/* no se adelanta el truco: subtítulo y paso 6 desenfocados, el recuadro del truco tapado */}
+          <div style={{ position: "absolute", left: 50, top: 568 * sc, width: 640, height: 44 * sc, backdropFilter: "blur(7px)", WebkitBackdropFilter: "blur(7px)", background: "rgba(249,244,233,0.35)" }} />
+          <div style={{ position: "absolute", left: 300, top: 996 * sc, width: 420, height: 34 * sc, backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)", background: "rgba(249,244,233,0.35)" }} />
+          {ING.map((y, i) => {
+            const u = lin(f, at(amounts) + i * 7, at(amounts) + i * 7 + 10, 0, 1);
+            return <div key={i} style={{ position: "absolute", left: 50, top: (y - 19) * sc, height: 30 * sc, width: 232 * u, background: "rgba(255,214,60,0.5)", mixBlendMode: "multiply", borderRadius: 4 }} />;
+          })}
+          <div style={{ position: "absolute", left: 48, top: 1108 * sc, width: 660, height: 156 * sc, background: "linear-gradient(170deg,#E9D3A6,#D9BD86)", boxShadow: "0 10px 22px rgba(0,0,0,0.35)",
+            transform: `rotate(${-1.5 + (f > at(step) ? 2.5 * Math.sin(Math.min(1, (f - at(step)) / 14) * Math.PI) : 0)}deg) scale(${1 + 0.06 * nu - 0.06 * cl((f - at(step) - 12) / 10)})`,
+            display: "flex", alignItems: "center", justifyContent: "center", gap: 26 }}>
+            <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 30, letterSpacing: 5, color: C.ink }}>THE ONE STEP</div>
+            <div style={{ fontFamily: HAND, fontSize: 34, color: C.red }}>coming up…</div>
+          </div>
+          <Mark kind="circle" x={20} y={1090 * sc} w={716} h={196 * sc} f={f} at={at(step) + 8} dur={12} sw={6} />
+          <div style={{ position: "absolute", right: -46, top: 70, opacity: tb, transform: `translateX(${(1 - tb) * -60}px) rotate(5deg)` }}>
+            <Chip txt="PAGE 20" size={40} bg={C.red} color="#fff" rot={0} />
+          </div>
+        </div>
+      </AbsoluteFill>
+      <Grade warm={1.1} vig={0.4} />
+      <Grain />
+    </AbsoluteFill>
+  );
+};
+
+export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines, FirstPlate, Everybody, PageTwenty };

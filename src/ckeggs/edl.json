@@ -1,1301 +1,1320 @@
 {
-"shots": [
-{
-"a": 0.0,
-"b": 3.8,
-"k": "img/ckeggs/ckeggs_thumb.jpg",
-"vid": false,
-"z": [
-1.0,
-1.05
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 3.8,
-"b": 10.0,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 10.0,
-"b": 22.0,
-"k": "",
-"c": "HeroPlatter",
-"props": {
-"k": "img/ckeggs/n_egg_carton.png",
-"eggs": [
-10.53,
-11.37,
-11.67,
-12.03,
-12.37,
-12.55,
-12.83,
-13.47,
-13.85,
-14.11,
-14.33,
-14.55
-],
-"big": "TWO MINUTES.",
-"bigT": 16.03,
-"timerT": 16.35
-}
-},
-{
-"a": 22,
-"b": 38,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 38.0,
-"b": 56.0,
-"k": "",
-"c": "HeroCard",
-"props": {
-"k": "img/ckeggs/n_cold_table.png",
-"head": "CHURCH POTLUCK DEVILED EGGS",
-"page": "PAGE 20",
-"hd": 40.81,
-"stamp": {
-"t": 42.19,
-"txt": "THE ONE STEP NOBODY TAKES"
-},
-"lines": [
-{
-"t": 49.37,
-"txt": "Every amount, written out"
-},
-{
-"t": 50.41,
-"txt": "So you can make it at home"
-}
-]
-}
-},
-{
-"a": 56,
-"b": 70,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 70.0,
-"b": 81.0,
-"k": "img/ckeggs/n_pot_simmer.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 81.0,
-"b": 92.0,
-"k": "img/ckeggs/l_basement_table.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 92,
-"b": 106,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 106.0,
-"b": 116.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ph_door",
-"vid": false,
-"cap": "a woman at a wood cookstove in a farm kitchen, 1940s",
-"credit": "Farm Security Administration (1940s) · Public domain"
-}
-},
-{
-"a": 116.0,
-"b": 126.0,
-"k": "img/ckeggs/n_ice_bowl.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 126,
-"b": 140,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 140.0,
-"b": 148.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ar_dining_hall_1950s",
-"vid": true,
-"cap": "1950s dining hall: a long line of plates and serving trays",
-"credit": "Hotel and Restaurant Workers (1950s) · Public domain"
-}
-},
-{
-"a": 148.0,
-"b": 162.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ph_grace1942",
-"vid": false,
-"cap": "a family bows their heads before dinner, 1942",
-"credit": "Office of War Information (1942) · Public domain"
-}
-},
-{
-"a": 162,
-"b": 176,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 176.0,
-"b": 184.0,
-"k": "img/ckeggs/l_mother_carrier.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 184.0,
-"b": 192.0,
-"k": "img/ckeggs/n_yolk_paste.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 192,
-"b": 206,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 206.0,
-"b": 214.0,
-"k": "img/ckeggs/n_pickle_jar.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 214.0,
-"b": 232.0,
-"k": "",
-"c": "Checklist",
-"props": {
-"head": "WHAT PEOPLE GET WRONG",
-"k": "img/ckeggs/n_halves_platter.png",
-"items": [
-{
-"t": 214,
-"txt": "Eggs too fresh to peel"
-},
-{
-"t": 220,
-"txt": "Boiled too hard, grey ring"
-},
-{
-"t": 226,
-"txt": "Mayonnaise before the seasoning"
-}
-]
-}
-},
-{
-"a": 232.0,
-"b": 246.0,
-"k": "img/ckeggs/n_white_boats.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 246,
-"b": 258,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 258.0,
-"b": 266.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ar_t_chickens",
-"vid": true,
-"cap": "hens in a 1952 farm film",
-"credit": "Texas Farm Family (1952) · Public domain"
-}
-},
-{
-"a": 266.0,
-"b": 270.0,
-"k": "img/ckeggs/n_cutting_board.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 270.0,
-"b": 299.0,
-"k": "",
-"c": "StepCard",
-"props": {
-"page": "20",
-"head": "CHURCH POTLUCK DEVILED EGGS",
-"steps": [
-{
-"t": 271.95,
-"txt": "Low boil, 12 minutes",
-"k": "img/ckeggs/l_boil_pot.png"
-},
-{
-"t": 284,
-"txt": "Straight into ice water, 10 minutes",
-"k": "img/ckeggs/n_kitchen_timer.png"
-}
-]
-}
-},
-{
-"a": 299.0,
-"b": 309.0,
-"k": "img/ckeggs/l_ice_bowl.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 309.0,
-"b": 320.0,
-"k": "img/ckeggs/n_egg_carrier.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 320.0,
-"b": 331.0,
-"k": "img/ckeggs/n_cooler_ice.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 331.0,
-"b": 338.0,
-"k": "img/ckeggs/l_peel.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 338,
-"b": 350,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 350.0,
-"b": 358.0,
-"k": "img/ckeggs/n_mustard_spoon.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 358.0,
-"b": 366.0,
-"k": "img/ckeggs/n_mayo_swirl.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 366,
-"b": 380,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 380.0,
-"b": 390.0,
-"k": "img/ckeggs/l_halve.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 390.0,
-"b": 396.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ar_cooking_girls",
-"vid": true,
-"cap": "a cooking class, 1951: a cook stirring at the counter",
-"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
-}
-},
-{
-"a": 396,
-"b": 410,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 410.0,
-"b": 418.0,
-"k": "img/ckeggs/n_mash_bowl.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 418.0,
-"b": 426.0,
-"k": "img/ckeggs/n_window_light.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 426,
-"b": 440,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 440.0,
-"b": 449.0,
-"k": "img/ckeggs/l_wait_clock.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 449.0,
-"b": 458.0,
-"k": "img/ckeggs/n_sugar_jar.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 458,
-"b": 470,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 470.0,
-"b": 479.0,
-"k": "img/ckeggs/n_fridge_shelf.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 479.0,
-"b": 495.0,
-"k": "",
-"c": "PageUp",
-"props": {
-"pages": [
-{
-"src": "img/ckeggs/page20.png",
-"tab": "PAGE 20",
-"t": 479.0,
-"hl": 40
-}
-],
-"k": "img/ckeggs/n_paper_plates.png"
-}
-},
-{
-"a": 495.0,
-"b": 503.0,
-"k": "img/ckeggs/l_mayo_spoon.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 503.0,
-"b": 512.0,
-"k": "img/ckeggs/l_taste_spoon.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 512,
-"b": 524,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 524.0,
-"b": 532.0,
-"k": "img/ckeggs/n_salt_pepper.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 532.0,
-"b": 538.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ar_reading_book_1951",
-"vid": true,
-"cap": "a woman reading at a table, 1951",
-"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
-}
-},
-{
-"a": 538,
-"b": 552,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 552.0,
-"b": 568.0,
-"k": "",
-"c": "MistakeStamp",
-"props": {
-"k": "img/ckeggs/n_dill_sprigs.png",
-"txt": "Grey-green ring: cooked too long",
-"cx": 50,
-"cy": 70
-}
-},
-{
-"a": 568.0,
-"b": 578.0,
-"k": "img/ckeggs/n_church_kitchen.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 578,
-"b": 592,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 592.0,
-"b": 604.0,
-"k": "img/ckeggs/l_danny_table.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 604.0,
-"b": 618.0,
-"k": "",
-"c": "Memory",
-"props": {
-"k": "img/ckeggs/n_apron_hook.png",
-"caption": "Danny, asking for the first egg at Easter",
-"date": "EASTER"
-}
-},
-{
-"a": 618.0,
-"b": 628.0,
-"k": "img/ckeggs/n_pack_container.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 628.0,
-"b": 636.0,
-"k": "img/ckeggs/n_bowl_cold_water.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 636,
-"b": 648,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 648.0,
-"b": 656.0,
-"k": "img/ckeggs/l_small_plate.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 656.0,
-"b": 664.0,
-"k": "img/ckeggs/n_coffee_urn.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 664,
-"b": 676,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 676.0,
-"b": 686.0,
-"k": "img/ckeggs/n_fridge_plate.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 686.0,
-"b": 704.0,
-"k": "",
-"c": "Checklist",
-"props": {
-"head": "SWAP IDEAS",
-"k": "img/ckeggs/n_colander_water.png",
-"items": [
-{
-"t": 689.79,
-"txt": "Quarter cup chopped ham"
-},
-{
-"t": 696.11,
-"txt": "Sweet pickle juice and relish"
-}
-]
-}
-},
-{
-"a": 704.0,
-"b": 711.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ar_kitchen_mixer",
-"vid": true,
-"cap": "a kitchen mixer and a bowl on the counter, 1951",
-"credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
-}
-},
-{
-"a": 711.0,
-"b": 718.0,
-"k": "img/ckeggs/n_egg_half_close.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 718,
-"b": 732,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 732.0,
-"b": 750.0,
-"k": "",
-"c": "Note",
-"props": {
-"lines": [
-"Loretta, you are going to have to make",
-"more eggs than the men can eat."
-],
-"sig": "Bernice",
-"k": "img/ckeggs/n_folded_paper_cloth.png",
-"size": 84
-}
-},
-{
-"a": 750,
-"b": 762,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 762.0,
-"b": 774.0,
-"k": "",
-"c": "QrCard",
-"props": {
-"k": "img/ckeggs/qr.jpg",
-"t": 756.11
-}
-},
-{
-"a": 774,
-"b": 786,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 786.0,
-"b": 802.0,
-"k": "",
-"c": "Thumb",
-"props": {
-"thumb": "img/ckeggs/th_other.jpg",
-"tag": "ANOTHER VIDEO",
-"words": [
-[
-"10",
-786
-],
-[
-"One-Pan",
-786.05
-],
-[
-"Suppers",
-782.68
-],
-[
-"for",
-779.64
-],
-[
-"Seniors",
-774.66
-],
-[
-"Living",
-775.08
-],
-[
-"Alone",
-775.36
-]
-],
-"k": "img/ckeggs/n_morning_table.png"
-}
-},
-{
-"a": 802,
-"b": 816,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 816.0,
-"b": 823.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ar_talk_woman",
-"vid": true,
-"cap": "a woman talking to the camera in a 1950 film",
-"credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
-}
-},
-{
-"a": 823.0,
-"b": 834.0,
-"k": "img/ckeggs/n_paprika_tin.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 834,
-"b": 846,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 846.0,
-"b": 860.0,
-"k": "",
-"c": "Checklist",
-"props": {
-"head": "THE WHOLE RECIPE",
-"k": "img/ckeggs/n_pass_window.png",
-"items": [
-{
-"t": 846,
-"txt": "Twelve eggs in a low boil"
-},
-{
-"t": 850,
-"txt": "Mash, then season the yolks"
-},
-{
-"t": 854,
-"txt": "Two minutes"
-},
-{
-"t": 858,
-"txt": "Mayonnaise, then chill"
-}
-]
-}
-},
-{
-"a": 860,
-"b": 874,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 874.0,
-"b": 882.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ph_grimm",
-"vid": false,
-"cap": "a family dinner table, 1943: plates, bowls and a centerpiece",
-"credit": "Office of War Information (1943) · Public domain"
-}
-},
-{
-"a": 882.0,
-"b": 890.0,
-"k": "img/ckeggs/n_spiral_book_closed.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 890,
-"b": 902,
-"k": "av",
-"av": true,
-"z": [
-1.0,
-1.04
-],
-"o": [
-50,
-34
-]
-},
-{
-"a": 902.0,
-"b": 916.0,
-"k": "",
-"c": "Thumb",
-"props": {
-"thumb": "img/ckeggs/th_next.jpg",
-"tag": "NEXT WEEK",
-"words": [
-[
-"The",
-899.43
-],
-[
-"Candied",
-899.48
-],
-[
-"Sweet",
-899.53
-],
-[
-"Potatoes",
-899.58
-],
-[
-"Every",
-899.63
-],
-[
-"Church",
-901.83
-],
-[
-"Lady",
-901.88
-],
-[
-"Brought",
-901.93
-]
-],
-"k": "img/ckeggs/n_stove_dial.png"
-}
-},
-{
-"a": 916.0,
-"b": 927.0,
-"k": "",
-"c": "Arc",
-"props": {
-"src": "ph_winn",
-"vid": false,
-"cap": "a family at a supper table, 1943",
-"credit": "Office of War Information (1943) · Public domain"
-}
-},
-{
-"a": 927.0,
-"b": 942.0,
-"k": "",
-"c": "Comment",
-"props": {
-"q": "Who taught you to cook for a crowd?",
-"k": "img/ckeggs/n_wood_spoon_crumbs.png",
-"opts": [
-{
-"txt": "Mother",
-"t": 930.0
-},
-{
-"txt": "Grandmother",
-"t": 933.0
-},
-{
-"txt": "Nobody, I learned it",
-"t": 936.0
-}
-]
-}
-},
-{
-"a": 942.0,
-"b": 952.0,
-"k": "img/ckeggs/n_towel_eggs.png",
-"vid": false,
-"z": [
-1.0,
-1.08
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 952,
-"b": 962,
-"k": "av",
-"av": true,
-"z": [
-1.12,
-1.16
-],
-"o": [
-50,
-34
-]
-}
-],
-"sfx": [],
-"end": 962.0
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 3.8,
+   "k": "img/ckeggs/ckeggs_thumb.jpg",
+   "vid": false,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 3.8,
+   "b": 10.0,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 10.0,
+   "b": 22.0,
+   "k": "",
+   "c": "FirstPlate",
+   "props": {
+    "table": "n_cold_table",
+    "macro": "h_macro",
+    "circ": 10.1,
+    "why": 11.4,
+    "cut": 13.4,
+    "timer": 15.9
+   }
+  },
+  {
+   "a": 22.0,
+   "b": 28.0,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 28.0,
+   "b": 38.6,
+   "k": "",
+   "c": "Everybody",
+   "props": {
+    "bed": "n_cold_table",
+    "head": {
+     "t": 28.2,
+     "txt": "WHAT EVERYBODY DOES"
+    },
+    "cards": [
+     {
+      "k": "h_boil",
+      "t": 29.0,
+      "lab": "BOIL"
+     },
+     {
+      "k": "h_peel",
+      "t": 30.5,
+      "lab": "PEEL"
+     },
+     {
+      "k": "h_mash",
+      "t": 31.5,
+      "lab": "MASH"
+     },
+     {
+      "k": "h_dump",
+      "t": 33.1,
+      "lab": "MAYO STRAIGHT IN"
+     }
+    ],
+    "focus": 35.2,
+    "circ": 36.6,
+    "note": {
+     "t": 37.9,
+     "txt": "lumpy… and a little flat"
+    }
+   }
+  },
+  {
+   "a": 38.6,
+   "b": 56.0,
+   "k": "",
+   "c": "PageTwenty",
+   "props": {
+    "k": "page20",
+    "bed": "n_cold_table",
+    "reveal": 40.7,
+    "step": 42.1,
+    "recipe": 45.8,
+    "tab": 47.1,
+    "amounts": 49.3,
+    "back": 52.3
+   }
+  },
+  {
+   "a": 56,
+   "b": 70,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 70.0,
+   "b": 81.0,
+   "k": "img/ckeggs/n_pot_simmer.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 81.0,
+   "b": 92.0,
+   "k": "img/ckeggs/l_basement_table.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 92,
+   "b": 106,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 106.0,
+   "b": 116.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ph_door",
+    "vid": false,
+    "cap": "a woman at a wood cookstove in a farm kitchen, 1940s",
+    "credit": "Farm Security Administration (1940s) · Public domain"
+   }
+  },
+  {
+   "a": 116.0,
+   "b": 126.0,
+   "k": "img/ckeggs/n_ice_bowl.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 126,
+   "b": 140,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 140.0,
+   "b": 148.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_dining_hall_1950s",
+    "vid": true,
+    "cap": "1950s dining hall: a long line of plates and serving trays",
+    "credit": "Hotel and Restaurant Workers (1950s) · Public domain"
+   }
+  },
+  {
+   "a": 148.0,
+   "b": 162.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ph_grace1942",
+    "vid": false,
+    "cap": "a family bows their heads before dinner, 1942",
+    "credit": "Office of War Information (1942) · Public domain"
+   }
+  },
+  {
+   "a": 162,
+   "b": 176,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 176.0,
+   "b": 184.0,
+   "k": "img/ckeggs/l_mother_carrier.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 184.0,
+   "b": 192.0,
+   "k": "img/ckeggs/n_yolk_paste.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 192,
+   "b": 206,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 206.0,
+   "b": 214.0,
+   "k": "img/ckeggs/n_pickle_jar.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 214.0,
+   "b": 232.0,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "WHAT PEOPLE GET WRONG",
+    "k": "img/ckeggs/n_halves_platter.png",
+    "items": [
+     {
+      "t": 214,
+      "txt": "Eggs too fresh to peel"
+     },
+     {
+      "t": 220,
+      "txt": "Boiled too hard, grey ring"
+     },
+     {
+      "t": 226,
+      "txt": "Mayonnaise before the seasoning"
+     }
+    ]
+   }
+  },
+  {
+   "a": 232.0,
+   "b": 246.0,
+   "k": "img/ckeggs/n_white_boats.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 246,
+   "b": 258,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 258.0,
+   "b": 266.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_t_chickens",
+    "vid": true,
+    "cap": "hens in a 1952 farm film",
+    "credit": "Texas Farm Family (1952) · Public domain"
+   }
+  },
+  {
+   "a": 266.0,
+   "b": 270.0,
+   "k": "img/ckeggs/n_cutting_board.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 270.0,
+   "b": 299.0,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "page": "20",
+    "head": "CHURCH POTLUCK DEVILED EGGS",
+    "steps": [
+     {
+      "t": 271.95,
+      "txt": "Low boil, 12 minutes",
+      "k": "img/ckeggs/l_boil_pot.png"
+     },
+     {
+      "t": 284,
+      "txt": "Straight into ice water, 10 minutes",
+      "k": "img/ckeggs/n_kitchen_timer.png"
+     }
+    ]
+   }
+  },
+  {
+   "a": 299.0,
+   "b": 309.0,
+   "k": "img/ckeggs/l_ice_bowl.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 309.0,
+   "b": 320.0,
+   "k": "img/ckeggs/n_egg_carrier.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 320.0,
+   "b": 331.0,
+   "k": "img/ckeggs/n_cooler_ice.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 331.0,
+   "b": 338.0,
+   "k": "img/ckeggs/l_peel.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 338,
+   "b": 350,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 350.0,
+   "b": 358.0,
+   "k": "img/ckeggs/n_mustard_spoon.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 358.0,
+   "b": 366.0,
+   "k": "img/ckeggs/n_mayo_swirl.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 366,
+   "b": 380,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 380.0,
+   "b": 390.0,
+   "k": "img/ckeggs/l_halve.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 390.0,
+   "b": 396.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_cooking_girls",
+    "vid": true,
+    "cap": "a cooking class, 1951: a cook stirring at the counter",
+    "credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+   }
+  },
+  {
+   "a": 396,
+   "b": 410,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 410.0,
+   "b": 418.0,
+   "k": "img/ckeggs/n_mash_bowl.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 418.0,
+   "b": 426.0,
+   "k": "img/ckeggs/n_window_light.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 426,
+   "b": 440,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 440.0,
+   "b": 449.0,
+   "k": "img/ckeggs/l_wait_clock.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 449.0,
+   "b": 458.0,
+   "k": "img/ckeggs/n_sugar_jar.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 458,
+   "b": 470,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 470.0,
+   "b": 479.0,
+   "k": "img/ckeggs/n_fridge_shelf.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 479.0,
+   "b": 495.0,
+   "k": "",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "img/ckeggs/page20.png",
+      "tab": "PAGE 20",
+      "t": 479.0,
+      "hl": 40
+     }
+    ],
+    "k": "img/ckeggs/n_paper_plates.png"
+   }
+  },
+  {
+   "a": 495.0,
+   "b": 503.0,
+   "k": "img/ckeggs/l_mayo_spoon.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 503.0,
+   "b": 512.0,
+   "k": "img/ckeggs/l_taste_spoon.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 512,
+   "b": 524,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 524.0,
+   "b": 532.0,
+   "k": "img/ckeggs/n_salt_pepper.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 532.0,
+   "b": 538.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_reading_book_1951",
+    "vid": true,
+    "cap": "a woman reading at a table, 1951",
+    "credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+   }
+  },
+  {
+   "a": 538,
+   "b": 552,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 552.0,
+   "b": 568.0,
+   "k": "",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "img/ckeggs/n_dill_sprigs.png",
+    "txt": "Grey-green ring: cooked too long",
+    "cx": 50,
+    "cy": 70
+   }
+  },
+  {
+   "a": 568.0,
+   "b": 578.0,
+   "k": "img/ckeggs/n_church_kitchen.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 578,
+   "b": 592,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 592.0,
+   "b": 604.0,
+   "k": "img/ckeggs/l_danny_table.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 604.0,
+   "b": 618.0,
+   "k": "",
+   "c": "Memory",
+   "props": {
+    "k": "img/ckeggs/n_apron_hook.png",
+    "caption": "Danny, asking for the first egg at Easter",
+    "date": "EASTER"
+   }
+  },
+  {
+   "a": 618.0,
+   "b": 628.0,
+   "k": "img/ckeggs/n_pack_container.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 628.0,
+   "b": 636.0,
+   "k": "img/ckeggs/n_bowl_cold_water.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 636,
+   "b": 648,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 648.0,
+   "b": 656.0,
+   "k": "img/ckeggs/l_small_plate.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 656.0,
+   "b": 664.0,
+   "k": "img/ckeggs/n_coffee_urn.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 664,
+   "b": 676,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 676.0,
+   "b": 686.0,
+   "k": "img/ckeggs/n_fridge_plate.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 686.0,
+   "b": 704.0,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "SWAP IDEAS",
+    "k": "img/ckeggs/n_colander_water.png",
+    "items": [
+     {
+      "t": 689.79,
+      "txt": "Quarter cup chopped ham"
+     },
+     {
+      "t": 696.11,
+      "txt": "Sweet pickle juice and relish"
+     }
+    ]
+   }
+  },
+  {
+   "a": 704.0,
+   "b": 711.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_kitchen_mixer",
+    "vid": true,
+    "cap": "a kitchen mixer and a bowl on the counter, 1951",
+    "credit": "The Home Economics Story, Iowa State College (1951) · Public domain"
+   }
+  },
+  {
+   "a": 711.0,
+   "b": 718.0,
+   "k": "img/ckeggs/n_egg_half_close.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 718,
+   "b": 732,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 732.0,
+   "b": 750.0,
+   "k": "",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Loretta, you are going to have to make",
+     "more eggs than the men can eat."
+    ],
+    "sig": "Bernice",
+    "k": "img/ckeggs/n_folded_paper_cloth.png",
+    "size": 84
+   }
+  },
+  {
+   "a": 750,
+   "b": 762,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 762.0,
+   "b": 774.0,
+   "k": "",
+   "c": "QrCard",
+   "props": {
+    "k": "img/ckeggs/qr.jpg",
+    "t": 756.11
+   }
+  },
+  {
+   "a": 774,
+   "b": 786,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 786.0,
+   "b": 802.0,
+   "k": "",
+   "c": "Thumb",
+   "props": {
+    "thumb": "img/ckeggs/th_other.jpg",
+    "tag": "ANOTHER VIDEO",
+    "words": [
+     [
+      "10",
+      786
+     ],
+     [
+      "One-Pan",
+      786.05
+     ],
+     [
+      "Suppers",
+      782.68
+     ],
+     [
+      "for",
+      779.64
+     ],
+     [
+      "Seniors",
+      774.66
+     ],
+     [
+      "Living",
+      775.08
+     ],
+     [
+      "Alone",
+      775.36
+     ]
+    ],
+    "k": "img/ckeggs/n_morning_table.png"
+   }
+  },
+  {
+   "a": 802,
+   "b": 816,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 816.0,
+   "b": 823.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_talk_woman",
+    "vid": true,
+    "cap": "a woman talking to the camera in a 1950 film",
+    "credit": "The Last Word in Automatic Dishwashing (1950) · Public domain"
+   }
+  },
+  {
+   "a": 823.0,
+   "b": 834.0,
+   "k": "img/ckeggs/n_paprika_tin.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 834,
+   "b": 846,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 846.0,
+   "b": 860.0,
+   "k": "",
+   "c": "Checklist",
+   "props": {
+    "head": "THE WHOLE RECIPE",
+    "k": "img/ckeggs/n_pass_window.png",
+    "items": [
+     {
+      "t": 846,
+      "txt": "Twelve eggs in a low boil"
+     },
+     {
+      "t": 850,
+      "txt": "Mash, then season the yolks"
+     },
+     {
+      "t": 854,
+      "txt": "Two minutes"
+     },
+     {
+      "t": 858,
+      "txt": "Mayonnaise, then chill"
+     }
+    ]
+   }
+  },
+  {
+   "a": 860,
+   "b": 874,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 874.0,
+   "b": 882.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ph_grimm",
+    "vid": false,
+    "cap": "a family dinner table, 1943: plates, bowls and a centerpiece",
+    "credit": "Office of War Information (1943) · Public domain"
+   }
+  },
+  {
+   "a": 882.0,
+   "b": 890.0,
+   "k": "img/ckeggs/n_spiral_book_closed.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 890,
+   "b": 902,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "o": [
+    50,
+    34
+   ]
+  },
+  {
+   "a": 902.0,
+   "b": 916.0,
+   "k": "",
+   "c": "Thumb",
+   "props": {
+    "thumb": "img/ckeggs/th_next.jpg",
+    "tag": "NEXT WEEK",
+    "words": [
+     [
+      "The",
+      899.43
+     ],
+     [
+      "Candied",
+      899.48
+     ],
+     [
+      "Sweet",
+      899.53
+     ],
+     [
+      "Potatoes",
+      899.58
+     ],
+     [
+      "Every",
+      899.63
+     ],
+     [
+      "Church",
+      901.83
+     ],
+     [
+      "Lady",
+      901.88
+     ],
+     [
+      "Brought",
+      901.93
+     ]
+    ],
+    "k": "img/ckeggs/n_stove_dial.png"
+   }
+  },
+  {
+   "a": 916.0,
+   "b": 927.0,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ph_winn",
+    "vid": false,
+    "cap": "a family at a supper table, 1943",
+    "credit": "Office of War Information (1943) · Public domain"
+   }
+  },
+  {
+   "a": 927.0,
+   "b": 942.0,
+   "k": "",
+   "c": "Comment",
+   "props": {
+    "q": "Who taught you to cook for a crowd?",
+    "k": "img/ckeggs/n_wood_spoon_crumbs.png",
+    "opts": [
+     {
+      "txt": "Mother",
+      "t": 930.0
+     },
+     {
+      "txt": "Grandmother",
+      "t": 933.0
+     },
+     {
+      "txt": "Nobody, I learned it",
+      "t": 936.0
+     }
+    ]
+   }
+  },
+  {
+   "a": 942.0,
+   "b": 952.0,
+   "k": "img/ckeggs/n_towel_eggs.png",
+   "vid": false,
+   "z": [
+    1.0,
+    1.08
+   ],
+   "o": [
+    50,
+    50
+   ]
+  },
+  {
+   "a": 952,
+   "b": 962,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.12,
+    1.16
+   ],
+   "o": [
+    50,
+    34
+   ]
+  }
+ ],
+ "sfx": [],
+ "end": 962.0
 }
