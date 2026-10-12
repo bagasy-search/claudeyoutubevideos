@@ -23,8 +23,8 @@ const Cover: React.CSSProperties = { position: "absolute", inset: 0, width: "100
 const paperNoise = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.45  0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 0.35 0'/></filter><rect width='100%25' height='100%25' filter='url(%23p)'/></svg>\")";
 
 // ═══════════════ 1. SealDoor ═══════════════
-export type SealDoorProps = { bg: string; from: number; dur: number; tStamp: number; tPush: number; label?: string; win?: [number, number] };
-const SealDoorIn: React.FC<SealDoorProps> = ({ bg, from, tStamp, tPush, label = "DETRÁS DE LA\nGÓNDOLA", win = [50, 42] }) => {
+export type SealDoorProps = { bg: string; from: number; dur: number; tStamp: number; tPush: number; label?: string; win?: [number, number]; size?: number };
+const SealDoorIn: React.FC<SealDoorProps> = ({ bg, from, tStamp, tPush, label = "DETRÁS DE LA\nGÓNDOLA", win = [50, 42], size = 96 }) => {
   const { f, at } = useLocal(from);
   const s0 = 1 + 0.06 * cl(f / Math.max(1, at(tPush)));
   const pu = ez((f - at(tPush)) / 36);
@@ -38,12 +38,13 @@ const SealDoorIn: React.FC<SealDoorProps> = ({ bg, from, tStamp, tPush, label = 
       <AbsoluteFill style={{ transform: `scale(${s})`, transformOrigin: `${win[0]}% ${win[1]}%` }}>
         <Img src={im(bg)} style={Cover} />
         <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.4))" }} />
-        {st >= 0 ? (
-          <div style={{ position: "absolute", left: "50%", top: "60%", transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${land})`, opacity: cl(st / 3), filter: "drop-shadow(0 10px 8px rgba(0,0,0,0.5))" }}>
-            <Stamp label={label} size={130} />
-          </div>
-        ) : null}
       </AbsoluteFill>
+      {/* sello en coordenadas de pantalla (no escala con la cámara): entra entero, ~45 % del ancho */}
+      {st >= 0 ? (
+        <div style={{ position: "absolute", left: "50%", top: "52%", transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${land})`, opacity: cl(st / 3), filter: "drop-shadow(0 10px 8px rgba(0,0,0,0.5))", whiteSpace: "nowrap" }}>
+          <Stamp label={label} size={size} />
+        </div>
+      ) : null}
       <Grade vig={0.35} />
       <Grain />
       {/* blanco: sube en 0.2 s, mantiene 6 cuadros y corta (sin fundido largo) */}
