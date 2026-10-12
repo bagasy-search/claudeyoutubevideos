@@ -775,6 +775,7 @@
 "k": "",
 "c": "DoDont",
 "props": {
+"k": "b_donot_yes",
 "yes": {
 "k": "b_donot_yes",
 "txt": "Keep them covered",
