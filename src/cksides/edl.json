@@ -85,22 +85,24 @@
 "a": 36.587,
 "b": 45.9,
 "k": "",
-"c": "Checklist",
+"c": "PromiseHero",
 "props": {
-"head": "IN THIS VIDEO",
 "k": "n_windowsill",
-"items": [
+"days": [
 {
-"t": 37.21,
-"txt": "Sides for the refrigerator on Tuesday"
+"d": "TUESDAY",
+"txt": "Into the fridge",
+"t": 37.21
 },
 {
-"t": 35.53,
-"txt": "Sides that bake on Wednesday"
+"d": "WEDNESDAY",
+"txt": "Bake and prep",
+"t": 35.53
 },
 {
-"t": 38.05,
-"txt": "Sides that wait for Thursday morning"
+"d": "THURSDAY",
+"txt": "Morning only",
+"t": 38.05
 }
 ]
 }
@@ -143,12 +145,23 @@
 "a": 66.767,
 "b": 78.367,
 "k": "",
-"c": "MistakeStamp",
+"c": "MistakeHero",
 "props": {
 "k": "n_nine_by_thirteen",
-"txt": "EVERYTHING ON THURSDAY",
-"cx": 50,
-"cy": 70
+"lines": [
+{
+"t": 65.25,
+"txt": "One oven."
+},
+{
+"t": 67.18,
+"txt": "One morning."
+}
+],
+"stamp": {
+"t": 67.18,
+"txt": "EVERYTHING ON THURSDAY"
+}
 }
 },
 {
@@ -1742,16 +1755,6 @@
 }
 ],
 "sfx": [
-[
-36.59,
-"design/paper_slide",
-0.25
-],
-[
-66.77,
-"design/click_slide",
-0.25
-],
 [
 127.11,
 "design/pen_write",

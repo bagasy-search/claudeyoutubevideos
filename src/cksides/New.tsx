@@ -256,4 +256,48 @@ export const WeekCal: P<{ k: string; days: { d: string; txt: string; t: number }
   );
 };
 
-export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines, Opening, WeekCal };
+// ── HÉROE 1 (10-60 s) · LA PROMESA: la página 51 entra inclinada y los tres días aparecen en su palabra, con barra que crece
+export const PromiseHero: P<{ k: string; days: { t: number; d: string; txt: string }[] }> = ({ a, d, k, days }) => {
+  const { f, at } = useT(a);
+  const push = 1.0 + 0.06 * Math.min(1, f / Math.max(1, d));
+  const card = sp(f, at(a + 0.2), 16, 120);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#120a05", overflow: "hidden" }}>
+      <AbsoluteFill style={{ transform: `scale(${push})`, transformOrigin: "50% 50%" }}><Full k={k} f={f} d={d} dim={0.55} /></AbsoluteFill>
+      <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(18,10,5,0.92) 0%, rgba(18,10,5,0.45) 58%, rgba(18,10,5,0.15) 100%)" }} />
+      <div style={{ position: "absolute", left: 130, top: 150, width: 560, opacity: card, transform: `translateY(${(1 - card) * 140}px) rotate(-3deg)`, boxShadow: "0 30px 80px rgba(0,0,0,0.7)", borderRadius: 6, overflow: "hidden" }}>
+        <Img src={img("img/cksides/page51.png")} style={{ width: "100%", display: "block" }} />
+      </div>
+      <div style={{ position: "absolute", left: 800, right: 130, top: 190 }}>
+        {days.map((x, i) => { const u = sp(f, at(x.t), 14, 180); return (
+          <div key={i} style={{ opacity: u, transform: `translateX(${(1 - u) * 90}px)`, marginBottom: 46 }}>
+            <div style={{ fontFamily: LABEL, fontSize: 40, fontWeight: 900, color: C.red, letterSpacing: 5 }}>{x.d}</div>
+            <div style={{ fontFamily: SERIF, fontSize: 86, fontWeight: 900, color: C.porc, lineHeight: 1.05, textShadow: shadowTxt }}>{x.txt}</div>
+            <div style={{ height: 6, width: `${u * 100}%`, background: C.red, marginTop: 14 }} />
+          </div>); })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// ── HÉROE 2 (10-60 s) · EL ERROR: frases que entran en su palabra y un sello rojo que cae sobre "Thursday"
+export const MistakeHero: P<{ k: string; lines: { t: number; txt: string }[]; stamp: { t: number; txt: string } }> = ({ a, d, k, lines, stamp }) => {
+  const { f, at } = useT(a);
+  const push = 1.0 + 0.07 * Math.min(1, f / Math.max(1, d));
+  const s = sp(f, at(stamp.t), 9, 170);
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#120a05", overflow: "hidden" }}>
+      <AbsoluteFill style={{ transform: `scale(${push})`, transformOrigin: "50% 40%" }}><Full k={k} f={f} d={d} dim={0.5} /></AbsoluteFill>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, rgba(0,0,0,0.05) 30%, rgba(0,0,0,0.78) 100%)" }} />
+      <div style={{ position: "absolute", left: 130, right: 130, top: 170 }}>
+        {lines.map((x, i) => { const u = sp(f, at(x.t), 14, 200); return (
+          <div key={i} style={{ fontFamily: SERIF, fontSize: 110, fontWeight: 900, color: C.porc, lineHeight: 1.1, opacity: u, transform: `translateY(${(1 - u) * 40}px)`, textShadow: shadowTxt }}>{x.txt}</div>); })}
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 610, textAlign: "center", opacity: Math.min(1, s * 1.5), transform: `scale(${1.6 - 0.6 * Math.min(1, s)}) rotate(${-7 * Math.min(1, s)}deg)` }}>
+        <span style={{ display: "inline-block", border: `12px solid ${C.red}`, color: C.red, fontFamily: LABEL, fontSize: 118, fontWeight: 900, padding: "16px 44px", letterSpacing: 4, background: "rgba(251,248,242,0.93)", boxShadow: "0 24px 70px rgba(0,0,0,0.7)" }}>{stamp.txt}</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines, Opening, WeekCal, PromiseHero, MistakeHero };
