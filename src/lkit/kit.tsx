@@ -21,7 +21,7 @@ export const Chapter: P<{ n: string; title: string; sub?: string; label?: string
       <div style={{ position: "absolute", left: 1240, top: 540, translate: "-50% -50%", transform: `perspective(1600px) rotateY(${-10 + 10 * ez(cam)}deg) translateX(${(1 - u) * 800}px)`, opacity: cl(u * 2) }}>
         <div style={{ background: "#FFFDF8", padding: 14, borderRadius: 4, boxShadow: `0 50px 90px ${C.shadow}` }}>
           <div style={{ width: W, height: H, overflow: "hidden", position: "relative", background: "#222" }}>
-            {useAv ? <OffthreadVideo src={avSrc(a)} startFrom={fr(avAt(a))} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            {useAv ? <OffthreadVideo src={avSrc(a)} startFrom={Math.max(0, fr(avAt(a)) - Math.round((KCFG.avLead || 0) * 30))} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
               : <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.05 + 0.08 * cam})` }} />}
           </div>
         </div>
@@ -159,7 +159,7 @@ export const Note: P<{ lines: Line[]; sig?: string; k: string; chip?: { txt: str
           {sig ? <div style={{ position: "absolute", right: 110, bottom: 36, fontFamily: HAND, fontSize: 72, color: "#2E3B63", opacity: lin(f, last, last + 9, 0, 1) }}>— {sig}</div> : null}
         </div>
         <div style={{ position: "absolute", left: 540, top: -26, width: 170, height: 52, background: "rgba(236,226,196,0.85)", transform: "rotate(-4deg)" }} />
-        {chip ? <div style={{ position: "absolute", right: -60, bottom: -40, opacity: ch, transform: `scale(${0.6 + 0.4 * ch}) rotate(-5deg)` }}><Chip txt={chip.txt} font={HAND} size={66} ls={0} bg={C.lilacDeep} color="#fff" maxW={800} /></div> : null}
+        {chip ? <div style={{ position: "absolute", right: -60, top: -58, opacity: ch, transform: `scale(${0.6 + 0.4 * ch}) rotate(-5deg)` }}><Chip txt={chip.txt} font={HAND} size={66} ls={0} bg={C.lilacDeep} color="#fff" maxW={800} /></div> : null}
       </div>
       <Grade vig={0.36} />
     </AbsoluteFill>

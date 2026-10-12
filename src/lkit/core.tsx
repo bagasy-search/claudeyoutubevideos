@@ -30,6 +30,7 @@ export type KitCfg = {
   clipDir: string; // carpeta de public/ con los clips de fotos animadas
   avDir: string; // carpeta de public/ con los reels de avatar
   av?: Win[]; // ventanas del avatar (avwin.json → .win); sin esto, los componentes con avatar usan foto
+  avLead?: number; // segundos que se RETRASA el video del avatar para que calce con la voz (labios adelantados = +). Medido con scripts/lipsync_medir.mjs
 };
 export const KCFG: KitCfg = { imgDir: "img/lkit_demo", ext: "png", grain: "img/lkit_demo/grain.png", qr: "qr.jpg", cover: "book_cover.png", arcDir: "arc", clipDir: "clips", avDir: "av" };
 export const setKit = (c: Partial<KitCfg>) => { Object.assign(KCFG, c); };
@@ -179,7 +180,7 @@ export const Plate: React.FC<{ s: Shot; d: number; lead: number }> = ({ s, d, le
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000", opacity: op }}>
       <AbsoluteFill style={{ transform: `translate(${tx}px, ${ty}px) scale(${sc})`, transformOrigin: `${ox}% ${oy}%`, filter: blur > 0.3 ? `blur(${blur}px)` : undefined }}>
         {s.av && hasAv() ? (
-          <OffthreadVideo src={avSrc(s.a)} startFrom={Math.max(0, fr(avAt(s.a)) - lead)} muted style={st} />
+          <OffthreadVideo src={avSrc(s.a)} startFrom={Math.max(0, fr(avAt(s.a)) - lead - Math.round((KCFG.avLead || 0) * 30))} muted style={st} />
         ) : s.vid ? (
           <OffthreadVideo src={clip(s.k)} startFrom={fr(s.ofs || 0)} muted style={st} />
         ) : (

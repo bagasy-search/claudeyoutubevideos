@@ -1,0 +1,1737 @@
+{
+ "end": 931.287,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 8.646,
+   "k": "l_open",
+   "c": "ThumbOpen",
+   "props": {
+    "thumb": "th_card.jpg",
+    "k": "l_open",
+    "fade": 0.0,
+    "words": [
+     [
+      "GOING IN",
+      1.68
+     ],
+     [
+      "THE BOX",
+      2.22
+     ]
+    ]
+   },
+   "tin": "cut"
+  },
+  {
+   "a": 8.646,
+   "b": 15.543,
+   "k": "l_drawer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 15.543,
+   "b": 18.667,
+   "k": "n_dryersheets2",
+   "c": "Tease",
+   "props": {
+    "k": "n_dryersheets2",
+    "txt": "DOES NOT DO A THING",
+    "tag": "COMING UP #8"
+   }
+  },
+  {
+   "a": 18.667,
+   "b": 26.147,
+   "k": "n_octkitchen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 26.147,
+   "b": 34.207,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 34.207,
+   "b": 43.287,
+   "k": "n_bugbomb",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 43.287,
+   "b": 50.89,
+   "k": "l_tricks",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 50.89,
+   "b": 58.82,
+   "k": "n_undersink",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 58.82,
+   "b": 65.506,
+   "k": "n_barnwindow",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 65.506,
+   "b": 73.703,
+   "k": "mother_door",
+   "c": "Memory",
+   "props": {
+    "k": "mother_door",
+    "caption": "Mother, Story County",
+    "date": "Oct 1952",
+    "t": 65.693
+   }
+  },
+  {
+   "a": 73.703,
+   "b": 85.933,
+   "k": "l_three",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 85.933,
+   "b": 94.47,
+   "k": "n_pan",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 13,
+    "name": "THE NONSTICK PAN",
+    "instead": "Cast iron skillet",
+    "page": "PAGE 4",
+    "k": "n_pan",
+    "t": 86.127
+   }
+  },
+  {
+   "a": 94.47,
+   "b": 101.893,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 101.893,
+   "b": 110.633,
+   "k": "cast-iron-skillet-eggs-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "cast-iron-skillet-eggs-1940s",
+    "cap": "1940s · a farm kitchen stove",
+    "vid": true
+   }
+  },
+  {
+   "a": 110.633,
+   "b": 119.3,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 119.3,
+   "b": 129.767,
+   "k": "n_flourbag",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 13,
+    "name": "DRY GOODS IN PAPER BAGS",
+    "instead": "Glass jars with lids",
+    "page": "PAGE 12",
+    "k": "n_flourbag",
+    "t": 119.58
+   }
+  },
+  {
+   "a": 129.767,
+   "b": 136.953,
+   "k": "n_mousefloor",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "Nothing sleeps",
+      "t": 129.767
+     },
+     {
+      "txt": "in a paper bag.",
+      "t": 130.787
+     }
+    ],
+    "sig": "Mother's first rule",
+    "k": "n_mousefloor",
+    "chip": {
+     "txt": "A MOUSE STAYS",
+     "t": 132.12
+    }
+   }
+  },
+  {
+   "a": 136.953,
+   "b": 143.427,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 143.427,
+   "b": 151.367,
+   "k": "n_emptyshelf",
+   "c": "DropList",
+   "props": {
+    "k": "n_emptyshelf",
+    "head": "MOTHER'S PANTRY",
+    "items": [
+     {
+      "txt": "FLOUR",
+      "t": 144.587
+     },
+     {
+      "txt": "SUGAR",
+      "t": 146.007
+     },
+     {
+      "txt": "OATS",
+      "t": 146.947
+     },
+     {
+      "txt": "RICE",
+      "t": 148.053
+     }
+    ],
+    "shelfY": 0.55,
+    "x0": 0.12,
+    "x1": 0.88
+   }
+  },
+  {
+   "a": 151.367,
+   "b": 160.437,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 160.437,
+   "b": 168.327,
+   "k": "l_cupboard",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 168.327,
+   "b": 177.613,
+   "k": "1940s-farm-pantry-shelves-glass-jars",
+   "c": "Arc",
+   "props": {
+    "src": "1940s-farm-pantry-shelves-glass-jars",
+    "cap": "1940s · shelves of jars and cans",
+    "vid": true
+   }
+  },
+  {
+   "a": 177.613,
+   "b": 184.193,
+   "k": "l_book",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 184.193,
+   "b": 191.313,
+   "k": "book_p12",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page12.png",
+      "tab": "PAGE 12",
+      "t": 185.633
+     }
+    ],
+    "k": "book_p12"
+   }
+  },
+  {
+   "a": 191.313,
+   "b": 197.963,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 197.963,
+   "b": 210.533,
+   "k": "l_book",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 210.533,
+   "b": 218.893,
+   "k": "n_paperbags2",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "name": "SAVED PAPER BAGS",
+    "instead": "Unpack on the porch",
+    "page": "PAGE 14",
+    "k": "n_paperbags2",
+    "k2": "porch_unpack",
+    "t": 212.353,
+    "of": 13
+   }
+  },
+  {
+   "a": 218.893,
+   "b": 226.507,
+   "k": "grocery-clerk-paper-sacks-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "grocery-clerk-paper-sacks-1950s",
+    "cap": "1940s · a grocery store front",
+    "vid": true
+   }
+  },
+  {
+   "a": 226.507,
+   "b": 233.903,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 233.903,
+   "b": 241.03,
+   "k": "n_undersink",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 241.03,
+   "b": 248.163,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "old": {
+     "k": "n_paperbags",
+     "txt": "Kept for later"
+    },
+    "neu": {
+     "k": "n_recycle",
+     "txt": "Out the same day"
+    },
+    "t": 243.74
+   }
+  },
+  {
+   "a": 248.163,
+   "b": 257.623,
+   "k": "n_cans",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "name": "SAVED BOXES & CAN FLATS",
+    "instead": "Break them down, carry them out",
+    "page": "PAGE 15",
+    "k": "n_cans",
+    "t": 251.307,
+    "of": 13
+   }
+  },
+  {
+   "a": 257.623,
+   "b": 262.16,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 262.16,
+   "b": 273.144,
+   "k": "n_box",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "A box saved in the kitchen",
+      "t": 262.16
+     },
+     {
+      "txt": "is just a hiding place.",
+      "t": 263.6
+     }
+    ],
+    "sig": "Mother",
+    "k": "n_box"
+   }
+  },
+  {
+   "a": 273.144,
+   "b": 281.484,
+   "k": "home-kitchen-box-breakdown-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "home-kitchen-box-breakdown-1950s",
+    "cap": "1946 · a farm kitchen table",
+    "vid": true
+   }
+  },
+  {
+   "a": 281.484,
+   "b": 288.274,
+   "k": "church_ladies",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 288.274,
+   "b": 296.49,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 296.49,
+   "b": 309.327,
+   "k": "l_stackboxes",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 309.327,
+   "b": 316.947,
+   "k": "n_lidcan",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "name": "GARBAGE CAN WITH NO LID",
+    "instead": "A can with its lid on",
+    "page": "PAGE 16",
+    "k": "n_lidcan",
+    "t": 311.987,
+    "of": 13
+   }
+  },
+  {
+   "a": 316.947,
+   "b": 325.953,
+   "k": "house-fly-garbage-health-film-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "house-fly-garbage-health-film-1940s",
+    "cap": "1940s · a farmhouse in summer",
+    "vid": true
+   }
+  },
+  {
+   "a": 325.953,
+   "b": 335.67,
+   "k": "n_garbage",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_garbage",
+    "words": [
+     [
+      "THE SMELL",
+      326.673
+     ],
+     [
+      "CALLS THEM",
+      327.533
+     ]
+    ]
+   }
+  },
+  {
+   "a": 335.67,
+   "b": 347.677,
+   "k": "l_rinsecan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 347.677,
+   "b": 356.784,
+   "k": "n_soakdishes",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "name": "DISHES SOAKING OVERNIGHT",
+    "instead": "A dry sink at bedtime",
+    "page": "PAGE 17",
+    "k": "n_soakdishes",
+    "t": 350.98,
+    "of": 13
+   }
+  },
+  {
+   "a": 356.784,
+   "b": 362.0,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 362.0,
+   "b": 369.077,
+   "k": "n_nightsink",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "The sink is dry",
+      "t": 362.0
+     },
+     {
+      "txt": "at bedtime.",
+      "t": 363.24
+     }
+    ],
+    "sig": "Mother's second rule",
+    "k": "n_nightsink"
+   }
+  },
+  {
+   "a": 369.077,
+   "b": 375.97,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "name": "SwapCard",
+    "head": "DRY SINK",
+    "oldHead": "WET SINK",
+    "old": {
+     "txt": "A wet heap in the sink and a drip under it",
+     "k": "n_soakdishes"
+    },
+    "neu": {
+     "txt": "Wiped dry, dishrag hung up, drip fixed",
+     "k": "l_sinkdry"
+    },
+    "t": 371.3
+   }
+  },
+  {
+   "a": 375.97,
+   "b": 386.183,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 386.183,
+   "b": 394.244,
+   "k": "n_plugin",
+   "c": "ItemCard",
+   "props": {
+    "name": "PLUG-IN SOUND REPELLER",
+    "n": 7,
+    "instead": "Seal the hole",
+    "page": "PAGE 20",
+    "k": "n_plugin",
+    "t": 387.433,
+    "of": 13
+   }
+  },
+  {
+   "a": 394.244,
+   "b": 403.41,
+   "k": "frost-farm-field-dawn",
+   "c": "Arc",
+   "props": {
+    "src": "frost-farm-field-dawn",
+    "cap": "1940s · a farm field, late in the year",
+    "vid": true
+   }
+  },
+  {
+   "a": 403.41,
+   "b": 412.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 412.547,
+   "b": 423.513,
+   "k": "l_dimegap",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 423.513,
+   "b": 435.0,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "SEAL THE GAPS",
+    "page": "PAGE 20",
+    "steps": [
+     {
+      "txt": "Find the gap a dime fits",
+      "t": 423.733,
+      "k": "n_mousegap"
+     },
+     {
+      "txt": "Stuff it tight with steel wool",
+      "t": 425.673,
+      "k": "n_steelwool"
+     },
+     {
+      "txt": "Caulk over it",
+      "t": 427.633,
+      "k": "caulk_seal"
+     }
+    ]
+   }
+  },
+  {
+   "a": 435.0,
+   "b": 442.34,
+   "k": "n_dryersheets",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "name": "DRYER SHEETS IN DRAWERS",
+    "instead": "Wipe the counters every night",
+    "page": "PAGE 21",
+    "k": "n_dryersheets",
+    "t": 436.36,
+    "of": 13
+   }
+  },
+  {
+   "a": 442.34,
+   "b": 449.077,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 449.077,
+   "b": 457.187,
+   "k": "housewife-wiping-counter-sweeping-crumbs-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "housewife-wiping-counter-sweeping-crumbs-1950s",
+    "cap": "1940s · EVERY NIGHT, kitchen counter",
+    "vid": true
+   }
+  },
+  {
+   "a": 457.187,
+   "b": 465.027,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 465.027,
+   "b": 480.46,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "t": 466.627,
+    "txt": "SCAN, NO WRITING NEEDED",
+    "k": "book_cover"
+   }
+  },
+  {
+   "a": 480.46,
+   "b": 490.3,
+   "k": "1950s-kitchen-counter-fruit-bowl",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-kitchen-counter-fruit-bowl",
+    "cap": "1940s · a farm kitchen, pot on the stove",
+    "vid": true
+   }
+  },
+  {
+   "a": 490.3,
+   "b": 493.48,
+   "k": "n_fruit",
+   "c": "Tease",
+   "props": {
+    "k": "n_fruit",
+    "txt": "COSTS PENNIES",
+    "tag": "COMING UP #13"
+   }
+  },
+  {
+   "a": 493.48,
+   "b": 500.786,
+   "k": "n_bugbomb",
+   "c": "ItemCard",
+   "props": {
+    "n": 9,
+    "name": "THE BUG BOMB",
+    "instead": "One pest, one plan",
+    "page": "PAGE 24",
+    "k": "n_bugbomb",
+    "t": 494.86,
+    "of": 13
+   }
+  },
+  {
+   "a": 500.786,
+   "b": 508.393,
+   "k": "n_wallgap",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 508.393,
+   "b": 516.387,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 516.387,
+   "b": 525.76,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "old": {
+     "k": "n_bugbomb",
+     "txt": "Bomb the room"
+    },
+    "neu": {
+     "k": "n_baitstove",
+     "txt": "Sink dry, bait in the cracks"
+    },
+    "t": 522.38
+   }
+  },
+  {
+   "a": 525.76,
+   "b": 533.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 533.5,
+   "b": 544.2,
+   "k": "n_mothballs",
+   "c": "ItemCard",
+   "props": {
+    "n": 10,
+    "name": "MOTHBALLS IN THE KITCHEN",
+    "instead": "Bay leaves + the freezer",
+    "page": "PAGE 26",
+    "k": "n_mothballs",
+    "t": 534.7,
+    "of": 13
+   }
+  },
+  {
+   "a": 544.2,
+   "b": 553.137,
+   "k": "n_mothballs",
+   "c": "Careful",
+   "props": {
+    "k": "n_mothballs",
+    "txt": "KEEP IT OUT OF REACH",
+    "tag": "NEVER NEAR FOOD, CHILDREN OR PETS",
+    "t": 544.2
+   }
+  },
+  {
+   "a": 553.137,
+   "b": 561.04,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 561.04,
+   "b": 570.256,
+   "k": "pantry-moths-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "pantry-moths-1950s",
+    "cap": "1946 · a farm pantry shelf",
+    "vid": true
+   }
+  },
+  {
+   "a": 570.256,
+   "b": 582.823,
+   "k": "l_throwbag",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 582.823,
+   "b": 589.943,
+   "k": "n_petbowl",
+   "c": "ItemCard",
+   "props": {
+    "n": 11,
+    "name": "PET BOWLS LEFT DOWN",
+    "instead": "Bowls up at night, food in a jar",
+    "page": "PAGE 28",
+    "k": "n_petbowl",
+    "k2": "n_petfood",
+    "t": 585.287,
+    "of": 13
+   }
+  },
+  {
+   "a": 589.943,
+   "b": 602.494,
+   "k": "l_bowlnight",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 602.494,
+   "b": 612.684,
+   "k": "n_petbowl",
+   "c": "DoDont",
+   "props": {
+    "k": "n_petbowl",
+    "no": {
+     "k": "n_petbowl",
+     "txt": "Water bowl left on the floor overnight",
+     "t": 606.34
+    },
+    "yes": {
+     "k": "l_petbowl",
+     "txt": "Pet food up on the counter in a lidded jar",
+     "t": 608.34
+    }
+   }
+  },
+  {
+   "a": 612.684,
+   "b": 620.657,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "old": {
+     "k": "n_mousefloor",
+     "txt": "Food bowl left on the floor all night"
+    },
+    "neu": {
+     "k": "l_jars",
+     "txt": "Food in a lidded bin, bowl down at meals only"
+    },
+    "t": 617.24
+   }
+  },
+  {
+   "a": 620.657,
+   "b": 631.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 631.547,
+   "b": 640.133,
+   "k": "n_cucumber",
+   "c": "ItemCard",
+   "props": {
+    "n": 12,
+    "name": "CUCUMBER PEELS FOR ANTS",
+    "instead": "Bait + a chalk line",
+    "page": "PAGE 18",
+    "k": "n_cucumber",
+    "t": 633.887,
+    "of": 13
+   }
+  },
+  {
+   "a": 640.133,
+   "b": 648.883,
+   "k": "ants-trail-kitchen-counter-archive",
+   "c": "Arc",
+   "props": {
+    "src": "ants-trail-kitchen-counter-archive",
+    "cap": "1940s · a kitchen table and counter",
+    "vid": true
+   }
+  },
+  {
+   "a": 648.883,
+   "b": 657.267,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 657.267,
+   "b": 664.08,
+   "k": "l_antsugar",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 664.08,
+   "b": 670.89,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 670.89,
+   "b": 679.67,
+   "k": "page18",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page18.png",
+      "tab": "PAGE 18",
+      "t": 672.547
+     }
+    ],
+    "k": "page18"
+   }
+  },
+  {
+   "a": 679.67,
+   "b": 688.357,
+   "k": "n_fruit",
+   "c": "ItemCard",
+   "props": {
+    "k": "n_fruit",
+    "n": 13,
+    "name": "RIPE FRUIT LEFT OUT",
+    "instead": "Fruit in the fridge + vinegar glass",
+    "page": "PAGE 19",
+    "t": 680.92,
+    "of": 13
+   }
+  },
+  {
+   "a": 688.357,
+   "b": 695.283,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 695.283,
+   "b": 703.617,
+   "k": "l_vinegar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 703.617,
+   "b": 713.133,
+   "k": "paper-cone-glass-trap-1950s-kitchen",
+   "c": "Arc",
+   "props": {
+    "src": "paper-cone-glass-trap-1950s-kitchen",
+    "cap": "1946 · a farm kitchen table",
+    "vid": true
+   }
+  },
+  {
+   "a": 713.133,
+   "b": 720.454,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 720.454,
+   "b": 729.153,
+   "k": "vinegar-glass-fruit-flies-1950s-kitchen",
+   "c": "Arc",
+   "props": {
+    "src": "vinegar-glass-fruit-flies-1950s-kitchen",
+    "cap": "1940s · a farm kitchen counter",
+    "vid": true
+   }
+  },
+  {
+   "a": 729.153,
+   "b": 738.083,
+   "k": "l_night",
+   "c": "CheckScene",
+   "props": {
+    "name": "CheckScene",
+    "k": "l_night",
+    "night": true,
+    "clock": "10:00",
+    "head": "TEN O'CLOCK",
+    "items": [
+     {
+      "txt": "Sink dry",
+      "t": 733.593
+     },
+     {
+      "txt": "Rag wrung & hung",
+      "t": 735.293
+     }
+    ]
+   }
+  },
+  {
+   "a": 738.083,
+   "b": 746.363,
+   "k": "l_garbage",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 746.363,
+   "b": 754.1,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 754.1,
+   "b": 761.82,
+   "k": "l_checklight",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 761.82,
+   "b": 772.034,
+   "k": "n_gonekitchen",
+   "c": "GoneList",
+   "props": {
+    "name": "GoneList",
+    "k": "n_gonekitchen",
+    "head": "THE WHOLE LIST",
+    "fade": 2,
+    "items": [
+     {
+      "txt": "Scratched nonstick pan",
+      "t": 762.513,
+      "x": 22,
+      "y": 55
+     },
+     {
+      "txt": "Flour and rice in paper bags",
+      "t": 769.067,
+      "x": 68,
+      "y": 40
+     }
+    ]
+   }
+  },
+  {
+   "a": 772.034,
+   "b": 779.687,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 779.687,
+   "b": 787.59,
+   "k": "n_lidcan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 787.59,
+   "b": 797.25,
+   "k": "n_gonekitchen",
+   "c": "GoneList",
+   "props": {
+    "k": "n_gonekitchen",
+    "items": [
+     {
+      "n": 7,
+      "txt": "Plug-in sound repeller",
+      "t": 788.44,
+      "x": 12,
+      "y": 58
+     },
+     {
+      "n": 8,
+      "txt": "Dryer sheets in the drawers",
+      "t": 790.96,
+      "x": 70,
+      "y": 64
+     },
+     {
+      "n": 9,
+      "txt": "Bug bomb",
+      "t": 793.72,
+      "x": 44,
+      "y": 36
+     },
+     {
+      "n": 10,
+      "txt": "Mothballs in the kitchen",
+      "t": 795.573,
+      "x": 84,
+      "y": 34
+     }
+    ],
+    "head": "THE CLUTTER, 7 TO 10",
+    "fade": 2
+   }
+  },
+  {
+   "a": 797.25,
+   "b": 804.077,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "n_petbowl",
+      "t": 798.247,
+      "txt": "Dog's bowl and pet food on the floor"
+     },
+     {
+      "k": "n_cucumber",
+      "t": 802.087,
+      "txt": "Cucumber peels for the ants"
+     }
+    ]
+   }
+  },
+  {
+   "a": 804.077,
+   "b": 811.226,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 811.226,
+   "b": 819.62,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "THE HEAVY LIFTERS",
+    "items": [
+     {
+      "n": 1,
+      "of": 3,
+      "name": "Lid on the garbage",
+      "use": "Keeps the pests out of the can",
+      "k": "l_garbage",
+      "t": 811.393
+     },
+     {
+      "n": 2,
+      "of": 3,
+      "name": "Dry sink at bedtime",
+      "use": "No standing water, no crumbs left out",
+      "k": "l_sinkdry",
+      "t": 813.033
+     },
+     {
+      "n": 3,
+      "of": 3,
+      "name": "Glass jars",
+      "use": "Food sealed where they can't reach it",
+      "k": "l_jars",
+      "t": 814.053
+     }
+    ]
+   }
+  },
+  {
+   "a": 819.62,
+   "b": 824.593,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 824.593,
+   "b": 831.147,
+   "k": "l_book",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page45.png",
+      "tab": "PAGE 45",
+      "t": 826.013
+     }
+    ],
+    "caption": {
+     "txt": "What I Still Buy",
+     "t": 824.593
+    },
+    "k": "l_book"
+   }
+  },
+  {
+   "a": 831.147,
+   "b": 839.184,
+   "k": "exterminator-1950s-sprayer",
+   "c": "Arc",
+   "props": {
+    "src": "exterminator-1950s-sprayer",
+    "cap": "1940s · farm work, the old way",
+    "vid": true
+   }
+  },
+  {
+   "a": 839.184,
+   "b": 846.02,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 846.02,
+   "b": 853.244,
+   "k": "k_comment",
+   "c": "Comment",
+   "props": {
+    "name": "Comment",
+    "q": "Which one is still in your kitchen?",
+    "opts": [
+     {
+      "txt": "#1 the pan",
+      "t": 846.02
+     },
+     {
+      "txt": "#5 no lid",
+      "t": 847.3
+     },
+     {
+      "txt": "#8 dryer sheets",
+      "t": 849.62
+     },
+     {
+      "txt": "#13 the fruit",
+      "t": 851.02
+     }
+    ],
+    "k": "k_comment"
+   }
+  },
+  {
+   "a": 853.244,
+   "b": 861.897,
+   "k": "fsa-iowa-farm-woman-kitchen-door-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "fsa-iowa-farm-woman-kitchen-door-1940s",
+    "cap": "1940s · a farm kitchen, pot on the stove",
+    "vid": true
+   }
+  },
+  {
+   "a": 861.897,
+   "b": 869.34,
+   "k": "l_screen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 869.34,
+   "b": 877.04,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 877.04,
+   "b": 884.13,
+   "k": "n_card",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 884.13,
+   "b": 891.067,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 891.067,
+   "b": 901.54,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "k": "book_cover",
+    "txt": "Point your phone at the little square",
+    "t": 892.62
+   }
+  },
+  {
+   "a": 901.54,
+   "b": 910.757,
+   "k": "n_churchkitchen",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_church",
+    "tag": "MY OTHER CHANNEL",
+    "words": [
+     [
+      "12",
+      901.54
+     ],
+     [
+      "Things",
+      901.88
+     ],
+     [
+      "Church",
+      902.34
+     ],
+     [
+      "Ladies",
+      902.78
+     ],
+     [
+      "Never",
+      903.2
+     ],
+     [
+      "Threw",
+      903.62
+     ],
+     [
+      "Away",
+      903.88
+     ]
+    ],
+    "k": "n_churchkitchen"
+   }
+  },
+  {
+   "a": 910.757,
+   "b": 920.36,
+   "k": "n_outsidewalk",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_mouse",
+    "tag": "NEXT",
+    "words": [
+     [
+      "The",
+      910.887
+     ],
+     [
+      "October",
+      912.367
+     ],
+     [
+      "Mouse",
+      912.927
+     ],
+     [
+      "Walk",
+      913.387
+     ]
+    ],
+    "k": "n_outsidewalk",
+    "push": true
+   }
+  },
+  {
+   "a": 920.36,
+   "b": 931.287,
+   "k": "farmhouse-kitchen-sink-glass-jars-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "farmhouse-kitchen-sink-glass-jars-1940s",
+    "cap": "1940s · a farm kitchen",
+    "vid": true
+   }
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 85.933,
+   "b": 119.3,
+   "n": 1
+  },
+  {
+   "a": 119.3,
+   "b": 210.533,
+   "n": 2
+  },
+  {
+   "a": 210.533,
+   "b": 248.163,
+   "n": 3
+  },
+  {
+   "a": 248.163,
+   "b": 309.327,
+   "n": 4
+  },
+  {
+   "a": 309.327,
+   "b": 347.677,
+   "n": 5
+  },
+  {
+   "a": 347.677,
+   "b": 386.183,
+   "n": 6
+  },
+  {
+   "a": 386.183,
+   "b": 435.0,
+   "n": 7
+  },
+  {
+   "a": 435.0,
+   "b": 493.48,
+   "n": 8
+  },
+  {
+   "a": 493.48,
+   "b": 533.5,
+   "n": 9
+  },
+  {
+   "a": 533.5,
+   "b": 582.823,
+   "n": 10
+  },
+  {
+   "a": 582.823,
+   "b": 631.547,
+   "n": 11
+  },
+  {
+   "a": 631.547,
+   "b": 679.67,
+   "n": 12
+  },
+  {
+   "a": 679.67,
+   "b": 761.82,
+   "n": 13
+  }
+ ],
+ "of": 13,
+ "word": "ITEM",
+ "hide": [
+  [
+   85.933,
+   94.47
+  ],
+  [
+   119.3,
+   129.767
+  ],
+  [
+   210.533,
+   218.893
+  ],
+  [
+   248.163,
+   257.623
+  ],
+  [
+   309.327,
+   316.947
+  ],
+  [
+   347.677,
+   356.784
+  ],
+  [
+   386.183,
+   394.244
+  ],
+  [
+   435.0,
+   442.34
+  ],
+  [
+   493.48,
+   500.786
+  ],
+  [
+   533.5,
+   544.2
+  ],
+  [
+   582.823,
+   589.943
+  ],
+  [
+   631.547,
+   640.133
+  ],
+  [
+   679.67,
+   688.357
+  ],
+  [
+   465.027,
+   480.46
+  ],
+  [
+   729.153,
+   738.083
+  ],
+  [
+   761.82,
+   772.034
+  ],
+  [
+   787.59,
+   797.25
+  ],
+  [
+   846.02,
+   853.244
+  ],
+  [
+   891.067,
+   901.54
+  ],
+  [
+   901.54,
+   910.757
+  ],
+  [
+   910.757,
+   920.36
+  ]
+ ]
+}
