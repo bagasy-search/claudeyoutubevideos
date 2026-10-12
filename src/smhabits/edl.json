@@ -1,0 +1,1706 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 3.933,
+"k": "img/smhabits/smhabits_thumb.jpg",
+"z": [
+1.0,
+1.06
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 3.933,
+"b": 10.96,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 10.96,
+"b": 17.773,
+"k": "l_kitchen_table_bible",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 17.773,
+"b": 22.743,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 22.743,
+"b": 30.04,
+"k": "n_bird_feeder",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 30.04,
+"b": 37.907,
+"k": "n_sunrise_table",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 37.907,
+"b": 42.094,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 42.094,
+"b": 47.83,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fair_crowd2",
+"vid": true,
+"cap": "1950 · a crowd gathers at the county fair",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 47.83,
+"b": 55.796,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 55.796,
+"b": 66.127,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "WHAT WE ARE DOING",
+"k": "n_bible_glasses",
+"items": [
+{
+"t": 57.0,
+"txt": "Five quiet habits"
+},
+{
+"t": 61.0,
+"txt": "One verse for each"
+},
+{
+"t": 65.0,
+"txt": "One small thing this week"
+}
+]
+}
+},
+{
+"a": 66.127,
+"b": 69.953,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 69.953,
+"b": 78.08,
+"k": "l_pew_window",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 78.08,
+"b": 86.06,
+"k": "n_empty_pew",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 86.06,
+"b": 91.1,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 91.1,
+"b": 96.04,
+"k": "n_radio_off",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 96.04,
+"b": 103.873,
+"k": "n_cemetery_hill",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 103.873,
+"b": 110.633,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 110.633,
+"b": 117.973,
+"k": "n_covered_dish_steps",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 117.973,
+"b": 125.867,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 125.867,
+"b": 133.637,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "dinner_table_setting",
+"vid": true,
+"cap": "1945 · a hostess sets the dinner table",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 133.637,
+"b": 140.927,
+"k": "n_ham_noodles",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 140.927,
+"b": 148.773,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 148.773,
+"b": 157.973,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "dinner_guests_talk",
+"vid": true,
+"cap": "1945 · dinner guests talking across the table",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 157.973,
+"b": 164.8,
+"k": "n_casseroles_counter",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 164.8,
+"b": 167.93,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 167.93,
+"b": 183.073,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_hands_bible",
+"verse": "Bear ye one another's burdens, and so fulfil the law of Christ.",
+"ref": "GALATIANS 6:2",
+"t": 168.8
+}
+},
+{
+"a": 183.073,
+"b": 188.933,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 188.933,
+"b": 195.683,
+"k": "l_sunday_table",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 195.683,
+"b": 203.827,
+"k": "l_porch_casserole",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 203.827,
+"b": 211.873,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 211.873,
+"b": 218.9,
+"k": "l_wall_phone",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 218.9,
+"b": 224.99,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 224.99,
+"b": 233.987,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 233.987,
+"b": 241.987,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fair_crowd",
+"vid": true,
+"cap": "1950 · a county fair crowd cheering the contest",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 241.987,
+"b": 248.037,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 248.037,
+"b": 256.093,
+"k": "l_fair_pie_ribbon",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 256.093,
+"b": 265.813,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fair_trophy",
+"vid": true,
+"cap": "1950 · judges hand over a trophy at the county fair",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 265.813,
+"b": 274.0,
+"k": "n_blue_ribbon_pie",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 274.0,
+"b": 282.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 282.0,
+"b": 290.437,
+"k": "l_fair_smile",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 290.437,
+"b": 305.94,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_blue_ribbon_pie",
+"verse": "Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.",
+"ref": "PHILIPPIANS 4:11",
+"t": 291.0
+}
+},
+{
+"a": 305.94,
+"b": 313.1,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 313.1,
+"b": 320.79,
+"k": "n_lid_pie_crust",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 320.79,
+"b": 329.987,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 329.987,
+"b": 337.987,
+"k": "n_fair_grounds",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 337.987,
+"b": 346.947,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 346.947,
+"b": 355.026,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "fair_wheelbarrow",
+"vid": true,
+"cap": "1950 · a wheelbarrow race at the county fair",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 355.026,
+"b": 362.693,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 362.693,
+"b": 371.913,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THIS WEEK",
+"k": "n_fair_grounds",
+"items": [
+{
+"t": 364.0,
+"txt": "Be glad out loud"
+},
+{
+"t": 368.0,
+"txt": "Tell her the pie looked beautiful"
+}
+]
+}
+},
+{
+"a": 371.913,
+"b": 381.44,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 381.44,
+"b": 392.197,
+"k": "",
+"c": "QrCard",
+"props": {
+"k": "img/smhabits/qr.jpg",
+"t": 383.0
+}
+},
+{
+"a": 392.197,
+"b": 397.84,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 397.84,
+"b": 403.23,
+"k": "n_cooler_tea",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 403.23,
+"b": 411.007,
+"k": "n_two_tables",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 411.007,
+"b": 420.283,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 420.283,
+"b": 427.86,
+"k": "l_hospital_hold",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 427.86,
+"b": 436.06,
+"k": "n_kitchen_phone",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 436.06,
+"b": 445.98,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 445.98,
+"b": 453.06,
+"k": "l_hands_pray",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 453.06,
+"b": 460.16,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 460.16,
+"b": 475.993,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_hands_bible",
+"verse": "And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you.",
+"ref": "EPHESIANS 4:32",
+"t": 460.8
+}
+},
+{
+"a": 475.993,
+"b": 484.54,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 484.54,
+"b": 491.967,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 491.967,
+"b": 500.007,
+"k": "n_two_cups",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 500.007,
+"b": 509.303,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 509.303,
+"b": 517.08,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "dinner_guests_smile",
+"vid": true,
+"cap": "1945 · dinner guests smiling at each other",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 517.08,
+"b": 522.053,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 522.053,
+"b": 527.807,
+"k": "n_grandkids_drawing",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 527.807,
+"b": 536.04,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 536.04,
+"b": 544.94,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "dinner_guests_talk2",
+"vid": true,
+"cap": "1945 · dinner guests talking across the table",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 544.94,
+"b": 554.367,
+"k": "l_basement_urn",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 554.367,
+"b": 561.827,
+"k": "n_urn_basement",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 561.827,
+"b": 572.067,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 572.067,
+"b": 580.013,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "dinner_guests_eat",
+"vid": true,
+"cap": "1945 · dinner guests eating at a laid table",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 580.013,
+"b": 587.993,
+"k": "n_percolator",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 587.993,
+"b": 604.14,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_wooden_spoon",
+"verse": "Death and life are in the power of the tongue.",
+"ref": "PROVERBS 18:21",
+"t": 588.8
+}
+},
+{
+"a": 604.14,
+"b": 609.9,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 609.9,
+"b": 616.16,
+"k": "n_bread_loaf",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 616.16,
+"b": 624.933,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 624.933,
+"b": 633.1,
+"k": "n_stained_glass",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 633.1,
+"b": 640.987,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 640.987,
+"b": 647.957,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "dinner_table_setting2",
+"vid": true,
+"cap": "1945 · the table set for guests",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 647.957,
+"b": 657.147,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THIS WEEK",
+"k": "n_worn_pew_wood",
+"items": [
+{
+"t": 649.0,
+"txt": "Say nothing you wouldn't say to their face"
+}
+]
+}
+},
+{
+"a": 657.147,
+"b": 665.04,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 665.04,
+"b": 672.78,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 672.78,
+"b": 680.927,
+"k": "n_penciled_calendar",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 680.927,
+"b": 688.96,
+"k": "l_kitchen_stand",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 688.96,
+"b": 697.006,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 697.006,
+"b": 704.973,
+"k": "l_window_sunrise",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 704.973,
+"b": 713.1,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 713.1,
+"b": 721.053,
+"k": "",
+"c": "Arc",
+"props": {
+"src": "dinner_guests_eat2",
+"vid": true,
+"cap": "1945 · guests eating a quiet meal together",
+"credit": "Prelinger Archives · Dinner Party (1945) / county fair (1950) · Public domain"
+}
+},
+{
+"a": 721.053,
+"b": 729.153,
+"k": "l_quiet_mug",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 729.153,
+"b": 735.887,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 735.887,
+"b": 741.857,
+"k": "n_quiet_kitchen",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 741.857,
+"b": 756.02,
+"k": "",
+"c": "VerseCard",
+"props": {
+"k": "n_cross_wall",
+"verse": "Be still, and know that I am God.",
+"ref": "PSALM 46:10",
+"t": 742.5
+}
+},
+{
+"a": 756.02,
+"b": 762.113,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 762.113,
+"b": 769.827,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 769.827,
+"b": 777.087,
+"k": "n_kettle_stove",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 777.087,
+"b": 784.07,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 784.07,
+"b": 792.06,
+"k": "l_pew_reading",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 792.06,
+"b": 799.787,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 799.787,
+"b": 808.21,
+"k": "n_handwritten_card",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 808.21,
+"b": 817.92,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 817.92,
+"b": 826.64,
+"k": "n_cornfield_road",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 826.64,
+"b": 856.5,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "THE FIVE",
+"k": "n_empty_chair",
+"items": [
+{
+"t": 828.0,
+"txt": "Forget the hurting"
+},
+{
+"t": 832.0,
+"txt": "Comparing"
+},
+{
+"t": 836.0,
+"txt": "Grudges"
+},
+{
+"t": 840.0,
+"txt": "Gossip"
+},
+{
+"t": 844.0,
+"txt": "Never being still"
+}
+]
+}
+},
+{
+"a": 856.5,
+"b": 861.08,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 861.08,
+"b": 866.087,
+"k": "n_sink_cups",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 866.087,
+"b": 874.917,
+"k": "n_worn_pew_wood",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 874.917,
+"b": 884.58,
+"k": "",
+"c": "Comment",
+"props": {
+"q": "Which habit made you wince?",
+"opts": [
+{
+"txt": "Forgetting",
+"t": 878.0
+},
+{
+"txt": "Comparing",
+"t": 881.0
+},
+{
+"txt": "Gossip",
+"t": 884.0
+}
+],
+"k": "n_apple_tree"
+}
+},
+{
+"a": 884.58,
+"b": 888.82,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 888.82,
+"b": 893.97,
+"k": "n_porch_swing",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 893.97,
+"b": 909.913,
+"k": "",
+"c": "PrayerLines",
+"props": {
+"k": "n_hymnal_margins",
+"head": "FOLD YOUR HANDS WITH ME",
+"lines": [
+{
+"t": 896.0,
+"txt": "Soften our hearts, Lord, before it's too late."
+},
+{
+"t": 903.0,
+"txt": "Set a watch over our mouths."
+},
+{
+"t": 909.0,
+"txt": "Be with us in the stillness."
+}
+]
+}
+},
+{
+"a": 909.913,
+"b": 915.853,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 915.853,
+"b": 921.97,
+"k": "n_sunday_roast",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 921.97,
+"b": 933.62,
+"k": "l_fridge_photos",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 933.62,
+"b": 947.0,
+"k": "av",
+"av": true,
+"z": [
+1.12,
+1.16
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 947.0,
+"b": 958.08,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+34
+]
+},
+{
+"a": 958.08,
+"b": 967.16,
+"k": "n_thermos_coffee",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 967.16,
+"b": 979.83,
+"k": "l_backdoor_wave",
+"z": [
+1.0,
+1.08
+],
+"o": [
+50,
+50
+]
+}
+],
+"sfx": [
+[
+55.8,
+"design/paper_slide",
+0.25
+],
+[
+167.93,
+"design/page_turn_big",
+0.3
+],
+[
+290.44,
+"design/page_turn_big",
+0.3
+],
+[
+362.69,
+"design/paper_slide",
+0.25
+],
+[
+381.44,
+"design/click_slide",
+0.25
+],
+[
+460.16,
+"design/page_turn_big",
+0.3
+],
+[
+587.99,
+"design/page_turn_big",
+0.3
+],
+[
+647.96,
+"design/paper_slide",
+0.25
+],
+[
+741.86,
+"design/page_turn_big",
+0.3
+],
+[
+826.64,
+"design/paper_slide",
+0.25
+],
+[
+874.92,
+"design/click_slide",
+0.22
+],
+[
+893.97,
+"design/paper_slide",
+0.2
+]
+],
+"end": 979.83
+}
