@@ -145,7 +145,7 @@ for (const sec of secciones) {
   const comps = cfg.COMPONENTES.filter((c) => c.p >= sec.p0 && c.p <= sec.p1)
     // ⭐ `c.dur` (opcional) = el tiempo que necesita la ANIMACIÓN de un componente de motion design (un
     //    borrado con cuenta regresiva no se lee en 2,8 s). Nunca baja del piso de LECTURA del texto.
-    .map((c) => ({ ...c, t: tPara(c.p), dur: Math.min(c.dur ? 40 : 13, Math.max(lectura(c.props), +c.dur || 0)) }))
+    .map((c) => ({ ...c, t: (c.q && guion.indexOf(c.q) >= 0) ? tDeChar(guion.indexOf(c.q)) : tPara(c.p), dur: Math.min(c.dur ? 40 : 13, Math.max(lectura(c.props), +c.dur || 0)) }))
     .sort((a, b) => a.t - b.t);
 
   // ⛔⛔ LOS COMPONENTES SE RESERVAN PRIMERO Y LOS PLANOS SE TEJEN ALREDEDOR. Buscarlos mientras
