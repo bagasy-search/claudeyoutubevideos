@@ -99,8 +99,11 @@ export const MapPin: React.FC<{
         {pins.map((p, i) => {
           const a = prog(now, p.at ?? start + 0.6, 0.5);
           const pulse = 1 + 0.35 * ((now * 1.3 + i * 0.37) % 1);
-          const sx = 960 + (p.x - c.x) * S;          // dónde cae el alfiler EN PANTALLA
-          const izq = sx > 1200;                      // ⛔ cerca del borde derecho el rótulo va a la izquierda (se cortaba)
+          // dónde cae el alfiler EN PANTALLA — con el MISMO recorte de bordes que camStyle (sin él daba 960 y no giraba)
+          const tx = Math.min(0, Math.max(1920 - 1920 * S, 960 - c.x * S));
+          const sx = tx + p.x * S;
+          const anchoRot = 34 + 32 + (p.label?.length ?? 0) * 25; // F_TYPE 40 px ≈ 25 px por letra
+          const izq = sx + anchoRot > 1880;           // ⛔ si no entra a la derecha, el rótulo va a la izquierda (se cortaba)
           if (a <= 0) return null;
           return (
             <div key={i} style={{ position: "absolute", left: p.x, top: p.y, transform: `scale(${(1 / S).toFixed(4)})`, transformOrigin: "0 0" }}>

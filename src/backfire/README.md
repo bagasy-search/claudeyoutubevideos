@@ -41,5 +41,5 @@ import them from `../backfire/<Name>` in your `_v3/<slug>_cfg.mjs` → `IMPORTS`
 - No brands, no logos, no readable product names in any image. One image/clip appears ONCE per video.
 - Text on screen is short: notes 3–5 words, SplitVs 2–7 words per side, quotes verbatim.
 - Stills or it didn't happen: render entry / each beat +0.3 s / exit of every component you place and LOOK at them
-  (`node scripts/kit_stills.mjs` for isolated tests, `_v3/stills.mjs` for the built video).
+  (`node scripts/kit_stills.mjs` for isolated tests, `node scripts/video_stills.mjs <slug> <outDir> <secs|@file> 0.3` for the built video: 4x4 sheets `_hoja_NN.jpg` with the second written on each tile).
 - Preview with real sample material: `src/index_wbkit.tsx` (compositions K*). Reference stills: `D:/rtmp/walt/_kit/st2/`.
