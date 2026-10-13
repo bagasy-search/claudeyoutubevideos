@@ -54,6 +54,7 @@ broll/rkspare/av_w052.mp4
 broll/rkspare/av_w053.mp4
 broll/rkspare/av_w054.mp4
 broll/rkspare/av_w055.mp4
+img/rkspare_landing.jpg
 img/rkspare_o01_rock_open.jpg
 img/rkspare_o01_rock_open_blur.jpg
 img/rkspare_o02_rock_real.jpg
@@ -84,6 +85,7 @@ img/rkspare_o16_strike_screws.jpg
 img/rkspare_o16_strike_screws_blur.jpg
 img/rkspare_o17_short_vs_long.jpg
 img/rkspare_o17_short_vs_long_blur.jpg
+img/rkspare_o20_keypad_deadbolt.jpg
 img/rkspare_o21_keypad_close.jpg
 img/rkspare_o21_keypad_close_blur.jpg
 img/rkspare_o23_policy_folder.jpg
@@ -118,6 +120,7 @@ img/rkspare_o43_fern_lean.jpg
 img/rkspare_o43_fern_lean_blur.jpg
 img/rkspare_o45_neighbor_drive.jpg
 img/rkspare_o45_neighbor_drive_blur.jpg
+img/rkspare_qr.jpg
 img/rkspare_qr.png
 img/rkspare_r01_fakerock.jpg
 img/rkspare_r01_fakerock_blur.jpg
@@ -138,6 +141,7 @@ img/rkspare_r11_measure_screw.jpg
 img/rkspare_r11_measure_screw_blur.jpg
 img/rkspare_r12_lockbox_mount.jpg
 img/rkspare_r12_lockbox_mount_blur.jpg
+img/rkspare_r13_keypad.jpg
 img/rkspare_r14_neighbor_key.jpg
 img/rkspare_r14_neighbor_key_blur.jpg
 img/rkspare_r15_insurance_folder_blur.jpg
@@ -169,5 +173,7 @@ img/rkspare_r45_envelope_numbers.jpg
 img/rkspare_r45_envelope_numbers_blur.jpg
 img/rkspare_r46_yard_walk.jpg
 img/rkspare_r46_yard_walk_blur.jpg
+img/rkspare_r49_rock_back.jpg
 img/rkspare_r50_van_wave_blur.jpg
+img/rkspare_thumb.jpg
 rkspare.m4a
