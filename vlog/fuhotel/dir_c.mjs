@@ -25,4 +25,7 @@ export const SHOTS = [
   S(7, "entran los proveedores", "bi", "bi_suppliers_door", { q: "delivery van restaurant", p: BI("A delivery van parked behind a restaurant, its rear door open, crates stacked by the kitchen door.") }),
   S(4, "en casas, restaurantes", "bi", "bi_houses_rest", { p: BI("A pest control technician's bag leaning by a kitchen door in a plain house, the kitchen light on.") }),
   S(1, "en las ventanas de la cocina", "bi", "bi_kitchen_windows", { q: "restaurant kitchen window", p: BI("A restaurant kitchen's row of tall windows, all without screens, bright daylight across the steel counters.") }),
+  // minuto 1: dos tomas en los huecos de ~3 s
+  S(3, "paso por paso", "bi", "bi_step_by_step", { p: BI("Close view of a hand pointing at a line on a printed booklet page, a half lemon nearby on the table.") }),
+  S(5, "no mata la mosca que ya está volando", "bi", "bi_fly_ceiling", { p: BI("A fly landing on a kitchen ceiling light fixture, a bright white ceiling, the room below out of frame.") }),
 ];

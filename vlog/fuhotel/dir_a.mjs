@@ -7,7 +7,6 @@ const C = (p, at, name, props = {}, o = {}) => S(p, at, "c", name, { props, ...o
 const SHOTS0 = [
   // ── 0-4 · gancho: la miniatura (Claudio en la ventana con el limón) y el porqué
   S(0, "", "cl", "cl_hook_window", { p: CLP("leaning on the counter at an open kitchen window, holding half a lemon studded with whole cloves up in one hand, a small basil plant in a pot on the sill below the window, smiling at the camera; the light of the afternoon comes in from outside, and a white tiled wall and shelf are behind him.") }),
-  S(0, "En las cocinas de hotel", "bi", "st_hotelkitchen", { q: "restaurant kitchen stainless steel", p: BI("A busy restaurant kitchen at lunch: stainless steel prep counters, hanging pans, a cook's back turned, a closed door at the far end.") }),
   S(0, "el spray cae encima de la comida", "bi", "bi_spraymist", { q: "insecticide spray kitchen", p: BI("A stainless steel tray with cut tomatoes and lettuce on a prep counter, a fine mist of insecticide spray drifting down over the food.") }),
   S(1, "Tampoco tienen mosquiteros", "bi", "bi_nomesh", { q: "restaurant kitchen window", p: BI("A restaurant kitchen window with the glass pane open and no screen, a steel shelf beside it with clean pots.") }),
   S(1, "¿cómo hacen para que las moscas no entren?", "cl", "cl_thinking", { p: CLP("standing in a restaurant kitchen by a back door, arms crossed, looking down at the floor thoughtfully, a stainless steel shelf behind him.") }),
