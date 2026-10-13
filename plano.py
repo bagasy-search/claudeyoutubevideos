@@ -439,8 +439,8 @@ if __name__ == "__main__":
     if k == "graf":
         import graf; graf.render(sh, DUR, OUT, PREV)
     else:
-        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom", "reloj", "gota", "split", "tipos", "potencias", "cables", "fotomaqueta", "eras", "revela", "lamina_ov", "tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia", "trazo", "viscosidad", "bolilla", "presion", "capilar", "altura", "olla", "columpio", "direccion", "cambios", "carburador", "freno", "vasos", "pava", "onda", "latas", "microfono", "vinilo", "toalla", "horas"):
-            import comp, comp2, comp3, comp4, comp5, comp6, comp9, comp10, comp11; p = writer()
+        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom", "reloj", "gota", "split", "tipos", "potencias", "cables", "fotomaqueta", "eras", "revela", "lamina_ov", "tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia", "trazo", "viscosidad", "bolilla", "presion", "capilar", "altura", "olla", "columpio", "direccion", "cambios", "carburador", "freno", "vasos", "pava", "onda", "latas", "microfono", "vinilo", "toalla", "horas", "promedio", "manos", "nervios", "ejercito", "llave", "halo", "trafico", "canilla", "director", "rayos", "celulas", "parabrisas"):
+            import comp, comp2, comp3, comp4, comp5, comp6, comp9, comp10, comp11, comp12; p = writer()
             {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse, "doc3d": comp2.r_doc3d, "mapamesa": comp2.r_mapamesa,
              "retrato": comp2.r_retrato, "match": comp2.r_match, "rail": comp2.r_rail, "persiana": comp2.r_persiana, "periodico": comp2.r_periodico,
              "balanza": comp2.r_balanza, "particulas": comp2.r_particulas, "fotolupa": comp3.r_fotolupa, "flujo": comp3.r_flujo, "capitulo": comp4.r_capitulo, "microscopio": comp4.r_microscopio,
@@ -450,7 +450,8 @@ if __name__ == "__main__":
              **{n: getattr(comp6, "r_" + n) for n in ("tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia")},
              **{n: getattr(comp9, "r_" + n) for n in ("trazo", "viscosidad", "bolilla", "presion", "capilar", "altura")},
              **{n: getattr(comp10, "r_" + n) for n in ("olla", "columpio", "direccion", "cambios", "carburador", "freno", "vasos", "pava")},
-             **{n: getattr(comp11, "r_" + n) for n in ("onda", "latas", "microfono", "vinilo", "toalla", "horas")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
+             **{n: getattr(comp11, "r_" + n) for n in ("onda", "latas", "microfono", "vinilo", "toalla", "horas")},
+             **{n: getattr(comp12, "r_" + n) for n in ("promedio", "manos", "nervios", "ejercito", "llave", "halo", "trafico", "canilla", "director", "rayos", "celulas", "parabrisas")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
             p.stdin.close(); p.wait()
         elif k == "mapa3d":
             import mapa3d; p = writer()                                  # tgbiro 2ª pasada: mapa 3D tallado con geografía real
