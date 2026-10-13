@@ -125,13 +125,13 @@ const secciones = cfg.SECCIONES.map((s, i, arr) => ({
 const poolPorSec = {};
 for (const it of ITEMS) (poolPorSec[it.sec] ||= []).push({
   id: SLUG + '_' + it.id, lugar: it.lugar, hayClip: clipsEnDisco.has(SLUG + '_' + it.id),
-  tokens: tokensDe(it.prompt),
+  tokens: tokensDe(it.prompt + " " + (it.tags || "")), rfoto: !!it.rfoto, credit: it.credit,
 });
 let nReal = 0;
 for (const it of REAL) {
   const id = SLUG + '_' + it.id;
   if (!realEnDisco.has(id)) continue;
-  (poolPorSec[it.sec] ||= []).push({ id, lugar: it.lugar, hayClip: true, real: true, tokens: tokensDe(it.prompt) });
+  (poolPorSec[it.sec] ||= []).push({ id, lugar: it.lugar, hayClip: true, real: true, tokens: tokensDe(it.prompt + " " + (it.tags || "")) });
   nReal++;
 }
 console.log('metraje REAL disponible: ' + nReal + ' clips de ' + REAL.length + ' declarados');
@@ -140,6 +140,7 @@ console.log('metraje REAL disponible: ' + nReal + ' clips de ' + REAL.length + '
 const beats = [];
 const compsUsados = [];
 const usadosPool = {};
+const usadosTodos = new Set();   // ningun plano se repite en el video (regla: una vez por video)
 const cursorPool = {};
 // ⛔ NUNCA REPETIR UN CLIP (regla del creador, todos los canales). El pool de fotos sí se puede
 //    reusar dentro de una sección; el CLIP no: agnes_qc bloquea el render si un mp4 aparece dos veces.
@@ -209,27 +210,37 @@ for (const sec of secciones) {
       usadosPool[sec.sec] ||= new Set();
       const used = usadosPool[sec.sec];
       if (used.size >= pool.length) used.clear();
-      const forz = (cfg.ORDEN_FORZADO[sec.sec] || []).find((id) => !used.has(id));
+      const forz = (cfg.ORDEN_FORZADO[sec.sec] || []).find((id) => !used.has(id) && !usadosTodos.has(id));
       let elegido = forz ? pool.find((c) => c.id === forz) : null;
       if (!elegido) {
         // sustantivos de la frase que suena EN ESTA ventana
         const sust = words.filter((w) => w.t >= t && w.t < t + (esc[(k - 1) % esc.length] || 4))
           .map((w) => w.w).filter((w) => w.length > 3 && !VACIAS.has(w));
         const anterior = beats.length ? (beats[beats.length - 1].asset || '') : '';
+        // primera persona / oficina de Walt en la frase que suena: yo, mi, mis, oficina, mapa, notas, pines
+        const primeraPersona = words.filter((w) => w.t >= t && w.t < t + (esc[(k - 1) % esc.length] || 4))
+          .some((w) => /^(i|i'm|my|me|mine|office|map|notes?|pins?|desk|handwriting|reports?)$/i.test(w.w));
         // ⛔ y con el puntaje empatado, gana el que CAMBIA DE LUGAR: minutos enteros en el mismo
         //    rincón no los ve ningún número suelto, sólo la hoja de contactos (pinvacas: 50 seguidos).
         const lugarPrev = beats.length ? beats[beats.length - 1].lugar : null;
         // ⭐ el metraje REAL gana los empates: es el 25 % que la vara del pipeline exige y es lo
         //    único del pool que no lo dibujó una máquina.
         const mejorDe = (cands) => cands
-          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? REAL_BONUS : 0) }))
+          .map((c) => {
+            const p = puntaje(sust, c.tokens);
+            // REAL: el bonus sólo cuenta si el plano COINCIDE con la frase (p>=1); si no, un real sin relación ganaba por desempate.
+            // WALT: en la frase en primera persona (yo/mi/oficina/mapa/notas) la foto de Walt gana el desempate.
+            const walt = /wbmongoose_[wf]\d/.test(c.id);
+            return { c, s: p + (c.real && p >= 1 ? REAL_BONUS : 0) + (walt && primeraPersona ? 1 : 0) };
+          })
           .sort((a, b) => b.s - a.s)[0]?.c;
-        const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id));
+        const base = process.env.MATCH_GLOBAL ? todos : pool;   // MATCH_GLOBAL=1: elige entre TODO el pool por coincidencia de la frase
+        const libres2 = base.filter((c) => !used.has(c.id) && !anterior.includes(c.id) && !usadosTodos.has(c.id));
         // ⛔ un item REAL no tiene foto: sólo puede entrar en un slot de CLIP
         const soloFoto = (l) => l.filter((c) => !c.real);
         const clipOk = (c) => c.hayClip && !clipsUsados.has(c.id) && (quiereClip || (c.real && admiteReal));
         elegido = mejorDe(libres2.filter(clipOk))
-          || mejorDe(soloFoto(libres2)) || mejorDe(soloFoto(pool.filter((c) => !used.has(c.id))));
+          || mejorDe(soloFoto(libres2)) || mejorDe(soloFoto(pool.filter((c) => !used.has(c.id) && !usadosTodos.has(c.id))));
         // ⛔ UNA SECCIÓN CORTA DE POOL SE REPITE SOLA. S6 (el dintel) tiene 7 planos para 13 slots:
         //    ciclaba los mismos siete. Cuando el propio pool no aporta NADA a la frase, se busca en
         //    TODO el pool del video el plano que sí comparta sustantivos con lo que se está diciendo
@@ -237,16 +248,18 @@ for (const sec of secciones) {
         const puntajeDe = (c) => (c ? puntaje(sust, c.tokens) : -1);
         if (puntajeDe(elegido) < 1 && sust.length) {
           const recientes = new Set(beats.slice(-14).map((b) => (b.asset || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '')));
-          const global = todos.filter((c) => !recientes.has(c.id) && (c.real ? (admiteReal && !clipsUsados.has(c.id)) : (!quiereClip || (c.hayClip && !clipsUsados.has(c.id)))));
+          const global = todos.filter((c) => !recientes.has(c.id) && !usadosTodos.has(c.id) && (c.real ? (admiteReal && !clipsUsados.has(c.id)) : (!quiereClip || (c.hayClip && !clipsUsados.has(c.id)))));
           const g = mejorDe(global);
           if (puntajeDe(g) > puntajeDe(elegido)) elegido = g;
         }
       }
-      if (!elegido) { used.clear(); elegido = pool.filter((c) => !c.real)[0] || pool[0]; } // fix: soloFoto vivía en otro bloque
+      if (!elegido) { used.clear(); elegido = pool.filter((c) => !c.real && !usadosTodos.has(c.id))[0] || todos.find((c) => !usadosTodos.has(c.id)) || pool.filter((c) => !c.real)[0] || pool[0]; } // fix: soloFoto vivía en otro bloque
       if (!elegido) break;
-      used.add(elegido.id);
+      used.add(elegido.id); usadosTodos.add(elegido.id);
 
-      const usaClip = elegido.hayClip && !clipsUsados.has(elegido.id) && (quiereClip || (elegido.real && admiteReal));
+      // ORDEN_FORZADO de un clip real: entra como CLIP aunque el slot sea corto (rm01 abre S1 antes de 10 s)
+      const forzadoReal = !!(elegido.real && (cfg.ORDEN_FORZADO[sec.sec] || []).includes(elegido.id));
+      const usaClip = elegido.hayClip && !clipsUsados.has(elegido.id) && (quiereClip || (elegido.real && admiteReal) || forzadoReal);
       if (usaClip) clipsUsados.add(elegido.id);
       // ⛔ LA VELOCIDAD SE DECIDE CON LA DURACIÓN PLANEADA, NO CON LA RECORTADA. Medido acá: un slot
       //    de 8,07 (clip a 0,5×) recortado a 7,02 por el borde de sección dejaba de parecerse a 8,07,
@@ -259,7 +272,7 @@ for (const sec of secciones) {
       if (dur < 1.2) break;
       beats.push({
         t: +t.toFixed(3), dur: +dur.toFixed(3), sec: sec.sec, lugar: elegido.lugar,
-        kind: usaClip ? 'clip' : 'imagen', real: esReal || undefined,
+        kind: usaClip ? 'clip' : 'imagen', real: esReal || (elegido.rfoto ? true : undefined), credit: elegido.rfoto ? elegido.credit : undefined,
         asset: usaClip ? `broll/${SLUG}${esReal ? '_real' : ''}/${elegido.id}.mp4` : `img/${elegido.id}.jpg`,
         rate,
       });
@@ -292,7 +305,8 @@ if (AVATAR_END > 1) {
   //    avatar se abre sobre una FOTO, que sobra.
   // ⭐ el techo del plano que se puede ceder a una ventana sale del cfg (AVATAR_CAND_MAX): con una escalera
   //    larga (mediana ~5 s) el 6,5 fijo se quedaba sin candidatos y el avatar no pasaba del 20 %.
-  const candidatos = t1.filter((b) => b.kind !== 'componente' && !b.real && b.dur <= (cfg.AVATAR_CAND_MAX ?? 6.5) && !(b.asset && protegidos.has(idDe(b.asset))))
+  const realSobra = (t1.filter((b) => b.real).reduce((x, b) => x + b.dur, 0) / TOTAL) > (cfg.REAL_OBJ_MAX ?? 0.45);   // real por encima de 45 %: un plano real puede ceder su lugar a una ventana de Walt
+  const candidatos = t1.filter((b) => b.kind !== 'componente' && (!b.real || realSobra) && b.dur <= (cfg.AVATAR_CAND_MAX ?? 6.5) && !(b.asset && protegidos.has(idDe(b.asset))))
     .sort((a, b) => (inicios.has(b.t) ? 1 : 0) - (inicios.has(a.t) ? 1 : 0));
   const paso = Math.max(1, Math.floor(candidatos.length / Math.max(1, Math.ceil(sobra / 4.5))));
   for (let i = 0; i < candidatos.length && sobra > 0; i += paso) { candidatos[i]._quitar = true; sobra -= candidatos[i].dur; quitados++; }
