@@ -1,8 +1,8 @@
-// sachiko1 (desde ckeggs) · componentes nuevos (Claude, 11-oct-2026). Público mayor: planos largos, movimiento lento, texto grande y poco.
+// Sachiko's Kitchen · componentes (desde sachiko1). Público mayor: planos largos, movimiento lento, texto grande y poco.
 // Mismas reglas del kit: a = segundo de entrada, d = cuadros, los tiempos de las props son segundos absolutos de la voz.
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame } from "remotion";
-import { SERIF, LABEL, HAND, fr, cl, ez, eo, lin, img, C, Grade, Grain, Mark, Print, Chip, Bed, Stage, sp } from "./Base";
+import { SERIF, LABEL, HAND, fr, cl, ez, eo, lin, img, C, Grade, Grain, Mark, Print, Chip, Bed, Stage, sp, slug } from "./Base";
 
 type P<T> = React.FC<T & { a: number; d: number }>;
 const useT = (a: number) => { const f = useCurrentFrame(); return { f, at: (t: number) => fr(t) - fr(a) }; };
@@ -11,7 +11,7 @@ const shadowTxt = "0 6px 26px rgba(0,0,0,0.65)";
 const Full: React.FC<{ k: string; vid?: boolean; f: number; d: number; o?: string; dim?: number }> = ({ k, vid, f, d, o = "50% 50%", dim = 0 }) => (
   <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
     <AbsoluteFill style={{ transform: vid ? undefined : `scale(${1.04 + 0.08 * f / Math.max(1, d)})`, transformOrigin: o, filter: dim ? `brightness(${1 - dim})` : undefined }}>
-      {vid ? <OffthreadVideo src={staticFile(`clips/${k}.mp4`)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      {vid ? <OffthreadVideo src={staticFile(`clips/${slug()}/${k}.mp4`)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         : <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />}
     </AbsoluteFill>
   </AbsoluteFill>
@@ -165,13 +165,12 @@ export const Arc: P<{ src: string; vid?: boolean; cap: string; big?: string; cre
   const wx = Math.sin(f * 1.7) * 1.2 + Math.sin(f * 0.37) * 0.8, wy = Math.cos(f * 2.3) * 0.9;
   const fl = 1 + 0.035 * Math.sin(f * 3.1) * Math.sin(f * 0.7);
   const W = big ? 1180 : 1360, H = W * 0.75, X = big ? 690 : 960;
-  const media = (st: React.CSSProperties) => vid ? <OffthreadVideo src={staticFile(`arc/${src}.mp4`)} muted style={st} /> : <Img src={img(`img/sachiko1/${src}.jpg`)} style={st} />;
+  const media = (st: React.CSSProperties) => vid ? <OffthreadVideo src={staticFile(`arc/${slug()}/${src}.mp4`)} muted style={st} /> : <Img src={img(`img/${slug()}/${src}.jpg`)} style={st} />;
   return (
     <AbsoluteFill style={{ backgroundColor: "#0d0b09", overflow: "hidden" }}>
       <AbsoluteFill style={{ filter: "blur(30px) brightness(0.35) saturate(0.7)", transform: "scale(1.3)" }}>{media({ width: "100%", height: "100%", objectFit: "cover" })}</AbsoluteFill>
       <div style={{ position: "absolute", left: X, top: 540, width: W, height: vid ? H : H, translate: "-50% -50%", transform: `translate(${wx}px, ${wy}px) scale(${1 + 0.03 * f / d})`, boxShadow: "0 50px 100px rgba(0,0,0,0.7)", overflow: "hidden", borderRadius: vid ? 10 : 3, outline: vid ? undefined : "14px solid #FFFDF8" }}>
-        <div style={{ width: "100%", height: "100%", filter: `brightness(${fl}) contrast(1.04)` }}>{media({ width: "100%", height: "100%", objectFit: "cover" })}</div>
-        <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.45) 100%)" }} />
+        <div style={{ width: "100%", height: "100%", }}>{media({ width: "100%", height: "100%", objectFit: "cover" })}</div>
       </div>
       <div style={{ position: "absolute", left: X - W / 2 - 20, bottom: 40, opacity: c, transform: `translateY(${(1 - c) * 30}px) rotate(-1.5deg)`, display: "flex", gap: 14, alignItems: "center" }}>
         <Chip txt={vid ? "REAL FOOTAGE" : "REAL PHOTO"} size={30} bg={C.red} color="#fff" rot={0} />
@@ -386,4 +385,4 @@ export const PageTwenty: P<{ k: string; bed: string; reveal: number; step: numbe
   );
 };
 
-export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, VerseCard, PrayerLines, FirstPlate, Everybody, PageTwenty };
+export const NEW: Record<string, React.FC<any>> = { DropOpen, HalfDoor, GrainMacro, GrainDir, DoDont, Careful, Arc, FirstPlate, Everybody, PageTwenty };

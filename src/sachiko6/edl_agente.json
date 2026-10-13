@@ -1,0 +1,2989 @@
+{
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 3.0,
+   "k": "img/sachiko6/sachiko6_thumb.jpg",
+   "c": "OpenThumb",
+   "props": {
+    "k": "img/sachiko6/sachiko6_thumb.jpg",
+    "focus": [
+     50,
+     50
+    ]
+   },
+   "text": "Look at this soft loaf"
+  },
+  {
+   "a": 3.0,
+   "b": 10.0,
+   "k": "p_plate_toast",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_plate_toast"
+   },
+   "text": "hook"
+  },
+  {
+   "a": 10.0,
+   "b": 16.27,
+   "k": "pd_bake_racks3",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_racks3",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Look at this soft loaf, and look at the hard slice beside it. Same flour, same oven, very different bread. And in my hand, a small pan of white paste. That past"
+  },
+  {
+   "a": 16.27,
+   "b": 22.71,
+   "k": "pd_bake_rack2",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_rack2",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Maybe you bought a soft loaf last week. By Thursday it was dry on the outside and tough on the edges. By Sunday you were throwing half of it away, and you told "
+  },
+  {
+   "a": 22.71,
+   "b": 35.17,
+   "k": "p_old_bakery",
+   "c": null,
+   "props": {},
+   "text": "By Sunday you were throwing half of it away, and you told yourself the bread is just not good anymore. It was never you. Bread like that is hard to keep soft, a"
+  },
+  {
+   "a": 35.17,
+   "b": 49.38,
+   "k": "pd_bake_rack4",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_rack4",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "I will show you seven things today. First, the little paste that keeps the whole loaf soft. Second, the four main ingredients, and how the salt and butter fit i"
+  },
+  {
+   "a": 49.38,
+   "b": 60.34,
+   "k": "pd_bake_c150",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c150",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Fourth, the windowpane test, which tells you when the dough is ready. Fifth, the pan and the rise. Sixth, how to cool the bread so it does not turn soggy."
+  },
+  {
+   "a": 60.34,
+   "b": 65.35,
+   "k": "mo_b1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_b1"
+   },
+   "text": "And seventh, how to keep it soft for a week, and the honest truth about mold."
+  },
+  {
+   "a": 65.35,
+   "b": 79.82,
+   "k": "pd_bake_c90",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c90",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "I also want to tell you about one mistake that makes everyone's bread come out like a brick. I made it myself, in 1970, in a tiny American apartment oven, and I"
+  },
+  {
+   "a": 79.82,
+   "b": 91.45,
+   "k": "pd_bake_cake2",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_cake2",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "The bread takes a long time to make, but my hands are slow now, and yours can be slow too. That is fine. You know me. I am Sachiko, and I am seventy eight years"
+  },
+  {
+   "a": 91.45,
+   "b": 100.35,
+   "k": "p_old_kitchen_japan",
+   "c": null,
+   "props": {},
+   "text": "Come, sit with me at the table, and let me show you my hands. I was born in Osaka in 1948, three years after the war ended."
+  },
+  {
+   "a": 100.35,
+   "b": 109.85,
+   "k": "e_cloud1",
+   "c": "Chapter",
+   "props": {
+    "n": "2",
+    "title": "WHO I AM",
+    "label": "PART",
+    "k": "e_cloud1",
+    "av": false
+   },
+   "text": "When I was a girl, my mother's kitchen always smelled of dashi, the soup stock she made from dried fish and seaweed, every morning before the sun came over the "
+  },
+  {
+   "a": 109.85,
+   "b": 125.94,
+   "k": "pd_bake_loaves",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_loaves",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Her kitchen had a window with a crack in the corner, and in the rainy season the wall beside it was always cool to touch. I can still feel that wall with my pal"
+  },
+  {
+   "a": 125.94,
+   "b": 144.25,
+   "k": "pd_bake_cook",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_cook",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "The word pan came from the Portuguese word pao, because bread came to Japan with the Portuguese traders, hundreds of years ago. So in Japan, a bread that is sof"
+  },
+  {
+   "a": 144.25,
+   "b": 152.05,
+   "k": "c_bag1",
+   "c": "Chapter",
+   "props": {
+    "n": "3",
+    "title": "WHERE IT COMES FROM",
+    "label": "PART",
+    "k": "c_bag1",
+    "av": false
+   },
+   "text": "My mother was born in 1921, and she lived through the hungry years, first the war and then the years after it."
+  },
+  {
+   "a": 152.05,
+   "b": 162.47,
+   "k": "c_butter1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_butter1"
+   },
+   "text": "She told me about them many times, and I will tell you what she told me, as she told it, because I was born after the war and I never went hungry the way she di"
+  },
+  {
+   "a": 162.47,
+   "b": 176.6,
+   "k": "pd_bake_dough2",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_dough2",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "In those years there was not enough rice, and bread was a luxury for many families, not an everyday food. She said the first thing she ever ate from a white loa"
+  },
+  {
+   "a": 176.6,
+   "b": 187.55,
+   "k": "pd_bake_pans3",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_pans3",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Her younger brother came home with a square of bread wrapped in paper, and a little paper cup of milk powder. The milk tasted like warm chalk, she said, but the"
+  },
+  {
+   "a": 187.55,
+   "b": 200.57,
+   "k": "pd_bake_x500",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_x500",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "In the cities in those years, schools started serving lunches with bread and powdered milk, because the children were so thin. That was a true thing, and many f"
+  },
+  {
+   "a": 200.57,
+   "b": 211.13,
+   "k": "pd_cook_whisk",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_whisk",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "When I went to school in the middle of the 1950s, we still had bread at lunch, and the powdered milk, and I remember the little metal cup. The bread was not sof"
+  },
+  {
+   "a": 211.13,
+   "b": 218.1,
+   "k": "pd_cook_stir",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_stir",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "It was a long roll, and it was dry by the time we ate it, and we dipped it in the milk to make it easier to chew."
+  },
+  {
+   "a": 218.1,
+   "b": 227.94,
+   "k": "p_old_letter",
+   "c": null,
+   "props": {},
+   "text": "So you see, bread was not always soft in Japan. The soft bread came later, when families had a little more and the bakers learned how to keep it that way."
+  },
+  {
+   "a": 227.94,
+   "b": 241.46,
+   "k": "pd_cook_milk",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_milk",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "The soft white loaf that everyone loves comes from the milk bread, and the secret of the milk bread is a paste. Japanese bakers have used cooked flour pastes fo"
+  },
+  {
+   "a": 241.46,
+   "b": 259.51,
+   "k": "pd_bake_oven",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_oven",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "In Japan it is called yudane, which means hot water and mixed. In other places, bakers use a similar method called tangzhong. I learned yudane from a neighbor i"
+  },
+  {
+   "a": 259.51,
+   "b": 263.22,
+   "k": "old_01",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_01"
+   },
+   "text": "In 1970, my husband and I came to America."
+  },
+  {
+   "a": 263.22,
+   "b": 273.75,
+   "k": "pd_bake_cake3",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_cake3",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "We rented a tiny apartment in a building with thin walls and a small kitchen with one oven, the size of a suitcase. I wrote letters to my mother every week."
+  },
+  {
+   "a": 273.75,
+   "b": 279.11,
+   "k": "c_cool1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_cool1"
+   },
+   "text": "In the first months I missed her bread more than I missed her rice, and that is the truth."
+  },
+  {
+   "a": 279.11,
+   "b": 290.23,
+   "k": "pd_wheat_field",
+   "c": "Arc",
+   "props": {
+    "src": "pd_wheat_field",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "I wanted soft white bread, and in that kitchen I could not find the right flour, and I did not know the trick yet. That is where the story goes next, and I will"
+  },
+  {
+   "a": 290.23,
+   "b": 298.52,
+   "k": "c_note1",
+   "c": "Chapter",
+   "props": {
+    "n": "4",
+    "title": "THE METHOD",
+    "label": "PART",
+    "k": "c_note1",
+    "av": false
+   },
+   "text": "Now let us make the bread. Here is what you need, and I will say it slowly, so you can write it down or look at the kitchen while I speak."
+  },
+  {
+   "a": 298.52,
+   "b": 314.42,
+   "k": "pd_wheat_horses",
+   "c": "Arc",
+   "props": {
+    "src": "pd_wheat_horses",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "For the paste, you need fifty grams of bread flour, which is about a half cup if you scoop it lightly, and fifty grams of boiling water. Use a kitchen scale if "
+  },
+  {
+   "a": 314.42,
+   "b": 338.91,
+   "k": "pd_bake_knead",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_knead",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "For the main dough, you need two hundred grams of bread flour, three grams of instant yeast, which is about one teaspoon, twenty grams of sugar, which is about "
+  },
+  {
+   "a": 338.91,
+   "b": 353.07,
+   "k": "pd_cook_dough",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_dough",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "That is it. Four main ingredients are the flour, the milk, the yeast, and the sugar. The salt and the butter are small helpers, and I will not pretend they are "
+  },
+  {
+   "a": 353.07,
+   "b": 356.19,
+   "k": "kt_01",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_01"
+   },
+   "text": "Put the fifty grams of flour in a small bowl."
+  },
+  {
+   "a": 356.19,
+   "b": 362.82,
+   "k": "sc_01",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "sc_01"
+   },
+   "text": "Pour the boiling water over it all at once, and stir with a wooden spoon until there are no dry spots."
+  },
+  {
+   "a": 362.82,
+   "b": 374.58,
+   "k": "pd_bake_bags",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_bags",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "It will look like thick glue, and that is correct. Cover the bowl with a clean cloth or a plate, and let it cool until it is just warm to your finger. That take"
+  },
+  {
+   "a": 374.58,
+   "b": 384.65,
+   "k": "p_old_school",
+   "c": null,
+   "props": {},
+   "text": "Do not put yeast in the paste, and do not put it on the stove. The water must be boiling, so that the flour cooks a little, and then the paste holds water like "
+  },
+  {
+   "a": 384.65,
+   "b": 390.86,
+   "k": "o_yud",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "o_yud",
+    "txt": "WHILE THE PASTE COOLS WARM"
+   },
+   "text": "While the paste cools, warm the milk. You want it warm, not hot. Put your finger in it."
+  },
+  {
+   "a": 390.86,
+   "b": 398.39,
+   "k": "kt_03",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_03"
+   },
+   "text": "If it feels like a warm bath, it is ready, about one hundred degrees Fahrenheit, which is around thirty eight degrees Celsius."
+  },
+  {
+   "a": 398.39,
+   "b": 402.63,
+   "k": "o_rack",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_rack"
+   },
+   "text": "If it is hot enough to make you pull your finger out, let it cool a minute."
+  },
+  {
+   "a": 402.63,
+   "b": 416.14,
+   "k": "yt_reX4FJBLWyQ_0_rise",
+   "c": "Arc",
+   "props": {
+    "src": "yt_reX4FJBLWyQ_0_rise",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Yeast starts to die when the liquid is above about one hundred and forty degrees Fahrenheit, so hot milk kills it, and then the bread will not rise, and you wil"
+  },
+  {
+   "a": 416.14,
+   "b": 421.84,
+   "k": "c_yeast1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_yeast1"
+   },
+   "text": "Now put the main flour, the sugar, the salt, and the yeast in a big bowl."
+  },
+  {
+   "a": 421.84,
+   "b": 429.46,
+   "k": "o_yeastcup",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_yeastcup"
+   },
+   "text": "Stir them with your fingers so the yeast is spread evenly, and the salt does not sit on top of the yeast in one place."
+  },
+  {
+   "a": 429.46,
+   "b": 433.06,
+   "k": "kt_05",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_05"
+   },
+   "text": "Salt that touches yeast directly slows it down."
+  },
+  {
+   "a": 433.06,
+   "b": 442.09,
+   "k": "yt_DweAWLpXjsc_0_mixer",
+   "c": "Arc",
+   "props": {
+    "src": "yt_DweAWLpXjsc_0_mixer",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Then add the milk, and the cooled paste, and mix with your hand or a spatula until you have a shaggy dough. It will be sticky and wet."
+  },
+  {
+   "a": 442.09,
+   "b": 457.39,
+   "k": "yt_kTd9jUOhCKA_2_spiral",
+   "c": "Arc",
+   "props": {
+    "src": "yt_kTd9jUOhCKA_2_spiral",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "That is the bread telling you it wants water. Knead for about ten minutes by hand, or about six minutes in a mixer with a hook. Push the dough away with the hee"
+  },
+  {
+   "a": 457.39,
+   "b": 469.69,
+   "k": "pd_bake_c40",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c40",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "In the middle of kneading, add the soft butter, a spoon at a time, and keep kneading until the butter disappears into the dough. This is the part where most peo"
+  },
+  {
+   "a": 469.69,
+   "b": 475.37,
+   "k": "kt_12",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_12"
+   },
+   "text": "Now the most important test in the whole bread. It is called the windowpane test."
+  },
+  {
+   "a": 475.37,
+   "b": 479.08,
+   "k": "c_french1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_french1"
+   },
+   "text": "Take a small piece of dough, about the size of an egg."
+  },
+  {
+   "a": 479.08,
+   "b": 485.09,
+   "k": "o_wind",
+   "c": "CostTag",
+   "props": {
+    "price": "GENTLY STRETCH",
+    "sub": "GENTLY STRETCH IT BETWEEN YOUR TWO",
+    "k": "o_wind"
+   },
+   "text": "Gently stretch it between your two thumbs and first fingers, slowly, into a thin sheet."
+  },
+  {
+   "a": 485.09,
+   "b": 488.85,
+   "k": "c_knead1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_knead1"
+   },
+   "text": "If it tears right away, keep kneading for two more minutes."
+  },
+  {
+   "a": 488.85,
+   "b": 497.27,
+   "k": "c_wind1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_wind1"
+   },
+   "text": "When it stretches thin enough that you can see the light through it, like a window made of wax paper, and it does not tear, the gluten is ready."
+  },
+  {
+   "a": 497.27,
+   "b": 507.24,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "My mother called it the moment the bread can hold the light. Shape the dough into a ball, put it in a clean bowl that you have oiled lightly, and cover it."
+  },
+  {
+   "a": 507.24,
+   "b": 515.77,
+   "k": "yt_YmgBz5nJDjk_0_rise",
+   "c": "Arc",
+   "props": {
+    "src": "yt_YmgBz5nJDjk_0_rise",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Let it rise in a warm place, about seventy five to eighty five degrees Fahrenheit, which is around twenty four to twenty nine degrees Celsius."
+  },
+  {
+   "a": 515.77,
+   "b": 524.55,
+   "k": "yt_h9fBhtYowxM_0_rise",
+   "c": "Arc",
+   "props": {
+    "src": "yt_h9fBhtYowxM_0_rise",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "On top of the refrigerator is often good. Let it rise for about one hour, until it has doubled in size. Poke it with a clean finger."
+  },
+  {
+   "a": 524.55,
+   "b": 544.02,
+   "k": "yt_BmINNcGK2IE_0_machine",
+   "c": "Arc",
+   "props": {
+    "src": "yt_BmINNcGK2IE_0_machine",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "If the hole stays, the dough is ready. If it springs back fast, let it rise a little longer. Now the pan. For this recipe, use a loaf pan about eight and a half"
+  },
+  {
+   "a": 544.02,
+   "b": 552.77,
+   "k": "c_pan1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_pan1"
+   },
+   "text": "A pan that is too big gives you a flat loaf, and a pan that is too small gives you a bread that splits on top, like a mountain with a crack."
+  },
+  {
+   "a": 552.77,
+   "b": 555.77,
+   "k": "kt_07",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_07"
+   },
+   "text": "Grease the pan well with butter."
+  },
+  {
+   "a": 555.77,
+   "b": 564.02,
+   "k": "c_pan2",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "c_pan2",
+    "steps": [
+     {
+      "t": 556.77,
+      "txt": "FLATTEN THE DOUGH GENTLY WITH",
+      "k": "c_pan2"
+     }
+    ]
+   },
+   "text": "Flatten the dough gently with your fingers into a rectangle, roll it up tightly like a rug, and place it in the pan seam side down."
+  },
+  {
+   "a": 564.02,
+   "b": 573.11,
+   "k": "o_panrise",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_panrise"
+   },
+   "text": "Here is the trick my mother used. Before you put the dough in, press the dough into the corners of the pan with your knuckles, so there are no empty spaces."
+  },
+  {
+   "a": 573.11,
+   "b": 575.47,
+   "k": "c_crumb1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_crumb1"
+   },
+   "text": "Corners are where bread gets lonely."
+  },
+  {
+   "a": 575.47,
+   "b": 584.62,
+   "k": "c_frz1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_frz1"
+   },
+   "text": "If the corners are empty, the loaf will look sad and smaller on one side, and the top will not be square. Take your time with the corners."
+  },
+  {
+   "a": 584.62,
+   "b": 587.6,
+   "k": "c_frz2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_frz2"
+   },
+   "text": "Ten seconds of pressing saves the whole loaf."
+  },
+  {
+   "a": 587.6,
+   "b": 603.92,
+   "k": "pd_bake_pan",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_pan",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Cover the pan and let it rise a second time, for about forty five to sixty minutes, until the dough comes about one inch above the rim of the pan. Watch it, not"
+  },
+  {
+   "a": 603.92,
+   "b": 612.0,
+   "k": "c_gram1",
+   "c": "Checklist",
+   "props": {
+    "head": "REMEMBER",
+    "k": "c_gram1",
+    "items": [
+     {
+      "t": 604.92,
+      "txt": "THE DOUGH SHOULD LOOK SOFT",
+      "k": "c_gram1"
+     }
+    ]
+   },
+   "text": "The dough should look soft and full, like a pillow, and when you press the side gently, the dimple should slowly come back."
+  },
+  {
+   "a": 612.0,
+   "b": 621.57,
+   "k": "pd_bake_pans4",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_pans4",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Heat your oven to three hundred and fifty degrees Fahrenheit, which is about one hundred and seventy five degrees Celsius. Set the rack in the middle of the ove"
+  },
+  {
+   "a": 621.57,
+   "b": 632.01,
+   "k": "pd_bake_c330",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c330",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "When the loaf has risen, place the pan in the oven and bake for about thirty five to forty minutes. The top should be golden brown, and the sides should be gold"
+  },
+  {
+   "a": 632.01,
+   "b": 637.73,
+   "k": "o_panrise2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_panrise2"
+   },
+   "text": "If the top browns too fast, cover it loosely with a piece of foil for the last ten minutes."
+  },
+  {
+   "a": 637.73,
+   "b": 645.44,
+   "k": "o_bake",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_bake"
+   },
+   "text": "Do not open the oven door in the first twenty minutes, because the cold air makes the bread fall. Now check the bread."
+  },
+  {
+   "a": 645.44,
+   "b": 652.61,
+   "k": "o_therm190",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_therm190"
+   },
+   "text": "The most honest way is a thermometer. Push it into the middle of the loaf, through the side, and read the number."
+  },
+  {
+   "a": 652.61,
+   "b": 660.71,
+   "k": "c_therm1",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "You want about one hundred and ninety degrees Fahrenheit, which is abo"
+    ],
+    "sig": "Sachiko",
+    "k": "c_therm1"
+   },
+   "text": "You want about one hundred and ninety degrees Fahrenheit, which is about eighty eight degrees Celsius, inside the middle of the loaf."
+  },
+  {
+   "a": 660.71,
+   "b": 667.2,
+   "k": "c_therm2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_therm2"
+   },
+   "text": "Enriched breads like this one are often finished between one hundred and ninety and two hundred degrees."
+  },
+  {
+   "a": 667.2,
+   "b": 675.9,
+   "k": "kt_10",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_10"
+   },
+   "text": "If your thermometer is not there yet, bake five more minutes. Another way, if you have no thermometer, is to tap the bottom of the loaf."
+  },
+  {
+   "a": 675.9,
+   "b": 692.31,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "It should sound hollow, like a drum. That is not as exact, but it has worked in my kitchen for fifty years. The loaf must come out of the pan at once, and it mu"
+  },
+  {
+   "a": 692.31,
+   "b": 701.15,
+   "k": "o_slice",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_slice"
+   },
+   "text": "Leave it there, and do not cut it yet. This is the step that everybody wants to skip, and this is where the bread gets its soft inside."
+  },
+  {
+   "a": 701.15,
+   "b": 704.81,
+   "k": "c_gram2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_gram2"
+   },
+   "text": "The steam inside a hot loaf must go away slowly."
+  },
+  {
+   "a": 704.81,
+   "b": 713.25,
+   "k": "c_slice1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_slice1"
+   },
+   "text": "If you cut it while it is hot, the inside will be wet and gummy, and it will dry out fast. Wait at least two hours."
+  },
+  {
+   "a": 713.25,
+   "b": 715.67,
+   "k": "c_knead2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_knead2"
+   },
+   "text": "I know. I know. Wait."
+  },
+  {
+   "a": 715.67,
+   "b": 724.18,
+   "k": "o_bag",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_bag"
+   },
+   "text": "When the loaf is cool to the touch all the way through, put it in a plastic bag, or wrap it in a clean towel and then in a bag."
+  },
+  {
+   "a": 724.18,
+   "b": 742.25,
+   "k": "pd_bake_counter",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_counter",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Close the bag and press out the air. Store it on the counter, away from the stove and the sun. On the first day it will be soft, almost too soft to slice straig"
+  },
+  {
+   "a": 742.25,
+   "b": 749.43,
+   "k": "c_yud1",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "c_yud1",
+    "txt": "HERE ARE THE STEPS AGAIN"
+   },
+   "text": "Here are the steps again, quickly, in the order you do them. Make the paste and let it cool. Warm the milk."
+  },
+  {
+   "a": 749.43,
+   "b": 758.02,
+   "k": "c_yud2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_yud2"
+   },
+   "text": "Mix the flour, the sugar, the salt and the yeast. Add the milk and the cooled paste. Knead for ten minutes and add the butter."
+  },
+  {
+   "a": 758.02,
+   "b": 766.86,
+   "k": "c_wind2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_wind2"
+   },
+   "text": "Do the windowpane test. Rise one hour. Shape into the pan, press the corners. Rise forty five to sixty minutes."
+  },
+  {
+   "a": 766.86,
+   "b": 780.62,
+   "k": "pd_bake_c360",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c360",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Bake at three fifty for thirty five to forty minutes, to one ninety inside. Cool two hours on the rack. Store in a bag. That is the whole method, and you alread"
+  },
+  {
+   "a": 780.62,
+   "b": 786.88,
+   "k": "kt_09",
+   "c": "CostTag",
+   "props": {
+    "price": "ONE MORE",
+    "sub": "YOU CAN MAKE IT THE NIGHT",
+    "k": "kt_09"
+   },
+   "text": "One more thing about the paste. You can make it the night before, and keep it covered in the refrigerator."
+  },
+  {
+   "a": 786.88,
+   "b": 792.66,
+   "k": "d_mix1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_mix1"
+   },
+   "text": "Bring it back to room temperature before you use it, about an hour, so it is easy to mix."
+  },
+  {
+   "a": 792.66,
+   "b": 801.43,
+   "k": "d_mix2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_mix2"
+   },
+   "text": "My mother always made the paste first, before anything else, so the kitchen had the smell of cooked flour and the bread was already started."
+  },
+  {
+   "a": 801.43,
+   "b": 807.21,
+   "k": "c_mold1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_mold1"
+   },
+   "text": "That was her way of saying the bread had begun. For the dough you can also use a different size."
+  },
+  {
+   "a": 807.21,
+   "b": 816.63,
+   "k": "o_scale50",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_scale50"
+   },
+   "text": "If you want two small loaves, divide the dough into two pieces, about two hundred and sixty grams each, and use two smaller pans."
+  },
+  {
+   "a": 816.63,
+   "b": 823.87,
+   "k": "q_scale50b",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "q_scale50b",
+    "steps": [
+     {
+      "t": 817.63,
+      "txt": "BAKE THEM THE SAME WAY",
+      "k": "q_scale50b"
+     }
+    ]
+   },
+   "text": "Bake them the same way, but check the inside temperature at thirty minutes, because small loaves finish faster."
+  },
+  {
+   "a": 823.87,
+   "b": 825.99,
+   "k": "c_pour1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_pour1"
+   },
+   "text": "Do not change the paste, though."
+  },
+  {
+   "a": 825.99,
+   "b": 834.92,
+   "k": "d_shag1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_shag1"
+   },
+   "text": "The paste is the heart of the bread, so keep it exactly at fifty grams of flour and fifty grams of water, every time."
+  },
+  {
+   "a": 834.92,
+   "b": 840.11,
+   "k": "p_flour_spill",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_flour_spill"
+   },
+   "text": "Let me say something about bread flour, because it matters more than people think."
+  },
+  {
+   "a": 840.11,
+   "b": 847.25,
+   "k": "p_sieve",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_sieve"
+   },
+   "text": "Bread flour has more protein than all purpose flour, and the protein becomes the gluten that holds the air."
+  },
+  {
+   "a": 847.25,
+   "b": 853.71,
+   "k": "e_napkin1",
+   "c": "Checklist",
+   "props": {
+    "head": "REMEMBER",
+    "k": "e_napkin1",
+    "items": [
+     {
+      "t": 848.25,
+      "txt": "IF YOU ONLY HAVE ALL",
+      "k": "e_napkin1"
+     }
+    ]
+   },
+   "text": "If you only have all purpose flour, the bread will still be good, but it will be softer and smaller."
+  },
+  {
+   "a": 853.71,
+   "b": 859.45,
+   "k": "p_rain_kitchen",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_rain_kitchen"
+   },
+   "text": "You can use it, but your windowpane will tear sooner, so knead a little longer."
+  },
+  {
+   "a": 859.45,
+   "b": 867.67,
+   "k": "q_milk_warm",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_milk_warm"
+   },
+   "text": "Never use self rising flour for this bread, because it has salt and baking powder already, and the rise becomes wrong."
+  },
+  {
+   "a": 867.67,
+   "b": 874.11,
+   "k": "kt_08",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_08"
+   },
+   "text": "The milk can also be replaced with water, but the bread will be less golden and a little less soft."
+  },
+  {
+   "a": 874.11,
+   "b": 881.03,
+   "k": "o_cup",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Milk gives the bread its color and its tender crumb, and the sugar in "
+    ],
+    "sig": "Sachiko",
+    "k": "o_cup"
+   },
+   "text": "Milk gives the bread its color and its tender crumb, and the sugar in the milk helps the crust turn golden in the oven."
+  },
+  {
+   "a": 881.03,
+   "b": 886.27,
+   "k": "o_butter",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_butter"
+   },
+   "text": "If you use water, add one more tablespoon of butter to keep the softness."
+  },
+  {
+   "a": 886.27,
+   "b": 892.39,
+   "k": "old_02",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_02"
+   },
+   "text": "That is my honest advice, and it is the way my husband liked it when we had no milk in the house."
+  },
+  {
+   "a": 892.39,
+   "b": 899.45,
+   "k": "o_cuke",
+   "c": "Chapter",
+   "props": {
+    "n": "5",
+    "title": "EXTRA USES",
+    "label": "PART",
+    "k": "o_cuke",
+    "av": false
+   },
+   "text": "Now, my mother also had many small tricks that came out of this bread. The first one is the bread for the sandwich."
+  },
+  {
+   "a": 899.45,
+   "b": 903.45,
+   "k": "c_rise1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_rise1"
+   },
+   "text": "Make the same dough, and divide it into three equal pieces."
+  },
+  {
+   "a": 903.45,
+   "b": 911.69,
+   "k": "o_rolls",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_rolls"
+   },
+   "text": "Roll each piece into a long oval, and place the three ovals side by side in the pan, like three children sleeping together."
+  },
+  {
+   "a": 911.69,
+   "b": 919.5,
+   "k": "kt_26",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_26"
+   },
+   "text": "The bread will bake into a square, soft loaf with a tight crumb. Children love it, and it is perfect for the sandwich with egg."
+  },
+  {
+   "a": 919.5,
+   "b": 921.14,
+   "k": "c_slice2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_slice2"
+   },
+   "text": "The second trick is the cut."
+  },
+  {
+   "a": 921.14,
+   "b": 931.23,
+   "k": "kt_22",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_22"
+   },
+   "text": "Once the bread is fully cool, use a long serrated knife, and cut the slices about one half inch thick, which is about one centimeter."
+  },
+  {
+   "a": 931.23,
+   "b": 937.02,
+   "k": "d_drain1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_drain1"
+   },
+   "text": "Thin slices dry out in one day. Thick slices keep their softness longer."
+  },
+  {
+   "a": 937.02,
+   "b": 946.24,
+   "k": "o_freezer",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_freezer"
+   },
+   "text": "Use the knife with long slow strokes, and do not press down hard, or you will squash the crumb. The third trick is the freezer."
+  },
+  {
+   "a": 946.24,
+   "b": 953.25,
+   "k": "c_tst1",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "c_tst1",
+    "txt": "THIS IS THE REAL SECRET"
+   },
+   "text": "This is the real secret to keeping bread soft for a week, and I will explain the truth about it in a moment."
+  },
+  {
+   "a": 953.25,
+   "b": 961.17,
+   "k": "c_wrap1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_wrap1"
+   },
+   "text": "Cut the loaf into slices first, then put a small piece of paper between the slices, so they do not stick together."
+  },
+  {
+   "a": 961.17,
+   "b": 967.78,
+   "k": "kt_19",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_19"
+   },
+   "text": "Place the slices in a freezer bag, and press out the air. Then take out only what you need."
+  },
+  {
+   "a": 967.78,
+   "b": 976.13,
+   "k": "o_toast",
+   "c": "CostTag",
+   "props": {
+    "price": "A FROZEN",
+    "sub": "A FROZEN SLICE GOES INTO THE",
+    "k": "o_toast"
+   },
+   "text": "A frozen slice goes into the toaster straight from the freezer, and it comes out soft in the middle and golden on the outside."
+  },
+  {
+   "a": 976.13,
+   "b": 978.63,
+   "k": "c_whisk1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_whisk1"
+   },
+   "text": "The fourth trick is the toast in the pan."
+  },
+  {
+   "a": 978.63,
+   "b": 985.77,
+   "k": "d_rest1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_rest1"
+   },
+   "text": "Put a slice of frozen bread in a dry hot pan, with a small pat of butter, and cover it for one minute."
+  },
+  {
+   "a": 985.77,
+   "b": 991.95,
+   "k": "p_bowl_risen",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_bowl_risen"
+   },
+   "text": "Then uncover and let the bottom turn golden. The middle stays soft, and the edges get crisp."
+  },
+  {
+   "a": 991.95,
+   "b": 1000.63,
+   "k": "p_egg_bowl",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "EXTRA USES",
+    "bed": "p_egg_bowl",
+    "steps": [
+     {
+      "t": 992.95,
+      "txt": "MY HUSBAND LOVED THIS WITH",
+      "k": "p_egg_bowl"
+     },
+     {
+      "t": 995.95,
+      "txt": "THE FIFTH TRICK IS THE",
+      "k": "p_egg_bowl"
+     }
+    ]
+   },
+   "text": "My husband loved this with a soft egg, and he said it was like eating a warm cloud on a plate. The fifth trick is the bread crumbs."
+  },
+  {
+   "a": 1000.63,
+   "b": 1005.54,
+   "k": "cl_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "cl_01_b"
+   },
+   "text": "When the bread is two days old and starting to go firm, do not throw it away."
+  },
+  {
+   "a": 1005.54,
+   "b": 1014.81,
+   "k": "p_dish_dry",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_dish_dry"
+   },
+   "text": "Tear it into pieces, and dry it in a low oven, at about two hundred degrees Fahrenheit, for twenty minutes, until it is dry all the way through."
+  },
+  {
+   "a": 1014.81,
+   "b": 1022.15,
+   "k": "cl_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "cl_02_b"
+   },
+   "text": "Then pulse it in a blender. Keep the crumbs in a jar in the cupboard. They are good on fried fish and on top of noodles."
+  },
+  {
+   "a": 1022.15,
+   "b": 1029.01,
+   "k": "jp_hm98636_160",
+   "c": "Arc",
+   "props": {
+    "src": "jp_hm98636_160",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "In Japan we say mottainai, which means it is a shame to waste something good. That is the spirit of this trick."
+  },
+  {
+   "a": 1029.01,
+   "b": 1033.91,
+   "k": "old_04",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_04"
+   },
+   "text": "The sixth trick is the French toast of my mother, which she called the Osaka bread."
+  },
+  {
+   "a": 1033.91,
+   "b": 1038.63,
+   "k": "d_egg1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_egg1"
+   },
+   "text": "Beat one egg with a quarter cup of milk and a small pinch of sugar."
+  },
+  {
+   "a": 1038.63,
+   "b": 1045.35,
+   "k": "cl_03_b",
+   "c": "Checklist",
+   "props": {
+    "head": "REMEMBER",
+    "k": "cl_03_b",
+    "items": [
+     {
+      "t": 1039.63,
+      "txt": "SOAK TWO THICK SLICES OF",
+      "k": "cl_03_b"
+     }
+    ]
+   },
+   "text": "Soak two thick slices of the bread for thirty seconds on each side, not longer, or they fall apart."
+  },
+  {
+   "a": 1045.35,
+   "b": 1050.59,
+   "k": "d_bag2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_bag2"
+   },
+   "text": "Cook them in a buttered pan over medium heat until golden on both sides."
+  },
+  {
+   "a": 1050.59,
+   "b": 1059.13,
+   "k": "old_06",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_06"
+   },
+   "text": "Put a little plum jam on the side, not on top, so the bread stays crisp at the edges. The seventh trick is for the children's lunch."
+  },
+  {
+   "a": 1059.13,
+   "b": 1066.27,
+   "k": "kt_29",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_29"
+   },
+   "text": "Make a small sandwich with thin slices of cucumber, a little mayonnaise, and a little salt. Cut off the crusts."
+  },
+  {
+   "a": 1066.27,
+   "b": 1072.71,
+   "k": "d_bench1",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "The soft milk bread holds the cucumber without getting soggy, because "
+    ],
+    "sig": "Sachiko",
+    "k": "d_bench1"
+   },
+   "text": "The soft milk bread holds the cucumber without getting soggy, because the crumb is tight and does not soak."
+  },
+  {
+   "a": 1072.71,
+   "b": 1077.7,
+   "k": "d_bowl1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_bowl1"
+   },
+   "text": "Wrap it in wax paper, not plastic, so the bread can breathe a little."
+  },
+  {
+   "a": 1077.7,
+   "b": 1086.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "My grandsons ate these at the bus stop, and they never once asked for the store bread again. The eighth trick is the sweet bread roll."
+  },
+  {
+   "a": 1086.12,
+   "b": 1092.41,
+   "k": "d_date1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_date1"
+   },
+   "text": "Divide the dough into eight equal pieces, about sixty grams each, and shape them into balls."
+  },
+  {
+   "a": 1092.41,
+   "b": 1099.47,
+   "k": "q_pan_dough",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_pan_dough"
+   },
+   "text": "Let them rise on a tray for thirty minutes, then bake them at three hundred and fifty degrees for about fifteen minutes."
+  },
+  {
+   "a": 1099.47,
+   "b": 1108.06,
+   "k": "kt_27",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_27"
+   },
+   "text": "Brush them with melted butter as soon as they come out. These little rolls are the bread my mother gave to the neighbors when a baby was born."
+  },
+  {
+   "a": 1108.06,
+   "b": 1113.01,
+   "k": "o_cinn",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_cinn"
+   },
+   "text": "Sweet, soft, and warm. The ninth trick is the cinnamon swirl."
+  },
+  {
+   "a": 1113.01,
+   "b": 1118.26,
+   "k": "d_fold1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_fold1"
+   },
+   "text": "Roll the dough out into a thin rectangle, about the size of a sheet of paper."
+  },
+  {
+   "a": 1118.26,
+   "b": 1123.76,
+   "k": "kt_28",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_28"
+   },
+   "text": "Spread a thin layer of soft butter, then sprinkle a little sugar and a little cinnamon."
+  },
+  {
+   "a": 1123.76,
+   "b": 1127.92,
+   "k": "d_roll1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_roll1"
+   },
+   "text": "Roll it up tight, like the first loaf, and cut it into slices."
+  },
+  {
+   "a": 1127.92,
+   "b": 1133.95,
+   "k": "q_rack_loaf",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_rack_loaf"
+   },
+   "text": "Place the slices in the pan cut side up, and let them rise and bake as before."
+  },
+  {
+   "a": 1133.95,
+   "b": 1141.66,
+   "k": "pd_bake_c470",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c470",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "The swirl makes the kitchen smell like a bakery for an hour. The tenth trick is the one I like the most, and it is simple."
+  },
+  {
+   "a": 1141.66,
+   "b": 1149.68,
+   "k": "d_wipe1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_wipe1"
+   },
+   "text": "Once the loaf is completely cool, wrap one end of it in a clean towel, and put the loaf in a bread box, or in a dry cupboard."
+  },
+  {
+   "a": 1149.68,
+   "b": 1157.21,
+   "k": "d_dust1",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "d_dust1",
+    "txt": "LEAVE THE OTHER END OPEN"
+   },
+   "text": "Leave the other end open. On the second day, the open end will be a little firm, and the closed end stays soft."
+  },
+  {
+   "a": 1157.21,
+   "b": 1165.41,
+   "k": "e_wait2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_wait2"
+   },
+   "text": "Cut from the closed end first. This way you do not need any plastic at all, and the bread breathes the way it did in my mother's kitchen."
+  },
+  {
+   "a": 1165.41,
+   "b": 1169.74,
+   "k": "old_05",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_05"
+   },
+   "text": "The eleventh trick is for a rainy day, when the humidity is high."
+  },
+  {
+   "a": 1169.74,
+   "b": 1174.83,
+   "k": "old_07",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_07"
+   },
+   "text": "In the rainy season in Osaka, bread goes soft and then fuzzy very fast."
+  },
+  {
+   "a": 1174.83,
+   "b": 1180.4,
+   "k": "d_grate1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_grate1"
+   },
+   "text": "So my mother put a clean dry cloth on the bread box shelf and changed it every morning."
+  },
+  {
+   "a": 1180.4,
+   "b": 1187.86,
+   "k": "p_brick",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_brick"
+   },
+   "text": "A dry cloth takes the moisture away, and the bread lasts an extra day. If your kitchen is wet, do the same."
+  },
+  {
+   "a": 1187.86,
+   "b": 1192.21,
+   "k": "d_hands1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_hands1"
+   },
+   "text": "Keep the bread away from the dishwasher, the sink and the steam from the kettle."
+  },
+  {
+   "a": 1192.21,
+   "b": 1200.63,
+   "k": "d_hands2",
+   "c": "Chapter",
+   "props": {
+    "n": "6",
+    "title": "MISTAKES",
+    "label": "PART",
+    "k": "d_hands2",
+    "av": false
+   },
+   "text": "Now let us talk about the mistakes, because every bread I have ever seen fail, failed for one of these reasons. Let me give you the first."
+  },
+  {
+   "a": 1200.63,
+   "b": 1206.57,
+   "k": "sc_04",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "sc_04"
+   },
+   "text": "If your loaf comes out flat, with a dense bottom and a pale top, it was probably the yeast."
+  },
+  {
+   "a": 1206.57,
+   "b": 1210.87,
+   "k": "d_hands3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_hands3"
+   },
+   "text": "Either the yeast was old, or the milk was too hot and killed it."
+  },
+  {
+   "a": 1210.87,
+   "b": 1221.08,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "Yeast should be fresh, and you can test it. Put a spoon of warm water and a pinch of sugar in a cup, add the yeast, and wait five minutes."
+  },
+  {
+   "a": 1221.08,
+   "b": 1228.77,
+   "k": "d_hands4",
+   "c": "CostTag",
+   "props": {
+    "price": "IF IT",
+    "sub": "IT WAS NEVER YOU IT WAS",
+    "k": "d_hands4"
+   },
+   "text": "If it foams, it is alive. If it does not foam, buy new yeast. It was never you, it was the yeast."
+  },
+  {
+   "a": 1228.77,
+   "b": 1235.83,
+   "k": "p_flat_loaf",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_flat_loaf"
+   },
+   "text": "The second mistake is the bread that comes out like a brick. My first loaf in 1970 was exactly that."
+  },
+  {
+   "a": 1235.83,
+   "b": 1241.79,
+   "k": "p_crust_split",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_crust_split"
+   },
+   "text": "It was hard on the outside and dense on the inside, and I could have used it to hold the door open."
+  },
+  {
+   "a": 1241.79,
+   "b": 1249.86,
+   "k": "q_freezer_bag",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_freezer_bag"
+   },
+   "text": "The cause was that I did not do the windowpane test. I kneaded for three minutes, I thought it was enough, and I put it in the pan."
+  },
+  {
+   "a": 1249.86,
+   "b": 1257.51,
+   "k": "p_pale_bottom",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "MISTAKES",
+    "bed": "p_pale_bottom",
+    "steps": [
+     {
+      "t": 1250.86,
+      "txt": "THE GLUTEN WAS NEVER BUILT",
+      "k": "p_pale_bottom"
+     },
+     {
+      "t": 1253.86,
+      "txt": "IF YOU SEE A BRICK",
+      "k": "p_pale_bottom"
+     }
+    ]
+   },
+   "text": "The gluten was never built, so the air could not stay inside. If you see a brick, go back to the windowpane next time."
+  },
+  {
+   "a": 1257.51,
+   "b": 1259.33,
+   "k": "p_wet_crumb",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_wet_crumb"
+   },
+   "text": "That is the honest reason. The third mistake is the bread that splits on top, with a crack down the middle, like a volcano."
+  },
+  {
+   "a": 1259.33,
+   "b": 1270.01,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "The third mistake is the bread that splits on top, with a crack down the middle, like a volcano. That happens when the second rise is too long, or the oven is t"
+  },
+  {
+   "a": 1270.01,
+   "b": 1277.9,
+   "k": "d_jar1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_jar1"
+   },
+   "text": "The dough keeps rising in the oven until the crust cannot hold it, and then it breaks at the weakest point. The fix is simple."
+  },
+  {
+   "a": 1277.9,
+   "b": 1285.34,
+   "k": "q_paste_pan",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_paste_pan"
+   },
+   "text": "Watch the dough rise to one inch above the rim, not two inches. Then bake at three fifty, not four hundred."
+  },
+  {
+   "a": 1285.34,
+   "b": 1292.63,
+   "k": "p_burnt_top",
+   "c": "Checklist",
+   "props": {
+    "head": "REMEMBER",
+    "k": "p_burnt_top",
+    "items": [
+     {
+      "t": 1286.34,
+      "txt": "IF YOU SEE THE CRACK",
+      "k": "p_burnt_top"
+     },
+     {
+      "t": 1289.34,
+      "txt": "CUT THE LOAF SQUARE AT",
+      "k": "p_burnt_top"
+     }
+    ]
+   },
+   "text": "If you see the crack anyway, it is not a disaster. Cut the loaf square at the crack, and the sandwich will still be lovely."
+  },
+  {
+   "a": 1292.63,
+   "b": 1299.88,
+   "k": "d_knife1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_knife1"
+   },
+   "text": "The fourth mistake is the bread that is wet and gummy in the middle. This happens when you cut it while it is still warm."
+  },
+  {
+   "a": 1299.88,
+   "b": 1304.63,
+   "k": "d_oil1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_oil1"
+   },
+   "text": "The steam is still moving inside, and the crumb is still soft and not set."
+  },
+  {
+   "a": 1304.63,
+   "b": 1311.26,
+   "k": "e_pen1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_pen1"
+   },
+   "text": "Wait two hours on the rack, even if you are hungry, even if the kitchen smells so good that you cannot stand it."
+  },
+  {
+   "a": 1311.26,
+   "b": 1321.19,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "My husband always stood by the rack and tried to steal the end piece, and I always slapped his hand. He was never patient, but he was never wrong about the brea"
+  },
+  {
+   "a": 1321.19,
+   "b": 1329.8,
+   "k": "o_moldbag",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "The fifth mistake is the one about mold, and I need to be honest with "
+    ],
+    "sig": "Sachiko",
+    "k": "o_moldbag"
+   },
+   "text": "The fifth mistake is the one about mold, and I need to be honest with you, because this is the most important truth in the whole video."
+  },
+  {
+   "a": 1329.8,
+   "b": 1348.02,
+   "k": "pd_bake_stacks",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_stacks",
+    "vid": true,
+    "cap": ""
+   },
+   "text": "Bread without preservatives, like this one, can grow mold in three to five days on the counter, especially in a humid kitchen. The soft paste keeps it moist, bu"
+  },
+  {
+   "a": 1348.02,
+   "b": 1354.9,
+   "k": "mo_b2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_b2"
+   },
+   "text": "Do not cut the spot off and keep eating. The mold can spread through the bread in roots that you cannot see."
+  },
+  {
+   "a": 1354.9,
+   "b": 1361.02,
+   "k": "d_paper1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_paper1"
+   },
+   "text": "The sixth mistake is the one where the bread goes stale too fast, even though it was soft yesterday."
+  },
+  {
+   "a": 1361.02,
+   "b": 1367.4,
+   "k": "d_plate1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_plate1"
+   },
+   "text": "Many people put fresh bread in the refrigerator, thinking it will stay fresh longer. It does the opposite."
+  },
+  {
+   "a": 1367.4,
+   "b": 1372.92,
+   "k": "d_seam1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_seam1"
+   },
+   "text": "The cold makes the starch in the bread harden faster, so the loaf turns firm and dry."
+  },
+  {
+   "a": 1372.92,
+   "b": 1381.46,
+   "k": "d_wait1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_wait1"
+   },
+   "text": "Keep the bread on the counter for two or three days, and freeze the rest. The refrigerator is for milk and eggs, not for this bread."
+  },
+  {
+   "a": 1381.46,
+   "b": 1391.84,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "The seventh mistake is the sad bottom. If the bottom of the loaf is soggy or pale, the cause is usually the pan. A dark metal pan browns the bottom well."
+  },
+  {
+   "a": 1391.84,
+   "b": 1400.74,
+   "k": "d_sift1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_sift1"
+   },
+   "text": "A thin, shiny pan can leave the bottom pale. Put the loaf on the lower rack for the last ten minutes of baking, so the heat reaches the bottom better."
+  },
+  {
+   "a": 1400.74,
+   "b": 1407.16,
+   "k": "e_butter2",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "e_butter2",
+    "txt": "IF THE BOTTOM STILL LOOKS"
+   },
+   "text": "If the bottom still looks pale, bake it a little longer and turn the loaf out of the pan to brown the sides."
+  },
+  {
+   "a": 1407.16,
+   "b": 1418.41,
+   "k": "e_bag3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_bag3"
+   },
+   "text": "If your loaf comes out too sour, the cause is almost always a dough that rose for too long in a warm kitchen, or a paste that was made the day before and left o"
+  },
+  {
+   "a": 1418.41,
+   "b": 1424.71,
+   "k": "d_slice2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_slice2"
+   },
+   "text": "Sourness in this bread should be very small, almost none. The sweetness and the butter should be the main taste."
+  },
+  {
+   "a": 1424.71,
+   "b": 1432.38,
+   "k": "e_feel1",
+   "c": "CostTag",
+   "props": {
+    "price": "IF YOU",
+    "sub": "IF YOU SMELL A SOUR SMELL",
+    "k": "e_feel1"
+   },
+   "text": "If you smell a sour smell when you open the bag, the bread is past its best, and you should freeze the rest at once."
+  },
+  {
+   "a": 1432.38,
+   "b": 1442.64,
+   "k": "d_smell1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_smell1"
+   },
+   "text": "Last, and it is a small thing: if you put the bread in the bag while it was still warm, the bag will fill with water, and the top of the loaf will become wet an"
+  },
+  {
+   "a": 1442.64,
+   "b": 1451.82,
+   "k": "e_slice3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_slice3"
+   },
+   "text": "That is not the bread's fault. That is your steam with nowhere to go. Let it cool, let it cool, let it cool."
+  },
+  {
+   "a": 1451.82,
+   "b": 1459.25,
+   "k": "d_tap1",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "MISTAKES",
+    "bed": "d_tap1",
+    "steps": [
+     {
+      "t": 1452.82,
+      "txt": "I SAY IT THREE TIMES",
+      "k": "d_tap1"
+     },
+     {
+      "t": 1455.82,
+      "txt": "NOW WHY DOES THIS WORK?",
+      "k": "d_tap1"
+     }
+    ]
+   },
+   "text": "I say it three times because my mother said it three times, and she was always right. Now, why does this work?"
+  },
+  {
+   "a": 1459.25,
+   "b": 1466.39,
+   "k": "d_wet1",
+   "c": "Chapter",
+   "props": {
+    "n": "7",
+    "title": "WHY IT WORKS",
+    "label": "PART",
+    "k": "d_wet1",
+    "av": false
+   },
+   "text": "I will explain it the way I would explain it to a child of twelve, because it is simple, and I think you deserve to know."
+  },
+  {
+   "a": 1466.39,
+   "b": 1471.75,
+   "k": "old_08",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_08"
+   },
+   "text": "When you cook flour in water, the starch grains swell up and hold the water inside them."
+  },
+  {
+   "a": 1471.75,
+   "b": 1480.61,
+   "k": "e_pace1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_pace1"
+   },
+   "text": "That is called gelatinization, and it is what happens when you make a thick white sauce. The paste is full of water that the starch is holding onto."
+  },
+  {
+   "a": 1480.61,
+   "b": 1489.98,
+   "k": "in_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "in_01_b"
+   },
+   "text": "When the paste goes into the dough, it carries that water with it. The water stays in the dough, instead of running out into the pan and into the air."
+  },
+  {
+   "a": 1489.98,
+   "b": 1496.2,
+   "k": "q_bread_box",
+   "c": "Checklist",
+   "props": {
+    "head": "REMEMBER",
+    "k": "q_bread_box",
+    "items": [
+     {
+      "t": 1490.98,
+      "txt": "THE GLUTEN WHICH IS THE",
+      "k": "q_bread_box"
+     }
+    ]
+   },
+   "text": "The gluten, which is the stretchy net made by the flour proteins, holds the gas that the yeast makes."
+  },
+  {
+   "a": 1496.2,
+   "b": 1502.44,
+   "k": "in_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "in_02_b"
+   },
+   "text": "The yeast eats the sugar and makes carbon dioxide, and the gluten net stretches like a balloon."
+  },
+  {
+   "a": 1502.44,
+   "b": 1506.97,
+   "k": "kt_02",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_02"
+   },
+   "text": "That is why the bread rises, and that is why the windowpane test matters."
+  },
+  {
+   "a": 1506.97,
+   "b": 1514.74,
+   "k": "kt_04",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_04"
+   },
+   "text": "When the bread is baked, the starch in the crumb sets, and the crust turns golden from the sugar and the proteins browning together."
+  },
+  {
+   "a": 1514.74,
+   "b": 1521.4,
+   "k": "kt_06",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "That is the Maillard reaction, the same reaction that makes toast tast"
+    ],
+    "sig": "Sachiko",
+    "k": "kt_06"
+   },
+   "text": "That is the Maillard reaction, the same reaction that makes toast taste good and makes a seared steak brown."
+  },
+  {
+   "a": 1521.4,
+   "b": 1530.37,
+   "k": "kt_11",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_11"
+   },
+   "text": "It is a real chemistry, and it is why the crust tastes like the crust. But there is one thing that happens after baking that makes bread go hard."
+  },
+  {
+   "a": 1530.37,
+   "b": 1539.26,
+   "k": "kt_13",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_13"
+   },
+   "text": "It is called starch retrogradation. As the bread cools and sits, the starch molecules slowly line up again and form small crystals."
+  },
+  {
+   "a": 1539.26,
+   "b": 1546.34,
+   "k": "kt_14",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_14"
+   },
+   "text": "These crystals grip the water, and the loaf feels dry and firm, even though very little water has left."
+  },
+  {
+   "a": 1546.34,
+   "b": 1554.99,
+   "k": "kt_15",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_15"
+   },
+   "text": "This is why bread goes stale even in a sealed bag, and why moisture loss alone does not explain it. The paste helps against that."
+  },
+  {
+   "a": 1554.99,
+   "b": 1561.92,
+   "k": "q_stove_pot",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_stove_pot"
+   },
+   "text": "The cooked flour holds more water, so the crumb has more moisture to start with, and the crystals form more slowly."
+  },
+  {
+   "a": 1561.92,
+   "b": 1574.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "This is the honest reason the bread stays soft longer. But it does not stop the process. Only freezing does that, because at very cold temperatures the starch m"
+  },
+  {
+   "a": 1574.5,
+   "b": 1578.93,
+   "k": "kt_18",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_18"
+   },
+   "text": "So when you freeze the slices, you are really pausing the bread's clock."
+  },
+  {
+   "a": 1578.93,
+   "b": 1586.91,
+   "k": "kt_23",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "kt_23",
+    "txt": "REFRIGERATING ON THE OTHER HAND"
+   },
+   "text": "Refrigerating, on the other hand, is the cold that speeds the clock up in many breads, and that is why I keep the bread out of the refrigerator."
+  },
+  {
+   "a": 1586.91,
+   "b": 1593.87,
+   "k": "kt_24",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_24"
+   },
+   "text": "The sugar in the bread is food for the yeast, and it also helps keep the crumb soft, because sugar holds water."
+  },
+  {
+   "a": 1593.87,
+   "b": 1600.05,
+   "k": "me_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_01_b"
+   },
+   "text": "The butter coats the gluten strands and makes them feel tender, so the bread does not feel like rubber."
+  },
+  {
+   "a": 1600.05,
+   "b": 1607.06,
+   "k": "me_02_b",
+   "c": "CostTag",
+   "props": {
+    "price": "SALT CONTROLS",
+    "sub": "SALT CONTROLS THE YEAST SO IT",
+    "k": "me_02_b"
+   },
+   "text": "Salt controls the yeast, so it does not grow too fast and make a bread with big holes and a weak structure."
+  },
+  {
+   "a": 1607.06,
+   "b": 1615.14,
+   "k": "me_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_03_b"
+   },
+   "text": "So each of the four main ingredients, and the little salt and butter helpers, has a job. Nothing in the bread is there just to be there."
+  },
+  {
+   "a": 1615.14,
+   "b": 1623.45,
+   "k": "me_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_04_b"
+   },
+   "text": "The rest and the rise also have science. While the dough rests, the gluten relaxes, and the water spreads evenly through the dough."
+  },
+  {
+   "a": 1623.45,
+   "b": 1631.81,
+   "k": "me_05_b",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "WHY IT WORKS",
+    "bed": "me_05_b",
+    "steps": [
+     {
+      "t": 1624.45,
+      "txt": "THAT IS WHY THE DOUGH",
+      "k": "me_05_b"
+     }
+    ]
+   },
+   "text": "That is why the dough feels easier to shape after a rest, and why a dough that is shaped too fast tears and pulls back."
+  },
+  {
+   "a": 1631.81,
+   "b": 1634.1,
+   "k": "me_06_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_06_b"
+   },
+   "text": "Patience is part of the chemistry too."
+  },
+  {
+   "a": 1634.1,
+   "b": 1646.09,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "Now let us talk about money, because I am a practical woman, and my husband counted every penny in our house. He used to say that every dollar you save is a dol"
+  },
+  {
+   "a": 1646.09,
+   "b": 1647.97,
+   "k": "mo_d1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_d1"
+   },
+   "text": "So let me show you the numbers."
+  },
+  {
+   "a": 1647.97,
+   "b": 1657.64,
+   "k": "me_07_b",
+   "c": "Chapter",
+   "props": {
+    "n": "8",
+    "title": "THE MONEY",
+    "label": "PART",
+    "k": "me_07_b",
+    "av": false
+   },
+   "text": "The United States Bureau of Labor Statistics tracks the average price of plain white bread, and in August of this year it was about two dollars a pound."
+  },
+  {
+   "a": 1657.64,
+   "b": 1666.83,
+   "k": "me_08_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_08_b"
+   },
+   "text": "A loaf of soft milk bread at a bakery can cost three times that, depending on your town. So please check your own store, because prices change."
+  },
+  {
+   "a": 1666.83,
+   "b": 1675.83,
+   "k": "me_09_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_09_b"
+   },
+   "text": "The point is simple: the bakery loaf is the expensive one, and the plain loaf is not cheap either. The big saving is not the single loaf."
+  },
+  {
+   "a": 1675.83,
+   "b": 1680.57,
+   "k": "me_10_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_10_b"
+   },
+   "text": "The saving is that one loaf lasts the whole week, with the freezer trick."
+  },
+  {
+   "a": 1680.57,
+   "b": 1688.81,
+   "k": "me_11_b",
+   "c": "Checklist",
+   "props": {
+    "head": "REMEMBER",
+    "k": "me_11_b",
+    "items": [
+     {
+      "t": 1681.57,
+      "txt": "IF YOU BUY A BAKERY",
+      "k": "me_11_b"
+     }
+    ]
+   },
+   "text": "If you buy a bakery loaf every three days, that is about ten loaves a month, and at three times the plain price it adds up fast."
+  },
+  {
+   "a": 1688.81,
+   "b": 1698.55,
+   "k": "me_12_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_12_b"
+   },
+   "text": "If you bake this bread once a week, you buy the flour once for many loaves, and you have bread that is softer, warmer, and made with your own hands."
+  },
+  {
+   "a": 1698.55,
+   "b": 1705.15,
+   "k": "me_13_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_13_b"
+   },
+   "text": "I will not give you a made up number for the flour and the butter, because the prices in your kitchen are your own."
+  },
+  {
+   "a": 1705.15,
+   "b": 1710.37,
+   "k": "mo_d2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_d2"
+   },
+   "text": "Write them on a paper, do the arithmetic once, and you will see the answer yourself."
+  },
+  {
+   "a": 1710.37,
+   "b": 1717.21,
+   "k": "me_14_b",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Here is a simple weekly plan that I used in my own kitchen, when we ha"
+    ],
+    "sig": "Sachiko",
+    "k": "me_14_b"
+   },
+   "text": "Here is a simple weekly plan that I used in my own kitchen, when we had little money in the early years."
+  },
+  {
+   "a": 1717.21,
+   "b": 1726.01,
+   "k": "me_15_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_15_b"
+   },
+   "text": "On Sunday, I made the paste in the evening, and the dough in the morning. I shaped the bread at noon, and baked it while the family was at the table."
+  },
+  {
+   "a": 1726.01,
+   "b": 1735.0,
+   "k": "me_16_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_16_b"
+   },
+   "text": "On Monday, I cut the loaf into slices, and put half of them in the freezer. On Wednesday, I made the french toast with the bread that was still soft."
+  },
+  {
+   "a": 1735.0,
+   "b": 1742.39,
+   "k": "me_17_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_17_b"
+   },
+   "text": "On Friday, I made the crumbs from the last heel. That is a whole week from one loaf, with no waste."
+  },
+  {
+   "a": 1742.39,
+   "b": 1750.83,
+   "k": "me_18_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_18_b"
+   },
+   "text": "You do not need a fancy machine. You need a bowl, a spoon, a scale if you can, a loaf pan, and a clean towel."
+  },
+  {
+   "a": 1750.83,
+   "b": 1757.99,
+   "k": "me_19_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_19_b"
+   },
+   "text": "My mother had a wooden bowl that was older than my husband. She had no mixer, and her bread was the best in the street."
+  },
+  {
+   "a": 1757.99,
+   "b": 1769.85,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "So do not let the money worry you. Flour, water, and patience are cheap things. The one expensive thing is the time, and the time costs nothing, if you have it."
+  },
+  {
+   "a": 1769.85,
+   "b": 1778.25,
+   "k": "me_21_b",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "me_21_b",
+    "txt": "ONE MORE HONEST WORD ABOUT"
+   },
+   "text": "One more honest word about cost. If you bake this bread often, your oven uses power, and the butter and the milk add up."
+  },
+  {
+   "a": 1778.25,
+   "b": 1783.38,
+   "k": "mi_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_01_b"
+   },
+   "text": "So bake two loaves at once when you can, and let the second one go to a neighbor."
+  },
+  {
+   "a": 1783.38,
+   "b": 1789.67,
+   "k": "mi_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_02_b"
+   },
+   "text": "In my life, the neighbor who received the loaf always came back the next week with something to share."
+  },
+  {
+   "a": 1789.67,
+   "b": 1795.05,
+   "k": "mi_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_03_b"
+   },
+   "text": "That is how my mother lived, and that is the best return on a loaf of bread I know."
+  },
+  {
+   "a": 1795.05,
+   "b": 1800.63,
+   "k": "mi_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_04_b"
+   },
+   "text": "Now I want to tell you about the first loaf I baked in America, in 1970."
+  },
+  {
+   "a": 1800.63,
+   "b": 1808.0,
+   "k": "mi_05_b",
+   "c": "Chapter",
+   "props": {
+    "n": "9",
+    "title": "A MEMORY",
+    "label": "PART",
+    "k": "mi_05_b",
+    "av": false
+   },
+   "text": "I promised you this story, and I will tell it simply, because it is the truth and it does not need decoration."
+  },
+  {
+   "a": 1808.0,
+   "b": 1818.69,
+   "k": "mo",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo"
+   },
+   "text": "We lived in a small apartment in the second floor of an old wooden building, with a kitchen that had one window over the sink, and a stove with an oven the size"
+  },
+  {
+   "a": 1818.69,
+   "b": 1827.81,
+   "k": "mo_01_b",
+   "c": "CostTag",
+   "props": {
+    "price": "THE OVEN",
+    "sub": "IT HAD ONLY A DIAL THAT",
+    "k": "mo_01_b"
+   },
+   "text": "The oven had no thermometer. It had only a dial that said low, medium and high, and nobody in that building knew what the numbers meant."
+  },
+  {
+   "a": 1827.81,
+   "b": 1846.45,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "My husband worked long hours, and he came home with the cold on his coat. I wanted to make him a bread that tasted like home. I had no paste, because I did not "
+  },
+  {
+   "a": 1846.45,
+   "b": 1854.11,
+   "k": "q_table_tea",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_table_tea"
+   },
+   "text": "It rose a little. I put it in the oven on medium, and I waited, and the whole apartment filled with a smell of burning sugar."
+  },
+  {
+   "a": 1854.11,
+   "b": 1858.76,
+   "k": "mo_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_03_b"
+   },
+   "text": "When I took it out, the top was almost black, and the middle was raw."
+  },
+  {
+   "a": 1858.76,
+   "b": 1867.39,
+   "k": "mo_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_04_b"
+   },
+   "text": "I put it on the table, and I cried a little, quietly, in the kitchen. My husband came home, and he looked at the loaf, and he looked at me."
+  },
+  {
+   "a": 1867.39,
+   "b": 1871.15,
+   "k": "mo_05_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_05_b"
+   },
+   "text": "He picked up the knife, and it did not go in easily."
+  },
+  {
+   "a": 1871.15,
+   "b": 1880.22,
+   "k": "mo_b3",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "A MEMORY",
+    "bed": "mo_b3",
+    "steps": [
+     {
+      "t": 1872.15,
+      "txt": "HE CUT ONE SLICE THICK",
+      "k": "mo_b3"
+     }
+    ]
+   },
+   "text": "He cut one slice, thick and hard, and he spread a lot of butter on it, and he ate it, every bite, slowly, while I watched him."
+  },
+  {
+   "a": 1880.22,
+   "b": 1890.55,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "Then he looked at me and said, in his English, which was still learning, \"This is the best bread in America.\" I knew he was not telling the truth, and I loved h"
+  },
+  {
+   "a": 1890.55,
+   "b": 1897.29,
+   "k": "mo_c7",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_c7"
+   },
+   "text": "That night, after he fell asleep, I sat at the small table with a pen and a sheet of paper from the drawer."
+  },
+  {
+   "a": 1897.29,
+   "b": 1904.27,
+   "k": "p_wheat_grains",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_wheat_grains"
+   },
+   "text": "I wrote a letter to my mother in Osaka, in Japanese, and I told her about the black top and the raw middle."
+  },
+  {
+   "a": 1904.27,
+   "b": 1910.9,
+   "k": "mo_d3",
+   "c": "Checklist",
+   "props": {
+    "head": "REMEMBER",
+    "k": "mo_d3",
+    "items": [
+     {
+      "t": 1905.27,
+      "txt": "I TOLD HER ABOUT THE",
+      "k": "mo_d3"
+     },
+     {
+      "t": 1908.27,
+      "txt": "I TOLD HER I MISSED",
+      "k": "mo_d3"
+     }
+    ]
+   },
+   "text": "I told her about the oven with no numbers. I told her I missed the smell of her kitchen on the rainy days."
+  },
+  {
+   "a": 1910.9,
+   "b": 1919.89,
+   "k": "mo_e1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_e1"
+   },
+   "text": "And I wrote, at the end, that I was not sure I was going to be a good wife in this country, and I was not sure I was going to be a good cook either."
+  },
+  {
+   "a": 1919.89,
+   "b": 1925.07,
+   "k": "mo_e3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_e3"
+   },
+   "text": "My mother wrote back three weeks later. She did not write about bread at all."
+  },
+  {
+   "a": 1925.07,
+   "b": 1935.07,
+   "k": "mo_e4",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_e4"
+   },
+   "text": "She wrote about the cherry tree in our yard in Osaka, and how it had flowered early that spring, and that she had put a little dish of rice on the window for th"
+  },
+  {
+   "a": 1935.07,
+   "b": 1941.62,
+   "k": "mo_f2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_f2"
+   },
+   "text": "She said the bread would come, the way a good rain comes. She said, \"The dough is not in a hurry, Sachiko."
+  },
+  {
+   "a": 1941.62,
+   "b": 1948.42,
+   "k": "mo_g8",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_g8"
+   },
+   "text": "Why are you?\" I still have that letter, in a box with my husband's pen. So that is the memory."
+  },
+  {
+   "a": 1948.42,
+   "b": 1955.31,
+   "k": "o_crumb",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_crumb"
+   },
+   "text": "A brick loaf, a man who ate it anyway, and a letter from a mother who told me the dough is not in a hurry."
+  },
+  {
+   "a": 1955.31,
+   "b": 1960.81,
+   "k": "o_crumbs_jar",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_crumbs_jar"
+   },
+   "text": "The next Saturday, I made the paste for the first time, with the boiling water from the kettle."
+  },
+  {
+   "a": 1960.81,
+   "b": 1970.66,
+   "k": "st_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "st_01_b"
+   },
+   "text": "I did it slowly, the way she taught me, and the bread rose soft, and it did not burn, and when I cut it, the inside was white like a cloud."
+  },
+  {
+   "a": 1970.66,
+   "b": 1979.99,
+   "k": "st_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "st_02_b"
+   },
+   "text": "My husband did not say anything. He just smiled, and he asked for the end piece, and I gave it to him. Some things do not need many words."
+  },
+  {
+   "a": 1979.99,
+   "b": 1984.41,
+   "k": "st_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "st_03_b"
+   },
+   "text": "Let us put it all together, quickly, so you can make it this weekend."
+  },
+  {
+   "a": 1984.41,
+   "b": 1991.51,
+   "k": "st_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "st_04_b"
+   },
+   "text": "The four main ingredients are flour, milk, yeast, and sugar, with a little salt and a little butter."
+  },
+  {
+   "a": 1991.51,
+   "b": 1998.51,
+   "k": "ti_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "ti_01_b"
+   },
+   "text": "The paste is fifty grams of flour and fifty grams of boiling water, cooled until warm to the finger."
+  },
+  {
+   "a": 1998.51,
+   "b": 2005.84,
+   "k": "va_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_01_b"
+   },
+   "text": "The milk is warm, about one hundred degrees. Knead ten minutes, add the butter, and do the windowpane test."
+  },
+  {
+   "a": 2005.84,
+   "b": 2012.2,
+   "k": "va_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_02_b"
+   },
+   "text": "Rise one hour, press the corners of the pan, rise forty five to sixty minutes."
+  },
+  {
+   "a": 2012.2,
+   "b": 2019.45,
+   "k": "va_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_03_b"
+   },
+   "text": "Bake at three fifty for thirty five to forty minutes, to about one ninety inside. Cool two hours on the rack."
+  },
+  {
+   "a": 2019.45,
+   "b": 2025.51,
+   "k": "va_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_04_b"
+   },
+   "text": "Keep it on the counter two or three days, and freeze the rest in slices. Here is your homework."
+  },
+  {
+   "a": 2025.51,
+   "b": 2032.19,
+   "k": "va_05_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_05_b"
+   },
+   "text": "Make the paste this weekend, even if you do not bake the whole loaf. Smell it. Feel it on your finger."
+  },
+  {
+   "a": 2032.19,
+   "b": 2038.57,
+   "k": "va_06_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_06_b"
+   },
+   "text": "Then tell me in the comments: what did your first loaf look like, the top, the middle, and the bottom?"
+  },
+  {
+   "a": 2038.57,
+   "b": 2041.81,
+   "k": "va_07_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_07_b"
+   },
+   "text": "Describe the windowpane you saw, if you saw one."
+  },
+  {
+   "a": 2041.81,
+   "b": 2049.11,
+   "k": "va_08_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_08_b"
+   },
+   "text": "I want to hear about your brick, your cloud, or your almost perfect bread, because every loaf teaches me something."
+  },
+  {
+   "a": 2049.11,
+   "b": 2059.66,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ],
+   "text": "Next time, I will show you my mother's trick for the little fruit flies that come into the kitchen after the first hot rain. Sixty years, and not one fruit fly "
+  },
+  {
+   "a": 2059.66,
+   "b": 2064.68,
+   "k": "va_10_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_10_b"
+   },
+   "text": "Please come back for it, because it uses things that every kitchen already has."
+  },
+  {
+   "a": 2064.68,
+   "b": 2072.83,
+   "k": "va_11_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_11_b"
+   },
+   "text": "Until then, remember the one thing my mother told me, and I will tell you the same. The dough is not in a hurry. Why are you?"
+  },
+  {
+   "a": 2072.83,
+   "b": 2076.51,
+   "k": "va_12_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "va_12_b"
+   },
+   "text": "Thank you for sitting with me today, and I will see you in the kitchen."
+  }
+ ],
+ "end": 2076.51
+}

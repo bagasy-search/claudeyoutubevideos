@@ -1,4 +1,4 @@
-// sachiko1 · componentes del video 1 de Sachiko's Kitchen (Claude, 12-oct-2026).
+// Sachiko's Kitchen · componentes del canal (nacidos en sachiko1, 12-oct-2026; genéricos con props desde sachiko-kit, 13-oct).
 // Regla del cerebro: UNA idea por plano, máx. 2 textos a la vez, el ojo va a un solo lugar (la cámara lleva al centro lo que nombra la voz).
 // Capas: foto real (gpt) con cámara → marcas/pines que viven DENTRO de la foto → rótulos en pantalla → grade + grano.
 // Tiempos de las props = segundos ABSOLUTOS de la voz (words.json); a = segundo de entrada; d = cuadros.
@@ -33,16 +33,7 @@ const shakeAt = (f: number, at: (t: number) => number, ts: number[] = []) => {
   return [jx, jy];
 };
 // polvo en el aire (motas cálidas)
-const Motes: React.FC<{ f: number; n?: number; op?: number }> = ({ f, n = 26, op = 1 }) => (
-  <AbsoluteFill style={{ pointerEvents: "none", opacity: op }}>
-    {Array.from({ length: n }, (_, i) => {
-      const x = rnd(i, 1) * 1920 + Math.sin(f / (50 + 40 * rnd(i, 2)) + rnd(i, 3) * 6) * 30;
-      const y = 1080 - ((f * (0.35 + rnd(i, 4) * 0.8) + rnd(i, 5) * 1080) % 1140);
-      const r = 2 + 5 * rnd(i, 6);
-      return <div key={i} style={{ position: "absolute", left: x, top: y, width: r, height: r, borderRadius: 9, background: "rgba(255,240,210,0.75)", opacity: 0.12 + 0.25 * rnd(i, 7), filter: r > 5 ? "blur(1px)" : undefined }} />;
-    })}
-  </AbsoluteFill>
-);
+const Motes: React.FC<{ f: number; n?: number; op?: number }> = () => null; // sin motas (sin filtros, 13-oct)
 // rótulo en pantalla (entra en su palabra; opcional sale en `out`)
 export type ChipB = { t: number; txt: string; x: number; y: number; red?: boolean; ink?: boolean; hand?: boolean; size?: number; out?: number; rot?: number; big?: boolean };
 const Chips: React.FC<{ f: number; at: (t: number) => number; chips?: ChipB[] }> = ({ f, at, chips }) => (
@@ -84,7 +75,7 @@ export const PhotoBeats: P<{ k: string; cam?: Cam[]; marks?: MarkB[]; chips?: Ch
       <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0b0a10" }}>
         <AbsoluteFill style={camStyle(c, jx, jy)}>
           <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
-            <Img src={img(k)} style={{ width: 1920, height: 1080, objectFit: "cover", filter: old ? "sepia(0.45) contrast(1.05) brightness(0.95)" : dim ? `brightness(${1 - dim})` : undefined }} />
+            <Img src={img(k)} style={{ width: 1920, height: 1080, objectFit: "cover", filter: dim ? `brightness(${1 - dim})` : undefined }} />
             {(marks || []).map((m, i) => <Mark key={i} kind={m.kind} x={m.x} y={m.y} w={m.w} h={m.h} f={f} at={at(m.t)} dur={11} sw={m.sw ?? 10} />)}
             {(rings || []).map((r, i) => {
               const q0 = (f - at(r.t)) / 34;
@@ -103,30 +94,29 @@ export const PhotoBeats: P<{ k: string; cam?: Cam[]; marks?: MarkB[]; chips?: Ch
     );
   };
 
-// ═════════ APERTURA: la miniatura exacta 0,6 s → cobra vida (cámara, luz que respira, motas, aros en las bolitas, círculo en la cucaracha) ═════════
-export const OpenThumb: P<{ k: string; ring: number; roach: number }> = ({ a, d, k, ring, roach }) => {
+// ═════════ APERTURA: la miniatura exacta 0,6 s → cobra vida (cámara hacia `focus`, luz que respira, motas, aros que laten en `rings`, círculos rojos en `marks`) ═════════
+// k = la miniatura del video (img/<slug>/<slug>_thumb.jpg). rings/marks en px del lienzo 1920x1080, medidos MIRANDO la miniatura.
+export const OpenThumb: P<{ k: string; focus?: [number, number]; rings?: { t: number; x: number; y: number; w?: number }[]; marks?: { t: number; x: number; y: number; w: number; h: number }[] }> = ({ a, d, k, focus = [930, 640], rings = [], marks = [] }) => {
   const { f, at } = useT(a);
   const still = f < 18;
-  const K: Cam[] = [{ t: a, s: 1, x: 960, y: 540 }, { t: a + 0.6, s: 1, x: 960, y: 540 }, { t: a + 1.4, s: 1.16, x: 930, y: 640 }];
+  const K: Cam[] = [{ t: a, s: 1, x: 960, y: 540 }, { t: a + 0.6, s: 1, x: 960, y: 540 }, { t: a + 1.4, s: 1.16, x: focus[0], y: focus[1] }];
   const c = still ? { t: 0, s: 1, x: 960, y: 540 } : camAt(f, at, K, 2.4);
   const breathe = still ? 0 : 0.05 * Math.sin((f - 18) / 11);
-  const rq = (f - at(ring)) / 30;
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
       <AbsoluteFill style={camStyle({ ...c, s: c.s * (still ? 1 : 1 + 0.03 * (f - 18) / Math.max(1, d - 18)) })}>
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
           <Img src={img(k)} style={{ width: 1920, height: 1080 }} />
-          {!still && rq > 0 ? [0, 0.5].map((o, j) => { const q = (rq + o) % 1; return <div key={j} style={{ position: "absolute", left: 925, top: 945, width: 300 + 260 * eo(q), height: (300 + 260 * eo(q)) * 0.62, translate: "-50% -50%", borderRadius: "50%", border: `${7 * (1 - q) + 1}px solid rgba(255,232,150,${0.8 * (1 - q)})` }} />; }) : null}
-          {!still ? <Mark kind="circle" x={250} y={900} w={330} h={160} f={f} at={at(roach)} dur={9} sw={11} /> : null}
+          {!still ? rings.map((r, i) => { const rq = (f - at(r.t)) / 30; const w0 = r.w || 300; return rq > 0 ? [0, 0.5].map((o, j) => { const q = (rq + o) % 1; return <div key={`${i}_${j}`} style={{ position: "absolute", left: r.x, top: r.y, width: w0 + 260 * eo(q), height: (w0 + 260 * eo(q)) * 0.62, translate: "-50% -50%", borderRadius: "50%", border: `${7 * (1 - q) + 1}px solid rgba(255,232,150,${0.8 * (1 - q)})` }} />; }) : null; }) : null}
+          {!still ? marks.map((m, i) => <Mark key={i} kind="circle" x={m.x} y={m.y} w={m.w} h={m.h} f={f} at={at(m.t)} dur={9} sw={11} />) : null}
         </div>
       </AbsoluteFill>
-      {!still ? <AbsoluteFill style={{ background: `radial-gradient(ellipse at 58% 30%, rgba(255,214,140,${0.14 + breathe}), rgba(255,214,140,0) 60%)`, mixBlendMode: "screen" }} /> : null}
       {!still ? <Motes f={f} n={30} op={cl((f - 18) / 12)} /> : null}
     </AbsoluteFill>
   );
 };
 
-// ═════════ 60 AÑOS: odómetro 1965 → 2025, fotos de sus cocinas que caen en cada década, sello "0 COCKROACHES" ═════════
+// ═════════ AÑOS: odómetro from → from+span, fotos de sus cocinas que caen en cada década, sello stampTxt (p. ej. "0 FRUIT FLIES") ═════════
 const Odo: React.FC<{ v: number; size: number }> = ({ v, size }) => {
   const H = size * 1.05, digits = 4;
   return (
@@ -146,9 +136,10 @@ const Odo: React.FC<{ v: number; size: number }> = ({ v, size }) => {
     </div>
   );
 };
-export const SixtyYears: P<{ bed: string; photos: { k: string; t: number; year: string }[]; t0: number; t1: number; stamp: number }> = ({ a, d, bed, photos, t0, t1, stamp }) => {
+export const SixtyYears: P<{ bed: string; photos: { k: string; t: number; year: string }[]; t0: number; t1: number; stamp: number; stampTxt: string; label?: string; caption?: string; from?: number; span?: number }> =
+  ({ a, d, bed, photos, t0, t1, stamp, stampTxt, label = "IN MY KITCHEN", caption = "sixty years…", from = 1965, span = 60 }) => {
   const { f, at } = useT(a);
-  const v = 1965 + 60 * ez(cl((f - at(t0)) / Math.max(1, at(t1) - at(t0))));
+  const v = from + span * ez(cl((f - at(t0)) / Math.max(1, at(t1) - at(t0))));
   const s = sp(f, at(stamp), 11, 240);
   const [jx, jy] = shakeAt(f, at, [stamp + 0.12]);
   const o = sp(f, 0, 13, 140);
@@ -169,13 +160,13 @@ export const SixtyYears: P<{ bed: string; photos: { k: string; t: number; year: 
           );
         })}
         <div style={{ position: "absolute", left: 1150, top: 250, opacity: o, transform: `translateX(${(1 - o) * 120}px)` }}>
-          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 10, color: C.lilac, marginBottom: 16 }}>IN MY KITCHEN</div>
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 10, color: C.lilac, marginBottom: 16 }}>{label}</div>
           <Odo v={v} size={190} />
-          <div style={{ marginTop: 26, fontFamily: HAND, fontSize: 64, color: C.porc, textShadow: shadowTxt }}>sixty years…</div>
+          <div style={{ marginTop: 26, fontFamily: HAND, fontSize: 64, color: C.porc, textShadow: shadowTxt }}>{caption}</div>
         </div>
         {f >= at(stamp) - 1 ? (
           <div style={{ position: "absolute", left: 1460, top: 800, translate: "-50% -50%", opacity: cl(s * 3), transform: `rotate(-7deg) scale(${2.4 - 1.4 * s})`, zIndex: 20 }}>
-            <div style={{ border: `10px solid ${C.red}`, borderRadius: 14, padding: "8px 34px", fontFamily: LABEL, fontWeight: 700, fontSize: 86, color: C.red, letterSpacing: 5, background: "rgba(255,248,240,0.92)", boxShadow: "0 24px 60px rgba(0,0,0,0.5)", whiteSpace: "nowrap" }}>0 COCKROACHES</div>
+            <div style={{ border: `10px solid ${C.red}`, borderRadius: 14, padding: "8px 34px", fontFamily: LABEL, fontWeight: 700, fontSize: 86, color: C.red, letterSpacing: 5, background: "rgba(255,248,240,0.92)", boxShadow: "0 24px 60px rgba(0,0,0,0.5)", whiteSpace: "nowrap" }}>{stampTxt}</div>
           </div>
         ) : null}
         <Grade vig={0.42} />
@@ -225,10 +216,12 @@ export const TodayBoard: P<{ bed: string; head: { t: number; txt: string }; card
   );
 };
 
-// ═════════ EL NOMBRE: cientos de bolitas de fondo → cartel ホウ酸団子 (PNG) + HO-SAN DANGO + traducción + sello NEVER EAT ═════════
-export const DangoName: P<{ k: string; name: number; gloss: number; never: number }> = ({ a, d, k, name, gloss, never }) => {
+// ═════════ EL NOMBRE JAPONÉS: foto de fondo que se oscurece → cartel con el kanji (PNG opcional) + NOMBRE en romaji + traducción a mano + sello opcional ═════════
+// kanji = ruta de un PNG con las letras japonesas renderizadas por CÓDIGO con una fuente (nunca escritas por la IA). word = "SHIO KOJI"; gloss = "salt mold"; stamp = { t, txt }.
+export const NameCard: P<{ k: string; word: string; gloss: string; kanji?: string; name: number; glossAt: number; stamp?: { t: number; txt: string } }> = ({ a, d, k, word, gloss, kanji, name, glossAt, stamp }) => {
   const { f, at } = useT(a);
-  const n = sp(f, at(name), 13, 120), g = sp(f, at(gloss), 14, 160), s = sp(f, at(never), 11, 240);
+  const never = stamp ? stamp.t : a + 9999;
+  const n = sp(f, at(name), 13, 120), g = sp(f, at(glossAt), 14, 160), s = sp(f, at(never), 11, 240);
   const [jx, jy] = shakeAt(f, at, [never + 0.1]);
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#100c08" }}>
@@ -237,14 +230,14 @@ export const DangoName: P<{ k: string; name: number; gloss: number; never: numbe
       </AbsoluteFill>
       <div style={{ position: "absolute", left: 960, top: 470, translate: "-50% -50%", opacity: cl(n * 2), transform: `perspective(1600px) rotateX(${(1 - n) * 50}deg) translateY(${(1 - n) * 200}px) rotate(-1.5deg)` }}>
         <div style={{ background: "#F7F0DE", padding: "40px 80px 46px", borderRadius: 6, boxShadow: "0 60px 110px rgba(0,0,0,0.6)", textAlign: "center", borderTop: `16px solid ${C.lilacDeep}` }}>
-          <Img src={img("img/sachiko1/_st/kanji_dango.png")} style={{ height: 190, display: "block", margin: "0 auto" }} />
-          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 70, letterSpacing: 14, color: C.ink, marginTop: 14 }}>HO-SAN DANGO</div>
-          <div style={{ fontFamily: HAND, fontSize: 64, color: C.lilacDeep, marginTop: 6, opacity: g, transform: `translateY(${(1 - g) * 20}px)` }}>"little dumplings"</div>
+          {kanji ? <Img src={img(kanji)} style={{ height: 190, display: "block", margin: "0 auto" }} /> : null}
+          <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 70, letterSpacing: 14, color: C.ink, marginTop: 14 }}>{word}</div>
+          <div style={{ fontFamily: HAND, fontSize: 64, color: C.lilacDeep, marginTop: 6, opacity: g, transform: `translateY(${(1 - g) * 20}px)` }}>"{gloss}"</div>
         </div>
       </div>
-      {f >= at(never) - 1 ? (
+      {stamp && f >= at(never) - 1 ? (
         <div style={{ position: "absolute", left: 1420, top: 820, translate: "-50% -50%", opacity: cl(s * 3), transform: `rotate(-8deg) scale(${2.3 - 1.3 * s})` }}>
-          <div style={{ border: `10px solid ${C.red}`, borderRadius: 14, padding: "6px 30px", fontFamily: LABEL, fontWeight: 700, fontSize: 84, color: C.red, letterSpacing: 5, background: "rgba(255,248,240,0.92)", boxShadow: "0 24px 60px rgba(0,0,0,0.5)", whiteSpace: "nowrap" }}>NEVER EAT</div>
+          <div style={{ border: `10px solid ${C.red}`, borderRadius: 14, padding: "6px 30px", fontFamily: LABEL, fontWeight: 700, fontSize: 84, color: C.red, letterSpacing: 5, background: "rgba(255,248,240,0.92)", boxShadow: "0 24px 60px rgba(0,0,0,0.5)", whiteSpace: "nowrap" }}>{stamp ? stamp.txt : ""}</div>
         </div>
       ) : null}
       <Grade warm={1.2} vig={0.45} />
@@ -254,7 +247,9 @@ export const DangoName: P<{ k: string; name: number; gloss: number; never: numbe
 };
 
 // ═════════ LA INVITACIÓN: la cebolla con aros de olor → se parte la pantalla: cebolla = THE INVITATION / polvo = THE SURPRISE ═════════
-export const Invite: P<{ onion: string; powder: string; smell: number; dark: number; inv: number; sur: number; sx?: number; sy?: number }> = ({ a, d, onion, powder, smell, dark, inv, sur, sx = 960, sy = 560 }) => {
+// Pantalla partida en dos tiempos: foto izquierda (onion) con aros que salen de (sx,sy) → entra la derecha (powder). Rótulos por props.
+export const Invite: P<{ onion: string; powder: string; smell: number; dark: number; inv: number; sur: number; sx?: number; sy?: number; topTxt?: string; leftTxt?: string; rightTxt?: string }> =
+  ({ a, d, onion, powder, smell, dark, inv, sur, sx = 960, sy = 560, topTxt = "IT CALLS THEM OUT OF THE DARK", leftTxt = "THE INVITATION", rightTxt = "THE SURPRISE" }) => {
   const { f, at } = useT(a);
   const sv = sp(f, at(sur), 15, 110);
   const iv = sp(f, at(inv), 14, 160);
@@ -267,12 +262,12 @@ export const Invite: P<{ onion: string; powder: string; smell: number; dark: num
           <Img src={img(onion)} style={{ width: 1920, height: 1080, objectFit: "cover" }} />
           {rq > 0 ? [0, 0.33, 0.66].map((o, j) => { const q = (rq + o) % 1; return <div key={j} style={{ position: "absolute", left: sx, top: sy, width: 80 + 900 * eo(q), height: 80 + 900 * eo(q), translate: "-50% -50%", borderRadius: "50%", border: `${8 * (1 - q) + 1}px solid rgba(255,236,170,${0.7 * (1 - q)})` }} />; }) : null}
         </div>
-        <div style={{ position: "absolute", left: 90, top: 110, opacity: dk * (1 - iv) }}><Chip txt="IT CALLS THEM OUT OF THE DARK" size={48} /></div>
-        <div style={{ position: "absolute", left: 90, bottom: 120, opacity: iv, transform: `translateY(${(1 - iv) * 30}px)` }}><Chip txt="THE INVITATION" size={70} bg={C.lilacDeep} color="#fff" rot={-3} /></div>
+        <div style={{ position: "absolute", left: 90, top: 110, opacity: dk * (1 - iv) }}><Chip txt={topTxt} size={48} /></div>
+        <div style={{ position: "absolute", left: 90, bottom: 120, opacity: iv, transform: `translateY(${(1 - iv) * 30}px)` }}><Chip txt={leftTxt} size={70} bg={C.lilacDeep} color="#fff" rot={-3} /></div>
       </div>
       <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "50%", overflow: "hidden", transform: `translateX(${(1 - sv) * 100}%)`, borderLeft: "10px solid #FBF5E6" }}>
         <Img src={img(powder)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.12 + 0.06 * f / d})` }} />
-        <div style={{ position: "absolute", left: 70, bottom: 120, opacity: sv, transform: `translateY(${(1 - sv) * 30}px)` }}><Chip txt="THE SURPRISE" size={70} red rot={2} /></div>
+        <div style={{ position: "absolute", left: 70, bottom: 120, opacity: sv, transform: `translateY(${(1 - sv) * 30}px)` }}><Chip txt={rightTxt} size={70} red rot={2} /></div>
       </div>
       <Grade vig={0.38} />
       <Grain />
@@ -429,4 +424,4 @@ export const Pair: P<{ bed: string; items: { k: string; t: number; txt: string }
   );
 };
 
-export const SAC: Record<string, React.FC<any>> = { PhotoBeats, OpenThumb, SixtyYears, TodayBoard, DangoName, Invite, PlacesMap, TrailHome, WeekStrip, Pair };
+export const SAC: Record<string, React.FC<any>> = { PhotoBeats, OpenThumb, SixtyYears, TodayBoard, NameCard, Invite, PlacesMap, TrailHome, WeekStrip, Pair };
