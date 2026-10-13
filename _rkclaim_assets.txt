@@ -79,6 +79,7 @@ img/rkclaim_det_notebook_list_blur.jpg
 img/rkclaim_det_phone_door_photo.jpg
 img/rkclaim_det_phone_door_photo_blur.jpg
 img/rkclaim_det_police_form.jpg
+img/rkclaim_det_police_form_blur.jpg
 img/rkclaim_det_policy_theft_highlight.jpg
 img/rkclaim_det_policy_theft_highlight_blur.jpg
 img/rkclaim_det_porch_flower_pot.jpg
@@ -92,6 +93,7 @@ img/rkclaim_det_receipt_serial_back_blur.jpg
 img/rkclaim_det_receipts_table.jpg
 img/rkclaim_det_receipts_table_blur.jpg
 img/rkclaim_det_reinforce.jpg
+img/rkclaim_det_reinforce_blur.jpg
 img/rkclaim_det_report_note_fridge.jpg
 img/rkclaim_det_report_note_fridge_blur.jpg
 img/rkclaim_det_sash_hinge.jpg
@@ -99,6 +101,7 @@ img/rkclaim_det_sash_hinge_blur.jpg
 img/rkclaim_det_screw_pile.jpg
 img/rkclaim_det_screw_pile_blur.jpg
 img/rkclaim_det_serial_back.jpg
+img/rkclaim_det_serial_back_blur.jpg
 img/rkclaim_det_sliding_patio_track.jpg
 img/rkclaim_det_sliding_patio_track_blur.jpg
 img/rkclaim_det_strike_close.jpg
