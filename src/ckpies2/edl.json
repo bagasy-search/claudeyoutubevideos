@@ -25,13 +25,24 @@
   },
   {
    "a": 10.153,
-   "b": 17.703,
+   "b": 10.33,
    "k": "loretta_pull_chair",
    "z": [
     1.04,
     1.13
    ],
    "dx": -40
+  },
+  {
+   "a": 10.33,
+   "b": 17.7,
+   "c": "HeldBack",
+   "props": {
+    "bed": "loretta_pull_chair",
+    "note": "MORE PIES, PLEASE",
+    "noteAt": 12.0
+   },
+   "hero": true
   },
   {
    "a": 17.703,
@@ -79,13 +90,24 @@
   },
   {
    "a": 40.83,
-   "b": 49.147,
+   "b": 40.9,
    "k": "green_tomatoes_vine_frost_dusk",
    "z": [
     1.04,
     1.13
    ],
    "dx": 40
+  },
+  {
+   "a": 40.9,
+   "b": 49.15,
+   "c": "FrostNight",
+   "props": {
+    "circ": 44.0,
+    "bed": "green_tomatoes_vine_frost_dusk",
+    "chip": "FIRST FROST"
+   },
+   "hero": true
   },
   {
    "a": 49.147,
@@ -349,40 +371,46 @@
     "head": "THE SEVEN PIES",
     "items": [
      {
-      "name": "Chess pie",
-      "use": "custard, cornmeal, butter",
-      "k": "pie_chess",
+      "name": "Green tomato pie",
+      "use": "green tomatoes, sugar, lemon",
+      "k": "green_vine",
       "t": 187.473
      },
      {
-      "name": "Sugar cream pie",
-      "use": "cream, flour, brown sugar",
-      "k": "pie_sugar_cream",
+      "name": "Hard-years pie",
+      "use": "eggs, sugar, cider vinegar",
+      "k": "vinegar_spoon",
       "t": 189.013
      },
      {
-      "name": "Shoofly pie",
-      "use": "molasses, flour, crumb topping",
-      "k": "pie_shoofly",
+      "name": "Oatmeal pie",
+      "use": "rolled oats, brown sugar",
+      "k": "oat_pie_slice",
       "t": 190.153
      },
      {
-      "name": "Lemon meringue",
-      "use": "egg yolks, cornstarch, meringue",
-      "k": "pie_lemon_meringue",
+      "name": "Shaker lemon pie",
+      "use": "whole lemons, sugar, eggs",
+      "k": "lemon_bowl",
       "t": 191.013
      },
      {
-      "name": "Skillet butterscotch",
-      "use": "brown sugar, butter, cream",
-      "k": "pie_butterscotch",
+      "name": "Buttermilk pie",
+      "use": "buttermilk, butter, nutmeg",
+      "k": "carton_door",
       "t": 192.273
      },
      {
-      "name": "Sour cream raisin + mock apple",
-      "use": "raisins, sour cream, crackers",
-      "k": "pie_raisin_mock_apple",
+      "name": "Osgood pie",
+      "use": "raisins, walnuts, egg whites",
+      "k": "crackly-baked-top",
       "t": 193.773
+     },
+     {
+      "name": "Funeral pie",
+      "use": "raisins, lemon, double crust",
+      "k": "funeral_pie_wrapped_freezer",
+      "t": 195.0
      }
     ]
    }
@@ -454,8 +482,8 @@
     "n": 2,
     "of": 7,
     "instead": "Eggs, sugar, butter, one spoon cider vinegar",
-    "page": "PAGE 14",
-    "k": "lemon_bin",
+    "page": "PAGE 12",
+    "k": "lemon_bowl",
     "k2": "vinegar_spoon",
     "t": 222.827
    }
@@ -575,14 +603,16 @@
    ]
   },
   {
-   "a": 288.583,
+   "a": 288.6,
    "b": 297.457,
-   "k": "writing_notebook",
-   "z": [
-    1.04,
-    1.13
-   ],
-   "dx": -40
+   "c": "ReadBook",
+   "props": {
+    "bed": "writing_notebook",
+    "page": "page12",
+    "chip": "PAGE 12 · EVERY PIE STARTS HERE",
+    "under": 293.0
+   },
+   "hero": true
   },
   {
    "a": 297.457,
@@ -781,12 +811,14 @@
    "a": 423.847,
    "b": 435.757,
    "k": "",
-   "c": "Arc",
+   "c": "PhotoSeq",
    "props": {
-    "src": "ar_16",
-    "vid": false,
-    "cap": "Iowa farm, 1940s · butter churning on the porch",
-    "find": "Prelinger / USDA film, farm wife working a dasher butter churn on a porch, 1930s-40s"
+    "photos": [
+     {
+      "k": "ar_16",
+      "t": 423.847
+     }
+    ]
    }
   },
   {
@@ -1183,14 +1215,14 @@
    ]
   },
   {
-   "a": 642.507,
-   "b": 649.097,
-   "k": "warm_dish_cold_step",
-   "z": [
-    1.13,
-    1.04
-   ],
-   "dx": 40
+   "a": 642.5,
+   "b": 649.1,
+   "c": "WarmDish",
+   "props": {
+    "bed": "warm_dish_cold_step",
+    "chip": "A WARM DISH ON A COLD STEP"
+   },
+   "hero": true
   },
   {
    "a": 649.097,
@@ -1338,7 +1370,7 @@
    "props": {
     "photos": [
      {
-      "k": "fridge_list",
+      "k": "carton_door",
       "t": 724.053
      },
      {
@@ -1667,6 +1699,26 @@
   [
    788.583,
    802.107
+  ],
+  [
+   187.357,
+   195.833
+  ],
+  [
+   10.33,
+   17.7
+  ],
+  [
+   40.9,
+   49.15
+  ],
+  [
+   288.6,
+   297.457
+  ],
+  [
+   642.5,
+   649.1
   ]
  ]
 }
