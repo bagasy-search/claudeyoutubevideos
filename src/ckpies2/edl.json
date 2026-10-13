@@ -1,0 +1,1672 @@
+{
+ "end": 867.26,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 7.993,
+   "k": "l_open",
+   "c": "ThumbOpen",
+   "props": {
+    "thumb": "th_card",
+    "k": "l_open"
+   },
+   "tin": "cut"
+  },
+  {
+   "a": 7.993,
+   "b": 10.153,
+   "k": "pie_plate_cloth",
+   "c": "Tease",
+   "props": {
+    "k": "pie_plate_cloth",
+    "txt": "THE PIE YOU HOPE YOU NEVER NEED",
+    "tag": "COMING UP"
+   }
+  },
+  {
+   "a": 10.153,
+   "b": 17.703,
+   "k": "loretta_pull_chair",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 17.703,
+   "b": 23.803,
+   "k": "frost_tomato_vines",
+   "c": "Kinetic",
+   "props": {
+    "k": "frost_tomato_vines",
+    "vid": false,
+    "words": [
+     [
+      "FROST",
+      17.873
+     ],
+     [
+      "STORY COUNTY",
+      19.113
+     ],
+     [
+      "OCTOBER",
+      19.813
+     ]
+    ]
+   }
+  },
+  {
+   "a": 23.803,
+   "b": 32.093,
+   "k": "basement_enamel_stove",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 32.093,
+   "b": 40.83,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 40.83,
+   "b": 49.147,
+   "k": "green_tomatoes_vine_frost_dusk",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 49.147,
+   "b": 61.697,
+   "k": "danny_tablet_kitchen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 61.697,
+   "b": 73.124,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "pie_table",
+      "t": 62.72
+     },
+     {
+      "k": "pastor_plate",
+      "t": 66.4
+     },
+     {
+      "k": "sly_smile",
+      "t": 70.3
+     }
+    ],
+    "mark": {
+     "txt": "?",
+     "t": 68.48
+    }
+   }
+  },
+  {
+   "a": 73.124,
+   "b": 80.94,
+   "k": "harold_pie",
+   "c": "Memory",
+   "props": {
+    "k": "harold_pie",
+    "caption": "Harold's vinegar pie, never cake",
+    "date": "every birthday",
+    "t": 74.107
+   }
+  },
+  {
+   "a": 80.94,
+   "b": 86.17,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 86.17,
+   "b": 94.46,
+   "k": "green_vine",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "name": "Red apples",
+    "instead": "Green tomatoes off the vine",
+    "page": "PAGE 18",
+    "t": 90.667,
+    "k": "green_vine",
+    "k2": "apple_bin",
+    "of": 7
+   }
+  },
+  {
+   "a": 94.46,
+   "b": 101.2,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 101.2,
+   "b": 108.21,
+   "k": "loretta_pick",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 108.21,
+   "b": 116.453,
+   "k": "ar_01",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 116.453,
+   "b": 123.98,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 123.98,
+   "b": 132.597,
+   "k": "ar_02",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 132.597,
+   "b": 140.993,
+   "k": "pie_slice_warm",
+   "c": "SplitHalf",
+   "props": {
+    "k": "pie_slice_warm",
+    "l": {
+     "label": "WHAT THEY THINK",
+     "txt": "APPLE",
+     "t": 132.747
+    },
+    "r": {
+     "label": "WHAT IT IS",
+     "txt": "GREEN TOMATO",
+     "t": 134.867
+    },
+    "vid": false,
+    "foot": {
+     "txt": "you'll swear it's apple",
+     "t": 139.333
+    }
+   }
+  },
+  {
+   "a": 140.993,
+   "b": 147.847,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 147.847,
+   "b": 151.607,
+   "k": "seven_empty_crusts",
+   "c": "Kinetic",
+   "props": {
+    "k": "seven_empty_crusts",
+    "words": [
+     [
+      "CRUST NEVER CHANGES",
+      150.507
+     ]
+    ]
+   }
+  },
+  {
+   "a": 151.607,
+   "b": 159.24,
+   "k": "cookbook_page12_flour",
+   "c": "PageUp",
+   "props": {
+    "k": "cookbook_page12_flour",
+    "caption": {
+     "txt": "Loretta's Church Supper Cookbook",
+     "t": 154.427
+    },
+    "pages": [
+     {
+      "src": "page12.png",
+      "tab": "PAGE 12",
+      "t": 153.467
+     }
+    ]
+   }
+  },
+  {
+   "a": 159.24,
+   "b": 165.77,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 165.77,
+   "b": 176.54,
+   "k": "old_hands_crimping_pie",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 176.54,
+   "b": 187.357,
+   "k": "church_pie_table_six",
+   "c": "PageUp",
+   "props": {
+    "k": "church_pie_table_six",
+    "vid": false,
+    "words": [
+     [
+      "SIX PIES STILL ON THE TABLE",
+      180.6
+     ],
+     [
+      "THE LAST ONE YOU HOPE YOU NEVER NEED",
+      183.2
+     ]
+    ],
+    "pages": [
+     {
+      "src": "page12.png",
+      "tab": "PAGE 12",
+      "t": 178.22
+     }
+    ]
+   }
+  },
+  {
+   "a": 187.357,
+   "b": 195.833,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "name": "Lineup",
+    "head": "THE SEVEN PIES",
+    "items": [
+     {
+      "name": "Chess pie",
+      "use": "custard, cornmeal, butter",
+      "k": "pie_chess",
+      "t": 187.473
+     },
+     {
+      "name": "Sugar cream pie",
+      "use": "cream, flour, brown sugar",
+      "k": "pie_sugar_cream",
+      "t": 189.013
+     },
+     {
+      "name": "Shoofly pie",
+      "use": "molasses, flour, crumb topping",
+      "k": "pie_shoofly",
+      "t": 190.153
+     },
+     {
+      "name": "Lemon meringue",
+      "use": "egg yolks, cornstarch, meringue",
+      "k": "pie_lemon_meringue",
+      "t": 191.013
+     },
+     {
+      "name": "Skillet butterscotch",
+      "use": "brown sugar, butter, cream",
+      "k": "pie_butterscotch",
+      "t": 192.273
+     },
+     {
+      "name": "Sour cream raisin + mock apple",
+      "use": "raisins, sour cream, crackers",
+      "k": "pie_raisin_mock_apple",
+      "t": 193.773
+     }
+    ]
+   }
+  },
+  {
+   "a": 195.833,
+   "b": 206.667,
+   "k": "pie_table_wide",
+   "c": "Thumb",
+   "props": {
+    "name": "Thumb",
+    "thumb": "thumb_7_potluck",
+    "tag": "WATCH THIS FIRST",
+    "words": [
+     [
+      "7",
+      196.893
+     ],
+     [
+      "Church",
+      197.273
+     ],
+     [
+      "Potluck",
+      197.733
+     ],
+     [
+      "Pies",
+      198.133
+     ],
+     [
+      "That",
+      198.473
+     ],
+     [
+      "Vanished",
+      198.833
+     ],
+     [
+      "After",
+      199.173
+     ],
+     [
+      "1970",
+      199.573
+     ]
+    ],
+    "k": "pie_table_wide",
+    "push": true
+   }
+  },
+  {
+   "a": 206.667,
+   "b": 217.427,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 217.427,
+   "b": 225.11,
+   "k": "lemon_bin",
+   "c": "ItemCard",
+   "props": {
+    "name": "Store lemon",
+    "n": 2,
+    "of": 7,
+    "instead": "Eggs, sugar, butter, one spoon cider vinegar",
+    "page": "PAGE 14",
+    "k": "lemon_bin",
+    "k2": "vinegar_spoon",
+    "t": 222.827
+   }
+  },
+  {
+   "a": 225.11,
+   "b": 234.06,
+   "k": "ar_03",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 234.06,
+   "b": 242.147,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 242.147,
+   "b": 245.227,
+   "k": "vinegar_slice",
+   "c": "Kinetic",
+   "props": {
+    "name": "Kinetic",
+    "k": "vinegar_slice",
+    "words": [
+     [
+      "LEMON? NO.",
+      242.147
+     ],
+     [
+      "VINEGAR.",
+      244.447
+     ]
+    ]
+   }
+  },
+  {
+   "a": 245.227,
+   "b": 251.687,
+   "k": "ladies_long_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 251.687,
+   "b": 254.607,
+   "k": "recipe_box",
+   "c": "Kinetic",
+   "props": {
+    "k": "recipe_box",
+    "vid": false,
+    "words": [
+     [
+      "NOBODY PASSED IT ALONG",
+      252.2
+     ]
+    ]
+   }
+  },
+  {
+   "a": 254.607,
+   "b": 264.114,
+   "k": "ar_04",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 264.114,
+   "b": 271.933,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 271.933,
+   "b": 280.853,
+   "k": "ar_05",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 280.853,
+   "b": 288.583,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 288.583,
+   "b": 297.457,
+   "k": "writing_notebook",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 297.457,
+   "b": 305.483,
+   "k": "pecan_bag",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 7,
+    "name": "Pecans",
+    "instead": "Rolled oats, toasted in a skillet",
+    "k": "pecan_bag",
+    "k2": "oatmeal_pie",
+    "t": 304.393
+   }
+  },
+  {
+   "a": 305.483,
+   "b": 316.477,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 316.477,
+   "b": 319.327,
+   "k": "oat_pie_slice",
+   "c": "Kinetic",
+   "props": {
+    "name": "Kinetic",
+    "k": "oat_pie_slice",
+    "words": [
+     [
+      "Nobody at the supper table could tell it",
+      316.727
+     ],
+     [
+      "from the real thing",
+      318.707
+     ]
+    ]
+   }
+  },
+  {
+   "a": 319.327,
+   "b": 327.31,
+   "k": "church_ladies",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 327.31,
+   "b": 336.046,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 336.046,
+   "b": 345.28,
+   "k": "toast_oats",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 345.28,
+   "b": 354.79,
+   "k": "ar_06",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 354.79,
+   "b": 363.547,
+   "k": "lemon_bowl",
+   "c": "ItemCard",
+   "props": {
+    "name": "Lemon, squeezed and tossed",
+    "n": 4,
+    "instead": "The whole lemon, peel and all",
+    "k": "lemon_bowl",
+    "t": 360.213,
+    "of": 7
+   }
+  },
+  {
+   "a": 363.547,
+   "b": 376.577,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "fan_rounds",
+      "t": 363.6
+     },
+     {
+      "k": "old_hand",
+      "t": 371.64
+     },
+     {
+      "k": "knife_lemon",
+      "t": 373.0
+     }
+    ]
+   }
+  },
+  {
+   "a": 376.577,
+   "b": 385.267,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 385.267,
+   "b": 393.613,
+   "k": "lemon_newsprint",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 393.613,
+   "b": 402.0,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 402.0,
+   "b": 411.827,
+   "k": "ar_07",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 411.827,
+   "b": 419.247,
+   "k": "carton_door",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 7,
+    "name": "Store-bought buttermilk",
+    "instead": "Buttermilk from churning day",
+    "k": "carton_door",
+    "t": 417.467
+   }
+  },
+  {
+   "a": 419.247,
+   "b": 423.847,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 423.847,
+   "b": 435.757,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "ar_16",
+    "vid": false,
+    "cap": "Iowa farm, 1940s · butter churning on the porch",
+    "find": "Prelinger / USDA film, farm wife working a dasher butter churn on a porch, 1930s-40s"
+   }
+  },
+  {
+   "a": 435.757,
+   "b": 442.764,
+   "k": "empty-table-batter",
+   "c": "DropList",
+   "props": {
+    "k": "empty-table-batter",
+    "items": [
+     {
+      "txt": "BUTTERMILK JUG",
+      "t": 435.867
+     },
+     {
+      "txt": "SUGAR",
+      "t": 436.847
+     },
+     {
+      "txt": "EGGS",
+      "t": 437.727
+     },
+     {
+      "txt": "MELTED BUTTER",
+      "t": 438.567
+     },
+     {
+      "txt": "FLOUR",
+      "t": 439.207
+     },
+     {
+      "txt": "NUTMEG",
+      "t": 440.847
+     }
+    ],
+    "head": "THE BATTER"
+   }
+  },
+  {
+   "a": 442.764,
+   "b": 450.4,
+   "k": "buttermilk-counter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 450.4,
+   "b": 459.183,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 459.183,
+   "b": 467.967,
+   "k": "ar_08",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 467.967,
+   "b": 479.553,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 479.553,
+   "b": 489.553,
+   "k": "flour-canister-mail",
+   "c": "PageUp",
+   "props": {
+    "k": "flour-canister-mail",
+    "pages": [
+     {
+      "src": "printed-recipe-page",
+      "tab": "PAGE 1",
+      "n": "ONE RECIPE, ONE PAGE",
+      "line": "Print just the one you're cooking",
+      "t": 483.313
+     }
+    ],
+    "caption": {
+     "txt": "Stand it against the canister",
+     "t": 485.473
+    }
+   }
+  },
+  {
+   "a": 489.553,
+   "b": 498.41,
+   "k": "book_page_trick",
+   "c": "PageUp",
+   "props": {
+    "k": "book_page_trick",
+    "pages": [
+     {
+      "src": "page12.png",
+      "tab": "PAGE 12",
+      "line": "Loretta's trick: one teaspoon of vinegar keeps the crust tender",
+      "t": 491.733
+     }
+    ],
+    "caption": {
+     "txt": "One line on every page: Loretta's trick",
+     "tag": "HIGHLIGHT",
+     "t": 492.2
+    }
+   }
+  },
+  {
+   "a": 498.41,
+   "b": 510.376,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 510.376,
+   "b": 519.704,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "t": 511.92,
+    "k": "book_cover",
+    "txt": "Start with whatever you're baking this week"
+   }
+  },
+  {
+   "a": 519.704,
+   "b": 525.87,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 525.87,
+   "b": 533.764,
+   "k": "osgood_pie",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 7,
+    "name": "Pie with a forgettable name",
+    "instead": "Osgood Pie: 'oh, so good'",
+    "k": "osgood_pie",
+    "t": 529.96
+   }
+  },
+  {
+   "a": 533.764,
+   "b": 540.167,
+   "k": "ar_09",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 540.167,
+   "b": 552.557,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "raisins-walnuts-bowl",
+      "t": 540.347,
+      "vid": false,
+      "cap": "raisins and walnuts",
+      "mark": {
+       "kind": "underline",
+       "x": 0.2,
+       "y": 0.8,
+       "w": 0.6,
+       "h": 0.05,
+       "t": 540.347
+      }
+     },
+     {
+      "k": "crackly-baked-top",
+      "t": 543.467,
+      "vid": false,
+      "cap": "the crackly top",
+      "mark": {
+       "kind": "circle",
+       "x": 0.35,
+       "y": 0.3,
+       "w": 0.3,
+       "h": 0.3,
+       "t": 543.467
+      }
+     },
+     {
+      "k": "church-table-one-empty-place",
+      "t": 549.147,
+      "vid": false,
+      "cap": "one empty place",
+      "mark": {
+       "kind": "circle",
+       "x": 0.4,
+       "y": 0.45,
+       "w": 0.2,
+       "h": 0.2,
+       "t": 549.147
+      }
+     }
+    ]
+   }
+  },
+  {
+   "a": 552.557,
+   "b": 564.33,
+   "k": "oven-door-closed",
+   "c": "StepCard",
+   "props": {
+    "head": "Osgood Pie",
+    "steps": [
+     {
+      "k": "egg-whites-own-bowl",
+      "t": 552.687,
+      "txt": "Beat the egg whites separately, in their own bowl"
+     },
+     {
+      "k": "fold-whites-last",
+      "t": 556.567,
+      "txt": "Fold them in last, right before the pan goes in the oven"
+     },
+     {
+      "k": "oven-steady-closed",
+      "t": 560.213,
+      "txt": "Keep the oven steady, don't open the door"
+     }
+    ],
+    "bed": "oven-door-closed"
+   }
+  },
+  {
+   "a": 564.33,
+   "b": 572.533,
+   "k": "loretta-cuts-pie",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 572.533,
+   "b": 579.48,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 579.48,
+   "b": 586.927,
+   "k": "church-pie-table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 586.927,
+   "b": 596.006,
+   "k": "ar_10",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 596.006,
+   "b": 607.173,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 607.173,
+   "b": 615.547,
+   "k": "basement_stairs_dark",
+   "c": "Kinetic",
+   "props": {
+    "k": "basement_stairs_dark",
+    "words": [
+     [
+      "Then put it on paper,",
+      607.173
+     ],
+     [
+      "the way I put mine in my book,",
+      608.713
+     ],
+     [
+      "so it doesn't go down the basement stairs with her.",
+      610.733
+     ],
+     [
+      "I read every one.",
+      613.973
+     ]
+    ]
+   }
+  },
+  {
+   "a": 615.547,
+   "b": 620.806,
+   "k": "covered_pie_porch_step",
+   "c": "Tease",
+   "props": {
+    "k": "covered_pie_porch_step",
+    "txt": "A PIE ON A PORCH STEP",
+    "tag": "COMING UP"
+   }
+  },
+  {
+   "a": 620.806,
+   "b": 628.75,
+   "k": "porch_casserole_loretta",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "name": "Casserole for a grieving house",
+    "instead": "Raisin pie in a double crust",
+    "page": "PAGE 17",
+    "t": 625.833,
+    "k": "porch_casserole_loretta",
+    "of": 7
+   }
+  },
+  {
+   "a": 628.75,
+   "b": 635.887,
+   "k": "ar_11",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 635.887,
+   "b": 642.507,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 642.507,
+   "b": 649.097,
+   "k": "warm_dish_cold_step",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 649.097,
+   "b": 657.16,
+   "k": "page17_kitchen_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page17.png",
+      "tab": "PAGE 17",
+      "t": 650.427
+     }
+    ],
+    "k": "page17_kitchen_table"
+   }
+  },
+  {
+   "a": 657.16,
+   "b": 664.107,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 664.107,
+   "b": 671.99,
+   "k": "m11_pie_bottom_dry",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 671.99,
+   "b": 679.234,
+   "k": "m11_freezer_bag",
+   "c": "BigNumber",
+   "props": {
+    "num": 6,
+    "unit": "HAND PIES",
+    "txt": "Keep that porch in mind.",
+    "k": "m11_freezer_bag",
+    "t": 673.68,
+    "prefix": "",
+    "suffix": "",
+    "dur": 3
+   }
+  },
+  {
+   "a": 679.234,
+   "b": 688.74,
+   "k": "m11_pie_table",
+   "c": "Kinetic",
+   "props": {
+    "k": "m11_pie_table",
+    "words": [
+     [
+      "WALK DOWN THE TABLE",
+      679.427
+     ],
+     [
+      "SEVEN PIES THAT NEARLY VANISHED",
+      684.2
+     ],
+     [
+      "EVERY ONE STILL WORTH BAKING",
+      686.94
+     ]
+    ]
+   }
+  },
+  {
+   "a": 688.74,
+   "b": 697.15,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 697.15,
+   "b": 706.183,
+   "k": "ar_12",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 706.183,
+   "b": 713.393,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 713.393,
+   "b": 720.093,
+   "k": "m11_funeral_pie_cooling",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 720.093,
+   "b": 723.963,
+   "k": "empty_table",
+   "c": "Kinetic",
+   "props": {
+    "k": "empty_table",
+    "words": [
+     [
+      "Nobody wrote these down for years,",
+      720.353
+     ],
+     [
+      "but they're written down now.",
+      722.553
+     ]
+    ]
+   }
+  },
+  {
+   "a": 723.963,
+   "b": 733.36,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "fridge_list",
+      "t": 724.053
+     },
+     {
+      "k": "church_basement",
+      "t": 732.413
+     }
+    ]
+   }
+  },
+  {
+   "a": 733.36,
+   "b": 741.113,
+   "k": "church_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 741.113,
+   "b": 749.1,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 749.1,
+   "b": 757.17,
+   "k": "funeral_pie_wrapped_freezer",
+   "c": "PageUp",
+   "props": {
+    "k": "funeral_pie_wrapped_freezer",
+    "vid": false,
+    "words": [
+     [
+      "FUNERAL PIE · PAGE 17",
+      749.6
+     ],
+     [
+      "FREEZES BEAUTIFULLY BAKED",
+      754.6
+     ]
+    ],
+    "pages": [
+     {
+      "src": "page17.png",
+      "tab": "PAGE 17",
+      "t": 750.54
+     }
+    ]
+   }
+  },
+  {
+   "a": 757.17,
+   "b": 765.76,
+   "k": "ar_13",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 765.76,
+   "b": 773.853,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 773.853,
+   "b": 781.963,
+   "k": "pie_slice_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 781.963,
+   "b": 788.583,
+   "k": "warm_place_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 788.583,
+   "b": 802.107,
+   "k": "one_pan_small",
+   "c": "Thumb",
+   "props": {
+    "thumb": "thumb_one_pan",
+    "tag": "MY OTHER CHANNEL",
+    "words": [
+     [
+      "Thanksgiving",
+      791.76
+     ],
+     [
+      "for",
+      792.4
+     ],
+     [
+      "One:",
+      792.76
+     ],
+     [
+      "A",
+      793.38
+     ],
+     [
+      "Whole",
+      793.6
+     ],
+     [
+      "Holiday",
+      794.02
+     ],
+     [
+      "Supper",
+      794.5
+     ],
+     [
+      "in",
+      794.86
+     ],
+     [
+      "One",
+      795.18
+     ],
+     [
+      "Pan",
+      795.5
+     ]
+    ],
+    "k": "one_pan_small",
+    "push": true
+   }
+  },
+  {
+   "a": 802.107,
+   "b": 810.773,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 810.773,
+   "b": 819.81,
+   "k": "ar_14",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 819.81,
+   "b": 827.32,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 827.32,
+   "b": 835.693,
+   "k": "recipe_card_pen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 835.693,
+   "b": 847.86,
+   "k": "widow_door_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 847.86,
+   "b": 860.46,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "kind": "L",
+      "k": "crust_roll",
+      "prompt": "Loretta at her Iowa farmhouse kitchen counter in a lilac blouse and faded floral apron, rolling out pie crust on a floured board with a wooden pin, late afternoon window light, flour dusting her forearms, candid and slightly soft focus",
+      "t": 850.76
+     },
+     {
+      "kind": "N",
+      "k": "coffee_pot",
+      "prompt": "Dented percolator coffee pot on a gas stove burner, a blue enamel kettle beside it, one burner flame low, steam rising, wall calendar and a dish towel on the stove handle, kitchen light, no people, candid",
+      "t": 852.76
+     },
+     {
+      "kind": "N",
+      "k": "slice_cloth",
+      "prompt": "A single slice of apple pie on a chipped plate, a folded tea towel draped over part of it, a white ceramic coffee cup beside it on a worn kitchen table, hands only at the edge of frame, evening lamplight, candid",
+      "t": 857.84
+     }
+    ],
+    "cap": "fall suppers"
+   }
+  },
+  {
+   "a": 860.46,
+   "b": 867.26,
+   "k": "ar_15",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 86.17,
+   "b": 217.427,
+   "n": 1
+  },
+  {
+   "a": 217.427,
+   "b": 297.457,
+   "n": 2
+  },
+  {
+   "a": 297.457,
+   "b": 354.79,
+   "n": 3
+  },
+  {
+   "a": 354.79,
+   "b": 411.827,
+   "n": 4
+  },
+  {
+   "a": 411.827,
+   "b": 525.87,
+   "n": 5
+  },
+  {
+   "a": 525.87,
+   "b": 620.806,
+   "n": 6
+  },
+  {
+   "a": 620.806,
+   "b": 867.26,
+   "n": 7
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   86.17,
+   94.46
+  ],
+  [
+   217.427,
+   225.11
+  ],
+  [
+   297.457,
+   305.483
+  ],
+  [
+   354.79,
+   363.547
+  ],
+  [
+   411.827,
+   419.247
+  ],
+  [
+   525.87,
+   533.764
+  ],
+  [
+   620.806,
+   628.75
+  ],
+  [
+   195.833,
+   206.667
+  ],
+  [
+   510.376,
+   519.704
+  ],
+  [
+   788.583,
+   802.107
+  ]
+ ]
+}
