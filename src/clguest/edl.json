@@ -1,0 +1,1511 @@
+{
+ "end": 868.43,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 1.427,
+   "k": "th_card",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "tin": "cut"
+  },
+  {
+   "a": 1.427,
+   "b": 8.643,
+   "k": "l_open",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 8.643,
+   "b": 10.4,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 10.4,
+   "b": 15.68,
+   "k": "l_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 15.68,
+   "b": 21.187,
+   "k": "n_towels",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 21.187,
+   "b": 31.556,
+   "k": "n_frontdoor",
+   "c": "BigNumber",
+   "props": {
+    "num": 9,
+    "unit": "THINGS YOUR GUESTS NOTICE FIRST",
+    "txt": "In the order they meet them",
+    "k": "n_frontdoor",
+    "t": 22.413
+   }
+  },
+  {
+   "a": 31.556,
+   "b": 41.307,
+   "k": "n_tablesetting",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 41.307,
+   "b": 46.477,
+   "k": "l_calendar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 46.477,
+   "b": 53.957,
+   "k": "n_smellfront",
+   "c": "Careful",
+   "props": {
+    "k": "n_smellfront",
+    "txt": "Wait for number nine",
+    "tag": "STAY FOR #9",
+    "t": 46.727
+   }
+  },
+  {
+   "a": 53.957,
+   "b": 60.694,
+   "k": "n_hallkitchen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 60.694,
+   "b": 67.32,
+   "k": "ar_dining_hall_1950s",
+   "c": "Arc",
+   "props": {
+    "src": "ar_dining_hall_1950s",
+    "cap": "1950s · a church dining hall",
+    "vid": true
+   }
+  },
+  {
+   "a": 67.32,
+   "b": 75.08,
+   "k": "l_pan_v2",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 75.08,
+   "b": 83.967,
+   "k": "arc_barn",
+   "c": "Arc",
+   "props": {
+    "src": "arc_barn",
+    "cap": "1940s · a farm",
+    "vid": true
+   }
+  },
+  {
+   "a": 83.967,
+   "b": 88.927,
+   "k": "ar_supper",
+   "c": "Arc",
+   "props": {
+    "src": "ar_supper",
+    "cap": "1950s · a family supper",
+    "vid": true
+   }
+  },
+  {
+   "a": 88.927,
+   "b": 98.227,
+   "k": "n_towels",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE HAND TOWEL",
+    "instead": "FABRIC SOFTENER TO VINEGAR",
+    "page": "PAGE 30",
+    "k": "n_towels",
+    "t": 89.107,
+    "ctr": 1
+   }
+  },
+  {
+   "a": 98.227,
+   "b": 103.97,
+   "k": "n_softener",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 103.97,
+   "b": 109.566,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 109.566,
+   "b": 115.01,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 115.01,
+   "b": 122.346,
+   "k": "n_towels",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page30",
+      "tab": "PAGE 30",
+      "t": 116.16,
+      "hl": 6
+     }
+    ],
+    "caption": "THE HAND TOWEL · PAGE 30",
+    "k": "n_towels",
+    "ctr": 1
+   }
+  },
+  {
+   "a": 122.346,
+   "b": 129.313,
+   "k": "housewife-wiping-counter-sweeping-crumbs-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "housewife-wiping-counter-sweeping-crumbs-1950s",
+    "cap": "1950s · wiping a kitchen counter",
+    "vid": true
+   }
+  },
+  {
+   "a": 129.313,
+   "b": 136.56,
+   "k": "n_arch_129",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 136.56,
+   "b": 144.014,
+   "k": "n_arch_129_h137",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 144.014,
+   "b": 153.107,
+   "k": "n_line_h148",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 153.107,
+   "b": 157.413,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 157.413,
+   "b": 168.85,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 168.85,
+   "b": 177.16,
+   "k": "n_towels",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page30",
+      "tab": "PAGE 30",
+      "t": 170.1,
+      "hl": 6
+     }
+    ],
+    "caption": "LINK IN THE DESCRIPTION",
+    "k": "n_towels",
+    "ctr": 1
+   }
+  },
+  {
+   "a": 177.16,
+   "b": 184.57,
+   "k": "n_ovenglass",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_remember",
+    "tag": "THE OVEN",
+    "words": [
+     [
+      "Oven",
+      183.487
+     ]
+    ],
+    "k": "n_ovenglass",
+    "ctr": 1
+   }
+  },
+  {
+   "a": 184.57,
+   "b": 191.647,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 191.647,
+   "b": 200.06,
+   "k": "n_toiletring",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE RING AT THE WATERLINE",
+    "instead": "VINEGAR AND A WET PUMICE",
+    "page": "PAGE 10",
+    "k": "n_toiletring",
+    "t": 191.8,
+    "ctr": 2
+   }
+  },
+  {
+   "a": 200.06,
+   "b": 205.82,
+   "k": "ar_writing",
+   "c": "Arc",
+   "props": {
+    "src": "ar_writing",
+    "cap": "1950s · a woman writing at a table",
+    "vid": true
+   }
+  },
+  {
+   "a": 205.82,
+   "b": 215.85,
+   "k": "n_arch_206",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 215.85,
+   "b": 227.613,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 227.613,
+   "b": 233.633,
+   "k": "n_toiletring",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page10",
+      "tab": "PAGE 10",
+      "t": 227.96,
+      "hl": 6
+     }
+    ],
+    "caption": "THE RING AT THE WATERLINE",
+    "k": "n_toiletring",
+    "ctr": 2
+   }
+  },
+  {
+   "a": 233.633,
+   "b": 239.267,
+   "k": "n_pumice",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 239.267,
+   "b": 246.387,
+   "k": "n_pumice_h239",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 246.387,
+   "b": 251.453,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 251.453,
+   "b": 258.213,
+   "k": "n_chemicals",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page3",
+      "tab": "PAGE 3",
+      "t": 251.833,
+      "hl": 5
+     }
+    ],
+    "caption": "NEVER MIX · PAGE 3",
+    "k": "n_chemicals",
+    "ctr": 2
+   }
+  },
+  {
+   "a": 258.213,
+   "b": 269.406,
+   "k": "n_mirror",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE BATHROOM MIRROR",
+    "instead": "ALCOHOL, A LIGHT MIST, AN S",
+    "page": "PAGE 15",
+    "k": "n_mirror",
+    "t": 258.373,
+    "ctr": 3
+   }
+  },
+  {
+   "a": 269.406,
+   "b": 276.493,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 276.493,
+   "b": 282.953,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 282.953,
+   "b": 289.86,
+   "k": "l_mirror",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page15",
+      "tab": "PAGE 15",
+      "t": 284.093,
+      "hl": 6
+     }
+    ],
+    "caption": "THE MIRROR WITHOUT STREAKS",
+    "k": "l_mirror",
+    "ctr": 3
+   }
+  },
+  {
+   "a": 289.86,
+   "b": 300.013,
+   "k": "n_dabcotton_h290",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 300.013,
+   "b": 307.513,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 307.513,
+   "b": 317.267,
+   "k": "n_microfiber",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 317.267,
+   "b": 328.597,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 328.597,
+   "b": 334.567,
+   "k": "n_ovenglass",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE OVEN DOOR GLASS",
+    "instead": "BAKING SODA PASTE, BLADE FLAT",
+    "page": "PAGE 19",
+    "k": "n_ovenglass",
+    "t": 328.807,
+    "ctr": 4
+   }
+  },
+  {
+   "a": 334.567,
+   "b": 340.634,
+   "k": "ar_door",
+   "c": "Arc",
+   "props": {
+    "src": "ar_door",
+    "cap": "1950s · a kitchen door",
+    "vid": true
+   }
+  },
+  {
+   "a": 340.634,
+   "b": 347.953,
+   "k": "n_razor",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 347.953,
+   "b": 355.173,
+   "k": "n_razor_h348",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 355.173,
+   "b": 365.783,
+   "k": "n_ovenglass",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page19",
+      "tab": "PAGE 19",
+      "t": 355.613,
+      "hl": 6
+     }
+    ],
+    "caption": "THE OVEN DOOR GLASS",
+    "k": "n_ovenglass",
+    "ctr": 4
+   }
+  },
+  {
+   "a": 365.783,
+   "b": 371.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 371.547,
+   "b": 379.987,
+   "k": "l_oven_h376",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 379.987,
+   "b": 384.637,
+   "k": "l_oven_h376_h380",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 384.637,
+   "b": 392.0,
+   "k": "n_glasscrack",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 392.0,
+   "b": 398.293,
+   "k": "n_glasscrack_h392",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 398.293,
+   "b": 404.52,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 404.52,
+   "b": 413.813,
+   "k": "n_fridgefront",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE REFRIGERATOR",
+    "instead": "ALCOHOL CLOTH, ONE DROP OF OIL",
+    "page": "PAGE 21",
+    "k": "n_fridgefront",
+    "t": 404.693,
+    "ctr": 5
+   }
+  },
+  {
+   "a": 413.813,
+   "b": 420.443,
+   "k": "n_fridgeprints",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 420.443,
+   "b": 426.073,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 426.073,
+   "b": 433.823,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 433.823,
+   "b": 440.207,
+   "k": "n_fridgeprints",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page21",
+      "tab": "PAGE 21",
+      "t": 434.98,
+      "hl": 6
+     }
+    ],
+    "caption": "STAINLESS WITHOUT STREAKS",
+    "k": "n_fridgeprints",
+    "ctr": 5
+   }
+  },
+  {
+   "a": 440.207,
+   "b": 447.44,
+   "k": "n_oildrop",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 447.44,
+   "b": 454.607,
+   "k": "n_oildrop_h447",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 454.607,
+   "b": 471.61,
+   "k": "n_fridgeinside",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page23",
+      "tab": "PAGE 23",
+      "t": 456.093,
+      "hl": 6
+     }
+    ],
+    "caption": "THE FRIDGE AND THE DOOR SEAL",
+    "k": "n_fridgeinside",
+    "ctr": 5
+   }
+  },
+  {
+   "a": 471.61,
+   "b": 477.397,
+   "k": "l_trashday",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 477.397,
+   "b": 491.573,
+   "k": "qr.jpg",
+   "c": "QrCard",
+   "props": {
+    "k": "qr.jpg",
+    "txt": "POINT YOUR PHONE AT THE SQUARE",
+    "qr": "qr.jpg",
+    "cover": "book_cover.png",
+    "t": 478.4,
+    "ctr": 5
+   }
+  },
+  {
+   "a": 491.573,
+   "b": 499.6,
+   "k": "n_cabinet",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE STICKY CABINETS",
+    "instead": "WARM SOAPY WATER, THEN OIL AND SODA",
+    "page": "PAGE 27",
+    "k": "n_cabinet",
+    "t": 491.74,
+    "ctr": 6
+   }
+  },
+  {
+   "a": 499.6,
+   "b": 507.81,
+   "k": "ar_kitchen_kettles_1950s",
+   "c": "Arc",
+   "props": {
+    "src": "ar_kitchen_kettles_1950s",
+    "cap": "1950s · pots on a kitchen stove",
+    "vid": true
+   }
+  },
+  {
+   "a": 507.81,
+   "b": 514.88,
+   "k": "arc_kitchen",
+   "c": "Arc",
+   "props": {
+    "src": "arc_kitchen",
+    "cap": "1950s · a kitchen",
+    "vid": true
+   }
+  },
+  {
+   "a": 514.88,
+   "b": 521.874,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 521.874,
+   "b": 529.536,
+   "k": "n_cabinet",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page27",
+      "tab": "PAGE 27",
+      "t": 522.08,
+      "hl": 6
+     }
+    ],
+    "caption": "STICKY CABINETS NEAR THE STOVE",
+    "k": "n_cabinet",
+    "ctr": 6
+   }
+  },
+  {
+   "a": 529.536,
+   "b": 538.05,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 538.05,
+   "b": 545.46,
+   "k": "n_oilsoda",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 545.46,
+   "b": 552.36,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 552.36,
+   "b": 558.073,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 558.073,
+   "b": 569.933,
+   "k": "n_trackitem",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE WINDOW TRACK",
+    "instead": "VACUUM, SODA AND VINEGAR FIZZ",
+    "page": "PAGE 45",
+    "k": "n_trackitem",
+    "t": 558.227,
+    "ctr": 7
+   }
+  },
+  {
+   "a": 569.933,
+   "b": 575.827,
+   "k": "n_windowtrack",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 575.827,
+   "b": 581.7,
+   "k": "n_windowtrack_h576",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 581.7,
+   "b": 592.427,
+   "k": "n_trackmess",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page45",
+      "tab": "PAGE 45",
+      "t": 582.853,
+      "hl": 6
+     }
+    ],
+    "caption": "WINDOW TRACKS",
+    "k": "n_trackmess",
+    "ctr": 7
+   }
+  },
+  {
+   "a": 592.427,
+   "b": 602.453,
+   "k": "n_candlewax_h592",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 602.453,
+   "b": 610.347,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 610.347,
+   "b": 617.107,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 617.107,
+   "b": 623.947,
+   "k": "vinegar-glass-fruit-flies-1950s-kitchen",
+   "c": "Arc",
+   "props": {
+    "src": "vinegar-glass-fruit-flies-1950s-kitchen",
+    "cap": "1950s · a kitchen counter, flies and a glass",
+    "vid": true
+   }
+  },
+  {
+   "a": 623.947,
+   "b": 632.65,
+   "k": "n_arch_624_h629",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 632.65,
+   "b": 638.817,
+   "k": "n_slidingdoor",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 638.817,
+   "b": 647.113,
+   "k": "n_fanblades",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE CEILING FAN",
+    "instead": "AN OLD PILLOWCASE",
+    "page": "PAGE 46",
+    "k": "n_fanblades",
+    "t": 639.02,
+    "ctr": 8
+   }
+  },
+  {
+   "a": 647.113,
+   "b": 654.353,
+   "k": "l_fan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 654.353,
+   "b": 661.373,
+   "k": "l_fan_h654",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 661.373,
+   "b": 668.24,
+   "k": "n_fanblades",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page46",
+      "tab": "PAGE 46",
+      "t": 661.813,
+      "hl": 6
+     }
+    ],
+    "caption": "CEILING FANS WITH A PILLOWCASE",
+    "k": "n_fanblades",
+    "ctr": 8
+   }
+  },
+  {
+   "a": 668.24,
+   "b": 682.903,
+   "k": "l_pillow",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "An old pillowcase",
+     "over each blade."
+    ],
+    "sig": "Her trick",
+    "k": "l_pillow",
+    "size": 72,
+    "lt": [
+     668.38,
+     669.62
+    ],
+    "ctr": 8
+   }
+  },
+  {
+   "a": 682.903,
+   "b": 694.746,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 694.746,
+   "b": 703.213,
+   "k": "l_fanblades_h699",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 703.213,
+   "b": 711.704,
+   "k": "l_fanblades_h703_h707",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 711.704,
+   "b": 718.92,
+   "k": "l_fan_v2",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 718.92,
+   "b": 724.927,
+   "k": "n_smellfront",
+   "c": "ItemCard",
+   "props": {
+    "n": 9,
+    "of": 9,
+    "word": "ITEM",
+    "name": "THE SMELL AT THE DOOR",
+    "instead": "FIND THE SOURCE, THEN A SIMMER POT",
+    "page": "PAGE 49",
+    "k": "n_smellfront",
+    "t": 718.96,
+    "ctr": 9
+   }
+  },
+  {
+   "a": 724.927,
+   "b": 733.0,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 733.0,
+   "b": 740.38,
+   "k": "n_trash",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 740.38,
+   "b": 748.546,
+   "k": "ar_door2",
+   "c": "Arc",
+   "props": {
+    "src": "ar_door2",
+    "cap": "1950s · a house door and window",
+    "vid": true
+   }
+  },
+  {
+   "a": 748.546,
+   "b": 758.46,
+   "k": "n_smellpot",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page49",
+      "tab": "PAGE 49",
+      "t": 748.873,
+      "hl": 6
+     }
+    ],
+    "caption": "A HOUSE THAT SMELLS LIKE SUNDAY DINNER",
+    "k": "n_smellpot",
+    "ctr": 9
+   }
+  },
+  {
+   "a": 758.46,
+   "b": 764.947,
+   "k": "n_arch_758",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 764.947,
+   "b": 770.567,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 770.567,
+   "b": 776.773,
+   "k": "home-kitchen-box-breakdown-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "home-kitchen-box-breakdown-1950s",
+    "cap": "1950s · a kitchen at home",
+    "vid": true
+   }
+  },
+  {
+   "a": 776.773,
+   "b": 787.033,
+   "k": "l_door",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 787.033,
+   "b": 795.067,
+   "k": "l_door_h787_h791",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 795.067,
+   "b": 801.913,
+   "k": "1950s-kitchen-counter-fruit-bowl",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-kitchen-counter-fruit-bowl",
+    "cap": "1950s · a kitchen counter with fruit",
+    "vid": true
+   }
+  },
+  {
+   "a": 801.913,
+   "b": 813.833,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 813.833,
+   "b": 822.383,
+   "k": "ar_reading",
+   "c": "Arc",
+   "props": {
+    "src": "ar_reading",
+    "cap": "1950s · reading at a table",
+    "vid": true
+   }
+  },
+  {
+   "a": 822.383,
+   "b": 831.193,
+   "k": "n_calendarbed",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page50",
+      "tab": "MY CLEANING CALENDAR",
+      "t": 825.093,
+      "hl": 8
+     }
+    ],
+    "caption": "THE CLEANING CALENDAR · PAGE 50",
+    "k": "n_calendarbed"
+   }
+  },
+  {
+   "a": 831.193,
+   "b": 841.13,
+   "k": "qr.jpg",
+   "c": "QrCard",
+   "props": {
+    "k": "qr.jpg",
+    "t": 838.84,
+    "txt": "POINT YOUR PHONE AT THE SQUARE",
+    "qr": "qr.jpg",
+    "cover": "book_cover.png"
+   }
+  },
+  {
+   "a": 841.13,
+   "b": 857.604,
+   "k": "n_pieplate",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_other",
+    "tag": "OTHER CHANNEL",
+    "words": [
+     [
+      "Thanksgiving for One",
+      851.833
+     ]
+    ],
+    "k": "n_pieplate"
+   }
+  },
+  {
+   "a": 857.604,
+   "b": 862.287,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 862.287,
+   "b": 868.43,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 88.927,
+   "b": 191.647,
+   "n": 1
+  },
+  {
+   "a": 191.647,
+   "b": 258.213,
+   "n": 2
+  },
+  {
+   "a": 258.213,
+   "b": 328.597,
+   "n": 3
+  },
+  {
+   "a": 328.597,
+   "b": 404.52,
+   "n": 4
+  },
+  {
+   "a": 404.52,
+   "b": 491.573,
+   "n": 5
+  },
+  {
+   "a": 491.573,
+   "b": 558.073,
+   "n": 6
+  },
+  {
+   "a": 558.073,
+   "b": 638.817,
+   "n": 7
+  },
+  {
+   "a": 638.817,
+   "b": 718.92,
+   "n": 8
+  },
+  {
+   "a": 718.92,
+   "b": 868.43,
+   "n": 9
+  }
+ ],
+ "of": 9,
+ "word": "ITEM",
+ "hide": [
+  [
+   88.927,
+   98.227
+  ],
+  [
+   191.647,
+   200.06
+  ],
+  [
+   258.213,
+   269.406
+  ],
+  [
+   328.597,
+   334.567
+  ],
+  [
+   404.52,
+   413.813
+  ],
+  [
+   491.573,
+   499.6
+  ],
+  [
+   558.073,
+   569.933
+  ],
+  [
+   638.817,
+   647.113
+  ],
+  [
+   718.92,
+   724.927
+  ],
+  [
+   177.16,
+   184.57
+  ],
+  [
+   477.397,
+   491.573
+  ],
+  [
+   831.193,
+   841.13
+  ],
+  [
+   841.13,
+   857.604
+  ]
+ ]
+}
