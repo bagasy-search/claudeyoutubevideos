@@ -2,12 +2,12 @@
 // ST/AR = metraje real (archivo y stock), C = héroes en capas, chip de capítulo al inicio de cada regla.
 import React from "react";
 import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame, interpolate } from "remotion";
-import { Hero } from "./Hero";
+import { Hero, HeroSpec } from "./Hero";
 import EDL from "./edl.json";
 
 const fr = (s: number) => Math.round(s * 30);
 const cover: React.CSSProperties = { width: "100%", height: "100%", objectFit: "cover" };
-type Sh = { a: number; b: number; k: string; src?: string; name?: string; ms?: number; off?: number; label?: string | null };
+type Sh = { a: number; b: number; k: string; src?: string; name?: string; ms?: number; off?: number; label?: string | null; hero?: HeroSpec };
 const SH = (EDL as any).shots as Sh[];
 export const TOTAL_S = (EDL as any).end as number;
 
@@ -31,9 +31,10 @@ const Push: React.FC<{ src: string; d: number }> = ({ src, d }) => {
   );
 };
 
-const Clip: React.FC<{ src: string }> = ({ src }) => (
+// ST = stock de Pexels: su audio real va bajo la voz (0,12); AR = archivo Prelinger, mudo.
+const Clip: React.FC<{ src: string; st?: boolean }> = ({ src, st }) => (
   <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
-    <OffthreadVideo src={staticFile(src)} muted style={cover} />
+    {st ? <OffthreadVideo src={staticFile(src)} volume={0.12} style={cover} /> : <OffthreadVideo src={staticFile(src)} muted style={cover} />}
   </AbsoluteFill>
 );
 
@@ -55,9 +56,9 @@ export const Full: React.FC = () => (
       } else if (s.k === "L" || s.k === "N") {
         body = <Push src={`img/jprefri/${s.src}.png`} d={d} />;
       } else if (s.k === "ST" || s.k === "AR") {
-        body = <Clip src={`broll/jprefri/${s.src}.mp4`} />;
+        body = <Clip src={`broll/jprefri/${s.src}.mp4`} st={s.k === "ST"} />;
       } else if (s.k === "C") {
-        body = <Hero name={s.name!} d={d} />;
+        body = <Hero h={s.hero!} d={d} />;
       }
       return (
         <Sequence key={i} from={from} durationInFrames={d}>

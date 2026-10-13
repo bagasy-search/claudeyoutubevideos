@@ -4,961 +4,834 @@
 {
 "a": 0.0,
 "b": 0.6,
-"k": "TH",
-"label": null
+"k": "TH"
 },
 {
 "a": 0.6,
 "b": 3.8,
 "k": "N",
-"src": "n_hook_tidy_fridge",
-"label": null
+"src": "n_hook_tidy_fridge"
 },
 {
 "a": 3.8,
 "b": 10.0,
 "k": "AV",
 "ms": 3.6799999999999997,
-"off": 0.0,
-"n": "hook",
-"label": null
+"off": 0.0
 },
 {
 "a": 10.0,
 "b": 15.6,
 "k": "L",
-"src": "l_hook_proud",
-"label": null
+"src": "l_hook_proud"
 },
 {
 "a": 15.6,
 "b": 29.7,
 "k": "AV",
 "ms": 15.48,
-"off": 6.44,
-"n": "presenta",
-"label": null
+"off": 6.44
 },
 {
 "a": 29.7,
-"b": 34.86,
-"k": "ST",
-"src": "st_tokyo_street_1",
-"label": null
-},
-{
-"a": 34.86,
 "b": 38.8,
-"k": "N",
-"src": "n_hist_tokyo_street",
-"label": null
+"k": "L",
+"src": "l_cierre_comments"
 },
 {
 "a": 38.8,
 "b": 50.4,
 "k": "AV",
 "ms": 38.68,
-"off": 20.78,
-"n": "promesa",
-"label": null
+"off": 20.78
 },
 {
 "a": 50.4,
-"b": 57.16,
-"k": "ST",
-"src": "st_hotel_cleaning_1",
-"label": null
-},
-{
-"a": 57.16,
 "b": 60.2,
 "k": "N",
-"src": "n_u1_full_fridge_top",
-"label": null
+"src": "n_tokyo_staff_cart"
 },
 {
 "a": 60.2,
 "b": 72.0,
 "k": "AV",
 "ms": 60.080000000000005,
-"off": 32.62,
-"n": "historia",
-"label": null
+"off": 32.62
 },
 {
 "a": 72.0,
-"b": 78.0,
-"k": "AR",
-"src": "arch_vista_1",
-"label": null
-},
-{
-"a": 78.0,
 "b": 80.6,
-"k": "C",
-"name": "SeventyFull",
-"label": null
+"k": "L",
+"src": "l_hist_sato_point"
 },
 {
 "a": 80.6,
 "b": 90.7,
 "k": "AV",
 "ms": 80.47999999999999,
-"off": 44.66,
-"n": "sato",
-"label": null
+"off": 44.66
 },
 {
 "a": 90.7,
-"b": 96.7,
+"b": 98.2,
 "k": "L",
-"src": "l_hist_staff_open",
-"label": null
+"src": "l_hist_staff_open"
 },
 {
-"a": 96.7,
-"b": 103.46,
-"k": "ST",
-"src": "st_hotel_cleaning_2",
-"label": null
+"a": 98.2,
+"b": 104.2,
+"k": "AR",
+"src": "arch_vista_1"
 },
 {
-"a": 103.46,
+"a": 104.2,
 "b": 107.9,
-"k": "N",
-"src": "n_hist_staff_fridge",
-"label": null
+"k": "L",
+"src": "l_hist_wipe_outside"
 },
 {
 "a": 107.9,
 "b": 119.8,
 "k": "AV",
 "ms": 107.78,
-"off": 55.0,
-"n": "sato2",
-"label": null
+"off": 55.0
 },
 {
 "a": 119.8,
-"b": 126.56,
-"k": "ST",
-"src": "st_hotel_cleaning_3",
-"label": null
+"b": 127.3,
+"k": "N",
+"src": "n_cierre_table"
 },
 {
-"a": 126.56,
-"b": 132.56,
-"k": "L",
-"src": "l_hist_sato_point",
-"label": null
+"a": 127.3,
+"b": 133.3,
+"k": "AR",
+"src": "arch_vista_2"
 },
 {
-"a": 132.56,
+"a": 133.3,
 "b": 138.4,
-"k": "ST",
-"src": "st_kitchen_wash_1",
-"label": null
+"k": "N",
+"src": "n_hist_staff_fridge"
 },
 {
 "a": 138.4,
 "b": 151.3,
 "k": "AV",
 "ms": 138.28,
-"off": 67.14,
-"n": "cta1",
-"label": null
+"off": 67.14
 },
 {
 "a": 151.3,
 "b": 159.8,
 "k": "C",
 "name": "PageSixteen",
-"label": "1 � LA REGLA DEL 70 %"
+"hero": {
+"name": "PageSixteen",
+"chip": "PÁGINA 16 DEL LIBRO",
+"chipAt": 0.0,
+"ring": false,
+"ringAt": 0.0,
+"note": {
+"text": "EL LINK ESTÁ ABAJO",
+"at": 5.54
+},
+"print": "c_main",
+"bed": "n_recap_numbered_card"
+}
 },
 {
 "a": 159.8,
 "b": 165.9,
 "k": "AV",
 "ms": 159.68,
-"off": 80.28,
-"n": "uno",
-"label": null
+"off": 80.28
 },
 {
 "a": 165.9,
-"b": 171.9,
-"k": "L",
-"src": "l_hist_wipe_outside",
-"label": null
-},
-{
-"a": 171.9,
 "b": 174.5,
-"k": "ST",
-"src": "st_cold_room_1",
-"label": null
+"k": "C",
+"name": "SeventyFull",
+"hero": {
+"name": "SeventyFull",
+"chip": "70 % = DOS TERCIOS",
+"chipAt": 0.0,
+"ring": true,
+"ringAt": 3.12,
+"note": {
+"text": "EL AIRE TIENE QUE CIRCULAR",
+"at": 1.86
+},
+"print": "n_u1_air_gap",
+"bed": "n_u1_full_fridge_top"
+}
 },
 {
 "a": 174.5,
 "b": 181.2,
 "k": "AV",
 "ms": 174.38,
-"off": 86.62,
-"n": "uno_mal",
-"label": null
+"off": 86.62
 },
 {
 "a": 181.2,
-"b": 187.2,
-"k": "N",
-"src": "n_tokyo_staff_cart",
-"label": null
+"b": 188.7,
+"k": "L",
+"src": "l_u1_back_wall",
+"label": "1 · LA REGLA DEL 70 %"
 },
 {
-"a": 187.2,
+"a": 188.7,
 "b": 194.7,
-"k": "AR",
-"src": "arch_vista_2",
-"label": null
+"k": "ST",
+"src": "st_cold_room_1"
 },
 {
 "a": 194.7,
 "b": 202.7,
 "k": "AV",
 "ms": 194.57999999999998,
-"off": 93.56,
-"n": "uno_mal2",
-"label": null
+"off": 93.56
 },
 {
 "a": 202.7,
-"b": 208.7,
-"k": "N",
-"src": "n_u1_air_gap",
-"label": null
+"b": 210.2,
+"k": "L",
+"src": "l_u1_finger_gap"
 },
 {
-"a": 208.7,
-"b": 214.7,
+"a": 210.2,
+"b": 217.7,
+"k": "L",
+"src": "l_u1_tape_line"
+},
+{
+"a": 217.7,
+"b": 225.2,
+"k": "L",
+"src": "l_u1_too_full"
+},
+{
+"a": 225.2,
+"b": 232.7,
+"k": "L",
+"src": "l_cta_qr_fridge"
+},
+{
+"a": 232.7,
+"b": 240.2,
+"k": "L",
+"src": "l_mom_fridge_full"
+},
+{
+"a": 240.2,
+"b": 246.2,
 "k": "AR",
-"src": "arch_vista_3",
-"label": null
+"src": "arch_vista_7",
+"label": "2 · LO QUE SE VE, SE COME"
 },
 {
-"a": 214.7,
-"b": 223.7,
-"k": "C",
-"name": "DoorWarm",
-"label": null
-},
-{
-"a": 223.7,
-"b": 229.7,
+"a": 246.2,
+"b": 253.7,
 "k": "L",
-"src": "l_u1_too_full",
-"label": null
+"src": "l_u2_bag_behind"
 },
 {
-"a": 229.7,
-"b": 237.54,
-"k": "ST",
-"src": "st_lettuce_1",
-"label": null
-},
-{
-"a": 237.54,
-"b": 243.54,
-"k": "L",
-"src": "l_u1_tape_line",
-"label": "2 � LO QUE SE VE, SE COME"
-},
-{
-"a": 243.54,
-"b": 252.06,
-"k": "ST",
-"src": "st_paper_towel_1",
-"label": null
-},
-{
-"a": 252.06,
+"a": 253.7,
 "b": 259.9,
-"k": "L",
-"src": "l_u1_back_wall",
-"label": null
+"k": "AR",
+"src": "arch_vista_8"
 },
 {
 "a": 259.9,
 "b": 268.5,
 "k": "AV",
 "ms": 259.78,
-"off": 101.8,
-"n": "dos_sato",
-"label": null
+"off": 101.8
 },
 {
 "a": 268.5,
-"b": 276.94,
-"k": "ST",
-"src": "st_paper_towel_2",
-"label": null
-},
-{
-"a": 276.94,
-"b": 285.94,
-"k": "C",
-"name": "PaperLeaves",
-"label": null
-},
-{
-"a": 285.94,
-"b": 292.9,
+"b": 276.0,
 "k": "L",
-"src": "l_u1_finger_gap",
-"label": null
+"src": "l_u2_stack_boxes"
+},
+{
+"a": 276.0,
+"b": 283.5,
+"k": "N",
+"src": "n_u2_hidden_bag"
+},
+{
+"a": 283.5,
+"b": 292.9,
+"k": "N",
+"src": "n_u2_plain_boxes_stack"
 },
 {
 "a": 292.9,
 "b": 300.0,
 "k": "AV",
 "ms": 292.78,
-"off": 110.64,
-"n": "tres",
-"label": null
+"off": 110.64
 },
 {
 "a": 300.0,
-"b": 306.0,
-"k": "AR",
-"src": "arch_vista_4",
-"label": null
-},
-{
-"a": 306.0,
-"b": 312.0,
-"k": "N",
-"src": "n_u2_plain_boxes_stack",
-"label": null
-},
-{
-"a": 312.0,
-"b": 318.64,
-"k": "ST",
-"src": "st_cutting_carrots_1",
-"label": null
-},
-{
-"a": 318.64,
-"b": 324.64,
-"k": "L",
-"src": "l_u2_stack_boxes",
-"label": null
-},
-{
-"a": 324.64,
-"b": 331.24,
-"k": "ST",
-"src": "st_cutting_carrots_2",
-"label": null
-},
-{
-"a": 331.24,
-"b": 340.24,
+"b": 309.0,
 "k": "C",
-"name": "StandUp",
-"label": null
+"name": "DoorWarm",
+"hero": {
+"name": "DoorWarm",
+"chip": "LA PUERTA: LA MÁS TIBIA",
+"chipAt": 0.0,
+"ring": true,
+"ringAt": 2.133,
+"note": null,
+"print": "l_u3_door_sauces",
+"bed": "n_u3_door_warm"
+}
 },
 {
-"a": 340.24,
-"b": 346.24,
+"a": 309.0,
+"b": 316.5,
 "k": "L",
-"src": "l_u2_bag_behind",
-"label": null
+"src": "l_u3_milk_out",
+"label": "3 · LA PUERTA ES PARA SALSAS"
 },
 {
-"a": 346.24,
-"b": 349.5,
+"a": 316.5,
+"b": 322.5,
 "k": "AR",
-"src": "arch_vista_5",
-"label": "4 � CARNE Y L�CTEOS ABAJO"
+"src": "arch_vista_9"
+},
+{
+"a": 322.5,
+"b": 330.0,
+"k": "N",
+"src": "n_u3_milk_jars_shelf"
+},
+{
+"a": 330.0,
+"b": 337.5,
+"k": "L",
+"src": "l_mom_hand_crisper"
+},
+{
+"a": 337.5,
+"b": 345.0,
+"k": "L",
+"src": "l_recap_notebook"
+},
+{
+"a": 345.0,
+"b": 349.5,
+"k": "L",
+"src": "l_u10_bread_box"
 },
 {
 "a": 349.5,
 "b": 358.5,
 "k": "AV",
 "ms": 349.38,
-"off": 117.98,
-"n": "cuatro",
-"label": null
+"off": 117.98
 },
 {
 "a": 358.5,
-"b": 364.5,
-"k": "N",
-"src": "n_u2_hidden_bag",
-"label": null
-},
-{
-"a": 364.5,
-"b": 371.7,
-"k": "ST",
-"src": "st_bananas_1",
-"label": null
-},
-{
-"a": 371.7,
-"b": 377.7,
+"b": 366.0,
 "k": "L",
-"src": "l_u3_milk_out",
-"label": null
+"src": "l_u4_drip_wipe",
+"label": "4 · CARNE Y LÁCTEOS ABAJO"
 },
 {
-"a": 377.7,
-"b": 383.7,
+"a": 366.0,
+"b": 372.0,
 "k": "AR",
-"src": "arch_vista_6",
-"label": null
+"src": "arch_vista_10"
 },
 {
-"a": 383.7,
-"b": 392.7,
-"k": "C",
-"name": "DateFront",
-"label": null
+"a": 372.0,
+"b": 379.5,
+"k": "L",
+"src": "l_u4_tray_plate"
 },
 {
-"a": 392.7,
-"b": 398.7,
+"a": 379.5,
+"b": 387.0,
 "k": "N",
-"src": "n_u3_milk_jars_shelf",
-"label": null
+"src": "n_u4_drip_tray"
 },
 {
-"a": 398.7,
-"b": 405.62,
-"k": "ST",
-"src": "st_onions_1",
-"label": null
+"a": 387.0,
+"b": 394.5,
+"k": "N",
+"src": "n_u4_plate_meat_bottom"
 },
 {
-"a": 405.62,
+"a": 394.5,
+"b": 402.0,
+"k": "L",
+"src": "l_u10_onions_basket"
+},
+{
+"a": 402.0,
 "b": 408.3,
 "k": "L",
-"src": "l_u3_door_sauces",
-"label": null
+"src": "l_u10_potatoes_cloth"
 },
 {
 "a": 408.3,
 "b": 419.9,
 "k": "AV",
 "ms": 408.18,
-"off": 127.22,
-"n": "cinco",
-"label": null
+"off": 127.22
 },
 {
 "a": 419.9,
-"b": 426.82,
-"k": "ST",
-"src": "st_onions_2",
-"label": null
-},
-{
-"a": 426.82,
-"b": 432.82,
-"k": "L",
-"src": "l_u4_tray_plate",
-"label": null
-},
-{
-"a": 432.82,
-"b": 439.74,
-"k": "ST",
-"src": "st_onions_3",
-"label": null
-},
-{
-"a": 439.74,
-"b": 448.74,
+"b": 428.9,
 "k": "C",
-"name": "QR",
-"label": null
+"name": "PaperLeaves",
+"hero": {
+"name": "PaperLeaves",
+"chip": "BOLSA DE PLÁSTICO = SE AGUA",
+"chipAt": 0.0,
+"ring": true,
+"ringAt": 6.547,
+"note": {
+"text": "A LOS TRES DÍAS",
+"at": 5.707
+},
+"print": "n_u5_damp_paper_box",
+"bed": "n_u5_bag_wilted"
+}
 },
 {
-"a": 448.74,
-"b": 454.74,
-"k": "N",
-"src": "n_u4_plate_meat_bottom",
-"label": null
-},
-{
-"a": 454.74,
-"b": 460.74,
-"k": "AR",
-"src": "arch_vista_7",
-"label": null
-},
-{
-"a": 460.74,
-"b": 466.74,
+"a": 428.9,
+"b": 436.4,
 "k": "L",
-"src": "l_u4_drip_wipe",
-"label": null
+"src": "l_u5_close_box",
+"label": "5 · VERDURAS EN PAPEL"
 },
 {
-"a": 466.74,
+"a": 436.4,
+"b": 444.24,
+"k": "ST",
+"src": "st_lettuce_1"
+},
+{
+"a": 444.24,
+"b": 451.74,
+"k": "L",
+"src": "l_u5_wet_paper"
+},
+{
+"a": 451.74,
+"b": 459.58,
+"k": "ST",
+"src": "st_lettuce_2"
+},
+{
+"a": 459.58,
+"b": 467.08,
+"k": "L",
+"src": "l_u5_wrap_leaves"
+},
+{
+"a": 467.08,
 "b": 472.8,
 "k": "ST",
-"src": "st_onions_4",
-"label": null
+"src": "st_lettuce_3"
 },
 {
 "a": 472.8,
 "b": 484.3,
 "k": "AV",
 "ms": 472.68,
-"off": 139.06,
-"n": "madre",
-"label": null
+"off": 139.06
 },
 {
 "a": 484.3,
-"b": 490.3,
+"b": 491.8,
 "k": "N",
-"src": "n_u4_drip_tray",
-"label": null
+"src": "n_mom_drawer_full"
 },
 {
-"a": 490.3,
-"b": 495.42,
-"k": "ST",
-"src": "st_tokyo_street_2",
-"label": null
+"a": 491.8,
+"b": 497.8,
+"k": "AR",
+"src": "arch_vista_5"
 },
 {
-"a": 495.42,
-"b": 504.42,
-"k": "C",
-"name": "OneShelf",
-"label": null
+"a": 497.8,
+"b": 505.3,
+"k": "N",
+"src": "n_mom_packed_fridge"
 },
 {
-"a": 504.42,
+"a": 505.3,
 "b": 512.7,
-"k": "L",
-"src": "l_u5_wet_paper",
-"label": "6 � COMO CRECEN"
+"k": "AR",
+"src": "arch_vista_6"
 },
 {
 "a": 512.7,
 "b": 527.0,
 "k": "AV",
 "ms": 512.58,
-"off": 150.8,
-"n": "seis",
-"label": null
+"off": 150.8
 },
 {
 "a": 527.0,
-"b": 533.0,
-"k": "AR",
-"src": "arch_vista_8",
-"label": null
+"b": 536.0,
+"k": "C",
+"name": "StandUp",
+"hero": {
+"name": "StandUp",
+"chip": "ACOSTADAS = SE ABLANDAN",
+"chipAt": 0.0,
+"ring": false,
+"ringAt": 7.007,
+"note": null,
+"print": "n_u6_leeks_standing",
+"bed": "n_u6_carrots_jar"
+}
 },
 {
-"a": 533.0,
-"b": 539.0,
+"a": 536.0,
+"b": 543.5,
 "k": "L",
-"src": "l_u5_wrap_leaves",
-"label": null
+"src": "l_u6_flat_mistake",
+"label": "6 · COMO CRECEN"
 },
 {
-"a": 539.0,
-"b": 545.72,
-"k": "ST",
-"src": "st_hotel_cleaning_4",
-"label": null
-},
-{
-"a": 545.72,
+"a": 543.5,
 "b": 548.3,
-"k": "L",
-"src": "l_u5_close_box",
-"label": null
+"k": "ST",
+"src": "st_cutting_carrots_1"
 },
 {
 "a": 548.3,
 "b": 562.5,
 "k": "AV",
 "ms": 548.18,
-"off": 165.34,
-"n": "siete",
-"label": null
+"off": 165.34
 },
 {
 "a": 562.5,
-"b": 570.34,
-"k": "ST",
-"src": "st_lettuce_2",
-"label": null
+"b": 571.5,
+"k": "C",
+"name": "DateFront",
+"hero": {
+"name": "DateFront",
+"chip": "LO VIEJO ADELANTE",
+"chipAt": 5.027,
+"ring": true,
+"ringAt": 8.447,
+"note": null,
+"print": "n_u7_old_container_front",
+"bed": "n_u7_dated_containers"
+}
 },
 {
-"a": 570.34,
-"b": 576.34,
-"k": "N",
-"src": "n_u5_sealed_box",
-"label": null
+"a": 571.5,
+"b": 579.0,
+"k": "L",
+"src": "l_u7_date_marker",
+"label": "7 · LO VIEJO ADELANTE"
 },
 {
-"a": 576.34,
-"b": 584.18,
-"k": "ST",
-"src": "st_lettuce_3",
-"label": null
-},
-{
-"a": 584.18,
-"b": 590.18,
-"k": "N",
-"src": "n_u5_bag_wilted",
-"label": null
-},
-{
-"a": 590.18,
-"b": 596.18,
+"a": 579.0,
+"b": 585.0,
 "k": "AR",
-"src": "arch_vista_9",
-"label": null
+"src": "arch_vista_12"
 },
 {
-"a": 596.18,
+"a": 585.0,
+"b": 592.5,
+"k": "L",
+"src": "l_u7_front_row"
+},
+{
+"a": 592.5,
 "b": 599.2,
 "k": "L",
-"src": "l_mom_fridge_full",
-"label": null
+"src": "l_u7_look_first"
 },
 {
 "a": 599.2,
 "b": 609.9,
 "k": "AV",
 "ms": 599.08,
-"off": 179.78,
-"n": "ocho",
-"label": null
+"off": 179.78
 },
 {
 "a": 609.9,
-"b": 617.74,
-"k": "ST",
-"src": "st_lettuce_4",
-"label": null
-},
-{
-"a": 617.74,
-"b": 623.74,
-"k": "N",
-"src": "n_mom_packed_fridge",
-"label": null
-},
-{
-"a": 623.74,
-"b": 631.58,
-"k": "ST",
-"src": "st_lettuce_5",
-"label": null
-},
-{
-"a": 631.58,
-"b": 635.8,
+"b": 617.4,
 "k": "L",
-"src": "l_mom_hand_crisper",
-"label": null
+"src": "l_u8_apple_drawer",
+"label": "8 · SEPARA LO QUE MADURA"
+},
+{
+"a": 617.4,
+"b": 624.6,
+"k": "ST",
+"src": "st_bananas_1"
+},
+{
+"a": 624.6,
+"b": 632.1,
+"k": "L",
+"src": "l_u8_fruit_bowl"
+},
+{
+"a": 632.1,
+"b": 635.8,
+"k": "N",
+"src": "n_u8_apples_drawer"
 },
 {
 "a": 635.8,
 "b": 650.2,
 "k": "AV",
 "ms": 635.68,
-"off": 190.72,
-"n": "cta2",
-"label": null
+"off": 190.72
 },
 {
 "a": 650.2,
-"b": 657.96,
+"b": 651.0,
+"k": "L",
+"src": "l_u11_old_jam"
+},
+{
+"a": 651.0,
+"b": 660.0,
+"k": "C",
+"name": "QR",
+"hero": {
+"name": "QR",
+"chip": "ESCANEA EL CÓDIGO QR",
+"chipAt": 0.0,
+"ring": false,
+"ringAt": 0.0,
+"note": {
+"text": "LLEGAS DIRECTO",
+"at": 2.34
+},
+"print": "qr",
+"bed": "n_cta_qr_card"
+}
+},
+{
+"a": 660.0,
+"b": 667.5,
+"k": "L",
+"src": "l_u9_wash_berries",
+"label": "9 · NO LAVES LA FRUTA"
+},
+{
+"a": 667.5,
+"b": 675.02,
 "k": "ST",
-"src": "st_lettuce_6",
-"label": null
+"src": "st_kitchen_wash_1"
 },
 {
-"a": 657.96,
-"b": 663.96,
-"k": "N",
-"src": "n_mom_drawer_full",
-"label": "9 � NO LAVES LA FRUTA"
-},
-{
-"a": 663.96,
-"b": 669.96,
-"k": "AR",
-"src": "arch_vista_10",
-"label": null
-},
-{
-"a": 669.96,
-"b": 675.96,
+"a": 675.02,
+"b": 682.52,
 "k": "L",
-"src": "l_u6_jar_carrots",
-"label": null
+"src": "l_u9_wet_box"
 },
 {
-"a": 675.96,
-"b": 681.96,
-"k": "AR",
-"src": "arch_vista_11",
-"label": null
-},
-{
-"a": 681.96,
-"b": 687.96,
+"a": 682.52,
+"b": 690.02,
 "k": "N",
-"src": "n_u6_carrots_jar",
-"label": null
+"src": "n_u9_dry_basket"
 },
 {
-"a": 687.96,
-"b": 693.96,
-"k": "AR",
-"src": "arch_vista_12",
-"label": null
+"a": 690.02,
+"b": 697.52,
+"k": "N",
+"src": "n_u9_wet_strawberries"
 },
 {
-"a": 693.96,
-"b": 699.96,
-"k": "L",
-"src": "l_u6_leeks_upright",
-"label": "10 � LO QUE NO VA AL FR�O"
-},
-{
-"a": 699.96,
+"a": 697.52,
 "b": 705.3,
 "k": "ST",
-"src": "st_fridge_open",
-"label": null
+"src": "st_onions_1",
+"label": "10 · LO QUE NO VA AL FRÍO"
 },
 {
 "a": 705.3,
 "b": 714.6,
 "k": "AV",
 "ms": 705.18,
-"off": 205.36,
-"n": "diez",
-"label": null
+"off": 205.36
 },
 {
 "a": 714.6,
-"b": 720.6,
-"k": "N",
-"src": "n_u6_leeks_standing",
-"label": null
+"b": 719.74,
+"k": "ST",
+"src": "st_tokyo_street_1"
 },
 {
-"a": 720.6,
+"a": 719.74,
+"b": 727.24,
+"k": "N",
+"src": "n_u10_bread_hook"
+},
+{
+"a": 727.24,
 "b": 735.6,
 "k": "ST",
-"src": "st_fridge_vegetables",
-"label": "11 � UN ESTANTE POR D�A"
+"src": "st_onions_2"
 },
 {
 "a": 735.6,
 "b": 746.1,
 "k": "AV",
 "ms": 735.48,
-"off": 214.9,
-"n": "once",
-"label": null
+"off": 214.9
 },
 {
 "a": 746.1,
-"b": 752.1,
+"b": 748.493,
 "k": "L",
-"src": "l_u6_herbs_cup",
-"label": null
+"src": "l_u11_weekly_list",
+"label": "11 · UN ESTANTE POR DÍA"
 },
 {
-"a": 752.1,
-"b": 761.613,
+"a": 748.493,
+"b": 757.493,
+"k": "C",
+"name": "OneShelf",
+"hero": {
+"name": "OneShelf",
+"chip": "UN MINUTO POR DÍA",
+"chipAt": 0.0,
+"ring": true,
+"ringAt": 2.96,
+"note": {
+"text": "UN PAÑO HÚMEDO",
+"at": 1.32
+},
+"print": "n_u11_one_shelf_clean",
+"bed": "l_u11_wipe_shelf"
+}
+},
+{
+"a": 757.493,
+"b": 764.993,
+"k": "N",
+"src": "n_u11_blank_list_door"
+},
+{
+"a": 764.993,
+"b": 771.713,
 "k": "ST",
-"src": "st_market_veg",
-"label": null
+"src": "st_hotel_cleaning_4"
 },
 {
-"a": 761.613,
-"b": 767.613,
-"k": "L",
-"src": "l_u6_flat_mistake",
-"label": null
-},
-{
-"a": 767.613,
-"b": 773.613,
+"a": 771.713,
+"b": 779.213,
 "k": "N",
-"src": "n_u6_bagged_carrots",
-"label": null
+"src": "n_u11_mold_jar"
 },
 {
-"a": 773.613,
-"b": 779.613,
-"k": "L",
-"src": "l_u7_date_marker",
-"label": null
-},
-{
-"a": 779.613,
-"b": 785.613,
-"k": "N",
-"src": "n_u7_dated_containers",
-"label": null
-},
-{
-"a": 785.613,
+"a": 779.213,
 "b": 788.2,
-"k": "L",
-"src": "l_u7_look_first",
-"label": null
+"k": "ST",
+"src": "st_lettuce_5"
 },
 {
 "a": 788.2,
 "b": 794.2,
 "k": "AV",
 "ms": 788.08,
-"off": 225.64,
-"n": "once2",
-"label": null
+"off": 225.64
 },
 {
 "a": 794.2,
-"b": 800.2,
+"b": 801.96,
+"k": "ST",
+"src": "st_lettuce_6"
+},
+{
+"a": 801.96,
+"b": 809.46,
 "k": "L",
-"src": "l_u8_fruit_bowl",
-"label": null
+"src": "l_u6_herbs_cup"
 },
 {
-"a": 800.2,
-"b": 806.2,
-"k": "N",
-"src": "n_u8_fruit_bowl_counter",
-"label": null
-},
-{
-"a": 806.2,
-"b": 812.2,
-"k": "L",
-"src": "l_u8_apple_drawer",
-"label": null
-},
-{
-"a": 812.2,
+"a": 809.46,
 "b": 817.7,
-"k": "N",
-"src": "n_u8_apples_drawer",
-"label": null
+"k": "L",
+"src": "l_u6_jar_carrots"
 },
 {
 "a": 817.7,
 "b": 830.0,
 "k": "AV",
 "ms": 817.58,
-"off": 231.88,
-"n": "recap",
-"label": null
+"off": 231.88
 },
 {
 "a": 830.0,
-"b": 836.0,
+"b": 837.5,
 "k": "L",
-"src": "l_u9_wash_berries",
-"label": null
+"src": "l_u6_leeks_upright"
 },
 {
-"a": 836.0,
-"b": 842.0,
-"k": "L",
-"src": "l_u9_wet_box",
-"label": null
-},
-{
-"a": 842.0,
-"b": 848.0,
+"a": 837.5,
+"b": 845.0,
 "k": "N",
-"src": "n_u9_wet_strawberries",
-"label": null
+"src": "n_hist_tokyo_street"
 },
 {
-"a": 848.0,
-"b": 854.0,
+"a": 845.0,
+"b": 852.5,
 "k": "N",
-"src": "n_u9_dry_basket",
-"label": null
+"src": "n_tokyo_market"
 },
 {
-"a": 854.0,
+"a": 852.5,
 "b": 860.0,
-"k": "L",
-"src": "l_u10_onions_basket",
-"label": null
+"k": "N",
+"src": "n_u10_onions_garlic"
 },
 {
 "a": 860.0,
-"b": 866.0,
+"b": 867.5,
 "k": "N",
-"src": "n_u10_onions_garlic",
-"label": null
+"src": "n_u10_potatoes_box"
 },
 {
-"a": 866.0,
-"b": 872.0,
-"k": "L",
-"src": "l_u10_potatoes_cloth",
-"label": null
-},
-{
-"a": 872.0,
+"a": 867.5,
 "b": 876.5,
 "k": "N",
-"src": "n_u10_potatoes_box",
-"label": null
+"src": "n_u5_sealed_box"
 },
 {
 "a": 876.5,
 "b": 882.6,
 "k": "AV",
 "ms": 876.38,
-"off": 244.42,
-"n": "cierre",
-"label": null
+"off": 244.42
 },
 {
 "a": 882.6,
-"b": 888.6,
-"k": "L",
-"src": "l_u10_bread_box",
-"label": null
+"b": 890.1,
+"k": "N",
+"src": "n_u6_bagged_carrots"
 },
 {
-"a": 888.6,
+"a": 890.1,
 "b": 893.5,
 "k": "N",
-"src": "n_u10_bread_hook",
-"label": null
+"src": "n_u8_fruit_bowl_counter"
 },
 {
 "a": 893.5,
 "b": 907.78,
 "k": "AV",
 "ms": 893.38,
-"off": 250.76,
-"n": "proximo",
-"label": null
+"off": 250.76
 }
 ]
 }
