@@ -1,0 +1,242 @@
+[
+ {
+  "name": "ray_kneel_door",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray kneeling on the porch at the front door of an ordinary US suburban house, checking the metal plate on the door frame, a welcome mat and a plastic flower pot beside him, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_kneel_door_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray kneeling on the porch at the front door of an ordinary US suburban house, checking the metal plate on the door frame, a welcome mat and a plastic flower pot beside him, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_bathrobe",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray standing on the porch talking to a homeowner in a bathrobe who holds a phone with both hands, a cold paper coffee cup on the porch rail, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_bathrobe_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray standing on the porch talking to a homeowner in a bathrobe who holds a phone with both hands, a cold paper coffee cup on the porch rail, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_coffee_step",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray sitting on the front step with a paper coffee cup on the concrete beside him and a bunch of keys in his hand, a faded navy work shirt with a white oval patch, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_coffee_step_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray sitting on the front step with a paper coffee cup on the concrete beside him and a bunch of keys in his hand, a faded navy work shirt with a white oval patch, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_drawer",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray standing in an ordinary kitchen looking into a kitchen drawer that has been pulled out, a dish towel and a pair of scissors on the counter, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_drawer_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray standing in an ordinary kitchen looking into a kitchen drawer that has been pulled out, a dish towel and a pair of scissors on the counter, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_van_invoice",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray writing an invoice by hand on the hood of a white work van in a suburban driveway, a pen in his hand and a clipboard under his arm, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_van_invoice_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray writing an invoice by hand on the hood of a white work van in a suburban driveway, a pen in his hand and a clipboard under his arm, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_read",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray at a kitchen table reading a printed insurance policy booklet with steel reading glasses on his nose, a highlighter and a cold cup of coffee beside him, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_read_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray at a kitchen table reading a printed insurance policy booklet with steel reading glasses on his nose, a highlighter and a cold cup of coffee beside him, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_point",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray pointing with one finger at a line of small print on an open policy booklet on a kitchen table, a pen lying across the page, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_point_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray pointing with one finger at a line of small print on an open policy booklet on a kitchen table, a pen lying across the page, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_tenant",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray standing in the hallway of an apartment building talking to a young woman at her apartment door, a laundry basket on the floor, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_tenant_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray standing in the hallway of an apartment building talking to a young woman at her apartment door, a laundry basket on the floor, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_owner_photo",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, A homeowner in a bathrobe holding a phone up, taking a photo of her front door, while Ray stands beside the frame with his hands in his pockets, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_owner_photo_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, a homeowner in a bathrobe holding a phone up, taking a photo of her front door, while Ray stands beside the frame with his hands in his pockets, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_frame_point",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray kneeling at a wooden door frame pointing at the metal strike plate with one finger so the homeowner can photograph it, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_frame_point_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray kneeling at a wooden door frame pointing at the metal strike plate with one finger so the homeowner can photograph it, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_film_room",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, A homeowner walking slowly through a living room with a phone held up to film, Ray standing by the sofa in a navy work shirt, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_film_room_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, a homeowner walking slowly through a living room with a phone held up to film, Ray standing by the sofa in a navy work shirt, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_phone_porch",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray on a front porch talking on a phone in the early morning, a cold coffee in his other hand and a house behind him, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_phone_porch_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray on a front porch talking on a phone in the early morning, a cold coffee in his other hand and a house behind him, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_clipboard",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray holding a clipboard with a blank police report form on it at a front door, a pen clipped to the board, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_clipboard_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray holding a clipboard with a blank police report form on it at a front door, a pen clipped to the board, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_cupboard_note",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray in a kitchen pointing at a small handwritten note taped inside an open cupboard door, a kettle on the counter, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_cupboard_note_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray in a kitchen pointing at a small handwritten note taped inside an open cupboard door, a kettle on the counter, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_receipts",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray spreading paper receipts and a card statement on a kitchen table, his reading glasses pushed up on his forehead, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_receipts_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray spreading paper receipts and a card statement on a kitchen table, his reading glasses pushed up on his forehead, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_folder",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray putting a folder of papers into a small grey fireproof box on a desk in a home office, a closed laptop beside it, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_folder_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray putting a folder of papers into a small grey fireproof box on a desk in a home office, a closed laptop beside it, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_serial",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray turning a small electronic device over to read the serial number on its back, under a kitchen ceiling light, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_serial_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray turning a small electronic device over to read the serial number on its back, under a kitchen ceiling light, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_hinge",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray standing at a window looking closely at the hinge and the latch, a tape measure hanging from his belt, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_hinge_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray standing at a window looking closely at the hinge and the latch, a tape measure hanging from his belt, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_lock",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray checking the lock on a double-hung window in an ordinary house, a small flashlight in his other hand, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_lock_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray checking the lock on a double-hung window in an ordinary house, a small flashlight in his other hand, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_screws",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray kneeling at a front door tightening a strike plate screw with a screwdriver, a small pile of screws on the step beside him, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_screws_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray kneeling at a front door tightening a strike plate screw with a screwdriver, a small pile of screws on the step beside him, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_measure",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray measuring the wooden frame beside a door with a tape measure, a small box of longer screws on the step beside him, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_measure_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray measuring the wooden frame beside a door with a tape measure, a small box of longer screws on the step beside him, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_kitchen_bills",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray sitting at a kitchen table with a mug of coffee and a stack of paper bills, looking tired but calm, flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_kitchen_bills_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray sitting at a kitchen table with a mug of coffee and a stack of paper bills, looking tired but calm, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_porch_dusk",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray standing on a porch at dusk under a porch light, a rolled-up work apron over one arm, soft kitchen light from a ceiling bulb, something cut at the edge of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_porch_dusk_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray standing on a porch at dusk under a porch light, a rolled-up work apron over one arm, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_letter_hold",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, Ray holding a folded claim letter in one hand while looking at a door frame, his other hand on his hip, grey early light through a glass door, a thumb in the corner of the frame. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_letter_hold_b",
+  "prompt": "Candid smartphone photo taken by the homeowner of a 68-year-old locksmith with thick white hair combed back, short white stubble, steel reading glasses pushed up on his forehead, faded navy work shirt with a white oval patch, from a few steps back, ray holding a folded claim letter in one hand while looking at a door frame, his other hand on his hip, overcast morning light from a window, a fingerprint smear on the glass. He is busy and not looking at the camera, nothing blurred out.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ }
+]

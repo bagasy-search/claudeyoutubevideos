@@ -1,0 +1,398 @@
+[
+ {
+  "name": "ray_kneel_door",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray kneeling on the porch at the front door of an ordinary US suburban house, checking the metal plate on the door frame, a welcome mat and a plastic flower pot beside him. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_kneel_door_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray kneeling on the porch at the front door of an ordinary US suburban house, checking the metal plate on the door frame, a welcome mat and a plastic flower pot beside him. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_bathrobe",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray standing on the porch talking to a homeowner in a bathrobe who holds a phone with both hands, a cold paper coffee cup on the porch rail. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_bathrobe_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray standing on the porch talking to a homeowner in a bathrobe who holds a phone with both hands, a cold paper coffee cup on the porch rail. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_coffee_step",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray sitting on the front step with a paper coffee cup on the concrete beside him and a bunch of keys in his hand, a faded navy work shirt with a white oval patch. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_coffee_step_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray sitting on the front step with a paper coffee cup on the concrete beside him and a bunch of keys in his hand, a faded navy work shirt with a white oval patch. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_drawer",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray standing in an ordinary kitchen looking into a kitchen drawer that has been pulled out, a dish towel and a pair of scissors on the counter. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_drawer_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray standing in an ordinary kitchen looking into a kitchen drawer that has been pulled out, a dish towel and a pair of scissors on the counter. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_van_invoice",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray writing an invoice by hand on the hood of a white work van in a suburban driveway, a pen in his hand and a clipboard under his arm. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_van_invoice_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray writing an invoice by hand on the hood of a white work van in a suburban driveway, a pen in his hand and a clipboard under his arm. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_read",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray at a kitchen table reading a printed insurance policy booklet with steel reading glasses on his nose, a highlighter and a cold cup of coffee beside him. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_read_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray at a kitchen table reading a printed insurance policy booklet with steel reading glasses on his nose, a highlighter and a cold cup of coffee beside him. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_point",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray pointing with one finger at a line of small print on an open policy booklet on a kitchen table, a pen lying across the page. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_policy_point_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray pointing with one finger at a line of small print on an open policy booklet on a kitchen table, a pen lying across the page. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_tenant",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray standing in the hallway of an apartment building talking to a young woman at her apartment door, a laundry basket on the floor. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_tenant_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray standing in the hallway of an apartment building talking to a young woman at her apartment door, a laundry basket on the floor. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_owner_photo",
+  "prompt": "Candid smartphone photo taken by the homeowner: A homeowner in a bathrobe holding a phone up, taking a photo of her front door, while Ray stands beside the frame with his hands in his pockets. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_owner_photo_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, a homeowner in a bathrobe holding a phone up, taking a photo of her front door, while Ray stands beside the frame with his hands in his pockets. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_frame_point",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray kneeling at a wooden door frame pointing at the metal strike plate with one finger so the homeowner can photograph it. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_frame_point_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray kneeling at a wooden door frame pointing at the metal strike plate with one finger so the homeowner can photograph it. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_film_room",
+  "prompt": "Candid smartphone photo taken by the homeowner: A homeowner walking slowly through a living room with a phone held up to film, Ray standing by the sofa in a navy work shirt. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_film_room_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, a homeowner walking slowly through a living room with a phone held up to film, Ray standing by the sofa in a navy work shirt. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_phone_porch",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray on a front porch talking on a phone in the early morning, a cold coffee in his other hand and a house behind him. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_phone_porch_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray on a front porch talking on a phone in the early morning, a cold coffee in his other hand and a house behind him. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_clipboard",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray holding a clipboard with a blank police report form on it at a front door, a pen clipped to the board. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_clipboard_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray holding a clipboard with a blank police report form on it at a front door, a pen clipped to the board. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_cupboard_note",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray in a kitchen pointing at a small handwritten note taped inside an open cupboard door, a kettle on the counter. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_cupboard_note_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray in a kitchen pointing at a small handwritten note taped inside an open cupboard door, a kettle on the counter. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_receipts",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray spreading paper receipts and a card statement on a kitchen table, his reading glasses pushed up on his forehead. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_receipts_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray spreading paper receipts and a card statement on a kitchen table, his reading glasses pushed up on his forehead. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_folder",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray putting a folder of papers into a small grey fireproof box on a desk in a home office, a closed laptop beside it. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_folder_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray putting a folder of papers into a small grey fireproof box on a desk in a home office, a closed laptop beside it. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_serial",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray turning a small electronic device over to read the serial number on its back, under a kitchen ceiling light. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_serial_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray turning a small electronic device over to read the serial number on its back, under a kitchen ceiling light. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_hinge",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray standing at a window looking closely at the hinge and the latch, a tape measure hanging from his belt. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_hinge_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray standing at a window looking closely at the hinge and the latch, a tape measure hanging from his belt. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_lock",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray checking the lock on a double-hung window in an ordinary house, a small flashlight in his other hand. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_window_lock_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray checking the lock on a double-hung window in an ordinary house, a small flashlight in his other hand. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_screws",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray kneeling at a front door tightening a strike plate screw with a screwdriver, a small pile of screws on the step beside him. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_screws_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray kneeling at a front door tightening a strike plate screw with a screwdriver, a small pile of screws on the step beside him. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_measure",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray measuring the wooden frame beside a door with a tape measure, a small box of longer screws on the step beside him. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_measure_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray measuring the wooden frame beside a door with a tape measure, a small box of longer screws on the step beside him. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_kitchen_bills",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray sitting at a kitchen table with a mug of coffee and a stack of paper bills, looking tired but calm. flat daylight from a porch, the frame a little tilted. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_kitchen_bills_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray sitting at a kitchen table with a mug of coffee and a stack of paper bills, looking tired but calm. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_porch_dusk",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray standing on a porch at dusk under a porch light, a rolled-up work apron over one arm. soft kitchen light from a ceiling bulb, something cut off at the edge of the photo. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_porch_dusk_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray standing on a porch at dusk under a porch light, a rolled-up work apron over one arm. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_letter_hold",
+  "prompt": "Candid smartphone photo taken by the homeowner: Ray holding a folded claim letter in one hand while looking at a door frame, his other hand on his hip. grey early light through a glass door, a thumb partly in the corner. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "ray_letter_hold_b",
+  "prompt": "Candid smartphone photo taken by the homeowner, from a few steps back, ray holding a folded claim letter in one hand while looking at a door frame, his other hand on his hip. overcast morning light from a window, slight blur on one edge. He is busy and not looking at the camera.",
+  "ref": "C:/Users/bauti/Downloads/plan_ray_oct3/face_webcam.png"
+ },
+ {
+  "name": "det_front_closed",
+  "prompt": "Candid smartphone photo taken by the homeowner: The front door of an ordinary US suburban house, closed, with a porch light on. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_frame_latch",
+  "prompt": "Candid smartphone photo taken by the homeowner: A wooden door frame at the latch side, painted white, with a small metal strike plate and two screws. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_deadbolt",
+  "prompt": "Candid smartphone photo taken by the homeowner: A brass deadbolt and a round knob on a painted front door, close up, a little dust on the metal. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_window_lock",
+  "prompt": "Candid smartphone photo taken by the homeowner: A double-hung window lock on the inside of a window frame, close up, a faint smudge on the glass. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_sash_hinge",
+  "prompt": "Candid smartphone photo taken by the homeowner: Hinge pins on a window sash, close up, slightly rusty. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_drawer_empty",
+  "prompt": "Candid smartphone photo taken by the homeowner: A kitchen drawer pulled out and empty, close up, a dish towel folded in the corner. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_receipts_table",
+  "prompt": "Candid smartphone photo taken by the homeowner: Paper receipts and a card statement on a wooden table, slightly curled edges, a pen beside them. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_statement_counter",
+  "prompt": "Candid smartphone photo taken by the homeowner: A printed credit card statement on a kitchen counter, a coffee ring on the corner. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_serial_back",
+  "prompt": "Candid smartphone photo taken by the homeowner: The back of a small electronic gadget, close up, a tiny printed serial number, a hair of dust on the case. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_fire_box",
+  "prompt": "Candid smartphone photo taken by the homeowner: A grey fireproof document box, closed, on a shelf in a home office. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_policy_closed",
+  "prompt": "Candid smartphone photo taken by the homeowner: A printed homeowners policy booklet, closed, on a kitchen table, a pair of reading glasses resting on top. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_endorse_page",
+  "prompt": "Candid smartphone photo taken by the homeowner: An inside page of a printed insurance policy booklet with small type and a yellow highlighter line, lying open on a wooden table. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_decl_page",
+  "prompt": "Candid smartphone photo taken by the homeowner: A printed declarations page with a row of boxes, lying flat on a desk beside a pen. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_police_form",
+  "prompt": "Candid smartphone photo taken by the homeowner: A blank police report form on a clipboard on a porch railing, a pen clipped to it. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_landline_note",
+  "prompt": "Candid smartphone photo taken by the homeowner: A landline phone on a kitchen wall with a small handwritten number taped beside it. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_cupboard_inside",
+  "prompt": "Candid smartphone photo taken by the homeowner: The inside of a kitchen cupboard door with a small handwritten note taped to it. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_strike_close",
+  "prompt": "Candid smartphone photo taken by the homeowner: A metal strike plate on a wooden door frame, close, a light scrape on it and one screw slightly raised. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_screw_pile",
+  "prompt": "Candid smartphone photo taken by the homeowner: A small pile of wood screws, short and long, on a porch step. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_screw_box",
+  "prompt": "Candid smartphone photo taken by the homeowner: A small cardboard box of wood screws on a workbench, closed. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_reinforce",
+  "prompt": "Candid smartphone photo taken by the homeowner: A metal reinforcement plate on the inside of a wooden door frame, screws visible, a little sawdust on the floor. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_window_crack",
+  "prompt": "Candid smartphone photo taken by the homeowner: A window glass with a fine crack, close up, a dusty sill below it. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_garage_side",
+  "prompt": "Candid smartphone photo taken by the homeowner: A garage side door with a plain knob, closed, a bicycle leaning on the wall beside it. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_shelf_gap",
+  "prompt": "Candid smartphone photo taken by the homeowner: An empty spot on a wall shelf where a box used to be, a faint rectangle of cleaner paint. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_jewel_box",
+  "prompt": "Candid smartphone photo taken by the homeowner: An open wooden box on a dresser, empty, a few small paper tags inside. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_watch_stand",
+  "prompt": "Candid smartphone photo taken by the homeowner: An empty watch stand on a wooden dresser top, a small dish beside it. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_cold_coffee",
+  "prompt": "Candid smartphone photo taken by the homeowner: A paper coffee cup on a porch railing, cold, a little condensation on the lid. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_mail_table",
+  "prompt": "Candid smartphone photo taken by the homeowner: A stack of mail and envelopes on a kitchen table, unopened, with a pair of glasses on top. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_mailboxes",
+  "prompt": "Candid smartphone photo taken by the homeowner: A row of apartment mailboxes in a hallway, a cardboard box leaning against the wall. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_latch_dust",
+  "prompt": "Candid smartphone photo taken by the homeowner: The latch and strike plate of a door, close up, a little dust in the corner. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_blind_gap",
+  "prompt": "Candid smartphone photo taken by the homeowner: A closed window blind in a living room with a slight gap at the bottom. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_doormat_splinters",
+  "prompt": "Candid smartphone photo taken by the homeowner: A doormat on a front porch with a few small wood splinters on it. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_step_dew",
+  "prompt": "Candid smartphone photo taken by the homeowner: A concrete front step with a welcome mat, dew on the steps, early morning. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_patio_track",
+  "prompt": "Candid smartphone photo taken by the homeowner: A sliding patio door track with a little dirt and a plastic cap, close up. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_hall_photos",
+  "prompt": "Candid smartphone photo taken by the homeowner: An ordinary hallway with a wooden floor and a family photo on the wall, morning light. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_notebook_list",
+  "prompt": "Candid smartphone photo taken by the homeowner: A spiral notebook open to a handwritten list of household items, a pen beside it. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ },
+ {
+  "name": "det_dresser_dish",
+  "prompt": "Candid smartphone photo taken by the homeowner: A wooden dresser top with a small jewelry dish and a phone charger, slightly disordered. grey early light through a glass door, the frame a little tilted."
+ },
+ {
+  "name": "det_kitchen_counter",
+  "prompt": "Candid smartphone photo taken by the homeowner: A kitchen counter with a toaster, a fruit bowl and a closed notebook. overcast morning light from a window, something cut off at the edge of the photo."
+ },
+ {
+  "name": "det_door_light",
+  "prompt": "Candid smartphone photo taken by the homeowner: A wall-mounted porch light with a dusty glass globe beside a front door. flat daylight from a porch, a thumb partly in the corner."
+ },
+ {
+  "name": "det_bill_envelope",
+  "prompt": "Candid smartphone photo taken by the homeowner: An unopened envelope from an insurance company on a kitchen counter. soft kitchen light from a ceiling bulb, slight blur on one edge."
+ }
+]

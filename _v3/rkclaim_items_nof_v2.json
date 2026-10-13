@@ -1,0 +1,190 @@
+[
+ {
+  "name": "det_letter_denied",
+  "prompt": "Candid smartphone photo taken by the homeowner: A printed claim letter lying on a kitchen table with a red rubber-stamp mark that reads DENIED in capital letters and nothing else legible, a pen beside it, overcast morning light from a window, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_policy_theft_highlight",
+  "prompt": "Candid smartphone photo taken by the homeowner: An open insurance policy booklet on a wooden table, a yellow highlighter line across a block of small print, a pair of reading glasses folded beside it, flat daylight from a porch, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_report_note_fridge",
+  "prompt": "Candid smartphone photo taken by the homeowner: A small yellow sticky note with a handwritten police report number stuck to a white refrigerator door, a magnet holding it, soft kitchen light from a ceiling bulb, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_strike_short_vs_long",
+  "prompt": "Candid smartphone photo taken by the homeowner: A metal strike plate on a wooden door frame, one short screw beside a longer three inch screw on a workbench next to the frame, grey early light through a glass door, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_fireproof_receipts",
+  "prompt": "Candid smartphone photo taken by the homeowner: A grey fireproof document box open on a desk, a stack of paper receipts and a folded card statement inside, overcast morning light from a window, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_phone_door_photo",
+  "prompt": "Candid smartphone photo taken by the homeowner: A phone lying on a kitchen counter, its screen showing a photo of a front door, the phone case slightly scratched, flat daylight from a porch, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_receipt_serial_back",
+  "prompt": "Candid smartphone photo taken by the homeowner: A paper receipt next to a small electronic device, the device lying face down to show the serial number sticker on the back, soft kitchen light from a ceiling bulb, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_insurance_envelope",
+  "prompt": "Candid smartphone photo taken by the homeowner: An unopened white envelope from an insurance company on a hallway table beside a set of house keys, grey early light through a glass door, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_hinge_window_pins",
+  "prompt": "Candid smartphone photo taken by the homeowner: Two window hinge pins on a white window sash, close up, one pin slightly bent, a little paint flaking, overcast morning light from a window, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_apartment_mail",
+  "prompt": "Candid smartphone photo taken by the homeowner: An apartment building mailbox row, one brass door open, a folded paper notice inside, a plastic plant nearby, flat daylight from a porch, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_laptop_box_empty",
+  "prompt": "Candid smartphone photo taken by the homeowner: An empty cardboard laptop box on a bedroom floor, a power cable coiled on the carpet, soft kitchen light from a ceiling bulb, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_dresser_watch_tray",
+  "prompt": "Candid smartphone photo taken by the homeowner: A wooden jewelry tray on a dresser, empty except for a small brass key and a dried flower, grey early light through a glass door, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_porch_step_splinters",
+  "prompt": "Candid smartphone photo taken by the homeowner: Two small wood splinters and a bit of painted trim lying on a concrete porch step beside a welcome mat, overcast morning light from a window, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_front_door_morning",
+  "prompt": "Candid smartphone photo taken by the homeowner: A white painted front door of a suburban house in early morning, the porch light still on, a bicycle at the side, flat daylight from a porch, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_sliding_patio_track",
+  "prompt": "Candid smartphone photo taken by the homeowner: The track of a sliding patio door with a small plastic cap and a little dirt, the glass door partly open, soft kitchen light from a ceiling bulb, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_garage_side_metal",
+  "prompt": "Candid smartphone photo taken by the homeowner: A metal garage side door with a dented bottom corner and a small scrape near the knob, grey early light through a glass door, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_porch_flower_pot",
+  "prompt": "Candid smartphone photo taken by the homeowner: A plastic flower pot beside a front door, one plant tipped over onto the mat, overcast morning light from a window, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_kitchen_coffee_bills",
+  "prompt": "Candid smartphone photo taken by the homeowner: A cold paper coffee cup beside a pile of bills and an unopened envelope on a kitchen table, flat daylight from a porch, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_cupboard_list",
+  "prompt": "Candid smartphone photo taken by the homeowner: The inside of a kitchen cupboard door with a handwritten list of phone numbers taped to it, a little yellowed, soft kitchen light from a ceiling bulb, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_dish_towel_drawer",
+  "prompt": "Candid smartphone photo taken by the homeowner: A kitchen drawer pulled out, a folded dish towel and a pair of kitchen scissors on the counter next to it, grey early light through a glass door, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_landing_hallway_photo",
+  "prompt": "Candid smartphone photo taken by the homeowner: A framed family photo in a hallway, slightly crooked on the wall, a wooden floor below, overcast morning light from a window, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_front_step_morning",
+  "prompt": "Candid smartphone photo taken by the homeowner: A concrete front step with dew on it in the early morning, a rolled newspaper in a plastic sleeve, flat daylight from a porch, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_shelf_gap_box",
+  "prompt": "Candid smartphone photo taken by the homeowner: A gap on a bookshelf where a box used to sit, a clean rectangle on the shelf and dust around it, soft kitchen light from a ceiling bulb, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_doorframe_scrape",
+  "prompt": "Candid smartphone photo taken by the homeowner: A painted white door frame, close, a small fresh scrape on the wood beside the strike plate hole, grey early light through a glass door, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_kitchen_table_policy",
+  "prompt": "Candid smartphone photo taken by the homeowner: A stack of paper forms and a printed policy booklet on a round kitchen table, a cold mug of coffee at the edge, overcast morning light from a window, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_porch_lamp_glass",
+  "prompt": "Candid smartphone photo taken by the homeowner: A wall-mounted porch lamp with a dusty glass globe beside a dark green front door, flat daylight from a porch, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_bedside_table_empty",
+  "prompt": "Candid smartphone photo taken by the homeowner: An empty bedside table with a phone charger and a wallet-sized empty leather slot, soft kitchen light from a ceiling bulb, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_front_closed",
+  "prompt": "Candid smartphone photo taken by the homeowner: The front door of an ordinary US suburban house, closed, with a porch light on, soft kitchen light from a ceiling bulb, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_frame_latch",
+  "prompt": "Candid smartphone photo taken by the homeowner: A wooden door frame at the latch side, painted white, with a small metal strike plate and two screws, grey early light through a glass door, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_deadbolt",
+  "prompt": "Candid smartphone photo taken by the homeowner: A brass deadbolt and a round knob on a painted front door, close up, a little dust on the metal, overcast morning light from a window, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_window_lock",
+  "prompt": "Candid smartphone photo taken by the homeowner: A double-hung window lock on the inside of a window frame, close up, a faint smudge on the glass, flat daylight from a porch, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_sash_hinge",
+  "prompt": "Candid smartphone photo taken by the homeowner: Hinge pins on a window sash, close up, slightly rusty, soft kitchen light from a ceiling bulb, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_drawer_empty",
+  "prompt": "Candid smartphone photo taken by the homeowner: A kitchen drawer pulled out and empty, close up, a dish towel folded in the corner, grey early light through a glass door, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_receipts_table",
+  "prompt": "Candid smartphone photo taken by the homeowner: Paper receipts and a card statement on a wooden table, slightly curled edges, a pen beside them, overcast morning light from a window, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_serial_back",
+  "prompt": "Candid smartphone photo taken by the homeowner: The back of a small electronic gadget, close up, a tiny printed serial number, a hair of dust on the case, flat daylight from a porch, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_fire_box",
+  "prompt": "Candid smartphone photo taken by the homeowner: A grey fireproof document box, closed, on a shelf in a home office, soft kitchen light from a ceiling bulb, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_decl_page",
+  "prompt": "Candid smartphone photo taken by the homeowner: A printed declarations page with a row of boxes, lying flat on a desk beside a pen, grey early light through a glass door, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_police_form",
+  "prompt": "Candid smartphone photo taken by the homeowner: A blank police report form on a clipboard on a porch railing, a pen clipped to it, overcast morning light from a window, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_strike_close",
+  "prompt": "Candid smartphone photo taken by the homeowner: A metal strike plate on a wooden door frame, close, a light scrape on it and one screw slightly raised, flat daylight from a porch, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_screw_pile",
+  "prompt": "Candid smartphone photo taken by the homeowner: A small pile of wood screws, short and long, on a porch step, soft kitchen light from a ceiling bulb, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_reinforce",
+  "prompt": "Candid smartphone photo taken by the homeowner: A metal reinforcement plate on the inside of a wooden door frame, screws visible, a little sawdust on the floor, grey early light through a glass door, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_window_crack",
+  "prompt": "Candid smartphone photo taken by the homeowner: A window glass with a fine crack, close up, a dusty sill below it, overcast morning light from a window, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_garage_side",
+  "prompt": "Candid smartphone photo taken by the homeowner: A garage side door with a plain knob, closed, a bicycle leaning on the wall beside it, flat daylight from a porch, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_doormat_splinters",
+  "prompt": "Candid smartphone photo taken by the homeowner: A doormat on a front porch with a few small wood splinters on it, soft kitchen light from a ceiling bulb, the frame a little tilted. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_cupboard_inside",
+  "prompt": "Candid smartphone photo taken by the homeowner: The inside of a kitchen cupboard door with a small handwritten note taped to it, grey early light through a glass door, something cut at the edge of the frame. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_notebook_list",
+  "prompt": "Candid smartphone photo taken by the homeowner: A spiral notebook open to a handwritten list of household items, a pen beside it, overcast morning light from a window, a window reflection across the glass. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ },
+ {
+  "name": "det_bill_envelope",
+  "prompt": "Candid smartphone photo taken by the homeowner: An unopened envelope from an insurance company on a kitchen counter, flat daylight from a porch, mixed light from a window and a ceiling bulb. Ordinary lived-in house, everyday clutter nearby, no people in the frame, no readable text, nothing blurred out."
+ }
+]

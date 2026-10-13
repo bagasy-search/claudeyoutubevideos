@@ -1,0 +1,1833 @@
+{
+ "total": 1134.895,
+ "avatarEnd": 1134.895,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 9.233333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S1",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kneel_door_v2.jpg"
+  },
+  {
+   "t": 13.266666666666667,
+   "dur": 7.2,
+   "sec": "S1",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_window_lock.jpg"
+  },
+  {
+   "t": 28.533333333333335,
+   "dur": 3.6,
+   "sec": "S1",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read.jpg"
+  },
+  {
+   "t": 32.13333333333333,
+   "dur": 6.4,
+   "sec": "S1",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_bathrobe.jpg"
+  },
+  {
+   "t": 42.56666666666667,
+   "dur": 7.8,
+   "sec": "S1",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_front_door_morning.jpg"
+  },
+  {
+   "t": 50.36666666666667,
+   "dur": 2.9,
+   "sec": "S1",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_coffee_step.jpg"
+  },
+  {
+   "t": 63.43333333333333,
+   "dur": 7.6,
+   "sec": "S2",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_phone_door_photo.jpg"
+  },
+  {
+   "t": 71.03333333333333,
+   "dur": 3.4,
+   "sec": "S2",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_landing_hallway_photo.jpg"
+  },
+  {
+   "t": 82.5,
+   "dur": 6.2,
+   "sec": "S2",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_dish_towel_drawer.jpg"
+  },
+  {
+   "t": 88.7,
+   "dur": 1.7666666666666666,
+   "sec": "S2",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_van_invoice.jpg"
+  },
+  {
+   "t": 90.48,
+   "dur": 14,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "RayCta",
+   "props": {
+    "title": "The Thousand Dollar Afternoon",
+    "sub": "Three guides and two bonus files",
+    "eyebrow": "SCAN THE CODE",
+    "qr": "img/rkclaim_qr.png",
+    "showQr": true,
+    "shot": "img/rkclaim_landing.png"
+   },
+   "bed": "img/rkclaim_ray_porch_dusk_blur.jpg"
+  },
+  {
+   "t": 104.46666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S3",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_porch_dusk.jpg"
+  },
+  {
+   "t": 108.5,
+   "dur": 4.566666666666666,
+   "sec": "S3",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_letter_denied.jpg"
+  },
+  {
+   "t": 113.06666666666666,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_letter_denied.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "NUMBER 1 OF 7",
+    "label": "Five words on the letter",
+    "color": "danger"
+   },
+   "bed": "img/rkclaim_ray_policy_point_blur.jpg"
+  },
+  {
+   "t": 121.06666666666666,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_letter_hold.jpg"
+  },
+  {
+   "t": 131.66666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_kitchen_table_policy.jpg"
+  },
+  {
+   "t": 135.7,
+   "dur": 1.7333333333333334,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point_v2.jpg"
+  },
+  {
+   "t": 137.43333333333334,
+   "dur": 7.833333333333333,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "NUMBER 1 OF 7 · TO BE FAIR",
+    "myth": "No damage means no burglary",
+    "truth": "It means nobody has written the reasons yet"
+   },
+   "bed": "img/rkclaim_ray_policy_point_blur.jpg"
+  },
+  {
+   "t": 148.26666666666668,
+   "dur": 6.6,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point.jpg"
+  },
+  {
+   "t": 154.86666666666667,
+   "dur": 7.8,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point_v2.jpg"
+  },
+  {
+   "t": 166.7,
+   "dur": 5.2,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point.jpg"
+  },
+  {
+   "t": 171.9,
+   "dur": 5.533333333333333,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point_v2.jpg"
+  },
+  {
+   "t": 177.43333333333334,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FixCostLadder",
+   "props": {
+    "items": [
+     {
+      "label": "Read the page",
+      "cost": "$0",
+      "img": "img/rkclaim_det_policy_theft_highlight.jpg"
+     }
+    ],
+    "active": 0,
+    "kicker": "NUMBER 1 OF 7 · FIX"
+   },
+   "bed": "img/rkclaim_ray_policy_point_blur.jpg"
+  },
+  {
+   "t": 186.83333333333334,
+   "dur": 6.4,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_kitchen_table_policy.jpg"
+  },
+  {
+   "t": 193.23333333333332,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point.jpg"
+  },
+  {
+   "t": 203.83333333333334,
+   "dur": 4.033333333333333,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point_v2.jpg"
+  },
+  {
+   "t": 207.86666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_policy_theft_highlight.jpg"
+  },
+  {
+   "t": 218.93333333333334,
+   "dur": 6.6,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read.jpg"
+  },
+  {
+   "t": 225.53333333333333,
+   "dur": 7.8,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_decl_page.jpg"
+  },
+  {
+   "t": 237.36666666666667,
+   "dur": 5.2,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_policy_theft_highlight.jpg"
+  },
+  {
+   "t": 242.56666666666666,
+   "dur": 8,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point.jpg"
+  },
+  {
+   "t": 253.96666666666667,
+   "dur": 6.4,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_kitchen_table_policy.jpg"
+  },
+  {
+   "t": 260.3666666666667,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point.jpg"
+  },
+  {
+   "t": 270.96666666666664,
+   "dur": 4.033333333333333,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point_v2.jpg"
+  },
+  {
+   "t": 275,
+   "dur": 1.8333333333333333,
+   "sec": "S4",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_policy_theft_highlight.jpg"
+  },
+  {
+   "t": 276.8333333333333,
+   "dur": 3.2,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_tenant.jpg"
+  },
+  {
+   "t": 281.73333333333335,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_decl_page.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "NUMBER 2 OF 7",
+    "label": "The declarations page"
+   },
+   "bed": "img/rkclaim_ray_tenant_blur.jpg"
+  },
+  {
+   "t": 289.73333333333335,
+   "dur": 4.033333333333333,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_tenant_v2.jpg"
+  },
+  {
+   "t": 293.76666666666665,
+   "dur": 8.066666666666666,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_decl_page.jpg"
+  },
+  {
+   "t": 304.8333333333333,
+   "dur": 6.6,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read.jpg"
+  },
+  {
+   "t": 311.43333333333334,
+   "dur": 7.8,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_decl_page.jpg"
+  },
+  {
+   "t": 324.2,
+   "dur": 6.733333333333333,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Owner form",
+    "leftValue": "Check the theft words",
+    "rightLabel": "Renters form",
+    "rightValue": "Check the endorsement",
+    "verdict": "Read the one you actually have."
+   },
+   "bed": "img/rkclaim_ray_tenant_blur.jpg"
+  },
+  {
+   "t": 330.93333333333334,
+   "dur": 8,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_decl_page.jpg"
+  },
+  {
+   "t": 338.93333333333334,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_tenant.jpg"
+  },
+  {
+   "t": 348.73333333333335,
+   "dur": 3.2,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_insurance_envelope.jpg"
+  },
+  {
+   "t": 351.93333333333334,
+   "dur": 7.4,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read_v2.jpg"
+  },
+  {
+   "t": 363.3666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_tenant_v2.jpg"
+  },
+  {
+   "t": 371.43333333333334,
+   "dur": 3,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_decl_page.jpg"
+  },
+  {
+   "t": 381.03333333333336,
+   "dur": 3.6666666666666665,
+   "sec": "S5",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_owner_photo.jpg"
+  },
+  {
+   "t": 384.7,
+   "dur": 3.2,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_owner_photo.jpg"
+  },
+  {
+   "t": 387.9,
+   "dur": 1.2666666666666666,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_dish_towel_drawer.jpg"
+  },
+  {
+   "t": 389.1666666666667,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_phone_door_photo.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "NUMBER 3 OF 7",
+    "label": "Photograph it first",
+    "sub": "Before anything is cleaned."
+   },
+   "bed": "img/rkclaim_ray_owner_photo_blur.jpg"
+  },
+  {
+   "t": 401.2,
+   "dur": 8.066666666666666,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_film_room.jpg"
+  },
+  {
+   "t": 409.26666666666665,
+   "dur": 3,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_film_room_v2.jpg"
+  },
+  {
+   "t": 418.8666666666667,
+   "dur": 7.8,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_front_closed.jpg"
+  },
+  {
+   "t": 426.6666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_frame_point.jpg"
+  },
+  {
+   "t": 435.9,
+   "dur": 8,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_landing_hallway_photo.jpg"
+  },
+  {
+   "t": 443.9,
+   "dur": 3.4,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_frame_point_v2.jpg"
+  },
+  {
+   "t": 453.7,
+   "dur": 3.8333333333333335,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_receipt_serial_back.jpg"
+  },
+  {
+   "t": 457.53333333333336,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_strike_close.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "NUMBER 3 OF 7",
+    "label": "Frame, plate, latch",
+    "color": "danger"
+   },
+   "bed": "img/rkclaim_ray_owner_photo_blur.jpg"
+  },
+  {
+   "t": 465.53333333333336,
+   "dur": 4.033333333333333,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_dresser_watch_tray.jpg"
+  },
+  {
+   "t": 477.6333333333333,
+   "dur": 3,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_owner_photo.jpg"
+  },
+  {
+   "t": 480.6333333333333,
+   "dur": 6.6,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_porch_step_splinters.jpg"
+  },
+  {
+   "t": 495.03333333333336,
+   "dur": 4.033333333333333,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_sliding_patio_track.jpg"
+  },
+  {
+   "t": 499.06666666666666,
+   "dur": 5.2,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_coffee_step.jpg"
+  },
+  {
+   "t": 512.2666666666667,
+   "dur": 3.4,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_porch_flower_pot.jpg"
+  },
+  {
+   "t": 515.6666666666666,
+   "dur": 6.4,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_strike_short_vs_long.jpg"
+  },
+  {
+   "t": 525.2666666666667,
+   "dur": 7.4,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_bedside_table_empty.jpg"
+  },
+  {
+   "t": 532.6666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S6",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_deadbolt.jpg"
+  },
+  {
+   "t": 543.7666666666667,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_police_form.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "NUMBER 4 OF 7",
+    "label": "Get the report number"
+   },
+   "bed": "img/rkclaim_ray_clipboard_blur.jpg"
+  },
+  {
+   "t": 551.7666666666667,
+   "dur": 7.4,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read.jpg"
+  },
+  {
+   "t": 559.1666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_clipboard.jpg"
+  },
+  {
+   "t": 571.2666666666667,
+   "dur": 3,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_cupboard_note.jpg"
+  },
+  {
+   "t": 574.2666666666667,
+   "dur": 6.6,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_report_note_fridge.jpg"
+  },
+  {
+   "t": 588.6666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_report_note_fridge.jpg"
+  },
+  {
+   "t": 592.7,
+   "dur": 5.2,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_clipboard.jpg"
+  },
+  {
+   "t": 603.6333333333333,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_report_note_fridge.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "NUMBER 4 OF 7",
+    "label": "Write it where you will see it"
+   },
+   "bed": "img/rkclaim_ray_clipboard_blur.jpg"
+  },
+  {
+   "t": 610.6333333333333,
+   "dur": 3.4,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_cupboard_note.jpg"
+  },
+  {
+   "t": 614.0333333333333,
+   "dur": 6.4,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_cupboard_note_v2.jpg"
+  },
+  {
+   "t": 623.6333333333333,
+   "dur": 4.2,
+   "sec": "S7",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_receipt_serial_back.jpg"
+  },
+  {
+   "t": 627.8333333333334,
+   "dur": 4.366666666666666,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_receipts.jpg"
+  },
+  {
+   "t": 632.2,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_receipts_table.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "NUMBER 5 OF 7",
+    "label": "Receipts first",
+    "sub": "Then the card statement."
+   },
+   "bed": "img/rkclaim_ray_receipts_blur.jpg"
+  },
+  {
+   "t": 640.2,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_receipts_v2.jpg"
+  },
+  {
+   "t": 652.3,
+   "dur": 3,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_folder_v2.jpg"
+  },
+  {
+   "t": 655.3,
+   "dur": 6.6,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_cupboard_list.jpg"
+  },
+  {
+   "t": 669.7,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_serial_v2.jpg"
+  },
+  {
+   "t": 673.7333333333333,
+   "dur": 5.2,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_receipts_table.jpg"
+  },
+  {
+   "t": 686.9333333333333,
+   "dur": 3.4,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_fire_box.jpg"
+  },
+  {
+   "t": 690.3333333333334,
+   "dur": 6.4,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_receipts.jpg"
+  },
+  {
+   "t": 700.4666666666667,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_serial_back.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "NUMBER 5 OF 7",
+    "label": "Serial number on the back"
+   },
+   "bed": "img/rkclaim_ray_receipts_blur.jpg"
+  },
+  {
+   "t": 708.4666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_serial.jpg"
+  },
+  {
+   "t": 712.5,
+   "dur": 8.066666666666666,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_folder.jpg"
+  },
+  {
+   "t": 723.5666666666667,
+   "dur": 6.6,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_folder_v2.jpg"
+  },
+  {
+   "t": 730.1666666666666,
+   "dur": 8.033333333333333,
+   "sec": "S8",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_notebook_list.jpg"
+  },
+  {
+   "t": 738.2,
+   "dur": 3.3,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_window_hinge.jpg"
+  },
+  {
+   "t": 741.5,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_sash_hinge.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "NUMBER 6 OF 7",
+    "label": "Nothing was broken",
+    "color": "danger"
+   },
+   "bed": "img/rkclaim_ray_window_hinge_blur.jpg"
+  },
+  {
+   "t": 756.9,
+   "dur": 4.033333333333333,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_window_lock.jpg"
+  },
+  {
+   "t": 760.9333333333333,
+   "dur": 8.066666666666666,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_window_lock_v2.jpg"
+  },
+  {
+   "t": 772,
+   "dur": 6.6,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_owner_photo_v2.jpg"
+  },
+  {
+   "t": 778.6,
+   "dur": 7.8,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_insurance_envelope.jpg"
+  },
+  {
+   "t": 790.4333333333333,
+   "dur": 5.2,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_kitchen_table_policy.jpg"
+  },
+  {
+   "t": 795.6333333333333,
+   "dur": 8,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_window_hinge.jpg"
+  },
+  {
+   "t": 807.0333333333333,
+   "dur": 6.4,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_letter_denied.jpg"
+  },
+  {
+   "t": 813.4333333333333,
+   "dur": 3.2,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_letter_hold.jpg"
+  },
+  {
+   "t": 824.0333333333333,
+   "dur": 3.1,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_window_lock_v2.jpg"
+  },
+  {
+   "t": 827.1333333333333,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "BigStat",
+   "props": {
+    "value": "60%",
+    "unit": "of 422 offenders",
+    "caption": "would look for another house if there was an alarm. UNC Charlotte, 2012.",
+    "tone": "brass"
+   },
+   "bed": "img/rkclaim_ray_window_hinge_blur.jpg"
+  },
+  {
+   "t": 834.1333333333333,
+   "dur": 3.1,
+   "sec": "S9",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_sash_hinge.jpg"
+  },
+  {
+   "t": 841.5333333333333,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_strike_short_vs_long.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "NUMBER 7 OF 7",
+    "label": "Short screws vs three inch",
+    "color": "danger"
+   },
+   "bed": "img/rkclaim_ray_screws_blur.jpg"
+  },
+  {
+   "t": 853.5666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_strike_short_vs_long.jpg"
+  },
+  {
+   "t": 861.6333333333333,
+   "dur": 3,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_measure.jpg"
+  },
+  {
+   "t": 871.2333333333333,
+   "dur": 7.8,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_strike_close.jpg"
+  },
+  {
+   "t": 879.0333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_screw_pile.jpg"
+  },
+  {
+   "t": 888.0666666666667,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "FixCostLadder",
+   "props": {
+    "items": [
+     {
+      "label": "Read the page",
+      "cost": "$0",
+      "img": "img/rkclaim_det_policy_theft_highlight.jpg"
+     },
+     {
+      "label": "Longer screws",
+      "cost": "about $25",
+      "img": "img/rkclaim_det_screw_pile.jpg"
+     },
+     {
+      "label": "Reinforcement kit",
+      "cost": "about $60",
+      "img": "img/rkclaim_det_reinforce.jpg"
+     }
+    ],
+    "active": 1,
+    "kicker": "NUMBER 7 OF 7 · FIX TIERS"
+   },
+   "bed": "img/rkclaim_ray_screws_blur.jpg"
+  },
+  {
+   "t": 895.0666666666667,
+   "dur": 8,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_screws.jpg"
+  },
+  {
+   "t": 903.0666666666667,
+   "dur": 3.4,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_frame_point.jpg"
+  },
+  {
+   "t": 912.8666666666667,
+   "dur": 3.2,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_measure.jpg"
+  },
+  {
+   "t": 916.0666666666667,
+   "dur": 7.4,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_screw_pile.jpg"
+  },
+  {
+   "t": 927.5,
+   "dur": 8.066666666666666,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_measure_v2.jpg"
+  },
+  {
+   "t": 935.5666666666667,
+   "dur": 3,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_frame_point_v2.jpg"
+  },
+  {
+   "t": 945.1666666666666,
+   "dur": 7.8,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_screws.jpg"
+  },
+  {
+   "t": 952.9666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_screws_v2.jpg"
+  },
+  {
+   "t": 957,
+   "dur": 5.733333333333333,
+   "sec": "S10",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read.jpg"
+  },
+  {
+   "t": 962.7333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kitchen_bills.jpg"
+  },
+  {
+   "t": 966.7666666666667,
+   "dur": 7.6,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kneel_door_v2.jpg"
+  },
+  {
+   "t": 974.3666666666667,
+   "dur": 3.4,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kitchen_bills_v2.jpg"
+  },
+  {
+   "t": 977.7666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_bill_envelope.jpg"
+  },
+  {
+   "t": 985.8333333333334,
+   "dur": 1.8,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_letter_denied.jpg"
+  },
+  {
+   "t": 987.6333333333333,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkclaim_det_kitchen_table_policy.jpg",
+    "at": [
+     50,
+     45
+    ],
+    "kicker": "THE MYTH",
+    "label": "A denial is not the end",
+    "sub": "Ask for the reasons in writing."
+   },
+   "bed": "img/rkclaim_ray_kitchen_bills_blur.jpg"
+  },
+  {
+   "t": 995.6333333333333,
+   "dur": 2.9,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kitchen_bills.jpg"
+  },
+  {
+   "t": 998.5333333333333,
+   "dur": 7.9,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kitchen_bills_v2.jpg"
+  },
+  {
+   "t": 1006.4333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_bill_envelope.jpg"
+  },
+  {
+   "t": 1010.4666666666667,
+   "dur": 3.6,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_report_note_fridge.jpg"
+  },
+  {
+   "t": 1014.0666666666667,
+   "dur": 6.8,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point.jpg"
+  },
+  {
+   "t": 1020.8666666666667,
+   "dur": 8,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_letter_hold.jpg"
+  },
+  {
+   "t": 1028.8666666666666,
+   "dur": 4.6,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_letter_hold_v2.jpg"
+  },
+  {
+   "t": 1033.4666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kitchen_bills.jpg"
+  },
+  {
+   "t": 1037.5,
+   "dur": 7.6,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read.jpg"
+  },
+  {
+   "t": 1045.1,
+   "dur": 3.4,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kitchen_bills_v2.jpg"
+  },
+  {
+   "t": 1048.5,
+   "dur": 4.333333333333333,
+   "sec": "S11",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_bill_envelope.jpg"
+  },
+  {
+   "t": 1052.8333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_front_door_morning.jpg"
+  },
+  {
+   "t": 1056.8666666666666,
+   "dur": 7.8,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_read_v2.jpg"
+  },
+  {
+   "t": 1064.6666666666667,
+   "dur": 3.3,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_receipt_serial_back.jpg"
+  },
+  {
+   "t": 1067.9666666666667,
+   "dur": 7.6,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_laptop_box_empty.jpg"
+  },
+  {
+   "t": 1075.5666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_front_door_morning.jpg"
+  },
+  {
+   "t": 1079.6,
+   "dur": 6.2,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_policy_point_v2.jpg"
+  },
+  {
+   "t": 1085.8,
+   "dur": 3.8,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_front_door_morning.jpg"
+  },
+  {
+   "t": 1089.6,
+   "dur": 6.366666666666666,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_porch_lamp_glass.jpg"
+  },
+  {
+   "t": 1095.98,
+   "dur": 10,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "RayCta",
+   "props": {
+    "title": "Scan the code again",
+    "eyebrow": "THE COMPLETE EDITION",
+    "qr": "img/rkclaim_qr.png",
+    "showQr": true,
+    "sub": "Three guides and two bonus files",
+    "shot": "img/rkclaim_landing.png"
+   },
+   "bed": "img/rkclaim_det_front_door_morning_blur.jpg"
+  },
+  {
+   "t": 1105.9666666666667,
+   "dur": 7,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kneel_door.jpg"
+  },
+  {
+   "t": 1112.9666666666667,
+   "dur": 3.1,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_front_door_morning.jpg"
+  },
+  {
+   "t": 1116.0666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_porch_lamp_glass.jpg"
+  },
+  {
+   "t": 1120.1,
+   "dur": 6.6,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_kneel_door_v2.jpg"
+  },
+  {
+   "t": 1126.7,
+   "dur": 4.033333333333333,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_front_door_morning.jpg"
+  },
+  {
+   "t": 1130.7333333333333,
+   "dur": 4.133333333333334,
+   "sec": "S12",
+   "lugar": "still",
+   "kind": "imagen",
+   "asset": "img/rkclaim_det_porch_lamp_glass.jpg"
+  },
+  {
+   "t": 0,
+   "dur": 9.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 20.466666666666665,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 38.53333333333333,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 53.266666666666666,
+   "dur": 10.166666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 74.43333333333334,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 90.46666666666667,
+   "dur": 14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 124.26666666666667,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 145.26666666666668,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 162.66666666666666,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 183.43333333333334,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 196.43333333333334,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 215.93333333333334,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 233.33333333333334,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 250.56666666666666,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 263.56666666666666,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 280.03333333333336,
+   "dur": 1.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 301.8333333333333,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 319.23333333333335,
+   "dur": 4.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 342.3333333333333,
+   "dur": 6.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 359.3333333333333,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 374.43333333333334,
+   "dur": 6.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 397.1666666666667,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 412.26666666666665,
+   "dur": 6.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 430.7,
+   "dur": 5.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 447.3,
+   "dur": 6.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 469.56666666666666,
+   "dur": 8.066666666666666,
+   "sec": "S6",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_owner_photo.jpg",
+   "lugar": "still",
+   "_from": "avatar_recortado"
+  },
+  {
+   "t": 487.23333333333335,
+   "dur": 7.8,
+   "sec": "S6",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_owner_photo_v2.jpg",
+   "lugar": "still",
+   "_from": "avatar_recortado"
+  },
+  {
+   "t": 504.26666666666665,
+   "dur": 8,
+   "sec": "S6",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_frame_point.jpg",
+   "lugar": "still",
+   "_from": "avatar_recortado"
+  },
+  {
+   "t": 522.0666666666667,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 536.7,
+   "dur": 7.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 563.2,
+   "dur": 8.066666666666666,
+   "sec": "S6",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_frame_point_v2.jpg",
+   "lugar": "still",
+   "_from": "avatar_recortado"
+  },
+  {
+   "t": 580.8666666666667,
+   "dur": 7.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 597.9,
+   "dur": 5.733333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 620.4333333333333,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 644.2333333333333,
+   "dur": 8.066666666666666,
+   "sec": "S7",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_clipboard.jpg",
+   "lugar": "still",
+   "_from": "avatar_recortado"
+  },
+  {
+   "t": 661.9,
+   "dur": 7.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 678.9333333333333,
+   "dur": 8,
+   "sec": "S8",
+   "kind": "imagen",
+   "asset": "img/rkclaim_ray_receipts.jpg",
+   "lugar": "still",
+   "_from": "avatar_recortado"
+  },
+  {
+   "t": 696.7333333333333,
+   "dur": 3.7333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 720.5666666666667,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 749.5,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 769,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 786.4,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 803.6333333333333,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 816.6333333333333,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 837.2333333333333,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 849.5333333333333,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 864.6333333333333,
+   "dur": 6.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 883.0666666666667,
+   "dur": 5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 906.4666666666667,
+   "dur": 6.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 923.4666666666667,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 938.5666666666667,
+   "dur": 6.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1095.9666666666667,
+   "dur": 10,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  }
+ ]
+}

@@ -1,0 +1,1446 @@
+[
+ {
+  "t": 0,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 9.233333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 13.266666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 20.466666666666665,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 28.533333333333335,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 32.13333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 38.53333333333333,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 42.56666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 50.36666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 53.266666666666666,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 63.43333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 71.03333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 74.43333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 82.5,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 88.7,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 90.46666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 104.46666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 108.5,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 113.06666666666666,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 121.06666666666666,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 124.26666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 131.66666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 135.7,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 137.43333333333334,
+  "kind": "componente",
+  "comp": "MythTruth",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 145.26666666666668,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 148.26666666666668,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 154.86666666666667,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 162.66666666666666,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 166.7,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 171.9,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 177.43333333333334,
+  "kind": "componente",
+  "comp": "FixCostLadder",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 183.43333333333334,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 186.83333333333334,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 193.23333333333332,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 196.43333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 203.83333333333334,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 207.86666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 215.93333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 218.93333333333334,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 225.53333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 233.33333333333334,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 237.36666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 242.56666666666666,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 250.56666666666666,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 253.96666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 260.3666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 263.56666666666666,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 270.96666666666664,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 275,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 276.8333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 280.03333333333336,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 281.73333333333335,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 289.73333333333335,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 293.76666666666665,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 301.8333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 304.8333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 311.43333333333334,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 319.23333333333335,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 324.2,
+  "kind": "componente",
+  "comp": "SplitVs",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 330.93333333333334,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 338.93333333333334,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 342.3333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 348.73333333333335,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 351.93333333333334,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 359.3333333333333,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 363.3666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 371.43333333333334,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 374.43333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 381.03333333333336,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 384.7,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 387.9,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 389.1666666666667,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 397.1666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 401.2,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 409.26666666666665,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 412.26666666666665,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 418.8666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 426.6666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 430.7,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 435.9,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 443.9,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 447.3,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 453.7,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 457.53333333333336,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 465.53333333333336,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 469.56666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 477.6333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 480.6333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 487.23333333333335,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 495.03333333333336,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 499.06666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 504.26666666666665,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 512.2666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 515.6666666666666,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 522.0666666666667,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 525.2666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 532.6666666666666,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 536.7,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 543.7666666666667,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 551.7666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 559.1666666666666,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 563.2,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 571.2666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 574.2666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 580.8666666666667,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 588.6666666666666,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 592.7,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 597.9,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 603.6333333333333,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 610.6333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 614.0333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 620.4333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 623.6333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 627.8333333333334,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 632.2,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 640.2,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 644.2333333333333,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 652.3,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 655.3,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 661.9,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 669.7,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 673.7333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 678.9333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 686.9333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 690.3333333333334,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 696.7333333333333,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 700.4666666666667,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 708.4666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 712.5,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 720.5666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 723.5666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 730.1666666666666,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 738.2,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 741.5,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "wipe",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 749.5,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 756.9,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 760.9333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 769,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 772,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 778.6,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 786.4,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 790.4333333333333,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 795.6333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 803.6333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 807.0333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 813.4333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 816.6333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 824.0333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 827.1333333333333,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 834.1333333333333,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 837.2333333333333,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 841.5333333333333,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 849.5333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 853.5666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 861.6333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 864.6333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 871.2333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 879.0333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 883.0666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 888.0666666666667,
+  "kind": "componente",
+  "comp": "FixCostLadder",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 895.0666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 903.0666666666667,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 906.4666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 912.8666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 916.0666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 923.4666666666667,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 927.5,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 935.5666666666667,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 938.5666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 945.1666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 952.9666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 957,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 962.7333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 966.7666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 974.3666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 977.7666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 985.8333333333334,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 987.6333333333333,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 995.6333333333333,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 998.5333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1006.4333333333333,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1010.4666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1014.0666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1020.8666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1028.8666666666666,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1033.4666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1037.5,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1045.1,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1048.5,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1052.8333333333333,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1056.8666666666666,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1064.6666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1067.9666666666667,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1075.5666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1079.6,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1085.8,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1089.6,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1095.9666666666667,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1105.9666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1112.9666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1116.0666666666666,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1120.1,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1126.7,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1130.7333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 0
+ }
+]

@@ -1,0 +1,854 @@
+[
+ {
+  "key": "imagen_9233",
+  "src": "img/rkclaim_ray_kneel_door_v2.jpg",
+  "start": 9.233333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_13267",
+  "src": "img/rkclaim_det_window_lock.jpg",
+  "start": 13.266666666666667,
+  "dur": 7.2
+ },
+ {
+  "key": "imagen_28533",
+  "src": "img/rkclaim_ray_policy_read.jpg",
+  "start": 28.533333333333335,
+  "dur": 3.6
+ },
+ {
+  "key": "imagen_32133",
+  "src": "img/rkclaim_ray_bathrobe.jpg",
+  "start": 32.13333333333333,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_42567",
+  "src": "img/rkclaim_det_front_door_morning.jpg",
+  "start": 42.56666666666667,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_50367",
+  "src": "img/rkclaim_ray_coffee_step.jpg",
+  "start": 50.36666666666667,
+  "dur": 2.9
+ },
+ {
+  "key": "imagen_63433",
+  "src": "img/rkclaim_det_phone_door_photo.jpg",
+  "start": 63.43333333333333,
+  "dur": 7.6
+ },
+ {
+  "key": "imagen_71033",
+  "src": "img/rkclaim_det_landing_hallway_photo.jpg",
+  "start": 71.03333333333333,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_82500",
+  "src": "img/rkclaim_det_dish_towel_drawer.jpg",
+  "start": 82.5,
+  "dur": 6.2
+ },
+ {
+  "key": "imagen_88700",
+  "src": "img/rkclaim_ray_van_invoice.jpg",
+  "start": 88.7,
+  "dur": 1.7666666666666666
+ },
+ {
+  "key": "imagen_104467",
+  "src": "img/rkclaim_ray_porch_dusk.jpg",
+  "start": 104.46666666666667,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_108500",
+  "src": "img/rkclaim_det_letter_denied.jpg",
+  "start": 108.5,
+  "dur": 4.566666666666666
+ },
+ {
+  "key": "imagen_121067",
+  "src": "img/rkclaim_ray_letter_hold.jpg",
+  "start": 121.06666666666666,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_131667",
+  "src": "img/rkclaim_det_kitchen_table_policy.jpg",
+  "start": 131.66666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_135700",
+  "src": "img/rkclaim_ray_policy_point_v2.jpg",
+  "start": 135.7,
+  "dur": 1.7333333333333334
+ },
+ {
+  "key": "imagen_148267",
+  "src": "img/rkclaim_ray_policy_point.jpg",
+  "start": 148.26666666666668,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_154867",
+  "src": "img/rkclaim_ray_policy_point_v2.jpg",
+  "start": 154.86666666666667,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_166700",
+  "src": "img/rkclaim_ray_policy_point.jpg",
+  "start": 166.7,
+  "dur": 5.2
+ },
+ {
+  "key": "imagen_171900",
+  "src": "img/rkclaim_ray_policy_point_v2.jpg",
+  "start": 171.9,
+  "dur": 5.533333333333333
+ },
+ {
+  "key": "imagen_186833",
+  "src": "img/rkclaim_det_kitchen_table_policy.jpg",
+  "start": 186.83333333333334,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_193233",
+  "src": "img/rkclaim_ray_policy_point.jpg",
+  "start": 193.23333333333332,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_203833",
+  "src": "img/rkclaim_ray_policy_point_v2.jpg",
+  "start": 203.83333333333334,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_207867",
+  "src": "img/rkclaim_det_policy_theft_highlight.jpg",
+  "start": 207.86666666666667,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_218933",
+  "src": "img/rkclaim_ray_policy_read.jpg",
+  "start": 218.93333333333334,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_225533",
+  "src": "img/rkclaim_det_decl_page.jpg",
+  "start": 225.53333333333333,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_237367",
+  "src": "img/rkclaim_det_policy_theft_highlight.jpg",
+  "start": 237.36666666666667,
+  "dur": 5.2
+ },
+ {
+  "key": "imagen_242567",
+  "src": "img/rkclaim_ray_policy_point.jpg",
+  "start": 242.56666666666666,
+  "dur": 8
+ },
+ {
+  "key": "imagen_253967",
+  "src": "img/rkclaim_det_kitchen_table_policy.jpg",
+  "start": 253.96666666666667,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_260367",
+  "src": "img/rkclaim_ray_policy_point.jpg",
+  "start": 260.3666666666667,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_270967",
+  "src": "img/rkclaim_ray_policy_point_v2.jpg",
+  "start": 270.96666666666664,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_275000",
+  "src": "img/rkclaim_det_policy_theft_highlight.jpg",
+  "start": 275,
+  "dur": 1.8333333333333333
+ },
+ {
+  "key": "imagen_276833",
+  "src": "img/rkclaim_ray_tenant.jpg",
+  "start": 276.8333333333333,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_289733",
+  "src": "img/rkclaim_ray_tenant_v2.jpg",
+  "start": 289.73333333333335,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_293767",
+  "src": "img/rkclaim_det_decl_page.jpg",
+  "start": 293.76666666666665,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_304833",
+  "src": "img/rkclaim_ray_policy_read.jpg",
+  "start": 304.8333333333333,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_311433",
+  "src": "img/rkclaim_det_decl_page.jpg",
+  "start": 311.43333333333334,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_330933",
+  "src": "img/rkclaim_det_decl_page.jpg",
+  "start": 330.93333333333334,
+  "dur": 8
+ },
+ {
+  "key": "imagen_338933",
+  "src": "img/rkclaim_ray_tenant.jpg",
+  "start": 338.93333333333334,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_348733",
+  "src": "img/rkclaim_det_insurance_envelope.jpg",
+  "start": 348.73333333333335,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_351933",
+  "src": "img/rkclaim_ray_policy_read_v2.jpg",
+  "start": 351.93333333333334,
+  "dur": 7.4
+ },
+ {
+  "key": "imagen_363367",
+  "src": "img/rkclaim_ray_tenant_v2.jpg",
+  "start": 363.3666666666667,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_371433",
+  "src": "img/rkclaim_det_decl_page.jpg",
+  "start": 371.43333333333334,
+  "dur": 3
+ },
+ {
+  "key": "imagen_381033",
+  "src": "img/rkclaim_ray_owner_photo.jpg",
+  "start": 381.03333333333336,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "imagen_384700",
+  "src": "img/rkclaim_ray_owner_photo.jpg",
+  "start": 384.7,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_387900",
+  "src": "img/rkclaim_det_dish_towel_drawer.jpg",
+  "start": 387.9,
+  "dur": 1.2666666666666666
+ },
+ {
+  "key": "imagen_401200",
+  "src": "img/rkclaim_ray_film_room.jpg",
+  "start": 401.2,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_409267",
+  "src": "img/rkclaim_ray_film_room_v2.jpg",
+  "start": 409.26666666666665,
+  "dur": 3
+ },
+ {
+  "key": "imagen_418867",
+  "src": "img/rkclaim_det_front_closed.jpg",
+  "start": 418.8666666666667,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_426667",
+  "src": "img/rkclaim_ray_frame_point.jpg",
+  "start": 426.6666666666667,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_435900",
+  "src": "img/rkclaim_det_landing_hallway_photo.jpg",
+  "start": 435.9,
+  "dur": 8
+ },
+ {
+  "key": "imagen_443900",
+  "src": "img/rkclaim_ray_frame_point_v2.jpg",
+  "start": 443.9,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_453700",
+  "src": "img/rkclaim_det_receipt_serial_back.jpg",
+  "start": 453.7,
+  "dur": 3.8333333333333335
+ },
+ {
+  "key": "imagen_465533",
+  "src": "img/rkclaim_det_dresser_watch_tray.jpg",
+  "start": 465.53333333333336,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_469567",
+  "src": "img/rkclaim_ray_owner_photo.jpg",
+  "start": 469.56666666666666,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_477633",
+  "src": "img/rkclaim_ray_owner_photo.jpg",
+  "start": 477.6333333333333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_480633",
+  "src": "img/rkclaim_det_porch_step_splinters.jpg",
+  "start": 480.6333333333333,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_487233",
+  "src": "img/rkclaim_ray_owner_photo_v2.jpg",
+  "start": 487.23333333333335,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_495033",
+  "src": "img/rkclaim_det_sliding_patio_track.jpg",
+  "start": 495.03333333333336,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_499067",
+  "src": "img/rkclaim_ray_coffee_step.jpg",
+  "start": 499.06666666666666,
+  "dur": 5.2
+ },
+ {
+  "key": "imagen_504267",
+  "src": "img/rkclaim_ray_frame_point.jpg",
+  "start": 504.26666666666665,
+  "dur": 8
+ },
+ {
+  "key": "imagen_512267",
+  "src": "img/rkclaim_det_porch_flower_pot.jpg",
+  "start": 512.2666666666667,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_515667",
+  "src": "img/rkclaim_det_strike_short_vs_long.jpg",
+  "start": 515.6666666666666,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_525267",
+  "src": "img/rkclaim_det_bedside_table_empty.jpg",
+  "start": 525.2666666666667,
+  "dur": 7.4
+ },
+ {
+  "key": "imagen_532667",
+  "src": "img/rkclaim_det_deadbolt.jpg",
+  "start": 532.6666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_551767",
+  "src": "img/rkclaim_ray_policy_read.jpg",
+  "start": 551.7666666666667,
+  "dur": 7.4
+ },
+ {
+  "key": "imagen_559167",
+  "src": "img/rkclaim_ray_clipboard.jpg",
+  "start": 559.1666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_563200",
+  "src": "img/rkclaim_ray_frame_point_v2.jpg",
+  "start": 563.2,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_571267",
+  "src": "img/rkclaim_ray_cupboard_note.jpg",
+  "start": 571.2666666666667,
+  "dur": 3
+ },
+ {
+  "key": "imagen_574267",
+  "src": "img/rkclaim_det_report_note_fridge.jpg",
+  "start": 574.2666666666667,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_588667",
+  "src": "img/rkclaim_det_report_note_fridge.jpg",
+  "start": 588.6666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_592700",
+  "src": "img/rkclaim_ray_clipboard.jpg",
+  "start": 592.7,
+  "dur": 5.2
+ },
+ {
+  "key": "imagen_610633",
+  "src": "img/rkclaim_ray_cupboard_note.jpg",
+  "start": 610.6333333333333,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_614033",
+  "src": "img/rkclaim_ray_cupboard_note_v2.jpg",
+  "start": 614.0333333333333,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_623633",
+  "src": "img/rkclaim_det_receipt_serial_back.jpg",
+  "start": 623.6333333333333,
+  "dur": 4.2
+ },
+ {
+  "key": "imagen_627833",
+  "src": "img/rkclaim_ray_receipts.jpg",
+  "start": 627.8333333333334,
+  "dur": 4.366666666666666
+ },
+ {
+  "key": "imagen_640200",
+  "src": "img/rkclaim_ray_receipts_v2.jpg",
+  "start": 640.2,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_644233",
+  "src": "img/rkclaim_ray_clipboard.jpg",
+  "start": 644.2333333333333,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_652300",
+  "src": "img/rkclaim_ray_folder_v2.jpg",
+  "start": 652.3,
+  "dur": 3
+ },
+ {
+  "key": "imagen_655300",
+  "src": "img/rkclaim_det_cupboard_list.jpg",
+  "start": 655.3,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_669700",
+  "src": "img/rkclaim_ray_serial_v2.jpg",
+  "start": 669.7,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_673733",
+  "src": "img/rkclaim_det_receipts_table.jpg",
+  "start": 673.7333333333333,
+  "dur": 5.2
+ },
+ {
+  "key": "imagen_678933",
+  "src": "img/rkclaim_ray_receipts.jpg",
+  "start": 678.9333333333333,
+  "dur": 8
+ },
+ {
+  "key": "imagen_686933",
+  "src": "img/rkclaim_det_fire_box.jpg",
+  "start": 686.9333333333333,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_690333",
+  "src": "img/rkclaim_ray_receipts.jpg",
+  "start": 690.3333333333334,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_708467",
+  "src": "img/rkclaim_ray_serial.jpg",
+  "start": 708.4666666666667,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_712500",
+  "src": "img/rkclaim_ray_folder.jpg",
+  "start": 712.5,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_723567",
+  "src": "img/rkclaim_ray_folder_v2.jpg",
+  "start": 723.5666666666667,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_730167",
+  "src": "img/rkclaim_det_notebook_list.jpg",
+  "start": 730.1666666666666,
+  "dur": 8.033333333333333
+ },
+ {
+  "key": "imagen_738200",
+  "src": "img/rkclaim_ray_window_hinge.jpg",
+  "start": 738.2,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_756900",
+  "src": "img/rkclaim_ray_window_lock.jpg",
+  "start": 756.9,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_760933",
+  "src": "img/rkclaim_ray_window_lock_v2.jpg",
+  "start": 760.9333333333333,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_772000",
+  "src": "img/rkclaim_ray_owner_photo_v2.jpg",
+  "start": 772,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_778600",
+  "src": "img/rkclaim_det_insurance_envelope.jpg",
+  "start": 778.6,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_790433",
+  "src": "img/rkclaim_det_kitchen_table_policy.jpg",
+  "start": 790.4333333333333,
+  "dur": 5.2
+ },
+ {
+  "key": "imagen_795633",
+  "src": "img/rkclaim_ray_window_hinge.jpg",
+  "start": 795.6333333333333,
+  "dur": 8
+ },
+ {
+  "key": "imagen_807033",
+  "src": "img/rkclaim_det_letter_denied.jpg",
+  "start": 807.0333333333333,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_813433",
+  "src": "img/rkclaim_ray_letter_hold.jpg",
+  "start": 813.4333333333333,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_824033",
+  "src": "img/rkclaim_ray_window_lock_v2.jpg",
+  "start": 824.0333333333333,
+  "dur": 3.1
+ },
+ {
+  "key": "imagen_834133",
+  "src": "img/rkclaim_det_sash_hinge.jpg",
+  "start": 834.1333333333333,
+  "dur": 3.1
+ },
+ {
+  "key": "imagen_853567",
+  "src": "img/rkclaim_det_strike_short_vs_long.jpg",
+  "start": 853.5666666666667,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_861633",
+  "src": "img/rkclaim_ray_measure.jpg",
+  "start": 861.6333333333333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_871233",
+  "src": "img/rkclaim_det_strike_close.jpg",
+  "start": 871.2333333333333,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_879033",
+  "src": "img/rkclaim_det_screw_pile.jpg",
+  "start": 879.0333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_895067",
+  "src": "img/rkclaim_ray_screws.jpg",
+  "start": 895.0666666666667,
+  "dur": 8
+ },
+ {
+  "key": "imagen_903067",
+  "src": "img/rkclaim_ray_frame_point.jpg",
+  "start": 903.0666666666667,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_912867",
+  "src": "img/rkclaim_ray_measure.jpg",
+  "start": 912.8666666666667,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_916067",
+  "src": "img/rkclaim_det_screw_pile.jpg",
+  "start": 916.0666666666667,
+  "dur": 7.4
+ },
+ {
+  "key": "imagen_927500",
+  "src": "img/rkclaim_ray_measure_v2.jpg",
+  "start": 927.5,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_935567",
+  "src": "img/rkclaim_ray_frame_point_v2.jpg",
+  "start": 935.5666666666667,
+  "dur": 3
+ },
+ {
+  "key": "imagen_945167",
+  "src": "img/rkclaim_ray_screws.jpg",
+  "start": 945.1666666666666,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_952967",
+  "src": "img/rkclaim_ray_screws_v2.jpg",
+  "start": 952.9666666666667,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_957000",
+  "src": "img/rkclaim_ray_policy_read.jpg",
+  "start": 957,
+  "dur": 5.733333333333333
+ },
+ {
+  "key": "imagen_962733",
+  "src": "img/rkclaim_ray_kitchen_bills.jpg",
+  "start": 962.7333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_966767",
+  "src": "img/rkclaim_ray_kneel_door_v2.jpg",
+  "start": 966.7666666666667,
+  "dur": 7.6
+ },
+ {
+  "key": "imagen_974367",
+  "src": "img/rkclaim_ray_kitchen_bills_v2.jpg",
+  "start": 974.3666666666667,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_977767",
+  "src": "img/rkclaim_det_bill_envelope.jpg",
+  "start": 977.7666666666667,
+  "dur": 8.066666666666666
+ },
+ {
+  "key": "imagen_985833",
+  "src": "img/rkclaim_det_letter_denied.jpg",
+  "start": 985.8333333333334,
+  "dur": 1.8
+ },
+ {
+  "key": "imagen_995633",
+  "src": "img/rkclaim_ray_kitchen_bills.jpg",
+  "start": 995.6333333333333,
+  "dur": 2.9
+ },
+ {
+  "key": "imagen_998533",
+  "src": "img/rkclaim_ray_kitchen_bills_v2.jpg",
+  "start": 998.5333333333333,
+  "dur": 7.9
+ },
+ {
+  "key": "imagen_1006433",
+  "src": "img/rkclaim_det_bill_envelope.jpg",
+  "start": 1006.4333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_1010467",
+  "src": "img/rkclaim_det_report_note_fridge.jpg",
+  "start": 1010.4666666666667,
+  "dur": 3.6
+ },
+ {
+  "key": "imagen_1014067",
+  "src": "img/rkclaim_ray_policy_point.jpg",
+  "start": 1014.0666666666667,
+  "dur": 6.8
+ },
+ {
+  "key": "imagen_1020867",
+  "src": "img/rkclaim_ray_letter_hold.jpg",
+  "start": 1020.8666666666667,
+  "dur": 8
+ },
+ {
+  "key": "imagen_1028867",
+  "src": "img/rkclaim_ray_letter_hold_v2.jpg",
+  "start": 1028.8666666666666,
+  "dur": 4.6
+ },
+ {
+  "key": "imagen_1033467",
+  "src": "img/rkclaim_ray_kitchen_bills.jpg",
+  "start": 1033.4666666666667,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_1037500",
+  "src": "img/rkclaim_ray_policy_read.jpg",
+  "start": 1037.5,
+  "dur": 7.6
+ },
+ {
+  "key": "imagen_1045100",
+  "src": "img/rkclaim_ray_kitchen_bills_v2.jpg",
+  "start": 1045.1,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_1048500",
+  "src": "img/rkclaim_det_bill_envelope.jpg",
+  "start": 1048.5,
+  "dur": 4.333333333333333
+ },
+ {
+  "key": "imagen_1052833",
+  "src": "img/rkclaim_det_front_door_morning.jpg",
+  "start": 1052.8333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_1056867",
+  "src": "img/rkclaim_ray_policy_read_v2.jpg",
+  "start": 1056.8666666666666,
+  "dur": 7.8
+ },
+ {
+  "key": "imagen_1064667",
+  "src": "img/rkclaim_det_receipt_serial_back.jpg",
+  "start": 1064.6666666666667,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_1067967",
+  "src": "img/rkclaim_det_laptop_box_empty.jpg",
+  "start": 1067.9666666666667,
+  "dur": 7.6
+ },
+ {
+  "key": "imagen_1075567",
+  "src": "img/rkclaim_det_front_door_morning.jpg",
+  "start": 1075.5666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_1079600",
+  "src": "img/rkclaim_ray_policy_point_v2.jpg",
+  "start": 1079.6,
+  "dur": 6.2
+ },
+ {
+  "key": "imagen_1085800",
+  "src": "img/rkclaim_det_front_door_morning.jpg",
+  "start": 1085.8,
+  "dur": 3.8
+ },
+ {
+  "key": "imagen_1089600",
+  "src": "img/rkclaim_det_porch_lamp_glass.jpg",
+  "start": 1089.6,
+  "dur": 6.366666666666666
+ },
+ {
+  "key": "imagen_1105967",
+  "src": "img/rkclaim_ray_kneel_door.jpg",
+  "start": 1105.9666666666667,
+  "dur": 7
+ },
+ {
+  "key": "imagen_1112967",
+  "src": "img/rkclaim_det_front_door_morning.jpg",
+  "start": 1112.9666666666667,
+  "dur": 3.1
+ },
+ {
+  "key": "imagen_1116067",
+  "src": "img/rkclaim_det_porch_lamp_glass.jpg",
+  "start": 1116.0666666666666,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_1120100",
+  "src": "img/rkclaim_ray_kneel_door_v2.jpg",
+  "start": 1120.1,
+  "dur": 6.6
+ },
+ {
+  "key": "imagen_1126700",
+  "src": "img/rkclaim_det_front_door_morning.jpg",
+  "start": 1126.7,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "imagen_1130733",
+  "src": "img/rkclaim_det_porch_lamp_glass.jpg",
+  "start": 1130.7333333333333,
+  "dur": 4.133333333333334
+ }
+]
