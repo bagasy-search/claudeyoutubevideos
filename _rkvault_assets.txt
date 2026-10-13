@@ -122,8 +122,6 @@ img/rkvault_nf_30.jpg
 img/rkvault_nf_30_blur.jpg
 img/rkvault_nf_32.jpg
 img/rkvault_nf_32_blur.jpg
-img/rkvault_nf_34.jpg
-img/rkvault_nf_34_blur.jpg
 img/rkvault_nf_35.jpg
 img/rkvault_nf_35_blur.jpg
 img/rkvault_nf_37.jpg
