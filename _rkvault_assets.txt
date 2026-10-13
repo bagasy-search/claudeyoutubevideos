@@ -122,8 +122,6 @@ img/rkvault_nf_30.jpg
 img/rkvault_nf_30_blur.jpg
 img/rkvault_nf_32.jpg
 img/rkvault_nf_32_blur.jpg
-img/rkvault_nf_33.jpg
-img/rkvault_nf_33_blur.jpg
 img/rkvault_nf_34.jpg
 img/rkvault_nf_34_blur.jpg
 img/rkvault_nf_35.jpg
@@ -138,8 +136,6 @@ img/rkvault_nf_x01.jpg
 img/rkvault_nf_x01_blur.jpg
 img/rkvault_nf_x02.jpg
 img/rkvault_nf_x02_blur.jpg
-img/rkvault_nf_x03.jpg
-img/rkvault_nf_x03_blur.jpg
 img/rkvault_nf_x04.jpg
 img/rkvault_nf_x04_blur.jpg
 img/rkvault_qr.png
@@ -225,8 +221,6 @@ img/rkvault_ray_item6_serial.jpg
 img/rkvault_ray_item6_serial_blur.jpg
 img/rkvault_ray_item6_shoebox.jpg
 img/rkvault_ray_item6_shoebox_blur.jpg
-img/rkvault_ray_item7_anchors.jpg
-img/rkvault_ray_item7_anchors_blur.jpg
 img/rkvault_ray_item7_carry.jpg
 img/rkvault_ray_item7_carry_blur.jpg
 img/rkvault_ray_item7_lockbox_bolt.jpg
@@ -260,3 +254,5 @@ img/rkvault_ray_x05_blur.jpg
 img/rkvault_ray_x06.jpg
 img/rkvault_ray_x06_blur.jpg
 rkvault.m4a
+img/rkvault_landing.png
+img/rkvault_landing_blur.jpg
