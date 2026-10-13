@@ -1,0 +1,38 @@
+{
+ "canal": "Claudio en Japón",
+ "serie": "Lo que aprendí en Tokio",
+ "dir_refs": "D:/rtmp/fab/canal/japon",
+ "estilo": "One ordinary frame from a normal handheld video shot by a family member at eye level, in the middle of the action: slightly off framing, something cut by the edge, almost everything in focus, only the real light of the place (ceiling light, window daylight, a fridge light), natural white balance a bit off, slight phone noise, ordinary worn objects, people caught mid-movement, not posing, no beautiful composition.",
+ "personajes": {
+  "claudio": {
+   "nombre": "Claudio",
+   "desc": "a 58-year-old Latin American man with short curly black hair going gray, a gray-stubbed beard, warm brown eyes and tanned skin, wearing a plain red polo shirt with a collar and two buttons",
+   "ref": "public/ref_{slug}.png",
+   "cara": true
+  },
+  "sato": {
+   "nombre": "Sato-san",
+   "desc": "Sato-san, a 60-year-old Japanese woman with short gray hair, strict and calm, wearing a dark hotel uniform"
+  }
+ },
+ "lugares_fijos": {
+  "cocina": "a home kitchen in Latin America: white wall tiles, a steel refrigerator with magnets, a granite-look countertop, wooden cabinets, a worn tile floor",
+  "refri": "the inside of a white two-door refrigerator with clear containers, green vegetables and bottles on the shelves, a tidy interior",
+  "hotel": "the staff kitchen of a small business hotel in Tokyo: stainless steel counters, a large two-door refrigerator, white tiles, a wall clock",
+  "mercado": "a small vegetable stall in a Tokyo market: wooden crates of leafy greens, carrots and leeks standing in baskets",
+  "casa_madre": "the kitchen of a Latin American family house: an old white refrigerator packed full, a plastic bowl on the counter, a window with white iron bars"
+ },
+ "identidad": "Preserve the exact identity, face, short curly black hair going gray, gray-stubbled beard, age and skin tone of the man in the reference photograph. He is a 58-year-old Latin American man wearing a plain red polo shirt with a collar.",
+ "cara_crop": "public/ref_jprefri_face.png",
+ "idioma": "es",
+ "protagonista": "claudio",
+ "pron": "he",
+ "voz": "claudio_definitiva",
+ "cps": 14.8,
+ "ejemplos": "fu",
+ "avatar_pct": [
+  25,
+  32
+ ],
+ "prohibidas": []
+}
