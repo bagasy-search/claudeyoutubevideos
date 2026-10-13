@@ -1,0 +1,1619 @@
+{
+ "end": 910.76,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 10.36,
+   "k": "l_open",
+   "c": "ThumbOpen",
+   "props": {
+    "thumb": "th_card.jpg",
+    "k": "l_open"
+   },
+   "tin": "cut"
+  },
+  {
+   "a": 10.36,
+   "b": 16.48,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "name": "PhotoSeq",
+    "photos": [
+     {
+      "k": "furnace_grate",
+      "t": 10.453
+     },
+     {
+      "k": "wool_closet",
+      "t": 12.553
+     },
+     {
+      "k": "flour_sacks",
+      "t": 14.68
+     }
+    ]
+   }
+  },
+  {
+   "a": 16.48,
+   "b": 24.947,
+   "k": "loretta_window",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 24.947,
+   "b": 32.683,
+   "k": "hands_apron",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 32.683,
+   "b": 40.397,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 40.4,
+   "b": 49.21,
+   "c": "ThreeIdeas",
+   "props": {
+    "bed": "h_bed_kitchen",
+    "t1": 40.89,
+    "t2": 42.41
+   },
+   "hero": true
+  },
+  {
+   "a": 49.207,
+   "b": 57.14,
+   "k": "loretta_porch",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 57.14,
+   "b": 67.97,
+   "c": "FlourSack",
+   "props": {
+    "bed": "moth_flour",
+    "circ": 66.17,
+    "note": 66.17
+   },
+   "hero": true
+  },
+  {
+   "a": 67.967,
+   "b": 76.983,
+   "k": "flour_sack_moth",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 7,
+    "name": "Little moth in the flour sack",
+    "instead": "Flour sealed in a jar, checked before use",
+    "page": "30",
+    "k": "flour_sack_moth",
+    "t": 73.807
+   }
+  },
+  {
+   "a": 76.983,
+   "b": 84.673,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 84.673,
+   "b": 92.253,
+   "k": "oats_cornmeal_shelf",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 92.253,
+   "b": 100.603,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 100.603,
+   "b": 108.533,
+   "k": "vinegar_shelf_wipe",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 108.533,
+   "b": 117.9,
+   "k": "ar_pantry_insects_usda",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 117.9,
+   "b": 124.43,
+   "k": "page30_notebook",
+   "c": "PageUp",
+   "props": {
+    "k": "page30_notebook",
+    "pages": [
+     {
+      "src": "page30.png",
+      "tab": "PAGE 30",
+      "t": 119.62
+     }
+    ]
+   }
+  },
+  {
+   "a": 124.43,
+   "b": 130.673,
+   "k": "paper_bag_pantry",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "Nothing sleeps in a paper bag.",
+      "t": 124.607
+     }
+    ],
+    "sig": "Mama",
+    "k": "paper_bag_pantry"
+   }
+  },
+  {
+   "a": 130.673,
+   "b": 139.35,
+   "k": "flour_sacks_freezer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 139.35,
+   "b": 148.157,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 148.157,
+   "b": 157.21,
+   "k": "ar_farm_woman_handwritten_notebook_1950s",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 157.21,
+   "b": 165.08,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 165.08,
+   "b": 173.92,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "OR TRY",
+    "items": [
+     {
+      "n": 1,
+      "of": 2,
+      "name": "Plant Garlic in October",
+      "use": "the Old Farm Way",
+      "t": 169.86,
+      "k": "garlic_bed_october"
+     },
+     {
+      "n": 2,
+      "of": 2,
+      "name": "Seal These 5 Spots",
+      "use": "Before the First Frost",
+      "t": 165.74,
+      "k": "window_seal_frost"
+     }
+    ]
+   }
+  },
+  {
+   "a": 173.92,
+   "b": 181.314,
+   "k": "screen_door_kitchen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 181.314,
+   "b": 194.347,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "items": [
+     {
+      "n": 1,
+      "of": 2,
+      "name": "The Best Way to Clean Your Oven Before Thanksgiving",
+      "use": "The Church Lady Way",
+      "k": "thumb_oven",
+      "t": 182.647
+     },
+     {
+      "n": 2,
+      "of": 2,
+      "name": "12 Things Church Ladies Never Threw Away",
+      "use": "Kept in the back of the drawer",
+      "k": "thumb_12things",
+      "t": 187.187
+     }
+    ],
+    "head": "Loretta's Clean Home has"
+   }
+  },
+  {
+   "a": 194.347,
+   "b": 207.633,
+   "k": "moth_shelf_sweaters",
+   "c": "ItemCard",
+   "props": {
+    "k": "moth_shelf_sweaters",
+    "prompt": "Wool sweaters folded in a stack on a bedroom closet shelf in an old Iowa farmhouse, a sleeve hanging slightly off the pile, October morning light from a window, no people",
+    "n": 2,
+    "name": "Fold sweaters after one wear",
+    "instead": "Wash, bag, cedar beside it",
+    "page": "PAGE 31",
+    "t": 202.693,
+    "of": 7
+   }
+  },
+  {
+   "a": 207.633,
+   "b": 214.243,
+   "k": "page31_desk",
+   "c": "PageUp",
+   "props": {
+    "k": "page31_desk",
+    "prompt": "Old spiral notebook open on a kitchen table, handwritten pencil page, reading glasses folded beside it, October window light, Iowa farmhouse, no people",
+    "caption": {
+     "txt": "worn once is exactly what moths eat",
+     "t": 211.333
+    },
+    "pages": [
+     {
+      "src": "page31.png",
+      "tab": "PAGE 31",
+      "t": 209.193
+     }
+    ]
+   }
+  },
+  {
+   "a": 214.243,
+   "b": 222.013,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 222.013,
+   "b": 228.61,
+   "k": "zip_bag_cedar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 228.61,
+   "b": 235.997,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 235.997,
+   "b": 245.817,
+   "k": "ar_woman_packing_woolens_cedar_chest_1950s",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 245.817,
+   "b": 248.827,
+   "k": "cedar_wool",
+   "c": "Kinetic",
+   "props": {
+    "k": "cedar_wool",
+    "words": [
+     [
+      "CEDAR",
+      246.507
+     ],
+     [
+      "IS THE SECRET",
+      247.867
+     ]
+    ]
+   }
+  },
+  {
+   "a": 248.827,
+   "b": 256.31,
+   "k": "plaid_frame",
+   "c": "FrameArt",
+   "props": {
+    "k": "plaid_frame",
+    "bed": "hall_wall",
+    "caption": "From my mother-in-law. Not one hole.",
+    "t": 248.827
+   }
+  },
+  {
+   "a": 256.31,
+   "b": 265.94,
+   "c": "WoolSun",
+   "props": {
+    "bed": "h_wool_window",
+    "holes": [
+     257.6,
+     258.8,
+     260.4
+    ],
+    "note": 259.35
+   },
+   "hero": true
+  },
+  {
+   "a": 265.943,
+   "b": 272.47,
+   "k": "airing_line",
+   "c": "StepCard",
+   "props": {
+    "head": "BLANKET AIRING, SPRING & FALL",
+    "steps": [
+     {
+      "t": 266.053,
+      "txt": "Sun on the line",
+      "k": "airing_line"
+     },
+     {
+      "t": 267.093,
+      "txt": "Shake it out hard",
+      "k": "shake_hard"
+     },
+     {
+      "t": 269.033,
+      "txt": "Every corner aired",
+      "k": "corner_aired"
+     },
+     {
+      "t": 271.22,
+      "txt": "Zippered bag plus cedar",
+      "k": "zip_bag_cedar"
+     }
+    ],
+    "bed": "airing_line"
+   }
+  },
+  {
+   "a": 272.47,
+   "b": 280.88,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 280.88,
+   "b": 288.8,
+   "k": "wool_soft",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 288.8,
+   "b": 295.973,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 295.973,
+   "b": 302.897,
+   "k": "mil_chest",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 302.897,
+   "b": 310.937,
+   "k": "web_window_frame",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 7,
+    "name": "Spider in the corner",
+    "instead": "Vacuum out the bugs they come to eat",
+    "page": "33",
+    "k": "web_window_frame",
+    "t": 305.413
+   }
+  },
+  {
+   "a": 310.937,
+   "b": 314.04,
+   "k": "gnats_screen_door",
+   "c": "Kinetic",
+   "props": {
+    "k": "gnats_screen_door",
+    "words": [
+     [
+      "BUGS FIRST",
+      311.1
+     ],
+     [
+      "SPIDERS FOLLOW",
+      312.4
+     ]
+    ]
+   }
+  },
+  {
+   "a": 314.04,
+   "b": 318.907,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 318.907,
+   "b": 326.86,
+   "k": "vacuum_wand_floor",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page33.png",
+      "tab": "PAGE 33",
+      "t": 320.26
+     }
+    ],
+    "k": "vacuum_wand_floor"
+   }
+  },
+  {
+   "a": 326.86,
+   "b": 333.76,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 333.76,
+   "b": 342.103,
+   "k": "ar_porch_bug_light_1950s",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 342.103,
+   "b": 348.937,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 348.937,
+   "b": 355.777,
+   "k": "plug_in_repeller",
+   "c": "Careful",
+   "props": {
+    "k": "plug_in_repeller",
+    "txt": "Gadgets won't stop it",
+    "tag": "WARNING",
+    "t": 352.727
+   }
+  },
+  {
+   "a": 355.777,
+   "b": 363.817,
+   "k": "mouse_gadgets_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 363.817,
+   "b": 375.56,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "items": [
+     {
+      "n": 1,
+      "name": "Plug-in sound repeller",
+      "use": "Doesn't keep them out",
+      "t": 366.827,
+      "k": "sound_repeller_plug"
+     },
+     {
+      "n": 2,
+      "name": "Dryer sheets in drawers",
+      "use": "Masks smells for a week",
+      "t": 373.88,
+      "k": "dryer_drawer"
+     }
+    ]
+   }
+  },
+  {
+   "a": 375.56,
+   "b": 382.79,
+   "k": "cupboard_sheets",
+   "c": "PhotoSeq",
+   "props": {
+    "k": "cupboard_sheets",
+    "photos": [
+     {
+      "k": "cupboard_sheets",
+      "t": 375.74,
+      "prompt": "Kitchen cupboard door open, a box of dryer sheets on the shelf beside cracker tins, flat morning light from a window, a faded floral apron edge at the frame, no one posing"
+     },
+     {
+      "k": "mouse_crumbs",
+      "t": 378.88,
+      "prompt": "Pantry floor at the bottom of a cupboard, a few cracker crumbs on worn linoleum, a small brown mouse just passing the crumbs in dim light, unposed"
+     }
+    ]
+   }
+  },
+  {
+   "a": 382.79,
+   "b": 392.053,
+   "k": "ar_usda_rodent_control_1940s",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 392.053,
+   "b": 403.297,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 403.297,
+   "b": 410.107,
+   "k": "kitchen_tin",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 7,
+    "name": "Mice coming in for the warmth",
+    "instead": "Steel wool packed in, caulk on top",
+    "page": "9",
+    "t": 404.513,
+    "k": "kitchen_tin"
+   }
+  },
+  {
+   "a": 410.107,
+   "b": 417.527,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 417.527,
+   "b": 424.517,
+   "k": "furnace_crack",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 424.52,
+   "b": 448.85,
+   "c": "DimeWalk",
+   "props": {
+    "bed": "h_ground_wall",
+    "foam": 426.23,
+    "dime": 436.99,
+    "wool": 442.69,
+    "caulk": 443.99
+   },
+   "hero": true
+  },
+  {
+   "a": 448.847,
+   "b": 456.24,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 456.24,
+   "b": 463.954,
+   "k": "page9_table",
+   "c": "PageUp",
+   "props": {
+    "k": "page9_table",
+    "pages": [
+     {
+      "src": "page9.png",
+      "tab": "PAGE 9",
+      "t": 457.68
+     }
+    ]
+   }
+  },
+  {
+   "a": 463.954,
+   "b": 471.733,
+   "k": "grandma_dime_walk",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 471.733,
+   "b": 479.466,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 479.466,
+   "b": 486.036,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "dime_gap",
+      "prompt": "A dime pinched between two fingers held at a gap behind an old farmhouse stove, dim kitchen corner, mundane light, handheld snapshot.",
+      "t": 480.08
+     },
+     {
+      "k": "dime_drop",
+      "prompt": "A dime dropping into a narrow gap along a baseboard in a farmhouse kitchen, a hand just releasing it, ordinary daylight, handheld snapshot.",
+      "t": 483.28
+     }
+    ]
+   }
+  },
+  {
+   "a": 486.036,
+   "b": 492.947,
+   "k": "dime_step",
+   "c": "Kinetic",
+   "props": {
+    "k": "dime_step",
+    "words": [
+     [
+      "ONE DIME",
+      486.173
+     ],
+     [
+      "DOES MORE THAN STOP MICE",
+      486.793
+     ]
+    ]
+   }
+  },
+  {
+   "a": 492.947,
+   "b": 502.187,
+   "k": "ar_farm_woman_autumn_yard_1950s",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 502.19,
+   "b": 509.31,
+   "c": "BoxesPorch",
+   "props": {
+    "bed": "basement_stairs",
+    "bags": 506.37,
+    "strike": 506.37,
+    "note": 506.37
+   },
+   "hero": true
+  },
+  {
+   "a": 509.31,
+   "b": 517.2,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 517.2,
+   "b": 524.54,
+   "k": "boxes_floor",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 7,
+    "name": "Roaches riding in on boxes",
+    "instead": "Unpack on the porch, boxes straight out",
+    "page": "24",
+    "t": 517.407,
+    "k": "boxes_floor"
+   }
+  },
+  {
+   "a": 524.54,
+   "b": 536.177,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 536.177,
+   "b": 544.713,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "old": {
+     "txt": "Boxes saved, paper bags behind the fridge",
+     "k": "bags_stacked_fridge"
+    },
+    "neu": {
+     "txt": "Unpacked on the porch, boxes broken down",
+     "k": "flat_boxes_bin"
+    },
+    "t": 536.367,
+    "head": "WHAT WE USED INSTEAD",
+    "oldHead": "WHAT MOST HOMES DO"
+   }
+  },
+  {
+   "a": 544.713,
+   "b": 553.537,
+   "k": "porch_boxes_unpack",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page24.png",
+      "tab": "PAGE 24",
+      "t": 546.233
+     }
+    ],
+    "k": "porch_boxes_unpack"
+   }
+  },
+  {
+   "a": 553.537,
+   "b": 560.603,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 560.603,
+   "b": 569.776,
+   "k": "ar_1950s_kitchen_roach_pest_control",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 569.776,
+   "b": 578.883,
+   "k": "church_basement_kitchen_zion",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 578.883,
+   "b": 587.823,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 587.823,
+   "b": 600.877,
+   "k": "church_kitchen_close_sink",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 600.877,
+   "b": 607.293,
+   "k": "dry_steel_sink",
+   "c": "BigNumber",
+   "props": {
+    "num": 7,
+    "unit": "DAYS WITHOUT WATER",
+    "txt": "a month without food",
+    "k": "dry_steel_sink",
+    "t": 603.653
+   }
+  },
+  {
+   "a": 607.293,
+   "b": 614.253,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 614.253,
+   "b": 623.27,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "t": 615.753,
+    "k": "book_cover"
+   }
+  },
+  {
+   "a": 623.27,
+   "b": 632.507,
+   "k": "ar_farm_woman_reading_kitchen_1940s",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 632.507,
+   "b": 644.327,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 644.327,
+   "b": 653.234,
+   "k": "baseboard_silverfish",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 7,
+    "name": "Silverfish and earwigs",
+    "instead": "Food-grade diatomaceous earth in a thin line",
+    "page": "25",
+    "t": 649.72,
+    "k": "baseboard_silverfish"
+   }
+  },
+  {
+   "a": 653.234,
+   "b": 660.163,
+   "k": "spray_shelf",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 660.163,
+   "b": 667.213,
+   "k": "book_on_kitchen_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page25.png",
+      "tab": "PAGE 25",
+      "t": 662.013
+     }
+    ],
+    "k": "book_on_kitchen_table"
+   }
+  },
+  {
+   "a": 667.213,
+   "b": 676.523,
+   "k": "ar_iowa_fieldstone_foundation",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 676.523,
+   "b": 684.327,
+   "k": "fridge_gap_dark",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 684.327,
+   "b": 691.143,
+   "k": "baseboard_dust_mask",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 691.143,
+   "b": 698.553,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 698.553,
+   "b": 706.607,
+   "k": "loretta_serious_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 706.607,
+   "b": 716.35,
+   "k": "ar_iowa_farmhouse_exterior",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 716.35,
+   "b": 723.537,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 723.537,
+   "b": 730.31,
+   "k": "walk_foundation",
+   "c": "ItemCard",
+   "props": {
+    "name": "Skipping the walk before the frost",
+    "n": 7,
+    "of": 7,
+    "instead": "One afternoon walk with a flashlight and a dime",
+    "page": "42",
+    "k": "walk_foundation",
+    "t": 724.927
+   }
+  },
+  {
+   "a": 730.31,
+   "b": 735.96,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 735.96,
+   "b": 742.624,
+   "k": "house_exterior",
+   "c": "Pins",
+   "props": {
+    "name": "Pins",
+    "k": "house_exterior",
+    "head": "OUTSIDE",
+    "pins": [
+     {
+      "n": 1,
+      "txt": "pipes",
+      "t": 736.6,
+      "x": 30,
+      "y": 60
+     },
+     {
+      "n": 2,
+      "txt": "gas line",
+      "t": 737.507,
+      "x": 38,
+      "y": 70
+     },
+     {
+      "n": 3,
+      "txt": "dryer flap",
+      "t": 738.707,
+      "x": 62,
+      "y": 55
+     },
+     {
+      "n": 4,
+      "txt": "siding corners",
+      "t": 739.96,
+      "x": 85,
+      "y": 45
+     },
+     {
+      "n": 5,
+      "txt": "garage door seal",
+      "t": 741.2,
+      "x": 78,
+      "y": 80
+     }
+    ]
+   }
+  },
+  {
+   "a": 742.62,
+   "b": 751.32,
+   "c": "OctoberWalk",
+   "props": {
+    "bed": "h_basement_stairs",
+    "page": "page42",
+    "sinks": 744.77,
+    "stove": 746.09
+   },
+   "hero": true
+  },
+  {
+   "a": 751.32,
+   "b": 759.567,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 759.567,
+   "b": 768.3,
+   "k": "ar_woodpile_stacked_away_farmhouse",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 768.3,
+   "b": 774.56,
+   "k": "kitchen_table",
+   "c": "PageUp",
+   "props": {
+    "name": "PageUp",
+    "pages": [
+     {
+      "src": "page42.png",
+      "tab": "PAGE 42",
+      "t": 769.74
+     }
+    ],
+    "k": "kitchen_table"
+   }
+  },
+  {
+   "a": 774.56,
+   "b": 781.063,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 781.063,
+   "b": 788.353,
+   "k": "freezer_bags",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 788.353,
+   "b": 799.427,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 799.427,
+   "b": 807.987,
+   "k": "kitchen_boxes",
+   "c": "GoneList",
+   "props": {
+    "name": "GoneList",
+    "k": "kitchen_boxes",
+    "fade": 1.2,
+    "head": "WHAT GOES",
+    "items": [
+     {
+      "n": 5,
+      "txt": "Boxes kept in the kitchen",
+      "t": 800.367,
+      "x": 28,
+      "y": 38
+     },
+     {
+      "n": 6,
+      "txt": "No thin line along the baseboards",
+      "t": 805.727,
+      "x": 50,
+      "y": 84
+     }
+    ]
+   }
+  },
+  {
+   "a": 807.987,
+   "b": 815.78,
+   "k": "ar_farm_back_door_1940s",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 815.78,
+   "b": 822.633,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 822.633,
+   "b": 833.207,
+   "k": "book_on_table",
+   "c": "PageUp",
+   "props": {
+    "name": "PageUp",
+    "pages": [
+     {
+      "src": "page42.png",
+      "tab": "PAGE 42",
+      "t": 824.087
+     }
+    ],
+    "k": "book_on_table"
+   }
+  },
+  {
+   "a": 833.207,
+   "b": 840.813,
+   "k": "porch_book_hand",
+   "c": "PageUp",
+   "props": {
+    "name": "PageUp",
+    "pages": [
+     {
+      "src": "page42.png",
+      "tab": "PAGE 42",
+      "t": 834.867
+     }
+    ],
+    "caption": {
+     "txt": "BEFORE THE FIRST FROST",
+     "t": 839.207
+    },
+    "k": "porch_book_hand"
+   }
+  },
+  {
+   "a": 840.813,
+   "b": 846.54,
+   "k": "wall_corner",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 846.54,
+   "b": 853.98,
+   "k": "pg49_log",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page49.png",
+      "tab": "PAGE 49",
+      "t": 847.96
+     }
+    ],
+    "k": "pg49_log"
+   }
+  },
+  {
+   "a": 853.98,
+   "b": 863.124,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 863.124,
+   "b": 872.306,
+   "k": "ar_elderly_woman_writing_kitchen_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 872.306,
+   "b": 879.63,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 879.63,
+   "b": 887.927,
+   "k": "dime_flash",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 887.927,
+   "b": 895.48,
+   "k": "farm_night",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 895.48,
+   "b": 903.33,
+   "k": "flour_jars",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 903.33,
+   "b": 910.76,
+   "k": "flour_pantry",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "A closed door is half the work.",
+      "t": 903.58
+     },
+     {
+      "txt": "Shut the screen door, honey.",
+      "t": 909.08
+     }
+    ],
+    "sig": "Mama",
+    "k": "flour_pantry"
+   }
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 67.967,
+   "b": 194.347,
+   "n": 1
+  },
+  {
+   "a": 194.347,
+   "b": 302.897,
+   "n": 2
+  },
+  {
+   "a": 302.897,
+   "b": 403.297,
+   "n": 3
+  },
+  {
+   "a": 403.297,
+   "b": 517.2,
+   "n": 4
+  },
+  {
+   "a": 517.2,
+   "b": 644.327,
+   "n": 5
+  },
+  {
+   "a": 644.327,
+   "b": 723.537,
+   "n": 6
+  },
+  {
+   "a": 723.537,
+   "b": 799.427,
+   "n": 7
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   67.967,
+   76.983
+  ],
+  [
+   194.347,
+   207.633
+  ],
+  [
+   302.897,
+   310.937
+  ],
+  [
+   403.297,
+   410.107
+  ],
+  [
+   517.2,
+   524.54
+  ],
+  [
+   644.327,
+   653.234
+  ],
+  [
+   723.537,
+   730.31
+  ],
+  [
+   614.253,
+   623.27
+  ],
+  [
+   799.427,
+   807.987
+  ],
+  [
+   40.4,
+   49.21
+  ],
+  [
+   57.14,
+   67.97
+  ],
+  [
+   256.31,
+   265.94
+  ],
+  [
+   424.52,
+   448.85
+  ],
+  [
+   502.19,
+   509.31
+  ],
+  [
+   742.62,
+   751.32
+  ]
+ ]
+}

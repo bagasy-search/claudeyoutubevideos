@@ -1,0 +1,70 @@
+[
+ {
+  "a": 40.4,
+  "b": 49.21,
+  "c": "ThreeIdeas",
+  "props": {
+   "bed": "h_bed_kitchen",
+   "t1": 40.89,
+   "t2": 42.41
+  }
+ },
+ {
+  "a": 57.14,
+  "b": 67.97,
+  "c": "FlourSack",
+  "props": {
+   "bed": "moth_flour",
+   "circ": 66.17,
+   "note": 66.17
+  }
+ },
+ {
+  "a": 256.31,
+  "b": 265.94,
+  "c": "WoolSun",
+  "props": {
+   "bed": "h_wool_window",
+   "holes": [
+    257.6,
+    258.8,
+    260.4
+   ],
+   "note": 259.35
+  }
+ },
+ {
+  "a": 424.52,
+  "b": 448.85,
+  "c": "DimeWalk",
+  "props": {
+   "bed": "h_ground_wall",
+   "foam": 426.23,
+   "dime": 436.99,
+   "wool": 442.69,
+   "caulk": 443.99
+  }
+ },
+ {
+  "a": 502.19,
+  "b": 509.31,
+  "c": "BoxesPorch",
+  "props": {
+   "bed": "basement_stairs",
+   "bags": 506.37,
+   "strike": 506.37,
+   "note": 506.37
+  }
+ },
+ {
+  "a": 742.62,
+  "b": 751.32,
+  "c": "OctoberWalk",
+  "props": {
+   "bed": "h_basement_stairs",
+   "page": "page42",
+   "sinks": 744.77,
+   "stove": 746.09
+  }
+ }
+]
