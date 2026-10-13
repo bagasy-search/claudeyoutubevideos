@@ -1,0 +1,2775 @@
+{
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 10.0,
+   "k": "img/sachiko6/sachiko6_thumb.jpg",
+   "c": "OpenThumb",
+   "props": {
+    "k": "img/sachiko6/sachiko6_thumb.jpg",
+    "focus": [
+     50,
+     50
+    ]
+   }
+  },
+  {
+   "a": 10.0,
+   "b": 16.27,
+   "k": "pd_bake_racks3",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_racks3",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_racks3"
+   }
+  },
+  {
+   "a": 16.27,
+   "b": 22.71,
+   "k": "pd_bake_rack2",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_rack2",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_rack2"
+   }
+  },
+  {
+   "a": 22.71,
+   "b": 35.17,
+   "k": "p_old_bakery",
+   "c": null,
+   "props": {}
+  },
+  {
+   "a": 35.17,
+   "b": 49.38,
+   "k": "pd_bake_rack4",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_rack4",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_rack4"
+   }
+  },
+  {
+   "a": 49.38,
+   "b": 60.34,
+   "k": "pd_bake_c150",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c150",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_c150"
+   }
+  },
+  {
+   "a": 60.34,
+   "b": 65.35,
+   "k": "mo_b1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_b1"
+   }
+  },
+  {
+   "a": 65.35,
+   "b": 79.82,
+   "k": "pd_bake_c90",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c90",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_c90"
+   }
+  },
+  {
+   "a": 79.82,
+   "b": 91.45,
+   "k": "pd_bake_cake2",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_cake2",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_cake2"
+   }
+  },
+  {
+   "a": 91.45,
+   "b": 100.35,
+   "k": "p_old_kitchen_japan",
+   "c": null,
+   "props": {}
+  },
+  {
+   "a": 100.35,
+   "b": 109.85,
+   "k": "e_cloud1",
+   "c": "Chapter",
+   "props": {
+    "n": "1",
+    "title": "THE STEP",
+    "label": "PART",
+    "k": "e_cloud1",
+    "av": false
+   }
+  },
+  {
+   "a": 109.85,
+   "b": 125.94,
+   "k": "pd_bake_loaves",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_loaves",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_loaves"
+   }
+  },
+  {
+   "a": 125.94,
+   "b": 144.25,
+   "k": "pd_bake_cook",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_cook",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_cook"
+   }
+  },
+  {
+   "a": 144.25,
+   "b": 152.05,
+   "k": "c_bag1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_bag1"
+   }
+  },
+  {
+   "a": 152.05,
+   "b": 162.47,
+   "k": "c_butter1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_butter1"
+   }
+  },
+  {
+   "a": 162.47,
+   "b": 176.6,
+   "k": "pd_bake_dough2",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_dough2",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_dough2"
+   }
+  },
+  {
+   "a": 176.6,
+   "b": 187.55,
+   "k": "pd_bake_pans3",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_pans3",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_pans3"
+   }
+  },
+  {
+   "a": 187.55,
+   "b": 200.57,
+   "k": "pd_bake_x500",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_x500",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_x500"
+   }
+  },
+  {
+   "a": 200.57,
+   "b": 211.13,
+   "k": "pd_cook_whisk",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_whisk",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_cook_whisk"
+   }
+  },
+  {
+   "a": 211.13,
+   "b": 218.1,
+   "k": "pd_cook_stir",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_stir",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_cook_stir"
+   }
+  },
+  {
+   "a": 218.1,
+   "b": 227.94,
+   "k": "p_old_letter",
+   "c": null,
+   "props": {}
+  },
+  {
+   "a": 227.94,
+   "b": 241.46,
+   "k": "pd_cook_milk",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_milk",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_cook_milk"
+   }
+  },
+  {
+   "a": 241.46,
+   "b": 259.51,
+   "k": "pd_bake_oven",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_oven",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_oven"
+   }
+  },
+  {
+   "a": 259.51,
+   "b": 263.22,
+   "k": "old_01",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_01"
+   }
+  },
+  {
+   "a": 263.22,
+   "b": 273.75,
+   "k": "pd_bake_cake3",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_cake3",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_cake3"
+   }
+  },
+  {
+   "a": 273.75,
+   "b": 279.11,
+   "k": "c_cool1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_cool1"
+   }
+  },
+  {
+   "a": 279.11,
+   "b": 290.23,
+   "k": "pd_wheat_field",
+   "c": "Arc",
+   "props": {
+    "src": "pd_wheat_field",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_wheat_field"
+   }
+  },
+  {
+   "a": 290.23,
+   "b": 298.52,
+   "k": "c_note1",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "c_note1",
+    "txt": "THIS IS NOT YOU"
+   }
+  },
+  {
+   "a": 298.52,
+   "b": 314.42,
+   "k": "pd_wheat_horses",
+   "c": "Arc",
+   "props": {
+    "src": "pd_wheat_horses",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_wheat_horses"
+   }
+  },
+  {
+   "a": 314.42,
+   "b": 338.91,
+   "k": "pd_bake_knead",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_knead",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_knead"
+   }
+  },
+  {
+   "a": 338.91,
+   "b": 353.07,
+   "k": "pd_cook_dough",
+   "c": "Arc",
+   "props": {
+    "src": "pd_cook_dough",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_cook_dough"
+   }
+  },
+  {
+   "a": 353.07,
+   "b": 356.19,
+   "k": "kt_01",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_01"
+   }
+  },
+  {
+   "a": 356.19,
+   "b": 362.82,
+   "k": "sc_01",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "sc_01"
+   }
+  },
+  {
+   "a": 362.82,
+   "b": 374.58,
+   "k": "pd_bake_bags",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_bags",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_bags"
+   }
+  },
+  {
+   "a": 374.58,
+   "b": 384.65,
+   "k": "p_old_school",
+   "c": null,
+   "props": {}
+  },
+  {
+   "a": 384.65,
+   "b": 390.86,
+   "k": "o_yud",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_yud"
+   }
+  },
+  {
+   "a": 390.86,
+   "b": 398.39,
+   "k": "kt_03",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_03"
+   }
+  },
+  {
+   "a": 398.39,
+   "b": 402.63,
+   "k": "o_rack",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_rack"
+   }
+  },
+  {
+   "a": 402.63,
+   "b": 416.14,
+   "k": "yt_reX4FJBLWyQ_0_rise",
+   "c": "Arc",
+   "props": {
+    "src": "yt_reX4FJBLWyQ_0_rise",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "yt_reX4FJBLWyQ_0_rise"
+   }
+  },
+  {
+   "a": 416.14,
+   "b": 421.84,
+   "k": "c_yeast1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_yeast1"
+   }
+  },
+  {
+   "a": 421.84,
+   "b": 429.46,
+   "k": "o_yeastcup",
+   "c": "CostTag",
+   "props": {
+    "price": "1 loaf",
+    "sub": "about 2 dollars a pound",
+    "k": "o_yeastcup"
+   }
+  },
+  {
+   "a": 429.46,
+   "b": 433.06,
+   "k": "kt_05",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_05"
+   }
+  },
+  {
+   "a": 433.06,
+   "b": 442.09,
+   "k": "yt_DweAWLpXjsc_0_mixer",
+   "c": "Arc",
+   "props": {
+    "src": "yt_DweAWLpXjsc_0_mixer",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "yt_DweAWLpXjsc_0_mixer"
+   }
+  },
+  {
+   "a": 442.09,
+   "b": 457.39,
+   "k": "yt_kTd9jUOhCKA_2_spiral",
+   "c": "Arc",
+   "props": {
+    "src": "yt_kTd9jUOhCKA_2_spiral",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "yt_kTd9jUOhCKA_2_spiral"
+   }
+  },
+  {
+   "a": 457.39,
+   "b": 469.69,
+   "k": "pd_bake_c40",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c40",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_c40"
+   }
+  },
+  {
+   "a": 469.69,
+   "b": 475.37,
+   "k": "kt_12",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_12"
+   }
+  },
+  {
+   "a": 475.37,
+   "b": 479.08,
+   "k": "c_french1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_french1"
+   }
+  },
+  {
+   "a": 479.08,
+   "b": 485.09,
+   "k": "o_wind",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_wind"
+   }
+  },
+  {
+   "a": 485.09,
+   "b": 488.85,
+   "k": "c_knead1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_knead1"
+   }
+  },
+  {
+   "a": 488.85,
+   "b": 497.27,
+   "k": "c_wind1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_wind1"
+   }
+  },
+  {
+   "a": 497.27,
+   "b": 507.24,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 507.24,
+   "b": 515.77,
+   "k": "yt_YmgBz5nJDjk_0_rise",
+   "c": "Arc",
+   "props": {
+    "src": "yt_YmgBz5nJDjk_0_rise",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "yt_YmgBz5nJDjk_0_rise"
+   }
+  },
+  {
+   "a": 515.77,
+   "b": 524.55,
+   "k": "yt_h9fBhtYowxM_0_rise",
+   "c": "Arc",
+   "props": {
+    "src": "yt_h9fBhtYowxM_0_rise",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "yt_h9fBhtYowxM_0_rise"
+   }
+  },
+  {
+   "a": 524.55,
+   "b": 544.02,
+   "k": "yt_BmINNcGK2IE_0_machine",
+   "c": "Arc",
+   "props": {
+    "src": "yt_BmINNcGK2IE_0_machine",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "yt_BmINNcGK2IE_0_machine"
+   }
+  },
+  {
+   "a": 544.02,
+   "b": 552.77,
+   "k": "c_pan1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_pan1"
+   }
+  },
+  {
+   "a": 552.77,
+   "b": 555.77,
+   "k": "kt_07",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_07"
+   }
+  },
+  {
+   "a": 555.77,
+   "b": 564.02,
+   "k": "c_pan2",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "c_pan2",
+    "steps": [
+     {
+      "t": 556.77,
+      "txt": "Warm the milk",
+      "k": "c_pan2"
+     },
+     {
+      "t": 559.77,
+      "txt": "Knead ten minutes",
+      "k": "c_pan2"
+     }
+    ]
+   }
+  },
+  {
+   "a": 564.02,
+   "b": 573.11,
+   "k": "o_panrise",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_panrise"
+   }
+  },
+  {
+   "a": 573.11,
+   "b": 575.47,
+   "k": "c_crumb1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_crumb1"
+   }
+  },
+  {
+   "a": 575.47,
+   "b": 584.62,
+   "k": "c_frz1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_frz1"
+   }
+  },
+  {
+   "a": 584.62,
+   "b": 587.6,
+   "k": "c_frz2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_frz2"
+   }
+  },
+  {
+   "a": 587.6,
+   "b": 603.92,
+   "k": "pd_bake_pan",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_pan",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_pan"
+   }
+  },
+  {
+   "a": 603.92,
+   "b": 612.0,
+   "k": "c_gram1",
+   "c": "Checklist",
+   "props": {
+    "head": "CHECK IT",
+    "k": "c_gram1",
+    "items": [
+     {
+      "t": 604.92,
+      "txt": "Windowpane test"
+     },
+     {
+      "t": 607.92,
+      "txt": "Bake to about 190 F"
+     }
+    ]
+   }
+  },
+  {
+   "a": 612.0,
+   "b": 621.57,
+   "k": "pd_bake_pans4",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_pans4",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_pans4"
+   }
+  },
+  {
+   "a": 621.57,
+   "b": 632.01,
+   "k": "pd_bake_c330",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c330",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_c330"
+   }
+  },
+  {
+   "a": 632.01,
+   "b": 637.73,
+   "k": "o_panrise2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_panrise2"
+   }
+  },
+  {
+   "a": 637.73,
+   "b": 645.44,
+   "k": "o_bake",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_bake"
+   }
+  },
+  {
+   "a": 645.44,
+   "b": 652.61,
+   "k": "o_therm190",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_therm190"
+   }
+  },
+  {
+   "a": 652.61,
+   "b": 660.71,
+   "k": "c_therm1",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Flour holds water.",
+     "The starch stays soft."
+    ],
+    "sig": "Sachiko",
+    "k": "c_therm1"
+   }
+  },
+  {
+   "a": 660.71,
+   "b": 667.2,
+   "k": "c_therm2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_therm2"
+   }
+  },
+  {
+   "a": 667.2,
+   "b": 675.9,
+   "k": "kt_10",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_10"
+   }
+  },
+  {
+   "a": 675.9,
+   "b": 692.31,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 692.31,
+   "b": 700.88,
+   "k": "o_slice",
+   "c": "Chapter",
+   "props": {
+    "n": "7",
+    "title": "THE STEP",
+    "label": "PART",
+    "k": "o_slice",
+    "av": false
+   }
+  },
+  {
+   "a": 701.15,
+   "b": 704.81,
+   "k": "c_gram2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_gram2"
+   }
+  },
+  {
+   "a": 704.81,
+   "b": 713.25,
+   "k": "c_slice1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_slice1"
+   }
+  },
+  {
+   "a": 713.25,
+   "b": 715.67,
+   "k": "c_knead2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_knead2"
+   }
+  },
+  {
+   "a": 715.67,
+   "b": 724.18,
+   "k": "o_bag",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_bag"
+   }
+  },
+  {
+   "a": 724.18,
+   "b": 742.25,
+   "k": "pd_bake_counter",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_counter",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_counter"
+   }
+  },
+  {
+   "a": 742.25,
+   "b": 749.43,
+   "k": "c_yud1",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "c_yud1",
+    "txt": "THIS IS NOT YOU"
+   }
+  },
+  {
+   "a": 749.43,
+   "b": 758.02,
+   "k": "c_yud2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_yud2"
+   }
+  },
+  {
+   "a": 758.02,
+   "b": 766.86,
+   "k": "c_wind2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_wind2"
+   }
+  },
+  {
+   "a": 766.86,
+   "b": 780.62,
+   "k": "pd_bake_c360",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c360",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_c360"
+   }
+  },
+  {
+   "a": 780.62,
+   "b": 786.88,
+   "k": "kt_09",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_09"
+   }
+  },
+  {
+   "a": 786.88,
+   "b": 792.66,
+   "k": "d_mix1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_mix1"
+   }
+  },
+  {
+   "a": 792.66,
+   "b": 801.43,
+   "k": "d_mix2",
+   "c": "CostTag",
+   "props": {
+    "price": "1 loaf",
+    "sub": "about 2 dollars a pound",
+    "k": "d_mix2"
+   }
+  },
+  {
+   "a": 801.43,
+   "b": 807.21,
+   "k": "c_mold1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_mold1"
+   }
+  },
+  {
+   "a": 807.21,
+   "b": 816.63,
+   "k": "o_scale50",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_scale50"
+   }
+  },
+  {
+   "a": 816.63,
+   "b": 823.87,
+   "k": "q_scale50b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_scale50b"
+   }
+  },
+  {
+   "a": 823.87,
+   "b": 825.99,
+   "k": "c_pour1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_pour1"
+   }
+  },
+  {
+   "a": 825.99,
+   "b": 834.92,
+   "k": "d_shag1",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "d_shag1",
+    "steps": [
+     {
+      "t": 826.99,
+      "txt": "Warm the milk",
+      "k": "d_shag1"
+     },
+     {
+      "t": 829.99,
+      "txt": "Knead ten minutes",
+      "k": "d_shag1"
+     }
+    ]
+   }
+  },
+  {
+   "a": 834.92,
+   "b": 840.11,
+   "k": "p_flour_spill",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_flour_spill"
+   }
+  },
+  {
+   "a": 840.11,
+   "b": 847.25,
+   "k": "p_sieve",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_sieve"
+   }
+  },
+  {
+   "a": 847.25,
+   "b": 853.71,
+   "k": "e_napkin1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_napkin1"
+   }
+  },
+  {
+   "a": 853.71,
+   "b": 859.45,
+   "k": "p_rain_kitchen",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_rain_kitchen"
+   }
+  },
+  {
+   "a": 859.45,
+   "b": 867.67,
+   "k": "q_milk_warm",
+   "c": "Checklist",
+   "props": {
+    "head": "CHECK IT",
+    "k": "q_milk_warm",
+    "items": [
+     {
+      "t": 860.45,
+      "txt": "Windowpane test"
+     },
+     {
+      "t": 863.45,
+      "txt": "Bake to about 190 F"
+     }
+    ]
+   }
+  },
+  {
+   "a": 867.67,
+   "b": 874.11,
+   "k": "kt_08",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_08"
+   }
+  },
+  {
+   "a": 874.11,
+   "b": 881.03,
+   "k": "o_cup",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_cup"
+   }
+  },
+  {
+   "a": 881.03,
+   "b": 886.27,
+   "k": "o_butter",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_butter"
+   }
+  },
+  {
+   "a": 886.27,
+   "b": 892.39,
+   "k": "old_02",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_02"
+   }
+  },
+  {
+   "a": 892.39,
+   "b": 899.45,
+   "k": "o_cuke",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Flour holds water.",
+     "The starch stays soft."
+    ],
+    "sig": "Sachiko",
+    "k": "o_cuke"
+   }
+  },
+  {
+   "a": 899.45,
+   "b": 903.45,
+   "k": "c_rise1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_rise1"
+   }
+  },
+  {
+   "a": 903.45,
+   "b": 911.69,
+   "k": "o_rolls",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_rolls"
+   }
+  },
+  {
+   "a": 911.69,
+   "b": 919.5,
+   "k": "kt_26",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_26"
+   }
+  },
+  {
+   "a": 919.5,
+   "b": 921.14,
+   "k": "c_slice2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_slice2"
+   }
+  },
+  {
+   "a": 921.14,
+   "b": 930.82,
+   "k": "kt_22",
+   "c": "Chapter",
+   "props": {
+    "n": "4",
+    "title": "THE STEP",
+    "label": "PART",
+    "k": "kt_22",
+    "av": false
+   }
+  },
+  {
+   "a": 931.23,
+   "b": 937.02,
+   "k": "d_drain1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_drain1"
+   }
+  },
+  {
+   "a": 937.02,
+   "b": 946.24,
+   "k": "o_freezer",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_freezer"
+   }
+  },
+  {
+   "a": 946.24,
+   "b": 953.25,
+   "k": "c_tst1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_tst1"
+   }
+  },
+  {
+   "a": 953.25,
+   "b": 961.17,
+   "k": "c_wrap1",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "c_wrap1",
+    "txt": "THIS IS NOT YOU"
+   }
+  },
+  {
+   "a": 961.17,
+   "b": 967.78,
+   "k": "kt_19",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_19"
+   }
+  },
+  {
+   "a": 967.78,
+   "b": 976.13,
+   "k": "o_toast",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_toast"
+   }
+  },
+  {
+   "a": 976.13,
+   "b": 978.63,
+   "k": "c_whisk1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "c_whisk1"
+   }
+  },
+  {
+   "a": 978.63,
+   "b": 985.77,
+   "k": "d_rest1",
+   "c": "CostTag",
+   "props": {
+    "price": "1 loaf",
+    "sub": "about 2 dollars a pound",
+    "k": "d_rest1"
+   }
+  },
+  {
+   "a": 985.77,
+   "b": 991.95,
+   "k": "p_bowl_risen",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_bowl_risen"
+   }
+  },
+  {
+   "a": 991.95,
+   "b": 1000.63,
+   "k": "p_egg_bowl",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_egg_bowl"
+   }
+  },
+  {
+   "a": 1000.63,
+   "b": 1005.54,
+   "k": "cl_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "cl_01_b"
+   }
+  },
+  {
+   "a": 1005.54,
+   "b": 1014.81,
+   "k": "p_dish_dry",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "p_dish_dry",
+    "steps": [
+     {
+      "t": 1006.54,
+      "txt": "Warm the milk",
+      "k": "p_dish_dry"
+     },
+     {
+      "t": 1009.54,
+      "txt": "Knead ten minutes",
+      "k": "p_dish_dry"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1014.81,
+   "b": 1022.15,
+   "k": "cl_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "cl_02_b"
+   }
+  },
+  {
+   "a": 1022.15,
+   "b": 1029.01,
+   "k": "jp_hm98636_160",
+   "c": "Arc",
+   "props": {
+    "src": "jp_hm98636_160",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "jp_hm98636_160"
+   }
+  },
+  {
+   "a": 1029.01,
+   "b": 1033.91,
+   "k": "old_04",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_04"
+   }
+  },
+  {
+   "a": 1033.91,
+   "b": 1038.63,
+   "k": "d_egg1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_egg1"
+   }
+  },
+  {
+   "a": 1038.63,
+   "b": 1045.35,
+   "k": "cl_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "cl_03_b"
+   }
+  },
+  {
+   "a": 1045.35,
+   "b": 1050.59,
+   "k": "d_bag2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_bag2"
+   }
+  },
+  {
+   "a": 1050.59,
+   "b": 1059.13,
+   "k": "old_06",
+   "c": "Checklist",
+   "props": {
+    "head": "CHECK IT",
+    "k": "old_06",
+    "items": [
+     {
+      "t": 1051.59,
+      "txt": "Windowpane test"
+     },
+     {
+      "t": 1054.59,
+      "txt": "Bake to about 190 F"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1059.13,
+   "b": 1066.27,
+   "k": "kt_29",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_29"
+   }
+  },
+  {
+   "a": 1066.27,
+   "b": 1072.71,
+   "k": "d_bench1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_bench1"
+   }
+  },
+  {
+   "a": 1072.71,
+   "b": 1077.7,
+   "k": "d_bowl1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_bowl1"
+   }
+  },
+  {
+   "a": 1077.7,
+   "b": 1086.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1086.12,
+   "b": 1092.41,
+   "k": "d_date1",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Flour holds water.",
+     "The starch stays soft."
+    ],
+    "sig": "Sachiko",
+    "k": "d_date1"
+   }
+  },
+  {
+   "a": 1092.41,
+   "b": 1099.47,
+   "k": "q_pan_dough",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_pan_dough"
+   }
+  },
+  {
+   "a": 1099.47,
+   "b": 1108.06,
+   "k": "kt_27",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_27"
+   }
+  },
+  {
+   "a": 1108.06,
+   "b": 1113.01,
+   "k": "o_cinn",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_cinn"
+   }
+  },
+  {
+   "a": 1113.01,
+   "b": 1118.26,
+   "k": "d_fold1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_fold1"
+   }
+  },
+  {
+   "a": 1118.26,
+   "b": 1123.76,
+   "k": "kt_28",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_28"
+   }
+  },
+  {
+   "a": 1123.76,
+   "b": 1127.92,
+   "k": "d_roll1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_roll1"
+   }
+  },
+  {
+   "a": 1127.92,
+   "b": 1133.95,
+   "k": "q_rack_loaf",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_rack_loaf"
+   }
+  },
+  {
+   "a": 1133.95,
+   "b": 1141.66,
+   "k": "pd_bake_c470",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_c470",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_c470"
+   }
+  },
+  {
+   "a": 1141.66,
+   "b": 1149.38,
+   "k": "d_wipe1",
+   "c": "Chapter",
+   "props": {
+    "n": "1",
+    "title": "THE STEP",
+    "label": "PART",
+    "k": "d_wipe1",
+    "av": false
+   }
+  },
+  {
+   "a": 1149.68,
+   "b": 1157.21,
+   "k": "d_dust1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_dust1"
+   }
+  },
+  {
+   "a": 1157.21,
+   "b": 1165.41,
+   "k": "e_wait2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_wait2"
+   }
+  },
+  {
+   "a": 1165.41,
+   "b": 1169.74,
+   "k": "old_05",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_05"
+   }
+  },
+  {
+   "a": 1169.74,
+   "b": 1174.83,
+   "k": "old_07",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_07"
+   }
+  },
+  {
+   "a": 1174.83,
+   "b": 1180.4,
+   "k": "d_grate1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_grate1"
+   }
+  },
+  {
+   "a": 1180.4,
+   "b": 1187.86,
+   "k": "p_brick",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "p_brick",
+    "txt": "THIS IS NOT YOU"
+   }
+  },
+  {
+   "a": 1187.86,
+   "b": 1192.21,
+   "k": "d_hands1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_hands1"
+   }
+  },
+  {
+   "a": 1192.21,
+   "b": 1200.63,
+   "k": "d_hands2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_hands2"
+   }
+  },
+  {
+   "a": 1200.63,
+   "b": 1206.57,
+   "k": "sc_04",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "sc_04"
+   }
+  },
+  {
+   "a": 1206.57,
+   "b": 1210.87,
+   "k": "d_hands3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_hands3"
+   }
+  },
+  {
+   "a": 1210.87,
+   "b": 1221.08,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1221.08,
+   "b": 1228.77,
+   "k": "d_hands4",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_hands4"
+   }
+  },
+  {
+   "a": 1228.77,
+   "b": 1235.83,
+   "k": "p_flat_loaf",
+   "c": "CostTag",
+   "props": {
+    "price": "1 loaf",
+    "sub": "about 2 dollars a pound",
+    "k": "p_flat_loaf"
+   }
+  },
+  {
+   "a": 1235.83,
+   "b": 1241.79,
+   "k": "p_crust_split",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_crust_split"
+   }
+  },
+  {
+   "a": 1241.79,
+   "b": 1249.86,
+   "k": "q_freezer_bag",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_freezer_bag"
+   }
+  },
+  {
+   "a": 1249.86,
+   "b": 1257.51,
+   "k": "p_pale_bottom",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_pale_bottom"
+   }
+  },
+  {
+   "a": 1257.51,
+   "b": 1259.33,
+   "k": "p_wet_crumb",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "p_wet_crumb",
+    "steps": [
+     {
+      "t": 1258.51,
+      "txt": "Warm the milk",
+      "k": "p_wet_crumb"
+     },
+     {
+      "t": 1261.51,
+      "txt": "Knead ten minutes",
+      "k": "p_wet_crumb"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1259.33,
+   "b": 1270.01,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1270.01,
+   "b": 1277.9,
+   "k": "d_jar1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_jar1"
+   }
+  },
+  {
+   "a": 1277.9,
+   "b": 1285.34,
+   "k": "q_paste_pan",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_paste_pan"
+   }
+  },
+  {
+   "a": 1285.34,
+   "b": 1292.63,
+   "k": "p_burnt_top",
+   "c": "Checklist",
+   "props": {
+    "head": "CHECK IT",
+    "k": "p_burnt_top",
+    "items": [
+     {
+      "t": 1286.34,
+      "txt": "Windowpane test"
+     },
+     {
+      "t": 1289.34,
+      "txt": "Bake to about 190 F"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1292.63,
+   "b": 1299.88,
+   "k": "d_knife1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_knife1"
+   }
+  },
+  {
+   "a": 1299.88,
+   "b": 1304.63,
+   "k": "d_oil1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_oil1"
+   }
+  },
+  {
+   "a": 1304.63,
+   "b": 1311.26,
+   "k": "e_pen1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_pen1"
+   }
+  },
+  {
+   "a": 1311.26,
+   "b": 1321.19,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1321.19,
+   "b": 1329.8,
+   "k": "o_moldbag",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Flour holds water.",
+     "The starch stays soft."
+    ],
+    "sig": "Sachiko",
+    "k": "o_moldbag"
+   }
+  },
+  {
+   "a": 1329.8,
+   "b": 1348.02,
+   "k": "pd_bake_stacks",
+   "c": "Arc",
+   "props": {
+    "src": "pd_bake_stacks",
+    "vid": true,
+    "cap": "REAL FOOTAGE",
+    "credit": "pd_bake_stacks"
+   }
+  },
+  {
+   "a": 1348.02,
+   "b": 1354.9,
+   "k": "mo_b2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_b2"
+   }
+  },
+  {
+   "a": 1354.9,
+   "b": 1361.02,
+   "k": "d_paper1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_paper1"
+   }
+  },
+  {
+   "a": 1361.02,
+   "b": 1367.4,
+   "k": "d_plate1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_plate1"
+   }
+  },
+  {
+   "a": 1367.4,
+   "b": 1372.92,
+   "k": "d_seam1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_seam1"
+   }
+  },
+  {
+   "a": 1372.92,
+   "b": 1381.17,
+   "k": "d_wait1",
+   "c": "Chapter",
+   "props": {
+    "n": "7",
+    "title": "THE STEP",
+    "label": "PART",
+    "k": "d_wait1",
+    "av": false
+   }
+  },
+  {
+   "a": 1381.46,
+   "b": 1391.84,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1391.84,
+   "b": 1400.74,
+   "k": "d_sift1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_sift1"
+   }
+  },
+  {
+   "a": 1400.74,
+   "b": 1407.16,
+   "k": "e_butter2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_butter2"
+   }
+  },
+  {
+   "a": 1407.16,
+   "b": 1418.41,
+   "k": "e_bag3",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "e_bag3",
+    "txt": "THIS IS NOT YOU"
+   }
+  },
+  {
+   "a": 1418.41,
+   "b": 1424.71,
+   "k": "d_slice2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_slice2"
+   }
+  },
+  {
+   "a": 1424.71,
+   "b": 1432.38,
+   "k": "e_feel1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_feel1"
+   }
+  },
+  {
+   "a": 1432.38,
+   "b": 1442.64,
+   "k": "d_smell1",
+   "c": "CostTag",
+   "props": {
+    "price": "1 loaf",
+    "sub": "about 2 dollars a pound",
+    "k": "d_smell1"
+   }
+  },
+  {
+   "a": 1442.64,
+   "b": 1451.82,
+   "k": "e_slice3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_slice3"
+   }
+  },
+  {
+   "a": 1451.82,
+   "b": 1459.25,
+   "k": "d_tap1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "d_tap1"
+   }
+  },
+  {
+   "a": 1459.25,
+   "b": 1466.39,
+   "k": "d_wet1",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "d_wet1",
+    "steps": [
+     {
+      "t": 1460.25,
+      "txt": "Warm the milk",
+      "k": "d_wet1"
+     },
+     {
+      "t": 1463.25,
+      "txt": "Knead ten minutes",
+      "k": "d_wet1"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1466.39,
+   "b": 1471.75,
+   "k": "old_08",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_08"
+   }
+  },
+  {
+   "a": 1471.75,
+   "b": 1480.61,
+   "k": "e_pace1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "e_pace1"
+   }
+  },
+  {
+   "a": 1480.61,
+   "b": 1489.98,
+   "k": "in_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "in_01_b"
+   }
+  },
+  {
+   "a": 1489.98,
+   "b": 1496.2,
+   "k": "q_bread_box",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "q_bread_box"
+   }
+  },
+  {
+   "a": 1496.2,
+   "b": 1502.44,
+   "k": "in_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "in_02_b"
+   }
+  },
+  {
+   "a": 1502.44,
+   "b": 1506.97,
+   "k": "kt_02",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_02"
+   }
+  },
+  {
+   "a": 1506.97,
+   "b": 1514.74,
+   "k": "kt_04",
+   "c": "Checklist",
+   "props": {
+    "head": "CHECK IT",
+    "k": "kt_04",
+    "items": [
+     {
+      "t": 1507.97,
+      "txt": "Windowpane test"
+     },
+     {
+      "t": 1510.97,
+      "txt": "Bake to about 190 F"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1514.74,
+   "b": 1521.4,
+   "k": "kt_06",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_06"
+   }
+  },
+  {
+   "a": 1521.4,
+   "b": 1530.37,
+   "k": "kt_11",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_11"
+   }
+  },
+  {
+   "a": 1530.37,
+   "b": 1539.26,
+   "k": "kt_13",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Flour holds water.",
+     "The starch stays soft."
+    ],
+    "sig": "Sachiko",
+    "k": "kt_13"
+   }
+  },
+  {
+   "a": 1539.26,
+   "b": 1546.34,
+   "k": "kt_14",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_14"
+   }
+  },
+  {
+   "a": 1546.34,
+   "b": 1554.99,
+   "k": "kt_15",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_15"
+   }
+  },
+  {
+   "a": 1554.99,
+   "b": 1561.63,
+   "k": "q_stove_pot",
+   "c": "Chapter",
+   "props": {
+    "n": "4",
+    "title": "THE STEP",
+    "label": "PART",
+    "k": "q_stove_pot",
+    "av": false
+   }
+  },
+  {
+   "a": 1561.92,
+   "b": 1574.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1574.5,
+   "b": 1578.93,
+   "k": "kt_18",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_18"
+   }
+  },
+  {
+   "a": 1578.93,
+   "b": 1586.91,
+   "k": "kt_23",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_23"
+   }
+  },
+  {
+   "a": 1586.91,
+   "b": 1593.87,
+   "k": "kt_24",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "kt_24"
+   }
+  },
+  {
+   "a": 1593.87,
+   "b": 1600.05,
+   "k": "me_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_01_b"
+   }
+  },
+  {
+   "a": 1600.05,
+   "b": 1607.06,
+   "k": "me_02_b",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "me_02_b",
+    "txt": "THIS IS NOT YOU"
+   }
+  },
+  {
+   "a": 1607.06,
+   "b": 1615.14,
+   "k": "me_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_03_b"
+   }
+  },
+  {
+   "a": 1615.14,
+   "b": 1623.45,
+   "k": "me_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_04_b"
+   }
+  },
+  {
+   "a": 1623.45,
+   "b": 1631.81,
+   "k": "me_05_b",
+   "c": "CostTag",
+   "props": {
+    "price": "1 loaf",
+    "sub": "about 2 dollars a pound",
+    "k": "me_05_b"
+   }
+  },
+  {
+   "a": 1631.81,
+   "b": 1634.1,
+   "k": "me_06_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_06_b"
+   }
+  },
+  {
+   "a": 1634.1,
+   "b": 1646.09,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1646.09,
+   "b": 1647.97,
+   "k": "mo_d1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_d1"
+   }
+  },
+  {
+   "a": 1647.97,
+   "b": 1657.64,
+   "k": "me_07_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_07_b"
+   }
+  },
+  {
+   "a": 1657.64,
+   "b": 1666.83,
+   "k": "me_08_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_08_b"
+   }
+  },
+  {
+   "a": 1666.83,
+   "b": 1675.83,
+   "k": "me_09_b",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "me_09_b",
+    "steps": [
+     {
+      "t": 1667.83,
+      "txt": "Warm the milk",
+      "k": "me_09_b"
+     },
+     {
+      "t": 1670.83,
+      "txt": "Knead ten minutes",
+      "k": "me_09_b"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1675.83,
+   "b": 1680.57,
+   "k": "me_10_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_10_b"
+   }
+  },
+  {
+   "a": 1680.57,
+   "b": 1688.81,
+   "k": "me_11_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_11_b"
+   }
+  },
+  {
+   "a": 1688.81,
+   "b": 1698.55,
+   "k": "me_12_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_12_b"
+   }
+  },
+  {
+   "a": 1698.55,
+   "b": 1705.15,
+   "k": "me_13_b",
+   "c": "Checklist",
+   "props": {
+    "head": "CHECK IT",
+    "k": "me_13_b",
+    "items": [
+     {
+      "t": 1699.55,
+      "txt": "Windowpane test"
+     },
+     {
+      "t": 1702.55,
+      "txt": "Bake to about 190 F"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1705.15,
+   "b": 1710.37,
+   "k": "mo_d2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_d2"
+   }
+  },
+  {
+   "a": 1710.37,
+   "b": 1717.21,
+   "k": "me_14_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_14_b"
+   }
+  },
+  {
+   "a": 1717.21,
+   "b": 1726.01,
+   "k": "me_15_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_15_b"
+   }
+  },
+  {
+   "a": 1726.01,
+   "b": 1735.0,
+   "k": "me_16_b",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Flour holds water.",
+     "The starch stays soft."
+    ],
+    "sig": "Sachiko",
+    "k": "me_16_b"
+   }
+  },
+  {
+   "a": 1735.0,
+   "b": 1742.39,
+   "k": "me_17_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_17_b"
+   }
+  },
+  {
+   "a": 1742.39,
+   "b": 1750.83,
+   "k": "me_18_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_18_b"
+   }
+  },
+  {
+   "a": 1750.83,
+   "b": 1757.99,
+   "k": "me_19_b",
+   "c": "Chapter",
+   "props": {
+    "n": "1",
+    "title": "THE STEP",
+    "label": "PART",
+    "k": "me_19_b",
+    "av": false
+   }
+  },
+  {
+   "a": 1757.99,
+   "b": 1769.85,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1769.85,
+   "b": 1778.25,
+   "k": "me_21_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "me_21_b"
+   }
+  },
+  {
+   "a": 1778.25,
+   "b": 1783.38,
+   "k": "mi_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_01_b"
+   }
+  },
+  {
+   "a": 1783.38,
+   "b": 1789.67,
+   "k": "mi_02_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_02_b"
+   }
+  },
+  {
+   "a": 1789.67,
+   "b": 1795.05,
+   "k": "mi_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_03_b"
+   }
+  },
+  {
+   "a": 1795.05,
+   "b": 1800.63,
+   "k": "mi_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mi_04_b"
+   }
+  },
+  {
+   "a": 1800.63,
+   "b": 1808.0,
+   "k": "mi_05_b",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "mi_05_b",
+    "txt": "THIS IS NOT YOU"
+   }
+  },
+  {
+   "a": 1808.0,
+   "b": 1818.69,
+   "k": "mo",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo"
+   }
+  },
+  {
+   "a": 1818.69,
+   "b": 1827.81,
+   "k": "mo_01_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_01_b"
+   }
+  },
+  {
+   "a": 1827.81,
+   "b": 1846.45,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1846.45,
+   "b": 1854.11,
+   "k": "q_table_tea",
+   "c": "CostTag",
+   "props": {
+    "price": "1 loaf",
+    "sub": "about 2 dollars a pound",
+    "k": "q_table_tea"
+   }
+  },
+  {
+   "a": 1854.11,
+   "b": 1858.76,
+   "k": "mo_03_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_03_b"
+   }
+  },
+  {
+   "a": 1858.76,
+   "b": 1867.39,
+   "k": "mo_04_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_04_b"
+   }
+  },
+  {
+   "a": 1867.39,
+   "b": 1871.15,
+   "k": "mo_05_b",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_05_b"
+   }
+  },
+  {
+   "a": 1871.15,
+   "b": 1880.22,
+   "k": "mo_b3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_b3"
+   }
+  },
+  {
+   "a": 1880.22,
+   "b": 1890.55,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 1890.55,
+   "b": 1897.29,
+   "k": "mo_c7",
+   "c": "StepCard",
+   "props": {
+    "page": "STEP",
+    "head": "THE METHOD",
+    "bed": "mo_c7",
+    "steps": [
+     {
+      "t": 1891.55,
+      "txt": "Warm the milk",
+      "k": "mo_c7"
+     },
+     {
+      "t": 1894.55,
+      "txt": "Knead ten minutes",
+      "k": "mo_c7"
+     }
+    ]
+   }
+  },
+  {
+   "a": 1897.29,
+   "b": 1904.27,
+   "k": "p_wheat_grains",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_wheat_grains"
+   }
+  },
+  {
+   "a": 1904.27,
+   "b": 1910.9,
+   "k": "mo_d3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_d3"
+   }
+  },
+  {
+   "a": 1910.9,
+   "b": 1919.89,
+   "k": "mo_e1",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_e1"
+   }
+  },
+  {
+   "a": 1919.89,
+   "b": 1925.07,
+   "k": "mo_e3",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_e3"
+   }
+  },
+  {
+   "a": 1925.07,
+   "b": 1935.07,
+   "k": "mo_e4",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_e4"
+   }
+  },
+  {
+   "a": 1935.07,
+   "b": 1941.62,
+   "k": "mo_f2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_f2"
+   }
+  },
+  {
+   "a": 1941.62,
+   "b": 1948.42,
+   "k": "mo_g8",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "mo_g8"
+   }
+  },
+  {
+   "a": 1948.42,
+   "b": 1955.31,
+   "k": "o_crumb",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_crumb"
+   }
+  },
+  {
+   "a": 1955.31,
+   "b": 1960.81,
+   "k": "o_crumbs_jar",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_crumbs_jar"
+   }
+  },
+  {
+   "a": 1960.81,
+   "b": 1970.66,
+   "k": "o_crust",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_crust"
+   }
+  },
+  {
+   "a": 1970.66,
+   "b": 1979.99,
+   "k": "o_dough_ball",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_dough_ball"
+   }
+  },
+  {
+   "a": 1979.99,
+   "b": 1984.41,
+   "k": "o_dry_heel",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_dry_heel"
+   }
+  },
+  {
+   "a": 1984.41,
+   "b": 1991.51,
+   "k": "o_fr_toast",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_fr_toast"
+   }
+  },
+  {
+   "a": 1991.51,
+   "b": 1998.51,
+   "k": "o_milkpan",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_milkpan"
+   }
+  },
+  {
+   "a": 1998.51,
+   "b": 2005.84,
+   "k": "o_stale",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_stale"
+   }
+  },
+  {
+   "a": 2005.84,
+   "b": 2012.2,
+   "k": "o_wax",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "o_wax"
+   }
+  },
+  {
+   "a": 2012.2,
+   "b": 2019.45,
+   "k": "old_03",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "old_03"
+   }
+  },
+  {
+   "a": 2019.45,
+   "b": 2025.51,
+   "k": "p_bread_box2",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_bread_box2"
+   }
+  },
+  {
+   "a": 2025.51,
+   "b": 2032.19,
+   "k": "p_cinn_slice",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_cinn_slice"
+   }
+  },
+  {
+   "a": 2032.19,
+   "b": 2038.57,
+   "k": "p_cup_yeast",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_cup_yeast"
+   }
+  },
+  {
+   "a": 2038.57,
+   "b": 2041.81,
+   "k": "p_dome",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_dome"
+   }
+  },
+  {
+   "a": 2041.81,
+   "b": 2049.11,
+   "k": "p_jam_jar",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_jam_jar"
+   }
+  },
+  {
+   "a": 2049.11,
+   "b": 2059.66,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "o": [
+    50,
+    22
+   ]
+  },
+  {
+   "a": 2059.66,
+   "b": 2064.68,
+   "k": "p_knead_board",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_knead_board"
+   }
+  },
+  {
+   "a": 2064.68,
+   "b": 2072.83,
+   "k": "p_lemon",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_lemon"
+   }
+  },
+  {
+   "a": 2072.83,
+   "b": 2076.51,
+   "k": "p_mold_slice",
+   "c": "PhotoBeats",
+   "props": {
+    "k": "p_mold_slice"
+   }
+  }
+ ],
+ "end": 2076.51
+}
