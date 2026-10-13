@@ -12,8 +12,10 @@ export const RayCta: React.FC<{
   eyebrow?: string;
   qr?: string;
   showQr?: boolean;
+  shot?: string;
   durationInFrames?: number;
 }> = ({
+  shot = undefined,
   title = "The One Afternoon Door",
   sub = "The exact spots, the bolt-down, the decoy — the whole afternoon laid out.",
   domain = "[ walkthrough below ]",
@@ -61,6 +63,7 @@ export const RayCta: React.FC<{
               <div style={{ fontFamily: F_BODY, fontWeight: 500, fontSize: 21, lineHeight: 1.32, color: V.bone, textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}>
                 {sub}
               </div>
+              {shot ? <Img src={staticFile(shot)} style={{ width: 360, borderRadius: 8, marginTop: 12, border: `1px solid ${rgba(V.brass, 0.5)}`, background: "#fff" }} /> : null}
             </div>
 
             {/* QR: real si lo pasan, si no placeholder dibujado. showQr=false lo oculta del todo (canales sin producto). */}
