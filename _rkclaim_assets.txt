@@ -111,8 +111,10 @@ img/rkclaim_det_strike_short_vs_long_blur.jpg
 img/rkclaim_det_window_lock.jpg
 img/rkclaim_det_window_lock_blur.jpg
 img/rkclaim_landing.png
+img/rkclaim_landing_blur.jpg
 img/rkclaim_landing_blur.png
 img/rkclaim_qr.png
+img/rkclaim_qr_blur.jpg
 img/rkclaim_qr_blur.png
 img/rkclaim_ray_bathrobe.jpg
 img/rkclaim_ray_bathrobe_blur.jpg
