@@ -199,3 +199,5 @@ rkfoil.m4a
 img/rkfoil_qr_blur.jpg
 img/rkfoil_landing_blur.jpg
 img/rkfoil_landing.png
+img/rkfoil_n7_side_yard_dark.jpg
+img/rkfoil_n7_side_yard_dark_blur.jpg
