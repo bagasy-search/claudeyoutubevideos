@@ -44,6 +44,7 @@ jobs:
           for n in 1 2 3 4 5; do gh release download "$SLUG-farm-assets" -R ${{ github.repository }} -p "${SLUG}_assets.tar" -D . --clobber && break; sleep $((n*10)); done
           tar -xf "${SLUG}_assets.tar" -C pkg
           cp plano.py cine.py comp*.py graf.py shots.json planos.json pkg/vid/
+          cp mapa3d.py pkg/vid/ 2>/dev/null || true
           if [ -f look.txt ]; then echo "TGP_LOOK=$(cat look.txt)" >> "$GITHUB_ENV"; fi   # Caja Naranja: look arcilla (comp7)
           if [ -f film.txt ]; then echo "TGP_FILM=$(cat film.txt)" >> "$GITHUB_ENV"; fi   # madera limpia: sin grano, halación ni viñeta
       - name: render ${{ matrix.job.id }}

@@ -3,270 +3,390 @@
   "id": "apertura",
   "kind": "open",
   "t0": 0.0,
-  "dur": 6.84,
+  "dur": 0.86,
   "at": "0",
   "exacto": true
  },
  {
-  "id": "t_hoja_raspa",
-  "kind": "depth2",
-  "t0": 6.84,
-  "dur": 1.42,
+  "id": "h_splat",
+  "kind": "film",
+  "t0": 0.86,
+  "dur": 0.86,
   "at": "1.0",
   "exacto": true
  },
  {
-  "id": "t_titulo",
+  "id": "h_vela",
+  "kind": "film",
+  "t0": 1.72,
+  "dur": 1.08,
+  "at": "1.0@escribir fue",
+  "exacto": true
+ },
+ {
+  "id": "h_tintero",
+  "kind": "film",
+  "t0": 2.8,
+  "dur": 1.16,
+  "at": "1.0@contra la tinta",
+  "exacto": true
+ },
+ {
+  "id": "h_moja",
+  "kind": "film",
+  "t0": 3.96,
+  "dur": 1.4,
+  "at": "1.1",
+  "exacto": true
+ },
+ {
+  "id": "h_plumin",
+  "kind": "film",
+  "t0": 5.36,
+  "dur": 1.0,
+  "at": "1.1@escrib\u00edas",
+  "exacto": true
+ },
+ {
+  "id": "h_remoja",
+  "kind": "film",
+  "t0": 6.36,
+  "dur": 2.22,
+  "at": "1.1@y otra vez",
+  "exacto": true
+ },
+ {
+  "id": "h_bnplumin",
+  "kind": "film",
+  "t0": 8.58,
+  "dur": 1.62,
+  "at": "1.2",
+  "exacto": true
+ },
+ {
+  "id": "h_mano",
+  "kind": "film",
+  "t0": 10.2,
+  "dur": 2.64,
+  "at": "1.2@un roce",
+  "exacto": true
+ },
+ {
+  "id": "h_gotas",
+  "kind": "film",
+  "t0": 12.84,
+  "dur": 2.74,
+  "at": "1.3",
+  "exacto": true
+ },
+ {
+  "id": "h_mancha",
+  "kind": "film",
+  "t0": 15.58,
+  "dur": 1.9,
+  "at": "1.3@la mancha",
+  "exacto": true
+ },
+ {
+  "id": "h_zurdo",
   "kind": "depth2",
-  "t0": 8.26,
-  "dur": 2.42,
-  "at": "1.0@mil novecientos cuarenta y tres",
+  "t0": 17.48,
+  "dur": 2.34,
+  "at": "1.4",
+  "exacto": true
+ },
+ {
+  "id": "h_avion",
+  "kind": "film",
+  "t0": 19.82,
+  "dur": 1.64,
+  "at": "1.4@los pilotos",
+  "exacto": true
+ },
+ {
+  "id": "h_navmancha",
+  "kind": "depth2",
+  "t0": 21.46,
+  "dur": 2.94,
+  "at": "1.4@con los mapas",
+  "exacto": true
+ },
+ {
+  "id": "h_escribe46",
+  "kind": "film",
+  "t0": 24.4,
+  "dur": 1.9,
+  "at": "1.5",
+  "exacto": true
+ },
+ {
+  "id": "h_redaccion",
+  "kind": "film",
+  "t0": 26.3,
+  "dur": 1.16,
+  "at": "1.5@con el mismo problema",
+  "exacto": true
+ },
+ {
+  "id": "h_escritorio",
+  "kind": "film",
+  "t0": 27.46,
+  "dur": 1.82,
+  "at": "1.5@desde hac\u00eda siglos",
+  "exacto": true
+ },
+ {
+  "id": "h_biro_idea",
+  "kind": "depth2",
+  "t0": 29.28,
+  "dur": 3.7,
+  "at": "1.6",
+  "exacto": true
+ },
+ {
+  "id": "h_birome",
+  "kind": "film",
+  "t0": 32.98,
+  "dur": 3.172,
+  "at": "1.6@una bolita de metal",
+  "exacto": true
+ },
+ {
+  "id": "m_ba_oro",
+  "kind": "mapa3d",
+  "t0": 36.152,
+  "dur": 3.84,
+  "at": "1.7",
   "exacto": true
  },
  {
   "id": "t_garaje",
   "kind": "depth2",
-  "t0": 10.68,
+  "t0": 39.992,
   "dur": 1.82,
-  "at": "1.0@un garaje convertido",
+  "at": "1.7@un garaje convertido",
   "exacto": true
  },
  {
   "id": "a_ba_40_o",
   "kind": "depth2",
-  "t0": 12.5,
+  "t0": 41.812,
   "dur": 1.26,
-  "at": "1.0@en la calle oro",
+  "at": "1.7@en la calle oro",
   "exacto": true
  },
  {
   "id": "t_rayas",
   "kind": "depth2",
-  "t0": 13.76,
+  "t0": 43.072,
   "dur": 3.64,
-  "at": "1.1",
+  "at": "1.8",
   "exacto": true
  },
  {
   "id": "o_hoja_rayas",
   "kind": "depth2",
-  "t0": 17.4,
+  "t0": 46.712,
   "dur": 2.7,
-  "at": "1.1@rayas que no dejaron nada",
+  "at": "1.8@rayas que no dejaron nada",
   "exacto": true
  },
  {
   "id": "t_tubito",
   "kind": "depth2",
-  "t0": 20.1,
+  "t0": 49.412,
   "dur": 3.1,
-  "at": "1.1@un tubito de metal",
+  "at": "1.8@un tubito de metal",
   "exacto": true
  },
  {
   "id": "b43_toma",
   "kind": "depth2",
-  "t0": 23.2,
+  "t0": 52.512,
   "dur": 4.08,
-  "at": "1.2",
+  "at": "1.9",
   "exacto": true
  },
  {
   "id": "b43_tubito",
   "kind": "depth2",
-  "t0": 27.28,
+  "t0": 56.592,
   "dur": 1.24,
-  "at": "1.2@toma el tubito",
+  "at": "1.9@toma el tubito",
   "exacto": true
  },
  {
   "id": "b43_arrastra",
   "kind": "depth2",
-  "t0": 28.52,
+  "t0": 57.832,
   "dur": 3.12,
-  "at": "1.2@lo apoya sobre el papel",
+  "at": "1.9@lo apoya sobre el papel",
   "exacto": true
  },
  {
   "id": "trazo0",
   "kind": "trazo",
-  "t0": 31.64,
+  "t0": 60.952,
   "dur": 1.98,
-  "at": "1.3",
+  "at": "1.10",
   "exacto": true
  },
  {
   "id": "b43_cara",
   "kind": "depth2",
-  "t0": 33.62,
-  "dur": 1.92,
-  "at": "1.3@y no sale nada",
+  "t0": 62.932,
+  "dur": 3.82,
+  "at": "1.10@y no sale nada",
   "exacto": true
  },
  {
-  "id": "a_bp_erzsebet_o",
-  "kind": "depth2",
-  "t0": 35.54,
-  "dur": 3.62,
-  "at": "1.4",
+  "id": "m_viaje",
+  "kind": "mapa3d",
+  "t0": 66.752,
+  "dur": 7.2,
+  "at": "1.11@lo intent\u00f3 en budapest",
   "exacto": true
  },
  {
-  "id": "a_paris_lazare_o",
-  "kind": "proyector",
-  "t0": 39.16,
-  "dur": 1.3,
-  "at": "1.4@lo intent\u00f3 en par\u00eds",
-  "exacto": true
- },
- {
-  "id": "cb_garaje",
-  "kind": "depth2",
-  "t0": 40.46,
-  "dur": 1.84,
-  "at": "1.4@y ahora lo intenta ac\u00e1",
-  "exacto": true
- },
- {
-  "id": "o_barco_mar",
-  "kind": "depth2",
-  "t0": 42.3,
-  "dur": 4.5,
-  "at": "1.4@a once mil kil\u00f3metros",
+  "id": "h_tropas",
+  "kind": "film",
+  "t0": 73.952,
+  "dur": 2.16,
+  "at": "1.11@despu\u00e9s de huir de una guerra",
   "exacto": true
  },
  {
   "id": "o_billetes",
   "kind": "depth2",
-  "t0": 46.8,
+  "t0": 76.112,
   "dur": 2.22,
-  "at": "1.5",
+  "at": "1.12",
   "exacto": true
  },
  {
   "id": "a_ba_lavalle_o",
   "kind": "depth2",
-  "t0": 49.02,
+  "t0": 78.332,
   "dur": 1.22,
-  "at": "1.5@los que pusieron el dinero",
+  "at": "1.12@los que pusieron el dinero",
   "exacto": true
  },
  {
   "id": "p_financistas",
   "kind": "depth2",
-  "t0": 50.24,
+  "t0": 79.552,
   "dur": 4.68,
-  "at": "1.5@ya preguntan cu\u00e1ndo",
+  "at": "1.12@ya preguntan cu\u00e1ndo",
   "exacto": true
  },
  {
   "id": "a_gimbels_o",
   "kind": "depth2",
-  "t0": 54.92,
+  "t0": 84.232,
   "dur": 1.46,
-  "at": "1.6",
+  "at": "1.13",
   "exacto": true
  },
  {
   "id": "a_gimbels_bridge_o0",
   "kind": "proyector",
-  "t0": 56.38,
+  "t0": 85.692,
   "dur": 1.46,
-  "at": "1.6@dos a\u00f1os despu\u00e9s",
+  "at": "1.13@dos a\u00f1os despu\u00e9s",
   "exacto": true
  },
  {
   "id": "p_policias",
   "kind": "depth2",
-  "t0": 57.84,
+  "t0": 87.152,
   "dur": 2.08,
-  "at": "1.6@cincuenta polic\u00edas",
+  "at": "1.13@cincuenta polic\u00edas",
   "exacto": true
  },
  {
   "id": "a_ny_vj_o",
   "kind": "depth2",
-  "t0": 59.92,
+  "t0": 89.232,
   "dur": 3.96,
-  "at": "1.6@a la gente que quer\u00eda comprar",
+  "at": "1.13@a la gente que quer\u00eda comprar",
   "exacto": true
  },
  {
   "id": "o_rocket",
   "kind": "depth2",
-  "t0": 63.88,
+  "t0": 93.192,
   "dur": 1.56,
-  "at": "1.6@no era el suyo",
+  "at": "1.13@no era el suyo",
   "exacto": true
  },
  {
   "id": "o_bic_lluvia",
   "kind": "depth2",
-  "t0": 65.44,
+  "t0": 94.752,
   "dur": 4.34,
-  "at": "1.7",
+  "at": "1.14",
   "exacto": true
  },
  {
   "id": "cifra_cienmil",
   "kind": "tipos",
-  "t0": 69.78,
+  "t0": 99.092,
   "dur": 1.26,
-  "at": "1.7@cien mil millones",
+  "at": "1.14@cien mil millones",
   "exacto": true
  },
  {
   "id": "b80_ventana",
   "kind": "depth2",
-  "t0": 71.04,
+  "t0": 100.352,
   "dur": 2.6,
-  "at": "1.7@y no fue \u00e9l",
+  "at": "1.14@y no fue \u00e9l",
   "exacto": true
  },
  {
   "id": "o_cajon",
   "kind": "depth2",
-  "t0": 73.64,
+  "t0": 102.952,
   "dur": 3.38,
-  "at": "1.8",
+  "at": "1.15",
   "exacto": true
  },
  {
   "id": "a_bp_macro_o",
   "kind": "depth2",
-  "t0": 77.02,
+  "t0": 106.332,
   "dur": 1.06,
-  "at": "1.8@en un caj\u00f3n",
+  "at": "1.15@en un caj\u00f3n",
   "exacto": true
  },
  {
   "id": "o_mochila",
   "kind": "depth2",
-  "t0": 78.08,
+  "t0": 107.392,
   "dur": 2.64,
-  "at": "1.8@en una mochila",
+  "at": "1.15@en una mochila",
   "exacto": true
  },
  {
   "id": "o_apellido",
   "kind": "depth2",
-  "t0": 80.72,
+  "t0": 110.032,
   "dur": 2.62,
-  "at": "1.8@en algunos pa\u00edses",
+  "at": "1.15@en algunos pa\u00edses",
   "exacto": true
  },
  {
   "id": "lupa_biro0",
   "kind": "fotolupa",
-  "t0": 83.34,
+  "t0": 112.652,
   "dur": 5.0,
-  "at": "1.8@de este hombre",
+  "at": "1.15@de este hombre",
   "exacto": true
  },
  {
   "id": "t01_tallador",
   "kind": "depth2",
-  "t0": 88.34,
+  "t0": 117.652,
   "dur": 1.96,
   "at": "3.0",
   "exacto": true
@@ -274,7 +394,7 @@
  {
   "id": "a_biro_1978_ab",
   "kind": "depth2",
-  "t0": 90.3,
+  "t0": 119.612,
   "dur": 4.24,
   "at": "3.0@aqu\u00ed tallamos en madera",
   "exacto": true
@@ -282,7 +402,7 @@
  {
   "id": "t_estante",
   "kind": "depth2",
-  "t0": 94.54,
+  "t0": 123.852,
   "dur": 5.2,
   "at": "3.0@si te gustan",
   "exacto": true
@@ -290,7 +410,7 @@
  {
   "id": "trazo_0b",
   "kind": "trazo",
-  "t0": 99.74,
+  "t0": 129.052,
   "dur": 2.023,
   "at": "3.0@est\u00e1 a punto de girar",
   "exacto": true
@@ -298,7 +418,7 @@
  {
   "id": "cap1",
   "kind": "capitulo",
-  "t0": 101.763,
+  "t0": 131.075,
   "dur": 2.877,
   "at": "4",
   "exacto": true
@@ -306,7 +426,7 @@
  {
   "id": "o_tinta_cae",
   "kind": "depth2",
-  "t0": 104.64,
+  "t0": 133.952,
   "dur": 4.74,
   "at": "5.0",
   "exacto": true
@@ -314,7 +434,7 @@
  {
   "id": "a_quill_ink_o",
   "kind": "depth2",
-  "t0": 109.38,
+  "t0": 138.692,
   "dur": 1.96,
   "at": "5.0@c\u00f3mo escrib\u00eda la gente",
   "exacto": true
@@ -322,7 +442,7 @@
  {
   "id": "o_pluma_ave",
   "kind": "depth2",
-  "t0": 111.34,
+  "t0": 140.652,
   "dur": 4.76,
   "at": "5.1",
   "exacto": true
@@ -330,7 +450,7 @@
  {
   "id": "p_navaja",
   "kind": "depth2",
-  "t0": 116.1,
+  "t0": 145.412,
   "dur": 1.92,
   "at": "5.1@se cortaba la punta",
   "exacto": true
@@ -338,7 +458,7 @@
  {
   "id": "p_moja",
   "kind": "depth2",
-  "t0": 118.02,
+  "t0": 147.332,
   "dur": 4.04,
   "at": "5.1@se mojaba en el tintero",
   "exacto": true
@@ -346,7 +466,7 @@
  {
   "id": "p_escribe_pluma",
   "kind": "depth2",
-  "t0": 122.06,
+  "t0": 151.372,
   "dur": 1.58,
   "at": "5.2",
   "exacto": true
@@ -354,7 +474,7 @@
  {
   "id": "cnt_moja",
   "kind": "tipos",
-  "t0": 123.64,
+  "t0": 152.952,
   "dur": 3.66,
   "at": "5.2@mojabas",
   "exacto": true
@@ -362,7 +482,7 @@
  {
   "id": "o_tintero",
   "kind": "depth2",
-  "t0": 127.3,
+  "t0": 156.612,
   "dur": 4.26,
   "at": "5.2@y la punta se gastaba",
   "exacto": true
@@ -370,7 +490,7 @@
  {
   "id": "a_off_quill_o",
   "kind": "depth2",
-  "t0": 131.56,
+  "t0": 160.872,
   "dur": 3.08,
   "at": "5.3",
   "exacto": true
@@ -378,7 +498,7 @@
  {
   "id": "o_plumillas",
   "kind": "depth2",
-  "t0": 134.64,
+  "t0": 163.952,
   "dur": 3.08,
   "at": "5.3@en birmingham",
   "exacto": true
@@ -386,7 +506,7 @@
  {
   "id": "o_plumillas_caja",
   "kind": "depth2",
-  "t0": 137.72,
+  "t0": 167.032,
   "dur": 2.44,
   "at": "5.3@por millones",
   "exacto": true
@@ -394,7 +514,7 @@
  {
   "id": "o_plumilla",
   "kind": "depth2",
-  "t0": 140.16,
+  "t0": 169.472,
   "dur": 2.7,
   "at": "5.3@pero segu\u00edas teniendo",
   "exacto": true
@@ -402,7 +522,7 @@
  {
   "id": "a_pat_waterman_o",
   "kind": "depth2",
-  "t0": 142.86,
+  "t0": 172.172,
   "dur": 4.52,
   "at": "5.4",
   "exacto": true
@@ -410,15 +530,15 @@
  {
   "id": "lupa_waterman",
   "kind": "fotolupa",
-  "t0": 147.38,
+  "t0": 176.692,
   "dur": 6.66,
   "at": "5.4@lewis waterman",
   "exacto": true
  },
  {
-  "id": "o_fuente",
-  "kind": "depth2",
-  "t0": 154.04,
+  "id": "f_fabrica20",
+  "kind": "film",
+  "t0": 183.352,
   "dur": 1.42,
   "at": "5.4@la pluma fuente",
   "exacto": true
@@ -426,7 +546,7 @@
  {
   "id": "a_pelikan_kolben_o",
   "kind": "depth2",
-  "t0": 155.46,
+  "t0": 184.772,
   "dur": 1.42,
   "at": "5.5",
   "exacto": true
@@ -434,7 +554,7 @@
  {
   "id": "a_pelikan_100_o",
   "kind": "proyector",
-  "t0": 156.88,
+  "t0": 186.192,
   "dur": 5.8,
   "at": "5.5@pero la pluma fuente",
   "exacto": true
@@ -442,7 +562,7 @@
  {
   "id": "o_gotea",
   "kind": "depth2",
-  "t0": 162.68,
+  "t0": 191.992,
   "dur": 3.0,
   "at": "5.6",
   "exacto": true
@@ -450,15 +570,15 @@
  {
   "id": "p_bolsillo",
   "kind": "depth2",
-  "t0": 165.68,
+  "t0": 194.992,
   "dur": 4.56,
   "at": "5.6@en el bolsillo de la camisa",
   "exacto": true
  },
  {
-  "id": "p_recarga",
-  "kind": "depth2",
-  "t0": 170.24,
+  "id": "f_carga",
+  "kind": "film",
+  "t0": 199.552,
   "dur": 1.82,
   "at": "5.6@y hab\u00eda que recargarla",
   "exacto": true
@@ -466,7 +586,7 @@
  {
   "id": "o_frasco",
   "kind": "depth2",
-  "t0": 172.06,
+  "t0": 201.372,
   "dur": 1.34,
   "at": "5.6@con un frasquito",
   "exacto": true
@@ -474,7 +594,7 @@
  {
   "id": "p_dedo_mancha",
   "kind": "depth2",
-  "t0": 173.4,
+  "t0": 202.712,
   "dur": 4.82,
   "at": "5.7",
   "exacto": true
@@ -482,7 +602,7 @@
  {
   "id": "p_manga",
   "kind": "depth2",
-  "t0": 178.22,
+  "t0": 207.532,
   "dur": 2.66,
   "at": "5.7@o con la manga",
   "exacto": true
@@ -490,7 +610,7 @@
  {
   "id": "n_zurdo",
   "kind": "depth2",
-  "t0": 180.88,
+  "t0": 210.192,
   "dur": 3.78,
   "at": "5.8",
   "exacto": true
@@ -498,7 +618,7 @@
  {
   "id": "n_zurdo_macro",
   "kind": "depth2",
-  "t0": 184.66,
+  "t0": 213.972,
   "dur": 4.18,
   "at": "5.8@y tu mano va pasando",
   "exacto": true
@@ -506,7 +626,7 @@
  {
   "id": "n_zurdo_mano",
   "kind": "depth2",
-  "t0": 188.84,
+  "t0": 218.152,
   "dur": 3.18,
   "at": "5.9",
   "exacto": true
@@ -514,7 +634,7 @@
  {
   "id": "o_pagina_manchas",
   "kind": "depth2",
-  "t0": 192.02,
+  "t0": 221.332,
   "dur": 3.6,
   "at": "5.9@y la p\u00e1gina termina llena de manchas",
   "exacto": true
@@ -522,7 +642,7 @@
  {
   "id": "a_blotter_am_o",
   "kind": "depth2",
-  "t0": 195.62,
+  "t0": 224.932,
   "dur": 1.98,
   "at": "5.10",
   "exacto": true
@@ -530,7 +650,7 @@
  {
   "id": "a_blotter_roll_o",
   "kind": "proyector",
-  "t0": 197.6,
+  "t0": 226.912,
   "dur": 1.98,
   "at": "5.10@por eso en todos",
   "exacto": true
@@ -538,7 +658,7 @@
  {
   "id": "p_secante",
   "kind": "depth2",
-  "t0": 199.58,
+  "t0": 228.892,
   "dur": 2.98,
   "at": "5.10@un papel grueso",
   "exacto": true
@@ -546,7 +666,7 @@
  {
   "id": "a_off_blotter_o",
   "kind": "depth2",
-  "t0": 202.56,
+  "t0": 231.872,
   "dur": 2.82,
   "at": "5.10@para chupar la tinta",
   "exacto": true
@@ -554,7 +674,7 @@
  {
   "id": "b32_zurdo",
   "kind": "depth2",
-  "t0": 205.38,
+  "t0": 234.692,
   "dur": 4.46,
   "at": "5.11",
   "exacto": true
@@ -562,7 +682,7 @@
  {
   "id": "b32_libreta",
   "kind": "depth2",
-  "t0": 209.84,
+  "t0": 239.152,
   "dur": 1.68,
   "at": "5.11@r\u00e1pido, todos los d\u00edas",
   "exacto": true
@@ -570,7 +690,7 @@
  {
   "id": "a_bp_hvolgy_o",
   "kind": "depth2",
-  "t0": 211.52,
+  "t0": 240.832,
   "dur": 1.06,
   "at": "5.11@a veces de pie",
   "exacto": true
@@ -578,7 +698,7 @@
  {
   "id": "b32_calle",
   "kind": "depth2",
-  "t0": 212.58,
+  "t0": 241.892,
   "dur": 1.48,
   "at": "5.11@a veces en la calle",
   "exacto": true
@@ -586,7 +706,7 @@
  {
   "id": "o_fuente_seca",
   "kind": "depth2",
-  "t0": 214.06,
+  "t0": 243.372,
   "dur": 1.88,
   "at": "5.12",
   "exacto": true
@@ -594,7 +714,7 @@
  {
   "id": "a_pelikan_nib_o",
   "kind": "depth2",
-  "t0": 215.94,
+  "t0": 245.252,
   "dur": 3.78,
   "at": "5.12@de buena marca",
   "exacto": true
@@ -602,7 +722,7 @@
  {
   "id": "b32_sacude",
   "kind": "depth2",
-  "t0": 219.72,
+  "t0": 249.032,
   "dur": 2.22,
   "at": "5.12@justo cuando m\u00e1s",
   "exacto": true
@@ -610,7 +730,7 @@
  {
   "id": "n_cocina",
   "kind": "depth2",
-  "t0": 221.94,
+  "t0": 251.252,
   "dur": 3.02,
   "at": "5.13",
   "exacto": true
@@ -618,7 +738,7 @@
  {
   "id": "a_off_desk_o",
   "kind": "depth2",
-  "t0": 224.96,
+  "t0": 254.272,
   "dur": 2.66,
   "at": "5.13@para entenderlo",
   "exacto": true
@@ -626,7 +746,7 @@
  {
   "id": "n_pajita_agua",
   "kind": "depth2",
-  "t0": 227.62,
+  "t0": 256.932,
   "dur": 4.2,
   "at": "5.14",
   "exacto": true
@@ -634,7 +754,7 @@
  {
   "id": "n_pajita_sube",
   "kind": "depth2",
-  "t0": 231.82,
+  "t0": 261.132,
   "dur": 1.74,
   "at": "5.14@el agua sube y baja",
   "exacto": true
@@ -642,7 +762,7 @@
  {
   "id": "visc1",
   "kind": "viscosidad",
-  "t0": 233.56,
+  "t0": 262.872,
   "dur": 1.66,
   "at": "5.14@sin ning\u00fan esfuerzo",
   "exacto": true
@@ -650,7 +770,7 @@
  {
   "id": "n_pajita_miel",
   "kind": "depth2",
-  "t0": 235.22,
+  "t0": 264.532,
   "dur": 4.94,
   "at": "5.15",
   "exacto": true
@@ -658,7 +778,7 @@
  {
   "id": "o_miel_macro",
   "kind": "depth2",
-  "t0": 240.16,
+  "t0": 269.472,
   "dur": 1.86,
   "at": "5.15@se queda pegada",
   "exacto": true
@@ -666,7 +786,7 @@
  {
   "id": "visc2",
   "kind": "viscosidad",
-  "t0": 242.02,
+  "t0": 271.332,
   "dur": 3.36,
   "at": "5.16",
   "exacto": true
@@ -674,7 +794,7 @@
  {
   "id": "a_off_ham_o",
   "kind": "depth2",
-  "t0": 245.38,
+  "t0": 274.692,
   "dur": 5.42,
   "at": "5.16@la pluma fuente necesita",
   "exacto": true
@@ -682,7 +802,7 @@
  {
   "id": "o_plumilla_canal",
   "kind": "depth2",
-  "t0": 250.8,
+  "t0": 280.112,
   "dur": 1.48,
   "at": "5.16@por su canalito",
   "exacto": true
@@ -690,7 +810,7 @@
  {
   "id": "o_tinta_corre",
   "kind": "depth2",
-  "t0": 252.28,
+  "t0": 281.592,
   "dur": 2.84,
   "at": "5.17",
   "exacto": true
@@ -698,7 +818,7 @@
  {
   "id": "o_tinta_humeda",
   "kind": "depth2",
-  "t0": 255.12,
+  "t0": 284.432,
   "dur": 3.66,
   "at": "5.17@y el agua tarda en secarse",
   "exacto": true
@@ -706,7 +826,7 @@
  {
   "id": "o_tinta_espesa",
   "kind": "depth2",
-  "t0": 258.78,
+  "t0": 288.092,
   "dur": 1.42,
   "at": "5.18",
   "exacto": true
@@ -714,7 +834,7 @@
  {
   "id": "a_rot_duplex_o",
   "kind": "depth2",
-  "t0": 260.2,
+  "t0": 289.512,
   "dur": 6.64,
   "at": "5.18@la que se seca en un instante",
   "exacto": true
@@ -722,7 +842,7 @@
  {
   "id": "visc3",
   "kind": "viscosidad",
-  "t0": 266.84,
+  "t0": 296.152,
   "dur": 7.465,
   "at": "5.19",
   "exacto": true
@@ -730,7 +850,7 @@
  {
   "id": "o_gota_hoja",
   "kind": "depth2",
-  "t0": 274.305,
+  "t0": 303.617,
   "dur": 3.0,
   "at": "6",
   "exacto": true
@@ -738,7 +858,7 @@
  {
   "id": "cap2",
   "kind": "capitulo",
-  "t0": 277.305,
+  "t0": 306.617,
   "dur": 3.455,
   "at": "7",
   "exacto": true
@@ -746,7 +866,7 @@
  {
   "id": "a_bp_karta",
   "kind": "depth2",
-  "t0": 280.76,
+  "t0": 310.072,
   "dur": 1.04,
   "at": "8.0",
   "exacto": true
@@ -754,7 +874,7 @@
  {
   "id": "o_fecha_1899",
   "kind": "depth2",
-  "t0": 281.8,
+  "t0": 311.112,
   "dur": 5.96,
   "at": "8.0@veintinueve de septiembre",
   "exacto": true
@@ -762,7 +882,7 @@
  {
   "id": "p_medico_1899",
   "kind": "depth2",
-  "t0": 287.76,
+  "t0": 317.072,
   "dur": 1.74,
   "at": "8.0@que no va a sobrevivir",
   "exacto": true
@@ -770,7 +890,7 @@
  {
   "id": "o_caja_zapatos",
   "kind": "depth2",
-  "t0": 289.5,
+  "t0": 318.812,
   "dur": 4.02,
   "at": "8.1",
   "exacto": true
@@ -778,7 +898,7 @@
  {
   "id": "p_madre",
   "kind": "depth2",
-  "t0": 293.52,
+  "t0": 322.832,
   "dur": 4.96,
   "at": "8.1@su madre hace lo que puede",
   "exacto": true
@@ -786,7 +906,7 @@
  {
   "id": "o_lampara_caja",
   "kind": "depth2",
-  "t0": 298.48,
+  "t0": 327.792,
   "dur": 2.3,
   "at": "8.1@una l\u00e1mpara debajo",
   "exacto": true
@@ -794,7 +914,7 @@
  {
   "id": "o_bebe_mano",
   "kind": "depth2",
-  "t0": 300.78,
+  "t0": 330.092,
   "dur": 2.54,
   "at": "8.2",
   "exacto": true
@@ -802,7 +922,7 @@
  {
   "id": "a_bp_havas_o",
   "kind": "depth2",
-  "t0": 303.32,
+  "t0": 332.632,
   "dur": 1.9,
   "at": "8.3",
   "exacto": true
@@ -810,7 +930,7 @@
  {
   "id": "o_dentista",
   "kind": "depth2",
-  "t0": 305.22,
+  "t0": 334.532,
   "dur": 5.08,
   "at": "8.3@su padre es dentista",
   "exacto": true
@@ -818,7 +938,7 @@
  {
   "id": "a_bp_attila_o",
   "kind": "depth2",
-  "t0": 310.3,
+  "t0": 339.612,
   "dur": 2.94,
   "at": "8.3@como hicieron entonces",
   "exacto": true
@@ -826,7 +946,7 @@
  {
   "id": "rot_nombre",
   "kind": "tipos",
-  "t0": 313.24,
+  "t0": 342.552,
   "dur": 6.7,
   "at": "8.3@por uno h\u00fangaro",
   "exacto": true
@@ -834,7 +954,7 @@
  {
   "id": "o_martillo",
   "kind": "depth2",
-  "t0": 319.94,
+  "t0": 349.252,
   "dur": 2.36,
   "at": "8.4@quiere decir juez",
   "exacto": true
@@ -842,7 +962,7 @@
  {
   "id": "p_arbitro",
   "kind": "depth2",
-  "t0": 322.3,
+  "t0": 351.612,
   "dur": 1.28,
   "at": "8.4@el que arbitra",
   "exacto": true
@@ -850,7 +970,7 @@
  {
   "id": "b_joven_corre",
   "kind": "depth2",
-  "t0": 323.58,
+  "t0": 352.892,
   "dur": 3.36,
   "at": "8.5",
   "exacto": false
@@ -858,7 +978,7 @@
  {
   "id": "a_bp_teleki_o",
   "kind": "depth2",
-  "t0": 326.94,
+  "t0": 356.252,
   "dur": 2.64,
   "at": "8.5@empieza a estudiar medicina",
   "exacto": true
@@ -866,7 +986,7 @@
  {
   "id": "o_pendulo",
   "kind": "depth2",
-  "t0": 329.58,
+  "t0": 358.892,
   "dur": 3.86,
   "at": "8.5@descubre la hipnosis",
   "exacto": true
@@ -874,7 +994,7 @@
  {
   "id": "b_hipnosis",
   "kind": "depth2",
-  "t0": 333.44,
+  "t0": 362.752,
   "dur": 2.02,
   "at": "8.5@trabajar como hipnotizador",
   "exacto": true
@@ -882,7 +1002,7 @@
  {
   "id": "b_pinta",
   "kind": "depth2",
-  "t0": 335.46,
+  "t0": 364.772,
   "dur": 2.98,
   "at": "8.6",
   "exacto": true
@@ -890,7 +1010,7 @@
  {
   "id": "b_esculpe",
   "kind": "depth2",
-  "t0": 338.44,
+  "t0": 367.752,
   "dur": 1.36,
   "at": "8.6@hace esculturas",
   "exacto": true
@@ -898,7 +1018,7 @@
  {
   "id": "o_libro_cuentas",
   "kind": "depth2",
-  "t0": 339.8,
+  "t0": 369.112,
   "dur": 4.64,
   "at": "8.6@se mete en negocios",
   "exacto": true
@@ -906,7 +1026,7 @@
  {
   "id": "a_bp_szedo_o",
   "kind": "depth2",
-  "t0": 344.44,
+  "t0": 373.752,
   "dur": 1.32,
   "at": "8.6@el periodismo",
   "exacto": true
@@ -914,39 +1034,39 @@
  {
   "id": "a_bp_dunapart_o",
   "kind": "proyector",
-  "t0": 345.76,
+  "t0": 375.072,
   "dur": 1.6,
   "at": "8.7",
   "exacto": true
  },
  {
-  "id": "a_bp_30s_o",
-  "kind": "copia",
-  "t0": 347.36,
+  "id": "f_bp_danubio",
+  "kind": "film",
+  "t0": 376.672,
   "dur": 1.42,
   "at": "8.7@una ciudad enorme",
   "exacto": true
  },
  {
-  "id": "a_bp_palota_o",
-  "kind": "proyector",
-  "t0": 348.78,
+  "id": "f_bp_puente",
+  "kind": "film",
+  "t0": 378.092,
   "dur": 1.2,
   "at": "8.7@sobre el danubio",
   "exacto": true
  },
  {
   "id": "a_bp_lanchid_o",
-  "kind": "copia",
-  "t0": 349.98,
+  "kind": "depth2",
+  "t0": 379.292,
   "dur": 2.3,
   "at": "8.7@llena de caf\u00e9s",
   "exacto": true
  },
  {
-  "id": "p_cafe_escriben",
-  "kind": "depth2",
-  "t0": 352.28,
+  "id": "f_bp_cafe",
+  "kind": "film",
+  "t0": 381.592,
   "dur": 1.68,
   "at": "8.7@pasan las horas escribiendo",
   "exacto": true
@@ -954,7 +1074,7 @@
  {
   "id": "a_bp_newyork_kul_o",
   "kind": "depth2",
-  "t0": 353.96,
+  "t0": 383.272,
   "dur": 1.2,
   "at": "8.8",
   "exacto": true
@@ -962,15 +1082,15 @@
  {
   "id": "b32_cafe",
   "kind": "depth2",
-  "t0": 355.16,
+  "t0": 384.472,
   "dur": 1.55,
   "at": "8.8@corre de una nota",
   "exacto": true
  },
  {
-  "id": "a_bp_newyork2_o",
-  "kind": "depth2",
-  "t0": 356.71,
+  "id": "f_bp_calle",
+  "kind": "film",
+  "t0": 386.022,
   "dur": 1.55,
   "at": "8.8@corre de una nota",
   "exacto": true
@@ -978,7 +1098,7 @@
  {
   "id": "b32_tranvia",
   "kind": "depth2",
-  "t0": 358.26,
+  "t0": 387.572,
   "dur": 1.22,
   "at": "8.8@escribe en el tranv\u00eda",
   "exacto": true
@@ -986,7 +1106,7 @@
  {
   "id": "b32_redac",
   "kind": "depth2",
-  "t0": 359.48,
+  "t0": 388.792,
   "dur": 1.16,
   "at": "8.8@en la redacci\u00f3n",
   "exacto": true
@@ -994,7 +1114,7 @@
  {
   "id": "a_bp_newyork_o",
   "kind": "depth2",
-  "t0": 360.64,
+  "t0": 389.952,
   "dur": 2.26,
   "at": "8.8@en las mesitas de m\u00e1rmol",
   "exacto": true
@@ -1002,7 +1122,7 @@
  {
   "id": "b32_boda",
   "kind": "depth2",
-  "t0": 362.9,
+  "t0": 392.212,
   "dur": 3.58,
   "at": "8.9",
   "exacto": true
@@ -1010,7 +1130,7 @@
  {
   "id": "a_bp_newyork3_o",
   "kind": "depth2",
-  "t0": 366.48,
+  "t0": 395.792,
   "dur": 1.46,
   "at": "8.9@en mil novecientos treinta y tres",
   "exacto": true
@@ -1018,7 +1138,7 @@
  {
   "id": "a_bp_abbazia_o",
   "kind": "proyector",
-  "t0": 367.94,
+  "t0": 397.252,
   "dur": 1.36,
   "at": "8.9@llega a editor",
   "exacto": true
@@ -1026,7 +1146,7 @@
  {
   "id": "o_revista",
   "kind": "depth2",
-  "t0": 369.3,
+  "t0": 398.612,
   "dur": 4.62,
   "at": "8.9@revista cultural",
   "exacto": true
@@ -1034,7 +1154,7 @@
  {
   "id": "b32_bolsillo",
   "kind": "depth2",
-  "t0": 373.92,
+  "t0": 403.232,
   "dur": 4.44,
   "at": "8.10",
   "exacto": true
@@ -1042,7 +1162,7 @@
  {
   "id": "o_pelikan_traba",
   "kind": "depth2",
-  "t0": 378.36,
+  "t0": 407.672,
   "dur": 2.04,
   "at": "8.10@que se trababa",
   "exacto": true
@@ -1050,7 +1170,7 @@
  {
   "id": "a_off_ink_o",
   "kind": "depth2",
-  "t0": 380.4,
+  "t0": 409.712,
   "dur": 0.96,
   "at": "8.10@que hab\u00eda que recargar",
   "exacto": true
@@ -1058,7 +1178,7 @@
  {
   "id": "b32_piensa",
   "kind": "depth2",
-  "t0": 381.36,
+  "t0": 410.672,
   "dur": 4.48,
   "at": "8.11",
   "exacto": true
@@ -1066,7 +1186,7 @@
  {
   "id": "a_bp_hangli_o",
   "kind": "depth2",
-  "t0": 385.84,
+  "t0": 415.152,
   "dur": 3.22,
   "at": "8.11@cuando algo no le gusta",
   "exacto": true
@@ -1074,7 +1194,7 @@
  {
   "id": "b32_dibuja",
   "kind": "depth2",
-  "t0": 389.06,
+  "t0": 418.372,
   "dur": 1.9,
   "at": "8.11@intenta inventar algo mejor",
   "exacto": true
@@ -1082,7 +1202,7 @@
  {
   "id": "o_auto_30",
   "kind": "depth2",
-  "t0": 390.96,
+  "t0": 420.272,
   "dur": 4.3,
   "at": "8.12",
   "exacto": true
@@ -1090,7 +1210,7 @@
  {
   "id": "b32_auto",
   "kind": "depth2",
-  "t0": 395.26,
+  "t0": 424.572,
   "dur": 1.88,
   "at": "8.12@le pareci\u00f3 tan inc\u00f3moda",
   "exacto": true
@@ -1098,7 +1218,7 @@
  {
   "id": "o_caja_cambios",
   "kind": "depth2",
-  "t0": 397.14,
+  "t0": 426.452,
   "dur": 2.1,
   "at": "8.12@dise\u00f1\u00f3 una autom\u00e1tica",
   "exacto": true
@@ -1106,7 +1226,7 @@
  {
   "id": "a_bp_hadnagy_o",
   "kind": "depth2",
-  "t0": 399.24,
+  "t0": 428.552,
   "dur": 3.92,
   "at": "8.12@no hay forma segura",
   "exacto": true
@@ -1114,7 +1234,7 @@
  {
   "id": "o_patentes_pila",
   "kind": "depth2",
-  "t0": 403.16,
+  "t0": 432.472,
   "dur": 3.06,
   "at": "8.13",
   "exacto": true
@@ -1122,7 +1242,7 @@
  {
   "id": "o_cuadernos_inv",
   "kind": "depth2",
-  "t0": 406.22,
+  "t0": 435.532,
   "dur": 5.06,
   "at": "8.13@registr\u00f3 m\u00e1s de treinta inventos",
   "exacto": true
@@ -1130,7 +1250,7 @@
  {
   "id": "o_tinta_olor",
   "kind": "depth2",
-  "t0": 411.28,
+  "t0": 440.592,
   "dur": 2.403,
   "at": "8.13@el olor a tinta",
   "exacto": true
@@ -1138,7 +1258,7 @@
  {
   "id": "t03_soplo",
   "kind": "depth2",
-  "t0": 413.683,
+  "t0": 442.995,
   "dur": 3.0,
   "at": "9",
   "exacto": true
@@ -1146,15 +1266,15 @@
  {
   "id": "cap3",
   "kind": "capitulo",
-  "t0": 416.683,
+  "t0": 445.995,
   "dur": 2.957,
   "at": "10",
   "exacto": true
  },
  {
-  "id": "o_rotativa",
-  "kind": "depth2",
-  "t0": 419.64,
+  "id": "f_rot_sala",
+  "kind": "film",
+  "t0": 448.952,
   "dur": 2.68,
   "at": "11.0",
   "exacto": true
@@ -1162,7 +1282,7 @@
  {
   "id": "a_rot_hbl_o",
   "kind": "depth2",
-  "t0": 422.32,
+  "t0": 451.632,
   "dur": 1.98,
   "at": "11.0@las rotativas no paran",
   "exacto": true
@@ -1170,15 +1290,15 @@
  {
   "id": "a_rot_journal_o",
   "kind": "proyector",
-  "t0": 424.3,
+  "t0": 453.612,
   "dur": 2.08,
   "at": "11.0@m\u00e1quinas enormes de hierro",
   "exacto": true
  },
  {
-  "id": "o_cilindros",
-  "kind": "depth2",
-  "t0": 426.38,
+  "id": "f_rot_cil",
+  "kind": "film",
+  "t0": 455.692,
   "dur": 2.82,
   "at": "11.0@cilindros que giran",
   "exacto": true
@@ -1186,15 +1306,15 @@
  {
   "id": "a_rot_seattle_o",
   "kind": "depth2",
-  "t0": 429.2,
+  "t0": 458.512,
   "dur": 1.18,
   "at": "11.0@que hace temblar el piso",
   "exacto": true
  },
  {
-  "id": "o_rollo",
-  "kind": "depth2",
-  "t0": 430.38,
+  "id": "f_rot_rollo",
+  "kind": "film",
+  "t0": 459.692,
   "dur": 4.76,
   "at": "11.1",
   "exacto": true
@@ -1202,7 +1322,7 @@
  {
   "id": "o_diarios_salen",
   "kind": "depth2",
-  "t0": 435.14,
+  "t0": 464.452,
   "dur": 2.0,
   "at": "11.1@salen los diarios",
   "exacto": true
@@ -1210,7 +1330,7 @@
  {
   "id": "a_rot_kranten_o",
   "kind": "depth2",
-  "t0": 437.14,
+  "t0": 466.452,
   "dur": 1.74,
   "at": "11.1@cortados y doblados",
   "exacto": true
@@ -1218,7 +1338,7 @@
  {
   "id": "b32_baja",
   "kind": "depth2",
-  "t0": 438.88,
+  "t0": 468.192,
   "dur": 2.02,
   "at": "11.2",
   "exacto": false
@@ -1226,7 +1346,7 @@
  {
   "id": "a_rot_seattle2_o",
   "kind": "depth2",
-  "t0": 440.9,
+  "t0": 470.212,
   "dur": 1.14,
   "at": "11.2@bajaba muchas veces",
   "exacto": true
@@ -1234,7 +1354,7 @@
  {
   "id": "p_imprentero",
   "kind": "depth2",
-  "t0": 442.04,
+  "t0": 471.352,
   "dur": 3.4,
   "at": "11.2@ver salir su nota",
   "exacto": true
@@ -1242,7 +1362,7 @@
  {
   "id": "b32_mira",
   "kind": "depth2",
-  "t0": 445.44,
+  "t0": 474.752,
   "dur": 2.1,
   "at": "11.2@algo en lo que nadie se fijaba",
   "exacto": true
@@ -1250,7 +1370,7 @@
  {
   "id": "o_diarios_pila",
   "kind": "depth2",
-  "t0": 447.54,
+  "t0": 476.852,
   "dur": 1.5,
   "at": "11.3",
   "exacto": true
@@ -1258,7 +1378,7 @@
  {
   "id": "lupa_kranten",
   "kind": "fotolupa",
-  "t0": 449.04,
+  "t0": 478.352,
   "dur": 1.8,
   "at": "11.3@a una velocidad incre\u00edble",
   "exacto": true
@@ -1266,7 +1386,7 @@
  {
   "id": "a_rot_telegraaf_o",
   "kind": "depth2",
-  "t0": 450.84,
+  "t0": 480.152,
   "dur": 1.38,
   "at": "11.3@uno encima de otro",
   "exacto": true
@@ -1274,7 +1394,7 @@
  {
   "id": "o_diario_limpio",
   "kind": "depth2",
-  "t0": 452.22,
+  "t0": 481.532,
   "dur": 1.48,
   "at": "11.3@y no se manchaban",
   "exacto": true
@@ -1282,7 +1402,7 @@
  {
   "id": "b32_toca",
   "kind": "depth2",
-  "t0": 453.7,
+  "t0": 483.012,
   "dur": 1.0,
   "at": "11.4",
   "exacto": true
@@ -1290,7 +1410,7 @@
  {
   "id": "visc_impr",
   "kind": "viscosidad",
-  "t0": 454.7,
+  "t0": 484.012,
   "dur": 2.08,
   "at": "11.4@se secaba casi al instante",
   "exacto": true
@@ -1298,7 +1418,7 @@
  {
   "id": "a_rot_stereo_o",
   "kind": "depth2",
-  "t0": 456.78,
+  "t0": 486.092,
   "dur": 6.18,
   "at": "11.4@estaba hecha para eso",
   "exacto": true
@@ -1306,7 +1426,7 @@
  {
   "id": "b32_idea",
   "kind": "depth2",
-  "t0": 462.96,
+  "t0": 492.272,
   "dur": 2.46,
   "at": "11.5",
   "exacto": true
@@ -1314,7 +1434,7 @@
  {
   "id": "b32_lata",
   "kind": "depth2",
-  "t0": 465.42,
+  "t0": 494.732,
   "dur": 3.44,
   "at": "11.5@si esa tinta no mancha",
   "exacto": true
@@ -1322,7 +1442,7 @@
  {
   "id": "b32_llena",
   "kind": "depth2",
-  "t0": 468.86,
+  "t0": 498.172,
   "dur": 2.68,
   "at": "11.6",
   "exacto": true
@@ -1330,7 +1450,7 @@
  {
   "id": "o_pluma_seca2",
   "kind": "depth2",
-  "t0": 471.54,
+  "t0": 500.852,
   "dur": 1.1,
   "at": "11.6@y no pas\u00f3 nada",
   "exacto": true
@@ -1338,7 +1458,7 @@
  {
   "id": "o_miel_cb",
   "kind": "depth2",
-  "t0": 472.64,
+  "t0": 501.952,
   "dur": 3.34,
   "at": "11.7",
   "exacto": true
@@ -1346,7 +1466,7 @@
  {
   "id": "o_pluma_tapada",
   "kind": "depth2",
-  "t0": 475.98,
+  "t0": 505.292,
   "dur": 2.78,
   "at": "11.7@se quedaba pegada adentro",
   "exacto": true
@@ -1354,7 +1474,7 @@
  {
   "id": "b32_frustra",
   "kind": "depth2",
-  "t0": 478.76,
+  "t0": 508.072,
   "dur": 2.46,
   "at": "11.7@raspaba el papel",
   "exacto": true
@@ -1362,7 +1482,7 @@
  {
   "id": "o_problema",
   "kind": "depth2",
-  "t0": 481.22,
+  "t0": 510.532,
   "dur": 4.14,
   "at": "11.8",
   "exacto": true
@@ -1370,7 +1490,7 @@
  {
   "id": "a_rot_cyl_o",
   "kind": "depth2",
-  "t0": 485.36,
+  "t0": 514.672,
   "dur": 2.9,
   "at": "11.8@hac\u00eda falta otra forma",
   "exacto": true
@@ -1378,7 +1498,7 @@
  {
   "id": "o_tubo_tinta",
   "kind": "depth2",
-  "t0": 488.26,
+  "t0": 517.572,
   "dur": 2.16,
   "at": "11.9",
   "exacto": true
@@ -1386,7 +1506,7 @@
  {
   "id": "o_rodillo_tinta",
   "kind": "depth2",
-  "t0": 490.42,
+  "t0": 519.732,
   "dur": 4.56,
   "at": "11.9@y la extiendes",
   "exacto": true
@@ -1394,7 +1514,7 @@
  {
   "id": "o_bolitas_tinta",
   "kind": "depth2",
-  "t0": 494.98,
+  "t0": 524.292,
   "dur": 3.32,
   "at": "11.10",
   "exacto": false
@@ -1402,7 +1522,7 @@
  {
   "id": "o_bolitas_mesa2",
   "kind": "depth2",
-  "t0": 498.3,
+  "t0": 527.612,
   "dur": 4.9,
   "at": "11.10@unas bolitas rodaron",
   "exacto": true
@@ -1410,7 +1530,7 @@
  {
   "id": "o_linea_madera",
   "kind": "depth2",
-  "t0": 503.2,
+  "t0": 532.512,
   "dur": 2.44,
   "at": "11.10@dejaron una l\u00ednea perfecta",
   "exacto": true
@@ -1418,7 +1538,7 @@
  {
   "id": "n_bolitas_calle",
   "kind": "depth2",
-  "t0": 505.64,
+  "t0": 534.952,
   "dur": 2.18,
   "at": "11.11",
   "exacto": true
@@ -1426,7 +1546,7 @@
  {
   "id": "n_bolitas_macro",
   "kind": "depth2",
-  "t0": 507.82,
+  "t0": 537.132,
   "dur": 4.64,
   "at": "11.11@jugando a las bolitas",
   "exacto": true
@@ -1434,7 +1554,7 @@
  {
   "id": "o_bolita_charco",
   "kind": "depth2",
-  "t0": 512.46,
+  "t0": 541.772,
   "dur": 4.72,
   "at": "11.11@una raya mojada",
   "exacto": true
@@ -1442,7 +1562,7 @@
  {
   "id": "bol_gira",
   "kind": "bolilla",
-  "t0": 517.18,
+  "t0": 546.492,
   "dur": 4.1,
   "at": "11.12",
   "exacto": true
@@ -1450,7 +1570,7 @@
  {
   "id": "o_desodorante",
   "kind": "depth2",
-  "t0": 521.28,
+  "t0": 550.592,
   "dur": 3.14,
   "at": "11.13",
   "exacto": true
@@ -1458,7 +1578,7 @@
  {
   "id": "o_rollon",
   "kind": "depth2",
-  "t0": 524.42,
+  "t0": 553.732,
   "dur": 3.88,
   "at": "11.13@la bolita est\u00e1 metida en la tapa",
   "exacto": true
@@ -1466,7 +1586,7 @@
  {
   "id": "o_rollon_macro",
   "kind": "depth2",
-  "t0": 528.3,
+  "t0": 557.612,
   "dur": 4.28,
   "at": "11.13@cuando la pasas por la piel",
   "exacto": true
@@ -1474,7 +1594,7 @@
  {
   "id": "o_rodillo",
   "kind": "depth2",
-  "t0": 532.58,
+  "t0": 561.892,
   "dur": 4.22,
   "at": "11.14",
   "exacto": true
@@ -1482,7 +1602,7 @@
  {
   "id": "bol_curva",
   "kind": "bolilla",
-  "t0": 536.8,
+  "t0": 566.112,
   "dur": 4.7,
   "at": "11.14@para cualquier lado",
   "exacto": true
@@ -1490,7 +1610,7 @@
  {
   "id": "p_mano_escribe",
   "kind": "depth2",
-  "t0": 541.5,
+  "t0": 570.812,
   "dur": 2.24,
   "at": "11.14@como se mueve la mano",
   "exacto": true
@@ -1498,7 +1618,7 @@
  {
   "id": "bol_tapa_bien",
   "kind": "bolilla",
-  "t0": 543.74,
+  "t0": 573.052,
   "dur": 3.86,
   "at": "11.15",
   "exacto": true
@@ -1506,7 +1626,7 @@
  {
   "id": "a_bp_parts_o",
   "kind": "depth2",
-  "t0": 547.6,
+  "t0": 576.912,
   "dur": 4.62,
   "at": "11.15@mientras no escrib\u00edas",
   "exacto": true
@@ -1514,7 +1634,7 @@
  {
   "id": "a_pat_loud_o",
   "kind": "proyector",
-  "t0": 552.22,
+  "t0": 581.532,
   "dur": 4.4,
   "at": "11.16",
   "exacto": true
@@ -1522,7 +1642,7 @@
  {
   "id": "o_cuero_1888",
   "kind": "depth2",
-  "t0": 556.62,
+  "t0": 585.932,
   "dur": 4.24,
   "at": "11.16@en mil ochocientos ochenta y ocho",
   "exacto": true
@@ -1530,7 +1650,7 @@
  {
   "id": "lupa_loud",
   "kind": "fotolupa",
-  "t0": 560.86,
+  "t0": 590.172,
   "dur": 3.58,
   "at": "11.16@john loud",
   "exacto": true
@@ -1538,7 +1658,7 @@
  {
   "id": "o_cuero_marca",
   "kind": "depth2",
-  "t0": 564.44,
+  "t0": 593.752,
   "dur": 4.6,
   "at": "11.17",
   "exacto": true
@@ -1546,7 +1666,7 @@
  {
   "id": "p_carta_cuero",
   "kind": "depth2",
-  "t0": 569.04,
+  "t0": 598.352,
   "dur": 2.66,
   "at": "11.17@serv\u00eda para el cuero",
   "exacto": true
@@ -1554,7 +1674,7 @@
  {
   "id": "lupa_loud2",
   "kind": "fotolupa",
-  "t0": 571.7,
+  "t0": 601.012,
   "dur": 1.44,
   "at": "11.17@y nunca se vendi\u00f3",
   "exacto": true
@@ -1562,7 +1682,7 @@
  {
   "id": "o_patente_vieja",
   "kind": "depth2",
-  "t0": 573.14,
+  "t0": 602.452,
   "dur": 1.64,
   "at": "11.17@la patente caduc\u00f3",
   "exacto": true
@@ -1570,7 +1690,7 @@
  {
   "id": "a_bp_corvin_o",
   "kind": "depth2",
-  "t0": 574.78,
+  "t0": 604.092,
   "dur": 2.32,
   "at": "11.18",
   "exacto": true
@@ -1578,7 +1698,7 @@
  {
   "id": "o_feria",
   "kind": "depth2",
-  "t0": 577.1,
+  "t0": 606.412,
   "dur": 4.24,
   "at": "11.18@feria internacional",
   "exacto": true
@@ -1586,7 +1706,7 @@
  {
   "id": "b32_feria",
   "kind": "depth2",
-  "t0": 581.34,
+  "t0": 610.652,
   "dur": 2.06,
   "at": "11.18@era grande",
   "exacto": true
@@ -1594,7 +1714,7 @@
  {
   "id": "a_bp_duna_hajo_o",
   "kind": "depth2",
-  "t0": 583.4,
+  "t0": 612.712,
   "dur": 2.4,
   "at": "11.18@todav\u00eda lejos",
   "exacto": true
@@ -1602,7 +1722,7 @@
  {
   "id": "gy_lab",
   "kind": "depth2",
-  "t0": 585.8,
+  "t0": 615.112,
   "dur": 1.78,
   "at": "11.19",
   "exacto": true
@@ -1610,7 +1730,7 @@
  {
   "id": "lupa_ink",
   "kind": "fotolupa",
-  "t0": 587.58,
+  "t0": 616.892,
   "dur": 1.78,
   "at": "11.19@para la tinta",
   "exacto": true
@@ -1618,7 +1738,7 @@
  {
   "id": "a_bp_szedo2_o",
   "kind": "depth2",
-  "t0": 589.36,
+  "t0": 618.672,
   "dur": 4.1,
   "at": "11.19@lo ten\u00eda en casa",
   "exacto": true
@@ -1626,7 +1746,7 @@
  {
   "id": "o_frascos_tinta",
   "kind": "depth2",
-  "t0": 593.46,
+  "t0": 622.772,
   "dur": 3.38,
   "at": "11.19@empez\u00f3 a preparar tintas",
   "exacto": true
@@ -1634,7 +1754,7 @@
  {
   "id": "b32_gy_prueban",
   "kind": "depth2",
-  "t0": 596.84,
+  "t0": 626.152,
   "dur": 4.36,
   "at": "11.20",
   "exacto": false
@@ -1642,7 +1762,7 @@
  {
   "id": "carrera_pruebas",
   "kind": "eras",
-  "t0": 601.2,
+  "t0": 630.512,
   "dur": 3.68,
   "at": "11.20@una punta con una tinta",
   "exacto": true
@@ -1650,7 +1770,7 @@
  {
   "id": "o_punta_tinta",
   "kind": "depth2",
-  "t0": 604.88,
+  "t0": 634.192,
   "dur": 4.82,
   "at": "11.21",
   "exacto": true
@@ -1658,7 +1778,7 @@
  {
   "id": "gy_mezcla",
   "kind": "depth2",
-  "t0": 609.7,
+  "t0": 639.012,
   "dur": 2.02,
   "at": "11.21@no serv\u00eda para nada con otra",
   "exacto": true
@@ -1666,15 +1786,15 @@
  {
   "id": "o_par",
   "kind": "depth2",
-  "t0": 611.72,
+  "t0": 641.032,
   "dur": 3.34,
   "at": "11.21@la punta y la tinta ten\u00edan que nacer juntas",
   "exacto": true
  },
  {
-  "id": "o_rotativa_noche",
-  "kind": "depth2",
-  "t0": 615.06,
+  "id": "f_rot_banda",
+  "kind": "film",
+  "t0": 644.372,
   "dur": 3.0,
   "at": "12",
   "exacto": true
@@ -1682,7 +1802,7 @@
  {
   "id": "cap4",
   "kind": "capitulo",
-  "t0": 618.06,
+  "t0": 647.372,
   "dur": 2.52,
   "at": "13",
   "exacto": true
@@ -1690,7 +1810,7 @@
  {
   "id": "o_boceto",
   "kind": "depth2",
-  "t0": 620.58,
+  "t0": 649.892,
   "dur": 2.76,
   "at": "14.0",
   "exacto": true
@@ -1698,7 +1818,7 @@
  {
   "id": "o_tubo_dibujo",
   "kind": "depth2",
-  "t0": 623.34,
+  "t0": 652.652,
   "dur": 5.06,
   "at": "14.0@un tubo de tinta",
   "exacto": true
@@ -1706,7 +1826,7 @@
  {
   "id": "b32_noche",
   "kind": "depth2",
-  "t0": 628.4,
+  "t0": 657.712,
   "dur": 1.84,
   "at": "14.0@fue una pesadilla",
   "exacto": true
@@ -1714,7 +1834,7 @@
  {
   "id": "o_tinta_no_baja",
   "kind": "depth2",
-  "t0": 630.24,
+  "t0": 659.552,
   "dur": 6.38,
   "at": "14.1",
   "exacto": true
@@ -1722,7 +1842,7 @@
  {
   "id": "o_empuja",
   "kind": "depth2",
-  "t0": 636.62,
+  "t0": 665.932,
   "dur": 1.52,
   "at": "14.1@ten\u00edan que empujarla",
   "exacto": true
@@ -1730,7 +1850,7 @@
  {
   "id": "pres_piston",
   "kind": "presion",
-  "t0": 638.14,
+  "t0": 667.452,
   "dur": 3.06,
   "at": "14.2",
   "exacto": true
@@ -1738,7 +1858,7 @@
  {
   "id": "o_tornillo",
   "kind": "depth2",
-  "t0": 641.2,
+  "t0": 670.512,
   "dur": 3.34,
   "at": "14.2@que iba apretando",
   "exacto": true
@@ -1746,7 +1866,7 @@
  {
   "id": "n_pasta",
   "kind": "depth2",
-  "t0": 644.54,
+  "t0": 673.852,
   "dur": 3.26,
   "at": "14.3",
   "exacto": true
@@ -1754,7 +1874,7 @@
  {
   "id": "o_pasta",
   "kind": "depth2",
-  "t0": 647.8,
+  "t0": 677.112,
   "dur": 2.92,
   "at": "14.3@no sale nada",
   "exacto": true
@@ -1762,7 +1882,7 @@
  {
   "id": "n_pasta_pegote",
   "kind": "depth2",
-  "t0": 650.72,
+  "t0": 680.032,
   "dur": 1.5,
   "at": "14.3@sale un pegote enorme",
   "exacto": true
@@ -1770,7 +1890,7 @@
  {
   "id": "pres_ambas",
   "kind": "presion",
-  "t0": 652.22,
+  "t0": 681.532,
   "dur": 6.38,
   "at": "14.4",
   "exacto": true
@@ -1778,7 +1898,7 @@
  {
   "id": "o_gotas_papel",
   "kind": "depth2",
-  "t0": 658.6,
+  "t0": 687.912,
   "dur": 2.24,
   "at": "14.4@escup\u00eda gotas",
   "exacto": true
@@ -1786,7 +1906,7 @@
  {
   "id": "o_bolita_macro",
   "kind": "depth2",
-  "t0": 660.84,
+  "t0": 690.152,
   "dur": 2.18,
   "at": "14.5",
   "exacto": true
@@ -1794,7 +1914,7 @@
  {
   "id": "a_bp_example_o",
   "kind": "depth2",
-  "t0": 663.02,
+  "t0": 692.332,
   "dur": 2.18,
   "at": "14.5@el segundo problema",
   "exacto": true
@@ -1802,7 +1922,7 @@
  {
   "id": "bol_floja",
   "kind": "bolilla",
-  "t0": 665.2,
+  "t0": 694.512,
   "dur": 6.52,
   "at": "14.6",
   "exacto": true
@@ -1810,7 +1930,7 @@
  {
   "id": "o_gotea_lado",
   "kind": "depth2",
-  "t0": 671.72,
+  "t0": 701.032,
   "dur": 3.78,
   "at": "14.6@si quedaba floja",
   "exacto": true
@@ -1818,7 +1938,7 @@
  {
   "id": "o_bolita_trabada",
   "kind": "depth2",
-  "t0": 675.5,
+  "t0": 704.812,
   "dur": 2.64,
   "at": "14.6@si quedaba apretada",
   "exacto": true
@@ -1826,7 +1946,7 @@
  {
   "id": "pot_pelo",
   "kind": "potencias",
-  "t0": 678.14,
+  "t0": 707.452,
   "dur": 1.18,
   "at": "14.7",
   "exacto": true
@@ -1834,7 +1954,7 @@
  {
   "id": "o_pelo_bolilla",
   "kind": "depth2",
-  "t0": 679.32,
+  "t0": 708.632,
   "dur": 3.34,
   "at": "14.7@m\u00e1s finas que un pelo",
   "exacto": true
@@ -1842,7 +1962,7 @@
  {
   "id": "o_torno_viejo",
   "kind": "depth2",
-  "t0": 682.66,
+  "t0": 711.972,
   "dur": 3.92,
   "at": "14.7@no hab\u00eda m\u00e1quinas",
   "exacto": true
@@ -1850,7 +1970,7 @@
  {
   "id": "o_bolitas_pinza",
   "kind": "depth2",
-  "t0": 686.58,
+  "t0": 715.892,
   "dur": 2.34,
   "at": "14.7@en cantidad y baratas",
   "exacto": true
@@ -1858,7 +1978,7 @@
  {
   "id": "b32_lupa",
   "kind": "depth2",
-  "t0": 688.92,
+  "t0": 718.232,
   "dur": 4.92,
   "at": "14.8",
   "exacto": false
@@ -1866,7 +1986,7 @@
  {
   "id": "o_sobre_patente",
   "kind": "depth2",
-  "t0": 693.84,
+  "t0": 723.152,
   "dur": 2.7,
   "at": "14.8@patentar la idea",
   "exacto": true
@@ -1874,7 +1994,7 @@
  {
   "id": "a_pat_us_o",
   "kind": "depth2",
-  "t0": 696.54,
+  "t0": 725.852,
   "dur": 1.48,
   "at": "14.9",
   "exacto": true
@@ -1882,7 +2002,7 @@
  {
   "id": "corr_patentes",
   "kind": "corridor",
-  "t0": 698.02,
+  "t0": 727.332,
   "dur": 4.3,
   "at": "14.9@registr\u00f3 su pluma de bolita",
   "exacto": true
@@ -1890,7 +2010,7 @@
  {
   "id": "lupa_patente",
   "kind": "fotolupa",
-  "t0": 702.32,
+  "t0": 731.632,
   "dur": 5.76,
   "at": "14.9@quince de junio",
   "exacto": true
@@ -1898,7 +2018,7 @@
  {
   "id": "o_1938_cal",
   "kind": "depth2",
-  "t0": 708.08,
+  "t0": 737.392,
   "dur": 4.86,
   "at": "14.10",
   "exacto": true
@@ -1906,7 +2026,7 @@
  {
   "id": "a_bp_manifest_o",
   "kind": "depth2",
-  "t0": 712.94,
+  "t0": 742.252,
   "dur": 2.52,
   "at": "14.10@un problema mucho m\u00e1s grande",
   "exacto": true
@@ -1914,7 +2034,7 @@
  {
   "id": "o_ley_diario",
   "kind": "depth2",
-  "t0": 715.46,
+  "t0": 744.772,
   "dur": 2.26,
   "at": "14.11",
   "exacto": true
@@ -1922,7 +2042,7 @@
  {
   "id": "per_ley",
   "kind": "periodico",
-  "t0": 717.72,
+  "t0": 747.032,
   "dur": 2.18,
   "at": "14.11@su primera ley",
   "exacto": true
@@ -1930,7 +2050,7 @@
  {
   "id": "a_bp_tarnok_o",
   "kind": "depth2",
-  "t0": 719.9,
+  "t0": 749.212,
   "dur": 6.02,
   "at": "14.11@limitaba cu\u00e1ntos jud\u00edos",
   "exacto": true
@@ -1938,7 +2058,7 @@
  {
   "id": "b32_lee",
   "kind": "depth2",
-  "t0": 725.92,
+  "t0": 755.232,
   "dur": 2.28,
   "at": "14.12",
   "exacto": true
@@ -1946,7 +2066,7 @@
  {
   "id": "a_bp_piarista_o",
   "kind": "depth2",
-  "t0": 728.2,
+  "t0": 757.512,
   "dur": 2.28,
   "at": "14.12@la familia b\u00edr\u00f3 era jud\u00eda",
   "exacto": true
@@ -1954,7 +2074,7 @@
  {
   "id": "a_paris_parade_o2",
   "kind": "proyector",
-  "t0": 730.48,
+  "t0": 759.792,
   "dur": 2.579,
   "at": "14.12@hasta d\u00f3nde pod\u00edan llegar",
   "exacto": true
@@ -1962,7 +2082,7 @@
  {
   "id": "o_prototipo_cafe",
   "kind": "depth2",
-  "t0": 733.059,
+  "t0": 762.371,
   "dur": 3.0,
   "at": "15",
   "exacto": true
@@ -1970,7 +2090,7 @@
  {
   "id": "cap5",
   "kind": "capitulo",
-  "t0": 736.059,
+  "t0": 765.371,
   "dur": 3.041,
   "at": "16",
   "exacto": true
@@ -1978,7 +2098,7 @@
  {
   "id": "o_postal_mar",
   "kind": "depth2",
-  "t0": 739.1,
+  "t0": 768.412,
   "dur": 1.36,
   "at": "17.0",
   "exacto": true
@@ -1986,7 +2106,7 @@
  {
   "id": "a_justo_retr_o",
   "kind": "depth2",
-  "t0": 740.46,
+  "t0": 769.772,
   "dur": 3.22,
   "at": "17.0@pas\u00f3 algo que parece inventado",
   "exacto": true
@@ -1994,7 +2114,7 @@
  {
   "id": "o_balneario",
   "kind": "depth2",
-  "t0": 743.68,
+  "t0": 772.992,
   "dur": 2.14,
   "at": "17.1",
   "exacto": true
@@ -2002,7 +2122,7 @@
  {
   "id": "a_crikv_b_o",
   "kind": "depth2",
-  "t0": 745.82,
+  "t0": 775.132,
   "dur": 1.92,
   "at": "17.1@en un balneario de yugoslavia",
   "exacto": true
@@ -2010,7 +2130,7 @@
  {
   "id": "o_olas",
   "kind": "depth2",
-  "t0": 747.74,
+  "t0": 777.052,
   "dur": 1.3,
   "at": "17.1@sobre el mar",
   "exacto": true
@@ -2018,7 +2138,7 @@
  {
   "id": "a_crikv_a_o",
   "kind": "depth2",
-  "t0": 749.04,
+  "t0": 778.352,
   "dur": 1.8,
   "at": "17.1@y como siempre",
   "exacto": true
@@ -2026,7 +2146,7 @@
  {
   "id": "b32_terraza",
   "kind": "depth2",
-  "t0": 750.84,
+  "t0": 780.152,
   "dur": 1.74,
   "at": "17.1@con su pluma de bolita",
   "exacto": true
@@ -2034,7 +2154,7 @@
  {
   "id": "j_mira",
   "kind": "depth2",
-  "t0": 752.58,
+  "t0": 781.892,
   "dur": 2.96,
   "at": "17.2",
   "exacto": true
@@ -2042,7 +2162,7 @@
  {
   "id": "lupa_justo0",
   "kind": "fotolupa",
-  "t0": 755.54,
+  "t0": 784.852,
   "dur": 2.88,
   "at": "17.2@lo miraba con curiosidad",
   "exacto": true
@@ -2050,7 +2170,7 @@
  {
   "id": "o_pluma_terraza",
   "kind": "depth2",
-  "t0": 758.42,
+  "t0": 787.732,
   "dur": 3.78,
   "at": "17.2@esa pluma rara",
   "exacto": true
@@ -2058,7 +2178,7 @@
  {
   "id": "j_acerca",
   "kind": "depth2",
-  "t0": 762.2,
+  "t0": 791.512,
   "dur": 2.54,
   "at": "17.3",
   "exacto": true
@@ -2066,7 +2186,7 @@
  {
   "id": "bj_charla",
   "kind": "depth2",
-  "t0": 764.74,
+  "t0": 794.052,
   "dur": 4.6,
   "at": "17.3@se lo explic\u00f3",
   "exacto": true
@@ -2074,7 +2194,7 @@
  {
   "id": "j_rie",
   "kind": "depth2",
-  "t0": 769.34,
+  "t0": 798.652,
   "dur": 1.54,
   "at": "17.3@en su pa\u00eds",
   "exacto": true
@@ -2082,7 +2202,7 @@
  {
   "id": "ret_justo",
   "kind": "retrato",
-  "t0": 770.88,
+  "t0": 800.192,
   "dur": 2.8,
   "at": "17.4",
   "exacto": true
@@ -2090,7 +2210,7 @@
  {
   "id": "a_justo_pres_o",
   "kind": "depth2",
-  "t0": 773.68,
+  "t0": 802.992,
   "dur": 1.86,
   "at": "17.4@un general argentino",
   "exacto": true
@@ -2098,7 +2218,7 @@
  {
   "id": "a_justo_banero_o",
   "kind": "proyector",
-  "t0": 775.54,
+  "t0": 804.852,
   "dur": 2.84,
   "at": "17.4@que acababa de ser presidente",
   "exacto": true
@@ -2106,7 +2226,7 @@
  {
   "id": "o_tarjeta",
   "kind": "depth2",
-  "t0": 778.38,
+  "t0": 807.692,
   "dur": 1.18,
   "at": "17.5",
   "exacto": true
@@ -2114,7 +2234,7 @@
  {
   "id": "o_tarjeta_mesa",
   "kind": "depth2",
-  "t0": 779.56,
+  "t0": 808.872,
   "dur": 2.22,
   "at": "17.5@con su nombre",
   "exacto": true
@@ -2122,7 +2242,7 @@
  {
   "id": "a_justo_gorra_o",
   "kind": "depth2",
-  "t0": 781.78,
+  "t0": 811.092,
   "dur": 3.54,
   "at": "17.5@si alg\u00fan d\u00eda necesitaba",
   "exacto": true
@@ -2130,7 +2250,7 @@
  {
   "id": "b32_guarda",
   "kind": "depth2",
-  "t0": 785.32,
+  "t0": 814.632,
   "dur": 3.14,
   "at": "17.6",
   "exacto": false
@@ -2138,7 +2258,7 @@
  {
   "id": "map_mundo",
   "kind": "mapazoom",
-  "t0": 788.46,
+  "t0": 817.772,
   "dur": 4.8,
   "at": "17.6@al otro lado del mundo",
   "exacto": true
@@ -2146,7 +2266,7 @@
  {
   "id": "o_tarjeta_luz",
   "kind": "depth2",
-  "t0": 793.26,
+  "t0": 822.572,
   "dur": 2.44,
   "at": "17.7",
   "exacto": true
@@ -2154,7 +2274,7 @@
  {
   "id": "a_bp_nyugati_o",
   "kind": "depth2",
-  "t0": 795.7,
+  "t0": 825.012,
   "dur": 5.54,
   "at": "17.8",
   "exacto": true
@@ -2162,7 +2282,7 @@
  {
   "id": "b32_portafolio",
   "kind": "depth2",
-  "t0": 801.24,
+  "t0": 830.552,
   "dur": 1.22,
   "at": "17.8@llevaba los planos",
   "exacto": true
@@ -2170,15 +2290,15 @@
  {
   "id": "o_portafolio",
   "kind": "depth2",
-  "t0": 802.46,
+  "t0": 831.772,
   "dur": 1.7,
   "at": "17.8@en un portafolio",
   "exacto": true
  },
  {
-  "id": "o_tren_noche",
-  "kind": "depth2",
-  "t0": 804.16,
+  "id": "m_huida",
+  "kind": "mapa3d",
+  "t0": 833.472,
   "dur": 2.28,
   "at": "17.8@apenas unos d\u00edas antes",
   "exacto": true
@@ -2186,7 +2306,7 @@
  {
   "id": "b32_tren_ventana",
   "kind": "depth2",
-  "t0": 806.44,
+  "t0": 835.752,
   "dur": 3.62,
   "at": "17.8@una ley que prohib\u00eda",
   "exacto": true
@@ -2194,7 +2314,7 @@
  {
   "id": "a_paris_lazare_o2",
   "kind": "depth2",
-  "t0": 810.06,
+  "t0": 839.372,
   "dur": 2.9,
   "at": "17.9",
   "exacto": true
@@ -2202,7 +2322,7 @@
  {
   "id": "o_lab_paris",
   "kind": "depth2",
-  "t0": 812.96,
+  "t0": 842.272,
   "dur": 1.7,
   "at": "17.9@boulevard haussmann",
   "exacto": true
@@ -2210,7 +2330,7 @@
  {
   "id": "o_placa_paris",
   "kind": "depth2",
-  "t0": 814.66,
+  "t0": 843.972,
   "dur": 3.84,
   "at": "17.9@ciento cincuenta y dos",
   "exacto": true
@@ -2218,7 +2338,7 @@
  {
   "id": "b_paris_tinta",
   "kind": "depth2",
-  "t0": 818.5,
+  "t0": 847.812,
   "dur": 1.22,
   "at": "17.9@la tinta",
   "exacto": true
@@ -2226,7 +2346,7 @@
  {
   "id": "o_paquete",
   "kind": "depth2",
-  "t0": 819.72,
+  "t0": 849.032,
   "dur": 3.98,
   "at": "17.10",
   "exacto": true
@@ -2234,7 +2354,7 @@
  {
   "id": "o_puntas_suizas",
   "kind": "depth2",
-  "t0": 823.7,
+  "t0": 853.012,
   "dur": 3.54,
   "at": "17.10@con puntas que tra\u00eda de suiza",
   "exacto": true
@@ -2242,7 +2362,7 @@
  {
   "id": "b_paris_prueba",
   "kind": "depth2",
-  "t0": 827.24,
+  "t0": 856.552,
   "dur": 1.68,
   "at": "17.10@con todo lo que consegu\u00eda",
   "exacto": true
@@ -2250,7 +2370,7 @@
  {
   "id": "b_socios",
   "kind": "depth2",
-  "t0": 828.92,
+  "t0": 858.232,
   "dur": 3.52,
   "at": "17.11",
   "exacto": true
@@ -2258,7 +2378,7 @@
  {
   "id": "o_placa_soc",
   "kind": "depth2",
-  "t0": 832.44,
+  "t0": 861.752,
   "dur": 4.5,
   "at": "17.11@fund\u00f3 una peque\u00f1a sociedad",
   "exacto": true
@@ -2266,7 +2386,7 @@
  {
   "id": "o_contrato",
   "kind": "depth2",
-  "t0": 836.94,
+  "t0": 866.252,
   "dur": 3.74,
   "at": "17.11@algo de dinero",
   "exacto": true
@@ -2274,7 +2394,7 @@
  {
   "id": "per_guerra",
   "kind": "periodico",
-  "t0": 840.68,
+  "t0": 869.992,
   "dur": 6.8,
   "at": "17.12",
   "exacto": true
@@ -2282,23 +2402,23 @@
  {
   "id": "a_paris_arc_o",
   "kind": "depth2",
-  "t0": 847.48,
+  "t0": 876.792,
   "dur": 2.28,
   "at": "17.13",
   "exacto": true
  },
  {
-  "id": "a_paris_arc_o2",
-  "kind": "proyector",
-  "t0": 849.76,
+  "id": "f_diario40",
+  "kind": "film",
+  "t0": 879.072,
   "dur": 2.32,
   "at": "17.13@el ej\u00e9rcito alem\u00e1n entr\u00f3 en francia",
   "exacto": true
  },
  {
-  "id": "a_paris_parade_o",
-  "kind": "copia",
-  "t0": 852.08,
+  "id": "f_tropas40",
+  "kind": "film",
+  "t0": 881.392,
   "dur": 2.46,
   "at": "17.13@en pocas semanas",
   "exacto": true
@@ -2306,7 +2426,7 @@
  {
   "id": "b_paris_ventana",
   "kind": "depth2",
-  "t0": 854.54,
+  "t0": 883.852,
   "dur": 4.9,
   "at": "17.14",
   "exacto": true
@@ -2314,7 +2434,7 @@
  {
   "id": "o_maleta",
   "kind": "depth2",
-  "t0": 859.44,
+  "t0": 888.752,
   "dur": 2.26,
   "at": "17.14@no hab\u00eda tiempo",
   "exacto": true
@@ -2322,7 +2442,7 @@
  {
   "id": "b_tarjeta_saca",
   "kind": "depth2",
-  "t0": 861.7,
+  "t0": 891.012,
   "dur": 2.14,
   "at": "17.15",
   "exacto": true
@@ -2330,7 +2450,7 @@
  {
   "id": "b_escribe_carta",
   "kind": "depth2",
-  "t0": 863.84,
+  "t0": 893.152,
   "dur": 1.82,
   "at": "17.16",
   "exacto": true
@@ -2338,7 +2458,7 @@
  {
   "id": "a_ba_mayo44_o2",
   "kind": "depth2",
-  "t0": 865.66,
+  "t0": 894.972,
   "dur": 1.82,
   "at": "17.16@escribi\u00f3 a la argentina",
   "exacto": true
@@ -2346,7 +2466,7 @@
  {
   "id": "o_pasaporte",
   "kind": "depth2",
-  "t0": 867.48,
+  "t0": 896.792,
   "dur": 4.0,
   "at": "17.16@para conseguir las visas",
   "exacto": true
@@ -2354,7 +2474,7 @@
  {
   "id": "meyne",
   "kind": "depth2",
-  "t0": 871.48,
+  "t0": 900.792,
   "dur": 3.3,
   "at": "17.17",
   "exacto": true
@@ -2362,7 +2482,7 @@
  {
   "id": "meyne_maleta",
   "kind": "depth2",
-  "t0": 874.78,
+  "t0": 904.092,
   "dur": 1.84,
   "at": "17.17@tambi\u00e9n perseguido",
   "exacto": true
@@ -2370,15 +2490,15 @@
  {
   "id": "b_meyne_abrazo",
   "kind": "depth2",
-  "t0": 876.62,
+  "t0": 905.932,
   "dur": 1.6,
   "at": "17.17@no se iba a ir sin \u00e9l",
   "exacto": true
  },
  {
-  "id": "o_vapor_llega",
-  "kind": "depth2",
-  "t0": 878.22,
+  "id": "f_vapor",
+  "kind": "film",
+  "t0": 907.532,
   "dur": 3.26,
   "at": "17.18",
   "exacto": true
@@ -2386,15 +2506,15 @@
  {
   "id": "a_sevilla_o",
   "kind": "depth2",
-  "t0": 881.48,
+  "t0": 910.792,
   "dur": 1.4,
   "at": "17.18@el vapor ciudad de sevilla",
   "exacto": true
  },
  {
-  "id": "a_ba_darsena_o",
-  "kind": "proyector",
-  "t0": 882.88,
+  "id": "f_ba_puerto",
+  "kind": "film",
+  "t0": 912.192,
   "dur": 2.26,
   "at": "17.18@atrac\u00f3 en el puerto",
   "exacto": true
@@ -2402,7 +2522,7 @@
  {
   "id": "b_baja_barco",
   "kind": "depth2",
-  "t0": 885.14,
+  "t0": 914.452,
   "dur": 4.56,
   "at": "17.18@entre los pasajeros",
   "exacto": true
@@ -2410,7 +2530,7 @@
  {
   "id": "o_planos_puerto",
   "kind": "depth2",
-  "t0": 889.7,
+  "t0": 919.012,
   "dur": 1.68,
   "at": "17.18@los planos de una pluma",
   "exacto": true
@@ -2418,7 +2538,7 @@
  {
   "id": "a_ba_ideal_o2",
   "kind": "depth2",
-  "t0": 891.38,
+  "t0": 920.692,
   "dur": 2.78,
   "at": "17.19",
   "exacto": true
@@ -2426,7 +2546,7 @@
  {
   "id": "p_familia",
   "kind": "depth2",
-  "t0": 894.16,
+  "t0": 923.472,
   "dur": 1.56,
   "at": "17.19@su esposa y su hija",
   "exacto": true
@@ -2434,15 +2554,15 @@
  {
   "id": "p_familia_puerto",
   "kind": "depth2",
-  "t0": 895.72,
+  "t0": 925.032,
   "dur": 3.783,
   "at": "17.19@la familia entera",
   "exacto": true
  },
  {
-  "id": "o_vapor_amanecer",
-  "kind": "depth2",
-  "t0": 899.503,
+  "id": "f_vapor2",
+  "kind": "film",
+  "t0": 928.815,
   "dur": 4.0,
   "at": "18",
   "exacto": true
@@ -2450,7 +2570,7 @@
  {
   "id": "cap6",
   "kind": "capitulo",
-  "t0": 903.503,
+  "t0": 932.815,
   "dur": 2.977,
   "at": "19",
   "exacto": true
@@ -2458,31 +2578,31 @@
  {
   "id": "a_ba_mayo44_o",
   "kind": "depth2",
-  "t0": 906.48,
+  "t0": 935.792,
   "dur": 2.52,
   "at": "20.0",
   "exacto": true
  },
  {
-  "id": "a_ba_40_o2",
-  "kind": "proyector",
-  "t0": 909.0,
+  "id": "f_ba_congreso",
+  "kind": "film",
+  "t0": 938.312,
   "dur": 1.76,
   "at": "20.0@una de las ciudades m\u00e1s grandes",
   "exacto": true
  },
  {
   "id": "a_ba_juramento_o",
-  "kind": "copia",
-  "t0": 910.76,
+  "kind": "depth2",
+  "t0": 940.072,
   "dur": 3.54,
   "at": "20.0@ricas del mundo",
   "exacto": true
  },
  {
-  "id": "o_ba_calle",
-  "kind": "depth2",
-  "t0": 914.3,
+  "id": "f_ba_mayo",
+  "kind": "film",
+  "t0": 943.612,
   "dur": 1.92,
   "at": "20.0@edificios de estilo franc\u00e9s",
   "exacto": true
@@ -2490,7 +2610,7 @@
  {
   "id": "a_ba_ideal_o",
   "kind": "depth2",
-  "t0": 916.22,
+  "t0": 945.532,
   "dur": 3.64,
   "at": "20.0@y lejos, muy lejos",
   "exacto": true
@@ -2498,7 +2618,7 @@
  {
   "id": "b43_espanol",
   "kind": "depth2",
-  "t0": 919.86,
+  "t0": 949.172,
   "dur": 1.49,
   "at": "20.1@no hablaba castellano",
   "exacto": true
@@ -2506,7 +2626,7 @@
  {
   "id": "a_ba_rivadavia_o",
   "kind": "depth2",
-  "t0": 921.35,
+  "t0": 950.662,
   "dur": 1.49,
   "at": "20.1@no hablaba castellano",
   "exacto": true
@@ -2514,7 +2634,7 @@
  {
   "id": "a_ba_lavalle_o2",
   "kind": "proyector",
-  "t0": 922.84,
+  "t0": 952.152,
   "dur": 2.26,
   "at": "20.1@con su hermano y con meyne",
   "exacto": true
@@ -2522,7 +2642,7 @@
  {
   "id": "o_placa_empresa",
   "kind": "depth2",
-  "t0": 925.1,
+  "t0": 954.412,
   "dur": 4.22,
   "at": "20.1@con los tres apellidos",
   "exacto": true
@@ -2530,15 +2650,15 @@
  {
   "id": "o_garaje_abre",
   "kind": "depth2",
-  "t0": 929.32,
+  "t0": 958.632,
   "dur": 1.96,
   "at": "20.2",
   "exacto": true
  },
  {
-  "id": "a_ba_palermo45_o",
-  "kind": "depth2",
-  "t0": 931.28,
+  "id": "m_palermo",
+  "kind": "mapa3d",
+  "t0": 960.592,
   "dur": 2.44,
   "at": "20.2@en el barrio de palermo",
   "exacto": true
@@ -2546,7 +2666,7 @@
  {
   "id": "b43_monta",
   "kind": "depth2",
-  "t0": 933.72,
+  "t0": 963.032,
   "dur": 1.66,
   "at": "20.2@laboratorio y taller",
   "exacto": true
@@ -2554,7 +2674,7 @@
  {
   "id": "p_banqueros",
   "kind": "depth2",
-  "t0": 935.38,
+  "t0": 964.692,
   "dur": 3.98,
   "at": "20.3",
   "exacto": true
@@ -2562,7 +2682,7 @@
  {
   "id": "a_ba_moreno_o",
   "kind": "depth2",
-  "t0": 939.36,
+  "t0": 968.672,
   "dur": 3.98,
   "at": "20.3@necesitaban dinero",
   "exacto": true
@@ -2570,7 +2690,7 @@
  {
   "id": "o_cheque",
   "kind": "depth2",
-  "t0": 943.34,
+  "t0": 972.652,
   "dur": 2.0,
   "at": "20.3@poner el capital",
   "exacto": true
@@ -2578,7 +2698,7 @@
  {
   "id": "trazo1",
   "kind": "trazo",
-  "t0": 945.34,
+  "t0": 974.652,
   "dur": 4.24,
   "at": "20.4",
   "exacto": true
@@ -2586,7 +2706,7 @@
  {
   "id": "t_hoja_cb2",
   "kind": "depth2",
-  "t0": 949.58,
+  "t0": 978.892,
   "dur": 2.42,
   "at": "20.4@la hoja de papel",
   "exacto": true
@@ -2594,7 +2714,7 @@
  {
   "id": "b43_desarma",
   "kind": "depth2",
-  "t0": 952.0,
+  "t0": 981.312,
   "dur": 6.8,
   "at": "20.5",
   "exacto": true
@@ -2602,7 +2722,7 @@
  {
   "id": "o_pluma_simple",
   "kind": "depth2",
-  "t0": 958.8,
+  "t0": 988.112,
   "dur": 1.52,
   "at": "20.5@quer\u00eda una pluma m\u00e1s simple",
   "exacto": true
@@ -2610,7 +2730,7 @@
  {
   "id": "bol_grav",
   "kind": "bolilla",
-  "t0": 960.32,
+  "t0": 989.632,
   "dur": 3.8,
   "at": "20.5@que la tinta bajara sola",
   "exacto": true
@@ -2618,7 +2738,7 @@
  {
   "id": "b43_prueba",
   "kind": "depth2",
-  "t0": 964.12,
+  "t0": 993.432,
   "dur": 3.1,
   "at": "20.6",
   "exacto": true
@@ -2626,7 +2746,7 @@
  {
   "id": "a_ba_asado_o",
   "kind": "depth2",
-  "t0": 967.22,
+  "t0": 996.532,
   "dur": 1.8,
   "at": "20.6@pas\u00f3 algo que no esperaba",
   "exacto": true
@@ -2634,7 +2754,7 @@
  {
   "id": "bol_tapa",
   "kind": "bolilla",
-  "t0": 969.02,
+  "t0": 998.332,
   "dur": 9.0,
   "at": "20.7",
   "exacto": true
@@ -2642,7 +2762,7 @@
  {
   "id": "o_pileta",
   "kind": "depth2",
-  "t0": 978.02,
+  "t0": 1007.332,
   "dur": 2.3,
   "at": "20.8",
   "exacto": true
@@ -2650,7 +2770,7 @@
  {
   "id": "n_tapon",
   "kind": "depth2",
-  "t0": 980.32,
+  "t0": 1009.632,
   "dur": 3.3,
   "at": "20.8@mientras est\u00e1 puesto",
   "exacto": true
@@ -2658,7 +2778,7 @@
  {
   "id": "o_tapon",
   "kind": "depth2",
-  "t0": 983.62,
+  "t0": 1012.932,
   "dur": 1.88,
   "at": "20.8@no pasa ni una gota",
   "exacto": true
@@ -2666,7 +2786,7 @@
  {
   "id": "b43_aprieta",
   "kind": "depth2",
-  "t0": 985.5,
+  "t0": 1014.812,
   "dur": 4.88,
   "at": "20.9",
   "exacto": true
@@ -2674,7 +2794,7 @@
  {
   "id": "o_trazo_debil",
   "kind": "depth2",
-  "t0": 990.38,
+  "t0": 1019.692,
   "dur": 1.32,
   "at": "20.9@y menos tinta sal\u00eda",
   "exacto": true
@@ -2682,7 +2802,7 @@
  {
   "id": "trazo2",
   "kind": "trazo",
-  "t0": 991.7,
+  "t0": 1021.012,
   "dur": 7.08,
   "at": "20.10",
   "exacto": true
@@ -2690,7 +2810,7 @@
  {
   "id": "p_operarios",
   "kind": "depth2",
-  "t0": 998.78,
+  "t0": 1028.092,
   "dur": 1.52,
   "at": "20.11",
   "exacto": false
@@ -2698,7 +2818,7 @@
  {
   "id": "a_ba_alpargatas_o",
   "kind": "depth2",
-  "t0": 1000.3,
+  "t0": 1029.612,
   "dur": 1.48,
   "at": "20.11@probaron de todo",
   "exacto": true
@@ -2706,7 +2826,7 @@
  {
   "id": "o_asientos",
   "kind": "depth2",
-  "t0": 1001.78,
+  "t0": 1031.092,
   "dur": 3.22,
   "at": "20.11@asientos planos",
   "exacto": true
@@ -2714,7 +2834,7 @@
  {
   "id": "o_bolitas_tamano",
   "kind": "depth2",
-  "t0": 1005.0,
+  "t0": 1034.312,
   "dur": 2.34,
   "at": "20.11@bolitas de distintos tama\u00f1os",
   "exacto": true
@@ -2722,7 +2842,7 @@
  {
   "id": "bol_ranuras",
   "kind": "bolilla",
-  "t0": 1007.34,
+  "t0": 1036.652,
   "dur": 6.44,
   "at": "20.12",
   "exacto": true
@@ -2730,7 +2850,7 @@
  {
   "id": "o_lima_ranura",
   "kind": "depth2",
-  "t0": 1013.78,
+  "t0": 1043.092,
   "dur": 3.32,
   "at": "20.12@por los costados",
   "exacto": true
@@ -2738,7 +2858,7 @@
  {
   "id": "o_salero",
   "kind": "depth2",
-  "t0": 1017.1,
+  "t0": 1046.412,
   "dur": 2.42,
   "at": "20.13",
   "exacto": true
@@ -2746,7 +2866,7 @@
  {
   "id": "n_salero",
   "kind": "depth2",
-  "t0": 1019.52,
+  "t0": 1048.832,
   "dur": 4.91,
   "at": "20.13@aunque la tapes con el dedo",
   "exacto": true
@@ -2754,7 +2874,7 @@
  {
   "id": "trazo3",
   "kind": "trazo",
-  "t0": 1024.43,
+  "t0": 1053.742,
   "dur": 4.92,
   "at": "20.14",
   "exacto": true
@@ -2762,7 +2882,7 @@
  {
   "id": "o_linea_cortada",
   "kind": "depth2",
-  "t0": 1029.35,
+  "t0": 1058.662,
   "dur": 4.4,
   "at": "20.14@una raya, un hueco",
   "exacto": true
@@ -2770,7 +2890,7 @@
  {
   "id": "b43_reloj",
   "kind": "depth2",
-  "t0": 1033.75,
+  "t0": 1063.062,
   "dur": 1.54,
   "at": "20.15",
   "exacto": true
@@ -2778,7 +2898,7 @@
  {
   "id": "o_reloj_pared",
   "kind": "depth2",
-  "t0": 1035.29,
+  "t0": 1064.602,
   "dur": 1.94,
   "at": "20.15@y el tiempo se acababa",
   "exacto": true
@@ -2786,7 +2906,7 @@
  {
   "id": "p_banqueros_no",
   "kind": "depth2",
-  "t0": 1037.23,
+  "t0": 1066.542,
   "dur": 4.96,
   "at": "20.16",
   "exacto": true
@@ -2794,7 +2914,7 @@
  {
   "id": "lang_no",
   "kind": "depth2",
-  "t0": 1042.19,
+  "t0": 1071.502,
   "dur": 1.62,
   "at": "20.16@no iban a poner m\u00e1s dinero",
   "exacto": true
@@ -2802,7 +2922,7 @@
  {
   "id": "o_cartel_cierre",
   "kind": "depth2",
-  "t0": 1043.81,
+  "t0": 1073.122,
   "dur": 2.775,
   "at": "20.16@la f\u00e1brica estuvo a punto",
   "exacto": true
@@ -2810,7 +2930,7 @@
  {
   "id": "o_reloj_noche",
   "kind": "depth2",
-  "t0": 1046.585,
+  "t0": 1075.897,
   "dur": 3.0,
   "at": "21",
   "exacto": true
@@ -2818,7 +2938,7 @@
  {
   "id": "cap7",
   "kind": "capitulo",
-  "t0": 1049.585,
+  "t0": 1078.897,
   "dur": 2.665,
   "at": "22",
   "exacto": true
@@ -2826,7 +2946,7 @@
  {
   "id": "n_pajita_vaso",
   "kind": "depth2",
-  "t0": 1052.25,
+  "t0": 1081.562,
   "dur": 3.82,
   "at": "23.0",
   "exacto": true
@@ -2834,7 +2954,7 @@
  {
   "id": "o_pajita_entra",
   "kind": "depth2",
-  "t0": 1056.07,
+  "t0": 1085.382,
   "dur": 1.56,
   "at": "23.0@m\u00e9tela en un vaso",
   "exacto": true
@@ -2842,7 +2962,7 @@
  {
   "id": "n_dedo_tapa",
   "kind": "depth2",
-  "t0": 1057.63,
+  "t0": 1086.942,
   "dur": 2.4,
   "at": "23.0@tapa el agujero",
   "exacto": true
@@ -2850,7 +2970,7 @@
  {
   "id": "n_saca_pajita",
   "kind": "depth2",
-  "t0": 1060.03,
+  "t0": 1089.342,
   "dur": 3.38,
   "at": "23.1",
   "exacto": true
@@ -2858,7 +2978,7 @@
  {
   "id": "cap_pajita",
   "kind": "capilar",
-  "t0": 1063.41,
+  "t0": 1092.722,
   "dur": 5.6,
   "at": "23.2",
   "exacto": true
@@ -2866,7 +2986,7 @@
  {
   "id": "o_pajita_macro",
   "kind": "depth2",
-  "t0": 1069.01,
+  "t0": 1098.322,
   "dur": 1.02,
   "at": "23.2@desde abajo",
   "exacto": true
@@ -2874,7 +2994,7 @@
  {
   "id": "o_tubo_fino",
   "kind": "depth2",
-  "t0": 1070.03,
+  "t0": 1099.342,
   "dur": 3.8,
   "at": "23.3",
   "exacto": true
@@ -2882,7 +3002,7 @@
  {
   "id": "o_capilares",
   "kind": "depth2",
-  "t0": 1073.83,
+  "t0": 1103.142,
   "dur": 4.86,
   "at": "23.3@en un tubo muy finito",
   "exacto": true
@@ -2890,7 +3010,7 @@
  {
   "id": "o_capil",
   "kind": "depth2",
-  "t0": 1078.69,
+  "t0": 1108.002,
   "dur": 1.36,
   "at": "23.3@capilaridad",
   "exacto": true
@@ -2898,7 +3018,7 @@
  {
   "id": "o_servilleta",
   "kind": "depth2",
-  "t0": 1080.05,
+  "t0": 1109.362,
   "dur": 4.86,
   "at": "23.4",
   "exacto": true
@@ -2906,7 +3026,7 @@
  {
   "id": "cap_servilleta",
   "kind": "capilar",
-  "t0": 1084.91,
+  "t0": 1114.222,
   "dur": 3.86,
   "at": "23.4@se moje toda hacia arriba",
   "exacto": true
@@ -2914,7 +3034,7 @@
  {
   "id": "b43_idea",
   "kind": "depth2",
-  "t0": 1088.77,
+  "t0": 1118.082,
   "dur": 4.48,
   "at": "23.5",
   "exacto": true
@@ -2922,7 +3042,7 @@
  {
   "id": "b43_anota",
   "kind": "depth2",
-  "t0": 1093.25,
+  "t0": 1122.562,
   "dur": 1.6,
   "at": "23.5@ah\u00ed estaba la respuesta",
   "exacto": true
@@ -2930,7 +3050,7 @@
  {
   "id": "cap_pluma",
   "kind": "capilar",
-  "t0": 1094.85,
+  "t0": 1124.162,
   "dur": 6.08,
   "at": "23.5@no hab\u00eda que empujar",
   "exacto": true
@@ -2938,7 +3058,7 @@
  {
   "id": "o_pipeta",
   "kind": "depth2",
-  "t0": 1100.93,
+  "t0": 1130.242,
   "dur": 0.8,
   "at": "23.6",
   "exacto": false
@@ -2946,7 +3066,7 @@
  {
   "id": "bol_capilar",
   "kind": "bolilla",
-  "t0": 1101.73,
+  "t0": 1131.042,
   "dur": 7.12,
   "at": "23.6@un tubo finito",
   "exacto": true
@@ -2954,7 +3074,7 @@
  {
   "id": "o_menisco",
   "kind": "depth2",
-  "t0": 1108.85,
+  "t0": 1138.162,
   "dur": 2.4,
   "at": "23.7",
   "exacto": true
@@ -2962,7 +3082,7 @@
  {
   "id": "lupa_parts",
   "kind": "fotolupa",
-  "t0": 1111.25,
+  "t0": 1140.562,
   "dur": 5.22,
   "at": "23.7@entre la bolita y su asiento",
   "exacto": true
@@ -2970,7 +3090,7 @@
  {
   "id": "cb_pajita",
   "kind": "depth2",
-  "t0": 1116.47,
+  "t0": 1145.782,
   "dur": 1.96,
   "at": "23.7@igual que el agua en la pajita",
   "exacto": true
@@ -2978,7 +3098,7 @@
  {
   "id": "bol_escribe",
   "kind": "bolilla",
-  "t0": 1118.43,
+  "t0": 1147.742,
   "dur": 6.42,
   "at": "23.8",
   "exacto": true
@@ -2986,7 +3106,7 @@
  {
   "id": "o_columna_baja",
   "kind": "depth2",
-  "t0": 1124.85,
+  "t0": 1154.162,
   "dur": 3.2,
   "at": "23.8@baja un poquito",
   "exacto": true
@@ -2994,7 +3114,7 @@
  {
   "id": "o_linea_lenta",
   "kind": "depth2",
-  "t0": 1128.05,
+  "t0": 1157.362,
   "dur": 3.34,
   "at": "23.8@sin pist\u00f3n, sin presi\u00f3n",
   "exacto": true
@@ -3002,7 +3122,7 @@
  {
   "id": "t_mesa_noche",
   "kind": "depth2",
-  "t0": 1131.39,
+  "t0": 1160.702,
   "dur": 4.24,
   "at": "23.9",
   "exacto": true
@@ -3010,7 +3130,7 @@
  {
   "id": "o_proto_hoja",
   "kind": "depth2",
-  "t0": 1135.63,
+  "t0": 1164.942,
   "dur": 3.7,
   "at": "23.9@una pluma nueva",
   "exacto": true
@@ -3018,7 +3138,7 @@
  {
   "id": "b43_apoya",
   "kind": "depth2",
-  "t0": 1139.33,
+  "t0": 1168.642,
   "dur": 3.52,
   "at": "23.10",
   "exacto": false
@@ -3026,7 +3146,7 @@
  {
   "id": "trazo4",
   "kind": "trazo",
-  "t0": 1142.85,
+  "t0": 1172.162,
   "dur": 2.68,
   "at": "23.11",
   "exacto": true
@@ -3034,7 +3154,7 @@
  {
   "id": "o_linea_azul",
   "kind": "depth2",
-  "t0": 1145.53,
+  "t0": 1174.842,
   "dur": 4.42,
   "at": "23.12",
   "exacto": true
@@ -3042,7 +3162,7 @@
  {
   "id": "b43_dedo",
   "kind": "depth2",
-  "t0": 1149.95,
+  "t0": 1179.262,
   "dur": 2.92,
   "at": "23.12@cuando pasa el dedo",
   "exacto": true
@@ -3050,7 +3170,7 @@
  {
   "id": "b43_sonrie",
   "kind": "depth2",
-  "t0": 1152.87,
+  "t0": 1182.182,
   "dur": 1.561,
   "at": "23.12@ya est\u00e1 seca",
   "exacto": true
@@ -3058,7 +3178,7 @@
  {
   "id": "o_linea_cruza",
   "kind": "depth2",
-  "t0": 1154.431,
+  "t0": 1183.743,
   "dur": 3.919,
   "at": "24",
   "exacto": true
@@ -3066,7 +3186,7 @@
  {
   "id": "a_pat_us_o2",
   "kind": "depth2",
-  "t0": 1158.35,
+  "t0": 1187.662,
   "dur": 3.26,
   "at": "25.0",
   "exacto": true
@@ -3074,7 +3194,7 @@
  {
   "id": "doc_patente",
   "kind": "doc3d",
-  "t0": 1161.61,
+  "t0": 1190.922,
   "dur": 2.26,
   "at": "25.0@la argentina le dio la patente",
   "exacto": true
@@ -3082,7 +3202,7 @@
  {
   "id": "a_ny_vj_o2",
   "kind": "depth2",
-  "t0": 1163.87,
+  "t0": 1193.182,
   "dur": 2.4,
   "at": "25.0@siete d\u00edas despu\u00e9s",
   "exacto": true
@@ -3090,7 +3210,7 @@
  {
   "id": "lupa_pat2",
   "kind": "fotolupa",
-  "t0": 1166.27,
+  "t0": 1195.582,
   "dur": 1.32,
   "at": "25.0@estados unidos",
   "exacto": true
@@ -3098,7 +3218,7 @@
  {
   "id": "o_pat_capil",
   "kind": "depth2",
-  "t0": 1167.59,
+  "t0": 1196.902,
   "dur": 5.4,
   "at": "25.1",
   "exacto": true
@@ -3106,7 +3226,7 @@
  {
   "id": "o_sombra",
   "kind": "depth2",
-  "t0": 1172.99,
+  "t0": 1202.302,
   "dur": 1.94,
   "at": "25.1@alguien va a encontrar",
   "exacto": true
@@ -3114,7 +3234,7 @@
  {
   "id": "o_maquina_bolitas",
   "kind": "depth2",
-  "t0": 1174.93,
+  "t0": 1204.242,
   "dur": 4.52,
   "at": "25.2",
   "exacto": true
@@ -3122,7 +3242,7 @@
  {
   "id": "p_torno",
   "kind": "depth2",
-  "t0": 1179.45,
+  "t0": 1208.762,
   "dur": 3.48,
   "at": "25.2@hubo que fabricar m\u00e1quinas especiales",
   "exacto": true
@@ -3130,7 +3250,7 @@
  {
   "id": "o_calibre",
   "kind": "depth2",
-  "t0": 1182.93,
+  "t0": 1212.242,
   "dur": 2.76,
   "at": "25.2@con una precisi\u00f3n",
   "exacto": true
@@ -3138,7 +3258,7 @@
  {
   "id": "p_cuarenta",
   "kind": "depth2",
-  "t0": 1185.69,
+  "t0": 1215.002,
   "dur": 2.02,
   "at": "25.3",
   "exacto": true
@@ -3146,7 +3266,7 @@
  {
   "id": "a_ba_zapatos_o",
   "kind": "depth2",
-  "t0": 1187.71,
+  "t0": 1217.022,
   "dur": 4.04,
   "at": "25.3@unos cuarenta operarios",
   "exacto": true
@@ -3154,7 +3274,7 @@
  {
   "id": "o_pens_bandeja",
   "kind": "depth2",
-  "t0": 1191.75,
+  "t0": 1221.062,
   "dur": 1.02,
   "at": "25.3@una por una",
   "exacto": true
@@ -3162,7 +3282,7 @@
  {
   "id": "o_eterpen",
   "kind": "depth2",
-  "t0": 1192.77,
+  "t0": 1222.082,
   "dur": 3.76,
   "at": "25.4",
   "exacto": true
@@ -3170,7 +3290,7 @@
  {
   "id": "nombre_birome",
   "kind": "tipos",
-  "t0": 1196.53,
+  "t0": 1225.842,
   "dur": 2.45,
   "at": "25.4@le pusieron un nombre",
   "exacto": true
@@ -3178,7 +3298,7 @@
  {
   "id": "lupa_birome_bmb",
   "kind": "fotolupa",
-  "t0": 1198.98,
+  "t0": 1228.292,
   "dur": 5.04,
   "at": "25.4@de dos apellidos",
   "exacto": true
@@ -3186,7 +3306,7 @@
  {
   "id": "a_biromes_o",
   "kind": "depth2",
-  "t0": 1204.02,
+  "t0": 1233.332,
   "dur": 1.65,
   "at": "25.5",
   "exacto": true
@@ -3194,7 +3314,7 @@
  {
   "id": "o_libreria",
   "kind": "depth2",
-  "t0": 1205.67,
+  "t0": 1234.982,
   "dur": 1.56,
   "at": "25.5@y aun as\u00ed",
   "exacto": true
@@ -3202,7 +3322,7 @@
  {
   "id": "a_ba_peuser_o",
   "kind": "depth2",
-  "t0": 1207.23,
+  "t0": 1236.542,
   "dur": 5.76,
   "at": "25.5@a algunos libreros",
   "exacto": true
@@ -3210,7 +3330,7 @@
  {
   "id": "n_juega_pluma",
   "kind": "depth2",
-  "t0": 1212.99,
+  "t0": 1242.302,
   "dur": 1.78,
   "at": "25.5@las vend\u00edan como juguetes",
   "exacto": true
@@ -3218,7 +3338,7 @@
  {
   "id": "p_clientes",
   "kind": "depth2",
-  "t0": 1214.77,
+  "t0": 1244.082,
   "dur": 2.89,
   "at": "25.6",
   "exacto": true
@@ -3226,7 +3346,7 @@
  {
   "id": "a_ba_corrientes47_o",
   "kind": "depth2",
-  "t0": 1217.66,
+  "t0": 1246.972,
   "dur": 2.89,
   "at": "25.6@pero la gente empez\u00f3",
   "exacto": true
@@ -3234,7 +3354,7 @@
  {
   "id": "lupa_birome_aviso",
   "kind": "fotolupa",
-  "t0": 1220.55,
+  "t0": 1249.862,
   "dur": 3.1,
   "at": "25.6@la tinta duraba meses",
   "exacto": true
@@ -3242,7 +3362,7 @@
  {
   "id": "o_carbonico",
   "kind": "depth2",
-  "t0": 1223.65,
+  "t0": 1252.962,
   "dur": 1.3,
   "at": "25.6@papel carb\u00f3nico",
   "exacto": true
@@ -3250,7 +3370,7 @@
  {
   "id": "a_bp_writing_o",
   "kind": "depth2",
-  "t0": 1224.95,
+  "t0": 1254.262,
   "dur": 1.744,
   "at": "25.6@y no manchaban",
   "exacto": true
@@ -3258,7 +3378,7 @@
  {
   "id": "t04_lampara",
   "kind": "depth2",
-  "t0": 1226.694,
+  "t0": 1256.006,
   "dur": 3.0,
   "at": "26",
   "exacto": true
@@ -3266,7 +3386,7 @@
  {
   "id": "cap8",
   "kind": "capitulo",
-  "t0": 1229.694,
+  "t0": 1259.006,
   "dur": 2.916,
   "at": "27",
   "exacto": true
@@ -3274,7 +3394,7 @@
  {
   "id": "a_raf_bc_o",
   "kind": "depth2",
-  "t0": 1232.61,
+  "t0": 1261.922,
   "dur": 2.28,
   "at": "28.0",
   "exacto": true
@@ -3282,7 +3402,7 @@
  {
   "id": "a_lanc_bombing_o",
   "kind": "proyector",
-  "t0": 1234.89,
+  "t0": 1264.202,
   "dur": 2.06,
   "at": "28.0@la guerra segu\u00eda",
   "exacto": true
@@ -3290,7 +3410,7 @@
  {
   "id": "a_raf_mccarthy_o",
   "kind": "copia",
-  "t0": 1236.95,
+  "t0": 1266.262,
   "dur": 3.4,
   "at": "28.0@hab\u00eda un lugar",
   "exacto": true
@@ -3298,7 +3418,7 @@
  {
   "id": "o_bombardero",
   "kind": "depth2",
-  "t0": 1240.35,
+  "t0": 1269.662,
   "dur": 1.62,
   "at": "28.0@el cielo",
   "exacto": true
@@ -3306,7 +3426,7 @@
  {
   "id": "n_valija",
   "kind": "depth2",
-  "t0": 1241.97,
+  "t0": 1271.282,
   "dur": 2.34,
   "at": "28.1",
   "exacto": true
@@ -3314,7 +3434,7 @@
  {
   "id": "a_lanc_vuelo_o",
   "kind": "depth2",
-  "t0": 1244.31,
+  "t0": 1273.622,
   "dur": 3.58,
   "at": "28.1@en un avi\u00f3n",
   "exacto": true
@@ -3322,7 +3442,7 @@
  {
   "id": "o_champu",
   "kind": "depth2",
-  "t0": 1247.89,
+  "t0": 1277.202,
   "dur": 1.48,
   "at": "28.1@por todos lados",
   "exacto": true
@@ -3330,7 +3450,7 @@
  {
   "id": "alt_champu",
   "kind": "altura",
-  "t0": 1249.37,
+  "t0": 1278.682,
   "dur": 4.78,
   "at": "28.2",
   "exacto": true
@@ -3338,7 +3458,7 @@
  {
   "id": "cb_champu",
   "kind": "depth2",
-  "t0": 1254.15,
+  "t0": 1283.462,
   "dur": 5.14,
   "at": "28.2@y el aire que estaba encerrado",
   "exacto": true
@@ -3346,7 +3466,7 @@
  {
   "id": "alt_pluma",
   "kind": "altura",
-  "t0": 1259.29,
+  "t0": 1288.602,
   "dur": 3.98,
   "at": "28.3",
   "exacto": true
@@ -3354,7 +3474,7 @@
  {
   "id": "a_lanc_115_o",
   "kind": "depth2",
-  "t0": 1263.27,
+  "t0": 1292.582,
   "dur": 1.76,
   "at": "28.3@sub\u00edan a miles de metros",
   "exacto": true
@@ -3362,7 +3482,7 @@
  {
   "id": "o_pluma_avion",
   "kind": "depth2",
-  "t0": 1265.03,
+  "t0": 1294.342,
   "dur": 2.76,
   "at": "28.3@la burbuja de aire",
   "exacto": true
@@ -3370,7 +3490,7 @@
  {
   "id": "o_mapa_manchado",
   "kind": "depth2",
-  "t0": 1267.79,
+  "t0": 1297.102,
   "dur": 2.64,
   "at": "28.3@y empujaba la tinta hacia afuera",
   "exacto": true
@@ -3378,7 +3498,7 @@
  {
   "id": "nav_escribe",
   "kind": "depth2",
-  "t0": 1270.43,
+  "t0": 1299.742,
   "dur": 1.94,
   "at": "28.4",
   "exacto": true
@@ -3386,23 +3506,23 @@
  {
   "id": "lupa_wireless",
   "kind": "fotolupa",
-  "t0": 1272.37,
+  "t0": 1301.682,
   "dur": 1.88,
   "at": "28.4@rumbos, horas y posiciones",
   "exacto": true
  },
  {
-  "id": "a_raf_debrief_o",
-  "kind": "depth2",
-  "t0": 1274.25,
+  "id": "f_avion",
+  "kind": "film",
+  "t0": 1303.562,
   "dur": 1.38,
   "at": "28.4@en pleno vuelo",
   "exacto": true
  },
  {
   "id": "a_lanc_engineer_o",
-  "kind": "proyector",
-  "t0": 1275.63,
+  "kind": "depth2",
+  "t0": 1304.942,
   "dur": 1.78,
   "at": "28.4@terminaban con las manos",
   "exacto": true
@@ -3410,7 +3530,7 @@
  {
   "id": "nav_mancha",
   "kind": "depth2",
-  "t0": 1277.41,
+  "t0": 1306.722,
   "dur": 1.32,
   "at": "28.4@manchados",
   "exacto": true
@@ -3418,7 +3538,7 @@
  {
   "id": "alt_birome",
   "kind": "altura",
-  "t0": 1278.73,
+  "t0": 1308.042,
   "dur": 8.3,
   "at": "28.5",
   "exacto": true
@@ -3426,7 +3546,7 @@
  {
   "id": "nav_birome",
   "kind": "depth2",
-  "t0": 1287.03,
+  "t0": 1316.342,
   "dur": 1.01,
   "at": "28.5@a cualquier altura",
   "exacto": true
@@ -3434,7 +3554,7 @@
  {
   "id": "a_lanc_wireless_o",
   "kind": "depth2",
-  "t0": 1288.04,
+  "t0": 1317.352,
   "dur": 1.01,
   "at": "28.5@a cualquier altura",
   "exacto": true
@@ -3442,7 +3562,7 @@
  {
   "id": "p_martin",
   "kind": "depth2",
-  "t0": 1289.05,
+  "t0": 1318.362,
   "dur": 3.98,
   "at": "28.6",
   "exacto": true
@@ -3450,7 +3570,7 @@
  {
   "id": "a_raf_canada_o",
   "kind": "depth2",
-  "t0": 1293.03,
+  "t0": 1322.342,
   "dur": 6.08,
   "at": "28.6@y vio la oportunidad",
   "exacto": true
@@ -3458,7 +3578,7 @@
  {
   "id": "cifra_raf",
   "kind": "tipos",
-  "t0": 1299.11,
+  "t0": 1328.422,
   "dur": 1.36,
   "at": "28.6@treinta mil plumas",
   "exacto": true
@@ -3466,7 +3586,7 @@
  {
   "id": "o_fabrica_miles",
   "kind": "depth2",
-  "t0": 1300.47,
+  "t0": 1329.782,
   "dur": 4.24,
   "at": "28.7",
   "exacto": true
@@ -3474,7 +3594,7 @@
  {
   "id": "a_lanc_fabrica_o",
   "kind": "depth2",
-  "t0": 1304.71,
+  "t0": 1334.022,
   "dur": 4.28,
   "at": "28.7@y le pusieron un nombre m\u00e1s corto",
   "exacto": true
@@ -3482,7 +3602,7 @@
  {
   "id": "o_caja_biro",
   "kind": "depth2",
-  "t0": 1308.99,
+  "t0": 1338.302,
   "dur": 2.52,
   "at": "28.7@el apellido del inventor",
   "exacto": true
@@ -3490,7 +3610,7 @@
  {
   "id": "nav_vuelve",
   "kind": "depth2",
-  "t0": 1311.51,
+  "t0": 1340.822,
   "dur": 1.53,
   "at": "28.8",
   "exacto": true
@@ -3498,7 +3618,7 @@
  {
   "id": "a_raf_gforge_o",
   "kind": "depth2",
-  "t0": 1313.04,
+  "t0": 1342.352,
   "dur": 1.53,
   "at": "28.8@los pilotos y navegantes",
   "exacto": true
@@ -3506,7 +3626,7 @@
  {
   "id": "a_raf_aable_o",
   "kind": "proyector",
-  "t0": 1314.57,
+  "t0": 1343.882,
   "dur": 3.82,
   "at": "28.8@con su biro en el bolsillo",
   "exacto": true
@@ -3514,7 +3634,7 @@
  {
   "id": "p_ingles",
   "kind": "depth2",
-  "t0": 1318.39,
+  "t0": 1347.702,
   "dur": 2.58,
   "at": "28.8@a cualquier bol\u00edgrafo",
   "exacto": true
@@ -3522,7 +3642,7 @@
  {
   "id": "a_gimbels_bridge_o",
   "kind": "depth2",
-  "t0": 1320.97,
+  "t0": 1350.282,
   "dur": 2.4,
   "at": "28.9",
   "exacto": true
@@ -3530,7 +3650,7 @@
  {
   "id": "o_eversharp",
   "kind": "depth2",
-  "t0": 1323.37,
+  "t0": 1352.682,
   "dur": 7.22,
   "at": "28.9@una empresa grande de plumas",
   "exacto": true
@@ -3538,7 +3658,7 @@
  {
   "id": "cifra_2m",
   "kind": "tipos",
-  "t0": 1330.59,
+  "t0": 1359.902,
   "dur": 5.06,
   "at": "28.10",
   "exacto": true
@@ -3546,7 +3666,7 @@
  {
   "id": "o_dolares",
   "kind": "depth2",
-  "t0": 1335.65,
+  "t0": 1364.962,
   "dur": 1.58,
   "at": "28.10@era una fortuna",
   "exacto": true
@@ -3554,7 +3674,7 @@
  {
   "id": "o_fabrica_lenta",
   "kind": "depth2",
-  "t0": 1337.23,
+  "t0": 1366.542,
   "dur": 3.26,
   "at": "28.11",
   "exacto": true
@@ -3562,7 +3682,7 @@
  {
   "id": "a_chi_state_o",
   "kind": "depth2",
-  "t0": 1340.49,
+  "t0": 1369.802,
   "dur": 2.15,
   "at": "28.11@alguien m\u00e1s se le iba a adelantar",
   "exacto": true
@@ -3570,7 +3690,7 @@
  {
   "id": "o_bomb_nubes",
   "kind": "depth2",
-  "t0": 1342.64,
+  "t0": 1371.952,
   "dur": 3.0,
   "at": "29",
   "exacto": true
@@ -3578,15 +3698,15 @@
  {
   "id": "cap9",
   "kind": "capitulo",
-  "t0": 1345.64,
+  "t0": 1374.952,
   "dur": 4.79,
   "at": "30",
   "exacto": true
  },
  {
-  "id": "o_chicago",
-  "kind": "depth2",
-  "t0": 1350.43,
+  "id": "m_chicago",
+  "kind": "mapa3d",
+  "t0": 1379.742,
   "dur": 1.8,
   "at": "31.0",
   "exacto": true
@@ -3594,7 +3714,7 @@
  {
   "id": "rey",
   "kind": "depth2",
-  "t0": 1352.23,
+  "t0": 1381.542,
   "dur": 3.64,
   "at": "31.0@milton reynolds",
   "exacto": true
@@ -3602,7 +3722,7 @@
  {
   "id": "rey_reloj",
   "kind": "depth2",
-  "t0": 1355.87,
+  "t0": 1385.182,
   "dur": 1.54,
   "at": "31.0@nada de paciencia",
   "exacto": true
@@ -3610,7 +3730,7 @@
  {
   "id": "rey_prueba",
   "kind": "depth2",
-  "t0": 1357.41,
+  "t0": 1386.722,
   "dur": 1.58,
   "at": "31.1",
   "exacto": true
@@ -3618,7 +3738,7 @@
  {
   "id": "a_birome_I_o",
   "kind": "depth2",
-  "t0": 1358.99,
+  "t0": 1388.302,
   "dur": 5.62,
   "at": "31.1@alguien le muestra una birome argentina",
   "exacto": true
@@ -3626,7 +3746,7 @@
  {
   "id": "rey_sonrie",
   "kind": "depth2",
-  "t0": 1364.61,
+  "t0": 1393.922,
   "dur": 2.16,
   "at": "31.1@la cosa m\u00e1s vendida",
   "exacto": true
@@ -3634,7 +3754,7 @@
  {
   "id": "rey_lee",
   "kind": "depth2",
-  "t0": 1366.77,
+  "t0": 1396.082,
   "dur": 2.46,
   "at": "31.2",
   "exacto": true
@@ -3642,7 +3762,7 @@
  {
   "id": "o_patente_lupa",
   "kind": "depth2",
-  "t0": 1369.23,
+  "t0": 1398.542,
   "dur": 2.72,
   "at": "31.2@pero reynolds la ley\u00f3 bien",
   "exacto": true
@@ -3650,7 +3770,7 @@
  {
   "id": "lupa_capil",
   "kind": "fotolupa",
-  "t0": 1371.95,
+  "t0": 1401.262,
   "dur": 2.4,
   "at": "31.2@la patente proteg\u00eda",
   "exacto": true
@@ -3658,7 +3778,7 @@
  {
   "id": "o_receta",
   "kind": "depth2",
-  "t0": 1374.35,
+  "t0": 1403.662,
   "dur": 2.58,
   "at": "31.3",
   "exacto": true
@@ -3666,7 +3786,7 @@
  {
   "id": "o_receta_tacha",
   "kind": "depth2",
-  "t0": 1376.93,
+  "t0": 1406.242,
   "dur": 6.06,
   "at": "31.3@cambiando un solo ingrediente",
   "exacto": true
@@ -3674,7 +3794,7 @@
  {
   "id": "split_copia",
   "kind": "split",
-  "t0": 1382.99,
+  "t0": 1412.302,
   "dur": 1.4,
   "at": "31.3@bajaba por la gravedad",
   "exacto": true
@@ -3682,7 +3802,7 @@
  {
   "id": "o_gravedad",
   "kind": "depth2",
-  "t0": 1384.39,
+  "t0": 1413.702,
   "dur": 1.5,
   "at": "31.3@por su propio peso",
   "exacto": true
@@ -3690,7 +3810,7 @@
  {
   "id": "o_tinta_liquida",
   "kind": "depth2",
-  "t0": 1385.89,
+  "t0": 1415.202,
   "dur": 2.24,
   "at": "31.4",
   "exacto": true
@@ -3698,7 +3818,7 @@
  {
   "id": "o_tubo_grande",
   "kind": "depth2",
-  "t0": 1388.13,
+  "t0": 1417.442,
   "dur": 4.62,
   "at": "31.4@y un tubo m\u00e1s grande",
   "exacto": true
@@ -3706,7 +3826,7 @@
  {
   "id": "o_gotea_bolsillo",
   "kind": "depth2",
-  "t0": 1392.75,
+  "t0": 1422.062,
   "dur": 1.26,
   "at": "31.4@tiende a gotear",
   "exacto": true
@@ -3714,7 +3834,7 @@
  {
   "id": "o_miras",
   "kind": "depth2",
-  "t0": 1394.01,
+  "t0": 1423.322,
   "dur": 4.16,
   "at": "31.5",
   "exacto": true
@@ -3722,7 +3842,7 @@
  {
   "id": "a_raf_gfg_jun_o",
   "kind": "depth2",
-  "t0": 1398.17,
+  "t0": 1427.482,
   "dur": 2.64,
   "at": "31.5@de los bombarderos de la guerra",
   "exacto": true
@@ -3730,7 +3850,7 @@
  {
   "id": "o_aluminio",
   "kind": "depth2",
-  "t0": 1400.81,
+  "t0": 1430.122,
   "dur": 2.18,
   "at": "31.5@de aluminio de aviones",
   "exacto": true
@@ -3738,7 +3858,7 @@
  {
   "id": "rey_fabrica",
   "kind": "depth2",
-  "t0": 1402.99,
+  "t0": 1432.302,
   "dur": 2.54,
   "at": "31.6",
   "exacto": true
@@ -3746,7 +3866,7 @@
  {
   "id": "a_chi_state_o2",
   "kind": "depth2",
-  "t0": 1405.53,
+  "t0": 1434.842,
   "dur": 0.92,
   "at": "31.6@lo lanz\u00f3 a la venta en semanas",
   "exacto": true
@@ -3754,7 +3874,7 @@
  {
   "id": "o_cal_1945",
   "kind": "depth2",
-  "t0": 1406.45,
+  "t0": 1435.762,
   "dur": 1.22,
   "at": "31.6@en semanas",
   "exacto": true
@@ -3762,7 +3882,7 @@
  {
   "id": "per_gimbels",
   "kind": "periodico",
-  "t0": 1407.67,
+  "t0": 1436.982,
   "dur": 2.84,
   "at": "31.7@veintinueve de octubre",
   "exacto": true
@@ -3770,7 +3890,7 @@
  {
   "id": "a_gimbels_o2",
   "kind": "depth2",
-  "t0": 1410.51,
+  "t0": 1439.822,
   "dur": 3.24,
   "at": "31.7@en nueva york",
   "exacto": true
@@ -3778,7 +3898,7 @@
  {
   "id": "o_puertas",
   "kind": "depth2",
-  "t0": 1413.75,
+  "t0": 1443.062,
   "dur": 4.98,
   "at": "31.7@abri\u00f3 sus puertas",
   "exacto": true
@@ -3786,7 +3906,7 @@
  {
   "id": "cb_rocket",
   "kind": "depth2",
-  "t0": 1418.73,
+  "t0": 1448.042,
   "dur": 1.74,
   "at": "31.7@reynolds rocket",
   "exacto": true
@@ -3794,7 +3914,7 @@
  {
   "id": "cifra_precio",
   "kind": "tipos",
-  "t0": 1420.47,
+  "t0": 1449.782,
   "dur": 4.2,
   "at": "31.8",
   "exacto": true
@@ -3802,7 +3922,7 @@
  {
   "id": "p_obrero",
   "kind": "depth2",
-  "t0": 1424.67,
+  "t0": 1453.982,
   "dur": 2.82,
   "at": "31.8@m\u00e1s o menos lo que ganaba",
   "exacto": true
@@ -3810,7 +3930,7 @@
  {
   "id": "p_multitud",
   "kind": "depth2",
-  "t0": 1427.49,
+  "t0": 1456.802,
   "dur": 2.02,
   "at": "31.9",
   "exacto": true
@@ -3818,7 +3938,7 @@
  {
   "id": "cifra_5000",
   "kind": "tipos",
-  "t0": 1429.51,
+  "t0": 1458.822,
   "dur": 1.08,
   "at": "31.9@cinco mil personas",
   "exacto": true
@@ -3826,7 +3946,7 @@
  {
   "id": "lupa_gimbels",
   "kind": "fotolupa",
-  "t0": 1430.59,
+  "t0": 1459.902,
   "dur": 2.14,
   "at": "31.9@se agolparon en la puerta",
   "exacto": true
@@ -3834,7 +3954,7 @@
  {
   "id": "p_mostrador",
   "kind": "depth2",
-  "t0": 1432.73,
+  "t0": 1462.042,
   "dur": 2.82,
   "at": "31.9@empujaban, gritaban",
   "exacto": true
@@ -3842,7 +3962,7 @@
  {
   "id": "cb_policias",
   "kind": "depth2",
-  "t0": 1435.55,
+  "t0": 1464.862,
   "dur": 2.62,
   "at": "31.9@cincuenta polic\u00edas",
   "exacto": true
@@ -3850,7 +3970,7 @@
  {
   "id": "o_cajas_vacias",
   "kind": "depth2",
-  "t0": 1438.17,
+  "t0": 1467.482,
   "dur": 3.16,
   "at": "31.10",
   "exacto": true
@@ -3858,7 +3978,7 @@
  {
   "id": "cifra_10000",
   "kind": "tipos",
-  "t0": 1441.33,
+  "t0": 1470.642,
   "dur": 3.2,
   "at": "31.10@diez mil",
   "exacto": true
@@ -3866,7 +3986,7 @@
  {
   "id": "o_bajo_agua",
   "kind": "depth2",
-  "t0": 1444.53,
+  "t0": 1473.842,
   "dur": 1.24,
   "at": "31.10@bajo el agua",
   "exacto": true
@@ -3874,7 +3994,7 @@
  {
   "id": "b43_lee_diario",
   "kind": "depth2",
-  "t0": 1445.77,
+  "t0": 1475.082,
   "dur": 2.7,
   "at": "31.11",
   "exacto": true
@@ -3882,7 +4002,7 @@
  {
   "id": "lupa_nyvj",
   "kind": "fotolupa",
-  "t0": 1448.47,
+  "t0": 1477.782,
   "dur": 2.78,
   "at": "31.11@cincuenta polic\u00edas para contener",
   "exacto": true
@@ -3890,7 +4010,7 @@
  {
   "id": "o_rocket_caja",
   "kind": "depth2",
-  "t0": 1451.25,
+  "t0": 1480.562,
   "dur": 1.38,
   "at": "31.11@y el bol\u00edgrafo que vend\u00edan",
   "exacto": true
@@ -3898,7 +4018,7 @@
  {
   "id": "o_dos_plumas",
   "kind": "depth2",
-  "t0": 1452.63,
+  "t0": 1481.942,
   "dur": 1.98,
   "at": "31.11@no era el de b\u00edr\u00f3",
   "exacto": true
@@ -3906,7 +4026,7 @@
  {
   "id": "p_juicio",
   "kind": "depth2",
-  "t0": 1454.61,
+  "t0": 1483.922,
   "dur": 4.58,
   "at": "31.12",
   "exacto": true
@@ -3914,7 +4034,7 @@
  {
   "id": "p_abogado",
   "kind": "depth2",
-  "t0": 1459.19,
+  "t0": 1488.502,
   "dur": 2.4,
   "at": "31.12@reynolds le hizo juicio",
   "exacto": true
@@ -3922,7 +4042,7 @@
  {
   "id": "split_pleito",
   "kind": "split",
-  "t0": 1461.59,
+  "t0": 1490.902,
   "dur": 1.66,
   "at": "31.12@los dos pleitos",
   "exacto": true
@@ -3930,7 +4050,7 @@
  {
   "id": "o_diarios_pleito",
   "kind": "depth2",
-  "t0": 1463.25,
+  "t0": 1492.562,
   "dur": 3.26,
   "at": "31.12@para que los diarios",
   "exacto": true
@@ -3938,7 +4058,7 @@
  {
   "id": "o_rocket_gotea",
   "kind": "depth2",
-  "t0": 1466.51,
+  "t0": 1495.822,
   "dur": 3.96,
   "at": "31.13",
   "exacto": true
@@ -3946,7 +4066,7 @@
  {
   "id": "p_raya_seca",
   "kind": "depth2",
-  "t0": 1470.47,
+  "t0": 1499.782,
   "dur": 2.94,
   "at": "31.13@a veces dejaban de escribir",
   "exacto": true
@@ -3954,7 +4074,7 @@
  {
   "id": "p_devoluciones",
   "kind": "depth2",
-  "t0": 1473.41,
+  "t0": 1502.722,
   "dur": 1.18,
   "at": "31.13@devolverlas",
   "exacto": true
@@ -3962,7 +4082,7 @@
  {
   "id": "a_bgimbel_o",
   "kind": "depth2",
-  "t0": 1474.59,
+  "t0": 1503.902,
   "dur": 4.22,
   "at": "31.14",
   "exacto": true
@@ -3970,7 +4090,7 @@
  {
   "id": "bal_precio",
   "kind": "balanza",
-  "t0": 1478.81,
+  "t0": 1508.122,
   "dur": 1.32,
   "at": "31.14@se desplomaron",
   "exacto": true
@@ -3978,7 +4098,7 @@
  {
   "id": "a_biromes_o2",
   "kind": "depth2",
-  "t0": 1480.13,
+  "t0": 1509.442,
   "dur": 4.78,
   "at": "31.14@hab\u00eda cientos de marcas",
   "exacto": true
@@ -3986,7 +4106,7 @@
  {
   "id": "o_vidriera",
   "kind": "depth2",
-  "t0": 1484.91,
+  "t0": 1514.222,
   "dur": 4.6,
   "at": "31.15",
   "exacto": true
@@ -3994,7 +4114,7 @@
  {
   "id": "o_monedas",
   "kind": "depth2",
-  "t0": 1489.51,
+  "t0": 1518.822,
   "dur": 2.62,
   "at": "31.15@a costar unas monedas",
   "exacto": true
@@ -4002,7 +4122,7 @@
  {
   "id": "o_puerta_cerrada",
   "kind": "depth2",
-  "t0": 1492.13,
+  "t0": 1521.442,
   "dur": 2.999,
   "at": "31.15@y la empresa de reynolds desapareci\u00f3",
   "exacto": true
@@ -4010,7 +4130,7 @@
  {
   "id": "o_vidriera_cb",
   "kind": "depth2",
-  "t0": 1495.129,
+  "t0": 1524.441,
   "dur": 3.0,
   "at": "32",
   "exacto": true
@@ -4018,7 +4138,7 @@
  {
   "id": "cap10",
   "kind": "capitulo",
-  "t0": 1498.129,
+  "t0": 1527.441,
   "dur": 2.541,
   "at": "33",
   "exacto": true
@@ -4026,7 +4146,7 @@
  {
   "id": "bich",
   "kind": "depth2",
-  "t0": 1500.67,
+  "t0": 1529.982,
   "dur": 3.48,
   "at": "34.0",
   "exacto": true
@@ -4034,7 +4154,7 @@
  {
   "id": "a_bic4_o",
   "kind": "depth2",
-  "t0": 1504.15,
+  "t0": 1533.462,
   "dur": 4.92,
   "at": "34.0@miraba todo esto",
   "exacto": true
@@ -4042,7 +4162,7 @@
  {
   "id": "bich_pierde",
   "kind": "depth2",
-  "t0": 1509.07,
+  "t0": 1538.382,
   "dur": 3.04,
   "at": "34.1",
   "exacto": true
@@ -4050,7 +4170,7 @@
  {
   "id": "bich_mira",
   "kind": "depth2",
-  "t0": 1512.11,
+  "t0": 1541.422,
   "dur": 3.02,
   "at": "34.1@el bol\u00edgrafo no ten\u00eda que ser un lujo",
   "exacto": true
@@ -4058,7 +4178,7 @@
  {
   "id": "o_barato",
   "kind": "depth2",
-  "t0": 1515.13,
+  "t0": 1544.442,
   "dur": 3.18,
   "at": "34.1@tan barato",
   "exacto": true
@@ -4066,7 +4186,7 @@
  {
   "id": "bich_firma",
   "kind": "depth2",
-  "t0": 1518.31,
+  "t0": 1547.622,
   "dur": 4.6,
   "at": "34.2",
   "exacto": true
@@ -4074,7 +4194,7 @@
  {
   "id": "o_maq_bolas",
   "kind": "depth2",
-  "t0": 1522.91,
+  "t0": 1552.222,
   "dur": 3.1,
   "at": "34.2@m\u00e1quinas de precisi\u00f3n",
   "exacto": true
@@ -4082,7 +4202,7 @@
  {
   "id": "o_cinta_bic",
   "kind": "depth2",
-  "t0": 1526.01,
+  "t0": 1555.322,
   "dur": 2.8,
   "at": "34.2@millones por d\u00eda",
   "exacto": true
@@ -4090,7 +4210,7 @@
  {
   "id": "o_cristal_gira",
   "kind": "depth2",
-  "t0": 1528.81,
+  "t0": 1558.122,
   "dur": 4.6,
   "at": "34.3",
   "exacto": true
@@ -4098,7 +4218,7 @@
  {
   "id": "lupa_bic",
   "kind": "fotolupa",
-  "t0": 1533.41,
+  "t0": 1562.722,
   "dur": 2.78,
   "at": "34.3@hexagonal",
   "exacto": true
@@ -4106,7 +4226,7 @@
  {
   "id": "o_bic_agujero",
   "kind": "depth2",
-  "t0": 1536.19,
+  "t0": 1565.502,
   "dur": 2.12,
   "at": "34.3@con un agujerito en el costado",
   "exacto": true
@@ -4114,7 +4234,7 @@
  {
   "id": "o_bic_letras",
   "kind": "depth2",
-  "t0": 1538.31,
+  "t0": 1567.622,
   "dur": 2.98,
   "at": "34.3@le cort\u00f3 la hache",
   "exacto": true
@@ -4122,7 +4242,7 @@
  {
   "id": "a_bic08_o",
   "kind": "depth2",
-  "t0": 1541.29,
+  "t0": 1570.602,
   "dur": 1.22,
   "at": "34.4",
   "exacto": true
@@ -4130,7 +4250,7 @@
  {
   "id": "cifra_cristal",
   "kind": "tipos",
-  "t0": 1542.51,
+  "t0": 1571.822,
   "dur": 7.22,
   "at": "34.5",
   "exacto": true
@@ -4138,7 +4258,7 @@
  {
   "id": "o_bic_cae",
   "kind": "depth2",
-  "t0": 1549.73,
+  "t0": 1579.042,
   "dur": 2.2,
   "at": "34.5@cincuenta y siete por segundo",
   "exacto": true
@@ -4146,7 +4266,7 @@
  {
   "id": "b80_mira",
   "kind": "depth2",
-  "t0": 1551.93,
+  "t0": 1581.242,
   "dur": 2.96,
   "at": "34.6",
   "exacto": true
@@ -4154,7 +4274,7 @@
  {
   "id": "cb_bic_lluvia",
   "kind": "depth2",
-  "t0": 1554.89,
+  "t0": 1584.202,
   "dur": 2.84,
   "at": "34.6@m\u00e1s de cien mil millones",
   "exacto": true
@@ -4162,7 +4282,7 @@
  {
   "id": "bal_bich",
   "kind": "balanza",
-  "t0": 1557.73,
+  "t0": 1587.042,
   "dur": 2.22,
   "at": "34.6@no fue b\u00edr\u00f3",
   "exacto": true
@@ -4170,7 +4290,7 @@
  {
   "id": "b43_vende",
   "kind": "depth2",
-  "t0": 1559.95,
+  "t0": 1589.262,
   "dur": 4.68,
   "at": "34.7",
   "exacto": false
@@ -4178,7 +4298,7 @@
  {
   "id": "o_libro_quiebra",
   "kind": "depth2",
-  "t0": 1564.63,
+  "t0": 1593.942,
   "dur": 5.88,
   "at": "34.7@su propia empresa quebr\u00f3",
   "exacto": true
@@ -4186,7 +4306,7 @@
  {
   "id": "o_cartel_parker",
   "kind": "depth2",
-  "t0": 1570.51,
+  "t0": 1599.822,
   "dur": 1.6,
   "at": "34.7@termin\u00f3 en manos de parker",
   "exacto": true
@@ -4194,7 +4314,7 @@
  {
   "id": "b_perfume",
   "kind": "depth2",
-  "t0": 1572.11,
+  "t0": 1601.422,
   "dur": 2.44,
   "at": "34.8",
   "exacto": true
@@ -4202,7 +4322,7 @@
  {
   "id": "o_perfumes",
   "kind": "depth2",
-  "t0": 1574.55,
+  "t0": 1603.862,
   "dur": 6.94,
   "at": "34.8@hizo perfumes",
   "exacto": true
@@ -4210,7 +4330,7 @@
  {
   "id": "cb_desod",
   "kind": "depth2",
-  "t0": 1581.49,
+  "t0": 1610.802,
   "dur": 3.08,
   "at": "34.8@la misma idea",
   "exacto": true
@@ -4218,7 +4338,7 @@
  {
   "id": "corr_inventos",
   "kind": "corridor",
-  "t0": 1584.57,
+  "t0": 1613.882,
   "dur": 2.5,
   "at": "34.9",
   "exacto": true
@@ -4226,7 +4346,7 @@
  {
   "id": "a_biro_inv_o",
   "kind": "depth2",
-  "t0": 1587.07,
+  "t0": 1616.382,
   "dur": 2.28,
   "at": "34.9@un proceso para fabricar pl\u00e1sticos",
   "exacto": true
@@ -4234,7 +4354,7 @@
  {
   "id": "o_olas_maq",
   "kind": "depth2",
-  "t0": 1589.35,
+  "t0": 1618.662,
   "dur": 5.44,
   "at": "34.9@un aparato para sacar energ\u00eda",
   "exacto": true
@@ -4242,7 +4362,7 @@
  {
   "id": "b80_pinta",
   "kind": "depth2",
-  "t0": 1594.79,
+  "t0": 1624.102,
   "dur": 2.46,
   "at": "34.10",
   "exacto": true
@@ -4250,7 +4370,7 @@
  {
   "id": "a_biro_1978_o",
   "kind": "depth2",
-  "t0": 1597.25,
+  "t0": 1626.562,
   "dur": 5.1,
   "at": "34.10@ciudadano argentino",
   "exacto": true
@@ -4258,7 +4378,7 @@
  {
   "id": "o_memorias",
   "kind": "depth2",
-  "t0": 1602.35,
+  "t0": 1631.662,
   "dur": 6.14,
   "at": "34.11",
   "exacto": false
@@ -4266,7 +4386,7 @@
  {
   "id": "o_bolita_silencio",
   "kind": "depth2",
-  "t0": 1608.49,
+  "t0": 1637.802,
   "dur": 5.4,
   "at": "34.12",
   "exacto": true
@@ -4274,7 +4394,7 @@
  {
   "id": "lupa_biromes2",
   "kind": "fotolupa",
-  "t0": 1613.89,
+  "t0": 1643.202,
   "dur": 1.4,
   "at": "34.12@ning\u00fan discurso",
   "exacto": true
@@ -4282,7 +4402,7 @@
  {
   "id": "a_bp_macro_o2",
   "kind": "depth2",
-  "t0": 1615.29,
+  "t0": 1644.602,
   "dur": 2.1,
   "at": "34.12@solo una bolita que gira",
   "exacto": true
@@ -4290,7 +4410,7 @@
  {
   "id": "ret_biro",
   "kind": "retrato",
-  "t0": 1617.39,
+  "t0": 1646.702,
   "dur": 6.24,
   "at": "34.13",
   "exacto": false
@@ -4298,7 +4418,7 @@
  {
   "id": "a_biro_lj_o",
   "kind": "depth2",
-  "t0": 1623.63,
+  "t0": 1652.942,
   "dur": 1.94,
   "at": "34.13@ten\u00eda ochenta y seis a\u00f1os",
   "exacto": true
@@ -4306,7 +4426,7 @@
  {
   "id": "o_dia_inventor",
   "kind": "depth2",
-  "t0": 1625.57,
+  "t0": 1654.882,
   "dur": 1.12,
   "at": "34.14",
   "exacto": true
@@ -4314,7 +4434,7 @@
  {
   "id": "a_ba_clases_o",
   "kind": "depth2",
-  "t0": 1626.69,
+  "t0": 1656.002,
   "dur": 4.84,
   "at": "34.14@cada veintinueve de septiembre",
   "exacto": true
@@ -4322,7 +4442,7 @@
  {
   "id": "o_cal_29",
   "kind": "depth2",
-  "t0": 1631.53,
+  "t0": 1660.842,
   "dur": 1.34,
   "at": "34.14@se celebra",
   "exacto": true
@@ -4330,7 +4450,7 @@
  {
   "id": "a_biromes_pais_o",
   "kind": "depth2",
-  "t0": 1632.87,
+  "t0": 1662.182,
   "dur": 4.34,
   "at": "34.15",
   "exacto": true
@@ -4338,7 +4458,7 @@
  {
   "id": "eras_nombre",
   "kind": "eras",
-  "t0": 1637.21,
+  "t0": 1666.522,
   "dur": 5.3,
   "at": "34.15@dicen birome",
   "exacto": true
@@ -4346,7 +4466,7 @@
  {
   "id": "o_cajon2",
   "kind": "depth2",
-  "t0": 1642.51,
+  "t0": 1671.822,
   "dur": 2.28,
   "at": "34.16",
   "exacto": true
@@ -4354,7 +4474,7 @@
  {
   "id": "a_bp_writing_o2",
   "kind": "depth2",
-  "t0": 1644.79,
+  "t0": 1674.102,
   "dur": 3.0,
   "at": "34.16@en medio mundo",
   "exacto": true
@@ -4362,7 +4482,7 @@
  {
   "id": "lupa_firma",
   "kind": "fotolupa",
-  "t0": 1647.79,
+  "t0": 1677.102,
   "dur": 2.146,
   "at": "34.16@todav\u00eda se llama como \u00e9l",
   "exacto": true
@@ -4370,7 +4490,7 @@
  {
   "id": "n_hoy_escribe",
   "kind": "depth2",
-  "t0": 1649.936,
+  "t0": 1679.248,
   "dur": 4.5,
   "at": "35",
   "exacto": true
@@ -4378,7 +4498,7 @@
  {
   "id": "t05_figura_luz",
   "kind": "depth2",
-  "t0": 1654.436,
+  "t0": 1683.748,
   "dur": 2.614,
   "at": "36",
   "exacto": true
@@ -4386,7 +4506,7 @@
  {
   "id": "o_cuadernos",
   "kind": "depth2",
-  "t0": 1657.05,
+  "t0": 1686.362,
   "dur": 4.7,
   "at": "37.0",
   "exacto": true
@@ -4394,7 +4514,7 @@
  {
   "id": "a_biro_firma_o",
   "kind": "depth2",
-  "t0": 1661.75,
+  "t0": 1691.062,
   "dur": 4.12,
   "at": "37.0@sigue saliendo",
   "exacto": true
@@ -4402,7 +4522,7 @@
  {
   "id": "eras_resumen",
   "kind": "eras",
-  "t0": 1665.87,
+  "t0": 1695.182,
   "dur": 12.58,
   "at": "37.1",
   "exacto": true
@@ -4410,7 +4530,7 @@
  {
   "id": "t06_zurdo",
   "kind": "depth2",
-  "t0": 1678.45,
+  "t0": 1707.762,
   "dur": 4.06,
   "at": "37.2",
   "exacto": true
@@ -4418,7 +4538,7 @@
  {
   "id": "cb_linea",
   "kind": "depth2",
-  "t0": 1682.51,
+  "t0": 1711.822,
   "dur": 2.682,
   "at": "37.2@otra forma de llevar",
   "exacto": true
@@ -4426,7 +4546,7 @@
  {
   "id": "t07_bolita",
   "kind": "depth2",
-  "t0": 1685.192,
+  "t0": 1714.504,
   "dur": 3.818,
   "at": "38",
   "exacto": true
@@ -4434,7 +4554,7 @@
  {
   "id": "t08_tallador",
   "kind": "depth2",
-  "t0": 1689.01,
+  "t0": 1718.322,
   "dur": 2.88,
   "at": "39.0",
   "exacto": true
@@ -4442,7 +4562,7 @@
  {
   "id": "lupa_tapa",
   "kind": "fotolupa",
-  "t0": 1691.89,
+  "t0": 1721.202,
   "dur": 3.26,
   "at": "39.0@en la tapa de otros",
   "exacto": true
@@ -4450,7 +4570,7 @@
  {
   "id": "t_figura",
   "kind": "depth2",
-  "t0": 1695.15,
+  "t0": 1724.462,
   "dur": 1.86,
   "at": "39.0@lo tallamos en madera",
   "exacto": true
@@ -4458,7 +4578,7 @@
  {
   "id": "t_nombre",
   "kind": "depth2",
-  "t0": 1697.01,
+  "t0": 1726.322,
   "dur": 4.506,
   "at": "39.1",
   "exacto": false
@@ -4466,7 +4586,7 @@
  {
   "id": "t09_estante",
   "kind": "depth2",
-  "t0": 1701.516,
+  "t0": 1730.828,
   "dur": 4.934,
   "at": "40",
   "exacto": true
@@ -4474,7 +4594,7 @@
  {
   "id": "x_auto_1888",
   "kind": "depth2",
-  "t0": 1706.45,
+  "t0": 1735.762,
   "dur": 3.52,
   "at": "41.0",
   "exacto": true
@@ -4482,7 +4602,7 @@
  {
   "id": "a_motorwagen_o",
   "kind": "depth2",
-  "t0": 1709.97,
+  "t0": 1739.282,
   "dur": 1.58,
   "at": "41.0@en el pr\u00f3ximo video",
   "exacto": true
@@ -4490,7 +4610,7 @@
  {
   "id": "x_mujer_cara",
   "kind": "depth2",
-  "t0": 1711.55,
+  "t0": 1740.862,
   "dur": 2.88,
   "at": "41.0@una mujer que una madrugada",
   "exacto": true
@@ -4498,7 +4618,7 @@
  {
   "id": "a_bertha_o",
   "kind": "depth2",
-  "t0": 1714.43,
+  "t0": 1743.742,
   "dur": 1.78,
   "at": "41.0@se llev\u00f3 el coche de su marido",
   "exacto": true
@@ -4506,7 +4626,7 @@
  {
   "id": "x_mujer_1888",
   "kind": "depth2",
-  "t0": 1716.21,
+  "t0": 1745.522,
   "dur": 1.02,
   "at": "41.0@sin pedir permiso",
   "exacto": true
@@ -4514,7 +4634,7 @@
  {
   "id": "x_auto_ruta",
   "kind": "depth2",
-  "t0": 1717.23,
+  "t0": 1746.542,
   "dur": 5.803,
   "at": "41.0@y con ese viaje",
   "exacto": true

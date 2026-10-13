@@ -5,19 +5,315 @@
   "kind": "open",
   "w": 1.0,
   "mode": "dissolve",
-  "img": "kf__t_hoja_raspa"
+  "film": "px_splat",
+  "ss": 6.35,
+  "speed": 0.5,
+  "hold": 0.12,
+  "xdur": 0.33
  },
  {
   "at": "1.0",
-  "id": "t_hoja_raspa",
+  "id": "h_splat",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_splat",
+  "ss": 6.72,
+  "speed": 0.5,
+  "bw": false,
+  "zoom": 1.7,
+  "cx": 0.0,
+  "cy": 0.0
+ },
+ {
+  "at": "1.0@escribir fue",
+  "id": "h_vela",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_vela",
+  "ss": 0.5,
+  "speed": 1.0,
+  "bw": false
+ },
+ {
+  "at": "1.0@contra la tinta",
+  "id": "h_tintero",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_tintero",
+  "ss": 2,
+  "speed": 1.0,
+  "bw": true,
+  "rotulo": [
+   "Escribir con pluma",
+   "1946 · Prelinger Archives"
+  ]
+ },
+ {
+  "at": "1.1",
+  "id": "h_moja",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_moja",
+  "ss": 0,
+  "speed": 1.0,
+  "bw": false
+ },
+ {
+  "at": "1.1@escribías",
+  "id": "h_plumin",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_plumin",
+  "ss": 1,
+  "speed": 1.0,
+  "bw": false
+ },
+ {
+  "at": "1.1@y otra vez",
+  "id": "h_remoja",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_remoja",
+  "ss": 0,
+  "speed": 0.8,
+  "bw": false
+ },
+ {
+  "at": "1.2",
+  "id": "h_bnplumin",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_bnplumin",
+  "ss": 0,
+  "speed": 0.8,
+  "bw": false
+ },
+ {
+  "at": "1.2@un roce",
+  "id": "h_mano",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_mano",
+  "ss": 3,
+  "speed": 1.0,
+  "bw": false
+ },
+ {
+  "at": "1.3",
+  "id": "h_gotas",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_gotas",
+  "ss": 1,
+  "speed": 0.7,
+  "bw": false
+ },
+ {
+  "at": "1.3@la mancha",
+  "id": "h_mancha",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_mancha",
+  "ss": 7.4,
+  "speed": 0.6,
+  "bw": false
+ },
+ {
+  "at": "1.4",
+  "id": "h_zurdo",
   "kind": "depth2",
   "w": 1.0,
-  "motion": "the bare bulb sways slightly and its light moves over the paper",
+  "src": "kf__n_zurdo_mano",
+  "escena": true,
+  "gente": true,
+  "strength": 7,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "1.4@los pilotos",
+  "id": "h_avion",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_avion",
+  "ss": 0,
+  "speed": 1.0,
+  "bw": true,
+  "rotulo": [
+   "Segunda Guerra Mundial",
+   "1943 · NARA"
+  ],
+  "crop": "1440:1080:240:0"
+ },
+ {
+  "at": "1.4@con los mapas",
+  "id": "h_navmancha",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "kf__nav_mancha",
+  "escena": true,
+  "gente": true,
+  "strength": 7,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "1.5",
+  "id": "h_escribe46",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_escribe46",
+  "ss": 4,
+  "speed": 1.0,
+  "bw": true
+ },
+ {
+  "at": "1.5@con el mismo problema",
+  "id": "h_redaccion",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_redaccion",
+  "ss": 2,
+  "speed": 1.0,
+  "bw": true
+ },
+ {
+  "at": "1.5@desde hacía siglos",
+  "id": "h_escritorio",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_escritorio20",
+  "ss": 0,
+  "speed": 0.8,
+  "bw": true
+ },
+ {
+  "at": "1.6",
+  "id": "h_biro_idea",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "kf__b32_idea",
+  "escena": true,
+  "gente": true,
+  "rotulo": [
+   "László Bíró",
+   "periodista · Budapest"
+  ],
+  "strength": 7,
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "1.6@una bolita de metal",
+  "id": "h_birome",
+  "kind": "film",
+  "w": 1.0,
+  "film": "px_birome",
+  "ss": 0,
+  "speed": 0.55,
+  "bw": false
+ },
+ {
+  "at": "1.7",
+  "id": "m_ba_oro",
+  "kind": "mapa3d",
+  "w": 1.0,
+  "rel": true,
+  "scenes": [
+   "plata",
+   "palermo"
+  ],
+  "fade": [
+   0.2,
+   0.12
+  ],
+  "cam": [
+   [
+    0,
+    -57.75,
+    -34.8,
+    2.6,
+    12,
+    0
+   ],
+   [
+    0.38,
+    -58.33,
+    -34.62,
+    0.55,
+    35,
+    18
+   ],
+   [
+    0.7,
+    -58.425,
+    -34.585,
+    0.1,
+    48,
+    26
+   ],
+   [
+    1.0,
+    -58.4263,
+    -34.5813,
+    0.04,
+    52,
+    30
+   ]
+  ],
+  "pins": [
+   [
+    0.72,
+    -58.4263,
+    -34.5813,
+    "CALLE ORO 3040",
+    "Palermo · 1943"
+   ]
+  ]
+ },
+ {
+  "at": "1.7@un garaje convertido",
+  "id": "t_garaje",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "the bulb flickers once, dust floats in the light",
   "tag": "RECREACIÓN",
   "lugar": "taller",
   "escena": true,
-  "src": "kf__t_hoja_raspa",
-  "prompt": "No person. Close view on a wooden workbench: a sheet of paper covered in faint dry scratches, a thin brass ballpoint tube lying beside it, a bare bulb above. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
+  "src": "kf__t_garaje",
+  "prompt": "No person. A wide view of a small 1943 garage workshop at night, the wide garage door closed, a long workbench under a bare bulb, a lathe, shelves with ink bottles. The 1943 garage workshop at Calle Oro 3040 in Buenos Aires built as a handmade miniature stop-motion set from real materials: whitewashed brick walls with peeling paint, a cracked red-tile floor, one long dark oak workbench under a single bare bulb with a green enamel shade, a small black lathe in the left corner, a wooden shelf with square blue ink bottles, a round white wall clock above the bench, a wide green wooden garage door with a small barred window. It is late at night: the room is dark, lit only by the warm pool of light of the bare bulb, with cold blue moonlight through the barred window.",
   "strength": 14,
   "cam": "push",
   "focus_keys": [
@@ -41,35 +337,26 @@
   "fx": []
  },
  {
-  "at": "1.0@mil novecientos cuarenta y tres",
-  "id": "t_titulo",
+  "at": "1.7@en la calle oro",
+  "id": "a_ba_40_o",
   "kind": "depth2",
   "w": 1.0,
-  "src": "i_t_titulo",
-  "prompt": "No person. In the foreground, resting on its surface: a small brass tube with a tiny steel ball at its tip lying on a sheet of paper covered in dry scratches. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
-  "behind": {
-   "t": "BUENOS AIRES · 1943",
-   "size": 140,
-   "xy": [
-    0.5,
-    0.24
-   ],
-   "in": 0.1,
-   "tracking": 0.05,
-   "td": "mid"
-  },
-  "tag": "RECREACIÓN",
-  "lugar": "taller",
-  "strength": 18,
+  "src": "a_ba_40",
+  "archivo": true,
+  "rotulo": [
+   "Buenos Aires",
+   "años cuarenta"
+  ],
+  "strength": 10,
   "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p90"
+    "p75"
    ],
    [
     1,
-    "p90"
+    "p75"
    ]
   ],
   "fx": [
@@ -77,16 +364,16 @@
   ]
  },
  {
-  "at": "1.0@un garaje convertido",
-  "id": "t_garaje",
+  "at": "1.8",
+  "id": "t_rayas",
   "kind": "depth2",
   "w": 1.0,
-  "motion": "the bulb flickers once, dust floats in the light",
+  "motion": "the camera slides slowly over the scratched paper",
   "tag": "RECREACIÓN",
   "lugar": "taller",
   "escena": true,
-  "src": "kf__t_garaje",
-  "prompt": "No person. A wide view of a small 1943 garage workshop at night, the wide garage door closed, a long workbench under a bare bulb, a lathe, shelves with ink bottles. The 1943 garage workshop at Calle Oro 3040 in Buenos Aires built as a handmade miniature stop-motion set from real materials: whitewashed brick walls with peeling paint, a cracked red-tile floor, one long dark oak workbench under a single bare bulb with a green enamel shade, a small black lathe in the left corner, a wooden shelf with square blue ink bottles, a round white wall clock above the bench, a wide green wooden garage door with a small barred window. It is late at night: the room is dark, lit only by the warm pool of light of the bare bulb, with cold blue moonlight through the barred window.",
+  "src": "kf__t_rayas",
+  "prompt": "No person. Very close view of a sheet of paper on a wooden bench covered in dozens of faint dry pen scratches with no ink, the paper slightly dented. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
   "strength": 14,
   "cam": "rise",
   "focus_keys": [
@@ -102,44 +389,40 @@
   "fx": []
  },
  {
-  "at": "1.0@en la calle oro",
-  "id": "a_ba_40_o",
+  "at": "1.8@rayas que no dejaron nada",
+  "id": "o_hoja_rayas",
   "kind": "depth2",
   "w": 1.0,
-  "src": "a_ba_40",
-  "archivo": true,
-  "rotulo": [
-   "Buenos Aires",
-   "años cuarenta"
-  ],
-  "strength": 10,
-  "cam": "push",
+  "src": "i_o_hoja_rayas",
+  "prompt": "No person. In the foreground, resting on its surface: a sheet of cream ruled paper fixed to the bench with two brass tacks, covered in faint dry pen scratches. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
+  "tag": "RECREACIÓN",
+  "lugar": "taller",
+  "strength": 18,
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p95"
    ],
    [
     1,
-    "p80"
+    "p95"
    ]
   ],
   "fx": [
-   "dust"
+   "rays"
   ]
  },
  {
-  "at": "1.1",
-  "id": "t_rayas",
+  "at": "1.8@un tubito de metal",
+  "id": "t_tubito",
   "kind": "depth2",
   "w": 1.0,
-  "motion": "the camera slides slowly over the scratched paper",
+  "src": "i_t_tubito",
+  "prompt": "No person. In the foreground, resting on its surface: a thin brass tube with a tiny shining steel ball at its tip lying on a sheet of paper. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
   "tag": "RECREACIÓN",
   "lugar": "taller",
-  "escena": true,
-  "src": "kf__t_rayas",
-  "prompt": "No person. Very close view of a sheet of paper on a wooden bench covered in dozens of faint dry pen scratches with no ink, the paper slightly dented. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
-  "strength": 14,
+  "strength": 18,
   "cam": "orbit",
   "focus_keys": [
    [
@@ -156,40 +439,234 @@
   ]
  },
  {
-  "at": "1.1@rayas que no dejaron nada",
-  "id": "o_hoja_rayas",
+  "at": "1.9",
+  "id": "b43_toma",
   "kind": "depth2",
   "w": 1.0,
-  "src": "i_o_hoja_rayas",
-  "prompt": "No person. In the foreground, resting on its surface: a sheet of cream ruled paper fixed to the bench with two brass tacks, covered in faint dry pen scratches. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
+  "motion": "he lifts the brass tube to his eye",
+  "tag": "RECREACIÓN",
+  "rotulo": [
+   "László Bíró",
+   "43 años · Buenos Aires"
+  ],
+  "lugar": "taller",
+  "escena": true,
+  "src": "kf__b43_toma",
+  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. He sits at a wooden workbench under a bare bulb, picks up a thin brass pen tube and looks at its tip closely. The 1943 garage workshop at Calle Oro 3040 in Buenos Aires built as a handmade miniature stop-motion set from real materials: whitewashed brick walls with peeling paint, a cracked red-tile floor, one long dark oak workbench under a single bare bulb with a green enamel shade, a small black lathe in the left corner, a wooden shelf with square blue ink bottles, a round white wall clock above the bench, a wide green wooden garage door with a small barred window. It is late at night: the room is dark, lit only by the warm pool of light of the bare bulb, with cold blue moonlight through the barred window.",
+  "gente": true,
+  "strength": 7,
+  "cam": "dolly",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "1.9@toma el tubito",
+  "id": "b43_tubito",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "his fingers lift the brass pen to the light",
   "tag": "RECREACIÓN",
   "lugar": "taller",
-  "strength": 18,
+  "escena": true,
+  "src": "kf__b43_tubito",
+  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. Close view of his ink-stained fingers picking up a slim brass ballpoint prototype: a thin polished brass tube the length of a pencil with a tiny shining steel ball at its tip and a small knurled cap at the back from the bench. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
+  "gente": true,
+  "strength": 7,
+  "cam": "orbit",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "1.9@lo apoya sobre el papel",
+  "id": "b43_arrastra",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "his hand drags the pen across the paper",
+  "tag": "RECREACIÓN",
+  "lugar": "taller",
+  "escena": true,
+  "src": "kf__b43_arrastra",
+  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. Close view of his wooden hand pressing a thin brass pen onto a sheet of paper and dragging it slowly. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
+  "gente": true,
+  "strength": 7,
   "cam": "push",
   "focus_keys": [
    [
     0,
-    "p94"
+    "p88"
    ],
    [
     1,
-    "p94"
+    "p88"
+   ]
+  ],
+  "fx": []
+ },
+ {
+  "at": "1.10",
+  "id": "trazo0",
+  "kind": "trazo",
+  "w": 1.0,
+  "tag": "RECREACIÓN",
+  "title": "CALLE ORO 3040 · 1943",
+  "from": 0,
+  "to": 0
+ },
+ {
+  "at": "1.10@y no sale nada",
+  "id": "b43_cara",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "he exhales slowly and closes his eyes",
+  "tag": "RECREACIÓN",
+  "lugar": "taller",
+  "escena": true,
+  "src": "kf__b43_cara",
+  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. Close view of his face under the bare bulb, staring down at the paper, jaw tight, disappointed. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
+  "gente": true,
+  "strength": 7,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
    ]
   ],
   "fx": [
-   "glint"
+   "dust"
   ]
  },
  {
-  "at": "1.1@un tubito de metal",
-  "id": "t_tubito",
+  "at": "1.11@lo intentó en budapest",
+  "id": "m_viaje",
+  "kind": "mapa3d",
+  "w": 1.0,
+  "rel": true,
+  "scenes": [
+   "mundo"
+  ],
+  "arc": 0.22,
+  "cam": [
+   [
+    0,
+    14,
+    46,
+    34,
+    42,
+    -8
+   ],
+   [
+    0.2,
+    7,
+    47,
+    30,
+    40,
+    -4
+   ],
+   [
+    0.48,
+    -22,
+    6,
+    100,
+    30,
+    6
+   ],
+   [
+    1.0,
+    -46,
+    -25,
+    78,
+    34,
+    10
+   ]
+  ],
+  "pins": [
+   [
+    0.03,
+    19.04,
+    47.5,
+    "BUDAPEST",
+    "1932"
+   ],
+   [
+    0.18,
+    2.35,
+    48.86,
+    "PARÍS",
+    "1939"
+   ],
+   [
+    0.45,
+    -58.38,
+    -34.6,
+    "BUENOS AIRES",
+    "1940"
+   ]
+  ],
+  "route": [
+   [
+    19.04,
+    47.5
+   ],
+   [
+    2.35,
+    48.86
+   ],
+   [
+    -58.38,
+    -34.6
+   ]
+  ],
+  "route_t": [
+   0.05,
+   0.5
+  ]
+ },
+ {
+  "at": "1.11@después de huir de una guerra",
+  "id": "h_tropas",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_tropas40",
+  "ss": 2.5,
+  "speed": 1.0,
+  "bw": true,
+  "crop": "1440:1080:240:0"
+ },
+ {
+  "at": "1.12",
+  "id": "o_billetes",
   "kind": "depth2",
   "w": 1.0,
-  "src": "i_t_tubito",
-  "prompt": "No person. In the foreground, resting on its surface: a thin brass tube with a tiny shining steel ball at its tip lying on a sheet of paper. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
+  "motion": "a draft moves the banknotes slightly",
   "tag": "RECREACIÓN",
   "lugar": "taller",
-  "strength": 18,
+  "escena": true,
+  "src": "kf__o_billetes",
+  "prompt": "No person. In the foreground, resting on its surface: a small open tin cash box on a workbench with only a few old Argentine banknotes and coins inside. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
+  "strength": 14,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -214,57 +691,26 @@
   ]
  },
  {
-  "at": "1.2",
-  "id": "b43_toma",
+  "at": "1.12@los que pusieron el dinero",
+  "id": "a_ba_lavalle_o",
   "kind": "depth2",
   "w": 1.0,
-  "motion": "he lifts the brass tube to his eye",
-  "tag": "RECREACIÓN",
+  "src": "a_ba_lavalle",
+  "archivo": true,
   "rotulo": [
-   "László Bíró",
-   "43 años · Buenos Aires"
+   "Calle Lavalle",
+   "Buenos Aires · años cuarenta"
   ],
-  "lugar": "taller",
-  "escena": true,
-  "src": "kf__b43_toma",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. He sits at a wooden workbench under a bare bulb, picks up a thin brass pen tube and looks at its tip closely. The 1943 garage workshop at Calle Oro 3040 in Buenos Aires built as a handmade miniature stop-motion set from real materials: whitewashed brick walls with peeling paint, a cracked red-tile floor, one long dark oak workbench under a single bare bulb with a green enamel shade, a small black lathe in the left corner, a wooden shelf with square blue ink bottles, a round white wall clock above the bench, a wide green wooden garage door with a small barred window. It is late at night: the room is dark, lit only by the warm pool of light of the bare bulb, with cold blue moonlight through the barred window.",
-  "gente": true,
-  "strength": 7,
-  "cam": "push",
+  "strength": 10,
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
-    "p88"
+    "p80"
    ],
    [
     1,
-    "p88"
-   ]
-  ],
-  "fx": []
- },
- {
-  "at": "1.2@toma el tubito",
-  "id": "b43_tubito",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "his fingers lift the brass pen to the light",
-  "tag": "RECREACIÓN",
-  "lugar": "taller",
-  "escena": true,
-  "src": "kf__b43_tubito",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. Close view of his ink-stained fingers picking up a slim brass ballpoint prototype: a thin polished brass tube the length of a pencil with a tiny shining steel ball at its tip and a small knurled cap at the back from the bench. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
-  "gente": true,
-  "strength": 7,
-  "cam": "truck",
-  "focus_keys": [
-   [
-    0,
-    "p88"
-   ],
-   [
-    1,
-    "p88"
+    "p80"
    ]
   ],
   "fx": [
@@ -272,17 +718,17 @@
   ]
  },
  {
-  "at": "1.2@lo apoya sobre el papel",
-  "id": "b43_arrastra",
+  "at": "1.12@ya preguntan cuándo",
+  "id": "p_financistas",
   "kind": "depth2",
   "w": 1.0,
-  "motion": "his hand drags the pen across the paper",
+  "motion": "one of them checks his pocket watch and frowns",
   "tag": "RECREACIÓN",
+  "gente": true,
   "lugar": "taller",
   "escena": true,
-  "src": "kf__b43_arrastra",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. Close view of his wooden hand pressing a thin brass pen onto a sheet of paper and dragging it slowly. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
-  "gente": true,
+  "src": "kf__p_financistas",
+  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Two serious businessmen in dark 1943 suits and felt hats stand at the door of a small garage workshop, one looks at his pocket watch. The 1943 garage workshop at Calle Oro 3040 in Buenos Aires built as a handmade miniature stop-motion set from real materials: whitewashed brick walls with peeling paint, a cracked red-tile floor, one long dark oak workbench under a single bare bulb with a green enamel shade, a small black lathe in the left corner, a wooden shelf with square blue ink bottles, a round white wall clock above the bench, a wide green wooden garage door with a small barred window. It is late at night: the room is dark, lit only by the warm pool of light of the bare bulb, with cold blue moonlight through the barred window.",
   "strength": 7,
   "cam": "rise",
   "focus_keys": [
@@ -298,27 +744,54 @@
   "fx": []
  },
  {
-  "at": "1.3",
-  "id": "trazo0",
-  "kind": "trazo",
-  "w": 1.0,
-  "tag": "RECREACIÓN",
-  "title": "CALLE ORO 3040 · 1943",
-  "from": 0,
-  "to": 0
- },
- {
-  "at": "1.3@y no sale nada",
-  "id": "b43_cara",
+  "at": "1.13",
+  "id": "a_gimbels_o",
   "kind": "depth2",
   "w": 1.0,
-  "motion": "he exhales slowly and closes his eyes",
-  "tag": "RECREACIÓN",
-  "lugar": "taller",
-  "escena": true,
-  "src": "kf__b43_cara",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian inventor of 43 in 1943 with a long face with a very high forehead, dark brown hair, receding further, and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a white shirt with the sleeves rolled up and blue ink stains on the cuffs, grey suit trousers with braces, a loosened dark tie. Close view of his face under the bare bulb, staring down at the paper, jaw tight, disappointed. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
+  "src": "a_gimbels",
+  "archivo": true,
+  "rotulo": [
+   "Gimbels",
+   "Nueva York"
+  ],
+  "strength": 10,
+  "cam": "push",
+  "focus_keys": [
+   [
+    0,
+    "p80"
+   ],
+   [
+    1,
+    "p80"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "1.13@dos años después",
+  "id": "a_gimbels_bridge_o0",
+  "kind": "proyector",
+  "w": 1.0,
+  "src": "a_gimbels_bridge",
+  "rotulo": [
+   "Nueva York",
+   "calle 32 · 1945"
+  ]
+ },
+ {
+  "at": "1.13@cincuenta policías",
+  "id": "p_policias",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "the crowd pushes and the policemen hold the line",
   "gente": true,
+  "lugar": "ny",
+  "escena": true,
+  "src": "kf__p_policias",
+  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A row of 1945 New York policemen in dark blue uniforms and caps hold back a pushing crowd of shoppers in front of a department store door. A 1945 New York street built as a handmade miniature stop-motion set from real materials: tall red brick buildings, yellow taxis, steam from manholes, crisp autumn sunlight.",
   "strength": 7,
   "cam": "dolly",
   "focus_keys": [
@@ -334,15 +807,15 @@
   "fx": []
  },
  {
-  "at": "1.4",
-  "id": "a_bp_erzsebet_o",
+  "at": "1.13@a la gente que quería comprar",
+  "id": "a_ny_vj_o",
   "kind": "depth2",
   "w": 1.0,
-  "src": "a_bp_erzsebet",
+  "src": "a_ny_vj",
   "archivo": true,
   "rotulo": [
-   "Budapest",
-   "el Danubio · años treinta"
+   "Nueva York",
+   "1945"
   ],
   "strength": 10,
   "cam": "truck",
@@ -361,52 +834,15 @@
   ]
  },
  {
-  "at": "1.4@lo intentó en parís",
-  "id": "a_paris_lazare_o",
-  "kind": "proyector",
-  "w": 1.0,
-  "src": "a_paris_lazare",
-  "rotulo": [
-   "París",
-   "1939"
-  ]
- },
- {
-  "at": "1.4@y ahora lo intenta acá",
-  "id": "cb_garaje",
+  "at": "1.13@no era el suyo",
+  "id": "o_rocket",
   "kind": "depth2",
   "w": 1.0,
-  "img": null,
-  "motion": "",
-  "tag": "RECREACIÓN",
-  "clipsrc": "t_garaje",
+  "motion": "the light glints along the silver pen",
+  "lugar": "gimbels",
   "escena": true,
-  "src": "kf__t_garaje",
-  "gente": true,
-  "strength": 7,
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p88"
-   ],
-   [
-    1,
-    "p88"
-   ]
-  ],
-  "fx": []
- },
- {
-  "at": "1.4@a once mil kilómetros",
-  "id": "o_barco_mar",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "the ship moves slowly across the waves, smoke trails behind",
-  "lugar": "oceano",
-  "escena": true,
-  "src": "kf__o_barco_mar",
-  "prompt": "No person. A 1940 passenger steamship with two funnels crossing a wide grey Atlantic Ocean at dusk, smoke trailing behind. The open grey Atlantic Ocean at dusk built as a handmade miniature stop-motion set from real materials: long grey waves, a low orange sun behind clouds, cold blue-grey light.",
+  "src": "kf__o_rocket",
+  "prompt": "No person. In the foreground, resting on its surface: a shiny silver aluminium 1945 ballpoint pen shaped like a small rocket in an open gift box. Behind it, further away and softly out of focus: the 1945 Gimbels store: glass counters with brass trim, cream marble columns, red banners, brass lamps, warm bright light. The object stands firmly on the surface with its own shadow.",
   "strength": 14,
   "cam": "rise",
   "focus_keys": [
@@ -426,209 +862,7 @@
   "fx": []
  },
  {
-  "at": "1.5",
-  "id": "o_billetes",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "a draft moves the banknotes slightly",
-  "tag": "RECREACIÓN",
-  "lugar": "taller",
-  "escena": true,
-  "src": "kf__o_billetes",
-  "prompt": "No person. In the foreground, resting on its surface: a small open tin cash box on a workbench with only a few old Argentine banknotes and coins inside. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
-  "strength": 14,
-  "cam": "truck",
-  "focus_keys": [
-   [
-    0,
-    "p90"
-   ],
-   [
-    1,
-    "p90"
-   ]
-  ],
-  "fx": [
-   "dust"
-  ]
- },
- {
-  "at": "1.5@los que pusieron el dinero",
-  "id": "a_ba_lavalle_o",
-  "kind": "depth2",
-  "w": 1.0,
-  "src": "a_ba_lavalle",
-  "archivo": true,
-  "rotulo": [
-   "Calle Lavalle",
-   "Buenos Aires · años cuarenta"
-  ],
-  "strength": 10,
-  "cam": "dolly",
-  "focus_keys": [
-   [
-    0,
-    "p85"
-   ],
-   [
-    1,
-    "p85"
-   ]
-  ],
-  "fx": [
-   "dust"
-  ]
- },
- {
-  "at": "1.5@ya preguntan cuándo",
-  "id": "p_financistas",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "one of them checks his pocket watch and frowns",
-  "tag": "RECREACIÓN",
-  "gente": true,
-  "lugar": "taller",
-  "escena": true,
-  "src": "kf__p_financistas",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Two serious businessmen in dark 1943 suits and felt hats stand at the door of a small garage workshop, one looks at his pocket watch. The 1943 garage workshop at Calle Oro 3040 in Buenos Aires built as a handmade miniature stop-motion set from real materials: whitewashed brick walls with peeling paint, a cracked red-tile floor, one long dark oak workbench under a single bare bulb with a green enamel shade, a small black lathe in the left corner, a wooden shelf with square blue ink bottles, a round white wall clock above the bench, a wide green wooden garage door with a small barred window. It is late at night: the room is dark, lit only by the warm pool of light of the bare bulb, with cold blue moonlight through the barred window.",
-  "strength": 7,
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p88"
-   ],
-   [
-    1,
-    "p88"
-   ]
-  ],
-  "fx": []
- },
- {
-  "at": "1.6",
-  "id": "a_gimbels_o",
-  "kind": "depth2",
-  "w": 1.0,
-  "src": "a_gimbels",
-  "archivo": true,
-  "rotulo": [
-   "Gimbels",
-   "Nueva York"
-  ],
-  "strength": 10,
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p80"
-   ],
-   [
-    1,
-    "p80"
-   ]
-  ],
-  "fx": [
-   "dust"
-  ]
- },
- {
-  "at": "1.6@dos años después",
-  "id": "a_gimbels_bridge_o0",
-  "kind": "proyector",
-  "w": 1.0,
-  "src": "a_gimbels_bridge",
-  "rotulo": [
-   "Nueva York",
-   "calle 32 · 1945"
-  ]
- },
- {
-  "at": "1.6@cincuenta policías",
-  "id": "p_policias",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "the crowd pushes and the policemen hold the line",
-  "gente": true,
-  "lugar": "ny",
-  "escena": true,
-  "src": "kf__p_policias",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A row of 1945 New York policemen in dark blue uniforms and caps hold back a pushing crowd of shoppers in front of a department store door. A 1945 New York street built as a handmade miniature stop-motion set from real materials: tall red brick buildings, yellow taxis, steam from manholes, crisp autumn sunlight.",
-  "strength": 7,
-  "cam": "truck",
-  "focus_keys": [
-   [
-    0,
-    "p88"
-   ],
-   [
-    1,
-    "p88"
-   ]
-  ],
-  "fx": [
-   "dust"
-  ]
- },
- {
-  "at": "1.6@a la gente que quería comprar",
-  "id": "a_ny_vj_o",
-  "kind": "depth2",
-  "w": 1.0,
-  "src": "a_ny_vj",
-  "archivo": true,
-  "rotulo": [
-   "Nueva York",
-   "1945"
-  ],
-  "strength": 10,
-  "cam": "rise",
-  "focus_keys": [
-   [
-    0,
-    "p80"
-   ],
-   [
-    1,
-    "p80"
-   ]
-  ],
-  "fx": [
-   "dust"
-  ]
- },
- {
-  "at": "1.6@no era el suyo",
-  "id": "o_rocket",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "the light glints along the silver pen",
-  "lugar": "gimbels",
-  "escena": true,
-  "src": "kf__o_rocket",
-  "prompt": "No person. In the foreground, resting on its surface: a shiny silver aluminium 1945 ballpoint pen shaped like a small rocket in an open gift box. Behind it, further away and softly out of focus: the 1945 Gimbels store: glass counters with brass trim, cream marble columns, red banners, brass lamps, warm bright light. The object stands firmly on the surface with its own shadow.",
-  "strength": 14,
-  "cam": "truck",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.55,
-    "p95"
-   ],
-   [
-    1,
-    "p40"
-   ]
-  ],
-  "fx": [
-   "bokeh"
-  ]
- },
- {
-  "at": "1.7",
+  "at": "1.14",
   "id": "o_bic_lluvia",
   "kind": "depth2",
   "w": 1.0,
@@ -654,7 +888,7 @@
   ]
  },
  {
-  "at": "1.7@cien mil millones",
+  "at": "1.14@cien mil millones",
   "id": "cifra_cienmil",
   "kind": "tipos",
   "w": 1.0,
@@ -666,7 +900,7 @@
   ]
  },
  {
-  "at": "1.7@y no fue él",
+  "at": "1.14@y no fue él",
   "id": "b80_ventana",
   "kind": "depth2",
   "w": 1.0,
@@ -677,7 +911,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. An old inventor of about 80 in 1979, bald with a few white hairs on the sides, a long lined face with a very high forehead, a long straight nose, deep-set dark eyes, large ears, wearing a dark suit, a white shirt and a dark tie, holding reading glasses. He stands alone by a window in a modest 1979 Buenos Aires apartment, looking out, holding reading glasses. Bíró's 1979 Buenos Aires apartment studio built as a handmade miniature stop-motion set from real materials: a parquet floor, an easel with an oil painting, small sculptures on bookshelves, a wooden desk, a balcony door with warm late-afternoon light.",
   "gente": true,
   "strength": 7,
-  "cam": "rise",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -691,7 +925,7 @@
   "fx": []
  },
  {
-  "at": "1.8",
+  "at": "1.15",
   "id": "o_cajon",
   "kind": "depth2",
   "w": 1.0,
@@ -701,38 +935,36 @@
   "src": "kf__o_cajon",
   "prompt": "No person. A kitchen drawer full of everyday things sliding open: keys, rubber bands, batteries and three ballpoint pens. A modern family home today built as a handmade miniature stop-motion set from real materials: a light oak table, white walls, plants, a big window with soft daylight.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p92"
    ],
    [
     1,
-    "p95"
+    "p92"
    ]
   ],
-  "fx": [
-   "rays"
-  ]
+  "fx": []
  },
  {
-  "at": "1.8@en un cajón",
+  "at": "1.15@en un cajón",
   "id": "a_bp_macro_o",
   "kind": "depth2",
   "w": 1.0,
   "src": "a_bp_macro",
   "archivo": true,
   "strength": 10,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -740,7 +972,7 @@
   ]
  },
  {
-  "at": "1.8@en una mochila",
+  "at": "1.15@en una mochila",
   "id": "o_mochila",
   "kind": "depth2",
   "w": 1.0,
@@ -750,23 +982,19 @@
   "src": "kf__o_mochila",
   "prompt": "No person. An open school backpack on a chair with a pencil case and a transparent ballpoint pen sticking out. A modern family home today built as a handmade miniature stop-motion set from real materials: a light oak table, white walls, plants, a big window with soft daylight.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p14"
+    "p95"
    ],
    [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
+    0.55,
     "p95"
    ],
    [
     1,
-    "p95"
+    "p40"
    ]
   ],
   "fx": [
@@ -774,7 +1002,7 @@
   ]
  },
  {
-  "at": "1.8@en algunos países",
+  "at": "1.15@en algunos países",
   "id": "o_apellido",
   "kind": "depth2",
   "w": 1.0,
@@ -809,7 +1037,7 @@
   ]
  },
  {
-  "at": "1.8@de este hombre",
+  "at": "1.15@de este hombre",
   "id": "lupa_biro0",
   "kind": "fotolupa",
   "w": 1.0,
@@ -839,7 +1067,7 @@
   "prompt": "Two real old human craftsman hands with wrinkles and a few small cuts, wearing a worn leather apron, carving a tiny pen in the hand of a small carved wooden puppet of a man with a high forehead with a fine gouge, pale wood shavings curling off, on a warm-lit workbench. On the carver's warm workbench: pale wood shavings, fine gouges and chisels, a small desk lamp with warm light, chisels hanging on the dark wall behind.",
   "gente": true,
   "strength": 7,
-  "cam": "dolly",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -859,16 +1087,16 @@
   "w": 1.0,
   "src": "a_biro_1978",
   "archivo": true,
-  "cam": "push",
+  "cam": "truck",
   "strength": 10,
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -928,19 +1156,23 @@
   "src": "kf__o_tinta_cae",
   "prompt": "No person. A drop of dark blue ink falling slowly onto a handwritten page and spreading into a blot. On a dark walnut desk with cream paper, soft window light from the left, a real miniature photographed with a macro lens.",
   "strength": 14,
-  "cam": "rise",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p60"
+    "p95"
    ],
    [
-    0.5,
+    0.4,
     "p95"
+   ],
+   [
+    0.82,
+    "p14"
    ],
    [
     1,
-    "p95"
+    "p14"
    ]
   ],
   "fx": []
@@ -957,15 +1189,15 @@
    "y el tintero"
   ],
   "strength": 10,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -1010,31 +1242,6 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of wooden hands cutting the tip of a goose quill with a small folding knife over a desk. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "gente": true,
   "strength": 7,
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p88"
-   ],
-   [
-    1,
-    "p88"
-   ]
-  ],
-  "fx": []
- },
- {
-  "at": "5.1@se mojaba en el tintero",
-  "id": "p_moja",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "the quill dips into the ink and lifts, a drop falls",
-  "lugar": "macro",
-  "escena": true,
-  "src": "kf__p_moja",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of a wooden hand dipping a goose quill into a glass inkwell and lifting it, a drop hanging from the tip. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
-  "gente": true,
-  "strength": 7,
   "cam": "truck",
   "focus_keys": [
    [
@@ -1051,6 +1258,31 @@
   ]
  },
  {
+  "at": "5.1@se mojaba en el tintero",
+  "id": "p_moja",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "the quill dips into the ink and lifts, a drop falls",
+  "lugar": "macro",
+  "escena": true,
+  "src": "kf__p_moja",
+  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of a wooden hand dipping a goose quill into a glass inkwell and lifting it, a drop hanging from the tip. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
+  "gente": true,
+  "strength": 7,
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p88"
+   ],
+   [
+    1,
+    "p88"
+   ]
+  ],
+  "fx": []
+ },
+ {
   "at": "5.2",
   "id": "p_escribe_pluma",
   "kind": "depth2",
@@ -1062,7 +1294,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of a wooden hand writing three words with a goose quill on paper, the ink line fading as it runs dry. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "gente": true,
   "strength": 7,
-  "cam": "rise",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
@@ -1096,19 +1328,23 @@
   "prompt": "No person. In the foreground, resting on its surface: a glass inkwell with a worn split goose quill resting in it. Behind it, further away and softly out of focus: a dark walnut desk with cream paper, soft window light from the left. The object stands firmly on the surface with its own shadow.",
   "lugar": "macro",
   "strength": 18,
-  "cam": "truck",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p14"
    ],
    [
-    0.55,
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
     "p95"
    ],
    [
     1,
-    "p40"
+    "p95"
    ]
   ],
   "fx": [
@@ -1127,7 +1363,7 @@
    "Fortepan · Hungría"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -1226,15 +1462,15 @@
    "patente de 1884"
   ],
   "strength": 10,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -1262,33 +1498,17 @@
  },
  {
   "at": "5.4@la pluma fuente",
-  "id": "o_fuente",
-  "kind": "depth2",
+  "id": "f_fabrica20",
+  "kind": "film",
   "w": 1.0,
-  "src": "i_o_fuente",
-  "prompt": "No person. In the foreground, resting on its surface: a 1930s fountain pen with a green marbled barrel, a black cap and a gold nib lying on a leather desk pad next to a small bottle of blue ink. Behind it, further away and softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze. The object stands firmly on the surface with its own shadow.",
-  "lugar": "redac",
-  "strength": 18,
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
-    "p14"
-   ],
-   [
-    1,
-    "p14"
-   ]
-  ],
-  "fx": []
+  "film": "ar_fabrica20",
+  "ss": 3,
+  "speed": 1.0,
+  "bw": true,
+  "rotulo": [
+   "Una fábrica de plumas fuente",
+   "1920 · Prelinger Archives"
+  ]
  },
  {
   "at": "5.5",
@@ -1302,15 +1522,15 @@
    "y su frasco de tinta"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p85"
    ],
    [
     1,
-    "p75"
+    "p85"
    ]
   ],
   "fx": [
@@ -1339,20 +1559,22 @@
   "src": "kf__o_gotea",
   "prompt": "No person. Close view of the gold nib of a black fountain pen dripping a big drop of blue ink onto a letter. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "strength": 14,
-  "cam": "orbit",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p93"
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
    ],
    [
     1,
-    "p93"
+    "p95"
    ]
   ],
-  "fx": [
-   "tilt"
-  ]
+  "fx": []
  },
  {
   "at": "5.6@en el bolsillo de la camisa",
@@ -1366,7 +1588,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of the white shirt pocket of a wooden puppet with a fountain pen clipped in it and a blue ink stain spreading on the fabric. Behind, softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze.",
   "gente": true,
   "strength": 7,
-  "cam": "dolly",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -1381,28 +1603,13 @@
  },
  {
   "at": "5.6@y había que recargarla",
-  "id": "p_recarga",
-  "kind": "depth2",
+  "id": "f_carga",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the pen fills with ink and a drop falls",
-  "lugar": "redac",
-  "escena": true,
-  "src": "kf__p_recarga",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of wooden hands refilling a 1930s fountain pen with a green marbled barrel, a black cap and a gold nib from a square glass bottle of blue ink with a black cap, a drop falling on the desk. Behind, softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze.",
-  "gente": true,
-  "strength": 7,
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p88"
-   ],
-   [
-    1,
-    "p88"
-   ]
-  ],
-  "fx": []
+  "film": "ar_carga",
+  "ss": 1,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "5.6@con un frasquito",
@@ -1413,28 +1620,18 @@
   "prompt": "No person. In the foreground, resting on its surface: a small glass bottle of blue ink with a fountain pen dipped into it. Behind it, further away and softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze. The object stands firmly on the surface with its own shadow.",
   "lugar": "redac",
   "strength": 18,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p14"
-   ],
-   [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
-    "p95"
+    "p92"
    ],
    [
     1,
-    "p95"
+    "p92"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "5.7",
@@ -1572,22 +1769,24 @@
   "prompt": "No person. In the foreground, resting on its surface: a school notebook page full of blue ink smears and a smudged left handprint. Behind it, further away and softly out of focus: the boy's 1940s kitchen: a red and white checked tablecloth, pale yellow walls, a white enamel sink, shelves with glass jars, bright morning sun. The object stands firmly on the surface with its own shadow.",
   "lugar": "cocina",
   "strength": 18,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p60"
+    "p95"
    ],
    [
-    0.5,
+    0.55,
     "p95"
    ],
    [
     1,
-    "p95"
+    "p40"
    ]
   ],
-  "fx": []
+  "fx": [
+   "bokeh"
+  ]
  },
  {
   "at": "5.10",
@@ -1601,15 +1800,15 @@
    "en todos los escritorios"
   ],
   "strength": 10,
-  "cam": "dolly",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -1660,7 +1859,7 @@
    "Hungría · Fortepan"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
@@ -1794,24 +1993,26 @@
   "src": "kf__o_fuente_seca",
   "prompt": "No person. Extreme close view of the gold nib of a black fountain pen scratching dry paper, leaving no ink, only a pale line. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
     "p95"
    ],
    [
-    0.55,
+    0.4,
     "p95"
    ],
    [
+    0.82,
+    "p14"
+   ],
+   [
     1,
-    "p40"
+    "p14"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "5.12@de buena marca",
@@ -1825,15 +2026,15 @@
    "pluma fuente alemana"
   ],
   "strength": 10,
-  "cam": "dolly",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p75"
    ],
    [
     1,
-    "p85"
+    "p75"
    ]
   ],
   "fx": [
@@ -1902,15 +2103,15 @@
    "Fortepan"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -2012,23 +2213,19 @@
   "src": "kf__o_miel_macro",
   "prompt": "No person. Extreme close view of thick golden honey clinging to the bottom opening of a thin straw, barely moving. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "strength": 14,
-  "cam": "push",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p60"
    ],
    [
-    0.4,
+    0.5,
     "p95"
-   ],
-   [
-    0.82,
-    "p14"
    ],
    [
     1,
-    "p14"
+    "p95"
    ]
   ],
   "fx": []
@@ -2048,7 +2245,7 @@
   "src": "a_off_ham",
   "archivo": true,
   "strength": 10,
-  "cam": "rise",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -2074,32 +2271,6 @@
   "src": "kf__o_plumilla_canal",
   "prompt": "No person. Extreme close view of a fountain pen gold nib with its thin slit, a thread of blue ink running down the slit onto paper. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "strength": 14,
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p93"
-   ],
-   [
-    1,
-    "p93"
-   ]
-  ],
-  "fx": [
-   "tilt"
-  ]
- },
- {
-  "at": "5.17",
-  "id": "o_tinta_corre",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "the wet ink bleeds slowly into the paper",
-  "lugar": "macro",
-  "escena": true,
-  "src": "kf__o_tinta_corre",
-  "prompt": "No person. Close view of fresh watery blue ink lines on a page running and bleeding into the paper fibres. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
-  "strength": 14,
   "cam": "push",
   "focus_keys": [
    [
@@ -2116,15 +2287,15 @@
   ]
  },
  {
-  "at": "5.17@y el agua tarda en secarse",
-  "id": "o_tinta_humeda",
+  "at": "5.17",
+  "id": "o_tinta_corre",
   "kind": "depth2",
   "w": 1.0,
-  "motion": "the fingertip touches the ink and smudges it",
+  "motion": "the wet ink bleeds slowly into the paper",
   "lugar": "macro",
   "escena": true,
-  "src": "kf__o_tinta_humeda",
-  "prompt": "No person. Close view of the fingertip of a carved maple-wood puppet hand with visible flat chisel facets, wood grain and pinned wooden finger joints (not a real human hand) touching a fresh wet blue ink signature on a letter and leaving a smudge. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
+  "src": "kf__o_tinta_corre",
+  "prompt": "No person. Close view of fresh watery blue ink lines on a page running and bleeding into the paper fibres. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "strength": 14,
   "cam": "truck",
   "focus_keys": [
@@ -2142,6 +2313,30 @@
   ]
  },
  {
+  "at": "5.17@y el agua tarda en secarse",
+  "id": "o_tinta_humeda",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "the fingertip touches the ink and smudges it",
+  "lugar": "macro",
+  "escena": true,
+  "src": "kf__o_tinta_humeda",
+  "prompt": "No person. Close view of the fingertip of a carved maple-wood puppet hand with visible flat chisel facets, wood grain and pinned wooden finger joints (not a real human hand) touching a fresh wet blue ink signature on a letter and leaving a smudge. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
+  "strength": 14,
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p92"
+   ],
+   [
+    1,
+    "p92"
+   ]
+  ],
+  "fx": []
+ },
+ {
   "at": "5.18",
   "id": "o_tinta_espesa",
   "kind": "depth2",
@@ -2152,23 +2347,19 @@
   "src": "kf__o_tinta_espesa",
   "prompt": "No person. Close view of thick glossy black printing ink being spread with a steel spatula on a metal plate. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p14"
+    "p95"
    ],
    [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
+    0.55,
     "p95"
    ],
    [
     1,
-    "p95"
+    "p40"
    ]
   ],
   "fx": [
@@ -2187,7 +2378,7 @@
    "1924"
   ],
   "strength": 10,
-  "cam": "push",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
@@ -2255,15 +2446,15 @@
    "plano de la ciudad · años treinta"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -2341,19 +2532,23 @@
   "src": "kf__o_caja_zapatos",
   "prompt": "No person. A cardboard shoebox lined with white cotton wool on a wooden chest of drawers, a tiny baby wrapped in white sleeping inside, an oil lamp glowing beneath it. The small 1899 Budapest bedroom built as a handmade miniature stop-motion set from real materials: pale green wallpaper with tiny pink flowers, a black iron bed with a white quilt, a dark walnut chest of drawers, white lace curtains on a tall window with grey winter light from the left, a brass oil lamp with a warm amber flame.",
   "strength": 14,
-  "cam": "rise",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p60"
+    "p95"
    ],
    [
-    0.5,
+    0.4,
     "p95"
+   ],
+   [
+    0.82,
+    "p14"
    ],
    [
     1,
-    "p95"
+    "p14"
    ]
   ],
   "fx": []
@@ -2370,7 +2565,7 @@
   "src": "kf__p_madre",
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young Hungarian mother in a long dark 1899 dress carefully places a tiny wrapped baby in a cotton-lined shoebox. The small 1899 Budapest bedroom built as a handmade miniature stop-motion set from real materials: pale green wallpaper with tiny pink flowers, a black iron bed with a white quilt, a dark walnut chest of drawers, white lace curtains on a tall window with grey winter light from the left, a brass oil lamp with a warm amber flame.",
   "strength": 7,
-  "cam": "push",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
@@ -2381,7 +2576,9 @@
     "p88"
    ]
   ],
-  "fx": []
+  "fx": [
+   "dust"
+  ]
  },
  {
   "at": "8.1@una lámpara debajo",
@@ -2445,15 +2642,15 @@
    "calle Havas · fiacres"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -2496,15 +2693,15 @@
    "Attila út · Fortepan"
   ],
   "strength": 10,
-  "cam": "rise",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -2570,7 +2767,7 @@
   "src": "kf__p_arbitro",
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A 1910 football referee in a black jacket blows a whistle and raises his arm on a muddy field. A 1930s Budapest street built as a handmade miniature stop-motion set from real materials: grey stone buildings with tall windows, wet cobblestones, a yellow tram on rails, black gas lamps, people in dark coats and hats, cold grey light.",
   "strength": 7,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
@@ -2581,9 +2778,7 @@
     "p88"
    ]
   ],
-  "fx": [
-   "dust"
-  ]
+  "fx": []
  },
  {
   "at": "8.5",
@@ -2601,7 +2796,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian young man of 18 in 1917 with a very high forehead and dark hair combed back runs up the stone stairs of a university building with books under his arm. A 1930s Budapest street built as a handmade miniature stop-motion set from real materials: grey stone buildings with tall windows, wet cobblestones, a yellow tram on rails, black gas lamps, people in dark coats and hats, cold grey light.",
   "gente": true,
   "strength": 7,
-  "cam": "rise",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
@@ -2622,7 +2817,7 @@
   "src": "a_bp_teleki",
   "archivo": true,
   "strength": 10,
-  "cam": "push",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -2648,19 +2843,23 @@
   "src": "kf__o_pendulo",
   "prompt": "No person. A shiny pocket watch on a chain swinging slowly like a pendulum in front of a dark velvet curtain. A small 1920s Budapest variety theater built as a handmade miniature stop-motion set from real materials: a little wooden stage with dark red velvet curtains, footlights, a few rows of gilded chairs, warm amber spotlight.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p14"
    ],
    [
-    0.55,
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
     "p95"
    ],
    [
     1,
-    "p40"
+    "p95"
    ]
   ],
   "fx": [
@@ -2679,7 +2878,7 @@
   "src": "kf__b_hipnosis",
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young man with a very high forehead in a black suit swings a pocket watch in front of a seated woman whose eyes are closing, in a small 1920 theater. A small 1920s Budapest variety theater built as a handmade miniature stop-motion set from real materials: a little wooden stage with dark red velvet curtains, footlights, a few rows of gilded chairs, warm amber spotlight.",
   "strength": 7,
-  "cam": "dolly",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -2704,7 +2903,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A young man with a very high forehead and dark hair combed back paints a landscape on an easel in a cluttered attic studio. Young László's attic studio in 1920s Budapest built as a handmade miniature stop-motion set from real materials: a sloped ceiling with a skylight, an easel, clay busts on a shelf, books piled on the floor, cold grey skylight.",
   "gente": true,
   "strength": 7,
-  "cam": "orbit",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -2729,7 +2928,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. He shapes a small clay bust with his wooden fingers on a turntable; nobody else in the room. Young László's attic studio in 1920s Budapest built as a handmade miniature stop-motion set from real materials: a sloped ceiling with a skylight, an easel, clay busts on a shelf, books piled on the floor, cold grey skylight.",
   "gente": true,
   "strength": 7,
-  "cam": "push",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
@@ -2740,7 +2939,9 @@
     "p88"
    ]
   ],
-  "fx": []
+  "fx": [
+   "dust"
+  ]
  },
  {
   "at": "8.6@se mete en negocios",
@@ -2751,20 +2952,18 @@
   "prompt": "No person. In the foreground, resting on its surface: an open 1920s business ledger with columns of handwritten numbers and a 1930s fountain pen with a green marbled barrel, a black cap and a gold nib. Behind it, further away and softly out of focus: a 1920s Budapest attic studio with an easel, clay busts and a grey skylight. The object stands firmly on the surface with its own shadow.",
   "lugar": "atelier_bp",
   "strength": 18,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p90"
+    "p92"
    ],
    [
     1,
-    "p90"
+    "p92"
    ]
   ],
-  "fx": [
-   "dust"
-  ]
+  "fx": []
  },
  {
   "at": "8.6@el periodismo",
@@ -2778,15 +2977,15 @@
    "sala de composición · Fortepan"
   ],
   "strength": 10,
-  "cam": "dolly",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -2806,65 +3005,64 @@
  },
  {
   "at": "8.7@una ciudad enorme",
-  "id": "a_bp_30s_o",
-  "kind": "copia",
+  "id": "f_bp_danubio",
+  "kind": "film",
   "w": 1.0,
-  "src": "a_bp_30s",
+  "film": "ar_bp_danubio",
+  "ss": 2,
+  "speed": 1.0,
+  "bw": true,
   "rotulo": [
    "Budapest",
-   "el Danubio · años treinta"
-  ],
-  "photo": "archivo/a_bp_30s.jpg"
+   "1938 · Prelinger Archives"
+  ]
  },
  {
   "at": "8.7@sobre el danubio",
-  "id": "a_bp_palota_o",
-  "kind": "proyector",
+  "id": "f_bp_puente",
+  "kind": "film",
   "w": 1.0,
-  "src": "a_bp_palota",
-  "rotulo": [
-   "El palacio de Buda",
-   "1930"
-  ]
+  "film": "ar_bp_puente",
+  "ss": 4,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "8.7@llena de cafés",
   "id": "a_bp_lanchid_o",
-  "kind": "copia",
+  "kind": "depth2",
   "w": 1.0,
   "src": "a_bp_lanchid",
+  "archivo": true,
   "rotulo": [
    "Terraza del café Lánchíd",
    "Budapest · Fortepan"
   ],
-  "photo": "archivo/a_bp_lanchid.jpg"
- },
- {
-  "at": "8.7@pasan las horas escribiendo",
-  "id": "p_cafe_escriben",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "they write and the cigarette smoke curls up",
-  "gente": true,
-  "lugar": "cafe",
-  "escena": true,
-  "src": "kf__p_cafe_escriben",
-  "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Three Hungarian writers in 1930s suits sit at a small marble table writing and smoking, coffee cups and newspapers around them. The 1930s Budapest coffee house built as a handmade miniature stop-motion set from real materials: small round white marble tables on black cast-iron legs, dark bentwood chairs, tall gilded mirrors on dark green walls, brass globe lamps glowing amber, newspapers on wooden holders, tall arched windows with grey afternoon light.",
-  "strength": 7,
+  "strength": 10,
   "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p88"
+    "p75"
    ],
    [
     1,
-    "p88"
+    "p75"
    ]
   ],
   "fx": [
    "dust"
   ]
+ },
+ {
+  "at": "8.7@pasan las horas escribiendo",
+  "id": "f_bp_cafe",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_bp_cafe",
+  "ss": 3,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "8.8",
@@ -2878,15 +3076,15 @@
    "el salón · Fortepan"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -2920,30 +3118,13 @@
  },
  {
   "at": "8.8@corre de una nota",
-  "id": "a_bp_newyork2_o",
-  "kind": "depth2",
+  "id": "f_bp_calle",
+  "kind": "film",
   "w": 1.0,
-  "src": "a_bp_newyork2",
-  "archivo": true,
-  "rotulo": [
-   "Café New York",
-   "la mesa de los escritores"
-  ],
-  "strength": 10,
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p80"
-   ],
-   [
-    1,
-    "p80"
-   ]
-  ],
-  "fx": [
-   "dust"
-  ]
+  "film": "ar_bp_calle",
+  "ss": 6,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "8.8@escribe en el tranvía",
@@ -3007,15 +3188,15 @@
    "Budapest · Fortepan"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -3059,15 +3240,15 @@
   "src": "a_bp_newyork3",
   "archivo": true,
   "strength": 10,
-  "cam": "dolly",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p75"
    ],
    [
     1,
-    "p85"
+    "p75"
    ]
   ],
   "fx": [
@@ -3156,23 +3337,19 @@
   "src": "kf__o_pelikan_traba",
   "prompt": "No person. Close view of a 1930s fountain pen with a green marbled barrel, a black cap and a gold nib scratching dry on a notebook page and then leaving a sudden blot. Behind, softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze.",
   "strength": 14,
-  "cam": "push",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p60"
    ],
    [
-    0.4,
+    0.5,
     "p95"
-   ],
-   [
-    0.82,
-    "p14"
    ],
    [
     1,
-    "p14"
+    "p95"
    ]
   ],
   "fx": []
@@ -3185,15 +3362,15 @@
   "src": "a_off_ink",
   "archivo": true,
   "strength": 10,
-  "cam": "orbit",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -3233,7 +3410,7 @@
   "src": "a_bp_hangli",
   "archivo": true,
   "strength": 10,
-  "cam": "push",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -3333,23 +3510,19 @@
   "prompt": "No person. In the foreground, resting on its surface: a cut-open 1930s car gearbox with brass gears, on a workbench. Behind it, further away and softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze. The object stands firmly on the surface with its own shadow.",
   "lugar": "redac",
   "strength": 18,
-  "cam": "dolly",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p14"
+    "p95"
    ],
    [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
+    0.55,
     "p95"
    ],
    [
     1,
-    "p95"
+    "p40"
    ]
   ],
   "fx": [
@@ -3368,15 +3541,15 @@
    "calle Hadnagy · Fortepan"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -3505,31 +3678,17 @@
  },
  {
   "at": "11.0",
-  "id": "o_rotativa",
-  "kind": "depth2",
+  "id": "f_rot_sala",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the cylinders spin fast and the paper races through",
-  "lugar": "imprenta",
-  "escena": true,
-  "src": "kf__o_rotativa",
-  "prompt": "No person. A huge black 1930s rotary printing press running at full speed in a basement, steel cylinders spinning, a band of paper racing through. The newspaper printing basement in 1930s Budapest built as a handmade miniature stop-motion set from real materials: two huge black iron rotary presses with polished steel cylinders, a giant roll of white paper, stacks of fresh newspapers, a dark oily concrete floor, low brick vaults, hanging lamps with amber light, narrow iron stairs on the left.",
-  "strength": 14,
-  "cam": "rise",
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ],
-  "fx": []
+  "film": "ar_rotativa",
+  "ss": 43.5,
+  "speed": 1.0,
+  "bw": true,
+  "rotulo": [
+   "Una rotativa de diario",
+   "1950 · Prelinger Archives"
+  ]
  },
  {
   "at": "11.0@las rotativas no paran",
@@ -3543,15 +3702,15 @@
    "Hufvudstadsbladet"
   ],
   "strength": 10,
-  "cam": "dolly",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -3571,29 +3730,13 @@
  },
  {
   "at": "11.0@cilindros que giran",
-  "id": "o_cilindros",
-  "kind": "depth2",
+  "id": "f_rot_cil",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the cylinders spin and the paper rushes through",
-  "lugar": "imprenta",
-  "escena": true,
-  "src": "kf__o_cilindros",
-  "prompt": "No person. Extreme close view of two shiny steel printing cylinders spinning against each other with a band of paper between them. Behind, softly out of focus: the Budapest printing basement: huge black iron rotary presses, polished steel cylinders, low brick vaults, amber hanging lamps, a dark oily floor.",
-  "strength": 14,
-  "cam": "truck",
-  "focus_keys": [
-   [
-    0,
-    "p90"
-   ],
-   [
-    1,
-    "p90"
-   ]
-  ],
-  "fx": [
-   "dust"
-  ]
+  "film": "ar_rotativa",
+  "ss": 60,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "11.0@que hace temblar el piso",
@@ -3607,15 +3750,15 @@
    "Seattle Times · 1911"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -3624,29 +3767,13 @@
  },
  {
   "at": "11.1",
-  "id": "o_rollo",
-  "kind": "depth2",
+  "id": "f_rot_rollo",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the giant roll unwinds and spins",
-  "lugar": "imprenta",
-  "escena": true,
-  "src": "kf__o_rollo",
-  "prompt": "No person. A giant roll of white newsprint paper unwinding fast into a rotary press. The newspaper printing basement in 1930s Budapest built as a handmade miniature stop-motion set from real materials: two huge black iron rotary presses with polished steel cylinders, a giant roll of white paper, stacks of fresh newspapers, a dark oily concrete floor, low brick vaults, hanging lamps with amber light, narrow iron stairs on the left.",
-  "strength": 14,
-  "cam": "dolly",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ],
-  "fx": [
-   "rays"
-  ]
+  "film": "ar_rotativa",
+  "ss": 36,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "11.1@salen los diarios",
@@ -3659,24 +3786,26 @@
   "src": "kf__o_diarios_salen",
   "prompt": "No person. Freshly printed newspapers coming out of a rotary press already cut and folded, piling up on a belt. The newspaper printing basement in 1930s Budapest built as a handmade miniature stop-motion set from real materials: two huge black iron rotary presses with polished steel cylinders, a giant roll of white paper, stacks of fresh newspapers, a dark oily concrete floor, low brick vaults, hanging lamps with amber light, narrow iron stairs on the left.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
     "p95"
    ],
    [
-    0.55,
+    0.4,
     "p95"
    ],
    [
+    0.82,
+    "p14"
+   ],
+   [
     1,
-    "p40"
+    "p14"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "11.1@cortados y doblados",
@@ -3690,15 +3819,15 @@
    "saliendo de la rotativa · Nationaal Archief"
   ],
   "strength": 10,
-  "cam": "rise",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -3717,7 +3846,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. He walks down narrow iron stairs into a loud printing basement, holding his hat, looking at the presses. The newspaper printing basement in 1930s Budapest built as a handmade miniature stop-motion set from real materials: two huge black iron rotary presses with polished steel cylinders, a giant roll of white paper, stacks of fresh newspapers, a dark oily concrete floor, low brick vaults, hanging lamps with amber light, narrow iron stairs on the left.",
   "gente": true,
   "strength": 7,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
@@ -3742,7 +3871,7 @@
    "Seattle Times · 1911"
   ],
   "strength": 10,
-  "cam": "push",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -3769,7 +3898,7 @@
   "src": "kf__p_imprentero",
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A printer in a paper hat and an apron with ink-stained hands pulls a fresh newspaper off the press and checks it. The newspaper printing basement in 1930s Budapest built as a handmade miniature stop-motion set from real materials: two huge black iron rotary presses with polished steel cylinders, a giant roll of white paper, stacks of fresh newspapers, a dark oily concrete floor, low brick vaults, hanging lamps with amber light, narrow iron stairs on the left.",
   "strength": 7,
-  "cam": "orbit",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
@@ -3794,7 +3923,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. Close view of his face lit by the press lamps, eyes following the newspapers flying past, fascinated. Behind, softly out of focus: the Budapest printing basement: huge black iron rotary presses, polished steel cylinders, low brick vaults, amber hanging lamps, a dark oily floor.",
   "gente": true,
   "strength": 7,
-  "cam": "push",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -3872,15 +4001,15 @@
    "Nationaal Archief"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -3923,7 +4052,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. Close view: he runs his fingertip over a freshly printed newspaper page and looks at his clean finger, surprised. Behind, softly out of focus: the Budapest printing basement: huge black iron rotary presses, polished steel cylinders, low brick vaults, amber hanging lamps, a dark oily floor.",
   "gente": true,
   "strength": 7,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -3934,9 +4063,7 @@
     "p88"
    ]
   ],
-  "fx": [
-   "dust"
-  ]
+  "fx": []
  },
  {
   "at": "11.4@se secaba casi al instante",
@@ -3957,15 +4084,15 @@
    "Nationaal Archief"
   ],
   "strength": 10,
-  "cam": "dolly",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -3984,7 +4111,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. He stands in a printing basement holding a can of printing ink in one hand and his fountain pen in the other, smiling slowly. The newspaper printing basement in 1930s Budapest built as a handmade miniature stop-motion set from real materials: two huge black iron rotary presses with polished steel cylinders, a giant roll of white paper, stacks of fresh newspapers, a dark oily concrete floor, low brick vaults, hanging lamps with amber light, narrow iron stairs on the left.",
   "gente": true,
   "strength": 7,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
@@ -3995,7 +4122,9 @@
     "p88"
    ]
   ],
-  "fx": []
+  "fx": [
+   "dust"
+  ]
  },
  {
   "at": "11.5@si esa tinta no mancha",
@@ -4009,7 +4138,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. Close view of his hand lifting a small open can of thick black printing ink toward his fountain pen. Behind, softly out of focus: the Budapest printing basement: huge black iron rotary presses, polished steel cylinders, low brick vaults, amber hanging lamps, a dark oily floor.",
   "gente": true,
   "strength": 7,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
@@ -4034,7 +4163,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. Close view of his hands filling a black fountain pen with thick black printing ink from a small can with a spatula. Behind, softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze.",
   "gente": true,
   "strength": 7,
-  "cam": "orbit",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
@@ -4087,7 +4216,7 @@
   "src": "kf__o_miel_macro",
   "gente": true,
   "strength": 7,
-  "cam": "push",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -4136,7 +4265,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. He throws a clogged fountain pen onto a desk covered in ink stains and rubs his forehead. The 1930s Budapest newspaper office built as a handmade miniature stop-motion set from real materials: rows of dark oak desks with black typewriters and green-shaded brass lamps, tall piles of paper, black telephones, pale grey-green walls, a big wall clock, tall windows with grey light, a haze of cigarette smoke.",
   "gente": true,
   "strength": 7,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -4147,9 +4276,7 @@
     "p88"
    ]
   ],
-  "fx": [
-   "dust"
-  ]
+  "fx": []
  },
  {
   "at": "11.8",
@@ -4198,15 +4325,15 @@
    "estereotipo cilíndrico"
   ],
   "strength": 10,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -4224,24 +4351,26 @@
   "src": "kf__o_tubo_tinta",
   "prompt": "No person. Close view of a thin glass tube full of thick dark blue ink held upright in a brass clamp on a lab bench. Behind, softly out of focus: György's home laboratory: a pine table with glass beakers, a blue gas burner, rows of small blue ink bottles with paper labels, grey window light.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
     "p95"
    ],
    [
-    0.55,
+    0.4,
     "p95"
    ],
    [
+    0.82,
+    "p14"
+   ],
+   [
     1,
-    "p40"
+    "p14"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "11.9@y la extiendes",
@@ -4357,7 +4486,7 @@
   "src": "kf__n_bolitas_calle",
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Three Hungarian boys in 1930 caps and short trousers kneel on a cobbled street playing marbles near a puddle. A 1930s Budapest street built as a handmade miniature stop-motion set from real materials: grey stone buildings with tall windows, wet cobblestones, a yellow tram on rails, black gas lamps, people in dark coats and hats, cold grey light.",
   "strength": 7,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
@@ -4368,7 +4497,9 @@
     "p88"
    ]
   ],
-  "fx": []
+  "fx": [
+   "dust"
+  ]
  },
  {
   "at": "11.11@jugando a las bolitas",
@@ -4381,26 +4512,28 @@
   "src": "kf__n_bolitas_macro",
   "prompt": "No person. Close view at ground level of small clear glass marbles with a blue swirl inside lying on wet cobblestones, no hands, no people. Behind, softly out of focus: a 1930s Budapest street: grey stone buildings, wet cobblestones, a yellow tram, black gas lamps, cold grey light.",
   "strength": 14,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
     "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
    ],
    [
     1,
-    "p14"
+    "p95"
    ]
   ],
-  "fx": []
+  "fx": [
+   "bokeh"
+  ]
  },
  {
   "at": "11.11@una raya mojada",
@@ -4413,19 +4546,19 @@
   "src": "kf__o_bolita_charco",
   "prompt": "No person. Close view of a glass marble rolling out of a small puddle onto dry dusty ground, leaving a thin wet line behind. Behind, softly out of focus: a 1930s Budapest street: grey stone buildings, wet cobblestones, a yellow tram, black gas lamps, cold grey light.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p93"
    ],
    [
     1,
-    "p95"
+    "p93"
    ]
   ],
   "fx": [
-   "rays"
+   "tilt"
   ]
  },
  {
@@ -4520,23 +4653,19 @@
   "src": "kf__o_rodillo",
   "prompt": "No person. A paint roller rolling up a white wall leaving a smooth band of blue paint. The boy's 1940s family kitchen built as a handmade miniature stop-motion set from real materials: a wooden table with a red and white checked cloth, pale yellow walls, a white enamel sink, shelves with glass jars, a window with bright morning sun from the right.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p14"
+    "p95"
    ],
    [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
+    0.55,
     "p95"
    ],
    [
     1,
-    "p95"
+    "p40"
    ]
   ],
   "fx": [
@@ -4562,7 +4691,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of a wooden hand writing a curly signature with a ballpoint pen on white paper. Behind, softly out of focus: a dark walnut desk with cream paper, soft window light from the left.",
   "gente": true,
   "strength": 7,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
@@ -4594,15 +4723,15 @@
    "tubo, tinta y bolita"
   ],
   "strength": 10,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -4629,19 +4758,23 @@
   "prompt": "No person. In the foreground, resting on its surface: a piece of brown leather with a thick rough ink line drawn on it next to a big ball-tipped marker. Behind it, further away and softly out of focus: a sooty 19th-century workshop with iron machines and smoky amber light. The object stands firmly on the surface with its own shadow.",
   "lugar": "fabrica_xix",
   "strength": 18,
-  "cam": "rise",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p60"
+    "p95"
    ],
    [
-    0.5,
+    0.4,
     "p95"
+   ],
+   [
+    0.82,
+    "p14"
    ],
    [
     1,
-    "p95"
+    "p14"
    ]
   ],
   "fx": []
@@ -4703,7 +4836,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. Close view of wooden hands trying to write a letter with a thick leather marker, the line coarse and blotchy. Behind, softly out of focus: a sooty 19th-century workshop with iron machines and smoky amber light.",
   "gente": true,
   "strength": 7,
-  "cam": "orbit",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
@@ -4771,15 +4904,15 @@
    "años treinta"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -4806,18 +4939,20 @@
   },
   "lugar": "calle_bp",
   "strength": 18,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p92"
+    "p90"
    ],
    [
     1,
-    "p92"
+    "p90"
    ]
   ],
-  "fx": []
+  "fx": [
+   "dust"
+  ]
  },
  {
   "at": "11.18@era grande",
@@ -4831,7 +4966,7 @@
   "src": "kf__b32_feria",
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a grey three-piece wool suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. He stands proudly behind a small exhibition stand showing a large marking pen to two curious visitors in hats. A 1930s Budapest street built as a handmade miniature stop-motion set from real materials: grey stone buildings with tall windows, wet cobblestones, a yellow tram on rails, black gas lamps, people in dark coats and hats, cold grey light.",
   "strength": 7,
-  "cam": "push",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -4852,15 +4987,15 @@
   "src": "a_bp_duna_hajo",
   "archivo": true,
   "strength": 10,
-  "cam": "dolly",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -4925,15 +5060,15 @@
   "src": "a_bp_szedo2",
   "archivo": true,
   "strength": 10,
-  "cam": "orbit",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -4951,19 +5086,23 @@
   "src": "kf__o_frascos_tinta",
   "prompt": "No person. A row of small glass bottles of ink in many shades of blue on a wooden shelf, each with a handwritten paper label, lamp light. György's small home chemistry laboratory in 1930s Budapest built as a handmade miniature stop-motion set from real materials: a scrubbed pine table with glass beakers, a blue gas burner, rows of small ink bottles in every shade of blue with handwritten paper labels, a dark wooden cabinet, a window with grey light.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p14"
    ],
    [
-    0.55,
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
     "p95"
    ],
    [
     1,
-    "p40"
+    "p95"
    ]
   ],
   "fx": [
@@ -5097,35 +5236,13 @@
  },
  {
   "at": "12",
-  "id": "o_rotativa_noche",
-  "kind": "depth2",
+  "id": "f_rot_banda",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the folded newspapers fall one over another",
-  "lugar": "imprenta",
-  "escena": true,
-  "src": "kf__o_rotativa_noche",
-  "prompt": "No person. An old rotary press printing newspapers at full speed at night, folded papers falling one over another, sparks of light on the steel. The newspaper printing basement in 1930s Budapest built as a handmade miniature stop-motion set from real materials: two huge black iron rotary presses with polished steel cylinders, a giant roll of white paper, stacks of fresh newspapers, a dark oily concrete floor, low brick vaults, hanging lamps with amber light, narrow iron stairs on the left.",
-  "strength": 14,
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
-    "p14"
-   ],
-   [
-    1,
-    "p14"
-   ]
-  ],
-  "fx": []
+  "film": "ar_rotativa",
+  "ss": 66,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "13",
@@ -5144,20 +5261,22 @@
   "prompt": "No person. In the foreground, resting on its surface: a pencil drawing of a pen cut in half showing a tube of ink and a ball at the tip, on drafting paper with a compass. Behind it, further away and softly out of focus: the 1930s Budapest newspaper office: dark oak desks, black typewriters, green-shaded brass lamps, pale grey-green walls, tall grey windows, cigarette haze. The object stands firmly on the surface with its own shadow.",
   "lugar": "redac",
   "strength": 18,
-  "cam": "push",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p94"
+    "p60"
+   ],
+   [
+    0.5,
+    "p95"
    ],
    [
     1,
-    "p94"
+    "p95"
    ]
   ],
-  "fx": [
-   "glint"
-  ]
+  "fx": []
  },
  {
   "at": "14.0@un tubo de tinta",
@@ -5247,22 +5366,20 @@
   "src": "kf__o_empuja",
   "prompt": "No person. Close view of a thin brass rod pushing down inside a glass pen tube full of thick blue ink. Behind, softly out of focus: György's home laboratory: a pine table with glass beakers, a blue gas burner, rows of small blue ink bottles with paper labels, grey window light.",
   "strength": 14,
-  "cam": "rise",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
+    "p93"
    ],
    [
     1,
-    "p95"
+    "p93"
    ]
   ],
-  "fx": []
+  "fx": [
+   "tilt"
+  ]
  },
  {
   "at": "14.2",
@@ -5286,15 +5403,19 @@
   "focus_keys": [
    [
     0,
-    "p90"
+    "p95"
+   ],
+   [
+    0.55,
+    "p95"
    ],
    [
     1,
-    "p90"
+    "p40"
    ]
   ],
   "fx": [
-   "dust"
+   "bokeh"
   ]
  },
  {
@@ -5395,19 +5516,15 @@
   "focus_keys": [
    [
     0,
-    "p95"
-   ],
-   [
-    0.55,
-    "p95"
+    "p90"
    ],
    [
     1,
-    "p40"
+    "p90"
    ]
   ],
   "fx": [
-   "bokeh"
+   "dust"
   ]
  },
  {
@@ -5421,15 +5538,23 @@
   "src": "kf__o_bolita_macro",
   "prompt": "No person. Extreme close view of a tiny shiny steel ball seated at the tip of a brass tube, reflecting a workshop lamp. Behind, softly out of focus: György's home laboratory: a pine table with glass beakers, a blue gas burner, rows of small blue ink bottles with paper labels, grey window light.",
   "strength": 14,
-  "cam": "rise",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p92"
+    "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
    ],
    [
     1,
-    "p92"
+    "p14"
    ]
   ],
   "fx": []
@@ -5442,15 +5567,15 @@
   "src": "a_bp_example",
   "archivo": true,
   "strength": 10,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -5533,26 +5658,28 @@
   "prompt": "No person. In the foreground, resting on its surface: a single human hair lying next to a tiny steel ball on a glass slide under a magnifying lens. Behind it, further away and softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window. The object stands firmly on the surface with its own shadow.",
   "lugar": "taller",
   "strength": 18,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
     "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
    ],
    [
     1,
-    "p14"
+    "p95"
    ]
   ],
-  "fx": []
+  "fx": [
+   "bokeh"
+  ]
  },
  {
   "at": "14.7@no había máquinas",
@@ -5665,15 +5792,15 @@
    "dibujo de su patente · 1943"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -5769,15 +5896,15 @@
    "Horthy junto a Hitler y Mussolini"
   ],
   "strength": 10,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -5795,22 +5922,24 @@
   "src": "kf__o_ley_diario",
   "prompt": "No person. A 1938 Hungarian newspaper lying on a café table with a big black headline, rain running down the window behind, The 1930s Budapest coffee house built as a handmade miniature stop-motion set from real materials: small round white marble tables on black cast-iron legs, dark bentwood chairs, tall gilded mirrors on dark green walls, brass globe lamps glowing amber, newspapers on wooden holders, tall arched windows with grey afternoon light.",
   "strength": 14,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p60"
+    "p95"
    ],
    [
-    0.5,
+    0.55,
     "p95"
    ],
    [
     1,
-    "p95"
+    "p40"
    ]
   ],
-  "fx": []
+  "fx": [
+   "bokeh"
+  ]
  },
  {
   "at": "14.11@su primera ley",
@@ -5838,7 +5967,7 @@
    "1938 · Fortepan"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -5886,15 +6015,15 @@
   "src": "a_bp_piarista",
   "archivo": true,
   "strength": 10,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -5919,24 +6048,26 @@
   "src": "kf__o_prototipo_cafe",
   "prompt": "No person. A ballpoint pen prototype lying on a marble café table in Budapest next to a cup of coffee, rain hitting the window behind. The 1930s Budapest coffee house built as a handmade miniature stop-motion set from real materials: small round white marble tables on black cast-iron legs, dark bentwood chairs, tall gilded mirrors on dark green walls, brass globe lamps glowing amber, newspapers on wooden holders, tall arched windows with grey afternoon light.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
     "p95"
    ],
    [
-    0.55,
+    0.4,
     "p95"
    ],
    [
+    0.82,
+    "p14"
+   ],
+   [
     1,
-    "p40"
+    "p14"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "16",
@@ -5982,15 +6113,15 @@
    "general y presidente argentino"
   ],
   "strength": 10,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -6008,19 +6139,19 @@
   "src": "kf__o_balneario",
   "prompt": "No person. A wide view of a 1938 Adriatic seaside resort: white hotels with striped awnings above a pine-covered rocky coast, turquoise sea, small boats. The terrace of a 1938 seaside hotel on the Adriatic coast built as a handmade miniature stop-motion set from real materials: white tablecloths, wicker chairs, red and white striped awnings, potted palms, a stone balustrade over pine trees and the turquoise sea, bright golden summer sun.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p93"
    ],
    [
     1,
-    "p95"
+    "p93"
    ]
   ],
   "fx": [
-   "rays"
+   "tilt"
   ]
  },
  {
@@ -6035,15 +6166,15 @@
    "costa de Yugoslavia · hacia 1930"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -6061,26 +6192,28 @@
   "src": "kf__o_olas",
   "prompt": "No person. Small turquoise waves washing over white rocks below pine trees on the Adriatic coast in bright sun. The terrace of a 1938 seaside hotel on the Adriatic coast built as a handmade miniature stop-motion set from real materials: white tablecloths, wicker chairs, red and white striped awnings, potted palms, a stone balustrade over pine trees and the turquoise sea, bright golden summer sun.",
   "strength": 14,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p95"
-   ],
-   [
-    0.4,
-    "p95"
-   ],
-   [
-    0.82,
     "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
    ],
    [
     1,
-    "p14"
+    "p95"
    ]
   ],
-  "fx": []
+  "fx": [
+   "bokeh"
+  ]
  },
  {
   "at": "17.1@y como siempre",
@@ -6090,15 +6223,15 @@
   "src": "a_crikv_a",
   "archivo": true,
   "strength": 10,
-  "cam": "dolly",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -6307,15 +6440,15 @@
    "presidente 1932 – 1938"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -6345,18 +6478,14 @@
   "src": "kf__o_tarjeta",
   "prompt": "No person. Close view of one carved maple-wood puppet hand with visible flat chisel facets, wood grain and pinned wooden finger joints (not a real human hand) passing a small white visiting card across a white tablecloth to another identical wooden puppet hand, the sea behind. Behind, softly out of focus: the 1938 Adriatic hotel terrace: white tablecloths, wicker chairs, red and white striped awnings, a stone balustrade over pines and the turquoise sea, golden sun.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p14"
+    "p60"
    ],
    [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
+    0.5,
     "p95"
    ],
    [
@@ -6364,9 +6493,7 @@
     "p95"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "17.5@con su nombre",
@@ -6389,19 +6516,19 @@
   "tag": "RECREACIÓN",
   "lugar": "mar",
   "strength": 18,
-  "cam": "orbit",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p93"
+    "p95"
    ],
    [
     1,
-    "p93"
+    "p95"
    ]
   ],
   "fx": [
-   "tilt"
+   "rays"
   ]
  },
  {
@@ -6416,7 +6543,7 @@
    "del general Justo · Museo del Bicentenario"
   ],
   "strength": 10,
-  "cam": "rise",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -6444,7 +6571,7 @@
   "prompt": "A real handmade stop-motion puppet carved from maple wood: visible flat chisel facets and fine vertical wood grain on the face and hands, small peg joints at the wrists and elbows, wooden jointed fingers, real tailored miniature fabric clothes. A Hungarian journalist of about 33 in 1932 with a long face with a very high forehead, dark brown hair receding and combed straight back, a long straight nose, deep-set dark eyes under thick eyebrows, large ears, thin lips, clean-shaven, wearing a light cream linen summer suit, a white shirt with a soft collar, a dark knitted tie and a fountain pen clipped in his breast pocket. Close view: he slips a small white card into the inside pocket of his jacket and pats it. Behind, softly out of focus: the 1938 Adriatic hotel terrace: white tablecloths, wicker chairs, red and white striped awnings, a stone balustrade over pines and the turquoise sea, golden sun.",
   "gente": true,
   "strength": 7,
-  "cam": "orbit",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -6559,47 +6686,84 @@
   "src": "kf__o_portafolio",
   "prompt": "No person. Close view of an open leather briefcase on a train seat with rolled technical drawings of a pen and a small brass prototype inside. Behind, softly out of focus: a 1938 night railway platform: a black steam locomotive, white steam, iron columns, a round station clock, yellow lamps.",
   "strength": 14,
-  "cam": "rise",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p60"
+    "p95"
    ],
    [
-    0.5,
+    0.4,
     "p95"
+   ],
+   [
+    0.82,
+    "p14"
    ],
    [
     1,
-    "p95"
+    "p14"
    ]
   ],
   "fx": []
  },
  {
   "at": "17.8@apenas unos días antes",
-  "id": "o_tren_noche",
-  "kind": "depth2",
+  "id": "m_huida",
+  "kind": "mapa3d",
   "w": 1.0,
-  "motion": "the train rushes across the snowy plain",
-  "lugar": "estacion",
-  "escena": true,
-  "src": "kf__o_tren_noche",
-  "prompt": "No person. A 1938 steam train crossing a snowy plain at night, lit windows, smoke and steam trailing. A 1938 railway station platform at night built as a handmade miniature stop-motion set from real materials: a black steam locomotive breathing white steam, iron columns, a big round station clock, yellow lamps, cold blue night.",
-  "strength": 14,
-  "cam": "truck",
-  "focus_keys": [
+  "rel": true,
+  "scenes": [
+   "mundo"
+  ],
+  "arc": 0.1,
+  "route": [
    [
-    0,
-    "p90"
+    19.04,
+    47.5
    ],
    [
-    1,
-    "p90"
+    2.35,
+    48.86
    ]
   ],
-  "fx": [
-   "dust"
+  "route_t": [
+   0.12,
+   0.8
+  ],
+  "cam": [
+   [
+    0,
+    14,
+    47.5,
+    24,
+    42,
+    -6
+   ],
+   [
+    1.0,
+    9,
+    48.5,
+    30,
+    40,
+    -2
+   ]
+  ],
+  "pins": [
+   [
+    0.05,
+    19.04,
+    47.5,
+    "BUDAPEST",
+    "fines de 1938"
+   ],
+   [
+    0.78,
+    2.35,
+    48.86,
+    "PARÍS",
+    "1939"
+   ]
   ]
  },
  {
@@ -6747,24 +6911,22 @@
   "src": "kf__o_paquete",
   "prompt": "No person. A brown paper parcel tied with string and covered in Hungarian stamps being opened on a lab table, small ink bottles inside wrapped in straw. The small 1939 Paris laboratory at 152 Boulevard Haussmann built as a handmade miniature stop-motion set from real materials: a long wooden table with glass ink bottles, fountain pen bodies and tiny brass tips, a brass microscope, pale blue-grey walls, a tall French window over grey zinc rooftops and chimneys, cool grey-blue light.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p60"
    ],
    [
-    0.55,
+    0.5,
     "p95"
    ],
    [
     1,
-    "p40"
+    "p95"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "17.10@con puntas que traía de suiza",
@@ -6929,22 +7091,29 @@
  },
  {
   "at": "17.13@el ejército alemán entró en francia",
-  "id": "a_paris_arc_o2",
-  "kind": "proyector",
+  "id": "f_diario40",
+  "kind": "film",
   "w": 1.0,
-  "src": "a_paris_arc"
+  "film": "ar_diario40",
+  "ss": 2.0,
+  "speed": 1.0,
+  "bw": true,
+  "crop": "1440:1080:240:0"
  },
  {
   "at": "17.13@en pocas semanas",
-  "id": "a_paris_parade_o",
-  "kind": "copia",
+  "id": "f_tropas40",
+  "kind": "film",
   "w": 1.0,
-  "src": "a_paris_parade",
+  "film": "ar_tropas40",
+  "ss": 3.4,
+  "speed": 1.0,
+  "bw": true,
   "rotulo": [
-   "El desfile alemán",
-   "París · 1940 · Bundesarchiv"
+   "Francia",
+   "mayo de 1940 · NARA"
   ],
-  "photo": "archivo/a_paris_parade.jpg"
+  "crop": "1440:1080:240:0"
  },
  {
   "at": "17.14",
@@ -7184,37 +7353,13 @@
  },
  {
   "at": "17.18",
-  "id": "o_vapor_llega",
-  "kind": "depth2",
+  "id": "f_vapor",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the ship slides slowly toward the quay, gulls fly",
-  "lugar": "puerto",
-  "escena": true,
-  "src": "kf__o_vapor_llega",
-  "prompt": "No person. A big 1940 passenger steamship with two funnels slowly arriving at the stone quay of Buenos Aires port at dawn, seagulls flying. The port of Buenos Aires in 1940 built as a handmade miniature stop-motion set from real materials: a big black and white steamship with two red funnels at a stone quay, iron cranes, wooden crates, brick warehouses, brown river water, warm ochre morning light.",
-  "strength": 14,
-  "cam": "dolly",
-  "focus_keys": [
-   [
-    0,
-    "p14"
-   ],
-   [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ],
-  "fx": [
-   "bokeh"
-  ]
+  "film": "ar_transatlantico",
+  "ss": 6.5,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "17.18@el vapor ciudad de sevilla",
@@ -7245,13 +7390,16 @@
  },
  {
   "at": "17.18@atracó en el puerto",
-  "id": "a_ba_darsena_o",
-  "kind": "proyector",
+  "id": "f_ba_puerto",
+  "kind": "film",
   "w": 1.0,
-  "src": "a_ba_darsena",
+  "film": "ar_ba_puerto",
+  "ss": 2,
+  "speed": 1.0,
+  "bw": true,
   "rotulo": [
-   "Dársena Norte",
-   "puerto de Buenos Aires"
+   "Puerto de Buenos Aires",
+   "1942 · NARA"
   ]
  },
  {
@@ -7288,19 +7436,27 @@
   "prompt": "No person. In the foreground, resting on its surface: rolled technical drawings of a pen tied with string on top of a leather suitcase. Behind it, further away and softly out of focus: the 1940 port of Buenos Aires: a black and white steamship with two red funnels, iron cranes, brick warehouses, warm ochre morning light. The object stands firmly on the surface with its own shadow.",
   "lugar": "puerto",
   "strength": 18,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p94"
+    "p14"
+   ],
+   [
+    0.3,
+    "p14"
+   ],
+   [
+    0.75,
+    "p95"
    ],
    [
     1,
-    "p94"
+    "p95"
    ]
   ],
   "fx": [
-   "glint"
+   "bokeh"
   ]
  },
  {
@@ -7311,15 +7467,15 @@
   "src": "a_ba_ideal",
   "archivo": true,
   "strength": 10,
-  "cam": "truck",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -7378,31 +7534,13 @@
  },
  {
   "at": "18",
-  "id": "o_vapor_amanecer",
-  "kind": "depth2",
+  "id": "f_vapor2",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the ship glides in, the gulls circle",
-  "lugar": "puerto",
-  "escena": true,
-  "src": "kf__o_vapor_amanecer",
-  "prompt": "No person. A passenger steamship entering the port of Buenos Aires slowly at sunrise, seagulls over the calm brown water, cranes in silhouette. The port of Buenos Aires in 1940 built as a handmade miniature stop-motion set from real materials: a big black and white steamship with two red funnels at a stone quay, iron cranes, wooden crates, brick warehouses, brown river water, warm ochre morning light.",
-  "strength": 14,
-  "cam": "rise",
-  "focus_keys": [
-   [
-    0,
-    "p60"
-   ],
-   [
-    0.5,
-    "p95"
-   ],
-   [
-    1,
-    "p95"
-   ]
-  ],
-  "fx": []
+  "film": "ar_transatlantico",
+  "ss": 22,
+  "speed": 1.0,
+  "bw": true
  },
  {
   "at": "19",
@@ -7424,6 +7562,43 @@
    "Buenos Aires · 1944"
   ],
   "strength": 10,
+  "cam": "truck",
+  "focus_keys": [
+   [
+    0,
+    "p75"
+   ],
+   [
+    1,
+    "p75"
+   ]
+  ],
+  "fx": [
+   "dust"
+  ]
+ },
+ {
+  "at": "20.0@una de las ciudades más grandes",
+  "id": "f_ba_congreso",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_ba_mayo",
+  "ss": 8,
+  "speed": 1.0,
+  "bw": true
+ },
+ {
+  "at": "20.0@ricas del mundo",
+  "id": "a_ba_juramento_o",
+  "kind": "depth2",
+  "w": 1.0,
+  "src": "a_ba_juramento",
+  "archivo": true,
+  "rotulo": [
+   "Un tranvía en la calle Juramento",
+   "1944"
+  ],
+  "strength": 10,
   "cam": "dolly",
   "focus_keys": [
    [
@@ -7440,48 +7615,17 @@
   ]
  },
  {
-  "at": "20.0@una de las ciudades más grandes",
-  "id": "a_ba_40_o2",
-  "kind": "proyector",
-  "w": 1.0,
-  "src": "a_ba_40"
- },
- {
-  "at": "20.0@ricas del mundo",
-  "id": "a_ba_juramento_o",
-  "kind": "copia",
-  "w": 1.0,
-  "src": "a_ba_juramento",
-  "rotulo": [
-   "Un tranvía en la calle Juramento",
-   "1944"
-  ],
-  "photo": "archivo/a_ba_juramento.jpg"
- },
- {
   "at": "20.0@edificios de estilo francés",
-  "id": "o_ba_calle",
-  "kind": "depth2",
+  "id": "f_ba_mayo",
+  "kind": "film",
   "w": 1.0,
-  "motion": "the tram passes slowly",
-  "lugar": "calle_ba",
-  "escena": true,
-  "src": "kf__o_ba_calle",
-  "prompt": "No person. A 1940 Buenos Aires street with French-style buildings with iron balconies, a tram passing and people in hats on the sidewalk. A 1940s Buenos Aires street built as a handmade miniature stop-motion set from real materials: cream French-style buildings with black iron balconies, a green and cream tram, cafés with striped awnings, jacaranda trees, people in hats, warm ochre afternoon light.",
-  "strength": 14,
-  "cam": "orbit",
-  "focus_keys": [
-   [
-    0,
-    "p93"
-   ],
-   [
-    1,
-    "p93"
-   ]
-  ],
-  "fx": [
-   "tilt"
+  "film": "ar_ba_mayo",
+  "ss": 1,
+  "speed": 1.0,
+  "bw": true,
+  "rotulo": [
+   "Avenida de Mayo",
+   "Buenos Aires · 1942"
   ]
  },
  {
@@ -7496,7 +7640,7 @@
    "años cuarenta"
   ],
   "strength": 10,
-  "cam": "rise",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
@@ -7548,15 +7692,15 @@
    "1940"
   ],
   "strength": 10,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p75"
+    "p80"
    ],
    [
     1,
-    "p75"
+    "p80"
    ]
   ],
   "fx": [
@@ -7616,50 +7760,63 @@
   "src": "kf__o_garaje_abre",
   "prompt": "No person. A wide wooden garage door being rolled open on a 1940 Buenos Aires street, revealing an empty garage with a workbench. A 1940s Buenos Aires street built as a handmade miniature stop-motion set from real materials: cream French-style buildings with black iron balconies, a green and cream tram, cafés with striped awnings, jacaranda trees, people in hats, warm ochre afternoon light.",
   "strength": 14,
-  "cam": "truck",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
-    "p95"
+    "p60"
    ],
    [
-    0.55,
+    0.5,
     "p95"
    ],
    [
     1,
-    "p40"
+    "p95"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "20.2@en el barrio de palermo",
-  "id": "a_ba_palermo45_o",
-  "kind": "depth2",
+  "id": "m_palermo",
+  "kind": "mapa3d",
   "w": 1.0,
-  "src": "a_ba_palermo45",
-  "archivo": true,
-  "rotulo": [
-   "Palermo",
-   "Buenos Aires · 1945"
+  "rel": true,
+  "scenes": [
+   "plata",
+   "palermo"
   ],
-  "strength": 10,
-  "cam": "dolly",
-  "focus_keys": [
+  "fade": [
+   0.2,
+   0.12
+  ],
+  "cam": [
    [
     0,
-    "p85"
+    -58.4,
+    -34.6,
+    0.16,
+    40,
+    10
    ],
    [
-    1,
-    "p85"
+    1.0,
+    -58.4263,
+    -34.5813,
+    0.035,
+    54,
+    34
    ]
   ],
-  "fx": [
-   "dust"
+  "pins": [
+   [
+    0.35,
+    -58.4263,
+    -34.5813,
+    "CALLE ORO",
+    "Palermo"
+   ]
   ]
  },
  {
@@ -7730,7 +7887,7 @@
    "Buenos Aires · 1940"
   ],
   "strength": 10,
-  "cam": "orbit",
+  "cam": "push",
   "focus_keys": [
    [
     0,
@@ -7754,19 +7911,19 @@
   "prompt": "No person. In the foreground, resting on its surface: a 1942 bank cheque with a fountain pen signature and an ink blotter. Behind it, further away and softly out of focus: the 1942 Buenos Aires financiers' office: dark wood panelling, a mahogany desk, green banker's lamps, warm amber light. The object stands firmly on the surface with its own shadow.",
   "lugar": "oficina_ba",
   "strength": 18,
-  "cam": "push",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p94"
+    "p90"
    ],
    [
     1,
-    "p94"
+    "p90"
    ]
   ],
   "fx": [
-   "glint"
+   "dust"
   ]
  },
  {
@@ -7791,26 +7948,24 @@
   "src": "kf__t_hoja_cb2",
   "prompt": "No person. Close view of a sheet of paper on a wooden bench covered with many faint dry scratches, a bare bulb reflection on it. Behind, softly out of focus: the 1943 Calle Oro garage workshop at night: dark whitewashed brick walls, a bare bulb with a green enamel shade glowing warm, a small black lathe, a round white wall clock, a green garage door with cold blue moonlight through its barred window.",
   "strength": 14,
-  "cam": "push",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
     "p95"
    ],
    [
-    0.4,
+    0.55,
     "p95"
    ],
    [
-    0.82,
-    "p14"
-   ],
-   [
     1,
-    "p14"
+    "p40"
    ]
   ],
-  "fx": []
+  "fx": [
+   "bokeh"
+  ]
  },
  {
   "at": "20.5",
@@ -7908,15 +8063,15 @@
    "Buenos Aires · 1942 · AGN"
   ],
   "strength": 10,
-  "cam": "rise",
+  "cam": "truck",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p75"
    ],
    [
     1,
-    "p80"
+    "p75"
    ]
   ],
   "fx": [
@@ -7941,28 +8096,26 @@
   "src": "kf__o_pileta",
   "prompt": "No person. A 1940s kitchen sink full of water with a rubber plug in the drain, a drop falling from the tap, The boy's 1940s family kitchen built as a handmade miniature stop-motion set from real materials: a wooden table with a red and white checked cloth, pale yellow walls, a white enamel sink, shelves with glass jars, a window with bright morning sun from the right.",
   "strength": 14,
-  "cam": "dolly",
+  "cam": "push",
   "focus_keys": [
    [
     0,
-    "p14"
-   ],
-   [
-    0.3,
-    "p14"
-   ],
-   [
-    0.75,
     "p95"
+   ],
+   [
+    0.4,
+    "p95"
+   ],
+   [
+    0.82,
+    "p14"
    ],
    [
     1,
-    "p95"
+    "p14"
    ]
   ],
-  "fx": [
-   "bokeh"
-  ]
+  "fx": []
  },
  {
   "at": "20.8@mientras está puesto",
@@ -7974,32 +8127,6 @@
   "escena": true,
   "src": "kf__n_tapon",
   "prompt": "No person. Close view inside a white enamel sink: a black rubber plug sits in the drain, a little water around it, no hands. Behind, softly out of focus: the boy's 1940s kitchen: a red and white checked tablecloth, pale yellow walls, a white enamel sink, shelves with glass jars, bright morning sun.",
-  "strength": 14,
-  "cam": "push",
-  "focus_keys": [
-   [
-    0,
-    "p94"
-   ],
-   [
-    1,
-    "p94"
-   ]
-  ],
-  "fx": [
-   "glint"
-  ]
- },
- {
-  "at": "20.8@no pasa ni una gota",
-  "id": "o_tapon",
-  "kind": "depth2",
-  "w": 1.0,
-  "motion": "the water ripples above the plug, nothing moves",
-  "lugar": "cocina",
-  "escena": true,
-  "src": "kf__o_tapon",
-  "prompt": "No person. Extreme close view of a rubber plug sealing a sink drain under clear water, nothing passing through. Behind, softly out of focus: the boy's 1940s kitchen: a red and white checked tablecloth, pale yellow walls, a white enamel sink, shelves with glass jars, bright morning sun.",
   "strength": 14,
   "cam": "truck",
   "focus_keys": [
@@ -8015,6 +8142,30 @@
   "fx": [
    "dust"
   ]
+ },
+ {
+  "at": "20.8@no pasa ni una gota",
+  "id": "o_tapon",
+  "kind": "depth2",
+  "w": 1.0,
+  "motion": "the water ripples above the plug, nothing moves",
+  "lugar": "cocina",
+  "escena": true,
+  "src": "kf__o_tapon",
+  "prompt": "No person. Extreme close view of a rubber plug sealing a sink drain under clear water, nothing passing through. Behind, softly out of focus: the boy's 1940s kitchen: a red and white checked tablecloth, pale yellow walls, a white enamel sink, shelves with glass jars, bright morning sun.",
+  "strength": 14,
+  "cam": "rise",
+  "focus_keys": [
+   [
+    0,
+    "p92"
+   ],
+   [
+    1,
+    "p92"
+   ]
+  ],
+  "fx": []
  },
  {
   "at": "20.9",
@@ -8117,15 +8268,15 @@
    "1945 · AGN"
   ],
   "strength": 10,
-  "cam": "push",
+  "cam": "dolly",
   "focus_keys": [
    [
     0,
-    "p80"
+    "p85"
    ],
    [
     1,
-    "p80"
+    "p85"
    ]
   ],
   "fx": [
@@ -9186,15 +9337,15 @@
   "src": "a_pat_us",
   "archivo": true,
   "strength": 10,
-  "cam": "dolly",
+  "cam": "orbit",
   "focus_keys": [
    [
     0,
-    "p85"
+    "p80"
    ],
    [
     1,
-    "p85"
+    "p80"
    ]
   ],
   "fx": [
@@ -9226,7 +9377,7 @@
   "src": "a_ny_vj",
   "archivo": true,
   "strength": 10,
-  "cam": "orbit",
+  "cam": "rise",
   "focus_keys": [
    [
     0,
@@ -10150,14 +10301,25 @@
  },
  {
   "at": "28.4@en pleno vuelo",
-  "id": "a_raf_debrief_o",
+  "id": "f_avion",
+  "kind": "film",
+  "w": 1.0,
+  "film": "ar_avion",
+  "ss": 2.5,
+  "speed": 1.0,
+  "bw": true,
+  "crop": "1440:1080:240:0"
+ },
+ {
+  "at": "28.4@terminaban con las manos",
+  "id": "a_lanc_engineer_o",
   "kind": "depth2",
   "w": 1.0,
-  "src": "a_raf_debrief",
+  "src": "a_lanc_engineer",
   "archivo": true,
   "rotulo": [
-   "Tripulación de un Lancaster",
-   "Bottesford · marzo de 1943 · AWM"
+   "Dentro de un Lancaster",
+   "el ingeniero de vuelo · IWM"
   ],
   "strength": 10,
   "cam": "rise",
@@ -10173,17 +10335,6 @@
   ],
   "fx": [
    "dust"
-  ]
- },
- {
-  "at": "28.4@terminaban con las manos",
-  "id": "a_lanc_engineer_o",
-  "kind": "proyector",
-  "w": 1.0,
-  "src": "a_lanc_engineer",
-  "rotulo": [
-   "Dentro de un Lancaster",
-   "el ingeniero de vuelo · IWM"
   ]
  },
  {
@@ -10703,27 +10854,40 @@
  },
  {
   "at": "31.0",
-  "id": "o_chicago",
-  "kind": "depth2",
+  "id": "m_chicago",
+  "kind": "mapa3d",
   "w": 1.0,
-  "motion": "an elevated train passes above",
-  "lugar": "chicago",
-  "escena": true,
-  "src": "kf__o_chicago",
-  "prompt": "No person. A 1945 Chicago street with elevated train tracks, tall brick buildings and old cars, autumn wind blowing papers. Milton Reynolds' 1945 Chicago office and small factory built as a handmade miniature stop-motion set from real materials: a cluttered desk with a red telephone, a window over the elevated train tracks, long work tables with silver pen parts, bright cream light.",
-  "strength": 14,
-  "cam": "rise",
-  "focus_keys": [
+  "rel": true,
+  "scenes": [
+   "mundo"
+  ],
+  "cam": [
    [
     0,
-    "p92"
+    -84,
+    39,
+    34,
+    40,
+    0
    ],
    [
-    1,
-    "p92"
+    1.0,
+    -87.0,
+    40.6,
+    22,
+    46,
+    6
    ]
   ],
-  "fx": []
+  "pins": [
+   [
+    0.22,
+    -87.63,
+    41.88,
+    "CHICAGO",
+    "1945"
+   ]
+  ]
  },
  {
   "at": "31.0@milton reynolds",

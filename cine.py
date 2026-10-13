@@ -95,7 +95,7 @@ def film(img, t, i, look="warm", halation=0.22, grain=0.035, weave=True, ca=1.0)
     yy, xx = np.ogrid[:H, :W]
     v = 1 - 0.38 * (((xx - W / 2) / (W / 2)) ** 2 + ((yy - H / 2) / (H / 2)) ** 2) ** 1.4
     img = img * v[..., None]
-    if weave:                                                                                         # temblor de gate
+    if weave and os.environ.get("TGP_WEAVE", "0") == "1":                                            # temblor de gate (apagado por defecto desde 13-oct: el creador lo ve como vibración molesta)
         g = np.random.default_rng(int(i // 2) + 999)
         img = cv2.warpAffine(img, np.float32([[1, 0, g.normal(0, 0.35) * S], [0, 1, g.normal(0, 0.45) * S]]), (W, H), borderMode=cv2.BORDER_REFLECT)
     gr = np.random.default_rng(i).normal(0, 1, (H // 2, W // 2)).astype(np.float32)

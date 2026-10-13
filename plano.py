@@ -193,6 +193,26 @@ def r_clip():
         put(p, film(img, t, i, "warm" if "tallador" not in sid else "warm", halation=0.22))
     p.stdin.close(); p.wait()
 
+def r_film():
+    """VIDEO REAL (archivo de dominio público o macro de stock): film/<film>.mp4 desde ss, a velocidad speed (<1 = cámara lenta),
+    recorte por zoom/centro (cx, cy en fracción), bw=True = archivo en blanco y negro cálido. Empuje leve, sin temblor."""
+    src = f"{M}/film/{sh['film']}.mp4"; sp = sh.get("speed", 1.0); z0 = sh.get("zoom", 1.0); cx, cy = sh.get("cx", 0.5), sh.get("cy", 0.5)
+    WW, HH = int(W * z0 * 1.04), int(H * z0 * 1.04)
+    vf = (f"crop={sh['crop']}," if sh.get("crop") else "") + f"setpts=PTS/{sp},fps={FPS},scale={WW}:{HH}:force_original_aspect_ratio=increase:flags=lanczos,crop={WW}:{HH}"
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(sh.get("ss", 0)), "-i", src, "-t", str(DUR * sp + 1), "-an", "-vf", vf,
+                          "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, HH, WW, 3); n = len(fr)
+    x0 = int((WW - W) * cx); y0 = int((HH - H) * cy); p = writer()
+    for i in range(N):
+        t = i / FPS; img = fr[min(i, n - 1)].astype(np.float32) / 255
+        z = 1 + sh.get("push", 0.03) * ease(t / max(DUR, 1e-3))
+        img = cv2.warpAffine(img, cv2.getRotationMatrix2D((WW / 2, HH / 2), 0, z), (WW, HH), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)[y0:y0 + H, x0:x0 + W]
+        if sh.get("bw"):                                                     # archivo: blanco y negro cálido, contraste de copia de época
+            g = img @ np.float32([0.3, 0.59, 0.11]); g = np.clip((g - 0.04) * 1.08, 0, 1)
+            img = np.stack([g * 1.04, g * 0.99, g * 0.90], -1)
+        put(p, film(img, t, i, "warm", halation=0.18, grain=0.045 if sh.get("bw") else 0.03))
+    p.stdin.close(); p.wait()
+
 def r_still():
     img0 = load(f"{M}/img/kf__{sh.get('imgsrc', sid)}.png", size=(int(W * 1.1), int(H * 1.1))); p = writer()
     for i in range(N):
@@ -352,7 +372,13 @@ def r_open():
     de la miniatura al clip del plano 1 (sh["clip"]), que sigue "en dos" y sostiene el último cuadro con empuje."""
     th = load(f"{M}/miniatura.jpg", size=(W, H))
     if sh.get("mode") == "dissolve":
-        if sh.get("img"):                                             # sin clips (tgbiro): la imagen del plano 1 con un empuje lento
+        if sh.get("film"):                                            # 2ª pasada tgbiro: de la miniatura directo al VIDEO REAL del gancho
+            sp = sh.get("speed", 1.0); HOLD = sh.get("hold", 0.35); X1 = HOLD + sh.get("xdur", 0.55)
+            vf = f"setpts=PTS/{sp},fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H}"
+            raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(sh.get("ss", 0)), "-i", f"{M}/film/{sh['film']}.mp4", "-t", str(DUR * sp + 1), "-an", "-vf", vf,
+                                  "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+            fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); p = writer(); still = None
+        elif sh.get("img"):                                           # sin clips (tgbiro): la imagen del plano 1 con un empuje lento
             still = load(f"{M}/img/{sh['img']}.png", size=(W, H)); fr = None; n = 1; HOLD = 0.45; X1 = 1.35; p = writer()
         else:
             raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f"{M}/clips/{sh['clip']}.mp4", "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
@@ -361,6 +387,8 @@ def r_open():
             t = i / FPS
             if fr is None:
                 c = cv2.warpAffine(still, cv2.getRotationMatrix2D((W / 2, H * 0.45), 0, 1 + 0.07 * t / max(DUR, 1e-3)), (W, H), borderMode=cv2.BORDER_REFLECT); hold = 0
+            elif sh.get("film"):
+                c = fr[min(n - 1, i)].astype(np.float32) / 255; hold = 0           # el video corre desde el cuadro 0 (se ve a través del fundido)
             else:
                 k = min(n - 1, int(((max(0, t - HOLD) * FPS) // 2) * 2 * 30 / FPS)); hold = max(0, (t - HOLD) - (n - 1) / 30)
                 c = fr[k].astype(np.float32) / 255
@@ -406,6 +434,10 @@ if __name__ == "__main__":
              **{n: getattr(comp6, "r_" + n) for n in ("tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia")},
              **{n: getattr(comp9, "r_" + n) for n in ("trazo", "viscosidad", "bolilla", "presion", "capilar", "altura")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
             p.stdin.close(); p.wait()
+        elif k == "mapa3d":
+            import mapa3d; p = writer()                                  # tgbiro 2ª pasada: mapa 3D tallado con geografía real
+            mapa3d.r_mapa3d(sh, sid, DUR, lambda im: put(p, im))
+            p.stdin.close(); p.wait()
         elif k in ("mapamad", "perfilmad"):
             import compmad; p = writer()                                 # Caja Naranja con el look del Tallador (madera + stop-motion)
             __import__("compmad2" if os.environ.get("TGP_LOOK") == "madera" else "compmad").__dict__["r_" + k](sh, sid, DUR, lambda im: put(p, im))
@@ -419,5 +451,5 @@ if __name__ == "__main__":
             getattr(comp7, "r_" + ("capitulo" if k == "capitulo7" else k))(sh, sid, DUR, lambda im: put(p, im))
             p.stdin.close(); p.wait()
         else:
-            {"clip": r_clip, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()
+            {"clip": r_clip, "film": r_film, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()
     print("ok", sid, k, N, "cuadros")
