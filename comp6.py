@@ -532,7 +532,7 @@ def r_regla(sh, sid, DUR, put):
             cv2.line(L, (int(tx * W), int(ty * H - dl)), (int(tx * W), int(ty * H + dl)), 1.0, max(1, int(3 * S)), cv2.LINE_AA)
         shd = cv2.GaussianBlur(np.roll(L, (int(4 * S), int(4 * S)), (0, 1)), (0, 0), 3 * S)
         img = img * (1 - shd[..., None] * 0.5); img = img * (1 - L[..., None]) + col * L[..., None]
-        m = int(round(total * f)); T = text_rgba(W, H, f"{m} m", "AN", 120 if f < 1 else 150, (min(0.84, max(0.16, hx)), hy - 0.09), (250, 246, 236), 0.02)
+        m = int(round(total * f)); T = text_rgba(W, H, f"{m} {sh.get('unidad', 'm')}", "AN", 120 if f < 1 else 150, (min(0.84, max(0.16, hx)), hy - 0.09), (250, 246, 236), 0.02)
         T[..., 3] *= ramp(t, t0, t0 + 0.3); img = img * (1 - cv2.GaussianBlur(T[..., 3], (0, 0), 10 * S)[..., None] * 0.6); img = over(img, T)
         if sh.get("sub") and f >= 1:
             T2 = text_rgba(W, H, sh["sub"], "SC", 40, (0.5, 0.88), (240, 232, 212), 0.1); T2[..., 3] *= ramp(t, t1 + 0.1, t1 + 0.6); img = over(img, T2)

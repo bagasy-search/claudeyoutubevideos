@@ -16,6 +16,8 @@ sid, DUR = sys.argv[1], float(sys.argv[2]); sh = SHOTS.get(sid, {"kind": "graf",
 if os.path.exists(f"{M}/planos.json"):                     # marcas por palabra (wk) que resolvió timeline.py
     for _p in json.load(open(f"{M}/planos.json")):
         if _p["id"] == sid and _p.get("wk"): sh["wk"] = _p["wk"]
+        if _p["id"] == sid and "rotulo" in sh: sh.pop("rotulo")   # el rótulo lo reparte timeline.py ("rot"), con duración propia
+        if _p["id"] == sid and _p.get("rot"): sh["rot"] = _p["rot"]
 N = max(1, int(round(DUR * FPS)))
 rng = np.random.default_rng(abs(hash(sid)) % 2**32)
 os.makedirs(f"{M}/planos", exist_ok=True)
@@ -41,17 +43,29 @@ def _wood(w, h, seed=3):
     base *= (0.85 + 0.15 * (1 - np.abs(yy - 0.5) * 2))[..., None]
     return base.astype(np.float32)
 def _plaque(name, role):
-    w, h = int(760 * S), int(150 * S); im = Image.new("RGBA", (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    fN = ImageFont.truetype(F_PF, int(50 * S)); fR = ImageFont.truetype(F_SC, int(30 * S))
-    tw = max(d.textlength(name, font=fN), d.textlength(role, font=fR)); w = int(tw + 90 * S)
-    wood = _wood(w, h); a = np.ones((h, w), np.float32)
+    # placa de arce CLARO con letras quemadas a fuego (contraste alto: la de nogal oscuro con letras hundidas no se leía)
+    fN = ImageFont.truetype(F_PF, int(54 * S)); fR = ImageFont.truetype(F_SC, int(31 * S)); role = role.upper()
+    d = ImageDraw.Draw(Image.new("L", (8, 8))); sp = 3 * S
+    rw = sum(d.textlength(c, font=fR) + sp for c in role)
+    w = int(max(d.textlength(name, font=fN), rw) + 104 * S); h = int(168 * S)
+    wood = _wood(h, w, seed=5).transpose(1, 0, 2); wood = 0.50 + (wood - wood.mean()) * 0.55                      # arce: claro, veta suave
+    wood = np.clip(wood * np.array([1.36, 1.22, 1.02]) + np.array([0.10, 0.09, 0.06]), 0, 1).astype(np.float32)
+    msk = Image.new("L", (w, h), 0); ImageDraw.Draw(msk).rounded_rectangle([0, 0, w - 1, h - 1], int(16 * S), fill=255)
+    a = cv2.GaussianBlur(np.asarray(msk).astype(np.float32) / 255, (0, 0), 0.8 * S)
+    grv = Image.new("L", (w, h), 0); ImageDraw.Draw(grv).rounded_rectangle([int(12 * S)] * 2 + [w - int(13 * S), h - int(13 * S)], int(10 * S), outline=255, width=max(1, int(2 * S)))
     txt = Image.new("L", (w, h), 0); dt = ImageDraw.Draw(txt)
-    dt.text((44 * S, 22 * S), name, font=fN, fill=255); dt.text((46 * S, 88 * S), role, font=fR, fill=255)
-    T = np.asarray(txt).astype(np.float32) / 255
-    sh_ = np.roll(T, (int(2 * S), int(2 * S)), (0, 1)); hi = np.roll(T, (-int(1 * S), -int(1 * S)), (0, 1))
-    rgb = wood * (1 - T[..., None] * 0.62) + (hi * (1 - T))[..., None] * 0.18 - (sh_ * (1 - T))[..., None] * 0.0
-    rgb[:int(3 * S)] *= 1.25; rgb[-int(4 * S):] *= 0.55; rgb[:, :int(3 * S)] *= 1.2; rgb[:, -int(4 * S):] *= 0.6        # canto biselado
-    return np.dstack([np.clip(rgb, 0, 1), a])
+    dt.text((52 * S, 26 * S), name, font=fN, fill=255)
+    dt.line([(54 * S, 98 * S), (54 * S + min(rw, 220 * S), 98 * S)], fill=150, width=max(1, int(2 * S)))
+    x = 54 * S
+    for c in role: dt.text((x, 110 * S), c, font=fR, fill=255); x += d.textlength(c, font=fR) + sp
+    T = np.maximum(np.asarray(txt), np.asarray(grv) * 0.55).astype(np.float32) / 255
+    halo = cv2.GaussianBlur(T, (0, 0), 2.2 * S)                                                  # chamuscado alrededor de la letra
+    lip = np.clip(np.roll(T, (int(2 * S), int(2 * S)), (0, 1)) - T, 0, 1)                       # canto de luz del surco
+    burn = np.array([0.13, 0.075, 0.04], np.float32)
+    rgb = wood * (1 - 0.35 * halo[..., None]) ; rgb = rgb * (1 - T[..., None]) + burn * T[..., None] + lip[..., None] * 0.22
+    yy = np.linspace(0, 1, h)[:, None, None]; rgb = rgb * (1.08 - 0.16 * yy)                    # luz de arriba
+    e = cv2.GaussianBlur(1 - a, (0, 0), 4 * S)[..., None]; rgb = rgb * (1 - 0.55 * e)            # canto redondeado
+    return np.dstack([np.clip(rgb, 0, 1), a]).astype(np.float32)
 CLAY = os.environ.get("TGP_LOOK") in ("clay", "madera")       # canal Caja Naranja: superposiciones limpias (comp7) · madera: compmad_ov
 def overlays(img, t):
     if CLAY:
@@ -66,16 +80,18 @@ def overlays(img, t):
         if sh.get("v8"):
             import comp8; return comp8.overlays(img, t, sh, DUR)
         return comp7.overlays(img, t, sh, DUR)
-    if sh.get("rotulo"):
-        if "rot" not in _OV: _OV["rot"] = _plaque(*sh["rotulo"])
-        P = _OV["rot"]; ph, pw = P.shape[:2]; k = ramp(t, 0.35, 0.95) * (1 - ramp(t, DUR - 0.7, DUR - 0.15))
+    if sh.get("rotulo") and not sh.get("rot"): sh["rot"] = [*sh["rotulo"], 0.0, max(DUR, 3.6)]   # sin planos.json (previa suelta)
+    if sh.get("rot"):
+        if "rot" not in _OV: _OV["rot"] = _plaque(sh["rot"][0], sh["rot"][1])
+        P = _OV["rot"]; ph, pw = P.shape[:2]; ta, TOT = t + sh["rot"][2], sh["rot"][3]
+        kin, kout = ramp(ta, 0.25, 0.85), 1 - ramp(ta, TOT - 0.55, TOT - 0.05); k = min(kin, kout)
         if k > 0:
-            x0 = int(70 * S - (1 - k) * (pw + 80 * S)); y0 = int(H - ph - 70 * S)
+            x0 = int(64 * S - (1 - kin) * (pw + 80 * S)); y0 = int(H - ph - 64 * S)
             L = np.zeros((H, W, 4), np.float32); xs, xe = max(0, x0), min(W, x0 + pw)
             if xe > xs:
                 L[y0:y0 + ph, xs:xe] = P[:, xs - x0:xe - x0]
                 shd = cv2.GaussianBlur(L[..., 3], (0, 0), 10 * S); shd = np.roll(shd, (int(8 * S), int(6 * S)), (0, 1))
-                img = img * (1 - shd[..., None] * 0.55 * k); L[..., 3] *= k; img = over(img, L)
+                img = img * (1 - shd[..., None] * 0.6 * k); L[..., 3] *= kout; img = over(img, L)
     if sh.get("pulso"):                                         # esfigmógrafo de 1914: trazo blanco rayado sobre papel ahumado, el pulso de Tomás
         bpm = sh["pulso"]; bh = int(86 * S); y0 = H - bh - int(26 * S); a_ = ramp(t, 0.15, 0.5)
         if "pz" not in _OV:
@@ -423,8 +439,8 @@ if __name__ == "__main__":
     if k == "graf":
         import graf; graf.render(sh, DUR, OUT, PREV)
     else:
-        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom", "reloj", "gota", "split", "tipos", "potencias", "cables", "fotomaqueta", "eras", "revela", "lamina_ov", "tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia", "trazo", "viscosidad", "bolilla", "presion", "capilar", "altura"):
-            import comp, comp2, comp3, comp4, comp5, comp6, comp9; p = writer()
+        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom", "reloj", "gota", "split", "tipos", "potencias", "cables", "fotomaqueta", "eras", "revela", "lamina_ov", "tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia", "trazo", "viscosidad", "bolilla", "presion", "capilar", "altura", "olla", "columpio", "direccion", "cambios", "carburador", "freno", "vasos", "pava", "onda", "latas", "microfono", "vinilo", "toalla", "horas"):
+            import comp, comp2, comp3, comp4, comp5, comp6, comp9, comp10, comp11; p = writer()
             {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse, "doc3d": comp2.r_doc3d, "mapamesa": comp2.r_mapamesa,
              "retrato": comp2.r_retrato, "match": comp2.r_match, "rail": comp2.r_rail, "persiana": comp2.r_persiana, "periodico": comp2.r_periodico,
              "balanza": comp2.r_balanza, "particulas": comp2.r_particulas, "fotolupa": comp3.r_fotolupa, "flujo": comp3.r_flujo, "capitulo": comp4.r_capitulo, "microscopio": comp4.r_microscopio,
@@ -432,7 +448,9 @@ if __name__ == "__main__":
              "reloj": comp5.r_reloj, "gota": comp5.r_gota, "split": comp5.r_split, "tipos": comp5.r_tipos, "potencias": comp5.r_potencias, "cables": comp5.r_cables,
              "fotomaqueta": comp5.r_fotomaqueta, "eras": comp5.r_eras, "revela": comp5.r_revela, "lamina_ov": comp5.r_lamina_ov,
              **{n: getattr(comp6, "r_" + n) for n in ("tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia")},
-             **{n: getattr(comp9, "r_" + n) for n in ("trazo", "viscosidad", "bolilla", "presion", "capilar", "altura")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
+             **{n: getattr(comp9, "r_" + n) for n in ("trazo", "viscosidad", "bolilla", "presion", "capilar", "altura")},
+             **{n: getattr(comp10, "r_" + n) for n in ("olla", "columpio", "direccion", "cambios", "carburador", "freno", "vasos", "pava")},
+             **{n: getattr(comp11, "r_" + n) for n in ("onda", "latas", "microfono", "vinilo", "toalla", "horas")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
             p.stdin.close(); p.wait()
         elif k == "mapa3d":
             import mapa3d; p = writer()                                  # tgbiro 2ª pasada: mapa 3D tallado con geografía real

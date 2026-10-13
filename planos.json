@@ -3,4640 +3,6582 @@
   "id": "apertura",
   "kind": "open",
   "t0": 0.0,
-  "dur": 0.86,
+  "dur": 2.0,
   "at": "0",
   "exacto": true
  },
  {
-  "id": "h_splat",
+  "id": "h_halifax",
   "kind": "film",
-  "t0": 0.86,
-  "dur": 0.86,
+  "t0": 2.0,
+  "dur": 2.0,
   "at": "1.0",
   "exacto": true
  },
  {
-  "id": "h_vela",
+  "id": "h_bomberos",
   "kind": "film",
-  "t0": 1.72,
-  "dur": 1.08,
-  "at": "1.0@escribir fue",
-  "exacto": true
+  "t0": 4.0,
+  "dur": 2.0,
+  "at": "1.0@a la velocidad de un caballo",
+  "exacto": true,
+  "rot": [
+   "Bomberos a caballo",
+   "1901 \u00b7 archivo filmado",
+   0.0,
+   3.6
+  ]
  },
  {
-  "id": "h_tintero",
+  "id": "h_camino",
   "kind": "film",
-  "t0": 2.8,
-  "dur": 1.16,
-  "at": "1.0@contra la tinta",
-  "exacto": true
- },
- {
-  "id": "h_moja",
-  "kind": "film",
-  "t0": 3.96,
-  "dur": 1.4,
+  "t0": 6.0,
+  "dur": 3.02,
   "at": "1.1",
+  "exacto": true,
+  "rot": [
+   "Bomberos a caballo",
+   "1901 \u00b7 archivo filmado",
+   2.0,
+   3.6
+  ]
+ },
+ {
+  "id": "h_carruaje",
+  "kind": "film",
+  "t0": 9.02,
+  "dur": 1.02,
+  "at": "1.1@con suerte",
   "exacto": true
  },
  {
-  "id": "h_plumin",
-  "kind": "film",
-  "t0": 5.36,
-  "dur": 1.0,
-  "at": "1.1@escrib\u00edas",
+  "id": "h_barro",
+  "kind": "depth2",
+  "t0": 10.04,
+  "dur": 4.04,
+  "at": "1.1@con lluvia",
   "exacto": true
  },
  {
-  "id": "h_remoja",
+  "id": "h_manchester",
   "kind": "film",
-  "t0": 6.36,
-  "dur": 2.22,
-  "at": "1.1@y otra vez",
-  "exacto": true
- },
- {
-  "id": "h_bnplumin",
-  "kind": "film",
-  "t0": 8.58,
-  "dur": 1.62,
+  "t0": 14.08,
+  "dur": 2.18,
   "at": "1.2",
+  "exacto": true,
+  "rot": [
+   "Manchester",
+   "1901 \u00b7 la calle a caballo",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "h_manch2",
+  "kind": "film",
+  "t0": 16.26,
+  "dur": 1.64,
+  "at": "1.2@solo en londres",
+  "exacto": true,
+  "rot": [
+   "Manchester",
+   "1901 \u00b7 la calle a caballo",
+   2.18,
+   3.6
+  ]
+ },
+ {
+  "id": "h_300mil",
+  "kind": "depth2",
+  "t0": 17.9,
+  "dur": 2.84,
+  "at": "1.2@trescientos mil caballos",
   "exacto": true
  },
  {
-  "id": "h_mano",
-  "kind": "film",
-  "t0": 10.2,
-  "dur": 2.64,
-  "at": "1.2@un roce",
+  "id": "h_10kg",
+  "kind": "depth2",
+  "t0": 20.74,
+  "dur": 1.84,
+  "at": "1.2@unos diez kilos",
   "exacto": true
  },
  {
-  "id": "h_gotas",
-  "kind": "film",
-  "t0": 12.84,
-  "dur": 2.74,
+  "id": "h_caballo_cae",
+  "kind": "depth2",
+  "t0": 22.58,
+  "dur": 1.72,
   "at": "1.3",
   "exacto": true
  },
  {
-  "id": "h_mancha",
-  "kind": "film",
-  "t0": 15.58,
-  "dur": 1.9,
-  "at": "1.3@la mancha",
+  "id": "h_pata",
+  "kind": "depth2",
+  "t0": 24.3,
+  "dur": 3.52,
+  "at": "1.3@se quebraba una pata",
   "exacto": true
  },
  {
-  "id": "h_zurdo",
+  "id": "h_apie",
   "kind": "depth2",
-  "t0": 17.48,
-  "dur": 2.34,
+  "t0": 27.82,
+  "dur": 2.08,
+  "at": "1.3@te quedabas ah\u00ed",
+  "exacto": true
+ },
+ {
+  "id": "h_sf",
+  "kind": "film",
+  "t0": 29.9,
+  "dur": 1.62,
   "at": "1.4",
-  "exacto": true
+  "exacto": true,
+  "rot": [
+   "San Francisco",
+   "1906 \u00b7 Market Street",
+   0.0,
+   3.6
+  ]
  },
  {
-  "id": "h_avion",
+  "id": "h_halifax_b",
   "kind": "film",
-  "t0": 19.82,
-  "dur": 1.64,
-  "at": "1.4@los pilotos",
-  "exacto": true
+  "t0": 31.52,
+  "dur": 1.52,
+  "at": "1.4@desde hac\u00eda miles de a\u00f1os",
+  "exacto": true,
+  "rot": [
+   "San Francisco",
+   "1906 \u00b7 Market Street",
+   1.62,
+   3.6
+  ]
  },
  {
-  "id": "h_navmancha",
+  "id": "h_manch_a",
+  "kind": "film",
+  "t0": 33.04,
+  "dur": 3.66,
+  "at": "1.4@y nadie imaginaba",
+  "exacto": true,
+  "rot": [
+   "San Francisco",
+   "1906 \u00b7 Market Street",
+   3.14,
+   3.6
+  ]
+ },
+ {
+  "id": "h_porton",
   "kind": "depth2",
-  "t0": 21.46,
-  "dur": 2.94,
-  "at": "1.4@con los mapas",
-  "exacto": true
- },
- {
-  "id": "h_escribe46",
-  "kind": "film",
-  "t0": 24.4,
-  "dur": 1.9,
+  "t0": 36.7,
+  "dur": 3.14,
   "at": "1.5",
   "exacto": true
  },
  {
-  "id": "h_redaccion",
-  "kind": "film",
-  "t0": 26.3,
-  "dur": 1.16,
-  "at": "1.5@con el mismo problema",
-  "exacto": true
- },
- {
-  "id": "h_escritorio",
-  "kind": "film",
-  "t0": 27.46,
-  "dur": 1.82,
-  "at": "1.5@desde hac\u00eda siglos",
-  "exacto": true
- },
- {
-  "id": "h_biro_idea",
+  "id": "h_porton2",
   "kind": "depth2",
-  "t0": 29.28,
-  "dur": 3.7,
+  "t0": 39.84,
+  "dur": 0.96,
+  "at": "1.5@el port\u00f3n de un taller",
+  "exacto": true
+ },
+ {
+  "id": "h_empuja",
+  "kind": "depth2",
+  "t0": 40.8,
+  "dur": 2.0,
   "at": "1.6",
   "exacto": true
  },
  {
-  "id": "h_birome",
-  "kind": "film",
-  "t0": 32.98,
-  "dur": 3.172,
-  "at": "1.6@una bolita de metal",
+  "id": "h_ventana",
+  "kind": "depth2",
+  "t0": 42.8,
+  "dur": 2.74,
+  "at": "1.6@que su propio marido",
   "exacto": true
  },
  {
-  "id": "m_ba_oro",
+  "id": "m_mannheim",
   "kind": "mapa3d",
-  "t0": 36.152,
-  "dur": 3.84,
+  "t0": 45.54,
+  "dur": 4.98,
   "at": "1.7",
   "exacto": true
  },
  {
-  "id": "t_garaje",
+  "id": "h_farol",
   "kind": "depth2",
-  "t0": 39.992,
-  "dur": 1.82,
-  "at": "1.7@un garaje convertido",
+  "t0": 50.52,
+  "dur": 1.0,
+  "at": "1.7@todav\u00eda es de noche",
   "exacto": true
  },
  {
-  "id": "a_ba_40_o",
+  "id": "h_bertha",
   "kind": "depth2",
-  "t0": 41.812,
-  "dur": 1.26,
-  "at": "1.7@en la calle oro",
-  "exacto": true
- },
- {
-  "id": "t_rayas",
-  "kind": "depth2",
-  "t0": 43.072,
-  "dur": 3.64,
+  "t0": 51.52,
+  "dur": 2.4,
   "at": "1.8",
+  "exacto": true,
+  "rot": [
+   "Bertha Benz",
+   "39 a\u00f1os \u00b7 Mannheim",
+   0.0,
+   2.4
+  ]
+ },
+ {
+  "id": "a_moda_1888_dos_damas_o",
+  "kind": "depth2",
+  "t0": 53.92,
+  "dur": 1.92,
+  "at": "1.8@con vestido largo",
+  "exacto": true,
+  "rot_off": 1.92
+ },
+ {
+  "id": "h_rueda",
+  "kind": "depth2",
+  "t0": 55.84,
+  "dur": 3.78,
+  "at": "1.8@empuja un carro",
   "exacto": true
  },
  {
-  "id": "o_hoja_rayas",
+  "id": "h_chicos",
   "kind": "depth2",
-  "t0": 46.712,
-  "dur": 2.7,
-  "at": "1.8@rayas que no dejaron nada",
+  "t0": 59.62,
+  "dur": 4.24,
+  "at": "1.8@la ayudan dos chicos",
   "exacto": true
  },
  {
-  "id": "t_tubito",
+  "id": "h_ventana2",
   "kind": "depth2",
-  "t0": 49.412,
-  "dur": 3.1,
-  "at": "1.8@un tubito de metal",
-  "exacto": true
- },
- {
-  "id": "b43_toma",
-  "kind": "depth2",
-  "t0": 52.512,
-  "dur": 4.08,
+  "t0": 63.86,
+  "dur": 4.7,
   "at": "1.9",
   "exacto": true
  },
  {
-  "id": "b43_tubito",
+  "id": "h_calle",
   "kind": "depth2",
-  "t0": 56.592,
-  "dur": 1.24,
-  "at": "1.9@toma el tubito",
+  "t0": 68.56,
+  "dur": 3.46,
+  "at": "1.9@lo empujan hasta la calle",
   "exacto": true
  },
  {
-  "id": "b43_arrastra",
+  "id": "h_sin_techo",
   "kind": "depth2",
-  "t0": 57.832,
-  "dur": 3.12,
-  "at": "1.9@lo apoya sobre el papel",
-  "exacto": true
- },
- {
-  "id": "trazo0",
-  "kind": "trazo",
-  "t0": 60.952,
-  "dur": 1.98,
+  "t0": 72.02,
+  "dur": 3.0,
   "at": "1.10",
   "exacto": true
  },
  {
-  "id": "b43_cara",
+  "id": "h_freno",
   "kind": "depth2",
-  "t0": 62.932,
-  "dur": 3.82,
-  "at": "1.10@y no sale nada",
+  "t0": 75.02,
+  "dur": 6.0,
+  "at": "1.10@casi no tiene frenos",
   "exacto": true
  },
  {
-  "id": "m_viaje",
-  "kind": "mapa3d",
-  "t0": 66.752,
-  "dur": 7.2,
-  "at": "1.11@lo intent\u00f3 en budapest",
-  "exacto": true
- },
- {
-  "id": "h_tropas",
-  "kind": "film",
-  "t0": 73.952,
-  "dur": 2.16,
-  "at": "1.11@despu\u00e9s de huir de una guerra",
-  "exacto": true
- },
- {
-  "id": "o_billetes",
+  "id": "h_100km",
   "kind": "depth2",
-  "t0": 76.112,
-  "dur": 2.22,
+  "t0": 81.02,
+  "dur": 1.86,
+  "at": "1.10@a m\u00e1s de cien",
+  "exacto": true
+ },
+ {
+  "id": "h_sin_estacion",
+  "kind": "depth2",
+  "t0": 82.88,
+  "dur": 5.92,
+  "at": "1.11",
+  "exacto": true
+ },
+ {
+  "id": "h_tierra",
+  "kind": "depth2",
+  "t0": 88.8,
+  "dur": 2.34,
+  "at": "1.11@en ning\u00fan lugar del planeta",
+  "exacto": true
+ },
+ {
+  "id": "h_frasco",
+  "kind": "depth2",
+  "t0": 91.14,
+  "dur": 3.32,
   "at": "1.12",
   "exacto": true
  },
  {
-  "id": "a_ba_lavalle_o",
-  "kind": "depth2",
-  "t0": 78.332,
-  "dur": 1.22,
-  "at": "1.12@los que pusieron el dinero",
+  "id": "h_herrero",
+  "kind": "film",
+  "t0": 94.46,
+  "dur": 0.86,
+  "at": "1.12@un herrero",
   "exacto": true
  },
  {
-  "id": "p_financistas",
-  "kind": "depth2",
-  "t0": 79.552,
-  "dur": 4.68,
-  "at": "1.12@ya preguntan cu\u00e1ndo",
+  "id": "h_zapatero",
+  "kind": "film",
+  "t0": 95.32,
+  "dur": 1.06,
+  "at": "1.12@un zapatero",
   "exacto": true
  },
  {
-  "id": "a_gimbels_o",
+  "id": "h_alfiler",
   "kind": "depth2",
-  "t0": 84.232,
-  "dur": 1.46,
+  "t0": 96.38,
+  "dur": 1.1,
+  "at": "1.12@un alfiler de sombrero",
+  "exacto": true
+ },
+ {
+  "id": "h_liga",
+  "kind": "depth2",
+  "t0": 97.48,
+  "dur": 2.42,
+  "at": "1.12@y una liga",
+  "exacto": true
+ },
+ {
+  "id": "h_telegrama",
+  "kind": "depth2",
+  "t0": 99.9,
+  "dur": 6.4,
   "at": "1.13",
   "exacto": true
  },
  {
-  "id": "a_gimbels_bridge_o0",
-  "kind": "proyector",
-  "t0": 85.692,
+  "id": "h_telegrama2",
+  "kind": "depth2",
+  "t0": 106.3,
+  "dur": 1.4,
+  "at": "1.13@salv\u00f3 al autom\u00f3vil",
+  "exacto": true
+ },
+ {
+  "id": "h_trafico",
+  "kind": "film",
+  "t0": 107.7,
   "dur": 1.46,
-  "at": "1.13@dos a\u00f1os despu\u00e9s",
-  "exacto": true
- },
- {
-  "id": "p_policias",
-  "kind": "depth2",
-  "t0": 87.152,
-  "dur": 2.08,
-  "at": "1.13@cincuenta polic\u00edas",
-  "exacto": true
- },
- {
-  "id": "a_ny_vj_o",
-  "kind": "depth2",
-  "t0": 89.232,
-  "dur": 3.96,
-  "at": "1.13@a la gente que quer\u00eda comprar",
-  "exacto": true
- },
- {
-  "id": "o_rocket",
-  "kind": "depth2",
-  "t0": 93.192,
-  "dur": 1.56,
-  "at": "1.13@no era el suyo",
-  "exacto": true
- },
- {
-  "id": "o_bic_lluvia",
-  "kind": "depth2",
-  "t0": 94.752,
-  "dur": 4.34,
   "at": "1.14",
   "exacto": true
  },
  {
-  "id": "cifra_cienmil",
-  "kind": "tipos",
-  "t0": 99.092,
-  "dur": 1.26,
-  "at": "1.14@cien mil millones",
-  "exacto": true
- },
- {
-  "id": "b80_ventana",
+  "id": "h_1500m",
   "kind": "depth2",
-  "t0": 100.352,
-  "dur": 2.6,
-  "at": "1.14@y no fue \u00e9l",
+  "t0": 109.16,
+  "dur": 3.32,
+  "at": "1.14@mil quinientos millones",
   "exacto": true
  },
  {
-  "id": "o_cajon",
+  "id": "h_hoy",
   "kind": "depth2",
-  "t0": 102.952,
-  "dur": 3.38,
-  "at": "1.15",
+  "t0": 112.48,
+  "dur": 1.66,
+  "at": "1.14@te subiste a uno",
   "exacto": true
  },
  {
-  "id": "a_bp_macro_o",
+  "id": "h_figura",
   "kind": "depth2",
-  "t0": 106.332,
-  "dur": 1.06,
-  "at": "1.15@en un caj\u00f3n",
+  "t0": 114.14,
+  "dur": 5.694,
+  "at": "1.14@casi nadie conoce",
   "exacto": true
  },
  {
-  "id": "o_mochila",
+  "id": "t_manos",
   "kind": "depth2",
-  "t0": 107.392,
-  "dur": 2.64,
-  "at": "1.15@en una mochila",
+  "t0": 119.834,
+  "dur": 3.926,
+  "at": "2",
   "exacto": true
  },
  {
-  "id": "o_apellido",
+  "id": "t_banco",
   "kind": "depth2",
-  "t0": 110.032,
-  "dur": 2.62,
-  "at": "1.15@en algunos pa\u00edses",
-  "exacto": true
- },
- {
-  "id": "lupa_biro0",
-  "kind": "fotolupa",
-  "t0": 112.652,
-  "dur": 5.0,
-  "at": "1.15@de este hombre",
-  "exacto": true
- },
- {
-  "id": "t01_tallador",
-  "kind": "depth2",
-  "t0": 117.652,
-  "dur": 1.96,
+  "t0": 123.76,
+  "dur": 5.42,
   "at": "3.0",
-  "exacto": true
- },
- {
-  "id": "a_biro_1978_ab",
-  "kind": "depth2",
-  "t0": 119.612,
-  "dur": 4.24,
-  "at": "3.0@aqu\u00ed tallamos en madera",
   "exacto": true
  },
  {
   "id": "t_estante",
   "kind": "depth2",
-  "t0": 123.852,
-  "dur": 5.2,
+  "t0": 129.18,
+  "dur": 4.36,
   "at": "3.0@si te gustan",
   "exacto": true
  },
  {
-  "id": "trazo_0b",
-  "kind": "trazo",
-  "t0": 129.052,
-  "dur": 2.023,
-  "at": "3.0@est\u00e1 a punto de girar",
+  "id": "t_telegrama",
+  "kind": "depth2",
+  "t0": 133.54,
+  "dur": 2.779,
+  "at": "3.0@ese telegrama",
   "exacto": true
  },
  {
   "id": "cap1",
   "kind": "capitulo",
-  "t0": 131.075,
-  "dur": 2.877,
+  "t0": 136.319,
+  "dur": 2.861,
   "at": "4",
   "exacto": true
  },
  {
-  "id": "o_tinta_cae",
+  "id": "c_mesa",
   "kind": "depth2",
-  "t0": 133.952,
-  "dur": 4.74,
+  "t0": 139.18,
+  "dur": 5.36,
   "at": "5.0",
   "exacto": true
  },
  {
-  "id": "a_quill_ink_o",
-  "kind": "depth2",
-  "t0": 138.692,
-  "dur": 1.96,
-  "at": "5.0@c\u00f3mo escrib\u00eda la gente",
-  "exacto": true
- },
- {
-  "id": "o_pluma_ave",
-  "kind": "depth2",
-  "t0": 140.652,
-  "dur": 4.76,
+  "id": "c_tren",
+  "kind": "film",
+  "t0": 144.54,
+  "dur": 1.44,
   "at": "5.1",
   "exacto": true
  },
  {
-  "id": "p_navaja",
+  "id": "a_mannheim_tranvia_caballos_o",
   "kind": "depth2",
-  "t0": 145.412,
-  "dur": 1.92,
-  "at": "5.1@se cortaba la punta",
+  "t0": 145.98,
+  "dur": 7.36,
+  "at": "5.1@ya exist\u00edan los trenes",
+  "exacto": true,
+  "rot": [
+   "Mannheim",
+   "tranv\u00eda a caballo \u00b7 hacia 1895",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "c_vias",
+  "kind": "depth2",
+  "t0": 153.34,
+  "dur": 2.36,
+  "at": "5.1@solo iban adonde iban las v\u00edas",
   "exacto": true
  },
  {
-  "id": "p_moja",
+  "id": "c_pueblo_sin",
   "kind": "depth2",
-  "t0": 147.332,
-  "dur": 4.04,
-  "at": "5.1@se mojaba en el tintero",
-  "exacto": true
- },
- {
-  "id": "p_escribe_pluma",
-  "kind": "depth2",
-  "t0": 151.372,
-  "dur": 1.58,
+  "t0": 155.7,
+  "dur": 6.48,
   "at": "5.2",
   "exacto": true
  },
  {
-  "id": "cnt_moja",
-  "kind": "tipos",
-  "t0": 152.952,
-  "dur": 3.66,
-  "at": "5.2@mojabas",
+  "id": "c_carro_campo",
+  "kind": "depth2",
+  "t0": 162.18,
+  "dur": 1.88,
+  "at": "5.2@otra vez caballo",
   "exacto": true
  },
  {
-  "id": "o_tintero",
-  "kind": "depth2",
-  "t0": 156.612,
-  "dur": 4.26,
-  "at": "5.2@y la punta se gastaba",
-  "exacto": true
- },
- {
-  "id": "a_off_quill_o",
-  "kind": "depth2",
-  "t0": 160.872,
-  "dur": 3.08,
+  "id": "c_carruaje_f",
+  "kind": "film",
+  "t0": 164.06,
+  "dur": 4.68,
   "at": "5.3",
   "exacto": true
  },
  {
-  "id": "o_plumillas",
+  "id": "c_diligencia",
   "kind": "depth2",
-  "t0": 163.952,
-  "dur": 3.08,
-  "at": "5.3@en birmingham",
+  "t0": 168.74,
+  "dur": 4.02,
+  "at": "5.3@la diligencia",
   "exacto": true
  },
  {
-  "id": "o_plumillas_caja",
+  "id": "c_posta",
   "kind": "depth2",
-  "t0": 167.032,
-  "dur": 2.44,
-  "at": "5.3@por millones",
+  "t0": 172.76,
+  "dur": 2.1,
+  "at": "5.3@paraba en postas",
   "exacto": true
  },
  {
-  "id": "o_plumilla",
+  "id": "c_apretados",
   "kind": "depth2",
-  "t0": 169.472,
-  "dur": 2.7,
-  "at": "5.3@pero segu\u00edas teniendo",
-  "exacto": true
- },
- {
-  "id": "a_pat_waterman_o",
-  "kind": "depth2",
-  "t0": 172.172,
-  "dur": 4.52,
+  "t0": 174.86,
+  "dur": 2.16,
   "at": "5.4",
   "exacto": true
  },
  {
-  "id": "lupa_waterman",
-  "kind": "fotolupa",
-  "t0": 176.692,
-  "dur": 6.66,
-  "at": "5.4@lewis waterman",
-  "exacto": true
- },
- {
-  "id": "f_fabrica20",
-  "kind": "film",
-  "t0": 183.352,
-  "dur": 1.42,
-  "at": "5.4@la pluma fuente",
-  "exacto": true
- },
- {
-  "id": "a_pelikan_kolben_o",
+  "id": "c_polvo",
   "kind": "depth2",
-  "t0": 184.772,
-  "dur": 1.42,
+  "t0": 177.02,
+  "dur": 2.7,
+  "at": "5.4@con el polvo",
+  "exacto": true
+ },
+ {
+  "id": "c_10kmh",
+  "kind": "depth2",
+  "t0": 179.72,
+  "dur": 3.0,
+  "at": "5.4@diez kil\u00f3metros por hora",
+  "exacto": true
+ },
+ {
+  "id": "c_caminan",
+  "kind": "depth2",
+  "t0": 182.72,
+  "dur": 4.92,
   "at": "5.5",
   "exacto": true
  },
  {
-  "id": "a_pelikan_100_o",
-  "kind": "proyector",
-  "t0": 186.192,
-  "dur": 5.8,
-  "at": "5.5@pero la pluma fuente",
+  "id": "c_aldea",
+  "kind": "depth2",
+  "t0": 187.64,
+  "dur": 4.92,
+  "at": "5.5@sin haberse alejado nunca",
   "exacto": true
  },
  {
-  "id": "o_gotea",
+  "id": "c_establo",
   "kind": "depth2",
-  "t0": 191.992,
-  "dur": 3.0,
+  "t0": 192.56,
+  "dur": 2.5,
   "at": "5.6",
   "exacto": true
  },
  {
-  "id": "p_bolsillo",
+  "id": "a_calle_caballos_worcester_1890_o",
   "kind": "depth2",
-  "t0": 194.992,
-  "dur": 4.56,
-  "at": "5.6@en el bolsillo de la camisa",
-  "exacto": true
+  "t0": 195.06,
+  "dur": 1.98,
+  "at": "5.6@tambi\u00e9n era un problema",
+  "exacto": true,
+  "rot_off": 1.98
  },
  {
-  "id": "f_carga",
-  "kind": "film",
-  "t0": 199.552,
-  "dur": 1.82,
-  "at": "5.6@y hab\u00eda que recargarla",
-  "exacto": true
- },
- {
-  "id": "o_frasco",
+  "id": "c_avena",
   "kind": "depth2",
-  "t0": 201.372,
-  "dur": 1.34,
-  "at": "5.6@con un frasquito",
-  "exacto": true
- },
- {
-  "id": "p_dedo_mancha",
-  "kind": "depth2",
-  "t0": 202.712,
-  "dur": 4.82,
+  "t0": 197.04,
+  "dur": 2.2,
   "at": "5.7",
   "exacto": true
  },
  {
-  "id": "p_manga",
-  "kind": "depth2",
-  "t0": 207.532,
-  "dur": 2.66,
-  "at": "5.7@o con la manga",
+  "id": "c_bomberos_f",
+  "kind": "film",
+  "t0": 199.24,
+  "dur": 3.16,
+  "at": "5.7@trabaje o no",
   "exacto": true
  },
  {
-  "id": "n_zurdo",
+  "id": "c_herrar",
   "kind": "depth2",
-  "t0": 210.192,
-  "dur": 3.78,
+  "t0": 202.4,
+  "dur": 2.12,
+  "at": "5.7@herraduras",
+  "exacto": true
+ },
+ {
+  "id": "c_cansado_f",
+  "kind": "film",
+  "t0": 204.52,
+  "dur": 2.74,
+  "at": "5.7@se cansa",
+  "exacto": true
+ },
+ {
+  "id": "a_calle_caballos_newOrleans_1890_o",
+  "kind": "depth2",
+  "t0": 207.26,
+  "dur": 3.4,
   "at": "5.8",
+  "exacto": true,
+  "rot": [
+   "Nueva Orleans",
+   "Canal Street \u00b7 d\u00e9cada de 1890",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "c_sf_b",
+  "kind": "film",
+  "t0": 210.66,
+  "dur": 1.82,
+  "at": "5.8@nueva york",
+  "exacto": true,
+  "rot": [
+   "Nueva Orleans",
+   "Canal Street \u00b7 d\u00e9cada de 1890",
+   3.4,
+   3.6
+  ]
+ },
+ {
+  "id": "c_sf_a2",
+  "kind": "film",
+  "t0": 212.48,
+  "dur": 3.1,
+  "at": "5.8@par\u00eds",
   "exacto": true
  },
  {
-  "id": "n_zurdo_macro",
+  "id": "c_moscas",
   "kind": "depth2",
-  "t0": 213.972,
-  "dur": 4.18,
-  "at": "5.8@y tu mano va pasando",
+  "t0": 215.58,
+  "dur": 2.3,
+  "at": "5.8@en verano",
   "exacto": true
  },
  {
-  "id": "n_zurdo_mano",
+  "id": "c_barro",
   "kind": "depth2",
-  "t0": 218.152,
-  "dur": 3.18,
+  "t0": 217.88,
+  "dur": 3.68,
+  "at": "5.8@en invierno",
+  "exacto": true
+ },
+ {
+  "id": "c_caballo_muerto",
+  "kind": "depth2",
+  "t0": 221.56,
+  "dur": 6.0,
   "at": "5.9",
   "exacto": true
  },
  {
-  "id": "o_pagina_manchas",
+  "id": "c_barrendero",
   "kind": "depth2",
-  "t0": 221.332,
-  "dur": 3.6,
-  "at": "5.9@y la p\u00e1gina termina llena de manchas",
-  "exacto": true
- },
- {
-  "id": "a_blotter_am_o",
-  "kind": "depth2",
-  "t0": 224.932,
-  "dur": 1.98,
+  "t0": 227.56,
+  "dur": 6.48,
   "at": "5.10",
   "exacto": true
  },
  {
-  "id": "a_blotter_roll_o",
-  "kind": "proyector",
-  "t0": 226.912,
-  "dur": 1.98,
-  "at": "5.10@por eso en todos",
-  "exacto": true
- },
- {
-  "id": "p_secante",
+  "id": "c_diario",
   "kind": "depth2",
-  "t0": 228.892,
-  "dur": 2.98,
-  "at": "5.10@un papel grueso",
-  "exacto": true
- },
- {
-  "id": "a_off_blotter_o",
-  "kind": "depth2",
-  "t0": 231.872,
-  "dur": 2.82,
-  "at": "5.10@para chupar la tinta",
-  "exacto": true
- },
- {
-  "id": "b32_zurdo",
-  "kind": "depth2",
-  "t0": 234.692,
-  "dur": 4.46,
+  "t0": 234.04,
+  "dur": 3.04,
   "at": "5.11",
   "exacto": true
  },
  {
-  "id": "b32_libreta",
+  "id": "a_calle_1890_yesler_o",
   "kind": "depth2",
-  "t0": 239.152,
-  "dur": 1.68,
-  "at": "5.11@r\u00e1pido, todos los d\u00edas",
+  "t0": 237.08,
+  "dur": 5.06,
+  "at": "5.11@si las ciudades segu\u00edan creciendo",
+  "exacto": true,
+  "rot": [
+   "Seattle",
+   "hacia 1890",
+   0.0,
+   5.06
+  ]
+ },
+ {
+  "id": "c_pisos",
+  "kind": "depth2",
+  "t0": 242.14,
+  "dur": 2.6,
+  "at": "5.11@a tapar los primeros pisos",
   "exacto": true
  },
  {
-  "id": "a_bp_hvolgy_o",
+  "id": "c_heno",
   "kind": "depth2",
-  "t0": 240.832,
-  "dur": 1.06,
-  "at": "5.11@a veces de pie",
-  "exacto": true
- },
- {
-  "id": "b32_calle",
-  "kind": "depth2",
-  "t0": 241.892,
-  "dur": 1.48,
-  "at": "5.11@a veces en la calle",
-  "exacto": true
- },
- {
-  "id": "o_fuente_seca",
-  "kind": "depth2",
-  "t0": 243.372,
-  "dur": 1.88,
+  "t0": 244.74,
+  "dur": 7.38,
   "at": "5.12",
   "exacto": true
  },
  {
-  "id": "a_pelikan_nib_o",
+  "id": "c_hectareas",
   "kind": "depth2",
-  "t0": 245.252,
-  "dur": 3.78,
-  "at": "5.12@de buena marca",
+  "t0": 252.12,
+  "dur": 1.52,
+  "at": "5.12@hect\u00e1reas y hect\u00e1reas",
   "exacto": true
  },
  {
-  "id": "b32_sacude",
+  "id": "a_tranvia_caballos_toronto_1890_o",
   "kind": "depth2",
-  "t0": 249.032,
-  "dur": 2.22,
-  "at": "5.12@justo cuando m\u00e1s",
-  "exacto": true
+  "t0": 253.64,
+  "dur": 2.54,
+  "at": "5.12@para mover a la gente",
+  "exacto": true,
+  "rot": [
+   "Toronto",
+   "tranv\u00eda de un caballo \u00b7 1890",
+   0.0,
+   2.54
+  ]
  },
  {
-  "id": "n_cocina",
-  "kind": "depth2",
-  "t0": 251.252,
-  "dur": 3.02,
+  "id": "a_bigwheelers_1887_o",
+  "kind": "proyector",
+  "t0": 256.18,
+  "dur": 4.0,
   "at": "5.13",
+  "exacto": false,
+  "rot": [
+   "Bicicletas de rueda alta",
+   "ilustraci\u00f3n de 1887",
+   0.0,
+   4.0
+  ]
+ },
+ {
+  "id": "a_penny_farthing_1885_o",
+  "kind": "copia",
+  "t0": 260.18,
+  "dur": 1.58,
+  "at": "5.13@de rueda gigante",
   "exacto": true
  },
  {
-  "id": "a_off_desk_o",
+  "id": "c_cae_bici",
   "kind": "depth2",
-  "t0": 254.272,
-  "dur": 2.66,
-  "at": "5.13@para entenderlo",
+  "t0": 261.76,
+  "dur": 3.92,
+  "at": "5.13@de las que uno se ca\u00eda",
   "exacto": true
  },
  {
-  "id": "n_pajita_agua",
+  "id": "a_bicicleta_dama_1887_o",
   "kind": "depth2",
-  "t0": 256.932,
-  "dur": 4.2,
+  "t0": 265.68,
+  "dur": 1.32,
+  "at": "5.13@con cadena",
+  "exacto": true,
+  "rot_off": 1.32
+ },
+ {
+  "id": "a_calle_1885_hartford_o",
+  "kind": "proyector",
+  "t0": 267.0,
+  "dur": 3.88,
+  "at": "5.13@eran una sensaci\u00f3n",
+  "exacto": true,
+  "rot": [
+   "Hartford",
+   "1885 \u00b7 bicicletas y carruajes",
+   0.0,
+   3.88
+  ]
+ },
+ {
+  "id": "c_familia_bici",
+  "kind": "depth2",
+  "t0": 270.88,
+  "dur": 1.7,
+  "at": "5.13@no se lleva una familia",
+  "exacto": true
+ },
+ {
+  "id": "c_inventor",
+  "kind": "depth2",
+  "t0": 272.58,
+  "dur": 8.5,
   "at": "5.14",
   "exacto": true
  },
  {
-  "id": "n_pajita_sube",
+  "id": "a_recon_1895_o",
   "kind": "depth2",
-  "t0": 261.132,
-  "dur": 1.74,
-  "at": "5.14@el agua sube y baja",
-  "exacto": true
- },
- {
-  "id": "visc1",
-  "kind": "viscosidad",
-  "t0": 262.872,
-  "dur": 1.66,
-  "at": "5.14@sin ning\u00fan esfuerzo",
-  "exacto": true
- },
- {
-  "id": "n_pajita_miel",
-  "kind": "depth2",
-  "t0": 264.532,
-  "dur": 4.94,
+  "t0": 281.08,
+  "dur": 6.3,
   "at": "5.15",
-  "exacto": true
+  "exacto": true,
+  "rot": [
+   "Los primeros intentos",
+   "carros sin caballos",
+   0.0,
+   6.3
+  ]
  },
  {
-  "id": "o_miel_macro",
+  "id": "c_cugnot",
   "kind": "depth2",
-  "t0": 269.472,
-  "dur": 1.86,
-  "at": "5.15@se queda pegada",
-  "exacto": true
+  "t0": 287.38,
+  "dur": 2.96,
+  "at": "5.15@nicolas cugnot",
+  "exacto": true,
+  "rot": [
+   "Nicolas Cugnot",
+   "carro de vapor \u00b7 1769",
+   0.0,
+   3.6
+  ]
  },
  {
-  "id": "visc2",
-  "kind": "viscosidad",
-  "t0": 271.332,
-  "dur": 3.36,
+  "id": "c_canon",
+  "kind": "depth2",
+  "t0": 290.34,
+  "dur": 2.18,
+  "at": "5.15@para arrastrar ca\u00f1ones",
+  "exacto": true,
+  "rot": [
+   "Nicolas Cugnot",
+   "carro de vapor \u00b7 1769",
+   2.96,
+   3.6
+  ]
+ },
+ {
+  "id": "c_cugnot_lento",
+  "kind": "depth2",
+  "t0": 292.52,
+  "dur": 4.32,
   "at": "5.16",
   "exacto": true
  },
  {
-  "id": "a_off_ham_o",
+  "id": "c_choque",
   "kind": "depth2",
-  "t0": 274.692,
-  "dur": 5.42,
-  "at": "5.16@la pluma fuente necesita",
+  "t0": 296.84,
+  "dur": 1.46,
+  "at": "5.16@choc\u00f3 contra una pared",
   "exacto": true
  },
  {
-  "id": "o_plumilla_canal",
+  "id": "c_vapor_ingles",
   "kind": "depth2",
-  "t0": 280.112,
-  "dur": 1.48,
-  "at": "5.16@por su canalito",
-  "exacto": true
- },
- {
-  "id": "o_tinta_corre",
-  "kind": "depth2",
-  "t0": 281.592,
-  "dur": 2.84,
+  "t0": 298.3,
+  "dur": 4.9,
   "at": "5.17",
   "exacto": true
  },
  {
-  "id": "o_tinta_humeda",
+  "id": "c_caldera",
   "kind": "depth2",
-  "t0": 284.432,
-  "dur": 3.66,
-  "at": "5.17@y el agua tarda en secarse",
+  "t0": 303.2,
+  "dur": 3.3,
+  "at": "5.17@pesaban toneladas",
   "exacto": true
  },
  {
-  "id": "o_tinta_espesa",
+  "id": "c_fuego",
+  "kind": "film",
+  "t0": 306.5,
+  "dur": 1.56,
+  "at": "5.17@a veces explotaban",
+  "exacto": true
+ },
+ {
+  "id": "c_bandera",
   "kind": "depth2",
-  "t0": 288.092,
-  "dur": 1.42,
+  "t0": 308.06,
+  "dur": 6.5,
   "at": "5.18",
   "exacto": true
  },
  {
-  "id": "a_rot_duplex_o",
+  "id": "c_bandera2",
   "kind": "depth2",
-  "t0": 289.512,
-  "dur": 6.64,
-  "at": "5.18@la que se seca en un instante",
+  "t0": 314.56,
+  "dur": 2.82,
+  "at": "5.18@con una bandera roja",
   "exacto": true
  },
  {
-  "id": "visc3",
-  "kind": "viscosidad",
-  "t0": 296.152,
-  "dur": 7.465,
+  "id": "c_trenes",
+  "kind": "film",
+  "t0": 317.38,
+  "dur": 1.1,
   "at": "5.19",
   "exacto": true
  },
  {
-  "id": "o_gota_hoja",
+  "id": "a_exposicion_tunbridge_1895_o",
   "kind": "depth2",
-  "t0": 303.617,
-  "dur": 3.0,
-  "at": "6",
+  "t0": 318.48,
+  "dur": 6.08,
+  "at": "5.19@para los trenes y los barcos",
+  "exacto": true,
+  "rot": [
+   "Exposici\u00f3n de carruajes sin caballos",
+   "Tunbridge Wells \u00b7 1895",
+   0.0,
+   6.08
+  ]
+ },
+ {
+  "id": "c_familia",
+  "kind": "depth2",
+  "t0": 324.56,
+  "dur": 2.04,
+  "at": "5.19@el vapor era demasiado",
+  "exacto": true
+ },
+ {
+  "id": "c_motorcito",
+  "kind": "depth2",
+  "t0": 326.6,
+  "dur": 8.06,
+  "at": "5.20",
+  "exacto": true
+ },
+ {
+  "id": "olla_dos_a",
+  "kind": "olla",
+  "t0": 334.66,
+  "dur": 3.22,
+  "at": "5.21",
+  "exacto": true
+ },
+ {
+  "id": "olla_vapor",
+  "kind": "olla",
+  "t0": 337.88,
+  "dur": 11.18,
+  "at": "5.22",
+  "exacto": true
+ },
+ {
+  "id": "olla_interna",
+  "kind": "olla",
+  "t0": 349.06,
+  "dur": 7.02,
+  "at": "5.23",
+  "exacto": true
+ },
+ {
+  "id": "olla_fosforo",
+  "kind": "film",
+  "t0": 356.08,
+  "dur": 6.56,
+  "at": "5.23@una chispa",
+  "exacto": true
+ },
+ {
+  "id": "olla_dos",
+  "kind": "olla",
+  "t0": 362.64,
+  "dur": 5.8,
+  "at": "5.24",
+  "exacto": true
+ },
+ {
+  "id": "a_polea_nr1_o",
+  "kind": "depth2",
+  "t0": 368.44,
+  "dur": 5.02,
+  "at": "5.25",
+  "exacto": true,
+  "rot": [
+   "Un motor de gas",
+   "fijo, en el piso de la f\u00e1brica",
+   0.0,
+   5.02
+  ]
+ },
+ {
+  "id": "c_gasmotor",
+  "kind": "depth2",
+  "t0": 373.46,
+  "dur": 5.06,
+  "at": "5.25@funcionaban con gas",
+  "exacto": true
+ },
+ {
+  "id": "c_fabrica",
+  "kind": "depth2",
+  "t0": 378.52,
+  "dur": 1.42,
+  "at": "5.25@moviendo m\u00e1quinas",
+  "exacto": true
+ },
+ {
+  "id": "c_carro_motor",
+  "kind": "depth2",
+  "t0": 379.94,
+  "dur": 7.56,
+  "at": "5.26",
+  "exacto": true
+ },
+ {
+  "id": "c_cien",
+  "kind": "depth2",
+  "t0": 387.5,
+  "dur": 1.4,
+  "at": "5.26@cada cien metros",
+  "exacto": true
+ },
+ {
+  "id": "m_mannheim2",
+  "kind": "mapa3d",
+  "t0": 388.9,
+  "dur": 3.74,
+  "at": "5.27",
+  "exacto": true
+ },
+ {
+  "id": "c_karl_noche",
+  "kind": "depth2",
+  "t0": 392.64,
+  "dur": 2.5,
+  "at": "5.27@llevaba a\u00f1os obsesionado",
+  "exacto": true
+ },
+ {
+  "id": "c_bertha_sombra",
+  "kind": "depth2",
+  "t0": 395.14,
+  "dur": 5.82,
+  "at": "5.28",
+  "exacto": true
+ },
+ {
+  "id": "c_monedero",
+  "kind": "depth2",
+  "t0": 400.96,
+  "dur": 1.679,
+  "at": "5.28@pag\u00f3 por ese sue\u00f1o",
   "exacto": true
  },
  {
   "id": "cap2",
   "kind": "capitulo",
-  "t0": 306.617,
-  "dur": 3.455,
-  "at": "7",
+  "t0": 402.639,
+  "dur": 2.981,
+  "at": "6",
   "exacto": true
  },
  {
-  "id": "a_bp_karta",
-  "kind": "depth2",
-  "t0": 310.072,
-  "dur": 1.04,
-  "at": "8.0",
-  "exacto": true
- },
- {
-  "id": "o_fecha_1899",
-  "kind": "depth2",
-  "t0": 311.112,
-  "dur": 5.96,
-  "at": "8.0@veintinueve de septiembre",
-  "exacto": true
- },
- {
-  "id": "p_medico_1899",
-  "kind": "depth2",
-  "t0": 317.072,
-  "dur": 1.74,
-  "at": "8.0@que no va a sobrevivir",
-  "exacto": true
- },
- {
-  "id": "o_caja_zapatos",
-  "kind": "depth2",
-  "t0": 318.812,
-  "dur": 4.02,
-  "at": "8.1",
-  "exacto": true
- },
- {
-  "id": "p_madre",
-  "kind": "depth2",
-  "t0": 322.832,
-  "dur": 4.96,
-  "at": "8.1@su madre hace lo que puede",
-  "exacto": true
- },
- {
-  "id": "o_lampara_caja",
-  "kind": "depth2",
-  "t0": 327.792,
-  "dur": 2.3,
-  "at": "8.1@una l\u00e1mpara debajo",
-  "exacto": true
- },
- {
-  "id": "o_bebe_mano",
-  "kind": "depth2",
-  "t0": 330.092,
-  "dur": 2.54,
-  "at": "8.2",
-  "exacto": true
- },
- {
-  "id": "a_bp_havas_o",
-  "kind": "depth2",
-  "t0": 332.632,
-  "dur": 1.9,
-  "at": "8.3",
-  "exacto": true
- },
- {
-  "id": "o_dentista",
-  "kind": "depth2",
-  "t0": 334.532,
-  "dur": 5.08,
-  "at": "8.3@su padre es dentista",
-  "exacto": true
- },
- {
-  "id": "a_bp_attila_o",
-  "kind": "depth2",
-  "t0": 339.612,
-  "dur": 2.94,
-  "at": "8.3@como hicieron entonces",
-  "exacto": true
- },
- {
-  "id": "rot_nombre",
-  "kind": "tipos",
-  "t0": 342.552,
-  "dur": 6.7,
-  "at": "8.3@por uno h\u00fangaro",
-  "exacto": true
- },
- {
-  "id": "o_martillo",
-  "kind": "depth2",
-  "t0": 349.252,
-  "dur": 2.36,
-  "at": "8.4@quiere decir juez",
-  "exacto": true
- },
- {
-  "id": "p_arbitro",
-  "kind": "depth2",
-  "t0": 351.612,
-  "dur": 1.28,
-  "at": "8.4@el que arbitra",
-  "exacto": true
- },
- {
-  "id": "b_joven_corre",
-  "kind": "depth2",
-  "t0": 352.892,
-  "dur": 3.36,
-  "at": "8.5",
+  "id": "m_pforzheim",
+  "kind": "mapa3d",
+  "t0": 405.62,
+  "dur": 0.82,
+  "at": "7.0",
   "exacto": false
  },
  {
-  "id": "a_bp_teleki_o",
+  "id": "a_pforzheim_iglesia_grabado_o",
   "kind": "depth2",
-  "t0": 356.252,
-  "dur": 2.64,
-  "at": "8.5@empieza a estudiar medicina",
+  "t0": 406.44,
+  "dur": 3.32,
+  "at": "7.0@en el gran ducado de baden",
   "exacto": true
  },
  {
-  "id": "o_pendulo",
-  "kind": "depth2",
-  "t0": 358.892,
-  "dur": 3.86,
-  "at": "8.5@descubre la hipnosis",
-  "exacto": true
- },
- {
-  "id": "b_hipnosis",
-  "kind": "depth2",
-  "t0": 362.752,
-  "dur": 2.02,
-  "at": "8.5@trabajar como hipnotizador",
-  "exacto": true
- },
- {
-  "id": "b_pinta",
-  "kind": "depth2",
-  "t0": 364.772,
-  "dur": 2.98,
-  "at": "8.6",
-  "exacto": true
- },
- {
-  "id": "b_esculpe",
-  "kind": "depth2",
-  "t0": 367.752,
-  "dur": 1.36,
-  "at": "8.6@hace esculturas",
-  "exacto": true
- },
- {
-  "id": "o_libro_cuentas",
-  "kind": "depth2",
-  "t0": 369.112,
-  "dur": 4.64,
-  "at": "8.6@se mete en negocios",
-  "exacto": true
- },
- {
-  "id": "a_bp_szedo_o",
-  "kind": "depth2",
-  "t0": 373.752,
-  "dur": 1.32,
-  "at": "8.6@el periodismo",
-  "exacto": true
- },
- {
-  "id": "a_bp_dunapart_o",
+  "id": "a_pforzheim_marktplatz_o",
   "kind": "proyector",
-  "t0": 375.072,
-  "dur": 1.6,
-  "at": "8.7",
-  "exacto": true
+  "t0": 409.76,
+  "dur": 3.72,
+  "at": "7.0@tres de mayo",
+  "exacto": true,
+  "rot": [
+   "Pforzheim",
+   "la plaza del mercado \u00b7 siglo XIX",
+   0.0,
+   3.72
+  ]
  },
  {
-  "id": "f_bp_danubio",
-  "kind": "film",
-  "t0": 376.672,
-  "dur": 1.42,
-  "at": "8.7@una ciudad enorme",
-  "exacto": true
- },
- {
-  "id": "f_bp_puente",
-  "kind": "film",
-  "t0": 378.092,
-  "dur": 1.2,
-  "at": "8.7@sobre el danubio",
-  "exacto": true
- },
- {
-  "id": "a_bp_lanchid_o",
+  "id": "p_orfebre",
   "kind": "depth2",
-  "t0": 379.292,
-  "dur": 2.3,
-  "at": "8.7@llena de caf\u00e9s",
+  "t0": 413.48,
+  "dur": 6.46,
+  "at": "7.1@la ciudad del oro",
   "exacto": true
  },
  {
-  "id": "f_bp_cafe",
-  "kind": "film",
-  "t0": 381.592,
-  "dur": 1.68,
-  "at": "8.7@pasan las horas escribiendo",
-  "exacto": true
- },
- {
-  "id": "a_bp_newyork_kul_o",
+  "id": "p_bebe",
   "kind": "depth2",
-  "t0": 383.272,
-  "dur": 1.2,
-  "at": "8.8",
+  "t0": 419.94,
+  "dur": 1.52,
+  "at": "7.1@nace una ni\u00f1a",
   "exacto": true
  },
  {
-  "id": "b32_cafe",
+  "id": "p_nombre",
   "kind": "depth2",
-  "t0": 384.472,
-  "dur": 1.55,
-  "at": "8.8@corre de una nota",
+  "t0": 421.46,
+  "dur": 1.34,
+  "at": "7.1@le ponen bertha",
   "exacto": true
  },
  {
-  "id": "f_bp_calle",
-  "kind": "film",
-  "t0": 386.022,
-  "dur": 1.55,
-  "at": "8.8@corre de una nota",
-  "exacto": true
- },
- {
-  "id": "b32_tranvia",
+  "id": "p_padre",
   "kind": "depth2",
-  "t0": 387.572,
-  "dur": 1.22,
-  "at": "8.8@escribe en el tranv\u00eda",
-  "exacto": true
+  "t0": 422.8,
+  "dur": 3.8,
+  "at": "7.2",
+  "exacto": true,
+  "rot": [
+   "Karl Friedrich Ringer",
+   "maestro carpintero",
+   0.0,
+   3.8
+  ]
  },
  {
-  "id": "b32_redac",
+  "id": "p_obra",
   "kind": "depth2",
-  "t0": 388.792,
-  "dur": 1.16,
-  "at": "8.8@en la redacci\u00f3n",
+  "t0": 426.6,
+  "dur": 2.22,
+  "at": "7.2@hab\u00eda hecho dinero",
   "exacto": true
  },
  {
-  "id": "a_bp_newyork_o",
+  "id": "p_biblia",
   "kind": "depth2",
-  "t0": 389.952,
-  "dur": 2.26,
-  "at": "8.8@en las mesitas de m\u00e1rmol",
+  "t0": 428.82,
+  "dur": 2.54,
+  "at": "7.3",
   "exacto": true
  },
  {
-  "id": "b32_boda",
+  "id": "p_abre",
   "kind": "depth2",
-  "t0": 392.212,
-  "dur": 3.58,
-  "at": "8.9",
+  "t0": 431.36,
+  "dur": 3.96,
+  "at": "7.3@abri\u00f3 la biblia",
   "exacto": true
  },
  {
-  "id": "a_bp_newyork3_o",
+  "id": "p_escribe",
   "kind": "depth2",
-  "t0": 395.792,
-  "dur": 1.46,
-  "at": "8.9@en mil novecientos treinta y tres",
+  "t0": 435.32,
+  "dur": 2.5,
+  "at": "7.3@escribi\u00f3 el nombre",
   "exacto": true
  },
  {
-  "id": "a_bp_abbazia_o",
-  "kind": "proyector",
-  "t0": 397.252,
-  "dur": 1.36,
-  "at": "8.9@llega a editor",
-  "exacto": true
- },
- {
-  "id": "o_revista",
+  "id": "p_frase",
   "kind": "depth2",
-  "t0": 398.612,
-  "dur": 4.62,
-  "at": "8.9@revista cultural",
+  "t0": 437.82,
+  "dur": 3.82,
+  "at": "7.4",
   "exacto": true
  },
  {
-  "id": "b32_bolsillo",
+  "id": "p_frase_tx",
   "kind": "depth2",
-  "t0": 403.232,
-  "dur": 4.44,
-  "at": "8.10",
+  "t0": 441.64,
+  "dur": 2.562,
+  "at": "7.4@otra vez solo una ni\u00f1a",
   "exacto": true
  },
  {
-  "id": "o_pelikan_traba",
+  "id": "p_biblia_luz",
   "kind": "depth2",
-  "t0": 407.672,
-  "dur": 2.04,
-  "at": "8.10@que se trababa",
+  "t0": 444.202,
+  "dur": 1.978,
+  "at": "8",
   "exacto": true
  },
  {
-  "id": "a_off_ink_o",
+  "id": "p_mundo",
   "kind": "depth2",
-  "t0": 409.712,
-  "dur": 0.96,
-  "at": "8.10@que hab\u00eda que recargar",
+  "t0": 446.18,
+  "dur": 6.18,
+  "at": "9.0",
   "exacto": true
  },
  {
-  "id": "b32_piensa",
+  "id": "p_contrato",
   "kind": "depth2",
-  "t0": 410.672,
-  "dur": 4.48,
-  "at": "8.11",
+  "t0": 452.36,
+  "dur": 4.0,
+  "at": "9.0@no pod\u00eda firmar un contrato",
   "exacto": true
  },
  {
-  "id": "a_bp_hangli_o",
+  "id": "p_univ",
   "kind": "depth2",
-  "t0": 415.152,
-  "dur": 3.22,
-  "at": "8.11@cuando algo no le gusta",
-  "exacto": true
- },
- {
-  "id": "b32_dibuja",
-  "kind": "depth2",
-  "t0": 418.372,
+  "t0": 456.36,
   "dur": 1.9,
-  "at": "8.11@intenta inventar algo mejor",
+  "at": "9.0@no pod\u00eda ir a la universidad",
   "exacto": true
  },
  {
-  "id": "o_auto_30",
+  "id": "p_herencia",
   "kind": "depth2",
-  "t0": 420.272,
-  "dur": 4.3,
-  "at": "8.12",
+  "t0": 458.26,
+  "dur": 6.32,
+  "at": "9.1",
   "exacto": true
  },
  {
-  "id": "b32_auto",
+  "id": "p_menor",
   "kind": "depth2",
-  "t0": 424.572,
-  "dur": 1.88,
-  "at": "8.12@le pareci\u00f3 tan inc\u00f3moda",
+  "t0": 464.58,
+  "dur": 1.82,
+  "at": "9.1@casi una menor de edad",
   "exacto": true
  },
  {
-  "id": "o_caja_cambios",
+  "id": "p_curiosa",
   "kind": "depth2",
-  "t0": 426.452,
-  "dur": 2.1,
-  "at": "8.12@dise\u00f1\u00f3 una autom\u00e1tica",
+  "t0": 466.4,
+  "dur": 6.34,
+  "at": "9.2",
   "exacto": true
  },
  {
-  "id": "a_bp_hadnagy_o",
+  "id": "p_pregunta",
   "kind": "depth2",
-  "t0": 428.552,
-  "dur": 3.92,
-  "at": "8.12@no hay forma segura",
+  "t0": 472.74,
+  "dur": 6.54,
+  "at": "9.2@le preguntaba a su padre",
   "exacto": true
  },
  {
-  "id": "o_patentes_pila",
+  "id": "p_diarios",
   "kind": "depth2",
-  "t0": 432.472,
-  "dur": 3.06,
-  "at": "8.13",
+  "t0": 479.28,
+  "dur": 1.4,
+  "at": "9.2@en los diarios",
   "exacto": true
  },
  {
-  "id": "o_cuadernos_inv",
+  "id": "p_telegrafo",
   "kind": "depth2",
-  "t0": 435.532,
-  "dur": 5.06,
-  "at": "8.13@registr\u00f3 m\u00e1s de treinta inventos",
+  "t0": 480.68,
+  "dur": 3.88,
+  "at": "9.3",
   "exacto": true
  },
  {
-  "id": "o_tinta_olor",
+  "id": "p_camara",
   "kind": "depth2",
-  "t0": 440.592,
-  "dur": 2.403,
-  "at": "8.13@el olor a tinta",
+  "t0": 484.56,
+  "dur": 1.22,
+  "at": "9.3@las fotograf\u00edas",
   "exacto": true
  },
  {
-  "id": "t03_soplo",
+  "id": "p_loco",
   "kind": "depth2",
-  "t0": 442.995,
-  "dur": 3.0,
-  "at": "9",
+  "t0": 485.78,
+  "dur": 1.18,
+  "at": "9.3@las locomotoras",
   "exacto": true
+ },
+ {
+  "id": "p_gas",
+  "kind": "depth2",
+  "t0": 486.96,
+  "dur": 1.72,
+  "at": "9.3@la luz de gas",
+  "exacto": true
+ },
+ {
+  "id": "p_lee",
+  "kind": "depth2",
+  "t0": 488.68,
+  "dur": 5.14,
+  "at": "9.4",
+  "exacto": true
+ },
+ {
+  "id": "p_suena",
+  "kind": "depth2",
+  "t0": 493.82,
+  "dur": 1.84,
+  "at": "9.4@un hombre que hiciera algo nuevo",
+  "exacto": true
+ },
+ {
+  "id": "p_excursion",
+  "kind": "depth2",
+  "t0": 495.66,
+  "dur": 6.76,
+  "at": "9.5",
+  "exacto": true
+ },
+ {
+  "id": "p_carruaje",
+  "kind": "depth2",
+  "t0": 502.42,
+  "dur": 3.14,
+  "at": "9.5@un paseo en carruaje",
+  "exacto": true
+ },
+ {
+  "id": "p_karl_joven",
+  "kind": "depth2",
+  "t0": 505.56,
+  "dur": 2.62,
+  "at": "9.5@un joven ingeniero",
+  "exacto": true,
+  "rot": [
+   "Karl Benz",
+   "25 a\u00f1os \u00b7 ingeniero",
+   0.0,
+   2.62
+  ]
+ },
+ {
+  "id": "a_karl_benz_1869_o",
+  "kind": "depth2",
+  "t0": 508.18,
+  "dur": 3.62,
+  "at": "9.6",
+  "exacto": true,
+  "rot": [
+   "Karl Benz",
+   "hacia 1869",
+   0.0,
+   3.62
+  ]
+ },
+ {
+  "id": "p_manos_karl",
+  "kind": "depth2",
+  "t0": 511.8,
+  "dur": 4.66,
+  "at": "9.6@con las manos",
+  "exacto": true
+ },
+ {
+  "id": "p_hablan",
+  "kind": "depth2",
+  "t0": 516.46,
+  "dur": 2.56,
+  "at": "9.6@hablaba de un carro",
+  "exacto": true
+ },
+ {
+  "id": "p_risas",
+  "kind": "depth2",
+  "t0": 519.02,
+  "dur": 4.34,
+  "at": "9.7",
+  "exacto": true
+ },
+ {
+  "id": "p_bertha_mira",
+  "kind": "depth2",
+  "t0": 523.36,
+  "dur": 0.88,
+  "at": "9.7@bertha pens\u00f3",
+  "exacto": true,
+  "rot_off": 0.88
+ },
+ {
+  "id": "a_bertha_18_anos_o",
+  "kind": "depth2",
+  "t0": 524.24,
+  "dur": 3.259,
+  "at": "9.7@la idea m\u00e1s interesante",
+  "exacto": true,
+  "rot": [
+   "Bertha Ringer",
+   "hacia 1867",
+   0.0,
+   3.259
+  ]
  },
  {
   "id": "cap3",
   "kind": "capitulo",
-  "t0": 445.995,
-  "dur": 2.957,
+  "t0": 527.499,
+  "dur": 3.061,
   "at": "10",
   "exacto": true
  },
  {
-  "id": "f_rot_sala",
-  "kind": "film",
-  "t0": 448.952,
-  "dur": 2.68,
+  "id": "m_karlsruhe",
+  "kind": "mapa3d",
+  "t0": 530.56,
+  "dur": 6.26,
   "at": "11.0",
-  "exacto": true
+  "exacto": false
  },
  {
-  "id": "a_rot_hbl_o",
+  "id": "k_loco",
   "kind": "depth2",
-  "t0": 451.632,
-  "dur": 1.98,
-  "at": "11.0@las rotativas no paran",
-  "exacto": true
- },
- {
-  "id": "a_rot_journal_o",
-  "kind": "proyector",
-  "t0": 453.612,
-  "dur": 2.08,
-  "at": "11.0@m\u00e1quinas enormes de hierro",
-  "exacto": true
- },
- {
-  "id": "f_rot_cil",
-  "kind": "film",
-  "t0": 455.692,
-  "dur": 2.82,
-  "at": "11.0@cilindros que giran",
-  "exacto": true
- },
- {
-  "id": "a_rot_seattle_o",
-  "kind": "depth2",
-  "t0": 458.512,
-  "dur": 1.18,
-  "at": "11.0@que hace temblar el piso",
-  "exacto": true
- },
- {
-  "id": "f_rot_rollo",
-  "kind": "film",
-  "t0": 459.692,
-  "dur": 4.76,
+  "t0": 536.82,
+  "dur": 2.24,
   "at": "11.1",
   "exacto": true
  },
  {
-  "id": "o_diarios_salen",
+  "id": "k_padre",
   "kind": "depth2",
-  "t0": 464.452,
-  "dur": 2.0,
-  "at": "11.1@salen los diarios",
+  "t0": 539.06,
+  "dur": 5.48,
+  "at": "11.1@maquinista de locomotoras",
   "exacto": true
  },
  {
-  "id": "a_rot_kranten_o",
+  "id": "k_cama",
   "kind": "depth2",
-  "t0": 466.452,
-  "dur": 1.74,
-  "at": "11.1@cortados y doblados",
-  "exacto": true
- },
- {
-  "id": "b32_baja",
-  "kind": "depth2",
-  "t0": 468.192,
-  "dur": 2.02,
+  "t0": 544.54,
+  "dur": 3.28,
   "at": "11.2",
-  "exacto": false
- },
- {
-  "id": "a_rot_seattle2_o",
-  "kind": "depth2",
-  "t0": 470.212,
-  "dur": 1.14,
-  "at": "11.2@bajaba muchas veces",
   "exacto": true
  },
  {
-  "id": "p_imprentero",
+  "id": "k_luto",
   "kind": "depth2",
-  "t0": 471.352,
-  "dur": 3.4,
-  "at": "11.2@ver salir su nota",
+  "t0": 547.82,
+  "dur": 4.12,
+  "at": "11.2@una neumon\u00eda",
   "exacto": true
  },
  {
-  "id": "b32_mira",
+  "id": "k_josephine",
   "kind": "depth2",
-  "t0": 474.752,
-  "dur": 2.1,
-  "at": "11.2@algo en lo que nadie se fijaba",
-  "exacto": true
- },
- {
-  "id": "o_diarios_pila",
-  "kind": "depth2",
-  "t0": 476.852,
-  "dur": 1.5,
+  "t0": 551.94,
+  "dur": 7.02,
   "at": "11.3",
-  "exacto": true
+  "exacto": true,
+  "rot": [
+   "Josephine Vaillant",
+   "su madre",
+   0.0,
+   6.5
+  ]
  },
  {
-  "id": "lupa_kranten",
-  "kind": "fotolupa",
-  "t0": 478.352,
-  "dur": 1.8,
-  "at": "11.3@a una velocidad incre\u00edble",
-  "exacto": true
- },
- {
-  "id": "a_rot_telegraaf_o",
+  "id": "k_libros",
   "kind": "depth2",
-  "t0": 480.152,
-  "dur": 1.38,
-  "at": "11.3@uno encima de otro",
+  "t0": 558.96,
+  "dur": 1.7,
+  "at": "11.3@su hijo iba a estudiar",
   "exacto": true
  },
  {
-  "id": "o_diario_limpio",
+  "id": "k_lava",
   "kind": "depth2",
-  "t0": 481.532,
-  "dur": 1.48,
-  "at": "11.3@y no se manchaban",
-  "exacto": true
- },
- {
-  "id": "b32_toca",
-  "kind": "depth2",
-  "t0": 483.012,
-  "dur": 1.0,
+  "t0": 560.66,
+  "dur": 1.64,
   "at": "11.4",
   "exacto": true
  },
  {
-  "id": "visc_impr",
-  "kind": "viscosidad",
-  "t0": 484.012,
-  "dur": 2.08,
-  "at": "11.4@se secaba casi al instante",
+  "id": "k_estudiantes",
+  "kind": "depth2",
+  "t0": 562.3,
+  "dur": 5.18,
+  "at": "11.4@alquil\u00f3 cuartos",
   "exacto": true
  },
  {
-  "id": "a_rot_stereo_o",
+  "id": "k_poli",
   "kind": "depth2",
-  "t0": 486.092,
-  "dur": 6.18,
-  "at": "11.4@estaba hecha para eso",
+  "t0": 567.48,
+  "dur": 3.92,
+  "at": "11.4@entr\u00f3 a la escuela polit\u00e9cnica",
   "exacto": true
  },
  {
-  "id": "b32_idea",
+  "id": "k_relojes",
   "kind": "depth2",
-  "t0": 492.272,
-  "dur": 2.46,
+  "t0": 571.4,
+  "dur": 5.42,
   "at": "11.5",
   "exacto": true
  },
  {
-  "id": "b32_lata",
+  "id": "k_foto",
   "kind": "depth2",
-  "t0": 494.732,
-  "dur": 3.44,
-  "at": "11.5@si esa tinta no mancha",
+  "t0": 576.82,
+  "dur": 1.92,
+  "at": "11.5@laboratorio de fotograf\u00eda",
   "exacto": true
  },
  {
-  "id": "b32_llena",
+  "id": "k_diploma",
   "kind": "depth2",
-  "t0": 498.172,
-  "dur": 2.68,
+  "t0": 578.74,
+  "dur": 2.1,
   "at": "11.6",
   "exacto": true
  },
  {
-  "id": "o_pluma_seca2",
+  "id": "a_karl_benz_1869_o_2",
   "kind": "depth2",
-  "t0": 500.852,
-  "dur": 1.1,
-  "at": "11.6@y no pas\u00f3 nada",
+  "t0": 580.84,
+  "dur": 2.1,
+  "at": "11.6@se recibi\u00f3 de ingeniero",
   "exacto": true
  },
  {
-  "id": "o_miel_cb",
+  "id": "k_fabrica",
   "kind": "depth2",
-  "t0": 501.952,
-  "dur": 3.34,
+  "t0": 582.94,
+  "dur": 2.0,
+  "at": "11.6@en una f\u00e1brica de m\u00e1quinas",
+  "exacto": true
+ },
+ {
+  "id": "k_puente",
+  "kind": "depth2",
+  "t0": 584.94,
+  "dur": 1.62,
+  "at": "11.6@de puentes de hierro",
+  "exacto": true
+ },
+ {
+  "id": "k_bascula",
+  "kind": "depth2",
+  "t0": 586.56,
+  "dur": 1.36,
+  "at": "11.6@de b\u00e1sculas",
+  "exacto": true
+ },
+ {
+  "id": "k_redtenbacher",
+  "kind": "depth2",
+  "t0": 587.92,
+  "dur": 7.12,
   "at": "11.7",
+  "exacto": true,
+  "rot": [
+   "Ferdinand Redtenbacher",
+   "profesor del Polit\u00e9cnico",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "k_sale",
+  "kind": "depth2",
+  "t0": 595.04,
+  "dur": 3.46,
+  "at": "11.7@sal\u00eda de esas clases",
   "exacto": true
  },
  {
-  "id": "o_pluma_tapada",
+  "id": "k_boceto",
   "kind": "depth2",
-  "t0": 505.292,
-  "dur": 2.78,
-  "at": "11.7@se quedaba pegada adentro",
+  "t0": 598.5,
+  "dur": 1.74,
+  "at": "11.7@un carro sin caballos",
   "exacto": true
  },
  {
-  "id": "b32_frustra",
-  "kind": "depth2",
-  "t0": 508.072,
-  "dur": 2.46,
-  "at": "11.7@raspaba el papel",
-  "exacto": true
- },
- {
-  "id": "o_problema",
-  "kind": "depth2",
-  "t0": 510.532,
-  "dur": 4.14,
+  "id": "m_mannheim3",
+  "kind": "mapa3d",
+  "t0": 600.24,
+  "dur": 6.38,
   "at": "11.8",
   "exacto": true
  },
  {
-  "id": "a_rot_cyl_o",
+  "id": "a_werkstatt_benz_t6_o",
   "kind": "depth2",
-  "t0": 514.672,
-  "dur": 2.9,
-  "at": "11.8@hac\u00eda falta otra forma",
-  "exacto": true
+  "t0": 606.62,
+  "dur": 2.08,
+  "at": "11.8@abri\u00f3 un taller propio",
+  "exacto": true,
+  "rot_off": 2.08
  },
  {
-  "id": "o_tubo_tinta",
+  "id": "a_mannheim_rheinbruecke_grabado_o",
+  "kind": "proyector",
+  "t0": 608.7,
+  "dur": 0.92,
+  "at": "11.8@una ciudad industrial",
+  "exacto": true,
+  "rot_off": 0.92
+ },
+ {
+  "id": "a_mannheim_teatro_grabado_o",
+  "kind": "copia",
+  "t0": 609.62,
+  "dur": 1.52,
+  "at": "11.8@a orillas del rin",
+  "exacto": true,
+  "rot_off": 1.52
+ },
+ {
+  "id": "k_desastre",
   "kind": "depth2",
-  "t0": 517.572,
-  "dur": 2.16,
+  "t0": 611.14,
+  "dur": 4.14,
   "at": "11.9",
   "exacto": true
  },
  {
-  "id": "o_rodillo_tinta",
+  "id": "k_facturas",
   "kind": "depth2",
-  "t0": 519.732,
-  "dur": 4.56,
-  "at": "11.9@y la extiendes",
+  "t0": 615.28,
+  "dur": 2.08,
+  "at": "11.9@hab\u00eda deudas",
   "exacto": true
  },
  {
-  "id": "o_bolitas_tinta",
+  "id": "k_ritter",
   "kind": "depth2",
-  "t0": 524.292,
-  "dur": 3.32,
+  "t0": 617.36,
+  "dur": 3.88,
+  "at": "11.9@ritter",
+  "exacto": true,
+  "rot": [
+   "August Ritter",
+   "el socio",
+   0.0,
+   3.88
+  ]
+ },
+ {
+  "id": "k_karl_cabeza",
+  "kind": "depth2",
+  "t0": 621.24,
+  "dur": 3.28,
   "at": "11.10",
   "exacto": false
  },
  {
-  "id": "o_bolitas_mesa2",
+  "id": "k_bertha_decide",
   "kind": "depth2",
-  "t0": 527.612,
-  "dur": 4.9,
-  "at": "11.10@unas bolitas rodaron",
+  "t0": 624.52,
+  "dur": 3.62,
+  "at": "11.10@bertha hizo algo",
   "exacto": true
  },
  {
-  "id": "o_linea_madera",
+  "id": "k_novios",
   "kind": "depth2",
-  "t0": 532.512,
-  "dur": 2.44,
-  "at": "11.10@dejaron una l\u00ednea perfecta",
-  "exacto": true
- },
- {
-  "id": "n_bolitas_calle",
-  "kind": "depth2",
-  "t0": 534.952,
-  "dur": 2.18,
+  "t0": 628.14,
+  "dur": 3.54,
   "at": "11.11",
   "exacto": true
  },
  {
-  "id": "n_bolitas_macro",
+  "id": "k_dote",
   "kind": "depth2",
-  "t0": 537.132,
-  "dur": 4.64,
-  "at": "11.11@jugando a las bolitas",
+  "t0": 631.68,
+  "dur": 4.44,
+  "at": "11.11@ella ten\u00eda una dote",
   "exacto": true
  },
  {
-  "id": "o_bolita_charco",
+  "id": "k_pide",
   "kind": "depth2",
-  "t0": 541.772,
-  "dur": 4.72,
-  "at": "11.11@una raya mojada",
-  "exacto": true
- },
- {
-  "id": "bol_gira",
-  "kind": "bolilla",
-  "t0": 546.492,
-  "dur": 4.1,
+  "t0": 636.12,
+  "dur": 4.2,
   "at": "11.12",
   "exacto": true
  },
  {
-  "id": "o_desodorante",
+  "id": "k_firma",
   "kind": "depth2",
-  "t0": 550.592,
-  "dur": 3.14,
+  "t0": 640.32,
+  "dur": 1.92,
+  "at": "11.12@compr\u00f3 la parte",
+  "exacto": true
+ },
+ {
+  "id": "k_ritter_va",
+  "kind": "depth2",
+  "t0": 642.24,
+  "dur": 1.1,
+  "at": "11.12@ritter se fue",
+  "exacto": true
+ },
+ {
+  "id": "k_llave",
+  "kind": "depth2",
+  "t0": 643.34,
+  "dur": 1.7,
+  "at": "11.12@el taller qued\u00f3 para karl",
+  "exacto": true
+ },
+ {
+  "id": "a_bertha_1870_o",
+  "kind": "depth2",
+  "t0": 645.04,
+  "dur": 3.4,
   "at": "11.13",
+  "exacto": true,
+  "rot": [
+   "Bertha Ringer",
+   "hacia 1871",
+   0.0,
+   3.4
+  ]
+ },
+ {
+  "id": "k_soltera",
+  "kind": "depth2",
+  "t0": 648.44,
+  "dur": 4.64,
+  "at": "11.13@mientras era soltera",
   "exacto": true
  },
  {
-  "id": "o_rollon",
+  "id": "a_bertha_karl_familia_o",
   "kind": "depth2",
-  "t0": 553.732,
-  "dur": 3.88,
-  "at": "11.13@la bolita est\u00e1 metida en la tapa",
-  "exacto": true
- },
- {
-  "id": "o_rollon_macro",
-  "kind": "depth2",
-  "t0": 557.612,
-  "dur": 4.28,
-  "at": "11.13@cuando la pasas por la piel",
-  "exacto": true
- },
- {
-  "id": "o_rodillo",
-  "kind": "depth2",
-  "t0": 561.892,
-  "dur": 4.22,
+  "t0": 653.08,
+  "dur": 3.7,
   "at": "11.14",
-  "exacto": true
+  "exacto": true,
+  "rot": [
+   "Bertha y Karl",
+   "novios \u00b7 hacia 1870",
+   0.0,
+   3.7
+  ]
  },
  {
-  "id": "bol_curva",
-  "kind": "bolilla",
-  "t0": 566.112,
-  "dur": 4.7,
-  "at": "11.14@para cualquier lado",
-  "exacto": true
- },
- {
-  "id": "p_mano_escribe",
+  "id": "k_boda",
   "kind": "depth2",
-  "t0": 570.812,
-  "dur": 2.24,
-  "at": "11.14@como se mueve la mano",
+  "t0": 656.78,
+  "dur": 1.7,
+  "at": "11.14@se casaron en pforzheim",
   "exacto": true
  },
  {
-  "id": "bol_tapa_bien",
-  "kind": "bolilla",
-  "t0": 573.052,
-  "dur": 3.86,
+  "id": "k_ley",
+  "kind": "depth2",
+  "t0": 658.48,
+  "dur": 5.6,
   "at": "11.15",
   "exacto": true
  },
  {
-  "id": "a_bp_parts_o",
+  "id": "k_registro",
   "kind": "depth2",
-  "t0": 576.912,
-  "dur": 4.62,
-  "at": "11.15@mientras no escrib\u00edas",
+  "t0": 664.08,
+  "dur": 5.62,
+  "at": "11.15@no pod\u00eda figurar como socia",
   "exacto": true
  },
  {
-  "id": "a_pat_loud_o",
-  "kind": "proyector",
-  "t0": 581.532,
-  "dur": 4.4,
+  "id": "k_eugen",
+  "kind": "depth2",
+  "t0": 669.7,
+  "dur": 7.3,
   "at": "11.16",
   "exacto": true
  },
  {
-  "id": "o_cuero_1888",
+  "id": "k_cinco",
   "kind": "depth2",
-  "t0": 585.932,
-  "dur": 4.24,
-  "at": "11.16@en mil ochocientos ochenta y ocho",
+  "t0": 677.0,
+  "dur": 1.42,
+  "at": "11.16@cinco hijos",
   "exacto": true
  },
  {
-  "id": "lupa_loud",
-  "kind": "fotolupa",
-  "t0": 590.172,
-  "dur": 3.58,
-  "at": "11.16@john loud",
-  "exacto": true
- },
- {
-  "id": "o_cuero_marca",
+  "id": "k_acreedores",
   "kind": "depth2",
-  "t0": 593.752,
-  "dur": 4.6,
+  "t0": 678.42,
+  "dur": 4.94,
   "at": "11.17",
   "exacto": true
  },
  {
-  "id": "p_carta_cuero",
+  "id": "k_herramientas",
   "kind": "depth2",
-  "t0": 598.352,
-  "dur": 2.66,
-  "at": "11.17@serv\u00eda para el cuero",
+  "t0": 683.36,
+  "dur": 2.24,
+  "at": "11.17@se llevaron las herramientas",
   "exacto": true
  },
  {
-  "id": "lupa_loud2",
-  "kind": "fotolupa",
-  "t0": 601.012,
-  "dur": 1.44,
-  "at": "11.17@y nunca se vendi\u00f3",
-  "exacto": true
- },
- {
-  "id": "o_patente_vieja",
+  "id": "k_pan",
   "kind": "depth2",
-  "t0": 602.452,
-  "dur": 1.64,
-  "at": "11.17@la patente caduc\u00f3",
-  "exacto": true
- },
- {
-  "id": "a_bp_corvin_o",
-  "kind": "depth2",
-  "t0": 604.092,
-  "dur": 2.32,
+  "t0": 685.6,
+  "dur": 4.74,
   "at": "11.18",
   "exacto": true
  },
  {
-  "id": "o_feria",
+  "id": "k_encerrado",
   "kind": "depth2",
-  "t0": 606.412,
-  "dur": 4.24,
-  "at": "11.18@feria internacional",
+  "t0": 690.34,
+  "dur": 4.02,
+  "at": "11.18@cada vez m\u00e1s callado",
   "exacto": true
  },
  {
-  "id": "b32_feria",
+  "id": "k_motor_plan",
   "kind": "depth2",
-  "t0": 610.652,
-  "dur": 2.06,
-  "at": "11.18@era grande",
-  "exacto": true
- },
- {
-  "id": "a_bp_duna_hajo_o",
-  "kind": "depth2",
-  "t0": 612.712,
-  "dur": 2.4,
-  "at": "11.18@todav\u00eda lejos",
-  "exacto": true
- },
- {
-  "id": "gy_lab",
-  "kind": "depth2",
-  "t0": 615.112,
-  "dur": 1.78,
+  "t0": 694.36,
+  "dur": 12.1,
   "at": "11.19",
   "exacto": true
  },
  {
-  "id": "lupa_ink",
-  "kind": "fotolupa",
-  "t0": 616.892,
-  "dur": 1.78,
-  "at": "11.19@para la tinta",
-  "exacto": true
- },
- {
-  "id": "a_bp_szedo2_o",
+  "id": "k_boceto2",
   "kind": "depth2",
-  "t0": 618.672,
-  "dur": 4.1,
-  "at": "11.19@lo ten\u00eda en casa",
-  "exacto": true
- },
- {
-  "id": "o_frascos_tinta",
-  "kind": "depth2",
-  "t0": 622.772,
-  "dur": 3.38,
-  "at": "11.19@empez\u00f3 a preparar tintas",
-  "exacto": true
- },
- {
-  "id": "b32_gy_prueban",
-  "kind": "depth2",
-  "t0": 626.152,
-  "dur": 4.36,
-  "at": "11.20",
-  "exacto": false
- },
- {
-  "id": "carrera_pruebas",
-  "kind": "eras",
-  "t0": 630.512,
-  "dur": 3.68,
-  "at": "11.20@una punta con una tinta",
-  "exacto": true
- },
- {
-  "id": "o_punta_tinta",
-  "kind": "depth2",
-  "t0": 634.192,
-  "dur": 4.82,
-  "at": "11.21",
-  "exacto": true
- },
- {
-  "id": "gy_mezcla",
-  "kind": "depth2",
-  "t0": 639.012,
-  "dur": 2.02,
-  "at": "11.21@no serv\u00eda para nada con otra",
-  "exacto": true
- },
- {
-  "id": "o_par",
-  "kind": "depth2",
-  "t0": 641.032,
-  "dur": 3.34,
-  "at": "11.21@la punta y la tinta ten\u00edan que nacer juntas",
-  "exacto": true
- },
- {
-  "id": "f_rot_banda",
-  "kind": "film",
-  "t0": 644.372,
-  "dur": 3.0,
-  "at": "12",
+  "t0": 706.46,
+  "dur": 2.111,
+  "at": "11.19@alg\u00fan d\u00eda el carro",
   "exacto": true
  },
  {
   "id": "cap4",
   "kind": "capitulo",
-  "t0": 647.372,
-  "dur": 2.52,
-  "at": "13",
+  "t0": 708.571,
+  "dur": 2.889,
+  "at": "12",
   "exacto": true
  },
  {
-  "id": "o_boceto",
+  "id": "n_motor",
   "kind": "depth2",
-  "t0": 649.892,
-  "dur": 2.76,
-  "at": "14.0",
+  "t0": 711.46,
+  "dur": 6.58,
+  "at": "13.0",
   "exacto": true
  },
  {
-  "id": "o_tubo_dibujo",
+  "id": "olla_interna2",
+  "kind": "olla",
+  "t0": 718.04,
+  "dur": 8.16,
+  "at": "13.1",
+  "exacto": true
+ },
+ {
+  "id": "n_una",
   "kind": "depth2",
-  "t0": 652.652,
-  "dur": 5.06,
-  "at": "14.0@un tubo de tinta",
+  "t0": 726.2,
+  "dur": 2.16,
+  "at": "13.1@eso es una sola explosi\u00f3n",
   "exacto": true
  },
  {
-  "id": "b32_noche",
+  "id": "col_ritmo_a",
+  "kind": "columpio",
+  "t0": 728.36,
+  "dur": 8.96,
+  "at": "13.2",
+  "exacto": true
+ },
+ {
+  "id": "n_engr_b",
+  "kind": "film",
+  "t0": 737.32,
+  "dur": 1.7,
+  "at": "13.2@y otra",
+  "exacto": true
+ },
+ {
+  "id": "n_cientos",
   "kind": "depth2",
-  "t0": 657.712,
-  "dur": 1.84,
-  "at": "14.0@fue una pesadilla",
+  "t0": 739.02,
+  "dur": 1.7,
+  "at": "13.2@cientos de veces por minuto",
   "exacto": true
  },
  {
-  "id": "o_tinta_no_baja",
+  "id": "n_columpio",
   "kind": "depth2",
-  "t0": 659.552,
-  "dur": 6.38,
-  "at": "14.1",
+  "t0": 740.72,
+  "dur": 6.34,
+  "at": "13.3",
   "exacto": true
  },
  {
-  "id": "o_empuja",
+  "id": "col_ritmo_b",
+  "kind": "columpio",
+  "t0": 747.06,
+  "dur": 5.26,
+  "at": "13.3@para que siga",
+  "exacto": true
+ },
+ {
+  "id": "n_frena",
   "kind": "depth2",
-  "t0": 665.932,
-  "dur": 1.52,
-  "at": "14.1@ten\u00edan que empujarla",
-  "exacto": true
- },
- {
-  "id": "pres_piston",
-  "kind": "presion",
-  "t0": 667.452,
-  "dur": 3.06,
-  "at": "14.2",
-  "exacto": true
- },
- {
-  "id": "o_tornillo",
-  "kind": "depth2",
-  "t0": 670.512,
-  "dur": 3.34,
-  "at": "14.2@que iba apretando",
-  "exacto": true
- },
- {
-  "id": "n_pasta",
-  "kind": "depth2",
-  "t0": 673.852,
-  "dur": 3.26,
-  "at": "14.3",
-  "exacto": true
- },
- {
-  "id": "o_pasta",
-  "kind": "depth2",
-  "t0": 677.112,
-  "dur": 2.92,
-  "at": "14.3@no sale nada",
-  "exacto": true
- },
- {
-  "id": "n_pasta_pegote",
-  "kind": "depth2",
-  "t0": 680.032,
-  "dur": 1.5,
-  "at": "14.3@sale un pegote enorme",
-  "exacto": true
- },
- {
-  "id": "pres_ambas",
-  "kind": "presion",
-  "t0": 681.532,
-  "dur": 6.38,
-  "at": "14.4",
-  "exacto": true
- },
- {
-  "id": "o_gotas_papel",
-  "kind": "depth2",
-  "t0": 687.912,
+  "t0": 752.32,
   "dur": 2.24,
-  "at": "14.4@escup\u00eda gotas",
+  "at": "13.4",
   "exacto": true
  },
  {
-  "id": "o_bolita_macro",
+  "id": "n_tarde",
   "kind": "depth2",
-  "t0": 690.152,
-  "dur": 2.18,
-  "at": "14.5",
+  "t0": 754.56,
+  "dur": 8.46,
+  "at": "13.4@si empujas despu\u00e9s",
   "exacto": true
  },
  {
-  "id": "a_bp_example_o",
+  "id": "n_otto",
   "kind": "depth2",
-  "t0": 692.332,
-  "dur": 2.18,
-  "at": "14.5@el segundo problema",
-  "exacto": true
+  "t0": 763.02,
+  "dur": 6.64,
+  "at": "13.5",
+  "exacto": true,
+  "rot": [
+   "Nikolaus Otto",
+   "motor de cuatro tiempos \u00b7 1876",
+   0.0,
+   6.5
+  ]
  },
  {
-  "id": "bol_floja",
-  "kind": "bolilla",
-  "t0": 694.512,
-  "dur": 6.52,
-  "at": "14.6",
-  "exacto": true
- },
- {
-  "id": "o_gotea_lado",
+  "id": "n_4t",
   "kind": "depth2",
-  "t0": 701.032,
-  "dur": 3.78,
-  "at": "14.6@si quedaba floja",
+  "t0": 769.66,
+  "dur": 5.2,
+  "at": "13.5@aspira comprime explota expulsa",
   "exacto": true
  },
  {
-  "id": "o_bolita_trabada",
+  "id": "n_patente_otto",
   "kind": "depth2",
-  "t0": 704.812,
-  "dur": 2.64,
-  "at": "14.6@si quedaba apretada",
+  "t0": 774.86,
+  "dur": 3.16,
+  "at": "13.5@la patente de otto",
   "exacto": true
  },
  {
-  "id": "pot_pelo",
-  "kind": "potencias",
-  "t0": 707.452,
-  "dur": 1.18,
-  "at": "14.7",
-  "exacto": true
- },
- {
-  "id": "o_pelo_bolilla",
+  "id": "n_karl_dibuja",
   "kind": "depth2",
-  "t0": 708.632,
-  "dur": 3.34,
-  "at": "14.7@m\u00e1s finas que un pelo",
+  "t0": 778.02,
+  "dur": 5.24,
+  "at": "13.6",
   "exacto": true
  },
  {
-  "id": "o_torno_viejo",
+  "id": "n_2t",
   "kind": "depth2",
-  "t0": 711.972,
+  "t0": 783.26,
+  "dur": 4.2,
+  "at": "13.6@dos tiempos",
+  "exacto": true
+ },
+ {
+  "id": "n_trabaja",
+  "kind": "depth2",
+  "t0": 787.46,
+  "dur": 6.0,
+  "at": "13.7",
+  "exacto": true
+ },
+ {
+  "id": "n_plato",
+  "kind": "depth2",
+  "t0": 793.46,
+  "dur": 2.84,
+  "at": "13.7@con hambre",
+  "exacto": true
+ },
+ {
+  "id": "n_31dic",
+  "kind": "depth2",
+  "t0": 796.3,
+  "dur": 3.64,
+  "at": "13.8",
+  "exacto": true
+ },
+ {
+  "id": "n_quieto",
+  "kind": "depth2",
+  "t0": 799.94,
+  "dur": 1.88,
+  "at": "13.8@todav\u00eda no funcionaba",
+  "exacto": true
+ },
+ {
+  "id": "n_cena",
+  "kind": "depth2",
+  "t0": 801.82,
+  "dur": 3.58,
+  "at": "13.9",
+  "exacto": true
+ },
+ {
+  "id": "n_dice",
+  "kind": "depth2",
+  "t0": 805.4,
+  "dur": 3.14,
+  "at": "13.9@vamos al taller",
+  "exacto": true
+ },
+ {
+  "id": "n_lampara",
+  "kind": "depth2",
+  "t0": 808.54,
+  "dur": 2.33,
+  "at": "13.10",
+  "exacto": true
+ },
+ {
+  "id": "a_werkstatt_benz_t6_o_2",
+  "kind": "depth2",
+  "t0": 810.87,
+  "dur": 2.33,
+  "at": "13.10@el taller estaba fr\u00edo",
+  "exacto": true
+ },
+ {
+  "id": "n_ajusta",
+  "kind": "depth2",
+  "t0": 813.2,
+  "dur": 2.1,
+  "at": "13.10@el encendido",
+  "exacto": true
+ },
+ {
+  "id": "n_gira",
+  "kind": "depth2",
+  "t0": 815.3,
+  "dur": 2.24,
+  "at": "13.10@gir\u00f3 la rueda grande",
+  "exacto": true
+ },
+ {
+  "id": "n_nada1",
+  "kind": "depth2",
+  "t0": 817.54,
+  "dur": 1.74,
+  "at": "13.11",
+  "exacto": true
+ },
+ {
+  "id": "n_nada2",
+  "kind": "depth2",
+  "t0": 819.28,
+  "dur": 1.938,
+  "at": "13.11@otra vez",
+  "exacto": true
+ },
+ {
+  "id": "n_detiene",
+  "kind": "depth2",
+  "t0": 821.218,
+  "dur": 1.842,
+  "at": "14",
+  "exacto": true
+ },
+ {
+  "id": "n_tose",
+  "kind": "depth2",
+  "t0": 823.06,
+  "dur": 2.12,
+  "at": "15.0",
+  "exacto": true
+ },
+ {
+  "id": "n_engranajes",
+  "kind": "film",
+  "t0": 825.18,
+  "dur": 1.6,
+  "at": "15.0@y sigui\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "n_gira2",
+  "kind": "depth2",
+  "t0": 826.78,
   "dur": 3.92,
-  "at": "14.7@no hab\u00eda m\u00e1quinas",
-  "exacto": true
- },
- {
-  "id": "o_bolitas_pinza",
-  "kind": "depth2",
-  "t0": 715.892,
-  "dur": 2.34,
-  "at": "14.7@en cantidad y baratas",
-  "exacto": true
- },
- {
-  "id": "b32_lupa",
-  "kind": "depth2",
-  "t0": 718.232,
-  "dur": 4.92,
-  "at": "14.8",
+  "at": "15.1",
   "exacto": false
  },
  {
-  "id": "o_sobre_patente",
+  "id": "n_escuchan",
   "kind": "depth2",
-  "t0": 723.152,
-  "dur": 2.7,
-  "at": "14.8@patentar la idea",
-  "exacto": true
+  "t0": 830.7,
+  "dur": 6.58,
+  "at": "15.2",
+  "exacto": false
  },
  {
-  "id": "a_pat_us_o",
+  "id": "n_caras",
   "kind": "depth2",
-  "t0": 725.852,
-  "dur": 1.48,
-  "at": "14.9",
+  "t0": 837.28,
+  "dur": 4.0,
+  "at": "15.2@como si fuera m\u00fasica",
   "exacto": true
  },
  {
-  "id": "corr_patentes",
-  "kind": "corridor",
-  "t0": 727.332,
-  "dur": 4.3,
-  "at": "14.9@registr\u00f3 su pluma de bolita",
-  "exacto": true
- },
- {
-  "id": "lupa_patente",
-  "kind": "fotolupa",
-  "t0": 731.632,
-  "dur": 5.76,
-  "at": "14.9@quince de junio",
-  "exacto": true
- },
- {
-  "id": "o_1938_cal",
+  "id": "n_campanas",
   "kind": "depth2",
-  "t0": 737.392,
-  "dur": 4.86,
-  "at": "14.10",
+  "t0": 841.28,
+  "dur": 3.74,
+  "at": "15.2@empezaron a sonar las campanas",
   "exacto": true
  },
  {
-  "id": "a_bp_manifest_o",
+  "id": "n_1880",
   "kind": "depth2",
-  "t0": 742.252,
-  "dur": 2.52,
-  "at": "14.10@un problema mucho m\u00e1s grande",
+  "t0": 845.02,
+  "dur": 2.168,
+  "at": "15.2@mil ochocientos ochenta",
   "exacto": true
  },
  {
-  "id": "o_ley_diario",
+  "id": "n_fuegos",
   "kind": "depth2",
-  "t0": 744.772,
-  "dur": 2.26,
-  "at": "14.11",
+  "t0": 847.188,
+  "dur": 2.872,
+  "at": "16",
   "exacto": true
  },
  {
-  "id": "per_ley",
-  "kind": "periodico",
-  "t0": 747.032,
-  "dur": 2.18,
-  "at": "14.11@su primera ley",
-  "exacto": true
- },
- {
-  "id": "a_bp_tarnok_o",
+  "id": "s_motor_vende",
   "kind": "depth2",
-  "t0": 749.212,
-  "dur": 6.02,
-  "at": "14.11@limitaba cu\u00e1ntos jud\u00edos",
+  "t0": 850.06,
+  "dur": 4.22,
+  "at": "17.0",
   "exacto": true
  },
  {
-  "id": "b32_lee",
+  "id": "s_socios",
   "kind": "depth2",
-  "t0": 755.232,
-  "dur": 2.28,
-  "at": "14.12",
-  "exacto": true
+  "t0": 854.28,
+  "dur": 7.56,
+  "at": "17.1",
+  "exacto": false
  },
  {
-  "id": "a_bp_piarista_o",
+  "id": "s_rie",
   "kind": "depth2",
-  "t0": 757.512,
-  "dur": 2.28,
-  "at": "14.12@la familia b\u00edr\u00f3 era jud\u00eda",
+  "t0": 861.84,
+  "dur": 1.88,
+  "at": "17.1@que se dejara de fantas\u00edas",
   "exacto": true
  },
  {
-  "id": "a_paris_parade_o2",
-  "kind": "proyector",
-  "t0": 759.792,
-  "dur": 2.579,
-  "at": "14.12@hasta d\u00f3nde pod\u00edan llegar",
-  "exacto": true
- },
- {
-  "id": "o_prototipo_cafe",
+  "id": "s_pierde",
   "kind": "depth2",
-  "t0": 762.371,
-  "dur": 3.0,
-  "at": "15",
+  "t0": 863.72,
+  "dur": 4.82,
+  "at": "17.2",
+  "exacto": true
+ },
+ {
+  "id": "s_rose",
+  "kind": "depth2",
+  "t0": 868.54,
+  "dur": 11.74,
+  "at": "17.3",
+  "exacto": true,
+  "rot": [
+   "Max Rose y Friedrich Esslinger",
+   "los nuevos socios \u00b7 1883",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "s_cartel",
+  "kind": "depth2",
+  "t0": 880.28,
+  "dur": 4.78,
+  "at": "17.3@benz y compa\u00f1\u00eda",
+  "exacto": true
+ },
+ {
+  "id": "s_dinero",
+  "kind": "depth2",
+  "t0": 885.06,
+  "dur": 2.81,
+  "at": "17.4",
+  "exacto": true
+ },
+ {
+  "id": "a_zeichenbrett_benz_o_2",
+  "kind": "depth2",
+  "t0": 887.87,
+  "dur": 2.81,
+  "at": "17.4@por primera vez en diez a\u00f1os",
+  "exacto": true
+ },
+ {
+  "id": "s_dibuja",
+  "kind": "depth2",
+  "t0": 890.68,
+  "dur": 1.884,
+  "at": "17.4@empez\u00f3 a dibujar el carro",
   "exacto": true
  },
  {
   "id": "cap5",
   "kind": "capitulo",
-  "t0": 765.371,
-  "dur": 3.041,
-  "at": "16",
+  "t0": 892.564,
+  "dur": 2.636,
+  "at": "18",
   "exacto": true
  },
  {
-  "id": "o_postal_mar",
+  "id": "v_atornilla",
   "kind": "depth2",
-  "t0": 768.412,
-  "dur": 1.36,
-  "at": "17.0",
+  "t0": 895.2,
+  "dur": 7.48,
+  "at": "19.0",
   "exacto": true
  },
  {
-  "id": "a_justo_retr_o",
+  "id": "v_tornillo",
   "kind": "depth2",
-  "t0": 769.772,
-  "dur": 3.22,
-  "at": "17.0@pas\u00f3 algo que parece inventado",
+  "t0": 902.68,
+  "dur": 1.96,
+  "at": "19.0@atornillarle un motor",
   "exacto": true
  },
  {
-  "id": "o_balneario",
+  "id": "v_karl_piensa",
   "kind": "depth2",
-  "t0": 772.992,
-  "dur": 2.14,
-  "at": "17.1",
-  "exacto": true
- },
- {
-  "id": "a_crikv_b_o",
-  "kind": "depth2",
-  "t0": 775.132,
-  "dur": 1.92,
-  "at": "17.1@en un balneario de yugoslavia",
-  "exacto": true
- },
- {
-  "id": "o_olas",
-  "kind": "depth2",
-  "t0": 777.052,
-  "dur": 1.3,
-  "at": "17.1@sobre el mar",
-  "exacto": true
- },
- {
-  "id": "a_crikv_a_o",
-  "kind": "depth2",
-  "t0": 778.352,
-  "dur": 1.8,
-  "at": "17.1@y como siempre",
-  "exacto": true
- },
- {
-  "id": "b32_terraza",
-  "kind": "depth2",
-  "t0": 780.152,
-  "dur": 1.74,
-  "at": "17.1@con su pluma de bolita",
-  "exacto": true
- },
- {
-  "id": "j_mira",
-  "kind": "depth2",
-  "t0": 781.892,
-  "dur": 2.96,
-  "at": "17.2",
-  "exacto": true
- },
- {
-  "id": "lupa_justo0",
-  "kind": "fotolupa",
-  "t0": 784.852,
-  "dur": 2.88,
-  "at": "17.2@lo miraba con curiosidad",
-  "exacto": true
- },
- {
-  "id": "o_pluma_terraza",
-  "kind": "depth2",
-  "t0": 787.732,
-  "dur": 3.78,
-  "at": "17.2@esa pluma rara",
-  "exacto": true
- },
- {
-  "id": "j_acerca",
-  "kind": "depth2",
-  "t0": 791.512,
-  "dur": 2.54,
-  "at": "17.3",
-  "exacto": true
- },
- {
-  "id": "bj_charla",
-  "kind": "depth2",
-  "t0": 794.052,
-  "dur": 4.6,
-  "at": "17.3@se lo explic\u00f3",
-  "exacto": true
- },
- {
-  "id": "j_rie",
-  "kind": "depth2",
-  "t0": 798.652,
-  "dur": 1.54,
-  "at": "17.3@en su pa\u00eds",
-  "exacto": true
- },
- {
-  "id": "ret_justo",
-  "kind": "retrato",
-  "t0": 800.192,
-  "dur": 2.8,
-  "at": "17.4",
-  "exacto": true
- },
- {
-  "id": "a_justo_pres_o",
-  "kind": "depth2",
-  "t0": 802.992,
-  "dur": 1.86,
-  "at": "17.4@un general argentino",
-  "exacto": true
- },
- {
-  "id": "a_justo_banero_o",
-  "kind": "proyector",
-  "t0": 804.852,
-  "dur": 2.84,
-  "at": "17.4@que acababa de ser presidente",
-  "exacto": true
- },
- {
-  "id": "o_tarjeta",
-  "kind": "depth2",
-  "t0": 807.692,
-  "dur": 1.18,
-  "at": "17.5",
-  "exacto": true
- },
- {
-  "id": "o_tarjeta_mesa",
-  "kind": "depth2",
-  "t0": 808.872,
-  "dur": 2.22,
-  "at": "17.5@con su nombre",
-  "exacto": true
- },
- {
-  "id": "a_justo_gorra_o",
-  "kind": "depth2",
-  "t0": 811.092,
-  "dur": 3.54,
-  "at": "17.5@si alg\u00fan d\u00eda necesitaba",
-  "exacto": true
- },
- {
-  "id": "b32_guarda",
-  "kind": "depth2",
-  "t0": 814.632,
-  "dur": 3.14,
-  "at": "17.6",
+  "t0": 904.64,
+  "dur": 4.94,
+  "at": "19.1",
   "exacto": false
  },
  {
-  "id": "map_mundo",
-  "kind": "mapazoom",
-  "t0": 817.772,
-  "dur": 4.8,
-  "at": "17.6@al otro lado del mundo",
-  "exacto": true
- },
- {
-  "id": "o_tarjeta_luz",
+  "id": "a_zeichenbrett_benz_o",
   "kind": "depth2",
-  "t0": 822.572,
-  "dur": 2.44,
-  "at": "17.7",
-  "exacto": true
+  "t0": 909.58,
+  "dur": 3.36,
+  "at": "19.1@como una sola cosa",
+  "exacto": true,
+  "rot": [
+   "El tablero de dibujo de Benz",
+   "Carl-Benz-Haus, Ladenburg",
+   0.0,
+   3.36
+  ]
  },
  {
-  "id": "a_bp_nyugati_o",
+  "id": "a_xilografia_1888_benz_o",
+  "kind": "proyector",
+  "t0": 912.94,
+  "dur": 2.72,
+  "at": "19.1@era otra cosa",
+  "exacto": true,
+  "rot": [
+   "El Patent-Motorwagen",
+   "xilograf\u00eda de 1888",
+   0.0,
+   2.72
+  ]
+ },
+ {
+  "id": "v_pesa",
   "kind": "depth2",
-  "t0": 825.012,
-  "dur": 5.54,
-  "at": "17.8",
+  "t0": 915.66,
+  "dur": 4.96,
+  "at": "19.2",
   "exacto": true
  },
  {
-  "id": "b32_portafolio",
+  "id": "v_tubos",
   "kind": "depth2",
-  "t0": 830.552,
-  "dur": 1.22,
-  "at": "17.8@llevaba los planos",
+  "t0": 920.62,
+  "dur": 2.8,
+  "at": "19.2@tubos de acero",
   "exacto": true
  },
  {
-  "id": "o_portafolio",
-  "kind": "depth2",
-  "t0": 831.772,
-  "dur": 1.7,
-  "at": "17.8@en un portafolio",
-  "exacto": true
- },
- {
-  "id": "m_huida",
-  "kind": "mapa3d",
-  "t0": 833.472,
-  "dur": 2.28,
-  "at": "17.8@apenas unos d\u00edas antes",
-  "exacto": true
- },
- {
-  "id": "b32_tren_ventana",
-  "kind": "depth2",
-  "t0": 835.752,
-  "dur": 3.62,
-  "at": "17.8@una ley que prohib\u00eda",
-  "exacto": true
- },
- {
-  "id": "a_paris_lazare_o2",
-  "kind": "depth2",
-  "t0": 839.372,
-  "dur": 2.9,
-  "at": "17.9",
-  "exacto": true
- },
- {
-  "id": "o_lab_paris",
-  "kind": "depth2",
-  "t0": 842.272,
-  "dur": 1.7,
-  "at": "17.9@boulevard haussmann",
-  "exacto": true
- },
- {
-  "id": "o_placa_paris",
-  "kind": "depth2",
-  "t0": 843.972,
-  "dur": 3.84,
-  "at": "17.9@ciento cincuenta y dos",
-  "exacto": true
- },
- {
-  "id": "b_paris_tinta",
-  "kind": "depth2",
-  "t0": 847.812,
-  "dur": 1.22,
-  "at": "17.9@la tinta",
-  "exacto": true
- },
- {
-  "id": "o_paquete",
-  "kind": "depth2",
-  "t0": 849.032,
-  "dur": 3.98,
-  "at": "17.10",
-  "exacto": true
- },
- {
-  "id": "o_puntas_suizas",
-  "kind": "depth2",
-  "t0": 853.012,
-  "dur": 3.54,
-  "at": "17.10@con puntas que tra\u00eda de suiza",
-  "exacto": true
- },
- {
-  "id": "b_paris_prueba",
-  "kind": "depth2",
-  "t0": 856.552,
-  "dur": 1.68,
-  "at": "17.10@con todo lo que consegu\u00eda",
-  "exacto": true
- },
- {
-  "id": "b_socios",
-  "kind": "depth2",
-  "t0": 858.232,
-  "dur": 3.52,
-  "at": "17.11",
-  "exacto": true
- },
- {
-  "id": "o_placa_soc",
-  "kind": "depth2",
-  "t0": 861.752,
-  "dur": 4.5,
-  "at": "17.11@fund\u00f3 una peque\u00f1a sociedad",
-  "exacto": true
- },
- {
-  "id": "o_contrato",
-  "kind": "depth2",
-  "t0": 866.252,
-  "dur": 3.74,
-  "at": "17.11@algo de dinero",
-  "exacto": true
- },
- {
-  "id": "per_guerra",
-  "kind": "periodico",
-  "t0": 869.992,
-  "dur": 6.8,
-  "at": "17.12",
-  "exacto": true
- },
- {
-  "id": "a_paris_arc_o",
-  "kind": "depth2",
-  "t0": 876.792,
-  "dur": 2.28,
-  "at": "17.13",
-  "exacto": true
- },
- {
-  "id": "f_diario40",
+  "id": "v_rueda_bici",
   "kind": "film",
-  "t0": 879.072,
+  "t0": 923.42,
+  "dur": 1.82,
+  "at": "19.2@ruedas con rayos de alambre",
+  "exacto": true
+ },
+ {
+  "id": "a_nr1_museo_lateral_o",
+  "kind": "depth2",
+  "t0": 925.24,
+  "dur": 2.98,
+  "at": "19.3",
+  "exacto": true,
+  "rot": [
+   "Tres ruedas",
+   "Patent-Motorwagen N\u00ba 1",
+   0.0,
+   2.98
+  ]
+ },
+ {
+  "id": "v_super",
+  "kind": "depth2",
+  "t0": 928.22,
+  "dur": 2.2,
+  "at": "19.4",
+  "exacto": true
+ },
+ {
+  "id": "dir_dos",
+  "kind": "direccion",
+  "t0": 930.42,
+  "dur": 8.78,
+  "at": "19.4@cuando giras",
+  "exacto": true
+ },
+ {
+  "id": "v_eje_entero",
+  "kind": "depth2",
+  "t0": 939.2,
+  "dur": 9.76,
+  "at": "19.5",
+  "exacto": true
+ },
+ {
+  "id": "v_vuelca",
+  "kind": "depth2",
+  "t0": 948.96,
+  "dur": 1.78,
+  "at": "19.5@eso era peligroso",
+  "exacto": true
+ },
+ {
+  "id": "dir_una",
+  "kind": "direccion",
+  "t0": 950.74,
   "dur": 2.32,
-  "at": "17.13@el ej\u00e9rcito alem\u00e1n entr\u00f3 en francia",
-  "exacto": true
+  "at": "19.6",
+  "exacto": false
  },
  {
-  "id": "f_tropas40",
-  "kind": "film",
-  "t0": 881.392,
-  "dur": 2.46,
-  "at": "17.13@en pocas semanas",
-  "exacto": true
- },
- {
-  "id": "b_paris_ventana",
+  "id": "a_nr1_frente_museo_o",
   "kind": "depth2",
-  "t0": 883.852,
-  "dur": 4.9,
-  "at": "17.14",
+  "t0": 953.06,
+  "dur": 2.54,
+  "at": "19.6@una sola rueda adelante",
+  "exacto": true,
+  "rot": [
+   "Patent-Motorwagen N\u00ba 1",
+   "Deutsches Museum, M\u00fanich",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "a_nr1_frente_2018_o",
+  "kind": "proyector",
+  "t0": 955.6,
+  "dur": 2.54,
+  "at": "19.6@una sola rueda adelante",
+  "exacto": true,
+  "rot": [
+   "Patent-Motorwagen N\u00ba 1",
+   "Deutsches Museum, M\u00fanich",
+   2.54,
+   3.6
+  ]
+ },
+ {
+  "id": "lupa_palanca",
+  "kind": "fotolupa",
+  "t0": 958.14,
+  "dur": 1.62,
+  "at": "19.6@la giras con una palanca",
   "exacto": true
  },
  {
-  "id": "o_maleta",
+  "id": "v_timon",
   "kind": "depth2",
-  "t0": 888.752,
-  "dur": 2.26,
-  "at": "17.14@no hab\u00eda tiempo",
+  "t0": 959.76,
+  "dur": 2.04,
+  "at": "19.6@como el tim\u00f3n de un bote",
   "exacto": true
  },
  {
-  "id": "b_tarjeta_saca",
+  "id": "a_nr1_motor_museo_o",
   "kind": "depth2",
-  "t0": 891.012,
-  "dur": 2.14,
-  "at": "17.15",
+  "t0": 961.8,
+  "dur": 3.1,
+  "at": "19.7",
+  "exacto": true,
+  "rot": [
+   "El motor",
+   "un cilindro, acostado",
+   0.0,
+   3.1
+  ]
+ },
+ {
+  "id": "a_patente_ch960a_p1_o",
+  "kind": "proyector",
+  "t0": 964.9,
+  "dur": 3.54,
+  "at": "19.7@un solo cilindro",
+  "exacto": true,
+  "rot": [
+   "La patente suiza de Benz",
+   "1889 \u00b7 el motor",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "a_nr1_trasera_o",
+  "kind": "copia",
+  "t0": 968.44,
+  "dur": 3.74,
+  "at": "19.7@una rueda de metal grande",
+  "exacto": true,
+  "rot": [
+   "La patente suiza de Benz",
+   "1889 \u00b7 el motor",
+   3.54,
+   3.6
+  ]
+ },
+ {
+  "id": "v_tocadisco",
+  "kind": "depth2",
+  "t0": 972.18,
+  "dur": 1.62,
+  "at": "19.7@en un tocadiscos",
   "exacto": true
  },
  {
-  "id": "b_escribe_carta",
-  "kind": "depth2",
-  "t0": 893.152,
-  "dur": 1.82,
-  "at": "17.16",
+  "id": "col_volante",
+  "kind": "columpio",
+  "t0": 973.8,
+  "dur": 4.55,
+  "at": "19.8",
   "exacto": true
  },
  {
-  "id": "a_ba_mayo44_o2",
+  "id": "a_polea_nr1_o_2",
   "kind": "depth2",
-  "t0": 894.972,
-  "dur": 1.82,
-  "at": "17.16@escribi\u00f3 a la argentina",
+  "t0": 978.35,
+  "dur": 4.55,
+  "at": "19.8@esa rueda pesada",
   "exacto": true
  },
  {
-  "id": "o_pasaporte",
+  "id": "v_calesita",
   "kind": "depth2",
-  "t0": 896.792,
+  "t0": 982.9,
   "dur": 4.0,
-  "at": "17.16@para conseguir las visas",
+  "at": "19.8@como una calesita",
   "exacto": true
  },
  {
-  "id": "meyne",
+  "id": "v_trompo",
   "kind": "depth2",
-  "t0": 900.792,
-  "dur": 3.3,
-  "at": "17.17",
+  "t0": 986.9,
+  "dur": 8.32,
+  "at": "19.9",
   "exacto": true
  },
  {
-  "id": "meyne_maleta",
+  "id": "v_dobla",
   "kind": "depth2",
-  "t0": 904.092,
-  "dur": 1.84,
-  "at": "17.17@tambi\u00e9n perseguido",
+  "t0": 995.22,
+  "dur": 4.0,
+  "at": "19.9@si el carro doblaba",
   "exacto": true
  },
  {
-  "id": "b_meyne_abrazo",
+  "id": "v_rueda_mano",
   "kind": "depth2",
-  "t0": 905.932,
-  "dur": 1.6,
-  "at": "17.17@no se iba a ir sin \u00e9l",
+  "t0": 999.22,
+  "dur": 6.12,
+  "at": "19.10",
   "exacto": true
  },
  {
-  "id": "f_vapor",
+  "id": "v_rueda_gira",
   "kind": "film",
-  "t0": 907.532,
+  "t0": 1005.34,
+  "dur": 3.42,
+  "at": "19.10@sientes que se resiste",
+  "exacto": true
+ },
+ {
+  "id": "v_plato",
+  "kind": "depth2",
+  "t0": 1008.76,
+  "dur": 4.48,
+  "at": "19.10@acostada girando como un plato",
+  "exacto": true
+ },
+ {
+  "id": "a_nr1_desde_abajo_o",
+  "kind": "depth2",
+  "t0": 1013.24,
+  "dur": 4.42,
+  "at": "19.11",
+  "exacto": true
+ },
+ {
+  "id": "v_cano_gas",
+  "kind": "depth2",
+  "t0": 1017.66,
+  "dur": 4.58,
+  "at": "19.12",
+  "exacto": true
+ },
+ {
+  "id": "v_cano_absurdo",
+  "kind": "depth2",
+  "t0": 1022.24,
+  "dur": 6.34,
+  "at": "19.12@un carro no puede llevar un ca\u00f1o",
+  "exacto": true
+ },
+ {
+  "id": "v_ligroina",
+  "kind": "depth2",
+  "t0": 1028.58,
+  "dur": 8.54,
+  "at": "19.13",
+  "exacto": false
+ },
+ {
+  "id": "v_frascos",
+  "kind": "film",
+  "t0": 1037.12,
+  "dur": 3.5,
+  "at": "19.13@se vend\u00eda en las farmacias",
+  "exacto": true
+ },
+ {
+  "id": "v_mancha",
+  "kind": "depth2",
+  "t0": 1040.62,
+  "dur": 2.22,
+  "at": "19.13@para limpiar manchas",
+  "exacto": true
+ },
+ {
+  "id": "carb_plato",
+  "kind": "carburador",
+  "t0": 1042.84,
+  "dur": 11.2,
+  "at": "19.14",
+  "exacto": true
+ },
+ {
+  "id": "carb_caja",
+  "kind": "carburador",
+  "t0": 1054.04,
+  "dur": 2.26,
+  "at": "19.15",
+  "exacto": true
+ },
+ {
+  "id": "a_nr1_carburador_museo_o",
+  "kind": "depth2",
+  "t0": 1056.3,
+  "dur": 2.24,
+  "at": "19.15@una cajita con ligro\u00edna",
+  "exacto": true,
+  "rot": [
+   "El carburador de superficie",
+   "Patent-Motorwagen N\u00ba 1",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "lupa_partes",
+  "kind": "fotolupa",
+  "t0": 1058.54,
+  "dur": 6.92,
+  "at": "19.15@el aire pasaba por encima",
+  "exacto": true,
+  "rot": [
+   "El carburador de superficie",
+   "Patent-Motorwagen N\u00ba 1",
+   2.24,
+   3.6
+  ]
+ },
+ {
+  "id": "v_chispa",
+  "kind": "film",
+  "t0": 1065.46,
+  "dur": 2.42,
+  "at": "19.16",
+  "exacto": true
+ },
+ {
+  "id": "v_bobina",
+  "kind": "depth2",
+  "t0": 1067.88,
+  "dur": 4.24,
+  "at": "19.16@una bater\u00eda y una bobina",
+  "exacto": true
+ },
+ {
+  "id": "a_patente_ch960a_p2_o",
+  "kind": "depth2",
+  "t0": 1072.12,
+  "dur": 4.24,
+  "at": "19.16@una bater\u00eda y una bobina",
+  "exacto": true
+ },
+ {
+  "id": "col_ritmo_c",
+  "kind": "columpio",
+  "t0": 1076.36,
   "dur": 3.26,
-  "at": "17.18",
+  "at": "19.16@el empuj\u00f3n del columpio",
   "exacto": true
  },
  {
-  "id": "a_sevilla_o",
+  "id": "v_calor",
   "kind": "depth2",
-  "t0": 910.792,
-  "dur": 1.4,
-  "at": "17.18@el vapor ciudad de sevilla",
+  "t0": 1079.62,
+  "dur": 9.04,
+  "at": "19.17",
   "exacto": true
  },
  {
-  "id": "f_ba_puerto",
+  "id": "a_patente_ch960a_p3_o",
+  "kind": "depth2",
+  "t0": 1088.66,
+  "dur": 1.16,
+  "at": "19.18@rode\u00f3 de agua",
+  "exacto": true
+ },
+ {
+  "id": "pava_a",
+  "kind": "pava",
+  "t0": 1089.82,
+  "dur": 3.44,
+  "at": "19.18@el agua se calentaba",
+  "exacto": true
+ },
+ {
+  "id": "v_pava",
+  "kind": "depth2",
+  "t0": 1093.26,
+  "dur": 7.7,
+  "at": "19.18@como una pava en el fuego",
+  "exacto": true
+ },
+ {
+  "id": "a_nr3_motor_partes_o",
+  "kind": "depth2",
+  "t0": 1100.96,
+  "dur": 6.06,
+  "at": "19.19",
+  "exacto": true,
+  "rot": [
+   "El motor del N\u00ba 3",
+   "carburador, dep\u00f3sito de agua, volante",
+   0.0,
+   6.06
+  ]
+ },
+ {
+  "id": "v_cadena",
   "kind": "film",
-  "t0": 912.192,
-  "dur": 2.26,
-  "at": "17.18@atrac\u00f3 en el puerto",
+  "t0": 1107.02,
+  "dur": 2.01,
+  "at": "19.20",
   "exacto": true
  },
  {
-  "id": "b_baja_barco",
+  "id": "a_patente_ch960a_p4_o",
   "kind": "depth2",
-  "t0": 914.452,
-  "dur": 4.56,
-  "at": "17.18@entre los pasajeros",
+  "t0": 1109.03,
+  "dur": 2.01,
+  "at": "19.20@la fuerza del motor",
   "exacto": true
  },
  {
-  "id": "o_planos_puerto",
+  "id": "lupa_cadena",
+  "kind": "fotolupa",
+  "t0": 1111.04,
+  "dur": 1.04,
+  "at": "19.20@y dos cadenas",
+  "exacto": true
+ },
+ {
+  "id": "a_transmision_cadena_plano_o",
   "kind": "depth2",
-  "t0": 919.012,
-  "dur": 1.68,
-  "at": "17.18@los planos de una pluma",
-  "exacto": true
+  "t0": 1112.08,
+  "dur": 1.94,
+  "at": "19.20@como las de una bicicleta",
+  "exacto": true,
+  "rot_off": 1.94
  },
  {
-  "id": "a_ba_ideal_o2",
+  "id": "a_nr3_trasera_1926_o",
+  "kind": "proyector",
+  "t0": 1114.02,
+  "dur": 2.16,
+  "at": "19.20@para frenar",
+  "exacto": true,
+  "rot_off": 2.16
+ },
+ {
+  "id": "v_taco",
   "kind": "depth2",
-  "t0": 920.692,
-  "dur": 2.78,
-  "at": "17.19",
+  "t0": 1116.18,
+  "dur": 2.22,
+  "at": "19.20@un taco de madera",
   "exacto": true
  },
  {
-  "id": "p_familia",
+  "id": "v_menos1",
   "kind": "depth2",
-  "t0": 923.472,
-  "dur": 1.56,
-  "at": "17.19@su esposa y su hija",
+  "t0": 1118.4,
+  "dur": 6.48,
+  "at": "19.21",
   "exacto": true
  },
  {
-  "id": "p_familia_puerto",
+  "id": "v_16kmh",
   "kind": "depth2",
-  "t0": 925.032,
-  "dur": 3.783,
-  "at": "17.19@la familia entera",
+  "t0": 1124.88,
+  "dur": 2.86,
+  "at": "19.21@pod\u00eda llegar a unos diecis\u00e9is",
   "exacto": true
  },
  {
-  "id": "f_vapor2",
-  "kind": "film",
-  "t0": 928.815,
-  "dur": 4.0,
-  "at": "18",
+  "id": "a_patente_37435_o_3",
+  "kind": "depth2",
+  "t0": 1127.74,
+  "dur": 6.18,
+  "at": "19.22",
+  "exacto": true
+ },
+ {
+  "id": "v_oficina",
+  "kind": "depth2",
+  "t0": 1133.92,
+  "dur": 2.72,
+  "at": "19.22@oficina imperial de patentes",
+  "exacto": true
+ },
+ {
+  "id": "a_patente_37435_o",
+  "kind": "depth2",
+  "t0": 1136.64,
+  "dur": 4.36,
+  "at": "19.22@n\u00famero treinta y siete mil",
+  "exacto": true,
+  "rot": [
+   "Patente DRP 37435",
+   "\u00abVeh\u00edculo con motor a gas\u00bb \u00b7 1886",
+   0.0,
+   4.36
+  ]
+ },
+ {
+  "id": "lupa_patente",
+  "kind": "fotolupa",
+  "t0": 1141.0,
+  "dur": 1.92,
+  "at": "19.22@veh\u00edculo con motor a gas",
+  "exacto": true
+ },
+ {
+  "id": "a_patente_ch960a_fig1_o",
+  "kind": "depth2",
+  "t0": 1142.92,
+  "dur": 5.34,
+  "at": "19.23",
+  "exacto": true,
+  "rot": [
+   "El dibujo",
+   "patente de Benz",
+   0.0,
+   5.34
+  ]
+ },
+ {
+  "id": "doc_patente",
+  "kind": "doc3d",
+  "t0": 1148.26,
+  "dur": 2.4,
+  "at": "19.23@memoria del mundo",
+  "exacto": true
+ },
+ {
+  "id": "v_nacimiento",
+  "kind": "depth2",
+  "t0": 1150.66,
+  "dur": 3.121,
+  "at": "19.23@el certificado de nacimiento",
+  "exacto": true
+ },
+ {
+  "id": "v_patente_luz",
+  "kind": "depth2",
+  "t0": 1153.781,
+  "dur": 3.0,
+  "at": "20",
   "exacto": true
  },
  {
   "id": "cap6",
   "kind": "capitulo",
-  "t0": 932.815,
-  "dur": 2.977,
-  "at": "19",
-  "exacto": true
- },
- {
-  "id": "a_ba_mayo44_o",
-  "kind": "depth2",
-  "t0": 935.792,
-  "dur": 2.52,
-  "at": "20.0",
-  "exacto": true
- },
- {
-  "id": "f_ba_congreso",
-  "kind": "film",
-  "t0": 938.312,
-  "dur": 1.76,
-  "at": "20.0@una de las ciudades m\u00e1s grandes",
-  "exacto": true
- },
- {
-  "id": "a_ba_juramento_o",
-  "kind": "depth2",
-  "t0": 940.072,
-  "dur": 3.54,
-  "at": "20.0@ricas del mundo",
-  "exacto": true
- },
- {
-  "id": "f_ba_mayo",
-  "kind": "film",
-  "t0": 943.612,
-  "dur": 1.92,
-  "at": "20.0@edificios de estilo franc\u00e9s",
-  "exacto": true
- },
- {
-  "id": "a_ba_ideal_o",
-  "kind": "depth2",
-  "t0": 945.532,
-  "dur": 3.64,
-  "at": "20.0@y lejos, muy lejos",
-  "exacto": true
- },
- {
-  "id": "b43_espanol",
-  "kind": "depth2",
-  "t0": 949.172,
-  "dur": 1.49,
-  "at": "20.1@no hablaba castellano",
-  "exacto": true
- },
- {
-  "id": "a_ba_rivadavia_o",
-  "kind": "depth2",
-  "t0": 950.662,
-  "dur": 1.49,
-  "at": "20.1@no hablaba castellano",
-  "exacto": true
- },
- {
-  "id": "a_ba_lavalle_o2",
-  "kind": "proyector",
-  "t0": 952.152,
-  "dur": 2.26,
-  "at": "20.1@con su hermano y con meyne",
-  "exacto": true
- },
- {
-  "id": "o_placa_empresa",
-  "kind": "depth2",
-  "t0": 954.412,
-  "dur": 4.22,
-  "at": "20.1@con los tres apellidos",
-  "exacto": true
- },
- {
-  "id": "o_garaje_abre",
-  "kind": "depth2",
-  "t0": 958.632,
-  "dur": 1.96,
-  "at": "20.2",
-  "exacto": true
- },
- {
-  "id": "m_palermo",
-  "kind": "mapa3d",
-  "t0": 960.592,
-  "dur": 2.44,
-  "at": "20.2@en el barrio de palermo",
-  "exacto": true
- },
- {
-  "id": "b43_monta",
-  "kind": "depth2",
-  "t0": 963.032,
-  "dur": 1.66,
-  "at": "20.2@laboratorio y taller",
-  "exacto": true
- },
- {
-  "id": "p_banqueros",
-  "kind": "depth2",
-  "t0": 964.692,
-  "dur": 3.98,
-  "at": "20.3",
-  "exacto": true
- },
- {
-  "id": "a_ba_moreno_o",
-  "kind": "depth2",
-  "t0": 968.672,
-  "dur": 3.98,
-  "at": "20.3@necesitaban dinero",
-  "exacto": true
- },
- {
-  "id": "o_cheque",
-  "kind": "depth2",
-  "t0": 972.652,
-  "dur": 2.0,
-  "at": "20.3@poner el capital",
-  "exacto": true
- },
- {
-  "id": "trazo1",
-  "kind": "trazo",
-  "t0": 974.652,
-  "dur": 4.24,
-  "at": "20.4",
-  "exacto": true
- },
- {
-  "id": "t_hoja_cb2",
-  "kind": "depth2",
-  "t0": 978.892,
-  "dur": 2.42,
-  "at": "20.4@la hoja de papel",
-  "exacto": true
- },
- {
-  "id": "b43_desarma",
-  "kind": "depth2",
-  "t0": 981.312,
-  "dur": 6.8,
-  "at": "20.5",
-  "exacto": true
- },
- {
-  "id": "o_pluma_simple",
-  "kind": "depth2",
-  "t0": 988.112,
-  "dur": 1.52,
-  "at": "20.5@quer\u00eda una pluma m\u00e1s simple",
-  "exacto": true
- },
- {
-  "id": "bol_grav",
-  "kind": "bolilla",
-  "t0": 989.632,
-  "dur": 3.8,
-  "at": "20.5@que la tinta bajara sola",
-  "exacto": true
- },
- {
-  "id": "b43_prueba",
-  "kind": "depth2",
-  "t0": 993.432,
-  "dur": 3.1,
-  "at": "20.6",
-  "exacto": true
- },
- {
-  "id": "a_ba_asado_o",
-  "kind": "depth2",
-  "t0": 996.532,
-  "dur": 1.8,
-  "at": "20.6@pas\u00f3 algo que no esperaba",
-  "exacto": true
- },
- {
-  "id": "bol_tapa",
-  "kind": "bolilla",
-  "t0": 998.332,
-  "dur": 9.0,
-  "at": "20.7",
-  "exacto": true
- },
- {
-  "id": "o_pileta",
-  "kind": "depth2",
-  "t0": 1007.332,
-  "dur": 2.3,
-  "at": "20.8",
-  "exacto": true
- },
- {
-  "id": "n_tapon",
-  "kind": "depth2",
-  "t0": 1009.632,
-  "dur": 3.3,
-  "at": "20.8@mientras est\u00e1 puesto",
-  "exacto": true
- },
- {
-  "id": "o_tapon",
-  "kind": "depth2",
-  "t0": 1012.932,
-  "dur": 1.88,
-  "at": "20.8@no pasa ni una gota",
-  "exacto": true
- },
- {
-  "id": "b43_aprieta",
-  "kind": "depth2",
-  "t0": 1014.812,
-  "dur": 4.88,
-  "at": "20.9",
-  "exacto": true
- },
- {
-  "id": "o_trazo_debil",
-  "kind": "depth2",
-  "t0": 1019.692,
-  "dur": 1.32,
-  "at": "20.9@y menos tinta sal\u00eda",
-  "exacto": true
- },
- {
-  "id": "trazo2",
-  "kind": "trazo",
-  "t0": 1021.012,
-  "dur": 7.08,
-  "at": "20.10",
-  "exacto": true
- },
- {
-  "id": "p_operarios",
-  "kind": "depth2",
-  "t0": 1028.092,
-  "dur": 1.52,
-  "at": "20.11",
-  "exacto": false
- },
- {
-  "id": "a_ba_alpargatas_o",
-  "kind": "depth2",
-  "t0": 1029.612,
-  "dur": 1.48,
-  "at": "20.11@probaron de todo",
-  "exacto": true
- },
- {
-  "id": "o_asientos",
-  "kind": "depth2",
-  "t0": 1031.092,
-  "dur": 3.22,
-  "at": "20.11@asientos planos",
-  "exacto": true
- },
- {
-  "id": "o_bolitas_tamano",
-  "kind": "depth2",
-  "t0": 1034.312,
-  "dur": 2.34,
-  "at": "20.11@bolitas de distintos tama\u00f1os",
-  "exacto": true
- },
- {
-  "id": "bol_ranuras",
-  "kind": "bolilla",
-  "t0": 1036.652,
-  "dur": 6.44,
-  "at": "20.12",
-  "exacto": true
- },
- {
-  "id": "o_lima_ranura",
-  "kind": "depth2",
-  "t0": 1043.092,
-  "dur": 3.32,
-  "at": "20.12@por los costados",
-  "exacto": true
- },
- {
-  "id": "o_salero",
-  "kind": "depth2",
-  "t0": 1046.412,
-  "dur": 2.42,
-  "at": "20.13",
-  "exacto": true
- },
- {
-  "id": "n_salero",
-  "kind": "depth2",
-  "t0": 1048.832,
-  "dur": 4.91,
-  "at": "20.13@aunque la tapes con el dedo",
-  "exacto": true
- },
- {
-  "id": "trazo3",
-  "kind": "trazo",
-  "t0": 1053.742,
-  "dur": 4.92,
-  "at": "20.14",
-  "exacto": true
- },
- {
-  "id": "o_linea_cortada",
-  "kind": "depth2",
-  "t0": 1058.662,
-  "dur": 4.4,
-  "at": "20.14@una raya, un hueco",
-  "exacto": true
- },
- {
-  "id": "b43_reloj",
-  "kind": "depth2",
-  "t0": 1063.062,
-  "dur": 1.54,
-  "at": "20.15",
-  "exacto": true
- },
- {
-  "id": "o_reloj_pared",
-  "kind": "depth2",
-  "t0": 1064.602,
-  "dur": 1.94,
-  "at": "20.15@y el tiempo se acababa",
-  "exacto": true
- },
- {
-  "id": "p_banqueros_no",
-  "kind": "depth2",
-  "t0": 1066.542,
-  "dur": 4.96,
-  "at": "20.16",
-  "exacto": true
- },
- {
-  "id": "lang_no",
-  "kind": "depth2",
-  "t0": 1071.502,
-  "dur": 1.62,
-  "at": "20.16@no iban a poner m\u00e1s dinero",
-  "exacto": true
- },
- {
-  "id": "o_cartel_cierre",
-  "kind": "depth2",
-  "t0": 1073.122,
-  "dur": 2.775,
-  "at": "20.16@la f\u00e1brica estuvo a punto",
-  "exacto": true
- },
- {
-  "id": "o_reloj_noche",
-  "kind": "depth2",
-  "t0": 1075.897,
-  "dur": 3.0,
+  "t0": 1156.781,
+  "dur": 2.599,
   "at": "21",
+  "exacto": true
+ },
+ {
+  "id": "d_carro_patio",
+  "kind": "depth2",
+  "t0": 1159.38,
+  "dur": 7.46,
+  "at": "22.0",
+  "exacto": true
+ },
+ {
+  "id": "d_noche",
+  "kind": "depth2",
+  "t0": 1166.84,
+  "dur": 3.37,
+  "at": "22.1",
+  "exacto": true
+ },
+ {
+  "id": "a_xilografia_1888_benz_o_2",
+  "kind": "depth2",
+  "t0": 1170.21,
+  "dur": 3.37,
+  "at": "22.1@las primeras pruebas",
+  "exacto": true
+ },
+ {
+  "id": "d_parado",
+  "kind": "depth2",
+  "t0": 1173.58,
+  "dur": 1.28,
+  "at": "22.1@el motor se paraba",
+  "exacto": true
+ },
+ {
+  "id": "d_correa",
+  "kind": "depth2",
+  "t0": 1174.86,
+  "dur": 1.52,
+  "at": "22.1@la correa se sal\u00eda",
+  "exacto": true
+ },
+ {
+  "id": "d_cadena_rota",
+  "kind": "depth2",
+  "t0": 1176.38,
+  "dur": 1.64,
+  "at": "22.1@una cadena se cortaba",
+  "exacto": true
+ },
+ {
+  "id": "d_3jul",
+  "kind": "depth2",
+  "t0": 1178.02,
+  "dur": 4.22,
+  "at": "22.2",
+  "exacto": true
+ },
+ {
+  "id": "d_ring",
+  "kind": "depth2",
+  "t0": 1182.24,
+  "dur": 3.6,
+  "at": "22.2@en la avenida ring",
+  "exacto": true
+ },
+ {
+  "id": "d_publico",
+  "kind": "depth2",
+  "t0": 1185.84,
+  "dur": 0.95,
+  "at": "22.2@vio un autom\u00f3vil andando",
+  "exacto": true
+ },
+ {
+  "id": "a_replica_1886_b_o",
+  "kind": "depth2",
+  "t0": 1186.79,
+  "dur": 0.95,
+  "at": "22.2@vio un autom\u00f3vil andando",
+  "exacto": true
+ },
+ {
+  "id": "per_diario",
+  "kind": "periodico",
+  "t0": 1187.74,
+  "dur": 3.18,
+  "at": "22.3",
+  "exacto": true
+ },
+ {
+  "id": "d_rien",
+  "kind": "depth2",
+  "t0": 1190.92,
+  "dur": 1.56,
+  "at": "22.3@la gente se re\u00eda",
+  "exacto": true
+ },
+ {
+  "id": "d_vecinos",
+  "kind": "depth2",
+  "t0": 1192.48,
+  "dur": 5.34,
+  "at": "22.4",
+  "exacto": true
+ },
+ {
+  "id": "d_diablo",
+  "kind": "depth2",
+  "t0": 1197.82,
+  "dur": 1.44,
+  "at": "22.4@cosa del diablo",
+  "exacto": true
+ },
+ {
+  "id": "d_chicos",
+  "kind": "depth2",
+  "t0": 1199.26,
+  "dur": 2.34,
+  "at": "22.4@los chicos corr\u00edan",
+  "exacto": true
+ },
+ {
+  "id": "d_caballos",
+  "kind": "film",
+  "t0": 1201.6,
+  "dur": 1.86,
+  "at": "22.4@los caballos se espantaban",
+  "exacto": true
+ },
+ {
+  "id": "d_cochero",
+  "kind": "depth2",
+  "t0": 1203.46,
+  "dur": 5.3,
+  "at": "22.4@los cocheros",
+  "exacto": true
+ },
+ {
+  "id": "d_policia",
+  "kind": "depth2",
+  "t0": 1208.76,
+  "dur": 2.56,
+  "at": "22.5",
+  "exacto": true
+ },
+ {
+  "id": "lupa_permiso",
+  "kind": "fotolupa",
+  "t0": 1211.32,
+  "dur": 1.52,
+  "at": "22.5@m\u00e1s de una vez",
+  "exacto": true
+ },
+ {
+  "id": "a_fuehrerschein_1888_o",
+  "kind": "depth2",
+  "t0": 1212.84,
+  "dur": 2.66,
+  "at": "22.5@no pod\u00eda circular",
+  "exacto": true,
+  "rot": [
+   "El permiso de circulaci\u00f3n",
+   "Mannheim, 1888",
+   0.0,
+   2.66
+  ]
+ },
+ {
+  "id": "d_perfeccion",
+  "kind": "depth2",
+  "t0": 1215.5,
+  "dur": 1.46,
+  "at": "22.6",
+  "exacto": true
+ },
+ {
+  "id": "a_karl_benz_1889_o",
+  "kind": "depth2",
+  "t0": 1216.96,
+  "dur": 5.52,
+  "at": "22.6@era un perfeccionista",
+  "exacto": true,
+  "rot": [
+   "Karl Benz",
+   "hacia 1889",
+   0.0,
+   5.52
+  ]
+ },
+ {
+  "id": "a_nr3_lateral_1887_o",
+  "kind": "proyector",
+  "t0": 1222.48,
+  "dur": 3.72,
+  "at": "22.6@un segundo modelo",
+  "exacto": true,
+  "rot": [
+   "Patent-Motorwagen N\u00ba 3",
+   "el que us\u00f3 Bertha",
+   0.0,
+   3.72
+  ]
+ },
+ {
+  "id": "a_motorwagen_serie_1888_o",
+  "kind": "copia",
+  "t0": 1226.2,
+  "dur": 1.56,
+  "at": "22.6@con ruedas de madera",
+  "exacto": true,
+  "rot_off": 1.56
+ },
+ {
+  "id": "d_no_vende",
+  "kind": "depth2",
+  "t0": 1227.76,
+  "dur": 4.32,
+  "at": "22.7",
+  "exacto": true
+ },
+ {
+  "id": "d_lista",
+  "kind": "depth2",
+  "t0": 1232.08,
+  "dur": 1.48,
+  "at": "22.7@todav\u00eda no estaba listo",
+  "exacto": true
+ },
+ {
+  "id": "d_1887",
+  "kind": "depth2",
+  "t0": 1233.56,
+  "dur": 6.96,
+  "at": "22.8",
+  "exacto": true
+ },
+ {
+  "id": "d_polvo",
+  "kind": "depth2",
+  "t0": 1240.52,
+  "dur": 2.1,
+  "at": "22.8@casi nadie compr\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "d_socios_hartos",
+  "kind": "depth2",
+  "t0": 1242.62,
+  "dur": 7.56,
+  "at": "22.9",
+  "exacto": true
+ },
+ {
+  "id": "d_juguete_f",
+  "kind": "film",
+  "t0": 1250.18,
+  "dur": 1.56,
+  "at": "22.9@asustaba a los caballos",
+  "exacto": true
+ },
+ {
+  "id": "d_sombra",
+  "kind": "depth2",
+  "t0": 1251.74,
+  "dur": 5.24,
+  "at": "22.10",
+  "exacto": true
+ },
+ {
+  "id": "d_bertha_cocina",
+  "kind": "depth2",
+  "t0": 1256.98,
+  "dur": 2.42,
+  "at": "22.11",
+  "exacto": true
+ },
+ {
+  "id": "d_bertha_taller",
+  "kind": "depth2",
+  "t0": 1259.4,
+  "dur": 1.1,
+  "at": "22.11@desde el taller",
+  "exacto": true
+ },
+ {
+  "id": "d_cena",
+  "kind": "depth2",
+  "t0": 1260.5,
+  "dur": 3.66,
+  "at": "22.11@desde la mesa de la cena",
+  "exacto": true
+ },
+ {
+  "id": "d_patio_vueltas",
+  "kind": "depth2",
+  "t0": 1264.16,
+  "dur": 7.36,
+  "at": "22.12",
+  "exacto": true
+ },
+ {
+  "id": "d_curiosidad",
+  "kind": "depth2",
+  "t0": 1271.52,
+  "dur": 4.28,
+  "at": "22.12@es una curiosidad",
+  "exacto": true
+ },
+ {
+  "id": "d_futuro",
+  "kind": "depth2",
+  "t0": 1275.8,
+  "dur": 1.68,
+  "at": "22.12@es el futuro",
+  "exacto": true
+ },
+ {
+  "id": "d_decide",
+  "kind": "depth2",
+  "t0": 1277.48,
+  "dur": 3.36,
+  "at": "22.13",
+  "exacto": true
+ },
+ {
+  "id": "d_mano",
+  "kind": "depth2",
+  "t0": 1280.84,
+  "dur": 1.555,
+  "at": "22.13@lo iba a hacer ella",
   "exacto": true
  },
  {
   "id": "cap7",
   "kind": "capitulo",
-  "t0": 1078.897,
-  "dur": 2.665,
-  "at": "22",
+  "t0": 1282.395,
+  "dur": 2.885,
+  "at": "23",
   "exacto": true
  },
  {
-  "id": "n_pajita_vaso",
-  "kind": "depth2",
-  "t0": 1081.562,
-  "dur": 3.82,
-  "at": "23.0",
-  "exacto": true
- },
- {
-  "id": "o_pajita_entra",
-  "kind": "depth2",
-  "t0": 1085.382,
-  "dur": 1.56,
-  "at": "23.0@m\u00e9tela en un vaso",
-  "exacto": true
- },
- {
-  "id": "n_dedo_tapa",
-  "kind": "depth2",
-  "t0": 1086.942,
-  "dur": 2.4,
-  "at": "23.0@tapa el agujero",
-  "exacto": true
- },
- {
-  "id": "n_saca_pajita",
-  "kind": "depth2",
-  "t0": 1089.342,
-  "dur": 3.38,
-  "at": "23.1",
-  "exacto": true
- },
- {
-  "id": "cap_pajita",
-  "kind": "capilar",
-  "t0": 1092.722,
-  "dur": 5.6,
-  "at": "23.2",
-  "exacto": true
- },
- {
-  "id": "o_pajita_macro",
-  "kind": "depth2",
-  "t0": 1098.322,
-  "dur": 1.02,
-  "at": "23.2@desde abajo",
-  "exacto": true
- },
- {
-  "id": "o_tubo_fino",
-  "kind": "depth2",
-  "t0": 1099.342,
-  "dur": 3.8,
-  "at": "23.3",
-  "exacto": true
- },
- {
-  "id": "o_capilares",
-  "kind": "depth2",
-  "t0": 1103.142,
-  "dur": 4.86,
-  "at": "23.3@en un tubo muy finito",
-  "exacto": true
- },
- {
-  "id": "o_capil",
-  "kind": "depth2",
-  "t0": 1108.002,
-  "dur": 1.36,
-  "at": "23.3@capilaridad",
-  "exacto": true
- },
- {
-  "id": "o_servilleta",
-  "kind": "depth2",
-  "t0": 1109.362,
-  "dur": 4.86,
-  "at": "23.4",
-  "exacto": true
- },
- {
-  "id": "cap_servilleta",
-  "kind": "capilar",
-  "t0": 1114.222,
-  "dur": 3.86,
-  "at": "23.4@se moje toda hacia arriba",
-  "exacto": true
- },
- {
-  "id": "b43_idea",
-  "kind": "depth2",
-  "t0": 1118.082,
-  "dur": 4.48,
-  "at": "23.5",
-  "exacto": true
- },
- {
-  "id": "b43_anota",
-  "kind": "depth2",
-  "t0": 1122.562,
-  "dur": 1.6,
-  "at": "23.5@ah\u00ed estaba la respuesta",
-  "exacto": true
- },
- {
-  "id": "cap_pluma",
-  "kind": "capilar",
-  "t0": 1124.162,
-  "dur": 6.08,
-  "at": "23.5@no hab\u00eda que empujar",
-  "exacto": true
- },
- {
-  "id": "o_pipeta",
-  "kind": "depth2",
-  "t0": 1130.242,
-  "dur": 0.8,
-  "at": "23.6",
-  "exacto": false
- },
- {
-  "id": "bol_capilar",
-  "kind": "bolilla",
-  "t0": 1131.042,
-  "dur": 7.12,
-  "at": "23.6@un tubo finito",
-  "exacto": true
- },
- {
-  "id": "o_menisco",
-  "kind": "depth2",
-  "t0": 1138.162,
-  "dur": 2.4,
-  "at": "23.7",
-  "exacto": true
- },
- {
-  "id": "lupa_parts",
-  "kind": "fotolupa",
-  "t0": 1140.562,
-  "dur": 5.22,
-  "at": "23.7@entre la bolita y su asiento",
-  "exacto": true
- },
- {
-  "id": "cb_pajita",
-  "kind": "depth2",
-  "t0": 1145.782,
-  "dur": 1.96,
-  "at": "23.7@igual que el agua en la pajita",
-  "exacto": true
- },
- {
-  "id": "bol_escribe",
-  "kind": "bolilla",
-  "t0": 1147.742,
-  "dur": 6.42,
-  "at": "23.8",
-  "exacto": true
- },
- {
-  "id": "o_columna_baja",
-  "kind": "depth2",
-  "t0": 1154.162,
-  "dur": 3.2,
-  "at": "23.8@baja un poquito",
-  "exacto": true
- },
- {
-  "id": "o_linea_lenta",
-  "kind": "depth2",
-  "t0": 1157.362,
-  "dur": 3.34,
-  "at": "23.8@sin pist\u00f3n, sin presi\u00f3n",
-  "exacto": true
- },
- {
-  "id": "t_mesa_noche",
-  "kind": "depth2",
-  "t0": 1160.702,
-  "dur": 4.24,
-  "at": "23.9",
-  "exacto": true
- },
- {
-  "id": "o_proto_hoja",
-  "kind": "depth2",
-  "t0": 1164.942,
-  "dur": 3.7,
-  "at": "23.9@una pluma nueva",
-  "exacto": true
- },
- {
-  "id": "b43_apoya",
-  "kind": "depth2",
-  "t0": 1168.642,
-  "dur": 3.52,
-  "at": "23.10",
-  "exacto": false
- },
- {
-  "id": "trazo4",
-  "kind": "trazo",
-  "t0": 1172.162,
-  "dur": 2.68,
-  "at": "23.11",
-  "exacto": true
- },
- {
-  "id": "o_linea_azul",
-  "kind": "depth2",
-  "t0": 1174.842,
-  "dur": 4.42,
-  "at": "23.12",
-  "exacto": true
- },
- {
-  "id": "b43_dedo",
-  "kind": "depth2",
-  "t0": 1179.262,
-  "dur": 2.92,
-  "at": "23.12@cuando pasa el dedo",
-  "exacto": true
- },
- {
-  "id": "b43_sonrie",
-  "kind": "depth2",
-  "t0": 1182.182,
-  "dur": 1.561,
-  "at": "23.12@ya est\u00e1 seca",
-  "exacto": true
- },
- {
-  "id": "o_linea_cruza",
-  "kind": "depth2",
-  "t0": 1183.743,
-  "dur": 3.919,
-  "at": "24",
-  "exacto": true
- },
- {
-  "id": "a_pat_us_o2",
-  "kind": "depth2",
-  "t0": 1187.662,
-  "dur": 3.26,
-  "at": "25.0",
-  "exacto": true
- },
- {
-  "id": "doc_patente",
-  "kind": "doc3d",
-  "t0": 1190.922,
-  "dur": 2.26,
-  "at": "25.0@la argentina le dio la patente",
-  "exacto": true
- },
- {
-  "id": "a_ny_vj_o2",
-  "kind": "depth2",
-  "t0": 1193.182,
-  "dur": 2.4,
-  "at": "25.0@siete d\u00edas despu\u00e9s",
-  "exacto": true
- },
- {
-  "id": "lupa_pat2",
-  "kind": "fotolupa",
-  "t0": 1195.582,
-  "dur": 1.32,
-  "at": "25.0@estados unidos",
-  "exacto": true
- },
- {
-  "id": "o_pat_capil",
-  "kind": "depth2",
-  "t0": 1196.902,
-  "dur": 5.4,
-  "at": "25.1",
-  "exacto": true
- },
- {
-  "id": "o_sombra",
-  "kind": "depth2",
-  "t0": 1202.302,
-  "dur": 1.94,
-  "at": "25.1@alguien va a encontrar",
-  "exacto": true
- },
- {
-  "id": "o_maquina_bolitas",
-  "kind": "depth2",
-  "t0": 1204.242,
-  "dur": 4.52,
-  "at": "25.2",
-  "exacto": true
- },
- {
-  "id": "p_torno",
-  "kind": "depth2",
-  "t0": 1208.762,
-  "dur": 3.48,
-  "at": "25.2@hubo que fabricar m\u00e1quinas especiales",
-  "exacto": true
- },
- {
-  "id": "o_calibre",
-  "kind": "depth2",
-  "t0": 1212.242,
-  "dur": 2.76,
-  "at": "25.2@con una precisi\u00f3n",
-  "exacto": true
- },
- {
-  "id": "p_cuarenta",
-  "kind": "depth2",
-  "t0": 1215.002,
-  "dur": 2.02,
-  "at": "25.3",
-  "exacto": true
- },
- {
-  "id": "a_ba_zapatos_o",
-  "kind": "depth2",
-  "t0": 1217.022,
-  "dur": 4.04,
-  "at": "25.3@unos cuarenta operarios",
-  "exacto": true
- },
- {
-  "id": "o_pens_bandeja",
-  "kind": "depth2",
-  "t0": 1221.062,
-  "dur": 1.02,
-  "at": "25.3@una por una",
-  "exacto": true
- },
- {
-  "id": "o_eterpen",
-  "kind": "depth2",
-  "t0": 1222.082,
-  "dur": 3.76,
-  "at": "25.4",
-  "exacto": true
- },
- {
-  "id": "nombre_birome",
-  "kind": "tipos",
-  "t0": 1225.842,
-  "dur": 2.45,
-  "at": "25.4@le pusieron un nombre",
-  "exacto": true
- },
- {
-  "id": "lupa_birome_bmb",
-  "kind": "fotolupa",
-  "t0": 1228.292,
-  "dur": 5.04,
-  "at": "25.4@de dos apellidos",
-  "exacto": true
- },
- {
-  "id": "a_biromes_o",
-  "kind": "depth2",
-  "t0": 1233.332,
-  "dur": 1.65,
-  "at": "25.5",
-  "exacto": true
- },
- {
-  "id": "o_libreria",
-  "kind": "depth2",
-  "t0": 1234.982,
-  "dur": 1.56,
-  "at": "25.5@y aun as\u00ed",
-  "exacto": true
- },
- {
-  "id": "a_ba_peuser_o",
-  "kind": "depth2",
-  "t0": 1236.542,
-  "dur": 5.76,
-  "at": "25.5@a algunos libreros",
-  "exacto": true
- },
- {
-  "id": "n_juega_pluma",
-  "kind": "depth2",
-  "t0": 1242.302,
-  "dur": 1.78,
-  "at": "25.5@las vend\u00edan como juguetes",
-  "exacto": true
- },
- {
-  "id": "p_clientes",
-  "kind": "depth2",
-  "t0": 1244.082,
-  "dur": 2.89,
-  "at": "25.6",
-  "exacto": true
- },
- {
-  "id": "a_ba_corrientes47_o",
-  "kind": "depth2",
-  "t0": 1246.972,
-  "dur": 2.89,
-  "at": "25.6@pero la gente empez\u00f3",
-  "exacto": true
- },
- {
-  "id": "lupa_birome_aviso",
-  "kind": "fotolupa",
-  "t0": 1249.862,
-  "dur": 3.1,
-  "at": "25.6@la tinta duraba meses",
-  "exacto": true
- },
- {
-  "id": "o_carbonico",
-  "kind": "depth2",
-  "t0": 1252.962,
-  "dur": 1.3,
-  "at": "25.6@papel carb\u00f3nico",
-  "exacto": true
- },
- {
-  "id": "a_bp_writing_o",
-  "kind": "depth2",
-  "t0": 1254.262,
-  "dur": 1.744,
-  "at": "25.6@y no manchaban",
-  "exacto": true
- },
- {
-  "id": "t04_lampara",
-  "kind": "depth2",
-  "t0": 1256.006,
-  "dur": 3.0,
-  "at": "26",
-  "exacto": true
- },
- {
-  "id": "cap8",
-  "kind": "capitulo",
-  "t0": 1259.006,
-  "dur": 2.916,
-  "at": "27",
-  "exacto": true
- },
- {
-  "id": "a_raf_bc_o",
-  "kind": "depth2",
-  "t0": 1261.922,
-  "dur": 2.28,
-  "at": "28.0",
-  "exacto": true
- },
- {
-  "id": "a_lanc_bombing_o",
-  "kind": "proyector",
-  "t0": 1264.202,
-  "dur": 2.06,
-  "at": "28.0@la guerra segu\u00eda",
-  "exacto": true
- },
- {
-  "id": "a_raf_mccarthy_o",
-  "kind": "copia",
-  "t0": 1266.262,
-  "dur": 3.4,
-  "at": "28.0@hab\u00eda un lugar",
-  "exacto": true
- },
- {
-  "id": "o_bombardero",
-  "kind": "depth2",
-  "t0": 1269.662,
-  "dur": 1.62,
-  "at": "28.0@el cielo",
-  "exacto": true
- },
- {
-  "id": "n_valija",
-  "kind": "depth2",
-  "t0": 1271.282,
-  "dur": 2.34,
-  "at": "28.1",
-  "exacto": true
- },
- {
-  "id": "a_lanc_vuelo_o",
-  "kind": "depth2",
-  "t0": 1273.622,
-  "dur": 3.58,
-  "at": "28.1@en un avi\u00f3n",
-  "exacto": true
- },
- {
-  "id": "o_champu",
-  "kind": "depth2",
-  "t0": 1277.202,
-  "dur": 1.48,
-  "at": "28.1@por todos lados",
-  "exacto": true
- },
- {
-  "id": "alt_champu",
-  "kind": "altura",
-  "t0": 1278.682,
-  "dur": 4.78,
-  "at": "28.2",
-  "exacto": true
- },
- {
-  "id": "cb_champu",
-  "kind": "depth2",
-  "t0": 1283.462,
-  "dur": 5.14,
-  "at": "28.2@y el aire que estaba encerrado",
-  "exacto": true
- },
- {
-  "id": "alt_pluma",
-  "kind": "altura",
-  "t0": 1288.602,
-  "dur": 3.98,
-  "at": "28.3",
-  "exacto": true
- },
- {
-  "id": "a_lanc_115_o",
-  "kind": "depth2",
-  "t0": 1292.582,
-  "dur": 1.76,
-  "at": "28.3@sub\u00edan a miles de metros",
-  "exacto": true
- },
- {
-  "id": "o_pluma_avion",
-  "kind": "depth2",
-  "t0": 1294.342,
-  "dur": 2.76,
-  "at": "28.3@la burbuja de aire",
-  "exacto": true
- },
- {
-  "id": "o_mapa_manchado",
-  "kind": "depth2",
-  "t0": 1297.102,
-  "dur": 2.64,
-  "at": "28.3@y empujaba la tinta hacia afuera",
-  "exacto": true
- },
- {
-  "id": "nav_escribe",
-  "kind": "depth2",
-  "t0": 1299.742,
-  "dur": 1.94,
-  "at": "28.4",
-  "exacto": true
- },
- {
-  "id": "lupa_wireless",
-  "kind": "fotolupa",
-  "t0": 1301.682,
-  "dur": 1.88,
-  "at": "28.4@rumbos, horas y posiciones",
-  "exacto": true
- },
- {
-  "id": "f_avion",
-  "kind": "film",
-  "t0": 1303.562,
-  "dur": 1.38,
-  "at": "28.4@en pleno vuelo",
-  "exacto": true
- },
- {
-  "id": "a_lanc_engineer_o",
-  "kind": "depth2",
-  "t0": 1304.942,
-  "dur": 1.78,
-  "at": "28.4@terminaban con las manos",
-  "exacto": true
- },
- {
-  "id": "nav_mancha",
-  "kind": "depth2",
-  "t0": 1306.722,
-  "dur": 1.32,
-  "at": "28.4@manchados",
-  "exacto": true
- },
- {
-  "id": "alt_birome",
-  "kind": "altura",
-  "t0": 1308.042,
-  "dur": 8.3,
-  "at": "28.5",
-  "exacto": true
- },
- {
-  "id": "nav_birome",
-  "kind": "depth2",
-  "t0": 1316.342,
-  "dur": 1.01,
-  "at": "28.5@a cualquier altura",
-  "exacto": true
- },
- {
-  "id": "a_lanc_wireless_o",
-  "kind": "depth2",
-  "t0": 1317.352,
-  "dur": 1.01,
-  "at": "28.5@a cualquier altura",
-  "exacto": true
- },
- {
-  "id": "p_martin",
-  "kind": "depth2",
-  "t0": 1318.362,
-  "dur": 3.98,
-  "at": "28.6",
-  "exacto": true
- },
- {
-  "id": "a_raf_canada_o",
-  "kind": "depth2",
-  "t0": 1322.342,
-  "dur": 6.08,
-  "at": "28.6@y vio la oportunidad",
-  "exacto": true
- },
- {
-  "id": "cifra_raf",
-  "kind": "tipos",
-  "t0": 1328.422,
-  "dur": 1.36,
-  "at": "28.6@treinta mil plumas",
-  "exacto": true
- },
- {
-  "id": "o_fabrica_miles",
-  "kind": "depth2",
-  "t0": 1329.782,
-  "dur": 4.24,
-  "at": "28.7",
-  "exacto": true
- },
- {
-  "id": "a_lanc_fabrica_o",
-  "kind": "depth2",
-  "t0": 1334.022,
-  "dur": 4.28,
-  "at": "28.7@y le pusieron un nombre m\u00e1s corto",
-  "exacto": true
- },
- {
-  "id": "o_caja_biro",
-  "kind": "depth2",
-  "t0": 1338.302,
-  "dur": 2.52,
-  "at": "28.7@el apellido del inventor",
-  "exacto": true
- },
- {
-  "id": "nav_vuelve",
-  "kind": "depth2",
-  "t0": 1340.822,
-  "dur": 1.53,
-  "at": "28.8",
-  "exacto": true
- },
- {
-  "id": "a_raf_gforge_o",
-  "kind": "depth2",
-  "t0": 1342.352,
-  "dur": 1.53,
-  "at": "28.8@los pilotos y navegantes",
-  "exacto": true
- },
- {
-  "id": "a_raf_aable_o",
-  "kind": "proyector",
-  "t0": 1343.882,
-  "dur": 3.82,
-  "at": "28.8@con su biro en el bolsillo",
-  "exacto": true
- },
- {
-  "id": "p_ingles",
-  "kind": "depth2",
-  "t0": 1347.702,
-  "dur": 2.58,
-  "at": "28.8@a cualquier bol\u00edgrafo",
-  "exacto": true
- },
- {
-  "id": "a_gimbels_bridge_o",
-  "kind": "depth2",
-  "t0": 1350.282,
-  "dur": 2.4,
-  "at": "28.9",
-  "exacto": true
- },
- {
-  "id": "o_eversharp",
-  "kind": "depth2",
-  "t0": 1352.682,
-  "dur": 7.22,
-  "at": "28.9@una empresa grande de plumas",
-  "exacto": true
- },
- {
-  "id": "cifra_2m",
-  "kind": "tipos",
-  "t0": 1359.902,
-  "dur": 5.06,
-  "at": "28.10",
-  "exacto": true
- },
- {
-  "id": "o_dolares",
-  "kind": "depth2",
-  "t0": 1364.962,
-  "dur": 1.58,
-  "at": "28.10@era una fortuna",
-  "exacto": true
- },
- {
-  "id": "o_fabrica_lenta",
-  "kind": "depth2",
-  "t0": 1366.542,
-  "dur": 3.26,
-  "at": "28.11",
-  "exacto": true
- },
- {
-  "id": "a_chi_state_o",
-  "kind": "depth2",
-  "t0": 1369.802,
-  "dur": 2.15,
-  "at": "28.11@alguien m\u00e1s se le iba a adelantar",
-  "exacto": true
- },
- {
-  "id": "o_bomb_nubes",
-  "kind": "depth2",
-  "t0": 1371.952,
-  "dur": 3.0,
-  "at": "29",
-  "exacto": true
- },
- {
-  "id": "cap9",
-  "kind": "capitulo",
-  "t0": 1374.952,
-  "dur": 4.79,
-  "at": "30",
-  "exacto": true
- },
- {
-  "id": "m_chicago",
+  "id": "m_cannstatt",
   "kind": "mapa3d",
-  "t0": 1379.742,
-  "dur": 1.8,
-  "at": "31.0",
+  "t0": 1285.28,
+  "dur": 6.92,
+  "at": "24.0",
   "exacto": true
  },
  {
-  "id": "rey",
+  "id": "a_gottlieb_daimler_o",
   "kind": "depth2",
-  "t0": 1381.542,
-  "dur": 3.64,
-  "at": "31.0@milton reynolds",
-  "exacto": true
+  "t0": 1292.2,
+  "dur": 3.6,
+  "at": "24.1",
+  "exacto": true,
+  "rot": [
+   "Gottlieb Daimler",
+   "1834 \u2013 1900",
+   0.0,
+   3.6
+  ]
  },
  {
-  "id": "rey_reloj",
+  "id": "o_otto_fabrica",
   "kind": "depth2",
-  "t0": 1385.182,
-  "dur": 1.54,
-  "at": "31.0@nada de paciencia",
+  "t0": 1295.8,
+  "dur": 7.2,
+  "at": "24.1@director t\u00e9cnico",
   "exacto": true
  },
  {
-  "id": "rey_prueba",
+  "id": "a_maybach_1900_o",
   "kind": "depth2",
-  "t0": 1386.722,
-  "dur": 1.58,
-  "at": "31.1",
-  "exacto": true
+  "t0": 1303.0,
+  "dur": 6.84,
+  "at": "24.2",
+  "exacto": true,
+  "rot": [
+   "Wilhelm Maybach",
+   "1846 \u2013 1929",
+   0.0,
+   6.5
+  ]
  },
  {
-  "id": "a_birome_I_o",
+  "id": "o_orfanato",
   "kind": "depth2",
-  "t0": 1388.302,
-  "dur": 5.62,
-  "at": "31.1@alguien le muestra una birome argentina",
+  "t0": 1309.84,
+  "dur": 3.48,
+  "at": "24.2@en un orfanato",
   "exacto": true
  },
  {
-  "id": "rey_sonrie",
+  "id": "o_invernadero",
   "kind": "depth2",
-  "t0": 1393.922,
-  "dur": 2.16,
-  "at": "31.1@la cosa m\u00e1s vendida",
+  "t0": 1313.32,
+  "dur": 8.34,
+  "at": "24.3",
   "exacto": true
  },
  {
-  "id": "rey_lee",
+  "id": "o_dentro",
   "kind": "depth2",
-  "t0": 1396.082,
-  "dur": 2.46,
-  "at": "31.2",
-  "exacto": true
- },
- {
-  "id": "o_patente_lupa",
-  "kind": "depth2",
-  "t0": 1398.542,
-  "dur": 2.72,
-  "at": "31.2@pero reynolds la ley\u00f3 bien",
-  "exacto": true
- },
- {
-  "id": "lupa_capil",
-  "kind": "fotolupa",
-  "t0": 1401.262,
-  "dur": 2.4,
-  "at": "31.2@la patente proteg\u00eda",
-  "exacto": true
- },
- {
-  "id": "o_receta",
-  "kind": "depth2",
-  "t0": 1403.662,
-  "dur": 2.58,
-  "at": "31.3",
-  "exacto": true
- },
- {
-  "id": "o_receta_tacha",
-  "kind": "depth2",
-  "t0": 1406.242,
-  "dur": 6.06,
-  "at": "31.3@cambiando un solo ingrediente",
-  "exacto": true
- },
- {
-  "id": "split_copia",
-  "kind": "split",
-  "t0": 1412.302,
-  "dur": 1.4,
-  "at": "31.3@bajaba por la gravedad",
-  "exacto": true
- },
- {
-  "id": "o_gravedad",
-  "kind": "depth2",
-  "t0": 1413.702,
-  "dur": 1.5,
-  "at": "31.3@por su propio peso",
-  "exacto": true
- },
- {
-  "id": "o_tinta_liquida",
-  "kind": "depth2",
-  "t0": 1415.202,
-  "dur": 2.24,
-  "at": "31.4",
-  "exacto": true
- },
- {
-  "id": "o_tubo_grande",
-  "kind": "depth2",
-  "t0": 1417.442,
-  "dur": 4.62,
-  "at": "31.4@y un tubo m\u00e1s grande",
-  "exacto": true
- },
- {
-  "id": "o_gotea_bolsillo",
-  "kind": "depth2",
-  "t0": 1422.062,
-  "dur": 1.26,
-  "at": "31.4@tiende a gotear",
-  "exacto": true
- },
- {
-  "id": "o_miras",
-  "kind": "depth2",
-  "t0": 1423.322,
-  "dur": 4.16,
-  "at": "31.5",
-  "exacto": true
- },
- {
-  "id": "a_raf_gfg_jun_o",
-  "kind": "depth2",
-  "t0": 1427.482,
-  "dur": 2.64,
-  "at": "31.5@de los bombarderos de la guerra",
-  "exacto": true
- },
- {
-  "id": "o_aluminio",
-  "kind": "depth2",
-  "t0": 1430.122,
-  "dur": 2.18,
-  "at": "31.5@de aluminio de aviones",
-  "exacto": true
- },
- {
-  "id": "rey_fabrica",
-  "kind": "depth2",
-  "t0": 1432.302,
-  "dur": 2.54,
-  "at": "31.6",
-  "exacto": true
- },
- {
-  "id": "a_chi_state_o2",
-  "kind": "depth2",
-  "t0": 1434.842,
-  "dur": 0.92,
-  "at": "31.6@lo lanz\u00f3 a la venta en semanas",
-  "exacto": true
- },
- {
-  "id": "o_cal_1945",
-  "kind": "depth2",
-  "t0": 1435.762,
-  "dur": 1.22,
-  "at": "31.6@en semanas",
-  "exacto": true
- },
- {
-  "id": "per_gimbels",
-  "kind": "periodico",
-  "t0": 1436.982,
-  "dur": 2.84,
-  "at": "31.7@veintinueve de octubre",
-  "exacto": true
- },
- {
-  "id": "a_gimbels_o2",
-  "kind": "depth2",
-  "t0": 1439.822,
-  "dur": 3.24,
-  "at": "31.7@en nueva york",
-  "exacto": true
- },
- {
-  "id": "o_puertas",
-  "kind": "depth2",
-  "t0": 1443.062,
-  "dur": 4.98,
-  "at": "31.7@abri\u00f3 sus puertas",
-  "exacto": true
- },
- {
-  "id": "cb_rocket",
-  "kind": "depth2",
-  "t0": 1448.042,
-  "dur": 1.74,
-  "at": "31.7@reynolds rocket",
-  "exacto": true
- },
- {
-  "id": "cifra_precio",
-  "kind": "tipos",
-  "t0": 1449.782,
-  "dur": 4.2,
-  "at": "31.8",
-  "exacto": true
- },
- {
-  "id": "p_obrero",
-  "kind": "depth2",
-  "t0": 1453.982,
-  "dur": 2.82,
-  "at": "31.8@m\u00e1s o menos lo que ganaba",
-  "exacto": true
- },
- {
-  "id": "p_multitud",
-  "kind": "depth2",
-  "t0": 1456.802,
+  "t0": 1321.66,
   "dur": 2.02,
-  "at": "31.9",
+  "at": "24.3@con las ventanas tapadas",
   "exacto": true
  },
  {
-  "id": "cifra_5000",
-  "kind": "tipos",
-  "t0": 1458.822,
-  "dur": 1.08,
-  "at": "31.9@cinco mil personas",
-  "exacto": true
- },
- {
-  "id": "lupa_gimbels",
-  "kind": "fotolupa",
-  "t0": 1459.902,
-  "dur": 2.14,
-  "at": "31.9@se agolparon en la puerta",
-  "exacto": true
- },
- {
-  "id": "p_mostrador",
+  "id": "o_jardinero",
   "kind": "depth2",
-  "t0": 1462.042,
-  "dur": 2.82,
-  "at": "31.9@empujaban, gritaban",
-  "exacto": true
- },
- {
-  "id": "cb_policias",
-  "kind": "depth2",
-  "t0": 1464.862,
-  "dur": 2.62,
-  "at": "31.9@cincuenta polic\u00edas",
-  "exacto": true
- },
- {
-  "id": "o_cajas_vacias",
-  "kind": "depth2",
-  "t0": 1467.482,
-  "dur": 3.16,
-  "at": "31.10",
-  "exacto": true
- },
- {
-  "id": "cifra_10000",
-  "kind": "tipos",
-  "t0": 1470.642,
-  "dur": 3.2,
-  "at": "31.10@diez mil",
-  "exacto": true
- },
- {
-  "id": "o_bajo_agua",
-  "kind": "depth2",
-  "t0": 1473.842,
-  "dur": 1.24,
-  "at": "31.10@bajo el agua",
-  "exacto": true
- },
- {
-  "id": "b43_lee_diario",
-  "kind": "depth2",
-  "t0": 1475.082,
-  "dur": 2.7,
-  "at": "31.11",
-  "exacto": true
- },
- {
-  "id": "lupa_nyvj",
-  "kind": "fotolupa",
-  "t0": 1477.782,
-  "dur": 2.78,
-  "at": "31.11@cincuenta polic\u00edas para contener",
-  "exacto": true
- },
- {
-  "id": "o_rocket_caja",
-  "kind": "depth2",
-  "t0": 1480.562,
-  "dur": 1.38,
-  "at": "31.11@y el bol\u00edgrafo que vend\u00edan",
-  "exacto": true
- },
- {
-  "id": "o_dos_plumas",
-  "kind": "depth2",
-  "t0": 1481.942,
-  "dur": 1.98,
-  "at": "31.11@no era el de b\u00edr\u00f3",
-  "exacto": true
- },
- {
-  "id": "p_juicio",
-  "kind": "depth2",
-  "t0": 1483.922,
-  "dur": 4.58,
-  "at": "31.12",
-  "exacto": true
- },
- {
-  "id": "p_abogado",
-  "kind": "depth2",
-  "t0": 1488.502,
-  "dur": 2.4,
-  "at": "31.12@reynolds le hizo juicio",
-  "exacto": true
- },
- {
-  "id": "split_pleito",
-  "kind": "split",
-  "t0": 1490.902,
-  "dur": 1.66,
-  "at": "31.12@los dos pleitos",
-  "exacto": true
- },
- {
-  "id": "o_diarios_pleito",
-  "kind": "depth2",
-  "t0": 1492.562,
-  "dur": 3.26,
-  "at": "31.12@para que los diarios",
-  "exacto": true
- },
- {
-  "id": "o_rocket_gotea",
-  "kind": "depth2",
-  "t0": 1495.822,
-  "dur": 3.96,
-  "at": "31.13",
-  "exacto": true
- },
- {
-  "id": "p_raya_seca",
-  "kind": "depth2",
-  "t0": 1499.782,
-  "dur": 2.94,
-  "at": "31.13@a veces dejaban de escribir",
-  "exacto": true
- },
- {
-  "id": "p_devoluciones",
-  "kind": "depth2",
-  "t0": 1502.722,
-  "dur": 1.18,
-  "at": "31.13@devolverlas",
-  "exacto": true
- },
- {
-  "id": "a_bgimbel_o",
-  "kind": "depth2",
-  "t0": 1503.902,
-  "dur": 4.22,
-  "at": "31.14",
-  "exacto": true
- },
- {
-  "id": "bal_precio",
-  "kind": "balanza",
-  "t0": 1508.122,
-  "dur": 1.32,
-  "at": "31.14@se desplomaron",
-  "exacto": true
- },
- {
-  "id": "a_biromes_o2",
-  "kind": "depth2",
-  "t0": 1509.442,
-  "dur": 4.78,
-  "at": "31.14@hab\u00eda cientos de marcas",
-  "exacto": true
- },
- {
-  "id": "o_vidriera",
-  "kind": "depth2",
-  "t0": 1514.222,
-  "dur": 4.6,
-  "at": "31.15",
+  "t0": 1323.68,
+  "dur": 5.7,
+  "at": "24.4",
   "exacto": true
  },
  {
   "id": "o_monedas",
   "kind": "depth2",
-  "t0": 1518.822,
-  "dur": 2.62,
-  "at": "31.15@a costar unas monedas",
+  "t0": 1329.38,
+  "dur": 3.46,
+  "at": "24.4@falsificadores de monedas",
   "exacto": true
  },
  {
-  "id": "o_puerta_cerrada",
+  "id": "o_policia",
   "kind": "depth2",
-  "t0": 1521.442,
-  "dur": 2.999,
-  "at": "31.15@y la empresa de reynolds desapareci\u00f3",
+  "t0": 1332.84,
+  "dur": 1.16,
+  "at": "24.5",
   "exacto": true
  },
  {
-  "id": "o_vidriera_cb",
+  "id": "o_motores",
   "kind": "depth2",
-  "t0": 1524.441,
-  "dur": 3.0,
-  "at": "32",
+  "t0": 1334.0,
+  "dur": 1.76,
+  "at": "24.5@y encontr\u00f3 motores",
+  "exacto": true
+ },
+ {
+  "id": "o_rpm",
+  "kind": "depth2",
+  "t0": 1335.76,
+  "dur": 10.92,
+  "at": "24.6",
+  "exacto": true
+ },
+ {
+  "id": "vasos",
+  "kind": "vasos",
+  "t0": 1346.68,
+  "dur": 11.56,
+  "at": "24.7",
+  "exacto": true
+ },
+ {
+  "id": "o_chiquito",
+  "kind": "depth2",
+  "t0": 1358.24,
+  "dur": 3.84,
+  "at": "24.8",
+  "exacto": true
+ },
+ {
+  "id": "a_gartenlaube_1889_motor_daimler_o",
+  "kind": "depth2",
+  "t0": 1362.08,
+  "dur": 4.16,
+  "at": "24.8@cientos de explosiones",
+  "exacto": true
+ },
+ {
+  "id": "o_perfume",
+  "kind": "depth2",
+  "t0": 1366.24,
+  "dur": 5.29,
+  "at": "24.9",
+  "exacto": true
+ },
+ {
+  "id": "a_gartenlaube_1889_construccion_o",
+  "kind": "depth2",
+  "t0": 1371.53,
+  "dur": 5.29,
+  "at": "24.9@maybach adem\u00e1s",
+  "exacto": true,
+  "rot": [
+   "El motor de Daimler y Maybach",
+   "Die Gartenlaube, 1889",
+   0.0,
+   5.29
+  ]
+ },
+ {
+  "id": "o_spray",
+  "kind": "depth2",
+  "t0": 1376.82,
+  "dur": 2.54,
+  "at": "24.9@en gotitas fin\u00edsimas",
+  "exacto": true
+ },
+ {
+  "id": "a_daimler_reitwagen_foto_o",
+  "kind": "depth2",
+  "t0": 1379.36,
+  "dur": 5.08,
+  "at": "24.10",
+  "exacto": true,
+  "rot": [
+   "Reitwagen de Daimler",
+   "1885 \u00b7 r\u00e9plica",
+   0.0,
+   5.08
+  ]
+ },
+ {
+  "id": "a_daimler_reitwagen_patente_o",
+  "kind": "proyector",
+  "t0": 1384.44,
+  "dur": 6.96,
+  "at": "24.10@con dos rueditas al costado",
+  "exacto": true,
+  "rot": [
+   "El Reitwagen",
+   "patente de 1885",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "o_paul",
+  "kind": "depth2",
+  "t0": 1391.4,
+  "dur": 1.98,
+  "at": "24.10@la primera moto",
+  "exacto": true
+ },
+ {
+  "id": "a_gartenlaube_1888_carro_daimler_o",
+  "kind": "depth2",
+  "t0": 1393.38,
+  "dur": 8.1,
+  "at": "24.11",
+  "exacto": true,
+  "rot": [
+   "El carruaje motorizado de Daimler",
+   "Die Gartenlaube, 1888",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "o_cumple",
+  "kind": "depth2",
+  "t0": 1401.48,
+  "dur": 2.82,
+  "at": "24.11@el cumplea\u00f1os de la esposa",
+  "exacto": true
+ },
+ {
+  "id": "eras_ideas",
+  "kind": "eras",
+  "t0": 1404.3,
+  "dur": 12.88,
+  "at": "24.12",
+  "exacto": true
+ },
+ {
+  "id": "o_dos_talleres",
+  "kind": "depth2",
+  "t0": 1417.18,
+  "dur": 4.21,
+  "at": "24.13",
+  "exacto": true
+ },
+ {
+  "id": "a_daimler_stahlradwagen_1889_o",
+  "kind": "depth2",
+  "t0": 1421.39,
+  "dur": 4.21,
+  "at": "24.13@las dos ideas iban a ganar",
+  "exacto": true,
+  "rot": [
+   "Stahlradwagen de Daimler",
+   "1889",
+   0.0,
+   4.21
+  ]
+ },
+ {
+  "id": "o_familia_no",
+  "kind": "depth2",
+  "t0": 1425.6,
+  "dur": 3.249,
+  "at": "24.13@subirse con su familia",
+  "exacto": true
+ },
+ {
+  "id": "cap8",
+  "kind": "capitulo",
+  "t0": 1428.849,
+  "dur": 3.051,
+  "at": "25",
+  "exacto": true
+ },
+ {
+  "id": "m_carta_madre",
+  "kind": "depth2",
+  "t0": 1431.9,
+  "dur": 7.56,
+  "at": "26.0",
+  "exacto": false
+ },
+ {
+  "id": "m_cien",
+  "kind": "mapa3d",
+  "t0": 1439.46,
+  "dur": 3.2,
+  "at": "26.1",
+  "exacto": true
+ },
+ {
+  "id": "m_tren",
+  "kind": "depth2",
+  "t0": 1442.66,
+  "dur": 1.78,
+  "at": "26.1@en tren",
+  "exacto": true
+ },
+ {
+  "id": "m_dilig",
+  "kind": "depth2",
+  "t0": 1444.44,
+  "dur": 2.14,
+  "at": "26.1@en diligencia",
+  "exacto": true
+ },
+ {
+  "id": "m_habla",
+  "kind": "depth2",
+  "t0": 1446.58,
+  "dur": 2.18,
+  "at": "26.2",
+  "exacto": true
+ },
+ {
+  "id": "m_eugen",
+  "kind": "depth2",
+  "t0": 1448.76,
+  "dur": 1.82,
+  "at": "26.2@eugen ten\u00eda quince a\u00f1os",
+  "exacto": true,
+  "rot_off": 1.82
+ },
+ {
+  "id": "m_richard",
+  "kind": "depth2",
+  "t0": 1450.58,
+  "dur": 6.02,
+  "at": "26.2@richard trece",
+  "exacto": true,
+  "rot": [
+   "Richard Benz",
+   "13 a\u00f1os",
+   0.0,
+   6.02
+  ]
+ },
+ {
+  "id": "m_si",
+  "kind": "depth2",
+  "t0": 1456.6,
+  "dur": 1.64,
+  "at": "26.2@los dos dijeron que s\u00ed",
+  "exacto": true
+ },
+ {
+  "id": "m_secreto",
+  "kind": "depth2",
+  "t0": 1458.24,
+  "dur": 2.84,
+  "at": "26.3",
+  "exacto": true
+ },
+ {
+  "id": "m_karl_no",
+  "kind": "depth2",
+  "t0": 1461.08,
+  "dur": 7.04,
+  "at": "26.3@iba a decir que no",
+  "exacto": true
+ },
+ {
+  "id": "m_razon",
+  "kind": "depth2",
+  "t0": 1468.12,
+  "dur": 1.98,
+  "at": "26.4",
+  "exacto": true
+ },
+ {
+  "id": "m_5ago",
+  "kind": "depth2",
+  "t0": 1470.1,
+  "dur": 3.84,
+  "at": "26.5",
+  "exacto": true
+ },
+ {
+  "id": "a_moda_1888_dames_o",
+  "kind": "depth2",
+  "t0": 1473.94,
+  "dur": 2.28,
+  "at": "26.5@antes del amanecer",
+  "exacto": true
+ },
+ {
+  "id": "m_escalera",
+  "kind": "depth2",
+  "t0": 1476.22,
+  "dur": 2.2,
+  "at": "26.5@se levantaron sin hacer ruido",
+  "exacto": true
+ },
+ {
+  "id": "m_nota",
+  "kind": "depth2",
+  "t0": 1478.42,
+  "dur": 7.5,
+  "at": "26.6",
+  "exacto": true
+ },
+ {
+  "id": "m_nota_close",
+  "kind": "depth2",
+  "t0": 1485.92,
+  "dur": 1.62,
+  "at": "26.6@no dec\u00eda c\u00f3mo",
+  "exacto": true
+ },
+ {
+  "id": "m_porton",
+  "kind": "depth2",
+  "t0": 1487.54,
+  "dur": 3.16,
+  "at": "26.7",
+  "exacto": true
+ },
+ {
+  "id": "a_nr3_lateral_1887_o_2",
+  "kind": "depth2",
+  "t0": 1490.7,
+  "dur": 1.22,
+  "at": "26.7@el tercer modelo",
+  "exacto": true
+ },
+ {
+  "id": "a_nr3_trasera_1926_o_2",
+  "kind": "proyector",
+  "t0": 1491.92,
+  "dur": 1.34,
+  "at": "26.7@con sus ruedas de madera",
+  "exacto": true
+ },
+ {
+  "id": "m_asiento",
+  "kind": "depth2",
+  "t0": 1493.26,
+  "dur": 2.42,
+  "at": "26.7@su asiento de cuero",
+  "exacto": true
+ },
+ {
+  "id": "m_empujan_patio",
+  "kind": "depth2",
+  "t0": 1495.68,
+  "dur": 1.68,
+  "at": "26.8",
+  "exacto": true
+ },
+ {
+  "id": "m_empujan_calle",
+  "kind": "depth2",
+  "t0": 1497.36,
+  "dur": 3.3,
+  "at": "26.8@lo empujaron por la calle",
+  "exacto": true
+ },
+ {
+  "id": "m_ventana_lejos",
+  "kind": "depth2",
+  "t0": 1500.66,
+  "dur": 2.98,
+  "at": "26.8@lejos de la ventana",
+  "exacto": true
+ },
+ {
+  "id": "m_volante",
+  "kind": "depth2",
+  "t0": 1503.64,
+  "dur": 2.5,
+  "at": "26.9",
+  "exacto": true
+ },
+ {
+  "id": "m_volante2",
+  "kind": "depth2",
+  "t0": 1506.14,
+  "dur": 2.89,
+  "at": "26.9@una vez",
+  "exacto": true
+ },
+ {
+  "id": "m_penumbra",
+  "kind": "depth2",
+  "t0": 1509.03,
+  "dur": 2.03,
+  "at": "27",
+  "exacto": true
+ },
+ {
+  "id": "m_arranca",
+  "kind": "depth2",
+  "t0": 1511.06,
+  "dur": 1.84,
+  "at": "28.0",
+  "exacto": true
+ },
+ {
+  "id": "olla_interna3",
+  "kind": "olla",
+  "t0": 1512.9,
+  "dur": 2.33,
+  "at": "28.0@pac",
+  "exacto": true
+ },
+ {
+  "id": "m_sientan",
+  "kind": "depth2",
+  "t0": 1515.23,
+  "dur": 4.81,
+  "at": "28.1",
+  "exacto": false
+ },
+ {
+  "id": "m_richard_atras",
+  "kind": "depth2",
+  "t0": 1520.04,
+  "dur": 2.8,
+  "at": "28.1@richard atr\u00e1s",
+  "exacto": true
+ },
+ {
+  "id": "m_salen",
+  "kind": "depth2",
+  "t0": 1522.84,
+  "dur": 1.62,
+  "at": "28.2",
+  "exacto": true
+ },
+ {
+  "id": "a_replica_1886_o_2",
+  "kind": "depth2",
+  "t0": 1524.46,
+  "dur": 1.62,
+  "at": "28.2@y salieron",
+  "exacto": true
+ },
+ {
+  "id": "m_faroles",
+  "kind": "depth2",
+  "t0": 1526.08,
+  "dur": 2.467,
+  "at": "28.2@con los faroles",
+  "exacto": true
+ },
+ {
+  "id": "m_aleja",
+  "kind": "depth2",
+  "t0": 1528.547,
+  "dur": 2.893,
+  "at": "29",
+  "exacto": true
+ },
+ {
+  "id": "km0",
+  "kind": "regla",
+  "t0": 1531.44,
+  "dur": 5.04,
+  "at": "30.0",
+  "exacto": true
+ },
+ {
+  "id": "m_norte",
+  "kind": "mapa3d",
+  "t0": 1536.48,
+  "dur": 8.82,
+  "at": "30.1",
+  "exacto": true
+ },
+ {
+  "id": "r_llano",
+  "kind": "depth2",
+  "t0": 1545.3,
+  "dur": 1.46,
+  "at": "30.1@ten\u00eda menos subidas",
+  "exacto": true
+ },
+ {
+  "id": "r_subida_lejos",
+  "kind": "depth2",
+  "t0": 1546.76,
+  "dur": 3.36,
+  "at": "30.2",
+  "exacto": true
+ },
+ {
+  "id": "r_correa",
+  "kind": "depth2",
+  "t0": 1550.12,
+  "dur": 4.02,
+  "at": "30.2@una sola velocidad",
+  "exacto": true
+ },
+ {
+  "id": "r_ahoga",
+  "kind": "depth2",
+  "t0": 1554.14,
+  "dur": 1.42,
+  "at": "30.2@el motor se ahogaba",
+  "exacto": true
+ },
+ {
+  "id": "m_odenwald",
+  "kind": "mapa3d",
+  "t0": 1555.56,
+  "dur": 5.62,
+  "at": "30.3",
+  "exacto": true
+ },
+ {
+  "id": "r_halifax_d",
+  "kind": "film",
+  "t0": 1561.18,
+  "dur": 1.0,
+  "at": "30.3@pasaron por pueblos",
+  "exacto": true
+ },
+ {
+  "id": "r_pueblo_mira",
+  "kind": "depth2",
+  "t0": 1562.18,
+  "dur": 3.94,
+  "at": "30.3@nunca jam\u00e1s hab\u00edan visto",
+  "exacto": true
+ },
+ {
+  "id": "r_campesinos",
+  "kind": "depth2",
+  "t0": 1566.12,
+  "dur": 3.52,
+  "at": "30.4",
+  "exacto": true
+ },
+ {
+  "id": "r_santigua",
+  "kind": "depth2",
+  "t0": 1569.64,
+  "dur": 5.38,
+  "at": "30.4@se santiguaban",
+  "exacto": true
+ },
+ {
+  "id": "r_corre",
+  "kind": "depth2",
+  "t0": 1575.02,
+  "dur": 3.94,
+  "at": "30.4@el diablo en persona",
+  "exacto": true
+ },
+ {
+  "id": "km30",
+  "kind": "regla",
+  "t0": 1578.96,
+  "dur": 2.36,
+  "at": "30.5",
+  "exacto": true
+ },
+ {
+  "id": "a_heidelberg_grabado_1830_o",
+  "kind": "depth2",
+  "t0": 1581.32,
+  "dur": 1.08,
+  "at": "30.5@la ciudad del castillo y de la universidad",
+  "exacto": true,
+  "rot": [
+   "Heidelberg",
+   "grabado de 1830",
+   0.0,
+   2.54
+  ]
+ },
+ {
+  "id": "a_heidelberg_hauptstrasse_1890_o",
+  "kind": "proyector",
+  "t0": 1582.4,
+  "dur": 1.46,
+  "at": "30.5@y de la universidad",
+  "exacto": true,
+  "rot": [
+   "Heidelberg",
+   "grabado de 1830",
+   1.08,
+   2.54
+  ]
+ },
+ {
+  "id": "r_heidel_carro",
+  "kind": "depth2",
+  "t0": 1583.86,
+  "dur": 1.24,
+  "at": "30.6",
+  "exacto": true
+ },
+ {
+  "id": "a_heidelberg_1880_slot_o",
+  "kind": "depth2",
+  "t0": 1585.1,
+  "dur": 1.24,
+  "at": "30.6",
+  "exacto": true
+ },
+ {
+  "id": "r_tanque",
+  "kind": "depth2",
+  "t0": 1586.34,
+  "dur": 4.38,
+  "at": "30.6@el tanque de combustible",
+  "exacto": true
+ },
+ {
+  "id": "r_litros",
+  "kind": "depth2",
+  "t0": 1590.72,
+  "dur": 1.784,
+  "at": "30.6@se estaba vaciando",
+  "exacto": true
+ },
+ {
+  "id": "r_mira_tanque",
+  "kind": "depth2",
+  "t0": 1592.504,
+  "dur": 1.5,
+  "at": "31",
+  "exacto": true
+ },
+ {
+  "id": "cap9",
+  "kind": "capitulo",
+  "t0": 1594.004,
+  "dur": 1.456,
+  "at": "31+1.5",
+  "exacto": true
+ },
+ {
+  "id": "e_surtidor",
+  "kind": "depth2",
+  "t0": 1595.46,
+  "dur": 5.8,
+  "at": "32.0",
+  "exacto": true
+ },
+ {
+  "id": "e_nada",
+  "kind": "depth2",
+  "t0": 1601.26,
+  "dur": 4.88,
+  "at": "32.0@no hab\u00eda ninguna",
+  "exacto": true
+ },
+ {
+  "id": "a_botica_19_a_o",
+  "kind": "depth2",
+  "t0": 1606.14,
+  "dur": 1.74,
+  "at": "32.1",
+  "exacto": true,
+  "rot_off": 1.74
+ },
+ {
+  "id": "e_ligroina",
+  "kind": "depth2",
+  "t0": 1607.88,
+  "dur": 3.9,
+  "at": "32.1@ligro\u00edna",
+  "exacto": true
+ },
+ {
+  "id": "e_limpia",
+  "kind": "depth2",
+  "t0": 1611.78,
+  "dur": 1.86,
+  "at": "32.1@era un producto de limpieza",
+  "exacto": true
+ },
+ {
+  "id": "km45",
+  "kind": "regla",
+  "t0": 1613.64,
+  "dur": 3.81,
+  "at": "32.2",
+  "exacto": true
+ },
+ {
+  "id": "m_wiesloch",
+  "kind": "mapa3d",
+  "t0": 1617.45,
+  "dur": 3.81,
+  "at": "32.2@kil\u00f3metro cuarenta y cinco wiesloch",
+  "exacto": true
+ },
+ {
+  "id": "a_stadt_apotheke_wiesloch_o",
+  "kind": "depth2",
+  "t0": 1621.26,
+  "dur": 3.32,
+  "at": "32.2@la stadt-apotheke",
+  "exacto": true,
+  "rot": [
+   "Stadt-Apotheke",
+   "Wiesloch",
+   0.0,
+   3.32
+  ]
+ },
+ {
+  "id": "e_ockel",
+  "kind": "depth2",
+  "t0": 1624.58,
+  "dur": 2.38,
+  "at": "32.3",
+  "exacto": true,
+  "rot": [
+   "Willi Ockel",
+   "farmac\u00e9utico de Wiesloch",
+   0.0,
+   2.38
+  ]
+ },
+ {
+  "id": "a_botica_19_b_o",
+  "kind": "depth2",
+  "t0": 1626.96,
+  "dur": 1.58,
+  "at": "32.3@estaba detr\u00e1s del mostrador",
+  "exacto": true,
+  "rot_off": 1.58
+ },
+ {
+  "id": "e_entra",
+  "kind": "depth2",
+  "t0": 1628.54,
+  "dur": 3.2,
+  "at": "32.3@entr\u00f3 una se\u00f1ora",
+  "exacto": true
+ },
+ {
+  "id": "e_pide",
+  "kind": "depth2",
+  "t0": 1631.74,
+  "dur": 2.02,
+  "at": "32.3@toda la ligro\u00edna",
+  "exacto": true
+ },
+ {
+  "id": "e_cara",
+  "kind": "depth2",
+  "t0": 1633.76,
+  "dur": 3.44,
+  "at": "32.4",
+  "exacto": true
+ },
+ {
+  "id": "e_frasquito_f",
+  "kind": "film",
+  "t0": 1637.2,
+  "dur": 4.06,
+  "at": "32.4@de a frasquito",
+  "exacto": true
+ },
+ {
+  "id": "e_litros",
+  "kind": "depth2",
+  "t0": 1641.26,
+  "dur": 1.2,
+  "at": "32.4@quer\u00eda litros",
+  "exacto": true
+ },
+ {
+  "id": "e_vierte",
+  "kind": "depth2",
+  "t0": 1642.46,
+  "dur": 1.6,
+  "at": "32.5",
+  "exacto": true
+ },
+ {
+  "id": "a_apotheke_wiesloch_1822_o_2",
+  "kind": "depth2",
+  "t0": 1644.06,
+  "dur": 1.96,
+  "at": "32.5@los chicos llenaron el tanque",
+  "exacto": true
+ },
+ {
+  "id": "e_gente",
+  "kind": "depth2",
+  "t0": 1646.02,
+  "dur": 3.82,
+  "at": "32.5@la gente del pueblo",
+  "exacto": true
+ },
+ {
+  "id": "e_beber",
+  "kind": "depth2",
+  "t0": 1649.84,
+  "dur": 1.84,
+  "at": "32.5@le daba de beber a una m\u00e1quina",
+  "exacto": true
+ },
+ {
+  "id": "a_apotheke_wiesloch_1822_o",
+  "kind": "depth2",
+  "t0": 1651.68,
+  "dur": 2.88,
+  "at": "32.6",
+  "exacto": true
+ },
+ {
+  "id": "e_placa",
+  "kind": "depth2",
+  "t0": 1654.56,
+  "dur": 2.0,
+  "at": "32.6@hay una placa",
+  "exacto": true
+ },
+ {
+  "id": "e_primera",
+  "kind": "depth2",
+  "t0": 1656.56,
+  "dur": 2.809,
+  "at": "32.6@la primera estaci\u00f3n de servicio",
+  "exacto": true
+ },
+ {
+  "id": "a_estatua_bertha_wiesloch_o",
+  "kind": "depth2",
+  "t0": 1659.369,
+  "dur": 3.071,
+  "at": "33",
+  "exacto": true,
+  "rot": [
+   "Bertha Benz",
+   "estatua en Wiesloch",
+   0.0,
+   3.071
+  ]
+ },
+ {
+  "id": "km65",
+  "kind": "regla",
+  "t0": 1662.44,
+  "dur": 1.78,
+  "at": "34.0",
+  "exacto": true
+ },
+ {
+  "id": "a_bruchsal_ostansicht_o",
+  "kind": "depth2",
+  "t0": 1664.22,
+  "dur": 2.72,
+  "at": "34.0@bruchsal",
+  "exacto": true,
+  "rot": [
+   "Bruchsal",
+   "vista desde el este",
+   0.0,
+   2.72
+  ]
+ },
+ {
+  "id": "x_cadena",
+  "kind": "depth2",
+  "t0": 1666.94,
+  "dur": 3.94,
+  "at": "34.1",
+  "exacto": true
+ },
+ {
+  "id": "x_cadena2",
+  "kind": "depth2",
+  "t0": 1670.88,
+  "dur": 4.14,
+  "at": "34.1@saltaba",
+  "exacto": true
+ },
+ {
+  "id": "x_yunque_f",
+  "kind": "film",
+  "t0": 1675.02,
+  "dur": 1.48,
+  "at": "34.2@buscaron un herrero",
+  "exacto": true
+ },
+ {
+  "id": "a_herrero_hartshorn_o",
+  "kind": "depth2",
+  "t0": 1676.5,
+  "dur": 1.92,
+  "at": "34.2@en cada pueblo hab\u00eda uno",
+  "exacto": true,
+  "rot": [
+   "Un herrero",
+   "hacia 1898",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "x_forja",
+  "kind": "film",
+  "t0": 1678.42,
+  "dur": 4.04,
+  "at": "34.2@el que herraba los caballos",
+  "exacto": true,
+  "rot": [
+   "Un herrero",
+   "hacia 1898",
+   1.92,
+   3.6
+  ]
+ },
+ {
+  "id": "a_herreria_guthrie_1889_o",
+  "kind": "depth2",
+  "t0": 1682.46,
+  "dur": 1.08,
+  "at": "34.2@para los caballos",
+  "exacto": true
+ },
+ {
+  "id": "x_herrero",
+  "kind": "depth2",
+  "t0": 1683.54,
+  "dur": 1.62,
+  "at": "34.2@arregl\u00f3 la cadena",
+  "exacto": true,
+  "rot_off": 1.62
+ },
+ {
+  "id": "x_martillo",
+  "kind": "film",
+  "t0": 1685.16,
+  "dur": 2.04,
+  "at": "34.2@que iba a reemplazarlos",
+  "exacto": true
+ },
+ {
+  "id": "x_agua_hierve",
+  "kind": "depth2",
+  "t0": 1687.2,
+  "dur": 3.34,
+  "at": "34.3",
+  "exacto": true
+ },
+ {
+  "id": "pava_b",
+  "kind": "pava",
+  "t0": 1690.54,
+  "dur": 7.12,
+  "at": "34.4",
+  "exacto": true
+ },
+ {
+  "id": "x_arroyo",
+  "kind": "depth2",
+  "t0": 1697.66,
+  "dur": 7.5,
+  "at": "34.5",
+  "exacto": true
+ },
+ {
+  "id": "x_vierte_agua",
+  "kind": "depth2",
+  "t0": 1705.16,
+  "dur": 1.5,
+  "at": "34.5@llenaban",
+  "exacto": true
+ },
+ {
+  "id": "x_posada",
+  "kind": "depth2",
+  "t0": 1706.66,
+  "dur": 4.58,
+  "at": "34.5@en las posadas",
+  "exacto": true
+ },
+ {
+  "id": "x_zanja",
+  "kind": "depth2",
+  "t0": 1711.24,
+  "dur": 2.86,
+  "at": "34.5@el agua de una zanja",
+  "exacto": true
+ },
+ {
+  "id": "x_falla",
+  "kind": "depth2",
+  "t0": 1714.1,
+  "dur": 3.94,
+  "at": "34.6",
+  "exacto": true
+ },
+ {
+  "id": "x_tose",
+  "kind": "depth2",
+  "t0": 1718.04,
+  "dur": 4.8,
+  "at": "34.7",
+  "exacto": true
+ },
+ {
+  "id": "x_cano",
+  "kind": "depth2",
+  "t0": 1722.84,
+  "dur": 8.02,
+  "at": "34.7@el combustible no llegaba",
+  "exacto": true
+ },
+ {
+  "id": "x_sin_herram",
+  "kind": "depth2",
+  "t0": 1730.86,
+  "dur": 5.24,
+  "at": "34.8",
+  "exacto": true
+ },
+ {
+  "id": "x_saca_alfiler",
+  "kind": "depth2",
+  "t0": 1736.1,
+  "dur": 2.02,
+  "at": "34.9",
+  "exacto": true
+ },
+ {
+  "id": "x_alfiler",
+  "kind": "depth2",
+  "t0": 1738.12,
+  "dur": 1.7,
+  "at": "34.9@una aguja larga",
+  "exacto": true
+ },
+ {
+  "id": "a_alfiler_sombrero_1910_o",
+  "kind": "depth2",
+  "t0": 1739.82,
+  "dur": 1.26,
+  "at": "34.9@de esas que usaban",
+  "exacto": true,
+  "rot_off": 1.26
+ },
+ {
+  "id": "a_moda_1888_journal_o",
+  "kind": "proyector",
+  "t0": 1741.08,
+  "dur": 1.98,
+  "at": "34.9@para sujetar el sombrero",
+  "exacto": true,
+  "rot_off": 1.98
+ },
+ {
+  "id": "x_mete",
+  "kind": "depth2",
+  "t0": 1743.06,
+  "dur": 1.18,
+  "at": "34.9@la meti\u00f3 por el ca\u00f1o",
+  "exacto": true
+ },
+ {
+  "id": "x_destapa",
+  "kind": "depth2",
+  "t0": 1744.24,
+  "dur": 1.66,
+  "at": "34.9@y lo destap\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "x_arranca",
+  "kind": "depth2",
+  "t0": 1745.9,
+  "dur": 1.999,
+  "at": "34.10",
+  "exacto": true
+ },
+ {
+  "id": "x_alfiler_sale",
+  "kind": "depth2",
+  "t0": 1747.899,
+  "dur": 1.921,
+  "at": "35",
+  "exacto": true
+ },
+ {
+  "id": "x_cable",
+  "kind": "depth2",
+  "t0": 1749.82,
+  "dur": 8.72,
+  "at": "36.0",
+  "exacto": true
+ },
+ {
+  "id": "x_chispa_f",
+  "kind": "film",
+  "t0": 1758.54,
+  "dur": 1.64,
+  "at": "36.0@la chispa se perd\u00eda",
+  "exacto": true
+ },
+ {
+  "id": "x_piensa",
+  "kind": "depth2",
+  "t0": 1760.18,
+  "dur": 5.36,
+  "at": "36.1",
+  "exacto": false
+ },
+ {
+  "id": "x_liga_saca",
+  "kind": "depth2",
+  "t0": 1765.54,
+  "dur": 1.74,
+  "at": "36.1@lo encontr\u00f3 en su propia ropa",
+  "exacto": true
+ },
+ {
+  "id": "x_liga",
+  "kind": "depth2",
+  "t0": 1767.28,
+  "dur": 3.72,
+  "at": "36.1@se sac\u00f3 una liga",
+  "exacto": true
+ },
+ {
+  "id": "x_envuelve",
+  "kind": "depth2",
+  "t0": 1771.0,
+  "dur": 1.68,
+  "at": "36.1@envolvi\u00f3 el cable",
+  "exacto": true
+ },
+ {
+  "id": "eras_promesa",
+  "kind": "eras",
+  "t0": 1772.68,
+  "dur": 4.758,
+  "at": "36.2",
+  "exacto": true
+ },
+ {
+  "id": "x_sigue",
+  "kind": "depth2",
+  "t0": 1777.438,
+  "dur": 1.5,
+  "at": "37",
   "exacto": true
  },
  {
   "id": "cap10",
   "kind": "capitulo",
-  "t0": 1527.441,
-  "dur": 2.541,
-  "at": "33",
+  "t0": 1778.938,
+  "dur": 1.502,
+  "at": "37+1.5",
   "exacto": true
  },
  {
-  "id": "bich",
+  "id": "m_kraichgau",
+  "kind": "mapa3d",
+  "t0": 1780.44,
+  "dur": 12.32,
+  "at": "38.0",
+  "exacto": true
+ },
+ {
+  "id": "u_cuesta",
   "kind": "depth2",
-  "t0": 1529.982,
-  "dur": 3.48,
-  "at": "34.0",
+  "t0": 1792.76,
+  "dur": 4.46,
+  "at": "38.1",
   "exacto": true
  },
  {
-  "id": "a_bic4_o",
+  "id": "camb_cuesta",
+  "kind": "cambios",
+  "t0": 1797.22,
+  "dur": 6.04,
+  "at": "38.2",
+  "exacto": true
+ },
+ {
+  "id": "u_bici",
   "kind": "depth2",
-  "t0": 1533.462,
-  "dur": 4.92,
-  "at": "34.0@miraba todo esto",
+  "t0": 1803.26,
+  "dur": 5.7,
+  "at": "38.2@tienes que pararte en los pedales",
   "exacto": true
  },
  {
-  "id": "bich_pierde",
+  "id": "u_bici_empuja",
   "kind": "depth2",
-  "t0": 1538.382,
-  "dur": 3.04,
-  "at": "34.1",
-  "exacto": true
- },
- {
-  "id": "bich_mira",
-  "kind": "depth2",
-  "t0": 1541.422,
-  "dur": 3.02,
-  "at": "34.1@el bol\u00edgrafo no ten\u00eda que ser un lujo",
-  "exacto": true
- },
- {
-  "id": "o_barato",
-  "kind": "depth2",
-  "t0": 1544.442,
-  "dur": 3.18,
-  "at": "34.1@tan barato",
-  "exacto": true
- },
- {
-  "id": "bich_firma",
-  "kind": "depth2",
-  "t0": 1547.622,
-  "dur": 4.6,
-  "at": "34.2",
-  "exacto": true
- },
- {
-  "id": "o_maq_bolas",
-  "kind": "depth2",
-  "t0": 1552.222,
-  "dur": 3.1,
-  "at": "34.2@m\u00e1quinas de precisi\u00f3n",
-  "exacto": true
- },
- {
-  "id": "o_cinta_bic",
-  "kind": "depth2",
-  "t0": 1555.322,
-  "dur": 2.8,
-  "at": "34.2@millones por d\u00eda",
-  "exacto": true
- },
- {
-  "id": "o_cristal_gira",
-  "kind": "depth2",
-  "t0": 1558.122,
-  "dur": 4.6,
-  "at": "34.3",
-  "exacto": true
- },
- {
-  "id": "lupa_bic",
-  "kind": "fotolupa",
-  "t0": 1562.722,
-  "dur": 2.78,
-  "at": "34.3@hexagonal",
-  "exacto": true
- },
- {
-  "id": "o_bic_agujero",
-  "kind": "depth2",
-  "t0": 1565.502,
-  "dur": 2.12,
-  "at": "34.3@con un agujerito en el costado",
-  "exacto": true
- },
- {
-  "id": "o_bic_letras",
-  "kind": "depth2",
-  "t0": 1567.622,
-  "dur": 2.98,
-  "at": "34.3@le cort\u00f3 la hache",
-  "exacto": true
- },
- {
-  "id": "a_bic08_o",
-  "kind": "depth2",
-  "t0": 1570.602,
-  "dur": 1.22,
-  "at": "34.4",
-  "exacto": true
- },
- {
-  "id": "cifra_cristal",
-  "kind": "tipos",
-  "t0": 1571.822,
-  "dur": 7.22,
-  "at": "34.5",
-  "exacto": true
- },
- {
-  "id": "o_bic_cae",
-  "kind": "depth2",
-  "t0": 1579.042,
+  "t0": 1808.96,
   "dur": 2.2,
-  "at": "34.5@cincuenta y siete por segundo",
+  "at": "38.2@te bajas y la llevas",
   "exacto": true
  },
  {
-  "id": "b80_mira",
+  "id": "camb_marcha",
+  "kind": "cambios",
+  "t0": 1811.16,
+  "dur": 10.64,
+  "at": "38.3",
+  "exacto": true
+ },
+ {
+  "id": "u_debil",
   "kind": "depth2",
-  "t0": 1581.242,
-  "dur": 2.96,
-  "at": "34.6",
+  "t0": 1821.8,
+  "dur": 1.64,
+  "at": "38.3@r\u00e1pida y d\u00e9bil",
   "exacto": true
  },
  {
-  "id": "cb_bic_lluvia",
+  "id": "u_baja",
   "kind": "depth2",
-  "t0": 1584.202,
-  "dur": 2.84,
-  "at": "34.6@m\u00e1s de cien mil millones",
+  "t0": 1823.44,
+  "dur": 8.9,
+  "at": "38.4",
   "exacto": true
  },
  {
-  "id": "bal_bich",
-  "kind": "balanza",
-  "t0": 1587.042,
-  "dur": 2.22,
-  "at": "34.6@no fue b\u00edr\u00f3",
-  "exacto": true
- },
- {
-  "id": "b43_vende",
+  "id": "u_empujan",
   "kind": "depth2",
-  "t0": 1589.262,
-  "dur": 4.68,
-  "at": "34.7",
-  "exacto": false
+  "t0": 1832.34,
+  "dur": 1.64,
+  "at": "38.4@y empujaban",
+  "exacto": true
  },
  {
-  "id": "o_libro_quiebra",
+  "id": "u_empujan2",
   "kind": "depth2",
-  "t0": 1593.942,
-  "dur": 5.88,
-  "at": "34.7@su propia empresa quebr\u00f3",
+  "t0": 1833.98,
+  "dur": 5.68,
+  "at": "38.5",
   "exacto": true
  },
  {
-  "id": "o_cartel_parker",
+  "id": "u_sol",
   "kind": "depth2",
-  "t0": 1599.822,
-  "dur": 1.6,
-  "at": "34.7@termin\u00f3 en manos de parker",
-  "exacto": true
- },
- {
-  "id": "b_perfume",
-  "kind": "depth2",
-  "t0": 1601.422,
-  "dur": 2.44,
-  "at": "34.8",
-  "exacto": true
- },
- {
-  "id": "o_perfumes",
-  "kind": "depth2",
-  "t0": 1603.862,
-  "dur": 6.94,
-  "at": "34.8@hizo perfumes",
-  "exacto": true
- },
- {
-  "id": "cb_desod",
-  "kind": "depth2",
-  "t0": 1610.802,
-  "dur": 3.08,
-  "at": "34.8@la misma idea",
-  "exacto": true
- },
- {
-  "id": "corr_inventos",
-  "kind": "corridor",
-  "t0": 1613.882,
-  "dur": 2.5,
-  "at": "34.9",
-  "exacto": true
- },
- {
-  "id": "a_biro_inv_o",
-  "kind": "depth2",
-  "t0": 1616.382,
-  "dur": 2.28,
-  "at": "34.9@un proceso para fabricar pl\u00e1sticos",
-  "exacto": true
- },
- {
-  "id": "o_olas_maq",
-  "kind": "depth2",
-  "t0": 1618.662,
-  "dur": 5.44,
-  "at": "34.9@un aparato para sacar energ\u00eda",
-  "exacto": true
- },
- {
-  "id": "b80_pinta",
-  "kind": "depth2",
-  "t0": 1624.102,
-  "dur": 2.46,
-  "at": "34.10",
-  "exacto": true
- },
- {
-  "id": "a_biro_1978_o",
-  "kind": "depth2",
-  "t0": 1626.562,
-  "dur": 5.1,
-  "at": "34.10@ciudadano argentino",
-  "exacto": true
- },
- {
-  "id": "o_memorias",
-  "kind": "depth2",
-  "t0": 1631.662,
-  "dur": 6.14,
-  "at": "34.11",
-  "exacto": false
- },
- {
-  "id": "o_bolita_silencio",
-  "kind": "depth2",
-  "t0": 1637.802,
-  "dur": 5.4,
-  "at": "34.12",
-  "exacto": true
- },
- {
-  "id": "lupa_biromes2",
-  "kind": "fotolupa",
-  "t0": 1643.202,
-  "dur": 1.4,
-  "at": "34.12@ning\u00fan discurso",
-  "exacto": true
- },
- {
-  "id": "a_bp_macro_o2",
-  "kind": "depth2",
-  "t0": 1644.602,
-  "dur": 2.1,
-  "at": "34.12@solo una bolita que gira",
-  "exacto": true
- },
- {
-  "id": "ret_biro",
-  "kind": "retrato",
-  "t0": 1646.702,
-  "dur": 6.24,
-  "at": "34.13",
-  "exacto": false
- },
- {
-  "id": "a_biro_lj_o",
-  "kind": "depth2",
-  "t0": 1652.942,
-  "dur": 1.94,
-  "at": "34.13@ten\u00eda ochenta y seis a\u00f1os",
-  "exacto": true
- },
- {
-  "id": "o_dia_inventor",
-  "kind": "depth2",
-  "t0": 1654.882,
-  "dur": 1.12,
-  "at": "34.14",
-  "exacto": true
- },
- {
-  "id": "a_ba_clases_o",
-  "kind": "depth2",
-  "t0": 1656.002,
-  "dur": 4.84,
-  "at": "34.14@cada veintinueve de septiembre",
-  "exacto": true
- },
- {
-  "id": "o_cal_29",
-  "kind": "depth2",
-  "t0": 1660.842,
-  "dur": 1.34,
-  "at": "34.14@se celebra",
-  "exacto": true
- },
- {
-  "id": "a_biromes_pais_o",
-  "kind": "depth2",
-  "t0": 1662.182,
-  "dur": 4.34,
-  "at": "34.15",
-  "exacto": true
- },
- {
-  "id": "eras_nombre",
-  "kind": "eras",
-  "t0": 1666.522,
-  "dur": 5.3,
-  "at": "34.15@dicen birome",
-  "exacto": true
- },
- {
-  "id": "o_cajon2",
-  "kind": "depth2",
-  "t0": 1671.822,
-  "dur": 2.28,
-  "at": "34.16",
-  "exacto": true
- },
- {
-  "id": "a_bp_writing_o2",
-  "kind": "depth2",
-  "t0": 1674.102,
-  "dur": 3.0,
-  "at": "34.16@en medio mundo",
-  "exacto": true
- },
- {
-  "id": "lupa_firma",
-  "kind": "fotolupa",
-  "t0": 1677.102,
-  "dur": 2.146,
-  "at": "34.16@todav\u00eda se llama como \u00e9l",
-  "exacto": true
- },
- {
-  "id": "n_hoy_escribe",
-  "kind": "depth2",
-  "t0": 1679.248,
-  "dur": 4.5,
-  "at": "35",
-  "exacto": true
- },
- {
-  "id": "t05_figura_luz",
-  "kind": "depth2",
-  "t0": 1683.748,
-  "dur": 2.614,
-  "at": "36",
-  "exacto": true
- },
- {
-  "id": "o_cuadernos",
-  "kind": "depth2",
-  "t0": 1686.362,
-  "dur": 4.7,
-  "at": "37.0",
-  "exacto": true
- },
- {
-  "id": "a_biro_firma_o",
-  "kind": "depth2",
-  "t0": 1691.062,
-  "dur": 4.12,
-  "at": "37.0@sigue saliendo",
-  "exacto": true
- },
- {
-  "id": "eras_resumen",
-  "kind": "eras",
-  "t0": 1695.182,
-  "dur": 12.58,
-  "at": "37.1",
-  "exacto": true
- },
- {
-  "id": "t06_zurdo",
-  "kind": "depth2",
-  "t0": 1707.762,
+  "t0": 1839.66,
   "dur": 4.06,
-  "at": "37.2",
+  "at": "38.5@bajo el sol de agosto",
   "exacto": true
  },
  {
-  "id": "cb_linea",
+  "id": "u_uno_arriba",
   "kind": "depth2",
-  "t0": 1711.822,
-  "dur": 2.682,
-  "at": "37.2@otra forma de llevar",
+  "t0": 1843.72,
+  "dur": 5.98,
+  "at": "38.6",
   "exacto": true
  },
  {
-  "id": "t07_bolita",
+  "id": "u_todos",
   "kind": "depth2",
-  "t0": 1714.504,
-  "dur": 3.818,
-  "at": "38",
+  "t0": 1849.7,
+  "dur": 1.88,
+  "at": "38.6@hab\u00eda que bajar todos",
   "exacto": true
  },
  {
-  "id": "t08_tallador",
+  "id": "u_turnan",
   "kind": "depth2",
-  "t0": 1718.322,
-  "dur": 2.88,
-  "at": "39.0",
+  "t0": 1851.58,
+  "dur": 5.24,
+  "at": "38.7",
   "exacto": true
  },
  {
-  "id": "lupa_tapa",
-  "kind": "fotolupa",
-  "t0": 1721.202,
-  "dur": 3.26,
-  "at": "39.0@en la tapa de otros",
-  "exacto": true
- },
- {
-  "id": "t_figura",
+  "id": "u_paisaje",
   "kind": "depth2",
-  "t0": 1724.462,
+  "t0": 1856.82,
+  "dur": 3.8,
+  "at": "38.7@mirando el paisaje",
+  "exacto": true
+ },
+ {
+  "id": "u_arremanga",
+  "kind": "depth2",
+  "t0": 1860.62,
+  "dur": 1.3,
+  "at": "38.7@se arremangaban",
+  "exacto": true
+ },
+ {
+  "id": "u_calienta",
+  "kind": "depth2",
+  "t0": 1861.92,
+  "dur": 7.84,
+  "at": "38.8",
+  "exacto": true
+ },
+ {
+  "id": "u_volante_mano",
+  "kind": "depth2",
+  "t0": 1869.76,
+  "dur": 2.48,
+  "at": "38.8@a mano",
+  "exacto": true
+ },
+ {
+  "id": "u_campesinos",
+  "kind": "depth2",
+  "t0": 1872.24,
+  "dur": 7.38,
+  "at": "38.9",
+  "exacto": true
+ },
+ {
+  "id": "u_campesino_cara",
+  "kind": "depth2",
+  "t0": 1879.62,
+  "dur": 2.8,
+  "at": "38.9@sin entender",
+  "exacto": true
+ },
+ {
+  "id": "u_bajada",
+  "kind": "depth2",
+  "t0": 1882.42,
+  "dur": 3.96,
+  "at": "38.10",
+  "exacto": true
+ },
+ {
+  "id": "u_freno_taco",
+  "kind": "depth2",
+  "t0": 1886.38,
+  "dur": 8.04,
+  "at": "38.11",
+  "exacto": true
+ },
+ {
+  "id": "freno_taco",
+  "kind": "freno",
+  "t0": 1894.42,
+  "dur": 5.18,
+  "at": "38.11@para una m\u00e1quina",
+  "exacto": true
+ },
+ {
+  "id": "freno_manos",
+  "kind": "freno",
+  "t0": 1899.6,
+  "dur": 8.04,
+  "at": "38.12",
+  "exacto": true
+ },
+ {
+  "id": "u_quema",
+  "kind": "depth2",
+  "t0": 1907.64,
+  "dur": 3.08,
+  "at": "38.12@lo calentaba",
+  "exacto": true
+ },
+ {
+  "id": "u_gastado",
+  "kind": "depth2",
+  "t0": 1910.72,
+  "dur": 5.24,
+  "at": "38.13",
+  "exacto": true
+ },
+ {
+  "id": "u_idea",
+  "kind": "depth2",
+  "t0": 1915.96,
+  "dur": 3.76,
+  "at": "38.14",
+  "exacto": true
+ },
+ {
+  "id": "a_zapatero_aprendiz_1861_o",
+  "kind": "depth2",
+  "t0": 1919.72,
+  "dur": 1.5,
+  "at": "38.14@busc\u00f3 un zapatero",
+  "exacto": true,
+  "rot_off": 1.5
+ },
+ {
+  "id": "u_pide",
+  "kind": "depth2",
+  "t0": 1921.22,
+  "dur": 0.94,
+  "at": "38.15",
+  "exacto": true
+ },
+ {
+  "id": "u_cuero",
+  "kind": "film",
+  "t0": 1922.16,
+  "dur": 1.18,
+  "at": "38.15@tiras de cuero",
+  "exacto": true
+ },
+ {
+  "id": "u_costura_f",
+  "kind": "film",
+  "t0": 1923.34,
+  "dur": 2.18,
+  "at": "38.15@del mismo cuero",
+  "exacto": true
+ },
+ {
+  "id": "u_clava",
+  "kind": "depth2",
+  "t0": 1925.52,
+  "dur": 2.24,
+  "at": "38.15@sobre los tacos",
+  "exacto": true
+ },
+ {
+  "id": "freno_cuero",
+  "kind": "freno",
+  "t0": 1927.76,
+  "dur": 1.79,
+  "at": "38.16",
+  "exacto": true
+ },
+ {
+  "id": "a_zapatero_taller_1900_o",
+  "kind": "depth2",
+  "t0": 1929.55,
+  "dur": 1.79,
+  "at": "38.16",
+  "exacto": true
+ },
+ {
+  "id": "u_frena",
+  "kind": "depth2",
+  "t0": 1931.34,
+  "dur": 1.24,
+  "at": "38.16@el carro volvi\u00f3 a frenar",
+  "exacto": true
+ },
+ {
+  "id": "a_taller_zapatero_londres_o",
+  "kind": "depth2",
+  "t0": 1932.58,
+  "dur": 7.62,
+  "at": "38.17",
+  "exacto": true
+ },
+ {
+  "id": "u_pastillas",
+  "kind": "depth2",
+  "t0": 1940.2,
+  "dur": 4.42,
+  "at": "38.17@en las ruedas de cada auto",
+  "exacto": true
+ },
+ {
+  "id": "u_zapatero_sonrie",
+  "kind": "depth2",
+  "t0": 1944.62,
+  "dur": 1.592,
+  "at": "38.17@con un zapatero",
+  "exacto": true
+ },
+ {
+  "id": "u_martillo",
+  "kind": "depth2",
+  "t0": 1946.212,
+  "dur": 1.928,
+  "at": "39",
+  "exacto": true
+ },
+ {
+  "id": "m_pfinz",
+  "kind": "mapa3d",
+  "t0": 1948.14,
+  "dur": 4.74,
+  "at": "40.0",
+  "exacto": true
+ },
+ {
+  "id": "a_cartel_wilferdingen_o",
+  "kind": "depth2",
+  "t0": 1952.88,
+  "dur": 2.7,
+  "at": "40.0@wilferdingen",
+  "exacto": true,
+  "rot": [
+   "La ruta hoy",
+   "cartel en Wilferdingen",
+   0.0,
+   2.7
+  ]
+ },
+ {
+  "id": "l_sol_baja",
+  "kind": "depth2",
+  "t0": 1955.58,
+  "dur": 2.14,
+  "at": "40.1",
+  "exacto": true
+ },
+ {
+  "id": "l_sin_luces",
+  "kind": "depth2",
+  "t0": 1957.72,
+  "dur": 1.6,
+  "at": "40.1@no ten\u00eda luces",
+  "exacto": true
+ },
+ {
+  "id": "l_90",
+  "kind": "depth2",
+  "t0": 1959.32,
+  "dur": 3.72,
+  "at": "40.2",
+  "exacto": true
+ },
+ {
+  "id": "l_violeta",
+  "kind": "depth2",
+  "t0": 1963.04,
+  "dur": 3.78,
+  "at": "40.2@del naranja al violeta",
+  "exacto": true
+ },
+ {
+  "id": "l_cansados",
+  "kind": "depth2",
+  "t0": 1966.82,
+  "dur": 6.38,
+  "at": "40.3",
+  "exacto": true
+ },
+ {
+  "id": "l_vestido",
+  "kind": "depth2",
+  "t0": 1973.2,
+  "dur": 1.7,
+  "at": "40.3@el vestido roto",
+  "exacto": true
+ },
+ {
+  "id": "l_manos",
+  "kind": "depth2",
+  "t0": 1974.9,
+  "dur": 2.08,
+  "at": "40.3@las manos ampolladas",
+  "exacto": true
+ },
+ {
+  "id": "l_luces",
+  "kind": "depth2",
+  "t0": 1976.98,
+  "dur": 4.807,
+  "at": "40.4",
+  "exacto": true
+ },
+ {
+  "id": "l_colina",
+  "kind": "depth2",
+  "t0": 1981.787,
+  "dur": 3.0,
+  "at": "41",
+  "exacto": true
+ },
+ {
+  "id": "cap11",
+  "kind": "capitulo",
+  "t0": 1984.787,
+  "dur": 3.333,
+  "at": "42",
+  "exacto": true
+ },
+ {
+  "id": "km104",
+  "kind": "regla",
+  "t0": 1988.12,
+  "dur": 1.26,
+  "at": "43.0",
+  "exacto": true
+ },
+ {
+  "id": "m_llegada",
+  "kind": "mapa3d",
+  "t0": 1989.38,
+  "dur": 1.26,
+  "at": "43.0@kil\u00f3metro ciento cuatro pforzheim",
+  "exacto": true
+ },
+ {
+  "id": "t_entra",
+  "kind": "depth2",
+  "t0": 1990.64,
+  "dur": 4.96,
+  "at": "43.0@ya era de noche",
+  "exacto": true
+ },
+ {
+  "id": "t_doce",
+  "kind": "depth2",
+  "t0": 1995.6,
+  "dur": 3.82,
+  "at": "43.1",
+  "exacto": true
+ },
+ {
+  "id": "t_12h",
+  "kind": "depth2",
+  "t0": 1999.42,
+  "dur": 5.32,
+  "at": "43.1@unas doce horas",
+  "exacto": true
+ },
+ {
+  "id": "t_casa_madre",
+  "kind": "depth2",
+  "t0": 2004.74,
+  "dur": 2.94,
+  "at": "43.2",
+  "exacto": true
+ },
+ {
+  "id": "t_chicos_bajan",
+  "kind": "depth2",
+  "t0": 2007.68,
+  "dur": 1.76,
+  "at": "43.2@los chicos se bajaron",
+  "exacto": true
+ },
+ {
+  "id": "t_vecinos",
+  "kind": "depth2",
+  "t0": 2009.44,
+  "dur": 4.6,
+  "at": "43.2@la gente empez\u00f3 a salir",
+  "exacto": true
+ },
+ {
+  "id": "t_humo",
+  "kind": "depth2",
+  "t0": 2014.04,
+  "dur": 2.02,
+  "at": "43.2@esa m\u00e1quina humeante",
+  "exacto": true
+ },
+ {
+  "id": "t_va",
+  "kind": "depth2",
+  "t0": 2016.06,
+  "dur": 3.3,
+  "at": "43.3",
+  "exacto": true
+ },
+ {
+  "id": "t_oficina",
+  "kind": "depth2",
+  "t0": 2019.36,
+  "dur": 1.68,
+  "at": "43.3@la oficina de tel\u00e9grafos",
+  "exacto": true
+ },
+ {
+  "id": "t_formulario",
+  "kind": "depth2",
+  "t0": 2021.04,
+  "dur": 3.3,
+  "at": "43.4",
+  "exacto": true
+ },
+ {
+  "id": "t_escribe",
+  "kind": "depth2",
+  "t0": 2024.34,
+  "dur": 2.04,
+  "at": "43.5",
+  "exacto": true
+ },
+ {
+  "id": "t_mensaje",
+  "kind": "depth2",
+  "t0": 2026.38,
+  "dur": 4.44,
+  "at": "43.5@que hab\u00edan llegado",
+  "exacto": true
+ },
+ {
+  "id": "t_clerk",
+  "kind": "depth2",
+  "t0": 2030.82,
+  "dur": 2.029,
+  "at": "43.5@de una ciudad a otra",
+  "exacto": true
+ },
+ {
+  "id": "t_morse",
+  "kind": "depth2",
+  "t0": 2032.849,
+  "dur": 1.5,
+  "at": "44",
+  "exacto": true
+ },
+ {
+  "id": "t_cinta",
+  "kind": "depth2",
+  "t0": 2034.349,
+  "dur": 1.451,
+  "at": "44+1.5",
+  "exacto": true
+ },
+ {
+  "id": "t_karl_despierta",
+  "kind": "depth2",
+  "t0": 2035.8,
+  "dur": 7.7,
+  "at": "45.0",
+  "exacto": true
+ },
+ {
+  "id": "t_taller_vacio",
+  "kind": "depth2",
+  "t0": 2043.5,
+  "dur": 1.12,
+  "at": "45.0@va al taller",
+  "exacto": true
+ },
+ {
+  "id": "t_vacio",
+  "kind": "depth2",
+  "t0": 2044.62,
+  "dur": 1.36,
+  "at": "45.0@y el carro no est\u00e1",
+  "exacto": true
+ },
+ {
+  "id": "t_llega",
+  "kind": "depth2",
+  "t0": 2045.98,
+  "dur": 5.2,
+  "at": "45.1",
+  "exacto": true
+ },
+ {
+  "id": "t_lee",
+  "kind": "depth2",
+  "t0": 2051.18,
+  "dur": 5.34,
+  "at": "45.1@acaban de hacer m\u00e1s de cien",
+  "exacto": true
+ },
+ {
+  "id": "t_karl_cara",
+  "kind": "depth2",
+  "t0": 2056.52,
+  "dur": 4.54,
+  "at": "45.2",
+  "exacto": true
+ },
+ {
+  "id": "t_telegrama_mesa",
+  "kind": "depth2",
+  "t0": 2061.06,
   "dur": 1.86,
-  "at": "39.0@lo tallamos en madera",
+  "at": "45.2@ese telegrama cambi\u00f3 todo",
   "exacto": true
  },
  {
-  "id": "t_nombre",
+  "id": "t_pforzheim_mira",
   "kind": "depth2",
-  "t0": 1726.322,
-  "dur": 4.506,
-  "at": "39.1",
+  "t0": 2062.92,
+  "dur": 1.74,
+  "at": "45.3",
+  "exacto": true
+ },
+ {
+  "id": "a_pforzheim_marktplatz_o_2",
+  "kind": "depth2",
+  "t0": 2064.66,
+  "dur": 9.6,
+  "at": "45.3@lo supo pforzheim entero",
+  "exacto": true
+ },
+ {
+  "id": "t_posada",
+  "kind": "depth2",
+  "t0": 2074.26,
+  "dur": 3.02,
+  "at": "45.3@las posadas",
+  "exacto": true
+ },
+ {
+  "id": "t_bertha_mira",
+  "kind": "depth2",
+  "t0": 2077.28,
+  "dur": 7.46,
+  "at": "45.4",
+  "exacto": true
+ },
+ {
+  "id": "t_util",
+  "kind": "depth2",
+  "t0": 2084.74,
+  "dur": 1.64,
+  "at": "45.4@haciendo algo \u00fatil",
+  "exacto": true
+ },
+ {
+  "id": "t_prueba",
+  "kind": "depth2",
+  "t0": 2086.38,
+  "dur": 7.96,
+  "at": "45.5",
+  "exacto": true
+ },
+ {
+  "id": "t_hecho",
+  "kind": "depth2",
+  "t0": 2094.34,
+  "dur": 0.84,
+  "at": "45.5@era un hecho",
+  "exacto": true
+ },
+ {
+  "id": "t_primera",
+  "kind": "depth2",
+  "t0": 2095.18,
+  "dur": 11.12,
+  "at": "45.6",
+  "exacto": true
+ },
+ {
+  "id": "t_patio_contra",
+  "kind": "depth2",
+  "t0": 2106.3,
+  "dur": 5.96,
+  "at": "45.7",
+  "exacto": true
+ },
+ {
+  "id": "t_lista",
+  "kind": "depth2",
+  "t0": 2112.26,
+  "dur": 3.54,
+  "at": "45.8",
+  "exacto": true
+ },
+ {
+  "id": "eras_lecciones",
+  "kind": "eras",
+  "t0": 2115.8,
+  "dur": 8.54,
+  "at": "45.8@una velocidad m\u00e1s baja",
+  "exacto": true
+ },
+ {
+  "id": "m_vuelta",
+  "kind": "mapa3d",
+  "t0": 2124.34,
+  "dur": 10.8,
+  "at": "45.9",
+  "exacto": true
+ },
+ {
+  "id": "t_200",
+  "kind": "depth2",
+  "t0": 2135.14,
+  "dur": 7.26,
+  "at": "45.10",
+  "exacto": true
+ },
+ {
+  "id": "t_vuelve",
+  "kind": "depth2",
+  "t0": 2142.4,
+  "dur": 3.12,
+  "at": "45.11",
+  "exacto": true
+ },
+ {
+  "id": "t_entrega",
+  "kind": "depth2",
+  "t0": 2145.52,
+  "dur": 1.38,
+  "at": "45.11@le hizo una lista",
+  "exacto": true
+ },
+ {
+  "id": "t_explica",
+  "kind": "depth2",
+  "t0": 2146.9,
+  "dur": 6.6,
+  "at": "45.12",
+  "exacto": true
+ },
+ {
+  "id": "t_karl_anota",
+  "kind": "depth2",
+  "t0": 2153.5,
+  "dur": 5.08,
+  "at": "45.12@uno por uno",
+  "exacto": true
+ },
+ {
+  "id": "t_karl_trabaja",
+  "kind": "depth2",
+  "t0": 2158.58,
+  "dur": 2.94,
+  "at": "45.13",
   "exacto": false
  },
  {
-  "id": "t09_estante",
-  "kind": "depth2",
-  "t0": 1730.828,
-  "dur": 4.934,
-  "at": "40",
+  "id": "t_motor_f",
+  "kind": "film",
+  "t0": 2161.52,
+  "dur": 2.647,
+  "at": "45.13@para preparar el carro",
   "exacto": true
  },
  {
-  "id": "x_auto_1888",
+  "id": "t_taller_luz",
   "kind": "depth2",
-  "t0": 1735.762,
-  "dur": 3.52,
-  "at": "41.0",
+  "t0": 2164.167,
+  "dur": 1.0,
+  "at": "46",
   "exacto": true
  },
  {
-  "id": "a_motorwagen_o",
-  "kind": "depth2",
-  "t0": 1739.282,
-  "dur": 1.58,
-  "at": "41.0@en el pr\u00f3ximo video",
+  "id": "cap12",
+  "kind": "capitulo",
+  "t0": 2165.167,
+  "dur": 2.033,
+  "at": "46+1.0",
   "exacto": true
  },
  {
-  "id": "x_mujer_cara",
+  "id": "camb_marcha2",
+  "kind": "cambios",
+  "t0": 2167.2,
+  "dur": 1.04,
+  "at": "47.0",
+  "exacto": false
+ },
+ {
+  "id": "a_motorwagen_serie_1888_o_2",
   "kind": "depth2",
-  "t0": 1740.862,
-  "dur": 2.88,
-  "at": "41.0@una mujer que una madrugada",
+  "t0": 2168.24,
+  "dur": 3.7,
+  "at": "47.0@una segunda velocidad",
   "exacto": true
  },
  {
-  "id": "a_bertha_o",
+  "id": "g_frenos",
   "kind": "depth2",
-  "t0": 1743.742,
+  "t0": 2171.94,
+  "dur": 0.98,
+  "at": "47.0@mejor\u00f3 los frenos",
+  "exacto": true
+ },
+ {
+  "id": "g_munich",
+  "kind": "depth2",
+  "t0": 2172.92,
+  "dur": 4.26,
+  "at": "47.1",
+  "exacto": true
+ },
+ {
+  "id": "a_reisepass_benz_1888_o",
+  "kind": "depth2",
+  "t0": 2177.18,
+  "dur": 1.0,
+  "at": "47.1@lo llev\u00f3 a la exposici\u00f3n",
+  "exacto": true,
+  "rot_off": 1.0
+ },
+ {
+  "id": "g_stand",
+  "kind": "depth2",
+  "t0": 2178.18,
+  "dur": 2.94,
+  "at": "47.1@la exposici\u00f3n de m\u00e1quinas",
+  "exacto": true
+ },
+ {
+  "id": "g_medalla",
+  "kind": "depth2",
+  "t0": 2181.12,
+  "dur": 1.46,
+  "at": "47.1@una medalla de oro",
+  "exacto": true
+ },
+ {
+  "id": "a_illustrirte_1888_o",
+  "kind": "depth2",
+  "t0": 2182.58,
+  "dur": 1.72,
+  "at": "47.2",
+  "exacto": true,
+  "rot": [
+   "Illustrirte Zeitung",
+   "diciembre de 1888",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "lupa_illus",
+  "kind": "fotolupa",
+  "t0": 2184.3,
+  "dur": 4.42,
+  "at": "47.2@ahora escrib\u00edan sobre \u00e9l",
+  "exacto": true,
+  "rot": [
+   "Illustrirte Zeitung",
+   "diciembre de 1888",
+   1.72,
+   3.6
+  ]
+ },
+ {
+  "id": "g_boca",
+  "kind": "depth2",
+  "t0": 2188.72,
+  "dur": 1.38,
+  "at": "47.2@de boca en boca",
+  "exacto": true
+ },
+ {
+  "id": "g_se_van",
+  "kind": "depth2",
+  "t0": 2190.1,
+  "dur": 7.54,
+  "at": "47.3",
+  "exacto": true
+ },
+ {
+  "id": "g_nuevos",
+  "kind": "depth2",
+  "t0": 2197.64,
+  "dur": 6.4,
+  "at": "47.3@dos socios nuevos",
+  "exacto": true,
+  "rot": [
+   "Friedrich von Fischer y Julius Ganss",
+   "los socios nuevos \u00b7 1890",
+   0.0,
+   6.4
+  ]
+ },
+ {
+  "id": "g_karl_feliz",
+  "kind": "depth2",
+  "t0": 2204.04,
+  "dur": 4.46,
+  "at": "47.4",
+  "exacto": true
+ },
+ {
+  "id": "g_pedidos",
+  "kind": "depth2",
+  "t0": 2208.5,
+  "dur": 1.8,
+  "at": "47.4@le ped\u00edan m\u00e1s carros",
+  "exacto": true
+ },
+ {
+  "id": "g_francia",
+  "kind": "depth2",
+  "t0": 2210.3,
+  "dur": 4.76,
+  "at": "47.5",
+  "exacto": true
+ },
+ {
+  "id": "g_roger",
+  "kind": "depth2",
+  "t0": 2215.06,
+  "dur": 9.06,
+  "at": "47.6",
+  "exacto": true,
+  "rot": [
+   "\u00c9mile Roger",
+   "vendedor de Benz en Par\u00eds",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "a_paris_rouen_1894_o",
+  "kind": "depth2",
+  "t0": 2224.12,
+  "dur": 2.98,
+  "at": "47.6@se entusiasmaron",
+  "exacto": true,
+  "rot": [
+   "\u00c9mile Roger",
+   "Par\u00eds-Rouen, 1894",
+   0.0,
+   2.98
+  ]
+ },
+ {
+  "id": "m_paris",
+  "kind": "mapa3d",
+  "t0": 2227.1,
+  "dur": 7.86,
+  "at": "47.7",
+  "exacto": true
+ },
+ {
+  "id": "a_paris_rouen_panhard_o",
+  "kind": "depth2",
+  "t0": 2234.96,
+  "dur": 2.6,
+  "at": "47.8",
+  "exacto": true,
+  "rot": [
+   "Panhard et Levassor",
+   "con motor Daimler",
+   0.0,
+   2.6
+  ]
+ },
+ {
+  "id": "a_paris_rouen_doriot_o",
+  "kind": "proyector",
+  "t0": 2237.56,
+  "dur": 6.64,
+  "at": "47.8@y peugeot",
+  "exacto": true,
+  "rot": [
+   "Peugeot",
+   "Par\u00eds-Rouen, 1894",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "a_daimler_cuadriciclo_1893_o",
+  "kind": "copia",
+  "t0": 2244.2,
+  "dur": 1.88,
+  "at": "47.8@francia se llen\u00f3 de fabricantes",
+  "exacto": true,
+  "rot": [
+   "El cuadriciclo de Daimler",
+   "Cassier's Magazine \u00b7 1893",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "g_carrera",
+  "kind": "film",
+  "t0": 2246.08,
+  "dur": 6.46,
+  "at": "47.9",
+  "exacto": true,
+  "rot": [
+   "El cuadriciclo de Daimler",
+   "Cassier's Magazine \u00b7 1893",
+   1.88,
+   3.6
+  ]
+ },
+ {
+  "id": "g_126",
+  "kind": "depth2",
+  "t0": 2252.54,
+  "dur": 1.92,
+  "at": "47.9@ciento veintis\u00e9is kil\u00f3metros",
+  "exacto": true
+ },
+ {
+  "id": "g_speed_f",
+  "kind": "film",
+  "t0": 2254.46,
+  "dur": 1.84,
+  "at": "47.9@los diarios la organizaron",
+  "exacto": true
+ },
+ {
+  "id": "g_speed2_f",
+  "kind": "film",
+  "t0": 2256.3,
+  "dur": 2.18,
+  "at": "47.9@se anotaron m\u00e1s de cien",
+  "exacto": true
+ },
+ {
+  "id": "a_paris_rouen_serpollet_o",
+  "kind": "depth2",
+  "t0": 2258.48,
+  "dur": 1.08,
+  "at": "47.9@a vapor",
+  "exacto": true,
+  "rot": [
+   "A vapor",
+   "Serpollet, 1894",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "a_paris_rouen_michaux_o",
+  "kind": "proyector",
+  "t0": 2259.56,
+  "dur": 1.76,
+  "at": "47.9@nafta a aire comprimido",
+  "exacto": true,
+  "rot": [
+   "A vapor",
+   "Serpollet, 1894",
+   1.08,
+   3.6
+  ]
+ },
+ {
+  "id": "g_carrera2",
+  "kind": "film",
+  "t0": 2261.32,
+  "dur": 1.0,
+  "at": "47.9@a pedal",
+  "exacto": true,
+  "rot": [
+   "A vapor",
+   "Serpollet, 1894",
+   2.84,
+   3.6
+  ]
+ },
+ {
+  "id": "a_benz_velo_1894_o",
+  "kind": "depth2",
+  "t0": 2262.32,
+  "dur": 6.98,
+  "at": "47.10",
+  "exacto": true,
+  "rot": [
+   "Benz Velo",
+   "1894",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "g_1200",
+  "kind": "depth2",
+  "t0": 2269.3,
+  "dur": 2.96,
+  "at": "47.10@m\u00e1s de mil doscientos",
+  "exacto": true
+ },
+ {
+  "id": "a_benz_velo_museo_o",
+  "kind": "depth2",
+  "t0": 2272.26,
   "dur": 1.78,
-  "at": "41.0@se llev\u00f3 el coche de su marido",
+  "at": "47.10@hechos en serie",
   "exacto": true
  },
  {
-  "id": "x_mujer_1888",
+  "id": "g_rueda_frente",
   "kind": "depth2",
-  "t0": 1745.522,
+  "t0": 2274.04,
+  "dur": 2.92,
+  "at": "47.11",
+  "exacto": true
+ },
+ {
+  "id": "dir_dos2",
+  "kind": "direccion",
+  "t0": 2276.96,
+  "dur": 9.34,
+  "at": "47.12",
+  "exacto": true
+ },
+ {
+  "id": "dir_resuelto",
+  "kind": "direccion",
+  "t0": 2286.3,
+  "dur": 11.86,
+  "at": "47.13",
+  "exacto": true
+ },
+ {
+  "id": "a_bertha_carl_victoria_1894_o",
+  "kind": "depth2",
+  "t0": 2298.16,
+  "dur": 3.038,
+  "at": "47.13@se llam\u00f3 victoria",
+  "exacto": true,
+  "rot": [
+   "Bertha y Karl",
+   "en un Victoria \u00b7 1894",
+   0.0,
+   3.038
+  ]
+ },
+ {
+  "id": "a_familia_victoria_1894_o",
+  "kind": "proyector",
+  "t0": 2301.198,
+  "dur": 1.642,
+  "at": "48",
+  "exacto": true,
+  "rot_off": 1.64
+ },
+ {
+  "id": "g_600",
+  "kind": "depth2",
+  "t0": 2302.84,
+  "dur": 3.44,
+  "at": "49.0",
+  "exacto": true
+ },
+ {
+  "id": "a_benz_1897_margarethenhof_o",
+  "kind": "depth2",
+  "t0": 2306.28,
+  "dur": 2.76,
+  "at": "49.0@la mayor f\u00e1brica",
+  "exacto": true,
+  "rot": [
+   "Karl Benz",
+   "con uno de sus autos \u00b7 1896",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "g_ford_d",
+  "kind": "film",
+  "t0": 2309.04,
+  "dur": 2.34,
+  "at": "49.0@ese a\u00f1o fabric\u00f3",
+  "exacto": true,
+  "rot": [
+   "Karl Benz",
+   "con uno de sus autos \u00b7 1896",
+   2.76,
+   3.6
+  ]
+ },
+ {
+  "id": "g_jellinek",
+  "kind": "depth2",
+  "t0": 2311.38,
+  "dur": 7.14,
+  "at": "49.1",
+  "exacto": true,
+  "rot": [
+   "Emil Jellinek",
+   "vendedor de Daimler",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "a_werner_nizza_1901_o",
+  "kind": "depth2",
+  "t0": 2318.52,
+  "dur": 2.16,
+  "at": "49.1@carreras",
+  "exacto": true,
+  "rot_off": 2.16
+ },
+ {
+  "id": "g_mercedes",
+  "kind": "depth2",
+  "t0": 2320.68,
+  "dur": 1.3,
+  "at": "49.1@su hija",
+  "exacto": true
+ },
+ {
+  "id": "g_mercedes_tx",
+  "kind": "depth2",
+  "t0": 2321.98,
+  "dur": 1.76,
+  "at": "49.1@se llamaba mercedes",
+  "exacto": true
+ },
+ {
+  "id": "a_mercedes_35ps_o",
+  "kind": "depth2",
+  "t0": 2323.74,
+  "dur": 3.86,
+  "at": "49.2",
+  "exacto": true
+ },
+ {
+  "id": "g_compiten_f",
+  "kind": "film",
+  "t0": 2327.6,
+  "dur": 3.3,
+  "at": "49.2@siguieron compitiendo",
+  "exacto": true
+ },
+ {
+  "id": "g_crisis",
+  "kind": "depth2",
+  "t0": 2330.9,
+  "dur": 6.87,
+  "at": "49.3",
+  "exacto": true
+ },
+ {
+  "id": "g_firma",
+  "kind": "depth2",
+  "t0": 2337.77,
+  "dur": 4.3,
+  "at": "49.3@se fusionaron",
+  "exacto": true
+ },
+ {
+  "id": "g_mb",
+  "kind": "depth2",
+  "t0": 2342.07,
+  "dur": 1.44,
+  "at": "49.3@mercedes-benz",
+  "exacto": true
+ },
+ {
+  "id": "g_estrella",
+  "kind": "depth2",
+  "t0": 2343.51,
+  "dur": 2.52,
+  "at": "49.4",
+  "exacto": true
+ },
+ {
+  "id": "g_dos",
+  "kind": "depth2",
+  "t0": 2346.03,
+  "dur": 7.825,
+  "at": "49.4@sin conocerse",
+  "exacto": true
+ },
+ {
+  "id": "g_logo",
+  "kind": "depth2",
+  "t0": 2353.855,
+  "dur": 1.0,
+  "at": "50",
+  "exacto": true
+ },
+ {
+  "id": "cap13",
+  "kind": "capitulo",
+  "t0": 2354.855,
+  "dur": 1.795,
+  "at": "50+1.0",
+  "exacto": true
+ },
+ {
+  "id": "w_sombra",
+  "kind": "depth2",
+  "t0": 2356.65,
   "dur": 1.02,
-  "at": "41.0@sin pedir permiso",
+  "at": "51.0",
   "exacto": true
  },
  {
-  "id": "x_auto_ruta",
+  "id": "w_papeles",
   "kind": "depth2",
-  "t0": 1746.542,
-  "dur": 5.803,
-  "at": "41.0@y con ese viaje",
+  "t0": 2357.67,
+  "dur": 5.4,
+  "at": "51.1",
+  "exacto": true
+ },
+ {
+  "id": "w_dote",
+  "kind": "depth2",
+  "t0": 2363.07,
+  "dur": 1.56,
+  "at": "51.1@ni cuando puso su dote",
+  "exacto": true
+ },
+ {
+  "id": "w_empuja_rec",
+  "kind": "depth2",
+  "t0": 2364.63,
+  "dur": 4.9,
+  "at": "51.1@ni cuando empuj\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "w_libros",
+  "kind": "depth2",
+  "t0": 2369.53,
+  "dur": 1.06,
+  "at": "51.2",
+  "exacto": true
+ },
+ {
+  "id": "w_libro_f",
+  "kind": "film",
+  "t0": 2370.59,
+  "dur": 2.6,
+  "at": "51.2@cuando se contaba la historia",
+  "exacto": true
+ },
+ {
+  "id": "eras_hombres",
+  "kind": "eras",
+  "t0": 2373.19,
+  "dur": 3.76,
+  "at": "51.2@de benz de daimler",
+  "exacto": true
+ },
+ {
+  "id": "w_anecdota",
+  "kind": "depth2",
+  "t0": 2376.95,
+  "dur": 7.02,
+  "at": "51.3",
+  "exacto": true
+ },
+ {
+  "id": "w_mama",
+  "kind": "depth2",
+  "t0": 2383.97,
+  "dur": 1.3,
+  "at": "51.3@a ver a su mam\u00e1",
+  "exacto": true
+ },
+ {
+  "id": "a_karl_benz_1920_o",
+  "kind": "depth2",
+  "t0": 2385.27,
+  "dur": 5.38,
+  "at": "51.4",
+  "exacto": true,
+  "rot": [
+   "Karl Benz",
+   "hacia 1920",
+   0.0,
+   5.38
+  ]
+ },
+ {
+  "id": "w_memorias",
+  "kind": "depth2",
+  "t0": 2390.65,
+  "dur": 2.5,
+  "at": "51.4@public\u00f3 sus memorias",
+  "exacto": true
+ },
+ {
+  "id": "w_recuerdo",
+  "kind": "depth2",
+  "t0": 2393.15,
+  "dur": 3.46,
+  "at": "51.4@la noche de a\u00f1o nuevo",
+  "exacto": true
+ },
+ {
+  "id": "w_espalda",
+  "kind": "depth2",
+  "t0": 2396.61,
+  "dur": 4.76,
+  "at": "51.5",
+  "exacto": true
+ },
+ {
+  "id": "a_bertha_karl_familia_o_2",
+  "kind": "depth2",
+  "t0": 2401.37,
+  "dur": 2.46,
+  "at": "51.5@una sola persona",
+  "exacto": true
+ },
+ {
+  "id": "w_juntos",
+  "kind": "depth2",
+  "t0": 2403.83,
+  "dur": 1.26,
+  "at": "51.5@su mujer",
+  "exacto": true
+ },
+ {
+  "id": "m_ladenburg",
+  "kind": "mapa3d",
+  "t0": 2405.09,
+  "dur": 5.9,
+  "at": "51.6",
+  "exacto": true
+ },
+ {
+  "id": "w_villa",
+  "kind": "depth2",
+  "t0": 2410.99,
+  "dur": 5.9,
+  "at": "51.6@el mismo ladenburg",
+  "exacto": true
+ },
+ {
+  "id": "w_karl_se_va",
+  "kind": "depth2",
+  "t0": 2416.89,
+  "dur": 6.02,
+  "at": "51.7",
+  "exacto": true
+ },
+ {
+  "id": "w_rapidos",
+  "kind": "depth2",
+  "t0": 2422.91,
+  "dur": 2.18,
+  "at": "51.7@autos m\u00e1s r\u00e1pidos",
+  "exacto": true
+ },
+ {
+  "id": "w_sohne",
+  "kind": "depth2",
+  "t0": 2425.09,
+  "dur": 7.46,
+  "at": "51.8",
+  "exacto": true
+ },
+ {
+  "id": "w_sohne_tx",
+  "kind": "depth2",
+  "t0": 2432.55,
+  "dur": 6.6,
+  "at": "51.8@benz e hijos",
+  "exacto": true
+ },
+ {
+  "id": "w_eugen_ing",
+  "kind": "depth2",
+  "t0": 2439.15,
+  "dur": 1.42,
+  "at": "51.8@ahora era el ingeniero",
+  "exacto": true
+ },
+ {
+  "id": "w_hermanos",
+  "kind": "depth2",
+  "t0": 2440.57,
+  "dur": 7.66,
+  "at": "51.9",
+  "exacto": true
+ },
+ {
+  "id": "w_camino_rec",
+  "kind": "depth2",
+  "t0": 2448.23,
+  "dur": 1.38,
+  "at": "51.9@en el camino",
+  "exacto": true
+ },
+ {
+  "id": "w_1929",
+  "kind": "depth2",
+  "t0": 2449.61,
+  "dur": 7.4,
+  "at": "51.10",
+  "exacto": true
+ },
+ {
+  "id": "w_ventana",
+  "kind": "depth2",
+  "t0": 2457.01,
+  "dur": 3.98,
+  "at": "51.10@desde la ventana",
+  "exacto": true
+ },
+ {
+  "id": "w_bertha_vieja",
+  "kind": "depth2",
+  "t0": 2460.99,
+  "dur": 3.43,
+  "at": "51.11",
+  "exacto": true
+ },
+ {
+  "id": "a_bertha_pasaporte_1927_o",
+  "kind": "depth2",
+  "t0": 2464.42,
+  "dur": 3.43,
+  "at": "51.11@bertha lo sobrevivi\u00f3",
+  "exacto": true,
+  "rot": [
+   "El pasaporte de Bertha",
+   "1927 \u00b7 Carl-Benz-Haus",
+   0.0,
+   3.43
+  ]
+ },
+ {
+  "id": "w_ford",
+  "kind": "film",
+  "t0": 2467.85,
+  "dur": 1.82,
+  "at": "51.11@desaparec\u00eda por completo",
+  "exacto": true,
+  "rot_off": 1.82
+ },
+ {
+  "id": "a_mujer_maneja_1910_o",
+  "kind": "depth2",
+  "t0": 2469.67,
+  "dur": 4.84,
+  "at": "51.12",
+  "exacto": true,
+  "rot": [
+   "Una mujer al volante",
+   "hacia 1910",
+   0.0,
+   4.84
+  ]
+ },
+ {
+  "id": "a_mujer_aprende_1910_o",
+  "kind": "proyector",
+  "t0": 2474.51,
+  "dur": 6.5,
+  "at": "51.12@a las mujeres a la universidad",
+  "exacto": true,
+  "rot": [
+   "Mujeres al volante",
+   "hacia 1910-1920",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "w_voto",
+  "kind": "depth2",
+  "t0": 2481.01,
+  "dur": 1.44,
+  "at": "51.12@el derecho a votar",
+  "exacto": true
+ },
+ {
+  "id": "w_biblia",
+  "kind": "depth2",
+  "t0": 2482.45,
+  "dur": 4.96,
+  "at": "51.13",
+  "exacto": true
+ },
+ {
+  "id": "w_95",
+  "kind": "depth2",
+  "t0": 2487.41,
+  "dur": 6.52,
+  "at": "51.14",
+  "exacto": true
+ },
+ {
+  "id": "w_karlsruhe",
+  "kind": "depth2",
+  "t0": 2493.93,
+  "dur": 5.46,
+  "at": "51.14@la universidad t\u00e9cnica de karlsruhe",
+  "exacto": true
+ },
+ {
+  "id": "a_bertha_1944_o",
+  "kind": "depth2",
+  "t0": 2499.39,
+  "dur": 1.52,
+  "at": "51.14@senadora honoraria",
+  "exacto": true,
+  "rot_off": 1.52
+ },
+ {
+  "id": "w_diploma",
+  "kind": "depth2",
+  "t0": 2500.91,
+  "dur": 4.56,
+  "at": "51.15",
+  "exacto": true
+ },
+ {
+  "id": "w_puerta",
+  "kind": "depth2",
+  "t0": 2505.47,
+  "dur": 1.62,
+  "at": "51.15@no pod\u00eda estudiar en una",
+  "exacto": true
+ },
+ {
+  "id": "w_vela",
+  "kind": "depth2",
+  "t0": 2507.09,
+  "dur": 4.52,
+  "at": "51.16",
+  "exacto": true
+ },
+ {
+  "id": "a_bertha_1944_o_2",
+  "kind": "depth2",
+  "t0": 2511.61,
+  "dur": 1.76,
+  "at": "51.16@bertha muri\u00f3 en ladenburg",
+  "exacto": true
+ },
+ {
+  "id": "w_frase",
+  "kind": "depth2",
+  "t0": 2513.37,
+  "dur": 5.9,
+  "at": "51.17",
+  "exacto": true
+ },
+ {
+  "id": "w_carro_tallado",
+  "kind": "depth2",
+  "t0": 2519.27,
+  "dur": 2.673,
+  "at": "51.17@el primer viaje en autom\u00f3vil",
+  "exacto": true
+ },
+ {
+  "id": "w_luz_apaga",
+  "kind": "depth2",
+  "t0": 2521.943,
+  "dur": 4.0,
+  "at": "52",
+  "exacto": true
+ },
+ {
+  "id": "cap14",
+  "kind": "capitulo",
+  "t0": 2525.943,
+  "dur": 2.807,
+  "at": "53",
+  "exacto": true
+ },
+ {
+  "id": "z_olvido",
+  "kind": "depth2",
+  "t0": 2528.75,
+  "dur": 7.24,
+  "at": "54.0",
+  "exacto": true
+ },
+ {
+  "id": "a_cartel_ruta_bbmr_o",
+  "kind": "depth2",
+  "t0": 2535.99,
+  "dur": 7.68,
+  "at": "54.1",
+  "exacto": true,
+  "rot": [
+   "Bertha Benz Memorial Route",
+   "desde 2008",
+   0.0,
+   6.5
+  ]
+ },
+ {
+  "id": "m_ruta",
+  "kind": "mapa3d",
+  "t0": 2543.67,
+  "dur": 4.42,
+  "at": "54.1@la ruta conmemorativa",
+  "exacto": true
+ },
+ {
+  "id": "a_cartel_nussloch_o",
+  "kind": "depth2",
+  "t0": 2548.09,
+  "dur": 2.78,
+  "at": "54.1@carteles marrones",
+  "exacto": true
+ },
+ {
+  "id": "z_desfile",
+  "kind": "depth2",
+  "t0": 2550.87,
+  "dur": 2.37,
+  "at": "54.2",
+  "exacto": true
+ },
+ {
+  "id": "a_replica_toyota_nr1_o",
+  "kind": "depth2",
+  "t0": 2553.24,
+  "dur": 2.37,
+  "at": "54.2@cada dos a\u00f1os",
+  "exacto": true
+ },
+ {
+  "id": "a_replica_1886_o",
+  "kind": "proyector",
+  "t0": 2555.61,
+  "dur": 2.92,
+  "at": "54.2@con una r\u00e9plica",
+  "exacto": true,
+  "rot": [
+   "Una r\u00e9plica del Motorwagen",
+   "1886",
+   0.0,
+   2.92
+  ]
+ },
+ {
+  "id": "z_empujan_hoy",
+  "kind": "depth2",
+  "t0": 2558.53,
+  "dur": 2.06,
+  "at": "54.2@empujando",
+  "exacto": true
+ },
+ {
+  "id": "a_stadt_apotheke_wiesloch_o_2",
+  "kind": "depth2",
+  "t0": 2560.59,
+  "dur": 3.84,
+  "at": "54.3",
+  "exacto": true
+ },
+ {
+  "id": "a_nr1_praga_o",
+  "kind": "proyector",
+  "t0": 2564.43,
+  "dur": 2.08,
+  "at": "54.3@en pforzheim",
+  "exacto": true
+ },
+ {
+  "id": "a_monumento_benz_mannheim_o",
+  "kind": "copia",
+  "t0": 2566.51,
+  "dur": 1.78,
+  "at": "54.3@monumentos",
+  "exacto": true,
+  "rot": [
+   "Monumento a Carl Benz",
+   "Mannheim",
+   0.0,
+   3.6
+  ]
+ },
+ {
+  "id": "a_nr1_rusia_o",
+  "kind": "proyector",
+  "t0": 2568.29,
+  "dur": 1.42,
+  "at": "54.3@calles con su nombre",
+  "exacto": true,
+  "rot": [
+   "Monumento a Carl Benz",
+   "Mannheim",
+   1.78,
+   3.6
+  ]
+ },
+ {
+  "id": "a_patente_37435_o_2",
+  "kind": "copia",
+  "t0": 2569.71,
+  "dur": 7.6,
+  "at": "54.4",
+  "exacto": true,
+  "rot": [
+   "Monumento a Carl Benz",
+   "Mannheim",
+   3.2,
+   3.6
+  ]
+ },
+ {
+  "id": "z_gutenberg",
+  "kind": "depth2",
+  "t0": 2577.31,
+  "dur": 1.84,
+  "at": "54.4@la biblia de gutenberg",
+  "exacto": true
+ },
+ {
+  "id": "z_piensa",
+  "kind": "depth2",
+  "t0": 2579.15,
+  "dur": 3.26,
+  "at": "54.5",
+  "exacto": true
+ },
+ {
+  "id": "z_ford",
+  "kind": "film",
+  "t0": 2582.41,
+  "dur": 5.08,
+  "at": "54.6",
+  "exacto": true,
+  "rot": [
+   "L\u00ednea de montaje",
+   "Ford \u00b7 a\u00f1os 1910",
+   0.0,
+   5.08
+  ]
+ },
+ {
+  "id": "z_ford_a",
+  "kind": "film",
+  "t0": 2587.49,
+  "dur": 1.54,
+  "at": "54.6@henry ford lanz\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "z_ford_c",
+  "kind": "film",
+  "t0": 2589.03,
+  "dur": 1.04,
+  "at": "54.6@y lo fabric\u00f3",
+  "exacto": true
+ },
+ {
+  "id": "z_ford2",
+  "kind": "film",
+  "t0": 2590.07,
+  "dur": 1.66,
+  "at": "54.6@en una l\u00ednea de montaje",
+  "exacto": true
+ },
+ {
+  "id": "z_15m",
+  "kind": "depth2",
+  "t0": 2591.73,
+  "dur": 1.98,
+  "at": "54.6@quince millones",
+  "exacto": true
+ },
+ {
+  "id": "z_sf",
+  "kind": "film",
+  "t0": 2593.71,
+  "dur": 1.21,
+  "at": "54.7",
+  "exacto": true
+ },
+ {
+  "id": "z_halifax",
+  "kind": "film",
+  "t0": 2594.92,
+  "dur": 1.21,
+  "at": "54.7@las ciudades se llenaron",
+  "exacto": true
+ },
+ {
+  "id": "z_ultimo_f",
+  "kind": "film",
+  "t0": 2596.13,
+  "dur": 7.28,
+  "at": "54.7@los caballos desaparecieron",
+  "exacto": true
+ },
+ {
+  "id": "z_calle_autos",
+  "kind": "depth2",
+  "t0": 2603.41,
+  "dur": 1.26,
+  "at": "54.7@con el auto",
+  "exacto": true
+ },
+ {
+  "id": "z_asfalto",
+  "kind": "depth2",
+  "t0": 2604.67,
+  "dur": 3.2,
+  "at": "54.8",
+  "exacto": true
+ },
+ {
+  "id": "z_semaforo",
+  "kind": "depth2",
+  "t0": 2607.87,
+  "dur": 10.14,
+  "at": "54.8@los sem\u00e1foros",
+  "exacto": true
+ },
+ {
+  "id": "z_surtidor",
+  "kind": "depth2",
+  "t0": 2618.01,
+  "dur": 3.3,
+  "at": "54.8@los primeros surtidores",
+  "exacto": true
+ },
+ {
+  "id": "z_lata",
+  "kind": "depth2",
+  "t0": 2621.31,
+  "dur": 9.18,
+  "at": "54.9",
+  "exacto": true
+ },
+ {
+  "id": "z_trafico",
+  "kind": "depth2",
+  "t0": 2630.49,
+  "dur": 8.34,
+  "at": "54.10",
+  "exacto": true
+ },
+ {
+  "id": "z_electrico",
+  "kind": "depth2",
+  "t0": 2638.83,
+  "dur": 1.46,
+  "at": "54.10@autos el\u00e9ctricos",
+  "exacto": true
+ },
+ {
+  "id": "z_taxi",
+  "kind": "depth2",
+  "t0": 2640.29,
+  "dur": 12.0,
+  "at": "54.11",
+  "exacto": true
+ },
+ {
+  "id": "z_carga",
+  "kind": "depth2",
+  "t0": 2652.29,
+  "dur": 1.52,
+  "at": "54.11@sobre sus pasos",
+  "exacto": true
+ },
+ {
+  "id": "z_1500b",
+  "kind": "depth2",
+  "t0": 2653.81,
+  "dur": 4.38,
+  "at": "54.12",
+  "exacto": true
+ },
+ {
+  "id": "z_pastilla",
+  "kind": "depth2",
+  "t0": 2658.19,
+  "dur": 1.78,
+  "at": "54.12@frenos que tienen guarnici\u00f3n",
+  "exacto": true
+ },
+ {
+  "id": "z_cambios",
+  "kind": "depth2",
+  "t0": 2659.97,
+  "dur": 5.12,
+  "at": "54.12@con varias velocidades",
+  "exacto": true
+ },
+ {
+  "id": "z_estacion",
+  "kind": "depth2",
+  "t0": 2665.09,
+  "dur": 1.5,
+  "at": "54.12@estaci\u00f3n de servicio",
+  "exacto": true
+ },
+ {
+  "id": "z_camino_tierra",
+  "kind": "depth2",
+  "t0": 2666.59,
+  "dur": 7.076,
+  "at": "54.13",
+  "exacto": true
+ },
+ {
+  "id": "z_cartel_atardecer",
+  "kind": "depth2",
+  "t0": 2673.666,
+  "dur": 4.0,
+  "at": "55",
+  "exacto": true
+ },
+ {
+  "id": "f_figura",
+  "kind": "depth2",
+  "t0": 2677.666,
+  "dur": 2.684,
+  "at": "56",
+  "exacto": true
+ },
+ {
+  "id": "f_carga",
+  "kind": "depth2",
+  "t0": 2680.35,
+  "dur": 3.9,
+  "at": "57.0",
+  "exacto": true
+ },
+ {
+  "id": "f_bajada",
+  "kind": "depth2",
+  "t0": 2684.25,
+  "dur": 4.6,
+  "at": "57.0@que frenes en una bajada",
+  "exacto": true
+ },
+ {
+  "id": "f_bertha",
+  "kind": "depth2",
+  "t0": 2688.85,
+  "dur": 1.6,
+  "at": "57.0@acu\u00e9rdate de ella",
+  "exacto": true
+ },
+ {
+  "id": "f_nina",
+  "kind": "depth2",
+  "t0": 2690.45,
+  "dur": 0.8,
+  "at": "57.1",
+  "exacto": true
+ },
+ {
+  "id": "a_bertha_1870_o_2",
+  "kind": "depth2",
+  "t0": 2691.25,
+  "dur": 1.88,
+  "at": "57.1@una ni\u00f1a que su padre",
+  "exacto": true
+ },
+ {
+  "id": "f_dote",
+  "kind": "depth2",
+  "t0": 2693.13,
+  "dur": 1.88,
+  "at": "57.1@una dote",
+  "exacto": true
+ },
+ {
+  "id": "f_campanas",
+  "kind": "depth2",
+  "t0": 2695.01,
+  "dur": 2.34,
+  "at": "57.1@una noche de a\u00f1o nuevo",
+  "exacto": true
+ },
+ {
+  "id": "f_rien",
+  "kind": "depth2",
+  "t0": 2697.35,
+  "dur": 2.06,
+  "at": "57.1@un carro del que todos se re\u00edan",
+  "exacto": true
+ },
+ {
+  "id": "f_madrugada",
+  "kind": "depth2",
+  "t0": 2699.41,
+  "dur": 2.22,
+  "at": "57.2",
+  "exacto": true
+ },
+ {
+  "id": "a_estatua_bertha_wiesloch_o_2",
+  "kind": "depth2",
+  "t0": 2701.63,
+  "dur": 2.119,
+  "at": "57.2@no le pidi\u00f3 permiso",
+  "exacto": true
+ },
+ {
+  "id": "f_objetos",
+  "kind": "depth2",
+  "t0": 2703.749,
+  "dur": 3.521,
+  "at": "58",
+  "exacto": true
+ },
+ {
+  "id": "f_patentes",
+  "kind": "depth2",
+  "t0": 2707.27,
+  "dur": 6.46,
+  "at": "59.0",
+  "exacto": true
+ },
+ {
+  "id": "f_ella",
+  "kind": "depth2",
+  "t0": 2713.73,
+  "dur": 2.82,
+  "at": "59.0@lo hizo ella",
+  "exacto": true
+ },
+ {
+  "id": "f_tallador",
+  "kind": "depth2",
+  "t0": 2716.55,
+  "dur": 1.5,
+  "at": "59.0@la tallamos en madera",
+  "exacto": true
+ },
+ {
+  "id": "f_final",
+  "kind": "depth2",
+  "t0": 2718.05,
+  "dur": 4.96,
+  "at": "59.1",
+  "exacto": false
+ },
+ {
+  "id": "a_benz_victoria_1894_o",
+  "kind": "depth2",
+  "t0": 2723.01,
+  "dur": 1.997,
+  "at": "59.1@convertido en el futuro",
+  "exacto": true
+ },
+ {
+  "id": "f_estante",
+  "kind": "depth2",
+  "t0": 2725.007,
+  "dur": 4.523,
+  "at": "60",
+  "exacto": true
+ },
+ {
+  "id": "f_meucci",
+  "kind": "depth2",
+  "t0": 2729.53,
+  "dur": 12.2,
+  "at": "61.0",
+  "exacto": true
+ },
+ {
+  "id": "f_diez",
+  "kind": "depth2",
+  "t0": 2741.73,
+  "dur": 4.165,
+  "at": "61.0@diez d\u00f3lares",
   "exacto": true
  }
 ]

@@ -17,6 +17,17 @@ SCENES = {
     "mundo":   {"bbox": (-100.0, -45.0, 30.0, 58.0), "px": 4600, "hs": 0.55},
     "plata":   {"bbox": (-59.4, -35.5, -56.3, -33.8), "px": 5200, "hs": 0.010},
     "palermo": {"bbox": (-58.495, -34.635, -58.365, -34.535), "px": 4000, "hs": 0.00035},
+    # relieve REAL (SRTM, tiles terrarium de AWS en fuentes/dem/) tallado en capas por curva de nivel + ríos de OSM (fuentes/osm_rios_<escena>.json)
+    "baden":   {"bbox": (8.25, 48.80, 8.95, 49.58), "px": 4200, "hs": 0.030, "dem": 10, "paso": 40,
+                "rios": {"Rhein": 22, "Neckar": 13, "Enz": 8, "Pfinz": 6, "Nagold": 6},
+                "labels": [("RIN", 8.40, 49.20, 120, "brass", 30, -62), ("NECKAR", 8.84, 49.43, 80, "brass", 16, 8),
+                           ("ODENWALD", 8.82, 49.53, 110, "burn", 30, 0), ("KRAICHGAU", 8.80, 49.15, 110, "burn", 30, 0),
+                           ("SELVA NEGRA", 8.55, 48.84, 100, "burn", 26, 0)]},
+    # puerto de Nueva York (tgmeucci): relieve SRTM + batimetría (terrarium trae el fondo del mar < 0 m) → agua en nogal con gubia
+    "nyh":     {"bbox": (-74.27, 40.48, -73.90, 40.82), "px": 4200, "hs": 0.010, "dem": 12, "paso": 12, "mar": True, "rios": {},
+                "labels": [("STATEN ISLAND", -74.150, 40.585, 120, "burn", 26, 0), ("MANHATTAN", -73.985, 40.765, 100, "burn", 22, 62),
+                           ("BROOKLYN", -73.955, 40.655, 110, "burn", 24, 0), ("NEW JERSEY", -74.180, 40.730, 100, "burn", 22, 0),
+                           ("BAHÍA DE NUEVA YORK", -74.050, 40.668, 80, "brass", 22, 0), ("THE NARROWS", -74.040, 40.603, 70, "brass", 16, 70)]},
 }
 def scene_geo(name):
     lon0, lat0, lon1, lat1 = SCENES[name]["bbox"]; PXW = SCENES[name]["px"]
@@ -137,6 +148,8 @@ def build(name):
         else:
             labels = [("RÍO DE LA PLATA", -57.55, -34.85, 150, "brass", 34, -18), ("URUGUAY", -57.1, -34.05, 120, "burn", 26, 0),
                       ("PROVINCIA DE BUENOS AIRES", -58.75, -35.05, 92, "burn", 14, 0), ("BUENOS AIRES", -58.66, -34.72, 120, "burn", 22, 0)]
+    elif SCENES[name].get("dem"):
+        hgt, col, labels = _build_dem(name, X0, X1, Y0, Y1, PXW, PXH, f)
     else:
         G = json.load(open(f"{M}/fuentes/osm_calles.json", encoding="utf8"))["elements"]
         R = json.load(open(f"{M}/fuentes/osm_resto.json", encoding="utf8"))["elements"]
@@ -191,6 +204,8 @@ def build(name):
 
         land = 1 - water
     # placas: pirograbado sobre madera clara, latón embutido sobre el agua
+    try: labels = [tuple(x) for x in json.load(open(f"{M}/fuentes/labels_{name}.json", encoding="utf8"))]
+    except FileNotFoundError: pass
     items_b = [(s, f(lo, la), sz, "CormorantSC.ttf", tr, an) for s, lo, la, sz, c, tr, an in labels if c == "burn"]
     items_m = [(s, f(lo, la), sz, "CormorantSC.ttf", tr, an) for s, lo, la, sz, c, tr, an in labels if c == "brass"]
     if items_b:
@@ -199,12 +214,60 @@ def build(name):
         hgt = hgt - m * 0.04
     if items_m:
         m = text_layer(PXW, PXH, items_m); col = col * (1 - (m * 0.9)[..., None]) + BRASS * (m * 0.9)[..., None]; hgt = hgt + m * 0.02
-    zs = {"mundo": 14.0, "plata": 18.0, "palermo": 10.0}[name]
+    zs = {"mundo": 14.0, "plata": 18.0, "palermo": 10.0}.get(name, 12.0)
     tex = bake(col.astype(np.float32), hgt.astype(np.float32), zs=zs)
     os.makedirs(f"{M}/fuentes", exist_ok=True)
     Image.fromarray((tex * 255).astype(np.uint8)).save(f"{M}/fuentes/m3_{name}.jpg", quality=92)
     np.save(f"{M}/fuentes/m3_{name}_h.npy", hgt.astype(np.float16))
     print(name, PXW, PXH)
+
+def _build_dem(name, X0, X1, Y0, Y1, PXW, PXH, f):
+    """maqueta de relieve: elevación real en CAPAS de madera (una por curva de nivel, borde quemado) + ríos tallados en nogal"""
+    cfg = SCENES[name]; z = cfg["dem"]; N = 2 ** z * 256
+    gx = lambda lon: (lon + 180) / 360 * N
+    gy = lambda Ym: (1 - math.radians(Ym) / math.pi) / 2 * N                     # Ym = y Mercator en grados
+    tx0, tx1 = int(gx(X0) // 256), int(gx(X1) // 256); ty0, ty1 = int(gy(Y1) // 256), int(gy(Y0) // 256)
+    mos = np.zeros(((ty1 - ty0 + 1) * 256, (tx1 - tx0 + 1) * 256), np.float32)
+    for tx in range(tx0, tx1 + 1):
+        for ty in range(ty0, ty1 + 1):
+            a = cv2.imread(f"{M}/fuentes/dem/{z}_{tx}_{ty}.png")[..., ::-1].astype(np.float32)
+            mos[(ty - ty0) * 256:(ty - ty0 + 1) * 256, (tx - tx0) * 256:(tx - tx0 + 1) * 256] = a[..., 0] * 256 + a[..., 1] + a[..., 2] / 256 - 32768
+    xs = np.float32([gx(X0 + (X1 - X0) * (i + 0.5) / PXW) - tx0 * 256 for i in range(PXW)])
+    ys = np.float32([gy(Y1 - (Y1 - Y0) * (j + 0.5) / PXH) - ty0 * 256 for j in range(PXH)])
+    mx, my = np.meshgrid(xs, ys)
+    elev = cv2.remap(mos, mx, my, cv2.INTER_CUBIC); elev = cv2.GaussianBlur(elev, (0, 0), 2.0)
+    sea = None
+    if cfg.get("mar"):                                                              # costa = cota 0; el mar se talla aparte
+        sea = cv2.GaussianBlur((elev < 0.8).astype(np.float32), (0, 0), 1.5); elev = np.maximum(elev, 0.8)
+    e0, e1 = np.percentile(elev, 1), np.percentile(elev, 99.7); paso = cfg["paso"]
+    lay = np.floor((elev - e0) / paso); nl = max(1.0, (e1 - e0) / paso)
+    lay_s = cv2.GaussianBlur(lay, (0, 0), 1.2)                                     # canto apenas redondeado de cada capa
+    hgt = lay_s / nl + (elev - e0) / (e1 - e0) * 0.08                                # capas + un poco de la forma real
+    hgt += _noise(PXH, PXW, 30, 8) * 0.006
+    edge = np.clip(np.abs(cv2.Laplacian(lay_s, cv2.CV_32F)) * 3, 0, 1)            # canto de cada capa = línea quemada
+    col = wood(PXH, PXW, *MAPLE, seed=1)
+    tone = np.clip(0.80 + 0.30 * (lay / nl), 0.75, 1.12)[..., None]               # capas altas más claras (madera de otra tabla)
+    col = col * tone
+    col = col * (1 - (edge * 0.6)[..., None]) + BURN * (edge * 0.6)[..., None]
+    riv = np.zeros((PXH, PXW), np.float32)
+    try:
+        R = json.load(open(f"{M}/fuentes/osm_rios_{name}.json", encoding="utf8"))["elements"]
+    except FileNotFoundError: R = []
+    for e in R:
+        wdt = cfg["rios"].get(e.get("tags", {}).get("name"), 0)
+        if not wdt or not e.get("geometry"): continue
+        p_ = np.int32([[a * 4 for a in f(q["lon"], q["lat"])] for q in e["geometry"]])
+        cv2.polylines(riv, [p_], False, 1.0, wdt, cv2.LINE_AA, shift=2)
+    riv = cv2.GaussianBlur(riv, (0, 0), 1.0)
+    hgt = hgt * (1 - riv * 0.6) - riv * 0.02 + riv * gouges(PXH, PXW, 5, 16) * 0.004
+    wal = wood(PXH, PXW, *WALNUT, seed=2, ring=0.006)
+    col = col * (1 - riv[..., None]) + wal * riv[..., None]
+    if sea is not None:
+        bord = np.clip(np.abs(cv2.Laplacian(sea, cv2.CV_32F)) * 4, 0, 1)
+        hgt = hgt * (1 - sea) + sea * (gouges(PXH, PXW, 3, 22) * 0.03 - 0.10)
+        col = col * (1 - sea[..., None]) + wal * sea[..., None]
+        col = col * (1 - (bord * 0.6)[..., None]) + BURN * (bord * 0.6)[..., None]
+    return hgt.astype(np.float32), col.astype(np.float32), cfg.get("labels", [])
 
 # ------------------------------------------------------------------ RENDER
 _SC = {}
