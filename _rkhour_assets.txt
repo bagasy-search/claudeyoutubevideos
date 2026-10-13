@@ -179,3 +179,8 @@ img/rkhour_n43.jpg
 img/rkhour_n43_blur.jpg
 img/rkhour_qr.png
 rkhour.m4a
+img/rkhour_f06.jpg
+img/rkhour_f06_blur.jpg
+img/rkhour_f25.jpg
+img/rkhour_f25_blur.jpg
+img/rkhour_landing.png
