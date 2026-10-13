@@ -1,0 +1,2161 @@
+{
+ "total": 1255.6,
+ "avatarEnd": 1000,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 8,
+   "dur": 9,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_o01.jpg",
+    "at": [
+     45,
+     60
+    ],
+    "kicker": "THE MORNING AFTER",
+    "label": "A strike plate on the porch",
+    "sub": "I knew how they got in before I reached the door.",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o01_blur.jpg"
+  },
+  {
+   "t": 17,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o01.jpg"
+  },
+  {
+   "t": 20,
+   "dur": 1.3,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r01.jpg"
+  },
+  {
+   "t": 21.3,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_x15.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "7:00 AM",
+    "label": "We were asleep. Nobody heard a thing."
+   },
+   "bed": "img/rkmorning_o01_blur.jpg"
+  },
+  {
+   "t": 36.5,
+   "dur": 8.066666666666666,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o17.jpg"
+  },
+  {
+   "t": 44.56666666666667,
+   "dur": 3.6,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o30.jpg"
+  },
+  {
+   "t": 54.56666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r07.jpg"
+  },
+  {
+   "t": 58.6,
+   "dur": 5.533333333333333,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o01.jpg"
+  },
+  {
+   "t": 64.13333333333334,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "FixCostLadder",
+   "props": {
+    "items": [
+     {
+      "label": "Turn the deadbolt all the way",
+      "cost": "$0",
+      "img": "img/rkmorning_x16b.jpg"
+     },
+     {
+      "label": "Three-inch screws in the strike",
+      "cost": "under $10",
+      "img": "img/rkmorning_o07b.jpg"
+     },
+     {
+      "label": "Frame reinforcement kit",
+      "cost": "~$30-60",
+      "img": "img/rkmorning_o08.jpg"
+     }
+    ],
+    "active": 0,
+    "kicker": "SEVEN SIGNS · BEFORE THE DOOR",
+    "caption": "All three for less than one locksmith visit"
+   },
+   "bed": "img/rkmorning_o01_blur.jpg"
+  },
+  {
+   "t": 72.13333333333334,
+   "dur": 2.9,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r01.jpg"
+  },
+  {
+   "t": 75.03333333333333,
+   "dur": 5.6,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o17.jpg"
+  },
+  {
+   "t": 88.63333333333334,
+   "dur": 4.033333333333333,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r02.jpg"
+  },
+  {
+   "t": 92.66666666666667,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r07.jpg"
+  },
+  {
+   "t": 97.83333333333333,
+   "dur": 6.433333333333334,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "I never once caught a burglar. I just fixed the doors they came through.",
+    "attrib": "— Ray"
+   },
+   "bed": "img/rkmorning_o20_blur.jpg"
+  },
+  {
+   "t": 104.26666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S2",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o20.jpg"
+  },
+  {
+   "t": 108.3,
+   "dur": 7.6,
+   "sec": "S2",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r33.jpg"
+  },
+  {
+   "t": 115.9,
+   "dur": 3.3666666666666667,
+   "sec": "S2",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r16.jpg"
+  },
+  {
+   "t": 119.26,
+   "dur": 14,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "RayCta",
+   "props": {
+    "eyebrow": "THE THOUSAND DOLLAR AFTERNOON",
+    "title": "Three guides + two bonus files",
+    "sub": "Door by door, window by window, for less than one locksmith visit.",
+    "domain": "raykessler.vercel.app/morning",
+    "qr": "img/rkmorning_qr.png",
+    "showQr": true,
+    "shot": "img/rkmorning_landing.png"
+   },
+   "bed": "img/rkmorning_o20_blur.jpg"
+  },
+  {
+   "t": 133.26666666666668,
+   "dur": 8.066666666666666,
+   "sec": "S2",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r34.jpg"
+  },
+  {
+   "t": 141.33333333333334,
+   "dur": 2.6,
+   "sec": "S2",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o20.jpg"
+  },
+  {
+   "t": 143.93333333333334,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_o05.jpg",
+    "at": [
+     55,
+     45
+    ],
+    "kicker": "NUMBER ONE · 1 OF 7",
+    "label": "The side gate",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o05_blur.jpg"
+  },
+  {
+   "t": 150.93333333333334,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "MOST PEOPLE BELIEVE",
+    "myth": "A closed gate is a closed gate",
+    "truth": "If a hand reaches the latch, it opens"
+   },
+   "bed": "img/rkmorning_o05_blur.jpg"
+  },
+  {
+   "t": 161.13333333333333,
+   "dur": 7.4,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r04b.jpg"
+  },
+  {
+   "t": 168.53333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o05.jpg"
+  },
+  {
+   "t": 180.63333333333333,
+   "dur": 3,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o15.jpg"
+  },
+  {
+   "t": 183.63333333333333,
+   "dur": 6.6,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r03.jpg"
+  },
+  {
+   "t": 198.03333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x01b.jpg"
+  },
+  {
+   "t": 202.06666666666666,
+   "dur": 2.9,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x12.jpg"
+  },
+  {
+   "t": 204.96666666666667,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_r03.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "CHECK IT TONIGHT",
+    "label": "Flashlight on the wood by the latch",
+    "color": "ok"
+   },
+   "bed": "img/rkmorning_o05_blur.jpg"
+  },
+  {
+   "t": 219.96666666666667,
+   "dur": 3.4,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r04b.jpg"
+  },
+  {
+   "t": 223.36666666666667,
+   "dur": 6.4,
+   "sec": "S3",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o22.jpg"
+  },
+  {
+   "t": 232.96666666666667,
+   "dur": 7.4,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o15.jpg"
+  },
+  {
+   "t": 240.36666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S3",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r22.jpg"
+  },
+  {
+   "t": 252.46666666666667,
+   "dur": 1.2666666666666666,
+   "sec": "S3",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o17.jpg"
+  },
+  {
+   "t": 253.73333333333332,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_o06.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "NUMBER TWO · 2 OF 7",
+    "label": "The path across the lawn",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o06_blur.jpg"
+  },
+  {
+   "t": 260.73333333333335,
+   "dur": 6.166666666666667,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "MOST PEOPLE BELIEVE",
+    "myth": "They come up the driveway",
+    "truth": "They come from the corner nobody walks"
+   },
+   "bed": "img/rkmorning_o06_blur.jpg"
+  },
+  {
+   "t": 266.9,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o06.jpg"
+  },
+  {
+   "t": 277.5,
+   "dur": 4.033333333333333,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o14.jpg"
+  },
+  {
+   "t": 281.53333333333336,
+   "dur": 8.066666666666666,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r36.jpg"
+  },
+  {
+   "t": 292.6,
+   "dur": 6.6,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y11.jpg"
+  },
+  {
+   "t": 299.2,
+   "dur": 7.8,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r06.jpg"
+  },
+  {
+   "t": 311.03333333333336,
+   "dur": 5.2,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r19.jpg"
+  },
+  {
+   "t": 316.23333333333335,
+   "dur": 8,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x13.jpg"
+  },
+  {
+   "t": 327.6333333333333,
+   "dur": 6.4,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y10.jpg"
+  },
+  {
+   "t": 334.03333333333336,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o29.jpg"
+  },
+  {
+   "t": 340.93333333333334,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_x14.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "THE FIX",
+    "label": "Trim it. Light it.",
+    "color": "ok"
+   },
+   "bed": "img/rkmorning_o06_blur.jpg"
+  },
+  {
+   "t": 347.93333333333334,
+   "dur": 4.033333333333333,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r18.jpg"
+  },
+  {
+   "t": 351.96666666666664,
+   "dur": 8.366666666666667,
+   "sec": "S4",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o12.jpg"
+  },
+  {
+   "t": 360.3333333333333,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_r08.jpg",
+    "at": [
+     50,
+     55
+    ],
+    "kicker": "NUMBER THREE · 3 OF 7",
+    "label": "The window screen",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o04_blur.jpg"
+  },
+  {
+   "t": 367.3333333333333,
+   "dur": 5.9,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "MOST PEOPLE BELIEVE",
+    "myth": "Screens are decoration",
+    "truth": "Every screen is a door with no lock"
+   },
+   "bed": "img/rkmorning_o04_blur.jpg"
+  },
+  {
+   "t": 376.43333333333334,
+   "dur": 7.4,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r09b.jpg"
+  },
+  {
+   "t": 383.8333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o04.jpg"
+  },
+  {
+   "t": 395.93333333333334,
+   "dur": 3,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r08.jpg"
+  },
+  {
+   "t": 398.93333333333334,
+   "dur": 6.6,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o22.jpg"
+  },
+  {
+   "t": 413.3333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r09.jpg"
+  },
+  {
+   "t": 417.3666666666667,
+   "dur": 5.2,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r20.jpg"
+  },
+  {
+   "t": 430.56666666666666,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x03.jpg"
+  },
+  {
+   "t": 433.96666666666664,
+   "dur": 6.4,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y02.jpg"
+  },
+  {
+   "t": 443.56666666666666,
+   "dur": 7.4,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r35.jpg"
+  },
+  {
+   "t": 450.96666666666664,
+   "dur": 1.6,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o04.jpg"
+  },
+  {
+   "t": 452.56666666666666,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_r20.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "THE FIX",
+    "label": "A screw through each clip",
+    "color": "ok"
+   },
+   "bed": "img/rkmorning_o04_blur.jpg"
+  },
+  {
+   "t": 467.6333333333333,
+   "dur": 3,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o22.jpg"
+  },
+  {
+   "t": 470.6333333333333,
+   "dur": 6.6,
+   "sec": "S5",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o16.jpg"
+  },
+  {
+   "t": 480.3666666666667,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_o02.jpg",
+    "at": [
+     55,
+     60
+    ],
+    "kicker": "NUMBER FOUR · 4 OF 7",
+    "label": "The boot print on the door",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o02_blur.jpg"
+  },
+  {
+   "t": 487.3666666666667,
+   "dur": 3.2,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o02.jpg"
+  },
+  {
+   "t": 490.56666666666666,
+   "dur": 7.4,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r10.jpg"
+  },
+  {
+   "t": 502,
+   "dur": 8.066666666666666,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o24.jpg"
+  },
+  {
+   "t": 510.06666666666666,
+   "dur": 3,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r27.jpg"
+  },
+  {
+   "t": 519.6666666666666,
+   "dur": 3.7333333333333334,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r23.jpg"
+  },
+  {
+   "t": 523.4,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_o24.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "WHAT GAVE",
+    "label": "The frame, not the door",
+    "sub": "The lock is only as strong as the wood."
+   },
+   "bed": "img/rkmorning_o02_blur.jpg"
+  },
+  {
+   "t": 531.4,
+   "dur": 4.033333333333333,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o08.jpg"
+  },
+  {
+   "t": 540.6333333333333,
+   "dur": 8,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r28b.jpg"
+  },
+  {
+   "t": 548.6333333333333,
+   "dur": 3.4,
+   "sec": "S6",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x13.jpg"
+  },
+  {
+   "t": 558.4333333333333,
+   "dur": 3.2,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o03.jpg"
+  },
+  {
+   "t": 561.6333333333333,
+   "dur": 7.4,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r10.jpg"
+  },
+  {
+   "t": 573.0666666666667,
+   "dur": 5.366666666666666,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o08.jpg"
+  },
+  {
+   "t": 578.4333333333333,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "FixCostLadder",
+   "props": {
+    "items": [
+     {
+      "label": "Turn the deadbolt all the way",
+      "cost": "$0",
+      "img": "img/rkmorning_x16b.jpg"
+     },
+     {
+      "label": "Three-inch screws in the strike",
+      "cost": "under $10",
+      "img": "img/rkmorning_o07b.jpg"
+     },
+     {
+      "label": "Frame reinforcement kit",
+      "cost": "~$30-60",
+      "img": "img/rkmorning_o08.jpg"
+     }
+    ],
+    "active": 3,
+    "kicker": "FIX · REINFORCEMENT KIT",
+    "caption": "All three for less than one locksmith visit"
+   },
+   "bed": "img/rkmorning_o02_blur.jpg"
+  },
+  {
+   "t": 586.4333333333333,
+   "dur": 3,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o02.jpg"
+  },
+  {
+   "t": 596.0333333333333,
+   "dur": 4.6,
+   "sec": "S6",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r17.jpg"
+  },
+  {
+   "t": 600.6333333333333,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_o09.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "NUMBER FIVE · 5 OF 7",
+    "label": "The gap at the door edge",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o09_blur.jpg"
+  },
+  {
+   "t": 607.6333333333333,
+   "dur": 3.2,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x04.jpg"
+  },
+  {
+   "t": 618.2333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o09.jpg"
+  },
+  {
+   "t": 622.2666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x07.jpg"
+  },
+  {
+   "t": 633.3333333333334,
+   "dur": 6.6,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o23.jpg"
+  },
+  {
+   "t": 639.9333333333333,
+   "dur": 7.8,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r12b.jpg"
+  },
+  {
+   "t": 651.7666666666667,
+   "dur": 5.2,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r29.jpg"
+  },
+  {
+   "t": 656.9666666666667,
+   "dur": 8,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r11b.jpg"
+  },
+  {
+   "t": 667.6666666666666,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_x04.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "CHECK IT TONIGHT",
+    "label": "Slide a card down the gap",
+    "color": "ok"
+   },
+   "bed": "img/rkmorning_o09_blur.jpg"
+  },
+  {
+   "t": 674.6666666666666,
+   "dur": 6.4,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r11.jpg"
+  },
+  {
+   "t": 681.0666666666667,
+   "dur": 3.2,
+   "sec": "S7",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r02.jpg"
+  },
+  {
+   "t": 691.6666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r12b.jpg"
+  },
+  {
+   "t": 695.7,
+   "dur": 8.066666666666666,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y04.jpg"
+  },
+  {
+   "t": 706.7666666666667,
+   "dur": 6.6,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r11b.jpg"
+  },
+  {
+   "t": 713.3666666666667,
+   "dur": 6.733333333333333,
+   "sec": "S7",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o23.jpg"
+  },
+  {
+   "t": 720.1,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_r26.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "NUMBER SIX · 6 OF 7",
+    "label": "The strike plate",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o07b_blur.jpg"
+  },
+  {
+   "t": 730.3,
+   "dur": 7.4,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r26.jpg"
+  },
+  {
+   "t": 737.7,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o07b.jpg"
+  },
+  {
+   "t": 749.8,
+   "dur": 3,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o18.jpg"
+  },
+  {
+   "t": 752.8,
+   "dur": 5.166666666666667,
+   "sec": "S8",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o03.jpg"
+  },
+  {
+   "t": 757.9666666666667,
+   "dur": 7.266666666666667,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Factory screws",
+    "leftValue": "Hold the trim",
+    "rightLabel": "Three-inch screws",
+    "rightValue": "Hold the house",
+    "verdict": "The plate is only as strong as its screws."
+   },
+   "bed": "img/rkmorning_o07b_blur.jpg"
+  },
+  {
+   "t": 773.0333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x06.jpg"
+  },
+  {
+   "t": 777.0666666666667,
+   "dur": 5.2,
+   "sec": "S8",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o24.jpg"
+  },
+  {
+   "t": 790.2666666666667,
+   "dur": 3.4,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o01.jpg"
+  },
+  {
+   "t": 793.6666666666666,
+   "dur": 6.4,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x05.jpg"
+  },
+  {
+   "t": 800.0666666666667,
+   "dur": 3.433333333333333,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r26.jpg"
+  },
+  {
+   "t": 803.5,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "FixCostLadder",
+   "props": {
+    "items": [
+     {
+      "label": "Turn the deadbolt all the way",
+      "cost": "$0",
+      "img": "img/rkmorning_x16b.jpg"
+     },
+     {
+      "label": "Three-inch screws in the strike",
+      "cost": "under $10",
+      "img": "img/rkmorning_o07b.jpg"
+     },
+     {
+      "label": "Frame reinforcement kit",
+      "cost": "~$30-60",
+      "img": "img/rkmorning_o08.jpg"
+     }
+    ],
+    "active": 2,
+    "kicker": "FIX · THREE-INCH SCREWS",
+    "caption": "All three for less than one locksmith visit"
+   },
+   "bed": "img/rkmorning_o07b_blur.jpg"
+  },
+  {
+   "t": 811.5,
+   "dur": 7.4,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r13.jpg"
+  },
+  {
+   "t": 818.9,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x05.jpg"
+  },
+  {
+   "t": 822.9333333333333,
+   "dur": 8.066666666666666,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o07b.jpg"
+  },
+  {
+   "t": 831,
+   "dur": 3,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r02.jpg"
+  },
+  {
+   "t": 834,
+   "dur": 1.9666666666666666,
+   "sec": "S8",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o17.jpg"
+  },
+  {
+   "t": 835.9666666666667,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_o11.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "NUMBER SEVEN · 7 OF 7",
+    "label": "The deadbolt",
+    "color": "danger"
+   },
+   "bed": "img/rkmorning_o11_blur.jpg"
+  },
+  {
+   "t": 842.9666666666667,
+   "dur": 3.2,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x04.jpg"
+  },
+  {
+   "t": 846.1666666666666,
+   "dur": 7.4,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o11.jpg"
+  },
+  {
+   "t": 853.5666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r14.jpg"
+  },
+  {
+   "t": 857.6,
+   "dur": 8.066666666666666,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r14b.jpg"
+  },
+  {
+   "t": 865.6666666666666,
+   "dur": 3,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o27.jpg"
+  },
+  {
+   "t": 868.6666666666666,
+   "dur": 2.6666666666666665,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x11.jpg"
+  },
+  {
+   "t": 871.3333333333334,
+   "dur": 6.133333333333334,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "MythTruth",
+   "props": {
+    "kicker": "MOST PEOPLE BELIEVE",
+    "myth": "One lock means the door is locked",
+    "truth": "Two locks. Two separate actions."
+   },
+   "bed": "img/rkmorning_o11_blur.jpg"
+  },
+  {
+   "t": 877.4666666666667,
+   "dur": 7.8,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x16b.jpg"
+  },
+  {
+   "t": 885.2666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r14b.jpg"
+  },
+  {
+   "t": 889.3,
+   "dur": 5.2,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o11.jpg"
+  },
+  {
+   "t": 894.5,
+   "dur": 4.466666666666667,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o27.jpg"
+  },
+  {
+   "t": 898.9666666666667,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_x16b.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "TEN SECONDS",
+    "label": "Feel for the full stop",
+    "color": "ok"
+   },
+   "bed": "img/rkmorning_o11_blur.jpg"
+  },
+  {
+   "t": 905.9666666666667,
+   "dur": 3.4,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x16b.jpg"
+  },
+  {
+   "t": 909.3666666666667,
+   "dur": 6.4,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r14.jpg"
+  },
+  {
+   "t": 915.7666666666667,
+   "dur": 3.2,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x11.jpg"
+  },
+  {
+   "t": 918.9666666666667,
+   "dur": 7.4,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r30.jpg"
+  },
+  {
+   "t": 926.3666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o11.jpg"
+  },
+  {
+   "t": 930.4,
+   "dur": 8.066666666666666,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r14b.jpg"
+  },
+  {
+   "t": 938.4666666666667,
+   "dur": 3,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x16b.jpg"
+  },
+  {
+   "t": 941.4666666666667,
+   "dur": 6.6,
+   "sec": "S9",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x11.jpg"
+  },
+  {
+   "t": 948.0666666666667,
+   "dur": 5.5,
+   "sec": "S9",
+   "lugar": "side gate",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o15.jpg"
+  },
+  {
+   "t": 953.5666666666667,
+   "dur": 5.666666666666667,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "This channel doesn't do villains, it does arithmetic.",
+    "attrib": "— Ray"
+   },
+   "bed": "img/rkmorning_r37_blur.jpg"
+  },
+  {
+   "t": 959.2333333333333,
+   "dur": 9,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "BigStat",
+   "props": {
+    "value": "~3 in 10",
+    "caption": "household burglaries were forcible entries · Bureau of Justice Statistics, 2003-2007",
+    "tone": "brass",
+    "unit": ""
+   },
+   "bed": "img/rkmorning_r37_blur.jpg"
+  },
+  {
+   "t": 968.2333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r37.jpg"
+  },
+  {
+   "t": 972.2666666666667,
+   "dur": 7.4,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r38.jpg"
+  },
+  {
+   "t": 979.6666666666666,
+   "dur": 3.2,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x09.jpg"
+  },
+  {
+   "t": 982.8666666666667,
+   "dur": 8.066666666666666,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y08.jpg"
+  },
+  {
+   "t": 990.9333333333333,
+   "dur": 6.6,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r38.jpg"
+  },
+  {
+   "t": 997.5333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r37.jpg"
+  },
+  {
+   "t": 1001.5666666666667,
+   "dur": 3.5,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x09.jpg"
+  },
+  {
+   "t": 1005.0666666666667,
+   "dur": 7.8,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y08.jpg"
+  },
+  {
+   "t": 1012.8666666666667,
+   "dur": 2.8,
+   "sec": "S10",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o11.jpg"
+  },
+  {
+   "t": 1015.6666666666666,
+   "dur": 8,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r37.jpg"
+  },
+  {
+   "t": 1023.6666666666666,
+   "dur": 1.7,
+   "sec": "S10",
+   "lugar": "back yard",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o12.jpg"
+  },
+  {
+   "t": 1025.3666666666666,
+   "dur": 9,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "BigStat",
+   "props": {
+    "value": "~8 in 10",
+    "caption": "checked for an alarm before choosing a house · UNC Charlotte, 2012 (422 offenders)",
+    "tone": "danger",
+    "unit": ""
+   },
+   "bed": "img/rkmorning_r37_blur.jpg"
+  },
+  {
+   "t": 1034.3666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r38.jpg"
+  },
+  {
+   "t": 1038.4,
+   "dur": 4.033333333333333,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r37.jpg"
+  },
+  {
+   "t": 1042.4333333333334,
+   "dur": 7.4,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r38.jpg"
+  },
+  {
+   "t": 1049.8333333333333,
+   "dur": 3.466666666666667,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x09.jpg"
+  },
+  {
+   "t": 1053.3,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "SceneCallout",
+   "props": {
+    "bg": "img/rkmorning_x09.jpg",
+    "at": [
+     50,
+     50
+    ],
+    "kicker": "INSURANCE",
+    "label": "Some policies want visible force",
+    "sub": "Read the wording before you need it."
+   },
+   "bed": "img/rkmorning_r37_blur.jpg"
+  },
+  {
+   "t": 1061.3,
+   "dur": 8.066666666666666,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y08.jpg"
+  },
+  {
+   "t": 1069.3666666666666,
+   "dur": 6.6,
+   "sec": "S10",
+   "lugar": "front door",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r11b.jpg"
+  },
+  {
+   "t": 1075.9666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r37.jpg"
+  },
+  {
+   "t": 1080,
+   "dur": 3.5,
+   "sec": "S10",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o01.jpg"
+  },
+  {
+   "t": 1083.5,
+   "dur": 7.8,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r38.jpg"
+  },
+  {
+   "t": 1091.3,
+   "dur": 2.8,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r37.jpg"
+  },
+  {
+   "t": 1094.1,
+   "dur": 1.5333333333333334,
+   "sec": "S10",
+   "lugar": "kitchen",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r38.jpg"
+  },
+  {
+   "t": 1095.6333333333334,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "FixCostLadder",
+   "props": {
+    "items": [
+     {
+      "label": "Turn the deadbolt all the way",
+      "cost": "$0",
+      "img": "img/rkmorning_x16b.jpg"
+     },
+     {
+      "label": "Three-inch screws in the strike",
+      "cost": "under $10",
+      "img": "img/rkmorning_o07b.jpg"
+     },
+     {
+      "label": "Frame reinforcement kit",
+      "cost": "~$30-60",
+      "img": "img/rkmorning_o08.jpg"
+     }
+    ],
+    "active": 0,
+    "picks": [
+     1,
+     2,
+     3
+    ],
+    "kicker": "THE WHOLE LIST",
+    "caption": "All three for less than one locksmith visit"
+   },
+   "bed": "img/rkmorning_o19_blur.jpg"
+  },
+  {
+   "t": 1103.6333333333334,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o19.jpg"
+  },
+  {
+   "t": 1107.6666666666667,
+   "dur": 7.8,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o25.jpg"
+  },
+  {
+   "t": 1115.4666666666667,
+   "dur": 3.3,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r15.jpg"
+  },
+  {
+   "t": 1118.7666666666667,
+   "dur": 7.666666666666667,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r31.jpg"
+  },
+  {
+   "t": 1126.4333333333334,
+   "dur": 6.433333333333334,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "SplitVs",
+   "props": {
+    "leftLabel": "Camera on the eave",
+    "leftValue": "Records it",
+    "rightLabel": "Screws in the frame",
+    "rightValue": "Stops it",
+    "verdict": "Fix the wood first."
+   },
+   "bed": "img/rkmorning_o19_blur.jpg"
+  },
+  {
+   "t": 1132.8666666666666,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y09.jpg"
+  },
+  {
+   "t": 1136.9,
+   "dur": 6.2,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y06.jpg"
+  },
+  {
+   "t": 1143.1,
+   "dur": 3.8,
+   "sec": "S11",
+   "lugar": "porch",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r01.jpg"
+  },
+  {
+   "t": 1146.9,
+   "dur": 3.1666666666666665,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r32.jpg"
+  },
+  {
+   "t": 1150.0666666666666,
+   "dur": 6.166666666666667,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "VideoRefCard",
+   "props": {
+    "kicker": "ALSO ON THIS CHANNEL",
+    "title": "Your Car Key Is Talking All Night",
+    "sub": "Same idea, different door"
+   },
+   "bed": "img/rkmorning_o19_blur.jpg"
+  },
+  {
+   "t": 1156.2333333333333,
+   "dur": 7,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o19.jpg"
+  },
+  {
+   "t": 1163.2333333333333,
+   "dur": 3.1,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o25.jpg"
+  },
+  {
+   "t": 1166.3333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r15.jpg"
+  },
+  {
+   "t": 1170.3666666666666,
+   "dur": 6.6,
+   "sec": "S11",
+   "lugar": "window",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o22.jpg"
+  },
+  {
+   "t": 1176.9666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r31.jpg"
+  },
+  {
+   "t": 1181,
+   "dur": 7.8,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r32.jpg"
+  },
+  {
+   "t": 1188.8,
+   "dur": 3.3,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x10.jpg"
+  },
+  {
+   "t": 1192.1,
+   "dur": 7.6,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y06.jpg"
+  },
+  {
+   "t": 1199.7,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o19.jpg"
+  },
+  {
+   "t": 1203.7333333333333,
+   "dur": 6.2,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r15.jpg"
+  },
+  {
+   "t": 1209.9333333333334,
+   "dur": 3.8,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_o25.jpg"
+  },
+  {
+   "t": 1213.7333333333333,
+   "dur": 8.066666666666666,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y06.jpg"
+  },
+  {
+   "t": 1221.8,
+   "dur": 7,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r31.jpg"
+  },
+  {
+   "t": 1228.8,
+   "dur": 3.1,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_r32.jpg"
+  },
+  {
+   "t": 1231.9,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_x10.jpg"
+  },
+  {
+   "t": 1235.9333333333334,
+   "dur": 3.6666666666666665,
+   "sec": "S11",
+   "lugar": "driveway",
+   "kind": "imagen",
+   "asset": "img/rkmorning_y09.jpg"
+  },
+  {
+   "t": 1239.6,
+   "dur": 16,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "RayCta",
+   "props": {
+    "eyebrow": "THE THOUSAND DOLLAR AFTERNOON",
+    "title": "Three guides + two bonus files",
+    "sub": "Door by door, window by window, for less than one locksmith visit.",
+    "domain": "raykessler.vercel.app/morning",
+    "qr": "img/rkmorning_qr.png",
+    "showQr": true,
+    "shot": "img/rkmorning_landing.png"
+   },
+   "bed": "img/rkmorning_o19_blur.jpg"
+  },
+  {
+   "t": 0,
+   "dur": 8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 29.3,
+   "dur": 7.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 48.166666666666664,
+   "dur": 6.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 80.63333333333334,
+   "dur": 8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 95.66666666666667,
+   "dur": 2.1666666666666665,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 119.26666666666667,
+   "dur": 14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 157.93333333333334,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 172.56666666666666,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 190.23333333333332,
+   "dur": 7.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 211.96666666666667,
+   "dur": 8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 229.76666666666668,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 244.4,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 270.1,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 289.6,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 307,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 324.23333333333335,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 337.23333333333335,
+   "dur": 3.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 373.23333333333335,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 387.8666666666667,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 405.53333333333336,
+   "dur": 7.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 422.56666666666666,
+   "dur": 8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 440.3666666666667,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 459.56666666666666,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 477.23333333333335,
+   "dur": 3.1333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 497.96666666666664,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 513.0666666666667,
+   "dur": 6.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 535.4333333333333,
+   "dur": 5.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 552.0333333333333,
+   "dur": 6.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 569.0333333333333,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 589.4333333333333,
+   "dur": 6.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 610.8333333333334,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 630.3333333333334,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 647.7333333333333,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 664.9666666666667,
+   "dur": 2.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 684.2666666666667,
+   "dur": 7.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 703.7666666666667,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 727.1,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 741.7333333333333,
+   "dur": 8.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 765.2333333333333,
+   "dur": 7.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 782.2666666666667,
+   "dur": 8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1239.6,
+   "dur": 16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  }
+ ]
+}
