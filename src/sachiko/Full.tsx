@@ -6,9 +6,10 @@ import { Plate, CompWrap, Grain, OV, fr, type Shot } from "./Base";
 import { KIT } from "./Kit";
 import { NEW } from "./New";
 import { SAC } from "./Sac";
+import { DIR } from "./Dir";
 
 type S2 = Shot & { c?: string; props?: any };
-export const ALL: Record<string, React.FC<any>> = { ...KIT, ...NEW, ...SAC };
+export const ALL: Record<string, React.FC<any>> = { ...KIT, ...NEW, ...SAC, ...DIR };
 
 export const makeFull = (EDL: any, extra: Record<string, React.FC<any>> = {}) => {
   const SH = EDL.shots as S2[];
