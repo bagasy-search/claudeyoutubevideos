@@ -68,7 +68,7 @@ export const SHOTS = [
   S(105, "Lo que ves te dice qué está pasando", "bi", "bi_flies_cluster", { q: "flies on kitchen towel", p: BI("A dark kitchen spot where a small cluster of flies crawls on a damp dish towel by the sink, lit by a flashlight beam.") }),
   // ── 106-112 · cierre: manual (arreglo 8, pág. 16) y comentarios
   S(106, "Y si tu casa tiene de todo", "cl", "cl_manual_hold", { p: CLP("holding a printed booklet with a green cover at a kitchen table, showing its cover to the camera.") }),
-  C(107, "Veintisiete dólares, un solo pago", "ClQRCard", { qr: "https://manual-fumigador-claudio.vercel.app/?src=fumoscas", kicker: "MANUAL DEL FUMIGADOR · US$27", text: "66 arreglos · garantía 7 días" }),
+  C(107, "Veintisiete dólares, un solo pago", "ClCheck", { title: "MANUAL DEL FUMIGADOR · US$27", items: ["66 arreglos de la casa", "Pago único", "Garantía de 7 días"] }),
   S(108, "Lo dejo en la descripción", "bi", "bi_desc_card", { q: "lemon on table kitchen", p: BI("A printed card with a small link printed on it, lying on a kitchen table beside a lemon and a pair of kitchen scissors.") }),
   S(109, "Ah, y una cosa más", "bi", "bi_mosquitoes_patio", { q: "mosquitoes standing water", p: BI("A shaded back patio in the evening, a small cloud of mosquitoes above a bucket of standing water near the wall.") }),
   S(110, "Pero ésos son otro problema", "cl", "cl_next_week", { p: CLP("standing on a patio in the evening, looking at the camera with a small smile, a plant pot beside him.") }),
