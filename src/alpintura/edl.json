@@ -16,26 +16,26 @@
   {
    "s": 27.7,
    "e": 33.7,
-   "k": "ST",
-   "src": "s002"
+   "k": "L",
+   "src": "l_pared_limpia"
   },
   {
    "s": 33.7,
    "e": 39.7,
-   "k": "ST",
-   "src": "s003"
+   "k": "L",
+   "src": "l_cepillo_polvo"
   },
   {
    "s": 39.7,
    "e": 45.7,
-   "k": "ST",
-   "src": "s004"
+   "k": "L",
+   "src": "l_salitre_toca"
   },
   {
    "s": 45.7,
    "e": 51.7,
-   "k": "ST",
-   "src": "s005"
+   "k": "L",
+   "src": "l_cal_raspa"
   },
   {
    "s": 51.7,
