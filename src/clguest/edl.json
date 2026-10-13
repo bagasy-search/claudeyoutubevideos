@@ -833,10 +833,10 @@
   {
    "a": 477.397,
    "b": 491.573,
-   "k": "qr.jpg",
+   "k": "n_tablesetting",
    "c": "QrCard",
    "props": {
-    "k": "qr.jpg",
+    "k": "n_tablesetting",
     "txt": "POINT YOUR PHONE AT THE SQUARE",
     "qr": "qr.jpg",
     "cover": "book_cover.png",
@@ -1391,10 +1391,10 @@
   {
    "a": 831.193,
    "b": 841.13,
-   "k": "qr.jpg",
+   "k": "n_calendarbed",
    "c": "QrCard",
    "props": {
-    "k": "qr.jpg",
+    "k": "n_calendarbed",
     "t": 838.84,
     "txt": "POINT YOUR PHONE AT THE SQUARE",
     "qr": "qr.jpg",
