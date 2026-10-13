@@ -1,1606 +1,7205 @@
 {
- "end": 1850.07,
- "shots": [
-  {
-   "a": 0.0,
-   "b": 3.0,
-   "k": "thumb",
-   "c": "OpenThumb",
-   "props": {
-    "k": "thumb",
-    "focus": [
-     50,
-     40
-    ],
-    "rings": [
-     {
-      "t": 3.0,
-      "x": 62,
-      "y": 55
-     }
-    ],
-    "marks": []
-   }
-  },
-  {
-   "a": 3.0,
-   "b": 6.387,
-   "k": "h04_finger_lips",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I am sitting here with you today. You have cooked rice before."
-  },
-  {
-   "a": 6.387,
-   "b": 9.567,
-   "k": "h06_puzzled_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "You rinsed it, you pushed the button, you waited."
-  },
-  {
-   "a": 9.567,
-   "b": 12.227,
-   "k": "h01_wet_sticky_rice",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "And it came out wet and sticky on"
-  },
-  {
-   "a": 12.227,
-   "b": 14.787,
-   "k": "h02_burnt_bottom_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "top, hard in the middle, and burnt on the"
-  },
-  {
-   "a": 14.787,
-   "b": 19.113,
-   "k": "h08_leaning_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "bottom of the pot. You stood there and thought, what did I do wrong?"
-  },
-  {
-   "a": 19.113,
-   "b": 29.193,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 29.193,
-   "b": 37.827,
-   "k": "m14_japanese_rice_bag_old",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Today I will show you eleven things that the old cooks in the Japanese kitchens taught me. Number one is washing. Number two is soaking.",
-   "c": "SecretCard",
-   "props": {
-    "n": "1",
-    "title": "Wash until mostly clear",
-    "label": "SECRET",
-    "k": "m14_japanese_rice_bag_old"
-   }
-  },
-  {
-   "a": 37.827,
-   "b": 48.52,
-   "k": "s05_water_line",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number three is the water, and the water is measured, not guessed by feeling. Number four is the one on the picture, the one that saves you three hundred dollar",
-   "c": "SecretCard",
-   "props": {
-    "n": "2",
-    "title": "Soak it first",
-    "label": "SECRET",
-    "k": "s05_water_line"
-   }
-  },
-  {
-   "a": 48.52,
-   "b": 59.32,
-   "k": "t32_reheat_fluff",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I will tell you exactly how, with the arithmetic, so you can check it yourself. Then the resting, the wooden paddle, the seasoning that restaurants add to their",
-   "c": "SecretCard",
-   "props": {
-    "n": "3",
-    "title": "Measure the water",
-    "label": "SECRET",
-    "k": "t32_reheat_fluff"
-   }
-  },
-  {
-   "a": 59.32,
-   "b": 72.36,
-   "k": "t28_onigiri_three",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "reheating, the little rice balls, the fixing when it goes wrong, and the safety rule that matters more than all the others. Two of those things are so simple th"
-  },
-  {
-   "a": 72.36,
-   "b": 83.907,
-   "k": "s11_fan_rice",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "He was wrong about that, and you will see why. So sit down, please, and let the rice rest a little. Stay until the end, because the last part is the one that ke"
-  },
-  {
-   "a": 83.907,
-   "b": 95.813,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 95.813,
-   "b": 108.447,
-   "k": "c03_steam_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Every morning the steam came up through the window, and the whole street smelled of it before the sun was up. I can still hear the lid of that old pot rattling "
-  },
-  {
-   "a": 108.447,
-   "b": 114.447,
-   "k": "bd_288",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I have a small kitchen now, in America, with an indigo noren curtain in the doorway, the way my mother had it. My grandson says the curtain is old-fashioned.",
-   "vid": true,
-   "ofs": 0
-  },
-  {
-   "a": 114.447,
-   "b": 131.287,
-   "k": "s16_break_cold_rice",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I tell him the curtain keeps the cold air out and the family in. He laughs at me. That is fine. Rice is the same in every kitchen. Water, grain, heat, and time."
-  },
-  {
-   "a": 131.287,
-   "b": 141.287,
-   "k": "m05_mother_wooden_box",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is all it is, and the small steps make it good. My mother was born in the years before the war, and she lived through the hungry years after it."
-  },
-  {
-   "a": 141.287,
-   "b": 152.367,
-   "k": "s23_receipts_table",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Those are her stories, not mine, because I was born in 1948, three years after the war ended. But she told them so many times, at the table, with her"
-  },
-  {
-   "a": 152.367,
-   "b": 158.367,
-   "k": "km_268",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "hands in her lap, that I can tell them almost as if I was there. When there was little food, rice was the most important thing in the house. You did not waste o",
-   "vid": true,
-   "ofs": 0
-  },
-  {
-   "a": 158.367,
-   "b": 172.98,
-   "k": "t23_damp_cloth",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "You washed it carefully, you cooked it carefully, and you ate every bite. In Osaka, in the rainy season, which we called tsuyu, everything was wet.",
-   "c": "NameCard",
-   "props": {
-    "word": "tsuyu",
-    "gloss": "the rainy season",
-    "name": 171.07,
-    "glossAt": 172.57,
-    "k": "t23_damp_cloth"
-   }
-  },
-  {
-   "a": 172.98,
-   "b": 184.853,
-   "k": "t34_hard_drop",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The clothes did not dry. The walls were damp. The rice was kept in a wooden box with a lid, and every morning my mother lifted that lid and smelled it before sh"
-  },
-  {
-   "a": 184.853,
-   "b": 194.6,
-   "k": "s01_rinse_hands",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "If the rice smelled old, she knew. If it smelled sweet and clean, she knew that too. She taught me to use my nose before my hands."
-  },
-  {
-   "a": 194.6,
-   "b": 206.26,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 206.26,
-   "b": 217.507,
-   "k": "m03_rice_shop_sacks",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "And the rice shop had sacks stacked to the ceiling, with the names of the farms written in brush. My mother would walk there with me holding her sleeve, and she"
-  },
-  {
-   "a": 217.507,
-   "b": 227.9,
-   "k": "c01_rice_grains",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "She rubbed a few grains between her fingers and smelled them. She said good rice feels a little cool and a little dry, and it makes a small sound when you pour "
-  },
-  {
-   "a": 227.9,
-   "b": 239.833,
-   "k": "m13_tiny_apt_kitchen",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I did not understand her then. I understand her now. In 1970 I came to America with my husband. We rented a tiny apartment with thin walls and a kitchen the siz"
-  },
-  {
-   "a": 239.833,
-   "b": 250.6,
-   "k": "t07_grains_hand",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The rice here was different. The grains were longer, and the rice cooker in our first apartment was a cheap one. I cooked rice every day, and every day it was n"
-  },
-  {
-   "a": 250.6,
-   "b": 263.88,
-   "k": "m01_osaka_street_old",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "My husband was too polite to complain. He ate it anyway, and I could see that it bothered him. So I wrote letters to my mother in Osaka, and in her answers, she"
-  },
-  {
-   "a": 263.88,
-   "b": 273.493,
-   "k": "t01_wash_first",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is where I learned most of what I am about to show you. Number one is washing. Most people think washing is one quick rinse. It is not."
-  },
-  {
-   "a": 273.493,
-   "b": 284.067,
-   "k": "t29_reheat_water",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Put the rice in a bowl, and cover it with cold water. Use your hand, not a spoon. Move your fingers through the grains in a slow circle, and the water turns clo"
-  },
-  {
-   "a": 284.067,
-   "b": 294.76,
-   "k": "s02_pour_cloudy",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That cloudy water is the starch and the dust from the outside of the grains. Pour it off carefully, without losing the rice. Add fresh cold water, and do it aga"
-  },
-  {
-   "a": 294.76,
-   "b": 299.587,
-   "k": "t03_wash_clear",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Repeat this three or four times, until the water is mostly clear."
-  },
-  {
-   "a": 299.587,
-   "b": 311.44,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 311.44,
-   "b": 321.093,
-   "k": "m09_chef_sink",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Three or four times is what my mother did, and it is what the old chef in my first job taught me too. I will tell you about him at the end. Why does this matter"
-  },
-  {
-   "a": 321.093,
-   "b": 331.227,
-   "k": "h03_hard_grain_dot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "When rice is cooked, the starch on the outside of each grain turns into a sticky paste. If you leave that starch on, the rice clumps together in one big mass."
-  },
-  {
-   "a": 331.227,
-   "b": 342.64,
-   "k": "o01_rice_bowl_white",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is why your rice comes out wet on the top and gluey in the bowl. Washing takes away the loose starch, so each grain stays separate and clean. That is the w"
-  },
-  {
-   "a": 342.64,
-   "b": 351.22,
-   "k": "s27_pour_water_cook",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "It is not magic. It is just taking away what does not belong. When you pour the cloudy water away, be careful at the end."
-  },
-  {
-   "a": 351.22,
-   "b": 361.5,
-   "k": "t02_wash_again",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The last spoon of water often has the most fine powder in it, and it is also where tiny pieces of grain fall. Stop when you see the cloud getting thick again."
-  },
-  {
-   "a": 361.5,
-   "b": 374.62,
-   "k": "t04_strainer",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I save the cloudy water, and I will show you why in another video. After the last rinse, drain the rice in a strainer for ten minutes. Do not let it sit in the "
-  },
-  {
-   "a": 374.62,
-   "b": 386.133,
-   "k": "t05_soak_cover",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Ten minutes is enough, and then you move to the next step, which is soaking. Number two is soaking. Put the drained rice back in the pot, or in a bowl, and cove"
-  },
-  {
-   "a": 386.133,
-   "b": 397.24,
-   "k": "t06_soak_timer",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Let it sit for at least thirty minutes. In the hot summer, thirty minutes is enough. In the cold months, when the kitchen is cool, let it sit for a full hour."
-  },
-  {
-   "a": 397.24,
-   "b": 406.52,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 406.52,
-   "b": 415.54,
-   "k": "t12_pot_lid_press",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "This is the step that most people skip, because they are hungry and they want to push the button right now. I understand. I was hungry too."
-  },
-  {
-   "a": 415.54,
-   "b": 425.52,
-   "k": "s32_soft_rice_child",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "But when you skip the soaking, the outside of the grain is soft while the inside is still hard, and you get that hard little dot in the center of each grain."
-  },
-  {
-   "a": 425.52,
-   "b": 436.173,
-   "k": "s15_fry_rice",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "You will see it when you bite into the rice, and you will know you were in a hurry. After soaking, drain the rice again for a few minutes. You want the grains t"
-  },
-  {
-   "a": 436.173,
-   "b": 448.087,
-   "k": "t08_measure_level",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The water you add for cooking must be the right amount, and extra water on the rice changes the measure. Drain well, and then measure the water. Number three is"
-  },
-  {
-   "a": 448.087,
-   "b": 459.687,
-   "k": "t10_water_line_fill",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "This is where most people make the biggest mistake. They put in water by eye, or they fill the pot to the top and hope. In a Japanese rice cooker, there are lin"
-  },
-  {
-   "a": 459.687,
-   "b": 473.347,
-   "k": "c02_water_line_cooker",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Use those lines. They are made for the rice that comes from the store where you live, and the cooker knows the rest. If you cook on the stove, or you use a cook"
-  },
-  {
-   "a": 473.347,
-   "b": 482.1,
-   "k": "s03_measure_cup",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "For Japanese short grain rice, a good starting point is one cup of rice to about one and one fifth cups of water, by volume.",
-   "c": "InfoCard",
-   "props": {
-    "head": "THE WATER RATIO",
-    "lines": [
-     "1 cup rice",
-     "about 1 1/5 cups water"
-    ],
-    "k": "s03_measure_cup"
-   }
-  },
-  {
-   "a": 482.1,
-   "b": 496.833,
-   "k": "t09_pour_into_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "By weight, it is close to one part rice to about one and one fifth parts water. Write this down on a card and keep it next to the pot, because you will forget i"
-  },
-  {
-   "a": 496.833,
-   "b": 508.353,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 508.353,
-   "b": 520.433,
-   "k": "o27_mushy_rice_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The water is not a guess. It is the most important measure in the whole pot, so measure it like it matters, because it does. Now the rice goes in the pot with i"
-  },
-  {
-   "a": 520.433,
-   "b": 532.547,
-   "k": "s06_close_lid",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "If you use a stove, use a heavy pot with a tight lid, and bring the water to a boil with the lid on. When it boils, turn the heat to the lowest setting, and let"
-  },
-  {
-   "a": 532.547,
-   "b": 543.153,
-   "k": "t14_lid_lift_steam",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Do not lift the lid to look. My mother would slap my hand for that, and she was right. Every time you lift the lid, the steam escapes, and the rice cooks uneven"
-  },
-  {
-   "a": 543.153,
-   "b": 553.733,
-   "k": "t13_lid_wait",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number five is the rest, and the rest is what the restaurants do that most home cooks never do. When the rice is done, turn off the heat and leave the lid on. W",
-   "c": "SecretCard",
-   "props": {
-    "n": "5",
-    "title": "Rest with the lid closed",
-    "label": "SECRET",
-    "k": "t13_lid_wait"
-   }
-  },
-  {
-   "a": 553.733,
-   "b": 564.773,
-   "k": "s07_timer_wait",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Some cooks wait fifteen. The rice is still cooking gently in its own steam during this time. The water inside the grains spreads out evenly, the grains become s"
-  },
-  {
-   "a": 564.773,
-   "b": 575.713,
-   "k": "h07_paddle_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "all the way through, and the sticky surface settles down. If you open the pot straight away, you lose that steam, and the top of the rice dries out while the bo"
-  },
-  {
-   "a": 575.713,
-   "b": 586.887,
-   "k": "h05_clumped_lid",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is one of the reasons people think their rice is bad when really, they only needed to wait. So set a timer. Ten minutes, with the lid on, and nothing else "
-  },
-  {
-   "a": 586.887,
-   "b": 599.0,
-   "k": "s39_wipe_counter",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Use the time to wipe your counter. Your rice will thank you. In the old restaurant kitchens, the cooks did the rest in a wooden tub, a hangiri, which is a wide ",
-   "c": "NameCard",
-   "props": {
-    "word": "hangiri",
-    "gloss": "the wooden tub",
-    "name": 595.84,
-    "glossAt": 597.34,
-    "k": "s39_wipe_counter"
-   }
-  },
-  {
-   "a": 599.0,
-   "b": 609.547,
-   "k": "s04_soak_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is the bowl you see in the picture. The wood pulls the extra steam out of the rice, so the grains stay separate and shiny. You do not need a special tub fo"
-  },
-  {
-   "a": 609.547,
-   "b": 621.353,
-   "k": "s08_paddle_cut",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The lid and the ten minutes are enough. But I like wood, because wood breathes, and rice likes to breathe. Number six is the paddle, and this is the one my husb",
-   "c": "SecretCard",
-   "props": {
-    "n": "6",
-    "title": "Cut, never stir",
-    "label": "SECRET",
-    "k": "s08_paddle_cut"
-   }
-  },
-  {
-   "a": 621.353,
-   "b": 631.58,
-   "k": "t15_paddle_cut",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The Japanese rice paddle is called a shamoji. It is flat and wide, usually made of wood, and it is the most important tool in the kitchen after the pot.",
-   "c": "NameCard",
-   "props": {
-    "word": "shamoji",
-    "gloss": "rice paddle",
-    "name": 623.81,
-    "glossAt": 625.31,
-    "k": "t15_paddle_cut"
-   }
-  },
-  {
-   "a": 631.58,
-   "b": 642.147,
-   "k": "o26_hard_rice_spoon",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Do not use a metal spoon, and do not stir the rice like soup. Stirring crushes the grains. The grains get mushy on the outside, and they lose their shape."
-  },
-  {
-   "a": 642.147,
-   "b": 652.627,
-   "k": "t16_paddle_lift",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Instead, put the paddle in at the edge of the pot, and cut straight down through the rice. Then lift gently, from the bottom, and turn the rice over onto the to"
-  },
-  {
-   "a": 652.627,
-   "b": 662.793,
-   "k": "s09_paddle_turn",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Cut, lift, turn. Cut, lift, turn. Go around the pot slowly, and let the steam come up between the grains. Do this for about thirty seconds."
-  },
-  {
-   "a": 662.793,
-   "b": 673.273,
-   "k": "s17_thermometer_rice",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "You will see the rice fall apart into separate, shining grains, with no clumps and no broken pieces. My husband said I was making a show of it."
-  },
-  {
-   "a": 673.273,
-   "b": 684.113,
-   "k": "s19_fridge_rice",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I said the paddle is the difference between rice and porridge. He tried it once, with his own paddle, and he stopped laughing. He said the rice tasted lighter, "
-  },
-  {
-   "a": 684.113,
-   "b": 698.34,
-   "k": "s26_knead_rice_ball",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Lighter does not mean less. It means each grain is separate, so the flavor reaches your tongue cleanly, one grain at a time. Once the rice is fluffed, leave the"
-  },
-  {
-   "a": 698.34,
-   "b": 706.847,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 706.847,
-   "b": 717.907,
-   "k": "s10_warm_vinegar",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The best rice is warm, not hot, and not cold. You can taste the sweetness when it is warm. Now I want to show you the other things that come out of rice, the on"
-  },
-  {
-   "a": 717.907,
-   "b": 728.993,
-   "k": "s36_sprinkle_water",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "on busy days, and the ones I learned in the restaurant kitchen. These are not complicated. Each one uses the same rice and the same water, and each one has a me"
-  },
-  {
-   "a": 728.993,
-   "b": 739.533,
-   "k": "c07_rice_bag",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "a short memory, the way my mother taught me. Number seven is the seasoning that the restaurants use for sushi rice. It is the secret behind the shine.",
-   "c": "SecretCard",
-   "props": {
-    "n": "7",
-    "title": "Sushi rice seasoning",
-    "label": "SECRET",
-    "k": "c07_rice_bag"
-   }
-  },
-  {
-   "a": 739.533,
-   "b": 750.36,
-   "k": "c04_wooden_tub",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The rice is cooked the same way, but while it is still hot, you spread it in the wooden tub and sprinkle a mixture of rice vinegar, sugar and salt over it."
-  },
-  {
-   "a": 750.36,
-   "b": 761.2,
-   "k": "s12_salt_hands",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "For about two cups of uncooked rice, you need about five tablespoons of rice vinegar, two and a half tablespoons of sugar, and about one and a third teaspoons o"
-  },
-  {
-   "a": 761.2,
-   "b": 772.86,
-   "k": "t20_sushi_cut",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Warm the vinegar mixture a little first, so the sugar and salt melt. Then you cut the seasoning into the rice with the paddle, the same cutting motion as before"
-  },
-  {
-   "a": 772.86,
-   "b": 782.433,
-   "k": "t21_sushi_fan",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "While you cut, fan the rice with a piece of cardboard or a folded paper fan. The fanning cools the rice quickly, and it gives the grains a shine."
-  },
-  {
-   "a": 782.433,
-   "b": 793.907,
-   "k": "c10_rice_ball_triangle",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The cook in my first restaurant job fanned his rice for five minutes without stopping, and I thought his arm would fall off. But the rice had the shine you see "
-  },
-  {
-   "a": 793.907,
-   "b": 802.22,
-   "k": "c13_sushi_tub_cloth",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is the whole trick. Keep the sushi rice covered with a damp cloth, and use it within a few hours, not the next day."
-  },
-  {
-   "a": 802.22,
-   "b": 813.32,
-   "k": "t39_clock_hour",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Vinegar rice is not the same after it has cooled for a long time, and you should not keep it out on the counter while you watch television. Make it fresh, use i"
-  },
-  {
-   "a": 813.32,
-   "b": 821.467,
-   "k": "t26_onigiri_scoop",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number eight is the rice ball, the onigiri. In every Japanese lunch box, you find one, wrapped in a strip of seaweed.",
-   "c": "SecretCard",
-   "props": {
-    "n": "8",
-    "title": "Onigiri with salt",
-    "label": "SECRET",
-    "k": "t26_onigiri_scoop"
-   }
-  },
-  {
-   "a": 821.467,
-   "b": 834.513,
-   "k": "t24_onigiri_wet",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "In my mother's house, we made them for school, for the train, and for the rainy days when nobody wanted to cook. Here is the rule. Wet your hands with cold wate"
-  },
-  {
-   "a": 834.513,
-   "b": 846.293,
-   "k": "t27_onigiri_press",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The salt flavors the outside of the rice ball, and it helps the rice hold its shape. Take about a half cup of warm rice in your hand, and press gently in a tria"
-  },
-  {
-   "a": 846.293,
-   "b": 856.76,
-   "k": "c15_fried_rice_pan",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Do not squeeze hard. If you squeeze, the rice becomes hard and dense, and it tastes like a brick. You want the grains to hold each other, not to be crushed."
-  },
-  {
-   "a": 856.76,
-   "b": 866.773,
-   "k": "s13_press_onigiri",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Three turns with your hands, and it is done. If you want a filling, press a small piece of cooked salmon or pickled plum into the center before you close it."
-  },
-  {
-   "a": 866.773,
-   "b": 876.113,
-   "k": "t47_memory_sink",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Keep the filling small, and use only what is already cooked. My mother always made the onigiri with her hands in cold water, even in winter."
-  },
-  {
-   "a": 876.113,
-   "b": 885.92,
-   "k": "s37_wash_hands",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "She said the cold hands kept the rice from sticking to her fingers. Your hands will be a little wet and a little salty. That is good. That is what the rice want"
-  },
-  {
-   "a": 885.92,
-   "b": 899.86,
-   "k": "s14_okayu_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number nine is the simple rice porridge, which we call okayu. When you have leftover rice, and you are tired, this is the best meal in the house. Take one cup o",
-   "c": "SecretCard",
-   "props": {
-    "n": "9",
-    "title": "Okayu when you are tired",
-    "label": "SECRET",
-    "k": "s14_okayu_pot"
-   }
-  },
-  {
-   "a": 899.86,
-   "b": 908.813,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 908.813,
-   "b": 918.587,
-   "k": "c06_salt_pinch",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Let it simmer for about fifteen minutes, until the grains break apart and the porridge looks creamy. Add a little salt, and a few drops of soy sauce if you like"
-  },
-  {
-   "a": 918.587,
-   "b": 930.907,
-   "k": "t40_wooden_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "My mother added a little grated ginger when someone in the house had a cold. Ginger is warming, and a warm bowl is good when you are tired. You will be surprise"
-  },
-  {
-   "a": 930.907,
-   "b": 943.753,
-   "k": "t22_sushi_shine",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number ten is the fried rice made from yesterday's rice. Yesterday's rice is actually better for fried rice, because the grains have dried a little in the refri",
-   "c": "SecretCard",
-   "props": {
-    "n": "10",
-    "title": "Fried rice from cold rice",
-    "label": "SECRET",
-    "k": "t22_sushi_shine"
-   }
-  },
-  {
-   "a": 943.753,
-   "b": 955.413,
-   "k": "t31_reheat_check",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Break up the cold rice with your fingers first. Heat a little oil in a wide pan. Add the rice and move it around until each grain is hot and a little golden, ab"
-  },
-  {
-   "a": 955.413,
-   "b": 965.393,
-   "k": "s21_taste_spoon",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Then add a beaten egg, a little salt, and a spoon of soy sauce, and keep moving the rice until the egg is cooked through. The rule is the same as always."
-  },
-  {
-   "a": 965.393,
-   "b": 976.073,
-   "k": "t36_rice_cool_tray",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The leftover rice must already be cooled and kept in the refrigerator, and it must be cooked to steaming hot before you eat it. We will talk about that rule in "
-  },
-  {
-   "a": 976.073,
-   "b": 984.647,
-   "k": "t38_fridge_container",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "For now, use the cold rice from the refrigerator, and make the pan very hot. One more from my mother, for a child who was sick."
-  },
-  {
-   "a": 984.647,
-   "b": 993.407,
-   "k": "t25_onigiri_salt",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "She made a thin rice soup with a little water and a pinch of salt, and she called it the soft rice. She cooked it until it was almost liquid."
-  },
-  {
-   "a": 993.407,
-   "b": 999.287,
-   "k": "s18_spread_tray",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Then she let it cool to warm and spooned it into my mouth, one spoon at a time."
-  },
-  {
-   "a": 999.287,
-   "b": 1009.687,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1009.687,
-   "b": 1022.907,
-   "k": "c14_porridge_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Now let us talk about what goes wrong, because it will go wrong, and it is not you. Let us start with the most common one. Your rice comes out wet and mushy at ",
-   "c": "MistakeStamp",
-   "props": {
-    "txt": "IT IS NOT YOU",
-    "at2": 1014.73,
-    "k": "c14_porridge_pot"
-   }
-  },
-  {
-   "a": 1022.907,
-   "b": 1032.713,
-   "k": "c16_sink_water",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "If it comes out mushy, it was too much water, or the rice was not drained well after soaking, or the lid was lifted during cooking. It is not you.",
-   "c": "MistakeStamp",
-   "props": {
-    "txt": "IT IS NOT YOU",
-    "at2": 1032.15,
-    "k": "c16_sink_water"
-   }
-  },
-  {
-   "a": 1032.713,
-   "b": 1044.02,
-   "k": "t33_mushy_spread",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "It is the water line, and the lid. Here is how to save mushy rice. Spread the rice on a wide tray or a flat plate, and let it sit with the lid off for five minu"
-  },
-  {
-   "a": 1044.02,
-   "b": 1055.173,
-   "k": "o28_sushi_fan_paper",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Fan it gently with a paper fan, and use the paddle to lift and turn it. The extra moisture will leave the grains. Do not add more heat, because that makes the b"
-  },
-  {
-   "a": 1055.173,
-   "b": 1063.8,
-   "k": "t37_thermo_check",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Just let the air do the work. The second problem is the opposite. The rice is hard in the middle, with a little white dot in each grain.",
-   "c": "MistakeStamp",
-   "props": {
-    "txt": "WATCH OUT",
-    "at2": 1058.08,
-    "k": "t37_thermo_check"
-   }
-  },
-  {
-   "a": 1063.8,
-   "b": 1076.173,
-   "k": "t11_finger_line",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "If it comes out hard, the water was too low, or the rice was not soaked, or it cooked too fast with the lid open. It is not you. The rice needs more water and m"
-  },
-  {
-   "a": 1076.173,
-   "b": 1088.173,
-   "k": "t18_rest_towel",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Here is what I do. Add two tablespoons of hot water on top, put the lid back on, and let it sit on the lowest heat for five more minutes. Then rest it for ten m"
-  },
-  {
-   "a": 1088.173,
-   "b": 1098.653,
-   "k": "t35_burnt_bottom",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The grains will soften, and the hard center will go away. The third problem is the burnt bottom, the crust we call okoge in Japanese. Some people love it.",
-   "c": "NameCard",
-   "props": {
-    "word": "okoge",
-    "gloss": "the crust at the bottom",
-    "name": 1095.61,
-    "glossAt": 1097.11,
-    "k": "t35_burnt_bottom"
-   }
-  },
-  {
-   "a": 1098.653,
-   "b": 1108.773,
-   "k": "s20_microwave_towel",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "My husband loved it. It has a toasted, nutty taste, and it is good if you make it on purpose. But if it is burnt black and bitter, the heat was too high for too"
-  },
-  {
-   "a": 1108.773,
-   "b": 1121.867,
-   "k": "o25_pot_crust",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Use the lowest heat when the rice is simmering, and use a heavy pot that spreads the heat evenly. If the bottom is only a little brown, scrape it off gently and"
-  },
-  {
-   "a": 1121.867,
-   "b": 1126.853,
-   "k": "t42_rice_sides_bag",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The fourth problem is the rice that turns yellow or gets a bad smell."
-  },
-  {
-   "a": 1126.853,
-   "b": 1136.847,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1136.847,
-   "b": 1147.713,
-   "k": "t45_notebook_safety",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Throw it away. Do not taste it to be sure. Your nose and your eyes are enough. A good rule is that rice that looks or smells wrong is not worth any risk.",
-   "c": "MistakeStamp",
-   "props": {
-    "txt": "WATCH OUT",
-    "at2": 1127.45,
-    "k": "t45_notebook_safety"
-   }
-  },
-  {
-   "a": 1147.713,
-   "b": 1157.343,
-   "k": "o05_water_line_mark",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The fifth problem is the reheated rice that comes out dry and hard. This happens when the rice sat in the refrigerator and then was heated with no water.",
-   "c": "MistakeStamp",
-   "props": {
-    "txt": "WATCH OUT",
-    "at2": 1148.61,
-    "k": "o05_water_line_mark"
-   }
-  },
-  {
-   "a": 1157.343,
-   "b": 1168.483,
-   "k": "o12_damp_towel_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The grains dry out and become rubbery. The solution is simple. Put the cold rice in a bowl. Sprinkle one or two spoons of water on it. Cover it with a damp pape"
-  },
-  {
-   "a": 1168.483,
-   "b": 1177.757,
-   "k": "t17_paddle_edge",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Microwave it in short bursts. Stop when it is hot all the way through, and fluff it with the paddle. The water and the steam bring it back."
-  },
-  {
-   "a": 1177.757,
-   "b": 1188.77,
-   "k": "o17_rice_bag_floor",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I want to say one thing about the reheating, because it is the rule that keeps people safe. Reheated rice must be steaming hot all the way through. Not warm."
-  },
-  {
-   "a": 1188.77,
-   "b": 1196.79,
-   "k": "s35_check_bottom",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Steaming. If you cannot see the steam coming out of the middle, heat it a little longer and stir it once in the middle to check."
-  },
-  {
-   "a": 1196.79,
-   "b": 1206.337,
-   "k": "c05_thermometer_dial",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "A safe temperature is one hundred and sixty five degrees Fahrenheit, which is seventy four degrees Celsius. Use a thermometer if you have one."
-  },
-  {
-   "a": 1206.337,
-   "b": 1216.643,
-   "k": "o24_tray_rice_dish",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "If you do not, use your eyes and make sure the middle is steaming. The sixth problem is the one people never expect. Rice tastes too bland.",
-   "c": "MistakeStamp",
-   "props": {
-    "txt": "WATCH OUT",
-    "at2": 1212.28,
-    "k": "o24_tray_rice_dish"
-   }
-  },
-  {
-   "a": 1216.643,
-   "b": 1227.623,
-   "k": "o29_salt_dish",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "This happens when the rice is not seasoned at all, or the water was too much, so the flavor washed out into the water. A pinch of salt in the cooking water chan"
-  },
-  {
-   "a": 1227.623,
-   "b": 1238.677,
-   "k": "o06_measure_cup",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Add it when you add the water, and stir it once. You do not need much. A quarter teaspoon for a cup of rice is enough to wake up the grains. So that is six mist"
-  },
-  {
-   "a": 1238.677,
-   "b": 1249.51,
-   "k": "s22_notebook_write",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "In every one, the answer is the same. Measure the water, rest the rice, use the paddle, and keep the lid closed when it should be closed. Rice is patient."
-  },
-  {
-   "a": 1249.51,
-   "b": 1262.883,
-   "k": "m11_old_letter",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "It will forgive you almost everything, except the cold water and the impatience. Now let me explain why this works, the way I would explain it to a child who is"
-  },
-  {
-   "a": 1262.883,
-   "b": 1274.057,
-   "k": "s24_point_bag",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Rice is mostly starch. A starch is a long chain of sugar molecules, folded up tight like a ball of wool. When you put the rice in water, the grains begin to dri"
-  },
-  {
-   "a": 1274.057,
-   "b": 1286.963,
-   "k": "o09_sushi_tub_grain",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The water moves into the grain, and the starch chains loosen a little. That is why soaking helps. When you heat the rice in water, the starch swells and softens"
-  },
-  {
-   "a": 1286.963,
-   "b": 1297.99,
-   "k": "s25_sink_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Scientists call this gelatinization. You do not need to remember the word. You only need to remember the idea. Heat and water open the starch, and the grain bec"
-  },
-  {
-   "a": 1297.99,
-   "b": 1305.863,
-   "k": "s28_tap_pot",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Too much water makes it mushy. Too little leaves the middle hard. The water line is a measure for the starch, not a suggestion."
-  },
-  {
-   "a": 1305.863,
-   "b": 1316.297,
-   "k": "s29_wash_tub",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The sticky feeling on the surface of cooked rice comes from loose starch that was washed off the outside of the grain, and the grains stick to each other when t"
-  },
-  {
-   "a": 1316.297,
-   "b": 1322.297,
-   "k": "he_349",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is why washing matters. It is a simple chemistry lesson, and it is in the sink, not in a book. The rest with the lid closed works because the steam keeps t",
-   "vid": true,
-   "ofs": 0
-  },
-  {
-   "a": 1322.297,
-   "b": 1340.217,
-   "k": "c20_cutting_board",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "even and the water spreads evenly through the grain. Rest is not wasted time. It is part of the cooking. And the paddle works because cutting separates the grai"
-  },
-  {
-   "a": 1340.217,
-   "b": 1348.957,
-   "k": "s31_serve_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "These are not my ideas. They are what the starch and the water do, and the old cooks found them by watching carefully for a very long time."
-  },
-  {
-   "a": 1348.957,
-   "b": 1361.297,
-   "k": "s33_ginger_grate",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number eleven is the one I want you to remember every day, so listen carefully. Cooked rice can carry a germ called Bacillus cereus. This is a common bacterium ",
-   "c": "SecretCard",
-   "props": {
-    "n": "11",
-    "title": "Cool it within one hour",
-    "label": "SECRET",
-    "k": "s33_ginger_grate"
-   }
-  },
-  {
-   "a": 1361.297,
-   "b": 1375.99,
-   "k": "s34_shake_container",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Its spores can survive cooking. If cooked rice is left at room temperature for many hours, the spores can grow and make a toxin. Reheating does not always destr"
-  },
-  {
-   "a": 1375.99,
-   "b": 1385.737,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1385.737,
-   "b": 1398.59,
-   "k": "s38_grandson_phone",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Do not leave it in the big pot on the stove, and do not leave it on the counter while you eat dinner and talk for two hours. Keep the rice in the refrigerator a",
-   "c": "InfoCard",
-   "props": {
-    "head": "SAFETY RULE",
-    "lines": [
-     "Cool within 1 hour",
-     "Refrigerate",
-     "Reheat until steaming"
-    ],
-    "k": "s38_grandson_phone"
-   }
-  },
-  {
-   "a": 1398.59,
-   "b": 1409.65,
-   "k": "t30_reheat_towel",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Reheat it until it is steaming hot all the way through. And never leave cooked rice out overnight. I know some families do it, because the rice is easy to keep "
-  },
-  {
-   "a": 1409.65,
-   "b": 1418.73,
-   "k": "s40_window_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "But the warm setting on a rice cooker is not the same as the refrigerator, and rice left out for many hours is the most common way to get sick from rice."
-  },
-  {
-   "a": 1418.73,
-   "b": 1430.49,
-   "k": "c17_window_morning",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "In my mother's house, we cooled the rice in a wooden bowl by the window, and we put it away before we went to bed. That is the rule she taught me, and it has ke"
-  },
-  {
-   "a": 1430.49,
-   "b": 1441.343,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1441.343,
-   "b": 1452.25,
-   "k": "c19_receipts_pile",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The assumption: one rice side a week, from a takeout or restaurant, about six dollars each. That is fifty two sides in a year. Check it against your own receipt",
-   "c": "SecretCard",
-   "props": {
-    "n": "4",
-    "title": "Saves three hundred dollars",
-    "label": "SECRET",
-    "k": "c19_receipts_pile"
-   }
-  },
-  {
-   "a": 1452.25,
-   "b": 1465.11,
-   "k": "t43_receipt_math",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Now the other side of the arithmetic. Cooking rice at home costs much less per serving. Rice is cheap when you buy it in a large bag, and one cup of dry rice ma"
-  },
-  {
-   "a": 1465.11,
-   "b": 1473.883,
-   "k": "c08_noren_door",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Let me use thirty cents as the home cost of one serving of rice, to be safe and generous. That is an estimate, not a promise."
-  },
-  {
-   "a": 1473.883,
-   "b": 1485.303,
-   "k": "c09_umeboshi_jars",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Your costs depend on where you live, and on the price of the bag, so please check your own numbers. Here is the simple math. Fifty two sides cost three hundred ",
-   "c": "CostTag",
-   "props": {
-    "price": "$312",
-    "sub": "takeout rice sides, one year",
-    "vs": {
-     "price": "$15.60",
-     "txt": "home rice, one year",
-     "t": 1486.44
-    },
-    "k": "c09_umeboshi_jars"
-   }
-  },
-  {
-   "a": 1485.303,
-   "b": 1496.383,
-   "k": "c11_fridge_container",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Fifty two home servings cost fifteen dollars and sixty cents. The difference is about two hundred ninety six dollars, which is almost three hundred dollars in a"
-  },
-  {
-   "a": 1496.383,
-   "b": 1507.517,
-   "k": "t44_weekly_plan",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "That is the saving in the picture. It comes from one weekly habit change: cook your own rice, in a large bag, the right way, instead of buying the side at the r"
-  },
-  {
-   "a": 1507.517,
-   "b": 1519.377,
-   "k": "c12_damp_towel",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Let me say it in the simplest way. Buy a big bag of short grain rice, the kind you find in the Asian or large grocery aisle. Cook it with the water line and the"
-  },
-  {
-   "a": 1519.377,
-   "b": 1529.463,
-   "k": "c18_notebook_recipe",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Keep the cooked rice cooled and in the refrigerator, and reheat it steaming hot. Then you have rice for the week, for almost nothing. You do not need special ma"
-  },
-  {
-   "a": 1529.463,
-   "b": 1541.103,
-   "k": "o02_rinse_cloudy",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "You need the same steps you learned today. Here is my simple weekly plan for a small family. On Sunday, rinse and cook a big pot, and cool half in the refrigera"
-  },
-  {
-   "a": 1541.103,
-   "b": 1552.283,
-   "k": "o11_onigiri_plate",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "On Monday, make a rice porridge for the lunch of anyone who is tired. On Tuesday, make the fried rice with the cold rice. On Wednesday, make onigiri for the lun"
-  },
-  {
-   "a": 1552.283,
-   "b": 1563.443,
-   "k": "t19_sushi_tub",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Thursday and Friday, you reheat what you need, steaming hot, one portion at a time. That is the whole week of rice, and it does not cost you the extra six dolla"
-  },
-  {
-   "a": 1563.443,
-   "b": 1575.017,
-   "k": "t48_bowl_both_hands",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "When I was young, in Osaka, a bowl of rice cost very little, but a meal out cost much more than my mother could pay. So she made rice every day and nobody compl"
-  },
-  {
-   "a": 1575.017,
-   "b": 1585.983,
-   "k": "m08_restaurant_back",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I think of her when I see a restaurant bill with a rice side on it. She would have counted every cent, and she would have been proud of you for counting too. Co"
-  },
-  {
-   "a": 1585.983,
-   "b": 1597.283,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1597.283,
-   "b": 1603.283,
-   "k": "rest_a",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "The restaurant was not fancy. It had six tables, a counter, and a kitchen with a steam table that was always hot. The chef was an old man, older than my father ",
-   "vid": true,
-   "ofs": 0
-  },
-  {
-   "a": 1603.283,
-   "b": 1620.21,
-   "k": "t46_rain_window",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "He wore a white cap and very few words. On my first morning, he gave me a bucket of rice and pointed at the sink. That was all. I washed the rice. I thought I d"
-  },
-  {
-   "a": 1620.21,
-   "b": 1629.01,
-   "k": "o04_soak_bowl",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "He took the bowl, looked at the water, and said nothing. He poured it out and handed the bowl back to me. I washed it again. And again."
-  },
-  {
-   "a": 1629.01,
-   "b": 1639.07,
-   "k": "t49_nod_quiet",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I washed that rice for most of the morning, until my hands were red and cold, and every time he shook his head. I was angry. I was afraid."
-  },
-  {
-   "a": 1639.07,
-   "b": 1651.637,
-   "k": "o07_timer_kitchen",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I thought I would be sent home. At the end of the afternoon, when the lunch rush was over and the kitchen was quiet, I washed the rice once more. I was tired, a"
-  },
-  {
-   "a": 1651.637,
-   "b": 1664.77,
-   "k": "o03_rinse_clear",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "I held the bowl and I looked at the water. It was clear. Not perfect, but clear enough that I could see the grains through it. The chef came to the sink, looked"
-  },
-  {
-   "a": 1664.77,
-   "b": 1670.77,
-   "k": "km_214",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "He did not say a word. He just nodded, and walked back to his stove. I stood there with the bowl in my hands and I cried a little, in the back of that kitchen, ",
-   "vid": true,
-   "ofs": 0
-  },
-  {
-   "a": 1670.77,
-   "b": 1685.843,
-   "k": "t50_grandson_watch",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Not because I was sad. Because I finally understood. That nod was the only praise I got that whole year, and I have never forgotten it."
-  },
-  {
-   "a": 1685.843,
-   "b": 1695.843,
-   "k": "o08_shamoji_wood",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "When I cook rice now, I wash it three times, and then I look at the water. And I can hear that old man say nothing at all. That is how I know it is ready."
-  },
-  {
-   "a": 1695.843,
-   "b": 1708.19,
-   "k": "o18_kitchen_window",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "He passed away many years ago, and I never thanked him properly. So I thank him here. Thank you, sir. I can still feel the cold water on my wrists, and the quie"
-  },
-  {
-   "a": 1708.19,
-   "b": 1712.663,
-   "k": "o13_microwave_inside",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Those were not wasted hours. They were the best lesson of my life."
-  },
-  {
-   "a": 1712.663,
-   "b": 1721.363,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1721.363,
-   "b": 1734.057,
-   "k": "o14_probe_thermometer",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number two, soak it for at least thirty minutes, and an hour in the cold months. Number three, use the water line, or one cup of rice to about one and one fifth",
-   "c": "InfoCard",
-   "props": {
-    "head": "THE RECAP",
-    "lines": [
-     "1 Wash",
-     "2 Soak",
-     "3 Measure water",
-     "4 Save $300 a year"
-    ],
-    "k": "o14_probe_thermometer"
-   }
-  },
-  {
-   "a": 1734.057,
-   "b": 1745.37,
-   "k": "o15_fridge_shelf",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number four, buy the big bag, cook it yourself, and save about three hundred dollars a year on the rice side. Number five, rest with the lid closed for ten minu"
-  },
-  {
-   "a": 1745.37,
-   "b": 1754.943,
-   "k": "o19_rain_glass",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number six, cut with the paddle, never stir. Number seven, the restaurant seasoning for sushi rice, cut in and fanned to cool."
-  },
-  {
-   "a": 1754.943,
-   "b": 1766.917,
-   "k": "o20_wall_clock",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number eight, onigiri with wet hands and a pinch of salt. Number nine, the simple rice porridge when you are tired. Number ten, fried rice from yesterday's cold"
-  },
-  {
-   "a": 1766.917,
-   "b": 1777.177,
-   "k": "o21_notebook_pencil",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Number eleven, cool the rice within one hour, refrigerate it, and reheat it until it is steaming hot all the way through. Never leave it out overnight."
-  },
-  {
-   "a": 1777.177,
-   "b": 1786.83,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1786.83,
-   "b": 1800.717,
-   "k": "o22_receipts_pencil",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Wait the ten minutes. Then taste it with a little salt, and notice the difference. Tomorrow, when you cook it for the week, cool the leftover rice within one ho"
-  },
-  {
-   "a": 1800.717,
-   "b": 1810.643,
-   "k": "o23_calendar_pin",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Now, I want to ask you something specific. What did your grandmother put in her rice pot on Sunday? Did she wash the rice three times, or only once?"
-  },
-  {
-   "a": 1810.643,
-   "b": 1821.143,
-   "k": "m07_family_table",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Did she add a pinch of salt, or nothing? Tell me in the comments, and please be specific. I read every answer, and I learn something new from your family every "
-  },
-  {
-   "a": 1821.143,
-   "b": 1836.503,
-   "k": "o30_vinegar_bottle",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Next time, I will show you my mother's stone-roast trick for sweet potatoes. Slow heat, and they taste like candy. It is so simple that you will laugh at how lo",
-   "c": "Thumb",
-   "props": {
-    "thumb": "thumb",
-    "tag": "NEXT VIDEO",
-    "words": [
-     [
-      "99%",
-      1823.46
-     ],
-     [
-      "Sweet",
-      1827.46
-     ]
-    ],
-    "k": "o30_vinegar_bottle"
-   }
-  },
-  {
-   "a": 1836.503,
-   "b": 1846.023,
-   "k": "",
-   "av": true
-  },
-  {
-   "a": 1846.023,
-   "b": 1850.07,
-   "k": "m02_market_fish",
-   "tin": "cut",
-   "tout": "cut",
-   "txt": "Mata ne, which means: see you again. See you soon."
-  }
- ]
+"end": 1850.07,
+"shots": [
+{
+"a": 0.0,
+"b": 2.5,
+"k": "thumb",
+"c": "OpenThumb",
+"props": {
+"k": "thumb",
+"focus": [
+50,
+40
+],
+"rings": [
+{
+"t": 3.0,
+"x": 62,
+"y": 55
+}
+],
+"marks": []
+}
+},
+{
+"a": 2.5,
+"b": 4.56,
+"k": "img/sachiko4/h04_finger_lips.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 4.56,
+"b": 6.387,
+"k": "img/sachiko4/h04_finger_lips.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 6.387,
+"b": 7.927,
+"k": "img/sachiko4/h06_puzzled_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 7.927,
+"b": 9.567,
+"k": "img/sachiko4/h06_puzzled_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 9.567,
+"b": 12.227,
+"k": "img/sachiko4/h01_wet_sticky_rice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 12.227,
+"b": 14.787,
+"k": "img/sachiko4/h02_burnt_bottom_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 14.787,
+"b": 17.04,
+"k": "img/sachiko4/h08_leaning_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 17.04,
+"b": 19.113,
+"k": "img/sachiko4/h08_leaning_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 19.113,
+"b": 23.207,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 23.207,
+"b": 25.693,
+"k": "img/sachiko4/h08_leaning_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+],
+"dx": -120
+},
+{
+"a": 25.693,
+"b": 29.193,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 29.193,
+"b": 37.827,
+"k": "m14_japanese_rice_bag_old",
+"tin": "cut",
+"tout": "cut",
+"txt": "Today I will show you eleven things that the old cooks in the Japanese kitchens taught me. Number one is washing. Number two is soaking.",
+"c": "SecretCard",
+"props": {
+"n": "1",
+"title": "Wash until mostly clear",
+"label": "SECRET",
+"k": "m14_japanese_rice_bag_old"
+}
+},
+{
+"a": 37.827,
+"b": 48.52,
+"k": "s05_water_line",
+"tin": "cut",
+"tout": "cut",
+"txt": "Number three is the water, and the water is measured, not guessed by feeling. Number four is the one on the picture, the one that saves you three hundred dollar",
+"c": "SecretCard",
+"props": {
+"n": "2",
+"title": "Soak it first",
+"label": "SECRET",
+"k": "s05_water_line"
+}
+},
+{
+"a": 48.52,
+"b": 59.32,
+"k": "t32_reheat_fluff",
+"tin": "cut",
+"tout": "cut",
+"txt": "I will tell you exactly how, with the arithmetic, so you can check it yourself. Then the resting, the wooden paddle, the seasoning that restaurants add to their",
+"c": "SecretCard",
+"props": {
+"n": "3",
+"title": "Measure the water",
+"label": "SECRET",
+"k": "t32_reheat_fluff"
+}
+},
+{
+"a": 59.32,
+"b": 62.62,
+"k": "img/sachiko4/t28_onigiri_three.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 62.62,
+"b": 65.92,
+"k": "img/sachiko4/t28_onigiri_three.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 65.92,
+"b": 69.06,
+"k": "img/sachiko4/t28_onigiri_three.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 69.06,
+"b": 72.36,
+"k": "img/sachiko4/t28_onigiri_three.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 72.36,
+"b": 75.253,
+"k": "img/sachiko4/s11_fan_rice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 75.253,
+"b": 78.267,
+"k": "img/sachiko4/s11_fan_rice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 78.267,
+"b": 80.947,
+"k": "img/sachiko4/s11_fan_rice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 80.947,
+"b": 83.907,
+"k": "img/sachiko4/s11_fan_rice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 83.907,
+"b": 88.947,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 88.947,
+"b": 91.147,
+"k": "img/sachiko4/c03_steam_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 91.147,
+"b": 95.813,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 95.813,
+"b": 98.947,
+"k": "img/sachiko4/c03_steam_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 98.947,
+"b": 101.907,
+"k": "img/sachiko4/c03_steam_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 101.907,
+"b": 105.167,
+"k": "img/sachiko4/c03_steam_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 105.167,
+"b": 108.447,
+"k": "img/sachiko4/c03_steam_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 108.447,
+"b": 111.547,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/bd_288.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 111.547,
+"b": 114.447,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/bd_288.mp4",
+"ofs": 3.1,
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+}
+},
+{
+"a": 114.447,
+"b": 117.753,
+"k": "img/sachiko4/s16_break_cold_rice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 117.753,
+"b": 121.073,
+"k": "img/sachiko4/s16_break_cold_rice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 121.073,
+"b": 124.733,
+"k": "img/sachiko4/s16_break_cold_rice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 124.733,
+"b": 127.727,
+"k": "img/sachiko4/s16_break_cold_rice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 127.727,
+"b": 131.287,
+"k": "img/sachiko4/s16_break_cold_rice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 131.287,
+"b": 134.647,
+"k": "img/sachiko4/m05_mother_wooden_box.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 134.647,
+"b": 137.987,
+"k": "img/sachiko4/m05_mother_wooden_box.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 137.987,
+"b": 141.287,
+"k": "img/sachiko4/m05_mother_wooden_box.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 141.287,
+"b": 144.187,
+"k": "img/sachiko4/s23_receipts_table.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 144.187,
+"b": 146.867,
+"k": "img/sachiko4/s23_receipts_table.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 146.867,
+"b": 149.707,
+"k": "img/sachiko4/s23_receipts_table.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 149.707,
+"b": 152.367,
+"k": "img/sachiko4/s23_receipts_table.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 152.367,
+"b": 155.347,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/km_268.mp4",
+"ofs": 0.0,
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+}
+},
+{
+"a": 155.347,
+"b": 158.367,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/km_268.mp4",
+"ofs": 2.98,
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+}
+},
+{
+"a": 158.367,
+"b": 172.98,
+"k": "t23_damp_cloth",
+"tin": "cut",
+"tout": "cut",
+"txt": "You washed it carefully, you cooked it carefully, and you ate every bite. In Osaka, in the rainy season, which we called tsuyu, everything was wet.",
+"c": "NameCard",
+"props": {
+"word": "tsuyu",
+"gloss": "the rainy season",
+"name": 171.07,
+"glossAt": 172.57,
+"k": "t23_damp_cloth"
+}
+},
+{
+"a": 172.98,
+"b": 176.02,
+"k": "img/sachiko4/t34_hard_drop.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 176.02,
+"b": 178.853,
+"k": "img/sachiko4/t34_hard_drop.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 178.853,
+"b": 181.913,
+"k": "img/sachiko4/t34_hard_drop.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 181.913,
+"b": 184.853,
+"k": "img/sachiko4/t34_hard_drop.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 184.853,
+"b": 188.167,
+"k": "img/sachiko4/s01_rinse_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 188.167,
+"b": 191.187,
+"k": "img/sachiko4/s01_rinse_hands.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 191.187,
+"b": 194.6,
+"k": "img/sachiko4/s01_rinse_hands.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 194.6,
+"b": 199.453,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 199.453,
+"b": 201.92,
+"k": "img/sachiko4/m03_rice_shop_sacks.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 201.92,
+"b": 206.26,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 206.26,
+"b": 208.94,
+"k": "img/sachiko4/m03_rice_shop_sacks.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 208.94,
+"b": 211.98,
+"k": "img/sachiko4/m03_rice_shop_sacks.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 211.98,
+"b": 214.607,
+"k": "img/sachiko4/m03_rice_shop_sacks.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 214.607,
+"b": 217.507,
+"k": "img/sachiko4/m03_rice_shop_sacks.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 217.507,
+"b": 220.94,
+"k": "img/sachiko4/c01_rice_grains.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 220.94,
+"b": 224.48,
+"k": "img/sachiko4/c01_rice_grains.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 224.48,
+"b": 227.9,
+"k": "img/sachiko4/c01_rice_grains.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 227.9,
+"b": 231.027,
+"k": "img/sachiko4/m13_tiny_apt_kitchen.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 231.027,
+"b": 233.713,
+"k": "img/sachiko4/m13_tiny_apt_kitchen.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 233.713,
+"b": 236.873,
+"k": "img/sachiko4/m13_tiny_apt_kitchen.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 236.873,
+"b": 239.833,
+"k": "img/sachiko4/m13_tiny_apt_kitchen.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 239.833,
+"b": 243.553,
+"k": "img/sachiko4/t07_grains_hand.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 243.553,
+"b": 247.0,
+"k": "img/sachiko4/t07_grains_hand.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 247.0,
+"b": 250.6,
+"k": "img/sachiko4/t07_grains_hand.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 250.6,
+"b": 253.987,
+"k": "img/sachiko4/m01_osaka_street_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 253.987,
+"b": 257.32,
+"k": "img/sachiko4/m01_osaka_street_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 257.32,
+"b": 260.48,
+"k": "img/sachiko4/m01_osaka_street_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 260.48,
+"b": 263.88,
+"k": "img/sachiko4/m01_osaka_street_old.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 263.88,
+"b": 267.133,
+"k": "img/sachiko4/t01_wash_first.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 267.133,
+"b": 270.333,
+"k": "img/sachiko4/t01_wash_first.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 270.333,
+"b": 273.493,
+"k": "img/sachiko4/t01_wash_first.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 273.493,
+"b": 276.873,
+"k": "img/sachiko4/t29_reheat_water.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 276.873,
+"b": 280.507,
+"k": "img/sachiko4/t29_reheat_water.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 280.507,
+"b": 284.067,
+"k": "img/sachiko4/t29_reheat_water.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 284.067,
+"b": 287.5,
+"k": "img/sachiko4/s02_pour_cloudy.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 287.5,
+"b": 291.253,
+"k": "img/sachiko4/s02_pour_cloudy.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 291.253,
+"b": 294.76,
+"k": "img/sachiko4/s02_pour_cloudy.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 294.76,
+"b": 297.033,
+"k": "img/sachiko4/t03_wash_clear.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 297.033,
+"b": 299.587,
+"k": "img/sachiko4/t03_wash_clear.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 299.587,
+"b": 304.64,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 304.64,
+"b": 306.86,
+"k": "img/sachiko4/m09_chef_sink.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 306.86,
+"b": 311.44,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 311.44,
+"b": 314.64,
+"k": "img/sachiko4/m09_chef_sink.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 314.64,
+"b": 317.933,
+"k": "img/sachiko4/m09_chef_sink.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 317.933,
+"b": 321.093,
+"k": "img/sachiko4/m09_chef_sink.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 321.093,
+"b": 324.487,
+"k": "img/sachiko4/h03_hard_grain_dot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 324.487,
+"b": 327.747,
+"k": "img/sachiko4/h03_hard_grain_dot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 327.747,
+"b": 331.227,
+"k": "img/sachiko4/h03_hard_grain_dot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 331.227,
+"b": 334.153,
+"k": "img/sachiko4/o01_rice_bowl_white.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 334.153,
+"b": 337.073,
+"k": "img/sachiko4/o01_rice_bowl_white.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 337.073,
+"b": 339.693,
+"k": "img/sachiko4/o01_rice_bowl_white.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 339.693,
+"b": 342.64,
+"k": "img/sachiko4/o01_rice_bowl_white.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 342.64,
+"b": 345.547,
+"k": "img/sachiko4/s27_pour_water_cook.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 345.547,
+"b": 348.48,
+"k": "img/sachiko4/s27_pour_water_cook.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 348.48,
+"b": 351.22,
+"k": "img/sachiko4/s27_pour_water_cook.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 351.22,
+"b": 354.64,
+"k": "img/sachiko4/t02_wash_again.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 354.64,
+"b": 357.96,
+"k": "img/sachiko4/t02_wash_again.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 357.96,
+"b": 361.5,
+"k": "img/sachiko4/t02_wash_again.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 361.5,
+"b": 364.76,
+"k": "img/sachiko4/t04_strainer.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 364.76,
+"b": 368.1,
+"k": "img/sachiko4/t04_strainer.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 368.1,
+"b": 371.28,
+"k": "img/sachiko4/t04_strainer.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 371.28,
+"b": 374.62,
+"k": "img/sachiko4/t04_strainer.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 374.62,
+"b": 377.573,
+"k": "img/sachiko4/t05_soak_cover.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 377.573,
+"b": 380.473,
+"k": "img/sachiko4/t05_soak_cover.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 380.473,
+"b": 383.133,
+"k": "img/sachiko4/t05_soak_cover.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 383.133,
+"b": 386.133,
+"k": "img/sachiko4/t05_soak_cover.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 386.133,
+"b": 389.02,
+"k": "img/sachiko4/t06_soak_timer.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 389.02,
+"b": 391.72,
+"k": "img/sachiko4/t06_soak_timer.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 391.72,
+"b": 394.44,
+"k": "img/sachiko4/t06_soak_timer.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 394.44,
+"b": 397.24,
+"k": "img/sachiko4/t06_soak_timer.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 397.24,
+"b": 401.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 401.0,
+"b": 403.4,
+"k": "img/sachiko4/t12_pot_lid_press.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 403.4,
+"b": 406.52,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 406.52,
+"b": 409.52,
+"k": "img/sachiko4/t12_pot_lid_press.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 409.52,
+"b": 412.42,
+"k": "img/sachiko4/t12_pot_lid_press.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 412.42,
+"b": 415.54,
+"k": "img/sachiko4/t12_pot_lid_press.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 415.54,
+"b": 418.8,
+"k": "img/sachiko4/s32_soft_rice_child.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 418.8,
+"b": 422.24,
+"k": "img/sachiko4/s32_soft_rice_child.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 422.24,
+"b": 425.52,
+"k": "img/sachiko4/s32_soft_rice_child.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 425.52,
+"b": 429.02,
+"k": "img/sachiko4/s15_fry_rice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 429.02,
+"b": 432.733,
+"k": "img/sachiko4/s15_fry_rice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 432.733,
+"b": 436.173,
+"k": "img/sachiko4/s15_fry_rice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 436.173,
+"b": 439.173,
+"k": "img/sachiko4/t08_measure_level.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 439.173,
+"b": 442.173,
+"k": "img/sachiko4/t08_measure_level.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 442.173,
+"b": 444.993,
+"k": "img/sachiko4/t08_measure_level.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 444.993,
+"b": 448.087,
+"k": "img/sachiko4/t08_measure_level.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 448.087,
+"b": 451.067,
+"k": "img/sachiko4/t10_water_line_fill.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 451.067,
+"b": 454.007,
+"k": "img/sachiko4/t10_water_line_fill.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 454.007,
+"b": 456.887,
+"k": "img/sachiko4/t10_water_line_fill.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 456.887,
+"b": 459.687,
+"k": "img/sachiko4/t10_water_line_fill.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 459.687,
+"b": 463.067,
+"k": "img/sachiko4/c02_water_line_cooker.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 463.067,
+"b": 466.587,
+"k": "img/sachiko4/c02_water_line_cooker.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 466.587,
+"b": 469.987,
+"k": "img/sachiko4/c02_water_line_cooker.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 469.987,
+"b": 473.347,
+"k": "img/sachiko4/c02_water_line_cooker.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 473.347,
+"b": 482.1,
+"k": "s03_measure_cup",
+"tin": "cut",
+"tout": "cut",
+"txt": "For Japanese short grain rice, a good starting point is one cup of rice to about one and one fifth cups of water, by volume.",
+"c": "InfoCard",
+"props": {
+"head": "THE WATER RATIO",
+"lines": [
+"1 cup rice",
+"about 1 1/5 cups water"
+],
+"k": "s03_measure_cup"
+}
+},
+{
+"a": 482.1,
+"b": 485.147,
+"k": "img/sachiko4/t09_pour_into_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 485.147,
+"b": 487.867,
+"k": "img/sachiko4/t09_pour_into_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 487.867,
+"b": 490.907,
+"k": "img/sachiko4/t09_pour_into_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 490.907,
+"b": 494.007,
+"k": "img/sachiko4/t09_pour_into_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 494.007,
+"b": 496.833,
+"k": "img/sachiko4/t09_pour_into_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 496.833,
+"b": 501.713,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 501.713,
+"b": 504.213,
+"k": "img/sachiko4/o27_mushy_rice_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 504.213,
+"b": 508.353,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 508.353,
+"b": 511.113,
+"k": "img/sachiko4/o27_mushy_rice_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 511.113,
+"b": 514.313,
+"k": "img/sachiko4/o27_mushy_rice_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 514.313,
+"b": 517.493,
+"k": "img/sachiko4/o27_mushy_rice_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 517.493,
+"b": 520.433,
+"k": "img/sachiko4/o27_mushy_rice_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 520.433,
+"b": 523.533,
+"k": "img/sachiko4/s06_close_lid.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 523.533,
+"b": 526.533,
+"k": "img/sachiko4/s06_close_lid.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 526.533,
+"b": 529.447,
+"k": "img/sachiko4/s06_close_lid.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 529.447,
+"b": 532.547,
+"k": "img/sachiko4/s06_close_lid.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 532.547,
+"b": 536.16,
+"k": "img/sachiko4/t14_lid_lift_steam.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 536.16,
+"b": 539.593,
+"k": "img/sachiko4/t14_lid_lift_steam.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 539.593,
+"b": 543.153,
+"k": "img/sachiko4/t14_lid_lift_steam.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 543.153,
+"b": 553.733,
+"k": "t13_lid_wait",
+"tin": "cut",
+"tout": "cut",
+"txt": "Number five is the rest, and the rest is what the restaurants do that most home cooks never do. When the rice is done, turn off the heat and leave the lid on. W",
+"c": "SecretCard",
+"props": {
+"n": "5",
+"title": "Rest with the lid closed",
+"label": "SECRET",
+"k": "t13_lid_wait"
+}
+},
+{
+"a": 553.733,
+"b": 556.373,
+"k": "img/sachiko4/s07_timer_wait.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 556.373,
+"b": 559.353,
+"k": "img/sachiko4/s07_timer_wait.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 559.353,
+"b": 562.153,
+"k": "img/sachiko4/s07_timer_wait.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 562.153,
+"b": 564.773,
+"k": "img/sachiko4/s07_timer_wait.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 564.773,
+"b": 567.373,
+"k": "img/sachiko4/h07_paddle_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 567.373,
+"b": 570.093,
+"k": "img/sachiko4/h07_paddle_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 570.093,
+"b": 573.033,
+"k": "img/sachiko4/h07_paddle_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 573.033,
+"b": 575.713,
+"k": "img/sachiko4/h07_paddle_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 575.713,
+"b": 578.427,
+"k": "img/sachiko4/h05_clumped_lid.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 578.427,
+"b": 581.367,
+"k": "img/sachiko4/h05_clumped_lid.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 581.367,
+"b": 584.067,
+"k": "img/sachiko4/h05_clumped_lid.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 584.067,
+"b": 586.887,
+"k": "img/sachiko4/h05_clumped_lid.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 586.887,
+"b": 599.0,
+"k": "s39_wipe_counter",
+"tin": "cut",
+"tout": "cut",
+"txt": "Use the time to wipe your counter. Your rice will thank you. In the old restaurant kitchens, the cooks did the rest in a wooden tub, a hangiri, which is a wide ",
+"c": "NameCard",
+"props": {
+"word": "hangiri",
+"gloss": "the wooden tub",
+"name": 595.84,
+"glossAt": 597.34,
+"k": "s39_wipe_counter"
+}
+},
+{
+"a": 599.0,
+"b": 602.62,
+"k": "img/sachiko4/s04_soak_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 602.62,
+"b": 605.98,
+"k": "img/sachiko4/s04_soak_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 605.98,
+"b": 609.547,
+"k": "img/sachiko4/s04_soak_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 609.547,
+"b": 621.353,
+"k": "s08_paddle_cut",
+"tin": "cut",
+"tout": "cut",
+"txt": "The lid and the ten minutes are enough. But I like wood, because wood breathes, and rice likes to breathe. Number six is the paddle, and this is the one my husb",
+"c": "SecretCard",
+"props": {
+"n": "6",
+"title": "Cut, never stir",
+"label": "SECRET",
+"k": "s08_paddle_cut"
+}
+},
+{
+"a": 621.353,
+"b": 631.58,
+"k": "t15_paddle_cut",
+"tin": "cut",
+"tout": "cut",
+"txt": "The Japanese rice paddle is called a shamoji. It is flat and wide, usually made of wood, and it is the most important tool in the kitchen after the pot.",
+"c": "NameCard",
+"props": {
+"word": "shamoji",
+"gloss": "rice paddle",
+"name": 623.81,
+"glossAt": 625.31,
+"k": "t15_paddle_cut"
+}
+},
+{
+"a": 631.58,
+"b": 635.173,
+"k": "img/sachiko4/o26_hard_rice_spoon.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 635.173,
+"b": 638.707,
+"k": "img/sachiko4/o26_hard_rice_spoon.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 638.707,
+"b": 642.147,
+"k": "img/sachiko4/o26_hard_rice_spoon.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 642.147,
+"b": 645.427,
+"k": "img/sachiko4/t16_paddle_lift.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 645.427,
+"b": 649.147,
+"k": "img/sachiko4/t16_paddle_lift.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 649.147,
+"b": 652.627,
+"k": "img/sachiko4/t16_paddle_lift.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 652.627,
+"b": 656.133,
+"k": "img/sachiko4/s09_paddle_turn.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 656.133,
+"b": 659.453,
+"k": "img/sachiko4/s09_paddle_turn.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 659.453,
+"b": 662.793,
+"k": "img/sachiko4/s09_paddle_turn.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 662.793,
+"b": 666.393,
+"k": "img/sachiko4/s17_thermometer_rice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 666.393,
+"b": 669.753,
+"k": "img/sachiko4/s17_thermometer_rice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 669.753,
+"b": 673.273,
+"k": "img/sachiko4/s17_thermometer_rice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 673.273,
+"b": 676.053,
+"k": "img/sachiko4/s19_fridge_rice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 676.053,
+"b": 678.647,
+"k": "img/sachiko4/s19_fridge_rice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 678.647,
+"b": 681.553,
+"k": "img/sachiko4/s19_fridge_rice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 681.553,
+"b": 684.113,
+"k": "img/sachiko4/s19_fridge_rice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 684.113,
+"b": 687.713,
+"k": "img/sachiko4/s26_knead_rice_ball.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 687.713,
+"b": 691.133,
+"k": "img/sachiko4/s26_knead_rice_ball.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 691.133,
+"b": 694.893,
+"k": "img/sachiko4/s26_knead_rice_ball.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 694.893,
+"b": 698.34,
+"k": "img/sachiko4/s26_knead_rice_ball.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 698.34,
+"b": 701.86,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 701.86,
+"b": 704.347,
+"k": "img/sachiko4/s10_warm_vinegar.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 704.347,
+"b": 706.847,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 706.847,
+"b": 709.74,
+"k": "img/sachiko4/s10_warm_vinegar.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 709.74,
+"b": 712.32,
+"k": "img/sachiko4/s10_warm_vinegar.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 712.32,
+"b": 715.12,
+"k": "img/sachiko4/s10_warm_vinegar.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 715.12,
+"b": 717.907,
+"k": "img/sachiko4/s10_warm_vinegar.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 717.907,
+"b": 720.547,
+"k": "img/sachiko4/s36_sprinkle_water.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 720.547,
+"b": 723.233,
+"k": "img/sachiko4/s36_sprinkle_water.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 723.233,
+"b": 726.313,
+"k": "img/sachiko4/s36_sprinkle_water.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 726.313,
+"b": 728.993,
+"k": "img/sachiko4/s36_sprinkle_water.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 728.993,
+"b": 739.533,
+"k": "c07_rice_bag",
+"tin": "cut",
+"tout": "cut",
+"txt": "a short memory, the way my mother taught me. Number seven is the seasoning that the restaurants use for sushi rice. It is the secret behind the shine.",
+"c": "SecretCard",
+"props": {
+"n": "7",
+"title": "Sushi rice seasoning",
+"label": "SECRET",
+"k": "c07_rice_bag"
+}
+},
+{
+"a": 739.533,
+"b": 742.32,
+"k": "img/sachiko4/c04_wooden_tub.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 742.32,
+"b": 745.04,
+"k": "img/sachiko4/c04_wooden_tub.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 745.04,
+"b": 747.7,
+"k": "img/sachiko4/c04_wooden_tub.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 747.7,
+"b": 750.36,
+"k": "img/sachiko4/c04_wooden_tub.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 750.36,
+"b": 753.24,
+"k": "img/sachiko4/s12_salt_hands.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 753.24,
+"b": 755.96,
+"k": "img/sachiko4/s12_salt_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 755.96,
+"b": 758.28,
+"k": "img/sachiko4/s12_salt_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 758.28,
+"b": 761.2,
+"k": "img/sachiko4/s12_salt_hands.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 761.2,
+"b": 764.133,
+"k": "img/sachiko4/t20_sushi_cut.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 764.133,
+"b": 767.047,
+"k": "img/sachiko4/t20_sushi_cut.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 767.047,
+"b": 769.94,
+"k": "img/sachiko4/t20_sushi_cut.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 769.94,
+"b": 772.86,
+"k": "img/sachiko4/t20_sushi_cut.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 772.86,
+"b": 775.853,
+"k": "img/sachiko4/t21_sushi_fan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 775.853,
+"b": 779.093,
+"k": "img/sachiko4/t21_sushi_fan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 779.093,
+"b": 782.433,
+"k": "img/sachiko4/t21_sushi_fan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 782.433,
+"b": 785.273,
+"k": "img/sachiko4/c10_rice_ball_triangle.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 785.273,
+"b": 788.333,
+"k": "img/sachiko4/c10_rice_ball_triangle.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 788.333,
+"b": 790.987,
+"k": "img/sachiko4/c10_rice_ball_triangle.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 790.987,
+"b": 793.907,
+"k": "img/sachiko4/c10_rice_ball_triangle.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 793.907,
+"b": 796.72,
+"k": "img/sachiko4/c13_sushi_tub_cloth.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 796.72,
+"b": 799.54,
+"k": "img/sachiko4/c13_sushi_tub_cloth.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 799.54,
+"b": 802.22,
+"k": "img/sachiko4/c13_sushi_tub_cloth.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 802.22,
+"b": 804.98,
+"k": "img/sachiko4/t39_clock_hour.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 804.98,
+"b": 807.84,
+"k": "img/sachiko4/t39_clock_hour.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 807.84,
+"b": 810.62,
+"k": "img/sachiko4/t39_clock_hour.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 810.62,
+"b": 813.32,
+"k": "img/sachiko4/t39_clock_hour.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 813.32,
+"b": 821.467,
+"k": "t26_onigiri_scoop",
+"tin": "cut",
+"tout": "cut",
+"txt": "Number eight is the rice ball, the onigiri. In every Japanese lunch box, you find one, wrapped in a strip of seaweed.",
+"c": "SecretCard",
+"props": {
+"n": "8",
+"title": "Onigiri with salt",
+"label": "SECRET",
+"k": "t26_onigiri_scoop"
+}
+},
+{
+"a": 821.467,
+"b": 824.8,
+"k": "img/sachiko4/t24_onigiri_wet.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 824.8,
+"b": 828.02,
+"k": "img/sachiko4/t24_onigiri_wet.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 828.02,
+"b": 831.133,
+"k": "img/sachiko4/t24_onigiri_wet.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 831.133,
+"b": 834.513,
+"k": "img/sachiko4/t24_onigiri_wet.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 834.513,
+"b": 837.413,
+"k": "img/sachiko4/t27_onigiri_press.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 837.413,
+"b": 840.453,
+"k": "img/sachiko4/t27_onigiri_press.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 840.453,
+"b": 843.273,
+"k": "img/sachiko4/t27_onigiri_press.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 843.273,
+"b": 846.293,
+"k": "img/sachiko4/t27_onigiri_press.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 846.293,
+"b": 849.72,
+"k": "img/sachiko4/c15_fried_rice_pan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 849.72,
+"b": 853.32,
+"k": "img/sachiko4/c15_fried_rice_pan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 853.32,
+"b": 856.76,
+"k": "img/sachiko4/c15_fried_rice_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 856.76,
+"b": 860.093,
+"k": "img/sachiko4/s13_press_onigiri.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 860.093,
+"b": 863.333,
+"k": "img/sachiko4/s13_press_onigiri.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 863.333,
+"b": 866.773,
+"k": "img/sachiko4/s13_press_onigiri.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 866.773,
+"b": 869.913,
+"k": "img/sachiko4/t47_memory_sink.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 869.913,
+"b": 873.113,
+"k": "img/sachiko4/t47_memory_sink.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 873.113,
+"b": 876.113,
+"k": "img/sachiko4/t47_memory_sink.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 876.113,
+"b": 879.32,
+"k": "img/sachiko4/s37_wash_hands.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 879.32,
+"b": 882.513,
+"k": "img/sachiko4/s37_wash_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 882.513,
+"b": 885.92,
+"k": "img/sachiko4/s37_wash_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 885.92,
+"b": 899.86,
+"k": "s14_okayu_pot",
+"tin": "cut",
+"tout": "cut",
+"txt": "Number nine is the simple rice porridge, which we call okayu. When you have leftover rice, and you are tired, this is the best meal in the house. Take one cup o",
+"c": "SecretCard",
+"props": {
+"n": "9",
+"title": "Okayu when you are tired",
+"label": "SECRET",
+"k": "s14_okayu_pot"
+}
+},
+{
+"a": 899.86,
+"b": 903.56,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 903.56,
+"b": 905.913,
+"k": "img/sachiko4/c06_salt_pinch.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 905.913,
+"b": 908.813,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 908.813,
+"b": 912.16,
+"k": "img/sachiko4/c06_salt_pinch.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 912.16,
+"b": 915.307,
+"k": "img/sachiko4/c06_salt_pinch.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 915.307,
+"b": 918.587,
+"k": "img/sachiko4/c06_salt_pinch.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 918.587,
+"b": 921.7,
+"k": "img/sachiko4/t40_wooden_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 921.7,
+"b": 924.687,
+"k": "img/sachiko4/t40_wooden_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 924.687,
+"b": 927.747,
+"k": "img/sachiko4/t40_wooden_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 927.747,
+"b": 930.907,
+"k": "img/sachiko4/t40_wooden_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 930.907,
+"b": 943.753,
+"k": "t22_sushi_shine",
+"tin": "cut",
+"tout": "cut",
+"txt": "Number ten is the fried rice made from yesterday's rice. Yesterday's rice is actually better for fried rice, because the grains have dried a little in the refri",
+"c": "SecretCard",
+"props": {
+"n": "10",
+"title": "Fried rice from cold rice",
+"label": "SECRET",
+"k": "t22_sushi_shine"
+}
+},
+{
+"a": 943.753,
+"b": 946.627,
+"k": "img/sachiko4/t31_reheat_check.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 946.627,
+"b": 949.593,
+"k": "img/sachiko4/t31_reheat_check.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 949.593,
+"b": 952.513,
+"k": "img/sachiko4/t31_reheat_check.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 952.513,
+"b": 955.413,
+"k": "img/sachiko4/t31_reheat_check.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 955.413,
+"b": 958.633,
+"k": "img/sachiko4/s21_taste_spoon.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 958.633,
+"b": 962.033,
+"k": "img/sachiko4/s21_taste_spoon.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 962.033,
+"b": 965.393,
+"k": "img/sachiko4/s21_taste_spoon.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 965.393,
+"b": 968.893,
+"k": "img/sachiko4/t36_rice_cool_tray.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 968.893,
+"b": 972.593,
+"k": "img/sachiko4/t36_rice_cool_tray.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 972.593,
+"b": 976.073,
+"k": "img/sachiko4/t36_rice_cool_tray.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 976.073,
+"b": 979.153,
+"k": "img/sachiko4/t38_fridge_container.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 979.153,
+"b": 981.827,
+"k": "img/sachiko4/t38_fridge_container.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 981.827,
+"b": 984.647,
+"k": "img/sachiko4/t38_fridge_container.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 984.647,
+"b": 987.687,
+"k": "img/sachiko4/t25_onigiri_salt.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 987.687,
+"b": 990.407,
+"k": "img/sachiko4/t25_onigiri_salt.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 990.407,
+"b": 993.407,
+"k": "img/sachiko4/t25_onigiri_salt.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 993.407,
+"b": 996.347,
+"k": "img/sachiko4/s18_spread_tray.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 996.347,
+"b": 999.287,
+"k": "img/sachiko4/s18_spread_tray.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 999.287,
+"b": 1003.707,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1003.707,
+"b": 1005.987,
+"k": "img/sachiko4/t33_mushy_spread.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+],
+"dx": 120
+},
+{
+"a": 1005.987,
+"b": 1009.687,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1009.687,
+"b": 1022.907,
+"k": "c14_porridge_pot",
+"tin": "cut",
+"tout": "cut",
+"txt": "Now let us talk about what goes wrong, because it will go wrong, and it is not you. Let us start with the most common one. Your rice comes out wet and mushy at ",
+"c": "MistakeStamp",
+"props": {
+"txt": "IT IS NOT YOU",
+"at2": 1014.73,
+"k": "c14_porridge_pot"
+}
+},
+{
+"a": 1022.907,
+"b": 1032.713,
+"k": "c16_sink_water",
+"tin": "cut",
+"tout": "cut",
+"txt": "If it comes out mushy, it was too much water, or the rice was not drained well after soaking, or the lid was lifted during cooking. It is not you.",
+"c": "MistakeStamp",
+"props": {
+"txt": "IT IS NOT YOU",
+"at2": 1032.15,
+"k": "c16_sink_water"
+}
+},
+{
+"a": 1032.713,
+"b": 1035.64,
+"k": "img/sachiko4/t33_mushy_spread.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1035.64,
+"b": 1038.22,
+"k": "img/sachiko4/t33_mushy_spread.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1038.22,
+"b": 1041.04,
+"k": "img/sachiko4/t33_mushy_spread.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1041.04,
+"b": 1044.02,
+"k": "img/sachiko4/t33_mushy_spread.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1044.02,
+"b": 1046.82,
+"k": "img/sachiko4/o28_sushi_fan_paper.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1046.82,
+"b": 1049.52,
+"k": "img/sachiko4/o28_sushi_fan_paper.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1049.52,
+"b": 1052.513,
+"k": "img/sachiko4/o28_sushi_fan_paper.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1052.513,
+"b": 1055.173,
+"k": "img/sachiko4/o28_sushi_fan_paper.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1055.173,
+"b": 1063.8,
+"k": "t37_thermo_check",
+"tin": "cut",
+"tout": "cut",
+"txt": "Just let the air do the work. The second problem is the opposite. The rice is hard in the middle, with a little white dot in each grain.",
+"c": "MistakeStamp",
+"props": {
+"txt": "WATCH OUT",
+"at2": 1058.08,
+"k": "t37_thermo_check"
+}
+},
+{
+"a": 1063.8,
+"b": 1066.84,
+"k": "img/sachiko4/t11_finger_line.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1066.84,
+"b": 1069.94,
+"k": "img/sachiko4/t11_finger_line.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1069.94,
+"b": 1072.8,
+"k": "img/sachiko4/t11_finger_line.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1072.8,
+"b": 1076.173,
+"k": "img/sachiko4/t11_finger_line.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1076.173,
+"b": 1079.073,
+"k": "img/sachiko4/t18_rest_towel.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1079.073,
+"b": 1082.353,
+"k": "img/sachiko4/t18_rest_towel.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1082.353,
+"b": 1085.193,
+"k": "img/sachiko4/t18_rest_towel.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1085.193,
+"b": 1088.173,
+"k": "img/sachiko4/t18_rest_towel.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1088.173,
+"b": 1098.653,
+"k": "t35_burnt_bottom",
+"tin": "cut",
+"tout": "cut",
+"txt": "The grains will soften, and the hard center will go away. The third problem is the burnt bottom, the crust we call okoge in Japanese. Some people love it.",
+"c": "NameCard",
+"props": {
+"word": "okoge",
+"gloss": "the crust at the bottom",
+"name": 1095.61,
+"glossAt": 1097.11,
+"k": "t35_burnt_bottom"
+}
+},
+{
+"a": 1098.653,
+"b": 1102.053,
+"k": "img/sachiko4/s20_microwave_towel.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1102.053,
+"b": 1105.393,
+"k": "img/sachiko4/s20_microwave_towel.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1105.393,
+"b": 1108.773,
+"k": "img/sachiko4/s20_microwave_towel.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1108.773,
+"b": 1112.167,
+"k": "img/sachiko4/o25_pot_crust.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1112.167,
+"b": 1115.447,
+"k": "img/sachiko4/o25_pot_crust.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1115.447,
+"b": 1118.707,
+"k": "img/sachiko4/o25_pot_crust.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1118.707,
+"b": 1121.867,
+"k": "img/sachiko4/o25_pot_crust.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1121.867,
+"b": 1124.213,
+"k": "img/sachiko4/t42_rice_sides_bag.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1124.213,
+"b": 1126.853,
+"k": "img/sachiko4/t42_rice_sides_bag.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1126.853,
+"b": 1130.873,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1130.873,
+"b": 1133.147,
+"k": "img/sachiko4/o12_damp_towel_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+],
+"dx": 120
+},
+{
+"a": 1133.147,
+"b": 1136.847,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1136.847,
+"b": 1147.713,
+"k": "t45_notebook_safety",
+"tin": "cut",
+"tout": "cut",
+"txt": "Throw it away. Do not taste it to be sure. Your nose and your eyes are enough. A good rule is that rice that looks or smells wrong is not worth any risk.",
+"c": "MistakeStamp",
+"props": {
+"txt": "WATCH OUT",
+"at2": 1127.45,
+"k": "t45_notebook_safety"
+}
+},
+{
+"a": 1147.713,
+"b": 1157.343,
+"k": "o05_water_line_mark",
+"tin": "cut",
+"tout": "cut",
+"txt": "The fifth problem is the reheated rice that comes out dry and hard. This happens when the rice sat in the refrigerator and then was heated with no water.",
+"c": "MistakeStamp",
+"props": {
+"txt": "WATCH OUT",
+"at2": 1148.61,
+"k": "o05_water_line_mark"
+}
+},
+{
+"a": 1157.343,
+"b": 1160.177,
+"k": "img/sachiko4/o12_damp_towel_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1160.177,
+"b": 1162.883,
+"k": "img/sachiko4/o12_damp_towel_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1162.883,
+"b": 1165.783,
+"k": "img/sachiko4/o12_damp_towel_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1165.783,
+"b": 1168.483,
+"k": "img/sachiko4/o12_damp_towel_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1168.483,
+"b": 1171.603,
+"k": "img/sachiko4/t17_paddle_edge.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1171.603,
+"b": 1174.563,
+"k": "img/sachiko4/t17_paddle_edge.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1174.563,
+"b": 1177.757,
+"k": "img/sachiko4/t17_paddle_edge.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1177.757,
+"b": 1180.477,
+"k": "img/sachiko4/o17_rice_bag_floor.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1180.477,
+"b": 1183.077,
+"k": "img/sachiko4/o17_rice_bag_floor.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1183.077,
+"b": 1185.997,
+"k": "img/sachiko4/o17_rice_bag_floor.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1185.997,
+"b": 1188.77,
+"k": "img/sachiko4/o17_rice_bag_floor.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1188.77,
+"b": 1191.343,
+"k": "img/sachiko4/s35_check_bottom.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1191.343,
+"b": 1194.19,
+"k": "img/sachiko4/s35_check_bottom.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1194.19,
+"b": 1196.79,
+"k": "img/sachiko4/s35_check_bottom.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1196.79,
+"b": 1200.051,
+"k": "img/sachiko4/c05_thermometer_dial.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1200.051,
+"b": 1203.443,
+"k": "img/sachiko4/c05_thermometer_dial.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1203.443,
+"b": 1206.337,
+"k": "img/sachiko4/c05_thermometer_dial.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1206.337,
+"b": 1216.643,
+"k": "o24_tray_rice_dish",
+"tin": "cut",
+"tout": "cut",
+"txt": "If you do not, use your eyes and make sure the middle is steaming. The sixth problem is the one people never expect. Rice tastes too bland.",
+"c": "MistakeStamp",
+"props": {
+"txt": "WATCH OUT",
+"at2": 1212.28,
+"k": "o24_tray_rice_dish"
+}
+},
+{
+"a": 1216.643,
+"b": 1219.483,
+"k": "img/sachiko4/o29_salt_dish.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1219.483,
+"b": 1221.983,
+"k": "img/sachiko4/o29_salt_dish.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1221.983,
+"b": 1224.883,
+"k": "img/sachiko4/o29_salt_dish.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1224.883,
+"b": 1227.623,
+"k": "img/sachiko4/o29_salt_dish.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1227.623,
+"b": 1230.443,
+"k": "img/sachiko4/o06_measure_cup.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1230.443,
+"b": 1233.323,
+"k": "img/sachiko4/o06_measure_cup.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1233.323,
+"b": 1235.863,
+"k": "img/sachiko4/o06_measure_cup.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1235.863,
+"b": 1238.677,
+"k": "img/sachiko4/o06_measure_cup.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1238.677,
+"b": 1241.47,
+"k": "img/sachiko4/s22_notebook_write.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1241.47,
+"b": 1243.83,
+"k": "img/sachiko4/s22_notebook_write.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1243.83,
+"b": 1246.85,
+"k": "img/sachiko4/s22_notebook_write.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1246.85,
+"b": 1249.51,
+"k": "img/sachiko4/s22_notebook_write.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1249.51,
+"b": 1252.943,
+"k": "img/sachiko4/m11_old_letter.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1252.943,
+"b": 1256.163,
+"k": "img/sachiko4/m11_old_letter.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1256.163,
+"b": 1259.583,
+"k": "img/sachiko4/m11_old_letter.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1259.583,
+"b": 1262.883,
+"k": "img/sachiko4/m11_old_letter.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1262.883,
+"b": 1265.71,
+"k": "img/sachiko4/s24_point_bag.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1265.71,
+"b": 1268.59,
+"k": "img/sachiko4/s24_point_bag.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1268.59,
+"b": 1271.217,
+"k": "img/sachiko4/s24_point_bag.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1271.217,
+"b": 1274.057,
+"k": "img/sachiko4/s24_point_bag.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1274.057,
+"b": 1277.377,
+"k": "img/sachiko4/o09_sushi_tub_grain.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1277.377,
+"b": 1280.603,
+"k": "img/sachiko4/o09_sushi_tub_grain.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1280.603,
+"b": 1283.623,
+"k": "img/sachiko4/o09_sushi_tub_grain.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1283.623,
+"b": 1286.963,
+"k": "img/sachiko4/o09_sushi_tub_grain.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1286.963,
+"b": 1289.53,
+"k": "img/sachiko4/s25_sink_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1289.53,
+"b": 1292.523,
+"k": "img/sachiko4/s25_sink_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1292.523,
+"b": 1295.25,
+"k": "img/sachiko4/s25_sink_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1295.25,
+"b": 1297.99,
+"k": "img/sachiko4/s25_sink_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1297.99,
+"b": 1300.677,
+"k": "img/sachiko4/s28_tap_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1300.677,
+"b": 1303.183,
+"k": "img/sachiko4/s28_tap_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1303.183,
+"b": 1305.863,
+"k": "img/sachiko4/s28_tap_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1305.863,
+"b": 1309.197,
+"k": "img/sachiko4/s29_wash_tub.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1309.197,
+"b": 1313.017,
+"k": "img/sachiko4/s29_wash_tub.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1313.017,
+"b": 1316.297,
+"k": "img/sachiko4/s29_wash_tub.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1316.297,
+"b": 1319.457,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/he_349.mp4",
+"ofs": 0.0,
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+}
+},
+{
+"a": 1319.457,
+"b": 1322.297,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/he_349.mp4",
+"ofs": 3.16,
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1322.297,
+"b": 1325.843,
+"k": "img/sachiko4/c20_cutting_board.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1325.843,
+"b": 1329.683,
+"k": "img/sachiko4/c20_cutting_board.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1329.683,
+"b": 1333.137,
+"k": "img/sachiko4/c20_cutting_board.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1333.137,
+"b": 1336.597,
+"k": "img/sachiko4/c20_cutting_board.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1336.597,
+"b": 1340.217,
+"k": "img/sachiko4/c20_cutting_board.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1340.217,
+"b": 1343.077,
+"k": "img/sachiko4/s31_serve_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1343.077,
+"b": 1346.117,
+"k": "img/sachiko4/s31_serve_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1346.117,
+"b": 1348.957,
+"k": "img/sachiko4/s31_serve_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1348.957,
+"b": 1361.297,
+"k": "s33_ginger_grate",
+"tin": "cut",
+"tout": "cut",
+"txt": "Number eleven is the one I want you to remember every day, so listen carefully. Cooked rice can carry a germ called Bacillus cereus. This is a common bacterium ",
+"c": "SecretCard",
+"props": {
+"n": "11",
+"title": "Cool it within one hour",
+"label": "SECRET",
+"k": "s33_ginger_grate"
+}
+},
+{
+"a": 1361.297,
+"b": 1364.143,
+"k": "img/sachiko4/s34_shake_container.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1364.143,
+"b": 1367.41,
+"k": "img/sachiko4/s34_shake_container.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1367.41,
+"b": 1369.83,
+"k": "img/sachiko4/s34_shake_container.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1369.83,
+"b": 1373.01,
+"k": "img/sachiko4/s34_shake_container.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1373.01,
+"b": 1375.99,
+"k": "img/sachiko4/s34_shake_container.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1375.99,
+"b": 1380.25,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1380.25,
+"b": 1382.857,
+"k": "img/sachiko4/t30_reheat_towel.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+],
+"dx": -120
+},
+{
+"a": 1382.857,
+"b": 1385.737,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1385.737,
+"b": 1398.59,
+"k": "s38_grandson_phone",
+"tin": "cut",
+"tout": "cut",
+"txt": "Do not leave it in the big pot on the stove, and do not leave it on the counter while you eat dinner and talk for two hours. Keep the rice in the refrigerator a",
+"c": "InfoCard",
+"props": {
+"head": "SAFETY RULE",
+"lines": [
+"Cool within 1 hour",
+"Refrigerate",
+"Reheat until steaming"
+],
+"k": "s38_grandson_phone"
+}
+},
+{
+"a": 1398.59,
+"b": 1401.37,
+"k": "img/sachiko4/t30_reheat_towel.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1401.37,
+"b": 1404.03,
+"k": "img/sachiko4/t30_reheat_towel.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1404.03,
+"b": 1407.03,
+"k": "img/sachiko4/t30_reheat_towel.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1407.03,
+"b": 1409.65,
+"k": "img/sachiko4/t30_reheat_towel.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1409.65,
+"b": 1412.69,
+"k": "img/sachiko4/s40_window_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1412.69,
+"b": 1415.83,
+"k": "img/sachiko4/s40_window_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1415.83,
+"b": 1418.73,
+"k": "img/sachiko4/s40_window_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1418.73,
+"b": 1421.73,
+"k": "img/sachiko4/c17_window_morning.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1421.73,
+"b": 1424.57,
+"k": "img/sachiko4/c17_window_morning.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1424.57,
+"b": 1427.583,
+"k": "img/sachiko4/c17_window_morning.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1427.583,
+"b": 1430.49,
+"k": "img/sachiko4/c17_window_morning.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1430.49,
+"b": 1435.043,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1435.043,
+"b": 1437.623,
+"k": "img/sachiko4/t43_receipt_math.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1437.623,
+"b": 1441.343,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1441.343,
+"b": 1452.25,
+"k": "c19_receipts_pile",
+"tin": "cut",
+"tout": "cut",
+"txt": "The assumption: one rice side a week, from a takeout or restaurant, about six dollars each. That is fifty two sides in a year. Check it against your own receipt",
+"c": "SecretCard",
+"props": {
+"n": "4",
+"title": "Saves three hundred dollars",
+"label": "SECRET",
+"k": "c19_receipts_pile"
+}
+},
+{
+"a": 1452.25,
+"b": 1455.49,
+"k": "img/sachiko4/t43_receipt_math.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1455.49,
+"b": 1458.75,
+"k": "img/sachiko4/t43_receipt_math.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1458.75,
+"b": 1461.81,
+"k": "img/sachiko4/t43_receipt_math.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1461.81,
+"b": 1465.11,
+"k": "img/sachiko4/t43_receipt_math.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1465.11,
+"b": 1468.123,
+"k": "img/sachiko4/c08_noren_door.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1468.123,
+"b": 1470.843,
+"k": "img/sachiko4/c08_noren_door.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1470.843,
+"b": 1473.883,
+"k": "img/sachiko4/c08_noren_door.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1473.883,
+"b": 1485.303,
+"k": "c09_umeboshi_jars",
+"tin": "cut",
+"tout": "cut",
+"txt": "Your costs depend on where you live, and on the price of the bag, so please check your own numbers. Here is the simple math. Fifty two sides cost three hundred ",
+"c": "CostTag",
+"props": {
+"price": "$312",
+"sub": "takeout rice sides, one year",
+"vs": {
+"price": "$15.60",
+"txt": "home rice, one year",
+"t": 1486.44
+},
+"k": "c09_umeboshi_jars"
+}
+},
+{
+"a": 1485.303,
+"b": 1488.123,
+"k": "img/sachiko4/c11_fridge_container.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1488.123,
+"b": 1490.823,
+"k": "img/sachiko4/c11_fridge_container.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1490.823,
+"b": 1493.783,
+"k": "img/sachiko4/c11_fridge_container.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1493.783,
+"b": 1496.383,
+"k": "img/sachiko4/c11_fridge_container.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1496.383,
+"b": 1499.163,
+"k": "img/sachiko4/t44_weekly_plan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1499.163,
+"b": 1501.957,
+"k": "img/sachiko4/t44_weekly_plan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1501.957,
+"b": 1504.577,
+"k": "img/sachiko4/t44_weekly_plan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1504.577,
+"b": 1507.517,
+"k": "img/sachiko4/t44_weekly_plan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1507.517,
+"b": 1510.517,
+"k": "img/sachiko4/c12_damp_towel.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1510.517,
+"b": 1513.417,
+"k": "img/sachiko4/c12_damp_towel.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1513.417,
+"b": 1516.337,
+"k": "img/sachiko4/c12_damp_towel.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1516.337,
+"b": 1519.377,
+"k": "img/sachiko4/c12_damp_towel.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1519.377,
+"b": 1522.697,
+"k": "img/sachiko4/c18_notebook_recipe.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1522.697,
+"b": 1526.063,
+"k": "img/sachiko4/c18_notebook_recipe.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1526.063,
+"b": 1529.463,
+"k": "img/sachiko4/c18_notebook_recipe.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1529.463,
+"b": 1532.403,
+"k": "img/sachiko4/o02_rinse_cloudy.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1532.403,
+"b": 1535.243,
+"k": "img/sachiko4/o02_rinse_cloudy.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1535.243,
+"b": 1538.103,
+"k": "img/sachiko4/o02_rinse_cloudy.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1538.103,
+"b": 1541.103,
+"k": "img/sachiko4/o02_rinse_cloudy.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1541.103,
+"b": 1543.957,
+"k": "img/sachiko4/o11_onigiri_plate.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1543.957,
+"b": 1546.557,
+"k": "img/sachiko4/o11_onigiri_plate.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1546.557,
+"b": 1549.483,
+"k": "img/sachiko4/o11_onigiri_plate.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1549.483,
+"b": 1552.283,
+"k": "img/sachiko4/o11_onigiri_plate.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1552.283,
+"b": 1554.963,
+"k": "img/sachiko4/t19_sushi_tub.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1554.963,
+"b": 1557.903,
+"k": "img/sachiko4/t19_sushi_tub.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1557.903,
+"b": 1560.823,
+"k": "img/sachiko4/t19_sushi_tub.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1560.823,
+"b": 1563.443,
+"k": "img/sachiko4/t19_sushi_tub.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1563.443,
+"b": 1566.283,
+"k": "img/sachiko4/t48_bowl_both_hands.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1566.283,
+"b": 1569.223,
+"k": "img/sachiko4/t48_bowl_both_hands.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1569.223,
+"b": 1572.177,
+"k": "img/sachiko4/t48_bowl_both_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1572.177,
+"b": 1575.017,
+"k": "img/sachiko4/t48_bowl_both_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1575.017,
+"b": 1577.743,
+"k": "img/sachiko4/m08_restaurant_back.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1577.743,
+"b": 1580.643,
+"k": "img/sachiko4/m08_restaurant_back.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1580.643,
+"b": 1583.263,
+"k": "img/sachiko4/m08_restaurant_back.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1583.263,
+"b": 1585.983,
+"k": "img/sachiko4/m08_restaurant_back.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1585.983,
+"b": 1590.503,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1590.503,
+"b": 1593.063,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/rest_a.mp4",
+"ofs": 0.22,
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+}
+},
+{
+"a": 1593.063,
+"b": 1597.283,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1597.283,
+"b": 1600.103,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/rest_a.mp4",
+"ofs": 0.0,
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+}
+},
+{
+"a": 1600.103,
+"b": 1603.283,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/rest_a.mp4",
+"ofs": 2.82,
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+}
+},
+{
+"a": 1603.283,
+"b": 1606.63,
+"k": "img/sachiko4/t46_rain_window.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1606.63,
+"b": 1610.097,
+"k": "img/sachiko4/t46_rain_window.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1610.097,
+"b": 1613.517,
+"k": "img/sachiko4/t46_rain_window.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1613.517,
+"b": 1616.83,
+"k": "img/sachiko4/t46_rain_window.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1616.83,
+"b": 1620.21,
+"k": "img/sachiko4/t46_rain_window.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1620.21,
+"b": 1623.15,
+"k": "img/sachiko4/o04_soak_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1623.15,
+"b": 1626.17,
+"k": "img/sachiko4/o04_soak_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1626.17,
+"b": 1629.01,
+"k": "img/sachiko4/o04_soak_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1629.01,
+"b": 1632.37,
+"k": "img/sachiko4/t49_nod_quiet.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1632.37,
+"b": 1635.77,
+"k": "img/sachiko4/t49_nod_quiet.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1635.77,
+"b": 1639.07,
+"k": "img/sachiko4/t49_nod_quiet.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1639.07,
+"b": 1642.21,
+"k": "img/sachiko4/o07_timer_kitchen.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1642.21,
+"b": 1645.27,
+"k": "img/sachiko4/o07_timer_kitchen.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1645.27,
+"b": 1648.49,
+"k": "img/sachiko4/o07_timer_kitchen.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1648.49,
+"b": 1651.637,
+"k": "img/sachiko4/o07_timer_kitchen.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1651.637,
+"b": 1654.997,
+"k": "img/sachiko4/o03_rinse_clear.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1654.997,
+"b": 1658.197,
+"k": "img/sachiko4/o03_rinse_clear.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1658.197,
+"b": 1661.71,
+"k": "img/sachiko4/o03_rinse_clear.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1661.71,
+"b": 1664.77,
+"k": "img/sachiko4/o03_rinse_clear.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1664.77,
+"b": 1668.01,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/km_214.mp4",
+"ofs": 0.0,
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+}
+},
+{
+"a": 1668.01,
+"b": 1670.77,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "clips/sachiko4/km_214.mp4",
+"ofs": 3.24,
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+}
+},
+{
+"a": 1670.77,
+"b": 1673.89,
+"k": "img/sachiko4/t50_grandson_watch.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1673.89,
+"b": 1676.69,
+"k": "img/sachiko4/t50_grandson_watch.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1676.69,
+"b": 1679.703,
+"k": "img/sachiko4/t50_grandson_watch.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1679.703,
+"b": 1682.743,
+"k": "img/sachiko4/t50_grandson_watch.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1682.743,
+"b": 1685.843,
+"k": "img/sachiko4/t50_grandson_watch.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1685.843,
+"b": 1689.063,
+"k": "img/sachiko4/o08_shamoji_wood.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1689.063,
+"b": 1692.583,
+"k": "img/sachiko4/o08_shamoji_wood.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1692.583,
+"b": 1695.843,
+"k": "img/sachiko4/o08_shamoji_wood.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1695.843,
+"b": 1698.93,
+"k": "img/sachiko4/o18_kitchen_window.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1698.93,
+"b": 1702.13,
+"k": "img/sachiko4/o18_kitchen_window.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1702.13,
+"b": 1705.17,
+"k": "img/sachiko4/o18_kitchen_window.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1705.17,
+"b": 1708.19,
+"k": "img/sachiko4/o18_kitchen_window.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1708.19,
+"b": 1710.223,
+"k": "img/sachiko4/o13_microwave_inside.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1710.223,
+"b": 1712.663,
+"k": "img/sachiko4/o13_microwave_inside.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1712.663,
+"b": 1716.083,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1716.083,
+"b": 1718.603,
+"k": "img/sachiko4/o15_fridge_shelf.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1718.603,
+"b": 1721.363,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1721.363,
+"b": 1734.057,
+"k": "o14_probe_thermometer",
+"tin": "cut",
+"tout": "cut",
+"txt": "Number two, soak it for at least thirty minutes, and an hour in the cold months. Number three, use the water line, or one cup of rice to about one and one fifth",
+"c": "InfoCard",
+"props": {
+"head": "THE RECAP",
+"lines": [
+"1 Wash",
+"2 Soak",
+"3 Measure water",
+"4 Save $300 a year"
+],
+"k": "o14_probe_thermometer"
+}
+},
+{
+"a": 1734.057,
+"b": 1736.683,
+"k": "img/sachiko4/o15_fridge_shelf.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1736.683,
+"b": 1739.79,
+"k": "img/sachiko4/o15_fridge_shelf.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1739.79,
+"b": 1742.73,
+"k": "img/sachiko4/o15_fridge_shelf.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1742.73,
+"b": 1745.37,
+"k": "img/sachiko4/o15_fridge_shelf.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1745.37,
+"b": 1748.503,
+"k": "img/sachiko4/o19_rain_glass.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1748.503,
+"b": 1751.863,
+"k": "img/sachiko4/o19_rain_glass.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1751.863,
+"b": 1754.943,
+"k": "img/sachiko4/o19_rain_glass.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1754.943,
+"b": 1758.137,
+"k": "img/sachiko4/o20_wall_clock.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1758.137,
+"b": 1760.917,
+"k": "img/sachiko4/o20_wall_clock.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1760.917,
+"b": 1763.697,
+"k": "img/sachiko4/o20_wall_clock.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1763.697,
+"b": 1766.917,
+"k": "img/sachiko4/o20_wall_clock.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1766.917,
+"b": 1770.31,
+"k": "img/sachiko4/o21_notebook_pencil.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1770.31,
+"b": 1773.603,
+"k": "img/sachiko4/o21_notebook_pencil.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1773.603,
+"b": 1777.177,
+"k": "img/sachiko4/o21_notebook_pencil.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1777.177,
+"b": 1781.19,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1781.19,
+"b": 1783.41,
+"k": "img/sachiko4/o22_receipts_pencil.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1783.41,
+"b": 1786.83,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1786.83,
+"b": 1790.257,
+"k": "img/sachiko4/o22_receipts_pencil.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1790.257,
+"b": 1793.777,
+"k": "img/sachiko4/o22_receipts_pencil.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1793.777,
+"b": 1797.397,
+"k": "img/sachiko4/o22_receipts_pencil.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1797.397,
+"b": 1800.717,
+"k": "img/sachiko4/o22_receipts_pencil.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1800.717,
+"b": 1803.797,
+"k": "img/sachiko4/o23_calendar_pin.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1803.797,
+"b": 1807.117,
+"k": "img/sachiko4/o23_calendar_pin.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1807.117,
+"b": 1810.643,
+"k": "img/sachiko4/o23_calendar_pin.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1810.643,
+"b": 1814.063,
+"k": "img/sachiko4/m07_family_table.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1814.063,
+"b": 1817.823,
+"k": "img/sachiko4/m07_family_table.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1817.823,
+"b": 1821.143,
+"k": "img/sachiko4/m07_family_table.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1821.143,
+"b": 1836.503,
+"k": "o30_vinegar_bottle",
+"tin": "cut",
+"tout": "cut",
+"txt": "Next time, I will show you my mother's stone-roast trick for sweet potatoes. Slow heat, and they taste like candy. It is so simple that you will laugh at how lo",
+"c": "Thumb",
+"props": {
+"thumb": "thumb",
+"tag": "NEXT VIDEO",
+"words": [
+[
+"99%",
+1823.46
+],
+[
+"Sweet",
+1827.46
+]
+],
+"k": "o30_vinegar_bottle"
+}
+},
+{
+"a": 1836.503,
+"b": 1840.423,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1840.423,
+"b": 1842.683,
+"k": "img/sachiko4/m02_market_fish.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1842.683,
+"b": 1846.023,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1846.023,
+"b": 1850.07,
+"k": "img/sachiko4/m02_market_fish.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+}
+]
 }
