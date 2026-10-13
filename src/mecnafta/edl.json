@@ -4,7 +4,7 @@
    "s": 0.0,
    "e": 4.0,
    "k": "L",
-   "src": "l_hook_pistola"
+   "src": "th_card"
   },
   {
    "s": 4.0,
@@ -181,7 +181,7 @@
    "s": 214.28,
    "e": 220.85,
    "k": "L",
-   "src": "l_cuatro_rueda"
+   "src": "l_cuatro_mano_bajo"
   },
   {
    "s": 220.85,
@@ -382,7 +382,7 @@
    "s": 450.23333333333335,
    "e": 456.6366666666667,
    "k": "L",
-   "src": "l_habito_libreta_2"
+   "src": "l_habito_taller_ventana"
   },
   {
    "s": 456.63666666666666,
@@ -457,7 +457,7 @@
    "s": 535.5766666666666,
    "e": 541.92,
    "k": "L",
-   "src": "l_historia_libreta"
+   "src": "l_tres_spray"
   },
   {
    "s": 541.92,
@@ -507,7 +507,7 @@
    "s": 587.5033333333333,
    "e": 593.94,
    "k": "L",
-   "src": "l_hook_pistola"
+   "src": "l_cierre_trapo"
   },
   {
    "s": 593.94,
@@ -545,7 +545,7 @@
    "s": 627.27,
    "e": 633.68,
    "k": "L",
-   "src": "l_medir_gasolina"
+   "src": "l_uno_costado"
   },
   {
    "s": 633.68,
@@ -651,7 +651,7 @@
    "s": 738.3,
    "e": 744.8599999999999,
    "k": "L",
-   "src": "l_promesa_lista"
+   "src": "l_cinco_porta_manos"
   },
   {
    "s": 744.86,
