@@ -1,11 +1,11 @@
-// sachiko1 (desde ckeggs) · base del kit (Claude, 11-oct-2026): utilidades de cltoilet/yo1/Min1 adaptadas (2 reels de avatar, clips foto3d, archivo real).
+// Sachiko's Kitchen · KIT COMPARTIDO (src/sachiko/, desde sachiko1). Cada video llama configure({ slug, av }) en su index ANTES de registrar la composición.
+// Fotos: img("clave") → public/img/<slug>/clave.png · img("ruta/con/barra.jpg") → tal cual. Grano compartido: public/img/sachiko/_st/grain.png.
 // Todo función pura del frame. Tiempos en SEGUNDOS del video final (= voz recortada).
 // Capas por plano: placa (foto/clip con cámara) → grade → anotaciones que viven DENTRO del encuadre → grano.
 // Componentes: fondo continuo (un solo plano), materia real adentro, texto entre capas, salida por cámara (match/zoom), nunca pop.
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame } from "remotion";
-import { SERIF, LABEL, HAND } from "../claudio/ClTheme";
-import AV from "./avwin.json";
+import { SERIF, LABEL, HAND } from "./Theme";
 export { SERIF, LABEL, HAND };
 
 export const FPS = 30;
@@ -14,24 +14,25 @@ export const cl = (x: number) => (x < 0 ? 0 : x > 1 ? 1 : x);
 export const ez = (x: number) => { const t = cl(x); return t * t * (3 - 2 * t); };
 export const eo = (x: number) => 1 - Math.pow(1 - cl(x), 3);
 export const lin = (f: number, a: number, b: number, v0: number, v1: number, e = ez) => v0 + (v1 - v0) * e((f - a) / Math.max(1, b - a));
-export const img = (k: string) => staticFile(k.includes("/") ? k : `img/sachiko1/${k}.png`);
+// ── configuración por video (la llama src/index_<slug>.tsx) ──
+type Win = { ms: number; me: number; off: number; reel: number; pieces: [number, number][] };
+let SLUG = "sachiko";
+let WINS: Win[] = [];
+export const configure = (o: { slug: string; av?: { win: Win[] } }) => { SLUG = o.slug; WINS = (o.av && o.av.win) || []; };
+export const slug = () => SLUG;
+export const img = (k: string) => staticFile(k.includes("/") ? k : `img/${SLUG}/${k}.png`);
 export const C = { porc: "#FBF8F2", ink: "#2B2620", inkSoft: "#6B6257", sage: "#4E7A50", lilac: "#E8B84A", lilacDeep: "#2D4778", red: "#C0392B", cream: "#F6EEDC", shadow: "rgba(30,20,10,0.45)" };
 
-// ── avatar: 2 reels pagados (<=235 s c/u): para un segundo del video, qué reel y en qué segundo ──
-type Win = { ms: number; me: number; off: number; reel: number; pieces: [number, number][] };
-const WINS = (AV as any).win as Win[];
+// ── avatar: reel(s) pagado(s) (avwin.json del video): para un segundo del video, qué reel y en qué segundo ──
 export const avWin = (t: number) => WINS.find((x) => x.pieces.some((p) => t >= p[0] - 0.05 && t <= p[1] + 0.05)) || WINS.reduce((m, x) => (Math.abs(x.ms - t) < Math.abs(m.ms - t) ? x : m), WINS[0]);
 export const avAt = (t: number) => { const w = avWin(t); return w.off + (t - w.ms); };
-export const avSrc = (t: number) => staticFile(`av/reel${avWin(t).reel}.mp4`);
+export const avSrc = (t: number) => staticFile(`av/${SLUG}/reel${avWin(t).reel}.mp4`);
 
 // ── capas comunes ──
-export const Grain: React.FC = () => (
-  <AbsoluteFill style={{ pointerEvents: "none", backgroundImage: `url(${staticFile("img/sachiko1/_st/grain.png")})`, backgroundRepeat: "repeat", opacity: 0.06, mixBlendMode: "overlay" }} />
-);
-export const Grade: React.FC<{ warm?: number; vig?: number }> = ({ warm = 1, vig = 0.32 }) => (
-  <AbsoluteFill style={{ pointerEvents: "none", background:
-    `linear-gradient(180deg, rgba(255,236,200,${0.08 * warm}) 0%, rgba(255,236,200,0) 40%, rgba(24,18,36,0.14) 100%), radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 55%, rgba(14,10,22,${vig}) 100%)` }} />
-);
+// SIN FILTROS (dueño, 13-oct: "a los demás no le pongas filtros, máximo realismo"): ni grano ni grade de color/viñeta.
+// Se mantienen como componentes vacíos para no romper los imports del kit.
+export const Grain: React.FC = () => null;
+export const Grade: React.FC<{ warm?: number; vig?: number }> = () => null;
 
 // ── un plano: foto o clip con cámara (escala/foco/deriva) + transición de entrada/salida por movimiento ──
 export type Tr = "cut" | "whip" | "zoom";
@@ -61,7 +62,7 @@ export const Plate: React.FC<{ s: Shot; d: number; lead: number }> = ({ s, d, le
         {s.av ? (
           <OffthreadVideo src={avSrc(s.a)} startFrom={Math.max(0, fr(avAt(s.a)) - lead)} muted style={st} />
         ) : s.vid ? (
-          <OffthreadVideo src={staticFile(`clips/${s.k}.mp4`)} startFrom={fr(s.ofs || 0)} muted style={st} />
+          <OffthreadVideo src={staticFile(`clips/${SLUG}/${s.k}.mp4`)} startFrom={fr(s.ofs || 0)} muted style={st} />
         ) : (
           <Img src={img(s.k)} style={st} />
         )}
