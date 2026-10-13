@@ -125,7 +125,9 @@ const secciones = cfg.SECCIONES.map((s, i, arr) => ({
 const poolPorSec = {};
 for (const it of ITEMS) (poolPorSec[it.sec] ||= []).push({
   id: SLUG + '_' + it.id, lugar: it.lugar, hayClip: clipsEnDisco.has(SLUG + '_' + it.id),
-  tokens: tokensDe(it.prompt),
+  tokens: tokensDe(it.prompt), rfoto: !!it.rfoto, credit: it.credit,
+  // ⛔ una foto CON crédito sólo entra si tiene su ANCLA (la frase que ilustra): sin ancla no se usa (13-oct)
+  gastado: !!it.rfoto && !(cfg.ANCLAS_FOTO || []).some((an) => an.id === it.id),
 });
 let nReal = 0;
 for (const it of REAL) {
@@ -222,14 +224,19 @@ for (const sec of secciones) {
         // ⭐ el metraje REAL gana los empates: es el 25 % que la vara del pipeline exige y es lo
         //    único del pool que no lo dibujó una máquina.
         const mejorDe = (cands) => cands
-          .map((c) => ({ c, s: puntaje(sust, c.tokens) + (c.real ? REAL_BONUS : 0) }))
+          .map((c) => ({ c, s: puntaje(sust, c.tokens) + ((c.real || c.rfoto) ? REAL_BONUS : 0) }))
           .sort((a, b) => b.s - a.s)[0]?.c;
-        const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id));
+        // ⭐ ANCLA DE FOTO CON CRÉDITO (13-oct): una foto real va en la FRASE que ilustra (cfg.ANCLAS_FOTO = [{id, phrase}]).
+        //    Si esa frase cae dentro de esta ventana y la foto aún no se usó, se fuerza. Nada de puntaje por palabras.
+        const anclaHit = (cfg.ANCLAS_FOTO || []).find((an) => !an._usada && an.t >= t - 0.01 && an.t < t + (esc[(k - 1) % esc.length] || 4) && pool.some((c) => c.id === SLUG + "_" + an.id && !c.gastado));
+        if (anclaHit) { elegido = pool.find((c) => c.id === SLUG + "_" + anclaHit.id); anclaHit._usada = true; }
+        if (!elegido) { /* sin ancla: elección normal */ }
+        const libres2 = pool.filter((c) => !used.has(c.id) && !anterior.includes(c.id) && !c.gastado);
         // ⛔ un item REAL no tiene foto: sólo puede entrar en un slot de CLIP
         const soloFoto = (l) => l.filter((c) => !c.real);
         const clipOk = (c) => c.hayClip && !clipsUsados.has(c.id) && (quiereClip || (c.real && admiteReal));
         elegido = mejorDe(libres2.filter(clipOk))
-          || mejorDe(soloFoto(libres2)) || mejorDe(soloFoto(pool.filter((c) => !used.has(c.id))));
+          || mejorDe(soloFoto(libres2)) || mejorDe(soloFoto(pool.filter((c) => !used.has(c.id) && !c.gastado)));
         // ⛔ UNA SECCIÓN CORTA DE POOL SE REPITE SOLA. S6 (el dintel) tiene 7 planos para 13 slots:
         //    ciclaba los mismos siete. Cuando el propio pool no aporta NADA a la frase, se busca en
         //    TODO el pool del video el plano que sí comparta sustantivos con lo que se está diciendo
@@ -237,7 +244,7 @@ for (const sec of secciones) {
         const puntajeDe = (c) => (c ? puntaje(sust, c.tokens) : -1);
         if (puntajeDe(elegido) < 1 && sust.length) {
           const recientes = new Set(beats.slice(-14).map((b) => (b.asset || '').replace(/^.*\//, '').replace(/\.(jpg|mp4)$/, '')));
-          const global = todos.filter((c) => !recientes.has(c.id) && (c.real ? (admiteReal && !clipsUsados.has(c.id)) : (!quiereClip || (c.hayClip && !clipsUsados.has(c.id)))));
+          const global = todos.filter((c) => !c.gastado && !recientes.has(c.id) && (c.real ? (admiteReal && !clipsUsados.has(c.id)) : (!quiereClip || (c.hayClip && !clipsUsados.has(c.id)))));
           const g = mejorDe(global);
           if (puntajeDe(g) > puntajeDe(elegido)) elegido = g;
         }
@@ -245,6 +252,7 @@ for (const sec of secciones) {
       if (!elegido) { used.clear(); elegido = pool.filter((c) => !c.real)[0] || pool[0]; } // fix: soloFoto vivía en otro bloque
       if (!elegido) break;
       used.add(elegido.id);
+      if (elegido.rfoto) elegido.gastado = true;   // una foto con credito se usa UNA sola vez en todo el video
 
       const usaClip = elegido.hayClip && !clipsUsados.has(elegido.id) && (quiereClip || (elegido.real && admiteReal));
       if (usaClip) clipsUsados.add(elegido.id);
@@ -259,7 +267,7 @@ for (const sec of secciones) {
       if (dur < 1.2) break;
       beats.push({
         t: +t.toFixed(3), dur: +dur.toFixed(3), sec: sec.sec, lugar: elegido.lugar,
-        kind: usaClip ? 'clip' : 'imagen', real: esReal || undefined,
+        kind: usaClip ? 'clip' : 'imagen', real: esReal || (elegido.rfoto ? true : undefined), credit: elegido.rfoto ? elegido.credit : undefined,
         asset: usaClip ? `broll/${SLUG}${esReal ? '_real' : ''}/${elegido.id}.mp4` : `img/${elegido.id}.jpg`,
         rate,
       });

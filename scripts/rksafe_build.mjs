@@ -96,7 +96,7 @@ const durDe = (rel) => {
         baseB[i].dur = +(baseB[i].dur + hueco).toFixed(5);
         baseB[i].t = +(prev.t + prev.dur).toFixed(5);
         cerrados++;
-      } else sinCerrar++;
+      } else { sinCerrar++; console.log('  hueco sin cerrar en ' + prev.t.toFixed(2) + 's (' + prev.kind + ' → ' + baseB[i].kind + ') ' + hueco.toFixed(3) + ' s'); }
     }
     console.log('huecos de recorte cerrados: ' + cerrados + (sinCerrar ? ' · ⛔ SIN CERRAR ' + sinCerrar : ' ✓'));
   }
@@ -193,7 +193,9 @@ for (const b of plan.beats) {
     if (bedRel) avBeds.add(bedRel);
     nAv++;
   } else if (b.kind === 'imagen') {
-    el = `(d) => <Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} />`;
+    el = b.credit
+      ? `(d) => <><Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} /><div style={{position:'absolute',right:24,bottom:20,fontFamily:'sans-serif',fontSize:22,color:'#fff',background:'rgba(0,0,0,0.6)',padding:'4px 10px'}}>{${JSON.stringify('REAL PHOTO · ' + b.credit)}}</div></>`
+      : `(d) => <Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} />`;
   } else {
     usados.add(b.comp);
     const props = { ...b.props, t0: b.t };   // backfire: `t0` = segundo absoluto del componente (beats en palabras)

@@ -159,6 +159,7 @@ if (corre('run')) {
     const corte = Math.max(...W.map((w) => w.reel_off).filter((o) => o <= d1 - 0.3));
     if (!(corte > 0)) throw new Error(`parte1 volvió con ${d1.toFixed(1)} s y no hay borde de ventana antes`);
     console.log(`parte1 corta (cap de RunPod) → 2º /run SÓLO con la cola desde ${corte.toFixed(2)} s`);
+    if (process.env.UN_SOLO_RUN) throw new Error('⛔ UN_SOLO_RUN: parte1 volvió corta; NO se dispara un 2º /run sin permiso del director');
     execFileSync('ffmpeg', ['-v', 'error', '-y', '-ss', String(corte), '-i', rw, '-c:a', 'pcm_s16le', `${A}/cola.wav`]);
     execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', p1, '-t', String(corte), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '16', '-an', `${A}/parte1_trim.mp4`]);
     const p2 = `${A}/parte2.mp4`;
