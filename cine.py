@@ -1,3 +1,4 @@
+import os
 # cine.py — compositor de cine 2.5D para "El Tallador de Genios". Todo por código sobre capas gratis de agnes.
 # Técnicas: multiplano con paralaje, cambio de foco físico (círculo de confusión por capa), bokeh de discos,
 # cámara 3D desde mapa de profundidad, dolly-zoom (Vértigo), rayos volumétricos, polvo 3D con desenfoque,
@@ -71,6 +72,14 @@ def fbm(w, h, seed, octaves=5, base=4):
 
 def film(img, t, i, look="warm", halation=0.22, grain=0.035, weave=True, ca=1.0):
     """acabado de película"""
+    if os.environ.get("TGP_FILM") == "clean":                      # sin filtros: ni grano, ni halación, ni viñeta, ni temblor; sólo un enfoque leve
+        sm = cv2.GaussianBlur(img, (0, 0), 1.2 * S); return np.clip(img + (img - sm) * 0.35, 0, 1)
+    if os.environ.get("TGP_LOOK") == "clay":                       # Caja Naranja: maqueta de arcilla, limpio (sin halación roja ni temblor)
+        hi = np.clip(img - 0.86, 0, None); img = img + cv2.GaussianBlur(hi, (0, 0), 30 * S) * 0.25
+        img = img * np.array([1.0, 0.995, 0.985]) + np.array([0.0, 0.002, 0.008]) * (1 - img)
+        yy, xx = np.ogrid[:H, :W]; img = img * (1 - 0.10 * (((xx - W / 2) / (W / 2)) ** 2 + ((yy - H / 2) / (H / 2)) ** 2) ** 1.5)[..., None]
+        gr = cv2.resize(np.random.default_rng(i).normal(0, 1, (H // 2, W // 2)).astype(np.float32), (W, H))
+        return np.clip(img + gr[..., None] * 0.012, 0, 1)
     hi = np.clip(img - 0.78, 0, None)
     hal = cv2.GaussianBlur(hi, (0, 0), 14 * S) * np.array([1.0, 0.45, 0.25], np.float32)      # halación rojiza
     bloom = cv2.GaussianBlur(hi, (0, 0), 40 * S)

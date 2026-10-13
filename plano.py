@@ -52,7 +52,20 @@ def _plaque(name, role):
     rgb = wood * (1 - T[..., None] * 0.62) + (hi * (1 - T))[..., None] * 0.18 - (sh_ * (1 - T))[..., None] * 0.0
     rgb[:int(3 * S)] *= 1.25; rgb[-int(4 * S):] *= 0.55; rgb[:, :int(3 * S)] *= 1.2; rgb[:, -int(4 * S):] *= 0.6        # canto biselado
     return np.dstack([np.clip(rgb, 0, 1), a])
+CLAY = os.environ.get("TGP_LOOK") in ("clay", "madera")       # canal Caja Naranja: superposiciones limpias (comp7) · madera: compmad_ov
 def overlays(img, t):
+    if CLAY:
+        if os.environ.get("TGP_LOOK") == "madera":
+            import compmad_ov
+            for _w in sh.get("wk") or []:
+                if _w[1] == "__sello": sh["_sello_t"] = _w[0]
+            return compmad_ov.overlays(img, t, sh, DUR)
+        import comp7
+        for _w in sh.get("wk") or []:
+            if _w[1] == "__sello": sh["_sello_t"] = _w[0]
+        if sh.get("v8"):
+            import comp8; return comp8.overlays(img, t, sh, DUR)
+        return comp7.overlays(img, t, sh, DUR)
     if sh.get("rotulo"):
         if "rot" not in _OV: _OV["rot"] = _plaque(*sh["rotulo"])
         P = _OV["rot"]; ph, pw = P.shape[:2]; k = ramp(t, 0.35, 0.95) * (1 - ramp(t, DUR - 0.7, DUR - 0.15))
@@ -79,6 +92,8 @@ def overlays(img, t):
         band = band * (1 - tr[..., None]) + tr[..., None] * 0.92
         img = img.copy(); img[y0:y0 + bh] = img[y0:y0 + bh] * (1 - 0.92 * a_) + band * 0.92 * a_
         img = over(img, text_layer(["PULSO DE TOMÁS"], F_SC, 22, (40 * S, y0 - 30 * S), color=(235, 225, 205), alpha=0.8 * a_, shadow=True))
+    if sh.get("marca"):                                         # Caja Naranja en madera: etiqueta de fuente quemada a fuego
+        import compmad; img = compmad.marca(img, t, sh, DUR)
     if sh.get("tag"):
         if "tag" not in _OV: _OV["tag"] = text_layer([sh["tag"]], F_SC, 26, (W - 60 * S, 52 * S), color=(240, 232, 215), alpha=0.75, anchor="ra", shadow=True)
         img = over(img, _OV["tag"] * np.array([1, 1, 1, ramp(t, 0.2, 0.7)]))
@@ -159,11 +174,18 @@ def apply_fx(img, t, i, u, fx, fgbox=None, P=None, rays=None):
 def r_clip():
     src = f"{M}/clips/{sh.get('clipsrc', sid)}.mp4"
     raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", str(sh.get("ss", 0)), "-i", src, "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
-    fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); p = writer()
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); MX = sh.get("maxs", 99)
+    b2 = f"{M}/clips/{sh.get('clipsrc', sid)}__b.mp4"
+    if sh.get("v8") and os.path.exists(b2):                      # v2: continuación encadenada (clip B nace del último cuadro usado de A)
+        lim0 = min(n, int(MX * 30))
+        rb = subprocess.run(["ffmpeg", "-v", "error", "-i", b2, "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+        fb = np.frombuffer(rb, np.uint8).reshape(-1, H, W, 3)
+        fr = np.concatenate([fr[:lim0], fb[1:]]); n = len(fr); MX = 99
+    p = writer()
     for i in range(N):
         t = i / FPS
-        lim = int(sh.get("maxs", 99) * 30)
-        k = min(n - 1, lim, int((i // 2) * 2 * 30 / FPS))                 # en dos
+        lim = int(MX * 30)
+        k = min(n - 1, lim, int(t * 30) if sh.get("real") else int((i // 2) * 2 * 30 / FPS))   # archivo real: velocidad normal; agnes: "en dos"
         img = fr[k].astype(np.float32) / 255
         hold = max(0, t - (min(n, lim) - 1) / 30)                               # si el momento es más largo, empuje lento sobre el último cuadro
         z = 1 + 0.012 * t / max(DUR, 1) + 0.02 * hold
@@ -330,12 +352,18 @@ def r_open():
     de la miniatura al clip del plano 1 (sh["clip"]), que sigue "en dos" y sostiene el último cuadro con empuje."""
     th = load(f"{M}/miniatura.jpg", size=(W, H))
     if sh.get("mode") == "dissolve":
-        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f"{M}/clips/{sh['clip']}.mp4", "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
-        fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); HOLD = 0.45; X1 = 1.35; p = writer()
+        if sh.get("img"):                                             # sin clips (tgbiro): la imagen del plano 1 con un empuje lento
+            still = load(f"{M}/img/{sh['img']}.png", size=(W, H)); fr = None; n = 1; HOLD = 0.45; X1 = 1.35; p = writer()
+        else:
+            raw = subprocess.run(["ffmpeg", "-v", "error", "-i", f"{M}/clips/{sh['clip']}.mp4", "-vf", f"scale={W}:{H}", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], capture_output=True).stdout
+            fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W, 3); n = len(fr); HOLD = 0.45; X1 = 1.35; p = writer()
         for i in range(N):
             t = i / FPS
-            k = min(n - 1, int(((max(0, t - HOLD) * FPS) // 2) * 2 * 30 / FPS)); hold = max(0, (t - HOLD) - (n - 1) / 30)
-            c = fr[k].astype(np.float32) / 255
+            if fr is None:
+                c = cv2.warpAffine(still, cv2.getRotationMatrix2D((W / 2, H * 0.45), 0, 1 + 0.07 * t / max(DUR, 1e-3)), (W, H), borderMode=cv2.BORDER_REFLECT); hold = 0
+            else:
+                k = min(n - 1, int(((max(0, t - HOLD) * FPS) // 2) * 2 * 30 / FPS)); hold = max(0, (t - HOLD) - (n - 1) / 30)
+                c = fr[k].astype(np.float32) / 255
             if hold > 0: c = cv2.warpAffine(c, cv2.getRotationMatrix2D((W / 2, H / 2), 0, 1 + 0.02 * hold), (W, H), borderMode=cv2.BORDER_REFLECT)
             if t < HOLD: img = th.copy()
             else:
@@ -367,15 +395,28 @@ if __name__ == "__main__":
     if k == "graf":
         import graf; graf.render(sh, DUR, OUT, PREV)
     else:
-        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom", "reloj", "gota", "split", "tipos", "potencias", "cables", "fotomaqueta", "eras", "revela", "lamina_ov", "tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia"):
-            import comp, comp2, comp3, comp4, comp5, comp6; p = writer()
+        if k in ("depth2", "corridor", "timelapse", "doc3d", "mapamesa", "retrato", "match", "rail", "persiana", "periodico", "balanza", "particulas", "fotolupa", "flujo", "capitulo", "microscopio", "lamina", "carrera", "mapazoom", "reloj", "gota", "split", "tipos", "potencias", "cables", "fotomaqueta", "eras", "revela", "lamina_ov", "tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia", "trazo", "viscosidad", "bolilla", "presion", "capilar", "altura"):
+            import comp, comp2, comp3, comp4, comp5, comp6, comp9; p = writer()
             {"depth2": comp.r_depth2, "corridor": comp.r_corridor, "timelapse": comp.r_timelapse, "doc3d": comp2.r_doc3d, "mapamesa": comp2.r_mapamesa,
              "retrato": comp2.r_retrato, "match": comp2.r_match, "rail": comp2.r_rail, "persiana": comp2.r_persiana, "periodico": comp2.r_periodico,
              "balanza": comp2.r_balanza, "particulas": comp2.r_particulas, "fotolupa": comp3.r_fotolupa, "flujo": comp3.r_flujo, "capitulo": comp4.r_capitulo, "microscopio": comp4.r_microscopio,
              "lamina": comp4.r_lamina, "carrera": comp4.r_carrera, "mapazoom": comp4.r_mapazoom,
              "reloj": comp5.r_reloj, "gota": comp5.r_gota, "split": comp5.r_split, "tipos": comp5.r_tipos, "potencias": comp5.r_potencias, "cables": comp5.r_cables,
              "fotomaqueta": comp5.r_fotomaqueta, "eras": comp5.r_eras, "revela": comp5.r_revela, "lamina_ov": comp5.r_lamina_ov,
-             **{n: getattr(comp6, "r_" + n) for n in ("tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
+             **{n: getattr(comp6, "r_" + n) for n in ("tacometro", "ventanilla", "fuerzas", "tunel", "autorrot", "asimetria", "bisagra", "escalera", "ruta", "regla", "proyector", "copia")},
+             **{n: getattr(comp9, "r_" + n) for n in ("trazo", "viscosidad", "bolilla", "presion", "capilar", "altura")}}[k](sh, sid, DUR, lambda im: put(p, im))  # (las superposiciones van dentro de put)
+            p.stdin.close(); p.wait()
+        elif k in ("mapamad", "perfilmad"):
+            import compmad; p = writer()                                 # Caja Naranja con el look del Tallador (madera + stop-motion)
+            __import__("compmad2" if os.environ.get("TGP_LOOK") == "madera" else "compmad").__dict__["r_" + k](sh, sid, DUR, lambda im: put(p, im))
+            p.stdin.close(); p.wait()
+        elif sh.get("v8") and k in ("perfil", "mapa", "cabina", "registro", "squawk", "capitulo7", "cita", "lista", "numero", "montana", "cajas", "foto", "still"):
+            import comp8; p = writer()                                   # Caja Naranja v2: la data dentro del mundo (placas, sombras, tipografía grande)
+            comp8.R8[k](sh, sid, DUR, lambda im: put(p, im))
+            p.stdin.close(); p.wait()
+        elif k in ("perfil", "mapa", "cabina", "registro", "squawk", "capitulo7", "cita", "lista", "numero", "montana", "cajas"):
+            import comp7; p = writer()
+            getattr(comp7, "r_" + ("capitulo" if k == "capitulo7" else k))(sh, sid, DUR, lambda im: put(p, im))
             p.stdin.close(); p.wait()
         else:
             {"clip": r_clip, "still": r_still, "multi": r_multi, "depth": r_depth, "arch": r_arch, "open": r_open}[k]()
