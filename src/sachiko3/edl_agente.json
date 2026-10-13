@@ -1,0 +1,2739 @@
+{
+"shots": [
+{
+"a": 0.0,
+"b": 3.0,
+"k": "",
+"c": "OpenThumb",
+"props": {
+"k": "img/sachiko3/thumb.jpg",
+"focus": [
+960,
+840
+]
+}
+},
+{
+"a": 3.0,
+"b": 5.65,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f01_lid_look.png"
+}
+},
+{
+"a": 5.65,
+"b": 8.23,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h01_old_wooden_chest.png"
+}
+},
+{
+"a": 8.23,
+"b": 10.95,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f02_cup_scoop.png"
+}
+},
+{
+"a": 10.95,
+"b": 13.57,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h02_1950s_family_meal.png"
+}
+},
+{
+"a": 13.57,
+"b": 16.17,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f03_cup_hook.png"
+}
+},
+{
+"a": 16.17,
+"b": 18.85,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h03_1950s_iron_pot.png"
+}
+},
+{
+"a": 18.85,
+"b": 21.57,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f04_wipe_cab.png"
+}
+},
+{
+"a": 21.57,
+"b": 24.23,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h04_1950s_girl_rice_bag.png"
+}
+},
+{
+"a": 24.23,
+"b": 26.97,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f05_bag_freezer.png"
+}
+},
+{
+"a": 26.97,
+"b": 30.57,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h05_osaka_market_1950s.png"
+}
+},
+{
+"a": 30.57,
+"b": 35.57,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Please listen to me."
+],
+"sig": "Sachiko",
+"k": "img/sachiko3/f06_bag_counter.png",
+"size": 90
+}
+},
+{
+"a": 35.57,
+"b": 45.23,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h06_osaka_canal_houses.png"
+}
+},
+{
+"a": 45.23,
+"b": 54.25,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f07_grains_window.png"
+}
+},
+{
+"a": 54.25,
+"b": 60.58,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h07_rain_tiles_japan.png"
+}
+},
+{
+"a": 60.58,
+"b": 65.58,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Come, sit with me."
+],
+"sig": "Sachiko",
+"k": "img/sachiko3/f08_white_plate.png",
+"size": 90
+}
+},
+{
+"a": 65.58,
+"b": 67.31,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h08_paddy_water_mirror.png"
+}
+},
+{
+"a": 67.31,
+"b": 72.31,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 1,
+"title": "Part one",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/f09_jar_marker.png"
+}
+},
+{
+"a": 72.31,
+"b": 81.54,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h09_harvest_hang.png"
+}
+},
+{
+"a": 81.54,
+"b": 90.6,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f10_lid_thread.png"
+}
+},
+{
+"a": 90.6,
+"b": 99.95,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h10_threshing_old.png"
+}
+},
+{
+"a": 99.95,
+"b": 108.23,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f11_lid_press.png"
+}
+},
+{
+"a": 108.23,
+"b": 113.23,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Please stay until the end."
+],
+"sig": "Sachiko",
+"k": "img/sachiko3/h11_rice_shop_japan.png",
+"size": 90
+}
+},
+{
+"a": 113.23,
+"b": 115.47,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f12_towel_shade.png"
+}
+},
+{
+"a": 115.47,
+"b": 125.58,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 125.58,
+"b": 134.89,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h12_rice_grains_black_plate.png"
+}
+},
+{
+"a": 134.89,
+"b": 144.2,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f13_sink_dry.png"
+}
+},
+{
+"a": 144.2,
+"b": 149.46,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h13_brown_rice_bowl.png"
+}
+},
+{
+"a": 149.46,
+"b": 155.46,
+"k": "",
+"c": "NameCard",
+"props": {
+"k": "img/sachiko3/f14_fridge_drawer.png",
+"word": "komebitsu",
+"gloss": "the wooden rice chest",
+"name": 149.86,
+"glossAt": 150.66
+}
+},
+{
+"a": 155.46,
+"b": 164.6,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h14_weevil_on_grains.png"
+}
+},
+{
+"a": 164.6,
+"b": 173.68,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f15_brown_rice.png"
+}
+},
+{
+"a": 173.68,
+"b": 183.81,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h15_moth_larvae_bag.png"
+}
+},
+{
+"a": 183.81,
+"b": 192.33,
+"k": "av",
+"av": true,
+"z": [
+1.32,
+1.38
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 192.33,
+"b": 201.33,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f16_chili_jar.png"
+}
+},
+{
+"a": 201.33,
+"b": 212.79,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h16_glass_seal_macro.png"
+}
+},
+{
+"a": 212.79,
+"b": 218.79,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/f17_calendar.png",
+"txt": "Never a wet spoon",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 218.79,
+"b": 225.83,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h17_cabinet_inside_dark.png"
+}
+},
+{
+"a": 225.83,
+"b": 233.83,
+"k": "",
+"c": "ArcFull",
+"props": {
+"src": "arc/sachiko3/jam_car_road.mp4"
+}
+},
+{
+"a": 233.83,
+"b": 242.85,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f18_cabinet_sniff.png"
+}
+},
+{
+"a": 242.85,
+"b": 251.94,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h18_sink_pipe_drip_wide.png"
+}
+},
+{
+"a": 251.94,
+"b": 261.93,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f19_jar_shelf.png"
+}
+},
+{
+"a": 261.93,
+"b": 266.93,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 0,
+"title": "Where the bugs come from",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/h19_frozen_bag_shelf.png"
+}
+},
+{
+"a": 266.93,
+"b": 275.94,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f20_bag_clip.png"
+}
+},
+{
+"a": 275.94,
+"b": 285.04,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h20_jar_on_windowsill.png"
+}
+},
+{
+"a": 285.04,
+"b": 294.08,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f21_groceries.png"
+}
+},
+{
+"a": 294.08,
+"b": 303.34,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h21_japanese_street_kids.png"
+}
+},
+{
+"a": 303.34,
+"b": 312.43,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f22_dustpan.png"
+}
+},
+{
+"a": 312.43,
+"b": 321.85,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h22_japanese_home_wooden.png"
+}
+},
+{
+"a": 321.85,
+"b": 331.0,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f23_pour_jar.png"
+}
+},
+{
+"a": 331.0,
+"b": 340.1,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/h23_kitchen_noren_day.png"
+}
+},
+{
+"a": 340.1,
+"b": 349.68,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f24_hand_check.png"
+}
+},
+{
+"a": 349.68,
+"b": 354.68,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 0,
+"title": "The jar",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/h24_mother_letter_desk.png"
+}
+},
+{
+"a": 354.68,
+"b": 363.8,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f25_bin_jar.png"
+}
+},
+{
+"a": 363.8,
+"b": 372.94,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m01_wooden_paddle.png"
+}
+},
+{
+"a": 372.94,
+"b": 381.94,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f26_stone_count.png"
+}
+},
+{
+"a": 381.94,
+"b": 391.12,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m02_bamboo_basket.png"
+}
+},
+{
+"a": 391.12,
+"b": 395.23,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f27_jar_wipe.png"
+}
+},
+{
+"a": 395.23,
+"b": 409.23,
+"k": "",
+"c": "StepCard",
+"props": {
+"page": "The jar",
+"head": "How I fill the jar",
+"steps": [
+{
+"t": 401.21,
+"txt": "Wash and dry the jar completely",
+"k": "img/sachiko3/k03_bag_flatten.png"
+},
+{
+"t": 407.53,
+"txt": "Pour the rice in slowly",
+"k": "img/sachiko3/p02_pour_small_jar.png"
+},
+{
+"t": 419.04,
+"txt": "Press the lid until it seals",
+"k": "img/sachiko3/k36_lid_turn_slow.png"
+},
+{
+"t": 428.96,
+"txt": "Write the month on the side",
+"k": "img/sachiko3/p31_container_label.png"
+},
+{
+"t": 431.72,
+"txt": "Check it every week",
+"k": "img/sachiko3/p35_dry_hands_jar.png"
+}
+],
+"bed": "img/sachiko3/m03_umeboshi_jars.png"
+}
+},
+{
+"a": 409.23,
+"b": 418.42,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f28_cup_floor.png"
+}
+},
+{
+"a": 418.42,
+"b": 427.74,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m04_bean_jars_shelf.png"
+}
+},
+{
+"a": 427.74,
+"b": 436.95,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f29_notebook.png"
+}
+},
+{
+"a": 436.95,
+"b": 446.17,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m05_frost_window.png"
+}
+},
+{
+"a": 446.17,
+"b": 449.37,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f30_jar_top.png"
+}
+},
+{
+"a": 449.37,
+"b": 458.67,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 458.67,
+"b": 467.68,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m06_osaka_rain_alley.png"
+}
+},
+{
+"a": 467.68,
+"b": 479.17,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f31_lid_press_side.png"
+}
+},
+{
+"a": 479.17,
+"b": 485.17,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/m07_koi_pond.png",
+"txt": "Not on the fridge",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 485.17,
+"b": 494.33,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f32_read_date.png"
+}
+},
+{
+"a": 494.33,
+"b": 503.41,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m08_iron_pot_stove.png"
+}
+},
+{
+"a": 503.41,
+"b": 512.59,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f33_towel_spread.png"
+}
+},
+{
+"a": 512.59,
+"b": 523.4,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m09_empty_jar_open.png"
+}
+},
+{
+"a": 523.4,
+"b": 528.4,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 0,
+"title": "The wet season",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/f34_bag_tie.png"
+}
+},
+{
+"a": 528.4,
+"b": 537.83,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m10_towel_grains_shade.png"
+}
+},
+{
+"a": 537.83,
+"b": 546.91,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f35_jar_empty.png"
+}
+},
+{
+"a": 546.91,
+"b": 556.09,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m11_farmhouse_roof.png"
+}
+},
+{
+"a": 556.09,
+"b": 565.17,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f36_cloth_wipe.png"
+}
+},
+{
+"a": 565.17,
+"b": 574.2,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m12_storehouse_door.png"
+}
+},
+{
+"a": 574.2,
+"b": 583.39,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f37_freezer_open.png"
+}
+},
+{
+"a": 583.39,
+"b": 590.97,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m13_oil_bottle_cabinet.png"
+}
+},
+{
+"a": 590.97,
+"b": 599.15,
+"k": "av",
+"av": true,
+"z": [
+1.32,
+1.38
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 599.15,
+"b": 608.28,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f38_fridge_container.png"
+}
+},
+{
+"a": 608.28,
+"b": 617.32,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m14_stove_dial.png"
+}
+},
+{
+"a": 617.32,
+"b": 626.44,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f39_grains_plate.png"
+}
+},
+{
+"a": 626.44,
+"b": 630.61,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m15_rice_seeds_palm.png"
+}
+},
+{
+"a": 630.61,
+"b": 636.61,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/f40_cabinet_door.png",
+"txt": "Cold bag, warm room",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 636.61,
+"b": 645.69,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m16_kitchen_clock_jar.png"
+}
+},
+{
+"a": 645.69,
+"b": 654.7,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f41_bay_leaf_jar.png"
+}
+},
+{
+"a": 654.7,
+"b": 664.26,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m17_1950s_street_kids.png"
+}
+},
+{
+"a": 664.26,
+"b": 673.78,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f42_rain_check.png"
+}
+},
+{
+"a": 673.78,
+"b": 682.9,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m18_1950s_kitchen_mother.png"
+}
+},
+{
+"a": 682.9,
+"b": 692.12,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f43_bag_cut.png"
+}
+},
+{
+"a": 692.12,
+"b": 699.7,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m19_1950s_rice_shop.png"
+}
+},
+{
+"a": 699.7,
+"b": 705.7,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/f44_rice_cup_towel.png",
+"txt": "Freezing will not fix it",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 705.7,
+"b": 707.42,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m20_1950s_market_fish.png"
+}
+},
+{
+"a": 707.42,
+"b": 719.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 719.0,
+"b": 728.03,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f45_kneel_low.png"
+}
+},
+{
+"a": 728.03,
+"b": 737.37,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m21_japanese_schoolgirls.png"
+}
+},
+{
+"a": 737.37,
+"b": 746.42,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f46_sip_tea.png"
+}
+},
+{
+"a": 746.42,
+"b": 754.42,
+"k": "",
+"c": "ArcFull",
+"props": {
+"src": "arc/sachiko3/ww_sacks_packing.mp4"
+}
+},
+{
+"a": 754.42,
+"b": 763.55,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m22_japanese_wooden_house_rain.png"
+}
+},
+{
+"a": 763.55,
+"b": 772.71,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f47_grandson_bag.png"
+}
+},
+{
+"a": 772.71,
+"b": 782.09,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m23_rice_fields_harvest.png"
+}
+},
+{
+"a": 782.09,
+"b": 791.35,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f48_weekly_check.png"
+}
+},
+{
+"a": 791.35,
+"b": 799.77,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m24_grain_sacks_storage.png"
+}
+},
+{
+"a": 799.77,
+"b": 810.16,
+"k": "av",
+"av": true,
+"z": [
+1.32,
+1.38
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 810.16,
+"b": 821.14,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f49_chest_lid.png"
+}
+},
+{
+"a": 821.14,
+"b": 829.14,
+"k": "",
+"c": "ArcFull",
+"props": {
+"src": "arc/sachiko3/moth_on_mesh.mp4"
+}
+},
+{
+"a": 829.14,
+"b": 838.33,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m25_pantry_moth_threads.png"
+}
+},
+{
+"a": 838.33,
+"b": 847.59,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/f50_scoop_morning.png"
+}
+},
+{
+"a": 847.59,
+"b": 856.66,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m26_plastic_bag_clip.png"
+}
+},
+{
+"a": 856.66,
+"b": 865.71,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g01_jar_hands_close.png"
+}
+},
+{
+"a": 865.71,
+"b": 874.92,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m27_jar_threads_macro.png"
+}
+},
+{
+"a": 874.92,
+"b": 884.15,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g02_cup_side_view.png"
+}
+},
+{
+"a": 884.15,
+"b": 893.46,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m28_grandchild_hands.png"
+}
+},
+{
+"a": 893.46,
+"b": 902.58,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g03_cabinet_overshoulder.png"
+}
+},
+{
+"a": 902.58,
+"b": 911.62,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m29_storage_room_dark.png"
+}
+},
+{
+"a": 911.62,
+"b": 920.71,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g04_towel_hands.png"
+}
+},
+{
+"a": 920.71,
+"b": 929.85,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m30_jar_wet_outside.png"
+}
+},
+{
+"a": 929.85,
+"b": 941.86,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g05_freezer_wide.png"
+}
+},
+{
+"a": 941.86,
+"b": 947.36,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The chili is a tradition,",
+"not a shield."
+],
+"sig": "Sachiko",
+"k": "img/sachiko3/m31_bowl_brown_rice.png",
+"size": 90
+}
+},
+{
+"a": 947.36,
+"b": 956.49,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g06_sink_wide.png"
+}
+},
+{
+"a": 956.49,
+"b": 965.57,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m32_rice_cooker_closed.png"
+}
+},
+{
+"a": 965.57,
+"b": 974.76,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g07_marker_hands.png"
+}
+},
+{
+"a": 974.76,
+"b": 983.8,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m33_cupboard_top_shelf.png"
+}
+},
+{
+"a": 983.8,
+"b": 992.8,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g08_bag_twist.png"
+}
+},
+{
+"a": 992.8,
+"b": 1001.97,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m34_window_green_leaves.png"
+}
+},
+{
+"a": 1001.97,
+"b": 1010.98,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g09_plate_hands.png"
+}
+},
+{
+"a": 1010.98,
+"b": 1020.06,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m35_wooden_box_lid.png"
+}
+},
+{
+"a": 1020.06,
+"b": 1025.01,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g10_rim_cloth.png"
+}
+},
+{
+"a": 1025.01,
+"b": 1034.51,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1034.51,
+"b": 1043.61,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m36_drip_cabinet_floor.png"
+}
+},
+{
+"a": 1043.61,
+"b": 1050.01,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g11_chili_hands.png"
+}
+},
+{
+"a": 1050.01,
+"b": 1055.51,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 2,
+"unit": "years, about, for quality",
+"k": "img/sachiko3/m37_handwritten_month.png",
+"dur": 24
+}
+},
+{
+"a": 1055.51,
+"b": 1064.75,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g12_bay_leaf.png"
+}
+},
+{
+"a": 1064.75,
+"b": 1074.06,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m38_towel_hook_kitchen.png"
+}
+},
+{
+"a": 1074.06,
+"b": 1078.42,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g13_window_grains.png"
+}
+},
+{
+"a": 1078.42,
+"b": 1088.34,
+"k": "av",
+"av": true,
+"z": [
+1.32,
+1.38
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1088.34,
+"b": 1097.49,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m39_old_letter_airmail.png"
+}
+},
+{
+"a": 1097.49,
+"b": 1106.97,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g14_drawer_brown.png"
+}
+},
+{
+"a": 1106.97,
+"b": 1116.25,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/m40_1950s_family_rice_bowls.png"
+}
+},
+{
+"a": 1116.25,
+"b": 1125.39,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g15_bin_lift.png"
+}
+},
+{
+"a": 1125.39,
+"b": 1134.63,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n01_jar_macro.png"
+}
+},
+{
+"a": 1134.63,
+"b": 1143.81,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g16_cup_hook.png"
+}
+},
+{
+"a": 1143.81,
+"b": 1152.89,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n02_grains_macro.png"
+}
+},
+{
+"a": 1152.89,
+"b": 1162.14,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g17_rainy_window.png"
+}
+},
+{
+"a": 1162.14,
+"b": 1173.05,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n03_bay_leaf.png"
+}
+},
+{
+"a": 1173.05,
+"b": 1179.05,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/g18_thaw_bag.png",
+"txt": "Taste? No. Throw it out.",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1179.05,
+"b": 1181.32,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n04_cabinet_low.png"
+}
+},
+{
+"a": 1181.32,
+"b": 1193.07,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1193.07,
+"b": 1202.41,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g19_stone_dishes.png"
+}
+},
+{
+"a": 1202.41,
+"b": 1208.41,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/n05_pipe_drip.png",
+"txt": "Keep it away from children",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1208.41,
+"b": 1212.9,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g20_cabinet_knees.png"
+}
+},
+{
+"a": 1212.9,
+"b": 1218.9,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/n06_freezer_frost.png",
+"txt": "Spray far away",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1218.9,
+"b": 1228.0,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g21_jar_inspect.png"
+}
+},
+{
+"a": 1228.0,
+"b": 1239.95,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n07_rain_window.png"
+}
+},
+{
+"a": 1239.95,
+"b": 1247.95,
+"k": "",
+"c": "ArcFull",
+"props": {
+"src": "arc/sachiko3/cj_family_table.mp4"
+}
+},
+{
+"a": 1247.95,
+"b": 1257.2,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g22_sack_corner.png"
+}
+},
+{
+"a": 1257.2,
+"b": 1266.24,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n08_brown_rice.png"
+}
+},
+{
+"a": 1266.24,
+"b": 1275.31,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g23_spoon_level.png"
+}
+},
+{
+"a": 1275.31,
+"b": 1278.72,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n09_wooden_chest.png"
+}
+},
+{
+"a": 1278.72,
+"b": 1284.72,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 2,
+"title": "The jar and the lid",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/g24_notebook_marks.png"
+}
+},
+{
+"a": 1284.72,
+"b": 1293.87,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n10_towel_drying.png"
+}
+},
+{
+"a": 1293.87,
+"b": 1303.1,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g25_chest_lid.png"
+}
+},
+{
+"a": 1303.1,
+"b": 1312.29,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n11_lid_threads.png"
+}
+},
+{
+"a": 1312.29,
+"b": 1316.63,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g26_cup_scoop_morning.png"
+}
+},
+{
+"a": 1316.63,
+"b": 1322.63,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 3,
+"title": "Cool, dark, dry",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/n12_spray_can.png"
+}
+},
+{
+"a": 1322.63,
+"b": 1331.93,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g27_bag_clip_counter.png"
+}
+},
+{
+"a": 1331.93,
+"b": 1340.93,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n13_cup_hook.png"
+}
+},
+{
+"a": 1340.93,
+"b": 1350.07,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g28_hands_grains_towel.png"
+}
+},
+{
+"a": 1350.07,
+"b": 1359.2,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n14_bag_holes.png"
+}
+},
+{
+"a": 1359.2,
+"b": 1371.51,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g29_door_bag_wide.png"
+}
+},
+{
+"a": 1371.51,
+"b": 1377.01,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"The chest is the beautiful coat.",
+"The jar is the warm blanket."
+],
+"sig": "Sachiko",
+"k": "img/sachiko3/n15_moth_web.png",
+"size": 90
+}
+},
+{
+"a": 1377.01,
+"b": 1386.28,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g30_fridge_container_wide.png"
+}
+},
+{
+"a": 1386.28,
+"b": 1395.37,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n16_old_snapshot.png"
+}
+},
+{
+"a": 1395.37,
+"b": 1404.9,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g31_rain_jar_check.png"
+}
+},
+{
+"a": 1404.9,
+"b": 1412.66,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n17_osaka_street.png"
+}
+},
+{
+"a": 1412.66,
+"b": 1420.66,
+"k": "",
+"c": "ArcFull",
+"props": {
+"src": "arc/sachiko3/cj_street.mp4"
+}
+},
+{
+"a": 1420.66,
+"b": 1429.81,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g32_lid_thread_hands.png"
+}
+},
+{
+"a": 1429.81,
+"b": 1438.83,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n18_rice_field.png"
+}
+},
+{
+"a": 1438.83,
+"b": 1448.03,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g33_towel_drying_cup.png"
+}
+},
+{
+"a": 1448.03,
+"b": 1457.39,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n19_sack_kitchen.png"
+}
+},
+{
+"a": 1457.39,
+"b": 1466.69,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g34_cabinet_check_wide.png"
+}
+},
+{
+"a": 1466.69,
+"b": 1471.8,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n20_calendar_wall.png"
+}
+},
+{
+"a": 1471.8,
+"b": 1476.8,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 2,
+"title": "Mistakes",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/g35_counter_sweep.png"
+}
+},
+{
+"a": 1476.8,
+"b": 1483.05,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n21_grocery_box.png"
+}
+},
+{
+"a": 1483.05,
+"b": 1495.44,
+"k": "av",
+"av": true,
+"z": [
+1.32,
+1.38
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1495.44,
+"b": 1507.5,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/g36_jar_top_lift.png"
+}
+},
+{
+"a": 1507.5,
+"b": 1513.5,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/n22_bin_cupboard.png",
+"txt": "It isn't you",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1513.5,
+"b": 1522.64,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k01_wipe_jar_outside.png"
+}
+},
+{
+"a": 1522.64,
+"b": 1530.03,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n23_rain_street.png"
+}
+},
+{
+"a": 1530.03,
+"b": 1536.03,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/k02_lid_on_counter.png",
+"txt": "It isn't you",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1536.03,
+"b": 1545.08,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n24_shelf_dust.png"
+}
+},
+{
+"a": 1545.08,
+"b": 1553.86,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k03_bag_flatten.png"
+}
+},
+{
+"a": 1553.86,
+"b": 1559.86,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/n25_chili_close.png",
+"txt": "It isn't you",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1559.86,
+"b": 1568.86,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k04_jar_to_freezer.png"
+}
+},
+{
+"a": 1568.86,
+"b": 1578.01,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n26_grain_hand.png"
+}
+},
+{
+"a": 1578.01,
+"b": 1582.72,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k05_towel_fold.png"
+}
+},
+{
+"a": 1582.72,
+"b": 1588.72,
+"k": "",
+"c": "MistakeStamp",
+"props": {
+"k": "img/sachiko3/n27_tsuyu_wet.png",
+"txt": "It isn't you",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1588.72,
+"b": 1597.83,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k06_jar_cloth_inside.png"
+}
+},
+{
+"a": 1597.83,
+"b": 1606.94,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n28_bag_inside.png"
+}
+},
+{
+"a": 1606.94,
+"b": 1614.13,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k07_cabinet_jars_count.png"
+}
+},
+{
+"a": 1614.13,
+"b": 1619.13,
+"k": "",
+"c": "NameCard",
+"props": {
+"k": "img/sachiko3/n29_pantry_moth.png",
+"word": "mottainai",
+"gloss": "a sense of regret over waste",
+"name": 1614.53,
+"glossAt": 1615.33
+}
+},
+{
+"a": 1619.13,
+"b": 1628.29,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k08_tap_lid.png"
+}
+},
+{
+"a": 1628.29,
+"b": 1637.48,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n30_lid_seal.png"
+}
+},
+{
+"a": 1637.48,
+"b": 1646.54,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k09_spoon_scoop_dry.png"
+}
+},
+{
+"a": 1646.54,
+"b": 1655.88,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n31_shelf_cloth.png"
+}
+},
+{
+"a": 1655.88,
+"b": 1660.88,
+"k": "",
+"c": "BigNumber",
+"props": {
+"num": 12,
+"unit": "year old, explained simply",
+"k": "img/sachiko3/k10_bin_wipe.png",
+"dur": 24
+}
+},
+{
+"a": 1660.88,
+"b": 1665.31,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n32_fridge_door.png"
+}
+},
+{
+"a": 1665.31,
+"b": 1676.31,
+"k": "",
+"c": "Checklist",
+"props": {
+"head": "Why it works",
+"items": [
+{
+"t": 1666.31,
+"txt": "A tight lid stops the way in"
+},
+{
+"t": 1668.11,
+"txt": "Cool slows the bugs down"
+},
+{
+"t": 1669.91,
+"txt": "Dry air stops the mold"
+},
+{
+"t": 1671.71,
+"txt": "Four days in the freezer kills the eggs"
+},
+{
+"t": 1673.51,
+"txt": "Brown rice oil goes rancid"
+}
+],
+"k": "img/sachiko3/k11_fridge_shelf.png"
+}
+},
+{
+"a": 1676.31,
+"b": 1685.47,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n33_market_rice.png"
+}
+},
+{
+"a": 1685.47,
+"b": 1694.62,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k12_newspaper_spread.png"
+}
+},
+{
+"a": 1694.62,
+"b": 1704.08,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n34_osaka_kitchen.png"
+}
+},
+{
+"a": 1704.08,
+"b": 1713.21,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k13_shade_towel_wide.png"
+}
+},
+{
+"a": 1713.21,
+"b": 1722.22,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n35_hungry_pot.png"
+}
+},
+{
+"a": 1722.22,
+"b": 1731.75,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k14_window_sill_jar.png"
+}
+},
+{
+"a": 1731.75,
+"b": 1740.79,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n36_rice_paddy_morning.png"
+}
+},
+{
+"a": 1740.79,
+"b": 1750.15,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k15_stove_away.png"
+}
+},
+{
+"a": 1750.15,
+"b": 1759.52,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n37_cup_dry.png"
+}
+},
+{
+"a": 1759.52,
+"b": 1768.63,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k16_sink_towel_hang.png"
+}
+},
+{
+"a": 1768.63,
+"b": 1777.71,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n38_dark_cupboard.png"
+}
+},
+{
+"a": 1777.71,
+"b": 1786.75,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k17_marker_cap.png"
+}
+},
+{
+"a": 1786.75,
+"b": 1795.98,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n39_noren_door.png"
+}
+},
+{
+"a": 1795.98,
+"b": 1805.07,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k18_rice_on_palm.png"
+}
+},
+{
+"a": 1805.07,
+"b": 1814.16,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/n40_kitchen_clock.png"
+}
+},
+{
+"a": 1814.16,
+"b": 1823.4,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k19_cabinet_door_close.png"
+}
+},
+{
+"a": 1823.4,
+"b": 1832.45,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q01_brown_grain_plate.png"
+}
+},
+{
+"a": 1832.45,
+"b": 1841.84,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k20_chili_jar_top.png"
+}
+},
+{
+"a": 1841.84,
+"b": 1851.17,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q02_moth_wings_close.png"
+}
+},
+{
+"a": 1851.17,
+"b": 1860.28,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k21_weekly_list.png"
+}
+},
+{
+"a": 1860.28,
+"b": 1867.26,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q03_bag_hole_chewed.png"
+}
+},
+{
+"a": 1867.26,
+"b": 1872.26,
+"k": "",
+"c": "Chapter",
+"props": {
+"n": 3,
+"title": "Money",
+"label": "PART",
+"av": false,
+"k": "img/sachiko3/k22_calendar_mark.png"
+}
+},
+{
+"a": 1872.26,
+"b": 1873.24,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q04_jar_inside_light.png"
+}
+},
+{
+"a": 1873.24,
+"b": 1882.82,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1882.82,
+"b": 1892.06,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k23_freezer_drawer.png"
+}
+},
+{
+"a": 1892.06,
+"b": 1899.01,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q05_towel_drying_rice.png"
+}
+},
+{
+"a": 1899.01,
+"b": 1905.01,
+"k": "",
+"c": "CostTag",
+"props": {
+"price": "A few dollars",
+"sub": "one jar, many years",
+"k": "img/sachiko3/k24_dish_stones.png"
+}
+},
+{
+"a": 1905.01,
+"b": 1914.2,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q06_cabinet_stack_jars.png"
+}
+},
+{
+"a": 1914.2,
+"b": 1923.24,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k25_sweep_cloth.png"
+}
+},
+{
+"a": 1923.24,
+"b": 1932.82,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q07_japanese_noren_umeboshi.png"
+}
+},
+{
+"a": 1932.82,
+"b": 1941.87,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k26_noren_pull.png"
+}
+},
+{
+"a": 1941.87,
+"b": 1951.11,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q08_kitchen_window_rain.png"
+}
+},
+{
+"a": 1951.11,
+"b": 1960.37,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k27_jar_inspect_plate.png"
+}
+},
+{
+"a": 1960.37,
+"b": 1967.73,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q09_drawer_veg_fridge.png"
+}
+},
+{
+"a": 1967.73,
+"b": 1977.63,
+"k": "av",
+"av": true,
+"z": [
+1.32,
+1.38
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1977.63,
+"b": 1987.06,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k28_rain_drops_glass.png"
+}
+},
+{
+"a": 1987.06,
+"b": 1991.37,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q10_freezer_bag_frost.png"
+}
+},
+{
+"a": 1991.37,
+"b": 1997.37,
+"k": "",
+"c": "NameCard",
+"props": {
+"k": "img/sachiko3/k29_grandson_note.png",
+"word": "komebitsu",
+"gloss": "wooden rice chest",
+"name": 1991.77,
+"glossAt": 1992.57
+}
+},
+{
+"a": 1997.37,
+"b": 2006.71,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q11_1950s_girls_market.png"
+}
+},
+{
+"a": 2006.71,
+"b": 2016.21,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k30_cup_measure_level.png"
+}
+},
+{
+"a": 2016.21,
+"b": 2025.49,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q12_1950s_kitchen_pot.png"
+}
+},
+{
+"a": 2025.49,
+"b": 2031.61,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k31_bag_open_check.png"
+}
+},
+{
+"a": 2031.61,
+"b": 2037.61,
+"k": "",
+"c": "NameCard",
+"props": {
+"k": "img/sachiko3/q13_1950s_rice_chest_room.png",
+"word": "noren",
+"gloss": "the indigo curtain in the doorway",
+"name": 2032.01,
+"glossAt": 2032.81
+}
+},
+{
+"a": 2037.61,
+"b": 2045.59,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k32_hook_rice_cup.png"
+}
+},
+{
+"a": 2045.59,
+"b": 2051.09,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"A family always gets the first bowl."
+],
+"sig": "Okaasan",
+"k": "img/sachiko3/q14_harvest_cart.png",
+"size": 90
+}
+},
+{
+"a": 2051.09,
+"b": 2060.27,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k33_bowl_sort.png"
+}
+},
+{
+"a": 2060.27,
+"b": 2063.65,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q15_tsuyu_puddle_street.png"
+}
+},
+{
+"a": 2063.65,
+"b": 2075.01,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 2075.01,
+"b": 2084.23,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k34_gloves_off.png"
+}
+},
+{
+"a": 2084.23,
+"b": 2093.32,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q16_storage_sacks_stack.png"
+}
+},
+{
+"a": 2093.32,
+"b": 2102.57,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k35_shelf_jar_row.png"
+}
+},
+{
+"a": 2102.57,
+"b": 2111.58,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q17_hands_cup_wood.png"
+}
+},
+{
+"a": 2111.58,
+"b": 2121.82,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k36_lid_turn_slow.png"
+}
+},
+{
+"a": 2121.82,
+"b": 2133.5,
+"k": "av",
+"av": true,
+"z": [
+1.32,
+1.38
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 2133.5,
+"b": 2142.65,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q18_sachet_dried_herb.png"
+}
+},
+{
+"a": 2142.65,
+"b": 2152.05,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k37_towel_grain_lift.png"
+}
+},
+{
+"a": 2152.05,
+"b": 2161.27,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q19_beetle_grains_macro.png"
+}
+},
+{
+"a": 2161.27,
+"b": 2170.31,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k38_dark_cupboard_open.png"
+}
+},
+{
+"a": 2170.31,
+"b": 2179.33,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q20_jar_lid_seal_wet.png"
+}
+},
+{
+"a": 2179.33,
+"b": 2183.81,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k39_jar_on_cloth.png"
+}
+},
+{
+"a": 2183.81,
+"b": 2194.83,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 2194.83,
+"b": 2203.89,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q21_cabinet_wood_grain.png"
+}
+},
+{
+"a": 2203.89,
+"b": 2212.95,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/k40_hands_clean_dry.png"
+}
+},
+{
+"a": 2212.95,
+"b": 2219.34,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q22_kitchen_calendar_marks.png"
+}
+},
+{
+"a": 2219.34,
+"b": 2225.34,
+"k": "",
+"c": "Note",
+"props": {
+"lines": [
+"Keep the lid tight.",
+"Keep the cupboard dry."
+],
+"sig": "Sachiko",
+"k": "img/sachiko3/p01_lift_bag_sink.png",
+"size": 90
+}
+},
+{
+"a": 2225.34,
+"b": 2231.69,
+"k": "",
+"c": "PhotoBeats",
+"props": {
+"k": "img/sachiko3/q23_jar_pantry_dim.png"
+}
+}
+],
+"sfx": [],
+"end": 2231.69
+}
