@@ -1605,7 +1605,7 @@
   "kind": "film",
   "w": 1.0,
   "film": "ar_mercado_sf_a",
-  "ss": 20,
+  "ss": 9,
   "speed": 1.0,
   "bw": true
  },
@@ -15068,7 +15068,7 @@
   "kind": "film",
   "w": 1.0,
   "film": "ar_speedkings_1913_a",
-  "ss": 12,
+  "ss": 6,
   "speed": 1.0,
   "bw": true
  },
@@ -15346,7 +15346,7 @@
   "kind": "film",
   "w": 1.0,
   "film": "ar_ford_plant_d",
-  "ss": 10,
+  "ss": 5,
   "speed": 1.0,
   "bw": true
  },
