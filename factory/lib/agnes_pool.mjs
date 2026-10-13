@@ -37,6 +37,7 @@ const DIR = process.env.AGNES_POOL_DIR || (fs.existsSync("D:/") ? "D:/rtmp/agnes
 fs.mkdirSync(DIR, { recursive: true });
 const ST = path.join(DIR, "state.json"), LOCK = path.join(DIR, "lock"), LOG = path.join(DIR, "log.jsonl");
 const GAP = 61_000, RATE_REST = 65_000, QUEUE_REST = Number(process.env.AGNES_QUEUE_REST_MS || 500), IP_REST = 30_000;  // cola llena: 0,5 s (creador 2-oct: más intentos = más lugares agarrados; medido 1→40 clips/h, 0 bloqueos por ráfaga)
+const BAN_REST = Number(process.env.AGNES_BAN_REST_MS || 6 * 3600e3); // clave restringida: se reprueba cada 6 h
 const MIN_SPACING = Number(process.env.AGNES_SPACING_MS || 500); // entre DOS envíos cualesquiera de la PC ("rate exceeds the limit" = ráfaga)
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const hk = (k) => crypto.createHash("sha1").update(k).digest("hex").slice(0, 10);
@@ -87,10 +88,13 @@ export async function reportKey(key, res) {
     if (res === "rate") e.next = Math.max(e.next || 0, now + RATE_REST);
     if (res === "iprate") { s.queueUntil = Math.max(s.queueUntil, now + IP_REST); e.next = Math.min(e.next || 0, now + IP_REST); }
     if (res === "queue") { s.queueSetAt = now; s.queueUntil = Math.max(s.queueUntil, now + QUEUE_REST); e.next = Math.min(e.next || 0, now + QUEUE_REST); }
+    if (res === "banned") e.next = Math.max(e.next || 0, now + BAN_REST);
     e[res] = (e[res] || 0) + 1; s.keys[hk(key)] = e;
   });
 }
-const clasificar = (m) => /free users/i.test(m) ? "rate" : /rate exceeds|too many|"code":429|\b429\b/i.test(m) ? "iprate" : /rate limit/i.test(m) ? "rate" :/queue|busy|capacity/i.test(m) ? "queue" : /fetch failed|timeout|ECONN|aborted|network|socket|5\d\d/i.test(m) ? "red" : "reject";
+// 403 "unusual activity… temporarily restricted" (13-oct: 24 de 41 claves) = cuenta restringida, NO contenido:
+// la clave descansa BAN_REST y se sigue con otra (antes tiraba REJECT y cortaba el trabajo entero).
+const clasificar = (m) => /unusual activity|temporarily restricted|account_deactivated/i.test(m) ? "banned" : /free users/i.test(m) ? "rate" : /rate exceeds|too many|"code":429|\b429\b/i.test(m) ? "iprate" : /rate limit/i.test(m) ? "rate" :/queue|busy|capacity/i.test(m) ? "queue" : /fetch failed|timeout|ECONN|aborted|network|socket|5\d\d/i.test(m) ? "red" : "reject";
 
 /** Envía un video. Devuelve { vid, key } o tira error si agnes lo rechaza por contenido/parámetros. */
 export async function agnesSubmit(body, { tag = "", maxTries = 2000 } = {}) {
@@ -151,8 +155,9 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.a
   try { for (const l of fs.readFileSync(LOG, "utf8").split("\n")) { if (!l) continue; const e = JSON.parse(l); if (e.t < desde) continue; c[e.res] = (c[e.res] || 0) + 1; procs.add(e.pid); } } catch {}
   let s = {}; try { s = JSON.parse(fs.readFileSync(ST, "utf8")); } catch {}
   const now = Date.now(), libres = KEYS.filter((k) => ((s.keys || {})[hk(k)]?.next || 0) <= now).length;
-  console.log(`agnes_pool · últimos ${min} min · ${KEYS.length} claves (${RES.size} reservadas otra PC) · libres ahora ${libres} · procesos ${procs.size}`);
+  const restr = KEYS.filter((k) => { const e = (s.keys || {})[hk(k)] || {}; return e.banned && (e.next || 0) > now + 60 * 60e3; }).length;
+  console.log(`agnes_pool · últimos ${min} min · ${KEYS.length} claves (${RES.size} reservadas otra PC) · libres ahora ${libres} · restringidas ${restr} · procesos ${procs.size}`);
   console.log("  envíos OK:", c.ok || 0, "· terminados:", c.done || 0, "· fallidos:", c.fail || 0);
-  console.log("  rechazos → límite por clave:", c.rate || 0, "· ráfaga PC (rate exceeds):", c.iprate || 0, "· cola llena (global):", c.queue || 0, "· red:", c.red || 0, "· contenido:", c.reject || 0);
+  console.log("  rechazos → límite por clave:", c.rate || 0, "· ráfaga PC (rate exceeds):", c.iprate || 0, "· cola llena (global):", c.queue || 0, "· red:", c.red || 0, "· contenido:", c.reject || 0, "· restringida:", c.banned || 0);
   if (s.queueUntil > now) console.log("  ⏸ cola global llena, espera", Math.round((s.queueUntil - now) / 1000), "s");
 }
