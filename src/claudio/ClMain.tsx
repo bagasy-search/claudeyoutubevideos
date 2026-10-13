@@ -35,6 +35,7 @@ import { ClWickWall, ClThreeDamp, ClPencilLine } from "./ClHumedad";
 import { ClWaterWalk, ClHoseTest, ClMembrane } from "./ClGotera";
 import { ClCoinTest, ClPlasterTell, ClCrackTypes, ClVFill } from "./ClGrieta";
 import { ClDesiccant, ClClosetAir, ClSaltTest } from "./ClOlor";
+import { ClFlyDoor, ClLemon10, ClTapeHigh, ClMoscasMap } from "./ClMoscas";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
 const useKB = (seed: number, clip: boolean) => {
@@ -81,6 +82,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 );
 
 const COMP: Record<string, React.FC<any>> = {
+  ClFlyDoor, ClLemon10, ClTapeHigh, ClMoscasMap,
   ClDoorGap, ClBarrierLine, ClPerimeter30,
   ClPoisonWall, ClFlourMap, ClCoinHole, ClTrapSet,
   ClGlassTrap, ClDrainFactory, ClFlyCycle,

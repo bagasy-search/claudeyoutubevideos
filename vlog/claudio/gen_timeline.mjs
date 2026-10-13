@@ -56,7 +56,7 @@ shots.forEach((s, i) => {
   cues.push(c);
 });
 // ── sonido: biblioteca sfx_pro (vlog/claudio/sound.mjs) — ambiente por escena + foley de lo que se ve + diseño de componentes/overlays
-const snd = design(cues, shots, PUB, ovs); sfx.push(...snd.sfx); const AMBL = snd.amb; warn.push(...snd.warn);
+const snd = process.env.NO_SOUND ? { sfx: [], amb: [], warn: [] } : design(cues, shots, PUB, ovs); sfx.push(...snd.sfx); const AMBL = snd.amb; warn.push(...snd.warn);
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }
 fs.mkdirSync(R + `src/${SLUG}`, { recursive: true });
