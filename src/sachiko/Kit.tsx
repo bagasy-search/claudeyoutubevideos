@@ -1,4 +1,4 @@
-// sachiko1 (desde ckeggs) · kit (Claude, 11-oct-2026): el kit de cltoilet/yo1/Kit2 con rótulos parametrizados y 2 reels de avatar.
+// Sachiko's Kitchen · kit (desde sachiko1). Rótulos parametrizados. Sin QrCard en el registro: el canal no vende nada.
 // Cada componente recibe `a` (segundo de entrada en el video) y `d` (cuadros); los tiempos de sus props son SEGUNDOS ABSOLUTOS
 // (las palabras de la voz), así cada golpe cae en su palabra. Fondo = un solo plano continuo; salida por cámara.
 import React from "react";
@@ -91,7 +91,7 @@ export const MistakeStamp: P<{ k: string; txt: string; cx?: number; cy?: number;
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `scale(${1.08 + 0.1 * f / d})`, transformOrigin: `${cx}% ${cy}%` }}>
-        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "saturate(0.85)" }} />
+        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         <Mark kind="circle" x={cx * 19.2 - 230} y={cy * 10.8 - 170} w={460} h={330} f={f} at={8} dur={10} sw={11} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(10,8,14,0.6) 0%, rgba(10,8,14,0) 55%)" }} />
@@ -347,35 +347,6 @@ export const Thumb: P<{ thumb: string; tag: string; words: [string, number][]; k
   );
 };
 
-// ── QR + LIBRO (CTA del medio) ──
-export const QrCard: P<{ k: string; t: number }> = ({ a, d, k, t }) => {
-  const { f, at } = useT(a);
-  const b = sp(f, 0, 14, 110), q = sp(f, at(t), 12, 160), cam = f / d;
-  const pulse = 1 + 0.025 * Math.sin((f - at(t)) / 5) * (f > at(t) + 10 ? 1 : 0);
-  return (
-    <Stage f={f} T={d} drift={0.4}>
-      <Bed k={k} f={f} T={d} dim={0.5} />
-      <div style={{ position: "absolute", left: 640, top: 540, translate: "-50% -50%", transform: `perspective(1600px) rotateY(${18 - 10 * cam}deg) translateY(${(1 - b) * 600}px) rotateZ(-3deg)` }}>
-        <div style={{ width: 520, height: 674, borderRadius: 6, boxShadow: "0 60px 110px rgba(0,0,0,0.6)", background: "#f6efe2", border: "10px solid #5b2a4a", boxSizing: "border-box", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 40, textAlign: "center", fontFamily: "Georgia, serif", color: "#3b1f33" }}>
-          <div style={{ fontSize: 30, letterSpacing: 4, textTransform: "uppercase", color: "#7a4a6a" }}>Fifty-Two</div>
-          <div style={{ fontSize: 66, fontWeight: 700, lineHeight: 1.05, margin: "18px 0" }}>Sunday Mornings</div>
-          <div style={{ fontSize: 34, fontStyle: "italic" }}>with Loretta</div>
-          <div style={{ width: 120, height: 3, background: "#5b2a4a", margin: "34px 0" }} />
-          <div style={{ fontSize: 26, lineHeight: 1.35 }}>A verse, a story and a prayer for every week of the year</div>
-        </div>
-      </div>
-      <div style={{ position: "absolute", left: 1330, top: 520, translate: "-50% -50%", opacity: q, transform: `scale(${(0.7 + 0.3 * q) * pulse}) rotate(2deg)` }}>
-        <div style={{ background: "#fff", padding: 30, borderRadius: 18, boxShadow: "0 60px 110px rgba(0,0,0,0.55)" }}>
-          <Img src={img("img/sachiko1/qr.jpg")} style={{ width: 420, height: 420, display: "block" }} />
-        </div>
-        <div style={{ textAlign: "center", marginTop: 26, fontFamily: HAND, fontSize: 60, color: C.porc, textShadow: shadowTxt }}>point your phone here</div>
-      </div>
-      <Grade vig={0.38} />
-    </Stage>
-  );
-};
-
-// ── ESPEJO bajo el borde: la mano con el espejo + lupa circular que muestra la película escondida ──
 export const Mirror: P<{ k: string; zoomK: string; zx: number; zy: number; words: [string, number][] }> = ({ a, d, k, zoomK, zx, zy, words }) => {
   const { f, at } = useT(a);
   const m = sp(f, 8, 13, 120);
@@ -384,7 +355,7 @@ export const Mirror: P<{ k: string; zoomK: string; zx: number; zy: number; words
       <AbsoluteFill style={{ transform: `scale(${1.05 + 0.06 * f / d})` }}><Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(0.7)" }} /></AbsoluteFill>
       <div style={{ position: "absolute", left: 1250, top: 520, translate: "-50% -50%", width: 620, height: 620, borderRadius: 999, overflow: "hidden", opacity: m, transform: `scale(${0.5 + 0.5 * m})`,
         boxShadow: "0 0 0 18px #C9CED3, 0 0 0 24px #8E959C, 0 60px 110px rgba(0,0,0,0.6)" }}>
-        <Img src={img(zoomK)} style={{ position: "absolute", width: 1920 * 1.6, height: 1080 * 1.6, left: -zx * 19.2 * 1.6 + 310, top: -zy * 10.8 * 1.6 + 310, maxWidth: "none", filter: "sepia(0.35) brightness(0.9)" }} />
+        <Img src={img(zoomK)} style={{ position: "absolute", width: 1920 * 1.6, height: 1080 * 1.6, left: -zx * 19.2 * 1.6 + 310, top: -zy * 10.8 * 1.6 + 310, maxWidth: "none" }} />
         <AbsoluteFill style={{ background: "radial-gradient(circle at 35% 30%, rgba(255,255,255,0.3), rgba(255,255,255,0) 45%)" }} />
       </div>
       {words.map(([w, t], i) => { const u = sp(f, at(t), 14, 200); return <div key={i} style={{ position: "absolute", left: 200, top: 360 + i * 130, opacity: u, transform: `translateX(${(1 - u) * -40}px) rotate(-3deg)` }}><Chip txt={w} size={64} font={i ? HAND : LABEL} ls={i ? 0 : 3} bg={i ? "#FFFDF4" : C.red} color={i ? C.ink : "#fff"} /></div>; })}
@@ -498,10 +469,9 @@ export const Memory: P<{ k: string; caption: string; date: string; t?: number }>
   return (
     <Stage f={f} T={d} drift={0.8}>
       <Bed k={k} f={f} T={d} dim={0.55} />
-      <AbsoluteFill style={{ background: "rgba(90,60,20,0.18)", mixBlendMode: "multiply" }} />
       <div style={{ position: "absolute", left: 960, top: 520, translate: "-50% -50%", transform: `rotate(${-4 + 2 * cam}deg) translateY(${(1 - u) * 600}px) scale(${1 + 0.04 * cam})` }}>
         <div style={{ background: "#F6F0E2", padding: "30px 30px 120px", boxShadow: "0 60px 110px rgba(0,0,0,0.6)" }}>
-          <div style={{ width: 980, height: 551, overflow: "hidden" }}><Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "sepia(0.75) contrast(1.05) brightness(0.95)", transform: `scale(${1.05 + 0.06 * cam})` }} /></div>
+          <div style={{ width: 980, height: 551, overflow: "hidden" }}><Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.05 + 0.06 * cam})` }} /></div>
           <div style={{ position: "absolute", left: 50, bottom: 30, fontFamily: HAND, fontSize: 64, color: "#3A3A52", opacity: c }}>{caption}</div>
           <div style={{ position: "absolute", right: 50, bottom: 34, fontFamily: HAND, fontSize: 50, color: "#7A5A3A", opacity: c }}>{date}</div>
         </div>
@@ -581,4 +551,4 @@ export const Hud: React.FC<{ a: number; chs: number[]; hide: [number, number][] 
   );
 };
 
-export const KIT: Record<string, React.FC<any>> = { Chapter, StepCard, MistakeStamp, CostTag, Note, PageUp, Checklist, NeverMix, Shelf, BigNumber, Thumb, QrCard, Mirror, FrameArt, Pins, Comment, Flashlight, Memory, Tease };
+export const KIT: Record<string, React.FC<any>> = { Chapter, StepCard, MistakeStamp, CostTag, Note, PageUp, Checklist, NeverMix, Shelf, BigNumber, Thumb, Mirror, FrameArt, Pins, Comment, Flashlight, Memory, Tease };
