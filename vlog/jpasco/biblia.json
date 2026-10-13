@@ -1,0 +1,153 @@
+{
+ "secciones": {
+  "HOOK": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "PROMESA": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "HISTORIA": {
+   "lugar": "bano_hotel",
+   "hora": "dia",
+   "gente": [
+    "claudio",
+    "sato"
+   ]
+  },
+  "CTA1": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "UNO": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "DOS": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "TRES": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CUATRO": {
+   "lugar": "genkan",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CINCO": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "SEIS": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "SIETE": {
+   "lugar": "bano_casa",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "OCHO": {
+   "lugar": "bano_casa",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CTA2": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "NUEVE": {
+   "lugar": "pasillo_servicio",
+   "hora": "dia",
+   "gente": [
+    "claudio",
+    "sato"
+   ]
+  },
+  "DIEZ": {
+   "lugar": "bano_hotel",
+   "hora": "dia",
+   "gente": [
+    "claudio",
+    "sato"
+   ]
+  },
+  "ONCE": {
+   "lugar": "bano_casa",
+   "hora": "tarde",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "RECAP": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "CIERRE": {
+   "lugar": "bano_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  },
+  "PROXIMO": {
+   "lugar": "cocina_casa",
+   "hora": "dia",
+   "gente": [
+    "claudio"
+   ]
+  }
+ },
+ "nuevos": {
+  "cocina_hermana": "A Latin American house kitchen: white square tiles, a steel sink under a window, a wooden table with two cups of coffee, a white refrigerator with magnets, a plastic bucket on the floor, warm afternoon light."
+ },
+ "avatar_lugar": "bano_casa",
+ "lugares": {
+  "bano_hotel": "a small Tokyo business-hotel bathroom: white tiles, a compact white toilet with a closed lid, a narrow washbasin, a shelf with folded white towels, very clean and dry, a small frosted window",
+  "pasillo_servicio": "the service corridor of a Tokyo hotel: grey linoleum, a metal cleaning cart with folded towels stacked in three and small bottles, white walls, a fire door at the end",
+  "genkan": "the entrance of a Japanese home: a raised wooden step, a shoe cabinet, a row of slippers, a small mat, pale wood walls",
+  "bano_casa": "a Latin American house bathroom: pale green tiles, a white toilet with the lid up, a plastic cup with toothbrushes next to the toilet, a bath mat on the floor, a small window with a metal grate",
+  "cocina_casa": "a Latin American house kitchen: white square tiles, a steel sink under a window, a white refrigerator with magnets, a plastic bucket on the floor",
+  "tienda_ferreteria": "a small neighborhood hardware store in a Latin American town: a glass counter with small items, wooden shelves with jars and boxes",
+  "cocina_hermana": "A Latin American house kitchen: white square tiles, a steel sink under a window, a wooden table with two cups of coffee, a white refrigerator with magnets, a plastic bucket on the floor, warm afternoon light."
+ }
+}

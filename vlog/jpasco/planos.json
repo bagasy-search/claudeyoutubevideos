@@ -1,0 +1,5036 @@
+[
+ {
+  "id": "p001",
+  "tramo": 0,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Cada vez que tiras la cadena con",
+  "foto": "A wider shot showing a hand pressing the toilet flush lever with the lid open.",
+  "mov": "The hand pushes the lever down and releases it."
+ },
+ {
+  "id": "p002",
+  "tramo": 1,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "la tapa del inodoro abierta,",
+  "foto": "A shot framing the toilet with the lid clearly open.",
+  "mov": "The water in the toilet bowl ripples and settles."
+ },
+ {
+  "id": "p003",
+  "tramo": 2,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "sale una lluvia finísima que",
+  "foto": "A shot showing microscopic water droplets spraying from the toilet bowl.",
+  "mov": "The mist of droplets rises and spreads upward."
+ },
+ {
+  "id": "p004",
+  "tramo": 3,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sube del agua y cae sobre",
+  "foto": "A shot showing water droplets rising from the toilet bowl and falling onto nearby objects.",
+  "mov": "The droplets float upward and to the side."
+ },
+ {
+  "id": "p005",
+  "tramo": 4,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "lo que tienes cerca: el cepillo",
+  "foto": "A close-up shot of a toothbrush holder with toothbrushes.",
+  "mov": "A few droplets land on the toothbrush bristles."
+ },
+ {
+  "id": "p006",
+  "tramo": 5,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de dientes, el vaso de los",
+  "foto": "A shot showing a glass or cup containing toothbrushes.",
+  "mov": "A droplet rolls down the side of the cup."
+ },
+ {
+  "id": "p007",
+  "tramo": 6,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cepillos, la toalla de la mano,",
+  "foto": "A shot showing a hand towel hanging near the toilet.",
+  "mov": "The towel sways slightly as a droplet hits it."
+ },
+ {
+  "id": "p008",
+  "tramo": 7,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el borde del lavamanos.",
+  "foto": "A close-up shot of the edge of a sink with water droplets on it.",
+  "mov": "A droplet slides slowly along the sink edge."
+ },
+ {
+  "id": "p009",
+  "tramo": 8,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "No la ves. Yo tampoco",
+  "foto": "A shot of the bathroom environment, perhaps a wide shot showing the toilet and sink, emphasizing the invisible nature of the spray.",
+  "mov": "Claudio blinks and slightly tilts his head."
+ },
+ {
+  "id": "p010",
+  "tramo": 9,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la veía, hasta que aprendí en",
+  "foto": "Close-up of Claudio's hands holding a small LED flashlight, pointing it at the toilet bowl area, with the light beam illuminating the water surface and nearby objects, his red polo sleeve visible.",
+  "mov": "His hand moves the flashlight beam slowly across the toilet."
+ },
+ {
+  "id": "p011",
+  "tramo": 10,
+  "sec": "HOOK",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Tokio a mirar el baño de otra manera.",
+  "foto": "of Claudio from behind, standing in the bathroom and gesturing with both hands toward the toilet and sink, as if explaining something, with the pale green tiles, window, and bath mat all visible in daylight.",
+  "mov": "Claudio sweeps his hands outward in an explanatory gesture."
+ },
+ {
+  "id": "p012",
+  "tramo": 11,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Hoy te traigo los once hábitos",
+  "foto": "Claudio, a 58-year-old Latin American man with short curly black hair going gray, gray-stubbled beard, warm brown eyes and tanned skin, wearing a plain red polo shirt, stands in a Latin American house bathroom with pale green tiles. He gestures with his right hand toward the white toilet with the lid up. A plastic cup with toothbrushes sits next to the toilet. Daylight comes through a small window with a metal grate.",
+  "mov": "Claudio's right hand sweeps from his chest toward the toilet."
+ },
+ {
+  "id": "p013",
+  "tramo": 12,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "del baño que a un japonés",
+  "foto": "Close-up of the white toilet bowl in the bathroom, lid up, with pale green tiles behind. The plastic cup with toothbrushes is visible on the left. The bath mat on the floor is slightly wrinkled. Daylight from the window grate casts a soft shadow across the tiles.",
+  "mov": "A few toothbrushes in the cup tremble slightly."
+ },
+ {
+  "id": "p014",
+  "tramo": 13,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "le dan asco. La semana",
+  "foto": "Wide view of the bathroom: pale green tiles, white toilet with lid up, plastic cup with toothbrushes next to it, bath mat on the floor, small window with metal grate. Claudio, in red polo, stands near the sink, his back partly to the camera, one hand on the sink edge. Daylight fills the room.",
+  "mov": "Claudio's hand slides along the sink edge."
+ },
+ {
+  "id": "p015",
+  "tramo": 14,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "pasada te conté de los productos;",
+  "foto": "Claudio, in red polo, stands in the bathroom, facing the camera. He holds up a small, unlabeled plastic bottle in his right hand, as if showing a product. The toilet with lid up and the cup with toothbrushes are behind him. Daylight from the window lights his face.",
+  "mov": "Claudio raises the bottle slightly and tilts it."
+ },
+ {
+  "id": "p016",
+  "tramo": 15,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hoy, los hábitos.",
+  "foto": "Close-up of the bathroom sink area: the plastic cup with toothbrushes next to the white toilet, pale green tiles. A damp towel hangs on a hook. The bath mat is on the floor. Daylight from the window grate highlights the toothbrush bristles.",
+  "mov": "The towel on the hook sways gently."
+ },
+ {
+  "id": "p017",
+  "tramo": 16,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Algunos los haces",
+  "foto": "of the bathroom from the doorway. Claudio, in red polo, stands near the toilet, his body angled away. The pale green tiles, white toilet with lid up, plastic cup with toothbrushes, bath mat, and window with grate are all visible. Daylight creates a calm atmosphere.",
+  "mov": "Claudio takes a small step toward the toilet."
+ },
+ {
+  "id": "p018",
+  "tramo": 17,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "tú sin pensar, y otros los",
+  "foto": "Claudio, in red polo, faces the camera with a thoughtful expression. He points his right index finger at his temple. Behind him, the bathroom with pale green tiles, white toilet, and cup with toothbrushes is softly lit by daylight from the window.",
+  "mov": "Claudio taps his temple twice with his index finger."
+ },
+ {
+  "id": "p019",
+  "tramo": 18,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hace toda la familia desde",
+  "foto": "A wide shot of a family standing together in a living room or hallway.",
+  "mov": "One slipper slides a few centimeters on the tile."
+ },
+ {
+  "id": "p020",
+  "tramo": 19,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "hace años sin que nadie lo",
+  "foto": "A shot of a calendar or a clock, or a group of people looking thoughtful.",
+  "mov": "Claudio's hand moves from the sink edge to the faucet."
+ },
+ {
+  "id": "p021",
+  "tramo": 20,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "cuestione. Te lo digo desde ahora:",
+  "foto": "The man looking directly at the camera with a serious or warning expression.",
+  "mov": "Claudio closes his open hand into a soft fist."
+ },
+ {
+  "id": "p022",
+  "tramo": 21,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el número once lo hace casi",
+  "foto": "A close-up of a hand pointing to the number 11 on a list or a calendar.",
+  "mov": "The hand lifts the lid a few centimeters."
+ },
+ {
+  "id": "p023",
+  "tramo": 22,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "todo el mundo y ni se da cuenta.",
+  "foto": "A montage or split-screen showing multiple people doing the same action.",
+  "mov": "Claudio shakes his head slowly."
+ },
+ {
+  "id": "p024",
+  "tramo": 23,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Quédate hasta el final,",
+  "foto": "The man pointing downwards or making a 'stay tuned' gesture.",
+  "mov": "Claudio's right hand moves from his chest outward."
+ },
+ {
+  "id": "p025",
+  "tramo": 24,
+  "sec": "PROMESA",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "porque ese es el que más cambia la casa.",
+  "foto": "A before-and-after shot of a room being renovated or transformed.",
+  "mov": "A curtain or blind cord sways slightly near the window."
+ },
+ {
+  "id": "p026",
+  "tramo": 25,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Mi primera semana en el hotel",
+  "foto": "A shot of a hotel lobby, a hotel room, or a hotel corridor.",
+  "mov": "Claudio pushes the cart forward."
+ },
+ {
+  "id": "p027",
+  "tramo": 26,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de Tokio, mi jefa,",
+  "foto": "A shot of a woman in a professional setting, such as a hotel office or lobby in Tokyo.",
+  "mov": "She turns the handle and pushes the door open."
+ },
+ {
+  "id": "p028",
+  "tramo": 27,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato",
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la señora Sato, me llevó a",
+  "foto": "Sato-san's hand, with short clean nails, grips the handle of a white door marked with a small number; behind her, Claudio's red sleeve is visible at the edge of the frame.",
+  "mov": "Her hand turns the handle and the door swings inward."
+ },
+ {
+  "id": "p029",
+  "tramo": 28,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato",
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "revisar las habitaciones antes",
+  "foto": "Inside a compact hotel room, Sato-san stands by the bed, looking down at the neatly made bed; Claudio, in his red polo, stands near the door holding a cloth, watching her.",
+  "mov": "Sato-san smooths the bedspread with one hand."
+ },
+ {
+  "id": "p030",
+  "tramo": 29,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de que llegaran los huéspedes.",
+  "foto": "A close view of a hotel room door from inside: the door is slightly ajar, the safety chain hangs, and a sliver of corridor light enters; no people, just the threshold.",
+  "mov": "The door opens a few centimeters and stops."
+ },
+ {
+  "id": "p031",
+  "tramo": 30,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Ella habla poco y mira mucho.",
+  "foto": "Sato-san stands in the middle of the hotel room, her hands clasped in front of her, her expression calm and observant, looking slightly to the side, not at the camera; the room is tidy behind her.",
+  "mov": "She slowly turns her head to scan the room."
+ },
+ {
+  "id": "p032",
+  "tramo": 31,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Entramos al baño de la habitación doce,",
+  "foto": "A wider shot showing both Claudio and Sato entering the bathroom of room twelve.",
+  "mov": "Claudio's hand pushes the bathroom door fully open."
+ },
+ {
+  "id": "p033",
+  "tramo": 32,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y antes de que yo tocara nada,",
+  "foto": "A close-up of Claudio's hand reaching towards the toilet or a shot of him looking at the toilet before Sato intervenes.",
+  "mov": "Claudio's left hand lifts slightly and pauses."
+ },
+ {
+  "id": "p034",
+  "tramo": 33,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "se inclinó y bajó la tapa del inodoro",
+  "foto": "Sato-san's hand, with short fingers, presses down on the white toilet lid, closing it over the bowl; the bathroom tiles are bright and clean, a small frosted window lets in daylight.",
+  "mov": "Her hand lowers the lid until it rests closed."
+ },
+ {
+  "id": "p035",
+  "tramo": 34,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "con la mano. Después me dijo, muy tranquila:",
+  "foto": "Sato-san stands upright in the bathroom, her hand just off the closed toilet lid, her face calm and serious, looking toward Claudio off-frame; the closed lid is visible beside her.",
+  "mov": "She withdraws her hand and straightens up."
+ },
+ {
+  "id": "p036",
+  "tramo": 35,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "\"Claudio-san, siempre abajo\". Y siguió",
+  "foto": "Sato-san's hand points down at the closed toilet lid, then moves toward the bathroom door handle; the white tiles and the closed lid are in focus, her dark uniform sleeve at the edge.",
+  "mov": "Her hand moves from the lid to the door handle."
+ },
+ {
+  "id": "p037",
+  "tramo": 36,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "con la puerta siguiente. Yo me quedé ahí, con",
+  "foto": "Claudio stands alone in the bathroom, the yellow cloth hanging from his hand, his posture still, looking down at the closed toilet lid; the door behind him is open to the corridor.",
+  "mov": "Claudio shifts his weight and looks down at the lid."
+ },
+ {
+  "id": "p038",
+  "tramo": 37,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el trapo en la mano, pensando que era una manía.",
+  "foto": "Close view of Claudio's hand holding a yellow cleaning cloth, fingers slightly curled, the cloth resting against his palm; the white bathroom tiles and the closed toilet lid are in the background.",
+  "mov": "His fingers tighten around the cloth."
+ },
+ {
+  "id": "p039",
+  "tramo": 38,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "En mi casa, en Latinoamérica, tiramos la",
+  "foto": "A different bathroom, warmer and more lived-in: colorful tiles, a toilet with the lid raised, a small shelf with toothbrushes; Claudio's hand reaches toward the flush button, his red sleeve visible.",
+  "mov": "His hand presses the flush button."
+ },
+ {
+  "id": "p040",
+  "tramo": 39,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cadena con la tapa levantada desde que somos niños,",
+  "foto": "A toilet bowl with the lid up, water swirling inside as it flushes; the seat is clean, the floor has a small rug, and the bathroom is simple and Latin American in style.",
+  "mov": "The water swirls and drains."
+ },
+ {
+  "id": "p041",
+  "tramo": 40,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "y nadie nos dijo nada. Pero esa semana,",
+  "foto": "Claudio stands in the Latin American bathroom, looking down at the toilet with the lid up, his expression thoughtful; he holds a cloth in one hand, the room behind him has a window with daylight.",
+  "mov": "Claudio slowly shakes his head."
+ },
+ {
+  "id": "p042",
+  "tramo": 41,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cada inodoro que limpié tenía la tapa abajo,",
+  "foto": "A row of three different toilets in different bathrooms, all with the lids closed; the tiles vary, but each lid is down; a cleaning cloth rests on one of them.",
+  "mov": "The camera pans slightly across the closed lids."
+ },
+ {
+  "id": "p043",
+  "tramo": 42,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y el carrito de limpieza llevaba las",
+  "foto": "A cleaning cart in the hotel corridor, with folded towels, spray bottles, and a stack of toilet paper; Claudio's hand reaches for a bottle on the cart, his red sleeve visible.",
+  "mov": "His hand grabs a spray bottle from the cart."
+ },
+ {
+  "id": "p044",
+  "tramo": 43,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "toallas dobladas en tres, como si fueran de un",
+  "foto": "On a narrow white shelf in a small Tokyo hotel bathroom, three pristine white towels are folded in perfect thirds, edges aligned, placed one on top of another. The shelf is spotless, the white tiles reflect soft daylight from a frosted window. No other objects are on the shelf; the towels look like a luxury hotel's turndown service.",
+  "mov": "The top towel settles slightly, as if just placed."
+ },
+ {
+  "id": "p045",
+  "tramo": 44,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "hotel de lujo. Aprendí más mirando que",
+  "foto": "Claudio, a 58-year-old Latin American man with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned skin, wearing a plain red polo shirt, stands in the doorway of the compact Tokyo hotel bathroom. He looks intently at the folded towels on the shelf, his face calm and focused, hands relaxed at his sides. Behind him, the white tiled bathroom is clean and bright.",
+  "mov": "Claudio's eyes shift slightly as he takes in the details."
+ },
+ {
+  "id": "p046",
+  "tramo": 45,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "escuchando.",
+  "foto": "A close view of Claudio's right hand resting on the edge of the narrow washbasin in the Tokyo hotel bathroom. The hand is still, fingers slightly curled, as if pausing after adjusting a towel. The white porcelain basin and chrome faucet are spotless. Daylight from the frosted window highlights the textures of his skin and the basin's surface.",
+  "mov": "His fingers relax and settle gently on the basin edge."
+ },
+ {
+  "id": "p047",
+  "tramo": 46,
+  "sec": "CTA1",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Antes de seguir, una cosa importante.",
+  "foto": "Claudio, in a red polo shirt, stands in a house bathroom with pale green tiles, holding a small white plastic cup with toothbrushes. He looks at the camera with a serious expression, his hands slightly raised as if pausing to speak. A white toilet with the lid up is behind him, and daylight comes through a small window with a metal grate.",
+  "mov": "Claudio lifts the cup slightly and then lowers it as he begins to speak."
+ },
+ {
+  "id": "p048",
+  "tramo": 47,
+  "sec": "CTA1",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Esta regla, y sesenta y cinco más, casa",
+  "foto": "Close-up of a white toilet lid in a bathroom with pale green tiles. The lid is up, showing the clean porcelain bowl. Next to it, on the floor, a bath mat is partially visible. The metal grate of a small window casts a soft shadow on the tiles. The scene is still and precise.",
+  "mov": "The toilet lid slowly closes by itself, as if moved by a gentle push."
+ },
+ {
+  "id": "p049",
+  "tramo": 48,
+  "sec": "CTA1",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "por casa, están en mi libro, El Método",
+  "foto": "Claudio, seen from behind, stands in the bathroom facing the toilet and sink area. He holds a small object, perhaps a cloth, in his right hand. The pale green tiles, the white toilet with lid up, the plastic cup with toothbrushes, and the bath mat are all visible. Daylight fills the room from the grated window.",
+  "mov": "Claudio's right hand moves slightly as he gestures toward the toilet area."
+ },
+ {
+  "id": "p050",
+  "tramo": 49,
+  "sec": "CTA1",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Japonés: la regla siete está en",
+  "foto": "Claudio, in his red polo shirt, stands in the bathroom, holding a small white plastic cup with toothbrushes in one hand and pointing with the other hand toward the toilet. His face is turned away, focused on the toilet. The pale green tiles and the white toilet with lid up are clearly visible. Daylight from the window illuminates the scene.",
+  "mov": "Claudio's pointing hand moves slightly as he indicates the toilet."
+ },
+ {
+  "id": "p051",
+  "tramo": 50,
+  "sec": "CTA1",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la página quince. Todo el método por menos",
+  "foto": "Close-up of the bathroom floor near the toilet: a bath mat lies on the pale green tiles, slightly wrinkled. Beside it, the base of the white toilet and a small puddle of water are visible. The metal grate of the window casts a grid-like shadow on the mat. The scene is quiet and detailed.",
+  "mov": "A drop of water falls from the toilet bowl onto the bath mat, creating a small ripple."
+ },
+ {
+  "id": "p052",
+  "tramo": 51,
+  "sec": "CTA1",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "de lo que cuesta una sola limpieza profesional.",
+  "foto": "Claudio, in his red polo shirt, stands in the bathroom, holding a white toilet brush in one hand and a cleaning cloth in the other. He is positioned next to the toilet, with the sink and mirror behind him. The pale green tiles, the plastic cup with toothbrushes, and the bath mat are all visible. Daylight from the grated window brightens the room.",
+  "mov": "Claudio raises the toilet brush slightly and then lowers it, as if emphasizing a point."
+ },
+ {
+  "id": "p053",
+  "tramo": 52,
+  "sec": "CTA1",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "El link está abajo, en la descripción.",
+  "foto": "Claudio, in his red polo shirt, stands in the bathroom, looking directly at the camera with a warm, inviting expression. He holds a small white plastic cup with toothbrushes in one hand, gesturing slightly downward with the other, as if pointing to something below the frame. The pale green tiles and the white toilet with lid up are behind him. Daylight from the window illuminates his face.",
+  "mov": "Claudio's hand moves downward in a gentle pointing gesture, then relaxes."
+ },
+ {
+  "id": "p054",
+  "tramo": 53,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Número uno: tirar la cadena con la tapa abierta.",
+  "foto": "In a pale green tiled bathroom, a white toilet with the lid up stands against the wall. Claudio's hand reaches toward the flush lever, his red polo sleeve visible. A plastic cup with toothbrushes sits on the edge of the sink, and a small window with a metal grate lets in daylight. The floor has a bath mat.",
+  "mov": "Claudio's hand pulls down the flush lever."
+ },
+ {
+  "id": "p055",
+  "tramo": 54,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Imagínate el momento. Tiras la cadena,",
+  "foto": "Claudio, a 58-year-old Latin American man with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned skin, wearing a plain red polo shirt, stands beside the white toilet in the pale green tiled bathroom. He looks down at the toilet with a slight smile, his right hand resting on the flush lever. The lid is up.",
+  "mov": "Claudio presses the flush lever down."
+ },
+ {
+  "id": "p056",
+  "tramo": 55,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el agua baja con fuerza, y en un segundo",
+  "foto": "Close-up of the white toilet bowl in the pale green tiled bathroom. Water swirls forcefully down from the rim, creating a small vortex. Droplets splash against the porcelain sides. The lid is up, and the metal flush lever is partially visible at the top. Daylight from the window highlights the water's movement.",
+  "mov": "Water rushes down the bowl in a swirling motion."
+ },
+ {
+  "id": "p057",
+  "tramo": 56,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "sale esa niebla fina hacia arriba.",
+  "foto": "A fine mist of tiny water droplets rises from the open toilet bowl in the pale green tiled bathroom. The mist floats upward, catching the daylight from the window with the metal grate. The white toilet lid is up, and the bowl is still swirling. The plastic cup with toothbrushes is nearby on the sink.",
+  "mov": "The mist drifts upward and outward from the bowl."
+ },
+ {
+  "id": "p058",
+  "tramo": 57,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Va a la pared, al espejo, al cepillo",
+  "foto": "Close-up of the pale green tiled wall, a round mirror, and a plastic cup holding toothbrushes next to the white toilet. Tiny water droplets from the flush mist settle on the mirror's surface, the wall tiles, and the toothbrush bristles. The bathroom is lit by daylight from the window with the metal grate.",
+  "mov": "Droplets slowly accumulate on the surfaces."
+ },
+ {
+  "id": "p059",
+  "tramo": 58,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de dientes que dejaste al lado. Tú no ves nada,",
+  "foto": "Claudio, in his red polo shirt, stands in the pale green tiled bathroom, looking toward the toilet area. His hands are at his sides. The white toilet with the lid up is visible, and the plastic cup with toothbrushes sits on the sink. The air seems clear, but tiny droplets are barely visible on surfaces. Daylight comes from the window.",
+  "mov": "Claudio turns his head slightly, observing the bathroom."
+ },
+ {
+  "id": "p060",
+  "tramo": 59,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "porque cae despacio y en gotitas. Pero al",
+  "foto": "Extreme close-up of a single water droplet falling slowly through the air in the pale green tiled bathroom. The droplet is tiny and translucent, catching the daylight. In the background, out of focus, the white toilet bowl and the plastic cup with toothbrushes are visible. The droplet is about to land on the sink edge.",
+  "mov": "The droplet falls slowly downward."
+ },
+ {
+  "id": "p061",
+  "tramo": 60,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "día siguiente el borde del lavamanos está opaco,",
+  "foto": "The edge of the white sink in the pale green tiled bathroom appears dull and opaque, covered with a fine film of dried droplets. The plastic cup with toothbrushes sits nearby, and the white toilet with the lid up is in the background. Daylight from the window with the metal grate highlights the cloudy residue on the sink's surface.",
+  "mov": "The camera slowly moves along the sink edge, revealing the dull film."
+ },
+ {
+  "id": "p062",
+  "tramo": 61,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y el cepillo tiene una película que",
+  "foto": "Close-up of a toothbrush in a plastic cup next to the white toilet in the pale green tiled bathroom. The bristles have a visible, slightly sticky film on them. The cup is translucent, and the toothbrush handle is plain. Daylight from the window with the metal grate illuminates the residue on the bristles.",
+  "mov": "A tiny droplet of water rolls down the toothbrush handle."
+ },
+ {
+  "id": "p063",
+  "tramo": 62,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "no se quita sólo con agua. La solución toma",
+  "foto": "Claudio, in his red polo shirt, stands in the pale green tiled bathroom, holding the toothbrush under the faucet. Water runs over the bristles, but the film remains. His hands are visible, and the white toilet with the lid up is behind him. The plastic cup sits on the sink. Daylight from the window with the metal grate.",
+  "mov": "Claudio rubs the bristles with his thumb, trying to remove the film."
+ },
+ {
+  "id": "p064",
+  "tramo": 63,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "dos segundos: baja la tapa antes",
+  "foto": "Close-up of Claudio's hand, with tanned skin and a simple silver ring, reaching for the white toilet lid in the pale green tiled bathroom. The lid is up, and his fingers are about to grasp the edge. The plastic cup with toothbrushes is slightly out of focus in the background. Daylight from the window with the metal grate.",
+  "mov": "Claudio's hand pulls the lid down."
+ },
+ {
+  "id": "p065",
+  "tramo": 64,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "de tirar la cadena, siempre. Si vives con",
+  "foto": "Claudio, a 58-year-old Latin American man with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned skin, wearing a plain red polo shirt, stands in the pale green tiled bathroom with his hand resting on the closed white toilet lid. He looks down at the toilet with a calm expression. The plastic cup with toothbrushes is on the sink, and daylight comes from the window with the metal grate.",
+  "mov": "Claudio presses the lid down firmly."
+ },
+ {
+  "id": "p066",
+  "tramo": 65,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "alguien que nunca lo hace, ponle un cartelito",
+  "foto": "Close-up of Claudio's hands placing a small, blank white sticker on the closed white toilet lid in the pale green tiled bathroom. The sticker has no text or markings. His fingers press it onto the surface. The plastic cup with toothbrushes is visible in the background. Daylight from the window with the metal grate.",
+  "mov": "Claudio smooths the sticker with his thumb."
+ },
+ {
+  "id": "p067",
+  "tramo": 66,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "chico en la tapa las primeras semanas.",
+  "foto": "Claudio, in his red polo shirt, stands in the pale green tiled bathroom, looking at the closed white toilet lid with the small blank sticker on it. His hands are at his sides. The plastic cup with toothbrushes is on the sink, and the bath mat is on the floor. Daylight from the window with the metal grate.",
+  "mov": "Claudio nods slightly, then turns away."
+ },
+ {
+  "id": "p068",
+  "tramo": 67,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Lo que más cuesta es el primer mes.",
+  "foto": "Wide view of the pale green tiled bathroom. Claudio, in his red polo shirt, stands near the white toilet with the lid closed and the small blank sticker on it. The plastic cup with toothbrushes is on the sink, and the bath mat is on the floor. The window with the metal grate lets in daylight. The room looks tidy.",
+  "mov": "Claudio walks toward the bathroom door."
+ },
+ {
+  "id": "p069",
+  "tramo": 68,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Después queda como un hábito de la mano,",
+  "foto": "Close-up of Claudio's hand, with tanned skin and a simple silver ring, resting on the closed white toilet lid in the pale green tiled bathroom. The small blank sticker is visible under his fingers. The plastic cup with toothbrushes is slightly out of focus in the background. Daylight from the window with the metal grate.",
+  "mov": "Claudio's hand pats the lid gently."
+ },
+ {
+  "id": "p070",
+  "tramo": 69,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "igual que cerrar la puerta del refrigerador.",
+  "foto": "A close-up of a hand closing a refrigerator door.",
+  "mov": "Claudio pushes the refrigerator door shut."
+ },
+ {
+  "id": "p071",
+  "tramo": 70,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Y un detalle que casi nadie nota: la tapa",
+  "foto": "Close-up of the white toilet lid in the pale green tiled bathroom, now closed. The small blank sticker is on the lid. The plastic cup with toothbrushes is nearby on the sink. The metal flush lever is visible on the side of the toilet tank. Daylight from the window with the metal grate highlights the lid's surface.",
+  "mov": "A tiny water droplet falls onto the closed lid."
+ },
+ {
+  "id": "p072",
+  "tramo": 71,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "abierta no sólo deja pasar la lluvia.",
+  "foto": "An open toilet lid with rain falling onto it from above.",
+  "mov": "A few raindrops fall from above and land on the open lid, then slide off."
+ },
+ {
+  "id": "p073",
+  "tramo": 72,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "También deja que el olor suba al cuarto cada",
+  "foto": "Medium view of the bathroom corner: the open toilet, the plastic cup with toothbrushes, and a faint mist rising upward from the bowl; pale green tiles and bath mat on floor; daylight from the grated window.",
+  "mov": "The faint mist drifts upward and spreads slightly."
+ },
+ {
+  "id": "p074",
+  "tramo": 73,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "vez que tiras la cadena, y lo haces cuatro,",
+  "foto": "Close-up of a hand pressing the toilet flush handle; water swirls in the bowl below; the open lid remains up; pale green tiles and a sliver of the plastic cup visible.",
+  "mov": "The hand pushes the handle down and water begins to swirl."
+ },
+ {
+  "id": "p075",
+  "tramo": 74,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "cinco, seis veces al día. Todos los días.",
+  "foto": "A person flushing the toilet multiple times in a row to illustrate the frequency mentioned in the narration.",
+  "mov": "The mist slowly disperses through the room."
+ },
+ {
+  "id": "p076",
+  "tramo": 75,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Ahí se acumula más de lo que crees.",
+  "foto": "Extreme close-up of the toilet bowl interior: water surface with tiny particles and a thin film; the open lid edge visible at top; pale green tiles reflected in the water.",
+  "mov": "Particles swirl gently in the water."
+ },
+ {
+  "id": "p077",
+  "tramo": 76,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "La mayoría hace lo contrario por una razón simple:",
+  "foto": "Claudio's hands lower the toilet lid until it is almost closed; his red polo shirt sleeve visible; the plastic cup with toothbrushes on the side; pale green tiles; daylight.",
+  "mov": "The hands slowly lower the lid."
+ },
+ {
+  "id": "p078",
+  "tramo": 77,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "nadie le enseñó que la tapa sirve para",
+  "foto": "Close-up of the closed toilet lid, with a hand resting on it; the plastic cup with toothbrushes is slightly out of focus behind; pale green tiles; a faint mist dissipates above the lid.",
+  "mov": "The hand pats the lid twice and lifts away."
+ },
+ {
+  "id": "p079",
+  "tramo": 78,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "eso. La gente cree que la tapa es",
+  "foto": "Claudio, a 58-year-old Latin American man with short curly black hair going gray, gray-stubbled beard, warm brown eyes, tanned skin, wearing a plain red polo shirt, stands in the bathroom; his face is clearly visible as he looks down at the closed toilet lid; pale green tiles and grated window behind him.",
+  "mov": "He nods slightly and his eyes shift from the lid to the side."
+ },
+ {
+  "id": "p080",
+  "tramo": 79,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sólo para que no caiga el polvo. Ahora sabes que",
+  "foto": "A shot showing dust settling on the closed toilet lid to match the narration about dust prevention.",
+  "mov": "The finger wipes across the lid, leaving a clean streak."
+ },
+ {
+  "id": "p081",
+  "tramo": 80,
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "sirve para lo que sale volando.",
+  "foto": "Wide view of the bathroom: Claudio, from behind, stands with his hand on the closed toilet lid; the plastic cup with toothbrushes, bath mat, and grated window are all visible; pale green tiles; a faint mist is gone; daylight.",
+  "mov": "Claudio turns and walks toward the door."
+ },
+ {
+  "id": "p082",
+  "tramo": 81,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Número dos: los cepillos de dientes al lado",
+  "foto": "A white toilet with the lid up in a pale green tiled bathroom. On the floor beside it, a plastic cup holds three toothbrushes. A small window with a metal grate lets in daylight, casting soft shadows on the bath mat.",
+  "mov": "The cup with toothbrushes slowly slides closer to the toilet base."
+ },
+ {
+  "id": "p083",
+  "tramo": 82,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "del inodoro. Lo veo en casi todas las",
+  "foto": "Close-up of the plastic cup with toothbrushes on the floor, just inches from the white toilet base. The pale green tiles and a bit of the bath mat are visible. Daylight highlights the bristles and the cup's rim.",
+  "mov": "A toothbrush inside the cup tilts slightly."
+ },
+ {
+  "id": "p084",
+  "tramo": 83,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "casas que visito, y lo entiendo: el vaso de",
+  "foto": "The bathroom seen from the doorway: white toilet with lid up, plastic cup with toothbrushes on the floor beside it, pale green tiled walls, bath mat, and a small grated window. Daylight fills the room, showing the layout.",
+  "mov": "A faint mist spreads from the toilet bowl, drifting toward the cup."
+ },
+ {
+  "id": "p085",
+  "tramo": 84,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "los cepillos está ahí porque es el lugar donde",
+  "foto": "A white sink with a chrome faucet, water dripping slowly. Below, on the floor, the plastic cup with toothbrushes sits near the toilet. The pale green tiles and bath mat are visible. Daylight from the window illuminates the scene.",
+  "mov": "A drop of water falls from the faucet into the sink."
+ },
+ {
+  "id": "p086",
+  "tramo": 85,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hay agua y espacio. Pero el vaso queda a",
+  "foto": "Close-up of the plastic cup with toothbrushes on the bathroom floor, exactly twenty centimeters from the white toilet base according to a measuring tape stretched between them. The tape shows metric markings. Pale green tiles and daylight.",
+  "mov": "The measuring tape retracts slightly, showing the distance."
+ },
+ {
+  "id": "p087",
+  "tramo": 86,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "veinte centímetros del inodoro, y con la lluvia",
+  "foto": "A shot showing the distance between the toothbrush cup and the toilet, or a visual representation of the toilet flushing.",
+  "mov": "The mist spreads and reaches the toothbrushes."
+ },
+ {
+  "id": "p088",
+  "tramo": 87,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "fina de cada descarga, los cepillos quedan",
+  "foto": "Close-up of the toothbrushes in the plastic cup, now with tiny droplets of moisture on the bristles and cup surface. The white toilet base is just behind. Pale green tiles and daylight from the window highlight the wetness.",
+  "mov": "A droplet rolls down a toothbrush handle."
+ },
+ {
+  "id": "p089",
+  "tramo": 88,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "en la misma zona donde cae todo. En Japón",
+  "foto": "A Japanese-style bathroom corner: a wooden toothbrush holder with a lid sits on a shelf far from a toilet. The room is clean and minimal, with light wood tones and a small window. No toilet visible in the frame.",
+  "mov": "The lid of the toothbrush holder lifts slightly and closes."
+ },
+ {
+  "id": "p090",
+  "tramo": 89,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "los cepillos viven en otro cuarto:",
+  "foto": "A separate washroom area in a Japanese home: a white sink with a chrome faucet, a wooden toothbrush holder with a lid on the counter, and a mirror. The toilet is not in this room. Soft daylight from a window.",
+  "mov": "The toothbrush holder slides a few centimeters away from the sink edge."
+ },
+ {
+  "id": "p091",
+  "tramo": 90,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en el lavamanos, lejos del inodoro, o",
+  "foto": "A wide shot showing the toothbrush holder placed on the sink, clearly far away from the toilet.",
+  "mov": "The lid closes fully over the toothbrushes."
+ },
+ {
+  "id": "p092",
+  "tramo": 91,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "en un portacepillos con tapa. La regla del hotel",
+  "foto": "Claudio, in his red polo, stands in the bathroom holding a measuring tape. He extends it from the toilet base toward the wall, checking the distance. His hands are visible; his face is turned away. Pale green tiles and daylight.",
+  "mov": "The measuring tape extends further, showing more length."
+ },
+ {
+  "id": "p093",
+  "tramo": 92,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "era simple: a más de un metro del inodoro,",
+  "foto": "A shot showing a measuring tape extended on the floor, indicating a distance of more than one meter from the toilet.",
+  "mov": "The tape measure's hook end shifts slightly."
+ },
+ {
+  "id": "p094",
+  "tramo": 93,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "o tapados. Cuando llegué a la casa de mi",
+  "foto": "Claudio, in his red polo, kneels on the bathroom floor with a measuring tape, measuring from the toilet base to the plastic cup with toothbrushes. The bathroom has pale green tiles, a bath mat, and a small window. Daylight fills the room.",
+  "mov": "Claudio pulls the tape measure taut."
+ },
+ {
+  "id": "p095",
+  "tramo": 94,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hermana, medí la distancia con una cinta métrica.",
+  "foto": "Close-up of Claudio's hands holding a measuring tape, with the metal hook at the toilet base and the tape extending to the plastic cup with toothbrushes. The tape shows thirty centimeters. Pale green tiles and daylight.",
+  "mov": "Claudio's finger points at the thirty-centimeter mark on the tape."
+ },
+ {
+  "id": "p096",
+  "tramo": 95,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Estaba a treinta centímetros.",
+  "foto": "A close-up of the measuring tape showing the 30-centimeter mark between the toothbrush holder and the toilet.",
+  "mov": "Claudio nods slightly and lowers the tape measure."
+ },
+ {
+  "id": "p097",
+  "tramo": 96,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Lo cambiamos esa misma tarde, sin pelea,",
+  "foto": "Claudio, in his red polo, carries the plastic cup with toothbrushes away from the toilet, placing it on a shelf near the sink. The bathroom has pale green tiles and a bath mat. Daylight from the window. His back is to the camera.",
+  "mov": "Claudio sets the cup down on the shelf."
+ },
+ {
+  "id": "p098",
+  "tramo": 97,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "y mi hermana me dijo que el baño se sintió más grande.",
+  "foto": "Claudio, in his red polo, stands in the bathroom with a slight smile, looking at the now-empty spot beside the toilet. The cup with toothbrushes is on the shelf far away. Pale green tiles and daylight. His face is clearly visible.",
+  "mov": "Claudio gestures with his hand toward the empty space."
+ },
+ {
+  "id": "p099",
+  "tramo": 98,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si quieres una prueba rápida, párate frente al",
+  "foto": "A person standing in front of the toilet, demonstrating the distance or the 'quick test' mentioned in the narration.",
+  "mov": "The feet shift slightly, as if the person is about to step forward."
+ },
+ {
+  "id": "p100",
+  "tramo": 99,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "inodoro, estira el brazo y mira hasta dónde",
+  "foto": "In a Latin American house bathroom with pale green tiles, Claudio, a 58-year-old man in a red polo shirt, stands in front of a white toilet with the lid up. He extends his right arm straight ahead, palm open, reaching toward the wall. A plastic cup with toothbrushes sits on a small shelf next to the toilet. Daylight comes through a small window with a metal grate.",
+  "mov": "Claudio slowly stretches his arm further forward, fingers spreading, as he leans slightly from the waist."
+ },
+ {
+  "id": "p101",
+  "tramo": 100,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "llega. Si tocas el vaso de los cepillos sin",
+  "foto": "Close-up of Claudio's hand, tanned with visible veins, reaching toward a white ceramic shelf beside the toilet. On the shelf, a plastic cup holds several toothbrushes. His fingertips are just inches from the cup. The pale green tiled wall and the white toilet tank are blurred in the background. Daylight from the window highlights the hand and the cup.",
+  "mov": "His fingers inch closer to the cup until they gently touch its side."
+ },
+ {
+  "id": "p102",
+  "tramo": 101,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "moverte, está muy cerca. Un metro parece",
+  "foto": "A shot showing the man measuring the distance from the toothbrush cup to the toilet with a tape measure.",
+  "mov": "He pulls the measuring tape blade out further, his eyes moving from the tape to the cup."
+ },
+ {
+  "id": "p103",
+  "tramo": 102,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "mucho, pero es lo que te separa de la lluvia de",
+  "foto": "A shot showing the man measuring the distance from the toothbrush cup to the toilet, emphasizing the gap.",
+  "mov": "The measuring tape blade slowly retracts a few centimeters, then stops."
+ },
+ {
+  "id": "p104",
+  "tramo": 103,
+  "sec": "DOS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "cada descarga. Lo que casi todo el mundo hace es poner el vaso junto a la llave, encima del inodoro, porque ahí es más cómodo al lavarse los dientes. Lo cómodo para la mano no siempre es lo que la cas",
+  "foto": "A shot showing the man placing the toothbrush cup on the toilet tank next to the flush button.",
+  "mov": "He places the cup on the new spot and steps back, his hand still hovering near it."
+ },
+ {
+  "id": "p105",
+  "tramo": 104,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Número tres: una toalla de manos para toda",
+  "foto": "A shot showing a single hand towel hanging on a rack, with multiple people using it.",
+  "mov": "His fingers grasp the towel's edge and gently pull it straight."
+ },
+ {
+  "id": "p106",
+  "tramo": 105,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la familia. Cuántas veces ves la misma toalla",
+  "foto": "A shot showing a hand towel hanging next to the sink, with multiple people using it.",
+  "mov": "The towel sways slightly as a faint draft moves it."
+ },
+ {
+  "id": "p107",
+  "tramo": 106,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "colgada junto al lavamanos: la de todos, la",
+  "foto": "A shot showing a hand towel hanging next to the sink, with multiple people using it.",
+  "mov": "Claudio lifts his hand and points at the towel."
+ },
+ {
+  "id": "p108",
+  "tramo": 107,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de la abuela, la del niño, la de la visita.",
+  "foto": "A shot showing multiple hand towels hanging on a rack next to the sink, each belonging to a different family member.",
+  "mov": "One towel slips slightly, brushing against the others."
+ },
+ {
+  "id": "p109",
+  "tramo": 108,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Se moja, se seca mal,",
+  "foto": "A close-up of a wet towel being poorly hung or left crumpled, showing it won't dry properly.",
+  "mov": "A droplet slowly runs down the towel and drips."
+ },
+ {
+  "id": "p110",
+  "tramo": 109,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "se vuelve a colgar. Al cabo de una semana",
+  "foto": "Claudio hangs the damp towel back on the bar with both hands. The bathroom is seen from a wider angle: toilet, cup, bath mat, and the small window. The towel looks heavy and wet.",
+  "mov": "He drapes the towel over the bar and pats it down."
+ },
+ {
+  "id": "p111",
+  "tramo": 110,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "huele a humedad, aunque la laves. En el hotel,",
+  "foto": "A shot of a hotel bathroom with fresh, neatly folded towels or a housekeeping cart.",
+  "mov": "The towel's fabric ripples slightly as if touched by air."
+ },
+ {
+  "id": "p112",
+  "tramo": 111,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cada huésped tenía sus toallas nuevas, y el",
+  "foto": "A hotel bathroom with fresh towels and amenities prepared for a new guest.",
+  "mov": "The top towel shifts slightly as if just placed."
+ },
+ {
+  "id": "p113",
+  "tramo": 112,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "carrito traía las toallas dobladas en tres.",
+  "foto": "A housekeeping cart with towels neatly folded in thirds.",
+  "mov": "A hand (Claudio's) briefly touches the folded towel, smoothing it."
+ },
+ {
+  "id": "p114",
+  "tramo": 113,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "En casa, la regla japonesa es una toalla",
+  "foto": "A shot of multiple hand towels, each designated for a different person, perhaps hanging on separate hooks.",
+  "mov": "He lifts the towel and moves it toward a hook."
+ },
+ {
+  "id": "p115",
+  "tramo": 114,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de manos por persona. Cada uno con la suya,",
+  "foto": "Claudio hangs a hand towel on a hook. Next to it, other hooks hold different colored hand towels, each separate. His hands are adjusting the towel. The pale green tiles and sink are in the background.",
+  "mov": "He pats the towel to make it hang straight."
+ },
+ {
+  "id": "p116",
+  "tramo": 115,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con su nombre si quieres, y se cambia cada tres",
+  "foto": "A close-up of a hand towel with a name embroidered or written on it, or a calendar showing a three-day change cycle.",
+  "mov": "The towel sways gently on the hook."
+ },
+ {
+  "id": "p117",
+  "tramo": 116,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "días. Y se cuelga extendida,",
+  "foto": "Claudio spreads a hand towel flat over the towel bar, making sure it hangs extended and not bunched. His hands smooth the fabric. The bathroom setting is visible: toilet, cup, bath mat.",
+  "mov": "He runs his hands along the towel to flatten it."
+ },
+ {
+  "id": "p118",
+  "tramo": 117,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no hecha un rollo dentro del mueble. Eso es lo",
+  "foto": "A hand rolling a towel and placing it inside a bathroom cabinet.",
+  "mov": "The towel flutters slightly in a gentle breeze from the window."
+ },
+ {
+  "id": "p119",
+  "tramo": 118,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "que la deja seca. Y el detalle que nadie cuenta:",
+  "foto": "Claudio stands in the bathroom, facing slightly toward the camera but not looking at it, holding a hand towel. His face is clearly visible, with a thoughtful expression. The bathroom is shown in a : pale green tiles, toilet, sink, cup, bath mat, window.",
+  "mov": "He lifts the towel and brings it closer to his chest."
+ },
+ {
+  "id": "p120",
+  "tramo": 119,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la toalla de la cara no es la de las manos.",
+  "foto": "Two distinct towels hanging on separate hooks, one labeled for the face and one for the hands.",
+  "mov": "A hand (Claudio's) points to the face towel, then to the hand towel."
+ },
+ {
+  "id": "p121",
+  "tramo": 120,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si usas la de manos para secarte la cara después de",
+  "foto": "Claudio's hands hold the hand towel near his face, as if about to dry it. The towel is slightly damp. The bathroom background shows the sink and pale green tiles. Daylight falls on his hands and the towel.",
+  "mov": "He brings the towel up to his cheek and pats it gently."
+ },
+ {
+  "id": "p122",
+  "tramo": 121,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la ducha, en tres días ya no está seca",
+  "foto": "Claudio hangs the damp hand towel back on its hook. The towel looks wet and heavy. The bathroom is visible: toilet, sink, cup, bath mat. Daylight from the window shows the moisture on the towel.",
+  "mov": "He releases the towel and it droops slightly on the hook."
+ },
+ {
+  "id": "p123",
+  "tramo": 122,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "ni en el centro. Cada cosa en su gancho,",
+  "foto": "A wide shot showing different items, like a towel and a robe, each hanging on its own separate hook.",
+  "mov": "Claudio's hand gently pulls the towel to straighten it on the hook."
+ },
+ {
+  "id": "p124",
+  "tramo": 123,
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y la del baño sólo para el baño.",
+  "foto": "Medium shot of Claudio, seen from behind and side, hanging a second towel on a separate hook next to the first. The bathroom has pale green tiles, a white toilet, and a bath mat. His red polo shirt is visible. He uses both hands to place the towel evenly. The small window with a metal grate lets in daylight.",
+  "mov": "Claudio lifts the towel and drapes it over the hook, then smooths it with his hands."
+ },
+ {
+  "id": "p125",
+  "tramo": 124,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Número cuatro: entrar al baño con los zapatos",
+  "foto": "A person wearing street shoes stepping into a bathroom.",
+  "mov": "The shoes step forward onto the tile, then stop."
+ },
+ {
+  "id": "p126",
+  "tramo": 125,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "de la calle. Piensa en lo que pisas en la calle,",
+  "foto": "A wide view of a busy city sidewalk with pedestrians walking. The ground is covered with various debris: leaves, small papers, and dirt. In the background, a bus stop sign and a supermarket entrance are visible. The scene is captured in daylight with natural shadows.",
+  "mov": "People walk past, their feet moving in and out of frame."
+ },
+ {
+  "id": "p127",
+  "tramo": 126,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en la parada del autobús, en el supermercado.",
+  "foto": "A wide shot of the man standing at a bus stop or entering a supermarket with a shopping cart.",
+  "mov": "The cart wheel rolls forward, crushing the paper."
+ },
+ {
+  "id": "p128",
+  "tramo": 127,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Ahora piensa en que entras al baño con esos mismos",
+  "foto": "Claudio, from the waist down, wearing the same brown leather shoes, steps into a bathroom. He is wearing dark trousers. The bathroom has a white toilet, a small sink, and a light blue wall. The floor is white tile. His hand is on the door frame as he enters.",
+  "mov": "Claudio steps fully into the bathroom and stops."
+ },
+ {
+  "id": "p129",
+  "tramo": 128,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "zapatos y pisas la baldosa donde",
+  "foto": "A close-up of the bathroom floor showing the brown leather shoes stepping onto a specific white tile. The tile has a faint footprint mark from the dirty shoes. The surrounding tiles are clean. A shadow falls across the floor from the left.",
+  "mov": "The shoes press down on the tile, then lift slightly."
+ },
+ {
+  "id": "p130",
+  "tramo": 129,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "después te paras descalzo. En Japón",
+  "foto": "The man standing barefoot in the bathroom.",
+  "mov": "Claudio shifts his weight from one foot to the other."
+ },
+ {
+  "id": "p131",
+  "tramo": 130,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la puerta de la casa tiene un escalón, el genkan,",
+  "foto": "A close-up of a wooden step (genkan) at the entrance of a Japanese home. The step is made of light wood and is slightly raised. On the lower level, a pair of outdoor shoes are placed neatly. On the upper level, a pair of indoor slippers are aligned. The background shows a shoji screen and a small plant.",
+  "mov": "A hand reaches down and places a pair of shoes on the lower step."
+ },
+ {
+  "id": "p132",
+  "tramo": 131,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "y ahí te quitas los zapatos. Mira la escena",
+  "foto": "Claudio, wearing a red polo shirt and dark trousers, stands at the genkan. He is bending down to remove his shoes. His face is visible, showing concentration. The entrance area has a shoe cabinet, a row of slippers, and a small mat. Daylight comes from the open door behind him.",
+  "mov": "Claudio pulls off one shoe and places it on the step."
+ },
+ {
+  "id": "p133",
+  "tramo": 132,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "que hago en mi casa: llego del mercado con las bolsas,",
+  "foto": "Claudio enters through the front door carrying two full grocery bags in his arms. He is wearing the red polo shirt and dark trousers. The genkan is visible with the raised wooden step. The door is open behind him, showing a glimpse of the outside. The bags are made of cloth and appear heavy.",
+  "mov": "Claudio steps up onto the wooden step, balancing the bags."
+ },
+ {
+  "id": "p134",
+  "tramo": 133,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "me quito los zapatos en la entrada, me pongo las pantuflas",
+  "foto": "The man putting on slippers at the entryway.",
+  "mov": "His foot slides into the slipper, and he shifts weight."
+ },
+ {
+  "id": "p135",
+  "tramo": 134,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de la casa, y cuando llego a la puerta del baño",
+  "foto": "Claudio, from the waist down, stands in front of a bathroom door. He is wearing the red polo shirt and dark trousers, and brown indoor slippers. The bathroom door is slightly ajar, showing a glimpse of the toilet. His hand is reaching for the door handle. The hallway floor is wooden.",
+  "mov": "Claudio pushes the bathroom door open."
+ },
+ {
+  "id": "p136",
+  "tramo": 135,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "me cambio otra vez, a las pantuflas del baño.",
+  "foto": "Close-up of Claudio's feet as he steps out of the brown indoor slippers and into a pair of blue bathroom slippers. The bathroom slippers are placed just inside the bathroom doorway on the tile floor. The indoor slippers are left on the wooden hallway floor. The tile is white and clean.",
+  "mov": "His foot slides into the blue slipper, and he steps forward."
+ },
+ {
+  "id": "p137",
+  "tramo": 136,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Parece un ritual, pero dura diez segundos.",
+  "foto": "Claudio stands in the genkan area, now wearing the blue bathroom slippers. He is seen from the side, with the entrance and hallway visible. He is in mid-motion, having just changed slippers. The scene includes the shoe cabinet, the row of slippers, and the wooden step. Daylight illuminates the space.",
+  "mov": "Claudio takes a step towards the bathroom, slippers sliding on the floor."
+ },
+ {
+  "id": "p138",
+  "tramo": 137,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Adentro hay pantuflas de la casa, y en el baño",
+  "foto": "A close-up of two pairs of slippers: one pair of brown indoor slippers placed on the wooden floor of the hallway, and one pair of blue bathroom slippers placed on the tile floor inside the bathroom. The bathroom door is open, showing the threshold. The slippers are neatly arranged.",
+  "mov": "A foot steps into the blue bathroom slippers."
+ },
+ {
+  "id": "p139",
+  "tramo": 138,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "hay un par aparte, sólo para el baño.",
+  "foto": "A view of the bathroom entrance from the hallway. On the left, the brown indoor slippers are on the wooden floor. On the right, just inside the bathroom on the tile, the blue bathroom slippers are placed. The bathroom contains a toilet, a small sink, and a towel. The door is open.",
+  "mov": "The bathroom door slowly swings open a bit more."
+ },
+ {
+  "id": "p140",
+  "tramo": 139,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Así el baño tiene su propio calzado y nunca",
+  "foto": "Close-up of the blue bathroom slippers on the white tile floor inside the bathroom. The slippers are slightly worn. The tile is clean. In the background, the base of the toilet is visible. The lighting is bright and even.",
+  "mov": "One slipper is nudged slightly forward by a foot."
+ },
+ {
+  "id": "p141",
+  "tramo": 140,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "sale de ahí. En el hotel, las pantuflas",
+  "foto": "A hotel bathroom entrance in Tokyo. The door is open, revealing a modern bathroom with a toilet, sink, and bathtub. Just outside the bathroom door, on the carpeted floor, a pair of white hotel slippers are placed side by side. The hallway is dimly lit with warm light.",
+  "mov": "The bathroom door is pushed open wider."
+ },
+ {
+  "id": "p142",
+  "tramo": 141,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "del baño estaban junto a la puerta, y",
+  "foto": "Close-up of the white hotel slippers placed neatly on the carpet just outside the bathroom door. The slippers are new and wrapped in a thin plastic film. The bathroom door is slightly ajar, showing a glimpse of the tile floor inside. The carpet is beige and soft.",
+  "mov": "A hand reaches down and picks up one slipper."
+ },
+ {
+  "id": "p143",
+  "tramo": 142,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "nadie las usaba fuera. Te dejo una tarea:",
+  "foto": "In the entrance of a Japanese home, a raised wooden step with a shoe cabinet and a row of slippers. Claudio, in a red polo shirt, stands on the lower level, looking down at his outdoor shoes. A small mat lies on the floor. Pale wood walls surround the area. Daylight enters from the side, casting soft shadows.",
+  "mov": "Claudio bends down and begins to untie his shoelaces."
+ },
+ {
+  "id": "p144",
+  "tramo": 143,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "pon un par de pantuflas al lado de la puerta del",
+  "foto": "Close-up of Claudio's hands placing a pair of slippers on the wooden floor beside the bathroom door. The slippers are neat and clean, positioned just outside the door frame. The bathroom interior is dimly visible. The floor is pale wood, and the door is slightly ajar. Daylight from the entrance illuminates the scene.",
+  "mov": "His hands set the slippers down and adjust their angle slightly."
+ },
+ {
+  "id": "p145",
+  "tramo": 144,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "baño, sólo para ese cuarto. En una semana",
+  "foto": "A shot of the bathroom door or the bathroom itself to introduce the room being discussed.",
+  "mov": "One slipper is nudged a centimeter closer to the door."
+ },
+ {
+  "id": "p146",
+  "tramo": 145,
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "vas a notar la diferencia en el piso.",
+  "foto": "Claudio stands in the entrance, facing slightly away from the camera, looking down at the bathroom floor. He wears a red polo shirt and has a relaxed expression. The bathroom door is open, showing a clean floor with the slippers placed outside. The entrance area is tidy, with the shoe cabinet and mat visible. Daylight fills the space.",
+  "mov": "Claudio nods slightly and gestures with his hand toward the bathroom floor."
+ },
+ {
+  "id": "p147",
+  "tramo": 146,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Número cinco: la alfombra de baño que nunca",
+  "foto": "A close-up of the dark, textured bath mat that is the subject of the narration.",
+  "mov": "Claudio señala la alfombra y luego retira la mano."
+ },
+ {
+  "id": "p148",
+  "tramo": 147,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "se lava. Esa alfombra de tela gruesa",
+  "foto": "Primer plano de la alfombra de baño de tela gruesa, húmeda y con manchas de agua, sobre el piso de losetas verdes. Se ven las fibras apelmazadas y oscuras por la humedad, y gotas de agua estancada alrededor.",
+  "mov": "Una gota de agua se desliza lentamente por la superficie de la alfombra."
+ },
+ {
+  "id": "p149",
+  "tramo": 148,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "se pisa con el agua de la ducha, se queda húmeda",
+  "foto": "A shot showing feet stepping on the wet bath mat or water dripping onto it.",
+  "mov": "Las manos de Claudio presionan la alfombra y el agua sale entre los dedos."
+ },
+ {
+  "id": "p150",
+  "tramo": 149,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "por debajo, y si la dejas en el piso todos",
+  "foto": "Vista cercana del borde de la alfombra de baño levantado, mostrando el reverso húmedo y oscuro con gotas de agua acumuladas. El piso de losetas verdes se ve manchado de humedad debajo. La luz del día ilumina las gotas.",
+  "mov": "El borde de la alfombra se levanta ligeramente y deja ver el agua acumulada debajo."
+ },
+ {
+  "id": "p151",
+  "tramo": 150,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "los días sin lavarla, guarda el agua y el olor.",
+  "foto": "A shot emphasizing the dampness or the passage of time on the mat, perhaps with a visual cue of it being dirty or old.",
+  "mov": "Claudio se inclina, aspira el olor y se endereza."
+ },
+ {
+  "id": "p152",
+  "tramo": 151,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Puede estar meses ahí. Es lo que",
+  "foto": "La alfombra de baño húmeda y oscura permanece en el mismo lugar del piso de losetas verdes. A su alrededor, pequeñas manchas de humedad y una telaraña fina en la esquina. La luz del día entra por la ventana con reja.",
+  "mov": "La sombra de la reja de la ventana se desplaza lentamente sobre la alfombra."
+ },
+ {
+  "id": "p153",
+  "tramo": 152,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "más huele cuando alguien abre la puerta del baño",
+  "foto": "A shot of someone opening the bathroom door with a reaction to the smell, or the mat inside the bathroom.",
+  "mov": "La puerta del baño se abre lentamente y la luz del día inunda el umbral."
+ },
+ {
+  "id": "p154",
+  "tramo": 153,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "por la mañana. La regla japonesa es sencilla:",
+  "foto": "Claudio, en su polo rojo, está de pie en el baño y levanta un dedo índice mientras mira hacia la ventana con reja metálica. Detrás de él se ve el inodoro blanco y la alfombra húmeda en el piso de losetas verdes. La luz del día ilumina su rostro.",
+  "mov": "Claudio levanta el dedo índice y asiente con la cabeza."
+ },
+ {
+  "id": "p155",
+  "tramo": 154,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "se lava cada semana, en la lavadora,",
+  "foto": "Primer plano de la alfombra de baño enrollada dentro de la lavadora, con la puerta de vidrio entreabierta. Se ve el tambor metálico y agua tibia con espuma. Alrededor, el piso de losetas verdes del baño y la luz del día.",
+  "mov": "La puerta de la lavadora se cierra y el tambor comienza a girar lentamente."
+ },
+ {
+  "id": "p156",
+  "tramo": 155,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "con agua tibia, y se saca al sol para que",
+  "foto": "Las manos de Claudio sacan la alfombra mojada de la lavadora y la colocan en un barreño. Se ve el agua tibia escurrirse y la tela gruesa empapada. Al fondo, la ventana con reja metálica del baño y el inodoro blanco.",
+  "mov": "Las manos de Claudio escurren la alfombra y el agua cae en el barreño."
+ },
+ {
+  "id": "p157",
+  "tramo": 156,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "seque del todo. Si no tienes sol en el baño,",
+  "foto": "La alfombra de baño extendida al sol en el patio de la casa, sobre una cuerda de tender. Se ve la tela gruesa húmeda y brillante bajo la luz solar. Alrededor, paredes de ladrillo y una maceta con plantas.",
+  "mov": "La brisa mueve ligeramente la alfombra colgada y las gotas de agua brillan."
+ },
+ {
+  "id": "p158",
+  "tramo": 157,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "se pone en el patio o junto a la ventana. Y",
+  "foto": "A bath mat placed on a patio floor or hanging by an open window to dry.",
+  "mov": "Claudio ajusta la alfombra sobre la baranda y la alisa con las manos."
+ },
+ {
+  "id": "p159",
+  "tramo": 158,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cuando la vuelvas a poner, que esté seca.",
+  "foto": "A person placing a completely dry bath mat back onto the bathroom floor.",
+  "mov": "Una mano fuera de cuadro toca la alfombra seca y la deja plana."
+ },
+ {
+  "id": "p160",
+  "tramo": 159,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "En el hotel, la alfombra de repuesto llegaba",
+  "foto": "Un carrito de limpieza en el pasillo de un hotel, con una alfombra de baño doblada sobre la pila de toallas blancas. Se ve el pasillo con puertas numeradas y luz cálida de lámparas. Al fondo, una ventana grande.",
+  "mov": "El carrito avanza lentamente por el pasillo y la alfombra doblada se balancea."
+ },
+ {
+  "id": "p161",
+  "tramo": 160,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "doblada en el carrito cada lunes. Nunca",
+  "foto": "Primer plano de una alfombra de baño doblada en cuatro sobre una pila de toallas blancas en el carrito. Se ve la textura de la tela y los dobleces perfectos. La luz del hotel ilumina la escena.",
+  "mov": "Una mano enguantada toma la alfombra doblada y la levanta."
+ },
+ {
+  "id": "p162",
+  "tramo": 161,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "vi una alfombra húmeda en el piso de un baño japonés.",
+  "foto": "Claudio, en su polo rojo, está de pie en el baño de casa y niega con la cabeza mientras mira hacia la alfombra seca en el piso de losetas verdes. Detrás de él se ve el inodoro blanco y la ventana con reja metálica. La luz del día ilumina su rostro.",
+  "mov": "Claudio niega con la cabeza y señala la alfombra seca con la mano."
+ },
+ {
+  "id": "p163",
+  "tramo": 162,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Un cuidado más: la alfombra",
+  "foto": "Primer plano de la alfombra de baño doblada por la mitad, mostrando el centro aún húmedo y oscuro. Se ve la tela gruesa con manchas de humedad en el pliegue. El piso de losetas verdes y la luz del día alrededor.",
+  "mov": "La alfombra doblada se abre ligeramente y deja ver el centro húmedo."
+ },
+ {
+  "id": "p164",
+  "tramo": 163,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "no se seca doblada, porque el centro queda",
+  "foto": "Las manos de Claudio sostienen la alfombra de baño doblada y señalan el centro húmedo. Se ve la tela gruesa y oscura en el pliegue. Al fondo, la ventana con reja metálica del baño y el inodoro blanco.",
+  "mov": "Las manos de Claudio abren la alfombra doblada y muestran el centro húmedo."
+ },
+ {
+  "id": "p165",
+  "tramo": 164,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "húmedo y el olor empieza por dentro.",
+  "foto": "Close-up of a damp, slightly dark patch on a bath mat on pale green bathroom tiles, with tiny water droplets forming along the edge, and a faint shadow underneath suggesting moisture trapped inside.",
+  "mov": "A small water droplet slowly seeps out from under the mat and rolls across the tile."
+ },
+ {
+  "id": "p166",
+  "tramo": 165,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Se estira sobre una silla o sobre la baranda,",
+  "foto": "Claudio, in his red polo shirt, bends slightly to drape a wet bath mat over the metal baranda of a small bathroom window, his hands gripping the edges, the mat hanging down, water dripping onto the sill.",
+  "mov": "He adjusts the mat so it hangs evenly, his hands smoothing the fabric."
+ },
+ {
+  "id": "p167",
+  "tramo": 166,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "con el lado de abajo hacia el sol.",
+  "foto": "The bathroom window with the metal grate, the bath mat draped over the baranda, its underside facing the sunlight streaming in, casting a bright rectangle on the pale green tiled wall and the white toilet below.",
+  "mov": "Sunlight slowly shifts across the mat, highlighting its texture as a gentle breeze makes it sway slightly."
+ },
+ {
+  "id": "p168",
+  "tramo": 167,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Un día de sol le cambia el olor a la alfombra",
+  "foto": "Close-up of the bath mat hanging in bright sunlight, the fabric looking fresh and dry, with a warm glow on the pale green tiles behind and a small window grate casting a soft shadow pattern.",
+  "mov": "The mat's surface seems to brighten as sunlight intensifies, and a few dust motes float in the beam."
+ },
+ {
+  "id": "p169",
+  "tramo": 168,
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "más que cualquier perfume.",
+  "foto": "Claudio stands in the bathroom, his face relaxed with a slight smile, holding the edge of the now-dry bath mat with one hand, the other resting on the baranda, sunlight warming the scene.",
+  "mov": "He gently pats the mat and nods, his eyes crinkling with satisfaction."
+ },
+ {
+  "id": "p170",
+  "tramo": 169,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "Te cuento de la casa de mi hermana, en el barrio",
+  "foto": "A shot of the sister's bathroom or house exterior, maintaining the green tile aesthetic of the previous shots.",
+  "mov": "The frosted window light slowly brightens as a cloud passes outside."
+ },
+ {
+  "id": "p171",
+  "tramo": 170,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "de siempre. Ella es la mujer más trabajadora",
+  "foto": "A shot of the sister's bedroom or living area, consistent with the green tiled house shown in the rest of the video.",
+  "mov": "The blanket's edge settles as if just smoothed by a hand."
+ },
+ {
+  "id": "p172",
+  "tramo": 171,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que conozco. Limpia todos los sábados,",
+  "foto": "A white-gloved hand holding a microfiber cloth, wiping the rim of the washbasin in the hotel bathroom, water droplets glistening on the porcelain.",
+  "mov": "The cloth moves in a slow circular motion around the basin rim."
+ },
+ {
+  "id": "p173",
+  "tramo": 172,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "con mucha energía, con todo lo que tiene en la repisa.",
+  "foto": "A shelf above the washbasin with several cleaning bottles and a small brush, all neatly arranged, no labels visible, in daylight.",
+  "mov": "One bottle is lifted slightly and set back down with a soft clink."
+ },
+ {
+  "id": "p174",
+  "tramo": 173,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "Cuando fui de visita, el baño brillaba.",
+  "foto": "The hotel bathroom seen from the doorway, the toilet lid closed, the washbasin and mirror spotless, floor dry, towels perfectly folded on the shelf.",
+  "mov": "A reflection of light travels across the mirror as the door opens slightly."
+ },
+ {
+  "id": "p175",
+  "tramo": 174,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Pero el olor era el mismo de siempre.",
+  "foto": "A close-up of the toilet lid, closed and shiny, with a faint smudge near the hinge, in the hotel bathroom.",
+  "mov": "A thin wisp of air moves the smudge slightly, as if a faint odor rises."
+ },
+ {
+  "id": "p176",
+  "tramo": 175,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "sato"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Le pregunté qué pasaba. Ella se rió y me",
+  "foto": "Claudio, in his red polo shirt, stands in the hotel bathroom doorway talking to Sato-san, who listens with a slight smile, both seen from the side, in daylight.",
+  "mov": "Claudio gestures with one hand while Sato-san nods."
+ },
+ {
+  "id": "p177",
+  "tramo": 176,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "dijo: \"Claudio, yo limpio. Lo que pasa",
+  "foto": "Sato-san's hand, with a simple ring, rests on the closed toilet lid, her fingers tapping it lightly, in the hotel bathroom.",
+  "mov": "Her fingers tap the lid twice and then lift away."
+ },
+ {
+  "id": "p178",
+  "tramo": 177,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "es que no sé qué estoy tapando.\" Esa frase me quedó",
+  "foto": "Claudio, in his red polo shirt, stands in the hotel bathroom with a thoughtful expression, his brow slightly furrowed, looking down at the closed toilet lid, in daylight.",
+  "mov": "He slowly raises his eyes from the lid to the mirror."
+ },
+ {
+  "id": "p179",
+  "tramo": 178,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "sato"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "dando vueltas. Esa tarde nos sentamos en",
+  "foto": "Claudio and Sato-san sit at a small table in the hotel room, two cups of coffee between them, the bathroom door ajar in the background, in daylight.",
+  "mov": "Claudio lifts his cup and takes a sip while Sato-san watches."
+ },
+ {
+  "id": "p180",
+  "tramo": 179,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la cocina con un café y le conté lo de la tapa,",
+  "foto": "Two white coffee cups on a small table, steam rising, with a sugar bowl and a spoon, in the hotel room, daylight from the window.",
+  "mov": "Steam swirls upward from the cups."
+ },
+ {
+  "id": "p181",
+  "tramo": 180,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "lo de la toalla, lo del cepillo.",
+  "foto": "Claudio's hands gesture over the table, one hand flat like a lid, the other mimicking a towel, in the hotel room, daylight.",
+  "mov": "His hands move as if closing a lid and then folding a towel."
+ },
+ {
+  "id": "p182",
+  "tramo": 181,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Me miró con cara de no creerme. Le dije: prueba",
+  "foto": "Sato-san's face, slightly skeptical, one eyebrow raised, looking at Claudio off-camera, in the hotel room, daylight.",
+  "mov": "She tilts her head slightly and blinks."
+ },
+ {
+  "id": "p183",
+  "tramo": 182,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "una semana, y sólo una cosa.",
+  "foto": "Claudio, in his red polo shirt, holds up one finger with a convincing smile, looking at Sato-san off-camera, in the hotel room, daylight.",
+  "mov": "He raises his index finger and nods once."
+ },
+ {
+  "id": "p184",
+  "tramo": 183,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Ella eligió la tapa. El sábado",
+  "foto": "The elderly woman pointing at or touching the toilet lid to indicate her choice.",
+  "mov": "The hand presses down gently on the lid."
+ },
+ {
+  "id": "p185",
+  "tramo": 184,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "siguiente me llamó y me dijo: \"Claudio,",
+  "foto": "Claudio holds a phone to his ear in the hotel room, a slight smile on his face, looking toward the window, daylight.",
+  "mov": "He nods while listening, phone pressed to his ear."
+ },
+ {
+  "id": "p186",
+  "tramo": 185,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "ya no huele igual\". Y yo le contesté lo que",
+  "foto": "A close-up of a phone screen showing an active call or the person holding the phone to their ear.",
+  "mov": "His thumb moves slightly as if about to end the call."
+ },
+ {
+  "id": "p187",
+  "tramo": 186,
+  "sec": "HISTORIA",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio",
+   "sato"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "aprendí en Tokio: ahora sabes lo que estabas tapando.",
+  "foto": "Claudio and Sato-san stand in the hotel bathroom, facing each other, Claudio speaking with a gentle expression, Sato-san listening with understanding, daylight.",
+  "mov": "Claudio gestures toward the closed toilet lid, then Sato-san nods slowly."
+ },
+ {
+  "id": "p188",
+  "tramo": 187,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Número seis: el cepillo del inodoro guardado",
+  "foto": "A toilet brush stored inside its holder or a small container.",
+  "mov": "A drop of water runs down the brush handle and falls into the cup."
+ },
+ {
+  "id": "p189",
+  "tramo": 188,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "mojado en su vasito. Lo usas,",
+  "foto": "Claudio, in his red polo shirt, squats beside the toilet and lifts the wet toilet brush out of the plastic cup. His right hand grips the handle; water drips from the bristles onto the floor. The cup remains on the floor with toothbrushes nearby.",
+  "mov": "He lifts the brush and a few drops fall."
+ },
+ {
+  "id": "p190",
+  "tramo": 189,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "lo guardas, y el cepillo queda chorreando dentro",
+  "foto": "Close-up of Claudio's hand lowering the wet toilet brush back into the plastic cup. The bristles are soaked, and water overflows the rim, dripping down the outside of the cup onto the pale green tiles.",
+  "mov": "The brush sinks into the cup and water spills over the edge."
+ },
+ {
+  "id": "p191",
+  "tramo": 190,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "del mismo vaso donde cae el agua de todo.",
+  "foto": "The plastic cup sits on the floor beside the toilet, filled with murky water. The toilet brush rests inside, its handle sticking out. Around the base of the cup, a small puddle of water spreads on the pale green tiles. Daylight from the window highlights the wetness.",
+  "mov": "The puddle slowly expands as a drop falls from the brush."
+ },
+ {
+  "id": "p192",
+  "tramo": 191,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Es como guardar la esponja mojada en el balde y",
+  "foto": "A yellow sponge, soaked with water, is squeezed inside a plastic bucket. Water drips from the sponge into the bucket, which already has a shallow layer of water at the bottom. The bucket sits on the bathroom floor near the toilet.",
+  "mov": "Water drips from the sponge into the bucket."
+ },
+ {
+  "id": "p193",
+  "tramo": 192,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "después extrañar el olor a encierro.",
+  "foto": "A close-up of the toilet brush sitting in stagnant, dirty water inside its holder, emphasizing the unpleasant result.",
+  "mov": "A wisp of steam or condensation slowly drifts upward from the bucket."
+ },
+ {
+  "id": "p194",
+  "tramo": 193,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Lo que hace Sato-san, y ahora hago yo:",
+  "foto": "Claudio, in his red polo shirt, stands in the bathroom holding the wet toilet brush. He looks down at it with a focused expression, his face clearly visible. The toilet with the lid up is behind him, and the plastic cup with toothbrushes is on the floor.",
+  "mov": "He turns the brush slightly in his hand, examining it."
+ },
+ {
+  "id": "p195",
+  "tramo": 194,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el cepillo se deja escurrir un momento,",
+  "foto": "Close-up of Claudio's hands holding the toilet brush horizontally over the toilet bowl. Water drips from the bristles into the bowl. The brush is positioned between the toilet seat and the rim, with the seat slightly raised.",
+  "mov": "Drops of water fall from the bristles into the toilet bowl."
+ },
+ {
+  "id": "p196",
+  "tramo": 195,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "apretado entre el asiento y la taza, para que la gota",
+  "foto": "Claudio's hands press the toilet brush between the raised seat and the toilet bowl, squeezing it. Water drips from the bristles directly into the bowl. The plastic cup is visible on the floor nearby, empty of the brush.",
+  "mov": "He presses the brush and water drips into the bowl."
+ },
+ {
+  "id": "p197",
+  "tramo": 196,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "caiga en el inodoro. Después se",
+  "foto": "Close-up of the toilet brush held between the seat and bowl, with the last drops falling into the water. Claudio's hand then lifts the brush away, and the dripping stops. The toilet bowl water shows ripples.",
+  "mov": "The brush is lifted and the final drop falls."
+ },
+ {
+  "id": "p198",
+  "tramo": 197,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "pasa a una base seca, que no tenga agua dentro,",
+  "foto": "Claudio places the toilet brush into a dry, empty plastic holder that sits on the floor next to the toilet. The holder has no water inside. His hand adjusts the brush so it stands upright. The pale green tiles and window are in the background.",
+  "mov": "He sets the brush into the dry holder and adjusts it."
+ },
+ {
+  "id": "p199",
+  "tramo": 198,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "y el vaso también se seca. Son diez",
+  "foto": "The man drying the plastic toilet brush holder with a cloth.",
+  "mov": "He wipes the inside of the cup with the cloth."
+ },
+ {
+  "id": "p200",
+  "tramo": 199,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "segundos de cuidado. Un cepillo chorreando",
+  "foto": "Claudio stands back, looking at the toilet area. The brush is in its dry holder, and the cup is dry and upright. He holds a small cloth in his hand. The bathroom appears tidy, with daylight from the window.",
+  "mov": "He nods slightly and turns his head to check the setup."
+ },
+ {
+  "id": "p201",
+  "tramo": 200,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "todo el día es un lugar donde se junta el olor",
+  "foto": "A toilet brush with wet bristles sits inside a plastic cup that has a little water at the bottom. The cup is on the floor beside the toilet. The scene looks neglected, with a faint haze or shadow suggesting staleness.",
+  "mov": "A drop of water falls from the brush into the cup."
+ },
+ {
+  "id": "p202",
+  "tramo": 201,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "sin que nadie lo vea. Un cepillo seco",
+  "foto": "Claudio's hand touches the dry toilet brush in its holder. The brush is completely dry, and the holder has no water. The plastic cup nearby is also dry. Claudio's red polo shirt is partially visible as he stands beside the toilet.",
+  "mov": "His hand lightly taps the dry bristles."
+ },
+ {
+  "id": "p203",
+  "tramo": 202,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "es un cepillo que no huele. La gente",
+  "foto": "Close-up of the dry toilet brush in its holder. The bristles are clean and dry, and the holder is free of water. The pale green tiles reflect daylight. No moisture is visible anywhere around the brush.",
+  "mov": "A slight breeze or movement makes the bristles tremble slightly."
+ },
+ {
+  "id": "p204",
+  "tramo": 203,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "pregunta si hace falta un cepillo nuevo. No hace",
+  "foto": "Claudio stands in the bathroom, facing slightly away from the camera, holding the dry toilet brush. He looks at it thoughtfully. The toilet and window are in the background. His face is clearly visible, showing a calm expression.",
+  "mov": "He turns the brush over in his hands, inspecting it."
+ },
+ {
+  "id": "p205",
+  "tramo": 204,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "falta. Lo que hace falta es el lugar",
+  "foto": "Wide view of the bathroom: Claudio in his red polo shirt stands next to the toilet, placing the dry toilet brush into its holder. The plastic cup is dry on a shelf. The pale green tiles, window, and bath mat are all visible. The space looks clean and organized.",
+  "mov": "He sets the brush in the holder and steps back."
+ },
+ {
+  "id": "p206",
+  "tramo": 205,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "seco. Cuando el cepillo se seca entre cada",
+  "foto": "Close-up of a white toilet brush sitting inside a translucent plastic cup on the pale green tiled floor. The bristles are damp and slightly discolored. The cup has a small amount of water at the bottom. The bathroom is lit by natural daylight from a small window with a metal grate, casting soft shadows on the tiles.",
+  "mov": "The brush shifts slightly inside the cup as a drop of water falls from the bristles."
+ },
+ {
+  "id": "p207",
+  "tramo": 206,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "uso, dura más y el vaso no huele",
+  "foto": "A clean, dry toilet brush holder with no bad odor.",
+  "mov": "Claudio twists the brush handle, wringing water out of the bristles."
+ },
+ {
+  "id": "p208",
+  "tramo": 207,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "a nada. Cámbialo cada tres meses,",
+  "foto": "Wide view of the bathroom: pale green tiles, white toilet with lid up, plastic cup with toothbrushes beside it, bath mat on the floor, and a small window with a metal grate. The toilet brush is now standing upright in its cup, and the area around the toilet base is dry. Daylight illuminates the room, highlighting the clean, dry surfaces.",
+  "mov": "The toilet brush settles into the cup, and the cup wobbles slightly before coming to rest."
+ },
+ {
+  "id": "p209",
+  "tramo": 208,
+  "sec": "SEIS",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "como dice el libro, o después de una gripe.",
+  "foto": "Close-up of Claudio's hands holding the toilet brush. He is placing it back into the plastic cup. The bristles are now dry and clean. The cup is on the floor next to the toilet. In the background, the pale green tiles and the edge of the bath mat are visible. Natural light from the window illuminates the scene.",
+  "mov": "Claudio's hand releases the brush, and it stands upright in the cup."
+ },
+ {
+  "id": "p210",
+  "tramo": 209,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Número siete: cerrar el baño húmedo",
+  "foto": "Claudio's hands, tanned and with a simple silver ring, reach to close the white bathroom door of the pale green tiled bathroom. The door is half open, showing a sliver of the warm late-afternoon light from the small grated window. A white toilet with the lid up and a plastic cup with toothbrushes are visible in the background.",
+  "mov": "His hand pushes the door until it clicks shut."
+ },
+ {
+  "id": "p211",
+  "tramo": 210,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "después de la ducha. Este es el hábito que más",
+  "foto": "Close-up of the bathroom mirror, completely fogged with condensation. Water droplets streak down the glass. In the reflection, blurred shapes of pale green tiles and a shower curtain. Warm light from the window creates a soft glow on the mist.",
+  "mov": "A large droplet slowly runs down the fogged mirror."
+ },
+ {
+  "id": "p212",
+  "tramo": 211,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "me costó enseñar en mi casa. Después de bañarte,",
+  "foto": "Claudio stands in the bathroom doorway, facing slightly away from the camera, looking at the steamy bathroom. He wears a red polo shirt. The bathroom is filled with mist; the mirror is fogged, the shower curtain is drawn, and water drips from the showerhead. Warm light from the window illuminates the steam.",
+  "mov": "Claudio lifts his hand and gestures toward the foggy mirror."
+ },
+ {
+  "id": "p213",
+  "tramo": 212,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el vapor queda pegado en las paredes, en el espejo,",
+  "foto": "A close-up of a bathroom mirror covered in condensation (steam) after a shower.",
+  "mov": "A droplet slides down the tile and disappears into the grout."
+ },
+ {
+  "id": "p214",
+  "tramo": 213,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "en la cortina, y se queda ahí",
+  "foto": "The plastic shower curtain, translucent and beaded with condensation, hangs inside the shower area. Behind it, the pale green tiles are barely visible. The curtain rod is metal. Warm light from the window casts a soft glow on the damp curtain.",
+  "mov": "The curtain sways slightly, and a drop of water falls from its bottom edge."
+ },
+ {
+  "id": "p215",
+  "tramo": 214,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "horas. Ahí nace el moho,",
+  "foto": "Extreme close-up of the corner where the wall meets the ceiling in the bathroom. Dark mold spots are visible on the pale green paint and in the grout lines. Condensation covers the surface. Warm light from the window illuminates the mold.",
+  "mov": "A water droplet forms and drips down the moldy corner."
+ },
+ {
+  "id": "p216",
+  "tramo": 215,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "el olor a encierro, las manchas oscuras en",
+  "foto": "View of the bathroom floor near the shower, showing dark stains and mold on the grout between the pale green tiles. A damp bath mat lies nearby. The air is still steamy. Warm light from the window casts shadows on the floor.",
+  "mov": "A small puddle of water slowly spreads across the stained grout."
+ },
+ {
+  "id": "p217",
+  "tramo": 216,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "las juntas. La rutina del hotel dura cinco",
+  "foto": "Claudio's hand holds a blue rubber squeegee against the wet pale green tiles. Water droplets are being pushed down the wall. His red polo sleeve is visible. The tiles are shiny with moisture. Warm light from the window reflects off the wet surface.",
+  "mov": "His hand pulls the squeegee downward, leaving a clear dry strip on the tile."
+ },
+ {
+  "id": "p218",
+  "tramo": 217,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "minutos: se pasa una rasqueta por",
+  "foto": "Claudio, from the chest down, is seen from behind, using the squeegee on the shower wall. His red polo shirt is visible. The bathroom is still steamy; the mirror is fogged. The small window with metal grate is on the left, letting in warm light. Water drips from the squeegee.",
+  "mov": "He moves the squeegee in a long stroke from top to bottom."
+ },
+ {
+  "id": "p219",
+  "tramo": 218,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "las paredes, se seca el espejo con un paño",
+  "foto": "Claudio's hand holds a gray microfiber cloth, wiping the bathroom mirror in a circular motion. The mirror is partially clear, reflecting the pale green tiles and a bit of his red polo. Water streaks disappear under the cloth. Warm light from the window illuminates the scene.",
+  "mov": "His hand moves the cloth in a circular wiping motion."
+ },
+ {
+  "id": "p220",
+  "tramo": 219,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "de microfibra, se abre la ventana o se",
+  "foto": "Claudio, seen from behind, reaches up to open the small bathroom window with the metal grate. His red polo shirt stretches across his back. The bathroom is still slightly steamy. Outside, warm late-afternoon light enters. The toilet and sink are visible in the foreground.",
+  "mov": "He pushes the window open, and the metal grate swings outward."
+ },
+ {
+  "id": "p221",
+  "tramo": 220,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "prende el ventilador durante treinta minutos,",
+  "foto": "Claudio's hand presses the button on a small white electric fan placed on the bathroom counter next to the sink. The fan blades begin to spin. The pale green tiles and the plastic cup with toothbrushes are in the background. Warm light from the window hits the fan.",
+  "mov": "His finger presses the button, and the fan blades start rotating."
+ },
+ {
+  "id": "p222",
+  "tramo": 221,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y la puerta queda abierta para que el aire circule.",
+  "foto": "The bathroom door is open, showing the hallway beyond. The pale green tiled bathroom is visible with the window open and the fan running. Warm late-afternoon light spills into the hallway. The white toilet and sink are in view. A bath mat lies on the floor.",
+  "mov": "The open door slowly drifts a few inches wider."
+ },
+ {
+  "id": "p223",
+  "tramo": 222,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Así el baño queda seco",
+  "foto": "Close-up of the bathroom floor tiles, now dry and clean. The pale green tiles and white grout are visible. A dry bath mat lies nearby. The small window with metal grate lets in warm light, creating a bright patch on the floor. No water droplets remain.",
+  "mov": "A slight breeze from the window causes the bath mat's edge to flutter."
+ },
+ {
+  "id": "p224",
+  "tramo": 223,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "antes de que llegue la noche. No necesitas un producto",
+  "foto": "The man holding up the squeegee while gesturing that no new cleaning product is needed.",
+  "mov": "He turns his head slightly to look at the dry shower area."
+ },
+ {
+  "id": "p225",
+  "tramo": 224,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "nuevo. Necesitas la rasqueta,",
+  "foto": "Claudio's hand places the blue rubber squeegee on the edge of the white sink. Next to it, a gray microfiber cloth is folded. The pale green tiles are in the background. Warm light from the window illuminates the objects.",
+  "mov": "His hand sets the squeegee down gently."
+ },
+ {
+  "id": "p226",
+  "tramo": 225,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "un paño seco y la paciencia de esperar media",
+  "foto": "Claudio, from the waist up, stands by the bathroom window, looking out. His red polo shirt is visible. He holds the microfiber cloth in one hand. The bathroom is dry and clean. The small window with metal grate is open, and warm light streams in. The fan is still running on the counter.",
+  "mov": "He glances at his watch on his wrist."
+ },
+ {
+  "id": "p227",
+  "tramo": 226,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "hora. La prueba más simple: entra al",
+  "foto": "View from the hallway into the open bathroom door. The bathroom is dry, with the window open and the fan running. The pale green tiles, white toilet, sink, and bath mat are visible. Warm late-afternoon light spills from the bathroom into the hallway. The scene is calm and orderly.",
+  "mov": "The fan blades continue to spin slowly."
+ },
+ {
+  "id": "p228",
+  "tramo": 227,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "baño media hora después de la ducha. Si el",
+  "foto": "The bathroom thirty minutes after a shower: pale green tiles glisten with condensation, a white toilet with the lid up, a plastic cup with toothbrushes beside it, a bath mat on the floor, and a small window with a metal grate. Warm late-afternoon light filters through, illuminating the misty air.",
+  "mov": "A faint wisp of steam rises and dissipates near the window."
+ },
+ {
+  "id": "p229",
+  "tramo": 228,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "espejo sigue empañado y el aire pesa,",
+  "foto": "A shot of a bathroom mirror covered in condensation or fog, demonstrating the failed test described in the narration.",
+  "mov": "A water droplet slowly rolls down the fogged mirror."
+ },
+ {
+  "id": "p230",
+  "tramo": 229,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "lo cerraste mal. Si el aire está fresco y",
+  "foto": "Claudio, in his plain red polo shirt, stands beside the bathroom window, his hands gripping the metal grate. The window is open, letting in fresh air. The mirror is clear, reflecting the pale green tiles. The toilet and bath mat are visible in the background.",
+  "mov": "Claudio pushes the window open a bit more with his hands."
+ },
+ {
+  "id": "p231",
+  "tramo": 230,
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el espejo se ve, lo hiciste bien.",
+  "foto": "The bathroom mirror, now completely clear, sharply reflecting the opposite wall with its pale green tiles and the white toilet. The glass is spotless, and the warm late-afternoon light creates a bright, crisp reflection. No fog or condensation is visible.",
+  "mov": "A subtle shift in light as the reflection sharpens."
+ },
+ {
+  "id": "p232",
+  "tramo": 231,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Número ocho: la cortina de baño con el",
+  "foto": "In a Latin American bathroom with pale green tiles, a white toilet with the lid up, a plastic cup with toothbrushes on the tank, and a bath mat on the floor, a 58-year-old man in a red polo shirt stands beside the bathtub, one hand pulling back a white plastic shower curtain to reveal a dark black line along its bottom edge. Warm late-afternoon light enters through a small grated window.",
+  "mov": "He pulls the curtain back slowly, exposing the dark bottom edge."
+ },
+ {
+  "id": "p233",
+  "tramo": 232,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "borde negro. Esa franja oscura en la parte de abajo",
+  "foto": "A shot showing the bottom edge of the shower curtain with visible mold or dirt on the black stripe, as described by the narrator.",
+  "mov": "The curtain sways gently, making the dark edge move slightly."
+ },
+ {
+  "id": "p234",
+  "tramo": 233,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "no es suciedad de un día. Es moho",
+  "foto": "A 58-year-old man in a red polo shirt leans over the bathtub, holding the bottom of a white plastic shower curtain with both hands. He points with one finger at the thick black mold stains embedded in the plastic. The bathroom has pale green tiles, a white toilet with the lid up, and a plastic cup with toothbrushes on the tank. Warm late-afternoon light comes through a small grated window.",
+  "mov": "He rubs his thumb against the black stain, trying to scrape it."
+ },
+ {
+  "id": "p235",
+  "tramo": 234,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que se ha pegado al plástico, porque la cortina",
+  "foto": "Extreme close-up of the bottom edge of a white plastic shower curtain. The black mold is deeply ingrained in the plastic, forming irregular dark patches and streaks. The plastic looks slightly damp and wrinkled, with the black mold contrasting against the white surface. The background is blurred, showing pale green tiles and warm light from a window.",
+  "mov": "A drop of water runs down the plastic, passing over the black mold."
+ },
+ {
+  "id": "p236",
+  "tramo": 235,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "queda mojada y enrollada todo el tiempo.",
+  "foto": "In the bathroom, a 58-year-old man in a red polo shirt stands by the bathtub, holding a white plastic shower curtain bunched up and dripping wet. He squeezes it, and water drips into the tub. The curtain is folded and rolled, with the black bottom edge visible. Pale green tiles, a white toilet with the lid up, and a plastic cup with toothbrushes are in the background. Warm late-afternoon light.",
+  "mov": "He squeezes the curtain, and water drips steadily into the tub."
+ },
+ {
+  "id": "p237",
+  "tramo": 236,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Muchos la lavan con un trapo y la cuelgan de",
+  "foto": "In a Latin American bathroom with pale green tiles, a 58-year-old man in a red polo shirt stands on a bath mat, wiping a white plastic shower curtain with a cloth. He holds the curtain bunched in one hand and rubs it with the cloth. The white toilet with the lid up, a plastic cup with toothbrushes, and a small grated window are visible. Warm late-afternoon light fills the room.",
+  "mov": "He wipes the curtain with the cloth in a circular motion."
+ },
+ {
+  "id": "p238",
+  "tramo": 237,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "nuevo igual de mojada. En Japón la cortina",
+  "foto": "A shot showing the shower curtain hanging straight and open to dry completely, as described in the narration.",
+  "mov": "Water droplets slide down the curtain and fall."
+ },
+ {
+  "id": "p239",
+  "tramo": 238,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "se abre plana para que seque por completo,",
+  "foto": "A 58-year-old man in a red polo shirt stands in a bathroom with pale green tiles, pulling a white plastic shower curtain fully open so it hangs flat and extended along the rod. The curtain is no longer bunched. The white toilet with the lid up, a plastic cup with toothbrushes, and a small window with a metal grate are visible. Warm late-afternoon light streams in.",
+  "mov": "He slides the curtain open along the rod until it is flat."
+ },
+ {
+  "id": "p240",
+  "tramo": 239,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y se lava en la lavadora una vez al mes.",
+  "foto": "In a bathroom with pale green tiles, a 58-year-old man in a red polo shirt opens the door of a white washing machine and places a folded white fabric shower curtain inside. The washing machine is next to the bathtub. A plastic cup with toothbrushes and a white toilet with the lid up are in the background. Warm late-afternoon light comes through a small grated window.",
+  "mov": "He pushes the curtain into the washing machine and closes the door."
+ },
+ {
+  "id": "p241",
+  "tramo": 240,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Si el plástico ya tiene el borde negro, no hay",
+  "foto": "Close-up of the bottom edge of a white plastic shower curtain, heavily stained with black mold. The dark mold is thick and embedded in the plastic, showing irregular patches. The plastic is slightly wrinkled and damp. In the blurred background, pale green tiles and warm light from a grated window are visible.",
+  "mov": "The curtain sways slightly, and the black mold becomes more visible."
+ },
+ {
+  "id": "p242",
+  "tramo": 241,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cepillo que lo saque. Lo más rápido es cambiarla",
+  "foto": "A 58-year-old man in a red polo shirt stands in a bathroom with pale green tiles, holding a white plastic shower curtain with a blackened bottom edge. He holds a scrub brush in his other hand, but he shakes his head and lowers the brush. The white toilet with the lid up and a plastic cup with toothbrushes are in the background. Warm late-afternoon light.",
+  "mov": "He shakes his head and drops the brush onto the bath mat."
+ },
+ {
+  "id": "p243",
+  "tramo": 242,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "por una de tela, que se lava y seca.",
+  "foto": "In a bathroom with pale green tiles, a 58-year-old man in a red polo shirt hangs a light beige fabric shower curtain on the rod. The fabric curtain is soft and opaque, replacing the old plastic one. The white toilet with the lid up, a plastic cup with toothbrushes, and a small window with a metal grate are visible. Warm late-afternoon light fills the room.",
+  "mov": "He slides the fabric curtain along the rod until it is fully hung."
+ },
+ {
+  "id": "p244",
+  "tramo": 243,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Y la dejas extendida, no doblada ni enrollada",
+  "foto": "Close-up of a light beige fabric shower curtain hanging fully extended and flat from a metal rod. The fabric is smooth and dry, with soft folds. In the background, pale green tiles and a small window with a metal grate are visible. Warm late-afternoon light creates gentle shadows on the fabric.",
+  "mov": "The fabric curtain sways gently, showing its full extension."
+ },
+ {
+  "id": "p245",
+  "tramo": 244,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "dentro de la tina. Ese detalle",
+  "foto": "A 58-year-old man in a red polo shirt stands in a bathroom with pale green tiles, looking down at the inside of the bathtub. He holds the edge of a light beige fabric shower curtain, ensuring it hangs outside the tub and not bunched inside. The white toilet with the lid up and a plastic cup with toothbrushes are in the background. Warm late-afternoon light.",
+  "mov": "He adjusts the curtain so it hangs straight down outside the tub."
+ },
+ {
+  "id": "p246",
+  "tramo": 245,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "es la diferencia entre una cortina",
+  "foto": "A close-up comparison of a clean shower curtain versus a dirty, smelly one.",
+  "mov": "The plastic curtain sways slightly, while the fabric curtain remains still."
+ },
+ {
+  "id": "p247",
+  "tramo": 246,
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "limpia y una cortina que huele.",
+  "foto": "A shot emphasizing the fresh, clean appearance of the shower curtain.",
+  "mov": "He nods slightly and lets the fabric curtain swing gently."
+ },
+ {
+  "id": "p248",
+  "tramo": 247,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Si hasta aquí ya estás pensando en tu propio",
+  "foto": "Claudio, a 58-year-old Latin American man with short curly black hair going gray and a gray-stubbled beard, wearing a plain red polo shirt, stands in a pale green tiled bathroom. He looks slightly off-camera with a thoughtful expression, as if imagining his own bathroom. Behind him, a white toilet with the lid up and a small window with a metal grate are visible.",
+  "mov": "Claudio raises his eyebrows and tilts his head slightly, then nods once."
+ },
+ {
+  "id": "p249",
+  "tramo": 248,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "baño, te lo digo otra vez: la regla siete",
+  "foto": "A shot of the narrator holding the book with the cover visible or the pages blurred.",
+  "mov": "His index finger taps the cover twice, then moves away."
+ },
+ {
+  "id": "p250",
+  "tramo": 249,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "del libro está en la página quince,",
+  "foto": "Wide view of the bathroom: pale green tiles, white toilet with lid up, plastic cup with toothbrushes on the tank, bath mat on the floor, and a small window with metal grate letting in daylight. The space is clean and orderly, with a faint shadow cast by the window.",
+  "mov": "A gentle breeze moves the bath mat slightly, and the toothbrushes sway in the cup."
+ },
+ {
+  "id": "p251",
+  "tramo": 250,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "con la tapa, los cepillos, las toallas",
+  "foto": "Close-up of the bathroom counter: a white toilet lid (closed) with a plastic cup holding three toothbrushes next to it, and a folded beige towel on a rack. The items are arranged neatly, with water droplets on the cup and a soft reflection on the lid.",
+  "mov": "A drop of water runs down the side of the plastic cup."
+ },
+ {
+  "id": "p252",
+  "tramo": 251,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y la alfombra. Todo el método,",
+  "foto": "Claudio's torso and hands are visible as he gestures toward the floor. He wears a red polo shirt. In the foreground, a textured bath mat lies on the pale green tiles. His hand sweeps over the mat, indicating the entire method.",
+  "mov": "His hand sweeps from left to right over the bath mat."
+ },
+ {
+  "id": "p253",
+  "tramo": 252,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "las sesenta y seis reglas de la casa, por menos",
+  "foto": "Close-up of a stack of small, plain cards or tiles with no text, arranged in a neat pile on the bathroom floor next to the bath mat. The pale green tiles and the edge of the mat are visible. The stack suggests many rules.",
+  "mov": "The top card slides slightly off the stack."
+ },
+ {
+  "id": "p254",
+  "tramo": 253,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "de lo que cuesta una sola limpieza profesional.",
+  "foto": "Claudio stands in the bathroom, facing slightly off-camera with a confident, warm expression. He wears his red polo shirt. With one hand, he makes a gesture as if weighing something, comparing value. The white toilet and pale green tiles are behind him.",
+  "mov": "He moves his hand up and down twice, as if balancing scales."
+ },
+ {
+  "id": "p255",
+  "tramo": 254,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Está en la descripción, con el link.",
+  "foto": "A close-up of a phone screen showing a video description box with a highlighted link.",
+  "mov": "His finger taps the air twice, pointing down."
+ },
+ {
+  "id": "p256",
+  "tramo": 255,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Y si quieres verlo en el teléfono ahora mismo,",
+  "foto": "Claudio stands in the bathroom, holding a smartphone in one hand and gesturing with the other, as if showing how to view something on the phone. The bathroom setting is fully visible: pale green tiles, toilet, cup with toothbrushes, bath mat, and window. He is focused on the phone.",
+  "mov": "He brings the phone closer to his face and then lowers it slightly."
+ },
+ {
+  "id": "p257",
+  "tramo": 256,
+  "sec": "CTA2",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en la pantalla tienes el código QR.",
+  "foto": "Close-up of a smartphone screen held in Claudio's hand, displaying a large, clear QR code. The screen is bright, and the QR code is sharp. The background is blurred, showing pale green tiles. No other text is visible.",
+  "mov": "The phone screen tilts slightly, catching the light."
+ },
+ {
+  "id": "p258",
+  "tramo": 257,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Número nueve: el celular que entra al baño",
+  "foto": "In the service corridor of a Tokyo hotel, grey linoleum floor, a metal cleaning cart with folded towels and small bottles, white walls, a fire door at the end. Claudio, in red polo, walks toward a closed door carrying a smartphone in his right hand, about to enter.",
+  "mov": "Claudio steps forward and pushes the door open with his left hand while holding the phone."
+ },
+ {
+  "id": "p259",
+  "tramo": 258,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "y después va a la mesa. Lo sé, el teléfono",
+  "foto": "Claudio's hands place the smartphone on a wooden table in a living room. The phone lies flat, screen dark. Behind, a sofa and a lamp. The table is clear except for the phone. Daylight from a window.",
+  "mov": "Claudio's hand releases the phone and pulls back."
+ },
+ {
+  "id": "p260",
+  "tramo": 259,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "es lo que más se queda en el baño con nosotros.",
+  "foto": "Close-up of a smartphone resting on the edge of a white bathroom sink. Water droplets on the ceramic. A bar of soap and a toothbrush cup nearby. The phone's screen reflects the ceiling light.",
+  "mov": "A drop of water falls from the faucet onto the sink, near the phone."
+ },
+ {
+  "id": "p261",
+  "tramo": 260,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Pero piensa en lo que toca el teléfono en el baño:",
+  "foto": "Claudio's hand holds the smartphone, turning it over. The bathroom background shows a towel rack and a mirror. The phone's back is visible, with fingerprints and smudges. Claudio wears a red polo, his arm extended.",
+  "mov": "Claudio's hand rotates the phone slowly, showing the back."
+ },
+ {
+  "id": "p262",
+  "tramo": 261,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el borde del lavamanos, la manija de la puerta,",
+  "foto": "Close-up of the bathroom sink edge and the door handle. The smartphone lies on the sink edge, then the view shifts to the door handle, showing the phone's shadow on the floor. Tiles are white with grey grout.",
+  "mov": "The camera pans from the sink edge to the door handle, revealing the phone's position."
+ },
+ {
+  "id": "p263",
+  "tramo": 262,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "el piso. Y después lo pones sobre",
+  "foto": "Claudio stands in the bathroom, looking down at the floor. The smartphone lies on the tiled floor near his feet. He wears red polo and dark trousers. The bathroom has a shower curtain and a small window.",
+  "mov": "Claudio bends down and picks up the phone from the floor."
+ },
+ {
+  "id": "p264",
+  "tramo": 263,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "la mesa donde comes. En Japón el",
+  "foto": "Claudio's hand places the smartphone on a dining table set with a plate and fork. The table is wooden, with a glass of water. The phone lies next to the plate. Background shows a kitchen counter.",
+  "mov": "Claudio's hand sets the phone down and slides it slightly."
+ },
+ {
+  "id": "p265",
+  "tramo": 264,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "teléfono se queda afuera. Sato-san no",
+  "foto": "Close-up of a small shelf or tray outside a bathroom door in a hotel corridor. A smartphone rests on the tray. The corridor has grey linoleum and white walls. A cleaning cart is partially visible.",
+  "mov": "A hand enters the frame and places the phone on the tray, then withdraws."
+ },
+ {
+  "id": "p266",
+  "tramo": 265,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "permitía que nadie llevara el celular al cuarto de",
+  "foto": "Sato-san, in dark grey hotel uniform with name badge, stands in the service corridor. She holds up her hand in a gentle stopping gesture, looking at Claudio (off-frame). Her expression is strict but kind. The cleaning cart is behind her.",
+  "mov": "Sato-san raises her hand and shakes her head slightly."
+ },
+ {
+  "id": "p267",
+  "tramo": 266,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "limpieza, y al principio yo lo encontraba exagerado.",
+  "foto": "A shot showing the narrator looking skeptical or surprised in the hallway, reacting to the strict rule.",
+  "mov": "Sato-san's finger taps the table twice."
+ },
+ {
+  "id": "p268",
+  "tramo": 267,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Hoy lo hago en mi casa: el celular se",
+  "foto": "In a living room, Claudio walks from a hallway and places his smartphone on a coffee table. The room has a sofa, a lamp, and a window with daylight. The table is clear. Claudio wears red polo and jeans.",
+  "mov": "Claudio walks to the table and sets the phone down."
+ },
+ {
+  "id": "p269",
+  "tramo": 268,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "queda en la mesa de la sala, y si lo necesito",
+  "foto": "A shot of the narrator picking up the phone from the table or looking at it, indicating he needs to use it.",
+  "mov": "Claudio's hand hovers over the phone, then retreats."
+ },
+ {
+  "id": "p270",
+  "tramo": 269,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en el baño, lo limpio con un paño después.",
+  "foto": "Close-up of Claudio's hands wiping a smartphone with a small cloth. The phone is held over a bathroom sink. The cloth is light blue. Water droplets on the sink. Claudio's red sleeve is visible.",
+  "mov": "Claudio's hand moves the cloth across the phone's screen."
+ },
+ {
+  "id": "p271",
+  "tramo": 270,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Parece poco, pero es el hábito que más veces",
+  "foto": "Claudio stands in the living room, looking at the smartphone on the coffee table. He is about to turn away. The room is tidy, with a sofa and a bookshelf (no readable titles). Daylight.",
+  "mov": "Claudio turns his body away from the table."
+ },
+ {
+  "id": "p272",
+  "tramo": 271,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "repites en el día. Yo sé lo que piensas:",
+  "foto": "Close-up of the smartphone on the coffee table, screen dark. A hand (Claudio's) enters the frame and points at the phone, then taps the table next to it. The table surface is wood grain.",
+  "mov": "The hand taps the table twice next to the phone."
+ },
+ {
+  "id": "p273",
+  "tramo": 272,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "¿y si llaman? Déjalo en la mesa de la sala con",
+  "foto": "Claudio stands in the living room, looking at the smartphone on the coffee table. He gestures with his open palm toward the phone, as if explaining. The room is bright with daylight. He wears red polo.",
+  "mov": "Claudio opens his palm toward the phone and nods."
+ },
+ {
+  "id": "p274",
+  "tramo": 273,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "el volumen alto. Diez minutos sin el teléfono",
+  "foto": "Claudio's hand adjusts the volume buttons on the side of the smartphone, which lies on the coffee table. The screen shows a volume slider (no text). The living room background is blurred.",
+  "mov": "Claudio's fingers press the volume up button repeatedly."
+ },
+ {
+  "id": "p275",
+  "tramo": 274,
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no le han hecho daño a nadie. Una vez, en el hotel, Sato-san me vio entrar al cuarto de limpieza con el celular en el bolsillo. No me dijo nada. Sólo señaló la mesa del pasillo, y yo entendí. Desde en",
+  "foto": "A shot of Sato-san pointing to a table in the hallway while the narrator holds a phone in his pocket.",
+  "mov": "The hand slides the phone to the center and withdraws."
+ },
+ {
+  "id": "p276",
+  "tramo": 275,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Número diez: limpiar el baño una vez por",
+  "foto": "The small Tokyo business-hotel bathroom in daylight: white tiles, compact white toilet with closed lid, narrow washbasin, shelf with folded white towels, frosted window. Claudio, in red polo, stands with a bucket and cloth, starting to clean the bathroom.",
+  "mov": "Claudio wipes the toilet lid with a cloth."
+ },
+ {
+  "id": "p277",
+  "tramo": 276,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "semana, una hora. Así lo hacemos casi",
+  "foto": "Claudio's hands hold a small kitchen timer, its dial showing a one-hour mark, while he cleans the bathroom sink with a cloth. The timer rests on the edge of the sink, and the white tiles reflect the daylight.",
+  "mov": "Claudio turns the timer dial."
+ },
+ {
+  "id": "p278",
+  "tramo": 277,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "todos. Un sábado de cuatro horas,",
+  "foto": "A close-up of a wall clock in the bathroom, its hands indicating four hours, with a bucket and mop leaning against the tiled wall. The clock face is plain, and the floor is dry.",
+  "mov": "The clock's second hand sweeps around."
+ },
+ {
+  "id": "p279",
+  "tramo": 278,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "con todo el equipo, y el resto de la semana el",
+  "foto": "The bathroom is filled with cleaning supplies: a bucket, mop, and cloths. Claudio, in red polo, stands with a mop, and the room appears cluttered but organized, as if a team has just finished cleaning.",
+  "mov": "Claudio leans the mop against the wall."
+ },
+ {
+  "id": "p280",
+  "tramo": 279,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "baño se llena de lo que no se vio. La limpieza",
+  "foto": "The bathroom sink area shows scattered hairs and water spots on the counter, with a toothbrush holder and soap dish. A cloth lies nearby, and the mirror reflects the untidy scene.",
+  "mov": "A drop of water falls from the faucet."
+ },
+ {
+  "id": "p281",
+  "tramo": 280,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "de un sábado nunca alcanza. La rutina",
+  "foto": "A close-up of a cleaning cloth wiping the bathroom floor, revealing a streak of dirt on the white tiles. The cloth is damp, and the grout lines are visible.",
+  "mov": "The cloth moves across the tile, leaving a clean streak."
+ },
+ {
+  "id": "p282",
+  "tramo": 281,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "japonesa es al revés: un minuto",
+  "foto": "Claudio, in red polo, stands in the bathroom holding a small cloth and a spray bottle, ready to clean. The room is tidy, with the toilet lid closed and towels folded on the shelf.",
+  "mov": "Claudio shakes the spray bottle."
+ },
+ {
+  "id": "p283",
+  "tramo": 282,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "cada día, con un paño y un poco de limpiador.",
+  "foto": "Claudio's hands hold a cloth and a bottle of cleaner, wiping the toilet seat. The toilet lid is up, and the white porcelain gleams under the daylight from the frosted window.",
+  "mov": "Claudio wipes the toilet seat with the cloth."
+ },
+ {
+  "id": "p284",
+  "tramo": 283,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Se pasa el asiento, la llave del agua",
+  "foto": "A close-up of the toilet's water valve, a chrome lever, being wiped with a cloth. The cloth is white, and the valve is shiny, with water droplets nearby.",
+  "mov": "The cloth moves over the valve, polishing it."
+ },
+ {
+  "id": "p285",
+  "tramo": 284,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "y el piso donde pisa el pie. Tres movimientos,",
+  "foto": "Claudio, in red polo, crouches and wipes the floor where feet step, near the toilet. The floor is white tile, and a bucket with cleaning supplies sits nearby.",
+  "mov": "Claudio wipes the floor in a circular motion."
+ },
+ {
+  "id": "p286",
+  "tramo": 285,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "un minuto, después de la ducha",
+  "foto": "Claudio stands in the bathroom, drying his hands with a small towel after a shower. The shower area is visible with a glass door, and steam lingers in the air.",
+  "mov": "Claudio rubs his hands with the towel."
+ },
+ {
+  "id": "p287",
+  "tramo": 286,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "o al levantarte. Sato-san",
+  "foto": "A close-up of a small kitchen timer on the bathroom shelf, its dial set to one minute. The timer is white with a simple face, and the shelf is clean.",
+  "mov": "The timer's hand moves slowly."
+ },
+ {
+  "id": "p288",
+  "tramo": 287,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "sato"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "lo cronometraba con un reloj de cocina.",
+  "foto": "Sato-san, in dark gray hotel uniform, stands in the bathroom holding a kitchen timer, observing the cleaning process. The bathroom is spotless, with folded towels and a closed toilet lid.",
+  "mov": "Sato-san glances at the timer and nods."
+ },
+ {
+  "id": "p289",
+  "tramo": 288,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Yo lo hice con el reloj del horno en mi casa, y",
+  "foto": "Claudio's hands place a kitchen timer on the bathroom counter, next to a cloth and spray bottle. The timer is set, and the counter is clean.",
+  "mov": "Claudio presses the timer's start button."
+ },
+ {
+  "id": "p290",
+  "tramo": 289,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en un mes el baño estaba más limpio que con",
+  "foto": "A close-up of a sparkling clean bathroom sink and faucet, with no water spots. The chrome shines, and a folded towel rests on the edge.",
+  "mov": "A drop of water drips from the faucet."
+ },
+ {
+  "id": "p291",
+  "tramo": 290,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "una tarde entera de sábado. Muchos me preguntan",
+  "foto": "Claudio, in red polo, stands in the bathroom with a cloth in hand, looking satisfied. The bathroom is immaculate, with white tiles and a fresh towel on the shelf.",
+  "mov": "Claudio folds the cloth and sets it down."
+ },
+ {
+  "id": "p292",
+  "tramo": 291,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "si con un minuto alcanza. Sí,",
+  "foto": "Claudio's face is visible as he holds a cloth and looks at the clean bathroom, his expression calm and confident. He wears the red polo, and the white tiles reflect the daylight.",
+  "mov": "Claudio nods slightly."
+ },
+ {
+  "id": "p293",
+  "tramo": 292,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "si lo haces todos los días. Un minuto cada",
+  "foto": "A close-up of a kitchen timer on the bathroom floor, its dial set to one minute, next to a cloth and spray bottle. The floor is clean and dry.",
+  "mov": "The timer's hand moves steadily."
+ },
+ {
+  "id": "p294",
+  "tramo": 293,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "día son siete minutos a la semana, y",
+  "foto": "In the small Tokyo business-hotel bathroom, Claudio stands with a small mop and bucket, his back partly to the viewer. He is mopping the white tiled floor. A compact white toilet with closed lid and a narrow washbasin are visible. A shelf with folded white towels and a frosted window letting in daylight complete the scene.",
+  "mov": "Claudio pushes the mop forward and pulls it back in a steady rhythm."
+ },
+ {
+  "id": "p295",
+  "tramo": 294,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "el baño nunca llega a estar sucio de verdad.",
+  "foto": "Close-up of the white toilet bowl and seat in the Tokyo hotel bathroom. The porcelain is spotless and dry, with no stains or water droplets. The closed lid is slightly ajar, revealing a clean rim. The floor tiles around the base are pristine. Daylight from the frosted window softly illuminates the area.",
+  "mov": "A single drop of water falls from the rim into the bowl, creating a tiny ripple."
+ },
+ {
+  "id": "p296",
+  "tramo": 295,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Una hora el sábado es lo contrario: el baño",
+  "foto": "Claudio, wearing his red polo shirt, kneels on the bathroom floor with a spray bottle and cloth. He is scrubbing the base of the toilet. The white tiles, washbasin, and towel shelf are visible. His hands work vigorously, and the cloth is damp. Daylight fills the room.",
+  "mov": "Claudio sprays the cleaner and wipes the toilet base in circular motions."
+ },
+ {
+  "id": "p297",
+  "tramo": 296,
+  "sec": "DIEZ",
+  "lugar": "bano_hotel",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "pasa seis días esperando el sábado.",
+  "foto": "A wide shot of the narrator leaving the clean bathroom, implying the bathroom waits six days for Saturday.",
+  "mov": "The timer's second hand sweeps around the dial, ticking away the seconds."
+ },
+ {
+  "id": "p298",
+  "tramo": 297,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Número once: que el baño huela a limpio.",
+  "foto": "A wide shot of the bathroom showing the toilet and sink to establish the setting for the tip.",
+  "mov": "Claudio raises the air freshener can and presses the nozzle, releasing a small cloud of mist."
+ },
+ {
+  "id": "p299",
+  "tramo": 298,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Este es el que casi todo el mundo hace. Cuando el baño",
+  "foto": "Claudio's hand holds the air freshener can, pressing the nozzle. The mist drifts toward the toilet. The white toilet and pale green tiles are in the background. The plastic cup with toothbrushes sits on the edge.",
+  "mov": "The mist from the can spreads and slowly fades."
+ },
+ {
+  "id": "p301",
+  "tramo": 300,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "fuerte, un perfume de flores en el",
+  "foto": "Claudio's hand places a small glass bottle of perfume on the shelf next to the air freshener. The shelf is above the toilet. The window with metal grate is visible, closed. The tiles reflect the warm light.",
+  "mov": "Claudio's hand releases the bottle and the bottle settles on the shelf."
+ },
+ {
+  "id": "p302",
+  "tramo": 301,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "aire, un ambientador en la repisa. El olor",
+  "foto": "A close-up of the shelf items with the air freshener label obscured or out of focus.",
+  "mov": "A thin wisp of mist rises from the air freshener nozzle and dissipates."
+ },
+ {
+  "id": "p303",
+  "tramo": 302,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "se tapa por un rato, y después vuelve,",
+  "foto": "Claudio stands in the bathroom, looking at the shelf with the air freshener and perfume. The window is closed. The toilet lid is up. The bath mat is on the floor. Warm light fills the room.",
+  "mov": "Claudio waves his hand in front of his face, as if dispersing an odor."
+ },
+ {
+  "id": "p304",
+  "tramo": 303,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "más fuerte, mezclado con el de antes.",
+  "foto": "Claudio's hand holds the air freshener can, now nearly empty. He is about to spray again. The perfume bottle is on the shelf. The window remains closed. The tiles and toilet are in the background.",
+  "mov": "Claudio presses the nozzle, but only a weak sputter comes out."
+ },
+ {
+  "id": "p305",
+  "tramo": 304,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Sato-san siempre decía lo mismo,",
+  "foto": "A shot of the bathroom wall or a generic object that represents the memory of Sato-san without readable text.",
+  "mov": "A slight reflection of light moves across the glass of the frame."
+ },
+ {
+  "id": "p306",
+  "tramo": 305,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "con su voz baja: \"Lo limpio no huele a nada.\"",
+  "foto": "Claudio's face, warm brown eyes looking slightly down, his gray-stubbled beard and red polo shirt collar visible. He is speaking softly. The bathroom background is softly blurred, with the closed window and tiles.",
+  "mov": "Claudio's lips move as he speaks, and he blinks slowly."
+ },
+ {
+  "id": "p307",
+  "tramo": 306,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Un baño limpio no tiene perfume, tiene",
+  "foto": "Close-up of the open window with metal grate, showing a clear sky. Fresh air seems to flow in. The window frame is white. The pale green tiles are beside it. No perfume bottles in sight.",
+  "mov": "A curtain or light fabric near the window flutters gently in the breeze."
+ },
+ {
+  "id": "p308",
+  "tramo": 307,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "aire. Lo que hay que hacer es ventilar diez minutos",
+  "foto": "Claudio opens the window wide and then goes to the door (not visible) to open it. The bathroom now has cross-ventilation. The toilet lid is up, the bath mat is on the floor. Warm light streams in.",
+  "mov": "Claudio pushes the window open further and steps back."
+ },
+ {
+  "id": "p309",
+  "tramo": 308,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "en cruz por la mañana, secar el piso,",
+  "foto": "Claudio kneels on the floor, wiping the tiles with a cloth. The floor is wet. The bath mat is lifted. The window is open, letting in light. His red polo shirt is visible from behind.",
+  "mov": "Claudio moves the cloth across the floor in a circular motion."
+ },
+ {
+  "id": "p310",
+  "tramo": 309,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sacar el pelo del desagüe y dejar la ventana",
+  "foto": "Close-up of Claudio's hand pulling strands of hair from the drain with a tissue. The drain is in the shower area. The tiles are pale green. The window is open in the background.",
+  "mov": "Claudio's hand pulls the hair out and drops it into a small trash bin."
+ },
+ {
+  "id": "p311",
+  "tramo": 310,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "abierta. Si lo que huele vuelve siempre",
+  "foto": "A shot showing the man looking at the open window or gesturing towards the ventilation.",
+  "mov": "Claudio takes a deep breath, his chest rising and falling."
+ },
+ {
+  "id": "p312",
+  "tramo": 311,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "al mismo lugar, ahí hay algo que buscar,",
+  "foto": "Claudio points with his finger toward the drain area, then toward the toilet base. He is investigating. The window is open. The floor is dry. His red polo shirt is visible.",
+  "mov": "Claudio moves his finger from the drain to the toilet base, tracing a line."
+ },
+ {
+  "id": "p313",
+  "tramo": 312,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no tapar. Ese es el hábito que más",
+  "foto": "Close-up of the drain cover removed, revealing a dark pipe. Next to it, a small brush and a cloth. The tiles are clean. The window light casts a shadow. No text or labels.",
+  "mov": "A drop of water falls from the pipe into the drain."
+ },
+ {
+  "id": "p314",
+  "tramo": 313,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "ahorra, porque no compras perfume para tapar",
+  "foto": "Claudio stands in the clean bathroom, holding the air freshener can and perfume bottle. He looks at them, then sets them aside on a shelf. The window is open, the room is bright and airy.",
+  "mov": "Claudio places the can and bottle on the shelf and turns away."
+ },
+ {
+  "id": "p315",
+  "tramo": 314,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "lo que no limpiaste. Y te dejo la prueba que hago",
+  "foto": "Claudio's face, warm brown eyes looking slightly off-camera, a gentle smile. He holds a small white cloth in his hand, showing it to the camera. The bathroom background is clean and bright.",
+  "mov": "Claudio lifts the cloth slightly and nods, his expression confident."
+ },
+ {
+  "id": "p316",
+  "tramo": 315,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "en casa: entro al baño y pienso en lo primero",
+  "foto": "In a Latin American house bathroom with pale green tiles, a white toilet with the lid up, and a plastic cup with toothbrushes next to it, Claudio, a 58-year-old man in a red polo shirt, stands in the doorway. He leans slightly forward, his right hand on the door frame, looking into the bathroom. Warm late-afternoon light comes through a small window with a metal grate.",
+  "mov": "Claudio steps forward into the bathroom and stops, looking around."
+ },
+ {
+  "id": "p317",
+  "tramo": 316,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que huelo. Si huelo agua limpia o jabón,",
+  "foto": "Close-up of the white toilet bowl and the plastic cup with toothbrushes on the floor next to it. The toilet lid is up, and the water inside is clear. A bar of soap sits on the sink edge. Warm late-afternoon light reflects off the porcelain, and the pale green tiles are visible in the background.",
+  "mov": "The water in the toilet bowl ripples slightly, then settles."
+ },
+ {
+  "id": "p318",
+  "tramo": 317,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "bien. Si huelo perfume de flores, es",
+  "foto": "Claudio, in his red polo shirt, stands in the bathroom, his face clearly visible. He tilts his head back slightly and inhales through his nose, his eyes narrowing as he concentrates on the smell. Behind him, the white toilet with the lid up and the plastic cup with toothbrushes are visible. Warm late-afternoon light from the grated window falls on his face.",
+  "mov": "Claudio inhales deeply, his nostrils flaring slightly, then exhales."
+ },
+ {
+  "id": "p319",
+  "tramo": 318,
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "que algo estoy tapando.",
+  "foto": "Close-up of a small, partially burned floral-scented candle or an air freshener plug-in on the bathroom sink, next to the soap dish. The pale green tiles and the edge of the white toilet are visible in the background. Warm late-afternoon light casts a soft glow on the object.",
+  "mov": "A thin wisp of smoke rises from the candle and fades."
+ },
+ {
+  "id": "p320",
+  "tramo": 319,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Vamos a repasarlos, rápido. Uno,",
+  "foto": "Claudio in a red polo shirt stands in the pale green tiled bathroom, his right hand raised with one finger up, looking slightly off to the side; behind him the white toilet with the lid up and the small window with a metal grate are visible in daylight.",
+  "mov": "He lifts his index finger and nods once."
+ },
+ {
+  "id": "p321",
+  "tramo": 320,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la tapa abajo antes de la cadena.",
+  "foto": "Close view of Claudio's hands lowering the white toilet lid onto the bowl; the flush chain hangs beside the tank, and the pale green tiles fill the background in soft daylight.",
+  "mov": "His hands press the lid down until it rests closed."
+ },
+ {
+  "id": "p322",
+  "tramo": 321,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Dos, los cepillos lejos del inodoro.",
+  "foto": "A plastic cup holding several toothbrushes sits on a small shelf far from the white toilet, with a folded towel nearby; the pale green tiled wall and the grated window are visible in the background.",
+  "mov": "A slight breeze moves the toothbrush bristles."
+ },
+ {
+  "id": "p323",
+  "tramo": 322,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Tres, una toalla por persona.",
+  "foto": "Three clean towels of different colors hang from separate hooks on the pale green tiled wall, each with its own space, in clear daylight near the small grated window.",
+  "mov": "One towel corner sways gently."
+ },
+ {
+  "id": "p324",
+  "tramo": 323,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Cuatro, los zapatos de la calle no entran.",
+  "foto": "Claudio's hands place a pair of house slippers on the bathroom floor just inside the doorway, while a pair of street shoes remains outside on the hall floor; the pale green tiles and white toilet are behind.",
+  "mov": "He sets the slippers down and slides them into place."
+ },
+ {
+  "id": "p325",
+  "tramo": 324,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "Cinco, la alfombra se lava cada semana.",
+  "foto": "Claudio's hands lift a wet bath mat from the pale green tiled floor and wring it slightly; sunlight from the grated window falls across the damp fabric and the tiles.",
+  "mov": "He squeezes the mat and water drips."
+ },
+ {
+  "id": "p326",
+  "tramo": 325,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Seis, el cepillo seco en su base.",
+  "foto": "A toothbrush stands upright and dry in its small base on the shelf, bristles clean and separate from the toilet; the pale green tiled wall and the plastic cup nearby are in daylight.",
+  "mov": "A drop of water slides off the bristles into the base."
+ },
+ {
+  "id": "p327",
+  "tramo": 326,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "Siete, cerrar el baño húmedo. Ocho,",
+  "foto": "Claudio in his red polo shirt stands at the bathroom door and pulls it closed, leaving the damp room shut behind him; the pale green tiled bathroom with the white toilet and grated window is visible through the narrowing gap.",
+  "mov": "He pulls the door until it clicks shut."
+ },
+ {
+  "id": "p328",
+  "tramo": 327,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "la cortina de tela. Nueve, el celular afuera.",
+  "foto": "A cloth shower curtain hangs bunched and dripping inside the bathroom, while a smartphone lies face down on a small table outside the doorway; pale green tiles and daylight from the grated window frame the scene.",
+  "mov": "The wet curtain sways and drips onto the floor."
+ },
+ {
+  "id": "p329",
+  "tramo": 328,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "Diez, un minuto cada día.",
+  "foto": "Claudio's hands hold a small cloth and wipe the bathroom sink rim in one quick motion; the pale green tiled wall, the white toilet and the grated window are visible in daylight behind him.",
+  "mov": "He wipes the sink rim once from left to right."
+ },
+ {
+  "id": "p330",
+  "tramo": 329,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "Y once, que el baño huela a limpio,",
+  "foto": "The whole bathroom appears clean and bright: pale green tiles, closed white toilet, dry bath mat, towels on hooks and the small grated window letting in fresh daylight, with no clutter anywhere.",
+  "mov": "A soft breeze moves the towel ends."
+ },
+ {
+  "id": "p331",
+  "tramo": 330,
+  "sec": "RECAP",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "no a perfume.",
+  "foto": "A single dry towel and a clean bar of soap rest on the sink edge in the pale green tiled bathroom; the grated window light falls on the surfaces, and no bottles or perfumes are visible.",
+  "mov": "A thin wisp of steam rises and fades from the clean sink."
+ },
+ {
+  "id": "p332",
+  "tramo": 331,
+  "sec": "CIERRE",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "general",
+  "dice": "¿Cuántos de los once haces tú? Escríbemelo",
+  "foto": "Claudio, a 58-year-old Latin American man with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned skin, wearing a plain red polo shirt, stands in a Latin American house bathroom with pale green tiles. He smiles confidently at the camera, his hands open as if asking a question. Daylight comes through a small window with a metal grate. A white toilet with the lid up and a plastic cup with toothbrushes are visible.",
+  "mov": "Claudio raises both hands slightly, palms up, as if inviting a response."
+ },
+ {
+  "id": "p333",
+  "tramo": 332,
+  "sec": "CIERRE",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "en los comentarios, que yo leo todos. Y si ya",
+  "foto": "A shot of a phone screen showing a comments section, but with the text blurred or unreadable.",
+  "mov": "The thumb scrolls down the screen slowly."
+ },
+ {
+  "id": "p334",
+  "tramo": 333,
+  "sec": "CIERRE",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "tienes una costumbre que no está en esta lista,",
+  "foto": "Claudio, seen from the chest down, stands in the bathroom with pale green tiles. He holds a small notebook and a pen, but the notebook is closed and no text is visible. His red polo shirt is partially visible. Next to him, a white toilet with the lid up and a plastic cup with toothbrushes. Daylight from the grated window.",
+  "mov": "Claudio taps the closed notebook with the pen, then gestures outward."
+ },
+ {
+  "id": "p335",
+  "tramo": 334,
+  "sec": "CIERRE",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "cuéntamela también, que de ahí salen los próximos",
+  "foto": "A wider shot of the narrator in the bathroom, showing him listening or reacting to the viewer's suggestion.",
+  "mov": "The pen moves across the paper as if writing a word."
+ },
+ {
+  "id": "p336",
+  "tramo": 335,
+  "sec": "CIERRE",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "videos. Es el mismo baño, es la misma",
+  "foto": "A shot of the narrator in the bathroom, emphasizing that it is the same house and bathroom as before.",
+  "mov": "A gentle breeze moves the bath mat slightly on the floor."
+ },
+ {
+  "id": "p337",
+  "tramo": 336,
+  "sec": "CIERRE",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "casa, y el cambio empieza con una",
+  "foto": "Claudio, from the waist up, stands in the bathroom. He holds a small object (a toilet paper roll) in one hand and gestures with the other, as if explaining something. His red polo shirt is visible. Behind him, pale green tiles and the white toilet with the lid up. Daylight from the grated window.",
+  "mov": "Claudio moves his hands apart, then brings them together, as if showing a change."
+ },
+ {
+  "id": "p338",
+  "tramo": 337,
+  "sec": "CIERRE",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "sola costumbre.",
+  "foto": "Close-up of a single toothbrush standing upright in a plastic cup next to the white toilet. The bristles are slightly worn. Pale green tiles in the background. Daylight from the small grated window illuminates the toothbrush. The cup is simple and white. No text is visible.",
+  "mov": "The toothbrush leans slightly to one side, then settles back."
+ },
+ {
+  "id": "p339",
+  "tramo": 338,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "El próximo video: las reglas japonesas del",
+  "foto": "In a bright Latin American kitchen, Claudio in his red polo stands in front of an open white refrigerator, its interior shelves stocked with jars, vegetables, and containers. The kitchen has white square tiles, a steel sink under a window, and a plastic bucket on the floor. Daylight fills the room.",
+  "mov": "Claudio reaches into the refrigerator and adjusts a container on the shelf."
+ },
+ {
+  "id": "p340",
+  "tramo": 339,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "refrigerador, para que nada se pase en la semana.",
+  "foto": "A close-up of the refrigerator's interior shelves: glass jars with leftovers, fresh vegetables in the crisper drawer, and a carton of eggs. The shelves are neatly arranged, with no visible text on any container. The light from the kitchen window illuminates the contents.",
+  "mov": "A jar of leftovers slides slightly forward on the shelf."
+ },
+ {
+  "id": "p341",
+  "tramo": 340,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "Ahí también hay cosas que casi todos",
+  "foto": "Claudio, in his red polo, stands beside the open refrigerator, his face visible as he looks thoughtfully into it. His expression is focused, perhaps mildly concerned. The kitchen background shows white tiles and a window with daylight.",
+  "mov": "Claudio tilts his head slightly and narrows his eyes."
+ },
+ {
+  "id": "p342",
+  "tramo": 341,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "hacemos mal sin darnos cuenta, y que cuestan",
+  "foto": "A close-up of Claudio's hand holding a small plastic bag of wilting lettuce, taken from the refrigerator. The lettuce looks limp and discolored. The hand is tanned, with short nails. The background is the refrigerator interior, slightly out of focus.",
+  "mov": "The hand turns the bag over, revealing the spoiled leaves."
+ },
+ {
+  "id": "p343",
+  "tramo": 342,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "dinero cada semana. Nos vemos en el próximo",
+  "foto": "Claudio stands in the kitchen, now facing the camera but not looking directly at it; he is closing the refrigerator door with his right hand. The kitchen is tidy, with the sink and window visible. Daylight streams in, casting soft shadows.",
+  "mov": "Claudio pushes the refrigerator door closed until it latches."
+ },
+ {
+  "id": "p344",
+  "tramo": 343,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "medio",
+  "dice": "video.",
+  "foto": "Claudio, in his red polo, stands in the kitchen with a warm, friendly smile, looking slightly off-camera. The refrigerator is closed behind him. The kitchen has white tiles and a window with daylight. He appears to be saying goodbye.",
+  "mov": "Claudio gives a small nod and his smile widens slightly."
+ },
+ {
+  "id": "p345",
+  "tramo": 344,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "(pausa)",
+  "foto": "A shot that continues the previous scene or sets up the next part of the vlog, such as the narrator talking or a relevant object.",
+  "mov": "The water in the glass ripples slightly."
+ },
+ {
+  "id": "p346",
+  "tramo": 345,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "(pausa)",
+  "foto": "The plastic bucket on the kitchen floor, next to the refrigerator. The bucket is empty and slightly worn. The floor is tiled. Daylight from the window casts a shadow of the bucket.",
+  "mov": "A slight breeze moves a dust particle near the bucket."
+ },
+ {
+  "id": "p347",
+  "tramo": 346,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "(pausa)",
+  "foto": "A close-up of the refrigerator door handle, with a few colorful magnets attached. No text is visible on the magnets. The stainless steel surface reflects the kitchen light.",
+  "mov": "The reflection on the handle shifts slightly as the light changes."
+ },
+ {
+  "id": "p350",
+  "tramo": 349,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "(pausa)",
+  "foto": "A shot of the narrator or a relevant object to maintain the flow of the vlog.",
+  "mov": "A drop of water falls from the sponge into the sink."
+ },
+ {
+  "id": "p352",
+  "tramo": 351,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "(pausa)",
+  "foto": "A close-up of a carton of milk inside the refrigerator, with no visible text. Condensation droplets form on the carton. The cold interior is dimly lit.",
+  "mov": "A droplet of condensation rolls down the carton."
+ },
+ {
+  "id": "p353",
+  "tramo": 352,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "(pausa)",
+  "foto": "The kitchen from the doorway, showing the layout: refrigerator on the left, sink under the window on the right, bucket on the floor. The room is empty and still, with daylight creating a peaceful mood.",
+  "mov": "The shadow of a tree branch outside moves across the floor."
+ },
+ {
+  "id": "p354",
+  "tramo": 353,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "dice": "(pausa)",
+  "foto": "The kitchen table with a fruit bowl and a closed notebook (no text visible). The table is wooden, with a checkered tablecloth. Daylight illuminates the scene.",
+  "mov": "A fly lands on the edge of the fruit bowl."
+ },
+ {
+  "id": "p355",
+  "tramo": 354,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "(pausa)",
+  "foto": "A close-up of the refrigerator's temperature dial, with numbers but no words. The dial is set to a middle position. The plastic surface is slightly dusty.",
+  "mov": "The dial turns slightly to the left."
+ },
+ {
+  "id": "p356",
+  "tramo": 355,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "dice": "(pausa)",
+  "foto": "The kitchen in a , with all elements: white tiles, sink, refrigerator, bucket, and window. The room is bathed in soft daylight. The scene is completely still, as if waiting.",
+  "mov": "The light from the window gradually brightens."
+ },
+ {
+  "id": "p357",
+  "tramo": 356,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "general",
+  "dice": "(pausa)",
+  "foto": "En una cocina de casa latinoamericana con azulejos blancos cuadrados, Claudio, de 58 años con polo rojo, está de pie frente a un refrigerador blanco lleno de imanes. La luz del día entra por la ventana sobre el fregadero de acero. Un cubo de plástico descansa en el suelo.",
+  "mov": "Claudio gira el tirador del refrigerador y la puerta se abre lentamente."
+ },
+ {
+  "id": "p358",
+  "tramo": 357,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "(pausa)",
+  "foto": "En la misma cocina, Claudio con su polo rojo sostiene la puerta del refrigerador abierta con una mano. Con la otra, señala el interior, donde se ven estantes con frascos y botellas. La luz interior ilumina su brazo y el contenido.",
+  "mov": "Claudio mueve la mano señalando los estantes del refrigerador."
+ },
+ {
+  "id": "p359",
+  "tramo": 358,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "(pausa)",
+  "foto": "Primer plano del interior del refrigerador blanco: un estante de vidrio con varios frascos de vidrio sin etiquetas y una jarra de agua. La luz interior brilla sobre los objetos. Al fondo, la pared de azulejos blancos se ve borrosa.",
+  "mov": "Uno de los frascos se desliza ligeramente hacia adelante."
+ },
+ {
+  "id": "p360",
+  "tramo": 359,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "medio",
+  "dice": "(pausa)",
+  "foto": "Claudio, con el polo rojo, está de perfil frente a la encimera de la cocina. Con ambas manos sostiene un frasco de vidrio y lo coloca sobre la superficie. Detrás, el refrigerador blanco con imanes y la ventana iluminan la escena.",
+  "mov": "Claudio baja el frasco y lo posa suavemente sobre la encimera."
+ },
+ {
+  "id": "p361",
+  "tramo": 360,
+  "sec": "PROXIMO",
+  "lugar": "cocina_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "dice": "(pausa)",
+  "foto": "Primer plano de la encimera de la cocina: sobre la superficie clara, un frasco de vidrio sin etiqueta junto a una taza de cerámica. Al fondo, desenfocado, el refrigerador blanco con imanes. La luz del día crea reflejos suaves.",
+  "mov": "La taza de cerámica se desliza unos centímetros sobre la encimera."
+ }
+]

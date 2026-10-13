@@ -1,0 +1,551 @@
+{
+ "vision": "El video debe sentirse como un recorrido por baños reales, con la calidez de Claudio en su polo rojo y la precisión de un manual japonés. Las polaroids muestran exactamente lo que se dice: la tapa, el vaso con cepillos, la toalla húmeda, las pantuflas, la alfombra al sol. Los planos detalle y los gestos con las manos sostienen la atención; los componentes entran como puntuación, nunca encima de Claudio. El ritmo alterna el baño latino y el hotel de Tokio para que cada regla tenga su contraste.",
+ "secciones": {
+  "HOOK": "Arranque con planos detalle del inodoro abierto, la cadena, las gotas invisibles sobre el cepillo y el vaso; sin texto ni componentes. Hero shot de Claudio señalando la tapa, cara visible.",
+  "PROMESA": "Claudio a cámara enumera los once hábitos, con fotos de la tapa, el cepillo, la toalla apenas sugeridas. Se inserta la referencia al video anterior. Hero shot de Claudio con cara visible y la mano en el lavamanos.",
+  "HISTORIA": "Secuencia en hotel de Tokio: pasillo, puerta 12, baño compacto, Sato inclinada bajando la tapa. Luego el recuerdo en el baño latino con Claudio y su trapo. Hero shot de Claudio con trapo, cara visible, y Sato de medio perfil.",
+  "CTA1": "Claudio a cámara serio, luego la página 15 del libro en sus manos. Hero shot de Claudio mostrando el libro abierto.",
+  "UNO": "Planos del inodoro abierto, la descarga, la niebla fina, gotas en el cepillo; solución con mano bajando la tapa. Hero shot de Claudio bajando la tapa, cara visible.",
+  "DOS": "Vaso de cepillos al lado del inodoro, cinta métrica, portacepillos con tapa, brazo estirado. Hero shot de Claudio midiendo con cinta y moviendo el vaso.",
+  "TRES": "Toalla compartida colgada y húmeda; contraste con toallas individuales dobladas. Hero shot de Claudio colgando su toalla, cara visible.",
+  "CUATRO": "Zapatos de calle, escalón del genkan, pantuflas de casa y de baño. Hero shot de Claudio cambiándose las pantuflas, cara visible.",
+  "CINCO": "Alfombra húmeda con agua debajo; luego lavado, sol y secado en baranda. Hero shot de Claudio tendiendo la alfombra al sol.",
+  "SEIS": "Cepillo de inodoro mojado en su vaso; luego escurriendo entre asiento y taza, base seca. Hero shot de Claudio escurriendo el cepillo.",
+  "SIETE": "Vapor, espejo empañado, juntas oscuras; luego rasqueta, paño, ventana abierta, ventilador. Hero shot de Claudio pasando la rasqueta, cara visible.",
+  "OCHO": "Cortina de plástico con borde negro; lavado, cortina de tela extendida. Hero shot de Claudio abriendo la cortina plana.",
+  "CTA2": "Claudio a cámara, página 15 y código QR en pantalla. Hero shot de Claudio señalando el QR.",
+  "NUEVE": "Celular en el baño, sobre el lavamanos, en el piso; luego celular en mesa de sala. Hero shot de Claudio dejando el celular en la mesa.",
+  "DIEZ": "Limpieza de sábado con balde y trapos; luego rutina de un minuto: asiento, llave, piso. Hero shot de Claudio con el paño y reloj de cocina.",
+  "ONCE": "Aromatizante, olor a perfume, ventana cerrada; luego ventanas abiertas, desagüe, pelo. Hero shot de Claudio oliendo el aire, cara visible.",
+  "RECAP": "Montaje rápido de los once hábitos, un plano por hábito con números en pantalla; Claudio a cámara enumera. Cierre con el baño seco.",
+  "CIERRE": "Claudio a cámara, confiado, pide comentarios. Fotos del baño ya cambiado. Hero shot de Claudio sonriendo.",
+  "PROXIMO": "Cocina de Claudio, refrigerador con imanes, encimera. Hero shot de Claudio abriendo el refrigerador."
+ },
+ "avatar": [
+  {
+   "n": "Apertura baño",
+   "desde": "No la ves.",
+   "hasta": "mirar el baño de otra manera."
+  },
+  {
+   "n": "Historia Sato 1",
+   "desde": "Mi primera semana en el hotel de Tokio",
+   "hasta": "puerta siguiente."
+  },
+  {
+   "n": "Historia Sato 2",
+   "desde": "Yo me quedé ahí",
+   "hasta": "mirando que escuchando."
+  },
+  {
+   "n": "CTA 1",
+   "desde": "Antes de seguir, una cosa importante.",
+   "hasta": "importante."
+  },
+  {
+   "n": "Hábito 1",
+   "desde": "Número uno:",
+   "hasta": "abierta."
+  },
+  {
+   "n": "Hábito 2",
+   "desde": "Número dos:",
+   "hasta": "inodoro."
+  },
+  {
+   "n": "Hábito 3",
+   "desde": "Número tres:",
+   "hasta": "familia."
+  },
+  {
+   "n": "Hábito 4",
+   "desde": "Número cuatro:",
+   "hasta": "calle."
+  },
+  {
+   "n": "Hábito 5",
+   "desde": "Número cinco:",
+   "hasta": "lava."
+  },
+  {
+   "n": "Historia hermana 1",
+   "desde": "Te cuento de la casa de mi hermana",
+   "hasta": "dando vueltas."
+  },
+  {
+   "n": "Historia hermana 2",
+   "desde": "Esa tarde nos sentamos en la cocina",
+   "hasta": "tapando."
+  },
+  {
+   "n": "Hábito 6",
+   "desde": "Número seis:",
+   "hasta": "vasito."
+  },
+  {
+   "n": "Hábito 7",
+   "desde": "Número siete:",
+   "hasta": "ducha."
+  },
+  {
+   "n": "Hábito 8",
+   "desde": "Número ocho:",
+   "hasta": "negro."
+  },
+  {
+   "n": "CTA 2",
+   "desde": "Si hasta aquí ya estás pensando en tu propio baño",
+   "hasta": "te lo digo otra vez:"
+  },
+  {
+   "n": "Hábito 9",
+   "desde": "Número nueve:",
+   "hasta": "mesa."
+  },
+  {
+   "n": "Hábito 10",
+   "desde": "Número diez:",
+   "hasta": "hora."
+  },
+  {
+   "n": "Hábito 11",
+   "desde": "Número once:",
+   "hasta": "limpio."
+  },
+  {
+   "n": "Recap",
+   "desde": "Vamos a repasarlos, rápido.",
+   "hasta": "no a perfume."
+  },
+  {
+   "n": "Cierre",
+   "desde": "¿Cuántos de los once haces tú?",
+   "hasta": "una sola costumbre."
+  },
+  {
+   "n": "Próximo video",
+   "desde": "El próximo video:",
+   "hasta": "próximo video."
+  }
+ ],
+ "componentes": [
+  {
+   "c": "ClVideoRef",
+   "frase": "La semana pasada te conté de los productos",
+   "dur": 2,
+   "props": {
+    "thumb": "img/jpasco/th_card.jpg",
+    "title": "Productos del baño que no sabías",
+    "tag": "VIDEO ANTERIOR",
+    "next": false
+   }
+  },
+  {
+   "c": "ClBookPage",
+   "frase": "la regla siete está en la página quince",
+   "dur": 6,
+   "props": {
+    "page": "img/jpasco/p15.jpg",
+    "pageNo": "15",
+    "stamp": "Regla 7: la tapa"
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "baja la tapa antes de tirar la cadena",
+   "dur": 7,
+   "props": {
+    "title": "Antes de la cadena",
+    "no": {
+     "img": {
+      "foto": "Close-up of a Latin American bathroom toilet with the lid up, pale green tiles behind, a plastic cup with toothbrushes on the tank, slight mist over the bowl; bright daylight, no text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "Tapa abierta"
+    },
+    "si": {
+     "img": {
+      "foto": "The same bathroom toilet with the lid closed, clean and dry, the toothbrush cup moved away; a hand is lowering the lid, bright daylight, no text.",
+      "tam": "detalle",
+      "presenter": true,
+      "face": false
+     },
+     "txt": "Tapa cerrada"
+    }
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "cuatro, cinco, seis veces al día",
+   "dur": 5,
+   "props": {
+    "num": "4-6",
+    "unidad": "veces al día",
+    "txt": "con la tapa abierta",
+    "alerta": true
+   }
+  },
+  {
+   "c": "FabAltura",
+   "frase": "estira el brazo y mira hasta dónde llega",
+   "dur": 7,
+   "props": {
+    "title": "¿Muy cerca?",
+    "max": 200,
+    "marcas": [
+     {
+      "cm": 30,
+      "txt": "el vaso a 30 cm",
+      "alerta": true
+     },
+     {
+      "cm": 100,
+      "txt": "distancia mínima"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabCiclo",
+   "frase": "Se moja, se seca mal, se vuelve a colgar",
+   "dur": 8,
+   "props": {
+    "title": "Toalla compartida",
+    "etapas": [
+     {
+      "img": {
+       "foto": "Hand squeezing a damp white hand towel over a bathroom sink, water droplets visible, pale green tiles, no text.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": false
+      },
+      "txt": "se moja"
+     },
+     {
+      "img": {
+       "foto": "A crumpled damp hand towel on the edge of a white sink, shadow, no text.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "se seca mal"
+     },
+     {
+      "img": {
+       "foto": "The same hand towel hung folded on a towel ring near a bathroom door, slightly wrinkled, no text.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "se vuelve a colgar"
+     }
+    ],
+    "centro": "olor a humedad"
+   }
+  },
+  {
+   "c": "FabCalendario",
+   "frase": "se cambia cada tres días",
+   "dur": 5,
+   "props": {
+    "cada": 3,
+    "txt": "toalla por persona",
+    "title": "Toalla seca"
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "me quito los zapatos en la entrada",
+   "dur": 8,
+   "props": {
+    "title": "Cambio de calzado",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Claudio's feet stepping out of worn brown leather street shoes on a doormat at a house entrance, pale wood wall, no text.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": false
+      },
+      "txt": "zapatos de calle"
+     },
+     {
+      "img": {
+       "foto": "Claudio's feet in beige house slippers, standing on pale wood floor, door mat behind, no text.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": false
+      },
+      "txt": "pantuflas de casa"
+     },
+     {
+      "img": {
+       "foto": "Claudio's feet in blue plastic bathroom slippers on pale green tile floor in front of a white toilet, no text.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": false
+      },
+      "txt": "pantuflas de baño"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabCalendario",
+   "frase": "se lava cada semana",
+   "dur": 5,
+   "props": {
+    "cada": 7,
+    "txt": "alfombra de baño",
+    "title": "Lavado semanal"
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "le cambia el olor a la alfombra",
+   "dur": 8,
+   "props": {
+    "antes": {
+     "foto": "A thick dark blue bath mat lying on wet pale green bathroom floor, damp patch underneath, one corner curled, no text.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "The same mat hanging over a sunny outdoor railing, dry and flat, bright sunlight, a tiled wall behind, no text.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "húmeda vs seca"
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "Cámbialo cada tres meses",
+   "dur": 5,
+   "props": {
+    "num": "3",
+    "unidad": "meses",
+    "txt": "cambiar el cepillo"
+   }
+  },
+  {
+   "c": "FabCiclo",
+   "frase": "el vapor queda pegado en las paredes",
+   "dur": 8,
+   "props": {
+    "title": "Baño húmedo",
+    "etapas": [
+     {
+      "img": {
+       "foto": "Steam on a bathroom mirror above a white sink, water droplets, pale green tiles, no text.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "vapor"
+     },
+     {
+      "img": {
+       "foto": "A closed bathroom door with a damp towel hanging over it, soft light, no text.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "queda horas"
+     },
+     {
+      "img": {
+       "foto": "Black mold spots along the white grout of bathroom wall tiles near a shower, no text.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "nace moho"
+     }
+    ],
+    "centro": "encierro"
+   }
+  },
+  {
+   "c": "FabPasos",
+   "frase": "se pasa una rasqueta por las paredes",
+   "dur": 9,
+   "props": {
+    "title": "Secado en 5 minutos",
+    "pasos": [
+     {
+      "img": {
+       "foto": "Claudio's hand moving a yellow rubber squeegee down a wet shower wall tile, water streaks, no text.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": false
+      },
+      "txt": "rasqueta"
+     },
+     {
+      "img": {
+       "foto": "Claudio's hand drying a round bathroom mirror with a gray microfiber cloth, face partly visible in reflection, no text.",
+       "tam": "detalle",
+       "presenter": true,
+       "face": true
+      },
+      "txt": "paño al espejo"
+     },
+     {
+      "img": {
+       "foto": "A small bathroom window open with white curtain moving, daylight entering, no text.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "ventana abierta"
+     },
+     {
+      "img": {
+       "foto": "Bathroom door open to a bright hallway, pale green tiles visible, no text.",
+       "tam": "general",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "puerta abierta"
+     }
+    ]
+   }
+  },
+  {
+   "c": "FabAntesDespues",
+   "frase": "la cortina se abre plana",
+   "dur": 7,
+   "props": {
+    "antes": {
+     "foto": "A white plastic shower curtain with a dark black mold band along the bottom edge, hanging inside a bathtub, no text.",
+     "tam": "detalle",
+     "presenter": false,
+     "face": false
+    },
+    "despues": {
+     "foto": "A light gray fabric shower curtain hanging extended flat along a bar, dry and smooth, bright bathroom, no text.",
+     "tam": "medio",
+     "presenter": false,
+     "face": false
+    },
+    "nota": "de plástico a tela"
+   }
+  },
+  {
+   "c": "ClQRCard",
+   "frase": "en la pantalla tienes el código QR",
+   "dur": 7,
+   "props": {
+    "qr": "img/jpasco/b_satotablet.jpg",
+    "cover": "img/jpasco/p15.jpg",
+    "text": "Escanea el QR de la página 15",
+    "kicker": "Manual de la casa"
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "En Japón el teléfono se queda afuera",
+   "dur": 6,
+   "props": {
+    "title": "Celular",
+    "no": {
+     "img": {
+      "foto": "A black smartphone lying on the edge of a white bathroom sink next to a toothbrush cup, wet drops on screen, no text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "celular en el baño"
+    },
+    "si": {
+     "img": {
+      "foto": "The same black smartphone on a wooden living room table next to a cup of coffee, bright window behind, no text.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "teléfono en la sala"
+    }
+   }
+  },
+  {
+   "c": "FabDato",
+   "frase": "un minuto cada día",
+   "dur": 5,
+   "props": {
+    "num": "1",
+    "unidad": "minuto al día",
+    "txt": "tres movimientos"
+   }
+  },
+  {
+   "c": "FabCiclo",
+   "frase": "El olor se tapa por un rato",
+   "dur": 6.7,
+   "props": {
+    "title": "Perfume que tapa",
+    "etapas": [
+     {
+      "img": {
+       "foto": "An air freshener spray bottle on a bathroom shelf next to a small potted plant, pale green tiles, no text.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "se tapa"
+     },
+     {
+      "img": {
+       "foto": "The same shelf with a faint mist in the air, the bottle tipped, no text.",
+       "tam": "detalle",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "vuelve"
+     },
+     {
+      "img": {
+       "foto": "A bathroom corner with a strong floral air freshener and a closed window, no text.",
+       "tam": "medio",
+       "presenter": false,
+       "face": false
+      },
+      "txt": "mezclado"
+     }
+    ],
+    "centro": "olor tapado"
+   }
+  },
+  {
+   "c": "FabSiNo",
+   "frase": "Lo limpio no huele a nada",
+   "dur": 6,
+   "props": {
+    "title": "Baño limpio",
+    "no": {
+     "img": {
+      "foto": "A aerosol air freshener in a bathroom with a closed window, floral scent, no text.",
+      "tam": "detalle",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "aromatizante fuerte"
+    },
+    "si": {
+     "img": {
+      "foto": "A bathroom window wide open above a dry tiled floor, fresh daylight, no text.",
+      "tam": "medio",
+      "presenter": false,
+      "face": false
+     },
+     "txt": "aire y ventilación"
+    }
+   }
+  }
+ ]
+}

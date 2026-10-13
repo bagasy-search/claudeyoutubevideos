@@ -1,0 +1,328 @@
+[
+ {
+  "id": "k001",
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Close-up of a Latin American bathroom toilet with the lid up, pale green tiles behind, a plastic cup with toothbrushes on the tank, slight mist over the bowl; bright daylight, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k002",
+  "sec": "UNO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The same bathroom toilet with the lid closed, clean and dry, the toothbrush cup moved away; a hand is lowering the lid, bright daylight, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k003",
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Hand squeezing a damp white hand towel over a bathroom sink, water droplets visible, pale green tiles, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k004",
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A crumpled damp hand towel on the edge of a white sink, shadow, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k005",
+  "sec": "TRES",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "The same hand towel hung folded on a towel ring near a bathroom door, slightly wrinkled, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k006",
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Claudio's feet stepping out of worn brown leather street shoes on a doormat at a house entrance, pale wood wall, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k007",
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Claudio's feet in beige house slippers, standing on pale wood floor, door mat behind, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k008",
+  "sec": "CUATRO",
+  "lugar": "genkan",
+  "hora": "dia",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Claudio's feet in blue plastic bathroom slippers on pale green tile floor in front of a white toilet, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k009",
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A thick dark blue bath mat lying on wet pale green bathroom floor, damp patch underneath, one corner curled, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k010",
+  "sec": "CINCO",
+  "lugar": "bano_casa",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "The same mat hanging over a sunny outdoor railing, dry and flat, bright sunlight, a tiled wall behind, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k011",
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Steam on a bathroom mirror above a white sink, water droplets, pale green tiles, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k012",
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A closed bathroom door with a damp towel hanging over it, soft light, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k013",
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Black mold spots along the white grout of bathroom wall tiles near a shower, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k014",
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "Claudio's hand moving a yellow rubber squeegee down a wet shower wall tile, water streaks, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k015",
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [
+   "claudio"
+  ],
+  "cara": true,
+  "tam": "detalle",
+  "foto": "Claudio's hand drying a round bathroom mirror with a gray microfiber cloth, face partly visible in reflection, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k016",
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A small bathroom window open with white curtain moving, daylight entering, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k017",
+  "sec": "SIETE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "general",
+  "foto": "Bathroom door open to a bright hallway, pale green tiles visible, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k018",
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A white plastic shower curtain with a dark black mold band along the bottom edge, hanging inside a bathtub, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k019",
+  "sec": "OCHO",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A light gray fabric shower curtain hanging extended flat along a bar, dry and smooth, bright bathroom, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k020",
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A black smartphone lying on the edge of a white bathroom sink next to a toothbrush cup, wet drops on screen, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k021",
+  "sec": "NUEVE",
+  "lugar": "pasillo_servicio",
+  "hora": "dia",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "The same black smartphone on a wooden living room table next to a cup of coffee, bright window behind, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k022",
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "An air freshener spray bottle on a bathroom shelf next to a small potted plant, pale green tiles, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k023",
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "The same shelf with a faint mist in the air, the bottle tipped, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k024",
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A bathroom corner with a strong floral air freshener and a closed window, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k025",
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "detalle",
+  "foto": "A aerosol air freshener in a bathroom with a closed window, floral scent, no text.",
+  "mov": "",
+  "dice": ""
+ },
+ {
+  "id": "k026",
+  "sec": "ONCE",
+  "lugar": "bano_casa",
+  "hora": "tarde",
+  "gente": [],
+  "cara": false,
+  "tam": "medio",
+  "foto": "A bathroom window wide open above a dry tiled floor, fresh daylight, no text.",
+  "mov": "",
+  "dice": ""
+ }
+]

@@ -1,0 +1,30 @@
+{
+ "arte": {
+  "llamadas": 1,
+  "usd": 0.00237
+ },
+ "arte_juez": {
+  "llamadas": 6,
+  "usd": 0.00181
+ },
+ "plan": {
+  "llamadas": 1,
+  "usd": 0.15648
+ },
+ "plan_fix": {
+  "llamadas": 3,
+  "usd": 0.01426
+ },
+ "planos": {
+  "llamadas": 31,
+  "usd": 0.05918
+ },
+ "revisor_fotos": {
+  "llamadas": 63,
+  "usd": 0.03747
+ },
+ "editor_montaje": {
+  "llamadas": 41,
+  "usd": 0.03218
+ }
+}

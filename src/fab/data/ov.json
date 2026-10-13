@@ -1,362 +1,347 @@
 [
  {
   "c": "ClVideoRef",
-  "from": 1180,
+  "from": 770,
   "dur": 60,
   "props": {
-   "thumb": "img/cltoilet/th_cltowels.jpg",
-   "title": "The Laundry Mistake",
-   "tag": "PREVIOUS VIDEO",
-   "bed": "vid/cltoilet/bed_0.mp4#64"
+   "thumb": "img/jpasco/th_card.jpg",
+   "title": "Productos del baño que no sabías",
+   "tag": "VIDEO ANTERIOR",
+   "next": false,
+   "bed": "vid/jpasco/bed_0.mp4#64"
   },
-  "t": 39.32,
-  "frase": "The Laundry Mistake Silently Destroying Your Towels"
- },
- {
-  "c": "FabDato",
-  "from": 2753,
-  "dur": 150,
-  "props": {
-   "num": "5",
-   "unidad": "spots",
-   "txt": "nobody looks",
-   "bed": "vid/cltoilet/bed_1.mp4#154"
-  },
-  "t": 91.75,
-  "frase": "five spots on the outside"
+  "t": 25.65,
+  "frase": "La semana pasada te conté de los productos"
  },
  {
   "c": "ClBookPage",
-  "from": 3670,
-  "dur": 150,
+  "from": 3134,
+  "dur": 180,
   "props": {
-   "page": "img/cltoilet/page4.jpg",
-   "pageNo": 4,
-   "stamp": "8 things, 40 jobs",
-   "bed": "vid/cltoilet/bed_2.mp4#154"
+   "page": "img/jpasco/p15.jpg",
+   "pageNo": 15,
+   "stamp": "Regla 7: la tapa",
+   "bed": "vid/jpasco/bed_1.mp4#184"
   },
-  "t": 122.32,
-  "frase": "on page 4 of my little book"
- },
- {
-  "c": "FabAntesDespues",
-  "from": 4825,
-  "dur": 240,
-  "props": {
-   "antes": "k001",
-   "despues": "k002",
-   "nota": "smell gone by Sunday",
-   "bed": "vid/cltoilet/bed_3.mp4#244"
-  },
-  "t": 160.85,
-  "frase": "We set it out to dry"
- },
- {
-  "c": "ClBookPage",
-  "from": 5587,
-  "dur": 150,
-  "props": {
-   "page": "img/cltoilet/page3.jpg",
-   "pageNo": 3,
-   "stamp": "Never mix these",
-   "bed": "vid/cltoilet/bed_4.mp4#154"
-  },
-  "t": 186.24,
-  "frase": "look at page 3 of my little book"
+  "t": 104.48,
+  "frase": "la regla siete está en la página quince"
  },
  {
   "c": "FabSiNo",
-  "from": 5934,
+  "from": 4289,
   "dur": 210,
   "props": {
-   "title": "Never mix",
+   "title": "Antes de la cadena",
    "no": {
-    "img": "k003",
-    "txt": "bleach and vinegar together"
+    "img": "k001",
+    "txt": "Tapa abierta"
    },
    "si": {
-    "img": "k004",
-    "txt": "one product at a time"
+    "img": "k002",
+    "txt": "Tapa cerrada"
    },
-   "bed": "vid/cltoilet/bed_5.mp4#214"
+   "bed": "vid/jpasco/bed_2.mp4#214"
   },
-  "t": 197.79,
-  "frase": "Bleach never goes with vinegar"
+  "t": 142.98,
+  "frase": "baja la tapa antes de tirar la cadena"
  },
  {
   "c": "FabDato",
-  "from": 6513,
+  "from": 5105,
   "dur": 150,
   "props": {
-   "num": "1",
-   "unidad": "product/day",
-   "txt": "never mix",
-   "img": "k005",
-   "bed": "vid/cltoilet/bed_6.mp4#154"
+   "num": "4-6",
+   "unidad": "veces al día",
+   "txt": "con la tapa abierta",
+   "alerta": true,
+   "bed": "vid/jpasco/bed_3.mp4#154"
   },
-  "t": 217.11,
-  "frase": "one product per day"
+  "t": 170.18,
+  "frase": "cuatro, cinco, seis veces al día"
+ },
+ {
+  "c": "FabAltura",
+  "from": 7172,
+  "dur": 210,
+  "props": {
+   "title": "¿Muy cerca?",
+   "max": 200,
+   "marcas": [
+    {
+     "cm": 30,
+     "txt": "el vaso a 30 cm",
+     "alerta": true
+    },
+    {
+     "cm": 100,
+     "txt": "distancia mínima"
+    }
+   ],
+   "bed": "vid/jpasco/bed_4.mp4#214"
+  },
+  "t": 239.08,
+  "frase": "estira el brazo y mira hasta dónde llega"
+ },
+ {
+  "c": "FabCiclo",
+  "from": 7850,
+  "dur": 180,
+  "props": {
+   "title": "Toalla compartida",
+   "etapas": [
+    {
+     "img": "k003",
+     "txt": "se moja"
+    },
+    {
+     "img": "k004",
+     "txt": "se seca mal"
+    },
+    {
+     "img": "k005",
+     "txt": "se vuelve a colgar"
+    }
+   ],
+   "centro": "olor a humedad",
+   "bed": "vid/jpasco/bed_5.mp4#184"
+  },
+  "t": 261.68,
+  "frase": "Se moja, se seca mal, se vuelve a colgar"
+ },
+ {
+  "c": "FabCalendario",
+  "from": 8456,
+  "dur": 150,
+  "props": {
+   "cada": 3,
+   "txt": "toalla por persona",
+   "title": "Toalla seca",
+   "bed": "vid/jpasco/bed_6.mp4#154"
+  },
+  "t": 281.86,
+  "frase": "se cambia cada tres días"
  },
  {
   "c": "FabPasos",
-  "from": 9176,
-  "dur": 300,
+  "from": 9900,
+  "dur": 240,
   "props": {
-   "title": "Dry the brush",
+   "title": "Cambio de calzado",
    "pasos": [
     {
      "img": "k006",
-     "txt": "lay brush across rim"
+     "txt": "zapatos de calle"
     },
     {
      "img": "k007",
-     "txt": "lower the seat lid"
+     "txt": "pantuflas de casa"
     },
     {
      "img": "k008",
-     "txt": "soak head monthly"
-    },
-    {
-     "img": "k009",
-     "txt": "let it dry"
+     "txt": "pantuflas de baño"
     }
    ],
-   "bed": "vid/cltoilet/bed_7.mp4#304"
+   "bed": "vid/jpasco/bed_7.mp4#244"
   },
-  "t": 305.86,
-  "frase": "Let the brush dry before it goes back"
- },
- {
-  "c": "FabSiNo",
-  "from": 9979,
-  "dur": 210,
-  "props": {
-   "title": "Clean the outside",
-   "no": {
-    "img": "k010",
-    "txt": "only the bowl"
-   },
-   "si": {
-    "img": "k011",
-    "txt": "base and outside"
-   },
-   "bed": "vid/cltoilet/bed_8.mp4#214"
-  },
-  "t": 332.63,
-  "frase": "the smell is on the outside"
+  "t": 329.99,
+  "frase": "me quito los zapatos en la entrada"
  },
  {
   "c": "FabCalendario",
-  "from": 12532,
-  "dur": 210,
+  "from": 11620,
+  "dur": 150,
   "props": {
    "cada": 7,
-   "txt": "spray base & bolts",
-   "title": "Base care",
-   "bed": "vid/cltoilet/bed_9.mp4#214"
+   "txt": "alfombra de baño",
+   "title": "Lavado semanal",
+   "bed": "vid/jpasco/bed_8.mp4#154"
   },
-  "t": 417.74,
-  "frase": "Once a week, spray the base and the bolts"
- },
- {
-  "c": "FabPasos",
-  "from": 15876,
-  "dur": 147,
-  "props": {
-   "title": "Under the rim",
-   "pasos": [
-    {
-     "img": "k012",
-     "txt": "dip toothbrush"
-    },
-    {
-     "img": "k013",
-     "txt": "use a mirror"
-    },
-    {
-     "img": "k014",
-     "txt": "scrub the rim circle"
-    },
-    {
-     "img": "k015",
-     "txt": "rinse"
-    }
-   ],
-   "bed": "vid/cltoilet/bed_10.mp4#151"
-  },
-  "t": 529.2,
-  "frase": "Dip the old toothbrush in your vinegar"
+  "t": 387.35,
+  "frase": "se lava cada semana"
  },
  {
   "c": "FabAntesDespues",
-  "from": 16114,
+  "from": 12680,
   "dur": 240,
   "props": {
-   "antes": "k016",
-   "despues": "k017",
-   "nota": "no film, no smell",
-   "bed": "vid/cltoilet/bed_11.mp4#244"
+   "antes": "k009",
+   "despues": "k010",
+   "nota": "húmeda vs seca",
+   "bed": "vid/jpasco/bed_9.mp4#244"
   },
-  "t": 537.14,
-  "frase": "the crust come off"
+  "t": 422.66,
+  "frase": "le cambia el olor a la alfombra"
  },
  {
   "c": "FabDato",
-  "from": 16762,
+  "from": 15924,
   "dur": 150,
   "props": {
-   "num": "5",
-   "unidad": "minutes",
-   "txt": "with mirror and toothbrush",
-   "img": "k018",
-   "bed": "vid/cltoilet/bed_12.mp4#154"
+   "num": "3",
+   "unidad": "meses",
+   "txt": "cambiar el cepillo",
+   "bed": "vid/jpasco/bed_10.mp4#154"
   },
-  "t": 558.72,
-  "frase": "takes about five minutes"
+  "t": 530.8,
+  "frase": "Cámbialo cada tres meses"
  },
  {
-  "c": "ClQRCard",
-  "from": 18007,
-  "dur": 180,
+  "c": "FabCiclo",
+  "from": 16315,
+  "dur": 240,
   "props": {
-   "qr": "img/cltoilet/qr.jpg",
-   "cover": "img/cltoilet/book_cover.jpg",
-   "text": "Scan for the book",
-   "kicker": "Clean Home Manual",
-   "bed": "vid/cltoilet/bed_13.mp4#184"
+   "title": "Baño húmedo",
+   "etapas": [
+    {
+     "img": "k011",
+     "txt": "vapor"
+    },
+    {
+     "img": "k012",
+     "txt": "queda horas"
+    },
+    {
+     "img": "k013",
+     "txt": "nace moho"
+    }
+   ],
+   "centro": "encierro",
+   "bed": "vid/jpasco/bed_11.mp4#244"
   },
-  "t": 600.22,
-  "frase": "point your phone at the square on the screen"
- },
- {
-  "c": "FabCalendario",
-  "from": 22323,
-  "dur": 150,
-  "props": {
-   "cada": 1,
-   "txt": "wipe the handle",
-   "title": "Handle care",
-   "bed": "vid/cltoilet/bed_14.mp4#154"
-  },
-  "t": 744.1,
-  "frase": "Wipe it every day"
- },
- {
-  "c": "ClVideoRef",
-  "from": 24395,
-  "dur": 150,
-  "props": {
-   "thumb": "img/cltoilet/th_hhtoilet.jpg",
-   "title": "Peroxide in Your Toilet",
-   "tag": "OTHER VIDEO",
-   "bed": "vid/cltoilet/bed_15.mp4#154"
-  },
-  "t": 813.16,
-  "frase": "Put Hydrogen Peroxide in Your Toilet and Watch What Happens"
- },
- {
-  "c": "ClBookPage",
-  "from": 25035,
-  "dur": 150,
-  "props": {
-   "page": "img/cltoilet/page10.jpg",
-   "pageNo": 10,
-   "stamp": "The ring",
-   "bed": "vid/cltoilet/bed_16.mp4#154"
-  },
-  "t": 834.5,
-  "frase": "on page 10 of my little book"
+  "t": 543.84,
+  "frase": "el vapor queda pegado en las paredes"
  },
  {
   "c": "FabPasos",
-  "from": 25568,
-  "dur": 300,
+  "from": 16742,
+  "dur": 270,
   "props": {
-   "title": "Pumice ring care",
+   "title": "Secado en 5 minutos",
    "pasos": [
     {
-     "img": "k019",
-     "txt": "turn off water"
+     "img": "k014",
+     "txt": "rasqueta"
     },
     {
-     "img": "k020",
-     "txt": "flush to drop water"
+     "img": "k015",
+     "txt": "paño al espejo"
     },
     {
-     "img": "k021",
-     "txt": "pour vinegar"
+     "img": "k016",
+     "txt": "ventana abierta"
     },
     {
-     "img": "k022",
-     "txt": "rub with wet pumice"
+     "img": "k017",
+     "txt": "puerta abierta"
     }
    ],
-   "bed": "vid/cltoilet/bed_17.mp4#304"
+   "bed": "vid/jpasco/bed_12.mp4#274"
   },
-  "t": 852.28,
-  "frase": "Turn off the water behind the toilet"
- },
- {
-  "c": "FabSiNo",
-  "from": 26023,
-  "dur": 141,
-  "props": {
-   "title": "Keep it wet",
-   "no": {
-    "img": "k023",
-    "txt": "dry pumice"
-   },
-   "si": {
-    "img": "k024",
-    "txt": "wet pumice"
-   },
-   "bed": "vid/cltoilet/bed_18.mp4#145"
-  },
-  "t": 867.42,
-  "frase": "dry pumice scratches the porcelain"
+  "t": 558.06,
+  "frase": "se pasa una rasqueta por las paredes"
  },
  {
   "c": "FabAntesDespues",
-  "from": 26255,
-  "dur": 240,
+  "from": 18382,
+  "dur": 210,
   "props": {
-   "antes": "k025",
-   "despues": "k026",
-   "nota": "wet pumice, no scratches",
-   "bed": "vid/cltoilet/bed_19.mp4#244"
+   "antes": "k018",
+   "despues": "k019",
+   "nota": "de plástico a tela",
+   "bed": "vid/jpasco/bed_13.mp4#214"
   },
-  "t": 875.17,
-  "frase": "When the ring is gone"
+  "t": 612.74,
+  "frase": "la cortina se abre plana"
  },
  {
-  "c": "ClCheck",
-  "from": 28320,
-  "dur": 240,
+  "c": "ClQRCard",
+  "from": 19839,
+  "dur": 210,
   "props": {
-   "title": "The bathroom list",
-   "items": [
-    "Brush: dry across rim",
-    "Base & bolts: wipe weekly",
-    "Under rim: scrub with mirror",
-    "Handle: wipe every day"
-   ],
-   "bed": "vid/cltoilet/bed_20.mp4#244"
+   "qr": "img/jpasco/b_satotablet.jpg",
+   "cover": "img/jpasco/p15.jpg",
+   "text": "Escanea el QR de la página 15",
+   "kicker": "Manual de la casa",
+   "bed": "vid/jpasco/bed_14.mp4#214"
   },
-  "t": 943.98,
-  "frase": "The flush handle, wiped"
+  "t": 661.29,
+  "frase": "en la pantalla tienes el código QR"
  },
  {
-  "c": "ClVideoRef",
-  "from": 30264,
+  "c": "FabSiNo",
+  "from": 20469,
   "dur": 180,
   "props": {
-   "thumb": "img/cltoilet/th_clsteel.jpg",
-   "title": "Clean Stainless Steel",
-   "tag": "NEXT VIDEO",
-   "next": true,
-   "bed": "vid/cltoilet/bed_21.mp4#184"
+   "title": "Celular",
+   "no": {
+    "img": "k020",
+    "txt": "celular en el baño"
+   },
+   "si": {
+    "img": "k021",
+    "txt": "teléfono en la sala"
+   },
+   "bed": "vid/jpasco/bed_15.mp4#184"
   },
-  "t": 1008.8,
-  "frase": "The Best Way to Clean Stainless Steel Appliances"
+  "t": 682.29,
+  "frase": "En Japón el teléfono se queda afuera"
+ },
+ {
+  "c": "FabDato",
+  "from": 21907,
+  "dur": 150,
+  "props": {
+   "num": "1",
+   "unidad": "minuto al día",
+   "txt": "tres movimientos",
+   "bed": "vid/jpasco/bed_16.mp4#154"
+  },
+  "t": 730.23,
+  "frase": "un minuto cada día"
+ },
+ {
+  "c": "FabCiclo",
+  "from": 23561,
+  "dur": 195,
+  "props": {
+   "title": "Perfume que tapa",
+   "etapas": [
+    {
+     "img": "k022",
+     "txt": "se tapa"
+    },
+    {
+     "img": "k023",
+     "txt": "vuelve"
+    },
+    {
+     "img": "k024",
+     "txt": "mezclado"
+    }
+   ],
+   "centro": "olor tapado",
+   "bed": "vid/jpasco/bed_17.mp4#199"
+  },
+  "t": 785.38,
+  "frase": "El olor se tapa por un rato"
+ },
+ {
+  "c": "FabSiNo",
+  "from": 23851,
+  "dur": 180,
+  "props": {
+   "title": "Baño limpio",
+   "no": {
+    "img": "k025",
+    "txt": "aromatizante fuerte"
+   },
+   "si": {
+    "img": "k026",
+    "txt": "aire y ventilación"
+   },
+   "bed": "vid/jpasco/bed_18.mp4#184"
+  },
+  "t": 795.05,
+  "frase": "Lo limpio no huele a nada"
  }
 ]

@@ -1,0 +1,290 @@
+[
+ {
+  "c": "ClVideoRef",
+  "frase": "La semana pasada te conté de los productos",
+  "dur": 2,
+  "props": {
+   "thumb": "img/jpasco/th_card.jpg",
+   "title": "Productos del baño que no sabías",
+   "tag": "VIDEO ANTERIOR",
+   "next": false
+  }
+ },
+ {
+  "c": "ClBookPage",
+  "frase": "la regla siete está en la página quince",
+  "dur": 6,
+  "props": {
+   "page": "img/jpasco/p15.jpg",
+   "pageNo": 15,
+   "stamp": "Regla 7: la tapa"
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "baja la tapa antes de tirar la cadena",
+  "dur": 7,
+  "props": {
+   "title": "Antes de la cadena",
+   "no": {
+    "img": "k001",
+    "txt": "Tapa abierta"
+   },
+   "si": {
+    "img": "k002",
+    "txt": "Tapa cerrada"
+   }
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "cuatro, cinco, seis veces al día",
+  "dur": 5,
+  "props": {
+   "num": "4-6",
+   "unidad": "veces al día",
+   "txt": "con la tapa abierta",
+   "alerta": true
+  }
+ },
+ {
+  "c": "FabAltura",
+  "frase": "estira el brazo y mira hasta dónde llega",
+  "dur": 7,
+  "props": {
+   "title": "¿Muy cerca?",
+   "max": 200,
+   "marcas": [
+    {
+     "cm": 30,
+     "txt": "el vaso a 30 cm",
+     "alerta": true
+    },
+    {
+     "cm": 100,
+     "txt": "distancia mínima"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabCiclo",
+  "frase": "Se moja, se seca mal, se vuelve a colgar",
+  "dur": 6,
+  "props": {
+   "title": "Toalla compartida",
+   "etapas": [
+    {
+     "img": "k003",
+     "txt": "se moja"
+    },
+    {
+     "img": "k004",
+     "txt": "se seca mal"
+    },
+    {
+     "img": "k005",
+     "txt": "se vuelve a colgar"
+    }
+   ],
+   "centro": "olor a humedad"
+  }
+ },
+ {
+  "c": "FabCalendario",
+  "frase": "se cambia cada tres días",
+  "dur": 5,
+  "props": {
+   "cada": 3,
+   "txt": "toalla por persona",
+   "title": "Toalla seca"
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "me quito los zapatos en la entrada",
+  "dur": 8,
+  "props": {
+   "title": "Cambio de calzado",
+   "pasos": [
+    {
+     "img": "k006",
+     "txt": "zapatos de calle"
+    },
+    {
+     "img": "k007",
+     "txt": "pantuflas de casa"
+    },
+    {
+     "img": "k008",
+     "txt": "pantuflas de baño"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabCalendario",
+  "frase": "se lava cada semana",
+  "dur": 5,
+  "props": {
+   "cada": 7,
+   "txt": "alfombra de baño",
+   "title": "Lavado semanal"
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "le cambia el olor a la alfombra",
+  "dur": 8,
+  "props": {
+   "antes": "k009",
+   "despues": "k010",
+   "nota": "húmeda vs seca"
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "Cámbialo cada tres meses",
+  "dur": 5,
+  "props": {
+   "num": "3",
+   "unidad": "meses",
+   "txt": "cambiar el cepillo"
+  }
+ },
+ {
+  "c": "FabCiclo",
+  "frase": "el vapor queda pegado en las paredes",
+  "dur": 8,
+  "props": {
+   "title": "Baño húmedo",
+   "etapas": [
+    {
+     "img": "k011",
+     "txt": "vapor"
+    },
+    {
+     "img": "k012",
+     "txt": "queda horas"
+    },
+    {
+     "img": "k013",
+     "txt": "nace moho"
+    }
+   ],
+   "centro": "encierro"
+  }
+ },
+ {
+  "c": "FabPasos",
+  "frase": "se pasa una rasqueta por las paredes",
+  "dur": 9,
+  "props": {
+   "title": "Secado en 5 minutos",
+   "pasos": [
+    {
+     "img": "k014",
+     "txt": "rasqueta"
+    },
+    {
+     "img": "k015",
+     "txt": "paño al espejo"
+    },
+    {
+     "img": "k016",
+     "txt": "ventana abierta"
+    },
+    {
+     "img": "k017",
+     "txt": "puerta abierta"
+    }
+   ]
+  }
+ },
+ {
+  "c": "FabAntesDespues",
+  "frase": "la cortina se abre plana",
+  "dur": 7,
+  "props": {
+   "antes": "k018",
+   "despues": "k019",
+   "nota": "de plástico a tela"
+  }
+ },
+ {
+  "c": "ClQRCard",
+  "frase": "en la pantalla tienes el código QR",
+  "dur": 7,
+  "props": {
+   "qr": "img/jpasco/b_satotablet.jpg",
+   "cover": "img/jpasco/p15.jpg",
+   "text": "Escanea el QR de la página 15",
+   "kicker": "Manual de la casa"
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "En Japón el teléfono se queda afuera",
+  "dur": 6,
+  "props": {
+   "title": "Celular",
+   "no": {
+    "img": "k020",
+    "txt": "celular en el baño"
+   },
+   "si": {
+    "img": "k021",
+    "txt": "teléfono en la sala"
+   }
+  }
+ },
+ {
+  "c": "FabDato",
+  "frase": "un minuto cada día",
+  "dur": 5,
+  "props": {
+   "num": "1",
+   "unidad": "minuto al día",
+   "txt": "tres movimientos"
+  }
+ },
+ {
+  "c": "FabCiclo",
+  "frase": "El olor se tapa por un rato",
+  "dur": 6.5,
+  "props": {
+   "title": "Perfume que tapa",
+   "etapas": [
+    {
+     "img": "k022",
+     "txt": "se tapa"
+    },
+    {
+     "img": "k023",
+     "txt": "vuelve"
+    },
+    {
+     "img": "k024",
+     "txt": "mezclado"
+    }
+   ],
+   "centro": "olor tapado"
+  }
+ },
+ {
+  "c": "FabSiNo",
+  "frase": "Lo limpio no huele a nada",
+  "dur": 6,
+  "props": {
+   "title": "Baño limpio",
+   "no": {
+    "img": "k025",
+    "txt": "aromatizante fuerte"
+   },
+   "si": {
+    "img": "k026",
+    "txt": "aire y ventilación"
+   }
+  }
+ }
+]

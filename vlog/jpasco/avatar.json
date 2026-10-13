@@ -1,0 +1,107 @@
+[
+ {
+  "n": "Apertura baño",
+  "desde": "No la ves.",
+  "hasta": "mirar el baño de otra manera."
+ },
+ {
+  "n": "Historia Sato 1",
+  "desde": "Mi primera semana en el hotel de Tokio",
+  "hasta": "puerta siguiente."
+ },
+ {
+  "n": "Historia Sato 2",
+  "desde": "Yo me quedé ahí",
+  "hasta": "mirando que escuchando."
+ },
+ {
+  "n": "CTA 1",
+  "desde": "Antes de seguir, una cosa importante.",
+  "hasta": "importante."
+ },
+ {
+  "n": "Hábito 1",
+  "desde": "Número uno:",
+  "hasta": "sirve para lo que sale volando."
+ },
+ {
+  "n": "Hábito 2",
+  "desde": "Número dos:",
+  "hasta": "de la lluvia de cada descarga."
+ },
+ {
+  "n": "Hábito 3",
+  "desde": "Número tres:",
+  "hasta": "del baño solo para el baño."
+ },
+ {
+  "n": "Hábito 4",
+  "desde": "Número cuatro:",
+  "hasta": "calle."
+ },
+ {
+  "n": "Hábito 5",
+  "desde": "Número cinco:",
+  "hasta": "lava."
+ },
+ {
+  "n": "Historia hermana 1",
+  "desde": "Te cuento de la casa de mi hermana",
+  "hasta": "dando vueltas."
+ },
+ {
+  "n": "Historia hermana 2",
+  "desde": "Esa tarde nos sentamos en la cocina",
+  "hasta": "Ahora sabes lo que estabas tapando."
+ },
+ {
+  "n": "Hábito 6",
+  "desde": "Número seis:",
+  "hasta": "vasito."
+ },
+ {
+  "n": "Hábito 7",
+  "desde": "Número siete:",
+  "hasta": "espejo se ve, lo hiciste bien."
+ },
+ {
+  "n": "Hábito 8",
+  "desde": "Número ocho:",
+  "hasta": "negro."
+ },
+ {
+  "n": "CTA 2",
+  "desde": "Si hasta aquí ya estás pensando en tu propio baño",
+  "hasta": "te lo digo otra vez:"
+ },
+ {
+  "n": "Hábito 9",
+  "desde": "Número nueve:",
+  "hasta": "mesa."
+ },
+ {
+  "n": "Hábito 10",
+  "desde": "Número diez:",
+  "hasta": "pasa seis días esperando el sábado."
+ },
+ {
+  "n": "Hábito 11",
+  "desde": "Número once:",
+  "hasta": "limpio."
+ },
+ {
+  "n": "Recap",
+  "desde": "Vamos a repasarlos, rápido.",
+  "hasta": "no a perfume."
+ },
+ {
+  "n": "Cierre",
+  "desde": "¿Cuántos de los once haces tú?",
+  "hasta": "una sola costumbre."
+ },
+ {
+  "n": "Próximo video",
+  "desde": "El próximo video:",
+  "hasta": "próximo video."
+ }
+]

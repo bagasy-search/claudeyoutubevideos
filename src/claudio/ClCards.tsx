@@ -37,7 +37,7 @@ export const ClChapter: React.FC<{ n?: number; title: string; sub?: string; bed?
   );
 };
 
-export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; fast?: boolean }> = ({ title, items, bed, fast }) => {
+export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; fast?: boolean; label?: string }> = ({ title, items, bed, fast, label = "LA REGLA" }) => {
   const f = useCurrentFrame(); const { fps, durationInFrames } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2);
   const step = fast ? Math.max(8, (durationInFrames - 30) / items.length) : Math.max(14, Math.min(40, (durationInFrames - 30) / items.length));
@@ -51,7 +51,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
           <Card style={{ padding: "34px 50px 30px", borderRadius: 6 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", borderBottom: `4px solid ${CL.navy}`, paddingBottom: 10, marginBottom: 22 }}>
               <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 60, color: CL.ink }}>{title}</div>
-              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>ORDEN DE SERVICIO</div>
+              <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 26, color: CL.inkSoft, letterSpacing: 3 }}>{label}</div>
             </div>
             {items.map((it, i) => {
               const t0 = 16 + i * step, k = lin(f, t0, t0 + 8), hk = lin(f, t0 + 4, t0 + 16);
@@ -75,7 +75,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
   );
 };
 
-export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string; pagLabel?: string; hint?: string }> = ({ page, qr, stamp = "Gratis en la página", pageNo = 9, bed, pagLabel = "PÁG.", hint = "apunte la cámara acá" }) => {
+export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string }> = ({ page, qr, stamp = "Gratis en la página", pageNo = 9, bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2, 18), pq = pop(f, fps, 16);
   const y = interpolate(p, [0, 1], [-1000, 0]), r = interpolate(p, [0, 1], [-14, -3]);
@@ -88,13 +88,13 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
           <Img src={staticFile(page)} style={{ width: 760, display: "block" }} />
         </div>
         <Tape x={300} y={-18} rot={4} w={160} />
-        <div style={{ position: "absolute", right: -40, bottom: 40, background: CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 40, padding: "6px 22px", borderRadius: 10, rotate: "4deg", boxShadow: `0 10px 20px ${CL.shadow}` }}>{pagLabel} {pageNo}</div>
+        <div style={{ position: "absolute", right: -40, bottom: 40, background: CL.navy, color: "#fff", fontFamily: LABEL, fontWeight: 700, fontSize: 40, padding: "6px 22px", borderRadius: 10, rotate: "4deg", boxShadow: `0 10px 20px ${CL.shadow}` }}>PÁG. {pageNo}</div>
       </div>
       {qr ? (
         <div style={{ position: "absolute", right: 150, top: 230, opacity: Math.min(out, pq), translate: `${(1 - pq) * 120}px 0`, rotate: "3deg" }}>
           <Card style={{ padding: 26, borderTop: `14px solid ${CL.yellow}`, textAlign: "center" }}>
             <Img src={staticFile(qr)} style={{ width: 420, height: 420, display: "block", imageRendering: "pixelated" }} />
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>{hint}</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>apunta la cámara aquí</div>
           </Card>
         </div>
       ) : null}
@@ -104,7 +104,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
   );
 };
 
-export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kicker?: string; bed?: string }> = ({ qr, cover, text = "apunte la cámara del celular acá", kicker = "ARREGLO COMPLETO · GRATIS", bed }) => {
+export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kicker?: string; bed?: string }> = ({ qr, cover, text = "apunta la cámara del celular aquí", kicker = "ARREGLO COMPLETO · GRATIS", bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2), pc = pop(f, fps, 10), w = lin(f, 18, 36);
   return (
@@ -121,9 +121,7 @@ export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; kic
           <div style={{ background: "#fff", padding: 16, borderRadius: 12, border: `3px solid ${CL.grout}` }}>
             <Img src={staticFile(qr)} style={{ width: 440, height: 440, display: "block", margin: "0 auto", imageRendering: "pixelated" }} />
           </div>
-          {/* ⛔ el texto va en una sola línea y la tarjeta recorta: si es largo se achica (medido en fumoscasf:
-              "66 arreglos · garantía 7 días" a 52 px salía 700 px y la tarjeta tiene 580 → lo cortaba en "7 dí") */}
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: text.length > 23 ? 40 : 52, color: CL.navy, marginTop: 16, clipPath: `inset(0 ${100 - w * 100}% 0 0)`, whiteSpace: "nowrap" }}>{text}</div>
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 16, clipPath: `inset(0 ${100 - w * 100}% 0 0)`, whiteSpace: "nowrap" }}>{text}</div>
         </Card>
       </div>
       <RoomLight k={0.4} />

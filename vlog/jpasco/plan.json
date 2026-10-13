@@ -1,0 +1,34 @@
+{
+ "vision": "El video debe sentirse como un recorrido por baños reales, con la calidez de Claudio en su polo rojo y la precisión de un manual japonés. Las polaroids muestran exactamente lo que se dice: la tapa, el vaso con cepillos, la toalla húmeda, las pantuflas, la alfombra al sol. Los planos detalle y los gestos con las manos sostienen la atención; los componentes entran como puntuación, nunca encima de Claudio. El ritmo alterna el baño latino y el hotel de Tokio para que cada regla tenga su contraste.",
+ "secciones": {
+  "HOOK": "Arranque con planos detalle del inodoro abierto, la cadena, las gotas invisibles sobre el cepillo y el vaso; sin texto ni componentes. Hero shot de Claudio señalando la tapa, cara visible.",
+  "PROMESA": "Claudio a cámara enumera los once hábitos, con fotos de la tapa, el cepillo, la toalla apenas sugeridas. Se inserta la referencia al video anterior. Hero shot de Claudio con cara visible y la mano en el lavamanos.",
+  "HISTORIA": "Secuencia en hotel de Tokio: pasillo, puerta 12, baño compacto, Sato inclinada bajando la tapa. Luego el recuerdo en el baño latino con Claudio y su trapo. Hero shot de Claudio con trapo, cara visible, y Sato de medio perfil.",
+  "CTA1": "Claudio a cámara serio, luego la página 15 del libro en sus manos. Hero shot de Claudio mostrando el libro abierto.",
+  "UNO": "Planos del inodoro abierto, la descarga, la niebla fina, gotas en el cepillo; solución con mano bajando la tapa. Hero shot de Claudio bajando la tapa, cara visible.",
+  "DOS": "Vaso de cepillos al lado del inodoro, cinta métrica, portacepillos con tapa, brazo estirado. Hero shot de Claudio midiendo con cinta y moviendo el vaso.",
+  "TRES": "Toalla compartida colgada y húmeda; contraste con toallas individuales dobladas. Hero shot de Claudio colgando su toalla, cara visible.",
+  "CUATRO": "Zapatos de calle, escalón del genkan, pantuflas de casa y de baño. Hero shot de Claudio cambiándose las pantuflas, cara visible.",
+  "CINCO": "Alfombra húmeda con agua debajo; luego lavado, sol y secado en baranda. Hero shot de Claudio tendiendo la alfombra al sol.",
+  "SEIS": "Cepillo de inodoro mojado en su vaso; luego escurriendo entre asiento y taza, base seca. Hero shot de Claudio escurriendo el cepillo.",
+  "SIETE": "Vapor, espejo empañado, juntas oscuras; luego rasqueta, paño, ventana abierta, ventilador. Hero shot de Claudio pasando la rasqueta, cara visible.",
+  "OCHO": "Cortina de plástico con borde negro; lavado, cortina de tela extendida. Hero shot de Claudio abriendo la cortina plana.",
+  "CTA2": "Claudio a cámara, página 15 y código QR en pantalla. Hero shot de Claudio señalando el QR.",
+  "NUEVE": "Celular en el baño, sobre el lavamanos, en el piso; luego celular en mesa de sala. Hero shot de Claudio dejando el celular en la mesa.",
+  "DIEZ": "Limpieza de sábado con balde y trapos; luego rutina de un minuto: asiento, llave, piso. Hero shot de Claudio con el paño y reloj de cocina.",
+  "ONCE": "Aromatizante, olor a perfume, ventana cerrada; luego ventanas abiertas, desagüe, pelo. Hero shot de Claudio oliendo el aire, cara visible.",
+  "RECAP": "Montaje rápido de los once hábitos, un plano por hábito con números en pantalla; Claudio a cámara enumera. Cierre con el baño seco.",
+  "CIERRE": "Claudio a cámara, confiado, pide comentarios. Fotos del baño ya cambiado. Hero shot de Claudio sonriendo.",
+  "PROXIMO": "Cocina de Claudio, refrigerador con imanes, encimera. Hero shot de Claudio abriendo el refrigerador."
+ },
+ "problemas": [
+  "ventana 5: 'hasta' está antes que 'desde'",
+  "ventana 6: 'hasta' está antes que 'desde'",
+  "ventana 7: 'hasta' está antes que 'desde'",
+  "ventana 11: 'hasta' está antes que 'desde'",
+  "ventana 13: 'hasta' está antes que 'desde'",
+  "ventana 17: 'hasta' está antes que 'desde'",
+  "ov[1] ClBookPage.pageNo: tiene que ser un número entre 1 y 300",
+  "FabCiclo (785.38 s) y FabSiNo (795.05 s) quedan a menos de 3 s: separalos"
+ ]
+}
