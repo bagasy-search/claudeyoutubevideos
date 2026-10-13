@@ -215,7 +215,10 @@
       "hl": 6
      }
     ],
-    "caption": "THE HAND TOWEL · PAGE 30",
+    "caption": {
+     "txt": "THE HAND TOWEL · PAGE 30",
+     "t": 115.86
+    },
     "k": "n_towels",
     "ctr": 1
    }
@@ -299,7 +302,10 @@
       "hl": 6
      }
     ],
-    "caption": "LINK IN THE DESCRIPTION",
+    "caption": {
+     "txt": "LINK IN THE DESCRIPTION",
+     "t": 169.66
+    },
     "k": "n_towels",
     "ctr": 1
    }
@@ -398,7 +404,10 @@
       "hl": 6
      }
     ],
-    "caption": "THE RING AT THE WATERLINE",
+    "caption": {
+     "txt": "THE RING AT THE WATERLINE",
+     "t": 228.5
+    },
     "k": "n_toiletring",
     "ctr": 2
    }
@@ -447,7 +456,10 @@
       "hl": 5
      }
     ],
-    "caption": "NEVER MIX · PAGE 3",
+    "caption": {
+     "txt": "NEVER MIX · PAGE 3",
+     "t": 252.293
+    },
     "k": "n_chemicals",
     "ctr": 2
    }
@@ -507,7 +519,10 @@
       "hl": 6
      }
     ],
-    "caption": "THE MIRROR WITHOUT STREAKS",
+    "caption": {
+     "txt": "THE MIRROR WITHOUT STREAKS",
+     "t": 283.853
+    },
     "k": "l_mirror",
     "ctr": 3
    }
@@ -618,7 +633,10 @@
       "hl": 6
      }
     ],
-    "caption": "THE OVEN DOOR GLASS",
+    "caption": {
+     "txt": "THE OVEN DOOR GLASS",
+     "t": 356.093
+    },
     "k": "n_ovenglass",
     "ctr": 4
    }
@@ -752,7 +770,10 @@
       "hl": 6
      }
     ],
-    "caption": "STAINLESS WITHOUT STREAKS",
+    "caption": {
+     "txt": "STAINLESS WITHOUT STREAKS",
+     "t": 434.74
+    },
     "k": "n_fridgeprints",
     "ctr": 5
    }
@@ -791,7 +812,10 @@
       "hl": 6
      }
     ],
-    "caption": "THE FRIDGE AND THE DOOR SEAL",
+    "caption": {
+     "txt": "THE FRIDGE AND THE DOOR SEAL",
+     "t": 455.953
+    },
     "k": "n_fridgeinside",
     "ctr": 5
    }
@@ -883,7 +907,10 @@
       "hl": 6
      }
     ],
-    "caption": "STICKY CABINETS NEAR THE STOVE",
+    "caption": {
+     "txt": "STICKY CABINETS NEAR THE STOVE",
+     "t": 522.7
+    },
     "k": "n_cabinet",
     "ctr": 6
    }
@@ -983,7 +1010,10 @@
       "hl": 6
      }
     ],
-    "caption": "WINDOW TRACKS",
+    "caption": {
+     "txt": "WINDOW TRACKS",
+     "t": 582.633
+    },
     "k": "n_trackmess",
     "ctr": 7
    }
@@ -1104,7 +1134,10 @@
       "hl": 6
      }
     ],
-    "caption": "CEILING FANS WITH A PILLOWCASE",
+    "caption": {
+     "txt": "CEILING FANS WITH A PILLOWCASE",
+     "t": 662.413
+    },
     "k": "n_fanblades",
     "ctr": 8
    }
@@ -1239,7 +1272,10 @@
       "hl": 6
      }
     ],
-    "caption": "A HOUSE THAT SMELLS LIKE SUNDAY DINNER",
+    "caption": {
+     "txt": "A HOUSE THAT SMELLS LIKE SUNDAY DINNER",
+     "t": 749.473
+    },
     "k": "n_smellpot",
     "ctr": 9
    }
@@ -1345,7 +1381,10 @@
       "hl": 8
      }
     ],
-    "caption": "THE CLEANING CALENDAR · PAGE 50",
+    "caption": {
+     "txt": "THE CLEANING CALENDAR · PAGE 50",
+     "t": 823.193
+    },
     "k": "n_calendarbed"
    }
   },
