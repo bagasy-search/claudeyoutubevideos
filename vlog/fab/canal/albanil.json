@@ -1,0 +1,38 @@
+{
+ "canal": "Claudio el Albañil",
+ "serie": "La casa de Doña Marta",
+ "dir_refs": "D:/rtmp/fab/canal/albanil",
+ "estilo": "Ordinary old house interior and façade in daylight from the windows or the street, worn objects, dust and cement grey on the floor, a little off-center framing, nothing posed.",
+ "personajes": {
+  "claudio": {
+   "nombre": "Claudio",
+   "desc": "Claudio, a 58-year-old Latin American bricklayer with short curly black hair going gray, a gray-stubbled beard, warm brown eyes and tanned weathered skin, wearing a bright orange crew-neck t-shirt with a little gray cement dust and a yellow tape measure clipped to his belt",
+   "ref": "public/ref_{slug}.png",
+   "cara": true
+  },
+  "marta": {
+   "nombre": "Doña Marta",
+   "desc": "Doña Marta, a 70-year-old Latin American widow with short white hair, wearing a lilac cardigan and an apron"
+  }
+ },
+ "lugares_fijos": {
+  "sala": "Doña Marta's living room: mint-green plaster walls, red clay tile floor, windows with white iron bars, a dark wooden wardrobe and sideboard, a small wall clock",
+  "fachada": "the front façade of the old Latin American house: mint-green wall with old paint peeling in sheets near the floor, a wooden door with iron grille, a small cement step",
+  "cocina": "the small kitchen of the house: beige floor tiles, white wall tiles, a steel sink under a window with white iron bars, a wooden table",
+  "pasillo": "the hallway of the house: red clay tile floor, mint-green plaster walls, a row of framed family photos",
+  "mostrador": "the counter of a small neighborhood hardware store: glass counter with screws and small items inside, wooden shelves behind full of paint cans and rolls of tape"
+ },
+ "identidad": "Preserve the exact identity, face, short curly black hair going gray, gray-stubbled beard, age and skin tone of the man in the reference photograph. He is a 58-year-old Latin American bricklayer wearing a bright orange crew-neck t-shirt with a little gray cement dust and a yellow tape measure clipped to his belt.",
+ "cara_crop": "public/ref_alpintura_face.png",
+ "idioma": "es",
+ "protagonista": "claudio",
+ "pron": "he",
+ "voz": "claudio_definitiva",
+ "cps": 14.8,
+ "ejemplos": "al",
+ "avatar_pct": [
+  25,
+  32
+ ],
+ "prohibidas": []
+}
