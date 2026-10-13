@@ -210,3 +210,5 @@ img/rkmorning_x14.jpg
 img/rkmorning_x14_blur.jpg
 img/rkmorning_x15.jpg
 img/rkmorning_x15_blur.jpg
+img/rkmorning_qr_card.png
+img/rkmorning_qr_card_blur.jpg

@@ -28,7 +28,8 @@ const H = { apikey: K, Authorization: "Bearer " + K, "Content-Type": "applicatio
 
 // 1) verificar release descargable
 let asset;
-try { asset = (JSON.parse(sh(`gh release view ${slug} -R ${REPO} --json assets`)).assets || []).find((a) => a.name === `${slug}.mp4`); }
+// por REST (`gh api`) y no `gh release view`: ese usa GraphQL, que el proxy de las sesiones en la nube bloquea.
+try { asset = (JSON.parse(sh(`gh api repos/${REPO}/releases/tags/${slug}`)).assets || []).find((a) => a.name === `${slug}.mp4`); }
 catch (e) { console.error(`no pude ver el release ${slug} en ${REPO}:`, String(e.stderr || e.message).slice(0, 160)); process.exit(2); }
 if (!asset || asset.size < 1e6) { console.error("el release no tiene el mp4 (o es muy chico) — el render no está publicado"); process.exit(2); }
 // MP4_SUFIJO: sufijo opcional para la URL (ej. MP4_SUFIJO="?v=2"). Sirve cuando se REEMPLAZO

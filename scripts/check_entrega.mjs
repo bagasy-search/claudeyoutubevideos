@@ -48,7 +48,8 @@ if (a.duration && v.duration) {
 
 // keyframes: con GOPs largos el navegador tironea cada vez que se queda sin buffer
 const kf = probe(["-select_streams", "v:0", "-skip_frame", "nokey", "-show_entries", "frame=pts_time",
-  "-read_intervals", "%+120", "-of", "csv=p=0"]).split("\n").map(Number).filter((x) => !isNaN(x));
+  "-read_intervals", "%+120", "-of", "csv=p=0"]).split("\n").map((l) => Number(l.split(",")[0])).filter((x) => !isNaN(x));
+// ↑ ffprobe devuelve "0.000000," (coma final) cuando el cuadro trae side data: Number() daba NaN, se salteaban keyframes y el hueco salía inflado
 if (kf.length > 2) {
   const gap = Math.max(...kf.slice(1).map((x, i) => x - kf[i]));
   exigir(gap <= 3.0, `keyframes cada ${gap.toFixed(1)}s`, `keyframes cada ${gap.toFixed(1)}s (máximo 3 s: con GOPs largos el buffer no recupera)`);
