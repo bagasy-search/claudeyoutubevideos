@@ -33,16 +33,7 @@ const shakeAt = (f: number, at: (t: number) => number, ts: number[] = []) => {
   return [jx, jy];
 };
 // polvo en el aire (motas cálidas)
-const Motes: React.FC<{ f: number; n?: number; op?: number }> = ({ f, n = 26, op = 1 }) => (
-  <AbsoluteFill style={{ pointerEvents: "none", opacity: op }}>
-    {Array.from({ length: n }, (_, i) => {
-      const x = rnd(i, 1) * 1920 + Math.sin(f / (50 + 40 * rnd(i, 2)) + rnd(i, 3) * 6) * 30;
-      const y = 1080 - ((f * (0.35 + rnd(i, 4) * 0.8) + rnd(i, 5) * 1080) % 1140);
-      const r = 2 + 5 * rnd(i, 6);
-      return <div key={i} style={{ position: "absolute", left: x, top: y, width: r, height: r, borderRadius: 9, background: "rgba(255,240,210,0.75)", opacity: 0.12 + 0.25 * rnd(i, 7), filter: r > 5 ? "blur(1px)" : undefined }} />;
-    })}
-  </AbsoluteFill>
-);
+const Motes: React.FC<{ f: number; n?: number; op?: number }> = () => null; // sin motas (sin filtros, 13-oct)
 // rótulo en pantalla (entra en su palabra; opcional sale en `out`)
 export type ChipB = { t: number; txt: string; x: number; y: number; red?: boolean; ink?: boolean; hand?: boolean; size?: number; out?: number; rot?: number; big?: boolean };
 const Chips: React.FC<{ f: number; at: (t: number) => number; chips?: ChipB[] }> = ({ f, at, chips }) => (
@@ -84,7 +75,7 @@ export const PhotoBeats: P<{ k: string; cam?: Cam[]; marks?: MarkB[]; chips?: Ch
       <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0b0a10" }}>
         <AbsoluteFill style={camStyle(c, jx, jy)}>
           <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
-            <Img src={img(k)} style={{ width: 1920, height: 1080, objectFit: "cover", filter: old ? "sepia(0.45) contrast(1.05) brightness(0.95)" : dim ? `brightness(${1 - dim})` : undefined }} />
+            <Img src={img(k)} style={{ width: 1920, height: 1080, objectFit: "cover", filter: dim ? `brightness(${1 - dim})` : undefined }} />
             {(marks || []).map((m, i) => <Mark key={i} kind={m.kind} x={m.x} y={m.y} w={m.w} h={m.h} f={f} at={at(m.t)} dur={11} sw={m.sw ?? 10} />)}
             {(rings || []).map((r, i) => {
               const q0 = (f - at(r.t)) / 34;
@@ -120,7 +111,6 @@ export const OpenThumb: P<{ k: string; focus?: [number, number]; rings?: { t: nu
           {!still ? marks.map((m, i) => <Mark key={i} kind="circle" x={m.x} y={m.y} w={m.w} h={m.h} f={f} at={at(m.t)} dur={9} sw={11} />) : null}
         </div>
       </AbsoluteFill>
-      {!still ? <AbsoluteFill style={{ background: `radial-gradient(ellipse at 58% 30%, rgba(255,214,140,${0.14 + breathe}), rgba(255,214,140,0) 60%)`, mixBlendMode: "screen" }} /> : null}
       {!still ? <Motes f={f} n={30} op={cl((f - 18) / 12)} /> : null}
     </AbsoluteFill>
   );

@@ -91,7 +91,7 @@ export const MistakeStamp: P<{ k: string; txt: string; cx?: number; cy?: number;
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `scale(${1.08 + 0.1 * f / d})`, transformOrigin: `${cx}% ${cy}%` }}>
-        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "saturate(0.85)" }} />
+        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
         <Mark kind="circle" x={cx * 19.2 - 230} y={cy * 10.8 - 170} w={460} h={330} f={f} at={8} dur={10} sw={11} />
       </AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(10,8,14,0.6) 0%, rgba(10,8,14,0) 55%)" }} />
@@ -469,7 +469,6 @@ export const Memory: P<{ k: string; caption: string; date: string; t?: number }>
   return (
     <Stage f={f} T={d} drift={0.8}>
       <Bed k={k} f={f} T={d} dim={0.55} />
-      <AbsoluteFill style={{ background: "rgba(90,60,20,0.18)", mixBlendMode: "multiply" }} />
       <div style={{ position: "absolute", left: 960, top: 520, translate: "-50% -50%", transform: `rotate(${-4 + 2 * cam}deg) translateY(${(1 - u) * 600}px) scale(${1 + 0.04 * cam})` }}>
         <div style={{ background: "#F6F0E2", padding: "30px 30px 120px", boxShadow: "0 60px 110px rgba(0,0,0,0.6)" }}>
           <div style={{ width: 980, height: 551, overflow: "hidden" }}><Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: "sepia(0.75) contrast(1.05) brightness(0.95)", transform: `scale(${1.05 + 0.06 * cam})` }} /></div>

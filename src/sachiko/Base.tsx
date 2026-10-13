@@ -29,13 +29,10 @@ export const avAt = (t: number) => { const w = avWin(t); return w.off + (t - w.m
 export const avSrc = (t: number) => staticFile(`av/${SLUG}/reel${avWin(t).reel}.mp4`);
 
 // ── capas comunes ──
-export const Grain: React.FC = () => (
-  <AbsoluteFill style={{ pointerEvents: "none", backgroundImage: `url(${staticFile("img/sachiko/_st/grain.png")})`, backgroundRepeat: "repeat", opacity: 0.06, mixBlendMode: "overlay" }} />
-);
-export const Grade: React.FC<{ warm?: number; vig?: number }> = ({ warm = 1, vig = 0.32 }) => (
-  <AbsoluteFill style={{ pointerEvents: "none", background:
-    `linear-gradient(180deg, rgba(255,236,200,${0.08 * warm}) 0%, rgba(255,236,200,0) 40%, rgba(24,18,36,0.14) 100%), radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 55%, rgba(14,10,22,${vig}) 100%)` }} />
-);
+// SIN FILTROS (dueño, 13-oct: "a los demás no le pongas filtros, máximo realismo"): ni grano ni grade de color/viñeta.
+// Se mantienen como componentes vacíos para no romper los imports del kit.
+export const Grain: React.FC = () => null;
+export const Grade: React.FC<{ warm?: number; vig?: number }> = () => null;
 
 // ── un plano: foto o clip con cámara (escala/foco/deriva) + transición de entrada/salida por movimiento ──
 export type Tr = "cut" | "whip" | "zoom";
