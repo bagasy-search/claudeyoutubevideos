@@ -22,6 +22,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { submitBatch, pollBatch, fetchBatch } from "../factory/lib/openai_batch.mjs";
+import { trabado, planB } from "../factory/lib/openai_cupo.mjs";
 
 const SIZE = "1088x608", QUALITY = "low", LOTE = 150;
 const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
@@ -111,6 +112,11 @@ while (pendientes().length) {
     if (["failed", "expired", "cancelled"].includes(p.status)) {
       console.error(`⛔ batch ${b.id} terminó ${p.status}: ${JSON.stringify(p.errors || {}).slice(0, 300)}`);
       b.bajado = true; b.estado = p.status; guardar(); totalFail += b.n; continue;
+    }
+    // 🛟 trabado >20 min en 0 (cola de la cuenta saturada) → se cancela y lo que falta lo hace agnes (13-oct)
+    if (!String(b.id).startsWith("agnes:") && trabado({ status: p.status, request_counts: c, created_at: p.creado })) {
+      const hizo = await planB(b.id, items.filter((it) => b.names.includes(it.name)), outDir);
+      b.bajado = true; b.estado = "planB"; b.ok = hizo; guardar(); totalOk += hizo; totalFail += b.n - hizo; continue;
     }
     if (p.status !== "completed") { console.log(`  … ${b.id} ${p.status} ${c.completed || 0}/${c.total || b.n}`); continue; }
     const f = await fetchBatch({ batchId: b.id, outDir, onLog: (m) => console.log(m) });

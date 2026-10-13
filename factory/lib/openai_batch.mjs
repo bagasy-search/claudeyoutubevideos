@@ -12,6 +12,7 @@ import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { env, ROOT } from "./env.mjs";
 import { BlockedError, esSinCredito } from "./budget.mjs";
+import { esperarCupo } from "./openai_cupo.mjs";
 
 const API = "https://api.openai.com/v1";
 const key = () => env("OPENAI_API_KEY", { required: true });
@@ -43,6 +44,7 @@ export async function submitBatch({ items, outDir, size = "1088x608", quality = 
   //    así ningún llamador tiene que cambiar. No hay escape a gpt: si agnes falla, la imagen queda en
   //    `fallidos` y se reintenta re-corriendo (los PNG ya hechos se saltean).
   if (!conRef.length) return agnesSinCara({ pend, outDir, size, total: items.length });
+  await esperarCupo(pend.length); // turno: la cola Batch es UNA por cuenta (13-oct, ver openai_cupo.mjs)
   const cache = new Map();
   const lines = pend.map((it) => {
     const body = { model, prompt: it.prompt, size, quality, n: 1 };
@@ -94,7 +96,7 @@ export async function pollBatch(batchId) {
     return { status: "completed", counts: { total: r.n, completed: r.ok, failed: r.fail }, outputFileId: null, errorFileId: null, errors: null };
   }
   const b = await api(`/batches/${batchId}`);
-  return { status: b.status, counts: b.request_counts, outputFileId: b.output_file_id, errorFileId: b.error_file_id, errors: b.errors };
+  return { status: b.status, creado: b.created_at, counts: b.request_counts, outputFileId: b.output_file_id, errorFileId: b.error_file_id, errors: b.errors };
 }
 
 /** Baja resultados en STREAM. → { ok, fail, fallidos: [{name, error}] } */
