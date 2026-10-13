@@ -11,6 +11,7 @@ export const RayCta: React.FC<{
   domain?: string;
   eyebrow?: string;
   qr?: string;
+  shot?: string;
   showQr?: boolean;
   durationInFrames?: number;
 }> = ({
@@ -19,6 +20,7 @@ export const RayCta: React.FC<{
   domain = "[ walkthrough below ]",
   eyebrow = "Free walkthrough",
   qr = undefined,
+  shot = undefined,
   showQr = true,
 }) => {
   const frame = useCurrentFrame();
@@ -40,6 +42,7 @@ export const RayCta: React.FC<{
 
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {shot ? (<div style={{ position: "absolute", left: "4%", top: "10%", width: "52%", opacity: a }}><Img src={staticFile(shot)} style={{ width: "100%", borderRadius: 12, boxShadow: "0 18px 50px rgba(0,0,0,0.65)" }} /></div>) : null}
       <div style={{ position: "absolute", right: "5%", bottom: "8%", width: 640, opacity: a, transform: `translateX(${slide.toFixed(1)}px)` }}>
         {/* Scrim oscuro SOLO detrás de la tarjeta */}
         <div style={{ position: "relative", background: `linear-gradient(160deg, ${rgba(V.ink1, 0.96)}, ${rgba(V.ink0, 0.97)})`, border: `2px solid ${V.brass}`, borderRadius: 14, boxShadow: `0 18px 60px rgba(0,0,0,0.78), 0 0 0 1px ${rgba(V.brass, 0.25)}, inset 0 0 40px ${rgba(V.brass, 0.06)}`, padding: "26px 28px", overflow: "hidden" }}>

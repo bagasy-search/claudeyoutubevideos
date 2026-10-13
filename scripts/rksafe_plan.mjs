@@ -25,7 +25,7 @@ const cfg = await import(path.resolve(raiz, `_v3/${SLUG}_cfg.mjs`).replace(/\\/g
 const { ITEMS } = await import(path.resolve(raiz, `_v3/${SLUG}_prompts.mjs`).replace(/\\/g, '/').replace(/^/, 'file:///'));
 
 const FPS = 30;
-const APERTURA_MIN = 3.0;
+const APERTURA_MIN = +(process.env.APERTURA_MIN || cfg.APERTURA_MIN || 3.0);
 const CAP_IMG = 9.5;                 // techo de foto: por debajo, la escalera larga se recorta y vuelve el metrónomo
 
 const tiempos = JSON.parse(fs.readFileSync(`_v3/${SLUG}_tiempos.json`, 'utf8'));
@@ -151,7 +151,7 @@ for (const sec of secciones) {
   // ⛔⛔ LOS COMPONENTES SE RESERVAN PRIMERO Y LOS PLANOS SE TEJEN ALREDEDOR. Buscarlos mientras
   //    avanza el cursor hace que un componente DESAPAREZCA sin avisar si la escalera pasa de largo
   //    (rkfob: se perdieron 5 de 18, uno era el CTA del video entero).
-  const arrancaEn = sec === secciones[0]
+  const arrancaEn = sec === secciones[0] && cfg.ABRIR_CON_IMAGEN ? APERTURA_MIN : sec === secciones[0]
     ? Math.max(sec.t0, APERTURA_MIN, Math.min(tFinPrimeraFrase(sec.t0), 8.0))
     : sec.t0;
   const reservas = [];
