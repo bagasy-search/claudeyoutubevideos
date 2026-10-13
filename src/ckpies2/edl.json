@@ -478,12 +478,12 @@
    "k": "lemon_bin",
    "c": "ItemCard",
    "props": {
-    "name": "Store lemon",
+    "name": "Hard-years pie",
     "n": 2,
     "of": 7,
     "instead": "Eggs, sugar, butter, one spoon cider vinegar",
     "page": "PAGE 12",
-    "k": "lemon_bowl",
+    "k": "vinegar_slice",
     "k2": "vinegar_spoon",
     "t": 222.827
    }
