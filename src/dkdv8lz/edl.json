@@ -1,0 +1,3009 @@
+{
+ "end": 937.302,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 2.99,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 2.99,
+   "b": 5.24,
+   "k": "l_store_cart",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 5.24,
+   "b": 8.94,
+   "k": "n_counter_15",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 8.94,
+   "b": 12.9,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 12.9,
+   "b": 14.83,
+   "k": "l_counter_items",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 14.83,
+   "b": 23.693,
+   "c": "DenialLetter",
+   "props": {
+    "letter": "n_claim_letter",
+    "stamp": {
+     "t": 21.573,
+     "txt": "THE HOSE · NOT PAID"
+    },
+    "paid": {
+     "t": 22.573,
+     "txt": "A $15 HOSE"
+    },
+    "bed": "n_hall_water"
+   },
+   "hero": true
+  },
+  {
+   "a": 23.693,
+   "b": 27.98,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 27.98,
+   "b": 31.567,
+   "k": "n_tag_valve",
+   "c": "CostTag",
+   "props": {
+    "price": "$1",
+    "sub": "A TAG ON THE MAIN SHUTOFF",
+    "k": "n_tag_valve"
+   }
+  },
+  {
+   "a": 31.567,
+   "b": 34.557,
+   "k": "n_floor_buckled",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 34.557,
+   "b": 38.047,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 38.047,
+   "b": 41.397,
+   "k": "n_storm_dark",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 41.397,
+   "b": 45.387,
+   "k": "l_store_tag",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 45.387,
+   "b": 47.633,
+   "k": "n_claim_letter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 47.633,
+   "b": 51.86,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 51.86,
+   "b": 54.84,
+   "k": "n_store_aisle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 54.84,
+   "b": 58.1,
+   "k": "n_cart_items",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 58.1,
+   "b": 63.51,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 63.51,
+   "b": 66.603,
+   "k": "l_door_clipboard",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 66.603,
+   "b": 69.467,
+   "k": "l_writes_notes",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 69.467,
+   "b": 73.3,
+   "k": "n_folder_desk",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 73.3,
+   "b": 77.873,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 77.873,
+   "b": 81.173,
+   "k": "l_floor_ruined",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 81.173,
+   "b": 84.513,
+   "k": "n_basement_dry",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 84.513,
+   "b": 87.493,
+   "k": "l_desk_talk",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 87.493,
+   "b": 91.333,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 91.333,
+   "b": 93.647,
+   "k": "n_sheets_folder",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 93.647,
+   "b": 95.987,
+   "k": "l_guide_hold",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 95.987,
+   "b": 98.847,
+   "k": "n_guide_pages",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 98.847,
+   "b": 102.787,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 102.787,
+   "b": 107.953,
+   "k": "l_guide_hold",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page66",
+      "tab": "21 TRICKS · PAGE 66",
+      "t": 103.227
+     }
+    ],
+    "caption": {
+     "txt": "21 FIXES · LESS THAN ONE DEDUCTIBLE",
+     "t": 103.727
+    },
+    "k": "l_guide_hold"
+   }
+  },
+  {
+   "a": 107.953,
+   "b": 114.16,
+   "k": "l_valve_tag",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page44",
+      "tab": "21 TRICKS · PAGE 44",
+      "t": 110.82
+     }
+    ],
+    "caption": {
+     "txt": "THE LINK IS IN THE DESCRIPTION",
+     "t": 111.32
+    },
+    "k": "l_valve_tag"
+   }
+  },
+  {
+   "a": 114.16,
+   "b": 117.2,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 117.2,
+   "b": 124.77,
+   "k": "n_alarm_sink",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 15,
+    "word": "ITEM",
+    "name": "BATTERY LEAK ALARMS",
+    "instead": "$10–30 EACH · STOPS THE SLOW LEAK",
+    "page": "HOUSE FOLDER · PAGE 7",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_alarm_sink",
+    "t": 117.62
+   }
+  },
+  {
+   "a": 124.77,
+   "b": 129.77,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 129.77,
+   "b": 136.06,
+   "k": "n_ceiling_below",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page107",
+      "tab": "HOUSE FOLDER · PAGE 7",
+      "t": 130.14
+     }
+    ],
+    "caption": {
+     "txt": "SEEPAGE OVER WEEKS: EXCLUDED",
+     "t": 130.64
+    },
+    "k": "n_ceiling_below"
+   }
+  },
+  {
+   "a": 136.06,
+   "b": 139.96,
+   "k": "l_writes_notes",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 139.96,
+   "b": 142.46,
+   "k": "n_hose_split",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 142.46,
+   "b": 146.1,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 146.1,
+   "b": 151.24,
+   "k": "l_door_clipboard",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 151.24,
+   "b": 157.34,
+   "k": "n_hall_water",
+   "c": "BigNumber",
+   "props": {
+    "num": 1,
+    "unit": "MINUTE TO THE ALARM",
+    "txt": "PAID: FLOOR + DRYWALL",
+    "k": "n_hall_water",
+    "t": 151.32
+   }
+  },
+  {
+   "a": 157.34,
+   "b": 159.82,
+   "k": "l_alarm_floor",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 159.82,
+   "b": 163.52,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 163.52,
+   "b": 166.62,
+   "k": "n_sheets_folder",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 166.62,
+   "b": 169.77,
+   "k": "n_guide_pages",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 169.77,
+   "b": 172.9,
+   "k": "l_alarm_test",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 172.9,
+   "b": 176.96,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 176.96,
+   "b": 178.9,
+   "k": "l_hall_wet",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 178.9,
+   "b": 182.53,
+   "k": "n_alarm_sink",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page13",
+      "tab": "21 TRICKS · PAGE 13",
+      "t": 181.82
+     }
+    ],
+    "caption": {
+     "txt": "TRICK 3 · A $12 LEAK ALARM",
+     "t": 182.32
+    },
+    "k": "n_alarm_sink"
+   }
+  },
+  {
+   "a": 182.53,
+   "b": 188.76,
+   "k": "n_braided_pair",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 15,
+    "word": "ITEM",
+    "name": "BRAIDED WASHER HOSES",
+    "instead": "$15–30 A PAIR",
+    "page": "HOUSE FOLDER · PAGE 8",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_braided_pair",
+    "t": 183.26
+   }
+  },
+  {
+   "a": 188.76,
+   "b": 191.36,
+   "k": "n_rubber_bulge",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 191.36,
+   "b": 195.18,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 195.18,
+   "b": 198.72,
+   "k": "n_alarm_puddle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 198.72,
+   "b": 202.73,
+   "k": "n_hall_water",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 202.73,
+   "b": 205.76,
+   "k": "n_drywall_cut",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 205.76,
+   "b": 209.15,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 209.15,
+   "b": 215.18,
+   "k": "n_rubber_bulge",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_rubber_bulge",
+    "txt": "THE HOSE ITSELF",
+    "stamp": "NOT PAID",
+    "cx": 50,
+    "cy": 50,
+    "t": 209.36
+   }
+  },
+  {
+   "a": 215.18,
+   "b": 218.713,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 218.713,
+   "b": 220.483,
+   "k": "n_tank_seam",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 220.483,
+   "b": 222.833,
+   "k": "l_washer_hoses",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 222.833,
+   "b": 226.283,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 226.283,
+   "b": 233.003,
+   "k": "n_toilet_line",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 15,
+    "word": "ITEM",
+    "name": "BRAIDED SUPPLY LINES",
+    "instead": "$8–15 EACH",
+    "page": "HOUSE FOLDER · PAGE 8",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_toilet_line",
+    "t": 226.753
+   }
+  },
+  {
+   "a": 233.003,
+   "b": 236.894,
+   "k": "l_toilet_line",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 236.894,
+   "b": 241.661,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 241.661,
+   "b": 245.008,
+   "k": "n_toilet_line",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 245.008,
+   "b": 248.458,
+   "k": "l_alarm_test",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 248.458,
+   "b": 252.668,
+   "k": "n_ceiling_below",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 252.668,
+   "b": 256.328,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 256.328,
+   "b": 258.228,
+   "k": "l_sump_pit",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 258.228,
+   "b": 261.368,
+   "k": "l_toilet_line",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 261.368,
+   "b": 264.508,
+   "k": "n_braided_pair",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 264.508,
+   "b": 273.448,
+   "k": "n_pan_drain",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 15,
+    "word": "ITEM",
+    "name": "WATER HEATER DRIP PAN",
+    "instead": "$15–30",
+    "page": "HOUSE FOLDER · PAGE 9",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_pan_drain",
+    "t": 265.048
+   }
+  },
+  {
+   "a": 273.448,
+   "b": 277.068,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 277.068,
+   "b": 280.154,
+   "k": "l_sump_bucket",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 280.154,
+   "b": 283.781,
+   "k": "n_tank_seam",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 283.781,
+   "b": 287.481,
+   "k": "n_pan_drain",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 287.481,
+   "b": 291.101,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 291.101,
+   "b": 293.144,
+   "k": "l_washer_hoses",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 293.144,
+   "b": 297.008,
+   "k": "n_floor_buckled",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 297.008,
+   "b": 299.308,
+   "k": "l_tank_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 299.308,
+   "b": 305.588,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 305.588,
+   "b": 307.935,
+   "k": "n_toilet_line",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 307.935,
+   "b": 316.661,
+   "k": "n_sump_water",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 15,
+    "word": "ITEM",
+    "name": "SUMP PUMP BATTERY BACKUP",
+    "instead": "$150–400",
+    "page": "HOUSE FOLDER · PAGE 10",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_sump_water",
+    "t": 308.481
+   }
+  },
+  {
+   "a": 316.661,
+   "b": 321.081,
+   "k": "n_sump_water",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page110",
+      "tab": "HOUSE FOLDER · PAGE 10",
+      "t": 316.961
+     }
+    ],
+    "caption": {
+     "txt": "BACKUP: EXCLUDED WITHOUT THE ENDORSEMENT",
+     "t": 317.461
+    },
+    "k": "n_sump_water"
+   }
+  },
+  {
+   "a": 321.081,
+   "b": 327.781,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 327.781,
+   "b": 330.481,
+   "k": "l_freeze_sensor",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 330.481,
+   "b": 333.841,
+   "k": "n_storm_dark",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 333.841,
+   "b": 336.981,
+   "k": "l_sump_pit",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 336.981,
+   "b": 339.321,
+   "k": "l_toilet_line",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 339.321,
+   "b": 341.641,
+   "k": "n_basement_dry",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 341.641,
+   "b": 346.321,
+   "k": "l_sump_bucket",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 346.321,
+   "b": 350.041,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 350.041,
+   "b": 352.941,
+   "k": "n_tank_seam",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 352.941,
+   "b": 358.021,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 358.021,
+   "b": 365.861,
+   "k": "l_phone_agent",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page46",
+      "tab": "21 TRICKS · PAGE 46",
+      "t": 364.161
+     }
+    ],
+    "caption": {
+     "txt": "TRICK 14 · THE ONE-SENTENCE CALL",
+     "t": 364.661
+    },
+    "k": "l_phone_agent"
+   }
+  },
+  {
+   "a": 365.861,
+   "b": 372.581,
+   "k": "n_pipes_frost",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 15,
+    "word": "ITEM",
+    "name": "FREEZE ALARM",
+    "instead": "$20–60",
+    "page": "HOUSE FOLDER · PAGE 10",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_pipes_frost",
+    "t": 366.261
+   }
+  },
+  {
+   "a": 372.581,
+   "b": 375.781,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 375.781,
+   "b": 382.001,
+   "k": "n_thermostat_low",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page110",
+      "tab": "HOUSE FOLDER · PAGE 10",
+      "t": 376.101
+     }
+    ],
+    "caption": {
+     "txt": "EMPTY HOUSE: FREEZING EXCLUDED",
+     "t": 376.601
+    },
+    "k": "n_thermostat_low"
+   }
+  },
+  {
+   "a": 382.001,
+   "b": 384.487,
+   "k": "l_faucet_cover",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 384.487,
+   "b": 387.854,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 387.854,
+   "b": 390.034,
+   "k": "n_garage_search",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 390.034,
+   "b": 392.934,
+   "k": "n_pipes_frost",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 392.934,
+   "b": 397.924,
+   "k": "l_neighbor_morning",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 397.924,
+   "b": 404.301,
+   "k": "n_thermostat_low",
+   "c": "BigNumber",
+   "props": {
+    "num": 0,
+    "unit": "PAID",
+    "prefix": "$",
+    "txt": "NOTHING BROKE",
+    "k": "n_thermostat_low",
+    "t": 397.974
+   }
+  },
+  {
+   "a": 404.301,
+   "b": 407.701,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 407.701,
+   "b": 410.371,
+   "k": "n_basement_dry",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 410.371,
+   "b": 413.661,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 413.661,
+   "b": 422.161,
+   "k": "n_faucet_cover",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 15,
+    "word": "ITEM",
+    "name": "OUTDOOR FAUCET COVERS",
+    "instead": "$3–8 EACH",
+    "page": "HOUSE FOLDER · PAGE 11",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_faucet_cover",
+    "t": 414.061
+   }
+  },
+  {
+   "a": 422.161,
+   "b": 424.761,
+   "k": "n_spigot_hose",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 424.761,
+   "b": 428.461,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 428.461,
+   "b": 433.178,
+   "k": "l_valve_tag",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 433.178,
+   "b": 437.324,
+   "k": "l_wall_stain",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 437.324,
+   "b": 443.474,
+   "k": "n_wall_stain",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_wall_stain",
+    "txt": "THE SPIGOT",
+    "stamp": "NOT PAID",
+    "cx": 50,
+    "cy": 50,
+    "t": 440.801
+   }
+  },
+  {
+   "a": 443.474,
+   "b": 445.994,
+   "k": "l_faucet_cover",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 445.994,
+   "b": 448.814,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 448.814,
+   "b": 451.361,
+   "k": "l_store_cart",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 451.361,
+   "b": 455.597,
+   "k": "n_faucet_cover",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 455.597,
+   "b": 461.594,
+   "k": "n_tag_valve",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "of": 15,
+    "word": "ITEM",
+    "name": "A TAG ON THE MAIN SHUTOFF",
+    "instead": "$1 · TRICK 13",
+    "page": "21 TRICKS · PAGE 44",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_tag_valve",
+    "t": 456.174
+   }
+  },
+  {
+   "a": 461.594,
+   "b": 464.314,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 464.314,
+   "b": 467.654,
+   "k": "n_garage_search",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 467.654,
+   "b": 472.414,
+   "k": "n_pipes_frost",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 472.414,
+   "b": 476.534,
+   "k": "n_thermostat_low",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 476.534,
+   "b": 480.974,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 480.974,
+   "b": 483.974,
+   "k": "l_freeze_sensor",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 483.974,
+   "b": 486.754,
+   "k": "n_floor_buckled",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 486.754,
+   "b": 493.174,
+   "k": "l_floor_ruined",
+   "c": "BigNumber",
+   "props": {
+    "num": 1,
+    "unit": "HOUR OF RUNNING WATER",
+    "txt": "DRYING VS TEARING OUT",
+    "k": "l_floor_ruined",
+    "t": 486.754
+   }
+  },
+  {
+   "a": 493.174,
+   "b": 495.154,
+   "k": "n_hall_water",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 495.154,
+   "b": 498.614,
+   "k": "l_valve_tag",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 498.614,
+   "b": 502.074,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 502.074,
+   "b": 504.934,
+   "k": "n_tag_valve",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 504.934,
+   "b": 508.394,
+   "k": "l_valve_turn",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 508.394,
+   "b": 514.714,
+   "k": "l_counter_items",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page44",
+      "tab": "21 TRICKS · PAGE 44",
+      "t": 508.694
+     }
+    ],
+    "caption": {
+     "txt": "TRICK 13 · A $1 TAG",
+     "t": 509.194
+    },
+    "k": "l_counter_items"
+   }
+  },
+  {
+   "a": 514.714,
+   "b": 518.294,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 518.294,
+   "b": 527.368,
+   "k": "l_guide_hold",
+   "c": "QrCard",
+   "props": {
+    "k": "l_guide_hold",
+    "txt": "21 FIXES + 40 SHEETS · LINK IN THE DESCRIPTION",
+    "t": 518.294
+   }
+  },
+  {
+   "a": 527.368,
+   "b": 533.108,
+   "k": "n_smoke_old",
+   "c": "ItemCard",
+   "props": {
+    "n": 9,
+    "of": 15,
+    "word": "ITEM",
+    "name": "10-YEAR SEALED SMOKE ALARMS",
+    "instead": "$20–40 EACH",
+    "page": "HOUSE FOLDER · PAGE 13",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_smoke_old",
+    "t": 527.921
+   }
+  },
+  {
+   "a": 533.108,
+   "b": 537.134,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 537.134,
+   "b": 541.794,
+   "k": "n_sheets_folder",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 541.794,
+   "b": 546.291,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 546.291,
+   "b": 549.248,
+   "k": "n_kitchen_soot",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 549.248,
+   "b": 552.208,
+   "k": "n_pan_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 552.208,
+   "b": 554.548,
+   "k": "l_kitchen_burned",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 554.548,
+   "b": 559.901,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 559.901,
+   "b": 562.451,
+   "k": "n_guide_pages",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 562.451,
+   "b": 565.021,
+   "k": "l_smoke_year",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 565.021,
+   "b": 568.421,
+   "k": "n_smoke_back",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 568.421,
+   "b": 574.921,
+   "k": "n_co_alarm",
+   "c": "ItemCard",
+   "props": {
+    "n": 10,
+    "of": 15,
+    "word": "ITEM",
+    "name": "CARBON MONOXIDE ALARM",
+    "instead": "$20–40",
+    "page": "HOUSE FOLDER · PAGE 13",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_co_alarm",
+    "t": 568.821
+   }
+  },
+  {
+   "a": 574.921,
+   "b": 578.681,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 578.681,
+   "b": 581.901,
+   "k": "n_lint_pipe",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 581.901,
+   "b": 585.001,
+   "k": "n_laundry_burned",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 585.001,
+   "b": 588.571,
+   "k": "l_furnace_crack",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 588.571,
+   "b": 591.461,
+   "k": "n_house_night",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 591.461,
+   "b": 595.001,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 595.001,
+   "b": 600.411,
+   "k": "n_smoke_old",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 600.411,
+   "b": 606.641,
+   "k": "n_house_night",
+   "c": "BigNumber",
+   "props": {
+    "num": 0,
+    "unit": "PEOPLE HURT",
+    "txt": "THE ONLY NUMBER THAT MATTERS",
+    "k": "n_house_night",
+    "t": 600.501
+   }
+  },
+  {
+   "a": 606.641,
+   "b": 611.868,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 611.868,
+   "b": 617.948,
+   "k": "n_extinguisher",
+   "c": "ItemCard",
+   "props": {
+    "n": 11,
+    "of": 15,
+    "word": "ITEM",
+    "name": "KITCHEN FIRE EXTINGUISHER",
+    "instead": "$25–50",
+    "page": "HOUSE FOLDER · PAGE 14",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_extinguisher",
+    "t": 612.434
+   }
+  },
+  {
+   "a": 617.948,
+   "b": 620.188,
+   "k": "l_extinguisher",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 620.188,
+   "b": 625.448,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 625.448,
+   "b": 628.364,
+   "k": "l_smoke_year",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 628.364,
+   "b": 632.501,
+   "k": "n_pan_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 632.501,
+   "b": 635.341,
+   "k": "l_pan_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 635.341,
+   "b": 639.081,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 639.081,
+   "b": 641.621,
+   "k": "l_co_alarm",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 641.621,
+   "b": 644.394,
+   "k": "n_extinguisher",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 644.394,
+   "b": 648.428,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 648.428,
+   "b": 651.205,
+   "k": "l_furnace_crack",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 651.205,
+   "b": 656.081,
+   "k": "n_extinguisher",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 656.081,
+   "b": 662.094,
+   "k": "n_lint_pipe",
+   "c": "ItemCard",
+   "props": {
+    "n": 12,
+    "of": 15,
+    "word": "ITEM",
+    "name": "DRYER VENT BRUSH",
+    "instead": "$15–25",
+    "page": "HOUSE FOLDER · PAGE 15",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_lint_pipe",
+    "t": 656.481
+   }
+  },
+  {
+   "a": 662.094,
+   "b": 664.524,
+   "k": "l_dryer_vent",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 664.524,
+   "b": 673.284,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 673.284,
+   "b": 677.424,
+   "k": "l_laundry_burned",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 677.424,
+   "b": 683.688,
+   "k": "n_laundry_burned",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_laundry_burned",
+    "txt": "THE OLD DRYER",
+    "stamp": "NOT PAID",
+    "cx": 50,
+    "cy": 50,
+    "t": 677.754
+   }
+  },
+  {
+   "a": 683.688,
+   "b": 686.308,
+   "k": "n_house_night",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 686.308,
+   "b": 689.688,
+   "k": "n_vent_flap",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 689.688,
+   "b": 697.368,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 697.368,
+   "b": 705.409,
+   "k": "n_strip_light",
+   "c": "ItemCard",
+   "props": {
+    "n": 13,
+    "of": 15,
+    "word": "ITEM",
+    "name": "SURGE PROTECTOR STRIP",
+    "instead": "$15–40",
+    "page": "HOUSE FOLDER · PAGE 15",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_strip_light",
+    "t": 697.768
+   }
+  },
+  {
+   "a": 705.409,
+   "b": 709.055,
+   "k": "n_storm_dark",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 709.055,
+   "b": 712.162,
+   "k": "l_surge_strip",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 712.162,
+   "b": 715.582,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 715.582,
+   "b": 719.082,
+   "k": "n_router_wall",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 719.082,
+   "b": 722.552,
+   "k": "l_pan_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 722.552,
+   "b": 727.308,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 727.308,
+   "b": 731.279,
+   "k": "n_strip_light",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 731.279,
+   "b": 735.022,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 735.022,
+   "b": 737.569,
+   "k": "n_pan_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 737.569,
+   "b": 743.745,
+   "k": "n_gutter_leaves",
+   "c": "ItemCard",
+   "props": {
+    "n": 14,
+    "of": 15,
+    "word": "ITEM",
+    "name": "GUTTER SCOOP",
+    "instead": "$10 + ONE AFTERNOON",
+    "page": "HOUSE FOLDER · PAGE 16",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_gutter_leaves",
+    "t": 738.115
+   }
+  },
+  {
+   "a": 743.745,
+   "b": 747.935,
+   "k": "n_gutter_overflow",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 747.935,
+   "b": 751.415,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 751.415,
+   "b": 753.255,
+   "k": "l_video_closet",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 753.255,
+   "b": 758.485,
+   "k": "n_downspout_corner",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 758.485,
+   "b": 765.468,
+   "k": "n_fascia_rot",
+   "c": "BigNumber",
+   "props": {
+    "num": 0,
+    "unit": "PAID",
+    "prefix": "$",
+    "txt": "ROT = DETERIORATION",
+    "k": "n_fascia_rot",
+    "t": 763.555
+   }
+  },
+  {
+   "a": 765.468,
+   "b": 768.942,
+   "k": "l_gutter_scoop",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 768.942,
+   "b": 772.962,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 772.962,
+   "b": 776.062,
+   "k": "n_laundry_burned",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 776.062,
+   "b": 778.562,
+   "k": "l_fascia_press",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 778.562,
+   "b": 781.032,
+   "k": "l_surge_strip",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 781.032,
+   "b": 788.112,
+   "k": "n_closet_open",
+   "c": "ItemCard",
+   "props": {
+    "n": 15,
+    "of": 15,
+    "word": "ITEM",
+    "name": "THE HOME INVENTORY VIDEO",
+    "instead": "$0 · ONE HOUR",
+    "page": "HOUSE FOLDER · PAGE 17",
+    "strike": false,
+    "lbl": "WHY IT PAYS:",
+    "k": "n_closet_open",
+    "t": 781.582
+   }
+  },
+  {
+   "a": 788.112,
+   "b": 792.062,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 792.062,
+   "b": 795.202,
+   "k": "n_cart_items",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 795.202,
+   "b": 797.882,
+   "k": "l_store_cart",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 797.882,
+   "b": 801.052,
+   "k": "n_burned_living",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 801.052,
+   "b": 806.362,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 806.362,
+   "b": 810.122,
+   "k": "l_widow_folder",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 810.122,
+   "b": 814.035,
+   "k": "n_router_wall",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 814.035,
+   "b": 817.049,
+   "k": "l_video_drawer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 817.049,
+   "b": 820.649,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 820.649,
+   "b": 823.182,
+   "k": "n_downspout_corner",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 823.182,
+   "b": 827.855,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 827.855,
+   "b": 833.835,
+   "k": "n_closet_open",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page117",
+      "tab": "HOUSE FOLDER · PAGE 17",
+      "t": 828.215
+     }
+    ],
+    "caption": {
+     "txt": "THE INVENTORY VIDEO",
+     "t": 828.715
+    },
+    "k": "n_closet_open"
+   }
+  },
+  {
+   "a": 833.835,
+   "b": 837.612,
+   "k": "n_fascia_rot",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 837.612,
+   "b": 840.409,
+   "k": "l_phone_agent",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 840.409,
+   "b": 843.312,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 843.312,
+   "b": 847.055,
+   "k": "l_phone_agent",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page118",
+      "tab": "HOUSE FOLDER · PAGE 18",
+      "t": 843.835
+     }
+    ],
+    "caption": {
+     "txt": "ASK: WHICH DISCOUNTS DO THESE QUALIFY FOR?",
+     "t": 844.335
+    },
+    "k": "l_phone_agent"
+   }
+  },
+  {
+   "a": 847.055,
+   "b": 849.535,
+   "k": "l_desk_talk",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 849.535,
+   "b": 855.085,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 855.085,
+   "b": 864.855,
+   "c": "RowOfThings",
+   "props": {
+    "head": "WATER: WHERE THE BIG MONEY GOES",
+    "items": [
+     {
+      "k": "n_alarm_sink",
+      "t": 855.095,
+      "txt": "LEAK ALARMS"
+     },
+     {
+      "k": "n_braided_pair",
+      "t": 856.435,
+      "txt": "BRAIDED HOSES"
+     },
+     {
+      "k": "n_pan_drain",
+      "t": 859.035,
+      "txt": "DRIP PAN"
+     },
+     {
+      "k": "n_sump_water",
+      "t": 860.335,
+      "txt": "SUMP BATTERY"
+     },
+     {
+      "k": "n_faucet_cover",
+      "t": 863.755,
+      "txt": "FAUCET COVERS"
+     }
+    ],
+    "bed": "n_counter_15"
+   },
+   "hero": true
+  },
+  {
+   "a": 864.855,
+   "b": 867.695,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 867.695,
+   "b": 877.562,
+   "c": "RowOfThings",
+   "props": {
+    "head": "FIRE, SMOKE AND THE REST",
+    "items": [
+     {
+      "k": "n_smoke_back",
+      "t": 867.695,
+      "txt": "SMOKE + CO"
+     },
+     {
+      "k": "n_extinguisher",
+      "t": 869.995,
+      "txt": "EXTINGUISHER"
+     },
+     {
+      "k": "n_lint_pipe",
+      "t": 871.415,
+      "txt": "VENT BRUSH"
+     },
+     {
+      "k": "n_strip_light",
+      "t": 872.735,
+      "txt": "SURGE STRIP"
+     },
+     {
+      "k": "n_gutter_leaves",
+      "t": 874.115,
+      "txt": "GUTTER SCOOP"
+     },
+     {
+      "k": "n_closet_open",
+      "t": 875.095,
+      "txt": "THE VIDEO · $0"
+     }
+    ],
+    "bed": "l_counter_items"
+   },
+   "hero": true
+  },
+  {
+   "a": 877.562,
+   "b": 879.889,
+   "k": "n_cart_items",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 879.889,
+   "b": 882.222,
+   "k": "l_video_drawer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 882.222,
+   "b": 889.349,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 889.349,
+   "b": 896.015,
+   "k": "n_counter_15",
+   "c": "Comment",
+   "props": {
+    "q": "Which one are you buying this week?",
+    "k": "n_counter_15",
+    "opts": [
+     {
+      "txt": "#1 LEAK ALARMS",
+      "t": 889.349
+     },
+     {
+      "txt": "#8 THE $1 TAG",
+      "t": 892.669
+     }
+    ]
+   }
+  },
+  {
+   "a": 896.015,
+   "b": 906.195,
+   "k": "l_guide_hold",
+   "c": "QrCard",
+   "props": {
+    "k": "l_guide_hold",
+    "txt": "21 FIXES + 40 SHEETS · LINK IN THE DESCRIPTION",
+    "t": 900.935
+   }
+  },
+  {
+   "a": 906.195,
+   "b": 913.195,
+   "k": "n_folder_desk",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_remember",
+    "tag": "WATCH NEXT",
+    "k": "n_folder_desk",
+    "words": [
+     [
+      "THE $1,500 LINE",
+      908.095
+     ],
+     [
+      "NOBODY READS",
+      910.455
+     ],
+     [
+      "UNTIL IT IS TOO LATE",
+      912.155
+     ]
+    ]
+   }
+  },
+  {
+   "a": 913.195,
+   "b": 916.945,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 916.945,
+   "b": 923.995,
+   "k": "n_folder_desk",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_next",
+    "tag": "NEXT TIME",
+    "k": "n_folder_desk",
+    "words": [
+     [
+      "9 WAYS",
+      918.715
+     ],
+     [
+      "YOUR POLICY",
+      921.035
+     ],
+     [
+      "WON'T PAY A PENNY",
+      922.675
+     ]
+    ]
+   }
+  },
+  {
+   "a": 923.995,
+   "b": 928.435,
+   "k": "l_porch_leave",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 928.435,
+   "b": 932.245,
+   "k": "n_rubber_bulge",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 932.245,
+   "b": 935.582,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 935.582,
+   "b": 937.302,
+   "k": "n_house_dusk",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 117.2,
+   "b": 182.53,
+   "n": 1
+  },
+  {
+   "a": 182.53,
+   "b": 226.283,
+   "n": 2
+  },
+  {
+   "a": 226.283,
+   "b": 264.508,
+   "n": 3
+  },
+  {
+   "a": 264.508,
+   "b": 307.935,
+   "n": 4
+  },
+  {
+   "a": 307.935,
+   "b": 365.861,
+   "n": 5
+  },
+  {
+   "a": 365.861,
+   "b": 413.661,
+   "n": 6
+  },
+  {
+   "a": 413.661,
+   "b": 455.597,
+   "n": 7
+  },
+  {
+   "a": 455.597,
+   "b": 527.368,
+   "n": 8
+  },
+  {
+   "a": 527.368,
+   "b": 568.421,
+   "n": 9
+  },
+  {
+   "a": 568.421,
+   "b": 611.868,
+   "n": 10
+  },
+  {
+   "a": 611.868,
+   "b": 656.081,
+   "n": 11
+  },
+  {
+   "a": 656.081,
+   "b": 697.368,
+   "n": 12
+  },
+  {
+   "a": 697.368,
+   "b": 737.569,
+   "n": 13
+  },
+  {
+   "a": 737.569,
+   "b": 781.032,
+   "n": 14
+  },
+  {
+   "a": 781.032,
+   "b": 937.302,
+   "n": 15
+  }
+ ],
+ "of": 15,
+ "word": "ITEM",
+ "hide": [
+  [
+   117.2,
+   124.77
+  ],
+  [
+   182.53,
+   188.76
+  ],
+  [
+   226.283,
+   233.003
+  ],
+  [
+   264.508,
+   273.448
+  ],
+  [
+   307.935,
+   316.661
+  ],
+  [
+   365.861,
+   372.581
+  ],
+  [
+   413.661,
+   422.161
+  ],
+  [
+   455.597,
+   461.594
+  ],
+  [
+   527.368,
+   533.108
+  ],
+  [
+   568.421,
+   574.921
+  ],
+  [
+   611.868,
+   617.948
+  ],
+  [
+   656.081,
+   662.094
+  ],
+  [
+   697.368,
+   705.409
+  ],
+  [
+   737.569,
+   743.745
+  ],
+  [
+   781.032,
+   788.112
+  ],
+  [
+   518.294,
+   527.368
+  ],
+  [
+   889.349,
+   896.015
+  ],
+  [
+   896.015,
+   906.195
+  ],
+  [
+   906.195,
+   913.195
+  ],
+  [
+   916.945,
+   923.995
+  ],
+  [
+   14.83,
+   23.693
+  ],
+  [
+   855.085,
+   864.855
+  ],
+  [
+   867.695,
+   877.562
+  ]
+ ]
+}
