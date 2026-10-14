@@ -324,7 +324,7 @@ export const BigNumber: P<{ num: number; unit: string; txt?: string; k: string; 
   const { f, at } = useT(a);
   const t0 = t != null ? at(t) : 0;
   const c = eo((f - t0) / dur), u = sp(f, t0, 13, 150), tt = sp(f, t0 + dur, 14, 160);
-  const shown = `${prefix}${Math.round(num * c)}${suffix}`, full = `${prefix}${num}${suffix}`;
+  const shown = `${prefix}${Math.round(num * c).toLocaleString("en-US")}${suffix}`, full = `${prefix}${num.toLocaleString("en-US")}${suffix}`;
   return (
     <Stage f={f} T={d} drift={0.8}>
       <Bed k={k} f={f} T={d} dim={0.4} z={[1.05, 1.15]} />
