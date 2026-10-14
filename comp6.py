@@ -566,7 +566,7 @@ def r_copia(sh, sid, DUR, put):
     from comp3 import _print_on_desk
     N = int(round(DUR * FPS)); desk = load(f"{M}/img/{sh.get('desk', 'x_mesa')}.png", size=(W, H)) * 0.55
     base, (px, py, pw, ph) = _print_on_desk(f"{M}/{sh['photo']}", desk)
-    rot0 = sh.get("rot", -7 if hash(sid) % 2 else 6)
+    rot0 = sh.get("rot"); rot0 = rot0 if isinstance(rot0, (int, float)) else (-7 if hash(sid) % 2 else 6)  # rot de otro tratamiento puede ser lista
     yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
     for i in range(N):
         t = i / FPS; u = ease(t / DUR); d = ease(ramp(t, 0.0, 0.55))

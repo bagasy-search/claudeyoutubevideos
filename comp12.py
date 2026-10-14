@@ -113,7 +113,7 @@ def r_nervios(sh, sid, DUR, put):
             for j in range(3):
                 img = label(img, "z", (1330 + j * 40, 190 - j * 45), t, 0.4 + j * 0.3, 34 + j * 8, BLUE)
             Ld = lay(); circ(Ld, (1270, 290), 95); img = fill(img, Ld, np.array([0.30, 0.32, 0.45]), 0.45 * z)
-            img = label(img, "EL MENSAJE LLEGA… PERO NADIE LO ATIENDE", (760, 860), t, 1.0, 30, BLUE); img = title(img, "LA ANESTESIA DESCONECTA AL QUE ESCUCHA", t)
+            img = label(img, "EL MENSAJE LLEGA… PERO NADIE LO ATIENDE", (980, 780), t, 1.0, 30, BLUE); img = title(img, "LA ANESTESIA DESCONECTA AL QUE ESCUCHA", t)
         out(put, img, t, DUR, i)
 
 # ------------------------------------------------------------------ 4) EL EJÉRCITO (vacuna)
@@ -371,6 +371,6 @@ def r_parabrisas(sh, sid, DUR, put):
                 img = fill(img, Lc, np.array([0.97, 0.98, 1.0]), 0.95)
                 Lm = lay(); line(Lm, [(cx - 210, cy + 200), (cx + 210, cy + 200)], 6); img = fill(img, Lm, BRASS, 0.8)
             img = label(img, nm, (cx, 760), t, 0.2, 32, RED if k == 0 else GREEN)
-        img = label(img, "LA CAPA DE PLÁSTICO LOS MANTIENE EN SU LUGAR", (800, 850), t, 2.0, 28, BLUE)
+        img = label(img, "LA CAPA DE PLÁSTICO LOS MANTIENE EN SU LUGAR", (800, 880), t, 2.0, 28, BLUE)
         img = title(img, "EL FRASCO QUE NO SE DESARMÓ", t)
         out(put, img, t, DUR, i)

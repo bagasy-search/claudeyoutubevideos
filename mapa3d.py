@@ -16,6 +16,7 @@ def merc_y(lat): lat = max(-85.0, min(85.0, lat)); return math.degrees(math.log(
 SCENES = {
     "mundo":   {"bbox": (-100.0, -45.0, 30.0, 58.0), "px": 4600, "hs": 0.55},
     "plata":   {"bbox": (-59.4, -35.5, -56.3, -33.8), "px": 5200, "hs": 0.010},
+    "mexico":  {"bbox": (-118.5, 12.5, -84.0, 33.5), "px": 4200, "hs": 0.30},          # tgmexico: el país entero, Natural Earth 10m
     "palermo": {"bbox": (-58.495, -34.635, -58.365, -34.535), "px": 4000, "hs": 0.00035},
     # relieve REAL (SRTM, tiles terrarium de AWS en fuentes/dem/) tallado en capas por curva de nivel + ríos de OSM (fuentes/osm_rios_<escena>.json)
     "baden":   {"bbox": (8.25, 48.80, 8.95, 49.58), "px": 4200, "hs": 0.030, "dem": 10, "paso": 40,
@@ -130,14 +131,14 @@ def build(name):
     X0, X1, Y0, Y1, PXW, PXH = scene_geo(name)
     def f(lon, lat): return ((lon - X0) / (X1 - X0) * PXW, (Y1 - merc_y(lat)) / (Y1 - Y0) * PXH)
     labels = []                      # (texto, lon, lat, size_px, color 'burn'|'brass', tracking, ang)
-    if name in ("mundo", "plata"):
+    if name in ("mundo", "plata", "mexico"):
         land, bord = _rasterize_ne(name, X0, X1, Y0, Y1, PXW, PXH)
         dist = cv2.distanceTransform((land > 0).astype(np.uint8), cv2.DIST_L2, 5)
-        bev = 18 if name == "mundo" else 30
+        bev = {"mundo": 18, "mexico": 22}.get(name, 30)
         hgt = (np.clip(dist / bev, 0, 1) ** 0.6) * land
         hgt += land * _noise(PXH, PXW, 160, 7) * 0.05 + land * _noise(PXH, PXW, 18, 8) * 0.012     # facetas de talla
         water = 1 - land
-        hgt += water * (gouges(PXH, PXW, 3, 22 if name == "mundo" else 34) * 0.05 - 0.12)
+        hgt += water * (gouges(PXH, PXW, 3, 22 if name in ("mundo", "mexico") else 34) * 0.05 - 0.12)
         col = wood(PXH, PXW, *MAPLE, seed=1) * land[..., None] + wood(PXH, PXW, *WALNUT, seed=2, ring=0.006) * water[..., None]
         col = col * (1 - (bord * land * 0.55)[..., None]) + BURN * (bord * land * 0.55)[..., None]              # fronteras a pirógrafo
         if name == "mundo":
@@ -145,6 +146,10 @@ def build(name):
                       ("ARGENTINA", -66.5, -33.0, 96, "burn", 14, 0), ("BRASIL", -50, -10, 110, "burn", 16, 0),
                       ("ESTADOS UNIDOS", -88, 37.5, 96, "burn", 14, 0), ("FRANCIA", 2.4, 46.5, 64, "burn", 8, 0),
                       ("HUNGRÍA", 19.5, 47.0, 46, "burn", 6, 0), ("ESPAÑA", -3.6, 40.0, 60, "burn", 8, 0)]
+        elif name == "mexico":
+            labels = [("OCÉANO PACÍFICO", -108.5, 16.8, 110, "brass", 26, 0), ("GOLFO DE MÉXICO", -92.0, 25.2, 100, "brass", 22, 0),
+                      ("MÉXICO", -103.0, 24.2, 130, "burn", 30, 0), ("ESTADOS UNIDOS", -103.5, 32.4, 80, "burn", 14, 0),
+                      ("GUATEMALA", -90.3, 15.4, 50, "burn", 8, 0)]
         else:
             labels = [("RÍO DE LA PLATA", -57.55, -34.85, 150, "brass", 34, -18), ("URUGUAY", -57.1, -34.05, 120, "burn", 26, 0),
                       ("PROVINCIA DE BUENOS AIRES", -58.75, -35.05, 92, "burn", 14, 0), ("BUENOS AIRES", -58.66, -34.72, 120, "burn", 22, 0)]
@@ -214,7 +219,7 @@ def build(name):
         hgt = hgt - m * 0.04
     if items_m:
         m = text_layer(PXW, PXH, items_m); col = col * (1 - (m * 0.9)[..., None]) + BRASS * (m * 0.9)[..., None]; hgt = hgt + m * 0.02
-    zs = {"mundo": 14.0, "plata": 18.0, "palermo": 10.0}.get(name, 12.0)
+    zs = {"mundo": 14.0, "mexico": 14.0, "plata": 18.0, "palermo": 10.0}.get(name, 12.0)
     tex = bake(col.astype(np.float32), hgt.astype(np.float32), zs=zs)
     os.makedirs(f"{M}/fuentes", exist_ok=True)
     Image.fromarray((tex * 255).astype(np.uint8)).save(f"{M}/fuentes/m3_{name}.jpg", quality=92)
