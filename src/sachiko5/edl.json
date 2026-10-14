@@ -40,28 +40,38 @@
 {
 "a": 4.307,
 "b": 6.273,
-"k": "img/sachiko5/s5_g04_foil_fold.png",
-"z": [
-1.24,
-1.12
-],
-"o": [
-60,
-50
-]
-},
-{
-"a": 6.273,
-"b": 8.14,
-"k": "img/sachiko5/s5_g04_foil_fold.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_f29_cast.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
+},
+{
+"a": 6.273,
+"b": 8.14,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_f33_butter.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
 },
 {
 "a": 8.14,
@@ -79,28 +89,38 @@
 {
 "a": 9.947,
 "b": 11.467,
-"k": "img/sachiko5/s5_g10_brown_pan.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_f34_yogurt.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 11.467,
 "b": 13.28,
-"k": "img/sachiko5/s5_g10_brown_pan.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g01_cut_side.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-58,
-36
+50,
+50
 ]
+}
 },
 {
 "a": 13.28,
@@ -118,68 +138,92 @@
 {
 "a": 14.987,
 "b": 16.727,
-"k": "img/sachiko5/s5_k34_taste_spoon.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g02_pour.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 16.727,
 "b": 18.42,
-"k": "img/sachiko5/s5_k34_taste_spoon.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g03_leftover_pan.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
-],
-"o": [
-34,
-36
-]
-},
-{
-"a": 18.42,
-"b": 20.2,
-"k": "img/sachiko5/s5_g24_jar_syrup.png",
-"z": [
-1.3,
-1.38
-],
-"o": [
-42,
-58
-]
-},
-{
-"a": 20.2,
-"b": 21.76,
-"k": "img/sachiko5/s5_g24_jar_syrup.png",
-"z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
+]
+}
+},
+{
+"a": 18.42,
+"b": 20.2,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g24_jar_syrup.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
 ],
-"dx": 120
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 20.2,
+"b": 21.76,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g05_stones_oven.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
 },
 {
 "a": 21.76,
 "b": 23.56,
-"k": "img/sachiko5/s5_g24_jar_syrup.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g06_knife_tip.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
 "a": 23.56,
@@ -198,11 +242,7 @@
 {
 "a": 28.16,
 "b": 30.56,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potato_pile.mp4",
-"ofs": 0.093,
+"k": "img/sachiko5/s5_g24_jar_syrup.png",
 "z": [
 1.3,
 1.38
@@ -212,7 +252,6 @@
 46
 ],
 "dx": -120
-}
 },
 {
 "a": 30.56,
@@ -246,57 +285,42 @@
 {
 "a": 41.7,
 "b": 44.393,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potato_pile.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g24_jar_syrup.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 44.393,
 "b": 46.953,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potato_pile.mp4",
-"ofs": 2.693,
+"k": "img/sachiko5/s5_g24_jar_syrup.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 46.953,
 "b": 49.7,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potato_pile.mp4",
-"ofs": 5.253,
+"k": "img/sachiko5/s5_g24_jar_syrup.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 49.7,
@@ -543,165 +567,120 @@
 {
 "a": 108.43,
 "b": 110.927,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_135.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 110.927,
 "b": 113.687,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_135.mp4",
-"ofs": 2.497,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 113.687,
 "b": 116.43,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_135.mp4",
-"ofs": 5.257,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 116.43,
 "b": 119.027,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_165.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 119.027,
 "b": 121.667,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_165.mp4",
-"ofs": 2.597,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 121.667,
 "b": 124.43,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_165.mp4",
-"ofs": 5.237,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 124.43,
 "b": 127.147,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_15.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 127.147,
 "b": 129.493,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_15.mp4",
-"ofs": 2.717,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 129.493,
 "b": 132.43,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_15.mp4",
-"ofs": 5.063,
+"k": "img/sachiko5/s5_g02_pour.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 132.43,
@@ -733,11 +712,7 @@
 {
 "a": 141.08,
 "b": 143.52,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_doepke_cart.mp4",
-"ofs": 0.22,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
 1.3,
 1.38
@@ -746,7 +721,6 @@
 66,
 58
 ]
-}
 },
 {
 "a": 143.52,
@@ -765,221 +739,161 @@
 {
 "a": 148.52,
 "b": 151.34,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_doepke_cart.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 151.34,
 "b": 153.82,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_doepke_cart.mp4",
-"ofs": 2.82,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 153.82,
 "b": 156.52,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_doepke_cart.mp4",
-"ofs": 5.3,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 156.52,
 "b": 159.3,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_castle.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 159.3,
 "b": 161.76,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_castle.mp4",
-"ofs": 2.78,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 161.76,
 "b": 164.52,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_castle.mp4",
-"ofs": 5.24,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 164.52,
 "b": 167.04,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_60.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 167.04,
 "b": 169.807,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_60.mp4",
-"ofs": 2.52,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 169.807,
 "b": 172.52,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_60.mp4",
-"ofs": 5.287,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 172.52,
 "b": 175.273,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_yt_yakiimo_truck.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 175.273,
 "b": 177.973,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_yt_yakiimo_truck.mp4",
-"ofs": 2.753,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-66,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 177.973,
 "b": 180.52,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_yt_yakiimo_truck.mp4",
-"ofs": 5.453,
+"k": "img/sachiko5/s5_g05_stones_oven.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 180.52,
@@ -1066,15 +980,20 @@
 {
 "a": 204.93,
 "b": 207.52,
-"k": "img/sachiko5/s5_g12_tray_rack.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g12_tray_rack.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 207.52,
@@ -1119,221 +1038,161 @@
 {
 "a": 216.01,
 "b": 218.727,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_130.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 218.727,
 "b": 221.427,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_130.mp4",
-"ofs": 2.717,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 221.427,
 "b": 224.01,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_130.mp4",
-"ofs": 5.417,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 224.01,
 "b": 226.507,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_420.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 226.507,
 "b": 229.227,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_420.mp4",
-"ofs": 2.497,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 229.227,
 "b": 232.01,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potatoharvest_420.mp4",
-"ofs": 5.217,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 232.01,
 "b": 234.847,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_muraoka_village.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 234.847,
 "b": 237.107,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_muraoka_village.mp4",
-"ofs": 2.837,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 237.107,
 "b": 240.01,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_muraoka_village.mp4",
-"ofs": 5.097,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 240.01,
 "b": 242.793,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_135.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 242.793,
 "b": 245.08,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_135.mp4",
-"ofs": 2.783,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 245.08,
 "b": 248.01,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_135.mp4",
-"ofs": 5.07,
+"k": "img/sachiko5/s5_g12_tray_rack.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 248.01,
@@ -1381,179 +1240,143 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_gov_spuds_210.mp4",
+"p": "agv/sachiko5/s5_g14_sprinkle_salt.mp4",
 "ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
 }
 },
 {
 "a": 260.8,
 "b": 263.38,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_210.mp4",
-"ofs": 2.75,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 263.38,
 "b": 266.05,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_210.mp4",
-"ofs": 5.33,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 266.05,
 "b": 268.453,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_375.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 268.453,
 "b": 271.513,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_375.mp4",
-"ofs": 2.403,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 271.513,
 "b": 274.05,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_375.mp4",
-"ofs": 5.463,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 274.05,
 "b": 276.707,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_495.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 276.707,
 "b": 279.227,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_495.mp4",
-"ofs": 2.657,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 279.227,
 "b": 282.05,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_spuds_495.mp4",
-"ofs": 5.177,
+"k": "img/sachiko5/s5_g14_sprinkle_salt.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 282.05,
-"b": 285.487,
-"k": "img/sachiko5/s5_g16_dishes.png",
+"b": 284.95,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g16_dishes.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 285.487,
+"a": 284.95,
 "b": 289.307,
 "k": "img/sachiko5/s5_g16_dishes.png",
 "z": [
@@ -1651,20 +1474,15 @@
 {
 "a": 327.18,
 "b": 329.96,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_doepke_street.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g20_lid_steam.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 329.96,
@@ -1672,36 +1490,31 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_doepke_street.mp4",
-"ofs": 2.78,
+"p": "agv/sachiko5/s5_g20_lid_steam.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-66,
-58
+50,
+50
 ]
 }
 },
 {
 "a": 332.52,
 "b": 335.18,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_doepke_street.mp4",
-"ofs": 5.34,
+"k": "img/sachiko5/s5_g20_lid_steam.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 335.18,
@@ -1987,15 +1800,20 @@
 {
 "a": 405.66,
 "b": 408.58,
-"k": "img/sachiko5/s5_h05_wash.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h05_wash.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-34,
-46
+50,
+50
 ]
+}
 },
 {
 "a": 408.58,
@@ -2055,15 +1873,20 @@
 {
 "a": 424.67,
 "b": 427.407,
-"k": "img/sachiko5/s5_h09_oven_open.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h09_oven_open.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 427.407,
@@ -2107,19 +1930,24 @@
 },
 {
 "a": 436.39,
-"b": 440.013,
-"k": "img/sachiko5/s5_h11_turn.png",
+"b": 438.397,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h11_turn.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 440.013,
+"a": 438.397,
 "b": 443.413,
 "k": "img/sachiko5/s5_h11_turn.png",
 "z": [
@@ -2240,20 +2068,24 @@
 },
 {
 "a": 466.46,
-"b": 469.633,
-"k": "img/sachiko5/s5_h15_syrup.png",
+"b": 469.1,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h15_syrup.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
-"a": 469.633,
+"a": 469.1,
 "b": 472.41,
 "k": "img/sachiko5/s5_h15_syrup.png",
 "z": [
@@ -2268,57 +2100,42 @@
 {
 "a": 472.41,
 "b": 475.053,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_150.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_h15_syrup.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 475.053,
 "b": 477.713,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_150.mp4",
-"ofs": 2.643,
+"k": "img/sachiko5/s5_h15_syrup.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 477.713,
 "b": 480.41,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_150.mp4",
-"ofs": 5.303,
+"k": "img/sachiko5/s5_h15_syrup.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 480.41,
@@ -2457,57 +2274,42 @@
 {
 "a": 517.23,
 "b": 520.053,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potato_wagon.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_f33_butter.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 520.053,
 "b": 522.513,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potato_wagon.mp4",
-"ofs": 2.823,
+"k": "img/sachiko5/s5_f33_butter.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 522.513,
 "b": 525.23,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_potato_wagon.mp4",
-"ofs": 5.283,
+"k": "img/sachiko5/s5_f33_butter.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 525.23,
@@ -2632,19 +2434,24 @@
 },
 {
 "a": 549.65,
-"b": 553.327,
-"k": "img/sachiko5/s5_k04_cut_again.png",
+"b": 552.157,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k04_cut_again.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 553.327,
+"a": 552.157,
 "b": 556.907,
 "k": "img/sachiko5/s5_k04_cut_again.png",
 "z": [
@@ -2687,19 +2494,24 @@
 },
 {
 "a": 568.5,
-"b": 571.827,
-"k": "img/sachiko5/s5_k08_plate_set.png",
+"b": 571.4,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k08_plate_set.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 571.827,
+"a": 571.4,
 "b": 575.187,
 "k": "img/sachiko5/s5_k08_plate_set.png",
 "z": [
@@ -2793,16 +2605,20 @@
 {
 "a": 594.14,
 "b": 597.06,
-"k": "img/sachiko5/s5_k12_cast_check.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k12_cast_check.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 597.06,
@@ -2822,57 +2638,42 @@
 {
 "a": 606.59,
 "b": 609.053,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_255.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_k12_cast_check.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 609.053,
 "b": 611.967,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_255.mp4",
-"ofs": 2.463,
+"k": "img/sachiko5/s5_k12_cast_check.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 611.967,
 "b": 614.59,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_255.mp4",
-"ofs": 5.377,
+"k": "img/sachiko5/s5_k12_cast_check.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 614.59,
@@ -2973,15 +2774,20 @@
 {
 "a": 644.4,
 "b": 647.287,
-"k": "img/sachiko5/s5_k20_sesame_toss.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k20_sesame_toss.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-58,
-58
+50,
+50
 ]
+}
 },
 {
 "a": 647.287,
@@ -3025,19 +2831,24 @@
 },
 {
 "a": 656.3,
-"b": 659.753,
-"k": "img/sachiko5/s5_k22_wrap_newspaper.png",
+"b": 659.073,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k22_wrap_newspaper.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 659.753,
+"a": 659.073,
 "b": 662.687,
 "k": "img/sachiko5/s5_k22_wrap_newspaper.png",
 "z": [
@@ -3124,11 +2935,11 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_gov_osaka_30.mp4",
+"p": "agv/sachiko5/s5_k29_tray_count.mp4",
 "ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
@@ -3139,55 +2950,50 @@
 {
 "a": 689.46,
 "b": 692.3,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_30.mp4",
-"ofs": 2.69,
+"k": "img/sachiko5/s5_k29_tray_count.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 692.3,
 "b": 694.77,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_30.mp4",
-"ofs": 5.53,
+"k": "img/sachiko5/s5_k29_tray_count.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 694.77,
-"b": 698.28,
-"k": "img/sachiko5/s5_k31_stir_low.png",
+"b": 697.41,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k31_stir_low.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 698.28,
+"a": 697.41,
 "b": 701.767,
 "k": "img/sachiko5/s5_k31_stir_low.png",
 "z": [
@@ -3389,20 +3195,15 @@
 {
 "a": 752.33,
 "b": 755.127,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_300.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_m08.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 755.127,
@@ -3410,11 +3211,11 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_gov_osaka_300.mp4",
-"ofs": 2.797,
+"p": "agv/sachiko5/s5_m08.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
@@ -3425,20 +3226,15 @@
 {
 "a": 757.607,
 "b": 760.33,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_300.mp4",
-"ofs": 5.277,
+"k": "img/sachiko5/s5_m08.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 760.33,
@@ -3496,20 +3292,24 @@
 },
 {
 "a": 780.9,
-"b": 783.86,
-"k": "img/sachiko5/s5_m14.png",
+"b": 783.407,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m14.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
-"a": 783.86,
+"a": 783.407,
 "b": 786.9,
 "k": "img/sachiko5/s5_m14.png",
 "z": [
@@ -3617,15 +3417,20 @@
 {
 "a": 815.1,
 "b": 817.893,
-"k": "img/sachiko5/s5_m20.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m20.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-58,
-46
+50,
+50
 ]
+}
 },
 {
 "a": 817.893,
@@ -3671,11 +3476,7 @@
 {
 "a": 828.653,
 "b": 831.133,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_390.mp4",
-"ofs": 0.063,
+"k": "img/sachiko5/s5_m20.png",
 "z": [
 1.3,
 1.38
@@ -3685,7 +3486,6 @@
 46
 ],
 "dx": -120
-}
 },
 {
 "a": 831.133,
@@ -3704,57 +3504,42 @@
 {
 "a": 834.65,
 "b": 837.313,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_390.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_m20.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 837.313,
 "b": 840.007,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_390.mp4",
-"ofs": 2.663,
+"k": "img/sachiko5/s5_m20.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 840.007,
 "b": 842.65,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_390.mp4",
-"ofs": 5.357,
+"k": "img/sachiko5/s5_m20.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 842.65,
@@ -3894,16 +3679,20 @@
 {
 "a": 880.85,
 "b": 883.62,
-"k": "img/sachiko5/s5_m30.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m30.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 883.62,
@@ -3962,69 +3751,59 @@
 {
 "a": 902.37,
 "b": 905.134,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_420.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_m30.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 905.134,
 "b": 907.927,
+"k": "img/sachiko5/s5_m30.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 907.927,
+"b": 910.37,
+"k": "img/sachiko5/s5_m30.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 910.37,
+"b": 913.18,
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_gov_osaka_420.mp4",
-"ofs": 2.764,
+"p": "agv/sachiko5/s5_t05_wash.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
 }
-},
-{
-"a": 907.927,
-"b": 910.37,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_420.mp4",
-"ofs": 5.557,
-"z": [
-1.3,
-1.38
-],
-"o": [
-58,
-36
-]
-}
-},
-{
-"a": 910.37,
-"b": 913.18,
-"k": "img/sachiko5/s5_t05_wash.png",
-"z": [
-1.24,
-1.12
-],
-"o": [
-40,
-50
-]
 },
 {
 "a": 913.18,
@@ -4069,15 +3848,20 @@
 {
 "a": 921.85,
 "b": 924.773,
-"k": "img/sachiko5/s5_n01_varieties.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_n01_varieties.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 924.773,
@@ -4121,19 +3905,24 @@
 },
 {
 "a": 932.91,
-"b": 936.187,
-"k": "img/sachiko5/s5_n04_foilsyrup.png",
+"b": 935.81,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_n04_foilsyrup.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 936.187,
+"a": 935.81,
 "b": 939.34,
 "k": "img/sachiko5/s5_n04_foilsyrup.png",
 "z": [
@@ -4216,15 +4005,20 @@
 {
 "a": 961.89,
 "b": 964.733,
-"k": "img/sachiko5/s5_n16_knife.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_n16_knife.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
 "a": 964.733,
@@ -4255,56 +4049,41 @@
 {
 "a": 970.13,
 "b": 972.907,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_90.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_n16_knife.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 972.907,
 "b": 975.547,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_90.mp4",
-"ofs": 2.777,
+"k": "img/sachiko5/s5_n16_knife.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 975.547,
 "b": 978.13,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_90.mp4",
-"ofs": 5.417,
+"k": "img/sachiko5/s5_n16_knife.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-66,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 978.13,
@@ -4498,57 +4277,42 @@
 {
 "a": 1034.14,
 "b": 1036.94,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_harbor.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g06_knife_tip.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1036.94,
 "b": 1039.54,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_harbor.mp4",
-"ofs": 2.8,
+"k": "img/sachiko5/s5_g06_knife_tip.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 1039.54,
 "b": 1042.14,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_harbor.mp4",
-"ofs": 5.4,
+"k": "img/sachiko5/s5_g06_knife_tip.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 1042.14,
@@ -4761,14 +4525,14 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_gov_osaka_street.mp4",
+"p": "agv/sachiko5/s5_h14_pan.mp4",
 "ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
 }
@@ -4776,55 +4540,49 @@
 {
 "a": 1110.82,
 "b": 1113.48,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_street.mp4",
-"ofs": 2.61,
+"k": "img/sachiko5/s5_h14_pan.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1113.48,
 "b": 1116.21,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_osaka_street.mp4",
-"ofs": 5.27,
+"k": "img/sachiko5/s5_h14_pan.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-66,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 1116.21,
-"b": 1119.44,
-"k": "img/sachiko5/s5_h20_scrape.png",
+"b": 1118.983,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h20_scrape.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
-"a": 1119.44,
+"a": 1118.983,
 "b": 1122.32,
 "k": "img/sachiko5/s5_h20_scrape.png",
 "z": [
@@ -4921,15 +4679,20 @@
 {
 "a": 1145.32,
 "b": 1148.22,
-"k": "img/sachiko5/s5_k05_spoon_syrup.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k05_spoon_syrup.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1148.22,
@@ -5047,54 +4810,44 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_gov_tambo_210.mp4",
+"p": "agv/sachiko5/s5_k17_pour_milk.mp4",
 "ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-42,
-46
+50,
+50
 ]
 }
 },
 {
 "a": 1189.073,
 "b": 1191.693,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_210.mp4",
-"ofs": 2.613,
+"k": "img/sachiko5/s5_k17_pour_milk.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 1191.693,
 "b": 1194.46,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_210.mp4",
-"ofs": 5.233,
+"k": "img/sachiko5/s5_k17_pour_milk.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 1194.46,
@@ -5154,15 +4907,20 @@
 {
 "a": 1213.65,
 "b": 1216.467,
-"k": "img/sachiko5/s5_m11.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m11.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
 "a": 1216.467,
@@ -5206,20 +4964,24 @@
 },
 {
 "a": 1225.57,
-"b": 1228.947,
-"k": "img/sachiko5/s5_m16.png",
+"b": 1228.47,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m16.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
-"a": 1228.947,
+"a": 1228.47,
 "b": 1232.007,
 "k": "img/sachiko5/s5_m16.png",
 "z": [
@@ -5246,19 +5008,24 @@
 },
 {
 "a": 1235.39,
-"b": 1238.987,
-"k": "img/sachiko5/s5_m21.png",
+"b": 1238.29,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m21.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1238.987,
+"a": 1238.29,
 "b": 1242.433,
 "k": "img/sachiko5/s5_m21.png",
 "z": [
@@ -5286,15 +5053,20 @@
 {
 "a": 1246.01,
 "b": 1248.693,
-"k": "img/sachiko5/s5_m27.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m27.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1248.693,
@@ -5339,51 +5111,54 @@
 {
 "a": 1256.9,
 "b": 1259.42,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_405.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_m27.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 1259.42,
 "b": 1262.2,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_405.mp4",
-"ofs": 2.52,
+"k": "img/sachiko5/s5_m27.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1262.2,
 "b": 1264.9,
+"k": "img/sachiko5/s5_m27.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1264.9,
+"b": 1267.673,
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_gov_tambo_405.mp4",
-"ofs": 5.3,
+"p": "agv/sachiko5/s5_t04_foil.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
@@ -5392,20 +5167,7 @@
 }
 },
 {
-"a": 1264.9,
-"b": 1268.447,
-"k": "img/sachiko5/s5_t04_foil.png",
-"z": [
-1.3,
-1.38
-],
-"o": [
-34,
-46
-]
-},
-{
-"a": 1268.447,
+"a": 1267.673,
 "b": 1271.667,
 "k": "img/sachiko5/s5_t04_foil.png",
 "z": [
@@ -5448,19 +5210,24 @@
 },
 {
 "a": 1284.25,
-"b": 1287.687,
-"k": "img/sachiko5/s5_n10_sesame.png",
+"b": 1287.15,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_n10_sesame.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-42,
-36
+50,
+50
 ]
+}
 },
 {
-"a": 1287.687,
+"a": 1287.15,
 "b": 1290.967,
 "k": "img/sachiko5/s5_n10_sesame.png",
 "z": [
@@ -5613,57 +5380,42 @@
 {
 "a": 1329.63,
 "b": 1332.213,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_495.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_g03_leftover_pan.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 1332.213,
 "b": 1334.733,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_495.mp4",
-"ofs": 2.583,
+"k": "img/sachiko5/s5_g03_leftover_pan.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 1334.733,
 "b": 1337.63,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_495.mp4",
-"ofs": 5.103,
+"k": "img/sachiko5/s5_g03_leftover_pan.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1337.63,
@@ -5726,29 +5478,11 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "clips/sachiko5/arc_muraoka_castle.mp4",
+"p": "agv/sachiko5/s5_h06_write.mp4",
 "ofs": 0.0,
 "z": [
-1.24,
-1.12
-],
-"o": [
-40,
-50
-]
-}
-},
-{
-"a": 1358.533,
-"b": 1361.213,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_muraoka_castle.mp4",
-"ofs": 2.683,
-"z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
@@ -5757,22 +5491,30 @@
 }
 },
 {
-"a": 1361.213,
-"b": 1363.85,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_muraoka_castle.mp4",
-"ofs": 5.363,
+"a": 1358.533,
+"b": 1361.213,
+"k": "img/sachiko5/s5_h06_write.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-58
+40,
+45
 ]
-}
+},
+{
+"a": 1361.213,
+"b": 1363.85,
+"k": "img/sachiko5/s5_h06_write.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
 },
 {
 "a": 1363.85,
@@ -5859,70 +5601,60 @@
 {
 "a": 1389.153,
 "b": 1391.81,
-"k": "img/sachiko5/s5_k15_wall_clock.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k15_wall_clock.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1391.81,
 "b": 1394.513,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_600.mp4",
-"ofs": 0.0,
+"k": "img/sachiko5/s5_k15_wall_clock.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 1394.513,
 "b": 1397.073,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_600.mp4",
-"ofs": 2.703,
+"k": "img/sachiko5/s5_k15_wall_clock.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 1397.073,
 "b": 1399.81,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko5/arc_gov_tambo_600.mp4",
-"ofs": 5.263,
+"k": "img/sachiko5/s5_k15_wall_clock.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1399.81,
@@ -6157,19 +5889,24 @@
 },
 {
 "a": 1470.77,
-"b": 1474.333,
-"k": "img/sachiko5/s5_h10_rack.png",
+"b": 1473.67,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h10_rack.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-42,
-36
+50,
+50
 ]
+}
 },
 {
-"a": 1474.333,
+"a": 1473.67,
 "b": 1477.673,
 "k": "img/sachiko5/s5_h10_rack.png",
 "z": [
@@ -6388,15 +6125,20 @@
 {
 "a": 1537.55,
 "b": 1540.393,
-"k": "img/sachiko5/s5_h16_sesame.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h16_sesame.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
 "a": 1540.393,
@@ -6455,19 +6197,24 @@
 },
 {
 "a": 1558.17,
-"b": 1561.413,
-"k": "img/sachiko5/s5_m17.png",
+"b": 1561.07,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m17.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 1561.413,
+"a": 1561.07,
 "b": 1564.513,
 "k": "img/sachiko5/s5_m17.png",
 "z": [
@@ -6667,19 +6414,24 @@
 },
 {
 "a": 1613.19,
-"b": 1616.353,
-"k": "img/sachiko5/s5_g11_spoon_taste.png",
+"b": 1616.09,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g11_spoon_taste.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1616.353,
+"a": 1616.09,
 "b": 1619.913,
 "k": "img/sachiko5/s5_g11_spoon_taste.png",
 "z": [
@@ -6707,19 +6459,24 @@
 },
 {
 "a": 1623.11,
-"b": 1626.62,
-"k": "img/sachiko5/s5_k07_mitt_fold.png",
+"b": 1626.01,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_k07_mitt_fold.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-58,
-46
+50,
+50
 ]
+}
 },
 {
-"a": 1626.62,
+"a": 1626.01,
 "b": 1629.82,
 "k": "img/sachiko5/s5_k07_mitt_fold.png",
 "z": [
@@ -6787,19 +6544,24 @@
 },
 {
 "a": 1641.76,
-"b": 1644.8,
-"k": "img/sachiko5/s5_t06_write.png",
+"b": 1644.167,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_t06_write.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1644.8,
+"a": 1644.167,
 "b": 1648.193,
 "k": "img/sachiko5/s5_h04_foil.png",
 "z": [
@@ -6813,19 +6575,24 @@
 },
 {
 "a": 1648.193,
-"b": 1651.473,
-"k": "img/sachiko5/s5_h04_foil.png",
+"b": 1650.966,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h04_foil.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1651.473,
+"a": 1650.966,
 "b": 1654.77,
 "k": "img/sachiko5/s5_h04_foil.png",
 "z": [
@@ -6881,15 +6648,20 @@
 {
 "a": 1664.99,
 "b": 1667.82,
-"k": "img/sachiko5/s5_m15.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m15.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-66,
-46
+50,
+50
 ]
+}
 },
 {
 "a": 1667.82,
@@ -7039,19 +6811,24 @@
 },
 {
 "a": 1700.11,
-"b": 1703.433,
-"k": "img/sachiko5/s5_h23_taste.png",
+"b": 1703.01,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h23_taste.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1703.433,
+"a": 1703.01,
 "b": 1706.727,
 "k": "img/sachiko5/s5_h23_taste.png",
 "z": [
@@ -7158,16 +6935,20 @@
 {
 "a": 1729.56,
 "b": 1732.393,
-"k": "img/sachiko5/s5_n03_oventherm.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_n03_oventherm.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
 "a": 1732.393,
@@ -7273,8 +7054,7 @@
 "o": [
 58,
 58
-],
-"dx": 120
+]
 },
 {
 "a": 1757.434,
@@ -7292,20 +7072,24 @@
 },
 {
 "a": 1760.63,
-"b": 1764.133,
-"k": "img/sachiko5/s5_m03.png",
+"b": 1763.403,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m03.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
-"a": 1764.133,
+"a": 1763.403,
 "b": 1767.433,
 "k": "img/sachiko5/s5_m03.png",
 "z": [
@@ -7346,15 +7130,20 @@
 {
 "a": 1774.19,
 "b": 1777.047,
-"k": "img/sachiko5/s5_g15_towel_wrap.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g15_towel_wrap.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1777.047,
@@ -7438,29 +7227,38 @@
 {
 "a": 1794.6,
 "b": 1797.52,
-"k": "img/sachiko5/s5_m25.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m25.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 1797.52,
 "b": 1800.4,
-"k": "img/sachiko5/s5_m07.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_m07.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
 "a": 1800.4,
@@ -7505,15 +7303,20 @@
 {
 "a": 1808.93,
 "b": 1811.573,
-"k": "img/sachiko5/s5_g08_wash_peel.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g08_wash_peel.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-66,
-58
+50,
+50
 ]
+}
 },
 {
 "a": 1811.573,
@@ -7571,15 +7374,20 @@
 {
 "a": 1823.44,
 "b": 1826.347,
-"k": "img/sachiko5/s5_h01_wipe.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_h01_wipe.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-58,
-46
+50,
+50
 ]
+}
 },
 {
 "a": 1826.347,
@@ -7623,19 +7431,24 @@
 },
 {
 "a": 1835.36,
-"b": 1838.56,
-"k": "img/sachiko5/s5_g28_count.png",
+"b": 1838.133,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_g28_count.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1838.56,
+"a": 1838.133,
 "b": 1841.999,
 "k": "img/sachiko5/s5_g28_count.png",
 "z": [
@@ -7677,15 +7490,20 @@
 {
 "a": 1848.69,
 "b": 1851.547,
-"k": "img/sachiko5/s5_n28_jarlid.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko5/s5_n28_jarlid.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1851.547,
