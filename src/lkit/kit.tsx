@@ -116,7 +116,7 @@ export const CostTag: P<{ price: string; sub: string; k: string; vs?: { price: s
         <div style={{ position: "relative", width: 560, boxSizing: "border-box", padding: "50px 40px 46px", background: C.paper, borderRadius: "60px 18px 18px 18px", boxShadow: "0 60px 100px rgba(0,0,0,0.5)", textAlign: "center",
           clipPath: "polygon(18% 0, 82% 0, 100% 16%, 100% 100%, 0 100%, 0 16%)" }}>
           <div style={{ width: 34, height: 34, borderRadius: 99, background: "#d8cfbd", margin: "-10px auto 14px", boxShadow: "inset 0 3px 6px rgba(0,0,0,0.3)" }} />
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: fit(price, 470, 230, "serif"), lineHeight: 0.9, color: C.lilacDeep, whiteSpace: "nowrap" }}>{price}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: fit(price, 400, 200, "serif"), lineHeight: 0.9, color: C.lilacDeep, whiteSpace: "nowrap" }}>{price}</div>
           <div style={{ fontFamily: HAND, fontSize: fit(sub, 470, 54, "hand", 2), lineHeight: 1.05, color: C.ink, marginTop: 10 }}>{sub}</div>
         </div>
       </div>
