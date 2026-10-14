@@ -41,15 +41,20 @@
 {
 "a": 6.753,
 "b": 8.32,
-"k": "img/sachiko8/h3_butcher_apron.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/m_crust_closeup.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 8.32,
@@ -279,20 +284,24 @@
 },
 {
 "a": 56.85,
-"b": 60.267,
-"k": "img/sachiko8/n_mother_basket.png",
+"b": 59.75,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_mother_basket.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
-"a": 60.267,
+"a": 59.75,
 "b": 63.287,
 "k": "img/sachiko8/n_mother_basket.png",
 "z": [
@@ -384,19 +393,24 @@
 },
 {
 "a": 86.31,
-"b": 89.513,
-"k": "img/sachiko8/n_osaka_market_fish.png",
+"b": 89.21,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_osaka_market_fish.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 89.513,
+"a": 89.21,
 "b": 92.973,
 "k": "img/sachiko8/n_osaka_market_fish.png",
 "z": [
@@ -462,19 +476,24 @@
 },
 {
 "a": 103.69,
-"b": 106.973,
-"k": "img/sachiko8/s_letter_mother.png",
+"b": 106.59,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_letter_mother.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-34,
-36
+50,
+50
 ]
+}
 },
 {
-"a": 106.973,
+"a": 106.59,
 "b": 110.373,
 "k": "img/sachiko8/s_letter_mother.png",
 "z": [
@@ -741,15 +760,20 @@
 {
 "a": 169.0,
 "b": 171.66,
-"k": "img/sachiko8/n_fridge_bowl.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_fridge_bowl.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 171.66,
@@ -1100,19 +1124,24 @@
 },
 {
 "a": 251.83,
-"b": 255.033,
-"k": "img/sachiko8/s_teaspoon_salt.png",
+"b": 254.73,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_teaspoon_salt.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-34,
-58
+50,
+50
 ]
+}
 },
 {
-"a": 255.033,
+"a": 254.73,
 "b": 257.993,
 "k": "img/sachiko8/s_teaspoon_salt.png",
 "z": [
@@ -1363,19 +1392,24 @@
 },
 {
 "a": 313.23,
-"b": 316.353,
-"k": "img/sachiko8/s_rub_koji.png",
+"b": 316.13,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_rub_koji.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-58,
-46
+50,
+50
 ]
+}
 },
 {
-"a": 316.353,
+"a": 316.13,
 "b": 319.453,
 "k": "img/sachiko8/s_rub_koji.png",
 "z": [
@@ -1835,19 +1869,24 @@
 },
 {
 "a": 418.81,
-"b": 422.047,
-"k": "img/sachiko8/m_thermometer_probe.png",
+"b": 421.316,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/m_thermometer_probe.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 422.047,
+"a": 421.316,
 "b": 425.627,
 "k": "img/sachiko8/m_thermometer_probe.png",
 "z": [
@@ -2021,20 +2060,24 @@
 },
 {
 "a": 459.77,
-"b": 463.08,
-"k": "img/sachiko8/m_grain_lines.png",
+"b": 462.67,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/m_grain_lines.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
-"a": 463.08,
+"a": 462.67,
 "b": 466.433,
 "k": "img/sachiko8/m_grain_lines.png",
 "z": [
@@ -2062,15 +2105,20 @@
 {
 "a": 469.73,
 "b": 472.627,
-"k": "img/sachiko8/s_slice_across.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_slice_across.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
 "a": 472.627,
@@ -2233,20 +2281,24 @@
 },
 {
 "a": 509.17,
-"b": 512.66,
-"k": "img/sachiko8/s_strips_hot_pan.png",
+"b": 511.577,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_strips_hot_pan.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
-"a": 512.66,
+"a": 511.577,
 "b": 516.2,
 "k": "img/sachiko8/s_strips_hot_pan.png",
 "z": [
@@ -2767,19 +2819,24 @@
 },
 {
 "a": 626.87,
-"b": 630.067,
-"k": "img/sachiko8/s2_osaka_butcher_old.png",
+"b": 629.643,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_osaka_butcher_old.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 630.067,
+"a": 629.643,
 "b": 633.187,
 "k": "img/sachiko8/s2_osaka_butcher_old.png",
 "z": [
@@ -3016,15 +3073,20 @@
 {
 "a": 689.58,
 "b": 689.88,
-"k": "img/sachiko8/s2_knife_side.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_knife_side.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 689.88,
@@ -3056,56 +3118,41 @@
 {
 "a": 696.18,
 "b": 698.763,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_0150_Cooking_Terms_1.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s2_knife_side.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 698.763,
 "b": 701.023,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_0150_Cooking_Terms_1.mp4",
-"ofs": 2.583,
+"k": "img/sachiko8/s2_knife_side.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 701.023,
 "b": 703.86,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_0150_Cooking_Terms_1.mp4",
-"ofs": 4.843,
+"k": "img/sachiko8/s2_knife_side.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 703.86,
@@ -3171,19 +3218,24 @@
 },
 {
 "a": 722.86,
-"b": 726.337,
-"k": "img/sachiko8/s2_tongs_side.png",
+"b": 725.76,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_tongs_side.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 726.337,
+"a": 725.76,
 "b": 729.68,
 "k": "img/sachiko8/s2_tongs_side.png",
 "z": [
@@ -3198,56 +3250,41 @@
 {
 "a": 729.68,
 "b": 732.837,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_0150_Cooking_Terms_2.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s2_tongs_side.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 732.837,
 "b": 736.137,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_0150_Cooking_Terms_2.mp4",
-"ofs": 3.157,
+"k": "img/sachiko8/s2_tongs_side.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 736.137,
 "b": 739.42,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_0150_Cooking_Terms_2.mp4",
-"ofs": 6.457,
+"k": "img/sachiko8/s2_tongs_side.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 739.42,
@@ -3278,19 +3315,24 @@
 },
 {
 "a": 745.88,
-"b": 748.937,
-"k": "img/sachiko8/s2_board_wipe.png",
+"b": 748.78,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_board_wipe.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 748.937,
+"a": 748.78,
 "b": 752.01,
 "k": "img/sachiko8/s2_board_wipe.png",
 "z": [
@@ -3318,16 +3360,20 @@
 {
 "a": 755.19,
 "b": 757.77,
-"k": "img/sachiko8/s2_strips_pan.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_strips_pan.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 757.77,
@@ -3371,20 +3417,15 @@
 {
 "a": 767.25,
 "b": 771.35,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_PorkPeop1956_1.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s2_strips_pan.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 771.35,
@@ -3513,19 +3554,24 @@
 },
 {
 "a": 799.67,
-"b": 802.857,
-"k": "img/sachiko8/s2_oven_check.png",
+"b": 802.543,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_oven_check.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-66,
-58
+50,
+50
 ]
+}
 },
 {
-"a": 802.857,
+"a": 802.543,
 "b": 805.957,
 "k": "img/sachiko8/s2_oven_check.png",
 "z": [
@@ -3554,38 +3600,28 @@
 {
 "a": 809.12,
 "b": 812.063,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_PorkPeop1956_3.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s2_oven_check.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 812.063,
 "b": 815.18,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_PorkPeop1956_3.mp4",
-"ofs": 2.943,
+"k": "img/sachiko8/s2_oven_check.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 815.18,
@@ -3710,20 +3746,15 @@
 {
 "a": 842.55,
 "b": 845.663,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_PorkPeop1956_4.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s2_pear_half.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 845.663,
@@ -3731,36 +3762,31 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "arc/sachiko8/arc_p_PorkPeop1956_4.mp4",
-"ofs": 3.113,
+"p": "agv/sachiko8/s2_pear_half.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-42,
-58
+50,
+50
 ]
 }
 },
 {
 "a": 848.303,
 "b": 851.5,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_PorkPeop1956_4.mp4",
-"ofs": 5.753,
+"k": "img/sachiko8/s2_pear_half.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 851.5,
@@ -3804,15 +3830,20 @@
 {
 "a": 863.64,
 "b": 866.463,
-"k": "img/sachiko8/s2_stove_flame.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_stove_flame.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 866.463,
@@ -3844,51 +3875,54 @@
 {
 "a": 872.41,
 "b": 875.31,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_1.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s2_stove_flame.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 875.31,
 "b": 878.39,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_1.mp4",
-"ofs": 2.9,
+"k": "img/sachiko8/s2_stove_flame.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 878.39,
 "b": 881.21,
+"k": "img/sachiko8/s2_stove_flame.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 881.21,
+"b": 884.11,
 "k": "",
 "c": "Clip",
 "props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_1.mp4",
-"ofs": 5.98,
+"p": "agv/sachiko8/s2_grill_plate.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
@@ -3897,20 +3931,7 @@
 }
 },
 {
-"a": 881.21,
-"b": 884.65,
-"k": "img/sachiko8/s2_grill_plate.png",
-"z": [
-1.0,
-1.07
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 884.65,
+"a": 884.11,
 "b": 888.23,
 "k": "img/sachiko8/s2_grill_plate.png",
 "z": [
@@ -3981,11 +4002,11 @@
 "k": "",
 "c": "Clip",
 "props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_2.mp4",
+"p": "agv/sachiko8/s2_cucumber_cold.mp4",
 "ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
@@ -3996,55 +4017,50 @@
 {
 "a": 904.803,
 "b": 907.863,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_2.mp4",
-"ofs": 2.563,
+"k": "img/sachiko8/s2_cucumber_cold.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 907.863,
 "b": 910.08,
+"k": "img/sachiko8/s2_cucumber_cold.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 910.08,
+"b": 912.953,
 "k": "",
 "c": "Clip",
 "props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_2.mp4",
-"ofs": 5.623,
+"p": "agv/sachiko8/s2_soy_drip.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
 }
 },
 {
-"a": 910.08,
-"b": 913.457,
-"k": "img/sachiko8/s2_soy_drip.png",
-"z": [
-1.3,
-1.38
-],
-"o": [
-66,
-58
-]
-},
-{
-"a": 913.457,
+"a": 912.953,
 "b": 916.437,
 "k": "img/sachiko8/s2_soy_drip.png",
 "z": [
@@ -4113,16 +4129,20 @@
 {
 "a": 929.68,
 "b": 932.477,
-"k": "img/sachiko8/s3_salt_pinch_eyes.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_salt_pinch_eyes.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
 "a": 932.477,
@@ -4153,57 +4173,42 @@
 {
 "a": 938.3,
 "b": 941.703,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_3.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 941.703,
 "b": 945.037,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_3.mp4",
-"ofs": 3.403,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 945.037,
 "b": 948.74,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_3.mp4",
-"ofs": 6.737,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 948.74,
@@ -4300,51 +4305,54 @@
 {
 "a": 970.66,
 "b": 973.183,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_4.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s3_thermo_eyes.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 973.183,
 "b": 975.803,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_4.mp4",
-"ofs": 2.523,
+"k": "img/sachiko8/s3_thermo_eyes.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 975.803,
 "b": 978.41,
+"k": "img/sachiko8/s3_thermo_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 978.41,
+"b": 981.183,
 "k": "",
 "c": "Clip",
 "props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_4.mp4",
-"ofs": 5.143,
+"p": "agv/sachiko8/s3_flip_tongs_eyes.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
@@ -4353,20 +4361,7 @@
 }
 },
 {
-"a": 978.41,
-"b": 981.91,
-"k": "img/sachiko8/s3_flip_tongs_eyes.png",
-"z": [
-1.0,
-1.07
-],
-"o": [
-50,
-50
-]
-},
-{
-"a": 981.91,
+"a": 981.183,
 "b": 985.21,
 "k": "img/sachiko8/s3_flip_tongs_eyes.png",
 "z": [
@@ -4421,19 +4416,24 @@
 },
 {
 "a": 994.16,
-"b": 997.277,
-"k": "img/sachiko8/s3_sauce_stir_eyes.png",
+"b": 996.533,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_sauce_stir_eyes.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-42,
-46
+50,
+50
 ]
+}
 },
 {
-"a": 997.277,
+"a": 996.533,
 "b": 1000.297,
 "k": "img/sachiko8/s3_sauce_stir_eyes.png",
 "z": [
@@ -4475,39 +4475,29 @@
 {
 "a": 1006.1,
 "b": 1008.757,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_5.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s3_sauce_stir_eyes.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 1008.757,
 "b": 1011.34,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_1_5.mp4",
-"ofs": 2.657,
+"k": "img/sachiko8/s3_sauce_stir_eyes.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 1011.34,
@@ -4578,20 +4568,24 @@
 },
 {
 "a": 1025.98,
-"b": 1029.343,
-"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
+"b": 1028.387,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_chopsticks_strips_eyes.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
-"a": 1029.343,
+"a": 1028.387,
 "b": 1032.197,
 "k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
 "z": [
@@ -4632,57 +4626,42 @@
 {
 "a": 1038.78,
 "b": 1041.257,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_0.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 1041.257,
 "b": 1043.817,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_0.mp4",
-"ofs": 2.477,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 1043.817,
 "b": 1046.26,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_0.mp4",
-"ofs": 5.037,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1046.26,
@@ -4752,16 +4731,20 @@
 {
 "a": 1059.84,
 "b": 1062.677,
-"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_bowl_fridge_eyes.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
 "a": 1062.677,
@@ -4805,38 +4788,28 @@
 {
 "a": 1070.96,
 "b": 1073.737,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_1.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1073.737,
 "b": 1076.74,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_1.mp4",
-"ofs": 2.777,
+"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 1076.74,
@@ -4947,52 +4920,47 @@
 {
 "a": 1098.66,
 "b": 1101.297,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_2.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s3_cold_salad_eyes.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 1101.297,
 "b": 1104.46,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_2.mp4",
-"ofs": 2.637,
+"k": "img/sachiko8/s3_cold_salad_eyes.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 1104.46,
 "b": 1107.357,
-"k": "img/sachiko8/s3_lines_point_eyes.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_lines_point_eyes.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-66,
-58
+50,
+50
 ]
+}
 },
 {
 "a": 1107.357,
@@ -5090,107 +5058,86 @@
 {
 "a": 1127.46,
 "b": 1130.03,
-"k": "img/sachiko8/s3_daikon_grate_eyes.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_daikon_grate_eyes.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 1130.03,
 "b": 1133.13,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_3.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 1133.13,
 "b": 1135.71,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_3.mp4",
-"ofs": 3.1,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": 120
-}
 },
 {
 "a": 1135.71,
 "b": 1138.723,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_3.mp4",
-"ofs": 5.68,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 1138.723,
 "b": 1141.663,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_3.mp4",
-"ofs": 8.693,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1141.663,
 "b": 1144.6,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_3.mp4",
-"ofs": 11.633,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 1144.6,
@@ -5249,16 +5196,20 @@
 {
 "a": 1157.61,
 "b": 1160.197,
-"k": "img/sachiko8/p3_grated_onion_side.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_grated_onion_side.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 1160.197,
@@ -5289,56 +5240,41 @@
 {
 "a": 1166.44,
 "b": 1169.237,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_4.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/p3_grated_onion_side.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1169.237,
 "b": 1172.257,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_4.mp4",
-"ofs": 2.797,
+"k": "img/sachiko8/p3_grated_onion_side.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1172.257,
 "b": 1175.06,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_4.mp4",
-"ofs": 5.817,
+"k": "img/sachiko8/p3_grated_onion_side.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-42,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 1175.06,
@@ -5410,15 +5346,20 @@
 {
 "a": 1189.46,
 "b": 1192.223,
-"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_fridge_uncovered_steak.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
 "a": 1192.223,
@@ -5463,56 +5404,41 @@
 {
 "a": 1201.09,
 "b": 1203.49,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_5.mp4",
-"ofs": 0.0,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
-60,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1203.49,
 "b": 1205.89,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_5.mp4",
-"ofs": 2.4,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1205.89,
 "b": 1208.31,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "arc/sachiko8/arc_p_how_to_buy_meat_2_5.mp4",
-"ofs": 4.8,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-66,
-58
+40,
+45
 ]
-}
 },
 {
 "a": 1208.31,
@@ -5768,19 +5694,24 @@
 },
 {
 "a": 1262.38,
-"b": 1265.397,
-"k": "img/sachiko8/p3_daikon_board_knife.png",
+"b": 1265.28,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_daikon_board_knife.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1265.397,
+"a": 1265.28,
 "b": 1268.557,
 "k": "img/sachiko8/p3_daikon_board_knife.png",
 "z": [
@@ -5914,19 +5845,24 @@
 },
 {
 "a": 1294.98,
-"b": 1298.217,
-"k": "img/sachiko8/p3_sesame_salad_macro.png",
+"b": 1297.88,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_sesame_salad_macro.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1298.217,
+"a": 1297.88,
 "b": 1301.537,
 "k": "img/sachiko8/p3_sesame_salad_macro.png",
 "z": [
@@ -6325,7 +6261,7 @@
 "k": "v_ginger_thumb_c",
 "c": "Pins",
 "props": {
-"k": "v_ginger_thumb",
+"k": "img/sachiko8/v_asian_pear_bowl.png",
 "head": "THREE SPOTS TO CHECK",
 "pins": [
 {
@@ -6486,16 +6422,20 @@
 {
 "a": 1431.76,
 "b": 1434.417,
-"k": "img/sachiko8/v_gyudon_pan.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/v_gyudon_pan.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
 "a": 1434.417,
@@ -6669,19 +6609,24 @@
 },
 {
 "a": 1470.7,
-"b": 1473.863,
-"k": "img/sachiko8/s_leftover_fridge.png",
+"b": 1473.34,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_leftover_fridge.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 1473.863,
+"a": 1473.34,
 "b": 1477.277,
 "k": "img/sachiko8/s_leftover_fridge.png",
 "z": [
@@ -7014,15 +6959,20 @@
 {
 "a": 1552.91,
 "b": 1555.73,
-"k": "img/sachiko8/s_mother_smell.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_mother_smell.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1555.73,
@@ -7106,20 +7056,24 @@
 },
 {
 "a": 1573.61,
-"b": 1577.343,
-"k": "img/sachiko8/s2_taste_spoon.png",
+"b": 1576.51,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_taste_spoon.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
-"a": 1577.343,
+"a": 1576.51,
 "b": 1580.857,
 "k": "img/sachiko8/s2_taste_spoon.png",
 "z": [
@@ -7326,8 +7280,7 @@
 "o": [
 58,
 58
-],
-"dx": 120
+]
 },
 {
 "a": 1623.023,
@@ -7345,20 +7298,24 @@
 },
 {
 "a": 1628.47,
-"b": 1631.477,
-"k": "img/sachiko8/s_wipe_onion.png",
+"b": 1631.37,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_wipe_onion.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
-"a": 1631.477,
+"a": 1631.37,
 "b": 1634.897,
 "k": "img/sachiko8/s_wipe_onion.png",
 "z": [
@@ -7649,19 +7606,24 @@
 },
 {
 "a": 1694.88,
-"b": 1698.097,
-"k": "img/sachiko8/s2_rinse_knife.png",
+"b": 1697.78,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_rinse_knife.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 1698.097,
+"a": 1697.78,
 "b": 1701.617,
 "k": "img/sachiko8/s2_rinse_knife.png",
 "z": [
@@ -8048,15 +8010,20 @@
 {
 "a": 1788.16,
 "b": 1791.057,
-"k": "img/sachiko8/mo_soy_bottle.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/mo_soy_bottle.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1791.057,
@@ -8193,19 +8160,24 @@
 },
 {
 "a": 1821.26,
-"b": 1824.523,
-"k": "img/sachiko8/n_grater_old.png",
+"b": 1824.16,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_grater_old.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1824.523,
+"a": 1824.16,
 "b": 1828.27,
 "k": "img/sachiko8/n_grater_old.png",
 "z": [
@@ -8245,19 +8217,24 @@
 },
 {
 "a": 1834.87,
-"b": 1837.93,
-"k": "img/sachiko8/s_memory_plate.png",
+"b": 1837.77,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_memory_plate.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1837.93,
+"a": 1837.77,
 "b": 1841.223,
 "k": "img/sachiko8/s_memory_plate.png",
 "z": [
@@ -8437,20 +8414,24 @@
 },
 {
 "a": 1881.66,
-"b": 1884.717,
-"k": "img/sachiko8/s_cook_alone.png",
+"b": 1884.3,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_cook_alone.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
-"a": 1884.717,
+"a": 1884.3,
 "b": 1888.063,
 "k": "img/sachiko8/s_cook_alone.png",
 "z": [
@@ -8504,15 +8485,20 @@
 {
 "a": 1896.637,
 "b": 1898.937,
-"k": "img/sachiko8/s_close_wave.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_close_wave.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-42,
-36
+50,
+50
 ]
+}
 },
 {
 "a": 1898.937,
@@ -8597,19 +8583,24 @@
 },
 {
 "a": 1916.99,
-"b": 1920.543,
-"k": "img/sachiko8/n_rice_water_bowl.png",
+"b": 1919.863,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_rice_water_bowl.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 1920.543,
+"a": 1919.863,
 "b": 1924.02,
 "k": "img/sachiko8/n_rice_water_bowl.png",
 "z": [
@@ -8637,16 +8628,20 @@
 {
 "a": 1927.263,
 "b": 1930.117,
-"k": "img/sachiko8/n_plants_window.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_plants_window.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 1930.117,
@@ -8778,19 +8773,24 @@
 },
 {
 "a": 1963.76,
-"b": 1966.87,
-"k": "img/sachiko8/s3_notebook_eyes.png",
+"b": 1966.66,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_notebook_eyes.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1966.87,
+"a": 1966.66,
 "b": 1970.15,
 "k": "img/sachiko8/s3_notebook_eyes.png",
 "z": [
