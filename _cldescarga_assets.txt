@@ -25,7 +25,6 @@ img/cldescarga/b_tissue.jpg
 img/cldescarga/c_flush2.jpg
 img/cldescarga/b_flush3x.jpg
 img/cldescarga/b_plungernew.jpg
-broll/cldescarga_st/b_plungernew.mp4
 img/cldescarga/b_plunging.jpg
 broll/cldescarga/b_plunging.mp4
 img/cldescarga/b_draingel.jpg
@@ -51,7 +50,6 @@ img/cldescarga/b_phone.jpg
 broll/cldescarga_st/b_phone.mp4
 img/cldescarga/c_wink.jpg
 img/cldescarga/b_cartbrown.jpg
-broll/cldescarga_st/b_cartbrown.mp4
 img/cldescarga/c_writing.jpg
 broll/cldescarga/c_writing.mp4
 img/cldescarga/b_handpages.jpg
