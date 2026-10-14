@@ -1,0 +1,2640 @@
+{
+ "end": 931.891,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 3.647,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 3.647,
+   "b": 7.1,
+   "k": "n_invoice",
+   "c": "BigNumber",
+   "props": {
+    "num": 2,
+    "unit": "PESOS",
+    "txt": "por destapar el registro",
+    "k": "n_invoice",
+    "t": 3.647,
+    "prefix": "$",
+    "suffix": ",000"
+   }
+  },
+  {
+   "a": 7.1,
+   "b": 9.4,
+   "k": "l_hose_in_pipe",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 9.4,
+   "b": 14.14,
+   "k": "n_hose_coil",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 14.14,
+   "b": 16.54,
+   "k": "n_rag_gloves",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 16.54,
+   "b": 20.83,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 20.83,
+   "b": 25.06,
+   "k": "n_flood_patio",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 25.06,
+   "b": 28.56,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 28.56,
+   "b": 40.2,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "HOY, PASO A PASO",
+    "items": [
+     {
+      "t": 28.66,
+      "name": "Las señales",
+      "use": "¿es el registro?",
+      "k": "n_sink_slow"
+     },
+     {
+      "t": 29.68,
+      "name": "Abrir la tapa",
+      "use": "sin lastimarte",
+      "k": "n_lid_closed"
+     },
+     {
+      "t": 31.7,
+      "name": "Leer el agua",
+      "use": "¿hacia dónde?",
+      "k": "n_registro_flow"
+     },
+     {
+      "t": 34.72,
+      "name": "Sacar la nata",
+      "use": "no empujarla",
+      "k": "n_nata_close"
+     },
+     {
+      "t": 36.08,
+      "name": "El trapo",
+      "use": "el pistón",
+      "k": "n_rag_hose"
+     }
+    ]
+   }
+  },
+  {
+   "a": 40.2,
+   "b": 43.78,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 43.78,
+   "b": 50.46,
+   "k": "n_registro_open_dark",
+   "c": "Careful",
+   "props": {
+    "k": "n_registro_open_dark",
+    "tag": "AVISO",
+    "txt": "Nunca metas la cabeza dentro del registro.",
+    "t": 45.52
+   }
+  },
+  {
+   "a": 50.46,
+   "b": 53.62,
+   "k": "l_lid_aside",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 53.62,
+   "b": 56.37,
+   "k": "n_long_gloves",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 56.37,
+   "b": 58.86,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 58.86,
+   "b": 65.08,
+   "k": "l_van_tools",
+   "c": "BigNumber",
+   "props": {
+    "num": 25,
+    "unit": "AÑOS",
+    "txt": "de plomero, casa por casa",
+    "k": "l_van_tools",
+    "t": 58.86
+   }
+  },
+  {
+   "a": 65.08,
+   "b": 67.12,
+   "k": "n_nata_close",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 67.12,
+   "b": 71.56,
+   "k": "l_owner_watch",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 71.56,
+   "b": 77.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 77.12,
+   "b": 80.22,
+   "k": "l_van_door",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 80.22,
+   "b": 84.68,
+   "k": "l_book_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "book_cover",
+      "tab": "PLOMERÍA CASERA",
+      "t": 80.22,
+      "hl": 50
+     }
+    ],
+    "k": "l_book_table"
+   }
+  },
+  {
+   "a": 84.68,
+   "b": 90.86,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 90.86,
+   "b": 96.19,
+   "k": "n_book_open",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page54",
+      "tab": "ARREGLO 50 · EL REGISTRO",
+      "t": 90.86,
+      "hl": 30
+     },
+     {
+      "src": "guia_cover",
+      "tab": "GUÍA DEL DESAGÜE",
+      "t": 94.38,
+      "hl": 40
+     }
+    ],
+    "k": "n_book_open"
+   }
+  },
+  {
+   "a": 96.19,
+   "b": 101.12,
+   "k": "n_invoice_book",
+   "c": "CostTag",
+   "props": {
+    "price": "1 PACK",
+    "sub": "50 arreglos + la Guía",
+    "k": "n_invoice_book",
+    "vs": {
+     "price": "1 VISITA",
+     "txt": "del plomero",
+     "t": 98.2
+    }
+   }
+  },
+  {
+   "a": 101.12,
+   "b": 104.7,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 104.7,
+   "b": 107.86,
+   "k": "l_walk_patio",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 107.86,
+   "b": 111.34,
+   "k": "l_notebook",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 111.34,
+   "b": 117.98,
+   "k": "n_sink_slow",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 7,
+    "name": "Pelear con el sifón",
+    "instead": "mirar el registro",
+    "page": "ARREGLO 50",
+    "k": "n_sink_slow",
+    "t": 116.68
+   }
+  },
+  {
+   "a": 117.98,
+   "b": 120.64,
+   "k": "l_kitchen_trap_fight",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 120.64,
+   "b": 124.04,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 124.04,
+   "b": 126.54,
+   "k": "n_registro_full",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 126.54,
+   "b": 130.04,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 130.04,
+   "b": 133.42,
+   "k": "l_owner_trap",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 133.42,
+   "b": 137.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 137.5,
+   "b": 140.9,
+   "k": "n_slow_shower",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 140.9,
+   "b": 144.32,
+   "k": "l_check_sinks",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 144.32,
+   "b": 147.74,
+   "k": "n_grate_overflow",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 147.74,
+   "b": 152.54,
+   "k": "l_grate_watch",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 152.54,
+   "b": 156.02,
+   "k": "l_smell",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 156.02,
+   "b": 161.04,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 161.04,
+   "b": 163.66,
+   "k": "n_main_pipe",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 163.66,
+   "b": 167.66,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 167.66,
+   "b": 176.937,
+   "k": "n_book_open",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page5",
+      "tab": "ARREGLO 1 · CUÁNDO LLAMAR",
+      "t": 168.74,
+      "hl": 78
+     },
+     {
+      "src": "page217",
+      "tab": "GUÍA · PÁG 17 · LAS 5 SEÑALES",
+      "t": 173.56,
+      "hl": 30
+     }
+    ],
+    "k": "n_book_open"
+   }
+  },
+  {
+   "a": 176.937,
+   "b": 181.613,
+   "k": "n_lid_closed",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page54",
+      "tab": "ARREGLO 50 · CÁMARA DE INSPECCIÓN",
+      "t": 177.513,
+      "hl": 12
+     }
+    ],
+    "k": "n_lid_closed"
+   }
+  },
+  {
+   "a": 181.613,
+   "b": 185.827,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 185.827,
+   "b": 193.487,
+   "k": "n_lid_closed",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 7,
+    "name": "Tirar con los dedos",
+    "instead": "barreta y palanca",
+    "page": "ARREGLO 50",
+    "k": "n_lid_closed",
+    "t": 190.867
+   }
+  },
+  {
+   "a": 193.487,
+   "b": 196.277,
+   "k": "n_lid_passage",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 196.277,
+   "b": 201.153,
+   "k": "n_metal_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 201.153,
+   "b": 204.433,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 204.433,
+   "b": 209.753,
+   "k": "l_rubber_mallet",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 209.753,
+   "b": 213.013,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 213.013,
+   "b": 220.103,
+   "k": "n_fingers_lid",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_fingers_lid",
+    "txt": "Si se resbala, te aplasta la mano",
+    "stamp": "LOS DEDOS",
+    "cx": 50,
+    "cy": 55,
+    "t": 218.573
+   }
+  },
+  {
+   "a": 220.103,
+   "b": 225.873,
+   "k": "l_lid_bar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 225.873,
+   "b": 228.41,
+   "k": "l_lid_slide",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 228.41,
+   "b": 232.753,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 232.753,
+   "b": 237.966,
+   "k": "l_oil_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 237.966,
+   "b": 241.306,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 241.306,
+   "b": 244.106,
+   "k": "n_lid_aside_vapor",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 244.106,
+   "b": 248.226,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 248.226,
+   "b": 251.786,
+   "k": "n_registro_open_dark",
+   "c": "Careful",
+   "props": {
+    "k": "n_registro_open_dark",
+    "tag": "CUIDADO · ARREGLO 50",
+    "txt": "No metas la cabeza. Ventila unos minutos.",
+    "t": 250.326
+   }
+  },
+  {
+   "a": 251.786,
+   "b": 254.706,
+   "k": "l_close_door",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 254.706,
+   "b": 259.346,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "LO QUE NECESITAS",
+    "items": [
+     {
+      "t": 254.986,
+      "name": "Guantes largos",
+      "use": "hasta el codo",
+      "k": "n_long_gloves"
+     },
+     {
+      "t": 255.886,
+      "name": "Anteojos",
+      "use": "salpica",
+      "k": "n_goggles"
+     },
+     {
+      "t": 256.766,
+      "name": "Un balde",
+      "use": "para la nata",
+      "k": "n_bucket_patio"
+     },
+     {
+      "t": 257.866,
+      "name": "Bolsa gruesa",
+      "use": "bien cerrada",
+      "k": "n_trash_bag"
+     }
+    ]
+   }
+  },
+  {
+   "a": 259.346,
+   "b": 267.28,
+   "k": "n_lid_passage",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page54",
+      "tab": "ARREGLO 50 · PASO 1",
+      "t": 261.486,
+      "hl": 62
+     }
+    ],
+    "k": "n_lid_passage"
+   }
+  },
+  {
+   "a": 267.28,
+   "b": 271.326,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 271.326,
+   "b": 279.506,
+   "k": "n_bottles_shelf",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_remember.jpg",
+    "tag": "EL VIDEO DEL ÁCIDO",
+    "k": "n_bottles_shelf",
+    "words": [
+     [
+      "nunca",
+      272.766
+     ],
+     [
+      "ácido",
+      273.666
+     ],
+     [
+      "sosa",
+      274.986
+     ],
+     [
+      "desagüe",
+      275.706
+     ]
+    ]
+   }
+  },
+  {
+   "a": 279.506,
+   "b": 283.846,
+   "k": "l_no_bottle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 283.846,
+   "b": 286.566,
+   "k": "l_gloves_on",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 286.566,
+   "b": 292.106,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 292.106,
+   "b": 299.106,
+   "k": "n_registro_flow",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 7,
+    "name": "Empujar a ciegas",
+    "instead": "leer el agua primero",
+    "page": "ARREGLO 50",
+    "k": "n_registro_flow",
+    "t": 296.906
+   }
+  },
+  {
+   "a": 299.106,
+   "b": 302.386,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 302.386,
+   "b": 306.046,
+   "k": "n_channel_half",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 306.046,
+   "b": 310.966,
+   "k": "l_shout_kitchen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 310.966,
+   "b": 314.506,
+   "k": "n_registro_flow",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 314.506,
+   "b": 319.486,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 319.486,
+   "b": 323.846,
+   "k": "l_bucket_alone",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 323.846,
+   "b": 328.426,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 328.426,
+   "b": 333.006,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "LEE EL AGUA",
+    "items": [
+     {
+      "t": 328.426,
+      "name": "Agua que corre",
+      "use": "tapón del lado de la casa",
+      "k": "n_registro_flow"
+     },
+     {
+      "t": 331.786,
+      "name": "Registro lleno",
+      "use": "tapón del lado de la calle",
+      "k": "n_registro_full"
+     }
+    ]
+   }
+  },
+  {
+   "a": 333.006,
+   "b": 335.286,
+   "k": "n_street_pipe",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 335.286,
+   "b": 339.006,
+   "k": "n_two_lids",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 339.006,
+   "b": 342.646,
+   "k": "l_second_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 342.646,
+   "b": 345.906,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 345.906,
+   "b": 352.906,
+   "k": "n_registro_full",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page54",
+      "tab": "ARREGLO 50 · PASOS 2 Y 3",
+      "t": 346.326,
+      "hl": 72
+     }
+    ],
+    "k": "n_registro_full"
+   }
+  },
+  {
+   "a": 352.906,
+   "b": 356.936,
+   "k": "l_point_pipe",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 356.936,
+   "b": 364.15,
+   "k": "n_nata_close",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 7,
+    "name": "Empujarla con un palo",
+    "instead": "sacarla a un balde",
+    "page": "ARREGLO 50",
+    "k": "n_nata_close",
+    "t": 359.886
+   }
+  },
+  {
+   "a": 364.15,
+   "b": 367.606,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 367.606,
+   "b": 374.466,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "n_grease_pan",
+      "cap": "grasa"
+     },
+     {
+      "k": "n_paper_wad",
+      "t": 368.786,
+      "cap": "papel"
+     },
+     {
+      "k": "n_lint",
+      "t": 370.206,
+      "cap": "pelusa"
+     }
+    ]
+   }
+  },
+  {
+   "a": 374.466,
+   "b": 376.666,
+   "k": "l_stick_push",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 376.666,
+   "b": 382.046,
+   "k": "n_stick_crust",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_stick_crust",
+    "txt": "La empujas justo hacia el tapón",
+    "stamp": "ERROR",
+    "cx": 50,
+    "cy": 55,
+    "t": 378.046
+   }
+  },
+  {
+   "a": 382.046,
+   "b": 386.386,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 386.386,
+   "b": 391.546,
+   "k": "n_thick_crust",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 391.546,
+   "b": 394.786,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 394.786,
+   "b": 398.326,
+   "k": "l_can_scoop",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 398.326,
+   "b": 406.206,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "LA NATA, AFUERA",
+    "page": "ARREGLO 50",
+    "steps": [
+     {
+      "t": 398.806,
+      "txt": "Con una lata, a un balde",
+      "k": "n_bucket_nata"
+     },
+     {
+      "t": 402.206,
+      "txt": "A la bolsa gruesa, con nudo",
+      "k": "n_bag_knot"
+     }
+    ]
+   }
+  },
+  {
+   "a": 406.206,
+   "b": 410.706,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 410.706,
+   "b": 413.126,
+   "k": "n_street_drain",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 413.126,
+   "b": 419.646,
+   "k": "l_hose_walls",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 419.646,
+   "b": 423.406,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 423.406,
+   "b": 427.326,
+   "k": "n_greasy_sink",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 427.326,
+   "b": 437.326,
+   "k": "l_book_table",
+   "c": "QrCard",
+   "props": {
+    "k": "l_book_table",
+    "t": 429.266,
+    "txt": "apunta tu celular aquí"
+   }
+  },
+  {
+   "a": 437.326,
+   "b": 441.526,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 441.526,
+   "b": 446.266,
+   "k": "l_hose_ready",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 446.266,
+   "b": 454.026,
+   "k": "n_rag_hose",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 7,
+    "name": "Meter la manguera y esperar",
+    "instead": "trapo + pistola = pistón",
+    "page": "DE OFICIO",
+    "k": "n_rag_hose",
+    "t": 449.646
+   }
+  },
+  {
+   "a": 454.026,
+   "b": 458.866,
+   "k": "n_hose_backflow",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 458.866,
+   "b": 462.346,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 462.346,
+   "b": 475.098,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "LO QUE NECESITAS",
+    "items": [
+     {
+      "t": 462.766,
+      "name": "Boquilla de pistola",
+      "use": "chorro con fuerza",
+      "k": "n_pistol_nozzle"
+     },
+     {
+      "t": 472.238,
+      "name": "Un trapo viejo",
+      "use": "de algodón, mojado",
+      "k": "n_wet_rag"
+     }
+    ]
+   }
+  },
+  {
+   "a": 475.098,
+   "b": 480.118,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 480.118,
+   "b": 485.278,
+   "k": "l_thumb_hose",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 485.278,
+   "b": 491.038,
+   "k": "l_hose_push",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 491.038,
+   "b": 494.858,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 494.858,
+   "b": 506.058,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "EL TRUCO DEL TRAPO",
+    "page": "DE OFICIO",
+    "steps": [
+     {
+      "t": 494.96,
+      "txt": "Trapo mojado alrededor",
+      "k": "n_rag_wrap"
+     },
+     {
+      "t": 497.678,
+      "txt": "Apretado en la boca del caño",
+      "k": "n_rag_stuffed"
+     },
+     {
+      "t": 502.918,
+      "txt": "Llave a fondo + pistola",
+      "k": "n_faucet_open"
+     }
+    ]
+   }
+  },
+  {
+   "a": 506.058,
+   "b": 509.478,
+   "k": "l_piston",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 509.478,
+   "b": 514.278,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 514.278,
+   "b": 519.718,
+   "k": "l_hose_twist",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 519.718,
+   "b": 523.818,
+   "k": "n_pipe_curve",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 523.818,
+   "b": 527.178,
+   "k": "n_hose_coupler",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 527.178,
+   "b": 532.638,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 532.638,
+   "b": 535.698,
+   "k": "n_registro_drain",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 535.698,
+   "b": 539.738,
+   "k": "l_relief",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 539.738,
+   "b": 544.178,
+   "k": "l_rag_out",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 544.178,
+   "b": 547.598,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 547.598,
+   "b": 552.618,
+   "k": "n_registro_full",
+   "c": "Careful",
+   "props": {
+    "k": "n_registro_full",
+    "tag": "DIEZ MINUTOS",
+    "txt": "Si no se movió nada: no sigas. Número siete.",
+    "t": 550.218
+   }
+  },
+  {
+   "a": 552.618,
+   "b": 558.718,
+   "k": "n_channel_clean",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 7,
+    "name": "Dejarlo a medias",
+    "instead": "enjuagar, probar y cerrar",
+    "page": "ARREGLO 50 · 47",
+    "k": "n_channel_clean",
+    "t": 556.578
+   }
+  },
+  {
+   "a": 558.718,
+   "b": 563.418,
+   "k": "l_rinse_edges",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 563.418,
+   "b": 566.718,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 566.718,
+   "b": 569.198,
+   "k": "l_bucket_sink",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 569.198,
+   "b": 573.805,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 573.805,
+   "b": 577.565,
+   "k": "l_grate_bucket",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 577.565,
+   "b": 581.705,
+   "k": "n_grate_clean",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page51",
+      "tab": "ARREGLO 47 · REJILLA DE PATIO",
+      "t": 577.965,
+      "hl": 60
+     }
+    ],
+    "k": "n_grate_clean"
+   }
+  },
+  {
+   "a": 581.705,
+   "b": 586.405,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 586.405,
+   "b": 590.625,
+   "k": "l_piston",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 590.625,
+   "b": 594.145,
+   "k": "l_lid_close",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 594.145,
+   "b": 598.385,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 598.385,
+   "b": 605.865,
+   "k": "n_metal_lid",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page54",
+      "tab": "ARREGLO 50 · PASO 5",
+      "t": 598.665,
+      "hl": 92
+     }
+    ],
+    "k": "n_metal_lid"
+   }
+  },
+  {
+   "a": 605.865,
+   "b": 608.825,
+   "k": "n_groove_dirt",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 608.825,
+   "b": 613.505,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 613.505,
+   "b": 616.705,
+   "k": "l_hardware_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 616.705,
+   "b": 621.925,
+   "k": "l_measure_frame",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 621.925,
+   "b": 625.965,
+   "k": "n_rain_patio",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 625.965,
+   "b": 628.985,
+   "k": "l_wash_up",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 628.985,
+   "b": 632.745,
+   "k": "l_wash_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 632.745,
+   "b": 636.165,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 636.165,
+   "b": 644.93,
+   "k": "n_roots_pipe",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 7,
+    "name": "Insistir con raíces",
+    "instead": "plomero con cámara",
+    "page": "GUÍA · PÁG 4-5",
+    "k": "n_roots_pipe",
+    "t": 641.785
+   }
+  },
+  {
+   "a": 644.93,
+   "b": 648.285,
+   "k": "l_full_again",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 648.285,
+   "b": 651.725,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 651.725,
+   "b": 655.065,
+   "k": "n_tree_patio",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 655.065,
+   "b": 657.192,
+   "k": "n_roots_pipe",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 657.192,
+   "b": 662.012,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 662.012,
+   "b": 667.992,
+   "k": "l_rootlets",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 667.992,
+   "b": 674.352,
+   "k": "n_roots_pipe",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page204",
+      "tab": "GUÍA · PÁG 4 · TAPÓN DE RAÍCES",
+      "t": 668.192,
+      "hl": 80
+     }
+    ],
+    "k": "n_roots_pipe"
+   }
+  },
+  {
+   "a": 674.352,
+   "b": 677.612,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 677.612,
+   "b": 682.432,
+   "k": "n_tree_patio",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page205",
+      "tab": "GUÍA · PÁG 5 · EL MAPA",
+      "t": 677.71,
+      "hl": 76
+     }
+    ],
+    "k": "n_tree_patio"
+   }
+  },
+  {
+   "a": 682.432,
+   "b": 688.812,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 688.812,
+   "b": 692.912,
+   "k": "l_camera_snake",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 692.912,
+   "b": 696.052,
+   "k": "n_crushed_pipe",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 696.052,
+   "b": 702.265,
+   "k": "n_sunken_patio",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 702.265,
+   "b": 705.565,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 705.565,
+   "b": 710.825,
+   "k": "l_phone_call",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 710.825,
+   "b": 721.745,
+   "k": "n_invoice_book",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "«¿Pueden pasar una cámara?»",
+      "t": 716.065
+     },
+     {
+      "txt": "«¿Me muestran qué encontraron?»",
+      "t": 719.505
+     }
+    ],
+    "sig": "Guía · pág 18",
+    "k": "n_invoice_book"
+   }
+  },
+  {
+   "a": 721.745,
+   "b": 727.925,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 727.925,
+   "b": 734.245,
+   "k": "n_invoice",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page218",
+      "tab": "GUÍA · PÁG 18",
+      "t": 727.925,
+      "hl": 86
+     }
+    ],
+    "k": "n_invoice"
+   }
+  },
+  {
+   "a": 734.245,
+   "b": 735.945,
+   "k": "l_invoice_keep",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 735.945,
+   "b": 742.445,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 742.445,
+   "b": 750.145,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "NUNCA EN EL REGISTRO",
+    "items": [
+     {
+      "t": 742.445,
+      "name": "Varilla a golpes",
+      "use": "rompe el caño",
+      "k": "n_iron_rod"
+     },
+     {
+      "t": 748.445,
+      "name": "Sosa o ácido",
+      "use": "te espera abajo",
+      "k": "n_bottles_shelf"
+     }
+    ]
+   }
+  },
+  {
+   "a": 750.145,
+   "b": 753.865,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 753.865,
+   "b": 762.985,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "NUNCA EN EL REGISTRO",
+    "items": [
+     {
+      "t": 753.865,
+      "name": "Tapa abierta",
+      "use": "alguien se cae",
+      "k": "n_open_unattended"
+     },
+     {
+      "t": 759.225,
+      "name": "Meterte",
+      "use": "nunca",
+      "k": "n_registro_open_dark"
+     }
+    ]
+   }
+  },
+  {
+   "a": 762.985,
+   "b": 767.665,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 767.665,
+   "b": 769.755,
+   "k": "n_grease_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 769.755,
+   "b": 773.425,
+   "k": "l_wipe_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 773.425,
+   "b": 777.125,
+   "k": "l_oil_jar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 777.125,
+   "b": 783.518,
+   "k": "n_greasy_sink",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page22",
+      "tab": "ARREGLO 18 · LA GRASA",
+      "t": 777.865,
+      "hl": 40
+     }
+    ],
+    "k": "n_greasy_sink"
+   }
+  },
+  {
+   "a": 783.518,
+   "b": 786.858,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 786.858,
+   "b": 789.818,
+   "k": "l_grate_leaves",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 789.818,
+   "b": 792.398,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 792.398,
+   "b": 794.858,
+   "k": "l_hose_maint",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 794.858,
+   "b": 799.618,
+   "k": "n_calendar",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 799.618,
+   "b": 803.648,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 803.648,
+   "b": 822.658,
+   "k": "n_registro_flow",
+   "c": "Checklist",
+   "props": {
+    "head": "LOS 7 PASOS · 1-4",
+    "page": "ARREGLO 50",
+    "k": "n_registro_flow",
+    "items": [
+     {
+      "t": 803.75,
+      "txt": "Las 3 señales"
+     },
+     {
+      "t": 808.578,
+      "txt": "Tapa con barreta, ventilar"
+     },
+     {
+      "t": 812.458,
+      "txt": "Leer el agua: casa o calle"
+     },
+     {
+      "t": 819.158,
+      "txt": "La nata se saca"
+     }
+    ]
+   }
+  },
+  {
+   "a": 822.658,
+   "b": 826.6,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 826.6,
+   "b": 833.958,
+   "k": "n_channel_clean",
+   "c": "Checklist",
+   "props": {
+    "head": "LOS 7 PASOS · 5-7",
+    "page": "GUÍA · PÁG 4-5",
+    "k": "n_channel_clean",
+    "items": [
+     {
+      "t": 826.698,
+      "txt": "Manguera + trapo = pistón"
+     },
+     {
+      "t": 828.718,
+      "txt": "Enjuagar, probar, cerrar"
+     },
+     {
+      "t": 830.298,
+      "txt": "¿Vuelve? Raíces: llama"
+     }
+    ]
+   }
+  },
+  {
+   "a": 833.958,
+   "b": 837.36,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 837.36,
+   "b": 844.818,
+   "k": "n_invoice",
+   "c": "BigNumber",
+   "props": {
+    "num": 2,
+    "unit": "PESOS",
+    "txt": "por visita · cuatro mil si se tapa dos veces",
+    "k": "n_invoice",
+    "t": 840.738,
+    "prefix": "$",
+    "suffix": ",000"
+   }
+  },
+  {
+   "a": 844.818,
+   "b": 852.798,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "LO QUE NECESITAS TÚ",
+    "items": [
+     {
+      "t": 844.818,
+      "name": "Boquilla de pistola",
+      "use": "cuesta poco",
+      "k": "n_pistol_nozzle"
+     },
+     {
+      "t": 846.778,
+      "name": "Un trapo viejo",
+      "use": "ya lo tienes",
+      "k": "n_wet_rag"
+     },
+     {
+      "t": 847.938,
+      "name": "Guantes y balde",
+      "use": "duran años",
+      "k": "n_long_gloves"
+     },
+     {
+      "t": 849.858,
+      "name": "La manguera",
+      "use": "ya la tienes",
+      "k": "n_hose_coil"
+     }
+    ]
+   }
+  },
+  {
+   "a": 852.798,
+   "b": 857.278,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 857.278,
+   "b": 859.508,
+   "k": "n_paper_wad",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 859.508,
+   "b": 862.205,
+   "k": "l_proud_bucket",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 862.205,
+   "b": 865.145,
+   "k": "l_rootlets",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 865.145,
+   "b": 868.505,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 868.505,
+   "b": 872.905,
+   "k": "l_find_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 872.905,
+   "b": 876.33,
+   "k": "l_flooded_search",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 876.33,
+   "b": 880.545,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 880.545,
+   "b": 890.711,
+   "k": "n_bucket_patio",
+   "c": "Comment",
+   "props": {
+    "q": "¿Cuánto te cobraron por destapar el registro?",
+    "k": "n_bucket_patio",
+    "opts": [
+     {
+      "t": 885.785,
+      "txt": "CUÁNTO"
+     },
+     {
+      "t": 887.665,
+      "txt": "TU PAÍS"
+     }
+    ]
+   }
+  },
+  {
+   "a": 890.711,
+   "b": 894.341,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 894.341,
+   "b": 898.211,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 898.211,
+   "b": 902.631,
+   "k": "l_book_patio",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 902.631,
+   "b": 910.711,
+   "k": "l_book_table",
+   "c": "QrCard",
+   "props": {
+    "k": "l_book_table",
+    "t": 907.251,
+    "txt": "apunta tu celular aquí"
+   }
+  },
+  {
+   "a": 910.711,
+   "b": 914.111,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 914.111,
+   "b": 918.291,
+   "k": "l_showerhead_weak",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 918.291,
+   "b": 923.891,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 923.891,
+   "b": 927.971,
+   "k": "l_bye_patio",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 927.971,
+   "b": 931.891,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 111.34,
+   "b": 185.827,
+   "n": 1
+  },
+  {
+   "a": 185.827,
+   "b": 292.106,
+   "n": 2
+  },
+  {
+   "a": 292.106,
+   "b": 356.936,
+   "n": 3
+  },
+  {
+   "a": 356.936,
+   "b": 446.266,
+   "n": 4
+  },
+  {
+   "a": 446.266,
+   "b": 552.618,
+   "n": 5
+  },
+  {
+   "a": 552.618,
+   "b": 636.165,
+   "n": 6
+  },
+  {
+   "a": 636.165,
+   "b": 803.648,
+   "n": 7
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   111.34,
+   117.98
+  ],
+  [
+   185.827,
+   193.487
+  ],
+  [
+   292.106,
+   299.106
+  ],
+  [
+   356.936,
+   364.15
+  ],
+  [
+   446.266,
+   454.026
+  ],
+  [
+   552.618,
+   558.718
+  ],
+  [
+   636.165,
+   644.93
+  ],
+  [
+   271.326,
+   279.506
+  ],
+  [
+   427.326,
+   437.326
+  ],
+  [
+   880.545,
+   890.711
+  ],
+  [
+   902.631,
+   910.711
+  ]
+ ]
+}
