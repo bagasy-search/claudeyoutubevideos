@@ -185,6 +185,7 @@ def warp_depth(img, d, scale_near, scale_far, dx_near=0, dy_near=0, focal=(0.5, 
 
 def depth_dof(img, d, focus, strength):
     """desenfoque variable por profundidad con 4 niveles mezclados"""
+    if strength <= 0: return img                                      # escenas con gente: nítidas enteras (el desenfoque las deforma)
     coc = np.abs(d - focus) * strength
     levels = [0, 3, 7, 13]
     blurs = [img] + [blur(img, s) for s in levels[1:]]
