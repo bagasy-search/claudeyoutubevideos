@@ -52,6 +52,7 @@ export const IntoTrap: P<{ bed: string; x: number; y: number; label: Beat; drops
   const lu = sp(f, at(label.t), 14, 150);
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#0e0b08" }}>
+      <AbsoluteFill style={{ transform: `scale(${1 + 0.0005 * f})`, transformOrigin: `${x}px ${y}px` }}>{/* deriva lenta: nunca cuadro quieto (cplotapon 14-oct: 3 s congelado al final) */}
       <AbsoluteFill style={camStyle(cam)}>
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
           <Img src={img(bed)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
@@ -60,6 +61,7 @@ export const IntoTrap: P<{ bed: string; x: number; y: number; label: Beat; drops
             <Chip txt={label.txt} size={64} bg="#FFFDF4" rot={-3} />
           </div>
         </div>
+      </AbsoluteFill>
       </AbsoluteFill>
       {drops.map((p, i) => {
         const u = ez((f - at(p.t)) / 22);           // entra
