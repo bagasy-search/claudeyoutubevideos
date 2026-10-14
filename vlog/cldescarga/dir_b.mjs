@@ -34,10 +34,10 @@ export const SHOTS = [
   B(20, "Y de baba, la mugre viva", "b_slime", `Close view under a toilet rim: dark brown and pink slimy grime around the flush holes, wet.`),
   B(20, "Sin fuerza", "b_weaktrickle", `A few thin weak trickles of water running down the inside of a white toilet bowl from the rim.`),
   B(21, "Y el cepillo no llega", "b_brushbelow", `A toilet brush scrubbing a white bowl, the bristles not reaching under the rim, the rim holes still dark.`),
-  ST(21, "Usted frota la taza todas las semanas", "st_toiletclean", "cleaning toilet brush", `A person scrubbing a toilet bowl with a brush.`),
+  ST(21, "Usted frota la taza todas las semanas", "st_toiletclean", "bathroom cleaning toilet", `A person scrubbing a toilet bowl with a brush.`),
   B(21, "y los agujeros siguen igual de tapados", "b_rimstill", `Close view under the rim of a gleaming white toilet: the bowl spotless but the rim holes still crusted.`),
   B(22, "", "b_rosaclean", `${ROSA} standing proudly in a spotless hotel bathroom doorway with a cleaning caddy in her hand.`),
-  ST(22, "Y era verdad", "b_spotless", "clean toilet", `A spotless gleaming white toilet bowl in a hotel bathroom, a folded paper band across the seat.`),
+  ST(22, "Y era verdad", "b_spotless", "white bathroom", `A spotless gleaming white toilet bowl in a hotel bathroom, a folded paper band across the seat.`),
   CL(22, "Los agujeros, no", "c_mirrorshow", `He shows a small hand mirror held under the rim of a toilet, the reflection showing dirty flush holes, a slight smile.`),
   // ── LA HISTORIA DEL PISO VIEJO
   ST(23, "Había un piso del hotel", "st_oldhall", "old hotel corridor", `An old hotel corridor with worn carpet and numbered doors.`),
