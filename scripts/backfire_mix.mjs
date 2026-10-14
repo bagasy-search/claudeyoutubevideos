@@ -37,7 +37,8 @@ conAudio.forEach((b, i) => {
   labs.push(`[c${i}]`);
 });
 parts.push(`${labs.join('')}amix=inputs=${labs.length}:normalize=0:duration=first,atrim=0:${durVoz.toFixed(3)}[m]`);
-args.push('-filter_complex', parts.join(';'), '-map', '[m]', '-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '2', `public/${SLUG}_mix.wav`);
+const FS = `public/${SLUG}_mix_filter.txt`; fs.writeFileSync(FS, parts.join(';'));  // archivo: con 100+ clips la línea pasa el tope de Windows (ENAMETOOLONG)
+args.push('-filter_complex_script', FS, '-map', '[m]', '-c:a', 'pcm_s16le', '-ar', '48000', '-ac', '2', `public/${SLUG}_mix.wav`);
 run('ffmpeg', args);
 run('ffmpeg', ['-v', 'error', '-y', '-i', `public/${SLUG}_mix.wav`, '-c:a', 'aac', '-b:a', '192k', `public/${SLUG}.m4a`]);
 const durMix = +run('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', `public/${SLUG}_mix.wav`]).trim();
