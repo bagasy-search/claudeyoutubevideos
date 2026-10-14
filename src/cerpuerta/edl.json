@@ -1,0 +1,2403 @@
+{
+ "end": 801.143,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 9.34,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 9.34,
+   "b": 11.68,
+   "k": "n_cerradura_intacta_marco",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 11.68,
+   "b": 17.93,
+   "k": "n_marco_astillado",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_marco_astillado",
+    "words": [
+     [
+      "LA CERRADURA, PERFECTA",
+      11.68
+     ],
+     [
+      "LO QUE SE ROMPE",
+      15.8
+     ],
+     [
+      "ES EL MARCO",
+      16.54
+     ]
+    ]
+   }
+  },
+  {
+   "a": 17.93,
+   "b": 22.44,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 22.44,
+   "b": 26.7,
+   "k": "l_marco_roto_mira",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 26.7,
+   "b": 31.72,
+   "k": "n_tornillos_cortos_piso",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 31.72,
+   "b": 35.52,
+   "k": "n_tornillos_cortos_mano",
+   "c": "BigNumber",
+   "props": {
+    "num": 2,
+    "unit": "TORNILLITOS CORTOS",
+    "prefix": "",
+    "txt": "lo único que sostenía la puerta",
+    "k": "n_tornillos_cortos_mano",
+    "t": 31.72
+   }
+  },
+  {
+   "a": 35.52,
+   "b": 39.28,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 39.28,
+   "b": 41.94,
+   "k": "n_placa_colgando",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 41.94,
+   "b": 45.56,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 45.56,
+   "b": 50.18,
+   "k": "l_destornillador_mano",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 50.18,
+   "b": 64.07,
+   "k": "n_puerta_frente",
+   "c": "Checklist",
+   "props": {
+    "head": "LOS 7 ARREGLOS",
+    "k": "n_puerta_frente",
+    "cols": 1,
+    "items": [
+     {
+      "t": 50.18,
+      "txt": "1 · Tornillos largos"
+     },
+     {
+      "t": 54.58,
+      "txt": "2 · Las bisagras"
+     },
+     {
+      "t": 55.98,
+      "txt": "3 · El cerrojo"
+     },
+     {
+      "t": 57.92,
+      "txt": "4 · La cadena"
+     },
+     {
+      "t": 59.92,
+      "txt": "5 · La mirilla"
+     },
+     {
+      "t": 60.78,
+      "txt": "6 · La tranca"
+     },
+     {
+      "t": 62.02,
+      "txt": "7 · La puerta olvidada"
+     }
+    ]
+   }
+  },
+  {
+   "a": 64.07,
+   "b": 68.1,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 68.1,
+   "b": 70.44,
+   "k": "l_cerrajeria_mostrador",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 70.44,
+   "b": 75.55,
+   "k": "n_marco_podrido",
+   "c": "Careful",
+   "props": {
+    "k": "n_marco_podrido",
+    "txt": "Marco suelto o podrido: llama a un profesional",
+    "tag": "AVISO",
+    "t": 72.5
+   }
+  },
+  {
+   "a": 75.55,
+   "b": 79.56,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 79.56,
+   "b": 84.59,
+   "k": "l_saluda_mostrador",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 84.59,
+   "b": 87.1,
+   "k": "l_cambia_cerradura",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 87.1,
+   "b": 91.4,
+   "k": "l_repara_marco",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 91.4,
+   "b": 94.86,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 94.86,
+   "b": 100.75,
+   "k": "n_puerta_frente_cerca",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_puerta_frente_cerca",
+    "words": [
+     [
+      "CERRADURA",
+      96.76
+     ],
+     [
+      "PASADOR",
+      97.6
+     ],
+     [
+      "MARCO",
+      98.44
+     ],
+     [
+      "BISAGRAS",
+      99.08
+     ],
+     [
+      "PARED",
+      99.9
+     ]
+    ]
+   }
+  },
+  {
+   "a": 100.75,
+   "b": 105.61,
+   "k": "n_puerta_pateada_abierta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 105.61,
+   "b": 109.42,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 109.42,
+   "b": 114.51,
+   "k": "l_destornillador_mano",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 114.51,
+   "b": 118.38,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 118.38,
+   "b": 120.97,
+   "k": "l_tornillo_corto_regla",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 120.97,
+   "b": 123.7,
+   "k": "l_escribe_lista",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 123.7,
+   "b": 126.36,
+   "k": "n_placa_reforzada",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 126.36,
+   "b": 130.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 130.12,
+   "b": 133.04,
+   "k": "n_contrachapa_cerca",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 7,
+    "word": "ARREGLO",
+    "name": "LOS TORNILLOS DE LA PLACA",
+    "instead": "EL TRUCO QUE AGUANTA LA PATADA",
+    "k": "n_contrachapa_cerca",
+    "t": 130.66
+   }
+  },
+  {
+   "a": 133.04,
+   "b": 135.38,
+   "k": "l_abre_puerta_marco",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 135.38,
+   "b": 137.714,
+   "k": "n_marco_chapa",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 137.714,
+   "b": 140.667,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 140.667,
+   "b": 151.527,
+   "k": "n_marco_contrachapa",
+   "c": "Pins",
+   "props": {
+    "k": "n_marco_contrachapa",
+    "head": "LA CONTRACHAPA",
+    "pins": [
+     {
+      "x": 50,
+      "y": 44,
+      "t": 140.667,
+      "txt": "LA PLACA"
+     },
+     {
+      "x": 50,
+      "y": 54,
+      "t": 143.947,
+      "txt": "AQUÍ ENTRA EL PASADOR"
+     },
+     {
+      "x": 50,
+      "y": 30,
+      "t": 148.767,
+      "txt": "2 TORNILLOS"
+     }
+    ]
+   }
+  },
+  {
+   "a": 151.527,
+   "b": 155.227,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 155.227,
+   "b": 159.367,
+   "k": "l_saluda_mostrador",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 159.367,
+   "b": 163.627,
+   "k": "n_corte_marco_tornillo",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 163.627,
+   "b": 166.687,
+   "k": "n_marco_parte",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 166.687,
+   "b": 170.467,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 170.467,
+   "b": 173.747,
+   "k": "n_caja_tornillos_ferreteria",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 173.747,
+   "b": 181.267,
+   "k": "n_contrachapa_cerca",
+   "c": "DoDont",
+   "props": {
+    "k": "n_contrachapa_cerca",
+    "no": {
+     "k": "n_tornillos_cortos_mano",
+     "txt": "2 CM: SOLO EL MARCO",
+     "t": 175.027
+    },
+    "yes": {
+     "k": "n_tornillo_largo_mano",
+     "txt": "7-8 CM: HASTA LA PARED",
+     "t": 176.207
+    }
+   }
+  },
+  {
+   "a": 181.267,
+   "b": 184.707,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 184.707,
+   "b": 190.387,
+   "k": "n_marco_contrachapa",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_marco_contrachapa",
+    "words": [
+     [
+      "YA NO LA AGUANTA EL MARCO",
+      185.807
+     ],
+     [
+      "LA AGUANTA LA PARED",
+      188.587
+     ]
+    ]
+   }
+  },
+  {
+   "a": 190.387,
+   "b": 195.187,
+   "k": "n_tornillo_largo_mano",
+   "c": "CostTag",
+   "props": {
+    "price": "$5",
+    "sub": "2 TORNILLOS LARGOS",
+    "k": "n_tornillo_largo_mano"
+   }
+  },
+  {
+   "a": 195.187,
+   "b": 199.027,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 199.027,
+   "b": 200.968,
+   "k": "n_ferreteria_tornillos",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 200.968,
+   "b": 203.708,
+   "k": "l_atornilla_placa",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 203.708,
+   "b": 206.218,
+   "k": "l_escribe_lista",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 206.218,
+   "b": 209.708,
+   "k": "n_placa_reforzada",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 209.708,
+   "b": 213.228,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 213.228,
+   "b": 216.708,
+   "k": "l_tornillo_corto_regla",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 216.708,
+   "b": 220.088,
+   "k": "n_bisagra_tornillo_largo",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 220.088,
+   "b": 223.328,
+   "k": "n_marco_chapa",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 223.328,
+   "b": 226.668,
+   "k": "l_golpea_marco_chapa",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 226.668,
+   "b": 230.668,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 230.668,
+   "b": 233.148,
+   "k": "n_marco_chapa_hueco",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 233.148,
+   "b": 235.488,
+   "k": "n_relleno_cemento_marco",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 235.488,
+   "b": 238.328,
+   "k": "n_corte_marco_tornillo",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 238.328,
+   "b": 241.728,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 241.728,
+   "b": 245.308,
+   "k": "l_nudillos_marco_sonrie",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 245.308,
+   "b": 253.028,
+   "k": "n_bisagras_puerta",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 7,
+    "word": "ARREGLO",
+    "name": "LAS BISAGRAS",
+    "instead": "EL OTRO LADO DE LA PUERTA",
+    "k": "n_bisagras_puerta",
+    "t": 245.708
+   }
+  },
+  {
+   "a": 253.028,
+   "b": 256.868,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 256.868,
+   "b": 260.608,
+   "k": "n_bisagra_cerca",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 260.608,
+   "b": 264.308,
+   "k": "n_puerta_descuadrada",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 264.308,
+   "b": 267.768,
+   "k": "l_tornillo_bisagra",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 267.768,
+   "b": 271.108,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 271.108,
+   "b": 274.508,
+   "k": "n_placa_reforzada",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 274.508,
+   "b": 278.128,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 278.128,
+   "b": 281.068,
+   "k": "n_ferreteria_tornillos",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 281.068,
+   "b": 284.528,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 284.528,
+   "b": 287.728,
+   "k": "n_puerta_roza_piso",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 287.728,
+   "b": 292.448,
+   "k": "n_bisagras_afuera",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 292.448,
+   "b": 297.488,
+   "k": "n_marco_chapa",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 297.488,
+   "b": 300.808,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 300.808,
+   "b": 304.308,
+   "k": "n_marco_chapa_hueco",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 304.308,
+   "b": 307.628,
+   "k": "n_perno_entra_marco",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 307.628,
+   "b": 311.408,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 311.408,
+   "b": 313.308,
+   "k": "l_perno_seguridad",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 313.308,
+   "b": 316.748,
+   "k": "l_taladra_canto",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 316.748,
+   "b": 320.248,
+   "k": "l_nudillos_marco_sonrie",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 320.248,
+   "b": 325.648,
+   "k": "n_pasador_medio",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 7,
+    "word": "ARREGLO",
+    "name": "EL CERROJO QUE NO ENTRA ENTERO",
+    "instead": "LA PRUEBA DE LA TIZA",
+    "k": "n_pasador_medio",
+    "t": 320.648
+   }
+  },
+  {
+   "a": 325.648,
+   "b": 329.368,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 329.368,
+   "b": 333.868,
+   "k": "n_empuja_puerta_llave",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 333.868,
+   "b": 337.968,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 337.968,
+   "b": 343.508,
+   "k": "n_pasador_medio_cerca",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 343.508,
+   "b": 347.368,
+   "k": "n_llave_entra_suave",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 347.368,
+   "b": 351.608,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 351.608,
+   "b": 365.648,
+   "k": "n_canto_puerta",
+   "c": "StepCard",
+   "props": {
+    "head": "LA PRUEBA DE LA TIZA",
+    "bed": "n_canto_puerta",
+    "steps": [
+     {
+      "t": 354.668,
+      "txt": "Tiza en la punta del pasador",
+      "k": "l_tiza_pasador"
+     },
+     {
+      "t": 358.888,
+      "txt": "Cierras y das toda la vuelta",
+      "k": "n_llave_gira_cerca"
+     },
+     {
+      "t": 362.828,
+      "txt": "La marca dice cuánto entró",
+      "k": "l_marca_tiza_marco"
+     }
+    ]
+   }
+  },
+  {
+   "a": 365.648,
+   "b": 369.008,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 369.008,
+   "b": 372.508,
+   "k": "l_mueve_placa",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 372.508,
+   "b": 375.368,
+   "k": "n_pie_puerta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 375.368,
+   "b": 377.968,
+   "k": "n_limitador_barra",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 377.968,
+   "b": 381.528,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 381.528,
+   "b": 394.268,
+   "k": "n_canto_puerta",
+   "c": "DoDont",
+   "props": {
+    "k": "n_canto_puerta",
+    "yes": {
+     "k": "n_pasador_recto",
+     "txt": "PASADOR RECTO",
+     "t": 385.168
+    },
+    "no": {
+     "k": "n_pestillo_inclinado",
+     "txt": "PESTILLO INCLINADO",
+     "t": 387.048
+    }
+   }
+  },
+  {
+   "a": 394.268,
+   "b": 398.748,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 398.748,
+   "b": 402.369,
+   "k": "n_aceite_cerradura",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 402.369,
+   "b": 406.129,
+   "k": "n_puerta_descuadrada",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 406.129,
+   "b": 408.849,
+   "k": "l_grafito_cerradura",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 408.849,
+   "b": 412.669,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 412.669,
+   "b": 414.489,
+   "k": "n_llave_entra_suave",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 414.489,
+   "b": 418.029,
+   "k": "n_cadena_puerta",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 7,
+    "word": "ARREGLO",
+    "name": "LA CADENA",
+    "instead": "NO SIRVE PARA NADA",
+    "k": "n_cadena_puerta",
+    "t": 414.889
+   }
+  },
+  {
+   "a": 418.029,
+   "b": 422.009,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 422.009,
+   "b": 424.389,
+   "k": "n_cadena_tornillitos",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 424.389,
+   "b": 427.109,
+   "k": "n_puerta_cadena_abre",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 427.109,
+   "b": 429.689,
+   "k": "n_vista_mirilla_ancha",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 429.689,
+   "b": 434.309,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 434.309,
+   "b": 437.349,
+   "k": "n_cadena_arrancada",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 437.349,
+   "b": 441.609,
+   "k": "n_pie_puerta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 441.609,
+   "b": 445.389,
+   "k": "l_instala_limitador",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 445.389,
+   "b": 449.349,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 449.349,
+   "b": 453.969,
+   "k": "n_limitador_barra",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 453.969,
+   "b": 461.029,
+   "k": "n_puerta_cerrada_dentro",
+   "c": "Careful",
+   "props": {
+    "k": "n_puerta_cerrada_dentro",
+    "txt": "A un desconocido no le abres",
+    "tag": "REGLA DE ORO",
+    "t": 456.509
+   }
+  },
+  {
+   "a": 461.029,
+   "b": 464.569,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 464.569,
+   "b": 468.389,
+   "k": "l_pulgar_puerta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 468.389,
+   "b": 472.049,
+   "k": "n_aceite_cerradura",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 472.049,
+   "b": 476.249,
+   "k": "n_timbre_dedo",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 476.249,
+   "b": 480.749,
+   "k": "n_mirilla_cerca",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 7,
+    "word": "ARREGLO",
+    "name": "LA MIRILLA",
+    "instead": "VER SIN ABRIR",
+    "k": "n_mirilla_cerca",
+    "t": 476.649
+   }
+  },
+  {
+   "a": 480.749,
+   "b": 484.789,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 484.789,
+   "b": 489.809,
+   "k": "n_puerta_entreabierta_dia",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 489.809,
+   "b": 493.649,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 493.649,
+   "b": 499.389,
+   "k": "n_vista_mirilla_ancha",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 499.389,
+   "b": 502.689,
+   "k": "n_senora_mirilla",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 502.689,
+   "b": 506.349,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 506.349,
+   "b": 507.989,
+   "k": "n_cadena_tornillitos",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 507.989,
+   "b": 512.189,
+   "k": "n_mirilla_pantalla",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 512.189,
+   "b": 516.669,
+   "k": "n_pie_puerta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 516.669,
+   "b": 520.049,
+   "k": "n_luz_sensor_puerta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 520.049,
+   "b": 523.909,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 523.909,
+   "b": 525.289,
+   "k": "n_casa_pueblo_antigua",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 525.289,
+   "b": 535.489,
+   "k": "n_puerta_cerrada_dentro",
+   "c": "Checklist",
+   "props": {
+    "head": "CUANDO TOCAN",
+    "k": "n_puerta_cerrada_dentro",
+    "cols": 1,
+    "items": [
+     {
+      "t": 526.309,
+      "txt": "1 · Primero miras"
+     },
+     {
+      "t": 527.469,
+      "txt": "2 · Hablas sin abrir"
+     },
+     {
+      "t": 531.189,
+      "txt": "3 · ¿De qué empresa viene?"
+     }
+    ]
+   }
+  },
+  {
+   "a": 535.489,
+   "b": 538.489,
+   "k": "n_credencial_puerta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 538.489,
+   "b": 541.949,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 541.949,
+   "b": 544.889,
+   "k": "l_pulgar_puerta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 544.889,
+   "b": 548.749,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 548.749,
+   "b": 551.189,
+   "k": "n_timbre_dedo",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 551.189,
+   "b": 556.689,
+   "k": "n_tranca_madera",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 7,
+    "word": "ARREGLO",
+    "name": "LA TRANCA DE LAS ABUELAS",
+    "instead": "LO MÁS FUERTE DE LA CASA",
+    "k": "n_tranca_madera",
+    "t": 551.589
+   }
+  },
+  {
+   "a": 556.689,
+   "b": 561.689,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 561.689,
+   "b": 563.989,
+   "k": "n_puerta_ciega",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 563.989,
+   "b": 567.649,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 567.649,
+   "b": 570.009,
+   "k": "n_barra_puerta_piso",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 570.009,
+   "b": 572.609,
+   "k": "n_vista_mirilla_ancha",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 572.609,
+   "b": 575.329,
+   "k": "n_mirilla_pantalla",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 575.329,
+   "b": 579.689,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 579.689,
+   "b": 582.789,
+   "k": "l_pone_barra_picaporte",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 582.789,
+   "b": 586.229,
+   "k": "n_puerta_madera_humeda",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 586.229,
+   "b": 589.949,
+   "k": "n_patita_goma",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 589.949,
+   "b": 593.569,
+   "k": "l_atornilla_soporte_tranca",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 593.569,
+   "b": 597.769,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 597.769,
+   "b": 601.59,
+   "k": "n_llamada_telefono_fijo",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 601.59,
+   "b": 606.03,
+   "k": "n_valija_hotel",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 606.03,
+   "b": 610.39,
+   "k": "n_cuna_goma_puerta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 610.39,
+   "b": 614.51,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 614.51,
+   "b": 616.99,
+   "k": "n_patio_fondo_puerta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 616.99,
+   "b": 621.39,
+   "k": "l_cuna_goma_mano",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 621.39,
+   "b": 626.51,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 626.51,
+   "b": 636.85,
+   "k": "n_puerta_fondo",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 7,
+    "word": "ARREGLO",
+    "name": "LA PUERTA QUE TODOS OLVIDAN",
+    "instead": "LA DEL FONDO",
+    "k": "n_puerta_fondo",
+    "t": 626.91
+   }
+  },
+  {
+   "a": 636.85,
+   "b": 641.69,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 641.69,
+   "b": 647.67,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "POR DÓNDE ENTRA",
+    "items": [
+     {
+      "t": 643.51,
+      "name": "EL PATIO",
+      "use": "nadie la ve desde la calle",
+      "k": "n_puerta_patio"
+     },
+     {
+      "t": 644.41,
+      "name": "LA COCINA",
+      "use": "la cerradura vieja",
+      "k": "n_puerta_cocina"
+     },
+     {
+      "t": 645.55,
+      "name": "EL GARAJE",
+      "use": "da directo a la casa",
+      "k": "n_puerta_garaje"
+     }
+    ]
+   }
+  },
+  {
+   "a": 647.67,
+   "b": 651.09,
+   "k": "n_puerta_madera_humeda",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 651.09,
+   "b": 654.75,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 654.75,
+   "b": 658.21,
+   "k": "l_atornilla_puerta_fondo",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 658.21,
+   "b": 661.61,
+   "k": "n_barra_puerta_piso",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 661.61,
+   "b": 665.37,
+   "k": "n_patita_goma",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 665.37,
+   "b": 668.77,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 668.77,
+   "b": 673.69,
+   "k": "n_casa_pueblo_antigua",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 673.69,
+   "b": 676.01,
+   "k": "n_puerta_vidrio_llave",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 676.01,
+   "b": 679.61,
+   "k": "n_valija_hotel",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 679.61,
+   "b": 683.99,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 683.99,
+   "b": 687.57,
+   "k": "l_cuelga_llave_gancho",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 687.57,
+   "b": 690.99,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 690.99,
+   "b": 694.39,
+   "k": "n_candado_juguete",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 694.39,
+   "b": 697.91,
+   "k": "l_candado_macizo",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 697.91,
+   "b": 701.29,
+   "k": "n_cuna_cartera",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 701.29,
+   "b": 705.13,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 705.13,
+   "b": 709.67,
+   "k": "n_puerta_hueca_carton",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 709.67,
+   "b": 715.85,
+   "k": "n_puerta_frente",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_puerta_frente",
+    "words": [
+     [
+      "EL PRIMER GOLPE",
+      712.87
+     ],
+     [
+      "EL SEGUNDO",
+      713.99
+     ],
+     [
+      "Y EL TERCERO",
+      714.53
+     ]
+    ]
+   }
+  },
+  {
+   "a": 715.85,
+   "b": 718.79,
+   "k": "n_vecinos_ventana",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 718.79,
+   "b": 722.91,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 722.91,
+   "b": 728.13,
+   "k": "n_vidrio_roto_puerta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 728.13,
+   "b": 731.23,
+   "k": "n_puerta_madera_humeda",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 731.23,
+   "b": 733.87,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 733.87,
+   "b": 752.55,
+   "k": "n_tornillo_largo_mano",
+   "c": "Checklist",
+   "props": {
+    "head": "LOS 7 ARREGLOS",
+    "k": "n_tornillo_largo_mano",
+    "cols": 1,
+    "items": [
+     {
+      "t": 733.87,
+      "txt": "1 · Tornillos largos en la placa"
+     },
+     {
+      "t": 740.69,
+      "txt": "2 · Bisagras y pernos"
+     },
+     {
+      "t": 745.83,
+      "txt": "3 · Cerrojo: prueba de la tiza"
+     }
+    ]
+   }
+  },
+  {
+   "a": 752.55,
+   "b": 757.09,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 757.09,
+   "b": 769.536,
+   "k": "n_tranca_madera",
+   "c": "Checklist",
+   "props": {
+    "head": "LOS 7 ARREGLOS",
+    "k": "n_tranca_madera",
+    "cols": 1,
+    "items": [
+     {
+      "t": 757.29,
+      "txt": "4 · Limitador, no cadena"
+     },
+     {
+      "t": 757.47,
+      "txt": "5 · Mirilla a tu altura"
+     },
+     {
+      "t": 761.21,
+      "txt": "6 · Barra o tranca"
+     },
+     {
+      "t": 765.87,
+      "txt": "7 · La puerta del fondo"
+     }
+    ]
+   }
+  },
+  {
+   "a": 769.536,
+   "b": 771.716,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 771.716,
+   "b": 780.826,
+   "k": "n_contrachapa_cerca",
+   "c": "Comment",
+   "props": {
+    "q": "¿Cuánto medían los tornillos de tu placa?",
+    "k": "n_contrachapa_cerca",
+    "opts": [
+     {
+      "txt": "FUI A MIRAR",
+      "t": 772.456
+     },
+     {
+      "txt": "CORTITOS, COMO DIJISTE",
+      "t": 775.076
+     }
+    ]
+   }
+  },
+  {
+   "a": 780.826,
+   "b": 785.076,
+   "k": "l_escribe_lista",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 785.076,
+   "b": 788.816,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 788.816,
+   "b": 792.83,
+   "k": "l_saluda_mostrador",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 792.83,
+   "b": 796.143,
+   "k": "n_destornillador_tornillos",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 796.143,
+   "b": 801.143,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 130.12,
+   "b": 245.308,
+   "n": 1
+  },
+  {
+   "a": 245.308,
+   "b": 320.248,
+   "n": 2
+  },
+  {
+   "a": 320.248,
+   "b": 414.489,
+   "n": 3
+  },
+  {
+   "a": 414.489,
+   "b": 476.249,
+   "n": 4
+  },
+  {
+   "a": 476.249,
+   "b": 551.189,
+   "n": 5
+  },
+  {
+   "a": 551.189,
+   "b": 626.51,
+   "n": 6
+  },
+  {
+   "a": 626.51,
+   "b": 733.87,
+   "n": 7
+  }
+ ],
+ "of": 7,
+ "word": "ARREGLO",
+ "hide": [
+  [
+   130.12,
+   133.04
+  ],
+  [
+   245.308,
+   253.028
+  ],
+  [
+   320.248,
+   325.648
+  ],
+  [
+   414.489,
+   418.029
+  ],
+  [
+   476.249,
+   480.749
+  ],
+  [
+   551.189,
+   556.689
+  ],
+  [
+   626.51,
+   636.85
+  ],
+  [
+   771.716,
+   780.826
+  ]
+ ]
+}
