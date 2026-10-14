@@ -1,8 +1,10 @@
-# clcolchon — HANDOFF (14-oct 11:50 UTC)
-Estado: TODO listo salvo clips agnes (cupo Starter agotado hasta 2026-10-15 00:00 UTC; pool gratis con cola global llena).
-- Guion/voz/align/paras ✅ · directores dir_a/b/c ✅ plan_lint ✅ · fotos gpt-image low Batch ✅ (hojas _v3/clcolchon_img*.jpg) · stock ✅
-- Avatar RunPod ✅ public/avatar_clips/clcolchon/reel30.mp4 · gen_timeline (sin clips) compila sin faltantes
-Falta:
-1. Clips: AGNES_KEYS=$(grep -E '^AGNES_STARTER_KEY_[0-9]+=' C:/Users/bauti/Downloads/video2/.env | cut -d= -f2 | tr -d '\r' | paste -sd,) AGNES_KEYS_OTRA_PC= AG_CU=0 AG_SECS=6 AG_SHOTS=5 AG_PAR=3 node scripts/agnes_multishot.mjs _v3/clcolchon_i2v.json clcolchon public/img/clcolchon public/broll/clcolchon ; luego agnes_qc.mjs clcolchon --fix ; find public/broll/clcolchon -size -2k
-2. SLUG=clcolchon node vlog/claudio/gen_timeline.mjs --final · mk_entry · mix.py (apad 1.5 s, −14 LUFS) · farm STITCH_RAW=1 · encfin · esperar_run
-3. audit.py · meta.mjs · job.mjs · deliver_card --no-youtube
+# HANDOFF clcolchon — video 9 de Claudio el Conserje
+Estado: ENTREGADO 14-oct-2026. Tarjeta plan-own-1791284273106-8, job 974, sin YouTube (--no-youtube).
+- Final: release clcolchon/clcolchon.mp4 (15:42, 1920x1080 bt709 tv, keyframes 2 s). Copia local: D:/videosdeclaude/clcolchon.mp4
+- Auditor: cuadro 0 = avatar · minuto 1: 31 cortes, 0 silencios · 0 negros · 0 congelados. Plan: avatar 26,1 % · hueco máx 19,3 s · cl 47
+- Avatar 1 /run RunPod (US$0,25) · agnes 21/22 clips (KEY_3, 24 s; c_answercall quedó foto) · metraje real 26,8 % · mezcla I −14,0 / TP −1,8
+- 5 componentes nuevos (ClColchon.tsx): ClMattressLayers3D (3D), ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds · banco Clkitcolchon
+- Antes/después OpenCV: img/clcolchon/b_matt_after_ab.jpg (Lab b* neutralizado dentro del ROI del colchón)
+- CTA1 reordenado en audio (A|C|B|D) para que caiga en 1:41; backup public/clcolchon_preorden.wav
+- QC a ojo de stock: 5 clips fuera de tema apartados en _v3/st_rechazados (balde en el mar, ventiladores en sala, billetes, barro, colchón oscuro)
+- DUDA: la landing ?src=clcolchon ofrece "Su arreglo está gratis acá abajo"; no la toqué
