@@ -152,6 +152,11 @@ try {
   const { REAL } = await import('file:///' + path.resolve(process.cwd(), `_v3/${SLUG}_real.mjs`).split(path.sep).join('/'));
   for (const it of REAL || []) if (it.credit) CREDITOS[SLUG + '_' + it.id] = it;
 } catch { /* sin metraje real declarado */ }
+// fotos reales PD/CC: llevan `credit` en el pool de prompts (ITEMS)
+try {
+  const { ITEMS } = await import('file:///' + path.resolve(process.cwd(), `_v3/${SLUG}_prompts.mjs`).split(path.sep).join('/'));
+  for (const it of ITEMS || []) if (it.credit) CREDITOS[SLUG + '_' + it.id] = it;
+} catch { /* sin pool */ }
 const usados = new Set();
 const cues = [], overlays = [];
 let nCam = 0, nClip = 0, nAv = 0;
@@ -193,7 +198,11 @@ for (const b of plan.beats) {
     if (bedRel) avBeds.add(bedRel);
     nAv++;
   } else if (b.kind === 'imagen') {
-    el = `(d) => <Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} />`;
+    const credF = b.real ? CREDITOS[idDeAsset(b.asset)] : undefined;
+    // foto real PD/CC: crédito visible abajo a la derecha (licencia de la foto)
+    el = credF
+      ? `(d) => <><Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} /><div style={{position:'absolute',right:24,bottom:20,padding:'5px 12px',background:'rgba(0,0,0,0.6)',color:'#fff',fontFamily:'sans-serif',fontSize:22,zIndex:50}}>${credF.credit.replace(/[<>{}]/g,'')}</div></>`
+      : `(d) => <Foto src=${JSON.stringify(b.asset)} seed={${seed}} durF={d} />`;
   } else {
     usados.add(b.comp);
     const props = { ...b.props, t0: b.t };   // backfire: `t0` = segundo absoluto del componente (beats en palabras)

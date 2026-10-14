@@ -125,7 +125,7 @@ const secciones = cfg.SECCIONES.map((s, i, arr) => ({
 const poolPorSec = {};
 for (const it of ITEMS) (poolPorSec[it.sec] ||= []).push({
   id: SLUG + '_' + it.id, lugar: it.lugar, hayClip: clipsEnDisco.has(SLUG + '_' + it.id),
-  tokens: tokensDe(it.prompt),
+  tokens: tokensDe(it.prompt), realFoto: !!it.credit,
 });
 let nReal = 0;
 for (const it of REAL) {
@@ -259,7 +259,7 @@ for (const sec of secciones) {
       if (dur < 1.2) break;
       beats.push({
         t: +t.toFixed(3), dur: +dur.toFixed(3), sec: sec.sec, lugar: elegido.lugar,
-        kind: usaClip ? 'clip' : 'imagen', real: esReal || undefined,
+        kind: usaClip ? 'clip' : 'imagen', real: esReal || (!usaClip && elegido.realFoto) || undefined,
         asset: usaClip ? `broll/${SLUG}${esReal ? '_real' : ''}/${elegido.id}.mp4` : `img/${elegido.id}.jpg`,
         rate,
       });
