@@ -55,7 +55,7 @@ export const SHOTS = [
   B(3, "Todo el mundo piensa lo mismo", "b_neighbors", `Two middle-aged women talking in a bedroom doorway, one holding a bucket and a rag, looking at a bare mattress.`),
   B(3, "si está sucio", "b_laundry", `A home washing machine with its door open and a pile of laundry in a basket next to it.`),
   B(3, "más agua y más fuerza", "b_morewater", `A hand turning a tap fully open over a bucket, water gushing into it.`),
-  ST(3, "Así se lava la ropa", "st_laundry", "washing clothes", `Clothes being washed by hand in a basin of soapy water.`),
+  ST(3, "Así se lava la ropa", "st_laundry", "hand washing laundry", `Clothes being washed by hand in a basin of soapy water.`),
   CL(3, "Pero un colchón no es una remera", "c_tshirt", `He holds up a folded white T-shirt in one gloved hand and points at ${MATT} with the other in ${ROOM}.`),
   B(3, "No se escurre", "b_wring", `Two hands wringing out a wet towel over a bucket, water streaming out.`),
   B(3, "No entra en el lavarropas", "b_washer", `A queen-size mattress leaning against a small home washing machine that is far too small for it.`),

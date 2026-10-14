@@ -49,11 +49,11 @@ export const SHOTS = [
   S(70, "", "av", ""),
   B(70, "ese amarillo, ahí se queda", "b_stubborn", `Close view of an old faded yellow stain on a white mattress that is otherwise clean and dry.`),
   CL(71, "Lo que sí puede hacer", "c_protector", `He unfolds a white washable mattress protector over ${MATT} in ${ROOM}.`, { anim: "he spreads the mattress protector over the bed" }),
-  ST(71, "Un protector de colchón", "st_protector", "mattress cover", `A white mattress protector being fitted on a mattress.`),
+  ST(71, "Un protector de colchón", "st_protector", "bed mattress", `A white mattress protector being fitted on a mattress.`),
   C(72, "", "ClThreeRounds", {}),
   CL(72, "la mejor compra que va a hacer", "c_tuck", `He tucks the elastic corner of a white mattress protector under a mattress in ${ROOM}, smiling.`),
   B(73, "", "b_rosawash", `${ROSA} loading white mattress protectors and sheets into a big hotel washing machine in the laundry room.`),
-  ST(73, "Rosa los lavaba con las sábanas", "st_laundryroom", "laundry room", `Industrial washing machines in a laundry room.`),
+  ST(73, "Rosa los lavaba con las sábanas", "st_laundryroom", "washing machines", `Industrial washing machines in a laundry room.`),
   B(73, "casi no volvió a anotar", "b_cleannote", `Close view of a small black notebook page with only a few short lines, a pen resting on it.`),
   // ── PROBLEMAS
   C(74, "", "ClChapter", { n: 8, label: "LA VIDA REAL", title: "Los problemas", sub: "lo que me cuentan" }),
@@ -102,7 +102,7 @@ export const SHOTS = [
   ST(92, "O un colchón nuevo", "st_newmattress", "new mattress", `A new mattress in plastic wrap in a bedroom.`),
   B(92, "una tarde con el ventilador prendido", "b_afternoon", `An electric fan blowing at a bare white mattress in a sunny bedroom in the afternoon.`),
   B(93, "una habitación cerrada casi una semana", "b_door214b", `The closed door of hotel room 214 with a paper sign on the handle, ${HALL}.`),
-  ST(93, "durmiendo en el sillón", "st_couch2", "couch blanket", `A pillow and a blanket on a living room couch.`),
+  ST(93, "durmiendo en el sillón", "st_couch2", "sofa pillow", `A pillow and a blanket on a living room couch.`),
   CL(94, "un protector lavable", "c_protectorfold", `He holds up a folded white washable mattress protector in ${ROOM}.`),
   // ── RESUMEN
   S(95, "", "av", ""),
