@@ -70,7 +70,9 @@ function main() {
   } else console.log("  dialecto.......................... (el estilo no lo pide neutro)");
 
   for (const c of COMERCIAL) medir(c.re, c.què, c.duro ? fallas : avisos, c.nota);
-  medir(/(?<!\p{L})(?:Bauti|Bautista|Morán|Moran)(?!\p{L})/gu, "nombre personal del creador", fallas);
+  // el nombre va codificado: el repo es público y el filtro no puede ser el que lo publique
+  const NOMBRE = Buffer.from("QmF1dGl8QmF1dGlzdGF8TW9yw6FufE1vcmFu", "base64").toString("utf8");
+  medir(new RegExp(String.raw`(?<!\p{L})(?:${NOMBRE})(?!\p{L})`, "gu"), "nombre personal del creador", fallas);
 
   if (style?.cta?.regex) {
     const re = new RegExp(style.cta.regex, "m");

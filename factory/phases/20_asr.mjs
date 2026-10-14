@@ -1,4 +1,4 @@
-// 20_asr — Modal (default, medido más preciso) → respaldo OpenAI whisper-1 con chunk 600 FIJO en código
+// 20_asr — Groq whisper-large-v3 GRATIS (default 13-oct, medido más preciso) → respaldo Modal → respaldo OpenAI whisper-1 con chunk 600 FIJO en código
 // (el arg posicional mal pasado dio 5 s y Whisper inventó frases en tcbriquetas) → detector de bucles del
 // TTS → momentos → alineación global → secciones.
 import fs from "node:fs";
@@ -17,32 +17,41 @@ export default {
   inputs: ({ P }) => [P.wav, P.guion, P.frases],
   async run({ slug, spec, style, P, log }) {
     fs.mkdirSync(path.dirname(P.frases), { recursive: true });
-    let motor = "modal";
-    const tmp16k = path.join(ROOT, "public", `${slug}_16k.wav`);      // modal_whisper.py lo busca ahí
+    let motor = "groq";
     try {
-      fs.copyFileSync(P.wav16k, tmp16k);
-      await withLease("modal", slug, 1, () => run("python", ["-m", "modal", "run", "modal_whisper.py", "--slug", slug, "--lang", spec.idioma, "--model", "medium"],
-        { timeoutMs: 45 * 60_000, cwd: ROOT, env: { PYTHONUTF8: "1" }, expect: /✓\s*\d+\s*palabras/ }), { log });
-    } catch (e) {
-      log(`⚠️ Modal falló (${e.message.split("\n")[0].slice(0, 160)}) → respaldo OpenAI whisper-1`);
-      motor = "openai";
-      const oaOut = path.join(P.work, "plan", "asr_openai.json");
+      // default (13-oct-2026): Groq whisper-large-v3 GRATIS — arranque 49 ms vs 79 de Modal, 14 s, US$0.
+      // Sólo claves GROQ_FREE_KEY_* (la cuenta paga no se usa); si todas topean, cae a Modal.
+      await run("python", ["scripts/asr_groq.py", slug, spec.idioma, "--wav", P.wav16k, "--out", P.captions],
+        { timeoutMs: 20 * 60_000, cwd: ROOT, env: { PYTHONUTF8: "1" }, expect: /✓\s*\d+\s*palabras/ });
+    } catch (eg) {
+      log(`⚠️ Groq falló (${eg.message.split("\n")[0].slice(0, 160)}) → respaldo Modal`);
+      motor = "modal";
+      const tmp16k = path.join(ROOT, "public", `${slug}_16k.wav`);      // modal_whisper.py lo busca ahí
       try {
-        await run("node", ["scripts/asr_openai.mjs", P.wav16k, oaOut, "600", spec.idioma, slug], { timeoutMs: 90 * 60_000, cwd: ROOT });
-        // asr_openai escribe {w,t,e} en segundos y NO toca public/captions_<slug>.json (medido 30-sep, hlgenco:
-        // el respaldo nunca se había ejercido y moría con ENOENT). Se convierte al formato de modal_whisper.
-        const oa = JSON.parse(fs.readFileSync(oaOut, "utf8"));
-        const caps = (oa.words || []).map((x) => ({ text: " " + x.w, startMs: Math.round(x.t * 1000), endMs: Math.round(x.e * 1000), timestampMs: Math.round(x.e * 1000), confidence: 1 }));
-        fs.writeFileSync(P.captions, JSON.stringify(caps));
-        log(`respaldo OpenAI: ${caps.length} palabras → ${P.captions}`);
-      } catch (e2) {
-        // 3er respaldo (04-oct-2026: nube sin Modal + cuenta OpenAI desactivada): faster-whisper en CPU.
-        log(`⚠️ OpenAI falló (${e2.message.split("\n")[0].slice(0, 120)}) → respaldo LOCAL faster-whisper`);
-        motor = "local";
-        await run("python", [path.join(ROOT, "factory", "py", "asr_local.py"), P.wav16k, P.captions, spec.idioma, env("FACTORY_ASR_LOCAL_MODEL") || "small"],
-          { timeoutMs: 90 * 60_000, env: { PYTHONUTF8: "1" }, expect: /✓\s*\d+\s*palabras/ });
-      }
-    } finally { try { fs.unlinkSync(tmp16k); } catch { /* C: se libera */ } }
+        fs.copyFileSync(P.wav16k, tmp16k);
+        await withLease("modal", slug, 1, () => run("python", ["-m", "modal", "run", "modal_whisper.py", "--slug", slug, "--lang", spec.idioma, "--model", "medium"],
+          { timeoutMs: 45 * 60_000, cwd: ROOT, env: { PYTHONUTF8: "1" }, expect: /✓\s*\d+\s*palabras/ }), { log });
+      } catch (e) {
+        log(`⚠️ Modal falló (${e.message.split("\n")[0].slice(0, 160)}) → respaldo OpenAI whisper-1`);
+        motor = "openai";
+        const oaOut = path.join(P.work, "plan", "asr_openai.json");
+        try {
+          await run("node", ["scripts/asr_openai.mjs", P.wav16k, oaOut, "600", spec.idioma, slug], { timeoutMs: 90 * 60_000, cwd: ROOT });
+          // asr_openai escribe {w,t,e} en segundos y NO toca public/captions_<slug>.json (medido 30-sep, hlgenco:
+          // el respaldo nunca se había ejercido y moría con ENOENT). Se convierte al formato de modal_whisper.
+          const oa = JSON.parse(fs.readFileSync(oaOut, "utf8"));
+          const caps = (oa.words || []).map((x) => ({ text: " " + x.w, startMs: Math.round(x.t * 1000), endMs: Math.round(x.e * 1000), timestampMs: Math.round(x.e * 1000), confidence: 1 }));
+          fs.writeFileSync(P.captions, JSON.stringify(caps));
+          log(`respaldo OpenAI: ${caps.length} palabras → ${P.captions}`);
+        } catch (e2) {
+          // 3er respaldo (04-oct-2026: nube sin Modal + cuenta OpenAI desactivada): faster-whisper en CPU.
+          log(`⚠️ OpenAI falló (${e2.message.split("\n")[0].slice(0, 120)}) → respaldo LOCAL faster-whisper`);
+          motor = "local";
+          await run("python", [path.join(ROOT, "factory", "py", "asr_local.py"), P.wav16k, P.captions, spec.idioma, env("FACTORY_ASR_LOCAL_MODEL") || "small"],
+            { timeoutMs: 90 * 60_000, env: { PYTHONUTF8: "1" }, expect: /✓\s*\d+\s*palabras/ });
+        }
+      } finally { try { fs.unlinkSync(tmp16k); } catch { /* C: se libera */ } }
+    }
 
     const caps = JSON.parse(fs.readFileSync(P.captions, "utf8"));
     const words = Array.isArray(caps) ? caps : caps.words || [];
