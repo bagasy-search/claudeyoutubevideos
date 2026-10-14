@@ -1,0 +1,103 @@
+[HOOK|secreto] Venga, acérquese. Le voy a contar un secreto de su colchón. La mancha amarilla sale. El problema nunca fue la mancha. El problema es lo que hace usted cuando la limpia.
+[HOOK|promesa] Hoy le doy la mezcla de tres cosas que saca el amarillo: una taza de agua oxigenada, tres cucharadas de bicarbonato y una gota de detergente. Le muestro cómo ponerla sin mojar el colchón. Y cómo dejarlo seco en un par de horas. Mire esta mancha. Amarilla, de años. Y mírela ahora. Seca, y sin el amarillo.
+[HOOK|falla] Usted vio la mancha cuando sacó las sábanas. Agarró un balde, un trapo, el jabón. Frotó fuerte, con mucha agua, para que salga bien. Y el colchón quedó empapado. Pasó la noche en el sillón. Y a los dos días, el colchón todavía estaba húmedo, y olía raro.
+[HOOK|culpa] No fue culpa suya. Todo el mundo piensa lo mismo: si está sucio, más agua y más fuerza. Así se lava la ropa. Pero un colchón no es una remera. No se escurre. No entra en el lavarropas. Y no se seca colgado.
+[HOOK|culpable] El error es empaparlo. Un colchón mojado tarda días en secarse, y empieza a oler. Cuanto más agua le echa, más adentro manda la mancha.
+[HOOK|loops] Y hay tres cosas que tiene que saber antes del final. Por qué el rociador con esta mezcla nunca se cierra apretado, y nunca se guarda. Qué es el polvito blanco que queda al final. Y qué hacer cuando la mancha no sale ni a la tercera vuelta, con la mejor compra que va a hacer para ese cuarto.
+[INTRO|claudio] Usted ya me conoce. Soy Claudio. Treinta años trabajé en el mantenimiento de un hotel de ciento ochenta habitaciones. Ciento ochenta camas. Y cuando un colchón tenía una mancha, me llamaban a mí.
+[CTA1|libro] Rápido, mientras lo tengo aquí: después de treinta años me prometí escribir todo lo que aprendí, antes de que se perdiera. Y lo escribí. Cada arreglo con su medida y su tiempo de espera. Un libro: El Frasco Marrón de Claudio. Noventa y cuatro arreglos de la casa, para imprimir. Este arreglo está en la página diecisiete, con las cantidades exactas. El link está abajo. Volvemos al colchón.
+[INTRO|gerente] El gerente de la libreta tenía una anotación que odiaba: "colchón manchado". Porque un colchón manchado era una habitación que no se podía dar. Y una habitación cerrada era plata que no entraba.
+[INTRO|rosa] Rosa, la de la lavandería, me avisaba antes que nadie. Ella sacaba las sábanas, veía el amarillo, y me buscaba por el pasillo: "Claudio, la doscientos catorce. Otra vez".
+[INTRO|anterior] En el video de las mezclas le dije que había una sola mezcla que sí está bien, la que todo el mundo cree que es peligrosa. Agua oxigenada con bicarbonato. Hoy la usamos. Y hoy le muestro la regla que va con ella.
+[INTRO|hoy] Y como le prometí en el video del inodoro, hoy salimos del baño. Vamos al dormitorio.
+[QUE|titulo] Primero, qué es esa mancha. Porque si sabe qué es, sabe por qué sale.
+[QUE|sudor] Las manchas amarillas de un colchón son, casi siempre, sudor y grasa del cuerpo. Se metieron de a poco, noche tras noche, durante años. Nadie las ve hasta que un día saca las sábanas y ahí están.
+[QUE|accidente] Y la otra, la que da más vergüenza y no tiene por qué: un accidente. De un chico, o de una mascota. Ésa trae el olor a orín.
+[QUE|salen] Las dos salen. Las dos. Con la misma mezcla. Pero las dos tienen la misma trampa: si las empapa, el colchón se queda con el agua adentro.
+[QUE|adivinar] Y no hace falta adivinar cuál de las dos es la suya. El arreglo es el mismo.
+[QUE|esponja] Piense en el colchón como una esponja gigante. Lo de arriba se seca. Lo de adentro, no. Y lo de adentro es donde empieza el olor.
+[QUE|regla] Por eso la regla de hoy son tres palabras. Roce poco. Deje secar. Aspire. Así empieza la página diecisiete de mi libro.
+[HISTORIA|nuevo] Le cuento cómo lo aprendí, y no fue lindo. En el hotel entró un muchacho nuevo, con muchas ganas. Le tocó un colchón con una mancha amarilla en la doscientos catorce.
+[HISTORIA|balde] Agarró un balde de agua con jabón y un cepillo de piso. Y le dio. Fuerte. Mucha agua. La mancha se aclaró, y él estaba contento.
+[HISTORIA|dias] Al otro día el colchón seguía mojado. Al tercer día seguía húmedo por adentro. Y la habitación empezó a oler a encierro. El gerente de la libreta la tuvo cerrada casi una semana.
+[HISTORIA|ramiro] Don Ramiro, el de la cocina, pasó por el pasillo, olió, y me dijo: "Claudio, eso no es limpiar. Eso es regar". Tenía razón. Al muchacho le había faltado una sola cosa: saber cuánta agua no hay que echarle.
+[HISTORIA|arreglo] Cuando por fin se secó, a la semana, la mancha seguía ahí, más clara pero ahí. Lo hice yo como le voy a mostrar: rociador, húmedo, ventilador. A las tres horas estaba seco, y la doscientos catorce volvió a la lista.
+[HISTORIA|remate] Desde ese día, en el hotel los colchones se limpiaban con un rociador, nunca con un balde. Y es lo que le muestro hoy.
+[NECESITA|titulo] Lo que necesita. Son seis cosas, y casi todas ya las tiene.
+[NECESITA|lista] Agua oxigenada al tres por ciento, la del frasco marrón de la farmacia. Bicarbonato. Detergente de platos. Un rociador vacío. Una aspiradora. Y un ventilador.
+[NECESITA|frasco] Si vio los otros videos, el frasco marrón ya lo tiene en el mueble del baño. Es el mismo. El común, el del tres por ciento.
+[NECESITA|nada] Nada más. Ni un balde. Ni un cepillo de piso. Ni una máquina.
+[PASO1|titulo] Paso uno. Saque la ropa de cama y aspire el colchón.
+[PASO1|sabanas] Saque todo. Sábanas, cubrecama, protector si tiene. Que el colchón quede desnudo.
+[PASO1|aspirar] Y pásele la aspiradora por toda la cara de arriba, despacio, y por las costuras. Primero se saca lo seco. Después se trata la mancha.
+[PASO1|mirar] Y con el colchón desnudo, mire bien, con buena luz. A veces hay más de una mancha, y conviene saberlo antes de armar la mezcla.
+[PASO2|titulo] Paso dos. La mezcla.
+[PASO2|medidas] En el rociador vacío: una taza de agua oxigenada, doscientos cuarenta mililitros. Tres cucharadas de bicarbonato. Y una gota de detergente. Una sola gota.
+[PASO2|medir] Mida. No a ojo. Una taza es una taza, y tres cucharadas son tres. Así está escrito en la página diecisiete.
+[PASO2|gota] Una gota, no un chorro. Si le pone mucho detergente, después tiene que sacar el jabón del colchón. Y para sacar el jabón, necesita agua. Y volvemos al balde.
+[PASO2|mover] Muévalo un poco, suave, para que el bicarbonato se mezcle.
+[PASO2|tapa] Y acá está el primer secreto de hoy. No cierre la tapa apretada. Y no la guarde.
+[PASO2|gas] El agua oxigenada mezclada con bicarbonato larga gas, despacio. Si la guarda en una botella cerrada, ese gas no tiene adónde ir. Y la botella puede saltar.
+[PASO2|cada] Por eso la mezcla se prepara cada vez. La usa, y lo que sobra, se tira. Nunca queda en el estante para la próxima.
+[PASO2|hotel] En el hotel, Rosa tenía prohibido dejar un rociador de ésos armado en el carrito. Se armaba en la habitación, se usaba, se tiraba lo que quedaba. Siempre.
+[PASO3|titulo] Paso tres. Pruebe primero en una esquina.
+[PASO3|esquina] Rocíe un poquito en una esquina del colchón, en un lugar que no se ve. Y espere diez minutos.
+[PASO3|mirar] Mire cómo queda la tela. Si queda bien, siga. Cada colchón es distinto, y la esquina se lo dice antes que la mancha.
+[PASO3|hotel] En el hotel cada colchón era de un año distinto, de una tela distinta. Por eso la esquina primero, siempre.
+[PASO3|apuro] Ya sé. Diez minutos parecen mucho cuando tiene la mancha enfrente. Pero son diez minutos contra un colchón entero.
+[PASO4|titulo] Paso cuatro. Rocíe, y roce apenas.
+[PASO4|rociar] Rocíe la mancha. Que quede húmeda, no empapada. Ésa es toda la diferencia entre el muchacho del balde y yo.
+[PASO4|como] ¿Cómo sabe la diferencia? Húmeda es cuando la tela cambia de color y brilla un poco. Empapada es cuando apoya la mano y sale agua. Si apoya la mano y sale agua, se pasó.
+[PASO4|roce] Después roce la mancha apenas, con la mano o con un trapo limpio. No frote como si fuera un piso. Roce.
+[PASO4|trapo] Si roza con un trapo, que sea blanco y limpio. Así ve si el amarillo está saliendo.
+[PASO4|vieja] Las manchas viejas no salen a la fuerza. Salen de a poco.
+[PASO5|titulo] Paso cinco. Déjela secar con el ventilador.
+[PASO5|ventilador] Ponga el ventilador apuntando a la mancha. Directo. Y deje la ventana abierta si puede.
+[PASO5|tiempo] Espere hasta que esté totalmente seco. Entre una y tres horas, según cuánto roció y cuánto aire tiene el cuarto.
+[PASO5|nada] El ventilador hace el trabajo que el muchacho del balde quería hacer con fuerza. Usted no hace nada. Espera.
+[PASO5|tocar] No ponga las sábanas hasta que esté seco del todo. Toque con la palma. Si siente frío, todavía está húmedo.
+[PASO5|polvo] Y acá está el segundo secreto. Cuando se seque, va a quedar un polvito blanco sobre la mancha. Es el bicarbonato. No es que salió mal. Es la señal de que ya terminó.
+[PASO5|aspire] Aspírelo. Con la misma aspiradora del principio. Y ahí mire la mancha.
+[PASO5|repetir] En las manchas muy viejas, repita. Otra mezcla nueva, otra vez húmeda, no empapada, otra vez el ventilador, otra vez la aspiradora.
+[PASO5|libro] Así lo tengo escrito en la página diecisiete. Aspirar, mezclar, probar, rozar, secar, aspirar.
+[CTA2|libro] Y si quiere tenerlo a mano el día que aparezca la mancha, con las medidas exactas, está en el libro. El Frasco Marrón de Claudio. Este arreglo, la página diecisiete, y noventa y tres arreglos más de la casa, por menos de lo que cuesta una sola limpieza de colchón hecha por alguien que viene a su casa. El link está abajo.
+[TRAPO|titulo] Ahora, si no tiene rociador.
+[TRAPO|como] Moje un trapo con la mezcla. Escúrralo un poco. Apóyelo sobre la mancha, sin refregar.
+[TRAPO|secar] Y después seque con otro trapo limpio, apretando. El segundo trapo se lleva la humedad que sobra.
+[TRAPO|igual] Y lo demás, igual: el ventilador, el polvito, la aspiradora.
+[TERCERA|titulo] Ahora, el tercer secreto. Si la mancha no sale ni a la tercera vuelta.
+[TERCERA|capas] Si después de tres vueltas la mancha sigue, se metió en las capas de adentro del colchón. Ahí ya no la alcanza nada de lo que usted le ponga desde arriba.
+[TERCERA|cuando] ¿Cuándo sabe que llegó ahí? Hizo la mezcla tres veces, húmeda, con el ventilador, aspiró, y el amarillo sigue igual. Ahí paro. Y le digo que pare usted también, porque una cuarta vuelta ya es mojar por mojar.
+[TERCERA|honesto] Y se lo digo de frente: ese amarillo, ahí se queda. No le voy a vender un milagro.
+[TERCERA|protector] Lo que sí puede hacer es que no empeore. Un protector de colchón, por lo menos, evita que la mancha crezca y que se sume otra encima.
+[TERCERA|compra] Y para que no vuelva a pasar, un protector de colchón lavable es la mejor compra que va a hacer para ese cuarto. Mejor que cualquier producto.
+[TERCERA|rosa] En el hotel, cuando por fin pusimos protectores lavables en todas las camas, Rosa los lavaba con las sábanas. Y el gerente de la libreta casi no volvió a anotar "colchón manchado".
+[PROBLEMAS|titulo] Ahora, lo que pasa en la vida real. Los problemas que me cuentan.
+[PROBLEMAS|olor] "Claudio, la mancha se fue, pero el colchón huele." Entonces quedó húmedo por adentro. Más ventilador, más aire, la ventana abierta, y no ponga las sábanas hasta que esté seco del todo.
+[PROBLEMAS|aureola] "Me quedó una aureola alrededor." Se mojó de más. La próxima vez, menos rociado y más ventilador. Y repita sobre la aureola, húmeda, no empapada.
+[PROBLEMAS|polvo] "Quedó blanco." Es el bicarbonato seco. Aspírelo. Si no sale con una pasada, pase otra vez.
+[PROBLEMAS|sobro] "Me sobró mezcla en el rociador." Tírela. No la guarde, y menos con la tapa cerrada. La próxima vez, mezcla nueva.
+[PROBLEMAS|ventilador] "No tengo ventilador." Abra la ventana, deje correr el aire, y tenga paciencia, que va a tardar más. Lo que no puede hacer es poner las sábanas encima con el colchón húmedo.
+[PROBLEMAS|chico] "Es de un chico, y pasa seguido." Ahí el protector lavable no es una sugerencia. Es lo primero. Y la mezcla, cada vez que pase, apenas lo vea.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|orin] "¿Y sirve para el olor a orín?" Es el mismo arreglo. La página se llama así: las manchas amarillas y el olor a orín del colchón. Si la mancha se va y el colchón queda bien seco, el olor se va con ella.
+[QA|lado] "¿Lo puedo dar vuelta y listo?" Puede, pero la mancha sigue ahí, abajo. Y si es de orín, el olor también. Primero se limpia, después se da vuelta.
+[QA|cuanto] "¿Cuánto tarda en secarse?" Entre una y tres horas, si quedó húmedo y no empapado. Si quedó empapado, días. Por eso la regla.
+[QA|seguido] "¿Cada cuánto lo puedo hacer?" Cada vez que aparezca una mancha, apenas la vea. Y en las viejas, las vueltas que hagan falta, hasta tres.
+[ERRORES|titulo] Los errores que vi en el hotel con los colchones.
+[ERRORES|balde] Uno. El balde. Empaparlo para que salga mejor. Ya vio lo que pasó en la doscientos catorce.
+[ERRORES|guardar] Dos. Guardar la mezcla armada en una botella cerrada. Larga gas despacio, y la botella puede saltar. Se arma cada vez.
+[ERRORES|frotar] Tres. Frotar fuerte. La mancha vieja no sale a la fuerza. Roce apenas.
+[ERRORES|sabanas] Cuatro. Poner las sábanas antes de que esté seco. Encierra la humedad, y la humedad es el olor.
+[ERRORES|esquina] Y cinco. Saltearse la esquina. Diez minutos de espera que le cuidan todo el colchón.
+[CUENTAS|plata] Ahora, la cuenta. En esta casa no hay villanos, hay aritmética. De un lado, una limpieza de colchón hecha por alguien que viene a su casa. O un colchón nuevo, que es lo que mucha gente termina comprando. Del otro, una taza de agua oxigenada, tres cucharadas de bicarbonato, una gota de detergente, y una tarde con el ventilador prendido.
+[CUENTAS|semana] Y piense en la otra cuenta, la del muchacho del balde: una habitación cerrada casi una semana. En su casa, es una semana durmiendo en el sillón.
+[CUENTAS|protector] Y para que no vuelva, un protector lavable. Una vez. Eso también está en la página diecisiete.
+[RECAP|todo] Así que, todo en treinta segundos. Saque la ropa de cama y aspire. En el rociador, una taza de agua oxigenada, tres cucharadas de bicarbonato, una gota de detergente, con la tapa sin apretar. Pruebe en una esquina, diez minutos. Rocíe la mancha, húmeda, no empapada, y roce apenas. Ventilador apuntando, de una a tres horas, hasta que esté seco. Aspire el polvito. En las manchas viejas, repita. Y lo que sobra, se tira.
+[CTA3|libro] Todo esto, con las medidas, está en la página diecisiete de El Frasco Marrón de Claudio, junto con noventa y tres arreglos más de la casa. El link está abajo.
+[CLOSE|tarea] Y no tiene que hacer todo hoy. Haga una sola cosa: saque las sábanas y mire el colchón. Con buena luz. Nada más.
+[CLOSE|vieja] Y si la mancha es vieja, no se desanime en la primera vuelta. Las viejas salen de a poco.
+[CLOSE|pregunta] Y cuénteme en los comentarios: la mancha de su colchón, ¿es amarilla de años, o es de un accidente? Así le digo por dónde empezar. Leo todos.
+[CLOSE|anterior] Si todavía no vio el video del inodoro que no descarga bien, véalo. Es el del frasco marrón por el tubo de rebalse, y la prueba de diez segundos.
+[NEXT|mampara] Y en el próximo video, volvemos al baño. La mampara. Ese blanco que no sale con nada, y por qué no es mugre.
+[CLOSE|chau] Nos vemos ahí. Y la próxima vez que alguien en su casa agarre un balde para limpiar el colchón, usted ya sabe qué decirle.

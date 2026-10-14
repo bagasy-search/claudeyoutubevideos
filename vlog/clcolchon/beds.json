@@ -1,0 +1,302 @@
+[
+ {
+  "name": "bd_mattress0",
+  "q": "mattress",
+  "scene": "Ordinary real footage: mattress, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bedsheets1",
+  "q": "bed sheets",
+  "scene": "Ordinary real footage: bed sheets, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_makingbed2",
+  "q": "making bed",
+  "scene": "Ordinary real footage: making bed, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelroombed3",
+  "q": "hotel room bed",
+  "scene": "Ordinary real footage: hotel room bed, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bedroom4",
+  "q": "bedroom",
+  "scene": "Ordinary real footage: bedroom, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bedroomwindow5",
+  "q": "bedroom window",
+  "scene": "Ordinary real footage: bedroom window, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_electricfan6",
+  "q": "electric fan",
+  "scene": "Ordinary real footage: electric fan, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_fanspinning7",
+  "q": "fan spinning",
+  "scene": "Ordinary real footage: fan spinning, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_vacuumcleaner8",
+  "q": "vacuum cleaner",
+  "scene": "Ordinary real footage: vacuum cleaner, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_vacuuming9",
+  "q": "vacuuming",
+  "scene": "Ordinary real footage: vacuuming, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_spraybottle10",
+  "q": "spray bottle",
+  "scene": "Ordinary real footage: spray bottle, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_spraying11",
+  "q": "spraying",
+  "scene": "Ordinary real footage: spraying, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bakingsoda12",
+  "q": "baking soda",
+  "scene": "Ordinary real footage: baking soda, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_measuringspoon13",
+  "q": "measuring spoon",
+  "scene": "Ordinary real footage: measuring spoon, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_dishsoap14",
+  "q": "dish soap",
+  "scene": "Ordinary real footage: dish soap, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_pouringliquid15",
+  "q": "pouring liquid",
+  "scene": "Ordinary real footage: pouring liquid, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelcorridor16",
+  "q": "hotel corridor",
+  "scene": "Ordinary real footage: hotel corridor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_housekeepingcart17",
+  "q": "housekeeping cart",
+  "scene": "Ordinary real footage: housekeeping cart, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_housekeeper18",
+  "q": "housekeeper",
+  "scene": "Ordinary real footage: housekeeper, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_laundryroom19",
+  "q": "laundry room",
+  "scene": "Ordinary real footage: laundry room, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_foldingsheets20",
+  "q": "folding sheets",
+  "scene": "Ordinary real footage: folding sheets, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_whitetowels21",
+  "q": "white towels",
+  "scene": "Ordinary real footage: white towels, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_foldingtowels22",
+  "q": "folding towels",
+  "scene": "Ordinary real footage: folding towels, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_pillow23",
+  "q": "pillow",
+  "scene": "Ordinary real footage: pillow, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_duvet24",
+  "q": "duvet",
+  "scene": "Ordinary real footage: duvet, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_curtainswindow25",
+  "q": "curtains window",
+  "scene": "Ordinary real footage: curtains window, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_sunlightroom26",
+  "q": "sunlight room",
+  "scene": "Ordinary real footage: sunlight room, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_openwindow27",
+  "q": "open window",
+  "scene": "Ordinary real footage: open window, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelreception28",
+  "q": "hotel reception",
+  "scene": "Ordinary real footage: hotel reception, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_storageshelves29",
+  "q": "storage shelves",
+  "scene": "Ordinary real footage: storage shelves, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cleaningcloth30",
+  "q": "cleaning cloth",
+  "scene": "Ordinary real footage: cleaning cloth, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_rubbergloves31",
+  "q": "rubber gloves",
+  "scene": "Ordinary real footage: rubber gloves, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cleaninggloves32",
+  "q": "cleaning gloves",
+  "scene": "Ordinary real footage: cleaning gloves, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_wiping33",
+  "q": "wiping",
+  "scene": "Ordinary real footage: wiping, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bucketwater34",
+  "q": "bucket water",
+  "scene": "Ordinary real footage: bucket water, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_scrubbing35",
+  "q": "scrubbing",
+  "scene": "Ordinary real footage: scrubbing, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_waterdrops36",
+  "q": "water drops",
+  "scene": "Ordinary real footage: water drops, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_sleeping37",
+  "q": "sleeping",
+  "scene": "Ordinary real footage: sleeping, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_alarmclock38",
+  "q": "alarm clock",
+  "scene": "Ordinary real footage: alarm clock, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_wallclock39",
+  "q": "wall clock",
+  "scene": "Ordinary real footage: wall clock, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_calendar40",
+  "q": "calendar",
+  "scene": "Ordinary real footage: calendar, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_notebookwriting41",
+  "q": "notebook writing",
+  "scene": "Ordinary real footage: notebook writing, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bedsidelamp42",
+  "q": "bedside lamp",
+  "scene": "Ordinary real footage: bedside lamp, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bedframe43",
+  "q": "bed frame",
+  "scene": "Ordinary real footage: bed frame, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelbathroom44",
+  "q": "hotel bathroom",
+  "scene": "Ordinary real footage: hotel bathroom, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_bathroomsink45",
+  "q": "bathroom sink",
+  "scene": "Ordinary real footage: bathroom sink, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_washingmachine46",
+  "q": "washing machine",
+  "scene": "Ordinary real footage: washing machine, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_laundrybasket47",
+  "q": "laundry basket",
+  "scene": "Ordinary real footage: laundry basket, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_clothesline48",
+  "q": "clothesline",
+  "scene": "Ordinary real footage: clothesline, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kidbedroom49",
+  "q": "kid bedroom",
+  "scene": "Ordinary real footage: kid bedroom, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_dogsleeping50",
+  "q": "dog sleeping",
+  "scene": "Ordinary real footage: dog sleeping, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_couch51",
+  "q": "couch",
+  "scene": "Ordinary real footage: couch, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_livingroom52",
+  "q": "living room",
+  "scene": "Ordinary real footage: living room, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hallway53",
+  "q": "hallway",
+  "scene": "Ordinary real footage: hallway, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_door54",
+  "q": "door",
+  "scene": "Ordinary real footage: door, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_freshair55",
+  "q": "fresh air",
+  "scene": "Ordinary real footage: fresh air, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_morninglight56",
+  "q": "morning light",
+  "scene": "Ordinary real footage: morning light, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_plasticbottles57",
+  "q": "plastic bottles",
+  "scene": "Ordinary real footage: plastic bottles, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_shelfbottles58",
+  "q": "shelf bottles",
+  "scene": "Ordinary real footage: shelf bottles, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cottonfabric59",
+  "q": "cotton fabric",
+  "scene": "Ordinary real footage: cotton fabric, real everyday look, no person looking at the camera."
+ }
+]
