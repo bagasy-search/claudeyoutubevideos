@@ -56,6 +56,15 @@ def gap(txt, asr):
     return g, round(sm.ratio(), 3)
 
 def asr(paths):
+    # ASR por defecto = Groq whisper-large-v3 GRATIS (scripts/asr_groq.py, sólo GROQ_FREE_KEY_*); si falla, Modal de respaldo
+    out = {}
+    for p in paths:
+        cj = str(OUT / f"_groq_{Path(p).stem}.json")
+        r = subprocess.run([sys.executable, R + "scripts/asr_groq.py", S, a.lang, "--wav", str(p), "--out", cj], capture_output=True, text=True,
+                           env={**os.environ, "PYTHONUTF8": "1"}, encoding="utf-8", errors="replace")
+        if r.returncode != 0 or not os.path.exists(cj): print("  ASR Groq falló:", (r.stderr or r.stdout)[-200:]); out = None; break
+        out[str(p)] = {"text": "".join(c["text"] for c in json.load(open(cj, encoding="utf-8"))).strip()}
+    if out is not None: return out
     res = str(OUT / f"_asr_{int(time.time())}.json")
     for t in range(3):
         r = subprocess.run(["modal", "run", R + "vlog/claudio/modal_asr_blocks.py", "--files", ",".join(str(p) for p in paths), "--out", res, "--lang", a.lang],

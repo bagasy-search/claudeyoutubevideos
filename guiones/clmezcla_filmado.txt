@@ -1,0 +1,85 @@
+[HOOK|puerta] Venga, acérquese. Normalmente le digo que cierre la puerta. Hoy no. Hoy, la puerta del baño, abierta. Y ahora le explico por qué.
+[HOOK|promesa] Hoy le doy las cinco mezclas que nunca, nunca van juntas. Las cinco que vi hacer en el hotel. Cuatro reglas para no equivocarse nunca más. Y lo que hace en los primeros segundos si ya lo mezcló. Cero productos nuevos. Cero plata extra. Así estaba el mueble de abajo del fregadero. Así quedó.
+[HOOK|falla] Usted estaba limpiando el inodoro. Le echó un chorro de cloro, y como la mancha no salía, le echó encima el limpiador del inodoro. O un poco de vinagre. Y de repente el aire se puso picante. Le ardieron los ojos, le picó la garganta, y salió del baño tosiendo.
+[HOOK|nadie] Abrió la ventana, esperó un rato en el pasillo, y no le contó a nadie.
+[HOOK|culpa] No fue culpa suya. Nadie se lo dijo nunca. La advertencia está atrás de la botella, en letra chiquita. Y la regla vieja de la casa es al revés: si un producto limpia, dos limpian el doble.
+[HOOK|loops] Y hay tres cosas que tiene que saber antes del final. La mezcla que más gente hace sin darse cuenta, todas las semanas, en el inodoro. La mezcla que parece un truco de internet y que yo nunca pongo en una botella. Y la única mezcla que sí está bien, la que todo el mundo cree que es peligrosa.
+[HOOK|pelea] Y la primera de las cinco va a hacer que alguien en su casa le discuta. Déjelo que discuta.
+[INTRO|claudio] Usted ya me conoce. Soy Claudio. Treinta años trabajé en el mantenimiento de un hotel de ciento ochenta habitaciones. Baños, sobre todo, porque nadie más los quería.
+[INTRO|carrito] Y en el carrito de limpieza aprendí algo a los golpes: casi todos los accidentes de limpieza no vienen de un producto malo. Vienen de dos productos buenos, usados juntos, en un baño chico.
+[INTRO|promesa] En el video de la silicona le prometí que éste era el video más importante del canal. Lo es. Todos los otros arreglos sirven de algo. Éste le cuida los pulmones.
+[CTA1|libro] Rápido, mientras lo tengo aquí: después de treinta años me prometí escribir todo lo que aprendí, antes de que se perdiera. Y lo escribí. Cada arreglo, cada medida, cada tiempo de espera. Un libro: El Frasco Marrón de Claudio. Noventa y cuatro arreglos de la casa, y la tabla de Nunca Mezclar para pegar en la puerta del mueble. El link está abajo. Volvemos al baño. Las cinco mezclas están escritas en la descripción, para que las tenga a mano.
+[M1|titulo] Mezcla número uno. La de la pelea. Cloro y vinagre.
+[M1|creencia] Yo sé. Alguien en su casa le dijo que el vinagre le da fuerza al cloro. Que la mancha sale más rápido. Que su abuela lo hacía así.
+[M1|pasa] Lo que pasa de verdad es otra cosa. El ácido del vinagre hace que el cloro largue gas cloro. Y ese gas es justamente lo que le arde en los ojos y le pica en la garganta. La mancha no sale más rápido. Lo que sale es el gas.
+[M1|acidos] Y fíjese bien en esto, porque aquí se equivoca casi todo el mundo. No es sólo el vinagre. Es cualquier ácido. Y muchos limpiadores de inodoro son ácidos. Por eso la página quince de mi libro dice cloro con vinagre, o con cualquier ácido, como los limpiadores de inodoro.
+[M1|inodoro] Ésa es la mezcla que más gente hace sin darse cuenta, la primera que le prometí. Cloro en la taza, y encima el limpiador del inodoro. O un producto con cloro que se cuelga del borde, y el vinagre del arreglo del sarro, el mismo día. Todas las semanas. En el baño más chico de la casa.
+[M1|regla] La regla es simple. Si la etiqueta dice cloro, ese día el inodoro es del cloro y de nadie más. Y antes de cambiar de producto, enjuague con agua sola. Y si el primero fue cloro, espere al día siguiente.
+[M1|remate] Cloro con ácido, nunca. Ni en la taza, ni en el balde, ni en la misma tarde.
+[M2|titulo] Mezcla número dos. Cloro y amoníaco.
+[M2|donde] ¿Y dónde hay amoníaco en un baño? En algunos limpiavidrios. El del espejo. Por eso la página quince lo dice así: cloro y amoníaco, algunos limpiavidrios.
+[M2|hotel] En el hotel lo vi hacer así. El cloro en el lavamanos, esperando. Y mientras tanto, el limpiavidrios en el espejo de arriba, rociado a la altura de la cara. En un baño sin ventana, con la puerta cerrada.
+[M2|pasa] Juntos, largan un gas tóxico. Por eso el libro dice un solo producto por trabajo. Ni en el balde, ni al mismo tiempo en el mismo baño.
+[M2|etiqueta] Por eso la regla número dos del libro es leer la etiqueta de atrás. Si dice cloro, hipoclorito o amoníaco, esa botella va lejos de cualquier otra cosa.
+[M2|remate] Y el espejo, con el frasco marrón y un paño de microfibra seco, como dice el libro. Brilla sin marcas, y no se pelea con el cloro de nadie.
+[M3|titulo] Mezcla número tres. Ésta no da miedo, pero le cuesta plata. Cloro y agua oxigenada.
+[M3|creencia] La gente piensa: el cloro desinfecta, el frasco marrón desinfecta, juntos tiene que ser el doble.
+[M3|pasa] Lo que pasa de verdad es lo contrario. Reaccionan entre ellos y se anulan. Se gastan uno al otro. Usted termina con agua, olor a cloro, y la mancha igual que antes.
+[M3|libro] La página quince lo dice clarito: cloro y agua oxigenada, nunca en el mismo lugar. Por eso en todos mis videos le digo lo mismo: si la semana pasada usó cloro en esa bañera, enjuague bien y espere un día. No es una manía mía. Es para que el frasco marrón trabaje solo.
+[M3|remate] El frasco marrón no se pelea con nadie. Pero tampoco comparte.
+[M4|titulo] Mezcla número cuatro. Y ésta es la segunda que le prometí. La que parece un truco de internet. Agua oxigenada y vinagre, en la misma botella.
+[M4|internet] La va a ver en internet. Un rociador con mitad de cada uno, y la promesa de que limpia todo.
+[M4|pasa] Juntos, en una botella, forman un ácido agresivo. Y esa botella queda ahí, debajo del fregadero, esperando a que alguien la agarre sin saber qué tiene adentro.
+[M4|canal] Y usted me va a decir: pero Claudio, usted usa los dos. Sí. Los uso a los dos. En días distintos. El vinagre para la piedra, como en el video del sarro, la página diez. El frasco marrón para la mugre viva, como en el video del moho, la página doce. Cada uno en su botella. Cada uno en su día.
+[M4|siguiente] Y en el próximo video lo va a ver clarito: el inodoro que no está tapado pero no descarga bien. Día uno, el frasco marrón. Día dos, el vinagre. Nunca el mismo día.
+[M4|remate] El frasco marrón y el vinagre son amigos. Pero no viven en la misma casa.
+[M5|titulo] Mezcla número cinco. Cloro y alcohol.
+[M5|donde] Ésta pasa cuando alguien quiere desinfectar todo de una vez. El cloro en el piso, y el alcohol en el picaporte, en el mismo trapo, o en el mismo balde.
+[M5|pasa] Juntos largan vapores dañinos. El libro no tiene vueltas con ésta: cloro y alcohol, nunca.
+[M5|remate] Uno desinfecta. Dos, lo enferman.
+[M6|bonus] Y le agrego una más, que está en la tabla del libro aunque no sea del baño. Dos destapacañerías distintos, uno detrás del otro. Si el primero no destapó, no le eche el segundo encima. Pueden reaccionar y salpicar. Y un destapacañerías que salpica no es algo que quiera en la cara.
+[M6|plomero] Y si el caño de verdad está tapado, eso ya no es para mí. Para eso está el plomero.
+[REGLAS|intro] Ahora, las cuatro reglas. Están en la página quince de mi libro, tal cual. Si hace estas cuatro, no se equivoca nunca más.
+[REGLAS|uno] Regla número uno: un solo producto por trabajo. Si quiere cambiar, primero enjuague la superficie con agua sola. Y si el primero fue cloro, espere al día siguiente.
+[REGLAS|dos] Regla número dos: lea la etiqueta de atrás. No la de adelante, la de los colores. La de atrás, la de la letra chiquita. Si dice cloro, hipoclorito o amoníaco, esa botella no se junta con nadie.
+[REGLAS|nombres] Y ojo, que el cloro tiene muchos nombres. Cloro, lejía, lavandina, depende del país. Y en la letra chiquita a veces dice hipoclorito de sodio. Es lo mismo.
+[REGLAS|tres] Regla número tres: nunca eche dos productos en el inodoro al mismo tiempo. Nunca. Ni uno detrás del otro sin descargar.
+[REGLAS|cuatro] Regla número cuatro: cómo se guarda. El agua oxigenada, en su frasco marrón, porque la luz la debilita. Y el cloro y los ácidos, el vinagre y los limpiadores de inodoro, en estantes distintos.
+[REGLAS|prueba] Y ya que está con el frasco marrón en la mano, pruébelo. Eche un poquito en el desagüe sucio del fregadero, o sobre una papa cortada. Si hace espuma, sirve. Un frasco abierto dura unos meses. Uno cerrado, un par de años. Y si no hace espuma, no le eche otra cosa encima para ayudarlo. Compre uno nuevo.
+[REGLAS|estantes] Así quedó el mueble del antes y después del principio. El cloro, solo, en un estante. Los ácidos, en otro. El frasco marrón, en su frasco. Y la tabla de Nunca Mezclar, pegada del lado de adentro de la puerta. Cada vez que abre el mueble, la ve.
+[REGLAS|aire] Y dos cosas más que el libro pide para cada trabajo: guantes, y una ventana abierta o el extractor prendido cada vez que limpia un ambiente chico. Por eso hoy le dije, la puerta abierta.
+[REGLAS|remate] Un producto, un trabajo. La etiqueta de atrás. Dos en el inodoro, nunca. Y cada uno en su estante.
+[CTA2|libro] Esas cuatro reglas, las cinco mezclas y lo que hace si ya lo mezcló están en la página quince de El Frasco Marrón de Claudio. Y la tabla de Nunca Mezclar viene en el libro lista para imprimir y pegar en el mueble. El código está aquí, y el link en la descripción.
+[YA|intro] Ahora, lo que hace si ya lo mezcló. Escúcheme bien esta parte, porque es la que importa.
+[YA|senal] Si mezcló algo y el aire se siente picante, o le arden los ojos, no se quede a ver qué pasa.
+[YA|salir] Uno: salga del ambiente. Ya. No se quede a enjuagar, no se quede a tirar la cadena, no se quede a abrir la ventana desde adentro. Salga.
+[YA|ventanas] Dos: si puede, abra las ventanas desde afuera. Desde el pasillo, desde el patio. Que corra el aire sin que usted esté adentro.
+[YA|llamar] Tres: llame al centro de toxicología o a emergencias de su país. Ellos le dicen qué hacer. Tenga el número anotado antes de necesitarlo.
+[YA|remate] Salir, abrir desde afuera, llamar. En ese orden. Nada más. Ese baño puede esperar.
+[YA|nada] Y le soy honesto: yo no soy médico. Este libro es para limpiar la casa, nada más. Para todo lo que sea del cuerpo, el centro de toxicología.
+[BIEN|intro] Y ahora, lo tercero que le prometí. La única mezcla que sí está bien, la que todo el mundo cree que es peligrosa.
+[BIEN|pasta] Agua oxigenada con bicarbonato. Ésa sí se puede. Es la pasta de varios arreglos del libro: tres cucharadas de bicarbonato y una cucharada de agua oxigenada, hasta que quede como pasta de dientes. Así está en la página diez, la del sarro. La usé en el video de las bandejas del horno, en la página trece.
+[BIEN|momento] Lo único: se prepara en el momento, se usa, y lo que sobra se tira. No la guarde mezclada en una botella cerrada.
+[BIEN|colchon] ¿Por qué? Porque larga gas despacio, y una botella cerrada puede saltar. Eso lo va a ver en el video del colchón, que viene después del próximo, con la mezcla que no lo empapa. Se prepara cada vez, y lo que sobra, afuera.
+[BIEN|remate] Mezcla buena, sí. Mezcla guardada, nunca.
+[ERRORES|intro] Ahora, los errores que vi en el hotel con estos productos. Cada uno, una vez, en algún baño.
+[ERRORES|chorrito] Uno: pensar que un chorrito no cuenta. La mezcla no necesita un balde lleno. El cloro que quedó en la taza y un chorro de limpiador encima ya son una mezcla.
+[ERRORES|olor] Dos: tapar el olor del cloro con otro producto con perfume. Si huele mucho a cloro, la respuesta es ventana y agua, no otra botella.
+[ERRORES|transparente] Tres: pasar los productos a botellas sin etiqueta. El frasco marrón pasado a una botella transparente se debilita, y una botella sin etiqueta no le dice qué tiene adentro. Cada producto, en su envase, con su etiqueta.
+[ERRORES|balde] Cuatro: usar el mismo balde para todo sin enjuagarlo. El balde del cloro de la mañana, sin enjuagar, con el vinagre de la tarde. Enjuague el balde entre un trabajo y otro.
+[ERRORES|cerrado] Y cinco: limpiar con la puerta cerrada y sin extractor. En un baño chico, cualquier producto se siente el doble. La puerta abierta, la ventana abierta, el extractor prendido.
+[QA|intro] Unas preguntas que me hacen siempre, rapidito.
+[QA|enjuagar] ¿Cuánto enjuago entre un producto y otro? Agua sola sobre la superficie, y si es el inodoro, descargue. Y si el primero fue cloro, espere al día siguiente para el otro.
+[QA|bicarbonato] ¿El bicarbonato se puede mezclar con todo? No. Con el agua oxigenada sí, en el momento. Pero con el vinagre se anulan entre ellos, y queda agua con sal. Eso está en la página doce. Hace espuma, parece que trabaja, y no hace nada.
+[QA|marca] ¿Y si mi limpiador no dice nada de cloro? Lea toda la etiqueta de atrás. Si dice hipoclorito, es cloro. Si no está seguro, trátelo como si fuera cloro, y úselo solo.
+[QA|frasco] ¿El agua oxigenada vieja es peligrosa? No. El agua oxigenada vieja es agua. Pero guárdela en su frasco marrón, que la luz la debilita.
+[QA|cuarto] ¿Puedo limpiar el baño con cloro y la cocina con vinagre el mismo día? Sí, son lugares distintos y no se juntan. Lo que no se hace es los dos en el mismo baño, en la misma tarde, con la puerta cerrada.
+[CUENTAS|plata] Y ahora, la cuenta. En esta casa no hay villanos, hay aritmética. Debajo de muchos fregaderos hay un estante lleno de botellas, una para cada cosa, y la mitad no se pueden usar juntas. Con un frasco marrón de un dólar, vinagre blanco, bicarbonato y el cloro para lo que es del cloro, se hace casi todo el libro. Y una limpieza profunda del baño hecha por alguien que viene a su casa le cobra mucho más que esos cuatro frascos.
+[CUENTAS|semana] Y el repaso semanal del baño del libro, en diez minutos, se hace con un solo producto. Media taza de agua oxigenada por el tubo de rebalse del tanque del inodoro. Una taza en la taza, mientras hace lo demás, cepillo y descarga. Rocíe los rincones de la ducha y las juntas, diez minutos, enjuague. Y el extractor prendido veinte minutos. Un frasco, diez minutos, cero mezclas.
+[RECAP|todo] Así que, todo en treinta segundos. Cloro con vinagre o con cualquier ácido, nunca. Cloro con amoníaco, el de algunos limpiavidrios, nunca. Cloro con agua oxigenada, se anulan. Agua oxigenada con vinagre en una botella, nunca. Cloro con alcohol, nunca. Un producto por trabajo, enjuague entre medio, y si fue cloro, al día siguiente. Y si ya lo mezcló: salga, abra desde afuera y llame.
+[CTA3|libro] La tabla entera, las cuatro reglas y los noventa y cuatro arreglos de la casa están en El Frasco Marrón de Claudio. La página quince es ésta. El código está aquí, y el link en la descripción.
+[CLOSE|tarea] Y no tiene que hacer todo esta semana. Haga sólo dos cosas. Lea la etiqueta de atrás de cada botella de debajo del fregadero. Y separe el cloro de los ácidos, en dos estantes distintos. Diez minutos.
+[CLOSE|pregunta] Y ahora cuénteme usted. ¿Cuántas botellas tiene debajo del fregadero que digan cloro o hipoclorito en la etiqueta de atrás? Escríbamelo en los comentarios. Leo todos.
+[CLOSE|anterior] Si se perdió el video de la silicona negra, el de la noche con el papel y el film, está aquí arriba.
+[NEXT|descarga] Y en el próximo, el inodoro que no está tapado pero no descarga bien. El agua da vueltas flojita y no se lleva nada. No es el caño. Son unos agujeritos que usted nunca miró. Y ahí va a ver la regla de hoy en acción: el frasco marrón un día, el vinagre al otro.
+[CLOSE|chau] Un producto, un trabajo. Y la puerta abierta. Nos vemos.

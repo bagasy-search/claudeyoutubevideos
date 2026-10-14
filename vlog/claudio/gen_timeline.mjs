@@ -20,7 +20,7 @@ const avFor = (s0, s1) => avwin.find((w) => s0 >= w.s - 0.15 && s1 <= w.e + 0.2)
 const avCue = (c, s) => { const w = avFor(s.start, s.end); if (!w) warn.push(`av sin ventana @${s.start.toFixed(1)}`); c.k = "av"; c.src = AV_READY ? AVSRC : null; c.sf = w ? F(s.start - w.ms + w.off + (w.lag || 0)) : 0; };
 const imgOf = (n) => (ex(`img/${SLUG}/${n}.jpg`) ? `img/${SLUG}/${n}.jpg` : null);
 // camas de stock para componentes con fondo nítido (cada una se usa UNA vez)
-const BEDABLE = new Set(["ClRimCutaway3D", "ClBottle3D", "ClBowl3D", "ClValve3D", "ClPumiceTest", "ClCheck", "ClBookPage", "ClQRCard", "ClMeasureCup", "ClTimer30", "ClChapter", "ClColorCode", "ClNeverMix", "ClDoDont", "ClVideoRef", "ClWasher3D", "ClFilterFind", "ClDoseCap", "ClSmellTest", "ClPores3D", "ClSwab", "ClWallLeak", "ClHygrometer", "ClTray3D", "ClPasteCheck", "ClCoating", "ClTally", "ClReceipt", "ClCaulk3D", "ClFilmWrap", "ClTubMap", "ClCaulkGun"]);
+const BEDABLE = new Set(["ClRimCutaway3D", "ClBottle3D", "ClBowl3D", "ClValve3D", "ClPumiceTest", "ClCheck", "ClBookPage", "ClQRCard", "ClMeasureCup", "ClTimer30", "ClChapter", "ClColorCode", "ClNeverMix", "ClDoDont", "ClVideoRef", "ClWasher3D", "ClFilterFind", "ClDoseCap", "ClSmellTest", "ClPores3D", "ClSwab", "ClWallLeak", "ClHygrometer", "ClTray3D", "ClPasteCheck", "ClCoating", "ClTally", "ClReceipt", "ClCaulk3D", "ClFilmWrap", "ClTubMap", "ClCaulkGun", "ClMixCloud3D", "ClStoreLabel", "ClMixLight", "ClProtocol", "ClLabelLens"]);
 const beds = (fs.existsSync(R + `vlog/${SLUG}/beds.json`) ? J(R + `vlog/${SLUG}/beds.json`) : []).map((b) => `broll/${SLUG}_st/${b.name}.mp4`).filter(ex);
 let bi = 0;
 shots.forEach((s, i) => {
@@ -55,7 +55,8 @@ shots.forEach((s, i) => {
   cues.push(c);
 });
 // ── sonido: biblioteca sfx_pro (vlog/claudio/sound.mjs) — ambiente por escena + foley de lo que se ve + diseño de componentes/overlays
-const snd = design(cues, shots, PUB, ovs); sfx.push(...snd.sfx); const AMBL = snd.amb; warn.push(...snd.warn);
+// regla 9-oct (feedback_sonido_solo_voz_y_clips): SIN ambientes/foley/efectos → sound.mjs queda apagado (SFX_ON=1 lo vuelve a prender)
+const snd = process.env.SFX_ON ? design(cues, shots, PUB, ovs) : { sfx: [], amb: [], warn: [] }; sfx.push(...snd.sfx); const AMBL = snd.amb; warn.push(...snd.warn);
 const gaps = []; for (let i = 1; i < cues.length; i++) if (cues[i].from !== cues[i - 1].from + cues[i - 1].dur) gaps.push(i);
 if (gaps.length) { console.error("⛔ fronteras con hueco/solape:", gaps.slice(0, 10)); process.exit(1); }
 fs.mkdirSync(R + `src/${SLUG}`, { recursive: true });

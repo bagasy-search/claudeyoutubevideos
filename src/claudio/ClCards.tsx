@@ -75,7 +75,7 @@ export const ClCheck: React.FC<{ title: string; items: string[]; bed?: string; f
   );
 };
 
-export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string }> = ({ page, qr, stamp = "Gratis en la página", pageNo = 9, bed }) => {
+export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; pageNo?: number; bed?: string }> = ({ page, qr, stamp = "Está en el libro", pageNo = 9, bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2, 18), pq = pop(f, fps, 16);
   const y = interpolate(p, [0, 1], [-1000, 0]), r = interpolate(p, [0, 1], [-14, -3]);
@@ -94,7 +94,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
         <div style={{ position: "absolute", right: 150, top: 230, opacity: Math.min(out, pq), translate: `${(1 - pq) * 120}px 0`, rotate: "3deg" }}>
           <Card style={{ padding: 26, borderTop: `14px solid ${CL.yellow}`, textAlign: "center" }}>
             <Img src={staticFile(qr)} style={{ width: 420, height: 420, display: "block", imageRendering: "pixelated" }} />
-            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>apunte la cámara acá</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 52, color: CL.navy, marginTop: 8 }}>apunte la cámara aquí</div>
           </Card>
         </div>
       ) : null}
@@ -104,7 +104,7 @@ export const ClBookPage: React.FC<{ page: string; qr?: string; stamp?: string; p
   );
 };
 
-export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; bed?: string }> = ({ qr, cover, text = "apunte la cámara del celular acá", bed }) => {
+export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; head?: string; bed?: string }> = ({ qr, cover, text = "apunte la cámara del celular aquí", head = "EL LIBRO · 94 ARREGLOS", bed }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(6);
   const p = pop(f, fps, 2), pc = pop(f, fps, 10), w = lin(f, 18, 36);
   return (
@@ -117,7 +117,7 @@ export const ClQRCard: React.FC<{ qr: string; cover?: string; text?: string; bed
       ) : null}
       <div style={{ position: "absolute", right: 200, top: 140, opacity: out, translate: `0 ${(1 - p) * 90}px`, rotate: "2deg" }}>
         <Card style={{ padding: "40px 46px 30px", width: 580, textAlign: "center", borderTop: `16px solid ${CL.navy}` }}>
-          <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: CL.brass, marginBottom: 14 }}>ARREGLO COMPLETO · GRATIS</div>
+          <div style={{ fontFamily: LABEL, fontWeight: 600, fontSize: 30, letterSpacing: 4, color: CL.brass, marginBottom: 14 }}>{head}</div>
           <div style={{ background: "#fff", padding: 16, borderRadius: 12, border: `3px solid ${CL.grout}` }}>
             <Img src={staticFile(qr)} style={{ width: 440, height: 440, display: "block", margin: "0 auto", imageRendering: "pixelated" }} />
           </div>

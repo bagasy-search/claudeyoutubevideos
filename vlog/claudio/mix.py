@@ -9,7 +9,8 @@ SR = 48000; FPS = 30
 ts = open(R + f"src/{S}/timeline.gen.ts", encoding="utf8").read()
 grab = lambda k: json.loads(re.search(rf"export const {k}: any\[\] = (.*);", ts).group(1)) if re.search(rf"export const {k}: any", ts) else []
 TOTAL = int(re.search(r"TOTAL_FRAMES = (\d+)", ts).group(1))
-SFX, AMB = grab("SFX"), grab("AMB")
+SFX, AMB = (grab("SFX"), grab("AMB")) if os.environ.get("SFX_ON") else ([], [])  # regla 9-oct: sin ambientes ni efectos
+TL = grab("TL")
 N = int(TOTAL / FPS * SR)
 
 
@@ -52,7 +53,7 @@ for a in AMB:
     off = int((a["from"] * 7919) % max(1, len(src) - 1))  # cada tramo arranca en otro punto del loop
     seg = np.concatenate([src[off:]] + [src] * (L // max(1, len(src)) + 2))[:L].copy()
     seg = fade(seg, int(0.6 * SR)); e = min(N, i0 + L); amb[i0:e] += seg[: e - i0]
-AI, _ = lufs(amb + 1e-7)
+AI, _ = lufs(amb + 1e-7) if AMB else (0.0, 0.0)
 amb *= 10 ** (((VI - 24) - AI) / 20)              # ambiente ~24 dB por debajo de la voz
 amb *= (1 - 0.35 * ACT)                           # ducking suave
 # minuto 1: pausas de la voz ≥0,18 s → el ambiente sube (nunca aire muerto)
@@ -71,7 +72,18 @@ for s in SFX:
     if e > i0: fx[i0:e] += x[: e - i0] * s["vol"]
 fx *= (1 - 0.55 * ACT)                            # -7 dB mientras habla: los efectos van DEBAJO de la voz
 
-mix = V + amb + fx
+# ── AUDIO REAL DE LOS CLIPS (stock/agnes) en su tramo exacto, bajo: -24 dB respecto de la voz y ducking (−22 en silencios, −26 con voz)
+cl = np.zeros((N, 2), np.float32); nclip = 0
+for c in TL:
+    src = (c.get("clip") or c.get("src") or "").split("#")[0]
+    if not src.endswith(".mp4"): continue
+    has = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index", "-of", "csv=p=0", R + "public/" + src], capture_output=True, text=True).stdout.strip()
+    if not has: continue
+    x = load(src)[int(c.get("sf", 0) / FPS * SR):][: int(c["dur"] / FPS * SR)].copy(); x = fade(x, int(0.08 * SR))
+    i0 = int(c["from"] / FPS * SR); e = min(N, i0 + len(x)); cl[i0:e] += x[: e - i0]; nclip += 1
+if nclip:
+    CI, _ = lufs(cl + 1e-7); cl *= 10 ** (((VI - 22) - CI) / 20); cl *= (1 - 0.37 * ACT)   # 0,63 ≈ −4 dB con voz → −26
+mix = V + amb + fx + cl
 I0, _ = lufs(mix)
 mix *= 10 ** ((-14 - I0) / 20)
 res = {}; LIM = 0.81
@@ -85,6 +97,6 @@ for it in range(6):  # limitador (true peak ≤ -1 dBTP): alimiter a ~-1,8 dBFS,
     if TP > -1.0: LIM *= 0.95
     mix *= 10 ** ((-14 - I) / 20)
 subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-c:a", "pcm_s24le", R + f"out/{S}_mix.wav"], input=lim.astype(np.float32).tobytes(), check=True)
-res.update({"voz_LUFS": round(VI, 2), "sfx": len(SFX), "ambientes": len(AMB), "dur": round(N / SR, 2)})
+res.update({"voz_LUFS": round(VI, 2), "sfx": len(SFX), "ambientes": len(AMB), "clips_con_audio": nclip, "dur": round(N / SR, 2)})
 json.dump(res, open(R + f"out/{S}_mix.json", "w"), indent=1)
 print("mezcla:", res)

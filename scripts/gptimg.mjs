@@ -22,6 +22,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { submitBatch, pollBatch, fetchBatch } from "../factory/lib/openai_batch.mjs";
+import { trabado, planB } from "../factory/lib/openai_cupo.mjs";
 
 const SIZE = "1088x608", QUALITY = "low", LOTE = 150;
 const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
@@ -75,8 +76,8 @@ console.log(`compuerta: ${items.length} items medidos · ${new Set(items.flatMap
 if (problemas.length) { console.error("⛔ no mando nada:\n  · " + problemas.join("\n  · ")); process.exit(1); }
 
 const conRef = items.filter((i) => i.ref), sinRef = items.filter((i) => !i.ref);
-console.log(`items: ${items.length} · con presentador (/edits): ${conRef.length} · sin presentador (/generations): ${sinRef.length}`);
-console.log(`costo estimado con las 4 palancas: US$${(conRef.length * 0.00207 + sinRef.length * 0.00169).toFixed(3)}`);
+console.log(`items: ${items.length} · con presentador (/edits gpt-image): ${conRef.length} · sin presentador (agnes-image GRATIS, regla 8-oct): ${sinRef.length}`);
+console.log(`costo estimado: US$${(conRef.length * 0.00207).toFixed(3)} (sólo las de cara; las sin cara van a agnes = US$0)`);
 
 // ── estado reanudable
 const ST = path.join(outDir, "_gptimg_batches.json");
@@ -111,6 +112,11 @@ while (pendientes().length) {
     if (["failed", "expired", "cancelled"].includes(p.status)) {
       console.error(`⛔ batch ${b.id} terminó ${p.status}: ${JSON.stringify(p.errors || {}).slice(0, 300)}`);
       b.bajado = true; b.estado = p.status; guardar(); totalFail += b.n; continue;
+    }
+    // 🛟 trabado >20 min en 0 (cola de la cuenta saturada) → se cancela y lo que falta lo hace agnes (13-oct)
+    if (!String(b.id).startsWith("agnes:") && trabado({ status: p.status, request_counts: c, created_at: p.creado })) {
+      const hizo = await planB(b.id, items.filter((it) => b.names.includes(it.name)), outDir);
+      b.bajado = true; b.estado = "planB"; b.ok = hizo; guardar(); totalOk += hizo; totalFail += b.n - hizo; continue;
     }
     if (p.status !== "completed") { console.log(`  … ${b.id} ${p.status} ${c.completed || 0}/${c.total || b.n}`); continue; }
     const f = await fetchBatch({ batchId: b.id, outDir, onLog: (m) => console.log(m) });
