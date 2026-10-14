@@ -6,12 +6,12 @@ import { SERIF, LABEL, HAND, fr, cl, ez, eo, lin, img, clip, C, Grade, Grain, Ma
 
 // ── ITEM CARD: la tarjeta grande de cada cosa. Papel a la izquierda (ITEM n OF N + número gigante + nombre + PAGE),
 //    en `t` el nombre se tacha y entra "INSTEAD:" con lo que se usaba; foto real a la derecha (y la de reemplazo `k2` en `t`). ≥ 6 s ──
-export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; instead: string; page?: string; k: string; k2?: string; t: number; bed?: string }> =
-  ({ a, d, n, of, word = "ITEM", name, instead, page, k, k2, t, bed }) => {
+export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; instead: string; page?: string; k: string; k2?: string; t: number; bed?: string; insteadLabel?: string }> =
+  ({ a, d, n, of, word = "ITEM", name, instead, page, k, k2, t, bed, insteadLabel = "EN SU LUGAR:" }) => {
     const { f, at } = useT(a);
     const c = sp(f, 0, 14, 110), nb = sp(f, 4, 12, 150), nm = sp(f, 9, 14, 160);
     const T = at(t), ins = sp(f, T, 13, 170), sw = sp(f, T, 15, 120);
-    const head = of ? `${word} ${n} OF ${of}` : `${word} ${n}`;
+    const head = of ? `${word} ${n} DE ${of}` : `${word} ${n}`;
     const nameSz = fit(name, 700, 92, "serif", 2);
     const insSz = fit(instead, 700, 80, "hand", 2);
     return (
@@ -41,7 +41,7 @@ export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; 
               </div>
             </div>
             <div style={{ marginTop: 26, minHeight: insSz * 1.1, opacity: ins, transform: `translateX(${(1 - ins) * -40}px)` }}>
-              <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 4, color: C.red }}>INSTEAD:</div>
+              <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 4, color: C.red }}>{insteadLabel}</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: insSz, lineHeight: 1.0, color: C.pen, marginTop: 4 }}>{instead}</div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export const ItemCounter: React.FC<{ counts: { a: number; b: number; n: number }
       background: "rgba(14,10,22,0.78)", border: "2px solid #e0b25a", borderRadius: 14, padding: "10px 24px", boxShadow: "0 6px 18px rgba(0,0,0,0.45)" }}>
       <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 4, color: "#f6ecd6" }}>{word}</span>
       <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, lineHeight: 1, color: "#f3c76a", display: "inline-block", transform: `scale(${1.5 - 0.5 * k})` }}>{cur.n}</span>
-      <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 4, color: "#f6ecd6" }}>OF {of}</span>
+      <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 4, color: "#f6ecd6" }}>DE {of}</span>
     </div>
   );
 };
@@ -76,7 +76,7 @@ export const ItemCounter: React.FC<{ counts: { a: number; b: number; n: number }
 // ── SWAP: la cosa de hoy a pantalla completa; en `t` (la palabra "instead") una cortina la empuja a la mitad izquierda
 //    (se apaga y se tacha) y entra a la derecha "WHAT WE USED INSTEAD" con lo de antes ──
 export const SwapCard: P<{ old: { k: string; txt: string }; neu: { k: string; txt: string }; t: number; head?: string; oldHead?: string }> =
-  ({ a, d, old, neu, t, head = "WHAT WE USED INSTEAD", oldHead = "MOST HOMES TODAY" }) => {
+  ({ a, d, old, neu, t, head = "LO QUE VA EN SU LUGAR", oldHead = "LO QUE HACE CASI TODO EL MUNDO" }) => {
     const { f, at } = useT(a);
     const T = at(t);
     const w = eo(cl((f - T) / 16));

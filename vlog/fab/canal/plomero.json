@@ -1,0 +1,9 @@
+{
+ "canal": "Claudio el Plomero",
+ "idioma": "es",
+ "protagonista": "claudio",
+ "voz": "claudio_mendoza_s4",
+ "cps": 14.9,
+ "avatar_pct": [20, 32],
+ "prohibidas": ["\\bgratis\\b", "\\bfree\\b", "https?://", "\\bwww\\b", "\\.com\\b", "\\$\\s?\\d", "\\bagua oxigenada\\b"]
+}
