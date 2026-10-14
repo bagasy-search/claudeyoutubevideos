@@ -100,7 +100,7 @@ def e_voz():
     sh(["python", "vlog/claudio/voz.py", "--voice", meta.get("voz") or CANAL.get("voz", "claudio_definitiva"), "--lang", IDIOMA, "--cps", str(CANAL.get("cps", 14.0))])
     raw = R + f"public/{S}_raw.wav"
     if not os.path.exists(raw): sys.exit("⛔ voz.py no dejó el máster")
-    sh(f'modal run vlog/claudio/modal_asr_blocks.py --files public/{S}_raw.wav --out _v3/{S}_asr_raw.json --lang {IDIOMA}')
+    sh(f'python vlog/claudio/groq_asr_blocks.py --files public/{S}_raw.wav --out _v3/{S}_asr_raw.json --lang {IDIOMA}')
     d = J(V3 + f"{S}_asr_raw.json"); ws = d[list(d)[0]]["words"]
     W(R + f"public/captions_{S}.json", [{"text": w["w"].strip(), "startMs": round(w["s"] * 1000), "endMs": round(w["e"] * 1000)} for w in ws])
     r = sh(["python", "vlog/claudio/align.py"], capture_output=True); print(r.stdout[-1500:])

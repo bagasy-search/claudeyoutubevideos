@@ -1,0 +1,2793 @@
+{
+ "end": 935.203,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 9.05,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 9.05,
+   "b": 23.78,
+   "c": "RowOfThings",
+   "props": {
+    "head": "TEN SECONDS STOPS",
+    "items": [
+     {
+      "k": "n_porch_polo_tablet",
+      "t": 13.62,
+      "txt": "THE FAKE ADJUSTER"
+     },
+     {
+      "k": "n_vest_man_door",
+      "t": 15.16,
+      "txt": "THE \"GAS LEAK\" MAN"
+     },
+     {
+      "k": "n_aob_form",
+      "t": 17.1,
+      "txt": "THE FORM TO SIGN"
+     },
+     {
+      "k": "n_cash_envelope",
+      "t": 18.96,
+      "txt": "THE ONE THAT TOOK $9,000"
+     }
+    ],
+    "bed": "n_door_closed_inside"
+   },
+   "hero": true
+  },
+  {
+   "a": 23.78,
+   "b": 28.58,
+   "k": "n_cash_envelope",
+   "c": "CostTag",
+   "props": {
+    "price": "$9,000",
+    "sub": "IN CASH, ON A FRIDAY",
+    "k": "n_cash_envelope"
+   }
+  },
+  {
+   "a": 28.58,
+   "b": 32.05,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 32.05,
+   "b": 37.03,
+   "k": "n_street_contractors",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 37.03,
+   "b": 40.26,
+   "k": "n_car_slow_street",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 40.26,
+   "b": 43.58,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 43.58,
+   "b": 46.85,
+   "k": "n_storm_trees",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 46.85,
+   "b": 50.78,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 50.78,
+   "b": 55.073,
+   "k": "n_ladder_roof",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 55.073,
+   "b": 57.85,
+   "k": "n_porch_stranger_vest",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 57.85,
+   "b": 61.747,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 61.747,
+   "b": 64.387,
+   "k": "n_house_street",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 64.387,
+   "b": 67.107,
+   "k": "l_dale_clipboard_porch",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 67.107,
+   "b": 71.967,
+   "k": "l_dale_phone_call_ahead",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 71.967,
+   "b": 75.287,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 75.287,
+   "b": 79.987,
+   "k": "n_clipboard_camera",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 79.987,
+   "b": 82.787,
+   "k": "n_yard_signs",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 82.787,
+   "b": 87.047,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 87.047,
+   "b": 89.567,
+   "k": "l_dale_writing",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 89.567,
+   "b": 95.047,
+   "k": "l_dale_guide_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page1",
+      "tab": "21 $1 TRICKS · PAGE 1",
+      "t": 89.867
+     }
+    ],
+    "caption": {
+     "txt": "21 $1 FIXES · ABOUT $1,210 A YEAR",
+     "t": 90.367
+    },
+    "k": "l_dale_guide_table"
+   }
+  },
+  {
+   "a": 95.047,
+   "b": 99.127,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 99.127,
+   "b": 101.427,
+   "k": "n_card_on_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 101.427,
+   "b": 107.427,
+   "k": "n_door_card_fridge",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page61",
+      "tab": "21 $1 TRICKS · PAGE 61",
+      "t": 101.727
+     }
+    ],
+    "caption": {
+     "txt": "TRICK 20 · THE DOOR CARD",
+     "t": 102.227
+    },
+    "k": "n_door_card_fridge"
+   }
+  },
+  {
+   "a": 107.427,
+   "b": 109.507,
+   "k": "n_door_card_print",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 109.507,
+   "b": 114.347,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 114.347,
+   "b": 129.927,
+   "k": "n_door_closed_inside",
+   "c": "StepCard",
+   "props": {
+    "head": "THE TEN-SECOND RULE",
+    "page": "THE MAN AT THE DOOR · PAGE 39",
+    "bed": "n_door_closed_inside",
+    "steps": [
+     {
+      "t": 114.347,
+      "txt": "Don't open the door yet",
+      "k": "n_hand_on_lock"
+     },
+     {
+      "t": 120.487,
+      "txt": "Ask: who, which company, claim number",
+      "k": "n_peephole_view"
+     }
+    ]
+   }
+  },
+  {
+   "a": 129.927,
+   "b": 133.387,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 133.387,
+   "b": 136.967,
+   "k": "n_decpage_phone_number",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 136.967,
+   "b": 145.967,
+   "k": "n_tablet_form",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_tablet_form",
+    "words": [
+     [
+      "SIGN NOTHING.",
+      136.967
+     ],
+     [
+      "PAY NOTHING.",
+      138.747
+     ],
+     [
+      "NOT A FORM.",
+      140.747
+     ],
+     [
+      "NOT A DEPOSIT.",
+      143.267
+     ]
+    ]
+   }
+  },
+  {
+   "a": 145.967,
+   "b": 150.087,
+   "k": "n_calendar_marked",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 150.087,
+   "b": 153.967,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 153.967,
+   "b": 157.287,
+   "k": "n_laptop_claim",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 157.287,
+   "b": 159.667,
+   "k": "n_printer_cards",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 159.667,
+   "b": 164.087,
+   "k": "n_phone_kitchen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 164.087,
+   "b": 168.047,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 168.047,
+   "b": 170.787,
+   "k": "l_dale_phone_call_ahead",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 170.787,
+   "b": 174.237,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 174.237,
+   "b": 180.607,
+   "k": "n_calendar_marked",
+   "c": "Checklist",
+   "props": {
+    "head": "A VISIT YOU CAN CHECK",
+    "k": "n_calendar_marked",
+    "items": [
+     {
+      "t": 174.347,
+      "txt": "A name"
+     },
+     {
+      "t": 175.927,
+      "txt": "A claim number"
+     },
+     {
+      "t": 177.127,
+      "txt": "A time on the calendar"
+     }
+    ]
+   }
+  },
+  {
+   "a": 180.607,
+   "b": 185.107,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 185.107,
+   "b": 188.927,
+   "k": "n_business_card",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 188.927,
+   "b": 192.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 192.547,
+   "b": 202.347,
+   "k": "n_porch_polo_tablet",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 7,
+    "word": "VISITOR",
+    "name": "THE FAKE ADJUSTER",
+    "instead": "CALL YOUR OWN COMPANY",
+    "page": "THE MAN AT THE DOOR · PAGE 7",
+    "k": "n_porch_polo_tablet",
+    "t": 192.947
+   }
+  },
+  {
+   "a": 202.347,
+   "b": 205.547,
+   "k": "n_hail_roof",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 205.547,
+   "b": 209.067,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 209.067,
+   "b": 212.367,
+   "k": "n_porch_polo_tablet",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 212.367,
+   "b": 215.407,
+   "k": "n_tablet_form",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 215.407,
+   "b": 219.907,
+   "k": "n_business_card",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 219.907,
+   "b": 226.307,
+   "k": "n_phone_kitchen",
+   "c": "SplitHalf",
+   "props": {
+    "k": "n_phone_kitchen",
+    "l": {
+     "txt": "THE NUMBER ON HIS CARD",
+     "t": 221.427
+    },
+    "r": {
+     "txt": "THE NUMBER ON HER POLICY",
+     "t": 222.867
+    }
+   }
+  },
+  {
+   "a": 226.307,
+   "b": 230.607,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 230.607,
+   "b": 233.947,
+   "k": "l_dale_widow_door",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 233.947,
+   "b": 240.099,
+   "k": "n_hail_roof",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_hail_roof",
+    "words": [
+     [
+      "PAID: THE ROOF CLAIM",
+      233.947
+     ],
+     [
+      "MINUS HER DEDUCTIBLE",
+      238.039
+     ]
+    ]
+   }
+  },
+  {
+   "a": 240.099,
+   "b": 243.599,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 243.599,
+   "b": 248.159,
+   "k": "n_claim_number_letter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 248.159,
+   "b": 251.719,
+   "k": "n_car_slow_street",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 251.719,
+   "b": 255.179,
+   "k": "n_policy_pages",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 255.179,
+   "b": 258.579,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 258.579,
+   "b": 262.159,
+   "k": "n_decpage_phone_number",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 262.159,
+   "b": 273.039,
+   "k": "n_jewelry_box",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_remember",
+    "tag": "THE $1,500 LINE",
+    "k": "n_jewelry_box",
+    "words": [
+     [
+      "THE LINE",
+      269.999
+     ],
+     [
+      "THE JEWELRY BOX",
+      271.599
+     ]
+    ]
+   }
+  },
+  {
+   "a": 273.039,
+   "b": 276.419,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 276.419,
+   "b": 279.019,
+   "k": "n_tablet_form",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 279.019,
+   "b": 285.039,
+   "k": "n_porch_clipboard_man",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 7,
+    "word": "VISITOR",
+    "name": "THE PAIR AT THE DOOR",
+    "instead": "SEND THE TALKER TO THE MAILBOX",
+    "page": "THE MAN AT THE DOOR · PAGE 30",
+    "k": "n_porch_clipboard_man",
+    "t": 279.419
+   }
+  },
+  {
+   "a": 285.039,
+   "b": 287.379,
+   "k": "n_porch_two_men",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 287.379,
+   "b": 292.339,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 292.339,
+   "b": 294.939,
+   "k": "n_side_yard_man",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 294.939,
+   "b": 298.499,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 298.499,
+   "b": 303.166,
+   "k": "n_gas_meter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 303.166,
+   "b": 306.072,
+   "k": "n_side_gate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 306.072,
+   "b": 309.212,
+   "k": "l_dale_widow_door",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 309.212,
+   "b": 313.272,
+   "k": "n_jewelry_box_empty",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 313.272,
+   "b": 317.072,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 317.072,
+   "b": 318.612,
+   "k": "n_vest_man_door",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 318.612,
+   "b": 327.816,
+   "k": "n_police_report",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_police_report",
+    "words": [
+     [
+      "PAID:",
+      318.652
+     ],
+     [
+      "UP TO THE JEWELRY LIMIT",
+      320.932
+     ],
+     [
+      "AFTER A POLICE REPORT",
+      324.272
+     ]
+    ]
+   }
+  },
+  {
+   "a": 327.816,
+   "b": 331.779,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 331.779,
+   "b": 333.375,
+   "k": "n_policy_pages",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 333.375,
+   "b": 338.642,
+   "k": "n_porch_clipboard_man",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_porch_clipboard_man",
+    "words": [
+     [
+      "DO YOU LIVE ALONE?",
+      333.632
+     ],
+     [
+      "WHEN ARE YOU HOME?",
+      335.192
+     ],
+     [
+      "DO YOU HAVE A SAFE?",
+      337.012
+     ]
+    ]
+   }
+  },
+  {
+   "a": 338.642,
+   "b": 343.222,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 343.222,
+   "b": 349.685,
+   "k": "n_mailbox_wait",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page131",
+      "tab": "THE MAN AT THE DOOR · PAGE 31",
+      "t": 343.572
+     }
+    ],
+    "caption": {
+     "txt": "WHAT TO SAY TO THE TALKER",
+     "t": 344.072
+    },
+    "k": "n_mailbox_wait"
+   }
+  },
+  {
+   "a": 349.685,
+   "b": 357.019,
+   "k": "n_utility_van",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 7,
+    "word": "VISITOR",
+    "name": "THE \"UTILITY\" EMERGENCY",
+    "instead": "CALL THE NUMBER ON YOUR BILL",
+    "k": "n_utility_van",
+    "t": 350.439
+   }
+  },
+  {
+   "a": 357.019,
+   "b": 360.339,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 360.339,
+   "b": 363.812,
+   "k": "n_side_yard_man",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 363.812,
+   "b": 368.605,
+   "k": "n_basement_door",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 368.605,
+   "b": 372.125,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 372.125,
+   "b": 375.855,
+   "k": "n_side_gate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 375.855,
+   "b": 380.605,
+   "k": "n_gas_meter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 380.605,
+   "b": 385.125,
+   "k": "n_jewelry_box_empty",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 385.125,
+   "b": 388.565,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 388.565,
+   "b": 391.945,
+   "k": "n_utility_bill",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 391.945,
+   "b": 396.825,
+   "k": "n_photo_folder",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 396.825,
+   "b": 399.975,
+   "k": "n_truck_waiting",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 399.975,
+   "b": 403.385,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 403.385,
+   "b": 406.605,
+   "k": "n_vest_man_door",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 406.605,
+   "b": 409.925,
+   "k": "n_police_report",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 409.925,
+   "b": 412.525,
+   "k": "n_sidewalk_phone",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 412.525,
+   "b": 416.205,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 416.205,
+   "b": 418.418,
+   "k": "n_utility_van",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 418.418,
+   "b": 424.282,
+   "k": "n_ladder_roof",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 7,
+    "word": "VISITOR",
+    "name": "THE INSPECTION THAT ALWAYS FINDS DAMAGE",
+    "instead": "CALL YOUR AGENT FIRST",
+    "page": "THE MAN AT THE DOOR · PAGE 36",
+    "k": "n_ladder_roof",
+    "t": 418.952
+   }
+  },
+  {
+   "a": 424.282,
+   "b": 428.172,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 428.172,
+   "b": 432.672,
+   "k": "n_phone_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 432.672,
+   "b": 436.072,
+   "k": "n_shingle_hand",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 436.072,
+   "b": 439.212,
+   "k": "n_contractor_license",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 439.212,
+   "b": 442.872,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 442.872,
+   "b": 447.992,
+   "k": "n_contract_pen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 447.992,
+   "b": 451.432,
+   "k": "n_gas_meter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 451.432,
+   "b": 455.512,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 455.512,
+   "b": 458.892,
+   "k": "l_dale_writing",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 458.892,
+   "b": 461.512,
+   "k": "n_photo_folder",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 461.512,
+   "b": 464.492,
+   "k": "n_utility_bill",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 464.492,
+   "b": 469.104,
+   "k": "n_truck_waiting",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 469.104,
+   "b": 472.704,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 472.704,
+   "b": 477.224,
+   "k": "n_sidewalk_phone",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 477.224,
+   "b": 483.484,
+   "k": "n_contract_pen",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_contract_pen",
+    "words": [
+     [
+      "THEY DIDN'T SIGN.",
+      477.224
+     ],
+     [
+      "NO CONTRACT TO FIGHT.",
+      481.784
+     ]
+    ]
+   }
+  },
+  {
+   "a": 483.484,
+   "b": 491.684,
+   "k": "n_photo_folder",
+   "c": "Checklist",
+   "props": {
+    "head": "ALL IN ONE VISIT = THE TELL",
+    "k": "n_photo_folder",
+    "items": [
+     {
+      "t": 486.824,
+      "txt": "The inspection"
+     },
+     {
+      "t": 488.224,
+      "txt": "The damage"
+     },
+     {
+      "t": 489.384,
+      "txt": "The claim"
+     },
+     {
+      "t": 489.944,
+      "txt": "The signature"
+     }
+    ]
+   }
+  },
+  {
+   "a": 491.684,
+   "b": 495.584,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 495.584,
+   "b": 498.284,
+   "k": "n_phone_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 498.284,
+   "b": 500.684,
+   "k": "n_contractor_license",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 500.684,
+   "b": 504.184,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 504.184,
+   "b": 512.897,
+   "k": "l_dale_guide_table",
+   "c": "QrCard",
+   "props": {
+    "k": "l_dale_guide_table",
+    "txt": "21 $1 FIXES · LINK IN THE DESCRIPTION",
+    "t": 505.364
+   }
+  },
+  {
+   "a": 512.897,
+   "b": 516.917,
+   "k": "n_card_on_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page62",
+      "tab": "21 $1 TRICKS · PAGE 62",
+      "t": 513.197
+     }
+    ],
+    "caption": {
+     "txt": "TRICK 20 · THE DOOR CARD, READY TO PRINT",
+     "t": 513.697
+    },
+    "k": "n_card_on_table"
+   }
+  },
+  {
+   "a": 516.917,
+   "b": 520.817,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 520.817,
+   "b": 524.572,
+   "k": "n_roof_old",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 524.572,
+   "b": 528.297,
+   "k": "n_ladder_roof",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 528.297,
+   "b": 534.317,
+   "k": "n_aob_form",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 7,
+    "word": "VISITOR",
+    "name": "THE FORM \"TO START THE PAPERWORK\"",
+    "instead": "SAY THE LINE ON THE CARD",
+    "page": "TRICK 20 · PAGE 61",
+    "k": "n_aob_form",
+    "t": 528.697
+   }
+  },
+  {
+   "a": 534.317,
+   "b": 536.237,
+   "k": "n_hail_street",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 536.237,
+   "b": 540.017,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 540.017,
+   "b": 542.797,
+   "k": "n_peephole_view",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 542.797,
+   "b": 546.917,
+   "k": "n_aob_form",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_aob_form",
+    "txt": "Assignment of benefits + deposit",
+    "stamp": "YOUR CLAIM MONEY"
+   }
+  },
+  {
+   "a": 546.917,
+   "b": 551.457,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 551.457,
+   "b": 553.817,
+   "k": "n_bank_form",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 553.817,
+   "b": 557.644,
+   "k": "n_door_card_fridge",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 557.644,
+   "b": 560.751,
+   "k": "n_door_card_hand",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 560.751,
+   "b": 564.791,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 564.791,
+   "b": 570.931,
+   "k": "n_roof_new",
+   "c": "CostTag",
+   "props": {
+    "price": "$9,400",
+    "sub": "PAID ON THE HAIL CLAIM, TO HIM",
+    "k": "n_roof_new"
+   }
+  },
+  {
+   "a": 570.931,
+   "b": 574.411,
+   "k": "n_contract_pen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 574.411,
+   "b": 578.727,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 578.727,
+   "b": 587.604,
+   "k": "n_door_closed_inside",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_door_closed_inside",
+    "words": [
+     [
+      "I DON'T SIGN AT THE DOOR.",
+      579.584
+     ],
+     [
+      "I'LL CALL MY INSURANCE",
+      581.684
+     ],
+     [
+      "LEAVE A CARD.",
+      584.864
+     ]
+    ]
+   }
+  },
+  {
+   "a": 587.604,
+   "b": 594.364,
+   "k": "n_door_card_fridge",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page61",
+      "tab": "21 $1 TRICKS · PAGE 61",
+      "t": 589.064
+     }
+    ],
+    "caption": {
+     "txt": "TRICK 20 · THE DOOR CARD",
+     "t": 589.564
+    },
+    "k": "n_door_card_fridge"
+   }
+  },
+  {
+   "a": 594.364,
+   "b": 597.004,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 597.004,
+   "b": 600.524,
+   "k": "n_badge_lanyard",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 7,
+    "word": "VISITOR",
+    "name": "THE FAKE INSPECTOR",
+    "instead": "ASK FOR THE ID NUMBER",
+    "page": "THE MAN AT THE DOOR · PAGE 35",
+    "k": "n_badge_lanyard",
+    "t": 597.404
+   }
+  },
+  {
+   "a": 600.524,
+   "b": 603.244,
+   "k": "n_flood_street",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 603.244,
+   "b": 605.644,
+   "k": "n_notebook_calls",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 605.644,
+   "b": 608.624,
+   "k": "n_badge_lanyard",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 608.624,
+   "b": 612.408,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 612.408,
+   "b": 614.871,
+   "k": "n_hail_street",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 614.871,
+   "b": 624.111,
+   "k": "n_bank_form",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_bank_form",
+    "words": [
+     [
+      "YOUR SOCIAL SECURITY NUMBER",
+      616.231
+     ],
+     [
+      "YOUR BANK ACCOUNT",
+      617.731
+     ],
+     [
+      "A FEE",
+      619.311
+     ]
+    ]
+   }
+  },
+  {
+   "a": 624.111,
+   "b": 628.561,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 628.561,
+   "b": 631.991,
+   "k": "n_id_writing",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 631.991,
+   "b": 635.711,
+   "k": "n_shingles_bundle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 635.711,
+   "b": 639.611,
+   "k": "n_phone_kitchen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 639.611,
+   "b": 643.847,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 643.847,
+   "b": 649.824,
+   "k": "n_badge_lanyard",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page135",
+      "tab": "THE MAN AT THE DOOR · PAGE 35",
+      "t": 644.344
+     }
+    ],
+    "caption": {
+     "txt": "WHAT TO SAY TO AN \"INSPECTOR\"",
+     "t": 644.844
+    },
+    "k": "n_badge_lanyard"
+   }
+  },
+  {
+   "a": 649.824,
+   "b": 653.414,
+   "k": "n_roof_new",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 653.414,
+   "b": 656.791,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 656.791,
+   "b": 659.891,
+   "k": "n_porch_stranger_vest",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 659.891,
+   "b": 663.321,
+   "k": "n_cash_counted",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 663.321,
+   "b": 667.051,
+   "k": "n_police_station",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 667.051,
+   "b": 671.031,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 671.031,
+   "b": 674.091,
+   "k": "n_flood_street",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 674.091,
+   "b": 676.781,
+   "k": "n_door_card_hand",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 676.781,
+   "b": 679.191,
+   "k": "n_notebook_calls",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 679.191,
+   "b": 681.811,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 681.811,
+   "b": 687.451,
+   "k": "n_notebook_calls",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page54",
+      "tab": "21 $1 TRICKS · PAGE 54",
+      "t": 682.251
+     }
+    ],
+    "caption": {
+     "txt": "TRICK 17 · THE CALL NOTEBOOK",
+     "t": 682.751
+    },
+    "k": "n_notebook_calls"
+   }
+  },
+  {
+   "a": 687.451,
+   "b": 694.864,
+   "k": "n_roof_crew_truck",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 7,
+    "word": "VISITOR",
+    "name": "THE CREW THAT WANTS CASH",
+    "instead": "PAY BY CHECK, FOR DONE WORK",
+    "k": "n_roof_crew_truck",
+    "t": 688.151
+   }
+  },
+  {
+   "a": 694.864,
+   "b": 699.784,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 699.784,
+   "b": 705.236,
+   "k": "n_roof_crew_truck",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_roof_crew_truck",
+    "words": [
+     [
+      "\"WE'LL DEAL WITH YOUR INSURANCE\"",
+      701.576
+     ],
+     [
+      "\"WE CAN COVER YOUR DEDUCTIBLE\"",
+      703.336
+     ]
+    ]
+   }
+  },
+  {
+   "a": 705.236,
+   "b": 709.396,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 709.396,
+   "b": 715.216,
+   "k": "n_phone_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 715.216,
+   "b": 719.836,
+   "k": "n_shingles_bundle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 719.836,
+   "b": 723.696,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 723.696,
+   "b": 726.096,
+   "k": "n_bank_form",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 726.096,
+   "b": 728.956,
+   "k": "n_cancel_letter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 728.956,
+   "b": 732.116,
+   "k": "n_cash_envelope",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 732.116,
+   "b": 735.136,
+   "k": "n_id_writing",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 735.136,
+   "b": 739.116,
+   "k": "n_cash_counted",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 739.116,
+   "b": 742.736,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 742.736,
+   "b": 745.836,
+   "k": "n_calendar_monday",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 745.836,
+   "b": 749.036,
+   "k": "n_empty_driveway",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 749.036,
+   "b": 752.476,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 752.476,
+   "b": 761.919,
+   "k": "n_cash_envelope",
+   "c": "CostTag",
+   "props": {
+    "price": "$9,000",
+    "sub": "NEVER RECOVERED",
+    "k": "n_cash_envelope"
+   }
+  },
+  {
+   "a": 761.919,
+   "b": 765.689,
+   "k": "n_check_written",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 765.689,
+   "b": 769.849,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 769.849,
+   "b": 774.359,
+   "k": "n_police_station",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 774.359,
+   "b": 776.849,
+   "k": "n_roof_crew_truck",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 776.849,
+   "b": 779.829,
+   "k": "n_stamp_envelope",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 779.829,
+   "b": 783.769,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 783.769,
+   "b": 793.589,
+   "k": "n_contract_date",
+   "c": "Kinetic",
+   "props": {
+    "k": "n_contract_date",
+    "words": [
+     [
+      "3 BUSINESS DAYS",
+      787.509
+     ],
+     [
+      "SALES OF $25+ AT HOME",
+      790.496
+     ]
+    ]
+   }
+  },
+  {
+   "a": 793.589,
+   "b": 797.289,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 797.289,
+   "b": 799.849,
+   "k": "n_shingles_bundle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 799.849,
+   "b": 802.209,
+   "k": "n_contract_date",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 802.209,
+   "b": 805.369,
+   "k": "n_calendar_marked",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 805.369,
+   "b": 810.079,
+   "k": "n_cancel_letter",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page124",
+      "tab": "THE MAN AT THE DOOR · PAGE 24",
+      "t": 805.669
+     }
+    ],
+    "caption": {
+     "txt": "THE RIGHT TO CANCEL",
+     "t": 806.169
+    },
+    "k": "n_cancel_letter"
+   }
+  },
+  {
+   "a": 810.079,
+   "b": 813.399,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 813.399,
+   "b": 826.629,
+   "k": "n_door_card_print",
+   "c": "Checklist",
+   "props": {
+    "head": "THE TEN-SECOND RULE",
+    "k": "n_door_card_print",
+    "cols": 1,
+    "items": [
+     {
+      "t": 815.909,
+      "txt": "Talk through the closed door"
+     },
+     {
+      "t": 818.069,
+      "txt": "Who, which company, claim number"
+     },
+     {
+      "t": 821.449,
+      "txt": "Call a number you already have"
+     },
+     {
+      "t": 823.709,
+      "txt": "Sign nothing, pay nothing"
+     }
+    ]
+   }
+  },
+  {
+   "a": 826.629,
+   "b": 829.949,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 829.949,
+   "b": 844.699,
+   "k": "n_door_closed_inside",
+   "c": "Checklist",
+   "props": {
+    "head": "THE SEVEN WHO KNOCK",
+    "k": "n_door_closed_inside",
+    "cols": 1,
+    "items": [
+     {
+      "t": 829.949,
+      "txt": "1 · The fake adjuster · 2 · The pair"
+     },
+     {
+      "t": 831.589,
+      "txt": "3 · The utility \"emergency\""
+     },
+     {
+      "t": 834.269,
+      "txt": "4 · The inspection that finds damage"
+     },
+     {
+      "t": 837.349,
+      "txt": "5 · The storm chaser's form"
+     },
+     {
+      "t": 839.629,
+      "txt": "6 · The fake inspector"
+     },
+     {
+      "t": 842.129,
+      "txt": "7 · The crew that wants cash"
+     }
+    ]
+   }
+  },
+  {
+   "a": 844.699,
+   "b": 849.689,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 849.689,
+   "b": 852.929,
+   "k": "n_truck_waiting",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 852.929,
+   "b": 855.949,
+   "k": "n_stamp_envelope",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 855.949,
+   "b": 858.979,
+   "k": "n_mailbox_wait",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 858.979,
+   "b": 862.969,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 862.969,
+   "b": 867.586,
+   "k": "n_peephole_view",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 867.586,
+   "b": 871.043,
+   "k": "n_police_phone",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 871.043,
+   "b": 873.983,
+   "k": "n_contract_date",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 873.983,
+   "b": 881.603,
+   "k": "n_porch_clipboard_man",
+   "c": "Comment",
+   "props": {
+    "q": "Who knocked after the last storm?",
+    "k": "n_porch_clipboard_man",
+    "opts": [
+     {
+      "txt": "A ROOFER WITH A FORM",
+      "t": 876.963
+     },
+     {
+      "txt": "NOBODY, YET",
+      "t": 879.343
+     }
+    ]
+   }
+  },
+  {
+   "a": 881.603,
+   "b": 884.983,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 884.983,
+   "b": 889.163,
+   "k": "n_porch_stranger_vest",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 889.163,
+   "b": 901.803,
+   "k": "l_dale_guide_table",
+   "c": "QrCard",
+   "props": {
+    "k": "l_dale_guide_table",
+    "txt": "21 $1 FIXES · LINK IN THE DESCRIPTION",
+    "t": 898.123
+   }
+  },
+  {
+   "a": 901.803,
+   "b": 905.403,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 905.403,
+   "b": 910.703,
+   "k": "n_lock_door",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 910.703,
+   "b": 914.143,
+   "k": "l_dale_writing",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 914.143,
+   "b": 917.983,
+   "k": "n_letter_nonrenewal",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40,
+   "vid": true
+  },
+  {
+   "a": 917.983,
+   "b": 921.903,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 921.903,
+   "b": 925.763,
+   "k": "l_dale_clipboard_porch",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40,
+   "vid": true
+  },
+  {
+   "a": 925.763,
+   "b": 930.363,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 930.363,
+   "b": 933.043,
+   "k": "n_hand_on_lock",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 933.043,
+   "b": 935.203,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 192.547,
+   "b": 279.019,
+   "n": 1
+  },
+  {
+   "a": 279.019,
+   "b": 349.685,
+   "n": 2
+  },
+  {
+   "a": 349.685,
+   "b": 418.418,
+   "n": 3
+  },
+  {
+   "a": 418.418,
+   "b": 528.297,
+   "n": 4
+  },
+  {
+   "a": 528.297,
+   "b": 597.004,
+   "n": 5
+  },
+  {
+   "a": 597.004,
+   "b": 687.451,
+   "n": 6
+  },
+  {
+   "a": 687.451,
+   "b": 813.399,
+   "n": 7
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   192.547,
+   202.347
+  ],
+  [
+   279.019,
+   285.039
+  ],
+  [
+   349.685,
+   357.019
+  ],
+  [
+   418.418,
+   424.282
+  ],
+  [
+   528.297,
+   534.317
+  ],
+  [
+   597.004,
+   600.524
+  ],
+  [
+   687.451,
+   694.864
+  ],
+  [
+   262.159,
+   273.039
+  ],
+  [
+   504.184,
+   512.897
+  ],
+  [
+   873.983,
+   881.603
+  ],
+  [
+   889.163,
+   901.803
+  ],
+  [
+   9.05,
+   23.78
+  ]
+ ]
+}

@@ -58,7 +58,7 @@ def gap(txt, asr):
 def asr(paths):
     res = str(OUT / f"_asr_{int(time.time())}.json")
     for t in range(3):
-        r = subprocess.run(["modal", "run", R + "vlog/claudio/modal_asr_blocks.py", "--files", ",".join(str(p) for p in paths), "--out", res, "--lang", a.lang],
+        r = subprocess.run(["python", R + "vlog/claudio/groq_asr_blocks.py", "--files", ",".join(str(p) for p in paths), "--out", res, "--lang", a.lang],
                            capture_output=True, text=True, env={**os.environ, "PYTHONUTF8": "1"}, encoding="utf-8", errors="replace")
         if os.path.exists(res): return json.load(open(res, encoding="utf-8"))
         print("  ASR Modal falló, reintento:", (r.stderr or r.stdout)[-300:]); time.sleep(10)

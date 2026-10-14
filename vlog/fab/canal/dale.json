@@ -1,0 +1,21 @@
+{
+ "canal": "Dale Kessler",
+ "idioma": "en",
+ "protagonista": "dale",
+ "pron": "he",
+ "voz": "dale",
+ "cps": 14.6,
+ "avatar_pct": [
+  20,
+  32
+ ],
+ "prohibidas": [
+  "\\bfree\\b",
+  "\\bgratis\\b",
+  "https?://",
+  "\\bwww\\b",
+  "\\.com\\b",
+  "\\$\\s?\\d",
+  "\\blanguage\\b"
+ ]
+}
