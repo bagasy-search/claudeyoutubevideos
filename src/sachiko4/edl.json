@@ -7151,20 +7151,16 @@
 {
 "a": 1708.19,
 "b": 1710.223,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "agv/sachiko4/o13_microwave_inside.mp4",
-"ofs": 0.0,
+"k": "img/sachiko4/o13_microwave_inside.png",
 "z": [
-1.0,
-1.04
+1.14,
+1.18
 ],
 "o": [
 50,
 50
-]
-}
+],
+"dx": -120
 },
 {
 "a": 1710.223,
