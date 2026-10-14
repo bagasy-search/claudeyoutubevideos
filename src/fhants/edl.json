@@ -4,7 +4,8 @@
   {
    "a": 0,
    "b": 10.223,
-   "k": "counter_empty",
+   "k": "av",
+   "av": true,
    "z": [
     1.0,
     1.035
@@ -207,7 +208,7 @@
    "c": "Arc",
    "props": {
     "src": "1940s-ant-crumb-trail-farm",
-    "cap": "1950s \u00c2\u00b7 ants on a sandy trail",
+    "cap": "1950s Â· ants on a sandy trail",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -324,7 +325,7 @@
    "c": "Arc",
    "props": {
     "src": "20-mule-team-borax-ad",
-    "cap": "1940s \u00c2\u00b7 a farm kitchen stove",
+    "cap": "1940s Â· a farm kitchen stove",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -582,7 +583,7 @@
    "c": "Arc",
    "props": {
     "src": "farm-kitchen-1950s-woman-watching",
-    "cap": "1950s \u00c2\u00b7 a woman talking at home",
+    "cap": "1950s Â· a woman talking at home",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -723,7 +724,7 @@
    "c": "Arc",
    "props": {
     "src": "farm_pantry_jars",
-    "cap": "1940s \u00c2\u00b7 a family at the table",
+    "cap": "1940s Â· a family at the table",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -1074,7 +1075,7 @@
    "c": "Arc",
    "props": {
     "src": "kid-kitchen-floor-home-movie",
-    "cap": "1950s \u00c2\u00b7 a child on the kitchen rug",
+    "cap": "1950s Â· a child on the kitchen rug",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -1228,7 +1229,7 @@
    "c": "Arc",
    "props": {
     "src": "1950s-kitchen-counter",
-    "cap": "1950s \u00c2\u00b7 a kitchen counter with a mixer",
+    "cap": "1950s Â· a kitchen counter with a mixer",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -1345,7 +1346,8 @@
   {
    "a": 484.9,
    "b": 491.37,
-   "k": "casserole_bernice",
+   "k": "av",
+   "av": true,
    "z": [
     1.0,
     1.035
@@ -1397,7 +1399,7 @@
    "c": "Arc",
    "props": {
     "src": "cookie_tins_1950s",
-    "cap": "1950s \u00c2\u00b7 a kitchen serving counter",
+    "cap": "1950s Â· a kitchen serving counter",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -1627,7 +1629,7 @@
    "c": "Arc",
    "props": {
     "src": "1950s-kitchen-cookie-sheets",
-    "cap": "1950s \u00c2\u00b7 a kitchen counter with baking",
+    "cap": "1950s Â· a kitchen counter with baking",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -1729,7 +1731,7 @@
    "c": "Arc",
    "props": {
     "src": "farmhouse-sink-dishes-1950s",
-    "cap": "1950s \u00c2\u00b7 a farmhouse sink by the window",
+    "cap": "1950s Â· a farmhouse sink by the window",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -2117,7 +2119,7 @@
    "c": "Arc",
    "props": {
     "src": "farm-kitchen-shelf-1940s",
-    "cap": "1940s \u00c2\u00b7 shelves of supplies",
+    "cap": "1940s Â· shelves of supplies",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -2321,7 +2323,7 @@
    "c": "Arc",
    "props": {
     "src": "ants-window-crack-1950s",
-    "cap": "1950s \u00c2\u00b7 a farmhouse window sill",
+    "cap": "1950s Â· a farmhouse window sill",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
@@ -2459,7 +2461,7 @@
    "c": "Arc",
    "props": {
     "src": "screen_door_iowa_1940s",
-    "cap": "1950s \u00c2\u00b7 a farmhouse door",
+    "cap": "1950s Â· a farmhouse door",
     "vid": true,
     "credit": "Prelinger Archives (public domain)"
    }
