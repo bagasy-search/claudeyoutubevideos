@@ -1,0 +1,2604 @@
+{
+ "end": 897.167,
+ "shots": [
+  {
+   "a": 0,
+   "b": 10.223,
+   "k": "counter_empty",
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 10.223,
+   "b": 13.33,
+   "k": "spray_wipe",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 13.33,
+   "b": 15.9,
+   "k": "dawn_ants",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 15.9,
+   "b": 18.98,
+   "k": "empty_counter_night",
+   "c": "Kinetic",
+   "props": {
+    "k": "empty_counter_night",
+    "words": [
+     [
+      "IT WAS NEVER YOU.",
+      15.96
+     ]
+    ]
+   }
+  },
+  {
+   "a": 18.98,
+   "b": 22.574,
+   "k": "ants_baseboard",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 22.574,
+   "b": 26.127,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 26.127,
+   "b": 29.987,
+   "k": "mother_kitchen_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 29.987,
+   "b": 32.444,
+   "k": "ant_trail_counter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 32.444,
+   "b": 35.803,
+   "k": "ant_crumb",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 35.803,
+   "b": 39.1,
+   "k": "screen_door_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 39.1,
+   "b": 43.727,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 43.727,
+   "b": 47.533,
+   "k": "story_county_barn",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 47.533,
+   "b": 52.683,
+   "k": "corn_crib_chicken_house",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 52.683,
+   "b": 55.753,
+   "k": "mother_recipe_card",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 55.753,
+   "b": 58.77,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 58.77,
+   "b": 66.653,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "farmhouse-screen-door-iowa-1940s",
+    "vid": true,
+    "cap": "Iowa farm, 1940s",
+    "credit": "FSA / Library of Congress"
+   }
+  },
+  {
+   "a": 66.653,
+   "b": 74.1,
+   "k": "item1-spray",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 7,
+    "name": "Spray the ant trail",
+    "instead": "Bait station: a jar lid with a soaked cotton ball",
+    "page": "PAGE 17",
+    "k": "item1-spray",
+    "t": 70.647
+   }
+  },
+  {
+   "a": 74.1,
+   "b": 80.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 80.547,
+   "b": 85.507,
+   "k": "1940s-ant-crumb-trail-farm",
+   "c": "Arc",
+   "props": {
+    "src": "1940s-ant-crumb-trail-farm",
+    "cap": "1950s \u00c2\u00b7 ants on a sandy trail",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 85.507,
+   "b": 89.107,
+   "k": "baseboard-swarm",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 89.107,
+   "b": 91.623,
+   "k": "turn-around-jar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 91.623,
+   "b": 98.23,
+   "k": "page17-desk",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page17.png",
+      "tab": "PAGE 17",
+      "t": 93.173
+     }
+    ],
+    "k": "page17-desk"
+   }
+  },
+  {
+   "a": 98.23,
+   "b": 101.837,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 101.837,
+   "b": 106.097,
+   "k": "window-corner-loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 106.097,
+   "b": 110.437,
+   "k": "crumb-nest-crack",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 110.437,
+   "b": 114.493,
+   "k": "sunny-sill-note",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 114.493,
+   "b": 120.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 120.5,
+   "b": 127.393,
+   "k": "item2_heaping_spoon",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 7,
+    "name": "Heaping spoonful of borax",
+    "instead": "1 1/2 tbsp, measured level",
+    "page": "PAGE 18",
+    "k": "item2_heaping_spoon",
+    "t": 122.44
+   }
+  },
+  {
+   "a": 127.393,
+   "b": 132.273,
+   "k": "20-mule-team-borax-ad",
+   "c": "Arc",
+   "props": {
+    "src": "20-mule-team-borax-ad",
+    "cap": "1940s \u00c2\u00b7 a farm kitchen stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 132.273,
+   "b": 138.88,
+   "k": "kitchen_book_open",
+   "c": "PageUp",
+   "props": {
+    "k": "kitchen_book_open",
+    "caption": {
+     "txt": "too much borax kills them before they carry it home.",
+     "t": 135.253
+    },
+    "pages": [
+     {
+      "src": "page18.png",
+      "tab": "PAGE 18",
+      "t": 133.793
+     }
+    ]
+   }
+  },
+  {
+   "a": 138.88,
+   "b": 142.077,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 142.077,
+   "b": 146.287,
+   "k": "sugar_cup_measure",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 146.287,
+   "b": 149.913,
+   "k": "borax_tablespoon",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 149.913,
+   "b": 152.26,
+   "k": "warm_water_measure",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 152.26,
+   "b": 156.534,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 156.534,
+   "b": 159.78,
+   "k": "ten_minutes_clock",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 159.78,
+   "b": 162.607,
+   "k": "ant_trail_nest",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 162.607,
+   "b": 166.473,
+   "k": "sill_few_ants",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 166.473,
+   "b": 171.133,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 171.133,
+   "b": 175.207,
+   "k": "pocket_change_batch",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 175.207,
+   "b": 177.66,
+   "k": "clean_counter_night",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 177.66,
+   "b": 181.28,
+   "k": "mother_notebook",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 181.28,
+   "b": 184.726,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 184.726,
+   "b": 191.293,
+   "k": "old_pages",
+   "c": "BigNumber",
+   "props": {
+    "num": 30,
+    "unit": "OLD WAYS",
+    "txt": "one page each",
+    "k": "old_pages",
+    "t": 184.873,
+    "dur": 6.6
+   }
+  },
+  {
+   "a": 191.293,
+   "b": 194.933,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 194.933,
+   "b": 200.013,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 200.013,
+   "b": 203.593,
+   "k": "sugar_tin_phone",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 203.593,
+   "b": 208.107,
+   "k": "windowsill_towel",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 208.107,
+   "b": 212.81,
+   "k": "bait_counter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 212.81,
+   "b": 219.087,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 219.087,
+   "b": 221.917,
+   "k": "ants_cap",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 221.917,
+   "b": 226.934,
+   "k": "farm-kitchen-1950s-woman-watching",
+   "c": "Arc",
+   "props": {
+    "src": "farm-kitchen-1950s-woman-watching",
+    "cap": "1950s \u00c2\u00b7 a woman talking at home",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 226.934,
+   "b": 235.67,
+   "k": "ant_crowd_spray",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 7,
+    "name": "Spraying the ants on the bait cap",
+    "instead": "Cotton-ball lids set along the trail, left alone",
+    "k": "ant_crowd_spray",
+    "k2": "cotton_lids",
+    "t": 233.593
+   }
+  },
+  {
+   "a": 235.67,
+   "b": 240.043,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 240.043,
+   "b": 243.58,
+   "k": "cotton_lid_set",
+   "c": "Kinetic",
+   "props": {
+    "k": "cotton_lid_set",
+    "words": [
+     [
+      "ONE SOAKED COTTON BALL",
+      240.84
+     ],
+     [
+      "IN EACH LID",
+      242.44
+     ]
+    ]
+   }
+  },
+  {
+   "a": 243.58,
+   "b": 246.54,
+   "k": "loretta_lids_along_trail",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 246.54,
+   "b": 254.514,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "lid_day1",
+      "t": 246.54,
+      "prompt": "Canning jar lid with a soaked cotton ball on a wooden shelf, a few ants crawling on the cotton, day one, ordinary window light, phone snapshot."
+     },
+     {
+      "k": "lid_crowd",
+      "t": 247.94,
+      "prompt": "The same jar lid on a wooden shelf, now covered in a crowd of small black ants on the cotton, a day later, ordinary kitchen light, phone snapshot."
+     },
+     {
+      "k": "ant_droplet",
+      "t": 251.64,
+      "prompt": "Macro photo of a small black ant carrying a tiny sugary droplet on a damp cotton fiber, shallow focus, real kitchen shelf behind it."
+     }
+    ]
+   }
+  },
+  {
+   "a": 254.514,
+   "b": 257.193,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 257.193,
+   "b": 264.887,
+   "k": "borax_jar_tape",
+   "c": "Careful",
+   "props": {
+    "k": "borax_jar_tape",
+    "txt": "Borax is harmful if swallowed.",
+    "tag": "KEEP AWAY FROM KIDS & PETS",
+    "t": 257.373
+   }
+  },
+  {
+   "a": 264.887,
+   "b": 267.897,
+   "k": "out_of_reach_stove",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 267.897,
+   "b": 271.607,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 271.607,
+   "b": 276.777,
+   "k": "farm_pantry_jars",
+   "c": "Arc",
+   "props": {
+    "src": "farm_pantry_jars",
+    "cap": "1940s \u00c2\u00b7 a family at the table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 276.777,
+   "b": 280.927,
+   "k": "mother_shelf_lids_1940s",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 280.927,
+   "b": 285.377,
+   "k": "loretta_counter_learned",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 285.377,
+   "b": 290.407,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 290.407,
+   "b": 293.497,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 293.497,
+   "b": 296.187,
+   "k": "jar_lid_row",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 296.187,
+   "b": 299.137,
+   "k": "loretta_lifts_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 299.137,
+   "b": 302.787,
+   "k": "girl_hand_ant",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 302.787,
+   "b": 306.673,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 306.673,
+   "b": 313.723,
+   "k": "mem_wrist_1951",
+   "c": "Memory",
+   "props": {
+    "k": "mem_wrist_1951",
+    "t": 306.84,
+    "caption": "\"Let them eat, honey.\"",
+    "date": "Fall 1951"
+   }
+  },
+  {
+   "a": 313.723,
+   "b": 316.81,
+   "k": "dark_shelf_kitchen",
+   "c": "Kinetic",
+   "props": {
+    "k": "dark_shelf_kitchen",
+    "words": [
+     [
+      "I didn't understand her then.",
+      313.833
+     ],
+     [
+      "I do now.",
+      315.713
+     ]
+    ]
+   }
+  },
+  {
+   "a": 316.81,
+   "b": 319.384,
+   "k": "ants_sugar_bag",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 319.384,
+   "b": 323.216,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 323.216,
+   "b": 326.447,
+   "k": "bait_station_corner",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 326.447,
+   "b": 329.047,
+   "k": "baseboard_ants_bait",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 329.047,
+   "b": 336.62,
+   "k": "rag_counter_grab",
+   "c": "ItemCard",
+   "props": {
+    "k": "rag_counter_grab",
+    "prompt": "Kitchen counter with a folded dish rag beside a sink, a small line of ants on the backsplash, mundane light, hand only at the edge of frame reaching for the rag",
+    "n": 4,
+    "name": "Grab a rag and wipe",
+    "instead": "Bait station on the trail",
+    "of": 7,
+    "page": "PAGE 19",
+    "t": 335.46
+   }
+  },
+  {
+   "a": 336.62,
+   "b": 339.22,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 339.22,
+   "b": 347.353,
+   "k": "book_table_p19",
+   "c": "PageUp",
+   "props": {
+    "k": "book_table_p19",
+    "prompt": "Worn paperback lying open on a faded oilcloth kitchen table, October morning light, a coffee cup beside it, no people",
+    "pages": [
+     {
+      "src": "page19.png",
+      "tab": "PAGE 19",
+      "t": 340.54
+     }
+    ]
+   }
+  },
+  {
+   "a": 347.353,
+   "b": 351.273,
+   "k": "flashlight_low",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 351.273,
+   "b": 354.976,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 354.976,
+   "b": 358.42,
+   "k": "flashlight_hand_baseboard",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 358.42,
+   "b": 360.8,
+   "k": "loretta_window_flashlight",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 360.8,
+   "b": 367.193,
+   "k": "kitchen_wall_pins",
+   "c": "Pins",
+   "props": {
+    "k": "kitchen_wall_pins",
+    "head": "WHERE THEY GET IN",
+    "pins": [
+     {
+      "n": 1,
+      "txt": "window corner",
+      "t": 361.8,
+      "x": 78,
+      "y": 40
+     },
+     {
+      "n": 2,
+      "txt": "a crack",
+      "t": 362.86,
+      "x": 52,
+      "y": 62
+     },
+     {
+      "n": 3,
+      "txt": "a pipe",
+      "t": 363.76,
+      "x": 30,
+      "y": 82
+     }
+    ]
+   }
+  },
+  {
+   "a": 367.193,
+   "b": 371.603,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 371.603,
+   "b": 374.333,
+   "k": "caulk_crack_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 374.333,
+   "b": 376.993,
+   "k": "caulk_tube",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 376.993,
+   "b": 380.913,
+   "k": "loretta_trail_map",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 380.913,
+   "b": 385.433,
+   "k": "flashlight_drawer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 385.433,
+   "b": 391.43,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 391.43,
+   "b": 396.25,
+   "k": "kid-kitchen-floor-home-movie",
+   "c": "Arc",
+   "props": {
+    "src": "kid-kitchen-floor-home-movie",
+    "cap": "1950s \u00c2\u00b7 a child on the kitchen rug",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 396.25,
+   "b": 399.267,
+   "k": "flash_low_tile",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 399.267,
+   "b": 402.807,
+   "k": "loretta_thread_light",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 402.807,
+   "b": 407.75,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 407.75,
+   "b": 410.41,
+   "k": "knees_beside_him",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 410.41,
+   "b": 414.103,
+   "k": "hands_flashlight_floor",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 414.103,
+   "b": 418.727,
+   "k": "loretta_kneel_supper",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 418.727,
+   "b": 421.777,
+   "k": "danny_smiling_floor",
+   "c": "Kinetic",
+   "props": {
+    "k": "danny_smiling_floor",
+    "words": [
+     [
+      "NOBODY IN THIS HOUSE",
+      418.907
+     ],
+     [
+      "WAS EVER THAT PROUD",
+      420.007
+     ]
+    ]
+   }
+  },
+  {
+   "a": 421.777,
+   "b": 425.503,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 425.503,
+   "b": 428.55,
+   "k": "ant_door_week",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 428.55,
+   "b": 431.79,
+   "k": "cucumber_saucer",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 431.79,
+   "b": 439.227,
+   "k": "peel_saucer_counter",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 7,
+    "name": "Saucer of cucumber peels",
+    "instead": "Chalk line and bay leaves",
+    "page": "PAGE 4",
+    "k": "peel_saucer_counter",
+    "t": 433.247
+   }
+  },
+  {
+   "a": 439.227,
+   "b": 442.127,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 442.127,
+   "b": 446.597,
+   "k": "1950s-kitchen-counter",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-kitchen-counter",
+    "cap": "1950s \u00c2\u00b7 a kitchen counter with a mixer",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 446.597,
+   "b": 450.307,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "old": {
+     "k": "cucumber_saucer",
+     "txt": "Saucer of cucumber peels on the counter"
+    },
+    "neu": {
+     "k": "chalk_sill",
+     "txt": "Thick line of plain sidewalk chalk across the sill"
+    },
+    "t": 447.627,
+    "head": "What most homes do today",
+    "oldHead": "What most homes do today"
+   }
+  },
+  {
+   "a": 450.307,
+   "b": 453.284,
+   "k": "chalk_sill",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 453.284,
+   "b": 458.846,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 458.846,
+   "b": 462.713,
+   "k": "ant_trail",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 462.713,
+   "b": 465.197,
+   "k": "ants_turn_back",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 465.197,
+   "b": 473.733,
+   "k": "page22_book",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page22.png",
+      "tab": "PAGE 22",
+      "t": 466.76
+     }
+    ],
+    "k": "page22_book"
+   }
+  },
+  {
+   "a": 473.733,
+   "b": 480.156,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 480.156,
+   "b": 484.9,
+   "k": "chalk_line_bait_jar",
+   "c": "Kinetic",
+   "props": {
+    "k": "chalk_line_bait_jar",
+    "prompt": "Thick white chalk line across a worn wooden threshold, a small jar with a punched lid behind it on the floor, plain daylight",
+    "words": [
+     [
+      "CHALK IS A FENCE",
+      480.34
+     ],
+     [
+      "ONLY AS GOOD AS THE BAIT BEHIND IT",
+      482.3
+     ]
+    ]
+   }
+  },
+  {
+   "a": 484.9,
+   "b": 491.37,
+   "k": "casserole_bernice",
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 491.37,
+   "b": 494.323,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 494.323,
+   "b": 498.033,
+   "k": "ants_linoleum",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 498.033,
+   "b": 501.7,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "ants_toward_door_close",
+      "t": 498.033,
+      "prompt": "Close view of a thin line of ants crossing old speckled linoleum toward a painted basement doorway, fluorescent church-kitchen light"
+     },
+     {
+      "k": "basement_door",
+      "t": 500.053
+     }
+    ]
+   }
+  },
+  {
+   "a": 501.7,
+   "b": 505.537,
+   "k": "cookie_tins_1950s",
+   "c": "Arc",
+   "props": {
+    "src": "cookie_tins_1950s",
+    "cap": "1950s \u00c2\u00b7 a kitchen serving counter",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 505.537,
+   "b": 509.167,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 509.167,
+   "b": 512.673,
+   "k": "chalk_doorway",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 512.673,
+   "b": 516.167,
+   "k": "sat_back_heels",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 516.167,
+   "b": 518.47,
+   "k": "bait_behind_line",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 518.47,
+   "b": 522.213,
+   "k": "casserole_bernice",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 522.213,
+   "b": 524.533,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 524.533,
+   "b": 535.09,
+   "k": "page_desk",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page22.png",
+      "tab": "PAGE 22",
+      "t": 525.913
+     }
+    ],
+    "k": "page_desk"
+   }
+  },
+  {
+   "a": 535.09,
+   "b": 542.83,
+   "k": "counter_pins",
+   "c": "Pins",
+   "props": {
+    "k": "counter_pins",
+    "head": "WHERE THE ANTS GO",
+    "pins": [
+     {
+      "n": 1,
+      "txt": "Sugar bowl",
+      "t": 535.28,
+      "x": 28,
+      "y": 60
+     },
+     {
+      "n": 2,
+      "txt": "Flour",
+      "t": 536.32,
+      "x": 50,
+      "y": 58
+     },
+     {
+      "n": 3,
+      "txt": "Cinnamon tin",
+      "t": 537.98,
+      "x": 72,
+      "y": 55
+     }
+    ]
+   }
+  },
+  {
+   "a": 542.83,
+   "b": 546.01,
+   "k": "crumb_line_counter",
+   "c": "Kinetic",
+   "props": {
+    "k": "crumb_line_counter",
+    "txt": "THEY FOLLOW CRUMBS",
+    "tag": "CRUMB TRAIL",
+    "words": [
+     [
+      "BUGS DON'T READ RECIPES",
+      543.56
+     ],
+     [
+      "THEY FOLLOW CRUMBS",
+      545.12
+     ]
+    ]
+   }
+  },
+  {
+   "a": 546.01,
+   "b": 551.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 551.5,
+   "b": 554.74,
+   "k": "book_page_notes",
+   "c": "Note",
+   "props": {
+    "k": "book_page_notes",
+    "lines": [
+     {
+      "txt": "One per page,",
+      "t": 551.5
+     },
+     {
+      "txt": "what each costs,",
+      "t": 552.5
+     },
+     {
+      "txt": "what it works on.",
+      "t": 553.9
+     }
+    ],
+    "sig": "Loretta"
+   }
+  },
+  {
+   "a": 554.74,
+   "b": 568.067,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "t": 556.247,
+    "k": "book_cover",
+    "txt": "Point your phone at the little square on the screen"
+   }
+  },
+  {
+   "a": 568.067,
+   "b": 574.697,
+   "k": "spray_cookie_sheets",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 7,
+    "name": "Strongest spray by the cookie sheets",
+    "instead": "3% hydrogen peroxide, brown spray bottle",
+    "page": "PAGE 21",
+    "k": "spray_cookie_sheets",
+    "t": 571.8
+   }
+  },
+  {
+   "a": 574.697,
+   "b": 577.833,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 577.833,
+   "b": 582.013,
+   "k": "ant_line_counter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 582.013,
+   "b": 586.923,
+   "k": "1950s-kitchen-cookie-sheets",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-kitchen-cookie-sheets",
+    "cap": "1950s \u00c2\u00b7 a kitchen counter with baking",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 586.923,
+   "b": 590.753,
+   "k": "peroxide_bottle_hand",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 590.753,
+   "b": 594.356,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 594.356,
+   "b": 599.107,
+   "k": "paper_towel_trail",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 599.107,
+   "b": 601.88,
+   "k": "scent_trail_wiped",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 601.88,
+   "b": 605.707,
+   "k": "dark_cabinet_towel",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 605.707,
+   "b": 611.73,
+   "k": "night_rule_bg",
+   "c": "PageUp",
+   "props": {
+    "k": "night_rule_bg",
+    "pages": [
+     {
+      "src": "page23.png",
+      "tab": "PAGE 23",
+      "t": 607.12
+     }
+    ]
+   }
+  },
+  {
+   "a": 611.73,
+   "b": 615,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 615,
+   "b": 620.2,
+   "k": "drip_under_sink",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 620.2,
+   "b": 625.693,
+   "k": "farmhouse-sink-dishes-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "farmhouse-sink-dishes-1950s",
+    "cap": "1950s \u00c2\u00b7 a farmhouse sink by the window",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 625.693,
+   "b": 634.967,
+   "k": "under_sink_item7",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 7,
+    "name": "Waiting for spring",
+    "instead": "Food-grade diatomaceous earth along the baseboards",
+    "page": "PAGE 25",
+    "k": "under_sink_item7",
+    "t": 630.987
+   }
+  },
+  {
+   "a": 634.967,
+   "b": 637.587,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 637.587,
+   "b": 644.557,
+   "k": "de_bag_garden_store",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page25.png",
+      "tab": "PAGE 25",
+      "t": 639.147
+     }
+    ],
+    "k": "de_bag_garden_store"
+   }
+  },
+  {
+   "a": 644.557,
+   "b": 648.377,
+   "k": "dust_baseboard_line",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 648.377,
+   "b": 654.21,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 654.21,
+   "b": 659.39,
+   "k": "behind_stove_fridge",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 659.39,
+   "b": 671.286,
+   "k": "de_rules_bag",
+   "c": "Checklist",
+   "props": {
+    "head": "DE RULES",
+    "items": [
+     {
+      "txt": "Re-apply after you mop",
+      "t": 659.56
+     },
+     {
+      "txt": "Wear a dust mask",
+      "t": 663.28
+     },
+     {
+      "txt": "Keep it away from pets",
+      "t": 665.22
+     },
+     {
+      "txt": "FOOD-GRADE only, not pool-grade",
+      "t": 667.7
+     }
+    ],
+    "k": "de_rules_bag"
+   }
+  },
+  {
+   "a": 671.286,
+   "b": 674.36,
+   "k": "frost_foundation",
+   "c": "Kinetic",
+   "props": {
+    "k": "frost_foundation",
+    "words": [
+     [
+      "CLOSE THAT ROAD",
+      671.4
+     ],
+     [
+      "BEFORE THE FIRST SNOW",
+      672.5
+     ]
+    ]
+   }
+  },
+  {
+   "a": 674.36,
+   "b": 679.49,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 679.49,
+   "b": 682.81,
+   "k": "honest_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 682.81,
+   "b": 686.577,
+   "k": "mud_tubes_foundation",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 686.577,
+   "b": 689.54,
+   "k": "pointing_foundation",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 689.54,
+   "b": 693.726,
+   "k": "bites_arm",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 693.726,
+   "b": 698.284,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 698.284,
+   "b": 701.957,
+   "k": "bait_jar_high",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 701.957,
+   "b": 704.41,
+   "k": "jar_high_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 704.41,
+   "b": 708.957,
+   "k": "pantry_sills",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 708.957,
+   "b": 713.01,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 713.01,
+   "b": 717.633,
+   "k": "wet_wood_ants",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 717.633,
+   "b": 721.893,
+   "k": "ants_window_day",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 721.893,
+   "b": 725.603,
+   "k": "tally_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 725.603,
+   "b": 730.183,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 730.183,
+   "b": 746.373,
+   "k": "ant_kitchen",
+   "c": "GoneList",
+   "props": {
+    "k": "ant_kitchen",
+    "items": [
+     {
+      "n": 1,
+      "txt": "bait the trail",
+      "t": 730.313,
+      "x": 50,
+      "y": 70
+     },
+     {
+      "n": 2,
+      "txt": "keep the bait weak",
+      "t": 735.173,
+      "x": 30,
+      "y": 55
+     },
+     {
+      "n": 3,
+      "txt": "jar with holes up high",
+      "t": 736.813,
+      "x": 80,
+      "y": 20
+     },
+     {
+      "n": 4,
+      "txt": "follow the trail",
+      "t": 741.473,
+      "x": 40,
+      "y": 85
+     },
+     {
+      "n": 5,
+      "txt": "chalk line on the sill",
+      "t": 744.273,
+      "x": 75,
+      "y": 40
+     }
+    ],
+    "head": "THE SEVEN TRICKS",
+    "fade": 1.5
+   }
+  },
+  {
+   "a": 746.373,
+   "b": 751.383,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 751.383,
+   "b": 755.657,
+   "k": "dry_kitchen_night",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 755.657,
+   "b": 763.13,
+   "k": "note_card_table",
+   "c": "Note",
+   "props": {
+    "k": "note_card_table",
+    "lines": [
+     {
+      "txt": "Close the door,",
+      "t": 755.84
+     },
+     {
+      "txt": "take away the food,",
+      "t": 756.96
+     },
+     {
+      "txt": "make them want to leave.",
+      "t": 758.44
+     }
+    ],
+    "sig": "Mother"
+   }
+  },
+  {
+   "a": 763.13,
+   "b": 766.39,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 766.39,
+   "b": 771.313,
+   "k": "farm-kitchen-shelf-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "farm-kitchen-shelf-1940s",
+    "cap": "1940s \u00c2\u00b7 shelves of supplies",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 771.313,
+   "b": 775.89,
+   "k": "bait_beside_invoice",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 775.89,
+   "b": 779.976,
+   "k": "bait_chalk_peroxide",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 779.976,
+   "b": 785.197,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 785.197,
+   "b": 791.377,
+   "k": "counter_empty",
+   "c": "DropList",
+   "props": {
+    "k": "counter_empty",
+    "items": [
+     {
+      "label": "SUGAR CANISTER",
+      "txt": "sugar canister",
+      "t": 785.34
+     },
+     {
+      "label": "SYRUP JAR",
+      "txt": "syrup jar",
+      "t": 787.7
+     },
+     {
+      "label": "BREAD BOX",
+      "txt": "bread box",
+      "t": 789.687
+     }
+    ]
+   }
+  },
+  {
+   "a": 791.377,
+   "b": 796.127,
+   "k": "sugar_ants",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 796.127,
+   "b": 799.207,
+   "k": "march_calendar",
+   "c": "Kinetic",
+   "props": {
+    "k": "march_calendar",
+    "words": [
+     [
+      "So be ready before they are.",
+      796.287
+     ]
+    ]
+   }
+  },
+  {
+   "a": 799.207,
+   "b": 802.927,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 802.927,
+   "b": 807.277,
+   "k": "book_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 807.277,
+   "b": 810.887,
+   "k": "book_pages",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 810.887,
+   "b": 815.147,
+   "k": "sink_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 815.147,
+   "b": 819.687,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 819.687,
+   "b": 823.477,
+   "k": "jar_lids_shelf",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 823.477,
+   "b": 828.173,
+   "k": "lids_bait_table",
+   "c": "Note",
+   "props": {
+    "k": "lids_bait_table",
+    "lines": [
+     {
+      "txt": "Don't do that.",
+      "t": 823.627
+     },
+     {
+      "txt": "Tonight, mix the weak bait",
+      "t": 824.793
+     },
+     {
+      "txt": "and set out three lids.",
+      "t": 826.913
+     }
+    ]
+   }
+  },
+  {
+   "a": 828.173,
+   "b": 831.773,
+   "k": "coffee_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 831.773,
+   "b": 835.083,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 835.083,
+   "b": 839.927,
+   "k": "ants-window-crack-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "ants-window-crack-1950s",
+    "cap": "1950s \u00c2\u00b7 a farmhouse window sill",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 839.927,
+   "b": 843.677,
+   "k": "thanksgiving_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 843.677,
+   "b": 850.71,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "name": "PhotoSeq",
+    "photos": [
+     {
+      "k": "thanks_table",
+      "prompt": "Loretta's farmhouse dining table set with plates and folded napkins for Thanksgiving company, late October morning light through a window, mundane, not staged",
+      "t": 843.893
+     },
+     {
+      "k": "pencil_list",
+      "prompt": "a yellow pencil and a handwritten grocery list on a kitchen table beside a coffee cup, plain farmhouse kitchen, October daylight",
+      "t": 845.933
+     }
+    ]
+   }
+  },
+  {
+   "a": 850.71,
+   "b": 858.5,
+   "k": "clean_dining_room",
+   "c": "Thumb",
+   "props": {
+    "name": "Thumb",
+    "thumb": "thumb_clean_guests",
+    "tag": "MY OTHER CHANNEL",
+    "k": "clean_dining_room",
+    "push": true,
+    "words": [
+     [
+      "9 Things Thanksgiving Guests Notice First",
+      851.927
+     ],
+     [
+      "in Your House",
+      854.587
+     ],
+     [
+      "Clean Them This Week",
+      855.647
+     ],
+     [
+      "The Church Lady Way",
+      856.727
+     ]
+    ]
+   }
+  },
+  {
+   "a": 858.5,
+   "b": 862.443,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 862.443,
+   "b": 866.213,
+   "k": "calendar_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 866.213,
+   "b": 868.587,
+   "k": "loretta_spoon_farm",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 868.587,
+   "b": 872.42,
+   "k": "kitchen_window",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 872.42,
+   "b": 876.15,
+   "k": "loretta_kettle_stove",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 876.15,
+   "b": 880.22,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 880.22,
+   "b": 884.68,
+   "k": "screen_door_iowa_1940s",
+   "c": "Arc",
+   "props": {
+    "src": "screen_door_iowa_1940s",
+    "cap": "1950s \u00c2\u00b7 a farmhouse door",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 884.68,
+   "b": 889.116,
+   "k": "coat_stove_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 889.116,
+   "b": 892.323,
+   "k": "snow_yard_window",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 892.323,
+   "b": 897.167,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  }
+ ],
+ "overlays": [
+  {
+   "a": 191.293,
+   "b": 194.933,
+   "c": "Kicker",
+   "props": {
+    "txt": "ALL 7 IN THE DESCRIPTION",
+    "hand": true
+   }
+  },
+  {
+   "a": 290.407,
+   "b": 293.497,
+   "c": "Kicker",
+   "props": {
+    "txt": "WINDOW OF LIGHT",
+    "hand": true,
+    "red": false
+   }
+  }
+ ],
+ "counts": [
+  {
+   "a": 66.653,
+   "b": 120.5,
+   "n": 1
+  },
+  {
+   "a": 120.5,
+   "b": 226.934,
+   "n": 2
+  },
+  {
+   "a": 226.934,
+   "b": 329.047,
+   "n": 3
+  },
+  {
+   "a": 329.047,
+   "b": 431.79,
+   "n": 4
+  },
+  {
+   "a": 431.79,
+   "b": 568.067,
+   "n": 5
+  },
+  {
+   "a": 568.067,
+   "b": 625.693,
+   "n": 6
+  },
+  {
+   "a": 625.693,
+   "b": 659.39,
+   "n": 7
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   66.653,
+   74.1
+  ],
+  [
+   120.5,
+   127.393
+  ],
+  [
+   226.934,
+   235.67
+  ],
+  [
+   329.047,
+   336.62
+  ],
+  [
+   431.79,
+   439.227
+  ],
+  [
+   568.067,
+   574.697
+  ],
+  [
+   625.693,
+   634.967
+  ],
+  [
+   554.74,
+   568.067
+  ],
+  [
+   730.183,
+   746.373
+  ],
+  [
+   850.71,
+   858.5
+  ]
+ ]
+}
