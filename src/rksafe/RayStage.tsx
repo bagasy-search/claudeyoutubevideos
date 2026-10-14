@@ -93,7 +93,7 @@ export const PhotoBed: React.FC<{ src?: string; dim?: number }> = ({ src, dim = 
 // ── CLIP a sangre: el plano real (Ray demostrando). OffthreadVideo SIEMPRE ────────────────────
 export const Clip: React.FC<{ src: string; rate?: number }> = ({ src, rate = 1 }) => {
   const frame = useCurrentFrame();
-  const a = enter(frame, 6);
+  const a = 1; // sin fundido desde negro: con corte seco daba 0,2 s oscuro (wbcanetoad 13-oct)
   const z = interpolate(frame, [0, 180], [1.012, 1.03], { extrapolateLeft: "clamp", extrapolateRight: "extend", easing: Easing.linear });
   const x = interpolate(frame, [0, 180], [-0.32, 0.32], { extrapolateLeft: "clamp", extrapolateRight: "extend", easing: Easing.linear });
   return (
