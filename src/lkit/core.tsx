@@ -29,6 +29,7 @@ export type KitCfg = {
   arcDir: string; // carpeta de public/ con los cortes de archivo (mp4)
   clipDir: string; // carpeta de public/ con los clips de fotos animadas
   avDir: string; // carpeta de public/ con los reels de avatar
+  nofx?: boolean; // true = sin grano ni grade (regla Sachiko: máximo realismo)
   av?: Win[]; // ventanas del avatar (avwin.json → .win); sin esto, los componentes con avatar usan foto
 };
 export const KCFG: KitCfg = { imgDir: "img/lkit_demo", ext: "png", grain: "img/lkit_demo/grain.png", qr: "qr.jpg", cover: "book_cover.png", arcDir: "arc", clipDir: "clips", avDir: "av" };
@@ -67,10 +68,10 @@ export const avAt = (t: number) => { const w = avWin(t); return w.off + (t - w.m
 export const avSrc = (t: number) => staticFile(`${KCFG.avDir}/reel${avWin(t).reel}.mp4`);
 
 // ── capas comunes ──
-export const Grain: React.FC = () => (
+export const Grain: React.FC = () => KCFG.nofx ? null : (
   <AbsoluteFill style={{ pointerEvents: "none", backgroundImage: `url(${staticFile(KCFG.grain)})`, backgroundRepeat: "repeat", opacity: 0.06, mixBlendMode: "overlay" }} />
 );
-export const Grade: React.FC<{ warm?: number; vig?: number }> = ({ warm = 1, vig = 0.32 }) => (
+export const Grade: React.FC<{ warm?: number; vig?: number }> = ({ warm = 1, vig = 0.32 }) => KCFG.nofx ? null : (
   <AbsoluteFill style={{ pointerEvents: "none", background:
     `linear-gradient(180deg, rgba(255,236,200,${0.08 * warm}) 0%, rgba(255,236,200,0) 40%, rgba(24,18,36,0.14) 100%), radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 55%, rgba(14,10,22,${vig}) 100%)` }} />
 );

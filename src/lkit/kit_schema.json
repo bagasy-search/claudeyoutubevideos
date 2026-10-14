@@ -133,6 +133,16 @@
     "bed": {
      "type": "image",
      "required": false
+    },
+    "strike": {
+     "type": "boolean",
+     "required": false,
+     "desc": "cross the name out at t (default true)"
+    },
+    "label": {
+     "type": "string",
+     "required": false,
+     "desc": "label above `instead` (default INSTEAD:)"
     }
    },
    "time_props": [
