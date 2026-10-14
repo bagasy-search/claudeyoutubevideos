@@ -38,15 +38,20 @@
 {
 "a": 4.56,
 "b": 6.387,
-"k": "img/sachiko4/h04_finger_lips.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/c06_salt_pinch.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 6.387,
@@ -65,15 +70,20 @@
 {
 "a": 7.927,
 "b": 9.567,
-"k": "img/sachiko4/h06_puzzled_bowl.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/m09_chef_sink.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
 "a": 9.567,
@@ -117,16 +127,20 @@
 {
 "a": 17.04,
 "b": 19.113,
-"k": "img/sachiko4/h08_leaning_pot.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/m11_old_letter.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
 "a": 19.113,
@@ -153,8 +167,7 @@
 "o": [
 58,
 58
-],
-"dx": -120
+]
 },
 {
 "a": 25.693,
@@ -217,19 +230,24 @@
 },
 {
 "a": 59.32,
-"b": 62.62,
-"k": "img/sachiko4/t28_onigiri_three.png",
+"b": 62.22,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/t28_onigiri_three.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 62.62,
+"a": 62.22,
 "b": 65.92,
 "k": "img/sachiko4/t28_onigiri_three.png",
 "z": [
@@ -418,38 +436,28 @@
 {
 "a": 108.447,
 "b": 111.547,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/bd_288.mp4",
-"ofs": 0.0,
+"k": "img/sachiko4/c03_steam_pot.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 111.547,
 "b": 114.447,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/bd_288.mp4",
-"ofs": 3.1,
+"k": "img/sachiko4/c03_steam_pot.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-34,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 114.447,
@@ -613,39 +621,29 @@
 {
 "a": 152.367,
 "b": 155.347,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/km_268.mp4",
-"ofs": 0.0,
+"k": "img/sachiko4/s23_receipts_table.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-66,
-36
+40,
+45
 ]
-}
 },
 {
 "a": 155.347,
 "b": 158.367,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/km_268.mp4",
-"ofs": 2.98,
+"k": "img/sachiko4/s23_receipts_table.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 158.367,
@@ -906,16 +904,20 @@
 {
 "a": 231.027,
 "b": 233.713,
-"k": "img/sachiko4/m13_tiny_apt_kitchen.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/m13_tiny_apt_kitchen.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 233.713,
@@ -1434,19 +1436,24 @@
 },
 {
 "a": 361.5,
-"b": 364.76,
-"k": "img/sachiko4/t04_strainer.png",
+"b": 363.64,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/t04_strainer.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 364.76,
+"a": 363.64,
 "b": 368.1,
 "k": "img/sachiko4/t04_strainer.png",
 "z": [
@@ -2656,19 +2663,24 @@
 },
 {
 "a": 684.113,
-"b": 687.713,
-"k": "img/sachiko4/s26_knead_rice_ball.png",
+"b": 687.013,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/s26_knead_rice_ball.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-40,
+50,
 50
 ]
+}
 },
 {
-"a": 687.713,
+"a": 687.013,
 "b": 691.133,
 "k": "img/sachiko4/s26_knead_rice_ball.png",
 "z": [
@@ -2751,15 +2763,20 @@
 {
 "a": 706.847,
 "b": 709.74,
-"k": "img/sachiko4/s10_warm_vinegar.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/s10_warm_vinegar.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 709.74,
@@ -3590,19 +3607,24 @@
 },
 {
 "a": 918.587,
-"b": 921.7,
-"k": "img/sachiko4/t40_wooden_bowl.png",
+"b": 921.36,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/t40_wooden_bowl.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-66,
-58
+50,
+50
 ]
+}
 },
 {
-"a": 921.7,
+"a": 921.36,
 "b": 924.687,
 "k": "img/sachiko4/t40_wooden_bowl.png",
 "z": [
@@ -3919,8 +3941,7 @@
 "o": [
 34,
 58
-],
-"dx": 120
+]
 },
 {
 "a": 1005.987,
@@ -3967,16 +3988,20 @@
 {
 "a": 1032.713,
 "b": 1035.64,
-"k": "img/sachiko4/t33_mushy_spread.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/t33_mushy_spread.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": 120
+]
+}
 },
 {
 "a": 1035.64,
@@ -5087,38 +5112,28 @@
 {
 "a": 1316.297,
 "b": 1319.457,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/he_349.mp4",
-"ofs": 0.0,
+"k": "img/sachiko4/s29_wash_tub.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 1319.457,
 "b": 1322.297,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/he_349.mp4",
-"ofs": 3.16,
+"k": "img/sachiko4/s29_wash_tub.png",
 "z": [
-1.0,
-1.07
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ]
-}
 },
 {
 "a": 1322.297,
@@ -5244,15 +5259,20 @@
 {
 "a": 1361.297,
 "b": 1364.143,
-"k": "img/sachiko4/s34_shake_container.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/s34_shake_container.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-42,
-58
+50,
+50
 ]
+}
 },
 {
 "a": 1364.143,
@@ -5332,8 +5352,7 @@
 "o": [
 58,
 46
-],
-"dx": -120
+]
 },
 {
 "a": 1382.857,
@@ -5370,16 +5389,20 @@
 {
 "a": 1398.59,
 "b": 1401.37,
-"k": "img/sachiko4/t30_reheat_towel.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/t30_reheat_towel.mp4",
+"ofs": 0.0,
 "z": [
-1.14,
-1.18
+1.0,
+1.04
 ],
 "o": [
 50,
 50
-],
-"dx": -120
+]
+}
 },
 {
 "a": 1401.37,
@@ -5571,19 +5594,24 @@
 },
 {
 "a": 1452.25,
-"b": 1455.49,
-"k": "img/sachiko4/t43_receipt_math.png",
+"b": 1455.15,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/t43_receipt_math.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1455.49,
+"a": 1455.15,
 "b": 1458.75,
 "k": "img/sachiko4/t43_receipt_math.png",
 "z": [
@@ -6161,11 +6189,7 @@
 {
 "a": 1590.503,
 "b": 1593.063,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/rest_a.mp4",
-"ofs": 0.22,
+"k": "img/sachiko4/m08_restaurant_back.png",
 "z": [
 1.3,
 1.38
@@ -6174,7 +6198,6 @@
 42,
 36
 ]
-}
 },
 {
 "a": 1593.063,
@@ -6193,55 +6216,50 @@
 {
 "a": 1597.283,
 "b": 1600.103,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/rest_a.mp4",
-"ofs": 0.0,
+"k": "img/sachiko4/m08_restaurant_back.png",
 "z": [
-1.3,
-1.38
+1.22,
+1.3
 ],
 "o": [
-58,
-46
+40,
+45
 ]
-}
 },
 {
 "a": 1600.103,
 "b": 1603.283,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/rest_a.mp4",
-"ofs": 2.82,
+"k": "img/sachiko4/m08_restaurant_back.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 1603.283,
-"b": 1606.63,
-"k": "img/sachiko4/t46_rain_window.png",
+"b": 1606.183,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/t46_rain_window.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
-"a": 1606.63,
+"a": 1606.183,
 "b": 1610.097,
 "k": "img/sachiko4/t46_rain_window.png",
 "z": [
@@ -6375,19 +6393,24 @@
 },
 {
 "a": 1639.07,
-"b": 1642.21,
-"k": "img/sachiko4/o07_timer_kitchen.png",
+"b": 1641.97,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/o07_timer_kitchen.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1642.21,
+"a": 1641.97,
 "b": 1645.27,
 "k": "img/sachiko4/o07_timer_kitchen.png",
 "z": [
@@ -6482,39 +6505,29 @@
 {
 "a": 1664.77,
 "b": 1668.01,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/km_214.mp4",
-"ofs": 0.0,
+"k": "img/sachiko4/o03_rinse_clear.png",
 "z": [
-1.14,
-1.18
+1.22,
+1.3
 ],
 "o": [
-50,
-50
+40,
+45
 ],
 "dx": -120
-}
 },
 {
 "a": 1668.01,
 "b": 1670.77,
-"k": "",
-"c": "Clip",
-"props": {
-"p": "clips/sachiko4/km_214.mp4",
-"ofs": 3.24,
+"k": "img/sachiko4/o03_rinse_clear.png",
 "z": [
-1.24,
-1.12
+1.22,
+1.3
 ],
 "o": [
 40,
-50
+45
 ]
-}
 },
 {
 "a": 1670.77,
@@ -6625,19 +6638,24 @@
 },
 {
 "a": 1695.843,
-"b": 1698.93,
-"k": "img/sachiko4/o18_kitchen_window.png",
+"b": 1698.743,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/o18_kitchen_window.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1698.93,
+"a": 1698.743,
 "b": 1702.13,
 "k": "img/sachiko4/o18_kitchen_window.png",
 "z": [
@@ -6766,15 +6784,20 @@
 {
 "a": 1734.057,
 "b": 1736.683,
-"k": "img/sachiko4/o15_fridge_shelf.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/o15_fridge_shelf.mp4",
+"ofs": 0.0,
 "z": [
 1.0,
-1.07
+1.04
 ],
 "o": [
 50,
 50
 ]
+}
 },
 {
 "a": 1736.683,
@@ -6872,15 +6895,20 @@
 {
 "a": 1758.137,
 "b": 1760.917,
-"k": "img/sachiko4/o20_wall_clock.png",
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/o20_wall_clock.mp4",
+"ofs": 0.0,
 "z": [
-1.3,
-1.38
+1.0,
+1.04
 ],
 "o": [
-58,
-36
+50,
+50
 ]
+}
 },
 {
 "a": 1760.917,
@@ -6992,19 +7020,24 @@
 },
 {
 "a": 1786.83,
-"b": 1790.257,
-"k": "img/sachiko4/o22_receipts_pencil.png",
+"b": 1789.73,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko4/o22_receipts_pencil.mp4",
+"ofs": 0.0,
 "z": [
-1.24,
-1.12
+1.0,
+1.04
 ],
 "o": [
-60,
+50,
 50
 ]
+}
 },
 {
-"a": 1790.257,
+"a": 1789.73,
 "b": 1793.777,
 "k": "img/sachiko4/o22_receipts_pencil.png",
 "z": [
