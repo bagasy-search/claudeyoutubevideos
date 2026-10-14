@@ -1,0 +1,2564 @@
+{
+ "end": 932.247,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 3.18,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 3.18,
+   "b": 4.58,
+   "k": "l_pour_acid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 4.58,
+   "b": 5.6,
+   "k": "n_night_sink",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 5.6,
+   "b": 8.58,
+   "k": "n_pvc_joint_soft",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 8.58,
+   "b": 11.06,
+   "k": "n_drip_cabinet",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 11.06,
+   "b": 14.22,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 14.22,
+   "b": 18.74,
+   "k": "n_wet_cabinet",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "«me dijeron que le eche ácido…",
+      "t": 14.22
+     },
+     {
+      "txt": "…y ahora pierde agua por el caño»",
+      "t": 16.38
+     }
+    ],
+    "sig": "un comentario",
+    "k": "n_wet_cabinet"
+   }
+  },
+  {
+   "a": 18.74,
+   "b": 22.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 22.12,
+   "b": 26.14,
+   "k": "l_store_aisle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 26.14,
+   "b": 31.54,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 31.54,
+   "b": 37.353,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "LO QUE LE HACE A TU CASA",
+    "items": [
+     {
+      "t": 31.54,
+      "name": "El caño de plástico",
+      "use": "se ablanda",
+      "k": "n_pvc_joint"
+     },
+     {
+      "t": 32.973,
+      "name": "Las gomas",
+      "use": "se gastan",
+      "k": "n_rubber_washers"
+     },
+     {
+      "t": 33.853,
+      "name": "El tapón",
+      "use": "vuelve",
+      "k": "n_clog_hair"
+     },
+     {
+      "t": 34.813,
+      "name": "Tus manos",
+      "use": "se queman",
+      "k": "n_gloves_goggles"
+     },
+     {
+      "t": 35.613,
+      "name": "El aire",
+      "use": "se llena de gas",
+      "k": "n_vapor_bucket"
+     }
+    ]
+   }
+  },
+  {
+   "a": 37.353,
+   "b": 40.833,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 40.833,
+   "b": 45.333,
+   "k": "n_kit_counter",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "1 · primero lo suave",
+      "t": 40.833
+     },
+     {
+      "txt": "2 · después lo mecánico",
+      "t": 42.253
+     },
+     {
+      "txt": "3 · lo químico, NUNCA",
+      "t": 43.413
+     }
+    ],
+    "sig": "Claudio",
+    "k": "n_kit_counter"
+   }
+  },
+  {
+   "a": 45.333,
+   "b": 48.813,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 48.813,
+   "b": 51.993,
+   "k": "l_two_bottles_sink",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 51.993,
+   "b": 61.973,
+   "k": "n_poured_drain",
+   "c": "Careful",
+   "props": {
+    "k": "n_poured_drain",
+    "tag": "AVISO · SI YA LO ECHASTE",
+    "txt": "No metas la mano. No uses el destapador de goma.",
+    "t": 56.553
+   }
+  },
+  {
+   "a": 61.973,
+   "b": 66.433,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 66.433,
+   "b": 73.12,
+   "k": "l_van_tools",
+   "c": "BigNumber",
+   "props": {
+    "num": 25,
+    "unit": "AÑOS",
+    "txt": "de plomero, casa por casa",
+    "k": "l_van_tools",
+    "t": 67.293
+   }
+  },
+  {
+   "a": 73.12,
+   "b": 75.827,
+   "k": "l_doorbell",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 75.827,
+   "b": 79.067,
+   "k": "l_kitchen_simple",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 79.067,
+   "b": 83.533,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 83.533,
+   "b": 86.013,
+   "k": "l_van_door",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 86.013,
+   "b": 90.713,
+   "k": "l_book_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "book_cover",
+      "tab": "PLOMERÍA CASERA",
+      "t": 86.013,
+      "hl": 50
+     }
+    ],
+    "k": "l_book_table"
+   }
+  },
+  {
+   "a": 90.713,
+   "b": 96.313,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 96.313,
+   "b": 101.267,
+   "k": "n_book_open",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page5",
+      "tab": "ARREGLO 1",
+      "t": 99.133,
+      "hl": 30
+     },
+     {
+      "src": "guia_cover",
+      "tab": "GUÍA DEL DESAGÜE",
+      "t": 99.813,
+      "hl": 40
+     }
+    ],
+    "k": "n_book_open"
+   }
+  },
+  {
+   "a": 101.267,
+   "b": 107.16,
+   "k": "n_invoice_book",
+   "c": "CostTag",
+   "props": {
+    "price": "1 PACK",
+    "sub": "50 arreglos + la Guía",
+    "k": "n_invoice_book",
+    "vs": {
+     "price": "1 VISITA",
+     "txt": "del plomero",
+     "t": 103.6
+    }
+   }
+  },
+  {
+   "a": 107.16,
+   "b": 111.78,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 111.78,
+   "b": 116.99,
+   "k": "l_notebook",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 116.99,
+   "b": 123.693,
+   "k": "n_pvc_joint",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 7,
+    "name": "Echarlo y dormir",
+    "instead": "lo suave primero",
+    "page": "GUÍA · PÁG 9",
+    "k": "n_pvc_joint",
+    "t": 120.733
+   }
+  },
+  {
+   "a": 123.693,
+   "b": 126.933,
+   "k": "n_bedroom_dark",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 126.933,
+   "b": 130.373,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 130.373,
+   "b": 133.633,
+   "k": "n_pvc_heat",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 133.633,
+   "b": 142.1,
+   "k": "l_points_pvc",
+   "c": "Pins",
+   "props": {
+    "k": "l_points_pvc",
+    "head": "LO QUE SE ABLANDA",
+    "pins": [
+     {
+      "x": 38,
+      "y": 45,
+      "t": 139.92,
+      "txt": "la unión"
+     },
+     {
+      "x": 62,
+      "y": 58,
+      "t": 140.5,
+      "txt": "el pegamento"
+     }
+    ]
+   }
+  },
+  {
+   "a": 142.1,
+   "b": 146.58,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 146.58,
+   "b": 150.26,
+   "k": "l_wall_open",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 150.26,
+   "b": 152.627,
+   "k": "n_joint_leak",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 152.627,
+   "b": 157.613,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "n_stain",
+      "cap": "una mancha"
+     },
+     {
+      "k": "n_drop",
+      "t": 154.893,
+      "cap": "una gota"
+     },
+     {
+      "k": "n_wet_cabinet",
+      "t": 156.153,
+      "cap": "el mueble mojado"
+     }
+    ]
+   }
+  },
+  {
+   "a": 157.613,
+   "b": 164.233,
+   "k": "n_pvc_joint_soft",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page209",
+      "tab": "GUÍA · PÁG 9",
+      "t": 158.913,
+      "hl": 22
+     },
+     {
+      "src": "page202",
+      "tab": "GUÍA · PÁG 2",
+      "t": 161.413,
+      "hl": 55
+     }
+    ],
+    "k": "n_pvc_joint_soft"
+   }
+  },
+  {
+   "a": 164.233,
+   "b": 170.113,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 170.113,
+   "b": 174.353,
+   "k": "n_kettle_boil",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 174.353,
+   "b": 181.2,
+   "k": "n_kettle_wait",
+   "c": "DoDont",
+   "props": {
+    "k": "n_kettle_wait",
+    "no": {
+     "k": "n_boiling_pour",
+     "txt": "Hirviendo",
+     "t": 180.133
+    },
+    "yes": {
+     "k": "n_hot_pour",
+     "txt": "Muy caliente",
+     "t": 178.693
+    }
+   }
+  },
+  {
+   "a": 181.2,
+   "b": 184.66,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 184.66,
+   "b": 193.0,
+   "k": "n_iron_rust_close",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 7,
+    "name": "«Mi caño es de metal»",
+    "instead": "nada de químicos fuertes",
+    "page": "GUÍA · PÁG 21",
+    "k": "n_iron_rust_close",
+    "t": 188.54
+   }
+  },
+  {
+   "a": 193.0,
+   "b": 196.313,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 196.313,
+   "b": 199.253,
+   "k": "n_iron_corroded",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 199.253,
+   "b": 202.303,
+   "k": "n_rubber_washers",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 202.303,
+   "b": 205.573,
+   "k": "l_old_house_sink",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 205.573,
+   "b": 212.387,
+   "k": "n_old_trap_iron",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page221",
+      "tab": "GUÍA · PÁG 21",
+      "t": 209.567,
+      "hl": 22
+     }
+    ],
+    "k": "n_old_trap_iron"
+   }
+  },
+  {
+   "a": 212.387,
+   "b": 217.96,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 217.96,
+   "b": 228.92,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "REVISA LAS GOMAS",
+    "page": "GUÍA · PÁG 15",
+    "steps": [
+     {
+      "t": 217.96,
+      "txt": "Balde debajo del sifón",
+      "k": "n_bucket_trap"
+     },
+     {
+      "t": 224.32,
+      "txt": "Afloja las tuercas a mano",
+      "k": "n_unscrew_nut"
+     },
+     {
+      "t": 227.3,
+      "txt": "Mira las gomas",
+      "k": "n_washer_hand"
+     }
+    ]
+   }
+  },
+  {
+   "a": 228.92,
+   "b": 232.86,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 232.86,
+   "b": 238.74,
+   "k": "n_bucket_trap",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page215",
+      "tab": "GUÍA · PÁG 15 · PASO 6",
+      "t": 233.5,
+      "hl": 68
+     }
+    ],
+    "k": "n_bucket_trap"
+   }
+  },
+  {
+   "a": 238.74,
+   "b": 244.347,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 244.347,
+   "b": 250.367,
+   "k": "n_soda_pour",
+   "c": "Thumb",
+   "props": {
+    "thumb": "th_remember.jpg",
+    "tag": "EL VIDEO DE LA TAZA",
+    "k": "n_soda_pour",
+    "words": [
+     [
+      "una",
+      245.347
+     ],
+     [
+      "taza",
+      245.687
+     ],
+     [
+      "destapa",
+      246.427
+     ],
+     [
+      "cualquier",
+      246.927
+     ],
+     [
+      "desagüe",
+      247.347
+     ]
+    ]
+   }
+  },
+  {
+   "a": 250.367,
+   "b": 252.847,
+   "k": "l_simple_tools",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 252.847,
+   "b": 256.673,
+   "k": "l_pantry",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 256.673,
+   "b": 262.98,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 262.98,
+   "b": 269.08,
+   "k": "n_clog_hair",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "of": 7,
+    "name": "«Ya bajó, listo»",
+    "instead": "sacarlo de verdad",
+    "page": "GUÍA · PÁG 9",
+    "k": "n_clog_hair",
+    "t": 267.0
+   }
+  },
+  {
+   "a": 269.08,
+   "b": 273.88,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 273.88,
+   "b": 280.04,
+   "k": "n_pipe_cut_clog",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "n_pipe_cut_clog",
+    "txt": "Le hizo un túnel: el tapón sigue ahí",
+    "stamp": "EL TÚNEL",
+    "cx": 50,
+    "cy": 50,
+    "t": 275.7
+   }
+  },
+  {
+   "a": 280.04,
+   "b": 283.94,
+   "k": "n_sink_full",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 283.94,
+   "b": 287.58,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 287.58,
+   "b": 292.92,
+   "k": "l_bottles_under",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 292.92,
+   "b": 300.653,
+   "k": "n_store_shelf",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page204",
+      "tab": "GUÍA · PÁG 4 · LOS 5 TAPONES",
+      "t": 293.9,
+      "hl": 40
+     }
+    ],
+    "k": "n_store_shelf"
+   }
+  },
+  {
+   "a": 300.653,
+   "b": 304.513,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 304.513,
+   "b": 308.513,
+   "k": "n_vinegar_soak",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 308.513,
+   "b": 312.913,
+   "k": "n_toy_drain",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 312.913,
+   "b": 316.187,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 316.187,
+   "b": 318.847,
+   "k": "n_roots_pipe",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 318.847,
+   "b": 323.137,
+   "k": "l_roots_look",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 323.137,
+   "b": 327.447,
+   "k": "n_scale_pipe",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page205",
+      "tab": "GUÍA · PÁG 5 · EL MAPA",
+      "t": 324.227,
+      "hl": 60
+     }
+    ],
+    "k": "n_scale_pipe"
+   }
+  },
+  {
+   "a": 327.447,
+   "b": 330.381,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 330.381,
+   "b": 336.583,
+   "k": "n_poured_drain",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 7,
+    "name": "Químico y después destapador",
+    "instead": "esperar y enjuagar",
+    "page": "GUÍA · PÁG 2",
+    "k": "n_poured_drain",
+    "t": 333.893
+   }
+  },
+  {
+   "a": 336.583,
+   "b": 339.193,
+   "k": "n_red_hand",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 339.193,
+   "b": 343.713,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 343.713,
+   "b": 349.713,
+   "k": "n_plunger_splash",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 349.713,
+   "b": 357.76,
+   "k": "n_splash_mirror",
+   "c": "Careful",
+   "props": {
+    "k": "n_splash_mirror",
+    "tag": "CUIDADO · GUÍA PÁG 9",
+    "txt": "Con químico adentro, lo que salpica es químico.",
+    "t": 356.233
+   }
+  },
+  {
+   "a": 357.76,
+   "b": 361.58,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 361.58,
+   "b": 372.51,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "SI YA LO ECHASTE",
+    "page": "GUÍA · PÁG 2",
+    "steps": [
+     {
+      "t": 363.02,
+      "txt": "No metas la mano",
+      "k": "n_poured_drain"
+     },
+     {
+      "t": 364.34,
+      "txt": "Nada de destapador de goma",
+      "k": "n_plunger_aside"
+     },
+     {
+      "t": 366.3,
+      "txt": "Espera",
+      "k": "n_clock_wall"
+     },
+     {
+      "t": 367.96,
+      "txt": "Enjuaga con mucha agua",
+      "k": "n_rinse"
+     },
+     {
+      "t": 370.64,
+      "txt": "Guantes y anteojos",
+      "k": "n_gloves_goggles"
+     }
+    ]
+   }
+  },
+  {
+   "a": 372.51,
+   "b": 380.26,
+   "k": "n_poured_drain",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page202",
+      "tab": "GUÍA · PÁG 2",
+      "t": 373.06,
+      "hl": 75
+     }
+    ],
+    "k": "n_poured_drain"
+   }
+  },
+  {
+   "a": 380.26,
+   "b": 385.953,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 385.953,
+   "b": 391.537,
+   "k": "l_bad_plumber_bottle",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page218",
+      "tab": "GUÍA · PÁG 18",
+      "t": 390.427,
+      "hl": 50
+     }
+    ],
+    "k": "l_bad_plumber_bottle"
+   }
+  },
+  {
+   "a": 391.537,
+   "b": 401.407,
+   "k": "l_book_table",
+   "c": "QrCard",
+   "props": {
+    "k": "l_book_table",
+    "t": 393.727,
+    "txt": "apunta tu celular aquí"
+   }
+  },
+  {
+   "a": 401.407,
+   "b": 405.813,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 405.813,
+   "b": 409.786,
+   "k": "l_two_bottles_hold",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 409.786,
+   "b": 416.66,
+   "k": "n_two_bottles",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 7,
+    "name": "Mezclar para potenciar",
+    "instead": "un producto por vez",
+    "page": "GUÍA · PÁG 9",
+    "k": "n_two_bottles",
+    "t": 414.22
+   }
+  },
+  {
+   "a": 416.66,
+   "b": 419.4,
+   "k": "n_bleach_pour",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 419.4,
+   "b": 422.78,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 422.78,
+   "b": 426.18,
+   "k": "n_vinegar_on_bleach",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 426.18,
+   "b": 432.82,
+   "k": "n_two_bottles",
+   "c": "NeverMix",
+   "props": {
+    "head": "NUNCA MEZCLES",
+    "tag": "GUÍA · PÁG 9",
+    "k": "n_two_bottles",
+    "rows": [
+     {
+      "t": 427.56,
+      "a": "Lavandina",
+      "b": [
+       "vinagre",
+       "amoníaco",
+       "ácidos"
+      ]
+     }
+    ],
+    "verdict": {
+     "t": 431.24,
+     "txt": "= GAS"
+    }
+   }
+  },
+  {
+   "a": 432.82,
+   "b": 437.42,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 437.42,
+   "b": 439.59,
+   "k": "n_bleach_jug",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 439.59,
+   "b": 443.28,
+   "k": "l_one_bottle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 443.28,
+   "b": 448.693,
+   "k": "n_two_bottles",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page209",
+      "tab": "GUÍA · PÁG 9 · NUNCA MEZCLES",
+      "t": 444.18,
+      "hl": 70
+     }
+    ],
+    "k": "n_two_bottles"
+   }
+  },
+  {
+   "a": 448.693,
+   "b": 450.933,
+   "k": "n_fumes_sink",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 450.933,
+   "b": 454.793,
+   "k": "l_window_open",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 454.793,
+   "b": 459.88,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 459.88,
+   "b": 463.2,
+   "k": "n_septic_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 463.2,
+   "b": 471.287,
+   "k": "l_pantry",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page221",
+      "tab": "GUÍA · PÁG 21",
+      "t": 469.9,
+      "hl": 35
+     }
+    ],
+    "k": "l_pantry"
+   }
+  },
+  {
+   "a": 471.287,
+   "b": 474.713,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 474.713,
+   "b": 484.213,
+   "k": "n_foam",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 7,
+    "name": "Mirar la espuma",
+    "instead": "el agua caliente al final",
+    "page": "GUÍA · PÁG 6-7",
+    "k": "n_foam",
+    "t": 480.513
+   }
+  },
+  {
+   "a": 484.213,
+   "b": 489.833,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 489.833,
+   "b": 495.303,
+   "k": "n_hot_rinse",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 495.303,
+   "b": 501.693,
+   "k": "n_foam",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page207",
+      "tab": "GUÍA · PÁG 7",
+      "t": 496.333,
+      "hl": 25
+     }
+    ],
+    "k": "n_foam"
+   }
+  },
+  {
+   "a": 501.693,
+   "b": 504.153,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 504.153,
+   "b": 506.783,
+   "k": "n_objects_tray",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 506.783,
+   "b": 509.133,
+   "k": "l_recipe_ready",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 509.133,
+   "b": 517.013,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "LA RECETA DE LA TAZA",
+    "page": "GUÍA · PÁG 6",
+    "steps": [
+     {
+      "t": 509.273,
+      "txt": "Saca lo que se vea",
+      "k": "n_pull_hair"
+     },
+     {
+      "t": 511.833,
+      "txt": "1 taza de bicarbonato, en seco",
+      "k": "n_soda_pour"
+     }
+    ]
+   }
+  },
+  {
+   "a": 517.013,
+   "b": 520.84,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 520.84,
+   "b": 525.9,
+   "k": "l_vinegar_pour",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 525.9,
+   "b": 529.36,
+   "k": "l_cover_drain",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 529.36,
+   "b": 533.113,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 533.113,
+   "b": 536.313,
+   "k": "n_hot_rinse2",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 536.313,
+   "b": 540.953,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 540.953,
+   "b": 549.513,
+   "k": "n_sink_full",
+   "c": "Checklist",
+   "props": {
+    "head": "CUÁNDO PARAR",
+    "page": "GUÍA · PÁG 7",
+    "k": "n_sink_full",
+    "items": [
+     {
+      "t": 542.213,
+      "txt": "Baja lento: repite UNA vez"
+     },
+     {
+      "t": 543.693,
+      "txt": "Dos veces como máximo"
+     },
+     {
+      "t": 547.973,
+      "txt": "No mejora: lo mecánico"
+     }
+    ]
+   }
+  },
+  {
+   "a": 549.513,
+   "b": 553.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 553.547,
+   "b": 566.707,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "LOS 5 MITOS · GUÍA PÁG 8",
+    "items": [
+     {
+      "t": 553.547,
+      "name": "La gaseosa",
+      "use": "es una bebida",
+      "k": "n_soda_drain"
+     },
+     {
+      "t": 563.807,
+      "name": "Sal gruesa",
+      "use": "no destapa",
+      "k": "n_salt_drain"
+     }
+    ]
+   }
+  },
+  {
+   "a": 566.707,
+   "b": 571.313,
+   "k": "n_soap_foam",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 571.313,
+   "b": 575.393,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 575.393,
+   "b": 581.373,
+   "k": "n_tablets",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 581.373,
+   "b": 586.287,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 586.287,
+   "b": 595.787,
+   "k": "n_plunger_aside",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 7,
+    "name": "El destapador mal usado",
+    "instead": "copa, agua y ritmo",
+    "page": "GUÍA · PÁG 10",
+    "k": "n_plunger_aside",
+    "t": 594.387
+   }
+  },
+  {
+   "a": 595.787,
+   "b": 603.287,
+   "k": "n_plunger_aside",
+   "c": "DoDont",
+   "props": {
+    "k": "n_plunger_aside",
+    "no": {
+     "k": "n_accordion",
+     "txt": "De acordeón",
+     "t": 600.667
+    },
+    "yes": {
+     "k": "n_cup_plunger",
+     "txt": "De copa",
+     "t": 598.187
+    }
+   }
+  },
+  {
+   "a": 603.287,
+   "b": 607.887,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 607.887,
+   "b": 612.647,
+   "k": "l_overflow_rag",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 612.647,
+   "b": 619.267,
+   "k": "l_plunge",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 619.267,
+   "b": 624.187,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 624.187,
+   "b": 630.327,
+   "k": "n_plunger_water",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page210",
+      "tab": "GUÍA · PÁG 10",
+      "t": 624.607,
+      "hl": 60
+     }
+    ],
+    "k": "n_plunger_water"
+   }
+  },
+  {
+   "a": 630.327,
+   "b": 632.94,
+   "k": "l_zip_strip",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 632.94,
+   "b": 636.873,
+   "k": "n_strip_hair",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 636.873,
+   "b": 641.373,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 641.373,
+   "b": 651.813,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "EL SIFÓN · PÁG 15",
+    "page": "GUÍA · PÁG 15",
+    "steps": [
+     {
+      "t": 644.973,
+      "txt": "Balde debajo",
+      "k": "n_bucket_trap"
+     },
+     {
+      "t": 646.733,
+      "txt": "Tuercas a mano",
+      "k": "n_unscrew_nut"
+     },
+     {
+      "t": 648.673,
+      "txt": "Baja el codo despacio",
+      "k": "n_trap_down"
+     }
+    ]
+   }
+  },
+  {
+   "a": 651.813,
+   "b": 655.613,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 655.613,
+   "b": 663.006,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "EL SIFÓN · PÁG 15",
+    "page": "GUÍA · PÁG 15",
+    "steps": [
+     {
+      "t": 655.613,
+      "txt": "Cepillo y agua jabonosa",
+      "k": "n_trap_brush"
+     },
+     {
+      "t": 658.793,
+      "txt": "Revisa las gomas",
+      "k": "l_change_washer"
+     },
+     {
+      "t": 660.033,
+      "txt": "Arma a mano + ¼ de vuelta",
+      "k": "n_trap_screw"
+     }
+    ]
+   }
+  },
+  {
+   "a": 663.006,
+   "b": 667.96,
+   "k": "l_trap_done",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 667.96,
+   "b": 671.3,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 671.3,
+   "b": 675.01,
+   "k": "l_grease_pipe",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 675.01,
+   "b": 680.66,
+   "k": "n_kitchen_hot",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 680.66,
+   "b": 687.153,
+   "k": "l_double_sink",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 687.153,
+   "b": 691.933,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 691.933,
+   "b": 694.823,
+   "k": "l_kitchen_trap",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 694.823,
+   "b": 700.813,
+   "k": "l_grease_pipe",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page213",
+      "tab": "GUÍA · PÁG 13",
+      "t": 694.993,
+      "hl": 50
+     }
+    ],
+    "k": "l_grease_pipe"
+   }
+  },
+  {
+   "a": 700.813,
+   "b": 706.573,
+   "k": "l_shopvac",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 706.573,
+   "b": 709.213,
+   "k": "n_shopvac_drain",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 709.213,
+   "b": 713.707,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 713.707,
+   "b": 727.787,
+   "k": "n_drains_slow",
+   "c": "Checklist",
+   "props": {
+    "head": "LAS 5 SEÑALES · LLAMA",
+    "page": "GUÍA · PÁG 17",
+    "k": "n_drains_slow",
+    "items": [
+     {
+      "t": 716.947,
+      "txt": "Varios desagües lentos a la vez"
+     },
+     {
+      "t": 719.127,
+      "txt": "El agua sube por otro lado"
+     },
+     {
+      "t": 720.967,
+      "txt": "Olor a cloaca que no se va"
+     },
+     {
+      "t": 722.747,
+      "txt": "Se tapa en menos de 2 semanas"
+     },
+     {
+      "t": 725.147,
+      "txt": "Humedad donde no debería"
+     }
+    ]
+   }
+  },
+  {
+   "a": 727.787,
+   "b": 733.047,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 733.047,
+   "b": 737.017,
+   "k": "l_phone_call",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 737.017,
+   "b": 752.753,
+   "k": "l_asks_owner",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "«¿Pueden pasar una cámara?»",
+      "t": 741.147
+     },
+     {
+      "txt": "«¿Me muestran qué encontraron?»",
+      "t": 744.773
+     },
+     {
+      "txt": "«Presupuesto por escrito»",
+      "t": 748.927
+     }
+    ],
+    "sig": "pág. 18",
+    "k": "l_asks_owner"
+   }
+  },
+  {
+   "a": 752.753,
+   "b": 757.747,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 757.747,
+   "b": 761.547,
+   "k": "n_invoice",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 761.547,
+   "b": 765.107,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 765.107,
+   "b": 769.647,
+   "k": "l_wipe_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 769.647,
+   "b": 772.597,
+   "k": "n_grease_trash",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 772.597,
+   "b": 779.547,
+   "k": "n_oil_jar",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page22",
+      "tab": "ARREGLO 18",
+      "t": 777.127,
+      "hl": 40
+     }
+    ],
+    "k": "n_oil_jar"
+   }
+  },
+  {
+   "a": 779.547,
+   "b": 783.967,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 783.967,
+   "b": 786.747,
+   "k": "n_hair_catcher",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 786.747,
+   "b": 791.397,
+   "k": "n_liquid_soap",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 791.397,
+   "b": 794.987,
+   "k": "l_clean_catcher",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 794.987,
+   "b": 799.567,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 799.567,
+   "b": 814.133,
+   "k": "n_recap_bench",
+   "c": "Checklist",
+   "props": {
+    "head": "LO QUE LE HACE",
+    "page": "GUÍA DEL DESAGÜE",
+    "k": "n_recap_bench",
+    "items": [
+     {
+      "t": 801.707,
+      "txt": "El calor ablanda el PVC"
+     },
+     {
+      "t": 805.207,
+      "txt": "Gomas y hierro se gastan"
+     },
+     {
+      "t": 810.013,
+      "txt": "El tapón vuelve"
+     }
+    ]
+   }
+  },
+  {
+   "a": 814.133,
+   "b": 819.533,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 819.533,
+   "b": 829.047,
+   "k": "l_trap_done",
+   "c": "Checklist",
+   "props": {
+    "head": "Y LA REGLA",
+    "page": "GUÍA DEL DESAGÜE",
+    "k": "l_trap_done",
+    "items": [
+     {
+      "t": 819.533,
+      "txt": "La mezcla hace gas"
+     },
+     {
+      "t": 821.807,
+      "txt": "Lo suave: la taza"
+     },
+     {
+      "t": 826.587,
+      "txt": "Lo mecánico, en orden"
+     }
+    ]
+   }
+  },
+  {
+   "a": 829.047,
+   "b": 832.467,
+   "k": "n_tools_row",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 832.467,
+   "b": 837.187,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 837.187,
+   "b": 840.167,
+   "k": "l_counting",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 840.167,
+   "b": 843.147,
+   "k": "l_bottles_under",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 843.147,
+   "b": 846.667,
+   "k": "n_receipts",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 846.667,
+   "b": 856.78,
+   "k": "",
+   "c": "Lineup",
+   "props": {
+    "head": "LO QUE SÍ VALE LA PENA · PÁG 8",
+    "items": [
+     {
+      "t": 846.867,
+      "name": "Destapador de copa",
+      "use": "dura años",
+      "k": "n_cup_plunger"
+     },
+     {
+      "t": 848.747,
+      "name": "Cinta con dientes",
+      "use": "cuesta poco",
+      "k": "n_zip_strip"
+     },
+     {
+      "t": 851.067,
+      "name": "Guantes y anteojos",
+      "use": "siempre",
+      "k": "n_gloves_goggles"
+     },
+     {
+      "t": 852.887,
+      "name": "Bicarbonato y vinagre",
+      "use": "mantenimiento",
+      "k": "l_pantry"
+     }
+    ]
+   }
+  },
+  {
+   "a": 856.78,
+   "b": 861.32,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 861.32,
+   "b": 865.81,
+   "k": "l_plunger_cheap",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 865.81,
+   "b": 868.17,
+   "k": "n_week_note",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 868.17,
+   "b": 873.3,
+   "k": "l_trash_bottle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 873.3,
+   "b": 878.42,
+   "k": "l_calendar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 878.42,
+   "b": 881.88,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 881.88,
+   "b": 892.307,
+   "k": "n_kit_counter",
+   "c": "Comment",
+   "props": {
+    "q": "¿Alguna vez te dijeron que le eches ácido o sosa al desagüe?",
+    "k": "n_kit_counter",
+    "opts": [
+     {
+      "t": 887.84,
+      "txt": "SÍ"
+     },
+     {
+      "t": 888.54,
+      "txt": "NO"
+     }
+    ]
+   }
+  },
+  {
+   "a": 892.307,
+   "b": 896.147,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 896.147,
+   "b": 912.1,
+   "k": "l_book_table",
+   "c": "QrCard",
+   "props": {
+    "k": "l_book_table",
+    "t": 908.68,
+    "txt": "apunta tu celular aquí"
+   }
+  },
+  {
+   "a": 912.1,
+   "b": 916.44,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 916.44,
+   "b": 920.64,
+   "k": "l_hose_registro",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 920.64,
+   "b": 924.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 924.5,
+   "b": 928.147,
+   "k": "l_bye",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 928.147,
+   "b": 932.247,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 116.99,
+   "b": 184.66,
+   "n": 1
+  },
+  {
+   "a": 184.66,
+   "b": 262.98,
+   "n": 2
+  },
+  {
+   "a": 262.98,
+   "b": 330.381,
+   "n": 3
+  },
+  {
+   "a": 330.381,
+   "b": 409.786,
+   "n": 4
+  },
+  {
+   "a": 409.786,
+   "b": 474.713,
+   "n": 5
+  },
+  {
+   "a": 474.713,
+   "b": 586.287,
+   "n": 6
+  },
+  {
+   "a": 586.287,
+   "b": 713.707,
+   "n": 7
+  }
+ ],
+ "of": 7,
+ "word": "NÚMERO",
+ "hide": [
+  [
+   116.99,
+   123.693
+  ],
+  [
+   184.66,
+   193.0
+  ],
+  [
+   262.98,
+   269.08
+  ],
+  [
+   330.381,
+   336.583
+  ],
+  [
+   409.786,
+   416.66
+  ],
+  [
+   474.713,
+   484.213
+  ],
+  [
+   586.287,
+   595.787
+  ],
+  [
+   244.347,
+   250.367
+  ],
+  [
+   391.537,
+   401.407
+  ],
+  [
+   881.88,
+   892.307
+  ],
+  [
+   896.147,
+   912.1
+  ]
+ ]
+}

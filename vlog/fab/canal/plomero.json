@@ -1,0 +1,21 @@
+{
+ "canal": "Claudio el Plomero",
+ "dir_refs": "D:/rtmp/plo456/refs",
+ "estilo": "A paused frame from an ordinary phone video filmed by a family member at eye level in the middle of the job: casual framing a little off, something cut by the edge of the frame, everything in focus, only the light the place really has, slight phone noise and JPEG compression, ordinary worn objects, nothing posed.",
+ "personajes": {
+  "claudio": {
+   "nombre": "Claudio",
+   "desc": "a 48-year-old Latin American plumber with thick curly black hair, a short graying stubble beard, tanned weathered skin and warm brown eyes, wearing a navy blue work coverall with a small white name patch that says Claudio on the chest and a black LED head torch strapped on his forehead",
+   "ref": "public/ref_{slug}.png",
+   "cara": true
+  }
+ },
+ "identidad": "Preserve the exact identity, face, thick curly black hair, graying stubble beard, age and skin tone of the man in the reference photograph. He wears a navy blue work coverall with a small white name patch that says Claudio and a black LED head torch on his forehead.",
+ "idioma": "es",
+ "protagonista": "claudio",
+ "pron": "he",
+ "voz": "claudio_mendoza_s4",
+ "cps": 14.0,
+ "avatar_pct": [24, 30],
+ "prohibidas": ["agua oxigenada", "per[oó]xido"]
+}

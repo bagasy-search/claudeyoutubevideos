@@ -31,8 +31,10 @@ export type KitCfg = {
   avDir: string; // carpeta de public/ con los reels de avatar
   av?: Win[]; // ventanas del avatar (avwin.json → .win); sin esto, los componentes con avatar usan foto
 };
+// textos fijos del kit (setKit({tx:{…}}) los pisa: videos en español)
+export const TX = { of: "OF", instead: "INSTEAD:", realVid: "REAL FOOTAGE", realPhoto: "REAL PHOTO", coming: "COMING UP", mistake: "THE MISTAKE", chapter: "CHAPTER", swapHead: "WHAT WE USED INSTEAD", swapOld: "MOST HOMES TODAY", item: "ITEM", step: "STEP", addComment: "ADD A COMMENT…" };
 export const KCFG: KitCfg = { imgDir: "img/lkit_demo", ext: "png", grain: "img/lkit_demo/grain.png", qr: "qr.jpg", cover: "book_cover.png", arcDir: "arc", clipDir: "clips", avDir: "av" };
-export const setKit = (c: Partial<KitCfg>) => { Object.assign(KCFG, c); };
+export const setKit = (c: Partial<KitCfg> & { tx?: Partial<typeof TX>; colors?: Partial<typeof C> }) => { const { tx, colors, ...k } = c; Object.assign(KCFG, k); if (tx) Object.assign(TX, tx); if (colors) Object.assign(C, colors); };
 
 export const FPS = 30;
 export const fr = (s: number) => Math.round(s * FPS);
