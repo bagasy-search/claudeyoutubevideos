@@ -43,7 +43,8 @@ export async function submitBatch({ items, outDir, size = "1088x608", quality = 
   //    Se genera acá mismo (síncrono) y se devuelve un id "agnes:" que pollBatch/fetchBatch entienden,
   //    así ningún llamador tiene que cambiar. No hay escape a gpt: si agnes falla, la imagen queda en
   //    `fallidos` y se reintenta re-corriendo (los PNG ya hechos se saltean).
-  if (!conRef.length) return agnesSinCara({ pend, outDir, size, total: items.length });
+  // 13-oct (regla vigente feedback_imagenes_agnes_25flash_no_gpt): SIN_CARA_GPT=1 manda las sin cara a gpt low Batch; agnes queda de plan B.
+  if (!conRef.length && process.env.SIN_CARA_GPT !== "1") return agnesSinCara({ pend, outDir, size, total: items.length });
   await esperarCupo(pend.length); // turno: la cola Batch es UNA por cuenta (13-oct, ver openai_cupo.mjs)
   const cache = new Map();
   const lines = pend.map((it) => {

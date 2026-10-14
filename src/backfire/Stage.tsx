@@ -177,4 +177,4 @@ export const RedCircle: React.FC<{ x: number; y: number; r: number; p: number; c
 };
 
 /** Formato de número con separador de miles (200,000,000). */
-export const fmt = (n: number, dec = 0) => n.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec });
+export const fmt = (n: number, dec = 0) => n.toLocaleString("es-AR", { minimumFractionDigits: dec, maximumFractionDigits: dec });

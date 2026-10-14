@@ -12,6 +12,7 @@ import { W, F_TYPE, F_BODY, useAbs, prog, Grade, Stamp, rgba, useOut } from "./S
 
 export const FileStamp: React.FC<{
   fileNo: string | number;   // 5 → "CASE FILE Nº 05"
+  labelText?: string;        // rótulo libre (pgcastores: en español)
   title: string;             // "THE CANE TOAD" (corto, mayúsculas)
   sub?: string;              // "Queensland, Australia · 1935"
   part?: string;             // "PART 3 · THE RELEASE" (en cambios de acto)
@@ -24,12 +25,12 @@ export const FileStamp: React.FC<{
   bed?: string;
   t0?: number;
   durationInFrames?: number;
-}> = ({ fileNo, title, sub, part, stamp = "OPEN", folder = "img/wb_folder.jpg", labelX = 47, labelY = 58, typeAt, stampAt, t0, durationInFrames }) => {
+}> = ({ fileNo, title, sub, part, stamp = "OPEN", labelText, folder = "img/wb_folder.jpg", labelX = 47, labelY = 58, typeAt, stampAt, t0, durationInFrames }) => {
   const now = useAbs(t0);
   const start = t0 ?? 0;
   const out = useOut(durationInFrames);
   const ta = typeAt ?? start + 0.3;
-  const label = `CASE FILE Nº ${String(fileNo).padStart(2, "0")}`;
+  const label = labelText ?? `CASE FILE Nº ${String(fileNo).padStart(2, "0")}`;
   const typed = Math.max(0, Math.min(label.length, Math.floor((now - ta) / 0.05)));
   const tA = prog(now, ta + label.length * 0.05, 0.5);
   const sA = prog(now, ta + label.length * 0.05 + 0.4, 0.5);
