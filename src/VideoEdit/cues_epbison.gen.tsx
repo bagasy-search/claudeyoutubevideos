@@ -321,7 +321,7 @@ export const CUES: Cue[] = [
 
 export const OVERLAYS: Cue[] = [
   { key: "componente_313903", start: 313.903, dur: 2.54, el: (d) => <ActChip durationInFrames={d} {...({"fileNo":"THE PART THEY LEFT OUT","part":"PART 2 · THE FENCE","t0":313.903} as any)} /> },
-  { key: "componente_540323", start: 540.323, dur: 0.2, el: (d) => <ActChip durationInFrames={d} {...({"fileNo":"THE PART THEY LEFT OUT","part":"PART 3 · THE BEAVERS","t0":540.323} as any)} /> },
+  { key: "componente_540323", start: 540.323, dur: 5, el: (d) => <ActChip durationInFrames={d} {...({"fileNo":"THE PART THEY LEFT OUT","part":"PART 3 · THE BEAVERS","t0":540.323} as any)} /> },
   { key: "componente_712366", start: 712.366, dur: 5.1, el: (d) => <ActChip durationInFrames={d} {...({"fileNo":"THE PART THEY LEFT OUT","part":"PART 4 · THE LYNX","t0":712.366} as any)} /> },
   { key: "componente_898266", start: 898.266, dur: 5.18, el: (d) => <ActChip durationInFrames={d} {...({"fileNo":"THE PART THEY LEFT OUT","part":"PART 5 · BACK IN ENGLAND","t0":898.266} as any)} /> },
   { key: "componente_1067849", start: 1067.849, dur: 8, el: (d) => <ActChip durationInFrames={d} {...({"fileNo":"THE PART THEY LEFT OUT","part":"PART 6 · WHAT WORKS","t0":1067.849} as any)} /> },
