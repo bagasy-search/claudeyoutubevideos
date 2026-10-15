@@ -26,7 +26,7 @@ jobs:
     env: { GH_TOKEN: "${{ github.token }}" }
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -q opencv-python-headless numpy && sudo apt-get install -y -qq ffmpeg >/dev/null || true
+      - run: pip install -q "opencv-python-headless==4.10.0.84" "numpy<2" && sudo apt-get install -y -qq ffmpeg >/dev/null || true
       - name: medir
         run: |
           S=${{ matrix.s }}
