@@ -67,13 +67,9 @@ export const avAt = (t: number) => { const w = avWin(t); return w.off + (t - w.m
 export const avSrc = (t: number) => staticFile(`${KCFG.avDir}/reel${avWin(t).reel}.mp4`);
 
 // ── capas comunes ──
-export const Grain: React.FC = () => (
-  <AbsoluteFill style={{ pointerEvents: "none", backgroundImage: `url(${staticFile(KCFG.grain)})`, backgroundRepeat: "repeat", opacity: 0.06, mixBlendMode: "overlay" }} />
-);
-export const Grade: React.FC<{ warm?: number; vig?: number }> = ({ warm = 1, vig = 0.32 }) => (
-  <AbsoluteFill style={{ pointerEvents: "none", background:
-    `linear-gradient(180deg, rgba(255,236,200,${0.08 * warm}) 0%, rgba(255,236,200,0) 40%, rgba(24,18,36,0.14) 100%), radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 55%, rgba(14,10,22,${vig}) 100%)` }} />
-);
+// clyde1: SIN filtros (regla del creador 13-oct: sin grano, sin viñeta, sin grade)
+export const Grain: React.FC = () => null;
+export const Grade: React.FC<{ warm?: number; vig?: number }> = () => null;
 export const sp = (f: number, at: number, damping = 13, stiffness = 140) => spring({ frame: f - at, fps: FPS, config: { damping, stiffness, mass: 0.8 } });
 // reloj del componente: f = cuadros desde el corte; at(t) = cuadro (relativo) de un segundo absoluto
 export const useT = (a: number) => { const f = useCurrentFrame(); return { f, at: (t: number) => fr(t) - fr(a) }; };

@@ -1,0 +1,21 @@
+{
+ "canal": "Clyde's Smokehouse",
+ "idioma": "en",
+ "protagonista": "clyde",
+ "voz": "clyde_butcher",
+ "cps": 14.6,
+ "avatar_pct": [
+  20,
+  32
+ ],
+ "prohibidas": [
+  "\bfree\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bCostco\b",
+  "\bWalmart\b",
+  "\blinks?\b"
+ ]
+}
