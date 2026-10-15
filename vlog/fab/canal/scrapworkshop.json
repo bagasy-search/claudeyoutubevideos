@@ -1,0 +1,43 @@
+{
+ "canal": "The Scrap WorkShop",
+ "serie": "The Scrap WorkShop: an American garage handyman builds waste oil stoves and heaters from scrap, step by step with real measurements",
+ "idioma": "en",
+ "protagonista": "scrap",
+ "pron": "he",
+ "voz": "scrapworkshop_en",
+ "cps": 14.6,
+ "ejemplos": "lor_",
+ "avatar_pct": [
+  24,
+  32
+ ],
+ "avatar_ref": "D:/claude-brain/canales/scrapworkshop/refs/scrap_hd.png",
+ "acciones": "drilling holes in a steel pipe, crimping a pipe end with a hammer, threading a pipe cap, filtering dark oil through a t-shirt over a funnel, counting drips with a watch, lighting a twist of newspaper, adjusting a needle valve",
+ "prohibidas": [
+  "\bgratis\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "free download",
+  "\bcostco\b",
+  "\bwalmart\b",
+  "home depot",
+  "lowe's",
+  "\bamazon\b"
+ ],
+ "dir_refs": "D:/claude-brain/canales/scrapworkshop/refs",
+ "estilo": "One ordinary frame pulled from a normal handheld video shot by a buddy with a phone at eye level, in the middle of the work: framing casual and a little off, something cut by the edge of the frame, almost everything in focus, only the light the garage really has (a ceiling shop light and grey winter daylight from the side door), automatic white balance a bit off, slight phone noise, ordinary greasy worn tools and scrap steel with no labels, no beautiful composition.",
+ "personajes": {
+  "scrap": {
+   "nombre": "the handyman",
+   "cara": true,
+   "desc": "an American handyman about 48 with short dark hair greying at the sides and short stubble, navy blue baseball cap, red plaid flannel shirt open over a grey t-shirt, work jeans"
+  }
+ },
+ "lugares_fijos": {
+  "garage": "his cluttered one-car home garage: a worn wooden workbench with a vise, a red rolling tool cart, pegboard with hand tools, a concrete floor with oil stains, a small side door with grey daylight"
+ },
+ "identidad": "Preserve the exact identity, face, age, short stubble and skin of the man in the reference photograph. He wears a navy blue baseball cap, a red plaid flannel shirt open over a grey t-shirt.",
+ "cara_crop": "D:/claude-brain/canales/scrapworkshop/refs/scrap_face.png"
+}
