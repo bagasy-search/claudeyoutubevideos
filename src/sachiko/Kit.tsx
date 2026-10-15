@@ -142,6 +142,10 @@ export const Note: P<{ lines: string[]; sig: string; k: string; chip?: { txt: st
   const { f, at } = useT(a);
   const c = sp(f, 0, 14, 120);
   const ch = chip ? sp(f, at(chip.t), 12, 200) : 0;
+  // líneas largas: se parten por palabras (≤30 car.) para que nunca se corten en el borde de la hoja
+  const wrap = (l: string) => l.split(" ").reduce<string[]>((acc, w) => { const t = acc.length ? acc[acc.length - 1] : ""; if (t && (t + " " + w).length > 30) acc.push(w); else if (acc.length) acc[acc.length - 1] = t ? t + " " + w : w; else acc.push(w); return acc; }, []);
+  const LL = lines.flatMap(wrap);
+  const sz = LL.length > 3 ? Math.min(size, 78) : size;
   return (
     <AbsoluteFill>
       <Bed k={k} f={f} T={d} dim={0.45} />
@@ -149,11 +153,11 @@ export const Note: P<{ lines: string[]; sig: string; k: string; chip?: { txt: st
         <div style={{ position: "relative", width: 1240, minHeight: 520, padding: "90px 120px 120px 170px", boxSizing: "border-box", background: "#F8F1DF", borderRadius: 6, boxShadow: "0 60px 110px rgba(0,0,0,0.55)",
           backgroundImage: "repeating-linear-gradient(180deg, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 62px, rgba(90,120,170,0.25) 63px, rgba(0,0,0,0) 64px)", overflow: "hidden" }}>
           <div style={{ position: "absolute", left: 120, top: 0, bottom: 0, width: 2, background: "rgba(200,70,70,0.35)" }} />
-          {lines.map((l, i) => {
+          {LL.map((l, i) => {
             const w = lin(f, 3 + i * 16, 3 + i * 16 + Math.max(14, l.length * 0.9), 0, 1, (x) => x);
-            return <div key={i} style={{ fontFamily: HAND, fontSize: size, lineHeight: 1.12, whiteSpace: "nowrap", color: "#2E3B63", clipPath: `inset(0 ${100 - w * 100}% 0 0)` }}>{l}</div>;
+            return <div key={i} style={{ fontFamily: HAND, fontSize: sz, lineHeight: 1.12, whiteSpace: "nowrap", color: "#2E3B63", clipPath: `inset(0 ${100 - w * 100}% 0 0)` }}>{l}</div>;
           })}
-          <div style={{ position: "absolute", right: 110, bottom: 40, fontFamily: HAND, fontSize: 72, color: "#2E3B63", opacity: lin(f, 3 + lines.length * 16, 12 + lines.length * 16, 0, 1) }}>— {sig}</div>
+          <div style={{ position: "absolute", right: 110, bottom: 40, fontFamily: HAND, fontSize: 72, color: "#2E3B63", opacity: lin(f, 3 + LL.length * 16, 12 + LL.length * 16, 0, 1) }}>— {sig}</div>
         </div>
         <div style={{ position: "absolute", left: 540, top: -26, width: 170, height: 52, background: "rgba(236,226,196,0.85)", transform: "rotate(-4deg)" }} />
         {chip ? <div style={{ position: "absolute", right: -60, bottom: -40, opacity: ch, transform: `scale(${0.6 + 0.4 * ch}) rotate(-5deg)` }}><Chip txt={chip.txt} font={HAND} size={66} ls={0} bg={C.lilacDeep} color="#fff" /></div> : null}
