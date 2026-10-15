@@ -92,4 +92,6 @@ if not out_arg:  # mismos archivos de texto que modal_whisper.py
     fmt = lambda ms: f"{int(ms / 1000 // 60):02d}:{(ms / 1000 - int(ms / 1000 // 60) * 60):05.2f}"
     open(os.path.join(root, f"transcript_{slug}_timed.txt"), "w", encoding="utf-8").write(
         "\n".join(f"[{fmt(c['startMs'])}] {c['text']}" for c in caps))
-print(f"✓ {len(caps)} palabras · {os.path.relpath(out, root)} · {time.time() - t0:.1f}s · clave gratis {n}")
+try: shown = os.path.relpath(out, root)
+except ValueError: shown = out  # --out en otro disco (Windows): relpath no cruza unidades
+print(f"✓ {len(caps)} palabras · {shown} · {time.time() - t0:.1f}s · clave gratis {n}")
