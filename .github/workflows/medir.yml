@@ -32,8 +32,8 @@ jobs:
           S=${{ matrix.s }}
           for n in 1 2 3 4 5; do gh release download "$S" -R "$GITHUB_REPOSITORY" -p "$S.mp4" --clobber && break; sleep $((n*10)); done
           test -s "$S.mp4"
-          python3 medir_mp4.py "$S" "$S.mp4" | tee "r_$S.json"
-          grep -q av_pct "r_$S.json"
+          python3 medir_mp4.py "$S" "$S.mp4" > "r_$S.json"; head -c 300 "r_$S.json"
+          grep -q "\"fw\"" "r_$S.json"
       - uses: actions/upload-artifact@v4
         with: { name: "r_${{ matrix.s }}", path: "r_${{ matrix.s }}.json", retention-days: 3 }
   juntar:
