@@ -23,7 +23,7 @@
 //    CONFORMADO (lanczos + un unsharp FUERTE, 0,95 — a 2,31x es donde se juega que no se vea
 //    plastico) y con una REFERENCIA nitida en plano medio 16:9.
 import fs from 'node:fs';
-import { execFileSync, spawnSync } from 'node:child_process';
+import { execFileSync as _execFileSync, spawnSync as _spawnSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); const spawnSync = (c, a, o) => Array.isArray(a) ? _spawnSync(c, a, { windowsHide: true, ...(o || {}) }) : _spawnSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
 import { supaCreds } from './supa_creds.mjs';
 
 const SLUG = process.argv[2];

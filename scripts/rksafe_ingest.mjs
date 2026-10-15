@@ -13,7 +13,7 @@
 // ⛔ Luma: `metadata=print` escribe en STDERR — con `-v error` el medidor mide CERO y da verde.
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync, spawnSync } from 'node:child_process';
+import { execFileSync as _execFileSync, spawnSync as _spawnSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); const spawnSync = (c, a, o) => Array.isArray(a) ? _spawnSync(c, a, { windowsHide: true, ...(o || {}) }) : _spawnSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
 
 const SLUG = process.argv[2];
 if (!SLUG) { console.error('uso: node scripts/rksafe_ingest.mjs <slug> [srcDir]'); process.exit(1); }
