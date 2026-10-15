@@ -45,7 +45,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with: { path: arts }
       - run: |
-          cat arts/*/r_*.json arts/*/q_*.json > tabla.jsonl; cat arts/*/dets_*.txt > dets.txt; cp arts/*/sheet_*.jpg arts/*/probe_*.json . ; ls
+          cat arts/*/r_*.json arts/*/q_*.json > tabla.jsonl; cat arts/*/dets_*.txt > dets.txt; echo fin >> dets.txt; cp arts/*/sheet_*.jpg arts/*/probe_*.json . ; ls
           T=$GITHUB_REF_NAME
           gh release view "$T" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$T" -R "$GITHUB_REPOSITORY" --title "$T" --notes "QC final"
           gh release upload "$T" tabla.jsonl dets.txt sheet_*.jpg probe_*.json -R "$GITHUB_REPOSITORY" --clobber
