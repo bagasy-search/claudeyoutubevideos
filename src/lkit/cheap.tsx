@@ -49,10 +49,14 @@ export const PricePill: React.FC<{ txt: string; d: number; y?: number }> = ({ tx
 export const Leak: React.FC<{ d: number }> = ({ d }) => {
   const f = useCurrentFrame();
   const u = f / Math.max(1, d), o = Math.sin(Math.PI * cl(u));
+  // franja de luz diagonal que cruza el cuadro (no una mancha): naranja caliente con núcleo claro
+  const x = -60 + 220 * u;
   return (
-    <AbsoluteFill style={{ mixBlendMode: "screen", opacity: 0.9 * o, pointerEvents: "none",
-      background: `radial-gradient(ellipse 55% 75% at ${10 + 80 * u}% 40%, rgba(255,150,40,0.95), rgba(255,90,20,0.55) 38%, rgba(255,60,0,0) 70%),
-                   radial-gradient(ellipse 30% 50% at ${70 - 50 * u}% 75%, rgba(255,210,120,0.8), rgba(255,210,120,0) 70%)` }} />
+    <AbsoluteFill style={{ mixBlendMode: "screen", opacity: 0.85 * o, pointerEvents: "none", overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: "-40%", bottom: "-40%", left: `${x}%`, width: "55%", transform: "rotate(18deg)", filter: "blur(30px)",
+        background: "linear-gradient(90deg, rgba(255,80,0,0) 0%, rgba(255,110,20,0.75) 30%, rgba(255,215,150,0.95) 50%, rgba(255,110,20,0.75) 70%, rgba(255,80,0,0) 100%)" }} />
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse 40% 60% at ${x + 25}% 30%, rgba(255,170,80,0.35), rgba(255,170,80,0) 70%)` }} />
+    </AbsoluteFill>
   );
 };
 
@@ -77,17 +81,17 @@ export const ItemQ: React.FC<{ a: number; d: number; n: number; name: string; in
   const { f, at } = useT(a);
   const u = sp(f, 2, 14, 150), out = lin(f, d - 6, d, 0, 1);
   const ins = t != null && instead ? sp(f, at(t), 14, 170) : 0;
-  const nsz = fit(name, 860, 54, "label", 2, 0, 30);
+  const nsz = fit(name, 1100, 78, "label", 2, 0, 40);
   return (
     <AbsoluteFill>
       <Silk f={f} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
-        <div style={{ opacity: cl(u * 2) * (1 - out), transform: `scale(${0.86 + 0.14 * u})`, textAlign: "center", maxWidth: 980,
-          border: `3px solid ${RED}`, borderRadius: 18, background: "rgba(40,10,14,0.55)", padding: "26px 54px 30px",
+        <div style={{ opacity: cl(u * 2) * (1 - out), transform: `scale(${0.86 + 0.14 * u})`, textAlign: "center", maxWidth: 1240,
+          border: `4px solid ${RED}`, borderRadius: 22, background: "rgba(40,10,14,0.55)", padding: "34px 80px 40px",
           boxShadow: `0 0 40px rgba(229,72,77,0.25), inset 0 0 30px rgba(229,72,77,0.12)` }}>
-          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 44, color: "#fff", lineHeight: 1 }}>#{n}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 70, color: "#fff", lineHeight: 1 }}>#{n}</div>
           <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: nsz, color: "#fff", lineHeight: 1.15, marginTop: 10 }}>{name}</div>
-          {ins > 0 ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: Math.min(40, nsz * 0.75), color: RED, marginTop: 14, opacity: ins,
+          {ins > 0 ? <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: Math.min(54, nsz * 0.75), color: RED, marginTop: 18, opacity: ins,
             transform: `translateY(${(1 - ins) * 12}px)` }}>→ {instead}</div> : null}
         </div>
       </AbsoluteFill>
