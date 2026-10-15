@@ -79,11 +79,11 @@ export const Body: React.FC<{ children: React.ReactNode; size?: number; color?: 
 // El componente nunca muestra el fondo plano en su margen: una foto real, oscurecida, lo llena.
 export const PhotoBed: React.FC<{ src?: string; dim?: number }> = ({ src, dim = 0.62 }) => {
   const frame = useCurrentFrame();
-  const z = 1.04 + Math.sin(frame / 240) * 0.012;
+  const z = 1.05 + frame * 0.0006; // empuje lento y constante (3-oct: la cama casi negra se leía como diapositiva)
   if (!src) return <AbsoluteFill style={{ background: `radial-gradient(120% 100% at 50% 0%, ${V.ink2} 0%, ${V.ink0} 70%)` }} />;
   return (
     <AbsoluteFill style={{ backgroundColor: V.ink0, overflow: "hidden" }}>
-      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `brightness(${(1 - dim).toFixed(2)}) saturate(0.82)`, transform: `scale(${z.toFixed(4)})` }} />
+      <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", filter: `brightness(${(1 - Math.min(dim, 0.9) * 0.62).toFixed(2)}) saturate(1)`, transform: `scale(${z.toFixed(4)})` }} />
       <AbsoluteFill style={{ background: `linear-gradient(180deg, ${rgba(V.ink0, 0.5)} 0%, ${rgba(V.ink0, 0.32)} 46%, ${rgba(V.ink0, 0.72)} 100%)` }} />
       <AbsoluteFill style={{ opacity: 0.045, backgroundImage: "repeating-conic-gradient(rgba(255,255,255,.5) 0% 25%, rgba(0,0,0,.5) 0% 50%)", backgroundSize: "3px 3px", mixBlendMode: "overlay" }} />
     </AbsoluteFill>

@@ -11,7 +11,7 @@
 //    de agnes y sobre cámara real se ve como cámara lenta rara).
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync, spawnSync } from 'node:child_process';
+import { execFileSync as _execFileSync, spawnSync as _spawnSync } from "node:child_process"; const execFileSync = (c, a, o) => Array.isArray(a) ? _execFileSync(c, a, { windowsHide: true, ...(o || {}) }) : _execFileSync(c, { windowsHide: true, ...(a || {}) }); const spawnSync = (c, a, o) => Array.isArray(a) ? _spawnSync(c, a, { windowsHide: true, ...(o || {}) }) : _spawnSync(c, { windowsHide: true, ...(a || {}) }); // sin ventanas de consola (27-sep)
 
 const SLUG = process.argv[2];
 if (!SLUG) { console.error('uso: node scripts/rksafe_stock_conform.mjs <slug> [srcDir]'); process.exit(1); }
@@ -58,7 +58,9 @@ for (const f of files) {
   const filtro = 'scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1,fps=30';
   const args = ['-v', 'error', '-y'];
   if (ss) args.push('-ss', String(ss));
-  args.push('-i', src, '-t', '8.2', '-an', '-vf', filtro, '-r', '30', '-fps_mode', 'cfr',
+  // backfire: KEEP_AUDIO=1 conserva el audio REAL del clip (va bajo la voz con scripts/backfire_mix.mjs) · MAX_T alarga el tope
+  const audio = process.env.KEEP_AUDIO === '1' ? ['-c:a', 'aac', '-b:a', '128k', '-ar', '48000', '-ac', '2'] : ['-an'];
+  args.push('-i', src, '-t', String(process.env.MAX_T || 8.2), ...audio, '-vf', filtro, '-r', '30', '-fps_mode', 'cfr',
     '-c:v', 'libx264', '-crf', '19', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', dst);
   try { ff(args); } catch (e) { console.log(`  ⛔ ${f}: ffmpeg falló`); continue; }
   const dur = +(probe(dst, 'stream=duration').match(/[\d.]+/) || [0])[0];
