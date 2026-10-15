@@ -1,0 +1,8819 @@
+{
+"end": 1973.533333,
+"shots": [
+{
+"a": 0.0,
+"b": 2.5,
+"k": "thumb",
+"c": "OpenThumb",
+"props": {
+"k": "img/sachiko8/sachiko8_thumb.jpg",
+"rings": [],
+"marks": []
+}
+},
+{
+"a": 2.5,
+"b": 5.27,
+"k": "img/sachiko8/h_steak_board.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 5.27,
+"b": 6.753,
+"k": "img/sachiko8/h3_butcher_apron.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 6.753,
+"b": 8.32,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/m_crust_closeup.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 8.32,
+"b": 10.92,
+"k": "img/sachiko8/h4_butcher_wrap.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 10.92,
+"b": 13.73,
+"k": "img/sachiko8/h3_ribeye_raw.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 13.73,
+"b": 16.33,
+"k": "img/sachiko8/h4_cheap_tray.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 16.33,
+"b": 19.33,
+"k": "img/sachiko8/h3_osaka_butcher_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 19.33,
+"b": 22.15,
+"k": "img/sachiko8/h4_meat_counter.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 22.15,
+"b": 24.75,
+"k": "img/sachiko8/h4_chopsticks_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 24.75,
+"b": 27.35,
+"k": "img/sachiko8/h4_salt_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 27.35,
+"b": 29.053,
+"k": "img/sachiko8/h4_pink_cut.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 29.053,
+"b": 30.85,
+"k": "img/sachiko8/h4_pink_cut.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 30.85,
+"b": 34.14,
+"k": "img/sachiko8/s_intro_noren.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 34.14,
+"b": 37.447,
+"k": "img/sachiko8/s_intro_noren.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 37.447,
+"b": 40.687,
+"k": "img/sachiko8/s_intro_noren.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 40.687,
+"b": 43.88,
+"k": "img/sachiko8/s_intro_noren.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 43.88,
+"b": 47.59,
+"k": "n_osaka_kitchen_old_c",
+"c": "MistakeStamp",
+"props": {
+"k": "n_osaka_kitchen_old",
+"txt": "FLIPPED ONCE: NO CRUST",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 47.59,
+"b": 49.17,
+"k": "img/sachiko8/n_osaka_street_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 49.17,
+"b": 54.17,
+"k": "n_osaka_street_old_c",
+"c": "CostTag",
+"props": {
+"price": "$6",
+"sub": "THE CHEAP CUT",
+"k": "n_osaka_street_old",
+"vs": {
+"price": "$60",
+"txt": "SIXTY DOLLARS, THE RIBEYE",
+"t": 51.67
+}
+}
+},
+{
+"a": 54.17,
+"b": 56.85,
+"k": "img/sachiko8/n_osaka_street_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 56.85,
+"b": 59.75,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_mother_basket.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 59.75,
+"b": 63.287,
+"k": "img/sachiko8/n_mother_basket.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 63.287,
+"b": 66.83,
+"k": "img/sachiko8/n_mother_basket.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 66.83,
+"b": 69.767,
+"k": "img/sachiko8/n_empty_butcher_window.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 69.767,
+"b": 72.98,
+"k": "img/sachiko8/n_empty_butcher_window.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 72.98,
+"b": 79.38,
+"k": "n_rice_bowls_old_c",
+"c": "Chapter",
+"props": {
+"n": "02",
+"title": "Who I am",
+"label": "PART",
+"k": "n_rice_bowls_old",
+"av": false
+}
+},
+{
+"a": 79.38,
+"b": 82.767,
+"k": "img/sachiko8/n_tsuyu_rain_street.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 82.767,
+"b": 86.31,
+"k": "img/sachiko8/n_tsuyu_rain_street.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 86.31,
+"b": 89.21,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_osaka_market_fish.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 89.21,
+"b": 92.973,
+"k": "img/sachiko8/n_osaka_market_fish.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 92.973,
+"b": 96.28,
+"k": "img/sachiko8/n_osaka_market_fish.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 96.28,
+"b": 98.84,
+"k": "img/sachiko8/n_1970_apartment.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 98.84,
+"b": 101.22,
+"k": "img/sachiko8/n_1970_apartment.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 101.22,
+"b": 103.69,
+"k": "img/sachiko8/n_1970_apartment.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 103.69,
+"b": 106.59,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_letter_mother.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 106.59,
+"b": 110.373,
+"k": "img/sachiko8/s_letter_mother.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 110.373,
+"b": 113.44,
+"k": "img/sachiko8/s_letter_mother.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 113.44,
+"b": 116.71,
+"k": "img/sachiko8/s_letter_mother.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 116.71,
+"b": 119.213,
+"k": "img/sachiko8/n_airmail_letter.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 119.213,
+"b": 121.71,
+"k": "img/sachiko8/n_airmail_letter.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 121.71,
+"b": 128.61,
+"k": "m_whole_onion_c",
+"c": "Chapter",
+"props": {
+"n": "03",
+"title": "The story",
+"label": "PART",
+"k": "m_whole_onion",
+"av": false
+}
+},
+{
+"a": 128.61,
+"b": 131.533,
+"k": "img/sachiko8/s_peel_onion.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 131.533,
+"b": 134.773,
+"k": "img/sachiko8/s_peel_onion.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 134.773,
+"b": 137.88,
+"k": "img/sachiko8/s_peel_onion.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 137.88,
+"b": 140.5,
+"k": "img/sachiko8/s_grate_onion.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 140.5,
+"b": 142.847,
+"k": "img/sachiko8/s_grate_onion.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 142.847,
+"b": 145.25,
+"k": "img/sachiko8/s_grate_onion.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 145.25,
+"b": 148.633,
+"k": "img/sachiko8/m_grated_onion_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 148.633,
+"b": 152.22,
+"k": "img/sachiko8/m_grated_onion_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 152.22,
+"b": 155.78,
+"k": "img/sachiko8/m_grated_onion_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 155.78,
+"b": 158.92,
+"k": "img/sachiko8/m_asian_pear.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 158.92,
+"b": 161.76,
+"k": "img/sachiko8/m_asian_pear.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 161.76,
+"b": 163.84,
+"k": "img/sachiko8/s_grate_pear.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 163.84,
+"b": 165.98,
+"k": "img/sachiko8/s_grate_pear.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 165.98,
+"b": 169.0,
+"k": "img/sachiko8/n_fridge_bowl.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 169.0,
+"b": 171.66,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_fridge_bowl.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 171.66,
+"b": 174.693,
+"k": "img/sachiko8/n_fridge_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 174.693,
+"b": 177.61,
+"k": "img/sachiko8/n_fridge_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 177.61,
+"b": 181.193,
+"k": "img/sachiko8/m_steak_raw.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 181.193,
+"b": 184.81,
+"k": "img/sachiko8/m_steak_raw.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 184.81,
+"b": 187.747,
+"k": "img/sachiko8/m_steak_patdry.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 187.747,
+"b": 190.947,
+"k": "img/sachiko8/m_steak_patdry.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 190.947,
+"b": 194.12,
+"k": "img/sachiko8/m_steak_patdry.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 194.12,
+"b": 196.42,
+"k": "img/sachiko8/s_pat_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 196.42,
+"b": 198.86,
+"k": "img/sachiko8/s_pat_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 198.86,
+"b": 201.36,
+"k": "img/sachiko8/s_pat_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 201.36,
+"b": 206.313,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 206.313,
+"b": 208.873,
+"k": "img/sachiko8/s_onion_on_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 208.873,
+"b": 213.71,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 213.71,
+"b": 216.3,
+"k": "img/sachiko8/s_onion_on_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 216.3,
+"b": 219.2,
+"k": "img/sachiko8/s_onion_on_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 219.2,
+"b": 221.87,
+"k": "img/sachiko8/s_onion_on_steak.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 221.87,
+"b": 225.447,
+"k": "img/sachiko8/m_soy_spoon.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 225.447,
+"b": 228.97,
+"k": "img/sachiko8/m_soy_spoon.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 228.97,
+"b": 231.793,
+"k": "img/sachiko8/s_drops_sesame.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 231.793,
+"b": 234.927,
+"k": "img/sachiko8/s_drops_sesame.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 234.927,
+"b": 237.37,
+"k": "img/sachiko8/s_drops_sesame.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 237.37,
+"b": 240.687,
+"k": "img/sachiko8/n_wrapped_plate.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 240.687,
+"b": 243.91,
+"k": "img/sachiko8/n_wrapped_plate.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 243.91,
+"b": 246.567,
+"k": "img/sachiko8/m_salt_kosher.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 246.567,
+"b": 249.073,
+"k": "img/sachiko8/m_salt_kosher.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 249.073,
+"b": 251.83,
+"k": "img/sachiko8/m_salt_kosher.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 251.83,
+"b": 254.73,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_teaspoon_salt.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 254.73,
+"b": 257.993,
+"k": "img/sachiko8/s_teaspoon_salt.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 257.993,
+"b": 261.527,
+"k": "img/sachiko8/s_teaspoon_salt.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 261.527,
+"b": 264.69,
+"k": "img/sachiko8/s_teaspoon_salt.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 264.69,
+"b": 267.173,
+"k": "img/sachiko8/s_salt_both_sides.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 267.173,
+"b": 269.993,
+"k": "img/sachiko8/s_salt_both_sides.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 269.993,
+"b": 272.78,
+"k": "img/sachiko8/s_salt_both_sides.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 272.78,
+"b": 278.55,
+"k": "m_dry_steak_fridge_c",
+"c": "Chapter",
+"props": {
+"n": "04",
+"title": "The method",
+"label": "PART",
+"k": "m_dry_steak_fridge",
+"av": false
+}
+},
+{
+"a": 278.55,
+"b": 282.54,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 282.54,
+"b": 284.807,
+"k": "img/sachiko8/s_fridge_steak_plate.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 284.807,
+"b": 288.14,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 288.14,
+"b": 289.45,
+"k": "img/sachiko8/s_fridge_steak_plate.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 289.45,
+"b": 295.75,
+"k": "s_fridge_steak_plate_c",
+"c": "StepCard",
+"props": {
+"page": "STEP 1 OF 7",
+"head": "GRATE THE ONION FINE",
+"bed": "s_fridge_steak_plate",
+"steps": [
+{
+"t": 289.95,
+"txt": "Keep it cold",
+"k": "s_fridge_steak_plate"
+}
+]
+}
+},
+{
+"a": 295.75,
+"b": 297.6,
+"k": "s_fridge_steak_plate_c",
+"c": "DoDont",
+"props": {
+"k": "s_fridge_steak_plate",
+"yes": {
+"k": "s_fridge_steak_plate",
+"txt": "GRATE BY HAND, FINE",
+"t": 296.75
+},
+"no": {
+"k": "s_fridge_steak_plate",
+"txt": "NOT THE FOOD PROCESSOR",
+"t": 299.25
+}
+}
+},
+{
+"a": 297.6,
+"b": 300.7,
+"k": "img/sachiko8/m_shio_koji_jar.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 300.7,
+"b": 303.92,
+"k": "img/sachiko8/m_shio_koji_jar.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 303.92,
+"b": 306.98,
+"k": "img/sachiko8/s_koji_spoon.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 306.98,
+"b": 310.2,
+"k": "img/sachiko8/s_koji_spoon.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 310.2,
+"b": 313.23,
+"k": "img/sachiko8/s_koji_spoon.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 313.23,
+"b": 316.13,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_rub_koji.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 316.13,
+"b": 319.453,
+"k": "img/sachiko8/s_rub_koji.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 319.453,
+"b": 322.61,
+"k": "img/sachiko8/s_rub_koji.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 322.61,
+"b": 324.88,
+"k": "img/sachiko8/m_cast_iron_pan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 324.88,
+"b": 327.38,
+"k": "img/sachiko8/m_cast_iron_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 327.38,
+"b": 330.26,
+"k": "m_cast_iron_pan_c",
+"c": "Note",
+"props": {
+"lines": [
+"Grated onion and its juice",
+"stay in the fridge.",
+"Never on the counter."
+],
+"sig": "Sachiko",
+"k": "m_cast_iron_pan"
+}
+},
+{
+"a": 330.26,
+"b": 333.47,
+"k": "m_cast_iron_pan_c",
+"c": "NameCard",
+"props": {
+"k": "m_cast_iron_pan",
+"word": "NOREN",
+"gloss": "the curtain in the doorway",
+"name": 2,
+"glossAt": 331.26
+}
+},
+{
+"a": 333.47,
+"b": 336.007,
+"k": "img/sachiko8/s_water_drops_pan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 336.007,
+"b": 338.767,
+"k": "img/sachiko8/s_water_drops_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 338.767,
+"b": 341.19,
+"k": "img/sachiko8/s_water_drops_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 341.19,
+"b": 345.113,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 345.113,
+"b": 347.633,
+"k": "img/sachiko8/m_oil_shimmer.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 347.633,
+"b": 350.88,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 350.88,
+"b": 353.78,
+"k": "img/sachiko8/m_oil_shimmer.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 353.78,
+"b": 356.2,
+"k": "img/sachiko8/m_oil_shimmer.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 356.2,
+"b": 358.95,
+"k": "img/sachiko8/m_oil_shimmer.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 358.95,
+"b": 363.95,
+"k": "s_steak_in_pan_c",
+"c": "Note",
+"props": {
+"lines": [
+"Dry meat takes the salt",
+"better, and browns better."
+],
+"sig": "Sachiko",
+"k": "s_steak_in_pan"
+}
+},
+{
+"a": 363.95,
+"b": 366.41,
+"k": "img/sachiko8/s_steak_in_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 366.41,
+"b": 369.367,
+"k": "img/sachiko8/s_flip_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 369.367,
+"b": 372.267,
+"k": "img/sachiko8/s_flip_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 372.267,
+"b": 375.31,
+"k": "img/sachiko8/s_flip_steak.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 375.31,
+"b": 378.487,
+"k": "img/sachiko8/s_timer_count.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 378.487,
+"b": 381.63,
+"k": "img/sachiko8/s_timer_count.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 381.63,
+"b": 384.445,
+"k": "img/sachiko8/m_crust_closeup.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 384.445,
+"b": 387.26,
+"k": "img/sachiko8/m_crust_closeup.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 387.26,
+"b": 390.047,
+"k": "img/sachiko8/m_crust_closeup.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 390.047,
+"b": 392.89,
+"k": "img/sachiko8/m_crust_closeup.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 392.89,
+"b": 397.607,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 397.607,
+"b": 399.867,
+"k": "img/sachiko8/s_smell_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+],
+"dx": 120
+},
+{
+"a": 399.867,
+"b": 404.28,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 404.28,
+"b": 404.58,
+"k": "img/sachiko8/s_smell_pan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 404.58,
+"b": 409.85,
+"k": "s_press_steak_c",
+"c": "BigNumber",
+"props": {
+"num": 2,
+"unit": "HOURS, THE LIMIT",
+"txt": "Grated onion on the meat, then mush",
+"k": "s_press_steak",
+"dur": 4
+}
+},
+{
+"a": 409.85,
+"b": 414.1,
+"k": "s_press_steak_c",
+"c": "StepCard",
+"props": {
+"page": "STEP 2 OF 7",
+"head": "SALT EARLY",
+"bed": "s_press_steak",
+"steps": [
+{
+"t": 410.35,
+"txt": "About 1 teaspoon per pound",
+"k": "s_press_steak"
+}
+]
+}
+},
+{
+"a": 414.1,
+"b": 416.58,
+"k": "img/sachiko8/s_smell_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 416.58,
+"b": 418.81,
+"k": "img/sachiko8/s_smell_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 418.81,
+"b": 421.316,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/m_thermometer_probe.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 421.316,
+"b": 425.627,
+"k": "img/sachiko8/m_thermometer_probe.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 425.627,
+"b": 428.89,
+"k": "img/sachiko8/m_thermometer_probe.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 428.89,
+"b": 432.267,
+"k": "img/sachiko8/s_thermometer_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 432.267,
+"b": 435.56,
+"k": "img/sachiko8/s_thermometer_steak.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 435.56,
+"b": 440.56,
+"k": "m_rest_plate_c",
+"c": "Note",
+"props": {
+"lines": [
+"Salt early, or",
+"do not salt at all."
+],
+"sig": "Sachiko",
+"k": "m_rest_plate"
+}
+},
+{
+"a": 440.56,
+"b": 442.953,
+"k": "img/sachiko8/m_rest_plate.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 442.953,
+"b": 445.53,
+"k": "img/sachiko8/m_rest_plate.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 445.53,
+"b": 447.62,
+"k": "m_rest_plate_c",
+"c": "NameCard",
+"props": {
+"k": "m_rest_plate",
+"word": "KOSHER SALT",
+"gloss": "coarse, easy to pinch",
+"name": 10,
+"glossAt": 446.53
+}
+},
+{
+"a": 447.62,
+"b": 448.34,
+"k": "img/sachiko8/s_plate_rest.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 448.34,
+"b": 451.13,
+"k": "s_plate_rest_c",
+"c": "BigNumber",
+"props": {
+"num": 1,
+"unit": "TEASPOON PER POUND",
+"txt": "Kosher salt, level, on both sides",
+"k": "s_plate_rest",
+"dur": 4
+}
+},
+{
+"a": 451.13,
+"b": 454.307,
+"k": "img/sachiko8/m_clock_kitchen.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 454.307,
+"b": 457.17,
+"k": "img/sachiko8/m_clock_kitchen.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 457.17,
+"b": 459.77,
+"k": "m_clock_kitchen_c",
+"c": "BigNumber",
+"props": {
+"num": 1,
+"unit": "DAY, UNCOVERED",
+"txt": "In the fridge, for the dry skin",
+"k": "m_clock_kitchen",
+"dur": 4
+}
+},
+{
+"a": 459.77,
+"b": 462.67,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/m_grain_lines.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 462.67,
+"b": 466.433,
+"k": "img/sachiko8/m_grain_lines.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 466.433,
+"b": 469.73,
+"k": "img/sachiko8/m_grain_lines.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 469.73,
+"b": 472.627,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_slice_across.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 472.627,
+"b": 475.807,
+"k": "img/sachiko8/s_slice_across.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 475.807,
+"b": 479.11,
+"k": "img/sachiko8/s_slice_across.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 479.11,
+"b": 482.553,
+"k": "img/sachiko8/m_thin_slices_fan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 482.553,
+"b": 485.69,
+"k": "img/sachiko8/m_thin_slices_fan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 485.69,
+"b": 489.067,
+"k": "img/sachiko8/s_pour_juice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 489.067,
+"b": 492.71,
+"k": "img/sachiko8/s_pour_juice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 492.71,
+"b": 494.13,
+"k": "img/sachiko8/m_board_juice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 494.13,
+"b": 499.63,
+"k": "m_board_juice_c",
+"c": "NameCard",
+"props": {
+"k": "m_board_juice",
+"word": "SHIO KOJI",
+"gloss": "salted koji, rice with mold",
+"name": 4,
+"glossAt": 495.13
+}
+},
+{
+"a": 499.63,
+"b": 502.173,
+"k": "img/sachiko8/m_board_juice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 502.173,
+"b": 504.913,
+"k": "img/sachiko8/m_board_juice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 504.913,
+"b": 507.42,
+"k": "img/sachiko8/m_board_juice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 507.42,
+"b": 509.17,
+"k": "img/sachiko8/m_thin_beef_strips.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 509.17,
+"b": 511.577,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_strips_hot_pan.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 511.577,
+"b": 516.2,
+"k": "img/sachiko8/s_strips_hot_pan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 516.2,
+"b": 519.79,
+"k": "img/sachiko8/s_strips_hot_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 519.79,
+"b": 522.427,
+"k": "img/sachiko8/m_daikon_grated.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 522.427,
+"b": 525.307,
+"k": "img/sachiko8/m_daikon_grated.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 525.307,
+"b": 527.97,
+"k": "img/sachiko8/m_daikon_grated.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 527.97,
+"b": 530.567,
+"k": "img/sachiko8/s_serve_rice_daikon.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 530.567,
+"b": 533.247,
+"k": "img/sachiko8/s_serve_rice_daikon.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 533.247,
+"b": 536.01,
+"k": "img/sachiko8/s_serve_rice_daikon.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 536.01,
+"b": 538.71,
+"k": "img/sachiko8/m_chuck_cut.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 538.71,
+"b": 543.07,
+"k": "m_chuck_cut_c",
+"c": "StepCard",
+"props": {
+"page": "STEP 3 OF 7",
+"head": "LET IT COME UP",
+"bed": "m_chuck_cut",
+"steps": [
+{
+"t": 539.21,
+"txt": "About 30 minutes out of the fridge",
+"k": "m_chuck_cut"
+}
+]
+}
+},
+{
+"a": 543.07,
+"b": 546.513,
+"k": "img/sachiko8/m_flank_cut.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 546.513,
+"b": 549.77,
+"k": "img/sachiko8/m_flank_cut.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 549.77,
+"b": 553.247,
+"k": "img/sachiko8/m_top_sirloin.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 553.247,
+"b": 556.77,
+"k": "img/sachiko8/m_top_sirloin.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 556.77,
+"b": 560.053,
+"k": "img/sachiko8/m_round_roast.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 560.053,
+"b": 563.37,
+"k": "img/sachiko8/m_round_roast.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 563.37,
+"b": 566.71,
+"k": "m_round_roast_c",
+"c": "Note",
+"props": {
+"lines": [
+"Cover the steak with a clean towel",
+"so the air does not dry the top."
+],
+"sig": "Sachiko",
+"k": "m_round_roast"
+}
+},
+{
+"a": 566.71,
+"b": 569.433,
+"k": "img/sachiko8/s_show_chuck.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 569.433,
+"b": 571.873,
+"k": "img/sachiko8/s_show_chuck.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 571.873,
+"b": 574.65,
+"k": "img/sachiko8/s_show_chuck.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 574.65,
+"b": 580.65,
+"k": "s_notebook_write_c",
+"c": "StepCard",
+"props": {
+"page": "STEP 4 OF 7",
+"head": "VERY HOT PAN",
+"bed": "s_notebook_write",
+"steps": [
+{
+"t": 575.15,
+"txt": "Cast iron, until a drop dances",
+"k": "s_notebook_write"
+}
+]
+}
+},
+{
+"a": 580.65,
+"b": 582.63,
+"k": "img/sachiko8/s_notebook_write.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 582.63,
+"b": 583.71,
+"k": "img/sachiko8/m_notebook_page.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 583.71,
+"b": 589.21,
+"k": "m_notebook_page_c",
+"c": "NameCard",
+"props": {
+"k": "m_notebook_page",
+"word": "CAST IRON",
+"gloss": "heavy, holds the heat",
+"name": 9,
+"glossAt": 584.71
+}
+},
+{
+"a": 589.21,
+"b": 591.25,
+"k": "img/sachiko8/m_notebook_page.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 591.25,
+"b": 594.287,
+"k": "img/sachiko8/s2_mother_photo_hold.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 594.287,
+"b": 597.41,
+"k": "img/sachiko8/s2_mother_photo_hold.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 597.41,
+"b": 599.947,
+"k": "img/sachiko8/s2_tsuyu_window.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 599.947,
+"b": 602.187,
+"k": "img/sachiko8/s2_tsuyu_window.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 602.187,
+"b": 604.63,
+"k": "img/sachiko8/s2_tsuyu_window.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 604.63,
+"b": 607.627,
+"k": "img/sachiko8/s2_osaka_family_table.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 607.627,
+"b": 610.307,
+"k": "img/sachiko8/s2_osaka_family_table.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 610.307,
+"b": 613.25,
+"k": "img/sachiko8/s2_osaka_family_table.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 613.25,
+"b": 616.627,
+"k": "img/sachiko8/s2_osaka_mother_kitchen.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 616.627,
+"b": 619.85,
+"k": "img/sachiko8/s2_osaka_mother_kitchen.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 619.85,
+"b": 622.52,
+"k": "img/sachiko8/s2_osaka_children_yard.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 622.52,
+"b": 625.23,
+"k": "img/sachiko8/s2_osaka_children_yard.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 625.23,
+"b": 626.87,
+"k": "s2_osaka_children_yard_c",
+"c": "StepCard",
+"props": {
+"page": "STEP 5 OF 7",
+"head": "FLIP EVERY 30 SECONDS",
+"bed": "s2_osaka_children_yard",
+"steps": [
+{
+"t": 625.73,
+"txt": "For 4 to 6 minutes",
+"k": "s2_osaka_children_yard"
+}
+]
+}
+},
+{
+"a": 626.87,
+"b": 629.643,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_osaka_butcher_old.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 629.643,
+"b": 633.187,
+"k": "img/sachiko8/s2_osaka_butcher_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 633.187,
+"b": 636.693,
+"k": "img/sachiko8/s2_osaka_butcher_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 636.693,
+"b": 639.7,
+"k": "img/sachiko8/s2_osaka_butcher_old.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 639.7,
+"b": 644.7,
+"k": "s2_osaka_market_rain_c",
+"c": "Careful",
+"props": {
+"k": "s2_osaka_market_rain",
+"txt": "Keep a timer near you, and count",
+"tag": "TIMING"
+}
+},
+{
+"a": 644.7,
+"b": 646.58,
+"k": "img/sachiko8/s2_osaka_market_rain.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 646.58,
+"b": 650.18,
+"k": "img/sachiko8/s2_japanese_rice_field_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 650.18,
+"b": 653.69,
+"k": "img/sachiko8/s2_japanese_rice_field_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 653.69,
+"b": 657.057,
+"k": "img/sachiko8/s2_grocery_shelf.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 657.057,
+"b": 660.16,
+"k": "img/sachiko8/s2_grocery_shelf.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 660.16,
+"b": 662.503,
+"k": "img/sachiko8/s2_pan_kitchen_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 662.503,
+"b": 664.99,
+"k": "img/sachiko8/s2_pan_kitchen_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 664.99,
+"b": 669.99,
+"k": "s2_salt_hands_c",
+"c": "BigNumber",
+"props": {
+"num": 145,
+"unit": "DEGREES F",
+"txt": "Whole beef cut, then rest 3 minutes",
+"k": "s2_salt_hands",
+"dur": 4
+}
+},
+{
+"a": 669.99,
+"b": 673.097,
+"k": "img/sachiko8/s2_salt_hands.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 673.097,
+"b": 675.617,
+"k": "img/sachiko8/s2_salt_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 675.617,
+"b": 678.62,
+"k": "img/sachiko8/s2_salt_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 678.62,
+"b": 683.437,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 683.437,
+"b": 685.837,
+"k": "img/sachiko8/s2_knife_side.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 685.837,
+"b": 689.58,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 689.58,
+"b": 689.88,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_knife_side.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 689.88,
+"b": 694.88,
+"k": "s2_knife_side_c",
+"c": "BigNumber",
+"props": {
+"num": 3,
+"unit": "MINUTES, REST",
+"txt": "Before the knife touches it",
+"k": "s2_knife_side",
+"dur": 4
+}
+},
+{
+"a": 694.88,
+"b": 696.18,
+"k": "img/sachiko8/s2_knife_side.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 696.18,
+"b": 698.763,
+"k": "img/sachiko8/s2_knife_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 698.763,
+"b": 701.023,
+"k": "img/sachiko8/s2_knife_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 701.023,
+"b": 703.86,
+"k": "img/sachiko8/s2_knife_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 703.86,
+"b": 709.16,
+"k": "s2_fridge_look_c",
+"c": "BigNumber",
+"props": {
+"num": 160,
+"unit": "DEGREES F",
+"txt": "Ground beef, all the way through",
+"k": "s2_fridge_look",
+"dur": 4
+}
+},
+{
+"a": 709.16,
+"b": 713.36,
+"k": "s2_fridge_look_c",
+"c": "Careful",
+"props": {
+"k": "s2_fridge_look",
+"txt": "Ground beef: 160 degrees, all the way through",
+"tag": "SAFETY"
+}
+},
+{
+"a": 713.36,
+"b": 716.35,
+"k": "img/sachiko8/s2_thermo_over_shoulder.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 716.35,
+"b": 721.35,
+"k": "s2_thermo_over_shoulder_c",
+"c": "Careful",
+"props": {
+"k": "s2_thermo_over_shoulder",
+"txt": "Probe the thickest part, from the side",
+"tag": "CARE"
+}
+},
+{
+"a": 721.35,
+"b": 722.86,
+"k": "img/sachiko8/s2_thermo_over_shoulder.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 722.86,
+"b": 725.76,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_tongs_side.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 725.76,
+"b": 729.68,
+"k": "img/sachiko8/s2_tongs_side.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 729.68,
+"b": 732.837,
+"k": "img/sachiko8/s2_tongs_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 732.837,
+"b": 736.137,
+"k": "img/sachiko8/s2_tongs_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 736.137,
+"b": 739.42,
+"k": "img/sachiko8/s2_tongs_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 739.42,
+"b": 742.497,
+"k": "img/sachiko8/s2_plate_serve.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 742.497,
+"b": 745.88,
+"k": "img/sachiko8/s2_plate_serve.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 745.88,
+"b": 748.78,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_board_wipe.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 748.78,
+"b": 752.01,
+"k": "img/sachiko8/s2_board_wipe.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 752.01,
+"b": 755.19,
+"k": "img/sachiko8/s2_board_wipe.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 755.19,
+"b": 757.77,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_strips_pan.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 757.77,
+"b": 760.57,
+"k": "img/sachiko8/s2_strips_pan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 760.57,
+"b": 766.07,
+"k": "s2_strips_pan_c",
+"c": "MistakeStamp",
+"props": {
+"k": "s2_strips_pan",
+"txt": "CUT WITH THE GRAIN, NOT ALONG",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 766.07,
+"b": 767.25,
+"k": "img/sachiko8/s2_strips_pan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 767.25,
+"b": 771.35,
+"k": "img/sachiko8/s2_strips_pan.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 771.35,
+"b": 774.19,
+"k": "img/sachiko8/s2_ginger_grate_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 774.19,
+"b": 777.19,
+"k": "img/sachiko8/s2_ginger_grate_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 777.19,
+"b": 780.06,
+"k": "img/sachiko8/s2_ginger_grate_hands.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 780.06,
+"b": 784.957,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 784.957,
+"b": 787.303,
+"k": "img/sachiko8/s2_steak_board_hand.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 787.303,
+"b": 791.87,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 791.87,
+"b": 792.17,
+"k": "img/sachiko8/s2_steak_board_hand.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 792.17,
+"b": 798.17,
+"k": "s2_steak_board_hand_c",
+"c": "StepCard",
+"props": {
+"page": "STEP 7 OF 7",
+"head": "SLICE THIN, ACROSS",
+"bed": "s2_steak_board_hand",
+"steps": [
+{
+"t": 792.67,
+"txt": "The lines of the meat",
+"k": "s2_steak_board_hand"
+}
+]
+}
+},
+{
+"a": 798.17,
+"b": 799.67,
+"k": "img/sachiko8/s2_steak_board_hand.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 799.67,
+"b": 802.543,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_oven_check.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 802.543,
+"b": 805.957,
+"k": "img/sachiko8/s2_oven_check.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 805.957,
+"b": 809.12,
+"k": "img/sachiko8/s2_oven_check.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 809.12,
+"b": 812.063,
+"k": "img/sachiko8/s2_oven_check.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 812.063,
+"b": 815.18,
+"k": "img/sachiko8/s2_oven_check.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 815.18,
+"b": 817.977,
+"k": "img/sachiko8/s2_thermo_display.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 817.977,
+"b": 820.88,
+"k": "img/sachiko8/s2_thermo_display.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 820.88,
+"b": 824.84,
+"k": "s2_thermo_display_c",
+"c": "NameCard",
+"props": {
+"k": "s2_thermo_display",
+"word": "YAKINIKU",
+"gloss": "grilled meat",
+"name": 1,
+"glossAt": 821.88
+}
+},
+{
+"a": 824.84,
+"b": 827.637,
+"k": "img/sachiko8/s2_salt_palm.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 827.637,
+"b": 830.44,
+"k": "img/sachiko8/s2_salt_palm.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 830.44,
+"b": 833.317,
+"k": "img/sachiko8/s2_pear_half.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 833.317,
+"b": 836.663,
+"k": "img/sachiko8/s2_pear_half.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 836.663,
+"b": 839.463,
+"k": "img/sachiko8/s2_pear_half.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 839.463,
+"b": 842.55,
+"k": "img/sachiko8/s2_pear_half.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 842.55,
+"b": 845.663,
+"k": "img/sachiko8/s2_pear_half.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 845.663,
+"b": 848.303,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_pear_half.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 848.303,
+"b": 851.5,
+"k": "img/sachiko8/s2_pear_half.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 851.5,
+"b": 857.43,
+"k": "s2_sliced_steak_blue_c",
+"c": "NameCard",
+"props": {
+"k": "s2_sliced_steak_blue",
+"word": "DAIKON",
+"gloss": "large white radish, grated",
+"name": 3,
+"glossAt": 852.5
+}
+},
+{
+"a": 857.43,
+"b": 860.463,
+"k": "img/sachiko8/s2_chopsticks_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 860.463,
+"b": 863.64,
+"k": "img/sachiko8/s2_chopsticks_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 863.64,
+"b": 866.463,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_stove_flame.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 866.463,
+"b": 869.483,
+"k": "img/sachiko8/s2_stove_flame.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 869.483,
+"b": 872.41,
+"k": "img/sachiko8/s2_stove_flame.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 872.41,
+"b": 875.31,
+"k": "img/sachiko8/s2_stove_flame.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 875.31,
+"b": 878.39,
+"k": "img/sachiko8/s2_stove_flame.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 878.39,
+"b": 881.21,
+"k": "img/sachiko8/s2_stove_flame.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 881.21,
+"b": 884.11,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_grill_plate.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 884.11,
+"b": 888.23,
+"k": "img/sachiko8/s2_grill_plate.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 888.23,
+"b": 891.81,
+"k": "img/sachiko8/s2_grill_plate.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 891.81,
+"b": 895.243,
+"k": "img/sachiko8/s2_rice_bowl_steak.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 895.243,
+"b": 898.74,
+"k": "img/sachiko8/s2_rice_bowl_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 898.74,
+"b": 902.24,
+"k": "img/sachiko8/s2_cucumber_cold.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 902.24,
+"b": 904.803,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_cucumber_cold.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 904.803,
+"b": 907.863,
+"k": "img/sachiko8/s2_cucumber_cold.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 907.863,
+"b": 910.08,
+"k": "img/sachiko8/s2_cucumber_cold.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 910.08,
+"b": 912.953,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_soy_drip.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 912.953,
+"b": 916.437,
+"k": "img/sachiko8/s2_soy_drip.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 916.437,
+"b": 919.723,
+"k": "img/sachiko8/s2_soy_drip.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 919.723,
+"b": 922.96,
+"k": "img/sachiko8/s2_soy_drip.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 922.96,
+"b": 926.277,
+"k": "img/sachiko8/s3_grate_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 926.277,
+"b": 929.68,
+"k": "img/sachiko8/s3_grate_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 929.68,
+"b": 932.477,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_salt_pinch_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 932.477,
+"b": 935.517,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 935.517,
+"b": 938.3,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 938.3,
+"b": 941.703,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 941.703,
+"b": 945.037,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 945.037,
+"b": 948.74,
+"k": "img/sachiko8/s3_salt_pinch_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 948.74,
+"b": 950.737,
+"k": "img/sachiko8/s3_knife_across_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 950.737,
+"b": 953.32,
+"k": "img/sachiko8/s3_knife_across_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 953.32,
+"b": 960.32,
+"k": "s3_pear_grate_eyes_c",
+"c": "Chapter",
+"props": {
+"n": "05",
+"title": "Variations",
+"label": "PART",
+"k": "s3_pear_grate_eyes",
+"av": false
+}
+},
+{
+"a": 960.32,
+"b": 962.18,
+"k": "img/sachiko8/s3_pear_grate_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 962.18,
+"b": 964.897,
+"k": "img/sachiko8/s3_thermo_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 964.897,
+"b": 967.857,
+"k": "img/sachiko8/s3_thermo_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 967.857,
+"b": 970.66,
+"k": "img/sachiko8/s3_thermo_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 970.66,
+"b": 973.183,
+"k": "img/sachiko8/s3_thermo_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 973.183,
+"b": 975.803,
+"k": "img/sachiko8/s3_thermo_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 975.803,
+"b": 978.41,
+"k": "img/sachiko8/s3_thermo_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 978.41,
+"b": 981.183,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_flip_tongs_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 981.183,
+"b": 985.21,
+"k": "img/sachiko8/s3_flip_tongs_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 985.21,
+"b": 988.54,
+"k": "img/sachiko8/s3_flip_tongs_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 988.54,
+"b": 991.183,
+"k": "img/sachiko8/s3_crust_look_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 991.183,
+"b": 994.16,
+"k": "img/sachiko8/s3_crust_look_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 994.16,
+"b": 996.533,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_sauce_stir_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 996.533,
+"b": 1000.297,
+"k": "img/sachiko8/s3_sauce_stir_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1000.297,
+"b": 1002.997,
+"k": "img/sachiko8/s3_sauce_stir_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1002.997,
+"b": 1006.1,
+"k": "img/sachiko8/s3_sauce_stir_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1006.1,
+"b": 1008.757,
+"k": "img/sachiko8/s3_sauce_stir_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1008.757,
+"b": 1011.34,
+"k": "img/sachiko8/s3_sauce_stir_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 1011.34,
+"b": 1014.157,
+"k": "img/sachiko8/s3_onion_slice_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1014.157,
+"b": 1016.837,
+"k": "img/sachiko8/s3_onion_slice_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1016.837,
+"b": 1019.47,
+"k": "img/sachiko8/s3_onion_slice_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1019.47,
+"b": 1022.63,
+"k": "img/sachiko8/s3_foil_cover_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1022.63,
+"b": 1025.98,
+"k": "img/sachiko8/s3_foil_cover_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1025.98,
+"b": 1028.387,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_chopsticks_strips_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1028.387,
+"b": 1032.197,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1032.197,
+"b": 1035.377,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1035.377,
+"b": 1038.78,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1038.78,
+"b": 1041.257,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 1041.257,
+"b": 1043.817,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1043.817,
+"b": 1046.26,
+"k": "img/sachiko8/s3_chopsticks_strips_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1046.26,
+"b": 1049.263,
+"k": "img/sachiko8/s3_roast_string_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1049.263,
+"b": 1052.16,
+"k": "img/sachiko8/s3_roast_string_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1052.16,
+"b": 1054.677,
+"k": "img/sachiko8/s3_koji_mix_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1054.677,
+"b": 1057.197,
+"k": "img/sachiko8/s3_koji_mix_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1057.197,
+"b": 1059.84,
+"k": "img/sachiko8/s3_koji_mix_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1059.84,
+"b": 1062.677,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_bowl_fridge_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1062.677,
+"b": 1065.217,
+"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1065.217,
+"b": 1068.17,
+"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1068.17,
+"b": 1070.96,
+"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1070.96,
+"b": 1073.737,
+"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1073.737,
+"b": 1076.74,
+"k": "img/sachiko8/s3_bowl_fridge_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1076.74,
+"b": 1079.377,
+"k": "img/sachiko8/s3_towel_pat_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1079.377,
+"b": 1081.843,
+"k": "img/sachiko8/s3_towel_pat_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1081.843,
+"b": 1084.48,
+"k": "img/sachiko8/s3_towel_pat_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1084.48,
+"b": 1085.14,
+"k": "img/sachiko8/s3_spoon_juice_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1085.14,
+"b": 1090.64,
+"k": "s3_spoon_juice_eyes_c",
+"c": "NameCard",
+"props": {
+"k": "s3_spoon_juice_eyes",
+"word": "GYUDON",
+"gloss": "beef and onion over rice",
+"name": 5,
+"glossAt": 1086.14
+}
+},
+{
+"a": 1090.64,
+"b": 1092.68,
+"k": "img/sachiko8/s3_spoon_juice_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1092.68,
+"b": 1095.737,
+"k": "img/sachiko8/s3_cold_salad_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1095.737,
+"b": 1098.66,
+"k": "img/sachiko8/s3_cold_salad_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1098.66,
+"b": 1101.297,
+"k": "img/sachiko8/s3_cold_salad_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1101.297,
+"b": 1104.46,
+"k": "img/sachiko8/s3_cold_salad_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 1104.46,
+"b": 1107.357,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_lines_point_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1107.357,
+"b": 1110.303,
+"k": "img/sachiko8/s3_lines_point_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1110.303,
+"b": 1113.363,
+"k": "img/sachiko8/s3_lines_point_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1113.363,
+"b": 1116.583,
+"k": "img/sachiko8/s3_lines_point_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1116.583,
+"b": 1119.31,
+"k": "img/sachiko8/s3_lines_point_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1119.31,
+"b": 1122.05,
+"k": "img/sachiko8/s3_timer_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1122.05,
+"b": 1124.717,
+"k": "img/sachiko8/s3_timer_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1124.717,
+"b": 1127.46,
+"k": "img/sachiko8/s3_timer_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1127.46,
+"b": 1130.03,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_daikon_grate_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1130.03,
+"b": 1133.13,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1133.13,
+"b": 1135.71,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 1135.71,
+"b": 1138.723,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1138.723,
+"b": 1141.663,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1141.663,
+"b": 1144.6,
+"k": "img/sachiko8/s3_daikon_grate_eyes.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1144.6,
+"b": 1148.22,
+"k": "img/sachiko8/s3_stove_flame_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1148.22,
+"b": 1153.06,
+"k": "s3_stove_flame_eyes_c",
+"c": "NameCard",
+"props": {
+"k": "s3_stove_flame_eyes",
+"word": "CABBAGE",
+"gloss": "thin shreds under cold steak",
+"name": 12,
+"glossAt": 1149.22
+}
+},
+{
+"a": 1153.06,
+"b": 1155.057,
+"k": "img/sachiko8/s3_plate_serve_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1155.057,
+"b": 1157.61,
+"k": "img/sachiko8/s3_plate_serve_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1157.61,
+"b": 1160.197,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_grated_onion_side.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1160.197,
+"b": 1163.517,
+"k": "img/sachiko8/p3_grated_onion_side.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1163.517,
+"b": 1166.44,
+"k": "img/sachiko8/p3_grated_onion_side.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1166.44,
+"b": 1169.237,
+"k": "img/sachiko8/p3_grated_onion_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1169.237,
+"b": 1172.257,
+"k": "img/sachiko8/p3_grated_onion_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1172.257,
+"b": 1175.06,
+"k": "img/sachiko8/p3_grated_onion_side.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1175.06,
+"b": 1178.297,
+"k": "img/sachiko8/p3_steak_onion_coat.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1178.297,
+"b": 1181.82,
+"k": "img/sachiko8/p3_steak_onion_coat.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1181.82,
+"b": 1184.463,
+"k": "img/sachiko8/p3_salt_grains_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1184.463,
+"b": 1186.823,
+"k": "img/sachiko8/p3_salt_grains_steak.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1186.823,
+"b": 1189.46,
+"k": "img/sachiko8/p3_salt_grains_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1189.46,
+"b": 1192.223,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_fridge_uncovered_steak.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1192.223,
+"b": 1195.19,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1195.19,
+"b": 1198.23,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1198.23,
+"b": 1201.09,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1201.09,
+"b": 1203.49,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1203.49,
+"b": 1205.89,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1205.89,
+"b": 1208.31,
+"k": "img/sachiko8/p3_fridge_uncovered_steak.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1208.31,
+"b": 1211.057,
+"k": "img/sachiko8/p3_iron_pan_empty_hot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1211.057,
+"b": 1213.7,
+"k": "img/sachiko8/p3_iron_pan_empty_hot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1213.7,
+"b": 1215.817,
+"k": "img/sachiko8/p3_steak_sizzle_side.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1215.817,
+"b": 1218.21,
+"k": "img/sachiko8/p3_steak_sizzle_side.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1218.21,
+"b": 1222.71,
+"k": "p3_steak_sizzle_side_c",
+"c": "NameCard",
+"props": {
+"k": "p3_steak_sizzle_side",
+"word": "RICE VINEGAR",
+"gloss": "mild and sweet-sour",
+"name": 11,
+"glossAt": 1219.21
+}
+},
+{
+"a": 1222.71,
+"b": 1225.33,
+"k": "img/sachiko8/p3_probe_cross_section.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1225.33,
+"b": 1227.977,
+"k": "img/sachiko8/p3_probe_cross_section.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1227.977,
+"b": 1230.52,
+"k": "img/sachiko8/p3_probe_cross_section.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1230.52,
+"b": 1233.277,
+"k": "img/sachiko8/p3_foil_rest_plate.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1233.277,
+"b": 1236.077,
+"k": "img/sachiko8/p3_foil_rest_plate.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1236.077,
+"b": 1238.95,
+"k": "img/sachiko8/p3_foil_rest_plate.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1238.95,
+"b": 1241.39,
+"k": "img/sachiko8/p3_slice_fan_board.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1241.39,
+"b": 1243.75,
+"k": "img/sachiko8/p3_slice_fan_board.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1243.75,
+"b": 1246.38,
+"k": "img/sachiko8/p3_slice_fan_board.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1246.38,
+"b": 1249.443,
+"k": "img/sachiko8/p3_slice_grain_lines.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1249.443,
+"b": 1252.36,
+"k": "img/sachiko8/p3_slice_grain_lines.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1252.36,
+"b": 1257.86,
+"k": "p3_slice_grain_lines_c",
+"c": "NameCard",
+"props": {
+"k": "p3_slice_grain_lines",
+"word": "UMAMI",
+"gloss": "the deep savory taste",
+"name": 6,
+"glossAt": 1253.36
+}
+},
+{
+"a": 1257.86,
+"b": 1260.08,
+"k": "img/sachiko8/p3_slice_grain_lines.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1260.08,
+"b": 1262.38,
+"k": "img/sachiko8/p3_juice_pour_slices.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1262.38,
+"b": 1265.28,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_daikon_board_knife.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1265.28,
+"b": 1268.557,
+"k": "img/sachiko8/p3_daikon_board_knife.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1268.557,
+"b": 1271.95,
+"k": "img/sachiko8/p3_daikon_board_knife.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1271.95,
+"b": 1274.35,
+"k": "img/sachiko8/p3_gyudon_pot_close.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1274.35,
+"b": 1276.79,
+"k": "img/sachiko8/p3_gyudon_pot_close.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1276.79,
+"b": 1279.29,
+"k": "img/sachiko8/p3_gyudon_pot_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1279.29,
+"b": 1282.03,
+"k": "img/sachiko8/p3_roast_string_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1282.03,
+"b": 1285.197,
+"k": "img/sachiko8/p3_roast_string_close.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1285.197,
+"b": 1287.85,
+"k": "img/sachiko8/p3_roast_string_close.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1287.85,
+"b": 1291.25,
+"k": "img/sachiko8/p3_koji_grains_macro.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1291.25,
+"b": 1294.98,
+"k": "img/sachiko8/p3_koji_grains_macro.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1294.98,
+"b": 1297.88,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/p3_sesame_salad_macro.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1297.88,
+"b": 1301.537,
+"k": "img/sachiko8/p3_sesame_salad_macro.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1301.537,
+"b": 1304.7,
+"k": "img/sachiko8/p3_sesame_salad_macro.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1304.7,
+"b": 1307.63,
+"k": "img/sachiko8/p3_leftover_container.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1307.63,
+"b": 1310.81,
+"k": "img/sachiko8/p3_leftover_container.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1310.81,
+"b": 1313.07,
+"k": "img/sachiko8/p3_steak_pink_knife.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1313.07,
+"b": 1315.35,
+"k": "img/sachiko8/p3_steak_pink_knife.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1315.35,
+"b": 1320.16,
+"k": "p3_steak_pink_knife_c",
+"c": "Chapter",
+"props": {
+"n": "06",
+"title": "Mistakes",
+"label": "PART",
+"k": "p3_steak_pink_knife",
+"av": false
+}
+},
+{
+"a": 1320.16,
+"b": 1325.663,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1325.663,
+"b": 1327.883,
+"k": "img/sachiko8/p3_pan_brown_bits.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1327.883,
+"b": 1332.9,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1332.9,
+"b": 1333.2,
+"k": "img/sachiko8/p3_pan_brown_bits.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1333.2,
+"b": 1338.7,
+"k": "p3_pan_brown_bits_c",
+"c": "MistakeStamp",
+"props": {
+"k": "p3_pan_brown_bits",
+"txt": "PAN NOT HOT: GREY",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1338.7,
+"b": 1340.32,
+"k": "img/sachiko8/p3_pan_brown_bits.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1340.32,
+"b": 1342.903,
+"k": "img/sachiko8/p3_pencil_grid_paper.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1342.903,
+"b": 1345.783,
+"k": "img/sachiko8/p3_pencil_grid_paper.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1345.783,
+"b": 1348.66,
+"k": "img/sachiko8/p3_pencil_grid_paper.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1348.66,
+"b": 1352.103,
+"k": "img/sachiko8/p3_rice_bowl_steak_close.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1352.103,
+"b": 1355.3,
+"k": "img/sachiko8/p3_rice_bowl_steak_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1355.3,
+"b": 1358.017,
+"k": "img/sachiko8/p3_yakiniku_strips_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1358.017,
+"b": 1360.87,
+"k": "img/sachiko8/p3_yakiniku_strips_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1360.87,
+"b": 1365.46,
+"k": "p3_yakiniku_strips_pan_c",
+"c": "MistakeStamp",
+"props": {
+"k": "p3_yakiniku_strips_pan",
+"txt": "ONION TOO LONG: MUSHY",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1365.46,
+"b": 1368.537,
+"k": "img/sachiko8/p3_tare_saucepan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1368.537,
+"b": 1371.537,
+"k": "img/sachiko8/p3_tare_saucepan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1371.537,
+"b": 1374.42,
+"k": "img/sachiko8/p3_tare_saucepan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1374.42,
+"b": 1377.043,
+"k": "img/sachiko8/p3_pear_pulp_tray.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1377.043,
+"b": 1380.023,
+"k": "img/sachiko8/p3_pear_pulp_tray.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1380.023,
+"b": 1382.73,
+"k": "img/sachiko8/p3_pear_pulp_tray.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1382.73,
+"b": 1385.38,
+"k": "img/sachiko8/v_asian_pear_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1385.38,
+"b": 1390.88,
+"k": "v_asian_pear_bowl_c",
+"c": "MistakeStamp",
+"props": {
+"k": "v_asian_pear_bowl",
+"txt": "TOO SALTY",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1390.88,
+"b": 1393.28,
+"k": "img/sachiko8/v_asian_pear_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1393.28,
+"b": 1400.05,
+"k": "v_ginger_thumb_c",
+"c": "Pins",
+"props": {
+"k": "img/sachiko8/v_asian_pear_bowl.png",
+"head": "THREE SPOTS TO CHECK",
+"pins": [
+{
+"x": 520,
+"y": 380,
+"t": 1394.28,
+"txt": "Edge"
+},
+{
+"x": 1100,
+"y": 500,
+"t": 1396.08,
+"txt": "Center"
+},
+{
+"x": 1500,
+"y": 300,
+"t": 1397.68,
+"txt": "Surface"
+}
+]
+}
+},
+{
+"a": 1400.05,
+"b": 1403.07,
+"k": "img/sachiko8/s_grate_ginger.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1403.07,
+"b": 1406.097,
+"k": "img/sachiko8/s_grate_ginger.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1406.097,
+"b": 1409.18,
+"k": "img/sachiko8/s_grate_ginger.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1409.18,
+"b": 1412.757,
+"k": "img/sachiko8/v_tare_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1412.757,
+"b": 1416.06,
+"k": "img/sachiko8/v_tare_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1416.06,
+"b": 1420.06,
+"k": "img/sachiko8/s_tare_taste.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1420.06,
+"b": 1422.917,
+"k": "img/sachiko8/s_gyudon_onion.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1422.917,
+"b": 1425.857,
+"k": "img/sachiko8/s_gyudon_onion.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1425.857,
+"b": 1428.757,
+"k": "img/sachiko8/s_gyudon_onion.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1428.757,
+"b": 1431.76,
+"k": "img/sachiko8/s_gyudon_onion.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1431.76,
+"b": 1434.417,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/v_gyudon_pan.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1434.417,
+"b": 1437.257,
+"k": "img/sachiko8/v_gyudon_pan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1437.257,
+"b": 1439.997,
+"k": "img/sachiko8/v_gyudon_pan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1439.997,
+"b": 1442.82,
+"k": "img/sachiko8/v_gyudon_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1442.82,
+"b": 1445.057,
+"k": "img/sachiko8/v_gyudon_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1445.057,
+"b": 1447.6,
+"k": "img/sachiko8/v_gyudon_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1447.6,
+"b": 1450.177,
+"k": "img/sachiko8/s_roast_string.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1450.177,
+"b": 1453.157,
+"k": "img/sachiko8/s_roast_string.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1453.157,
+"b": 1455.76,
+"k": "img/sachiko8/s_roast_string.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1455.76,
+"b": 1458.437,
+"k": "img/sachiko8/v_roast_oven.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1458.437,
+"b": 1460.957,
+"k": "img/sachiko8/v_roast_oven.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1460.957,
+"b": 1463.58,
+"k": "img/sachiko8/v_roast_oven.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1463.58,
+"b": 1467.103,
+"k": "img/sachiko8/s_roast_rest.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1467.103,
+"b": 1470.7,
+"k": "img/sachiko8/s_roast_rest.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1470.7,
+"b": 1473.34,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_leftover_fridge.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1473.34,
+"b": 1477.277,
+"k": "img/sachiko8/s_leftover_fridge.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1477.277,
+"b": 1480.557,
+"k": "img/sachiko8/s_leftover_fridge.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1480.557,
+"b": 1483.82,
+"k": "img/sachiko8/s_leftover_fridge.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1483.82,
+"b": 1486.177,
+"k": "img/sachiko8/v_cabbage_salad.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1486.177,
+"b": 1488.75,
+"k": "img/sachiko8/v_cabbage_salad.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1488.75,
+"b": 1491.51,
+"k": "img/sachiko8/s_stir_fry_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1491.51,
+"b": 1494.143,
+"k": "img/sachiko8/s_stir_fry_pan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1494.143,
+"b": 1497.04,
+"k": "img/sachiko8/s_stir_fry_pan.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1497.04,
+"b": 1500.923,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1500.923,
+"b": 1503.383,
+"k": "img/sachiko8/v_green_beans.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+],
+"dx": -120
+},
+{
+"a": 1503.383,
+"b": 1506.05,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1506.05,
+"b": 1508.59,
+"k": "img/sachiko8/v_green_beans.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1508.59,
+"b": 1511.54,
+"k": "img/sachiko8/v_green_beans.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1511.54,
+"b": 1517.04,
+"k": "s_cucumber_slices_c",
+"c": "MistakeStamp",
+"props": {
+"k": "s_cucumber_slices",
+"txt": "NEVER REUSE RAW MARINADE",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1517.04,
+"b": 1520.4,
+"k": "img/sachiko8/s_cucumber_slices.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1520.4,
+"b": 1523.063,
+"k": "img/sachiko8/v_cold_steak_salad.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1523.063,
+"b": 1525.923,
+"k": "img/sachiko8/v_cold_steak_salad.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1525.923,
+"b": 1528.74,
+"k": "img/sachiko8/v_cold_steak_salad.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1528.74,
+"b": 1535.74,
+"k": "s_pan_scrape_c",
+"c": "Chapter",
+"props": {
+"n": "07",
+"title": "The science",
+"label": "PART",
+"k": "s_pan_scrape",
+"av": false
+}
+},
+{
+"a": 1535.74,
+"b": 1538.217,
+"k": "img/sachiko8/s_pan_scrape.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1538.217,
+"b": 1541.037,
+"k": "img/sachiko8/s_pan_scrape.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1541.037,
+"b": 1543.76,
+"k": "img/sachiko8/s_pan_scrape.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1543.76,
+"b": 1546.877,
+"k": "img/sachiko8/v_pan_juice_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1546.877,
+"b": 1550.01,
+"k": "img/sachiko8/v_pan_juice_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1550.01,
+"b": 1552.91,
+"k": "img/sachiko8/v_sunday_plan.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1552.91,
+"b": 1555.73,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_mother_smell.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1555.73,
+"b": 1558.55,
+"k": "img/sachiko8/s_mother_smell.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1558.55,
+"b": 1561.463,
+"k": "img/sachiko8/s_mother_smell.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1561.463,
+"b": 1564.47,
+"k": "img/sachiko8/s_mother_smell.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1564.47,
+"b": 1567.423,
+"k": "img/sachiko8/n_mother_kitchen_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1567.423,
+"b": 1570.543,
+"k": "img/sachiko8/n_mother_kitchen_old.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1570.543,
+"b": 1573.61,
+"k": "img/sachiko8/n_mother_kitchen_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1573.61,
+"b": 1576.51,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_taste_spoon.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1576.51,
+"b": 1580.857,
+"k": "img/sachiko8/s2_taste_spoon.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1580.857,
+"b": 1584.32,
+"k": "img/sachiko8/s2_taste_spoon.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1584.32,
+"b": 1587.397,
+"k": "img/sachiko8/s2_simmer_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1587.397,
+"b": 1590.24,
+"k": "img/sachiko8/s2_simmer_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1590.24,
+"b": 1593.757,
+"k": "img/sachiko8/s3_pot_simmer_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1593.757,
+"b": 1597.19,
+"k": "img/sachiko8/s3_pot_simmer_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1597.19,
+"b": 1599.11,
+"k": "s3_pot_simmer_eyes_c",
+"c": "MistakeStamp",
+"props": {
+"k": "s3_pot_simmer_eyes",
+"txt": "JUICE RUNS OUT: NOT RESTED",
+"cx": 50,
+"cy": 70
+}
+},
+{
+"a": 1599.11,
+"b": 1601.39,
+"k": "img/sachiko8/x_grey_steak.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1601.39,
+"b": 1603.95,
+"k": "img/sachiko8/x_grey_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1603.95,
+"b": 1606.34,
+"k": "img/sachiko8/x_grey_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1606.34,
+"b": 1608.743,
+"k": "img/sachiko8/x_mushy_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1608.743,
+"b": 1611.263,
+"k": "img/sachiko8/x_mushy_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1611.263,
+"b": 1613.62,
+"k": "img/sachiko8/x_mushy_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1613.62,
+"b": 1615.66,
+"k": "x_mushy_steak_c",
+"c": "Chapter",
+"props": {
+"n": "08",
+"title": "Money",
+"label": "PART",
+"k": "x_mushy_steak",
+"av": false
+}
+},
+{
+"a": 1615.66,
+"b": 1620.863,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1620.863,
+"b": 1623.023,
+"k": "img/sachiko8/s_wipe_onion.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1623.023,
+"b": 1628.47,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1628.47,
+"b": 1631.37,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_wipe_onion.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1631.37,
+"b": 1634.897,
+"k": "img/sachiko8/s_wipe_onion.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1634.897,
+"b": 1637.937,
+"k": "img/sachiko8/s_wipe_onion.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1637.937,
+"b": 1640.94,
+"k": "img/sachiko8/s_wipe_onion.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1640.94,
+"b": 1643.817,
+"k": "img/sachiko8/x_salty_plate.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1643.817,
+"b": 1646.457,
+"k": "img/sachiko8/x_salty_plate.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1646.457,
+"b": 1649.28,
+"k": "img/sachiko8/x_salty_plate.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1649.28,
+"b": 1651.637,
+"k": "img/sachiko8/x_burnt_edge.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1651.637,
+"b": 1653.8,
+"k": "img/sachiko8/x_burnt_edge.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1653.8,
+"b": 1656.357,
+"k": "img/sachiko8/x_chewy_cut_wrong.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1656.357,
+"b": 1659.16,
+"k": "img/sachiko8/x_chewy_cut_wrong.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1659.16,
+"b": 1662.117,
+"k": "img/sachiko8/s_show_lines.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1662.117,
+"b": 1665.337,
+"k": "img/sachiko8/s_show_lines.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1665.337,
+"b": 1668.35,
+"k": "img/sachiko8/s_show_lines.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1668.35,
+"b": 1671.31,
+"k": "img/sachiko8/s_show_lines.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1671.31,
+"b": 1674.21,
+"k": "img/sachiko8/x_raw_marinade_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1674.21,
+"b": 1677.11,
+"k": "img/sachiko8/x_raw_marinade_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1677.11,
+"b": 1679.88,
+"k": "img/sachiko8/x_raw_marinade_bowl.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1679.88,
+"b": 1682.81,
+"k": "img/sachiko8/s_boil_marinade.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1682.81,
+"b": 1685.49,
+"k": "img/sachiko8/s_boil_marinade.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1685.49,
+"b": 1688.54,
+"k": "img/sachiko8/s_boil_marinade.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1688.54,
+"b": 1691.557,
+"k": "img/sachiko8/s2_pear_rinse.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1691.557,
+"b": 1694.88,
+"k": "img/sachiko8/s2_pear_rinse.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1694.88,
+"b": 1697.78,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s2_rinse_knife.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1697.78,
+"b": 1701.617,
+"k": "img/sachiko8/s2_rinse_knife.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1701.617,
+"b": 1704.72,
+"k": "img/sachiko8/s2_rinse_knife.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1704.72,
+"b": 1708.17,
+"k": "img/sachiko8/s3_marinade_fingers_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1708.17,
+"b": 1710.997,
+"k": "img/sachiko8/s3_marinade_fingers_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1710.997,
+"b": 1713.96,
+"k": "img/sachiko8/s3_marinade_fingers_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1713.96,
+"b": 1717.257,
+"k": "img/sachiko8/p3_marinade_boiling_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1717.257,
+"b": 1720.46,
+"k": "img/sachiko8/p3_marinade_boiling_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1720.46,
+"b": 1723.917,
+"k": "img/sachiko8/sc_meat_fibers.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1723.917,
+"b": 1727.36,
+"k": "img/sachiko8/sc_meat_fibers.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1727.36,
+"b": 1730.517,
+"k": "img/sachiko8/sc_crust_clean.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1730.517,
+"b": 1733.637,
+"k": "img/sachiko8/sc_crust_clean.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1733.637,
+"b": 1736.66,
+"k": "img/sachiko8/sc_crust_clean.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1736.66,
+"b": 1740.137,
+"k": "img/sachiko8/s_explain_child.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1740.137,
+"b": 1743.817,
+"k": "img/sachiko8/s_explain_child.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1743.817,
+"b": 1747.38,
+"k": "img/sachiko8/s_explain_child.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1747.38,
+"b": 1749.997,
+"k": "img/sachiko8/sc_rest_juice.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1749.997,
+"b": 1752.33,
+"k": "img/sachiko8/sc_rest_juice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1752.33,
+"b": 1755.08,
+"k": "sc_rest_juice_c",
+"c": "Chapter",
+"props": {
+"n": "09",
+"title": "Memory",
+"label": "PART",
+"k": "sc_rest_juice",
+"av": false
+}
+},
+{
+"a": 1755.08,
+"b": 1759.703,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1759.703,
+"b": 1762.163,
+"k": "img/sachiko8/mo_tray_steak.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+],
+"dx": -120
+},
+{
+"a": 1762.163,
+"b": 1765.9,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1765.9,
+"b": 1766.2,
+"k": "img/sachiko8/mo_tray_steak.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1766.2,
+"b": 1774.2,
+"k": "mo_tray_steak_c",
+"c": "Memory",
+"props": {
+"k": "mo_tray_steak",
+"caption": "Her husband, a lean year",
+"date": "1976",
+"t": 1767.2
+}
+},
+{
+"a": 1774.2,
+"b": 1774.78,
+"k": "img/sachiko8/mo_tray_steak.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1774.78,
+"b": 1777.097,
+"k": "img/sachiko8/mo_cheap_steak_case.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1777.097,
+"b": 1779.6,
+"k": "img/sachiko8/mo_cheap_steak_case.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1779.6,
+"b": 1782.617,
+"k": "img/sachiko8/mo_onion_bag.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1782.617,
+"b": 1785.417,
+"k": "img/sachiko8/mo_onion_bag.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1785.417,
+"b": 1788.16,
+"k": "img/sachiko8/mo_onion_bag.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1788.16,
+"b": 1791.057,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/mo_soy_bottle.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1791.057,
+"b": 1793.997,
+"k": "img/sachiko8/mo_soy_bottle.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1793.997,
+"b": 1796.91,
+"k": "img/sachiko8/mo_soy_bottle.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1796.91,
+"b": 1799.77,
+"k": "img/sachiko8/mo_soy_bottle.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1799.77,
+"b": 1802.65,
+"k": "img/sachiko8/mo_soy_bottle.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1802.65,
+"b": 1806.37,
+"k": "img/sachiko8/s_shopping_bag.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1806.37,
+"b": 1809.25,
+"k": "img/sachiko8/mo_calendar_week.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1809.25,
+"b": 1812.103,
+"k": "img/sachiko8/mo_calendar_week.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1812.103,
+"b": 1814.9,
+"k": "img/sachiko8/mo_calendar_week.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1814.9,
+"b": 1818.043,
+"k": "img/sachiko8/n_birthday_1976_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1818.043,
+"b": 1821.26,
+"k": "img/sachiko8/n_birthday_1976_old.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1821.26,
+"b": 1824.16,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_grater_old.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1824.16,
+"b": 1828.27,
+"k": "img/sachiko8/n_grater_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1828.27,
+"b": 1831.29,
+"k": "img/sachiko8/n_grater_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1831.29,
+"b": 1834.87,
+"k": "img/sachiko8/mem_steak_birthday.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1834.87,
+"b": 1837.77,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_memory_plate.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1837.77,
+"b": 1841.223,
+"k": "img/sachiko8/s_memory_plate.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1841.223,
+"b": 1844.323,
+"k": "img/sachiko8/s_memory_plate.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1844.323,
+"b": 1847.5,
+"k": "img/sachiko8/s_memory_plate.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1847.5,
+"b": 1850.543,
+"k": "img/sachiko8/n_winter_window.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1850.543,
+"b": 1853.51,
+"k": "img/sachiko8/n_winter_window.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1853.51,
+"b": 1858.583,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1858.583,
+"b": 1861.023,
+"k": "img/sachiko8/s_memory_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1861.023,
+"b": 1865.58,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1865.58,
+"b": 1867.73,
+"k": "img/sachiko8/s_memory_hands.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1867.73,
+"b": 1869.91,
+"k": "img/sachiko8/s_memory_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1869.91,
+"b": 1875.5,
+"k": "s_memory_hands_c",
+"c": "Chapter",
+"props": {
+"n": "10",
+"title": "Recap",
+"label": "PART",
+"k": "s_memory_hands",
+"av": false
+}
+},
+{
+"a": 1875.5,
+"b": 1881.66,
+"k": "mem_old_grater_c",
+"c": "Checklist",
+"props": {
+"head": "THE WHOLE METHOD",
+"k": "mem_old_grater",
+"page": "RECAP",
+"items": [
+{
+"t": 1876.0,
+"txt": "Onion, two hours at most"
+},
+{
+"t": 1878.0,
+"txt": "Salt early, one teaspoon per pound"
+},
+{
+"t": 1880.0,
+"txt": "Very hot pan, flip every 30 seconds"
+},
+{
+"t": 1882.0,
+"txt": "145 degrees, rest 3 minutes"
+},
+{
+"t": 1884.0,
+"txt": "Slice thin, across the grain"
+}
+]
+}
+},
+{
+"a": 1881.66,
+"b": 1884.3,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_cook_alone.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1884.3,
+"b": 1888.063,
+"k": "img/sachiko8/s_cook_alone.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1888.063,
+"b": 1891.14,
+"k": "img/sachiko8/s_cook_alone.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1891.14,
+"b": 1894.097,
+"k": "img/sachiko8/s_close_wave.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1894.097,
+"b": 1896.637,
+"k": "img/sachiko8/s_close_wave.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1896.637,
+"b": 1898.937,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s_close_wave.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1898.937,
+"b": 1902.26,
+"k": "img/sachiko8/s_close_wave.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1902.26,
+"b": 1905.203,
+"k": "img/sachiko8/cl_sliced_plate_table.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1905.203,
+"b": 1908.52,
+"k": "img/sachiko8/cl_sliced_plate_table.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1908.52,
+"b": 1912.223,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1912.223,
+"b": 1914.723,
+"k": "img/sachiko8/n_rice_water_bowl.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1914.723,
+"b": 1916.99,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.05
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1916.99,
+"b": 1919.863,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_rice_water_bowl.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1919.863,
+"b": 1924.02,
+"k": "img/sachiko8/n_rice_water_bowl.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1924.02,
+"b": 1927.263,
+"k": "img/sachiko8/n_plants_window.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1927.263,
+"b": 1930.117,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/n_plants_window.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1930.117,
+"b": 1933.65,
+"k": "img/sachiko8/n_plants_window.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1933.65,
+"b": 1936.73,
+"k": "img/sachiko8/n_plants_window.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1936.73,
+"b": 1939.45,
+"k": "img/sachiko8/s_close_notebook.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1939.45,
+"b": 1942.163,
+"k": "img/sachiko8/s_close_notebook.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1942.163,
+"b": 1944.74,
+"k": "img/sachiko8/s_close_notebook.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1944.74,
+"b": 1950.06,
+"k": "s2_notebook_pencil_c",
+"c": "Tease",
+"props": {
+"k": "s2_notebook_pencil",
+"txt": "RICE WATER: SEVEN USES MY MOTHER SWORE BY",
+"tag": "NEXT VIDEO"
+}
+},
+{
+"a": 1950.06,
+"b": 1953.497,
+"k": "img/sachiko8/s2_calendar_mark.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1953.497,
+"b": 1956.93,
+"k": "img/sachiko8/s2_calendar_mark.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1956.93,
+"b": 1960.21,
+"k": "img/sachiko8/s2_wide_room.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1960.21,
+"b": 1963.76,
+"k": "img/sachiko8/s2_wide_room.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1963.76,
+"b": 1966.66,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko8/s3_notebook_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1966.66,
+"b": 1970.15,
+"k": "img/sachiko8/s3_notebook_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1970.15,
+"b": 1973.53,
+"k": "img/sachiko8/s3_notebook_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+}
+]
+}
