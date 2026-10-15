@@ -326,5 +326,10 @@
   "wav": "fish_refs/loretta.wav",
   "text": "Oh, now put that camera right here, honey, so they can see it. This is a chess pie. My mother made this one every single Sunday. And I'll be honest with you, I haven't seen one at a potluck in, oh, 30 years? Maybe more. Three eggs, a stick of butter, a spoonful of cornmeal, and a little splash of vinegar. That's it. Now the vinegar, that's the part nobody believes me about. You don't taste it, you just don't. Here, look at that. See how it wobbles in the middle? That's how you know.",
   "language": "en"
+ },
+ "stan_butcher": {
+  "wav": "fish_refs/stan_butcher.wav",
+  "text": "Fifty-two years I stood behind this counter. And I'll tell you something the steakhouse downtown doesn't want you to know. That sixty dollar steak? You can make it better at home, tonight, with a cheap cut and one old trick my father taught me. Stay with me, I'll show you.",
+  "language": "en"
  }
 }
