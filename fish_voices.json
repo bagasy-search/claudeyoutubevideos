@@ -331,5 +331,10 @@
   "wav": "fish_refs/stan_butcher.wav",
   "text": "Fifty-two years I stood behind this counter. And I'll tell you something the steakhouse downtown doesn't want you to know. That sixty dollar steak? You can make it better at home, tonight, with a cheap cut and one old trick my father taught me. Stay with me, I'll show you.",
   "language": "en"
+ },
+ "chayo_rancho": {
+  "wav": "fish_refs/chayo_rancho.wav",
+  "text": "Mira, mija, aquí en el rancho nunca se tiraba nada. Mi abuela agarraba los huesos del caldo, los tostaba en el comal hasta que olían a gloria, y luego los echaba a la olla con su cebollita y su ajo. Así salía un caldo bien sabroso, de ese que te calienta el alma. Y fíjate que no gastaba ni un peso más, nomás tiempo y cariño. Yo aprendí viéndola a ella, desde que tenía nueve años, aquí junto al fogón.",
+  "language": "es"
  }
 }
