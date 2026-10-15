@@ -3,11 +3,13 @@
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, useCurrentFrame } from "remotion";
 import { SERIF, LABEL, HAND, fr, cl, ez, eo, lin, img, clip, C, Grade, Grain, Mark, Print, Chip, Bed, Stage, FullPhoto, Tick, sp, useT, fit, shadowTxt, type P } from "./core";
+import { ItemQ } from "./cheap";
 
 // ── ITEM CARD: la tarjeta grande de cada cosa. Papel a la izquierda (ITEM n OF N + número gigante + nombre + PAGE),
 //    en `t` el nombre se tacha y entra "INSTEAD:" con lo que se usaba; foto real a la derecha (y la de reemplazo `k2` en `t`). ≥ 6 s ──
-export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; instead: string; page?: string; k: string; k2?: string; t: number; bed?: string }> =
-  ({ a, d, n, of, word = "ITEM", name, instead, page, k, k2, t, bed }) => {
+export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; instead: string; page?: string; k: string; k2?: string; t: number; bed?: string; look?: "paper" | "q" }> =
+  ({ a, d, n, of, word = "ITEM", name, instead, page, k, k2, t, bed, look }) => {
+    if (look === "q") return <ItemQ a={a} d={d} n={n} name={name} instead={instead} t={t} />;   // look TheCheapFix (cheap.tsx)
     const { f, at } = useT(a);
     const c = sp(f, 0, 14, 110), nb = sp(f, 4, 12, 150), nm = sp(f, 9, 14, 160);
     const T = at(t), ins = sp(f, T, 13, 170), sw = sp(f, T, 15, 120);

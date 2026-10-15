@@ -133,6 +133,11 @@
     "bed": {
      "type": "image",
      "required": false
+    },
+    "look": {
+     "type": "string",
+     "desc": "'paper' (default, Loretta) or 'q' (TheCheapFix: #N + name in a red box on black silk with '?'; 3-5 s)",
+     "required": false
     }
    },
    "time_props": [
@@ -1750,6 +1755,61 @@
    "time_props": [],
    "image_props": [],
    "notes": "Goes in edl.overlays."
+  },
+  {
+   "name": "BigLine",
+   "kind": "overlay",
+   "file": "src/lkit/cheap.tsx",
+   "use_when": "TheCheapFix: the key sentence in WHITE CAPS centered; the b-roll under it darkens and blurs. Only over photos/clips, never over the avatar.",
+   "min_s": 1.5,
+   "max_s": 5,
+   "props": {
+    "txt": {
+     "type": "string",
+     "required": true
+    },
+    "dim": {
+     "type": "number",
+     "required": false
+    }
+   },
+   "time_props": [],
+   "image_props": [],
+   "notes": "Goes in edl.overlays (plan_v3 writes plan/overlays.json with cfg texto.estilo='cheapfix'). a = first word, b = last word + 0.3."
+  },
+  {
+   "name": "PricePill",
+   "kind": "overlay",
+   "file": "src/lkit/cheap.tsx",
+   "use_when": "TheCheapFix: money said aloud ('$246', 'about $1') in a red pill.",
+   "min_s": 1,
+   "max_s": 3,
+   "props": {
+    "txt": {
+     "type": "string",
+     "required": true
+    },
+    "y": {
+     "type": "number",
+     "desc": "top in % (default 46)",
+     "required": false
+    }
+   },
+   "time_props": [],
+   "image_props": [],
+   "notes": "Goes in edl.overlays; a = the word."
+  },
+  {
+   "name": "Leak",
+   "kind": "overlay",
+   "file": "src/lkit/cheap.tsx",
+   "use_when": "TheCheapFix: orange light-leak flash (~0.6 s) over a cut, e.g. the entry of each item.",
+   "min_s": 0.3,
+   "max_s": 1.2,
+   "props": {},
+   "time_props": [],
+   "image_props": [],
+   "notes": "Goes in edl.overlays, centered on the cut."
   }
  ]
 }
