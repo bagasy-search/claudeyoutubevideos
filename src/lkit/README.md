@@ -230,3 +230,24 @@ One big key word with a punch, over another shot. Goes in edl.overlays.
 ```json
 {"a": 312.4, "b": 315.4, "c": "Pop", "props": {"txt": "Scratched"}}
 ```
+
+## TheCheapFix text kit (14-oct-2026) — `cheap.tsx`
+Mold: youtu.be/SUqzcj5udsk (1.07M views, 24 cuts/min, faceless). Kept OUR avatar rule (27 %, 3-6 s windows); only its text and rhythm were added.
+Turned on per video with spec `"estilo": "cheapfix"` in nuevo_v2.py, which merges `tools/plan_cfg.cheapfix.json` into plan_cfg. Code writes everything, with no AI involved:
+- plan_v3 writes `plan/overlays.json` and mkedl_v2 adds it to `edl.overlays` by itself.
+- Overlays only go over photos, clips and archive, never over the avatar or a component.
+
+### BigLine  (overlay, 1.5-5 s)
+The key sentence in WHITE CAPS (Montserrat 800), centered. The shot under it darkens and blurs (backdrop-filter), so it stays visible. One every ~22 s (`texto.cada_s`). Picked by score: numbers and units, negation, "but", short. Meta lines (channel / link / comment) are skipped, and vocatives like ", honey" are removed.
+```json
+{"a": 312.4, "b": 315.2, "c": "BigLine", "props": {"txt": "Bait works; peels don't."}}
+```
+### PricePill  (overlay, 1-3 s)
+Money said aloud ("$246", "246 dollars", "a dollar" → "$1"; "about/only/just…" kept as a prefix) in a red pill, 1.8 s from the word.
+```json
+{"a": 44.0, "b": 45.8, "c": "PricePill", "props": {"txt": "about $1"}}
+```
+### Leak  (overlay, ~0.65 s)
+Orange diagonal light streak (screen blend) centered on the cut into every ItemCard.
+### ItemCard `look: "q"`
+"#N" + name (+ "→ instead" on t) in a red-bordered box on moving black silk with floating "?". Card length 3-4.5 s (`items.card_s`).
