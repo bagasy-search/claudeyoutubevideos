@@ -186,7 +186,7 @@ export const ItemQ: React.FC<{ a: number; d: number; n: number; name: string; sa
   const cy = ez(cl((f - (d - 8)) / 4)), cx = ez(cl((f - (d - 4)) / 3));
   const sx = ox * (1 - cx), sy = Math.max(0.03, oy * (1 - cy));
   const txt = said || name;
-  const sz = Math.min(34, fit(txt, 980, 34, "label", 1, 0, 22));
+  const sz = Math.min(50, fit(txt, 1500, 50, "label", 1, 0, 26));
   const tOp = cl((sy - 0.6) / 0.4);
   return (
     <AbsoluteFill>
