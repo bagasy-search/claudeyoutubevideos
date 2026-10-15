@@ -326,5 +326,10 @@
   "wav": "fish_refs/loretta.wav",
   "text": "Oh, now put that camera right here, honey, so they can see it. This is a chess pie. My mother made this one every single Sunday. And I'll be honest with you, I haven't seen one at a potluck in, oh, 30 years? Maybe more. Three eggs, a stick of butter, a spoonful of cornmeal, and a little splash of vinegar. That's it. Now the vinegar, that's the part nobody believes me about. You don't taste it, you just don't. Here, look at that. See how it wobbles in the middle? That's how you know.",
   "language": "en"
+ },
+ "helen_butcher": {
+  "wav": "fish_refs/helen_butcher.wav",
+  "text": "Most of my customers are retired, cooking for one or two. And every week I watch them pay twice what they need to for meat. So today I'm going to show you the old freezer tricks I've used in this market for forty-one years. Grab a pen, honey.",
+  "language": "en"
  }
 }
