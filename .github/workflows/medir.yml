@@ -1,0 +1,52 @@
+# Mide la regla Bertha (avatar cada <=20 s) sobre el MP4 final de cada slug del release <slug>. Rama medir-*.
+name: medir
+on:
+  push:
+    branches: ['medir-*']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: echo "matrix=$(cat slugs.json)" >> "$GITHUB_OUTPUT"
+  uno:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      max-parallel: 64
+      matrix:
+        s: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q opencv-python-headless numpy && sudo apt-get install -y -qq ffmpeg >/dev/null || true
+      - name: medir
+        run: |
+          S=${{ matrix.s }}
+          for n in 1 2 3 4 5; do gh release download "$S" -R "$GITHUB_REPOSITORY" -p "$S.mp4" --clobber && break; sleep $((n*10)); done
+          test -s "$S.mp4"
+          python3 medir_mp4.py "$S" "$S.mp4" | tee "r_$S.json"
+          grep -q av_pct "r_$S.json"
+      - uses: actions/upload-artifact@v4
+        with: { name: "r_${{ matrix.s }}", path: "r_${{ matrix.s }}.json", retention-days: 3 }
+  juntar:
+    needs: uno
+    if: always()
+    runs-on: ubuntu-latest
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { path: arts }
+      - run: |
+          cat arts/*/r_*.json > tabla.jsonl; wc -l tabla.jsonl
+          T=$GITHUB_REF_NAME
+          gh release view "$T" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$T" -R "$GITHUB_REPOSITORY" --title "$T" --notes "medición regla Bertha"
+          gh release upload "$T" tabla.jsonl -R "$GITHUB_REPOSITORY" --clobber
+          git push "https://x-access-token:${GH_TOKEN}@github.com/$GITHUB_REPOSITORY.git" --delete "$GITHUB_REF_NAME" || true
