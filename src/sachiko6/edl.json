@@ -2686,17 +2686,29 @@
 },
 {
 "a": 652.61,
-"b": 660.707,
-"k": "c_therm1",
-"c": "Note",
-"props": {
-"lines": [
-"You want about one hundred and ninety degrees Fahrenheit, which is abo"
+"b": 656.659,
+"k": "img/sachiko6/c_therm1.png",
+"z": [
+1.0,
+1.07
 ],
-"sig": "Sachiko",
-"k": "c_therm1"
+"o": [
+50,
+50
+]
 },
-"text": "You want about one hundred and ninety degrees Fahrenheit, which is about eighty eight degrees Celsius, inside the middle of the loaf."
+{
+"a": 656.659,
+"b": 660.707,
+"k": "img/sachiko6/c_therm1.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 660.707,
@@ -3589,17 +3601,29 @@
 },
 {
 "a": 874.11,
-"b": 881.03,
-"k": "o_cup",
-"c": "Note",
-"props": {
-"lines": [
-"Milk gives the bread its color and its tender crumb, and the sugar in "
+"b": 877.57,
+"k": "img/sachiko6/o_cup.png",
+"z": [
+1.0,
+1.07
 ],
-"sig": "Sachiko",
-"k": "o_cup"
+"o": [
+50,
+50
+]
 },
-"text": "Milk gives the bread its color and its tender crumb, and the sugar in the milk helps the crust turn golden in the oven."
+{
+"a": 877.57,
+"b": 881.03,
+"k": "img/sachiko6/o_cup.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 881.03,
@@ -4385,17 +4409,29 @@
 },
 {
 "a": 1066.27,
-"b": 1072.71,
-"k": "d_bench1",
-"c": "Note",
-"props": {
-"lines": [
-"The soft milk bread holds the cucumber without getting soggy, because "
+"b": 1069.49,
+"k": "img/sachiko6/d_bench1.png",
+"z": [
+1.0,
+1.07
 ],
-"sig": "Sachiko",
-"k": "d_bench1"
+"o": [
+50,
+50
+]
 },
-"text": "The soft milk bread holds the cucumber without getting soggy, because the crumb is tight and does not soak."
+{
+"a": 1069.49,
+"b": 1072.71,
+"k": "img/sachiko6/d_bench1.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1072.71,
@@ -5474,17 +5510,29 @@
 },
 {
 "a": 1321.19,
-"b": 1329.19,
-"k": "o_moldbag",
-"c": "Note",
-"props": {
-"lines": [
-"The fifth mistake is the one about mold, and I need to be honest with "
+"b": 1325.19,
+"k": "img/sachiko6/o_moldbag.png",
+"z": [
+1.0,
+1.07
 ],
-"sig": "Sachiko",
-"k": "o_moldbag"
+"o": [
+50,
+50
+]
 },
-"text": "The fifth mistake is the one about mold, and I need to be honest with you, because this is the most important truth in the whole video."
+{
+"a": 1325.19,
+"b": 1329.19,
+"k": "img/sachiko6/o_moldbag.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1329.19,
@@ -6276,17 +6324,29 @@
 },
 {
 "a": 1514.74,
-"b": 1521.4,
-"k": "kt_06",
-"c": "Note",
-"props": {
-"lines": [
-"That is the Maillard reaction, the same reaction that makes toast tast"
+"b": 1518.07,
+"k": "img/sachiko6/kt_06.png",
+"z": [
+1.0,
+1.07
 ],
-"sig": "Sachiko",
-"k": "kt_06"
+"o": [
+50,
+50
+]
 },
-"text": "That is the Maillard reaction, the same reaction that makes toast taste good and makes a seared steak brown."
+{
+"a": 1518.07,
+"b": 1521.4,
+"k": "img/sachiko6/kt_06.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1521.4,
@@ -7014,17 +7074,29 @@
 },
 {
 "a": 1710.37,
-"b": 1717.21,
-"k": "me_14_b",
-"c": "Note",
-"props": {
-"lines": [
-"Here is a simple weekly plan that I used in my own kitchen, when we ha"
+"b": 1713.79,
+"k": "img/sachiko6/me_14_b.png",
+"z": [
+1.0,
+1.07
 ],
-"sig": "Sachiko",
-"k": "me_14_b"
+"o": [
+50,
+50
+]
 },
-"text": "Here is a simple weekly plan that I used in my own kitchen, when we had little money in the early years."
+{
+"a": 1713.79,
+"b": 1717.21,
+"k": "img/sachiko6/me_14_b.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1717.21,
