@@ -6,8 +6,8 @@ import { SERIF, LABEL, HAND, fr, cl, ez, eo, lin, img, clip, C, Grade, Grain, Ma
 
 // ── ITEM CARD: la tarjeta grande de cada cosa. Papel a la izquierda (ITEM n OF N + número gigante + nombre + PAGE),
 //    en `t` el nombre se tacha y entra "INSTEAD:" con lo que se usaba; foto real a la derecha (y la de reemplazo `k2` en `t`). ≥ 6 s ──
-export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; instead: string; page?: string; k: string; k2?: string; t: number; bed?: string }> =
-  ({ a, d, n, of, word = "ITEM", name, instead, page, k, k2, t, bed }) => {
+export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; instead: string; page?: string; k: string; k2?: string; t: number; bed?: string; nostrike?: boolean; fixLabel?: string }> =
+  ({ a, d, n, of, word = "ITEM", name, instead, page, k, k2, t, bed, nostrike, fixLabel = "THE FIX:" }) => {
     const { f, at } = useT(a);
     const c = sp(f, 0, 14, 110), nb = sp(f, 4, 12, 150), nm = sp(f, 9, 14, 160);
     const T = at(t), ins = sp(f, T, 13, 170), sw = sp(f, T, 15, 120);
@@ -35,13 +35,13 @@ export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; 
             <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 240, lineHeight: 0.92, color: C.lilacDeep, marginTop: 6, opacity: nb, transform: `scale(${1.25 - 0.25 * nb})`, transformOrigin: "0 80%" }}>{n}</div>
             <div style={{ position: "relative", display: "inline-block", marginTop: 10, opacity: nm, transform: `translateY(${(1 - nm) * 24}px)` }}>
               {/* tachado POR RENGLÓN (antes solo cruzaba el primero cuando el nombre ocupaba 2): fondo por fragmento con box-decoration clone */}
-              <div style={{ fontFamily: SERIF, fontWeight: 800, fontSize: nameSz, lineHeight: 1.04, color: f > T ? C.inkSoft : C.ink, maxWidth: 720 }}>
+              <div style={{ fontFamily: SERIF, fontWeight: 800, fontSize: nameSz, lineHeight: 1.04, color: f > T && !nostrike ? C.inkSoft : C.ink, maxWidth: 720 }}>
                 <span style={{ backgroundImage: `linear-gradient(${C.red}, ${C.red})`, backgroundRepeat: "no-repeat", backgroundPosition: "0 55%",
-                  backgroundSize: `${100 * ez((f - T) / 8)}% ${Math.max(6, nameSz * 0.1)}px`, WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" } as React.CSSProperties}>{name}</span>
+                  backgroundSize: `${nostrike ? 0 : 100 * ez((f - T) / 8)}% ${Math.max(6, nameSz * 0.1)}px`, WebkitBoxDecorationBreak: "clone", boxDecorationBreak: "clone" } as React.CSSProperties}>{name}</span>
               </div>
             </div>
             <div style={{ marginTop: 26, minHeight: insSz * 1.1, opacity: ins, transform: `translateX(${(1 - ins) * -40}px)` }}>
-              <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 4, color: C.red }}>INSTEAD:</div>
+              <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 40, letterSpacing: 4, color: C.red }}>{fixLabel}</div>
               <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: insSz, lineHeight: 1.0, color: C.pen, marginTop: 4 }}>{instead}</div>
             </div>
           </div>
