@@ -36,8 +36,9 @@ caps = json.loads(Path("public/captions_%s.json" % a.slug).read_text(encoding="u
 blocks = json.loads(Path("_v3/%s_blocks.json" % a.slug).read_text(encoding="utf8"))
 
 # ── palabras del GUION, con su offset de caracter ────────────────────────────
-GW = [(m.group(0), m.start()) for m in re.finditer(r"[A-Za-z0-9'’$%.,-]*[A-Za-z0-9][A-Za-z0-9'’$%-]*", guion)]
-norm = lambda w: re.sub(r"[^a-z0-9]", "", w.lower())
+GW = [(m.group(0), m.start()) for m in re.finditer(r"[\wÁÉÍÓÚÜÑáéíóúüñ'’$%.,-]*[\wÁÉÍÓÚÜÑáéíóúüñ][\wÁÉÍÓÚÜÑáéíóúüñ'’$%-]*", guion)]
+import unicodedata
+norm = lambda w: re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", w.lower()).encode("ascii", "ignore").decode())
 gw = [norm(w) for w, _ in GW]
 
 # ── palabras del ASR ─────────────────────────────────────────────────────────
@@ -86,7 +87,7 @@ cursor = 0
 filas = []
 peor_racha = 0
 for bi, b in enumerate(blocks):
-    n = len(re.findall(r"[A-Za-z0-9'’$%.,-]*[A-Za-z0-9][A-Za-z0-9'’$%-]*", b))
+    n = len(re.findall(r"[\wÁÉÍÓÚÜÑáéíóúüñ'’$%.,-]*[\wÁÉÍÓÚÜÑáéíóúüñ][\wÁÉÍÓÚÜÑáéíóúüñ'’$%-]*", b))
     i0, i1 = cursor, min(cursor + n, len(gw))
     cursor = i1
     if i1 <= i0: continue

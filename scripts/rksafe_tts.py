@@ -12,7 +12,7 @@
 #    salto no tenga a donde saltar. Ademas da pausas de parrafo reales.
 #
 #   python scripts/rksafe_tts.py <slug> [--max-chars 420] [--concurrency 3] [--only 3,7]
-import argparse, json, os, re, subprocess, sys
+import argparse, json, os, re, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -108,16 +108,29 @@ def main():
     session = Session(load_key())
 
     def gen(i, t):
+        # ⛔ el free tier satura: 504 Gateway Timeout / 499 / stream vacío (0 bytes, sin excepción).
+        #    Reintenta hasta 6 veces con espera creciente y mira el TAMAÑO; nunca deja un wav de 0 bytes por "ok".
         p = OUT / ("b%03d.wav" % i)
-        try:
-            req = TTSRequest(text=t, references=refs, format="wav", sample_rate=44100,
-                             temperature=a.temperature, top_p=a.top_p)
-            with open(p, "wb") as f:
-                for ch in session.tts(req, backend=BACKEND): f.write(ch)
-            fix_header(p)
-            return i, True, ""
-        except Exception as e:
-            return i, False, str(e)[:160]
+        tmp = OUT / ("b%03d.tmp" % i)
+        req = TTSRequest(text=t, references=refs, format="wav", sample_rate=44100,
+                         temperature=a.temperature, top_p=a.top_p)
+        esperado = len(t) / 15.7 * 44100 * 2 * 0.45
+        err = ""
+        for k in range(6):
+            try:
+                with open(tmp, "wb") as f:
+                    for ch in session.tts(req, backend=BACKEND): f.write(ch)
+                if tmp.stat().st_size >= max(30000, esperado):
+                    os.replace(tmp, p); fix_header(p)
+                    return i, True, ""
+                err = "wav vacio (%d bytes)" % tmp.stat().st_size
+            except Exception as e:
+                err = str(e)[:160]
+            print("  … b%03d intento %d: %s" % (i, k + 1, err), flush=True)
+            time.sleep(min(30 * (k + 1), 120))
+        try: tmp.unlink()
+        except Exception: pass
+        return i, False, err
 
     if a.only:
         pend = [(i, blocks[i]) for i in [int(x) for x in a.only.split(",") if x.strip() != ""]]

@@ -12,6 +12,7 @@ export const RayCta: React.FC<{
   eyebrow?: string;
   qr?: string;
   showQr?: boolean;
+  landing?: string;
   durationInFrames?: number;
 }> = ({
   title = "The One Afternoon Door",
@@ -20,6 +21,7 @@ export const RayCta: React.FC<{
   eyebrow = "Free walkthrough",
   qr = undefined,
   showQr = true,
+  landing = undefined,
 }) => {
   const frame = useCurrentFrame();
   const a = enter(frame, 14);
@@ -40,6 +42,11 @@ export const RayCta: React.FC<{
 
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {landing ? (
+        <div style={{ position: "absolute", left: "6%", bottom: "9%", width: 760, borderRadius: 18, overflow: "hidden", border: "2px solid rgba(201,162,74,0.75)", boxShadow: "0 24px 70px rgba(0,0,0,0.65)", opacity: clamp01(frame / 12), transform: `scale(${(1.02 + 0.06 * clamp01(frame / 600)).toFixed(4)})`, transformOrigin: "50% 60%" }}>
+          <Img src={staticFile(landing)} style={{ width: "100%", display: "block" }} />
+        </div>
+      ) : null}
       <div style={{ position: "absolute", right: "5%", bottom: "8%", width: 640, opacity: a, transform: `translateX(${slide.toFixed(1)}px)` }}>
         {/* Scrim oscuro SOLO detrás de la tarjeta */}
         <div style={{ position: "relative", background: `linear-gradient(160deg, ${rgba(V.ink1, 0.96)}, ${rgba(V.ink0, 0.97)})`, border: `2px solid ${V.brass}`, borderRadius: 14, boxShadow: `0 18px 60px rgba(0,0,0,0.78), 0 0 0 1px ${rgba(V.brass, 0.25)}, inset 0 0 40px ${rgba(V.brass, 0.06)}`, padding: "26px 28px", overflow: "hidden" }}>
