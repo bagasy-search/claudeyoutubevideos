@@ -280,7 +280,7 @@ export const NeverMix: P<{ head?: string; tag?: string; rows: { t: number; a: st
 };
 
 // ── DESFILE: cada cosa a PANTALLA COMPLETA (su foto) entra barriendo en su t; número + nombre + uso a la izquierda ──
-export const Lineup: P<{ items: { t: number; name: string; use: string; k: string }[]; head?: string }> = ({ a, d, items, head }) => {
+export const Lineup: P<{ items: { t: number; name: string; use: string; k: string }[]; head?: string; base?: number; of?: number }> = ({ a, d, items, head, base = 0, of }) => {
   const { f, at } = useT(a);
   const act = items.reduce((m, s, i) => (f >= at(s.t) ? i : m), 0);
   const it = items[act];
@@ -304,8 +304,8 @@ export const Lineup: P<{ items: { t: number; name: string; use: string; k: strin
       <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(14,10,22,0.82) 0%, rgba(14,10,22,0.55) 38%, rgba(0,0,0,0) 62%)" }} />
       {head ? <div style={{ position: "absolute", left: 110, top: 80, fontFamily: LABEL, fontWeight: 700, fontSize: fit(head, 800, 38, "label", 1, 10), letterSpacing: 10, color: C.lilac, whiteSpace: "nowrap" }}>{head}</div> : null}
       <div style={{ position: "absolute", left: 100, top: 160, display: "flex", alignItems: "flex-end", gap: 10 }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 330, lineHeight: 0.84, color: C.porc, textShadow: shadowTxt, transform: `translateY(${(1 - u) * 40}px) scale(${1.15 - 0.15 * u})`, transformOrigin: "0% 100%" }}>{act + 1}</div>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 90, color: "rgba(251,248,242,0.5)", marginBottom: 30 }}>/{items.length}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 330, lineHeight: 0.84, color: C.porc, textShadow: shadowTxt, transform: `translateY(${(1 - u) * 40}px) scale(${1.15 - 0.15 * u})`, transformOrigin: "0% 100%" }}>{act + 1 + base}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 90, color: "rgba(251,248,242,0.5)", marginBottom: 30 }}>/{of ?? items.length}</div>
       </div>
       <div style={{ position: "absolute", left: 110, top: 520, width: 800, opacity: u, transform: `translateX(${(1 - u) * -60}px)` }}>
         <div style={{ fontFamily: SERIF, fontWeight: 800, fontSize: fit(it.name, 800, 80, "serif", 2), lineHeight: 1.02, color: C.porc, textShadow: shadowTxt }}>{it.name}</div>
