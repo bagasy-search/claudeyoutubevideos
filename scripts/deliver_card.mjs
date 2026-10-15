@@ -9,6 +9,7 @@
 // - <slug>: el slug del render; el release <slug> debe tener el asset <slug>.mp4, y debe existir public/<slug>_meta.json
 // Creds de Supabase: resueltas en cascada por scripts/supa_creds.mjs (env vars, <video2>/.env.local, yt-scout-web).
 import fs from "node:fs";
+import { thumbYT } from "./thumb_yt.mjs";
 import { execSync } from "node:child_process";
 import { supaCreds } from "./supa_creds.mjs";
 
@@ -135,7 +136,7 @@ const main = async () => {
     const jj = await put.json().catch(() => ({}));
     if (!put.ok || !jj.id) { console.warn("YouTube PUT falló", put.status, JSON.stringify(jj).slice(0, 160)); return job; }
     const vid = jj.id;
-    if (thumb) { try { const t = await fetch(thumb); const tb = Buffer.from(await t.arrayBuffer()); await fetch("https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=" + vid, { method: "POST", headers: { Authorization: "Bearer " + at, "Content-Type": t.headers.get("content-type") || "image/png", "Content-Length": String(tb.length) }, body: tb }); } catch {} }
+    if (thumb) { try { const { buf: tb, ct } = await thumbYT(thumb); await fetch("https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId=" + vid, { method: "POST", headers: { Authorization: "Bearer " + at, "Content-Type": ct, "Content-Length": String(tb.length) }, body: tb }); } catch {} }
     await fetch(`${U}/rest/v1/video_jobs?id=eq.${job.id}`, { method: "PATCH", headers: { ...H, Prefer: "return=minimal" }, body: JSON.stringify({ yt_video_id: vid, yt_upload_status: "done", yt_uploaded_at: new Date().toISOString() }) });
     console.log("YouTube ✓ borrador PRIVADO:", "https://studio.youtube.com/video/" + vid + "/edit");
   } catch (e) { console.warn("YouTube: error subiendo (entregá a mano):", String(e.message).slice(0, 160)); }
