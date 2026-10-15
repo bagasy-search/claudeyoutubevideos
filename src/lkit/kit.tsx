@@ -16,7 +16,7 @@ export const Chapter: P<{ n: string; title: string; sub?: string; label?: string
       <div style={{ position: "absolute", left: 120 - 30 * cam, top: 150, width: 640, opacity: u, transform: `scale(${1.3 - 0.3 * u})`, transformOrigin: "30% 60%" }}>
         <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: fit(label, 620, 50, "label", 1, 16), letterSpacing: 16, color: C.lilac, marginLeft: 20, whiteSpace: "nowrap" }}>{label}</div>
         <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: fit(n, 620, 700, "serif"), lineHeight: 0.86, color: "transparent", whiteSpace: "nowrap",
-          backgroundImage: "linear-gradient(170deg, #FFFDF8 10%, #E6DDF0 55%, #B4A2C6 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.5))" }}>{n}</div>
+          backgroundImage: "linear-gradient(170deg, #FFFDF8 10%, #F3E3DA 55%, #D9A08F 100%)", WebkitBackgroundClip: "text", backgroundClip: "text", filter: "drop-shadow(0 30px 50px rgba(0,0,0,0.5))" }}>{n}</div>
       </div>
       <div style={{ position: "absolute", left: 1240, top: 540, translate: "-50% -50%", transform: `perspective(1600px) rotateY(${-10 + 10 * ez(cam)}deg) translateX(${(1 - u) * 800}px)`, opacity: cl(u * 2) }}>
         <div style={{ background: "#FFFDF8", padding: 14, borderRadius: 4, boxShadow: `0 50px 90px ${C.shadow}` }}>

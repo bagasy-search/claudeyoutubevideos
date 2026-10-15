@@ -1,0 +1,24 @@
+{
+ "canal": "Mickey's Butcher Shop",
+ "serie": "Mickey's Butcher Shop: a 70-year-old Irish butcher from Dorchester, Boston, shows the old butcher tricks that make cheap tough cuts tender",
+ "idioma": "en",
+ "protagonista": "mickey",
+ "pron": "he",
+ "voz": "mickey_butcher",
+ "cps": 13.0,
+ "avatar_pct": [
+  24,
+  32
+ ],
+ "prohibidas": [
+  "\\bfree\\b",
+  "\\bgratis\\b",
+  "https?://",
+  "\\bwww\\b",
+  "\\.com\\b",
+  "\\$\\s?\\d",
+  "\\blinks?\\b",
+  "\\bcostco\\b",
+  "\\bwalmart\\b"
+ ]
+}
