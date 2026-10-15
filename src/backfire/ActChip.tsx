@@ -13,7 +13,7 @@ export const ActChip: React.FC<{ fileNo: string | number; part: string; duration
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <div style={{ position: "absolute", left: 40, top: 36, opacity: a, transform: `translateY(${((1 - a) * -14).toFixed(1)}px)`, display: "flex", alignItems: "stretch", boxShadow: "0 8px 22px rgba(0,0,0,.5)" }}>
-        <div style={{ background: W.manila, padding: "9px 16px", fontFamily: F_TYPE, fontSize: 26, letterSpacing: 2, color: W.ink0 }}>FILE {String(fileNo).padStart(2, "0")}</div>
+        <div style={{ background: W.manila, padding: "9px 16px", fontFamily: F_TYPE, fontSize: 26, letterSpacing: 2, color: W.ink0 }}>{typeof fileNo === "string" && isNaN(Number(fileNo)) ? fileNo : `FILE ${String(fileNo).padStart(2, "0")}`}</div>
         <div style={{ background: rgba(W.ink0, 0.78), padding: "9px 18px", fontFamily: F_TYPE, fontSize: 26, letterSpacing: 2, color: W.white, borderRight: `5px solid ${W.red}` }}>{part}</div>
       </div>
     </AbsoluteFill>

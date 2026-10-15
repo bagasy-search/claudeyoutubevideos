@@ -1,6 +1,6 @@
 # scripts/backfire_tts_gate.py <slug> [--rounds 5] [--concurrency 2] — COMPUERTA DE VOZ POR BLOQUE (canal Walt).
 #   Correr DESPUÉS de `python scripts/rksafe_tts.py <slug> --concurrency 2`.
-#   Transcribe CADA bloque con Modal (faster-whisper large-v3, inglés) y mide el HUECO MÁS LARGO de palabras del
+#   Transcribe CADA bloque con Groq whisper-large-v3 (groq_whisper.py, un solo pedido por ronda) y mide el HUECO MÁS LARGO de palabras del
 #   guion que no se oyen (difflib, delete/replace). Hueco >= 4 → regenera SOLO ese bloque con rksafe_tts --only,
 #   hasta --rounds veces, y se queda con la MEJOR toma (la de hueco menor). Nunca en silencio: imprime todo.
 # ⛔ El % de similitud NO es el criterio (el ASR escribe "1935" donde el guion dice "nineteen thirty-five"):
@@ -12,7 +12,7 @@ for _s in (sys.stdout, sys.stderr):
     try: _s.reconfigure(encoding="utf-8", errors="replace")
     except Exception: pass
 sys.path.insert(0, os.getcwd())
-import modal_whisper as mw
+import groq_whisper as mw  # 14-oct: Groq gratis, NUNCA Modal (pedido del dueño)
 
 NUM = set(("zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen "
            "seventeen eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million "

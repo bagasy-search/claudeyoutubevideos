@@ -38,7 +38,7 @@ const REF = `public/${SLUG}_avref.png`;
 const WINS = `_v3/${SLUG}_avwins.json`;
 fs.mkdirSync(A, { recursive: true });
 
-const KEY = (fs.readFileSync('.env', 'utf8').match(/^RUNPOD_API_KEY\s*=\s*(.*)$/m) || [])[1]?.trim();
+const KN = process.env.RUNPOD_KEY_NAME || 'RUNPOD_API_KEY'; const KEY = (fs.readFileSync('.env', 'utf8').match(new RegExp('^' + KN + '\\s*=\\s*(.*)$', 'm')) || [])[1]?.trim();
 const H = { Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' };
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const dur = (f) => +execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], { encoding: 'utf8' }).match(/[\d.]+/)[0];
