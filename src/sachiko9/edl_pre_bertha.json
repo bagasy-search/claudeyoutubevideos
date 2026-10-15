@@ -1,0 +1,7782 @@
+{
+"end": 1885.8,
+"shots": [
+{
+"a": 0.0,
+"b": 2.5,
+"k": "thumb",
+"c": "OpenThumb",
+"props": {
+"k": "thumb",
+"focus": [
+420,
+430
+],
+"rings": [
+{
+"t": 2.2,
+"x": 420,
+"y": 430,
+"w": 150
+},
+{
+"t": 5.4,
+"x": 640,
+"y": 760,
+"w": 150
+}
+],
+"marks": []
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 2.5,
+"b": 4.773,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_sink_rice.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 4.773,
+"b": 7.093,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_airmail_letter.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 7.093,
+"b": 9.007,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_balcony_narrow.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 9.007,
+"b": 11.427,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_bamboo_pot.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 11.427,
+"b": 13.44,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_bamboo_water_fridge.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 13.44,
+"b": 15.66,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_bread_mold.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 15.66,
+"b": 17.82,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_cactus_row.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 17.82,
+"b": 20.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_cut_board.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 20.0,
+"b": 21.947,
+"k": "img/sachiko9/sk9_plant_bottle.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 21.947,
+"b": 23.807,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_fertilizer_bag.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 23.807,
+"b": 25.5,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_gnats_pot.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 25.5,
+"b": 29.56,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 29.56,
+"b": 31.82,
+"k": "img/sachiko9/sk9_rice_bowl_hands.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 31.82,
+"b": 35.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 35.0,
+"b": 38.0,
+"k": "img/sachiko9/sk9_rice_bowl_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 38.0,
+"b": 48.0,
+"k": "sk9_rice_bowl_hands",
+"c": "NameCard",
+"props": {
+"word": "togi-jiru",
+"gloss": "rice-wash water",
+"name": 40.0,
+"glossAt": 43.0,
+"k": "sk9_rice_bowl_hands"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 48.0,
+"b": 51.567,
+"k": "img/sachiko9/sk9_pale_plant.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 51.567,
+"b": 55.0,
+"k": "img/sachiko9/sk9_pale_plant.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 55.0,
+"b": 58.207,
+"k": "img/sachiko9/sk9_cut_board.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 58.207,
+"b": 61.767,
+"k": "img/sachiko9/sk9_cut_board.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 61.767,
+"b": 65.0,
+"k": "img/sachiko9/sk9_cut_board.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 65.0,
+"b": 67.64,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_sit_tea.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 67.64,
+"b": 71.567,
+"k": "img/sachiko9/sk9b_sit_tea.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 71.567,
+"b": 75.0,
+"k": "img/sachiko9/sk9b_sit_tea.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 75.0,
+"b": 77.9,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_noren.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 77.9,
+"b": 81.54,
+"k": "img/sachiko9/sk9_noren.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 81.54,
+"b": 85.0,
+"k": "img/sachiko9/sk9_noren.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 85.0,
+"b": 86.1,
+"k": "img/sachiko9/sk9b_push_noren.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 86.1,
+"b": 90.42,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 90.42,
+"b": 92.82,
+"k": "img/sachiko9/sk9_osaka_kitchen_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 92.82,
+"b": 96.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 96.0,
+"b": 98.64,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_osaka_kitchen_old.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 98.64,
+"b": 102.76,
+"k": "img/sachiko9/sk9_osaka_kitchen_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 102.76,
+"b": 106.0,
+"k": "img/sachiko9/sk9_osaka_kitchen_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 106.0,
+"b": 108.773,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_osaka_street_old.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 108.773,
+"b": 112.787,
+"k": "img/sachiko9/sk9_osaka_street_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 112.787,
+"b": 116.0,
+"k": "img/sachiko9/sk9_osaka_street_old.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 116.0,
+"b": 118.406,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_rice_tub_pantry.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 118.406,
+"b": 122.467,
+"k": "img/sachiko9/sk9b_rice_tub_pantry.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 122.467,
+"b": 126.0,
+"k": "img/sachiko9/sk9b_rice_tub_pantry.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 126.0,
+"b": 128.9,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_rice_grain_plate.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 128.9,
+"b": 132.893,
+"k": "img/sachiko9/sk9_rice_grain_plate.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 132.893,
+"b": 136.0,
+"k": "img/sachiko9/sk9_rice_grain_plate.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 136.0,
+"b": 139.607,
+"k": "img/sachiko9/sk9_rainy_street.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 139.607,
+"b": 142.7,
+"k": "img/sachiko9/sk9_rainy_street.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 142.7,
+"b": 146.893,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 146.893,
+"b": 149.433,
+"k": "img/sachiko9/sk9_bread_mold.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 149.433,
+"b": 152.5,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 152.5,
+"b": 155.727,
+"k": "img/sachiko9/sk9_bread_mold.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 155.727,
+"b": 159.147,
+"k": "img/sachiko9/sk9_bread_mold.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 159.147,
+"b": 162.5,
+"k": "img/sachiko9/sk9_bread_mold.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 162.5,
+"b": 164.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_small_gas_stove_old.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 164.0,
+"b": 172.0,
+"k": "sk9b_small_gas_stove_old",
+"c": "NameCard",
+"props": {
+"word": "tsuyu",
+"gloss": "the rainy season",
+"name": 166.0,
+"glossAt": 169.0,
+"k": "sk9b_small_gas_stove_old"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 172.0,
+"b": 172.5,
+"k": "img/sachiko9/sk9b_small_gas_stove_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 172.5,
+"b": 175.98,
+"k": "img/sachiko9/sk9b_small_gas_stove_old.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 175.98,
+"b": 179.113,
+"k": "img/sachiko9/sk9b_small_gas_stove_old.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 179.113,
+"b": 182.47,
+"k": "img/sachiko9/sk9b_small_gas_stove_old.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 182.47,
+"b": 185.11,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_swirl_bowl_eyes.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 185.11,
+"b": 189.113,
+"k": "img/sachiko9/sk9b_swirl_bowl_eyes.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 189.113,
+"b": 192.47,
+"k": "img/sachiko9/sk9b_swirl_bowl_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 192.47,
+"b": 195.37,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_morning_sink.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 195.37,
+"b": 199.267,
+"k": "img/sachiko9/sk9b_morning_sink.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 199.267,
+"b": 202.47,
+"k": "img/sachiko9/sk9b_morning_sink.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 202.47,
+"b": 205.11,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_pour_over_rice.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 205.11,
+"b": 209.267,
+"k": "img/sachiko9/sk9b_pour_over_rice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 209.267,
+"b": 212.47,
+"k": "img/sachiko9/sk9b_pour_over_rice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 212.47,
+"b": 214.977,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_pour_off.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 214.977,
+"b": 219.193,
+"k": "img/sachiko9/sk9_pour_off.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 219.193,
+"b": 222.47,
+"k": "img/sachiko9/sk9_pour_off.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 222.47,
+"b": 225.3,
+"k": "img/sachiko9/sk9_jar_windowsill.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 225.3,
+"b": 228.913,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 228.913,
+"b": 231.413,
+"k": "img/sachiko9/sk9_balcony_narrow.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 231.413,
+"b": 234.1,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 234.1,
+"b": 237.407,
+"k": "img/sachiko9/sk9_balcony_narrow.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 237.407,
+"b": 240.707,
+"k": "img/sachiko9/sk9_balcony_narrow.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 240.707,
+"b": 244.1,
+"k": "img/sachiko9/sk9_balcony_narrow.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 244.1,
+"b": 247.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_balcony_seedling.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 247.0,
+"b": 250.687,
+"k": "img/sachiko9/sk9b_balcony_seedling.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 250.687,
+"b": 254.1,
+"k": "img/sachiko9/sk9b_balcony_seedling.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 254.1,
+"b": 257.42,
+"k": "img/sachiko9/sk9_airmail_letter.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 257.42,
+"b": 260.673,
+"k": "img/sachiko9/sk9_airmail_letter.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 260.673,
+"b": 264.1,
+"k": "img/sachiko9/sk9_airmail_letter.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 264.1,
+"b": 267.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_write_letter.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 267.0,
+"b": 270.593,
+"k": "img/sachiko9/sk9b_write_letter.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 270.593,
+"b": 274.1,
+"k": "img/sachiko9/sk9b_write_letter.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 274.1,
+"b": 277.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_hand_soil.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 277.0,
+"b": 280.793,
+"k": "img/sachiko9/sk9_hand_soil.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 280.793,
+"b": 284.1,
+"k": "img/sachiko9/sk9_hand_soil.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 284.1,
+"b": 287.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_kneel_leaves.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 287.0,
+"b": 290.727,
+"k": "img/sachiko9/sk9b_kneel_leaves.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 290.727,
+"b": 294.1,
+"k": "img/sachiko9/sk9b_kneel_leaves.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 294.1,
+"b": 296.973,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_japanese_garden_bucket.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 296.973,
+"b": 300.713,
+"k": "img/sachiko9/sk9_japanese_garden_bucket.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 300.713,
+"b": 304.1,
+"k": "img/sachiko9/sk9_japanese_garden_bucket.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 304.1,
+"b": 307.493,
+"k": "img/sachiko9/sk9_osaka_market.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 307.493,
+"b": 310.853,
+"k": "img/sachiko9/sk9_osaka_market.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 310.853,
+"b": 314.1,
+"k": "img/sachiko9/sk9_osaka_market.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 314.1,
+"b": 316.96,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_osaka_market.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 316.96,
+"b": 319.36,
+"k": "img/sachiko9/sk9_osaka_market.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 319.36,
+"b": 322.07,
+"k": "img/sachiko9/sk9_osaka_market.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 322.07,
+"b": 324.97,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_steel_bowl_jar_set.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 324.97,
+"b": 328.88,
+"k": "img/sachiko9/sk9b_steel_bowl_jar_set.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 328.88,
+"b": 332.07,
+"k": "img/sachiko9/sk9b_steel_bowl_jar_set.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 332.07,
+"b": 335.387,
+"k": "img/sachiko9/sk9b_sink_bowl_look.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 335.387,
+"b": 338.5,
+"k": "img/sachiko9/sk9b_sink_bowl_look.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 338.5,
+"b": 341.94,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 341.94,
+"b": 344.14,
+"k": "img/sachiko9/sk9_raw_rice_grains.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 344.14,
+"b": 346.6,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 346.6,
+"b": 349.373,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_raw_rice_grains.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 349.373,
+"b": 353.26,
+"k": "img/sachiko9/sk9_raw_rice_grains.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 353.26,
+"b": 356.6,
+"k": "img/sachiko9/sk9_raw_rice_grains.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 356.6,
+"b": 359.5,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_rice_plain.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 359.5,
+"b": 363.287,
+"k": "img/sachiko9/sk9_rice_plain.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 363.287,
+"b": 366.6,
+"k": "img/sachiko9/sk9_rice_plain.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 366.6,
+"b": 369.8,
+"k": "img/sachiko9/sk9b_tap_pour_rice.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 369.8,
+"b": 372.9,
+"k": "img/sachiko9/sk9b_tap_pour_rice.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 372.9,
+"b": 376.0,
+"k": "img/sachiko9/sk9b_tap_pour_rice.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 376.0,
+"b": 382.0,
+"k": "sk9b_tap_pour_rice",
+"c": "Chapter",
+"props": {
+"n": "1",
+"title": "FOR YOUR PLANTS",
+"av": false,
+"k": "sk9b_tap_pour_rice"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 382.0,
+"b": 384.16,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_swirl_fingers.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 384.16,
+"b": 386.6,
+"k": "img/sachiko9/sk9_swirl_fingers.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 386.6,
+"b": 389.8,
+"k": "img/sachiko9/sk9_swirl_fingers.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 389.8,
+"b": 393.193,
+"k": "img/sachiko9/sk9_swirl_fingers.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 393.193,
+"b": 396.6,
+"k": "img/sachiko9/sk9_swirl_fingers.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 396.6,
+"b": 399.5,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_swirl_close.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 399.5,
+"b": 403.42,
+"k": "img/sachiko9/sk9b_swirl_close.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 403.42,
+"b": 406.6,
+"k": "img/sachiko9/sk9b_swirl_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 406.6,
+"b": 409.373,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_strainer_jar_pour.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 409.373,
+"b": 412.953,
+"k": "img/sachiko9/sk9b_strainer_jar_pour.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 412.953,
+"b": 416.6,
+"k": "img/sachiko9/sk9b_strainer_jar_pour.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 416.6,
+"b": 419.24,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_second_rinse_add.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 419.24,
+"b": 423.467,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 423.467,
+"b": 426.6,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 426.6,
+"b": 429.96,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 429.96,
+"b": 433.2,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 433.2,
+"b": 436.57,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 436.57,
+"b": 439.94,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 439.94,
+"b": 443.147,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 443.147,
+"b": 446.57,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 446.57,
+"b": 449.633,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 449.633,
+"b": 452.7,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 452.7,
+"b": 457.667,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 457.667,
+"b": 460.007,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 460.007,
+"b": 464.4,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 464.4,
+"b": 467.767,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 467.767,
+"b": 470.927,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 470.927,
+"b": 474.4,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 474.4,
+"b": 477.773,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 477.773,
+"b": 481.04,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 481.04,
+"b": 484.37,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 484.37,
+"b": 487.8,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 487.8,
+"b": 491.0,
+"k": "img/sachiko9/sk9b_second_rinse_add.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 491.0,
+"b": 497.0,
+"k": "thumb",
+"c": "MistakeStamp",
+"props": {
+"txt": "NOT STRAIGHT ON THE SOIL",
+"k": "img/sachiko9/sk9b_second_rinse_add.png"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 497.0,
+"b": 500.9,
+"k": "img/sachiko9/sk9_thick_starch_soil.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 500.9,
+"b": 506.5,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 506.5,
+"b": 508.906,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_notebook_pencil.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 508.906,
+"b": 513.167,
+"k": "img/sachiko9/sk9_notebook_pencil.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 513.167,
+"b": 516.5,
+"k": "img/sachiko9/sk9_notebook_pencil.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 516.5,
+"b": 519.4,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_morning_glory_vines.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 519.4,
+"b": 523.173,
+"k": "img/sachiko9/sk9_morning_glory_vines.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 523.173,
+"b": 526.5,
+"k": "img/sachiko9/sk9_morning_glory_vines.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 526.5,
+"b": 529.873,
+"k": "img/sachiko9/sk9_morning_glory_vines.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 529.873,
+"b": 533.127,
+"k": "img/sachiko9/sk9_morning_glory_vines.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": 120
+},
+{
+"a": 533.127,
+"b": 536.5,
+"k": "img/sachiko9/sk9_morning_glory_vines.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 536.5,
+"b": 539.4,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_hook_tip_jar.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 539.4,
+"b": 543.067,
+"k": "img/sachiko9/sk9b_hook_tip_jar.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 543.067,
+"b": 546.5,
+"k": "img/sachiko9/sk9b_hook_tip_jar.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 546.5,
+"b": 549.853,
+"k": "img/sachiko9/sk9_drain_hole.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 549.853,
+"b": 553.0,
+"k": "img/sachiko9/sk9_drain_hole.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 553.0,
+"b": 559.0,
+"k": "sk9_drain_hole",
+"c": "MistakeStamp",
+"props": {
+"txt": "NEVER A PUDDLE UNDER THE POT",
+"k": "sk9_drain_hole"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 559.0,
+"b": 562.0,
+"k": "img/sachiko9/sk9_saucer_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 562.0,
+"b": 568.0,
+"k": "sk9_saucer_pot",
+"c": "MistakeStamp",
+"props": {
+"txt": "ROOTS IN WATER ALL DAY = ROT",
+"k": "sk9_saucer_pot"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 568.0,
+"b": 569.0,
+"k": "img/sachiko9/sk9b_sniff_jar.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 569.0,
+"b": 576.1,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 576.1,
+"b": 579.4,
+"k": "img/sachiko9/sk9b_cover_jar_cloth.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 579.4,
+"b": 582.7,
+"k": "img/sachiko9/sk9b_cover_jar_cloth.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 582.7,
+"b": 586.0,
+"k": "img/sachiko9/sk9b_cover_jar_cloth.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 586.0,
+"b": 593.0,
+"k": "sk9b_cover_jar_cloth",
+"c": "Chapter",
+"props": {
+"n": "B",
+"title": "FERMENTED: 1 TO 2 DAYS, SHADE",
+"av": false,
+"k": "sk9b_cover_jar_cloth"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 593.0,
+"b": 594.0,
+"k": "img/sachiko9/sk9_jar_cloth_shade.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 594.0,
+"b": 600.0,
+"k": "sk9_jar_cloth_shade",
+"c": "MistakeStamp",
+"props": {
+"txt": "NOT IN THE SUN: IN THE SHADE",
+"k": "sk9_jar_cloth_shade"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 600.0,
+"b": 602.98,
+"k": "img/sachiko9/sk9b_check_jar_lid.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 602.98,
+"b": 606.1,
+"k": "img/sachiko9/sk9b_check_jar_lid.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 606.1,
+"b": 609.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_sour_jar_close.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 609.0,
+"b": 612.967,
+"k": "img/sachiko9/sk9_sour_jar_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 612.967,
+"b": 616.1,
+"k": "img/sachiko9/sk9_sour_jar_close.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 616.1,
+"b": 617.0,
+"k": "img/sachiko9/sk9_moldy_jar_honest.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 617.0,
+"b": 623.0,
+"k": "sk9_moldy_jar_honest",
+"c": "MistakeStamp",
+"props": {
+"k": "sk9_moldy_jar_honest",
+"txt": "SOUR IS NORMAL. ROTTEN IS NOT."
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 623.0,
+"b": 626.1,
+"k": "img/sachiko9/sk9_moldy_jar_honest.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 626.1,
+"b": 629.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_wrinkle_nose.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 629.0,
+"b": 632.513,
+"k": "img/sachiko9/sk9b_wrinkle_nose.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 632.513,
+"b": 636.1,
+"k": "img/sachiko9/sk9b_wrinkle_nose.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 636.1,
+"b": 637.7,
+"k": "img/sachiko9/sk9b_pour_out_sink.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 637.7,
+"b": 641.507,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 641.507,
+"b": 643.913,
+"k": "img/sachiko9/sk9_fridge_jar.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 643.913,
+"b": 646.8,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 646.8,
+"b": 647.0,
+"k": "img/sachiko9/sk9_fridge_jar.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 647.0,
+"b": 653.0,
+"k": "sk9_fridge_jar",
+"c": "MistakeStamp",
+"props": {
+"k": "sk9_fridge_jar",
+"txt": "MOLD: THROW IT ALL OUT"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 653.0,
+"b": 656.8,
+"k": "img/sachiko9/sk9_fridge_jar.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 656.8,
+"b": 659.573,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_fridge_shelf.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 659.573,
+"b": 663.653,
+"k": "img/sachiko9/sk9b_fridge_shelf.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 663.653,
+"b": 666.8,
+"k": "img/sachiko9/sk9b_fridge_shelf.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 666.8,
+"b": 669.306,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_masking_tape_jar.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 669.306,
+"b": 673.327,
+"k": "img/sachiko9/sk9_masking_tape_jar.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 673.327,
+"b": 676.8,
+"k": "img/sachiko9/sk9_masking_tape_jar.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 676.8,
+"b": 679.307,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_tape_jar.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 679.307,
+"b": 683.393,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 683.393,
+"b": 686.8,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 686.8,
+"b": 690.233,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 690.233,
+"b": 693.353,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 693.353,
+"b": 696.8,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 696.8,
+"b": 700.233,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 700.233,
+"b": 703.393,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 703.393,
+"b": 706.8,
+"k": "img/sachiko9/sk9b_tape_jar.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 706.8,
+"b": 709.7,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_peace_lily_close.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 709.7,
+"b": 713.453,
+"k": "img/sachiko9/sk9_peace_lily_close.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 713.453,
+"b": 716.8,
+"k": "img/sachiko9/sk9_peace_lily_close.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 716.8,
+"b": 719.7,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_lettuce_pot.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 719.7,
+"b": 723.487,
+"k": "img/sachiko9/sk9_lettuce_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 723.487,
+"b": 726.8,
+"k": "img/sachiko9/sk9_lettuce_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 726.8,
+"b": 729.847,
+"k": "img/sachiko9/sk9_cactus_row.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 729.847,
+"b": 733.0,
+"k": "img/sachiko9/sk9_cactus_row.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 733.0,
+"b": 736.0,
+"k": "img/sachiko9/sk9_cactus_row.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 736.0,
+"b": 742.0,
+"k": "sk9_cactus_row",
+"c": "MistakeStamp",
+"props": {
+"txt": "NO SEEDLINGS IN WEEK ONE",
+"k": "sk9_cactus_row"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 742.0,
+"b": 745.0,
+"k": "img/sachiko9/sk9_cactus_row.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 745.0,
+"b": 751.0,
+"k": "thumb",
+"c": "MistakeStamp",
+"props": {
+"txt": "NOT ON ROOT ROT",
+"k": "img/sachiko9/sk9_cactus_row.png"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 751.0,
+"b": 755.0,
+"k": "img/sachiko9/sk9b_lift_tray.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 755.0,
+"b": 761.0,
+"k": "sk9b_lift_tray",
+"c": "MistakeStamp",
+"props": {
+"txt": "DRY SOIL, NOT FOOD",
+"k": "sk9b_lift_tray"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 761.0,
+"b": 763.88,
+"k": "img/sachiko9/sk9b_lift_tray.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 763.88,
+"b": 766.8,
+"k": "img/sachiko9/sk9b_lift_tray.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 766.8,
+"b": 770.24,
+"k": "img/sachiko9/sk9_fertilizer_bag.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 770.24,
+"b": 773.36,
+"k": "img/sachiko9/sk9_fertilizer_bag.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 773.36,
+"b": 776.8,
+"k": "img/sachiko9/sk9_fertilizer_bag.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 776.8,
+"b": 779.573,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_trial_pots.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 779.573,
+"b": 783.54,
+"k": "img/sachiko9/sk9_trial_pots.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 783.54,
+"b": 786.8,
+"k": "img/sachiko9/sk9_trial_pots.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 786.8,
+"b": 789.7,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_lab_beaker.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 789.7,
+"b": 793.4,
+"k": "img/sachiko9/sk9_lab_beaker.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 793.4,
+"b": 796.8,
+"k": "img/sachiko9/sk9_lab_beaker.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 796.8,
+"b": 799.7,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_new_leaf_touch.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 799.7,
+"b": 803.54,
+"k": "img/sachiko9/sk9b_new_leaf_touch.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 803.54,
+"b": 806.8,
+"k": "img/sachiko9/sk9b_new_leaf_touch.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 806.8,
+"b": 809.7,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_two_leaves_compare.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 809.7,
+"b": 813.433,
+"k": "img/sachiko9/sk9b_two_leaves_compare.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 813.433,
+"b": 816.8,
+"k": "img/sachiko9/sk9b_two_leaves_compare.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 816.8,
+"b": 819.38,
+"k": "img/sachiko9/sk9_damp_soil_flies.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 819.38,
+"b": 822.1,
+"k": "img/sachiko9/sk9_damp_soil_flies.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 822.1,
+"b": 824.8,
+"k": "img/sachiko9/sk9_damp_soil_flies.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 824.8,
+"b": 828.447,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 828.447,
+"b": 830.807,
+"k": "img/sachiko9/sk9b_lift_pot_flies.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 830.807,
+"b": 833.4,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 833.4,
+"b": 835.907,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_lift_pot_flies.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 835.907,
+"b": 840.127,
+"k": "img/sachiko9/sk9b_lift_pot_flies.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 840.127,
+"b": 843.4,
+"k": "img/sachiko9/sk9b_lift_pot_flies.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 843.4,
+"b": 846.3,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_fork_soil_kneel.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 846.3,
+"b": 850.133,
+"k": "img/sachiko9/sk9b_fork_soil_kneel.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 850.133,
+"b": 853.4,
+"k": "img/sachiko9/sk9b_fork_soil_kneel.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 853.4,
+"b": 856.3,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_hands_table.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 856.3,
+"b": 860.093,
+"k": "img/sachiko9/sk9b_hands_table.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 860.093,
+"b": 863.4,
+"k": "img/sachiko9/sk9b_hands_table.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 863.4,
+"b": 866.3,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_greasy_pan.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 866.3,
+"b": 869.953,
+"k": "img/sachiko9/sk9_greasy_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 869.953,
+"b": 873.4,
+"k": "img/sachiko9/sk9_greasy_pan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 873.4,
+"b": 876.3,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_nuka_bran_dish.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 876.3,
+"b": 880.313,
+"k": "img/sachiko9/sk9b_nuka_bran_dish.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 880.313,
+"b": 883.4,
+"k": "img/sachiko9/sk9b_nuka_bran_dish.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 883.4,
+"b": 886.773,
+"k": "img/sachiko9/sk9b_nuka_bran_dish.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 886.773,
+"b": 889.933,
+"k": "img/sachiko9/sk9b_nuka_bran_dish.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 889.933,
+"b": 893.4,
+"k": "img/sachiko9/sk9b_nuka_bran_dish.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 893.4,
+"b": 896.747,
+"k": "img/sachiko9/sk9b_pour_greasy_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 896.747,
+"b": 900.0,
+"k": "img/sachiko9/sk9b_pour_greasy_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 900.0,
+"b": 906.0,
+"k": "sk9b_pour_greasy_pot",
+"c": "Chapter",
+"props": {
+"n": "2",
+"title": "GREASY POTS AND PANS",
+"av": false,
+"k": "sk9b_pour_greasy_pot"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 906.0,
+"b": 908.487,
+"k": "img/sachiko9/sk9_dish_soap_sponge.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 908.487,
+"b": 911.013,
+"k": "img/sachiko9/sk9_dish_soap_sponge.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 911.013,
+"b": 913.4,
+"k": "img/sachiko9/sk9_dish_soap_sponge.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 913.4,
+"b": 916.3,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_sponge_pot.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 916.3,
+"b": 920.207,
+"k": "img/sachiko9/sk9b_sponge_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 920.207,
+"b": 923.4,
+"k": "img/sachiko9/sk9b_sponge_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 923.4,
+"b": 926.14,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_hand_over_pan.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 926.14,
+"b": 929.053,
+"k": "img/sachiko9/sk9b_hand_over_pan.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 929.053,
+"b": 932.0,
+"k": "img/sachiko9/sk9b_hand_over_pan.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 932.0,
+"b": 938.0,
+"k": "sk9b_hand_over_pan",
+"c": "MistakeStamp",
+"props": {
+"txt": "COOL PAN FIRST",
+"k": "sk9b_hand_over_pan"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 938.0,
+"b": 940.0,
+"k": "img/sachiko9/sk9b_hand_over_pan.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 940.0,
+"b": 946.0,
+"k": "thumb",
+"c": "Chapter",
+"props": {
+"n": "3",
+"title": "BAMBOO SHOOTS",
+"av": false,
+"k": "img/sachiko9/sk9b_hand_over_pan.png"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 946.0,
+"b": 948.4,
+"k": "img/sachiko9/sk9b_carry_jar_sill.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 948.4,
+"b": 950.953,
+"k": "img/sachiko9/sk9b_carry_jar_sill.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 950.953,
+"b": 953.37,
+"k": "img/sachiko9/sk9b_carry_jar_sill.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 953.37,
+"b": 955.51,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_carry_jar_sill.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 955.51,
+"b": 959.947,
+"k": "img/sachiko9/sk9b_carry_jar_sill.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 959.947,
+"b": 963.37,
+"k": "img/sachiko9/sk9b_carry_jar_sill.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 963.37,
+"b": 966.143,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_bran_pot_fuki.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 966.143,
+"b": 970.053,
+"k": "img/sachiko9/sk9b_bran_pot_fuki.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 970.053,
+"b": 973.37,
+"k": "img/sachiko9/sk9b_bran_pot_fuki.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 973.37,
+"b": 976.66,
+"k": "img/sachiko9/sk9_bamboo_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 976.66,
+"b": 980.06,
+"k": "img/sachiko9/sk9_bamboo_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 980.06,
+"b": 983.37,
+"k": "img/sachiko9/sk9_bamboo_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 983.37,
+"b": 986.187,
+"k": "img/sachiko9/sk9_bamboo_water_fridge.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 986.187,
+"b": 989.187,
+"k": "img/sachiko9/sk9_bamboo_water_fridge.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 989.187,
+"b": 992.0,
+"k": "img/sachiko9/sk9_bamboo_water_fridge.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 992.0,
+"b": 998.0,
+"k": "sk9_bamboo_water_fridge",
+"c": "Chapter",
+"props": {
+"n": "4",
+"title": "STARCH FOR CLOTH",
+"av": false,
+"k": "sk9_bamboo_water_fridge"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 998.0,
+"b": 1000.733,
+"k": "img/sachiko9/sk9_bamboo_water_fridge.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1000.733,
+"b": 1003.33,
+"k": "img/sachiko9/sk9_bamboo_water_fridge.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1003.33,
+"b": 1006.23,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_dip_tablecloth.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1006.23,
+"b": 1010.0,
+"k": "img/sachiko9/sk9b_dip_tablecloth.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1010.0,
+"b": 1013.33,
+"k": "img/sachiko9/sk9b_dip_tablecloth.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1013.33,
+"b": 1016.773,
+"k": "img/sachiko9/sk9b_dip_tablecloth.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1016.773,
+"b": 1020.013,
+"k": "img/sachiko9/sk9b_dip_tablecloth.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+],
+"dx": -120
+},
+{
+"a": 1020.013,
+"b": 1023.33,
+"k": "img/sachiko9/sk9b_dip_tablecloth.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1023.33,
+"b": 1026.733,
+"k": "img/sachiko9/sk9b_iron_cloth.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1026.733,
+"b": 1029.833,
+"k": "img/sachiko9/sk9b_iron_cloth.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1029.833,
+"b": 1033.33,
+"k": "img/sachiko9/sk9b_iron_cloth.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1033.33,
+"b": 1034.0,
+"k": "img/sachiko9/sk9b_rinse_hair_basin.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1034.0,
+"b": 1040.0,
+"k": "sk9b_rinse_hair_basin",
+"c": "Chapter",
+"props": {
+"n": "5",
+"title": "THE HAIR RINSE",
+"av": false,
+"k": "sk9b_rinse_hair_basin"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1040.0,
+"b": 1043.33,
+"k": "img/sachiko9/sk9b_rinse_hair_basin.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1043.33,
+"b": 1045.97,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_pad_face_mirror.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1045.97,
+"b": 1049.933,
+"k": "img/sachiko9/sk9b_pad_face_mirror.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1049.933,
+"b": 1053.33,
+"k": "img/sachiko9/sk9b_pad_face_mirror.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1053.33,
+"b": 1056.053,
+"k": "img/sachiko9/sk9_patch_wrist.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1056.053,
+"b": 1059.353,
+"k": "img/sachiko9/sk9_patch_wrist.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1059.353,
+"b": 1062.0,
+"k": "img/sachiko9/sk9_patch_wrist.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1062.0,
+"b": 1068.0,
+"k": "sk9_patch_wrist",
+"c": "MistakeStamp",
+"props": {
+"txt": "SCALP ITCHES OR BURNS: STOP",
+"k": "sk9_patch_wrist"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1068.0,
+"b": 1069.0,
+"k": "img/sachiko9/sk9b_pad_wrist.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1069.0,
+"b": 1075.0,
+"k": "sk9b_pad_wrist",
+"c": "MistakeStamp",
+"props": {
+"txt": "RINSE WELL OR IT SMELLS SOUR",
+"k": "sk9b_pad_wrist"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1075.0,
+"b": 1077.867,
+"k": "img/sachiko9/sk9b_wipe_board_eyes.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1077.867,
+"b": 1080.527,
+"k": "img/sachiko9/sk9b_wipe_board_eyes.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1080.527,
+"b": 1083.33,
+"k": "img/sachiko9/sk9b_wipe_board_eyes.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1083.33,
+"b": 1086.0,
+"k": "img/sachiko9/sk9_raw_chicken_board.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1086.0,
+"b": 1092.0,
+"k": "sk9_raw_chicken_board",
+"c": "MistakeStamp",
+"props": {
+"txt": "PATCH TEST FIRST",
+"k": "sk9_raw_chicken_board"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1092.0,
+"b": 1093.33,
+"k": "img/sachiko9/sk9_raw_chicken_board.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1093.33,
+"b": 1097.0,
+"k": "img/sachiko9/sk9_soapy_basin.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1097.0,
+"b": 1104.0,
+"k": "sk9_soapy_basin",
+"c": "MistakeStamp",
+"props": {
+"txt": "NEVER NEAR EYES OR BROKEN SKIN",
+"k": "sk9_soapy_basin"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1104.0,
+"b": 1106.993,
+"k": "img/sachiko9/sk9b_board_basin.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1106.993,
+"b": 1110.353,
+"k": "img/sachiko9/sk9b_board_basin.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1110.353,
+"b": 1113.33,
+"k": "img/sachiko9/sk9b_board_basin.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1113.33,
+"b": 1116.0,
+"k": "img/sachiko9/sk9b_board_rack.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1116.0,
+"b": 1122.0,
+"k": "sk9b_board_rack",
+"c": "Chapter",
+"props": {
+"n": "7",
+"title": "THE WOODEN CUTTING BOARD",
+"av": false,
+"k": "sk9b_board_rack"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1122.0,
+"b": 1123.33,
+"k": "img/sachiko9/sk9b_board_rack.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1123.33,
+"b": 1126.23,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_yellow_leaves.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1126.23,
+"b": 1130.013,
+"k": "img/sachiko9/sk9_yellow_leaves.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1130.013,
+"b": 1133.33,
+"k": "img/sachiko9/sk9_yellow_leaves.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1133.33,
+"b": 1135.0,
+"k": "img/sachiko9/sk9b_leaf_close_side.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1135.0,
+"b": 1141.0,
+"k": "sk9b_leaf_close_side",
+"c": "MistakeStamp",
+"props": {
+"txt": "RICE WATER DOES NOT KILL GERMS",
+"k": "sk9b_leaf_close_side"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1141.0,
+"b": 1143.33,
+"k": "img/sachiko9/sk9b_leaf_close_side.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1143.33,
+"b": 1146.693,
+"k": "img/sachiko9/sk9b_finger_dry_soil.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1146.693,
+"b": 1149.673,
+"k": "img/sachiko9/sk9b_finger_dry_soil.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1149.673,
+"b": 1153.0,
+"k": "img/sachiko9/sk9b_finger_dry_soil.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1153.0,
+"b": 1160.0,
+"k": "sk9b_finger_dry_soil",
+"c": "MistakeStamp",
+"props": {
+"txt": "BLEACH: 1 TBSP PER GALLON",
+"k": "sk9b_finger_dry_soil"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1160.0,
+"b": 1163.33,
+"k": "img/sachiko9/sk9_mushy_roots.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1163.33,
+"b": 1165.533,
+"k": "img/sachiko9/sk9b_roots_kneel.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1165.533,
+"b": 1168.0,
+"k": "img/sachiko9/sk9b_roots_kneel.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1168.0,
+"b": 1174.0,
+"k": "sk9b_roots_kneel",
+"c": "MistakeStamp",
+"props": {
+"txt": "SEPARATE BOARDS FOR MEAT",
+"k": "sk9b_roots_kneel"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1174.0,
+"b": 1177.233,
+"k": "img/sachiko9/sk9_crust_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1177.233,
+"b": 1180.48,
+"k": "img/sachiko9/sk9_crust_close.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1180.48,
+"b": 1183.33,
+"k": "img/sachiko9/sk9_crust_close.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1183.33,
+"b": 1185.703,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_scrape_soil_spoon.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1185.703,
+"b": 1190.08,
+"k": "img/sachiko9/sk9b_scrape_soil_spoon.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1190.08,
+"b": 1193.33,
+"k": "img/sachiko9/sk9b_scrape_soil_spoon.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1193.33,
+"b": 1193.6,
+"k": "img/sachiko9/sk9_scrub_jar.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1193.6,
+"b": 1196.94,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1196.94,
+"b": 1199.347,
+"k": "img/sachiko9/sk9b_scrub_jar_sink.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1199.347,
+"b": 1201.7,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1201.7,
+"b": 1204.6,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_scrub_jar_sink.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1204.6,
+"b": 1208.46,
+"k": "img/sachiko9/sk9b_scrub_jar_sink.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1208.46,
+"b": 1211.7,
+"k": "img/sachiko9/sk9b_scrub_jar_sink.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1211.7,
+"b": 1214.76,
+"k": "img/sachiko9/sk9_gnats_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1214.76,
+"b": 1218.54,
+"k": "img/sachiko9/sk9_gnats_pot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1218.54,
+"b": 1221.7,
+"k": "img/sachiko9/sk9_gnats_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1221.7,
+"b": 1224.6,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_sticky_card.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1224.6,
+"b": 1228.293,
+"k": "img/sachiko9/sk9_sticky_card.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1228.293,
+"b": 1231.7,
+"k": "img/sachiko9/sk9_sticky_card.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1231.7,
+"b": 1233.0,
+"k": "img/sachiko9/sk9b_sticky_card_push.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1233.0,
+"b": 1238.0,
+"k": "sk9b_sticky_card_push",
+"c": "MistakeStamp",
+"props": {
+"txt": "STOP. TOO STRONG OR TOO OFTEN",
+"k": "sk9b_sticky_card_push"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1238.0,
+"b": 1241.7,
+"k": "img/sachiko9/sk9b_sticky_card_push.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1241.7,
+"b": 1244.0,
+"k": "img/sachiko9/sk9_jade_soft_stem.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1244.0,
+"b": 1250.0,
+"k": "sk9_jade_soft_stem",
+"c": "MistakeStamp",
+"props": {
+"txt": "MUSHY ROOTS: CUT THEM AWAY",
+"k": "sk9_jade_soft_stem"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1250.0,
+"b": 1251.7,
+"k": "img/sachiko9/sk9_jade_soft_stem.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1251.7,
+"b": 1251.8,
+"k": "img/sachiko9/sk9_cut_knife.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1251.8,
+"b": 1256.2,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1256.2,
+"b": 1259.407,
+"k": "img/sachiko9/sk9b_cut_stem_knife.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1259.407,
+"b": 1263.067,
+"k": "img/sachiko9/sk9b_cut_stem_knife.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1263.067,
+"b": 1266.2,
+"k": "img/sachiko9/sk9b_cut_stem_knife.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1266.2,
+"b": 1269.587,
+"k": "img/sachiko9/sk9_basin_glass.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1269.587,
+"b": 1272.947,
+"k": "img/sachiko9/sk9_basin_glass.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1272.947,
+"b": 1276.2,
+"k": "img/sachiko9/sk9_basin_glass.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1276.2,
+"b": 1279.707,
+"k": "img/sachiko9/sk9b_use_same_day.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1279.707,
+"b": 1282.947,
+"k": "img/sachiko9/sk9b_use_same_day.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1282.947,
+"b": 1286.2,
+"k": "img/sachiko9/sk9b_use_same_day.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1286.2,
+"b": 1289.353,
+"k": "img/sachiko9/sk9b_rice_in_palm.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1289.353,
+"b": 1292.753,
+"k": "img/sachiko9/sk9b_rice_in_palm.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1292.753,
+"b": 1296.2,
+"k": "img/sachiko9/sk9b_rice_in_palm.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1296.2,
+"b": 1298.953,
+"k": "img/sachiko9/sk9_soil_test_table.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1298.953,
+"b": 1301.953,
+"k": "img/sachiko9/sk9_soil_test_table.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1301.953,
+"b": 1305.1,
+"k": "img/sachiko9/sk9_soil_test_table.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1305.1,
+"b": 1309.753,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1309.753,
+"b": 1312.053,
+"k": "img/sachiko9/sk9_banana_brown.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1312.053,
+"b": 1315.8,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1315.8,
+"b": 1316.0,
+"k": "img/sachiko9/sk9_banana_brown.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1316.0,
+"b": 1322.0,
+"k": "sk9_banana_brown",
+"c": "MistakeStamp",
+"props": {
+"txt": "NOT YOU. THE SOIL.",
+"k": "sk9_banana_brown"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1322.0,
+"b": 1325.8,
+"k": "img/sachiko9/sk9_banana_brown.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1325.8,
+"b": 1328.5,
+"k": "img/sachiko9/sk9_rice_bag_plain.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1328.5,
+"b": 1331.0,
+"k": "img/sachiko9/sk9_rice_bag_plain.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1331.0,
+"b": 1337.0,
+"k": "sk9_rice_bag_plain",
+"c": "MistakeStamp",
+"props": {
+"txt": "DAMP TOP SOIL ATTRACTS THEM",
+"k": "sk9_rice_bag_plain"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1337.0,
+"b": 1340.02,
+"k": "img/sachiko9/sk9_green_can_sill.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1340.02,
+"b": 1342.84,
+"k": "img/sachiko9/sk9_green_can_sill.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1342.84,
+"b": 1345.8,
+"k": "img/sachiko9/sk9_green_can_sill.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1345.8,
+"b": 1349.333,
+"k": "img/sachiko9/sk9b_fill_can_jar.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1349.333,
+"b": 1352.393,
+"k": "img/sachiko9/sk9b_fill_can_jar.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1352.393,
+"b": 1355.8,
+"k": "img/sachiko9/sk9b_fill_can_jar.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1355.8,
+"b": 1358.5,
+"k": "img/sachiko9/sk9b_look_leaf_close.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1358.5,
+"b": 1364.3,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1364.3,
+"b": 1367.46,
+"k": "img/sachiko9/sk9_jars_drying.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1367.46,
+"b": 1370.82,
+"k": "img/sachiko9/sk9_jars_drying.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1370.82,
+"b": 1374.0,
+"k": "img/sachiko9/sk9_jars_drying.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1374.0,
+"b": 1380.0,
+"k": "sk9_jars_drying",
+"c": "MistakeStamp",
+"props": {
+"txt": "WATER ONLY WHEN DRY",
+"k": "sk9_jars_drying"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1380.0,
+"b": 1382.113,
+"k": "img/sachiko9/sk9b_jars_towel.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1382.113,
+"b": 1384.3,
+"k": "img/sachiko9/sk9b_jars_towel.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1384.3,
+"b": 1386.493,
+"k": "img/sachiko9/sk9_balcony_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1386.493,
+"b": 1389.0,
+"k": "img/sachiko9/sk9_balcony_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1389.0,
+"b": 1395.0,
+"k": "sk9_balcony_old",
+"c": "MistakeStamp",
+"props": {
+"txt": "RINSE MUCH LONGER",
+"k": "sk9_balcony_old"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1395.0,
+"b": 1401.0,
+"k": "sk9b_balcony_rail_morning",
+"c": "MistakeStamp",
+"props": {
+"txt": "NEVER IN THE BATHROOM",
+"k": "sk9b_balcony_rail_morning"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1401.0,
+"b": 1404.3,
+"k": "img/sachiko9/sk9b_balcony_rail_morning.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1404.3,
+"b": 1407.7,
+"k": "img/sachiko9/sk9_morning_glory_strings.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1407.7,
+"b": 1410.82,
+"k": "img/sachiko9/sk9_morning_glory_strings.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1410.82,
+"b": 1414.3,
+"k": "img/sachiko9/sk9_morning_glory_strings.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1414.3,
+"b": 1417.913,
+"k": "img/sachiko9/sk9_green_can_crack.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1417.913,
+"b": 1420.967,
+"k": "img/sachiko9/sk9_green_can_crack.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1420.967,
+"b": 1424.3,
+"k": "img/sachiko9/sk9_green_can_crack.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1424.3,
+"b": 1427.367,
+"k": "img/sachiko9/sk9_mother_hands_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1427.367,
+"b": 1431.087,
+"k": "img/sachiko9/sk9_mother_hands_old.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1431.087,
+"b": 1434.3,
+"k": "img/sachiko9/sk9_mother_hands_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1434.3,
+"b": 1437.487,
+"k": "img/sachiko9/sk9_box_can.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1437.487,
+"b": 1440.907,
+"k": "img/sachiko9/sk9_box_can.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1440.907,
+"b": 1444.3,
+"k": "img/sachiko9/sk9_box_can.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1444.3,
+"b": 1447.527,
+"k": "img/sachiko9/sk9b_dawn_can_walk.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1447.527,
+"b": 1450.82,
+"k": "img/sachiko9/sk9b_dawn_can_walk.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1450.82,
+"b": 1454.3,
+"k": "img/sachiko9/sk9b_dawn_can_walk.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1454.3,
+"b": 1457.74,
+"k": "img/sachiko9/sk9b_pour_base_slow.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1457.74,
+"b": 1461.007,
+"k": "img/sachiko9/sk9b_pour_base_slow.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+36
+]
+},
+{
+"a": 1461.007,
+"b": 1464.3,
+"k": "img/sachiko9/sk9b_pour_base_slow.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1464.3,
+"b": 1467.6,
+"k": "img/sachiko9/sk9_morning_glory_open.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1467.6,
+"b": 1471.06,
+"k": "img/sachiko9/sk9_morning_glory_open.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1471.06,
+"b": 1474.3,
+"k": "img/sachiko9/sk9_morning_glory_open.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1474.3,
+"b": 1477.7,
+"k": "img/sachiko9/sk9b_morning_glory_stand.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1477.7,
+"b": 1480.853,
+"k": "img/sachiko9/sk9b_morning_glory_stand.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1480.853,
+"b": 1484.3,
+"k": "img/sachiko9/sk9b_morning_glory_stand.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1484.3,
+"b": 1487.553,
+"k": "img/sachiko9/sk9b_paper_pencil_table.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1487.553,
+"b": 1491.153,
+"k": "img/sachiko9/sk9b_paper_pencil_table.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1491.153,
+"b": 1494.3,
+"k": "img/sachiko9/sk9b_paper_pencil_table.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1494.3,
+"b": 1497.64,
+"k": "img/sachiko9/sk9b_single_leaf_close.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1497.64,
+"b": 1500.973,
+"k": "img/sachiko9/sk9b_single_leaf_close.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1500.973,
+"b": 1504.3,
+"k": "img/sachiko9/sk9b_single_leaf_close.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1504.3,
+"b": 1507.733,
+"k": "img/sachiko9/sk9b_point_plant.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1507.733,
+"b": 1510.913,
+"k": "img/sachiko9/sk9b_point_plant.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1510.913,
+"b": 1514.3,
+"k": "img/sachiko9/sk9b_point_plant.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1514.3,
+"b": 1517.54,
+"k": "img/sachiko9/sk9_kabocha_teaser.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1517.54,
+"b": 1520.88,
+"k": "img/sachiko9/sk9_kabocha_teaser.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1520.88,
+"b": 1524.3,
+"k": "img/sachiko9/sk9_kabocha_teaser.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1524.3,
+"b": 1527.753,
+"k": "img/sachiko9/sk9b_window_morning.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1527.753,
+"b": 1530.98,
+"k": "img/sachiko9/sk9b_window_morning.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1530.98,
+"b": 1534.3,
+"k": "img/sachiko9/sk9b_window_morning.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1534.3,
+"b": 1537.64,
+"k": "img/sachiko9/sk9_tablecloth_old.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1537.64,
+"b": 1540.8,
+"k": "img/sachiko9/sk9_tablecloth_old.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1540.8,
+"b": 1544.3,
+"k": "img/sachiko9/sk9_tablecloth_old.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1544.3,
+"b": 1547.547,
+"k": "img/sachiko9/sk9b_rice_paste_brush.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1547.547,
+"b": 1551.033,
+"k": "img/sachiko9/sk9b_rice_paste_brush.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1551.033,
+"b": 1554.3,
+"k": "img/sachiko9/sk9b_rice_paste_brush.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1554.3,
+"b": 1557.707,
+"k": "img/sachiko9/sk9b_bamboo_bowl_fridge.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1557.707,
+"b": 1561.047,
+"k": "img/sachiko9/sk9b_bamboo_bowl_fridge.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1561.047,
+"b": 1564.3,
+"k": "img/sachiko9/sk9b_bamboo_bowl_fridge.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1564.3,
+"b": 1567.747,
+"k": "img/sachiko9/sk9b_stir_bamboo_pot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1567.747,
+"b": 1570.987,
+"k": "img/sachiko9/sk9b_stir_bamboo_pot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1570.987,
+"b": 1574.3,
+"k": "img/sachiko9/sk9b_stir_bamboo_pot.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1574.3,
+"b": 1577.0,
+"k": "img/sachiko9/sk9_bamboo_basket.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1577.0,
+"b": 1583.0,
+"k": "sk9_bamboo_basket",
+"c": "MistakeStamp",
+"props": {
+"txt": "THROW THE SOUR JAR OUT",
+"k": "sk9_bamboo_basket"
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1583.0,
+"b": 1584.3,
+"k": "img/sachiko9/sk9_bamboo_basket.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1584.3,
+"b": 1586.94,
+"k": "img/sachiko9/sk9b_lift_bamboo.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1586.94,
+"b": 1589.46,
+"k": "img/sachiko9/sk9b_lift_bamboo.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1589.46,
+"b": 1592.2,
+"k": "img/sachiko9/sk9b_lift_bamboo.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1592.2,
+"b": 1599.1,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1599.1,
+"b": 1602.473,
+"k": "img/sachiko9/sk9b_lift_pot_saucer.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1602.473,
+"b": 1605.753,
+"k": "img/sachiko9/sk9b_lift_pot_saucer.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1605.753,
+"b": 1609.1,
+"k": "img/sachiko9/sk9b_lift_pot_saucer.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1609.1,
+"b": 1612.0,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9_hot_pan_steam.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1612.0,
+"b": 1615.773,
+"k": "img/sachiko9/sk9_hot_pan_steam.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1615.773,
+"b": 1619.07,
+"k": "img/sachiko9/sk9_hot_pan_steam.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1619.07,
+"b": 1622.573,
+"k": "img/sachiko9/sk9_hot_pan_steam.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1622.573,
+"b": 1625.693,
+"k": "img/sachiko9/sk9_hot_pan_steam.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1625.693,
+"b": 1629.07,
+"k": "img/sachiko9/sk9_hot_pan_steam.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1629.07,
+"b": 1632.207,
+"k": "img/sachiko9/sk9b_touch_soil_sill.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1632.207,
+"b": 1635.593,
+"k": "img/sachiko9/sk9b_touch_soil_sill.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+36
+]
+},
+{
+"a": 1635.593,
+"b": 1639.07,
+"k": "img/sachiko9/sk9b_touch_soil_sill.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1639.07,
+"b": 1642.407,
+"k": "img/sachiko9/sk9b_pinch_lettuce.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1642.407,
+"b": 1645.8,
+"k": "img/sachiko9/sk9b_pinch_lettuce.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1645.8,
+"b": 1649.07,
+"k": "img/sachiko9/sk9b_pinch_lettuce.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1649.07,
+"b": 1651.867,
+"k": "img/sachiko9/sk9_pothos_leaves_close.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1651.867,
+"b": 1654.547,
+"k": "img/sachiko9/sk9_pothos_leaves_close.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1654.547,
+"b": 1657.5,
+"k": "img/sachiko9/sk9_pothos_leaves_close.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1657.5,
+"b": 1664.9,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1664.9,
+"b": 1668.16,
+"k": "img/sachiko9/sk9_morning_glory_bloom.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1668.16,
+"b": 1671.56,
+"k": "img/sachiko9/sk9_morning_glory_bloom.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1671.56,
+"b": 1674.9,
+"k": "img/sachiko9/sk9_morning_glory_bloom.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+36
+]
+},
+{
+"a": 1674.9,
+"b": 1678.26,
+"k": "img/sachiko9/sk9b_vine_look_up.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1678.26,
+"b": 1681.52,
+"k": "img/sachiko9/sk9b_vine_look_up.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+58
+]
+},
+{
+"a": 1681.52,
+"b": 1684.9,
+"k": "img/sachiko9/sk9b_vine_look_up.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1684.9,
+"b": 1688.427,
+"k": "img/sachiko9/sk9b_sit_pots_balcony.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1688.427,
+"b": 1691.667,
+"k": "img/sachiko9/sk9b_sit_pots_balcony.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1691.667,
+"b": 1694.9,
+"k": "img/sachiko9/sk9b_sit_pots_balcony.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1694.9,
+"b": 1697.8,
+"k": "",
+"c": "Clip",
+"props": {
+"p": "agv/sachiko9/sk9b_pour_off_hands.mp4",
+"ofs": 0.0,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+50
+]
+}
+},
+{
+"a": 1697.8,
+"b": 1701.58,
+"k": "img/sachiko9/sk9b_pour_off_hands.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1701.58,
+"b": 1704.9,
+"k": "img/sachiko9/sk9b_pour_off_hands.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1704.9,
+"b": 1708.28,
+"k": "img/sachiko9/sk9b_pour_off_hands.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1708.28,
+"b": 1711.7,
+"k": "img/sachiko9/sk9b_pour_off_hands.png",
+"z": [
+1.22,
+1.3
+],
+"o": [
+40,
+45
+]
+},
+{
+"a": 1711.7,
+"b": 1717.0,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1717.0,
+"b": 1729.0,
+"k": "sk9b_lift_pot_saucer",
+"c": "Checklist",
+"props": {
+"head": "THE 7 USES",
+"items": [
+{
+"t": 1718.0,
+"txt": "1 Plants: dilute 1:1"
+},
+{
+"t": 1720.0,
+"txt": "2 Greasy pots"
+},
+{
+"t": 1722.0,
+"txt": "3 Bamboo shoots"
+},
+{
+"t": 1724.0,
+"txt": "4 Starch for cloth"
+},
+{
+"t": 1726.0,
+"txt": "5 Hair rinse (no promises)"
+},
+{
+"t": 1727.5,
+"txt": "6 Face: patch test"
+},
+{
+"t": 1728.5,
+"txt": "7 Cutting board: hot soapy water"
+}
+],
+"k": "sk9b_lift_pot_saucer",
+"av": null
+},
+"vid": false,
+"ofs": 0.0
+},
+{
+"a": 1729.0,
+"b": 1731.86,
+"k": "img/sachiko9/sk9b_pour_pot_base.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1731.86,
+"b": 1734.38,
+"k": "img/sachiko9/sk9b_pour_pot_base.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+58,
+46
+]
+},
+{
+"a": 1734.38,
+"b": 1737.0,
+"k": "img/sachiko9/sk9b_pour_pot_base.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1737.0,
+"b": 1740.38,
+"k": "img/sachiko9/sk9_peace_lily_corner.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1740.38,
+"b": 1743.42,
+"k": "img/sachiko9/sk9_peace_lily_corner.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+46
+]
+},
+{
+"a": 1743.42,
+"b": 1747.0,
+"k": "img/sachiko9/sk9_peace_lily_corner.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1747.0,
+"b": 1750.433,
+"k": "img/sachiko9/sk9_pothos_shelf.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1750.433,
+"b": 1753.693,
+"k": "img/sachiko9/sk9_pothos_shelf.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1753.693,
+"b": 1757.0,
+"k": "img/sachiko9/sk9_pothos_shelf.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+36
+]
+},
+{
+"a": 1757.0,
+"b": 1760.247,
+"k": "img/sachiko9/sk9b_vine_touch.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1760.247,
+"b": 1763.807,
+"k": "img/sachiko9/sk9b_vine_touch.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1763.807,
+"b": 1767.0,
+"k": "img/sachiko9/sk9b_vine_touch.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1767.0,
+"b": 1770.287,
+"k": "img/sachiko9/sk9b_notebook_write.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1770.287,
+"b": 1773.567,
+"k": "img/sachiko9/sk9b_notebook_write.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1773.567,
+"b": 1777.0,
+"k": "img/sachiko9/sk9b_notebook_write.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1777.0,
+"b": 1780.46,
+"k": "img/sachiko9/sk9b_measure_cup.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1780.46,
+"b": 1783.64,
+"k": "img/sachiko9/sk9b_measure_cup.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1783.64,
+"b": 1787.0,
+"k": "img/sachiko9/sk9b_measure_cup.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1787.0,
+"b": 1790.153,
+"k": "img/sachiko9/sk9b_stir_can_spoon.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1790.153,
+"b": 1793.62,
+"k": "img/sachiko9/sk9b_stir_can_spoon.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+34,
+58
+]
+},
+{
+"a": 1793.62,
+"b": 1797.0,
+"k": "img/sachiko9/sk9b_stir_can_spoon.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1797.0,
+"b": 1800.34,
+"k": "img/sachiko9/sk9_measure_cups.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1800.34,
+"b": 1803.74,
+"k": "img/sachiko9/sk9_measure_cups.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1803.74,
+"b": 1807.0,
+"k": "img/sachiko9/sk9_measure_cups.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1807.0,
+"b": 1810.64,
+"k": "img/sachiko9/sk9b_pour_into_can.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1810.64,
+"b": 1813.513,
+"k": "img/sachiko9/sk9b_pour_into_can.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+]
+},
+{
+"a": 1813.513,
+"b": 1817.0,
+"k": "img/sachiko9/sk9b_pour_into_can.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+},
+{
+"a": 1817.0,
+"b": 1820.413,
+"k": "img/sachiko9/sk9_kettle_hot.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1820.413,
+"b": 1823.68,
+"k": "img/sachiko9/sk9_kettle_hot.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1823.68,
+"b": 1827.0,
+"k": "img/sachiko9/sk9_kettle_hot.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+46
+]
+},
+{
+"a": 1827.0,
+"b": 1827.6,
+"k": "img/sachiko9/sk9_room_temp_glass.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1827.6,
+"b": 1834.9,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1834.9,
+"b": 1838.34,
+"k": "img/sachiko9/sk9b_glass_touch.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1838.34,
+"b": 1841.573,
+"k": "img/sachiko9/sk9b_glass_touch.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1841.573,
+"b": 1844.9,
+"k": "img/sachiko9/sk9b_glass_touch.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+58
+]
+},
+{
+"a": 1844.9,
+"b": 1848.18,
+"k": "img/sachiko9/sk9_seedling_pale.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1848.18,
+"b": 1851.42,
+"k": "img/sachiko9/sk9_seedling_pale.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+60,
+50
+]
+},
+{
+"a": 1851.42,
+"b": 1854.9,
+"k": "img/sachiko9/sk9_seedling_pale.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1854.9,
+"b": 1858.16,
+"k": "img/sachiko9/sk9b_seedling_lean.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1858.16,
+"b": 1861.68,
+"k": "img/sachiko9/sk9b_seedling_lean.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1861.68,
+"b": 1864.9,
+"k": "img/sachiko9/sk9b_seedling_lean.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+42,
+58
+]
+},
+{
+"a": 1864.9,
+"b": 1868.367,
+"k": "img/sachiko9/sk9_two_jars.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": 120
+},
+{
+"a": 1868.367,
+"b": 1871.5,
+"k": "img/sachiko9/sk9_two_jars.png",
+"z": [
+1.24,
+1.12
+],
+"o": [
+40,
+50
+]
+},
+{
+"a": 1871.5,
+"b": 1874.8,
+"k": "img/sachiko9/sk9_two_jars.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
+},
+{
+"a": 1874.8,
+"b": 1879.46,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1879.46,
+"b": 1881.833,
+"k": "img/sachiko9/sk9b_set_jar_sill.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+66,
+46
+],
+"dx": -120
+},
+{
+"a": 1881.833,
+"b": 1885.5,
+"k": "av",
+"av": true,
+"z": [
+1.0,
+1.04
+],
+"o": [
+50,
+22
+]
+},
+{
+"a": 1885.5,
+"b": 1885.8,
+"k": "img/sachiko9/sk9b_set_jar_sill.png",
+"z": [
+1.14,
+1.18
+],
+"o": [
+50,
+50
+],
+"dx": -120
+}
+]
+}
