@@ -1951,15 +1951,29 @@
 },
 {
 "a": 479.08,
-"b": 485.09,
-"k": "o_wind",
-"c": "CostTag",
-"props": {
-"price": "GENTLY STRETCH",
-"sub": "GENTLY STRETCH IT BETWEEN YOUR TWO",
-"k": "o_wind"
+"b": 482.085,
+"k": "img/sachiko6/o_wind.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
 },
-"text": "Gently stretch it between your two thumbs and first fingers, slowly, into a thin sheet."
+{
+"a": 482.085,
+"b": 485.09,
+"k": "img/sachiko6/o_wind.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 485.09,
@@ -3188,15 +3202,29 @@
 },
 {
 "a": 780.62,
-"b": 786.88,
-"k": "kt_09",
-"c": "CostTag",
-"props": {
-"price": "ONE MORE",
-"sub": "YOU CAN MAKE IT THE NIGHT",
-"k": "kt_09"
+"b": 783.75,
+"k": "img/sachiko6/kt_09.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
 },
-"text": "One more thing about the paste. You can make it the night before, and keep it covered in the refrigerator."
+{
+"a": 783.75,
+"b": 786.88,
+"k": "img/sachiko6/kt_09.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 786.88,
@@ -3933,15 +3961,29 @@
 },
 {
 "a": 967.78,
-"b": 974.38,
-"k": "o_toast",
-"c": "CostTag",
-"props": {
-"price": "A FROZEN",
-"sub": "A FROZEN SLICE GOES INTO THE",
-"k": "o_toast"
+"b": 971.08,
+"k": "img/sachiko6/o_toast.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
 },
-"text": "A frozen slice goes into the toaster straight from the freezer, and it comes out soft in the middle and golden on the outside."
+{
+"a": 971.08,
+"b": 974.38,
+"k": "img/sachiko6/o_toast.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 974.38,
@@ -5017,15 +5059,29 @@
 },
 {
 "a": 1221.08,
-"b": 1228.77,
-"k": "d_hands4",
-"c": "CostTag",
-"props": {
-"price": "IF IT",
-"sub": "IT WAS NEVER YOU IT WAS",
-"k": "d_hands4"
+"b": 1224.925,
+"k": "img/sachiko6/d_hands4.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
 },
-"text": "If it foams, it is alive. If it does not foam, buy new yeast. It was never you, it was the yeast."
+{
+"a": 1224.925,
+"b": 1228.77,
+"k": "img/sachiko6/d_hands4.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1228.77,
@@ -5841,15 +5897,29 @@
 },
 {
 "a": 1424.71,
-"b": 1432.38,
-"k": "e_feel1",
-"c": "CostTag",
-"props": {
-"price": "IF YOU",
-"sub": "IF YOU SMELL A SOUR SMELL",
-"k": "e_feel1"
+"b": 1428.545,
+"k": "img/sachiko6/e_feel1.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
 },
-"text": "If you smell a sour smell when you open the bag, the bread is past its best, and you should freeze the rest at once."
+{
+"a": 1428.545,
+"b": 1432.38,
+"k": "img/sachiko6/e_feel1.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1432.38,
@@ -6543,15 +6613,29 @@
 },
 {
 "a": 1600.05,
-"b": 1605.493,
-"k": "me_02_b",
-"c": "CostTag",
-"props": {
-"price": "SALT CONTROLS",
-"sub": "SALT CONTROLS THE YEAST SO IT",
-"k": "me_02_b"
+"b": 1602.771,
+"k": "img/sachiko6/me_02_b.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
 },
-"text": "Salt controls the yeast, so it does not grow too fast and make a bread with big holes and a weak structure."
+{
+"a": 1602.771,
+"b": 1605.493,
+"k": "img/sachiko6/me_02_b.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1605.493,
@@ -7339,15 +7423,29 @@
 },
 {
 "a": 1818.69,
-"b": 1827.81,
-"k": "mo_01_b",
-"c": "CostTag",
-"props": {
-"price": "THE OVEN",
-"sub": "IT HAD ONLY A DIAL THAT",
-"k": "mo_01_b"
+"b": 1823.25,
+"k": "img/sachiko6/mo_01_b.png",
+"z": [
+1.0,
+1.07
+],
+"o": [
+50,
+50
+]
 },
-"text": "The oven had no thermometer. It had only a dial that said low, medium and high, and nobody in that building knew what the numbers meant."
+{
+"a": 1823.25,
+"b": 1827.81,
+"k": "img/sachiko6/mo_01_b.png",
+"z": [
+1.3,
+1.38
+],
+"o": [
+45,
+55
+]
 },
 {
 "a": 1827.81,
