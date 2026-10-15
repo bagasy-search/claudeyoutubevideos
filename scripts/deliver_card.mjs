@@ -9,7 +9,7 @@
 // - <slug>: el slug del render; el release <slug> debe tener el asset <slug>.mp4, y debe existir public/<slug>_meta.json
 // Creds de Supabase: resueltas en cascada por scripts/supa_creds.mjs (env vars, <video2>/.env.local, yt-scout-web).
 import fs from "node:fs";
-import { thumbYT } from "./thumb_yt.mjs";
+import { thumbYT, descYT } from "./thumb_yt.mjs";
 import { execSync } from "node:child_process";
 import { supaCreds } from "./supa_creds.mjs";
 
@@ -129,7 +129,7 @@ const main = async () => {
     const at = m.access_token;
     const local = `D:/videosdeclaude/${slug}.mp4`;
     const bytes = fs.existsSync(local) ? fs.readFileSync(local) : Buffer.from(await (await fetch(url)).arrayBuffer());
-    const snippet = { snippet: { title: (meta.title || slug).slice(0, 100), description: (meta.description || "").slice(0, 4900), categoryId: "27" }, status: { privacyStatus: "private", selfDeclaredMadeForKids: false } };
+    const snippet = { snippet: { title: (meta.title || slug).slice(0, 100), description: descYT(meta.description), categoryId: "27" }, status: { privacyStatus: "private", selfDeclaredMadeForKids: false } };
     const init = await fetch("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", { method: "POST", headers: { Authorization: "Bearer " + at, "Content-Type": "application/json; charset=UTF-8", "X-Upload-Content-Type": "video/*", "X-Upload-Content-Length": String(bytes.length) }, body: JSON.stringify(snippet) });
     if (!init.ok) { console.warn("YouTube init falló", init.status, (await init.text()).slice(0, 160)); return job; }
     const put = await fetch(init.headers.get("location"), { method: "PUT", headers: { "Content-Type": "video/*", "Content-Length": String(bytes.length) }, body: bytes });

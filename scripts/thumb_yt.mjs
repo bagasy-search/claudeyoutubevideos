@@ -25,3 +25,10 @@ export async function thumbYT(src) {
     return { buf: raw, ct: "image/png" };
   } finally { fs.rmSync(a, { force: true }); fs.rmSync(b, { force: true }); }
 }
+
+// YouTube rechaza "<" ">" en la descripción ("invalid video description") y corta en 5000 BYTES, no caracteres (15-oct, rdkudzu)
+export function descYT(d) {
+  let s = (d || "").replace(/</g, "‹").replace(/>/g, "›");
+  while (Buffer.byteLength(s, "utf8") > 4950) s = s.slice(0, -20);
+  return s;
+}
