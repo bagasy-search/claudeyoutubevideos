@@ -33,7 +33,7 @@ export const makePlayer = (E: Edl, extra: Record<string, React.FC<any>> = {}): R
       const K = extra[o.c] || LKIT_OVERLAYS[o.c];
       if (!K) throw new Error(`lkit: superposición desconocida "${o.c}"`);
       const d = fr(o.b) - fr(o.a);
-      return <Sequence key={"o" + i} from={fr(o.a)} durationInFrames={d}><K {...o.props} d={d} /></Sequence>;
+      return <Sequence key={"o" + i} from={fr(o.a)} durationInFrames={d}><K {...o.props} a={o.a} d={d} /></Sequence>;
     })}
     {E.counts && E.counts.length ? <ItemCounter counts={E.counts} of={E.of || E.counts.length} word={E.word} hide={E.hide} /> : null}
     <Grain />
