@@ -157,7 +157,7 @@ export const Tick: React.FC<{ f: number; at: number; size?: number; color?: stri
 // ═════════ reproductor de planos (lo usa Player.tsx) ═════════
 export type Tr = "cut" | "whip" | "zoom";
 export type Shot = {
-  a: number; b: number; k: string; vid?: boolean; ofs?: number;
+  a: number; b: number; k: string; vid?: boolean; ofs?: number; rate?: number;
   z?: [number, number]; o?: [number, number]; dx?: number; dy?: number;
   tin?: Tr; tout?: Tr; av?: boolean; children?: React.ReactNode;
 };
@@ -181,7 +181,7 @@ export const Plate: React.FC<{ s: Shot; d: number; lead: number }> = ({ s, d, le
         {s.av && hasAv() ? (
           <OffthreadVideo src={avSrc(s.a)} startFrom={Math.max(0, fr(avAt(s.a)) - lead)} muted style={st} />
         ) : s.vid ? (
-          <OffthreadVideo src={clip(s.k)} startFrom={fr(s.ofs || 0)} muted style={st} />
+          <OffthreadVideo src={clip(s.k)} startFrom={fr(s.ofs || 0)} playbackRate={s.rate || 1} muted style={st} />
         ) : (
           <Img src={img(s.k)} style={st} />
         )}
