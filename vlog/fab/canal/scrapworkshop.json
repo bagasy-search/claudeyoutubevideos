@@ -1,0 +1,20 @@
+{
+ "canal": "The Scrap WorkShop",
+ "idioma": "en",
+ "protagonista": "scrap",
+ "voz": "scrapworkshop_en",
+ "cps": 15.5,
+ "avatar_pct": [
+  22,
+  32
+ ],
+ "prohibidas": [
+  "\bfree\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\blink\b",
+  "\bdownload\b"
+ ]
+}

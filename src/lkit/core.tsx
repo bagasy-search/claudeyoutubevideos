@@ -67,10 +67,12 @@ export const avAt = (t: number) => { const w = avWin(t); return w.off + (t - w.m
 export const avSrc = (t: number) => staticFile(`${KCFG.avDir}/reel${avWin(t).reel}.mp4`);
 
 // ── capas comunes ──
-export const Grain: React.FC = () => (
+export const Grain: React.FC = () => null; // tswwater: sin grano (regla del creador)
+export const _GrainOld: React.FC = () => (
   <AbsoluteFill style={{ pointerEvents: "none", backgroundImage: `url(${staticFile(KCFG.grain)})`, backgroundRepeat: "repeat", opacity: 0.06, mixBlendMode: "overlay" }} />
 );
-export const Grade: React.FC<{ warm?: number; vig?: number }> = ({ warm = 1, vig = 0.32 }) => (
+export const Grade: React.FC<{ warm?: number; vig?: number }> = () => null; // tswwater: sin grade/viñeta
+export const _GradeOld: React.FC<{ warm?: number; vig?: number }> = ({ warm = 1, vig = 0.32 }) => (
   <AbsoluteFill style={{ pointerEvents: "none", background:
     `linear-gradient(180deg, rgba(255,236,200,${0.08 * warm}) 0%, rgba(255,236,200,0) 40%, rgba(24,18,36,0.14) 100%), radial-gradient(ellipse at 50% 46%, rgba(0,0,0,0) 55%, rgba(14,10,22,${vig}) 100%)` }} />
 );
