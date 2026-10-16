@@ -21,16 +21,20 @@ if n < 30: print(json.dumps({"slug": slug, "err": "sin cuadros"})); sys.exit()
 av = face[:]
 for i in range(n):  # sólo tramos de 2+ s
     if face[i] and not ((i > 0 and face[i - 1]) or (i + 1 < n and face[i + 1])): av[i] = False
-gaps, cur = [], 0
-for x in av:
-    if x: gaps.append(cur); cur = 0
+gaps, cur, at_ = [], 0, []
+for i, x in enumerate(av):
+    if x:
+        gaps.append(cur)
+        if cur > 20: at_.append(i - cur)
+        cur = 0
     else: cur += 1
 gaps.append(cur)
+if cur > 20: at_.append(n - cur)
 apar = sum(1 for i in range(n) if av[i] and (i == 0 or not av[i - 1]))
 quieto = [d < QUIETO for d in diff]; quieto[0] = False
 qrun, mq = 0, 0
 for i, q in enumerate(quieto):
     qrun = qrun + 1 if (q and not av[i]) else 0; mq = max(mq, qrun)
 print(json.dumps({"slug": slug, "min": round(n / 60, 1), "avatar_0_3s": any(av[:3]), "av_pct": round(100 * sum(av) / n, 1),
-                  "apariciones": apar, "max_sin_av_s": max(gaps), "huecos_gt20": sum(1 for g in gaps if g > 20),
+                  "apariciones": apar, "max_sin_av_s": max(gaps), "huecos_gt20": sum(1 for g in gaps if g > 20), "huecos_gt20_desde_s": at_, "face_s": [i for i in range(n) if face[i]],
                   "quieto_pct": round(100 * sum(1 for i in range(n) if quieto[i] and not av[i]) / n, 1), "max_quieto_s": mq}))
