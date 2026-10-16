@@ -112,7 +112,7 @@ export const ThermoCount: P<{ k: string; n0: number; n1: number; t0: number; t1:
   const lu = sp(f, at(label.t), 12, 160), cu = sp(f, at(chip.t), 14, 150);
   return (
     <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}>
-      <AbsoluteFill style={camStyle(cam)}><div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
+      <AbsoluteFill style={camStyle(cam)}><div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transformOrigin: "60% 55%", transform: `scale(${1 + 0.1 * cl(f / Math.max(1, d))})` }}>
         <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
       </div></AbsoluteFill>
       <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(8,6,4,0.62) 0%, rgba(8,6,4,0.2) 48%, rgba(8,6,4,0) 70%)" }} />
