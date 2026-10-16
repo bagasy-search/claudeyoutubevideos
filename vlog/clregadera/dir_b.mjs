@@ -1,0 +1,77 @@
+// DIRECTOR B — clregadera: LO QUE NECESITA + PASO 1 (¿cromo o dorada? la pared de mármol) + PASO 2 (la bolsa, la liga, la de mano) +
+// PASO 3 (toda la noche, burbujitas) + PASO 4 (el agua caliente primero = 1er secreto) + PASO 5 (cepillo, aguja, las puntitas de goma =
+// 2º secreto) + CTA 2 (párr. 22-53).
+import { S } from "../claudio/lib.mjs";
+import { C, B, CL, ST, G, BROWN, VINEGAR, HEAD, CLOGGED, BAG, HOTELSHOWER, HOMESHOWER, ROSA, HALL, I } from "./dir_a.mjs";
+export const SHOTS = [
+  // ── LO QUE NECESITA
+  C(22, "", "ClChapter", { n: 2, label: "LO QUE NECESITA", title: "Pocas cosas", sub: "casi todas ya las tiene" }),
+  CL(23, "", "c_supplies", `He lays out on a bathroom counter in ${HOTELSHOWER}: ${VINEGAR}, a clear plastic freezer bag, a few rubber bands, an old toothbrush, a sewing needle, wooden toothpicks and blue nitrile gloves.`),
+  ST(23, "Una bolsa de plástico de las que cierran", "b_freezerbag", "zip plastic bags", `Ordinary real footage that shows zip plastic bags.`),
+  ST(23, "Una liga, o una banda elástica", "b_bands", "rubber bands", `Ordinary real footage that shows rubber bands.`),
+  ST(23, "Un cepillo de dientes viejo", "b_toothbrush", "old toothbrush", `Ordinary real footage that shows old toothbrush.`),
+  ST(23, "Una aguja o un palillo de dientes", "b_needle", "sewing needle toothpicks", `Ordinary real footage that shows sewing needle toothpicks.`),
+  C(24, "", "ClBottle3D", { title: "Agua oxigenada 3 %", sub: "para otro día", tag: "US$1" }),
+  ST(25, "", "b_noplier", "pliers wrench tools", `Ordinary real footage that shows pliers wrench tools.`),
+  // ── PASO 1: ¿cromo o dorada?
+  C(26, "", "ClChapter", { n: 1, label: "PASO", title: "Mire el color", sub: "de su regadera" }),
+  C(27, "", "ClFinishCheck", { hi: 0 }),
+  ST(27, "brilla como un espejo", "b_chromemirror", "chrome shower head reflection", `Ordinary real footage that shows chrome shower head reflection.`),
+  C(28, "", "ClFinishCheck", { hi: 1 }),
+  ST(28, "negra mate", "b_blackmatte", "black rain shower head", `A matte black square rain shower head on a white tiled wall.`),
+  ST(29, "", "b_marblewall", "marble shower wall", `Ordinary real footage that shows marble shower wall.`),
+  CL(29, "Ponga una toalla doblada debajo", "c_towelbelow", `He lays a folded white towel on the shower floor under ${HEAD} in ${HOTELSHOWER}.`),
+  // ── PASO 2: la bolsa
+  C(30, "", "ClChapter", { n: 2, label: "PASO", title: "La bolsa", sub: "1½ taza de vinagre" }),
+  CL(31, "", "c_pourbag2", `He pours ${VINEGAR} into a clear plastic freezer bag held open in his gloved hand over the sink in ${HOTELSHOWER}.`, { anim: "he pours the vinegar into the bag" }),
+  C(31, "unos trescientos sesenta mililitros", "ClMeasureCup", { fill: 0.75, label: "1½ taza", where: "360 ml de vinagre" }),
+  ST(31, "quede sumergida", "b_submerged", "shower head soaking vinegar bag", `Close view of the face of a chrome shower head submerged in clear vinegar inside a plastic bag, seen through the plastic.`),
+  CL(32, "", "c_liftbag", `He lifts a clear plastic bag of vinegar up to ${HEAD} in ${HOTELSHOWER}, reaching up on his toes.`, { anim: "he lifts the bag up to the shower head" }),
+  ST(32, "Que todos los agujeritos queden tapados por el líquido", "b_holesunder", "bubbles underwater macro", `Close view through clear plastic of the nozzle holes of a shower head fully under vinegar, tiny bubbles on them.`),
+  CL(33, "", "c_bandtie", `He wraps a thick rubber band around the neck of the plastic bag and the chrome shower arm in ${HOTELSHOWER}.`, { anim: "he wraps the rubber band twice" }),
+  C(33, "dando dos o tres vueltas", "ClBagTie", {}),
+  ST(33, "se cae a la madrugada", "b_bagfallen", "plastic bag floor shower", `Ordinary real footage that shows plastic bag floor shower.`),
+  B(34, "", "b_bagcheck", `${BAG}, seen from below, the vinegar level well above the nozzle holes.`),
+  CL(34, "agregue un poco más", "c_topup", `He pours a little more vinegar from a cup into the bag tied on the shower head in ${HOTELSHOWER}.`),
+  ST(35, "", "b_handheld", "handheld shower head", `Ordinary real footage that shows handheld shower head.`),
+  ST(35, "El cable no hace falta mojarlo", "b_hose", "shower hose", `Ordinary real footage that shows shower hose.`),
+  // ── PASO 3: toda la noche
+  C(36, "", "ClChapter", { n: 3, label: "PASO", title: "Toda la noche", sub: "el vinagre trabaja solo" }),
+  C(37, "", "ClTimer30", { overnight: true, label: "8 horas", text: "toda la noche" }),
+  C(37, "agujero por agujero", "ClNozzleCut", { mode: "dissolve" }),
+  ST(38, "", "b_tinybubbles", "bubbles rising macro", `Ordinary real footage that shows bubbles rising macro.`, { anim: "fine bubbles rise slowly" }),
+  CL(39, "", "c_lightoff", `He switches off the bathroom light of a hotel room at the door, a plastic bag of vinegar hanging tied on the shower head inside.`),
+  B(39, "las bolsas colgadas en las duchas", "b_bagsnight", `${BAG}, in an empty hotel shower at night, light from the hallway.`),
+  ST(40, "", "b_clockwall", "wall clock", `A plain round wall clock in a bathroom showing two hours passed.`),
+  // ── PASO 4: el agua caliente primero
+  C(41, "", "ClChapter", { n: 4, label: "PASO", title: "El agua caliente", sub: "primero" }),
+  CL(42, "", "c_removebag", `He carefully unties the plastic bag of vinegar from ${HEAD} in ${HOTELSHOWER}, holding it level.`, { anim: "he lowers the bag carefully" }),
+  ST(42, "y tírelo en el inodoro", "b_pourtoilet", "pouring liquid toilet", `Ordinary real footage that shows pouring liquid toilet.`),
+  CL(43, "", "c_secret1", `He leans close to the camera in ${HOTELSHOWER} and whispers, a gloved finger raised.`),
+  ST(43, "abra el agua caliente, fuerte, un minuto entero", "b_hotfull", "shower running hot water", `Ordinary real footage that shows shower running hot water.`, { anim: "hot water blasts with steam" }),
+  C(43, "Sin estar debajo", "ClTimer30", { minutes: 1, label: "Sin estar debajo", fast: true }),
+  ST(44, "", "b_flakesout", "shower head water closeup", `Ordinary real footage that shows shower head water closeup.`, { anim: "white flakes shoot out with the water" }),
+  ST(44, "le caen en el pelo", "b_hairflakes", "wet hair closeup", `Ordinary real footage that shows wet hair closeup.`),
+  ST(45, "", "b_floorpebbles", "shower floor drain", `Ordinary real footage that shows shower floor drain.`),
+  CL(45, "Ésas son las que antes le caían a usted", "c_pickpebbles", `He picks up small white limescale pebbles from a shower floor with his gloved fingers in ${HOTELSHOWER} and shows them to the camera.`),
+  // ── PASO 5: cepillo, aguja, puntitas de goma
+  C(46, "", "ClChapter", { n: 5, label: "PASO", title: "Cepillo y aguja", sub: "derecho, sin palanca" }),
+  CL(47, "", "c_toothbrush", `He scrubs the face of ${HEAD} in small circles with an old toothbrush in ${HOTELSHOWER}.`, { anim: "he scrubs in small circles" }),
+  ST(47, "Lo que queda blando sale con el cepillo", "b_softcrust", "toothbrush cleaning shower head", `Ordinary real footage that shows toothbrush cleaning shower head.`),
+  CL(48, "", "c_needle", `He gently pokes one nozzle hole of a chrome shower head with a thin sewing needle, close and careful, in ${HOTELSHOWER}.`),
+  C(48, "Derecho, sin hacer palanca", "ClDoDont", { yes: { label: "Aguja fina, derecha", img: I + "b_needle.jpg" }, no: { label: "Aguja gruesa", img: I + "b_thicknail.jpg" } }),
+  CL(49, "", "c_rosaneedles", `${ROSA} hands him a small tin box of old sewing needles in a hotel laundry room.`),
+  ST(49, "Una aguja fina, derecha, y nada más", "b_needlebox", "sewing needles tin", `Ordinary real footage that shows sewing needles tin.`),
+  CL(50, "", "c_secret2", `He holds up two gloved fingers to the camera in ${HOTELSHOWER}, a knowing look.`),
+  C(50, "muchas regaderas tienen puntitas de goma", "ClNubRub", {}),
+  CL(50, "Páseles el dedo con el guante, frotando", "c_rubnubs", `He rubs the soft rubber nozzle nubs of a shower head with his gloved thumb in ${HOTELSHOWER}, white crust breaking off.`, { anim: "his thumb rubs across the rubber nubs" }),
+  ST(50, "y se cae sola", "b_nubsclean", "shower head nozzles clean", `Extreme close view of clean black rubber nozzle nubs on the face of a shower head, a few white crumbs falling.`),
+  ST(51, "", "b_fanjets", "shower head water morning light", `A chrome shower head spraying even straight jets in a neat fan, morning light.`, { anim: "the jets spray evenly" }),
+  CL(51, "en abanico", "c_testjets", `He opens the shower and watches the straight even jets with a satisfied nod in ${HOTELSHOWER}.`),
+  B(52, "Las regaderas de muchos años salen en dos vueltas", "b_secondbag", `${BAG}, tied on again for a second night, a calendar on the bathroom wall.`),
+  // ── CTA 2
+  S(53, "", "av", ""),
+  C(53, "La regadera en la página veintiocho", "ClBookPage", { page: I + "book_p28.jpg", pageNo: 28, stamp: "Regadera sucia" }),
+  C(53, "y noventa y cuatro arreglos de la casa", "ClQRCard", { qr: I + "qr.jpg", cover: I + "book_cover.jpg", head: "94 ARREGLOS · PÁGINA 28", text: "el link está abajo" }),
+  ST(53, "una regadera nueva", "st_hwstore", "hardware store shelf", `Shelves of a hardware store aisle with plumbing parts.`),
+];

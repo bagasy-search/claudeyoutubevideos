@@ -1,0 +1,22 @@
+[
+ {
+  "name": "b_ba_before",
+  "prompt": "Straight-on close view of the face of a round chrome shower head on a tiled wall: its small nozzle holes crusted with hard white limescale, several holes blocked, gray film on the chrome, bright bathroom light, everything in focus, no people."
+ },
+ {
+  "name": "b_ba_after",
+  "prompt": "Straight-on close view of the face of a round chrome shower head on a tiled wall: clean shiny chrome, every small nozzle hole open and clean, bright bathroom light, everything in focus, no people."
+ },
+ {
+  "name": "b_thicknail",
+  "prompt": "A thick metal nail jammed into one small nozzle hole of a chrome shower head, the hole scratched and widened, close view, no people."
+ },
+ {
+  "name": "b_stepladder",
+  "prompt": "A small sturdy two-step folding stepladder standing on a dry bathroom floor next to a shower, no people."
+ },
+ {
+  "name": "b_wetchair",
+  "prompt": "A wobbly plastic chair standing on a wet tiled shower floor with puddles, water drops on the seat, no people."
+ }
+]

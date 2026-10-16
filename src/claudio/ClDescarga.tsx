@@ -164,7 +164,8 @@ export const ClTankMark: React.FC<{ state?: "low" | "ok"; note?: string; bed?: s
 };
 
 // ── las dos hojas de almanaque
-export const ClTwoDays: React.FC<{ hi?: number; bed?: string; stamp?: string }> = ({ hi = -1, bed, stamp = "Nunca el mismo día" }) => {
+type Day = [string, string, string, string];
+export const ClTwoDays: React.FC<{ hi?: number; bed?: string; stamp?: string; d1?: Day; d2?: Day }> = ({ hi = -1, bed, stamp = "Nunca el mismo día", d1 = ["DÍA 1", "Frasco marrón", "½ taza por el tubo + 1 taza · 30 min", "#5A3418"], d2 = ["DÍA 2", "Vinagre blanco", "2 tazas · toda la noche", "#3E6E8E"] }) => {
   const f = useCurrentFrame(); const { fps } = useVideoConfig(); const out = useOut(8);
   const page = (i: number, day: string, what: string, how: string, c: string) => {
     const p = pop(f, fps, 4 + i * 10, 15), dim = hi >= 0 && hi !== i;
@@ -180,8 +181,8 @@ export const ClTwoDays: React.FC<{ hi?: number; bed?: string; stamp?: string }> 
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Bed src={bed} seed={151} dim={0.2} />
-      {page(0, "DÍA 1", "Frasco marrón", "½ taza por el tubo + 1 taza · 30 min", "#5A3418")}
-      {page(1, "DÍA 2", "Vinagre blanco", "2 tazas · toda la noche", "#3E6E8E")}
+      {page(0, ...d1)}
+      {page(1, ...d2)}
       {stamp ? <Stamp text={stamp} at={36} color={CL.red} x="50%" y="84%" rot={-4} size={66} /> : null}
       <RoomLight k={0.7} />
     </AbsoluteFill>
