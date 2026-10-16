@@ -1,0 +1,80 @@
+// DIRECTOR C — cltanque: el 2º secreto (la prueba del colorante) + el 3º (la tapa) + problemas + preguntas + errores + la cuenta +
+// recap + CTA 3 + cierre con pregunta y callback (párr. 56-89).
+import { S } from "../claudio/lib.mjs";
+import { C, B, CL, ST, G, BROWN, VINEGAR, HOMEBATH, HOTELBATH, TANK, TABLET, LID, VALVE, ROSA, MANAGER, HALL, I } from "./dir_a.mjs";
+export const SHOTS = [
+  // ── el 2º secreto: el colorante
+  C(56, "", "ClChapter", { n: 2, label: "SECRETO", title: "Las gotas de colorante", sub: "15 minutos" }),
+  CL(57, "", "c_dyetank", `He squeezes drops of blue food coloring from a small plain bottle into the clear water of an open clean toilet tank in ${HOTELBATH}.`, { anim: "he squeezes blue drops into the tank" }),
+  ST(57, "Del que se usa para las tortas", "b_dyebottles", "food coloring bottles", `Ordinary real footage that shows food coloring bottles.`),
+  C(58, "", "ClDyeTest", { mode: "leak" }),
+  C(59, "Si se puso de color", "ClDyeTest", { mode: "leak", verdict: true }),
+  ST(59, "Su inodoro le está robando agua", "b_bluebowlfaint", "toilet bowl water top view", `Ordinary real footage that shows toilet bowl water top view.`),
+  ST(59, "de noche, sin hacer ruido", "b_nightdrip", "dark bathroom night", `Ordinary real footage that shows dark bathroom night.`),
+  ST(60, "", "b_clearbowl2", "clean toilet bowl", `Ordinary real footage that shows clean toilet bowl.`),
+  CL(61, "", "c_cleanflapper", `He rubs the rim of the rubber flapper and the drain seat inside a toilet tank with a yellow sponge in ${HOTELBATH}.`),
+  ST(61, "Muchas veces es la piedra que no la deja apoyar", "b_seatcrust", "toilet tank parts closeup", `Ordinary real footage that shows toilet tank parts closeup.`),
+  ST(61, "es una goma vieja", "b_twoflappers", "toilet repair parts", `Ordinary real footage that shows toilet repair parts.`),
+  // ── el 3º secreto: la tapa
+  C(62, "", "ClChapter", { n: 3, label: "SECRETO", title: "La tapa", sub: "el error más caro" }),
+  ST(63, "", "b_lidwall", "toilet tank lid removed", `Ordinary real footage that shows toilet tank lid removed.`),
+  ST(63, "o sobre el borde de la bañera", "b_lidtub", "bathtub edge", `Ordinary real footage that shows bathtub edge.`),
+  ST(63, "Es de porcelana, pesa, y resbala", "st_ceramic", "white ceramic", `Ordinary real footage that shows white ceramic.`),
+  C(64, "", "ClLidTowel", { hi: 0, crack: true }),
+  ST(64, "Y a veces no se consigue igual", "b_lidstore", "hardware store aisle", `Ordinary real footage that shows hardware store aisle.`),
+  CL(65, "", "c_rosatowels", `${ROSA} hands him a stack of old folded towels in a hotel laundry room with washing machines behind.`),
+  CL(65, "Tapa en el piso, sobre la toalla", "c_lidtowel2", `He lays ${LID} face up on an old towel on the floor of ${HOTELBATH}, carefully.`),
+  // ── problemas
+  C(66, "", "ClChapter", { n: 6, label: "LA VIDA REAL", title: "Lo que me cuentan", sub: "y qué hacer" }),
+  ST(66, "Los problemas que me cuentan", "b_valveold", "old water valve", `An old water shut-off valve.`),
+  C(67, "no la fuerce con una pinza", "ClDoDont", { yes: { label: "La mano", img: I + "b_valve.jpg" }, no: { label: "La pinza", img: I + "b_pliers.jpg" } }),
+  ST(67, "eso es para el plomero", "b_plumberkneel", "plumber fixing toilet", `Ordinary real footage that shows plumber fixing toilet.`),
+  ST(68, "", "b_stainleft", "toilet tank cleaning", `Ordinary real footage that shows toilet tank cleaning.`),
+  CL(68, "Otra noche", "c_pourvinegar3", `He pours more ${VINEGAR} into a toilet tank in ${HOTELBATH} in the evening, patient.`),
+  ST(69, "", "b_vinegarsmell", "bad smell bathroom", `Ordinary real footage that shows bad smell bathroom.`),
+  ST(70, "", "b_bluetankwater2", "blue toilet water", `Ordinary real footage that shows blue toilet water.`),
+  ST(70, "Y la goma lo paga", "b_flapperbite", "rubber gasket damaged", `Close view of a rubber flapper partly eaten away and swollen at its edge, a blue tablet resting next to it on the bottom of a tank.`),
+  C(71, "", "ClTankMark", { state: "low" }),
+  C(71, "Tiene que llegar a la marca del tubo de rebalse", "ClTankMark", { state: "ok" }),
+  C(71, "Eso está en la página dieciséis", "ClBookPage", { page: I + "book_p16.jpg", pageNo: 16, stamp: "Página 16" }),
+  // ── preguntas
+  S(72, "", "av", ""),
+  C(73, "", "ClNeverMix", { a: "Cloro", b: "Vinagre", verdict: "Gas cloro" }),
+  CL(74, "", "c_calendar", `He marks a date on a small paper calendar hanging in a hotel maintenance storeroom with a pen.`),
+  ST(74, "El frasco marrón, cada semana", "b_brownshelf", "bathroom shelf bottles", `Ordinary real footage that shows bathroom shelf bottles.`),
+  CL(75, "", "c_touchflapper", `He presses an old rubber toilet flapper between two gloved fingers in ${HOTELBATH}, the rubber soft and leaving a black mark on his glove.`),
+  // ── errores
+  C(76, "", "ClChapter", { n: 5, label: "EN EL HOTEL", title: "Los errores", sub: "que vi con los tanques" }),
+  ST(77, "", "b_tabletdrop", "toilet tablet tank", `Ordinary real footage that shows toilet tablet tank.`, { anim: "the tablet drops into the water" }),
+  C(78, "", "ClMixCloud3D", { a: "Cloro", b: "Vinagre", kindA: "spray", kindB: "jug", mode: "gas", verdict: "Gas cloro" }),
+  ST(79, "Rascar con metal", "b_scratchbowl", "scratched toilet bowl", `A scratched toilet bowl.`),
+  S(79, "Raya la porcelana", "av", ""),
+  ST(80, "La tapa parada contra la pared", "b_lidwall3", "toilet tank lid", `A toilet tank lid.`),
+  ST(81, "", "b_jugtank", "pouring vinegar", `${VINEGAR} next to an open toilet tank full of vinegar, a calendar page showing several days crossed out on the wall.`),
+  // ── la cuenta
+  C(82, "", "ClReceipt", { lines: [["Visita del plomero", "la visita"], ["Agua de todo el mes", "la factura"], ["Vinagre blanco", "1 litro"], ["Agua oxigenada", "½ taza"], ["Colorante", "unas gotas"]] }),
+  ST(82, "En esta casa no hay villanos, hay aritmética", "b_calc", "calculator bill glasses table", `A calculator, a paper water bill and reading glasses on a kitchen table in morning light, no logos, numbers unreadable.`),
+  S(82, "De un lado", "av", ""),
+  ST(82, "la factura del agua", "b_meter", "water meter", `Ordinary real footage that shows water meter.`),
+  ST(82, "sin que usted lo supiera", "b_runningbowl", "running toilet water", `Ordinary real footage that shows running toilet water.`),
+  ST(82, "Del otro, un litro de vinagre", "b_vinegarliter", "vinegar bottle measuring cup", `Ordinary real footage that shows vinegar bottle measuring cup.`),
+  ST(82, "y unas gotas de colorante", "b_dyebottle", "blue food coloring water glass", `A small dropper bottle of blue food coloring with a plain blank label and a few blue drops spreading in a glass of water.`),
+  C(83, "casi no volvió a anotar", "ClNotebook", { title: "La libreta del gerente", rows: [{ k: "Enero", v: "inodoro que corre" }, { k: "Febrero", v: "—" }, { k: "Marzo", v: "—" }], strike: true, note: "una noche por mes" }),
+  // ── recap
+  C(84, "", "ClCheck", { title: "Todo en 30 segundos", items: ["Fuera la pastilla · 3 descargas", "Llave cerrada · tanque vacío", "1 litro de vinagre · 1 noche", "Cepillo sin metal", "Otro día: ½ taza por el tubo", "Colorante: 15 minutos"] }),
+  CL(84, "Cierre la llave de paso", "c_turnvalve2", `He turns the chrome shut-off valve behind a toilet in ${HOTELBATH}, crouching.`),
+  ST(84, "Un litro de vinagre, toda la noche", "b_vinegartank2", "toilet tank water", `Ordinary real footage that shows toilet tank water.`),
+  ST(84, "cepillo sin metal", "b_brushscrub2", "scrubbing toilet brush gloves", `Ordinary real footage that shows scrubbing toilet brush gloves.`),
+  ST(84, "media taza del frasco marrón por el tubo de rebalse", "b_pourtube2", "pouring liquid bottle gloves", `${G} pouring from ${BROWN} into the overflow tube inside a clean toilet tank.`),
+  ST(84, "Y la prueba del colorante", "b_dyespread", "blue ink spreading water", `Ordinary real footage that shows blue ink spreading water.`, { anim: "the blue dye spreads in the water" }),
+  // ── CTA 3
+  CL(85, "", "c_bookshow2", `He holds a thick printed spiral-bound book with a plain brown cover open to a page in ${HOTELBATH}, pointing at a line with his gloved finger.`),
+  C(85, "La rutina en la página cincuenta y tres", "ClQRCard", { qr: I + "qr.jpg", cover: I + "book_cover.jpg", head: "94 ARREGLOS · PÁGINAS 7 Y 53", text: "el link está abajo" }),
+  // ── cierre
+  CL(86, "", "c_liftlidclose", `He lifts the lid of a toilet tank a little and shines a small flashlight inside in ${HOMEBATH}.`),
+  ST(86, "Con una linterna", "b_flashtank", "flashlight dark", `Ordinary real footage that shows flashlight dark.`),
+  CL(87, "", "c_phonecomments", `He sits on a bench in a hotel staff room reading comments on his phone with reading glasses, smiling.`),
+  C(88, "", "ClVideoRef", { thumb: I + "th_clsarro.jpg", title: "El sarro del inodoro", tag: "ya en el canal", next: true }),
+  CL(89, "", "c_wave", `He puts the clean lid back on a toilet tank in ${HOTELBATH} and gives the camera a small nod goodbye.`),
+  ST(89, "quiera poner una pastilla azul en el tanque", "b_tabletpack", "toilet cleaning tablets", `Ordinary real footage that shows toilet cleaning tablets.`),
+];
