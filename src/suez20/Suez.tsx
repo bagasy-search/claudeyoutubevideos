@@ -5,6 +5,7 @@ import { AbsoluteFill, Img, Sequence, useCurrentFrame, interpolate, spring, Easi
 import { loadFont } from "@remotion/google-fonts/Montserrat";
 import { loadFont as loadHand } from "@remotion/google-fonts/Caveat";
 import sfx from "./sfx.json";
+import { SceneDawn, SceneNecho, SceneDarius, SceneNapoleon, SceneSteam, SandWall } from "./scenes";
 
 import { sf } from "./sf";
 const Audio = (_: any) => null; // farm: el audio final sale del WAV máster premezclado
@@ -39,9 +40,9 @@ const KEYS: [number, number, number, number][] = [
   [12.6, 32.3, 30.4, 11.5],
   [13.6, 31.8, 30.3, 7.0],  // "Then Napoleon's engineers"
   [16.9, 31.9, 30.35, 7.6],
-  [17.6, 32.33, 31.05, 17.0], // "So how did one stubborn Frenchman"
-  [19.5, 32.42, 30.35, 15.5],
-  [21.0, 32.45, 30.15, 15.0],
+  [17.6, 32.33, 31.05, 15.0],
+  [19.3, 32.34, 30.95, 14.0], // vuelve al mapa: el canal moderno corta el istmo
+  [21.0, 32.42, 30.4, 12.5],
 ];
 function cam(t: number) {
   let i = 0;
@@ -64,7 +65,9 @@ const MapLayer: React.FC<{ c: Cam }> = ({ c }) => {
   const mask = `radial-gradient(ellipse closest-side at center, #000 ${interpolate(c.z, [3, 9], [55, 82], clamp)}%, transparent 100%)`;
   return (
     <>
-      {c.z < 12 && <Img src={sf("world_antique.jpg")} style={{ position: "absolute", left: x0, top: y0, width: MW * c.z, height: MH * c.z }} />}
+      {/* con zoom alto se usa un recorte de la zona (la imagen entera escalada a >50.000 px no decodifica) */}
+      {c.z < 2.5 && <Img src={sf("world_antique.jpg")} style={{ position: "absolute", left: x0, top: y0, width: MW * c.z, height: MH * c.z }} />}
+      {c.z >= 2.5 && c.z < 12 && (() => { const [cx0, cy0] = proj(c, 10, 46), [cx1, cy1] = proj(c, 55, 14); return <Img src={sf("suez/world_crop.jpg")} style={{ position: "absolute", left: cx0, top: cy0, width: cx1 - cx0, height: cy1 - cy0 }} />; })()}
       {insetOp > 0 && <Img src={sf("suez/inset.jpg")} style={{ position: "absolute", left: ix, top: iy, width: ix1 - ix, height: iy1 - iy, opacity: insetOp, WebkitMaskImage: mask, maskImage: mask }} />}
     </>
   );
@@ -92,17 +95,17 @@ const DARIUS: [number, number][] = [[32.0, 30.555], [32.1, 30.55], [32.2, 30.56]
 // canal moderno Port Said → Suez
 const MODERN: [number, number][] = [[32.31, 31.26], [32.32, 31.05], [32.32, 30.85], [32.3, 30.66], [32.3, 30.56], [32.35, 30.45], [32.4, 30.33], [32.47, 30.18], [32.53, 30.03], [32.56, 29.93]];
 
-const Canals: React.FC<{ c: Cam; t: number; f: number }> = ({ c, t, f }) => {
+const Canals: React.FC<{ c: Cam; t: number; f: number; wMul?: number }> = ({ c, t, f, wMul = 1 }) => {
   const pj = (a: [number, number][]) => a.map(([lo, la]) => proj(c, lo, la));
   const kN = ramp(t, 6.25, 7.45, Easing.out(Easing.quad));
   const stall = t > 7.45 && t < 7.9 ? Math.sin((t - 7.45) * 70) * 4 * (1 - (t - 7.45) / 0.45) : 0; // la pala se traba
   const kD = ramp(t, 9.0, 10.15, Easing.inOut(Easing.quad));
   const bury = ramp(t, 10.6, 11.7);
   const allOff = 1 - ramp(t, 12.3, 12.9);
-  const kM = ramp(t, 17.15, 19.6, Easing.inOut(Easing.sin));
+  const kM = ramp(t, 19.3, 20.7, Easing.inOut(Easing.sin));
   const necho = pj(NECHO).map(([x, y]) => [x + stall, y] as [number, number]);
   const sand = (a: string, b: string) => (bury > 0 ? b : a);
-  const w = Math.max(6, c.z * 0.95);
+  const w = Math.max(6, c.z * 0.95) * wMul;
   return (
     <svg width={1920} height={1080} style={{ position: "absolute", left: 0, top: 0 }}>
       {/* isthmus: la franja de arena que todos miraban */}
@@ -214,6 +217,56 @@ const Portal: React.FC<{ t: number; src: string; t0: number; t1: number; x: numb
   );
 };
 
+// portal circular que contiene una escena: abre desde (ox,oy) y cierra hacia (cx,cy)
+const ScenePortal: React.FC<{ t: number; open: [number, number]; close: [number, number]; o: [number, number]; cpt: [number, number]; children: React.ReactNode }> = ({ t, open, close, o, cpt, children }) => {
+  if (t < open[0] || t > close[1]) return null;
+  const kIn = open[1] > open[0] ? ramp(t, open[0], open[1]) : 1, kOut = ramp(t, close[0], close[1], Easing.in(Easing.cubic));
+  const closing = t >= close[0];
+  const R = closing ? 2300 * (1 - kOut) : 2300 * Easing.in(Easing.quad)(kIn);
+  const [x, y] = closing ? cpt : o;
+  const ring = closing ? Math.min(1, kOut * 4) : Math.max(0, 1 - kIn * 2.2);
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <AbsoluteFill style={{ clipPath: `circle(${R}px at ${x}px ${y}px)` }}>{children}</AbsoluteFill>
+      {ring > 0 && R > 2 && <div style={{ position: "absolute", left: x - R, top: y - R, width: 2 * R, height: 2 * R, borderRadius: "50%", border: "7px solid #fff", opacity: ring, boxShadow: "0 0 30px rgba(0,0,0,.5)" }} />}
+    </AbsoluteFill>
+  );
+};
+
+// minimapa de pergamino: dónde estamos y cómo avanza el canal mientras corre la escena
+const MiniMap: React.FC<{ t: number; f: number; t0: number; t1: number }> = ({ t, f, t0, t1 }) => {
+  if (!vis(t, t0, t1)) return null;
+  const s = pop(f, t0, 12) * fadeOut(t, t1, 0.3);
+  const [mx, my] = P(31.98, 30.42);
+  const c: Cam = { x: mx, y: my, z: 8.2 };
+  const SC = 0.25;
+  return (
+    <div style={{ position: "absolute", right: 46, top: 40, width: 1920 * SC, height: 1080 * SC, transform: `scale(${s}) rotate(1.5deg)`, transformOrigin: "100% 0%", border: "5px solid #fff", borderRadius: 8, overflow: "hidden", boxShadow: "0 12px 30px rgba(0,0,0,.5)", background: "#d9c9a0" }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${SC})`, transformOrigin: "0 0" }}>
+        <MapLayer c={c} />
+        <Canals c={c} t={t} f={f} wMul={4.2} />
+        <div style={{ position: "absolute", left: 60, top: 40, fontFamily: HAND, fontSize: 96, color: "#26314a" }}>Isthmus of Suez</div>
+      </div>
+    </div>
+  );
+};
+
+// humo que tapa la pantalla (transición a las máquinas)
+const SmokeWipe: React.FC<{ t: number; t0: number; t1: number }> = ({ t, t0, t1 }) => {
+  const k = interpolate(t, [t0, (t0 + t1) / 2, t1], [0, 1, 0], clamp);
+  if (k <= 0) return null;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {Array.from({ length: 18 }).map((_, i) => {
+        const r = Math.sin(i * 91.7) * 1000 % 1, rr = Math.abs(r);
+        const x = (i % 6) * 380 + rr * 120 - 60, y = Math.floor(i / 6) * 420 + rr * 160 - 80;
+        const size = 520 * k + rr * 300 * k;
+        return <div key={i} style={{ position: "absolute", left: x - size / 2, top: y - size / 2, width: size, height: size, borderRadius: "50%", background: i % 2 ? "#3a302c" : "#4d423c", filter: "blur(40px)", opacity: Math.min(1, k * 1.6) }} />;
+      })}
+    </AbsoluteFill>
+  );
+};
+
 // sello rojo que cae
 const Stamp: React.FC<{ f: number; t: number; t0: number; t1: number; x: number; y: number; text: string; size?: number; rot?: number }> = ({ f, t, t0, t1, x, y, text, size = 78, rot = -10 }) => {
   if (!vis(t, t0, t1)) return null;
@@ -281,6 +334,16 @@ const SeaLevels: React.FC<{ f: number; t: number; t0: number; t1: number }> = ({
   );
 };
 
+const Caption: React.FC<{ f: number; t: number; t0: number; t1: number; x: number; y: number; text: string; flag?: boolean }> = ({ f, t, t0, t1, x, y, text, flag }) => {
+  if (!vis(t, t0, t1)) return null;
+  const s = pop(f, t0, 11) * fadeOut(t, t1, 0.25);
+  return (
+    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${s}) rotate(-2deg)`, display: "flex", alignItems: "center", gap: 12, background: "#111", color: "#fff", fontFamily: SANS, fontWeight: 800, fontSize: 30, padding: "7px 16px 8px", borderRadius: 6, border: "2px solid rgba(255,255,255,.85)", boxShadow: "0 6px 16px rgba(0,0,0,.45)", textTransform: "uppercase", whiteSpace: "nowrap" }}>
+      {flag && <Img src={sf("flag_fr.png")} style={{ width: 46, borderRadius: 3 }} />}{text}
+    </div>
+  );
+};
+
 // nota de papel con el año (arriba a la izquierda) + reloj de arena, como el minuto 1
 const YEARS: [number, string][] = [[6.0, "600 BC"], [8.85, "500 BC"], [12.65, "1799"], [17.15, "1859"]];
 const YearNote: React.FC<{ f: number; t: number }> = ({ f, t }) => {
@@ -319,11 +382,11 @@ const BigWord: React.FC<{ f: number; t: number; t0: number; t1: number; text: Re
 
 // barco moviéndose por el canal moderno al final
 const ShipAlong: React.FC<{ c: Cam; t: number; f: number }> = ({ c, t, f }) => {
-  const k = ramp(t, 17.5, 21.2, Easing.linear);
+  const k = ramp(t, 19.35, 21.6, Easing.linear);
   if (k <= 0) return null;
   const p = partial(MODERN.map(([lo, la]) => proj(c, lo, la)), Math.min(k, 0.999));
   const [x, y] = p[p.length - 1];
-  return <Img src={sf("icons/ship.png")} style={{ position: "absolute", left: x, top: y + Math.sin(f / 6) * 3, width: 120, transform: `translate(-50%,-75%) scale(${pop(f, 17.5, 10)})`, filter: "drop-shadow(0 8px 8px rgba(0,0,0,.45))" }} />;
+  return <Img src={sf("icons/ship.png")} style={{ position: "absolute", left: x, top: y + Math.sin(f / 6) * 3, width: 120, transform: `translate(-50%,-75%) scale(${pop(f, 19.35, 10)})`, filter: "drop-shadow(0 8px 8px rgba(0,0,0,.45))" }} />;
 };
 
 type Ev = [number, string, number, number];
@@ -356,7 +419,7 @@ export const Suez: React.FC = () => {
       <Audio src={sf("suez/voz.wav")} />
       <SfxTrack />
       <svg width={0} height={0} style={{ position: "absolute" }}><filter id="mb" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation={`${bx.toFixed(2)} ${by.toFixed(2)}`} /></filter></svg>
-      <AbsoluteFill style={{ filter: blurOn ? "url(#mb)" : undefined }}>
+      <AbsoluteFill style={{ filter: blurOn ? "url(#mb)" : undefined, visibility: t > 6.3 && t < 18.95 ? "hidden" : undefined }}>
         <MapLayer c={c} />
         <Canals c={c} t={t} f={f} />
       </AbsoluteFill>
@@ -369,32 +432,42 @@ export const Suez: React.FC = () => {
       <Icon c={c} f={f} t={t} src="ship" lon={32.0} lat={31.42} t0={4.2} t1={5.9} size={110} />
       <Icon c={c} f={f} t={t} src="ship" lon={32.72} lat={29.85} t0={4.4} t1={5.9} size={110} flip />
 
-      {/* Necho II */}
-      <Portal t={t} f={f} src="suez/necho.jpg" t0={5.95} t1={8.6} x={400} y={330} r={220} pos="70% 50%" caption="Necho II" />
-      <Tag c={c} f={f} t={t} lon={31.62} lat={30.7} t0={6.3} t1={8.6} text="Pharaoh's canal" bg="#9c6a1c" size={28} />
-      <Stamp f={f} t={t} t0={7.55} t1={8.6} x={1220} y={420} text="Gave up" />
-
-      {/* Darío I */}
-      <Portal t={t} f={f} src="suez/darius.jpg" t0={8.85} t1={11.0} x={1520} y={330} r={220} pos="50% 30%" caption="Darius I" />
-      <Tag c={c} f={f} t={t} lon={32.62} lat={30.15} t0={10.0} t1={10.9} text="Finished ✓" bg="#2a7d2e" size={30} />
-      <SandStorm t={t} f={f} />
+      {/* escenas ilustradas: se abren desde el istmo y vuelven al mapa en Port Said */}
+      <ScenePortal t={t} open={[5.72, 6.25]} close={[18.95, 19.35]} o={proj(c, 32.35, 30.6)} cpt={proj(c, 32.31, 31.2)}>
+        <AbsoluteFill style={{ background: "#000" }}>
+          {/* Necho → Darío con barrido de cámara */}
+          {t < 9.05 && <AbsoluteFill style={{ transform: `translateX(${interpolate(t, [8.72, 8.98], [0, -1920], { ...clamp, easing: Easing.in(Easing.cubic) })}px)`, filter: t > 8.72 && t < 8.98 ? "blur(14px)" : undefined }}><SceneNecho t={t} f={f} /></AbsoluteFill>}
+          {t > 8.7 && t < 11.72 && <AbsoluteFill style={{ transform: `translateX(${interpolate(t, [8.72, 8.98], [1920, 0], { ...clamp, easing: Easing.out(Easing.cubic) })}px)`, filter: t > 8.72 && t < 8.98 ? "blur(14px)" : undefined }}><SceneDarius t={t} f={f} /></AbsoluteFill>}
+          {t >= 11.72 && t < 17.15 && <AbsoluteFill><SceneNapoleon t={t} f={f} /></AbsoluteFill>}
+          {t > 16.95 && <SceneSteam t={t} f={f} lesseps={interpolate(t, [17.9, 18.25], [0, 1], clamp)} />}
+          <SandWall t={t} t0={10.45} t1={12.95} f={f} />
+          <SmokeWipe t={t} t0={16.75} t1={17.45} />
+        </AbsoluteFill>
+      </ScenePortal>
+      <MiniMap t={t} f={f} t0={6.4} t1={12.2} />
+      <Stamp f={f} t={t} t0={7.55} t1={8.7} x={1000} y={300} text="Gave up" size={92} />
       <BigWord f={f} t={t} t0={11.05} t1={12.4} text="BURIED" />
+      {/* rótulos de los personajes (siluetas sin cara: el nombre los identifica) */}
+      <Caption f={f} t={t} t0={6.5} t1={8.7} x={1610} y={640} text="Pharaoh Necho II" />
+      <Caption f={f} t={t} t0={9.2} t1={11.0} x={560} y={250} text="Darius I of Persia" />
+      <Caption f={f} t={t} t0={12.9} t1={14.0} x={560} y={470} text="Napoleon & his engineers" />
 
-      {/* Napoleón */}
-      <Portal t={t} f={f} src="suez/gerome.jpg" t0={12.6} t1={14.15} x={960} y={540} r={0} full pos="25% 60%" />
+      {/* Napoleón: el cálculo de los ingenieros sobre la escena */}
       <AbsoluteFill style={{ background: "#1a1208", opacity: dim, pointerEvents: "none" }} />
       <SeaLevels f={f} t={t} t0={14.05} t1={17.05} />
       <Stamp f={f} t={t} t0={15.3} t1={17.05} x={930} y={430} text="Wrong" size={96} rot={-12} />
       <BigWord f={f} t={t} t0={15.95} t1={17.05} text={<span>BY <span style={{ color: "#ffd23a" }}>30 FT</span></span>} y={930} size={110} />
 
       {/* el francés terco */}
+      <Caption f={f} t={t} t0={18.15} t1={18.95} x={330} y={420} text="Ferdinand de Lesseps" flag />
       <ShipAlong c={c} t={t} f={f} />
-      <Flag c={c} f={f} t={t} cc="fr" lon={32.05} lat={30.95} t0={18.1} t1={21.0} w={84} />
-      <Tag c={c} f={f} t={t} lon={32.05} lat={30.82} t0={18.25} t1={21.0} text="Ferdinand de Lesseps" size={28} />
-      <BigWord f={f} t={t} t0={19.35} t1={21.0} text={<span style={{ color: "#ffd23a" }}>?</span>} x={1380} y={500} size={300} />
+      <BigWord f={f} t={t} t0={19.7} t1={21.0} text={<span style={{ color: "#ffd23a" }}>?</span>} x={1380} y={500} size={300} />
 
       <YearNote f={f} t={t} />
-      <CloudIntro t={t} />
+      {/* amanecer: el faraón señala; se cierra en un círculo sobre Egipto */}
+      <ScenePortal t={t} open={[0, 0]} close={[0.95, 1.42]} o={[960, 540]} cpt={proj(c, 31.2, 26.5)}>
+        <SceneDawn t={t} f={f} />
+      </ScenePortal>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.28) 100%)", pointerEvents: "none" }} />
     </AbsoluteFill>
   );
