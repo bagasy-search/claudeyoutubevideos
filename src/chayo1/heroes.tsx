@@ -328,8 +328,8 @@ export const Recetario: P<{ bed: string; head: string; rows: { t: number; txt: s
             const u = cl((f - at(r.t)) / 16);
             if (u <= 0) return null;
             return (
-              <div key={i} style={{ position: "absolute", left: 160, top: 116 + i * 88, display: "flex", alignItems: "center", gap: 18 }}>
-                <div style={{ fontFamily: HAND, fontSize: 64, color: i === cur ? TINTA : "rgba(42,33,27,0.82)", whiteSpace: "nowrap", clipPath: `inset(0 ${100 - u * 100}% 0 0)` }}>{i + 1 + n0}. {r.txt}</div>
+              <div key={i} style={{ position: "absolute", left: 160, top: 116 + i * 88, display: "flex", alignItems: "center", gap: 4 }}>
+                <div style={{ fontFamily: HAND, fontSize: 64, color: i === cur ? TINTA : "rgba(42,33,27,0.82)", whiteSpace: "nowrap", paddingRight: 16, flexShrink: 0, clipPath: `inset(0 ${100 - u * 100}% 0 0)` }}>{i + 1 + n0}. {r.txt}</div>
                 <svg width={60} height={50} style={{ opacity: cl((f - at(r.t) - 14) / 6) }}><path d="M 6 26 L 22 42 L 54 6" stroke={NOPAL} strokeWidth={8} fill="none" strokeLinecap="round" /></svg>
               </div>
             );
