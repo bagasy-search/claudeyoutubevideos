@@ -33,6 +33,18 @@ import crypto from "node:crypto";
 import { execFileSync, spawnSync } from "node:child_process";
 
 process.env.AGNES_QUEUE_REST_MS ??= "20000";
+// ⭐ 15-oct-2026 (tope de 2 h por video). Medido en 12 h: las claves GRATIS dieron 916 "cola llena" y 4 envíos (cvbutter15
+//    lleva 7 h esperando clips con ellas); las STARTER responden en 5-35 min (mediana 21). Por eso, por defecto:
+//    · claves = AGNES_STARTER_KEY_* del .env (las gratis sólo con AG_FREE=1)
+//    · AG_CU=0 AG_SECS=6 AG_SHOTS=5 (lo aprobado 13-oct) y AG_PAR=8 = TODOS los pedidos del video en vuelo a la vez
+//    · AG_MAX_MIN (def 50): pasado el plazo sale con lo hecho y lista lo que falta → esos planos van con FOTO (RELOJ_2H)
+if (process.env.AG_FREE !== "1" && !process.env.AGNES_KEYS) {
+  const envTxt = fs.readFileSync("C:/Users/bauti/Downloads/video2/.env", "utf8");
+  const st = envTxt.split(/\r?\n/).filter((l) => /^AGNES_STARTER_KEY_\d+\s*=/.test(l)).map((l) => l.slice(l.indexOf("=") + 1).trim().replace(/^"|"$/g, "")).filter(Boolean);
+  if (st.length) { process.env.AGNES_KEYS = st.join(","); process.env.AGNES_KEYS_OTRA_PC = ""; }
+}
+process.env.AG_CU ??= "0"; process.env.AG_SECS ??= "6"; process.env.AG_SHOTS ??= "5"; process.env.AG_PAR ??= "8";
+const MAX_MS = Number(process.env.AG_MAX_MIN || 50) * 60e3, T0 = Date.now();
 process.env.AGNES_SPACING_MS ??= "3000";
 const { agnesSubmit, agnesWait, agnesDownload, KEYS } = await import("../factory/lib/agnes_pool.mjs");
 
@@ -146,6 +158,7 @@ if (RAW) { procesar(RAW, pend.slice(0, N)); console.log(`\n=== LISTO · ok ${ok}
 const cola = [...lotes];
 async function trabajador() {
   for (let lote; (lote = cola.shift()); ) {
+    if (Date.now() - T0 > MAX_MS) { cola.unshift(lote); break; }
     const tag = `${SLUG} ms[${lote.map((x) => x.nombre).join(",")}]`;
     const body = { model: "agnes-video-2.5-flash", size: "720P", aspect_ratio: "16:9", seconds: String(SECS), mode: "reference",
       images: lote.map((it) => dataURI(srcImg(it.nombre))), prompt: prompt(tomas(lote)) };
@@ -156,13 +169,21 @@ async function trabajador() {
       fail += lote.length; console.log(`  ✗ ${tag}: ${String(e.message).slice(0, 140)}`); continue;
     }
     console.log(`  → aceptado ${vid} (${lote.length} fotos)`);
-    const w = await agnesWait(vid, key, { model: "agnes-video-2.5-flash", maxMs: 90 * 60e3 });
+    const w = await agnesWait(vid, key, { model: "agnes-video-2.5-flash", maxMs: Math.max(60e3, MAX_MS - (Date.now() - T0)) });
     const raw = path.join(OUT, "_raw", `ms_${vid.slice(-10)}.mp4`);
     if (w.error || !(await agnesDownload(w.url, raw))) { fail += lote.length; console.log(`  ✗ ${vid}: ${w.error || "descarga"}`); continue; }
     procesar(raw, lote);
   }
 }
-await Promise.all(Array.from({ length: Math.min(PAR, lotes.length) }, (_, i) => new Promise((r) => setTimeout(r, i * 5000)).then(trabajador)));
+const plazo = new Promise((r) => setTimeout(r, MAX_MS + 30e3).unref?.());
+await Promise.race([Promise.all(Array.from({ length: Math.min(PAR, lotes.length) }, (_, i) => new Promise((r) => setTimeout(r, i * 5000)).then(trabajador))), plazo]);
+if (Date.now() - T0 > MAX_MS) {
+  const sinClip = pend.filter((it) => !fs.existsSync(path.join(OUT, it.nombre + ".mp4"))).map((it) => it.nombre);
+  fs.writeFileSync(path.join(OUT, "_sin_clip.json"), JSON.stringify(sinClip, null, 1));
+  console.log(`
+⏱ PLAZO de ${MAX_MS / 60e3} min cumplido: ${sinClip.length} planos sin clip → van con FOTO (lista en ${path.join(OUT, "_sin_clip.json")})`);
+  fail += sinClip.length;
+}
 console.log(`\n=== LISTO · ok ${ok} · fail ${fail} ===`);
 console.log(`siguiente paso OBLIGATORIO: node scripts/agnes_qc.mjs ${SLUG} --fix`);
 process.exit(fail ? 1 : 0);
