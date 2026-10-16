@@ -5,7 +5,7 @@ import { AbsoluteFill, Img, OffthreadVideo, staticFile, useCurrentFrame } from "
 import { SERIF, LABEL, HAND, fr, cl, ez, eo, lin, img, C, KCFG, hasAv, avAt, avSrc, Grade, Grain, Mark, Print, Chip, Bed, Stage, FullPhoto, Tick, sp, useT, fit, shadowTxt, type P } from "./core";
 
 // ── CAPÍTULO: número gigante + Loretta (o una foto) dentro de un marco; al final la cámara entra al marco ──
-export const Chapter: P<{ n: string; title: string; sub?: string; label?: string; k: string; av?: boolean }> = ({ a, d, n, title, sub, label = "CHAPTER", k, av = true }) => {
+export const Chapter: P<{ n: string; title: string; sub?: string; label?: string; k: string; av?: boolean }> = ({ a, d, n, title, sub, label = "CAPÍTULO", k, av = true }) => {
   const { f } = useT(a);
   const u = sp(f, 0, 13, 120), t = sp(f, 6, 14, 150), s2 = sp(f, 14, 14, 150);
   const cam = f / d;
@@ -52,7 +52,7 @@ export const StepCard: P<{ head: string; page?: string; steps: { t: number; txt:
           <div key={i} style={{ position: "absolute", left: 1350, top: 560, translate: "-50% -50%",
             transform: `perspective(1600px) rotateY(-8deg) translateX(${(1 - on) * 900 - off * 1300}px) rotateZ(${(i % 2 ? 1.5 : -1.5)}deg)`, opacity: cl(on * 2) * (1 - off) }}>
             <Print k={s.k} w={860} h={550} f={f} mat={15} />
-            <div style={{ position: "absolute", right: -26, top: -34 }}><Chip txt={`STEP ${i + 1}`} size={40} bg={C.lilacDeep} color="#fff" rot={-4} /></div>
+            <div style={{ position: "absolute", right: -26, top: -34 }}><Chip txt={`PASO ${i + 1}`} size={40} bg={C.lilacDeep} color="#fff" rot={-4} /></div>
           </div>
         );
       })}
@@ -82,7 +82,7 @@ export const StepCard: P<{ head: string; page?: string; steps: { t: number; txt:
 };
 
 // ── EL ERROR: foto con círculo rojo + sello + frase (la frase entra en `t`) ──
-export const MistakeStamp: P<{ k: string; txt: string; stamp?: string; cx?: number; cy?: number; t?: number }> = ({ a, d, k, txt, stamp = "THE MISTAKE", cx = 62, cy = 60, t }) => {
+export const MistakeStamp: P<{ k: string; txt: string; stamp?: string; cx?: number; cy?: number; t?: number }> = ({ a, d, k, txt, stamp = "EL ERROR", cx = 62, cy = 60, t }) => {
   const { f, at } = useT(a);
   const s = sp(f, 4, 11, 240), tt = sp(f, t != null ? at(t) : 14, 14, 160);
   return (
@@ -116,7 +116,7 @@ export const CostTag: P<{ price: string; sub: string; k: string; vs?: { price: s
         <div style={{ position: "relative", width: 560, boxSizing: "border-box", padding: "50px 40px 46px", background: C.paper, borderRadius: "60px 18px 18px 18px", boxShadow: "0 60px 100px rgba(0,0,0,0.5)", textAlign: "center",
           clipPath: "polygon(18% 0, 82% 0, 100% 16%, 100% 100%, 0 100%, 0 16%)" }}>
           <div style={{ width: 34, height: 34, borderRadius: 99, background: "#d8cfbd", margin: "-10px auto 14px", boxShadow: "inset 0 3px 6px rgba(0,0,0,0.3)" }} />
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: fit(price, 470, 230, "serif"), lineHeight: 0.9, color: C.lilacDeep, whiteSpace: "nowrap" }}>{price}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: fit(price, 400, 230, "serif"), lineHeight: 0.9, color: C.lilacDeep, whiteSpace: "nowrap" }}>{price}</div>
           <div style={{ fontFamily: HAND, fontSize: fit(sub, 470, 54, "hand", 2), lineHeight: 1.05, color: C.ink, marginTop: 10 }}>{sub}</div>
         </div>
       </div>
@@ -398,7 +398,7 @@ export const Comment: P<{ q: string; opts: { txt: string; t: number }[]; k: stri
         <div style={{ background: "#FFFDF8", borderRadius: 22, padding: "36px 44px", boxShadow: "0 50px 100px rgba(0,0,0,0.5)", display: "flex", gap: 30, alignItems: "flex-start" }}>
           <div style={{ width: 90, height: 90, borderRadius: 99, background: C.lilac, flex: "none" }} />
           <div style={{ flex: 1 }}>
-            <div style={{ fontFamily: LABEL, fontSize: 32, letterSpacing: 2, color: "#8B8275" }}>ADD A COMMENT…</div>
+            <div style={{ fontFamily: LABEL, fontSize: 32, letterSpacing: 2, color: "#8B8275" }}>AGREGA UN COMENTARIO…</div>
             <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: qs, lineHeight: 1.15, color: C.ink, marginTop: 8, minHeight: 70 }}>{q.slice(0, n)}<span style={{ opacity: f % 20 < 10 ? 1 : 0 }}>|</span></div>
           </div>
         </div>
@@ -487,7 +487,7 @@ export const Arc: P<{ src: string; vid?: boolean; cap: string; big?: string; cre
         <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.45) 100%)" }} />
       </div>
       <div style={{ position: "absolute", left: X - W / 2 - 20, bottom: 34, opacity: c, transform: `translateY(${(1 - c) * 30}px) rotate(-1.5deg)`, display: "flex", gap: 14, alignItems: "center" }}>
-        <Chip txt={vid ? "REAL FOOTAGE" : "REAL PHOTO"} size={30} bg={C.red} color="#fff" rot={0} />
+        <Chip txt={vid ? "VIDEO REAL" : "FOTO REAL"} size={30} bg={C.red} color="#fff" rot={0} />
         <Chip txt={cap} size={46} font={HAND} ls={0} rot={0} maxW={W - 240} />
       </div>
       {credit ? <div style={{ position: "absolute", right: 30, bottom: 12, fontFamily: LABEL, fontSize: 20, letterSpacing: 1, color: "rgba(255,255,255,0.55)" }}>{credit}</div> : null}
@@ -573,7 +573,7 @@ export const Flashlight: P<{ k: string; from: [number, number]; to: [number, num
 };
 
 // ── ADELANTO: 1,5-3 s del pago que viene, desaturada → color, chip "COMING UP" ──
-export const Tease: P<{ k: string; txt: string; tag?: string }> = ({ d, k, txt, tag = "COMING UP" }) => {
+export const Tease: P<{ k: string; txt: string; tag?: string }> = ({ d, k, txt, tag = "YA VIENE" }) => {
   const f = useCurrentFrame();
   const u = sp(f, 0, 10, 200), sat = lin(f, 0, 10, 0, 1);
   return (
