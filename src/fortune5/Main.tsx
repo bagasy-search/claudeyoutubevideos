@@ -626,3 +626,6 @@ export const Main: React.FC<{ tm?: number[][]; intro?: boolean }> = ({ tm, intro
     </AbsoluteFill>
   );
 };
+
+// piezas del minuto 1 para los capítulos hechos a mano (src/hand/*)
+export { P, proj, pop, fadeOut, vis, ease, clamp, MapSkins, Country, Region, Tag, Icon, Flag, BigWord, Sticker, Route, Clouds, Portal, SANS, HAND, W, H, geo, FPS };

@@ -588,7 +588,7 @@ export const V5: React.FC = () => {
         );
       })}
       {SC.slice(1).map((s) => <Transition key={s.idx} t={t} at={s.t0} to={s.style} />)}
-      {/* sin subtítulos corridos (16-oct) */}
+      {/* sin subtítulos corridos (pedido del creador, 16-oct) */}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,.3) 100%)", pointerEvents: "none" }} />
     </AbsoluteFill>
   );
