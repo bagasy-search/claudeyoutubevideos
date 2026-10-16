@@ -6,6 +6,7 @@
 //
 //   node scripts/gptimg.mjs <items.json> <outDir>            manda, espera y baja (reanudable)
 //   node scripts/gptimg.mjs <items.json> <outDir> --no-wait  sólo manda; volvé a correrlo para bajar
+//   node scripts/gptimg.mjs <items.json> <outDir> --ya       YA, sincrónico (fotos de los CLIPS: no esperan la cola)
 //
 // items.json = [{ "name": "m012", "prompt": "…", "ref": "public/ref_<slug>_face.png" }, …]
 //   · con `ref` → /v1/images/edits  (planos del presentador)            $0,00207
@@ -28,7 +29,7 @@ const SIZE = "1088x608", QUALITY = "low", LOTE = 150;
 const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const NO_WAIT = process.argv.includes("--no-wait");
 const [itemsPath, outDir] = args;
-if (!itemsPath || !outDir) { console.error("Uso: node scripts/gptimg.mjs <items.json> <outDir> [--no-wait]"); process.exit(1); }
+if (!itemsPath || !outDir) { console.error("Uso: node scripts/gptimg.mjs <items.json> <outDir> [--no-wait | --ya]"); process.exit(1); }
 
 const items = JSON.parse(fs.readFileSync(itemsPath, "utf8"));
 if (!Array.isArray(items) || !items.length) { console.error(`${itemsPath} no trae items`); process.exit(1); }
@@ -80,6 +81,17 @@ console.log(`items: ${items.length} · con presentador (/edits gpt-image): ${con
 console.log(`costo estimado: US$${(conRef.length * 0.00207).toFixed(3)} (sólo las de cara; las sin cara van a agnes = US$0)`);
 
 // ── estado reanudable
+// ⚡ --ya (16-oct, reloj 2 h): las fotos que van a ser CLIPS (y las de apertura) no pueden esperar la cola Batch:
+//    cada clip necesita su foto ANTES (Clyde cs2: clips recién a las 2 h 15 por esperar fotos). Van directo a gpt low
+//    SINCRÓNICO (el doble que Batch: ~US$0,002 más por foto, ~US$0,06 por video). El resto del video sigue por Batch.
+if (process.argv.includes("--ya")) {
+  const { sincronico } = await import("../factory/lib/openai_batch_rapido.mjs");
+  const r = await sincronico(items, outDir);
+  const hechas = items.filter((it) => ["png", "jpg"].some((e) => fs.existsSync(path.join(outDir, `${it.name}.${e}`)))).length;
+  console.log(`
+MEDIDO (--ya, sincrónico): ${hechas}/${items.length} imágenes en ${outDir}` + (r.fallidos?.length ? ` · fallidas ${r.fallidos.length}` : ""));
+  process.exit(hechas === items.length ? 0 : 2);
+}
 const ST = path.join(outDir, "_gptimg_batches.json");
 const estado = fs.existsSync(ST) ? JSON.parse(fs.readFileSync(ST, "utf8")) : { batches: [] };
 const guardar = () => fs.writeFileSync(ST, JSON.stringify(estado, null, 1));
