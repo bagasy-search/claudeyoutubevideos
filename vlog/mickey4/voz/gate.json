@@ -1,0 +1,155 @@
+{
+ "b000": {
+  "file": "b000_t1.wav",
+  "gap": 1,
+  "ratio": 0.975,
+  "dur": 61.34,
+  "esperado": 65.46,
+  "cps": 13.87,
+  "ok": true,
+  "intentos": 1
+ },
+ "b001": {
+  "file": "b001_t1.wav",
+  "gap": 1,
+  "ratio": 0.977,
+  "dur": 58.62,
+  "esperado": 63.85,
+  "cps": 14.16,
+  "ok": true,
+  "intentos": 1
+ },
+ "b002": {
+  "file": "b002_t1.wav",
+  "gap": 1,
+  "ratio": 0.983,
+  "dur": 66.91,
+  "esperado": 67.54,
+  "cps": 13.12,
+  "ok": true,
+  "intentos": 1
+ },
+ "b003": {
+  "file": "b003_t1.wav",
+  "gap": 0,
+  "ratio": 0.982,
+  "dur": 65.52,
+  "esperado": 67.69,
+  "cps": 13.43,
+  "ok": true,
+  "intentos": 1
+ },
+ "b004": {
+  "file": "b004_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 64.24,
+  "esperado": 68.15,
+  "cps": 13.79,
+  "ok": true,
+  "intentos": 1
+ },
+ "b005": {
+  "file": "b005_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 66.35,
+  "esperado": 68.92,
+  "cps": 13.5,
+  "ok": true,
+  "intentos": 1
+ },
+ "b006": {
+  "file": "b006_t3.wav",
+  "gap": 4,
+  "ratio": 0.975,
+  "dur": 60.95,
+  "esperado": 62.38,
+  "cps": 13.31,
+  "ok": true,
+  "intentos": 5,
+  "aprobado_a_mano": "falso positivo ASR (n\u00fameros)"
+ },
+ "b007": {
+  "file": "b007_t1.wav",
+  "gap": 0,
+  "ratio": 0.981,
+  "dur": 53.8,
+  "esperado": 58.08,
+  "cps": 14.03,
+  "ok": true,
+  "intentos": 1
+ },
+ "b008": {
+  "file": "b008_t1.wav",
+  "gap": 4,
+  "ratio": 0.926,
+  "dur": 60.0,
+  "esperado": 64.92,
+  "cps": 14.07,
+  "ok": true,
+  "intentos": 5,
+  "aprobado_a_mano": "falso positivo ASR (n\u00fameros)"
+ },
+ "b009": {
+  "file": "b009_t1.wav",
+  "gap": 1,
+  "ratio": 0.964,
+  "dur": 66.89,
+  "esperado": 66.08,
+  "cps": 12.84,
+  "ok": true,
+  "intentos": 1
+ },
+ "b010": {
+  "file": "b010_t1.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 67.74,
+  "esperado": 68.0,
+  "cps": 13.05,
+  "ok": true,
+  "intentos": 1
+ },
+ "b011": {
+  "file": "b011_t1.wav",
+  "gap": 1,
+  "ratio": 0.97,
+  "dur": 58.07,
+  "esperado": 60.15,
+  "cps": 13.47,
+  "ok": true,
+  "intentos": 1
+ },
+ "b012": {
+  "file": "b012_t1.wav",
+  "gap": 1,
+  "ratio": 0.965,
+  "dur": 61.22,
+  "esperado": 68.69,
+  "cps": 14.59,
+  "ok": true,
+  "intentos": 1
+ },
+ "b013": {
+  "file": "b013_t3.wav",
+  "gap": 4,
+  "ratio": 0.873,
+  "dur": 68.53,
+  "esperado": 67.62,
+  "cps": 12.83,
+  "ok": true,
+  "intentos": 5,
+  "aprobado_a_mano": "falso positivo ASR (n\u00fameros)"
+ },
+ "b014": {
+  "file": "b014_t1.wav",
+  "gap": 0,
+  "ratio": 0.969,
+  "dur": 47.5,
+  "esperado": 51.54,
+  "cps": 14.1,
+  "ok": true,
+  "intentos": 1
+ }
+}
