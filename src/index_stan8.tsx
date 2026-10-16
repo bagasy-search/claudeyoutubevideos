@@ -7,7 +7,7 @@ import EDL from "./stan8/edl.json";
 import AV from "./stan8/avwin.json";
 import * as H from "./stan8/heroes";
 
-setKit({ imgDir: "img/stan8", grain: "img/stan8/grain.png", qr: "qr.jpg", cover: "book_cover.png", clipDir: "broll/stan8", avDir: "av/stan8", av: (AV as any).win });
+setKit({ imgDir: "img/stan8", ext: "jpg", grain: "img/stan8/grain.png", qr: "qr.jpg", cover: "book_cover.png", clipDir: "broll/stan8", avDir: "av/stan8", av: (AV as any).win });
 export const Full = makePlayer(EDL as any, H as any);
 const TOTAL_S = (EDL as any).end as number;
 
