@@ -24,6 +24,7 @@
 //    sesión el proceso queda vivo media hora sin imprimir una línea.
 import fs from "node:fs";
 import path from "node:path";
+import { conCupo } from "../factory/lib/agnes_cupo.mjs"; // 16-oct: tope global de pedidos a agnes entre TODAS las sesiones
 
 const [LIST, OUT0] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 if (!LIST || !OUT0) { console.error("uso: node scripts/agnes_img.mjs <lista.json> <outDir> [--conc N]"); process.exit(1); }
@@ -98,21 +99,22 @@ async function uno(it, intento = 0) {
       : { response_format: "url" },
   };
   try {
-    const r = await fetch(`${BASE}/images/generations`, {
-      method: "POST",
-      headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" },
-      body: JSON.stringify(body),
-      signal: AbortSignal.timeout(180000),
+    const buf = await conCupo("img", async () => {
+      const r = await fetch(`${BASE}/images/generations`, {
+        method: "POST",
+        headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+        signal: AbortSignal.timeout(180000),
+      });
+      const txt = await r.text();
+      if (!r.ok) throw new Error(`${r.status} ${txt.slice(0, 160)}`);
+      const d = JSON.parse(txt);
+      const u = d?.data?.[0]?.url;
+      const b64 = d?.data?.[0]?.b64_json;
+      if (b64) return Buffer.from(b64, "base64");
+      if (u) return Buffer.from(await (await fetch(u, { signal: AbortSignal.timeout(120000) })).arrayBuffer());
+      throw new Error("respuesta sin imagen: " + txt.slice(0, 160));
     });
-    const txt = await r.text();
-    if (!r.ok) throw new Error(`${r.status} ${txt.slice(0, 160)}`);
-    const d = JSON.parse(txt);
-    const u = d?.data?.[0]?.url;
-    const b64 = d?.data?.[0]?.b64_json;
-    let buf;
-    if (b64) buf = Buffer.from(b64, "base64");
-    else if (u) buf = Buffer.from(await (await fetch(u, { signal: AbortSignal.timeout(120000) })).arrayBuffer());
-    else throw new Error("respuesta sin imagen: " + txt.slice(0, 160));
     if (buf.length < 20000) throw new Error("imagen sospechosamente chica (" + buf.length + " B)");
     fs.writeFileSync(path.join(OUT, it.name + ".png"), buf);
     hechos++;
@@ -120,8 +122,8 @@ async function uno(it, intento = 0) {
   } catch (e) {
     const msg = String(e.message || e);
     // 429 = el cupo es por CUENTA, no por clave: esperar y reintentar, no rotar y machacar
-    if (intento < 4 && /429|rate|timeout|ETIMEDOUT|ECONNRESET|50\d/i.test(msg)) {
-      await new Promise((s) => setTimeout(s, 8000 * (intento + 1)));
+    if (intento < 8 && /429|rate|timeout|ETIMEDOUT|ECONNRESET|50\d/i.test(msg)) {
+      await new Promise((s) => setTimeout(s, Math.min(60000, 8000 * (intento + 1)) + Math.random() * 4000));
       return uno(it, intento + 1);
     }
     fallidos++; errores.push(`${it.name}: ${msg.slice(0, 140)}`);

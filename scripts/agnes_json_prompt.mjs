@@ -16,6 +16,7 @@
 //   · cada persona con rasgos concretos (piel, edad, pelo) → sin eso agnes elige otra etnia
 //   · cero vocabulario de cámara de cine; luz y color mundanos
 import fs from "node:fs";
+import { conCupo } from "../factory/lib/agnes_cupo.mjs"; // 16-oct: tope global (el 429 daba "sin_respuesta" = rechazo falso)
 
 const args = process.argv.slice(2);
 const opt = (k, d) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : d; };
@@ -75,15 +76,17 @@ async function expandir(it) {
   for (let intento = 0; intento < 6; intento++) {
     const key = KEYS[(ki++) % KEYS.length];
     try {
-      const r = await fetch(API, {
-        method: "POST", headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" },
-        signal: AbortSignal.timeout(120_000),
-        body: JSON.stringify({ model: MODEL, temperature: 0.3, messages: [
-          { role: "system", content: SYS },
-          { role: "user", content: `Short description${it.ref ? " (the main person's face comes from a reference image)" : ""}:\n${it.prompt}` },
-        ] }),
+      const [r, txt] = await conCupo("chat", async () => {
+        const r = await fetch(API, {
+          method: "POST", headers: { Authorization: "Bearer " + key, "Content-Type": "application/json" },
+          signal: AbortSignal.timeout(120_000),
+          body: JSON.stringify({ model: MODEL, temperature: 0.3, messages: [
+            { role: "system", content: SYS },
+            { role: "user", content: `Short description${it.ref ? " (the main person's face comes from a reference image)" : ""}:\n${it.prompt}` },
+          ] }),
+        });
+        return [r, await r.text()];
       });
-      const txt = await r.text();
       if (!r.ok) throw new Error(`${r.status} ${txt.slice(0, 120)}`);
       const m = (JSON.parse(txt).choices?.[0]?.message?.content || "").match(/\{[\s\S]*\}/);
       if (!m) throw new Error("sin JSON");
