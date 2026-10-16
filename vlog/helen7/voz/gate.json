@@ -1,0 +1,184 @@
+{
+ "b000": {
+  "file": "b000_t4.wav",
+  "gap": 0,
+  "ratio": 0.99,
+  "dur": 53.78,
+  "esperado": 51.47,
+  "cps": 14.36,
+  "ok": true,
+  "intentos": 4
+ },
+ "b001": {
+  "file": "b001_t4.wav",
+  "gap": 5,
+  "ratio": 0.963,
+  "dur": 61.94,
+  "esperado": 55.4,
+  "cps": 13.42,
+  "ok": true,
+  "intentos": 5,
+  "aceptado": "ASR escribe precios/n\u00fameros en d\u00edgitos"
+ },
+ "b002": {
+  "file": "b002_t2.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 58.31,
+  "esperado": 59.13,
+  "cps": 15.21,
+  "ok": true,
+  "intentos": 2
+ },
+ "b003": {
+  "file": "b003_t2.wav",
+  "gap": 0,
+  "ratio": 0.989,
+  "dur": 61.2,
+  "esperado": 58.53,
+  "cps": 14.35,
+  "ok": true,
+  "intentos": 2
+ },
+ "b004": {
+  "file": "b004_t2.wav",
+  "gap": 1,
+  "ratio": 0.977,
+  "dur": 62.97,
+  "esperado": 58.87,
+  "cps": 14.02,
+  "ok": true,
+  "intentos": 2
+ },
+ "b005": {
+  "file": "b005_t2.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 61.8,
+  "esperado": 56.47,
+  "cps": 13.71,
+  "ok": true,
+  "intentos": 2
+ },
+ "b006": {
+  "file": "b006_t2.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 57.18,
+  "esperado": 54.13,
+  "cps": 14.2,
+  "ok": true,
+  "intentos": 2
+ },
+ "b007": {
+  "file": "b007_t2.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 54.06,
+  "esperado": 51.13,
+  "cps": 14.19,
+  "ok": true,
+  "intentos": 2
+ },
+ "b008": {
+  "file": "b008_t2.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 59.73,
+  "esperado": 57.6,
+  "cps": 14.47,
+  "ok": true,
+  "intentos": 2
+ },
+ "b009": {
+  "file": "b009_t2.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 59.5,
+  "esperado": 56.8,
+  "cps": 14.32,
+  "ok": true,
+  "intentos": 2
+ },
+ "b010": {
+  "file": "b010_t2.wav",
+  "gap": 0,
+  "ratio": 0.982,
+  "dur": 61.43,
+  "esperado": 53.8,
+  "cps": 13.14,
+  "ok": true,
+  "intentos": 2
+ },
+ "b011": {
+  "file": "b011_t2.wav",
+  "gap": 1,
+  "ratio": 0.972,
+  "dur": 63.46,
+  "esperado": 58.8,
+  "cps": 13.9,
+  "ok": true,
+  "intentos": 2
+ },
+ "b012": {
+  "file": "b012_t2.wav",
+  "gap": 1,
+  "ratio": 0.975,
+  "dur": 61.75,
+  "esperado": 56.0,
+  "cps": 13.6,
+  "ok": true,
+  "intentos": 2
+ },
+ "b013": {
+  "file": "b013_t2.wav",
+  "gap": 0,
+  "ratio": 0.972,
+  "dur": 62.05,
+  "esperado": 59.33,
+  "cps": 14.34,
+  "ok": true,
+  "intentos": 2
+ },
+ "b014": {
+  "file": "b014_t2.wav",
+  "gap": 0,
+  "ratio": 0.972,
+  "dur": 66.04,
+  "esperado": 59.67,
+  "cps": 13.55,
+  "ok": true,
+  "intentos": 2
+ },
+ "b015": {
+  "file": "b015_t2.wav",
+  "gap": 1,
+  "ratio": 0.991,
+  "dur": 59.99,
+  "esperado": 55.13,
+  "cps": 13.78,
+  "ok": true,
+  "intentos": 2
+ },
+ "b016": {
+  "file": "b016_t3.wav",
+  "gap": 5,
+  "ratio": 0.909,
+  "dur": 60.63,
+  "esperado": 59.0,
+  "cps": 14.6,
+  "ok": true,
+  "intentos": 5,
+  "aceptado": "ASR escribe precios/n\u00fameros en d\u00edgitos"
+ },
+ "b017": {
+  "file": "b017_t2.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 55.83,
+  "esperado": 53.4,
+  "cps": 14.35,
+  "ok": true,
+  "intentos": 2
+ }
+}
