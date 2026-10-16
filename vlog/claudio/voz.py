@@ -20,7 +20,7 @@ ap.add_argument("--max-try", type=int, default=5); a = ap.parse_args()
 CPS = a.cps
 OUT = Path(R + f"vlog/{S}/voz"); OUT.mkdir(parents=True, exist_ok=True)
 V = json.load(open(R + "fish_voices.json", encoding="utf-8"))[a.voice]
-refs = [ReferenceAudio(audio=open(R + x["wav"], "rb").read(), text=x["text"]) for x in (V.get("refs") or [V])]  # refs CRUDAS, sin filtros
+refs = [] if V.get("reference_id") else [ReferenceAudio(audio=open(R + x["wav"], "rb").read(), text=x["text"]) for x in (V.get("refs") or [V])]  # refs CRUDAS, sin filtros
 blocks = FF.split_blocks(open(R + f"guiones/{S}_voz.txt", encoding="utf-8").read(), a.block_chars)
 only = [int(x) for x in a.only.split(",") if x != ""]
 todo = only or list(range(len(blocks)))
@@ -35,7 +35,7 @@ def tts(i, k):
     p = OUT / f"b{i:03d}_t{k}.wav"
     for intento in range(4):
         try:
-            req = TTSRequest(text=blocks[i], references=refs, format="wav", sample_rate=44100, temperature=a.temperature, top_p=a.top_p, **({"prosody": Prosody(speed=a.speed)} if a.speed != 1.0 else {}))
+            req = TTSRequest(text=blocks[i], **({"reference_id": V["reference_id"]} if V.get("reference_id") else {"references": refs}), format="wav", sample_rate=44100, temperature=a.temperature, top_p=a.top_p, **({"prosody": Prosody(speed=a.speed)} if a.speed != 1.0 else {}))
             with open(p, "wb") as f:
                 for ch in session.tts(req, backend=FF.BACKEND): f.write(ch)
             FF.fix_header(p)

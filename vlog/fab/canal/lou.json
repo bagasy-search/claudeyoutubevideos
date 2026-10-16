@@ -1,0 +1,24 @@
+{
+ "canal": "Lou's Diner Secrets",
+ "idioma": "en",
+ "protagonista": "lou",
+ "voz": "lou_pub",
+ "cps": 15.2,
+ "avatar_pct": [
+  24,
+  31
+ ],
+ "prohibidas": [
+  "\bfree\b",
+  "\blinks?\b",
+  "https?://",
+  "\bwww\b",
+  "\\.com\b",
+  "\\$\\s?\\d",
+  "\bcostco\b",
+  "\bwalmart\b",
+  "\bkroger\b",
+  "\bsubscribe\b",
+  "\bbrunch spot\b"
+ ]
+}
