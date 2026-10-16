@@ -72,7 +72,7 @@ export const Cuaderno: P<{ bed: string; head: Beat; lines: Beat[] }> = ({ a, d, 
           {Array.from({ length: 11 }).map((_, i) => <div key={i} style={{ position: "absolute", left: 40, top: 40 + i * 72, width: 34, height: 34, borderRadius: 99, background: "#3a2f26", boxShadow: "inset 0 3px 6px rgba(0,0,0,0.6)" }} />)}
           <Escrito f={f} at={at(head.t)} dur={22} style={{ position: "absolute", left: 170, top: 60, fontFamily: HAND, fontWeight: 700, fontSize: 84, color: GUINDA }}>{head.txt}</Escrito>
           {lines.map((l, i) => (
-            <Escrito key={i} f={f} at={at(l.t)} dur={16} style={{ position: "absolute", left: 200, top: 232 + i * 160, fontFamily: HAND, fontWeight: 700, fontSize: 104, color: AÑIL }}>— {l.txt}</Escrito>
+            <Escrito key={i} f={f} at={at(l.t)} dur={16} style={{ position: "absolute", left: 200, top: 232 + i * 160, fontFamily: HAND, fontWeight: 700, fontSize: Math.min(104, 2400 / Math.max(...lines.map((x) => x.txt.length + 2))), color: AÑIL }}>— {l.txt}</Escrito>
           ))}
         </div>
       </div>
@@ -140,7 +140,7 @@ export const Mapa: P<{ bed: string; main: string; t: number; note?: Beat }> = ({
         <svg width={1200} height={780} style={{ position: "absolute", left: 0, top: 0 }}>
           <path d={path} fill="rgba(62,106,54,0.13)" stroke={NOPAL} strokeWidth={6} strokeLinejoin="round" strokeDasharray={5200} strokeDashoffset={5200 * (1 - draw)} />
           <ellipse cx={lago.x} cy={lago.y} rx={34} ry={18} fill="rgba(47,74,122,0.55)" opacity={draw} />
-          {Object.entries(PUEBLOS).map(([n, c]) => { const p = px(...c); const me = n === main; return (
+          {Object.entries(PUEBLOS).filter(([n, c]) => n === main || Math.hypot(px(...c).x - m.x, px(...c).y - m.y) > 150).map(([n, c]) => { const p = px(...c); const me = n === main; return (
             <g key={n} opacity={cl(draw * 1.4 - 0.3)}>
               <circle cx={p.x} cy={p.y} r={me ? 12 : 8} fill={me ? CHILE : TINTA} />
               <text x={p.x + 16} y={p.y - 12} fontFamily={HAND} fontWeight={700} fontSize={me ? 0 : 40} fill={TINTA}>{n}</text>
@@ -180,13 +180,13 @@ export const Jornada: P<{ bed: string; stops: { t: number; h: string; txt: strin
       </svg>
       {stops.map((s, i) => {
         if (f < at(s.t)) return null;
-        const v = sp(f, at(s.t), 12, 140), x = 330 + i * (1260 / Math.max(1, stops.length - 1));
+        const v = sp(f, at(s.t), 12, 140), x = 260 + i * (1400 / Math.max(1, stops.length - 1));
         return (
           <div key={i} style={{ position: "absolute", left: x, top: 800, translate: "-50% -50%", opacity: cl(v * 1.5), transform: `translateY(${(1 - v) * 60}px)` }}>
             <div style={{ width: 30, height: 30, borderRadius: 99, background: i === cur ? CHILE : CREMA, margin: "0 auto", boxShadow: sombra }} />
             {s.h ? <div style={{ position: "absolute", bottom: 46, left: "50%", translate: "-50% 0", fontFamily: SERIF, fontWeight: 900, fontSize: 76, color: CREMA, textShadow: txtSh }}>{s.h}</div> : null}
             <div style={{ position: "absolute", top: 48, left: "50%", translate: "-50% 0", ...kraft, padding: "6px 24px 10px", borderRadius: 4, boxShadow: sombra,
-              fontFamily: HAND, fontWeight: 700, fontSize: 50, color: TINTA, whiteSpace: "nowrap", transform: `rotate(${i % 2 ? 2 : -2}deg)` }}>{s.txt}</div>
+              fontFamily: HAND, fontWeight: 700, fontSize: 44, color: TINTA, whiteSpace: "nowrap", transform: `rotate(${i % 2 ? 2 : -2}deg)` }}>{s.txt}</div>
           </div>
         );
       })}
