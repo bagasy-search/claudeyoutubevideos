@@ -4,8 +4,8 @@
 // Dos familias: LABEL (Oswald: lo impreso, diales, stickers, tickets) y HAND (Caveat: tiza, lápiz graso, fichas de la cocina).
 // Paleta: crema enlozado, negro hierro, costra marrón, llama azul, rojo del gorro, amarillo de oferta.
 import React from "react";
-import { AbsoluteFill, Img } from "remotion";
-import { useT, sp, cl, ez, eo, img, LABEL, HAND, Mark, Tick, P } from "../lkit/core";
+import { AbsoluteFill, Img, useCurrentFrame } from "remotion";
+import { useT, sp, cl, ez, eo, img, LABEL, HAND, Mark, Tick, P, fit, lin, FullPhoto, Bed, Stage, Chip } from "../lkit/core";
 
 const RED = "#B3262B", INK = "#1F1A16", CREAM = "#F3ECDD", YEL = "#F2C230", IRON = "#1B1B1D", CRUST = "#6B3A1E", FLAME = "#2E6BD6", GREEN = "#2F7D4A", PEN = "#2A3F6B", GRAY = "#8C8A86";
 const SH = "0 34px 70px rgba(0,0,0,0.5), 0 8px 16px rgba(0,0,0,0.3)";
@@ -41,9 +41,9 @@ const Write: React.FC<{ txt: string; u: number; size: number; color: string; fon
 );
 const wr = (f: number, at: number, dur = 18) => ez((f - at) / dur);
 // sello de goma (borde doble, entra grande y golpea)
-const Stamp: React.FC<{ txt: string; u: number; color?: string; size?: number; rot?: number }> = ({ txt, u, color = RED, size = 120, rot = -12 }) => (
+const Stamp: React.FC<{ txt: string; u: number; color?: string; size?: number; rot?: number; solid?: boolean }> = ({ txt, u, color = RED, size = 120, rot = -12, solid }) => (
   <div style={{ display: "inline-block", opacity: cl(u * 3), transform: `rotate(${rot}deg) scale(${2.2 - 1.2 * u})`, border: `10px double ${color}`, borderRadius: 14, padding: `${size * 0.06}px ${size * 0.3}px`,
-    fontFamily: LABEL, fontWeight: 700, fontSize: size, letterSpacing: size * 0.06, color, lineHeight: 1.05, mixBlendMode: "multiply", whiteSpace: "nowrap", background: "rgba(255,255,255,0.08)" }}>{txt}</div>
+    fontFamily: LABEL, fontWeight: 700, fontSize: size, letterSpacing: size * 0.06, color, lineHeight: 1.05, mixBlendMode: solid ? "normal" : "multiply", whiteSpace: "nowrap", background: solid ? "rgba(250,246,238,0.94)" : "rgba(255,255,255,0.08)", boxShadow: solid ? "0 18px 30px rgba(0,0,0,0.45)" : undefined }}>{txt}</div>
 );
 // tarjeta de cocina (ficha con renglones azules y margen rojo)
 const Card: React.FC<{ w: number; h: number; rot?: number; children?: React.ReactNode; style?: React.CSSProperties }> = ({ w, h, rot = 0, children, style }) => (
@@ -317,7 +317,7 @@ export const HandsOff: P<{ k: string; t: number; no: number[] }> = ({ a, d, k, t
       </div>
       {no.map((n, i) => f >= at(n) ? (
         <div key={i} style={{ position: "absolute", left: 760 + i * 120, top: 200 + i * 240 }}>
-          <Stamp txt={labs[i] || "don't"} u={sp(f, at(n), 9, 260)} size={110} rot={-8 + i * 7} color={i === 2 ? RED : "#E8E2D6"} />
+          <Stamp txt={labs[i] || "don't"} u={sp(f, at(n), 9, 260)} size={100} rot={-8 + i * 7} color={RED} solid />
         </div>
       ) : null)}
     </AbsoluteFill>
@@ -728,6 +728,71 @@ export const CorkBoard: P<{ items: { t: number; txt: string }[]; pre: number; pr
           </div>
         );
       })}
+    </AbsoluteFill>
+  );
+};
+
+// ── versiones propias de 4 piezas del kit (Kinetic, Comment, Pop, PricePill): el kit usa serif/sans; acá sólo LABEL + HAND y la paleta del local ──
+export const Kinetic: P<{ k: string; vid?: boolean; words: [string, number][]; size?: number }> = ({ a, d, k, vid, words, size = 104 }) => {
+  const { f, at } = useT(a);
+  const G: [string, number][][] = [[]];
+  words.forEach((w) => { G[G.length - 1].push(w); if (/[.!?]$/.test(w[0])) G.push([]); });
+  const gs = G.filter((g) => g.length);
+  const gi = gs.reduce((m, g, i) => (f >= at(g[0][1]) - 2 ? i : m), 0);
+  const sz = Math.min(size, fit(gs[gi].map((w) => w[0]).join(" ").toUpperCase(), 1680, size, "label", 2, 2));
+  return (
+    <AbsoluteFill>
+      <FullPhoto k={k} vid={vid} f={f} d={d} o="50% 40%" />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(10,8,6,0) 40%, rgba(10,8,6,0.7) 100%)" }} />
+      <div style={{ position: "absolute", left: 120, right: 120, bottom: 120, display: "flex", flexWrap: "wrap", gap: `0 ${sz * 0.24}px` }}>
+        {gs[gi].map(([w, t], i) => { const u = sp(f, at(t), 14, 200);
+          return <div key={gi + "_" + i} style={{ fontFamily: LABEL, fontWeight: 700, fontSize: sz, lineHeight: 1.05, letterSpacing: 2, textTransform: "uppercase", color: i === gs[gi].length - 1 ? YEL : "#FBF8F1", opacity: u, transform: `translateY(${(1 - u) * 50}px)`, textShadow: "0 8px 30px rgba(0,0,0,0.65)" }}>{w}</div>; })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+export const Comment: P<{ q: string; opts: { txt: string; t: number }[]; k: string }> = ({ a, d, q, opts, k }) => {
+  const { f, at } = useT(a);
+  const c = sp(f, 0, 14, 120);
+  const n = Math.floor(lin(f, 6, 6 + q.length * 0.9, 0, q.length, (x) => x));
+  const qs = fit(q, 1090, 66, "hand", 2);
+  const os = Math.min(60, fit(opts.map((o) => o.txt).join("    "), 1700 - opts.length * 60, 60, "label", 1, 3));
+  return (
+    <Stage f={f} T={d} drift={0.5}>
+      <Bed k={k} f={f} T={d} dim={0.5} />
+      <div style={{ position: "absolute", left: 960, top: 360, translate: "-50% -50%", width: 1300, opacity: c, transform: `translateY(${(1 - c) * 100}px)` }}>
+        <div style={{ background: "#FBF8F1", borderRadius: 22, padding: "36px 44px", boxShadow: "0 50px 100px rgba(0,0,0,0.5)", display: "flex", gap: 30, alignItems: "flex-start" }}>
+          <div style={{ width: 90, height: 90, borderRadius: 99, background: RED, flex: "none" }} />
+          <div style={{ flex: 1 }}>
+            <div style={{ fontFamily: LABEL, fontSize: 32, letterSpacing: 2, color: "#8B8275" }}>ADD A COMMENT…</div>
+            <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: qs, lineHeight: 1.15, color: INK, marginTop: 8, minHeight: 70 }}>{q.slice(0, n)}<span style={{ opacity: f % 20 < 10 ? 1 : 0 }}>|</span></div>
+          </div>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 40, right: 40, top: 660, display: "flex", justifyContent: "center", gap: 40 }}>
+        {opts.map((o, i) => { const u = sp(f, at(o.t), 12, 200); return <div key={i} style={{ opacity: u, transform: `translateY(${(1 - u) * 50}px) scale(${0.8 + 0.2 * u})` }}><Chip txt={o.txt} size={os} rot={[-3, 2, -1][i % 3]} bg={i === 0 ? RED : "#FBF8F1"} color={i === 0 ? "#fff" : INK} /></div>; })}
+      </div>
+    </Stage>
+  );
+};
+export const Pop: React.FC<{ txt: string; d: number }> = ({ txt, d }) => {
+  const f = useCurrentFrame();
+  const u = sp(f, 0, 8, 260), o = lin(f, d - 5, d, 0, 1);
+  return (
+    <div style={{ position: "absolute", left: 60, right: 60, top: 690, textAlign: "center", opacity: cl(u * 2) * (1 - o), transform: `scale(${1.35 - 0.35 * u + 0.04 * f / Math.max(1, d)})` }}>
+      <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: fit(txt.toUpperCase(), 1700, 170, "label", 1, 4), whiteSpace: "nowrap", color: "#FBF8F1", letterSpacing: 4, textTransform: "uppercase", textShadow: "0 8px 40px rgba(0,0,0,0.75), 0 2px 6px rgba(0,0,0,0.6)" }}>{txt}</span>
+      <div style={{ margin: "0 auto", marginTop: -2, width: 220 * eo(cl((f - 3) / 7)), height: 10, borderRadius: 6, background: YEL }} />
+    </div>
+  );
+};
+export const PricePill: React.FC<{ txt: string; d: number }> = ({ txt, d }) => {
+  const f = useCurrentFrame();
+  const u = sp(f, 0, 10, 220), o = lin(f, d - 5, d, 0, 1);
+  const sz = Math.min(64, fit(txt, 900, 64, "label", 1, 2, 30));
+  return (
+    <AbsoluteFill style={{ alignItems: "center", justifyContent: "flex-end", paddingBottom: 150 }}>
+      <div style={{ opacity: cl(u * 2) * (1 - o), transform: `scale(${1.3 - 0.3 * u}) rotate(-2deg)`, fontFamily: LABEL, fontWeight: 700, fontSize: sz, letterSpacing: 2, color: INK, background: YEL,
+        padding: `${sz * 0.12}px ${sz * 0.5}px`, boxShadow: "0 14px 30px rgba(0,0,0,0.45)", whiteSpace: "nowrap" }}>{txt}</div>
     </AbsoluteFill>
   );
 };
