@@ -138,13 +138,40 @@ const cortarToma = (raw, a, b, dst, alInicio = false) => {
     "-an", "-r", "30", "-c:v", "libx264", "-crf", "19", "-preset", "veryfast", "-pix_fmt", "yuv420p", dst]);
 };
 
+// 15-oct (reloj 2 h + escalar): la cámara lenta (minterpolate, ~34 s de CPU por toma) se hace en el FARM (.github/workflows/slowmo.yml)
+// con el MISMO filtro; la laptop sólo detecta las tomas. SLOWMO_FARM=0 → todo local como antes. Lo que el farm no devuelva se corta en local.
+const FARM = process.env.SLOWMO_FARM !== "0", REPO_GH = "bagasy-search/claudeyoutubevideos";
+const tramo = (a, b, alInicio) => { const mid = (a + b) / 2, len = Math.min(USE, b - a - 0.2); return { s: alInicio ? a + 0.1 : Math.max(a + 0.1, mid - len / 2), len }; };
+async function cortarEnFarm(url, ts) {
+  const id = `${SLUG}-${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`, hechos = new Set();
+  const cuts = ts.map((t) => { const { s, len } = tramo(t.a, t.b, t.alInicio); return { n: t.it.nombre + (t.cu ? "_cu" : ""), s: +s.toFixed(3), len: +len.toFixed(3) }; });
+  try {
+    execFileSync("gh", ["workflow", "run", "slowmo.yml", "-R", REPO_GH, "--ref", "main", "-f", "job=" + JSON.stringify({ id, slug: SLUG, url, slow: SLOW, cuts })], { stdio: "pipe" });
+    const T = Date.now();
+    while (Date.now() - T < 10 * 60e3 && hechos.size < cuts.length) {
+      await new Promise((r) => setTimeout(r, 20e3));
+      let names = [];
+      try { names = JSON.parse(execFileSync("gh", ["release", "view", `slowmo-${SLUG}`, "-R", REPO_GH, "--json", "assets", "-q", "[.assets[].name]"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] })); } catch {}
+      for (const c of cuts) {
+        const a = `${id}__${c.n}.mp4`;
+        if (hechos.has(c.n) || !names.includes(a)) continue;
+        try { execFileSync("gh", ["release", "download", `slowmo-${SLUG}`, "-R", REPO_GH, "-p", a, "-O", path.join(OUT, `${c.n}.mp4`), "--clobber"], { stdio: "pipe" });
+              if (fs.statSync(path.join(OUT, `${c.n}.mp4`)).size > 10_000) hechos.add(c.n); } catch {}
+      }
+    }
+  } catch (e) { console.log(`  ⚠ farm slowmo: ${String(e.message).slice(0, 120)} → corto en local`); }
+  console.log(`  ⚡ farm: ${hechos.size}/${cuts.length} tomas en cámara lenta`);
+  return hechos;
+}
+
 let ok = 0, fail = 0;
-const procesar = (raw, lote) => {
+const procesar = async (raw, lote, url) => {
   const { tomas: ts, nsegs } = asignar(raw, lote);
   console.log(`  ${path.basename(raw)}: ${nsegs} tomas detectadas → ${ts.length} clips`);
+  const delFarm = FARM && url && ts.length ? await cortarEnFarm(url, ts) : new Set();
   for (const t of ts) {
     const nombre = t.it.nombre + (t.cu ? "_cu" : ""), dst = path.join(OUT, `${nombre}.mp4`);
-    try { cortarToma(raw, t.a, t.b, dst, t.alInicio); } catch (e) { fail++; console.log(`  ✗ corte ${nombre}: ${String(e.message).slice(0, 100)}`); continue; }
+    try { if (!delFarm.has(nombre)) cortarToma(raw, t.a, t.b, dst, t.alInicio); } catch (e) { fail++; console.log(`  ✗ corte ${nombre}: ${String(e.message).slice(0, 100)}`); continue; }
     reg[nombre] = { raw, desde: +t.a.toFixed(3), hasta: +t.b.toFixed(3), parecido: t.sim, primerPlano: t.cu,
       fps: 24, slow: SLOW, use: USE, multishot: true, pres: false, gente: !!t.it.gente, person: !!(t.it.person || t.it.gente),
       motion: t.cu ? (t.it.cu || "detalle") : t.it.motion, at: new Date().toISOString() };
@@ -153,7 +180,7 @@ const procesar = (raw, lote) => {
   guardarReg();
 };
 
-if (RAW) { procesar(RAW, pend.slice(0, N)); console.log(`\n=== LISTO · ok ${ok} · fail ${fail} ===`); process.exit(0); }
+if (RAW) { await procesar(RAW, pend.slice(0, N)); console.log(`\n=== LISTO · ok ${ok} · fail ${fail} ===`); process.exit(0); }
 
 const cola = [...lotes];
 async function trabajador() {
@@ -172,7 +199,7 @@ async function trabajador() {
     const w = await agnesWait(vid, key, { model: "agnes-video-2.5-flash", maxMs: Math.max(60e3, MAX_MS - (Date.now() - T0)) });
     const raw = path.join(OUT, "_raw", `ms_${vid.slice(-10)}.mp4`);
     if (w.error || !(await agnesDownload(w.url, raw))) { fail += lote.length; console.log(`  ✗ ${vid}: ${w.error || "descarga"}`); continue; }
-    procesar(raw, lote);
+    await procesar(raw, lote, w.url);
   }
 }
 const plazo = new Promise((r) => setTimeout(r, MAX_MS + 30e3).unref?.());
