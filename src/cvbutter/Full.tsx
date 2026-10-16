@@ -12,7 +12,7 @@ const YEL = "#F5C518";
 type Shot = { a: number; b: number; k: string; av?: boolean; z?: "w" | "c"; off?: number; clipDur?: number };
 type Word = { a: number; b: number; txt: string; hi?: string; pos?: "l" | "r" | "c"; y?: number };
 type Panel = { a: number; b: number; head: string; rows: { t: number; txt: string; dim?: boolean }[] };
-const PL = P as unknown as { end: number; shots: Shot[]; words: Word[]; panel: Panel };
+const PL = P as unknown as { end: number; shots: Shot[]; words: Word[]; panel: Panel; audio?: string };
 
 const ShotV: React.FC<{ s: Shot }> = ({ s }) => {
   const f = useCurrentFrame(), d = fr(s.b - s.a), u = f / Math.max(1, d);
@@ -84,6 +84,6 @@ export const Full: React.FC = () => (
     {PL.shots.map((s, i) => <Sequence key={i} from={fr(s.a)} durationInFrames={fr(s.b) - fr(s.a)}><ShotV s={s} /></Sequence>)}
     <Sequence from={fr(PL.panel.a)} durationInFrames={fr(PL.panel.b) - fr(PL.panel.a)}><PanelV p={PL.panel} /></Sequence>
     {PL.words.map((w, i) => <Sequence key={"w" + i} from={fr(w.a)} durationInFrames={fr(w.b) - fr(w.a)}><Words w={w} /></Sequence>)}
-    <Audio src={staticFile("cvbutter/voz.wav")} />
+    <Audio src={staticFile(PL.audio || "cvbutter/voz.wav")} />
   </AbsoluteFill>
 );
