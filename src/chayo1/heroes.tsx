@@ -4,9 +4,15 @@
 // cada golpe en SU palabra (t = segundo absoluto de words.json). Familias: Fraunces (serif) + Caveat (mano).
 import React from "react";
 import { AbsoluteFill, Img } from "remotion";
-import { Bed, Print, Mark, camAt, camStyle, sp, useT, ez, cl, img, SERIF, HAND, P } from "../lkit/core";
+import { Bed, Mark, camAt, camStyle, sp, useT, ez, cl, img, SERIF, HAND, P } from "../lkit/core";
 
 const GUINDA = "#7A1F2B", BARRO = "#B5562A", MAIZ = "#E9B23A", NOPAL = "#3E6A36", CREMA = "#F4E8CF", TINTA = "#2A211B", CHILE = "#B3261E";
+// foto con paspartú, quieta (sin el brillo que barre del Print del kit: cero efectos)
+const Foto: React.FC<{ k: string; w: number; h: number; f: number; mat?: number }> = ({ k, w, h, f, mat = 16 }) => (
+  <div style={{ background: "#FFFDF8", padding: `${mat}px ${mat}px ${mat * 1.25}px`, borderRadius: 3, boxShadow: "0 40px 80px rgba(20,10,4,0.5), 0 6px 14px rgba(0,0,0,0.25)" }}>
+    <div style={{ width: w, height: h, overflow: "hidden" }}><Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.04 + 0.03 * Math.sin(f / 50)})` }} /></div>
+  </div>
+);
 const sombra = "0 30px 60px rgba(20,10,4,0.55), 0 6px 14px rgba(0,0,0,0.3)";
 const txtSh = "0 4px 18px rgba(0,0,0,0.7)";
 type Beat = { t: number; txt: string };
@@ -142,7 +148,7 @@ export const Pizarra: P<{ bed: string; head: string; rows: { t: number; txt: str
             const u = cl((f - at(r.t)) / 18);
             if (u <= 0) return null;
             return (
-              <div key={i} style={{ fontFamily: HAND, fontSize: 70, lineHeight: 1.25, color: "rgba(244,240,228,0.95)", whiteSpace: "nowrap",
+              <div key={i} style={{ fontFamily: HAND, fontSize: Math.min(70, 1720 / Math.max(1, r.txt.length + 2)), lineHeight: 1.25, color: "rgba(244,240,228,0.95)", whiteSpace: "nowrap",
                 clipPath: `inset(0 ${100 - u * 100}% 0 0)`, textShadow: "0 0 2px rgba(255,255,255,0.35)" }}>· {r.txt}</div>
             );
           })}
@@ -154,7 +160,7 @@ export const Pizarra: P<{ bed: string; head: string; rows: { t: number; txt: str
         return (
           <div key={i} style={{ position: "absolute", left: 1450, top: 540, translate: "-50% -50%", opacity: on ? cl(u * 1.6) : 1 - cl((f - at(rows[cur].t)) / 10),
             transform: `translateY(${(1 - u) * 160}px) rotate(${i % 2 ? 3 : -3}deg)` }}>
-            <Print k={r.k} w={720} h={480} f={f} mat={16} />
+            <Foto k={r.k} w={720} h={480} f={f} mat={16} />
           </div>
         );
       })}
@@ -198,7 +204,7 @@ export const Contra: P<{ bed: string; no: { k: string; txt: string; t: number };
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Bed k={bed} f={f} T={Math.max(1, d)} dim={0.6} blur={12} />
       <div style={{ position: "absolute", left: 500, top: 520, translate: "-50% -50%", opacity: cl(nu * 1.6), transform: `rotate(-3deg) scale(${1 - 0.06 * yu})` }}>
-        <Print k={no.k} w={720} h={470} f={f} filter={yu > 0 ? `saturate(${1 - 0.6 * yu})` : undefined} />
+        <Foto k={no.k} w={720} h={470} f={f} filter={yu > 0 ? `saturate(${1 - 0.6 * yu})` : undefined} />
         <div style={{ textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 68, color: CREMA, textShadow: txtSh, marginTop: 14 }}>{no.txt}</div>
         {xu > 0 ? (
           <svg width={720} height={470} style={{ position: "absolute", left: 16, top: 16 }}>
@@ -209,7 +215,7 @@ export const Contra: P<{ bed: string; no: { k: string; txt: string; t: number };
       </div>
       {f >= at(yes.t) ? (
         <div style={{ position: "absolute", left: 1400, top: 520, translate: "-50% -50%", opacity: cl(yu * 1.6), transform: `translateX(${(1 - yu) * 300}px) rotate(3deg) scale(${1.02})` }}>
-          <Print k={yes.k} w={760} h={500} f={f} />
+          <Foto k={yes.k} w={760} h={500} f={f} />
           <div style={{ textAlign: "center", fontFamily: HAND, fontWeight: 700, fontSize: 72, color: MAIZ, textShadow: txtSh, marginTop: 14 }}>{yes.txt}</div>
           <div style={{ position: "absolute", right: -30, top: -40, width: 120, height: 120, borderRadius: 60, background: NOPAL, boxShadow: sombra, display: "flex", alignItems: "center", justifyContent: "center",
             transform: `scale(${sp(f, at(yes.t) + 8, 10, 160)})` }}>
@@ -248,7 +254,7 @@ export const Orden: P<{ bed: string; head: string; stops: { t: number; min: stri
         return (
           <div key={i} style={{ position: "absolute", left: xs[i], top: 250, translate: "-50% 0", transformOrigin: "50% 0", transform: `rotate(${sw}deg) translateY(${(1 - u) * -120}px)`, opacity: cl(u * 2) }}>
             <div style={{ width: 34, height: 70, background: "#C9A26B", borderRadius: 6, margin: "0 auto -20px", position: "relative", zIndex: 2, boxShadow: "0 6px 10px rgba(0,0,0,0.4)" }} />
-            <Print k={s.k} w={460} h={330} f={f} mat={14} />
+            <Foto k={s.k} w={460} h={330} f={f} mat={14} />
             <div style={{ display: "flex", justifyContent: "center", marginTop: 16 }}>
               <div style={{ background: [CHILE, BARRO, NOPAL][i % 3], color: "#fff", fontFamily: SERIF, fontWeight: 900, fontSize: 54, padding: "6px 26px", borderRadius: 40, boxShadow: sombra }}>{s.min}</div>
             </div>
@@ -268,7 +274,7 @@ export const Cuenta: P<{ bed: string; k: string; rows: { t: number; txt: string;
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Bed k={bed} f={f} T={Math.max(1, d)} dim={0.5} blur={12} />
       <div style={{ position: "absolute", left: 1380, top: 520, translate: "-50% -50%", transform: `rotate(4deg) translateY(${(1 - pu) * 200}px)`, opacity: cl(pu * 2) }}>
-        <Print k={k} w={760} h={520} f={f} />
+        <Foto k={k} w={760} h={520} f={f} />
       </div>
       <div style={{ ...kraft, position: "absolute", left: 110, top: 90, width: 760, minHeight: 860, padding: "50px 60px", boxSizing: "border-box", boxShadow: sombra,
         transform: `rotate(-2deg) translateX(${(1 - pu) * -260}px)`, opacity: cl(pu * 2), clipPath: "polygon(0 1%, 4% 0, 9% 1.2%, 15% 0.2%, 22% 1%, 30% 0, 40% 1.3%, 52% 0.3%, 63% 1.1%, 74% 0, 85% 1%, 93% 0.2%, 100% 1%, 100% 100%, 0 100%)" }}>
@@ -358,6 +364,53 @@ export const Postal: P<{ bed: string; k: string; place: string; beats: Beat[] }>
           </div>
         );
       })}
+    </AbsoluteFill>
+  );
+};
+
+// 11 · COMENTARIO: notita de papel de estraza clavada en el adobe; la pregunta se escribe sola y las respuestas entran en su palabra
+export const Comentario: P<{ bed: string; q: string; opts: Beat[] }> = ({ a, d, bed, q, opts }) => {
+  const { f, at } = useT(a);
+  const u = sp(f, 2, 14, 110);
+  const n = Math.floor(cl((f - 10) / (q.length * 0.8)) * q.length);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden" }}>
+      <Bed k={bed} f={f} T={Math.max(1, d)} dim={0.5} blur={10} />
+      <div style={{ position: "absolute", left: 960, top: 400, translate: "-50% -50%", width: 1300, opacity: cl(u * 2), transform: `rotate(${-1.5 + (1 - u) * 6}deg) translateY(${(1 - u) * -120}px)` }}>
+        <div style={{ ...kraft, padding: "50px 70px 60px", boxShadow: sombra, position: "relative", borderRadius: 3 }}>
+          <div style={{ position: "absolute", left: "50%", top: -18, width: 36, height: 36, borderRadius: 99, background: CHILE, boxShadow: "0 4px 8px rgba(0,0,0,0.5)" }} />
+          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 64, color: GUINDA }}>Cuéntame en los comentarios…</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 800, fontSize: 72, lineHeight: 1.12, color: TINTA, marginTop: 14, minHeight: 170 }}>{q.slice(0, n)}</div>
+        </div>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 720, display: "flex", justifyContent: "center", gap: 70 }}>
+        {opts.map((o, i) => {
+          const v = sp(f, at(o.t), 12, 160);
+          if (f < at(o.t)) return <div key={i} style={{ width: 0 }} />;
+          return <div key={i} style={{ background: i ? CREMA : GUINDA, color: i ? TINTA : CREMA, fontFamily: HAND, fontWeight: 700, fontSize: 78, padding: "10px 46px 16px", borderRadius: 8,
+            boxShadow: sombra, opacity: cl(v * 1.5), transform: `translateY(${(1 - v) * 60}px) rotate(${i ? 3 : -3}deg)` }}>{o.txt}</div>;
+        })}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+// 12 · TURBIO: la foto del caldo que salió mal, nítida; un sello de goma rojo baja con la pregunta y la causa se escribe a mano en t
+export const Turbio: P<{ bed: string; k: string; stamp: string; txt: string; t: number }> = ({ a, d, k, stamp, txt, t }) => {
+  const { f, at } = useT(a);
+  const s = sp(f, 4, 11, 240), tt = sp(f, at(t), 14, 160);
+  return (
+    <AbsoluteFill style={{ overflow: "hidden", background: TINTA }}>
+      <AbsoluteFill style={{ transform: `scale(${1.06 + 0.08 * f / Math.max(1, d)})`, transformOrigin: "62% 60%" }}>
+        <Img src={img(k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </AbsoluteFill>
+      <AbsoluteFill style={{ background: "linear-gradient(90deg, rgba(20,10,5,0.66) 0%, rgba(20,10,5,0) 58%)" }} />
+      <div style={{ position: "absolute", left: 110, top: 200, transform: `rotate(-6deg) scale(${2.2 - 1.2 * s})`, opacity: cl(s * 3), transformOrigin: "0 50%" }}>
+        <div style={{ border: `10px solid ${CHILE}`, borderRadius: 14, padding: "4px 34px 12px", fontFamily: SERIF, fontWeight: 900, fontSize: 92, color: CHILE,
+          background: "rgba(244,232,207,0.9)", boxShadow: sombra, whiteSpace: "nowrap" }}>{stamp}</div>
+      </div>
+      <div style={{ position: "absolute", left: 130, top: 420, width: 820, opacity: cl(tt * 1.5), transform: `translateY(${(1 - tt) * 30}px)`,
+        fontFamily: HAND, fontWeight: 700, fontSize: 88, lineHeight: 1.05, color: CREMA, textShadow: txtSh }}>{txt}</div>
     </AbsoluteFill>
   );
 };

@@ -55,7 +55,8 @@ export const ItemCard: P<{ n: number; of?: number; word?: string; name: string; 
 
 // ── CONTADOR "ITEM n OF N" (PISTA, no plano): arriba a la derecha durante TODA la sección de cada cosa.
 //    counts = [{a, b, n}] en segundos absolutos; hide = tramos donde se esconde (p. ej. sobre un ItemCard). Se monta UNA vez sobre todo el video. ──
-export const ItemCounter: React.FC<{ counts: { a: number; b: number; n: number }[]; of: number; word?: string; hide?: [number, number][] }> = ({ counts, of, word = "ITEM", hide = [] }) => {
+export const ItemCounter: React.FC<{ counts: { a: number; b: number; n: number }[]; of: number; word?: string; hide?: [number, number][]; ofw?: string; look?: { font?: string; bg?: string; bd?: string; num?: string } }> = ({ counts, of, word = "ITEM", hide = [], ofw = "OF", look = {} }) => {
+  const LF = look.font === "hand" ? HAND : LABEL, big = look.font === "hand" ? 1.35 : 1;
   const f = useCurrentFrame(), t = f / 30;
   const cur = counts.find((c) => t >= c.a && t < c.b);
   if (!cur) return null;
@@ -67,10 +68,10 @@ export const ItemCounter: React.FC<{ counts: { a: number; b: number; n: number }
   if (op <= 0.01) return null;
   return (
     <div style={{ position: "absolute", right: 70, top: 56, opacity: op, transform: `translateY(${prev ? 0 : (1 - k) * -24}px)`, display: "flex", alignItems: "baseline", gap: 14,
-      background: "rgba(14,10,22,0.78)", border: "2px solid #e0b25a", borderRadius: 14, padding: "10px 24px", boxShadow: "0 6px 18px rgba(0,0,0,0.45)" }}>
-      <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 4, color: "#f6ecd6" }}>{word}</span>
-      <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, lineHeight: 1, color: "#f3c76a", display: "inline-block", transform: `scale(${1.5 - 0.5 * k})` }}>{cur.n}</span>
-      <span style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 34, letterSpacing: 4, color: "#f6ecd6" }}>OF {of}</span>
+      background: look.bg || "rgba(14,10,22,0.78)", border: `2px solid ${look.bd || "#e0b25a"}`, borderRadius: 14, padding: "10px 24px", boxShadow: "0 6px 18px rgba(0,0,0,0.45)" }}>
+      <span style={{ fontFamily: LF, fontWeight: 700, fontSize: 34 * big, letterSpacing: look.font === "hand" ? 1 : 4, color: "#f6ecd6" }}>{word}</span>
+      <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, lineHeight: 1, color: look.num || "#f3c76a", display: "inline-block", transform: `scale(${1.5 - 0.5 * k})` }}>{cur.n}</span>
+      {ofw ? <span style={{ fontFamily: LF, fontWeight: 700, fontSize: 34 * big, letterSpacing: look.font === "hand" ? 1 : 4, color: "#f6ecd6" }}>{ofw} {of}</span> : null}
     </div>
   );
 };
