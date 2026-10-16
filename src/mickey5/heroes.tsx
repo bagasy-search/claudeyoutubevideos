@@ -59,7 +59,7 @@ const Tube: React.FC<{ x: number; y: number; h: number; v: number; lo: number; h
 };
 
 // 1 · pecho vs muslo: dos termómetros que suben a 160 y 175; la llave marca los 20 grados de diferencia
-export const TempGap: P<{ breast: number; thigh: number; gap: number; bed?: string }> = ({ a, d, breast, thigh, gap, bed = "n_tex_linen" }) => {
+export const TempGap: P<{ breast: number; thigh: number; gap: number; bed?: string }> = ({ a, d, breast, thigh, gap, bed = "tex_linen" }) => {
   const { f, at } = useT(a);
   const vb = 40 + 120 * ez((f - at(breast)) / 30), vt = 40 + 135 * ez((f - at(thigh)) / 34), g = cl((f - at(gap)) / 14);
   return shell(<>
@@ -75,7 +75,7 @@ export const TempGap: P<{ breast: number; thigh: number; gap: number; bed?: stri
 };
 
 // 2 · etiqueta naranja de balanza de mercado (peso · $/lb · total) pegada sobre la foto; opcional sello "WASTED"
-export const PriceSticker: P<{ k: string; item: string; lb: string; per: string; total: string; t1: number; t2: number; waste?: number; bed?: string }> = ({ a, d, k, item, lb, per, total, t1, t2, waste, bed = "n_tex_kraft" }) => {
+export const PriceSticker: P<{ k: string; item: string; lb: string; per: string; total: string; t1: number; t2: number; waste?: number; bed?: string }> = ({ a, d, k, item, lb, per, total, t1, t2, waste, bed = "tex_kraft" }) => {
   const { f, at } = useT(a);
   const u = sp(f, at(t1) - 4, 12, 160), w = waste != null ? sp(f, at(waste), 11, 200) : 0;
   return shell(<>
@@ -96,7 +96,7 @@ export const PriceSticker: P<{ k: string; item: string; lb: string; per: string;
 };
 
 // 3 · el botón pop-up: dibujo grande del botón que salta en su palabra + aviso "pops ~180°F · breast done at 160°"
-export const PopButton: P<{ k: string; pop: number; note: number; bed?: string }> = ({ a, d, k, pop, note, bed = "n_tex_linen" }) => {
+export const PopButton: P<{ k: string; pop: number; note: number; bed?: string }> = ({ a, d, k, pop, note, bed = "tex_linen" }) => {
   const { f, at } = useT(a);
   const p = sp(f, at(pop), 8, 260), n = cl((f - at(note)) / 16);
   return shell(<>
@@ -116,7 +116,7 @@ export const PopButton: P<{ k: string; pop: number; note: number; bed?: string }
 };
 
 // 4 · capítulo: plato de la cena visto de arriba, cubiertos, el número pintado en el centro y el truco en la servilleta
-export const PlateChapter: P<{ n: number; title: string; k: string; sub?: string; t?: number; big?: boolean; bed?: string }> = ({ a, d, n, title, k, sub, t, big, bed = "n_tex_linen" }) => {
+export const PlateChapter: P<{ n: number; title: string; k: string; sub?: string; t?: number; big?: boolean; bed?: string }> = ({ a, d, n, title, k, sub, t, big, bed = "tex_linen" }) => {
   const { f, at } = useT(a);
   const u = sp(f, 0, 13, 130), r = (1 - u) * -90;
   return shell(<>
@@ -140,7 +140,7 @@ export const PlateChapter: P<{ n: number; title: string; k: string; sub?: string
 };
 
 // 5 · álbum de recortes: foto vieja con esquineros, fecha estampada y epígrafe a mano
-export const Scrapbook: P<{ k: string; caption: string; date: string; t: number; bed?: string }> = ({ a, d, k, caption, date, t, bed = "n_tex_kraft" }) => {
+export const Scrapbook: P<{ k: string; caption: string; date: string; t: number; bed?: string }> = ({ a, d, k, caption, date, t, bed = "tex_kraft" }) => {
   const { f, at } = useT(a);
   return shell(<>
     <Tex k={bed} f={f} T={d} />
@@ -152,7 +152,7 @@ export const Scrapbook: P<{ k: string; caption: string; date: string; t: number;
 };
 
 // 6 · lupa que recorre la etiqueta: cada palabra prohibida aparece subrayada; veredicto en sello
-export const LabelScan: P<{ k: string; lines: string[]; ts: number[]; verdict: number; verdict_txt: string; bed?: string }> = ({ a, d, k, lines, ts, verdict, verdict_txt, bed = "n_tex_steel" }) => {
+export const LabelScan: P<{ k: string; lines: string[]; ts: number[]; verdict: number; verdict_txt: string; bed?: string }> = ({ a, d, k, lines, ts, verdict, verdict_txt, bed = "tex_steel" }) => {
   const { f, at } = useT(a);
   const cur = ts.reduce((m, t, i) => (f >= at(t) ? i : m), 0), ly = 300 + cur * 150;
   const v = sp(f, at(verdict), 11, 200);
@@ -172,7 +172,7 @@ export const LabelScan: P<{ k: string; lines: string[]; ts: number[]; verdict: n
 };
 
 // 7 · guía de tamaño: 1½ lb por persona, la franja 12-14 lb resaltada, más de 18 = no, y "dos chicos"
-export const SizeGuide: P<{ per: number; sweet: number; past: number; two: number; bed?: string }> = ({ a, d, per, sweet, past, two, bed = "n_tex_kraft" }) => {
+export const SizeGuide: P<{ per: number; sweet: number; past: number; two: number; bed?: string }> = ({ a, d, per, sweet, past, two, bed = "tex_kraft" }) => {
   const { f, at } = useT(a);
   const X = (lb: number) => 220 + (lb - 8) * 100, s = cl((f - at(sweet)) / 14), p = cl((f - at(past)) / 14), w = sp(f, at(two), 12, 170);
   return shell(<>
@@ -189,7 +189,7 @@ export const SizeGuide: P<{ per: number; sweet: number; past: number; two: numbe
 };
 
 // 8 · calendario de noviembre: la regla, los 3 días y la cuenta de domingo a jueves con tachones
-export const ThawCalendar: P<{ rule: number; three: number; sun: number; thu: number; bed?: string }> = ({ a, d, rule, three, sun, thu, bed = "n_tex_kraft" }) => {
+export const ThawCalendar: P<{ rule: number; three: number; sun: number; thu: number; bed?: string }> = ({ a, d, rule, three, sun, thu, bed = "tex_kraft" }) => {
   const { f, at } = useT(a);
   const days = ["SUN", "MON", "TUE", "WED", "THU"], u = sp(f, 0, 14, 120);
   return shell(<>
@@ -213,7 +213,7 @@ export const ThawCalendar: P<{ rule: number; three: number; sun: number; thu: nu
 };
 
 // 9 · cucharadas de sal: 1 cucharada por 4-5 lb → tres cucharadas para el pavo de 14
-export const SpoonMath: P<{ one: number; per: number; bird: number; three: number; bed?: string }> = ({ a, d, one, per, bird, three, bed = "n_tex_wood" }) => {
+export const SpoonMath: P<{ one: number; per: number; bird: number; three: number; bed?: string }> = ({ a, d, one, per, bird, three, bed = "tex_wood" }) => {
   const { f, at } = useT(a);
   const spoon = (x: number, y: number, u: number) => <div style={{ position: "absolute", left: x, top: y, opacity: cl(u * 2), transform: `translateY(${(1 - u) * -120}px) rotate(-18deg)` }}>
     <svg width={340} height={160}><ellipse cx={90} cy={80} rx={84} ry={58} fill="#cfd3d7" stroke="#8d949a" strokeWidth={6} /><ellipse cx={90} cy={74} rx={64} ry={40} fill="#FBFBF8" />
@@ -229,7 +229,7 @@ export const SpoonMath: P<{ one: number; per: number; bird: number; three: numbe
 };
 
 // 10 · el truco: pavo visto de arriba (dibujo) con las patas calentándose (naranja) y el pecho bajo hielo (azul); "-10 a -15°"
-export const IceMap: P<{ warm: number; cold: number; diff: number; together: number; bed?: string }> = ({ a, d, warm, cold, diff, together, bed = "n_tex_steel" }) => {
+export const IceMap: P<{ warm: number; cold: number; diff: number; together: number; bed?: string }> = ({ a, d, warm, cold, diff, together, bed = "tex_steel" }) => {
   const { f, at } = useT(a);
   const w = cl((f - at(warm)) / 20), c = cl((f - at(cold)) / 20), df = sp(f, at(diff), 12, 160), tg = sp(f, at(together), 12, 160);
   const pulse = 0.85 + 0.15 * Math.sin(f / 9);
@@ -256,7 +256,7 @@ export const IceMap: P<{ warm: number; cold: number; diff: number; together: num
 };
 
 // 11 · corte del horno: el fondo arde, la rejilla baja, la flecha manda las patas atrás; el dial pasa de 425 a 325
-export const OvenMap: P<{ legs: number; hot: number; t425: number; t325: number; bed?: string }> = ({ a, d, legs, hot, t425, t325, bed = "n_tex_steel" }) => {
+export const OvenMap: P<{ legs: number; hot: number; t425: number; t325: number; bed?: string }> = ({ a, d, legs, hot, t425, t325, bed = "tex_steel" }) => {
   const { f, at } = useT(a);
   const h = cl((f - at(hot)) / 16), l = eo((f - at(legs)) / 18);
   const temp = f < at(t425) ? 0 : f < at(t325) ? 425 : Math.round(425 - 100 * ez((f - at(t325)) / 20));
@@ -283,7 +283,7 @@ export const OvenMap: P<{ legs: number; hot: number; t425: number; t325: number;
 };
 
 // 12 · foto con los dos puntos del termómetro: anillo que late + lectura; al final "OUT IT COMES"
-export const ProbePoints: P<{ k: string; pts: { t: number; x: number; y: number; txt: string; val: string }[]; done: number; bed?: string }> = ({ a, d, k, pts, done, bed = "n_tex_wood" }) => {
+export const ProbePoints: P<{ k: string; pts: { t: number; x: number; y: number; txt: string; val: string }[]; done: number; bed?: string }> = ({ a, d, k, pts, done, bed = "tex_wood" }) => {
   const { f, at } = useT(a);
   const dn = sp(f, at(done), 12, 170);
   return shell(<>
@@ -302,7 +302,7 @@ export const ProbePoints: P<{ k: string; pts: { t: number; x: number; y: number;
 };
 
 // 13 · curva del reposo: la temperatura del pecho sigue subiendo de 160 a 165 sobre papel cuadriculado
-export const CarryChart: P<{ t0: number; climb: number; top: number; bed?: string }> = ({ a, d, t0, climb, top, bed = "n_tex_kraft" }) => {
+export const CarryChart: P<{ t0: number; climb: number; top: number; bed?: string }> = ({ a, d, t0, climb, top, bed = "tex_kraft" }) => {
   const { f, at } = useT(a);
   const pr = ez((f - at(climb)) / 40), u = sp(f, 0, 14, 120);
   const X = (m: number) => 260 + m * 30, Y = (t: number) => 820 - (t - 150) * 36;
@@ -324,7 +324,7 @@ export const CarryChart: P<{ t0: number; climb: number; top: number; bed?: strin
 };
 
 // 14 · tarjeta de la salsa de mamá (kraft, cordel) + foto; renglones a mano en su palabra
-export const GravyCard: P<{ k: string; lines: B[]; bed?: string }> = ({ a, d, k, lines, bed = "n_tex_wood" }) => {
+export const GravyCard: P<{ k: string; lines: B[]; bed?: string }> = ({ a, d, k, lines, bed = "tex_wood" }) => {
   const { f, at } = useT(a);
   const u = sp(f, 0, 15, 110);
   return shell(<>
@@ -342,7 +342,7 @@ export const GravyCard: P<{ k: string; lines: B[]; bed?: string }> = ({ a, d, k,
 };
 
 // 15 · trinchado en 3 pasos: tres fotos numeradas en fila que llegan en su palabra
-export const CarveSteps: P<{ steps: { k: string; txt: string; t: number }[]; bed?: string }> = ({ a, d, steps, bed = "n_tex_wood" }) => {
+export const CarveSteps: P<{ steps: { k: string; txt: string; t: number }[]; bed?: string }> = ({ a, d, steps, bed = "tex_wood" }) => {
   const { f, at } = useT(a);
   return shell(<>
     <Tex k={bed} f={f} T={d} />
@@ -356,7 +356,7 @@ export const CarveSteps: P<{ steps: { k: string; txt: string; t: number }[]; bed
 };
 
 // 16 · notas adhesivas en la puerta de la heladera: problema arriba, arreglo abajo, con imán
-export const StickyFix: P<{ notes: { t: number; prob: string; fix: string }[]; bed?: string }> = ({ a, d, notes, bed = "n_tex_fridge" }) => {
+export const StickyFix: P<{ notes: { t: number; prob: string; fix: string }[]; bed?: string }> = ({ a, d, notes, bed = "tex_fridge" }) => {
   const { f, at } = useT(a);
   return shell(<>
     <Tex k={bed} f={f} T={d} />
@@ -375,7 +375,7 @@ export const StickyFix: P<{ notes: { t: number; prob: string; fix: string }[]; b
 };
 
 // 17 · balanza de dos platos: $74 seco contra $32 que alimenta a diez; se inclina hacia el bueno
-export const Balance: P<{ left: { txt: string; sub: string; t: number }; right: { txt: string; sub: string; t: number }; plate: number; bed?: string }> = ({ a, d, left, right, plate, bed = "n_tex_wood" }) => {
+export const Balance: P<{ left: { txt: string; sub: string; t: number }; right: { txt: string; sub: string; t: number }; plate: number; bed?: string }> = ({ a, d, left, right, plate, bed = "tex_wood" }) => {
   const { f, at } = useT(a);
   const lu = sp(f, at(left.t) - 4, 12, 150), ru = sp(f, at(right.t), 12, 150), tilt = -9 * ez((f - at(right.t) - 6) / 20), pu = sp(f, at(plate), 12, 170);
   const pan = (x: number, c: { txt: string; sub: string }, u: number, col: string, dy: number) => <div style={{ position: "absolute", left: x - 230, top: 470 + dy, width: 460, textAlign: "center" }}>
@@ -396,7 +396,7 @@ export const Balance: P<{ left: { txt: string; sub: string; t: number }; right: 
 };
 
 // 18 · bloc amarillo de renglones: el resumen numerado se escribe en birome
-export const LegalPad: P<{ head: string; items: B[]; num: number; bed?: string }> = ({ a, d, head, items, num, bed = "n_tex_wood" }) => {
+export const LegalPad: P<{ head: string; items: B[]; num: number; bed?: string }> = ({ a, d, head, items, num, bed = "tex_wood" }) => {
   const { f, at } = useT(a);
   const u = sp(f, 0, 14, 120);
   return shell(<>
@@ -415,7 +415,7 @@ export const LegalPad: P<{ head: string; items: B[]; num: number; bed?: string }
 };
 
 // 19 · cierre: nota en la heladera con imán + foto de Mickey; la pregunta del canal
-export const FridgeNote: P<{ k: string; q: string; t: number; sub: number; sub_txt: string; bed?: string }> = ({ a, d, k, q, t, sub, sub_txt, bed = "n_tex_fridge" }) => {
+export const FridgeNote: P<{ k: string; q: string; t: number; sub: number; sub_txt: string; bed?: string }> = ({ a, d, k, q, t, sub, sub_txt, bed = "tex_fridge" }) => {
   const { f, at } = useT(a);
   const u = sp(f, Math.max(0, at(t) - 6), 13, 130);
   return shell(<>
