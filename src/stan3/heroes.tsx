@@ -707,8 +707,9 @@ export const CorkBoard: P<{ items: { t: number; txt: string }[]; pre: number; pr
   const all = [...pre_items.map((txt) => ({ txt, t: -1 })), ...items];
   const slot = (i: number) => { const r = i < 4 ? 0 : 1; const c = i < 4 ? i : i - 4; return { x: (r ? 300 : 100) + c * 440, y: 140 + r * 440 }; };
   const cols = [RED, FLAME, GREEN, YEL];
+  const push = 1.0 + 0.06 * f / Math.max(1, d);
   return (
-    <AbsoluteFill style={{ overflow: "hidden" }}>
+    <AbsoluteFill style={{ overflow: "hidden", transform: `scale(${push}) translateX(${-12 * f / Math.max(1, d)}px)`, transformOrigin: "50% 45%" }}>
       <AbsoluteFill style={{ ...texBg("t_kraft"), filter: "sepia(0.35) saturate(1.4) brightness(0.85)" }} />
       <AbsoluteFill style={{ backgroundImage: "radial-gradient(circle, rgba(70,40,20,0.35) 0 2px, transparent 3px)", backgroundSize: "13px 11px", opacity: 0.6 }} />
       <AbsoluteFill style={{ boxShadow: "inset 0 0 0 40px #6E4A2C, inset 0 0 0 46px #3e2815, inset 0 0 120px rgba(0,0,0,0.5)" }} />
