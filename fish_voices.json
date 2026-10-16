@@ -331,5 +331,11 @@
   "wav": "fish_refs/stan_butcher.wav",
   "text": "Fifty-two years I stood behind this counter. And I'll tell you something the steakhouse downtown doesn't want you to know. That sixty dollar steak? You can make it better at home, tonight, with a cheap cut and one old trick my father taught me. Stay with me, I'll show you.",
   "language": "en"
+ },
+ "lou_pub": {
+  "reference_id": "697a707402bf47e9940b95a5f85fbe94",
+  "language": "en",
+  "backend": "s2.1-pro-free",
+  "nota": "Lou: modelo PUBLICO Fish 'Grandpa' directo como reference_id (refs borradas). Ganó prueba ciega 15-oct-2026."
  }
 }
