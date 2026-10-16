@@ -20,7 +20,7 @@ const madera: React.CSSProperties = {
 // texto que se escribe solo (de izquierda a derecha) a partir de `at`, en `dur` cuadros
 const Escrito: React.FC<{ f: number; at: number; dur?: number; children: React.ReactNode; style?: React.CSSProperties }> = ({ f, at, dur = 18, children, style }) => {
   const u = cl((f - at) / dur);
-  return <div style={{ ...style, clipPath: `inset(-20% ${100 - u * 100}% -20% -5%)`, whiteSpace: "nowrap" }}>{children}</div>;
+  return <div style={{ ...style, clipPath: `inset(-20% ${100 - u * 110}% -20% -5%)`, whiteSpace: "nowrap" }}>{children}</div>;
 };
 
 // 1 · MESA: la mesa del rancho vista desde arriba; cada plato de barro entra en SU palabra con su letrerito
@@ -302,7 +302,13 @@ export const Rinde: P<{ bed: string; one: string; t1: number; n: number; many: s
         return (
           <div key={i} style={{ position: "absolute", left: x, top: y, translate: "-50% -50%", transform: `scale(${v})` }}>
             <div style={{ width: 190, height: 190, borderRadius: "50%", background: `radial-gradient(circle, ${BARRO} 62%, #7A3416 100%)`, boxShadow: sombra, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <div style={{ width: 140, height: 140, borderRadius: "50%", overflow: "hidden" }}><Img src={img(bed)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: "scale(1.6)" }} /></div>
+              <svg width={150} height={150} viewBox="0 0 150 150">
+                <circle cx={75} cy={75} r={66} fill="#F3E6C8" />
+                {Array.from({ length: 16 }).map((_, j) => <circle key={j} cx={75 + 58 * Math.cos((j / 16) * 2 * Math.PI)} cy={75 + 58 * Math.sin((j / 16) * 2 * Math.PI)} r={3.2} fill={j % 2 ? "#2F6B3A" : "#8E2A2A"} />)}
+                <circle cx={75} cy={75} r={46} fill="#E8D3A0" stroke="#C9A86A" strokeWidth={2} />
+                <ellipse cx={70} cy={72} rx={30} ry={26} fill="#D9B46A" />
+                {[[60, 64], [78, 80], [82, 62], [64, 84]].map(([x, y2], j) => <circle key={j} cx={x} cy={y2} r={3} fill="#A9783A" opacity={0.7} />)}
+              </svg>
             </div>
           </div>
         );
