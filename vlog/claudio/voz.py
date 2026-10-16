@@ -46,12 +46,25 @@ def tts(i, k):
             print(f"  b{i:03d}_t{k} error: {str(e)[:160]}"); time.sleep(6)
     return None
 
+# 16-oct: el guion escribe los números en palabras y Whisper los devuelve en cifras ("one hundred sixty" → "160",
+# "two hundred and five" → "205"): eso daba hueco 3-4 y frenaba la voz (mickey6/mickey7 aprobados a mano). Las palabras de
+# número que el ASR reemplazó por cifras no cuentan como texto comido. Vale para inglés y castellano.
+NUMW = set("""zero oh one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen
+eighteen nineteen twenty thirty forty fifty sixty seventy eighty ninety hundred thousand million and a half quarter quarters
+point percent degrees degree inch inches pound pounds dollars dollar cents ounce ounces minute minutes hour hours
+cero uno una dos tres cuatro cinco seis siete ocho nueve diez once doce trece catorce quince dieciseis diecisiete dieciocho
+diecinueve veinte veinti veintiuno veintidos veintitres veinticuatro veinticinco treinta cuarenta cincuenta sesenta setenta
+ochenta noventa cien ciento cientos doscientos trescientos cuatrocientos quinientos seiscientos setecientos ochocientos
+novecientos mil millon millones y medio media cuarto por ciento grados grado""".split())
 def gap(txt, asr):
     A, B = norm(txt), norm(asr); sm = difflib.SequenceMatcher(None, A, B, autojunk=False); g = 0
     for tag, i1, i2, j1, j2 in sm.get_opcodes():
         if tag == "delete": g = max(g, i2 - i1)
         elif tag == "replace":  # sustitución (three→3, okay→OK) no es frase comida; reemplazo por mucho menos texto sí
-            n, m = i2 - i1, j2 - j1
+            a_, b_ = A[i1:i2], B[j1:j2]
+            if any(re.search(r"\d", w) for w in b_):  # el ASR puso cifras: descontar las palabras de número del guion
+                a_ = [w for w in a_ if w not in NUMW]; b_ = [w for w in b_ if not re.search(r"\d", w)]
+            n, m = len(a_), len(b_)
             g = max(g, n if m * 2 < n else max(0, n - m))
     return g, round(sm.ratio(), 3)
 
