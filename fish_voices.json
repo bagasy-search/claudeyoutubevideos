@@ -336,5 +336,12 @@
   "wav": "fish_refs/chayo_rancho.wav",
   "text": "Mira, mija, aquí en el rancho nunca se tiraba nada. Mi abuela agarraba los huesos del caldo, los tostaba en el comal hasta que olían a gloria, y luego los echaba a la olla con su cebollita y su ajo. Así salía un caldo bien sabroso, de ese que te calienta el alma. Y fíjate que no gastaba ni un peso más, nomás tiempo y cariño. Yo aprendí viéndola a ella, desde que tenía nueve años, aquí junto al fogón.",
   "language": "es"
+ },
+ "abuela_nat": {
+  "wav": "fish_refs/abuela_nat.wav",
+  "text": "Bueno a ver La gente me pregunta a qué me dedicaba y cuando les digo que era cerrajera ponen una cara como si estuviera a punto de enseñarles a forzar una cerradura No eso eso era como mucho el dos por ciento del trabajo Lo que realmente hice durante treinta y cinco años fue esto entraban a la casa de alguien un martes por la tarde mientras estaba trabajando llegaba la policía sacaba sus fotos hacía lo suyo y se iba y después",
+  "language": "es",
+  "dialect": "espanol neutro latino (tu)",
+  "nota": "natural/conversacional (el 80% del video)"
  }
 }

@@ -97,7 +97,7 @@ def e_arte():
 def e_voz():
     if not os.path.exists(HECHO + "guion"): sys.exit("⛔ primero: guion")
     meta = J(D + "meta.json", {})
-    sh(["python", "vlog/claudio/voz.py", "--voice", meta.get("voz") or CANAL.get("voz", "claudio_definitiva"), "--lang", IDIOMA, "--cps", str(CANAL.get("cps", 14.0))])
+    sh(["python", "vlog/claudio/voz.py", "--voice", meta.get("voz") or CANAL.get("voz", "claudio_definitiva"), "--lang", IDIOMA, "--cps", str(CANAL.get("cps", 14.0)), "--block-chars", str(CANAL.get("block_chars", 900))])
     raw = R + f"public/{S}_raw.wav"
     if not os.path.exists(raw): sys.exit("⛔ voz.py no dejó el máster")
     sh(f'python vlog/claudio/groq_asr_blocks.py --files public/{S}_raw.wav --out _v3/{S}_asr_raw.json --lang {IDIOMA}')
