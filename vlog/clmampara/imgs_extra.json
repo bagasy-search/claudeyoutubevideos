@@ -1,0 +1,6 @@
+[
+ {"name": "b_ba_before", "prompt": "Straight-on view of a glass shower screen with a chrome frame in an ordinary home shower with white wall tiles, the glass covered in a cloudy white haze of hard-water limescale, opaque, the shower behind barely visible, everything in focus, no people."},
+ {"name": "b_ba_after", "prompt": "Straight-on view of the same glass shower screen with a chrome frame in an ordinary home shower with white wall tiles, now perfectly clear and clean, the chrome shower head and tiles behind sharply visible, everything in focus, no people."},
+ {"name": "b_glasspins", "prompt": "Extreme close view of a glass shower screen: white chalky limescale spots and rings, a dull film of soap scum and dried shampoo streaks, backlit by the bathroom light, everything in focus, no people."},
+ {"name": "b_moldrail", "prompt": "Close view of black mold in the bottom aluminum rail and rubber seal of a glass shower door, everything in focus, no people."}
+]
