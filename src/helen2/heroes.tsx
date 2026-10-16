@@ -370,7 +370,7 @@ export const WeekBoard: React.FC<Base & { head: string; rows: { day: string; txt
 };
 
 // 14 · la cuenta en un recibo largo sobre papel madera + plato de la cafetería tachado
-export const Receipt: React.FC<Base & { lines: { txt: string; amt: string; t: number }[]; tot: { txt: string; amt: string; t: number }; per: { txt: string; t: number }; cmp: { k: string; txt: string; amt: string; t: number } }> = ({ a, a0, d, lines, tot, per, cmp }) => {
+export const Receipt: React.FC<Base & { lines: { txt: string; amt: string; t: number }[]; tot: { txt: string; amt: string; t: number }; per: { txt: string; t: number }; cmp?: { k: string; txt: string; amt: string; t: number } }> = ({ a, a0, d, lines, tot, per, cmp }) => {
   const { f, at } = useT0(a, a0);
   const u = sp(f, 2, 15, 110);
   const all = [...lines, tot];
@@ -389,12 +389,12 @@ export const Receipt: React.FC<Base & { lines: { txt: string; amt: string; t: nu
         ))}
       </div>
       <Mark kind="circle" x={530} y={150 + lines.length * 86 + 40} w={300} h={130} f={f} at={at(tot.t) + 6} color={RED} sw={8} />
-      <div style={{ position: "absolute", left: 1000, top: 140, ...pop(f, at(per.t)) }}>
-        <div style={{ border: `10px solid ${NAVY}`, borderRadius: 18, padding: "20px 40px", transform: "rotate(-6deg)", background: "rgba(247,241,227,0.92)", boxShadow: "0 20px 30px #0006" }}><Lbl txt={per.txt} size={100} color={NAVY} /></div>
+      <div style={{ position: "absolute", left: 930, top: cmp ? 140 : 400, ...pop(f, at(per.t)) }}>
+        <div style={{ border: `10px solid ${NAVY}`, borderRadius: 18, padding: "20px 40px", transform: "rotate(-6deg)", background: "rgba(247,241,227,0.92)", boxShadow: "0 20px 30px #0006" }}><Lbl txt={per.txt} size={fit(per.txt, 820, 110, "label", 1, 2)} color={NAVY} style={{ whiteSpace: "nowrap" }} /></div>
       </div>
-      <Photo k={cmp.k} w={500} h={300} x={1180} y={520} rot={3} f={f} at={at(cmp.t)} from="right" />
-      {f >= at(cmp.t) && <div style={{ position: "absolute", left: 1220, top: 880, ...pop(f, at(cmp.t) + 8) }}><Lbl txt={`${cmp.txt} ${cmp.amt}`} size={64} color={INK} /></div>}
-      <Mark kind="strike" x={1200} y={860} w={560} h={100} f={f} at={at(cmp.t) + 26} color={RED} sw={14} />
+      {cmp && <Photo k={cmp.k} w={500} h={300} x={1180} y={520} rot={3} f={f} at={at(cmp.t)} from="right" />}
+      {cmp && f >= at(cmp.t) && <div style={{ position: "absolute", left: 1220, top: 880, ...pop(f, at(cmp.t) + 8) }}><Lbl txt={`${cmp.txt} ${cmp.amt}`} size={64} color={INK} /></div>}
+      {cmp && <Mark kind="strike" x={1200} y={860} w={560} h={100} f={f} at={at(cmp.t) + 26} color={RED} sw={14} />}
     </AbsoluteFill>
   );
 };
