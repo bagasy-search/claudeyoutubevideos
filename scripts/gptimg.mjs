@@ -24,6 +24,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { submitBatch, pollBatch, fetchBatch } from "../factory/lib/openai_batch.mjs";
 import { trabado, planB } from "../factory/lib/openai_cupo.mjs";
+import { vigilarSalida, estaCaida, marcarCaida, esCaida, aAgnes } from "../factory/lib/openai_caida.mjs"; // 16-oct: plan B si la cuenta se cae
+vigilarSalida();
 
 const SIZE = "1088x608", QUALITY = "low", LOTE = 150;
 const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
@@ -79,6 +81,13 @@ if (problemas.length) { console.error("⛔ no mando nada:\n  · " + problemas.jo
 const conRef = items.filter((i) => i.ref), sinRef = items.filter((i) => !i.ref);
 console.log(`items: ${items.length} · con presentador (/edits gpt-image): ${conRef.length} · sin presentador (agnes-image GRATIS, regla 8-oct): ${sinRef.length}`);
 console.log(`costo estimado: US$${(conRef.length * 0.00207).toFixed(3)} (sólo las de cara; las sin cara van a agnes = US$0)`);
+const listas = () => items.filter((it) => ["png", "jpg"].some((e) => fs.existsSync(path.join(outDir, `${it.name}.${e}`)))).length;
+// 🛟 16-oct: si otra sesión ya vio la cuenta caída (≤15 min), ni se intenta OpenAI → todo a agnes con la cara de referencia
+if (estaCaida()) {
+  console.log(`🛟 OpenAI marcado CAÍDO (${estaCaida().motivo.slice(0, 80)}) → directo a agnes`);
+  aAgnes(items, outDir); const h = listas();
+  console.log(`MEDIDO (plan B agnes): ${h}/${items.length} imágenes en ${outDir}`); process.exit(h === items.length ? 0 : 2);
+}
 
 // ── estado reanudable
 // ⚡ --ya (16-oct, reloj 2 h): las fotos que van a ser CLIPS (y las de apertura) no pueden esperar la cola Batch:
@@ -87,6 +96,7 @@ console.log(`costo estimado: US$${(conRef.length * 0.00207).toFixed(3)} (sólo l
 if (process.argv.includes("--ya")) {
   const { sincronico } = await import("../factory/lib/openai_batch_rapido.mjs");
   const r = await sincronico(items, outDir);
+  if ((r.fallidos || []).some((f) => esCaida(f.error))) { if (!estaCaida()) marcarCaida(r.fallidos.find((f) => esCaida(f.error)).error); aAgnes(items, outDir); }
   const hechas = items.filter((it) => ["png", "jpg"].some((e) => fs.existsSync(path.join(outDir, `${it.name}.${e}`)))).length;
   console.log(`
 MEDIDO (--ya, sincrónico): ${hechas}/${items.length} imágenes en ${outDir}` + (r.fallidos?.length ? ` · fallidas ${r.fallidos.length}` : ""));
@@ -103,7 +113,9 @@ for (const grupo of [conRef, sinRef]) {
   const pend = grupo.filter((it) => !yaHecho(it) && !enVuelo.has(it.name));
   for (let i = 0; i < pend.length; i += LOTE) {
     const lote = pend.slice(i, i + LOTE);
-    const s = await submitBatch({ items: lote, outDir, size: SIZE, quality: QUALITY });
+    let s;
+    try { s = await submitBatch({ items: lote, outDir, size: SIZE, quality: QUALITY }); }
+    catch (e) { console.error(`⛔ no se pudo mandar el batch: ${e.message}`); if (esCaida(e.message)) { if (!estaCaida()) marcarCaida(e.message); break; } throw e; }
     if (!s.batchId) continue;
     estado.batches.push({ id: s.batchId, endpoint: s.endpoint, n: s.n, names: lote.map((x) => x.name), bajado: false });
     guardar();
@@ -141,6 +153,7 @@ while (pendientes().length) {
   if (pendientes().length) await new Promise((r) => setTimeout(r, 60_000));
 }
 
+if (estaCaida() && items.some((it) => !yaHecho(it))) aAgnes(items, outDir);   // 🛟 la cuenta se cayó en el camino
 const hechas = items.filter(yaHecho).length;
 console.log(`\nMEDIDO: ${hechas}/${items.length} imágenes en ${outDir} · ok esta corrida ${totalOk} · fallidas ${totalFail}`);
 if (fallidos.length) {
