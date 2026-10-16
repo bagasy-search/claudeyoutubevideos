@@ -4,7 +4,7 @@
 //    Tipografías: 2 familias (Oswald = rótulos/números · Caveat = tiza y mano). Paleta = el local de la foto: verde boiserie,
 //    rojo del delantal, crema, kraft, cobre. Sin grano, sin viñeta, nada que tiemble.
 import React from "react";
-import { AbsoluteFill, Img } from "remotion";
+import { AbsoluteFill, Img, useCurrentFrame } from "remotion";
 import { useT, sp, ez, eo, cl, img, LABEL, HAND, fit, camAt, camStyle, P } from "../lkit/core";
 
 const GREEN = "#1E4637", GREEN2 = "#2E5E4A", RED = "#B3262E", CREAM = "#F4ECDD", CHALK = "#F1EEE6", KRAFT = "#C9A27A", INK = "#2A231C", COPPER = "#B8733A", OK = "#3F8A5C";
@@ -56,7 +56,12 @@ const Arrow: React.FC<{ d: string; u: number; color?: string; w?: number }> = ({
     <path d={d} stroke={color} strokeWidth={w} fill="none" strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - eo(u)} style={{ filter: "drop-shadow(0 3px 4px rgba(0,0,0,0.45))" }} />
   </svg>
 );
-const shell = (children: React.ReactNode) => <AbsoluteFill style={{ overflow: "hidden" }}>{children}</AbsoluteFill>;
+// deriva lenta y continua de todo el componente: nunca un cuadro quieto entre evento y evento (el QC del MP4 lo mide)
+const Drift: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const f = useCurrentFrame();
+  return <AbsoluteFill style={{ transform: `translate(${10 * Math.sin(f / 37)}px, ${6 * Math.cos(f / 51)}px) scale(${1.03 + 0.012 * Math.sin(f / 45)})` }}>{children}</AbsoluteFill>;
+};
+const shell = (children: React.ReactNode) => <AbsoluteFill style={{ overflow: "hidden" }}><Drift>{children}</Drift></AbsoluteFill>;
 
 // 1 · la olla sobre la sartén: foto grande impresa sobre acero, dos rótulos a mano con flecha que llegan en su palabra
 export const PotOnPan: P<{ k: string; tags: B[]; bed?: string }> = ({ a, d, k, tags, bed = "n_tex_steel" }) => {
@@ -209,11 +214,11 @@ export const OvenSwing: P<{ k: string; on: number; off: number; again: number; o
 export const BubbleVs: P<{ good: { k: string; txt: string; sub: string; t: number }; bad: { k: string; txt: string; sub: string; t: number }; bed?: string }> = ({ a, d, good, bad, bed = "n_tex_steel" }) => {
   const { f, at } = useT(a);
   const side = (s: typeof good, x: number, no: boolean) => {
-    const u = sp(f, at(s.t), 14, 130);
+    const u = sp(f, no ? at(s.t) : Math.min(at(s.t), 12), 14, 130), lu = cl((f - at(s.t)) / 8);
     return <div style={{ position: "absolute", left: x, top: 160, width: 800, opacity: cl(u * 2), transform: `translateY(${(1 - u) * 80}px) rotate(${no ? 2 : -2}deg)` }}>
       <div style={{ background: "#FBF8F1", padding: 14, boxShadow: "0 36px 70px rgba(0,0,0,0.55)" }}>
         <div style={{ height: 450, overflow: "hidden" }}><Img src={img(s.k)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
-        <div style={{ display: "flex", alignItems: "center", gap: 20, padding: "18px 10px 6px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 20, padding: "18px 10px 6px", opacity: lu }}>
           <Mark2 u={cl((f - at(s.t) - 8) / 10)} no={no} size={80} />
           <div>
             <div style={{ fontFamily: LABEL, fontWeight: 700, fontSize: 56, color: no ? RED : OK, textTransform: "uppercase", letterSpacing: 2 }}>{s.txt}</div>
@@ -223,7 +228,9 @@ export const BubbleVs: P<{ good: { k: string; txt: string; sub: string; t: numbe
       </div>
     </div>;
   };
-  return shell(<><Tex k={bed} f={f} T={d} />{side(good, 120, false)}{side(bad, 1000, true)}</>);
+  return shell(<><Tex k={bed} f={f} T={d} />
+    <div style={{ position: "absolute", left: 120, top: 36 }}><Write txt="in the oven you can't see the bubble" u={cl(f / 40)} size={78} color={INK} /></div>
+    {side(good, 120, false)}{side(bad, 1000, true)}</>);
 };
 
 // 9 · mapa de costuras: foto del chuck sobre papel; líneas de tiza siguen las costuras y caen rótulos de tiempo por músculo
@@ -308,7 +315,8 @@ export const PennyScale: P<{ k: string; t: number; mins: number; bed?: string }>
 // 13 · "fond": zoom al fondo de la olla con etiqueta colgante que cambia NOT BURNT → FLAVOR
 export const FondTag: P<{ k: string; word: number; not_: number; taste: number }> = ({ a, d, k, word, not_, taste }) => {
   const { f, at } = useT(a);
-  const cam = camAt(f, at, [{ t: a, s: 1.02, x: 960, y: 540 }, { t: word, s: 1.22, x: 900, y: 600 }], 1.4);
+  const cam0 = camAt(f, at, [{ t: a, s: 1.02, x: 960, y: 540 }, { t: word, s: 1.22, x: 900, y: 600 }], 1.4);
+  const cam = { ...cam0, s: cam0.s * (1 + 0.06 * f / Math.max(1, d)), x: cam0.x - 40 * f / Math.max(1, d) }; // deriva continua: nunca un cuadro quieto
   const u = sp(f, at(word), 12, 120), sw = f >= at(taste);
   return shell(<>
     <AbsoluteFill style={camStyle(cam)}><Img src={img(k)} style={{ width: 1920, height: 1080, objectFit: "cover" }} /></AbsoluteFill>
