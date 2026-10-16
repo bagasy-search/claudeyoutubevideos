@@ -10,7 +10,7 @@ import { ItemCounter } from "./items";
 export type Edl = {
   end: number;
   shots: (Shot & { c?: string; props?: any })[];
-  counts?: { a: number; b: number; n: number }[]; of?: number; word?: string; hide?: [number, number][];
+  counts?: { a: number; b: number; n: number }[]; of?: number; word?: string; ofw?: string; look?: { font?: string; bg?: string; bd?: string; num?: string }; hide?: [number, number][];
   overlays?: { a: number; b: number; c: string; props?: any }[];
 };
 
@@ -35,7 +35,7 @@ export const makePlayer = (E: Edl, extra: Record<string, React.FC<any>> = {}): R
       const d = fr(o.b) - fr(o.a);
       return <Sequence key={"o" + i} from={fr(o.a)} durationInFrames={d}><K {...o.props} a={o.a} d={d} /></Sequence>;
     })}
-    {E.counts && E.counts.length ? <ItemCounter counts={E.counts} of={E.of || E.counts.length} word={E.word} hide={E.hide} /> : null}
+    {E.counts && E.counts.length ? <ItemCounter counts={E.counts} of={E.of || E.counts.length} word={E.word} hide={E.hide} ofw={E.ofw} look={E.look} /> : null}
     <Grain />
   </AbsoluteFill>
 );
