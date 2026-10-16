@@ -1,0 +1,6 @@
+[
+ {"name": "b_ba_before", "prompt": "Straight-on close view of a rectangular stainless steel range hood grease filter lying flat on a stainless kitchen counter, coated with thick sticky brown grease, every slot clogged, bright kitchen light, everything in focus, no people."},
+ {"name": "b_ba_after", "prompt": "Straight-on close view of a rectangular stainless steel range hood grease filter lying flat on a stainless kitchen counter, clean and shiny, every slot open, bright kitchen light, everything in focus, no people."},
+ {"name": "b_greasepins", "prompt": "Extreme close view of the slots of a metal range hood filter covered in layered brown grease: shiny fresh oil, gray dust stuck in it and dark old crust, everything in focus, no people."},
+ {"name": "b_moldtile", "prompt": "Close view of black mold spots in the white grout between bathroom wall tiles, everything in focus, no people."}
+]
