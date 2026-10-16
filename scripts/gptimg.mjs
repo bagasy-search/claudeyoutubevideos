@@ -113,7 +113,7 @@ while (pendientes().length) {
       console.error(`⛔ batch ${b.id} terminó ${p.status}: ${JSON.stringify(p.errors || {}).slice(0, 300)}`);
       b.bajado = true; b.estado = p.status; guardar(); totalFail += b.n; continue;
     }
-    // 🛟 trabado >20 min en 0 (cola de la cuenta saturada) → se cancela y lo que falta lo hace agnes (13-oct)
+    // 🛟 pasó su plazo (cola de la cuenta saturada) → se cancela, se baja lo parcial y el resto va SINCRÓNICO con gpt low (15-oct)
     if (!String(b.id).startsWith("agnes:") && trabado({ status: p.status, request_counts: c, created_at: p.creado })) {
       const hizo = await planB(b.id, items.filter((it) => b.names.includes(it.name)), outDir);
       b.bajado = true; b.estado = "planB"; b.ok = hizo; guardar(); totalOk += hizo; totalFail += b.n - hizo; continue;
