@@ -69,23 +69,13 @@
   },
   {
    "a": 31.877,
-   "b": 35.427,
+   "b": 38.877,
    "k": "ham_bone_loretta",
    "z": [
     1.13,
     1.04
    ],
    "dx": -40
-  },
-  {
-   "a": 35.427,
-   "b": 38.877,
-   "k": "",
-   "c": "BigLine",
-   "props": {
-    "txt": "NOT A CAN. NOT A POTATO.",
-    "dim": 0.6
-   }
   },
   {
    "a": 38.877,
@@ -120,10 +110,10 @@
   {
    "a": 50.197,
    "b": 54.667,
-   "k": "page_75_fix",
+   "k": "fixpg_75",
    "c": "PageUp",
    "props": {
-    "k": "page_75_fix",
+    "k": "fixpg_75",
     "pages": [
      {
       "src": "page75.png",
@@ -249,15 +239,7 @@
   {
    "a": 92.827,
    "b": 95.917,
-   "k": "pot_back_burner",
-   "c": "Kicker",
-   "props": {
-    "txt": "DENTED POT, FROM THE START",
-    "hand": true,
-    "red": false,
-    "side": "top",
-    "k": "pot_back_burner"
-   }
+   "k": "pot_back_burner"
   },
   {
    "a": 95.917,
@@ -690,10 +672,10 @@
   {
    "a": 255.293,
    "b": 258.443,
-   "k": "page_79_fix",
+   "k": "fixpg_79",
    "c": "PageUp",
    "props": {
-    "k": "page_79_fix",
+    "k": "fixpg_79",
     "pages": [
      {
       "src": "page79.png",
@@ -850,7 +832,7 @@
   {
    "a": 294.935,
    "b": 297.715,
-   "k": "l_s66",
+   "k": "sharp_cheddar_block",
    "z": [
     1.13,
     1.04
@@ -1163,13 +1145,7 @@
   {
    "a": 389.549,
    "b": 394.409,
-   "k": "spoon_press",
-   "c": "BigLine",
-   "props": {
-    "txt": "Mashing a few pieces of potato thickens chowder better than any flour.",
-    "dim": 0.6,
-    "k": "spoon_press"
-   }
+   "k": "spoon_press"
   },
   {
    "a": 394.409,
@@ -1511,10 +1487,10 @@
   {
    "a": 504.295,
    "b": 508.195,
-   "k": "page_108_fix",
+   "k": "fixpg_108",
    "c": "PageUp",
    "props": {
-    "k": "page_108_fix",
+    "k": "fixpg_108",
     "pages": [
      {
       "src": "page108.png",
@@ -1928,10 +1904,10 @@
   {
    "a": 655.177,
    "b": 659.537,
-   "k": "page_89_fix",
+   "k": "fixpg_89",
    "c": "PageUp",
    "props": {
-    "k": "page_89_fix",
+    "k": "fixpg_89",
     "pages": [
      {
       "src": "page89.png",
@@ -2026,10 +2002,10 @@
   {
    "a": 689.157,
    "b": 693.231,
-   "k": "page_87_fix",
+   "k": "fixpg_87",
    "c": "PageUp",
    "props": {
-    "k": "page_87_fix",
+    "k": "fixpg_87",
     "pages": [
      {
       "src": "page87.png",
@@ -2187,22 +2163,13 @@
   },
   {
    "a": 753.384,
-   "b": 756.804,
+   "b": 759.874,
    "k": "oilcloth_table_recipe",
    "z": [
     1.04,
     1.13
    ],
    "dx": -40
-  },
-  {
-   "a": 756.804,
-   "b": 759.874,
-   "k": "",
-   "c": "Pop",
-   "props": {
-    "txt": "FRIDAYS"
-   }
   },
   {
    "a": 759.874,
@@ -2343,10 +2310,10 @@
   {
    "a": 819.29,
    "b": 822.82,
-   "k": "page_137_fix",
+   "k": "fixpg_137",
    "c": "PageUp",
    "props": {
-    "k": "page_137_fix",
+    "k": "fixpg_137",
     "pages": [
      {
       "src": "page137.png",
@@ -3053,7 +3020,47 @@
    }
   }
  ],
- "overlays": [],
+ "overlays": [
+  {
+   "a": 35.427,
+   "b": 38.877,
+   "c": "BigLine",
+   "props": {
+    "txt": "NOT A CAN. NOT A POTATO.",
+    "dim": 0.6
+   }
+  },
+  {
+   "a": 92.827,
+   "b": 95.917,
+   "c": "Kicker",
+   "props": {
+    "txt": "DENTED POT, FROM THE START",
+    "hand": true,
+    "red": false,
+    "side": "top",
+    "k": "pot_back_burner"
+   }
+  },
+  {
+   "a": 389.549,
+   "b": 394.409,
+   "c": "BigLine",
+   "props": {
+    "txt": "Mashing a few pieces of potato thickens chowder better than any flour.",
+    "dim": 0.6,
+    "k": "spoon_press"
+   }
+  },
+  {
+   "a": 756.804,
+   "b": 759.874,
+   "c": "Pop",
+   "props": {
+    "txt": "FRIDAYS"
+   }
+  }
+ ],
  "counts": [
   {
    "a": 54.667,
