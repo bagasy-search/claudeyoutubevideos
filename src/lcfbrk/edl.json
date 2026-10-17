@@ -1,0 +1,3281 @@
+{
+ "end": 1088.653,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 8.11,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 8.11,
+   "b": 14.26,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "egg_hand",
+      "t": 8.12
+     },
+     {
+      "k": "skillet_burner",
+      "t": 9.24
+     },
+     {
+      "k": "frost_window",
+      "t": 10.76
+     }
+    ]
+   }
+  },
+  {
+   "a": 14.26,
+   "b": 17.14,
+   "k": "two_eggs_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 17.14,
+   "b": 20.03,
+   "k": "empty_breakfast_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 20.03,
+   "b": 23.7,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 23.7,
+   "b": 28.54,
+   "k": "fork_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 28.54,
+   "b": 30.88,
+   "k": "one_skillet_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 30.88,
+   "b": 34.07,
+   "k": "small_pot_stove",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "small_pot_stove",
+    "txt": "You'd think cooking for one means cooking less.",
+    "stamp": "THE MISTAKE",
+    "cx": 50,
+    "cy": 45,
+    "t": 30.92
+   }
+  },
+  {
+   "a": 34.07,
+   "b": 37.153,
+   "k": "iowa_mailbox",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 37.153,
+   "b": 40.707,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 40.707,
+   "b": 45.004,
+   "k": "loretta_now_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 45.004,
+   "b": 48.76,
+   "k": "small_plates_counter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 48.76,
+   "b": 51.28,
+   "k": "pan_pennies",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 51.28,
+   "b": 55.287,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 55.287,
+   "b": 59.193,
+   "k": "heel_bread_board",
+   "c": "Kinetic",
+   "props": {
+    "k": "heel_bread_board",
+    "words": [
+     [
+      "WAIT FOR #20",
+      55.433
+     ],
+     [
+      "WHERE THE END OF THE LOAF GOES",
+      56.633
+     ]
+    ]
+   }
+  },
+  {
+   "a": 59.193,
+   "b": 63.253,
+   "k": "oatmeal_pot",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 63.253,
+   "b": 71.013,
+   "k": "instant_packet",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 20,
+    "name": "Tearing open instant packets",
+    "instead": "Old-fashioned rolled oats",
+    "page": "p.53",
+    "k": "instant_packet",
+    "k2": "oats_canister",
+    "t": 67.173
+   }
+  },
+  {
+   "a": 71.013,
+   "b": 73.913,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 73.913,
+   "b": 82.903,
+   "k": "p53_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page53.png",
+      "tab": "PAGE 53",
+      "t": 75.333
+     }
+    ],
+    "caption": {
+     "txt": "Old-fashioned oats",
+     "t": 74.273
+    },
+    "k": "p53_table"
+   }
+  },
+  {
+   "a": 82.903,
+   "b": 87.383,
+   "k": "fsa-oatmeal-range",
+   "c": "Arc",
+   "props": {
+    "src": "fsa-oatmeal-range",
+    "cap": "archive film · a woman at the stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 87.383,
+   "b": 92.133,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 92.133,
+   "b": 94.693,
+   "k": "lid_on",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 94.693,
+   "b": 97.613,
+   "k": "wait_two",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 97.613,
+   "b": 101.053,
+   "k": "steam_bowl",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 101.053,
+   "b": 103.553,
+   "k": "bowl_cold",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 103.553,
+   "b": 107.213,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 107.213,
+   "b": 111.107,
+   "k": "gluey_spoon",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 111.107,
+   "b": 114.55,
+   "k": "page_54_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_54_fix",
+    "pages": [
+     {
+      "src": "page54.png",
+      "tab": "PAGE 54",
+      "t": 113.55
+     }
+    ]
+   }
+  },
+  {
+   "a": 114.55,
+   "b": 122.663,
+   "k": "rush_morning",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "of": 20,
+    "name": "Cooking from scratch every morning",
+    "instead": "Five Jars of Overnight Oats",
+    "page": "p.54",
+    "k": "rush_morning",
+    "k2": "p54_jars",
+    "bed": "loretta_jars",
+    "t": 118.923
+   }
+  },
+  {
+   "a": 122.663,
+   "b": 128.24,
+   "k": "empty_counter",
+   "c": "DropList",
+   "props": {
+    "name": "DropList",
+    "k": "empty_counter",
+    "items": [
+     {
+      "t": 122.813,
+      "txt": "OATS"
+     },
+     {
+      "t": 124.033,
+      "txt": "MILK"
+     },
+     {
+      "t": 125.713,
+      "txt": "YOGURT"
+     }
+    ],
+    "head": "PER JAR"
+   }
+  },
+  {
+   "a": 128.24,
+   "b": 131.44,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 131.44,
+   "b": 134.64,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 134.64,
+   "b": 138.78,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 138.78,
+   "b": 142.35,
+   "k": "blueberry_bag",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 142.35,
+   "b": 145.18,
+   "k": "wed_jar_presenter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 145.18,
+   "b": 149.44,
+   "k": "fridge_back_reach",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 149.44,
+   "b": 153.88,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 153.88,
+   "b": 158.44,
+   "k": "book_open",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 158.44,
+   "b": 163.4,
+   "k": "grocery_shelf_prices",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 163.4,
+   "b": 166.48,
+   "k": "pointing_down_presenter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 166.48,
+   "b": 169.46,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 169.46,
+   "b": 173.78,
+   "k": "grocery_bag_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 173.78,
+   "b": 177.42,
+   "k": "stock_bag_presenter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 177.42,
+   "b": 180.77,
+   "k": "receipt_on_counter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 180.77,
+   "b": 186.06,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 186.06,
+   "b": 190.84,
+   "k": "harold_eggs",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 190.84,
+   "b": 194.6,
+   "k": "one_bowl",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 194.6,
+   "b": 203.82,
+   "k": "pancake_box",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "name": "Box of pancake mix",
+    "instead": "One bowl, flour, egg, milk",
+    "page": "PAGE 55",
+    "k": "pancake_box",
+    "t": 196.44,
+    "of": 7
+   }
+  },
+  {
+   "a": 203.82,
+   "b": 207.44,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 207.44,
+   "b": 210.7,
+   "k": "lumpy_bowl",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 210.7,
+   "b": 213.92,
+   "k": "smooth_batter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 213.92,
+   "b": 218.8,
+   "k": "prelinger_griddle_pancakes",
+   "c": "Arc",
+   "props": {
+    "src": "prelinger_griddle_pancakes",
+    "cap": "archive film · a woman at the stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 218.8,
+   "b": 225.2,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 225.2,
+   "b": 229.46,
+   "k": "loretta_plate_talk",
+   "c": "Chapter",
+   "props": {
+    "n": "3",
+    "title": "FREEZE THE REST FLAT",
+    "sub": "PAPER BETWEEN THEM",
+    "label": "EAT THREE FIRST",
+    "k": "loretta_plate_talk",
+    "av": true
+   }
+  },
+  {
+   "a": 229.46,
+   "b": 233.92,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 233.92,
+   "b": 241.08,
+   "k": "page55_loaf",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page55.png",
+      "tab": "PAGE 55",
+      "t": 234.98
+     }
+    ],
+    "k": "page55_loaf"
+   }
+  },
+  {
+   "a": 241.08,
+   "b": 248.98,
+   "k": "heel-bin",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "name": "Heel of the loaf in the bin",
+    "instead": "French toast from the heel",
+    "page": "PAGE 56",
+    "k": "heel-bin",
+    "t": 248.32,
+    "of": 7
+   }
+  },
+  {
+   "a": 248.98,
+   "b": 255.08,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 255.08,
+   "b": 262.78,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "heels-counter",
+      "t": 255.62,
+      "vid": false,
+      "cap": "the night before · heels on the counter",
+      "mark": {
+       "kind": "circle",
+       "x": 30,
+       "y": 40,
+       "w": 40,
+       "h": 30,
+       "t": 255.62
+      }
+     },
+     {
+      "k": "stale-lift",
+      "t": 259.9,
+      "vid": false,
+      "cap": "stale slice · holds the egg",
+      "mark": {
+       "kind": "circle",
+       "x": 35,
+       "y": 30,
+       "w": 35,
+       "h": 40,
+       "t": 259.9
+      }
+     }
+    ]
+   }
+  },
+  {
+   "a": 262.78,
+   "b": 266.24,
+   "k": "egg-milk",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 266.24,
+   "b": 270.864,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 270.864,
+   "b": 273.784,
+   "k": "soak-slice",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 273.784,
+   "b": 278.044,
+   "k": "skillet-flip",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 278.044,
+   "b": 281.564,
+   "k": "two-heels-plate",
+   "c": "Tease",
+   "props": {
+    "k": "two-heels-plate",
+    "txt": "TWO HEELS, ONE PLATE",
+    "tag": "THE PAYOFF"
+   }
+  },
+  {
+   "a": 281.564,
+   "b": 285.424,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 285.424,
+   "b": 289.884,
+   "k": "family-breakfast-father-french-toast",
+   "c": "Arc",
+   "props": {
+    "src": "family-breakfast-father-french-toast",
+    "cap": "archive film · a family at the table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 289.884,
+   "b": 293.554,
+   "k": "tripod-plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 293.554,
+   "b": 296.684,
+   "k": "slide-plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 296.684,
+   "b": 299.744,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 299.744,
+   "b": 303.724,
+   "k": "page_57_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_57_fix",
+    "pages": [
+     {
+      "src": "page57.png",
+      "tab": "PAGE 57",
+      "t": 302.724
+     }
+    ]
+   }
+  },
+  {
+   "a": 303.724,
+   "b": 311.864,
+   "k": "tube_open",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "of": 20,
+    "name": "Baking the whole tube",
+    "instead": "Two biscuits + gravy, for one",
+    "page": "57",
+    "k": "tube_open",
+    "t": 309.844,
+    "pageUp": {
+     "pages": [
+      {
+       "n": 57,
+       "t": 307.264,
+       "from": 303.724
+      }
+     ],
+     "hl": 307.264
+    }
+   }
+  },
+  {
+   "a": 311.864,
+   "b": 317.284,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 317.284,
+   "b": 337.564,
+   "k": "sausage_skillet",
+   "c": "StepCard",
+   "props": {
+    "head": "Biscuits and Gravy for One",
+    "page": "57",
+    "bed": "sausage_skillet",
+    "steps": [
+     {
+      "t": 317.284,
+      "txt": "Brown ¼ lb bulk pork sausage",
+      "k": "sausage_skillet"
+     },
+     {
+      "t": 325.884,
+      "txt": "1 tbsp flour, stir 1 min",
+      "k": "flour_stir"
+     },
+     {
+      "t": 329.924,
+      "txt": "¾ cup milk slowly, 3 min",
+      "k": "milk_pour"
+     },
+     {
+      "t": 334.564,
+      "txt": "Cook until thick, about 3 min",
+      "k": "thick_gravy"
+     }
+    ]
+   }
+  },
+  {
+   "a": 337.564,
+   "b": 341.104,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 341.104,
+   "b": 344.904,
+   "k": "thermo_sausage",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 344.904,
+   "b": 349.274,
+   "k": "split_biscuits",
+   "c": "FrameArt",
+   "props": {
+    "k": "split_biscuits",
+    "bed": "frame_wall",
+    "caption": "a table set for one",
+    "t": 348.084
+   }
+  },
+  {
+   "a": 349.274,
+   "b": 353.684,
+   "k": "table_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 353.684,
+   "b": 357.204,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 357.204,
+   "b": 362.117,
+   "k": "1940s-southern-diner-breakfast",
+   "c": "Arc",
+   "props": {
+    "src": "1940s-southern-diner-breakfast",
+    "cap": "archive film · a woman by the refrigerator",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 362.117,
+   "b": 369.57,
+   "k": "stove_one_egg",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "name": "Cooking One Egg at the Stove",
+    "instead": "A Breakfast Burrito for the Freezer",
+    "page": "PAGE 58",
+    "k": "stove_one_egg",
+    "t": 368.091,
+    "overlay": {
+     "c": "PageUp",
+     "from": 364.2,
+     "to": 370.2,
+     "rise": 365.931,
+     "pages": [
+      {
+       "n": "58",
+       "t": 365.931
+      }
+     ],
+     "k": "page58_book"
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 369.57,
+   "b": 375.951,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 375.951,
+   "b": 384.571,
+   "k": "tortilla_board",
+   "c": "DropList",
+   "props": {
+    "k": "tortilla_board",
+    "items": [
+     {
+      "t": 375.951,
+      "txt": "EGGS"
+     },
+     {
+      "t": 376.671,
+      "txt": "HASH BROWNS"
+     },
+     {
+      "t": 377.371,
+      "txt": "SAUSAGE"
+     }
+    ],
+    "head": "BURRITO FILLING"
+   }
+  },
+  {
+   "a": 384.571,
+   "b": 389.171,
+   "k": "prelinger-deep-freeze-ad",
+   "c": "Arc",
+   "props": {
+    "src": "prelinger-deep-freeze-ad",
+    "cap": "archive film · an open refrigerator",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 389.171,
+   "b": 392.331,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 392.331,
+   "b": 396.291,
+   "k": "foil_towel_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 396.291,
+   "b": 399.261,
+   "k": "turn_burrito_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 399.261,
+   "b": 402.631,
+   "k": "thermo_probe",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 402.631,
+   "b": 406.84,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 406.84,
+   "b": 415.651,
+   "k": "mother_toast_kitchen",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "name": "Grab Something and Eat It Standing Up",
+    "instead": "Cinnamon Toast the Way Mother Made It",
+    "page": "59",
+    "k": "mother_toast_kitchen",
+    "t": 412.191,
+    "overlay": {
+     "c": "PageUp",
+     "from": 408.8,
+     "to": 414.8,
+     "rise": 410.571,
+     "pages": [
+      {
+       "n": "59",
+       "t": 410.571
+      }
+     ],
+     "k": "page59_book"
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 415.651,
+   "b": 418.671,
+   "k": "page_59_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_59_fix",
+    "pages": [
+     {
+      "src": "page59.png",
+      "tab": "PAGE 59",
+      "t": 415.651
+     }
+    ]
+   }
+  },
+  {
+   "a": 418.671,
+   "b": 426.741,
+   "k": "cinnamon_broiler",
+   "c": "StepCard",
+   "props": {
+    "head": "Mother's Cinnamon Toast",
+    "page": "59",
+    "steps": [
+     {
+      "t": 418.671,
+      "txt": "2 tsp sugar + ½ tsp cinnamon",
+      "k": "sugar_cinnamon_mix"
+     },
+     {
+      "t": 422.471,
+      "txt": "sprinkle thick and even",
+      "k": "sprinkle_toast"
+     },
+     {
+      "t": 424.031,
+      "txt": "under the broiler",
+      "k": "broiler_sugar"
+     }
+    ],
+    "bed": "cinnamon_broiler"
+   }
+  },
+  {
+   "a": 426.741,
+   "b": 430.391,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 430.391,
+   "b": 434.191,
+   "k": "toast_broiler",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 434.191,
+   "b": 437.811,
+   "k": "shaker_toaster",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 437.811,
+   "b": 440.231,
+   "k": "morning_counter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 440.231,
+   "b": 444.411,
+   "k": "plate_quarter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 444.411,
+   "b": 450.791,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 450.791,
+   "b": 454.831,
+   "k": "frame_kitchen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 454.831,
+   "b": 459.621,
+   "k": "cornmeal_sack_1930s",
+   "c": "Arc",
+   "props": {
+    "src": "cornmeal_sack_1930s",
+    "cap": "archive film · a woman in a checked blouse",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 459.621,
+   "b": 468.271,
+   "k": "mush_pan",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "name": "Store-bought quick breakfast",
+    "instead": "Fried Cornmeal Mush",
+    "page": "60",
+    "k": "mush_pan",
+    "t": 463.671,
+    "pageUp": {
+     "at": "Number eight, Fried Cornmeal Mush, page sixty.",
+     "window": [
+      460.7,
+      466.7
+     ],
+     "pages": [
+      {
+       "n": 60,
+       "tab": "PAGE 60",
+       "line": "Fried Cornmeal Mush"
+      }
+     ]
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 468.271,
+   "b": 472.411,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 472.411,
+   "b": 475.411,
+   "k": "loaf_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 475.411,
+   "b": 478.071,
+   "k": "fridge_sunday",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 478.071,
+   "b": 481.691,
+   "k": "slices_board",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 481.691,
+   "b": 485.391,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 485.391,
+   "b": 491.851,
+   "k": "splatter_butter",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "splatter_butter",
+    "txt": "Splatter = wet slices — pat dry",
+    "stamp": "THE MISTAKE",
+    "t": 485.391
+   }
+  },
+  {
+   "a": 491.851,
+   "b": 495.671,
+   "k": "flour_dust",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 495.671,
+   "b": 498.821,
+   "k": "plate_syrup",
+   "c": "Note",
+   "props": {
+    "k": "plate_syrup",
+    "lines": [
+     {
+      "t": 495.671,
+      "txt": "Lay them golden on the plate"
+     },
+     {
+      "t": 497.351,
+      "txt": "with a spoon of syrup"
+     }
+    ]
+   }
+  },
+  {
+   "a": 498.821,
+   "b": 502.064,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 502.064,
+   "b": 505.964,
+   "k": "cornmeal_pot",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 505.964,
+   "b": 510.164,
+   "k": "depression-farm-family-supper-1936",
+   "c": "Arc",
+   "props": {
+    "src": "depression-farm-family-supper-1936",
+    "cap": "archive film · a family at the table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 510.164,
+   "b": 514.304,
+   "k": "skillet_first",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 514.304,
+   "b": 516.604,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 516.604,
+   "b": 523.464,
+   "k": "hash_browns_skillet",
+   "c": "ItemCard",
+   "props": {
+    "n": 9,
+    "of": 20,
+    "name": "Stirring them all morning",
+    "instead": "Hash browns + one egg, left alone",
+    "page": "62",
+    "k": "hash_browns_skillet",
+    "bed": "book_page62",
+    "t": 521.144
+   }
+  },
+  {
+   "a": 523.464,
+   "b": 526.964,
+   "k": "page_62_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_62_fix",
+    "pages": [
+     {
+      "src": "page62.png",
+      "tab": "PAGE 62",
+      "t": 523.464
+     }
+    ]
+   }
+  },
+  {
+   "a": 526.964,
+   "b": 530.344,
+   "k": "skillet_medium_high",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 530.344,
+   "b": 535.084,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 535.084,
+   "b": 538.234,
+   "k": "loretta_hands_off",
+   "c": "Chapter",
+   "props": {
+    "n": "5",
+    "title": "Then I leave them alone",
+    "sub": "Five minutes, no stirring",
+    "label": "HANDS OFF",
+    "k": "loretta_hands_off",
+    "av": true
+   }
+  },
+  {
+   "a": 538.234,
+   "b": 541.584,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 541.584,
+   "b": 551.349,
+   "k": "egg_turn",
+   "c": "StepCard",
+   "props": {
+    "head": "Egg, the small-skillet way",
+    "page": "PAGE 64",
+    "steps": [
+     {
+      "t": 541.584,
+      "txt": "Turn, cook 4 min more",
+      "k": "step_turn"
+     },
+     {
+      "t": 543.929,
+      "txt": "Push aside",
+      "k": "step_push"
+     },
+     {
+      "t": 545.529,
+      "txt": "Egg in the empty spot",
+      "k": "step_empty"
+     },
+     {
+      "t": 549.209,
+      "txt": "Slide on top",
+      "k": "step_slide"
+     }
+    ],
+    "bed": "egg_turn"
+   }
+  },
+  {
+   "a": 551.349,
+   "b": 559.309,
+   "k": "egg_lace",
+   "c": "CostTag",
+   "props": {
+    "price": "$0.31",
+    "sub": "a plate",
+    "k": "egg_lace"
+   }
+  },
+  {
+   "a": 559.309,
+   "b": 563.969,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 563.969,
+   "b": 567.229,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 567.229,
+   "b": 579.569,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "t": 568.309,
+    "k": "book_cover",
+    "txt": "Scan for the book"
+   }
+  },
+  {
+   "a": 579.569,
+   "b": 586.56,
+   "k": "butter_foam",
+   "c": "ItemCard",
+   "props": {
+    "n": 10,
+    "name": "The big skillet",
+    "instead": "the 8-inch skillet",
+    "page": "PAGE 64",
+    "k": "butter_foam",
+    "t": 581.989,
+    "of": 7
+   }
+  },
+  {
+   "a": 586.56,
+   "b": 592.24,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 592.24,
+   "b": 596.569,
+   "k": "skillet-range-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "skillet-range-1950s",
+    "cap": "archive film · a woman at the range",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 596.569,
+   "b": 603.449,
+   "k": "small_skillet_butter",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page64.png",
+      "tab": "PAGE 64",
+      "t": 598.209
+     }
+    ],
+    "k": "small_skillet_butter",
+    "caption": {
+     "t": 598.849,
+     "txt": "the small skillet is the whole trick"
+    }
+   }
+  },
+  {
+   "a": 603.449,
+   "b": 607.569,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 607.569,
+   "b": 610.589,
+   "k": "beaten-eggs-pour",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 610.589,
+   "b": 615.309,
+   "k": "loc-woman-cooking-skillet-farm-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "loc-woman-cooking-skillet-farm-1940s",
+    "cap": "archive film · women putting on aprons",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 615.309,
+   "b": 619.309,
+   "k": "cheese-ham-half",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 619.309,
+   "b": 625.749,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 625.749,
+   "b": 629.199,
+   "k": "leftovers-fridge",
+   "c": "Tease",
+   "props": {
+    "k": "leftovers-fridge",
+    "txt": "LEFTOVERS",
+    "tag": "COMING UP"
+   }
+  },
+  {
+   "a": 629.199,
+   "b": 636.029,
+   "k": "eggs-plate-table",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Two eggs",
+     "One little pan",
+     "One plate"
+    ],
+    "k": "eggs-plate-table"
+   }
+  },
+  {
+   "a": 636.029,
+   "b": 639.079,
+   "k": "harold-empty-chair",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 639.079,
+   "b": 643.089,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 643.089,
+   "b": 647.669,
+   "k": "presenter-pan-eggs",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 647.669,
+   "b": 651.709,
+   "k": "page_65_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_65_fix",
+    "pages": [
+     {
+      "src": "page65.png",
+      "tab": "PAGE 65",
+      "t": 650.709
+     }
+    ]
+   }
+  },
+  {
+   "a": 651.709,
+   "b": 659.349,
+   "k": "low-flame-soft-curds",
+   "c": "ItemCard",
+   "props": {
+    "n": 11,
+    "of": 20,
+    "name": "Cranking the burner up high",
+    "instead": "Slow scrambled eggs, low flame",
+    "page": "65",
+    "k": "low-flame-soft-curds",
+    "t": 656.489,
+    "over": {
+     "c": "PageUp",
+     "t": 654.269,
+     "pages": [
+      {
+       "n": 65,
+       "txt": "Slow scrambled eggs, low flame"
+      }
+     ],
+     "k": "cookbook-page-65"
+    }
+   }
+  },
+  {
+   "a": 659.349,
+   "b": 664.599,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 664.599,
+   "b": 667.589,
+   "k": "stir_eggs_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 667.589,
+   "b": 670.489,
+   "k": "soft_creamy_close",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 670.489,
+   "b": 676.789,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "hotel-fort-des-moines-dining-room",
+    "cap": "DES MOINES · 1940s",
+    "big": "1940s"
+   }
+  },
+  {
+   "a": 676.789,
+   "b": 681.049,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 681.049,
+   "b": 684.109,
+   "k": "ramekins_counter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 684.109,
+   "b": 687.369,
+   "k": "fancy_ramekin_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 687.369,
+   "b": 696.182,
+   "k": "stove_hover",
+   "c": "ItemCard",
+   "props": {
+    "n": 12,
+    "of": 20,
+    "name": "Hovering at the stove",
+    "instead": "Shirred eggs in a little dish",
+    "page": "67",
+    "look": "PAGE 67 tab rises on 'page sixty-seven'",
+    "k": "stove_hover",
+    "k2": "ramekin_eggs",
+    "t": 692.202
+   }
+  },
+  {
+   "a": 696.182,
+   "b": 702.382,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 702.382,
+   "b": 705.422,
+   "k": "cream_into_ramekin",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 705.422,
+   "b": 709.862,
+   "k": "hotel-breakfast-service-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "hotel-breakfast-service-1940s",
+    "cap": "archive film · a hotel kitchen crew",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 709.862,
+   "b": 713.102,
+   "k": "eat_from_dish",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 713.102,
+   "b": 716.872,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 716.872,
+   "b": 720.662,
+   "k": "page_68_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_68_fix",
+    "pages": [
+     {
+      "src": "page68.png",
+      "tab": "PAGE 68",
+      "t": 719.662
+     }
+    ]
+   }
+  },
+  {
+   "a": 720.662,
+   "b": 727.782,
+   "k": "frittata_skillet",
+   "c": "ItemCard",
+   "props": {
+    "n": 13,
+    "of": 20,
+    "name": "Dirtying two dishes for eggs",
+    "instead": "Little frittata, one 8-inch skillet",
+    "page": "68",
+    "k": "frittata_skillet",
+    "t": 724.842,
+    "over": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": "68",
+       "t": 723.402,
+       "k": "page68"
+      }
+     ],
+     "k": "page68"
+    }
+   }
+  },
+  {
+   "a": 727.782,
+   "b": 730.962,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 730.962,
+   "b": 745.232,
+   "k": "steps_skillet",
+   "c": "StepCard",
+   "props": {
+    "head": "The Little Frittata",
+    "page": "68",
+    "steps": [
+     {
+      "t": 730.962,
+      "txt": "Potato + onion, 5 min",
+      "k": "st_potato"
+     },
+     {
+      "t": 735.702,
+      "txt": "Ham, then eggs",
+      "k": "st_ham"
+     },
+     {
+      "t": 739.562,
+      "txt": "2 min stove",
+      "k": "st_stove"
+     },
+     {
+      "t": 741.522,
+      "txt": "10-12 min oven",
+      "k": "st_oven"
+     }
+    ],
+    "bed": "steps_skillet"
+   }
+  },
+  {
+   "a": 745.232,
+   "b": 750.39,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 750.39,
+   "b": 753.74,
+   "k": "halve_frittata",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 753.74,
+   "b": 758.812,
+   "k": "page_70_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_70_fix",
+    "pages": [
+     {
+      "src": "page70.png",
+      "tab": "PAGE 70",
+      "t": 757.812
+     }
+    ]
+   }
+  },
+  {
+   "a": 758.812,
+   "b": 768.032,
+   "k": "muffins_tin_k",
+   "c": "ItemCard",
+   "props": {
+    "n": 14,
+    "of": 20,
+    "name": "Cracking eggs one at a time",
+    "instead": "Six egg muffins from one tin, a week",
+    "page": "70",
+    "k": "muffins_tin_k",
+    "t": 764.342,
+    "over": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": "70",
+       "t": 763.042,
+       "k": "page70"
+      }
+     ],
+     "k": "page70"
+    }
+   }
+  },
+  {
+   "a": 768.032,
+   "b": 772.042,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 772.042,
+   "b": 776.582,
+   "k": "fsa_muffin_tin_farm_oven_1940s",
+   "c": "Arc",
+   "props": {
+    "src": "fsa_muffin_tin_farm_oven_1940s",
+    "cap": "archive film · a woman by the refrigerator",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 776.582,
+   "b": 778.912,
+   "k": "knife_test",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 778.912,
+   "b": 782.682,
+   "k": "grease_tin",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 782.682,
+   "b": 785.752,
+   "k": "",
+   "c": "Kicker",
+   "props": {
+    "txt": "SILICONE CUPS"
+   }
+  },
+  {
+   "a": 785.752,
+   "b": 788.889,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 788.889,
+   "b": 792.636,
+   "k": "micro_quick",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 792.636,
+   "b": 797.606,
+   "k": "church-breakfast-kitchen-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "church-breakfast-kitchen-1950s",
+    "cap": "archive film · a woman at the counter",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 797.606,
+   "b": 805.029,
+   "k": "creamed_eggs_card",
+   "c": "ItemCard",
+   "props": {
+    "n": 15,
+    "of": 20,
+    "name": "Church basement crowd breakfast",
+    "instead": "Creamed eggs on toast, for one",
+    "page": "PAGE 71",
+    "k": "creamed_eggs_card",
+    "k2": "page71_bed",
+    "bed": "page71_bed",
+    "t": 801.916
+   }
+  },
+  {
+   "a": 805.029,
+   "b": 808.352,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 808.352,
+   "b": 822.966,
+   "k": "white_sauce_whisk",
+   "c": "StepCard",
+   "props": {
+    "head": "Creamed Eggs on Toast",
+    "page": "71",
+    "steps": [
+     {
+      "t": 808.382,
+      "txt": "Butter + flour, 1 min",
+      "k": "step_butter_flour"
+     },
+     {
+      "t": 811.662,
+      "txt": "Whisk milk, 3 min",
+      "k": "step_milk_whisk"
+     },
+     {
+      "t": 816.126,
+      "txt": "2 chopped boiled eggs",
+      "k": "step_chopped_eggs"
+     },
+     {
+      "t": 818.746,
+      "txt": "Over toast, paprika",
+      "k": "step_toast_paprika"
+     }
+    ],
+    "bed": "white_sauce_whisk"
+   }
+  },
+  {
+   "a": 822.966,
+   "b": 827.926,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 827.926,
+   "b": 835.266,
+   "k": "counter_standing_card",
+   "c": "ItemCard",
+   "props": {
+    "n": 16,
+    "of": 20,
+    "name": "Eating standing up at the counter",
+    "instead": "Sitting down at a set table",
+    "page": "73",
+    "k": "counter_standing_card",
+    "k2": "page73_bed",
+    "bed": "page73_bed",
+    "t": 832.666
+   }
+  },
+  {
+   "a": 835.266,
+   "b": 839.106,
+   "k": "page_73_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_73_fix",
+    "pages": [
+     {
+      "src": "page73.png",
+      "tab": "PAGE 73",
+      "t": 835.266
+     }
+    ]
+   }
+  },
+  {
+   "a": 839.106,
+   "b": 843.606,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 843.606,
+   "b": 847.166,
+   "k": "cheese_help",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 847.166,
+   "b": 849.886,
+   "k": "lid_on_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 849.886,
+   "b": 857.166,
+   "k": "toast_butter",
+   "c": "CostTag",
+   "props": {
+    "price": "$0.35",
+    "sub": "the whole plate",
+    "k": "toast_butter"
+   }
+  },
+  {
+   "a": 857.166,
+   "b": 860.206,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 860.206,
+   "b": 869.266,
+   "k": "loose_egg_pan",
+   "c": "ItemCard",
+   "props": {
+    "n": 17,
+    "of": 20,
+    "name": "Loose egg hanging off the muffin",
+    "instead": "Greased canning jar ring",
+    "page": "102",
+    "t": 866.766,
+    "k": "loose_egg_pan",
+    "k2": "canning_ring_instead",
+    "overlay": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": "102",
+       "t": 863.666
+      }
+     ],
+     "k": "page102_bg",
+     "from": 862.6,
+     "to": 868.6
+    }
+   }
+  },
+  {
+   "a": 869.266,
+   "b": 872.766,
+   "k": "page_102_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_102_fix",
+    "pages": [
+     {
+      "src": "page102.png",
+      "tab": "PAGE 102",
+      "t": 869.266
+     }
+    ]
+   }
+  },
+  {
+   "a": 872.766,
+   "b": 875.866,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 875.866,
+   "b": 880.106,
+   "k": "usda-home-canning-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "usda-home-canning-1940s",
+    "cap": "archive film · a family with a meal",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 880.106,
+   "b": 883.186,
+   "k": "lift_ring",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 883.186,
+   "b": 886.226,
+   "k": "ham_cheese",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 886.226,
+   "b": 891.646,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 891.646,
+   "b": 898.806,
+   "k": "sugary_box",
+   "c": "ItemCard",
+   "props": {
+    "n": 18,
+    "of": 20,
+    "name": "Reaching for a sugary box",
+    "instead": "One apple fried in butter",
+    "page": "147",
+    "t": 896.306,
+    "k": "sugary_box",
+    "k2": "apple_skillet",
+    "overlay": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": "147",
+       "t": 893.846
+      }
+     ],
+     "k": "page147_bg",
+     "from": 893.3,
+     "to": 899.3
+    }
+   }
+  },
+  {
+   "a": 898.806,
+   "b": 902.446,
+   "k": "page_147_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_147_fix",
+    "pages": [
+     {
+      "src": "page147.png",
+      "tab": "PAGE 147",
+      "t": 898.806
+     }
+    ]
+   }
+  },
+  {
+   "a": 902.446,
+   "b": 906.386,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 906.386,
+   "b": 912.546,
+   "k": "apple_split",
+   "c": "SplitHalf",
+   "props": {
+    "k": "apple_split",
+    "l": {
+     "txt": "tart slices holding shape",
+     "t": 906.386
+    },
+    "r": {
+     "txt": "sweet ones turning to applesauce",
+     "t": 908.446
+    }
+   }
+  },
+  {
+   "a": 912.546,
+   "b": 915.126,
+   "k": "sugar_cinnamon_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 915.126,
+   "b": 917.826,
+   "k": "skillet_simmer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 917.826,
+   "b": 921.686,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 921.686,
+   "b": 925.486,
+   "k": "page_157_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_157_fix",
+    "pages": [
+     {
+      "src": "page157.png",
+      "tab": "PAGE 157",
+      "t": 924.486
+     }
+    ]
+   }
+  },
+  {
+   "a": 925.486,
+   "b": 932.966,
+   "k": "rice_hard_container",
+   "c": "ItemCard",
+   "props": {
+    "n": 19,
+    "name": "Throwing out leftover rice",
+    "instead": "Rice Pudding from Leftover Rice",
+    "page": "157",
+    "k": "rice_hard_container",
+    "t": 931.566,
+    "pageup": {
+     "c": "PageUp",
+     "window": "929.1-935.1",
+     "t": 929.806,
+     "pages": [
+      {
+       "n": 157,
+       "line": "Rice Pudding from Leftover Rice"
+      }
+     ],
+     "k": "page157_book"
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 932.966,
+   "b": 937.206,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 937.206,
+   "b": 941.266,
+   "k": "rice_in_pot",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 941.266,
+   "b": 944.126,
+   "k": "stir_pudding",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 944.126,
+   "b": 947.646,
+   "k": "pot_off_heat",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 947.646,
+   "b": 952.526,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 952.526,
+   "b": 955.606,
+   "k": "two_small_bowls",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 955.606,
+   "b": 960.873,
+   "k": "farm-kitchen-1940s-apple-bowl",
+   "c": "Arc",
+   "props": {
+    "src": "farm-kitchen-1940s-apple-bowl",
+    "cap": "archive film · a stack of plates",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 960.873,
+   "b": 970.14,
+   "k": "heels_tossed",
+   "c": "ItemCard",
+   "props": {
+    "n": 20,
+    "name": "Throwing out the heels",
+    "instead": "Bread pudding from the heels",
+    "page": "159",
+    "look": "PageUp page 159 rises over 963.9-969.9s on the words 'page one hundred fifty-nine', highlighter on the bread pudding line, then the ItemCard strikes 'toss the heels' and shows the INSTEAD",
+    "k": "heels_tossed",
+    "k2": "heels_freezer",
+    "t": 967.26,
+    "of": 7
+   }
+  },
+  {
+   "a": 970.14,
+   "b": 974.62,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 974.62,
+   "b": 977.58,
+   "k": "cube_dish",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 977.58,
+   "b": 987.22,
+   "k": "empty_bowl",
+   "c": "DropList",
+   "props": {
+    "k": "empty_bowl",
+    "head": "ONE LITTLE DISH",
+    "items": [
+     {
+      "t": 977.74,
+      "txt": "1 EGG",
+      "label": "EGG"
+     },
+     {
+      "t": 978.68,
+      "txt": "3/4 CUP MILK",
+      "label": "MILK"
+     },
+     {
+      "t": 980.82,
+      "txt": "2 TBSP SUGAR",
+      "label": "SUGAR"
+     },
+     {
+      "t": 982.66,
+      "txt": "A DROP VANILLA",
+      "label": "VANILLA"
+     },
+     {
+      "t": 984.14,
+      "txt": "A PINCH CINNAMON",
+      "label": "CINNAMON"
+     },
+     {
+      "t": 985.7,
+      "txt": "A FEW RAISINS",
+      "label": "RAISINS"
+     }
+    ]
+   }
+  },
+  {
+   "a": 987.22,
+   "b": 991.62,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 991.62,
+   "b": 996.53,
+   "k": "1950s-kitchen-oven-baking",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-kitchen-oven-baking",
+    "cap": "archive film · a woman at the table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 996.53,
+   "b": 1000.52,
+   "k": "caramel_spoon",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1000.52,
+   "b": 1004.14,
+   "k": "carry_bowl",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1004.14,
+   "b": 1010.383,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1010.383,
+   "b": 1014.51,
+   "k": "supper_book_cover",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1014.51,
+   "b": 1018.213,
+   "k": "pulled_chair",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1018.213,
+   "b": 1022.473,
+   "k": "cookbook_page",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1022.473,
+   "b": 1026.663,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 1026.663,
+   "b": 1029.213,
+   "k": "link_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1029.213,
+   "b": 1033.073,
+   "k": "mash_counter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1033.073,
+   "b": 1039.213,
+   "k": "mash_wrong",
+   "c": "Thumb",
+   "props": {
+    "thumb": "thumb_mash",
+    "tag": "WATCH NEXT",
+    "words": [
+     [
+      "Most",
+      1035.533
+     ],
+     [
+      "People",
+      1035.913
+     ],
+     [
+      "Make",
+      1036.273
+     ],
+     [
+      "Mashed",
+      1036.633
+     ],
+     [
+      "Potatoes",
+      1036.833
+     ],
+     [
+      "Wrong!",
+      1037.533
+     ]
+    ],
+    "k": "mash_wrong",
+    "push": true
+   }
+  },
+  {
+   "a": 1039.213,
+   "b": 1043.633,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1043.633,
+   "b": 1047.193,
+   "k": "church_book",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1047.193,
+   "b": 1050.333,
+   "k": "job_note",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "A small job for you tonight."
+    ],
+    "k": "job_note"
+   }
+  },
+  {
+   "a": 1050.333,
+   "b": 1055.453,
+   "k": "set_place",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1055.453,
+   "b": 1059.56,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 1059.56,
+   "b": 1062.673,
+   "k": "frost_window",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1062.673,
+   "b": 1066.953,
+   "k": "three_bowls",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1066.953,
+   "b": 1071.133,
+   "k": "skillet_L",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1071.133,
+   "b": 1077.213,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1077.213,
+   "b": 1080.583,
+   "k": "coffee_pour",
+   "c": "Tease",
+   "props": {
+    "k": "coffee_pour",
+    "txt": "SET THE TABLE",
+    "tag": "POUR YOUR COFFEE"
+   }
+  },
+  {
+   "a": 1080.583,
+   "b": 1084.973,
+   "k": "fsa_farm_table_china_one",
+   "c": "Arc",
+   "props": {
+    "src": "fsa_farm_table_china_one",
+    "cap": "archive film · a man at the dining table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 1084.973,
+   "b": 1088.653,
+   "k": "china_frame",
+   "c": "FrameArt",
+   "props": {
+    "k": "china_frame",
+    "bed": "kitchen_wall",
+    "caption": "see you next week",
+    "t": 1086.873
+   }
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 63.253,
+   "b": 114.55,
+   "n": 1
+  },
+  {
+   "a": 114.55,
+   "b": 194.6,
+   "n": 2
+  },
+  {
+   "a": 194.6,
+   "b": 241.08,
+   "n": 3
+  },
+  {
+   "a": 241.08,
+   "b": 303.724,
+   "n": 4
+  },
+  {
+   "a": 303.724,
+   "b": 362.117,
+   "n": 5
+  },
+  {
+   "a": 362.117,
+   "b": 406.84,
+   "n": 6
+  },
+  {
+   "a": 406.84,
+   "b": 459.621,
+   "n": 7
+  },
+  {
+   "a": 459.621,
+   "b": 516.604,
+   "n": 8
+  },
+  {
+   "a": 516.604,
+   "b": 579.569,
+   "n": 9
+  },
+  {
+   "a": 579.569,
+   "b": 651.709,
+   "n": 10
+  },
+  {
+   "a": 651.709,
+   "b": 687.369,
+   "n": 11
+  },
+  {
+   "a": 687.369,
+   "b": 720.662,
+   "n": 12
+  },
+  {
+   "a": 720.662,
+   "b": 758.812,
+   "n": 13
+  },
+  {
+   "a": 758.812,
+   "b": 797.606,
+   "n": 14
+  },
+  {
+   "a": 797.606,
+   "b": 827.926,
+   "n": 15
+  },
+  {
+   "a": 827.926,
+   "b": 860.206,
+   "n": 16
+  },
+  {
+   "a": 860.206,
+   "b": 891.646,
+   "n": 17
+  },
+  {
+   "a": 891.646,
+   "b": 925.486,
+   "n": 18
+  },
+  {
+   "a": 925.486,
+   "b": 960.873,
+   "n": 19
+  },
+  {
+   "a": 960.873,
+   "b": 1088.653,
+   "n": 20
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   63.253,
+   71.013
+  ],
+  [
+   114.55,
+   122.663
+  ],
+  [
+   194.6,
+   203.82
+  ],
+  [
+   241.08,
+   248.98
+  ],
+  [
+   303.724,
+   311.864
+  ],
+  [
+   362.117,
+   369.57
+  ],
+  [
+   406.84,
+   415.651
+  ],
+  [
+   459.621,
+   468.271
+  ],
+  [
+   516.604,
+   523.464
+  ],
+  [
+   579.569,
+   586.56
+  ],
+  [
+   651.709,
+   659.349
+  ],
+  [
+   687.369,
+   696.182
+  ],
+  [
+   720.662,
+   727.782
+  ],
+  [
+   758.812,
+   768.032
+  ],
+  [
+   797.606,
+   805.029
+  ],
+  [
+   827.926,
+   835.266
+  ],
+  [
+   860.206,
+   869.266
+  ],
+  [
+   891.646,
+   898.806
+  ],
+  [
+   925.486,
+   932.966
+  ],
+  [
+   960.873,
+   970.14
+  ],
+  [
+   567.229,
+   579.569
+  ],
+  [
+   1033.073,
+   1039.213
+  ]
+ ]
+}
