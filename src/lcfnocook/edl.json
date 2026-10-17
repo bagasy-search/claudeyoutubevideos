@@ -215,7 +215,7 @@
     "k": "dome_counter",
     "bed": "loretta_bed_dome",
     "t": 71.44,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -530,7 +530,7 @@
     "k": "ladies_salad_card",
     "k2": "leftover_breast",
     "t": 190.12,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -674,7 +674,7 @@
     "k": "shredded_bag",
     "k2": "cheese_block",
     "t": 243.617,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -872,7 +872,7 @@
     "page": "PAGE 139",
     "k": "plate_on_counter",
     "t": 316.537,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -1065,7 +1065,7 @@
     "page": "146",
     "k": "bare_side_plate",
     "t": 393.557,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -1081,10 +1081,10 @@
   {
    "a": 401.137,
    "b": 406.097,
-   "k": "fixpg_1",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_1",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page1.png",
@@ -1190,7 +1190,7 @@
     "instead": "Cereal bowl",
     "k": "cereal-bowl-cucumber",
     "t": 444.917,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -1282,10 +1282,10 @@
   {
    "a": 477.274,
    "b": 480.954,
-   "k": "fixpg_1",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_1",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page1.png",
@@ -1374,7 +1374,7 @@
     "k": "gray_slaw_tub",
     "k2": "small_slaw_bowl",
     "t": 510.754,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -1512,7 +1512,7 @@
     "page": "135",
     "k": "beans_can_bowl",
     "t": 565.541,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -1528,10 +1528,10 @@
   {
    "a": 571.721,
    "b": 574.831,
-   "k": "fixpg_1",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_1",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page1.png",
@@ -1639,7 +1639,7 @@
     "page": "PAGE 66",
     "k": "fresh_pot_stove",
     "t": 610.981,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -1771,7 +1771,7 @@
     "page": "",
     "k": "deviled_potluck",
     "t": 661.474,
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -1916,7 +1916,7 @@
       }
      ]
     },
-    "of": 7
+    "of": 12
    }
   },
   {
@@ -2499,7 +2499,7 @@
    "n": 12
   }
  ],
- "of": 7,
+ "of": 12,
  "word": "ITEM",
  "hide": [
   [
