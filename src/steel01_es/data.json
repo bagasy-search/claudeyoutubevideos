@@ -1,0 +1,1602 @@
+{
+"total": 24101,
+"fps": 30,
+"shots": [
+{
+"n": "h00",
+"f": 0,
+"d": 196,
+"clip": 2.833,
+"mv": "in"
+},
+{
+"n": "h01",
+"f": 196,
+"d": 196,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "h02",
+"f": 392,
+"d": 124,
+"clip": 2.333,
+"mv": "out"
+},
+{
+"n": "h03",
+"f": 516,
+"d": 60,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "h04",
+"f": 576,
+"d": 223,
+"clip": 3.0,
+"mv": "up"
+},
+{
+"n": "h05",
+"f": 799,
+"d": 239,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "h06",
+"f": 1038,
+"d": 62,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "h07",
+"f": 1100,
+"d": 91,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "h08",
+"f": 1191,
+"d": 112,
+"clip": 3.133,
+"mv": "panR"
+},
+{
+"n": "h09",
+"f": 1303,
+"d": 286,
+"clip": 3.1,
+"mv": "out"
+},
+{
+"n": "h10",
+"f": 1589,
+"d": 137,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "h11",
+"f": 1726,
+"d": 60,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "h12",
+"f": 1786,
+"d": 302,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "o00",
+"f": 2088,
+"d": 133,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "o01",
+"f": 2221,
+"d": 211,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "o02",
+"f": 2432,
+"d": 182,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "o03",
+"f": 2614,
+"d": 181,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "o04",
+"f": 2795,
+"d": 183,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "o05",
+"f": 2978,
+"d": 208,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "o06",
+"f": 3186,
+"d": 247,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "o07",
+"f": 3433,
+"d": 265,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "o08",
+"f": 3698,
+"d": 182,
+"clip": 2.833,
+"mv": "in"
+},
+{
+"n": "o09",
+"f": 3880,
+"d": 133,
+"clip": 2.467,
+"mv": "panR"
+},
+{
+"n": "o10",
+"f": 4013,
+"d": 345,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "o11",
+"f": 4358,
+"d": 88,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "i00",
+"f": 4446,
+"d": 60,
+"clip": 3.067,
+"mv": "up"
+},
+{
+"n": "i01",
+"f": 4506,
+"d": 128,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "i02",
+"f": 4634,
+"d": 409,
+"clip": 3.067,
+"mv": "down"
+},
+{
+"n": "i03",
+"f": 5043,
+"d": 127,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "i04",
+"f": 5170,
+"d": 60,
+"clip": 3.067,
+"mv": "panR"
+},
+{
+"n": "i05",
+"f": 5230,
+"d": 218,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "i06",
+"f": 5448,
+"d": 97,
+"clip": 2.7,
+"mv": "panL"
+},
+{
+"n": "i07",
+"f": 5545,
+"d": 140,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "i08",
+"f": 5685,
+"d": 241,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "i09",
+"f": 5926,
+"d": 191,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "i10",
+"f": 6117,
+"d": 74,
+"clip": 2.567,
+"mv": "in"
+},
+{
+"n": "i11",
+"f": 6191,
+"d": 197,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "i12",
+"f": 6388,
+"d": 219,
+"clip": 3.067,
+"mv": "out"
+},
+{
+"n": "i13",
+"f": 6607,
+"d": 105,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "i14",
+"f": 6712,
+"d": 56,
+"clip": 2.433,
+"mv": "up"
+},
+{
+"n": "i15",
+"f": 6768,
+"d": 60,
+"clip": 3.067,
+"mv": "in2"
+},
+{
+"n": "i16",
+"f": 6828,
+"d": 291,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "i17",
+"f": 7119,
+"d": 131,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "i18",
+"f": 7250,
+"d": 91,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "i19",
+"f": 7341,
+"d": 104,
+"clip": 3.067,
+"mv": "out"
+},
+{
+"n": "i20",
+"f": 7445,
+"d": 187,
+"clip": 3.067,
+"mv": "panL"
+},
+{
+"n": "i21",
+"f": 7632,
+"d": 122,
+"clip": 3.0,
+"mv": "up"
+},
+{
+"n": "i22",
+"f": 7754,
+"d": 125,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "i23",
+"f": 7879,
+"d": 292,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "i24",
+"f": 8171,
+"d": 369,
+"clip": 3.0,
+"mv": "in"
+},
+{
+"n": "i25",
+"f": 8540,
+"d": 116,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "i26",
+"f": 8656,
+"d": 121,
+"clip": 3.1,
+"mv": "out"
+},
+{
+"n": "i27",
+"f": 8777,
+"d": 417,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "i28",
+"f": 9194,
+"d": 60,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "a00",
+"f": 9254,
+"d": 128,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "a01",
+"f": 9382,
+"d": 252,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "a02",
+"f": 9634,
+"d": 185,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "a03",
+"f": 9819,
+"d": 121,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "a04",
+"f": 9940,
+"d": 188,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "a05",
+"f": 10128,
+"d": 88,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "a06",
+"f": 10216,
+"d": 217,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "a07",
+"f": 10433,
+"d": 278,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "p00",
+"f": 10711,
+"d": 246,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "p01",
+"f": 10957,
+"d": 60,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "p02",
+"f": 11017,
+"d": 255,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "p03",
+"f": 11272,
+"d": 139,
+"clip": 2.833,
+"mv": "out"
+},
+{
+"n": "p04",
+"f": 11411,
+"d": 161,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "p05",
+"f": 11572,
+"d": 314,
+"clip": 3.067,
+"mv": "up"
+},
+{
+"n": "p06",
+"f": 11886,
+"d": 60,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "p07",
+"f": 11946,
+"d": 134,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "p08",
+"f": 12080,
+"d": 188,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "p09",
+"f": 12268,
+"d": 126,
+"clip": 3.067,
+"mv": "panR"
+},
+{
+"n": "p10",
+"f": 12394,
+"d": 192,
+"clip": 3.067,
+"mv": "out"
+},
+{
+"n": "p11",
+"f": 12586,
+"d": 185,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "p12",
+"f": 12771,
+"d": 166,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "p13",
+"f": 12937,
+"d": 314,
+"clip": 3.1,
+"mv": "in2"
+},
+{
+"n": "l00",
+"f": 13251,
+"d": 306,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "l01",
+"f": 13557,
+"d": 135,
+"clip": 2.7,
+"mv": "in"
+},
+{
+"n": "l02",
+"f": 13692,
+"d": 109,
+"clip": 3.067,
+"mv": "panR"
+},
+{
+"n": "l03",
+"f": 13801,
+"d": 285,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "l04",
+"f": 14086,
+"d": 95,
+"clip": 3.0,
+"mv": "panL"
+},
+{
+"n": "l05",
+"f": 14181,
+"d": 94,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "l06",
+"f": 14275,
+"d": 147,
+"clip": 3.0,
+"mv": "in2"
+},
+{
+"n": "l07",
+"f": 14422,
+"d": 101,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "l08",
+"f": 14523,
+"d": 147,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "l09",
+"f": 14670,
+"d": 285,
+"clip": 3.067,
+"mv": "panR"
+},
+{
+"n": "n00",
+"f": 14955,
+"d": 229,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "n01",
+"f": 15184,
+"d": 85,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "n02",
+"f": 15269,
+"d": 178,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "n03",
+"f": 15447,
+"d": 60,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "n05",
+"f": 15507,
+"d": 136,
+"clip": 2.833,
+"mv": "down"
+},
+{
+"n": "c00",
+"f": 15643,
+"d": 217,
+"clip": 3.0,
+"mv": "in"
+},
+{
+"n": "c01",
+"f": 15860,
+"d": 99,
+"clip": 2.7,
+"mv": "panR"
+},
+{
+"n": "c02",
+"f": 15959,
+"d": 123,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "c03",
+"f": 16082,
+"d": 60,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "c04",
+"f": 16142,
+"d": 149,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "c05",
+"f": 16291,
+"d": 232,
+"clip": 2.833,
+"mv": "in2"
+},
+{
+"n": "c06",
+"f": 16523,
+"d": 60,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "s00",
+"f": 16583,
+"d": 181,
+"clip": 3.033,
+"mv": "in"
+},
+{
+"n": "s01",
+"f": 16764,
+"d": 212,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "s02",
+"f": 16976,
+"d": 328,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "s03",
+"f": 17304,
+"d": 62,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "s04",
+"f": 17366,
+"d": 60,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "s05",
+"f": 17426,
+"d": 94,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "w00",
+"f": 17520,
+"d": 307,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "w01",
+"f": 17827,
+"d": 107,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "w02",
+"f": 17934,
+"d": 216,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "w03",
+"f": 18150,
+"d": 198,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "w04",
+"f": 18348,
+"d": 76,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "w05",
+"f": 18424,
+"d": 125,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "w06",
+"f": 18549,
+"d": 139,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "w07",
+"f": 18688,
+"d": 120,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "w08",
+"f": 18808,
+"d": 248,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "r00",
+"f": 19056,
+"d": 420,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "r01",
+"f": 19476,
+"d": 123,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "r02",
+"f": 19599,
+"d": 127,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "r03",
+"f": 19726,
+"d": 239,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "r04",
+"f": 19965,
+"d": 92,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "r05",
+"f": 20057,
+"d": 121,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "r06",
+"f": 20178,
+"d": 142,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "r07",
+"f": 20320,
+"d": 64,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "r08",
+"f": 20384,
+"d": 284,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "r09",
+"f": 20668,
+"d": 65,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "b00",
+"f": 20733,
+"d": 81,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "b01",
+"f": 20814,
+"d": 252,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "b02",
+"f": 21066,
+"d": 146,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "b03",
+"f": 21212,
+"d": 103,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "b04",
+"f": 21315,
+"d": 312,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "f00",
+"f": 21627,
+"d": 195,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "f01",
+"f": 21822,
+"d": 131,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "f02",
+"f": 21953,
+"d": 134,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "f03",
+"f": 22087,
+"d": 133,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "f04",
+"f": 22220,
+"d": 96,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "f05",
+"f": 22316,
+"d": 135,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "f06",
+"f": 22451,
+"d": 229,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "f07",
+"f": 22680,
+"d": 174,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "f08",
+"f": 22854,
+"d": 140,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "f09",
+"f": 22994,
+"d": 78,
+"clip": 0,
+"mv": "up"
+},
+{
+"n": "f10",
+"f": 23072,
+"d": 170,
+"clip": 0,
+"mv": "in2"
+},
+{
+"n": "f11",
+"f": 23242,
+"d": 88,
+"clip": 0,
+"mv": "down"
+},
+{
+"n": "f12",
+"f": 23330,
+"d": 122,
+"clip": 0,
+"mv": "in"
+},
+{
+"n": "f13",
+"f": 23452,
+"d": 140,
+"clip": 0,
+"mv": "panR"
+},
+{
+"n": "f14",
+"f": 23592,
+"d": 78,
+"clip": 0,
+"mv": "out"
+},
+{
+"n": "f15",
+"f": 23670,
+"d": 238,
+"clip": 0,
+"mv": "panL"
+},
+{
+"n": "f16",
+"f": 23908,
+"d": 193,
+"clip": 0,
+"mv": "up"
+}
+],
+"ov": [
+{
+"t": "loc",
+"f": 30,
+"d": 150,
+"a": "VARSOVIA",
+"b": "28 DE AGOSTO DE 1944"
+},
+{
+"t": "big",
+"f": 398,
+"d": 69,
+"v": "60 cm",
+"l": "DI\u00c1METRO DEL PROYECTIL"
+},
+{
+"t": "big",
+"f": 519,
+"d": 60,
+"v": "\u2248 2 t",
+"l": "UN PROYECTIL"
+},
+{
+"t": "big",
+"f": 740,
+"d": 96,
+"v": "124 t",
+"l": "PESO EN POSICI\u00d3N DE TIRO"
+},
+{
+"t": "big",
+"f": 839,
+"d": 90,
+"v": "1 / 10 min",
+"l": "CADENCIA DE TIRO"
+},
+{
+"t": "big",
+"f": 1044,
+"d": 60,
+"v": "7",
+"l": "CONSTRUIDOS"
+},
+{
+"t": "big",
+"f": 1203,
+"d": 90,
+"v": "1",
+"l": "SOBREVIVE HOY"
+},
+{
+"t": "tally",
+"f": 1339,
+"d": 165,
+"n": 14,
+"l": "PROYECTILES CONTRA UN PUENTE"
+},
+{
+"t": "title",
+"f": 1726,
+"d": 108,
+"a": "KARL-GER\u00c4T",
+"b": "040 / 041 \u00b7 MORTERO DE ASEDIO AUTOPROPULSADO"
+},
+{
+"t": "chap",
+"f": 2088,
+"d": 96,
+"k": "01",
+"a": "UN CA\u00d1\u00d3N CONTRA LA L\u00cdNEA MAGINOT",
+"b": "MARZO DE 1936"
+},
+{
+"t": "spec",
+"f": 2450,
+"d": 120,
+"a": "RHEINMETALL",
+"b": "PROPUESTA DE DISE\u00d1O"
+},
+{
+"t": "loc",
+"f": 2984,
+"d": 90,
+"a": "ENERO DE 1937",
+"b": "DISE\u00d1O AUTOPROPULSADO"
+},
+{
+"t": "spec",
+"f": 3463,
+"d": 135,
+"a": "GRAL. KARL BECKER",
+"b": "OFICIAL DE ARTILLER\u00cdA \u00b7 JEFE DEL PROGRAMA"
+},
+{
+"t": "loc",
+"f": 3704,
+"d": 78,
+"a": "1938 \u2013 1939",
+"b": "PRUEBAS DE MANEJO"
+},
+{
+"t": "loc",
+"f": 3886,
+"d": 78,
+"a": "JUNIO DE 1939",
+"b": "PRUEBAS DE TIRO"
+},
+{
+"t": "chap",
+"f": 4446,
+"d": 90,
+"k": "02",
+"a": "DENTRO DEL CASCO",
+"b": "CHASIS \u00b7 MOTOR \u00b7 ORUGAS"
+},
+{
+"t": "spec",
+"f": 4506,
+"d": 120,
+"a": "11,15 m \u00d7 3,16 m",
+"b": "LARGO \u00d7 ANCHO"
+},
+{
+"t": "spec",
+"f": 4664,
+"d": 165,
+"a": "DAIMLER-BENZ V12",
+"b": "MB 503 A GASOLINA \u00b7 MB 507 C DI\u00c9SEL \u00b7 580 CV"
+},
+{
+"t": "big",
+"f": 5170,
+"d": 66,
+"v": "124 t",
+"l": "PESO EN POSICI\u00d3N DE TIRO"
+},
+{
+"t": "big",
+"f": 5214,
+"d": 105,
+"v": "3,9 kW / t",
+"l": "POTENCIA POR TONELADA"
+},
+{
+"t": "big",
+"f": 5554,
+"d": 96,
+"v": "6\u201310 km/h",
+"l": "VELOCIDAD M\u00c1XIMA"
+},
+{
+"t": "spec",
+"f": 5697,
+"d": 150,
+"a": "1.200 L DE COMBUSTIBLE",
+"b": "AUTONOM\u00cdA 42 km GASOLINA \u00b7 60 km DI\u00c9SEL"
+},
+{
+"t": "chap",
+"f": 6117,
+"d": 78,
+"k": "03",
+"a": "EL CASCO QUE SE HUNDE",
+"b": "SUSPENSI\u00d3N POR BARRAS DE TORSI\u00d3N"
+},
+{
+"t": "spec",
+"f": 6206,
+"d": 120,
+"a": "BARRA DE TORSI\u00d3N",
+"b": "RESORTE DE ACERO A LO ANCHO DEL CASCO"
+},
+{
+"t": "chap",
+"f": 6768,
+"d": 78,
+"k": "04",
+"a": "EL TUBO",
+"b": "GER\u00c4T 040"
+},
+{
+"t": "spec",
+"f": 6844,
+"d": 150,
+"a": "CALIBRE 600 mm",
+"b": "TUBO DE 4,2 m \u00b7 L/7"
+},
+{
+"t": "big",
+"f": 7641,
+"d": 96,
+"v": "55\u00b0 \u2013 70\u00b0",
+"l": "ELEVACI\u00d3N"
+},
+{
+"t": "big",
+"f": 7760,
+"d": 84,
+"v": "\u00b1 4\u00b0",
+"l": "GIRO LATERAL"
+},
+{
+"t": "spec",
+"f": 8189,
+"d": 150,
+"a": "RETROCESO HIDRONEUM\u00c1TICO",
+"b": "ACEITE + GAS COMPRIMIDO"
+},
+{
+"t": "spec",
+"f": 8665,
+"d": 102,
+"a": "S\u00d3LO SE CARGA A 0\u00b0",
+"b": "CIERRE DE CU\u00d1A DESLIZANTE"
+},
+{
+"t": "big",
+"f": 9197,
+"d": 78,
+"v": "1 / 10 min",
+"l": "CADENCIA DE TIRO"
+},
+{
+"t": "chap",
+"f": 9251,
+"d": 78,
+"k": "05",
+"a": "EL TREN DE MUNICI\u00d3N",
+"b": "MUNITIONSSCHLEPPER"
+},
+{
+"t": "big",
+"f": 9502,
+"d": 96,
+"v": "22",
+"l": "TRANSPORTES PANZER IV"
+},
+{
+"t": "spec",
+"f": 9652,
+"d": 108,
+"a": "4 PROYECTILES",
+"b": "POR TRANSPORTE \u00b7 GR\u00daA ARRIBA"
+},
+{
+"t": "big",
+"f": 10134,
+"d": 102,
+"v": "21",
+"l": "TRIPULANTES POR CA\u00d1\u00d3N"
+},
+{
+"t": "chap",
+"f": 10711,
+"d": 90,
+"k": "06",
+"a": "EL PROYECTIL",
+"b": "PERFORANTE DE HORMIG\u00d3N"
+},
+{
+"t": "big",
+"f": 10963,
+"d": 102,
+"v": "2.170 kg",
+"l": "PROYECTIL PESADO"
+},
+{
+"t": "spec",
+"f": 11284,
+"d": 126,
+"a": "CARGA EXPLOSIVA 289 kg",
+"b": "EL RESTO: ACERO TEMPLADO"
+},
+{
+"t": "big",
+"f": 11587,
+"d": 96,
+"v": "220 m/s",
+"l": "VELOCIDAD EN BOCA"
+},
+{
+"t": "big",
+"f": 11886,
+"d": 72,
+"v": "4.320 m",
+"l": "ALCANCE M\u00c1X. \u00b7 PROYECTIL PESADO"
+},
+{
+"t": "spec",
+"f": 12092,
+"d": 150,
+"a": "PROYECTIL LIVIANO 1.700 kg",
+"b": "ALCANCE M\u00c1X. 6.440 m"
+},
+{
+"t": "big",
+"f": 12280,
+"d": 90,
+"v": "2,5 m",
+"l": "PENETRACI\u00d3N EN HORMIG\u00d3N"
+},
+{
+"t": "big",
+"f": 12406,
+"d": 108,
+"v": "15 m \u00d7 5 m",
+"l": "CR\u00c1TER"
+},
+{
+"t": "title",
+"f": 12870,
+"d": 90,
+"a": "GER\u00c4T 041",
+"b": "540 mm \u00b7 TUBO M\u00c1S LARGO"
+},
+{
+"t": "spec",
+"f": 12949,
+"d": 138,
+"a": "PROYECTIL 1.250 kg",
+"b": "ALCANCE 10.060 m"
+},
+{
+"t": "chap",
+"f": 13251,
+"d": 84,
+"k": "07",
+"a": "MOVER 124 TONELADAS",
+"b": "TREN \u00b7 GR\u00daA \u00b7 REMOLQUE"
+},
+{
+"t": "spec",
+"f": 13819,
+"d": 138,
+"a": "VAG\u00d3N SCHNABEL",
+"b": "CARGA COLGADA ENTRE DOS BOGIES"
+},
+{
+"t": "big",
+"f": 14098,
+"d": 108,
+"v": "7 cargas",
+"l": "GR\u00daA M\u00d3VIL DE 35 t"
+},
+{
+"t": "spec",
+"f": 14287,
+"d": 108,
+"a": "REMOLQUE CULEMEYER",
+"b": "6 EJES \u00b7 S\u00d3LO EL CHASIS"
+},
+{
+"t": "chap",
+"f": 14955,
+"d": 96,
+"k": "08",
+"a": "SIETE CA\u00d1ONES, SIETE NOMBRES",
+"b": "NOV 1940 \u2013 AGO 1941"
+},
+{
+"t": "roster",
+"f": 15269,
+"d": 346,
+"items": [
+[
+"I",
+"ADAM \u2192 BALDUR",
+15269
+],
+[
+"II",
+"EVA \u2192 WOTAN",
+15350
+],
+[
+"III",
+"THOR",
+15447
+],
+[
+"IV",
+"ODIN",
+15457
+],
+[
+"V",
+"LOKI",
+15480
+],
+[
+"VI",
+"ZIU",
+15504
+],
+[
+"VII",
+"VEH\u00cdCULO DE PRUEBAS \u00b7 SIN NOMBRE",
+15534
+]
+]
+},
+{
+"t": "chap",
+"f": 15643,
+"d": 90,
+"k": "09",
+"a": "AL COMBATE",
+"b": "JUNIO DE 1941"
+},
+{
+"t": "loc",
+"f": 15869,
+"d": 96,
+"a": "BREST",
+"b": "JUNIO DE 1941"
+},
+{
+"t": "loc",
+"f": 15968,
+"d": 90,
+"a": "LE\u00d3POLIS",
+"b": "JUNIO DE 1941"
+},
+{
+"t": "big",
+"f": 16300,
+"d": 90,
+"v": "31 / 36",
+"l": "DISPAROS REALIZADOS"
+},
+{
+"t": "loc",
+"f": 16593,
+"d": 120,
+"a": "SEBASTOPOL",
+"b": "JUNIO DE 1942"
+},
+{
+"t": "big",
+"f": 16800,
+"d": 114,
+"v": "72 + 50",
+"l": "PROYECTILES PESADOS + LIVIANOS"
+},
+{
+"t": "spec",
+"f": 17042,
+"d": 144,
+"a": "BATER\u00cdA M\u00c1XIMO GORKI",
+"b": "TORRETAS DOBLES DE 305 mm"
+},
+{
+"t": "loc",
+"f": 17532,
+"d": 120,
+"a": "VARSOVIA",
+"b": "AGOSTO DE 1944"
+},
+{
+"t": "spec",
+"f": 17839,
+"d": 108,
+"a": "'ZIU' \u00b7 DISTRITO DE WOLA",
+"b": "POSICI\u00d3N DE TIRO EN UN PARQUE"
+},
+{
+"t": "loc",
+"f": 17964,
+"d": 135,
+"a": "EDIFICIO PRUDENTIAL",
+"b": "28 DE AGOSTO DE 1944"
+},
+{
+"t": "loc",
+"f": 18436,
+"d": 96,
+"a": "CALLE MONIUSZKI",
+"b": "PROYECTIL SIN EXPLOTAR"
+},
+{
+"t": "loc",
+"f": 19068,
+"d": 120,
+"a": "ARDENAS",
+"b": "DICIEMBRE DE 1944"
+},
+{
+"t": "loc",
+"f": 19605,
+"d": 90,
+"a": "REMAGEN",
+"b": "MARZO DE 1945"
+},
+{
+"t": "spec",
+"f": 20066,
+"d": 90,
+"a": "KARL-BATTERIE 638",
+"b": "54 cm GER\u00c4T 041"
+},
+{
+"t": "tally",
+"f": 20178,
+"d": 206,
+"n": 14,
+"l": "DISPAROS",
+"miss": 20267
+},
+{
+"t": "chap",
+"f": 20733,
+"d": 90,
+"k": "10",
+"a": "POR QU\u00c9 FRACAS\u00d3",
+"b": ""
+},
+{
+"t": "chap",
+"f": 21627,
+"d": 90,
+"k": "11",
+"a": "EL DESTINO DE LOS SIETE",
+"b": "PRIMAVERA DE 1945"
+},
+{
+"t": "loc",
+"f": 21965,
+"d": 138,
+"a": "HILLERSLEBEN \u2192 ABERDEEN",
+"b": "VEH\u00cdCULO DE PRUEBAS \u00b7 DESGUAZADO"
+},
+{
+"t": "loc",
+"f": 22466,
+"d": 132,
+"a": "J\u00dcTERBOG",
+"b": "20 DE ABRIL DE 1945"
+},
+{
+"t": "loc",
+"f": 22863,
+"d": 108,
+"a": "MUSEO DE TANQUES DE KUBINKA",
+"b": "AFUERAS DE MOSC\u00da"
+},
+{
+"t": "spec",
+"f": 23000,
+"d": 120,
+"a": "MARCADO: N.\u00ba I 'ADAM'",
+"b": "CASI SEGURO N.\u00ba VI 'ZIU'"
+},
+{
+"t": "big",
+"f": 23242,
+"d": 72,
+"v": "7",
+"l": "CONSTRUIDOS"
+},
+{
+"t": "big",
+"f": 23295,
+"d": 60,
+"v": "1",
+"l": "SOBREVIVE"
+},
+{
+"t": "big",
+"f": 23330,
+"d": 90,
+"v": "14 / 0",
+"l": "PROYECTILES / ACIERTOS EN REMAGEN"
+},
+{
+"t": "next",
+"f": 23670,
+"d": 431,
+"a": "PR\u00d3XIMO",
+"b": "POR DENTRO DEL TIGER"
+}
+]
+}
