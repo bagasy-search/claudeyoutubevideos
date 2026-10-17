@@ -24,3 +24,11 @@ export const C = {
   ocean: "#0d4f8a",
   deep: "#06223f",
 };
+
+// interpolate a prueba de planos cortos: si el rango de entrada no crece (fade de entrada y salida pisados), lo empuja hacia adelante
+import { interpolate as rInterp } from "remotion";
+export const interpolate: typeof rInterp = (x, inp, out, opts) => {
+  const r = [...inp];
+  for (let i = 1; i < r.length; i++) if (!(r[i] > r[i - 1])) r[i] = r[i - 1] + 0.001;
+  return rInterp(x, r, out, opts);
+};

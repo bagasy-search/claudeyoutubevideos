@@ -1,6 +1,7 @@
 // Gráficos animados propios de Orbit Dossier (todo dibujado por código, nada de texto horneado en imágenes).
 import React from "react";
-import { AbsoluteFill, Img, useCurrentFrame, interpolate, random } from "remotion";
+import { AbsoluteFill, Img, useCurrentFrame, random } from "remotion";
+import { interpolate } from "./lib";
 import { C, COND, MONO, SANS, clamp, ease, easeOut, sf } from "./lib";
 
 type G = { dur: number; m: number[]; g: any };

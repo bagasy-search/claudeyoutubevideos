@@ -1,6 +1,7 @@
 // Capas encima del plano: rótulo de fuente, sello de fecha, cifra grande, capítulo, índice, título, línea de tiempo.
 import React from "react";
-import { AbsoluteFill, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { interpolate } from "./lib";
 import { C, COND, MONO, clamp, easeOut } from "./lib";
 import type { Shot } from "./media";
 

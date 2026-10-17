@@ -1,6 +1,7 @@
 // Planos base: foto a pantalla completa, ficha (foto chica sobre su propio desenfoque) y video.
 import React from "react";
-import { AbsoluteFill, Img, OffthreadVideo, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, useCurrentFrame } from "remotion";
+import { interpolate } from "./lib";
 import { sf, clamp, ease, C, MONO } from "./lib";
 
 export type Shot = {

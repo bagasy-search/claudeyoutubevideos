@@ -1,6 +1,7 @@
 // orbit01 — "Europa Hides Twice as Much Water as Earth". Montaje plano por plano desde shots.json (escrito a mano en shots.py).
 import React from "react";
-import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, useCurrentFrame, interpolate } from "remotion";
+import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, useCurrentFrame } from "remotion";
+import { interpolate } from "./lib";
 import data from "./shots.json";
 import { C, sf, clamp } from "./lib";
 import { Shot, FullImg, Card, Vid, Cam } from "./media";
