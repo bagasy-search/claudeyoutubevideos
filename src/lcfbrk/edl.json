@@ -329,10 +329,10 @@
   {
    "a": 111.107,
    "b": 114.55,
-   "k": "fixpg_54",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_54",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page54.png",
@@ -850,10 +850,10 @@
   {
    "a": 299.744,
    "b": 303.724,
-   "k": "fixpg_57",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_57",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page57.png",
@@ -1162,10 +1162,10 @@
   {
    "a": 415.651,
    "b": 418.671,
-   "k": "fixpg_59",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_59",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page59.png",
@@ -1488,10 +1488,10 @@
   {
    "a": 523.464,
    "b": 526.964,
-   "k": "fixpg_62",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_62",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page62.png",
@@ -1799,10 +1799,10 @@
   {
    "a": 647.669,
    "b": 651.709,
-   "k": "fixpg_65",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_65",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page65.png",
@@ -1989,10 +1989,10 @@
   {
    "a": 716.872,
    "b": 720.662,
-   "k": "fixpg_68",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_68",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page68.png",
@@ -2098,10 +2098,10 @@
   {
    "a": 753.74,
    "b": 758.812,
-   "k": "fixpg_70",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_70",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page70.png",
@@ -2309,10 +2309,10 @@
   {
    "a": 835.266,
    "b": 839.106,
-   "k": "fixpg_73",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_73",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page73.png",
@@ -2408,10 +2408,10 @@
   {
    "a": 869.266,
    "b": 872.766,
-   "k": "fixpg_102",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_102",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page102.png",
@@ -2508,10 +2508,10 @@
   {
    "a": 898.806,
    "b": 902.446,
-   "k": "fixpg_147",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_147",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page147.png",
@@ -2585,10 +2585,10 @@
   {
    "a": 921.686,
    "b": 925.486,
-   "k": "fixpg_157",
+   "k": "book_cover",
    "c": "PageUp",
    "props": {
-    "k": "fixpg_157",
+    "k": "book_cover",
     "pages": [
      {
       "src": "page157.png",
