@@ -1,0 +1,42 @@
+{
+ "herodotus": {
+  "file": "pd/herodotus.jpg",
+  "credit": "Bust of Herodotus · public domain",
+  "fit": "contain",
+  "shift": 420
+ },
+ "nile_ships": {
+  "file": "pd/nile_ships.jpg",
+  "credit": "NASA / ISS"
+ },
+ "iss_day": {
+  "file": "pd/iss_day.jpg",
+  "credit": "NASA / ISS"
+ },
+ "cairo_pd": {
+  "file": "pd/cairo_pd.jpg",
+  "credit": "NASA / ISS"
+ },
+ "nasser_iss": {
+  "file": "pd/nasser_iss.jpg",
+  "credit": "NASA / ISS"
+ },
+ "nasser_iss2": {
+  "file": "pd/nasser_iss2.jpg",
+  "credit": "NASA / ISS"
+ },
+ "toshka_nasa": {
+  "file": "pd/toshka_nasa.jpg",
+  "credit": "NASA / ISS",
+  "fit": "contain"
+ },
+ "nilometer": {
+  "file": "pd/nilometer.jpg",
+  "credit": "Nilometer, Cairo · public domain",
+  "fit": "contain"
+ },
+ "aswan_dam": {
+  "file": "pd/aswan_dam.jpg",
+  "credit": "Lake Nasser · NASA / ISS"
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "alex_coast": {
+  "file": "clips/alex_coast.mp4",
+  "dur": 3.066667
+ },
+ "blue_nile_falls": {
+  "file": "clips/blue_nile_falls.mp4",
+  "dur": 3.1
+ },
+ "cairo_street": {
+  "file": "clips/cairo_street.mp4",
+  "dur": 2.933333
+ },
+ "coast_erosion": {
+  "file": "clips/coast_erosion.mp4",
+  "dur": 3.066667
+ },
+ "crowd_market": {
+  "file": "clips/crowd_market.mp4",
+  "dur": 3.066667
+ },
+ "deep_pipe": {
+  "file": "clips/deep_pipe.mp4",
+  "dur": 3.066667
+ },
+ "dune_ripples": {
+  "file": "clips/dune_ripples.mp4",
+  "dur": 3.066667
+ },
+ "felucca_aswan": {
+  "file": "clips/felucca_aswan.mp4",
+  "dur": 2.833333
+ },
+ "flood_village": {
+  "file": "clips/flood_village.mp4",
+  "dur": 2.7
+ },
+ "gerd": {
+  "file": "clips/gerd.mp4",
+  "dur": 3.1
+ },
+ "harvest": {
+  "file": "clips/harvest.mp4",
+  "dur": 3.1
+ },
+ "london_rain": {
+  "file": "clips/london_rain.mp4",
+  "dur": 3.133333
+ },
+ "new_channel": {
+  "file": "clips/new_channel.mp4",
+  "dur": 3.066667
+ },
+ "nile_dusk": {
+  "file": "clips/nile_dusk.mp4",
+  "dur": 2.7
+ },
+ "rosetta": {
+  "file": "clips/rosetta.mp4",
+  "dur": 3.066667
+ },
+ "sky_clear": {
+  "file": "clips/sky_clear.mp4",
+  "dur": 3.066667
+ },
+ "spillway": {
+  "file": "clips/spillway.mp4",
+  "dur": 3.066667
+ },
+ "suez_ship": {
+  "file": "clips/suez_ship.mp4",
+  "dur": 3.066667
+ },
+ "valley_cart": {
+  "file": "clips/valley_cart.mp4",
+  "dur": 2.7
+ }
+}
