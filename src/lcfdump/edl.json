@@ -498,10 +498,10 @@
   {
    "a": 188.613,
    "b": 191.873,
-   "k": "page_120_fix",
+   "k": "fixpg_120",
    "c": "PageUp",
    "props": {
-    "k": "page_120_fix",
+    "k": "fixpg_120",
     "pages": [
      {
       "src": "page120.png",
@@ -1670,10 +1670,10 @@
   {
    "a": 580.934,
    "b": 583.874,
-   "k": "page_128_fix",
+   "k": "fixpg_128",
    "c": "PageUp",
    "props": {
-    "k": "page_128_fix",
+    "k": "fixpg_128",
     "pages": [
      {
       "src": "page128.png",
