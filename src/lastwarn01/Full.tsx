@@ -160,7 +160,7 @@ const BigNumber: React.FC<{ s: Shot }> = ({ s }) => {
       <Kicker text={s.sub} o={appear(t, s.a + 0.05)} color={C.white} size={36} />
       <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 260, color: C.red, opacity: k, transform: `scale(${1.2 - 0.2 * k})`, textShadow: "0 0 60px rgba(255,59,47,0.45)", lineHeight: 1.1 }}>{s.v}</div>
       {s.sub2 ? <Kicker text={s.sub2} o={appear(t, s.a + 1.0)} color={C.amber} size={40} /> : null}
-      {s.src ? <div style={{ fontFamily: INT, fontSize: 24, color: C.gray, marginTop: 22, opacity: appear(t, s.a + 1.2) }}>{s.src}</div> : null}
+      {s.src && !(s.src in GFX) ? <div style={{ fontFamily: INT, fontSize: 24, color: C.gray, marginTop: 22, opacity: appear(t, s.a + 1.2) }}>{s.src}</div> : null}
     </Center>
   );
 };
@@ -219,7 +219,7 @@ const Quote: React.FC<{ s: Shot }> = ({ s }) => {
         {words.map((w, j) => <span key={j} style={{ opacity: appear(t, s.a + 0.1 + (span * j) / words.length, 0.25) }}>{w} </span>)}
       </div>
       {s.q2 ? <div style={{ fontFamily: SER, fontWeight: 900, fontSize: 96, color: C.red, marginTop: 30, opacity: appear(t, s.q2[1], 0.5) }}>{s.q2[0]}</div> : null}
-      {s.src && s.src !== "Quote" ? <Kicker text={s.src} o={appear(t, s.a + span + 0.3)} size={30} color={C.amber} /> : null}
+      {s.src && !(s.src in GFX) ? <Kicker text={s.src} o={appear(t, s.a + span + 0.3)} size={30} color={C.amber} /> : null}
     </Center>
   );
 };
