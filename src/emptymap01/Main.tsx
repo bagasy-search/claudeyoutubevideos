@@ -74,7 +74,7 @@ const SHOTS: Shot[] = [
   // 2 — POR QUÉ
   { a: S(34), v: geo([[S(34), 30.6, 26.8, 16], [S(36), 45, 18, 70], [S(37), 70, 8, 150], [E(41) - 2.5, 70, 8, 150], [E(41), 30.6, 26.8, 22]],
       [{ k: "band", lat1: 22, lat2: 31, t: S(36) + 0.6, out: E(41) - 1.5 }, { k: "hadley", t: S(37), out: S(39) + 0.5 },
-       { k: "area", lon: 13, lat: 21, label: "SAHARA", t: S(39) + 1.2, out: E(41) - 1.5, size: 46 }, { k: "area", lon: 47, lat: 21, label: "ARABIAN DESERT", t: S(39) + 2.4, out: E(41) - 1.5, size: 40 },
+       { k: "area", lon: 8, lat: 26, label: "SAHARA", t: S(39) + 1.2, out: E(41) - 1.5, size: 46 }, { k: "area", lon: 50, lat: 16.5, label: "ARABIAN DESERT", t: S(39) + 2.4, out: E(41) - 1.5, size: 40 },
        { k: "area", lon: 128, lat: -24, label: "AUSTRALIA", t: S(39) + 3.6, out: E(41) - 1.5, size: 40 }, { k: "band", lat1: -31, lat2: -22, t: S(39) + 3.4, out: E(41) - 1.5, labels: false }]) },
   { a: S(42), v: geo([[S(42), 30.6, 26.8, 16], [E(42), 28.8, 26.5, 14]], [{ k: "poly", pts: [[25, 31.6], [29.2, 30.9], [30.9, 29.4], [31.0, 26.0], [32.3, 24.0], [32.6, 22.0], [25, 22.0]], t: S(42) + 0.3, fill: "rgba(255,180,60,0.22)" }, { k: "area", lon: 27.4, lat: 26.2, label: "WESTERN DESERT", sub: "≈ 2/3 OF EGYPT", t: S(42) + 1.0, size: 50 }]) },
   { a: S(43), v: ph("sand_sea2") },
