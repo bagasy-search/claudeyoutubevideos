@@ -1,0 +1,1708 @@
+{
+"end": 579.73,
+"shots": [
+{
+"a": 0,
+"b": 3.6,
+"t": "clip",
+"src": "broll/rewild01/s000_0.mp4",
+"rate": 0.787,
+"kb": 0
+},
+{
+"a": 3.6,
+"b": 7.2,
+"t": "img",
+"src": "img/rewild01/s000_1.png",
+"kb": 1
+},
+{
+"a": 7.2,
+"b": 8.66,
+"t": "img",
+"src": "img/rewild01/s001_0.png",
+"kb": 2
+},
+{
+"a": 8.66,
+"b": 9.98,
+"t": "img",
+"src": "img/rewild01/s002_0.png",
+"kb": 3
+},
+{
+"a": 9.98,
+"b": 12.96,
+"t": "img",
+"src": "img/rewild01/s003_0.png",
+"kb": 4
+},
+{
+"a": 12.96,
+"b": 14.38,
+"t": "clip",
+"src": "real/wbhorses_wh_r06_Uitzicht_vanuit_vogelkijkhut_De_Schollev.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 14.38,
+"b": 19.94,
+"t": "clip",
+"src": "real/wbhorses_wh_r30_Horses_Oostvaardersplassen_Netherlands.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 19.94,
+"b": 21.48,
+"t": "clip",
+"src": "real/wbhorses_wh_r01_Konik_mare.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 21.48,
+"b": 23.1,
+"t": "clip",
+"src": "real/wbhorses_c01_01.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 23.1,
+"b": 26.46,
+"t": "clip",
+"src": "real/wbhorses_wh_r11_Heckrund4.mp4",
+"rate": 1.0,
+"kb": 3
+},
+{
+"a": 26.46,
+"b": 29.46,
+"t": "clip",
+"src": "broll/rewild01/s009_0.mp4",
+"rate": 0.856,
+"kb": 4
+},
+{
+"a": 29.46,
+"b": 34.28,
+"t": "clip",
+"src": "real/wbhorses_wh_r27_Snowy_Horses.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 34.28,
+"b": 37.18,
+"t": "img",
+"src": "img/rewild01/s011_0.png",
+"kb": 0
+},
+{
+"a": 37.18,
+"b": 38.4,
+"t": "img",
+"src": "img/rewild01/s012_0.png",
+"kb": 1
+},
+{
+"a": 38.4,
+"b": 39.94,
+"t": "img",
+"src": "img/rewild01/s013_0.png",
+"kb": 2
+},
+{
+"a": 39.94,
+"b": 45.1,
+"t": "img",
+"src": "img/rewild01/s014_0.png",
+"kb": 3
+},
+{
+"a": 45.1,
+"b": 48.04,
+"t": "img",
+"src": "img/rewild01/s015_0.png",
+"kb": 4
+},
+{
+"a": 48.04,
+"b": 52.08,
+"t": "clip",
+"src": "real/wbhorses_wh_r19_Hollandse_Hout_natuurgebied_in_Flevoland.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 52.08,
+"b": 56.32,
+"t": "img",
+"src": "img/rewild01/s017_0.png",
+"kb": 0
+},
+{
+"a": 56.32,
+"b": 62.8,
+"t": "clip",
+"src": "real/wbhorses_wh_r42_GroteGrazers.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 62.8,
+"b": 64.88,
+"t": "clip",
+"src": "real/wbhorses_wh_r03_Wild_horse_Equus_caballus_var_konik_in_t.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 64.88,
+"b": 66.52,
+"t": "img",
+"src": "img/rewild01/s020_0.png",
+"kb": 3
+},
+{
+"a": 66.52,
+"b": 68.78,
+"t": "clip",
+"src": "real/wbhorses_wh_r07_Loopbrug_naar_vogelkijkhut_Zeearend_Loca.mp4",
+"rate": 1.0,
+"kb": 4
+},
+{
+"a": 68.78,
+"b": 73.44,
+"t": "img",
+"src": "img/rewild01/s022_0.png",
+"kb": 5
+},
+{
+"a": 73.44,
+"b": 79.42,
+"t": "clip",
+"src": "real/wbhorses_c02_01.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 79.42,
+"b": 81.7,
+"t": "clip",
+"src": "real/wbhorses_c02_02.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 81.7,
+"b": 83.98,
+"t": "img",
+"src": "img/rewild01/s024_1.png",
+"kb": 2
+},
+{
+"a": 83.98,
+"b": 86.72,
+"t": "img",
+"src": "img/rewild01/s025_0.png",
+"kb": 3
+},
+{
+"a": 86.72,
+"b": 89.2,
+"t": "img",
+"src": "img/rewild01/s026_0.png",
+"kb": 4
+},
+{
+"a": 89.2,
+"b": 94.16,
+"t": "clip",
+"src": "real/wbhorses_wh_r08_Loopbrug_naar_vogelkijkhut_Zeearend_Loca.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 94.16,
+"b": 96.54,
+"t": "clip",
+"src": "broll/rewild01/s028_0.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 96.54,
+"b": 99.04,
+"t": "clip",
+"src": "broll/rewild01/s029_0.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 99.04,
+"b": 102.78,
+"t": "img",
+"src": "img/rewild01/s030_0.png",
+"kb": 2
+},
+{
+"a": 102.78,
+"b": 104.64,
+"t": "img",
+"src": "img/rewild01/s031_0.png",
+"kb": 3
+},
+{
+"a": 104.64,
+"b": 107.02,
+"t": "img",
+"src": "img/rewild01/s032_0.png",
+"kb": 4
+},
+{
+"a": 107.02,
+"b": 109.56,
+"t": "clip",
+"src": "real/wbhorses_wh_r09_Ontwortelde_boom_bij_vogelkijkhut_De_Kra.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 109.56,
+"b": 110.86,
+"t": "img",
+"src": "img/rewild01/s034_0.png",
+"kb": 0
+},
+{
+"a": 110.86,
+"b": 114.12,
+"t": "img",
+"src": "img/rewild01/s035_0.png",
+"kb": 1
+},
+{
+"a": 114.12,
+"b": 118.08,
+"t": "img",
+"src": "img/rewild01/s036_0.png",
+"kb": 2
+},
+{
+"a": 118.08,
+"b": 120.44,
+"t": "clip",
+"src": "real/wbhorses_wh_r21_Hollandse_Hout_natuurgebied_in_Flevoland.mp4",
+"rate": 1.0,
+"kb": 3
+},
+{
+"a": 120.44,
+"b": 123.82,
+"t": "img",
+"src": "img/rewild01/s038_0.png",
+"kb": 4
+},
+{
+"a": 123.82,
+"b": 127.2,
+"t": "clip",
+"src": "real/wbhorses_wh_r10_Oostvaardersplassen_Nieuwe_natuur_op_de_.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 127.2,
+"b": 131.12,
+"t": "img",
+"src": "img/rewild01/s039_0.png",
+"kb": 0
+},
+{
+"a": 131.12,
+"b": 135.04,
+"t": "img",
+"src": "img/rewild01/s039_1.png",
+"kb": 1
+},
+{
+"a": 135.04,
+"b": 137.2,
+"t": "img",
+"src": "img/rewild01/s040_0.png",
+"kb": 2
+},
+{
+"a": 137.2,
+"b": 138.9,
+"t": "img",
+"src": "img/rewild01/s041_0.png",
+"kb": 3
+},
+{
+"a": 138.9,
+"b": 141.84,
+"t": "img",
+"src": "img/rewild01/s042_0.png",
+"kb": 4
+},
+{
+"a": 141.84,
+"b": 145.564,
+"t": "img",
+"src": "img/rewild01/s043_0.png",
+"kb": 5
+},
+{
+"a": 145.564,
+"b": 146.964,
+"t": "img",
+"src": "img/rewild01/s044_0.png",
+"kb": 0
+},
+{
+"a": 146.964,
+"b": 154.404,
+"t": "clip",
+"src": "real/wbhorses_wh_r28_Oostvaardersplassen_herfst_2012_012.mp4",
+"rate": 0.943,
+"kb": 1
+},
+{
+"a": 154.404,
+"b": 158.304,
+"t": "clip",
+"src": "broll/rewild01/s048_0.mp4",
+"rate": 0.786,
+"kb": 2
+},
+{
+"a": 158.304,
+"b": 161.004,
+"t": "img",
+"src": "img/rewild01/s049_0.png",
+"kb": 3
+},
+{
+"a": 161.004,
+"b": 164.984,
+"t": "img",
+"src": "img/rewild01/s050_0.png",
+"kb": 4
+},
+{
+"a": 164.984,
+"b": 168.964,
+"t": "img",
+"src": "img/rewild01/s050_1.png",
+"kb": 5
+},
+{
+"a": 168.964,
+"b": 172.094,
+"t": "clip",
+"src": "real/wbhorses_wh_r32_Steppentarpan_Equus_ferus_gmelini.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 172.094,
+"b": 175.224,
+"t": "img",
+"src": "img/rewild01/s051_1.png",
+"kb": 1
+},
+{
+"a": 175.224,
+"b": 177.104,
+"t": "img",
+"src": "img/rewild01/s052_0.png",
+"kb": 2
+},
+{
+"a": 177.104,
+"b": 179.964,
+"t": "clip",
+"src": "real/wbhorses_wh_r12_Heck_cattle_001.mp4",
+"rate": 1.0,
+"kb": 3
+},
+{
+"a": 179.964,
+"b": 183.704,
+"t": "clip",
+"src": "real/wbhorses_wh_r13_Heck_cattle_002.mp4",
+"rate": 1.0,
+"kb": 4
+},
+{
+"a": 183.704,
+"b": 187.444,
+"t": "img",
+"src": "img/rewild01/s054_1.png",
+"kb": 5
+},
+{
+"a": 187.444,
+"b": 191.014,
+"t": "clip",
+"src": "real/wbhorses_wh_r04_Konik_horses_in_the_river_forelands_of_L.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 191.014,
+"b": 194.584,
+"t": "clip",
+"src": "real/wbhorses_wh_r29_Wild_paard_jong.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 194.584,
+"b": 196.884,
+"t": "clip",
+"src": "real/wbhorses_c01_02.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 196.884,
+"b": 198.464,
+"t": "img",
+"src": "img/rewild01/s057_0.png",
+"kb": 3
+},
+{
+"a": 198.464,
+"b": 200.044,
+"t": "clip",
+"src": "real/wbhorses_wh_r14_Heck_cattle_003.mp4",
+"rate": 1.0,
+"kb": 4
+},
+{
+"a": 200.044,
+"b": 201.464,
+"t": "clip",
+"src": "real/wbhorses_wh_r15_XN_Heck_Cattle_0033.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 201.464,
+"b": 206.684,
+"t": "clip",
+"src": "real/wbhorses_wh_r31_Konik15ib.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 206.684,
+"b": 211.284,
+"t": "clip",
+"src": "real/wbhorses_wh_r47_Herd_of_Konik_horses_at_Meinerwijk_Arnhe.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 211.284,
+"b": 214.064,
+"t": "clip",
+"src": "real/wbhorses_c01_04.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 214.064,
+"b": 217.804,
+"t": "clip",
+"src": "real/wbhorses_wh_r46_Koniks_in_de_Erlecomse_Waard_aan_de_Waal.mp4",
+"rate": 1.0,
+"kb": 3
+},
+{
+"a": 217.804,
+"b": 221.544,
+"t": "img",
+"src": "img/rewild01/s067_1.png",
+"kb": 4
+},
+{
+"a": 221.544,
+"b": 223.264,
+"t": "clip",
+"src": "real/wbhorses_wh_r16_Oostvaardersplassen_cattle.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 223.264,
+"b": 226.644,
+"t": "clip",
+"src": "real/wbhorses_c01_05.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 226.644,
+"b": 230.024,
+"t": "clip",
+"src": "real/wbhorses_wh_r22_Hollandse_Hout_natuurgebied_in_Flevoland.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 230.024,
+"b": 234.284,
+"t": "clip",
+"src": "real/wbhorses_wh_r50_Keersluisplas_Locatie_Oostvaardersplasse.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 234.284,
+"b": 238.684,
+"t": "img",
+"src": "img/rewild01/s074_0.png",
+"kb": 3
+},
+{
+"a": 238.684,
+"b": 241.564,
+"t": "img",
+"src": "img/rewild01/s075_0.png",
+"kb": 4
+},
+{
+"a": 241.564,
+"b": 244.444,
+"t": "img",
+"src": "img/rewild01/s075_1.png",
+"kb": 5
+},
+{
+"a": 244.444,
+"b": 248.424,
+"t": "img",
+"src": "img/rewild01/s076_0.png",
+"kb": 0
+},
+{
+"a": 248.424,
+"b": 251.924,
+"t": "clip",
+"src": "real/wbhorses_c01_06.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 251.924,
+"b": 257.204,
+"t": "img",
+"src": "img/rewild01/s078_0.png",
+"kb": 2
+},
+{
+"a": 257.204,
+"b": 262.484,
+"t": "img",
+"src": "real/wbhorses_wh_cn01_konik_tarpan.jpg",
+"kb": 3
+},
+{
+"a": 262.484,
+"b": 266.884,
+"t": "img",
+"src": "img/rewild01/s079_0.png",
+"kb": 4
+},
+{
+"a": 266.884,
+"b": 269.444,
+"t": "clip",
+"src": "real/wbhorses_c04_01.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 269.444,
+"b": 271.504,
+"t": "img",
+"src": "img/rewild01/s081_0.png",
+"kb": 0
+},
+{
+"a": 271.504,
+"b": 274.484,
+"t": "img",
+"src": "img/rewild01/s082_0.png",
+"kb": 1
+},
+{
+"a": 274.484,
+"b": 276.354,
+"t": "img",
+"src": "img/rewild01/s083_0.png",
+"kb": 2
+},
+{
+"a": 276.354,
+"b": 278.224,
+"t": "img",
+"src": "real/wbhorses_wh_w35_fence_wire.jpg",
+"kb": 3
+},
+{
+"a": 278.224,
+"b": 280.804,
+"t": "img",
+"src": "img/rewild01/s084_0.png",
+"kb": 4
+},
+{
+"a": 280.804,
+"b": 288.124,
+"t": "clip",
+"src": "real/wbhorses_c04_02.mp4",
+"rate": 0.82,
+"kb": 5
+},
+{
+"a": 288.124,
+"b": 291.028,
+"t": "clip",
+"src": "broll/rewild01/s090_0.mp4",
+"rate": 0.976,
+"kb": 0
+},
+{
+"a": 291.028,
+"b": 293.168,
+"t": "clip",
+"src": "real/wbhorses_c04_03.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 293.168,
+"b": 297.648,
+"t": "clip",
+"src": "real/wbhorses_c04_05.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 297.648,
+"b": 301.808,
+"t": "img",
+"src": "img/rewild01/s093_0.png",
+"kb": 3
+},
+{
+"a": 301.808,
+"b": 303.688,
+"t": "img",
+"src": "img/rewild01/s094_0.png",
+"kb": 4
+},
+{
+"a": 303.688,
+"b": 308.508,
+"t": "img",
+"src": "img/rewild01/s095_0.png",
+"kb": 5
+},
+{
+"a": 308.508,
+"b": 316.948,
+"t": "clip",
+"src": "real/wbhorses_c04_07.mp4",
+"rate": 0.707,
+"kb": 0
+},
+{
+"a": 316.948,
+"b": 320.588,
+"t": "img",
+"src": "img/rewild01/s098_0.png",
+"kb": 1
+},
+{
+"a": 320.588,
+"b": 322.918,
+"t": "clip",
+"src": "real/wbhorses_c04_08.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 322.918,
+"b": 325.248,
+"t": "img",
+"src": "img/rewild01/s099_1.png",
+"kb": 3
+},
+{
+"a": 325.248,
+"b": 327.428,
+"t": "clip",
+"src": "real/wbhorses_wh_r36_2016_0419_Duivenvoordse_en_Veenzijdse_Po.mp4",
+"rate": 1.0,
+"kb": 4
+},
+{
+"a": 327.428,
+"b": 333.848,
+"t": "img",
+"src": "img/rewild01/s101_0.png",
+"kb": 5
+},
+{
+"a": 333.848,
+"b": 337.348,
+"t": "clip",
+"src": "real/wbhorses_wh_r49_Oostvaardersplassen_winter_dieren.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 337.348,
+"b": 341.528,
+"t": "clip",
+"src": "broll/rewild01/s105_0.mp4",
+"rate": 0.582,
+"kb": 1
+},
+{
+"a": 341.528,
+"b": 343.468,
+"t": "img",
+"src": "img/rewild01/s106_0.png",
+"kb": 2
+},
+{
+"a": 343.468,
+"b": 347.548,
+"t": "clip",
+"src": "broll/rewild01/s107_0.mp4",
+"rate": 0.752,
+"kb": 3
+},
+{
+"a": 347.548,
+"b": 349.648,
+"t": "img",
+"src": "img/rewild01/s108_0.png",
+"kb": 4
+},
+{
+"a": 349.648,
+"b": 355.568,
+"t": "clip",
+"src": "real/wbhorses_c04_09.mp4",
+"rate": 1.0,
+"kb": 5
+},
+{
+"a": 355.568,
+"b": 359.728,
+"t": "clip",
+"src": "real/wbhorses_wh_r17_Red_Deer_In_The_Oostvaardersplassen_Holl.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 359.728,
+"b": 362.008,
+"t": "img",
+"src": "real/wbhorses_wh_cn02_konik_stand.jpg",
+"kb": 1
+},
+{
+"a": 362.008,
+"b": 363.328,
+"t": "clip",
+"src": "real/wbhorses_wh_r43_Heckrund1.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 363.328,
+"b": 365.868,
+"t": "img",
+"src": "img/rewild01/s113_0.png",
+"kb": 3
+},
+{
+"a": 365.868,
+"b": 368.528,
+"t": "img",
+"src": "img/rewild01/s114_0.png",
+"kb": 4
+},
+{
+"a": 368.528,
+"b": 371.368,
+"t": "img",
+"src": "img/rewild01/s115_0.png",
+"kb": 5
+},
+{
+"a": 371.368,
+"b": 376.688,
+"t": "img",
+"src": "img/rewild01/s116_0.png",
+"kb": 0
+},
+{
+"a": 376.688,
+"b": 378.488,
+"t": "img",
+"src": "img/rewild01/s117_0.png",
+"kb": 1
+},
+{
+"a": 378.488,
+"b": 380.568,
+"t": "clip",
+"src": "broll/rewild01/s118_0.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 380.568,
+"b": 383.688,
+"t": "clip",
+"src": "broll/rewild01/s119_0.mp4",
+"rate": 0.94,
+"kb": 3
+},
+{
+"a": 383.688,
+"b": 388.148,
+"t": "img",
+"src": "img/rewild01/s120_0.png",
+"kb": 4
+},
+{
+"a": 388.148,
+"b": 390.008,
+"t": "img",
+"src": "img/rewild01/s121_0.png",
+"kb": 5
+},
+{
+"a": 390.008,
+"b": 391.928,
+"t": "img",
+"src": "img/rewild01/s122_0.png",
+"kb": 0
+},
+{
+"a": 391.928,
+"b": 398.368,
+"t": "img",
+"src": "img/rewild01/s123_0.png",
+"kb": 1
+},
+{
+"a": 398.368,
+"b": 406.448,
+"t": "img",
+"src": "img/rewild01/s124_0.png",
+"kb": 2
+},
+{
+"a": 406.448,
+"b": 412.308,
+"t": "img",
+"src": "img/rewild01/s125_0.png",
+"kb": 3
+},
+{
+"a": 412.308,
+"b": 414.528,
+"t": "clip",
+"src": "broll/rewild01/s126_0.mp4",
+"rate": 1.0,
+"kb": 4
+},
+{
+"a": 414.528,
+"b": 416.288,
+"t": "img",
+"src": "img/rewild01/s127_0.png",
+"kb": 5
+},
+{
+"a": 416.288,
+"b": 418.848,
+"t": "img",
+"src": "img/rewild01/s128_0.png",
+"kb": 0
+},
+{
+"a": 418.848,
+"b": 423.488,
+"t": "img",
+"src": "img/rewild01/s130_0.png",
+"kb": 1
+},
+{
+"a": 423.488,
+"b": 425.788,
+"t": "img",
+"src": "real/wbhorses_wh_cn03_konik_2024.jpg",
+"kb": 2
+},
+{
+"a": 425.788,
+"b": 427.008,
+"t": "clip",
+"src": "real/wbhorses_wh_r37_2016_0419_Duivenvoordse_en_Veenzijdse_Po.mp4",
+"rate": 1.0,
+"kb": 3
+},
+{
+"a": 427.008,
+"b": 429.888,
+"t": "clip",
+"src": "real/wbhorses_wh_r51_Ketelbrug_30_06_2019_actm_06.mp4",
+"rate": 1.0,
+"kb": 4
+},
+{
+"a": 429.888,
+"b": 431.388,
+"t": "img",
+"src": "img/rewild01/s134_0.png",
+"kb": 5
+},
+{
+"a": 431.388,
+"b": 432.838,
+"t": "clip",
+"src": "broll/rewild01/s135_0.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 432.838,
+"b": 434.288,
+"t": "img",
+"src": "img/rewild01/s135_1.png",
+"kb": 1
+},
+{
+"a": 434.288,
+"b": 437.271,
+"t": "img",
+"src": "img/rewild01/s136_0.png",
+"kb": 2
+},
+{
+"a": 437.271,
+"b": 441.131,
+"t": "img",
+"src": "real/wbhorses_wh_agn07.jpg",
+"kb": 3
+},
+{
+"a": 441.131,
+"b": 444.241,
+"t": "img",
+"src": "img/rewild01/s139_0.png",
+"kb": 4
+},
+{
+"a": 444.241,
+"b": 447.351,
+"t": "img",
+"src": "img/rewild01/s139_1.png",
+"kb": 5
+},
+{
+"a": 447.351,
+"b": 450.831,
+"t": "img",
+"src": "img/rewild01/s140_0.png",
+"kb": 0
+},
+{
+"a": 450.831,
+"b": 452.771,
+"t": "img",
+"src": "img/rewild01/s141_0.png",
+"kb": 1
+},
+{
+"a": 452.771,
+"b": 454.491,
+"t": "img",
+"src": "img/rewild01/s142_0.png",
+"kb": 2
+},
+{
+"a": 454.491,
+"b": 458.011,
+"t": "img",
+"src": "img/rewild01/s143_0.png",
+"kb": 3
+},
+{
+"a": 458.011,
+"b": 460.261,
+"t": "img",
+"src": "img/rewild01/s144_0.png",
+"kb": 4
+},
+{
+"a": 460.261,
+"b": 462.511,
+"t": "img",
+"src": "img/rewild01/s144_1.png",
+"kb": 5
+},
+{
+"a": 462.511,
+"b": 465.071,
+"t": "clip",
+"src": "real/wbhorses_wh_r48_Mating_season_of_the_red_deers_at_Hoge_V.mp4",
+"rate": 1.0,
+"kb": 0
+},
+{
+"a": 465.071,
+"b": 468.891,
+"t": "img",
+"src": "img/rewild01/s146_0.png",
+"kb": 1
+},
+{
+"a": 468.891,
+"b": 475.731,
+"t": "img",
+"src": "img/rewild01/s147_0.png",
+"kb": 2
+},
+{
+"a": 475.731,
+"b": 478.551,
+"t": "img",
+"src": "img/rewild01/s148_0.png",
+"kb": 3
+},
+{
+"a": 478.551,
+"b": 481.171,
+"t": "img",
+"src": "real/wbhorses_wh_cn15_dike_flat.jpg",
+"kb": 4
+},
+{
+"a": 481.171,
+"b": 485.481,
+"t": "img",
+"src": "img/rewild01/s150_0.png",
+"kb": 5
+},
+{
+"a": 485.481,
+"b": 489.791,
+"t": "img",
+"src": "real/wbhorses_wh_cn07_deer_forest.jpg",
+"kb": 0
+},
+{
+"a": 489.791,
+"b": 492.931,
+"t": "img",
+"src": "img/rewild01/s151_0.png",
+"kb": 1
+},
+{
+"a": 492.931,
+"b": 495.411,
+"t": "img",
+"src": "img/rewild01/s153_0.png",
+"kb": 2
+},
+{
+"a": 495.411,
+"b": 498.511,
+"t": "clip",
+"src": "broll/rewild01/s154_0.mp4",
+"rate": 0.989,
+"kb": 3
+},
+{
+"a": 498.511,
+"b": 501.651,
+"t": "clip",
+"src": "broll/rewild01/s155_0.mp4",
+"rate": 0.817,
+"kb": 4
+},
+{
+"a": 501.651,
+"b": 504.791,
+"t": "img",
+"src": "img/rewild01/s155_1.png",
+"kb": 5
+},
+{
+"a": 504.791,
+"b": 507.271,
+"t": "img",
+"src": "img/rewild01/s156_0.png",
+"kb": 0
+},
+{
+"a": 507.271,
+"b": 509.051,
+"t": "img",
+"src": "img/rewild01/s157_0.png",
+"kb": 1
+},
+{
+"a": 509.051,
+"b": 513.831,
+"t": "img",
+"src": "real/wbhorses_wh_w16_horses_binocs.jpg",
+"kb": 2
+},
+{
+"a": 513.831,
+"b": 516.351,
+"t": "img",
+"src": "real/wbhorses_wh_cn08_deer_herd.jpg",
+"kb": 3
+},
+{
+"a": 516.351,
+"b": 518.071,
+"t": "img",
+"src": "img/rewild01/s161_0.png",
+"kb": 4
+},
+{
+"a": 518.071,
+"b": 521.811,
+"t": "img",
+"src": "img/rewild01/s162_0.png",
+"kb": 5
+},
+{
+"a": 521.811,
+"b": 525.551,
+"t": "clip",
+"src": "broll/rewild01/s162_1.mp4",
+"rate": 0.829,
+"kb": 0
+},
+{
+"a": 525.551,
+"b": 527.771,
+"t": "clip",
+"src": "broll/rewild01/s163_0.mp4",
+"rate": 1.0,
+"kb": 1
+},
+{
+"a": 527.771,
+"b": 529.371,
+"t": "clip",
+"src": "broll/rewild01/s164_0.mp4",
+"rate": 1.0,
+"kb": 2
+},
+{
+"a": 529.371,
+"b": 537.311,
+"t": "img",
+"src": "img/rewild01/s165_0.png",
+"kb": 3
+},
+{
+"a": 537.311,
+"b": 539.491,
+"t": "img",
+"src": "img/rewild01/s167_0.png",
+"kb": 4
+},
+{
+"a": 539.491,
+"b": 544.151,
+"t": "img",
+"src": "img/rewild01/s168_0.png",
+"kb": 5
+},
+{
+"a": 544.151,
+"b": 548.371,
+"t": "img",
+"src": "img/rewild01/s169_0.png",
+"kb": 0
+},
+{
+"a": 548.371,
+"b": 551.231,
+"t": "img",
+"src": "img/rewild01/s171_0.png",
+"kb": 1
+},
+{
+"a": 551.231,
+"b": 553.311,
+"t": "img",
+"src": "real/wbhorses_wh_cn09_deer_weak.jpg",
+"kb": 2
+},
+{
+"a": 553.311,
+"b": 554.871,
+"t": "img",
+"src": "img/rewild01/s173_0.png",
+"kb": 3
+},
+{
+"a": 554.871,
+"b": 557.221,
+"t": "clip",
+"src": "broll/rewild01/s174_0.mp4",
+"rate": 1.0,
+"kb": 4
+},
+{
+"a": 557.221,
+"b": 559.571,
+"t": "img",
+"src": "img/rewild01/s174_1.png",
+"kb": 5
+},
+{
+"a": 559.571,
+"b": 561.651,
+"t": "img",
+"src": "img/rewild01/s175_0.png",
+"kb": 0
+},
+{
+"a": 561.651,
+"b": 564.771,
+"t": "img",
+"src": "img/rewild01/s176_0.png",
+"kb": 1
+},
+{
+"a": 564.771,
+"b": 567.231,
+"t": "img",
+"src": "img/rewild01/s177_0.png",
+"kb": 2
+},
+{
+"a": 567.231,
+"b": 571.081,
+"t": "clip",
+"src": "broll/rewild01/s178_0.mp4",
+"rate": 0.805,
+"kb": 3
+},
+{
+"a": 571.081,
+"b": 574.931,
+"t": "img",
+"src": "img/rewild01/s178_1.png",
+"kb": 4
+},
+{
+"a": 574.931,
+"b": 576.531,
+"t": "img",
+"src": "img/rewild01/s179_0.png",
+"kb": 5
+},
+{
+"a": 576.531,
+"b": 579.73,
+"t": "img",
+"src": "img/rewild01/s180_0.png",
+"kb": 0
+}
+],
+"overlays": [
+{
+"a": 0.15,
+"b": 4.65,
+"c": "Year",
+"props": {
+"y": "1968",
+"sub": "FLEVOLAND, THE NETHERLANDS"
+}
+},
+{
+"a": 14.53,
+"b": 18.03,
+"c": "Big",
+"props": {
+"txt": "5,000+",
+"sub": "LARGE WILD ANIMALS"
+}
+},
+{
+"a": 29.61,
+"b": 33.11,
+"c": "Big",
+"props": {
+"txt": "3,000+",
+"sub": "DEAD IN ONE WINTER"
+}
+},
+{
+"a": 52.23,
+"b": 56.32,
+"c": "Big",
+"props": {
+"txt": "1,500",
+"sub": "THE NUMBER THAT DECIDES"
+}
+},
+{
+"a": 56.47,
+"b": 64.88,
+"c": "Sub",
+"props": {}
+},
+{
+"a": 65.03,
+"b": 66.57,
+"c": "Chapter",
+"props": {
+"n": "1",
+"title": "The Swamp Nobody Wanted"
+}
+},
+{
+"a": 66.67,
+"b": 73.44,
+"c": "Place",
+"props": {
+"name": "OOSTVAARDERSPLASSEN",
+"sub": "FLEVOLAND \u00b7 NETHERLANDS"
+}
+},
+{
+"a": 89.35,
+"b": 93.35,
+"c": "Year",
+"props": {
+"y": "1968",
+"sub": "THE WATER GOES OUT"
+}
+},
+{
+"a": 104.79,
+"b": 107.99,
+"c": "Year",
+"props": {
+"y": "1970",
+"sub": "GREYLAG GEESE BREEDING"
+}
+},
+{
+"a": 120.59,
+"b": 125.09,
+"c": "Year",
+"props": {
+"y": "1989",
+"sub": "PROTECTED WETLAND"
+}
+},
+{
+"a": 135.19,
+"b": 139.39,
+"c": "Chapter",
+"props": {
+"n": "2",
+"title": "The Man Who Wanted the Wild Back"
+}
+},
+{
+"a": 161.154,
+"b": 165.654,
+"c": "Year",
+"props": {
+"y": "1627",
+"sub": "THE LAST AUROCHS"
+}
+},
+{
+"a": 169.114,
+"b": 173.614,
+"c": "Year",
+"props": {
+"y": "1879",
+"sub": "THE LAST WILD TARPAN"
+}
+},
+{
+"a": 197.034,
+"b": 200.044,
+"c": "Year",
+"props": {
+"y": "1983",
+"sub": "THE ANIMALS ARRIVE"
+}
+},
+{
+"a": 200.194,
+"b": 204.084,
+"c": "Bars",
+"props": {
+"head": "RELEASED IN 1983",
+"rows": [
+{
+"k": "Red deer",
+"v": 40
+},
+{
+"k": "Heck cattle",
+"v": 32
+},
+{
+"k": "Konik horses",
+"v": 18
+}
+]
+}
+},
+{
+"a": 211.434,
+"b": 215.634,
+"c": "Chapter",
+"props": {
+"n": "3",
+"title": "A Serengeti Behind the Dikes"
+}
+},
+{
+"a": 234.434,
+"b": 238.684,
+"c": "Year",
+"props": {
+"y": "2006",
+"sub": "WHITE-TAILED EAGLES NEST"
+}
+},
+{
+"a": 252.074,
+"b": 258.074,
+"c": "Stat",
+"props": {
+"to": 750000,
+"label": "CINEMA TICKETS \u00b7 THE NEW WILDERNESS, 2013",
+"suf": "+"
+}
+},
+{
+"a": 267.034,
+"b": 271.504,
+"c": "Chapter",
+"props": {
+"n": "4",
+"title": "The Number Nobody Saw"
+}
+},
+{
+"a": 271.654,
+"b": 274.484,
+"c": "Big",
+"props": {
+"txt": "56 km\u00b2",
+"sub": "FENCED IN ON EVERY SIDE"
+}
+},
+{
+"a": 286.114,
+"b": 288.124,
+"c": "Big",
+"props": {
+"txt": "0 PREDATORS",
+"sub": "NO WOLVES \u00b7 NO BEARS \u00b7 NO LYNX"
+}
+},
+{
+"a": 293.318,
+"b": 297.318,
+"c": "Year",
+"props": {
+"y": "2010",
+"sub": "ABOUT 3,000 ANIMALS"
+}
+},
+{
+"a": 301.958,
+"b": 303.688,
+"c": "Big",
+"props": {
+"txt": "NO WINTER FEEDING",
+"sub": "GOVERNMENT COMMISSION, 2010"
+}
+},
+{
+"a": 320.738,
+"b": 325.248,
+"c": "Stat",
+"props": {
+"to": 5230,
+"label": "LARGE ANIMALS \u00b7 OCTOBER 2017",
+"suf": "+"
+}
+},
+{
+"a": 327.578,
+"b": 333.848,
+"c": "Big",
+"props": {
+"txt": "93",
+"sub": "GRAZERS PER SQUARE KILOMETRE"
+}
+},
+{
+"a": 333.998,
+"b": 336.308,
+"c": "Chapter",
+"props": {
+"n": "5",
+"title": "The Winter"
+}
+},
+{
+"a": 349.798,
+"b": 363.328,
+"c": "Bars",
+"props": {
+"head": "DIED \u00b7 DEC 2017 \u2013 APR 2018",
+"rows": [
+{
+"k": "Red deer",
+"v": 2684
+},
+{
+"k": "Horses",
+"v": 467
+},
+{
+"k": "Cattle",
+"v": 75
+}
+]
+}
+},
+{
+"a": 368.678,
+"b": 376.688,
+"c": "Big",
+"props": {
+"txt": "89%",
+"sub": "SHOT BY RANGERS"
+}
+},
+{
+"a": 398.518,
+"b": 406.448,
+"c": "Year",
+"props": {
+"y": "2018",
+"sub": "FIVE ARRESTED AT THE GATE"
+}
+},
+{
+"a": 406.598,
+"b": 412.308,
+"c": "Big",
+"props": {
+"txt": "21",
+"sub": "FENCE CUTS IN ONE NIGHT"
+}
+},
+{
+"a": 425.938,
+"b": 429.888,
+"c": "Chapter",
+"props": {
+"n": "6",
+"title": "Who Was Right?"
+}
+},
+{
+"a": 454.641,
+"b": 465.071,
+"c": "Quote",
+"props": {
+"txt": "The area can support no more than 1,500 large mammals.",
+"src": "DUTCH GOVERNMENT COMMITTEE, APRIL 2018"
+}
+},
+{
+"a": 469.041,
+"b": 478.551,
+"c": "Year",
+"props": {
+"y": "2018",
+"sub": "THE EXPERIMENT ENDS"
+}
+},
+{
+"a": 481.321,
+"b": 489.791,
+"c": "Year",
+"props": {
+"y": "2019",
+"sub": "A JUDGE STOPS THE DEER CULL"
+}
+},
+{
+"a": 507.421,
+"b": 509.051,
+"c": "Big",
+"props": {
+"txt": "28 OF 55",
+"sub": "RESCUED KONIKS PUT DOWN \u00b7 2024"
+}
+},
+{
+"a": 509.201,
+"b": 513.831,
+"c": "Chapter",
+"props": {
+"n": "7",
+"title": "Who Rules It Now"
+}
+},
+{
+"a": 529.521,
+"b": 536.571,
+"c": "Stat",
+"props": {
+"to": 40,
+"label": "EAGLE PAIRS IN THE NETHERLANDS \u00b7 2024"
+}
+},
+{
+"a": 567.381,
+"b": 579.73,
+"c": "Next",
+"props": {
+"title": "Argentina Released 20 Beavers in 1946 \u2014 Now 100,000 Are Eating the End of the World",
+"img": "img/rewild01/s178_1.png"
+}
+}
+]
+}
