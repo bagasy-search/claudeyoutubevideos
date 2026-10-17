@@ -1,0 +1,427 @@
+{
+"clips": {
+"aceite_bisagra": 2.33,
+"aceite_botella": 3.0,
+"aceite_caliente": 2.83,
+"agua_marron": 3.07,
+"ampolla": 3.0,
+"babosa_hoja": 2.7,
+"balde_agua_herr": 2.83,
+"barniz_uv": 3.07,
+"bicarbonato": 3.1,
+"borax_azucar": 3.0,
+"burbujas": 3.0,
+"burbujea": 2.57,
+"burbujea_desague": 3.07,
+"calentar_pieza": 3.07,
+"camara_bici": 2.97,
+"cano_gotea": 3.07,
+"caucho_liquido": 3.13,
+"cepillar_carbon": 3.07,
+"cepillar_residuo": 3.07,
+"cepillo_alambre": 3.07,
+"cepillo_grieta": 2.57,
+"cerveza_trampa": 3.1,
+"cinta_cobre": 3.07,
+"cinta_faro": 3.07,
+"cortar_ras": 3.07,
+"cortatubos": 2.83,
+"cucarachas_huyen": 3.1,
+"cutter_v": 2.83,
+"dar_vuelta": 3.1,
+"dedo_marco": 3.07,
+"empujar_acople": 2.97,
+"fijador": 3.13,
+"fila_hormigas": 3.1,
+"hormiguero": 2.57,
+"lana_acero": 2.83,
+"larvas_agua": 3.07,
+"levantar_carton": 2.57,
+"lija_agua": 3.07,
+"linterna_fuera": 3.07,
+"llave_paso": 3.07,
+"madera_quemada": 3.07,
+"malla_fibra": 3.07,
+"malla_refuerzo": 3.1,
+"mango_espatula": 2.83,
+"manguera": 3.1,
+"mano1": 3.07,
+"masilla_cruz": 2.97,
+"masilla_lija": 3.07,
+"mas_hormigas": 2.93,
+"menta_algodon": 2.33,
+"mojar_carton": 3.13,
+"no_roer": 3.07,
+"oxido_solo": 3.1,
+"palillos_cola": 2.97,
+"pava_hirviendo": 3.13,
+"pintar_te": 3.07,
+"piso_inundado": 3.13,
+"pomo_sellador": 2.7,
+"porton_oxidado": 2.83,
+"pulir_faro": 3.0,
+"pulverizar": 2.83,
+"reja_pintar": 3.07,
+"ruta_noche": 2.93,
+"sarten_macro": 2.7,
+"sellador_pistola": 3.07,
+"se_da_vuelta": 3.07,
+"silla_cojea": 3.0,
+"sopapa": 3.07,
+"soplete_distancia": 3.0,
+"sumergir_pieza": 3.07,
+"tanque_gotas": 2.83,
+"tapar_huecos": 3.13,
+"termitas_macro": 2.93,
+"terron_cafe": 3.07,
+"te_cargado": 3.0,
+"tornillo_gira": 3.07
+},
+"stock": {
+"amanecer_techos": 47.89,
+"amoladora": 29.56,
+"apolillado": 40.13,
+"atardecer_techos": 14.41,
+"bebedero_peces": 14.45,
+"buho": 6.16,
+"cafe": 43.94,
+"calor_techo": 13.61,
+"carton_macro": 7.04,
+"casa_japonesa": 15.36,
+"charco_patio": 11.98,
+"colonia": 6.81,
+"corralon": 10.92,
+"cucharada": 57.85,
+"entretecho": 11.96,
+"fumigacion": 23.24,
+"galpon_vacio": 8.83,
+"granel": 10.73,
+"gratis": 10.88,
+"grieta_diagonal": 9.28,
+"grieta_vuelve": 27.5,
+"helada_techo": 29.06,
+"herramienta_oxidada": 8.26,
+"japon_siglo": 8.01,
+"lavandina_rocia": 21.92,
+"lechuga_agujereada": 42.3,
+"lenera": 21.83,
+"lijando_oxido": 28.93,
+"limpiar_techo": 9.19,
+"lluvia_frio": 17.02,
+"lluvia_tejas": 6.68,
+"madera_afuera": 15.83,
+"mancha_techo": 8.28,
+"marco_comido": 8.6,
+"mudanza": 8.08,
+"obreras": 24.49,
+"oxido_fino": 10.0,
+"pared_sol": 7.27,
+"pintar_mil": 19.56,
+"pocas_muchas": 16.32,
+"primera_mano": 18.09,
+"profesional": 32.04,
+"quemar_carton": 12.52,
+"recorrer": 18.98,
+"restaurador": 6.88,
+"ruido_noche": 14.64,
+"sabado_sombra": 13.91,
+"sarten_hierro": 8.31,
+"sol_nubes": 22.79,
+"sol_techo": 11.01,
+"sol_templado": 30.3,
+"supermercado": 12.04,
+"taller_maquinas": 33.22,
+"tapar_arreglar": 11.52,
+"techista": 15.88,
+"techo_exterior": 24.44,
+"techo_mojado": 14.0,
+"techo_seco": 13.65,
+"tratada_corralon": 15.31,
+"tres_pasos": 14.13,
+"t_ants": 13.29,
+"t_brush_roof": 5.56,
+"t_roof_rain": 6.72,
+"t_sink_leak": 9.98,
+"t_trowel": 6.14,
+"t_wirebrush": 29.74
+},
+"m1vid": {},
+"reel": true,
+"win": [
+{
+"ms": 0,
+"me": 5.26,
+"off": 0.0
+},
+{
+"ms": 37.181,
+"me": 44.64,
+"off": 5.26
+},
+{
+"ms": 62.524,
+"me": 76.14,
+"off": 12.719
+},
+{
+"ms": 103.52,
+"me": 112.56,
+"off": 26.335
+},
+{
+"ms": 156.18,
+"me": 162.32,
+"off": 35.375
+},
+{
+"ms": 223.84,
+"me": 233.158,
+"off": 41.515
+},
+{
+"ms": 281.62,
+"me": 285.72,
+"off": 50.833
+},
+{
+"ms": 329.841,
+"me": 335.24,
+"off": 54.933
+},
+{
+"ms": 385.68,
+"me": 390.66,
+"off": 60.332
+},
+{
+"ms": 440.595,
+"me": 448.04,
+"off": 65.312
+},
+{
+"ms": 499.96,
+"me": 504.0,
+"off": 72.757
+},
+{
+"ms": 548.998,
+"me": 557.42,
+"off": 76.797
+},
+{
+"ms": 612.5,
+"me": 616.98,
+"off": 85.219
+},
+{
+"ms": 667.931,
+"me": 676.937,
+"off": 89.699
+},
+{
+"ms": 715.677,
+"me": 722.057,
+"off": 98.705
+},
+{
+"ms": 764.805,
+"me": 772.078,
+"off": 105.085
+},
+{
+"ms": 814.878,
+"me": 821.278,
+"off": 112.358
+},
+{
+"ms": 865.737,
+"me": 875.018,
+"off": 118.758
+},
+{
+"ms": 916.997,
+"me": 923.898,
+"off": 128.039
+},
+{
+"ms": 957.818,
+"me": 967.237,
+"off": 134.94
+},
+{
+"ms": 998.365,
+"me": 1003.097,
+"off": 144.359
+},
+{
+"ms": 1044.918,
+"me": 1052.577,
+"off": 149.091
+},
+{
+"ms": 1102.277,
+"me": 1106.258,
+"off": 156.75
+},
+{
+"ms": 1153.703,
+"me": 1161.268,
+"off": 160.731
+},
+{
+"ms": 1201.377,
+"me": 1207.738,
+"off": 168.296
+},
+{
+"ms": 1254.008,
+"me": 1263.92,
+"off": 174.657
+},
+{
+"ms": 1283.608,
+"me": 1292.715,
+"off": 184.569
+},
+{
+"ms": 1321.195,
+"me": 1327.655,
+"off": 193.676
+},
+{
+"ms": 1351.127,
+"me": 1368.135,
+"off": 200.136
+},
+{
+"ms": 1376.489,
+"me": 1386.179,
+"off": 217.144
+},
+{
+"ms": 1426.655,
+"me": 1431.755,
+"off": 226.834
+},
+{
+"ms": 1470.835,
+"me": 1477.735,
+"off": 231.934
+},
+{
+"ms": 1522.375,
+"me": 1529.215,
+"off": 238.834
+},
+{
+"ms": 1567.896,
+"me": 1575.395,
+"off": 245.674
+},
+{
+"ms": 1617.355,
+"me": 1622.755,
+"off": 253.173
+},
+{
+"ms": 1653.741,
+"me": 1663.035,
+"off": 258.573
+},
+{
+"ms": 1698.615,
+"me": 1703.355,
+"off": 267.867
+},
+{
+"ms": 1758.175,
+"me": 1765.955,
+"off": 272.607
+},
+{
+"ms": 1799.535,
+"me": 1804.215,
+"off": 280.387
+},
+{
+"ms": 1852.449,
+"me": 1859.895,
+"off": 285.067
+},
+{
+"ms": 1895.892,
+"me": 1900.552,
+"off": 292.513
+},
+{
+"ms": 1932.033,
+"me": 1938.452,
+"off": 297.173
+},
+{
+"ms": 1970.872,
+"me": 1977.532,
+"off": 303.592
+},
+{
+"ms": 2013.832,
+"me": 2019.892,
+"off": 310.252
+},
+{
+"ms": 2055.393,
+"me": 2059.919,
+"off": 316.312
+},
+{
+"ms": 2091.433,
+"me": 2098.952,
+"off": 320.838
+},
+{
+"ms": 2133.693,
+"me": 2137.635,
+"off": 328.3571
+},
+{
+"ms": 2182.112,
+"me": 2191.212,
+"off": 332.299
+},
+{
+"ms": 2229.872,
+"me": 2235.259,
+"off": 341.399
+},
+{
+"ms": 2271.485,
+"me": 2276.052,
+"off": 346.7861
+},
+{
+"ms": 2336.052,
+"me": 2342.913,
+"off": 351.3531
+},
+{
+"ms": 2393.117,
+"me": 2407.873,
+"off": 358.2141
+},
+{
+"ms": 2418.211,
+"me": 2421.412,
+"off": 372.9701
+},
+{
+"ms": 2457.532,
+"me": 2462.772,
+"off": 376.1711
+},
+{
+"ms": 2478.632,
+"me": 2518.63,
+"off": 381.4111
+}
+]
+}
