@@ -1,0 +1,2217 @@
+{
+"end": 679.02,
+"shots": [
+{
+"a": 0.0,
+"b": 6.24,
+"t": "vid",
+"k": "r_lem_0"
+},
+{
+"a": 6.24,
+"b": 7.24,
+"t": "img",
+"k": "a001"
+},
+{
+"a": 7.24,
+"b": 8.36,
+"t": "img",
+"k": "a002"
+},
+{
+"a": 8.36,
+"b": 10.9,
+"t": "img",
+"k": "a003"
+},
+{
+"a": 10.9,
+"b": 15.7,
+"t": "img",
+"k": "a004"
+},
+{
+"a": 15.7,
+"b": 16.96,
+"t": "img",
+"k": "a005"
+},
+{
+"a": 16.96,
+"b": 20.12,
+"t": "img",
+"k": "a006"
+},
+{
+"a": 20.12,
+"b": 23.94,
+"t": "comp",
+"c": "Temp",
+"props": {
+"head": "PASSING 50° SOUTH",
+"steps": [
+{
+"t": 20.12,
+"v": 6.0,
+"txt": "North of the line"
+},
+{
+"t": 21.76,
+"v": 3.0,
+"txt": "Two or three degrees colder"
+}
+],
+"k": "r_lem_1",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 23.94,
+"b": 26.78,
+"t": "vid",
+"k": "r_ibg_0"
+},
+{
+"a": 26.78,
+"b": 30.44,
+"t": "img",
+"k": "a009"
+},
+{
+"a": 30.44,
+"b": 32.48,
+"t": "img",
+"k": "a010"
+},
+{
+"a": 32.48,
+"b": 35.86,
+"t": "img",
+"k": "a011"
+},
+{
+"a": 35.86,
+"b": 37.08,
+"t": "img",
+"k": "a012"
+},
+{
+"a": 37.08,
+"b": 43.44,
+"t": "vid",
+"k": "r_ice_0"
+},
+{
+"a": 43.44,
+"b": 51.28,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "ONE LINE AROUND A CONTINENT",
+"sub": "More than thirty million years old",
+"ringT": 44.1,
+"zoom": [
+1.0,
+1.12
+]
+}
+},
+{
+"a": 51.28,
+"b": 53.92,
+"t": "comp",
+"c": "Title",
+"props": {
+"kicker": "SCIENTISTS CALL IT",
+"title": "THE ANTARCTIC POLAR FRONT",
+"k": "r_pol_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 53.92,
+"b": 60.18,
+"t": "vid",
+"k": "r_blw_0"
+},
+{
+"a": 60.18,
+"b": 64.52,
+"t": "vid",
+"k": "r_pol_1"
+},
+{
+"a": 64.52,
+"b": 68.98,
+"t": "vid",
+"k": "r_kcr_0"
+},
+{
+"a": 68.98,
+"b": 72.88,
+"t": "img",
+"k": "a020"
+},
+{
+"a": 72.88,
+"b": 77.72,
+"t": "img",
+"k": "a021"
+},
+{
+"a": 77.72,
+"b": 81.68,
+"t": "vid",
+"k": "r_lem_2"
+},
+{
+"a": 81.68,
+"b": 83.94,
+"t": "comp",
+"c": "Title",
+"props": {
+"kicker": "CHAPTER 1",
+"title": "THE WALL",
+"k": "r_col_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 83.94,
+"b": 86.62,
+"t": "img",
+"k": "a024"
+},
+{
+"a": 86.62,
+"b": 91.08,
+"t": "img",
+"k": "a025"
+},
+{
+"a": 91.08,
+"b": 93.78,
+"t": "img",
+"k": "a026"
+},
+{
+"a": 93.78,
+"b": 96.9,
+"t": "img",
+"k": "a027"
+},
+{
+"a": 96.9,
+"b": 99.28,
+"t": "img",
+"k": "a028"
+},
+{
+"a": 99.28,
+"b": 106.84,
+"t": "comp",
+"c": "Temp",
+"props": {
+"head": "SURFACE WATER",
+"steps": [
+{
+"t": 99.28,
+"v": 6.5,
+"txt": "North of the front: 5 to 8 °C"
+},
+{
+"t": 103.9,
+"v": 2.0,
+"txt": "South of the front: about 2 °C"
+}
+],
+"k": "r_cuv_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 106.84,
+"b": 111.78,
+"t": "vid",
+"k": "r_ris_0"
+},
+{
+"a": 111.78,
+"b": 114.2,
+"t": "img",
+"k": "a032"
+},
+{
+"a": 114.2,
+"b": 123.12,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "A NARROW ZONE",
+"sub": "Often only a few dozen kilometers wide",
+"band": true,
+"ringT": 114.2,
+"zoom": [
+1.0,
+1.55
+],
+"focus": [
+-55,
+-30
+]
+}
+},
+{
+"a": 123.12,
+"b": 127.16,
+"t": "comp",
+"c": "Layers",
+"props": {
+"mode": "slide",
+"t1": 124.9
+}
+},
+{
+"a": 127.16,
+"b": 132.68,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "BETWEEN 50° AND 60° SOUTH",
+"ringT": 127.16,
+"labels": [
+{
+"txt": "50°S",
+"lat": -50,
+"lon": 20,
+"t": 130.72,
+"color": "#5FD3F3"
+},
+{
+"txt": "60°S",
+"lat": -60,
+"lon": 160,
+"t": 131.28,
+"color": "#5FD3F3"
+}
+]
+}
+},
+{
+"a": 132.68,
+"b": 138.46,
+"t": "img",
+"k": "a037"
+},
+{
+"a": 138.46,
+"b": 143.44,
+"t": "vid",
+"k": "broll/abyss01/a040.mp4",
+"rate": 0.602
+},
+{
+"a": 143.44,
+"b": 148.26,
+"t": "vid",
+"k": "r_cuv_1"
+},
+{
+"a": 148.26,
+"b": 150.84,
+"t": "vid",
+"k": "r_blw_1"
+},
+{
+"a": 150.84,
+"b": 152.66,
+"t": "vid",
+"k": "broll/abyss01/a043.mp4",
+"rate": 1.0
+},
+{
+"a": 152.66,
+"b": 154.72,
+"t": "vid",
+"k": "r_str_0"
+},
+{
+"a": 154.72,
+"b": 157.28,
+"t": "vid",
+"k": "broll/abyss01/a045.mp4",
+"rate": 1.0
+},
+{
+"a": 157.28,
+"b": 162.72,
+"t": "vid",
+"k": "r_pol_2"
+},
+{
+"a": 162.72,
+"b": 172.129,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "ANTARCTIC CIRCUMPOLAR CURRENT",
+"sub": "West to east · more than 20,000 km",
+"flow": true,
+"ringT": 162.72,
+"zoom": [
+1.0,
+1.1
+]
+}
+},
+{
+"a": 172.129,
+"b": 175.449,
+"t": "vid",
+"k": "broll/abyss01/a049.mp4",
+"rate": 0.904
+},
+{
+"a": 175.449,
+"b": 177.709,
+"t": "comp",
+"c": "Stat",
+"props": {
+"big": "4,000 m",
+"cap": "From the surface to the sea floor",
+"t": 175.449,
+"k": "r_ibg_1",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 177.709,
+"b": 179.429,
+"t": "vid",
+"k": "r_pol_3"
+},
+{
+"a": 179.429,
+"b": 185.789,
+"t": "comp",
+"c": "Stat",
+"props": {
+"kicker": "1 SVERDRUP",
+"big": "1,000,000 m³/s",
+"cap": "One million cubic meters of water every second",
+"t": 182.629,
+"k": "r_pol_4",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 185.789,
+"b": 194.449,
+"t": "comp",
+"c": "Bars",
+"props": {
+"head": "WATER MOVED EVERY SECOND",
+"max": 140,
+"rows": [
+{
+"txt": "Every river on Earth",
+"v": 1.2,
+"val": "≈ 1 Sv",
+"t": 185.789
+},
+{
+"txt": "Antarctic Circumpolar Current",
+"v": 130,
+"val": "100+ Sv",
+"t": 190.549,
+"color": "#F2A65A"
+}
+],
+"k": "r_thc_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 194.449,
+"b": 199.329,
+"t": "vid",
+"k": "r_pol_5"
+},
+{
+"a": 199.329,
+"b": 202.349,
+"t": "vid",
+"k": "broll/abyss01/a057.mp4",
+"rate": 0.993
+},
+{
+"a": 202.349,
+"b": 208.209,
+"t": "img",
+"k": "a058"
+},
+{
+"a": 208.209,
+"b": 210.349,
+"t": "img",
+"k": "a059"
+},
+{
+"a": 210.349,
+"b": 212.949,
+"t": "vid",
+"k": "broll/abyss01/a060.mp4",
+"rate": 1.0
+},
+{
+"a": 212.949,
+"b": 221.949,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "WHERE A LARVA ENDS UP",
+"ringT": 212.949,
+"flow": true,
+"drift": {
+"t0": 212.949,
+"t1": 221.949
+}
+}
+},
+{
+"a": 221.949,
+"b": 227.589,
+"t": "vid",
+"k": "r_pol_6"
+},
+{
+"a": 227.589,
+"b": 230.629,
+"t": "vid",
+"k": "r_thc_1"
+},
+{
+"a": 230.629,
+"b": 233.469,
+"t": "img",
+"k": "a066"
+},
+{
+"a": 233.469,
+"b": 239.009,
+"t": "vid",
+"k": "broll/abyss01/a067.mp4",
+"rate": 0.55
+},
+{
+"a": 239.009,
+"b": 251.529,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "CUT OFF BY DEEP OCEAN",
+"ringT": 239.009,
+"zoom": [
+1.0,
+1.7
+],
+"focus": [
+-60,
+-62
+],
+"labels": [
+{
+"txt": "South America",
+"lat": -46,
+"lon": -70,
+"t": 244.429,
+"dx": -20
+},
+{
+"txt": "Antarctic Peninsula",
+"lat": -66,
+"lon": -62,
+"t": 246.009
+},
+{
+"txt": "Drake Passage · ~800 km",
+"lat": -58.5,
+"lon": -64,
+"t": 247.349,
+"color": "#5FD3F3"
+}
+]
+}
+},
+{
+"a": 251.529,
+"b": 255.309,
+"t": "img",
+"k": "a071"
+},
+{
+"a": 255.309,
+"b": 256.389,
+"t": "vid",
+"k": "broll/abyss01/a072.mp4",
+"rate": 1.0
+},
+{
+"a": 256.389,
+"b": 258.609,
+"t": "comp",
+"c": "Title",
+"props": {
+"kicker": "CHAPTER 2",
+"title": "BEFORE THE ICE",
+"k": "r_fra_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 258.609,
+"b": 262.469,
+"t": "comp",
+"c": "Time",
+"props": {
+"head": "ANTARCTICA",
+"marks": [
+{
+"txt": "40 million years ago",
+"sub": "Forests · mild seas",
+"x": 12,
+"t": 258.609
+}
+],
+"k": "r_emp_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 262.469,
+"b": 263.669,
+"t": "vid",
+"k": "broll/abyss01/a075.mp4",
+"rate": 1.0
+},
+{
+"a": 263.669,
+"b": 265.149,
+"t": "img",
+"k": "a076"
+},
+{
+"a": 265.149,
+"b": 269.229,
+"t": "vid",
+"k": "broll/abyss01/a077.mp4",
+"rate": 0.735
+},
+{
+"a": 269.229,
+"b": 273.469,
+"t": "img",
+"k": "a078"
+},
+{
+"a": 273.469,
+"b": 277.129,
+"t": "vid",
+"k": "broll/abyss01/a079.mp4",
+"rate": 0.82
+},
+{
+"a": 277.129,
+"b": 278.929,
+"t": "comp",
+"c": "Time",
+"props": {
+"head": "THEN THE CONTINENTS MOVED",
+"marks": [
+{
+"txt": "Gateways open",
+"sub": "Tasmania · Drake Passage",
+"x": 45,
+"t": 277.129
+}
+],
+"k": "r_sim_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 278.929,
+"b": 286.809,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "THE GATEWAYS OPEN",
+"ring": false,
+"labels": [
+{
+"txt": "Tasmanian Gateway",
+"lat": -50,
+"lon": 146,
+"t": 281.529
+},
+{
+"txt": "Drake Passage",
+"lat": -58.5,
+"lon": -64,
+"t": 285.849
+}
+]
+}
+},
+{
+"a": 286.809,
+"b": 291.889,
+"t": "vid",
+"k": "r_pol_7"
+},
+{
+"a": 291.889,
+"b": 294.369,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "THE CIRCUMPOLAR CURRENT IS BORN",
+"ringT": 291.889,
+"flow": true,
+"zoom": [
+1.05,
+1.0
+]
+}
+},
+{
+"a": 294.369,
+"b": 299.649,
+"t": "vid",
+"k": "r_sim_1"
+},
+{
+"a": 299.649,
+"b": 303.969,
+"t": "comp",
+"c": "Time",
+"props": {
+"head": "THE BIG FREEZE",
+"marks": [
+{
+"txt": "34 million years ago",
+"sub": "Ice sheets spread",
+"x": 55,
+"t": 299.649
+},
+{
+"txt": "Today",
+"sub": "The coldest ocean on Earth",
+"x": 90,
+"t": 303.969
+}
+],
+"k": "r_ris_1",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 303.969,
+"b": 307.869,
+"t": "vid",
+"k": "r_ibg_2"
+},
+{
+"a": 307.869,
+"b": 311.729,
+"t": "vid",
+"k": "broll/abyss01/a089.mp4",
+"rate": 0.777
+},
+{
+"a": 311.729,
+"b": 314.369,
+"t": "vid",
+"k": "r_emp_1"
+},
+{
+"a": 314.369,
+"b": 316.789,
+"t": "img",
+"k": "a091"
+},
+{
+"a": 316.789,
+"b": 319.589,
+"t": "vid",
+"k": "r_fra_1"
+},
+{
+"a": 319.589,
+"b": 322.449,
+"t": "vid",
+"k": "r_ice_1"
+},
+{
+"a": 322.449,
+"b": 326.829,
+"t": "comp",
+"c": "Title",
+"props": {
+"kicker": "CHAPTER 3",
+"title": "THE MISSING CRABS",
+"k": "r_kcr_1",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 326.829,
+"b": 333.209,
+"t": "vid",
+"k": "broll/abyss01/a095.mp4",
+"rate": 0.55
+},
+{
+"a": 333.209,
+"b": 335.309,
+"t": "img",
+"k": "a096"
+},
+{
+"a": 335.309,
+"b": 337.769,
+"t": "img",
+"k": "a097"
+},
+{
+"a": 337.769,
+"b": 340.199,
+"t": "img",
+"k": "a098"
+},
+{
+"a": 340.199,
+"b": 344.119,
+"t": "comp",
+"c": "Stat",
+"props": {
+"kicker": "SEAWATER",
+"big": "Mg",
+"cap": "About 1.3 grams of magnesium in every liter",
+"t": 341.739,
+"k": "r_pib_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 344.119,
+"b": 348.979,
+"t": "img",
+"k": "a100"
+},
+{
+"a": 348.979,
+"b": 362.639,
+"t": "comp",
+"c": "Chart",
+"props": {
+"head": "MAGNESIUM IN A CRAB'S BLOOD",
+"xl": "Water temperature: mild  →  near freezing",
+"yl": "Mg in the blood",
+"pts": [
+[
+0,
+0.12
+],
+[
+0.3,
+0.16
+],
+[
+0.55,
+0.25
+],
+[
+0.75,
+0.45
+],
+[
+0.9,
+0.72
+],
+[
+1.0,
+0.95
+]
+],
+"t": 352.979,
+"note": "Like an anesthetic",
+"k": "r_ris_2",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 362.639,
+"b": 365.579,
+"t": "vid",
+"k": "r_kcr_2"
+},
+{
+"a": 365.579,
+"b": 368.699,
+"t": "vid",
+"k": "r_neo_0"
+},
+{
+"a": 368.699,
+"b": 372.839,
+"t": "img",
+"k": "a107"
+},
+{
+"a": 372.839,
+"b": 375.519,
+"t": "vid",
+"k": "broll/abyss01/a108.mp4",
+"rate": 1.0
+},
+{
+"a": 375.519,
+"b": 377.779,
+"t": "img",
+"k": "a109"
+},
+{
+"a": 377.779,
+"b": 380.999,
+"t": "vid",
+"k": "broll/abyss01/a110.mp4",
+"rate": 0.932
+},
+{
+"a": 380.999,
+"b": 385.719,
+"t": "vid",
+"k": "r_col_1"
+},
+{
+"a": 385.719,
+"b": 389.879,
+"t": "vid",
+"k": "broll/abyss01/a112.mp4",
+"rate": 0.721
+},
+{
+"a": 389.879,
+"b": 391.839,
+"t": "vid",
+"k": "r_pib_1"
+},
+{
+"a": 391.839,
+"b": 394.799,
+"t": "comp",
+"c": "Stat",
+"props": {
+"kicker": "NOTOTHENIOIDS",
+"big": "≈ 90%",
+"cap": "of the fish on parts of the Antarctic shelf, by weight",
+"t": 392.539,
+"k": "r_ibg_3",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 394.799,
+"b": 398.559,
+"t": "vid",
+"k": "broll/abyss01/a115.mp4",
+"rate": 0.798
+},
+{
+"a": 398.559,
+"b": 406.939,
+"t": "comp",
+"c": "Temp",
+"props": {
+"head": "FREEZING POINT",
+"steps": [
+{
+"t": 398.559,
+"v": -0.7,
+"txt": "Ordinary fish blood freezes"
+},
+{
+"t": 403.919,
+"v": -1.9,
+"txt": "Antarctic seawater"
+}
+],
+"k": "r_col_2",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 406.939,
+"b": 413.279,
+"t": "img",
+"k": "a118"
+},
+{
+"a": 413.279,
+"b": 415.519,
+"t": "img",
+"k": "a119"
+},
+{
+"a": 415.519,
+"b": 422.619,
+"t": "vid",
+"k": "broll/abyss01/a120.mp4",
+"rate": 0.55
+},
+{
+"a": 422.619,
+"b": 425.499,
+"t": "vid",
+"k": "r_ice_2"
+},
+{
+"a": 425.499,
+"b": 433.279,
+"t": "img",
+"k": "a122"
+},
+{
+"a": 433.279,
+"b": 440.339,
+"t": "img",
+"k": "a123"
+},
+{
+"a": 440.339,
+"b": 448.119,
+"t": "vid",
+"k": "broll/abyss01/a124.mp4",
+"rate": 0.55
+},
+{
+"a": 448.119,
+"b": 451.439,
+"t": "img",
+"k": "a126"
+},
+{
+"a": 451.439,
+"b": 456.899,
+"t": "vid",
+"k": "broll/abyss01/a127.mp4",
+"rate": 0.55
+},
+{
+"a": 456.899,
+"b": 460.479,
+"t": "img",
+"k": "a128"
+},
+{
+"a": 460.479,
+"b": 462.379,
+"t": "comp",
+"c": "Title",
+"props": {
+"kicker": "CHAPTER 4",
+"title": "NO WAY OUT",
+"k": "r_emp_2",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 462.379,
+"b": 464.779,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "THE WALL WORKS BOTH WAYS",
+"ringT": 462.379,
+"labels": [
+{
+"txt": "Too cold to come in",
+"lat": -64,
+"lon": 30,
+"t": 463.319,
+"color": "#5FD3F3"
+},
+{
+"txt": "Too warm to leave",
+"lat": -43,
+"lon": -150,
+"t": 467.439,
+"color": "#F2A65A"
+}
+]
+}
+},
+{
+"a": 464.779,
+"b": 469.719,
+"t": "vid",
+"k": "broll/abyss01/a131.mp4",
+"rate": 0.607
+},
+{
+"a": 469.719,
+"b": 475.759,
+"t": "comp",
+"c": "Temp",
+"props": {
+"head": "TOO WARM",
+"steps": [
+{
+"t": 469.719,
+"v": 0.0,
+"txt": "Home water for Antarctic fish"
+},
+{
+"t": 474.019,
+"v": 6.0,
+"txt": "Lethal for some Antarctic fish"
+}
+],
+"k": "r_lem_3",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 475.759,
+"b": 478.319,
+"t": "img",
+"k": "a133"
+},
+{
+"a": 478.319,
+"b": 479.879,
+"t": "vid",
+"k": "r_col_3"
+},
+{
+"a": 479.879,
+"b": 481.959,
+"t": "img",
+"k": "a135"
+},
+{
+"a": 481.959,
+"b": 483.479,
+"t": "vid",
+"k": "r_pol_8"
+},
+{
+"a": 483.479,
+"b": 495.399,
+"t": "comp",
+"c": "Recap",
+"props": {
+"head": "THE WALL, SO FAR",
+"items": [
+{
+"t": 486.279,
+"txt": "A current that sweeps larvae away"
+},
+{
+"t": 488.479,
+"txt": "A deep ocean no shallow animal can cross"
+},
+{
+"t": 491.279,
+"txt": "A cold that drugs crabs and freezes fish"
+}
+],
+"k": "r_fra_2",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 495.399,
+"b": 497.359,
+"t": "vid",
+"k": "r_ris_3"
+},
+{
+"a": 497.359,
+"b": 499.039,
+"t": "vid",
+"k": "broll/abyss01/a142.mp4",
+"rate": 1.0
+},
+{
+"a": 499.039,
+"b": 503.999,
+"t": "vid",
+"k": "broll/abyss01/a143.mp4",
+"rate": 0.605
+},
+{
+"a": 503.999,
+"b": 506.359,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "PALMER DEEP",
+"sub": "Western Antarctic Peninsula",
+"ringT": 503.999,
+"zoom": [
+1.1,
+2.3
+],
+"focus": [
+-64.9,
+-64.4
+],
+"labels": [
+{
+"txt": "Palmer Deep",
+"lat": -64.9,
+"lon": -64.4,
+"t": 503.999
+}
+]
+}
+},
+{
+"a": 506.359,
+"b": 510.988,
+"t": "vid",
+"k": "r_kcr_3"
+},
+{
+"a": 510.988,
+"b": 512.428,
+"t": "img",
+"k": "a146"
+},
+{
+"a": 512.428,
+"b": 516.968,
+"t": "vid",
+"k": "broll/abyss01/a147.mp4",
+"rate": 0.661
+},
+{
+"a": 516.968,
+"b": 520.888,
+"t": "comp",
+"c": "Stat",
+"props": {
+"big": "1,500,000+",
+"cap": "king crabs estimated in one basin",
+"t": 518.548,
+"k": "r_kcr_4",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 520.888,
+"b": 523.508,
+"t": "img",
+"k": "a149"
+},
+{
+"a": 523.508,
+"b": 537.228,
+"t": "comp",
+"c": "Layers",
+"props": {
+"mode": "crabs",
+"t1": 523.508,
+"t2": 531.508
+}
+},
+{
+"a": 537.228,
+"b": 541.548,
+"t": "img",
+"k": "a153"
+},
+{
+"a": 541.548,
+"b": 547.128,
+"t": "img",
+"k": "a154"
+},
+{
+"a": 547.128,
+"b": 550.168,
+"t": "vid",
+"k": "broll/abyss01/a155.mp4",
+"rate": 0.987
+},
+{
+"a": 550.168,
+"b": 551.548,
+"t": "comp",
+"c": "Title",
+"props": {
+"kicker": "CHAPTER 5",
+"title": "THE CROSSING",
+"k": "r_rwb_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 551.548,
+"b": 556.028,
+"t": "vid",
+"k": "broll/abyss01/a157.mp4",
+"rate": 0.67
+},
+{
+"a": 556.028,
+"b": 560.428,
+"t": "img",
+"k": "a158"
+},
+{
+"a": 560.428,
+"b": 564.868,
+"t": "img",
+"k": "a159"
+},
+{
+"a": 564.868,
+"b": 568.148,
+"t": "img",
+"k": "a160"
+},
+{
+"a": 568.148,
+"b": 574.028,
+"t": "comp",
+"c": "Map",
+"props": {
+"head": "WHERE THE KELP CAME FROM",
+"ringT": 568.148,
+"labels": [
+{
+"txt": "King George Island",
+"lat": -62.1,
+"lon": -58.4,
+"t": 568.148
+},
+{
+"txt": "Kerguelen",
+"lat": -49.3,
+"lon": 69.5,
+"t": 569.228
+},
+{
+"txt": "South Georgia",
+"lat": -54.3,
+"lon": -36.5,
+"t": 571.328
+}
+],
+"routes": [
+{
+"pts": [
+[
+-49.3,
+69.5
+],
+[
+-52,
+100
+],
+[
+-55,
+140
+],
+[
+-58,
+180
+],
+[
+-60,
+-150
+],
+[
+-61,
+-110
+],
+[
+-62,
+-80
+],
+[
+-62.1,
+-58.4
+]
+],
+"t0": 572.168,
+"t1": 574.028
+}
+]
+}
+},
+{
+"a": 574.028,
+"b": 577.268,
+"t": "comp",
+"c": "Stat",
+"props": {
+"big": "20,000+ km",
+"cap": "One strand of kelp's journey",
+"t": 575.608,
+"k": "r_gold_0",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 577.268,
+"b": 582.108,
+"t": "vid",
+"k": "broll/abyss01/a164.mp4",
+"rate": 0.62
+},
+{
+"a": 582.108,
+"b": 584.308,
+"t": "vid",
+"k": "r_thc_2"
+},
+{
+"a": 584.308,
+"b": 589.048,
+"t": "vid",
+"k": "r_pol_9"
+},
+{
+"a": 589.048,
+"b": 593.708,
+"t": "vid",
+"k": "broll/abyss01/a167.mp4",
+"rate": 0.644
+},
+{
+"a": 593.708,
+"b": 595.388,
+"t": "comp",
+"c": "Layers",
+"props": {
+"mode": "surface",
+"t1": 593.708,
+"t2": 593.708
+}
+},
+{
+"a": 595.388,
+"b": 598.108,
+"t": "vid",
+"k": "broll/abyss01/a169.mp4",
+"rate": 1.0
+},
+{
+"a": 598.108,
+"b": 603.428,
+"t": "img",
+"k": "a170"
+},
+{
+"a": 603.428,
+"b": 605.328,
+"t": "vid",
+"k": "r_rwb_1"
+},
+{
+"a": 605.328,
+"b": 608.148,
+"t": "comp",
+"c": "Title",
+"props": {
+"kicker": "CHAPTER 6",
+"title": "THE CRACKS",
+"k": "r_str_1",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 608.148,
+"b": 613.628,
+"t": "vid",
+"k": "r_lem_4"
+},
+{
+"a": 613.628,
+"b": 618.468,
+"t": "comp",
+"c": "Chart",
+"props": {
+"head": "SUMMER SURFACE WATER, WEST OF THE PENINSULA",
+"xl": "1950s  →  2000s",
+"yl": "Temperature",
+"pts": [
+[
+0,
+0.2
+],
+[
+0.15,
+0.28
+],
+[
+0.3,
+0.24
+],
+[
+0.45,
+0.38
+],
+[
+0.6,
+0.45
+],
+[
+0.75,
+0.52
+],
+[
+0.9,
+0.66
+],
+[
+1.0,
+0.72
+]
+],
+"t": 613.628,
+"note": "≈ +1 °C",
+"k": "r_lem_5",
+"vid": true,
+"ofs": 0
+}
+},
+{
+"a": 618.468,
+"b": 624.248,
+"t": "vid",
+"k": "broll/abyss01/a175.mp4",
+"rate": 0.55
+},
+{
+"a": 624.248,
+"b": 629.268,
+"t": "vid",
+"k": "r_ibk_0"
+},
+{
+"a": 629.268,
+"b": 634.028,
+"t": "vid",
+"k": "r_pol_10"
+},
+{
+"a": 634.028,
+"b": 639.248,
+"t": "vid",
+"k": "r_ice_3"
+},
+{
+"a": 639.248,
+"b": 642.928,
+"t": "img",
+"k": "a179"
+},
+{
+"a": 642.928,
+"b": 645.908,
+"t": "vid",
+"k": "r_lic_0"
+},
+{
+"a": 645.908,
+"b": 651.788,
+"t": "img",
+"k": "a181"
+},
+{
+"a": 651.788,
+"b": 658.368,
+"t": "img",
+"k": "a182"
+},
+{
+"a": 658.368,
+"b": 660.348,
+"t": "vid",
+"k": "r_fra_3"
+},
+{
+"a": 660.348,
+"b": 663.768,
+"t": "comp",
+"c": "Map",
+"props": {
+"ringT": 658.368,
+"flow": true,
+"zoom": [
+1.12,
+1.0
+]
+}
+},
+{
+"a": 663.768,
+"b": 667.608,
+"t": "img",
+"k": "a185"
+},
+{
+"a": 667.608,
+"b": 669.368,
+"t": "img",
+"k": "a186"
+},
+{
+"a": 669.368,
+"b": 674.208,
+"t": "img",
+"k": "a187"
+},
+{
+"a": 674.208,
+"b": 676.808,
+"t": "img",
+"k": "a188"
+},
+{
+"a": 676.808,
+"b": 679.02,
+"t": "comp",
+"c": "End",
+"props": {
+"next": "Something Lives at the Bottom of the Second Deepest Trench",
+"k": "r_pol_11",
+"vid": true,
+"ofs": 0
+}
+}
+],
+"overlays": [
+{
+"a": 0.0,
+"b": 6.24,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 20.12,
+"b": 23.94,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 23.94,
+"b": 26.78,
+"c": "Credit",
+"props": {
+"txt": "NASA"
+}
+},
+{
+"a": 37.08,
+"b": 43.44,
+"c": "Credit",
+"props": {
+"txt": "Video: Ferrando et al., PLOS ONE · CC BY 4.0"
+}
+},
+{
+"a": 51.28,
+"b": 53.92,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 53.92,
+"b": 60.18,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 60.18,
+"b": 64.52,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 64.52,
+"b": 68.98,
+"c": "Credit",
+"props": {
+"txt": "NOAA Ocean Exploration"
+}
+},
+{
+"a": 77.72,
+"b": 81.68,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 81.68,
+"b": 83.94,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 99.28,
+"b": 106.84,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 106.84,
+"b": 111.78,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 143.44,
+"b": 148.26,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 148.26,
+"b": 150.84,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 152.66,
+"b": 154.72,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 157.28,
+"b": 162.72,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 175.449,
+"b": 177.709,
+"c": "Credit",
+"props": {
+"txt": "NASA"
+}
+},
+{
+"a": 177.709,
+"b": 179.429,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 179.429,
+"b": 185.789,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 185.789,
+"b": 194.449,
+"c": "Credit",
+"props": {
+"txt": "NASA Goddard"
+}
+},
+{
+"a": 194.449,
+"b": 199.329,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 221.949,
+"b": 227.589,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 227.589,
+"b": 230.629,
+"c": "Credit",
+"props": {
+"txt": "NASA Goddard"
+}
+},
+{
+"a": 256.389,
+"b": 258.609,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 258.609,
+"b": 262.469,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 277.129,
+"b": 278.929,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 286.809,
+"b": 291.889,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 294.369,
+"b": 299.649,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 299.649,
+"b": 303.969,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 303.969,
+"b": 307.869,
+"c": "Credit",
+"props": {
+"txt": "NASA"
+}
+},
+{
+"a": 311.729,
+"b": 314.369,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 316.789,
+"b": 319.589,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 319.589,
+"b": 322.449,
+"c": "Credit",
+"props": {
+"txt": "Video: Ferrando et al., PLOS ONE · CC BY 4.0"
+}
+},
+{
+"a": 322.449,
+"b": 326.829,
+"c": "Credit",
+"props": {
+"txt": "NOAA Ocean Exploration"
+}
+},
+{
+"a": 340.199,
+"b": 344.119,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 348.979,
+"b": 362.639,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 362.639,
+"b": 364.379,
+"c": "Credit",
+"props": {
+"txt": "NOAA Ocean Exploration"
+}
+},
+{
+"a": 365.579,
+"b": 368.699,
+"c": "Credit",
+"props": {
+"txt": "NOAA Fisheries"
+}
+},
+{
+"a": 380.999,
+"b": 385.719,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 389.879,
+"b": 391.839,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 391.839,
+"b": 394.799,
+"c": "Credit",
+"props": {
+"txt": "NASA"
+}
+},
+{
+"a": 398.559,
+"b": 406.939,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 422.619,
+"b": 425.499,
+"c": "Credit",
+"props": {
+"txt": "Video: Ferrando et al., PLOS ONE · CC BY 4.0"
+}
+},
+{
+"a": 460.479,
+"b": 462.379,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 469.719,
+"b": 475.759,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 478.319,
+"b": 479.879,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 481.959,
+"b": 483.479,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 483.479,
+"b": 495.399,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 495.399,
+"b": 497.359,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 506.359,
+"b": 510.988,
+"c": "Credit",
+"props": {
+"txt": "NOAA Ocean Exploration"
+}
+},
+{
+"a": 516.968,
+"b": 520.888,
+"c": "Credit",
+"props": {
+"txt": "NOAA Ocean Exploration"
+}
+},
+{
+"a": 550.168,
+"b": 551.548,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 574.028,
+"b": 577.268,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 582.108,
+"b": 584.308,
+"c": "Credit",
+"props": {
+"txt": "NASA Goddard"
+}
+},
+{
+"a": 584.308,
+"b": 589.048,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 603.428,
+"b": 605.328,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 605.328,
+"b": 608.148,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 608.148,
+"b": 613.628,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 613.628,
+"b": 618.468,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 624.248,
+"b": 629.268,
+"c": "Credit",
+"props": {
+"txt": "Video: Lauren Farmer · CC BY 3.0"
+}
+},
+{
+"a": 629.268,
+"b": 634.028,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 634.028,
+"b": 639.248,
+"c": "Credit",
+"props": {
+"txt": "Video: Ferrando et al., PLOS ONE · CC BY 4.0"
+}
+},
+{
+"a": 642.928,
+"b": 645.908,
+"c": "Credit",
+"props": {
+"txt": "Video: Christopher Michel · CC BY 2.0"
+}
+},
+{
+"a": 658.368,
+"b": 660.348,
+"c": "Credit",
+"props": {
+"txt": "Video: Blagoj Klincharski · CC BY 3.0"
+}
+},
+{
+"a": 676.808,
+"b": 679.02,
+"c": "Credit",
+"props": {
+"txt": "NASA Scientific Visualization Studio"
+}
+},
+{
+"a": 346.919,
+"b": 351.11899999999997,
+"c": "Lower",
+"props": {
+"name": "Around the year 2000",
+"sub": "Lab studies on crabs and lobsters in the cold"
+}
+},
+{
+"a": 406.939,
+"b": 411.139,
+"c": "Lower",
+"props": {
+"name": "Arthur DeVries",
+"sub": "McMurdo Station · 1960s"
+}
+},
+{
+"a": 425.499,
+"b": 429.699,
+"c": "Lower",
+"props": {
+"name": "Bouvet Island",
+"sub": "1927"
+}
+},
+{
+"a": 433.279,
+"b": 437.479,
+"c": "Lower",
+"props": {
+"name": "Johan Ruud",
+"sub": "Described the icefish · 1954"
+}
+},
+{
+"a": 499.039,
+"b": 503.239,
+"c": "Lower",
+"props": {
+"name": "Palmer Deep",
+"sub": "2010 · about 800 m down"
+}
+},
+{
+"a": 551.548,
+"b": 555.748,
+"c": "Lower",
+"props": {
+"name": "King George Island",
+"sub": "2017"
+}
+},
+{
+"a": 564.868,
+"b": 569.0680000000001,
+"c": "Lower",
+"props": {
+"name": "Ceridwen Fraser and team",
+"sub": "Kelp DNA study"
+}
+},
+{
+"a": 618.468,
+"b": 622.668,
+"c": "Lower",
+"props": {
+"name": "King George Island",
+"sub": "Mussels from South America"
+}
+}
+]
+}
