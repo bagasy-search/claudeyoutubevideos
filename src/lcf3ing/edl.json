@@ -1215,7 +1215,7 @@
    "k": "boiled_hotdog_gray",
    "c": "ItemCard",
    "props": {
-    "name": "ItemCard",
+    "name": "A hot dog boiled until it goes gray",
     "n": 11,
     "of": 30,
     "name_text": "boiled hot dog",
