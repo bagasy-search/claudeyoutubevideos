@@ -21,8 +21,8 @@ const useLife = (fin = 8, fout = 10) => {
 };
 
 // ─── TARJETA DE ÍTEM: "#4" gigante + nombre que se escribe, sobre el metraje oscurecido ───
-export const ApexNumber: React.FC<{ n: number; title: string; bed?: string; bedStart?: number; side?: "left" | "right" }> =
-  ({ n, title, bed, bedStart = 0, side = "left" }) => {
+export const ApexNumber: React.FC<{ n: number; title: string; bed?: string; bedStart?: number; side?: "left" | "right"; kicker?: string }> =
+  ({ n, title, bed, bedStart = 0, side = "left", kicker = "APEX FILE" }) => {
   const { f, D, fps } = useLife();
   const s = spring({ frame: f, fps, config: { damping: 16, stiffness: 90 } });
   const out = clamp((f - (D - 10)) / 10);
@@ -34,7 +34,7 @@ export const ApexNumber: React.FC<{ n: number; title: string; bed?: string; bedS
       <AbsoluteFill style={{ background: `linear-gradient(${left ? 90 : 270}deg, rgba(8,9,10,0.92) 0%, rgba(8,9,10,0.55) 55%, rgba(8,9,10,0.2) 100%)` }} />
       <div style={{ position: "absolute", top: 250, [left ? "left" : "right"]: 130, textAlign: left ? "left" : "right",
         transform: `translateY(${interpolate(s, [0, 1], [80, 0])}px) scale(${interpolate(s, [0, 1], [1.25, 1]) + out * 0.2})` } as React.CSSProperties}>
-        <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 46, letterSpacing: 14, color: AX.dim }}>APEX FILE</div>
+        <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 46, letterSpacing: 14, color: AX.dim }}>{kicker}</div>
         <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 400, lineHeight: 0.95, color: AX.red, textShadow: "0 20px 60px rgba(0,0,0,0.8)" }}>#{n}</div>
         <div style={{ width: ease((f - 6) / 18) * 760, height: 8, background: AX.bone, margin: left ? "10px 0 26px" : "10px 0 26px auto" }} />
         <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 104, color: AX.bone, letterSpacing: 3, whiteSpace: "nowrap" }}>
@@ -65,11 +65,11 @@ export const ApexTag: React.FC<{ place: string; sub?: string }> = ({ place, sub 
 };
 
 // ─── CIFRA: contador grande a la derecha con etiqueta ───
-export const ApexCount: React.FC<{ to: number; suffix?: string; label: string; sep?: boolean }> = ({ to, suffix = "", label, sep = false }) => {
+export const ApexCount: React.FC<{ to: number; suffix?: string; label: string; sep?: boolean; locale?: string }> = ({ to, suffix = "", label, sep = false, locale = "en-US" }) => {
   const { f, a } = useLife(8, 12);
   const t = 1 - Math.pow(1 - clamp((f - 4) / 36), 4);
   const v = Math.round(to * t);
-  const txt = sep ? v.toLocaleString("en-US") : String(v);
+  const txt = sep ? v.toLocaleString(locale) : String(v);
   return (
     <AbsoluteFill style={{ opacity: a, pointerEvents: "none" }}>
       <AbsoluteFill style={{ background: "linear-gradient(270deg, rgba(8,9,10,0.85) 0%, rgba(8,9,10,0.45) 40%, rgba(8,9,10,0) 68%)" }} />
@@ -107,13 +107,13 @@ export const ApexNote: React.FC<{ lines: string[]; kicker?: string }> = ({ lines
 };
 
 // ─── FICHA DE LA ESPECIE: nombre, latín y 3 datos en columna a la derecha ───
-export const ApexFile: React.FC<{ common: string; latin: string; facts: { k: string; v: string }[] }> = ({ common, latin, facts }) => {
+export const ApexFile: React.FC<{ common: string; latin: string; facts: { k: string; v: string }[]; kicker?: string }> = ({ common, latin, facts, kicker = "SPECIES FILE" }) => {
   const { f, a } = useLife(8, 12);
   return (
     <AbsoluteFill style={{ opacity: a, pointerEvents: "none" }}>
       <AbsoluteFill style={{ background: "linear-gradient(270deg, rgba(8,9,10,0.9) 0%, rgba(8,9,10,0.55) 36%, rgba(8,9,10,0) 62%)" }} />
       <div style={{ position: "absolute", right: 110, top: 220, width: 660 }}>
-        <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 34, letterSpacing: 10, color: AX.red }}>SPECIES FILE</div>
+        <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 34, letterSpacing: 10, color: AX.red }}>{kicker}</div>
         <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 84, lineHeight: 1.05, color: AX.bone, marginTop: 8 }}>{common}</div>
         <div style={{ fontFamily: BODY, fontStyle: "italic", fontSize: 36, color: AX.dim, marginTop: 4 }}>{latin}</div>
         <div style={{ height: 4, background: AX.red, width: ease((f - 6) / 16) * 660, margin: "26px 0 10px" }} />
