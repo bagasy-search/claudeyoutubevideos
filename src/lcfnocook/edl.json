@@ -1,0 +1,2558 @@
+{
+ "end": 911.597,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 9.45,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 9.45,
+   "b": 12.52,
+   "k": "knob",
+   "c": "Kinetic",
+   "props": {
+    "k": "knob",
+    "words": [
+     [
+      "TOO TIRED",
+      10.0
+     ],
+     [
+      "TO TURN",
+      10.6
+     ],
+     [
+      "A KNOB",
+      11.1
+     ],
+     [
+      "THIS IS SUPPER",
+      11.8
+     ]
+    ]
+   }
+  },
+  {
+   "a": 12.52,
+   "b": 17.13,
+   "k": "supper_anyway",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 17.13,
+   "b": 19.77,
+   "k": "plate_chair",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 19.77,
+   "b": 25.04,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 25.04,
+   "b": 29.84,
+   "k": "worst_night",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 29.84,
+   "b": 32.7,
+   "k": "no_knife",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 32.7,
+   "b": 37.58,
+   "k": "stay_end",
+   "c": "Note",
+   "props": {
+    "k": "stay_end",
+    "lines": [
+     {
+      "txt": "STAY WITH ME",
+      "t": 32.7
+     },
+     {
+      "txt": "TO THE END",
+      "t": 33.22
+     },
+     {
+      "txt": "THE ONE YOU NEED MOST",
+      "t": 35.84
+     }
+    ]
+   }
+  },
+  {
+   "a": 37.58,
+   "b": 40.82,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 40.82,
+   "b": 44.6,
+   "k": "county_road",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 44.6,
+   "b": 47.0,
+   "k": "cook_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 47.0,
+   "b": 50.68,
+   "k": "1950s_kitchen_stove_housewife",
+   "c": "Arc",
+   "props": {
+    "src": "1950s_kitchen_stove_housewife",
+    "cap": "1950s · a kitchen stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 50.68,
+   "b": 55.12,
+   "k": "one_plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 55.12,
+   "b": 61.04,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 61.04,
+   "b": 64.14,
+   "k": "loretta_fridge_plate_talk",
+   "c": "Tease",
+   "props": {
+    "k": "loretta_fridge_plate_talk",
+    "txt": "TEN-MINUTE TRICK",
+    "tag": "COMING UP #4"
+   }
+  },
+  {
+   "a": 64.14,
+   "b": 69.62,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 69.62,
+   "b": 79.92,
+   "k": "dome_counter",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "name": "Cooking your own chicken",
+    "instead": "a store rotisserie chicken",
+    "page": "PAGE 152",
+    "k": "dome_counter",
+    "bed": "loretta_bed_dome",
+    "t": 71.44,
+    "of": 7
+   }
+  },
+  {
+   "a": 79.92,
+   "b": 87.14,
+   "k": "loretta_reads_152",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 81.38
+     }
+    ],
+    "k": "loretta_reads_152"
+   }
+  },
+  {
+   "a": 87.14,
+   "b": 93.24,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 93.24,
+   "b": 98.2,
+   "k": "leg_thigh_plate",
+   "c": "Kinetic",
+   "props": {
+    "k": "leg_thigh_plate",
+    "words": [
+     [
+      "LEG AND THIGH",
+      94.06
+     ],
+     [
+      "ONE PLATE",
+      94.68
+     ],
+     [
+      "STILL WARM",
+      97.26
+     ]
+    ]
+   }
+  },
+  {
+   "a": 98.2,
+   "b": 100.74,
+   "k": "pulling_meat",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 100.74,
+   "b": 105.26,
+   "k": "two_containers",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 105.26,
+   "b": 108.98,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 108.98,
+   "b": 112.5,
+   "k": "receipt_hold",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 112.5,
+   "b": 115.98,
+   "k": "potatoes_soup_page",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 115.98,
+   "b": 119.14,
+   "k": "stove_on",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "ON THAT PAGE",
+      "t": 115.98
+     },
+     {
+      "txt": "A NIGHT THE STOVE IS ON",
+      "t": 117.1
+     }
+    ],
+    "k": "stove_on"
+   }
+  },
+  {
+   "a": 119.14,
+   "b": 123.56,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 123.56,
+   "b": 128.44,
+   "k": "danny_films",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 128.44,
+   "b": 139.2,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "danny_door",
+      "t": 128.44
+     },
+     {
+      "k": "chicken_counter",
+      "t": 134.26
+     },
+     {
+      "k": "clean_pans",
+      "t": 136.92
+     }
+    ]
+   }
+  },
+  {
+   "a": 139.2,
+   "b": 144.16,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 144.16,
+   "b": 147.42,
+   "k": "boy_hands_plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 147.42,
+   "b": 150.76,
+   "k": "book_pages",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 150.76,
+   "b": 153.7,
+   "k": "supper_for_one_cover",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 153.7,
+   "b": 157.98,
+   "k": "recipe_card_open",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "EVERY PAGE TELLS YOU WHAT IT COSTS",
+      "t": 155.6
+     }
+    ],
+    "k": "recipe_card_open"
+   }
+  },
+  {
+   "a": 157.98,
+   "b": 162.16,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 162.16,
+   "b": 167.18,
+   "k": "foil_packets",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 167.18,
+   "b": 170.85,
+   "k": "presenter_points_watch",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 170.85,
+   "b": 175.94,
+   "k": "1950s-oven-casserole-home-ec",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-oven-casserole-home-ec",
+    "cap": "1950s · a woman at the kitchen table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 175.94,
+   "b": 179.56,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 179.56,
+   "b": 183.54,
+   "k": "knife_on_board",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 183.54,
+   "b": 185.94,
+   "k": "store_breast",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 185.94,
+   "b": 193.44,
+   "k": "ladies_salad_card",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "name": "Leftover breast left to dry out",
+    "instead": "Ladies' luncheon chicken salad",
+    "page": "PAGE 100",
+    "k": "ladies_salad_card",
+    "k2": "leftover_breast",
+    "t": 190.12,
+    "of": 7
+   }
+  },
+  {
+   "a": 193.44,
+   "b": 198.02,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 198.02,
+   "b": 210.88,
+   "k": "empty_counter",
+   "c": "DropList",
+   "props": {
+    "k": "empty_counter",
+    "items": [
+     {
+      "label": "1½ cup chopped chicken",
+      "txt": "1½ cup chopped chicken",
+      "t": 198.6
+     },
+     {
+      "label": "¼ cup mayonnaise",
+      "txt": "¼ cup mayonnaise",
+      "t": 202.94
+     },
+     {
+      "label": "1 celery rib",
+      "txt": "1 celery rib",
+      "t": 205.14
+     },
+     {
+      "label": "½ cup red grapes, halved",
+      "txt": "½ cup red grapes, halved",
+      "t": 208.28
+     }
+    ]
+   }
+  },
+  {
+   "a": 210.88,
+   "b": 214.9,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 214.9,
+   "b": 218.24,
+   "k": "no_heat_bowl",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 218.24,
+   "b": 222.28,
+   "k": "ladies_luncheon_1950s",
+   "c": "Arc",
+   "props": {
+    "src": "ladies_luncheon_1950s",
+    "cap": "1950s · a table set for lunch",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 222.28,
+   "b": 229.137,
+   "k": "page_100_book",
+   "c": "PageUp",
+   "props": {
+    "k": "page_100_book",
+    "caption": {
+     "t": 225.32,
+     "hl": "makes three sandwiches",
+     "txt": "makes three sandwiches"
+    },
+    "pages": [
+     {
+      "src": "page100.png",
+      "tab": "PAGE 100",
+      "t": 223.68
+     }
+    ]
+   }
+  },
+  {
+   "a": 229.137,
+   "b": 232.937,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 232.937,
+   "b": 236.817,
+   "k": "fridge_bowl",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 236.817,
+   "b": 239.567,
+   "k": "orange_jar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 239.567,
+   "b": 246.757,
+   "k": "shredded_bag",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "name": "Bag of shredded cheese",
+    "instead": "Block cheese I grate myself",
+    "page": "PAGE 105",
+    "k": "shredded_bag",
+    "k2": "cheese_block",
+    "t": 243.617,
+    "of": 7
+   }
+  },
+  {
+   "a": 246.757,
+   "b": 252.377,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 252.377,
+   "b": 260.197,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "name": "SwapCard",
+    "old": {
+     "txt": "BAG OF SHREDDED CHEESE",
+     "k": "bag_powder"
+    },
+    "neu": {
+     "txt": "SHARP CHEDDAR BLOCK",
+     "k": "block_grater"
+    },
+    "t": 256.317,
+    "head": "INSTEAD",
+    "oldHead": "What most homes do today"
+   }
+  },
+  {
+   "a": 260.197,
+   "b": 263.797,
+   "k": "cream_cheese_spoon",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 263.797,
+   "b": 268.257,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 268.257,
+   "b": 271.257,
+   "k": "pimento_drain",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 271.257,
+   "b": 274.817,
+   "k": "fork_stir_bowl",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 274.817,
+   "b": 280.837,
+   "k": "kitchen_book_table",
+   "c": "PageUp",
+   "props": {
+    "name": "PageUp",
+    "pages": [
+     {
+      "src": "page105.png",
+      "tab": "PAGE 105",
+      "t": 276.397
+     }
+    ],
+    "k": "kitchen_book_table"
+   }
+  },
+  {
+   "a": 280.837,
+   "b": 284.457,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 284.457,
+   "b": 287.977,
+   "k": "light_supper_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 287.977,
+   "b": 290.737,
+   "k": "one_chair",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 290.737,
+   "b": 294.997,
+   "k": "methodist-basement-kitchen-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "methodist-basement-kitchen-1950s",
+    "cap": "1950s · a farm kitchen, mixing bowl",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 294.997,
+   "b": 300.137,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 300.137,
+   "b": 303.197,
+   "k": "church_basement_counter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 303.197,
+   "b": 310.417,
+   "k": "bernice_church_kitchen",
+   "c": "FrameArt",
+   "props": {
+    "k": "bernice_church_kitchen",
+    "bed": "kitchen_wall_gingham",
+    "caption": "Bernice",
+    "t": 303.197
+   }
+  },
+  {
+   "a": 310.417,
+   "b": 313.617,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 313.617,
+   "b": 320.697,
+   "k": "plate_on_counter",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "name": "Cottage cheese eaten at the sink",
+    "instead": "A tea-room cold plate, chilled 10 minutes",
+    "page": "PAGE 139",
+    "k": "plate_on_counter",
+    "t": 316.537,
+    "of": 7
+   }
+  },
+  {
+   "a": 320.697,
+   "b": 325.577,
+   "k": "loretta_chilled_plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 325.577,
+   "b": 329.777,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 329.777,
+   "b": 334.797,
+   "k": "lunch_counter_1950s",
+   "c": "Arc",
+   "props": {
+    "src": "lunch_counter_1950s",
+    "cap": "1950s · a restaurant kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 334.797,
+   "b": 337.737,
+   "k": "cottage_cheese_scoop",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 337.737,
+   "b": 341.997,
+   "k": "peaches_around_plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 341.997,
+   "b": 346.217,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 346.217,
+   "b": 353.177,
+   "k": "cookbook_on_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 347.657
+     }
+    ],
+    "caption": {
+     "txt": "five minutes",
+     "hl": "takes five minutes",
+     "t": 349.9
+    },
+    "k": "cookbook_on_table"
+   }
+  },
+  {
+   "a": 353.177,
+   "b": 357.317,
+   "k": "loretta_pulls_chair",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 357.317,
+   "b": 360.097,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 360.097,
+   "b": 369.497,
+   "k": "polaroid_fridge_night",
+   "c": "Memory",
+   "props": {
+    "k": "polaroid_fridge_night",
+    "caption": "the night after",
+    "date": "OCT 1986",
+    "t": 360.097
+   }
+  },
+  {
+   "a": 369.497,
+   "b": 374.617,
+   "k": "fridge_cold_plates_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 374.617,
+   "b": 377.097,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 377.097,
+   "b": 384.777,
+   "k": "table_one_plate",
+   "c": "Note",
+   "props": {
+    "k": "table_one_plate",
+    "lines": [
+     {
+      "txt": "Supper doesn't need the stove",
+      "t": 377.097
+     },
+     {
+      "txt": "a plate",
+      "t": 380.077
+     },
+     {
+      "txt": "a chair",
+      "t": 380.777
+     }
+    ]
+   }
+  },
+  {
+   "a": 384.777,
+   "b": 390.237,
+   "k": "1950s-supper-table-vegetables",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-supper-table-vegetables",
+    "cap": "1950s · a family supper table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 390.237,
+   "b": 398.537,
+   "k": "bare_side_plate",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "name": "Bare side plate",
+    "instead": "tomatoes and cucumbers in vinegar",
+    "page": "146",
+    "k": "bare_side_plate",
+    "t": 393.557,
+    "of": 7
+   }
+  },
+  {
+   "a": 398.537,
+   "b": 401.137,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 401.137,
+   "b": 406.097,
+   "k": "fixpg_1",
+   "c": "PageUp",
+   "props": {
+    "k": "fixpg_1",
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 401.137
+     }
+    ]
+   }
+  },
+  {
+   "a": 406.097,
+   "b": 411.217,
+   "k": "vinegar_sugar_spoons",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 411.217,
+   "b": 416.077,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 416.077,
+   "b": 420.777,
+   "k": "store_tomato_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 420.777,
+   "b": 427.197,
+   "k": "",
+   "c": "Arc",
+   "props": {
+    "src": "fsa-owi-iowa-victory-garden-tomatoes-1943",
+    "cap": "1943 · Iowa backyard garden",
+    "big": "SUMMER TOMATOES"
+   }
+  },
+  {
+   "a": 427.197,
+   "b": 431.537,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 431.537,
+   "b": 434.097,
+   "k": "plate-supper",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 434.097,
+   "b": 436.777,
+   "k": "fridge-half-cucumber",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 436.777,
+   "b": 439.977,
+   "k": "half-cucumber-cut",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 439.977,
+   "b": 446.657,
+   "k": "cereal-bowl-cucumber",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "name": "Big mixing bowl",
+    "instead": "Cereal bowl",
+    "k": "cereal-bowl-cucumber",
+    "t": 444.917,
+    "of": 7
+   }
+  },
+  {
+   "a": 446.657,
+   "b": 452.177,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 452.177,
+   "b": 455.757,
+   "k": "salted-cucumber-slices",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 455.757,
+   "b": 458.654,
+   "k": "squeeze-handful",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 458.654,
+   "b": 461.114,
+   "k": "squeezed-cucumber-dry",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 461.114,
+   "b": 465.714,
+   "k": "iowa-home-kitchen-1950s-stirring",
+   "c": "Arc",
+   "props": {
+    "src": "iowa-home-kitchen-1950s-stirring",
+    "cap": "1950s · a home kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 465.714,
+   "b": 469.814,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 469.814,
+   "b": 473.294,
+   "k": "cucumbers-tossed-cream",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 473.294,
+   "b": 477.274,
+   "k": "two-plates-tomorrow",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 477.274,
+   "b": 480.954,
+   "k": "fixpg_1",
+   "c": "PageUp",
+   "props": {
+    "k": "fixpg_1",
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 479.954
+     }
+    ]
+   }
+  },
+  {
+   "a": 480.954,
+   "b": 483.874,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 483.874,
+   "b": 494.834,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "t": 485.394,
+    "k": "book_cover",
+    "txt": "POINT YOUR PHONE AT THE SQUARE"
+   }
+  },
+  {
+   "a": 494.834,
+   "b": 498.294,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 498.294,
+   "b": 501.494,
+   "k": "slaw_bowl_blur",
+   "c": "Tease",
+   "props": {
+    "k": "slaw_bowl_blur",
+    "txt": "FOR YOUR WORST NIGHT",
+    "tag": "STILL COMING #12"
+   }
+  },
+  {
+   "a": 501.494,
+   "b": 503.694,
+   "k": "paring_knife_board",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 503.694,
+   "b": 506.794,
+   "k": "loretta_slaw_intro",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 506.794,
+   "b": 514.454,
+   "k": "gray_slaw_tub",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "name": "Big tub of slaw in the fridge",
+    "instead": "One small bowl of slaw that lasts the week",
+    "page": "PAGE 144",
+    "k": "gray_slaw_tub",
+    "k2": "small_slaw_bowl",
+    "t": 510.754,
+    "of": 7
+   }
+  },
+  {
+   "a": 514.454,
+   "b": 520.574,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 520.574,
+   "b": 524.214,
+   "k": "carrot_mayo",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 524.214,
+   "b": 528.214,
+   "k": "home-economist-slaw-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "home-economist-slaw-1950s",
+    "cap": "1950s · a kitchen window and sink",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 528.214,
+   "b": 532.054,
+   "k": "dressing_bowl",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 532.054,
+   "b": 534.634,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 534.634,
+   "b": 541.714,
+   "k": "book_page_slaw",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 536.114
+     }
+    ],
+    "k": "book_page_slaw"
+   }
+  },
+  {
+   "a": 541.714,
+   "b": 548.294,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "old": {
+     "k": "slaw_store_tub",
+     "txt": "store tub of slaw"
+    },
+    "neu": {
+     "k": "slaw_small_bowl",
+     "txt": "one small bowl, covered"
+    },
+    "t": 541.714
+   }
+  },
+  {
+   "a": 548.294,
+   "b": 550.674,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 550.674,
+   "b": 555.027,
+   "k": "cold_fridge_side",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 555.027,
+   "b": 559.101,
+   "k": "beans_pantry_reach",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 559.101,
+   "b": 566.761,
+   "k": "beans_can_bowl",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "name": "Warm the beans on the stove",
+    "instead": "Cold black beans from the can",
+    "page": "135",
+    "k": "beans_can_bowl",
+    "t": 565.541,
+    "of": 7
+   }
+  },
+  {
+   "a": 566.761,
+   "b": 571.721,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 571.721,
+   "b": 574.831,
+   "k": "fixpg_1",
+   "c": "PageUp",
+   "props": {
+    "k": "fixpg_1",
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 571.721
+     }
+    ]
+   }
+  },
+  {
+   "a": 574.831,
+   "b": 576.901,
+   "k": "beans_in_can_L",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 576.901,
+   "b": 580.321,
+   "k": "drain_beans_colander",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 580.321,
+   "b": 584.541,
+   "k": "spice_fork_mash",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 584.541,
+   "b": 589.621,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 589.621,
+   "b": 592.941,
+   "k": "fill_tortillas_L",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 592.941,
+   "b": 598.081,
+   "k": "1950s-kitchen-table-groceries",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-kitchen-table-groceries",
+    "cap": "1950s · a dining room",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 598.081,
+   "b": 602.881,
+   "k": "two_tacos_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 602.881,
+   "b": 606.121,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 606.121,
+   "b": 616.601,
+   "k": "fresh_pot_stove",
+   "c": "ItemCard",
+   "props": {
+    "n": 9,
+    "name": "Boil a fresh pot for supper",
+    "instead": "Eggs boiled on Monday, kept in the fridge",
+    "page": "PAGE 66",
+    "k": "fresh_pot_stove",
+    "t": 610.981,
+    "of": 7
+   }
+  },
+  {
+   "a": 616.601,
+   "b": 624.861,
+   "k": "page66_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page66.png",
+      "tab": "PAGE 66",
+      "t": 617.941
+     }
+    ],
+    "k": "page66_table",
+    "caption": {
+     "hl": "boiled on Monday",
+     "t": 620.061,
+     "txt": "BOILED ON MONDAY"
+    }
+   }
+  },
+  {
+   "a": 624.861,
+   "b": 628.914,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 628.914,
+   "b": 632.894,
+   "k": "mash_fork",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 632.894,
+   "b": 636.714,
+   "k": "mustard_relish",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 636.714,
+   "b": 639.574,
+   "k": "salt_pepper_paprika",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 639.574,
+   "b": 642.054,
+   "k": "one_sandwich_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 642.054,
+   "b": 648.194,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 648.194,
+   "b": 652.894,
+   "k": "iowa-farm-wife-gathering-eggs-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "iowa-farm-wife-gathering-eggs-1940s",
+    "cap": "1950s · a woman among farm chickens",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 652.894,
+   "b": 657.194,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 657.194,
+   "b": 659.714,
+   "k": "potluck_talk",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 659.714,
+   "b": 668.474,
+   "k": "deviled_potluck",
+   "c": "ItemCard",
+   "props": {
+    "n": 10,
+    "name": "Potluck deviled eggs, full platters",
+    "instead": "Deviled eggs for one, cut down",
+    "page": "",
+    "k": "deviled_potluck",
+    "t": 661.474,
+    "of": 7
+   }
+  },
+  {
+   "a": 668.474,
+   "b": 675.234,
+   "k": "egg_page72",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "n": 72,
+      "src": "cookbook-page-72",
+      "tab": "PAGE 72",
+      "line": "Page seventy-two takes three eggs and makes six halves",
+      "hl": 0,
+      "t": 668.494
+     }
+    ],
+    "k": "egg_page72"
+   }
+  },
+  {
+   "a": 675.234,
+   "b": 679.674,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 679.674,
+   "b": 684.81,
+   "k": "egg-mashing-home-ec-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "egg-mashing-home-ec-1950s",
+    "cap": "1950s · a family at home",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 684.81,
+   "b": 688.15,
+   "k": "mayo_bowl",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 688.15,
+   "b": 691.91,
+   "k": "mustard_pickle",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 691.91,
+   "b": 695.11,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 695.11,
+   "b": 699.29,
+   "k": "plate_coleslaw",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 699.29,
+   "b": 704.33,
+   "k": "fridge_eggs",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 704.33,
+   "b": 707.21,
+   "k": "cover_eggs",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 707.21,
+   "b": 710.71,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 710.71,
+   "b": 718.51,
+   "k": "tuna_card",
+   "c": "ItemCard",
+   "props": {
+    "n": 11,
+    "name": "Broiled tuna melt",
+    "instead": "Cold open tuna melt, broiler off",
+    "page": "PAGE 99",
+    "k": "tuna_card",
+    "t": 712.19,
+    "pageUp": {
+     "c": "PageUp",
+     "t": 715.49,
+     "pages": [
+      {
+       "n": 99,
+       "src": "cookbook-page-99",
+       "tab": "PAGE 99"
+      }
+     ]
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 718.51,
+   "b": 723.51,
+   "k": "tuna_broiler",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 723.51,
+   "b": 726.01,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 726.01,
+   "b": 732.01,
+   "k": "oven_dark",
+   "c": "Kinetic",
+   "props": {
+    "k": "oven_dark",
+    "words": [
+     [
+      "BROILER",
+      726.21
+     ],
+     [
+      "STAYS OFF",
+      726.77
+     ]
+    ]
+   }
+  },
+  {
+   "a": 732.01,
+   "b": 735.31,
+   "k": "mayo_pickle",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 735.31,
+   "b": 739.23,
+   "k": "spread_bread",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 739.23,
+   "b": 744.55,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 744.55,
+   "b": 747.59,
+   "k": "tuna_covered_dish",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 747.59,
+   "b": 750.81,
+   "k": "tuna_can_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 750.81,
+   "b": 755.55,
+   "k": "tuna-can-1950s-kitchen",
+   "c": "Arc",
+   "props": {
+    "src": "tuna-can-1950s-kitchen",
+    "cap": "1950s · a woman by the bookshelves",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 755.55,
+   "b": 758.59,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 758.59,
+   "b": 762.23,
+   "k": "last_supper_L",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 762.23,
+   "b": 770.97,
+   "k": "stove_mountain",
+   "c": "ItemCard",
+   "props": {
+    "n": 12,
+    "of": 12,
+    "name": "THE STOVE",
+    "t": 768.73,
+    "instead": "A COLD TUNA MELT",
+    "page": "P. 61",
+    "k": "stove_mountain"
+   }
+  },
+  {
+   "a": 770.97,
+   "b": 774.87,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 774.87,
+   "b": 782.47,
+   "k": "bowl_lamp_supper",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page61.png",
+      "tab": "PAGE 61",
+      "t": 776.51
+     }
+    ],
+    "caption": {
+     "txt": "for supper!",
+     "t": 780.69
+    },
+    "k": "bowl_lamp_supper"
+   }
+  },
+  {
+   "a": 782.47,
+   "b": 792.58,
+   "k": "bowl_steps",
+   "c": "StepCard",
+   "props": {
+    "head": "THE WORST-NIGHT BOWL",
+    "steps": [
+     {
+      "t": 782.52,
+      "txt": "¾ cup plain yogurt",
+      "k": "step_yogurt"
+     },
+     {
+      "t": 786.37,
+      "txt": "berries or peaches",
+      "k": "step_berries"
+     },
+     {
+      "t": 791.39,
+      "txt": "toasted oats",
+      "k": "step_oats"
+     }
+    ],
+    "bed": "bowl_steps"
+   }
+  },
+  {
+   "a": 792.58,
+   "b": 795.89,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 795.89,
+   "b": 802.21,
+   "k": "bowl_cost",
+   "c": "CostTag",
+   "props": {
+    "price": "80¢",
+    "sub": "A BOWL · 5 MIN",
+    "k": "bowl_cost"
+   }
+  },
+  {
+   "a": 802.21,
+   "b": 807.47,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 807.47,
+   "b": 812.67,
+   "k": "grocery-dairy-case-1960s",
+   "c": "Arc",
+   "props": {
+    "src": "grocery-dairy-case-1960s",
+    "cap": "1960s · a kitchen counter and mixer",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 812.67,
+   "b": 816.376,
+   "k": "stove_quote",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 816.376,
+   "b": 818.883,
+   "k": "table_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 818.883,
+   "b": 824.423,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 824.423,
+   "b": 828.403,
+   "k": "set_plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 828.403,
+   "b": 832.963,
+   "k": "phone_bowl",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 832.963,
+   "b": 836.443,
+   "k": "sink_crackers",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 836.443,
+   "b": 840.003,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 840.003,
+   "b": 846.243,
+   "k": "eggs_plate",
+   "c": "BigNumber",
+   "props": {
+    "num": 51,
+    "unit": "YEARS",
+    "txt": "TWO EGGS EVERY MORNING",
+    "k": "eggs_plate",
+    "t": 842.263,
+    "dur": 4
+   }
+  },
+  {
+   "a": 846.243,
+   "b": 848.643,
+   "k": "empty_chair",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 848.643,
+   "b": 852.783,
+   "k": "little_book",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 852.783,
+   "b": 856.923,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 856.923,
+   "b": 861.363,
+   "k": "counter_pages",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 861.363,
+   "b": 864.997,
+   "k": "asking_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 864.997,
+   "b": 868.337,
+   "k": "stove_knobs",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 868.337,
+   "b": 871.337,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 871.337,
+   "b": 876.237,
+   "k": "woman-writing-letters-kitchen-table",
+   "c": "Arc",
+   "props": {
+    "src": "woman-writing-letters-kitchen-table",
+    "cap": "1950s · a woman writing at a table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 876.237,
+   "b": 880.177,
+   "k": "bathroom_tub",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 880.177,
+   "b": 883.317,
+   "k": "loretta_channel",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 883.317,
+   "b": 886.997,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 886.997,
+   "b": 891.577,
+   "k": "shower_scrub",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 891.577,
+   "b": 894.897,
+   "k": "next_week_calendar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 894.897,
+   "b": 898.817,
+   "k": "chair_pulled_up",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 898.817,
+   "b": 901.377,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 901.377,
+   "b": 907.717,
+   "k": "chair_plate",
+   "c": "FrameArt",
+   "props": {
+    "k": "chair_plate",
+    "bed": "kitchen_wall",
+    "caption": "eat slow",
+    "t": 902.877
+   }
+  },
+  {
+   "a": 907.717,
+   "b": 911.597,
+   "k": "iowa-farmhouse-window-dusk-fsa",
+   "c": "Arc",
+   "props": {
+    "src": "iowa-farmhouse-window-dusk-fsa",
+    "cap": "1940s · a woman at a bookshelf",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 69.62,
+   "b": 185.94,
+   "n": 1
+  },
+  {
+   "a": 185.94,
+   "b": 239.567,
+   "n": 2
+  },
+  {
+   "a": 239.567,
+   "b": 313.617,
+   "n": 3
+  },
+  {
+   "a": 313.617,
+   "b": 390.237,
+   "n": 4
+  },
+  {
+   "a": 390.237,
+   "b": 439.977,
+   "n": 5
+  },
+  {
+   "a": 439.977,
+   "b": 506.794,
+   "n": 6
+  },
+  {
+   "a": 506.794,
+   "b": 559.101,
+   "n": 7
+  },
+  {
+   "a": 559.101,
+   "b": 606.121,
+   "n": 8
+  },
+  {
+   "a": 606.121,
+   "b": 659.714,
+   "n": 9
+  },
+  {
+   "a": 659.714,
+   "b": 710.71,
+   "n": 10
+  },
+  {
+   "a": 710.71,
+   "b": 762.23,
+   "n": 11
+  },
+  {
+   "a": 762.23,
+   "b": 911.597,
+   "n": 12
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   69.62,
+   79.92
+  ],
+  [
+   185.94,
+   193.44
+  ],
+  [
+   239.567,
+   246.757
+  ],
+  [
+   313.617,
+   320.697
+  ],
+  [
+   390.237,
+   398.537
+  ],
+  [
+   439.977,
+   446.657
+  ],
+  [
+   506.794,
+   514.454
+  ],
+  [
+   559.101,
+   566.761
+  ],
+  [
+   606.121,
+   616.601
+  ],
+  [
+   659.714,
+   668.474
+  ],
+  [
+   710.71,
+   718.51
+  ],
+  [
+   762.23,
+   770.97
+  ],
+  [
+   483.874,
+   494.834
+  ]
+ ]
+}
