@@ -1,0 +1,88 @@
+# Montaje de una NOVELA agnes en el farm (17-oct-2026, bjtamal). Regla del creador: nunca render/encode en la laptop.
+# Rama novela-<slug> (huérfana: workflow + params.json {slug, scenes}). Assets en el release assets-<slug>:
+#   comun.tar (edit.py, shots.json, cfg.json, fix.json, edit_full/words2.json, music/*.m4a, sfx/*) + clips_<escena>.tar
+# escena (matriz): python3 edit.py <escena> → scene_<escena>.mp4 · unir: edit.py join + encode de entrega
+#   (alimiter 0.8: los masters de agnes saturan) → <slug>.mp4 al release <slug>.
+name: novela
+on:
+  push:
+    branches: ['novela-*']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+      slug: ${{ steps.m.outputs.slug }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        run: |
+          echo "matrix=$(python3 -c "import json;print(json.dumps(json.load(open('params.json'))['scenes']))")" >> "$GITHUB_OUTPUT"
+          echo "slug=$(python3 -c "import json;print(json.load(open('params.json'))['slug'])")" >> "$GITHUB_OUTPUT"
+  escena:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        sid: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    env: { GH_TOKEN: "${{ github.token }}", S: "${{ needs.prepare.outputs.slug }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg estático
+        timeout-minutes: 5
+        run: |
+          for n in 1 2 3 4; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && break; sleep $((n*5)); done
+          mkdir -p /tmp/ff && tar xf ff.tar.xz -C /tmp/ff --strip-components=1 && echo "/tmp/ff/bin" >> "$GITHUB_PATH" && rm ff.tar.xz
+      - name: assets
+        run: |
+          mkdir -p w && cd w
+          for n in 1 2 3; do gh release download assets-$S --repo ${{ github.repository }} -p comun.tar -p "clips_${{ matrix.sid }}.tar" --clobber && break; sleep 10; done
+          tar xf comun.tar && tar xf "clips_${{ matrix.sid }}.tar" && rm -f *.tar && ls clips | wc -l
+      - name: montar la escena
+        run: cd w && NOVELA_FARM=1 python3 edit.py ${{ matrix.sid }} && ls -la edit_full/scene_${{ matrix.sid }}.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: scene_${{ matrix.sid }}
+          path: w/edit_full/scene_${{ matrix.sid }}.mp4
+          retention-days: 3
+  unir:
+    needs: [prepare, escena]
+    runs-on: ubuntu-latest
+    env: { GH_TOKEN: "${{ github.token }}", S: "${{ needs.prepare.outputs.slug }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg estático
+        timeout-minutes: 5
+        run: |
+          for n in 1 2 3 4; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && break; sleep $((n*5)); done
+          mkdir -p /tmp/ff && tar xf ff.tar.xz -C /tmp/ff --strip-components=1 && echo "/tmp/ff/bin" >> "$GITHUB_PATH" && rm ff.tar.xz
+      - name: assets comunes
+        run: |
+          mkdir -p w && cd w
+          for n in 1 2 3; do gh release download assets-$S --repo ${{ github.repository }} -p comun.tar --clobber && break; sleep 10; done
+          tar xf comun.tar && rm comun.tar && mkdir -p clips edit_full
+      - uses: actions/download-artifact@v4
+        with:
+          path: w/edit_full
+          merge-multiple: true
+      - name: unir + encode de entrega
+        run: |
+          cd w && NOVELA_FARM=1 python3 edit.py join
+          # encode de entrega de la plantilla (entrega.sh): bt709 tv + alimiter 0.7 (los masters de agnes saturan) + compuerta 0 dB
+          ffmpeg -v error -y -i COMPLETO.mp4 -vf "scale=out_range=limited:out_color_matrix=bt709,format=yuv420p" -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:v libx264 -preset faster -crf 20 -maxrate 5M -bufsize 10M -g 60 -af "afade=t=in:d=0.6,alimiter=limit=0.7:level=false" -c:a aac -b:a 192k -movflags +faststart $S.mp4
+          ffmpeg -hide_banner -i $S.mp4 -af volumedetect -vn -f null - 2>&1 | grep -E "max_volume|histogram_0db" || true
+          H=$(ffmpeg -hide_banner -i $S.mp4 -af volumedetect -vn -f null - 2>&1 | grep -oE "histogram_0db: [0-9]+" | grep -oE "[0-9]+$" || echo 0)
+          [ "${H:-0}" != "0" ] && { echo "⛔ histogram_0db=$H"; exit 1; }
+          ffprobe -v error -show_entries format=duration -of csv=p=0 $S.mp4
+          ffmpeg -v error -y -i $S.mp4 -vf scale=-2:480 -c:v libx264 -preset faster -crf 32 -maxrate 160k -bufsize 320k -c:a aac -b:a 40k -movflags +faststart PREVIA_liviana.mp4
+      - name: subir al release
+        run: |
+          cd w
+          gh release view $S --repo ${{ github.repository }} >/dev/null 2>&1 || gh release create $S --repo ${{ github.repository }} --title $S --notes "novela $S"
+          for n in 1 2 3; do gh release upload $S $S.mp4 PREVIA_liviana.mp4 --repo ${{ github.repository }} --clobber && break; sleep 15; done
+          for s in edit_full/scene_*.mp4; do echo "$(basename $s) $(ffprobe -v error -show_entries format=duration -of csv=p=0 $s)"; done > duraciones.txt
+          gh release upload $S duraciones.txt --repo ${{ github.repository }} --clobber
