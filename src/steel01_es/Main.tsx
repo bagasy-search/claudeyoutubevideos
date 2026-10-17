@@ -125,7 +125,7 @@ const Chap: React.FC<{ o: Ov }> = ({ o }) => {
   return (
     <AbsoluteFill style={{ opacity: a, background: "linear-gradient(90deg, rgba(6,8,10,0.82) 0%, rgba(6,8,10,0.55) 45%, rgba(6,8,10,0) 75%)" }}>
       <div style={{ position: "absolute", left: 120, top: 330 }}>
-        <div style={{ fontFamily: MONO, fontWeight: 600, fontSize: 30, color: AMBER, letterSpacing: 8 }}>CHAPTER {o.k}</div>
+        <div style={{ fontFamily: MONO, fontWeight: 600, fontSize: 30, color: AMBER, letterSpacing: 8 }}>CAPÍTULO {o.k}</div>
         <div style={{ height: 4, background: AMBER, width: 520 * w, margin: "18px 0 22px" }} />
         <div style={{ fontFamily: OSW, fontWeight: 700, fontSize: 104, color: STEEL, letterSpacing: 3, lineHeight: 1.0, maxWidth: 1250 }}>{o.a}</div>
         {o.b ? <div style={{ fontFamily: MONO, fontWeight: 500, fontSize: 30, color: STEEL, opacity: 0.8, letterSpacing: 5, marginTop: 20 }}>{o.b}</div> : null}
@@ -149,7 +149,7 @@ const Roster: React.FC<{ o: Ov }> = ({ o }) => {
   return (
     <div style={{ position: "absolute", right: 90, top: 130, opacity: a, background: INK, padding: "26px 36px", minWidth: 560 }}>
       <Ticks />
-      <div style={{ fontFamily: MONO, fontWeight: 600, fontSize: 24, color: AMBER, letterSpacing: 6, marginBottom: 14 }}>KARL-GERÄT · BUILT</div>
+      <div style={{ fontFamily: MONO, fontWeight: 600, fontSize: 24, color: AMBER, letterSpacing: 6, marginBottom: 14 }}>KARL-GERÄT · CONSTRUIDOS</div>
       {o.items.map(([num, name, at]: [string, string, number], i: number) => {
         const k = interpolate(f, [at - o.f, at - o.f + 8], [0, 1], CL);
         return (
