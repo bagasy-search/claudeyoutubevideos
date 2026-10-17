@@ -5,7 +5,8 @@ import { AbsoluteFill, Img, Sequence, useCurrentFrame, interpolate, spring, Easi
 import { loadFont } from "@remotion/google-fonts/Montserrat";
 import { loadFont as loadHand } from "@remotion/google-fonts/Caveat";
 import sfx from "./sfx.json";
-import { SceneDawn, SceneNecho, SceneDarius, SceneNapoleon, SceneSteam, SandWall } from "./scenes";
+import { SandWall } from "./scenes";
+import { AnimeDawn, AnimeNecho, AnimeDarius, AnimeNapoleon, AnimeSteam } from "./anime";
 
 import { sf } from "./sf";
 const Audio = (_: any) => null; // farm: el audio final sale del WAV máster premezclado
@@ -239,7 +240,7 @@ const MiniMap: React.FC<{ t: number; f: number; t0: number; t1: number }> = ({ t
   const s = pop(f, t0, 12) * fadeOut(t, t1, 0.3);
   const [mx, my] = P(31.98, 30.42);
   const c: Cam = { x: mx, y: my, z: 8.2 };
-  const SC = 0.25;
+  const SC = 0.2;
   return (
     <div style={{ position: "absolute", right: 46, top: 40, width: 1920 * SC, height: 1080 * SC, transform: `scale(${s}) rotate(1.5deg)`, transformOrigin: "100% 0%", border: "5px solid #fff", borderRadius: 8, overflow: "hidden", boxShadow: "0 12px 30px rgba(0,0,0,.5)", background: "#d9c9a0" }}>
       <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${SC})`, transformOrigin: "0 0" }}>
@@ -436,21 +437,21 @@ export const Suez: React.FC = () => {
       <ScenePortal t={t} open={[5.72, 6.25]} close={[18.95, 19.35]} o={proj(c, 32.35, 30.6)} cpt={proj(c, 32.31, 31.2)}>
         <AbsoluteFill style={{ background: "#000" }}>
           {/* Necho → Darío con barrido de cámara */}
-          {t < 9.05 && <AbsoluteFill style={{ transform: `translateX(${interpolate(t, [8.72, 8.98], [0, -1920], { ...clamp, easing: Easing.in(Easing.cubic) })}px)`, filter: t > 8.72 && t < 8.98 ? "blur(14px)" : undefined }}><SceneNecho t={t} f={f} /></AbsoluteFill>}
-          {t > 8.7 && t < 11.72 && <AbsoluteFill style={{ transform: `translateX(${interpolate(t, [8.72, 8.98], [1920, 0], { ...clamp, easing: Easing.out(Easing.cubic) })}px)`, filter: t > 8.72 && t < 8.98 ? "blur(14px)" : undefined }}><SceneDarius t={t} f={f} /></AbsoluteFill>}
-          {t >= 11.72 && t < 17.15 && <AbsoluteFill><SceneNapoleon t={t} f={f} /></AbsoluteFill>}
-          {t > 16.95 && <SceneSteam t={t} f={f} lesseps={interpolate(t, [17.9, 18.25], [0, 1], clamp)} />}
+          {t < 9.05 && <AbsoluteFill style={{ transform: `translateX(${interpolate(t, [8.72, 8.98], [0, -1920], { ...clamp, easing: Easing.in(Easing.cubic) })}px)`, filter: t > 8.72 && t < 8.98 ? "blur(14px)" : undefined }}><AnimeNecho t={t} f={f} /></AbsoluteFill>}
+          {t > 8.7 && t < 11.72 && <AbsoluteFill style={{ transform: `translateX(${interpolate(t, [8.72, 8.98], [1920, 0], { ...clamp, easing: Easing.out(Easing.cubic) })}px)`, filter: t > 8.72 && t < 8.98 ? "blur(14px)" : undefined }}><AnimeDarius t={t} f={f} /></AbsoluteFill>}
+          {t >= 11.72 && t < 17.15 && <AbsoluteFill><AnimeNapoleon t={t} f={f} /></AbsoluteFill>}
+          {t > 16.95 && <AnimeSteam t={t} f={f} />}
           <SandWall t={t} t0={10.45} t1={12.95} f={f} />
           <SmokeWipe t={t} t0={16.75} t1={17.45} />
         </AbsoluteFill>
       </ScenePortal>
       <MiniMap t={t} f={f} t0={6.4} t1={12.2} />
-      <Stamp f={f} t={t} t0={7.55} t1={8.7} x={1000} y={300} text="Gave up" size={92} />
+      <Stamp f={f} t={t} t0={7.55} t1={8.7} x={860} y={480} text="Gave up" size={110} />
       <BigWord f={f} t={t} t0={11.05} t1={12.4} text="BURIED" />
       {/* rótulos de los personajes (siluetas sin cara: el nombre los identifica) */}
-      <Caption f={f} t={t} t0={6.5} t1={8.7} x={1610} y={640} text="Pharaoh Necho II" />
-      <Caption f={f} t={t} t0={9.2} t1={11.0} x={560} y={250} text="Darius I of Persia" />
-      <Caption f={f} t={t} t0={12.9} t1={14.0} x={560} y={470} text="Napoleon & his engineers" />
+      <Caption f={f} t={t} t0={6.5} t1={8.7} x={1560} y={1000} text="Pharaoh Necho II" />
+      <Caption f={f} t={t} t0={9.3} t1={11.0} x={430} y={1000} text="Darius I of Persia" />
+      <Caption f={f} t={t} t0={12.9} t1={14.0} x={1380} y={1000} text="Napoleon & his engineers" />
 
       {/* Napoleón: el cálculo de los ingenieros sobre la escena */}
       <AbsoluteFill style={{ background: "#1a1208", opacity: dim, pointerEvents: "none" }} />
@@ -459,14 +460,14 @@ export const Suez: React.FC = () => {
       <BigWord f={f} t={t} t0={15.95} t1={17.05} text={<span>BY <span style={{ color: "#ffd23a" }}>30 FT</span></span>} y={930} size={110} />
 
       {/* el francés terco */}
-      <Caption f={f} t={t} t0={18.15} t1={18.95} x={330} y={420} text="Ferdinand de Lesseps" flag />
+      <Caption f={f} t={t} t0={18.15} t1={18.95} x={400} y={1000} text="Ferdinand de Lesseps" flag />
       <ShipAlong c={c} t={t} f={f} />
       <BigWord f={f} t={t} t0={19.7} t1={21.0} text={<span style={{ color: "#ffd23a" }}>?</span>} x={1380} y={500} size={300} />
 
       <YearNote f={f} t={t} />
       {/* amanecer: el faraón señala; se cierra en un círculo sobre Egipto */}
       <ScenePortal t={t} open={[0, 0]} close={[0.95, 1.42]} o={[960, 540]} cpt={proj(c, 31.2, 26.5)}>
-        <SceneDawn t={t} f={f} />
+        <AnimeDawn t={t} f={f} />
       </ScenePortal>
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.28) 100%)", pointerEvents: "none" }} />
     </AbsoluteFill>
