@@ -329,10 +329,10 @@
   {
    "a": 111.107,
    "b": 114.55,
-   "k": "page_54_fix",
+   "k": "fixpg_54",
    "c": "PageUp",
    "props": {
-    "k": "page_54_fix",
+    "k": "fixpg_54",
     "pages": [
      {
       "src": "page54.png",
@@ -850,10 +850,10 @@
   {
    "a": 299.744,
    "b": 303.724,
-   "k": "page_57_fix",
+   "k": "fixpg_57",
    "c": "PageUp",
    "props": {
-    "k": "page_57_fix",
+    "k": "fixpg_57",
     "pages": [
      {
       "src": "page57.png",
@@ -1162,10 +1162,10 @@
   {
    "a": 415.651,
    "b": 418.671,
-   "k": "page_59_fix",
+   "k": "fixpg_59",
    "c": "PageUp",
    "props": {
-    "k": "page_59_fix",
+    "k": "fixpg_59",
     "pages": [
      {
       "src": "page59.png",
@@ -1488,10 +1488,10 @@
   {
    "a": 523.464,
    "b": 526.964,
-   "k": "page_62_fix",
+   "k": "fixpg_62",
    "c": "PageUp",
    "props": {
-    "k": "page_62_fix",
+    "k": "fixpg_62",
     "pages": [
      {
       "src": "page62.png",
@@ -1799,10 +1799,10 @@
   {
    "a": 647.669,
    "b": 651.709,
-   "k": "page_65_fix",
+   "k": "fixpg_65",
    "c": "PageUp",
    "props": {
-    "k": "page_65_fix",
+    "k": "fixpg_65",
     "pages": [
      {
       "src": "page65.png",
@@ -1989,10 +1989,10 @@
   {
    "a": 716.872,
    "b": 720.662,
-   "k": "page_68_fix",
+   "k": "fixpg_68",
    "c": "PageUp",
    "props": {
-    "k": "page_68_fix",
+    "k": "fixpg_68",
     "pages": [
      {
       "src": "page68.png",
@@ -2098,10 +2098,10 @@
   {
    "a": 753.74,
    "b": 758.812,
-   "k": "page_70_fix",
+   "k": "fixpg_70",
    "c": "PageUp",
    "props": {
-    "k": "page_70_fix",
+    "k": "fixpg_70",
     "pages": [
      {
       "src": "page70.png",
@@ -2175,22 +2175,13 @@
   },
   {
    "a": 778.912,
-   "b": 782.682,
+   "b": 785.752,
    "k": "grease_tin",
    "z": [
     1.13,
     1.04
    ],
    "dx": 40
-  },
-  {
-   "a": 782.682,
-   "b": 785.752,
-   "k": "",
-   "c": "Kicker",
-   "props": {
-    "txt": "SILICONE CUPS"
-   }
   },
   {
    "a": 785.752,
@@ -2318,10 +2309,10 @@
   {
    "a": 835.266,
    "b": 839.106,
-   "k": "page_73_fix",
+   "k": "fixpg_73",
    "c": "PageUp",
    "props": {
-    "k": "page_73_fix",
+    "k": "fixpg_73",
     "pages": [
      {
       "src": "page73.png",
@@ -2417,10 +2408,10 @@
   {
    "a": 869.266,
    "b": 872.766,
-   "k": "page_102_fix",
+   "k": "fixpg_102",
    "c": "PageUp",
    "props": {
-    "k": "page_102_fix",
+    "k": "fixpg_102",
     "pages": [
      {
       "src": "page102.png",
@@ -2517,10 +2508,10 @@
   {
    "a": 898.806,
    "b": 902.446,
-   "k": "page_147_fix",
+   "k": "fixpg_147",
    "c": "PageUp",
    "props": {
-    "k": "page_147_fix",
+    "k": "fixpg_147",
     "pages": [
      {
       "src": "page147.png",
@@ -2594,10 +2585,10 @@
   {
    "a": 921.686,
    "b": 925.486,
-   "k": "page_157_fix",
+   "k": "fixpg_157",
    "c": "PageUp",
    "props": {
-    "k": "page_157_fix",
+    "k": "fixpg_157",
     "pages": [
      {
       "src": "page157.png",
@@ -3083,7 +3074,16 @@
    }
   }
  ],
- "overlays": [],
+ "overlays": [
+  {
+   "a": 782.682,
+   "b": 785.752,
+   "c": "Kicker",
+   "props": {
+    "txt": "SILICONE CUPS"
+   }
+  }
+ ],
  "counts": [
   {
    "a": 63.253,
