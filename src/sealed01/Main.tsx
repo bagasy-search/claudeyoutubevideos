@@ -160,8 +160,8 @@ const Quote: React.FC<{ o: Ov; dur: number }> = ({ o, dur }) => {
   const n = Math.floor(interpolate(f, [4, 4 + txt.length * 1.2], [0, txt.length], { extrapolateRight: "clamp" }));
   return (
     <AbsoluteFill style={{ opacity: out, alignItems: "center", justifyContent: "center" }}>
-      <AbsoluteFill style={{ background: "rgba(0,0,0,0.55)" }} />
-      <div style={{ fontFamily: SERIF, fontStyle: "italic", fontSize: 92, color: "white", maxWidth: 1500, textAlign: "center", lineHeight: 1.2 }}>
+      <AbsoluteFill style={{ background: "rgba(0,0,0,0.72)" }} />
+      <div style={{ textShadow: "0 4px 24px rgba(0,0,0,0.9)", fontFamily: SERIF, fontStyle: "italic", fontSize: 92, color: "white", maxWidth: 1500, textAlign: "center", lineHeight: 1.2 }}>
         {txt.slice(0, n)}
         <span style={{ opacity: 0 }}>{txt.slice(n)}</span>
       </div>
