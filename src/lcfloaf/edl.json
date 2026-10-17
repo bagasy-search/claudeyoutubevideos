@@ -1,0 +1,2552 @@
+{
+ "end": 909.564,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 7.53,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 7.53,
+   "b": 10.81,
+   "k": "ziti_clip",
+   "c": "Kinetic",
+   "props": {
+    "k": "ziti_clip",
+    "vid": true,
+    "words": [
+     [
+      "FOUR SQUARES",
+      8.2
+     ],
+     [
+      "ONE PAN",
+      10.02
+     ]
+    ]
+   }
+  },
+  {
+   "a": 10.81,
+   "b": 14.207,
+   "k": "floor_register",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 14.207,
+   "b": 16.877,
+   "k": "calendar_circle",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 16.877,
+   "b": 19.867,
+   "k": "sunday_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 19.867,
+   "b": 26.107,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 26.107,
+   "b": 29.707,
+   "k": "supper_nights",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 29.707,
+   "b": 34.797,
+   "k": "stay_frame",
+   "c": "Chapter",
+   "props": {
+    "n": "#8",
+    "title": "WHICH ONE I'D MAKE",
+    "sub": "Stay with me, because I'd hate for you to miss that.",
+    "label": "STAY FOR #8",
+    "k": "stay_frame",
+    "av": true
+   }
+  },
+  {
+   "a": 34.797,
+   "b": 39.077,
+   "k": "one_place_setting",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 39.077,
+   "b": 42.637,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 42.637,
+   "b": 46.947,
+   "k": "nine_by_thirteen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 46.947,
+   "b": 49.407,
+   "k": "one_loaf_pan_setting",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 49.407,
+   "b": 53.767,
+   "k": "foil_roll",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 53.767,
+   "b": 57.577,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 57.577,
+   "b": 61.007,
+   "k": "frozen_square",
+   "c": "Note",
+   "props": {
+    "k": "frozen_square",
+    "lines": [
+     {
+      "txt": "AFTER #4:",
+      "t": 57.807
+     },
+     {
+      "txt": "FROZEN â†’ SUPPER",
+      "t": 59.847
+     }
+    ]
+   }
+  },
+  {
+   "a": 61.007,
+   "b": 64.733,
+   "k": "ziti_setup",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 64.733,
+   "b": 73.82,
+   "k": "ziti_two_pans",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "name": "One big 9x13 for a crowd",
+    "instead": "Two loaf pans: bake one, freeze one",
+    "page": "PAGE 113",
+    "k": "ziti_two_pans",
+    "t": 69.16,
+    "of": 7
+   }
+  },
+  {
+   "a": 73.82,
+   "b": 76.473,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 76.473,
+   "b": 83.853,
+   "k": "ziti_book_desk",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page113.png",
+      "tab": "PAGE 113",
+      "t": 78.013
+     }
+    ],
+    "k": "ziti_book_desk",
+    "caption": {
+     "t": 80.5,
+     "txt": "2 PLATES · 40 MIN"
+    }
+   }
+  },
+  {
+   "a": 83.853,
+   "b": 87.593,
+   "k": "ziti_boil",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 87.593,
+   "b": 90.513,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 90.513,
+   "b": 94.99,
+   "k": "ziti_mix",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 94.99,
+   "b": 100.177,
+   "k": "cottage-cheese-carton-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "cottage-cheese-carton-1950s",
+    "cap": "1950s · food in a home refrigerator",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 100.177,
+   "b": 104.507,
+   "k": "ziti_loaf_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 104.507,
+   "b": 108.347,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 108.347,
+   "b": 111.987,
+   "k": "ziti_bubbling",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 111.987,
+   "b": 116.407,
+   "k": "ziti_good_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 116.407,
+   "b": 119.107,
+   "k": "ziti_freezer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 119.107,
+   "b": 123.607,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 123.607,
+   "b": 131.567,
+   "k": "casserole_full",
+   "c": "Memory",
+   "props": {
+    "name": "Memory",
+    "k": "casserole_full",
+    "caption": "the first one after Harold",
+    "date": "Fall 2019",
+    "t": 123.607
+   }
+  },
+  {
+   "a": 131.567,
+   "b": 134.467,
+   "k": "church_basement",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 134.467,
+   "b": 136.967,
+   "k": "table_one",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 136.967,
+   "b": 141.327,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 141.327,
+   "b": 145.987,
+   "k": "elderly-woman-alone-kitchen-1940s",
+   "c": "Arc",
+   "props": {
+    "src": "elderly-woman-alone-kitchen-1940s",
+    "cap": "1940s · a woman alone at a kitchen table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 145.987,
+   "b": 150.027,
+   "k": "foil_squares",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 150.027,
+   "b": 153.727,
+   "k": "thick_book",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 153.727,
+   "b": 156.447,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 156.447,
+   "b": 160.687,
+   "k": "loretta_book",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 160.687,
+   "b": 165.047,
+   "k": "book_open_page",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 165.047,
+   "b": 167.987,
+   "k": "receipts_notes",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 167.987,
+   "b": 174.167,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 174.167,
+   "b": 176.947,
+   "k": "loaf_pan_pile",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 176.947,
+   "b": 179.597,
+   "k": "loaf_pan_supper",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 179.597,
+   "b": 183.507,
+   "k": "loretta_point",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 183.507,
+   "b": 187.447,
+   "k": "channel_card_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 187.447,
+   "b": 190.507,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 190.507,
+   "b": 196.733,
+   "k": "loretta_sunday_face",
+   "c": "BigNumber",
+   "props": {
+    "num": 4,
+    "unit": "NIGHTS",
+    "txt": "from one Sunday pan",
+    "k": "loretta_sunday_face",
+    "t": 191.927,
+    "dur": 6
+   }
+  },
+  {
+   "a": 196.733,
+   "b": 200.713,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 200.713,
+   "b": 209.033,
+   "k": "beef_tray",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "name": "Ground beef, every week",
+    "instead": "Cheese enchiladas in a loaf pan",
+    "page": "PAGE 136",
+    "k": "beef_tray",
+    "t": 204.493,
+    "bed": "loretta_talking_closeup",
+    "look": "Loretta facing camera, talking",
+    "of": 7
+   }
+  },
+  {
+   "a": 209.033,
+   "b": 216.113,
+   "k": "loretta_holds_book",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 210.493
+     }
+    ],
+    "caption": {
+     "txt": "Three little enchiladas in a loaf pan. Dinner tonight and lunch tomorrow.",
+     "t": 216.113
+    },
+    "k": "loretta_holds_book"
+   }
+  },
+  {
+   "a": 216.113,
+   "b": 218.833,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 218.833,
+   "b": 223.08,
+   "k": "notebook_open",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 223.08,
+   "b": 226.45,
+   "k": "cheese_onion_counter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 226.45,
+   "b": 230.319,
+   "k": "sauce_pour",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 230.319,
+   "b": 235.319,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 235.319,
+   "b": 238.779,
+   "k": "cracked_tortilla",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 238.779,
+   "b": 243.939,
+   "k": "fsa-tortilla-women-san-antonio-1939",
+   "c": "Arc",
+   "props": {
+    "src": "fsa-tortilla-women-san-antonio-1939",
+    "cap": "1940s · a woman mixing dough by hand",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 243.939,
+   "b": 256.132,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "loaf-two-portions",
+      "t": 243.939,
+      "prompt": "Loretta at her 1950s farmhouse counter in October, a loaf pan of enchiladas split into two portions under yellow gingham light, white enamel stove behind her, candid and slightly blurred"
+     },
+     {
+      "k": "enchilada-plate",
+      "t": 249.012,
+      "prompt": "Loretta's hand in a faded floral apron setting one enchilada on a plain white plate at the worn wooden table set for one, pearl necklace visible, mundane kitchen light"
+     },
+     {
+      "k": "glass-container",
+      "t": 251.432,
+      "prompt": "Loretta spooning the second portion into a small glass container at the counter, lilac blouse sleeves pushed up, candid kitchen moment"
+     },
+     {
+      "k": "fridge-shelf",
+      "t": 254.652,
+      "prompt": "Loretta placing the glass container onto an older fridge shelf, the door open, bright interior light, candid and a little off-center"
+     }
+    ]
+   }
+  },
+  {
+   "a": 256.132,
+   "b": 259.162,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 259.162,
+   "b": 262.752,
+   "k": "danny-tripod-filming",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 262.752,
+   "b": 266.402,
+   "k": "freezer-bag-ziti-macro",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 266.402,
+   "b": 270.672,
+   "k": "marker-letters-bag",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 270.672,
+   "b": 275.202,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 275.202,
+   "b": 278.812,
+   "k": "loretta-coffee-labels",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 278.812,
+   "b": 282.112,
+   "k": "big-label-across-kitchen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 282.112,
+   "b": 286.892,
+   "k": "usda-freezer-labeling-grease-pencil",
+   "c": "Arc",
+   "props": {
+    "src": "usda-freezer-labeling-grease-pencil",
+    "cap": "1950s · a man at an open refrigerator",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 286.892,
+   "b": 290.232,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 290.232,
+   "b": 294.169,
+   "k": "hands-date-package",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 294.169,
+   "b": 299.266,
+   "k": "loc-1940s-frozen-food-locker",
+   "c": "Arc",
+   "props": {
+    "src": "loc-1940s-frozen-food-locker",
+    "cap": "1950s · a woman at a home refrigerator",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 299.266,
+   "b": 304.026,
+   "k": "fridge-date-clock",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 304.026,
+   "b": 307.146,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 307.146,
+   "b": 310.346,
+   "k": "frosty_bag",
+   "c": "Kinetic",
+   "props": {
+    "k": "frosty_bag",
+    "words": [
+     [
+      "NO NAME",
+      307.146
+     ],
+     [
+      "THROWN AWAY",
+      308.626
+     ]
+    ]
+   }
+  },
+  {
+   "a": 310.346,
+   "b": 314.576,
+   "k": "plain_book",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 314.576,
+   "b": 319.506,
+   "k": "rice_harvest_crowley",
+   "c": "Arc",
+   "props": {
+    "src": "rice_harvest_crowley",
+    "cap": "1950s · a farmer in a field",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 319.506,
+   "b": 326.486,
+   "k": "buttered_loaf_pan",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "name": "Standing over the rice, stirring",
+    "instead": "Everything raw in one buttered loaf pan",
+    "page": "PAGE 24",
+    "k": "buttered_loaf_pan",
+    "t": 322.086,
+    "of": 7
+   }
+  },
+  {
+   "a": 326.486,
+   "b": 330.986,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 330.986,
+   "b": 334.899,
+   "k": "long_grain_bag",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 334.899,
+   "b": 341.199,
+   "k": "cookbook_counter",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page24.png",
+      "tab": "PAGE 24",
+      "t": 336.499
+     }
+    ],
+    "k": "cookbook_counter"
+   }
+  },
+  {
+   "a": 341.199,
+   "b": 343.919,
+   "k": "foil_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 343.919,
+   "b": 349.019,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 349.019,
+   "b": 352.719,
+   "k": "oven_375",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 352.719,
+   "b": 357.539,
+   "k": "oven_timer",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 357.539,
+   "b": 359.979,
+   "k": "book_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 359.979,
+   "b": 366.459,
+   "k": "loose_foil_pan",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "loose_foil_pan",
+    "txt": "Loose foil = crunchy rice",
+    "stamp": "THE MISTAKE",
+    "cx": 0.5,
+    "cy": 0.4,
+    "t": 359.979
+   }
+  },
+  {
+   "a": 366.459,
+   "b": 368.779,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 368.779,
+   "b": 374.939,
+   "k": "freezer_page3",
+   "c": "PageUp",
+   "props": {
+    "k": "freezer_page3",
+    "pages": [
+     {
+      "src": "page3.png",
+      "tab": "PAGE 3",
+      "t": 370.259
+     }
+    ]
+   }
+  },
+  {
+   "a": 374.939,
+   "b": 382.899,
+   "k": "tetrazzini_plate",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "name": "Tossing the Thanksgiving leftovers",
+    "instead": "Turkey tetrazzini for one",
+    "page": "PAGE 156",
+    "t": 374.939,
+    "k": "tetrazzini_plate",
+    "bed": "page156_bed",
+    "pageOn": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "src": "page1.png",
+       "tab": "PAGE 1",
+       "t": 381.1
+      }
+     ],
+     "win": [
+      379.1,
+      385.1
+     ],
+     "k": "page1_recipe"
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 382.899,
+   "b": 388.159,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 388.159,
+   "b": 392.239,
+   "k": "spaghetti_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 392.239,
+   "b": 395.939,
+   "k": "turkey_mix_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 395.939,
+   "b": 399.019,
+   "k": "milk_parm_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 399.019,
+   "b": 402.059,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 402.059,
+   "b": 405.759,
+   "k": "crumb_cheese",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "Two tablespoons of bread crumbs",
+     "The rest of the cheese"
+    ],
+    "sig": "Mother's crumb top",
+    "k": "crumb_cheese"
+   }
+  },
+  {
+   "a": 405.759,
+   "b": 410.099,
+   "k": "thanksgiving-dinner-connecticut-1942",
+   "c": "Arc",
+   "props": {
+    "src": "thanksgiving-dinner-connecticut-1942",
+    "cap": "1950s · a family at a meal",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 410.099,
+   "b": 412.439,
+   "k": "two_plates_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 412.439,
+   "b": 416.459,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 416.459,
+   "b": 419.699,
+   "k": "foil_wrap_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 419.699,
+   "b": 426.33,
+   "k": "page19_foil",
+   "c": "PageUp",
+   "props": {
+    "k": "page19_foil",
+    "pages": [
+     {
+      "src": "page19.png",
+      "tab": "PAGE 19",
+      "t": 421.119
+     }
+    ]
+   }
+  },
+  {
+   "a": 426.33,
+   "b": 429.059,
+   "k": "trash_none",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 429.059,
+   "b": 432.23,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 432.23,
+   "b": 436.399,
+   "k": "basement_freezer_row",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 436.399,
+   "b": 439.609,
+   "k": "bernice_polaroid",
+   "c": "Memory",
+   "props": {
+    "k": "bernice_polaroid",
+    "caption": "Bernice's freezer",
+    "date": "1968",
+    "t": 436.399
+   }
+  },
+  {
+   "a": 439.609,
+   "b": 442.879,
+   "k": "freezer_packed_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 442.879,
+   "b": 447.139,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 447.139,
+   "b": 450.982,
+   "k": "wrap_square",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 450.982,
+   "b": 454.265,
+   "k": "bring_back_out",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 454.265,
+   "b": 458.765,
+   "k": "fsa_locker_plant_1940s",
+   "c": "Arc",
+   "props": {
+    "src": "fsa_locker_plant_1940s",
+    "cap": "1950s · a woman cooking at the stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 458.765,
+   "b": 467.645,
+   "k": "page19_desk",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page19.png",
+      "tab": "PAGE 19",
+      "t": 460.465
+     }
+    ],
+    "k": "page19_desk"
+   }
+  },
+  {
+   "a": 467.645,
+   "b": 472.385,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 472.385,
+   "b": 475.525,
+   "k": "thermometer_165",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 475.525,
+   "b": 482.205,
+   "k": "page1_table",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 476.865
+     }
+    ],
+    "k": "page1_table",
+    "caption": {
+     "t": 478.445,
+     "txt": "165Â°F · EVERY TIME"
+    }
+   }
+  },
+  {
+   "a": 482.205,
+   "b": 486.015,
+   "k": "",
+   "c": "Kicker",
+   "props": {
+    "txt": "STAY FOR #8",
+    "red": true
+   }
+  },
+  {
+   "a": 486.015,
+   "b": 490.185,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 490.185,
+   "b": 499.205,
+   "k": "roast_plate_scrape",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "name": "Scrape the roast plate into the trash",
+    "instead": "Shepherd's pie",
+    "page": "PAGE 158",
+    "k": "roast_plate_scrape",
+    "t": 497.265,
+    "of": 7
+   }
+  },
+  {
+   "a": 499.205,
+   "b": 505.971,
+   "k": "book_open_desk",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page1.png",
+      "tab": "PAGE 1",
+      "t": 500.845
+     }
+    ],
+    "k": "book_open_desk"
+   }
+  },
+  {
+   "a": 505.971,
+   "b": 509.478,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 509.478,
+   "b": 514.318,
+   "k": "spread_potato_dish",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 514.318,
+   "b": 519.338,
+   "k": "prelinger-1950s-leftovers-segment",
+   "c": "Arc",
+   "props": {
+    "src": "prelinger-1950s-leftovers-segment",
+    "cap": "1950s · a woman at the stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 519.338,
+   "b": 522.238,
+   "k": "oven_brown_pie",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 522.238,
+   "b": 527.018,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 527.018,
+   "b": 531.518,
+   "k": "one_plate_one_dish",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 531.518,
+   "b": 534.298,
+   "k": "three_suppers_count",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 534.298,
+   "b": 537.408,
+   "k": "",
+   "c": "Kicker",
+   "props": {
+    "txt": "ONE OF THREE",
+    "red": true
+   }
+  },
+  {
+   "a": 537.408,
+   "b": 539.938,
+   "k": "good_plate_pie",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 539.938,
+   "b": 545.728,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 545.728,
+   "b": 552.498,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "loretta_oven_mitt_hook",
+      "prompt": "Loretta in her lilac blouse and faded floral apron reaching to lift a worn quilted oven mitt off a hook beside her white enamel stove, looking toward the camera, yellow gingham curtain behind her, soft October window light"
+     },
+     {
+      "k": "loretta_loaf_pan_marker",
+      "prompt": "A loaf pan, a roll of foil and a marker together on a kitchen counter beside a white enamel stove, a lilac sleeve and floral apron edge visible at the frame, yellow gingham curtain behind, ordinary October window light"
+     },
+     {
+      "k": "loretta_talking_to_camera_kitchen",
+      "prompt": "Loretta in her lilac blouse and small pearl necklace, standing in her kitchen by the white enamel stove, speaking directly to the camera with a relaxed expression, yellow gingham curtains behind her, ordinary October window light"
+     }
+    ]
+   }
+  },
+  {
+   "a": 552.498,
+   "b": 557.318,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 557.318,
+   "b": 571.075,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "t": 559.225,
+    "k": "book_cover"
+   }
+  },
+  {
+   "a": 571.075,
+   "b": 576.312,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 576.312,
+   "b": 579.498,
+   "k": "loretta_stove_pot_lid",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 579.498,
+   "b": 583.798,
+   "k": "cookbook_page_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 583.798,
+   "b": 586.178,
+   "k": "fridge_week_calendar",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 586.178,
+   "b": 589.518,
+   "k": "small_skillet_burner",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 589.518,
+   "b": 593.978,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 593.978,
+   "b": 597.298,
+   "k": "rice_pot_steam",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 597.298,
+   "b": 600.098,
+   "k": "loretta_sauce_skillet",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 600.098,
+   "b": 604.508,
+   "k": "stove_small_pot",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 604.508,
+   "b": 609.981,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 609.981,
+   "b": 617.165,
+   "k": "counter_supper",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "name": "Eating standing at the counter",
+    "instead": "Beef and noodles at the set table",
+    "page": "PAGE 116",
+    "k": "counter_supper",
+    "t": 613.585,
+    "of": 7
+   }
+  },
+  {
+   "a": 617.165,
+   "b": 622.405,
+   "k": "iowa-church-supper-1940",
+   "c": "Arc",
+   "props": {
+    "src": "iowa-church-supper-1940",
+    "cap": "1950s · women serving at a counter",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 622.405,
+   "b": 629.445,
+   "k": "cookbook_open_116",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page116.png",
+      "tab": "PAGE 116",
+      "t": 623.925
+     }
+    ],
+    "k": "cookbook_open_116"
+   }
+  },
+  {
+   "a": 629.445,
+   "b": 633.045,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 633.045,
+   "b": 637.265,
+   "k": "leftover_roast_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 637.265,
+   "b": 641.615,
+   "k": "noodles_simmering",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 641.615,
+   "b": 645.365,
+   "k": "spoon_potatoes_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 645.365,
+   "b": 649.405,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 649.405,
+   "b": 654.505,
+   "k": "frozen_noodles_case",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 654.505,
+   "b": 658.565,
+   "k": "freezer_portions_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 658.565,
+   "b": 661.965,
+   "k": "old_skillet_reach",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 661.965,
+   "b": 664.978,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 664.978,
+   "b": 674.091,
+   "k": "freezer_open",
+   "c": "ItemCard",
+   "props": {
+    "name": "Staring into the freezer",
+    "n": 7,
+    "instead": "A skillet of tuna noodles from the pantry",
+    "page": "PAGE 133",
+    "k": "freezer_open",
+    "t": 671.751,
+    "of": 7
+   }
+  },
+  {
+   "a": 674.091,
+   "b": 678.891,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 678.891,
+   "b": 686.75,
+   "k": "cookbook_open",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page133.png",
+      "tab": "PAGE 133",
+      "t": 680.569
+     }
+    ],
+    "k": "cookbook_open",
+    "caption": {
+     "t": 684.41,
+     "txt": "15 MIN · FOR ONE"
+    }
+   }
+  },
+  {
+   "a": 686.75,
+   "b": 691.949,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 691.949,
+   "b": 695.509,
+   "k": "drain_noodles",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 695.509,
+   "b": 699.12,
+   "k": "soup_pour",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 699.12,
+   "b": 702.33,
+   "k": "tuna_half",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 702.33,
+   "b": 705.85,
+   "k": "plate_crush",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 705.85,
+   "b": 709.629,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 709.629,
+   "b": 714.569,
+   "k": "family-dinner-casserole-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "family-dinner-casserole-1950s",
+    "cap": "1950s · a family at the table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 714.569,
+   "b": 717.68,
+   "k": "church_supper",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 717.68,
+   "b": 721.009,
+   "k": "four_suppers",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 721.009,
+   "b": 727.99,
+   "k": "rice_box",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "of": 8,
+    "name": "Store-bought Spanish rice side",
+    "instead": "1/4 lb ground beef, rice, chili powder",
+    "page": "PAGE 115",
+    "k": "rice_box",
+    "t": 724.81,
+    "bed": "page115_bed",
+    "look": "PAGE 115 tab rises on 'page one hundred fifteen'; highlighter on the title line"
+   }
+  },
+  {
+   "a": 727.99,
+   "b": 734.41,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 734.41,
+   "b": 750.449,
+   "k": "rice_pan",
+   "c": "StepCard",
+   "props": {
+    "head": "Spanish Rice with Beef",
+    "page": "PAGE 115",
+    "steps": [
+     {
+      "txt": "Brown the beef, onion and pepper, then pour off the fat",
+      "t": 734.41,
+      "k": "step_brown"
+     },
+     {
+      "txt": "Stir in the rice and cook it one minute",
+      "t": 738.569,
+      "k": "step_toast"
+     },
+     {
+      "txt": "Add tomatoes, water and chili powder, cover, simmer on low 20 minutes",
+      "t": 743.89,
+      "k": "step_simmer"
+     }
+    ],
+    "bed": "rice_pan"
+   }
+  },
+  {
+   "a": 750.449,
+   "b": 753.87,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 753.87,
+   "b": 760.53,
+   "k": "freezer_page",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page163.png",
+      "tab": "PAGE 163",
+      "t": 755.23
+     }
+    ],
+    "k": "freezer_page",
+    "caption": {
+     "t": 757.49,
+     "txt": "1 SUNDAY = 4 NIGHTS"
+    }
+   }
+  },
+  {
+   "a": 760.53,
+   "b": 764.17,
+   "k": "casseroles",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 764.17,
+   "b": 766.87,
+   "k": "four_plates",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 766.87,
+   "b": 772.23,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 772.23,
+   "b": 774.557,
+   "k": "freezer_L_honey",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 774.557,
+   "b": 779.824,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 779.824,
+   "b": 797.43,
+   "k": "freezer_L_shelf",
+   "c": "GoneList",
+   "props": {
+    "k": "freezer_L_shelf",
+    "head": "ALL EIGHT",
+    "fade": 3,
+    "items": [
+     {
+      "txt": "Baked ziti",
+      "t": 779.824,
+      "x": 20,
+      "y": 30
+     },
+     {
+      "txt": "Cheese enchiladas",
+      "t": 781.624,
+      "x": 40,
+      "y": 30
+     },
+     {
+      "txt": "Chicken and rice",
+      "t": 783.783,
+      "x": 60,
+      "y": 30
+     },
+     {
+      "txt": "Turkey tetrazzini",
+      "t": 786.023,
+      "x": 80,
+      "y": 30
+     },
+     {
+      "txt": "Shepherd's pie",
+      "t": 787.764,
+      "x": 20,
+      "y": 70
+     },
+     {
+      "txt": "Beef and noodles",
+      "t": 790.004,
+      "x": 40,
+      "y": 70
+     },
+     {
+      "txt": "Tuna noodle skillet",
+      "t": 792.744,
+      "x": 60,
+      "y": 70
+     },
+     {
+      "txt": "Spanish rice",
+      "t": 794.343,
+      "x": 80,
+      "y": 70
+     }
+    ]
+   }
+  },
+  {
+   "a": 797.43,
+   "b": 799.884,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 799.884,
+   "b": 803.504,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 803.504,
+   "b": 813.964,
+   "k": "empty_counter",
+   "c": "DropList",
+   "props": {
+    "k": "empty_counter",
+    "head": "FOR TONIGHT",
+    "items": [
+     {
+      "txt": "8x4 LOAF PAN",
+      "t": 805.304
+     },
+     {
+      "txt": "HEAVY FOIL",
+      "t": 809.164
+     }
+    ]
+   }
+  },
+  {
+   "a": 813.964,
+   "b": 817.944,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 817.944,
+   "b": 822.023,
+   "k": "loretta_question",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 822.023,
+   "b": 825.684,
+   "k": "potluck_carry",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 825.684,
+   "b": 829.343,
+   "k": "empty_pan_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 829.343,
+   "b": 834.244,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 834.244,
+   "b": 838.664,
+   "k": "1950s-church-potluck",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-church-potluck",
+    "cap": "1950s · people at a dinner table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 838.664,
+   "b": 841.104,
+   "k": "hop_over_channel",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 841.104,
+   "b": 844.804,
+   "k": "oven_good_work",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 844.804,
+   "b": 847.333,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 847.333,
+   "b": 859.124,
+   "k": "oven_dirty_door",
+   "c": "Thumb",
+   "props": {
+    "thumb": "thumb_oven",
+    "tag": "OTHER CHANNEL",
+    "words": [
+     [
+      "The",
+      847.523
+     ],
+     [
+      "Best",
+      850.023
+     ],
+     [
+      "Way",
+      850.364
+     ],
+     [
+      "to",
+      850.564
+     ],
+     [
+      "Clean",
+      850.744
+     ],
+     [
+      "Your",
+      850.944
+     ],
+     [
+      "Oven",
+      851.164
+     ],
+     [
+      "Before",
+      851.464
+     ],
+     [
+      "Thanksgiving",
+      851.944
+     ]
+    ],
+    "k": "oven_dirty_door",
+    "push": true
+   }
+  },
+  {
+   "a": 859.124,
+   "b": 867.444,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "book_loaf_pan",
+      "t": 859.124
+     },
+     {
+      "k": "foil_drawer",
+      "t": 860.984
+     },
+     {
+      "k": "book_pages",
+      "t": 863.944
+     }
+    ]
+   }
+  },
+  {
+   "a": 867.444,
+   "b": 871.444,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 871.444,
+   "b": 875.523,
+   "k": "costs_recipe_card",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 875.523,
+   "b": 880.023,
+   "k": "1940s-woman-reading-cookbook-kitchen",
+   "c": "Arc",
+   "props": {
+    "src": "1940s-woman-reading-cookbook-kitchen",
+    "cap": "1950s · hands turning a cookbook page",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 880.023,
+   "b": 883.584,
+   "k": "loaf_pan_guess",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 883.584,
+   "b": 889.143,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 889.143,
+   "b": 893.364,
+   "k": "small_pan_table_one",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 893.364,
+   "b": 897.143,
+   "k": "table_set_for_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 897.143,
+   "b": 899.484,
+   "k": "set_place_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 899.484,
+   "b": 904.044,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 904.044,
+   "b": 909.564,
+   "k": "ziti_candle_table",
+   "c": "FrameArt",
+   "props": {
+    "k": "ziti_candle_table",
+    "bed": "kitchen_wall_dusk",
+    "caption": "Set a place for yourself",
+    "t": 904.044
+   }
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 64.733,
+   "b": 200.713,
+   "n": 1
+  },
+  {
+   "a": 200.713,
+   "b": 319.506,
+   "n": 2
+  },
+  {
+   "a": 319.506,
+   "b": 374.939,
+   "n": 3
+  },
+  {
+   "a": 374.939,
+   "b": 490.185,
+   "n": 4
+  },
+  {
+   "a": 490.185,
+   "b": 609.981,
+   "n": 5
+  },
+  {
+   "a": 609.981,
+   "b": 664.978,
+   "n": 6
+  },
+  {
+   "a": 664.978,
+   "b": 721.009,
+   "n": 7
+  },
+  {
+   "a": 721.009,
+   "b": 779.824,
+   "n": 8
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   64.733,
+   73.82
+  ],
+  [
+   200.713,
+   209.033
+  ],
+  [
+   319.506,
+   326.486
+  ],
+  [
+   374.939,
+   382.899
+  ],
+  [
+   490.185,
+   499.205
+  ],
+  [
+   609.981,
+   617.165
+  ],
+  [
+   664.978,
+   674.091
+  ],
+  [
+   721.009,
+   727.99
+  ],
+  [
+   557.318,
+   571.075
+  ],
+  [
+   779.824,
+   797.43
+  ],
+  [
+   847.333,
+   859.124
+  ]
+ ]
+}
