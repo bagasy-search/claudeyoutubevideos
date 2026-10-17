@@ -200,9 +200,9 @@ const Layers: React.FC<{ a: number; d: number; mode: "slide" | "crabs" | "surfac
     <div style={{ position: "absolute", left: x, top: y, fontFamily: HEAD, fontWeight: 700, fontSize: size, color: c, letterSpacing: 3, opacity: op, textShadow: shadow }}>{txt}</div>
   );
   if (mode === "crabs") {
-    const crabs = Array.from({ length: 16 }, (_, i) => ({ x: 380 + i * 92 + (i % 3) * 14, y: 760 + ((i * 37) % 60) }));
+    const crabs = Array.from({ length: 16 }, (_, i) => ({ x: 380 + i * 92 + (i % 3) * 14 + 16 * Math.sin(f / 22 + i * 1.7), y: 760 + ((i * 37) % 60) }));
     return (
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, #0B2F4A 0%, #0A2340 38%, #102B3F 60%, #081625 100%)" }}>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, #0B2F4A 0%, #0A2340 38%, #102B3F 60%, #081625 100%)", transform: `scale(${1 + 0.08 * f / Math.max(30, d)})` }}>
         <div style={{ position: "absolute", left: 0, right: 0, top: 120, height: 420, background: "linear-gradient(180deg, rgba(185,230,255,0.35), rgba(185,230,255,0.08))" }} />
         <div style={{ position: "absolute", left: 0, right: 0, top: 540, height: 400, background: "linear-gradient(180deg, rgba(242,166,90,0.05), rgba(242,166,90,0.28))" }} />
         <svg width={1920} height={1080} style={{ position: "absolute" }}><path d="M0,1000 L300,960 L700,700 L1100,560 L1500,450 L1920,420 L1920,1080 L0,1080 Z" fill="#2A2621" opacity={0.95} /></svg>
@@ -216,7 +216,7 @@ const Layers: React.FC<{ a: number; d: number; mode: "slide" | "crabs" | "surfac
   }
   const surface = mode === "surface";
   return (
-    <AbsoluteFill style={{ background: "#071629" }}>
+    <AbsoluteFill style={{ background: "#071629", transform: `scale(${1 + 0.06 * f / Math.max(30, d)})` }}>
       <div style={{ position: "absolute", left: 0, top: 160, width: 1920, height: 920, background: "linear-gradient(90deg, rgba(242,166,90,0.55) 0%, rgba(242,166,90,0.35) 45%, rgba(95,211,243,0.25) 55%, rgba(185,230,255,0.5) 100%)" }} />
       <svg width={1920} height={1080} style={{ position: "absolute" }}>
         <path d={`M1920,1080 L1920,${300} C${1500},${330} ${1200 - 300 * u1},${520} ${900 - 500 * u1},${1080} Z`} fill="rgba(185,230,255,0.55)" />
