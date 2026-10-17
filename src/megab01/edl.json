@@ -1,0 +1,1257 @@
+{
+"end": 617.845,
+"shots": [
+{
+"a": 0.0,
+"b": 4.5,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_blackwall.jpg",
+"ov": [
+"loc",
+"GANSU PROVINCE, CHINA",
+"MAY 5, 1993"
+]
+},
+{
+"a": 4.5,
+"b": 9.46,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_village_dark.jpg"
+},
+{
+"a": 9.46,
+"b": 11.18,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_sky_black.jpg"
+},
+{
+"a": 11.18,
+"b": 14.09,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_dust_road.jpg"
+},
+{
+"a": 14.09,
+"b": 17.0,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_dust_hand.jpg"
+},
+{
+"a": 17.0,
+"b": 23.16,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_kids_fields.mp4",
+"rate": 0.509
+},
+{
+"a": 23.16,
+"b": 27.36,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_river_irrig.jpg"
+},
+{
+"a": 27.36,
+"b": 32.08,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_storm_after.jpg",
+"ov": [
+"count",
+85,
+"PEOPLE DEAD",
+""
+]
+},
+{
+"a": 32.08,
+"b": 36.1,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_sheep_buried.jpg",
+"ov": [
+"count",
+100000,
+"ANIMALS LOST",
+"+"
+]
+},
+{
+"a": 36.1,
+"b": 40.06,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_dust_storm_in_the_gobi_desert_modis_2016_03_11_jpg.jpg"
+},
+{
+"a": 40.06,
+"b": 43.29,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_east_asia_sandstorm_nasa_full_jpg.jpg"
+},
+{
+"a": 43.29,
+"b": 46.52,
+"kb": 3,
+"type": "clip",
+"src": "img/megab01/a_planting_line.mp4",
+"rate": 0.949
+},
+{
+"a": 46.52,
+"b": 49.3,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_concrete_wall.jpg"
+},
+{
+"a": 49.3,
+"b": 54.86,
+"kb": 1,
+"type": "map",
+"src": "map_belt"
+},
+{
+"a": 54.86,
+"b": 58.32,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_oasis_covered_by_poplar_folast_windbreak_at_hotan_.jpg"
+},
+{
+"a": 58.32,
+"b": 63.74,
+"kb": 3,
+"type": "map",
+"src": "timeline_1978"
+},
+{
+"a": 63.74,
+"b": 72.02,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_taklamakan_desert_modis_2019_10_03_jpg.jpg",
+"ov": [
+"loc",
+"TAKLAMAKAN DESERT",
+"XINJIANG"
+]
+},
+{
+"a": 72.02,
+"b": 75.9,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_poplar_rows.mp4",
+"rate": 0.73
+},
+{
+"a": 75.9,
+"b": 78.3,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_dead_poplars.jpg",
+"ov": [
+"count",
+1000000000,
+"TREES LOST",
+""
+]
+},
+{
+"a": 78.3,
+"b": 85.16,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_iss067e122535_lrg_jpg.jpg"
+},
+{
+"a": 85.16,
+"b": 87.93,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_roots_soil.jpg"
+},
+{
+"a": 87.93,
+"b": 90.7,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_desert_landscape_on_the_315_national_highway_silk_.jpg"
+},
+{
+"a": 90.7,
+"b": 95.2,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_dunhuang_dunes_09_jpg.jpg",
+"ov": [
+"chap",
+"PART 1",
+"THE DESERT ON THE MARCH"
+]
+},
+{
+"a": 95.2,
+"b": 97.96,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_dust_from_the_taklimakan_desert_over_western_china.jpg",
+"ov": [
+"loc",
+"GOBI DESERT",
+"LATE 1970s"
+]
+},
+{
+"a": 97.96,
+"b": 100.72,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_sand_farmland.jpg"
+},
+{
+"a": 100.72,
+"b": 105.08,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_dune_field_edge.jpg"
+},
+{
+"a": 105.08,
+"b": 108.52,
+"kb": 2,
+"type": "clip",
+"src": "img/megab01/a_overgrazed.mp4",
+"rate": 0.746
+},
+{
+"a": 108.52,
+"b": 111.28,
+"kb": 3,
+"type": "clip",
+"src": "img/megab01/a_soil_lift.mp4",
+"rate": 1.0
+},
+{
+"a": 111.28,
+"b": 113.41,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_buried_house.jpg"
+},
+{
+"a": 113.41,
+"b": 115.54,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_family_leaving.jpg"
+},
+{
+"a": 115.54,
+"b": 119.08,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_spring_sandstorm_scours_china_jpg.jpg",
+"ov": [
+"loc",
+"SPRING DUST STORM",
+"NASA SATELLITE"
+]
+},
+{
+"a": 119.08,
+"b": 124.12,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_dust_over_japan_4462607792_jpg.jpg",
+"ov": [
+"loc",
+"DUST OVER JAPAN",
+"NASA SATELLITE"
+]
+},
+{
+"a": 124.12,
+"b": 127.62,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_meeting_1978.jpg"
+},
+{
+"a": 127.62,
+"b": 139.94,
+"kb": 1,
+"type": "map",
+"src": "map_region"
+},
+{
+"a": 139.94,
+"b": 145.98,
+"kb": 2,
+"type": "map",
+"src": "map_span"
+},
+{
+"a": 145.98,
+"b": 149.16,
+"kb": 3,
+"type": "map",
+"src": "timeline_73"
+},
+{
+"a": 149.16,
+"b": 155.871,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_saihanba_national_forest_park_autumn_2011_panorami.jpg"
+},
+{
+"a": 155.871,
+"b": 161.631,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_seedling_dune.jpg",
+"ov": [
+"chap",
+"PART 2",
+"THE STRAW TRICK"
+]
+},
+{
+"a": 161.631,
+"b": 164.401,
+"kb": 2,
+"type": "clip",
+"src": "img/megab01/a_dune_move.mp4",
+"rate": 1.0
+},
+{
+"a": 164.401,
+"b": 167.171,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_dead_seedling.jpg"
+},
+{
+"a": 167.171,
+"b": 170.711,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_shapotou_zhongwei_ningxia_china_panoramio_10_jpg.jpg",
+"ov": [
+"loc",
+"SHAPOTOU",
+"NINGXIA"
+]
+},
+{
+"a": 170.711,
+"b": 174.581,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_rail_1950s.jpg"
+},
+{
+"a": 174.581,
+"b": 178.451,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_shapotou_zhongwei_ningxia_china_panoramio_22_jpg.jpg"
+},
+{
+"a": 178.451,
+"b": 180.971,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_shapotou_zhongwei_ningxia_china_panoramio_16_jpg.jpg"
+},
+{
+"a": 180.971,
+"b": 185.791,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_buried_track.jpg"
+},
+{
+"a": 185.791,
+"b": 190.011,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_straw_bundles.jpg"
+},
+{
+"a": 190.011,
+"b": 192.391,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_checker_top.jpg",
+"ov": [
+"dim",
+"1 m × 1 m",
+""
+]
+},
+{
+"a": 192.391,
+"b": 194.771,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_checker_wide.jpg"
+},
+{
+"a": 194.771,
+"b": 198.711,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_checker_close.jpg"
+},
+{
+"a": 198.711,
+"b": 204.471,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_grass_square.jpg"
+},
+{
+"a": 204.471,
+"b": 208.871,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_shapotou_zhongwei_ningxia_china_panoramio_17_jpg.jpg"
+},
+{
+"a": 208.871,
+"b": 213.151,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_checker_vast.jpg"
+},
+{
+"a": 213.151,
+"b": 216.071,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_planting_crowd.jpg"
+},
+{
+"a": 216.071,
+"b": 220.171,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_hands_plant.jpg"
+},
+{
+"a": 220.171,
+"b": 224.731,
+"kb": 2,
+"type": "clip",
+"src": "img/megab01/a_plane_seed.mp4",
+"rate": 0.673
+},
+{
+"a": 224.731,
+"b": 229.291,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_poplar_nursery.jpg"
+},
+{
+"a": 229.291,
+"b": 233.351,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_hotan_farmland_img_20170519_120752_jpg.jpg"
+},
+{
+"a": 233.351,
+"b": 236.151,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_poplar_grow.mp4",
+"rate": 0.833
+},
+{
+"a": 236.151,
+"b": 240.811,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_hotan_farmland_img_20170519_120753_jpg.jpg"
+},
+{
+"a": 240.811,
+"b": 244.591,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_poplar_aerial.jpg"
+},
+{
+"a": 244.591,
+"b": 249.151,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_tarim_desert_highway_start_on_north_side_xinjiang_.jpg"
+},
+{
+"a": 249.151,
+"b": 252.751,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_beetle_bark.jpg",
+"ov": [
+"chap",
+"PART 3",
+"A BILLION TREES"
+]
+},
+{
+"a": 252.751,
+"b": 256.351,
+"kb": 2,
+"type": "clip",
+"src": "img/megab01/a_sick_poplars.mp4",
+"rate": 0.852
+},
+{
+"a": 256.351,
+"b": 260.431,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_identical.jpg"
+},
+{
+"a": 260.431,
+"b": 263.571,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_cut_logs.jpg",
+"ov": [
+"count",
+1000000000,
+"POPLARS LOST",
+""
+]
+},
+{
+"a": 263.571,
+"b": 267.751,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_stumps.jpg"
+},
+{
+"a": 267.751,
+"b": 271.351,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_crop_rows.jpg"
+},
+{
+"a": 271.351,
+"b": 275.331,
+"kb": 3,
+"type": "clip",
+"src": "img/megab01/a_dead_row_wide.mp4",
+"rate": 0.645
+},
+{
+"a": 275.331,
+"b": 280.651,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_well_dry.jpg"
+},
+{
+"a": 280.651,
+"b": 285.771,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_roots_deep.jpg"
+},
+{
+"a": 285.771,
+"b": 287.721,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_water_table.jpg"
+},
+{
+"a": 287.721,
+"b": 289.671,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_pump.jpg"
+},
+{
+"a": 289.671,
+"b": 293.311,
+"kb": 0,
+"type": "clip",
+"src": "img/megab01/a_grassland.mp4",
+"rate": 0.842
+},
+{
+"a": 293.311,
+"b": 297.311,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_dry_soil.jpg"
+},
+{
+"a": 297.311,
+"b": 300.711,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_loess_plateau_2012_4_4_panoramio_jpg.jpg"
+},
+{
+"a": 300.711,
+"b": 304.911,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_loess_gully_mapillary_yii7arat9f5534lejsjrda_jpg.jpg"
+},
+{
+"a": 304.911,
+"b": 308.562,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_study_desk.jpg",
+"ov": [
+"loc",
+"2023 STUDY",
+"FIRST 40 YEARS"
+]
+},
+{
+"a": 308.562,
+"b": 311.752,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_sparse_trees.jpg"
+},
+{
+"a": 311.752,
+"b": 314.942,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_loess_plateau_tele_ka_eastern_side_jpg.jpg"
+},
+{
+"a": 314.942,
+"b": 320.522,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_tarim_desert_highway_desert_scene_xinjiang_china_j.jpg",
+"ov": [
+"chap",
+"PART 4",
+"CHANGING COURSE"
+]
+},
+{
+"a": 320.522,
+"b": 326.822,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_hippophae_rhamnoides_113549765_jpg.jpg"
+},
+{
+"a": 326.822,
+"b": 329.602,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_saxaul.mp4",
+"rate": 1.0,
+"ov": [
+"loc",
+"SAXAUL",
+"HALOXYLON"
+]
+},
+{
+"a": 329.602,
+"b": 332.382,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_saxaul_rows.jpg"
+},
+{
+"a": 332.382,
+"b": 334.892,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_sea_buckthorn_hippophae_rhamnoides_at_troon_beach_.jpg",
+"ov": [
+"loc",
+"SEA BUCKTHORN · TAMARISK",
+""
+]
+},
+{
+"a": 334.892,
+"b": 337.402,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_tamarix_ramosissima_tamaryszek_rozga_ziony_2024_04.jpg"
+},
+{
+"a": 337.402,
+"b": 340.922,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_xinjiang_old_and_young_populus_diversifolia_497351.jpg",
+"ov": [
+"loc",
+"DESERT POPLAR",
+"POPULUS EUPHRATICA"
+]
+},
+{
+"a": 340.922,
+"b": 344.442,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_tarim_desert_highway_desert_poplars_xinjiang_china.jpg"
+},
+{
+"a": 344.442,
+"b": 350.342,
+"kb": 3,
+"type": "clip",
+"src": "img/megab01/a_mixed_planting.mp4",
+"rate": 0.5
+},
+{
+"a": 350.342,
+"b": 354.682,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_kubuqi_dunes_et_stupa_jpg.jpg"
+},
+{
+"a": 354.682,
+"b": 356.662,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_solar_dunes.mp4",
+"rate": 1.0
+},
+{
+"a": 356.662,
+"b": 359.882,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_building_a_great_solar_wall_in_china_153759_201712.jpg",
+"ov": [
+"loc",
+"KUBUQI SOLAR FARM",
+"NASA · 2017 → 2024"
+]
+},
+{
+"a": 359.882,
+"b": 363.102,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_building_a_great_solar_wall_in_china_153759_2_2024.jpg"
+},
+{
+"a": 363.102,
+"b": 367.202,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_panel_shade.jpg"
+},
+{
+"a": 367.202,
+"b": 370.522,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_grass_under.mp4",
+"rate": 0.813
+},
+{
+"a": 370.522,
+"b": 374.402,
+"kb": 2,
+"type": "clip",
+"src": "img/megab01/a_sheep_solar.mp4",
+"rate": 0.799
+},
+{
+"a": 374.402,
+"b": 378.282,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_reforestaci_n_del_desierto_de_kubuqi_china_jpg.jpg"
+},
+{
+"a": 378.282,
+"b": 382.402,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_taklamakan_desert_and_kongur_tagh_modis_2019_11_22.jpg",
+"ov": [
+"chap",
+"PART 5",
+"CLOSING THE RING"
+]
+},
+{
+"a": 382.402,
+"b": 385.582,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_taklamakan_desert_qarqan_xinjiang_china_panoramio_.jpg"
+},
+{
+"a": 385.582,
+"b": 388.762,
+"kb": 2,
+"type": "map",
+"src": "map_taklamakan"
+},
+{
+"a": 388.762,
+"b": 392.202,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_small_dunes_of_badain_jaran_desert_jpg.jpg",
+"ov": [
+"count",
+100,
+"METERS TALL",
+"+"
+]
+},
+{
+"a": 392.202,
+"b": 395.642,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_tall_dunes.jpg"
+},
+{
+"a": 395.642,
+"b": 399.822,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_hotan_tuanjie_square_day_north_jpg.jpg"
+},
+{
+"a": 399.822,
+"b": 402.882,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_oasis_edge.jpg"
+},
+{
+"a": 402.882,
+"b": 407.062,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_taklamakan_desert_tarim_desert_highway_qarqan_xinj.jpg"
+},
+{
+"a": 407.062,
+"b": 410.802,
+"kb": 0,
+"type": "clip",
+"src": "img/megab01/a_highway_belt.mp4",
+"rate": 0.758,
+"ov": [
+"dim",
+"70 m WIDE",
+"400+ km LONG"
+]
+},
+{
+"a": 410.802,
+"b": 414.542,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_tarim_desert_highway_niya_hotan_xinjiang_china_pan.jpg"
+},
+{
+"a": 414.542,
+"b": 418.922,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_pump_house.jpg"
+},
+{
+"a": 418.922,
+"b": 422.392,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_drip.jpg"
+},
+{
+"a": 422.392,
+"b": 425.862,
+"kb": 0,
+"type": "clip",
+"src": "img/megab01/a_green_ruler.mp4",
+"rate": 0.884
+},
+{
+"a": 425.862,
+"b": 430.982,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_hotan_railway_station_xinjiang_jpg.jpg",
+"ov": [
+"loc",
+"HOTAN STATION",
+"XINJIANG"
+]
+},
+{
+"a": 430.982,
+"b": 435.242,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_train_desert.jpg"
+},
+{
+"a": 435.242,
+"b": 439.222,
+"kb": 3,
+"type": "map",
+"src": "map_rail"
+},
+{
+"a": 439.222,
+"b": 443.782,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_track_straw.jpg"
+},
+{
+"a": 443.782,
+"b": 447.962,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_shapotou_zhongwei_ningxia_china_panoramio_27_jpg.jpg"
+},
+{
+"a": 447.962,
+"b": 452.742,
+"kb": 2,
+"type": "clip",
+"src": "img/megab01/a_ring_far.mp4",
+"rate": 0.649
+},
+{
+"a": 452.742,
+"b": 462.293,
+"kb": 3,
+"type": "map",
+"src": "map_gap"
+},
+{
+"a": 462.293,
+"b": 467.573,
+"kb": 0,
+"type": "clip",
+"src": "img/megab01/a_dawn_planting.mp4",
+"rate": 0.581,
+"ov": [
+"loc",
+"YUTIAN COUNTY",
+"NOV 28, 2024"
+]
+},
+{
+"a": 467.573,
+"b": 470.653,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_final_section.mp4",
+"rate": 0.671
+},
+{
+"a": 470.653,
+"b": 473.883,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_red_willow.jpg"
+},
+{
+"a": 473.883,
+"b": 477.113,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_hands_saxaul.jpg"
+},
+{
+"a": 477.113,
+"b": 485.673,
+"kb": 0,
+"type": "map",
+"src": "map_ring"
+},
+{
+"a": 485.673,
+"b": 490.873,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_belt_curve.mp4",
+"rate": 0.577,
+"ov": [
+"dim",
+"LONGER THAN",
+"PARIS → MOSCOW"
+]
+},
+{
+"a": 490.873,
+"b": 496.413,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_tools.jpg"
+},
+{
+"a": 496.413,
+"b": 501.493,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_saihan_tower_hebei_jpg.jpg",
+"ov": [
+"chap",
+"PART 6",
+"IS IT WORKING?"
+]
+},
+{
+"a": 501.493,
+"b": 507.813,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_globe_green.jpg"
+},
+{
+"a": 507.813,
+"b": 511.933,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_loess_plateau_huang_he_plain_mixed_forests_bioregi.jpg",
+"ov": [
+"count",
+25,
+"OF THE WORLD'S NEW GREEN LEAF AREA",
+"%"
+]
+},
+{
+"a": 511.933,
+"b": 516.773,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_saihanba3_jpg.jpg",
+"ov": [
+"count",
+6,
+"OF THE WORLD'S VEGETATED LAND",
+"%"
+]
+},
+{
+"a": 516.773,
+"b": 526.573,
+"kb": 3,
+"type": "map",
+"src": "pct_cover"
+},
+{
+"a": 526.573,
+"b": 532.093,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_monsichelsee_05_jpg.jpg"
+},
+{
+"a": 532.093,
+"b": 537.933,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_8637787_at_baiwangxincheng_20210315180859_jpg.jpg",
+"ov": [
+"loc",
+"BEIJING",
+"MARCH 15, 2021"
+]
+},
+{
+"a": 537.933,
+"b": 541.133,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_beijing_orange2.jpg"
+},
+{
+"a": 541.133,
+"b": 546.733,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_air_monitor.jpg",
+"ov": [
+"count",
+8000,
+"µg/m³ PARTICLES",
+"+"
+]
+},
+{
+"a": 546.733,
+"b": 549.473,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/a_airport_dust.jpg",
+"ov": [
+"count",
+400,
+"FLIGHTS CANCELLED",
+"+"
+]
+},
+{
+"a": 549.473,
+"b": 552.773,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_heavy_dust_in_badain_jaran_desert_modis_2025_04_14.jpg"
+},
+{
+"a": 552.773,
+"b": 556.073,
+"kb": 2,
+"type": "clip",
+"src": "img/megab01/a_mongolia_steppe.mp4",
+"rate": 0.737
+},
+{
+"a": 556.073,
+"b": 559.753,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_tree_wall_sand.jpg"
+},
+{
+"a": 559.753,
+"b": 562.293,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_heavy_dust_storm_in_the_taklamakan_desert_modis_20.jpg"
+},
+{
+"a": 562.293,
+"b": 564.833,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_dunhuang_earth_tower_in_desert_jpg.jpg"
+},
+{
+"a": 564.833,
+"b": 568.113,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_monoculture.jpg"
+},
+{
+"a": 568.113,
+"b": 571.393,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/a_dry_canal.jpg"
+},
+{
+"a": 571.393,
+"b": 574.733,
+"kb": 0,
+"type": "img",
+"src": "img/megab01/r_yadan_landforms_in_the_gobi_desert_panoramio_jpg.jpg"
+},
+{
+"a": 574.733,
+"b": 578.973,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/r_tarim_desert_highway_crossing_the_tarim_river_xinj.jpg"
+},
+{
+"a": 578.973,
+"b": 583.373,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_tamarix_ramossissima_jpg.jpg"
+},
+{
+"a": 583.373,
+"b": 585.853,
+"kb": 3,
+"type": "img",
+"src": "img/megab01/r_xinjiang_populus_diversifolia_hdr_4974135016_jpg.jpg"
+},
+{
+"a": 585.853,
+"b": 590.253,
+"kb": 0,
+"type": "map",
+"src": "timeline_2050"
+},
+{
+"a": 590.253,
+"b": 594.133,
+"kb": 1,
+"type": "clip",
+"src": "img/megab01/a_vast_green.mp4",
+"rate": 0.79
+},
+{
+"a": 594.133,
+"b": 598.193,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/a_roots_bricks.jpg"
+},
+{
+"a": 598.193,
+"b": 603.153,
+"kb": 3,
+"type": "clip",
+"src": "img/megab01/a_watering.mp4",
+"rate": 0.605
+},
+{
+"a": 603.153,
+"b": 608.693,
+"kb": 0,
+"type": "clip",
+"src": "img/megab01/a_desert_city.mp4",
+"rate": 0.56
+},
+{
+"a": 608.693,
+"b": 613.933,
+"kb": 1,
+"type": "img",
+"src": "img/megab01/a_city_cracks.jpg"
+},
+{
+"a": 613.933,
+"b": 617.845,
+"kb": 2,
+"type": "img",
+"src": "img/megab01/r_dunhuang_dunes_10_jpg.jpg"
+}
+]
+}
