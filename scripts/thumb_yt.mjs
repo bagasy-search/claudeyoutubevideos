@@ -1,6 +1,8 @@
-// thumb_yt.mjs — prepara la miniatura para YouTube: SIEMPRE 1280x720 JPEG (lanczos + nitidez suave).
+// thumb_yt.mjs — prepara la miniatura para YouTube: 16:9, MÍNIMO 1280x720, y NUNCA la achica.
 // 15-oct-2026: con la de gpt-image (1088x608) YouTube NO genera maxres (máximo 640x480 con franjas) y en
 // pantallas grandes se ve borrosa; a 1280x720 sí genera maxresdefault y queda nítida (A/B en ctrcemento).
+// 17-oct-2026: las de ChatGPT web vienen en 1672x941 y se achicaban a 1280: ahora quedan en su resolución
+// (tope 3840 de ancho), JPEG 4:4:4 a máxima calidad, bajando la calidad sólo si pasa los 2 MB de la API.
 //   import { thumbYT } from "./thumb_yt.mjs";  const { buf, ct } = await thumbYT(url | Buffer);
 import fs from "node:fs";
 import os from "node:os";
@@ -13,11 +15,14 @@ export async function thumbYT(src) {
   const a = path.join(os.tmpdir(), `thyt_${id}_in`), b = path.join(os.tmpdir(), `thyt_${id}.jpg`);
   try {
     fs.writeFileSync(a, raw);
-    execFileSync("ffmpeg", ["-v", "error", "-y", "-i", a, "-vf",
-      "scale=1280:720:force_original_aspect_ratio=increase:flags=lanczos,crop=1280:720,unsharp=5:5:0.6:5:5:0.0", "-q:v", "2", b]);
-    let buf = fs.readFileSync(b);
-    if (buf.length > 1900000) {  // tope de YouTube 2 MB
-      execFileSync("ffmpeg", ["-v", "error", "-y", "-i", b, "-q:v", "4", b + ".jpg"]); buf = fs.readFileSync(b + ".jpg"); fs.rmSync(b + ".jpg", { force: true });
+    const iw = Number(String(execFileSync("ffprobe", ["-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width", "-of", "csv=p=0", a])).trim()) || 1280;
+    const W = Math.min(3840, Math.max(1280, iw)) & ~15, H = Math.round(W * 9 / 16) & ~1;
+    const vf = `scale=${W}:${H}:force_original_aspect_ratio=increase:flags=lanczos,crop=${W}:${H}` + (iw < 1280 ? ",unsharp=5:5:0.6:5:5:0.0" : "");
+    let buf;
+    for (const q of [1, 2, 3, 4, 6]) {  // tope de YouTube 2 MB
+      execFileSync("ffmpeg", ["-v", "error", "-y", "-i", a, "-vf", vf, "-pix_fmt", "yuvj444p", "-q:v", String(q), b]);
+      buf = fs.readFileSync(b);
+      if (buf.length <= 1900000) break;
     }
     return { buf, ct: "image/jpeg" };
   } catch (e) {
