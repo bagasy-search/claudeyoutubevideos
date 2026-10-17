@@ -1322,7 +1322,7 @@
   },
   {
    "a": 475.525,
-   "b": 482.205,
+   "b": 486.015,
    "k": "page1_table",
    "c": "PageUp",
    "props": {
@@ -1338,16 +1338,6 @@
      "t": 478.445,
      "txt": "165Â°F · EVERY TIME"
     }
-   }
-  },
-  {
-   "a": 482.205,
-   "b": 486.015,
-   "k": "",
-   "c": "Kicker",
-   "props": {
-    "txt": "STAY FOR #8",
-    "red": true
    }
   },
   {
@@ -1463,23 +1453,13 @@
   },
   {
    "a": 531.518,
-   "b": 534.298,
+   "b": 537.408,
    "k": "three_suppers_count",
    "z": [
     1.13,
     1.04
    ],
    "dx": 40
-  },
-  {
-   "a": 534.298,
-   "b": 537.408,
-   "k": "",
-   "c": "Kicker",
-   "props": {
-    "txt": "ONE OF THREE",
-    "red": true
-   }
   },
   {
    "a": 537.408,
@@ -2458,7 +2438,26 @@
    }
   }
  ],
- "overlays": [],
+ "overlays": [
+  {
+   "a": 482.205,
+   "b": 486.015,
+   "c": "Kicker",
+   "props": {
+    "txt": "STAY FOR #8",
+    "red": true
+   }
+  },
+  {
+   "a": 534.298,
+   "b": 537.408,
+   "c": "Kicker",
+   "props": {
+    "txt": "ONE OF THREE",
+    "red": true
+   }
+  }
+ ],
  "counts": [
   {
    "a": 64.733,
