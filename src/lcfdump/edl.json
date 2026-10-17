@@ -1,0 +1,2780 @@
+{
+ "end": 918.433,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 6.62,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 6.62,
+   "b": 12.88,
+   "k": "loretta_face_knife",
+   "c": "Kinetic",
+   "props": {
+    "k": "loretta_face_knife",
+    "words": [
+     [
+      "A KNIFE",
+      8.36
+     ],
+     [
+      "AN HOUR AT THE STOVE",
+      9.04
+     ],
+     [
+      "IT DOESN'T",
+      10.74
+     ]
+    ]
+   }
+  },
+  {
+   "a": 12.88,
+   "b": 17.06,
+   "k": "loretta_window",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 17.06,
+   "b": 21.6,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 21.6,
+   "b": 25.05,
+   "k": "loretta_table_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 25.05,
+   "b": 28.56,
+   "k": "loretta_dish_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 28.56,
+   "b": 33.6,
+   "k": "loretta_dish",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 33.6,
+   "b": 36.89,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 36.89,
+   "b": 40.61,
+   "k": "loretta_county",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 40.61,
+   "b": 44.86,
+   "k": "loretta_harold_photo",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 44.86,
+   "b": 47.61,
+   "k": "loretta_stove",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 47.61,
+   "b": 51.18,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 51.18,
+   "b": 54.75,
+   "k": "loretta_recipe_page",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 54.75,
+   "b": 58.16,
+   "k": "loretta_salmon_can",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 58.16,
+   "b": 62.72,
+   "k": "loretta_potato",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 62.72,
+   "b": 66.38,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 66.38,
+   "b": 74.5,
+   "k": "big_loaf_pan",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 10,
+    "name": "Big loaf pan, big bowl",
+    "instead": "A fist-sized loaf, toaster oven",
+    "page": "PAGE 121",
+    "k": "big_loaf_pan",
+    "t": 71.72
+   }
+  },
+  {
+   "a": 74.5,
+   "b": 79.613,
+   "k": "fist_loaf",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 79.613,
+   "b": 82.403,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 82.403,
+   "b": 86.493,
+   "k": "ground_beef",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 86.493,
+   "b": 90.313,
+   "k": "crumbs_milk_onion",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 90.313,
+   "b": 93.463,
+   "k": "mixing_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 93.463,
+   "b": 96.793,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 96.793,
+   "b": 103.713,
+   "k": "page_121_table",
+   "c": "PageUp",
+   "props": {
+    "k": "page_121_table",
+    "pages": [
+     {
+      "src": "page121.png",
+      "tab": "PAGE 121",
+      "t": 98.253
+     }
+    ]
+   }
+  },
+  {
+   "a": 103.713,
+   "b": 107.073,
+   "k": "rest_loaf",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 107.073,
+   "b": 112.093,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 112.093,
+   "b": 117.413,
+   "k": "meat_thermometer_1950s",
+   "c": "Arc",
+   "props": {
+    "src": "meat_thermometer_1950s",
+    "cap": "1950s · a kitchen stove at work",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 117.413,
+   "b": 126.033,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "second_slice_fridge",
+      "prompt": "A second meatloaf slice wrapped in wax paper on a plate on a refrigerator shelf, jars pushed aside, ordinary fridge light, no people.",
+      "t": 119.413
+     },
+     {
+      "k": "cold_sandwich_mustard",
+      "prompt": "A cold meatloaf sandwich on rye bread with yellow mustard, on a small plate at a kitchen table set for one, morning light, no people.",
+      "t": 121.693
+     }
+    ]
+   }
+  },
+  {
+   "a": 126.033,
+   "b": 131.833,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 131.833,
+   "b": 139.453,
+   "k": "danny_laptop_memory",
+   "c": "Memory",
+   "props": {
+    "k": "danny_laptop_memory",
+    "caption": "Danny reading your comments",
+    "date": "this summer",
+    "t": 134.633
+   }
+  },
+  {
+   "a": 139.453,
+   "b": 142.363,
+   "k": "glasses_off_wipe",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 142.363,
+   "b": 144.793,
+   "k": "handkerchief_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 144.793,
+   "b": 147.553,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 147.553,
+   "b": 152.673,
+   "k": "woman-at-stove-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "woman-at-stove-1950s",
+    "cap": "1950s · a woman cooking at a stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 152.673,
+   "b": 156.133,
+   "k": "single_pot_dusk",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 156.133,
+   "b": 159.553,
+   "k": "supper_for_one_book",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 159.553,
+   "b": 165.813,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 165.813,
+   "b": 170.553,
+   "k": "salmon_covered_spoon",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 170.553,
+   "b": 173.153,
+   "k": "laptop_trackpad_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 173.153,
+   "b": 176.693,
+   "k": "dump_bake_title_read",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 176.693,
+   "b": 182.643,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 182.643,
+   "b": 185.033,
+   "k": "suppers_notebook",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 185.033,
+   "b": 188.613,
+   "k": "thigh_raw",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 188.613,
+   "b": 191.873,
+   "k": "page_120_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_120_fix",
+    "pages": [
+     {
+      "src": "page120.png",
+      "tab": "PAGE 120",
+      "t": 190.873
+     }
+    ]
+   }
+  },
+  {
+   "a": 191.873,
+   "b": 199.26,
+   "k": "item2_bigoven",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "name": "The big oven for one thigh",
+    "instead": "The toaster oven",
+    "page": "120",
+    "k": "item2_bigoven",
+    "t": 194.113,
+    "look": "plain",
+    "overlay": {
+     "kind": "O",
+     "c": "PageUp",
+     "window": "191.8-197.8",
+     "t": 192.733,
+     "pages": [
+      {
+       "n": "120",
+       "t": "The Toaster Oven",
+       "hl": 192.733
+      }
+     ],
+     "k": "page120_tab"
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 199.26,
+   "b": 203.65,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 203.65,
+   "b": 206.38,
+   "k": "bigoven_empty",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 206.38,
+   "b": 209.22,
+   "k": "writing_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 209.22,
+   "b": 212.76,
+   "k": "toaster400",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 212.76,
+   "b": 216.64,
+   "k": "potatoes_toss",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 216.64,
+   "b": 221.7,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 221.7,
+   "b": 224.88,
+   "k": "thigh_oil",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 224.88,
+   "b": 228.5,
+   "k": "garlic_crush",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 228.5,
+   "b": 231.053,
+   "k": "skin_up",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 231.053,
+   "b": 235.333,
+   "k": "farm-kitchen-oven-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "farm-kitchen-oven-1950s",
+    "cap": "Archive · a woman in a kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 235.333,
+   "b": 241.473,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 241.473,
+   "b": 247.693,
+   "k": "chicken_thigh",
+   "c": "BigNumber",
+   "props": {
+    "num": 165,
+    "unit": "degrees",
+    "suffix": "°F",
+    "txt": "NEXT TO THE BONE",
+    "t": 244.133,
+    "k": "chicken_thigh"
+   }
+  },
+  {
+   "a": 247.693,
+   "b": 252.813,
+   "k": "church-basement-supper-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "church-basement-supper-1950s",
+    "cap": "1950s · church women serving supper",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 252.813,
+   "b": 257.673,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 257.673,
+   "b": 261.873,
+   "k": "toaster_oven",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 261.873,
+   "b": 265.093,
+   "k": "one_plate_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 265.093,
+   "b": 268.613,
+   "k": "sat_down_to_eat",
+   "c": "Memory",
+   "props": {
+    "k": "sat_down_to_eat",
+    "caption": "I didn't rush through it",
+    "date": "9 years ago",
+    "t": 266.833
+   }
+  },
+  {
+   "a": 268.613,
+   "b": 271.753,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 271.753,
+   "b": 275.533,
+   "k": "salmon_fillet",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 275.533,
+   "b": 282.133,
+   "k": "church_cookbook_124",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "name": "Bare salmon in the oven",
+    "instead": "a spoon of mayonnaise",
+    "page": "124",
+    "k": "church_cookbook_124",
+    "t": 275.533,
+    "overlay": {
+     "c": "PageUp",
+     "window": "274.9-280.9",
+     "pages": [
+      {
+       "n": 124,
+       "line": "a spoon of mayonnaise keeps the salmon moist",
+       "t": 276.613
+      }
+     ],
+     "caption": {
+      "txt": "PAGE 124"
+     },
+     "k": "church_cookbook_124"
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 282.133,
+   "b": 286.393,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 286.393,
+   "b": 289.453,
+   "k": "mayo_spoon_salmon",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 289.453,
+   "b": 292.763,
+   "k": "cookbook_open",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 292.763,
+   "b": 297.433,
+   "k": "rural-church-potluck-1940",
+   "c": "Arc",
+   "props": {
+    "src": "rural-church-potluck-1940",
+    "cap": "1940s · a family at the dinner table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 297.433,
+   "b": 304.613,
+   "k": "salmon_done",
+   "c": "StepCard",
+   "props": {
+    "head": "Mayo salmon",
+    "page": "124",
+    "steps": [
+     {
+      "t": 297.433,
+      "txt": "Spread a spoon of mayo with a little mustard",
+      "k": "salmon_mustard"
+     },
+     {
+      "t": 300.313,
+      "txt": "Sprinkle the crumbs on top",
+      "k": "salmon_crumbs"
+     },
+     {
+      "t": 302.973,
+      "txt": "Cook to 145°F",
+      "k": "salmon_145"
+     }
+    ],
+    "bed": "salmon_done"
+   }
+  },
+  {
+   "a": 304.613,
+   "b": 307.813,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 307.813,
+   "b": 311.653,
+   "k": "salmon_golden",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 311.653,
+   "b": 314.687,
+   "k": "salmon_flake",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 314.687,
+   "b": 318.6,
+   "k": "plate_supper",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 318.6,
+   "b": 323.18,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 323.18,
+   "b": 326.04,
+   "k": "loretta_nine_talk",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 326.04,
+   "b": 330.34,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 330.34,
+   "b": 339.0,
+   "k": "sweet_potato_item",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "of": 10,
+    "name": "Can of soup supper",
+    "instead": "Sweet potato, beans and salsa",
+    "page": "PAGE 126",
+    "k": "sweet_potato_item",
+    "t": 337.8,
+    "bed": "loretta_item4_bed"
+   }
+  },
+  {
+   "a": 339.0,
+   "b": 347.02,
+   "k": "book_p126",
+   "c": "PageUp",
+   "props": {
+    "k": "book_p126",
+    "pages": [
+     {
+      "src": "page126.png",
+      "tab": "PAGE 126",
+      "t": 340.38
+     }
+    ]
+   }
+  },
+  {
+   "a": 347.02,
+   "b": 350.74,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 350.74,
+   "b": 353.58,
+   "k": "toaster_burnt",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 353.58,
+   "b": 358.3,
+   "k": "1950s-kitchen-oven",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-kitchen-oven",
+    "cap": "Archive · a woman baking in a kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 358.3,
+   "b": 361.54,
+   "k": "split_potato",
+   "c": "StepCard",
+   "props": {
+    "head": "SWEET POTATO",
+    "page": "PAGE 126",
+    "steps": [
+     {
+      "t": 358.3,
+      "txt": "Bake until soft, 400°F, 45 min",
+      "k": "sweet_potato_item"
+     },
+     {
+      "t": 360.38,
+      "txt": "Split it and mash the inside",
+      "k": "split_potato"
+     }
+    ],
+    "bed": "split_potato"
+   }
+  },
+  {
+   "a": 361.54,
+   "b": 365.14,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 365.14,
+   "b": 369.28,
+   "k": "beans_salsa_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 369.28,
+   "b": 373.94,
+   "k": "shredded_cheese_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 373.94,
+   "b": 377.92,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 377.92,
+   "b": 384.6,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "cheese_pull_macro",
+      "prompt": "Macro photo of melted cheddar stretching in strings over black beans in a sweet potato, warm kitchen light, slightly out of focus, accidental phone snapshot.",
+      "t": 377.92
+     },
+     {
+      "k": "plate_one_sweet_potato",
+      "prompt": "Finished baked sweet potato on a single white plate, black beans and melted cheese, sour cream on top, worn wooden table, October light, casual snapshot.",
+      "t": 381.16
+     }
+    ]
+   }
+  },
+  {
+   "a": 384.6,
+   "b": 387.66,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 387.66,
+   "b": 395.28,
+   "k": "fish_box_loretta",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "name": "Fish sticks",
+    "instead": "Cod or haddock fillet on a greased pan",
+    "page": "PAGE 131",
+    "k": "fish_box_loretta",
+    "k2": "cod_fillet_pan",
+    "bed": "cookbook_page_131",
+    "look": "PAGE 131 tab rising to camera, highlighter on 'Friday fish' on the word 'page one hundred thirty-one'",
+    "t": 394.72,
+    "overlay": {
+     "c": "PageUp",
+     "name": "page 1",
+     "pages": [
+      {
+       "n": 131,
+       "k": "cookbook_page_131",
+       "hl": "Friday fish"
+      }
+     ],
+     "k": "cookbook_page_131",
+     "t": 391.24,
+     "window": [
+      389.6,
+      395.6
+     ]
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 395.28,
+   "b": 397.84,
+   "k": "fish_box_shrug",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 397.84,
+   "b": 401.6,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "head": "Mine is",
+    "old": {
+     "k": "fish_box_shrug",
+     "txt": "Frozen fish sticks"
+    },
+    "neu": {
+     "k": "cod_fillet_pan",
+     "txt": "Cod or haddock on a greased pan"
+    },
+    "t": 397.84
+   }
+  },
+  {
+   "a": 401.6,
+   "b": 406.02,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 406.02,
+   "b": 410.7,
+   "k": "1950s-home-ec-butter-spice",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-home-ec-butter-spice",
+    "cap": "1950s · a home kitchen, mixing",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 410.7,
+   "b": 414.04,
+   "k": "crumb_topping_pressed",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 414.04,
+   "b": 417.04,
+   "k": "oven_dial_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 417.04,
+   "b": 420.68,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 420.68,
+   "b": 428.4,
+   "k": "cod_plate",
+   "c": "CostTag",
+   "props": {
+    "price": "$2.20",
+    "sub": "one cod supper",
+    "k": "cod_plate",
+    "vs": {
+     "label": "fish-sticks box",
+     "txt": "fish-sticks box at a higher store price",
+     "price": "$4.99",
+     "t": 423.56
+    }
+   }
+  },
+  {
+   "a": 428.4,
+   "b": 432.08,
+   "k": "crumbs_coils",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 432.08,
+   "b": 435.24,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 435.24,
+   "b": 441.9,
+   "k": "foil_tent",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page119.png",
+      "tab": "PAGE 119",
+      "t": 437.08
+     }
+    ],
+    "k": "foil_tent"
+   }
+  },
+  {
+   "a": 441.9,
+   "b": 446.78,
+   "k": "iowa-apple-harvest-fsa",
+   "c": "Arc",
+   "props": {
+    "src": "iowa-apple-harvest-fsa",
+    "cap": "1940s · a girl in a farm field",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 446.78,
+   "b": 453.8,
+   "k": "skillet_chop",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "name": "Pork chop fried hard in a skillet",
+    "instead": "Half an apple in the toaster-oven pan",
+    "page": "PAGE 123",
+    "k": "skillet_chop",
+    "t": 450.86,
+    "of": 7
+   }
+  },
+  {
+   "a": 453.8,
+   "b": 457.68,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 457.68,
+   "b": 461.464,
+   "k": "apple_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 461.464,
+   "b": 465.414,
+   "k": "apple_toss",
+   "c": "StepCard",
+   "props": {
+    "head": "Fall pork chop on apples",
+    "page": "PAGE 123",
+    "steps": [
+     {
+      "t": 461.494,
+      "txt": "Toss the apple slices",
+      "k": "apple_toss"
+     },
+     {
+      "t": 462.894,
+      "txt": "Melted butter over the slices",
+      "k": "butter_pour"
+     },
+     {
+      "t": 464.154,
+      "txt": "Brown sugar",
+      "k": "brown_sugar"
+     },
+     {
+      "t": 464.974,
+      "txt": "Cinnamon",
+      "k": "cinnamon"
+     }
+    ],
+    "bed": "apple_toss"
+   }
+  },
+  {
+   "a": 465.414,
+   "b": 468.224,
+   "k": "lined_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 468.224,
+   "b": 471.974,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 471.974,
+   "b": 475.394,
+   "k": "chop_on_top",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 475.394,
+   "b": 480.114,
+   "k": "oven_375",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 480.114,
+   "b": 486.794,
+   "k": "chop_thermo",
+   "c": "BigNumber",
+   "props": {
+    "num": 145,
+    "unit": "DONE AT",
+    "suffix": "°F",
+    "txt": "+ REST 3 MIN",
+    "t": 482.574,
+    "k": "chop_thermo"
+   }
+  },
+  {
+   "a": 486.794,
+   "b": 489.874,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 489.874,
+   "b": 493.334,
+   "k": "apple_chop_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 493.334,
+   "b": 496.814,
+   "k": "chop_glossy",
+   "c": "FrameArt",
+   "props": {
+    "k": "chop_glossy",
+    "bed": "kitchen_wall_frame",
+    "caption": "smells like fall",
+    "t": 493.334
+   }
+  },
+  {
+   "a": 496.814,
+   "b": 499.324,
+   "k": "spoon_apples",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 499.324,
+   "b": 502.854,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 502.854,
+   "b": 510.254,
+   "k": "tortilla_limp",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "of": 10,
+    "name": "Soggy tortilla pizza",
+    "instead": "Crisped tortilla first",
+    "page": "PAGE 125",
+    "k": "tortilla_limp",
+    "t": 509.734,
+    "pageup": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": 125,
+       "line": "Crisp the tortilla first"
+      }
+     ],
+     "k": "cookbook_p125",
+     "t": 503.934
+    }
+   }
+  },
+  {
+   "a": 510.254,
+   "b": 512.974,
+   "k": "sauce_soft_tortilla",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 512.974,
+   "b": 515.654,
+   "k": "cheese_oven",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 515.654,
+   "b": 521.814,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 521.814,
+   "b": 524.874,
+   "k": "crisp_tortilla_hold",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 524.874,
+   "b": 528.394,
+   "k": "toaster_oven_preheat",
+   "c": "StepCard",
+   "props": {
+    "head": "Crisp pizza tortilla",
+    "page": "PAGE 125",
+    "steps": [
+     {
+      "t": 524.874,
+      "txt": "Plain tortilla alone at 400°",
+      "k": "plain_tortilla_rack"
+     },
+     {
+      "t": 526.734,
+      "txt": "2 tbsp sauce + ⅓ cup mozzarella + pepperoni",
+      "k": "mozz_pepperoni"
+     },
+     {
+      "t": 527.934,
+      "txt": "Back in until bubbling",
+      "k": "toaster_oven_preheat"
+     }
+    ],
+    "bed": "toaster_oven_preheat"
+   }
+  },
+  {
+   "a": 528.394,
+   "b": 532.194,
+   "k": "plain_tortilla_rack",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 532.194,
+   "b": 535.894,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 535.894,
+   "b": 539.974,
+   "k": "mozz_pepperoni",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 539.974,
+   "b": 545.474,
+   "k": "midwest-pizza-parlor-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "midwest-pizza-parlor-1950s",
+    "cap": "Archive · food in a basket beside a scale",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 545.474,
+   "b": 553.214,
+   "k": "tortilla_pizza_plate",
+   "c": "FrameArt",
+   "props": {
+    "k": "tortilla_pizza_plate",
+    "bed": "kitchen_wall_frame",
+    "caption": "crisp, not soggy",
+    "t": 545.474
+   }
+  },
+  {
+   "a": 553.214,
+   "b": 555.634,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 555.634,
+   "b": 569.234,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "k": "book_cover",
+    "t": 556.914,
+    "txt": "SUPPER FOR ONE · 140 RECIPES"
+   }
+  },
+  {
+   "a": 569.234,
+   "b": 572.954,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 572.954,
+   "b": 576.654,
+   "k": "supper_book_page",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 576.654,
+   "b": 580.934,
+   "k": "casserole-dish-1950s-kitchen",
+   "c": "Arc",
+   "props": {
+    "src": "casserole-dish-1950s-kitchen",
+    "cap": "1950s · a kitchen counter",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 580.934,
+   "b": 583.874,
+   "k": "page_128_fix",
+   "c": "PageUp",
+   "props": {
+    "k": "page_128_fix",
+    "pages": [
+     {
+      "src": "page128.png",
+      "tab": "PAGE 128",
+      "t": 582.874
+     }
+    ]
+   }
+  },
+  {
+   "a": 583.874,
+   "b": 592.234,
+   "k": "cold_counter_sandwich",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "of": 10,
+    "name": "Cold sandwich at the counter",
+    "instead": "Toasted ham and Swiss off the rack",
+    "page": "p. 128",
+    "k": "cold_counter_sandwich",
+    "k2": "ham_swiss_rack",
+    "t": 588.514,
+    "overlay": {
+     "c": "PageUp",
+     "span": "583.7-589.7",
+     "rise": 584.914,
+     "pages": [
+      {
+       "n": 128,
+       "t": 584.914
+      }
+     ],
+     "k": "cookbook_page_128"
+    }
+   }
+  },
+  {
+   "a": 592.234,
+   "b": 595.674,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 595.674,
+   "b": 599.434,
+   "k": "toast_hot_rack_close",
+   "c": "Chapter",
+   "props": {
+    "n": "8",
+    "title": "Mine gets toasted",
+    "sub": "it comes off the rack hot",
+    "k": "toast_hot_rack_close",
+    "av": true
+   }
+  },
+  {
+   "a": 599.434,
+   "b": 602.294,
+   "k": "butter_bread_outside",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 602.294,
+   "b": 607.327,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 607.327,
+   "b": 614.03,
+   "k": "foil_coils",
+   "c": "Careful",
+   "props": {
+    "k": "foil_coils",
+    "txt": "Cheese that drips on the coils smokes the whole house.",
+    "tag": "FOIL UNDER IT",
+    "t": 610.1
+   }
+  },
+  {
+   "a": 614.03,
+   "b": 623.01,
+   "k": "toaster_400_timer",
+   "c": "StepCard",
+   "props": {
+    "head": "HOT HAM & SWISS",
+    "page": "PAGE 128",
+    "steps": [
+     {
+      "txt": "Toaster oven at 400°, 4 min a side",
+      "t": 614.08,
+      "k": "toaster_400_timer"
+     },
+     {
+      "txt": "Warm a bag of frozen soup in a pot",
+      "t": 620.34,
+      "k": "frozen_soup_pot"
+     }
+    ],
+    "bed": "toaster_400_timer"
+   }
+  },
+  {
+   "a": 623.01,
+   "b": 626.32,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 626.32,
+   "b": 631.484,
+   "k": "table_set_for_one",
+   "c": "Arc",
+   "props": {
+    "src": "table_set_for_one",
+    "cap": "1950s · a dining table set for supper",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 631.484,
+   "b": 634.897,
+   "k": "loretta_sandwich_plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 634.897,
+   "b": 639.847,
+   "k": "church_basement_kitchen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 639.847,
+   "b": 643.157,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 643.157,
+   "b": 647.437,
+   "k": "plate_knife_sandwich",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "plate_knife_sandwich",
+    "txt": "For years I thought it had to sit on a plate with a knife beside it.",
+    "stamp": "THE MISTAKE",
+    "t": 643.167
+   }
+  },
+  {
+   "a": 647.437,
+   "b": 650.961,
+   "k": "loretta_nods_sandwich",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 650.961,
+   "b": 655.444,
+   "k": "potato_oven_rack",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 655.444,
+   "b": 659.51,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 659.51,
+   "b": 667.434,
+   "k": "big_oven_roaring",
+   "c": "ItemCard",
+   "props": {
+    "n": 9,
+    "name": "THE BIG OVEN FOR AN HOUR",
+    "instead": "TOASTER OVEN",
+    "page": "122",
+    "k": "big_oven_roaring",
+    "t": 665.274,
+    "of": 7
+   }
+  },
+  {
+   "a": 667.434,
+   "b": 674.964,
+   "k": "book_p122",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "n": "122",
+      "src": "book_p122",
+      "tab": "PAGE 122",
+      "txt": "One potato, an hour, and no electricity bill like the big oven.",
+      "t": 672.214,
+      "hl": 4.5
+     }
+    ],
+    "k": "book_p122"
+   }
+  },
+  {
+   "a": 674.964,
+   "b": 679.004,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 679.004,
+   "b": 682.454,
+   "k": "potato_prick",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 682.454,
+   "b": 685.974,
+   "k": "oil_salt_rack",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 685.974,
+   "b": 690.327,
+   "k": "knife_test",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "Bake 50 to 60 minutes",
+      "t": 686.374
+     },
+     {
+      "txt": "Until a knife slides in",
+      "t": 688.247
+     }
+    ],
+    "k": "knife_test",
+    "sig": "Loretta"
+   }
+  },
+  {
+   "a": 690.327,
+   "b": 693.687,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 693.687,
+   "b": 696.867,
+   "k": "toaster_dial",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 696.867,
+   "b": 699.507,
+   "k": "split_butter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 699.507,
+   "b": 703.147,
+   "k": "plate_one",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 703.147,
+   "b": 706.847,
+   "k": "sour_cheese",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 706.847,
+   "b": 709.507,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 709.507,
+   "b": 714.147,
+   "k": "covered-dish-kitchen-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "covered-dish-kitchen-1950s",
+    "cap": "1950s · a kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 714.147,
+   "b": 723.467,
+   "k": "pie_plate_pin",
+   "c": "ItemCard",
+   "props": {
+    "n": 10,
+    "of": 10,
+    "name": "Pie plate and rolling pin",
+    "instead": "the little dish from the very first shot",
+    "page": "127",
+    "k": "pie_plate_pin",
+    "k2": "little_dish_first",
+    "t": 721.447,
+    "pageUp": {
+     "pages": [
+      {
+       "n": "127",
+       "src": "book_p127",
+       "tab": "PAGE 127",
+       "txt": "Item ten: the pie plate and rolling pin.",
+       "t": 715.307,
+       "hl": 2.0
+      }
+     ],
+     "k": "book_p127",
+     "from": "714.8",
+     "to": "720.8"
+    }
+   }
+  },
+  {
+   "a": 723.467,
+   "b": 725.887,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 725.887,
+   "b": 737.427,
+   "k": "dish_table",
+   "c": "DropList",
+   "props": {
+    "k": "dish_table",
+    "head": "IN THE DISH",
+    "items": [
+     {
+      "txt": "COOKED CHICKEN",
+      "t": 726.667
+     },
+     {
+      "txt": "FROZEN MIXED VEGETABLES",
+      "t": 728.667
+     },
+     {
+      "txt": "CREAM OF CHICKEN SOUP",
+      "t": 731.227
+     },
+     {
+      "txt": "MILK",
+      "t": 733.847
+     }
+    ]
+   }
+  },
+  {
+   "a": 737.427,
+   "b": 740.927,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 740.927,
+   "b": 744.967,
+   "k": "crescent_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 744.967,
+   "b": 747.32,
+   "k": "toaster_bake",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 747.32,
+   "b": 750.187,
+   "k": "golden_bubbling",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 750.187,
+   "b": 753.747,
+   "k": "plate_table_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 753.747,
+   "b": 757.787,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 757.787,
+   "b": 762.727,
+   "k": "freezer-portions-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "freezer-portions-1950s",
+    "cap": "1950s · a home freezer",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 762.727,
+   "b": 766.677,
+   "k": "cold_night_supper",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 766.677,
+   "b": 769.467,
+   "k": "ten_recap",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 769.467,
+   "b": 774.667,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 774.667,
+   "b": 778.097,
+   "k": "lemon_garlic_thigh",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 778.097,
+   "b": 780.663,
+   "k": "church_salmon",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 780.663,
+   "b": 783.443,
+   "k": "sweet_potato",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 783.443,
+   "b": 786.853,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 786.853,
+   "b": 799.81,
+   "k": "cluttered_table",
+   "c": "GoneList",
+   "props": {
+    "head": "THE TABLE, AS IT WAS",
+    "k": "cluttered_table",
+    "fade": 1.5,
+    "items": [
+     {
+      "n": 6,
+      "name": "pork chop on apple slices",
+      "txt": "PORK CHOP ON APPLES",
+      "t": 787.08,
+      "x": 22,
+      "y": 35
+     },
+     {
+      "n": 7,
+      "name": "tortilla pizza",
+      "txt": "TORTILLA PIZZA",
+      "t": 790.68,
+      "x": 58,
+      "y": 30
+     },
+     {
+      "n": 8,
+      "name": "hot ham and cheese",
+      "txt": "HOT HAM & CHEESE",
+      "t": 792.36,
+      "x": 40,
+      "y": 62
+     },
+     {
+      "n": 9,
+      "name": "baked potato in the toaster oven",
+      "txt": "TOASTER-OVEN POTATO",
+      "t": 796.2,
+      "x": 72,
+      "y": 66
+     }
+    ]
+   }
+  },
+  {
+   "a": 799.81,
+   "b": 803.85,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 803.85,
+   "b": 806.9,
+   "k": "open_book",
+   "c": "Kinetic",
+   "props": {
+    "k": "open_book",
+    "words": [
+     [
+      "PICK ONE FOR TONIGHT.",
+      803.84
+     ]
+    ]
+   }
+  },
+  {
+   "a": 806.9,
+   "b": 810.293,
+   "k": "book_page",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 810.293,
+   "b": 813.433,
+   "k": "menu_drawer",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 813.433,
+   "b": 818.413,
+   "k": "senior-living-alone-1960s",
+   "c": "Arc",
+   "props": {
+    "src": "senior-living-alone-1960s",
+    "cap": "Archive · a woman seated at a dining table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 818.413,
+   "b": 821.973,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 821.973,
+   "b": 825.783,
+   "k": "grocery_price",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 825.783,
+   "b": 828.513,
+   "k": "link_note",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 828.513,
+   "b": 832.933,
+   "k": "menu_slide",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 832.933,
+   "b": 836.933,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 836.933,
+   "b": 840.453,
+   "k": "table_one",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 840.453,
+   "b": 844.853,
+   "k": "good_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 844.853,
+   "b": 847.893,
+   "k": "empty_plate",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 847.893,
+   "b": 850.683,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 850.683,
+   "b": 857.153,
+   "k": "baked_potato",
+   "c": "Comment",
+   "props": {
+    "q": "What's in YOUR baked potato?",
+    "opts": [
+     {
+      "txt": "Butter",
+      "t": 853.993
+     },
+     {
+      "txt": "Cheese",
+      "t": 854.373
+     },
+     {
+      "txt": "Something you'd never admit to",
+      "t": 854.973
+     }
+    ],
+    "k": "baked_potato"
+   }
+  },
+  {
+   "a": 857.153,
+   "b": 864.733,
+   "k": "comments_printout_kitchen_table",
+   "c": "Memory",
+   "props": {
+    "k": "comments_printout_kitchen_table",
+    "caption": "Every comment, read aloud",
+    "date": "this October",
+    "t": 857.233
+   }
+  },
+  {
+   "a": 864.733,
+   "b": 869.383,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 869.383,
+   "b": 871.753,
+   "k": "laptop_channel",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 871.753,
+   "b": 876.173,
+   "k": "pot_roast_screen",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 876.173,
+   "b": 879.453,
+   "k": "fork_tender_roast",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 879.453,
+   "b": 881.993,
+   "k": "no_tricks_here",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 881.993,
+   "b": 885.913,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 885.913,
+   "b": 891.073,
+   "k": "sunday-pot-roast-dinner-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "sunday-pot-roast-dinner-1950s",
+    "cap": "1950s · a family at home",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 891.073,
+   "b": 894.693,
+   "k": "can_opener_counter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 894.693,
+   "b": 898.833,
+   "k": "closing_table",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 898.833,
+   "b": 901.693,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 901.693,
+   "b": 908.733,
+   "k": "candle_plate_table",
+   "c": "Note",
+   "props": {
+    "name": "Note",
+    "lines": [
+     {
+      "txt": "set a place",
+      "at": 901.933
+     },
+     {
+      "txt": "light a candle",
+      "at": 904.013
+     },
+     {
+      "txt": "the good plate",
+      "at": 905.193
+     },
+     {
+      "txt": "call somebody",
+      "at": 906.733
+     }
+    ],
+    "k": "candle_plate_table"
+   }
+  },
+  {
+   "a": 908.733,
+   "b": 911.393,
+   "k": "loretta_glad_stayed",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 911.393,
+   "b": 918.433,
+   "k": "candlelit_table_night",
+   "c": "FrameArt",
+   "props": {
+    "name": "FrameArt",
+    "k": "candlelit_table_night",
+    "bed": "kitchen_wall_frame",
+    "caption": "your little table",
+    "t": 912.313
+   }
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 66.38,
+   "b": 191.873,
+   "n": 1
+  },
+  {
+   "a": 191.873,
+   "b": 275.533,
+   "n": 2
+  },
+  {
+   "a": 275.533,
+   "b": 330.34,
+   "n": 3
+  },
+  {
+   "a": 330.34,
+   "b": 387.66,
+   "n": 4
+  },
+  {
+   "a": 387.66,
+   "b": 446.78,
+   "n": 5
+  },
+  {
+   "a": 446.78,
+   "b": 502.854,
+   "n": 6
+  },
+  {
+   "a": 502.854,
+   "b": 583.874,
+   "n": 7
+  },
+  {
+   "a": 583.874,
+   "b": 659.51,
+   "n": 8
+  },
+  {
+   "a": 659.51,
+   "b": 714.147,
+   "n": 9
+  },
+  {
+   "a": 714.147,
+   "b": 786.853,
+   "n": 10
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   66.38,
+   74.5
+  ],
+  [
+   191.873,
+   199.26
+  ],
+  [
+   275.533,
+   282.133
+  ],
+  [
+   330.34,
+   339.0
+  ],
+  [
+   387.66,
+   395.28
+  ],
+  [
+   446.78,
+   453.8
+  ],
+  [
+   502.854,
+   510.254
+  ],
+  [
+   583.874,
+   592.234
+  ],
+  [
+   659.51,
+   667.434
+  ],
+  [
+   714.147,
+   723.467
+  ],
+  [
+   555.634,
+   569.234
+  ],
+  [
+   786.853,
+   799.81
+  ],
+  [
+   850.683,
+   857.153
+  ]
+ ]
+}
