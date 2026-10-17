@@ -268,7 +268,7 @@ const Bars: React.FC<{ s: Shot }> = ({ s }) => {
             <div style={{ flex: 1, height: 74, position: "relative" }}>
               <div style={{ position: "absolute", left: 0, top: 0, height: "100%", width: `${(v / max) * 100 * g}%`, background: col, borderRadius: 4, opacity: approx ? 0.85 : 1, backgroundImage: approx === "~" ? "repeating-linear-gradient(135deg, rgba(255,255,255,0.0) 0 18px, rgba(255,255,255,0.18) 18px 26px)" : undefined }} />
               <div style={{ position: "absolute", left: `calc(${(v / max) * 100 * g}% + 22px)`, top: 4, whiteSpace: "nowrap", fontFamily: OSW, fontWeight: 700, fontSize: 54, color: col === "#5b6578" ? C.white : col }}>
-                {unit === "°C" ? "+" : ""}{(v * g).toFixed(1).replace(".", ",")}{unit}{approx === "~" ? " aprox." : ""}
+                {unit === "°C" ? "+" : ""}{(v * g).toFixed(unit === "°C" || v % 1 ? 1 : 0).replace(".", ",")}{unit}{approx === "~" ? " aprox." : ""}
               </div>
             </div>
           </div>
@@ -518,7 +518,8 @@ const ShotView: React.FC<{ s: Shot; i: number }> = ({ s, i }) => {
   else if (s.k === "p") body = <AIShot name={s.src} dur={dur} i={i} />;
   else if (s.k === "ar") body = <Archive name={s.src} dur={dur} i={i} full={!!s.full} />;
   else {
-    const G = GFX[s.src];
+    // los gráficos con fuente citada llevan la fuente en src: se eligen por sus campos
+    const G = GFX[s.src] || (s.q ? Quote : s.p != null ? Odds : s.v != null ? BigNumber : undefined);
     body = (
       <AbsoluteFill style={{ backgroundColor: C.ink }}>
         {s.bed ? <Bed name={s.bed} dur={dur} i={i} /> : null}
