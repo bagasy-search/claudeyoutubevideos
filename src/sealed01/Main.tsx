@@ -16,9 +16,9 @@ import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 import { loadFont as loadSerif } from "@remotion/google-fonts/PlayfairDisplay";
 import plan from "./plan.json";
 
-const { fontFamily: OSWALD } = loadOswald();
-const { fontFamily: INTER } = loadInter();
-const { fontFamily: SERIF } = loadSerif();
+const { fontFamily: OSWALD } = loadOswald("normal", { weights: ["600", "700"], subsets: ["latin"] });
+const { fontFamily: INTER } = loadInter("normal", { weights: ["500", "600"], subsets: ["latin"] });
+const { fontFamily: SERIF } = loadSerif("italic", { weights: ["400"], subsets: ["latin"] });
 
 export const FPS = 30;
 type Ov = { t: string; a?: string; b?: string; n?: string } | null;
