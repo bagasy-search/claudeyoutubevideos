@@ -1,0 +1,3669 @@
+{
+ "end": 1200.388,
+ "shots": [
+  {
+   "a": 0.0,
+   "b": 7.447,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 7.447,
+   "b": 11.847,
+   "k": "loretta_stain_card",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 11.847,
+   "b": 14.967,
+   "k": "cold_bowl",
+   "c": "Tease",
+   "props": {
+    "k": "cold_bowl",
+    "txt": "THE COLD WATER BOWL",
+    "tag": "COMING UP #30"
+   }
+  },
+  {
+   "a": 14.967,
+   "b": 18.323,
+   "k": "loretta_box",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 18.323,
+   "b": 22.6,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 22.6,
+   "b": 25.993,
+   "k": "loretta_frost",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 25.993,
+   "b": 30.573,
+   "k": "loretta_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 30.573,
+   "b": 34.953,
+   "k": "furnace_loretta",
+   "c": "Note",
+   "props": {
+    "lines": [
+     "The furnace is on",
+     "the nights are cold",
+     "and I cook for one."
+    ],
+    "k": "furnace_loretta"
+   }
+  },
+  {
+   "a": 34.953,
+   "b": 38.52,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 38.52,
+   "b": 43.007,
+   "k": "loretta_list",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 43.007,
+   "b": 47.517,
+   "k": "loretta_meatloaf",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 47.517,
+   "b": 50.88,
+   "k": "loretta_corn",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 50.88,
+   "b": 53.753,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 53.753,
+   "b": 62.783,
+   "k": "loretta_chop",
+   "c": "ItemCard",
+   "props": {
+    "n": 1,
+    "of": 30,
+    "name": "Big chop, gravy from a jar",
+    "instead": "A thin chop in the small skillet, drippings for gravy",
+    "page": "PAGE 86",
+    "k": "loretta_chop",
+    "t": 54.693
+   }
+  },
+  {
+   "a": 62.783,
+   "b": 70.777,
+   "k": "page86_counter",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page86.png",
+      "tab": "PAGE 86",
+      "t": 64.333
+     }
+    ],
+    "k": "page86_counter"
+   }
+  },
+  {
+   "a": 70.777,
+   "b": 75.59,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 75.59,
+   "b": 79.917,
+   "k": "chop_untouched",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 79.917,
+   "b": 84.307,
+   "k": "stove_clock",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 84.307,
+   "b": 87.543,
+   "k": "thermo_145",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 87.543,
+   "b": 91.9,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 91.9,
+   "b": 94.53,
+   "k": "tin_box",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 94.53,
+   "b": 98.02,
+   "k": "stained_card_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 98.02,
+   "b": 102.38,
+   "k": "tin_lid_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 102.38,
+   "b": 106.14,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 106.14,
+   "b": 110.92,
+   "k": "prelinger-chicken-cutlet-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "prelinger-chicken-cutlet-1950s",
+    "cap": "1950s · food prepared in a kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 110.92,
+   "b": 119.0,
+   "k": "breast_whole",
+   "c": "ItemCard",
+   "props": {
+    "n": 2,
+    "name": "Chicken breast cooked whole",
+    "instead": "Two thin cutlets, cut through the side",
+    "page": "PAGE 88",
+    "k": "breast_whole",
+    "k2": "cutlets_flat",
+    "t": 114.32,
+    "of": 7
+   }
+  },
+  {
+   "a": 119.0,
+   "b": 122.16,
+   "k": "breast_flat_page",
+   "c": "PageUp",
+   "props": {
+    "pages": [
+     {
+      "src": "page88.png",
+      "tab": "PAGE 88",
+      "t": 120.42
+     }
+    ],
+    "k": "breast_flat_page"
+   }
+  },
+  {
+   "a": 122.16,
+   "b": 125.96,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 125.96,
+   "b": 132.94,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "Breaded Cutlets for One",
+    "page": "PAGE 88",
+    "steps": [
+     {
+      "t": 125.96,
+      "txt": "Flour each cutlet",
+      "k": "step_flour"
+     },
+     {
+      "t": 127.58,
+      "txt": "3 min a side until golden",
+      "k": "step_fry"
+     },
+     {
+      "t": 130.86,
+      "txt": "Half a lemon over it",
+      "k": "step_lemon"
+     }
+    ]
+   }
+  },
+  {
+   "a": 132.94,
+   "b": 135.38,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 135.38,
+   "b": 141.62,
+   "k": "split_cutlet_freezer",
+   "c": "SplitHalf",
+   "props": {
+    "k": "split_cutlet_freezer",
+    "l": {
+     "t": 135.38,
+     "txt": "TONIGHT"
+    },
+    "r": {
+     "t": 137.96,
+     "txt": "TOMORROW"
+    },
+    "foot": {
+     "t": 135.38,
+     "txt": "ONE BREAST, TWO SUPPERS"
+    }
+   }
+  },
+  {
+   "a": 141.62,
+   "b": 144.74,
+   "k": "notebook_pencil",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "t": 141.62,
+      "txt": "Honey, that's the kind of thing I wrote down."
+     }
+    ],
+    "sig": "Loretta",
+    "k": "notebook_pencil"
+   }
+  },
+  {
+   "a": 144.74,
+   "b": 148.3,
+   "k": "book_open_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 148.3,
+   "b": 152.16,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 152.16,
+   "b": 155.94,
+   "k": "slow_cooker_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 155.94,
+   "b": 161.08,
+   "k": "crock-pot-ad-1970s",
+   "c": "Arc",
+   "props": {
+    "src": "crock-pot-ad-1970s",
+    "cap": "1950s · a woman at a stove with pots",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 161.08,
+   "b": 165.04,
+   "k": "slow_cooker_clock",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 165.04,
+   "b": 170.12,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 170.12,
+   "b": 175.24,
+   "k": "cold_water_bowl",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 175.24,
+   "b": 183.44,
+   "k": "fish_fillet_bag",
+   "c": "ItemCard",
+   "props": {
+    "n": 3,
+    "name": "Fresh fish fillet",
+    "instead": "Frozen fillet from the freezer bag",
+    "t": 176.16,
+    "k": "fish_fillet_bag",
+    "of": 7
+   }
+  },
+  {
+   "a": 183.44,
+   "b": 188.84,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 188.84,
+   "b": 195.07,
+   "k": "p91",
+   "c": "PageUp",
+   "props": {
+    "k": "p91",
+    "pages": [
+     {
+      "src": "page91.png",
+      "tab": "PAGE 91",
+      "t": 190.5
+     }
+    ]
+   }
+  },
+  {
+   "a": 195.07,
+   "b": 198.24,
+   "k": "wet_fillet_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 198.24,
+   "b": 202.197,
+   "k": "fork_flake",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 202.197,
+   "b": 207.013,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 207.013,
+   "b": 215.06,
+   "k": "sj_pot",
+   "c": "ItemCard",
+   "props": {
+    "n": 4,
+    "name": "Sloppy joe",
+    "instead": "A quarter pound of beef in a small skillet",
+    "page": "PAGE 92",
+    "k": "sj_pot",
+    "k2": "sj_skillet",
+    "t": 211.6,
+    "of": 7
+   }
+  },
+  {
+   "a": 215.06,
+   "b": 219.2,
+   "k": "beef_ketchup",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 219.2,
+   "b": 226.28,
+   "k": "p92",
+   "c": "PageUp",
+   "props": {
+    "k": "p92",
+    "pages": [
+     {
+      "src": "page92.png",
+      "tab": "PAGE 92",
+      "t": 220.72
+     }
+    ]
+   }
+  },
+  {
+   "a": 226.28,
+   "b": 231.84,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 231.84,
+   "b": 237.18,
+   "k": "freezer-leftovers-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "freezer-leftovers-1950s",
+    "cap": "1950s · an open refrigerator",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 237.18,
+   "b": 244.68,
+   "k": "ham_can",
+   "c": "ItemCard",
+   "props": {
+    "n": 5,
+    "name": "Pineapple ham steak",
+    "instead": "One ring of pineapple, frozen in a small bag",
+    "page": "PAGE 93",
+    "k": "ham_can",
+    "k2": "ham_ring",
+    "t": 240.26,
+    "of": 7
+   }
+  },
+  {
+   "a": 244.68,
+   "b": 247.0,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 247.0,
+   "b": 255.96,
+   "k": "skillet_empty",
+   "c": "DropList",
+   "props": {
+    "k": "skillet_empty",
+    "items": [
+     {
+      "t": 247.34,
+      "txt": "HALF HAM STEAK",
+      "label": "HALF HAM STEAK"
+     },
+     {
+      "t": 248.96,
+      "txt": "2 RINGS",
+      "label": "2 RINGS"
+     },
+     {
+      "t": 250.46,
+      "txt": "SPOON OF JUICE",
+      "label": "SPOON OF JUICE"
+     },
+     {
+      "t": 252.12,
+      "txt": "1 TSP BROWN SUGAR",
+      "label": "1 TSP BROWN SUGAR"
+     }
+    ]
+   }
+  },
+  {
+   "a": 255.96,
+   "b": 258.92,
+   "k": "wrap_thursday",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 258.92,
+   "b": 262.68,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 262.68,
+   "b": 265.44,
+   "k": "bag_single_rings",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 265.44,
+   "b": 268.08,
+   "k": "harold_frame",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 268.08,
+   "b": 271.8,
+   "k": "sunday_ham_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 271.8,
+   "b": 275.69,
+   "k": "plate_worn_edge",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 275.69,
+   "b": 280.18,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 280.18,
+   "b": 284.32,
+   "k": "brown_half_steak",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 284.32,
+   "b": 289.9,
+   "k": "chicken-thighs-creamy-gravy-midwest-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "chicken-thighs-creamy-gravy-midwest-1950s",
+    "cap": "1950s · a woman with a stand mixer",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 289.9,
+   "b": 298.0,
+   "k": "dry_breast",
+   "c": "ItemCard",
+   "props": {
+    "n": 6,
+    "of": 30,
+    "name": "A chicken breast that dries out",
+    "instead": "Two boneless thighs in a creamy gravy",
+    "page": "PAGE 94",
+    "k": "dry_breast",
+    "k2": "thighs_browned",
+    "t": 294.86
+   }
+  },
+  {
+   "a": 298.0,
+   "b": 303.307,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 303.307,
+   "b": 310.327,
+   "k": "presenter_stove_talk",
+   "c": "StepCard",
+   "props": {
+    "head": "Brown, then simmer",
+    "page": "94",
+    "steps": [
+     {
+      "s": "Brown two boneless thighs",
+      "t": 303.307,
+      "txt": "Brown two boneless thighs",
+      "k": "thighs_brown_step"
+     },
+     {
+      "s": "Add mushrooms and broth",
+      "t": 305.927,
+      "txt": "Add mushrooms and broth",
+      "k": "mushrooms_broth"
+     },
+     {
+      "s": "Cover, simmer ten minutes",
+      "t": 307.867,
+      "txt": "Cover, simmer ten minutes",
+      "k": "cover_simmer"
+     }
+    ],
+    "bed": "presenter_stove_talk"
+   }
+  },
+  {
+   "a": 310.327,
+   "b": 313.847,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 313.847,
+   "b": 322.43,
+   "k": "presenter_plates",
+   "c": "SplitHalf",
+   "props": {
+    "k": "presenter_plates",
+    "l": {
+     "t": 313.847,
+     "txt": "Supper plate"
+    },
+    "r": {
+     "t": 316.287,
+     "txt": "Lunch container"
+    },
+    "foot": {
+     "t": 318.507,
+     "txt": "Two meals, one pan"
+    }
+   }
+  },
+  {
+   "a": 322.43,
+   "b": 329.814,
+   "k": "burnt_sandwich",
+   "c": "ItemCard",
+   "props": {
+    "n": 7,
+    "name": "Cranking the pan to high",
+    "instead": "A cold skillet on low",
+    "page": "PAGE 97",
+    "k": "burnt_sandwich",
+    "t": 325.654,
+    "overlay": {
+     "kind": "O",
+     "c": "PageUp",
+     "from": 322.1,
+     "to": 328.1,
+     "pages": [
+      {
+       "n": "97",
+       "t": 323.894,
+       "rise": 322.1
+      }
+     ],
+     "k": "page97"
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 329.814,
+   "b": 332.274,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 332.274,
+   "b": 336.674,
+   "k": "prelinger-skillet-sandwich-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "prelinger-skillet-sandwich-1950s",
+    "cap": "1950s · a woman cooking at a stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 336.674,
+   "b": 340.954,
+   "k": "dial_low",
+   "c": "Kinetic",
+   "props": {
+    "k": "dial_low",
+    "words": [
+     [
+      "High heat burns the bread",
+      336.7
+     ],
+     [
+      "before the cheese melts,",
+      338.4
+     ],
+     [
+      "so I wait.",
+      339.9
+     ]
+    ]
+   }
+  },
+  {
+   "a": 340.954,
+   "b": 345.28,
+   "k": "turn_lid",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 345.28,
+   "b": 348.354,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 348.354,
+   "b": 351.637,
+   "k": "sit_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 351.637,
+   "b": 354.46,
+   "k": "bacon_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 354.46,
+   "b": 363.22,
+   "k": "bacon_package",
+   "c": "ItemCard",
+   "props": {
+    "n": 8,
+    "of": 30,
+    "name": "The big bacon package, half gone limp",
+    "instead": "Three slices, the rest frozen in stacks of three",
+    "page": "101",
+    "k": "bacon_package",
+    "t": 360.94
+   }
+  },
+  {
+   "a": 363.22,
+   "b": 367.5,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 367.5,
+   "b": 376.274,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "Bacon in a cold skillet",
+    "page": "PAGE 101",
+    "steps": [
+     {
+      "t": 367.48,
+      "txt": "Cold skillet, medium heat",
+      "k": "bacon_cold_skillet"
+     },
+     {
+      "t": 371.36,
+      "txt": "Turn until crisp",
+      "k": "bacon_turning"
+     },
+     {
+      "t": 373.48,
+      "txt": "Stack on toast, cut corner to corner",
+      "k": "bacon_on_toast"
+     }
+    ]
+   }
+  },
+  {
+   "a": 376.274,
+   "b": 380.287,
+   "k": "bacon_freezer_stacks",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 380.287,
+   "b": 385.471,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 385.471,
+   "b": 392.057,
+   "k": "quesadilla_plate",
+   "c": "ItemCard",
+   "props": {
+    "n": 9,
+    "of": 30,
+    "name": "Half a can of beans gone sour",
+    "instead": "Tortilla, beans, cheese, rest frozen in scoops",
+    "page": "PAGE 103",
+    "k": "quesadilla_plate",
+    "t": 385.747
+   }
+  },
+  {
+   "a": 392.057,
+   "b": 396.467,
+   "k": "empty_skillet",
+   "c": "DropList",
+   "props": {
+    "k": "empty_skillet",
+    "items": [
+     {
+      "t": 393.047,
+      "txt": "FLOUR TORTILLA"
+     },
+     {
+      "t": 394.607,
+      "txt": "REFRIED BEANS"
+     },
+     {
+      "t": 395.607,
+      "txt": "CHEESE"
+     }
+    ],
+    "head": "Quesadilla skillet"
+   }
+  },
+  {
+   "a": 396.467,
+   "b": 400.997,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 400.997,
+   "b": 405.307,
+   "k": "loretta_scoops_talk",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 405.307,
+   "b": 409.647,
+   "k": "dry_skillet_quesadilla",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 409.647,
+   "b": 414.677,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 414.677,
+   "b": 423.047,
+   "k": "open_turkey_plate",
+   "c": "ItemCard",
+   "props": {
+    "n": 10,
+    "of": 30,
+    "name": "A big holiday jar of gravy, forgotten",
+    "instead": "Open-faced hot turkey, gravy frozen in cubes",
+    "page": "PAGE 104",
+    "k": "open_turkey_plate",
+    "t": 414.927
+   }
+  },
+  {
+   "a": 423.047,
+   "b": 429.557,
+   "k": "",
+   "c": "SwapCard",
+   "props": {
+    "name": "SwapCard",
+    "old": {
+     "k": "gravy_jar_fridge_back",
+     "txt": "holiday gravy jar at the back of the fridge"
+    },
+    "neu": {
+     "k": "gravy_cubes_tray",
+     "txt": "gravy cubes in a tray"
+    },
+    "t": 426.927,
+    "oldHead": "WHAT MOST HOMES DO",
+    "head": "WHAT WE USED INSTEAD"
+   }
+  },
+  {
+   "a": 429.557,
+   "b": 434.227,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 434.227,
+   "b": 440.487,
+   "k": "gravy_cubes_pan",
+   "c": "BigNumber",
+   "props": {
+    "name": "BigNumber",
+    "num": 2,
+    "unit": "CUBES",
+    "txt": "is one plate",
+    "k": "gravy_cubes_pan",
+    "t": 434.287,
+    "dur": 4
+   }
+  },
+  {
+   "a": 440.487,
+   "b": 445.754,
+   "k": "thanksgiving-gravy-pour",
+   "c": "Arc",
+   "props": {
+    "src": "thanksgiving-gravy-pour",
+    "cap": "1950s · a family at a dinner table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 445.754,
+   "b": 455.19,
+   "k": "boiled_hotdog_gray",
+   "c": "ItemCard",
+   "props": {
+    "name": "ItemCard",
+    "n": 11,
+    "of": 30,
+    "name_text": "boiled hot dog",
+    "instead": "skillet-browned hot dog",
+    "page": "PAGE 106",
+    "k": "boiled_hotdog_gray",
+    "t": 451.7,
+    "over": [
+     {
+      "kind": "O",
+      "c": "PageUp",
+      "pages": [
+       {
+        "n": "106",
+        "title": "Hot dogs, skillet-browned"
+       }
+      ],
+      "k": "page106",
+      "t": 447.18,
+      "at": 448.4,
+      "window": [
+       446.4,
+       452.4
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "a": 455.19,
+   "b": 459.54,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 459.54,
+   "b": 463.04,
+   "k": "buns_toasting_pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 463.04,
+   "b": 467.384,
+   "k": "kraut_small_pot",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 467.384,
+   "b": 471.567,
+   "k": "freeze_bags_two",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 471.567,
+   "b": 476.247,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 476.247,
+   "b": 483.687,
+   "k": "cream_carton_pasta",
+   "c": "ItemCard",
+   "props": {
+    "n": 12,
+    "of": 30,
+    "name": "A carton of heavy cream that curdles",
+    "instead": "Two tablespoons of cream cheese",
+    "page": "PAGE 112",
+    "k": "cream_carton_pasta",
+    "t": 482.327
+   }
+  },
+  {
+   "a": 483.687,
+   "b": 487.007,
+   "k": "cream_pan",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 487.007,
+   "b": 489.907,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 489.907,
+   "b": 497.847,
+   "k": "cost_cream",
+   "c": "CostTag",
+   "props": {
+    "price": "ABOUT HALF",
+    "sub": "cream cheese vs. a carton of cream",
+    "k": "cost_cream",
+    "vs": {
+     "price": "HEAVY CREAM",
+     "txt": "one carton of heavy cream",
+     "t": 490.367
+    }
+   }
+  },
+  {
+   "a": 497.847,
+   "b": 501.067,
+   "k": "pasta_water",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 501.067,
+   "b": 503.847,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 503.847,
+   "b": 511.867,
+   "k": "item13_grits",
+   "c": "ItemCard",
+   "props": {
+    "n": 13,
+    "of": 30,
+    "name": "Restaurant-size shrimp and grits",
+    "instead": "Quick grits and frozen shrimp, one skillet",
+    "page": "PAGE 134",
+    "k": "item13_grits",
+    "t": 508.787
+   }
+  },
+  {
+   "a": 511.867,
+   "b": 514.427,
+   "k": "whole_bag",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 514.427,
+   "b": 519.167,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 519.167,
+   "b": 522.607,
+   "k": "shrimp_pink",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 522.607,
+   "b": 526.767,
+   "k": "shrimp_co",
+   "c": "SplitHalf",
+   "props": {
+    "k": "shrimp_co",
+    "l": {
+     "label": "C = done",
+     "txt": "pink, curled",
+     "t": 522.607
+    },
+    "r": {
+     "label": "O = overcooked",
+     "txt": "tight ring",
+     "t": 524.807
+    },
+    "foot": {
+     "txt": "Pink and curled: pull it off the heat.",
+     "t": 522.607
+    }
+   }
+  },
+  {
+   "a": 526.767,
+   "b": 531.987,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 531.987,
+   "b": 540.947,
+   "k": "item14_stirfry",
+   "c": "ItemCard",
+   "props": {
+    "n": 14,
+    "of": 30,
+    "name": "Takeout on a tired night",
+    "instead": "Frozen stir-fry vegetables, rice and one egg, on high",
+    "page": "PAGE 1",
+    "k": "item14_stirfry",
+    "t": 536.927
+   }
+  },
+  {
+   "a": 540.947,
+   "b": 545.547,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 545.547,
+   "b": 552.407,
+   "k": "soggy_stirfry",
+   "c": "MistakeStamp",
+   "props": {
+    "k": "soggy_stirfry",
+    "txt": "Cook on high, because low heat makes frozen vegetables watery.",
+    "stamp": "THE MISTAKE",
+    "cx": 0.5,
+    "cy": 0.6,
+    "t": 547.727
+   }
+  },
+  {
+   "a": 552.407,
+   "b": 555.134,
+   "k": "egg_soy_honey",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 555.134,
+   "b": 560.024,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 560.024,
+   "b": 567.334,
+   "k": "page154_book",
+   "c": "ItemCard",
+   "props": {
+    "n": 15,
+    "name": "Leftover meatloaf",
+    "instead": "One slice, fried dry, cheese the last minute",
+    "page": "PAGE 1",
+    "t": 563.514,
+    "k": "page154_book",
+    "of": 7
+   }
+  },
+  {
+   "a": 567.334,
+   "b": 570.774,
+   "k": "cold_foil_meatloaf",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 570.774,
+   "b": 577.081,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 577.081,
+   "b": 581.31,
+   "k": "crust_crackle",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 581.31,
+   "b": 584.707,
+   "k": "cheese_on_slice",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 584.707,
+   "b": 589.814,
+   "k": "meatloaf-ad-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "meatloaf-ad-1950s",
+    "cap": "1950s · a woman mixing in a bowl",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 589.814,
+   "b": 593.734,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 593.734,
+   "b": 598.034,
+   "k": "fried_plate_brand_new",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 598.034,
+   "b": 601.921,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 601.921,
+   "b": 616.001,
+   "k": "book_cover",
+   "c": "QrCard",
+   "props": {
+    "k": "book_cover",
+    "t": 603.321
+   }
+  },
+  {
+   "a": 616.001,
+   "b": 623.901,
+   "k": "fridge_shelf_leftovers",
+   "c": "ItemCard",
+   "props": {
+    "n": 16,
+    "name": "Half onion, limp mushrooms, spinach",
+    "instead": "Chopped into the egg skillet",
+    "page": "PAGE 160",
+    "k": "fridge_shelf_leftovers",
+    "t": 619.801,
+    "over": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": 160,
+       "title": "Chopped into the egg skillet"
+      }
+     ],
+     "k": "page160_book",
+     "t": 617.321
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 623.901,
+   "b": 627.201,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 627.201,
+   "b": 632.381,
+   "k": "refrigerator-leftovers-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "refrigerator-leftovers-1950s",
+    "cap": "1950s · a refrigerator in a home kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 632.381,
+   "b": 635.641,
+   "k": "pour_eggs_skillet",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 635.641,
+   "b": 639.221,
+   "k": "lid_low_burner",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 639.221,
+   "b": 645.001,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 645.001,
+   "b": 652.607,
+   "k": "mashed_potatoes_bowl",
+   "c": "ItemCard",
+   "props": {
+    "n": 17,
+    "name": "Cold mashed potatoes",
+    "instead": "Fried into potato cakes",
+    "page": "PAGE 161",
+    "k": "mashed_potatoes_bowl",
+    "t": 649.787,
+    "over": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": 161,
+       "title": "Fried into potato cakes"
+      }
+     ],
+     "k": "page161_book",
+     "t": 646.321
+    },
+    "of": 7
+   }
+  },
+  {
+   "a": 652.607,
+   "b": 657.497,
+   "k": "potatoes_from_fridge",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 657.497,
+   "b": 661.107,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 661.107,
+   "b": 665.507,
+   "k": "1950s-skillet-cakes",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-skillet-cakes",
+    "cap": "1950s · a woman in a kitchen",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 665.507,
+   "b": 673.154,
+   "k": "golden-cakes",
+   "c": "CostTag",
+   "props": {
+    "price": "PENNIES",
+    "sub": "four cakes, one pan",
+    "k": "golden-cakes"
+   }
+  },
+  {
+   "a": 673.154,
+   "b": 677.961,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 677.961,
+   "b": 685.441,
+   "k": "beans-colander",
+   "c": "ItemCard",
+   "props": {
+    "n": 18,
+    "of": 30,
+    "name": "Plain green side",
+    "instead": "Snapped green beans, oil and garlic",
+    "page": "PAGE 141",
+    "k": "beans-colander",
+    "t": 681.581
+   }
+  },
+  {
+   "a": 685.441,
+   "b": 688.981,
+   "k": "beans-oil-bowl",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 688.981,
+   "b": 693.801,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 693.801,
+   "b": 697.871,
+   "k": "beans-roasting",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 697.871,
+   "b": 702.221,
+   "k": "slide-beans",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 702.221,
+   "b": 705.801,
+   "k": "one-pan",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 705.801,
+   "b": 714.581,
+   "k": "peas-pot",
+   "c": "ItemCard",
+   "props": {
+    "n": 19,
+    "of": 30,
+    "name": "Frozen peas in water",
+    "instead": "Peas in a white sauce",
+    "page": "PAGE 142",
+    "k": "peas-pot",
+    "t": 711.361
+   }
+  },
+  {
+   "a": 714.581,
+   "b": 719.281,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 719.281,
+   "b": 722.641,
+   "k": "white-sauce",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 722.641,
+   "b": 728.861,
+   "k": "creamed_peas",
+   "c": "CostTag",
+   "props": {
+    "price": "CHEAP",
+    "sub": "makes 2 plates",
+    "k": "creamed_peas"
+   }
+  },
+  {
+   "a": 728.861,
+   "b": 732.581,
+   "k": "pearl_onions_bowl",
+   "c": "Note",
+   "props": {
+    "lines": [
+     {
+      "txt": "+ a few pearl onions",
+      "t": 728.9
+     },
+     {
+      "txt": "= the holiday version",
+      "t": 730.6
+     }
+    ],
+    "k": "pearl_onions_bowl"
+   }
+  },
+  {
+   "a": 732.581,
+   "b": 736.421,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 736.421,
+   "b": 743.021,
+   "k": "big_potato_bag",
+   "c": "ItemCard",
+   "props": {
+    "n": 20,
+    "name": "Big bag of potatoes",
+    "instead": "One potato in the smallest pot",
+    "page": "PAGE 143",
+    "t": 739.901,
+    "k": "big_potato_bag",
+    "of": 7
+   }
+  },
+  {
+   "a": 743.021,
+   "b": 746.281,
+   "k": "presenter_one_potato",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 746.281,
+   "b": 749.981,
+   "k": "one_potato_small_pot",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 749.981,
+   "b": 752.441,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 752.441,
+   "b": 757.281,
+   "k": "home-ec-warming-milk-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "home-ec-warming-milk-1950s",
+    "cap": "1950s · a kettle on the stove",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 757.281,
+   "b": 761.121,
+   "k": "dry_potato_hot_pot",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 761.121,
+   "b": 764.161,
+   "k": "presenter_carrots_grandkids",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 764.161,
+   "b": 771.601,
+   "k": "carrot_bag_boil",
+   "c": "ItemCard",
+   "props": {
+    "n": 21,
+    "name": "Whole bag of carrots, boiled",
+    "instead": "Two sliced carrots in a small pan",
+    "page": "PAGE 145",
+    "t": 767.581,
+    "k": "carrot_bag_boil",
+    "of": 7
+   }
+  },
+  {
+   "a": 771.601,
+   "b": 775.861,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 775.861,
+   "b": 779.14,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "carrots_lid_on",
+      "t": 775.861
+     },
+     {
+      "k": "carrots_uncovered",
+      "t": 779.081
+     }
+    ]
+   }
+  },
+  {
+   "a": 779.14,
+   "b": 781.761,
+   "k": "carrots_glossy",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 781.761,
+   "b": 784.761,
+   "k": "carrot_kid_hand",
+   "c": "Kinetic",
+   "props": {
+    "k": "carrot_kid_hand",
+    "words": [
+     [
+      "Even the grandchildren eat these",
+      781.761
+     ]
+    ]
+   }
+  },
+  {
+   "a": 784.761,
+   "b": 789.201,
+   "k": "iowa-kitchen-spices-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "iowa-kitchen-spices-1950s",
+    "cap": "1950s · jars on a kitchen counter",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 789.201,
+   "b": 792.321,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 792.321,
+   "b": 801.761,
+   "k": "corn_boiled_pot",
+   "c": "ItemCard",
+   "props": {
+    "n": 22,
+    "name": "Picking silk off every kernel",
+    "instead": "Microwave it husk and all, four minutes",
+    "t": 797.341,
+    "k": "corn_boiled_pot",
+    "of": 7
+   }
+  },
+  {
+   "a": 801.761,
+   "b": 805.921,
+   "k": "loretta_microwave_corn",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 805.921,
+   "b": 810.261,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 810.261,
+   "b": 813.521,
+   "k": "corn_slide_out",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 813.521,
+   "b": 816.761,
+   "k": "corn_dish_towel",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 816.761,
+   "b": 819.461,
+   "k": "clean_ear_butter",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 819.461,
+   "b": 823.961,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 823.961,
+   "b": 832.421,
+   "k": "beans_fridge",
+   "c": "ItemCard",
+   "props": {
+    "n": 23,
+    "name": "Letting half a can of beans sit in the fridge",
+    "instead": "Bake the rest with ketchup and brown sugar",
+    "page": "PAGE 150",
+    "t": 825.661,
+    "k": "beans_fridge",
+    "of": 7
+   }
+  },
+  {
+   "a": 832.421,
+   "b": 836.361,
+   "k": "three_things_counter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 836.361,
+   "b": 841.431,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 841.431,
+   "b": 843.781,
+   "k": "mustard_spoon_in",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 843.781,
+   "b": 849.961,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "beans_baking_dish",
+      "t": 843.8,
+      "prompt": "A small white ceramic baking dish on a worn farmhouse counter holding pork and beans stirred with ketchup, brown sugar and a little mustard, a spoon resting in it, a dish towel beside it"
+     },
+     {
+      "k": "beans_small_pot_simmer",
+      "t": 846.6,
+      "prompt": "A small dented saucepan on an old enamel stove burner with pork and beans gently bubbling in a dark sweet sauce, a wooden spoon on the rim"
+     }
+    ]
+   }
+  },
+  {
+   "a": 849.961,
+   "b": 853.661,
+   "k": "recipe_card_top",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 853.661,
+   "b": 860.921,
+   "k": "salsa_jar_moldy",
+   "c": "ItemCard",
+   "props": {
+    "n": 24,
+    "name": "A whole jar of salsa for one supper",
+    "instead": "half a cup poured from a measure",
+    "page": "PAGE 31",
+    "k": "salsa_jar_moldy",
+    "t": 859.301,
+    "over": [
+     {
+      "c": "PageUp",
+      "from": 853.4,
+      "to": 859.4,
+      "t": 855.181,
+      "on": 855.181,
+      "rise": 855.181,
+      "page": 31,
+      "pages": [
+       {
+        "n": 31,
+        "line": "Half a cup of jarred salsa, measured out"
+       }
+      ],
+      "k": "page31_card"
+     }
+    ],
+    "of": 7
+   }
+  },
+  {
+   "a": 860.921,
+   "b": 864.681,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 864.681,
+   "b": 869.241,
+   "k": "salsa_cheese_measure",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 869.241,
+   "b": 873.551,
+   "k": "",
+   "c": "StepCard",
+   "props": {
+    "head": "Salsa chicken",
+    "page": "PAGE 31",
+    "steps": [
+     {
+      "t": 869.241,
+      "txt": "Pour the salsa over the chicken",
+      "k": "step_pour"
+     },
+     {
+      "t": 871.421,
+      "txt": "Cook on low for four hours",
+      "k": "step_low"
+     }
+    ]
+   }
+  },
+  {
+   "a": 873.551,
+   "b": 877.101,
+   "k": "shred_two_forks",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 877.101,
+   "b": 879.741,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 879.741,
+   "b": 884.481,
+   "k": "three_freezer_bags",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 884.481,
+   "b": 890.031,
+   "k": "sheet-pan-supper-home-ec",
+   "c": "Arc",
+   "props": {
+    "src": "sheet-pan-supper-home-ec",
+    "cap": "1950s · a cook in a kitchen with trays",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 890.031,
+   "b": 897.324,
+   "k": "sheet_pan_tenders",
+   "c": "ItemCard",
+   "props": {
+    "n": 25,
+    "name": "Separate pans for each dish",
+    "instead": "one sheet pan for everything",
+    "page": "PAGE 15",
+    "k": "sheet_pan_tenders",
+    "t": 895.741,
+    "over": [
+     {
+      "c": "PageUp",
+      "from": 889.9,
+      "to": 895.9,
+      "t": 891.661,
+      "on": 891.661,
+      "rise": 891.661,
+      "page": 15,
+      "pages": [
+       {
+        "n": 15,
+        "line": "One sheet pan for everything"
+       }
+      ],
+      "k": "page15_card"
+     }
+    ],
+    "of": 7
+   }
+  },
+  {
+   "a": 897.324,
+   "b": 903.714,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 903.714,
+   "b": 908.074,
+   "k": "home-ec-vegetables-baking-sheet-1950s",
+   "c": "Arc",
+   "props": {
+    "src": "home-ec-vegetables-baking-sheet-1950s",
+    "cap": "1950s · a woman cooks at a kitchen sink",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 908.074,
+   "b": 916.794,
+   "k": "parmesan-tenders-oven",
+   "c": "StepCard",
+   "props": {
+    "head": "Parmesan tenders",
+    "page": "15",
+    "steps": [
+     {
+      "txt": "Press parmesan on top of the tenders",
+      "t": 908.074,
+      "k": "tender-parmesan-press"
+     },
+     {
+      "txt": "Bake 18-20 min",
+      "t": 911.094,
+      "k": "tender-tray-oven"
+     },
+     {
+      "txt": "Chicken at 165Â°F",
+      "t": 912.694,
+      "k": "tender-thermometer"
+     }
+    ],
+    "bed": "parmesan-tenders-oven"
+   }
+  },
+  {
+   "a": 916.794,
+   "b": 920.174,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 920.174,
+   "b": 928.454,
+   "k": "can-supper-night",
+   "c": "ItemCard",
+   "props": {
+    "n": 26,
+    "name": "Open-a-can supper",
+    "instead": "One pot, one bowl, three frozen jars",
+    "page": "PAGE 36",
+    "k": "can-supper-night",
+    "t": 926.014,
+    "over": [
+     {
+      "kind": "O",
+      "c": "PageUp",
+      "start": 919.9,
+      "end": 925.9,
+      "pages": [
+       {
+        "n": "36",
+        "title": "Can opener supper"
+       }
+      ],
+      "k": "page36",
+      "t": 921.654
+     }
+    ],
+    "of": 7
+   }
+  },
+  {
+   "a": 928.454,
+   "b": 932.054,
+   "k": "thigh-broth-pot",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 932.054,
+   "b": 936.954,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 936.954,
+   "b": 939.434,
+   "k": "freeze-soup-no-noodles",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 939.434,
+   "b": 942.174,
+   "k": "noodles-fresh-cook",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 942.174,
+   "b": 944.754,
+   "k": "reheat-soup-boil",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 944.754,
+   "b": 947.814,
+   "k": "whole-pot-stir",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 947.814,
+   "b": 950.354,
+   "k": "one-bowl-three-jars",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 950.354,
+   "b": 954.054,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 954.054,
+   "b": 961.154,
+   "k": "chili-pot-straight",
+   "c": "ItemCard",
+   "props": {
+    "n": 27,
+    "name": "Chili from the can",
+    "instead": "Chili in a bowl, scaled down",
+    "page": "PAGE 40",
+    "k": "chili-pot-straight",
+    "t": 958.954,
+    "over": [
+     {
+      "kind": "O",
+      "c": "PageUp",
+      "start": 953.6,
+      "end": 959.6,
+      "pages": [
+       {
+        "n": "40",
+        "title": "Chili from the can"
+       }
+      ],
+      "k": "page40",
+      "t": 955.314
+     }
+    ],
+    "of": 7
+   }
+  },
+  {
+   "a": 961.154,
+   "b": 967.914,
+   "k": "empty_pot_counter",
+   "c": "DropList",
+   "props": {
+    "k": "empty_pot_counter",
+    "head": "ONE POT",
+    "items": [
+     {
+      "t": 961.594,
+      "txt": "GROUND BEEF 1/2 LB",
+      "label": "GROUND BEEF 1/2 LB"
+     },
+     {
+      "t": 963.514,
+      "txt": "KIDNEY BEANS, DRAINED",
+      "label": "KIDNEY BEANS, DRAINED"
+     },
+     {
+      "t": 965.914,
+      "txt": "DICED TOMATOES",
+      "label": "DICED TOMATOES"
+     }
+    ]
+   }
+  },
+  {
+   "a": 967.914,
+   "b": 975.4,
+   "k": "four_bowls_chili",
+   "c": "BigNumber",
+   "props": {
+    "num": 4,
+    "unit": "BOWLS",
+    "txt": "from one pot",
+    "k": "four_bowls_chili",
+    "t": 967.934,
+    "prefix": "",
+    "suffix": "",
+    "dur": 7.0
+   }
+  },
+  {
+   "a": 975.4,
+   "b": 978.874,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 978.874,
+   "b": 983.154,
+   "k": "zion_basement_kitchen",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 983.154,
+   "b": 986.894,
+   "k": "zion_basement_chili",
+   "c": "Chapter",
+   "props": {
+    "n": "ZION",
+    "title": "Chili Night",
+    "sub": "Bernice and me",
+    "k": "zion_basement_chili",
+    "av": true
+   }
+  },
+  {
+   "a": 986.894,
+   "b": 990.454,
+   "k": "loretta_stove_pot",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 990.454,
+   "b": 992.834,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 992.834,
+   "b": 997.714,
+   "k": "lutheran_church_supper_iowa",
+   "c": "Arc",
+   "props": {
+    "src": "lutheran_church_supper_iowa",
+    "cap": "1950s · a family supper",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 997.714,
+   "b": 1001.094,
+   "k": "chair_pulled_up",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1001.094,
+   "b": 1004.214,
+   "k": "sheet_pan_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1004.214,
+   "b": 1010.904,
+   "k": "skillet_ham_fry",
+   "c": "ItemCard",
+   "props": {
+    "n": 28,
+    "of": 30,
+    "name": "Frying the ham steak in a skillet",
+    "instead": "Sheet-pan ham and sweet potato",
+    "page": "PAGE 14",
+    "k": "skillet_ham_fry",
+    "k2": "sheet_pan_roast",
+    "t": 1007.714,
+    "overlay": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": 14,
+       "title": "Sheet-pan ham and sweet potato"
+      }
+     ],
+     "k": "cookbook_page_14",
+     "t": 1005.434,
+     "over": "1003.6-1009.6s",
+     "rise": "on the word 'page fourteen' (1005.6s)"
+    }
+   }
+  },
+  {
+   "a": 1010.904,
+   "b": 1015.234,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1015.234,
+   "b": 1018.714,
+   "k": "ham_steak_cooked",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1018.714,
+   "b": 1023.014,
+   "k": "glaze_sheet_pan",
+   "c": "StepCard",
+   "props": {
+    "head": "HAM & SWEET POTATO",
+    "page": "14",
+    "steps": [
+     {
+      "txt": "Ham gets a brown sugar and mustard glaze",
+      "t": 1018.274,
+      "k": "glaze_brush"
+     },
+     {
+      "txt": "Ten to twelve minutes more",
+      "t": 1021.034,
+      "k": "sheet_pan_in_oven"
+     }
+    ],
+    "bed": "glaze_sheet_pan"
+   }
+  },
+  {
+   "a": 1023.014,
+   "b": 1025.784,
+   "k": "ham_cut_board",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1025.784,
+   "b": 1032.094,
+   "k": "ham_split_plates",
+   "c": "SplitHalf",
+   "props": {
+    "k": "ham_split_plates",
+    "l": {
+     "txt": "TONIGHT",
+     "t": 1025.854
+    },
+    "r": {
+     "txt": "TOMORROW'S EGGS",
+     "t": 1027.294
+    },
+    "foot": {
+     "txt": "2 PLATES",
+     "t": 1029.074
+    }
+   }
+  },
+  {
+   "a": 1032.094,
+   "b": 1035.014,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 1035.014,
+   "b": 1044.014,
+   "k": "pierogi_pan_card",
+   "c": "ItemCard",
+   "props": {
+    "n": 29,
+    "of": 30,
+    "name": "Pierogi and kielbasa",
+    "instead": "One lined sheet pan",
+    "page": "PAGE 16",
+    "k": "pierogi_pan_card",
+    "t": 1040.094,
+    "overlay": {
+     "c": "PageUp",
+     "pages": [
+      {
+       "n": 16,
+       "hl": "no need to boil"
+      }
+     ],
+     "t": 1038.434,
+     "from": 1036.7,
+     "to": 1042.7,
+     "k": "pierogi_pan_card",
+     "rise": 1038.434
+    }
+   }
+  },
+  {
+   "a": 1044.014,
+   "b": 1046.334,
+   "k": "frozen_pierogi_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1046.334,
+   "b": 1051.494,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1051.494,
+   "b": 1056.434,
+   "k": "1950s-home-oven-dial",
+   "c": "Arc",
+   "props": {
+    "src": "1950s-home-oven-dial",
+    "cap": "1950s · girls help one another with aprons",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 1056.434,
+   "b": 1060.974,
+   "k": "recipe_book_open",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1060.974,
+   "b": 1064.054,
+   "k": "oven_open_loretta",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1064.054,
+   "b": 1068.094,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 1068.094,
+   "b": 1075.914,
+   "k": "cold_water_bowl_m17",
+   "c": "ItemCard",
+   "props": {
+    "n": 30,
+    "of": 30,
+    "name": "A bag of frozen fries",
+    "instead": "One potato in wedges, soaked in cold water",
+    "page": "PAGE 17",
+    "k": "cold_water_bowl_m17",
+    "t": 1070.514
+   }
+  },
+  {
+   "a": 1075.914,
+   "b": 1079.374,
+   "k": "dry_wedges_towel",
+   "c": "Note",
+   "props": {
+    "k": "dry_wedges_towel",
+    "lines": [
+     {
+      "txt": "Then dry them.",
+      "t": 1075.914
+     },
+     {
+      "txt": "They come out crisper.",
+      "t": 1077.554
+     }
+    ]
+   }
+  },
+  {
+   "a": 1079.374,
+   "b": 1085.574,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1085.574,
+   "b": 1087.994,
+   "k": "bake_pan_oven",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1087.994,
+   "b": 1098.774,
+   "k": "",
+   "c": "PhotoSeq",
+   "props": {
+    "photos": [
+     {
+      "k": "patty_beside_wedges",
+      "t": 1087.994,
+      "vid": false,
+      "cap": "patty beside the wedges",
+      "mark": {
+       "kind": "circle",
+       "x": 38,
+       "y": 42,
+       "w": 26,
+       "h": 30,
+       "t": 1087.994
+      }
+     },
+     {
+      "k": "thermo_patty",
+      "t": 1093.794,
+      "vid": false,
+      "cap": "thermometer in the patty",
+      "mark": {
+       "kind": "chalk",
+       "x": 44,
+       "y": 36,
+       "w": 22,
+       "h": 34,
+       "t": 1093.794
+      }
+     },
+     {
+      "k": "bun_toasted",
+      "t": 1096.674,
+      "vid": false,
+      "cap": "bun toasting",
+      "mark": {
+       "kind": "circle",
+       "x": 30,
+       "y": 34,
+       "w": 40,
+       "h": 36,
+       "t": 1096.674
+      }
+     }
+    ]
+   }
+  },
+  {
+   "a": 1098.774,
+   "b": 1104.794,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 1104.794,
+   "b": 1108.054,
+   "k": "plate_set_one",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1108.054,
+   "b": 1110.574,
+   "k": "cards_spread",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1110.574,
+   "b": 1114.314,
+   "k": "small_book_counter",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1114.314,
+   "b": 1118.894,
+   "k": "tin-of-recipe-cards",
+   "c": "Arc",
+   "props": {
+    "src": "tin-of-recipe-cards",
+    "cap": "1950s · hands turning cookbook pages",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 1118.894,
+   "b": 1123.134,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1123.134,
+   "b": 1127.434,
+   "k": "counter_by_stove",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1127.434,
+   "b": 1130.034,
+   "k": "small_job_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1130.034,
+   "b": 1133.594,
+   "k": "blank_index_card",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1133.594,
+   "b": 1137.554,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 1137.554,
+   "b": 1140.534,
+   "k": "three_things_fed",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1140.534,
+   "b": 1143.314,
+   "k": "card_pencil",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1143.314,
+   "b": 1151.134,
+   "k": "comment_bg",
+   "c": "Comment",
+   "props": {
+    "q": "Which three things were on your mother's card?",
+    "opts": [
+     {
+      "txt": "Three things",
+      "t": 1143.574
+     },
+     {
+      "txt": "How many it fed",
+      "t": 1146.014
+     }
+    ],
+    "k": "comment_bg"
+   }
+  },
+  {
+   "a": 1151.134,
+   "b": 1155.007,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1155.007,
+   "b": 1158.971,
+   "k": "gravy_video_bg",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1158.971,
+   "b": 1162.671,
+   "k": "pan_gravy_loretta",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1162.671,
+   "b": 1167.741,
+   "k": "gravy-boat-thanksgiving",
+   "c": "Arc",
+   "props": {
+    "src": "gravy-boat-thanksgiving",
+    "cap": "1950s · a dining room table",
+    "vid": true,
+    "credit": "Prelinger Archives (public domain)"
+   }
+  },
+  {
+   "a": 1167.741,
+   "b": 1171.401,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.0,
+    1.035
+   ]
+  },
+  {
+   "a": 1171.401,
+   "b": 1174.288,
+   "k": "lumpy_gravy_hands",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1174.288,
+   "b": 1177.138,
+   "k": "jar_shake_hands",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1177.138,
+   "b": 1180.15,
+   "k": "presenter_point",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1180.15,
+   "b": 1182.368,
+   "k": "stove_back_on",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1182.368,
+   "b": 1186.328,
+   "k": "av",
+   "av": true,
+   "z": [
+    1.26,
+    1.3
+   ],
+   "o": [
+    50,
+    30
+   ]
+  },
+  {
+   "a": 1186.328,
+   "b": 1189.148,
+   "k": "one_plate_table",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1189.148,
+   "b": 1193.848,
+   "k": "crackers_sink",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": 40
+  },
+  {
+   "a": 1193.848,
+   "b": 1196.06,
+   "k": "candle_good_plate",
+   "z": [
+    1.13,
+    1.04
+   ],
+   "dx": -40
+  },
+  {
+   "a": 1196.06,
+   "b": 1200.388,
+   "k": "phone_set_place",
+   "z": [
+    1.04,
+    1.13
+   ],
+   "dx": -40
+  }
+ ],
+ "overlays": [],
+ "counts": [
+  {
+   "a": 53.753,
+   "b": 110.92,
+   "n": 1
+  },
+  {
+   "a": 110.92,
+   "b": 175.24,
+   "n": 2
+  },
+  {
+   "a": 175.24,
+   "b": 207.013,
+   "n": 3
+  },
+  {
+   "a": 207.013,
+   "b": 237.18,
+   "n": 4
+  },
+  {
+   "a": 237.18,
+   "b": 289.9,
+   "n": 5
+  },
+  {
+   "a": 289.9,
+   "b": 322.43,
+   "n": 6
+  },
+  {
+   "a": 322.43,
+   "b": 354.46,
+   "n": 7
+  },
+  {
+   "a": 354.46,
+   "b": 385.471,
+   "n": 8
+  },
+  {
+   "a": 385.471,
+   "b": 414.677,
+   "n": 9
+  },
+  {
+   "a": 414.677,
+   "b": 445.754,
+   "n": 10
+  },
+  {
+   "a": 445.754,
+   "b": 476.247,
+   "n": 11
+  },
+  {
+   "a": 476.247,
+   "b": 503.847,
+   "n": 12
+  },
+  {
+   "a": 503.847,
+   "b": 531.987,
+   "n": 13
+  },
+  {
+   "a": 531.987,
+   "b": 560.024,
+   "n": 14
+  },
+  {
+   "a": 560.024,
+   "b": 616.001,
+   "n": 15
+  },
+  {
+   "a": 616.001,
+   "b": 645.001,
+   "n": 16
+  },
+  {
+   "a": 645.001,
+   "b": 677.961,
+   "n": 17
+  },
+  {
+   "a": 677.961,
+   "b": 705.801,
+   "n": 18
+  },
+  {
+   "a": 705.801,
+   "b": 736.421,
+   "n": 19
+  },
+  {
+   "a": 736.421,
+   "b": 764.161,
+   "n": 20
+  },
+  {
+   "a": 764.161,
+   "b": 792.321,
+   "n": 21
+  },
+  {
+   "a": 792.321,
+   "b": 823.961,
+   "n": 22
+  },
+  {
+   "a": 823.961,
+   "b": 853.661,
+   "n": 23
+  },
+  {
+   "a": 853.661,
+   "b": 890.031,
+   "n": 24
+  },
+  {
+   "a": 890.031,
+   "b": 920.174,
+   "n": 25
+  },
+  {
+   "a": 920.174,
+   "b": 954.054,
+   "n": 26
+  },
+  {
+   "a": 954.054,
+   "b": 1004.214,
+   "n": 27
+  },
+  {
+   "a": 1004.214,
+   "b": 1035.014,
+   "n": 28
+  },
+  {
+   "a": 1035.014,
+   "b": 1068.094,
+   "n": 29
+  },
+  {
+   "a": 1068.094,
+   "b": 1200.388,
+   "n": 30
+  }
+ ],
+ "of": 7,
+ "word": "ITEM",
+ "hide": [
+  [
+   53.753,
+   62.783
+  ],
+  [
+   110.92,
+   119.0
+  ],
+  [
+   175.24,
+   183.44
+  ],
+  [
+   207.013,
+   215.06
+  ],
+  [
+   237.18,
+   244.68
+  ],
+  [
+   289.9,
+   298.0
+  ],
+  [
+   322.43,
+   329.814
+  ],
+  [
+   354.46,
+   363.22
+  ],
+  [
+   385.471,
+   392.057
+  ],
+  [
+   414.677,
+   423.047
+  ],
+  [
+   445.754,
+   455.19
+  ],
+  [
+   476.247,
+   483.687
+  ],
+  [
+   503.847,
+   511.867
+  ],
+  [
+   531.987,
+   540.947
+  ],
+  [
+   560.024,
+   567.334
+  ],
+  [
+   616.001,
+   623.901
+  ],
+  [
+   645.001,
+   652.607
+  ],
+  [
+   677.961,
+   685.441
+  ],
+  [
+   705.801,
+   714.581
+  ],
+  [
+   736.421,
+   743.021
+  ],
+  [
+   764.161,
+   771.601
+  ],
+  [
+   792.321,
+   801.761
+  ],
+  [
+   823.961,
+   832.421
+  ],
+  [
+   853.661,
+   860.921
+  ],
+  [
+   890.031,
+   897.324
+  ],
+  [
+   920.174,
+   928.454
+  ],
+  [
+   954.054,
+   961.154
+  ],
+  [
+   1004.214,
+   1010.904
+  ],
+  [
+   1035.014,
+   1044.014
+  ],
+  [
+   1068.094,
+   1075.914
+  ],
+  [
+   601.921,
+   616.001
+  ],
+  [
+   1143.314,
+   1151.134
+  ]
+ ]
+}
