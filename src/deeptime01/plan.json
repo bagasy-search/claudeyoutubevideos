@@ -1,0 +1,1576 @@
+{
+"total": 19266,
+"shots": [
+{
+"f0": 0,
+"f1": 88,
+"t": "clip",
+"src": "deeptime01/clips/a01.mp4",
+"rate": 0.989
+},
+{
+"f0": 88,
+"f1": 199,
+"t": "real",
+"src": "deeptime01/real/n_everest__iss069e003192.jpg",
+"kb": "in"
+},
+{
+"f0": 199,
+"f1": 242,
+"t": "real",
+"src": "deeptime01/real/c_ever1.jpg",
+"kb": "l"
+},
+{
+"f0": 233,
+"f1": 349,
+"t": "gfx",
+"c": "map",
+"p": {
+"mode": "himalaya"
+},
+"fade": 9
+},
+{
+"f0": 340,
+"f1": 418,
+"t": "real",
+"src": "deeptime01/real/n_glacier__sts075-721-013.jpg",
+"kb": "out",
+"fade": 9
+},
+{
+"f0": 418,
+"f1": 487,
+"t": "img",
+"src": "deeptime01/img/a03.jpg",
+"kb": "r"
+},
+{
+"f0": 487,
+"f1": 575,
+"t": "clip",
+"src": "deeptime01/clips/a04.mp4",
+"rate": 0.989
+},
+{
+"f0": 575,
+"f1": 609,
+"t": "real",
+"src": "deeptime01/real/n_earth__GSFC_20171208_Archive_e001016.jpg",
+"kb": "inl"
+},
+{
+"f0": 609,
+"f1": 730,
+"t": "img",
+"src": "deeptime01/img/a05.jpg",
+"kb": "u"
+},
+{
+"f0": 730,
+"f1": 851,
+"t": "clip",
+"src": "deeptime01/clips/a06.mp4",
+"rate": 0.719
+},
+{
+"f0": 851,
+"f1": 938,
+"t": "img",
+"src": "deeptime01/img/a07.jpg",
+"kb": "in"
+},
+{
+"f0": 929,
+"f1": 1033,
+"t": "gfx",
+"c": "map",
+"p": {
+"mode": "london"
+},
+"fade": 9
+},
+{
+"f0": 1024,
+"f1": 1109,
+"t": "clip",
+"src": "deeptime01/clips/a08.mp4",
+"rate": 1.0,
+"fade": 9
+},
+{
+"f0": 1100,
+"f1": 1281,
+"t": "gfx",
+"c": "timeline",
+"p": {
+"mode": "intro"
+},
+"fade": 9
+},
+{
+"f0": 1272,
+"f1": 1340,
+"t": "img",
+"src": "deeptime01/img/a09.jpg",
+"kb": "r",
+"fade": 9
+},
+{
+"f0": 1340,
+"f1": 1412,
+"t": "img",
+"src": "deeptime01/img/a10.jpg",
+"kb": "out"
+},
+{
+"f0": 1412,
+"f1": 1455,
+"t": "clip",
+"src": "deeptime01/clips/a11.mp4",
+"rate": 1.0
+},
+{
+"f0": 1455,
+"f1": 1498,
+"t": "real",
+"src": "deeptime01/real/n_plume__PIA18155.jpg",
+"kb": "l"
+},
+{
+"f0": 1498,
+"f1": 1584,
+"t": "clip",
+"src": "deeptime01/clips/a13.mp4",
+"rate": 1.0
+},
+{
+"f0": 1584,
+"f1": 1690,
+"t": "clip",
+"src": "deeptime01/clips/a12.mp4",
+"rate": 0.821
+},
+{
+"f0": 1690,
+"f1": 1782,
+"t": "clip",
+"src": "deeptime01/clips/a14.mp4",
+"rate": 0.946
+},
+{
+"f0": 1782,
+"f1": 1918,
+"t": "img",
+"src": "deeptime01/img/a15.jpg",
+"kb": "inr"
+},
+{
+"f0": 1918,
+"f1": 2020,
+"t": "clip",
+"src": "deeptime01/clips/a16.mp4",
+"rate": 0.853
+},
+{
+"f0": 2020,
+"f1": 2104,
+"t": "real",
+"src": "deeptime01/real/n_earth__GSFC_20171208_Archive_e001788.jpg",
+"kb": "d"
+},
+{
+"f0": 2104,
+"f1": 2207,
+"t": "img",
+"src": "deeptime01/img/a17.jpg",
+"kb": "in"
+},
+{
+"f0": 2207,
+"f1": 2310,
+"t": "real",
+"src": "deeptime01/real/n_namib__iss072e487315.jpg",
+"kb": "l"
+},
+{
+"f0": 2310,
+"f1": 2368,
+"t": "img",
+"src": "deeptime01/img/a18.jpg",
+"kb": "out"
+},
+{
+"f0": 2368,
+"f1": 2411,
+"t": "real",
+"src": "deeptime01/real/n_glacier__iss069e060266.jpg",
+"kb": "r"
+},
+{
+"f0": 2411,
+"f1": 2483,
+"t": "clip",
+"src": "deeptime01/clips/a19.mp4",
+"rate": 1.0
+},
+{
+"f0": 2483,
+"f1": 2555,
+"t": "img",
+"src": "deeptime01/img/a20.jpg",
+"kb": "inl"
+},
+{
+"f0": 2555,
+"f1": 2635,
+"t": "img",
+"src": "deeptime01/img/a21.jpg",
+"kb": "u"
+},
+{
+"f0": 2635,
+"f1": 2714,
+"t": "real",
+"src": "deeptime01/real/n_andes__iss058e000188.jpg",
+"kb": "in"
+},
+{
+"f0": 2714,
+"f1": 2782,
+"t": "img",
+"src": "deeptime01/img/a77.jpg",
+"kb": "r"
+},
+{
+"f0": 2782,
+"f1": 2849,
+"t": "img",
+"src": "deeptime01/img/a23.jpg",
+"kb": "out"
+},
+{
+"f0": 2849,
+"f1": 2993,
+"t": "img",
+"src": "deeptime01/img/a76.jpg",
+"kb": "l"
+},
+{
+"f0": 2993,
+"f1": 3103,
+"t": "real",
+"src": "deeptime01/real/c_zircon1.jpg",
+"kb": "inr"
+},
+{
+"f0": 3103,
+"f1": 3147,
+"t": "img",
+"src": "deeptime01/img/a25.jpg",
+"kb": "d"
+},
+{
+"f0": 3147,
+"f1": 3214,
+"t": "real",
+"src": "deeptime01/real/c_zircon2.jpg",
+"kb": "in"
+},
+{
+"f0": 3214,
+"f1": 3284,
+"t": "img",
+"src": "deeptime01/img/a26.jpg",
+"kb": "l"
+},
+{
+"f0": 3284,
+"f1": 3355,
+"t": "clip",
+"src": "deeptime01/clips/a27.mp4",
+"rate": 1.0
+},
+{
+"f0": 3355,
+"f1": 3426,
+"t": "img",
+"src": "deeptime01/img/a28.jpg",
+"kb": "out"
+},
+{
+"f0": 3426,
+"f1": 3539,
+"t": "real",
+"src": "deeptime01/real/c_jhlandsat.jpg",
+"kb": "r"
+},
+{
+"f0": 3539,
+"f1": 3652,
+"t": "real",
+"src": "deeptime01/real/c_jhzircon.jpg",
+"kb": "inl"
+},
+{
+"f0": 3652,
+"f1": 3765,
+"t": "img",
+"src": "deeptime01/img/a29.jpg",
+"kb": "u"
+},
+{
+"f0": 3756,
+"f1": 4040,
+"t": "gfx",
+"c": "upb",
+"p": {},
+"fade": 9
+},
+{
+"f0": 4031,
+"f1": 4128,
+"t": "img",
+"src": "deeptime01/img/a24.jpg",
+"kb": "in",
+"fade": 9
+},
+{
+"f0": 4128,
+"f1": 4215,
+"t": "img",
+"src": "deeptime01/img/a30.jpg",
+"kb": "r"
+},
+{
+"f0": 4215,
+"f1": 4400,
+"t": "img",
+"src": "deeptime01/img/a31.jpg",
+"kb": "out"
+},
+{
+"f0": 4400,
+"f1": 4543,
+"t": "real",
+"src": "deeptime01/real/n_earth__GSFC_20171208_Archive_e002130.jpg",
+"kb": "l"
+},
+{
+"f0": 4534,
+"f1": 4833,
+"t": "gfx",
+"c": "crust",
+"p": {
+"mode": "thicken"
+},
+"fade": 9
+},
+{
+"f0": 4824,
+"f1": 4902,
+"t": "real",
+"src": "deeptime01/real/c_garnet1.jpg",
+"kb": "inr",
+"fade": 9
+},
+{
+"f0": 4902,
+"f1": 4970,
+"t": "img",
+"src": "deeptime01/img/a32.jpg",
+"kb": "d"
+},
+{
+"f0": 4970,
+"f1": 5171,
+"t": "img",
+"src": "deeptime01/img/a33.jpg",
+"kb": "in"
+},
+{
+"f0": 5162,
+"f1": 5594,
+"t": "gfx",
+"c": "crust",
+"p": {
+"mode": "zircon"
+},
+"fade": 9
+},
+{
+"f0": 5585,
+"f1": 5811,
+"t": "gfx",
+"c": "map",
+"p": {
+"mode": "samples"
+},
+"fade": 9
+},
+{
+"f0": 5802,
+"f1": 6148,
+"t": "gfx",
+"c": "zircon",
+"p": {
+"mode": "peaks"
+},
+"fade": 9
+},
+{
+"f0": 6139,
+"f1": 6340,
+"t": "real",
+"src": "deeptime01/real/n_tibet__iss074e0603590.jpg",
+"kb": "l",
+"fade": 9
+},
+{
+"f0": 6340,
+"f1": 6428,
+"t": "img",
+"src": "deeptime01/img/a34.jpg",
+"kb": "out"
+},
+{
+"f0": 6419,
+"f1": 6603,
+"t": "gfx",
+"c": "timeline",
+"p": {
+"mode": "nuna"
+},
+"fade": 9
+},
+{
+"f0": 6594,
+"f1": 6665,
+"t": "img",
+"src": "deeptime01/img/a35.jpg",
+"kb": "r",
+"fade": 9
+},
+{
+"f0": 6665,
+"f1": 6739,
+"t": "img",
+"src": "deeptime01/img/a75b.jpg",
+"kb": "inl"
+},
+{
+"f0": 6739,
+"f1": 6845,
+"t": "img",
+"src": "deeptime01/img/a36.jpg",
+"kb": "u"
+},
+{
+"f0": 6845,
+"f1": 6932,
+"t": "img",
+"src": "deeptime01/img/a38.jpg",
+"kb": "in"
+},
+{
+"f0": 6932,
+"f1": 7019,
+"t": "real",
+"src": "deeptime01/real/n_zagros__iss074e0315889.jpg",
+"kb": "r"
+},
+{
+"f0": 7019,
+"f1": 7106,
+"t": "img",
+"src": "deeptime01/img/a39.jpg",
+"kb": "out"
+},
+{
+"f0": 7106,
+"f1": 7193,
+"t": "clip",
+"src": "deeptime01/clips/a40.mp4",
+"rate": 1.0
+},
+{
+"f0": 7193,
+"f1": 7282,
+"t": "clip",
+"src": "deeptime01/clips/a41.mp4",
+"rate": 0.978
+},
+{
+"f0": 7282,
+"f1": 7371,
+"t": "real",
+"src": "deeptime01/real/n_deltas__sts066-92-013.jpg",
+"kb": "l"
+},
+{
+"f0": 7371,
+"f1": 7484,
+"t": "real",
+"src": "deeptime01/real/n_plume__iss034e032377.jpg",
+"kb": "inr"
+},
+{
+"f0": 7484,
+"f1": 7596,
+"t": "real",
+"src": "deeptime01/real/n_deltas__PIA11158.jpg",
+"kb": "d"
+},
+{
+"f0": 7596,
+"f1": 7720,
+"t": "real",
+"src": "deeptime01/real/c_strom1.jpg",
+"kb": "in"
+},
+{
+"f0": 7720,
+"f1": 7763,
+"t": "img",
+"src": "deeptime01/img/a42.jpg",
+"kb": "l"
+},
+{
+"f0": 7763,
+"f1": 7886,
+"t": "img",
+"src": "deeptime01/img/a43.jpg",
+"kb": "out"
+},
+{
+"f0": 7886,
+"f1": 8009,
+"t": "real",
+"src": "deeptime01/real/n_shark__iss010e06681.jpg",
+"kb": "r"
+},
+{
+"f0": 8009,
+"f1": 8169,
+"t": "real",
+"src": "deeptime01/real/c_strom2.jpg",
+"kb": "inl"
+},
+{
+"f0": 8169,
+"f1": 8226,
+"t": "clip",
+"src": "deeptime01/clips/a45.mp4",
+"rate": 1.0
+},
+{
+"f0": 8217,
+"f1": 8619,
+"t": "gfx",
+"c": "timeline",
+"p": {
+"mode": "boring"
+},
+"fade": 9
+},
+{
+"f0": 8610,
+"f1": 8749,
+"t": "clip",
+"src": "deeptime01/clips/a46.mp4",
+"rate": 0.626,
+"fade": 9
+},
+{
+"f0": 8749,
+"f1": 8880,
+"t": "img",
+"src": "deeptime01/img/a47.jpg",
+"kb": "u"
+},
+{
+"f0": 8880,
+"f1": 9011,
+"t": "real",
+"src": "deeptime01/real/n_phyto__GSFC_20171208_Archive_e001969.jpg",
+"kb": "in"
+},
+{
+"f0": 9011,
+"f1": 9120,
+"t": "img",
+"src": "deeptime01/img/a48.jpg",
+"kb": "r"
+},
+{
+"f0": 9111,
+"f1": 9371,
+"t": "gfx",
+"c": "zircon",
+"p": {
+"mode": "gap"
+},
+"fade": 9
+},
+{
+"f0": 9362,
+"f1": 9530,
+"t": "clip",
+"src": "deeptime01/clips/a49.mp4",
+"rate": 0.518,
+"fade": 9
+},
+{
+"f0": 9530,
+"f1": 9616,
+"t": "clip",
+"src": "deeptime01/clips/a51.mp4",
+"rate": 1.0
+},
+{
+"f0": 9616,
+"f1": 9699,
+"t": "img",
+"src": "deeptime01/img/a50.jpg",
+"kb": "out"
+},
+{
+"f0": 9699,
+"f1": 9824,
+"t": "real",
+"src": "deeptime01/real/n_antar__GSFC_20171208_Archive_e002161.jpg",
+"kb": "l"
+},
+{
+"f0": 9824,
+"f1": 9949,
+"t": "clip",
+"src": "deeptime01/clips/a52.mp4",
+"rate": 0.696
+},
+{
+"f0": 9949,
+"f1": 10074,
+"t": "real",
+"src": "deeptime01/real/n_antar__GSFC_20171208_Archive_e001782.jpg",
+"kb": "inr"
+},
+{
+"f0": 10065,
+"f1": 10523,
+"t": "gfx",
+"c": "globe",
+"p": {
+"mode": "assemble"
+},
+"fade": 9
+},
+{
+"f0": 10514,
+"f1": 10706,
+"t": "img",
+"src": "deeptime01/img/a53.jpg",
+"kb": "d",
+"fade": 9
+},
+{
+"f0": 10706,
+"f1": 10845,
+"t": "img",
+"src": "deeptime01/img/a55.jpg",
+"kb": "in"
+},
+{
+"f0": 10845,
+"f1": 10985,
+"t": "real",
+"src": "deeptime01/real/n_andes__iss073e0384067.jpg",
+"kb": "l"
+},
+{
+"f0": 10976,
+"f1": 11292,
+"t": "gfx",
+"c": "globe",
+"p": {
+"mode": "range"
+},
+"fade": 9
+},
+{
+"f0": 11283,
+"f1": 11419,
+"t": "img",
+"src": "deeptime01/img/a54.jpg",
+"kb": "out",
+"fade": 9
+},
+{
+"f0": 11419,
+"f1": 11546,
+"t": "real",
+"src": "deeptime01/real/n_himal__iss072e397138.jpg",
+"kb": "r"
+},
+{
+"f0": 11546,
+"f1": 11597,
+"t": "real",
+"src": "deeptime01/real/c_ever3.jpg",
+"kb": "inl"
+},
+{
+"f0": 11588,
+"f1": 11900,
+"t": "gfx",
+"c": "length",
+"p": {},
+"fade": 9
+},
+{
+"f0": 11891,
+"f1": 12008,
+"t": "real",
+"src": "deeptime01/real/n_himal__sts066-158-181.jpg",
+"kb": "u",
+"fade": 9
+},
+{
+"f0": 12008,
+"f1": 12116,
+"t": "real",
+"src": "deeptime01/real/n_glacier__iss074e0603582.jpg",
+"kb": "in"
+},
+{
+"f0": 12116,
+"f1": 12204,
+"t": "clip",
+"src": "deeptime01/clips/a58.mp4",
+"rate": 0.989
+},
+{
+"f0": 12204,
+"f1": 12319,
+"t": "clip",
+"src": "deeptime01/clips/a56.mp4",
+"rate": 0.757
+},
+{
+"f0": 12319,
+"f1": 12371,
+"t": "clip",
+"src": "deeptime01/clips/a57.mp4",
+"rate": 1.0
+},
+{
+"f0": 12371,
+"f1": 12422,
+"t": "real",
+"src": "deeptime01/real/n_amazon__iss069e033689.jpg",
+"kb": "r"
+},
+{
+"f0": 12422,
+"f1": 12503,
+"t": "real",
+"src": "deeptime01/real/n_plume__iss017e013856.jpg",
+"kb": "out"
+},
+{
+"f0": 12503,
+"f1": 12584,
+"t": "real",
+"src": "deeptime01/real/n_deltas__STS062-85-021.jpg",
+"kb": "l"
+},
+{
+"f0": 12584,
+"f1": 12653,
+"t": "real",
+"src": "deeptime01/real/n_gcan__PIA16098.jpg",
+"kb": "inr"
+},
+{
+"f0": 12653,
+"f1": 12790,
+"t": "real",
+"src": "deeptime01/real/n_gcan__iss074e0208838.jpg",
+"kb": "d"
+},
+{
+"f0": 12781,
+"f1": 13092,
+"t": "gfx",
+"c": "unconf",
+"p": {
+"bg": "deeptime01/real/c_unc_tapeats.jpg"
+},
+"fade": 9
+},
+{
+"f0": 13083,
+"f1": 13189,
+"t": "real",
+"src": "deeptime01/real/c_unc_gc.jpg",
+"kb": "in",
+"fade": 9
+},
+{
+"f0": 13189,
+"f1": 13287,
+"t": "img",
+"src": "deeptime01/img/a59.jpg",
+"kb": "l"
+},
+{
+"f0": 13287,
+"f1": 13424,
+"t": "real",
+"src": "deeptime01/real/n_sahara__iss072e068304.jpg",
+"kb": "out"
+},
+{
+"f0": 13424,
+"f1": 13562,
+"t": "real",
+"src": "deeptime01/real/n_arabia__s66-54536.jpg",
+"kb": "r"
+},
+{
+"f0": 13553,
+"f1": 13941,
+"t": "gfx",
+"c": "sr",
+"p": {
+"bg": "deeptime01/img/a60.jpg"
+},
+"fade": 9
+},
+{
+"f0": 13932,
+"f1": 14043,
+"t": "real",
+"src": "deeptime01/real/n_phyto__GSFC_20171208_Archive_e001418.jpg",
+"kb": "inl",
+"fade": 9
+},
+{
+"f0": 14043,
+"f1": 14250,
+"t": "clip",
+"src": "deeptime01/clips/a61.mp4",
+"rate": 0.42
+},
+{
+"f0": 14250,
+"f1": 14324,
+"t": "clip",
+"src": "deeptime01/clips/a62.mp4",
+"rate": 1.0
+},
+{
+"f0": 14324,
+"f1": 14397,
+"t": "img",
+"src": "deeptime01/img/a60.jpg",
+"kb": "u"
+},
+{
+"f0": 14397,
+"f1": 14539,
+"t": "real",
+"src": "deeptime01/real/c_charnia.jpg",
+"kb": "in"
+},
+{
+"f0": 14539,
+"f1": 14689,
+"t": "clip",
+"src": "deeptime01/clips/a63.mp4",
+"rate": 0.58
+},
+{
+"f0": 14689,
+"f1": 14788,
+"t": "img",
+"src": "deeptime01/img/a14b.jpg",
+"kb": "r"
+},
+{
+"f0": 14788,
+"f1": 14887,
+"t": "real",
+"src": "deeptime01/real/c_trilo1.jpg",
+"kb": "out"
+},
+{
+"f0": 14887,
+"f1": 14998,
+"t": "img",
+"src": "deeptime01/img/a64.jpg",
+"kb": "l"
+},
+{
+"f0": 14998,
+"f1": 15109,
+"t": "img",
+"src": "deeptime01/img/a65.jpg",
+"kb": "inr"
+},
+{
+"f0": 15109,
+"f1": 15158,
+"t": "real",
+"src": "deeptime01/real/n_phyto__GSFC_20171208_Archive_e001502.jpg",
+"kb": "d"
+},
+{
+"f0": 15149,
+"f1": 15559,
+"t": "gfx",
+"c": "chain",
+"p": {
+"bg": "deeptime01/real/n_phyto__GSFC_20171208_Archive_e001997.jpg",
+"steps": [
+"MOUNTAIN",
+"NUTRIENTS",
+"ALGAE",
+"OXYGEN",
+"ANIMALS"
+],
+"at": [
+150,
+210,
+285,
+365,
+99999
+]
+},
+"fade": 9
+},
+{
+"f0": 15550,
+"f1": 15680,
+"t": "real",
+"src": "deeptime01/real/n_phyto__GSFC_20171208_Archive_e002019.jpg",
+"kb": "in",
+"fade": 9
+},
+{
+"f0": 15680,
+"f1": 15800,
+"t": "img",
+"src": "deeptime01/img/a66.jpg",
+"kb": "l"
+},
+{
+"f0": 15800,
+"f1": 15921,
+"t": "img",
+"src": "deeptime01/img/a44.jpg",
+"kb": "out"
+},
+{
+"f0": 15912,
+"f1": 16060,
+"t": "gfx",
+"c": "chain",
+"p": {
+"bg": "deeptime01/real/n_phyto__GSFC_20171208_Archive_e001794.jpg",
+"steps": [
+"MOUNTAIN",
+"NUTRIENTS",
+"ALGAE",
+"OXYGEN",
+"ANIMALS"
+],
+"at": [
+-20,
+-20,
+-20,
+-20,
+70
+]
+},
+"fade": 9
+},
+{
+"f0": 16051,
+"f1": 16170,
+"t": "real",
+"src": "deeptime01/real/n_gcan__iss074e0301902.jpg",
+"kb": "r",
+"fade": 9
+},
+{
+"f0": 16170,
+"f1": 16281,
+"t": "img",
+"src": "deeptime01/img/a37.jpg",
+"kb": "inl"
+},
+{
+"f0": 16272,
+"f1": 16610,
+"t": "gfx",
+"c": "timeline",
+"p": {
+"mode": "both"
+},
+"fade": 9
+},
+{
+"f0": 16601,
+"f1": 16654,
+"t": "real",
+"src": "deeptime01/real/n_madag__as17-148-22717.jpg",
+"kb": "u",
+"fade": 9
+},
+{
+"f0": 16654,
+"f1": 16755,
+"t": "real",
+"src": "deeptime01/real/n_madag__s07-03-058.jpg",
+"kb": "in"
+},
+{
+"f0": 16755,
+"f1": 16856,
+"t": "img",
+"src": "deeptime01/img/a67.jpg",
+"kb": "r"
+},
+{
+"f0": 16856,
+"f1": 16957,
+"t": "real",
+"src": "deeptime01/real/n_arabia__PIA00127.jpg",
+"kb": "out"
+},
+{
+"f0": 16957,
+"f1": 17058,
+"t": "real",
+"src": "deeptime01/real/n_antar__GSFC_20171208_Archive_e001866.jpg",
+"kb": "l"
+},
+{
+"f0": 17058,
+"f1": 17201,
+"t": "img",
+"src": "deeptime01/img/a68.jpg",
+"kb": "inr"
+},
+{
+"f0": 17201,
+"f1": 17286,
+"t": "real",
+"src": "deeptime01/real/c_ever2.jpg",
+"kb": "d"
+},
+{
+"f0": 17277,
+"f1": 17433,
+"t": "gfx",
+"c": "map",
+"p": {
+"mode": "india"
+},
+"fade": 9
+},
+{
+"f0": 17424,
+"f1": 17547,
+"t": "img",
+"src": "deeptime01/img/a02.jpg",
+"kb": "in",
+"fade": 9
+},
+{
+"f0": 17547,
+"f1": 17660,
+"t": "real",
+"src": "deeptime01/real/c_crinoid.jpg",
+"kb": "l"
+},
+{
+"f0": 17660,
+"f1": 17773,
+"t": "real",
+"src": "deeptime01/real/n_everest__STS058-101-014.jpg",
+"kb": "out"
+},
+{
+"f0": 17773,
+"f1": 17890,
+"t": "real",
+"src": "deeptime01/real/n_himal__iss074e0002506.jpg",
+"kb": "r"
+},
+{
+"f0": 17890,
+"f1": 18059,
+"t": "real",
+"src": "deeptime01/real/n_everest__iss054e006869.jpg",
+"kb": "inl"
+},
+{
+"f0": 18050,
+"f1": 18300,
+"t": "gfx",
+"c": "timeline",
+"p": {
+"mode": "future"
+},
+"fade": 9
+},
+{
+"f0": 18291,
+"f1": 18459,
+"t": "img",
+"src": "deeptime01/img/a70.jpg",
+"kb": "u",
+"fade": 9
+},
+{
+"f0": 18459,
+"f1": 18619,
+"t": "real",
+"src": "deeptime01/real/n_earth__GSFC_20171208_Archive_e002131.jpg",
+"kb": "in"
+},
+{
+"f0": 18619,
+"f1": 18869,
+"t": "img",
+"src": "deeptime01/img/a71.jpg",
+"kb": "r"
+},
+{
+"f0": 18869,
+"f1": 19105,
+"t": "img",
+"src": "deeptime01/img/a72.jpg",
+"kb": "out"
+},
+{
+"f0": 19105,
+"f1": 19266,
+"t": "img",
+"src": "deeptime01/img/a73.jpg",
+"kb": "l"
+}
+],
+"ovs": [
+{
+"f0": 94,
+"f1": 220,
+"t": "tag",
+"p": {
+"a": "8,849 m",
+"b": "Mount Everest \u00b7 the roof of the world"
+}
+},
+{
+"f0": 199,
+"f1": 247,
+"t": "credit",
+"p": {
+"a": "Photo: Luca Galuzzi \u00b7 CC BY-SA 2.5"
+}
+},
+{
+"f0": 618,
+"f1": 813,
+"t": "year",
+"p": {
+"a": "600 MILLION YEARS AGO"
+}
+},
+{
+"f0": 857,
+"f1": 947,
+"t": "tag",
+"p": {
+"a": "8,000 km",
+"b": "one unbroken chain of mountains"
+}
+},
+{
+"f0": 1290,
+"f1": 1338,
+"t": "title",
+"p": {
+"a": "GONE",
+"size": 170
+}
+},
+{
+"f0": 1818,
+"f1": 1914,
+"t": "tag",
+"p": {
+"a": "1,000,000,000 years",
+"b": "of almost nothing",
+"size": 84
+}
+},
+{
+"f0": 2134,
+"f1": 2272,
+"t": "sub",
+"p": {
+"a": "SUBSCRIBE \u00b7 WE ONLY GO BACKWARDS"
+}
+},
+{
+"f0": 2310,
+"f1": 2376,
+"t": "chapter",
+"p": {
+"n": "I",
+"a": "THE WITNESS"
+}
+},
+{
+"f0": 2573,
+"f1": 2693,
+"t": "tag",
+"p": {
+"a": "tens of millions of years",
+"b": "enough to erase a mountain range",
+"size": 78
+}
+},
+{
+"f0": 2993,
+"f1": 3098,
+"t": "credit",
+"p": {
+"a": "Zircon \u00b7 Iziko Museums, CC BY 3.0"
+}
+},
+{
+"f0": 3106,
+"f1": 3208,
+"t": "tag",
+"p": {
+"a": "ZIRCON",
+"b": "ZrSiO\u2084 \u00b7 smaller than a grain of sand"
+}
+},
+{
+"f0": 3147,
+"f1": 3216,
+"t": "credit",
+"p": {
+"a": "Zircon \u00b7 Carles Millan, CC BY 3.0"
+}
+},
+{
+"f0": 3522,
+"f1": 3660,
+"t": "tag",
+"p": {
+"a": "4.4 billion years",
+"b": "Jack Hills, Western Australia",
+"size": 90
+}
+},
+{
+"f0": 3561,
+"f1": 3666,
+"t": "credit",
+"p": {
+"a": "Jack Hills zircons: A. Cavosie / NASA Astrobiology \u00b7 Public domain"
+}
+},
+{
+"f0": 4245,
+"f1": 4395,
+"t": "tag",
+"p": {
+"a": "Zhu & Campbell \u00b7 2022",
+"b": "Australian National University",
+"size": 80
+}
+},
+{
+"f0": 4848,
+"f1": 4953,
+"t": "tag",
+"p": {
+"a": "GARNET",
+"b": "grows only under enormous pressure"
+}
+},
+{
+"f0": 5046,
+"f1": 5154,
+"t": "element",
+"p": {
+"z": "71",
+"sym": "Lu",
+"name": "Lutetium",
+"note": "a rare earth element"
+}
+},
+{
+"f0": 6346,
+"f1": 6430,
+"t": "title",
+"p": {
+"k": "TWO GIANTS",
+"a": "SUPERMOUNTAINS",
+"size": 140
+}
+},
+{
+"f0": 6603,
+"f1": 6669,
+"t": "year",
+"p": {
+"a": "NUNA SUPERMOUNTAIN",
+"b": "2.0 \u2013 1.8 billion years ago"
+}
+},
+{
+"f0": 6668,
+"f1": 6740,
+"t": "year",
+"p": {
+"a": "2 BILLION YEARS AGO"
+}
+},
+{
+"f0": 7416,
+"f1": 7566,
+"t": "chips",
+"p": {
+"items": [
+"PHOSPHORUS",
+"IRON"
+]
+}
+},
+{
+"f0": 7596,
+"f1": 7671,
+"t": "credit",
+"p": {
+"a": "Stromatolites, Shark Bay \u00b7 Alicejmichel, CC BY-SA 4.0"
+}
+},
+{
+"f0": 7720,
+"f1": 7816,
+"t": "tag",
+"p": {
+"a": "EUKARYOTES",
+"b": "the first complex cells"
+}
+},
+{
+"f0": 8009,
+"f1": 8084,
+"t": "credit",
+"p": {
+"a": "Stromatolites, Hamelin Pool \u00b7 Philarazzi, CC BY-SA 4.0"
+}
+},
+{
+"f0": 8169,
+"f1": 8229,
+"t": "chapter",
+"p": {
+"n": "II",
+"a": "THE BORING BILLION"
+}
+},
+{
+"f0": 8829,
+"f1": 8964,
+"t": "tag",
+"p": {
+"a": "\u00d7 3,000",
+"b": "longer than our species has existed"
+}
+},
+{
+"f0": 9017,
+"f1": 9113,
+"t": "year",
+"p": {
+"a": "RODINIA",
+"b": "another supercontinent"
+}
+},
+{
+"f0": 9377,
+"f1": 9512,
+"t": "year",
+"p": {
+"a": "\u2248 700 MILLION YEARS AGO"
+}
+},
+{
+"f0": 9622,
+"f1": 9700,
+"t": "tag",
+"p": {
+"a": "SNOWBALL EARTH"
+}
+},
+{
+"f0": 9849,
+"f1": 9984,
+"t": "year",
+"p": {
+"a": "\u2248 635 MILLION YEARS AGO",
+"b": "the ice breaks"
+}
+},
+{
+"f0": 10589,
+"f1": 10697,
+"t": "title",
+"p": {
+"k": "THE SECOND GIANT",
+"a": "TRANSGONDWANAN",
+"b": "SUPERMOUNTAIN",
+"size": 120
+}
+},
+{
+"f0": 10715,
+"f1": 10880,
+"t": "tag",
+"p": {
+"a": "Squire, Campbell et al. \u00b7 2006",
+"b": "confirmed by the 2022 zircon study",
+"size": 66
+}
+},
+{
+"f0": 11546,
+"f1": 11597,
+"t": "credit",
+"p": {
+"a": "Everest north face \u00b7 Likechopo, CC BY-SA 4.0"
+}
+},
+{
+"f0": 12773,
+"f1": 12953,
+"t": "credit",
+"p": {
+"a": "Great Unconformity \u00b7 Mikenorton, CC BY-SA 4.0"
+}
+},
+{
+"f0": 13092,
+"f1": 13182,
+"t": "credit",
+"p": {
+"a": "Grand Canyon \u00b7 Chris M Morris, CC BY 2.0"
+}
+},
+{
+"f0": 13947,
+"f1": 14025,
+"t": "chapter",
+"p": {
+"n": "III",
+"a": "THE EXPLOSION"
+}
+},
+{
+"f0": 14067,
+"f1": 14202,
+"t": "year",
+"p": {
+"a": "575 MILLION YEARS AGO"
+}
+},
+{
+"f0": 14400,
+"f1": 14502,
+"t": "tag",
+"p": {
+"a": "THE EDIACARAN BIOTA"
+}
+},
+{
+"f0": 14397,
+"f1": 14499,
+"t": "credit",
+"p": {
+"a": "Charnia \u00b7 Andy Dingley, CC BY-SA 3.0"
+}
+},
+{
+"f0": 14557,
+"f1": 14683,
+"t": "year",
+"p": {
+"a": "\u2248 540 MILLION YEARS AGO",
+"b": "the Cambrian explosion"
+}
+},
+{
+"f0": 14791,
+"f1": 14881,
+"t": "credit",
+"p": {
+"a": "Trilobite \u00b7 Gary Todd, CC0"
+}
+},
+{
+"f0": 16610,
+"f1": 16652,
+"t": "chapter",
+"p": {
+"n": "IV",
+"a": "WHERE IT WENT"
+}
+},
+{
+"f0": 17201,
+"f1": 17276,
+"t": "credit",
+"p": {
+"a": "Mount Everest \u00b7 CC BY-SA 2.0"
+}
+},
+{
+"f0": 17553,
+"f1": 17643,
+"t": "credit",
+"p": {
+"a": "Crinoid fossils \u00b7 Grand Canyon NPS, CC BY 2.0"
+}
+},
+{
+"f0": 17779,
+"f1": 17887,
+"t": "tag",
+"p": {
+"a": "+ a few mm a year",
+"b": "the Himalayas are still rising",
+"size": 80
+}
+},
+{
+"f0": 18899,
+"f1": 19229,
+"t": "end",
+"p": {
+"a": "When Antarctica Was a Jungle"
+}
+}
+]
+}
