@@ -319,7 +319,7 @@
     "k": "whole_bird_boiled",
     "k2": "one_thigh",
     "t": 121.133,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -501,7 +501,7 @@
     "look": "PAGE 77 tab rises on 'Page seventy-seven', highlighter on 'an hour and a half'",
     "k": "item3_can",
     "t": 185.553,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -595,7 +595,7 @@
     "look": "PAGE 78 tab rises on 'page seventy-eight', highlighter on 'that's supper'",
     "k": "item4_ramen",
     "t": 220.773,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -666,7 +666,7 @@
     "bed": "loretta_bag_night",
     "bed_avatar": true,
     "t": 250.513,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -806,7 +806,7 @@
       286.3
      ]
     },
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -892,7 +892,7 @@
       "at": 310.535
      }
     ],
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -997,7 +997,7 @@
       "at": 342.589
      }
     ],
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1105,7 +1105,7 @@
       ]
      }
     ],
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1192,7 +1192,7 @@
       ]
      }
     ],
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1278,7 +1278,7 @@
      "from": 433.2,
      "to": 439.2
     },
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1386,7 +1386,7 @@
      "from": 470.1,
      "to": 476.1
     },
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1481,7 +1481,7 @@
      ],
      "k": "page108"
     },
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1618,7 +1618,7 @@
     "k": "peas_two_pots",
     "t": 549.137,
     "look": "AVATAR MIDDLE: Loretta alone, card hidden, 544.8-549.0s on the sentence gap after 'is for a tired night' (3-5 s). Page 109 corner inset 543.2-544.8s before it. Card returns at 'Most homes cook the peas' (549.2s).",
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1739,7 +1739,7 @@
     "instead": "One pot, on low",
     "k": "cheese_second_pan",
     "t": 597.917,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1834,7 +1834,7 @@
     "k": "crisper_cabbage",
     "t": 630.797,
     "look": "PAGE 90 tab rises and is highlighted on 'page ninety'",
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -1930,7 +1930,7 @@
     "k": "fried_potatoes",
     "t": 662.557,
     "bed": "loretta_fry_talk_bed",
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -2028,7 +2028,7 @@
     "k": "beef_ball_puffed",
     "k2": "patty_oval_dent",
     "t": 698.564,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -2119,7 +2119,7 @@
     "k": "end_month_store_supper",
     "k2": "tomato_eggs_poached",
     "t": 731.544,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -2230,7 +2230,7 @@
     "k": "takeout_fried_rice",
     "k2": "cold_rice_skillet",
     "t": 777.744,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -2465,7 +2465,7 @@
     "k": "trash_bone_bin",
     "k2": "soup_bowl_instead",
     "t": 872.313,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -2592,7 +2592,7 @@
     "instead": "A can of salmon, four patties",
     "k": "salmon_can",
     "t": 924.526,
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -2676,7 +2676,7 @@
     "bed": "loretta_lift_bacon",
     "k2": "loretta_bacon_insert",
     "look": "AVATAR ON SCREEN THROUGHOUT 954.7-965.1 s, full-frame k2, three cuts: (A) 954.7-958.5 s: Loretta talks straight to camera with the fork in hand from 'Number twenty-five' through 'Pouring'. (B) 958.5-961.0 s: full-frame Loretta, face to camera, lifts the bacon out of the pot with the fork on 'lift them out' (bed photo, her face visible). (C) 961.0-965.1 s: full-frame Loretta again, talking to camera on 'and leave the fat'. Her face stays in frame for the whole slot; no cut without her.",
-    "of": 7
+    "of": 25
    }
   },
   {
@@ -3188,7 +3188,7 @@
    "n": 25
   }
  ],
- "of": 7,
+ "of": 25,
  "word": "ITEM",
  "hide": [
   [
