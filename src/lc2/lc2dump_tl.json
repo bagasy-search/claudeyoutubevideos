@@ -1,0 +1,1737 @@
+{
+"slug": "lc2dump",
+"R": [
+{
+"n": 1,
+"title": "Chicken & Rice",
+"from": 2839,
+"to": 5027
+},
+{
+"n": 2,
+"title": "Salmon & Potatoes",
+"from": 5027,
+"to": 6970
+},
+{
+"n": 3,
+"title": "Chicken Fajita",
+"from": 6970,
+"to": 8747
+},
+{
+"n": 4,
+"title": "Hamburger Hobo",
+"from": 8747,
+"to": 10383
+},
+{
+"n": 5,
+"title": "Sausage & Potato",
+"from": 10383,
+"to": 12033
+},
+{
+"n": 6,
+"title": "Breakfast Casserole",
+"from": 12033,
+"to": 13762
+},
+{
+"n": 7,
+"title": "Chicken Tenders",
+"from": 13762,
+"to": 15190
+}
+],
+"frames": 17005,
+"audio": "lc2dump.wav",
+"TL": [
+{
+"k": "av",
+"line": 0,
+"from": 0,
+"dur": 64,
+"seed": 13,
+"src": null,
+"sf": 0,
+"cuts": []
+},
+{
+"k": "av",
+"line": 1,
+"from": 64,
+"dur": 314,
+"seed": 461,
+"src": null,
+"sf": 64,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c001",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "a big nine by thirteen glass baking dish half full of cold leftover casserole sitting alone on the wooden kitchen table next to one plate and one fork, morning light from",
+"from": 378,
+"dur": 80,
+"seed": 2659
+},
+{
+"k": "clip",
+"id": "lc2dump_c002",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "her hand scrapes cold leftover casserole from a big glass dish into a small kitchen trash can with a spoon.",
+"from": 458,
+"dur": 163,
+"seed": 3219
+},
+{
+"k": "av",
+"line": 4,
+"from": 621,
+"dur": 194,
+"seed": 4360,
+"src": null,
+"sf": 385,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Hook7",
+"props": {
+"items": [
+{
+"src": "lc2/kf/done_lc2dump_1_lc2dump_c003.png",
+"name": "Chicken & Rice"
+},
+{
+"src": "lc2/kf/done_lc2dump_2_lc2dump_c030.png",
+"name": "Salmon & Potatoes"
+},
+{
+"src": "lc2/kf/done_lc2dump_3_lc2dump_c036.png",
+"name": "Chicken Fajita"
+},
+{
+"src": "lc2/kf/done_lc2dump_4_lc2dump_c044.png",
+"name": "Hamburger Hobo"
+},
+{
+"src": "lc2/kf/done_lc2dump_5_lc2dump_c051.png",
+"name": "Sausage & Potato"
+},
+{
+"src": "lc2/kf/done_lc2dump_6_lc2dump_c059.png",
+"name": "Breakfast Casserole"
+},
+{
+"src": "lc2/kf/done_lc2dump_7_lc2dump_c065.png",
+"name": "Chicken Tenders"
+}
+],
+"title": "Dump & Bake",
+"word": "suppers"
+},
+"from": 815,
+"dur": 250,
+"seed": 5718
+},
+{
+"k": "clip",
+"id": "lc2dump_c005",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "top-down, her hands tear a sheet of heavy foil off a roll on the wooden table.",
+"from": 1065,
+"dur": 137,
+"seed": 7468
+},
+{
+"k": "clip",
+"id": "lc2dump_c006",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2dump_c006.png",
+"seg": 7,
+"desc": "she slides a small foil-covered glass dish onto the middle rack and closes the old white oven door with her hip.",
+"from": 1202,
+"dur": 124,
+"seed": 8427
+},
+{
+"k": "av",
+"line": 8,
+"from": 1326,
+"dur": 166,
+"seed": 9295,
+"src": null,
+"sf": 587,
+"cuts": []
+},
+{
+"k": "av",
+"line": 9,
+"from": 1492,
+"dur": 56,
+"seed": 10457,
+"src": null,
+"sf": 753,
+"cuts": []
+},
+{
+"k": "av",
+"line": 10,
+"from": 1548,
+"dur": 127,
+"seed": 10849,
+"src": null,
+"sf": 809,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c007",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2dump_c007.png",
+"seg": 10,
+"desc": "she ties the strings of her floral apron behind her back and smooths the front with both hands, standing at the wooden table.",
+"from": 1675,
+"dur": 213,
+"seed": 11738
+},
+{
+"k": "clip",
+"id": "lc2dump_c008",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she ties the strings of her floral apron behind her back and smooths the front with both hands, standing at the wooden table (the same moment seen from a different angle)",
+"from": 1888,
+"dur": 107,
+"seed": 13229
+},
+{
+"k": "av",
+"line": 12,
+"from": 1995,
+"dur": 335,
+"seed": 13978,
+"src": null,
+"sf": 943,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c009",
+"src": null,
+"img": "lc2/kf/plate_libro_lc2dump_c009.png",
+"seg": 10,
+"desc": "standing at the wooden table she lifts the thick book Supper for One with both hands and holds it beside her chest, cover toward the lens, then taps the cover once with h",
+"from": 2330,
+"dur": 237,
+"seed": 16323
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2dump.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 2567,
+"dur": 225,
+"seed": 17982
+},
+{
+"k": "av",
+"line": 15,
+"from": 2792,
+"dur": 47,
+"seed": 19557,
+"src": null,
+"sf": 1286,
+"cuts": []
+},
+{
+"k": "av",
+"line": 16,
+"from": 2839,
+"dur": 138,
+"seed": 19886,
+"src": null,
+"sf": 1333,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c010",
+"src": null,
+"img": "lc2/kf/ing_lc2dump_1.png",
+"seg": 10,
+"desc": "she stands at the wooden table looking over her ingredients: a small glass loaf pan, a bag of rice, a carton of broth, a can of cream of chicken soup and two raw chicken ",
+"from": 2977,
+"dur": 214,
+"seed": 20852
+},
+{
+"k": "clip",
+"id": "lc2dump_c011",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "her fingers turn the round white dial of an old enamel oven to three hundred seventy-five.",
+"from": 3191,
+"dur": 98,
+"seed": 22350
+},
+{
+"k": "clip",
+"id": "lc2dump_c012",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she rubs a stick of butter in its paper all over the inside of the small glass loaf pan.",
+"from": 3289,
+"dur": 133,
+"seed": 23036
+},
+{
+"k": "clip",
+"id": "lc2dump_c013",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2dump_c013.png",
+"seg": 7,
+"desc": "she pours half a cup of dry white long-grain rice from a metal measuring cup into the buttered loaf pan.",
+"from": 3422,
+"dur": 173,
+"seed": 23967
+},
+{
+"k": "clip",
+"id": "lc2dump_c014",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she pours chicken broth from a carton into the pan, spoons in thick cream of chicken soup from a can, then stirs it with a fork.",
+"from": 3595,
+"dur": 198,
+"seed": 25178
+},
+{
+"k": "clip",
+"id": "lc2dump_c015",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she pours chicken broth from a carton into the pan, spoons in thick cream of chicken soup from a can, then stirs it with a fork (the same moment seen from a different ang",
+"from": 3793,
+"dur": 99,
+"seed": 26564
+},
+{
+"k": "clip",
+"id": "lc2dump_c016",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she lays two raw boneless chicken thighs side by side on top of the rice mixture.",
+"from": 3892,
+"dur": 94,
+"seed": 27257
+},
+{
+"k": "av",
+"line": 23,
+"from": 3986,
+"dur": 224,
+"seed": 27915,
+"src": null,
+"sf": 1478,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c017",
+"src": null,
+"img": "lc2/kf/top_lc2dump_1_lc2dump_c017.png",
+"seg": 5,
+"desc": "top-down, she shakes salt, pepper and red paprika from small tins over the chicken in the loaf pan, the thick book Supper for One lying closed on the table beside the pan",
+"from": 4210,
+"dur": 92,
+"seed": 29483
+},
+{
+"k": "clip",
+"id": "lc2dump_c018",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she presses a sheet of foil tight all around the rim of the loaf pan with her fingertips.",
+"from": 4302,
+"dur": 194,
+"seed": 30127
+},
+{
+"k": "clip",
+"id": "lc2dump_c019",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2dump_c019.png",
+"seg": 7,
+"desc": "she opens the white oven door and slides the foil-covered loaf pan onto the rack, then closes it.",
+"from": 4496,
+"dur": 130,
+"seed": 31485
+},
+{
+"k": "clip",
+"id": "lc2dump_c020",
+"src": null,
+"img": "lc2/kf/done_lc2dump_1_lc2dump_c020.png",
+"seg": 7,
+"desc": "the loaf pan on a folded towel, she peels back the foil and steam rolls out over golden chicken thighs on soft rice.",
+"from": 4626,
+"dur": 128,
+"seed": 32395
+},
+{
+"k": "clip",
+"id": "lc2dump_c021",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she pushes an old dial meat thermometer into the thickest part of a chicken thigh.",
+"from": 4754,
+"dur": 139,
+"seed": 33291
+},
+{
+"k": "av",
+"line": 29,
+"from": 4893,
+"dur": 134,
+"seed": 34264,
+"src": null,
+"sf": 1709,
+"cuts": []
+},
+{
+"k": "av",
+"line": 30,
+"from": 5027,
+"dur": 153,
+"seed": 35202,
+"src": null,
+"sf": 1843,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c022",
+"src": null,
+"img": "lc2/kf/ing_lc2dump_2.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a raw salmon fillet on a plate, four baby potatoes, a handful of green beans, a lemon, butter, a sprig of dill and a roll of heavy foi",
+"from": 5180,
+"dur": 143,
+"seed": 36273
+},
+{
+"k": "clip",
+"id": "lc2dump_c023",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she tears a long sheet of heavy foil, about fourteen inches, and lays it flat on the table.",
+"from": 5323,
+"dur": 213,
+"seed": 37274
+},
+{
+"k": "clip",
+"id": "lc2dump_c024",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands slice four small baby potatoes into thin rounds with a small paring knife on a little wooden board, slowly and carefully.",
+"from": 5536,
+"dur": 176,
+"seed": 38765
+},
+{
+"k": "clip",
+"id": "lc2dump_c025",
+"src": null,
+"img": "lc2/kf/top_lc2dump_2_lc2dump_c025.png",
+"seg": 5,
+"desc": "top-down, she lays the potato slices in the middle of the foil and scatters green beans over them, the thick book Supper for One lying open beside the foil. the book is a",
+"from": 5712,
+"dur": 111,
+"seed": 39997
+},
+{
+"k": "av",
+"line": 35,
+"from": 5823,
+"dur": 265,
+"seed": 40774,
+"src": null,
+"sf": 2003,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c026",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she sets a pink salmon fillet on the beans and lays three thin lemon slices and a pat of butter on the fish.",
+"from": 6088,
+"dur": 181,
+"seed": 42629
+},
+{
+"k": "clip",
+"id": "lc2dump_c027",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she pinches fresh dill over the salmon and shakes salt and pepper on it.",
+"from": 6269,
+"dur": 78,
+"seed": 43896
+},
+{
+"k": "clip",
+"id": "lc2dump_c028",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she folds the foil over the fish and crimps the edges twice all the way around, pressing hard with her fingers.",
+"from": 6347,
+"dur": 209,
+"seed": 44442
+},
+{
+"k": "clip",
+"id": "lc2dump_c029",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2dump_c029.png",
+"seg": 5,
+"desc": "she slides the small baking sheet with the foil packet into the oven and closes the door.",
+"from": 6556,
+"dur": 53,
+"seed": 45905
+},
+{
+"k": "clip",
+"id": "lc2dump_c030",
+"src": null,
+"img": "lc2/kf/done_lc2dump_2_lc2dump_c030.png",
+"seg": 7,
+"desc": "she carefully opens the hot foil packet away from her face with a fork and a cloud of steam escapes, revealing the salmon.",
+"from": 6609,
+"dur": 163,
+"seed": 46276
+},
+{
+"k": "av",
+"line": 41,
+"from": 6772,
+"dur": 198,
+"seed": 47417,
+"src": null,
+"sf": 2275,
+"cuts": []
+},
+{
+"k": "av",
+"line": 42,
+"from": 6970,
+"dur": 159,
+"seed": 48803,
+"src": null,
+"sf": 2473,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c031",
+"src": null,
+"img": "lc2/kf/ing_lc2dump_3.png",
+"seg": 10,
+"desc": "she stands at the wooden table with chicken strips on a plate, half a red bell pepper, a quarter onion, a small jar of taco seasoning, a bottle of oil and two small flour",
+"from": 7129,
+"dur": 197,
+"seed": 49916
+},
+{
+"k": "clip",
+"id": "lc2dump_c032",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands cut half a red bell pepper into strips with a paring knife on a small wooden board.",
+"from": 7326,
+"dur": 164,
+"seed": 51295
+},
+{
+"k": "clip",
+"id": "lc2dump_c033",
+"src": null,
+"img": "lc2/kf/top_lc2dump_3_lc2dump_c033.png",
+"seg": 10,
+"desc": "top-down, the thick book Supper for One lying closed beside the bowl, in a small glass bowl she tosses raw chicken strips, pepper and onion strips with a teaspoon of oil ",
+"from": 7490,
+"dur": 229,
+"seed": 52443
+},
+{
+"k": "clip",
+"id": "lc2dump_c034",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she tips the seasoned chicken and peppers from the bowl onto the middle of a sheet of foil.",
+"from": 7719,
+"dur": 99,
+"seed": 54046
+},
+{
+"k": "av",
+"line": 47,
+"from": 7818,
+"dur": 305,
+"seed": 54739,
+"src": null,
+"sf": 2639,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c035",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she folds and seals the foil packet tightly around the edges.",
+"from": 8123,
+"dur": 105,
+"seed": 56874
+},
+{
+"k": "clip",
+"id": "lc2dump_c036",
+"src": null,
+"img": "lc2/kf/done_lc2dump_3_lc2dump_c036.png",
+"seg": 10,
+"desc": "she lays two small flour tortillas flat on top of the closed hot foil packet on the baking sheet.",
+"from": 8228,
+"dur": 258,
+"seed": 57609
+},
+{
+"k": "clip",
+"id": "lc2dump_c037",
+"src": null,
+"img": "lc2/kf/done_lc2dump_3_lc2dump_c037.png",
+"seg": 7,
+"desc": "the foil packet opened on the baking sheet, steaming chicken and peppers glistening, warm tortillas beside it.",
+"from": 8486,
+"dur": 127,
+"seed": 59415
+},
+{
+"k": "av",
+"line": 51,
+"from": 8613,
+"dur": 134,
+"seed": 60304,
+"src": null,
+"sf": 2951,
+"cuts": []
+},
+{
+"k": "av",
+"line": 52,
+"from": 8747,
+"dur": 77,
+"seed": 61242,
+"src": null,
+"sf": 3085,
+"cuts": []
+},
+{
+"k": "av",
+"line": 53,
+"from": 8824,
+"dur": 249,
+"seed": 61781,
+"src": null,
+"sf": 3163,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c038",
+"src": null,
+"img": "lc2/kf/ing_lc2dump_4.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a raw hamburger patty on a plate, one potato, one carrot, a quarter onion, a dish of butter and a roll of foil.",
+"from": 9073,
+"dur": 78,
+"seed": 63524
+},
+{
+"k": "clip",
+"id": "lc2dump_c039",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands slice a peeled potato into very thin rounds with a paring knife on a small wooden board.",
+"from": 9151,
+"dur": 194,
+"seed": 64070
+},
+{
+"k": "clip",
+"id": "lc2dump_c040",
+"src": null,
+"img": "lc2/kf/top_lc2dump_4_lc2dump_c040.png",
+"seg": 7,
+"desc": "top-down, she layers potato rounds, carrot coins and onion slices in the middle of a sheet of foil with both hands, the thick book Supper for One lying open beside it. th",
+"from": 9345,
+"dur": 111,
+"seed": 65428
+},
+{
+"k": "av",
+"line": 57,
+"from": 9456,
+"dur": 201,
+"seed": 66205,
+"src": null,
+"sf": 3419,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c041",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she sets a raw hamburger patty on the vegetables and puts a pat of butter on top of the patty.",
+"from": 9657,
+"dur": 135,
+"seed": 67612
+},
+{
+"k": "clip",
+"id": "lc2dump_c042",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2dump_c042.png",
+"seg": 10,
+"desc": "she drops a spoon of thick cream of mushroom soup onto the hamburger patty.",
+"from": 9792,
+"dur": 213,
+"seed": 68557
+},
+{
+"k": "clip",
+"id": "lc2dump_c043",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she seals the foil packet tightly, folding the edges over twice.",
+"from": 10005,
+"dur": 69,
+"seed": 70048
+},
+{
+"k": "clip",
+"id": "lc2dump_c044",
+"src": null,
+"img": "lc2/kf/done_lc2dump_4_lc2dump_c044.png",
+"seg": 7,
+"desc": "the opened foil packet steaming on the baking sheet, the browned patty sitting in brown gravy over soft potatoes and carrots.",
+"from": 10074,
+"dur": 171,
+"seed": 70531
+},
+{
+"k": "av",
+"line": 62,
+"from": 10245,
+"dur": 138,
+"seed": 71728,
+"src": null,
+"sf": 3626,
+"cuts": []
+},
+{
+"k": "av",
+"line": 63,
+"from": 10383,
+"dur": 123,
+"seed": 72694,
+"src": null,
+"sf": 3765,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c045",
+"src": null,
+"img": "lc2/kf/ing_lc2dump_5.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a piece of smoked sausage, five baby potatoes, a small bowl of green beans, oil and paprika.",
+"from": 10506,
+"dur": 114,
+"seed": 73555
+},
+{
+"k": "clip",
+"id": "lc2dump_c046",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands slice three inches of smoked sausage into coins with a paring knife.",
+"from": 10620,
+"dur": 141,
+"seed": 74353
+},
+{
+"k": "clip",
+"id": "lc2dump_c047",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she cuts five baby potatoes into quarters on a small wooden board.",
+"from": 10761,
+"dur": 160,
+"seed": 75340
+},
+{
+"k": "clip",
+"id": "lc2dump_c048",
+"src": null,
+"img": "lc2/kf/top_lc2dump_5_lc2dump_c048.png",
+"seg": 10,
+"desc": "top-down, the thick book Supper for One lying closed beside the bowl, in a small glass bowl she tosses the sausage, potatoes and green beans with oil, salt, pepper and pa",
+"from": 10921,
+"dur": 210,
+"seed": 76460
+},
+{
+"k": "av",
+"line": 68,
+"from": 11131,
+"dur": 276,
+"seed": 77930,
+"src": null,
+"sf": 3895,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c049",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she tips everything onto the foil and seals the packet tight.",
+"from": 11407,
+"dur": 157,
+"seed": 79862
+},
+{
+"k": "clip",
+"id": "lc2dump_c050",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "top-down, three sealed foil packets lined up on a plate inside the open refrigerator, her hand sliding the last one in.",
+"from": 11564,
+"dur": 192,
+"seed": 80961
+},
+{
+"k": "clip",
+"id": "lc2dump_c051",
+"src": null,
+"img": "lc2/kf/done_lc2dump_5_lc2dump_c051.png",
+"seg": 5,
+"desc": "the opened foil packet steaming on the baking sheet, browned sausage and golden potatoes glistening.",
+"from": 11756,
+"dur": 118,
+"seed": 82305
+},
+{
+"k": "av",
+"line": 72,
+"from": 11874,
+"dur": 159,
+"seed": 83131,
+"src": null,
+"sf": 4178,
+"cuts": []
+},
+{
+"k": "av",
+"line": 73,
+"from": 12033,
+"dur": 118,
+"seed": 84244,
+"src": null,
+"sf": 4336,
+"cuts": []
+},
+{
+"k": "av",
+"line": 74,
+"from": 12151,
+"dur": 215,
+"seed": 85070,
+"src": null,
+"sf": 4454,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c052",
+"src": null,
+"img": "lc2/kf/ing_lc2dump_6.png",
+"seg": 5,
+"desc": "she stands at the wooden table with two slices of bread, a cooked sausage patty, two eggs, a glass bottle of milk, a small bowl of shredded cheddar and a small white baki",
+"from": 12366,
+"dur": 51,
+"seed": 86575
+},
+{
+"k": "clip",
+"id": "lc2dump_c053",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "her buttery fingers grease a small round white ceramic dish with butter.",
+"from": 12417,
+"dur": 67,
+"seed": 86932
+},
+{
+"k": "clip",
+"id": "lc2dump_c054",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2dump_c054.png",
+"seg": 10,
+"desc": "she tears two slices of slightly stale bread into cubes and drops them into the dish, then crumbles a cooked sausage patty over them.",
+"from": 12484,
+"dur": 273,
+"seed": 87401
+},
+{
+"k": "clip",
+"id": "lc2dump_c055",
+"src": null,
+"img": "lc2/kf/top_lc2dump_6_lc2dump_c055.png",
+"seg": 5,
+"desc": "top-down, with both hands at once she cracks two eggs on the rim of a small glass bowl and opens the shells, the yolks dropping in, the thick book Supper for One lying cl",
+"from": 12757,
+"dur": 61,
+"seed": 89312
+},
+{
+"k": "clip",
+"id": "lc2dump_c056",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she pours milk from a small glass bottle into the eggs, adds salt and pepper and beats them with a fork.",
+"from": 12818,
+"dur": 95,
+"seed": 89739
+},
+{
+"k": "av",
+"line": 80,
+"from": 12913,
+"dur": 230,
+"seed": 90404,
+"src": null,
+"sf": 4676,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c057",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she pours the egg mixture over the bread in the dish and sprinkles shredded cheddar on top.",
+"from": 13143,
+"dur": 87,
+"seed": 92014
+},
+{
+"k": "clip",
+"id": "lc2dump_c058",
+"src": null,
+"img": "lc2/kf/plate_fridge_lc2dump_c058.png",
+"seg": 10,
+"desc": "she sets the small foil-covered white dish on a shelf in the refrigerator and closes the door.",
+"from": 13230,
+"dur": 197,
+"seed": 92623
+},
+{
+"k": "clip",
+"id": "lc2dump_c059",
+"src": null,
+"img": "lc2/kf/done_lc2dump_6_lc2dump_c059.png",
+"seg": 7,
+"desc": "the white dish just out of the oven on a folded towel, puffed and golden with bubbling cheese.",
+"from": 13427,
+"dur": 202,
+"seed": 94002
+},
+{
+"k": "av",
+"line": 84,
+"from": 13629,
+"dur": 133,
+"seed": 95416,
+"src": null,
+"sf": 4914,
+"cuts": []
+},
+{
+"k": "av",
+"line": 85,
+"from": 13762,
+"dur": 199,
+"seed": 96347,
+"src": null,
+"sf": 5047,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c060",
+"src": null,
+"img": "lc2/kf/ing_lc2dump_7.png",
+"seg": 7,
+"desc": "she stands at the wooden table with two raw chicken tenders, a bowl of broccoli florets, a small container of grated parmesan, oil and garlic powder, and a small foil-lin",
+"from": 13961,
+"dur": 126,
+"seed": 97740
+},
+{
+"k": "clip",
+"id": "lc2dump_c061",
+"src": null,
+"img": "lc2/kf/top_lc2dump_7_lc2dump_c061.png",
+"seg": 7,
+"desc": "top-down, she tosses broccoli florets with oil, salt and pepper right on the foil-lined sheet pan, the thick book Supper for One lying open beside the pan. the book is a ",
+"from": 14087,
+"dur": 183,
+"seed": 98622
+},
+{
+"k": "clip",
+"id": "lc2dump_c062",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she brushes two raw chicken tenders with oil using a small pastry brush.",
+"from": 14270,
+"dur": 155,
+"seed": 99903
+},
+{
+"k": "av",
+"line": 89,
+"from": 14425,
+"dur": 189,
+"seed": 100988,
+"src": null,
+"sf": 5253,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c063",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she presses grated parmesan onto the top of each chicken tender with her fingertips.",
+"from": 14614,
+"dur": 185,
+"seed": 102311
+},
+{
+"k": "clip",
+"id": "lc2dump_c064",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2dump_c064.png",
+"seg": 5,
+"desc": "she slides the small sheet pan into the oven and closes the door.",
+"from": 14799,
+"dur": 77,
+"seed": 103606
+},
+{
+"k": "clip",
+"id": "lc2dump_c065",
+"src": null,
+"img": "lc2/kf/done_lc2dump_7_lc2dump_c065.png",
+"seg": 7,
+"desc": "the sheet pan on top of the stove, golden crusted tenders and browned broccoli still sizzling.",
+"from": 14876,
+"dur": 188,
+"seed": 104145
+},
+{
+"k": "av",
+"line": 93,
+"from": 15064,
+"dur": 126,
+"seed": 105461,
+"src": null,
+"sf": 5449,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c066",
+"src": null,
+"img": "lc2/kf/plate_table_lc2dump_c066.png",
+"seg": 7,
+"desc": "she sits down at the small wooden table with one plate of chicken and rice, a folded cloth napkin and a fork, and takes a slow first bite, eyes closed for a moment.",
+"from": 15190,
+"dur": 176,
+"seed": 106343
+},
+{
+"k": "av",
+"line": 95,
+"from": 15366,
+"dur": 254,
+"seed": 107575,
+"src": null,
+"sf": 5582,
+"cuts": []
+},
+{
+"k": "av",
+"line": 96,
+"from": 15620,
+"dur": 18,
+"seed": 109353,
+"src": null,
+"sf": 5837,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Homework",
+"props": {
+"names": [
+"Chicken & Rice",
+"Salmon & Potatoes",
+"Chicken Fajita",
+"Hamburger Hobo",
+"Sausage & Potato",
+"Breakfast Casserole",
+"Chicken Tenders"
+],
+"pick": 2,
+"line": "Pick two this week. Just two."
+},
+"from": 15638,
+"dur": 135,
+"seed": 109479
+},
+{
+"k": "av",
+"line": 97,
+"from": 15773,
+"dur": 200,
+"seed": 110424,
+"src": null,
+"sf": 5990,
+"cuts": []
+},
+{
+"k": "av",
+"line": 98,
+"from": 15973,
+"dur": 18,
+"seed": 111824,
+"src": null,
+"sf": 6189,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Week",
+"props": {},
+"from": 15991,
+"dur": 277,
+"seed": 111950
+},
+{
+"k": "clip",
+"id": "lc2dump_c067",
+"src": null,
+"img": "lc2/kf/plate_libro2_lc2dump_c067.png",
+"seg": 10,
+"desc": "she sits at the small wooden table, opens the thick book Supper for One flat in front of her and turns a page with one finger. the book is a thick paperback cookbook titl",
+"from": 16268,
+"dur": 204,
+"seed": 113889
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2dump.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 16472,
+"dur": 54,
+"seed": 115317
+},
+{
+"k": "av",
+"line": 101,
+"from": 16526,
+"dur": 186,
+"seed": 115695,
+"src": null,
+"sf": 6491,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2dump_c068",
+"src": null,
+"img": "lc2/kf/plate_table_lc2dump_c068.png",
+"seg": 7,
+"desc": "she sits at the table with her plate, looks out the window at the yellow gingham curtains moving slightly in a breeze, and smiles softly.",
+"from": 16712,
+"dur": 182,
+"seed": 116997
+},
+{
+"k": "av",
+"line": 103,
+"from": 16894,
+"dur": 111,
+"seed": 118271,
+"src": null,
+"sf": 6694,
+"cuts": []
+}
+],
+"OV": [
+{
+"from": 1530,
+"dur": 135,
+"name": "LorNameTag",
+"props": {
+"name": "Loretta",
+"sub": "60 years of church suppers"
+}
+},
+{
+"from": 2205,
+"dur": 135,
+"name": "Lc2Plates",
+"props": {
+"n": 2
+}
+},
+{
+"from": 2845,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 1,
+"title": "Chicken and Rice, No Stirring",
+"num": 15
+}
+},
+{
+"from": 2983,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken & Rice",
+"items": [
+{
+"t": "1/2 cup long-grain white rice",
+"at": 0.5
+},
+{
+"t": "1 cup chicken broth",
+"at": 1.3
+},
+{
+"t": "1/4 cup cream of chicken soup",
+"at": 2.1
+},
+{
+"t": "2 boneless chicken thighs",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper, paprika",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 3216,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 375
+}
+},
+{
+"from": 4006,
+"dur": 135,
+"name": "Lc2Plates",
+"props": {
+"n": 2
+}
+},
+{
+"from": 4496,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 55,
+"max": 60,
+"note": "foil off for the last 5"
+}
+},
+{
+"from": 4893,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.80",
+"sub": "a plate"
+}
+},
+{
+"from": 5033,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 2,
+"title": "Salmon, Potatoes and Green Beans",
+"num": 31
+}
+},
+{
+"from": 5186,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Salmon & Potatoes",
+"items": [
+{
+"t": "1 salmon fillet",
+"at": 0.5
+},
+{
+"t": "4 baby potatoes, sliced thin",
+"at": 1.3
+},
+{
+"t": "A handful of green beans",
+"at": 2.1
+},
+{
+"t": "1 tablespoon butter",
+"at": 2.9000000000000004
+},
+{
+"t": "Heavy foil, 14 inches long",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 5378,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 6556,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 25
+}
+},
+{
+"from": 6789,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 145,
+"what": "thickest part"
+}
+},
+{
+"from": 6933,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$3.80",
+"sub": "a plate"
+}
+},
+{
+"from": 6976,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 3,
+"title": "Chicken Fajita Packet",
+"num": 32
+}
+},
+{
+"from": 7135,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken Fajita",
+"items": [
+{
+"t": "1 chicken breast",
+"at": 0.5
+},
+{
+"t": "1/2 bell pepper",
+"at": 1.3
+},
+{
+"t": "1 teaspoon oil",
+"at": 2.1
+},
+{
+"t": "2 small tortillas",
+"at": 2.9000000000000004
+}
+]
+}
+},
+{
+"from": 7326,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 8169,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 22,
+"max": 25
+}
+},
+{
+"from": 8613,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.30",
+"sub": "a plate"
+}
+},
+{
+"from": 8753,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 4,
+"title": "Hamburger Hobo Packet",
+"num": 33
+}
+},
+{
+"from": 9079,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Hamburger Hobo",
+"items": [
+{
+"t": "1 hamburger patty",
+"at": 0.5
+},
+{
+"t": "1 potato",
+"at": 1.3
+},
+{
+"t": "1/4 onion, sliced",
+"at": 2.1
+},
+{
+"t": "1 tablespoon butter, salt",
+"at": 2.9000000000000004
+}
+]
+}
+},
+{
+"from": 9253,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 10050,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 40
+}
+},
+{
+"from": 10258,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 160,
+"what": "thickest part"
+}
+},
+{
+"from": 10402,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.00",
+"sub": "a plate"
+}
+},
+{
+"from": 10389,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 5,
+"title": "Sausage and Potato Packet",
+"num": 34
+}
+},
+{
+"from": 10555,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Sausage & Potato",
+"items": [
+{
+"t": "3 inches smoked sausage",
+"at": 0.5
+},
+{
+"t": "5 baby potatoes, quartered",
+"at": 1.3
+},
+{
+"t": "1/2 cup green beans",
+"at": 2.1
+},
+{
+"t": "1 teaspoon oil, salt, pepper",
+"at": 2.9000000000000004
+}
+]
+}
+},
+{
+"from": 11473,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 25,
+"max": 30
+}
+},
+{
+"from": 11874,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.80",
+"sub": "a supper",
+"vs": "frozen dinner $3.50–$5"
+}
+},
+{
+"from": 12039,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 6,
+"title": "Overnight Breakfast Casserole",
+"num": 20
+}
+},
+{
+"from": 12372,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Breakfast Casserole",
+"items": [
+{
+"t": "2 slices bread, cubed",
+"at": 0.5
+},
+{
+"t": "1 sausage patty",
+"at": 1.3
+},
+{
+"t": "2 eggs",
+"at": 2.1
+},
+{
+"t": "1/2 cup milk",
+"at": 2.9000000000000004
+},
+{
+"t": "1/4 cup shredded cheddar",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 13489,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 35,
+"max": 40
+}
+},
+{
+"from": 13633,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.50",
+"sub": "a plate"
+}
+},
+{
+"from": 13768,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 7,
+"title": "Chicken Tenders and Broccoli",
+"num": 7
+}
+},
+{
+"from": 13929,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20
+}
+},
+{
+"from": 14073,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken Tenders",
+"items": [
+{
+"t": "2 chicken tenders",
+"at": 0.5
+},
+{
+"t": "1 cup broccoli florets",
+"at": 1.3
+},
+{
+"t": "1 tablespoon oil",
+"at": 2.1
+},
+{
+"t": "2 tablespoons grated parmesan",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper, garlic powder",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 14265,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 425
+}
+},
+{
+"from": 14799,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 18,
+"max": 20
+}
+},
+{
+"from": 15082,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 165,
+"what": "thickest part"
+}
+},
+{
+"from": 15226,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.20",
+"sub": "a plate"
+}
+}
+],
+"pendientes": 103
+}

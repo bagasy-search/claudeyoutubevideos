@@ -1,0 +1,1831 @@
+{
+"slug": "lc2pan",
+"R": [
+{
+"n": 1,
+"title": "Chicken Thigh",
+"from": 2222,
+"to": 5121
+},
+{
+"n": 2,
+"title": "Sausage & Peppers",
+"from": 5121,
+"to": 6596
+},
+{
+"n": 3,
+"title": "Pork Chop",
+"from": 6596,
+"to": 8221
+},
+{
+"n": 4,
+"title": "Salmon & Green Beans",
+"from": 8221,
+"to": 10116
+},
+{
+"n": 5,
+"title": "Meatballs",
+"from": 10116,
+"to": 11589
+},
+{
+"n": 6,
+"title": "Ham Steak",
+"from": 11589,
+"to": 13314
+},
+{
+"n": 7,
+"title": "Pierogi & Kielbasa",
+"from": 13314,
+"to": 14464
+}
+],
+"frames": 16487,
+"audio": "lc2pan.wav",
+"TL": [
+{
+"k": "av",
+"line": 0,
+"from": 0,
+"dur": 158,
+"seed": 13,
+"src": null,
+"sf": 0,
+"cuts": []
+},
+{
+"k": "av",
+"line": 1,
+"from": 158,
+"dur": 237,
+"seed": 1119,
+"src": null,
+"sf": 158,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c001",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands scrub a greasy black skillet in a sink full of soapy water with a worn dish brush, a stack of dirty pots beside it.",
+"from": 395,
+"dur": 138,
+"seed": 2778
+},
+{
+"k": "comp",
+"name": "Lc2Hook7",
+"props": {
+"items": [
+{
+"src": "lc2/kf/done_lc2pan_1_lc2pan_c002.png",
+"name": "Chicken Thigh"
+},
+{
+"src": "lc2/kf/done_lc2pan_2_lc2pan_c023.png",
+"name": "Sausage & Peppers"
+},
+{
+"src": "lc2/kf/done_lc2pan_3_lc2pan_c030.png",
+"name": "Pork Chop"
+},
+{
+"src": "lc2/kf/done_lc2pan_4_lc2pan_c039.png",
+"name": "Salmon & Green Beans"
+},
+{
+"src": "lc2/kf/done_lc2pan_5_lc2pan_c047.png",
+"name": "Meatballs"
+},
+{
+"src": "lc2/kf/done_lc2pan_6_lc2pan_c055.png",
+"name": "Ham Steak"
+},
+{
+"src": "lc2/kf/done_lc2pan_7_lc2pan_c060.png",
+"name": "Pierogi & Kielbasa"
+}
+],
+"title": "One-Pan",
+"word": "suppers"
+},
+"from": 533,
+"dur": 195,
+"seed": 3744
+},
+{
+"k": "clip",
+"id": "lc2pan_c002",
+"src": null,
+"img": "lc2/kf/done_lc2pan_1_lc2pan_c002.png",
+"seg": 7,
+"desc": "a small foil-lined sheet pan just out of the oven on top of the white stove, a crisp golden chicken thigh with little golden potatoes, still sizzling.",
+"cont": true,
+"from": 728,
+"dur": 103,
+"seed": 5109
+},
+{
+"k": "clip",
+"id": "lc2pan_c003",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "top-down, her hand peels the used foil off a small sheet pan and the pan underneath is clean.",
+"from": 831,
+"dur": 106,
+"seed": 5830
+},
+{
+"k": "av",
+"line": 6,
+"from": 937,
+"dur": 18,
+"seed": 6572,
+"src": null,
+"sf": 582,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Pans",
+"props": {
+"items": [
+{
+"t": "One quarter sheet pan",
+"sub": "nine by thirteen",
+"shape": "sheet"
+},
+{
+"t": "Heavy foil",
+"sub": "line it, toss it",
+"shape": "foil"
+}
+],
+"title": "All you need"
+},
+"from": 955,
+"dur": 277,
+"seed": 6698
+},
+{
+"k": "av",
+"line": 7,
+"from": 1232,
+"dur": 164,
+"seed": 8637,
+"src": null,
+"sf": 878,
+"cuts": []
+},
+{
+"k": "av",
+"line": 8,
+"from": 1396,
+"dur": 56,
+"seed": 9785,
+"src": null,
+"sf": 1042,
+"cuts": []
+},
+{
+"k": "av",
+"line": 9,
+"from": 1452,
+"dur": 262,
+"seed": 10177,
+"src": null,
+"sf": 1097,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c004",
+"src": null,
+"img": "lc2/kf/plate_libro_lc2pan_c004.png",
+"seg": 10,
+"desc": "standing at the wooden table she lifts the thick book Supper for One with both hands and holds it beside her chest, cover toward the lens, then sets it down on the table.",
+"from": 1714,
+"dur": 186,
+"seed": 12011
+},
+{
+"k": "clip",
+"id": "lc2pan_c005",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "cover toward the lens, then sets it down on the table (the same moment seen from a different angle).",
+"from": 1900,
+"dur": 93,
+"seed": 13313
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2pan.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1993,
+"dur": 184,
+"seed": 13964
+},
+{
+"k": "av",
+"line": 12,
+"from": 2177,
+"dur": 45,
+"seed": 15252,
+"src": null,
+"sf": 1366,
+"cuts": []
+},
+{
+"k": "av",
+"line": 13,
+"from": 2222,
+"dur": 197,
+"seed": 15567,
+"src": null,
+"sf": 1411,
+"cuts": []
+},
+{
+"k": "av",
+"line": 14,
+"from": 2419,
+"dur": 218,
+"seed": 16946,
+"src": null,
+"sf": 1608,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c006",
+"src": null,
+"img": "lc2/kf/ing_lc2pan_1.png",
+"seg": 5,
+"desc": "she stands at the wooden table with one raw bone-in chicken thigh on a plate, six baby potatoes, half a small onion, a bottle of oil, small tins of paprika and garlic pow",
+"from": 2637,
+"dur": 71,
+"seed": 18472
+},
+{
+"k": "clip",
+"id": "lc2pan_c007",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "her fingers turn the round white dial of the old enamel oven to four hundred twenty-five.",
+"from": 2708,
+"dur": 263,
+"seed": 18969
+},
+{
+"k": "clip",
+"id": "lc2pan_c008",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2pan_c008.png",
+"seg": 10,
+"desc": "her hands cut six baby potatoes in half and half a small onion into wedges on a small wooden board.",
+"from": 2971,
+"dur": 196,
+"seed": 20810
+},
+{
+"k": "clip",
+"id": "lc2pan_c009",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "her hands cut six baby potatoes in half and half a small onion into wedges on a small wooden board (the same moment seen from a different angle).",
+"from": 3167,
+"dur": 99,
+"seed": 22182
+},
+{
+"k": "clip",
+"id": "lc2pan_c010",
+"src": null,
+"img": "lc2/kf/top_lc2pan_1_lc2pan_c010.png",
+"seg": 10,
+"desc": "top-down, she tosses the potatoes and onion with oil, salt and pepper right on the foil-lined pan with both hands and spreads them out, the thick book Supper for One lyin",
+"from": 3266,
+"dur": 203,
+"seed": 22875
+},
+{
+"k": "clip",
+"id": "lc2pan_c011",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she pats the skin of the raw chicken thigh dry with a folded paper towel.",
+"from": 3469,
+"dur": 201,
+"seed": 24296
+},
+{
+"k": "clip",
+"id": "lc2pan_c012",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2pan_c012.png",
+"seg": 10,
+"desc": "she rubs the chicken thigh with oil, paprika and garlic powder with her fingers and sets it skin up in the middle of the potatoes.",
+"from": 3670,
+"dur": 175,
+"seed": 25703
+},
+{
+"k": "clip",
+"id": "lc2pan_c013",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she rubs the chicken thigh with oil, paprika and garlic powder with her fingers and sets it skin up in the middle of the potatoes (the same moment seen from a different a",
+"from": 3845,
+"dur": 87,
+"seed": 26928
+},
+{
+"k": "av",
+"line": 21,
+"from": 3932,
+"dur": 226,
+"seed": 27537,
+"src": null,
+"sf": 1833,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c014",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2pan_c014.png",
+"seg": 5,
+"desc": "she opens the white oven door and slides the sheet pan onto the rack, then closes it.",
+"from": 4158,
+"dur": 36,
+"seed": 29119
+},
+{
+"k": "clip",
+"id": "lc2pan_c015",
+"src": null,
+"img": "lc2/kf/done_lc2pan_1_lc2pan_c015.png",
+"seg": 7,
+"desc": "the sheet pan on top of the stove, the chicken skin crackling and golden, the potatoes browned at the edges.",
+"from": 4194,
+"dur": 115,
+"seed": 29371
+},
+{
+"k": "clip",
+"id": "lc2pan_c016",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she pushes an old dial meat thermometer into the thickest part of the thigh, next to the bone.",
+"from": 4309,
+"dur": 132,
+"seed": 30176
+},
+{
+"k": "av",
+"line": 25,
+"from": 4441,
+"dur": 161,
+"seed": 31100,
+"src": null,
+"sf": 2066,
+"cuts": []
+},
+{
+"k": "av",
+"line": 26,
+"from": 4602,
+"dur": 18,
+"seed": 32227,
+"src": null,
+"sf": 2227,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Shop",
+"props": {},
+"from": 4620,
+"dur": 501,
+"seed": 32353
+},
+{
+"k": "av",
+"line": 27,
+"from": 5121,
+"dur": 293,
+"seed": 35860,
+"src": null,
+"sf": 2746,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c017",
+"src": null,
+"img": "lc2/kf/ing_lc2pan_2.png",
+"seg": 5,
+"desc": "she stands at the wooden table with two raw Italian sausage links, a green bell pepper, half an onion, oil, a small jar of Italian seasoning and a small foil-lined sheet ",
+"from": 5414,
+"dur": 36,
+"seed": 37911
+},
+{
+"k": "clip",
+"id": "lc2pan_c018",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands slice a bell pepper into long strips with a paring knife on a small wooden board.",
+"from": 5450,
+"dur": 184,
+"seed": 38163
+},
+{
+"k": "clip",
+"id": "lc2pan_c019",
+"src": null,
+"img": "lc2/kf/top_lc2pan_2_lc2pan_c019.png",
+"seg": 10,
+"desc": "top-down, she tosses the pepper and onion strips with oil, salt, pepper and a pinch of Italian seasoning on the foil-lined pan, the thick book Supper for One lying closed",
+"from": 5634,
+"dur": 211,
+"seed": 39451
+},
+{
+"k": "clip",
+"id": "lc2pan_c020",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she lays two raw sausage links on top of the peppers.",
+"from": 5845,
+"dur": 60,
+"seed": 40928
+},
+{
+"k": "av",
+"line": 32,
+"from": 5905,
+"dur": 189,
+"seed": 41348,
+"src": null,
+"sf": 3047,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c021",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2pan_c021.png",
+"seg": 5,
+"desc": "she slides the pan into the oven and closes the door.",
+"from": 6094,
+"dur": 44,
+"seed": 42671
+},
+{
+"k": "clip",
+"id": "lc2pan_c022",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "wearing a quilted floral oven mitt, she turns the sizzling sausages over with tongs on the hot pan at the open oven.",
+"from": 6138,
+"dur": 103,
+"seed": 42979
+},
+{
+"k": "clip",
+"id": "lc2pan_c023",
+"src": null,
+"img": "lc2/kf/done_lc2pan_2_lc2pan_c023.png",
+"seg": 5,
+"desc": "the hot pan on the stovetop, browned sausages glistening on soft peppers.",
+"from": 6241,
+"dur": 85,
+"seed": 43700
+},
+{
+"k": "clip",
+"id": "lc2pan_c024",
+"src": null,
+"img": "lc2/kf/done_lc2pan_2_lc2pan_c024.png",
+"seg": 10,
+"desc": "she tucks one hot sausage with peppers and onions into a soft hot dog bun and squeezes a line of yellow mustard on it.",
+"from": 6326,
+"dur": 206,
+"seed": 44295
+},
+{
+"k": "av",
+"line": 37,
+"from": 6532,
+"dur": 64,
+"seed": 45737,
+"src": null,
+"sf": 3243,
+"cuts": []
+},
+{
+"k": "av",
+"line": 38,
+"from": 6596,
+"dur": 341,
+"seed": 46185,
+"src": null,
+"sf": 3307,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c025",
+"src": null,
+"img": "lc2/kf/ing_lc2pan_3.png",
+"seg": 5,
+"desc": "she stands at the wooden table with one boneless pork chop, a red apple, half an onion, butter, a small bowl of brown sugar, a tin of cinnamon and a small foil-lined shee",
+"from": 6937,
+"dur": 61,
+"seed": 48572
+},
+{
+"k": "clip",
+"id": "lc2pan_c026",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands cut a red apple into wedges and slice half an onion on a small wooden board.",
+"from": 6998,
+"dur": 146,
+"seed": 48999
+},
+{
+"k": "clip",
+"id": "lc2pan_c027",
+"src": null,
+"img": "lc2/kf/top_lc2pan_3_lc2pan_c027.png",
+"seg": 10,
+"desc": "top-down, she pours melted butter over the apples and onions on the pan, sprinkles brown sugar and a pinch of cinnamon and tosses them with both hands, the thick book Sup",
+"from": 7144,
+"dur": 207,
+"seed": 50021
+},
+{
+"k": "clip",
+"id": "lc2pan_c028",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she salts and peppers a raw pork chop and sets it on top of the apples.",
+"from": 7351,
+"dur": 103,
+"seed": 51470
+},
+{
+"k": "av",
+"line": 43,
+"from": 7454,
+"dur": 282,
+"seed": 52191,
+"src": null,
+"sf": 3655,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c029",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2pan_c029.png",
+"seg": 5,
+"desc": "she slides the pan into the oven and closes the door.",
+"from": 7736,
+"dur": 39,
+"seed": 54165
+},
+{
+"k": "clip",
+"id": "lc2pan_c030",
+"src": null,
+"img": "lc2/kf/done_lc2pan_3_lc2pan_c030.png",
+"seg": 10,
+"desc": "with a spoon she scoops the shiny apple juices from the hot pan and pours them over the pork chop.",
+"from": 7775,
+"dur": 152,
+"seed": 54438
+},
+{
+"k": "clip",
+"id": "lc2pan_c031",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "with a spoon she scoops the shiny apple juices from the hot pan and pours them over the pork chop (the same moment seen from a different angle).",
+"from": 7927,
+"dur": 76,
+"seed": 55502
+},
+{
+"k": "clip",
+"id": "lc2pan_c032",
+"src": null,
+"img": "lc2/kf/done_lc2pan_3_lc2pan_c032.png",
+"seg": 7,
+"desc": "the pork chop resting on the apples on the hot pan, juices bubbling.",
+"from": 8003,
+"dur": 129,
+"seed": 56034
+},
+{
+"k": "av",
+"line": 47,
+"from": 8132,
+"dur": 89,
+"seed": 56937,
+"src": null,
+"sf": 3944,
+"cuts": []
+},
+{
+"k": "av",
+"line": 48,
+"from": 8221,
+"dur": 214,
+"seed": 57560,
+"src": null,
+"sf": 4033,
+"cuts": []
+},
+{
+"k": "av",
+"line": 49,
+"from": 8435,
+"dur": 166,
+"seed": 59058,
+"src": null,
+"sf": 4246,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c033",
+"src": null,
+"img": "lc2/kf/ing_lc2pan_4.png",
+"seg": 7,
+"desc": "she stands at the wooden table with one thawed salmon fillet on a plate, a big handful of green beans, half a lemon, oil, dill and a small foil-lined sheet pan.",
+"from": 8601,
+"dur": 129,
+"seed": 60220
+},
+{
+"k": "clip",
+"id": "lc2pan_c034",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her fingers snap the ends off green beans one by one over a small bowl.",
+"from": 8730,
+"dur": 161,
+"seed": 61123
+},
+{
+"k": "clip",
+"id": "lc2pan_c035",
+"src": null,
+"img": "lc2/kf/top_lc2pan_4_lc2pan_c035.png",
+"seg": 10,
+"desc": "top-down, she tosses the green beans with oil, salt and pepper on the foil-lined pan, the thick book Supper for One lying closed beside the pan. the book is a thick paper",
+"from": 8891,
+"dur": 190,
+"seed": 62250
+},
+{
+"k": "clip",
+"id": "lc2pan_c036",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "wearing a floral oven mitt she pushes the hot green beans to one side of the pan with a spatula and lays the salmon fillet in the space.",
+"from": 9081,
+"dur": 106,
+"seed": 63580
+},
+{
+"k": "av",
+"line": 54,
+"from": 9187,
+"dur": 311,
+"seed": 64322,
+"src": null,
+"sf": 4420,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c037",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she brushes the salmon with oil and sprinkles salt, pepper and dill over it.",
+"from": 9498,
+"dur": 156,
+"seed": 66499
+},
+{
+"k": "clip",
+"id": "lc2pan_c038",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2pan_c038.png",
+"seg": 5,
+"desc": "she slides the pan back into the oven and closes the door.",
+"from": 9654,
+"dur": 45,
+"seed": 67591
+},
+{
+"k": "clip",
+"id": "lc2pan_c039",
+"src": null,
+"img": "lc2/kf/done_lc2pan_4_lc2pan_c039.png",
+"seg": 5,
+"desc": "she squeezes half a lemon over the salmon and green beans on the hot pan.",
+"from": 9699,
+"dur": 69,
+"seed": 67906
+},
+{
+"k": "clip",
+"id": "lc2pan_c040",
+"src": null,
+"img": "lc2/kf/done_lc2pan_4_lc2pan_c040.png",
+"seg": 7,
+"desc": "she presses a fork into the thickest part of the salmon and it flakes apart.",
+"from": 9768,
+"dur": 229,
+"seed": 68389
+},
+{
+"k": "av",
+"line": 59,
+"from": 9997,
+"dur": 119,
+"seed": 69992,
+"src": null,
+"sf": 4738,
+"cuts": []
+},
+{
+"k": "av",
+"line": 60,
+"from": 10116,
+"dur": 288,
+"seed": 70825,
+"src": null,
+"sf": 4857,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c041",
+"src": null,
+"img": "lc2/kf/ing_lc2pan_5.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a bag of frozen cooked meatballs, two carrots, a jar of honey, butter, a jar of grape jelly, a bottle of chili sauce and a small foil-",
+"from": 10404,
+"dur": 48,
+"seed": 72841
+},
+{
+"k": "clip",
+"id": "lc2pan_c042",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands peel two carrots and cut them into sticks on a small wooden board.",
+"from": 10452,
+"dur": 101,
+"seed": 73177
+},
+{
+"k": "clip",
+"id": "lc2pan_c043",
+"src": null,
+"img": "lc2/kf/top_lc2pan_5_lc2pan_c043.png",
+"seg": 10,
+"desc": "top-down, she drizzles honey and melted butter over the carrot sticks on the pan, adds a pinch of salt and tosses them, the thick book Supper for One lying open beside th",
+"from": 10553,
+"dur": 167,
+"seed": 73884
+},
+{
+"k": "clip",
+"id": "lc2pan_c044",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she drops five frozen meatballs onto the pan next to the carrots.",
+"from": 10720,
+"dur": 99,
+"seed": 75053
+},
+{
+"k": "av",
+"line": 65,
+"from": 10819,
+"dur": 203,
+"seed": 75746,
+"src": null,
+"sf": 5153,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c045",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2pan_c045.png",
+"seg": 5,
+"desc": "she slides the pan into the oven and closes the door.",
+"from": 11022,
+"dur": 34,
+"seed": 77167
+},
+{
+"k": "clip",
+"id": "lc2pan_c046",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "in a small cup she stirs grape jelly into chili sauce with a spoon until it's smooth and shiny.",
+"from": 11056,
+"dur": 216,
+"seed": 77405
+},
+{
+"k": "clip",
+"id": "lc2pan_c047",
+"src": null,
+"img": "lc2/kf/done_lc2pan_5_lc2pan_c047.png",
+"seg": 5,
+"desc": "she brushes the thick shiny sauce over the hot meatballs on the pan.",
+"from": 11272,
+"dur": 117,
+"seed": 78917
+},
+{
+"k": "clip",
+"id": "lc2pan_c048",
+"src": null,
+"img": "lc2/kf/done_lc2pan_5_lc2pan_c048.png",
+"seg": 5,
+"desc": "the pan on the stovetop, the glazed meatballs bubbling next to glossy carrots.",
+"from": 11389,
+"dur": 64,
+"seed": 79736
+},
+{
+"k": "av",
+"line": 70,
+"from": 11453,
+"dur": 136,
+"seed": 80184,
+"src": null,
+"sf": 5364,
+"cuts": []
+},
+{
+"k": "av",
+"line": 71,
+"from": 11589,
+"dur": 176,
+"seed": 81136,
+"src": null,
+"sf": 5499,
+"cuts": []
+},
+{
+"k": "av",
+"line": 72,
+"from": 11765,
+"dur": 284,
+"seed": 82368,
+"src": null,
+"sf": 5676,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c049",
+"src": null,
+"img": "lc2/kf/ing_lc2pan_6.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a small ham steak on a plate, one sweet potato, oil, a small bowl of brown sugar, a jar of yellow mustard and a small foil-lined sheet",
+"from": 12049,
+"dur": 54,
+"seed": 84356
+},
+{
+"k": "clip",
+"id": "lc2pan_c050",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands cut a peeled sweet potato into cubes on a small wooden board.",
+"from": 12103,
+"dur": 138,
+"seed": 84734
+},
+{
+"k": "clip",
+"id": "lc2pan_c051",
+"src": null,
+"img": "lc2/kf/top_lc2pan_6_lc2pan_c051.png",
+"seg": 7,
+"desc": "top-down, she tosses the sweet potato cubes with oil, salt and pepper on the foil-lined pan, the thick book Supper for One lying closed beside the pan. the book is a thic",
+"from": 12241,
+"dur": 158,
+"seed": 85700
+},
+{
+"k": "av",
+"line": 76,
+"from": 12399,
+"dur": 218,
+"seed": 86806,
+"src": null,
+"sf": 5967,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c052",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she cuts the ham steak in half with a knife and sets one half aside on a plate.",
+"from": 12617,
+"dur": 214,
+"seed": 88332
+},
+{
+"k": "clip",
+"id": "lc2pan_c053",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she stirs brown sugar and mustard together in a small cup and spreads it over the ham half with the back of a spoon.",
+"from": 12831,
+"dur": 167,
+"seed": 89830
+},
+{
+"k": "clip",
+"id": "lc2pan_c054",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2pan_c054.png",
+"seg": 7,
+"desc": "wearing a floral oven mitt she sets the glazed ham on the pan beside the sweet potatoes at the open oven and slides it back in.",
+"from": 12998,
+"dur": 109,
+"seed": 90999
+},
+{
+"k": "clip",
+"id": "lc2pan_c055",
+"src": null,
+"img": "lc2/kf/done_lc2pan_6_lc2pan_c055.png",
+"seg": 7,
+"desc": "the pan on the stovetop, the ham glaze bubbling and shiny next to browned sweet potatoes.",
+"from": 13107,
+"dur": 97,
+"seed": 91762
+},
+{
+"k": "av",
+"line": 81,
+"from": 13204,
+"dur": 110,
+"seed": 92441,
+"src": null,
+"sf": 6192,
+"cuts": []
+},
+{
+"k": "av",
+"line": 82,
+"from": 13314,
+"dur": 295,
+"seed": 93211,
+"src": null,
+"sf": 6302,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c056",
+"src": null,
+"img": "lc2/kf/ing_lc2pan_7.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a box of frozen pierogi, a piece of smoked kielbasa, half an onion, a dish of butter, a small tub of sour cream and a small foil-lined",
+"from": 13609,
+"dur": 50,
+"seed": 95276
+},
+{
+"k": "clip",
+"id": "lc2pan_c057",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "her hands slice three inches of kielbasa into coins with a paring knife.",
+"from": 13659,
+"dur": 160,
+"seed": 95626
+},
+{
+"k": "clip",
+"id": "lc2pan_c058",
+"src": null,
+"img": "lc2/kf/top_lc2pan_7_lc2pan_c058.png",
+"seg": 10,
+"desc": "top-down, she tosses six frozen pierogi, the kielbasa and the onion with melted butter on the pan using both hands, the thick book Supper for One lying open beside the pa",
+"from": 13819,
+"dur": 215,
+"seed": 96746
+},
+{
+"k": "av",
+"line": 86,
+"from": 14034,
+"dur": 147,
+"seed": 98251,
+"src": null,
+"sf": 6604,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c059",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2pan_c059.png",
+"seg": 5,
+"desc": "she slides the pan into the oven and closes the door.",
+"from": 14181,
+"dur": 133,
+"seed": 99280
+},
+{
+"k": "clip",
+"id": "lc2pan_c060",
+"src": null,
+"img": "lc2/kf/done_lc2pan_7_lc2pan_c060.png",
+"seg": 7,
+"desc": "the hot pan on the stovetop, golden blistered pierogi and browned kielbasa sizzling.",
+"from": 14314,
+"dur": 49,
+"seed": 100211
+},
+{
+"k": "clip",
+"id": "lc2pan_c061",
+"src": null,
+"img": "lc2/kf/done_lc2pan_7_lc2pan_c061.png",
+"seg": 5,
+"desc": "she drops a spoon of cold white sour cream next to the pierogi on a plate.",
+"from": 14363,
+"dur": 52,
+"seed": 100554
+},
+{
+"k": "av",
+"line": 90,
+"from": 14415,
+"dur": 49,
+"seed": 100918,
+"src": null,
+"sf": 6779,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c062",
+"src": null,
+"img": "lc2/kf/plate_table_lc2pan_c062.png",
+"seg": 7,
+"desc": "she sits down at the small wooden table with one plate of chicken and little potatoes, a folded cloth napkin and a fork, and takes a slow first bite.",
+"from": 14464,
+"dur": 182,
+"seed": 101261
+},
+{
+"k": "clip",
+"id": "lc2pan_c063",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "top-down, her hand peels the used foil off the small sheet pan and drops it in the trash.",
+"from": 14646,
+"dur": 112,
+"seed": 102535
+},
+{
+"k": "av",
+"line": 93,
+"from": 14758,
+"dur": 327,
+"seed": 103319,
+"src": null,
+"sf": 6856,
+"cuts": []
+},
+{
+"k": "av",
+"line": 94,
+"from": 15085,
+"dur": 18,
+"seed": 105608,
+"src": null,
+"sf": 7183,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Week",
+"props": {},
+"from": 15103,
+"dur": 270,
+"seed": 105734
+},
+{
+"k": "av",
+"line": 95,
+"from": 15373,
+"dur": 18,
+"seed": 107624,
+"src": null,
+"sf": 7471,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Homework",
+"props": {
+"names": [
+"Chicken Thigh",
+"Sausage & Peppers",
+"Pork Chop",
+"Salmon & Green Beans",
+"Meatballs",
+"Ham Steak",
+"Pierogi & Kielbasa"
+],
+"pick": 2,
+"line": "Pick two this week. Just two."
+},
+"from": 15391,
+"dur": 117,
+"seed": 107750
+},
+{
+"k": "av",
+"line": 96,
+"from": 15508,
+"dur": 200,
+"seed": 108569,
+"src": null,
+"sf": 7606,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c064",
+"src": null,
+"img": "lc2/kf/plate_libro2_lc2pan_c064.png",
+"seg": 7,
+"desc": "she sits at the small wooden table, opens the thick book Supper for One flat in front of her and turns a page with one finger. the book is a thick paperback cookbook titl",
+"from": 15708,
+"dur": 166,
+"seed": 109969
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2pan.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 15874,
+"dur": 84,
+"seed": 111131
+},
+{
+"k": "av",
+"line": 99,
+"from": 15958,
+"dur": 221,
+"seed": 111719,
+"src": null,
+"sf": 7813,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2pan_c065",
+"src": null,
+"img": "lc2/kf/plate_table_lc2pan_c065.png",
+"seg": 7,
+"desc": "she sits at the table with her plate, looks out the window past the yellow gingham curtains and smiles softly.",
+"from": 16179,
+"dur": 193,
+"seed": 113266
+},
+{
+"k": "av",
+"line": 101,
+"from": 16372,
+"dur": 115,
+"seed": 114617,
+"src": null,
+"sf": 8047,
+"cuts": []
+}
+],
+"OV": [
+{
+"from": 1434,
+"dur": 135,
+"name": "LorNameTag",
+"props": {
+"name": "Loretta",
+"sub": "60 years of church suppers"
+}
+},
+{
+"from": 2228,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 1,
+"title": "Chicken Thigh and Little Potatoes",
+"num": 1
+}
+},
+{
+"from": 2338,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 40
+}
+},
+{
+"from": 2482,
+"dur": 135,
+"name": "Lc2Plates",
+"props": {
+"n": 1
+}
+},
+{
+"from": 2643,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken Thigh",
+"items": [
+{
+"t": "1 bone-in chicken thigh",
+"at": 0.5
+},
+{
+"t": "5 or 6 baby potatoes, halved",
+"at": 1.3
+},
+{
+"t": "1/2 small onion, in wedges",
+"at": 2.1
+},
+{
+"t": "1 tablespoon oil",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 2835,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 425
+}
+},
+{
+"from": 4158,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 35,
+"max": 40
+}
+},
+{
+"from": 4329,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 165,
+"what": "thickest part"
+}
+},
+{
+"from": 4473,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.10",
+"sub": "a plate"
+}
+},
+{
+"from": 5127,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 2,
+"title": "Sausage, Peppers and Onions",
+"num": 2
+}
+},
+{
+"from": 5352,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 30
+}
+},
+{
+"from": 5496,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Sausage & Peppers",
+"items": [
+{
+"t": "2 Italian sausage links",
+"at": 0.5
+},
+{
+"t": "1 bell pepper, in strips",
+"at": 1.3
+},
+{
+"t": "1/2 onion, in strips",
+"at": 2.1
+},
+{
+"t": "1 tablespoon oil",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 5688,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 425
+}
+},
+{
+"from": 6094,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 25,
+"max": 30
+}
+},
+{
+"from": 6532,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.40",
+"sub": "a plate"
+}
+},
+{
+"from": 6602,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 3,
+"title": "Pork Chop with Apples and Onions",
+"num": 3
+}
+},
+{
+"from": 6865,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 30
+}
+},
+{
+"from": 7009,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Pork Chop",
+"items": [
+{
+"t": "2 boneless pork chops",
+"at": 0.5
+},
+{
+"t": "1/2 can cream of mushroom soup",
+"at": 1.3
+},
+{
+"t": "1/4 cup milk",
+"at": 2.1
+}
+]
+}
+},
+{
+"from": 7183,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 7736,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20,
+"max": 25
+}
+},
+{
+"from": 8031,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 145,
+"what": "thickest part"
+}
+},
+{
+"from": 8175,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.60",
+"sub": "a plate"
+}
+},
+{
+"from": 8227,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 4,
+"title": "Salmon and Green Beans",
+"num": 4
+}
+},
+{
+"from": 8376,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20
+}
+},
+{
+"from": 8569,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 8713,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Salmon & Green Beans",
+"items": [
+{
+"t": "1 salmon fillet",
+"at": 0.5
+},
+{
+"t": "A big handful of green beans",
+"at": 1.3
+},
+{
+"t": "1 tablespoon oil",
+"at": 2.1
+},
+{
+"t": "1/2 lemon",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper, a little dill",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 8905,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 425
+}
+},
+{
+"from": 9997,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$3.80",
+"sub": "a plate"
+}
+},
+{
+"from": 10122,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 5,
+"title": "Meatballs and Glazed Carrots",
+"num": 5
+}
+},
+{
+"from": 10333,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 25
+}
+},
+{
+"from": 10477,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Meatballs",
+"items": [
+{
+"t": "5 frozen cooked meatballs",
+"at": 0.5
+},
+{
+"t": "2 carrots, in sticks",
+"at": 1.3
+},
+{
+"t": "1 teaspoon butter",
+"at": 2.1
+},
+{
+"t": "2 tablespoons barbecue sauce",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 10669,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 11022,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20
+}
+},
+{
+"from": 11555,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.90",
+"sub": "a plate"
+}
+},
+{
+"from": 11595,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 6,
+"title": "Ham Steak and Sweet Potato",
+"num": 6
+}
+},
+{
+"from": 11708,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 35
+}
+},
+{
+"from": 11852,
+"dur": 135,
+"name": "Lc2Plates",
+"props": {
+"n": 2
+}
+},
+{
+"from": 12055,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Ham Steak",
+"items": [
+{
+"t": "1 small ham steak",
+"at": 0.5
+},
+{
+"t": "1 sweet potato, in cubes",
+"at": 1.3
+},
+{
+"t": "1 tablespoon oil",
+"at": 2.1
+},
+{
+"t": "1 tablespoon brown sugar",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 12247,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 425
+}
+},
+{
+"from": 12391,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20
+}
+},
+{
+"from": 13204,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.30",
+"sub": "a plate"
+}
+},
+{
+"from": 13320,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 7,
+"title": "Pierogi and Kielbasa",
+"num": 8
+}
+},
+{
+"from": 13513,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 25
+}
+},
+{
+"from": 13657,
+"dur": 135,
+"name": "Lc2Plates",
+"props": {
+"n": 1
+}
+},
+{
+"from": 13801,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Pierogi & Kielbasa",
+"items": [
+{
+"t": "6 frozen pierogi",
+"at": 0.5
+},
+{
+"t": "3 inches of smoked kielbasa",
+"at": 1.3
+},
+{
+"t": "1/2 onion, sliced",
+"at": 2.1
+},
+{
+"t": "1 tablespoon butter, melted",
+"at": 2.9000000000000004
+},
+{
+"t": "A spoon of sour cream",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 13993,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 14181,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20,
+"max": 25
+}
+},
+{
+"from": 14415,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.00",
+"sub": "a plate"
+}
+}
+],
+"pendientes": 103
+}

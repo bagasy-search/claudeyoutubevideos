@@ -1,0 +1,1824 @@
+{
+"slug": "lc2cass",
+"R": [
+{
+"n": 1,
+"title": "Loaf-Pan Meatloaf",
+"from": 2081,
+"to": 4622
+},
+{
+"n": 2,
+"title": "Chicken & Noodles",
+"from": 4622,
+"to": 6807
+},
+{
+"n": 3,
+"title": "Tuna Noodle for One",
+"from": 6807,
+"to": 8339
+},
+{
+"n": 4,
+"title": "Shepherd's Pie",
+"from": 8339,
+"to": 9778
+},
+{
+"n": 5,
+"title": "Mac & Cheese",
+"from": 9778,
+"to": 11368
+},
+{
+"n": 6,
+"title": "Tater Tot Hotdish",
+"from": 11368,
+"to": 12753
+},
+{
+"n": 7,
+"title": "Chicken Pot Pie",
+"from": 12753,
+"to": 14090
+}
+],
+"frames": 16187,
+"audio": "lc2cass.wav",
+"TL": [
+{
+"k": "av",
+"line": 0,
+"from": 0,
+"dur": 205,
+"seed": 13,
+"src": null,
+"sf": 0,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c001",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "a huge nine by thirteen glass casserole dish of tater tot hotdish sitting on a long church basement table covered with a white paper tablecloth.",
+"from": 205,
+"dur": 88,
+"seed": 1448
+},
+{
+"k": "av",
+"line": 2,
+"from": 293,
+"dur": 260,
+"seed": 2064,
+"src": null,
+"sf": 212,
+"cuts": []
+},
+{
+"k": "av",
+"line": 3,
+"from": 553,
+"dur": 263,
+"seed": 3884,
+"src": null,
+"sf": 472,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Hook7",
+"props": {
+"items": [
+{
+"src": "lc2/kf/done_lc2cass_1_lc2cass_c013.png",
+"name": "Loaf-Pan Meatloaf"
+},
+{
+"src": "lc2/kf/done_lc2cass_2_lc2cass_c023.png",
+"name": "Chicken & Noodles"
+},
+{
+"src": "lc2/kf/done_lc2cass_3_lc2cass_c032.png",
+"name": "Tuna Noodle for One"
+},
+{
+"src": "lc2/kf/done_lc2cass_4_lc2cass_c002.png",
+"name": "Shepherd's Pie"
+},
+{
+"src": "lc2/kf/done_lc2cass_5_lc2cass_c047.png",
+"name": "Mac & Cheese"
+},
+{
+"src": "lc2/kf/done_lc2cass_6_lc2cass_c055.png",
+"name": "Tater Tot Hotdish"
+},
+{
+"src": "lc2/kf/done_lc2cass_7_lc2cass_c062.png",
+"name": "Chicken Pot Pie"
+}
+],
+"title": "Casseroles",
+"word": "suppers"
+},
+"from": 816,
+"dur": 195,
+"seed": 5725
+},
+{
+"k": "clip",
+"id": "lc2cass_c003",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "top-down, on the wooden table two identical small white baking dishes side by side, her hands cover one tightly with foil.",
+"cont": true,
+"from": 1011,
+"dur": 153,
+"seed": 7090
+},
+{
+"k": "av",
+"line": 6,
+"from": 1164,
+"dur": 18,
+"seed": 8161,
+"src": null,
+"sf": 742,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Pans",
+"props": {
+"items": [
+{
+"t": "A little loaf pan",
+"sub": "about 8 x 4",
+"shape": "loaf"
+},
+{
+"t": "Two 2-cup dishes",
+"sub": "one to bake, one to freeze",
+"shape": "dish"
+}
+],
+"title": "All you need"
+},
+"from": 1182,
+"dur": 135,
+"seed": 8287
+},
+{
+"k": "av",
+"line": 7,
+"from": 1317,
+"dur": 56,
+"seed": 9232,
+"src": null,
+"sf": 895,
+"cuts": []
+},
+{
+"k": "av",
+"line": 8,
+"from": 1373,
+"dur": 240,
+"seed": 9624,
+"src": null,
+"sf": 952,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c004",
+"src": null,
+"img": "lc2/kf/plate_libro_lc2cass_c004.png",
+"seg": 10,
+"desc": "standing at the wooden table she lifts the thick book Supper for One with both hands and holds it beside her chest, cover toward the lens, then opens it to the middle. th",
+"from": 1613,
+"dur": 236,
+"seed": 11304
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2cass.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1849,
+"dur": 198,
+"seed": 12956
+},
+{
+"k": "av",
+"line": 11,
+"from": 2047,
+"dur": 34,
+"seed": 14342,
+"src": null,
+"sf": 1198,
+"cuts": []
+},
+{
+"k": "av",
+"line": 12,
+"from": 2081,
+"dur": 267,
+"seed": 14580,
+"src": null,
+"sf": 1233,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c005",
+"src": null,
+"img": "lc2/kf/ing_lc2cass_1.png",
+"seg": 5,
+"desc": "she stands at the wooden table with half a pound of ground beef, a canister of quick oats, an egg, a small glass bottle of milk, a little bowl of chopped onion, a ketchup",
+"from": 2348,
+"dur": 69,
+"seed": 16449
+},
+{
+"k": "clip",
+"id": "lc2cass_c006",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "her fingers turn the round white dial of the old enamel oven.",
+"from": 2417,
+"dur": 59,
+"seed": 16932
+},
+{
+"k": "clip",
+"id": "lc2cass_c007",
+"src": null,
+"img": "lc2/kf/top_lc2cass_1_lc2cass_c007.png",
+"seg": 10,
+"desc": "top-down, in a glass mixing bowl she separates an egg yolk from the white with the two shell halves, letting the white fall away, the thick book Supper for One lying open",
+"from": 2476,
+"dur": 175,
+"seed": 17345
+},
+{
+"k": "clip",
+"id": "lc2cass_c008",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2cass_c008.png",
+"seg": 10,
+"desc": "her bare hands mix ground beef, oats, egg yolk, milk and chopped onion in the glass bowl, squeezing gently.",
+"from": 2651,
+"dur": 208,
+"seed": 18570
+},
+{
+"k": "clip",
+"id": "lc2cass_c009",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "her bare hands mix ground beef, oats, egg yolk, milk and chopped onion in the glass bowl, squeezing gently (the same moment seen from a different angle).",
+"from": 2859,
+"dur": 104,
+"seed": 20026
+},
+{
+"k": "clip",
+"id": "lc2cass_c010",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she presses the meat mixture into the small glass loaf pan with her fingertips.",
+"from": 2963,
+"dur": 65,
+"seed": 20754
+},
+{
+"k": "av",
+"line": 18,
+"from": 3028,
+"dur": 371,
+"seed": 21209,
+"src": null,
+"sf": 1507,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c011",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she stirs ketchup, brown sugar and mustard together in a small cup and spreads it over the top of the meatloaf with the back of a spoon.",
+"from": 3399,
+"dur": 253,
+"seed": 23806
+},
+{
+"k": "clip",
+"id": "lc2cass_c012",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2cass_c012.png",
+"seg": 5,
+"desc": "she opens the white oven door, slides the loaf pan onto the rack and closes it.",
+"from": 3652,
+"dur": 45,
+"seed": 25577
+},
+{
+"k": "clip",
+"id": "lc2cass_c013",
+"src": null,
+"img": "lc2/kf/done_lc2cass_1_lc2cass_c013.png",
+"seg": 10,
+"desc": "the loaf pan on a folded towel on the wooden table, the glossy topping bubbling at the edges.",
+"from": 3697,
+"dur": 177,
+"seed": 25892
+},
+{
+"k": "clip",
+"id": "lc2cass_c014",
+"src": null,
+"img": "lc2/kf/done_lc2cass_1_lc2cass_c014.png",
+"seg": 5,
+"desc": "she cuts a thick slice of meatloaf with a knife and lifts it out with a spatula.",
+"from": 3874,
+"dur": 115,
+"seed": 27131
+},
+{
+"k": "av",
+"line": 23,
+"from": 3989,
+"dur": 69,
+"seed": 27936,
+"src": null,
+"sf": 1885,
+"cuts": []
+},
+{
+"k": "av",
+"line": 24,
+"from": 4058,
+"dur": 18,
+"seed": 28419,
+"src": null,
+"sf": 1954,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Shop",
+"props": {},
+"from": 4076,
+"dur": 546,
+"seed": 28545
+},
+{
+"k": "av",
+"line": 25,
+"from": 4622,
+"dur": 204,
+"seed": 32367,
+"src": null,
+"sf": 2518,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c015",
+"src": null,
+"img": "lc2/kf/ing_lc2cass_2.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a bowl of cooked shredded chicken, a bag of wide egg noodles, a carton of chicken broth, a small glass bottle of milk, butter and flou",
+"from": 4826,
+"dur": 122,
+"seed": 33795
+},
+{
+"k": "clip",
+"id": "lc2cass_c016",
+"src": null,
+"img": "lc2/kf/plate_stove_lc2cass_c016.png",
+"seg": 10,
+"desc": "she drops wide egg noodles into a small pot of boiling water on the old white gas stove.",
+"from": 4948,
+"dur": 184,
+"seed": 34649
+},
+{
+"k": "clip",
+"id": "lc2cass_c017",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "in the same small pot on the stove she melts a tablespoon of butter and stirs in a tablespoon of flour with a wooden spoon.",
+"from": 5132,
+"dur": 165,
+"seed": 35937
+},
+{
+"k": "clip",
+"id": "lc2cass_c018",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she pours chicken broth and milk into the pot and whisks until it thickens into a smooth sauce.",
+"from": 5297,
+"dur": 177,
+"seed": 37092
+},
+{
+"k": "av",
+"line": 30,
+"from": 5474,
+"dur": 267,
+"seed": 38331,
+"src": null,
+"sf": 2729,
+"cuts": []
+},
+{
+"k": "av",
+"line": 31,
+"from": 5741,
+"dur": 296,
+"seed": 40200,
+"src": null,
+"sf": 2996,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c019",
+"src": null,
+"img": "lc2/kf/top_lc2cass_2_lc2cass_c019.png",
+"seg": 7,
+"desc": "top-down, she stirs shredded chicken and the noodles into the creamy sauce in the pot on the stove, the thick book Supper for One lying open on the counter beside the sto",
+"from": 6037,
+"dur": 112,
+"seed": 42272
+},
+{
+"k": "clip",
+"id": "lc2cass_c020",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2cass_c020.png",
+"seg": 10,
+"desc": "she spoons the chicken and noodles into a small white baking dish and scatters buttered crumbs on top.",
+"from": 6149,
+"dur": 170,
+"seed": 43056
+},
+{
+"k": "clip",
+"id": "lc2cass_c021",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she spoons the chicken and noodles into a small white baking dish and scatters buttered crumbs on top (the same moment seen from a different angle).",
+"from": 6319,
+"dur": 85,
+"seed": 44246
+},
+{
+"k": "clip",
+"id": "lc2cass_c022",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she wraps a second identical small dish of chicken and noodles tightly in foil and writes on it with a black marker.",
+"from": 6404,
+"dur": 110,
+"seed": 44841
+},
+{
+"k": "clip",
+"id": "lc2cass_c023",
+"src": null,
+"img": "lc2/kf/done_lc2cass_2_lc2cass_c023.png",
+"seg": 10,
+"desc": "the small baking dish just out of the oven, the crumb top golden and the sauce bubbling at the edges.",
+"from": 6514,
+"dur": 194,
+"seed": 45611
+},
+{
+"k": "av",
+"line": 36,
+"from": 6708,
+"dur": 99,
+"seed": 46969,
+"src": null,
+"sf": 3299,
+"cuts": []
+},
+{
+"k": "av",
+"line": 37,
+"from": 6807,
+"dur": 254,
+"seed": 47662,
+"src": null,
+"sf": 3398,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c024",
+"src": null,
+"img": "lc2/kf/ing_lc2cass_3.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a small can of tuna, a bag of egg noodles, a bag of frozen peas, a small bowl of shredded cheddar, a sleeve of saltine crackers and a ",
+"from": 7061,
+"dur": 60,
+"seed": 49440
+},
+{
+"k": "clip",
+"id": "lc2cass_c025",
+"src": null,
+"img": "lc2/kf/plate_stove_lc2cass_c025.png",
+"seg": 7,
+"desc": "she stirs egg noodles in a small pot of boiling water on the old white gas stove with a wooden spoon.",
+"from": 7121,
+"dur": 158,
+"seed": 49860
+},
+{
+"k": "clip",
+"id": "lc2cass_c026",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she drains a small can of tuna, pressing the lid down over the sink.",
+"from": 7279,
+"dur": 80,
+"seed": 50966
+},
+{
+"k": "av",
+"line": 41,
+"from": 7359,
+"dur": 207,
+"seed": 51526,
+"src": null,
+"sf": 3660,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c027",
+"src": null,
+"img": "lc2/kf/top_lc2cass_3_lc2cass_c027.png",
+"seg": 10,
+"desc": "top-down, in the small white baking dish she mixes the noodles, tuna, frozen peas and a creamy white sauce with a spoon, the thick book Supper for One lying closed beside",
+"from": 7566,
+"dur": 224,
+"seed": 52975
+},
+{
+"k": "clip",
+"id": "lc2cass_c028",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "in the small white baking dish she mixes the noodles, tuna, frozen peas and a creamy white sauce with a spoon, the thick book Supper for One lying closed beside the dish ",
+"from": 7790,
+"dur": 112,
+"seed": 54543
+},
+{
+"k": "clip",
+"id": "lc2cass_c029",
+"src": null,
+"img": "lc2/kf/plate_counter_lc2cass_c029.png",
+"seg": 7,
+"desc": "she squeezes a lemon wedge into the casserole and stirs.",
+"from": 7902,
+"dur": 175,
+"seed": 55327
+},
+{
+"k": "clip",
+"id": "lc2cass_c030",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she sprinkles shredded cheddar over the top and crushes saltine crackers in her hand over it.",
+"from": 8077,
+"dur": 151,
+"seed": 56552
+},
+{
+"k": "clip",
+"id": "lc2cass_c031",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2cass_c031.png",
+"seg": 5,
+"desc": "she slides the small dish into the oven and closes the door.",
+"from": 8228,
+"dur": 14,
+"seed": 57609
+},
+{
+"k": "clip",
+"id": "lc2cass_c032",
+"src": null,
+"img": "lc2/kf/done_lc2cass_3_lc2cass_c032.png",
+"seg": 7,
+"desc": "the small dish on a folded towel, the cheese melted and bubbling through the golden cracker top.",
+"from": 8242,
+"dur": 49,
+"seed": 57707
+},
+{
+"k": "av",
+"line": 47,
+"from": 8291,
+"dur": 48,
+"seed": 58050,
+"src": null,
+"sf": 3874,
+"cuts": []
+},
+{
+"k": "av",
+"line": 48,
+"from": 8339,
+"dur": 260,
+"seed": 58386,
+"src": null,
+"sf": 3922,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c033",
+"src": null,
+"img": "lc2/kf/ing_lc2cass_4.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a quarter pound of ground beef, a bag of frozen mixed vegetables, a bowl of leftover mashed potatoes, a carton of beef broth and a sma",
+"from": 8599,
+"dur": 45,
+"seed": 60206
+},
+{
+"k": "clip",
+"id": "lc2cass_c034",
+"src": null,
+"img": "lc2/kf/plate_stove_lc2cass_c034.png",
+"seg": 7,
+"desc": "she browns ground beef in a small black skillet on the old white gas stove, breaking it up with a wooden spoon.",
+"from": 8644,
+"dur": 114,
+"seed": 60521
+},
+{
+"k": "clip",
+"id": "lc2cass_c035",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she sprinkles a teaspoon of flour over the browned beef, then pours in beef broth and frozen mixed vegetables and stirs.",
+"from": 8758,
+"dur": 246,
+"seed": 61319
+},
+{
+"k": "clip",
+"id": "lc2cass_c036",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she spoons the beef filling into the small white baking dish.",
+"from": 9004,
+"dur": 55,
+"seed": 63041
+},
+{
+"k": "av",
+"line": 53,
+"from": 9059,
+"dur": 260,
+"seed": 63426,
+"src": null,
+"sf": 4189,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c037",
+"src": null,
+"img": "lc2/kf/top_lc2cass_4_lc2cass_c037.png",
+"seg": 10,
+"desc": "top-down, she spreads a cup of mashed potatoes over the filling with a spoon, then drags a fork across the top in rows, the thick book Supper for One lying open beside th",
+"from": 9319,
+"dur": 273,
+"seed": 65246
+},
+{
+"k": "clip",
+"id": "lc2cass_c038",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2cass_c038.png",
+"seg": 5,
+"desc": "she slides the small dish into the oven and closes the door.",
+"from": 9592,
+"dur": 14,
+"seed": 67157
+},
+{
+"k": "clip",
+"id": "lc2cass_c039",
+"src": null,
+"img": "lc2/kf/done_lc2cass_4_lc2cass_c039.png",
+"seg": 7,
+"desc": "the dish on a folded towel, the potato ridges browned and crisp, gravy bubbling up at the edges.",
+"from": 9606,
+"dur": 130,
+"seed": 67255
+},
+{
+"k": "av",
+"line": 57,
+"from": 9736,
+"dur": 42,
+"seed": 68165,
+"src": null,
+"sf": 4456,
+"cuts": []
+},
+{
+"k": "av",
+"line": 58,
+"from": 9778,
+"dur": 207,
+"seed": 68459,
+"src": null,
+"sf": 4498,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c040",
+"src": null,
+"img": "lc2/kf/ing_lc2cass_5.png",
+"seg": 7,
+"desc": "she stands at the wooden table with a box of elbow macaroni, a block of cheddar, a small bowl of diced ham, butter, flour, a small glass bottle of milk, a small tin of dr",
+"from": 9985,
+"dur": 145,
+"seed": 69908
+},
+{
+"k": "clip",
+"id": "lc2cass_c041",
+"src": null,
+"img": "lc2/kf/plate_stove_lc2cass_c041.png",
+"seg": 5,
+"desc": "she pours a cup of elbow macaroni into a small pot of boiling water on the old white gas stove.",
+"from": 10130,
+"dur": 104,
+"seed": 70923
+},
+{
+"k": "clip",
+"id": "lc2cass_c042",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "in a small saucepan on the stove she melts butter, stirs in flour and whisks in milk until it's thick.",
+"from": 10234,
+"dur": 245,
+"seed": 71651
+},
+{
+"k": "clip",
+"id": "lc2cass_c043",
+"src": null,
+"img": "lc2/kf/plate_stove_lc2cass_c043.png",
+"seg": 10,
+"desc": "off the heat, she stirs shredded cheddar into the white sauce until it melts smooth, then sprinkles in a pinch of dry mustard.",
+"from": 10479,
+"dur": 238,
+"seed": 73366
+},
+{
+"k": "clip",
+"id": "lc2cass_c044",
+"src": null,
+"img": "lc2/kf/top_lc2cass_5_lc2cass_c044.png",
+"seg": 10,
+"desc": "top-down, she folds the macaroni and diced ham into the cheese sauce and spoons it into the small white baking dish, the thick book Supper for One lying closed beside it.",
+"from": 10717,
+"dur": 173,
+"seed": 75032
+},
+{
+"k": "av",
+"line": 64,
+"from": 10890,
+"dur": 176,
+"seed": 76243,
+"src": null,
+"sf": 4712,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c045",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she scatters the rest of the cheese and crumbs over the top.",
+"from": 11066,
+"dur": 181,
+"seed": 77475
+},
+{
+"k": "clip",
+"id": "lc2cass_c046",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2cass_c046.png",
+"seg": 5,
+"desc": "she slides the small dish into the oven and closes the door.",
+"from": 11247,
+"dur": 25,
+"seed": 78742
+},
+{
+"k": "clip",
+"id": "lc2cass_c047",
+"src": null,
+"img": "lc2/kf/done_lc2cass_5_lc2cass_c047.png",
+"seg": 7,
+"desc": "she digs a spoon into the hot mac and cheese and lifts it, long strings of melted cheese stretching.",
+"from": 11272,
+"dur": 34,
+"seed": 78917
+},
+{
+"k": "av",
+"line": 68,
+"from": 11306,
+"dur": 62,
+"seed": 79155,
+"src": null,
+"sf": 4895,
+"cuts": []
+},
+{
+"k": "av",
+"line": 69,
+"from": 11368,
+"dur": 270,
+"seed": 79589,
+"src": null,
+"sf": 4957,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c048",
+"src": null,
+"img": "lc2/kf/ing_lc2cass_6.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a quarter pound of ground beef, a quarter onion, a bag of frozen green beans, a can of cream of mushroom soup, a bag of frozen tater t",
+"from": 11638,
+"dur": 49,
+"seed": 81479
+},
+{
+"k": "clip",
+"id": "lc2cass_c049",
+"src": null,
+"img": "lc2/kf/plate_stove_lc2cass_c049.png",
+"seg": 10,
+"desc": "she browns ground beef with chopped onion in a small black skillet on the old white gas stove, stirring with a wooden spoon.",
+"from": 11687,
+"dur": 200,
+"seed": 81822
+},
+{
+"k": "clip",
+"id": "lc2cass_c050",
+"src": null,
+"img": null,
+"seg": 10,
+"desc": "she stirs frozen green beans and thick cream of mushroom soup into the browned beef in the skillet.",
+"from": 11887,
+"dur": 170,
+"seed": 83222
+},
+{
+"k": "clip",
+"id": "lc2cass_c051",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "she spreads the beef mixture into the small white baking dish.",
+"from": 12057,
+"dur": 68,
+"seed": 84412
+},
+{
+"k": "av",
+"line": 74,
+"from": 12125,
+"dur": 176,
+"seed": 84888,
+"src": null,
+"sf": 5235,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c052",
+"src": null,
+"img": "lc2/kf/top_lc2cass_6_lc2cass_c052.png",
+"seg": 10,
+"desc": "top-down, with both hands she stands frozen tater tots up on end in neat tight rows over the filling, one by one, the thick book Supper for One lying open beside the dish",
+"from": 12301,
+"dur": 205,
+"seed": 86120
+},
+{
+"k": "clip",
+"id": "lc2cass_c053",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2cass_c053.png",
+"seg": 5,
+"desc": "she slides the small dish into the oven and closes the door.",
+"from": 12506,
+"dur": 25,
+"seed": 87555
+},
+{
+"k": "clip",
+"id": "lc2cass_c054",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "wearing a floral oven mitt she scatters shredded cheese over the hot golden tots at the open oven.",
+"from": 12531,
+"dur": 88,
+"seed": 87730
+},
+{
+"k": "clip",
+"id": "lc2cass_c055",
+"src": null,
+"img": "lc2/kf/done_lc2cass_6_lc2cass_c055.png",
+"seg": 7,
+"desc": "the dish on a folded towel, crispy golden tots in rows with melted cheese, filling bubbling.",
+"from": 12619,
+"dur": 85,
+"seed": 88346
+},
+{
+"k": "av",
+"line": 79,
+"from": 12704,
+"dur": 49,
+"seed": 88941,
+"src": null,
+"sf": 5418,
+"cuts": []
+},
+{
+"k": "av",
+"line": 80,
+"from": 12753,
+"dur": 231,
+"seed": 89284,
+"src": null,
+"sf": 5467,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c056",
+"src": null,
+"img": "lc2/kf/ing_lc2cass_7.png",
+"seg": 5,
+"desc": "she stands at the wooden table with a bowl of diced cooked chicken, a bag of frozen mixed vegetables, a small jar of gravy, a tube of refrigerated biscuits and a small wh",
+"from": 12984,
+"dur": 121,
+"seed": 90901
+},
+{
+"k": "clip",
+"id": "lc2cass_c057",
+"src": null,
+"img": "lc2/kf/top_lc2cass_7_lc2cass_c057.png",
+"seg": 10,
+"desc": "top-down, in the small white bowl she stirs diced chicken, frozen mixed vegetables and creamy white sauce together with a spoon, the thick book Supper for One lying close",
+"from": 13105,
+"dur": 207,
+"seed": 91748
+},
+{
+"k": "clip",
+"id": "lc2cass_c058",
+"src": null,
+"img": null,
+"seg": 5,
+"desc": "in the small white bowl she stirs diced chicken, frozen mixed vegetables and creamy white sauce together with a spoon, the thick book Supper for One lying closed beside t",
+"from": 13312,
+"dur": 103,
+"seed": 93197
+},
+{
+"k": "clip",
+"id": "lc2cass_c059",
+"src": null,
+"img": "lc2/kf/plate_micro_lc2cass_c059.png",
+"seg": 5,
+"desc": "she sets the small white bowl in the microwave, closes it and presses a button.",
+"from": 13415,
+"dur": 79,
+"seed": 93918
+},
+{
+"k": "av",
+"line": 84,
+"from": 13494,
+"dur": 251,
+"seed": 94471,
+"src": null,
+"sf": 5705,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c060",
+"src": null,
+"img": null,
+"seg": 7,
+"desc": "she presses one refrigerated biscuit flat between her palms and lays it on top of the steaming filling.",
+"from": 13745,
+"dur": 117,
+"seed": 96228
+},
+{
+"k": "clip",
+"id": "lc2cass_c061",
+"src": null,
+"img": "lc2/kf/plate_oven_lc2cass_c061.png",
+"seg": 5,
+"desc": "she slides the small bowl into the oven and closes the door.",
+"from": 13862,
+"dur": 33,
+"seed": 97047
+},
+{
+"k": "clip",
+"id": "lc2cass_c062",
+"src": null,
+"img": "lc2/kf/done_lc2cass_7_lc2cass_c062.png",
+"seg": 7,
+"desc": "the bowl on a folded towel, the biscuit tall and golden, the creamy filling bubbling up around it.",
+"from": 13895,
+"dur": 54,
+"seed": 97278
+},
+{
+"k": "clip",
+"id": "lc2cass_c063",
+"src": null,
+"img": "lc2/kf/done_lc2cass_7_lc2cass_c063.png",
+"seg": 5,
+"desc": "she breaks into the golden biscuit lid with a spoon and steam rises from the creamy filling.",
+"from": 13949,
+"dur": 47,
+"seed": 97656
+},
+{
+"k": "av",
+"line": 89,
+"from": 13996,
+"dur": 94,
+"seed": 97985,
+"src": null,
+"sf": 5963,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c064",
+"src": null,
+"img": "lc2/kf/plate_table_lc2cass_c064.png",
+"seg": 7,
+"desc": "she sits down at the small wooden table with a plate of meatloaf, a folded cloth napkin and a fork, and takes a slow first bite.",
+"from": 14090,
+"dur": 162,
+"seed": 98643
+},
+{
+"k": "clip",
+"id": "lc2cass_c065",
+"src": null,
+"img": "lc2/kf/plate_fridge_lc2cass_c065.png",
+"seg": 5,
+"desc": "she opens the freezer drawer and lays a foil-wrapped small baking dish next to two others, all labeled in marker.",
+"from": 14252,
+"dur": 110,
+"seed": 99777
+},
+{
+"k": "av",
+"line": 92,
+"from": 14362,
+"dur": 273,
+"seed": 100547,
+"src": null,
+"sf": 6065,
+"cuts": []
+},
+{
+"k": "av",
+"line": 93,
+"from": 14635,
+"dur": 314,
+"seed": 102458,
+"src": null,
+"sf": 6338,
+"cuts": []
+},
+{
+"k": "av",
+"line": 94,
+"from": 14949,
+"dur": 18,
+"seed": 104656,
+"src": null,
+"sf": 6653,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Week",
+"props": {},
+"from": 14967,
+"dur": 276,
+"seed": 104782
+},
+{
+"k": "av",
+"line": 95,
+"from": 15243,
+"dur": 18,
+"seed": 106714,
+"src": null,
+"sf": 6947,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Homework",
+"props": {
+"names": [
+"Loaf-Pan Meatloaf",
+"Chicken & Noodles",
+"Tuna Noodle for One",
+"Shepherd's Pie",
+"Mac & Cheese",
+"Tater Tot Hotdish",
+"Chicken Pot Pie"
+],
+"pick": 1,
+"line": "Make one this week. Make two of it."
+},
+"from": 15261,
+"dur": 163,
+"seed": 106840
+},
+{
+"k": "av",
+"line": 96,
+"from": 15424,
+"dur": 220,
+"seed": 107981,
+"src": null,
+"sf": 7128,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2cass_c066",
+"src": null,
+"img": "lc2/kf/plate_libro2_lc2cass_c066.png",
+"seg": 7,
+"desc": "she sits at the small wooden table, opens the thick book Supper for One flat in front of her and turns a page with one finger. the book is a thick paperback cookbook titl",
+"from": 15644,
+"dur": 159,
+"seed": 109521
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2cass.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 15803,
+"dur": 80,
+"seed": 110634
+},
+{
+"k": "clip",
+"id": "lc2cass_c067",
+"src": null,
+"img": "lc2/kf/plate_table_lc2cass_c067.png",
+"seg": 7,
+"desc": "she sits at the table with her plate, looks out the window past the yellow gingham curtains and smiles softly.",
+"from": 15883,
+"dur": 193,
+"seed": 111194
+},
+{
+"k": "av",
+"line": 100,
+"from": 16076,
+"dur": 111,
+"seed": 112545,
+"src": null,
+"sf": 7364,
+"cuts": []
+}
+],
+"OV": [
+{
+"from": 1355,
+"dur": 135,
+"name": "LorNameTag",
+"props": {
+"name": "Loretta",
+"sub": "60 years of church suppers"
+}
+},
+{
+"from": 2087,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 1,
+"title": "Loaf-Pan Meatloaf",
+"num": 11
+}
+},
+{
+"from": 2270,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 50
+}
+},
+{
+"from": 2414,
+"dur": 135,
+"name": "Lc2Plates",
+"props": {
+"n": 2
+}
+},
+{
+"from": 2558,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Loaf-Pan Meatloaf",
+"items": [
+{
+"t": "1/2 pound ground beef",
+"at": 0.5
+},
+{
+"t": "1/4 cup quick oats",
+"at": 1.3
+},
+{
+"t": "1 egg yolk",
+"at": 2.1
+},
+{
+"t": "2 tablespoons milk",
+"at": 2.9000000000000004
+},
+{
+"t": "2 tablespoons chopped onion",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 2750,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 350
+}
+},
+{
+"from": 3652,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 35,
+"max": 40
+}
+},
+{
+"from": 3796,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 160,
+"what": "thickest part"
+}
+},
+{
+"from": 3940,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 10
+}
+},
+{
+"from": 4084,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.40",
+"sub": "a plate"
+}
+},
+{
+"from": 4628,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 2,
+"title": "Chicken and Noodles",
+"num": 12
+}
+},
+{
+"from": 4762,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 30
+}
+},
+{
+"from": 4906,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken & Noodles",
+"items": [
+{
+"t": "1 cup cooked chicken, shredded",
+"at": 0.5
+},
+{
+"t": "1 1/2 cups wide egg noodles",
+"at": 1.3
+},
+{
+"t": "1 cup chicken broth",
+"at": 2.1
+},
+{
+"t": "1/4 cup milk",
+"at": 2.9000000000000004
+},
+{
+"t": "1 tablespoon butter",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 6374,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 350
+}
+},
+{
+"from": 6518,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 6681,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 6825,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.60",
+"sub": "a plate"
+}
+},
+{
+"from": 6813,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 3,
+"title": "Tuna Noodle for One",
+"num": 13
+}
+},
+{
+"from": 6991,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 30
+}
+},
+{
+"from": 7135,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Tuna Noodle for One",
+"items": [
+{
+"t": "1 small can of tuna, drained",
+"at": 0.5
+},
+{
+"t": "1 cup egg noodles",
+"at": 1.3
+},
+{
+"t": "1/2 cup frozen peas",
+"at": 2.1
+},
+{
+"t": "1 cup white sauce",
+"at": 2.9000000000000004
+},
+{
+"t": "1/4 cup shredded cheddar",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 7327,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 375
+}
+},
+{
+"from": 8228,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20
+}
+},
+{
+"from": 8372,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.70",
+"sub": "a plate"
+}
+},
+{
+"from": 8345,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 4,
+"title": "Shepherd's Pie",
+"num": 14
+}
+},
+{
+"from": 8540,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 40
+}
+},
+{
+"from": 8684,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Shepherd's Pie",
+"items": [
+{
+"t": "1/4 pound ground beef",
+"at": 0.5
+},
+{
+"t": "1/2 cup frozen mixed vegetables",
+"at": 1.3
+},
+{
+"t": "1/4 cup beef broth",
+"at": 2.1
+},
+{
+"t": "1 cup mashed potatoes",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 8876,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 9592,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20
+}
+},
+{
+"from": 9736,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.00",
+"sub": "a plate"
+}
+},
+{
+"from": 9784,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 5,
+"title": "Mac and Cheese with Ham",
+"num": 16
+}
+},
+{
+"from": 9921,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 30
+}
+},
+{
+"from": 10065,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Mac & Cheese",
+"items": [
+{
+"t": "1 cup elbow macaroni",
+"at": 0.5
+},
+{
+"t": "1 tablespoon butter",
+"at": 1.3
+},
+{
+"t": "3/4 cup shredded cheddar",
+"at": 2.1
+},
+{
+"t": "1/2 cup diced ham",
+"at": 2.9000000000000004
+},
+{
+"t": "2 tablespoons crumbs",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 11258,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15,
+"max": 20
+}
+},
+{
+"from": 11402,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.90",
+"sub": "a plate"
+}
+},
+{
+"from": 11374,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 6,
+"title": "Tater Tot Hotdish",
+"num": 17
+}
+},
+{
+"from": 11568,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 40
+}
+},
+{
+"from": 11712,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Tater Tot Hotdish",
+"items": [
+{
+"t": "1/4 pound ground beef",
+"at": 0.5
+},
+{
+"t": "1/4 onion, chopped",
+"at": 1.3
+},
+{
+"t": "1/2 cup frozen green beans",
+"at": 2.1
+},
+{
+"t": "1/3 cup cream of mushroom soup",
+"at": 2.9000000000000004
+},
+{
+"t": "15 frozen tater tots",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 11904,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 375
+}
+},
+{
+"from": 12506,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 30
+}
+},
+{
+"from": 12704,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.10",
+"sub": "a plate"
+}
+},
+{
+"from": 12759,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 7,
+"title": "Chicken Pot Pie with a Biscuit Lid",
+"num": 18
+}
+},
+{
+"from": 12878,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 35
+}
+},
+{
+"from": 13022,
+"dur": 135,
+"name": "Lc2Plates",
+"props": {
+"n": 1
+}
+},
+{
+"from": 13166,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken Pot Pie",
+"items": [
+{
+"t": "3/4 cup cooked chicken, diced",
+"at": 0.5
+},
+{
+"t": "1/2 cup frozen mixed vegetables",
+"at": 1.3
+},
+{
+"t": "1/2 cup white sauce",
+"at": 2.1
+},
+{
+"t": "1 refrigerated biscuit",
+"at": 2.9000000000000004
+}
+]
+}
+},
+{
+"from": 13340,
+"dur": 135,
+"name": "Lc2Oven",
+"props": {
+"temp": 400
+}
+},
+{
+"from": 13862,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15,
+"max": 18
+}
+},
+{
+"from": 14006,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.30",
+"sub": "a plate"
+}
+},
+{
+"from": 14598,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+}
+],
+"pendientes": 102
+}
