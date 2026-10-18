@@ -1,0 +1,33 @@
+# Compila ltx-kernels (NVFP4 para RTX 5090, SM 12.0) UNA vez y lo deja como wheel en el release "ltxkern".
+# No necesita GPU: sólo nvcc. Mismo torch/python que la imagen bautielcrack/ltx25-runner (torch 2.13.0+cu132, py3.11).
+name: ltxkern
+permissions: { contents: write }
+on: { push: { branches: ["kern-*"] } }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: nvidia/cuda:13.2.0-devel-ubuntu22.04
+    timeout-minutes: 90
+    defaults: { run: { shell: bash } }
+    steps:
+      - name: herramientas
+        run: |
+          apt-get update -qq && apt-get install -y -qq git curl ca-certificates >/dev/null
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+      - name: compilar
+        env: { TORCH_CUDA_ARCH_LIST: "12.0", MAX_JOBS: "4" }
+        run: |
+          export PATH=$HOME/.local/bin:/usr/local/cuda/bin:$PATH
+          uv venv -p 3.11 /v && . /v/bin/activate
+          uv pip install "torch==2.13.0+cu132" --index-url https://download.pytorch.org/whl/cu132 -q
+          uv pip install setuptools wheel ninja numpy -q
+          git clone --depth 1 https://github.com/Lightricks/LTX-2.git /src
+          cd /src/packages/ltx-kernels && git log -1 --format=%H
+          uv build --wheel --no-build-isolation -o /out . 2>&1 | tail -40
+          ls -la /out
+      - name: subir
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          apt-get install -y -qq gh >/dev/null 2>&1 || (curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg -o /usr/share/keyrings/gh.gpg && echo "deb [signed-by=/usr/share/keyrings/gh.gpg] https://cli.github.com/packages stable main" > /etc/apt/sources.list.d/gh.list && apt-get update -qq && apt-get install -y -qq gh >/dev/null)
+          gh release view ltxkern -R ${{ github.repository }} >/dev/null 2>&1 || gh release create ltxkern -R ${{ github.repository }} --title ltxkern --notes "ltx-kernels wheel sm120 torch2.13 cu132 py311"
+          gh release upload ltxkern -R ${{ github.repository }} --clobber /out/*.whl
