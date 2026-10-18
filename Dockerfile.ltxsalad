@@ -1,0 +1,14 @@
+# 18-oct-2026: ltx25-runner + pesos ADENTRO (Salad baja la imagen gratis; lo de adentro del contenedor se paga).
+# NVFP4 (-nokf) + VAEs + escalador + duration head + ltx-kernels + SageAttention + agente IPv6. Gemma (24 GB) se baja al arrancar.
+FROM bautielcrack/ltx25-runner:latest
+ARG REL=https://github.com/bagasy-search/claudeyoutubevideos/releases/download/ltxkern
+RUN cd /opt/ltx && curl -fL -sS -o /tmp/k.whl $REL/ltx_kernels-1.4.2-cp311-cp311-linux_x86_64.whl \
+ && curl -fL -sS -o /tmp/s.whl $REL/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl \
+ && mv /tmp/k.whl /tmp/ltx_kernels-1.4.2-cp311-cp311-linux_x86_64.whl && mv /tmp/s.whl /tmp/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl \
+ && uv pip install --no-deps /tmp/ltx_kernels-1.4.2-cp311-cp311-linux_x86_64.whl /tmp/sageattention-2.2.0-cp311-cp311-linux_x86_64.whl \
+ && uv run --no-sync python -c "import ltx_kernels, sageattention; print('KITS_OK')" && rm -f /tmp/*.whl
+COPY ltxsalad/hornear.py /opt/hornear.py
+RUN cd /opt/ltx && uv run --no-sync python /opt/hornear.py && rm -rf /root/.cache/huggingface && touch /w/NVFP4_READY && du -sh /w/ltx-2.5
+COPY ltxsalad/start_salad.sh /start_salad.sh
+RUN chmod +x /start_salad.sh
+CMD ["/start_salad.sh"]

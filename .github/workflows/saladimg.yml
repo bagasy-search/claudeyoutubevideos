@@ -1,0 +1,28 @@
+# Imagen para SaladCloud (18-oct-2026): ltx25-runner + pesos ADENTRO salvo Gemma → ghcr.io/bagasy-search/ltx25-salad
+# Repo público = Actions gratis; GHCR con GITHUB_TOKEN (sin credenciales extra). Nada secreto en la imagen (pesos públicos).
+name: saladimg
+permissions: { contents: read, packages: write }
+on: { push: { branches: ["saladimg-*"] } }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: liberar disco + docker-root a /mnt
+        run: |
+          sudo rm -rf /usr/share/dotnet /opt/ghc /usr/local/lib/android /opt/hostedtoolcache /usr/local/share/boost /usr/local/lib/node_modules /usr/share/swift || true
+          sudo docker image prune -af || true
+          sudo systemctl stop docker
+          sudo mkdir -p /mnt/docker
+          echo '{ "data-root": "/mnt/docker" }' | sudo tee /etc/docker/daemon.json
+          sudo systemctl start docker
+          df -h / /mnt
+      - uses: docker/login-action@v3
+        with: { registry: ghcr.io, username: "${{ github.actor }}", password: "${{ github.token }}" }
+      - name: build y push
+        run: |
+          docker build -f Dockerfile.ltxsalad --label org.opencontainers.image.source=https://github.com/${{ github.repository }} -t ghcr.io/bagasy-search/ltx25-salad:latest .
+          df -h /mnt
+          docker push ghcr.io/bagasy-search/ltx25-salad:latest
+          docker image inspect ghcr.io/bagasy-search/ltx25-salad:latest --format '{{.Size}}'
