@@ -48,7 +48,7 @@ const Pending: React.FC<{ c: any }> = ({ c }) => {
 const Clip: React.FC<{ c: any }> = ({ c }) => {
   const kb = useKB(c.seed, true);
   if (!c.src) return <Pending c={c} />;
-  return <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}><OffthreadVideo src={staticFile(c.src)} volume={CLIP_VOL} style={{ ...FILL, ...kb }} /></AbsoluteFill>;
+  return <AbsoluteFill style={{ overflow: "hidden", backgroundColor: "#000" }}><OffthreadVideo src={staticFile(c.src)} startFrom={c.sf ?? 0} volume={CLIP_VOL} style={{ ...FILL, ...kb }} /></AbsoluteFill>;
 };
 
 // avatar: reel único en el offset de su ventana; jump-cut de zoom en cada cambio de línea (1.00 ↔ 1.13) + push lento
