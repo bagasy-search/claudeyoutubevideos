@@ -1,0 +1,31 @@
+# Armado de un video LTX vlog (clips de 10 s) en el farm. Rama ltx-<slug> (workflow + armar_ltx.py + params.json {slug}).
+# Assets en el release assets-<slug>: clips.tar + orden.json + fix.json. Salida: <slug>.mp4 + PREVIA_liviana.mp4 al release <slug>.
+name: bjltx
+on:
+  push:
+    branches: ['bjltx-*']
+permissions:
+  contents: write
+jobs:
+  armar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env: { GH_TOKEN: "${{ github.token }}" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg estático
+        timeout-minutes: 5
+        run: |
+          for n in 1 2 3 4; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && break; sleep $((n*5)); done
+          mkdir -p /tmp/ff && tar xf ff.tar.xz -C /tmp/ff --strip-components=1 && echo "/tmp/ff/bin" >> "$GITHUB_PATH" && rm ff.tar.xz
+      - name: assets
+        run: |
+          S=$(python3 -c "import json;print(json.load(open('params.json'))['slug'])"); echo "S=$S" >> "$GITHUB_ENV"
+          for n in 1 2 3; do gh release download assets-$S --repo ${{ github.repository }} --clobber && break; sleep 10; done
+          tar xf clips.tar && tar xf extras.tar && rm clips.tar extras.tar && ls clips | wc -l
+      - name: armar
+        run: python3 armar_bj.py $S && ffprobe -v error -show_entries format=duration -of csv=p=0 $S.mp4
+      - name: subir al release
+        run: |
+          gh release view $S --repo ${{ github.repository }} >/dev/null 2>&1 || gh release create $S --repo ${{ github.repository }} --title $S --notes "ltx vlog $S"
+          for n in 1 2 3; do gh release upload $S $S.mp4 PREVIA_liviana.mp4 duraciones.txt --repo ${{ github.repository }} --clobber && break; sleep 15; done
