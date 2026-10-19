@@ -11,7 +11,7 @@ import { Lc2Shop, Lc2Week, Lc2Homework, Lc2Pans } from "./Lc2Kit2";
 
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const FILL: React.CSSProperties = { position: "absolute", width: "100%", height: "100%", objectFit: "cover" };
-const CLIP_VOL = 0.32; // sonido nativo LTX bajo la voz (la voz va a -14 LUFS)
+const CLIP_VOL = 0.55; // sonido nativo LTX EMPAREJADO por norm_clips.py (-20 LUFS por clip, picos ≤ -8 dB) → ≈ -25 LUFS, 11 dB bajo la voz (-14). v2 19-oct: 0.8 quedó demasiado fuerte (horno)
 
 // Ken-Burns por plano (semilla = cuadro de inicio): fotos 3-8 %, clips 1,5-3,5 %; nunca destapa borde
 const useKB = (seed: number, clip: boolean) => {
