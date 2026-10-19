@@ -1,0 +1,1478 @@
+{
+"slug": "lc2skil",
+"R": [
+{
+"n": 1,
+"title": "Hamburger Steak",
+"from": 1998,
+"to": 4013
+},
+{
+"n": 2,
+"title": "One Pork Chop",
+"from": 4013,
+"to": 5856
+},
+{
+"n": 3,
+"title": "Chicken Cutlet in Fifteen Minutes",
+"from": 5856,
+"to": 7746
+},
+{
+"n": 4,
+"title": "Kielbasa & Cabbage",
+"from": 7746,
+"to": 9570
+},
+{
+"n": 5,
+"title": "Fish Fillet in Butter",
+"from": 9570,
+"to": 11175
+},
+{
+"n": 6,
+"title": "Smothered Chicken Thighs",
+"from": 11175,
+"to": 12957
+},
+{
+"n": 7,
+"title": "Fried Rice from Yesterday's Rice",
+"from": 12957,
+"to": 14630
+}
+],
+"frames": 16438,
+"audio": "lc2skil.wav",
+"TL": [
+{
+"k": "av",
+"line": 0,
+"from": 0,
+"dur": 118,
+"seed": 13,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 0,
+"cuts": []
+},
+{
+"k": "av",
+"line": 1,
+"from": 118,
+"dur": 270,
+"seed": 839,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 118,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_ii",
+"src": "lc2/clips/lc2skil_ii.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_ii.png",
+"seg": 8,
+"toma": 0,
+"from": 388,
+"dur": 86,
+"seed": 2729
+},
+{
+"k": "comp",
+"name": "Lc2Hook7",
+"props": {
+"items": [
+{
+"src": "lc2/kf/done_lc2skil_1_hook.png",
+"name": "Hamburger Steak"
+},
+{
+"src": "lc2/kf/done_lc2skil_2_hook.png",
+"name": "One Pork Chop"
+},
+{
+"src": "lc2/kf/done_lc2skil_3_hook.png",
+"name": "Chicken Cutlet in Fifteen Minutes"
+},
+{
+"src": "lc2/kf/done_lc2skil_4_hook.png",
+"name": "Kielbasa & Cabbage"
+},
+{
+"src": "lc2/kf/done_lc2skil_5_hook.png",
+"name": "Fish Fillet in Butter"
+},
+{
+"src": "lc2/kf/done_lc2skil_6_hook.png",
+"name": "Smothered Chicken Thighs"
+},
+{
+"src": "lc2/kf/done_lc2skil_7_hook.png",
+"name": "Fried Rice from Yesterday's Rice"
+}
+],
+"title": "Little Skillet",
+"word": "suppers"
+},
+"from": 474,
+"dur": 195,
+"seed": 3331
+},
+{
+"k": "av",
+"line": 4,
+"cont": true,
+"from": 669,
+"dur": 215,
+"seed": 4696,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 590,
+"cuts": []
+},
+{
+"k": "av",
+"line": 5,
+"from": 884,
+"dur": 18,
+"seed": 6201,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 806,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Pans",
+"props": {
+"items": [
+{
+"t": "One 8-inch skillet",
+"sub": "cast iron or nonstick",
+"shape": "skillet"
+},
+{
+"t": "A lid",
+"sub": "or a plate on top",
+"shape": "lid"
+}
+],
+"title": "All you need"
+},
+"from": 902,
+"dur": 300,
+"seed": 6327
+},
+{
+"k": "av",
+"line": 6,
+"from": 1202,
+"dur": 47,
+"seed": 8427,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 1124,
+"cuts": []
+},
+{
+"k": "av",
+"line": 7,
+"from": 1249,
+"dur": 253,
+"seed": 8756,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 1170,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2skil.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1502,
+"dur": 278,
+"seed": 10527
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2skil.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1780,
+"dur": 180,
+"seed": 12473
+},
+{
+"k": "av",
+"line": 10,
+"from": 1960,
+"dur": 38,
+"seed": 13733,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 1430,
+"cuts": []
+},
+{
+"k": "av",
+"line": 11,
+"from": 1998,
+"dur": 281,
+"seed": 13999,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 1469,
+"cuts": []
+},
+{
+"k": "av",
+"line": 12,
+"from": 2279,
+"dur": 265,
+"seed": 15966,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 1750,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_r1a",
+"src": "lc2/clips/lc2skil_r1a.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2skil_1_lc2skil_r1a.png",
+"seg": 28,
+"toma": 0,
+"from": 2544,
+"dur": 249,
+"seed": 17821
+},
+{
+"k": "clip",
+"id": "lc2skil_r1a",
+"src": "lc2/clips/lc2skil_r1a.mp4",
+"sf": 249,
+"img": null,
+"seg": 28,
+"toma": 1,
+"cont": true,
+"from": 2793,
+"dur": 373,
+"seed": 19564
+},
+{
+"k": "clip",
+"id": "lc2skil_r1a",
+"src": "lc2/clips/lc2skil_r1a.mp4",
+"sf": 622,
+"img": null,
+"seg": 28,
+"toma": 2,
+"cont": true,
+"from": 3166,
+"dur": 103,
+"seed": 22175
+},
+{
+"k": "clip",
+"id": "lc2skil_r1b",
+"src": "lc2/clips/lc2skil_r1b.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_r1b.png",
+"seg": 19,
+"toma": 0,
+"from": 3269,
+"dur": 310,
+"seed": 22896
+},
+{
+"k": "clip",
+"id": "lc2skil_r1b",
+"src": "lc2/clips/lc2skil_r1b.mp4",
+"sf": 310,
+"img": null,
+"seg": 19,
+"toma": 1,
+"cont": true,
+"from": 3579,
+"dur": 235,
+"seed": 25066
+},
+{
+"k": "av",
+"line": 18,
+"from": 3814,
+"dur": 199,
+"seed": 26711,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 2022,
+"cuts": []
+},
+{
+"k": "av",
+"line": 19,
+"from": 4013,
+"dur": 256,
+"seed": 28104,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 2221,
+"cuts": []
+},
+{
+"k": "av",
+"line": 20,
+"from": 4269,
+"dur": 246,
+"seed": 29896,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 2478,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_r2a",
+"src": "lc2/clips/lc2skil_r2a.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2skil_2_lc2skil_r2a.png",
+"seg": 28,
+"toma": 0,
+"from": 4515,
+"dur": 215,
+"seed": 31618
+},
+{
+"k": "clip",
+"id": "lc2skil_r2a",
+"src": "lc2/clips/lc2skil_r2a.mp4",
+"sf": 215,
+"img": null,
+"seg": 28,
+"toma": 1,
+"cont": true,
+"from": 4730,
+"dur": 286,
+"seed": 33123
+},
+{
+"k": "clip",
+"id": "lc2skil_r2a",
+"src": "lc2/clips/lc2skil_r2a.mp4",
+"sf": 502,
+"img": null,
+"seg": 28,
+"toma": 2,
+"cont": true,
+"from": 5016,
+"dur": 164,
+"seed": 35125
+},
+{
+"k": "clip",
+"id": "lc2skil_r2b",
+"src": "lc2/clips/lc2skil_r2b.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_r2b.png",
+"seg": 15,
+"toma": 0,
+"from": 5180,
+"dur": 157,
+"seed": 36273
+},
+{
+"k": "clip",
+"id": "lc2skil_r2b",
+"src": "lc2/clips/lc2skil_r2b.mp4",
+"sf": 157,
+"img": null,
+"seg": 15,
+"toma": 1,
+"cont": true,
+"from": 5337,
+"dur": 252,
+"seed": 37372
+},
+{
+"k": "av",
+"line": 26,
+"from": 5589,
+"dur": 267,
+"seed": 39136,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 2730,
+"cuts": []
+},
+{
+"k": "av",
+"line": 27,
+"from": 5856,
+"dur": 213,
+"seed": 41005,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 2997,
+"cuts": []
+},
+{
+"k": "av",
+"line": 28,
+"from": 6069,
+"dur": 171,
+"seed": 42496,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 3210,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_r3a",
+"src": "lc2/clips/lc2skil_r3a.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2skil_3_lc2skil_r3a.png",
+"seg": 28,
+"toma": 0,
+"from": 6240,
+"dur": 281,
+"seed": 43693
+},
+{
+"k": "clip",
+"id": "lc2skil_r3a",
+"src": "lc2/clips/lc2skil_r3a.mp4",
+"sf": 281,
+"img": null,
+"seg": 28,
+"toma": 1,
+"cont": true,
+"from": 6521,
+"dur": 276,
+"seed": 45660
+},
+{
+"k": "av",
+"line": 31,
+"from": 6797,
+"dur": 246,
+"seed": 47592,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 3388,
+"cuts": []
+},
+{
+"k": "av",
+"line": 32,
+"from": 7043,
+"dur": 18,
+"seed": 49314,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 3633,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Shop",
+"props": {},
+"from": 7061,
+"dur": 252,
+"seed": 49440
+},
+{
+"k": "clip",
+"id": "lc2skil_r3b",
+"src": "lc2/clips/lc2skil_r3b.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_r3b.png",
+"seg": 9,
+"toma": 0,
+"from": 7313,
+"dur": 93,
+"seed": 51204
+},
+{
+"k": "clip",
+"id": "lc2skil_r3b",
+"src": "lc2/clips/lc2skil_r3b.mp4",
+"sf": 93,
+"img": null,
+"seg": 9,
+"toma": 1,
+"cont": true,
+"from": 7406,
+"dur": 141,
+"seed": 51855
+},
+{
+"k": "av",
+"line": 35,
+"from": 7547,
+"dur": 199,
+"seed": 52842,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 3911,
+"cuts": []
+},
+{
+"k": "av",
+"line": 36,
+"from": 7746,
+"dur": 305,
+"seed": 54235,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 4110,
+"cuts": []
+},
+{
+"k": "av",
+"line": 37,
+"from": 8051,
+"dur": 237,
+"seed": 56370,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 4415,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_r4a",
+"src": "lc2/clips/lc2skil_r4a.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2skil_4_lc2skil_r4a.png",
+"seg": 28,
+"toma": 0,
+"from": 8288,
+"dur": 235,
+"seed": 58029
+},
+{
+"k": "clip",
+"id": "lc2skil_r4a",
+"src": "lc2/clips/lc2skil_r4a.mp4",
+"sf": 235,
+"img": null,
+"seg": 28,
+"toma": 1,
+"cont": true,
+"from": 8523,
+"dur": 215,
+"seed": 59674
+},
+{
+"k": "clip",
+"id": "lc2skil_r4a",
+"src": "lc2/clips/lc2skil_r4a.mp4",
+"sf": 450,
+"img": null,
+"seg": 28,
+"toma": 2,
+"cont": true,
+"from": 8738,
+"dur": 169,
+"seed": 61179
+},
+{
+"k": "clip",
+"id": "lc2skil_r4b",
+"src": "lc2/clips/lc2skil_r4b.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_r4b.png",
+"seg": 15,
+"toma": 0,
+"from": 8907,
+"dur": 222,
+"seed": 62362
+},
+{
+"k": "clip",
+"id": "lc2skil_r4b",
+"src": "lc2/clips/lc2skil_r4b.mp4",
+"sf": 222,
+"img": null,
+"seg": 15,
+"toma": 1,
+"cont": true,
+"from": 9129,
+"dur": 183,
+"seed": 63916
+},
+{
+"k": "av",
+"line": 43,
+"from": 9312,
+"dur": 258,
+"seed": 65197,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 4660,
+"cuts": []
+},
+{
+"k": "av",
+"line": 44,
+"from": 9570,
+"dur": 245,
+"seed": 67003,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 4918,
+"cuts": []
+},
+{
+"k": "av",
+"line": 45,
+"from": 9815,
+"dur": 245,
+"seed": 68718,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 5162,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_r5a",
+"src": "lc2/clips/lc2skil_r5a.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2skil_5_lc2skil_r5a.png",
+"seg": 28,
+"toma": 0,
+"from": 10060,
+"dur": 342,
+"seed": 70433
+},
+{
+"k": "clip",
+"id": "lc2skil_r5a",
+"src": "lc2/clips/lc2skil_r5a.mp4",
+"sf": 341,
+"img": null,
+"seg": 28,
+"toma": 1,
+"cont": true,
+"from": 10402,
+"dur": 151,
+"seed": 72827
+},
+{
+"k": "clip",
+"id": "lc2skil_r5a",
+"src": "lc2/clips/lc2skil_r5a.mp4",
+"sf": 493,
+"img": null,
+"seg": 28,
+"toma": 2,
+"cont": true,
+"from": 10553,
+"dur": 117,
+"seed": 73884
+},
+{
+"k": "clip",
+"id": "lc2skil_r5b",
+"src": "lc2/clips/lc2skil_r5b.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_r5b.png",
+"seg": 10,
+"toma": 0,
+"from": 10670,
+"dur": 138,
+"seed": 74703
+},
+{
+"k": "clip",
+"id": "lc2skil_r5b",
+"src": "lc2/clips/lc2skil_r5b.mp4",
+"sf": 138,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 10808,
+"dur": 134,
+"seed": 75669
+},
+{
+"k": "av",
+"line": 51,
+"from": 10942,
+"dur": 233,
+"seed": 76607,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 5415,
+"cuts": []
+},
+{
+"k": "av",
+"line": 52,
+"from": 11175,
+"dur": 316,
+"seed": 78238,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 5648,
+"cuts": []
+},
+{
+"k": "av",
+"line": 53,
+"from": 11491,
+"dur": 155,
+"seed": 80450,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 5964,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_r6a",
+"src": "lc2/clips/lc2skil_r6a.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2skil_6_lc2skil_r6a.png",
+"seg": 28,
+"toma": 0,
+"from": 11646,
+"dur": 283,
+"seed": 81535
+},
+{
+"k": "clip",
+"id": "lc2skil_r6a",
+"src": "lc2/clips/lc2skil_r6a.mp4",
+"sf": 283,
+"img": null,
+"seg": 28,
+"toma": 1,
+"cont": true,
+"from": 11929,
+"dur": 217,
+"seed": 83516
+},
+{
+"k": "clip",
+"id": "lc2skil_r6a",
+"src": "lc2/clips/lc2skil_r6a.mp4",
+"sf": 500,
+"img": null,
+"seg": 28,
+"toma": 2,
+"cont": true,
+"from": 12146,
+"dur": 192,
+"seed": 85035
+},
+{
+"k": "clip",
+"id": "lc2skil_r6b",
+"src": "lc2/clips/lc2skil_r6b.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_r6b.png",
+"seg": 14,
+"toma": 0,
+"from": 12338,
+"dur": 187,
+"seed": 86379
+},
+{
+"k": "clip",
+"id": "lc2skil_r6b",
+"src": "lc2/clips/lc2skil_r6b.mp4",
+"sf": 187,
+"img": null,
+"seg": 14,
+"toma": 1,
+"cont": true,
+"from": 12525,
+"dur": 183,
+"seed": 87688
+},
+{
+"k": "av",
+"line": 59,
+"from": 12708,
+"dur": 249,
+"seed": 88969,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 6126,
+"cuts": []
+},
+{
+"k": "av",
+"line": 60,
+"from": 12957,
+"dur": 285,
+"seed": 90712,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 6375,
+"cuts": []
+},
+{
+"k": "av",
+"line": 61,
+"from": 13242,
+"dur": 265,
+"seed": 92707,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 6660,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_r7a",
+"src": "lc2/clips/lc2skil_r7a.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2skil_7_lc2skil_r7a.png",
+"seg": 28,
+"toma": 0,
+"from": 13507,
+"dur": 297,
+"seed": 94562
+},
+{
+"k": "clip",
+"id": "lc2skil_r7a",
+"src": "lc2/clips/lc2skil_r7a.mp4",
+"sf": 297,
+"img": null,
+"seg": 28,
+"toma": 1,
+"cont": true,
+"from": 13804,
+"dur": 178,
+"seed": 96641
+},
+{
+"k": "clip",
+"id": "lc2skil_r7a",
+"src": "lc2/clips/lc2skil_r7a.mp4",
+"sf": 475,
+"img": null,
+"seg": 28,
+"toma": 2,
+"cont": true,
+"from": 13982,
+"dur": 130,
+"seed": 97887
+},
+{
+"k": "clip",
+"id": "lc2skil_r7b",
+"src": "lc2/clips/lc2skil_r7b.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_r7b.png",
+"seg": 11,
+"toma": 0,
+"from": 14112,
+"dur": 132,
+"seed": 98797
+},
+{
+"k": "clip",
+"id": "lc2skil_r7b",
+"src": "lc2/clips/lc2skil_r7b.mp4",
+"sf": 132,
+"img": null,
+"seg": 11,
+"toma": 1,
+"cont": true,
+"from": 14244,
+"dur": 164,
+"seed": 99721
+},
+{
+"k": "av",
+"line": 67,
+"from": 14408,
+"dur": 222,
+"seed": 100869,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 6932,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_cc",
+"src": "lc2/clips/lc2skil_cc.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_cc.png",
+"seg": 9,
+"toma": 0,
+"from": 14630,
+"dur": 224,
+"seed": 102423
+},
+{
+"k": "av",
+"line": 69,
+"from": 14854,
+"dur": 332,
+"seed": 103991,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 7162,
+"cuts": []
+},
+{
+"k": "av",
+"line": 70,
+"from": 15186,
+"dur": 18,
+"seed": 106315,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 7494,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Week",
+"props": {},
+"from": 15204,
+"dur": 262,
+"seed": 106441
+},
+{
+"k": "av",
+"line": 71,
+"from": 15466,
+"dur": 18,
+"seed": 108275,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 7774,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Homework",
+"props": {
+"names": [
+"Hamburger Steak",
+"One Pork Chop",
+"Chicken Cutlet in Fifteen Minutes",
+"Kielbasa & Cabbage",
+"Fish Fillet in Butter",
+"Smothered Chicken Thighs",
+"Fried Rice from Yesterday's Rice"
+],
+"pick": 2,
+"line": "Pick two this week. Just two."
+},
+"from": 15484,
+"dur": 125,
+"seed": 108401
+},
+{
+"k": "av",
+"line": 72,
+"from": 15609,
+"dur": 194,
+"seed": 109276,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 7917,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2skil.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 15803,
+"dur": 146,
+"seed": 110634
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2skil.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 15949,
+"dur": 82,
+"seed": 111656
+},
+{
+"k": "av",
+"line": 75,
+"from": 16031,
+"dur": 113,
+"seed": 112230,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 8117,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2skil_cc2",
+"src": "lc2/clips/lc2skil_cc2.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2skil_cc2.png",
+"seg": 8,
+"toma": 0,
+"from": 16144,
+"dur": 186,
+"seed": 113021
+},
+{
+"k": "av",
+"line": 77,
+"from": 16330,
+"dur": 108,
+"seed": 114323,
+"src": "lc2/av/lc2skil_reel.mp4",
+"sf": 8250,
+"cuts": []
+}
+],
+"OV": [
+{
+"from": 856,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 20
+}
+},
+{
+"from": 1234,
+"dur": 135,
+"name": "LorNameTag",
+"props": {
+"name": "Loretta",
+"sub": "60 years of church suppers"
+}
+},
+{
+"from": 2004,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 1,
+"title": "Hamburger Steak with Onion Gravy",
+"num": 72
+}
+},
+{
+"from": 2188,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.60",
+"sub": "a plate"
+}
+},
+{
+"from": 2550,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Hamburger Steak",
+"items": [
+{
+"t": "1/4 pound ground beef",
+"at": 0.5
+},
+{
+"t": "1/2 onion, sliced",
+"at": 1.3
+},
+{
+"t": "1 teaspoon oil",
+"at": 2.1
+},
+{
+"t": "1 teaspoon flour",
+"at": 2.9000000000000004
+},
+{
+"t": "1/2 cup beef broth",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 3852,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 160,
+"what": "thickest part"
+}
+},
+{
+"from": 4019,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 2,
+"title": "One Pork Chop with Pan Gravy",
+"num": 71
+}
+},
+{
+"from": 4131,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 4275,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.80",
+"sub": "a plate"
+}
+},
+{
+"from": 4521,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "One Pork Chop",
+"items": [
+{
+"t": "1 thin pork chop",
+"at": 0.5
+},
+{
+"t": "1 teaspoon oil",
+"at": 1.3
+},
+{
+"t": "1 teaspoon flour",
+"at": 2.1
+},
+{
+"t": "1/2 cup chicken broth",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper, a pinch of sage",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 5622,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 145,
+"what": "thickest part"
+}
+},
+{
+"from": 5862,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 3,
+"title": "Chicken Cutlet in Fifteen Minutes",
+"num": 73
+}
+},
+{
+"from": 5936,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 6080,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.30",
+"sub": "a plate"
+}
+},
+{
+"from": 6246,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken Cutlet in Fifteen Minutes",
+"items": [
+{
+"t": "1 boneless chicken breast",
+"at": 0.5
+},
+{
+"t": "2 tablespoons flour",
+"at": 1.3
+},
+{
+"t": "1 tablespoon oil",
+"at": 2.1
+},
+{
+"t": "1 teaspoon butter",
+"at": 2.9000000000000004
+},
+{
+"t": "1/2 lemon",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 7570,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 165,
+"what": "thickest part"
+}
+},
+{
+"from": 7752,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 4,
+"title": "Kielbasa, Cabbage and Potatoes",
+"num": 75
+}
+},
+{
+"from": 7955,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 25
+}
+},
+{
+"from": 8099,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.70",
+"sub": "a plate"
+}
+},
+{
+"from": 8294,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Kielbasa & Cabbage",
+"items": [
+{
+"t": "4 inches of kielbasa, sliced",
+"at": 0.5
+},
+{
+"t": "1 small potato, diced",
+"at": 1.3
+},
+{
+"t": "1/4 onion, sliced",
+"at": 2.1
+},
+{
+"t": "2 cups shredded cabbage",
+"at": 2.9000000000000004
+},
+{
+"t": "A splash of vinegar",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 9576,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 5,
+"title": "Fish Fillet in Butter and Lemon",
+"num": 76
+}
+},
+{
+"from": 9684,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 12
+}
+},
+{
+"from": 9828,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.60",
+"sub": "a plate"
+}
+},
+{
+"from": 10066,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Fish Fillet in Butter",
+"items": [
+{
+"t": "1 frozen white fish fillet",
+"at": 0.5
+},
+{
+"t": "1 tablespoon flour",
+"at": 1.3
+},
+{
+"t": "1 tablespoon butter",
+"at": 2.1
+},
+{
+"t": "1/2 lemon",
+"at": 2.9000000000000004
+},
+{
+"t": "Salt, pepper, parsley",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 11181,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 6,
+"title": "Smothered Chicken Thighs",
+"num": 79
+}
+},
+{
+"from": 11329,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 30
+}
+},
+{
+"from": 11473,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.20",
+"sub": "a plate"
+}
+},
+{
+"from": 11652,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Smothered Chicken Thighs",
+"items": [
+{
+"t": "2 boneless chicken thighs",
+"at": 0.5
+},
+{
+"t": "1/2 cup sliced mushrooms",
+"at": 1.3
+},
+{
+"t": "1/4 onion, sliced",
+"at": 2.1
+},
+{
+"t": "1/2 cup chicken broth",
+"at": 2.9000000000000004
+},
+{
+"t": "2 tablespoons sour cream",
+"at": 3.7
+}
+]
+}
+},
+{
+"from": 12498,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 10
+}
+},
+{
+"from": 12733,
+"dur": 135,
+"name": "Lc2Temp",
+"props": {
+"temp": 165,
+"what": "thickest part"
+}
+},
+{
+"from": 12963,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 7,
+"title": "Fried Rice from Yesterday's Rice",
+"num": 80
+}
+},
+{
+"from": 13073,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 10
+}
+},
+{
+"from": 13217,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.00",
+"sub": "a plate"
+}
+},
+{
+"from": 13513,
+"dur": 183,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Fried Rice from Yesterday's Rice",
+"items": [
+{
+"t": "1 cup cold cooked rice",
+"at": 0.5
+},
+{
+"t": "1/2 cup frozen peas",
+"at": 1.3
+},
+{
+"t": "1 egg",
+"at": 2.1
+},
+{
+"t": "Leftover ham, chopped",
+"at": 2.9000000000000004
+},
+{
+"t": "1 tablespoon soy sauce",
+"at": 3.7
+}
+]
+}
+}
+],
+"pendientes": 0
+}
