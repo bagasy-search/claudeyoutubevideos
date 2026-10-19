@@ -53,7 +53,7 @@
 "from": 0,
 "dur": 158,
 "seed": 13,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 0,
 "cuts": []
 },
@@ -63,7 +63,7 @@
 "from": 158,
 "dur": 237,
 "seed": 1119,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 158,
 "cuts": []
 },
@@ -155,7 +155,7 @@
 "from": 937,
 "dur": 18,
 "seed": 6572,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 582,
 "cuts": []
 },
@@ -187,7 +187,7 @@
 "from": 1232,
 "dur": 164,
 "seed": 8637,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 878,
 "cuts": []
 },
@@ -197,7 +197,7 @@
 "from": 1396,
 "dur": 56,
 "seed": 9785,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 1042,
 "cuts": []
 },
@@ -207,7 +207,7 @@
 "from": 1452,
 "dur": 262,
 "seed": 10177,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 1097,
 "cuts": []
 },
@@ -256,7 +256,7 @@
 "from": 2177,
 "dur": 45,
 "seed": 15252,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 1366,
 "cuts": []
 },
@@ -266,7 +266,7 @@
 "from": 2222,
 "dur": 197,
 "seed": 15567,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 1411,
 "cuts": []
 },
@@ -276,7 +276,7 @@
 "from": 2419,
 "dur": 218,
 "seed": 16946,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 1608,
 "cuts": []
 },
@@ -368,7 +368,7 @@
 "from": 3932,
 "dur": 226,
 "seed": 27537,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 1833,
 "cuts": []
 },
@@ -405,7 +405,7 @@
 "from": 4441,
 "dur": 161,
 "seed": 31100,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 2066,
 "cuts": []
 },
@@ -415,7 +415,7 @@
 "from": 4602,
 "dur": 18,
 "seed": 32227,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 2227,
 "cuts": []
 },
@@ -433,7 +433,7 @@
 "from": 5121,
 "dur": 293,
 "seed": 35860,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 2746,
 "cuts": []
 },
@@ -470,7 +470,7 @@
 "from": 5905,
 "dur": 189,
 "seed": 41348,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 3047,
 "cuts": []
 },
@@ -507,7 +507,7 @@
 "from": 6532,
 "dur": 64,
 "seed": 45737,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 3243,
 "cuts": []
 },
@@ -517,7 +517,7 @@
 "from": 6596,
 "dur": 341,
 "seed": 46185,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 3307,
 "cuts": []
 },
@@ -568,7 +568,7 @@
 "from": 7454,
 "dur": 282,
 "seed": 52191,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 3655,
 "cuts": []
 },
@@ -605,7 +605,7 @@
 "from": 8132,
 "dur": 89,
 "seed": 56937,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 3944,
 "cuts": []
 },
@@ -615,7 +615,7 @@
 "from": 8221,
 "dur": 214,
 "seed": 57560,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 4033,
 "cuts": []
 },
@@ -625,7 +625,7 @@
 "from": 8435,
 "dur": 166,
 "seed": 59058,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 4246,
 "cuts": []
 },
@@ -690,7 +690,7 @@
 "from": 9187,
 "dur": 311,
 "seed": 64322,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 4420,
 "cuts": []
 },
@@ -727,7 +727,7 @@
 "from": 9997,
 "dur": 119,
 "seed": 69992,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 4738,
 "cuts": []
 },
@@ -737,7 +737,7 @@
 "from": 10116,
 "dur": 288,
 "seed": 70825,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 4857,
 "cuts": []
 },
@@ -788,7 +788,7 @@
 "from": 10819,
 "dur": 203,
 "seed": 75746,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 5153,
 "cuts": []
 },
@@ -825,7 +825,7 @@
 "from": 11453,
 "dur": 136,
 "seed": 80184,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 5364,
 "cuts": []
 },
@@ -835,7 +835,7 @@
 "from": 11589,
 "dur": 176,
 "seed": 81136,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 5499,
 "cuts": []
 },
@@ -845,7 +845,7 @@
 "from": 11765,
 "dur": 284,
 "seed": 82368,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 5676,
 "cuts": []
 },
@@ -882,7 +882,7 @@
 "from": 12399,
 "dur": 218,
 "seed": 86806,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 5967,
 "cuts": []
 },
@@ -947,7 +947,7 @@
 "from": 13204,
 "dur": 110,
 "seed": 92441,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 6192,
 "cuts": []
 },
@@ -957,7 +957,7 @@
 "from": 13314,
 "dur": 295,
 "seed": 93211,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 6302,
 "cuts": []
 },
@@ -994,7 +994,7 @@
 "from": 14034,
 "dur": 147,
 "seed": 98251,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 6604,
 "cuts": []
 },
@@ -1017,7 +1017,7 @@
 "from": 14415,
 "dur": 49,
 "seed": 100918,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 6779,
 "cuts": []
 },
@@ -1054,7 +1054,7 @@
 "from": 14758,
 "dur": 327,
 "seed": 103319,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 6856,
 "cuts": []
 },
@@ -1064,7 +1064,7 @@
 "from": 15085,
 "dur": 18,
 "seed": 105608,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 7183,
 "cuts": []
 },
@@ -1082,7 +1082,7 @@
 "from": 15373,
 "dur": 18,
 "seed": 107624,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 7471,
 "cuts": []
 },
@@ -1112,7 +1112,7 @@
 "from": 15508,
 "dur": 200,
 "seed": 108569,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 7606,
 "cuts": []
 },
@@ -1147,7 +1147,7 @@
 "from": 15958,
 "dur": 221,
 "seed": 111719,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 7813,
 "cuts": []
 },
@@ -1170,7 +1170,7 @@
 "from": 16372,
 "dur": 115,
 "seed": 114617,
-"src": null,
+"src": "lc2/av/lc2pan_reel.mp4",
 "sf": 8047,
 "cuts": []
 }
@@ -1735,5 +1735,5 @@
 }
 }
 ],
-"pendientes": 59
+"pendientes": 21
 }
