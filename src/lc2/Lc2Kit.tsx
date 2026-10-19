@@ -157,8 +157,8 @@ export const Lc2Plates: React.FC<{ n: number; labels?: string[]; corner?: Corner
     <Ficha corner={corner} w="auto" seed={53}>
       <Kicker t={n === 1 ? "Makes one plate" : `Makes ${n} plates`} />
       <div style={{ display: "flex", gap: 22, marginTop: 10 }}>
-        {Array.from({ length: n }, (_, i) => { const p = pop(f, fps, 8 + i * 9, 10); return (
-          <div key={i} style={{ textAlign: "center", scale: String(p), opacity: Math.min(1, p * 1.4), display: "flex", flexDirection: "column", alignItems: "center" }}>
+        {Array.from({ length: n }, (_, i) => { const p = pop(f, fps, 8 + i * 9, 10); return (   // sin scale: en el farm (Chrome Linux) el scale>1 del resorte dejaba negra la mitad de arriba del avatar (19-oct)
+          <div key={i} style={{ textAlign: "center", opacity: Math.min(1, p * 1.4), display: "flex", flexDirection: "column", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
             <svg width={18} height={120} viewBox="0 0 18 120"><path d="M3 10 V40 M9 10 V40 M15 10 V40 M3 40 Q9 52 15 40 M9 48 V112" stroke="#8D949B" strokeWidth={3.5} fill="none" strokeLinecap="round" /></svg>
             <svg width={120} height={120} viewBox="-60 -60 120 120"><circle r={56} fill="#fff" stroke="#D8CFBF" strokeWidth={3} /><circle r={40} fill="#FBF8F1" stroke="#E5DDCC" strokeWidth={2} /><circle r={56} fill="none" stroke={hexA("#6F8FB0", 0.7)} strokeWidth={4} strokeDasharray="4 7" /></svg>
