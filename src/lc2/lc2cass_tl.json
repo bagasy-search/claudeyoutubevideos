@@ -60,12 +60,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m01",
-"src": null,
+"src": "lc2/clips/lc2cass_m01.mp4",
 "sf": 0,
 "img": null,
 "seg": 5,
 "toma": 0,
-"desc": "toma 1/1 · a huge nine by thirteen glass casserole dish of tater tot hotdish sitting on a long church basement table covered with a white paper tablecloth",
 "from": 205,
 "dur": 88,
 "seed": 1448
@@ -134,12 +133,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m02",
-"src": null,
+"src": "lc2/clips/lc2cass_m02.mp4",
 "sf": 0,
 "img": null,
 "seg": 7,
 "toma": 0,
-"desc": "toma 1/1 · top-down, on the wooden table two identical small white baking dishes side by side, her hands cover one tightly with foil",
 "cont": true,
 "from": 1011,
 "dur": 153,
@@ -200,12 +198,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m03",
-"src": null,
+"src": "lc2/clips/lc2cass_m03.mp4",
 "sf": 0,
 "img": "lc2/kf/plate_libro_lc2cass_c004.png",
 "seg": 9,
 "toma": 0,
-"desc": "toma 1/1 · standing at the wooden table she lifts the thick book Supper for One with both hands and holds it beside her chest, cover toward the lens, then opens ",
 "from": 1613,
 "dur": 236,
 "seed": 11304
@@ -245,12 +242,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m04",
-"src": null,
+"src": "lc2/clips/lc2cass_m04.mp4",
 "sf": 0,
 "img": "lc2/kf/ing_lc2cass_1.png",
 "seg": 24,
 "toma": 0,
-"desc": "toma 1/4 · she stands at the wooden table with half a pound of ground beef, a canister of quick oats, an egg, a small glass bottle of milk, a little bowl of chop",
 "from": 2348,
 "dur": 128,
 "seed": 16449
@@ -258,13 +254,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m04",
-"src": null,
+"src": "lc2/clips/lc2cass_m04.mp4",
 "sf": 128,
 "img": "lc2/kf/top_lc2cass_1_lc2cass_c007.png",
 "seg": 24,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/4 · top-down, in a glass mixing bowl she separates an egg yolk from the white with the two shell halves, letting the white fall away, the thick book Suppe",
 "from": 2476,
 "dur": 175,
 "seed": 17345
@@ -272,13 +267,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m04",
-"src": null,
+"src": "lc2/clips/lc2cass_m04.mp4",
 "sf": 304,
 "img": "lc2/kf/plate_counter_lc2cass_c008.png",
 "seg": 24,
 "toma": 2,
 "cont": true,
-"desc": "toma 3/4 · her bare hands mix ground beef, oats, egg yolk, milk and chopped onion in the glass bowl, squeezing gently",
 "from": 2651,
 "dur": 208,
 "seed": 18570
@@ -286,13 +280,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m04",
-"src": null,
+"src": "lc2/clips/lc2cass_m04.mp4",
 "sf": 511,
 "img": null,
 "seg": 24,
 "toma": 3,
 "cont": true,
-"desc": "toma 4/4 · her bare hands mix ground beef, oats, egg yolk, milk and chopped onion in the glass bowl, squeezing gently (the same moment seen from a different angl",
 "from": 2859,
 "dur": 169,
 "seed": 20026
@@ -310,12 +303,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m05",
-"src": null,
+"src": "lc2/clips/lc2cass_m05.mp4",
 "sf": 0,
 "img": null,
 "seg": 21,
 "toma": 0,
-"desc": "toma 1/3 · she stirs ketchup, brown sugar and mustard together in a small cup and spreads it over the top of the meatloaf with the back of a spoon; then she open",
 "from": 3399,
 "dur": 298,
 "seed": 23806
@@ -323,13 +315,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m05",
-"src": null,
+"src": "lc2/clips/lc2cass_m05.mp4",
 "sf": 298,
 "img": "lc2/kf/done_lc2cass_1_lc2cass_c013.png",
 "seg": 21,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/3 · the loaf pan on a folded towel on the wooden table, the glossy topping bubbling at the edges",
 "from": 3697,
 "dur": 177,
 "seed": 25892
@@ -337,13 +328,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m05",
-"src": null,
+"src": "lc2/clips/lc2cass_m05.mp4",
 "sf": 475,
 "img": "lc2/kf/done_lc2cass_1_lc2cass_c014.png",
 "seg": 21,
 "toma": 2,
 "cont": true,
-"desc": "toma 3/3 · she cuts a thick slice of meatloaf with a knife and lifts it out with a spatula",
 "from": 3874,
 "dur": 115,
 "seed": 27131
@@ -389,12 +379,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m06",
-"src": null,
+"src": "lc2/clips/lc2cass_m06.mp4",
 "sf": 0,
 "img": "lc2/kf/ing_lc2cass_2.png",
 "seg": 22,
 "toma": 0,
-"desc": "toma 1/4 · she stands at the wooden table with a bowl of cooked shredded chicken, a bag of wide egg noodles, a carton of chicken broth, a small glass bottle of m",
 "from": 4826,
 "dur": 122,
 "seed": 33795
@@ -402,13 +391,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m06",
-"src": null,
+"src": "lc2/clips/lc2cass_m06.mp4",
 "sf": 121,
 "img": "lc2/kf/plate_stove_lc2cass_c016.png",
 "seg": 22,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/4 · she drops wide egg noodles into a small pot of boiling water on the old white gas stove",
 "from": 4948,
 "dur": 184,
 "seed": 34649
@@ -416,13 +404,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m06",
-"src": null,
+"src": "lc2/clips/lc2cass_m06.mp4",
 "sf": 306,
 "img": null,
 "seg": 22,
 "toma": 2,
 "cont": true,
-"desc": "toma 3/4 · in the same small pot on the stove she melts a tablespoon of butter and stirs in a tablespoon of flour with a wooden spoon",
 "from": 5132,
 "dur": 165,
 "seed": 35937
@@ -430,13 +417,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m06",
-"src": null,
+"src": "lc2/clips/lc2cass_m06.mp4",
 "sf": 471,
 "img": null,
 "seg": 22,
 "toma": 3,
 "cont": true,
-"desc": "toma 4/4 · she pours chicken broth and milk into the pot and whisks until it thickens into a smooth sauce",
 "from": 5297,
 "dur": 177,
 "seed": 37092
@@ -464,12 +450,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m07",
-"src": null,
+"src": "lc2/clips/lc2cass_m07.mp4",
 "sf": 0,
 "img": "lc2/kf/top_lc2cass_2_lc2cass_c019.png",
 "seg": 23,
 "toma": 0,
-"desc": "toma 1/4 · top-down, she stirs shredded chicken and the noodles into the creamy sauce in the pot on the stove, the thick book Supper for One lying open on the co",
 "from": 6037,
 "dur": 112,
 "seed": 42272
@@ -477,13 +462,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m07",
-"src": null,
+"src": "lc2/clips/lc2cass_m07.mp4",
 "sf": 112,
 "img": "lc2/kf/plate_counter_lc2cass_c020.png",
 "seg": 23,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/4 · she spoons the chicken and noodles into a small white baking dish and scatters buttered crumbs on top; then she spoons the chicken and noodles into a ",
 "from": 6149,
 "dur": 255,
 "seed": 43056
@@ -491,13 +475,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m07",
-"src": null,
+"src": "lc2/clips/lc2cass_m07.mp4",
 "sf": 367,
 "img": null,
 "seg": 23,
 "toma": 2,
 "cont": true,
-"desc": "toma 3/4 · she wraps a second identical small dish of chicken and noodles tightly in foil and writes on it with a black marker",
 "from": 6404,
 "dur": 110,
 "seed": 44841
@@ -505,13 +488,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m07",
-"src": null,
+"src": "lc2/clips/lc2cass_m07.mp4",
 "sf": 476,
 "img": "lc2/kf/done_lc2cass_2_lc2cass_c023.png",
 "seg": 23,
 "toma": 3,
 "cont": true,
-"desc": "toma 4/4 · the small baking dish just out of the oven, the crumb top golden and the sauce bubbling at the edges",
 "from": 6514,
 "dur": 194,
 "seed": 45611
@@ -539,12 +521,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m08",
-"src": null,
+"src": "lc2/clips/lc2cass_m08.mp4",
 "sf": 0,
 "img": "lc2/kf/ing_lc2cass_3.png",
 "seg": 11,
 "toma": 0,
-"desc": "toma 1/1 · she stands at the wooden table with a small can of tuna, a bag of egg noodles, a bag of frozen peas, a small bowl of shredded cheddar, a sleeve of sal",
 "from": 7061,
 "dur": 298,
 "seed": 49440
@@ -562,12 +543,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m09",
-"src": null,
+"src": "lc2/clips/lc2cass_m09.mp4",
 "sf": 0,
 "img": "lc2/kf/top_lc2cass_3_lc2cass_c027.png",
 "seg": 25,
 "toma": 0,
-"desc": "toma 1/4 · top-down, in the small white baking dish she mixes the noodles, tuna, frozen peas and a creamy white sauce with a spoon, the thick book Supper for One",
 "from": 7566,
 "dur": 224,
 "seed": 52975
@@ -575,13 +555,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m09",
-"src": null,
+"src": "lc2/clips/lc2cass_m09.mp4",
 "sf": 224,
 "img": null,
 "seg": 25,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/4 · in the small white baking dish she mixes the noodles, tuna, frozen peas and a creamy white sauce with a spoon, the thick book Supper for One lying clo",
 "from": 7790,
 "dur": 112,
 "seed": 54543
@@ -589,13 +568,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m09",
-"src": null,
+"src": "lc2/clips/lc2cass_m09.mp4",
 "sf": 336,
 "img": "lc2/kf/plate_counter_lc2cass_c029.png",
 "seg": 25,
 "toma": 2,
 "cont": true,
-"desc": "toma 3/4 · she squeezes a lemon wedge into the casserole and stirs",
 "from": 7902,
 "dur": 175,
 "seed": 55327
@@ -603,13 +581,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m09",
-"src": null,
+"src": "lc2/clips/lc2cass_m09.mp4",
 "sf": 511,
 "img": null,
 "seg": 25,
 "toma": 3,
 "cont": true,
-"desc": "toma 4/4 · she sprinkles shredded cheddar over the top and crushes saltine crackers in her hand over it; then she slides the small dish into the oven and closes ",
 "from": 8077,
 "dur": 214,
 "seed": 56552
@@ -637,12 +614,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m10",
-"src": null,
+"src": "lc2/clips/lc2cass_m10.mp4",
 "sf": 0,
 "img": "lc2/kf/ing_lc2cass_4.png",
 "seg": 16,
 "toma": 0,
-"desc": "toma 1/2 · she stands at the wooden table with a quarter pound of ground beef, a bag of frozen mixed vegetables, a bowl of leftover mashed potatoes, a carton of ",
 "from": 8599,
 "dur": 159,
 "seed": 60206
@@ -650,13 +626,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m10",
-"src": null,
+"src": "lc2/clips/lc2cass_m10.mp4",
 "sf": 159,
 "img": null,
 "seg": 16,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/2 · she sprinkles a teaspoon of flour over the browned beef, then pours in beef broth and frozen mixed vegetables and stirs; then she spoons the beef fill",
 "from": 8758,
 "dur": 301,
 "seed": 61319
@@ -674,12 +649,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m11",
-"src": null,
+"src": "lc2/clips/lc2cass_m11.mp4",
 "sf": 0,
 "img": "lc2/kf/top_lc2cass_4_lc2cass_c037.png",
 "seg": 15,
 "toma": 0,
-"desc": "toma 1/2 · top-down, she spreads a cup of mashed potatoes over the filling with a spoon, then drags a fork across the top in rows, the thick book Supper for One ",
 "from": 9319,
 "dur": 287,
 "seed": 65246
@@ -687,13 +661,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m11",
-"src": null,
+"src": "lc2/clips/lc2cass_m11.mp4",
 "sf": 287,
 "img": "lc2/kf/done_lc2cass_4_lc2cass_c039.png",
 "seg": 15,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/2 · the dish on a folded towel, the potato ridges browned and crisp, gravy bubbling up at the edges",
 "from": 9606,
 "dur": 130,
 "seed": 67255
@@ -721,12 +694,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m12",
-"src": null,
+"src": "lc2/clips/lc2cass_m12.mp4",
 "sf": 0,
 "img": "lc2/kf/ing_lc2cass_5.png",
 "seg": 17,
 "toma": 0,
-"desc": "toma 1/3 · she stands at the wooden table with a box of elbow macaroni, a block of cheddar, a small bowl of diced ham, butter, flour, a small glass bottle of mil",
 "from": 9985,
 "dur": 145,
 "seed": 69908
@@ -734,13 +706,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m12",
-"src": null,
+"src": "lc2/clips/lc2cass_m12.mp4",
 "sf": 145,
 "img": "lc2/kf/plate_stove_lc2cass_c041.png",
 "seg": 17,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/3 · she pours a cup of elbow macaroni into a small pot of boiling water on the old white gas stove",
 "from": 10130,
 "dur": 104,
 "seed": 70923
@@ -748,13 +719,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m12",
-"src": null,
+"src": "lc2/clips/lc2cass_m12.mp4",
 "sf": 250,
 "img": null,
 "seg": 17,
 "toma": 2,
 "cont": true,
-"desc": "toma 3/3 · in a small saucepan on the stove she melts butter, stirs in flour and whisks in milk until it's thick",
 "from": 10234,
 "dur": 245,
 "seed": 71651
@@ -762,12 +732,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m13",
-"src": null,
+"src": "lc2/clips/lc2cass_m13.mp4",
 "sf": 0,
 "img": "lc2/kf/plate_stove_lc2cass_c043.png",
 "seg": 15,
 "toma": 0,
-"desc": "toma 1/2 · off the heat, she stirs shredded cheddar into the white sauce until it melts smooth, then sprinkles in a pinch of dry mustard",
 "from": 10479,
 "dur": 238,
 "seed": 73366
@@ -775,13 +744,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m13",
-"src": null,
+"src": "lc2/clips/lc2cass_m13.mp4",
 "sf": 238,
 "img": "lc2/kf/top_lc2cass_5_lc2cass_c044.png",
 "seg": 15,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/2 · top-down, she folds the macaroni and diced ham into the cheese sauce and spoons it into the small white baking dish, the thick book Supper for One lyi",
 "from": 10717,
 "dur": 173,
 "seed": 75032
@@ -799,12 +767,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m14",
-"src": null,
+"src": "lc2/clips/lc2cass_m14.mp4",
 "sf": 0,
 "img": null,
 "seg": 9,
 "toma": 0,
-"desc": "toma 1/1 · she scatters the rest of the cheese and crumbs over the top; then she slides the small dish into the oven and closes the door; then she digs a spoon i",
 "from": 11066,
 "dur": 240,
 "seed": 77475
@@ -832,12 +799,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m15",
-"src": null,
+"src": "lc2/clips/lc2cass_m15.mp4",
 "sf": 0,
 "img": "lc2/kf/ing_lc2cass_6.png",
 "seg": 17,
 "toma": 0,
-"desc": "toma 1/2 · she stands at the wooden table with a quarter pound of ground beef, a quarter onion, a bag of frozen green beans, a can of cream of mushroom soup, a b",
 "from": 11638,
 "dur": 249,
 "seed": 81479
@@ -845,13 +811,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m15",
-"src": null,
+"src": "lc2/clips/lc2cass_m15.mp4",
 "sf": 248,
 "img": null,
 "seg": 17,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/2 · she stirs frozen green beans and thick cream of mushroom soup into the browned beef in the skillet; then she spreads the beef mixture into the small w",
 "from": 11887,
 "dur": 238,
 "seed": 83222
@@ -869,12 +834,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m16",
-"src": null,
+"src": "lc2/clips/lc2cass_m16.mp4",
 "sf": 0,
 "img": "lc2/kf/top_lc2cass_6_lc2cass_c052.png",
 "seg": 14,
 "toma": 0,
-"desc": "toma 1/1 · top-down, with both hands she stands frozen tater tots up on end in neat tight rows over the filling, one by one, the thick book Supper for One lying ",
 "from": 12301,
 "dur": 403,
 "seed": 86120
@@ -902,12 +866,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m17",
-"src": null,
+"src": "lc2/clips/lc2cass_m17.mp4",
 "sf": 0,
 "img": "lc2/kf/ing_lc2cass_7.png",
 "seg": 18,
 "toma": 0,
-"desc": "toma 1/3 · she stands at the wooden table with a bowl of diced cooked chicken, a bag of frozen mixed vegetables, a small jar of gravy, a tube of refrigerated bis",
 "from": 12984,
 "dur": 121,
 "seed": 90901
@@ -915,13 +878,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m17",
-"src": null,
+"src": "lc2/clips/lc2cass_m17.mp4",
 "sf": 121,
 "img": "lc2/kf/top_lc2cass_7_lc2cass_c057.png",
 "seg": 18,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/3 · top-down, in the small white bowl she stirs diced chicken, frozen mixed vegetables and creamy white sauce together with a spoon, the thick book Supper",
 "from": 13105,
 "dur": 207,
 "seed": 91748
@@ -929,13 +891,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m17",
-"src": null,
+"src": "lc2/clips/lc2cass_m17.mp4",
 "sf": 328,
 "img": null,
 "seg": 18,
 "toma": 2,
 "cont": true,
-"desc": "toma 3/3 · in the small white bowl she stirs diced chicken, frozen mixed vegetables and creamy white sauce together with a spoon, the thick book Supper for One l",
 "from": 13312,
 "dur": 182,
 "seed": 93197
@@ -953,12 +914,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m18",
-"src": null,
+"src": "lc2/clips/lc2cass_m18.mp4",
 "sf": 0,
 "img": null,
 "seg": 9,
 "toma": 0,
-"desc": "toma 1/1 · she presses one refrigerated biscuit flat between her palms and lays it on top of the steaming filling; then she slides the small bowl into the oven a",
 "from": 13745,
 "dur": 251,
 "seed": 96228
@@ -976,12 +936,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m19",
-"src": null,
+"src": "lc2/clips/lc2cass_m19.mp4",
 "sf": 0,
 "img": "lc2/kf/plate_table_lc2cass_c064.png",
 "seg": 10,
 "toma": 0,
-"desc": "toma 1/2 · she sits down at the small wooden table with a plate of meatloaf, a folded cloth napkin and a fork, and takes a slow first bite",
 "from": 14090,
 "dur": 162,
 "seed": 98643
@@ -989,13 +948,12 @@
 {
 "k": "clip",
 "id": "lc2cass_m19",
-"src": null,
+"src": "lc2/clips/lc2cass_m19.mp4",
 "sf": 161,
 "img": "lc2/kf/plate_fridge_lc2cass_c065.png",
 "seg": 10,
 "toma": 1,
 "cont": true,
-"desc": "toma 2/2 · she opens the freezer drawer and lays a foil-wrapped small baking dish next to two others, all labeled in marker",
 "from": 14252,
 "dur": 110,
 "seed": 99777
@@ -1081,12 +1039,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m20",
-"src": null,
+"src": "lc2/clips/lc2cass_m20.mp4",
 "sf": 0,
 "img": "lc2/kf/plate_libro2_lc2cass_c066.png",
 "seg": 6,
 "toma": 0,
-"desc": "toma 1/1 · she sits at the small wooden table, opens the thick book Supper for One flat in front of her and turns a page with one finger",
 "from": 15644,
 "dur": 159,
 "seed": 109521
@@ -1106,12 +1063,11 @@
 {
 "k": "clip",
 "id": "lc2cass_m21",
-"src": null,
+"src": "lc2/clips/lc2cass_m21.mp4",
 "sf": 0,
 "img": "lc2/kf/plate_table_lc2cass_c067.png",
 "seg": 7,
 "toma": 0,
-"desc": "toma 1/1 · she sits at the table with her plate, looks out the window past the yellow gingham curtains and smiles softly",
 "from": 15883,
 "dur": 193,
 "seed": 111194
@@ -1689,5 +1645,5 @@
 }
 }
 ],
-"pendientes": 21
+"pendientes": 0
 }
