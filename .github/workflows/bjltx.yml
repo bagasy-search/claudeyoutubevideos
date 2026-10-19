@@ -1,0 +1,25 @@
+# Arreglo de entrega: re-codifica <slug>.mp4 del release con rango tv/bt709 y GOP 2 s (compuerta check_entrega), audio copiado.
+name: bjltx
+on:
+  push:
+    branches: ['bjltx-*']
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    env: { GH_TOKEN: "${{ github.token }}", S: bjtruck }
+    steps:
+      - name: ffmpeg estático
+        run: |
+          for n in 1 2 3 4; do curl -sfL --max-time 120 -o ff.tar.xz https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz && break; sleep $((n*5)); done
+          mkdir -p /tmp/ff && tar xf ff.tar.xz -C /tmp/ff --strip-components=1 && echo "/tmp/ff/bin" >> "$GITHUB_PATH" && rm ff.tar.xz
+      - name: recodificar
+        run: |
+          for n in 1 2 3; do gh release download $S --repo ${{ github.repository }} -p $S.mp4 --clobber && break; sleep 10; done
+          mv $S.mp4 crudo.mp4
+          ffmpeg -v error -y -i crudo.mp4 -map 0:v -map 0:a -vf "format=yuv420p" -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
+            -c:v libx264 -preset faster -crf 19 -maxrate 8M -bufsize 16M -g 48 -keyint_min 48 -sc_threshold 0 -c:a copy -movflags +faststart $S.mp4
+          ffprobe -v error -select_streams v:0 -show_entries stream=pix_fmt,color_range,color_space -of default=nw=1 $S.mp4
+          for n in 1 2 3; do gh release upload $S $S.mp4 --repo ${{ github.repository }} --clobber && break; sleep 15; done
