@@ -1113,14 +1113,6 @@
 },
 {
 "from": 2414,
-"dur": 135,
-"name": "Lc2Plates",
-"props": {
-"n": 2
-}
-},
-{
-"from": 2558,
 "dur": 183,
 "name": "Lc2Ingredients",
 "props": {
@@ -1150,7 +1142,7 @@
 }
 },
 {
-"from": 2750,
+"from": 2606,
 "dur": 135,
 "name": "Lc2Oven",
 "props": {
@@ -1578,14 +1570,6 @@
 },
 {
 "from": 13022,
-"dur": 135,
-"name": "Lc2Plates",
-"props": {
-"n": 1
-}
-},
-{
-"from": 13166,
 "dur": 165,
 "name": "Lc2Ingredients",
 "props": {
@@ -1611,7 +1595,7 @@
 }
 },
 {
-"from": 13340,
+"from": 13196,
 "dur": 135,
 "name": "Lc2Oven",
 "props": {

@@ -99,9 +99,11 @@ export const Lc2Homework: React.FC<{ names: string[]; pick?: number; line?: stri
 };
 
 // ---------- las fuentes que hacen falta ----------
-type Shape = "sheet" | "loaf" | "dish" | "foil";
+type Shape = "sheet" | "loaf" | "dish" | "foil" | "skillet" | "lid";
 const PanIcon: React.FC<{ s: Shape }> = ({ s }) => s === "sheet" ? <><rect x={10} y={40} width={220} height={124} rx={12} fill="#B9BEC4" /><rect x={22} y={52} width={196} height={100} rx={6} fill="#D3D7DB" /></>
   : s === "loaf" ? <><path d="M26 48 L214 48 L194 162 L46 162 Z" fill="#DCEBF1" stroke="#8DB3C2" strokeWidth={6} strokeLinejoin="round" /><path d="M40 62 L200 62" stroke="#fff" strokeWidth={5} /></>
+  : s === "skillet" ? <><rect x={168} y={98} width={68} height={18} rx={9} fill="#2B2B2B" /><circle cx={100} cy={107} r={82} fill="#2B2B2B" /><circle cx={100} cy={107} r={64} fill="#3E3E3E" /><circle cx={100} cy={107} r={64} fill="none" stroke="#555" strokeWidth={3} /></>
+  : s === "lid" ? <><ellipse cx={120} cy={130} rx={100} ry={30} fill="#B9BEC4" /><path d="M20 130 Q120 40 220 130 Z" fill="#D3D7DB" /><rect x={104} y={62} width={32} height={16} rx={8} fill="#2B2B2B" /></>
   : s === "dish" ? <><ellipse cx={120} cy={112} rx={102} ry={54} fill="#FFFDF7" stroke="#C7BBA4" strokeWidth={6} /><ellipse cx={120} cy={102} rx={78} ry={34} fill="#F1EADB" /></>
   : <><rect x={28} y={74} width={184} height={74} rx={8} fill="#8F969D" /><rect x={28} y={58} width={184} height={26} rx={6} fill="#E3E6E9" /><path d="M40 84 L200 84" stroke={LOR.gingham} strokeWidth={6} /></>;
 export const Lc2Pans: React.FC<{ items: { t: string; sub: string; shape: Shape }[]; title?: string }> = ({ items, title = "All you need" }) => {

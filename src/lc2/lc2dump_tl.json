@@ -1241,14 +1241,6 @@
 }
 },
 {
-"from": 2205,
-"dur": 135,
-"name": "Lc2Plates",
-"props": {
-"n": 2
-}
-},
-{
 "from": 2845,
 "dur": 138,
 "name": "Lc2Opener",
@@ -1294,14 +1286,6 @@
 "name": "Lc2Oven",
 "props": {
 "temp": 375
-}
-},
-{
-"from": 4006,
-"dur": 135,
-"name": "Lc2Plates",
-"props": {
-"n": 2
 }
 },
 {
