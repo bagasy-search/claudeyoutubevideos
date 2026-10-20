@@ -1,0 +1,152 @@
+{
+ "b000": {
+  "file": "b000_t1.wav",
+  "gap": 0,
+  "ratio": 0.989,
+  "dur": 56.6,
+  "esperado": 58.46,
+  "cps": 15.39,
+  "ok": true,
+  "intentos": 1
+ },
+ "b001": {
+  "file": "b001_t1.wav",
+  "gap": 3,
+  "ratio": 0.971,
+  "dur": 59.75,
+  "esperado": 60.13,
+  "cps": 15.0,
+  "ok": true,
+  "intentos": 1
+ },
+ "b002": {
+  "file": "b002_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 58.1,
+  "esperado": 59.26,
+  "cps": 15.2,
+  "ok": true,
+  "intentos": 1
+ },
+ "b003": {
+  "file": "b003_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 53.04,
+  "esperado": 56.58,
+  "cps": 15.89,
+  "ok": true,
+  "intentos": 1
+ },
+ "b004": {
+  "file": "b004_t1.wav",
+  "gap": 0,
+  "ratio": 0.976,
+  "dur": 56.82,
+  "esperado": 56.85,
+  "cps": 14.91,
+  "ok": true,
+  "intentos": 1
+ },
+ "b005": {
+  "file": "b005_t1.wav",
+  "gap": 0,
+  "ratio": 0.977,
+  "dur": 53.1,
+  "esperado": 54.9,
+  "cps": 15.4,
+  "ok": true,
+  "intentos": 1
+ },
+ "b006": {
+  "file": "b006_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 56.37,
+  "esperado": 55.91,
+  "cps": 14.78,
+  "ok": true,
+  "intentos": 1
+ },
+ "b007": {
+  "file": "b007_t1.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 57.17,
+  "esperado": 58.46,
+  "cps": 15.23,
+  "ok": true,
+  "intentos": 1
+ },
+ "b008": {
+  "file": "b008_t1.wav",
+  "gap": 0,
+  "ratio": 0.994,
+  "dur": 56.64,
+  "esperado": 57.52,
+  "cps": 15.13,
+  "ok": true,
+  "intentos": 1
+ },
+ "b009": {
+  "file": "b009_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 58.66,
+  "esperado": 58.72,
+  "cps": 14.92,
+  "ok": true,
+  "intentos": 1
+ },
+ "b010": {
+  "file": "b010_t1.wav",
+  "gap": 0,
+  "ratio": 0.988,
+  "dur": 57.9,
+  "esperado": 58.52,
+  "cps": 15.06,
+  "ok": true,
+  "intentos": 1
+ },
+ "b011": {
+  "file": "b011_t1.wav",
+  "gap": 0,
+  "ratio": 0.989,
+  "dur": 57.56,
+  "esperado": 60.27,
+  "cps": 15.6,
+  "ok": true,
+  "intentos": 1
+ },
+ "b012": {
+  "file": "b012_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 53.01,
+  "esperado": 57.79,
+  "cps": 16.24,
+  "ok": true,
+  "intentos": 1
+ },
+ "b013": {
+  "file": "b013_t1.wav",
+  "gap": 3,
+  "ratio": 0.913,
+  "dur": 54.3,
+  "esperado": 54.23,
+  "cps": 14.88,
+  "ok": true,
+  "intentos": 1
+ },
+ "b014": {
+  "file": "b014_t1.wav",
+  "gap": 0,
+  "ratio": 1.0,
+  "dur": 13.47,
+  "esperado": 13.42,
+  "cps": 14.85,
+  "ok": true,
+  "intentos": 1
+ }
+}
