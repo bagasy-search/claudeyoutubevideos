@@ -7,6 +7,7 @@
 // Con eso se elige qué efectos van a la Biblioteca (desde/hasta) y biblioteca.yml modo=cortes los corta.
 import { execFileSync, spawnSync } from "node:child_process";
 import fs from "node:fs";
+import { bajarAlt } from "./ytalt.mjs";
 
 const { REPO, URL, SLUG } = process.env;
 if (!URL || !/^[a-z0-9_-]+$/i.test(SLUG || "")) { console.error("falta url o slug (sólo letras, números, - y _)"); process.exit(2); }
@@ -38,7 +39,20 @@ if (rel) {
 // después los proxies que pasaron la prueba del workflow. Tope de 10 min por intento (antes 30: un proxy muerto colgaba todo).
 const COOKIES = fs.existsSync("/tmp/cookies") ? fs.readdirSync("/tmp/cookies").map((f) => `/tmp/cookies/${f}`) : [];
 const intentos = [["", []], ...COOKIES.map((c) => ["", ["--cookies", c]]), ...proxies.slice(0, 6).map((p) => [p, []])];
+// 20-oct: YouTube bloquea las IPs de GitHub ("no soy un bot", ni con cookies) → después del 1er intento va el
+// plan B (ytalt.mjs: túneles públicos Invidious/Piped/cobalt), y recién después cookies y proxies.
 for (let i = 0; i < intentos.length && !ok; i++) {
+  if (i === 1) {
+    const r = await bajarAlt(URL, `${T}/v.mp4`, { alto: 720, audio: true });
+    if (r.ok) {
+      const probe = ff(["-i", `${T}/v.mp4`, "-f", "null", "-t", "0.1", "-"]);
+      const dim = probe.match(/, (\d{2,5})x(\d{2,5})/);
+      fs.writeFileSync(`${T}/v.info.json`, JSON.stringify({ ...r.info, width: dim ? +dim[1] : null, height: dim ? +dim[2] : null }));
+      if (r.subs) fs.renameSync(r.subs, `${T}/v.subs.vtt`);
+      console.log(`plan B: ${r.via} (${r.alto}p)`);
+      ok = true; break;
+    }
+  }
   const [px, extra] = intentos[i];
   const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--no-warnings", "--no-write-playlist-metafiles",
     "-f", "bv*[height<=720][vcodec^=avc1]+ba/bv*[height<=720]+ba/b[height<=720]/b", "--merge-output-format", "mp4",

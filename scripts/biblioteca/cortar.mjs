@@ -7,6 +7,7 @@
 // intermedio: publicar.mjs lo pasa al bucket `biblioteca` de Supabase, que es lo que lee Bagasy.
 import { execFileSync, spawnSync } from "node:child_process";
 import fs from "node:fs";
+import { bajarAlt } from "./ytalt.mjs";
 
 const REPO = process.env.REPO, REL = "biblioteca";
 const IDS = (process.env.IDS || "").split(",").map((s) => s.trim()).filter(Boolean);
@@ -43,20 +44,34 @@ const vfDe = (e) => {
 const ENC = ["-an", "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-g", "30", "-movflags", "+faststart"];
 const poster = (mp4, jpg, at) => ff(["-ss", String(at), "-i", mp4, "-frames:v", "1", "-q:v", "3", jpg]);
 
-// YouTube: sólo el tramo, sólo video, con keyframe en el corte (el segundo exacto), rotando proxies
-const bajarYT = (url, a, b, dst) => {
-  // como molde.mjs: primero sin proxy (IP del runner) con dos clientes, después los proxies que pasaron la prueba
+// YouTube: sólo el tramo, sólo video, con keyframe en el corte (el segundo exacto), rotando proxies.
+// 20-oct: YouTube bloquea las IPs de GitHub → si el 1er intento falla, plan B (ytalt.mjs: túneles públicos
+// Invidious/Piped/cobalt) baja el video ENTERO una sola vez por link y los tramos se cortan de ahí.
+const enteros = new Map();
+const bajarYT = async (url, a, b, dst) => {
   const COOKIES = fs.existsSync("/tmp/cookies") ? fs.readdirSync("/tmp/cookies").map((f) => `/tmp/cookies/${f}`) : [];
   const intentos = [["", []], ...COOKIES.map((c) => ["", ["--cookies", c]]), ...proxies.slice(0, 4).map((p) => [p, []])];
-  for (let i = 0; i < intentos.length; i++) {
+  const probar = (i) => {
     const [px, extra] = intentos[i];
     const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--quiet", "--no-warnings",
       "-f", "bv*[height<=1080][vcodec^=avc1]/bv*[height<=1080]/b[height<=1080]/b",
       "--download-sections", `*${a}-${b}`, "--force-keyframes-at-cuts",
       "--remux-video", "mp4", "-o", dst, url], { encoding: "utf8", timeout: 300000, killSignal: "SIGKILL" });
-    if (r.status === 0 && fs.existsSync(dst) && fs.statSync(dst).size > 20000) return;
+    if (r.status === 0 && fs.existsSync(dst) && fs.statSync(dst).size > 20000) return true;
     console.log(`  yt-dlp intento ${i + 1} falló: ${(r.stderr || "").trim().split("\n").pop()}`);
+    return false;
+  };
+  if (!enteros.has(url) && probar(0)) return;
+  if (!enteros.has(url)) {
+    const f = `${TMP}/alt/entero_${enteros.size}.mp4`;
+    fs.mkdirSync(`${TMP}/alt`, { recursive: true });
+    const r = await bajarAlt(url, f, { alto: 720, audio: false });
+    console.log(r.ok ? `  plan B: ${r.via} (${r.alto}p)` : "  plan B: ningún túnel anduvo");
+    enteros.set(url, r.ok ? f : null);
   }
+  const f = enteros.get(url);
+  if (f) { ff(["-ss", String(a), "-i", f, "-t", String(b - a), "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", dst]); return; }
+  for (let i = 1; i < intentos.length; i++) if (probar(i)) return;
   throw new Error("no pude bajar el tramo de YouTube");
 };
 
@@ -69,7 +84,7 @@ for (const e of pend) {
   try {
     if (e.src.tipo === "youtube") {
       const raw = `${TMP}/yt_${e.id}.mp4`;
-      bajarYT(e.src.url, e.desde, e.hasta, raw);
+      await bajarYT(e.src.url, e.desde, e.hasta, raw);
       ff(["-i", raw, "-t", String(dur), "-vf", vfDe(e), ...ENC, mp4]);
     } else {
       const url = `https://github.com/${REPO}/releases/download/${e.src.release}/${e.src.archivo}`;
