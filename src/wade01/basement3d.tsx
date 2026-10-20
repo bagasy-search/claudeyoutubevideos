@@ -619,7 +619,6 @@ export const BasementWorld: React.FC<{ t: number; fx?: Partial<FX> }> = ({ t, fx
         {f.screen > 0.01 && <mesh position={[0, 0.006, 0]} rotation={[-Math.PI / 2, 0, 0]}><circleGeometry args={[BR - 0.016, 40]} /><meshStandardMaterial color="#6a6f74" roughness={0.6} metalness={0.4} transparent opacity={0.85} /></mesh>}
         <primitive object={pelMesh} />
         {/* goteo por los agujeros */}
-        {f.melt > 0.05 && <Pts pts={useMemo(() => new Float32Array(90 * 3), [])} color="#bfe6ff" size={0.012} opacity={0} />}
       </Bucket>
       {/* gotas que caen de los agujeros al balde de abajo */}
       {f.melt > 0.05 && f.cans > 0.5 && (() => {
