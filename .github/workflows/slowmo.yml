@@ -29,13 +29,15 @@ jobs:
           set -e
           echo "$JOB" > job.json
           ID=$(jq -r .id job.json); SLUG=$(jq -r .slug job.json); SLOW=$(jq -r .slow job.json)
+          # 20-oct: bash no hace cuentas con decimales ($((30*3.6)) = syntax error) → el fps se calcula con awk
+          FPS=$(awk -v s="$SLOW" 'BEGIN{printf "%g", 30*s}')
           for n in 1 2 3 4 5; do curl -fsSL --max-time 300 "$(jq -r .url job.json)" -o raw.mp4 && [ -s raw.mp4 ] && break; sleep $((n*5)); done
           mkdir out
           jq -c '.cuts[]' job.json | while read -r c; do
             echo "$(jq -r .n <<<"$c") $(jq -r .s <<<"$c") $(jq -r .len <<<"$c")"
           done > cuts.txt
           # MISMO filtro que cortarToma() de agnes_multishot.mjs (cambiarlo en los dos lados)
-          cat cuts.txt | xargs -P "$(nproc)" -L 1 bash -c 'ffmpeg -v error -y -ss "$1" -t "$2" -i raw.mp4 -vf "minterpolate=fps=$((30*'"$SLOW"')):mi_mode=mci:mc_mode=aobmc:vsbmc=1,setpts='"$SLOW"'*PTS,fps=30,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1" -an -r 30 -c:v libx264 -crf 19 -preset veryfast -pix_fmt yuv420p "out/'"$ID"'__$0.mp4"'
+          cat cuts.txt | xargs -P "$(nproc)" -L 1 bash -c 'ffmpeg -v error -y -ss "$1" -t "$2" -i raw.mp4 -vf "minterpolate=fps='"$FPS"':mi_mode=mci:mc_mode=aobmc:vsbmc=1,setpts='"$SLOW"'*PTS,fps=30,scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1" -an -r 30 -c:v libx264 -crf 19 -preset veryfast -pix_fmt yuv420p "out/'"$ID"'__$0.mp4"'
           ls -la out
           R="slowmo-$SLUG"
           gh release view "$R" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create "$R" -R "$GITHUB_REPOSITORY" --title "$R" --notes "clips en cámara lenta (temporales)" || true
