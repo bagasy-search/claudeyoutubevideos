@@ -234,7 +234,7 @@ export const rest = makeVideo({
     L.push(<Words key="tdis" t={t} items={[{ at: at("disappear into the line"), txt: "DISAPPEARS? DO IT AGAIN", col: COL.red }]} out={451.2} y={860} size={80} />);
     L.push(<BigNum key="29" t={t} at={at("for 29 years")} text="29 YEARS" x={1340} y={330} size={190} out={460.4} sub="PASSED EVERY SPRING" />);
     // ---- la cuenta ----
-    L.push(<Receipt key="rc" t={t} rows={[{ at: at("portland cement, a few cups"), item: "CEMENT (A FEW CUPS)", $: 0.5 }, { at: at("play sand, a few cups"), item: "PLAY SAND", $: 0.25 }, { at: at("white glue, a couple"), item: "WHITE GLUE", $: 1.25 }, { at: at("wire brush and a putty knife"), item: "BRUSH + PUTTY KNIFE", $: 0 }]} totalAt={at("call it $2")} x={1380} y={190} out={474.5} sc={1.25} title="ONE CRACK" />);
+    L.push(<Receipt key="rc" t={t} rows={[{ at: at("portland cement, a few cups"), item: "CEMENT (A FEW CUPS)", $: 0.5 }, { at: at("play sand, a few cups"), item: "PLAY SAND", $: 0.25 }, { at: at("white glue, a couple"), item: "WHITE GLUE", $: 1.25 }, { at: at("wire brush and a putty knife"), item: "BRUSH + PUTTY KNIFE", $: 0 }]} totalAt={at("call it $2")} x={1200} y={190} out={474.5} sc={1.25} title="ONE CRACK" />);
     L.push(<Versus key="vs" t={t} at={474.6} out={478.5} L={{ label: "MY SLURRY", val: "$2", h: 0.06, col: "#9df0b4", mark: "ok" }} R={{ label: "THE JACKHAMMER", val: "$4,000", h: 0.8, col: COL.red, mark: "x" }} />);
     // ---- los errores ----
     L.push(<MistakesDeal key="md" t={t} at={at("now the mistakes")} out={480.0} />);

@@ -363,13 +363,13 @@ export const SlabWorld: React.FC<{ t: number }> = ({ t }) => {
           <meshStandardMaterial color={new THREE.Color("#4a4844").lerp(new THREE.Color("#ffb257"), s.joints)} emissive={new THREE.Color("#ff9a3c")} emissiveIntensity={s.joints * 1.6} roughness={1} /></mesh>
       ))}
       {/* la grieta en planta + fantasma "el otoño pasado" */}
-      {s.len > 0.01 && <mesh geometry={geoLine}><meshStandardMaterial color={new THREE.Color("#1e1d1b").lerp(new THREE.Color("#3e4650").lerp(new THREE.Color("#a29e95"), s.cured), Math.min(1, Math.max(0, (s.slurry - 0.9) / 0.1)))} roughness={s.slurry > 0.9 ? 0.15 + 0.8 * s.cured : 1} polygonOffset polygonOffsetFactor={-2} /></mesh>}
+      {s.len > 0.01 && <mesh geometry={geoLine}><meshStandardMaterial color={new THREE.Color("#1e1d1b").lerp(new THREE.Color("#8a9195").lerp(new THREE.Color("#a6a299"), s.cured), Math.min(1, Math.max(0, (s.slurry - 0.9) / 0.1)))} roughness={s.slurry > 0.9 ? 0.15 + 0.8 * s.cured : 1} polygonOffset polygonOffsetFactor={-2} /></mesh>}
       {s.ghost > 0.01 && <mesh geometry={geoGhost} position={[0, 0.0015, 0]}><meshBasicMaterial color="#ffb257" transparent opacity={0.85 * s.ghostO} toneMapped={false} depthWrite={false} /></mesh>}
 
       {/* rellenos de la grieta */}
       {geoSand && <mesh geometry={geoSand}><meshStandardMaterial color="#cdb68c" roughness={1} /></mesh>}
       {geoW && <mesh geometry={geoW}><meshStandardMaterial color={new THREE.Color("#3f8fd6").lerp(new THREE.Color("#e6f4ff"), s.ice)} roughness={0.15 + 0.5 * s.ice} metalness={0.05} transparent opacity={0.78} emissive={new THREE.Color("#2a6fb8").lerp(new THREE.Color("#a8d8ff"), s.ice)} emissiveIntensity={0.25 + 0.3 * s.ice} map={s.ice > 0.3 ? cz.ice : undefined} /></mesh>}
-      {geoSl && <mesh geometry={geoSl}><meshStandardMaterial color={new THREE.Color("#3e4650").lerp(new THREE.Color("#b3afa6"), s.cured)} roughness={0.12 + 0.8 * s.cured} metalness={0.15 * (1 - s.cured)} emissive={new THREE.Color("#0d1a26")} emissiveIntensity={0.6 * (1 - s.cured)} /></mesh>}
+      {geoSl && <mesh geometry={geoSl}><meshStandardMaterial color={new THREE.Color("#8e9599").lerp(new THREE.Color("#b3afa6"), s.cured)} roughness={0.08 + 0.85 * s.cured} metalness={0.1 * (1 - s.cured)} /></mesh>}
       {/* chorro de lechada que cae desde arriba */}
       {s.pour > 0.01 && <mesh position={[xS - 0.01, G.top + 0.5 * s.pour, G.zCut - 0.35]}><cylinderGeometry args={[0.012, 0.018, 1.0 * s.pour, 12]} /><meshStandardMaterial color="#77746f" roughness={0.3} /></mesh>}
 
