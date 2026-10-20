@@ -20,11 +20,23 @@ const ff = (args, timeout = 1800000) => {
 };
 const proxies = fs.readFileSync("/tmp/proxies.txt", "utf8").split(/\r?\n/).map((s) => s.trim()).filter((s) => s && !s.startsWith("#"));
 
-// 1) bajar (≤720p alcanza para leer la edición) + info + subtítulos
+// 1) bajar (≤720p alcanza para leer la edición) + info + subtítulos.
+// URL = link de YouTube, "ytsearch1:<título y canal>" (el video ya no está en el disco), o
+// "release:<tag>/<archivo>" para un MP4 que el creador mandó y se subió a un release (reel, grabación de pantalla).
 let ok = false;
+const rel = URL.match(/^release:([^/]+)\/(.+)$/);
+if (rel) {
+  gh("release", "download", rel[1], "-R", REPO, "-p", rel[2], "-D", T, "--clobber");
+  fs.renameSync(`${T}/${rel[2]}`, `${T}/v.mp4`);
+  const probe = ff(["-i", `${T}/v.mp4`, "-f", "null", "-t", "0.1", "-"]);
+  const m = probe.match(/Duration: (\d+):(\d+):([\d.]+)/), dim = probe.match(/, (\d{2,5})x(\d{2,5})/);
+  fs.writeFileSync(`${T}/v.info.json`, JSON.stringify({ title: SLUG, channel: "archivo del creador",
+    duration: m ? +m[1] * 3600 + +m[2] * 60 + +m[3] : 0, width: dim ? +dim[1] : null, height: dim ? +dim[2] : null }));
+  ok = true;
+}
 for (let i = 0; i < Math.min(8, Math.max(1, proxies.length)) && !ok; i++) {
   const px = proxies.length ? proxies[(Math.floor(Math.random() * proxies.length) + i) % proxies.length] : "";
-  const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), "--no-playlist", "--no-warnings",
+  const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), "--no-playlist", "--no-warnings", "--no-write-playlist-metafiles",
     "-f", "bv*[height<=720][vcodec^=avc1]+ba/bv*[height<=720]+ba/b[height<=720]/b", "--merge-output-format", "mp4",
     "--write-info-json", "--write-auto-subs", "--write-subs", "--sub-langs", "en.*,es.*", "--sub-format", "vtt",
     "-o", `${T}/v.%(ext)s`, URL], { encoding: "utf8", timeout: 1800000, killSignal: "SIGKILL" });
@@ -34,7 +46,7 @@ for (let i = 0; i < Math.min(8, Math.max(1, proxies.length)) && !ok; i++) {
 if (!ok) { console.error("no pude bajar el video"); process.exit(1); }
 const info = JSON.parse(fs.readFileSync(`${T}/v.info.json`, "utf8"));
 fs.writeFileSync(`${OUT}/info.json`, JSON.stringify({
-  url: URL, id: info.id, titulo: info.title, canal: info.channel || info.uploader, canal_url: info.channel_url,
+  url: info.webpage_url || URL, id: info.id, titulo: info.title, canal: info.channel || info.uploader, canal_url: info.channel_url,
   vistas: info.view_count, likes: info.like_count, subida: info.upload_date, duracion: info.duration,
   ancho: info.width, alto: info.height, fps: info.fps,
 }, null, 1));
