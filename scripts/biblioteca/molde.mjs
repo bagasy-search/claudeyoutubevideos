@@ -34,12 +34,15 @@ if (rel) {
     duration: m ? +m[1] * 3600 + +m[2] * 60 + +m[3] : 0, width: dim ? +dim[1] : null, height: dim ? +dim[2] : null }));
   ok = true;
 }
-for (let i = 0; i < Math.min(8, Math.max(1, proxies.length)) && !ok; i++) {
-  const px = proxies.length ? proxies[(Math.floor(Math.random() * proxies.length) + i) % proxies.length] : "";
-  const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), "--no-playlist", "--no-warnings", "--no-write-playlist-metafiles",
+// 20-oct: los proxies de julio murieron → primero SIN proxy (IP del runner, nunca la de la casa) con dos clientes,
+// después los proxies que pasaron la prueba del workflow. Tope de 10 min por intento (antes 30: un proxy muerto colgaba todo).
+const intentos = [["", []], ["", ["--extractor-args", "youtube:player_client=tv_simply,mweb"]], ...proxies.slice(0, 6).map((p) => [p, []])];
+for (let i = 0; i < intentos.length && !ok; i++) {
+  const [px, extra] = intentos[i];
+  const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--no-warnings", "--no-write-playlist-metafiles",
     "-f", "bv*[height<=720][vcodec^=avc1]+ba/bv*[height<=720]+ba/b[height<=720]/b", "--merge-output-format", "mp4",
     "--write-info-json", "--write-auto-subs", "--write-subs", "--sub-langs", "en.*,es.*", "--sub-format", "vtt",
-    "-o", `${T}/v.%(ext)s`, URL], { encoding: "utf8", timeout: 1800000, killSignal: "SIGKILL" });
+    "-o", `${T}/v.%(ext)s`, URL], { encoding: "utf8", timeout: 600000, killSignal: "SIGKILL" });
   ok = r.status === 0 && fs.existsSync(`${T}/v.mp4`);
   if (!ok) console.log(`intento ${i + 1}: ${(r.stderr || "").trim().split("\n").slice(-2).join(" | ")}`);
 }

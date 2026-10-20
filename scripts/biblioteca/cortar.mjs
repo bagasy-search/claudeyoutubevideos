@@ -45,10 +45,11 @@ const poster = (mp4, jpg, at) => ff(["-ss", String(at), "-i", mp4, "-frames:v", 
 
 // YouTube: sólo el tramo, sólo video, con keyframe en el corte (el segundo exacto), rotando proxies
 const bajarYT = (url, a, b, dst) => {
-  const lista = proxies.length ? proxies : [""];
-  for (let i = 0; i < Math.min(lista.length, 6); i++) {
-    const px = lista[(Math.floor(Math.random() * lista.length) + i) % lista.length];
-    const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), "--no-playlist", "--quiet", "--no-warnings",
+  // como molde.mjs: primero sin proxy (IP del runner) con dos clientes, después los proxies que pasaron la prueba
+  const intentos = [["", []], ["", ["--extractor-args", "youtube:player_client=tv_simply,mweb"]], ...proxies.slice(0, 4).map((p) => [p, []])];
+  for (let i = 0; i < intentos.length; i++) {
+    const [px, extra] = intentos[i];
+    const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--quiet", "--no-warnings",
       "-f", "bv*[height<=1080][vcodec^=avc1]/bv*[height<=1080]/b[height<=1080]/b",
       "--download-sections", `*${a}-${b}`, "--force-keyframes-at-cuts",
       "--remux-video", "mp4", "-o", dst, url], { encoding: "utf8", timeout: 300000, killSignal: "SIGKILL" });

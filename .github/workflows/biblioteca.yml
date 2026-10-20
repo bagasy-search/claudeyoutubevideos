@@ -67,7 +67,7 @@ jobs:
               [ "$c" = "200" ] && echo "$p" >> /tmp/proxies.txt ) &
           done < /tmp/todos.txt; wait
           echo "proxies que andan: $(wc -l < /tmp/proxies.txt) de $(wc -l < /tmp/todos.txt)"
-          [ -s /tmp/proxies.txt ] || cp /tmp/todos.txt /tmp/proxies.txt
+          true  # si ninguno anda queda vacío: los scripts prueban primero sin proxy (IP del runner)
       - name: cortes
         if: ${{ github.event.inputs.modo == 'cortes' }}
         env:
