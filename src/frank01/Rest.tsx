@@ -89,8 +89,8 @@ export const rest = makeVideo({
       CL(373.2, "s26", "whip"),
       CL(376.3, "s27", "whip"),
       W(379.7, "zoom"),
-      AVat(383.0, "whipL"),
-      W(386.9, "zoom"),
+      AVat(381.9, "whipL"),
+      W(384.1, "zoom"),
       CL(390.6, "s28", "portal", [960, 640]),
       AV(397.05, "whipL", { spans: [[398.2, 401.1]], edge: true }),
       CL(401.12, "s29", "flip"),
@@ -214,7 +214,7 @@ export const rest = makeVideo({
     L.push(<Words key="tdeep" t={t} items={[{ at: at("more than about half an inch"), txt: "DEEPER THAN ½ INCH?", col: COL.amber }]} out={368.0} y={200} size={86} />);
     L.push(<Words key="w18" t={t} items={[{ at: at("dry sand down"), txt: "DRY SAND FIRST" }, { at: at("filling a cave"), txt: "DON'T FILL A CAVE", col: COL.amber }]} out={373.0} y={860} size={84} />);
     { const c = sp(PT.crackSec);
-      L.push(<Tag key="tbub" t={t} at={at("little bubbles come up")} x={c.x} y={c.y} dx={240} dy={-160} text="BUBBLES" sub="AIR COMING OUT" col={COL.ice2} out={383.0} />); }
+      L.push(<Tag key="tbub" t={t} at={at("little bubbles come up")} x={c.x} y={c.y} dx={240} dy={-160} text="BUBBLES" sub="AIR COMING OUT" col={COL.ice2} out={381.9} />); }
     L.push(<Tag key="thi" t={t} at={at("slightly higher than the surface")} x={960} y={540} dx={240} dy={-170} text="A HAIR HIGHER" col={COL.amber} out={390.4} />);
     // ---- paso 6: enrasar ----
     L.push(<StepTitle key="s6" t={t} at={at("step 6")} n={6} name="STRIKE IT OFF" out={at("step 6") + 2.3} />);
