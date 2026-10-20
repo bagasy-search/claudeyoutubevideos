@@ -9,6 +9,30 @@ const G = GEO as unknown as Record<string, number[][][]>;
 const R2D = Math.PI / 180;
 type P = { t: number; a: number; b: number };
 
+
+// filtros de "relieve" que salen de la FORMA (no de una textura): borde interno iluminado + sombra que despega la tierra del mar
+// screen = región del filtro fija a la pantalla (con zoom fuerte el path mide decenas de miles de px y el búfer explota)
+export const LandFx: React.FC<{ id: string; rim?: string; screen?: boolean; box?: { x: number; y: number; w: number; h: number } }> = ({ id, rim = "#fff3d6", screen, box }) => (
+  <filter id={id} {...(screen ? { filterUnits: "userSpaceOnUse", x: box?.x ?? -40, y: box?.y ?? -40, width: box?.w ?? W + 80, height: box?.h ?? H + 80 } : { x: "-10%", y: "-10%", width: "120%", height: "125%" })}>
+    <feMorphology in="SourceAlpha" operator="erode" radius="2.5" result="e" />
+    <feGaussianBlur in="e" stdDeviation="5" result="b" />
+    <feComposite in="SourceAlpha" in2="b" operator="arithmetic" k2="1" k3="-1" result="rim" />
+    <feFlood floodColor={rim} floodOpacity={0.5} />
+    <feComposite in2="rim" operator="in" result="rimc" />
+    <feGaussianBlur in="SourceAlpha" stdDeviation="7" result="sb" />
+    <feOffset in="sb" dx="0" dy="7" result="so" />
+    <feFlood floodColor="#000" floodOpacity={0.7} />
+    <feComposite in2="so" operator="in" result="sh" />
+    <feMerge><feMergeNode in="sh" /><feMergeNode in="SourceGraphic" /><feMergeNode in="rimc" /></feMerge>
+  </filter>
+);
+// franjas de profundidad alrededor de la costa (la misma línea, cada vez más ancha y más tenue)
+export const Bathy: React.FC<{ d: string; c?: string; k?: number }> = ({ d, c = "#3d86b3", k = 1 }) => (
+  <g fill="none" strokeLinejoin="round">
+    {[90, 56, 32, 16].map((w, i) => <path key={i} d={d} stroke={c} strokeWidth={w * k} strokeOpacity={[0.05, 0.07, 0.1, 0.16][i]} />)}
+  </g>
+);
+
 // ============ GLOBO ORTOGRÁFICO VECTOR ============
 // cámara: [t, lon0, lat0, radio_px] (se interpola en log para el radio)
 type Pin = { lon: number; lat: number; label: string; sub?: string; t: number };
@@ -55,14 +79,21 @@ export const GlobeVec: React.FC<P & { cams: number[][]; pins: Pin[]; title?: str
           <radialGradient id="gShade" cx="36%" cy="30%" r="72%"><stop offset="55%" stopColor="#000" stopOpacity={0} /><stop offset="100%" stopColor="#000" stopOpacity={0.62} /></radialGradient>
           <radialGradient id="gAtmo" cx="50%" cy="50%" r="50%"><stop offset="88%" stopColor="#6fc3ff" stopOpacity={0} /><stop offset="94%" stopColor="#6fc3ff" stopOpacity={0.35} /><stop offset="100%" stopColor="#6fc3ff" stopOpacity={0} /></radialGradient>
           <clipPath id="gClip"><circle cx={cx} cy={cy} r={R} /></clipPath>
-          <linearGradient id="gLand" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="#c9b48a" /><stop offset="100%" stopColor="#8a7350" /></linearGradient>
+          <linearGradient id="gLand" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="#d8c398" /><stop offset="55%" stopColor="#b09468" /><stop offset="100%" stopColor="#6e5a3c" /></linearGradient>
+          <linearGradient id="gTerm" x1="0.15" y1="0.1" x2="1" y2="0.95"><stop offset="0%" stopColor="#ffd9a0" stopOpacity={0.1} /><stop offset="55%" stopColor="#000" stopOpacity={0} /><stop offset="100%" stopColor="#000" stopOpacity={0.55} /></linearGradient>
+          <radialGradient id="gSpec"><stop offset="0%" stopColor="#fff" stopOpacity={0.16} /><stop offset="100%" stopColor="#fff" stopOpacity={0} /></radialGradient>
+          <LandFx id="gRelief" />
         </defs>
         <circle cx={cx} cy={cy} r={R * 1.09} fill="url(#gAtmo)" />
+        <circle cx={cx} cy={cy} r={R * 1.02} fill="none" stroke="#7fd0ff" strokeOpacity={0.18} strokeWidth={R * 0.05} style={{ filter: "blur(14px)" }} />
         <circle cx={cx} cy={cy} r={R} fill="url(#gOcean)" />
         <g clipPath="url(#gClip)">
-          <path d={grat.join("")} stroke="#9fd8ff" strokeOpacity={0.13} strokeWidth={1.1} fill="none" />
-          <path d={land.join("")} fill="url(#gLand)" fillRule="nonzero" stroke="#f3e2bd" strokeOpacity={0.55} strokeWidth={1.1} />
+          <path d={grat.join("")} stroke="#9fd8ff" strokeOpacity={0.11} strokeWidth={1.1} fill="none" />
+          <Bathy d={land.join("")} k={Math.min(1.4, R / 330)} />
+          <path d={land.join("")} fill="url(#gLand)" fillRule="nonzero" stroke="#f3e2bd" strokeOpacity={0.45} strokeWidth={1.1} filter="url(#gRelief)" />
+          <circle cx={cx} cy={cy} r={R} fill="url(#gTerm)" />
           <circle cx={cx} cy={cy} r={R} fill="url(#gShade)" />
+          <ellipse cx={cx - R * 0.38} cy={cy - R * 0.42} rx={R * 0.34} ry={R * 0.22} fill="url(#gSpec)" transform={`rotate(-28 ${cx - R * 0.38} ${cy - R * 0.42})`} />
         </g>
         <circle cx={cx} cy={cy} r={R} fill="none" stroke="#bfe6ff" strokeOpacity={0.35} strokeWidth={1.5} />
         {pins.map((p, i) => {
@@ -124,14 +155,17 @@ export const RouteUK: React.FC<P & { km: number; tOrk: number; tDraw: number; dD
   return (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 45% 40%, #12202b 0%, #070b10 80%)" }}>
       <svg width={W} height={H} style={{ position: "absolute" }}>
-        <defs><filter id="rGlow"><feGaussianBlur stdDeviation="7" /></filter></defs>
+        <defs><filter id="rGlow"><feGaussianBlur stdDeviation="7" /></filter><LandFx id="rRelief" />
+          <linearGradient id="rLand" x1="0" y1="0" x2="0.6" y2="1"><stop offset="0%" stopColor="#4a4535" /><stop offset="100%" stopColor="#262319" /></linearGradient></defs>
         <path d={grid.join("")} stroke="#9fd8ff" strokeOpacity={0.07} strokeWidth={1} />
-        {G.uk.map((r, i) => <path key={i} d={pathOf(pj, r)} fill="#2b2a22" stroke="#d9c49a" strokeOpacity={0.75} strokeWidth={1.4} />)}
+        <Bathy d={G.uk.map((r) => pathOf(pj, r)).join("")} k={v.sc / 120} />
+        <g filter="url(#rRelief)">{G.uk.map((r, i) => <path key={i} d={pathOf(pj, r)} fill="url(#rLand)" stroke="#e6d2a6" strokeOpacity={0.8} strokeWidth={1.4} />)}</g>
         {/* por tierra */}
         <path d={pathOf(pj, LAND, false)} fill="none" stroke={SAND} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={`${Ll}`} strokeDashoffset={Ll * (1 - d)} opacity={1 - 0.6 * zoomed} />
         {/* por mar */}
         <path d={pathOf(pj, partial(SEA, d), false)} fill="none" stroke="#6fc3ff" strokeWidth={4} strokeLinecap="round" strokeDasharray="14 12" opacity={(1 - 0.6 * zoomed) * (d > 0 ? 1 : 0)} />
         <path d={pathOf(pj, LAND, false)} fill="none" stroke={GOLD} strokeWidth={14} filter="url(#rGlow)" strokeDasharray={`${Ll}`} strokeDashoffset={Ll * (1 - d)} opacity={0.5 * (1 - zoomed)} />
+        {d > 0 && d < 1 && (() => { const hp = partial(LAND, d), q = pj(hp[hp.length - 1][0], hp[hp.length - 1][1]); return <g opacity={1 - zoomed}><circle cx={q[0]} cy={q[1]} r={22} fill={GOLD} opacity={0.35} filter="url(#rGlow)" /><circle cx={q[0]} cy={q[1]} r={8} fill="#fff" /></g>; })()}
         <circle cx={sh[0]} cy={sh[1]} r={10} fill={GOLD} />
         {lt >= tOrk && <>
           <circle cx={ok[0]} cy={ok[1]} r={12 + 60 * ((lt - tOrk) % 1)} fill="none" stroke={RED} strokeWidth={3} opacity={1 - ((lt - tOrk) % 1)} />

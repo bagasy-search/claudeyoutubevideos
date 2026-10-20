@@ -1,1 +1,396 @@
-{"end":73.3,"shots":[{"a":0.0,"b":12.0,"v":"cpestructuras/ltx/gc_a","src":"gc_gc_a","from":0.0,"rate":1.0,"k":"v","sfx":"nada","cam":[1.0,0.5,0.5,1.0,0.5,0.5],"mov":"gancho","out":{"type":"flash"}},{"a":12.0,"b":12.34,"v":"cpestructuras/ag/ys_01_t1","src":"ag_ys_01_t1","from":0.3,"k":"v","cam":[1.043,0.5,0.46,1.047,0.5,0.46],"ez":"lin","mov":"quieto","punto":true,"sfx":"trailer"},{"a":12.34,"b":13.02,"v":"cpestructuras/real/yangshan_27592736","src":"px_yangshan_27592736","from":0.4,"k":"real","cam":[1.016,0.5,0.46,1.293,0.5,0.46],"ez":"in","mov":"crash","rate":1.0},{"a":13.02,"b":14.53,"v":"cpestructuras/ag/ys_01_t2","src":"ag_ys_01_t2","from":0.3,"k":"v","cam":[1.214,0.5,0.46,1.044,0.5,0.46],"ez":"out","mov":"pull"},{"a":14.53,"b":16.24,"v":"cpestructuras/ag/ys_01_t3","src":"ag_ys_01_t3","from":0.3,"k":"v","cam":[1.18,0.5,0.42000000000000004,1.185,0.5,0.5],"ez":"io","mov":"tilt"},{"a":16.24,"b":17.38,"v":"cpestructuras/real/yangshan_31412838","src":"px_yangshan_31412838","from":0.4,"k":"real","cam":[1.217,0.5415,0.46,1.222,0.4585,0.46],"ez":"lin","mov":"pan","rate":1.0},{"a":17.38,"b":18.12,"v":"cpestructuras/ag/ys_01_t6","src":"ag_ys_01_t6","from":0.3,"k":"v","cam":[1.081,0.48,0.47200000000000003,1.116,0.52,0.448],"ez":"lin","mov":"drift"},{"a":18.12,"b":18.66,"v":"cpestructuras/real/asuan_31100162","src":"px_asuan_31100162","from":0.4,"k":"real","cam":[1.072,0.5,0.46,1.177,0.5,0.46],"ez":"io","mov":"push","rate":1.0},{"a":18.66,"b":19.22,"v":"cpestructuras/ag/ys_01_t1","src":"ag_ys_01_t1","from":0.77,"k":"v","cam":[1.035,0.5,0.46,1.302,0.5,0.46],"ez":"in","mov":"crash"},{"a":19.22,"b":21.08,"v":"cpestructuras/real/yangshan_31100164","src":"px_yangshan_31100164","from":0.4,"k":"real","cam":[1.17,0.5425,0.46,1.175,0.4575,0.46],"ez":"lin","mov":"pan","rate":1.0},{"a":21.08,"b":21.7,"v":"cpestructuras/ag/ys_01_t5","src":"ag_ys_01_t5","from":0.3,"k":"v","cam":[1.036,0.5,0.46,1.148,0.5,0.46],"ez":"io","mov":"push"},{"a":21.7,"b":23.48,"v":"cpestructuras/real/yangshan_27592736","src":"px_yangshan_27592736","from":1.13,"k":"real","cam":[1.114,0.48,0.47200000000000003,1.149,0.52,0.448],"ez":"lin","mov":"drift","rate":1.0,"out":{"type":"whip","vx":-1}},{"a":23.48,"b":24.36,"v":"cpestructuras/real/kailasa_4460335","src":"px_kailasa_4460335","from":0.4,"k":"real","cam":[1.169,0.5,0.46,1.026,0.5,0.46],"ez":"out","mov":"pull","rate":1.0,"punto":true,"sfx":"trailer"},{"a":24.36,"b":24.86,"v":"cpestructuras/ag/ka_01_t4","src":"ag_ka_01_t4","from":0.3,"k":"v","cam":[1.034,0.5,0.46,1.038,0.5,0.46],"ez":"lin","mov":"quieto"},{"a":24.86,"b":25.24,"v":"cpestructuras/real/kailasa_4460335","src":"px_kailasa_4460335","from":1.33,"k":"real","cam":[1.168,0.5,0.48804166666666665,1.173,0.5,0.4319583333333334],"ez":"io","mov":"tilt","rate":1.0},{"a":25.24,"b":26.26,"v":"cpestructuras/real/kailasa_31153014","src":"px_kailasa_31153014","from":0.4,"k":"real","cam":[1.064,0.5,0.46,1.209,0.5,0.46],"ez":"io","mov":"push","rate":1.0},{"a":26.26,"b":27.52,"v":"cpestructuras/ag/ka_01_t2","src":"ag_ka_01_t2","from":0.3,"k":"v","cam":[1.097,0.5,0.46,1.101,0.5,0.46],"ez":"lin","mov":"quieto"},{"a":27.52,"b":29.1,"comp":"CarveDown","props":{"tTr":0.25,"tCarve":0.9,"tErr":4.2,"a0":27.52,"b0":33.88},"src":"comp_CarveDown.1","k":"g","sfx":"golpe","cam":[1.0,0.5,0.5,1.03,0.5,0.5],"mov":"interno"},{"a":29.1,"b":31.72,"comp":"CarveDown","props":{"tTr":0.25,"tCarve":0.9,"tErr":4.2,"a0":27.52,"b0":33.88},"src":"comp_CarveDown.2","k":"g","sfx":"corte","cam":[1.05,1.0,0.42,1.09,1.0,0.42],"mov":"push"},{"a":31.72,"b":33.88,"comp":"CarveDown","props":{"tTr":0.25,"tCarve":0.9,"tErr":4.2,"a0":27.52,"b0":33.88},"src":"comp_CarveDown.3","k":"g","sfx":"revelacion","cam":[1.2,1.0,0.5,1.25,1.0,0.5],"mov":"drift","out":{"type":"mask","dir":1}},{"a":33.88,"b":34.26,"v":"cpestructuras/real/nanmadol_6003436","src":"px_nanmadol_6003436","from":0.4,"k":"real","cam":[1.115,0.5,0.46,1.013,0.5,0.46],"ez":"out","mov":"pull","rate":1.0,"punto":true,"sfx":"trailer"},{"a":34.26,"b":35.02,"v":"cpestructuras/ag/nm_01_t6","src":"ag_nm_01_t6","from":0.3,"k":"v","cam":[1.21,0.5,0.4264166666666666,1.215,0.5,0.49358333333333343],"ez":"io","mov":"tilt"},{"a":35.02,"b":36.28,"v":"cpestructuras/real/nanmadol_13882731","src":"px_nanmadol_13882731","from":0.4,"k":"real","cam":[1.204,0.4575,0.46,1.209,0.5425,0.46],"ez":"lin","mov":"pan","rate":1.0},{"a":36.28,"b":38.68,"v":"cpestructuras/real/nanmadol_39919147","src":"px_nanmadol_39919147","from":0.4,"k":"real","cam":[1.192,0.5,0.46,1.022,0.5,0.46],"ez":"out","mov":"pull","rate":1.0},{"a":38.68,"b":40.7,"v":"cpestructuras/ag/nm_01_t4","src":"ag_nm_01_t4","from":0.3,"k":"v","cam":[1.157,0.5425,0.46,1.162,0.4575,0.46],"ez":"lin","mov":"pan"},{"a":40.7,"b":41.52,"v":"cpestructuras/real/nanmadol_3130967","src":"px_nanmadol_3130967","from":0.4,"k":"real","cam":[1.031,0.5,0.46,1.319,0.5,0.46],"ez":"in","mov":"crash","rate":1.0,"out":{"type":"whip","vy":1}},{"a":41.52,"b":43.82,"v":"cpestructuras/real/asuan_29233301","src":"px_asuan_29233301","from":0.4,"k":"real","cam":[1.127,0.48,0.47200000000000003,1.162,0.52,0.448],"ez":"lin","mov":"drift","rate":1.0,"punto":true,"sfx":"trailer"},{"a":43.82,"b":44.86,"comp":"ObeliskScale","props":{"tCmp":99,"tCrack":1.04,"a0":43.82,"b0":46.66},"src":"comp_ObeliskScale.1","k":"g","sfx":"golpe","cam":[1.051,0.5,0.5,1.081,0.5,0.5],"mov":"interno"},{"a":44.86,"b":46.66,"comp":"ObeliskScale","props":{"tCmp":99,"tCrack":1.04,"a0":43.82,"b0":46.66},"src":"comp_ObeliskScale.2","k":"g","sfx":"revelacion","cam":[1.3,0.47,0.42,1.34,0.47,0.42],"mov":"push","out":{"type":"mask","dir":-1}},{"a":46.66,"b":48.86,"v":"cpestructuras/real/ollanta_29604766","src":"px_ollanta_29604766","from":0.4,"k":"real","cam":[1.175,0.5,0.5,1.18,0.5,0.42000000000000004],"ez":"io","mov":"tilt","rate":1.0,"punto":true,"sfx":"trailer"},{"a":48.86,"b":51.0,"v":"cpestructuras/real/ollanta_32294994","src":"px_ollanta_32294994","from":0.4,"k":"real","cam":[1.07,0.5,0.46,1.074,0.5,0.46],"ez":"lin","mov":"quieto","rate":1.0,"out":{"type":"whip","vx":1}},{"a":51.0,"b":51.3,"v":"cpestructuras/real/moai_12628506","src":"px_moai_12628506","from":0.4,"k":"real","cam":[1.006,0.5,0.46,1.251,0.5,0.46],"ez":"in","mov":"crash","rate":1.0,"punto":true,"sfx":"trailer"},{"a":51.3,"b":52.5,"v":"cpestructuras/real/moai_16784606","src":"px_moai_16784606","from":0.4,"k":"real","cam":[1.05,0.5,0.46,1.054,0.5,0.46],"ez":"lin","mov":"quieto","rate":1.0},{"a":52.5,"b":54.06,"v":"cpestructuras/ag/mo_01_t2","src":"ag_mo_01_t2","from":0.3,"k":"v","cam":[1.123,0.48,0.47200000000000003,1.158,0.52,0.448],"ez":"lin","mov":"drift","out":{"type":"flash"}},{"a":54.06,"b":55.28,"v":"cpestructuras/real/stonehenge_30529681","src":"px_stonehenge_30529681","from":0.4,"k":"real","cam":[1.198,0.5,0.5,1.203,0.5,0.42000000000000004],"ez":"io","mov":"tilt","rate":1.0,"punto":true,"sfx":"trailer"},{"a":55.28,"b":58.06,"comp":"RouteUK","props":{"km":750,"tOrk":5.98,"tDraw":1.7,"dDraw":1.5,"tZoom":4.3,"a0":55.28,"b0":62.3},"src":"comp_RouteUK.1","k":"g","sfx":"golpe","cam":[1.085,0.5,0.5,1.115,0.5,0.5],"mov":"interno"},{"a":58.06,"b":59.58,"comp":"RouteUK","props":{"km":750,"tOrk":5.98,"tDraw":1.7,"dDraw":1.5,"tZoom":4.3,"a0":55.28,"b0":62.3},"src":"comp_RouteUK.2","k":"g","sfx":"corte","cam":[1.14,0.46,0.5,1.18,0.46,0.5],"mov":"push"},{"a":59.58,"b":62.3,"comp":"RouteUK","props":{"km":750,"tOrk":5.98,"tDraw":1.7,"dDraw":1.5,"tZoom":4.3,"a0":55.28,"b0":62.3},"src":"comp_RouteUK.3","k":"g","sfx":"revelacion","cam":[1.09,0.5,0.45,1.14,0.5,0.45],"mov":"drift"},{"a":62.3,"b":63.36,"v":"cpestructuras/real/stonehenge_28486616","src":"px_stonehenge_28486616","from":0.4,"k":"real","cam":[1.154,0.5401666666666667,0.46,1.159,0.4598333333333333,0.46],"ez":"lin","mov":"pan","rate":1.0,"out":{"type":"whip","vx":-1}},{"a":63.36,"b":66.28,"comp":"GlobeVec","props":{"cams":[[0,-110,-10,330],[1.2,-40,10,360],[3.0,60,20,360],[5.66,160,10,330]],"pins":[{"lon":-109.3497,"lat":-27.1127,"label":"RAPA NUI","sub":"CHILE","t":0.3},{"lon":-72.2643,"lat":-13.2583,"label":"OLLANTAYTAMBO","sub":"PERÚ","t":0.9},{"lon":-1.8262,"lat":51.1789,"label":"STONEHENGE","sub":"INGLATERRA","t":1.6},{"lon":32.8963,"lat":24.0769,"label":"ASUÁN","sub":"EGIPTO","t":2.3},{"lon":75.178,"lat":20.0258,"label":"ELLORA","sub":"INDIA","t":3.0},{"lon":119.06,"lat":32.06,"label":"YANGSHAN","sub":"CHINA","t":3.7},{"lon":158.3356,"lat":6.8442,"label":"NAN MADOL","sub":"MICRONESIA","t":4.3}],"title":"7 ESTRUCTURAS","titleT":4.6,"a0":63.36,"b0":69.02},"src":"comp_GlobeVec.1","k":"g","sfx":"golpe","cam":[1.136,0.5,0.5,1.166,0.5,0.5],"mov":"interno","punto":true},{"a":66.28,"b":69.02,"comp":"GlobeVec","props":{"cams":[[0,-110,-10,330],[1.2,-40,10,360],[3.0,60,20,360],[5.66,160,10,330]],"pins":[{"lon":-109.3497,"lat":-27.1127,"label":"RAPA NUI","sub":"CHILE","t":0.3},{"lon":-72.2643,"lat":-13.2583,"label":"OLLANTAYTAMBO","sub":"PERÚ","t":0.9},{"lon":-1.8262,"lat":51.1789,"label":"STONEHENGE","sub":"INGLATERRA","t":1.6},{"lon":32.8963,"lat":24.0769,"label":"ASUÁN","sub":"EGIPTO","t":2.3},{"lon":75.178,"lat":20.0258,"label":"ELLORA","sub":"INDIA","t":3.0},{"lon":119.06,"lat":32.06,"label":"YANGSHAN","sub":"CHINA","t":3.7},{"lon":158.3356,"lat":6.8442,"label":"NAN MADOL","sub":"MICRONESIA","t":4.3}],"title":"7 ESTRUCTURAS","titleT":4.6,"a0":63.36,"b0":69.02},"src":"comp_GlobeVec.2","k":"g","sfx":"corte","cam":[1.16,0.5,0.5,1.2,0.5,0.5],"mov":"push","out":{"type":"mask","dir":1}},{"a":69.02,"b":71.02,"v":"cpestructuras/real/asuan_29233354","src":"px_asuan_29233354","from":0.4,"k":"real","cam":[1.229,0.5,0.46,1.059,0.5,0.46],"ez":"out","mov":"pull","rate":1.0,"punto":true,"sfx":"trailer"},{"a":71.02,"b":72.38,"v":"cpestructuras/ag/ob_01_t6","src":"ag_ob_01_t6","from":0.3,"k":"v","cam":[1.037,0.5,0.46,1.041,0.5,0.46],"ez":"lin","mov":"quieto"},{"a":72.38,"b":73.3,"v":"cpestructuras/real/asuan_29233301","src":"px_asuan_29233301","from":2.75,"k":"real","cam":[1.034,0.5,0.46,1.331,0.5,0.46],"ez":"in","mov":"crash","rate":1.0,"sfx":"cierre"}],"over":[{"n":"TonsRoll","a":14.059999999999999,"b":16.2,"p":{"to":31000,"unit":"TONELADAS","kicker":"UNA SOLA PIEDRA","x":120,"y":760,"size":150,"dur":1.3}},{"n":"Tag","a":21.75,"b":23.4,"p":{"text":"YANGSHAN","sub":"NANKÍN · DINASTÍA MING"}},{"n":"Tag","a":33.95,"b":35.3,"p":{"text":"NAN MADOL","sub":"POHNPEI · MICRONESIA"}},{"n":"TonsRoll","a":42.75,"b":43.8,"p":{"to":1000,"unit":"TONELADAS","kicker":"EL OBELISCO INACABADO","x":120,"y":760,"size":140,"dur":0.8}},{"n":"Tag","a":46.72,"b":47.8,"p":{"text":"OLLANTAYTAMBO","sub":"VALLE SAGRADO · PERÚ"}},{"n":"Tag","a":51.06,"b":52.45,"p":{"text":"RAPA NUI","sub":"ISLA DE PASCUA"}},{"n":"TitleStone","a":71.1,"b":73.3,"p":{"l1":"7 ESTRUCTURAS","l2":"QUE NADIE PODRÍA HABER CONSTRUIDO"}}]}
+{
+"end": 73.3,
+"shots": [
+{
+"a": 0.0,
+"b": 12.0,
+"v": "cpestructuras/ltx/gc_a",
+"src": "gc_gc_a",
+"from": 0.0,
+"rate": 1.0,
+"iris": [
+11.42,
+12.04
+],
+"k": "v"
+},
+{
+"a": 13.68,
+"b": 16.24,
+"v": "cpestructuras/real/yangshan_31100076",
+"src": "px_yangshan_31100076",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.02,
+0.5,
+0.5,
+1.12,
+0.52,
+0.48
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 16.24,
+"b": 19.22,
+"v": "cpestructuras/real/yangshan_31412838",
+"src": "px_yangshan_31412838",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.12,
+0.36,
+0.5,
+1.13,
+0.64,
+0.5
+],
+"z": [
+1.02,
+1.1
+]
+},
+{
+"a": 19.22,
+"b": 21.08,
+"v": "cpestructuras/real/yangshan_31100164",
+"src": "px_yangshan_31100164",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.14,
+0.5,
+0.48,
+1.03,
+0.5,
+0.5
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 21.08,
+"b": 23.48,
+"v": "cpestructuras/real/yangshan_27592736",
+"src": "px_yangshan_27592736",
+"from": 1.13,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.1,
+0.5,
+0.66,
+1.11,
+0.5,
+0.36
+],
+"z": [
+1.02,
+1.1
+]
+},
+{
+"a": 24.36,
+"b": 26.38,
+"v": "cpestructuras/real/kailasa_4460335",
+"src": "px_kailasa_4460335",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.0,
+0.45,
+0.52,
+1.07,
+0.43,
+0.5
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 26.38,
+"b": 27.52,
+"v": "cpestructuras/real/kailasa_31153014",
+"src": "px_kailasa_31153014",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.1,
+0.63,
+0.48,
+1.09,
+0.38,
+0.5
+],
+"z": [
+1.02,
+1.1
+]
+},
+{
+"a": 35.36,
+"b": 36.88,
+"v": "cpestructuras/real/nanmadol_13882731",
+"src": "px_nanmadol_13882731",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.04,
+0.5,
+0.5,
+1.045,
+0.5,
+0.5
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 36.88,
+"b": 38.68,
+"v": "cpestructuras/real/nanmadol_39919147",
+"src": "px_nanmadol_39919147",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.2,
+0.52,
+0.5,
+1.06,
+0.5,
+0.5
+],
+"z": [
+1.02,
+1.1
+]
+},
+{
+"a": 38.68,
+"b": 41.52,
+"v": "cpestructuras/real/nanmadol_6003436",
+"src": "px_nanmadol_6003436",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.13,
+0.5,
+0.37,
+1.12,
+0.5,
+0.6
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 42.58,
+"b": 43.82,
+"v": "cpestructuras/real/asuan_29233301",
+"src": "px_asuan_29233301",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.03,
+0.5,
+0.5,
+1.13,
+0.52,
+0.48
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 47.84,
+"b": 49.42,
+"v": "cpestructuras/real/ollanta_29887135",
+"src": "px_ollanta_29887135",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.13,
+0.36,
+0.5,
+1.14,
+0.64,
+0.5
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 49.42,
+"b": 50.71,
+"v": "cpestructuras/real/ollanta_19193064",
+"src": "px_ollanta_19193064",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.15,
+0.5,
+0.48,
+1.04,
+0.5,
+0.5
+],
+"z": [
+1.02,
+1.1
+]
+},
+{
+"a": 51.6,
+"b": 53.18,
+"v": "cpestructuras/real/moai_16784606",
+"src": "px_moai_16784606",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.11,
+0.5,
+0.66,
+1.12,
+0.5,
+0.36
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 53.18,
+"b": 53.87,
+"v": "cpestructuras/ag/mo_01_t2",
+"src": "ag_mo_01_t2",
+"from": 0.3,
+"rate": 1.25,
+"cam": [
+1.01,
+0.45,
+0.52,
+1.08,
+0.43,
+0.5
+],
+"z": [
+1.02,
+1.1
+]
+},
+{
+"a": 55.28,
+"b": 56.98,
+"v": "cpestructuras/real/stonehenge_30529681",
+"src": "px_stonehenge_30529681",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.11,
+0.63,
+0.48,
+1.1,
+0.38,
+0.5
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 69.02,
+"b": 71.02,
+"v": "cpestructuras/real/asuan_29233354",
+"src": "px_asuan_29233354",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.05,
+0.5,
+0.5,
+1.055,
+0.5,
+0.5
+],
+"z": [
+1.12,
+1.02
+]
+},
+{
+"a": 71.02,
+"b": 72.3,
+"v": "cpestructuras/real/asuan_32537391",
+"src": "px_asuan_32537391",
+"from": 0.4,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.21,
+0.52,
+0.5,
+1.07,
+0.5,
+0.5
+],
+"z": [
+1.02,
+1.1
+]
+},
+{
+"a": 72.3,
+"b": 73.3,
+"v": "cpestructuras/real/asuan_29233301",
+"src": "px_asuan_29233301",
+"from": 2.75,
+"rate": 1.0,
+"real": true,
+"cam": [
+1.14,
+0.5,
+0.37,
+1.13,
+0.5,
+0.6
+],
+"z": [
+1.12,
+1.02
+]
+}
+],
+"over": []
+}

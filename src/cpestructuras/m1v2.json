@@ -1,0 +1,869 @@
+{
+ "end": 73.3,
+ "xf": 0.32,
+ "gc": {
+  "a": 0.0,
+  "b": 12.0,
+  "v": "cpestructuras/ltx/gc_a",
+  "src": "gc_gc_a",
+  "from": 0.0,
+  "rate": 1.0,
+  "iris": [
+   11.42,
+   12.04
+  ]
+ },
+ "cams": [
+  [
+   11.3,
+   104,
+   27,
+   520
+  ],
+  [
+   12.0,
+   108,
+   29,
+   700
+  ],
+  [
+   13.58,
+   118.98,
+   32.06,
+   5200
+  ],
+  [
+   23.1,
+   119.05,
+   32.0,
+   5600
+  ],
+  [
+   24.34,
+   75.18,
+   20.02,
+   4600
+  ],
+  [
+   33.81,
+   75.2,
+   20.0,
+   5000
+  ],
+  [
+   35.339999999999996,
+   158.335,
+   6.845,
+   38000
+  ],
+  [
+   41.52,
+   158.335,
+   6.845,
+   41000
+  ],
+  [
+   42.48,
+   32.896,
+   24.077,
+   5200
+  ],
+  [
+   46.66,
+   32.9,
+   24.1,
+   5600
+  ],
+  [
+   47.82,
+   -72.264,
+   -13.258,
+   6200
+  ],
+  [
+   50.71,
+   -72.264,
+   -13.258,
+   6600
+  ],
+  [
+   51.57,
+   -109.35,
+   -27.113,
+   32000
+  ],
+  [
+   53.87,
+   -109.35,
+   -27.113,
+   34000
+  ],
+  [
+   55.22,
+   -1.826,
+   51.179,
+   9000
+  ],
+  [
+   56.98,
+   -1.826,
+   51.179,
+   9600
+  ],
+  [
+   58.32,
+   -2.7,
+   54.6,
+   4300
+  ],
+  [
+   59.68,
+   -2.8,
+   56.6,
+   4300
+  ],
+  [
+   61.16,
+   -3.0,
+   58.98,
+   15000
+  ],
+  [
+   62.76,
+   -3.0,
+   58.98,
+   16500
+  ],
+  [
+   63.86,
+   -25,
+   28,
+   430
+  ],
+  [
+   68.97,
+   95,
+   20,
+   420
+  ],
+  [
+   74.3,
+   96,
+   20,
+   425
+  ]
+ ],
+ "portals": [
+  {
+   "site": "yangshan",
+   "lon": 118.98,
+   "lat": 32.06,
+   "t0": 13.68,
+   "t1": 23.48,
+   "label": "YANGSHAN",
+   "sub": "NANKÍN · DINASTÍA MING",
+   "tag": [
+    14.13,
+    16.24
+   ],
+   "close": true,
+   "items": [
+    {
+     "a": 13.68,
+     "b": 16.24,
+     "v": "cpestructuras/real/yangshan_31100076",
+     "src": "px_yangshan_31100076",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.02,
+      0.5,
+      0.5,
+      1.12,
+      0.52,
+      0.48
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 16.24,
+     "b": 19.22,
+     "v": "cpestructuras/real/yangshan_31412838",
+     "src": "px_yangshan_31412838",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.12,
+      0.36,
+      0.5,
+      1.13,
+      0.64,
+      0.5
+     ],
+     "z": [
+      1.02,
+      1.1
+     ]
+    },
+    {
+     "a": 19.22,
+     "b": 21.08,
+     "v": "cpestructuras/real/yangshan_31100164",
+     "src": "px_yangshan_31100164",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.14,
+      0.5,
+      0.48,
+      1.03,
+      0.5,
+      0.5
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 21.08,
+     "b": 23.48,
+     "v": "cpestructuras/real/yangshan_27592736",
+     "src": "px_yangshan_27592736",
+     "from": 1.13,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.1,
+      0.5,
+      0.66,
+      1.11,
+      0.5,
+      0.36
+     ],
+     "z": [
+      1.02,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "site": "kailasa",
+   "lon": 75.178,
+   "lat": 20.026,
+   "t0": 24.36,
+   "t1": 33.81,
+   "label": "KAILASA",
+   "sub": "ELLORA · INDIA",
+   "tag": [
+    24.81,
+    26.38
+   ],
+   "close": true,
+   "items": [
+    {
+     "a": 24.36,
+     "b": 26.38,
+     "v": "cpestructuras/real/kailasa_4460335",
+     "src": "px_kailasa_4460335",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.0,
+      0.45,
+      0.52,
+      1.07,
+      0.43,
+      0.5
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 26.38,
+     "b": 27.52,
+     "v": "cpestructuras/real/kailasa_31153014",
+     "src": "px_kailasa_31153014",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.1,
+      0.63,
+      0.48,
+      1.09,
+      0.38,
+      0.5
+     ],
+     "z": [
+      1.02,
+      1.1
+     ]
+    },
+    {
+     "a": 27.52,
+     "b": 33.81,
+     "comp": "CarveDown",
+     "props": {
+      "tTr": 0.25,
+      "tCarve": 0.9,
+      "tErr": 4.2
+     },
+     "src": "comp_CarveDown",
+     "z": [
+      1.12,
+      1.02
+     ]
+    }
+   ]
+  },
+  {
+   "site": "nanmadol",
+   "lon": 158.335,
+   "lat": 6.845,
+   "t0": 35.36,
+   "t1": 41.52,
+   "label": "NAN MADOL",
+   "sub": "POHNPEI · MICRONESIA",
+   "tag": [
+    35.81,
+    36.88
+   ],
+   "close": true,
+   "items": [
+    {
+     "a": 35.36,
+     "b": 36.88,
+     "v": "cpestructuras/real/nanmadol_13882731",
+     "src": "px_nanmadol_13882731",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.04,
+      0.5,
+      0.5,
+      1.045,
+      0.5,
+      0.5
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 36.88,
+     "b": 38.68,
+     "v": "cpestructuras/real/nanmadol_39919147",
+     "src": "px_nanmadol_39919147",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.2,
+      0.52,
+      0.5,
+      1.06,
+      0.5,
+      0.5
+     ],
+     "z": [
+      1.02,
+      1.1
+     ]
+    },
+    {
+     "a": 38.68,
+     "b": 41.52,
+     "v": "cpestructuras/real/nanmadol_6003436",
+     "src": "px_nanmadol_6003436",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.13,
+      0.5,
+      0.37,
+      1.12,
+      0.5,
+      0.6
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    }
+   ]
+  },
+  {
+   "site": "asuan",
+   "lon": 32.896,
+   "lat": 24.077,
+   "t0": 42.58,
+   "t1": 47.0,
+   "label": null,
+   "sub": null,
+   "tag": null,
+   "close": true,
+   "items": [
+    {
+     "a": 42.58,
+     "b": 43.82,
+     "v": "cpestructuras/real/asuan_29233301",
+     "src": "px_asuan_29233301",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.03,
+      0.5,
+      0.5,
+      1.13,
+      0.52,
+      0.48
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 43.82,
+     "b": 47.0,
+     "comp": "ObeliskScale",
+     "props": {
+      "tCmp": 99,
+      "tCrack": 0.84
+     },
+     "src": "comp_ObeliskScale",
+     "z": [
+      1.02,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "site": "ollanta",
+   "lon": -72.264,
+   "lat": -13.258,
+   "t0": 47.84,
+   "t1": 50.71,
+   "label": "OLLANTAYTAMBO",
+   "sub": "VALLE SAGRADO · PERÚ",
+   "tag": [
+    48.29,
+    49.42
+   ],
+   "close": true,
+   "items": [
+    {
+     "a": 47.84,
+     "b": 49.42,
+     "v": "cpestructuras/real/ollanta_29887135",
+     "src": "px_ollanta_29887135",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.13,
+      0.36,
+      0.5,
+      1.14,
+      0.64,
+      0.5
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 49.42,
+     "b": 50.71,
+     "v": "cpestructuras/real/ollanta_19193064",
+     "src": "px_ollanta_19193064",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.15,
+      0.5,
+      0.48,
+      1.04,
+      0.5,
+      0.5
+     ],
+     "z": [
+      1.02,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "site": "moai",
+   "lon": -109.35,
+   "lat": -27.113,
+   "t0": 51.6,
+   "t1": 53.87,
+   "label": "RAPA NUI",
+   "sub": "ISLA DE PASCUA",
+   "tag": [
+    52.05,
+    53.18
+   ],
+   "close": true,
+   "items": [
+    {
+     "a": 51.6,
+     "b": 53.18,
+     "v": "cpestructuras/real/moai_16784606",
+     "src": "px_moai_16784606",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.11,
+      0.5,
+      0.66,
+      1.12,
+      0.5,
+      0.36
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 53.18,
+     "b": 53.87,
+     "v": "cpestructuras/ag/mo_01_t2",
+     "src": "ag_mo_01_t2",
+     "from": 0.3,
+     "rate": 1.25,
+     "cam": [
+      1.01,
+      0.45,
+      0.52,
+      1.08,
+      0.43,
+      0.5
+     ],
+     "z": [
+      1.02,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "site": "stonehenge",
+   "lon": -1.826,
+   "lat": 51.179,
+   "t0": 55.28,
+   "t1": 56.98,
+   "label": "STONEHENGE",
+   "sub": "INGLATERRA",
+   "tag": [
+    55.73,
+    56.98
+   ],
+   "close": true,
+   "items": [
+    {
+     "a": 55.28,
+     "b": 56.98,
+     "v": "cpestructuras/real/stonehenge_30529681",
+     "src": "px_stonehenge_30529681",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.11,
+      0.63,
+      0.48,
+      1.1,
+      0.38,
+      0.5
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    }
+   ]
+  },
+  {
+   "site": "asuan",
+   "lon": 32.896,
+   "lat": 24.077,
+   "t0": 69.02,
+   "t1": 73.3,
+   "label": null,
+   "sub": null,
+   "tag": null,
+   "close": false,
+   "items": [
+    {
+     "a": 69.02,
+     "b": 71.02,
+     "v": "cpestructuras/real/asuan_29233354",
+     "src": "px_asuan_29233354",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.05,
+      0.5,
+      0.5,
+      1.055,
+      0.5,
+      0.5
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    },
+    {
+     "a": 71.02,
+     "b": 72.3,
+     "v": "cpestructuras/real/asuan_32537391",
+     "src": "px_asuan_32537391",
+     "from": 0.4,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.21,
+      0.52,
+      0.5,
+      1.07,
+      0.5,
+      0.5
+     ],
+     "z": [
+      1.02,
+      1.1
+     ]
+    },
+    {
+     "a": 72.3,
+     "b": 73.3,
+     "v": "cpestructuras/real/asuan_29233301",
+     "src": "px_asuan_29233301",
+     "from": 2.75,
+     "rate": 1.0,
+     "real": true,
+     "cam": [
+      1.14,
+      0.5,
+      0.37,
+      1.13,
+      0.5,
+      0.6
+     ],
+     "z": [
+      1.12,
+      1.02
+     ]
+    }
+   ]
+  }
+ ],
+ "pins": [
+  {
+   "site": "yangshan",
+   "n": 1,
+   "label": "YANGSHAN",
+   "sub": "CHINA",
+   "t0": 12.969999999999999,
+   "lon": 118.98,
+   "lat": 32.06
+  },
+  {
+   "site": "kailasa",
+   "n": 2,
+   "label": "KAILASA",
+   "sub": "INDIA",
+   "t0": 23.84,
+   "lon": 75.178,
+   "lat": 20.026
+  },
+  {
+   "site": "nanmadol",
+   "n": 3,
+   "label": "NAN MADOL",
+   "sub": "MICRONESIA",
+   "t0": 34.71,
+   "lon": 158.335,
+   "lat": 6.845
+  },
+  {
+   "site": "asuan",
+   "n": 4,
+   "label": "ASUÁN",
+   "sub": "EGIPTO",
+   "t0": 41.95,
+   "lon": 32.896,
+   "lat": 24.077
+  },
+  {
+   "site": "ollanta",
+   "n": 5,
+   "label": "OLLANTAYTAMBO",
+   "sub": "PERÚ",
+   "t0": 47.25,
+   "lon": -72.264,
+   "lat": -13.258
+  },
+  {
+   "site": "moai",
+   "n": 6,
+   "label": "RAPA NUI",
+   "sub": "CHILE",
+   "t0": 51.199999999999996,
+   "lon": -109.35,
+   "lat": -27.113
+  },
+  {
+   "site": "stonehenge",
+   "n": 7,
+   "label": "STONEHENGE",
+   "sub": "INGLATERRA",
+   "t0": 54.559999999999995,
+   "lon": -1.826,
+   "lat": 51.179
+  }
+ ],
+ "seven": {
+  "t0": 63.36,
+  "t1": 69.02,
+  "on": {
+   "moai": 63.91,
+   "ollanta": 64.53,
+   "stonehenge": 65.15,
+   "asuan": 65.77,
+   "kailasa": 66.39,
+   "yangshan": 67.01,
+   "nanmadol": 67.63
+  }
+ },
+ "names": [
+  {
+   "text": "CHINA",
+   "lon": 112.5,
+   "lat": 35.6,
+   "t0": 12.719999999999999,
+   "t1": 13.78,
+   "size": 64
+  },
+  {
+   "text": "INDIA",
+   "lon": 78.8,
+   "lat": 23.6,
+   "t0": 23.54,
+   "t1": 24.46,
+   "size": 64
+  },
+  {
+   "text": "OCÉANO PACÍFICO",
+   "lon": 158.7,
+   "lat": 7.1,
+   "t0": 34.36,
+   "t1": 35.46,
+   "size": 44
+  },
+  {
+   "text": "EGIPTO",
+   "lon": 29.6,
+   "lat": 26.4,
+   "t0": 41.5,
+   "t1": 42.629999999999995,
+   "size": 64
+  },
+  {
+   "text": "LOS ANDES",
+   "lon": -74.4,
+   "lat": -11.4,
+   "t0": 46.9,
+   "t1": 47.89,
+   "size": 56
+  },
+  {
+   "text": "INGLATERRA",
+   "lon": -0.9,
+   "lat": 52.6,
+   "t0": 54.16,
+   "t1": 55.33,
+   "size": 56
+  },
+  {
+   "text": "ESCOCIA",
+   "lon": -4.4,
+   "lat": 57.1,
+   "t0": 59.379999999999995,
+   "t1": 61.46,
+   "size": 56
+  }
+ ],
+ "route": {
+  "tDraw": 56.93,
+  "dDraw": 1.6,
+  "km": 700,
+  "tKm": 57.32,
+  "tOrk": 61.26,
+  "t1": 63.36
+ },
+ "overs": [
+  {
+   "n": "TonsRoll",
+   "a": 13.95,
+   "b": 16.19,
+   "p": {
+    "to": 31000,
+    "unit": "TONELADAS",
+    "kicker": "UNA SOLA PIEDRA",
+    "x": 120,
+    "y": 760,
+    "size": 150,
+    "dur": 1.3
+   }
+  },
+  {
+   "n": "TonsRoll",
+   "a": 48.23,
+   "b": 50.02,
+   "p": {
+    "to": 50,
+    "unit": "TONELADAS",
+    "kicker": "CADA BLOQUE",
+    "x": 120,
+    "y": 760,
+    "size": 150,
+    "dur": 0.7
+   }
+  },
+  {
+   "n": "TitleStone",
+   "a": 71.1,
+   "b": 73.3,
+   "p": {
+    "l1": "7 ESTRUCTURAS",
+    "l2": "QUE NADIE PODRÍA HABER CONSTRUIDO"
+   }
+  }
+ ]
+}

@@ -55,7 +55,7 @@ med = statistics.median(dur)
 cv = statistics.pstdev(dur) / med if med else 0
 red = collections.Counter(round(d, 1) for d in dur)
 top_d, top_n = red.most_common(1)[0]
-pct_top = top_n / len(dur) * 100
+pct_top = top_n / len(dur) * 100 if top_n > 2 else 0.0   # máx(5 %, 2 planos): en un tramo de 30 planos el 5 % pediría 30 duraciones distintas
 
 # ---------- §2.3 cámara ----------
 def tipo(s):
@@ -75,7 +75,7 @@ pct_tipo = t_n / len(S) * 100
 seguidos = sum(1 for i in range(1, len(tipos)) if tipos[i] and tipos[i] == tipos[i - 1])
 pares = collections.Counter((round(s["cam"][0], 2), round(s["cam"][3], 2)) for s in S if s.get("cam"))
 p_top, p_n = pares.most_common(1)[0] if pares else ((0, 0), 0)
-pct_par = p_n / len(S) * 100
+pct_par = p_n / len(S) * 100 if p_n >= 2 else 0.0   # "repetido" = aparece 2+ veces (en tramos de <34 planos 1 sola ya pasaba el 3 %)
 
 chk = [
     ("cortes dentro de una palabra (%)", dentro, "<=", 3),
