@@ -6,6 +6,7 @@
 #   eventos_previos: los del minuto 1 (se usan tal cual antes de hasta_s; después van los del cuerpo)
 #   → <salida_dir>/mix.wav · voz_st.wav · eventos.json · final.wav (el que va al encode)
 import json, os, subprocess, sys, numpy as np
+sys.stdout.reconfigure(encoding="utf8", errors="replace")
 from collections import Counter
 S = os.path.dirname(os.path.abspath(__file__)); SR = 48000; TAIL = 1.0; PAD = 0.15
 M = json.load(open(sys.argv[1], encoding='utf8')); VOZ, PUB, O = sys.argv[2], sys.argv[3].rstrip('/') + '/', sys.argv[4].rstrip('/') + '/'
