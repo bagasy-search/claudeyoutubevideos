@@ -1,0 +1,36 @@
+# ¿Desde qué tipo de máquina del farm YouTube NO pide "no soy un bot"? (20-oct-2026)
+# Las ubuntu-latest están bloqueadas; se prueban las otras que GitHub da gratis en repos públicos.
+#   gh workflow run ytprobe.yml [-f url=https://youtu.be/XXXX]
+name: ytprobe
+on:
+  workflow_dispatch:
+    inputs:
+      url: { description: "video de prueba", required: false, default: "https://www.youtube.com/watch?v=_ZSGIhL6bRA" }
+permissions: { contents: read }
+jobs:
+  probar:
+    strategy:
+      fail-fast: false
+      matrix: { os: [macos-latest, macos-13, windows-latest, ubuntu-24.04-arm, ubuntu-22.04] }
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    defaults: { run: { shell: bash } }
+    steps:
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x }
+      - name: yt-dlp
+        run: python -m pip install -q -U "yt-dlp[default]" && yt-dlp --version
+      - name: cookies
+        env: { C1: "${{ secrets.YTCOOKIES1 }}" }
+        run: |
+          mkdir -p ck; [ -n "$C1" ] && { printf '%s' "$C1" | base64 -d > ck/1.txt 2>/dev/null || printf '%s\n' "$C1" > ck/1.txt; }; ls ck
+      - name: probar
+        env: { URL: "${{ github.event.inputs.url }}" }
+        run: |
+          echo "IP: $(curl -s -m 10 https://api.ipify.org) · $(curl -s -m 10 https://ipinfo.io/org)"
+          r() { if yt-dlp "$@" --no-warnings --skip-download --print "%(title)s · %(duration)ss · formatos ok" -f "bv*[height<=720]+ba/b" "$URL" 2>/tmp/e.txt; then echo "  → ANDA ($*)"; else echo "  → NO ($*): $(tail -1 /tmp/e.txt | cut -c1-140)"; fi; }
+          r
+          [ -s ck/1.txt ] && r --cookies ck/1.txt
+          if yt-dlp --no-warnings -f "wv*/w" -o /tmp/t.mp4 "$URL" >/dev/null 2>&1 && [ -s /tmp/t.mp4 ]; then echo "  → BAJA VIDEO ($(wc -c < /tmp/t.mp4) bytes)"; else echo "  → no baja el video"; fi
