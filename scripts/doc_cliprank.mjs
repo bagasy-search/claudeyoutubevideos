@@ -34,20 +34,25 @@ const NE = await temb(NEG);
 for (const it of items) it.neg = Math.max(...NE.map((n) => dot(n, it.e)));
 const CE = await temb(filas.map((f) => "a photo of " + f.concepto));
 
+// qmap.json opcional {desde: [línea de doc_commonsq]}: la foto PUNTUAL del lugar exacto suma (gana a la toma genérica)
+const QM = fs.existsSync(path.join(R, "qmap.json")) ? JSON.parse(fs.readFileSync(path.join(R, "qmap.json"), "utf8")) : {};
+const BONO = +(process.env.Q_BONO || 0.08);
+const GEMELO = 0.95;   // coseno imagen-imagen: por encima es la MISMA foto/toma (otro archivo) → no se repite
 const usados = [];
-const choque = (it) => usados.some((u) => u.p === it.p || (u.t !== null && u.vid === it.vid && u.k === it.k && Math.abs(u.t - it.t) < 12));
+const choque = (it) => usados.some((u) => u.p === it.p || dot(u.e, it.e) > GEMELO || (u.t !== null && u.vid === it.vid && u.k === it.k && Math.abs(u.t - it.t) < 12));
 const out = [];
 for (const [i, f] of filas.entries()) {
   const pool = items.filter((it) => f.clave === "-" || it.k === f.clave);
-  const sc = pool.map((it) => { const c = dot(CE[i], it.e); return { it, s: c - 0.6 * Math.max(0, it.neg - c + 0.02) }; }).sort((a, b) => b.s - a.s);
+  const qs = (QM[f.desde] || []).map((q) => `q${String(q).padStart(2, "0")}_`);
+  const sc = pool.map((it) => { const c = dot(CE[i], it.e), b = qs.some((q) => path.basename(it.p).startsWith(q)) ? BONO : 0; return { it, s: c + b - 0.6 * Math.max(0, it.neg - c + 0.02) }; }).sort((a, b) => b.s - a.s);
   const cands = [];
   for (const { it, s } of sc) {
     if (cands.length >= TOP) break;
-    if (choque(it) || cands.some((c) => c.vid === it.vid && c.k === it.k && Math.abs((c.t ?? -99) - (it.t ?? 99)) < 12)) continue;
-    cands.push({ p: it.p, k: it.k, vid: it.vid, t: it.t, s: +s.toFixed(4) });
+    if (choque(it) || cands.some((c) => dot(c.e, it.e) > GEMELO || c.vid === it.vid && c.k === it.k && Math.abs((c.t ?? -99) - (it.t ?? 99)) < 12)) continue;
+    cands.push({ p: it.p, k: it.k, vid: it.vid, t: it.t, s: +s.toFixed(4), e: it.e });
   }
   if (cands[0]) usados.push(cands[0]);
-  out.push({ ...f, cands });
+  out.push({ ...f, cands: cands.map(({ e, ...c }) => c) });
 }
 fs.writeFileSync(path.join(R, "rank.json"), JSON.stringify(out, null, 1));
 console.log("filas", out.length, "· items", items.length);

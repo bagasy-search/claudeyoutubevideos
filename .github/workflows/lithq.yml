@@ -1,0 +1,51 @@
+# Tomas REALES en HQ para documentales (clips literales): cada runner baja su parte de los pedidos de
+# doc_litplan (plan.hq) y deja solo el tramo SIN cortes de escena que contiene el cuadro elegido.
+# Entrada = release "lit-<slug>": lit_<slug>.json (lista de videos) + hq_<slug>.json (pedidos).
+# Salida: artifact lithq-<slug>-<idx> con <key>.mp4 + hq_<idx>.json.
+# Disparo:  gh workflow run lithq.yml -f slug=cpestructuras -f chunks=16
+name: lithq
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        required: true
+      chunks:
+        required: false
+        default: "16"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - id: m
+        run: echo "matrix=$(node -e "console.log(JSON.stringify(Array.from({length:${{ github.event.inputs.chunks }}},(_,i)=>i)))")" >> "$GITHUB_OUTPUT"
+
+  hq:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+      - name: install yt-dlp + ffmpeg
+        run: |
+          sudo curl -sL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: listas
+        env:
+          GH_TOKEN: "${{ github.token }}"
+        run: gh release download "lit-${{ github.event.inputs.slug }}" --pattern "*_${{ github.event.inputs.slug }}.json" --dir .
+      - name: bajar y recortar
+        run: node scripts/doc_lithq.mjs "hq_${{ github.event.inputs.slug }}.json" "lit_${{ github.event.inputs.slug }}.json" ${{ matrix.idx }} ${{ github.event.inputs.chunks }} hq
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lithq-${{ github.event.inputs.slug }}-${{ matrix.idx }}
+          path: hq
+          retention-days: 5
