@@ -5,13 +5,15 @@
 import React from "react";
 import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { FPS, W, H, SANS, MONO, k01, lerp, ease, easeOut, shadow, SAND, GOLD, RED, rnd, spring } from "./lib";
-import { LandFx, Bathy, CarveDown, ObeliskScale, TonsRoll, Tag, TitleStone } from "./comps";
+import { CarveDown, ObeliskScale, TonsRoll, Tag, TitleStone } from "./comps";
 import GEO from "./geo.json";
 import MRaw from "./m1v2.json";
 
 // densificado (un punto cada ≤0,5°): los bordes rectos de las cajas finas siguen la curva de la proyección igual que
 // el agujero de la máscara → sin franja entre la tierra gruesa y la fina (la "línea" de la caja de China/Egipto/Andes)
 const densify = (rings: number[][][]) => rings.map((r) => { const o: number[][] = []; for (let i = 0; i < r.length; i++) { const a = r[i], b = r[(i + 1) % r.length]; o.push(a); if (i === r.length - 1) break; const n = Math.ceil(Math.max(Math.abs(b[0] - a[0]), Math.abs(b[1] - a[1])) / 0.5); for (let j = 1; j < n && Math.abs(b[0] - a[0]) < 180; j++) o.push([a[0] + ((b[0] - a[0]) * j) / n, a[1] + ((b[1] - a[1]) * j) / n]); } return o; });
+// banco de rendimiento: capas que se pueden apagar por props (off: ["relief","bathy",...]); en el video van todas
+let OFF = new Set<string>();
 const G = Object.fromEntries(Object.entries(GEO as unknown as Record<string, number[][][]>).map(([k, v]) => [k, densify(v)])) as Record<string, number[][][]>;
 const M = MRaw as any;
 const R2D = Math.PI / 180;
@@ -53,8 +55,9 @@ const PERSP = 1600, OY = 600;
 const tiltOf = (c: Cam) => 34 * ease(k01(Math.log(c.R), Math.log(1500), Math.log(7000)));
 // punto del mundo (ya proyectado al plano del globo) → pantalla, pasando por rotateX + perspective
 const tp = (a: number) => { const ca = Math.cos(a * R2D), sa = Math.sin(a * R2D); return (x: number, y: number) => { const y0 = y - OY, s = PERSP / (PERSP - y0 * sa); return { X: CX + (x - CX) * s, Y: CY + (OY + y0 * ca - CY) * s, s }; }; };
-// el svg del globo se dibuja más grande que la pantalla: con la picada, arriba se ve lo que queda "lejos"
-const VB = { x: -700, y: -1100, w: W + 1400, h: H + 1250 };
+// la picada se calcula en JS (nada de rotateX en CSS: con un svg gigante el farm tardaba 70-90 s por cuadro).
+// tope abajo: lo que queda muy por debajo de la pantalla no puede cruzar el plano de la cámara (s → ∞)
+const tpc = (a: number) => { const T = tp(a); return (x: number, y: number) => T(x, Math.min(y, OY + 2100)); };
 const ringPath = (pr: PR, ring: number[][], close = true) => {
   let s = "", any = false;
   for (let i = 0; i < ring.length; i++) { const q = pr(ring[i][0], ring[i][1]); if (q.v > 0) any = true; s += (i ? "L" : "M") + q.x.toFixed(1) + "," + q.y.toFixed(1); }
@@ -65,22 +68,22 @@ const ringPath = (pr: PR, ring: number[][], close = true) => {
 const rot = (c: Cam) => { const p0 = c.lat * R2D, sp0 = Math.sin(p0), cp0 = Math.cos(p0); return (lon: number, lat: number) => {
   const l = (lon - c.lon) * R2D, p = lat * R2D, cp = Math.cos(p);
   return [cp * Math.sin(l), cp0 * Math.sin(p) - sp0 * cp * Math.cos(l), sp0 * Math.sin(p) + cp0 * cp * Math.cos(l)]; }; };
-const polyPath = (c: Cam, rings: number[][][]) => {
+const polyLoops = (c: Cam, rings: number[][][]) => {
   // "rejoin" como d3: tramos visibles (entra/sale por el horizonte) unidos por el BORDE en sentido horario
   // (los anillos de geo.json son todos horarios = la tierra queda a la derecha); nunca el arco "más corto".
-  const r3 = rot(c), R = c.R, TAU = 2 * Math.PI; let out = "";
-  const P = (x: number, y: number) => (CX + R * x).toFixed(1) + "," + (CY - R * y).toFixed(1);
-  const L = (a: number) => (CX + R * Math.cos(a)).toFixed(1) + "," + (CY - R * Math.sin(a)).toFixed(1);
+  const r3 = rot(c), R = c.R, TAU = 2 * Math.PI; const out: number[][][] = [];
+  const P = (x: number, y: number) => [CX + R * x, CY - R * y];
+  const L = (a: number) => [CX + R * Math.cos(a), CY - R * Math.sin(a)];
   const cw = (from: number, to: number) => { let d = (from - to) % TAU; if (d < 0) d += TAU; return d; }; // cuánto bajar el ángulo
   for (const ring of rings) {
     const q = ring.map((u) => r3(u[0], u[1])), n = q.length;
     const vis = q.map((v) => v[2] > 0);
     if (!vis.some(Boolean)) continue;
-    if (vis.every(Boolean)) { out += "M" + q.map((v) => P(v[0], v[1])).join("L") + "Z"; continue; }
+    if (vis.every(Boolean)) { out.push(q.map((v) => P(v[0], v[1]))); continue; }
     const hz = (u: number[], v: number[]) => { const k = u[2] / (u[2] - v[2]); return Math.atan2(u[1] + (v[1] - u[1]) * k, u[0] + (v[0] - u[0]) * k); };
     let s0 = 0; while (!(vis[s0] && !vis[(s0 - 1 + n) % n])) s0++;
-    const segs: { a0: number; a1: number; pts: string[] }[] = [];
-    let cur: { a0: number; a1: number; pts: string[] } | null = null;
+    const segs: { a0: number; a1: number; pts: number[][] }[] = [];
+    let cur: { a0: number; a1: number; pts: number[][] } | null = null;
     for (let j = 0; j <= n; j++) {
       const i = (s0 + j) % n, h = (i - 1 + n) % n;
       if (vis[i] && !vis[h]) { cur = { a0: hz(q[h], q[i]), a1: 0, pts: [] }; }
@@ -91,7 +94,7 @@ const polyPath = (c: Cam, rings: number[][][]) => {
     const used = new Set<number>();
     for (let st = 0; st < segs.length; st++) {
       if (used.has(st)) continue;
-      let k = st, path: string[] = [L(segs[st].a0)];
+      let k = st; const path: number[][] = [L(segs[st].a0)];
       while (!used.has(k)) {
         used.add(k); const sg = segs[k]; path.push(...sg.pts, L(sg.a1));
         let best = -1, bd = 1e9;
@@ -99,67 +102,93 @@ const polyPath = (c: Cam, rings: number[][][]) => {
         const nj = Math.ceil(bd / 0.04); for (let j = 1; j <= nj; j++) path.push(L(sg.a1 - (bd * j) / nj));
         if (best === st || best < 0) break; k = best;
       }
-      out += "M" + path.join("L") + "Z";
+      out.push(path);
     }
   }
   return out;
 };
+type TF = (x: number, y: number) => { X: number; Y: number; s: number };
+const toP2 = (loops: number[][][], T: TF, p = new Path2D()) => {
+  for (const l of loops) { for (let i = 0; i < l.length; i++) { const q = T(l[i][0], l[i][1]); if (i) p.lineTo(q.X, q.Y); else p.moveTo(q.X, q.Y); } p.closePath(); }
+  return p;
+};
 // zonas con costa 1:10m (recortadas por caja en prep_geo.py): adentro de la caja se dibuja la fina y se tapa la gruesa
 const BOX: Record<string, number[]> = { uk: [-11, 49, 3, 61.5], peru: [-82, -20, -66, 0], egypt: [24, 20, 37, 33], china: [110, 25, 125, 38], india: [66, 6, 92, 30] };
 const ISLAS = ["pohnpei", "rapanui"];
-const boxPath = (pr: PR, b: number[]) => {
-  const [w, s, e, n] = b, pts: number[][] = [];
-  for (let x = w; x <= e; x += 0.5) pts.push([x, s]);
-  for (let y = s; y <= n; y += 0.5) pts.push([e, y]);
+const boxLoop = (c: Cam, b: number[]) => {
+  const [w, so, e, n] = b, pts: number[][] = [];
+  for (let x = w; x <= e; x += 0.5) pts.push([x, so]);
+  for (let y = so; y <= n; y += 0.5) pts.push([e, y]);
   for (let x = e; x >= w; x -= 0.5) pts.push([x, n]);
-  for (let y = n; y >= s; y -= 0.5) pts.push([w, y]);
-  return ringPath(pr, pts);
+  for (let y = n; y >= so; y -= 0.5) pts.push([w, y]);
+  return polyLoops(c, [pts.reverse()]);          // antihorario → horario como la tierra (la caja queda "adentro")
 };
 const angTo = (c: Cam, lon: number, lat: number) => { const a = vec(c.lon, c.lat), b = vec(lon, lat); return Math.acos(Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2])) / R2D; };
 
-// ───────── el globo (mundo) ─────────
-const Globe: React.FC<{ c: Cam; t: number }> = ({ c, t }) => {
-  const pr = ortho(c);
-  const fine = Object.entries(BOX).filter(([, b]) => c.R > 1400 && angTo(c, (b[0] + b[2]) / 2, (b[1] + b[3]) / 2) < 30);
-  const world = polyPath(c, G.world);
-  const det = fine.map(([k]) => polyPath(c, G[k])).join("") + (c.R > 4000 ? ISLAS.map((k) => polyPath(c, G[k])).join("") : "");
-  const holes = fine.map(([, b]) => boxPath(pr, b)).join("");
-  const step = c.R > 2500 ? 5 : c.R > 1200 ? 10 : 20;
-  const grat: string[] = [];
-  for (let lon = -180; lon < 180; lon += step) { let s = "", pen = false; for (let lat = -80; lat <= 80; lat += step / 5) { const q = pr(lon, lat); if (q.v > 0.02) { s += (pen ? "L" : "M") + q.x.toFixed(1) + "," + q.y.toFixed(1); pen = true; } else pen = false; } grat.push(s); }
-  for (let lat = -80; lat <= 80; lat += step) { let s = "", pen = false; for (let lon = -180; lon <= 180; lon += step / 5) { const q = pr(lon, lat); if (q.v > 0.02) { s += (pen ? "L" : "M") + q.x.toFixed(1) + "," + q.y.toFixed(1); pen = true; } else pen = false; } grat.push(s); }
-  const R = c.R, bk = Math.min(1.4, R / 330);
-  return (
-    <svg width={VB.w} height={VB.h} viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} style={{ position: "absolute", left: VB.x, top: VB.y }}>
-      <defs>
-        <radialGradient id="gOcean" cx="38%" cy="32%" r="75%"><stop offset="0%" stopColor="#1d4a6b" /><stop offset="55%" stopColor="#0c2639" /><stop offset="100%" stopColor="#040b12" /></radialGradient>
-        <radialGradient id="gShade" cx="36%" cy="30%" r="72%"><stop offset="55%" stopColor="#000" stopOpacity={0} /><stop offset="100%" stopColor="#000" stopOpacity={0.62} /></radialGradient>
-        <radialGradient id="gAtmo" cx="50%" cy="50%" r="50%"><stop offset="88%" stopColor="#6fc3ff" stopOpacity={0} /><stop offset="94%" stopColor="#6fc3ff" stopOpacity={0.35} /><stop offset="100%" stopColor="#6fc3ff" stopOpacity={0} /></radialGradient>
-        <linearGradient id="gLand" gradientUnits="userSpaceOnUse" x1={CX - R} y1={CY - R} x2={CX + R} y2={CY + R}><stop offset="0%" stopColor="#d8c398" /><stop offset="55%" stopColor="#b09468" /><stop offset="100%" stopColor="#6e5a3c" /></linearGradient>
-        <linearGradient id="gTerm" x1="0.15" y1="0.1" x2="1" y2="0.95"><stop offset="0%" stopColor="#ffd9a0" stopOpacity={0.1} /><stop offset="55%" stopColor="#000" stopOpacity={0} /><stop offset="100%" stopColor="#000" stopOpacity={0.55} /></linearGradient>
-        <radialGradient id="gSpec"><stop offset="0%" stopColor="#fff" stopOpacity={0.16} /><stop offset="100%" stopColor="#fff" stopOpacity={0} /></radialGradient>
-        <clipPath id="gClip"><circle cx={CX} cy={CY} r={R} /></clipPath>
-        <mask id="gHole" maskUnits="userSpaceOnUse" x={VB.x} y={VB.y} width={VB.w} height={VB.h}><rect x={VB.x} y={VB.y} width={VB.w} height={VB.h} fill="#fff" /><path d={holes} fill="#000" stroke="#fff" strokeWidth={6} /></mask>
-        <LandFx id="gRelief" screen box={VB} />
-      </defs>
-      {R < 2600 && <circle cx={CX} cy={CY} r={R * 1.09} fill="url(#gAtmo)" />}
-      {R < 2600 && <circle cx={CX} cy={CY} r={R * 1.02} fill="none" stroke="#7fd0ff" strokeOpacity={0.18} strokeWidth={R * 0.05} style={{ filter: "blur(14px)" }} />}
-      <circle cx={CX} cy={CY} r={R} fill="url(#gOcean)" />
-      <g clipPath="url(#gClip)">
-        <path d={grat.join("")} stroke="#9fd8ff" strokeOpacity={0.1} strokeWidth={1.1} fill="none" />
-        <g mask={holes ? "url(#gHole)" : undefined}><Bathy d={world} k={bk} /></g>
-        {det && <Bathy d={det} k={bk} />}
-        <g filter="url(#gRelief)">
-          <path d={world} fill="url(#gLand)" mask={holes ? "url(#gHole)" : undefined} />
-          {det && <path d={det} fill="url(#gLand)" />}
-        </g>
-        {R < 6000 && <circle cx={CX} cy={CY} r={R} fill="url(#gTerm)" opacity={k01(6000 - R, 0, 3000)} />}
-        {R < 6000 && <circle cx={CX} cy={CY} r={R} fill="url(#gShade)" opacity={k01(6000 - R, 0, 3000)} />}
-        {R < 2600 && <ellipse cx={CX - R * 0.38} cy={CY - R * 0.42} rx={R * 0.34} ry={R * 0.22} fill="url(#gSpec)" transform={`rotate(-28 ${CX - R * 0.38} ${CY - R * 0.42})`} />}
-      </g>
-      {R < 2600 && <circle cx={CX} cy={CY} r={R} fill="none" stroke="#bfe6ff" strokeOpacity={0.35} strokeWidth={1.5} />}
-    </svg>
-  );
+// ───────── el globo (mundo) — CANVAS 2D: mismo dibujo vector, sin máscaras ni filtros SVG (rápido en el farm) ─────────
+const drawGlobe = (g: CanvasRenderingContext2D, c: Cam, tl: number) => {
+  const T = tpc(tl), R = c.R, bk = Math.min(1.4, R / 330);
+  g.clearRect(0, 0, W, H); g.lineJoin = "round"; g.lineCap = "round";
+  const at = (x: number, y: number) => T(CX + R * x, CY + R * y);
+  const circ = (r: number) => { const pts: number[][] = []; for (let a = 0; a < 360; a += 1) pts.push([CX + r * Math.cos(a * R2D), CY + r * Math.sin(a * R2D)]); return toP2([pts], T); };
+  const disk = circ(R);
+  if (R < 2600) {                                                                       // atmósfera
+    const C = T(CX, CY), rr = R * 1.1 * C.s, ga = g.createRadialGradient(C.X, C.Y, 0, C.X, C.Y, rr);      // halo suave (degradé, sin bandas)
+    for (const [o, a] of [[0.86, 0], [0.9, 0.16], [0.93, 0.3], [0.955, 0.14], [0.98, 0.04], [1, 0]]) ga.addColorStop(o, `rgba(111,195,255,${a})`);
+    g.fillStyle = ga; g.fill(circ(R * 1.1));
+  }
+  const oc = at(-0.24, -0.36), go = g.createRadialGradient(oc.X, oc.Y, 0, oc.X, oc.Y, 1.5 * R * oc.s);
+  go.addColorStop(0, "#1d4a6b"); go.addColorStop(0.55, "#0c2639"); go.addColorStop(1, "#040b12");
+  const l0 = at(-1, -1), l1 = at(1, 1), gl = g.createLinearGradient(l0.X, l0.Y, l1.X, l1.Y);
+  gl.addColorStop(0, "#d8c398"); gl.addColorStop(0.55, "#b09468"); gl.addColorStop(1, "#6e5a3c");
+  const step = R > 2500 ? 5 : R > 1200 ? 10 : 20, pr = ortho(c), grat = new Path2D();
+  const line = (pts: number[][]) => { let pen = false; for (const [lo, la] of pts) { const q = pr(lo, la); if (q.v > 0.02) { const s = T(q.x, q.y); if (pen) grat.lineTo(s.X, s.Y); else grat.moveTo(s.X, s.Y); pen = true; } else pen = false; } };
+  for (let lon = -180; lon < 180; lon += step) { const pts: number[][] = []; for (let lat = -80; lat <= 80; lat += step / 5) pts.push([lon, lat]); line(pts); }
+  for (let lat = -80; lat <= 80; lat += step) { const pts: number[][] = []; for (let lon = -180; lon <= 180; lon += step / 5) pts.push([lon, lat]); line(pts); }
+  // capa = mar + retícula + batimetría + sombra + tierra + borde de luz (igual para la gruesa y para cada caja fina)
+  const layer = (land: Path2D | null, sea: boolean, rimClip?: Path2D) => {
+    if (sea) { g.fillStyle = go; g.fill(disk); g.strokeStyle = "rgba(159,216,255,0.1)"; g.lineWidth = 1.1; g.stroke(grat); }
+    if (!land) return;
+    if (!OFF.has("bathy")) [90, 56, 32, 16].forEach((w, i) => { g.strokeStyle = `rgba(61,134,179,${[0.05, 0.07, 0.1, 0.16][i]})`; g.lineWidth = w * bk; g.stroke(land); });
+    if (!OFF.has("relief")) { g.save(); g.fillStyle = "rgba(0,0,0,0.22)"; g.translate(0, 4); g.fill(land); g.translate(0, 4); g.fill(land); g.restore(); }
+    g.fillStyle = gl; g.fill(land);
+    if (!OFF.has("relief")) { g.save(); g.clip(land); if (rimClip) g.clip(rimClip); g.strokeStyle = "rgba(255,243,214,0.14)"; g.lineWidth = 10; g.stroke(land); g.strokeStyle = "rgba(255,243,214,0.3)"; g.lineWidth = 3.5; g.stroke(land); g.restore(); }
+  };
+  const fine = Object.entries(BOX).filter(([, b]) => R > 1400 && angTo(c, (b[0] + b[2]) / 2, (b[1] + b[3]) / 2) < 30);
+  g.save(); g.clip(disk);
+  layer(toP2(polyLoops(c, G.world), T), true);
+  for (const [k, b] of fine) {                    // adentro de la caja se repinta el mar y va la costa fina encima
+    const bl = boxLoop(c, b); if (!bl.length) continue;
+    // el borde de luz NO va sobre el corte de la caja (se veía el rectángulo): se recorta a la caja achicada 14 px
+    const sc = bl.map((l) => l.map(([x, y]) => { const q = T(x, y); return [q.X, q.Y]; }));
+    const all = sc.flat(), mx = all.reduce((a, q) => a + q[0], 0) / all.length, my = all.reduce((a, q) => a + q[1], 0) / all.length;
+    const ins = new Path2D(); for (const l of sc) { l.forEach(([x, y], i) => { const dx = x - mx, dy = y - my, d = Math.hypot(dx, dy) || 1, f = Math.max(0, d - 14) / d; if (i) ins.lineTo(mx + dx * f, my + dy * f); else ins.moveTo(mx + dx * f, my + dy * f); }); ins.closePath(); }
+    // el mar de la caja se pinta 2 px adentro del corte: así el borde suavizado del recorte no deja una línea de mar sobre la tierra
+    const ins2 = new Path2D(); for (const l of sc) { l.forEach(([x, y], i) => { const dx = x - mx, dy = y - my, d = Math.hypot(dx, dy) || 1, f = Math.max(0, d - 2) / d; if (i) ins2.lineTo(mx + dx * f, my + dy * f); else ins2.moveTo(mx + dx * f, my + dy * f); }); ins2.closePath(); }
+    g.save(); g.clip(ins2); g.fillStyle = go; g.fill(disk); g.strokeStyle = "rgba(159,216,255,0.1)"; g.lineWidth = 1.1; g.stroke(grat); g.restore();
+    g.save(); g.clip(toP2(bl, T)); layer(toP2(polyLoops(c, G[k]), T), false, ins); g.restore();
+  }
+  if (R > 4000) for (const k of ISLAS) { const lp = polyLoops(c, G[k]); if (lp.length) layer(toP2(lp, T), false); }
+  if (R < 6000) {                                                                       // terminador + sombra del borde
+    g.globalAlpha = k01(6000 - R, 0, 3000);
+    const t0 = at(-0.7, -0.8), t1 = at(1, 0.9), gt = g.createLinearGradient(t0.X, t0.Y, t1.X, t1.Y);
+    gt.addColorStop(0, "rgba(255,217,160,0.1)"); gt.addColorStop(0.55, "rgba(0,0,0,0)"); gt.addColorStop(1, "rgba(0,0,0,0.55)"); g.fillStyle = gt; g.fill(disk);
+    const sc = at(-0.28, -0.4), gs = g.createRadialGradient(sc.X, sc.Y, 0, sc.X, sc.Y, 1.44 * R * sc.s);
+    gs.addColorStop(0.55, "rgba(0,0,0,0)"); gs.addColorStop(1, "rgba(0,0,0,0.62)"); g.fillStyle = gs; g.fill(disk);
+    g.globalAlpha = 1;
+  }
+  if (R < 2600) {                                                                       // brillo especular
+    const sp = at(-0.38, -0.42), rr = R * 0.34 * sp.s; g.save(); g.translate(sp.X, sp.Y); g.rotate(-28 * R2D); g.scale(1, 0.22 / 0.34);
+    const gp = g.createRadialGradient(0, 0, 0, 0, 0, rr); gp.addColorStop(0, "rgba(255,255,255,0.16)"); gp.addColorStop(1, "rgba(255,255,255,0)");
+    g.fillStyle = gp; g.beginPath(); g.arc(0, 0, rr, 0, 2 * Math.PI); g.fill(); g.restore();
+  }
+  g.restore();
+  if (R < 2600) { g.strokeStyle = "rgba(191,230,255,0.35)"; g.lineWidth = 1.5; g.stroke(disk); }
+};
+const Globe: React.FC<{ c: Cam; tl: number }> = ({ c, tl }) => {
+  const ref = React.useRef<HTMLCanvasElement>(null);
+  React.useLayoutEffect(() => { const g = ref.current?.getContext("2d"); const t0 = performance.now(); if (g) drawGlobe(g, c, tl); if (OFF.has("log")) console.log("GLOBO ms " + (performance.now() - t0).toFixed(0)); }, [c.lon, c.lat, c.R, tl]);
+  return <canvas ref={ref} width={W} height={H} style={{ position: "absolute", left: 0, top: 0 }} />;
 };
 
 // estrellas fijas (deterministas) detrás del globo
@@ -247,22 +276,27 @@ const Route: React.FC<{ c: Cam; t: number; ground?: boolean }> = ({ c, t, ground
   const pr = ortho(c), d = easeOut(k01(t, r.tDraw, r.tDraw + r.dDraw)), fo = 1 - k01(t, r.t1, r.t1 + 1.0);
   const lp = partial(LAND, d), sp = partial(SEA, d), head = pr(lp[lp.length - 1][0], lp[lp.length - 1][1]);
   const ok = pr(-3.0, 58.98), orc = t >= r.tOrk ? 1 : 0, ph = ((t - r.tOrk) * 1.1) % 1;
-  const okS = tp(tiltOf(c))(ok.x, ok.y);
+  const okS = tpc(tiltOf(c))(ok.x, ok.y);
   const km = Math.round(r.km * easeOut(k01(t, r.tKm, r.tKm + 1.0)));
   const lab = easeOut(k01(t, r.tOrk + 0.15, r.tOrk + 0.6)) * fo;
-  if (ground) return (
-      <svg width={VB.w} height={VB.h} viewBox={`${VB.x} ${VB.y} ${VB.w} ${VB.h}`} style={{ position: "absolute", left: VB.x, top: VB.y, opacity: fo }}>
-        <defs><filter id="rGlow" filterUnits="userSpaceOnUse" x={VB.x} y={VB.y} width={VB.w} height={VB.h}><feGaussianBlur stdDeviation="7" /></filter></defs>
-        <path d={ringPath(pr, lp, false)} fill="none" stroke={GOLD} strokeWidth={16} opacity={0.45} filter="url(#rGlow)" />
-        <path d={ringPath(pr, lp, false)} fill="none" stroke={SAND} strokeWidth={5.5} strokeLinecap="round" strokeLinejoin="round" />
-        <path d={ringPath(pr, sp, false)} fill="none" stroke="#6fc3ff" strokeWidth={4} strokeLinecap="round" strokeDasharray="14 12" />
-        {d > 0 && d < 1 && <><circle cx={head.x} cy={head.y} r={22} fill={GOLD} opacity={0.4} filter="url(#rGlow)" /><circle cx={head.x} cy={head.y} r={8} fill="#fff" /></>}
+  if (ground) {
+    const T = tpc(tiltOf(c)), ln = (pts: number[][]) => pts.map(([lo, la], i) => { const q = pr(lo, la), s = T(q.x, q.y); return (i ? "L" : "M") + s.X.toFixed(1) + "," + s.Y.toFixed(1); }).join("");
+    const hd = T(head.x, head.y), sk = spring(t, r.tOrk, 10, 0.45);
+    return (
+      <svg width={W} height={H} style={{ position: "absolute", left: 0, top: 0, opacity: fo }}>
+        <path d={ln(lp)} fill="none" stroke={GOLD} strokeWidth={24} opacity={0.12} strokeLinecap="round" strokeLinejoin="round" />
+        <path d={ln(lp)} fill="none" stroke={GOLD} strokeWidth={13} opacity={0.2} strokeLinecap="round" strokeLinejoin="round" />
+        <path d={ln(lp)} fill="none" stroke={SAND} strokeWidth={5.5} strokeLinecap="round" strokeLinejoin="round" />
+        <path d={ln(sp)} fill="none" stroke="#6fc3ff" strokeWidth={4} strokeLinecap="round" strokeDasharray="14 12" />
+        {d > 0 && d < 1 && <><circle cx={hd.X} cy={hd.Y} r={22} fill={GOLD} opacity={0.22} /><circle cx={hd.X} cy={hd.Y} r={8} fill="#fff" /></>}
         {orc > 0 && <>
-          <circle cx={ok.x} cy={ok.y} r={14 + 70 * ph} fill="none" stroke={RED} strokeWidth={3} opacity={1 - ph} />
-          <circle cx={ok.x} cy={ok.y} r={12 * spring(t, r.tOrk, 10, 0.45)} fill={RED} style={{ filter: `drop-shadow(0 0 14px ${RED})` }} />
+          <circle cx={okS.X} cy={okS.Y} r={14 + 70 * ph} fill="none" stroke={RED} strokeWidth={3} opacity={1 - ph} />
+          <circle cx={okS.X} cy={okS.Y} r={26 * sk} fill={RED} opacity={0.25} />
+          <circle cx={okS.X} cy={okS.Y} r={12 * sk} fill={RED} />
         </>}
       </svg>
-  );
+    );
+  }
   return (
     <>
       <div style={{ position: "absolute", left: 120, top: 100, opacity: k01(t, r.tKm - 0.2, r.tKm + 0.2) * (1 - k01(t, r.tOrk - 0.6, r.tOrk)), transform: `translateY(${(1 - easeOut(k01(t, r.tKm - 0.2, r.tKm + 0.4))) * 25}px)` }}>
@@ -351,7 +385,8 @@ const Hook: React.FC<{ t: number }> = ({ t }) => {
 };
 
 const OVER: Record<string, React.FC<any>> = { TonsRoll, TitleStone };
-export const M1: React.FC<{ farm?: boolean }> = ({ farm }) => {
+export const M1: React.FC<{ farm?: boolean; off?: string[] }> = ({ farm, off }) => {
+  OFF = new Set(off || []);
   const f = useCurrentFrame(), t = f / FPS;
   const c = cam(t), c0 = cam(Math.max(0, t - 1 / FPS));
   // desenfoque de movimiento = velocidad de la cámara (px de pantalla por cuadro) + zoom
@@ -360,7 +395,7 @@ export const M1: React.FC<{ farm?: boolean }> = ({ farm }) => {
   // obturador 180° = estela de medio cuadro; gauss ≈ largo/3 → 0,17·v. Tope 6 px: se tiene que poder LEER el mapa en vuelo
   const bz = Math.min(0.9, Math.abs(Math.log(c.R / c0.R)) * 900 * 0.03);   // el zoom sólo insinúa: un blur parejo parece desenfoque
   const bx = Math.min(4, vx * 0.12) + bz, by = Math.min(4, vy * 0.12) + bz, blur = bx + by > 0.6;
-  const tl = tiltOf(c);
+  const tl = OFF.has("tilt") ? 0 : tiltOf(c);
   const covered = PORT.some((p) => t > p.t0 + 0.6 && t < p.t1 - 0.55) && t > 12.1;   // portal abierto entero: el globo no se ve
   return (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, #10161d 0%, #050608 70%)", overflow: "hidden" }}>
@@ -368,11 +403,9 @@ export const M1: React.FC<{ farm?: boolean }> = ({ farm }) => {
       {!covered && <>
         <svg width={0} height={0} style={{ position: "absolute" }}><filter id="mb" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation={`${bx.toFixed(2)} ${by.toFixed(2)}`} /></filter></svg>
         {c.R < 2600 && <Stars />}
-        <AbsoluteFill style={{ filter: blur ? "url(#mb)" : undefined, perspective: PERSP, perspectiveOrigin: "50% 50%" }}>
-          <AbsoluteFill style={{ transform: `rotateX(${tl.toFixed(3)}deg)`, transformOrigin: `50% ${OY}px` }}>
-            <Globe c={c} t={t} />
-            <Route c={c} t={t} ground />
-          </AbsoluteFill>
+        <AbsoluteFill style={{ filter: blur && !OFF.has("mb") ? "url(#mb)" : undefined }}>
+          <Globe c={c} tl={tl} />
+          <Route c={c} t={t} ground />
         </AbsoluteFill>
         {tl > 0.5 && <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(150,185,215,${(0.42 * tl / 34).toFixed(3)}) 0%, rgba(150,185,215,${(0.12 * tl / 34).toFixed(3)}) 22%, rgba(150,185,215,0) 45%)` }} />}
         <Route c={c} t={t} />
