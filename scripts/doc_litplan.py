@@ -68,14 +68,15 @@ def foto_info(p):
     hist = TIPOQ.get(b[:4]) == 'h'
     cred = ' · '.join(x for x in [re.sub(r'\s+', ' ', m.get('artist', '')).strip()[:40], m.get('lic', ''), 'Wikimedia Commons'] if x) if m else ''
     return {'card': w < 1400 or w / h < 1.3 or hist, 'cred': cred}
+EXC = set(CFG.get('excluir', []))   # tomas vistas en las hojas que no corresponden (vid o ruta de foto)
 usados = set()
 def vecinas(r):   # la fila primero; agotada → filas del mismo sitio por cercanía (la "-" = resumen: cualquiera)
     fs = [x for x in filas if x is not r and (r['clave'] == '-' or x['clave'] == r['clave'])]
     return [r] + sorted(fs, key=lambda x: abs(x['desde'] - r['desde']))
 def pick(r, need, hqok=True):
     for c in (c for x in vecinas(r) for c in x['cands']):
-        key = c['p'] if c['vid'] == 'fotos' else f"{c['k']}/{c['vid']}@{c['t']}"
-        if key in usados or QC.malo(c['p'], c['vid'] != 'fotos'): continue
+        key = c['p'] if c['vid'] == 'fotos' else c['vid'] if c['vid'].startswith('px_') else f"{c['k']}/{c['vid']}@{c['t']}"   # clip corto de stock = 1 sola toma: se usa UNA vez
+        if key in usados or c['vid'] in EXC or c['p'] in EXC or QC.malo(c['p'], c['vid'] != 'fotos'): continue
         if c['vid'] != 'fotos' and HQ is not None:
             h = HQ.get(f"{c['vid']}_{c['t']}")
             if not h or h['dur'] < min(need, 3.2) * 0.7: continue
@@ -111,7 +112,8 @@ for (i0, i1) in tramos_portal():
             key = f"{c['vid']}_{c['t']}"; it.update({'hq': key, 'vid': c['vid'], 't': c['t'], 'src': c['p'], 'cam': [max(1.12, x) if j % 3 == 0 else x for j, x in enumerate(cm)]})
             if HQ:
                 h = HQ[key]; need = b - a + XF + 0.45
-                it['v'] = f"{SLUG}/lit/v/{key}"; it['rate'] = round(min(1.0, max(0.62, h['dur'] / need)), 3)
+                it['v'] = h.get('v') or f"{SLUG}/lit/v/{key}"; it['rate'] = round(min(1.0, max(0.62, h['dur'] / need)), 3)
+                if h.get('h', 1080) < 700: it['card'] = True; it['cred'] = h.get('cred', '')   # baja resolución → tarjeta de archivo, nunca a pantalla completa
                 it['from'] = round(max(0.0, min(h['t_in'] - 0.6, h['dur'] - need * it['rate'])), 2)
             else:
                 hq.append({'key': key, 'k': c['k'], 'vid': c['vid'], 't': c['t'], 'need': round(b - a + 1.0, 2)})
@@ -124,15 +126,17 @@ for (i0, i1) in tramos_portal():
 
 # ── cámaras, pins, nombres y rutas del globo (portal cerrado)
 cams, pins, names, rutas = [], [], [], []
+# globo: llega a su vista (c o el sitio) en 1,2 s, la SOSTIENE hasta 2 s antes del portal y baja al sitio (R de 'fin' o 5200)
+finR = {round(fa(g['f'][1] + 1), 2): g.get('fin', {}).get('R', 5200) for g in G}
 for p in portales:
-    cams += [[round(p['t0'] - 0.6, 2), p['lon'], p['lat'], 5200], [round(p['t1'] - 0.1, 2), p['lon'], p['lat'], 5600]]
+    cams += [[round(p['t0'] - 0.6, 2), p['lon'], p['lat'], finR.get(round(p['t0'], 2), 5200)], [round(p['t1'] - 0.1, 2), p['lon'], p['lat'], 5600]]
 for g in G:
     a, b = fa(g['f'][0]), fa(g['f'][1] + 1); lon, lat = CFG['sitios'][g['a']]
-    if 'c' in g: cams.append([round(a + 1.2, 2), g['c'][0], g['c'][1], g['R']])
+    vx, vy = g.get('c', [lon, lat])
+    cams += [[round(a + 1.2, 2), vx, vy, g['R']], [round(max(a + 1.6, b - 2.0), 2), vx, vy, g['R']]]
     if 'ruta' in g:
         r = g['ruta']; r = {**r, 'tDraw': fa(r['fDraw']), 'tKm': fa(r['fKm']) + 0.3, 't1': b - 0.4, 'dDraw': min(2.4, max(1.2, (b - fa(r['fDraw'])) * 0.45))}
         rutas.append(r)
-    if 'fin' in g or 'pin' in g: cams.append([round(b - 0.35, 2), lon, lat, g.get('fin', {}).get('R', g['R'])])
     if 'pin' in g: pins.append({'site': site(g['a']), 'n': g['pin']['n'], 'label': g['pin']['label'], 'sub': g['pin']['sub'], 't0': round(fa(g['pin']['f']), 2), 'lon': lon, 'lat': lat})
     for n in g.get('names', []): names.append({'text': n['text'], 'lon': n['lon'], 'lat': n['lat'], 't0': round(fa(n['f']), 2), 't1': round(min(b - 0.3, fa(n['f']) + 2.4), 2), 'size': n['size']})
 cams.sort(key=lambda c: c[0])

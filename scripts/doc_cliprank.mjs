@@ -37,6 +37,7 @@ const CE = await temb(filas.map((f) => "a photo of " + f.concepto));
 // qmap.json opcional {desde: [línea de doc_commonsq]}: la foto PUNTUAL del lugar exacto suma (gana a la toma genérica)
 const QM = fs.existsSync(path.join(R, "qmap.json")) ? JSON.parse(fs.readFileSync(path.join(R, "qmap.json"), "utf8")) : {};
 const BONO = +(process.env.Q_BONO || 0.08);
+const HDB = +(process.env.HD_BONO || 0.03);   // video HD (Pexels, px_*) gana al de baja resolución a igual sentido
 const GEMELO = 0.95;   // coseno imagen-imagen: por encima es la MISMA foto/toma (otro archivo) → no se repite
 const usados = [];
 const choque = (it) => usados.some((u) => u.p === it.p || dot(u.e, it.e) > GEMELO || (u.t !== null && u.vid === it.vid && u.k === it.k && Math.abs(u.t - it.t) < 12));
@@ -44,7 +45,7 @@ const out = [];
 for (const [i, f] of filas.entries()) {
   const pool = items.filter((it) => f.clave === "-" || it.k === f.clave);
   const qs = (QM[f.desde] || []).map((q) => `q${String(q).padStart(2, "0")}_`);
-  const sc = pool.map((it) => { const c = dot(CE[i], it.e), b = qs.some((q) => path.basename(it.p).startsWith(q)) ? BONO : 0; return { it, s: c + b - 0.6 * Math.max(0, it.neg - c + 0.02) }; }).sort((a, b) => b.s - a.s);
+  const sc = pool.map((it) => { const c = dot(CE[i], it.e), b = (qs.some((q) => path.basename(it.p).startsWith(q)) ? BONO : 0) + (it.vid.startsWith("px_") ? HDB : 0); return { it, s: c + b - 0.6 * Math.max(0, it.neg - c + 0.02) }; }).sort((a, b) => b.s - a.s);
   const cands = [];
   for (const { it, s } of sc) {
     if (cands.length >= TOP) break;
