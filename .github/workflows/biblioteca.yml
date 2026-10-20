@@ -35,18 +35,22 @@ jobs:
         with: { node-version: "20" }
       - name: cache yt-dlp + ffmpeg
         uses: actions/cache@v4
-        with: { path: ~/bincache, key: ytffmpeg-v1 }
+        with: { path: ~/bincache, key: ytffmpeg-v2 }
       - name: install yt-dlp + ffmpeg
+        # 20-oct: johnvansickle.com se colgó 5 min (curl exit 28) → ffmpeg estático de BtbN (release de GitHub,
+        # rápido desde el runner) con tope de tiempo; si también falla, el ffmpeg de apt (sin cache).
         run: |
           mkdir -p ~/bincache
-          curl -sL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/bincache/yt-dlp
+          curl -sfL --retry 3 --max-time 120 https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/bincache/yt-dlp
           chmod a+rx ~/bincache/yt-dlp && sudo cp ~/bincache/yt-dlp /usr/local/bin/yt-dlp
           if [ ! -f ~/bincache/ffmpeg ]; then
-            curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -o /tmp/ff.tar.xz
-            tar -xf /tmp/ff.tar.xz -C /tmp
-            cp /tmp/ffmpeg-*-static/ffmpeg ~/bincache/ffmpeg; chmod a+rx ~/bincache/ffmpeg
+            if curl -sfL --retry 2 --max-time 240 https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz -o /tmp/ff.tar.xz \
+               && tar -xf /tmp/ff.tar.xz -C /tmp; then
+              cp /tmp/ffmpeg-master-latest-linux64-gpl/bin/ffmpeg ~/bincache/ffmpeg; chmod a+rx ~/bincache/ffmpeg
+            fi
           fi
-          sudo cp ~/bincache/ffmpeg /usr/local/bin/ffmpeg
+          if [ -f ~/bincache/ffmpeg ]; then sudo cp ~/bincache/ffmpeg /usr/local/bin/ffmpeg
+          else sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null; fi
           ffmpeg -version | head -1; yt-dlp --version
       - name: install deno (n-challenge de YouTube)
         run: |
