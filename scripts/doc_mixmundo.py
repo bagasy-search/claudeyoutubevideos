@@ -21,7 +21,7 @@ def rd(path, ss=None, dur=None, af=None):
 _G = {}
 def ganancia(p, objetivo):   # ganancia FIJA por clip (medido entero); mudo → None. Nunca loudnorm por plano.
     if p in _G: return _G[p]
-    o = subprocess.run(['ffmpeg', '-nostats', '-i', p, '-vn', '-af', 'ebur128', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    o = subprocess.run(['ffmpeg', '-nostats', '-i', p, '-vn', '-af', 'ebur128', '-f', 'null', '-'], capture_output=True, text=True, encoding='utf8', errors='replace').stderr
     I = [l for l in o.splitlines() if l.strip().startswith('I:')]
     v = float(I[-1].split()[1]) if I else -999
     _G[p] = None if v < -55 else min(12.0, objetivo - v); return _G[p]
@@ -65,12 +65,12 @@ evs.sort(key=lambda e: e['t']); json.dump(evs, open(O + 'eventos.json', 'w'), in
 print('eventos', dict(Counter(e['tipo'] for e in evs)))
 
 def run(*a):
-    r = subprocess.run(a, capture_output=True, text=True); print((r.stdout + r.stderr).strip()[-400:])
+    r = subprocess.run(a, capture_output=True, text=True, encoding='utf8', errors='replace'); print((r.stdout + r.stderr).strip()[-400:])
     if r.returncode: sys.exit(1)
 run(sys.executable, '-I', S + '/doc_score.py', '--in', O + 'mix.wav', '--voz', O + 'voz_st.wav', '--eventos', O + 'eventos.json', '--out', O + 'mix_mus.wav', '--stem', O + 'musica.wav')
 run(sys.executable, '-I', S + '/doc_sfx_mix.py', '--in', O + 'mix_mus.wav', '--voz', O + 'voz_st.wav', '--eventos', O + 'eventos.json', '--out', O + 'final_pre.wav')
 def lufs(p):
-    o = subprocess.run(['ffmpeg', '-hide_banner', '-i', p, '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    o = subprocess.run(['ffmpeg', '-hide_banner', '-i', p, '-af', 'ebur128=peak=true', '-f', 'null', '-'], capture_output=True, text=True, encoding='utf8', errors='replace').stderr
     return float([l for l in o.splitlines() if l.strip().startswith('I:')][-1].split()[1]), float([l for l in o.splitlines() if l.strip().startswith('Peak:')][-1].split()[1])
 I, _ = lufs(O + 'final_pre.wav'); gdb = -14 - I
 for _ in range(4):
