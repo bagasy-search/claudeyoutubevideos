@@ -12,7 +12,7 @@
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { FPS, N, SANS, SERIF, Hilo, Toma, clamp, ease, easeOut, makeCam, makeTiempo, pop, quieta, ramp, useT, vis, BlurDef, NeonPath, neonOn, useSvgId } from "../kits/neon/base";
-import { AvatarSpec, ColumnaAvatar, Escenario, SfxTrack, SubtituloPalabra, anchoEscenario } from "../kits/neon/Layout";
+import { AvatarSpec, ColumnaAvatar, Escenario, SfxTrack, anchoEscenario } from "../kits/neon/Layout";
 import { TituloNeon } from "../kits/neon/Titulo";
 import { pistaGb } from "./sonidos";
 import { CableLuz, CelularPull, OjoMente, MalaNeon, tiemposMala, CerebroPartido, CerebroQuizas, LineaQuizas, OlaImpulso, TragaTiradas, altoCelular, enchufeIzq, finTirada, Tirada, Tiron } from "./piezas";
@@ -85,7 +85,7 @@ const tomas: Toma[] = [
   [t.practice + 0.3, CER.x, 110, 0.92],
   ...quieta(t.stop, MIN1_FIN, CER.x, 110, 0.92, 0.05),
 ];
-const cam = makeCam(tomas);
+export const cam = makeCam(tomas);
 
 // ───────── avatar ─────────
 // ventana 0 = pantalla completa (la apertura); las demás, en la columna 9:16 (el reel 16:9 achicado y apoyado abajo)
@@ -180,7 +180,7 @@ const CerebroHastaParte: React.FC = () => {
   return tt < t.piece ? <CerebroQuizas {...CER} t0={t.brain} quizas={[t.can, t.lightsUp, t.maybe]} tPremio={t.prize + 0.4} etiqueta={{ texto: "maybe", t: t.maybe }} /> : null;
 };
 
-const Mundo: React.FC = () => (
+export const Mundo: React.FC = () => (
   <>
     <TragaTiradas {...SLOT} t0={t.slot} tiradas={TIRADAS} apagada={[1, t.show + 0.2]} />
     <MonedasMudas x={SLOT.x} y={SLOT.y + 250} t0={t.coins - 0.5} tMudo={t.hear} t1={t.brain + 0.8} />
@@ -250,7 +250,6 @@ export const Min1: React.FC<{ farm?: boolean }> = ({ farm }) => {
       <Escenario cam={cam} w={w} mundo={<Mundo />} fondo={fondo}
         pantalla={<>
           <TituloNeon lineas={["Psychology of", "*Phone Addiction*"]} t0={t.today} t1={t.four - 0.1} w={w} y={56} tamanos={[44, 84]} />
-          {tt > t.two && <SubtituloPalabra tiempo={tiempo} t={tt} w={w} />}
         </>} />
       <ColumnaAvatar av={AV} t={tt} />
       {!farm && <SfxTrack eventos={EVENTOS_MIN1} hablando={tiempo.speaking} />}
