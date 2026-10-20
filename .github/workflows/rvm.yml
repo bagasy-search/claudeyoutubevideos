@@ -1,0 +1,18 @@
+name: rvm
+on: push
+permissions: { contents: write }
+jobs:
+  tramo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy: { fail-fast: false, matrix: { i: [0,1,2,3,4,5,6,7] } }
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+      - run: pip install -q torch torchvision --index-url https://download.pytorch.org/whl/cpu && pip install -q numpy
+      - env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          S=$(cat slug.txt); gh release download "rvm-$S-in" -R "$GITHUB_REPOSITORY" -p reel0.mp4
+          C=($(cat cortes.txt)); I=${{ matrix.i }}; A=${C[$I]}; B=${C[$((I+1))]}
+          python rvm.py reel0.mp4 $A $B "alfa_$I.webm"
+          gh release upload "rvm-$S-out" "alfa_$I.webm" -R "$GITHUB_REPOSITORY" --clobber
