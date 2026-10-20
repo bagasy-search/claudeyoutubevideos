@@ -1,0 +1,73 @@
+# BIBLIOTECA DE ESTILOS (Bagasy → pestaña Biblioteca). Dos modos:
+#
+#  cortes: corta las muestras en loop de cada efecto (4-7 s, 854x480, sin audio) desde el MP4 final de
+#          un video nuestro (release) o desde un video de YouTube (con proxy, nunca la IP de la casa),
+#          arma el reel de cada estilo y sube todo al release `biblioteca`. La lista la sube
+#          `D:/claude-brain/biblioteca/publicar.mjs` como `cortes.json` en ese mismo release.
+#     gh workflow run biblioteca.yml -f modo=cortes [-f ids=ap6-roster,sl2-globo]
+#
+#  molde:  baja un video de YouTube que el creador quiere como estilo, saca hojas de contacto
+#          (1 cuadro cada 2 s con el segundo impreso), la lista de cortes por cambio de escena,
+#          el ritmo (cortes/min) y los subtítulos → release `molde-<slug>` para desglosarlo.
+#     gh workflow run biblioteca.yml -f modo=molde -f url=https://youtu.be/XXXX -f slug=mimolde
+name: biblioteca
+
+on:
+  workflow_dispatch:
+    inputs:
+      modo: { description: "cortes | molde", required: true, default: "cortes" }
+      ids:  { description: "cortes: sólo estos ids (coma). vacío = todos los que falten en el release", required: false, default: "" }
+      todo: { description: "cortes: 1 = rehacer aunque ya existan", required: false, default: "" }
+      url:  { description: "molde: link de YouTube", required: false, default: "" }
+      slug: { description: "molde: nombre corto", required: false, default: "" }
+
+permissions:
+  contents: write
+
+jobs:
+  biblioteca:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: "scripts/biblioteca", sparse-checkout-cone-mode: true }
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: cache yt-dlp + ffmpeg
+        uses: actions/cache@v4
+        with: { path: ~/bincache, key: ytffmpeg-v1 }
+      - name: install yt-dlp + ffmpeg
+        run: |
+          mkdir -p ~/bincache
+          curl -sL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o ~/bincache/yt-dlp
+          chmod a+rx ~/bincache/yt-dlp && sudo cp ~/bincache/yt-dlp /usr/local/bin/yt-dlp
+          if [ ! -f ~/bincache/ffmpeg ]; then
+            curl -sL https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz -o /tmp/ff.tar.xz
+            tar -xf /tmp/ff.tar.xz -C /tmp
+            cp /tmp/ffmpeg-*-static/ffmpeg ~/bincache/ffmpeg; chmod a+rx ~/bincache/ffmpeg
+          fi
+          sudo cp ~/bincache/ffmpeg /usr/local/bin/ffmpeg
+          ffmpeg -version | head -1; yt-dlp --version
+      - name: install deno (n-challenge de YouTube)
+        run: |
+          curl -fsSL https://deno.land/install.sh | DENO_INSTALL=$HOME/.deno sh >/dev/null
+          echo "$HOME/.deno/bin" >> $GITHUB_PATH
+      - name: proxies (YouTube bloquea las IPs de GitHub)
+        env: { YTPROXIES: "${{ secrets.YTPROXIES }}" }
+        run: printf '%s\n' "$YTPROXIES" > /tmp/proxies.txt
+      - name: cortes
+        if: ${{ github.event.inputs.modo == 'cortes' }}
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          REPO: "${{ github.repository }}"
+          IDS: "${{ github.event.inputs.ids }}"
+          TODO: "${{ github.event.inputs.todo }}"
+        run: node scripts/biblioteca/cortar.mjs
+      - name: molde
+        if: ${{ github.event.inputs.modo == 'molde' }}
+        env:
+          GH_TOKEN: "${{ github.token }}"
+          REPO: "${{ github.repository }}"
+          URL: "${{ github.event.inputs.url }}"
+          SLUG: "${{ github.event.inputs.slug }}"
+        run: node scripts/biblioteca/molde.mjs
