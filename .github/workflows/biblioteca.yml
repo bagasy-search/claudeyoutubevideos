@@ -68,6 +68,20 @@ jobs:
           done < /tmp/todos.txt; wait
           echo "proxies que andan: $(wc -l < /tmp/proxies.txt) de $(wc -l < /tmp/todos.txt)"
           true  # si ninguno anda queda vacío: los scripts prueban primero sin proxy (IP del runner)
+      - name: cookies (YouTube pide "no soy un bot" a las IPs de GitHub; mismas cuentas que match.yml)
+        env:
+          C1: "${{ secrets.YTCOOKIES1 }}"
+          C2: "${{ secrets.YTCOOKIES2 }}"
+          C3: "${{ secrets.YTCOOKIES3 }}"
+          C4: "${{ secrets.YTCOOKIES4 }}"
+          C5: "${{ secrets.YTCOOKIES5 }}"
+          C6: "${{ secrets.YTCOOKIES6 }}"
+          C7: "${{ secrets.YTCOOKIES7 }}"
+        run: |
+          mkdir -p /tmp/cookies
+          for i in 1 2 3 4 5 6 7; do v="C$i"; [ -n "${!v}" ] && printf '%s
+' "${!v}" > /tmp/cookies/$i.txt; done
+          echo "cookies: $(ls /tmp/cookies | wc -l)"
       - name: cortes
         if: ${{ github.event.inputs.modo == 'cortes' }}
         env:

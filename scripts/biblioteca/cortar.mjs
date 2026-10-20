@@ -46,7 +46,8 @@ const poster = (mp4, jpg, at) => ff(["-ss", String(at), "-i", mp4, "-frames:v", 
 // YouTube: sólo el tramo, sólo video, con keyframe en el corte (el segundo exacto), rotando proxies
 const bajarYT = (url, a, b, dst) => {
   // como molde.mjs: primero sin proxy (IP del runner) con dos clientes, después los proxies que pasaron la prueba
-  const intentos = [["", []], ["", ["--extractor-args", "youtube:player_client=tv_simply,mweb"]], ...proxies.slice(0, 4).map((p) => [p, []])];
+  const COOKIES = fs.existsSync("/tmp/cookies") ? fs.readdirSync("/tmp/cookies").map((f) => `/tmp/cookies/${f}`) : [];
+  const intentos = [["", []], ...COOKIES.map((c) => ["", ["--cookies", c]]), ...proxies.slice(0, 4).map((p) => [p, []])];
   for (let i = 0; i < intentos.length; i++) {
     const [px, extra] = intentos[i];
     const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--quiet", "--no-warnings",

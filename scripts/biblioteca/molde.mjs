@@ -36,7 +36,8 @@ if (rel) {
 }
 // 20-oct: los proxies de julio murieron → primero SIN proxy (IP del runner, nunca la de la casa) con dos clientes,
 // después los proxies que pasaron la prueba del workflow. Tope de 10 min por intento (antes 30: un proxy muerto colgaba todo).
-const intentos = [["", []], ["", ["--extractor-args", "youtube:player_client=tv_simply,mweb"]], ...proxies.slice(0, 6).map((p) => [p, []])];
+const COOKIES = fs.existsSync("/tmp/cookies") ? fs.readdirSync("/tmp/cookies").map((f) => `/tmp/cookies/${f}`) : [];
+const intentos = [["", []], ...COOKIES.map((c) => ["", ["--cookies", c]]), ...proxies.slice(0, 6).map((p) => [p, []])];
 for (let i = 0; i < intentos.length && !ok; i++) {
   const [px, extra] = intentos[i];
   const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--no-warnings", "--no-write-playlist-metafiles",
