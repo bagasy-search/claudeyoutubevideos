@@ -33,6 +33,13 @@ const proxies = (fs.existsSync("/tmp/proxies.txt") ? fs.readFileSync("/tmp/proxi
 
 // mismo look para todo: 16:9 lleno, 30 fps, GOP corto (arranca al instante al pasar el mouse)
 const VF = "scale=854:480:force_original_aspect_ratio=increase,crop=854:480,fps=30,format=yuv420p";
+// recorte = {x,y,w,h} en fracciones del cuadro (ej. sólo los gráficos de arriba de un reel vertical);
+// encaje "pad" = entra entero con bordes del color del fondo en vez de llenar recortando (fuentes verticales)
+const vfDe = (e) => {
+  const r = e.recorte, pre = r ? `crop=iw*${r.w}:ih*${r.h}:iw*${r.x}:ih*${r.y},` : "";
+  if (e.encaje !== "pad") return pre + VF;
+  return `${pre}scale=854:480:force_original_aspect_ratio=decrease,pad=854:480:(ow-iw)/2:(oh-ih)/2:color=${e.fondo || "0x08080a"},fps=30,format=yuv420p`;
+};
 const ENC = ["-an", "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-g", "30", "-movflags", "+faststart"];
 const poster = (mp4, jpg, at) => ff(["-ss", String(at), "-i", mp4, "-frames:v", "1", "-q:v", "3", jpg]);
 
@@ -61,11 +68,11 @@ for (const e of pend) {
     if (e.src.tipo === "youtube") {
       const raw = `${TMP}/yt_${e.id}.mp4`;
       bajarYT(e.src.url, e.desde, e.hasta, raw);
-      ff(["-i", raw, "-t", String(dur), "-vf", VF, ...ENC, mp4]);
+      ff(["-i", raw, "-t", String(dur), "-vf", vfDe(e), ...ENC, mp4]);
     } else {
       const url = `https://github.com/${REPO}/releases/download/${e.src.release}/${e.src.archivo}`;
       ff(["-reconnect", "1", "-reconnect_on_network_error", "1", "-reconnect_delay_max", "5",
-        "-ss", String(e.desde), "-i", url, "-t", String(dur), "-vf", VF, ...ENC, mp4]);
+        "-ss", String(e.desde), "-i", url, "-t", String(dur), "-vf", vfDe(e), ...ENC, mp4]);
     }
     const d = dura(mp4);
     if (d < 1) throw new Error("salió vacío");
@@ -84,6 +91,9 @@ for (const s of C.estilos || []) {
   const clips = (s.clips || []).filter((id) => C.efectos.some((e) => e.id === id));
   const toca = TODO || !ya.has(`estilo-${s.id}.mp4`) || clips.some((id) => hechos.includes(id)) || IDS.includes(`estilo-${s.id}`);
   if (!toca || !clips.length) continue;
+  // corridas en paralelo (una por estilo): el reel lo arma sólo la que tiene TODOS sus clips, si no queda a medias
+  const faltan = clips.filter((id) => !hechos.includes(id) && !ya.has(`${id}.mp4`));
+  if (faltan.length) { console.log(`reel ${s.id}: espera ${faltan.join(", ")}`); continue; }
   try {
     const partes = [];
     for (const id of clips) {

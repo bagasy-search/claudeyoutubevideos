@@ -57,8 +57,17 @@ jobs:
           curl -fsSL https://deno.land/install.sh | DENO_INSTALL=$HOME/.deno sh >/dev/null
           echo "$HOME/.deno/bin" >> $GITHUB_PATH
       - name: proxies (YouTube bloquea las IPs de GitHub)
+        # 20-oct: varios devuelven 407 (credencial vencida) y quemaban los 6 intentos → quedan sólo los que hoy abren YouTube
         env: { YTPROXIES: "${{ secrets.YTPROXIES }}" }
-        run: printf '%s\n' "$YTPROXIES" > /tmp/proxies.txt
+        run: |
+          printf '%s\n' "$YTPROXIES" | sed 's/\r$//' | grep -v '^[[:space:]]*#' | grep -v '^[[:space:]]*$' > /tmp/todos.txt || true
+          : > /tmp/proxies.txt
+          while read -r p; do
+            ( c=$(curl -s -o /dev/null -w '%{http_code}' -m 12 -x "$p" https://www.youtube.com/robots.txt || true)
+              [ "$c" = "200" ] && echo "$p" >> /tmp/proxies.txt ) &
+          done < /tmp/todos.txt; wait
+          echo "proxies que andan: $(wc -l < /tmp/proxies.txt) de $(wc -l < /tmp/todos.txt)"
+          [ -s /tmp/proxies.txt ] || cp /tmp/todos.txt /tmp/proxies.txt
       - name: cortes
         if: ${{ github.event.inputs.modo == 'cortes' }}
         env:
