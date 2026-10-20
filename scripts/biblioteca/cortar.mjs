@@ -45,12 +45,12 @@ const ENC = ["-an", "-c:v", "libx264", "-preset", "slow", "-crf", "24", "-g", "3
 const poster = (mp4, jpg, at) => ff(["-ss", String(at), "-i", mp4, "-frames:v", "1", "-q:v", "3", jpg]);
 
 // YouTube: sólo el tramo, sólo video, con keyframe en el corte (el segundo exacto), rotando proxies.
-// 20-oct: YouTube bloquea las IPs de GitHub → si el 1er intento falla, plan B (ytalt.mjs: túneles públicos
-// Invidious/Piped/cobalt) baja el video ENTERO una sola vez por link y los tramos se cortan de ahí.
+// 20-oct: YouTube bloquea las IPs de GitHub → proxies antes que cookies; si nada anda, plan B (ytalt.mjs)
+// baja el video ENTERO una sola vez por link y los tramos se cortan de ahí.
 const enteros = new Map();
 const bajarYT = async (url, a, b, dst) => {
   const COOKIES = fs.existsSync("/tmp/cookies") ? fs.readdirSync("/tmp/cookies").map((f) => `/tmp/cookies/${f}`) : [];
-  const intentos = [["", []], ...COOKIES.map((c) => ["", ["--cookies", c]]), ...proxies.slice(0, 4).map((p) => [p, []])];
+  const intentos = [["", []], ...proxies.slice(0, 4).map((p) => [p, []]), ...COOKIES.map((c) => ["", ["--cookies", c]])];
   const probar = (i) => {
     const [px, extra] = intentos[i];
     const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--quiet", "--no-warnings",
@@ -61,8 +61,8 @@ const bajarYT = async (url, a, b, dst) => {
     console.log(`  yt-dlp intento ${i + 1} falló: ${(r.stderr || "").trim().split("\n").pop()}`);
     return false;
   };
-  if (!enteros.has(url) && probar(0)) return;
-  if (!enteros.has(url)) {
+  if (!enteros.has(url)) for (let i = 0; i < intentos.length; i++) if (probar(i)) return;
+  if (!enteros.has(url)) { // último recurso (ver molde.mjs): túneles públicos, el video entero una sola vez por link
     const f = `${TMP}/alt/entero_${enteros.size}.mp4`;
     fs.mkdirSync(`${TMP}/alt`, { recursive: true });
     const r = await bajarAlt(url, f, { alto: 720, audio: false });
@@ -71,7 +71,6 @@ const bajarYT = async (url, a, b, dst) => {
   }
   const f = enteros.get(url);
   if (f) { ff(["-ss", String(a), "-i", f, "-t", String(b - a), "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "14", dst]); return; }
-  for (let i = 1; i < intentos.length; i++) if (probar(i)) return;
   throw new Error("no pude bajar el tramo de YouTube");
 };
 

@@ -38,21 +38,8 @@ if (rel) {
 // 20-oct: los proxies de julio murieron → primero SIN proxy (IP del runner, nunca la de la casa) con dos clientes,
 // después los proxies que pasaron la prueba del workflow. Tope de 10 min por intento (antes 30: un proxy muerto colgaba todo).
 const COOKIES = fs.existsSync("/tmp/cookies") ? fs.readdirSync("/tmp/cookies").map((f) => `/tmp/cookies/${f}`) : [];
-const intentos = [["", []], ...COOKIES.map((c) => ["", ["--cookies", c]]), ...proxies.slice(0, 6).map((p) => [p, []])];
-// 20-oct: YouTube bloquea las IPs de GitHub ("no soy un bot", ni con cookies) → después del 1er intento va el
-// plan B (ytalt.mjs: túneles públicos Invidious/Piped/cobalt), y recién después cookies y proxies.
+const intentos = [["", []], ...proxies.slice(0, 6).map((p) => [p, []]), ...COOKIES.map((c) => ["", ["--cookies", c]])];
 for (let i = 0; i < intentos.length && !ok; i++) {
-  if (i === 1) {
-    const r = await bajarAlt(URL, `${T}/v.mp4`, { alto: 720, audio: true });
-    if (r.ok) {
-      const probe = ff(["-i", `${T}/v.mp4`, "-f", "null", "-t", "0.1", "-"]);
-      const dim = probe.match(/, (\d{2,5})x(\d{2,5})/);
-      fs.writeFileSync(`${T}/v.info.json`, JSON.stringify({ ...r.info, width: dim ? +dim[1] : null, height: dim ? +dim[2] : null }));
-      if (r.subs) fs.renameSync(r.subs, `${T}/v.subs.vtt`);
-      console.log(`plan B: ${r.via} (${r.alto}p)`);
-      ok = true; break;
-    }
-  }
   const [px, extra] = intentos[i];
   const r = spawnSync("yt-dlp", [...(px ? ["--proxy", px] : []), ...extra, "--socket-timeout", "20", "--no-playlist", "--no-warnings", "--no-write-playlist-metafiles",
     "-f", "bv*[height<=720][vcodec^=avc1]+ba/bv*[height<=720]+ba/b[height<=720]/b", "--merge-output-format", "mp4",
@@ -60,6 +47,18 @@ for (let i = 0; i < intentos.length && !ok; i++) {
     "-o", `${T}/v.%(ext)s`, URL], { encoding: "utf8", timeout: 600000, killSignal: "SIGKILL" });
   ok = r.status === 0 && fs.existsSync(`${T}/v.mp4`);
   if (!ok) console.log(`intento ${i + 1}: ${(r.stderr || "").trim().split("\n").slice(-2).join(" | ")}`);
+}
+// último recurso: túneles públicos (ytalt.mjs). Probado el 20-oct: Invidious/Piped/cobalt también le dan 403 a
+// las IPs de GitHub, igual que YouTube en TODOS los runners (ubuntu, arm, mac, windows = AS8075 Microsoft).
+if (!ok) {
+  const r = await bajarAlt(URL, `${T}/v.mp4`, { alto: 720, audio: true });
+  if (r.ok) {
+    const probe = ff(["-i", `${T}/v.mp4`, "-f", "null", "-t", "0.1", "-"]);
+    const dim = probe.match(/, (\d{2,5})x(\d{2,5})/);
+    fs.writeFileSync(`${T}/v.info.json`, JSON.stringify({ ...r.info, width: dim ? +dim[1] : null, height: dim ? +dim[2] : null }));
+    if (r.subs) fs.renameSync(r.subs, `${T}/v.subs.vtt`);
+    console.log(`plan B: ${r.via} (${r.alto}p)`); ok = true;
+  }
 }
 if (!ok) { console.error("no pude bajar el video"); process.exit(1); }
 const info = JSON.parse(fs.readFileSync(`${T}/v.info.json`, "utf8"));
