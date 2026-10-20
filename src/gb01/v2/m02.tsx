@@ -478,7 +478,7 @@ export const SEGS_M02: Seg[] = [
   },
   {
     hub: { portal: "eng", orbs: [
-      { id: "eng", t: T("first gear", 116), ang: -16, anillo: 0, tam: 230, D: Engranaje1 },
+      { id: "eng", t: T("first gear", 116), ang: -16, anillo: 0, tam: 230, D: Engranaje1, png: "engranaje" },
       { id: "dado", t: T("maybe", 117), ang: 196, anillo: 1, tam: 160, D: DadoQuizas },
       { id: "ficha", t: T("psychologist", 119), ang: 128, anillo: 2, tam: 200, D: Ficha },
     ] },

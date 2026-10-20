@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon } from "./glifo";
-import { EscenaMundo, Texto, circ } from "./esc";
+import { EscenaMundo, Texto, circ, Png } from "./esc";
 import type { Seg } from "./Video";
 
 type D = React.FC<{ t: number; t0: number; on: number; tam: number }>;
@@ -94,7 +94,14 @@ const Playa: React.FC = () => {
     </>
   );
 };
-const Escena48: React.FC = () => <EscenaMundo tomas={tomas48}><MapaCuerpo /><Respira /><Playa /></EscenaMundo>;
+// objetos de vidrio de la escena 48
+const H48: React.FC = () => (
+  <>
+    <Png id="pulmones" x={1390} y={60} w={250} t0={E48.breathe} glow={N.cian} />
+    <Png id="playa" x={2370} y={80} w={300} t0={E48.wave} glow={N.cian} />
+  </>
+);
+const Escena48: React.FC = () => <EscenaMundo tomas={tomas48}><MapaCuerpo /><Respira /><Playa /><H48 /></EscenaMundo>;
 
 // ═════════ HUB 49 · "An urge is like a wave. It rises," ═════════
 const PicoRojo: D = ({ t, t0, on, tam }) => (
@@ -156,7 +163,13 @@ const MirarPasar: React.FC = () => {
     </>
   );
 };
-const Escena49: React.FC = () => <EscenaMundo tomas={tomas49}><Curva /><MirarPasar /></EscenaMundo>;
+// objetos de vidrio de la escena 49
+const H49: React.FC = () => (
+  <>
+    <Png id="ojo" x={1510} y={60} w={240} t0={E49.every} glow={N.cian} />
+  </>
+);
+const Escena49: React.FC = () => <EscenaMundo tomas={tomas49}><Curva /><MirarPasar /><H49 /></EscenaMundo>;
 
 // ═════════ HUB 50 · "the highway in your brain gets a little narrower, and the path to your own choice gets a little wider." ═════════
 const AutopistaAngosta: D = ({ t, t0, on, tam }) => {
@@ -251,7 +264,16 @@ const Semanas: React.FC = () => {
     </>
   );
 };
-const Escena50: React.FC = () => <EscenaMundo tomas={tomas50}><NoPerfecto /><AlRio /><OlaTrasOla /><Semanas /></EscenaMundo>;
+// objetos de vidrio de la escena 50
+const H50: React.FC = () => (
+  <>
+    <Png id="trofeo" x={440} y={60} w={230} t0={E50.perfect} glow={N.oro} />
+    <Png id="celu" x={1390} y={60} w={200} t0={E50.throw} glow={N.cian} />
+    <Png id="ola" x={2370} y={60} w={300} t0={E50.one} glow={N.cian} />
+    <Png id="calendario" x={3290} y={60} w={240} t0={E50.weeks} glow={N.oro} />
+  </>
+);
+const Escena50: React.FC = () => <EscenaMundo tomas={tomas50}><NoPerfecto /><AlRio /><OlaTrasOla /><Semanas /><H50 /></EscenaMundo>;
 
 // ═════════ HUB 51 · "The phone will still be there in your pocket, but it will feel less like" ═════════
 const BolsilloCel: D = ({ t, t0, on, tam }) => (
@@ -336,7 +358,16 @@ const CerebroFinal: React.FC = () => {
     </>
   );
 };
-const Escena51: React.FC = () => <EscenaMundo tomas={tomas51}><Herramienta /><AgarraSuelta /><CerebroFinal /></EscenaMundo>;
+// objetos de vidrio de la escena 51
+const H51: React.FC = () => (
+  <>
+    <Png id="tragamonedas" x={-450} y={60} w={240} t0={E51.slot} t1={E51.tool} glow={N.oro} />
+    <Png id="herramienta" x={-450} y={60} w={240} t0={E51.tool} glow={N.oro} />
+    <Png id="mano_abierta" x={1390} y={60} w={260} t0={E51.pick} glow={N.cian} />
+    <Png id="cerebro" x={1900} y={50} w={520} t0={E51.look} glow={N.cian} />
+  </>
+);
+const Escena51: React.FC = () => <EscenaMundo tomas={tomas51}><Herramienta /><AgarraSuelta /><CerebroFinal /><H51 /></EscenaMundo>;
 
 export const SEGS_M13: Seg[] = [
   {
@@ -351,7 +382,7 @@ export const SEGS_M13: Seg[] = [
   {
     hub: { portal: "ola", orbs: [
       { id: "pico", t: T("An urge is", 820.5), ang: 198, anillo: 1, tam: 160, D: PicoRojo },
-      { id: "ola", t: T("like a wave", 821.5), ang: -14, anillo: 0, tam: 240, D: OlaHub },
+      { id: "ola", t: T("like a wave", 821.5), ang: -14, anillo: 0, tam: 240, D: OlaHub, png: "ola" },
       { id: "sube", t: T("It rises", 822.5), ang: 128, anillo: 2, tam: 160, D: Sube },
     ] },
     Escena: Escena49,

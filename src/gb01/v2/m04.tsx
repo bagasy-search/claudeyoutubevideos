@@ -4,7 +4,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, rnd, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon, Trazo } from "./glifo";
-import { EscenaMundo, Obj, Texto, circ } from "./esc";
+import { EscenaMundo, Obj, Texto, circ, Png } from "./esc";
 import { EngranajeSvg } from "./m02";
 import type { Seg } from "./Video";
 
@@ -89,11 +89,17 @@ const PulgarScroll: React.FC = () => {
     </>
   );
 };
+// objetos de vidrio de la escena 12
+const H12: React.FC = () => (
+  <>
+    <Png id="dedo" x={1280} y={60} w={200} t0={E12.thumb} glow={N.cian} />
+  </>
+);
 const Escena12: React.FC = () => {
   const t = useT();
   const late = 1 + 0.08 * Math.sin(t * 9);
   return (
-    <EscenaMundo tomas={tomas12}>
+    <EscenaMundo tomas={tomas12}><H12 />
       <Carta x={-330} t0={E12.msg - 0.5} tVuelta={E12.msg} tBaraja={E12.dont} i={0} color={N.rojoBorde}>
         <g transform={`translate(0,-40) scale(${late})`}><path d="M0,40 C-80,-10 -60,-80 0,-40 C60,-80 80,-10 0,40 Z" fill="rgba(255,42,72,.25)" stroke={N.rojo} strokeWidth={4} style={glow(N.rojo)} /></g>
         <rect x={-80} y={50} width={160} height={50} rx={14} fill="none" stroke={N.rojoBorde} strokeWidth={2.5} />
@@ -233,8 +239,15 @@ const Engr2: React.FC = () => {
     </>
   );
 };
+// objetos de vidrio de la escena 13
+const H13: React.FC = () => (
+  <>
+    <Png id="bayas" x={1360} y={60} w={200} t0={E13.food} glow={N.rojo} />
+    <Png id="palanca" x={2180} y={60} w={220} t0={E13.lever} glow={N.rojo} />
+  </>
+);
 const Escena13: React.FC = () => (
-  <EscenaMundo tomas={tomas13}>
+  <EscenaMundo tomas={tomas13}><H13 />
     <Regalo />
     <Linea />
     <Bayas />
@@ -330,7 +343,13 @@ const RefrescoMacro: React.FC = () => {
     </>
   );
 };
-const Escena14: React.FC = () => <EscenaMundo tomas={tomas14}><RefrescoMacro /></EscenaMundo>;
+// objetos de vidrio de la escena 14
+const H14: React.FC = () => (
+  <>
+    <Png id="rueda_carga" x={430} y={120} w={170} t0={E14.wheel} t1={E14.remind} glow={N.cian} />
+  </>
+);
+const Escena14: React.FC = () => <EscenaMundo tomas={tomas14}><RefrescoMacro /><H14 /></EscenaMundo>;
 
 // ═════════ HUB 15 · "A slot machine has a handle. You pull it, the wheels spin, and you wait." ═════════
 const Manija: D = ({ t, t0, on, tam }) => {
@@ -444,8 +463,14 @@ const Inventor: React.FC = () => {
     </>
   );
 };
+// objetos de vidrio de la escena 15
+const H15: React.FC = () => (
+  <>
+    <Png id="palanca" x={470} y={80} w={220} t0={E15.pull} t1={E15.inventor} glow={N.rojo} />
+  </>
+);
 const Escena15: React.FC = () => (
-  <EscenaMundo tomas={tomas15}>
+  <EscenaMundo tomas={tomas15}><H15 />
     <Espejo />
     <Inventor />
   </EscenaMundo>
@@ -472,7 +497,7 @@ export const SEGS_M04: Seg[] = [
   },
   {
     hub: { portal: "pulgar", orbs: [
-      { id: "ojo", t: T("Watch", 237), ang: 198, anillo: 1, tam: 150, D: OjoMira },
+      { id: "ojo", t: T("Watch", 237), ang: 198, anillo: 1, tam: 150, D: OjoMira, png: "ojo" },
       { id: "pulgar", t: T("your thumb", 237.5), ang: -14, anillo: 0, tam: 250, D: PulgarGrande },
       { id: "apps", t: T("open an app", 238), ang: 128, anillo: 2, tam: 180, D: GrillaApps },
     ] },

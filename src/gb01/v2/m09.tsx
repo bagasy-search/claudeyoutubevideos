@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon } from "./glifo";
-import { EscenaMundo, Obj, Texto, circ } from "./esc";
+import { EscenaMundo, Obj, Texto, circ, Png } from "./esc";
 import type { Seg } from "./Video";
 
 type D = React.FC<{ t: number; t0: number; on: number; tam: number }>;
@@ -125,7 +125,15 @@ const MiedoViejo: React.FC = () => {
     </>
   );
 };
-const Escena32: React.FC = () => <EscenaMundo tomas={tomas32}><PalancaPluma /><PuertasSeVan /><MiedoViejo /></EscenaMundo>;
+// objetos de vidrio de la escena 32
+const H32: React.FC = () => (
+  <>
+    <Png id="palanca" x={470} y={60} w={260} t0={E32.effort} glow={N.rojo} />
+    <Png id="puerta" x={1330} y={60} w={260} t0={E32.reel} t1={E32.stop + 0.8} glow={N.oro} />
+    <Png id="silla" x={2270} y={80} w={260} t0={E32.alone - 0.2} glow={N.violeta} />
+  </>
+);
+const Escena32: React.FC = () => <EscenaMundo tomas={tomas32}><PalancaPluma /><PuertasSeVan /><MiedoViejo /><H32 /></EscenaMundo>;
 
 // ═════════ HUB 33 · "Four gears turning together all day long in your pocket." ═════════
 const COLS = [N.violeta, N.oro, N.cian, N.rojo];
@@ -214,7 +222,15 @@ const PlanoCerebro: React.FC = () => {
     </>
   );
 };
-const Escena33: React.FC = () => <EscenaMundo tomas={tomas33}><VidrioLimpio /><NoDebil /><PlanoCerebro /></EscenaMundo>;
+// objetos de vidrio de la escena 33
+const H33: React.FC = () => (
+  <>
+    <Png id="cerebro" x={480} y={230} w={240} t0={E33.clear} glow={N.cian} />
+    <Png id="corazon_kintsugi" x={1330} y={60} w={300} t0={E33.broken} glow={N.oro} />
+    <Png id="neurona" x={2270} y={40} w={320} t0={E33.exactly} glow={N.violeta} />
+  </>
+);
+const Escena33: React.FC = () => <EscenaMundo tomas={tomas33}><VidrioLimpio /><NoDebil /><PlanoCerebro /><H33 /></EscenaMundo>;
 
 // ═════════ HUB 34 · "built for a world of berries and lions and small tribes around a fire." ═════════
 const Bayas2: D = ({ t, t0, on, tam }) => (
@@ -316,7 +332,16 @@ const ConTuMente: React.FC = () => {
     </>
   );
 };
-const Escena34: React.FC = () => <EscenaMundo tomas={tomas34}><MilesContraUno /><Hipnosis /><CulpaSeVa /><ConTuMente /></EscenaMundo>;
+// objetos de vidrio de la escena 34
+const H34: React.FC = () => (
+  <>
+    <Png id="manos_celus" x={560} y={60} w={360} t0={E34.thousands} glow={N.cian} />
+    <Png id="hipnosis" x={1430} y={40} w={300} t0={E34.looking} glow={N.violeta} />
+    <Png id="vela" x={2370} y={80} w={200} t0={E34.blaming} glow={N.oro} />
+    <Png id="llave" x={2330} y={60} w={220} t0={E34.working} glow={N.oro} />
+  </>
+);
+const Escena34: React.FC = () => <EscenaMundo tomas={tomas34}><MilesContraUno /><Hipnosis /><CulpaSeVa /><ConTuMente /><H34 /></EscenaMundo>;
 
 // ═════════ HUB 35 · "instead of against it. There is an old story that I like to tell my students." ═════════
 const ConContra: D = ({ t, t0, on, tam }) => {
@@ -418,7 +443,16 @@ const ManoAbierta: React.FC = () => {
     </>
   );
 };
-const Escena35: React.FC = () => <EscenaMundo tomas={tomas35}><Selva /><Coco /><ManoAbierta /></EscenaMundo>;
+// objetos de vidrio de la escena 35
+const H35: React.FC = () => (
+  <>
+    <Png id="mono" x={470} y={80} w={280} t0={E35.caught} glow={N.oro} />
+    <Png id="coco" x={1380} y={60} w={260} t0={E35.coconut} glow={N.oro} />
+    <Png id="cuchillo" x={1500} y={-60} w={120} t0={E35.hole} glow={N.cian} />
+    <Png id="mano_abierta" x={2270} y={60} w={320} t0={E35.hand} glow={N.cian} />
+  </>
+);
+const Escena35: React.FC = () => <EscenaMundo tomas={tomas35}><Selva /><Coco /><ManoAbierta /><H35 /></EscenaMundo>;
 
 export const SEGS_M09: Seg[] = [
   {
@@ -441,9 +475,9 @@ export const SEGS_M09: Seg[] = [
   },
   {
     hub: { portal: "fogata", orbs: [
-      { id: "bayas", t: T("berries and lions", 569), ang: 198, anillo: 1, tam: 160, D: Bayas2 },
+      { id: "bayas", t: T("berries and lions", 569), ang: 198, anillo: 1, tam: 160, D: Bayas2, png: "bayas" },
       { id: "leon", t: T("and lions", 569), ang: 128, anillo: 2, tam: 170, D: Leon },
-      { id: "fogata", t: T("around a fire", 572), ang: -14, anillo: 0, tam: 240, D: FogataHub },
+      { id: "fogata", t: T("around a fire", 572), ang: -14, anillo: 0, tam: 240, D: FogataHub, png: "fogata" },
     ] },
     Escena: Escena34,
     sonidos: (s) => { s.add("maquinaGira", E34.machine, 0.5); s.add("digito", E34.thousands, 0.5); s.add("vuelo", 579.9, 0.5); s.add("sinapsis", E34.looking, 0.5); s.add("vuelo", 582.2, 0.5); s.add("luz", E34.understand, 0.5); s.add("ola", E34.blaming + 0.2, 0.5); s.add("vuelo", 586.7, 0.5); s.add("cierre", E34.working + 0.6, 0.5); },
@@ -451,7 +485,7 @@ export const SEGS_M09: Seg[] = [
   {
     hub: { portal: "perg", orbs: [
       { id: "contra", t: T("instead of against", 587), ang: 198, anillo: 1, tam: 160, D: ConContra },
-      { id: "perg", t: T("an old story", 589), ang: -14, anillo: 0, tam: 240, D: Pergamino2 },
+      { id: "perg", t: T("an old story", 589), ang: -14, anillo: 0, tam: 240, D: Pergamino2, png: "pergamino" },
       { id: "alumnos", t: T("my students", 591.5), ang: 128, anillo: 2, tam: 170, D: Alumnos },
     ] },
     Escena: Escena35,

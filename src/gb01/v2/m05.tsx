@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, rnd, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon, Trazo } from "./glifo";
-import { Contador, EscenaMundo, Obj, Texto, circ } from "./esc";
+import { Contador, EscenaMundo, Obj, Texto, circ, Png } from "./esc";
 import { EngranajeSvg } from "./m02";
 import type { Seg } from "./Video";
 
@@ -120,11 +120,18 @@ const ManoCelular: React.FC = () => {
     </>
   );
 };
+// objetos de vidrio de la escena 16
+const H16: React.FC = () => (
+  <>
+    <Png id="celu" x={430} y={60} w={200} t0={E16.hand} glow={N.cian} />
+    <Png id="casino" x={1870} y={60} w={300} t0={E16.casino} glow={N.oro} />
+  </>
+);
 const Escena16: React.FC = () => {
   const t = useT();
   const xCas = lerp(1500, 520, ramp(t, E16.hand - 0.2, 0.9, easeOut));
   return (
-    <EscenaMundo tomas={tomas16}>
+    <EscenaMundo tomas={tomas16}><H16 />
       <Facilidad />
       <ManoCelular />
       <RutaYAuto xCas={xCas} />
@@ -212,8 +219,14 @@ const Triangulo: React.FC = () => {
     </svg>
   );
 };
+// objetos de vidrio de la escena 17
+const H17: React.FC = () => (
+  <>
+    <Png id="pergamino" x={-470} y={40} w={260} t0={E17.monks} glow={N.oro} />
+  </>
+);
 const Escena17: React.FC = () => (
-  <EscenaMundo tomas={tomas17}>
+  <EscenaMundo tomas={tomas17}><H17 />
     <Pergamino />
     <Triangulo />
   </EscenaMundo>
@@ -423,8 +436,15 @@ const MarcoDos: React.FC = () => {
     </>
   );
 };
+// objetos de vidrio de la escena 19
+const H19: React.FC = () => (
+  <>
+    <Png id="pava" x={1160} y={40} w={230} t0={E19.kettle} glow={N.cian} />
+    <Png id="engranaje" x={2800} y={40} w={220} t0={E19.second} glow={N.oro} />
+  </>
+);
 const Escena19: React.FC = () => (
-  <EscenaMundo tomas={tomas19}>
+  <EscenaMundo tomas={tomas19}><H19 />
     <Banco />
     <Pava />
     <Carrera />
@@ -437,14 +457,14 @@ export const SEGS_M05: Seg[] = [
     hub: { portal: "palanca", orbs: [
       { id: "cita", t: T("he wished", 268), ang: 198, anillo: 1, tam: 190, D: CitaCard },
       { id: "alerta", t: T("so addictive", 269), ang: 128, anillo: 2, tam: 170, D: Alerta },
-      { id: "palanca", t: T("the lever is", 272), ang: -14, anillo: 0, tam: 240, D: PalancaGrande },
+      { id: "palanca", t: T("the lever is", 272), ang: -14, anillo: 0, tam: 240, D: PalancaGrande, png: "palanca" },
     ] },
     Escena: Escena16,
     sonidos: (s) => { s.add("aparece", E16.easy, 0.6); s.add("traza", E16.easy + 0.1, 0.6); s.add("vuelo", 277.3, 0.6); s.add("neonOn", E16.casino + 0.2); s.add("vuelo", 279.6, 0.5); s.add("tiron", E16.drive - 0.3, 0.6); s.add("aparece", E16.money); s.add("digito", E16.pocket, 0.6); s.add("vueloLargo", E16.hand - 0.2, 0.7); s.add("golpe", E16.hand + 0.6, 0.5); },
   },
   {
     hub: { portal: "crono", orbs: [
-      { id: "puerta", t: T("No door", 285.3), ang: 200, anillo: 1, tam: 150, D: Puerta },
+      { id: "puerta", t: T("No door", 285.3), ang: 200, anillo: 1, tam: 150, D: Puerta, png: "puerta" },
       { id: "auto", t: T("no drive", 286), ang: 130, anillo: 2, tam: 170, D: Auto },
       { id: "dolar", t: T("no cost", 287), ang: 40, anillo: 2, tam: 140, D: Dolar },
       { id: "crono", t: T("always one second", 289), ang: -14, anillo: 0, tam: 240, D: Crono1s },

@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon } from "./glifo";
-import { EscenaMundo, Texto, circ } from "./esc";
+import { EscenaMundo, Texto, circ, Png } from "./esc";
 import type { Seg } from "./Video";
 
 type D = React.FC<{ t: number; t0: number; on: number; tam: number }>;
@@ -112,7 +112,14 @@ const PantallaGris: React.FC = () => {
     </>
   );
 };
-const Escena44: React.FC = () => <EscenaMundo tomas={tomas44}><CarpetaLejana /><Logout /><PantallaGris /></EscenaMundo>;
+// objetos de vidrio de la escena 44
+const H44: React.FC = () => (
+  <>
+    <Png id="carpeta" x={440} y={60} w={240} t0={E44.folder} glow={N.cian} />
+    <Png id="caramelo" x={2370} y={60} w={220} t0={E44.colors} glow={N.rojo} />
+  </>
+);
+const Escena44: React.FC = () => <EscenaMundo tomas={tomas44}><CarpetaLejana /><Logout /><PantallaGris /><H44 /></EscenaMundo>;
 
 // ═════════ HUB 45 · "Every small step of effort gives the wise guard in your forehead a" ═════════
 const Escalones: D = ({ t, t0, on, tam }) => {
@@ -230,7 +237,16 @@ const DecideAntes: React.FC = () => {
     </>
   );
 };
-const Escena45: React.FC = () => <EscenaMundo tomas={tomas45}><GuardiaPregunta /><PuertasPropias /><UltimaPagina /><DecideAntes /></EscenaMundo>;
+// objetos de vidrio de la escena 45
+const H45: React.FC = () => (
+  <>
+    <Png id="farol" x={440} y={60} w={230} t0={E45.wake} glow={N.oro} />
+    <Png id="puerta" x={1390} y={60} w={240} t0={E45.doors} glow={N.verde} />
+    <Png id="libro" x={2370} y={60} w={280} t0={E45.write} glow={N.oro} />
+    <Png id="reloj_arena" x={3290} y={60} w={220} t0={E45.decide} glow={N.oro} />
+  </>
+);
+const Escena45: React.FC = () => <EscenaMundo tomas={tomas45}><GuardiaPregunta /><PuertasPropias /><UltimaPagina /><DecideAntes /><H45 /></EscenaMundo>;
 
 // ═════════ HUB 46 · "Ten minutes. Set a timer. Or use the oldest door of all." ═════════
 const DiezMin: D = ({ t, t0, on, tam }) => (
@@ -319,7 +335,15 @@ const Practica: React.FC = () => {
     </>
   );
 };
-const Escena46: React.FC = () => <EscenaMundo tomas={tomas46}><Casa /><DosAM /><Practica /></EscenaMundo>;
+// objetos de vidrio de la escena 46
+const H46: React.FC = () => (
+  <>
+    <Png id="luna" x={-470} y={-170} w={200} t0={E46.night} t1={E46.kitchen} glow={N.violeta} />
+    <Png id="cama" x={1510} y={70} w={280} t0={E46.steal} glow={N.violeta} />
+    <Png id="loto" x={1950} y={150} w={460} t0={E46.practice} glow={N.oro} />
+  </>
+);
+const Escena46: React.FC = () => <EscenaMundo tomas={tomas46}><Casa /><DosAM /><Practica /><H46 /></EscenaMundo>;
 
 // ═════════ HUB 47 · "very simple. In my tradition, we watch the mind the way you watch clouds" ═════════
 const nube = (s = 1) => `M${-60 * s},${20 * s} Q${-90 * s},${20 * s} ${-80 * s},${-6 * s} Q${-76 * s},${-34 * s} ${-44 * s},${-26 * s} Q${-34 * s},${-60 * s} ${2 * s},${-50 * s} Q${30 * s},${-70 * s} ${50 * s},${-34 * s} Q${86 * s},${-34 * s} ${84 * s},${0} Q${84 * s},${22 * s} ${60 * s},${20 * s} Z`;
@@ -417,7 +441,14 @@ const NoPelear: React.FC = () => {
     </>
   );
 };
-const Escena47: React.FC = () => <EscenaMundo tomas={tomas47}><Cielo /><Surf /><ElTiron /><NoPelear /></EscenaMundo>;
+// objetos de vidrio de la escena 47
+const H47: React.FC = () => (
+  <>
+    <Png id="nube" x={470} y={-120} w={280} t0={E47.sky} glow={N.cian} />
+    <Png id="surfista" x={1470} y={60} w={300} t0={E47.surfing} glow={N.cian} />
+  </>
+);
+const Escena47: React.FC = () => <EscenaMundo tomas={tomas47}><Cielo /><Surf /><ElTiron /><NoPelear /><H47 /></EscenaMundo>;
 
 export const SEGS_M12: Seg[] = [
   {
@@ -442,7 +473,7 @@ export const SEGS_M12: Seg[] = [
     hub: { portal: "puerta", orbs: [
       { id: "diez", t: T("Ten minutes", 770.5), ang: 198, anillo: 1, tam: 170, D: DiezMin },
       { id: "timer", t: T("Set a timer", 772), ang: 128, anillo: 2, tam: 160, D: Timer },
-      { id: "puerta", t: T("oldest door", 773.5), ang: -14, anillo: 0, tam: 240, D: PuertaVieja },
+      { id: "puerta", t: T("oldest door", 773.5), ang: -14, anillo: 0, tam: 240, D: PuertaVieja, png: "puerta" },
     ] },
     Escena: Escena46,
     sonidos: (s) => { s.add("vuelo", E46.room - 0.3, 0.5); s.add("toque", E46.room + 0.6, 0.5); s.add("ola", E46.night, 0.3); s.add("cierre", E46.steal, 0.5); s.add("vuelo", 780.6, 0.5); s.add("premio", E46.two + 0.3, 0.4); s.add("vuelo", 782.8, 0.5); s.add("luz", E46.practice, 0.5); },
@@ -453,7 +484,7 @@ export const SEGS_M12: Seg[] = [
       { id: "ojo", t: T("watch the mind", 788), ang: 128, anillo: 2, tam: 160, D: OjoMente },
       { id: "n1", t: T("watch clouds", 790.3) - 0.2, ang: 60, anillo: 2, tam: 140, D: NubeChica },
       { id: "n2", t: T("watch clouds", 790.3) - 0.1, ang: 250, anillo: 1, tam: 120, D: NubeChica },
-      { id: "nube", t: T("watch clouds", 790.3), ang: -14, anillo: 0, tam: 240, D: NubeHub },
+      { id: "nube", t: T("watch clouds", 790.3), ang: -14, anillo: 0, tam: 240, D: NubeHub, png: "nube" },
     ] },
     Escena: Escena47,
     sonidos: (s) => { s.add("ola", E47.sky, 0.3); s.add("vuelo", 794.2, 0.5); s.add("ola", E47.surfing, 0.6); s.add("vuelo", 798.1, 0.5); s.add("tiron", E47.pull, 0.5); s.add("cierre", E47.donot + 0.2, 0.6); s.add("vuelo", 802.1, 0.5); s.add("traza", E47.fight + 0.2, 0.5); },

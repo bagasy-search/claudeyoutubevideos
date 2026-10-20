@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon } from "./glifo";
-import { EscenaMundo, Texto, circ } from "./esc";
+import { EscenaMundo, Texto, circ, Png } from "./esc";
 import type { Seg } from "./Video";
 
 type D = React.FC<{ t: number; t0: number; on: number; tam: number }>;
@@ -140,7 +140,15 @@ const Puno: React.FC = () => {
     </>
   );
 };
-const Escena36: React.FC = () => <EscenaMundo tomas={tomas36}><SeVan /><Huele /><Puno /></EscenaMundo>;
+// objetos de vidrio de la escena 36
+const H36: React.FC = () => (
+  <>
+    <Png id="mono" x={470} y={80} w={270} t0={E36.came} glow={N.oro} />
+    <Png id="caramelo" x={1390} y={80} w={230} t0={E36.smelled} glow={N.rojo} />
+    <Png id="puno" x={2290} y={60} w={260} t0={E36.fist} glow={N.rojo} />
+  </>
+);
+const Escena36: React.FC = () => <EscenaMundo tomas={tomas36}><SeVan /><Huele /><Puno /><H36 /></EscenaMundo>;
 
 // ═════════ HUB 37 · "a fist is bigger than an open hand. The monkey could not pull it out." ═════════
 const PunoHub: D = ({ t, t0, on, tam }) => (
@@ -224,7 +232,16 @@ const AbreLaMano: React.FC = () => {
     </>
   );
 };
-const Escena37: React.FC = () => <EscenaMundo tomas={tomas37}><Vuelven /><NuncaPenso /><AbreLaMano /></EscenaMundo>;
+// objetos de vidrio de la escena 37
+const H37: React.FC = () => (
+  <>
+    <Png id="jaula" x={470} y={60} w={260} t0={E37.screamed} glow={N.cian} />
+    <Png id="casco_vacio" x={1390} y={60} w={240} t0={E37.never} t1={E37.free} glow={N.cian} />
+    <Png id="paloma" x={1390} y={60} w={240} t0={E37.free} glow={N.violeta} />
+    <Png id="semilla" x={2290} y={80} w={220} t0={E37.letgo} glow={N.oro} />
+  </>
+);
+const Escena37: React.FC = () => <EscenaMundo tomas={tomas37}><Vuelven /><NuncaPenso /><AbreLaMano /><H37 /></EscenaMundo>;
 
 // ═════════ HUB 38 · "Nothing was holding the monkey, only its own fist." ═════════
 const Cadenas: D = ({ t, t0, on, tam }) => {
@@ -324,7 +341,16 @@ const CelularCoco: React.FC = () => {
     </>
   );
 };
-const Escena38: React.FC = () => <EscenaMundo tomas={tomas38}><Tren /><Calle /><Cena /><CelularCoco /></EscenaMundo>;
+// objetos de vidrio de la escena 38
+const H38: React.FC = () => (
+  <>
+    <Png id="tren" x={0} y={280} w={620} t0={E38.train} t1={E38.street} glow={N.cian} />
+    <Png id="manos_celus" x={1390} y={60} w={280} t0={E38.street} glow={N.cian} />
+    <Png id="mesa_cena" x={1900} y={250} w={460} t0={E38.dinner} glow={N.oro} />
+    <Png id="coco" x={2410} y={60} w={240} t0={E38.coconut} glow={N.oro} />
+  </>
+);
+const Escena38: React.FC = () => <EscenaMundo tomas={tomas38}><Tren /><Calle /><Cena /><CelularCoco /><H38 /></EscenaMundo>;
 
 // ═════════ HUB 39 · "We hold it. And the sweet inside, the maybe, the little spark," ═════════
 const ManoSostiene: D = ({ t, t0, on, tam }) => (
@@ -423,14 +449,24 @@ const Probemos: React.FC = () => {
     </>
   );
 };
-const Escena39: React.FC = () => <EscenaMundo tomas={tomas39}><TanChico /><MsgEspera /><VideoOlvido /><LikeExtrano /><Probemos /></EscenaMundo>;
+// objetos de vidrio de la escena 39
+const H39: React.FC = () => (
+  <>
+    <Png id="celu" x={440} y={60} w={170} t0={E39.small} glow={N.cian} />
+    <Png id="burbuja_chat" x={1340} y={60} w={230} t0={E39.message} glow={N.cian} />
+    <Png id="icono_play" x={2240} y={60} w={230} t0={E39.video} glow={N.rojo} />
+    <Png id="icono_like" x={3140} y={60} w={230} t0={E39.like} glow={N.rojo} />
+    <Png id="monje_cuenco" x={4040} y={80} w={260} t0={E39.try} glow={N.oro} />
+  </>
+);
+const Escena39: React.FC = () => <EscenaMundo tomas={tomas39}><TanChico /><MsgEspera /><VideoOlvido /><LikeExtrano /><Probemos /><H39 /></EscenaMundo>;
 
 export const SEGS_M10: Seg[] = [
   {
     hub: { portal: "coco", orbs: [
-      { id: "dulce", t: T("put a sweet", 605), ang: 198, anillo: 1, tam: 160, D: DulceHub },
+      { id: "dulce", t: T("put a sweet", 605), ang: 198, anillo: 1, tam: 160, D: DulceHub, png: "caramelo" },
       { id: "soga", t: T("tied the coconut", 606), ang: 128, anillo: 2, tam: 160, D: Soga },
-      { id: "coco", t: T("to a tree", 607.8), ang: -14, anillo: 0, tam: 240, D: CocoArbol },
+      { id: "coco", t: T("to a tree", 607.8), ang: -14, anillo: 0, tam: 240, D: CocoArbol, png: "coco" },
     ] },
     Escena: Escena36,
     sonidos: (s) => { s.add("ola", E36.walked, 0.4); s.add("aparece", E36.came, 0.5); s.add("vuelo", 611.8, 0.5); s.add("sinapsis", E36.smelled, 0.5); s.add("tiron", E36.slipped + 0.2, 0.6); s.add("cierre", E36.grabbed + 0.1, 0.7); s.add("vuelo", 616.6, 0.5); s.add("golpe", E36.fist, 0.4); },
@@ -457,7 +493,7 @@ export const SEGS_M10: Seg[] = [
     hub: { portal: "chispa", orbs: [
       { id: "sost", t: T("We hold it", 653), ang: 198, anillo: 1, tam: 160, D: ManoSostiene },
       { id: "celcoco", t: T("the sweet inside", 654.5), ang: 128, anillo: 2, tam: 160, D: CelCoco },
-      { id: "chispa", t: T("little spark", 657), ang: -14, anillo: 0, tam: 230, D: Chispa },
+      { id: "chispa", t: T("little spark", 657), ang: -14, anillo: 0, tam: 230, D: Chispa, png: "chispa" },
     ] },
     Escena: Escena39,
     sonidos: (s) => { s.add("vacio", E39.small + 0.2, 0.5); s.add("vuelo", 660.2, 0.5); s.add("aviso", E39.message, 0.4); s.add("tic", E39.hour, 0.5); s.add("vuelo", 663.2, 0.5); s.add("ola", E39.forget + 0.2, 0.4); s.add("vuelo", 665.6, 0.5); s.add("like", E39.like + 0.2, 0.5); s.add("vuelo", 668.0, 0.5); s.add("aparece", E39.try, 0.5); },

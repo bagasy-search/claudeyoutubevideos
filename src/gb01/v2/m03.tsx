@@ -4,7 +4,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, ramp, useT, vis } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon, Trazo } from "./glifo";
-import { Contador, EscenaMundo, Obj, Texto, circ } from "./esc";
+import { Contador, EscenaMundo, Obj, Texto, circ, Png } from "./esc";
 import { Paloma } from "./m02";
 import type { Seg } from "./Video";
 
@@ -104,8 +104,15 @@ const PalomaLoca: React.FC = () => {
     </>
   );
 };
+// objetos de vidrio de la escena 8
+const H8: React.FC = () => (
+  <>
+    <Png id="ruleta" x={470} y={60} w={260} t0={E8.chance} glow={N.rojo} />
+    <Png id="chispa" x={1360} y={-60} w={170} t0={E8.crazy} glow={N.oro} />
+  </>
+);
 const Escena8: React.FC = () => (
-  <EscenaMundo tomas={tomas8}>
+  <EscenaMundo tomas={tomas8}><H8 />
     <Ruleta />
     <PalomaLoca />
     <Texto x={940} y={330} t0={E8.kept} texto="long after the food *stopped*" size={46} color={N.rojoBorde} />
@@ -167,11 +174,17 @@ const BucleIdea: React.FC<{ x: number; y: number; t0: number }> = ({ x, y, t0 })
     </svg>
   );
 };
+// objetos de vidrio de la escena 9
+const H9: React.FC = () => (
+  <>
+    <Png id="regalo" x={0} y={80} w={230} t0={E9.maybe} t1={E9.relax - 0.3} glow={N.rojo} />
+  </>
+);
 const Escena9: React.FC = () => {
   const t = useT();
   const inclina = 22 * ramp(t, E9.leans, 0.6, easeOut);
   return (
-    <EscenaMundo tomas={tomas9}>
+    <EscenaMundo tomas={tomas9}><H9 />
       <Texto x={0} y={-250} t0={E9.maybe - 0.1} texto="the *maybe*" size={110} color={N.oroClaro} />
       {/* lo sé: caja abierta, cerebro tranquilo */}
       <Obj x={-460} y={-170} t0={E9.know} tam={220} color={N.cianClaro} trazos={[{ d: "M-60,0 L60,0 L60,60 L-60,60 Z M-60,0 L-80,-30 M60,0 L80,-30", a: 2.4 }, { d: circ(0, -10, 16), c: N.oro, a: 2.4 }]} />
@@ -260,8 +273,15 @@ export const Mono: React.FC<{ x: number; y: number; t0: number; s?: number }> = 
     { d: "M-14,30 Q0,40 14,30", a: 2 },
   ]} />
 );
+// objetos de vidrio de la escena 10
+const H10: React.FC = () => (
+  <>
+    <Png id="dopamina" x={-450} y={40} w={240} t0={E10.dopa} glow={N.oro} />
+    <Png id="mono" x={1470} y={60} w={260} t0={E10.monkeys} glow={N.oro} />
+  </>
+);
 const Escena10: React.FC = () => (
-  <EscenaMundo tomas={tomas10}>
+  <EscenaMundo tomas={tomas10}><H10 />
     <Neurona x={-70} y={-40} t0={E10.release - 0.6} rot={0} tFuego={E10.release} />
     <Neurona x={80} y={40} t0={E10.release - 0.45} rot={150} tFuego={E10.release + 0.15} />
     <Neurona x={-20} y={100} t0={E10.release - 0.3} rot={260} tFuego={E10.release + 0.3} />
@@ -337,8 +357,14 @@ const MaquinaQuizas: React.FC = () => {
     </Obj>
   );
 };
+// objetos de vidrio de la escena 11
+const H11: React.FC = () => (
+  <>
+    <Png id="tragamonedas" x={1570} y={60} w={260} t0={E11.slot} glow={N.oro} />
+  </>
+);
 const Escena11: React.FC = () => (
-  <EscenaMundo tomas={tomas11}>
+  <EscenaMundo tomas={tomas11}><H11 />
     <Senal />
     <Texto x={560} y={-300} t0={E11.excited} texto="excited by the *maybe*" size={52} color={N.oroClaro} />
     <Texto x={560} y={-220} t0={E11.prize} texto="not by the prize" size={34} color={N.texto2} />
@@ -349,9 +375,9 @@ const Escena11: React.FC = () => (
 export const SEGS_M03: Seg[] = [
   {
     hub: { portal: "caja", orbs: [
-      { id: "caja", t: T("Skinner changed", 134), ang: -14, anillo: 0, tam: 230, D: CajaMini },
-      { id: "sw", t: T("one thing", 135), ang: 198, anillo: 1, tam: 170, D: Interruptor },
-      { id: "grano", t: T("food", 137.5), ang: 128, anillo: 2, tam: 150, D: Grano },
+      { id: "caja", t: T("Skinner changed", 134), ang: -14, anillo: 0, tam: 230, D: CajaMini, png: "caja_skinner" },
+      { id: "sw", t: T("one thing", 135), ang: 198, anillo: 1, tam: 170, D: Interruptor, png: "interruptor" },
+      { id: "grano", t: T("food", 137.5), ang: 128, anillo: 2, tam: 150, D: Grano, png: "grano" },
     ] },
     Escena: Escena8,
     sonidos: (s) => { s.add("rodillos", E8.nothing, 0.8); s.add("rodilloFrena", E8.nothing + 1.2); for (let i = 0; i < 14; i++) s.add("tic", E8.pattern + i * 0.09, 0.5); s.add("vuelo", 143.7, 0.6); presiones(E8.pressed, E8.stopped + 1.6, 0.42).forEach((x) => s.add("palanca", x, 0.45)); s.add("traza", E8.more); s.add("vacio", E8.kept + 0.2); },
@@ -368,17 +394,17 @@ export const SEGS_M03: Seg[] = [
   {
     hub: { portal: "cel", orbs: [
       { id: "cer", t: T("glass brain", 168.5), ang: 198, anillo: 1, tam: 200, D: CerebroVidrio },
-      { id: "lupa", t: T("Deep in the middle", 169), ang: 128, anillo: 2, tam: 170, D: Lupa },
-      { id: "cel", t: T("small group of cells", 171), ang: -14, anillo: 0, tam: 220, D: Celulas },
+      { id: "lupa", t: T("Deep in the middle", 169), ang: 128, anillo: 2, tam: 170, D: Lupa, png: "lupa" },
+      { id: "cel", t: T("small group of cells", 171), ang: -14, anillo: 0, tam: 220, D: Celulas, png: "neurona" },
     ] },
     Escena: Escena10,
     sonidos: (s) => { s.add("sinapsis", E10.release); s.add("sinapsis", E10.release + 0.3, 0.7); s.add("neonOn", E10.dopa); s.add("aparece", E10.pleasure); s.add("traza", E10.not, 0.8); s.add("golpe", E10.wanting, 0.6); s.add("vuelo", E10.forward, 0.6); s.add("vuelo", 185.9, 0.6); s.add("aparece", E10.monkeys); },
   },
   {
     hub: { portal: "osc", orbs: [
-      { id: "mono", t: T("scientists saw", 188), ang: 198, anillo: 1, tam: 170, D: MonoChico },
+      { id: "mono", t: T("scientists saw", 188), ang: 198, anillo: 1, tam: 170, D: MonoChico, png: "mono" },
       { id: "osc", t: T("fire hardest", 189.5), ang: -14, anillo: 0, tam: 240, D: Osciloscopio },
-      { id: "gota", t: T("reward", 191.5), ang: 128, anillo: 2, tam: 140, D: Gota },
+      { id: "gota", t: T("reward", 191.5), ang: 128, anillo: 2, tam: 140, D: Gota, png: "dopamina" },
     ] },
     Escena: Escena11,
     sonidos: (s) => { s.add("traza", E11.arrived - 0.2); s.add("sinapsis", 192.6); s.add("tic", E11.possible); s.add("aparece", E11.arrived); s.add("vuelo", 197.3, 0.6); s.add("vuelo", 202.1, 0.6); s.add("neonOn", E11.machine); s.add("rodillos", E11.machine + 0.2, 0.6); },

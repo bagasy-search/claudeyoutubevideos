@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon } from "./glifo";
-import { EscenaMundo, Texto, circ } from "./esc";
+import { EscenaMundo, Texto, circ, Png } from "./esc";
 import type { Seg } from "./Video";
 
 type D = React.FC<{ t: number; t0: number; on: number; tam: number }>;
@@ -108,7 +108,13 @@ const Hilos: React.FC = () => {
     </>
   );
 };
-const Escena52: React.FC = () => <EscenaMundo tomas={tomas52}><CuatroRuedas /><Linterna /><Hilos /></EscenaMundo>;
+// objetos de vidrio de la escena 52
+const H52: React.FC = () => (
+  <>
+    <Png id="marioneta" x={2470} y={60} w={240} t0={E52.machine} glow={N.oro} />
+  </>
+);
+const Escena52: React.FC = () => <EscenaMundo tomas={tomas52}><CuatroRuedas /><Linterna /><Hilos /><H52 /></EscenaMundo>;
 
 // ═════════ HUB 53 · "If this helped you understand your own mind a little better," ═════════
 const Ayudo: D = ({ t, t0, on, tam }) => (
@@ -191,7 +197,14 @@ const LoQueQueres: React.FC = () => {
     </>
   );
 };
-const Escena53: React.FC = () => <EscenaMundo tomas={tomas53}><Quedate /><Cortina /><LoQueQueres /></EscenaMundo>;
+// objetos de vidrio de la escena 53
+const H53: React.FC = () => (
+  <>
+    <Png id="luna" x={440} y={-60} w={220} t0={E53.stay} glow={N.violeta} />
+    <Png id="montana" x={2420} y={60} w={260} t0={E53.hard} glow={N.violeta} />
+  </>
+);
+const Escena53: React.FC = () => <EscenaMundo tomas={tomas53}><Quedate /><Cortina /><LoQueQueres /><H53 /></EscenaMundo>;
 
 // ═════════ HUB 54 · "the next time your thumb reaches for the screen," ═════════
 const OlaMini: D = ({ t, t0, on, tam }) => (
@@ -244,7 +257,13 @@ const Cierre: React.FC = () => {
     </>
   );
 };
-const Escena54: React.FC = () => <EscenaMundo tomas={tomas54}><Cierre /></EscenaMundo>;
+// objetos de vidrio de la escena 54
+const H54: React.FC = () => (
+  <>
+    <Png id="ola" x={380} y={430} w={520} t0={E54.wave - 0.4} glow={N.cian} />
+  </>
+);
+const Escena54: React.FC = () => <EscenaMundo tomas={tomas54}><Cierre /><H54 /></EscenaMundo>;
 
 export const SEGS_M14: Seg[] = [
   {
@@ -252,7 +271,7 @@ export const SEGS_M14: Seg[] = [
       { id: "r0", t: T("the maybe", 871), ang: 198, anillo: 1, tam: 150, D: RuedaN(0) },
       { id: "r1", t: T("the lever", 872), ang: 128, anillo: 2, tam: 150, D: RuedaN(1) },
       { id: "r2", t: T("endless reel", 874), ang: 250, anillo: 1, tam: 150, D: RuedaN(2) },
-      { id: "maqv", t: T("endless reel", 874) + 0.4, ang: -14, anillo: 0, tam: 240, D: MaquinaVidrio },
+      { id: "maqv", t: T("endless reel", 874) + 0.4, ang: -14, anillo: 0, tam: 240, D: MaquinaVidrio, png: "engranajes4" },
     ] },
     Escena: Escena52,
     sonidos: (s) => { s.add("vuelo", E52.red - 0.2, 0.5); s.add("engranaje", E52.red + 0.5, 0.7); s.add("maquinaGira", E52.four, 0.5); s.add("vuelo", 878.8, 0.5); s.add("luz", E52.see - 0.3, 0.6); s.add("vuelo", 880.4, 0.5); s.add("neonOn", E52.controls, 0.5); [0, 1, 2, 3].forEach((i) => s.add("tic", E52.controls + 0.6 + i * 0.08, 0.5)); s.add("maquinaFrena", E52.dark, 0.4); },

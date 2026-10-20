@@ -6,7 +6,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon, Trazo } from "./glifo";
-import { EscenaMundo, Obj, Texto, circ } from "./esc";
+import { EscenaMundo, Obj, Texto, circ, Png } from "./esc";
 import { EngranajeSvg } from "./m02";
 import type { Seg } from "./Video";
 
@@ -117,7 +117,14 @@ const Plano: React.FC = () => {
     </>
   );
 };
-const Escena24: React.FC = () => <EscenaMundo tomas={tomas24}><LevantaVista /><RelojPared /><Plano /></EscenaMundo>;
+// objetos de vidrio de la escena 24
+const H24: React.FC = () => (
+  <>
+    <Png id="reloj" x={1060} y={60} w={230} t0={E24.gone} glow={N.cian} />
+    <Png id="tragamonedas" x={1920} y={60} w={240} t0={E24.designed} glow={N.oro} />
+  </>
+);
+const Escena24: React.FC = () => <EscenaMundo tomas={tomas24}><LevantaVista /><RelojPared /><Plano /><H24 /></EscenaMundo>;
 
 // ═════════ HUB 25 · "that you often almost win. Two cherries, and the third one" ═════════
 const CasiMedidor: D = ({ t, t0, on, tam }) => {
@@ -204,7 +211,14 @@ const MedidorCerebro: React.FC = () => {
     </>
   );
 };
-const Escena25: React.FC = () => <EscenaMundo tomas={tomas25}><RodillosMacro /><MedidorCerebro /></EscenaMundo>;
+// objetos de vidrio de la escena 25
+const H25: React.FC = () => (
+  <>
+    <Png id="cereza" x={440} y={60} w={200} t0={E25.near} glow={N.rojo} />
+    <Png id="medidor" x={1320} y={60} w={240} t0={E25.real} glow={N.rojo} />
+  </>
+);
+const Escena25: React.FC = () => <EscenaMundo tomas={tomas25}><RodillosMacro /><MedidorCerebro /><H25 /></EscenaMundo>;
 
 // ═════════ HUB 26 · "and they make people want to play again. The endless reel is full of near misses," ═════════
 const Replay: D = ({ t, t0, on, tam }) => (
@@ -288,7 +302,13 @@ const DisenoSello: React.FC = () => {
     <div style={{ position: "absolute", left: 1100, top: 30, transform: `translate(-50%,-50%) rotate(-10deg) scale(${s})`, opacity: ramp(t, E26.design + 0.1, 0.12), border: `6px solid #3d8bff`, borderRadius: 10, padding: "8px 30px", fontFamily: "sans-serif", fontWeight: 900, fontSize: 72, letterSpacing: 6, color: "#cfe0ff", boxShadow: "0 0 30px #3d8bff", textShadow: "0 0 16px #3d8bff", whiteSpace: "nowrap" }}>BY DESIGN</div>
   );
 };
-const Escena26: React.FC = () => <EscenaMundo tomas={tomas26}><Casis /><Linterna /></EscenaMundo>;
+// objetos de vidrio de la escena 26
+const H26: React.FC = () => (
+  <>
+    <Png id="lupa" x={1520} y={60} w={220} t0={E26.looking} glow={N.cian} />
+  </>
+);
+const Escena26: React.FC = () => <EscenaMundo tomas={tomas26}><Casis /><Linterna /><H26 /></EscenaMundo>;
 
 // ═════════ HUB 27 · "That is the third gear, the endless reel. No door," ═════════
 const MarcoTres: D = ({ t, t0, on, tam }) => {
@@ -386,14 +406,20 @@ const Fogata: React.FC = () => {
     </>
   );
 };
-const Escena27: React.FC = () => <EscenaMundo tomas={tomas27}><LibroSinTapa /><Zanahoria /><MarcoCuatro /><Fogata /></EscenaMundo>;
+// objetos de vidrio de la escena 27
+const H27: React.FC = () => (
+  <>
+    <Png id="fogata" x={3020} y={60} w={260} t0={E27.tribal} glow={N.oro} />
+  </>
+);
+const Escena27: React.FC = () => <EscenaMundo tomas={tomas27}><LibroSinTapa /><Zanahoria /><MarcoCuatro /><Fogata /><H27 /></EscenaMundo>;
 
 export const SEGS_M07: Seg[] = [
   {
     hub: { portal: "reloj", orbs: [
       { id: "cinta", t: T("the reel never", 402), ang: 198, anillo: 1, tam: 170, D: CintaPasa },
       { id: "guardia", t: T("the guard never", 404.5), ang: 128, anillo: 2, tam: 190, D: GuardiaMordaza },
-      { id: "reloj", t: T("moment to speak", 405.5), ang: -14, anillo: 0, tam: 230, D: RelojHora },
+      { id: "reloj", t: T("moment to speak", 405.5), ang: -14, anillo: 0, tam: 230, D: RelojHora, png: "reloj" },
     ] },
     Escena: Escena24,
     sonidos: (s) => { s.add("aparece", E24.look, 0.5); s.add("vuelo", 408.6, 0.5); s.add("maquinaGira", E24.hour, 0.5); s.add("grieta", E24.gone + 0.6, 0.6); s.add("tiron", E24.taken, 0.6); s.add("vacio", E24.taken + 0.6, 0.5); s.add("vuelo", 414.8, 0.5); s.add("neonOn", E24.trick + 0.3); s.add("traza", E24.designed - 0.3); },
@@ -401,7 +427,7 @@ export const SEGS_M07: Seg[] = [
   {
     hub: { portal: "ventana", orbs: [
       { id: "casi", t: T("almost win", 420), ang: 198, anillo: 1, tam: 170, D: CasiMedidor },
-      { id: "dos", t: T("Two cherries", 421.5), ang: 128, anillo: 2, tam: 170, D: DosCerezas },
+      { id: "dos", t: T("Two cherries", 421.5), ang: 128, anillo: 2, tam: 170, D: DosCerezas, png: "cereza" },
       { id: "ventana", t: T("the third one", 423) - 0.6, ang: -14, anillo: 0, tam: 250, D: VentanaCasi },
     ] },
     Escena: Escena25,

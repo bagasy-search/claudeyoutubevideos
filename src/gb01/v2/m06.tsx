@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon, Trazo } from "./glifo";
-import { EscenaMundo, Obj, Texto, circ } from "./esc";
+import { EscenaMundo, Obj, Texto, circ, Png } from "./esc";
 import { EngranajeSvg } from "./m02";
 import type { Seg } from "./Video";
 
@@ -97,7 +97,14 @@ const Diario: React.FC = () => {
     </>
   );
 };
-const Escena20: React.FC = () => <EscenaMundo tomas={tomas20}><Carrete /><Diario /></EscenaMundo>;
+// objetos de vidrio de la escena 20
+const H20: React.FC = () => (
+  <>
+    <Png id="carrete" x={-460} y={40} w={260} t0={E20.reel} t1={E20.news} glow={N.violeta} />
+    <Png id="diario" x={1470} y={60} w={260} t0={E20.news} glow={N.cian} />
+  </>
+);
+const Escena20: React.FC = () => <EscenaMundo tomas={tomas20}><Carrete /><Diario /><H20 /></EscenaMundo>;
 
 // ═════════ HUB 21 · "A television show ended, and there was a moment of silence before the next thing." ═════════
 const TeleFin: D = ({ t, t0, on, tam }) => (
@@ -191,7 +198,14 @@ const ScrollSinFin: React.FC = () => {
     </>
   );
 };
-const Escena21: React.FC = () => <EscenaMundo tomas={tomas21}><Libro /><CaminoPuertas /><ScrollSinFin /></EscenaMundo>;
+// objetos de vidrio de la escena 21
+const H21: React.FC = () => (
+  <>
+    <Png id="libro" x={-460} y={40} w={260} t0={E21.book} glow={N.violeta} />
+    <Png id="burbuja_chat" x={2520} y={60} w={220} t0={E21.more} glow={N.cian} />
+  </>
+);
+const Escena21: React.FC = () => <EscenaMundo tomas={tomas21}><Libro /><CaminoPuertas /><ScrollSinFin /><H21 /></EscenaMundo>;
 
 // ═════════ HUB 22 · "You scroll again, and there is more. The video ends," (la cinta del feed gira alrededor del monje) ═════════
 const Post = (i: number): D => ({ t, t0, on, tam }) => {
@@ -292,7 +306,14 @@ const TiempoTragado: React.FC = () => {
     </>
   );
 };
-const Escena22: React.FC = () => <EscenaMundo tomas={tomas22}><Autoplay /><LibroSinFin /><Ingeniero /><TiempoTragado /></EscenaMundo>;
+// objetos de vidrio de la escena 22
+const H22: React.FC = () => (
+  <>
+    <Png id="icono_play" x={420} y={60} w={220} t0={E22.next} glow={N.rojo} />
+    <Png id="reloj_arena" x={2880} y={40} w={240} t0={E22.time} glow={N.oro} />
+  </>
+);
+const Escena22: React.FC = () => <EscenaMundo tomas={tomas22}><Autoplay /><LibroSinFin /><Ingeniero /><TiempoTragado /><H22 /></EscenaMundo>;
 
 // ═════════ HUB 23 · "Inside the glass brain, there is a part right behind your forehead that acts like a" ═════════
 const CerebroFrente: D = ({ t, t0, on, tam }) => {
@@ -394,7 +415,14 @@ const PuertaGuardia: React.FC = () => {
     </>
   );
 };
-const Escena23: React.FC = () => <EscenaMundo tomas={tomas23}><Guardian /><PlanDecide /><Globo /><PuertaGuardia /></EscenaMundo>;
+// objetos de vidrio de la escena 23
+const H23: React.FC = () => (
+  <>
+    <Png id="farol" x={-480} y={60} w={230} t0={E23.guard} t1={E23.plans} glow={N.oro} />
+    <Png id="puerta" x={700} y={60} w={240} t0={E23.door} glow={N.oro} />
+  </>
+);
+const Escena23: React.FC = () => <EscenaMundo tomas={tomas23}><Guardian /><PlanDecide /><Globo /><PuertaGuardia /><H23 /></EscenaMundo>;
 
 export const SEGS_M06: Seg[] = [
   {
@@ -427,7 +455,7 @@ export const SEGS_M06: Seg[] = [
     hub: { portal: "cer", orbs: [
       { id: "cer", t: T("the glass brain", 385), ang: -14, anillo: 0, tam: 250, D: CerebroFrente },
       { id: "frente", t: T("behind your forehead", 388.5), ang: 198, anillo: 1, tam: 160, D: Frente },
-      { id: "farol", t: T("acts like a", 389.5), ang: 128, anillo: 2, tam: 160, D: Farol },
+      { id: "farol", t: T("acts like a", 389.5), ang: 128, anillo: 2, tam: 160, D: Farol, png: "farol" },
     ] },
     Escena: Escena23,
     sonidos: (s) => { s.add("luz", E23.guard); s.add("aparece", E23.plans); s.add("traza", E23.plans + 0.3, 0.5); s.add("aparece", E23.decides, 0.6); s.add("aviso", E23.says, 0.4); s.add("ola", E23.sleep, 0.4); s.add("vuelo", 398.2, 0.5); s.add("traza", E23.door); s.add("golpe", E23.stop, 0.5); },

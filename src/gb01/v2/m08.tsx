@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon, Trazo } from "./glifo";
-import { EscenaMundo, Obj, Texto, circ } from "./esc";
+import { EscenaMundo, Obj, Png, Texto, circ } from "./esc";
 import { EngranajeSvg } from "./m02";
 import type { Seg } from "./Video";
 
@@ -43,6 +43,7 @@ const Lobos: React.FC = () => {
   const OJ = [[-420, -150], [-300, 200], [380, -220], [460, 120], [-120, -300], [180, 280], [-500, 40]];
   return (
     <>
+      <Png id="lobo" x={440} y={40} w={300} t0={E28.die + 0.4} glow={N.rojo} />
       <svg width={1} height={1} style={abs(0, 40)}>
         <Persona x={0} y={60} s={1.6} op={ramp(t, E28.die - 0.5, 0.3)} />
         {OJ.map(([x, y], i) => { const on = neonOn(t, E28.die + 0.2 + i * 0.12) * (Math.floor(t * 1.3 + i * 0.7) % 5 === 0 ? 0.1 : 1); return <g key={i} opacity={on} style={glow(N.rojo, 10)}><ellipse cx={x - 16} cy={y} rx={10} ry={5} fill={N.rojo} transform={`rotate(-12 ${x - 16} ${y})`} /><ellipse cx={x + 16} cy={y} rx={10} ry={5} fill={N.rojo} transform={`rotate(12 ${x + 16} ${y})`} /></g>; })}
@@ -65,6 +66,7 @@ const Radar: React.FC = () => {
         {[0, 1, 2].map((i) => { const r = ((t * 120 + i * 80) % 240); return <circle key={i} r={r} fill="none" stroke={N.cian} strokeWidth={3} opacity={1 - r / 240} />; })}
         <path d={`M0,0 L${200 * Math.cos((barr * Math.PI) / 180)},${200 * Math.sin((barr * Math.PI) / 180)}`} stroke={N.cianClaro} strokeWidth={2} opacity={0.6} />
       </svg>
+      <Png id="radar" x={860} y={-200} w={300} t0={E28.sens - 0.2} glow={N.cian} />
       <Texto x={860} y={330} t0={E28.question} texto="*one* question" size={50} color={N.cianClaro} />
     </>
   );
@@ -92,10 +94,14 @@ const Apps: React.FC = () => {
   if (t < E28.look - 0.4) return null;
   const cols = [N.cian, N.violeta, N.oro, N.verde, N.rojo, N.cianClaro, N.oroClaro, N.violeta, N.cian];
   return (
+    <>
     <svg width={1} height={1} style={abs(2500, 0)} opacity={ramp(t, E28.look - 0.4, 0.4)}>
       <path d="M-200,-330 L200,-330 Q230,-330 230,-300 L230,300 Q230,330 200,330 L-200,330 Q-230,330 -230,300 L-230,-300 Q-230,-330 -200,-330 Z" fill="none" stroke={N.cianClaro} strokeWidth={4} style={glow(N.cian, 6)} />
-      {cols.map((c, i) => { const x = -130 + (i % 3) * 130, y = -200 + Math.floor(i / 3) * 150; return <g key={i} transform={`translate(${x},${y})`}><rect x={-46} y={-46} width={92} height={92} rx={22} fill="rgba(5,5,6,.9)" stroke={c} strokeWidth={3} />{i === 2 && <circle cx={44} cy={-44} r={16 + 3 * Math.sin(t * 8)} fill={N.rojo} opacity={neonOn(t, E28.dot)} style={glow(N.rojo, 14)} />}</g>; })}
+      {cols.map((c, i) => { const x = -130 + (i % 3) * 130, y = -200 + Math.floor(i / 3) * 150; return <g key={i} transform={`translate(${x},${y})`}><rect x={-46} y={-46} width={92} height={92} rx={22} fill="rgba(5,5,6,.9)" stroke={c} strokeWidth={3} /></g>; })}
     </svg>
+    {["icono_like", "icono_play", "icono_chat", "icono_foto", "icono_noticias", "burbuja_chat"].map((id, i) => <Png key={id} id={id} x={2500 - 130 + ([2, 0, 4, 3, 7, 8][i] % 3) * 130} y={-200 + Math.floor([2, 0, 4, 3, 7, 8][i] / 3) * 150} w={104} t0={E28.look - 0.2 + i * 0.08} glow={N.cian} flota={0} />)}
+    <svg width={1} height={1} style={abs(2500, 0)}><circle cx={174} cy={-244} r={16 + 3 * Math.sin(t * 8)} fill={N.rojo} opacity={neonOn(t, E28.dot)} style={glow(N.rojo, 14)} /></svg>
+    </>
   );
 };
 const Escena28: React.FC = () => <EscenaMundo tomas={tomas28}><Lobos /><Radar /><Otros /><Apps /></EscenaMundo>;
@@ -214,6 +220,7 @@ const Publicar: React.FC = () => {
   const vuela = (t0: number) => ramp(t, t0 + 0.3, 0.7, easeOut);
   return (
     <>
+      <Png id="celu_brilla" x={0} y={40} w={420} t0={E30.post - 0.4} glow={N.cian} flota={4} />
       <Obj x={0} y={40} t0={E30.post - 0.4} tam={200} color={N.cianClaro} trazos={[{ d: "M-120,-230 L120,-230 Q140,-230 140,-210 L140,210 Q140,230 120,230 L-120,230 Q-140,230 -140,210 L-140,-210 Q-140,-230 -120,-230 Z", a: 3 }]} />
       <svg width={1} height={1} style={abs(0, 40)}>
         {/* foto */}
@@ -238,6 +245,7 @@ const Likes: React.FC = () => {
   const n = TL.filter((x) => x <= t).length;
   return (
     <>
+      <Png id="corazon" x={820} y={0} w={640 + 8 * n} t0={E30.wait - 0.3} glow={N.rojo} flota={5} />
       <svg width={1} height={1} style={abs(820, 0)} opacity={ramp(t, E30.wait - 0.4, 0.3)}>
         <path d={corazon(0, 20, 5.4)} fill={`rgba(255,42,72,${0.06 + 0.04 * n})`} stroke={N.rojo} strokeWidth={5} style={glow(N.rojo, 12)} />
         <text x={0} y={30} textAnchor="middle" dominantBaseline="central" fontFamily="sans-serif" fontWeight={900} fontSize={110} fill="#fff" style={glow(N.rojo, 10)}>{n}</text>
@@ -257,6 +265,7 @@ const Acepta: React.FC = () => {
   return (
     <>
       <div style={{ position: "absolute", left: 1600 - 380, top: 60 - 380, width: 760, height: 760, borderRadius: "50%", background: `radial-gradient(circle, rgba(255,180,90,${0.2 * k}), transparent 62%)` }} />
+      <Png id="fogata" x={1600} y={170} w={260} t0={E30.accepts - 0.3} glow={N.oro} flota={2} />
       <svg width={1} height={1} style={abs(1600, 60)} opacity={ramp(t, E30.accepts - 0.5, 0.4)}>
         {Array.from({ length: 6 }, (_, i) => { const a = (i / 6) * Math.PI * 2 + 0.3, r = lerp(420, 260, k); return <g key={i} transform={`translate(${Math.cos(a) * r},${Math.sin(a) * r * 0.42})`}><Persona x={0} y={0} s={0.7} c={TRIBU} /></g>; })}
         <Persona x={0} y={10} s={1.05} c="#fff" />

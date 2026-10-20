@@ -5,7 +5,7 @@ import React from "react";
 import { N, Toma, easeOut, lerp, neonOn, pop, ramp, useT } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon } from "./glifo";
-import { EscenaMundo, Texto, circ } from "./esc";
+import { EscenaMundo, Texto, circ, Png } from "./esc";
 import type { Seg } from "./Video";
 
 type D = React.FC<{ t: number; t0: number; on: number; tam: number }>;
@@ -94,7 +94,13 @@ const Imagina: React.FC = () => {
     </>
   );
 };
-const Escena40: React.FC = () => <EscenaMundo tomas={tomas40}><Envuelve /><ParteCuerpo /><Imagina /></EscenaMundo>;
+// objetos de vidrio de la escena 40
+const H40: React.FC = () => (
+  <>
+    <Png id="marioneta" x={1390} y={60} w={220} t0={E40.part} glow={N.oro} />
+  </>
+);
+const Escena40: React.FC = () => <EscenaMundo tomas={tomas40}><Envuelve /><ParteCuerpo /><Imagina /><H40 /></EscenaMundo>;
 
 // ═════════ HUB 41 · "Do you feel that small resistance, that little voice that says," ═════════
 const Elastico: D = ({ t, t0, on, tam }) => {
@@ -175,7 +181,15 @@ const ComoFrenar: React.FC = () => {
     </>
   );
 };
-const Escena41: React.FC = () => <EscenaMundo tomas={tomas41}><QueSiPasa /><EngranajeHabla /><ComoFrenar /></EscenaMundo>;
+// objetos de vidrio de la escena 41
+const H41: React.FC = () => (
+  <>
+    <Png id="alarma" x={440} y={60} w={240} t0={E41.what} glow={N.rojo} />
+    <Png id="engranaje" x={1380} y={60} w={220} t0={E41.first} glow={N.oro} />
+    <Png id="engranajes4" x={2360} y={60} w={280} t0={E41.stop} glow={N.oro} />
+  </>
+);
+const Escena41: React.FC = () => <EscenaMundo tomas={tomas41}><QueSiPasa /><EngranajeHabla /><ComoFrenar /><H41 /></EscenaMundo>;
 
 // ═════════ HUB 42 · "Not with anger. Anger is just another spark." ═════════
 const Enojo: D = ({ t, t0, on, tam }) => (
@@ -273,7 +287,14 @@ const Interruptores: React.FC = () => {
     </>
   );
 };
-const Escena42: React.FC = () => <EscenaMundo tomas={tomas42}><CaballoSalvaje /><SacarQuizas /><Interruptores /></EscenaMundo>;
+// objetos de vidrio de la escena 42
+const H42: React.FC = () => (
+  <>
+    <Png id="regalo" x={1390} y={60} w={240} t0={E42.first} t1={E42.off} glow={N.rojo} />
+    <Png id="sobre" x={1440} y={80} w={220} t0={E42.off} glow={N.rojo} />
+  </>
+);
+const Escena42: React.FC = () => <EscenaMundo tomas={tomas42}><CaballoSalvaje /><SacarQuizas /><Interruptores /><H42 /></EscenaMundo>;
 
 // ═════════ HUB 43 · "No red dots from apps, no sounds for likes," ═════════
 const PuntoOff: D = ({ t, t0, on, tam }) => {
@@ -373,13 +394,22 @@ const Persona2: React.FC<{ x: number; y: number }> = ({ x, y }) => (
     <path d="M-60,40 Q-60,-100 0,-104 Q60,-100 60,40 Z" fill="rgba(5,5,6,.9)" stroke={PIEL} strokeWidth={4} />
   </g>
 );
-const Escena43: React.FC = () => <EscenaMundo tomas={tomas43}><AlertaNoticias /><DejaDeLlamar /><MedidorMitad /><VosDecidis /></EscenaMundo>;
+// objetos de vidrio de la escena 43
+const H43: React.FC = () => (
+  <>
+    <Png id="icono_noticias" x={440} y={60} w={230} t0={E43.news} glow={N.oro} />
+    <Png id="megafono" x={1340} y={60} w={250} t0={E43.stops} glow={N.rojo} />
+    <Png id="medidor" x={2240} y={60} w={260} t0={E43.half} glow={N.rojo} />
+    <Png id="estrella" x={3160} y={60} w={240} t0={E43.check} glow={N.oro} />
+  </>
+);
+const Escena43: React.FC = () => <EscenaMundo tomas={tomas43}><AlertaNoticias /><DejaDeLlamar /><MedidorMitad /><VosDecidis /><H43 /></EscenaMundo>;
 
 export const SEGS_M11: Seg[] = [
   {
     hub: { portal: "dedos", orbs: [
       { id: "mano", t: T("at your hand", 670), ang: 198, anillo: 1, tam: 160, D: ManoHub },
-      { id: "cel", t: T("holding your phone", 672), ang: 128, anillo: 2, tam: 160, D: CelHub },
+      { id: "cel", t: T("holding your phone", 672), ang: 128, anillo: 2, tam: 160, D: CelHub, png: "celu_brilla" },
       { id: "dedos", t: T("notice how your", 673), ang: -14, anillo: 0, tam: 240, D: DedosHub },
     ] },
     Escena: Escena40,
@@ -398,7 +428,7 @@ export const SEGS_M11: Seg[] = [
     hub: { portal: "caballo", orbs: [
       { id: "enojo", t: T("Not with anger", 703.5), ang: 198, anillo: 1, tam: 160, D: Enojo },
       { id: "chispa", t: T("another spark", 706), ang: 128, anillo: 2, tam: 150, D: ChispaSeApaga },
-      { id: "caballo", t: T("another spark", 706) + 0.5, ang: -14, anillo: 0, tam: 240, D: CaballoHub },
+      { id: "caballo", t: T("another spark", 706) + 0.5, ang: -14, anillo: 0, tam: 240, D: CaballoHub, png: "caballo" },
     ] },
     Escena: Escena42,
     sonidos: (s) => { s.add("golpe", E42.horse, 0.4); s.add("ola", E42.slowly, 0.5); s.add("latido", E42.slowly + 1.2, 0.4); s.add("vuelo", 714.2, 0.5); s.add("tiron", E42.maybe - 0.3, 0.5); s.add("vuelo", 715.9, 0.5); [0, 1, 2, 4, 5].forEach((i) => s.add("tic", E42.off + 0.3 + i * 0.35, 0.5)); s.add("luz", E42.human, 0.5); },
@@ -406,7 +436,7 @@ export const SEGS_M11: Seg[] = [
   {
     hub: { portal: "celsil", orbs: [
       ...[0, 1, 2].map((i) => ({ id: "pto" + i, t: T("No red dots", 721) + i * 0.2, ang: 150 + i * 60, anillo: (i % 2 ? 2 : 1) as 1 | 2, tam: 100, D: PuntoOff })),
-      { id: "campana", t: T("no sounds", 723.5), ang: 40, anillo: 2, tam: 160, D: CampanaMuda },
+      { id: "campana", t: T("no sounds", 723.5), ang: 40, anillo: 2, tam: 160, D: CampanaMuda, png: "campana" },
       { id: "celsil", t: T("for likes", 723), ang: -14, anillo: 0, tam: 230, D: CelSilencio },
     ] },
     Escena: Escena43,

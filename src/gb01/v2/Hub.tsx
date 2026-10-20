@@ -4,7 +4,7 @@
 // El portal: al final de la ventana la cámara se zambulle en UN objeto y adentro ya está viva la escena siguiente
 // (Video.tsx arma las capas). Todo en px de pantalla 1920x1080.
 import React from "react";
-import { AbsoluteFill, OffthreadVideo, Sequence, staticFile } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile } from "remotion";
 import { FPS, N, BlurDef, NeonPath, clamp, ease, easeOut, lerp, neonOn, pop, ramp, respira, useSvgId } from "../../kits/neon/base";
 import { interpolate } from "remotion";
 import { P, Ventana } from "./datos";
@@ -29,6 +29,7 @@ export type Orb = {
   tam?: number; // px del objeto a profundidad 0
   t1?: number; // se va (opcional)
   D: React.FC<{ t: number; t0: number; on: number; tam: number }>; // dibujo centrado en (0,0), cabe en ±tam/2
+  png?: string; // objeto de vidrio (public/gb01/png/<png>.png) en lugar del dibujo
 };
 export type HubSpec = { orbs: Orb[]; portal: string; Pantalla?: React.FC<{ t: number }> };
 
@@ -120,7 +121,9 @@ export const OrbView: React.FC<{ o: Orb; t: number; congela?: number; brillo?: n
           boxShadow: `0 0 ${40 * brillo}px rgba(39,227,255,${0.6 * brillo}), inset 0 0 ${40 * brillo}px rgba(39,227,255,${0.4 * brillo})`, transform: `scale(${0.9 + 0.1 * respira(t, 1, 0.5)})` }} />
       )}
       <div style={{ position: "absolute", transform: `scale(${s})` }}>
-        <o.D t={t} t0={o.t} on={on} tam={tam} />
+        {o.png
+          ? <Img src={staticFile(`gb01/png/${o.png}.png`)} style={{ position: "absolute", width: tam * 1.25, left: -tam * 0.625, top: -tam * 0.625, opacity: on, transform: `rotate(${Math.sin((t - o.t) * 1.1) * 4}deg)`, filter: `brightness(${1 + 0.8 * (1 - ramp(t, o.t, 0.6))}) drop-shadow(0 0 18px rgba(39,227,255,.45))` }} />
+          : <o.D t={t} t0={o.t} on={on} tam={tam} />}
       </div>
     </div>
   );

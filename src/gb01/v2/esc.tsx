@@ -1,5 +1,6 @@
 // gb01 v2 · infraestructura de las escenas entre ventanas (cada una es un mundo propio con su cámara, mismo neón).
 import React from "react";
+import { Img, staticFile } from "remotion";
 import { N, SANS, SERIF, Toma, makeCam, pop, ramp, useT, vis } from "../../kits/neon/base";
 import { Escenario } from "../../kits/neon/Layout";
 import { Glifo, Trazo } from "./glifo";
@@ -58,3 +59,15 @@ export const arco = (a: [number, number], b: [number, number], sag = 0) => {
   return `M${a[0]},${a[1]} Q${mx - ((b[1] - a[1]) / L) * sag},${my + ((b[0] - a[0]) / L) * sag} ${b[0]},${b[1]}`;
 };
 export const circ = (cx: number, cy: number, r: number) => `M${cx + r},${cy} A${r},${r} 0 1,1 ${cx - r},${cy} A${r},${r} 0 1,1 ${cx + r},${cy}`;
+
+// objeto de vidrio con neón adentro (PNG sin fondo, public/gb01/png/<id>.png): entra con pop + brillo, flota leve y se va en t1
+export const Png: React.FC<{ id: string; x: number; y: number; t0: number; t1?: number; w?: number; rot?: number; glow?: string; flota?: number; giro?: number; op?: number }> = ({ id, x, y, t0, t1 = Infinity, w = 420, rot = 0, glow = N.cian, flota = 10, giro = 0, op = 1 }) => {
+  const t = useT();
+  if (!vis(t, t0, t1, 0.5)) return null;
+  const k = pop(t, t0, 10), out = t1 === Infinity ? 1 : 1 - ramp(t, t1 - 0.35, 0.35);
+  const dy = Math.sin((t - t0) * 1.3) * flota, r = rot + Math.sin((t - t0) * 0.9) * 1.5 + (t - t0) * giro;
+  const brillo = 1 + 0.9 * (1 - ramp(t, t0, 0.6));
+  return (
+    <Img src={staticFile(`gb01/png/${id}.png`)} style={{ position: "absolute", left: x, top: y + dy, width: w, transform: `translate(-50%,-50%) rotate(${r}deg) scale(${0.6 + 0.4 * k})`, opacity: Math.min(1, k * 1.4) * out * op, filter: `brightness(${brillo}) drop-shadow(0 0 12px ${glow}77)` }} />
+  );
+};

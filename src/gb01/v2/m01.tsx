@@ -103,9 +103,9 @@ export const SEGS_M01: Seg[] = [
     hub: {
       portal: "slot",
       orbs: [
-        { id: "cel", t: T("close to you"), ang: 205, anillo: 1, tam: 150, D: CelularChico },
-        { id: "slot", t: T("slot machine"), ang: 10, anillo: 0, tam: 270, D: Tragamonedas },
-        { id: "monedas", t: T("slot machine") + 0.35, ang: 128, anillo: 2, tam: 170, D: MonedasOro },
+        { id: "cel", t: T("close to you"), ang: 205, anillo: 1, tam: 150, D: CelularChico, png: "celu" },
+        { id: "slot", t: T("slot machine"), ang: 10, anillo: 0, tam: 270, D: Tragamonedas, png: "tragamonedas" },
+        { id: "monedas", t: T("slot machine") + 0.35, ang: 128, anillo: 2, tam: 170, D: MonedasOro, png: "moneda" },
       ],
     },
     Escena: EscenaMin1,
@@ -125,9 +125,9 @@ export const SEGS_M01: Seg[] = [
     hub: {
       portal: "cerebro",
       orbs: [
-        { id: "cerebro", t: T("deep inside", 31), ang: -16, anillo: 0, tam: 300, D: CerebroNucleo },
+        { id: "cerebro", t: T("deep inside", 31), ang: -16, anillo: 0, tam: 300, D: CerebroNucleo, png: "cerebro" },
         { id: "premio", t: T("prize arrives", 33), ang: 198, anillo: 1, tam: 150, D: PremioTachado },
-        { id: "arena", t: T("just before", 35), ang: 132, anillo: 2, tam: 170, D: RelojArena },
+        { id: "arena", t: T("just before", 35), ang: 132, anillo: 2, tam: 170, D: RelojArena, png: "reloj_arena" },
       ],
     },
     Escena: EscenaMin1,
