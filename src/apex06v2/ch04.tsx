@@ -102,7 +102,7 @@ const Screen: Chapter["Screen"] = ({ c, f, t }) => (
 export const ch04: Chapter = {
   T0: at("now things start to change"), T1: CH04_T1 + 1.0,
   keys: [
-    [T.n5 + 1.2, -62, -8, 70], [T.throat + 0.4, -62, -10, 60], [T.swims, -60, -6, 56], [T.pant + 0.8, PANT[0], PANT[1], 22], [T.looks, PANT[0], PANT[1], 20],
+    [T.n5 + 1.2, -62, -8, 70], [T.throat + 0.4, -62, -10, 60], [T.swims, -60, -6, 56], [T.pant + 0.8, PANT[0], PANT[1], 36], [T.looks, PANT[0], PANT[1], 32],
     [T.n4 + 1.2, -108, 42, 60], [T.canada + 0.6, -95, 30, 110], [T.tip, -80, 5, 190], [T.hunted + 0.6, -100, 45, 80], [T.front + 0.5, -110, 42, 55],
     [T.jogger, -106, 39, 40], [T.sofar + 0.4, -60, 20, 250], [T.habit, -20, 20, 290],
   ],
