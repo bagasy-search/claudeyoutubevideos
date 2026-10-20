@@ -1,0 +1,1578 @@
+{
+"slug": "lc2sand",
+"R": [
+{
+"n": 1,
+"title": "The Grilled Cheese Done Right",
+"from": 1987,
+"to": 3848
+},
+{
+"n": 2,
+"title": "Tuna Melt",
+"from": 3848,
+"to": 5522
+},
+{
+"n": 3,
+"title": "The BLT for One",
+"from": 5522,
+"to": 7342
+},
+{
+"n": 4,
+"title": "Chicken Salad",
+"from": 7342,
+"to": 9145
+},
+{
+"n": 5,
+"title": "Quesadilla",
+"from": 9145,
+"to": 10939
+},
+{
+"n": 6,
+"title": "Pimento Cheese",
+"from": 10939,
+"to": 12736
+},
+{
+"n": 7,
+"title": "Open-Faced Hot Turkey",
+"from": 12736,
+"to": 14666
+}
+],
+"frames": 16445,
+"audio": "lc2sand.wav",
+"TL": [
+{
+"k": "av",
+"line": 0,
+"from": 0,
+"dur": 121,
+"seed": 13,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 0,
+"cuts": []
+},
+{
+"k": "av",
+"line": 1,
+"from": 121,
+"dur": 124,
+"seed": 860,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 121,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_ii",
+"src": "lc2/clips/lc2sand_ii.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2sand_ii.png",
+"seg": 6,
+"toma": 0,
+"from": 245,
+"dur": 125,
+"seed": 1728
+},
+{
+"k": "av",
+"line": 3,
+"from": 370,
+"dur": 196,
+"seed": 2603,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 252,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Hook7",
+"props": {
+"items": [
+{
+"src": "lc2/kf/done_lc2sand_1_hook.png",
+"name": "The Grilled Cheese Done Right"
+},
+{
+"src": "lc2/kf/done_lc2sand_2_hook.png",
+"name": "Tuna Melt"
+},
+{
+"src": "lc2/kf/done_lc2sand_3_hook.png",
+"name": "The BLT for One"
+},
+{
+"src": "lc2/kf/done_lc2sand_4_hook.png",
+"name": "Chicken Salad"
+},
+{
+"src": "lc2/kf/done_lc2sand_5_hook.png",
+"name": "Quesadilla"
+},
+{
+"src": "lc2/kf/done_lc2sand_6_hook.png",
+"name": "Pimento Cheese"
+},
+{
+"src": "lc2/kf/done_lc2sand_7_hook.png",
+"name": "Open-Faced Hot Turkey"
+}
+],
+"title": "Hot Sandwich",
+"word": "suppers"
+},
+"from": 566,
+"dur": 195,
+"seed": 3975
+},
+{
+"k": "av",
+"line": 5,
+"cont": true,
+"from": 761,
+"dur": 196,
+"seed": 5340,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 643,
+"cuts": []
+},
+{
+"k": "av",
+"line": 6,
+"from": 957,
+"dur": 208,
+"seed": 6712,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 839,
+"cuts": []
+},
+{
+"k": "av",
+"line": 7,
+"from": 1165,
+"dur": 67,
+"seed": 8168,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 1047,
+"cuts": []
+},
+{
+"k": "av",
+"line": 8,
+"from": 1232,
+"dur": 253,
+"seed": 8637,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 1114,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2sand.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1485,
+"dur": 279,
+"seed": 10408
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2sand.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1764,
+"dur": 181,
+"seed": 12361
+},
+{
+"k": "av",
+"line": 11,
+"from": 1945,
+"dur": 42,
+"seed": 13628,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 1374,
+"cuts": []
+},
+{
+"k": "av",
+"line": 12,
+"from": 1987,
+"dur": 225,
+"seed": 13922,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 1415,
+"cuts": []
+},
+{
+"k": "av",
+"line": 13,
+"from": 2212,
+"dur": 221,
+"seed": 15497,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 1640,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r1a1",
+"src": "lc2/clips/lc2sand_r1a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2sand_1_lc2sand_r1a.png",
+"seg": 10,
+"toma": 0,
+"from": 2433,
+"dur": 235,
+"seed": 17044
+},
+{
+"k": "clip",
+"id": "lc2sand_r1a1",
+"src": "lc2/clips/lc2sand_r1a1.mp4",
+"sf": 235,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 2668,
+"dur": 17,
+"seed": 18689
+},
+{
+"k": "clip",
+"id": "lc2sand_r1a2",
+"src": "lc2/clips/lc2sand_r1a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_1_2.png",
+"seg": 10,
+"toma": 0,
+"from": 2685,
+"dur": 134,
+"seed": 18808
+},
+{
+"k": "av",
+"line": 16,
+"from": 2819,
+"dur": 194,
+"seed": 19746,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 1869,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r1a3",
+"src": "lc2/clips/lc2sand_r1a3.mp4",
+"sf": 75,
+"img": "lc2/kf/ang_lc2sand_1_3.png",
+"seg": 10,
+"toma": 0,
+"from": 3013,
+"dur": 177,
+"seed": 21104
+},
+{
+"k": "clip",
+"id": "lc2sand_r1a4",
+"src": "lc2/clips/lc2sand_r1a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_1_4.png",
+"seg": 10,
+"toma": 0,
+"from": 3190,
+"dur": 13,
+"seed": 22343
+},
+{
+"k": "clip",
+"id": "lc2sand_r1a4",
+"src": "lc2/clips/lc2sand_r1a4.mp4",
+"sf": 13,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 3203,
+"dur": 168,
+"seed": 22434
+},
+{
+"k": "av",
+"line": 19,
+"from": 3371,
+"dur": 145,
+"seed": 23610,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 2070,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r1a5",
+"src": "lc2/clips/lc2sand_r1a5.mp4",
+"sf": 74,
+"img": "lc2/kf/ang_lc2sand_1_5.png",
+"seg": 10,
+"toma": 0,
+"from": 3516,
+"dur": 179,
+"seed": 24625
+},
+{
+"k": "av",
+"line": 21,
+"from": 3695,
+"dur": 153,
+"seed": 25878,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 2222,
+"cuts": []
+},
+{
+"k": "av",
+"line": 22,
+"from": 3848,
+"dur": 197,
+"seed": 26949,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 2376,
+"cuts": []
+},
+{
+"k": "av",
+"line": 23,
+"from": 4045,
+"dur": 233,
+"seed": 28328,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 2573,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r2a1",
+"src": "lc2/clips/lc2sand_r2a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2sand_2_lc2sand_r2a.png",
+"seg": 10,
+"toma": 0,
+"from": 4278,
+"dur": 227,
+"seed": 29959
+},
+{
+"k": "clip",
+"id": "lc2sand_r2a1",
+"src": "lc2/clips/lc2sand_r2a1.mp4",
+"sf": 226,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 4505,
+"dur": 42,
+"seed": 31548
+},
+{
+"k": "clip",
+"id": "lc2sand_r2a2",
+"src": "lc2/clips/lc2sand_r2a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_2_2.png",
+"seg": 10,
+"toma": 0,
+"from": 4547,
+"dur": 90,
+"seed": 31842
+},
+{
+"k": "av",
+"line": 26,
+"from": 4637,
+"dur": 190,
+"seed": 32472,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 2813,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r2a3",
+"src": "lc2/clips/lc2sand_r2a3.mp4",
+"sf": 11,
+"img": "lc2/kf/ang_lc2sand_2_3.png",
+"seg": 10,
+"toma": 0,
+"from": 4827,
+"dur": 152,
+"seed": 33802
+},
+{
+"k": "clip",
+"id": "lc2sand_r2a3",
+"src": "lc2/clips/lc2sand_r2a3.mp4",
+"sf": 163,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 4979,
+"dur": 106,
+"seed": 34866
+},
+{
+"k": "clip",
+"id": "lc2sand_r2a4",
+"src": "lc2/clips/lc2sand_r2a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_2_4.png",
+"seg": 10,
+"toma": 0,
+"from": 5085,
+"dur": 8,
+"seed": 35608
+},
+{
+"k": "av",
+"line": 29,
+"from": 5093,
+"dur": 151,
+"seed": 35664,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 3011,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r2a4",
+"src": "lc2/clips/lc2sand_r2a4.mp4",
+"sf": 160,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 5244,
+"dur": 110,
+"seed": 36721
+},
+{
+"k": "av",
+"line": 31,
+"from": 5354,
+"dur": 168,
+"seed": 37491,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 3170,
+"cuts": []
+},
+{
+"k": "av",
+"line": 32,
+"from": 5522,
+"dur": 230,
+"seed": 38667,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 3338,
+"cuts": []
+},
+{
+"k": "av",
+"line": 33,
+"from": 5752,
+"dur": 215,
+"seed": 40277,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 3568,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r3a1",
+"src": "lc2/clips/lc2sand_r3a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2sand_3_lc2sand_r3a.png",
+"seg": 10,
+"toma": 0,
+"from": 5967,
+"dur": 201,
+"seed": 41782
+},
+{
+"k": "clip",
+"id": "lc2sand_r3a1",
+"src": "lc2/clips/lc2sand_r3a1.mp4",
+"sf": 202,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 6168,
+"dur": 35,
+"seed": 43189
+},
+{
+"k": "clip",
+"id": "lc2sand_r3a2",
+"src": "lc2/clips/lc2sand_r3a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_3_2.png",
+"seg": 10,
+"toma": 0,
+"from": 6203,
+"dur": 100,
+"seed": 43434
+},
+{
+"k": "av",
+"line": 36,
+"from": 6303,
+"dur": 283,
+"seed": 44134,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 3790,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r3a3",
+"src": "lc2/clips/lc2sand_r3a3.mp4",
+"sf": 148,
+"img": "lc2/kf/ang_lc2sand_3_3.png",
+"seg": 10,
+"toma": 0,
+"from": 6586,
+"dur": 58,
+"seed": 46115
+},
+{
+"k": "clip",
+"id": "lc2sand_r3a3",
+"src": "lc2/clips/lc2sand_r3a3.mp4",
+"sf": 205,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 6644,
+"dur": 31,
+"seed": 46521
+},
+{
+"k": "clip",
+"id": "lc2sand_r3a4",
+"src": "lc2/clips/lc2sand_r3a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_3_4.png",
+"seg": 10,
+"toma": 0,
+"from": 6675,
+"dur": 173,
+"seed": 46738
+},
+{
+"k": "av",
+"line": 39,
+"from": 6848,
+"dur": 148,
+"seed": 47949,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 4080,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r3a5",
+"src": "lc2/clips/lc2sand_r3a5.mp4",
+"sf": 86,
+"img": "lc2/kf/ang_lc2sand_3_5.png",
+"seg": 10,
+"toma": 0,
+"from": 6996,
+"dur": 151,
+"seed": 48985
+},
+{
+"k": "av",
+"line": 41,
+"from": 7147,
+"dur": 195,
+"seed": 50042,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 4236,
+"cuts": []
+},
+{
+"k": "av",
+"line": 42,
+"from": 7342,
+"dur": 224,
+"seed": 51407,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 4431,
+"cuts": []
+},
+{
+"k": "av",
+"line": 43,
+"from": 7566,
+"dur": 216,
+"seed": 52975,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 4655,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r4a1",
+"src": "lc2/clips/lc2sand_r4a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2sand_4_lc2sand_r4a.png",
+"seg": 10,
+"toma": 0,
+"from": 7782,
+"dur": 236,
+"seed": 54487
+},
+{
+"k": "clip",
+"id": "lc2sand_r4a2",
+"src": "lc2/clips/lc2sand_r4a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_4_2.png",
+"seg": 10,
+"toma": 0,
+"from": 8018,
+"dur": 15,
+"seed": 56139
+},
+{
+"k": "clip",
+"id": "lc2sand_r4a2",
+"src": "lc2/clips/lc2sand_r4a2.mp4",
+"sf": 15,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 8033,
+"dur": 143,
+"seed": 56244
+},
+{
+"k": "av",
+"line": 46,
+"from": 8176,
+"dur": 242,
+"seed": 57245,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 4878,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r4a3",
+"src": "lc2/clips/lc2sand_r4a3.mp4",
+"sf": 165,
+"img": "lc2/kf/ang_lc2sand_4_3.png",
+"seg": 10,
+"toma": 0,
+"from": 8418,
+"dur": 70,
+"seed": 58939
+},
+{
+"k": "clip",
+"id": "lc2sand_r4a4",
+"src": "lc2/clips/lc2sand_r4a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_4_4.png",
+"seg": 10,
+"toma": 0,
+"from": 8488,
+"dur": 77,
+"seed": 59429
+},
+{
+"k": "clip",
+"id": "lc2sand_r4a4",
+"src": "lc2/clips/lc2sand_r4a4.mp4",
+"sf": 77,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 8565,
+"dur": 152,
+"seed": 59968
+},
+{
+"k": "av",
+"line": 49,
+"from": 8717,
+"dur": 157,
+"seed": 61032,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 5127,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r4a5",
+"src": "lc2/clips/lc2sand_r4a5.mp4",
+"sf": 151,
+"img": "lc2/kf/ang_lc2sand_4_5.png",
+"seg": 10,
+"toma": 0,
+"from": 8874,
+"dur": 84,
+"seed": 62131
+},
+{
+"k": "av",
+"line": 51,
+"from": 8958,
+"dur": 187,
+"seed": 62719,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 5291,
+"cuts": []
+},
+{
+"k": "av",
+"line": 52,
+"from": 9145,
+"dur": 241,
+"seed": 64028,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 5478,
+"cuts": []
+},
+{
+"k": "av",
+"line": 53,
+"from": 9386,
+"dur": 184,
+"seed": 65715,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 5719,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r5a1",
+"src": "lc2/clips/lc2sand_r5a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2sand_5_lc2sand_r5a.png",
+"seg": 10,
+"toma": 0,
+"from": 9570,
+"dur": 221,
+"seed": 67003
+},
+{
+"k": "clip",
+"id": "lc2sand_r5a1",
+"src": "lc2/clips/lc2sand_r5a1.mp4",
+"sf": 221,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 9791,
+"dur": 22,
+"seed": 68550
+},
+{
+"k": "clip",
+"id": "lc2sand_r5a2",
+"src": "lc2/clips/lc2sand_r5a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_5_2.png",
+"seg": 10,
+"toma": 0,
+"from": 9813,
+"dur": 138,
+"seed": 68704
+},
+{
+"k": "av",
+"line": 56,
+"from": 9951,
+"dur": 262,
+"seed": 69670,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 5910,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r5a3",
+"src": "lc2/clips/lc2sand_r5a3.mp4",
+"sf": 158,
+"img": "lc2/kf/ang_lc2sand_5_3.png",
+"seg": 10,
+"toma": 0,
+"from": 10214,
+"dur": 85,
+"seed": 71511
+},
+{
+"k": "clip",
+"id": "lc2sand_r5a4",
+"src": "lc2/clips/lc2sand_r5a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_5_4.png",
+"seg": 10,
+"toma": 0,
+"from": 10299,
+"dur": 31,
+"seed": 72106
+},
+{
+"k": "clip",
+"id": "lc2sand_r5a4",
+"src": "lc2/clips/lc2sand_r5a4.mp4",
+"sf": 31,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 10330,
+"dur": 144,
+"seed": 72323
+},
+{
+"k": "av",
+"line": 59,
+"from": 10474,
+"dur": 169,
+"seed": 73331,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 6180,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r5a5",
+"src": "lc2/clips/lc2sand_r5a5.mp4",
+"sf": 101,
+"img": "lc2/kf/ang_lc2sand_5_5.png",
+"seg": 10,
+"toma": 0,
+"from": 10643,
+"dur": 142,
+"seed": 74514
+},
+{
+"k": "av",
+"line": 61,
+"from": 10785,
+"dur": 154,
+"seed": 75508,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 6356,
+"cuts": []
+},
+{
+"k": "av",
+"line": 62,
+"from": 10939,
+"dur": 244,
+"seed": 76586,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 6511,
+"cuts": []
+},
+{
+"k": "av",
+"line": 63,
+"from": 11183,
+"dur": 278,
+"seed": 78294,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 6754,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r6a1",
+"src": "lc2/clips/lc2sand_r6a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2sand_6_lc2sand_r6a.png",
+"seg": 10,
+"toma": 0,
+"from": 11461,
+"dur": 210,
+"seed": 80240
+},
+{
+"k": "clip",
+"id": "lc2sand_r6a1",
+"src": "lc2/clips/lc2sand_r6a1.mp4",
+"sf": 209,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 11671,
+"dur": 77,
+"seed": 81710
+},
+{
+"k": "clip",
+"id": "lc2sand_r6a2",
+"src": "lc2/clips/lc2sand_r6a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_6_2.png",
+"seg": 10,
+"toma": 0,
+"from": 11748,
+"dur": 112,
+"seed": 82249
+},
+{
+"k": "av",
+"line": 66,
+"from": 11860,
+"dur": 209,
+"seed": 83033,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 7040,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r6a3",
+"src": "lc2/clips/lc2sand_r6a3.mp4",
+"sf": 34,
+"img": "lc2/kf/ang_lc2sand_6_3.png",
+"seg": 10,
+"toma": 0,
+"from": 12069,
+"dur": 95,
+"seed": 84496
+},
+{
+"k": "clip",
+"id": "lc2sand_r6a3",
+"src": "lc2/clips/lc2sand_r6a3.mp4",
+"sf": 130,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 12164,
+"dur": 157,
+"seed": 85161
+},
+{
+"k": "clip",
+"id": "lc2sand_r6a4",
+"src": "lc2/clips/lc2sand_r6a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_6_4.png",
+"seg": 10,
+"toma": 0,
+"from": 12321,
+"dur": 30,
+"seed": 86260
+},
+{
+"k": "av",
+"line": 69,
+"cont": true,
+"from": 12351,
+"dur": 151,
+"seed": 86470,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 7256,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r6a4",
+"src": "lc2/clips/lc2sand_r6a4.mp4",
+"sf": 181,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 12502,
+"dur": 105,
+"seed": 87527
+},
+{
+"k": "av",
+"line": 71,
+"from": 12607,
+"dur": 129,
+"seed": 88262,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 7413,
+"cuts": []
+},
+{
+"k": "av",
+"line": 72,
+"from": 12736,
+"dur": 250,
+"seed": 89165,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 7542,
+"cuts": []
+},
+{
+"k": "av",
+"line": 73,
+"from": 12986,
+"dur": 234,
+"seed": 90915,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 7792,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a1",
+"src": "lc2/clips/lc2sand_r7a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2sand_7_lc2sand_r7a.png",
+"seg": 10,
+"toma": 0,
+"from": 13220,
+"dur": 260,
+"seed": 92553
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a2",
+"src": "lc2/clips/lc2sand_r7a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_7_2.png",
+"seg": 10,
+"toma": 0,
+"from": 13480,
+"dur": 34,
+"seed": 94373
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a2",
+"src": "lc2/clips/lc2sand_r7a2.mp4",
+"sf": 34,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 13514,
+"dur": 176,
+"seed": 94611
+},
+{
+"k": "av",
+"line": 76,
+"from": 13690,
+"dur": 238,
+"seed": 95843,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 8033,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a3",
+"src": "lc2/clips/lc2sand_r7a3.mp4",
+"sf": 189,
+"img": "lc2/kf/ang_lc2sand_7_3.png",
+"seg": 10,
+"toma": 0,
+"from": 13928,
+"dur": 71,
+"seed": 97509
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a4",
+"src": "lc2/clips/lc2sand_r7a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_7_4.png",
+"seg": 10,
+"toma": 0,
+"from": 13999,
+"dur": 98,
+"seed": 98006
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a4",
+"src": "lc2/clips/lc2sand_r7a4.mp4",
+"sf": 98,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 14097,
+"dur": 162,
+"seed": 98692
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a5",
+"src": "lc2/clips/lc2sand_r7a5.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2sand_7_5.png",
+"seg": 10,
+"toma": 0,
+"from": 14259,
+"dur": 7,
+"seed": 99826
+},
+{
+"k": "av",
+"line": 79,
+"cont": true,
+"from": 14266,
+"dur": 116,
+"seed": 99875,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 8278,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_r7a5",
+"src": "lc2/clips/lc2sand_r7a5.mp4",
+"sf": 124,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 14382,
+"dur": 136,
+"seed": 100687
+},
+{
+"k": "av",
+"line": 81,
+"from": 14518,
+"dur": 148,
+"seed": 101639,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 8401,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_cc",
+"src": "lc2/clips/lc2sand_cc.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2sand_cc.png",
+"seg": 7,
+"toma": 0,
+"from": 14666,
+"dur": 164,
+"seed": 102675
+},
+{
+"k": "av",
+"line": 83,
+"from": 14830,
+"dur": 311,
+"seed": 103823,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 8556,
+"cuts": []
+},
+{
+"k": "av",
+"line": 84,
+"from": 15141,
+"dur": 18,
+"seed": 106000,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 8867,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Week",
+"props": {},
+"from": 15159,
+"dur": 257,
+"seed": 106126
+},
+{
+"k": "av",
+"line": 85,
+"from": 15416,
+"dur": 18,
+"seed": 107925,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 9142,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Homework",
+"props": {
+"names": [
+"The Grilled Cheese Done Right",
+"Tuna Melt",
+"The BLT for One",
+"Chicken Salad",
+"Quesadilla",
+"Pimento Cheese",
+"Open-Faced Hot Turkey"
+],
+"pick": 2,
+"line": "Pick two this week. Just two."
+},
+"from": 15434,
+"dur": 166,
+"seed": 108051
+},
+{
+"k": "av",
+"line": 86,
+"from": 15600,
+"dur": 197,
+"seed": 109213,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 9326,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2sand.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 15797,
+"dur": 150,
+"seed": 110592
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2sand.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 15947,
+"dur": 78,
+"seed": 111642
+},
+{
+"k": "av",
+"line": 89,
+"from": 16025,
+"dur": 130,
+"seed": 112188,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 9531,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2sand_cc2",
+"src": "lc2/clips/lc2sand_cc2.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2sand_cc2.png",
+"seg": 7,
+"toma": 0,
+"from": 16155,
+"dur": 179,
+"seed": 113098
+},
+{
+"k": "av",
+"line": 91,
+"from": 16334,
+"dur": 111,
+"seed": 114351,
+"src": "lc2/av/lc2sand_reel.mp4",
+"sf": 9677,
+"cuts": []
+}
+],
+"OV": [
+{
+"from": 928,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.00",
+"sub": "a plate"
+}
+},
+{
+"from": 1211,
+"dur": 135,
+"name": "LorNameTag",
+"props": {
+"name": "Loretta",
+"sub": "60 years of church suppers"
+}
+},
+{
+"from": 1993,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 1,
+"title": "The Grilled Cheese Done Right",
+"num": 81
+}
+},
+{
+"from": 2099,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 10
+}
+},
+{
+"from": 2439,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "The Grilled Cheese Done Right",
+"items": []
+}
+},
+{
+"from": 3854,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 2,
+"title": "Tuna Melt",
+"num": 83
+}
+},
+{
+"from": 3925,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 12
+}
+},
+{
+"from": 4069,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.10",
+"sub": "a plate"
+}
+},
+{
+"from": 4284,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Tuna Melt",
+"items": []
+}
+},
+{
+"from": 5528,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 3,
+"title": "The BLT for One",
+"num": 85
+}
+},
+{
+"from": 5604,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 5748,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.60",
+"sub": "a plate"
+}
+},
+{
+"from": 5973,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "The BLT for One",
+"items": []
+}
+},
+{
+"from": 7348,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 4,
+"title": "Chicken Salad with Grapes",
+"num": 84
+}
+},
+{
+"from": 7446,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 10
+}
+},
+{
+"from": 7590,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.90",
+"sub": "a plate"
+}
+},
+{
+"from": 7788,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Chicken Salad",
+"items": []
+}
+},
+{
+"from": 9151,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 5,
+"title": "Quesadilla with Beans and Cheese",
+"num": 87
+}
+},
+{
+"from": 9273,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 10
+}
+},
+{
+"from": 9576,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Quesadilla",
+"items": []
+}
+},
+{
+"from": 10945,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 6,
+"title": "Pimento Cheese, Toasted",
+"num": 89
+}
+},
+{
+"from": 11041,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 12
+}
+},
+{
+"from": 11185,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.20",
+"sub": "a plate"
+}
+},
+{
+"from": 11467,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Pimento Cheese",
+"items": []
+}
+},
+{
+"from": 12742,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 7,
+"title": "Open-Faced Hot Turkey",
+"num": 88
+}
+},
+{
+"from": 12846,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 12990,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.90",
+"sub": "a plate"
+}
+},
+{
+"from": 13226,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Open-Faced Hot Turkey",
+"items": []
+}
+},
+{
+"from": 14807,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$2.00",
+"sub": "a plate"
+}
+}
+],
+"pendientes": 0
+}
