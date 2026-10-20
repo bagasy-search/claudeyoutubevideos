@@ -79,7 +79,10 @@ jobs:
           C7: "${{ secrets.YTCOOKIES7 }}"
         run: |
           mkdir -p /tmp/cookies
-          for i in 1 2 3 4 5 6 7; do v="C$i"; [ -n "${!v}" ] && printf '%s\n' "${!v}" > /tmp/cookies/$i.txt; done
+          # los secrets están en base64 (gh secret set desde `base64 -w0`); si no decodifica, va tal cual
+          for i in 1 2 3 4 5 6 7; do v="C$i"; [ -z "${!v}" ] && continue
+            if printf '%s' "${!v}" | base64 -d > /tmp/cookies/$i.txt 2>/dev/null && grep -q $'\t' /tmp/cookies/$i.txt; then :
+            else printf '%s\n' "${!v}" > /tmp/cookies/$i.txt; fi; done
           echo "cookies: $(ls /tmp/cookies | wc -l)"
       - name: cortes
         if: ${{ github.event.inputs.modo == 'cortes' }}
