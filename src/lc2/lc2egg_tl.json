@@ -1,0 +1,1527 @@
+{
+"slug": "lc2egg",
+"R": [
+{
+"n": 1,
+"title": "The Two-Egg Omelet",
+"from": 2053,
+"to": 4048
+},
+{
+"n": 2,
+"title": "Slow Scrambled Eggs",
+"from": 4048,
+"to": 6024
+},
+{
+"n": 3,
+"title": "Hash Browns & One Egg",
+"from": 6024,
+"to": 8002
+},
+{
+"n": 4,
+"title": "Eggs in Tomato Sauce",
+"from": 8002,
+"to": 9857
+},
+{
+"n": 5,
+"title": "Creamed Eggs on Toast",
+"from": 9857,
+"to": 11858
+},
+{
+"n": 6,
+"title": "The Fried Egg Sandwich",
+"from": 11858,
+"to": 13633
+},
+{
+"n": 7,
+"title": "Egg Drop Soup in Five Minutes",
+"from": 13633,
+"to": 15441
+}
+],
+"frames": 17314,
+"audio": "lc2egg.wav",
+"TL": [
+{
+"k": "av",
+"line": 0,
+"from": 0,
+"dur": 118,
+"seed": 13,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 0,
+"cuts": []
+},
+{
+"k": "av",
+"line": 1,
+"from": 118,
+"dur": 204,
+"seed": 839,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 118,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_ii",
+"src": "lc2/clips/lc2egg_ii.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2egg_ii.png",
+"seg": 6,
+"toma": 0,
+"from": 322,
+"dur": 139,
+"seed": 2267
+},
+{
+"k": "av",
+"line": 3,
+"from": 461,
+"dur": 175,
+"seed": 3240,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 329,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Hook7",
+"props": {
+"items": [
+{
+"src": "lc2/kf/done_lc2egg_1_hook.png",
+"name": "The Two-Egg Omelet"
+},
+{
+"src": "lc2/kf/done_lc2egg_2_hook.png",
+"name": "Slow Scrambled Eggs"
+},
+{
+"src": "lc2/kf/done_lc2egg_3_hook.png",
+"name": "Hash Browns & One Egg"
+},
+{
+"src": "lc2/kf/done_lc2egg_4_hook.png",
+"name": "Eggs in Tomato Sauce"
+},
+{
+"src": "lc2/kf/done_lc2egg_5_hook.png",
+"name": "Creamed Eggs on Toast"
+},
+{
+"src": "lc2/kf/done_lc2egg_6_hook.png",
+"name": "The Fried Egg Sandwich"
+},
+{
+"src": "lc2/kf/done_lc2egg_7_hook.png",
+"name": "Egg Drop Soup in Five Minutes"
+}
+],
+"title": "Egg",
+"word": "suppers"
+},
+"from": 636,
+"dur": 195,
+"seed": 4465
+},
+{
+"k": "av",
+"line": 5,
+"cont": true,
+"from": 831,
+"dur": 172,
+"seed": 5830,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 700,
+"cuts": []
+},
+{
+"k": "av",
+"line": 6,
+"from": 1003,
+"dur": 217,
+"seed": 7034,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 872,
+"cuts": []
+},
+{
+"k": "av",
+"line": 7,
+"from": 1220,
+"dur": 58,
+"seed": 8553,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 1088,
+"cuts": []
+},
+{
+"k": "av",
+"line": 8,
+"from": 1278,
+"dur": 260,
+"seed": 8959,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 1147,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2egg.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1538,
+"dur": 275,
+"seed": 10779
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2egg.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 1813,
+"dur": 196,
+"seed": 12704
+},
+{
+"k": "av",
+"line": 11,
+"from": 2009,
+"dur": 44,
+"seed": 14076,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 1414,
+"cuts": []
+},
+{
+"k": "av",
+"line": 12,
+"from": 2053,
+"dur": 208,
+"seed": 14384,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 1457,
+"cuts": []
+},
+{
+"k": "av",
+"line": 13,
+"from": 2261,
+"dur": 195,
+"seed": 15840,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 1665,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r1a1",
+"src": "lc2/clips/lc2egg_r1a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2egg_1_lc2egg_r1a.png",
+"seg": 10,
+"toma": 0,
+"from": 2456,
+"dur": 276,
+"seed": 17205
+},
+{
+"k": "clip",
+"id": "lc2egg_r1a2",
+"src": "lc2/clips/lc2egg_r1a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_1_2.png",
+"seg": 10,
+"toma": 0,
+"from": 2732,
+"dur": 32,
+"seed": 19137
+},
+{
+"k": "clip",
+"id": "lc2egg_r1a2",
+"src": "lc2/clips/lc2egg_r1a2.mp4",
+"sf": 32,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 2764,
+"dur": 189,
+"seed": 19361
+},
+{
+"k": "av",
+"line": 16,
+"from": 2953,
+"dur": 233,
+"seed": 20684,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 1868,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r1a3",
+"src": "lc2/clips/lc2egg_r1a3.mp4",
+"sf": 178,
+"img": "lc2/kf/ang_lc2egg_1_3.png",
+"seg": 10,
+"toma": 0,
+"from": 3186,
+"dur": 97,
+"seed": 22315
+},
+{
+"k": "clip",
+"id": "lc2egg_r1a4",
+"src": "lc2/clips/lc2egg_r1a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_1_4.png",
+"seg": 10,
+"toma": 0,
+"from": 3283,
+"dur": 85,
+"seed": 22994
+},
+{
+"k": "clip",
+"id": "lc2egg_r1a4",
+"src": "lc2/clips/lc2egg_r1a4.mp4",
+"sf": 85,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 3368,
+"dur": 165,
+"seed": 23589
+},
+{
+"k": "av",
+"line": 19,
+"from": 3533,
+"dur": 163,
+"seed": 24744,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 2108,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r1a5",
+"src": "lc2/clips/lc2egg_r1a5.mp4",
+"sf": 138,
+"img": "lc2/kf/ang_lc2egg_1_5.png",
+"seg": 10,
+"toma": 0,
+"from": 3696,
+"dur": 138,
+"seed": 25885
+},
+{
+"k": "av",
+"line": 21,
+"from": 3834,
+"dur": 214,
+"seed": 26851,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 2279,
+"cuts": []
+},
+{
+"k": "av",
+"line": 22,
+"from": 4048,
+"dur": 192,
+"seed": 28349,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 2492,
+"cuts": []
+},
+{
+"k": "av",
+"line": 23,
+"from": 4240,
+"dur": 248,
+"seed": 29693,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 2684,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r2a1",
+"src": "lc2/clips/lc2egg_r2a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2egg_2_lc2egg_r2a.png",
+"seg": 10,
+"toma": 0,
+"from": 4488,
+"dur": 225,
+"seed": 31429
+},
+{
+"k": "clip",
+"id": "lc2egg_r2a1",
+"src": "lc2/clips/lc2egg_r2a1.mp4",
+"sf": 225,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 4713,
+"dur": 42,
+"seed": 33004
+},
+{
+"k": "clip",
+"id": "lc2egg_r2a2",
+"src": "lc2/clips/lc2egg_r2a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_2_2.png",
+"seg": 10,
+"toma": 0,
+"from": 4755,
+"dur": 151,
+"seed": 33298
+},
+{
+"k": "av",
+"line": 26,
+"from": 4906,
+"dur": 178,
+"seed": 34355,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 2940,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r2a3",
+"src": "lc2/clips/lc2egg_r2a3.mp4",
+"sf": 62,
+"img": "lc2/kf/ang_lc2egg_2_3.png",
+"seg": 10,
+"toma": 0,
+"from": 5084,
+"dur": 205,
+"seed": 35601
+},
+{
+"k": "clip",
+"id": "lc2egg_r2a4",
+"src": "lc2/clips/lc2egg_r2a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_2_4.png",
+"seg": 10,
+"toma": 0,
+"from": 5289,
+"dur": 24,
+"seed": 37036
+},
+{
+"k": "clip",
+"id": "lc2egg_r2a4",
+"src": "lc2/clips/lc2egg_r2a4.mp4",
+"sf": 25,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 5313,
+"dur": 186,
+"seed": 37204
+},
+{
+"k": "av",
+"line": 29,
+"from": 5499,
+"dur": 196,
+"seed": 38506,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 3124,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r2a5",
+"src": "lc2/clips/lc2egg_r2a5.mp4",
+"sf": 139,
+"img": "lc2/kf/ang_lc2egg_2_5.png",
+"seg": 10,
+"toma": 0,
+"from": 5695,
+"dur": 128,
+"seed": 39878
+},
+{
+"k": "av",
+"line": 31,
+"from": 5823,
+"dur": 201,
+"seed": 40774,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 3328,
+"cuts": []
+},
+{
+"k": "av",
+"line": 32,
+"from": 6024,
+"dur": 223,
+"seed": 42181,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 3529,
+"cuts": []
+},
+{
+"k": "av",
+"line": 33,
+"from": 6247,
+"dur": 231,
+"seed": 43742,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 3752,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r3a1",
+"src": "lc2/clips/lc2egg_r3a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2egg_3_lc2egg_r3a.png",
+"seg": 10,
+"toma": 0,
+"from": 6478,
+"dur": 262,
+"seed": 45359
+},
+{
+"k": "clip",
+"id": "lc2egg_r3a2",
+"src": "lc2/clips/lc2egg_r3a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_3_2.png",
+"seg": 10,
+"toma": 0,
+"from": 6740,
+"dur": 91,
+"seed": 47193
+},
+{
+"k": "clip",
+"id": "lc2egg_r3a2",
+"src": "lc2/clips/lc2egg_r3a2.mp4",
+"sf": 90,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 6831,
+"dur": 144,
+"seed": 47830
+},
+{
+"k": "av",
+"line": 36,
+"from": 6975,
+"dur": 237,
+"seed": 48838,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 3990,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r3a3",
+"src": "lc2/clips/lc2egg_r3a3.mp4",
+"sf": 209,
+"img": "lc2/kf/ang_lc2egg_3_3.png",
+"seg": 10,
+"toma": 0,
+"from": 7212,
+"dur": 53,
+"seed": 50497
+},
+{
+"k": "clip",
+"id": "lc2egg_r3a4",
+"src": "lc2/clips/lc2egg_r3a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_3_4.png",
+"seg": 10,
+"toma": 0,
+"from": 7265,
+"dur": 105,
+"seed": 50868
+},
+{
+"k": "clip",
+"id": "lc2egg_r3a4",
+"src": "lc2/clips/lc2egg_r3a4.mp4",
+"sf": 104,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 7370,
+"dur": 134,
+"seed": 51603
+},
+{
+"k": "av",
+"line": 39,
+"from": 7504,
+"dur": 160,
+"seed": 52541,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 4235,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r3a5",
+"src": "lc2/clips/lc2egg_r3a5.mp4",
+"sf": 136,
+"img": "lc2/kf/ang_lc2egg_3_5.png",
+"seg": 10,
+"toma": 0,
+"from": 7664,
+"dur": 126,
+"seed": 53661
+},
+{
+"k": "av",
+"line": 41,
+"from": 7790,
+"dur": 212,
+"seed": 54543,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 4401,
+"cuts": []
+},
+{
+"k": "av",
+"line": 42,
+"from": 8002,
+"dur": 226,
+"seed": 56027,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 4613,
+"cuts": []
+},
+{
+"k": "av",
+"line": 43,
+"from": 8228,
+"dur": 150,
+"seed": 57609,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 4839,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a1",
+"src": "lc2/clips/lc2egg_r4a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2egg_4_lc2egg_r4a.png",
+"seg": 10,
+"toma": 0,
+"from": 8378,
+"dur": 257,
+"seed": 58659
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a2",
+"src": "lc2/clips/lc2egg_r4a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_4_2.png",
+"seg": 10,
+"toma": 0,
+"from": 8635,
+"dur": 22,
+"seed": 60458
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a2",
+"src": "lc2/clips/lc2egg_r4a2.mp4",
+"sf": 22,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 8657,
+"dur": 235,
+"seed": 60612
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a3",
+"src": "lc2/clips/lc2egg_r4a3.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_4_3.png",
+"seg": 10,
+"toma": 0,
+"from": 8892,
+"dur": 17,
+"seed": 62257
+},
+{
+"k": "av",
+"line": 46,
+"from": 8909,
+"dur": 208,
+"seed": 62376,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 4996,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a3",
+"src": "lc2/clips/lc2egg_r4a3.mp4",
+"sf": 225,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 9117,
+"dur": 32,
+"seed": 63832
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a4",
+"src": "lc2/clips/lc2egg_r4a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_4_4.png",
+"seg": 10,
+"toma": 0,
+"from": 9149,
+"dur": 132,
+"seed": 64056
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a4",
+"src": "lc2/clips/lc2egg_r4a4.mp4",
+"sf": 131,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 9281,
+"dur": 126,
+"seed": 64980
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a5",
+"src": "lc2/clips/lc2egg_r4a5.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_4_5.png",
+"seg": 10,
+"toma": 0,
+"from": 9407,
+"dur": 15,
+"seed": 65862
+},
+{
+"k": "av",
+"line": 49,
+"cont": true,
+"from": 9422,
+"dur": 132,
+"seed": 65967,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 5212,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r4a5",
+"src": "lc2/clips/lc2egg_r4a5.mp4",
+"sf": 148,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 9554,
+"dur": 110,
+"seed": 66891
+},
+{
+"k": "av",
+"line": 51,
+"from": 9664,
+"dur": 193,
+"seed": 67661,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 5352,
+"cuts": []
+},
+{
+"k": "av",
+"line": 52,
+"from": 9857,
+"dur": 209,
+"seed": 69012,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 5544,
+"cuts": []
+},
+{
+"k": "av",
+"line": 53,
+"from": 10066,
+"dur": 274,
+"seed": 70475,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 5754,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r5a1",
+"src": "lc2/clips/lc2egg_r5a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2egg_5_lc2egg_r5a.png",
+"seg": 10,
+"toma": 0,
+"from": 10340,
+"dur": 248,
+"seed": 72393
+},
+{
+"k": "clip",
+"id": "lc2egg_r5a1",
+"src": "lc2/clips/lc2egg_r5a1.mp4",
+"sf": 247,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 10588,
+"dur": 17,
+"seed": 74129
+},
+{
+"k": "clip",
+"id": "lc2egg_r5a2",
+"src": "lc2/clips/lc2egg_r5a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_5_2.png",
+"seg": 10,
+"toma": 0,
+"from": 10605,
+"dur": 197,
+"seed": 74248
+},
+{
+"k": "av",
+"line": 56,
+"from": 10802,
+"dur": 151,
+"seed": 75627,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 6035,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r5a3",
+"src": "lc2/clips/lc2egg_r5a3.mp4",
+"sf": 82,
+"img": "lc2/kf/ang_lc2egg_5_3.png",
+"seg": 10,
+"toma": 0,
+"from": 10953,
+"dur": 183,
+"seed": 76684
+},
+{
+"k": "clip",
+"id": "lc2egg_r5a4",
+"src": "lc2/clips/lc2egg_r5a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_5_4.png",
+"seg": 10,
+"toma": 0,
+"from": 11136,
+"dur": 38,
+"seed": 77965
+},
+{
+"k": "clip",
+"id": "lc2egg_r5a4",
+"src": "lc2/clips/lc2egg_r5a4.mp4",
+"sf": 39,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 11174,
+"dur": 143,
+"seed": 78231
+},
+{
+"k": "av",
+"line": 59,
+"from": 11317,
+"dur": 201,
+"seed": 79232,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 6193,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r5a5",
+"src": "lc2/clips/lc2egg_r5a5.mp4",
+"sf": 117,
+"img": "lc2/kf/ang_lc2egg_5_5.png",
+"seg": 10,
+"toma": 0,
+"from": 11518,
+"dur": 148,
+"seed": 80639
+},
+{
+"k": "av",
+"line": 61,
+"from": 11666,
+"dur": 192,
+"seed": 81675,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 6401,
+"cuts": []
+},
+{
+"k": "av",
+"line": 62,
+"from": 11858,
+"dur": 224,
+"seed": 83019,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 6594,
+"cuts": []
+},
+{
+"k": "av",
+"line": 63,
+"from": 12082,
+"dur": 222,
+"seed": 84587,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 6817,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r6a1",
+"src": "lc2/clips/lc2egg_r6a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2egg_6_lc2egg_r6a.png",
+"seg": 10,
+"toma": 0,
+"from": 12304,
+"dur": 231,
+"seed": 86141
+},
+{
+"k": "clip",
+"id": "lc2egg_r6a2",
+"src": "lc2/clips/lc2egg_r6a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_6_2.png",
+"seg": 10,
+"toma": 0,
+"from": 12535,
+"dur": 65,
+"seed": 87758
+},
+{
+"k": "clip",
+"id": "lc2egg_r6a2",
+"src": "lc2/clips/lc2egg_r6a2.mp4",
+"sf": 65,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 12600,
+"dur": 117,
+"seed": 88213
+},
+{
+"k": "av",
+"line": 66,
+"from": 12718,
+"dur": 105,
+"seed": 89039,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 7047,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r6a3",
+"src": "lc2/clips/lc2egg_r6a3.mp4",
+"sf": 57,
+"img": "lc2/kf/ang_lc2egg_6_3.png",
+"seg": 10,
+"toma": 0,
+"from": 12823,
+"dur": 133,
+"seed": 89774
+},
+{
+"k": "clip",
+"id": "lc2egg_r6a3",
+"src": "lc2/clips/lc2egg_r6a3.mp4",
+"sf": 190,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 12956,
+"dur": 42,
+"seed": 90705
+},
+{
+"k": "clip",
+"id": "lc2egg_r6a4",
+"src": "lc2/clips/lc2egg_r6a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_6_4.png",
+"seg": 10,
+"toma": 0,
+"from": 12998,
+"dur": 145,
+"seed": 90999
+},
+{
+"k": "av",
+"line": 69,
+"from": 13143,
+"dur": 119,
+"seed": 92014,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 7160,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r6a5",
+"src": "lc2/clips/lc2egg_r6a5.mp4",
+"sf": 33,
+"img": "lc2/kf/ang_lc2egg_6_5.png",
+"seg": 10,
+"toma": 0,
+"from": 13262,
+"dur": 198,
+"seed": 92847
+},
+{
+"k": "av",
+"line": 71,
+"from": 13460,
+"dur": 173,
+"seed": 94233,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 7286,
+"cuts": []
+},
+{
+"k": "av",
+"line": 72,
+"from": 13633,
+"dur": 197,
+"seed": 95444,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 7458,
+"cuts": []
+},
+{
+"k": "av",
+"line": 73,
+"from": 13830,
+"dur": 249,
+"seed": 96823,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 7655,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r7a1",
+"src": "lc2/clips/lc2egg_r7a1.mp4",
+"sf": 0,
+"img": "lc2/kf/ing_lc2egg_7_lc2egg_r7a.png",
+"seg": 10,
+"toma": 0,
+"from": 14079,
+"dur": 196,
+"seed": 98566
+},
+{
+"k": "clip",
+"id": "lc2egg_r7a1",
+"src": "lc2/clips/lc2egg_r7a1.mp4",
+"sf": 196,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 14275,
+"dur": 40,
+"seed": 99938
+},
+{
+"k": "clip",
+"id": "lc2egg_r7a2",
+"src": "lc2/clips/lc2egg_r7a2.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_7_2.png",
+"seg": 10,
+"toma": 0,
+"from": 14315,
+"dur": 190,
+"seed": 100218
+},
+{
+"k": "av",
+"line": 76,
+"from": 14505,
+"dur": 121,
+"seed": 101548,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 7912,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r7a3",
+"src": "lc2/clips/lc2egg_r7a3.mp4",
+"sf": 75,
+"img": "lc2/kf/ang_lc2egg_7_3.png",
+"seg": 10,
+"toma": 0,
+"from": 14626,
+"dur": 161,
+"seed": 102395
+},
+{
+"k": "clip",
+"id": "lc2egg_r7a4",
+"src": "lc2/clips/lc2egg_r7a4.mp4",
+"sf": 0,
+"img": "lc2/kf/ang_lc2egg_7_4.png",
+"seg": 10,
+"toma": 0,
+"from": 14787,
+"dur": 12,
+"seed": 103522
+},
+{
+"k": "clip",
+"id": "lc2egg_r7a4",
+"src": "lc2/clips/lc2egg_r7a4.mp4",
+"sf": 12,
+"img": null,
+"seg": 10,
+"toma": 1,
+"cont": true,
+"from": 14799,
+"dur": 195,
+"seed": 103606
+},
+{
+"k": "av",
+"line": 79,
+"from": 14994,
+"dur": 110,
+"seed": 104971,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 8040,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_r7a5",
+"src": "lc2/clips/lc2egg_r7a5.mp4",
+"sf": 81,
+"img": "lc2/kf/ang_lc2egg_7_5.png",
+"seg": 10,
+"toma": 0,
+"from": 15104,
+"dur": 155,
+"seed": 105741
+},
+{
+"k": "av",
+"line": 81,
+"from": 15259,
+"dur": 182,
+"seed": 106826,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 8158,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_cc",
+"src": "lc2/clips/lc2egg_cc.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2egg_cc.png",
+"seg": 8,
+"toma": 0,
+"from": 15441,
+"dur": 207,
+"seed": 108100
+},
+{
+"k": "av",
+"line": 83,
+"from": 15648,
+"dur": 369,
+"seed": 109549,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 8348,
+"cuts": []
+},
+{
+"k": "av",
+"line": 84,
+"from": 16017,
+"dur": 18,
+"seed": 112132,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 8717,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Week",
+"props": {},
+"from": 16035,
+"dur": 255,
+"seed": 112258
+},
+{
+"k": "av",
+"line": 85,
+"from": 16290,
+"dur": 18,
+"seed": 114043,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 8989,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Homework",
+"props": {
+"names": [
+"The Two-Egg Omelet",
+"Slow Scrambled Eggs",
+"Hash Browns & One Egg",
+"Eggs in Tomato Sauce",
+"Creamed Eggs on Toast",
+"The Fried Egg Sandwich",
+"Egg Drop Soup in Five Minutes"
+],
+"pick": 2,
+"line": "Pick two this week. Just two."
+},
+"from": 16308,
+"dur": 159,
+"seed": 114169
+},
+{
+"k": "av",
+"line": 86,
+"from": 16467,
+"dur": 195,
+"seed": 115282,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 9166,
+"cuts": []
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2egg.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 16662,
+"dur": 159,
+"seed": 116647
+},
+{
+"k": "comp",
+"name": "Lc2Book",
+"props": {
+"cover": "lc2/cover.png",
+"qr": "lc2/qr_lc2egg.png",
+"site": "lorettaschurch.com/one"
+},
+"from": 16821,
+"dur": 80,
+"seed": 117760
+},
+{
+"k": "av",
+"line": 89,
+"from": 16901,
+"dur": 115,
+"seed": 118320,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 9369,
+"cuts": []
+},
+{
+"k": "clip",
+"id": "lc2egg_cc2",
+"src": "lc2/clips/lc2egg_cc2.mp4",
+"sf": 0,
+"img": "lc2/kf/kf_lc2egg_cc2.png",
+"seg": 7,
+"toma": 0,
+"from": 17016,
+"dur": 183,
+"seed": 119125
+},
+{
+"k": "av",
+"line": 91,
+"from": 17199,
+"dur": 115,
+"seed": 120406,
+"src": "lc2/av/lc2egg_reel.mp4",
+"sf": 9496,
+"cuts": []
+}
+],
+"OV": [
+{
+"from": 305,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.00",
+"sub": "a plate"
+}
+},
+{
+"from": 969,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 1259,
+"dur": 135,
+"name": "LorNameTag",
+"props": {
+"name": "Loretta",
+"sub": "60 years of church suppers"
+}
+},
+{
+"from": 2059,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 1,
+"title": "The Two-Egg Omelet",
+"num": 51
+}
+},
+{
+"from": 2144,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 10
+}
+},
+{
+"from": 2462,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "The Two-Egg Omelet",
+"items": []
+}
+},
+{
+"from": 4054,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 2,
+"title": "Slow Scrambled Eggs",
+"num": 52
+}
+},
+{
+"from": 4494,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Slow Scrambled Eggs",
+"items": []
+}
+},
+{
+"from": 6030,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 3,
+"title": "Hash Browns and One Egg",
+"num": 50
+}
+},
+{
+"from": 6118,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 6484,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Hash Browns & One Egg",
+"items": []
+}
+},
+{
+"from": 8008,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 4,
+"title": "Eggs in Tomato Sauce",
+"num": 56
+}
+},
+{
+"from": 8101,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 8384,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Eggs in Tomato Sauce",
+"items": []
+}
+},
+{
+"from": 9863,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 5,
+"title": "Creamed Eggs on Toast",
+"num": 58
+}
+},
+{
+"from": 9936,
+"dur": 135,
+"name": "Lc2Timer",
+"props": {
+"min": 15
+}
+},
+{
+"from": 10346,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Creamed Eggs on Toast",
+"items": []
+}
+},
+{
+"from": 11864,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 6,
+"title": "The Fried Egg Sandwich",
+"num": 60
+}
+},
+{
+"from": 12310,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "The Fried Egg Sandwich",
+"items": []
+}
+},
+{
+"from": 13639,
+"dur": 138,
+"name": "Lc2Opener",
+"props": {
+"n": 7,
+"title": "Egg Drop Soup in Five Minutes",
+"num": 64
+}
+},
+{
+"from": 14085,
+"dur": 165,
+"name": "Lc2Ingredients",
+"props": {
+"title": "Egg Drop Soup in Five Minutes",
+"items": []
+}
+},
+{
+"from": 15628,
+"dur": 144,
+"name": "Lc2Price",
+"props": {
+"price": "$1.00",
+"sub": "a plate"
+}
+}
+],
+"pendientes": 0
+}
