@@ -98,7 +98,7 @@ const SEG: Seg[] = [
   // 2 · portal desde la ventana escarchada → la calle 3D en la tormenta
   { a: 6.05, tr: "portal", p: () => [640, 240], r: (t) => <World t={t} /> },
   // 3 · zoom a través del sótano → la escalera con la linterna
-  { a: EV.nineteen + 2.0, tr: "zoom", p: (t) => xy(screenOf(t, [-5.5, -1.0, 0])), r: (t) => <Shot k="n_stairs" t={t} a={EV.nineteen + 2.0} /> },
+  { a: EV.nineteen + 2.0, tr: "portal", p: (t) => xy(screenOf(t, [-5.5, -1.0, 0])), r: (t) => <Shot k="n_stairs" t={t} a={EV.nineteen + 2.0} /> },
   // 4 · latigazo a Marcus; tarjeta 3D del medidor de gas ("Full gas line")
   { a: 15.95, tr: "whip", r: (t) => {
       const k = spr(t, tGas, 0.8), zt = ei(t, 19.55, 20.05), bl = e(t, tGas - 0.2, tGas + 0.3);
@@ -113,7 +113,7 @@ const SEG: Seg[] = [
   // 5 · zoom a través de la tarjeta → el furnace 3D en el haz de la linterna; el gas llega y se frena en la válvula
   { a: 20.0, tr: "zoom", p: () => [980, 410], r: (t) => <World t={t} /> },
   // 6 · zoom a través de la placa sin luz → Marcus
-  { a: 32.16, tr: "zoom", p: (t) => xy(screenOf(t, PT.board)), r: (t) => <Avatar t={t} /> },
+  { a: 32.16, tr: "portal", p: (t) => xy(screenOf(t, PT.board)), r: (t) => <Avatar t={t} /> },
   // 7 · la pieza de $5 en su mano
   { a: 37.2, tr: "whipL", r: (t) => <Shot k="m_part" t={t} a={37.2} z={[1.02, 1.1]} /> },
   // 8 · Marcus se presenta junto al furnace
