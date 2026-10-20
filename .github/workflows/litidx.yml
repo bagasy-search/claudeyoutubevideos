@@ -1,0 +1,71 @@
+# Índice CLIP de metraje REAL para documentales (clips literales). Cada runner baja su parte de los
+# candidatos (Dailymotion, archive.org… NO YouTube), saca 1 cuadro cada 3 s y los embebe con CLIP.
+# Lista = release asset "lit-<slug>" (lit_<slug>.json = [{k,id,url}]). Salida: artifact litidx-<slug>-<idx>
+# con idx/*.json + frames/ (224 px). Después, local: doc_cliprank.mjs + doc_rankhoja.py.
+# Disparo:  gh workflow run litidx.yml -f slug=cpestructuras -f chunks=16
+name: litidx
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        required: true
+      chunks:
+        required: false
+        default: "16"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - id: m
+        run: echo "matrix=$(node -e "console.log(JSON.stringify(Array.from({length:${{ github.event.inputs.chunks }}},(_,i)=>i)))")" >> "$GITHUB_OUTPUT"
+
+  idx:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        idx: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: cache node_modules
+        id: nm
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: nm-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+      - name: install deps
+        if: steps.nm.outputs.cache-hit != 'true'
+        run: |
+          n=0; until npm ci; do n=$((n+1)); [ "$n" -ge 4 ] && exit 1; rm -rf node_modules; sleep 20; done
+      - name: cache modelo CLIP
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: clipmodel-clip-vit-base-patch32
+      - name: install yt-dlp + ffmpeg
+        run: |
+          sudo curl -sL https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp && sudo chmod a+rx /usr/local/bin/yt-dlp
+          sudo apt-get install -y -qq ffmpeg > /dev/null
+      - name: lista
+        env:
+          GH_TOKEN: "${{ github.token }}"
+        run: gh release download "lit-${{ github.event.inputs.slug }}" --pattern "lit_${{ github.event.inputs.slug }}.json" --dir .
+      - name: bajar
+        run: node scripts/doc_litdl.mjs "lit_${{ github.event.inputs.slug }}.json" ${{ matrix.idx }} ${{ github.event.inputs.chunks }} work
+      - name: indexar
+        run: node scripts/doc_clipidx.mjs work
+      - uses: actions/upload-artifact@v4
+        with:
+          name: litidx-${{ github.event.inputs.slug }}-${{ matrix.idx }}
+          path: |
+            work/idx
+            work/frames
+          retention-days: 5
