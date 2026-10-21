@@ -37,7 +37,7 @@ const ShotView: React.FC<{ sh: Shot; t: number; i: number }> = ({ sh, t, i }) =>
   if (sh.k === "C") return <Clip k={sh.id!} a={sh.a} b={sh.b} t={t} />;
   if (sh.k === "P") return <Photo k={sh.id!} a={sh.a} b={sh.b} t={t} i={i} />;
   if (sh.k === "F") return <AbsoluteFill style={{ transform: `scale(${1.02 + 0.06 * e(t, sh.a, sh.b)})` }}><World t={sh.ft!} /></AbsoluteFill>;
-  return <Avatar t={Math.min(t, sh.b - 0.04)} edge={0.6} />;
+  return <Avatar t={Math.min(t, sh.b - 0.04)} />;
 };
 const idxAt = (t: number) => { let lo = 0, hi = SHOTS.length - 1; while (lo < hi) { const m = (lo + hi + 1) >> 1; if (SHOTS[m].a <= t) lo = m; else hi = m - 1; } return lo; };
 const TR = 0.38;
@@ -268,8 +268,8 @@ export const Rest: React.FC = () => {
   if (pv && u < 1 && !(isW(pv) && isW(sh))) {
     const av = sh.k === "A" || pv.k === "A";
     if (av) {
-      // zoom a través: la toma vieja crece y se desenfoca, la nueva entra
-      L.push(<AbsoluteFill key={"o" + (i - 1)} style={{ transformOrigin: "960px 560px", transform: `scale(${1 + u * u * 4})`, filter: `blur(${u * 18}px)` }}><ShotView sh={pv} t={t} i={i - 1} /></AbsoluteFill>);
+      // zoom a través: la toma vieja crece (y se desenfoca SÓLO si no es el avatar: el avatar nunca va desenfocado), la nueva entra
+      L.push(<AbsoluteFill key={"o" + (i - 1)} style={{ transformOrigin: "960px 560px", transform: `scale(${1 + u * u * 4})`, filter: pv.k === "A" ? undefined : `blur(${u * 18}px)` }}><ShotView sh={pv} t={t} i={i - 1} /></AbsoluteFill>);
       L.push(<AbsoluteFill key={"n" + i} style={{ opacity: clamp((u - 0.25) / 0.6), transform: `scale(${1.15 - 0.15 * u})` }}><ShotView sh={sh} t={t} i={i} /></AbsoluteFill>);
     } else {
       const mb = Math.sin(u * Math.PI) * 38, dir = i % 2 ? 1 : -1;

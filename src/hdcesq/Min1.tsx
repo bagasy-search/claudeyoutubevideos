@@ -28,14 +28,15 @@ const Clip: React.FC<{ k: string; at: number; t: number; z?: [number, number] }>
 };
 
 export const Avatar: React.FC<{ t: number; blur?: number; dark?: number; edge?: number }> = ({ t, blur = 0, dark = 0, edge = 0 }) => {
+  // +14 cuadros: la Sequence sigue viva durante la transición de salida (TR 0,38 s); antes se cortaba 2 cuadros después de la ventana → 3 cuadros NEGROS en cada salida del avatar
   const face = REEL ? <>{WIN.map((w, i) => (
-    <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12} layout="none">
+    <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12 + 14} layout="none">
       <AbsoluteFill style={{ opacity: t >= w.ms - 0.02 && t < w.me ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
     </Sequence>))}</> : <Img src={staticFile(P + "av_still.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
+  // SIN desenfoque en el avatar (orden del creador 21-oct): ni blur, ni halo/máscara radial; borde nítido. blur/edge se ignoran.
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
-      <AbsoluteFill style={{ filter: blur > 0.2 ? `blur(${blur}px) brightness(${1 - dark})` : dark > 0 ? `brightness(${1 - dark})` : undefined, transform: blur > 0.2 ? "scale(1.04)" : undefined }}>{face}</AbsoluteFill>
-      {edge > 0.01 && <AbsoluteFill style={{ filter: `blur(${14 * edge}px) brightness(.62)`, transform: "scale(1.04)", WebkitMaskImage: "radial-gradient(ellipse 44% 52% at 50% 42%, transparent 55%, #000 100%)" } as React.CSSProperties}>{face}</AbsoluteFill>}
+      <AbsoluteFill style={{ filter: dark > 0 ? `brightness(${1 - dark})` : undefined }}>{face}</AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -144,7 +145,7 @@ export const Min1: React.FC = () => {
 
   // ===== A · 0-3,5 · avatar; "el patio de tu vecina": portal desde el centro al rosal =====
   if (t < 3.55) {
-    L.push(<Avatar key="avA" t={t} blur={5 * e(t, 2.9, 3.45)} />);
+    L.push(<Avatar key="avA" t={t} />);
     const r = ei(t, 3.0, 3.52);
     if (r > 0) L.push(<Portal key="pA" x={1240} y={430} r={r}><World t={Math.max(3.0, t)} /></Portal>);
   }
@@ -173,7 +174,7 @@ export const Min1: React.FC = () => {
   // ===== D · 16,9-20,45 · avatar "y a las dos semanas…" =====
   if (t >= 16.9 && t < 20.5) {
     const sl = ei(t, 20.1, 20.48), mb = Math.sin(sl * Math.PI) * 40;
-    L.push(<AbsoluteFill key="avD" style={{ transform: `translateX(${-sl * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><Avatar t={t} /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avD" style={{ transform: `translateX(${-sl * 1920}px)` }}><Avatar t={t} /></AbsoluteFill>);
     L.push(<Calendar key="cal2" t={t} x={1520} y={150} inAt={17.94} out={20.0} days={[{ at: 17.94, d: 7 }, { at: 18.1, d: 14 }]} />);
     if (sl > 0) L.push(<AbsoluteFill key="podIn" style={{ transform: `translateX(${(1 - sl) * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><Clip k="m1_podrido" at={20.1} t={t} z={[1.02, 1.12]} /></AbsoluteFill>);
   }
@@ -202,7 +203,7 @@ export const Min1: React.FC = () => {
   // ===== G · 30,85-34,95 · avatar: "no se muere de SED, se muere de HONGO" =====
   if (t >= 30.85 && t < 35.0) {
     const z = ei(t, 34.55, 34.95);
-    L.push(<AbsoluteFill key="avG" style={{ transformOrigin: "960px 600px", transform: `scale(${1 + z * z * 6})`, filter: z > 0.05 ? `blur(${z * 18}px)` : undefined }}><Avatar t={t} edge={e(t, 32.4, 32.9) * (1 - e(t, 34.4, 34.6))} /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avG" style={{ transformOrigin: "960px 600px", transform: `scale(${1 + z * z * 6})` }}><Avatar t={t} /></AbsoluteFill>);
     L.push(<Stamp key="ns" t={t} at={33.1} text="NO ES SED" x={560} y={820} out={34.4} rot={-6} size={86} col={COL.ice} />);
     L.push(<Stamp key="eh" t={t} at={34.2} text="ES HONGO" x={1360} y={820} out={34.5} rot={5} size={86} />);
     if (z > 0.35) L.push(<AbsoluteFill key="wG" style={{ opacity: (z - 0.35) / 0.65 }}><World t={34.95} /></AbsoluteFill>);
@@ -240,7 +241,7 @@ export const Min1: React.FC = () => {
   // ===== K · 47,9-52,0 · avatar: el corte que sí echa raíz; rosas… =====
   if (t >= 47.9 && t < 52.05) {
     const z = ei(t, 51.65, 52.0);
-    L.push(<AbsoluteFill key="avK" style={{ transform: `scale(${1 - z * 0.3})`, opacity: 1 - z, filter: z > 0.05 ? `blur(${z * 16}px)` : undefined }}><Avatar t={t} edge={e(t, 48.6, 49.0)} /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avK" style={{ transform: `scale(${1 - z * 0.3})`, opacity: 1 - z }}><Avatar t={t} /></AbsoluteFill>);
     L.push(<Stamp key="cr" t={t} at={48.9} text="EL CORTE QUE SÍ ECHA RAÍZ" x={960} y={850} out={50.4} rot={-3} size={64} col={COL.leaf} />);
     if (z > 0) L.push(<AbsoluteFill key="wK" style={{ opacity: z }}><World t={52.0} /></AbsoluteFill>);
   }
@@ -267,13 +268,13 @@ export const Min1: React.FC = () => {
   if (t >= 59.95 && t < 62.85) {
     const sl = ei(t, 62.45, 62.83), mb = Math.sin(sl * Math.PI) * 40;
     L.push(<AbsoluteFill key="wN" style={{ transform: `translateX(${-sl * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><World t={t} /></AbsoluteFill>);
-    if (sl > 0) L.push(<AbsoluteFill key="avNi" style={{ transform: `translateX(${(1 - sl) * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><Avatar t={t} /></AbsoluteFill>);
+    if (sl > 0) L.push(<AbsoluteFill key="avNi" style={{ transform: `translateX(${(1 - sl) * 1920}px)` }}><Avatar t={t} /></AbsoluteFill>);
   }
   if (t >= 60.5 && t < 66) L.push(<LowerThird key="lt" t={t} at={60.55} out={65.4} name="CLAUDIO" l2="30 AÑOS DE JARDINERO" l2at={61.3} />);
   // ===== O · 62,8-68,3 · avatar: "todo lo que ves en mi patio salió de una rama" (las manos en la tierra al lado) =====
   if (t >= 62.8 && t < 68.35) {
     const z = ei(t, 67.9, 68.3);
-    L.push(<AbsoluteFill key="avO" style={{ transformOrigin: "1500px 700px", transform: `scale(${1 + z * z * 7})`, filter: z > 0.05 ? `blur(${z * 18}px)` : undefined }}><Avatar t={t} edge={e(t, 64.9, 65.3)} /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avO" style={{ transformOrigin: "1500px 700px", transform: `scale(${1 + z * z * 7})` }}><Avatar t={t} /></AbsoluteFill>);
     const k = spr(t, 65.1, 0.9);
     L.push(<Card3D key="mn" id="img_m1_manos" x={1140} y={250} w={660} h={420} ry={(1 - Math.min(1, k)) * -70 - 12} rx={4} z={(1 - Math.min(1, k)) * -900} o={e(t, 65.1, 65.2) * (1 - e(t, 67.6, 67.85))} label="DE UNA RAMA QUE IBAN A TIRAR" labelCol={COL.leaf} />);
     if (z > 0.35) L.push(<AbsoluteFill key="wO" style={{ opacity: (z - 0.35) / 0.65 }}><World t={C1} /></AbsoluteFill>);
@@ -290,7 +291,7 @@ export const Min1: React.FC = () => {
   // ===== avatar 77,95-81,92 ("Plantas gratis para siempre. Si vas a la página 13") =====
   if (t >= 77.9 && t < 81.95) {
     const z = ei(t, 81.55, 81.92);
-    L.push(<AbsoluteFill key="avQ" style={{ transformOrigin: "960px 760px", transform: `scale(${1 + z * z * 5})`, filter: z > 0.05 ? `blur(${z * 16}px)` : undefined }}><Avatar t={t} /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avQ" style={{ transformOrigin: "960px 760px", transform: `scale(${1 + z * z * 5})` }}><Avatar t={t} /></AbsoluteFill>);
     L.push(<BigNum key="p13a" t={t} at={81.06} text="PÁG. 13" size={130} x={1500} y={230} out={81.6} col="#ffd60a" edge="#5a4500" />);
     if (z > 0.35) L.push(<AbsoluteFill key="wQ" style={{ opacity: (z - 0.35) / 0.65 }}><World t={81.92} /></AbsoluteFill>);
   }
@@ -316,12 +317,12 @@ export const Min1: React.FC = () => {
     L.push(<Tag key="ea" t={t} at={94.18} x={s1b.x} y={s1b.y} dx={120} dy={-120} text="EN AGUA" col={COL.ice} out={95.3} size={44} />);
     L.push(<Tag key="et" t={t} at={95.22} x={s2b.x} y={s2b.y} dx={120} dy={60} text="EN TIERRA" col={COL.leaf} out={95.45} size={44} />);
     const z = ei(t, 95.2, 95.55);
-    if (z > 0) L.push(<AbsoluteFill key="avRi" style={{ opacity: z }}><Avatar t={t} edge={1} /></AbsoluteFill>);
+    if (z > 0) L.push(<AbsoluteFill key="avRi" style={{ opacity: z }}><Avatar t={t} /></AbsoluteFill>);
   }
   // ===== 95,53-101,4 · avatar con la descripción flotando ("el link está en la primera línea"); "vamos al rosal" =====
   if (t >= 95.5) {
     const z = ei(t, 100.6, 101.3);
-    L.push(<AbsoluteFill key="avS" style={{ transformOrigin: "700px 500px", transform: `scale(${1 + z * z * 6})`, filter: z > 0.05 ? `blur(${z * 18}px)` : undefined }}><Avatar t={t} edge={e(t, 95.6, 96.0) * (1 - e(t, 99.0, 99.4))} /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avS" style={{ transformOrigin: "700px 500px", transform: `scale(${1 + z * z * 6})` }}><Avatar t={t} /></AbsoluteFill>);
     L.push(<Desc key="desc" t={t} at={96.02} out={99.1} />);
     if (z > 0.35) L.push(<AbsoluteFill key="wS" style={{ opacity: (z - 0.35) / 0.65 }}><World t={t} /></AbsoluteFill>);
   }
