@@ -9,7 +9,7 @@
 // (avatar en videollamada al lado), se pintan las cantidades, la descripción con el link → vuelve volando a la llave.
 // Audio fuera de Remotion (voz + sonido real de los clips se mezclan en encfin). Render SÓLO en el farm.
 import React from "react";
-import { AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Freeze, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { World as WorldRaw, PT, screenOf, camSpeed, C1, pagePt } from "./bano3d";
 import AVW from "./avwin.json";
 import AVAIL from "./avail.json";
@@ -20,12 +20,17 @@ export const MIN1_FRAMES = s(MIN1_END + 0.7);
 const REEL = (AVAIL as { reel: boolean }).reel; // reel del avatar (public/clllaves/reel0.mp4, 1 /run de RunPod)
 const LTX = new Set((AVAIL as { ltx: string[] }).ltx); // clips LTX ya bajados (public/clllaves/ltx_<k>.mp4); si no, el cuadro clave
 export const clip = (k: string) => (LTX.has(k) ? "ltx_" + k : "img_" + k);
+const REEL_LEN = 275.4; // reel0.mp4 dura 275,6 s: la última ventana pide más → se congela el último cuadro (si no, NEGRO al final)
 export const WIN: { ms: number; me: number; off: number }[] = (AVW as { win: { ms: number; me: number; off: number }[] }).win;
 
 export const Avatar: React.FC<{ t: number; blur?: number; dark?: number }> = ({ t, blur = 0, dark = 0 }) => {
+  // +14 cuadros: la Sequence sigue viva durante la transición de salida (antes se desmontaba 2 cuadros después de la ventana → cuadros NEGROS en cada salida)
+  // ventana visible: la que contiene t; si t cae fuera (fundido de entrada o salida), la vecina cuya Sequence sigue montada → nunca cuadro negro
+  const cur = WIN.findIndex((w) => t >= w.ms - 0.02 && t < w.me);
+  const vis = cur >= 0 ? cur : WIN.findIndex((w) => t >= w.ms - 0.32 && t < w.me + 0.8);
   const face = REEL ? <>{WIN.map((w, i) => (
-    <Sequence key={i} from={Math.max(0, s(w.ms) - 10)} durationInFrames={s(w.me - w.ms) + 12} layout="none">
-      <AbsoluteFill style={{ opacity: t >= w.ms - 0.02 && t < w.me ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
+    <Sequence key={i} from={Math.max(0, s(w.ms) - 10)} durationInFrames={s(w.me - w.ms) + 12 + 14} layout="none">
+      <AbsoluteFill style={{ opacity: i === vis ? 1 : 0 }}><Freeze frame={s(REEL_LEN) - Math.max(0, s(w.off) - 10)} active={(f) => f > s(REEL_LEN) - Math.max(0, s(w.off) - 10)}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Freeze></AbsoluteFill>
     </Sequence>))}</> : <Img src={staticFile(P + "av_still.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>

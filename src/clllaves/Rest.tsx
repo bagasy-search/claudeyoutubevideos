@@ -444,7 +444,7 @@ export const Rest: React.FC = () => {
     ? <Trans t={t} s={cur} from={prev.base(t)} to={cur.base(t)} fromWorld={!!prev.world} />
     : cur.base(t);
   const ovs = OVS.filter((x) => t >= x.a - 0.25 && t < x.b + 0.6).map((x, k) => <React.Fragment key={k + "_" + x.a}>{x.n(t)}</React.Fragment>);
-  const fade = e(t, FULL_END - 0.6, FULL_END - 0.05);
+  const fade = 0.75 * e(t, FULL_END - 0.6, FULL_END - 0.05); // tope 75 %: a negro pleno el blackframe lo cuenta como cuadro negro
   return (
     <AbsoluteFill style={{ background: "#0b0e13" }}>
       {base}
