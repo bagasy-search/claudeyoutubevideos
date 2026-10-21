@@ -9,7 +9,8 @@ import { KitchenWorld, Scene, BOOK } from "./kitchen3d";
 import { MIN1_END } from "./Min1";
 import { BigNum, COL, Chips, FONT, LowerThird, Receipt, e, extrude, setSlug, spr } from "../kits/yanqui3d/lib";
 import { makeVideo, Stamp, Beat } from "../kits/yanqui3d/engine";
-import { CheckList, Mistake, NextCard, StepTitle, Timer, Versus, Words } from "../kits/yanqui3d/pieces";
+import { CheckList, Mistake, NextCard, StepTitle, Timer, Words } from "../kits/yanqui3d/pieces";
+import { VersusS } from "./VersusS";
 import CAPS from "./caps.json";
 import AVW from "./avwin.json";
 import AVAIL from "./avail.json";
@@ -126,7 +127,7 @@ const V = makeVideo({
     L.push(<Chips key="who" t={t} at={A("81 years old")} items={["81 YEARS OLD", "60 YEARS · CHURCH BASEMENT", "SMALL TOWN, IOWA"]} out={95.0} y={860} />);
     N("100", A("a hundred people"), "100", 101.8, { sub: "PEOPLE AT A TIME · 9×13 PANS", y: 360 });
     W("first", A("the first one for just me"), "THE FIRST ONE FOR JUST ME", 108.5);
-    L.push(<Versus key="hab" t={t} at={A("I cooked for two")} out={114.7} title="THAT FIRST YEAR" L={{ label: "COOKED FOR TWO", val: "½ THROWN AWAY", h: 0.8, col: COL.red, mark: "x" }} R={{ label: "DIDN'T COOK", val: "CRACKERS", h: 0.35, col: COL.red, mark: "x" }} />);
+    L.push(<VersusS key="hab" t={t} at={A("I cooked for two")} out={114.7} title="THAT FIRST YEAR" L={{ label: "COOKED FOR TWO", val: "½ THROWN AWAY", h: 0.8, col: COL.red, mark: "x" }} R={{ label: "DIDN'T COOK", val: "CRACKERS", h: 0.35, col: COL.red, mark: "x" }} />);
     L.push(<Chips key="small" t={t} at={A("One pan, one pot")} items={["ONE PAN", "ONE POT", "ONE LITTLE LOAF PAN"]} out={127.2} y={860} />);
     W("frozen", A("less than the frozen dinners"), "LESS THAN THE FROZEN DINNERS", 127.2, { y: 170 });
     W("cross", A("the little cross"), "THE OLD CHURCH TABLECLOTH", 138.6);
@@ -138,7 +139,7 @@ const V = makeVideo({
     L.push(<BookCTA key="cta1" t={t} at={A("The link is in the first line")} out={183.2} />);
     W("paid", A("Not a guess"), "NOT A GUESS · WHAT I PAID", 200.1, { y: 170, size: 74 });
     ING("pans", "THE ONLY PANS YOU NEED", [[A("A small loaf pan"), "SMALL LOAF PAN · 8×4 IN"], [A("two little two-cup"), "TWO 2-CUP BAKING DISHES"]], 211.5);
-    L.push(<Versus key="two" t={t} at={A("Most of these suppers make two plates")} out={222.6} title="EVERY SUPPER MAKES TWO" L={{ label: "BAKE ONE", val: "TONIGHT", h: 0.8, col: COL.amber, mark: "ok" }} R={{ label: "FREEZE ONE", val: "UNBAKED", h: 0.8, col: "#8fd6ff", mark: "ok" }} />);
+    L.push(<VersusS key="two" t={t} at={A("Most of these suppers make two plates")} out={222.6} title="EVERY SUPPER MAKES TWO" L={{ label: "BAKE ONE", val: "TONIGHT", h: 0.8, col: COL.amber, mark: "ok" }} R={{ label: "FREEZE ONE", val: "UNBAKED", h: 0.8, col: "#8fd6ff", mark: "ok" }} />);
     W("pan", A("you need a smaller pan"), "YOU NEED A SMALLER PAN", 228.6, { y: 170 });
     W("p3", A("this is page three"), "PAGE 3 · THE WHOLE SECRET", 239.2, { y: 940, size: 60 });
     ING("buy", "BUY BIG · FREEZE SMALL", [[A("Buy the big pack"), "BIG PACK OF GROUND BEEF"], [A("quarter pound squares"), "¼ LB SQUARES, FLAT"], [A("Chicken thighs, two"), "CHICKEN THIGHS · 2 A BAG"], [A("The bread goes"), "BREAD IN THE FREEZER"]], 260.0);
@@ -151,7 +152,7 @@ const V = makeVideo({
     OVEN("o1", A("Turn your oven to 350"), "350°F", 324.0);
     W("hold", A("just until it holds together"), "JUST UNTIL IT HOLDS", 330.4, { col: COL.amber });
     ING("tp1", "THE TOPPING", [[A("Two tablespoons of ketchup"), "2 TBSP KETCHUP"], [A("one teaspoon of brown sugar"), "1 TSP BROWN SUGAR"], [A("a half teaspoon of mustard"), "½ TSP MUSTARD"]], 343.0);
-    L.push(<Versus key="yolk" t={t} at={A("Now why only the yolk")} out={364.7} title="WHY ONLY THE YOLK" L={{ label: "WHOLE EGG", val: "SLUMPS", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "JUST THE YOLK", val: "TENDER", h: 0.9, col: COL.amber, mark: "ok" }} />);
+    L.push(<VersusS key="yolk" t={t} at={A("Now why only the yolk")} out={364.7} title="WHY ONLY THE YOLK" L={{ label: "WHOLE EGG", val: "SLUMPS", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "JUST THE YOLK", val: "TENDER", h: 0.9, col: COL.amber, mark: "ok" }} />);
     N("t1", A("Into the oven 35"), "35–40", 371.0, { sub: "MINUTES", col: "#ffb35a", edge: "#5a1e08", y: 330 });
     L.push(<Timer key="rest" t={t} at={A("let it rest 10 minutes")} out={380.4} secs={10} label="REST 10 MIN" />);
     N("160", A("Ground beef has to reach"), "160°F", 384.1, { sub: "IN THE MIDDLE", col: "#ff8a5a", edge: "#5a1508", y: 330 });
@@ -167,7 +168,7 @@ const V = makeVideo({
     W("same", A("in that same pot"), "SAME POT: BUTTER · FLOUR · BROTH", 478.7, { y: 170, size: 70 });
     OVEN("o2", A("bake it 15 minutes at 350"), "350°F", 503.0);
     W("15", A("until the crumbs are gold"), "15 MIN · CRUMBS GOLD", 503.0, { y: 900 });
-    L.push(<Versus key="fix2" t={t} at={A("A splash more milk")} out={511.6} title="SAUCE NOT RIGHT?" L={{ label: "TOO THICK", val: "+ MILK", h: 0.7, col: "#8fd6ff", mark: "ok" }} R={{ label: "TOO THIN", val: "+1 MIN", h: 0.7, col: COL.amber, mark: "ok" }} />);
+    L.push(<VersusS key="fix2" t={t} at={A("A splash more milk")} out={511.6} title="SAUCE NOT RIGHT?" L={{ label: "TOO THICK", val: "+ MILK", h: 0.7, col: "#8fd6ff", mark: "ok" }} R={{ label: "TOO THIN", val: "+1 MIN", h: 0.7, col: COL.amber, mark: "ok" }} />);
     W("ruin", A("You can't really ruin"), "YOU CAN'T REALLY RUIN THIS ONE", 519.0, { y: 170, size: 74 });
     L.push(<Stamp key="frz2" t={t} at={A("Freeze half before you bake")} text="FREEZE HALF · UNBAKED" x={960} y={340} rot={-4} size={90} out={535.0} />);
     W("best", A("this one reheats the best"), "REHEATS THE BEST", 539.0, { col: COL.amber });
@@ -178,11 +179,11 @@ const V = makeVideo({
     SUP(3, "TUNA NOODLE FOR ONE", 22, A("Supper number three"), 579.0, 691.0);
     ING("i3", "YOU'LL NEED", [[A("One small can of tuna"), "1 SMALL CAN TUNA"], [A("One cup of egg noodles"), "1 CUP EGG NOODLES"], [A("Half a cup of frozen peas"), "½ CUP FROZEN PEAS"], [A("One cup of white sauce"), "1 CUP WHITE SAUCE"], [A("a quarter cup of shredded cheddar"), "¼ CUP CHEDDAR"], [A("crushed crackers for the top"), "2 TBSP CRUSHED CRACKERS"]], 606.5);
     OVEN("o3", A("Oven at 375"), "375°F", 612.0);
-    L.push(<Versus key="pz" t={t} at={A("don't thaw the peas")} out={620.6} title="THE PEAS" L={{ label: "THAWED", val: "DULL", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "FROZEN", val: "GREEN · POP", h: 0.9, col: "#9df0b4", mark: "ok" }} />);
+    L.push(<VersusS key="pz" t={t} at={A("don't thaw the peas")} out={620.6} title="THE PEAS" L={{ label: "THAWED", val: "DULL", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "FROZEN", val: "GREEN · POP", h: 0.9, col: "#9df0b4", mark: "ok" }} />);
     W("brk", A("the broken ones at the bottom"), "THE BROKEN ONES AT THE BOTTOM", 638.8, { y: 170, size: 70 });
     N("20m3", A("20 minutes until it's bubbling"), "20 MIN", 643.2, { sub: "UNTIL IT BUBBLES", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 200 });
     W("lem", A("One teaspoon of lemon juice"), "1 TSP LEMON JUICE IN THE SAUCE", 654.2, { col: COL.amber, size: 74 });
-    L.push(<Versus key="fd3" t={t} at={A("$1.70 for two plates")} out={667.8} title="TONIGHT" L={{ label: "TUNA NOODLE · 2 PLATES", val: "$1.70", h: 0.35, col: "#9df0b4", mark: "ok" }} R={{ label: "ONE FROZEN DINNER", val: "MORE", h: 0.8, col: COL.red, mark: "x" }} />);
+    L.push(<VersusS key="fd3" t={t} at={A("$1.70 for two plates")} out={667.8} title="TONIGHT" L={{ label: "TUNA NOODLE · 2 PLATES", val: "$1.70", h: 0.35, col: "#9df0b4", mark: "ok" }} R={{ label: "ONE FROZEN DINNER", val: "MORE", h: 0.8, col: COL.red, mark: "x" }} />);
     W("3d", A("it keeps three days"), "KEEPS 3 DAYS IN THE FRIDGE", 672.0, { y: 170 });
     W("spn", A("A spoon of milk"), "A SPOON OF MILK · CREAMY AGAIN", 681.0, { y: 900, size: 72 });
 
@@ -199,11 +200,11 @@ const V = makeVideo({
 
     // ===== las cuentas · p.4 =====
     W("arith", A("it does arithmetic"), "THIS HOUSE DOES ARITHMETIC", 810.0, { y: 170 });
-    L.push(<Versus key="v4a" t={t} at={A("A frozen meat loaf dinner")} out={821.7} title="MEATLOAF · PAGE 4" L={{ label: "FROZEN · 1 TRAY", val: "$3.50–4.50", h: 0.85, col: COL.red, mark: "x" }} R={{ label: "MY LOAF PAN · 2 PLATES", val: "$2.40", h: 0.45, col: "#9df0b4", mark: "ok" }} />);
-    L.push(<Versus key="v4b" t={t} at={A("Frozen chicken and noodles")} out={828.5} title="CHICKEN AND NOODLES" L={{ label: "FROZEN", val: "$3–4", h: 0.8, col: COL.red, mark: "x" }} R={{ label: "MINE · 2 PLATES", val: "$1.60", h: 0.35, col: "#9df0b4", mark: "ok" }} />);
-    L.push(<Versus key="v4c" t={t} at={A("Seven suppers a week")} out={843.0} title="ONE WEEK · 7 SUPPERS" L={{ label: "FROZEN DINNERS", val: "$25–35", h: 0.9, col: COL.red, mark: "x" }} R={{ label: "THIS BOOK", val: "$15–18", h: 0.5, col: "#9df0b4", mark: "ok" }} />);
+    L.push(<VersusS key="v4a" t={t} at={A("A frozen meat loaf dinner")} out={821.7} title="MEATLOAF · PAGE 4" L={{ label: "FROZEN · 1 TRAY", val: "$3.50–4.50", h: 0.85, col: COL.red, mark: "x" }} R={{ label: "MY LOAF PAN · 2 PLATES", val: "$2.40", h: 0.45, col: "#9df0b4", mark: "ok" }} />);
+    L.push(<VersusS key="v4b" t={t} at={A("Frozen chicken and noodles")} out={828.5} title="CHICKEN AND NOODLES" L={{ label: "FROZEN", val: "$3–4", h: 0.8, col: COL.red, mark: "x" }} R={{ label: "MINE · 2 PLATES", val: "$1.60", h: 0.35, col: "#9df0b4", mark: "ok" }} />);
+    L.push(<VersusS key="v4c" t={t} at={A("Seven suppers a week")} out={839.4} title="ONE WEEK · 7 SUPPERS" L={{ label: "FROZEN DINNERS", val: "$25–35", h: 0.9, col: COL.red, mark: "x" }} R={{ label: "THIS BOOK", val: "$15–18", h: 0.5, col: "#9df0b4", mark: "ok" }} />);
     N("500", A("more than $500"), "$500+", 846.0, { sub: "A YEAR", col: "#9df0b4", edge: "#14401f", y: 330 });
-    L.push(<Versus key="v4d" t={t} at={A("Chicken and potatoes from the drive-thru")} out={854.0} title="CHICKEN AND POTATOES" L={{ label: "DRIVE-THRU", val: "$9–11", h: 0.95, col: COL.red, mark: "x" }} R={{ label: "MINE", val: "$2.10", h: 0.25, col: "#9df0b4", mark: "ok" }} />);
+    L.push(<VersusS key="v4d" t={t} at={A("Chicken and potatoes from the drive-thru")} out={854.0} title="CHICKEN AND POTATOES" L={{ label: "DRIVE-THRU", val: "$9–11", h: 0.95, col: COL.red, mark: "x" }} R={{ label: "MINE", val: "$2.10", h: 0.25, col: "#9df0b4", mark: "ok" }} />);
     W("15wk", A("$15 a week"), "$10–15 A WEEK · EVERY WEEK", 862.0, { y: 170, col: "#9df0b4" });
     L.push(<BookCTA key="cta2" t={t} at={A("The whole book")} out={869.6} sub="+ 4 MORE BOOKS · LINK IN THE 1ST LINE OF THE DESCRIPTION" />);
 
@@ -213,7 +214,7 @@ const V = makeVideo({
     OVEN("o5", A("Oven at 375", 895), "375°F", 903.6);
     W("rows", A("up in rows"), "STAND THEM UP · IN ROWS", 919.0, { col: COL.amber });
     W("lid", A("the tots are the lid"), "THE TOTS ARE THE LID", 935.0, { y: 170 });
-    L.push(<Versus key="pile" t={t} at={A("If you pile them on")} out={945.0} title="15 TOTS, ONE LAYER" L={{ label: "PILED ON", val: "SOGGY · BURNT", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "ONE LAYER, STANDING", val: "CRISP", h: 0.9, col: COL.amber, mark: "ok" }} />);
+    L.push(<VersusS key="pile" t={t} at={A("If you pile them on")} out={945.0} title="15 TOTS, ONE LAYER" L={{ label: "PILED ON", val: "SOGGY · BURNT", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "ONE LAYER, STANDING", val: "CRISP", h: 0.9, col: COL.amber, mark: "ok" }} />);
     W("drain", A("drain that beef"), "DRAIN THE BEEF", 951.6, { y: 170, col: COL.red });
     N("30m", A("30 minutes and"), "30 MIN", 956.5, { sub: "CHEESE THE LAST 5", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 200 });
     PRICE("p5", A("$2.10, two plates"), "$2.10", "TWO PLATES", 966.0);
@@ -224,9 +225,9 @@ const V = makeVideo({
     W("none", A("none of the stuffing"), "NONE OF THE STUFFING", 1010.0, { y: 170 });
     ING("i6", "YOU'LL NEED", [[A("1 quarter pound of ground beef"), "¼ LB GROUND BEEF"], [A("1 bell pepper"), "1 BELL PEPPER, CHOPPED"], [A("1 half cup of cooked rice"), "½ CUP COOKED RICE"], [A("1 half cup of canned"), "½ CUP DICED TOMATOES"], [A("1 quarter cup of shredded cheese"), "¼ CUP SHREDDED CHEESE"]], 1027.0);
     OVEN("o6", A("Oven at 375", 1025), "375°F", 1034.4);
-    N("20m6", A("15 to 20 minutes in the oven"), "15–20 MIN", 1045.0, { sub: "UNTIL THE EDGES SIZZLE", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 180 });
+    N("20m6", A("15 to 20 minutes in the oven"), "15–20 MIN", 1045.0, { sub: "UNTIL THE EDGES SIZZLE", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 120, x: 420 });
     W("frzp", A("freeze them flat in a bag"), "ON SALE? CHOP · FREEZE FLAT", 1056.4, { y: 170, size: 74 });
-    L.push(<Versus key="pep" t={t} at={A("Green peppers are the cheapest")} out={1066.0} title="PEPPERS" L={{ label: "GREEN", val: "CHEAPEST", h: 0.5, col: "#9df0b4", mark: "ok" }} R={{ label: "RED · YELLOW", val: "SWEETER", h: 0.7, col: COL.amber, mark: "ok" }} />);
+    L.push(<VersusS key="pep" t={t} at={A("Green peppers are the cheapest")} out={1066.0} title="PEPPERS" L={{ label: "GREEN", val: "CHEAPEST", h: 0.5, col: "#9df0b4", mark: "ok" }} R={{ label: "RED · YELLOW", val: "SWEETER", h: 0.7, col: COL.amber, mark: "ok" }} />);
     W("rice", A("I freeze it flat in a bag"), "RICE: 1-CUP BAGS IN THE FREEZER", 1078.0, { y: 170, size: 70 });
     PRICE("p6", A("Two dollars and twenty cents"), "$2.20", "TWO PLATES", 1082.0);
     ING("rc", "RICE · PAGE 114", [[A("One cup of rice"), "1 CUP RICE"], [A("one and three quarter cups"), "1¾ CUPS WATER"], [A("a half teaspoon of salt"), "½ TSP SALT · 1 TSP BUTTER"], [A("turn it to low"), "LOW · 18 MIN · LID ON"]], 1104.0);
@@ -238,7 +239,7 @@ const V = makeVideo({
     OVEN("o7", A("oven at 375", 1140), "375°F", 1159.0);
     W("2min", A("two minutes less than the box"), "PASTA: 2 MINUTES LESS", 1159.0, { col: COL.amber });
     W("grease", A("grease that loaf pan"), "GREASE THE LOAF PAN · CORNERS", 1192.8, { y: 170, size: 70 });
-    L.push(<Versus key="rk" t={t} at={A("cottage cheese works just as well")} out={1210.0} title="LET THEM ARGUE" L={{ label: "RICOTTA", val: "MORE $", h: 0.75, col: COL.red, mark: "x" }} R={{ label: "COTTAGE CHEESE", val: "JUST AS GOOD", h: 0.75, col: "#9df0b4", mark: "ok" }} />);
+    L.push(<VersusS key="rk" t={t} at={A("cottage cheese works just as well")} out={1210.0} title="LET THEM ARGUE" L={{ label: "RICOTTA", val: "MORE $", h: 0.75, col: COL.red, mark: "x" }} R={{ label: "COTTAGE CHEESE", val: "JUST AS GOOD", h: 0.75, col: "#9df0b4", mark: "ok" }} />);
     PRICE("p7", A("a dollar fifty a plate"), "$1.50", "A PLATE", 1216.0);
     ING("gb", "ROASTED GREEN BEANS · PAGE 141", [[A("a big handful of green beans"), "A BIG HANDFUL"], [A("a teaspoon of oil"), "1 TSP OIL · SALT · PEPPER"], [A("a pinch of garlic"), "PINCH OF GARLIC POWDER"], [A("in a hot oven 12"), "HOT OVEN · 12–15 MIN"]], 1248.0);
     N("50c", A("50 cents"), "50¢", 1251.6, { sub: "THE GREEN BEANS", col: "#9df0b4", edge: "#14401f", y: 330, size: 200 });
@@ -248,9 +249,9 @@ const V = makeVideo({
     W("20f", A("20 minutes from the freezer bag"), "20 MIN · FREEZER BAG TO PLATE", 1272.1, { y: 170, size: 70 });
     ING("i8", "YOU'LL NEED", [[A("One cod or haddock"), "1 COD OR HADDOCK FILLET"], [A("two tablespoons of crushed crackers", 1272), "2 TBSP CRUSHED CRACKERS"], [A("one tablespoon of melted butter"), "1 TBSP MELTED BUTTER"], [A("a pinch of paprika"), "PAPRIKA · PARSLEY"], [A("and a lemon"), "A LEMON"]], 1288.4);
     OVEN("o8", A("Oven at 400", 1280), "400°F", 1296.0);
-    N("12m", A("12 to 15 minutes"), "12–15 MIN", 1305.7, { sub: "UNTIL IT FLAKES", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 180 });
+    N("12m", A("12 to 15 minutes", 1290), "12–15 MIN", 1305.7, { sub: "UNTIL IT FLAKES", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 120, x: 420 });
     N("145", A("is done at 145"), "145°F", 1312.0, { sub: "FISH IS DONE", col: "#ff8a5a", edge: "#5a1508", y: 330 });
-    L.push(<Versus key="flk" t={t} at={A("If it comes apart in big white flakes")} out={1329.0} title="THE FORK TEST" L={{ label: "BIG WHITE FLAKES", val: "DONE", h: 0.85, col: "#9df0b4", mark: "ok" }} R={{ label: "SHINY · HOLDS", val: "+2 MIN", h: 0.5, col: COL.amber, mark: "x" }} />);
+    L.push(<VersusS key="flk" t={t} at={A("If it comes apart in big white flakes")} out={1329.0} title="THE FORK TEST" L={{ label: "BIG WHITE FLAKES", val: "DONE", h: 0.85, col: "#9df0b4", mark: "ok" }} R={{ label: "SHINY · HOLDS", val: "+2 MIN", h: 0.5, col: COL.amber, mark: "x" }} />);
     W("chk", A("start checking at 12 minutes"), "START CHECKING AT 12", 1334.0, { y: 170, col: COL.amber });
     W("pat", A("pat it dry"), "THAW OVERNIGHT · PAT DRY", 1343.0, { y: 900 });
     PRICE("p8", A("$2.20, and it tastes"), "$2.20", "ONE PLATE", 1347.7);
@@ -263,8 +264,8 @@ const V = makeVideo({
     L.push(<Mistake key="mk9" t={t} at={A("because this is the mistake")} n={1} txt="COLD FILLING UNDER THE BISCUIT" out={1413.0} />);
     W("raw", A("raw dough, gummy"), "THE BOTTOM: RAW DOUGH", 1413.0, { y: 170, col: COL.red });
     L.push(<Stamp key="nv9" t={t} at={A("It was never you", 1400)} text="IT WAS NEVER YOU" x={960} y={360} rot={-4} size={100} out={1417.2} />);
-    L.push(<Versus key="hot" t={t} at={A("The filling has to be hot")} out={1430.0} title="THE FIX" L={{ label: "COLD FILLING", val: "GUMMY", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "HOT FILLING FIRST", val: "COOKED THROUGH", h: 0.9, col: COL.amber, mark: "ok" }} />);
-    N("15m9", A("15 to 18 minutes"), "15–18 MIN", 1435.0, { sub: "HEAT FROM UNDERNEATH", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 180 });
+    L.push(<VersusS key="hot" t={t} at={A("The filling has to be hot")} out={1430.0} title="THE FIX" L={{ label: "COLD FILLING", val: "GUMMY", h: 0.4, col: COL.red, mark: "x" }} R={{ label: "HOT FILLING FIRST", val: "COOKED THROUGH", h: 0.9, col: COL.amber, mark: "ok" }} />);
+    N("15m9", A("15 to 18 minutes"), "15–18 MIN", 1435.0, { sub: "HEAT FROM UNDERNEATH", col: "#ffb35a", edge: "#5a1e08", y: 330, size: 120, x: 420 });
     PRICE("p9", A("Two", 1462), "$2.30", "ONE PLATE · JUST FOR YOU", 1468.0);
     W("8pp", A("one tube of biscuits is eight"), "1 TUBE = 8 POT PIES", 1482.2, { y: 170, col: COL.amber });
     W("any", A("any cooked chicken works"), "ANY COOKED CHICKEN · OR GRAVY", 1494.0, { y: 900 });
@@ -282,7 +283,7 @@ const V = makeVideo({
 
     // ===== el freezer, la mesa, el cierre =====
     N("10", A("So that's ten"), "10", 1604.0, { sub: "SUPPERS", y: 340 });
-    L.push(<Versus key="mk2" t={t} at={A("Make two at once")} out={1614.0} title="PAGE 19 · MAKE TWO" L={{ label: "BAKE ONE", val: "TONIGHT", h: 0.8, col: COL.amber, mark: "ok" }} R={{ label: "FREEZE ONE", val: "FOIL · UNBAKED", h: 0.8, col: "#8fd6ff", mark: "ok" }} />);
+    L.push(<VersusS key="mk2" t={t} at={A("Make two at once")} out={1614.0} title="PAGE 19 · MAKE TWO" L={{ label: "BAKE ONE", val: "TONIGHT", h: 0.8, col: COL.amber, mark: "ok" }} R={{ label: "FREEZE ONE", val: "FOIL · UNBAKED", h: 0.8, col: "#8fd6ff", mark: "ok" }} />);
     W("name", A("A bag with no name"), "A BAG WITH NO NAME = THROWN AWAY", 1622.0, { y: 170, size: 70, col: COL.red });
     L.push(<Chips key="frz" t={t} at={A("you bake it straight from frozen")} items={["COVERED · 350°F", "ABOUT TWICE AS LONG", "FOIL OFF · LAST 15 MIN"]} out={1633.7} y={860} />);
     N("6s", A("six suppers sitting"), "3 → 6", 1645.0, { sub: "ONE SUNDAY · SIX SUPPERS", y: 340 });
@@ -300,7 +301,7 @@ const V = makeVideo({
     W("one", A("I only want you to try one"), "THIS WEEK · TRY JUST ONE", 1733.0, { y: 170 });
     W("hd", A("a casserole and not a hot dish"), "CASSEROLE OR HOT DISH? · COMMENTS", 1745.4, { y: 170, size: 66 });
     L.push(<BookCTA key="cta3" t={t} at={A("Supper for one is in the first line")} out={1753.0} sub="140 SUPPERS · LINK IN THE 1ST LINE OF THE DESCRIPTION" />);
-    L.push(<NextCard key="nc" t={t} at={A("And next time")} subAt={A("One trip to the store")} out={1766.0} title="ONE TRIP · 14 SUPPERS · ABOUT $84"><AbsoluteFill style={{ background: "#efe7d6", alignItems: "center", justifyContent: "center" }}><Img src={staticFile("lcf01/book_p162.jpg")} style={{ height: "100%", objectFit: "contain" }} /></AbsoluteFill></NextCard>);
+    L.push(<AbsoluteFill key="ncw" style={{ transform: "scale(0.84)", transformOrigin: "1900px 150px" }}><NextCard key="nc" t={t} at={A("And next time")} subAt={A("One trip to the store")} out={1766.0} title="ONE TRIP · 14 SUPPERS · ABOUT $84"><AbsoluteFill style={{ background: "#efe7d6", alignItems: "center", justifyContent: "center" }}><Img src={staticFile("lcf01/book_p162.jpg")} style={{ height: "100%", objectFit: "contain" }} /></AbsoluteFill></NextCard></AbsoluteFill>);
     L.push(<LowerThird key="lt" t={t} at={A("Now go turn that oven on") - 0.3} out={TEND - 0.6} name="LORETTA" l2="THAT'S SUPPER, HONEY" l2at={A("That's supper, honey")} />);
     return L;
   },
