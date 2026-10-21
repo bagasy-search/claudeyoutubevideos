@@ -254,7 +254,7 @@ P(W(25).me, world, wpt(PT.phone));                                      // g26 �
 P(T.giveaway - 0.2, ph("giftcards", T.giveaway - 0.2, 0.5));
 AV(26);
 P(W(26).me, comp());                                                    // g27 · las 4 formas de pagar → cortar a la mitad
-P(T.midsent - 0.2, ph("slam", T.midsent - 0.2));
+P(W(27).ms - 3.0, ph("slam", W(27).ms - 3.0));       // antes del avatar: si arranca después lo tapa entero
 AV(27);
 P(W(27).me, world, wpt(padPt(5)));                                      // g28 · #6 la orden de arresto
 P(T.pretend + 0.8, ph("oldphoto", T.pretend + 0.8));
@@ -284,7 +284,7 @@ P(W(35).me, world, wpt(padPt(8)));                                      // g36 �
 P(T.won + 2.6, ph("prize", T.won + 2.6, 0.55));
 AV(36);
 P(W(36).me, comp());                                                    // g37 · pagar para ganar → la lista
-P(T.ugly - 0.2, ph("list", T.ugly - 0.2, 0.55));
+P(W(37).ms - 3.0, ph("list", W(37).ms - 3.0, 0.55));  // antes del avatar
 AV(37);
 P(W(37).me, world, wpt(padPt(9)));                                      // g38 · #10 el pedido que no hiciste
 AV(38);
