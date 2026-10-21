@@ -521,12 +521,12 @@ export const World: React.FC<WorldProps> = (pr) => {
       </group>
       {Array.from({ length: 36 }, (_, i) => <mesh key={"v" + i} position={[-4.4 - i * 0.32, 0.55, -4.6]} castShadow><cylinderGeometry args={[0.025, 0.03, 1.1 + rnd(i, 1) * 0.3, 5]} /><meshStandardMaterial color="#6b5236" roughness={1} /></mesh>)}
       {/* farolitos de papel en cuerdas cruzadas */}
-      {[[[-4.0, 2.75, -2.6], [-11.5, 2.9, 1.6]], [[-4.0, 2.75, 1.4], [-11.5, 2.9, -2.8]], [[-4.0, 2.85, -0.6], [-12, 3.0, -0.4]]].map(([a, b], j) => {
+      {night > 0.5 && [[[-4.0, 2.75, -2.6], [-11.5, 2.9, 1.6]], [[-4.0, 2.75, 1.4], [-11.5, 2.9, -2.8]], [[-4.0, 2.85, -0.6], [-12, 3.0, -0.4]]].map(([a, b], j) => {
         const A = v3(a), B = v3(b); const n = 9;
         return <group key={"cu" + j}>{Array.from({ length: n }, (_, i) => { const k = (i + 0.5) / n, q = A.clone().lerp(B, k); q.y -= Math.sin(k * Math.PI) * 0.3; return <Farol key={i} p={[q.x, q.y, q.z]} tex={tx.china[(i + j * 2) % 6]} on={posada * (i % 2 || j ? 1 : 0.85)} t={t} i={i + j * 9} />; })}</group>;
       })}
       {posada > 0.05 && [[-6, 2.5, -0.6], [-9, 2.6, -0.5]].map((q, i) => <pointLight key={"pl" + i} position={q as V} intensity={6 * posada} distance={9} decay={1.5} color="#ffb070" />)}
-      <Pinata p={PT.pinata} t={t} />
+      {night > 0.5 && <Pinata p={PT.pinata} t={t} />}
       {/* mesita de la posada con el ponche */}
       <group position={[-8.2, 0, 1.3]}>
         <Box p={[0, 0.74, 0]} s={[1.6, 0.05, 0.7]} c="#f0e8da" r={0.95} rad={0.01} />
