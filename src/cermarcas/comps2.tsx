@@ -79,14 +79,14 @@ export const PhoneCam: React.FC<{ t: number; at: number; snap: number; out: numb
 };
 
 // la regla de alturas: dónde miras tú (1,60 m) y dónde está el plástico (0,50 m)
-export const AlturaRegla: React.FC<{ t: number; at: number; at2: number; out: number; x?: number }> = ({ t, at, at2, out, x = 1500 }) => {
+export const AlturaRegla: React.FC<{ t: number; at: number; at2: number; out: number; x?: number }> = ({ t, at, at2, out, x = 1380 }) => {
   const { k, o } = pop(t, at, out, 0.8);
   if (o <= 0.01) return null;
   const top = 160, bot = 960, Y = (m: number) => bot - (bot - top) * m / 2.0;
   const a2 = e(t, at2, at2 + 0.4);
   return (
     <div style={{ position: "absolute", inset: 0, opacity: o, transform: `translateX(${(1 - Math.min(1, k)) * 300}px)` }}>
-      <div style={{ ...CARD, position: "absolute", left: x - 40, top: top - 60, width: 380, height: bot - top + 120 }} />
+      <div style={{ ...CARD, position: "absolute", left: x - 40, top: top - 60, width: 480, height: bot - top + 120 }} />
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
         <line x1={x + 40} y1={top} x2={x + 40} y2={bot} stroke="#e8e0cc" strokeWidth={8} />
         {Array.from({ length: 21 }, (_, i) => <line key={i} x1={x + 40} y1={Y(i * 0.1)} x2={x + 40 + (i % 5 === 0 ? 46 : 22)} y2={Y(i * 0.1)} stroke="#e8e0cc" strokeWidth={i % 5 === 0 ? 5 : 3} />)}
