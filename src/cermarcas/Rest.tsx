@@ -690,7 +690,7 @@ export const Rest: React.FC<{ t: number }> = ({ t }) => {
   if (at(836.79, 849.22)) {
     if (t >= 843.14) L.push(<Avatar key="a843" t={t} />);
     L.push(<Comentarios key="cmt" t={t} out={849.0} x={t >= 843.14 ? 1180 : 1120} items={[{ at: 841.4, who: "marta_62", tx: "¡Un papel doblado! 😱" }, { at: 842.4, who: "jorge.r", tx: "Una cinta en la cerradura" }, { at: 843.2, who: "nelly.b", tx: "Una marca en el buzón…" }]} />);
-    if (t >= 843.14) L.push(<BigNum key="lt" t={t} at={844.6} text="LOS LEO TODOS ❤️" size={64} x={620} y={180} out={849.0} col="#fff3d6" edge="#3a1a00" />);
+    if (t >= 843.14) L.push(<BigNum key="lt" t={t} at={844.6} text="LOS LEO TODOS ❤️" size={64} x={1570} y={640} out={849.0} col="#fff3d6" edge="#3a1a00" />);
   }
   if (at(849.22, 855.8)) {
     L.push(<Shot key="per" k="c_perro" t={t} a={849.22} z={[1.03, 1.12]} ox={-30} dur={7} />);
