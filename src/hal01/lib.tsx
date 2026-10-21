@@ -53,6 +53,9 @@ export const Tag: React.FC<{ t: number; at: number; x: number; y: number; dx?: n
   if (o <= 0.01) return null;
   const L = e(t, at, at + 0.3);
   const ex = x + dx * L, ey = y + dy * L;
+  // si el texto se sale del cuadro, se pone del otro lado del punto (nunca cortado en el borde)
+  const wEst = Math.max(text.length, (sub || "").length * 0.5) * size * 0.68;
+  const R = dx >= 0 ? ex + 14 + wEst <= 1880 : ex - 14 - wEst < 40;
   return (
     <div style={{ position: "absolute", inset: 0, opacity: o, pointerEvents: "none" }}>
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
@@ -60,7 +63,7 @@ export const Tag: React.FC<{ t: number; at: number; x: number; y: number; dx?: n
         <circle cx={x} cy={y} r={8 * k} fill={col} style={{ filter: `drop-shadow(0 0 10px ${col})` }} />
         <circle cx={x} cy={y} r={18 + 26 * e(t, at, at + 0.6)} fill="none" stroke={col} strokeWidth={2} opacity={1 - e(t, at, at + 0.6)} />
       </svg>
-      <div style={{ position: "absolute", left: ex + (dx >= 0 ? 14 : -14), top: ey, transform: `translate(${dx >= 0 ? 0 : -100}%, -50%) perspective(900px) rotateY(${(1 - Math.min(1, k)) * (dx >= 0 ? 50 : -50)}deg) scale(${0.6 + 0.4 * k})`, transformOrigin: dx >= 0 ? "0 50%" : "100% 50%", fontFamily: FONT, whiteSpace: "nowrap" }}>
+      <div style={{ position: "absolute", left: ex + (R ? 14 : -14), top: ey, transform: `translate(${R ? 0 : -100}%, -50%) perspective(900px) rotateY(${(1 - Math.min(1, k)) * (R ? 50 : -50)}deg) scale(${0.6 + 0.4 * k})`, transformOrigin: R ? "0 50%" : "100% 50%", textAlign: R ? "left" : "right", fontFamily: FONT, whiteSpace: "nowrap" }}>
         <div style={{ fontWeight: 900, fontSize: size, color: col, letterSpacing: 2, textShadow: extrude(6, "rgba(0,0,0,.55)") }}>{text}</div>
         {sub && <div style={{ fontWeight: 800, fontSize: size * 0.5, color: COL.dim, letterSpacing: 3, marginTop: 2, textShadow: "0 2px 10px #000" }}>{sub}</div>}
       </div>
