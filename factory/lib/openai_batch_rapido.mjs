@@ -34,7 +34,7 @@ export async function sincronico(items, outDir, { conc = +(process.env.OPENAI_SY
   const cache = new Map();
   const uno = async (it) => {
     const refs = it.ref ? [].concat(it.ref) : [];
-    const body = { model: MODEL, prompt: it.prompt, size: SIZE, quality: QUALITY, n: 1 };
+    const body = { model: MODEL, prompt: it.prompt, size: it.size || SIZE, quality: QUALITY, n: 1 };
     if (refs.length) body.images = refs.map((r) => { if (!cache.has(r)) cache.set(r, dataUri(r)); return { image_url: cache.get(r) }; });
     const url = "https://api.openai.com/v1/images/" + (refs.length ? "edits" : "generations");
     let error = "";

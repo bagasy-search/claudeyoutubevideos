@@ -9,6 +9,7 @@
 //   node scripts/gptimg.mjs <items.json> <outDir> --ya       YA, sincrónico (fotos de los CLIPS: no esperan la cola)
 //
 // items.json = [{ "name": "m012", "prompt": "…", "ref": "public/ref_<slug>_face.png" }, …]
+//   · "size" opcional POR ÍTEM (ej. "1024x1536" para portadas de guías, 21-oct); sin él = 1088x608
 //   · con `ref` → /v1/images/edits  (planos del presentador)            $0,00207
 //   · sin `ref` → /v1/images/generations (objetos, escenas, otra gente)  $0,00169
 //   Se arman batches SEPARADOS por endpoint (la API no deja mezclarlos) y se mandan juntos.

@@ -47,7 +47,7 @@ export async function submitBatch({ items, outDir, size = "1088x608", quality = 
   await esperarCupo(pend.length); // turno: la cola Batch es UNA por cuenta (13-oct, ver openai_cupo.mjs)
   const cache = new Map();
   const lines = pend.map((it) => {
-    const body = { model, prompt: it.prompt, size, quality, n: 1 };
+    const body = { model, prompt: it.prompt, size: it.size || size, quality, n: 1 }; // it.size opcional (ej. "1024x1536" portadas); default igual
     if (it.ref) {
       const refs = [].concat(it.ref);
       for (const r of refs) { if (!fs.existsSync(r)) throw new Error(`ref inexistente ${r} (${it.name})`); if (!cache.has(r)) cache.set(r, dataUri(r)); }
