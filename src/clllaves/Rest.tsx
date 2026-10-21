@@ -55,7 +55,7 @@ const D = 0.36;
 const Trans: React.FC<{ t: number; s: Seg; from: React.ReactNode; to: React.ReactNode; fromWorld: boolean }> = ({ t, s, from, to, fromWorld }) => {
   const k = ei(t, s.a, s.a + D), tr = s.tr ?? "fade";
   const noBlur = fromWorld || !!s.world;
-  const mb = noBlur ? 0 : Math.sin(k * Math.PI) * 30;
+  const mb = noBlur ? 0 : 0; // sin desenfoque en ninguna transición: el avatar va nítido (orden del creador 21-oct)
   const L = (n: React.ReactNode, st: React.CSSProperties, key: string) => <AbsoluteFill key={key} style={{ ...st, filter: mb > 1 ? `blur(${mb}px)` : undefined }}>{n}</AbsoluteFill>;
   if (tr === "swipeL" || tr === "swipeR" || tr === "up" || tr === "down") {
     const dir = tr === "swipeL" || tr === "up" ? 1 : -1, ax = tr === "up" || tr === "down" ? "Y" : "X", DD = ax === "Y" ? 1080 : 1920;

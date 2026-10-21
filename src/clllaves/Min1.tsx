@@ -53,7 +53,7 @@ export const Shot: React.FC<{ k: string; t: number; a: number; z?: [number, numb
 };
 // barrido lateral con desenfoque de movimiento entre dos capas (dir 1 = la nueva entra por la derecha)
 const Swipe: React.FC<{ t: number; a: number; b: number; from: React.ReactNode; to: React.ReactNode; dir?: number; vert?: boolean }> = ({ t, a, b, from, to, dir = 1, vert }) => {
-  const k = ei(t, a, b), mb = Math.sin(k * Math.PI) * 36, ax = vert ? "Y" : "X", D = vert ? 1080 : 1920;
+  const k = ei(t, a, b), mb = 0, /* sin desenfoque: el avatar va nítido (orden del creador 21-oct) */ ax = vert ? "Y" : "X", D = vert ? 1080 : 1920;
   return (
     <AbsoluteFill>
       {k < 1 && <AbsoluteFill style={{ transform: `translate${ax}(${-dir * k * D}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}>{from}</AbsoluteFill>}
@@ -216,7 +216,7 @@ export const Min1: React.FC = () => {
 
   // ===== A · 0-4,2 · avatar "el chorro sale torcido"; portal desde el lavamanos al baño 3D =====
   if (t < 4.25) {
-    L.push(<Avatar key="avA" t={t} blur={4 * e(t, 3.4, 4.0)} />);
+    L.push(<Avatar key="avA" t={t} />);
     const r = ei(t, 3.5, 4.2);
     if (r > 0) L.push(<Portal key="pA" x={1250} y={760} r={r}><World t={Math.max(3.4, t)} /></Portal>);
     L.push(<Tag key="tor" t={t} at={3.22} x={1250} y={760} dx={-240} dy={-200} text="TORCIDO" col={COL.amber} out={4.6} size={56} />);
@@ -311,7 +311,7 @@ export const Min1: React.FC = () => {
   // ===== N · 50,4-56,1 · avatar "si el dedo salía blanco… no se entregaba" =====
   if (t >= 50.75 && t < 56.4) {
     const z = ei(t, 55.9, 56.35);
-    L.push(<AbsoluteFill key="avN" style={{ transform: `scale(${1 + z * 0.6})`, filter: z > 0.05 ? `blur(${z * 20}px)` : undefined, opacity: 1 - z * 0.7 }}><Avatar t={t} /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avN" style={{ transform: `scale(${1 + z * 0.6})`, opacity: 1 - z * 0.7 }}><Avatar t={t} /></AbsoluteFill>);
     if (z > 0.3) L.push(<AbsoluteFill key="wN" style={{ opacity: (z - 0.3) / 0.7 }}><World t={56.1} /></AbsoluteFill>);
   }
   if (t >= 45.9 && t < 54.6) L.push(<Libreta key="lib" t={t} at={45.96} out={54.2} stampAt={52.58} rows={[{ at: 48.64, tx: "101", ok: true }, { at: 49.34, tx: "102", ok: true }, { at: 49.8, tx: "103", ok: true }, { at: 51.42, tx: "104", ok: false }]} />);
