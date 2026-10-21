@@ -32,10 +32,12 @@ const at = (phrase: string, after = 0): number => {
 };
 
 // ---------- tomas: mp4 de agnes si llegó; si no la foto con movimiento 2.5D ----------
-const HAS = AVAIL as { clips: string[]; reel: boolean };
+const HAS = AVAIL as { clips: string[]; reel: boolean; dur?: Record<string, number> };
 const Clip: React.FC<{ k: string; a: number; z?: [number, number]; dur?: number; pan?: number }> = ({ k, a, z = [1.04, 1.13], dur = 7, pan = 0 }) => {
   const t = useCurrentFrame() / 30, q = e(t, a, a + dur), sc = z[0] + (z[1] - z[0]) * q;
-  const inner = HAS.clips.includes(k) ? <Vid id={"ag_" + k} at={a} /> : <Img src={staticFile(P + k + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
+  // clip agnes (3 s en cámara lenta) ARRIBA de su foto: si el plano dura más que el clip, se funde a la foto y no queda en negro
+  const cd = HAS.dur?.[k] ?? 3, img = <Img src={staticFile(P + k + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
+  const inner = HAS.clips.includes(k) ? <>{img}<Sequence from={s(a)} durationInFrames={s(cd)} layout="none"><AbsoluteFill style={{ opacity: 1 - e(t, a + cd - 0.35, a + cd - 0.05) }}><Vid id={"ag_" + k} /></AbsoluteFill></Sequence></> : img;
   return <AbsoluteFill style={{ transform: `scale(${sc}) translateX(${pan * (q - 0.5)}px)` }}>{inner}</AbsoluteFill>;
 };
 
