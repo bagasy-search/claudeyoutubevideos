@@ -105,7 +105,7 @@ export const SEGS_M01: Seg[] = [
       orbs: [
         { id: "cel", t: T("close to you"), ang: 205, anillo: 1, tam: 150, D: CelularChico, png: "celu" },
         { id: "slot", t: T("slot machine"), ang: 10, anillo: 0, tam: 270, D: Tragamonedas, png: "tragamonedas" },
-        { id: "monedas", t: T("slot machine") + 0.35, ang: 128, anillo: 2, tam: 170, D: MonedasOro, png: "moneda" },
+        { id: "monedas", t: T("slot machine") + 0.35, ang: 128, anillo: 2, tam: 170, D: MonedasOro },
       ],
     },
     Escena: EscenaMin1,
