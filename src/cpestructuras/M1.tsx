@@ -3,11 +3,11 @@
 // y adentro los clips se funden; el desenfoque sale de la velocidad de la cámara; cada video se monta 10 cuadros antes (sin lag);
 // todo viene anclado a la palabra (armar_m1v2.py → m1v2.json). No hay cortes: hay un solo plano que viaja.
 import React from "react";
-import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { FPS, W, H, SANS, MONO, k01, lerp, ease, easeOut, shadow, SAND, GOLD, RED, rnd, spring } from "./lib";
 import { CarveDown, ObeliskScale, TonsRoll, Tag, TitleStone } from "./comps";
 import GEO from "./geo.json";
-import MRaw from "./m1v2.json";
+import MRaw from "./mundo.json";   // = m1v2.json (min 1) + cuerpo (doc_litplan → doc_litmerge)
 
 // densificado (un punto cada ≤0,5°): los bordes rectos de las cajas finas siguen la curva de la proyección igual que
 // el agujero de la máscara → sin franja entre la tierra gruesa y la fina (la "línea" de la caja de China/Egipto/Andes)
@@ -315,6 +315,42 @@ const Route: React.FC<{ c: Cam; t: number; ground?: boolean }> = ({ c, t, ground
     </>
   );
 };
+// ───────── rutas del cuerpo (M.routes, de doc_litplan): tierra = línea arena, mar = punteada celeste; HUD con km o rótulo ─────────
+const Routes: React.FC<{ c: Cam; t: number; ground?: boolean }> = ({ c, t, ground }) => (
+  <>{((M.routes || []) as any[]).filter((r) => t > r.tDraw - 0.1 && t < r.t1 + 1.2).map((r, i) => {
+    const pr = ortho(c), T = tpc(tiltOf(c)), d = easeOut(k01(t, r.tDraw, r.tDraw + r.dDraw)), fo = 1 - k01(t, r.t1, r.t1 + 1.0);
+    const pts: number[][] = r.sea || r.land, sea = !!r.sea, pp = partial(pts, d);
+    const S = (lo: number, la: number) => { const q = pr(lo, la); return T(q.x, q.y); };
+    const A = S(pts[0][0], pts[0][1]), Z = S(pts[pts.length - 1][0], pts[pts.length - 1][1]), hd = S(pp[pp.length - 1][0], pp[pp.length - 1][1]);
+    const llega = d >= 0.999 ? spring(t, r.tDraw + r.dDraw, 10, 0.45) : 0;
+    if (ground) {
+      const ln = pp.map(([lo, la], j) => { const s = S(lo, la); return (j ? "L" : "M") + s.X.toFixed(1) + "," + s.Y.toFixed(1); }).join("");
+      return (
+        <svg key={i} width={W} height={H} style={{ position: "absolute", left: 0, top: 0, opacity: fo }}>
+          {sea ? <path d={ln} fill="none" stroke="#6fc3ff" strokeWidth={5} strokeLinecap="round" strokeDasharray="16 12" />
+            : <><path d={ln} fill="none" stroke={GOLD} strokeWidth={22} opacity={0.14} strokeLinecap="round" strokeLinejoin="round" /><path d={ln} fill="none" stroke={SAND} strokeWidth={5.5} strokeLinecap="round" strokeLinejoin="round" /></>}
+          <circle cx={A.X} cy={A.Y} r={9} fill={SAND} />
+          {d > 0 && d < 1 && <><circle cx={hd.X} cy={hd.Y} r={22} fill={GOLD} opacity={0.22} /><circle cx={hd.X} cy={hd.Y} r={8} fill="#fff" /></>}
+          {llega > 0 && <><circle cx={Z.X} cy={Z.Y} r={26 * llega} fill={RED} opacity={0.25} /><circle cx={Z.X} cy={Z.Y} r={12 * llega} fill={RED} /></>}
+        </svg>
+      );
+    }
+    const hk = k01(t, r.tKm - 0.2, r.tKm + 0.2) * fo, km = r.km ? Math.round(r.km * easeOut(k01(t, r.tKm, r.tKm + 1.2))) : 0;
+    const lab = (P: { X: number; Y: number }, txt: string, o: number, abajo = false) => o > 0 && <div style={{ position: "absolute", left: P.X + 26, top: P.Y + (abajo ? 34 : -22), opacity: o * fo, fontFamily: SANS, fontWeight: 800, fontSize: 34, letterSpacing: 6, color: "#fff", textShadow: shadow, whiteSpace: "nowrap", transform: `translateX(${(1 - o) * -24}px)` }}>{txt}</div>;
+    return (
+      <React.Fragment key={i}>
+        {lab(A, r.from, easeOut(k01(t, r.tDraw - 0.1, r.tDraw + 0.4)))}
+        {lab(Z, r.to, llega, true)}
+        <div style={{ position: "absolute", left: 120, top: 100, opacity: hk, transform: `translateY(${(1 - easeOut(k01(t, r.tKm - 0.2, r.tKm + 0.4))) * 25}px)` }}>
+          <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: 26, letterSpacing: 8, color: SAND, textShadow: shadow }}>{r.kicker}</div>
+          {r.km ? <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 150, lineHeight: 1, color: "#fff", textShadow: shadow, fontVariantNumeric: "tabular-nums" }}>{km.toLocaleString("es-AR")}<span style={{ fontSize: 64, marginLeft: 14 }}>{r.unit}</span></div>
+            : <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 110, lineHeight: 1.05, color: "#fff", textShadow: shadow }}>{r.big}</div>}
+          {r.sub && <div style={{ fontFamily: MONO, fontWeight: 600, fontSize: 30, letterSpacing: 6, color: GOLD, marginTop: 8, textShadow: shadow }}>{r.sub}</div>}
+        </div>
+      </React.Fragment>
+    );
+  })}</>
+);
 // contador de los 7 (sube a medida que el globo los vuelve a encender)
 const Count7: React.FC<{ t: number }> = ({ t }) => {
   if (t < SEVEN.t0 || t > SEVEN.t1 + 0.6) return null;
@@ -351,13 +387,18 @@ const Portal: React.FC<{ p: any; c: Cam; t: number }> = ({ p, c, t }) => {
           const z = lerp(cm[0], cm[3], ke), fx = lerp(cm[1], cm[4], ke), fy = lerp(cm[2], cm[5], ke);
           let body: React.ReactNode;
           if (it.comp) { const Cm = COMP[it.comp]; body = Cm ? <Cm t={t} a={it.a} b={it.b} {...it.props} /> : null; }
+          else if (it.img && it.card) body = <FotoCard src={it.img} t={t} a={a0} b={b0} cap={it.cap} cred={it.cred} ke={ke} />;
+          else if (it.img) body = <Img src={staticFile(it.img)} style={{ width: W, height: H, objectFit: "cover", transform: `scale(${z.toFixed(4)})`, transformOrigin: `${(fx * 100).toFixed(2)}% ${(fy * 100).toFixed(2)}%` }} />;
           else {
             const F0 = Math.round(a0 * FPS) - 10;                      // se monta 10 cuadros antes: el decodificador ya tiene el cuadro
             const sf = Math.max(0, Math.round(it.from * FPS - (it.a * FPS - F0) * it.rate));
             body = (
               <Sequence from={F0} durationInFrames={Math.round((b0 - a0) * FPS) + 14} layout="none">
+                {it.card ? <ArchCard t={t} a={a0} ke={ke} cred={it.cred}>
+                  <OffthreadVideo src={staticFile(`${it.v}.mp4`)} startFrom={sf} playbackRate={it.rate} muted style={{ display: "block", width: 1180, height: 664, objectFit: "cover" }} />
+                </ArchCard> :
                 <OffthreadVideo src={staticFile(`${it.v}.mp4`)} startFrom={sf} playbackRate={it.rate} muted
-                  style={{ width: W, height: H, objectFit: "cover", transform: `scale(${z.toFixed(4)})`, transformOrigin: `${(fx * 100).toFixed(2)}% ${(fy * 100).toFixed(2)}%`, filter: "contrast(1.05) saturate(1.04)" }} />
+                  style={{ width: W, height: H, objectFit: "cover", transform: `scale(${z.toFixed(4)})`, transformOrigin: `${(fx * 100).toFixed(2)}% ${(fy * 100).toFixed(2)}%`, filter: "contrast(1.05) saturate(1.04)" }} />}
               </Sequence>
             );
           }
@@ -365,6 +406,36 @@ const Portal: React.FC<{ p: any; c: Cam; t: number }> = ({ p, c, t }) => {
         })}
       </AbsoluteFill>
       {ring > 0 && r > 1 && <div style={{ position: "absolute", left: cx - r, top: cy - r, width: 2 * r, height: 2 * r, borderRadius: "50%", border: "6px solid #fff6e6", opacity: ring, boxShadow: `0 0 26px rgba(242,181,68,.55), 0 0 0 1px rgba(0,0,0,.4)` }} />}
+    </AbsoluteFill>
+  );
+};
+
+// tarjeta de foto (chica o histórica): la misma foto ampliada y oscurecida de fondo + la foto entera enmarcada que se acerca
+const FotoCard: React.FC<{ src: string; t: number; a: number; b: number; cap?: string; cred?: string; ke: number }> = ({ src, t, a, cap, cred, ke }) => {
+  const s = lerp(0.97, 1.04, ke), lk = easeOut(k01(t, a + 0.25, a + 0.8));
+  return (
+    <AbsoluteFill style={{ background: "#0b0c0e" }}>
+      <Img src={staticFile(src)} style={{ position: "absolute", width: W, height: H, objectFit: "cover", transform: `scale(${lerp(1.25, 1.32, ke)})`, opacity: 0.32, filter: "blur(28px) saturate(0.7)" }} />
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+        <div style={{ transform: `scale(${s})`, padding: 14, background: "#f3ead8", boxShadow: "0 30px 80px rgba(0,0,0,.65)" }}>
+          <Img src={staticFile(src)} style={{ display: "block", maxWidth: 1240, maxHeight: 780, objectFit: "contain" }} />
+        </div>
+      </AbsoluteFill>
+      {(cap || cred) && <div style={{ position: "absolute", left: 120, bottom: 70, opacity: lk, transform: `translateY(${(1 - lk) * 16}px)` }}>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 34, letterSpacing: 5, color: "#fff", textShadow: shadow }}>{cap}</div>
+        {cred && <div style={{ fontFamily: MONO, fontSize: 18, letterSpacing: 2, color: SAND, opacity: 0.8, textShadow: shadow }}>{cred}</div>}
+      </div>}
+    </AbsoluteFill>
+  );
+};
+
+// tarjeta de ARCHIVO para video de baja resolución (≤480p): pantalla de archivo enmarcada sobre fondo oscuro, nunca estirada a 1080
+const ArchCard: React.FC<{ t: number; a: number; ke: number; cred?: string; children: React.ReactNode }> = ({ t, a, ke, cred, children }) => {
+  const lk = easeOut(k01(t, a + 0.25, a + 0.8));
+  return (
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, #22262b 0%, #0b0c0e 75%)", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ transform: `scale(${lerp(0.97, 1.03, ke)})`, padding: 10, background: "#1a1c1f", borderRadius: 6, boxShadow: "0 30px 90px rgba(0,0,0,.7), 0 0 0 1px rgba(255,246,230,.18)" }}>{children}</div>
+      <div style={{ position: "absolute", left: 120, bottom: 70, opacity: lk, fontFamily: MONO, fontSize: 18, letterSpacing: 3, color: SAND, textShadow: shadow }}>{cred || "METRAJE DE ARCHIVO"}</div>
     </AbsoluteFill>
   );
 };
@@ -384,7 +455,7 @@ const Hook: React.FC<{ t: number }> = ({ t }) => {
   );
 };
 
-const OVER: Record<string, React.FC<any>> = { TonsRoll, TitleStone };
+const OVER: Record<string, React.FC<any>> = { TonsRoll, TitleStone, Tag };
 export const M1: React.FC<{ farm?: boolean; off?: string[] }> = ({ farm, off }) => {
   OFF = new Set(off || []);
   const f = useCurrentFrame(), t = f / FPS;
@@ -406,9 +477,11 @@ export const M1: React.FC<{ farm?: boolean; off?: string[] }> = ({ farm, off }) 
         <AbsoluteFill style={{ filter: blur && !OFF.has("mb") ? "url(#mb)" : undefined }}>
           <Globe c={c} tl={tl} />
           <Route c={c} t={t} ground />
+          <Routes c={c} t={t} ground />
         </AbsoluteFill>
         {tl > 0.5 && <AbsoluteFill style={{ background: `linear-gradient(180deg, rgba(150,185,215,${(0.42 * tl / 34).toFixed(3)}) 0%, rgba(150,185,215,${(0.12 * tl / 34).toFixed(3)}) 22%, rgba(150,185,215,0) 45%)` }} />}
         <Route c={c} t={t} />
+        <Routes c={c} t={t} />
         <Names c={c} t={t} />
         <Pins c={c} t={t} />
         <Count7 t={t} />
