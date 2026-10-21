@@ -173,7 +173,8 @@ const Semanas: React.FC<{ t: number; at: number; out: number; to: number; stop?:
   const o = vis(t, at, out), k = spr(t, at, 0.8);
   if (o <= 0.01) return null;
   const n = Math.floor(ei(t, at + 0.3, at + 0.3 + 0.18 * to) * to + 0.001);
-  return <div style={{ position: "absolute", left: 960, top: y, opacity: o, transform: `translate(-50%,-50%) scale(${0.6 + 0.4 * Math.min(1, k)})`, fontFamily: FONT, textAlign: "center" }}>
+  // al costado y más chica: en las ventanas del avatar el centro de arriba es su cabeza
+  return <div style={{ position: "absolute", left: 1450, top: y - 40, opacity: o, transform: `translate(-50%,-50%) scale(${0.68 * (0.6 + 0.4 * Math.min(1, k))})`, fontFamily: FONT, textAlign: "center" }}>
     <div style={{ fontWeight: 900, fontSize: 40, color: COL.ink, letterSpacing: 4, textShadow: extrude(4, "#000"), marginBottom: 12 }}>{title}</div>
     <div style={{ display: "flex", gap: 14 }}>
       {Array.from({ length: 8 }, (_, i) => { const on = i < n, cut = stop !== undefined && i === stop - 1 && on;
