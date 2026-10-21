@@ -94,6 +94,55 @@ export const KEYS: Key[] = [
   { t: 110.3, p: [1.1, 1.2, 2.4], l: [0.2, 0.95, 0], fov: 38 },
   { t: 112, p: [1.0, 1.15, 2.2], l: [0.2, 0.95, 0], fov: 38 },
 ];
+// ---- EL RESTO (Rest.tsx): una toma por bloque 3D; entre tomas se congela la última llave y se salta (corte limpio) ----
+{
+  const LK: V3 = [0.34, 1.07, 0.075], PL: V3 = [0.47, 0.5, 0.07], CI: V3 = [0.47, 1.07, 0.07], TZ: V3 = [0.95, 1.35, 0.012];
+  const VO: V3 = [0.34, 0.8, 0.1], PR: V3 = [1.05, 0.82, 4.02], NB: V3 = [-9.6, 1.07, 0.07], MO: V3 = [0.15, 2.09, 0.06], TH: V3 = [0, 1.1, 1];
+  const k = (t: number, p: V3, l: V3, fov: number, arc?: number): Key => ({ t, p, l, fov, arc });
+  const SH: Key[][] = [
+    [k(115.6, [0.25, 0.64, 0.72], PL, 30), k(120.2, [0.3, 0.56, 0.46], PL, 24)],
+    [k(125.62, [1.3, 1.0, 2.3], [0.15, 0.75, 0], 36), k(130.7, [1.15, 0.95, 2.1], [0.15, 0.75, 0], 36)],
+    [k(130.76, [-3.2, 1.7, 12.6], TH, 36), k(136.6, [-2.0, 1.5, 11], TH, 34)],
+    [k(166.1, [1.6, 1.3, 3.4], [0.1, 0.95, 0], 38), k(172.0, [1.2, 1.2, 2.8], [0.1, 0.95, 0], 38)],
+    [k(178.02, [0.9, 1.15, 1.1], CI, 30), k(183.2, [0.6, 1.09, 0.32], CI, 24)],
+    [k(188.7, [1.0, 1.2, 1.4], [0.3, 1.0, 0], 34), k(190.1, [0.95, 1.18, 1.3], [0.3, 1.0, 0], 34)],
+    [k(190.14, [0.3, 1.15, 1.7], [-0.3, 1.0, 0], 40), k(195.6, [0.25, 1.15, 1.6], [-0.3, 1.0, 0], 40)],
+    [k(210.79, [0.9, 1.2, 2.0], LK, 34), k(213.4, [-8.7, 1.35, 2.7], NB, 36), k(216.2, [-9.0, 1.3, 2.3], NB, 34)],
+    [k(225.11, [1.5, 1.4, 1.4], TZ, 34), k(228.7, [1.15, 1.37, 0.55], TZ, 28)],
+    [k(274.26, [1.6, 1.5, 1.2], TZ, 30), k(276.2, [1.2, 1.4, 0.5], TZ, 26)],
+    [k(306.05, [1.2, 1.3, 2.6], [0.3, 0.9, 0], 36), k(309.5, [0.6, 0.95, 0.75], VO, 30), k(314.8, [0.52, 0.88, 0.58], VO, 28)],
+    [k(322.05, [1.4, 1.15, 2.8], [0.2, 0.85, 0], 36), k(328.98, [1.2, 1.1, 2.5], [0.2, 0.85, 0], 36)],
+    [k(329.0, [-3.0, 1.6, 12.0], [0.2, 1.0, 1.0], 34), k(332.8, [-2.2, 1.5, 11], [0.2, 1.0, 1.0], 32)],
+    [k(358.0, [1.0, 1.1, 1.6], [0.34, 0.85, 0.05], 32), k(366.2, [1.2, 1.2, 2.3], [0.34, 0.85, 0.05], 34)],
+    [k(370.1, [0.4, 1.6, 7.0], [0.1, 1.0, 0], 42), k(376.4, [2.6, 4.0, 10.6], [0, 0.8, 1.6], 44, 0.1), k(379.6, [2.9, 4.2, 11], [0, 0.8, 1.6], 44)],
+    [k(386.14, [HX + 0.1, 1.62, 2.6], [HX + 0.1, 0.95, 0], 40), k(388.6, [HX + 0.4, 1.35, 1.0], [HX + 0.12, 0.84, 0], 36), k(390.0, [HX + 0.2, 1.36, 0.42], [HX + 0.19, 0.84, 0], 34), k(395.8, [HX + 0.19, 1.3, 0.38], [HX + 0.19, 0.84, 0.02], 32)],
+    [k(401.66, [HX - 0.25, 1.45, 1.4], [HX + 0.1, 0.9, 0], 40), k(414.4, [HX - 0.35, 1.45, 1.6], [HX + 0.1, 0.9, 0], 40)],
+    [k(437.31, [2.6, 1.6, 8.2], [0.6, 0.7, 4.0], 38), k(441.0, [1.45, 1.0, 5.0], PR, 30), k(444.2, [1.3, 0.92, 4.6], PR, 26)],
+    [k(456.0, [1.9, 1.2, 6.0], [0.6, 0.8, 4], 34), k(462.7, [1.4, 0.95, 4.8], PR, 28)],
+    [k(481.72, [2.4, 1.3, 6.6], [0.9, 0.8, 4], 32), k(487.7, [1.6, 1.0, 5.2], PR, 28)],
+    [k(500.27, [0.9, 1.6, 2.0], [0.15, 2.0, 0], 34), k(503.0, [0.32, 2.06, 0.45], MO, 28), k(505.0, [0.28, 2.08, 0.38], MO, 26)],
+    [k(515.8, [1.3, 1.6, 2.6], [0.1, 1.5, 0], 40), k(521.5, [1.2, 1.55, 2.4], [0.1, 1.5, 0], 40)],
+    [k(538.6, [0.8, 1.15, 0.9], LK, 30), k(543.7, [0.45, 1.08, 0.32], LK, 24)],
+    [k(564.26, [0.5, 1.35, 4.4], [0.3, 1.05, 0], 40), k(568, [3.2, 4.4, 11.5], [0, 0.8, 1.6], 44, 0.15), k(576.5, [2.6, 4.0, 10.6], [0, 0.8, 1.6], 44)],
+    [k(576.52, [2.2, 3.2, 9.6], [-0.6, 0.8, 1.6], 46), k(581.08, [2.0, 3.0, 9.2], [-0.6, 0.8, 1.6], 46)],
+    [k(581.1, [0.5, 1.6, 8.4], [0, 1.1, 0], 42), k(585.1, [0.4, 1.5, 7.6], [0, 1.1, 0], 42)],
+    [k(680.22, [-3.2, 1.7, 12.6], TH, 36), k(691.4, [-2.4, 1.55, 11.2], TH, 34)],
+    [k(732.7, [3.0, 2.2, 9.5], TH, 40), k(743.8, [1.6, 1.6, 6.5], TH, 38)],
+    [k(748.96, [0.25, 0.64, 0.72], PL, 30), k(756, [0.3, 0.58, 0.5], PL, 26), k(762.2, [0.32, 0.6, 0.55], PL, 26)],
+    [k(766.05, [0.9, 1.2, 2.0], LK, 34), k(768.4, [-8.7, 1.35, 2.7], NB, 36), k(776.3, [-9.0, 1.3, 2.3], NB, 34)],
+    [k(812.14, [0.9, 1.25, 1.6], LK, 34), k(814.4, [0.36, 1.072, 0.32], [0.34, 1.07, 0], 30), k(814.8, [0.343, 1.0705, 0.13], [0.34, 1.07, 0], 24)],
+    [k(814.81, [HX + 0.1, 1.62, 2.6], [HX + 0.1, 0.95, 0], 40), k(819, [HX + 0.55, 1.4, 1.35], [HX + 0.05, 0.88, 0], 38), k(822.5, [HX + 0.3, 1.32, 0.9], [HX + 0.12, 0.84, 0], 36), k(824.6, [HX + 0.2, 1.36, 0.42], [HX + 0.19, 0.84, 0], 34)],
+    [k(829.52, [HX + 0.2, 1.36, 0.42], [HX + 0.19, 0.84, 0], 34), k(833.6, [HX + 0.19, 1.3, 0.38], [HX + 0.19, 0.84, 0.02], 32), k(836.8, [HX - 0.25, 1.45, 1.4], [HX + 0.1, 0.9, 0], 40), k(843.1, [HX - 0.3, 1.45, 1.5], [HX + 0.1, 0.9, 0], 40)],
+    [k(855.8, [1.3, 1.25, 2.6], [0.2, 1.0, 0], 38), k(859.5, [0.8, 1.12, 1.3], LK, 32)],
+  ];
+  let last = KEYS[KEYS.length - 1];
+  for (const sh of SH) {
+    const a = sh[0];
+    if (sh !== SH[0] && a.t - 0.01 > last.t) KEYS.push({ ...last, t: a.t - 0.01, arc: undefined }); // se congela hasta el corte
+    for (const x of sh) KEYS.push(x);
+    last = sh[sh.length - 1];
+  }
+}
 export const camAt = (t: number) => {
   let i = 0;
   while (i < KEYS.length - 1 && KEYS[i + 1].t <= t) i++;
@@ -250,7 +299,7 @@ const Glow: React.FC<{ p: V3; on: number; t: number; therm: number; r?: number }
 };
 
 // LA PUERTA con su marco, el cerrojo, el picaporte, la mirilla y las marcas propias de la puerta
-const Door: React.FC<{ tx: ReturnType<typeof useCasaTex>; open: number; heat: number; plast: number; plastFall: number; cinta: number; volante: number; moneda: number }> = ({ tx, open, heat, plast, plastFall, cinta, volante, moneda }) => {
+const Door: React.FC<{ tx: ReturnType<typeof useCasaTex>; open: number; heat: number; plast: number; plastFall: number; cinta: number; volante: number; moneda: number; drop: number }> = ({ tx, open, heat, plast, plastFall, cinta, volante, moneda, drop }) => {
   const hot = (k: number) => ({ emissive: "#fff2c8", emissiveIntensity: 2.6 * heat * k });
   return (
     <group>
@@ -273,6 +322,7 @@ const Door: React.FC<{ tx: ReturnType<typeof useCasaTex>; open: number; heat: nu
           <mesh position={[0.34, 0.93, 0.045]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.009, 0.009, 0.04, 12]} /><meshStandardMaterial {...BRASS} /></mesh>
           {/* mirilla */}
           <mesh position={[0, 1.55, 0.026]} rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.012, 0.012, 0.01, 20]} /><meshStandardMaterial {...BRASS} /></mesh>
+          {cinta > 0.01 && open >= 0.01 && <mesh position={[0.4375, 1.07, 0.0255]} rotation={[0, 0, 0.08]}><planeGeometry args={[0.035, 0.018]} /><meshPhysicalMaterial color="#f3ead0" transparent opacity={0.7} roughness={0.3} clearcoat={0.6} {...hot(1)} /></mesh>}
           {/* 4 · volante colgado del picaporte (se balancea apenas) */}
           {volante > 0.01 && <group position={[0.34, 0.93, 0.085]} rotation={[0, 0, 0.04 * Math.sin(open * 3)]}>
             <mesh position={[0, -0.11, 0.004]} scale={[1, volante, 1]}><planeGeometry args={[0.15, 0.21]} /><meshStandardMaterial map={tx.flyer} roughness={0.9} side={THREE.DoubleSide} {...hot(1)} /></mesh>
@@ -284,9 +334,11 @@ const Door: React.FC<{ tx: ReturnType<typeof useCasaTex>; open: number; heat: nu
       {plast > 0.01 && <mesh position={[0.458 - plastFall * 0.05, 0.5 - plastFall * 0.47, 0.075 + plastFall * 0.16]} rotation={[plastFall * 1.4, -0.35 + plastFall * 0.5, 0.08 + plastFall * 1.2]} scale={plast}>
         <boxGeometry args={[0.0016, 0.05, 0.1]} /><meshPhysicalMaterial color="#f4f8ff" transparent opacity={0.85} roughness={0.08} clearcoat={1} emissive="#eef4ff" emissiveIntensity={0.5 + 2.6 * heat} /></mesh>}
       {/* 2 · cinta sobre la ranura, al lado del cerrojo */}
-      {cinta > 0.01 && <mesh position={[0.455, 1.07, 0.072]} scale={[cinta, 1, 1]}><planeGeometry args={[0.07, 0.018]} /><meshPhysicalMaterial color="#f3ead0" transparent opacity={0.7} roughness={0.3} clearcoat={0.6} {...hot(1)} /></mesh>}
+      {/* (al abrir, la cinta se CORTA: una mitad queda en el marco, la otra se va con la hoja) */}
+      {cinta > 0.01 && open < 0.01 && <mesh position={[0.455, 1.07, 0.072]} scale={[cinta, 1, 1]}><planeGeometry args={[0.07, 0.018]} /><meshPhysicalMaterial color="#f3ead0" transparent opacity={0.7} roughness={0.3} clearcoat={0.6} {...hot(1)} /></mesh>}
+      {cinta > 0.01 && open >= 0.01 && <mesh position={[0.4725, 1.07, 0.072]} rotation={[0, 0, -0.06]}><planeGeometry args={[0.035, 0.018]} /><meshPhysicalMaterial color="#f3ead0" transparent opacity={0.7} roughness={0.3} clearcoat={0.6} {...hot(1)} /></mesh>}
       {/* 6 · la moneda apoyada arriba, en la ranura del marco */}
-      {moneda > 0.01 && <mesh position={[0.15, 2.0905, 0.06]} rotation={[0, 0, Math.PI / 2]} scale={moneda}><cylinderGeometry args={[0.011, 0.011, 0.0018, 24]} /><meshStandardMaterial color="#b8a27a" metalness={1} roughness={0.35} {...hot(1)} /></mesh>}
+      {moneda > 0.01 && <mesh position={[0.15, 2.0905 - 1.94 * drop * drop, 0.06 + 0.32 * drop]} rotation={[drop * 9, drop * 4, Math.PI / 2 + drop * 6]} scale={moneda}><cylinderGeometry args={[0.011, 0.011, 0.0018, 24]} /><meshStandardMaterial color="#b8a27a" metalness={1} roughness={0.35} {...hot(1)} /></mesh>}
     </group>
   );
 };
@@ -383,7 +435,7 @@ export const Marker: React.FC<{ t: number; at: number; out?: number; box: [numbe
 export const pagePt = (u: number, v: number): V3 => [PT.book[0] + 0.004 + (u - 0.5) * (BW - 0.01), PT.book[1] + 0.031, PT.book[2] + (v - 0.5) * (BD - 0.012)];
 
 // el RECIBIDOR (del otro lado de la cerradura): piso de madera, pared empapelada, mesita, lámpara, perchero, la guía
-const Hall: React.FC<{ tx: ReturnType<typeof useCasaTex>; ft: ReturnType<typeof useTextures>; pg: Record<string, THREE.Texture>; t: number; open: number; fan: number; children?: React.ReactNode }> = ({ tx, ft, pg, t, open, fan, children }) => (
+const Hall: React.FC<{ tx: ReturnType<typeof useCasaTex>; ft: ReturnType<typeof useTextures>; pg: Record<string, THREE.Texture>; t: number; open: number; fan: number; libro: "l1" | "l5"; children?: React.ReactNode }> = ({ tx, ft, pg, t, open, fan, libro, children }) => (
   <group>
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[HX, 0.001, 0]} receiveShadow><planeGeometry args={[6, 5]} /><meshStandardMaterial map={ft.planks} roughness={0.55} /></mesh>
     <Box p={[HX, 1.4, -0.45]} s={[6, 2.8, 0.1]} c="#efe6d2" r={0.9} map={tx.hall} rad={0.01} />
@@ -406,11 +458,12 @@ const Hall: React.FC<{ tx: ReturnType<typeof useCasaTex>; ft: ReturnType<typeof 
     <Box p={[HX + 1.5, 1.7, -0.37]} s={[0.6, 0.06, 0.05]} c="#5a3a24" r={0.5} rad={0.006} />
     <Box p={[HX + 1.45, 1.35, -0.31]} s={[0.36, 0.7, 0.1]} c="#5c2f2a" r={0.95} rad={0.04} />
     {/* los otros 4 libros de la colección, apilados en abanico (se abren con fan) */}
-    {["l2", "l3", "l4", "l5"].map((id, i) => (
+    {(libro === "l5" ? ["l1", "l2", "l3", "l4"] : ["l2", "l3", "l4", "l5"]).map((id, i) => (
       <group key={id} position={[HX - 0.31 - fan * 0.02, 0.832 + i * 0.03, -0.02 - fan * i * 0.02]} rotation={[0, 0.18 + fan * (0.12 * i), 0]}>
-        <Book p={[0, 0, 0]} open={0} cover={pg[id + "_p001"]} spine={["#c8a31c", "#c27a92", "#5f9ec0", "#58a383", "#9a7cc0"][i + 1]} />
+        <Book p={[0, 0, 0]} open={0} cover={pg[id + "_p001"]} spine={{ l1: "#c8a31c", l2: "#c27a92", l3: "#5f9ec0", l4: "#58a383", l5: "#9a7cc0" }[id]!} />
       </group>))}
-    <Book p={PT.book} open={open} cover={pg.l1_p001} inside={pg.l1_p060_r} right={pg.l1_p061} spine="#c8a31c">{children}</Book>
+    {libro === "l5" ? <Book p={PT.book} open={open} cover={pg.l5_p001} inside={pg.l5_p038_r} right={pg.l5_p039} spine="#9a7cc0">{children}</Book>
+      : <Book p={PT.book} open={open} cover={pg.l1_p001} inside={pg.l1_p060_r} right={pg.l1_p061} spine="#c8a31c">{children}</Book>}
     <spotLight position={[HX + 0.2, 2.3, 1.0]} angle={0.45} penumbra={0.9} intensity={6} distance={4} color="#fff2dc" target-position={PT.book} />
     {void t}
   </group>
@@ -419,7 +472,7 @@ const Hall: React.FC<{ tx: ReturnType<typeof useCasaTex>; ft: ReturnType<typeof 
 // ===================================================================================================
 // estado de cada marca: cuándo existe (k) y cuándo arde (lit) — lo arma Min1/Rest y se lo pasa al mundo
 export type MarkState = Partial<Record<MarkId, { k: number; lit: number }>>;
-export const World: React.FC<{ t: number; therm?: number; marks?: MarkState; doorOpen?: number; plastFall?: number; walker?: [number, number]; vecino?: number; bookOpen?: number; fan?: number; children?: React.ReactNode }> = ({ t, therm = 0, marks = {}, doorOpen = 0, plastFall = 0, walker, vecino = 0, bookOpen = 0, fan = 0, children }) => {
+export const World: React.FC<{ t: number; therm?: number; marks?: MarkState; doorOpen?: number; plastFall?: number; walker?: [number, number]; vecino?: number; bookOpen?: number; fan?: number; drop?: number; libro?: "l1" | "l5"; children?: React.ReactNode }> = ({ t, therm = 0, marks = {}, doorOpen = 0, plastFall = 0, walker, vecino = 0, bookOpen = 0, fan = 0, drop = 0, libro = "l1", children }) => {
   const ft = useTextures();
   const tx = useCasaTex();
   const pg = useImgTex(["l1_p001", "l1_p060", "l1_p061", "l2_p001", "l3_p001", "l4_p001", "l5_p001", "l5_p038", "l5_p039"]);
@@ -486,7 +539,7 @@ export const World: React.FC<{ t: number; therm?: number; marks?: MarkState; doo
 
       {/* ===== LA CASA ===== */}
       <Facade tx={tx} x={0} lit={1} />
-      <Door tx={tx} open={doorOpen} heat={heat} plast={M("plast").k} plastFall={plastFall} cinta={M("cinta").k} volante={M("volante").k} moneda={M("moneda").k} />
+      <Door tx={tx} open={doorOpen} heat={heat} plast={M("plast").k} plastFall={plastFall} cinta={M("cinta").k} volante={M("volante").k} moneda={M("moneda").k} drop={drop} />
       {/* 3 · la tiza en la pared */}
       {M("tiza").k > 0.01 && <mesh position={PT.tiza}><planeGeometry args={[0.13 * M("tiza").k, 0.13 * M("tiza").k]} /><meshStandardMaterial map={tx.chalk} transparent roughness={1} emissive="#fff2c8" emissiveMap={tx.chalk} emissiveIntensity={2.4 * heat} depthWrite={false} /></mesh>}
       {/* adentro, la luz cálida que se ve cuando la puerta se abre (en térmica: el calor de la casa) */}
@@ -514,7 +567,7 @@ export const World: React.FC<{ t: number; therm?: number; marks?: MarkState; doo
       {lit("diarios") > 0.01 && <Glow p={PT.buzon} on={lit("diarios")} t={t + 0.7} therm={therm} r={0.12} />}
 
       {/* ===== EL RECIBIDOR con la guía ===== */}
-      <Hall tx={tx} ft={ft} pg={pg} t={t} open={bookOpen} fan={fan}>{children}</Hall>
+      <Hall tx={tx} ft={ft} pg={pg} t={t} open={bookOpen} fan={fan} libro={libro}>{children}</Hall>
     </ThreeCanvas>
   );
 };

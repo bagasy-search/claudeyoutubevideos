@@ -145,7 +145,7 @@ const ChipsAt: React.FC<{ t: number; items: { at: number; tx: string }[]; out: n
 );
 
 // visor de la cámara térmica (HUD del ladrón): esquinas, REC, lectura de temperatura
-const ThermHud: React.FC<{ t: number; amt: number; label?: string }> = ({ t, amt, label = "VISTA DEL LADRÓN" }) => {
+export const ThermHud: React.FC<{ t: number; amt: number; label?: string }> = ({ t, amt, label = "VISTA DEL LADRÓN" }) => {
   if (amt <= 0.01) return null;
   const c = "rgba(255,240,220,.85)", L = 70, M = 60;
   const corner = (x: number, y: number, sx: number, sy: number) => <path d={`M${x} ${y + sy * L} L${x} ${y} L${x + sx * L} ${y}`} fill="none" stroke={c} strokeWidth={5} />;
