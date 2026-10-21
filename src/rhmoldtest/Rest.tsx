@@ -469,7 +469,7 @@ const Over: React.FC<{ t: number }> = ({ t }) => {
   if (on(1007.8, 1016.3)) {
     L.push(<BigNum key="tn" t={t} at={AT("Go dab that spot tonight")} text="DAB IT TONIGHT" size={96} x={1400} y={170} out={1012.3} />);
     L.push(<Comment key="cm2" t={t} at={AT("tell me in the comments")} out={1016.1} />);
-    L.push(<ChipsAt key="mmd" t={t} out={1016.1} num={false} y={420} items={[{ at: AT("Mold, mildew, or dirt", 1010), tx: "MOLD?", c: "#ff8a7a" }, { at: AT("Mold, mildew, or dirt", 1010) + 0.4, tx: "MILDEW?", c: "#d9d9d9" }, { at: AT("Mold, mildew, or dirt", 1010) + 0.8, tx: "DIRT?", c: "#c9b08a" }]} />);
+    L.push(<ChipsAt key="mmd" t={t} out={1016.1} num={false} y={930} items={[{ at: AT("Mold, mildew, or dirt", 1010), tx: "MOLD?", c: "#ff8a7a" }, { at: AT("Mold, mildew, or dirt", 1010) + 0.4, tx: "MILDEW?", c: "#d9d9d9" }, { at: AT("Mold, mildew, or dirt", 1010) + 0.8, tx: "DIRT?", c: "#c9b08a" }]} />);
   }
   if (on(1016.2, END)) L.push(<NextCard key="nx" t={t} at={AT("watch the video on your screen next")} out={1028.9} />);
   if (on(1024.5, END)) L.push(<LowerThird key="bye" t={t} at={AT("I'm Rhonda", 1025)} out={1028.9} name="RHONDA" l2="THANKS FOR CLEANING WITH ME" l2at={AT("Thanks for cleaning with me")} />);
