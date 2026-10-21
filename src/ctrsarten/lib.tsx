@@ -42,7 +42,7 @@ export const Portal: React.FC<{ x: number; y: number; r: number; ring?: number; 
     <AbsoluteFill>
       <AbsoluteFill style={{ clipPath: `circle(${R}px at ${x}px ${y}px)` }}>{children}</AbsoluteFill>
       {ring > 0 && r < 0.995 && <div style={{ position: "absolute", left: x - R, top: y - R, width: 2 * R, height: 2 * R, borderRadius: "50%",
-        boxShadow: `0 0 0 ${3 + 3 * (1 - r)}px rgba(255,255,255,${0.75 * ring * (1 - r * r)}), 0 0 60px 10px rgba(160,210,255,${0.35 * ring * (1 - r)})` }} />}
+        boxShadow: `0 0 0 ${3 + 3 * (1 - r)}px rgba(255,255,255,${0.75 * ring * (1 - r * r)})` }} />}
     </AbsoluteFill>
   );
 };

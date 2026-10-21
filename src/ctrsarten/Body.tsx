@@ -654,17 +654,18 @@ const PIPW = new Set(SEGS.flatMap((g) => g.pip ?? []));
 const beatNode = (b: Beat, t: number): React.ReactNode =>
   b.w ? <World2 t={t} ev={b.w.ev(t)} /> : b.board ? <><Board t={t} />{b.c?.(t)}</> : b.c ? b.c(t) : <Shot k={b.k!} t={t} a={b.a} z={b.z} />;
 
-const VIA = (via: Via, p: number, prev: React.ReactNode, cur: React.ReactNode, pt: { x: number; y: number }, key: string): React.ReactNode[] => {
-  const q = Math.sin(p * Math.PI);
+const VIA = (via: Via, p: number, prev: React.ReactNode, cur: React.ReactNode, pt: { x: number; y: number }, key: string, nb = false): React.ReactNode[] => {
+  // nb = el plano que sale es el avatar → nunca se desenfoca (creador, 21-oct)
+  const q = Math.sin(p * Math.PI), bl = (px: number) => (nb || px <= 0.5 ? undefined : `blur(${px}px)`);
   if (via === "portal") return [<AbsoluteFill key={key + "p"}>{prev}</AbsoluteFill>, <Portal key={key + "c"} x={pt.x} y={pt.y} r={p}>{cur}</Portal>];
   if (via === "zoom") return [
     <AbsoluteFill key={key + "c"} style={{ transform: `scale(${1.25 - 0.25 * p})`, filter: q > 0.05 ? `blur(${q * 14}px)` : undefined }}>{cur}</AbsoluteFill>,
-    <AbsoluteFill key={key + "p"} style={{ opacity: 1 - p, transformOrigin: `${pt.x}px ${pt.y}px`, transform: `scale(${1 + p * p * 5})`, filter: `blur(${p * 18}px)` }}>{prev}</AbsoluteFill>];
+    <AbsoluteFill key={key + "p"} style={{ opacity: 1 - p, transformOrigin: `${pt.x}px ${pt.y}px`, transform: `scale(${1 + p * p * 5})`, filter: bl(p * 18) }}>{prev}</AbsoluteFill>];
   if (via === "rise") return [
-    <AbsoluteFill key={key + "p"} style={{ transform: `translateY(${-p * 500}px)`, filter: q > 0.05 ? `blur(${q * 20}px)` : undefined }}>{prev}</AbsoluteFill>,
+    <AbsoluteFill key={key + "p"} style={{ transform: `translateY(${-p * 500}px)`, filter: bl(q * 20) }}>{prev}</AbsoluteFill>,
     <AbsoluteFill key={key + "c"} style={{ transform: `translateY(${(1 - p) * 1080}px)`, filter: q > 0.05 ? `blur(${q * 26}px)` : undefined }}>{cur}</AbsoluteFill>];
   return [
-    <AbsoluteFill key={key + "p"} style={{ transform: `translateX(${-p * 700}px)`, filter: q > 0.05 ? `blur(${q * 30}px)` : undefined }}>{prev}</AbsoluteFill>,
+    <AbsoluteFill key={key + "p"} style={{ transform: `translateX(${-p * 700}px)`, filter: bl(q * 30) }}>{prev}</AbsoluteFill>,
     <AbsoluteFill key={key + "c"} style={{ transform: `translateX(${(1 - p) * 1920}px)`, filter: q > 0.05 ? `blur(${q * 36}px)` : undefined }}>{cur}</AbsoluteFill>];
 };
 
@@ -690,7 +691,7 @@ export const Body: React.FC = () => {
     const node = beatNode(cur, t);
     if (p >= 1 || prev === null && p >= 1) L.push(<AbsoluteFill key={"g" + g.i}>{node}</AbsoluteFill>);
     else if (prev === null) L.push(<AbsoluteFill key={"g" + g.i} style={{ transform: `translateX(${(1 - p) * 1920}px)`, filter: `blur(${Math.sin(p * Math.PI) * 36}px)` }}>{node}</AbsoluteFill>);
-    else VIA(cur.via ?? "whip", p, prev, node, ptOf(t, cur.q), "g" + g.i + "_" + i).forEach((x) => L.push(x));
+    else VIA(cur.via ?? "whip", p, prev, node, ptOf(t, cur.q), "g" + g.i + "_" + i, i === 0).forEach((x) => L.push(x));
     if (t < e0 + 0.1) g.fx(t).forEach((x, k) => L.push(<React.Fragment key={"f" + g.i + "_" + k}>{x}</React.Fragment>));
     // entrada a la ventana siguiente: portal desde el punto que toca
     const r = ei(t, e0 - 0.15, e0 + 0.4);

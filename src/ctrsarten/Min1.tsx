@@ -53,8 +53,8 @@ export const Avatar: React.FC<{ t: number; blur?: number; dark?: number; edge?: 
   );
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000", ...style }}>
-      <AbsoluteFill style={{ filter: blur > 0.2 ? `blur(${blur}px) brightness(${1 - dark})` : dark > 0 ? `brightness(${1 - dark})` : undefined, transform: blur > 0.2 ? "scale(1.04)" : undefined }}>{face}</AbsoluteFill>
-      {edge > 0.01 && <AbsoluteFill style={{ filter: `blur(${14 * edge}px) brightness(.7)`, transform: "scale(1.04)", WebkitMaskImage: `radial-gradient(ellipse 46% 52% at 50% 42%, transparent 55%, #000 100%)` } as React.CSSProperties}>{face}</AbsoluteFill>}
+      {/* ⛔ el avatar va SIEMPRE nítido: sin blur, sin halo ni borde difuminado (creador, 21-oct). blur/edge quedan sin efecto */}
+      <AbsoluteFill style={{ filter: dark > 0 ? `brightness(${1 - dark})` : undefined }}>{face}</AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -312,7 +312,7 @@ export const Min1: React.FC = () => {
       L.push(<Stamp key="piedra" t={t} at={T.piedra} text="DURA COMO PIEDRA" x={960} y={860} rot={-6} size={86} out={W2.ms - 0.25} />);
       // latigazo al avatar
       const wp = ei(t, W2.ms - 0.3, W2.ms + 0.02);
-      if (wp > 0) L.push(<AbsoluteFill key="avW" style={{ transform: `translateX(${(1 - wp) * 1920}px)`, filter: `blur(${Math.sin(wp * Math.PI) * 40}px)` }}><Avatar t={Math.max(t, W2.ms)} /></AbsoluteFill>);
+      if (wp > 0) L.push(<AbsoluteFill key="avW" style={{ transform: `translateX(${(1 - wp) * 1920}px)`, }}><Avatar t={Math.max(t, W2.ms)} /></AbsoluteFill>);
     }
   }
   L.push(<SmokeWipe key="sw" t={t} a={T.olor + 0.3} b={W1.me} c={W1.me + 0.6} />);
@@ -353,7 +353,7 @@ export const Min1: React.FC = () => {
   // ===== G · avatar: "SIETE PASOS, uno por uno" → zoom a través del 7 =====
   if (t >= W3.ms + 0.4 && t < W3.me + 0.05) {
     const z = ei(t, W3.me - 0.5, W3.me);
-    L.push(<AbsoluteFill key="avG" style={{ transformOrigin: "50% 45%", transform: `scale(${1 + z * z * 6})`, filter: z > 0.05 ? `blur(${z * 16}px)` : undefined }}><Avatar t={t} /><BigNum t={t} at={T.siete} text="7 PASOS" x={1420} y={420} size={170} col={COL.amber} edge="#5a3a10" sub="UNO POR UNO" /></AbsoluteFill>);
+    L.push(<AbsoluteFill key="avG" style={{ transformOrigin: "50% 45%", transform: `scale(${1 + z * z * 6})` }}><Avatar t={t} /><BigNum t={t} at={T.siete} text="7 PASOS" x={1420} y={420} size={170} col={COL.amber} edge="#5a3a10" sub="UNO POR UNO" /></AbsoluteFill>);
     L.push(<Flash key="flG" t={t} at={W3.me - 0.05} peak={0.8} w={0.3} />);
   }
   // ===== H · el recorrido del laboratorio: un objeto 3D por paso =====
