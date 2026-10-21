@@ -400,8 +400,8 @@ const buildOvs = (): Ov[] => {
         { at: at("una vez por mes"), when: "CADA MES", what: "una capa finita de cera de auto", ic: "✨" }, { at: at("una vez cada tres meses"), when: "CADA 3 MESES", what: "la bolsita en la boquita", ic: "🛍️" }];
       const show = (t >= 771 && t < 780) || (t >= 798 && t < 803.1) || (t >= 815 && t < 821.6) || (t >= 826.8 && t < 831);
       const hl = R.filter((r) => t >= r.at).length - 1;
-      const op = show ? 1 : 0;
-      return <AbsoluteFill key="rout" style={{ opacity: op }}>{op > 0 && <Routine t={t} rows={R.filter((r) => t >= r.at - 0.3)} out={834.5} hl={hl} x={1420} y={560} sc={0.82} />}</AbsoluteFill>;
+      const vis = R.filter((r) => t >= r.at - 0.3), op = show && vis.length ? 1 : 0;
+      return <AbsoluteFill key="rout" style={{ opacity: op }}>{op > 0 && <Routine t={t} rows={vis} out={834.5} hl={hl} x={1420} y={560} sc={0.82} />}</AbsoluteFill>;
     }),
     tag("10s", at("10 segundos"), 780.0, (t) => screenOf(t, PT.spout), "10 SEGUNDOS, SIN AGUA", -320, -160, COL.ice, 46),
     tag("rosa", at("rosa que limpiaba"), 787.6, fix(900, 520), "ROSA · TERCER PISO", -280, -220, "#ffb3c7", 48),
