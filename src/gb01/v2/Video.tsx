@@ -23,12 +23,12 @@ import { SEGS_M12 } from "./m12";
 import { SEGS_M13 } from "./m13";
 import { SEGS_M14 } from "./m14";
 import { EVENTOS_MIN1 } from "../Min1";
+import { BEATS } from "./esc";
 
 export type Seg = { hub: HubSpec; Escena: React.FC; sonidos?: (s: ReturnType<typeof pistaGb>) => void };
 export const SEGS: Seg[] = [...SEGS_M01, ...SEGS_M02, ...SEGS_M03, ...SEGS_M04, ...SEGS_M05, ...SEGS_M06, ...SEGS_M07, ...SEGS_M08, ...SEGS_M09, ...SEGS_M10, ...SEGS_M11, ...SEGS_M12, ...SEGS_M13, ...SEGS_M14];
 
 const DIAG = Math.hypot(960, 540) + 20;
-const C: [number, number] = [960, 540];
 const ECO = { anillo: 1 as const, ang: -12 }; // dónde queda orbitando la escena que se achica
 const dive = (i: number) => ({ a: WINS[i].t1 - 0.42, b: WINS[i].t1 + 0.5 });
 const emerge = (i: number) => ({ a: WINS[i].t0 - 0.8, b: WINS[i].t0 + 0.05 });
@@ -139,6 +139,7 @@ SEGS.forEach((seg, i) => {
   s.add("vueloLargo", v.t1 - 0.42);
   seg.sonidos?.(s);
 });
+BEATS.forEach((bs) => bs.forEach((b, i) => { if (i > 0) s.add("vuelo", b.t - 0.4, 0.9); s.add("golpe", b.t + 0.2, 0.8); s.add("vidrio", b.t + 0.3, 0.45); }));
 s.eventos.push(...EVENTOS_MIN1);
 export const EVENTOS_V2 = s.eventos.sort((a, b) => a[0] - b[0]);
 export { ANILLOS };

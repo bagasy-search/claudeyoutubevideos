@@ -1,7 +1,7 @@
 // gb01 v2 · MINUTO 1 (ventanas 0-3). Hubs nuevos con el monje en el centro; las escenas son el mundo del minuto 1 v1
 // (Min1.tsx: tragamonedas muda, 2:07, tirones, cerebro del maybe, ojo, mala, engranajes), ahora visto a través de portales.
 import React from "react";
-import { N, neonOn, ramp, easeOut } from "../../kits/neon/base";
+import { N, neonOn, ramp } from "../../kits/neon/base";
 import { Escenario } from "../../kits/neon/Layout";
 import { TituloNeon } from "../../kits/neon/Titulo";
 import { Mundo as Mundo1, cam as cam1 } from "../Min1";

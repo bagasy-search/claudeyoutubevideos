@@ -1,16 +1,14 @@
 // gb01 v2 · MINUTO 3 (ventanas 8-11, 134-205 s): Skinner cambia una cosa · la ruleta sin patrón · la paloma que
 // enloquece · recompensa variable · cerebro que se relaja vs que se inclina · dopamina = querer · el mono y la señal.
 import React from "react";
-import { N, Toma, easeOut, lerp, neonOn, ramp, useT, vis } from "../../kits/neon/base";
+import { N, lerp, neonOn, ramp } from "../../kits/neon/base";
 import { T } from "./datos";
 import { Glifo, TextoNeon, Trazo } from "./glifo";
-import { Contador, EscenaMundo, Obj, Texto, circ, Png } from "./esc";
-import { Paloma } from "./m02";
+import { Obj, circ, Beat, EscenaHeroes, reg } from "./esc";
+import { } from "./m02";
 import type { Seg } from "./Video";
 
 type D = React.FC<{ t: number; t0: number; on: number; tam: number }>;
-const svgAbs = (x: number, y: number) => ({ position: "absolute" as const, left: x, top: y, overflow: "visible" as const });
-
 // ═════════ HUB 8 · "Then Skinner changed one thing. Sometimes the lever gave food" ═════════
 const CajaMini: D = ({ t, t0, on, tam }) => (
   <Glifo t={t} t0={t0} on={on} tam={tam} color={N.cian} trazos={[
@@ -36,88 +34,14 @@ const Grano: D = ({ t, t0, on, tam }) => (
 
 // ═════════ ESCENA 8 · ruleta sin patrón · la paloma enloquece · más que antes · aunque no haya comida ═════════
 const E8 = { nothing: T("gave nothing", 139), pattern: T("No pattern", 140), chance: T("Pure chance", 142), crazy: T("went crazy", 143), pressed: T("pressed and pressed", 145), more: T("much more", 148), kept: T("kept pressing", 149.5), stopped: T("food had stopped", 151) };
-const tomas8: Toma[] = [[138.7, 0, 0, 1.22], [143.4, 0, 0, 1.12], [143.8, 940, 0, 1.04], [149.4, 940, 0, 1.12], [151.2, 940, 20, 1.2]];
-const RES = [1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0];
-const Ruleta: React.FC = () => {
-  const t = useT();
-  const giro = t < E8.nothing ? 0 : 900 * (1 - Math.exp(-1.6 * (t - E8.nothing)));
-  return (
-    <>
-      <Obj x={0} y={-30} t0={E8.nothing - 0.6} tam={220} color={N.violeta} trazos={[
-        { d: circ(0, 0, 180), a: 2.4 },
-        { d: "M0,-200 L-14,-226 L14,-226 Z", c: N.oroClaro, a: 2.4, f: N.oro },
-      ]}>
-        <g transform={`rotate(${giro})`}>
-          {Array.from({ length: 12 }, (_, i) => {
-            const a = (i / 12) * Math.PI * 2;
-            return (
-              <g key={i}>
-                <line x1={0} y1={0} x2={Math.cos(a) * 180} y2={Math.sin(a) * 180} stroke={N.gris} strokeWidth={1.5} />
-                {RES[i] ? <circle cx={Math.cos(a + 0.26) * 130} cy={Math.sin(a + 0.26) * 130} r={12} fill={N.oro} style={{ filter: `drop-shadow(0 0 6px ${N.oro})` }} />
-                  : <path d={`M${Math.cos(a + 0.26) * 130 - 10},${Math.sin(a + 0.26) * 130 - 10} l20,20 m0,-20 l-20,20`} stroke={N.rojo} strokeWidth={4} />}
-              </g>
-            );
-          })}
-        </g>
-      </Obj>
-      {/* tira de resultados: sin patrón */}
-      <svg width={1} height={1} style={svgAbs(-330, 290)}>
-        {RES.concat([0, 1]).map((r, i) => {
-          const on = neonOn(t, E8.pattern + i * 0.09);
-          return r ? <circle key={i} cx={i * 52} cy={0} r={14} fill={N.oro} opacity={on} style={{ filter: `drop-shadow(0 0 6px ${N.oro})` }} />
-            : <path key={i} d={`M${i * 52 - 12},-12 l24,24 m0,-24 l-24,24`} stroke={N.rojo} strokeWidth={4} opacity={on} />;
-        })}
-      </svg>
-      <Texto x={0} y={-310} t0={E8.pattern} t1={E8.chance} texto="no *pattern*" size={56} />
-      <Texto x={0} y={-310} t0={E8.chance} texto="pure *chance*" size={56} color={N.violeta} />
-    </>
-  );
-};
 const presiones = (a: number, b: number, paso: number) => Array.from({ length: Math.floor((b - a) / paso) }, (_, i) => a + i * paso);
-const PalomaLoca: React.FC = () => {
-  const t = useT();
-  const P1 = presiones(E8.pressed, E8.stopped + 1.6, 0.21);
-  const n = P1.filter((x) => x <= t).length;
-  const vacia = ramp(t, E8.kept, 0.4);
-  return (
-    <>
-      <Obj x={940} y={40} t0={E8.crazy - 0.5} tam={200} color={N.cian} trazos={[
-        { d: "M-240,-140 L180,-140 L250,-190 L-170,-190 Z M180,-140 L180,160 L250,110 L250,-190 M-240,-140 L-240,160 L180,160", a: 2.2 },
-      ]} />
-      <Paloma x={880} y={140} t0={E8.crazy - 0.3} picotazos={P1} s={1.5} color={N.oroClaro} />
-      <svg width={1} height={1} style={svgAbs(1060, 80)}>
-        {(() => { const ult = P1.filter((x) => x <= t).pop() ?? -9; const g = Math.max(0, 1 - (t - ult) / 0.18); return (
-          <g stroke={N.oro} strokeWidth={5} fill="none" strokeLinecap="round" style={{ filter: `drop-shadow(0 0 8px ${N.oro})` }}>
-            <path d="M0,0 L40,0" /><path d={`M8,0 L-12,${-36 + 26 * g}`} /><circle cx={-12} cy={-40 + 26 * g} r={8} fill={N.rojo} stroke={N.rojo} />
-          </g>); })()}
-        <path d="M-6,90 L52,90 L46,110 L0,110 Z" stroke={vacia > 0.5 ? N.rojo : N.oro} strokeWidth={4} fill="none" />
-        <text x={24} y={140} textAnchor="middle" fontFamily="sans-serif" fontWeight={900} fontSize={22} fill={N.rojo} opacity={vacia}>EMPTY</text>
-      </svg>
-      <Contador x={940} y={-290} t0={E8.pressed} d={0.01} a0={n} a1={n} size={110} color={N.oroClaro} sufijo="presses" />
-      {/* antes vs ahora */}
-      <svg width={1} height={1} style={svgAbs(1300, 140)} opacity={ramp(t, E8.more, 0.3)}>
-        <rect x={0} y={-60} width={50} height={60} fill="none" stroke={N.gris} strokeWidth={3} />
-        <rect x={80} y={-260 * ramp(t, E8.more, 0.9, easeOut)} width={50} height={260 * ramp(t, E8.more, 0.9, easeOut)} fill="rgba(244,194,74,.2)" stroke={N.oro} strokeWidth={3} style={{ filter: `drop-shadow(0 0 8px ${N.oro})` }} />
-        <text x={25} y={30} textAnchor="middle" fontFamily="sans-serif" fontWeight={800} fontSize={18} fill={N.texto2}>before</text>
-        <text x={105} y={30} textAnchor="middle" fontFamily="sans-serif" fontWeight={800} fontSize={18} fill={N.oroClaro}>now</text>
-      </svg>
-    </>
-  );
-};
 // objetos de vidrio de la escena 8
-const H8: React.FC = () => (
-  <>
-    <Png id="ruleta" x={470} y={60} w={260} t0={E8.chance} glow={N.rojo} />
-    <Png id="chispa" x={1360} y={-60} w={170} t0={E8.crazy} glow={N.oro} />
-  </>
-);
-const Escena8: React.FC = () => (
-  <EscenaMundo tomas={tomas8}><H8 />
-    <Ruleta />
-    <PalomaLoca />
-    <Texto x={940} y={330} t0={E8.kept} texto="long after the food *stopped*" size={46} color={N.rojoBorde} />
-  </EscenaMundo>
-);
+const B8: Beat[] = reg([
+  { t: T("gave nothing", 139), id: "h_ruleta_vacia", glow: N.violeta, tit: "no *pattern*" },
+  { t: T("went crazy", 143), id: "h_paloma_loca", glow: N.rojo, tit: "the pigeons went *crazy*" },
+  { t: T("kept pressing", 149.5), id: "h_palanca_gastada", glow: N.oro, tit: "long after the food *stopped*" },
+]);
+const Escena8: React.FC = () => <EscenaHeroes ini={138.7} fin={151.2} beats={B8} />;
 
 // ═════════ HUB 9 · "after the food had stopped. Scientists call this a variable reward." ═════════
 const BandejaVacia: D = ({ t, t0, on, tam }) => (
@@ -145,63 +69,13 @@ const BarrasVariables: D = ({ t, t0, on, tam }) => {
 
 // ═════════ ESCENA 9 · "I call it the maybe … brain relaxes … leans forward … cannot stop thinking" ═════════
 const E9 = { maybe: T("maybe", 157), know: T("know exactly", 158), relax: T("relaxes", 160), dont: T("don't know", 162), leans: T("leans forward", 163.5), stop: T("cannot stop", 165) };
-const tomas9: Toma[] = [[156.3, 0, -230, 1.3], [157.9, 0, -40, 0.92], [158.4, -460, 40, 1.18], [162.1, -460, 40, 1.22], [162.5, 460, 40, 1.18], [165.3, 460, 40, 1.26], [167.6, 0, 20, 0.92]];
-const CerebroMini: React.FC<{ x: number; y: number; t0: number; rot?: number; color: string; brillo?: number }> = ({ x, y, t0, rot = 0, color, brillo = 0 }) => (
-  <Obj x={x} y={y} t0={t0} tam={360} color={color} rot={rot} trazos={[
-    { d: "M-90,20 Q-110,-60 -40,-80 Q0,-110 50,-84 Q110,-70 100,0 Q110,50 50,60 Q30,90 -10,70 Q-70,80 -90,20 Z", a: 2.6, f: `rgba(255,255,255,${0.03 + 0.12 * brillo})` },
-    { d: "M-60,-20 Q-30,-50 0,-30 Q30,-60 60,-24 M-50,20 Q-10,0 20,24 Q50,10 70,30", a: 1.6 },
-    { d: "M10,60 Q14,90 4,110", a: 2.2 },
-  ]} />
-);
-const Ondas: React.FC<{ x: number; y: number; t0: number; color: string; vel: number; amp: number }> = ({ x, y, t0, color, vel, amp }) => {
-  const t = useT();
-  if (t < t0) return null;
-  const d = Array.from({ length: 60 }, (_, i) => `${i ? "L" : "M"}${-200 + i * 7},${amp * Math.sin(i * 0.3 - t * vel)}`).join(" ");
-  return <svg width={1} height={1} style={svgAbs(x, y)} opacity={ramp(t, t0, 0.4)}><path d={d} fill="none" stroke={color} strokeWidth={3} style={{ filter: `drop-shadow(0 0 6px ${color})` }} /></svg>;
-};
-const BucleIdea: React.FC<{ x: number; y: number; t0: number }> = ({ x, y, t0 }) => {
-  const t = useT();
-  if (t < t0 - 0.1) return null;
-  const a = (t - t0) * 360;
-  return (
-    <svg width={1} height={1} style={svgAbs(x, y)} opacity={ramp(t, t0, 0.3)}>
-      <g transform={`rotate(${a})`}>
-        <path d="M150,0 A150,150 0 0,1 -106,106" fill="none" stroke={N.oro} strokeWidth={4} style={{ filter: `drop-shadow(0 0 8px ${N.oro})` }} />
-        <path d="M-106,106 l-4,-26 m4,26 l24,-8" stroke={N.oro} strokeWidth={4} />
-        <path d="M-150,0 A150,150 0 0,1 106,-106" fill="none" stroke={N.oro} strokeWidth={4} style={{ filter: `drop-shadow(0 0 8px ${N.oro})` }} />
-        <path d="M106,-106 l4,26 m-4,-26 l-24,8" stroke={N.oro} strokeWidth={4} />
-      </g>
-    </svg>
-  );
-};
 // objetos de vidrio de la escena 9
-const H9: React.FC = () => (
-  <>
-    <Png id="regalo" x={0} y={80} w={230} t0={E9.maybe} t1={E9.relax - 0.3} glow={N.rojo} />
-  </>
-);
-const Escena9: React.FC = () => {
-  const t = useT();
-  const inclina = 22 * ramp(t, E9.leans, 0.6, easeOut);
-  return (
-    <EscenaMundo tomas={tomas9}><H9 />
-      <Texto x={0} y={-250} t0={E9.maybe - 0.1} texto="the *maybe*" size={110} color={N.oroClaro} />
-      {/* lo sé: caja abierta, cerebro tranquilo */}
-      <Obj x={-460} y={-170} t0={E9.know} tam={220} color={N.cianClaro} trazos={[{ d: "M-60,0 L60,0 L60,60 L-60,60 Z M-60,0 L-80,-30 M60,0 L80,-30", a: 2.4 }, { d: circ(0, -10, 16), c: N.oro, a: 2.4 }]} />
-      <CerebroMini x={-460} y={110} t0={E9.know + 0.3} color={N.cian} />
-      <Ondas x={-460} y={300} t0={E9.relax} color={N.cian} vel={1.2} amp={8} />
-      <Texto x={-460} y={-300} t0={E9.relax} texto="the brain *relaxes*" size={40} color={N.cianClaro} />
-      {/* no sé: caja cerrada con ?, cerebro inclinado hacia adelante */}
-      <Obj x={460} y={-170} t0={E9.dont} tam={220} color={N.violeta} trazos={[{ d: "M-60,-30 L60,-30 L60,60 L-60,60 Z M-66,-30 L66,-30", a: 2.4 }]}>
-        <TextoNeon y={16} texto="?" size={64} color={N.oroClaro} />
-      </Obj>
-      <CerebroMini x={460} y={110} t0={E9.dont + 0.3} rot={inclina} color={N.oro} brillo={ramp(t, E9.leans, 0.4)} />
-      <Ondas x={460} y={300} t0={E9.leans} color={N.oro} vel={7} amp={26} />
-      <BucleIdea x={460} y={110} t0={E9.stop} />
-      <Texto x={460} y={-300} t0={E9.leans} texto="the brain *leans forward*" size={40} color={N.oroClaro} />
-    </EscenaMundo>
-  );
-};
+const B9: Beat[] = reg([
+  { t: T("maybe", 157), id: "h_quizas", glow: N.oro, tit: "the *maybe*" },
+  { t: T("relaxes", 160), id: "h_cerebro_relajado", glow: N.cian, tit: "you know, it *relaxes*" },
+  { t: T("leans forward", 163.5), id: "h_cerebro_inclinado", glow: N.rojo, tit: "you don't, it *leans forward*" },
+]);
+const Escena9: React.FC = () => <EscenaHeroes ini={156.3} fin={167.6} beats={B9} />;
 
 // ═════════ HUB 10 · "look inside the glass brain. Deep in the middle, a small group of cells" ═════════
 const CerebroVidrio: D = ({ t, t0, on, tam }) => (
@@ -226,44 +100,6 @@ const Celulas: D = ({ t, t0, on, tam }) => (
 
 // ═════════ ESCENA 10 · neuronas que sueltan dopamina · "pleasure" tachado · "wanting" · el mono ═════════
 const E10 = { release: T("release a chemical", 173), dopa: T("dopamine", 174), pleasure: T("pleasure chemical", 176), not: T("not quite right", 178.5), wanting: T("wanting", 182), forward: T("looking forward", 183.5), monkeys: T("monkeys", 186) };
-const tomas10: Toma[] = [[173.2, 0, 0, 1.32], [175.8, 0, 0, 1.0], [180.2, 240, -40, 1.04], [184.6, 330, -40, 1.0], [186.0, 1050, 0, 1.18], [188.2, 1050, 0, 1.24]];
-const Neurona: React.FC<{ x: number; y: number; t0: number; rot: number; tFuego: number }> = ({ x, y, t0, rot, tFuego }) => {
-  const t = useT();
-  const f = neonOn(t, tFuego);
-  return (
-    <Obj x={x} y={y} t0={t0} tam={300} color={N.oro} rot={rot} trazos={[
-      { d: circ(0, 0, 26), a: 2.6, f: `rgba(244,194,74,${0.1 + 0.4 * f})` },
-      { d: "M20,-16 Q60,-40 90,-30 M60,-34 L80,-60 M-22,-14 Q-60,-50 -84,-40 M-26,8 Q-70,20 -90,50 M0,26 Q10,80 60,110 Q80,120 110,110", a: 1.8 },
-    ]} />
-  );
-};
-const Moleculas: React.FC = () => {
-  const t = useT();
-  if (t < E10.release) return null;
-  return (
-    <svg width={1} height={1} style={svgAbs(0, 0)}>
-      {Array.from({ length: 22 }, (_, i) => {
-        const d = t - (E10.release + (i % 11) * 0.12);
-        if (d < 0) return null;
-        const a = (i / 22) * Math.PI * 2 + i * 0.4, r = 40 + 220 * (1 - Math.exp(-0.8 * d));
-        const x = Math.cos(a) * r, y = Math.sin(a) * r * 0.8, h = 12;
-        const hex = Array.from({ length: 6 }, (_, k) => `${k ? "L" : "M"}${x + Math.cos((k / 6) * Math.PI * 2 + t) * h},${y + Math.sin((k / 6) * Math.PI * 2 + t) * h}`).join(" ") + "Z";
-        return <path key={i} d={hex} fill="rgba(244,194,74,.25)" stroke={N.oro} strokeWidth={2.4} opacity={Math.min(1, d * 3)} style={{ filter: `drop-shadow(0 0 6px ${N.oro})` }} />;
-      })}
-    </svg>
-  );
-};
-const Tachado: React.FC<{ x: number; y: number; t0: number; ancho: number }> = ({ x, y, t0, ancho }) => {
-  const t = useT();
-  if (t < t0) return null;
-  return <svg width={1} height={1} style={svgAbs(x, y)}><path d={`M${-ancho / 2},6 L${-ancho / 2 + ancho * ramp(t, t0, 0.35)},-6`} stroke={N.rojo} strokeWidth={7} strokeLinecap="round" style={{ filter: `drop-shadow(0 0 8px ${N.rojo})` }} /></svg>;
-};
-const Flecha: React.FC<{ x: number; y: number; t0: number; largo: number; color: string }> = ({ x, y, t0, largo, color }) => {
-  const t = useT();
-  if (t < t0) return null;
-  const k = ramp(t, t0, 0.6, easeOut), L = largo * k;
-  return <svg width={1} height={1} style={svgAbs(x, y)}><path d={`M0,0 L${L},0 M${L - 26},-18 L${L},0 L${L - 26},18`} fill="none" stroke={color} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" style={{ filter: `drop-shadow(0 0 10px ${color})` }} /></svg>;
-};
 export const Mono: React.FC<{ x: number; y: number; t0: number; s?: number }> = ({ x, y, t0, s = 1 }) => (
   <Obj x={x} y={y} t0={t0} tam={300 * s} color="#e6eeff" trazos={[
     { d: circ(0, 0, 70), a: 2.4 },
@@ -274,27 +110,13 @@ export const Mono: React.FC<{ x: number; y: number; t0: number; s?: number }> = 
   ]} />
 );
 // objetos de vidrio de la escena 10
-const H10: React.FC = () => (
-  <>
-    <Png id="dopamina" x={-450} y={40} w={240} t0={E10.dopa} glow={N.oro} />
-    <Png id="mono" x={1470} y={60} w={260} t0={E10.monkeys} glow={N.oro} />
-  </>
-);
-const Escena10: React.FC = () => (
-  <EscenaMundo tomas={tomas10}><H10 />
-    <Neurona x={-70} y={-40} t0={E10.release - 0.6} rot={0} tFuego={E10.release} />
-    <Neurona x={80} y={40} t0={E10.release - 0.45} rot={150} tFuego={E10.release + 0.15} />
-    <Neurona x={-20} y={100} t0={E10.release - 0.3} rot={260} tFuego={E10.release + 0.3} />
-    <Moleculas />
-    <Texto x={0} y={-310} t0={E10.dopa} t1={E10.pleasure - 0.1} texto="*dopamine*" size={90} color={N.oroClaro} />
-    <Texto x={240} y={-320} t0={E10.pleasure} texto="pleasure" size={70} color="#e6eeff" />
-    <Tachado x={240} y={-320} t0={E10.not} ancho={330} />
-    <Texto x={240} y={-190} t0={E10.wanting} texto="*wanting*" size={96} color={N.oro} />
-    <Flecha x={60} y={-80} t0={E10.forward} largo={520} color={N.oro} />
-    <Texto x={330} y={-20} t0={E10.forward} texto="looking *forward*" size={40} color={N.oroClaro} />
-    <Mono x={1050} y={0} t0={E10.monkeys} />
-  </EscenaMundo>
-);
+const B10: Beat[] = reg([
+  { t: T("release a chemical", 173), id: "h_neurona_dopa", glow: N.oro, tit: "*dopamine*" },
+  { t: T("not quite right", 178.5), id: "h_caramelo_roto", glow: N.rojo, tit: "not *pleasure*" },
+  { t: T("wanting", 182), id: "h_mano_alcanza", glow: N.violeta, tit: "the chemical of *wanting*" },
+  { t: T("monkeys", 186), id: "h_mono_luz", glow: N.cian, tit: "the *monkey* experiments" },
+]);
+const Escena10: React.FC = () => <EscenaHeroes ini={173.2} fin={188.2} beats={B10} />;
 
 // ═════════ HUB 11 · "scientists saw these cells fire hardest, not when the reward" ═════════
 const MonoChico: D = ({ t, t0, on, tam }) => (
@@ -316,61 +138,13 @@ const Gota: D = ({ t, t0, on, tam }) => (
 
 // ═════════ ESCENA 11 · la señal: el pico aparece cuando es POSIBLE, no cuando llega · "a maybe machine" ═════════
 const E11 = { arrived: T("arrived", 192), possible: T("possible", 194), certain: T("not yet certain", 195), excited: T("excited", 197.5), prize: T("not by the prize", 199.5), slot: T("slot machine is", 201.5), machine: T("maybe machine", 203) };
-const tomas11: Toma[] = [[192.4, 0, 0, 1.12], [197.0, 0, 0, 1.0], [197.4, 560, 0, 1.06], [201.7, 560, 0, 1.1], [202.2, 1150, 0, 1.18], [204.6, 1150, 0, 1.24]];
-const Senal: React.FC = () => {
-  const t = useT();
-  const k = ramp(t, E11.arrived - 0.2, 3.2, (u) => u);
-  const xCue = -260, xRew = 200;
-  const pts = Array.from({ length: 120 }, (_, i) => {
-    const x = -420 + i * 7.5;
-    let y = 0;
-    if (Math.abs(x - xCue) < 60) y = -150 * Math.exp(-Math.pow((x - xCue) / 22, 2)) * (1 + 0.2 * Math.sin(i * 1.7));
-    else if (Math.abs(x - xRew) < 40) y = -30 * Math.exp(-Math.pow((x - xRew) / 18, 2));
-    else y = 6 * Math.sin(i * 2.3);
-    return [x, y] as const;
-  }).filter(([x]) => x < -420 + 900 * k);
-  return (
-    <>
-      <Obj x={0} y={0} t0={E11.arrived - 0.4} tam={200} color="#e6eeff" trazos={[{ d: "M-440,-200 L440,-200 L440,120 L-440,120 Z", a: 1.6 }, { d: "M-420,60 L420,60", c: N.gris, a: 1 }]} />
-      <svg width={1} height={1} style={svgAbs(0, 60)}>
-        <path d={pts.map(([x, y], i) => `${i ? "L" : "M"}${x},${y}`).join(" ")} fill="none" stroke={N.fosfo} strokeWidth={4} style={{ filter: `drop-shadow(0 0 8px ${N.fosfo})` }} />
-      </svg>
-      <Texto x={xCue} y={210} t0={E11.possible} texto="*possible*" size={48} color={N.fosfo} />
-      <Texto x={xCue} y={268} t0={E11.certain} texto="not yet certain" size={28} color={N.texto2} />
-      <Obj x={xRew} y={-80} t0={E11.arrived} tam={140} color={N.cian} trazos={[{ d: "M0,-50 Q34,0 26,26 Q16,50 0,50 Q-16,50 -26,26 Q-34,0 0,-50 Z", a: 2.6, f: "rgba(39,227,255,.15)" }]} />
-      <Texto x={xRew} y={210} t0={E11.arrived + 0.2} texto="reward" size={36} color={N.cianClaro} />
-    </>
-  );
-};
-const MaquinaQuizas: React.FC = () => {
-  const t = useT();
-  const on = neonOn(t, E11.machine);
-  return (
-    <Obj x={1150} y={20} t0={E11.slot - 0.3} tam={240} color={N.oro} trazos={[
-      { d: "M-120,-150 L120,-150 L140,170 L-140,170 Z", a: 2.6, f: "rgba(244,194,74,.05)" },
-      { d: "M-90,-210 Q0,-260 90,-210 L120,-150 L-120,-150 Z", c: N.rojo, a: 2.4 },
-      { d: "M-90,-60 L90,-60 L90,40 L-90,40 Z", a: 2.2 },
-      { d: "M140,-40 L176,-40 L176,-120", a: 3 },
-    ]}>
-      <TextoNeon y={-186} texto="MAYBE" size={34} color={N.oroClaro} on={on} />
-      {["?", "?", "?"].map((c, i) => <TextoNeon key={i} x={-60 + i * 60} y={-8} texto={c} size={60} color={i === 1 ? N.rojo : N.cianClaro} on={on} />)}
-    </Obj>
-  );
-};
 // objetos de vidrio de la escena 11
-const H11: React.FC = () => (
-  <>
-    <Png id="tragamonedas" x={1570} y={60} w={260} t0={E11.slot} glow={N.oro} />
-  </>
-);
-const Escena11: React.FC = () => (
-  <EscenaMundo tomas={tomas11}><H11 />
-    <Senal />
-    <Texto x={560} y={-300} t0={E11.excited} texto="excited by the *maybe*" size={52} color={N.oroClaro} />
-    <Texto x={560} y={-220} t0={E11.prize} texto="not by the prize" size={34} color={N.texto2} />
-    <MaquinaQuizas />
-  </EscenaMundo>
-);
+const B11: Beat[] = reg([
+  { t: T("possible", 194), id: "h_regalo_luz", glow: N.oro, tit: "when a reward is *possible*" },
+  { t: T("not by the prize", 199.5), id: "h_trofeo_apagado", glow: N.violeta, tit: "not by the *prize*" },
+  { t: T("slot machine is", 201.5), id: "h_tragamonedas", glow: N.rojo, tit: "a *maybe* machine" },
+]);
+const Escena11: React.FC = () => <EscenaHeroes ini={192.4} fin={204.6} beats={B11} />;
 
 export const SEGS_M03: Seg[] = [
   {
