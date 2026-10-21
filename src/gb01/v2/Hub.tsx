@@ -54,10 +54,9 @@ export const MonjeHub: React.FC<{ v: Ventana; t: number }> = ({ v, t }) => {
   const dur = Math.round((v.t1 - v.t0 + pre + 0.1) * FPS);
   const k = ramp(t, v.t0 - 0.14, 0.5, easeOut);
   return (
-    <div style={{ position: "absolute", left: 960 - W / 2, top: 1080 - Hh + 40, width: W, height: Hh, opacity: on, transform: `scale(${0.96 + 0.04 * k})`, transformOrigin: "50% 100%",
-      WebkitMaskImage: "linear-gradient(to bottom, #000 78%, transparent 97%)", maskImage: "linear-gradient(to bottom, #000 78%, transparent 97%)" }}>
+    <div style={{ position: "absolute", left: 960 - W / 2, top: 1080 - Hh + 40, width: W, height: Hh, opacity: on, transform: `scale(${0.96 + 0.04 * k})`, transformOrigin: "50% 100%" }}>
       <Sequence from={from} durationInFrames={dur} layout="none">
-        <AbsoluteFill style={{ filter: "drop-shadow(0 0 22px rgba(39,227,255,.28)) drop-shadow(0 0 2px rgba(203,251,255,.5))" }}>
+        <AbsoluteFill>{/* avatar nítido: sin halo, sin fundido ni desenfoque (orden del creador 21-oct) */}
           <OffthreadVideo src={staticFile(P + "reel_alfa.webm")} transparent muted startFrom={start} style={{ width: "100%", height: "100%" }} />
         </AbsoluteFill>
       </Sequence>
@@ -74,9 +73,7 @@ export const Mandala: React.FC<{ t: number; t0: number; color?: string }> = ({ t
     <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity: on * 0.9 }}>
       <defs>
         <BlurDef id={id} s={6} />
-        <radialGradient id={id + "g"}><stop offset="0" stopColor={color} stopOpacity={0.22} /><stop offset="1" stopColor={color} stopOpacity={0} /></radialGradient>
       </defs>
-      <circle cx={CENTRO[0]} cy={CENTRO[1]} r={520} fill={`url(#${id}g)`} opacity={respira(t, 0, 0.2)} />
       {R.map((r, i) => {
         const giro = (i % 2 ? -1 : 1) * (t * (6 + i * 3));
         const n = 12 + i * 12;
