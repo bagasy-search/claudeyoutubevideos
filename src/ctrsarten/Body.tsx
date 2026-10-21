@@ -5,7 +5,7 @@ import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { EV0, Ev, KitchenWorld, makeCam, PT, win, Key } from "./cocina3d";
 import { BigNum, COL, Chips, DrawX, Flash, FONT, Portal, Tag, Thermo, e, ei, extrude, spr } from "./lib";
-import { at, Avatar, Line, Shot, Stamp, Sticker, WIN } from "./Min1";
+import { at, Avatar, Line, MIN1_END, Shot, Stamp, Sticker, WIN } from "./Min1";
 import { Balance, Book3D, CheckOn, CommentType, DescBox, Dose, EndCard, Equation, ErrorBanner, Habits, Note, Polaroids, RecapRail, SafetyRow, Section, Spent, SubBtn, Versus, WaterGauge } from "./body_fx";
 
 type V3 = [number, number, number];
@@ -700,5 +700,6 @@ export const Body: React.FC = () => {
       if (g.i !== 51) L.push(<Portal key={"po" + g.i} x={ptOf(t, o).x} y={ptOf(t, o).y} r={r}><Avatar t={Math.max(e0, t)} /></Portal>);
     }
   }
-  return <AbsoluteFill style={{ background: "#05070b" }}>{L}</AbsoluteFill>;
+  // el fondo negro recién cuando el minuto 1 ya salió: antes tapaba al avatar (10 cuadros negros a 68,3 s)
+  return <AbsoluteFill style={{ background: t >= MIN1_END + 0.4 ? "#05070b" : undefined }}>{L}</AbsoluteFill>;
 };
