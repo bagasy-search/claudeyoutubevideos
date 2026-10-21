@@ -120,7 +120,7 @@ export const makeVideo = (spec: VideoSpec) => {
   // avatar: TODAS las ventanas pagadas del reel (preroll 10 cuadros, cola 0,65 s para salir con transición)
   const WINS: Win[] = spec.avwin.map(([ms, me, off]) => ({ ms, me, off }));
   const reel = spec.reel ?? "reel0";
-  const Avatar: Kit["Avatar"] = ({ t, blur = 0, dark = 0, edge = 0 }) => {
+  const Avatar: Kit["Avatar"] = ({ t, dark = 0 }) => {
     const face = WINS.filter((w) => w.ms >= T0 - 1).map((w, i) => (
       <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 30} layout="none">
         <AbsoluteFill style={{ opacity: t >= w.ms - 0.02 && t < w.me + 0.65 ? 1 : 0 }}>
@@ -130,8 +130,8 @@ export const makeVideo = (spec: VideoSpec) => {
     ));
     return (
       <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
-        <AbsoluteFill style={{ filter: blur > 0.2 ? `blur(${blur}px) brightness(${1 - dark})` : dark > 0 ? `brightness(${1 - dark})` : undefined, transform: blur > 0.2 ? "scale(1.05)" : undefined }}>{face}</AbsoluteFill>
-        {edge > 0.01 && <AbsoluteFill style={{ filter: `blur(${14 * edge}px) brightness(.7)`, transform: "scale(1.04)", WebkitMaskImage: "radial-gradient(ellipse 46% 52% at 50% 42%, transparent 55%, #000 100%)" } as React.CSSProperties}>{face}</AbsoluteFill>}
+        {/* ⛔ 21-oct: avatar SIN desenfoque (nada de blur, halo, feather ni máscara radial): sólo se oscurece apenas bajo una pieza */}
+        <AbsoluteFill style={{ filter: dark > 0 ? `brightness(${1 - dark})` : undefined }}>{face}</AbsoluteFill>
       </AbsoluteFill>
     );
   };
