@@ -46,7 +46,11 @@ const SEGS: Seg[] = (() => {
   }
   const s = out.filter((x) => x.a >= REST_START - 0.01);
   for (let i = 0; i < s.length; i++) { s[i].b = i + 1 < s.length ? s[i + 1].a : REST_END + 1; s[i].i = i; }
-  return s.filter((x) => x.b - x.a > 0.05);
+  // ⛔ al sacar los tramos mínimos (un G que arranca centésimas antes del cierre del avatar) hay que RE-cerrar los vecinos:
+  // si no, queda un hueco sin tramo → Trans devuelve null → 1-2 cuadros NEGROS (medido 21-oct: 18 cortes)
+  const f = s.filter((x) => x.b - x.a > 0.05);
+  for (let i = 0; i < f.length; i++) f[i].b = i + 1 < f.length ? f[i + 1].a : REST_END + 1; // .i se conserva (decide portal/barrido)
+  return f;
 })();
 
 // foto con movimiento lento (alterna acercarse / alejarse y el lado del paneo)
@@ -89,8 +93,8 @@ const Mix: React.FC<{ t: number; a: number; b: number; from: Seg; to: Seg; n: nu
   }
   const dir = n % 2 ? 1 : -1, mb = Math.sin(k * Math.PI) * 40;
   return <>
-    <AbsoluteFill style={{ transform: `translateX(${-dir * k * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><Base s={from} t={t} /></AbsoluteFill>
-    <AbsoluteFill style={{ transform: `translateX(${dir * (1 - k) * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><Base s={to} t={t} /></AbsoluteFill>
+    <AbsoluteFill style={{ transform: `translateX(${-dir * k * 1920}px)`, filter: mb > 1 && from.k !== "av" ? `blur(${mb}px)` : undefined }}><Base s={from} t={t} /></AbsoluteFill>
+    <AbsoluteFill style={{ transform: `translateX(${dir * (1 - k) * 1920}px)`, filter: mb > 1 && to.k !== "av" ? `blur(${mb}px)` : undefined }}><Base s={to} t={t} /></AbsoluteFill>
   </>;
 };
 

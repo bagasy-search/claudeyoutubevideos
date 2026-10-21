@@ -26,13 +26,18 @@ export const WIN: W[] = (AVW as unknown as { win: W[] }).win;
 const AV_STOVE = { x: 1597, y: 760 };
 
 export const Avatar: React.FC<{ t: number; blur?: number; dark?: number }> = ({ t, blur = 0, dark = 0 }) => {
+  // +14 cuadros: la Sequence sigue viva durante la transición de salida; antes se desmontaba y quedaban cuadros NEGROS (molde hdcesq 8e48f1f7/8e103475)
+  // ventana visible: la que contiene t; si t cae fuera (fundido de entrada o salida), la vecina cuya Sequence sigue montada → nunca cuadro negro
+  const cur = WIN.findIndex((w) => t >= w.ms - 0.02 && t < w.me);
+  const vis = cur >= 0 ? cur : WIN.findIndex((w) => t >= w.ms - 0.32 && t < w.me + 0.8);
   const face = REEL ? <>{WIN.map((w, i) => (
-    <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12} layout="none">
-      <AbsoluteFill style={{ opacity: t >= w.ms - 0.02 && t < w.me ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
+    <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12 + 14} layout="none">
+      <AbsoluteFill style={{ opacity: i === vis ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
     </Sequence>))}</> : <Img src={staticFile(P + "av_still.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
-      <AbsoluteFill style={{ filter: blur > 0.2 ? `blur(${blur}px) brightness(${1 - dark})` : dark > 0 ? `brightness(${1 - dark})` : undefined, transform: blur > 0.2 ? "scale(1.04)" : undefined }}>{face}</AbsoluteFill>
+      {/* SIN desenfoque en el avatar (orden del creador 21-oct): blur se ignora */}
+      <AbsoluteFill style={{ filter: dark > 0 ? `brightness(${1 - dark})` : undefined }}>{face}</AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -165,9 +170,11 @@ const Chip: React.FC<{ t: number; at: number; out: number; text: string; col?: s
 // deslizamiento lateral con desenfoque (A sale, B entra)
 const Slide: React.FC<{ t: number; a: number; b: number; from: React.ReactNode; to: React.ReactNode; dir?: number }> = ({ t, a, b, from, to, dir = 1 }) => {
   const k = ei(t, a, b), mb = Math.sin(k * Math.PI) * 40;
+  // el lado que es el avatar va SIN blur (orden del creador 21-oct); el otro lado conserva el barrido
+  const isAv = (x: React.ReactNode) => React.isValidElement(x) && x.type === Avatar;
   return <>
-    <AbsoluteFill style={{ transform: `translateX(${-dir * k * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}>{from}</AbsoluteFill>
-    {k > 0 && <AbsoluteFill style={{ transform: `translateX(${dir * (1 - k) * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}>{to}</AbsoluteFill>}
+    <AbsoluteFill style={{ transform: `translateX(${-dir * k * 1920}px)`, filter: mb > 1 && !isAv(from) ? `blur(${mb}px)` : undefined }}>{from}</AbsoluteFill>
+    {k > 0 && <AbsoluteFill style={{ transform: `translateX(${dir * (1 - k) * 1920}px)`, filter: mb > 1 && !isAv(to) ? `blur(${mb}px)` : undefined }}>{to}</AbsoluteFill>}
   </>;
 };
 
@@ -240,7 +247,7 @@ export const Min1: React.FC = () => {
   if (t >= 37.85 && t < 47.7) {
     const z = ei(t, 37.85, 38.15);
     L.push(<AbsoluteFill key="w5" style={{ opacity: z }}><World t={t} /></AbsoluteFill>);
-    if (z < 1) L.unshift(<AbsoluteFill key="av5" style={{ transform: `scale(${1 + z * 0.08})`, filter: `blur(${z * 14}px)` }}><Avatar t={t} /></AbsoluteFill>);
+    if (z < 1) L.unshift(<AbsoluteFill key="av5" style={{ transform: `scale(${1 + z * 0.08})` }}><Avatar t={t} /></AbsoluteFill>);
     const g = screenOf(t, PT.thermoAt(20));
     L.push(<Tag key="m20" t={t} at={39.0} x={g.x} y={g.y} dx={240} dy={-30} text="META: 20 °C" col="#ffd60a" out={41.4} size={60} />);
     L.push(<BigNum key="7c" t={t} at={40.06} text="7 CALORES" size={150} y={160} out={44.4} col={COL.amber} sub="QUE YA PAGASTE" />);
