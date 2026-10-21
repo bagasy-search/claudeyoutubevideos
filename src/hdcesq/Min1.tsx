@@ -29,9 +29,12 @@ const Clip: React.FC<{ k: string; at: number; t: number; z?: [number, number] }>
 
 export const Avatar: React.FC<{ t: number; blur?: number; dark?: number; edge?: number }> = ({ t, blur = 0, dark = 0, edge = 0 }) => {
   // +14 cuadros: la Sequence sigue viva durante la transición de salida (TR 0,38 s); antes se cortaba 2 cuadros después de la ventana → 3 cuadros NEGROS en cada salida del avatar
+  // ventana visible: la que contiene t; si t cae fuera (fundido de ENTRADA que arranca antes de ms, o la salida), la vecina cuya Sequence sigue montada → nunca cuadro negro
+  const cur = WIN.findIndex((w) => t >= w.ms - 0.02 && t < w.me);
+  const vis = cur >= 0 ? cur : WIN.findIndex((w) => t >= w.ms - 0.32 && t < w.me + 0.8);
   const face = REEL ? <>{WIN.map((w, i) => (
     <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12 + 14} layout="none">
-      <AbsoluteFill style={{ opacity: t >= w.ms - 0.02 && t < w.me ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
+      <AbsoluteFill style={{ opacity: i === vis ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
     </Sequence>))}</> : <Img src={staticFile(P + "av_still.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
   // SIN desenfoque en el avatar (orden del creador 21-oct): ni blur, ni halo/máscara radial; borde nítido. blur/edge se ignoran.
   return (
