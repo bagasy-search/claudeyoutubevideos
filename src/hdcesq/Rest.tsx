@@ -393,7 +393,7 @@ export const Rest: React.FC = () => {
   if (W3(568, 579)) { tag("inj", T.bola + 0.3, RQ.graft, "EL INJERTO", { dx: 230, dy: -150, col: COL.amber, out: 574.4 }); tag("chu", T.debajo + 0.8, RQ.sucker, "ESTA NO ✕", { dx: 230, dy: -100, col: COL.red, sub: "SALE DE ABAJO DEL NUDO", out: 574.4 }); }
   stamp("ntr", at("la del pie no tu rosa", 576), "NO ES TU ROSA", { y: 860, out: 578.8, size: 84 });
   L.push(<Semanas key="s8" t={t} at={T.semanas8} out={596.3} to={8} title="LA ROSA TARDA 6 A 8 SEMANAS" />);
-  big("57", at("de 5 a 7", 591), "5-7 DE 10", { sub: "PRENDEN", col: COL.leaf, edge: "#1d3a12", out: 594, x: 960, y: 560, size: 130 });
+  big("57", at("de 5 a 7", 591), "5-7 DE 10", { sub: "PRENDEN", col: COL.leaf, edge: "#1d3a12", out: 594, x: 1520, y: 600, size: 120 });
   stamp("nt8", at("no la tires antes de la semana 8", 592), "NO LA TIRES ANTES DE LA 8", { y: 880, out: 596.3, col: COL.amber, size: 60 });
   // ======== 11 · CTA2: LA PÁGINA 30 + LA CUENTA (597-640) ========
   if (W3(600, 612)) { tag("p30", T.pag30 + 0.4, [1.39, 0.99, -2.2], "PÁG. 30", { dx: 230, dy: -170, col: "#ffd60a", sub: "LA LÁMINA DE LOS DÍAS", out: 607.6, size: 64 }); }
@@ -406,7 +406,7 @@ export const Rest: React.FC = () => {
   stamp("trc", at("es traicionera", 637), "TRAICIONERA", { y: 170, out: 640.3, col: "#f04aa8", size: 80 });
   stamp("vrd", at("la rama verde parece facil", 640), "VERDE ✕ SE SECA", { y: 860, out: 643.4, size: 70 });
   if (W3(643.4, 656)) { tag("vj", T.bugaVerde + 0.4, RQ.b3, "VIEJA ✕", { dx: 220, dy: 120, col: COL.red, out: 655.5 }); tag("sm", T.semi + 0.2, RQ.b2, "SEMILEÑOSA ✓", { dx: 220, dy: -160, col: COL.leaf, out: 655.5, size: 54 }); tag("vd", T.semi + 0.4, RQ.b1, "VERDE ✕", { dx: -220, dy: -150, col: COL.red, out: 655.5 }); }
-  stamp("chq", at("con un chasquido", 653) + 0.2, "¡CRAC! ESA ES", { y: 180, out: 659, col: COL.leaf, size: 84 });
+  stamp("chq", at("con un chasquido", 653) + 0.2, "¡CRAC! ESA ES", { y: 180, out: at("de 15 a 20 centimetros corte debajo", 656) - 0.1, col: COL.leaf, size: 84 });
   big("bg15", at("de 15 a 20 centimetros corte debajo", 656), "15-20 CM", { col: COL.leaf, edge: "#1d3a12", out: 660.6, x: 520, y: 230 });
   L.push(<Rueda key="r2" t={t} at={T.primavera - 0.2} out={676.8} x={1500} y={430} marks={[{ at: T.primavera + 0.4, i: 1, ok: true }, { at: at("o al final del verano", 668), i: 2, ok: true }, { at: at("en pleno invierno", 672), i: 0, ok: false }]} />);
   if (W3(677, 688)) tag("10m", T.remojaB + 0.4, RQ.glass, "10 MIN EN AGUA", { dx: 230, dy: -150, col: COL.ice, out: 682 });
@@ -450,8 +450,8 @@ export const Rest: React.FC = () => {
   if (W3(879, 887)) tag("hg", T.hongoB + 0.2, RQ.bag, "HONGO", { dx: 230, dy: -150, col: "#e6e2d6", sub: "EN UNA SEMANA", out: 886.7, size: 60 });
   // ventana "es exactamente lo mismo que le pasó a la rama de tu vecina en el vaso": portal al vaso podrido del minuto 1
   { const w0 = at("es exactamente lo mismo", 886), w1 = at("bolsa se abre una hora", 889);
-    if (t >= w0 - 0.1 && t < w1 + 0.1) { const r = ei(t, w0 + 0.5, w0 + 1.1) * (1 - ei(t, w1 - 0.45, w1)); const a = screenOf(26, VASO); if (r > 0) L.push(<Portal key="pv" x={1400} y={470} r={r * 0.42} ring={0.8}><AbsoluteFill style={{ transform: `translate(${1400 - a.x}px, ${470 - a.y}px) scale(1.15)`, transformOrigin: `${a.x}px ${a.y}px` }}><World t={26} /></AbsoluteFill></Portal>);
-      if (r > 0.3) L.push(<Tag key="vv" t={t} at={w0 + 1.1} x={1400} y={700} dx={-200} dy={150} text="LA RAMA DE TU VECINA" col={COL.rose} out={w1 - 0.45} size={44} />); } }
+    if (t >= w0 - 0.1 && t < w1 + 0.1) { const r = ei(t, w0 + 0.5, w0 + 1.1) * (1 - ei(t, w1 - 0.45, w1)); const a = screenOf(26, VASO); if (r > 0) L.push(<Portal key="pv" x={1530} y={430} r={r * 0.24} ring={0.8}><AbsoluteFill style={{ transform: `translate(${1530 - a.x}px, ${430 - a.y}px) scale(1.15)`, transformOrigin: `${a.x}px ${a.y}px` }}><World t={26} /></AbsoluteFill></Portal>);
+      if (r > 0.3) L.push(<Tag key="vv" t={t} at={w0 + 1.1} x={1530} y={680} dx={-60} dy={140} text="LA RAMA DE TU VECINA" col={COL.rose} out={w1 - 0.45} size={44} />); } }
   big("1h", T.abreB + 0.3, "1 HORA", { sub: "CADA 2 DÍAS", col: COL.ice, edge: "#0a2a40", out: 895, x: 1450 });
   if (W3(895, 901.5)) tag("gt", T.gotas + 0.4, RQ.bag, "GOTAS GRANDES", { dx: -230, dy: -150, col: COL.ice, sub: "ABRIR MÁS SEGUIDO", out: 899 });
   stamp("pac", at("uno es la paciencia", 899), "PACIENCIA", { y: 860, out: 901.4, col: COL.amber, size: 84 });
