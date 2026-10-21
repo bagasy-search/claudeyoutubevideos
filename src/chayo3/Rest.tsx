@@ -59,8 +59,8 @@ const PARTS: Part[] = [
   w(157.1, 162.2, "comal", "pots", POTS), c(162.2, 167.7, "s_cazuela"),
   c(173.2, 178.2, "i_cta"), w(178.2, 186.3, "libro", "libro2"),
   // la historia
-  w(190.5, 201.8, "wide2", "patio"),
-  c(206.4, 210.6, "s_boda60"), w(210.6, 218.5, "patio2", "canasta"),
+  c(190.5, 201.8, "s_patio_fiesta2"),
+  c(206.4, 210.6, "s_boda60"), w(210.6, 218.5, "wide2", "canasta"),
   c(223.9, 232.2, "s_nina"), w(232.2, 237.0, "cazL", "cazL2"),
   w(242.3, 253.1, "libro", "libro2"),
   w(258.1, 271.3, "caz", "caz2"), w(274.7, 286.8, "cazL", "topC"),
@@ -112,7 +112,7 @@ const PARTS: Part[] = [
   // SECRETO 5
   w(956.1, 959.2, "libro2", "libro2"), w(959.2, 967.6, "caz2", "cazT"),
   w(973.2, 976.4, "caz", "caz2"), c(976.4, 985.0, "m_metate"),
-  c(988.6, 995.2, "m_molino"), w(995.2, 1001.3, "patio", "patio2"),
+  c(988.6, 995.2, "m_molino"), c(995.2, 1001.3, "m_molinero"),
   c(1007.7, 1013.2, "m_licuar"), w(1013.2, 1019.8, "charola", "remojo"),
   w(1023.2, 1028.2, "caz", "caz2"), c(1028.2, 1035.6, "p_colar"),
   c(1041.8, 1046.6, "m_pellejos"), w(1046.6, 1052.4, "cazT", "cazT2"),
@@ -143,7 +143,7 @@ const PARTS: Part[] = [
   w(1416.2, 1428.3, "wide2", "wide"),
   w(1433.4, 1439.2, "libro", "libro2"), c(1439.2, 1443.8, "s7_enojado"),
   w(1448.2, 1462.0, "caz", "cazL"),
-  w(1467.4, 1478.6, "patio", "patio2"),
+  c(1467.4, 1478.6, "s7_prisa"),
   w(1484.1, 1494.0, "topC", "top"),
   // variantes
   w(1498.9, 1505.6, "caz", "caz2"), c(1505.6, 1511.4, "v_costilla"),
@@ -162,7 +162,7 @@ const PARTS: Part[] = [
   // la cuenta
   c(1697.6, 1702.6, "h_fonda_plato"), c(1702.6, 1709.2, "din_mesa"),
   w(1714.8, 1728.6, "top", "topB"),
-  c(1732.8, 1738.2, "din_guajolote"), w(1738.2, 1744.0, "patio", "patio2"),
+  c(1732.8, 1738.2, "din_guajolote"), c(1738.2, 1744.0, "din_fiesta20"),
   w(1749.6, 1758.9, "topB", "topC"),
   w(1764.5, 1778.5, "charola", "charolaT"),
   // resumen, tarea, comentarios, próximo, cierre

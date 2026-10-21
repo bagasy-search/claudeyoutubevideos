@@ -43,16 +43,15 @@ setKeys([
   { t: 15.4, p: [0.0, 4.3, 1.05], l: [0, 0.8, 0.12], fov: 40 },                // cenital: los siete platos
   { t: 17.8, p: [0.0, 4.1, 0.95], l: [0, 0.8, 0.12], fov: 40 },
   { t: 23.6, p: [1.4, 1.55, 2.3], l: [4, 1.4, 0.2], fov: 40 },                 // (detrás del avatar) mira al lado abierto
-  { t: 26.2, p: [6.6, 1.75, 3.6], l: [10, 1.0, 0.8], fov: 42, arc: 0.3 },     // sale al patio de la boda
-  { t: 29.1, p: [6.9, 1.7, 3.4], l: [10, 1.0, 0.8], fov: 42 },
+  { t: 26.2, p: [1.5, 1.52, 0.52], l: [0.88, 0.82, -0.3], fov: 37 },          // (la boda va en foto) espera en la mesa
+  { t: 29.1, p: [1.45, 1.5, 0.48], l: [0.88, 0.82, -0.3], fov: 37 },
   { t: 30.0, p: [1.35, 1.45, 0.42], l: [0.88, 0.82, -0.3], fov: 36, arc: 0.4 },// vuelve a la mesa: la lista del súper
   { t: 30.9, p: [1.25, 1.42, 0.35], l: [0.88, 0.82, -0.3], fov: 36 },
   { t: 32.0, p: [-0.55, 1.4, -0.75], l: [-1.3, 0.95, -2.4], fov: 38 },          // madrugada: el fogón
   { t: 34.6, p: [-0.6, 1.35, -0.9], l: [-1.3, 0.95, -2.4], fov: 38 },
   { t: 56.15, p: [0.75, 1.4, 0.75], l: CZ, fov: 34 },                           // azúcar a la cazuela
   { t: 60.4, p: [0.55, 1.32, 0.6], l: CZ, fov: 33 },
-  { t: 61.6, p: [5.0, 1.7, 3.2], l: [9.5, 0.8, 0.8], fov: 42 },               // de noche: el patio vacío
-  { t: 65.0, p: [6.2, 1.5, 2.9], l: [9.5, 0.8, 0.8], fov: 40 },
+  { t: 61.6, p: [0.5, 1.3, 0.55], l: CZ, fov: 33 },                            // (el patio de noche va en foto)
   { t: 74.8, p: [1.9, 1.95, 2.7], l: [-0.6, 0.8, -1.3], fov: 42 },             // el orden (platos) y el fuego (fogón)
   { t: 77.0, p: [1.5, 1.9, 2.4], l: [-0.8, 0.8, -1.6], fov: 42 },
   { t: 78.4, p: [1.12, 1.42, 0.28], l: [0.88, 0.82, -0.3], fov: 34, arc: 0.15 },// el recetario de mamá Cuca
@@ -74,6 +73,8 @@ const worldAt = (t: number): WorldProps => {
     fire: 1 + 1.4 * win(t, T.fuego, T.fuego + 0.3) * (1 - win(t, 76.6, 77.2)) - 0.5 * night,
     steamCaz: (t >= 15.3 && t < 18) || t >= 92.6 ? 0.25 : t > 9 && t < 12 ? 0.5 : 1, ojitos: 0.35 + 0.65 * win(t, T.ojitos - 0.4, T.ojitos + 0.4),
     plateOn, plateServed: PLATES.map(() => 0), plateSteam: PLATES.map(() => 0),
+    // la mesa puesta con comida hasta la fonda (81,8); en la cenital de los 7 secretos los platos ya esperan vacíos, uno por secreto
+    plateFill: PLATES.map(() => (t < 82 ? 1 : 0)),
     sugar: win(t, T.azu1 - 0.1, T.azu1 + 0.2) * (1 - win(t, 60.0, 60.4)),
     pour: 0,
     patioLights: win(t, 23.0, 24.0) * (1 - win(t, 29.5, 30)) + win(t, 60.6, 61.5) * 0.8 * (1 - win(t, 68, 69)),
@@ -307,13 +308,14 @@ export const Min1: React.FC = () => {
   // E · 17,8-24,0 · avatar
   if (t >= AVS[1][0] && t < AVS[1][1]) L.push(<Avatar key="avE" t={t} />);
   if (t >= AVS[1][0] && t < AVS[1][1]) L.push(<Stamp key="ff" t={t} at={at("ya no hacen")} text="LAS FONDAS YA NO" x={1380} y={860} out={21.0} rot={-5} size={72} col={CH.maiz} />);
-  // F · 24,0-26,2 · la cámara sale por el lado abierto al patio de la boda (al atardecer)
+  // F · 24,0-29,2 · la boda de tu sobrina: el patio de verdad (foto) → la mesa ya servida (desliza)
   if (t >= 24.0 && t < 29.25) {
-    L.push(W("wF"));
-    const p = screenOf(t, [9.5, 0.9, 0.8]), r = ei(t, 25.0, 25.7);
-    if (r > 0) L.push(<Portal key="pF" x={p.x} y={p.y} r={r}><Clip k="h_boda" t={t} a={25.0} /></Portal>);
+    const sl = ei(t, 26.3, 26.8), mb = Math.sin(sl * Math.PI) * 36;
+    L.push(<AbsoluteFill key="fF" style={{ transform: `translateX(${-sl * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><Clip k="h_fiesta" t={t} a={24.0} /></AbsoluteFill>);
+    if (sl > 0) L.push(<AbsoluteFill key="fB" style={{ transform: `translateX(${(1 - sl) * 1920}px)`, filter: mb > 1 ? `blur(${mb}px)` : undefined }}><Clip k="h_boda" t={t} a={26.3} /></AbsoluteFill>);
     L.push(<Nota key="nb" t={t} at={T.mole1} out={29.0} x={1480} y={330} lines={["La boda de Lupita", "Mole: yo ♥"]} />);
   }
+  L.push(<SteamWipe key="swF" t={t} mid={29.22} w={0.35} />);
   // G · 29,2-30,9 · la lista del súper sobre la mesa (se tacha todo)
   if (t >= 29.2 && t < 31.9) {
     L.push(W("wG"));
@@ -330,7 +332,7 @@ export const Min1: React.FC = () => {
   if (t >= AVS[2][0] && t < AVS[2][1]) L.push(<Avatar key="avI" t={t} />);
   // J · 40,2-47,4 · la tía prueba (clip) → AMARGO como medicina
   if (t >= AVS[2][1] && t < 47.45) {
-    L.push(<Clip key="ct" k="h_tia" t={t} a={AVS[2][1]} z={[1.02, 1.12]} />);
+    L.push(<Clip key="ct" k="h_tia2" t={t} a={AVS[2][1]} z={[1.02, 1.12]} />);
     L.push(<Tag key="tt" t={t} at={Math.max(AVS[2][1] + 0.1, T.tortilla)} x={760} y={620} dx={-260} dy={-180} text="LA TORTILLA" sub="PA' QUITARSE EL SABOR" col={CH.maiz} out={T.amargo - 0.2} size={46} />);
     L.push(<AbsoluteFill key="dk" style={{ background: "rgba(10,4,2,.5)", opacity: e(t, T.amargo - 0.1, T.amargo + 0.2) }} />);
     L.push(<BigNum key="am" t={t} at={T.amargo} text="AMARGO" size={250} col={CH.crema} edge="#4a1a0c" out={47.2} sub={t > T.medicina ? "COMO MEDICINA" : undefined} />);
@@ -353,15 +355,16 @@ export const Min1: React.FC = () => {
     L.push(<Amargometro key="amg" t={t} at={AVS[3][1] + 0.1} steps={[T.azu1, T.azu2]} peorAt={T.peor} out={60.9} x={1520} y={360} />);
     L.push(<Pill key="pe" t={t} at={T.peor} out={60.9} x={1520} y={600} text="PEOR" />);
   }
-  // N · 60,6-64,3 · de noche, el patio vacío → portal desde la mesa vacía: tiras media olla (clip)
+  // N · 61,8-64,3 · esa noche, el patio vacío (foto) → portal: tiras media olla
   if (t >= 61.8 && t < 64.75) {
-    L.push(W("wN"));
-    const p = screenOf(t, [9.5, 0.8, 0.8]), r = ei(t, Math.max(63.4, T.tiraste - 0.6), Math.max(64.0, T.tiraste));
-    if (r > 0) L.push(<Portal key="pN" x={p.x} y={p.y} r={r}><Clip k="h_tirar" t={t} a={63.4} /></Portal>);
+    L.push(<Clip key="cN" k="h_noche" t={t} a={61.8} z={[1.04, 1.1]} />);
+    const r = ei(t, Math.max(63.4, T.tiraste - 0.6), Math.max(64.0, T.tiraste));
+    if (r > 0) L.push(<Portal key="pN" x={1010} y={560} r={r}><Clip k="h_tirar2" t={t} a={63.4} /></Portal>);
   }
+  L.push(<SteamWipe key="swN" t={t} mid={61.8} w={0.35} />);
   // O · 64,3-68,6 · media olla a la cubeta: NUNCA MÁS
   if (t >= 64.0 && t < AVS[4][0] + 0.02) {
-    L.push(<Clip key="cO" k="h_tirar" t={t} a={63.4} />);
+    L.push(<Clip key="cO" k="h_tirar2" t={t} a={63.4} />);
     L.push(<Stamp key="nm" t={t} at={T.nunca} text="NUNCA MÁS" x={1300} y={300} out={AVS[4][0] - 0.1} rot={-7} />);
   }
   // P · 68,6-74,8 · avatar "pos no fuiste tú, mija"

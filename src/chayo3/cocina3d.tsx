@@ -479,6 +479,7 @@ export type WorldProps = {
   ojitos?: number;         // 0..1 tamaño de los ojitos de grasa
   plateOn?: number[];      // 0..1 por plato (brillo / servido)
   plateServed?: number[];  // 0..1 mole servido en cada plato
+  plateFill?: number[];    // 0..1 plato puesto con comida (mole, arroz, tortilla) sin el "servido" del secreto
   plateSteam?: number[];   // vapor por plato
   book?: { open: number; flip: number; pages: { l: string[]; r: string[] }[] };
   sugar?: number;          // granos de azúcar cayendo a la cazuela (0..1)
@@ -504,7 +505,7 @@ export type WorldProps = {
 };
 
 export const World: React.FC<WorldProps> = (pr) => {
-  const { t, night = 0, dawn = 0, fire = 1, steamCaz = 1, steamComal = 1, ojitos = 1, plateOn = [], plateServed = [], plateSteam = [], sugar = 0, pour = 0, patioLights = 0, chiles = 0, toast = 0, burnt = 0, sarten = 0, fry = 0, charola = 0, remojo = 0, tapa = 0, especias = 0, verduras = 0, aguaLimon = 0, guia = 0, raw = 0, smoke = 0 } = pr;
+  const { t, night = 0, dawn = 0, fire = 1, steamCaz = 1, steamComal = 1, ojitos = 1, plateOn = [], plateServed = [], plateFill = [], plateSteam = [], sugar = 0, pour = 0, patioLights = 0, chiles = 0, toast = 0, burnt = 0, sarten = 0, fry = 0, charola = 0, remojo = 0, tapa = 0, especias = 0, verduras = 0, aguaLimon = 0, guia = 0, raw = 0, smoke = 0 } = pr;
   const tx = useRancho();
   const [fontOk, setFontOk] = useState(false);
   useMemo(() => { const h = delayRender("letra a mano"); handReady().then(() => { setFontOk(true); requestAnimationFrame(() => continueRender(h)); }).catch(() => { setFontOk(true); continueRender(h); }); }, []);
@@ -616,10 +617,18 @@ export const World: React.FC<WorldProps> = (pr) => {
 
         {/* LOS SIETE PLATOS de barro */}
         {PLATES.map((pp, i) => {
-          const on = plateOn[i] ?? 0, sv = plateServed[i] ?? 0;
+          const on = plateOn[i] ?? 0, sv = plateServed[i] ?? 0, fill = plateFill[i] ?? 0;
           return <group key={i} position={pp}>
             <Lathe prof={PLATO} p={[0, 0, 0]} c="#a3502a" map={tx.barro} r={0.6} s={1.0} inner="#94461f" />
             {sv > 0.01 && <group position={[0, 0.03 + 0.006 * sv, 0]}><MoleSurface r={0.11 * (0.6 + 0.4 * sv)} t={t + i} map={tx.mole} ojitos={sv} bub={0.4} /></group>}
+            {/* lo de al lado del mole: arroz rojo, una pieza y la tortilla doblada en el borde */}
+            {(sv > 0.01 || fill > 0.01) && <group scale={Math.max(sv, fill)}>
+              <mesh position={[0.075, 0.035, 0.05]} scale={[1, 0.45, 1]}><sphereGeometry args={[0.055, 16, 10, 0, Math.PI * 2, 0, Math.PI / 2]} /><meshStandardMaterial color="#d98a4a" roughness={0.95} /></mesh>
+              {Array.from({ length: 10 }, (_, k) => <mesh key={k} position={[0.075 + (rnd(k + i * 13, 71) - 0.5) * 0.08, 0.05 + rnd(k, 72) * 0.012, 0.05 + (rnd(k + i * 13, 73) - 0.5) * 0.08]}><sphereGeometry args={[0.006, 6, 4]} /><meshStandardMaterial color={k % 3 ? "#e7a467" : "#6aa04a"} roughness={0.9} /></mesh>)}
+              <mesh position={[-0.02, 0.05, -0.01]} rotation={[0.3, i, 0.2]} scale={[1.3, 0.7, 0.9]}><sphereGeometry args={[0.04, 14, 10]} /><meshPhysicalMaterial color="#3a1608" roughness={0.35} clearcoat={0.8} /></mesh>
+              <mesh position={[-0.1, 0.045, 0.07]} rotation={[-1.2, 0, 0.5]}><cylinderGeometry args={[0.07, 0.07, 0.004, 24, 1, false, 0, Math.PI]} /><meshStandardMaterial color="#e6cf92" roughness={0.9} side={THREE.DoubleSide} /></mesh>
+              {fill > 0.01 && sv <= 0.01 && <group position={[0, 0.03, 0]}><MoleSurface r={0.085} t={t + i} map={tx.mole} ojitos={0.6} bub={0.2} /></group>}
+            </group>}
             {/* aro de luz cálida cuando el plato "se enciende" */}
             {on > 0.01 && <mesh position={[0, 0.06, 0]} rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[0.16, 0.19, 48]} /><meshBasicMaterial color="#ffcf7a" transparent opacity={0.85 * on} toneMapped={false} /></mesh>}
             <Steam p={[0, 0.05, 0]} t={t + i * 0.7} amt={plateSteam[i] ?? 0} tex={tx.steam} spread={0.12} h={0.6} n={8} size={0.2} />
