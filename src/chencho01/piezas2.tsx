@@ -258,9 +258,10 @@ export const Anaquel: React.FC<{ t: number; at: number; out: number; items: [str
   return <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `translate(-50%,-50%) scale(${sc})` }}>
     <div style={{ width: 760, padding: "18px 22px 10px", background: "#6b4a2e", borderRadius: 14, boxShadow: sh }}>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12 }}>
-        {items.map(([n, v, w]) => { const k = Math.min(1, pop(t, w, 1.2)); return <div key={n} style={{ height: 120, borderBottom: "8px solid #4a311c", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", opacity: e(t, w, w + 0.1), transform: `translateY(${(1 - k) * -60}px)` }}>
-          <div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 40, color: CH.crema }}>{n}</div>
-          <div style={{ background: CH.maiz, padding: "2px 12px", borderRadius: 6, fontFamily: SERIF, fontWeight: 900, fontSize: 34, color: CH.negro, marginBottom: 6 }}>${v}</div></div>; })}
+        {items.map(([n, v, w], i) => { const k = Math.min(1, pop(t, w, 1.2)); const col = ["#c9472b", "#e8d9b0", "#7a3b1e", "#3f6fa8", "#d9a62e", "#5d8a3a", "#a83a5a", "#c27a2e"][i % 8]; return <div key={n} style={{ height: 250, borderBottom: "10px solid #4a311c", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", opacity: e(t, w, w + 0.1), transform: `translateY(${(1 - k) * -80}px)` }}>
+          <div style={{ width: 132, height: 150, background: col, borderRadius: "18px 18px 8px 8px", boxShadow: "inset -14px 0 0 rgba(0,0,0,.18), 0 6px 12px rgba(0,0,0,.35)", display: "flex", alignItems: "center", justifyContent: "center", padding: 6 }}>
+            <div style={{ background: "rgba(255,248,230,.92)", borderRadius: 8, padding: "6px 6px", fontFamily: HAND, fontWeight: 700, fontSize: 34, lineHeight: 1, color: CH.negro, textAlign: "center" }}>{n}</div></div>
+          <div style={{ background: CH.maiz, padding: "2px 14px", borderRadius: 6, fontFamily: SERIF, fontWeight: 900, fontSize: 42, color: CH.negro, margin: "10px 0 8px" }}>${v}</div></div>; })}
       </div>
     </div>
     <div style={{ marginTop: 14, textAlign: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 80, color: "#fff", textShadow: "0 6px 18px #000" }}>

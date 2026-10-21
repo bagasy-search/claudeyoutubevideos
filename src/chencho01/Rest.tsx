@@ -252,7 +252,7 @@ export const Rest: React.FC = () => {
   L.push(<Pensado key="nc" t={t} at={T.noCompro} out={235.6} x={1420} y={240} text="lo que no compro también cuenta" size={70} />);
   L.push(<Huevera key="hv" t={t} at={T.gallinas + 0.2} ceroAt={T.cero} out={247.9} x={1420} y={540} />);
   L.push(<Matas key="mt" t={t} at={T.limonero - 0.2} lichaAt={T.licha} out={253.9} x={1400} y={540} />);
-  L.push(<SemanaMenu key="sm" t={t} at={T.domingo - 0.6} out={T.deVerdad - 0.5} x={1300} y={540} sc={1.0} days={[
+  L.push(<SemanaMenu key="sm" t={t} at={T.domingo - 0.6} out={T.deVerdad - 0.5} x={1300 - 880 * ei(t, 267.2, 267.8)} y={540} sc={1.0} days={[
     ["DOMINGO", "caldo de pollo", T.domingo], ["LUNES", "lo que quedó del caldo", T.lunes], ["MAR · MIÉ", "frijoles de la olla", T.martes],
     ["JUEVES", "nopales con jitomate", T.jueves], ["VIERNES", "calabacitas con queso", T.viernes], ["SÁBADO", "taquitos de lo que sobró", T.sabado]]} />);
   L.push(<Dim key="dS" t={t} a={T.domingo - 0.6} out={267.4} k={0.3} />);
@@ -268,7 +268,7 @@ export const Rest: React.FC = () => {
   L.push(<Pensado key="mm" t={t} at={T.mama - 0.3} out={T.noTira - 0.2} x={1420} y={240} text="lo que aprendí de mi mamá" size={76} />);
   L.push(<NoSeTira key="nt" t={t} at={T.noTira} tostAt={T.tostada} dineroAt={T.dinero} out={T.r3 + 1.0} x={1240} y={860} />);
   L.push(<Pestana key="p3" t={t} at={T.r3} out={T.r3 + 3.4} n={3} title="la tiendita" />);
-  L.push(<Anaquel key="aq" t={t} at={T.aceite - 0.3} out={337.7} totalAt={T.masMenos} x={1360} y={500} sc={1.05} items={[
+  L.push(<Anaquel key="aq" t={t} at={T.aceite - 0.3} out={337.7} totalAt={T.masMenos} x={1470} y={500} sc={0.98} items={[
     ["aceite", 45, T.aceite], ["arroz 2 kg", 56, T.arroz], ["frijol 3 kg", 105, T.frijol], ["azúcar", 30, T.azucar],
     ["café", 60, T.cafe], ["jabón", 50, T.jabon], ["papel", 40, T.papel], ["", 0, 1e9]].filter((x) => x[0]) as [string, number, number][]} />);
   { const tp = sc([4.3, 2.7, -9.5]); L.push(<Tag key="tdt" t={t} at={322.8} x={tp.x} y={tp.y} dx={-380} dy={-160} text="LA TIENDITA" sub="DE LA ESQUINA" col={CH.maiz} out={T.aceite + 4} size={52} />); }
