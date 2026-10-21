@@ -11,9 +11,13 @@ import { UnrealBloomPass } from "three/examples/jsm/postprocessing/UnrealBloomPa
 import { GTAOPass } from "three/examples/jsm/postprocessing/GTAOPass.js";
 import { OutputPass } from "three/examples/jsm/postprocessing/OutputPass.js";
 import { SMAAPass } from "three/examples/jsm/postprocessing/SMAAPass.js";
+import { ShaderPass } from "three/examples/jsm/postprocessing/ShaderPass.js";
 import { RoomEnvironment } from "three/examples/jsm/environments/RoomEnvironment.js";
 import { RoundedBoxGeometry } from "three/examples/jsm/geometries/RoundedBoxGeometry.js";
 
+// un píxel NaN (bump a ras / normal nula) el bloom lo desparrama en un BLOQUE NEGRO: se limpia antes del bloom
+const NoNaN = { uniforms: { tDiffuse: { value: null } }, vertexShader: "varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }",
+  fragmentShader: "uniform sampler2D tDiffuse; varying vec2 vUv; void main(){ vec4 c=texture2D(tDiffuse,vUv); if(!(c.r==c.r)||!(c.g==c.g)||!(c.b==c.b)||c.r>1e4||c.g>1e4||c.b>1e4) c=vec4(0.0,0.0,0.0,1.0); gl_FragColor=c; }" };
 export const Post: React.FC<{ bloom?: number; threshold?: number; ao?: boolean; exposure?: number; env?: number }> = ({ bloom = 0.9, threshold = 0.82, ao = true, exposure = 1.0, env = 0.35 }) => {
   const { gl, scene, camera, size } = useThree();
   const comp = useMemo(() => {
@@ -34,6 +38,7 @@ export const Post: React.FC<{ bloom?: number; threshold?: number; ao?: boolean; 
       };
       c.addPass(g);
     }
+    c.addPass(new ShaderPass(NoNaN));
     const b = new UnrealBloomPass(new THREE.Vector2(size.width, size.height), bloom, 0.55, threshold); c.addPass(b);
     c.addPass(new OutputPass());
     c.addPass(new SMAAPass(size.width, size.height));
