@@ -78,7 +78,7 @@ export const DescCard: React.FC<B & { x: number; y: number; hl: number }> = ({ t
     <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 30, color: "#333", marginBottom: 12 }}>Descripción</div>
     <div style={{ position: "relative", fontFamily: FONT, fontWeight: 800, fontSize: 34, color: "#1a1a1a", padding: "6px 10px" }}>
       <div style={{ position: "absolute", inset: 0, background: CH.maiz, borderRadius: 8, transform: `scaleX(${h})`, transformOrigin: "0 50%" }} />
-      <span style={{ position: "relative" }}>▶ La guía de Doña Chayo: link aquí</span>
+      <span style={{ position: "relative" }}>▶ Las 5 Ollas de Doña Chayo · en la 1ª línea</span>
     </div>
     {[0.9, 0.75, 0.82].map((w, i) => <div key={i} style={{ height: 18, width: `${w * 100}%`, background: "#ddd5c8", borderRadius: 9, margin: "16px 10px 0" }} />)}
     <div style={{ position: "absolute", left: -120, top: 64, fontFamily: HAND, fontWeight: 700, fontSize: 70, color: CH.maiz, opacity: h, transform: `translateX(${-30 * (1 - h)}px)`, textShadow: "0 4px 12px rgba(0,0,0,.8)" }}>1ª →</div>
