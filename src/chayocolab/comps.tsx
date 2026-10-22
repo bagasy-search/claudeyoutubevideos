@@ -9,9 +9,9 @@ export const SteamWipe: React.FC<{ t: number; mid: number; w?: number }> = ({ t,
   const blobs = Array.from({ length: 14 }, (_, i) => {
     const x = (i * 137) % 1920, y = 1100 - ((t - mid + w) / (2 * w)) * (900 + (i % 5) * 120) + (i % 3) * 140;
     const r = 420 + (i % 4) * 120;
-    return `radial-gradient(circle ${r}px at ${x}px ${y}px, rgba(255,248,236,${0.75 * k}) 0%, rgba(255,248,236,0) 70%)`;
+    return `radial-gradient(circle ${r}px at ${x}px ${y}px, rgba(255,248,236,${0.55 * k}) 0%, rgba(255,248,236,0) 70%)`;
   });
-  return <AbsoluteFill style={{ background: blobs.join(","), opacity: Math.min(1, k * 1.6), filter: "blur(18px)" }}><AbsoluteFill style={{ background: `rgba(255,246,232,${0.85 * Math.pow(k, 1.6)})` }} /></AbsoluteFill>;
+  return <AbsoluteFill style={{ background: blobs.join(","), opacity: Math.min(1, k * 1.6), filter: "blur(18px)" }}><AbsoluteFill style={{ background: `rgba(255,246,232,${0.4 * Math.pow(k, 1.6)})` }} /></AbsoluteFill>;
 };
 
 // remolino de aroma: hilos de humo dibujados que suben y se enroscan

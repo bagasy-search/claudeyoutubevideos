@@ -204,11 +204,12 @@ const Ov = (t: number): React.ReactNode[] => {
   const add = (a: number, b: number, f: () => React.ReactNode) => { if (t >= a - 0.4 && t < b + 0.6) L.push(<React.Fragment key={"o" + a.toFixed(2) + "_" + L.length}>{f()}</React.Fragment>); };
   const card = (a: number, b: number, x: number, y: number, from: "left" | "right" | "up", main: string, sub?: string, c: string = CH.maiz) =>
     add(a, b, () => <X.Card t={t} at={a} out={b} x={x} y={y} from={from}><X.H s={56} c={c}>{main}</X.H>{sub && <X.H s={44} f={HAND}>{sub}</X.H>}</X.Card>);
+  const addW = (a: number, b: number, f: () => React.ReactNode) => { if (!inAv(t)) add(a, b, f); }; // anclado al mundo 3D: no va encima del avatar
   const fondo = (a: number, b: number) => <X.Fondo o={0.45 * e(t, a, a + 0.4) * (1 - e(t, b - 0.4, b))} />;
 
   // ===== gancho =====
-  { const a = A("mira nomas esta olla", 2); add(a, a + 7, () => { const p = sc(t, CZ); return <Tag t={t} at={A("son frijoles de olla", a)} x={p.x} y={p.y} dx={330} dy={-220} text="CALDOSITOS, BRILLOSOS" sub="COMO LOS DE MI ABUELA" col={CH.maiz} out={a + 6.6} size={52} />; }); }
-  { const a = A("con su olor a epazote", 7); add(a, a + 3.5, () => <Aroma t={t} at={a} out={a + 3.2} x={sc(t, CZ).x} y={sc(t, CZ).y - 60} />); }
+  { const a = A("mira nomas esta olla", 2); addW(a, a + 7, () => { const p = sc(t, CZ); return <Tag t={t} at={A("son frijoles de olla", a)} x={p.x} y={p.y} dx={330} dy={-220} text="CALDOSITOS, BRILLOSOS" sub="COMO LOS DE MI ABUELA" col={CH.maiz} out={a + 6.6} size={52} />; }); }
+  { const a = A("con su olor a epazote", 7); addW(a, a + 3.5, () => <Aroma t={t} at={a} out={a + 3.2} x={sc(t, CZ).x} y={sc(t, CZ).y - 60} />); }
   { const a = A("ni la olla de presion", 11); add(a, a + 3.6, () => <><Pill t={t} at={A("el frijol caro", 10)} out={A("son siete cosas", 14) - 0.1} x={520} y={260} text="FRIJOL CARO" /><Pill t={t} at={a} out={A("son siete cosas", 14) - 0.1} x={520} y={420} text="OLLA DE PRESIÓN" /></>); }
   { const a = A("son siete cosas", 14); add(a, a + 4, () => <BigNum t={t} at={a} out={a + 3.6} text="7" size={330} x={1460} y={460} col={CH.maiz} edge="#5a2a10" sub="COSAS DE MI ABUELA" />); }
   { const a = A("tengo visita en mi cocina", 18); add(a, a + 3.6, () => <Palomita t={t} at={a} out={a + 3.4} y={240} text="HOY TENGO VISITA" />); }
@@ -228,12 +229,12 @@ const Ov = (t: number): React.ReactNode[] => {
   { const a = A("ya perdiste al cliente", 84); add(a, a + 3.8, () => <Stamp t={t} at={a + 0.2} out={a + 3.6} x={1300} y={420} text="CLIENTE PERDIDO" size={90} />); }
 
   // ===== promesa: los 7 platos se encienden uno por uno =====
-  add(PROM[0] - 0.3, PROM[6] + 3, () => PLATES.map((q, i) => { const p = sc(t, q); return t >= PROM[i] ? <X.PlateLabel key={i} t={t} at={PROM[i]} out={PROM[6] + 2.8} x={p.x} y={p.y} n={i + 1} text={["qué frijol", "el remojo", "el comal", "el agua", "lo del final", "grasita y hierba", "el fuego"][i]} up={i % 2 ? 250 : 130} /> : null; }));
+  addW(PROM[0] - 0.3, PROM[6] + 3, () => PLATES.map((q, i) => { const p = sc(t, q); return t >= PROM[i] ? <X.PlateLabel key={i} t={t} at={PROM[i]} out={PROM[6] + 2.8} x={p.x} y={p.y} n={i + 1} text={["qué frijol", "el remojo", "el comal", "el agua", "lo del final", "grasita y hierba", "el fuego"][i]} up={i % 2 ? 250 : 130} /> : null; }));
   { const a = A("el secreto de la fonda de claudio", 106); add(a, a + 4.5, () => <X.Card t={t} at={a} out={a + 4.2} x={1440} y={260} from="right" col="#8fd6ff"><X.H s={52} c="#8fd6ff">+1 · EL DE LA FONDA</X.H><X.H s={42} f={HAND}>ni yo lo sabía</X.H></X.Card>); }
 
   // ===== quién es Chayo =====
   { const a = A("yo soy rosario", 111); add(a, a + 9, () => <LowerThird t={t} at={a} out={a + 8.5} name="DOÑA CHAYO" l2="67 AÑOS · RANCHO DE PÁTZCUARO" l2at={A("tengo 67 anos", a)} />); }
-  { const a = A("toda la vida en fogon de lena", 120); add(a, a + 4, () => { const f = sc(t, FIRE); return <Tag t={t} at={a} x={f.x} y={f.y} dx={-260} dy={-200} text="FOGÓN DE LEÑA" sub="TODA LA VIDA" col="#ff9a4a" out={a + 3.8} size={50} />; }); }
+  { const a = A("toda la vida en fogon de lena", 120); addW(a, a + 4, () => { const f = sc(t, FIRE); return <Tag t={t} at={a} x={f.x} y={f.y} dx={-260} dy={-200} text="FOGÓN DE LEÑA" sub="TODA LA VIDA" col="#ff9a4a" out={a + 3.8} size={50} />; }); }
   { const a = A("una casa sin frijoles", 127); add(a, a + 6, () => <>{fondo(a, a + 5.8)}<X.Cita t={t} at={a} out={a + 5.6} x={960} y={500} text="Una casa sin frijoles en la lumbre es una casa triste." who="MAMÁ CUCA" size={84} /></>); }
 
   // ===== CTA 1: la guía en el mundo, con su página REAL =====
@@ -275,17 +276,17 @@ const Ov = (t: number): React.ReactNode[] => {
 
   // ===== 3 · el comal (el secreto de la abuela) =====
   { const a = A("que las fondas no te dicen", SECRETO[2]); add(a, a + 4, () => <Stamp t={t} at={a + 0.2} out={a + 3.8} x={1320} y={300} text="EL DE MI ABUELA" size={96} col={CH.maiz} />); }
-  { const a = A("media cebolla blanca", SECRETO[2]); add(a, a + 9, () => { const p = sc(t, COMAL); return <><Tag t={t} at={a} x={p.x + 40} y={p.y} dx={300} dy={-210} text="½ CEBOLLA BLANCA" col={CH.crema} out={a + 8.6} size={46} /><Tag t={t} at={A("y dos ajos", a)} x={p.x - 40} y={p.y + 10} dx={-320} dy={-170} text="2 AJOS CON CÁSCARA" col={CH.crema} out={a + 8.6} size={42} /></>; }); }
+  { const a = A("media cebolla blanca", SECRETO[2]); addW(a, a + 9, () => { const p = sc(t, COMAL); return <><Tag t={t} at={a} x={p.x + 40} y={p.y} dx={300} dy={-210} text="½ CEBOLLA BLANCA" col={CH.crema} out={a + 8.6} size={46} /><Tag t={t} at={A("y dos ajos", a)} x={p.x - 40} y={p.y + 10} dx={-320} dy={-170} text="2 AJOS CON CÁSCARA" col={CH.crema} out={a + 8.6} size={42} /></>; }); }
   { const a = A("sin aceite", 396); add(a, a + 3.5, () => <Pill t={t} at={a} out={a + 3.3} x={1400} y={820} text="ACEITE" />); }
   { const a = A("diez minutos", 400); add(a, a + 4, () => <X.Cronometro t={t} at={a} out={A("y van enteros a la olla", 402) - 0.1} x={1500} y={420} mins={10} label="VOLTEANDO" size={260} />); }
   { const a = A("y van enteros a la olla", 402); add(a, a + 9, () => <X.Versus t={t} at={a} out={a + 8.6} x={960} y={620} a="PICADOS" b="ENTEROS" rows={[["se deshacen, caldo turbio", true, false], ["sueltan sabor, caldo clarito", false, true]]} />); }
-  { const a = A("un sabor dulce", 412); add(a, a + 4, () => <Aroma t={t} at={a} out={a + 3.8} x={sc(t, CZ).x} y={sc(t, CZ).y - 60} />); }
+  { const a = A("un sabor dulce", 412); addW(a, a + 4, () => <Aroma t={t} at={a} out={a + 3.8} x={sc(t, CZ).x} y={sc(t, CZ).y - 60} />); }
   { const a = A("cubito de consome", 417); add(a, a + 3.5, () => <Pill t={t} at={a} out={a + 3.3} x={1400} y={300} text="CUBITO DE CONSOMÉ" />); }
   { const a = A("es el comal", 420); add(a, a + 2.4, () => <BigNum t={t} at={a} out={a + 2.2} text="EL COMAL" size={170} y={480} col={CH.maiz} edge="#5a2a10" />); }
   { const a = A("yo echaba la cebolla cruda", 423); add(a, a + 4, () => <Pill t={t} at={a} out={a + 3.8} x={1400} y={260} text="CEBOLLA CRUDA" />); }
 
   // ===== CTA 2: una olla, siete comidas, con sus páginas reales =====
-  add(A("enfrijoladas", 436), A("eso lo tengo en el libro 4", 442) + 0.2, () => <N.SieteComidas t={t} out={A("eso lo tengo en el libro 4", 442)} x={960} y={540} rows={[
+  addW(A("enfrijoladas", 436), A("eso lo tengo en el libro 4", 442) + 0.2, () => <N.SieteComidas t={t} out={A("eso lo tengo en el libro 4", 442)} x={960} y={540} rows={[
     { at: A("enfrijoladas", 436), label: "ENFRIJOLADAS" }, { at: A("molletes", 437), label: "MOLLETES" }, { at: A("sopa de frijol con nopales", 437), label: "SOPA CON NOPALES" },
     { at: A("frijoles puercos", 439), label: "FRIJOLES PUERCOS" }, { at: A("tacos dorados", 440), label: "TACOS DORADOS" }, { at: A("tacos dorados", 440) + 0.4, label: "BURRITOS" }, { at: A("tacos dorados", 440) + 0.8, label: "CON QUESO" }]} />);
   { const a = G2P, b = A("desde la pagina 35", a); add(a, b + 0.2, () => <N.PaginaReal t={t} at={a + 0.2} out={b} x={1420} y={540} src="pag_l4_29.jpg" pag="LIBRO 4 · PÁG. 29" libro="La Quincena Flaca" hl={a + 0.9} w={500} />); }
@@ -298,7 +299,7 @@ const Ov = (t: number): React.ReactNode[] => {
   { const a = A("3 litros de agua fria", 461); add(a, a + 5, () => <X.Card t={t} at={a} out={a + 4.8} x={1440} y={300} from="right" col="#8fd6ff"><X.H s={56} c="#8fd6ff">3 LITROS POR KILO</X.H><X.H s={42} f={HAND}>agua fría, y prendes la lumbre</X.H></X.Card>); }
   { const a = A("nunca le echas agua fria", 466); add(a, a + 16, () => <N.Tetera t={t} at={a} out={a + 15.6} x={960} y={780} okAt={A("una tetera con agua caliente", a)} />); }
   { const a = A("el frijol se asusta", 476); add(a, a + 4, () => <Pensado t={t} at={a} out={a + 3.8} x={1380} y={260} text="¡el frijol se asusta!" size={84} />); }
-  { const a = A("su jarro de agua", 484); add(a, a + 4.5, () => { const f = sc(t, FIRE); return <Tag t={t} at={a} x={f.x} y={f.y} dx={-260} dy={-200} text="EL JARRO DE LA ABUELA" sub="SIEMPRE CALIENTITO" col={CH.maiz} out={a + 4.2} size={46} />; }); }
+  { const a = A("su jarro de agua", 484); addW(a, a + 4.5, () => { const f = sc(t, FIRE); return <Tag t={t} at={a} x={f.x} y={f.y} dx={-260} dy={-200} text="EL JARRO DE LA ABUELA" sub="SIEMPRE CALIENTITO" col={CH.maiz} out={a + 4.2} size={46} />; }); }
   { const a = A("una olla de agua hirviendo atras", 490); add(a, a + 7, () => <X.Card t={t} at={a} out={a + 6.6} x={1440} y={300} from="right" col="#8fd6ff"><X.H s={50} c="#8fd6ff">EN LA FONDA</X.H><X.H s={42} f={HAND}>agua hirviendo atrás, todo el día</X.H><X.H s={42} f={HAND}>lo más barato y lo que más se olvida</X.H></X.Card>); }
 
   // ===== 5 · lo del final =====
@@ -314,13 +315,13 @@ const Ov = (t: number): React.ReactNode[] => {
   { const a = A("ese brillito", 558); add(a, a + 4, () => <Palomita t={t} at={a} out={a + 3.8} y={240} text="BRILLITO Y CUERPO" />); }
   { const a = A("los ultimos 15 minutos", 563); add(a, a + 4.5, () => <X.Cronometro t={t} at={a} out={a + 4.2} x={1500} y={420} mins={15} label="EL EPAZOTE, AL FINAL" size={260} />); }
   { const a = A("se pone amargo", 567); add(a, a + 3.5, () => <Pill t={t} at={a} out={a + 3.3} x={560} y={300} text="EPAZOTE DESDE EL INICIO" />); }
-  { const a = A("huele a frijol de abuela", 570); add(a, a + 4, () => <Aroma t={t} at={a} out={a + 3.8} x={sc(t, CZ).x} y={sc(t, CZ).y - 60} />); }
+  { const a = A("huele a frijol de abuela", 570); addW(a, a + 4, () => <Aroma t={t} at={a} out={a + 3.8} x={sc(t, CZ).x} y={sc(t, CZ).y - 60} />); }
   { const a = A("huele a chicharron", 583); add(a, a + 4, () => <X.Versus t={t} at={a - 2.5} out={a + 3.8} x={960} y={620} a="DEL SÚPER" b="DE LA CARNICERÍA" rows={[["no es igual", true, false], ["huele a chicharrón", false, true]]} />); }
 
   // ===== 7 · el fuego =====
   { const a = A("le bajas a que no mas tiemble", 592); add(a, a + 7.5, () => <N.Hervor t={t} at={a} out={a + 7.2} x={1450} y={460} fuerte={0.12} label="QUE NOMÁS TIEMBLE" />); }
   { const a = A("con hervor fuerte", 598); add(a, a + 7.5, () => <N.Hervor t={t} at={a} out={a + 7.2} x={1450} y={460} fuerte={1} label="FUERTE = SE REVIENTAN" />); }
-  { const a = A("y la tapa medio abierta para que", 606); add(a, a + 4, () => { const p = sc(t, CZ); return <Tag t={t} at={a} x={p.x} y={p.y} dx={330} dy={-200} text="TAPA MEDIO ABIERTA" sub="QUE NO SE DERRAME" col={CH.maiz} out={a + 3.8} size={48} />; }); }
+  { const a = A("y la tapa medio abierta para que", 606); addW(a, a + 4, () => { const p = sc(t, CZ); return <Tag t={t} at={a} x={p.x} y={p.y} dx={330} dy={-200} text="TAPA MEDIO ABIERTA" sub="QUE NO SE DERRAME" col={CH.maiz} out={a + 3.8} size={48} />; }); }
   { const a = A("dos horas dos horas y media", 611); add(a, a + 3.6, () => <X.Cronometro t={t} at={a} out={a + 3.4} x={480} y={420} mins={150} label="2 HORAS, 2 Y MEDIA" size={240} />); }
   { const a = A("sacas cinco frijoles", 616); add(a, a + 10, () => <N.Soplar t={t} at={a} out={a + 9.6} x={960} y={720} soploAt={A("y les soplas", a)} />); }
   { const a = A("como mantequilla", 628); add(a, a + 3, () => <Palomita t={t} at={a} out={a + 2.8} y={240} text="SE DESHACE COMO MANTEQUILLA" />); }
@@ -356,7 +357,7 @@ const Ov = (t: number): React.ReactNode[] => {
   { const a = A("comen 8", 810); add(a, a + 4, () => <X.Card t={t} at={a} out={a + 3.8} x={470} y={300} from="left"><X.H s={50} c={CH.maiz}>1 ORDEN DE FONDA</X.H><X.H s={44} f={HAND}>= comen 8 en tu casa</X.H></X.Card>); }
 
   // ===== resumen, tarea, comentarios, cierre =====
-  add(RES[0] - 0.3, RES[6] + 4, () => PLATES.map((q, i) => { const p = sc(t, q); return t >= RES[i] ? <X.PlateLabel key={i} t={t} at={RES[i]} out={RES[6] + 3.8} x={p.x} y={p.y} n={i + 1} text={["nuevo, que brille", "remojo, se tira", "comal, enteros", "fría → caliente", "sal y ácido al final", "manteca + epazote", "bajito, y soplas"][i]} up={i % 2 ? 250 : 130} /> : null; }));
+  addW(RES[0] - 0.3, RES[6] + 4, () => PLATES.map((q, i) => { const p = sc(t, q); return t >= RES[i] ? <X.PlateLabel key={i} t={t} at={RES[i]} out={RES[6] + 3.8} x={p.x} y={p.y} n={i + 1} text={["nuevo, que brille", "remojo, se tira", "comal, enteros", "fría → caliente", "sal y ácido al final", "manteca + epazote", "bajito, y soplas"][i]} up={i % 2 ? 250 : 130} /> : null; }));
   { const a = A("y el de claudio", 845); add(a, a + 7, () => <X.Card t={t} at={a} out={a + 6.6} x={1440} y={250} from="right" col="#8fd6ff"><X.H s={50} c="#8fd6ff">+ EL DE CLAUDIO</X.H><X.H s={42} f={HAND}>reposarlos de un día para otro</X.H><X.H s={42} f={HAND}>y su hojita de aguacate</X.H></X.Card>); }
   { const a = A("no hagas todo", 852); add(a, a + 11, () => <X.Tarea t={t} at={a} out={a + 10.6} x={1360} y={500} rows={[{ at: A("compra frijol nuevo", a), text: "compra frijol nuevo" }, { at: A("y tatema tu cebolla", a), text: "tatema tu cebolla" }, { at: A("la hojita de claudio", a), text: "(y la hojita de Claudio)" }]} />); }
   { const a = A("y cuentenos aqui abajo", 863); add(a, a + 10, () => <X.Encuesta t={t} at={a} out={a + 9.6} x={1340} y={440} q="¿EPAZOTE O AGUACATE?" a="epazote" b="hoja de aguacate" pa={-1} />); }
@@ -384,13 +385,13 @@ export const Main: React.FC = () => {
       }
     }
   }
-  L.push(...Ov(t));
   PARTS.forEach((p, i) => {
     const nx = PARTS[i + 1]; if (!nx || Math.abs(nx.a - p.b) > 1e-6 || Math.abs(t - p.b) >= 0.4) return;
     if (!p.c && !nx.c) return;
     if (!p.c && nx.c && /^(caz|pl)/.test(p.k1 ?? "")) return;
-    L.push(<SteamWipe key={"sw" + i} t={t} mid={p.b} w={0.38} />);
+    L.push(<SteamWipe key={"sw" + i} t={t} mid={p.b} w={0.24} />);
   });
+  L.push(...Ov(t));
   SECRETO.forEach((a, i) => { if (Math.abs(t - a) < 0.5) L.push(<Flash key={"fl" + i} t={t} at={a} col="#fff1cf" peak={0.45} w={0.3} />); });
   const fin = e(t, END_T - 0.9, END_T - 0.1);
   if (fin > 0) L.push(<AbsoluteFill key="fin" style={{ background: `rgba(0,0,0,${fin})` }} />);
