@@ -38,7 +38,11 @@ export const Avatar: React.FC<{ t: number; blur?: number; dark?: number }> = ({ 
   )) : <Img src={staticFile(P + "av_still.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.015 * Math.sin(t * 0.7)})` }} />;
   return (
     <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>
-      <AbsoluteFill style={{ filter: blur > 0.2 ? `blur(${blur}px) brightness(${1 - dark})` : dark > 0 ? `brightness(${1 - dark})` : undefined, transform: blur > 0.2 ? "scale(1.05)" : undefined }}>{face}</AbsoluteFill>
+      <AbsoluteFill style={{ filter: blur > 0.2 ? `blur(${blur}px) brightness(${1 - dark})` : dark > 0 ? `brightness(${1 - dark})` : undefined, transform: blur > 0.2 ? "scale(1.05)" : undefined }}>
+        {/* base = mismo plano quieto: una toma AV que abre antes (o cierra después) de su ventana de reel no queda en negro (QC 23-oct: 47,5→48,7 s) */}
+        {HAS.reel && <Img src={staticFile(P + "av_still.jpg")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />}
+        {face}
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
