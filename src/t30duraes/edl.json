@@ -1,0 +1,2787 @@
+{
+"end": 807.78,
+"shots": [
+{
+"a": 0.0,
+"b": 1.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_g01_rooftops.jpg",
+"o": {
+"label": "Londres"
+}
+}
+},
+{
+"a": 1.44,
+"b": 3.88,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1812",
+"side": "c",
+"v": "img/t30duraes/cand/lon1812_01.jpg",
+"ar": 1.3222,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 3.88,
+"b": 4.74,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/climbing_01.jpg",
+"ar": 1.4761,
+"o": {
+"build": {
+"lines": [
+"nueve *años.*"
+],
+"a": 4
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 4.74,
+"b": 8.92,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "hook",
+"o": {
+"build": {
+"lines": [
+"meterte *adentro.*"
+],
+"a": 62
+}
+}
+}
+},
+{
+"a": 8.92,
+"b": 10.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k01_soot_fall.mp4",
+"o": {
+"label": "oscuro. calor."
+}
+}
+},
+{
+"a": 10.64,
+"b": 13.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_g03_brush_soot.jpg",
+"o": {
+"scrib": {
+"cx": 900,
+"cy": 760,
+"rx": 330,
+"ry": 130,
+"text": "tus pulmones.",
+"tx": 1260,
+"ty": 300,
+"a": 53
+}
+}
+}
+},
+{
+"a": 13.62,
+"b": 14.96,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "climb",
+"o": {
+"big": {
+"w": "4 HORAS.",
+"size": 200,
+"y": 120,
+"a": 18
+}
+}
+}
+},
+{
+"a": 14.96,
+"b": 16.98,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/sweepold_01.jpg",
+"ar": 1.596,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 16.98,
+"b": 19.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_g02_chimney_up.jpg",
+"o": {
+"build": {
+"lines": [
+"no es el *PEOR.*"
+],
+"a": 16
+}
+}
+}
+},
+{
+"a": 19.74,
+"b": 21.2,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"El *trato:*"
+],
+"a": 2,
+"y": 380,
+"size": 110
+}
+}
+}
+},
+{
+"a": 21.2,
+"b": 24.96,
+"k": "ilus",
+"t": "portal",
+"p": {
+"o": {
+"build": {
+"lines": [
+"una y otra *vez.*"
+],
+"a": 57
+}
+}
+}
+},
+{
+"a": 24.96,
+"b": 27.32,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "un siglo *distinto.*"
+},
+"big": true
+},
+{
+"a": 27.32,
+"b": 30.68,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/t30duraes/cand/visscher_01.jpg",
+"cards": [
+"img/t30duraes/cand/galley_04.jpg",
+"img/t30duraes/cand/plaguecart_01.jpg",
+"img/t30duraes/cand/radium2_02.jpg"
+],
+"o": {
+"build": {
+"lines": [
+"el *peor* trabajo disponible."
+],
+"a": 8,
+"size": 80
+},
+"credit": "Wikimedia Commons · public domain / CC"
+}
+}
+},
+{
+"a": 30.68,
+"b": 33.18,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/sweep2_02.jpg",
+"ar": 0.6043,
+"o": {
+"build": {
+"lines": [
+"no una *fantasía.*"
+],
+"a": 41
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 33.18,
+"b": 34.42,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Década de 1920",
+"side": "c",
+"v": "img/t30duraes/cand/usradium_01.jpg",
+"ar": 1.2387,
+"o": {
+"build": {
+"lines": [
+"un trabajo *REAL.*"
+],
+"a": 2
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 34.42,
+"b": 36.08,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/match_01.png",
+"ar": 1.5154,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 36.08,
+"b": 38.56,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1864",
+"side": "c",
+"v": "img/t30duraes/cand/powder_02.jpg",
+"ar": 0.8139,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 38.56,
+"b": 41.14,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"sobrevivir",
+"*UN TURNO.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 41.14,
+"b": 45.28,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "RENUNCIAS.",
+"sub": "el momento exacto.",
+"fz": 85
+},
+"big": true
+},
+{
+"a": 45.28,
+"b": 47.26,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "*8* siglos."
+},
+"big": true
+},
+{
+"a": 47.26,
+"b": 50.1,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/t30duraes/cand/trafalgar_02.jpg",
+"cards": [
+"img/t30duraes/cand/plaguecart_02.jpg",
+"img/t30duraes/cand/gundeck_01.jpg"
+],
+"o": {
+"build": {
+"lines": [
+"*8* trabajos. *1* turno."
+],
+"a": 2,
+"size": 84
+},
+"credit": "Wikimedia Commons · public domain / CC"
+}
+}
+},
+{
+"a": 50.1,
+"b": 52.1,
+"k": "ilus",
+"t": "portal",
+"p": {
+"years": [
+"79",
+"1348",
+"1550",
+"1650"
+],
+"o": {
+"build": {
+"lines": [
+"¿cuánto *durarías?*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 52.1,
+"b": 53.52,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/lepanto_02.jpg",
+"ar": 2.0847,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 53.52,
+"b": 56.1,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/trafalgar_03.jpg",
+"ar": 1.4138,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 56.1,
+"b": 59.92,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Un viaje nuevo cada semana. Suscríbete + campanita."
+}
+},
+{
+"a": 59.92,
+"b": 62.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_z03_door_open.jpg",
+"o": {
+"aside": {
+"t": "nunca te va bien.",
+"x": 1150,
+"y": 330,
+"a": 62
+}
+}
+}
+},
+{
+"a": 62.64,
+"b": 69.56,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Cuál es el peor trabajo que tuviste de verdad?",
+"bell": false
+}
+},
+{
+"a": 69.56,
+"b": 70.48,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 70.48,
+"b": 74.86,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+12.5,
+41.9
+],
+"prev": [
+-0.12,
+51.5
+],
+"lines": [
+"ROMA",
+"SIGLO I",
+"BATANERO"
+],
+"name": "Roma"
+},
+"big": true
+},
+{
+"a": 74.86,
+"b": 80.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k02_steam_tubs.mp4",
+"o": {
+"label": "Roma, siglo I"
+},
+"rate": 0.432
+}
+},
+{
+"a": 80.14,
+"b": 88.1,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "tubs",
+"o": {
+"aside": {
+"t": "puaj.",
+"x": 1080,
+"y": 360,
+"a": 99
+}
+}
+}
+},
+{
+"a": 88.1,
+"b": 91.14,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Fresco de Pompeya",
+"side": "c",
+"v": "img/t30duraes/cand/fullfresco_01.jpg",
+"ar": 0.9238,
+"o": {
+"build": {
+"lines": [
+"un *BATANERO.*"
+],
+"a": 62
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 91.14,
+"b": 93.9,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Fullonica, Pompeya",
+"side": "c",
+"v": "img/t30duraes/cand/fullon_03.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 93.9,
+"b": 95.68,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/toga_01.jpg",
+"ar": 0.5632,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 95.68,
+"b": 101.06,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "tubs",
+"o": {
+"build": {
+"lines": [
+"*AMONÍACO.*"
+],
+"a": 130
+}
+}
+}
+},
+{
+"a": 101.06,
+"b": 105.9,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"la fuente más *barata:*"
+],
+"a": 4,
+"y": 170,
+"size": 90
+},
+"big": {
+"w": "ORINA.",
+"size": 260,
+"y": 420,
+"a": 111
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 105.9,
+"b": 111.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_r02_pots_street.jpg",
+"o": {
+"scrib": {
+"cx": 760,
+"cy": 640,
+"rx": 300,
+"ry": 170,
+"text": "vasijas públicas.",
+"tx": 1250,
+"ty": 260,
+"a": 81
+}
+}
+}
+},
+{
+"a": 111.98,
+"b": 115.32,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "pots"
+}
+},
+{
+"a": 115.32,
+"b": 119.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/kf/t30duraen_k04_pour_jar.jpg"
+}
+},
+{
+"a": 119.14,
+"b": 125.14,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "stomp",
+"o": {
+"build": {
+"lines": [
+"*Descalzo.*"
+],
+"a": 47
+},
+"aside": {
+"t": "¡como vino!",
+"x": 1120,
+"y": 380,
+"a": 146
+}
+}
+}
+},
+{
+"a": 125.14,
+"b": 126.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/kf/t30duraen_k03_stomp.jpg",
+"o": {
+"aside": {
+"t": "...no lo es.",
+"x": 1100,
+"y": 300,
+"a": 6
+}
+}
+}
+},
+{
+"a": 126.78,
+"b": 129.84,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Fullonica de Stephanus",
+"side": "c",
+"v": "img/t30duraes/cand/fullon_05.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 129.84,
+"b": 131.92,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Emperador Vespasiano",
+"side": "c",
+"v": "img/t30duraes/cand/vesp_02.jpg",
+"ar": 0.7015,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 131.92,
+"b": 133.8,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/vespcoin_03.jpg",
+"ar": 1.3333,
+"o": {
+"build": {
+"lines": [
+"un impuesto a la *orina.*"
+],
+"a": 2
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 133.8,
+"b": 137.92,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/vesp_03.jpg",
+"ar": 0.4861,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 137.92,
+"b": 142.58,
+"k": "g",
+"t": "coin",
+"p": {
+"img": "img/t30duraes/cand/vespcoin_02.jpg",
+"o": {
+"build": {
+"lines": [
+"El dinero no *APESTA.*"
+],
+"y": 70,
+"size": 90,
+"a": 89
+},
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 142.58,
+"b": 151.04,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 5400,
+"tag": "90 MIN",
+"sub": "cuando llega el siguiente carro de vasijas. Todavía tibias.",
+"fz": 205,
+"s0": 4630
+},
+"big": true
+},
+{
+"a": 151.04,
+"b": 153.32,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 153.32,
+"b": 156.6,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-1.2,
+52.4
+],
+"prev": [
+12.5,
+41.9
+],
+"lines": [
+"INGLATERRA",
+"1348",
+"CUERPOS"
+],
+"name": "Inglaterra"
+},
+"big": true
+},
+{
+"a": 156.6,
+"b": 160.46,
+"k": "ilus",
+"t": "village",
+"p": {
+"mode": "sick",
+"o": {
+"build": {
+"lines": [
+"algo anda muy *mal.*"
+],
+"a": 10,
+"out": 150
+}
+}
+}
+},
+{
+"a": 160.46,
+"b": 166.88,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/plague3_02.jpg",
+"ar": 0.7745,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 166.88,
+"b": 169.76,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/plaguepit_01.jpg",
+"ar": 1.2648,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 169.76,
+"b": 171.44,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "La Peste Negra",
+"side": "c",
+"v": "img/t30duraes/cand/plague3_03.jpg",
+"ar": 1.6203,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 171.44,
+"b": 176.36,
+"k": "g",
+"t": "third",
+"p": {},
+"big": true
+},
+{
+"a": 176.36,
+"b": 180.26,
+"k": "ilus",
+"t": "village",
+"p": {
+"mode": "grey",
+"o": {
+"build": {
+"lines": [
+"tu trabajo:",
+"*CARGAR LOS CUERPOS.*"
+],
+"a": 2,
+"size": 88
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 180.26,
+"b": 185.96,
+"k": "ilus",
+"t": "village",
+"p": {
+"mode": "cart"
+}
+},
+{
+"a": 185.96,
+"b": 186.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_p07_knock.jpg"
+}
+},
+{
+"a": 186.72,
+"b": 187.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_p03_door_cross.jpg"
+}
+},
+{
+"a": 187.52,
+"b": 189.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_p02_cart.jpg"
+}
+},
+{
+"a": 189.0,
+"b": 196.14,
+"k": "ilus",
+"t": "trench",
+"p": {
+"o": {
+"build": {
+"lines": [
+"en *filas.*"
+],
+"a": 181
+}
+}
+}
+},
+{
+"a": 196.14,
+"b": 206.995,
+"k": "ilus",
+"t": "flea",
+"p": {
+"o": {
+"build": {
+"lines": [
+"pulgas de las *ratas.*"
+],
+"a": 131
+}
+}
+}
+},
+{
+"a": 206.995,
+"b": 210.755,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k06_candle.mp4",
+"rate": 0.74
+}
+},
+{
+"a": 210.755,
+"b": 217.315,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 5,
+"tag": "1 GOLPE",
+"sub": "lo inteligente: renunciar al primer golpe.",
+"fz": 134,
+"s0": 4
+},
+"big": true
+},
+{
+"a": 217.315,
+"b": 223.255,
+"k": "ilus",
+"t": "ecg",
+"p": {
+"cut": 0.62,
+"o": {
+"build": {
+"lines": [
+"ni siquiera llegaron a *renunciar.*"
+],
+"size": 80,
+"a": 65
+}
+}
+}
+},
+{
+"a": 223.255,
+"b": 224.775,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 224.775,
+"b": 228.175,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-0.12,
+51.5
+],
+"prev": [
+-1.2,
+52.4
+],
+"lines": [
+"LONDRES",
+"SIGLO XVI",
+"LETRINAS"
+],
+"name": "Londres"
+},
+"big": true
+},
+{
+"a": 228.175,
+"b": 235.735,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30duraes/ag/t30duraen_f01_night_lane.jpg",
+"r": "img/t30duraes/ag/t30duraen_f02_privy.jpg",
+"wl": "BUENA.",
+"wr": "MALA.",
+"a": 194
+}
+},
+{
+"a": 235.735,
+"b": 237.635,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/tudorlon_02.jpg",
+"ar": 1.5023,
+"o": {
+"build": {
+"lines": [
+"un *VACIADOR DE LETRINAS.*"
+],
+"a": 4,
+"size": 88
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 237.635,
+"b": 239.915,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Londres, c.1560",
+"side": "c",
+"v": "img/t30duraes/cand/tudorlon_01.jpg",
+"ar": 2.3216,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 239.915,
+"b": 254.635,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "lower",
+"o": {
+"build": {
+"lines": [
+"*pozos negros.*"
+],
+"a": 4,
+"out": 120
+},
+"aside": {
+"t": "ese eres tú.",
+"x": 1000,
+"y": 520,
+"a": 408
+}
+}
+}
+},
+{
+"a": 254.635,
+"b": 257.895,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k08_lantern_swing.mp4",
+"o": {
+"label": "Sólo de noche"
+},
+"rate": 0.895
+}
+},
+{
+"a": 257.895,
+"b": 261.875,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/tudorlon_03.jpg",
+"ar": 1.2964,
+"o": {
+"aside": {
+"t": "ni olerte.",
+"x": 1180,
+"y": 230,
+"a": 89
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 261.875,
+"b": 267.255,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "bucket",
+"o": {
+"build": {
+"lines": [
+"hasta la *cintura.*"
+],
+"out": 150,
+"a": 61
+}
+}
+}
+},
+{
+"a": 267.255,
+"b": 270.855,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k09_bucket_rope.mp4",
+"rate": 0.532
+}
+},
+{
+"a": 270.855,
+"b": 277.015,
+"k": "ilus",
+"t": "nightcart",
+"p": {
+"gate": true
+}
+},
+{
+"a": 277.015,
+"b": 285.895,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "fumes",
+"o": {
+"build": {
+"lines": [
+"y nunca volvieron a",
+"*SUBIR.*"
+],
+"a": 211
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 285.895,
+"b": 296.495,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1200,
+"tag": "20 MIN",
+"sub": "cuando el balde vuelve a bajar vacío.",
+"fz": 257,
+"s0": 962
+},
+"big": true
+},
+{
+"a": 296.495,
+"b": 298.055,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 298.055,
+"b": 301.655,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+15.5,
+37.6
+],
+"prev": [
+-0.12,
+51.5
+],
+"lines": [
+"MEDITERRÁNEO",
+"SIGLO XVII",
+"GALERA"
+],
+"name": "Mediterráneo"
+},
+"big": true
+},
+{
+"a": 301.655,
+"b": 304.355,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_s01_ankle_chain.jpg"
+}
+},
+{
+"a": 304.355,
+"b": 306.115,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k13_chain_bench.mp4",
+"o": {
+"build": {
+"lines": [
+"una *cadena.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 306.115,
+"b": 317.095,
+"k": "ilus",
+"t": "galley",
+"p": {
+"speed": 0.8,
+"o": {
+"build": {
+"lines": [
+"hombro con *hombro.*"
+],
+"out": 170,
+"a": 159
+}
+}
+}
+},
+{
+"a": 317.095,
+"b": 318.935,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Galera, siglo XVII",
+"side": "c",
+"v": "img/t30duraes/cand/galley2_01.jpg",
+"ar": 1.326,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 318.935,
+"b": 323.755,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/galeriens_03.jpg",
+"ar": 1.2292,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 323.755,
+"b": 326.275,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k11_oars_water.mp4"
+}
+},
+{
+"a": 326.275,
+"b": 333.735,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/galley_05.jpg",
+"ar": 1.6946,
+"o": {
+"build": {
+"lines": [
+"*condenados.* prisioneros."
+],
+"size": 84,
+"a": 95
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 333.735,
+"b": 337.835,
+"k": "ilus",
+"t": "galley",
+"p": {
+"zoomChain": true,
+"speed": 0.9,
+"o": {
+"build": {
+"lines": [
+"encadenados al *banco.*"
+],
+"a": 2,
+"out": 120
+},
+"aside": {
+"t": "qué cómodo.",
+"x": 900,
+"y": 470,
+"a": 82
+}
+}
+}
+},
+{
+"a": 337.835,
+"b": 342.135,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Lepanto, 1571",
+"side": "c",
+"v": "img/t30duraes/cand/lepanto_01.jpg",
+"ar": 0.8088,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 342.135,
+"b": 346.555,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k12_drum_hit.mp4",
+"o": {
+"scrib": {
+"cx": 960,
+"cy": 620,
+"rx": 360,
+"ry": 200,
+"text": "el látigo.",
+"tx": 1180,
+"ty": 220,
+"a": 101
+}
+},
+"rate": 0.524
+}
+},
+{
+"a": 346.555,
+"b": 349.835,
+"k": "ilus",
+"t": "galley",
+"p": {
+"ramp": true
+}
+},
+{
+"a": 349.835,
+"b": 354.235,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_s05_hands_oar.jpg",
+"o": {
+"build": {
+"lines": [
+"se contaban en *años.*"
+],
+"a": 109
+}
+}
+}
+},
+{
+"a": 354.235,
+"b": 361.855,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": null,
+"tag": "∞",
+"sub": "No se puede renunciar a una cadena.",
+"fz": 61,
+"s0": 2865409
+},
+"big": true
+},
+{
+"a": 361.855,
+"b": 369.235,
+"k": "ilus",
+"t": "galley",
+"p": {
+"ramp": true,
+"o": {
+"aside": {
+"t": "...rema.",
+"x": 900,
+"y": 470,
+"a": 164
+}
+}
+}
+},
+{
+"a": 369.235,
+"b": 370.875,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 370.875,
+"b": 373.055,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-6.5,
+48.2
+],
+"prev": [
+15.5,
+37.6
+],
+"lines": [
+"BARCO DE GUERRA",
+"SIGLO XVIII",
+"PÓLVORA"
+],
+"name": "Armada británica"
+},
+"big": true
+},
+{
+"a": 373.055,
+"b": 376.475,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Niño de la pólvora, 1864",
+"side": "c",
+"v": "img/t30duraes/cand/powder_01.jpg",
+"ar": 1.0367,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 376.475,
+"b": 379.375,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/magazine_03.jpg",
+"ar": 1.6027,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 379.375,
+"b": 382.595,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/cand/gundeck_02.jpg",
+"o": {
+"label": "HMS Victory, cubierta de cañones",
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 382.595,
+"b": 384.495,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k15_sea_battle.mp4"
+}
+},
+{
+"a": 384.495,
+"b": 386.955,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_m01_gundeck.jpg",
+"o": {
+"build": {
+"lines": [
+"*MONO DE PÓLVORA.*"
+],
+"a": 25
+}
+}
+}
+},
+{
+"a": 386.955,
+"b": 388.615,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/cand/gundeck_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 388.615,
+"b": 400.515,
+"k": "ilus",
+"t": "ship",
+"p": {
+"mode": "magazine",
+"o": {
+"build": {
+"lines": [
+"el *pañol.*"
+],
+"out": 200,
+"a": 157
+}
+}
+}
+},
+{
+"a": 400.515,
+"b": 409.751,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_m03_cartridge.jpg"
+}
+},
+{
+"a": 409.751,
+"b": 414.351,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/lon1812_03.jpg",
+"ar": 1.1758,
+"o": {
+"build": {
+"lines": [
+"chiquito. rápido.",
+"*REEMPLAZABLE.*"
+],
+"a": 2,
+"size": 86
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 414.351,
+"b": 418.491,
+"k": "ilus",
+"t": "ship",
+"p": {
+"mode": "run"
+}
+},
+{
+"a": 418.491,
+"b": 421.971,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k14_cannon_smoke.mp4",
+"rate": 0.838
+}
+},
+{
+"a": 421.971,
+"b": 429.111,
+"k": "ilus",
+"t": "ship",
+"p": {
+"mode": "fire"
+}
+},
+{
+"a": 429.111,
+"b": 431.911,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Trafalgar, 1805",
+"side": "c",
+"v": "img/t30duraes/cand/trafalgar_01.jpg",
+"ar": 1.4184,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 431.911,
+"b": 433.631,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_m07_splinters.jpg"
+}
+},
+{
+"a": 433.631,
+"b": 438.051,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k16_magazine_lamp.mp4",
+"o": {
+"build": {
+"lines": [
+"el objeto más *peligroso*",
+"del barco."
+],
+"a": 4,
+"size": 84
+}
+},
+"rate": 0.66
+}
+},
+{
+"a": 438.051,
+"b": 448.091,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 180,
+"tag": "1 VIAJE",
+"sub": "cuando dispara el cañón de al lado.",
+"fz": 135,
+"s0": 162
+},
+"big": true
+},
+{
+"a": 448.091,
+"b": 452.151,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 452.151,
+"b": 455.111,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-0.12,
+51.5
+],
+"prev": [
+-6.5,
+48.2
+],
+"lines": [
+"LONDRES",
+"1812",
+"DESHOLLINADOR"
+],
+"name": "Londres"
+},
+"big": true
+},
+{
+"a": 455.111,
+"b": 458.691,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_c05_stacks.jpg"
+}
+},
+{
+"a": 458.691,
+"b": 463.131,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Niño deshollinador",
+"side": "c",
+"v": "img/t30duraes/cand/climbing_05.jpg",
+"ar": 0.8868,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 463.131,
+"b": 469.971,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "climb",
+"o": {
+"build": {
+"lines": [
+"los hombres grandes no *entran.*"
+],
+"size": 84,
+"a": 141
+}
+}
+}
+},
+{
+"a": 469.971,
+"b": 475.891,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/climbing_04.jpg",
+"ar": 0.7181,
+"o": {
+"build": {
+"lines": [
+"de *cinco* o seis años."
+],
+"a": 129
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 475.891,
+"b": 481.451,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/climbing_02.jpg",
+"ar": 1.0909,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 481.451,
+"b": 484.851,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_c01_fireplace.jpg"
+}
+},
+{
+"a": 484.851,
+"b": 494.331,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "brush",
+"o": {
+"build": {
+"lines": [
+"los ojos bien *cerrados.*"
+],
+"out": 200,
+"a": 224
+}
+}
+}
+},
+{
+"a": 494.331,
+"b": 497.251,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_c04_knees_brick.jpg"
+}
+},
+{
+"a": 497.251,
+"b": 504.271,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "stuck",
+"o": {
+"build": {
+"lines": [
+"tu *TUMBA.*"
+],
+"a": 84
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 504.271,
+"b": 510.391,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k17_brush_chimney.mp4",
+"rate": 0.438
+}
+},
+{
+"a": 510.391,
+"b": 512.891,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Percivall Pott, 1775",
+"side": "c",
+"v": "img/t30duraes/cand/pott_01.jpg",
+"ar": 0.6224,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 512.891,
+"b": 519.691,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/sweep2_01.jpg",
+"ar": 0.6043,
+"o": {
+"build": {
+"lines": [
+"un tipo de *cáncer.*"
+],
+"a": 116
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 519.691,
+"b": 524.631,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k18_smoke_stacks.mp4",
+"o": {
+"build": {
+"lines": [
+"un cáncer unido a un *TRABAJO.*"
+],
+"size": 84,
+"a": 57
+}
+},
+"rate": 0.59
+}
+},
+{
+"a": 524.631,
+"b": 534.491,
+"k": "g",
+"t": "timeline",
+"p": {},
+"big": true
+},
+{
+"a": 534.491,
+"b": 544.251,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 14400,
+"tag": "4 HORAS",
+"sub": "cuando el codo choca contra el ladrillo.",
+"fz": 44,
+"s0": 13984
+},
+"big": true
+},
+{
+"a": 544.251,
+"b": 546.111,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 546.111,
+"b": 548.234,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+0.0,
+51.53
+],
+"prev": [
+-0.6,
+51.7
+],
+"lines": [
+"ESTE DE LONDRES",
+"1888",
+"FÓSFOROS"
+],
+"name": "Bow, Londres"
+},
+"big": true
+},
+{
+"a": 548.234,
+"b": 553.371,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Ilustración, c.1890",
+"side": "c",
+"v": "img/t30duraes/cand/matchgirl_01.jpg",
+"ar": 1.5534,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 553.371,
+"b": 561.951,
+"k": "ilus",
+"t": "match",
+"p": {
+"mode": "dip",
+"o": {
+"build": {
+"lines": [
+"fósforo *blanco.*"
+],
+"out": 230,
+"a": 104
+}
+}
+}
+},
+{
+"a": 561.951,
+"b": 563.631,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_h04_fingers.jpg",
+"o": {
+"build": {
+"lines": [
+"*14* horas."
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 563.631,
+"b": 567.891,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k19_match_dip.mp4",
+"rate": 0.685
+}
+},
+{
+"a": 567.891,
+"b": 569.791,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k20_match_light.mp4"
+}
+},
+{
+"a": 569.791,
+"b": 575.331,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_h03_table.jpg"
+}
+},
+{
+"a": 575.331,
+"b": 585.611,
+"k": "ilus",
+"t": "jaw",
+"p": {
+"o": {
+"build": {
+"lines": [
+"*MANDÍBULA DE FÓSFORO.*"
+],
+"size": 86,
+"a": 142
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 585.611,
+"b": 590.011,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Fósforos de fósforo blanco",
+"side": "c",
+"v": "img/t30duraes/cand/phosph_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 590.011,
+"b": 607.326,
+"k": "ilus",
+"t": "match",
+"p": {
+"mode": "fines",
+"fines": [
+{
+"t": "HABLAR",
+"at": 193
+},
+{
+"t": "LLEGAR TARDE",
+"at": 242
+},
+{
+"t": "PIES SUCIOS",
+"at": 314
+},
+{
+"t": "FÓSFORO CAÍDO",
+"at": 365
+}
+]
+}
+},
+{
+"a": 607.326,
+"b": 612.366,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/match_02.jpg",
+"ar": 0.6655,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 612.366,
+"b": 617.726,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/besant_02.jpg",
+"ar": 0.7183,
+"o": {
+"build": {
+"lines": [
+"a la *huelga.*"
+],
+"a": 96
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 617.726,
+"b": 620.886,
+"k": "ilus",
+"t": "strike",
+"p": {
+"o": {
+"big": {
+"w": "GANARON.",
+"size": 200,
+"y": 120,
+"a": 73
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 620.886,
+"b": 624.766,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Annie Besant",
+"side": "c",
+"v": "img/t30duraes/cand/besant_01.jpg",
+"ar": 0.6458,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 624.766,
+"b": 632.626,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Bryant & May, Bow",
+"side": "c",
+"v": "img/t30duraes/cand/bryant_02.jpg",
+"ar": 1.3333,
+"o": {
+"build": {
+"lines": [
+"*1908:* prohibido."
+],
+"a": 56
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 632.626,
+"b": 642.686,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 2700,
+"tag": "1 MULTA",
+"sub": "y después, ve a buscar a las chicas que se organizan.",
+"fz": 70,
+"s0": 2585
+},
+"big": true
+},
+{
+"a": 642.686,
+"b": 644.306,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 7
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 644.306,
+"b": 647.606,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-74.2,
+40.75
+],
+"prev": [
+0.0,
+51.53
+],
+"lines": [
+"NUEVA JERSEY",
+"1917",
+"RADIO"
+],
+"name": "Orange, NJ"
+},
+"big": true
+},
+{
+"a": 647.606,
+"b": 654.506,
+"k": "ilus",
+"t": "radium",
+"p": {
+"mode": "bright",
+"o": {
+"build": {
+"lines": [
+"el *mejor* trabajo de todos."
+],
+"a": 8,
+"size": 88
+}
+}
+}
+},
+{
+"a": 654.506,
+"b": 657.246,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Pintoras de esferas",
+"side": "c",
+"v": "img/t30duraes/cand/radium2_03.jpg",
+"ar": 1.2685,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 657.246,
+"b": 660.346,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_d01_dials.jpg"
+}
+},
+{
+"a": 660.346,
+"b": 664.386,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k22_glow.mp4",
+"rate": 0.598
+}
+},
+{
+"a": 664.386,
+"b": 666.626,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_d04_glow_dark.jpg",
+"o": {
+"big": {
+"w": "RADIO.",
+"color": "#9dff7a",
+"size": 200,
+"y": 420,
+"a": 45
+}
+}
+}
+},
+{
+"a": 666.626,
+"b": 676.646,
+"k": "ilus",
+"t": "radium",
+"p": {
+"mode": "lipdip"
+}
+},
+{
+"a": 676.646,
+"b": 678.806,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/radium_01.jpg",
+"ar": 0.7497,
+"o": {
+"build": {
+"lines": [
+"Nadie te dice que es *peligroso.*"
+],
+"a": 4,
+"size": 80
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 678.806,
+"b": 686.906,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/usradium_02.jpg",
+"ar": 1.2395,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 686.906,
+"b": 690.806,
+"k": "ilus",
+"t": "radium",
+"p": {
+"mode": "grey",
+"o": {
+"build": {
+"lines": [
+"años *después.*"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 690.806,
+"b": 693.846,
+"k": "ilus",
+"t": "ecg",
+"p": {
+"cut": 0.75,
+"dim": true
+}
+},
+{
+"a": 693.846,
+"b": 695.446,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_d06_courtroom.jpg"
+}
+},
+{
+"a": 695.446,
+"b": 706.026,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/radium2_01.jpg",
+"ar": 1.2435,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 706.026,
+"b": 715.686,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": null,
+"tag": "AÑOS",
+"sub": "es el trabajo más lindo que tuviste.",
+"fz": 83,
+"s0": 3493729
+},
+"big": true
+},
+{
+"a": 715.686,
+"b": 720.206,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraes/t30duraen_k21_dial_paint.mp4",
+"o": {
+"build": {
+"lines": [
+"la parada más *peligrosa.*"
+],
+"a": 4,
+"size": 84
+}
+},
+"rate": 0.564
+}
+},
+{
+"a": 720.206,
+"b": 740.626,
+"k": "g",
+"t": "roster",
+"p": {
+"final": [
+41,
+109,
+183,
+238,
+316,
+379,
+437,
+492
+]
+},
+"big": true
+},
+{
+"a": 740.626,
+"b": 745.726,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/sweep2_03.jpg",
+"ar": 0.8064,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 745.726,
+"b": 750.346,
+"k": "ilus",
+"t": "strike",
+"p": {
+"o": {
+"build": {
+"lines": [
+"hacer *preguntas.*"
+],
+"a": 121
+}
+}
+}
+},
+{
+"a": 750.346,
+"b": 753.426,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/pott_02.jpg",
+"ar": 0.6625,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 753.426,
+"b": 755.286,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraes/ag/t30duraen_z02_crowd_walk.jpg"
+}
+},
+{
+"a": 755.286,
+"b": 756.026,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraes/cand/radium_04.jpg",
+"ar": 1.3833,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 756.026,
+"b": 762.626,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"Alguien",
+"*SE NEGÓ.*"
+],
+"y": 340,
+"size": 110,
+"a": 142
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 762.626,
+"b": 771.606,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "bucket",
+"o": {
+"build": {
+"lines": [
+"acuérdate del *vaciador de letrinas.*"
+],
+"size": 80,
+"a": 193
+}
+}
+}
+},
+{
+"a": 771.606,
+"b": 774.366,
+"k": "ilus",
+"t": "match",
+"p": {
+"mode": "dip",
+"o": {
+"build": {
+"lines": [
+"las *chicas de los fósforos.*"
+],
+"a": 6,
+"size": 88
+}
+}
+}
+},
+{
+"a": 774.366,
+"b": 778.586,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"haz *una* pregunta",
+"en voz alta."
+],
+"a": 4,
+"y": 330
+}
+}
+}
+},
+{
+"a": 778.586,
+"b": 783.466,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿En cuál de estos 8 aguantarías más tiempo?"
+}
+},
+{
+"a": 783.466,
+"b": 789.066,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Tu peor trabajo real: ¿cuántas horas duraste?",
+"bell": false
+}
+},
+{
+"a": 789.066,
+"b": 799.486,
+"k": "ilus",
+"t": "portal",
+"p": {
+"years": [
+"????"
+],
+"o": {
+"build": {
+"lines": [
+"los peores lugares para *nacer.*"
+],
+"size": 84,
+"a": 204
+}
+}
+}
+},
+{
+"a": 799.486,
+"b": 802.786,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbete + campanita para no perdértelo."
+}
+},
+{
+"a": 802.786,
+"b": 807.78,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "climb",
+"o": {
+"build": {
+"lines": [
+"*Sobreviviste.*",
+"Esta vez."
+],
+"a": 42
+}
+}
+}
+}
+],
+"stops": [
+{
+"n": 1,
+"a": 74.86,
+"q": 149.413,
+"w0": 142.58,
+"w1": 151.04,
+"fin": 5400,
+"tag": "90 MIN",
+"b": 151.04
+},
+{
+"n": 2,
+"a": 156.6,
+"q": 215.222,
+"w0": 210.755,
+"w1": 217.315,
+"fin": 5,
+"tag": "1 GOLPE",
+"b": 223.255
+},
+{
+"n": 3,
+"a": 228.175,
+"q": 294.462,
+"w0": 285.895,
+"w1": 296.495,
+"fin": 1200,
+"tag": "20 MIN",
+"b": 296.495
+},
+{
+"n": 4,
+"a": 301.655,
+"q": 356.268,
+"w0": 354.235,
+"w1": 361.855,
+"fin": null,
+"tag": "∞",
+"b": 369.235
+},
+{
+"n": 5,
+"a": 373.055,
+"q": 442.551,
+"w0": 438.051,
+"w1": 448.091,
+"fin": 180,
+"tag": "1 VIAJE",
+"b": 448.091
+},
+{
+"n": 6,
+"a": 455.111,
+"q": 535.958,
+"w0": 534.491,
+"w1": 544.251,
+"fin": 14400,
+"tag": "4 HORAS",
+"b": 544.251
+},
+{
+"n": 7,
+"a": 548.234,
+"q": 634.959,
+"w0": 632.626,
+"w1": 642.686,
+"fin": 2700,
+"tag": "1 MULTA",
+"b": 642.686
+},
+{
+"n": 8,
+"a": 647.606,
+"q": 708.793,
+"w0": 706.026,
+"w1": 715.686,
+"fin": null,
+"tag": "AÑOS",
+"b": 720.206
+}
+]
+}
