@@ -179,7 +179,7 @@ const AVO: Record<number, { tr?: Tr; spans?: [number, number][]; edge?: boolean;
 };
 const AVB: Beat[] = VIS.filter((v) => v.a > T0 + 1).map((v) => {
   const o = AVO[Math.round(v.a * 100) / 100] ?? {};
-  return { a: v.a, tr: o.tr ?? "whip", p: o.p, r: (t: number) => <Avatar t={t} blur={soft(t, o.spans ?? [])} dark={soft(t, o.spans ?? [], 0.35)} edge={0} /> };
+  return { a: v.a, tr: o.tr ?? "whip", p: o.p, r: (t: number) => <Avatar t={t} dark={soft(t, o.spans ?? [], 0.2)} edge={0} /> };
 });
 
 const B: Beat[] = [
