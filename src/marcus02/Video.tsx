@@ -69,7 +69,7 @@ export const V = makeVideo({
     AV(131.1, "whip"),
     CL(135.8, "s_filter_light", "whipL"),
     W3(140.2, "portal", sp(140.2, PT.n2), [[140.6, 147.2]]),               // 5-15 % (DOE)
-    AV(147.3, "zoom"),
+    AV(147.3, "whip"),                                                      // zoom desde el mundo 3D se colgaba en el farm
     CL(151.4, "s_filter_two", "whip"),
     W3(158.9, "push"),                                                      // demasiado cerrado para el soplador
     AV(163.8, "whipL"),
