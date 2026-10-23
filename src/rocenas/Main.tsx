@@ -15,6 +15,7 @@ import * as X from "./piezas";
 
 const REEL = (AVAIL as { reel: boolean }).reel;
 const CLIPS = new Set((AVAIL as { clips: string[] }).clips);
+const LEN: Record<string, number> = (AVAIL as { len?: Record<string, number> }).len ?? {};
 type V = [number, number, number];
 type Win = { ms: number; me: number; off: number };
 const WIN: Win[] = (AVW as { win: Win[] }).win;
@@ -110,6 +111,7 @@ const WK: [string, string, V | undefined, string][] = [
   ["wide", "wide2", undefined, "wide"], ["platoL", "plato", PT.plato, "plato2"], ["ventana", "ventana2", PT.ventana, "ventana"], ["silla", "silla2", undefined, "silla"],
 ];
 const DINPARTS: Part[] = [];
+const GUSED = new Set(HOOK.filter((p) => p.c).map((p) => p.c!)); // fotos/tomas ya vistas en todo el video
 DIN.forEach((d, i) => {
   const beats: [number, number][] = [];
   gaps(D0[i], DEND(i)).forEach(([p, q]) => {
@@ -119,16 +121,19 @@ DIN.forEach((d, i) => {
   let wi = 0, mi = 0;
   const used = new Map<string, number>();
   beats.forEach(([p, q], j) => {
-    const world = j % 2 === 0 || mi >= d.media.length + (d.media.some(isClip) ? 1 : 0);
+    while (mi < d.media.length && GUSED.has(d.media[mi]) && !used.has(d.media[mi])) mi++; // ya salió en el gancho u otra cena
+    let id = d.media[mi] ?? d.media.find(isClip) ?? d.media[0];
+    // nunca repetir: una foto ya usada, o una toma corta (agnes ~3 s) que ya no tiene tramo nuevo → plano del mundo
+    const gastada = used.has(id) && (!isClip(id) || !CLIPS.has(id) || (used.get(id) ?? 0) > (LEN[id] ?? 99) - 1);
+    const world = j % 2 === 0 || mi >= d.media.length + (d.media.some(isClip) ? 1 : 0) || gastada;
     if (world) {
       const [k0, k1, pt, kind] = WK[Math.min(wi, WK.length - 1) === wi ? wi : 3 + (wi % 4)];
       DINPARTS.push({ ...w(p, q, k0, k1, pt, kind), d: i }); wi++;
     } else {
       // tomas en orden; cuando se acaban, la primera toma LTX otra vez más adelante
-      let id = d.media[mi] ?? d.media.find(isClip) ?? d.media[0];
       const o = used.get(id) ?? 0;
       DINPARTS.push({ ...c(p, q, id, isClip(id) ? o : 0), d: i });
-      used.set(id, o + (q - p)); mi++;
+      used.set(id, o + (q - p)); GUSED.add(id); mi++;
     }
   });
 });
@@ -140,13 +145,14 @@ const T_SUS = CL("suscribete", CLOSE + 60), T_MANTEL = CL("pon el mantel", CLOSE
 const CLOSEPARTS: Part[] = [];
 {
   const media = ["z_frascos", "r_bolsa", "z_mesa1"];
-  const plan: (string | [string, string, V?])[] = [["wide", "top"], "z_frascos", ["estufa", "estufa2", PT.olla], "r_bolsa", ["libro", "libroT"], ["libroT", "libro2"], ["top", "top2"], ["wide2", "wide"], ["silla", "silla2"], ["plato", "plato2"], "z_mesa1", ["wide2", "wide"]];
+  const plan: (string | [string, string, V?])[] = [["wide", "top"], "z_frascos", ["estufa", "estufa2", PT.olla], ["ventana", "ventana2", PT.ventana], ["libro", "libroT"], ["libroT", "libro2"], ["top", "top2"], "p_bocado", ["silla", "silla2"], "z_mesa1", ["wide2", "wide"]];
   let j = 0;
   gaps(CLOSE, END_T).forEach(([p, q]) => {
     const L = q - p, k = L < 5.5 ? 1 : 2;
     for (let z = 0; z < k; z++) {
       const a = p + (L * z) / k, b = p + (L * (z + 1)) / k, it = plan[Math.min(j, plan.length - 1)];
-      CLOSEPARTS.push(typeof it === "string" ? c(a, b, it) : w(a, b, it[0], it[1], it[2]));
+      CLOSEPARTS.push(typeof it === "string" ? (GUSED.has(it) ? w(a, b, "estufa", "estufa2", PT.olla) : c(a, b, it)) : w(a, b, it[0], it[1], it[2]));
+      if (typeof it === "string") GUSED.add(it);
       j++;
     }
   });
@@ -219,10 +225,13 @@ const Avatar: React.FC<{ t: number }> = ({ t }) => {
     </Sequence>))}</> : <Img src={staticFile(P + "av_still.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.02 + 0.012 * Math.sin(t * 0.7)})` }} />;
   return <AbsoluteFill style={{ overflow: "hidden", background: "#000" }}>{face}</AbsoluteFill>;
 };
-const Clip: React.FC<{ k: string; t: number; a: number; o?: number; z?: [number, number] }> = ({ k, t, a, o = 0, z = [1.03, 1.1] }) => {
+const Clip: React.FC<{ k: string; t: number; a: number; b?: number; o?: number; z?: [number, number] }> = ({ k, t, a, b, o = 0, z = [1.03, 1.1] }) => {
   const sc = z[0] + (z[1] - z[0]) * e(t, a, a + 7);
+  // toma más corta que su plano: se frena hasta 0,6× y debajo queda su último cuadro (nunca un hueco negro)
+  const len = LEN[k], dur = b !== undefined ? b - a : 0;
+  const rate = len && dur ? Math.max(0.6, Math.min(1, (len - o - 0.05) / dur)) : 1;
   const inner = CLIPS.has(k)
-    ? <Sequence from={s(a)} layout="none"><OffthreadVideo src={staticFile(P + k + ".mp4")} startFrom={s(o)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Sequence>
+    ? <>{len ? <Img src={staticFile(P + "last_" + k + ".jpg")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} /> : null}{!len || (t - a) * rate < len - o - 0.04 ? <Sequence from={s(a)} layout="none"><OffthreadVideo src={staticFile(P + k + ".mp4")} startFrom={s(o)} playbackRate={rate} muted style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} /></Sequence> : null}</>
     : <Img src={staticFile(P + "img_" + (LIMG[k] ?? k) + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
   return <AbsoluteFill style={{ overflow: "hidden" }}><AbsoluteFill style={{ transform: `scale(${sc})` }}>{inner}</AbsoluteFill></AbsoluteFill>;
 };
@@ -329,12 +338,12 @@ export const Main: React.FC = () => {
     const p = PARTS[idx], nx = PARTS[idx + 1];
     if (p.c) {
       const portaled = idx > 0 && PARTS[idx - 1].pt && Math.abs(PARTS[idx - 1].b - p.a) < 1e-6;
-      L.push(<CamaraMano key={"c" + idx}><Clip k={p.c} t={t} a={portaled ? p.a - 0.7 : p.a} o={p.o} z={p.z} /></CamaraMano>);
+      L.push(<CamaraMano key={"c" + idx}><Clip k={p.c} t={t} a={portaled ? p.a - 0.7 : p.a} b={p.b} o={p.o} z={p.z} /></CamaraMano>);
     } else {
       L.push(<World key="w" t={t} />);
       if (p.pt && nx?.c && Math.abs(nx.a - p.b) < 1e-6) {
         const r = ei(t, p.b - 0.7, p.b);
-        if (r > 0) { const q = sc(t, p.pt); L.push(<Portal key="pt" x={q.x} y={q.y} r={r}><CamaraMano><Clip k={nx.c} t={t} a={p.b - 0.7} o={nx.o} z={nx.z} /></CamaraMano></Portal>); }
+        if (r > 0) { const q = sc(t, p.pt); L.push(<Portal key="pt" x={q.x} y={q.y} r={r}><CamaraMano><Clip k={nx.c} t={t} a={p.b - 0.7} b={nx.b} o={nx.o} z={nx.z} /></CamaraMano></Portal>); }
       }
     }
   }
