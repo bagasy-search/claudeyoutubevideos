@@ -11,6 +11,7 @@ import { continueRender, delayRender, staticFile } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
+import { manoCam } from "../kits/camara/CamaraMano";
 import { Post, useTextures, rbox } from "../kits/yanqui3d/fx3d";
 
 export const W = 1920, H = 1080;
@@ -157,11 +158,17 @@ const sceneBase = (name: string, u: number): Scene => {
   return { cups: ALL, cam: drift([1.2, 1.4, 1.35], [0.9, 1.28, 1.1], [-0.05, 0.82, -0.2], [-0.08, 0.82, -0.25], 42, 38, u, 10) };
 };
 
-export const project = (c: { p: V3; l: V3; fov: number }, q: V3) => {
-  const cam = new THREE.PerspectiveCamera(c.fov, W / H, 0.01, 200); cam.position.copy(v3(c.p)); cam.lookAt(v3(c.l)); cam.updateMatrixWorld(); cam.updateProjectionMatrix();
+// cámara a mano virtual (vara 23-oct): balanceo lento sobre la cámara 3D, el mismo en el render y en project() para que las etiquetas sigan clavadas
+const RAD = Math.PI / 180;
+const mano = (cam: THREE.PerspectiveCamera, t?: number) => {
+  if (t === undefined) return;
+  const m = manoCam(t, 1, 3); cam.rotateY(m.pan * RAD); cam.rotateX(m.tilt * RAD); cam.rotateZ(m.roll * RAD);
+};
+export const project = (c: { p: V3; l: V3; fov: number }, q: V3, t?: number) => {
+  const cam = new THREE.PerspectiveCamera(c.fov, W / H, 0.01, 200); cam.position.copy(v3(c.p)); cam.lookAt(v3(c.l)); mano(cam, t); cam.updateMatrixWorld(); cam.updateProjectionMatrix();
   const v = v3(q).project(cam); return { x: (v.x * 0.5 + 0.5) * W, y: (-v.y * 0.5 + 0.5) * H };
 };
-export const screenOf = (name: string, u: number, q: V3) => project(sceneOf(name, u).cam, q);
+export const screenOf = (name: string, u: number, q: V3, t?: number) => project(sceneOf(name, u).cam, q, t);
 export const camSpeed = (name: string, u: number) => {
   const a = sceneOf(name, u).cam, b = sceneOf(name, u + 1 / 30).cam;
   const dp = v3(a.p).distanceTo(v3(b.p)) * 60 + v3(a.l).distanceTo(v3(b.l)) * 25;
@@ -169,8 +176,8 @@ export const camSpeed = (name: string, u: number) => {
 };
 const Cam: React.FC<{ k: { p: V3; l: V3; fov: number }; t: number }> = ({ k, t }) => {
   const { camera } = useThree(); const c = camera as THREE.PerspectiveCamera;
-  c.position.set(k.p[0] + Math.sin(t * 0.7) * 0.002, k.p[1] + Math.sin(t * 0.93 + 1) * 0.0018, k.p[2]);
-  c.up.set(0, 1, 0); c.lookAt(v3(k.l)); c.fov = k.fov; c.near = 0.01; c.far = 60; c.updateProjectionMatrix();
+  c.position.set(k.p[0], k.p[1], k.p[2]);
+  c.up.set(0, 1, 0); c.lookAt(v3(k.l)); mano(c, t); c.fov = k.fov; c.near = 0.01; c.far = 60; c.updateProjectionMatrix();
   return null;
 };
 

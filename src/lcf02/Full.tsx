@@ -7,6 +7,7 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { LorettaWorld, sceneOf, screenOf, camSpeed, PT, V3 } from "./tin3d";
 import { BigNum, COL, Chips, LowerThird, Tag, setSlug } from "../kits/yanqui3d/lib";
 import { makeVideo, Stamp, Beat, Tr } from "../kits/yanqui3d/engine";
+import { CamaraMano } from "../kits/camara/CamaraMano";
 import { CheckList, Mistake, MistakesDeal, StepTitle, TimeBars, Timer, Versus, Words } from "../kits/yanqui3d/pieces";
 import CAPS from "./caps.json";
 import AVW from "./avw.json";
@@ -35,15 +36,17 @@ const World: React.FC<{ t: number; name: string; a: number }> = ({ t, name, a })
     </AbsoluteFill>
   );
 };
-const pin = (t: number, k: string, q: V3) => { const a = startOf(k); return screenOf(k.slice(2), t - a, q); };
+const pin = (t: number, k: string, q: V3) => { const a = startOf(k); return screenOf(k.slice(2), t - a, q, t); };
 const inB = (t: number, k: string) => { const i = BEATS.findIndex((b) => b.k === k); return t >= BEATS[i].a && t < (BEATS[i + 1]?.a ?? TEND); };
 
 const M = makeVideo({
   caps: CAPS as [string, number][], avwin: AVW as number[][], avail: AVAIL as { clips: string[]; imgs: string[] }, T0: 0, TEND, flashAtStart: false,
   beats: ({ AV, CL }) => BEATS.map((b): Beat => {
-    if (b.k === "AV") return { ...AV(b.a, b.tr), a: b.a };
+    // cámara a mano (vara 23-oct): avatar y tomas envueltos en CamaraMano; el mundo la lleva en su cámara 3D (nunca dos capas)
+    const mano = (x: Beat): Beat => ({ ...x, r: (t) => <CamaraMano seed={2}>{x.r(t)}</CamaraMano> });
+    if (b.k === "AV") return mano({ ...AV(b.a, b.tr), a: b.a });
     if (b.k.startsWith("W:")) return { a: b.a, tr: b.tr, p: [960, 470], r: (t) => <World t={t} name={b.k.slice(2)} a={b.a} /> };
-    return CL(b.a, b.k, b.tr, [960, 470], [1.0, 1.06]);
+    return mano(CL(b.a, b.k, b.tr, [960, 470], [1.0, 1.06]));
   }),
   pieces: (t, { at }) => {
     const L: React.ReactNode[] = [];
