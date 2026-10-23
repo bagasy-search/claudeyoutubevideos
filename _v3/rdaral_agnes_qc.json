@@ -1,0 +1,389 @@
+{
+ "clips": {
+  "e07_algodonal": {
+   "size": 1157425,
+   "mtime": 1792708147445,
+   "auto": null,
+   "hint": "",
+   "dur": 2.933,
+   "revisado": "2026-10-22T22:41:17.184Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e03_tormenta_sal": {
+   "size": 888748,
+   "mtime": 1792707653209,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-22T22:41:17.184Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e02_salar": {
+   "size": 862176,
+   "mtime": 1792707651592,
+   "auto": null,
+   "hint": "",
+   "dur": 2.567,
+   "revisado": "2026-10-22T22:41:17.184Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e17_campo_lavado": {
+   "size": 910765,
+   "mtime": 1792707755069,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-22T22:41:17.184Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e09_rio_montana": {
+   "size": 1077250,
+   "mtime": 1792708171375,
+   "auto": null,
+   "hint": "Landscape replaced; car appears in final frame",
+   "dur": 3.1,
+   "revisado": "2026-10-22T22:41:17.180Z",
+   "rechazado": "paisaje reemplazado y aparece un auto",
+   "ok": false
+  },
+  "e19_mudanza": {
+   "size": 1290451,
+   "mtime": 1792707757823,
+   "auto": null,
+   "hint": "Three full people remain visible throughout; should be empty",
+   "dur": 3.133,
+   "revisado": "2026-10-22T22:41:17.180Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e22_pesca_red": {
+   "size": 1453415,
+   "mtime": 1792707761382,
+   "auto": null,
+   "hint": "image 1 contains unwanted people",
+   "dur": 3.1,
+   "revisado": "2026-10-22T22:41:17.181Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e25_plantando": {
+   "size": 1328264,
+   "mtime": 1792707747500,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 2.833,
+   "revisado": "2026-10-22T22:41:17.181Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e08_compuerta": {
+   "size": 1218330,
+   "mtime": 1792708158142,
+   "auto": null,
+   "hint": "Image 1 contains a person.",
+   "dur": 2.7,
+   "revisado": "2026-10-22T22:41:17.180Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e01_barco_arena": {
+   "size": 1774596,
+   "mtime": 1792707650058,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-22T22:41:17.183Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e04_acantilado": {
+   "size": 1510556,
+   "mtime": 1792707654686,
+   "auto": null,
+   "hint": "Bushes appear stretched and melted in later frames.",
+   "dur": 3.067,
+   "revisado": "2026-10-22T22:41:17.178Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e21_compuertas": {
+   "size": 879334,
+   "mtime": 1792707759594,
+   "auto": null,
+   "hint": "",
+   "dur": 3.133,
+   "revisado": "2026-10-22T22:41:17.185Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "h01_red_peces": {
+   "size": 1591950,
+   "mtime": 1792707624194,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 2.467,
+   "revisado": "2026-10-22T22:41:17.181Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e18_mujer_panuelo": {
+   "size": 1156316,
+   "mtime": 1792707756377,
+   "auto": null,
+   "hint": "Unwanted person in starting image; figure stretches in last ",
+   "dur": 2.567,
+   "revisado": "2026-10-22T22:41:17.180Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e29_dique_roto": {
+   "size": 1150741,
+   "mtime": 1792707750274,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-22T22:41:17.185Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e28_camello": {
+   "size": 1114574,
+   "mtime": 1792707748739,
+   "auto": null,
+   "hint": "A second leg appears in the last frame.",
+   "dur": 2.567,
+   "revisado": "2026-10-22T22:41:17.181Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e41_bahia_juncos": {
+   "size": 793303,
+   "mtime": 1792707622088,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-22T22:41:17.185Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e35_cauce_seco": {
+   "size": 1378125,
+   "mtime": 1792707753149,
+   "auto": null,
+   "hint": "",
+   "dur": 3.1,
+   "revisado": "2026-10-22T22:41:17.185Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "h08_congreso": {
+   "size": 458220,
+   "mtime": 1792708371581,
+   "auto": null,
+   "hint": "Starting image already contains many unwanted people in the ",
+   "dur": 2.833,
+   "revisado": "2026-10-22T22:41:17.181Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e06_canal_algodon": {
+   "size": 804967,
+   "mtime": 1792707656506,
+   "auto": null,
+   "hint": "",
+   "dur": 3.1,
+   "revisado": "2026-10-22T22:41:17.184Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r05_articulo": {
+   "size": 782990,
+   "mtime": 1792708420684,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person",
+   "dur": 3.133,
+   "revisado": "2026-10-22T22:41:17.182Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r07_frasco": {
+   "size": 428523,
+   "mtime": 1792708295807,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-22T22:41:17.186Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "h06_cosechadora": {
+   "size": 996890,
+   "mtime": 1792707627808,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-22T22:41:17.186Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r01_fila_satelites": {
+   "size": 768250,
+   "mtime": 1792708404702,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person",
+   "dur": 2.967,
+   "revisado": "2026-10-22T22:41:17.182Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r06_subraya": {
+   "size": 518415,
+   "mtime": 1792708440035,
+   "auto": null,
+   "hint": "Image 1 itself containing an unwanted person",
+   "dur": 3.067,
+   "revisado": "2026-10-22T22:41:17.182Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r14_sal": {
+   "size": 481211,
+   "mtime": 1792708325798,
+   "auto": null,
+   "hint": "Person present when none should be",
+   "dur": 3,
+   "revisado": "2026-10-22T22:41:17.182Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "h10_barco_pesca": {
+   "size": 765920,
+   "mtime": 1792708389110,
+   "auto": null,
+   "hint": "",
+   "dur": 2.566,
+   "revisado": "2026-10-22T22:41:17.186Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r11_canilla": {
+   "size": 370655,
+   "mtime": 1792708312125,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-22T22:41:17.186Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r25_calco": {
+   "size": 408529,
+   "mtime": 1792707643426,
+   "auto": null,
+   "hint": "",
+   "dur": 2.967,
+   "revisado": "2026-10-22T22:41:17.187Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r26_tijera": {
+   "size": 526998,
+   "mtime": 1792707644928,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person",
+   "dur": 3.067,
+   "revisado": "2026-10-22T22:41:17.183Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r16_puerta_viento": {
+   "size": 376952,
+   "mtime": 1792708336975,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person.",
+   "dur": 2.567,
+   "revisado": "2026-10-22T22:41:17.182Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r22_calculadora": {
+   "size": 442499,
+   "mtime": 1792707641562,
+   "auto": null,
+   "hint": "Person present in shot (elderly woman)",
+   "dur": 2.833,
+   "revisado": "2026-10-22T22:41:17.183Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r17_campo_seco": {
+   "size": 943447,
+   "mtime": 1792708354667,
+   "auto": null,
+   "hint": "Unwanted person in the starting image",
+   "dur": 3.1,
+   "revisado": "2026-10-22T22:41:17.183Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r37_pilas": {
+   "size": 697878,
+   "mtime": 1792707647721,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 3.067,
+   "revisado": "2026-10-22T22:41:17.183Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "r33_cafe_noche": {
+   "size": 368008,
+   "mtime": 1792707646409,
+   "auto": null,
+   "hint": "Image 1 contains an unwanted person.",
+   "dur": 2.7,
+   "revisado": "2026-10-22T22:41:17.183Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "e33_bombeo": {
+   "size": 788556,
+   "mtime": 1792707751654,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-22T22:41:17.185Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "h05_cosecha_algodon": {
+   "size": 1317502,
+   "mtime": 1792707625611,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-22T22:41:17.186Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "h07_conservera": {
+   "size": 1023735,
+   "mtime": 1792707629358,
+   "auto": null,
+   "hint": "",
+   "dur": 3.1,
+   "revisado": "2026-10-22T22:41:17.186Z",
+   "rechazado": null,
+   "ok": true
+  }
+ },
+ "repeticion": null,
+ "version": 2,
+ "slug": "rdaral",
+ "at": "2026-10-22T22:41:17.192Z",
+ "hojas": null
+}

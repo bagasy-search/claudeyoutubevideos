@@ -1,0 +1,366 @@
+{
+ "0": {
+  "gap": 0,
+  "where": ""
+ },
+ "1": {
+  "gap": 1,
+  "where": "aral"
+ },
+ "2": {
+  "gap": 1,
+  "where": "muynak"
+ },
+ "3": {
+  "gap": 0,
+  "where": ""
+ },
+ "4": {
+  "gap": 0,
+  "where": ""
+ },
+ "5": {
+  "gap": 0,
+  "where": ""
+ },
+ "6": {
+  "gap": 0,
+  "where": ""
+ },
+ "7": {
+  "gap": 0,
+  "where": ""
+ },
+ "8": {
+  "gap": 0,
+  "where": ""
+ },
+ "9": {
+  "gap": 0,
+  "where": ""
+ },
+ "10": {
+  "gap": 0,
+  "where": ""
+ },
+ "11": {
+  "gap": 0,
+  "where": ""
+ },
+ "12": {
+  "gap": 3,
+  "where": "syr darya darya"
+ },
+ "13": {
+  "gap": 0,
+  "where": ""
+ },
+ "14": {
+  "gap": 1,
+  "where": "muynak"
+ },
+ "15": {
+  "gap": 0,
+  "where": ""
+ },
+ "16": {
+  "gap": 1,
+  "where": "planners"
+ },
+ "17": {
+  "gap": 2,
+  "where": "fifties sixties"
+ },
+ "18": {
+  "gap": 0,
+  "where": ""
+ },
+ "19": {
+  "gap": 0,
+  "where": ""
+ },
+ "20": {
+  "gap": 1,
+  "where": "tradeoff"
+ },
+ "21": {
+  "gap": 1,
+  "where": "aral"
+ },
+ "22": {
+  "gap": 0,
+  "where": ""
+ },
+ "23": {
+  "gap": 1,
+  "where": "fifties"
+ },
+ "24": {
+  "gap": 0,
+  "where": ""
+ },
+ "25": {
+  "gap": 0,
+  "where": ""
+ },
+ "26": {
+  "gap": 1,
+  "where": "optimists"
+ },
+ "27": {
+  "gap": 0,
+  "where": ""
+ },
+ "28": {
+  "gap": 0,
+  "where": ""
+ },
+ "29": {
+  "gap": 1,
+  "where": "planners"
+ },
+ "30": {
+  "gap": 1,
+  "where": "sixties"
+ },
+ "31": {
+  "gap": 0,
+  "where": ""
+ },
+ "32": {
+  "gap": 1,
+  "where": "aral"
+ },
+ "33": {
+  "gap": 0,
+  "where": ""
+ },
+ "34": {
+  "gap": 1,
+  "where": "sixties"
+ },
+ "35": {
+  "gap": 0,
+  "where": ""
+ },
+ "36": {
+  "gap": 0,
+  "where": ""
+ },
+ "37": {
+  "gap": 0,
+  "where": ""
+ },
+ "38": {
+  "gap": 1,
+  "where": "seventies"
+ },
+ "39": {
+  "gap": 2,
+  "where": "aral sea"
+ },
+ "40": {
+  "gap": 1,
+  "where": "a"
+ },
+ "41": {
+  "gap": 2,
+  "where": "aralsk muynak"
+ },
+ "42": {
+  "gap": 0,
+  "where": ""
+ },
+ "43": {
+  "gap": 0,
+  "where": ""
+ },
+ "44": {
+  "gap": 1,
+  "where": "eighties"
+ },
+ "45": {
+  "gap": 0,
+  "where": ""
+ },
+ "46": {
+  "gap": 0,
+  "where": ""
+ },
+ "47": {
+  "gap": 0,
+  "where": ""
+ },
+ "48": {
+  "gap": 0,
+  "where": ""
+ },
+ "49": {
+  "gap": 2,
+  "where": "syr darya"
+ },
+ "50": {
+  "gap": 1,
+  "where": "planners"
+ },
+ "51": {
+  "gap": 0,
+  "where": ""
+ },
+ "52": {
+  "gap": 1,
+  "where": "aral"
+ },
+ "53": {
+  "gap": 0,
+  "where": ""
+ },
+ "54": {
+  "gap": 0,
+  "where": ""
+ },
+ "55": {
+  "gap": 0,
+  "where": ""
+ },
+ "56": {
+  "gap": 0,
+  "where": ""
+ },
+ "57": {
+  "gap": 1,
+  "where": "a"
+ },
+ "58": {
+  "gap": 1,
+  "where": "a"
+ },
+ "59": {
+  "gap": 0,
+  "where": ""
+ },
+ "60": {
+  "gap": 1,
+  "where": "aralkum"
+ },
+ "61": {
+  "gap": 1,
+  "where": "a"
+ },
+ "62": {
+  "gap": 0,
+  "where": ""
+ },
+ "63": {
+  "gap": 0,
+  "where": ""
+ },
+ "64": {
+  "gap": 1,
+  "where": "a"
+ },
+ "65": {
+  "gap": 1,
+  "where": "planners"
+ },
+ "66": {
+  "gap": 1,
+  "where": "karakalpakstan"
+ },
+ "67": {
+  "gap": 0,
+  "where": ""
+ },
+ "68": {
+  "gap": 0,
+  "where": ""
+ },
+ "69": {
+  "gap": 1,
+  "where": "micklin"
+ },
+ "70": {
+  "gap": 0,
+  "where": ""
+ },
+ "71": {
+  "gap": 0,
+  "where": ""
+ },
+ "72": {
+  "gap": 0,
+  "where": ""
+ },
+ "73": {
+  "gap": 0,
+  "where": ""
+ },
+ "74": {
+  "gap": 0,
+  "where": ""
+ },
+ "75": {
+  "gap": 2,
+  "where": "wind storm"
+ },
+ "76": {
+  "gap": 2,
+  "where": "kok aral"
+ },
+ "77": {
+  "gap": 2,
+  "where": "a half"
+ },
+ "78": {
+  "gap": 0,
+  "where": ""
+ },
+ "79": {
+  "gap": 0,
+  "where": ""
+ },
+ "80": {
+  "gap": 0,
+  "where": ""
+ },
+ "81": {
+  "gap": 1,
+  "where": "muynak's"
+ },
+ "82": {
+  "gap": 2,
+  "where": "any time"
+ },
+ "83": {
+  "gap": 1,
+  "where": "saxaul"
+ },
+ "84": {
+  "gap": 0,
+  "where": ""
+ },
+ "85": {
+  "gap": 0,
+  "where": ""
+ },
+ "86": {
+  "gap": 0,
+  "where": ""
+ },
+ "87": {
+  "gap": 0,
+  "where": ""
+ },
+ "88": {
+  "gap": 0,
+  "where": ""
+ },
+ "89": {
+  "gap": 0,
+  "where": ""
+ },
+ "90": {
+  "gap": 0,
+  "where": ""
+ }
+}

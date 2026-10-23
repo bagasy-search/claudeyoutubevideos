@@ -1,0 +1,2975 @@
+{
+ "total": 1349.714,
+ "avatarEnd": 1349.714,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0.0,
+   "dur": 5.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 5.82,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 68000,
+    "unit": "km²",
+    "label": "THE ARAL SEA · 1960",
+    "source": "Source: P. Micklin, Science, 1988",
+    "photo": "img/rdaral_b_41g.jpg",
+    "at": 5.82
+   },
+   "bed": "img/rdaral_e01_barco_arena_blur.jpg",
+   "_fin": 8.32
+  },
+  {
+   "t": 9.46,
+   "dur": 2.8,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ge1.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 12.26,
+   "dur": 2.86,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_n1985.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 15.12,
+   "dur": 3.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 18.94,
+   "dur": 7.88,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 96,
+    "unit": "%",
+    "label": "OF ITS WATER · GONE BY 2014",
+    "compare": "The whole eastern basin dried up.",
+    "source": "Source: P. Micklin et al., 2020",
+    "photo": "img/rdaral_e02_salar.jpg",
+    "at": 19.42,
+    "compareAt": 23.24
+   },
+   "bed": "img/rdaral_e01_barco_arena_blur.jpg",
+   "_fin": 25.74
+  },
+  {
+   "t": 26.82,
+   "dur": 3.42,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_ge8.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 30.24,
+   "dur": 4.34,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/rdaral_map2017.jpg",
+    "kicker": "150 KM FROM THE WATER",
+    "credit": "Map: NASA Earth Observatory · public domain",
+    "pins": [
+     {
+      "x": 845,
+      "y": 925,
+      "label": "MUYNAK",
+      "year": "PORT TOWN",
+      "at": 31.84,
+      "zoom": 1.5
+     }
+    ]
+   },
+   "bed": "img/rdaral_e01_barco_arena_blur.jpg",
+   "_fin": 34.34
+  },
+  {
+   "t": 34.58,
+   "dur": 5.88,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 40.46,
+   "dur": 6.28,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c068.mp4",
+   "rate": 0.868
+  },
+  {
+   "t": 46.74,
+   "dur": 5.9,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c006.mp4",
+   "real": true,
+   "rate": 0.924
+  },
+  {
+   "t": 52.64,
+   "dur": 1.3,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c024.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 53.94,
+   "dur": 3.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 57.12,
+   "dur": 4.52,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c008.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 61.64,
+   "dur": 2.6,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c030.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 64.24,
+   "dur": 3.0,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c014.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 67.24,
+   "dur": 5.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 73.16,
+   "dur": 3.38,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c011.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 76.54,
+   "dur": 6.7,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c103.mp4",
+   "rate": 0.813
+  },
+  {
+   "t": 83.24,
+   "dur": 2.86,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c015.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 86.1,
+   "dur": 4.88,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 90.98,
+   "dur": 4.16,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_svs0.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 95.14,
+   "dur": 5.6,
+   "sec": "S1",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r40_linea_tiempo.jpg"
+  },
+  {
+   "t": 100.74,
+   "dur": 3.22,
+   "sec": "S1",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r45_lapiz_oreja.jpg"
+  },
+  {
+   "t": 103.96,
+   "dur": 5.04,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 109.0,
+   "dur": 5.56,
+   "sec": "S2",
+   "lugar": "ruth",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_r37_pilas.mp4",
+   "real": false,
+   "rate": 0.543
+  },
+  {
+   "t": 114.56,
+   "dur": 4.52,
+   "sec": "S2",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r30_mano_mesa.jpg"
+  },
+  {
+   "t": 119.08,
+   "dur": 5.44,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 124.52,
+   "dur": 4.44,
+   "sec": "S2",
+   "lugar": "ruth",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_r01_fila_satelites.mp4",
+   "real": false,
+   "rate": 0.657
+  },
+  {
+   "t": 128.96,
+   "dur": 4.64,
+   "sec": "S2",
+   "lugar": "ruth",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_r07_frasco.mp4",
+   "real": false,
+   "rate": 0.6
+  },
+  {
+   "t": 133.6,
+   "dur": 5.06,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 138.66,
+   "dur": 6.0,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "05",
+    "title": "THE ARAL SEA",
+    "sub": "Kazakhstan · Uzbekistan · 1960",
+    "stamp": "OPEN",
+    "typeAt": 138.86,
+    "stampAt": 141.46
+   },
+   "bed": "img/rdaral_r01_fila_satelites_blur.jpg",
+   "_fin": 143.96
+  },
+  {
+   "t": 144.66,
+   "dur": 2.1,
+   "sec": "S2",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r31_laptop.jpg"
+  },
+  {
+   "t": 146.76,
+   "dur": 4.2,
+   "sec": "AV",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 146.76,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "word": "PART",
+    "fileNo": 1,
+    "part": "THE PROBLEM"
+   },
+   "bed": "img/rdaral_e08_compuerta_blur.jpg"
+  },
+  {
+   "t": 150.96,
+   "dur": 3.76,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 154.72,
+   "dur": 1.74,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_e28_camello.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 156.46,
+   "dur": 4.4,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d022.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 160.86,
+   "dur": 4.82,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d110.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 165.68,
+   "dur": 5.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 170.96,
+   "dur": 4.3,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_ls03.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 175.26,
+   "dur": 4.7,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d027.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 179.96,
+   "dur": 2.4,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e09_rio_montana.jpg"
+  },
+  {
+   "t": 182.36,
+   "dur": 3.19,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 185.55,
+   "dur": 9.13,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e10_rio_desierto.jpg"
+  },
+  {
+   "t": 194.68,
+   "dur": 4.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 198.92,
+   "dur": 1.74,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls22.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 200.66,
+   "dur": 7.5,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_ls26.mp4",
+   "rate": 0.795
+  },
+  {
+   "t": 208.16,
+   "dur": 3.52,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c055.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 211.68,
+   "dur": 4.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 215.84,
+   "dur": 3.62,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/rdaral_h02_puerto.jpg"
+  },
+  {
+   "t": 219.46,
+   "dur": 7.8,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls19.mp4",
+   "real": true,
+   "rate": 0.765
+  },
+  {
+   "t": 227.26,
+   "dur": 3.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 230.84,
+   "dur": 4.82,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_e08_compuerta.mp4",
+   "real": false,
+   "rate": 0.55
+  },
+  {
+   "t": 235.66,
+   "dur": 5.16,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls24.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 237.32,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "word": "PART",
+    "fileNo": 2,
+    "part": "THE PLAN"
+   },
+   "bed": "img/rdaral_e07_algodonal_blur.jpg"
+  },
+  {
+   "t": 240.82,
+   "dur": 2.32,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r10_algodon.jpg"
+  },
+  {
+   "t": 243.14,
+   "dur": 3.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 247.06,
+   "dur": 1.56,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_nrio.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 248.62,
+   "dur": 6.3,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls25.mp4",
+   "real": true,
+   "rate": 0.947
+  },
+  {
+   "t": 254.92,
+   "dur": 5.8,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/rdaral_h03_planificadores.jpg"
+  },
+  {
+   "t": 260.72,
+   "dur": 5.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 266.0,
+   "dur": 6.92,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r04_dedo_rio.jpg"
+  },
+  {
+   "t": 272.92,
+   "dur": 4.88,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r03_atlas.jpg"
+  },
+  {
+   "t": 277.8,
+   "dur": 4.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 282.26,
+   "dur": 5.76,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_eo2004.mp4",
+   "real": true,
+   "rate": 0.946
+  },
+  {
+   "t": 288.02,
+   "dur": 4.18,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d105.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 292.2,
+   "dur": 4.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 296.44,
+   "dur": 2.48,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c048.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 298.92,
+   "dur": 7.9,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r12_jarra.jpg"
+  },
+  {
+   "t": 306.82,
+   "dur": 1.8,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d112.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 308.62,
+   "dur": 5.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 314.08,
+   "dur": 9.5,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/rdaral_doc_p3.jpg",
+    "aspect": 0.7727,
+    "chip": "SCIENCE · 1988",
+    "source": "P. Micklin, Science 241, 1988",
+    "highlights": [
+     {
+      "x": 29.4,
+      "y": 30.8,
+      "w": 15.2,
+      "h": 1.6,
+      "at": 318.14
+     }
+    ],
+    "note": {
+     "text": "Desirable. Their word.",
+     "at": 320.78
+    }
+   },
+   "bed": "img/rdaral_e07_algodonal_blur.jpg",
+   "_fin": 323.28
+  },
+  {
+   "t": 323.58,
+   "dur": 3.44,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_r06_subraya.mp4",
+   "real": false,
+   "rate": 0.877
+  },
+  {
+   "t": 327.02,
+   "dur": 4.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 331.84,
+   "dur": 6.04,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d031.mp4",
+   "real": true,
+   "rate": 0.902
+  },
+  {
+   "t": 337.88,
+   "dur": 3.409,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e36_ancla.jpg"
+  },
+  {
+   "t": 341.289,
+   "dur": 3.86,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 345.149,
+   "dur": 9.22,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/rdaral_h01_red_peces.jpg",
+    "rightImg": "img/rdaral_e42_choza_redes.jpg",
+    "leftHead": "THE PLAN",
+    "rightHead": "THE PEOPLE",
+    "leftText": "A plan for the fish",
+    "rightText": "No plan for the fishermen",
+    "stamp": "FORGOTTEN",
+    "leftAt": 345.35,
+    "rightAt": 347.27
+   },
+   "bed": "img/rdaral_e07_algodonal_blur.jpg",
+   "_fin": 349.77
+  },
+  {
+   "t": 354.369,
+   "dur": 2.38,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_svs14.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 356.749,
+   "dur": 3.12,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 359.869,
+   "dur": 3.4,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c064.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 363.269,
+   "dur": 2.8,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d114.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 366.069,
+   "dur": 3.5,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e24_saxaul.jpg"
+  },
+  {
+   "t": 369.569,
+   "dur": 3.46,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c026.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 373.029,
+   "dur": 4.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 377.989,
+   "dur": 2.08,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r42_risa_seca.jpg"
+  },
+  {
+   "t": 380.069,
+   "dur": 8.24,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r05_articulo.jpg"
+  },
+  {
+   "t": 388.309,
+   "dur": 5.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 393.589,
+   "dur": 4.78,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d024.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 398.369,
+   "dur": 2.82,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c036.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 401.189,
+   "dur": 12.32,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "They decided that the sea was not necessary... that the value of the cotton would be greater than the loss of the fish.",
+    "who": "Yusup Kamalov, Aral researcher",
+    "year": "1992",
+    "source": "The Washington Post",
+    "at": 401.19,
+    "until": 410.35,
+    "highlight": "the sea was not necessary",
+    "bed": "img/rdaral_h05_cosecha_algodon.jpg"
+   },
+   "bed": "img/rdaral_e07_algodonal_blur.jpg",
+   "_fin": 412.85
+  },
+  {
+   "t": 413.509,
+   "dur": 3.02,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 416.529,
+   "dur": 4.02,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c099.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 420.549,
+   "dur": 5.58,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/rdaral_h11_canal_lleno.jpg"
+  },
+  {
+   "t": 420.549,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "word": "PART",
+    "fileNo": 3,
+    "part": "THE LAUNCH"
+   },
+   "bed": "img/rdaral_e06_canal_algodon_blur.jpg"
+  },
+  {
+   "t": 426.129,
+   "dur": 4.44,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 430.569,
+   "dur": 4.08,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_eo2006.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 434.649,
+   "dur": 9.12,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e34_surco.jpg"
+  },
+  {
+   "t": 443.769,
+   "dur": 5.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 449.269,
+   "dur": 4.48,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 453.749,
+   "dur": 2.9,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_e06_canal_algodon.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 456.649,
+   "dur": 4.66,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_eo2000.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 461.309,
+   "dur": 5.02,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 466.329,
+   "dur": 6.28,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c029.mp4",
+   "real": true,
+   "rate": 0.868
+  },
+  {
+   "t": 472.609,
+   "dur": 4.34,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e41_bahia_juncos.jpg"
+  },
+  {
+   "t": 476.949,
+   "dur": 4.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 481.429,
+   "dur": 5.38,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e05_conchas.jpg"
+  },
+  {
+   "t": 486.809,
+   "dur": 5.58,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r14_sal.jpg"
+  },
+  {
+   "t": 492.389,
+   "dur": 3.44,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 495.829,
+   "dur": 4.98,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_r25_calco.mp4",
+   "real": false,
+   "rate": 0.586
+  },
+  {
+   "t": 500.809,
+   "dur": 4.26,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_ndust2000.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 505.069,
+   "dur": 5.72,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 510.789,
+   "dur": 1.22,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c002.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 512.009,
+   "dur": 7.1,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c003.mp4",
+   "real": true,
+   "rate": 0.768
+  },
+  {
+   "t": 519.109,
+   "dur": 1.92,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d032.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 521.029,
+   "dur": 4.68,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 525.709,
+   "dur": 2.3,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c105.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 528.009,
+   "dur": 2.8,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c047.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 530.809,
+   "dur": 8.64,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e01_barco_arena.jpg"
+  },
+  {
+   "t": 539.449,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 543.349,
+   "dur": 5.7,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d077.mp4",
+   "real": true,
+   "rate": 0.956
+  },
+  {
+   "t": 549.049,
+   "dur": 7.12,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 48000,
+    "unit": "tons of fish",
+    "label": "COMMERCIAL CATCH · 1957",
+    "compare": "By the early 1980s: zero.",
+    "source": "Source: P. Micklin, Science, 1988",
+    "photo": "img/rdaral_h10_barco_pesca.jpg",
+    "at": 49.9,
+    "compareAt": 554.59
+   },
+   "bed": "img/rdaral_e03_tormenta_sal_blur.jpg",
+   "_fin": 556.049
+  },
+  {
+   "t": 556.169,
+   "dur": 4.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 560.749,
+   "dur": 1.6,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_r22_calculadora.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 562.349,
+   "dur": 7.1,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/rdaral_h07_conservera.jpg"
+  },
+  {
+   "t": 569.449,
+   "dur": 4.16,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d107.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 573.609,
+   "dur": 4.44,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 578.049,
+   "dur": 3.1,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c009.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 581.149,
+   "dur": 3.5,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c016.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 584.649,
+   "dur": 5.9,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r20_lata.jpg"
+  },
+  {
+   "t": 590.549,
+   "dur": 3.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 593.829,
+   "dur": 1.32,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e37_muelle_arena.jpg"
+  },
+  {
+   "t": 595.149,
+   "dur": 8.0,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e11_delta_seco.jpg"
+  },
+  {
+   "t": 603.149,
+   "dur": 3.34,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls17.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 606.489,
+   "dur": 4.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 610.569,
+   "dur": 6.68,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/rdaral_h08_congreso.jpg"
+  },
+  {
+   "t": 617.249,
+   "dur": 3.82,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d023.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 621.069,
+   "dur": 4.06,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 625.129,
+   "dur": 3.52,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_h06_cosechadora.mp4",
+   "real": false,
+   "rate": 0.838
+  },
+  {
+   "t": 628.649,
+   "dur": 6.6,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/rdaral_h09_fardos_balanza.jpg"
+  },
+  {
+   "t": 635.249,
+   "dur": 3.46,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_eo2015.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 638.709,
+   "dur": 4.44,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 643.149,
+   "dur": 4.0,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 647.149,
+   "dur": 3.2,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls21.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 650.349,
+   "dur": 6.32,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e40_rio_siberia.jpg"
+  },
+  {
+   "t": 656.669,
+   "dur": 3.04,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 659.709,
+   "dur": 1.54,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_n2000orb.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 661.249,
+   "dur": 7.9,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r26_tijera.jpg"
+  },
+  {
+   "t": 669.149,
+   "dur": 2.06,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r08_cuaderno.jpg"
+  },
+  {
+   "t": 671.209,
+   "dur": 3.009,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 674.218,
+   "dur": 10.44,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/rdaral_b_sts085.jpg",
+    "yearFrom": 1960,
+    "yearTo": 1987,
+    "popFrom": 53,
+    "popTo": 40,
+    "unit": "meters above sea level",
+    "label": "ARAL SEA · WATER LEVEL",
+    "from": 674.26,
+    "to": 679.02,
+    "marks": [
+     {
+      "year": 1960,
+      "note": "53 m"
+     },
+     {
+      "year": 1987,
+      "note": "13 m lower"
+     }
+    ],
+    "source": "Source: P. Micklin, Science, 1988",
+    "linear": true
+   },
+   "bed": "img/rdaral_e03_tormenta_sal_blur.jpg",
+   "_fin": 681.52
+  },
+  {
+   "t": 684.658,
+   "dur": 1.72,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ge15.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 686.378,
+   "dur": 4.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 690.738,
+   "dur": 2.72,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_eo2016.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 693.458,
+   "dur": 4.879,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ntip25.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 698.337,
+   "dur": 9.0,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/rdaral_doc_p6.jpg",
+    "aspect": 0.7727,
+    "chip": "SCIENCE · 1988",
+    "source": "P. Micklin, Science 241, 1988",
+    "highlights": [
+     {
+      "x": 64.6,
+      "y": 7.1,
+      "w": 25.4,
+      "h": 1.6,
+      "at": 703.26
+     },
+     {
+      "x": 81,
+      "y": 11.3,
+      "w": 12.4,
+      "h": 1.6,
+      "at": 712.28
+     }
+    ],
+    "note": {
+     "text": "Warned in 1988.",
+     "at": 713.9
+    }
+   },
+   "bed": "img/rdaral_e03_tormenta_sal_blur.jpg",
+   "_fin": 707.337
+  },
+  {
+   "t": 707.337,
+   "dur": 1.261,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_n1994.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 708.598,
+   "dur": 3.679,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 712.277,
+   "dur": 5.96,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_nbarsa.mp4",
+   "real": true,
+   "rate": 0.914
+  },
+  {
+   "t": 718.237,
+   "dur": 6.001,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_nsouth21.mp4",
+   "rate": 0.908
+  },
+  {
+   "t": 724.238,
+   "dur": 5.64,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 729.878,
+   "dur": 3.959,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d002.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 733.837,
+   "dur": 2.4,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c001.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 736.237,
+   "dur": 3.921,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e31_isla_militar.jpg"
+  },
+  {
+   "t": 740.158,
+   "dur": 5.72,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 745.878,
+   "dur": 5.459,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e32_lab_vacio.jpg"
+  },
+  {
+   "t": 751.337,
+   "dur": 5.44,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c054.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 756.777,
+   "dur": 3.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 760.277,
+   "dur": 1.96,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_e21_compuertas.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 762.237,
+   "dur": 7.9,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r43_palma_mapa.jpg"
+  },
+  {
+   "t": 770.137,
+   "dur": 3.281,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_eo2014.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 773.418,
+   "dur": 3.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 776.578,
+   "dur": 3.659,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_eo2008.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 780.237,
+   "dur": 5.581,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_eo2009.mp4",
+   "rate": 0.977
+  },
+  {
+   "t": 785.818,
+   "dur": 5.019,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 790.837,
+   "dur": 4.5,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_eo2018.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 795.337,
+   "dur": 7.221,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r13_nivel.jpg"
+  },
+  {
+   "t": 802.558,
+   "dur": 5.279,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 807.837,
+   "dur": 4.221,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_nwest24.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 812.058,
+   "dur": 8.68,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 150,
+    "unit": "grams of salt per liter",
+    "label": "WESTERN BASIN · SOUTH ARAL",
+    "compare": "Ocean water: about 35. Four times saltier.",
+    "source": "Source: P. Micklin et al., 2020",
+    "photo": "img/rdaral_e30_vaso_salado.jpg",
+    "at": 814.88,
+    "compareAt": 818.26
+   },
+   "bed": "img/rdaral_e03_tormenta_sal_blur.jpg",
+   "_fin": 820.7379999999999
+  },
+  {
+   "t": 820.738,
+   "dur": 1.5,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c101.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 822.238,
+   "dur": 3.86,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 50,
+   "lugar": "avatar"
+  },
+  {
+   "t": 826.098,
+   "dur": 5.36,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c020.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 827.958,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "word": "PART",
+    "fileNo": 5,
+    "part": "WHO PAYS"
+   },
+   "bed": "img/rdaral_e13_pueblo_polvo_blur.jpg"
+  },
+  {
+   "t": 831.458,
+   "dur": 3.2,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c027.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 834.658,
+   "dur": 4.2,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e26_fardos.jpg"
+  },
+  {
+   "t": 838.858,
+   "dur": 5.94,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 51,
+   "lugar": "avatar"
+  },
+  {
+   "t": 844.798,
+   "dur": 5.86,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c053.mp4",
+   "rate": 0.93
+  },
+  {
+   "t": 850.658,
+   "dur": 4.099,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c094.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 854.757,
+   "dur": 7.26,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "BigStat",
+   "props": {
+    "value": 40000,
+    "unit": "km²",
+    "label": "THE ARALKUM · NEW SALT DESERT · 2003",
+    "compare": "Bigger than Maryland.",
+    "source": "Source: European Space Agency",
+    "photo": "img/rdaral_e03_tormenta_sal.jpg",
+    "at": 857.76,
+    "compareAt": 862.28
+   },
+   "bed": "img/rdaral_e13_pueblo_polvo_blur.jpg",
+   "_fin": 861.757
+  },
+  {
+   "t": 862.017,
+   "dur": 5.361,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 52,
+   "lugar": "avatar"
+  },
+  {
+   "t": 867.378,
+   "dur": 9.779,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e15_camino_polvo.jpg"
+  },
+  {
+   "t": 877.157,
+   "dur": 3.221,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 880.378,
+   "dur": 3.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 53,
+   "lugar": "avatar"
+  },
+  {
+   "t": 883.458,
+   "dur": 4.599,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c100.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 888.057,
+   "dur": 2.5,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c034.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 890.557,
+   "dur": 3.84,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_eo2012.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 894.397,
+   "dur": 4.201,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 54,
+   "lugar": "avatar"
+  },
+  {
+   "t": 898.598,
+   "dur": 3.659,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e38_algodon_polvo.jpg"
+  },
+  {
+   "t": 902.257,
+   "dur": 3.5,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r15_polvo_ventana.jpg"
+  },
+  {
+   "t": 905.757,
+   "dur": 2.341,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c018.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 908.098,
+   "dur": 4.619,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 55,
+   "lugar": "avatar"
+  },
+  {
+   "t": 912.717,
+   "dur": 3.54,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e17_campo_lavado.jpg"
+  },
+  {
+   "t": 916.257,
+   "dur": 4.9,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e16_costra_campo.jpg"
+  },
+  {
+   "t": 921.157,
+   "dur": 5.22,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r18_tierra_salada.jpg"
+  },
+  {
+   "t": 926.377,
+   "dur": 4.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 56,
+   "lugar": "avatar"
+  },
+  {
+   "t": 930.717,
+   "dur": 3.84,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d025.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 934.557,
+   "dur": 3.8,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c077.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 938.357,
+   "dur": 4.221,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r19_termometro.jpg"
+  },
+  {
+   "t": 942.578,
+   "dur": 4.26,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 57,
+   "lugar": "avatar"
+  },
+  {
+   "t": 946.838,
+   "dur": 2.919,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e39_helada.jpg"
+  },
+  {
+   "t": 949.757,
+   "dur": 7.38,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_ls10.mp4",
+   "rate": 0.808
+  },
+  {
+   "t": 957.137,
+   "dur": 3.841,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 58,
+   "lugar": "avatar"
+  },
+  {
+   "t": 960.978,
+   "dur": 4.179,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c091.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 965.157,
+   "dur": 6.421,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e13_pueblo_polvo.jpg"
+  },
+  {
+   "t": 971.578,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 59,
+   "lugar": "avatar"
+  },
+  {
+   "t": 975.478,
+   "dur": 6.879,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d097.mp4",
+   "real": true,
+   "rate": 0.792
+  },
+  {
+   "t": 982.357,
+   "dur": 5.621,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c069.mp4",
+   "rate": 0.97
+  },
+  {
+   "t": 987.978,
+   "dur": 5.94,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 60,
+   "lugar": "avatar"
+  },
+  {
+   "t": 993.918,
+   "dur": 7.84,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "BigStat",
+   "props": {
+    "value": 100,
+    "prefix": "~",
+    "unit": "per 1,000 births",
+    "label": "INFANT DEATHS · KARAKALPAKSTAN · 1992",
+    "compare": "About one baby in ten.",
+    "source": "Source: The Washington Post, 1992",
+    "photo": "img/rdaral_e18_mujer_panuelo.jpg",
+    "at": 997.14,
+    "compareAt": 1004.22
+   },
+   "bed": "img/rdaral_e13_pueblo_polvo_blur.jpg",
+   "_fin": 1001.758
+  },
+  {
+   "t": 1001.758,
+   "dur": 2.16,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1003.918,
+   "dur": 5.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 61,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1009.098,
+   "dur": 3.16,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_e19_mudanza.mp4",
+   "real": false,
+   "rate": 0.976
+  },
+  {
+   "t": 1012.258,
+   "dur": 8.0,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e14_casa_abandonada.jpg"
+  },
+  {
+   "t": 1020.258,
+   "dur": 1.208,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c062.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1021.466,
+   "dur": 5.76,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 62,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1027.226,
+   "dur": 3.332,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_c065.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1030.558,
+   "dur": 3.8,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c079.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1034.358,
+   "dur": 4.748,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d017.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1039.106,
+   "dur": 3.56,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 63,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1042.666,
+   "dur": 8.0,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/rdaral_e07_algodonal.jpg",
+    "yearFrom": 1960,
+    "yearTo": 2010,
+    "popFrom": 5000000,
+    "popTo": 8200000,
+    "unit": "hectares irrigated",
+    "label": "THE FIELDS KEPT GROWING",
+    "from": 1044.87,
+    "to": 1053.09,
+    "marks": [
+     {
+      "year": 1960,
+      "note": "~5 million ha"
+     },
+     {
+      "year": 2010,
+      "note": "8.2 million ha"
+     }
+    ],
+    "source": "Source: P. Micklin, 2020",
+    "linear": true
+   },
+   "bed": "img/rdaral_e13_pueblo_polvo_blur.jpg",
+   "_fin": 1050.666
+  },
+  {
+   "t": 1050.666,
+   "dur": 4.58,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_e33_bombeo.mp4",
+   "real": false,
+   "rate": 0.644
+  },
+  {
+   "t": 1055.246,
+   "dur": 5.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 64,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1060.706,
+   "dur": 6.0,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e27_casco.jpg"
+  },
+  {
+   "t": 1066.706,
+   "dur": 4.1,
+   "sec": "AV",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r41_lentes_arriba.jpg"
+  },
+  {
+   "t": 1066.706,
+   "dur": 4.1,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "word": "PART",
+    "fileNo": 6,
+    "part": "WHAT WORKED"
+   },
+   "bed": "img/rdaral_e20_dique_blur.jpg"
+  },
+  {
+   "t": 1070.806,
+   "dur": 3.88,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 65,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1074.686,
+   "dur": 3.72,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d006.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1078.406,
+   "dur": 3.4,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d005.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1081.806,
+   "dur": 4.72,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d080.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1086.526,
+   "dur": 4.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 66,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1091.026,
+   "dur": 4.68,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls13.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1095.706,
+   "dur": 5.72,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_e29_dique_roto.mp4",
+   "real": false,
+   "rate": 0.516
+  },
+  {
+   "t": 1101.426,
+   "dur": 3.94,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 67,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1105.366,
+   "dur": 5.44,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d064.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1110.806,
+   "dur": 2.32,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d003.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1113.126,
+   "dur": 3.66,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/rdaral_map2007.jpg",
+    "kicker": "NORTH ARAL · KAZAKHSTAN",
+    "credit": "Map: NASA Earth Observatory · public domain",
+    "pins": [
+     {
+      "x": 905,
+      "y": 262,
+      "label": "KOK-ARAL DAM",
+      "year": "2005",
+      "at": 1113.85,
+      "zoom": 1.6
+     }
+    ]
+   },
+   "bed": "img/rdaral_e20_dique_blur.jpg",
+   "_fin": 1116.35
+  },
+  {
+   "t": 1116.786,
+   "dur": 3.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 68,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1119.786,
+   "dur": 8.54,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e20_dique.jpg"
+  },
+  {
+   "t": 1128.326,
+   "dur": 3.98,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_ls23.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1132.306,
+   "dur": 4.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 69,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1136.706,
+   "dur": 2.62,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_ls08.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1139.326,
+   "dur": 7.46,
+   "sec": "S8",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r44_regla_mapa.jpg"
+  },
+  {
+   "t": 1146.786,
+   "dur": 3.56,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 70,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1150.346,
+   "dur": 3.38,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d122.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1153.726,
+   "dur": 4.2,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c063.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1157.926,
+   "dur": 2.36,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/rdaral_e22_pesca_red.jpg",
+    "yearFrom": 2005,
+    "yearTo": 2025,
+    "popFrom": 695,
+    "popTo": 8000,
+    "unit": "tons of fish a year",
+    "label": "NORTH ARAL · FISH CATCH",
+    "from": 1161.63,
+    "to": 1173.79,
+    "marks": [
+     {
+      "year": 2005,
+      "note": "dam finished"
+     },
+     {
+      "year": 2016,
+      "note": "6,000 t"
+     },
+     {
+      "year": 2025,
+      "note": "~8,000 t"
+     }
+    ],
+    "source": "Sources: P. Micklin 2020 · Kazakhstan Ministry of Water"
+   },
+   "bed": "img/rdaral_e20_dique_blur.jpg",
+   "_fin": 1169.5259999999998
+  },
+  {
+   "t": 1160.286,
+   "dur": 4.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 71,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1164.606,
+   "dur": 4.92,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d066.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1169.526,
+   "dur": 3.6,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_d054.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1173.126,
+   "dur": 4.88,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e23_mercado_pez.jpg"
+  },
+  {
+   "t": 1178.006,
+   "dur": 4.64,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 72,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1182.646,
+   "dur": 4.98,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d062.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1187.626,
+   "dur": 4.7,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdaral_real/rdaral_nnorth24.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1192.326,
+   "dur": 3.86,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_nnorth22.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1196.186,
+   "dur": 5.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 73,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1201.526,
+   "dur": 5.2,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_eo2010.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1206.726,
+   "dur": 7.0,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_eo2002.mp4",
+   "real": true,
+   "rate": 0.779
+  },
+  {
+   "t": 1213.726,
+   "dur": 1.4,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ls15.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1215.126,
+   "dur": 3.68,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 74,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1218.806,
+   "dur": 1.52,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_ngsfc.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1220.326,
+   "dur": 9.62,
+   "sec": "S8",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r39_arbusto.jpg"
+  },
+  {
+   "t": 1229.946,
+   "dur": 3.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 75,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1233.226,
+   "dur": 3.66,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d104.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1236.886,
+   "dur": 7.0,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": 35100,
+    "unit": "hectares",
+    "label": "SAXAUL PLANTED · 2018-2020",
+    "compare": "On the dry sea floor, to hold the dust.",
+    "source": "Source: UNDP Uzbekistan",
+    "photo": "img/rdaral_e25_plantando.jpg",
+    "at": 1241.47,
+    "compareAt": 1245.65
+   },
+   "bed": "img/rdaral_e20_dique_blur.jpg",
+   "_fin": 1243.886
+  },
+  {
+   "t": 1243.886,
+   "dur": 1.76,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_d004.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1245.646,
+   "dur": 4.22,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 76,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1249.866,
+   "dur": 5.32,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c066.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1255.186,
+   "dur": 4.1,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c076.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1259.286,
+   "dur": 4.66,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 77,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1263.946,
+   "dur": 2.44,
+   "sec": "S9",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c082.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1266.386,
+   "dur": 7.0,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e35_cauce_seco.jpg"
+  },
+  {
+   "t": 1273.386,
+   "dur": 2.26,
+   "sec": "S9",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c032.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1275.646,
+   "dur": 4.86,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 78,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1280.506,
+   "dur": 7.28,
+   "sec": "S9",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c080.mp4",
+   "real": true,
+   "rate": 0.749
+  },
+  {
+   "t": 1287.786,
+   "dur": 4.22,
+   "sec": "S9",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c104.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1292.006,
+   "dur": 5.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 79,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1297.166,
+   "dur": 1.62,
+   "sec": "S9",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c093.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1298.786,
+   "dur": 8.2,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdaral_e04_acantilado.jpg"
+  },
+  {
+   "t": 1306.986,
+   "dur": 3.38,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r36_porche.jpg"
+  },
+  {
+   "t": 1310.366,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 80,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1313.666,
+   "dur": 3.18,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "clip",
+   "asset": "broll/rdaral_ag/rdaral_r16_puerta_viento.mp4",
+   "real": false,
+   "rate": 0.791
+  },
+  {
+   "t": 1316.846,
+   "dur": 6.2,
+   "sec": "S10",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/rdaral_real/rdaral_c000.mp4",
+   "real": true,
+   "rate": 0.879
+  },
+  {
+   "t": 1323.046,
+   "dur": 2.16,
+   "sec": "S10",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r35_tanque.jpg"
+  },
+  {
+   "t": 1325.206,
+   "dur": 5.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 81,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1330.286,
+   "dur": 6.42,
+   "sec": "S10",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r09_recorte.jpg"
+  },
+  {
+   "t": 1336.706,
+   "dur": 7.14,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "06",
+    "title": "THE BALD EAGLE",
+    "sub": "America sprayed its farms for 30 years",
+    "stamp": "NEXT",
+    "typeAt": 1336.91,
+    "stampAt": 1342.89
+   },
+   "bed": "img/rdaral_r11_canilla_blur.jpg",
+   "_fin": 1343.706
+  },
+  {
+   "t": 1343.846,
+   "dur": 4.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 82,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1348.206,
+   "dur": 1.508,
+   "sec": "S10",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdaral_r34_vaso_luz.jpg"
+  }
+ ]
+}
