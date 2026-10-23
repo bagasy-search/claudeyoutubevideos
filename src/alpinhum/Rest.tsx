@@ -102,7 +102,28 @@ const Overlay: React.FC<{ o: Ov; t: number }> = ({ o, t }) => {
     else dx = okL ? left : okR ? right : (R > -Lf ? 20 : -20);
     const y0 = qs[0].y;
     if (y0 + dy < 70) dy = 70 - y0; else if (y0 + dy > 1010) dy = 1010 - y0;
-    return <Tag t={t} at={o.at} out={o.out} x={q.x} y={q.y} dx={dx} dy={dy} text={g("text")} sub={g("sub") ?? undefined} col={g("col") ?? COL.ink} size={sz} />;
+    // no se monta sobre un título grande que esté en pantalla en algún momento de su vida: se corre abajo (o arriba) de su franja
+    const tx0 = dx >= 0 ? qs[0].x + dx + 14 : qs[0].x + dx - 14 - w;
+    for (const b of P.ov) {
+      if ((b.t !== "big" && b.t !== "stamp") || b.at >= o.out || b.out <= o.at) continue;
+      const bs = (b.size as number) ?? 110, bw = String(b.text).length * bs * 0.66, bx = b.x as number, by = b.y as number, h = bs * 0.7 + 34;
+      if (tx0 > bx + bw / 2 || tx0 + w < bx - bw / 2 || Math.abs(y0 + dy - by) > h) continue;
+      dy = by + h + 10 <= 1010 ? by + h + 10 - y0 : by - h - 10 - y0;
+    }
+    // y si igual la cámara lo lleva al borde en algún cuadro, se corre la línea (no el texto) para que entre siempre
+    // (el texto ocupa [x+dx+14, +w] a la derecha o [x+dx-14-w, x+dx-14] a la izquierda: se encierra entre 30 y 1890 sin cambiar de lado)
+    const side = dx >= 0, lx = side ? q.x + dx + 14 : q.x + dx - 14 - w, lc = Math.max(30, Math.min(1890 - w, lx));
+    dx += lc - lx;
+    dy = Math.max(70 - q.y, Math.min(1010 - q.y, dy)); // y por cuadro: nunca se va por arriba ni por abajo
+    // y por cuadro también: si la cámara lo trae contra un título que está en pantalla AHORA, se corre fuera de su franja
+    const txn = side ? q.x + dx + 14 : q.x + dx - 14 - w;
+    for (const b of P.ov) {
+      if ((b.t !== "big" && b.t !== "stamp") || t < b.at - 0.1 || t > b.out + 0.25) continue;
+      const bs = (b.size as number) ?? 110, bw = String(b.text).length * bs * 0.66, bx = b.x as number, by = b.y as number, h = bs * 0.7 + 34;
+      if (txn > bx + bw / 2 || txn + w < bx - bw / 2 || Math.abs(q.y + dy - by) > h) continue;
+      dy = (by + h + 10 <= 1010 ? by + h + 10 : by - h - 10) - q.y;
+    }
+    return <Tag t={t} at={o.at} out={o.out} x={q.x} y={q.y} dx={dx} dy={dy} side={side} text={g("text")} sub={g("sub") ?? undefined} col={g("col") ?? COL.ink} size={sz} />;
   }
   if (o.t === "big") return <BigNum t={t} at={o.at} out={o.out} text={g("text")} x={g("x")} y={g("y")} size={g("size")} col={g("col") ?? "#fff1cf"} edge={g("edge") ?? "#4a3a20"} sub={g("sub") ?? undefined} />;
   if (o.t === "stamp") return <Stamp t={t} at={o.at} out={o.out} text={g("text")} x={g("x")} y={g("y")} size={g("size")} col={g("col") ?? undefined} />;

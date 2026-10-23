@@ -48,7 +48,8 @@ export const Portal: React.FC<{ x: number; y: number; r: number; ring?: number; 
 };
 
 // rótulo anclado a un punto (línea guía + punto + texto extruido); pop con resorte
-export const Tag: React.FC<{ t: number; at: number; x: number; y: number; dx?: number; dy?: number; text: string; sub?: string; col?: string; out?: number; size?: number }> = ({ t, at, x, y, dx = 120, dy = -90, text, sub, col = COL.ink, out = 1e9, size = 46 }) => {
+export const Tag: React.FC<{ t: number; at: number; x: number; y: number; dx?: number; dy?: number; text: string; sub?: string; col?: string; out?: number; size?: number; side?: boolean }> = ({ t, at, x, y, dx = 120, dy = -90, text, sub, col = COL.ink, out = 1e9, size = 46, side }) => {
+  const rs = side ?? dx >= 0; // lado del texto (derecha = arranca en la punta de la línea)
   const k = Math.min(1.15, spr(t, at)), o = e(t, at, at + 0.12) * (1 - e(t, out, out + 0.25));
   if (o <= 0.01) return null;
   const L = e(t, at, at + 0.3);
@@ -60,7 +61,7 @@ export const Tag: React.FC<{ t: number; at: number; x: number; y: number; dx?: n
         <circle cx={x} cy={y} r={8 * k} fill={col} style={{ filter: `drop-shadow(0 0 10px ${col})` }} />
         <circle cx={x} cy={y} r={18 + 26 * e(t, at, at + 0.6)} fill="none" stroke={col} strokeWidth={2} opacity={1 - e(t, at, at + 0.6)} />
       </svg>
-      <div style={{ position: "absolute", left: ex + (dx >= 0 ? 14 : -14), top: ey, transform: `translate(${dx >= 0 ? 0 : -100}%, -50%) perspective(900px) rotateY(${(1 - Math.min(1, k)) * (dx >= 0 ? 50 : -50)}deg) scale(${0.6 + 0.4 * k})`, transformOrigin: dx >= 0 ? "0 50%" : "100% 50%", fontFamily: FONT, whiteSpace: "nowrap" }}>
+      <div style={{ position: "absolute", left: ex + (rs ? 14 : -14), top: ey, transform: `translate(${rs ? 0 : -100}%, -50%) perspective(900px) rotateY(${(1 - Math.min(1, k)) * (rs ? 50 : -50)}deg) scale(${0.6 + 0.4 * k})`, transformOrigin: rs ? "0 50%" : "100% 50%", fontFamily: FONT, whiteSpace: "nowrap" }}>
         <div style={{ fontWeight: 900, fontSize: size, color: col, letterSpacing: 2, textShadow: extrude(6, "rgba(0,0,0,.55)") }}>{text}</div>
         {sub && <div style={{ fontWeight: 800, fontSize: size * 0.5, color: COL.dim, letterSpacing: 3, marginTop: 2, textShadow: "0 2px 10px #000" }}>{sub}</div>}
       </div>
