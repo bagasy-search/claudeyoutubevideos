@@ -1,0 +1,1279 @@
+{
+"end": 795.1,
+"shots": [
+{
+"a": 0.0,
+"b": 1.56,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_g01_rooftops.jpg"
+},
+{
+"a": 1.56,
+"b": 3.2,
+"k": "real",
+"src": "img/t30duraen/cand/lon1812_01.jpg"
+},
+{
+"a": 3.2,
+"b": 4.4,
+"k": "real",
+"src": "img/t30duraen/cand/climbing_01.jpg"
+},
+{
+"a": 4.4,
+"b": 7.54,
+"k": "ilus",
+"src": "chimney"
+},
+{
+"a": 7.54,
+"b": 8.94,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k01_soot_fall.mp4"
+},
+{
+"a": 8.94,
+"b": 11.22,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_g03_brush_soot.jpg"
+},
+{
+"a": 11.22,
+"b": 13.58,
+"k": "ilus",
+"src": "chimney"
+},
+{
+"a": 13.58,
+"b": 17.16,
+"k": "real",
+"src": "img/t30duraen/cand/sweepold_01.jpg"
+},
+{
+"a": 17.16,
+"b": 21.88,
+"k": "ilus",
+"src": "portal"
+},
+{
+"a": 21.88,
+"b": 23.78,
+"k": "g",
+"src": "roster",
+"big": true
+},
+{
+"a": 23.78,
+"b": 29.8,
+"k": "real",
+"src": "cards"
+},
+{
+"a": 29.8,
+"b": 32.22,
+"k": "real",
+"src": "img/t30duraen/cand/usradium_01.jpg"
+},
+{
+"a": 32.22,
+"b": 34.04,
+"k": "real",
+"src": "img/t30duraen/cand/powder_02.jpg"
+},
+{
+"a": 34.04,
+"b": 36.58,
+"k": "g",
+"src": "word"
+},
+{
+"a": 36.58,
+"b": 40.44,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 40.44,
+"b": 43.68,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_g06_monday.jpg"
+},
+{
+"a": 43.68,
+"b": 45.2,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_g04_fryer.jpg"
+},
+{
+"a": 45.2,
+"b": 46.46,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_z01_office_night.jpg"
+},
+{
+"a": 46.46,
+"b": 49.4,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_g05_nightshift.jpg"
+},
+{
+"a": 49.4,
+"b": 55.48,
+"k": "real",
+"src": "cards"
+},
+{
+"a": 55.48,
+"b": 59.92,
+"k": "g",
+"src": "roster",
+"big": true
+},
+{
+"a": 59.92,
+"b": 61.78,
+"k": "ilus",
+"src": "portal"
+},
+{
+"a": 61.78,
+"b": 72.04,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 72.04,
+"b": 77.4,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 77.4,
+"b": 78.66,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 78.66,
+"b": 81.02,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 81.02,
+"b": 86.08,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k02_steam_tubs.mp4"
+},
+{
+"a": 86.08,
+"b": 93.18,
+"k": "ilus",
+"src": "rome"
+},
+{
+"a": 93.18,
+"b": 95.08,
+"k": "real",
+"src": "img/t30duraen/cand/fullfresco_01.jpg"
+},
+{
+"a": 95.08,
+"b": 96.94,
+"k": "real",
+"src": "img/t30duraen/cand/fullon_03.jpg"
+},
+{
+"a": 96.94,
+"b": 98.6,
+"k": "real",
+"src": "img/t30duraen/cand/toga_01.jpg"
+},
+{
+"a": 98.6,
+"b": 100.4,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_r05_togas_dry.jpg"
+},
+{
+"a": 100.4,
+"b": 105.4,
+"k": "ilus",
+"src": "rome"
+},
+{
+"a": 105.4,
+"b": 106.76,
+"k": "g",
+"src": "word",
+"sfx": "revelacion"
+},
+{
+"a": 106.76,
+"b": 111.44,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_r02_pots_street.jpg"
+},
+{
+"a": 111.44,
+"b": 114.66,
+"k": "ilus",
+"src": "rome"
+},
+{
+"a": 114.66,
+"b": 117.98,
+"k": "real",
+"src": "img/t30duraen/kf/t30duraen_k04_pour_jar.jpg"
+},
+{
+"a": 117.98,
+"b": 123.46,
+"k": "ilus",
+"src": "rome"
+},
+{
+"a": 123.46,
+"b": 124.92,
+"k": "real",
+"src": "img/t30duraen/kf/t30duraen_k03_stomp.jpg"
+},
+{
+"a": 124.92,
+"b": 127.42,
+"k": "real",
+"src": "img/t30duraen/cand/fullon_05.jpg"
+},
+{
+"a": 127.42,
+"b": 128.92,
+"k": "real",
+"src": "img/t30duraen/cand/vesp_02.jpg"
+},
+{
+"a": 128.92,
+"b": 130.74,
+"k": "real",
+"src": "img/t30duraen/cand/vespcoin_03.jpg"
+},
+{
+"a": 130.74,
+"b": 134.5,
+"k": "real",
+"src": "img/t30duraen/cand/vesp_03.jpg"
+},
+{
+"a": 134.5,
+"b": 138.5,
+"k": "g",
+"src": "coin"
+},
+{
+"a": 138.5,
+"b": 145.38,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 145.38,
+"b": 146.9,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 146.9,
+"b": 149.32,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 149.32,
+"b": 157.22,
+"k": "ilus",
+"src": "village"
+},
+{
+"a": 157.22,
+"b": 159.82,
+"k": "real",
+"src": "img/t30duraen/cand/plaguepit_01.jpg"
+},
+{
+"a": 159.82,
+"b": 161.28,
+"k": "real",
+"src": "img/t30duraen/cand/plague3_03.jpg"
+},
+{
+"a": 161.28,
+"b": 166.2,
+"k": "g",
+"src": "third",
+"big": true
+},
+{
+"a": 166.2,
+"b": 168.5,
+"k": "ilus",
+"src": "village",
+"sfx": "revelacion"
+},
+{
+"a": 168.5,
+"b": 170.34,
+"k": "real",
+"src": "img/t30duraen/cand/plague3_02.jpg"
+},
+{
+"a": 170.34,
+"b": 172.92,
+"k": "ilus",
+"src": "village"
+},
+{
+"a": 172.92,
+"b": 173.74,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_p07_knock.jpg"
+},
+{
+"a": 173.74,
+"b": 175.72,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_p03_door_cross.jpg"
+},
+{
+"a": 175.72,
+"b": 181.46,
+"k": "ilus",
+"src": "trench"
+},
+{
+"a": 181.46,
+"b": 187.16,
+"k": "ilus",
+"src": "flea"
+},
+{
+"a": 187.16,
+"b": 191.84,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k06_candle.mp4"
+},
+{
+"a": 191.84,
+"b": 194.24,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_p01_village.jpg"
+},
+{
+"a": 194.24,
+"b": 198.12,
+"k": "ilus",
+"src": "scale",
+"big": true
+},
+{
+"a": 198.12,
+"b": 200.486,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_p06_coins_table.jpg"
+},
+{
+"a": 200.486,
+"b": 204.266,
+"k": "real",
+"src": "img/t30duraen/kf/t30duraen_k05_cart_mud.jpg"
+},
+{
+"a": 204.266,
+"b": 209.146,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 209.146,
+"b": 213.166,
+"k": "ilus",
+"src": "ecg"
+},
+{
+"a": 213.166,
+"b": 214.626,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 214.626,
+"b": 216.966,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 216.966,
+"b": 223.506,
+"k": "g",
+"src": "split"
+},
+{
+"a": 223.506,
+"b": 224.406,
+"k": "real",
+"src": "img/t30duraen/cand/visscher_02.jpg"
+},
+{
+"a": 224.406,
+"b": 228.606,
+"k": "real",
+"src": "img/t30duraen/cand/tudorlon_01.jpg"
+},
+{
+"a": 228.606,
+"b": 240.246,
+"k": "ilus",
+"src": "gong"
+},
+{
+"a": 240.246,
+"b": 242.666,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k08_lantern_swing.mp4"
+},
+{
+"a": 242.666,
+"b": 247.166,
+"k": "real",
+"src": "img/t30duraen/cand/tudorlon_03.jpg"
+},
+{
+"a": 247.166,
+"b": 256.186,
+"k": "ilus",
+"src": "gong"
+},
+{
+"a": 256.186,
+"b": 261.226,
+"k": "ilus",
+"src": "nightcart"
+},
+{
+"a": 261.226,
+"b": 268.446,
+"k": "ilus",
+"src": "gong",
+"sfx": "revelacion"
+},
+{
+"a": 268.446,
+"b": 272.306,
+"k": "real",
+"src": "img/t30duraen/cand/privy_01.jpg"
+},
+{
+"a": 272.306,
+"b": 276.366,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k10_cart_cobbles.mp4"
+},
+{
+"a": 276.366,
+"b": 285.046,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 285.046,
+"b": 286.286,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 286.286,
+"b": 289.086,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 289.086,
+"b": 291.026,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_s01_ankle_chain.jpg"
+},
+{
+"a": 291.026,
+"b": 292.346,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k13_chain_bench.mp4"
+},
+{
+"a": 292.346,
+"b": 301.546,
+"k": "ilus",
+"src": "galley"
+},
+{
+"a": 301.546,
+"b": 303.086,
+"k": "real",
+"src": "img/t30duraen/cand/galley2_01.jpg"
+},
+{
+"a": 303.086,
+"b": 307.306,
+"k": "real",
+"src": "img/t30duraen/cand/galley_04.jpg"
+},
+{
+"a": 307.306,
+"b": 309.366,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k11_oars_water.mp4"
+},
+{
+"a": 309.366,
+"b": 315.686,
+"k": "real",
+"src": "img/t30duraen/cand/galley_05.jpg"
+},
+{
+"a": 315.686,
+"b": 322.986,
+"k": "ilus",
+"src": "galley"
+},
+{
+"a": 322.986,
+"b": 326.326,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k12_drum_hit.mp4"
+},
+{
+"a": 326.326,
+"b": 329.206,
+"k": "ilus",
+"src": "galley"
+},
+{
+"a": 329.206,
+"b": 331.686,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_s05_hands_oar.jpg"
+},
+{
+"a": 331.686,
+"b": 335.366,
+"k": "real",
+"src": "img/t30duraen/cand/galleyrow_03.jpg"
+},
+{
+"a": 335.366,
+"b": 342.186,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 342.186,
+"b": 345.446,
+"k": "real",
+"src": "img/t30duraen/cand/lepanto_03.jpg"
+},
+{
+"a": 345.446,
+"b": 347.726,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_s07_bread_bench.jpg"
+},
+{
+"a": 347.726,
+"b": 349.466,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 349.466,
+"b": 351.566,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 351.566,
+"b": 354.666,
+"k": "real",
+"src": "img/t30duraen/cand/powder_01.jpg"
+},
+{
+"a": 354.666,
+"b": 356.266,
+"k": "real",
+"src": "img/t30duraen/cand/magazine_03.jpg"
+},
+{
+"a": 356.266,
+"b": 361.106,
+"k": "real",
+"src": "img/t30duraen/cand/gundeck_02.jpg"
+},
+{
+"a": 361.106,
+"b": 363.286,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_m01_gundeck.jpg"
+},
+{
+"a": 363.286,
+"b": 366.346,
+"k": "real",
+"src": "img/t30duraen/cand/gundeck_03.jpg"
+},
+{
+"a": 366.346,
+"b": 375.886,
+"k": "ilus",
+"src": "ship"
+},
+{
+"a": 375.886,
+"b": 380.106,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_m03_cartridge.jpg"
+},
+{
+"a": 380.106,
+"b": 384.506,
+"k": "ilus",
+"src": "ship"
+},
+{
+"a": 384.506,
+"b": 388.466,
+"k": "real",
+"src": "img/t30duraen/cand/lon1812_03.jpg"
+},
+{
+"a": 388.466,
+"b": 391.166,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_m04_ladder.jpg"
+},
+{
+"a": 391.166,
+"b": 392.126,
+"k": "real",
+"src": "img/t30duraen/cand/lon1812_02.jpg"
+},
+{
+"a": 392.126,
+"b": 394.566,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k14_cannon_smoke.mp4"
+},
+{
+"a": 394.566,
+"b": 400.132,
+"k": "ilus",
+"src": "ship"
+},
+{
+"a": 400.132,
+"b": 402.892,
+"k": "real",
+"src": "img/t30duraen/cand/trafalgar_01.jpg"
+},
+{
+"a": 402.892,
+"b": 404.312,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_m07_splinters.jpg"
+},
+{
+"a": 404.312,
+"b": 407.612,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k16_magazine_lamp.mp4"
+},
+{
+"a": 407.612,
+"b": 414.612,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 414.612,
+"b": 415.912,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 415.912,
+"b": 418.212,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 418.212,
+"b": 420.772,
+"k": "real",
+"src": "img/t30duraen/cand/lonroof_01.jpg"
+},
+{
+"a": 420.772,
+"b": 424.112,
+"k": "real",
+"src": "img/t30duraen/cand/climbing_05.jpg"
+},
+{
+"a": 424.112,
+"b": 429.352,
+"k": "ilus",
+"src": "chimney"
+},
+{
+"a": 429.352,
+"b": 433.632,
+"k": "real",
+"src": "img/t30duraen/cand/climbing_04.jpg"
+},
+{
+"a": 433.632,
+"b": 435.932,
+"k": "real",
+"src": "img/t30duraen/cand/climbing_02.jpg"
+},
+{
+"a": 435.932,
+"b": 439.752,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_c01_fireplace.jpg"
+},
+{
+"a": 439.752,
+"b": 447.112,
+"k": "ilus",
+"src": "chimney"
+},
+{
+"a": 447.112,
+"b": 449.012,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_c04_knees_brick.jpg"
+},
+{
+"a": 449.012,
+"b": 454.672,
+"k": "ilus",
+"src": "chimney",
+"sfx": "revelacion"
+},
+{
+"a": 454.672,
+"b": 459.612,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k17_brush_chimney.mp4"
+},
+{
+"a": 459.612,
+"b": 461.572,
+"k": "real",
+"src": "img/t30duraen/cand/pott_01.jpg"
+},
+{
+"a": 461.572,
+"b": 467.292,
+"k": "real",
+"src": "img/t30duraen/cand/sweep2_01.jpg"
+},
+{
+"a": 467.292,
+"b": 470.732,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k18_smoke_stacks.mp4"
+},
+{
+"a": 470.732,
+"b": 478.212,
+"k": "g",
+"src": "timeline",
+"big": true
+},
+{
+"a": 478.212,
+"b": 485.592,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 485.592,
+"b": 487.072,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 487.072,
+"b": 488.202,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 488.202,
+"b": 494.232,
+"k": "real",
+"src": "img/t30duraen/cand/match_01.png"
+},
+{
+"a": 494.232,
+"b": 502.592,
+"k": "ilus",
+"src": "match"
+},
+{
+"a": 502.592,
+"b": 507.032,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_h04_fingers.jpg"
+},
+{
+"a": 507.032,
+"b": 510.412,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k20_match_light.mp4"
+},
+{
+"a": 510.412,
+"b": 515.012,
+"k": "real",
+"src": "img/t30duraen/cand/matchbox_01.jpg"
+},
+{
+"a": 515.012,
+"b": 525.312,
+"k": "ilus",
+"src": "jaw",
+"sfx": "revelacion"
+},
+{
+"a": 525.312,
+"b": 533.412,
+"k": "ilus",
+"src": "match"
+},
+{
+"a": 533.412,
+"b": 536.252,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_h05_ledger.jpg"
+},
+{
+"a": 536.252,
+"b": 539.932,
+"k": "real",
+"src": "img/t30duraen/cand/match_02.jpg"
+},
+{
+"a": 539.932,
+"b": 543.372,
+"k": "real",
+"src": "img/t30duraen/cand/besant_02.jpg"
+},
+{
+"a": 543.372,
+"b": 546.792,
+"k": "ilus",
+"src": "strike",
+"sfx": "revelacion"
+},
+{
+"a": 546.792,
+"b": 550.812,
+"k": "real",
+"src": "img/t30duraen/cand/besant_01.jpg"
+},
+{
+"a": 550.812,
+"b": 556.952,
+"k": "real",
+"src": "img/t30duraen/cand/bryant_02.jpg"
+},
+{
+"a": 556.952,
+"b": 564.172,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 564.172,
+"b": 565.312,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 565.312,
+"b": 567.732,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 567.732,
+"b": 572.892,
+"k": "ilus",
+"src": "radium"
+},
+{
+"a": 572.892,
+"b": 574.892,
+"k": "real",
+"src": "img/t30duraen/cand/radium2_03.jpg"
+},
+{
+"a": 574.892,
+"b": 580.612,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_d01_dials.jpg"
+},
+{
+"a": 580.612,
+"b": 582.852,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_d04_glow_dark.jpg"
+},
+{
+"a": 582.852,
+"b": 584.292,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_d02_brush.jpg"
+},
+{
+"a": 584.292,
+"b": 591.172,
+"k": "ilus",
+"src": "radium"
+},
+{
+"a": 591.172,
+"b": 595.532,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k22_glow.mp4"
+},
+{
+"a": 595.532,
+"b": 597.318,
+"k": "real",
+"src": "img/t30duraen/cand/radium_01.jpg"
+},
+{
+"a": 597.318,
+"b": 600.878,
+"k": "real",
+"src": "img/t30duraen/cand/usradium_02.jpg"
+},
+{
+"a": 600.878,
+"b": 603.898,
+"k": "ilus",
+"src": "radium"
+},
+{
+"a": 603.898,
+"b": 606.378,
+"k": "ilus",
+"src": "ecg"
+},
+{
+"a": 606.378,
+"b": 607.818,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_d06_courtroom.jpg"
+},
+{
+"a": 607.818,
+"b": 615.258,
+"k": "real",
+"src": "img/t30duraen/cand/radium2_01.jpg"
+},
+{
+"a": 615.258,
+"b": 622.638,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 622.638,
+"b": 625.958,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k21_dial_paint.mp4"
+},
+{
+"a": 625.958,
+"b": 629.278,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_z03_door_open.jpg"
+},
+{
+"a": 629.278,
+"b": 633.618,
+"k": "g",
+"src": "roster",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 633.618,
+"b": 636.738,
+"k": "g",
+"src": "map",
+"big": true
+},
+{
+"a": 636.738,
+"b": 642.158,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k25_mist_pond.mp4"
+},
+{
+"a": 642.158,
+"b": 646.158,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_l01_pond.jpg"
+},
+{
+"a": 646.158,
+"b": 650.178,
+"k": "real",
+"src": "img/t30duraen/cand/bloodlet_01.jpg"
+},
+{
+"a": 650.178,
+"b": 652.538,
+"k": "real",
+"src": "img/t30duraen/cand/leechjar_02.jpg"
+},
+{
+"a": 652.538,
+"b": 658.218,
+"k": "real",
+"src": "img/t30duraen/cand/leech_04.jpg"
+},
+{
+"a": 658.218,
+"b": 661.678,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_l05_apothecary.jpg"
+},
+{
+"a": 661.678,
+"b": 663.478,
+"k": "real",
+"src": "img/t30duraen/cand/leech3_01.jpg"
+},
+{
+"a": 663.478,
+"b": 665.258,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_l06_path.jpg"
+},
+{
+"a": 665.258,
+"b": 668.958,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_l02_legs_pond.jpg"
+},
+{
+"a": 668.958,
+"b": 670.978,
+"k": "ilus",
+"src": "pond"
+},
+{
+"a": 670.978,
+"b": 673.378,
+"k": "real",
+"src": "broll/t30duraen/t30duraen_k23_pond_stir.mp4"
+},
+{
+"a": 673.378,
+"b": 680.318,
+"k": "ilus",
+"src": "pond"
+},
+{
+"a": 680.318,
+"b": 687.158,
+"k": "ilus",
+"src": "pond"
+},
+{
+"a": 687.158,
+"b": 688.738,
+"k": "real",
+"src": "img/t30duraen/kf/t30duraen_k24_leech_swim.jpg"
+},
+{
+"a": 688.738,
+"b": 693.058,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_l03_jar.jpg"
+},
+{
+"a": 693.058,
+"b": 697.338,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_l04_stick.jpg"
+},
+{
+"a": 697.338,
+"b": 700.498,
+"k": "real",
+"src": "img/t30duraen/cand/leechjar_01.jpg"
+},
+{
+"a": 700.498,
+"b": 705.018,
+"k": "real",
+"src": "img/t30duraen/cand/wordsw_02.jpg"
+},
+{
+"a": 705.018,
+"b": 709.978,
+"k": "real",
+"src": "img/t30duraen/cand/wordsw_01.png"
+},
+{
+"a": 709.978,
+"b": 716.338,
+"k": "g",
+"src": "watch",
+"big": true
+},
+{
+"a": 716.338,
+"b": 735.918,
+"k": "g",
+"src": "roster",
+"big": true
+},
+{
+"a": 735.918,
+"b": 738.678,
+"k": "real",
+"src": "img/t30duraen/cand/matchgirl_03.jpg"
+},
+{
+"a": 738.678,
+"b": 743.658,
+"k": "real",
+"src": "img/t30duraen/cand/sweep2_03.jpg"
+},
+{
+"a": 743.658,
+"b": 745.978,
+"k": "ilus",
+"src": "strike"
+},
+{
+"a": 745.978,
+"b": 747.638,
+"k": "real",
+"src": "img/t30duraen/cand/pott_02.jpg"
+},
+{
+"a": 747.638,
+"b": 749.418,
+"k": "real",
+"src": "img/t30duraen/ag/t30duraen_z02_crowd_walk.jpg"
+},
+{
+"a": 749.418,
+"b": 752.898,
+"k": "real",
+"src": "img/t30duraen/cand/radium_04.jpg"
+},
+{
+"a": 752.898,
+"b": 755.038,
+"k": "g",
+"src": "word",
+"sfx": "revelacion"
+},
+{
+"a": 755.038,
+"b": 761.458,
+"k": "ilus",
+"src": "gong"
+},
+{
+"a": 761.458,
+"b": 763.698,
+"k": "ilus",
+"src": "match"
+},
+{
+"a": 763.698,
+"b": 767.458,
+"k": "g",
+"src": "word"
+},
+{
+"a": 767.458,
+"b": 772.738,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 772.738,
+"b": 778.738,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 778.738,
+"b": 789.378,
+"k": "ilus",
+"src": "portal"
+},
+{
+"a": 789.378,
+"b": 791.458,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 791.458,
+"b": 795.1,
+"k": "ilus",
+"src": "chimney"
+}
+]
+}

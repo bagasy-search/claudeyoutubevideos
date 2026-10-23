@@ -1,0 +1,3132 @@
+{
+"end": 795.1,
+"shots": [
+{
+"a": 0.0,
+"b": 1.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_g01_rooftops.jpg",
+"o": {
+"label": "London"
+}
+}
+},
+{
+"a": 1.56,
+"b": 3.2,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1812",
+"side": "c",
+"v": "img/t30duraen/cand/lon1812_01.jpg",
+"ar": 1.3222,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 3.2,
+"b": 4.4,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/climbing_01.jpg",
+"ar": 1.4761,
+"o": {
+"build": {
+"lines": [
+"nine years *old.*"
+],
+"a": 4
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 4.4,
+"b": 7.54,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "hook",
+"o": {
+"build": {
+"lines": [
+"climb *inside.*"
+],
+"a": 8
+}
+}
+}
+},
+{
+"a": 7.54,
+"b": 8.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k01_soot_fall.mp4",
+"o": {
+"label": "dark. hot."
+}
+}
+},
+{
+"a": 8.94,
+"b": 11.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_g03_brush_soot.jpg",
+"o": {
+"scrib": {
+"cx": 900,
+"cy": 760,
+"rx": 330,
+"ry": 130,
+"text": "your lungs.",
+"tx": 1260,
+"ty": 300
+}
+}
+}
+},
+{
+"a": 11.22,
+"b": 13.58,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "climb",
+"o": {
+"big": {
+"w": "4 HOURS.",
+"a": 4,
+"size": 200,
+"y": 120
+}
+}
+}
+},
+{
+"a": 13.58,
+"b": 17.16,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/sweepold_01.jpg",
+"ar": 1.596,
+"o": {
+"build": {
+"lines": [
+"not the *WORST.*"
+],
+"a": 53
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 17.16,
+"b": 21.88,
+"k": "ilus",
+"t": "portal",
+"p": {
+"o": {
+"build": {
+"lines": [
+"again and *again.*"
+],
+"a": 95
+}
+}
+}
+},
+{
+"a": 21.88,
+"b": 23.78,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "a different *century.*"
+},
+"big": true
+},
+{
+"a": 23.78,
+"b": 29.8,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/t30duraen/cand/visscher_01.jpg",
+"cards": [
+"img/t30duraen/cand/lepanto_02.jpg",
+"img/t30duraen/cand/plaguecart_01.jpg",
+"img/t30duraen/cand/radium2_02.jpg"
+],
+"o": {
+"build": {
+"lines": [
+"the *worst* job available."
+],
+"a": 8,
+"size": 80
+},
+"credit": "Wikimedia Commons · public domain / CC"
+}
+}
+},
+{
+"a": 29.8,
+"b": 32.22,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1920s",
+"side": "c",
+"v": "img/t30duraen/cand/usradium_01.jpg",
+"ar": 1.2387,
+"o": {
+"build": {
+"lines": [
+"a *REAL* job."
+],
+"a": 2
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 32.22,
+"b": 34.04,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1864",
+"side": "c",
+"v": "img/t30duraen/cand/powder_02.jpg",
+"ar": 0.8139,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 34.04,
+"b": 36.58,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"survive",
+"*ONE SHIFT.*"
+],
+"a": 4,
+"y": 360,
+"size": 110
+}
+}
+}
+},
+{
+"a": 36.58,
+"b": 40.44,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 3600,
+"tag": "QUIT.",
+"sub": "the exact moment.",
+"fz": 80
+},
+"big": true
+},
+{
+"a": 40.44,
+"b": 43.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_g06_monday.jpg",
+"o": {
+"aside": {
+"t": "pfff. easy.",
+"x": 1150,
+"y": 330,
+"a": 10
+}
+}
+}
+},
+{
+"a": 43.68,
+"b": 45.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_g04_fryer.jpg"
+}
+},
+{
+"a": 45.2,
+"b": 46.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_z01_office_night.jpg"
+}
+},
+{
+"a": 46.46,
+"b": 49.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_g05_nightshift.jpg"
+}
+},
+{
+"a": 49.4,
+"b": 55.48,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/t30duraen/cand/trafalgar_02.jpg",
+"cards": [
+"img/t30duraen/cand/plaguecart_02.jpg",
+"img/t30duraen/cand/gundeck_01.jpg"
+],
+"o": {
+"build": {
+"lines": [
+"close to *gratitude.*"
+],
+"size": 84,
+"a": 146
+},
+"credit": "Wikimedia Commons · public domain / CC"
+}
+}
+},
+{
+"a": 55.48,
+"b": 59.92,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "*8* jobs. *1* shift each."
+},
+"big": true
+},
+{
+"a": 59.92,
+"b": 61.78,
+"k": "ilus",
+"t": "portal",
+"p": {
+"years": [
+"79",
+"1348",
+"1550",
+"1650"
+],
+"o": {
+"build": {
+"lines": [
+"how long do you *last?*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 61.78,
+"b": 72.04,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "New trip every week. Subscribe + bell."
+}
+},
+{
+"a": 72.04,
+"b": 77.4,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "What's the worst job you've ever actually had?",
+"bell": false
+}
+},
+{
+"a": 77.4,
+"b": 78.66,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 78.66,
+"b": 81.02,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+12.5,
+41.9
+],
+"prev": [
+-0.12,
+51.5
+],
+"lines": [
+"ROME",
+"1st CENTURY",
+"FULLER"
+],
+"name": "Rome"
+},
+"big": true
+},
+{
+"a": 81.02,
+"b": 86.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k02_steam_tubs.mp4",
+"o": {
+"label": "Rome, 1st century"
+},
+"rate": 0.451
+}
+},
+{
+"a": 86.08,
+"b": 93.18,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "tubs",
+"o": {
+"aside": {
+"t": "ugh.",
+"x": 1080,
+"y": 360,
+"a": 94
+}
+}
+}
+},
+{
+"a": 93.18,
+"b": 95.08,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Pompeii fresco",
+"side": "c",
+"v": "img/t30duraen/cand/fullfresco_01.jpg",
+"ar": 0.9238,
+"o": {
+"build": {
+"lines": [
+"a *FULLER.*"
+],
+"a": 48
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 95.08,
+"b": 96.94,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Fullonica, Pompeii",
+"side": "c",
+"v": "img/t30duraen/cand/fullon_03.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 96.94,
+"b": 98.6,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/toga_01.jpg",
+"ar": 0.5632,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 98.6,
+"b": 100.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_r05_togas_dry.jpg"
+}
+},
+{
+"a": 100.4,
+"b": 105.4,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "tubs",
+"o": {
+"build": {
+"lines": [
+"*AMMONIA.*"
+],
+"a": 53
+}
+}
+}
+},
+{
+"a": 105.4,
+"b": 106.76,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "URINE.",
+"a": 2,
+"size": 260
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 106.76,
+"b": 111.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_r02_pots_street.jpg",
+"o": {
+"scrib": {
+"cx": 760,
+"cy": 640,
+"rx": 300,
+"ry": 170,
+"text": "public pots.",
+"tx": 1250,
+"ty": 260,
+"a": 46
+}
+}
+}
+},
+{
+"a": 111.44,
+"b": 114.66,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "pots"
+}
+},
+{
+"a": 114.66,
+"b": 117.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/kf/t30duraen_k04_pour_jar.jpg"
+}
+},
+{
+"a": 117.98,
+"b": 123.46,
+"k": "ilus",
+"t": "rome",
+"p": {
+"mode": "stomp",
+"o": {
+"build": {
+"lines": [
+"*Barefoot.*"
+],
+"a": 40
+},
+"aside": {
+"t": "like wine!",
+"x": 1120,
+"y": 380,
+"a": 136
+}
+}
+}
+},
+{
+"a": 123.46,
+"b": 124.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/kf/t30duraen_k03_stomp.jpg",
+"o": {
+"aside": {
+"t": "...it isn't.",
+"x": 1100,
+"y": 300,
+"a": 6
+}
+}
+}
+},
+{
+"a": 124.92,
+"b": 127.42,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Fullonica of Stephanus",
+"side": "c",
+"v": "img/t30duraen/cand/fullon_05.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 127.42,
+"b": 128.92,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Emperor Vespasian",
+"side": "c",
+"v": "img/t30duraen/cand/vesp_02.jpg",
+"ar": 0.7015,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 128.92,
+"b": 130.74,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/vespcoin_03.jpg",
+"ar": 1.3333,
+"o": {
+"build": {
+"lines": [
+"a *urine* tax."
+],
+"a": 4
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 130.74,
+"b": 134.5,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/vesp_03.jpg",
+"ar": 0.4861,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 134.5,
+"b": 138.5,
+"k": "g",
+"t": "coin",
+"p": {
+"img": "img/t30duraen/cand/vespcoin_02.jpg",
+"o": {
+"build": {
+"lines": [
+"Money doesn't *STINK.*"
+],
+"y": 70,
+"size": 90,
+"a": 79
+},
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 138.5,
+"b": 145.38,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 5400,
+"tag": "90 MIN",
+"sub": "when the next cart of pots arrives. Still warm.",
+"fz": 161,
+"s0": 4681
+},
+"big": true
+},
+{
+"a": 145.38,
+"b": 146.9,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 146.9,
+"b": 149.32,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-1.2,
+52.4
+],
+"prev": [
+12.5,
+41.9
+],
+"lines": [
+"ENGLAND",
+"1348",
+"BODY CARRIER"
+],
+"name": "England"
+},
+"big": true
+},
+{
+"a": 149.32,
+"b": 157.22,
+"k": "ilus",
+"t": "village",
+"p": {
+"mode": "sick",
+"o": {
+"build": {
+"lines": [
+"something is *wrong.*"
+],
+"a": 10,
+"out": 150
+}
+}
+}
+},
+{
+"a": 157.22,
+"b": 159.82,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/plaguepit_01.jpg",
+"ar": 1.2648,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 159.82,
+"b": 161.28,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "The Black Death",
+"side": "c",
+"v": "img/t30duraen/cand/plague3_03.jpg",
+"ar": 1.6203,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 161.28,
+"b": 166.2,
+"k": "g",
+"t": "third",
+"p": {},
+"big": true
+},
+{
+"a": 166.2,
+"b": 168.5,
+"k": "ilus",
+"t": "village",
+"p": {
+"mode": "grey",
+"o": {
+"build": {
+"lines": [
+"your job:",
+"*CARRY THE BODIES.*"
+],
+"a": 2,
+"size": 92
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 168.5,
+"b": 170.34,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/plague3_02.jpg",
+"ar": 0.7745,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 170.34,
+"b": 172.92,
+"k": "ilus",
+"t": "village",
+"p": {
+"mode": "cart"
+}
+},
+{
+"a": 172.92,
+"b": 173.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_p07_knock.jpg"
+}
+},
+{
+"a": 173.74,
+"b": 175.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_p03_door_cross.jpg"
+}
+},
+{
+"a": 175.72,
+"b": 181.46,
+"k": "ilus",
+"t": "trench",
+"p": {
+"o": {
+"build": {
+"lines": [
+"in *rows.*"
+],
+"a": 142
+}
+}
+}
+},
+{
+"a": 181.46,
+"b": 187.16,
+"k": "ilus",
+"t": "flea",
+"p": {
+"o": {
+"build": {
+"lines": [
+"fleas on *rats.*"
+],
+"a": 129
+}
+}
+}
+},
+{
+"a": 187.16,
+"b": 191.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k06_candle.mp4",
+"rate": 0.595
+}
+},
+{
+"a": 191.84,
+"b": 194.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_p01_village.jpg"
+}
+},
+{
+"a": 194.24,
+"b": 198.12,
+"k": "ilus",
+"t": "scale",
+"p": {
+"l": "PAY",
+"r": "RISK"
+},
+"big": true
+},
+{
+"a": 198.12,
+"b": 200.486,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_p06_coins_table.jpg",
+"o": {
+"build": {
+"lines": [
+"That's the *trap.*"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 200.486,
+"b": 204.266,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/kf/t30duraen_k05_cart_mud.jpg"
+}
+},
+{
+"a": 204.266,
+"b": 209.146,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 5,
+"tag": "1 KNOCK",
+"sub": "the smart move: quit at the first knock.",
+"fz": 110,
+"s0": 5
+},
+"big": true
+},
+{
+"a": 209.146,
+"b": 213.166,
+"k": "ilus",
+"t": "ecg",
+"p": {
+"cut": 0.62,
+"o": {
+"build": {
+"lines": [
+"didn't get to quit *at all.*"
+],
+"size": 80,
+"a": 44
+}
+}
+}
+},
+{
+"a": 213.166,
+"b": 214.626,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 214.626,
+"b": 216.966,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-0.12,
+51.5
+],
+"prev": [
+-1.2,
+52.4
+],
+"lines": [
+"LONDON",
+"1500s",
+"GONG FARMER"
+],
+"name": "London"
+},
+"big": true
+},
+{
+"a": 216.966,
+"b": 223.506,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30duraen/ag/t30duraen_f01_night_lane.jpg",
+"r": "img/t30duraen/ag/t30duraen_f02_privy.jpg",
+"wl": "GOOD NEWS.",
+"wr": "BAD NEWS.",
+"a": 171
+}
+},
+{
+"a": 223.506,
+"b": 224.406,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/cand/visscher_02.jpg",
+"o": {
+"build": {
+"lines": [
+"a *GONG FARMER.*"
+],
+"a": 4
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 224.406,
+"b": 228.606,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "London, c.1560",
+"side": "c",
+"v": "img/t30duraen/cand/tudorlon_01.jpg",
+"ar": 2.3216,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 228.606,
+"b": 240.246,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "lower",
+"o": {
+"build": {
+"lines": [
+"*cesspits.*"
+],
+"a": 4,
+"out": 120
+},
+"aside": {
+"t": "that's you.",
+"x": 1000,
+"y": 520,
+"a": 305
+}
+}
+}
+},
+{
+"a": 240.246,
+"b": 242.666,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k08_lantern_swing.mp4",
+"o": {
+"label": "Night work only"
+}
+}
+},
+{
+"a": 242.666,
+"b": 247.166,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/tudorlon_03.jpg",
+"ar": 1.2964,
+"o": {
+"aside": {
+"t": "or smell you.",
+"x": 1180,
+"y": 230,
+"a": 91
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 247.166,
+"b": 256.186,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "bucket",
+"o": {
+"build": {
+"lines": [
+"*waist-deep.*"
+],
+"out": 150,
+"a": 76
+}
+}
+}
+},
+{
+"a": 256.186,
+"b": 261.226,
+"k": "ilus",
+"t": "nightcart",
+"p": {
+"gate": true
+}
+},
+{
+"a": 261.226,
+"b": 268.446,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "fumes",
+"o": {
+"build": {
+"lines": [
+"and never came",
+"*BACK UP.*"
+],
+"a": 171
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 268.446,
+"b": 272.306,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Medieval latrine",
+"side": "c",
+"v": "img/t30duraen/cand/privy_01.jpg",
+"ar": 1.5035,
+"o": {
+"build": {
+"lines": [
+"paid *very well.*"
+],
+"a": 66
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 272.306,
+"b": 276.366,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k10_cart_cobbles.mp4",
+"o": {
+"aside": {
+"t": "...if you could live with it.",
+"x": 760,
+"y": 300,
+"a": 68
+}
+},
+"rate": 0.727
+}
+},
+{
+"a": 276.366,
+"b": 285.046,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 1200,
+"tag": "20 MIN",
+"sub": "the second the empty bucket comes back down.",
+"fz": 211,
+"s0": 1003
+},
+"big": true
+},
+{
+"a": 285.046,
+"b": 286.286,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 286.286,
+"b": 289.086,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+15.5,
+37.6
+],
+"prev": [
+-0.12,
+51.5
+],
+"lines": [
+"MED SEA",
+"1600s",
+"GALLEY ROWER"
+],
+"name": "Mediterranean"
+},
+"big": true
+},
+{
+"a": 289.086,
+"b": 291.026,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_s01_ankle_chain.jpg"
+}
+},
+{
+"a": 291.026,
+"b": 292.346,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k13_chain_bench.mp4",
+"o": {
+"build": {
+"lines": [
+"a *chain.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 292.346,
+"b": 301.546,
+"k": "ilus",
+"t": "galley",
+"p": {
+"speed": 0.8,
+"o": {
+"build": {
+"lines": [
+"shoulder to *shoulder.*"
+],
+"out": 170,
+"a": 119
+}
+}
+}
+},
+{
+"a": 301.546,
+"b": 303.086,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Galley, 17th century",
+"side": "c",
+"v": "img/t30duraen/cand/galley2_01.jpg",
+"ar": 1.326,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 303.086,
+"b": 307.306,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/galley_04.jpg",
+"ar": 1.3343,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 307.306,
+"b": 309.366,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k11_oars_water.mp4"
+}
+},
+{
+"a": 309.366,
+"b": 315.686,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/galley_05.jpg",
+"ar": 1.6946,
+"o": {
+"build": {
+"lines": [
+"*convicts.* prisoners."
+],
+"size": 84,
+"a": 94
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 315.686,
+"b": 322.986,
+"k": "ilus",
+"t": "galley",
+"p": {
+"zoomChain": true,
+"speed": 0.9,
+"o": {
+"build": {
+"lines": [
+"chained to the *bench.*"
+],
+"a": 2,
+"out": 120
+},
+"aside": {
+"t": "cozy.",
+"x": 900,
+"y": 470,
+"a": 77
+}
+}
+}
+},
+{
+"a": 322.986,
+"b": 326.326,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k12_drum_hit.mp4",
+"o": {
+"scrib": {
+"cx": 960,
+"cy": 620,
+"rx": 360,
+"ry": 200,
+"text": "the whip keeps time.",
+"tx": 1180,
+"ty": 220,
+"a": 80
+}
+},
+"rate": 0.694
+}
+},
+{
+"a": 326.326,
+"b": 329.206,
+"k": "ilus",
+"t": "galley",
+"p": {
+"ramp": true
+}
+},
+{
+"a": 329.206,
+"b": 331.686,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_s05_hands_oar.jpg"
+}
+},
+{
+"a": 331.686,
+"b": 335.366,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/cand/galleyrow_03.jpg",
+"o": {
+"build": {
+"lines": [
+"counted in *years.*"
+],
+"a": 84
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 335.366,
+"b": 342.186,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": null,
+"tag": "∞",
+"sub": "There's no quitting a chain.",
+"fz": 40,
+"s0": 2259664
+},
+"big": true
+},
+{
+"a": 342.186,
+"b": 345.446,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Lepanto, 1571",
+"side": "c",
+"v": "img/t30duraen/cand/lepanto_03.jpg",
+"ar": 0.796,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 345.446,
+"b": 347.726,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_s07_bread_bench.jpg"
+}
+},
+{
+"a": 347.726,
+"b": 349.466,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 349.466,
+"b": 351.566,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-6.5,
+48.2
+],
+"prev": [
+15.5,
+37.6
+],
+"lines": [
+"WARSHIP",
+"1700s",
+"POWDER MONKEY"
+],
+"name": "Royal Navy"
+},
+"big": true
+},
+{
+"a": 351.566,
+"b": 354.666,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Powder boy, 1864 photo",
+"side": "c",
+"v": "img/t30duraen/cand/powder_01.jpg",
+"ar": 1.0367,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 354.666,
+"b": 356.266,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/magazine_03.jpg",
+"ar": 1.6027,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 356.266,
+"b": 361.106,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/cand/gundeck_02.jpg",
+"o": {
+"label": "HMS Victory, gun deck",
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 361.106,
+"b": 363.286,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_m01_gundeck.jpg",
+"o": {
+"build": {
+"lines": [
+"a *POWDER MONKEY.*"
+],
+"a": 34
+}
+}
+}
+},
+{
+"a": 363.286,
+"b": 366.346,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/cand/gundeck_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 366.346,
+"b": 375.886,
+"k": "ilus",
+"t": "ship",
+"p": {
+"mode": "magazine",
+"o": {
+"build": {
+"lines": [
+"the *magazine.*"
+],
+"out": 200,
+"a": 112
+}
+}
+}
+},
+{
+"a": 375.886,
+"b": 380.106,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_m03_cartridge.jpg"
+}
+},
+{
+"a": 380.106,
+"b": 384.506,
+"k": "ilus",
+"t": "ship",
+"p": {
+"mode": "run"
+}
+},
+{
+"a": 384.506,
+"b": 388.466,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/lon1812_03.jpg",
+"ar": 1.1758,
+"o": {
+"build": {
+"lines": [
+"small. fast.",
+"*EXPENDABLE.*"
+],
+"a": 2,
+"size": 90
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 388.466,
+"b": 391.166,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_m04_ladder.jpg"
+}
+},
+{
+"a": 391.166,
+"b": 392.126,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1812",
+"side": "c",
+"v": "img/t30duraen/cand/lon1812_02.jpg",
+"ar": 1.1552,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 392.126,
+"b": 394.566,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k14_cannon_smoke.mp4"
+}
+},
+{
+"a": 394.566,
+"b": 400.132,
+"k": "ilus",
+"t": "ship",
+"p": {
+"mode": "fire"
+}
+},
+{
+"a": 400.132,
+"b": 402.892,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Trafalgar, 1805",
+"side": "c",
+"v": "img/t30duraen/cand/trafalgar_01.jpg",
+"ar": 1.4184,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 402.892,
+"b": 404.312,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_m07_splinters.jpg"
+}
+},
+{
+"a": 404.312,
+"b": 407.612,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k16_magazine_lamp.mp4",
+"o": {
+"build": {
+"lines": [
+"the most *dangerous*",
+"object on the ship."
+],
+"a": 4,
+"size": 84
+}
+},
+"rate": 0.884
+}
+},
+{
+"a": 407.612,
+"b": 414.612,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 180,
+"tag": "1 TRIP",
+"sub": "when the cannon next to you fires.",
+"fz": 82,
+"s0": 167
+},
+"big": true
+},
+{
+"a": 414.612,
+"b": 415.912,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 415.912,
+"b": 418.212,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-0.12,
+51.5
+],
+"prev": [
+-6.5,
+48.2
+],
+"lines": [
+"LONDON",
+"1812",
+"CLIMBING BOY"
+],
+"name": "London"
+},
+"big": true
+},
+{
+"a": 418.212,
+"b": 420.772,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "London",
+"side": "c",
+"v": "img/t30duraen/cand/lonroof_01.jpg",
+"ar": 1.0953,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 420.772,
+"b": 424.112,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Climbing boy",
+"side": "c",
+"v": "img/t30duraen/cand/climbing_05.jpg",
+"ar": 0.8868,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 424.112,
+"b": 429.352,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "climb",
+"o": {
+"build": {
+"lines": [
+"grown men don't *fit.*"
+],
+"a": 109
+}
+}
+}
+},
+{
+"a": 429.352,
+"b": 433.632,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/climbing_04.jpg",
+"ar": 0.7181,
+"o": {
+"build": {
+"lines": [
+"as young as *five.*"
+],
+"a": 93
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 433.632,
+"b": 435.932,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/climbing_02.jpg",
+"ar": 1.0909,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 435.932,
+"b": 439.752,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_c01_fireplace.jpg"
+}
+},
+{
+"a": 439.752,
+"b": 447.112,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "brush",
+"o": {
+"build": {
+"lines": [
+"eyes shut *tight.*"
+],
+"out": 200,
+"a": 179
+}
+}
+}
+},
+{
+"a": 447.112,
+"b": 449.012,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_c04_knees_brick.jpg"
+}
+},
+{
+"a": 449.012,
+"b": 454.672,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "stuck",
+"o": {
+"build": {
+"lines": [
+"your *GRAVE.*"
+],
+"a": 62
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 454.672,
+"b": 459.612,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k17_brush_chimney.mp4",
+"rate": 0.543
+}
+},
+{
+"a": 459.612,
+"b": 461.572,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Percivall Pott, 1775",
+"side": "c",
+"v": "img/t30duraen/cand/pott_01.jpg",
+"ar": 0.6224,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 461.572,
+"b": 467.292,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/sweep2_01.jpg",
+"ar": 0.6043,
+"o": {
+"build": {
+"lines": [
+"a kind of *cancer.*"
+],
+"a": 100
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 467.292,
+"b": 470.732,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k18_smoke_stacks.mp4",
+"o": {
+"build": {
+"lines": [
+"a cancer tied to a *JOB.*"
+],
+"size": 84,
+"a": 58
+}
+},
+"rate": 0.848
+}
+},
+{
+"a": 470.732,
+"b": 478.212,
+"k": "g",
+"t": "timeline",
+"p": {},
+"big": true
+},
+{
+"a": 478.212,
+"b": 485.592,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 14400,
+"tag": "4 HRS",
+"sub": "the moment your elbow hits brick.",
+"fz": 30,
+"s0": 14024
+},
+"big": true
+},
+{
+"a": 485.592,
+"b": 487.072,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 487.072,
+"b": 488.202,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+0.0,
+51.53
+],
+"prev": [
+-0.6,
+51.7
+],
+"lines": [
+"EAST END",
+"1888",
+"MATCH GIRL"
+],
+"name": "Bow, London"
+},
+"big": true
+},
+{
+"a": 488.202,
+"b": 494.232,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Match workers, 1888",
+"side": "c",
+"v": "img/t30duraen/cand/match_01.png",
+"ar": 1.5154,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 494.232,
+"b": 502.592,
+"k": "ilus",
+"t": "match",
+"p": {
+"mode": "dip",
+"o": {
+"build": {
+"lines": [
+"white *phosphorus.*"
+],
+"out": 230,
+"a": 121
+}
+}
+}
+},
+{
+"a": 502.592,
+"b": 507.032,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_h04_fingers.jpg",
+"o": {
+"build": {
+"lines": [
+"*14* hours."
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 507.032,
+"b": 510.412,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k20_match_light.mp4",
+"rate": 0.863
+}
+},
+{
+"a": 510.412,
+"b": 515.012,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Bryant & May",
+"side": "c",
+"v": "img/t30duraen/cand/matchbox_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 515.012,
+"b": 525.312,
+"k": "ilus",
+"t": "jaw",
+"p": {
+"o": {
+"build": {
+"lines": [
+"*PHOSSY JAW.*"
+],
+"a": 106
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 525.312,
+"b": 533.412,
+"k": "ilus",
+"t": "match",
+"p": {
+"mode": "fines",
+"fines": [
+{
+"t": "TALKING",
+"at": 67
+},
+{
+"t": "LATE",
+"at": 121
+},
+{
+"t": "DIRTY FEET",
+"at": 162
+},
+{
+"t": "DROPPED MATCH",
+"at": 205
+}
+]
+}
+},
+{
+"a": 533.412,
+"b": 536.252,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_h05_ledger.jpg"
+}
+},
+{
+"a": 536.252,
+"b": 539.932,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/match_02.jpg",
+"ar": 0.6655,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 539.932,
+"b": 543.372,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/besant_02.jpg",
+"ar": 0.7183,
+"o": {
+"build": {
+"lines": [
+"on *strike.*"
+],
+"a": 44
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 543.372,
+"b": 546.792,
+"k": "ilus",
+"t": "strike",
+"p": {
+"o": {
+"big": {
+"w": "THEY WON.",
+"size": 200,
+"y": 120,
+"a": 73
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 546.792,
+"b": 550.812,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Annie Besant",
+"side": "c",
+"v": "img/t30duraen/cand/besant_01.jpg",
+"ar": 0.6458,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 550.812,
+"b": 556.952,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Bryant & May, Bow",
+"side": "c",
+"v": "img/t30duraen/cand/bryant_02.jpg",
+"ar": 1.3333,
+"o": {
+"build": {
+"lines": [
+"*1908:* banned."
+],
+"a": 42
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 556.952,
+"b": 564.172,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 2700,
+"tag": "1 FINE",
+"sub": "then go find the girls who are organizing.",
+"fz": 58,
+"s0": 2583
+},
+"big": true
+},
+{
+"a": 564.172,
+"b": 565.312,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 7
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 565.312,
+"b": 567.732,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-74.2,
+40.75
+],
+"prev": [
+0.0,
+51.53
+],
+"lines": [
+"NEW JERSEY",
+"1917",
+"RADIUM GIRL"
+],
+"name": "Orange, NJ"
+},
+"big": true
+},
+{
+"a": 567.732,
+"b": 572.892,
+"k": "ilus",
+"t": "radium",
+"p": {
+"mode": "bright",
+"o": {
+"build": {
+"lines": [
+"the *best* job yet."
+],
+"a": 8
+}
+}
+}
+},
+{
+"a": 572.892,
+"b": 574.892,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Dial painters",
+"side": "c",
+"v": "img/t30duraen/cand/radium2_03.jpg",
+"ar": 1.2685,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 574.892,
+"b": 580.612,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_d01_dials.jpg"
+}
+},
+{
+"a": 580.612,
+"b": 582.852,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_d04_glow_dark.jpg",
+"o": {
+"big": {
+"w": "RADIUM.",
+"color": "#9dff7a",
+"size": 200,
+"y": 420,
+"a": 34
+}
+}
+}
+},
+{
+"a": 582.852,
+"b": 584.292,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_d02_brush.jpg"
+}
+},
+{
+"a": 584.292,
+"b": 591.172,
+"k": "ilus",
+"t": "radium",
+"p": {
+"mode": "lipdip"
+}
+},
+{
+"a": 591.172,
+"b": 595.532,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k22_glow.mp4",
+"o": {
+"aside": {
+"t": "glow party!",
+"x": 1100,
+"y": 360,
+"a": 20
+}
+},
+"rate": 0.554
+}
+},
+{
+"a": 595.532,
+"b": 597.318,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/radium_01.jpg",
+"ar": 0.7497,
+"o": {
+"build": {
+"lines": [
+"Nobody tells you."
+],
+"a": 4,
+"size": 84
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 597.318,
+"b": 600.878,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/usradium_02.jpg",
+"ar": 1.2395,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 600.878,
+"b": 603.898,
+"k": "ilus",
+"t": "radium",
+"p": {
+"mode": "grey",
+"o": {
+"build": {
+"lines": [
+"years *later.*"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 603.898,
+"b": 606.378,
+"k": "ilus",
+"t": "ecg",
+"p": {
+"cut": 0.75,
+"dim": true
+}
+},
+{
+"a": 606.378,
+"b": 607.818,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_d06_courtroom.jpg"
+}
+},
+{
+"a": 607.818,
+"b": 615.258,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/radium2_01.jpg",
+"ar": 1.2435,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 615.258,
+"b": 622.638,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": null,
+"tag": "YEARS",
+"sub": "it's the nicest job you've had all day.",
+"fz": 76,
+"s0": 2375716
+},
+"big": true
+},
+{
+"a": 622.638,
+"b": 625.958,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k21_dial_paint.mp4",
+"o": {
+"build": {
+"lines": [
+"the most *dangerous* stop."
+],
+"a": 4,
+"size": 84
+}
+},
+"rate": 0.768
+}
+},
+{
+"a": 625.958,
+"b": 629.278,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_z03_door_open.jpg",
+"o": {
+"aside": {
+"t": "one more!",
+"x": 1120,
+"y": 360,
+"a": 100
+}
+}
+}
+},
+{
+"a": 629.278,
+"b": 633.618,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 8
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 633.618,
+"b": 636.738,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+-3.0,
+54.45
+],
+"prev": [
+-74.2,
+40.75
+],
+"lines": [
+"ENGLAND",
+"1800s",
+"LEECH COLLECTOR"
+],
+"name": "Countryside"
+},
+"big": true
+},
+{
+"a": 636.738,
+"b": 642.158,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k25_mist_pond.mp4",
+"rate": 0.538
+}
+},
+{
+"a": 642.158,
+"b": 646.158,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_l01_pond.jpg",
+"o": {
+"build": {
+"lines": [
+"a *LEECH* collector."
+],
+"a": 73
+}
+}
+}
+},
+{
+"a": 646.158,
+"b": 650.178,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/bloodlet_01.jpg",
+"ar": 1.519,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 650.178,
+"b": 652.538,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/leechjar_02.jpg",
+"ar": 0.7512,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 652.538,
+"b": 658.218,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/leech_04.jpg",
+"ar": 1.4568,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 658.218,
+"b": 661.678,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_l05_apothecary.jpg",
+"o": {
+"build": {
+"lines": [
+"by the *MILLIONS.*"
+],
+"a": 53
+}
+}
+}
+},
+{
+"a": 661.678,
+"b": 663.478,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/leech3_01.jpg",
+"ar": 2.0579,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 663.478,
+"b": 665.258,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_l06_path.jpg"
+}
+},
+{
+"a": 665.258,
+"b": 668.958,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_l02_legs_pond.jpg"
+}
+},
+{
+"a": 668.958,
+"b": 670.978,
+"k": "ilus",
+"t": "pond",
+"p": {
+"mode": "wait"
+}
+},
+{
+"a": 670.978,
+"b": 673.378,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30duraen/t30duraen_k23_pond_stir.mp4"
+}
+},
+{
+"a": 673.378,
+"b": 680.318,
+"k": "ilus",
+"t": "pond",
+"p": {
+"mode": "bite",
+"o": {
+"aside": {
+"t": "ready or not...",
+"x": 1250,
+"y": 520,
+"a": 20
+}
+}
+}
+},
+{
+"a": 680.318,
+"b": 687.158,
+"k": "ilus",
+"t": "pond",
+"p": {
+"mode": "pull"
+}
+},
+{
+"a": 687.158,
+"b": 688.738,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/kf/t30duraen_k24_leech_swim.jpg"
+}
+},
+{
+"a": 688.738,
+"b": 693.058,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_l03_jar.jpg"
+}
+},
+{
+"a": 693.058,
+"b": 697.338,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_l04_stick.jpg"
+}
+},
+{
+"a": 697.338,
+"b": 700.498,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/leechjar_01.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 700.498,
+"b": 705.018,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "William Wordsworth",
+"side": "c",
+"v": "img/t30duraen/cand/wordsw_02.jpg",
+"ar": 0.7334,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 705.018,
+"b": 709.978,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/wordsw_01.png",
+"ar": 0.7005,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 709.978,
+"b": 716.338,
+"k": "g",
+"t": "watch",
+"p": {
+"fin": 2400,
+"tag": "6 LEECHES",
+"sub": "the first time you look down and count them.",
+"fz": 152,
+"s0": 2156
+},
+"big": true
+},
+{
+"a": 716.338,
+"b": 735.918,
+"k": "g",
+"t": "roster",
+"p": {
+"final": [
+42,
+103,
+160,
+203,
+250,
+290,
+338,
+399,
+519
+]
+},
+"big": true
+},
+{
+"a": 735.918,
+"b": 738.678,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "East London",
+"side": "c",
+"v": "img/t30duraen/cand/matchgirl_03.jpg",
+"ar": 1.5751,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 738.678,
+"b": 743.658,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/sweep2_03.jpg",
+"ar": 0.8064,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 743.658,
+"b": 745.978,
+"k": "ilus",
+"t": "strike",
+"p": {
+"o": {
+"build": {
+"lines": [
+"asking *questions.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 745.978,
+"b": 747.638,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/pott_02.jpg",
+"ar": 0.6625,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 747.638,
+"b": 749.418,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30duraen/ag/t30duraen_z02_crowd_walk.jpg"
+}
+},
+{
+"a": 749.418,
+"b": 752.898,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30duraen/cand/radium_04.jpg",
+"ar": 1.3833,
+"o": {
+"credit": "Wikimedia Commons · No restrictions"
+}
+}
+},
+{
+"a": 752.898,
+"b": 755.038,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"Somebody",
+"*REFUSED.*"
+],
+"a": 2,
+"y": 340,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 755.038,
+"b": 761.458,
+"k": "ilus",
+"t": "gong",
+"p": {
+"mode": "bucket",
+"o": {
+"build": {
+"lines": [
+"remember the *gong farmer.*"
+],
+"size": 84,
+"a": 143
+}
+}
+}
+},
+{
+"a": 761.458,
+"b": 763.698,
+"k": "ilus",
+"t": "match",
+"p": {
+"mode": "dip",
+"o": {
+"build": {
+"lines": [
+"the *match girls.*"
+],
+"a": 6
+}
+}
+}
+},
+{
+"a": 763.698,
+"b": 767.458,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"ask *one* question",
+"out loud."
+],
+"a": 4,
+"y": 330
+}
+}
+}
+},
+{
+"a": 767.458,
+"b": 772.738,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Which of these 8 would you last the longest in?"
+}
+},
+{
+"a": 772.738,
+"b": 778.738,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Your worst real job: how many hours did you last?",
+"bell": false
+}
+},
+{
+"a": 778.738,
+"b": 789.378,
+"k": "ilus",
+"t": "portal",
+"p": {
+"years": [
+"????"
+],
+"o": {
+"build": {
+"lines": [
+"the worst places to be *born.*"
+],
+"size": 84,
+"a": 172
+}
+}
+}
+},
+{
+"a": 789.378,
+"b": 791.458,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Subscribe + bell so you don't miss it."
+}
+},
+{
+"a": 791.458,
+"b": 795.1,
+"k": "ilus",
+"t": "chimney",
+"p": {
+"mode": "climb",
+"o": {
+"build": {
+"lines": [
+"You *survived.*",
+"This time."
+],
+"a": 33
+}
+}
+}
+}
+],
+"stops": [
+{
+"n": 1,
+"a": 81.02,
+"q": 143.867,
+"w0": 138.5,
+"w1": 145.38,
+"fin": 5400,
+"tag": "90 MIN",
+"b": 145.38
+},
+{
+"n": 2,
+"a": 149.32,
+"q": 207.933,
+"w0": 204.266,
+"w1": 209.146,
+"fin": 5,
+"tag": "1 KNOCK",
+"b": 213.166
+},
+{
+"n": 3,
+"a": 216.966,
+"q": 283.399,
+"w0": 276.366,
+"w1": 285.046,
+"fin": 1200,
+"tag": "20 MIN",
+"b": 285.046
+},
+{
+"n": 4,
+"a": 289.086,
+"q": 336.699,
+"w0": 335.366,
+"w1": 342.186,
+"fin": null,
+"tag": "∞",
+"b": 347.726
+},
+{
+"n": 5,
+"a": 351.566,
+"q": 410.345,
+"w0": 407.612,
+"w1": 414.612,
+"fin": 180,
+"tag": "1 TRIP",
+"b": 414.612
+},
+{
+"n": 6,
+"a": 418.212,
+"q": 479.212,
+"w0": 478.212,
+"w1": 485.592,
+"fin": 14400,
+"tag": "4 HRS",
+"b": 485.592
+},
+{
+"n": 7,
+"a": 488.202,
+"q": 558.885,
+"w0": 556.952,
+"w1": 564.172,
+"fin": 2700,
+"tag": "1 FINE",
+"b": 564.172
+},
+{
+"n": 8,
+"a": 567.732,
+"q": 617.791,
+"w0": 615.258,
+"w1": 622.638,
+"fin": null,
+"tag": "YEARS",
+"b": 629.278
+},
+{
+"n": 9,
+"a": 636.738,
+"q": 715.045,
+"w0": 709.978,
+"w1": 716.338,
+"fin": 2400,
+"tag": "6 LEECHES",
+"b": 716.338
+}
+]
+}
