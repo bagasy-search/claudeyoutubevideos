@@ -243,7 +243,7 @@ export const Min1: React.FC = () => {
   if (t >= S.three - 0.3 && t < S.plain) L.push(<Chips key="same" t={t} at={S.sameBag} items={["SAME CEMENT", "SAME SAND", "SAME WATER", "SAME DAY"]} out={S.plain - 0.3} y={790} />);
   if (t >= S.three - 0.2 && t < S.sameBag) L.push(<BigNum key="3b" t={t} at={S.three} text="3 BLOCKS" x={960} y={250} size={150} out={S.sameBag - 0.1} />);
   // ===== M · avatar "surprised even me" → (zoom a través) la cara del bloque gigante =====
-  const tM = S.surprised - 0.6;
+  const tM = Math.min(S.surprised - 0.6, W5.me - 0.45); // el mundo entra antes de que se acabe la ventana del avatar (si no, negro)
   if (t >= W5.ms + 0.7 && t < tM + 0.6) {
     const k = ei(t, tM, tM + 0.6);
     if (k > 0) L.push(...zoomThru(k, <Avatar t={t} />, <World t={Math.max(t, tM)} />, "zM"));
