@@ -4,8 +4,8 @@
 // Todo anclado a la voz con at("frase"). Uniones: barrido / portal / iris / zoom / cortina, nunca con desenfoque.
 // Audio fuera de Remotion. Render SÓLO en el farm.
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
-import { Avatar, Shot, Stamp, WIN, MIN1_END, World } from "./Min1";
+import { AbsoluteFill, Img, staticFile, useCurrentFrame } from "remotion";
+import { Avatar, Shot, Stamp, WIN, MIN1_END } from "./Min1";
 import { at, END } from "./at";
 import { BigNum, COL, DrawX, Flash, FONT, Portal, Tag, e, ei, extrude } from "./lib";
 import { AvBadge, Comment, Desc, ErrorCard, Flow, KitTray, Libro, MaxTimer, NextCard, Recap, Rows, StepPlate, Subscribe, VsCard } from "./kit2d";
@@ -20,7 +20,7 @@ const S = (k: string, a: number, z: [number, number] = [1.03, 1.13], dur = 8, ox
 // fondo de las piezas = el MISMO mundo 3D del minuto 1 (cámara quieta en su último encuadre), oscurecido, con la grilla encima
 const Mundo: React.FC<{ t: number; tone: string }> = ({ t, tone }) => (
   <AbsoluteFill>
-    <AbsoluteFill style={{ transform: `scale(${1.06 + 0.03 * Math.sin(t * 0.13)}) translate(${8 * Math.sin(t * 0.09)}px, ${5 * Math.cos(t * 0.11)}px)` }}><World t={MIN1_END - 0.6} /></AbsoluteFill>
+    <AbsoluteFill style={{ transform: `scale(${1.06 + 0.03 * Math.sin(t * 0.13)}) translate(${8 * Math.sin(t * 0.09)}px, ${5 * Math.cos(t * 0.11)}px)` }}><Img src={staticFile("mecdesemp/mundo_bg.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
     <AbsoluteFill style={{ background: tone, opacity: 0.78 }} />
     <AbsoluteFill style={{ opacity: 0.55 }}><Fondo t={t} /></AbsoluteFill>
   </AbsoluteFill>
