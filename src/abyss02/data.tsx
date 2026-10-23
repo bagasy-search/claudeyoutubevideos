@@ -118,7 +118,7 @@ export const SHOTS: S7[] = [
   {"a": 292.53, "b": 296.25, "k": "comp", "comp": "scene", "arg": "carfinger", "sa": 292.53, "sb": 300.05, "cam": [1.1, 0.53, 0.44], "txt": "a small car on every *cm²*", "prev": null},
   {"a": 296.25, "b": 300.05, "k": "comp", "comp": "scene", "arg": "carfinger", "sa": 292.53, "sb": 300.05, "cam": [1.06, 0.5, 0.455], "txt": "a small car on every *cm²*", "prev": null},
   {"a": 300.05, "b": 302.19, "k": "real", "d": "real", "n": "dark_3582972", "frm": 0.5},
-  {"a": 302.19, "b": 304.2, "k": "real", "d": "real", "n": "dark_3045163", "frm": 0.5},
+  {"a": 302.19, "b": 304.2, "k": "real", "d": "real", "n": "dark_3045163", "frm": 2.35},
   {"a": 304.2, "b": 307.32, "k": "real", "d": "real", "n": "dark_16764714", "frm": 0.5},
   {"a": 307.32, "b": 309.8, "k": "real", "d": "real", "n": "dark_28156785", "frm": 0.5},
   {"a": 309.8, "b": 312.83, "k": "real", "d": "real", "n": "dark_9667570", "frm": 0.5},
