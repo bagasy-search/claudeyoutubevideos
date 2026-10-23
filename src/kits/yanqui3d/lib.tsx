@@ -94,12 +94,12 @@ export const Card3D: React.FC<C3> = ({ id, from, at, x, y, w, h, ry = 0, rx = 0,
 };
 
 // X roja que se DIBUJA (dos trazos) sobre una tarjeta
-export const DrawX: React.FC<{ t: number; at: number; x: number; y: number; w: number; h: number }> = ({ t, at, x, y, w, h }) => {
-  const a = e(t, at, at + 0.16), b = e(t, at + 0.12, at + 0.28);
-  if (a <= 0) return null;
+export const DrawX: React.FC<{ t: number; at: number; x: number; y: number; w: number; h: number; out?: number }> = ({ t, at, x, y, w, h, out = 1e9 }) => {
+  const a = e(t, at, at + 0.16), b = e(t, at + 0.12, at + 0.28), o = 1 - e(t, out, out + 0.25);
+  if (a <= 0 || o <= 0.01) return null;
   const L = Math.hypot(w, h);
   return (
-    <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, filter: "drop-shadow(0 0 12px rgba(255,60,40,.7)) drop-shadow(0 6px 10px rgba(0,0,0,.6))" }}>
+    <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity: o, filter: "drop-shadow(0 0 12px rgba(255,60,40,.7)) drop-shadow(0 6px 10px rgba(0,0,0,.6))" }}>
       <line x1={x} y1={y} x2={x + w} y2={y + h} stroke={COL.red} strokeWidth={22} strokeLinecap="round" strokeDasharray={L} strokeDashoffset={L * (1 - a)} />
       <line x1={x + w} y1={y} x2={x} y2={y + h} stroke={COL.red} strokeWidth={22} strokeLinecap="round" strokeDasharray={L} strokeDashoffset={L * (1 - b)} />
     </svg>

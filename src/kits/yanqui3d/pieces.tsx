@@ -21,7 +21,7 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
           {n}
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(105deg, transparent ${sweep * 140 - 40}%, rgba(255,255,255,.75) ${sweep * 140 - 25}%, transparent ${sweep * 140 - 10}%)`, WebkitBackgroundClip: "text", color: "transparent", mixBlendMode: "screen" } as React.CSSProperties}>{n}</div>
         </div>
-        <div style={{ transform: `translateY(${(1 - k2) * 60}px)`, opacity: k2, fontWeight: 900, fontSize: 92, letterSpacing: 10, color: COL.ink, textShadow: extrude(8, "#3a2a18") }}>{name}</div>
+        <div style={{ transform: `translateY(${(1 - k2) * 60}px)`, opacity: k2, fontWeight: 900, fontSize: Math.min(92, Math.floor(1760 / (name.length * 0.8))), letterSpacing: 10, whiteSpace: "nowrap", color: COL.ink, textShadow: extrude(8, "#3a2a18") }}>{name}</div>
       </div>
     </AbsoluteFill>
   );
