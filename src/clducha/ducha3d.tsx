@@ -59,17 +59,23 @@ const Cam: React.FC<{ t: number }> = ({ t }) => {
 // libera cada espera UNA vez: la suelta Kick tras redibujar, o este respaldo si el mundo ya se desmontó (fin de un barrido)
 const libres = new Set<number>();
 const soltar = (h: number) => { if (!libres.has(h)) { libres.add(h); continueRender(h); } };
+const IMGS = new Map<string, HTMLImageElement>();   // páginas ya decodificadas: una vez por pestaña, no en cada barrido
 const useImgTex = (ids: string[]) => {
   const [ready, bump] = useState(0);
   const r = useMemo(() => {
-    const L = new THREE.TextureLoader();
     const r: Record<string, THREE.Texture> = {};
-    const h = delayRender("paginas guia");
-    let n = ids.length;
+    const set = (id: string, img: HTMLImageElement) => { for (const k of [id, id + "_r"]) { r[k].image = img; r[k].needsUpdate = true; } };
     for (const id of ids) {
-      const flip = new THREE.Texture(); flip.center.set(0.5, 0.5); flip.rotation = Math.PI; flip.colorSpace = THREE.SRGBColorSpace; flip.anisotropy = 16;
-      const tx = L.load(staticFile(P + id + ".jpg"), (tt) => { flip.image = tt.image; flip.needsUpdate = true; if (--n === 0) { bump(h); setTimeout(() => soltar(h), 1500); } }, undefined, () => { if (--n === 0) soltar(h); });
-      tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 16; r[id] = tx; r[id + "_r"] = flip;
+      const tx = new THREE.Texture(); tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 4;
+      const flip = new THREE.Texture(); flip.center.set(0.5, 0.5); flip.rotation = Math.PI; flip.colorSpace = THREE.SRGBColorSpace; flip.anisotropy = 4;
+      r[id] = tx; r[id + "_r"] = flip;
+      const img = IMGS.get(id); if (img) set(id, img);
+    }
+    const faltan = ids.filter((id) => !IMGS.has(id));
+    if (faltan.length) {
+      const h = delayRender("paginas guia");
+      Promise.all(faltan.map((id) => new Promise<void>((ok) => { const im = new Image(); im.onload = () => { IMGS.set(id, im); set(id, im); ok(); }; im.onerror = () => ok(); im.src = staticFile(P + id + ".jpg"); })))
+        .then(() => { bump(h); setTimeout(() => soltar(h), 1500); });
     }
     return r;
   }, [ids.join("|")]);
@@ -258,7 +264,7 @@ const City: React.FC<{ st: St; t: number; tex: ReturnType<typeof useDuchaTex> }>
         const sink = st.sealCity > 0.5 ? 0 : st.dropSink;
         const x = G[0] + 0.5 * (CB + CS), z = G[2] + CF - 0.35;
         return (<group>
-          <mesh position={[x, G[1] - 0.006 + 0.03 * (1 - sink) * st.drop, z]} scale={[1, 0.75 * (1 - sink * 0.92), 1]}><sphereGeometry args={[0.045 * st.drop, 32, 20]} /><meshPhysicalMaterial color="#e6f5ff" transmission={0.9} thickness={0.05} roughness={0.02} clearcoat={1} transparent opacity={0.9} /></mesh>
+          <mesh position={[x, G[1] - 0.006 + 0.03 * (1 - sink) * st.drop, z]} scale={[1, 0.75 * (1 - sink * 0.92), 1]}><sphereGeometry args={[0.045 * st.drop, 32, 20]} /><meshPhysicalMaterial color="#e6f5ff" roughness={0.02} clearcoat={1} envMapIntensity={1.6} transparent opacity={0.6} depthWrite={false} /></mesh>
           {sink > 0.02 && <mesh position={[x, G[1] - 0.0055, z]} rotation={[-Math.PI / 2, 0, 0]}><circleGeometry args={[0.04 + 0.06 * sink, 32]} /><meshStandardMaterial color="#5d584f" transparent opacity={0.6 * sink} roughness={1} /></mesh>}
         </group>);
       })()}
