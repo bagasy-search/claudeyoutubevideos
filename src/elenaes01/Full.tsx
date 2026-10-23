@@ -151,7 +151,7 @@ const M = makeVideo({
     PinTag("ai", "W:jar:air", PT.lid, 1.2, "EL AIRE SALE", COL.ice, 330, -120);
     if (inB(t, "W:jar:pop")) { const q = pin(t, "W:jar:pop", PT.lid), a = startOf("W:jar:pop"); P(<Tag key="vac" t={t} at={a + 0.6} x={q.x} y={q.y} dx={-330} dy={-140} text="VACÍO = TU SELLO" col={COL.amber} out={endOf("W:jar:pop")} />); P(<Stamp key="pop1" t={t} at={a + 2.05} text="¡POP!" x={q.x + 260} y={q.y - 160} size={120} rot={-8} out={a + 3.6} />); }
     PinTag("bd", "W:jar:tight", PT.lid, 1.6, "NO SALE → SE DOBLA LA TAPA", COL.red, 320, -140);
-    P(<Stamp key="yem" t={t} at={at("puras yemas")} text="CON LAS YEMAS · HASTA QUE SE DETIENE" x={1180} y={270} size={64} out={at("Mi esposo") - 0.05} />);
+    P(<Stamp key="yem" t={t} at={at("puras yemas")} text="CON LAS YEMAS · HASTA QUE SE DETIENE" x={960} y={250} size={50} out={at("Mi esposo") - 0.05} />);
     P(<Stamp key="ram" t={t} at={at("Ramón ve a ordeñar")} text="“RAMÓN, VE A ORDEÑAR ALGO.”" x={1200} y={260} size={70} rot={-5} out={at("Y cuando salen") - 0.05} />);
     P(<Words key="flo" t={t} items={[{ at: at("no lo apriete"), txt: "¿ARO FLOJITO? NO LO APRIETES", col: COL.red }]} out={at("No hagas esto número 8") - 0.05} y={900} size={74} />);
     // ---------- 8 · el reloj y la altura ----------
