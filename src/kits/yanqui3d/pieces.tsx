@@ -8,7 +8,7 @@ const op = (t: number, a: number, out: number, fi = 0.18, fo = 0.3) => e(t, a - 
 const k1 = (t: number, a: number, f = 1) => Math.min(1, spr(t, a, f));
 
 // ---------- PASO N: tarjeta de capítulo que cae del fondo, número gigante extruido + nombre, barrido de luz ----------
-export const StepTitle: React.FC<{ t: number; at: number; n: number; name: string; out: number; col?: string; y?: number }> = ({ t, at, n, name, out, col = COL.amber, y = 520 }) => {
+export const StepTitle: React.FC<{ t: number; at: number; n: number; name: string; out: number; col?: string; y?: number; kicker?: string }> = ({ t, at, n, name, out, col = COL.amber, y = 520, kicker = "STEP" }) => {
   const o = op(t, at, out); if (o <= 0.01) return null;
   const k = k1(t, at, 0.85), k2 = k1(t, at + 0.22, 1);
   const sweep = e(t, at + 0.3, at + 1.1);
@@ -16,12 +16,12 @@ export const StepTitle: React.FC<{ t: number; at: number; n: number; name: strin
     <AbsoluteFill style={{ opacity: o, perspective: 1400 }}>
       <AbsoluteFill style={{ background: `radial-gradient(ellipse 60% 55% at 50% ${(y / 1080) * 100}%, rgba(0,0,0,.55), transparent 75%)` }} />
       <div style={{ position: "absolute", left: 960, top: y, transform: `translate(-50%,-50%) translateZ(${(1 - k) * -1400}px) rotateX(${(1 - k) * 50 + 8}deg) rotateY(${Math.sin((t - at) * 0.8) * 5}deg)`, textAlign: "center", fontFamily: FONT, whiteSpace: "nowrap" }}>
-        <div style={{ fontWeight: 900, fontSize: 64, letterSpacing: 26, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.7)"), marginBottom: -20 }}>STEP</div>
+        <div style={{ fontWeight: 900, fontSize: 64, letterSpacing: 26, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.7)"), marginBottom: -20 }}>{kicker}</div>
         <div style={{ position: "relative", display: "inline-block", fontWeight: 900, fontSize: 360, lineHeight: 1, color: col, textShadow: extrude(22, "#5a3410") }}>
           {n}
           <div style={{ position: "absolute", inset: 0, background: `linear-gradient(105deg, transparent ${sweep * 140 - 40}%, rgba(255,255,255,.75) ${sweep * 140 - 25}%, transparent ${sweep * 140 - 10}%)`, WebkitBackgroundClip: "text", color: "transparent", mixBlendMode: "screen" } as React.CSSProperties}>{n}</div>
         </div>
-        <div style={{ transform: `translateY(${(1 - k2) * 60}px)`, opacity: k2, fontWeight: 900, fontSize: 92, letterSpacing: 10, color: COL.ink, textShadow: extrude(8, "#3a2a18") }}>{name}</div>
+        <div style={{ transform: `translateY(${(1 - k2) * 60}px)`, opacity: k2, fontWeight: 900, fontSize: Math.min(92, Math.floor(1760 / (name.length * 0.8))), letterSpacing: 10, whiteSpace: "nowrap", color: COL.ink, textShadow: extrude(8, "#3a2a18") }}>{name}</div>
       </div>
     </AbsoluteFill>
   );
@@ -238,14 +238,14 @@ export const TempChart: React.FC<{ t: number; at: number; pts: { at: number; v: 
 };
 
 // ---------- ERROR #n: losa roja que cae con el número y el error escrito ----------
-export const Mistake: React.FC<{ t: number; at: number; n: number; txt: string; out: number; x?: number; y?: number }> = ({ t, at, n, txt, out, x = 960, y = 860 }) => {
+export const Mistake: React.FC<{ t: number; at: number; n: number; txt: string; out: number; x?: number; y?: number; kicker?: string }> = ({ t, at, n, txt, out, x = 960, y = 860, kicker = "MISTAKE" }) => {
   const o = op(t, at, out); if (o <= 0.01) return null;
   const k = k1(t, at, 1.1);
   return (
     <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `translate(-50%,-50%) perspective(1300px) rotateX(${(1 - k) * -80 + 6}deg) scale(${0.8 + 0.2 * k})`, transformOrigin: "50% 0", display: "flex", alignItems: "center", fontFamily: FONT, whiteSpace: "nowrap" }}>
       <div style={{ width: 170, height: 170, borderRadius: 26, background: `linear-gradient(180deg, ${COL.red}, #8f1a12)`, color: "#fff", fontWeight: 900, fontSize: 110, lineHeight: "170px", textAlign: "center", boxShadow: "0 30px 60px rgba(0,0,0,.6), inset 0 3px 0 rgba(255,255,255,.35)", textShadow: extrude(6, "#5a0d08") }}>{n}</div>
       <div style={{ marginLeft: -14, padding: "26px 44px 26px 50px", borderRadius: "0 22px 22px 0", background: "rgba(12,8,8,.88)", boxShadow: "0 30px 60px rgba(0,0,0,.6), inset 0 0 0 2px rgba(255,74,61,.5)" }}>
-        <div style={{ fontWeight: 800, fontSize: 26, letterSpacing: 8, color: COL.red }}>MISTAKE</div>
+        <div style={{ fontWeight: 800, fontSize: 26, letterSpacing: 8, color: COL.red }}>{kicker}</div>
         <div style={{ fontWeight: 900, fontSize: 66, color: COL.ink, textShadow: extrude(5, "rgba(0,0,0,.8)") }}>{txt}</div>
       </div>
     </div>
@@ -286,7 +286,7 @@ export const RuleCard: React.FC<{ t: number; at: number; at2: number; at3: numbe
 };
 
 // ---------- tarjeta "PRÓXIMO VIDEO" + botón suscribirse que se aprieta ----------
-export const NextCard: React.FC<{ t: number; at: number; subAt: number; out: number; title: string; children: React.ReactNode }> = ({ t, at, subAt, out, title, children }) => {
+export const NextCard: React.FC<{ t: number; at: number; subAt: number; out: number; title: string; children: React.ReactNode; tag?: string; sub?: [string, string] }> = ({ t, at, subAt, out, title, children, tag = "NEXT VIDEO", sub = ["SUBSCRIBE", "SUBSCRIBED ✓"] }) => {
   const o = op(t, at, out); if (o <= 0.01) return null;
   const k = k1(t, at, 0.9), s1 = k1(t, subAt, 1.2), press = t > subAt + 0.5 && t < subAt + 0.75 ? 0.92 : 1, done = t > subAt + 0.62;
   return (
@@ -294,11 +294,11 @@ export const NextCard: React.FC<{ t: number; at: number; subAt: number; out: num
       <div style={{ position: "absolute", left: 1010, top: 170, width: 780, height: 440, perspective: 1600 }}>
         <div style={{ width: "100%", height: "100%", borderRadius: 22, overflow: "hidden", border: "6px solid rgba(255,255,255,.94)", boxShadow: "0 50px 100px rgba(0,0,0,.7)", transform: `rotateY(${(1 - k) * -60 - 12}deg) translateZ(${(1 - k) * -600}px)`, position: "relative" }}>
           {children}
-          <div style={{ position: "absolute", left: 0, top: 0, padding: "12px 22px", background: COL.amber, fontFamily: FONT, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: "#2a1806" }}>NEXT VIDEO</div>
+          <div style={{ position: "absolute", left: 0, top: 0, padding: "12px 22px", background: COL.amber, fontFamily: FONT, fontWeight: 900, fontSize: 30, letterSpacing: 5, color: "#2a1806" }}>{tag}</div>
           <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, padding: "18px 24px", background: "linear-gradient(0deg, rgba(0,0,0,.9), transparent)", fontFamily: FONT, fontWeight: 900, fontSize: 46, color: COL.ink }}>{title}</div>
         </div>
       </div>
-      {s1 > 0.01 && <div style={{ position: "absolute", left: 1400, top: 760, transform: `translate(-50%,-50%) scale(${s1 * press})`, whiteSpace: "nowrap", padding: "26px 60px", borderRadius: 60, background: done ? "#2b2b2b" : "#e62117", fontFamily: FONT, fontWeight: 900, fontSize: 56, letterSpacing: 4, color: "#fff", boxShadow: "0 24px 50px rgba(0,0,0,.6)" }}>{done ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>}
+      {s1 > 0.01 && <div style={{ position: "absolute", left: 1400, top: 760, transform: `translate(-50%,-50%) scale(${s1 * press})`, whiteSpace: "nowrap", padding: "26px 60px", borderRadius: 60, background: done ? "#2b2b2b" : "#e62117", fontFamily: FONT, fontWeight: 900, fontSize: 56, letterSpacing: 4, color: "#fff", boxShadow: "0 24px 50px rgba(0,0,0,.6)" }}>{done ? sub[1] : sub[0]}</div>}
     </AbsoluteFill>
   );
 };

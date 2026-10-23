@@ -94,12 +94,12 @@ export const Card3D: React.FC<C3> = ({ id, from, at, x, y, w, h, ry = 0, rx = 0,
 };
 
 // X roja que se DIBUJA (dos trazos) sobre una tarjeta
-export const DrawX: React.FC<{ t: number; at: number; x: number; y: number; w: number; h: number }> = ({ t, at, x, y, w, h }) => {
-  const a = e(t, at, at + 0.16), b = e(t, at + 0.12, at + 0.28);
-  if (a <= 0) return null;
+export const DrawX: React.FC<{ t: number; at: number; x: number; y: number; w: number; h: number; out?: number }> = ({ t, at, x, y, w, h, out = 1e9 }) => {
+  const a = e(t, at, at + 0.16), b = e(t, at + 0.12, at + 0.28), o = 1 - e(t, out, out + 0.25);
+  if (a <= 0 || o <= 0.01) return null;
   const L = Math.hypot(w, h);
   return (
-    <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, filter: "drop-shadow(0 0 12px rgba(255,60,40,.7)) drop-shadow(0 6px 10px rgba(0,0,0,.6))" }}>
+    <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity: o, filter: "drop-shadow(0 0 12px rgba(255,60,40,.7)) drop-shadow(0 6px 10px rgba(0,0,0,.6))" }}>
       <line x1={x} y1={y} x2={x + w} y2={y + h} stroke={COL.red} strokeWidth={22} strokeLinecap="round" strokeDasharray={L} strokeDashoffset={L * (1 - a)} />
       <line x1={x + w} y1={y} x2={x} y2={y + h} stroke={COL.red} strokeWidth={22} strokeLinecap="round" strokeDasharray={L} strokeDashoffset={L * (1 - b)} />
     </svg>
@@ -122,7 +122,7 @@ export const BigNum: React.FC<{ t: number; at: number; text: string; x?: number;
 };
 
 // termómetro de vidrio 3D (columna que sube) con lectura
-export const Thermo: React.FC<{ t: number; at: number; x: number; y: number; from: number; to: number; dur?: number; out?: number }> = ({ t, at, x, y, from, to, dur = 1.6, out = 1e9 }) => {
+export const Thermo: React.FC<{ t: number; at: number; x: number; y: number; from: number; to: number; dur?: number; out?: number; unit?: string }> = ({ t, at, x, y, from, to, dur = 1.6, out = 1e9, unit = "°F" }) => {
   const o = e(t, at, at + 0.2) * (1 - e(t, out, out + 0.3));
   if (o <= 0.01) return null;
   const k = ei(t, at + 0.2, at + 0.2 + dur), v = from + (to - from) * k;
@@ -137,7 +137,7 @@ export const Thermo: React.FC<{ t: number; at: number; x: number; y: number; fro
           <div style={{ position: "absolute", left: 18, bottom: 40, width: 18, height: 300 * fill, borderRadius: 9, background: col, boxShadow: `0 0 18px ${col}` }} />
           <div style={{ position: "absolute", left: 0, bottom: 0, width: 54, height: 54, borderRadius: 27, background: col, boxShadow: `0 0 30px ${col}, inset 0 -6px 10px rgba(0,0,0,.3)` }} />
         </div>
-        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 96, color: col, textShadow: extrude(8, "rgba(0,0,0,.6)"), marginBottom: 70 }}>{Math.round(v)}°F</div>
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 96, color: col, textShadow: extrude(8, "rgba(0,0,0,.6)"), marginBottom: 70 }}>{Math.round(v)}{unit}</div>
       </div>
     </div>
   );
