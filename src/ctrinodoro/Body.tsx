@@ -118,7 +118,7 @@ const S = (g: Seg) => SEGS.push(g);
 
 // G6 · ya me conoces: 30 años de oficio · departamentos como nuevos
 { const i = 6, a0 = gs(i), tre = G(i, "30 años"), fum = G(i, "fumigador"), dep = G(i, "entregar departamentos");
-  S({ i, beats: [{ a: a0 + 0.05, board: true, via: "zoom" }, { a: dep, k: "o_limpio", via: "portal", q: [960, 540] }], fx: (t) => [
+  S({ i, beats: [{ a: a0 + 0.05, board: true, via: "zoom" }, { a: dep, via: "portal", q: [960, 540], w: { A: OV, B: push(OV, 0.12), ev: () => ({ day: 1, brown: 0, cal: 0 }) } }], fx: (t) => [
     <LowerThird t={t} at={a0 + 0.1} out={dep - 0.3} name="CLAUDIO" l2="30 AÑOS DE OFICIO" l2at={tre} />,
     <BigNum t={t} at={tre} text="30 AÑOS" x={960} y={380} size={200} col={COL.amber} edge="#5a3a10" out={dep - 0.3} />,
     <Chips t={t} at={fum} items={["FUMIGADOR", "ALBAÑIL", "MANTENIMIENTO"]} out={dep - 0.3} y={640} />,
@@ -262,14 +262,15 @@ const S = (g: Seg) => SEGS.push(g);
 { const i = 20, a0 = gs(i), mas = G(i, "más no limpia"), n4 = G(i, "número 4"), taz = G(i, "va en la taza"), tan = G(i, "nunca en el tanque");
   S({ i, beats: [
     { a: a0 + 0.05, board: true, via: "zoom" },
-    { a: n4, via: "whip", w: { A: OV, keys: [[taz + 0.6, RING], [tan - 0.2, RING], [tan + 0.8, TANK]], B: push(TANK, 0.1), ev: (t) => ({ hi: win(t, taz, taz + 0.5) * (1 - win(t, tan, tan + 0.5)), tank: win(t, tan, tan + 0.6), puck: 0 }) } },
+    { a: n4, via: "whip", w: { A: OV, keys: [[taz + 0.6, RING]], B: push(RING, 0.1), ev: (t) => ({ hi: win(t, taz, taz + 0.5) }) } },
+    { a: tan, k: "c_tanque", via: "portal", q: PT.tank },
   ], fx: (t) => [
     <Dose t={t} rows={[{ at: a0 + 0.1, n: 1, text: "UNA ALCANZA" }, { at: G(i, "poner tres"), n: 3, text: "NO HACE FALTA" }]} out={n4 - 0.3} />,
     <Line t={t} at={mas} out={n4 - 0.3} text="MÁS NO LIMPIA MÁS, SÓLO HACE ESPUMA" y={900} size={56} col={COL.amber} />,
     <StepTitle t={t} at={n4} out={ge(i) + 0.2} n={4} text="LA HORA Y EL LUGAR" />,
     <Line t={t} at={taz} out={tan - 0.1} text="EN LA TAZA, EN EL AGUA" y={900} size={72} col={GREEN} />,
     <Line t={t} at={tan} out={ge(i) + 0.3} text="NUNCA EN EL TANQUE DE ATRÁS" y={900} size={68} col={COL.red} />,
-  ], out: PT.tank }); }
+  ] }); }
 
 // G21 · gotea y sube la cuenta · en la taza sí, de noche · el truco es el tiempo
 { const i = 21, a0 = gs(i), taz = G(i, "en la taza sí"), noc = G(i, "y va de noche"), tru = G(i, "el truco es");
@@ -483,14 +484,14 @@ const S = (g: Seg) => SEGS.push(g);
 
 // G40 · el plomero, el inodoro nuevo con instalación · la caja de pastillas
 { const i = 40, a0 = gs(i), nue = G(i, "un inodoro nuevo"), med = G(i, "medio día"), caj = G(i, "una caja de pastillas");
-  S({ i, beats: [{ a: a0 + 0.05, k: "o_inodoro_nuevo", via: "whip" }, { a: caj, k: "o_caja_atras", via: "zoom", z: [1.14, 1.22] }], fx: (t) => [
+  S({ i, beats: [{ a: a0 + 0.05, k: "o_inodoro_nuevo", via: "whip" }, { a: caj, via: "zoom", w: { A: SINK, B: push(SINK, 0.18), ev: () => ({ day: 0.95, jar: 1 }) } }], fx: (t) => [
     <Spent t={t} rows={[{ at: Wt(40, "te cobra la visita"), text: "LA VISITA DEL PLOMERO" }, { at: nue, text: "INODORO NUEVO + INSTALACIÓN" }, { at: med, text: "MEDIO DÍA SIN BAÑO" }]} totalAt={G(i, "mucha plata")} out={caj - 0.2} total="MUCHA PLATA" title="SI LO CAMBIAS" />,
     <Line t={t} at={caj} out={ge(i) + 0.3} text="UNA CAJA DE LAS COMUNES" y={900} size={72} col={GREEN} />,
   ] }); }
 
 // G41 · una caja = todo el año · vinagre y pómez, menos que un café · no cambiaste nada
 { const i = 41, a0 = gs(i), vin = G(i, "el vinagre y la piedra"), nad = G(i, "no cambiaste nada");
-  S({ i, beats: [{ a: a0 + 0.05, via: "zoom", w: { A: SINK, B: push(SINK, 0.15), ev: () => ({ day: 0.95, brown: 0, cal: 0 }) } }, { a: nad, k: "o_limpio", via: "portal", q: PT.box, z: [1.12, 1.2] }], fx: (t) => [
+  S({ i, beats: [{ a: a0 + 0.05, board: true, via: "zoom" }, { a: nad, k: "o_limpio", via: "portal", q: PT.box, z: [1.12, 1.2] }], fx: (t) => [
     <BigNum t={t} at={a0 + 0.1} text="1 CAJA = 1 AÑO" sub="Y TE SOBRA PARA EL LAVAVAJILLAS" x={960} y={460} size={150} col={COL.ink} out={vin - 0.2} />,
     <Line t={t} at={vin} out={nad - 0.2} text="VINAGRE + PÓMEZ: MENOS QUE UN CAFÉ" y={900} size={62} col={COL.amber} />,
     <Stamp t={t} at={nad} text="NO CAMBIASTE NADA" x={960} y={820} rot={-5} size={96} col="#2f9e5f" out={ge(i) + 0.3} />,
