@@ -98,14 +98,17 @@ const Box: React.FC<{ p: V3; s: V3; c: string; r?: number; m?: number; e?: strin
 
 // halo pulsante en el piso + columna de luz (rojo = lo que usa el ladrón · verde = la defensa)
 const Heat: React.FC<{ p: V3; on: number; t: number; col?: string; r?: number }> = ({ p, on, t, col = "#ff3a2a", r = 0.42 }) => {
+  const { camera } = useThree();
   if (on < 0.01) return null;
   const pul = 0.75 + 0.25 * Math.sin(t * 6);
+  // de cerca (primer plano del panel, el parasol…) la columna y la luz quemaban el cuadro → se apagan bajo ~3 m
+  const lejos = Math.min(1, Math.max(0, (camera.position.distanceTo(new THREE.Vector3(p[0], p[1], p[2])) - 1.8) / 1.5));
   return (
     <group position={[p[0], 0.015, p[2]]}>
       <mesh rotation={[-Math.PI / 2, 0, 0]}><ringGeometry args={[r * 0.82, r, 48]} /><meshBasicMaterial color={col} transparent opacity={0.9 * on} toneMapped={false} /></mesh>
       <mesh rotation={[-Math.PI / 2, 0, 0]}><circleGeometry args={[r * 0.82, 48]} /><meshBasicMaterial color={col} transparent opacity={0.18 * on * pul} toneMapped={false} /></mesh>
-      <mesh position={[0, (p[1] + 0.5) / 2, 0]}><cylinderGeometry args={[r * 0.3, r * 0.6, p[1] + 0.5, 32, 1, true]} /><meshBasicMaterial color={col} transparent opacity={0.035 * on * pul} side={THREE.DoubleSide} depthWrite={false} toneMapped={false} /></mesh>
-      <pointLight position={[0, p[1] + 0.2, 0.25]} color={col} intensity={0.5 * on * pul} distance={0.9} />
+      <mesh position={[0, (p[1] + 0.5) / 2, 0]}><cylinderGeometry args={[r * 0.3, r * 0.6, p[1] + 0.5, 32, 1, true]} /><meshBasicMaterial color={col} transparent opacity={0.035 * on * pul * lejos} side={THREE.DoubleSide} depthWrite={false} toneMapped={false} /></mesh>
+      <pointLight position={[0, p[1] + 0.2, 0.25]} color={col} intensity={0.5 * on * pul * lejos} distance={0.9} />
     </group>
   );
 };
@@ -220,7 +223,7 @@ const Garage: React.FC<{ tex: ReturnType<typeof useBarrioTex>; lift: number; jam
         <Box p={[-0.02, 0.03, 0]} s={[0.02, 0.06, 0.08]} c="#cfcac0" r={0.5} rad={0.005} />
         <Box p={[-0.02, -0.05, 0.03]} s={[0.02, 0.025, 0.025]} c="#888" rad={0.004} />
         <mesh position={[-0.025, -0.05, -0.03]}><sphereGeometry args={[0.012, 10, 10]} /><meshBasicMaterial color={blink > 0.5 ? "#ffb020" : "#5a4310"} toneMapped={false} /></mesh>
-        {blink > 0.5 && <pointLight position={[-0.15, -0.05, -0.03]} color="#ffb020" intensity={0.8} distance={0.8} />}
+        {blink > 0.5 && <pointLight position={[-0.15, -0.05, -0.03]} color="#ffb020" intensity={0.12} distance={0.35} />}
       </group>
       {/* escalones y la puerta a la casa (pared derecha del garaje) */}
       {[0, 1, 2].map((i) => <Box key={i} p={[-5.95 + i * 0.0, 0.1 + i * 0.12, -1.5]} s={[0.7 - i * 0.18, 0.12, 0.9]} c="#8a6a48" r={0.8} rad={0.01} />)}
