@@ -4,7 +4,7 @@
 // que la ola de pulido barre. Se vuelve "de vidrio" para mostrar las piedras flotando adentro. Al costado, el quincho con su
 // alisado gris que envejece en dos años (aceite, sillas, polvillo, fisuras como un mapa).
 // UNA escena y UNA cámara; eventos clavados a la voz (EV, segundos globales). Render SÓLO en el farm (acá sólo stills).
-import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { staticFile, delayRender, continueRender } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
@@ -78,7 +78,7 @@ const useJpg = (spec: Record<string, [number, number]>, flipIds: string[] = []) 
   const [, bump] = useState(0);
   return useMemo(() => {
     const L = new THREE.TextureLoader(); const r: Record<string, THREE.Texture> = {};
-    const h = delayRender("texturas jpg", { timeoutInMilliseconds: 110000 }); let n = Object.keys(spec).length;
+    const h = delayRender("texturas jpg", { timeoutInMilliseconds: 170000 }); let n = Object.keys(spec).length;
     for (const [id, rep] of Object.entries(spec)) {
       const flip = flipIds.includes(id) ? new THREE.Texture() : null;
       if (flip) { flip.center.set(0.5, 0.5); flip.rotation = Math.PI; flip.colorSpace = THREE.SRGBColorSpace; flip.anisotropy = 16; r[id + "_r"] = flip; }
@@ -95,8 +95,11 @@ const useJpg = (spec: Record<string, [number, number]>, flipIds: string[] = []) 
 const Warm: React.FC<{ tex: THREE.Texture[] }> = ({ tex }) => {
   const { gl, advance } = useThree();
   const h = useRef<number | null>(null);
-  if (h.current === null) h.current = delayRender("texturas en GPU", { timeoutInMilliseconds: 110000 });
-  const ready = tex.every((x) => x.image);
+  if (h.current === null) h.current = delayRender("texturas en GPU", { timeoutInMilliseconds: 170000 });
+  // con el runner cargado (swangle, 4 pestañas) una textura puede no llegar nunca: a los 80 s se sube lo que haya y se sigue
+  const [late, setLate] = useState(false);
+  useEffect(() => { const k = setTimeout(() => setLate(true), 80000); return () => clearTimeout(k); }, []);
+  const ready = late || tex.every((x) => x.image);
   // cuando llegan (aunque sea tarde, con la máquina cargada): subirlas y VOLVER A DIBUJAR la escena; el lienzo
   // sólo se dibuja al cambiar de cuadro, así que sin este advance el cuadro queda con las texturas en negro
   useLayoutEffect(() => {
