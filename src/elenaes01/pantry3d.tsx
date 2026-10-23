@@ -187,12 +187,12 @@ const jarPts = (r: number) => [[0, 0.002], [r - 0.006, 0], [r, 0.006], [r, 0.128
 const CUT0 = Math.PI * 1.25, CUTL = Math.PI * 1.5;
 const GLASS_FULL = new THREE.LatheGeometry(jarPts(JR), 40);
 const GLASS_CUT = new THREE.LatheGeometry(jarPts(JR), 64, CUT0, CUTL);   // abierto hacia la cámara (-z)
-const contentGeo = (h: number, cut: boolean) => {
+const contentGeo = (h: number, cut: boolean, seg = 24) => {
   const r = JR - 0.003, pts: THREE.Vector2[] = [];
   const prof = (y: number) => (y < 0.128 ? r : y < 0.152 ? lerp(r, 0.034, (y - 0.128) / 0.024) : 0.034);
   for (let i = 0; i <= 18; i++) { const y = 0.004 + (h - 0.004) * (i / 18); pts.push(new THREE.Vector2(prof(y), y)); }
   pts.unshift(new THREE.Vector2(0, 0.004)); pts.push(new THREE.Vector2(0, h));
-  return cut ? new THREE.LatheGeometry(pts, 48, CUT0, CUTL) : new THREE.LatheGeometry(pts, 24);
+  return cut ? new THREE.LatheGeometry(pts, 48, CUT0, CUTL) : new THREE.LatheGeometry(pts, seg);
 };
 const SEC_CAP = (() => { const s = new THREE.Shape(); s.moveTo(0, 0); s.lineTo(1, 0); s.lineTo(1, 1); s.lineTo(0, 1); s.closePath(); return new THREE.ShapeGeometry(s); })();
 // tapa plana (disco con el compuesto rojo) + aro con rosca
@@ -455,13 +455,19 @@ const Inst: React.FC<{ geo: THREE.BufferGeometry; n: number; set: (m: THREE.Matr
   return <instancedMesh ref={ref} args={[geo, undefined, n]} castShadow={cast} receiveShadow frustumCulled={false}>{mat}</instancedMesh>;
 };
 
+// geometrías livianas para la despensa (miles de frascos: el farm rinde por software)
+const GLASS_AISLE = new THREE.LatheGeometry(jarPts(JR), 20);
+const LID_AISLE = new THREE.CylinderGeometry(0.0345, 0.0345, 0.0016, 20);
 const Aisle: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => {
   const A = useAisle(), tx = useTextures(), et = useElenaTex();
-  const cont = useMemo(() => contentGeo(0.15, false), []);
+  const cont = useMemo(() => contentGeo(0.15, false, 12), []);
   const q = useMemo(() => new THREE.Quaternion(), []);
-  const setJar = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, i: number) => { const j = A.jars[i]; q.setFromEuler(new THREE.Euler(0, j.ry, 0)); m.compose(v3(j.p), q, new THREE.Vector3(j.s, j.s, j.s)); c.set(j.c); }, [A, q]);
-  const setGlass = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, i: number) => { const j = A.jars[i]; m.compose(v3(j.p), q.identity(), new THREE.Vector3(j.s, j.s, j.s)); c.set("#ffffff"); }, [A, q]);
-  const setLid = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, i: number) => { const j = A.jars[i]; m.compose(v3([j.p[0], j.p[1] + 0.1765 * j.s, j.p[2]]), q.identity(), new THREE.Vector3(j.s, j.s, j.s)); c.set("#c9ccd1"); }, [A, q]);
+  // sólo los frascos que la cámara puede ver (la niebla tapa todo a 17 m): ventana cuantizada para no rehacer las instancias en cada cuadro
+  const zq = Math.round(sc.cam.p[2] / 1.2) * 1.2, far = (sc.night ?? 0) ? 11 : 18.5;
+  const vis = useMemo(() => A.jars.map((_, i) => i).filter((i) => { const z = A.jars[i].p[2]; return z < zq + 3 && z > zq - far; }), [A, zq, far]);
+  const setJar = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, k: number) => { const j = A.jars[vis[k]]; q.setFromEuler(new THREE.Euler(0, j.ry, 0)); m.compose(v3(j.p), q, new THREE.Vector3(j.s, j.s, j.s)); c.set(j.c); }, [A, q, vis]);
+  const setGlass = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, k: number) => { const j = A.jars[vis[k]]; m.compose(v3(j.p), q.identity(), new THREE.Vector3(j.s, j.s, j.s)); c.set("#ffffff"); }, [A, q, vis]);
+  const setLid = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, k: number) => { const j = A.jars[vis[k]]; m.compose(v3([j.p[0], j.p[1] + 0.1765 * j.s, j.p[2]]), q.identity(), new THREE.Vector3(j.s, j.s, j.s)); c.set("#c9ccd1"); }, [A, q, vis]);
   const BOARD = useMemo(() => rbox(1, 1, 1, 0.08), []);
   const setBoard = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, i: number) => { const b = A.boards[i]; m.compose(v3(b.p), q.identity(), v3(b.s)); c.setHSL(0.07, 0.42, 0.26 + rnd(i, 1) * 0.08); }, [A, q]);
   const setPost = useMemo(() => (m: THREE.Matrix4, c: THREE.Color, i: number) => { m.compose(v3(A.posts[i].p), q.identity(), new THREE.Vector3(0.05, 2.2, 0.05)); c.setHSL(0.07, 0.4, 0.2); }, [A, q]);
@@ -481,7 +487,7 @@ const Aisle: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => {
     <group>
       <fog attach="fog" args={[night ? "#05040a" : "#1a120b", 2.5, night ? 9 : 17]} />
       <hemisphereLight args={["#f1dcc0", "#3a2a1a", night ? 0.03 : 0.32]} />
-      {!night && near.map((z, i) => <pointLight key={i} position={[0, 2.25, z]} intensity={2.4} distance={6} decay={1.6} color="#ffc98a" castShadow={i === 0} shadow-mapSize-width={1024} shadow-mapSize-height={1024} shadow-bias={-0.0004} />)}
+      {!night && near.map((z, i) => <pointLight key={i} position={[0, 2.25, z]} intensity={2.4} distance={6} decay={1.6} color="#ffc98a" castShadow={false} shadow-mapSize-width={1024} shadow-mapSize-height={1024} shadow-bias={-0.0004} />)}
       {!!night && <pointLight position={lantern} intensity={1.6 + 0.12 * Math.sin(t * 11) * Math.sin(t * 7)} distance={4.5} decay={1.7} color="#ff9a4a" castShadow shadow-bias={-0.0004} />}
       {!!night && <mesh position={lantern}><sphereGeometry args={[0.03, 16, 12]} /><meshBasicMaterial color="#ffd38a" toneMapped={false} /></mesh>}
       {/* piso de tablas, techo de vigas, pared del fondo */}
@@ -496,9 +502,9 @@ const Aisle: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => {
       ))}
       <Inst geo={BOARD} n={A.boards.length} set={setBoard} mat={<meshStandardMaterial map={tx.planks} roughness={0.8} />} cast />
       <Inst geo={BOARD} n={A.posts.length} set={setPost} mat={<meshStandardMaterial roughness={0.8} />} />
-      <Inst geo={cont} n={A.jars.length} set={setJar} mat={<meshStandardMaterial roughness={0.32} emissive="#3a1a04" emissiveIntensity={0.15} />} cast />
-      <Inst geo={GLASS_FULL} n={A.jars.length} set={setGlass} mat={<meshPhysicalMaterial color="#e6f2ec" roughness={0.06} transparent opacity={0.2} clearcoat={1} depthWrite={false} envMapIntensity={1.8} />} />
-      <Inst geo={LID} n={A.jars.length} set={setLid} mat={<meshStandardMaterial roughness={0.3} metalness={0.9} />} />
+      <Inst key={"c" + zq} geo={cont} n={vis.length} set={setJar} mat={<meshStandardMaterial roughness={0.32} emissive="#3a1a04" emissiveIntensity={0.15} />} cast />
+      <Inst key={"g" + zq} geo={GLASS_AISLE} n={vis.length} set={setGlass} mat={<meshPhysicalMaterial color="#e6f2ec" roughness={0.06} transparent opacity={0.2} clearcoat={1} depthWrite={false} envMapIntensity={1.8} />} />
+      <Inst key={"l" + zq} geo={LID_AISLE} n={vis.length} set={setLid} mat={<meshStandardMaterial roughness={0.3} metalness={0.9} />} />
       {(sc.bad ?? 0) > 0 && <BadJar t={t} k={sc.bad ?? 0} />}
       {glow.length > 0 && <Pts pts={glow} col="#ffcf7a" size={0.16} o={0.55} map={tx.flake} add />}
       {!night && <Pts pts={dust} col="#ffe7c2" size={0.012} o={0.5} map={tx.flake} />}
