@@ -1,0 +1,3263 @@
+{
+"seg": [
+{
+"a": 106.964,
+"b": 109.54,
+"k": "r_marta_sala",
+"z": null
+},
+{
+"a": 109.54,
+"b": 112.68,
+"k": "r_calle",
+"z": null
+},
+{
+"a": 112.68,
+"b": 118.784,
+"k": "r_telefono",
+"z": null
+},
+{
+"a": 123.06,
+"b": 133.28,
+"w": [
+"wall",
+"knee"
+]
+},
+{
+"a": 133.28,
+"b": 135.449,
+"k": "r_harina",
+"z": null
+},
+{
+"a": 140.289,
+"b": 145.32000000000002,
+"k": "r_pintor1",
+"z": null
+},
+{
+"a": 145.32000000000002,
+"b": 151.049,
+"k": "r_pintor2",
+"z": null
+},
+{
+"a": 155.491,
+"b": 158.28,
+"k": "r_ampolla_grande",
+"z": null
+},
+{
+"a": 158.28,
+"b": 163.72,
+"k": "c_elena2",
+"z": null
+},
+{
+"a": 163.72,
+"b": 168.777,
+"w": [
+"wall2",
+"wall"
+]
+},
+{
+"a": 173.309,
+"b": 184.211,
+"w": [
+"secFace",
+"secClose"
+]
+},
+{
+"a": 188.958,
+"b": 199.218,
+"k": "r_azucar",
+"z": [
+1.02,
+1.12
+]
+},
+{
+"a": 202.707,
+"b": 215.434,
+"w": [
+"secHi",
+"secClose"
+]
+},
+{
+"a": 221.146,
+"b": 232.631,
+"w": [
+"secFace",
+"knee2"
+]
+},
+{
+"a": 236.471,
+"b": 247.01,
+"k": "r_salitre_macro",
+"z": [
+1.02,
+1.14
+]
+},
+{
+"a": 247.01,
+"b": 249.218,
+"k": "r_sal_cristal",
+"z": null
+},
+{
+"a": 254.917,
+"b": 262.09000000000003,
+"k": "r_revoque_roto",
+"z": null
+},
+{
+"a": 262.09000000000003,
+"b": 267.233,
+"k": "r_nylon",
+"z": null
+},
+{
+"a": 270.606,
+"b": 281.366,
+"w": [
+"secFace",
+"sec"
+]
+},
+{
+"a": 285.506,
+"b": 298.766,
+"w": [
+"wall2",
+"wall"
+]
+},
+{
+"a": 304.896,
+"b": 315.886,
+"w": [
+"knee",
+"low"
+]
+},
+{
+"a": 319.404,
+"b": 322.69,
+"k": "r_cond_esquina",
+"z": null
+},
+{
+"a": 322.69,
+"b": 327.77,
+"k": "r_cond_mueble",
+"z": null
+},
+{
+"a": 327.77,
+"b": 329.664,
+"k": "r_cond_ventana",
+"z": null
+},
+{
+"a": 335.446,
+"b": 341.87,
+"k": "r_filt_grieta",
+"z": null
+},
+{
+"a": 341.87,
+"b": 343.29,
+"k": "r_filt_techo",
+"z": null
+},
+{
+"a": 343.29,
+"b": 348.192,
+"k": "r_canaleta_rota",
+"z": null
+},
+{
+"a": 354.089,
+"b": 364.688,
+"w": [
+"wall",
+"knee"
+]
+},
+{
+"a": 370.129,
+"b": 382.079,
+"w": [
+"knee",
+"wall",
+"top",
+"patio"
+]
+},
+{
+"a": 386.902,
+"b": 399.162,
+"w": [
+"patio",
+"patioLow"
+]
+},
+{
+"a": 404.584,
+"b": 406.98999999999995,
+"k": "r_regar",
+"z": null
+},
+{
+"a": 406.98999999999995,
+"b": 412.43,
+"w": [
+"patioLow",
+"patioLow2"
+]
+},
+{
+"a": 412.43,
+"b": 415.28,
+"k": "r_balde_pies",
+"z": null
+},
+{
+"a": 419.782,
+"b": 425.37,
+"w": [
+"pipe",
+"pipe2"
+]
+},
+{
+"a": 425.37,
+"b": 431.17,
+"w": [
+"both",
+"both"
+]
+},
+{
+"a": 431.17,
+"b": 434.031,
+"k": "c_elena_jardinera",
+"z": null
+},
+{
+"a": 440.226,
+"b": 451.253,
+"w": [
+"patio",
+"patio2"
+]
+},
+{
+"a": 455.893,
+"b": 458.04999999999995,
+"k": "r_pala",
+"z": null
+},
+{
+"a": 458.04999999999995,
+"b": 466.312,
+"w": [
+"patioLow",
+"pipe2"
+]
+},
+{
+"a": 470.261,
+"b": 475.65,
+"k": "r_macetas",
+"z": null
+},
+{
+"a": 475.65,
+"b": 479.49,
+"k": "r_vereda",
+"z": null
+},
+{
+"a": 479.49,
+"b": 482.075,
+"k": "r_canaleta_pie",
+"z": null
+},
+{
+"a": 487.079,
+"b": 496.857,
+"w": [
+"table",
+"table2"
+]
+},
+{
+"a": 501.581,
+"b": 508.43,
+"w": [
+"table2",
+"floor"
+]
+},
+{
+"a": 508.43,
+"b": 513.647,
+"k": "r_ferreteria",
+"z": null
+},
+{
+"a": 519.087,
+"b": 530.602,
+"w": [
+"bookW",
+"pageBox"
+]
+},
+{
+"a": 536.939,
+"b": 540.75,
+"k": "r_cepillar",
+"z": null
+},
+{
+"a": 540.75,
+"b": 548.255,
+"k": "r_lavar_no",
+"z": null
+},
+{
+"a": 551.83,
+"b": 557.29,
+"k": "r_barrer",
+"z": null
+},
+{
+"a": 557.29,
+"b": 565.188,
+"k": "r_golpe_mango",
+"z": null
+},
+{
+"a": 570.91,
+"b": 578.1899999999999,
+"w": [
+"knee",
+"low2"
+]
+},
+{
+"a": 578.1899999999999,
+"b": 581.877,
+"k": "r_picar",
+"z": null
+},
+{
+"a": 586.101,
+"b": 596.361,
+"w": [
+"wall2",
+"knee2"
+]
+},
+{
+"a": 601.401,
+"b": 605.97,
+"k": "r_epp",
+"z": null
+},
+{
+"a": 605.97,
+"b": 613.267,
+"w": [
+"wall",
+"knee"
+]
+},
+{
+"a": 617.707,
+"b": 626.07,
+"k": "r_pelada",
+"z": null
+},
+{
+"a": 626.07,
+"b": 629.724,
+"w": [
+"low",
+"low2"
+]
+},
+{
+"a": 634.352,
+"b": 642.35,
+"k": "r_hidro",
+"z": null
+},
+{
+"a": 642.35,
+"b": 646.536,
+"k": "r_mezcla",
+"z": null
+},
+{
+"a": 650.774,
+"b": 653.9100000000001,
+"k": "r_tirar",
+"z": null
+},
+{
+"a": 653.9100000000001,
+"b": 659.57,
+"k": "r_llana",
+"z": null
+},
+{
+"a": 659.57,
+"b": 663.034,
+"w": [
+"low",
+"low2"
+]
+},
+{
+"a": 667.874,
+"b": 678.634,
+"w": [
+"knee",
+"low"
+]
+},
+{
+"a": 682.466,
+"b": 695.574,
+"w": [
+"low2",
+"wall"
+]
+},
+{
+"a": 700.671,
+"b": 705.68,
+"k": "r_alu_corte",
+"z": null
+},
+{
+"a": 705.68,
+"b": 712.088,
+"k": "r_alu_cinta",
+"z": null
+},
+{
+"a": 716.728,
+"b": 719.18,
+"k": "r_alu_despegar",
+"z": null
+},
+{
+"a": 719.18,
+"b": 725.4,
+"k": "r_alu_seco",
+"z": null
+},
+{
+"a": 725.4,
+"b": 726.988,
+"k": "r_alu_gotas",
+"z": null
+},
+{
+"a": 732.41,
+"b": 742.2,
+"w": [
+"knee",
+"wall"
+]
+},
+{
+"a": 742.2,
+"b": 744.746,
+"k": "r_pintar",
+"z": null
+},
+{
+"a": 749.186,
+"b": 750.12,
+"k": "r_medidor_rojo",
+"z": null
+},
+{
+"a": 750.12,
+"b": 755.82,
+"k": "r_medidor_verde",
+"z": null
+},
+{
+"a": 755.82,
+"b": 759.442,
+"w": [
+"wall2",
+"wall"
+]
+},
+{
+"a": 763.237,
+"b": 776.012,
+"w": [
+"sec",
+"secFace"
+]
+},
+{
+"a": 779.521,
+"b": 788.6600000000001,
+"k": "r_cal",
+"z": null
+},
+{
+"a": 788.6600000000001,
+"b": 792.416,
+"w": [
+"wall",
+"wall2"
+]
+},
+{
+"a": 797.256,
+"b": 807.475,
+"w": [
+"wall",
+"knee2"
+]
+},
+{
+"a": 811.615,
+"b": 816.4,
+"w": [
+"low",
+"low2"
+]
+},
+{
+"a": 816.4,
+"b": 818.92,
+"k": "r_inyectar",
+"z": null
+},
+{
+"a": 818.92,
+"b": 826.374,
+"w": [
+"secFace",
+"sec"
+]
+},
+{
+"a": 832.214,
+"b": 843.1800000000001,
+"k": "r_final",
+"z": null
+},
+{
+"a": 843.1800000000001,
+"b": 844.978,
+"w": [
+"low",
+"low2"
+]
+},
+{
+"a": 850.343,
+"b": 852.4599999999999,
+"k": "r_malvones",
+"z": null
+},
+{
+"a": 852.4599999999999,
+"b": 860.091,
+"w": [
+"wall",
+"wall2"
+]
+},
+{
+"a": 866.285,
+"b": 879.045,
+"w": [
+"wall2",
+"wall",
+"bookW",
+"page"
+]
+},
+{
+"a": 883.485,
+"b": 894.745,
+"w": [
+"bookIn",
+"bookW"
+]
+},
+{
+"a": 899.025,
+"b": 911.658,
+"w": [
+"bookW",
+"table"
+]
+},
+{
+"a": 917.098,
+"b": 923.52,
+"k": "r_techo",
+"z": [
+1.0,
+1.1
+]
+},
+{
+"a": 923.52,
+"b": 926.5,
+"w": [
+"wall2",
+"wall"
+]
+}
+],
+"ov": [
+{
+"t": "tag",
+"at": 108.36,
+"out": 109.44,
+"text": "LA SALA DE DOÑA MARTA",
+"pt": null,
+"x": 900,
+"y": 620,
+"dx": -260,
+"dy": -220,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 109.84,
+"out": 112.38000000000001,
+"text": "CRUZÓ LA CALLE",
+"pt": null,
+"x": 980,
+"y": 560,
+"dx": 260,
+"dy": -200,
+"col": null,
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 115.96,
+"out": 118.7,
+"text": "«ME ESTÁ VOLVIENDO LOCA»",
+"x": 1250,
+"y": 190,
+"size": 74,
+"col": "#fff1cf",
+"edge": null,
+"sub": null
+},
+{
+"t": "stamp",
+"at": 120.9,
+"out": 122.0,
+"text": "SE INFLA OTRA VEZ",
+"x": 1400,
+"y": 210,
+"size": 70,
+"col": null
+},
+{
+"t": "big",
+"at": 122.12,
+"out": 123.1,
+"text": "EL MIÉRCOLES",
+"x": 1420,
+"y": 200,
+"size": 80,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 128.5,
+"out": 133.1,
+"text": "DESDE EL ZÓCALO",
+"pt": [
+-0.6,
+0.1,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -280,
+"dy": -120,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 130.76,
+"out": 133.1,
+"text": "HASTA ARRIBA DE LA RODILLA",
+"pt": [
+-0.4,
+0.72,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 240,
+"dy": -170,
+"col": null,
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 134.94,
+"out": 135.3,
+"text": "COMO HARINA",
+"x": 1400,
+"y": 200,
+"size": 100,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 137.52,
+"out": 140.2,
+"text": "1ª VEZ",
+"x": 1500,
+"y": 200,
+"size": 110,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 141.7,
+"out": 143.32,
+"text": "PINTURA COMÚN",
+"pt": null,
+"x": 980,
+"y": 600,
+"dx": -300,
+"dy": -240,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 143.32,
+"out": 145.22,
+"text": "2 MESES → AMPOLLAS",
+"x": 960,
+"y": 200,
+"size": 90,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 145.52,
+"out": 149.44,
+"text": "2ª VEZ",
+"x": 1500,
+"y": 200,
+"size": 110,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 148.84,
+"out": 150.9,
+"text": "«IMPERMEABLE» · CAPA DE GOMA",
+"pt": null,
+"x": 900,
+"y": 620,
+"dx": 200,
+"dy": -260,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 150.96,
+"out": 152.3,
+"text": "MÁS CARO",
+"x": 1450,
+"y": 200,
+"size": 80,
+"col": null
+},
+{
+"t": "big",
+"at": 154.26,
+"out": 155.4,
+"text": "MÁS GRANDES",
+"x": 1420,
+"y": 200,
+"size": 100,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 155.8,
+"out": 157.98,
+"text": "CON AGUA ADENTRO",
+"pt": null,
+"x": 900,
+"y": 560,
+"dx": 280,
+"dy": -200,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 162.68,
+"out": 163.52,
+"text": "«NO TIENE ARREGLO»",
+"x": 1250,
+"y": 190,
+"size": 84,
+"col": "#fff1cf",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 164.3,
+"out": 167.52,
+"text": "TIENE ARREGLO",
+"x": 960,
+"y": 200,
+"size": 110,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "stamp",
+"at": 167.72,
+"out": 168.7,
+"text": "PINTARLA ASÍ: NO",
+"x": 960,
+"y": 220,
+"size": 86,
+"col": null
+},
+{
+"t": "tag",
+"at": 173.5,
+"out": 176.12,
+"text": "PINTURA COMÚN: EL AGUA SALE",
+"pt": [
+1.35,
+0.6,
+-1.23
+],
+"x": 960,
+"y": 540,
+"dx": -320,
+"dy": -200,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 176.32,
+"out": 184.1,
+"text": "IMPERMEABLE: QUEDA ENCERRADA",
+"pt": [
+1.6,
+0.55,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -90,
+"dy": 210,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 180.92,
+"out": 183.2,
+"text": "EMPUJA",
+"x": 1450,
+"y": 820,
+"size": 90,
+"col": null
+},
+{
+"t": "big",
+"at": 183.54,
+"out": 185.2,
+"text": "POR ESO FUE PEOR",
+"x": 960,
+"y": 180,
+"size": 90,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "stamp",
+"at": 187.96,
+"out": 189.0,
+"text": "UNA TAPA",
+"x": 1400,
+"y": 210,
+"size": 96,
+"col": null
+},
+{
+"t": "big",
+"at": 189.2,
+"out": 191.0,
+"text": "PRUEBA EN LA COCINA",
+"x": 960,
+"y": 180,
+"size": 84,
+"col": "#fff1cf",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 191.14,
+"out": 195.4,
+"text": "TERRÓN DE AZÚCAR",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": -320,
+"dy": -220,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 195.64,
+"out": 197.56,
+"text": "UN POQUITO DE CAFÉ",
+"pt": null,
+"x": 1000,
+"y": 760,
+"dx": 300,
+"dy": -120,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 197.76,
+"out": 199.1,
+"text": "SUBE HASTA ARRIBA",
+"x": 1380,
+"y": 200,
+"size": 90,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 205.28,
+"out": 208.16000000000003,
+"text": "AGUJERITOS FINITOS",
+"pt": [
+1.6,
+0.5,
+-1.495
+],
+"x": 960,
+"y": 540,
+"dx": -320,
+"dy": -200,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 208.36,
+"out": 210.24,
+"text": "APOYADA EN EL SUELO",
+"pt": [
+1.6,
+-0.5,
+-1.495
+],
+"x": 960,
+"y": 540,
+"dx": -360,
+"dy": 60,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 210.44,
+"out": 215.3,
+"text": "EL AGUA SUBE POR ADENTRO",
+"pt": [
+1.6,
+0.3,
+-1.495
+],
+"x": 960,
+"y": 540,
+"dx": -380,
+"dy": -150,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 213.2,
+"out": 215.3,
+"text": "TODOS LOS DÍAS",
+"x": 1450,
+"y": 180,
+"size": 84,
+"col": "#8fd6ff",
+"edge": "#0a3a5a",
+"sub": null
+},
+{
+"t": "big",
+"at": 216.72,
+"out": 219.88,
+"text": "CAPILARIDAD",
+"x": 1400,
+"y": 200,
+"size": 100,
+"col": "#8fd6ff",
+"edge": "#0a3a5a",
+"sub": null
+},
+{
+"t": "big",
+"at": 220.18,
+"out": 221.0,
+"text": "~ 1 METRO",
+"x": 1450,
+"y": 200,
+"size": 110,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "tag",
+"at": 223.4,
+"out": 232.5,
+"text": "EMPIEZA EN EL ZÓCALO",
+"pt": [
+-0.3,
+0.1,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -300,
+"dy": -130,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 225.68,
+"out": 232.5,
+"text": "TERMINA EN LA RODILLA",
+"pt": [
+-0.5,
+0.72,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 260,
+"dy": -170,
+"col": null,
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 229.54,
+"out": 232.5,
+"text": "MOJADA POR DENTRO, SIEMPRE",
+"x": 960,
+"y": 180,
+"size": 72,
+"col": "#8fd6ff",
+"edge": "#0a3a5a",
+"sub": null
+},
+{
+"t": "stamp",
+"at": 235.09,
+"out": 236.4,
+"text": "ES SAL",
+"x": 1400,
+"y": 210,
+"size": 110,
+"col": "#ffffff"
+},
+{
+"t": "tag",
+"at": 241.99,
+"out": 244.49,
+"text": "EL AGUA SE EVAPORA",
+"pt": null,
+"x": 960,
+"y": 500,
+"dx": -300,
+"dy": -200,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 244.69,
+"out": 246.91,
+"text": "SALITRE",
+"x": 1430,
+"y": 200,
+"size": 120,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 248.41,
+"out": 249.1,
+"text": "CRISTALES",
+"pt": null,
+"x": 960,
+"y": 560,
+"dx": 280,
+"dy": -220,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 251.79,
+"out": 254.8,
+"text": "ROMPEN EL REVOQUE",
+"x": 1400,
+"y": 210,
+"size": 70,
+"col": null
+},
+{
+"t": "big",
+"at": 259.85,
+"out": 261.99,
+"text": "DE ADENTRO PARA AFUERA",
+"x": 960,
+"y": 180,
+"size": 84,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 266.39,
+"out": 267.1,
+"text": "UNA BOLSA DE NYLON",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": 300,
+"dy": -240,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 270.8,
+"out": 273.83,
+"text": "ANTES: SALÍA COMO VAPOR",
+"pt": [
+1.3,
+0.7,
+-1.2000000000000002
+],
+"x": 960,
+"y": 540,
+"dx": -300,
+"dy": -180,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 274.03,
+"out": 277.15,
+"text": "AHORA NO PUEDE SALIR",
+"x": 960,
+"y": 200,
+"size": 70,
+"col": null
+},
+{
+"t": "tag",
+"at": 277.25,
+"out": 281.3,
+"text": "SE JUNTA ATRÁS Y EMPUJA",
+"pt": [
+1.6,
+0.4,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -360,
+"dy": -220,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 283.95,
+"out": 285.4,
+"text": "NO ES LA MARCA",
+"x": 1400,
+"y": 210,
+"size": 76,
+"col": null
+},
+{
+"t": "big",
+"at": 285.8,
+"out": 289.95,
+"text": "PINTAR ANTES DE CORTAR EL AGUA",
+"x": 960,
+"y": 190,
+"size": 70,
+"col": "#ff4a3d",
+"edge": "#4a0a05",
+"sub": null
+},
+{
+"t": "tag",
+"at": 290.25,
+"out": 291.83,
+"text": "Y CON PINTURA QUE NO RESPIRA",
+"pt": [
+0.3,
+0.5,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -300,
+"dy": -220,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 292.03,
+"out": 295.89,
+"text": "¡OJO!",
+"x": 960,
+"y": 260,
+"size": 110,
+"col": "#ffb257"
+},
+{
+"t": "chips",
+"out": 298.7,
+"items": [
+{
+"at": 296.09,
+"tx": "DEL PISO"
+},
+{
+"at": 296.69,
+"tx": "DEL AIRE"
+},
+{
+"at": 297.28999999999996,
+"tx": "DE LA LLUVIA"
+}
+],
+"y": 800
+},
+{
+"t": "big",
+"at": 302.69,
+"out": 304.8,
+"text": "1 · LA QUE SUBE DEL PISO",
+"x": 1250,
+"y": 190,
+"size": 72,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 306.8,
+"out": 315.8,
+"text": "ZÓCALO → ~1 M",
+"pt": [
+-0.4,
+0.75,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 260,
+"dy": -170,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 310.39,
+"out": 315.8,
+"text": "POLVITO BLANCO",
+"pt": [
+-0.2,
+0.07,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -320,
+"dy": -140,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 312.57,
+"out": 315.01,
+"text": "VERANO = INVIERNO",
+"x": 960,
+"y": 180,
+"size": 90,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 315.21,
+"out": 315.8,
+"text": "SE INFLA COMO AMPOLLAS",
+"pt": [
+0.2,
+0.36,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 260,
+"dy": -120,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 317.89,
+"out": 319.3,
+"text": "2 · LA DEL AIRE",
+"x": 1300,
+"y": 190,
+"size": 84,
+"col": "#8fd6ff",
+"edge": "#0a3a5a",
+"sub": "CONDENSACIÓN"
+},
+{
+"t": "tag",
+"at": 321.09,
+"out": 322.59,
+"text": "ARRIBA, EN LAS ESQUINAS",
+"pt": null,
+"x": 1100,
+"y": 420,
+"dx": -320,
+"dy": 180,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 323.19,
+"out": 327.67,
+"text": "DETRÁS DE LOS MUEBLES",
+"pt": null,
+"x": 960,
+"y": 560,
+"dx": 300,
+"dy": -220,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 328.07,
+"out": 329.6,
+"text": "PUNTITOS NEGROS: MOHO",
+"x": 960,
+"y": 180,
+"size": 84,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 333.77,
+"out": 335.3,
+"text": "EL DORMITORIO DE DOÑA MARTA",
+"x": 1200,
+"y": 190,
+"size": 60,
+"col": "#fff1cf",
+"edge": null,
+"sub": "EL 1er VIDEO DEL CANAL"
+},
+{
+"t": "big",
+"at": 338.23,
+"out": 341.77,
+"text": "3 · LA DE LA LLUVIA",
+"x": 1250,
+"y": 190,
+"size": 84,
+"col": "#ffb257",
+"edge": null,
+"sub": "FILTRACIÓN"
+},
+{
+"t": "tag",
+"at": 341.21,
+"out": 341.77,
+"text": "POR UNA GRIETA",
+"pt": null,
+"x": 960,
+"y": 500,
+"dx": -300,
+"dy": -200,
+"col": null,
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 347.49,
+"out": 348.1,
+"text": "CRECE CON CADA TORMENTA",
+"pt": null,
+"x": 960,
+"y": 560,
+"dx": 300,
+"dy": -220,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 349.35,
+"out": 348.1,
+"text": "SIN ALTURA FIJA",
+"x": 1450,
+"y": 200,
+"size": 80,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 356.35,
+"out": 357.21000000000004,
+"text": "MIRE 3 COSAS",
+"x": 960,
+"y": 200,
+"size": 100,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "chips",
+"out": 364.6,
+"items": [
+{
+"at": 357.41,
+"tx": "¿A QUÉ ALTURA?"
+},
+{
+"at": 359.55,
+"tx": "¿BLANCO O NEGRO?"
+},
+{
+"at": 362.21,
+"tx": "¿CAMBIA CON LLUVIA?"
+}
+],
+"y": 800
+},
+{
+"t": "big",
+"at": 370.3,
+"out": 374.45,
+"text": "ZÓCALO · POLVO BLANCO · RODILLA",
+"x": 960,
+"y": 180,
+"size": 64,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 375.75,
+"out": 379.17,
+"text": "¿POR QUÉ ÉSTA SÍ Y LAS OTRAS NO?",
+"pt": [
+-0.3,
+0.6,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 240,
+"dy": -220,
+"col": "#ffd60a",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 380.99,
+"out": 382.0,
+"text": "EL PATIO DEL COSTADO",
+"pt": [
+-0.3,
+0.6,
+-1.95
+],
+"x": 960,
+"y": 540,
+"dx": -260,
+"dy": -200,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 387.65,
+"out": 390.73,
+"text": "UNA JARDINERA DE LADRILLO",
+"pt": [
+-0.3,
+0.55,
+-2.27
+],
+"x": 960,
+"y": 540,
+"dx": -260,
+"dy": -210,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 390.13,
+"out": 395.71,
+"text": "LA HIZO SU MARIDO",
+"pt": [
+-1.0,
+0.6,
+-2.0
+],
+"x": 960,
+"y": 540,
+"dx": -200,
+"dy": -240,
+"col": null,
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 396.01,
+"out": 399.1,
+"text": "40 CM DE TIERRA",
+"x": 1450,
+"y": 190,
+"size": 90,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 398.35,
+"out": 399.1,
+"text": "MÁS ARRIBA QUE EL PISO DE ADENTRO",
+"pt": [
+0.3,
+0.0,
+-2.36
+],
+"x": 960,
+"y": 540,
+"dx": 200,
+"dy": 200,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 404.8,
+"out": 406.89,
+"text": "CADA MAÑANA",
+"pt": null,
+"x": 960,
+"y": 520,
+"dx": 300,
+"dy": -220,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 407.59,
+"out": 412.33,
+"text": "APOYADA CONTRA LA PARED",
+"pt": [
+-0.3,
+0.3,
+-1.66
+],
+"x": 960,
+"y": 540,
+"dx": 260,
+"dy": -220,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 412.63,
+"out": 415.2,
+"text": "LOS PIES EN UN BALDE DE AGUA",
+"x": 960,
+"y": 180,
+"size": 70,
+"col": "#8fd6ff",
+"edge": "#0a3a5a",
+"sub": null
+},
+{
+"t": "stamp",
+"at": 415.23,
+"out": 419.7,
+"text": "Y HABÍA MÁS",
+"x": 1450,
+"y": 210,
+"size": 70,
+"col": "#ffb257"
+},
+{
+"t": "tag",
+"at": 421.37,
+"out": 425.27,
+"text": "DESCARGA AL PIE DEL MURO",
+"pt": [
+1.1,
+0.0,
+-1.85
+],
+"x": 960,
+"y": 540,
+"dx": -320,
+"dy": -200,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 428.45,
+"out": 431.07,
+"text": "ADENTRO: EL PINTOR PINTABA",
+"pt": [
+0.0,
+1.0,
+-1.0
+],
+"x": 960,
+"y": 540,
+"dx": -200,
+"dy": -200,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 429.73,
+"out": 431.07,
+"text": "AFUERA: EL PROBLEMA",
+"pt": [
+-0.3,
+0.55,
+-1.95
+],
+"x": 960,
+"y": 540,
+"dx": 240,
+"dy": 180,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 438.77,
+"out": 440.1,
+"text": "LOS MALVONES SE QUEDAN",
+"x": 1250,
+"y": 190,
+"size": 72,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "big",
+"at": 445.09,
+"out": 445.72999999999996,
+"text": "EL ARREGLO EMPIEZA AFUERA",
+"x": 960,
+"y": 190,
+"size": 84,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "chips",
+"out": 451.2,
+"items": [
+{
+"at": 446.03,
+"tx": "1º CORTAR EL AGUA"
+},
+{
+"at": 447.51,
+"tx": "2º LA PARED"
+}
+],
+"y": 800
+},
+{
+"t": "big",
+"at": 450.45,
+"out": 451.2,
+"text": "2 COSAS",
+"x": 1500,
+"y": 200,
+"size": 110,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 456.69,
+"out": 457.95,
+"text": "UN ESPACIO ENTRE TIERRA Y MURO",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": -300,
+"dy": -240,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 461.79,
+"out": 464.37,
+"text": "UN CODO Y UN TRAMO MÁS",
+"pt": [
+1.1,
+0.66,
+-2.2
+],
+"x": 960,
+"y": 540,
+"dx": -300,
+"dy": -200,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 464.57,
+"out": 466.2,
+"text": "LEJOS DE LA PARED",
+"pt": [
+1.1,
+0.0,
+-2.9
+],
+"x": 960,
+"y": 540,
+"dx": -320,
+"dy": -120,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 470.39,
+"out": 475.55,
+"text": "NI TIERRA NI MACETAS PEGADAS",
+"pt": null,
+"x": 960,
+"y": 640,
+"dx": -300,
+"dy": -260,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 476.25,
+"out": 479.39,
+"text": "QUE LA LLUVIA NO CORRA AL MURO",
+"pt": null,
+"x": 1000,
+"y": 700,
+"dx": -300,
+"dy": -260,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 479.89,
+"out": 482.0,
+"text": "LA CANALETA, LEJOS",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": 300,
+"dy": -260,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 485.69,
+"out": 487.0,
+"text": "LA MITAD DEL PROBLEMA",
+"x": 1250,
+"y": 190,
+"size": 80,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "tag",
+"at": 490.71,
+"out": 496.8,
+"text": "MARTILLO",
+"pt": [
+-1.82,
+0.84,
+0.44
+],
+"x": 960,
+"y": 540,
+"dx": 220,
+"dy": -120,
+"col": "#f4efe6",
+"sub": null,
+"size": 40
+},
+{
+"t": "tag",
+"at": 491.79,
+"out": 496.8,
+"text": "CORTAFIERRO",
+"pt": [
+-1.84,
+0.82,
+0.12
+],
+"x": 960,
+"y": 540,
+"dx": -150,
+"dy": -200,
+"col": "#f4efe6",
+"sub": null,
+"size": 40
+},
+{
+"t": "tag",
+"at": 504.29,
+"out": 508.23,
+"text": "UN BALDE",
+"pt": [
+-1.15,
+0.3,
+0.5
+],
+"x": 960,
+"y": 540,
+"dx": 220,
+"dy": -140,
+"col": "#f4efe6",
+"sub": null,
+"size": 40
+},
+{
+"t": "tag",
+"at": 505.35,
+"out": 508.23,
+"text": "CUCHARA DE ALBAÑIL",
+"pt": [
+-2.78,
+0.82,
+0.46
+],
+"x": 960,
+"y": 540,
+"dx": -200,
+"dy": -180,
+"col": "#f4efe6",
+"sub": null,
+"size": 40
+},
+{
+"t": "tag",
+"at": 507.01,
+"out": 508.23,
+"text": "LLANA DE MADERA",
+"pt": [
+-2.82,
+0.84,
+0.02
+],
+"x": 960,
+"y": 540,
+"dx": -220,
+"dy": -230,
+"col": "#f4efe6",
+"sub": null,
+"size": 40
+},
+{
+"t": "tag",
+"at": 512.25,
+"out": 513.5,
+"text": "PINTURA «ANTIHUMEDAD»",
+"pt": null,
+"x": 900,
+"y": 560,
+"dx": -300,
+"dy": -230,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 515.41,
+"out": 519.0,
+"text": "LÍQUIDO MILAGROSO",
+"x": 1400,
+"y": 210,
+"size": 70,
+"col": null
+},
+{
+"t": "tag",
+"at": 522.13,
+"out": 527.2900000000001,
+"text": "LA FRASE EXACTA PARA PEDIR",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": -260,
+"dy": -300,
+"col": "#ffd60a",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 527.59,
+"out": 530.5,
+"text": "CAJA NEGRA · PÁG. 11",
+"x": 1300,
+"y": 170,
+"size": 80,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "big",
+"at": 530.89,
+"out": 536.8,
+"text": "PASO 1 · EL SALITRE, EN SECO",
+"x": 1250,
+"y": 190,
+"size": 72,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "stamp",
+"at": 537.83,
+"out": 540.6500000000001,
+"text": "ERROR Nº 1",
+"x": 1400,
+"y": 210,
+"size": 80,
+"col": null
+},
+{
+"t": "stamp",
+"at": 543.79,
+"out": 546.0,
+"text": "NO LO HAGA",
+"x": 960,
+"y": 260,
+"size": 110,
+"col": null
+},
+{
+"t": "tag",
+"at": 545.11,
+"out": 548.2,
+"text": "LA SAL VUELVE A ENTRAR",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": 300,
+"dy": -240,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 548.91,
+"out": 551.7,
+"text": "EN 2 SEMANAS, OTRA VEZ",
+"x": 1250,
+"y": 190,
+"size": 76,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 551.9,
+"out": 553.75,
+"text": "EN SECO, SIEMPRE",
+"x": 960,
+"y": 190,
+"size": 90,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 553.95,
+"out": 557.29,
+"text": "PASO 2 · EL REVOQUE FLOJO",
+"x": 1250,
+"y": 190,
+"size": 72,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "tag",
+"at": 563.77,
+"out": 565.1,
+"text": "SANO: DURO, MACIZO",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": 300,
+"dy": -260,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 567.89,
+"out": 570.8,
+"text": "FLOJO: SUENA HUECO",
+"x": 1300,
+"y": 190,
+"size": 76,
+"col": "#ff4a3d",
+"edge": "#4a0a05",
+"sub": null
+},
+{
+"t": "tag",
+"at": 571.2,
+"out": 576.3499999999999,
+"text": "HUECO HASTA ARRIBA DE LA RODILLA",
+"pt": [
+-0.5,
+0.65,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 240,
+"dy": -200,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 576.55,
+"out": 578.1899999999999,
+"text": "PASO 3 · PICAR",
+"x": 1300,
+"y": 190,
+"size": 90,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "tag",
+"at": 580.37,
+"out": 581.8,
+"text": "HASTA EL LADRILLO",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": 300,
+"dy": -260,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "stamp",
+"at": 582.77,
+"out": 583.8299999999999,
+"text": "ERROR Nº 2",
+"x": 1400,
+"y": 210,
+"size": 80,
+"col": null
+},
+{
+"t": "big",
+"at": 583.93,
+"out": 586.0,
+"text": "PICAR SÓLO LA MANCHA",
+"x": 1300,
+"y": 190,
+"size": 80,
+"col": "#ff4a3d",
+"edge": "#4a0a05",
+"sub": null
+},
+{
+"t": "tag",
+"at": 586.8,
+"out": 596.3,
+"text": "LA MANCHA LLEGA HASTA ACÁ",
+"pt": [
+-1.1,
+0.75,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -300,
+"dy": 80,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 590.73,
+"out": 596.3,
+"text": "+30 CM",
+"pt": [
+-1.1,
+1.05,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -260,
+"dy": -160,
+"col": "#7dffb8",
+"sub": null,
+"size": 60
+},
+{
+"t": "tag",
+"at": 594.69,
+"out": 596.3,
+"text": "SI SE QUEDA CORTO…",
+"pt": [
+0.2,
+1.0,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 200,
+"dy": -200,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 603.83,
+"out": 605.87,
+"text": "ANTEOJOS Y MASCARILLA",
+"pt": null,
+"x": 960,
+"y": 460,
+"dx": 300,
+"dy": -180,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 606.37,
+"out": 610.13,
+"text": "PASO 4 · DEJAR RESPIRAR EL LADRILLO",
+"x": 960,
+"y": 190,
+"size": 64,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "stamp",
+"at": 610.33,
+"out": 612.49,
+"text": "NO TAPE NADA",
+"x": 1400,
+"y": 210,
+"size": 80,
+"col": null
+},
+{
+"t": "big",
+"at": 612.69,
+"out": 613.2,
+"text": "1 SEMANA AL AIRE",
+"x": 1350,
+"y": 190,
+"size": 90,
+"col": "#8fd6ff",
+"edge": "#0a3a5a",
+"sub": null
+},
+{
+"t": "tag",
+"at": 618.0,
+"out": 625.97,
+"text": "VENTANA ABIERTA",
+"pt": null,
+"x": 1150,
+"y": 420,
+"dx": 260,
+"dy": -180,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 626.37,
+"out": 629.6,
+"text": "PASO 5 · REVOQUE CON HIDRÓFUGO",
+"x": 960,
+"y": 190,
+"size": 70,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "big",
+"at": 631.01,
+"out": 634.3,
+"text": "1 CEMENTO : 3 ARENA",
+"x": 1300,
+"y": 190,
+"size": 90,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "stamp",
+"at": 636.19,
+"out": 637.1899999999999,
+"text": "NO EN LA MEZCLA SECA",
+"x": 1300,
+"y": 210,
+"size": 70,
+"col": null
+},
+{
+"t": "big",
+"at": 637.29,
+"out": 642.25,
+"text": "VA EN EL AGUA",
+"x": 1350,
+"y": 190,
+"size": 100,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "tag",
+"at": 642.65,
+"out": 646.4,
+"text": "Y CON ESA AGUA, LA MEZCLA",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": -320,
+"dy": -240,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 645.47,
+"out": 650.7,
+"text": "2 CAPAS",
+"x": 1500,
+"y": 200,
+"size": 110,
+"col": null,
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 650.9,
+"out": 653.8100000000001,
+"text": "1ª: TIRADA CON FUERZA",
+"pt": null,
+"x": 960,
+"y": 560,
+"dx": 300,
+"dy": -240,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 654.21,
+"out": 659.47,
+"text": "2ª: LLANA EN CÍRCULOS",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": -300,
+"dy": -260,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 659.97,
+"out": 662.9,
+"text": "1,5 A 2 CM",
+"x": 1400,
+"y": 190,
+"size": 130,
+"col": "#ffd166",
+"edge": null,
+"sub": null
+},
+{
+"t": "stamp",
+"at": 664.51,
+"out": 667.8,
+"text": "ERROR Nº 3",
+"x": 1400,
+"y": 210,
+"size": 80,
+"col": null
+},
+{
+"t": "stamp",
+"at": 670.33,
+"out": 671.5699999999999,
+"text": "PINTAR ENSEGUIDA",
+"x": 960,
+"y": 240,
+"size": 90,
+"col": null
+},
+{
+"t": "tag",
+"at": 671.77,
+"out": 678.5,
+"text": "EL AGUA DE LA MEZCLA TIENE QUE SALIR",
+"pt": [
+-0.4,
+0.6,
+-1.25
+],
+"x": 960,
+"y": 540,
+"dx": 200,
+"dy": -240,
+"col": "#8fd6ff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 682.7,
+"out": 688.41,
+"text": "AMPOLLAS EN UN REVOQUE NUEVO",
+"pt": [
+-0.6,
+0.5,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 260,
+"dy": -220,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 688.61,
+"out": 695.5,
+"text": "MÍNIMO 3 SEMANAS · MEJOR 4",
+"x": 960,
+"y": 190,
+"size": 74,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 692.33,
+"out": 695.5,
+"text": "DOÑA ELENA: 4 SEMANAS",
+"pt": [
+0.2,
+0.8,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -260,
+"dy": -260,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 696.1,
+"out": 700.6,
+"text": "LA PRUEBA DE US$0",
+"x": 1300,
+"y": 190,
+"size": 90,
+"col": "#fff1cf",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 701.0,
+"out": 705.58,
+"text": "30 × 30 CM",
+"x": 1450,
+"y": 190,
+"size": 110,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 709.1,
+"out": 712.0,
+"text": "CINTA POR LOS 4 LADOS",
+"pt": null,
+"x": 960,
+"y": 540,
+"dx": 300,
+"dy": -240,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 713.2,
+"out": 712.0,
+"text": "2 DÍAS SIN TOCAR",
+"x": 1300,
+"y": 190,
+"size": 84,
+"col": "#8fd6ff",
+"edge": "#0a3a5a",
+"sub": null
+},
+{
+"t": "tag",
+"at": 714.88,
+"out": 719.08,
+"text": "EL LADO DE LA PARED",
+"pt": null,
+"x": 960,
+"y": 560,
+"dx": 300,
+"dy": -240,
+"col": "#f4efe6",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 719.38,
+"out": 725.3000000000001,
+"text": "SECO = LISTA PARA PINTAR",
+"x": 960,
+"y": 190,
+"size": 76,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "big",
+"at": 725.6,
+"out": 726.9,
+"text": "GOTITAS = TODAVÍA TIENE AGUA",
+"x": 960,
+"y": 190,
+"size": 70,
+"col": "#ff4a3d",
+"edge": "#4a0a05",
+"sub": null
+},
+{
+"t": "stamp",
+"at": 732.6,
+"out": 736.2,
+"text": "NO PINTE",
+"x": 960,
+"y": 240,
+"size": 110,
+"col": null
+},
+{
+"t": "big",
+"at": 736.5,
+"out": 740.92,
+"text": "A LAS 4 SEMANAS",
+"x": 1300,
+"y": 190,
+"size": 90,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 741.12,
+"out": 742.1,
+"text": "SALIÓ SECO",
+"x": 1350,
+"y": 190,
+"size": 100,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "tag",
+"at": 742.5,
+"out": 744.6,
+"text": "RECIÉN AHÍ, A PINTAR",
+"pt": null,
+"x": 960,
+"y": 540,
+"dx": 300,
+"dy": -240,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 749.3,
+"out": 750.02,
+"text": "EL DÍA QUE PIQUÉ: ROJO",
+"pt": null,
+"x": 960,
+"y": 560,
+"dx": 300,
+"dy": -240,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 750.22,
+"out": 755.72,
+"text": "4 SEMANAS: VERDE",
+"pt": null,
+"x": 960,
+"y": 560,
+"dx": 300,
+"dy": -240,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 754.54,
+"out": 755.72,
+"text": "EL ALUMINIO: US$0",
+"x": 1300,
+"y": 190,
+"size": 84,
+"col": "#fff1cf",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 756.12,
+"out": 759.3,
+"text": "LA PINTURA",
+"x": 1450,
+"y": 190,
+"size": 110,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "stamp",
+"at": 763.76,
+"out": 764.9599999999999,
+"text": "NUNCA ESMALTE",
+"x": 1300,
+"y": 220,
+"size": 80,
+"col": null
+},
+{
+"t": "stamp",
+"at": 765.06,
+"out": 766.6999999999999,
+"text": "NUNCA IMPERMEABLE",
+"x": 1300,
+"y": 220,
+"size": 80,
+"col": null
+},
+{
+"t": "stamp",
+"at": 766.8,
+"out": 768.68,
+"text": "NUNCA CAPA DE GOMA",
+"x": 1300,
+"y": 220,
+"size": 80,
+"col": null
+},
+{
+"t": "tag",
+"at": 768.78,
+"out": 771.68,
+"text": "ATRAPAN EL AGUA",
+"pt": [
+1.6,
+0.55,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -320,
+"dy": -220,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 771.88,
+"out": 775.9,
+"text": "LA PARED TIENE QUE RESPIRAR",
+"x": 960,
+"y": 180,
+"size": 74,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "tag",
+"at": 777.14,
+"out": 775.9,
+"text": "SALE COMO VAPOR",
+"pt": [
+1.3,
+0.6,
+-1.1700000000000002
+],
+"x": 960,
+"y": 540,
+"dx": -300,
+"dy": -120,
+"col": "#ffffff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 782.18,
+"out": 785.56,
+"text": "AL AGUA, PARA EXTERIORES",
+"pt": null,
+"x": 960,
+"y": 540,
+"dx": -320,
+"dy": -240,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 785.76,
+"out": 788.5600000000001,
+"text": "O A LA CAL",
+"pt": null,
+"x": 960,
+"y": 600,
+"dx": 300,
+"dy": -240,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 787.44,
+"out": 788.5600000000001,
+"text": "DEJAN PASAR EL VAPOR",
+"x": 1250,
+"y": 190,
+"size": 76,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 788.96,
+"out": 792.3,
+"text": "2 MANOS FINAS · 1 DÍA ENTRE",
+"x": 960,
+"y": 190,
+"size": 70,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 799.8,
+"out": 807.4,
+"text": "UNA LÍNEA DE MANCHAS ARRIBA DEL ARREGLO",
+"pt": [
+-0.6,
+1.2,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 200,
+"dy": -200,
+"col": "#ff4a3d",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 806.74,
+"out": 807.4,
+"text": "NECESITA UNA BARRERA",
+"x": 960,
+"y": 190,
+"size": 84,
+"col": "#ffb257",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 811.9,
+"out": 816.3000000000001,
+"text": "A 15 CM DEL PISO",
+"pt": [
+-0.3,
+0.15,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -260,
+"dy": -200,
+"col": "#ffb257",
+"sub": null,
+"size": 52
+},
+{
+"t": "tag",
+"at": 813.7,
+"out": 816.3000000000001,
+"text": "CADA 10-12 CM",
+"pt": [
+0.3,
+0.15,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 200,
+"dy": -260,
+"col": "#ffb257",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 816.6,
+"out": 818.82,
+"text": "CREMA CONTRA LA HUMEDAD",
+"pt": null,
+"x": 960,
+"y": 760,
+"dx": -300,
+"dy": -260,
+"col": "#ffffff",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 819.62,
+"out": 822.9799999999999,
+"text": "LE CORTA EL CAMINO AL AGUA",
+"pt": [
+1.6,
+0.15,
+-1.495
+],
+"x": 960,
+"y": 540,
+"dx": -360,
+"dy": -200,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 823.18,
+"out": 826.3,
+"text": "SIGA EL ENVASE AL PIE DE LA LETRA",
+"x": 960,
+"y": 180,
+"size": 64,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "big",
+"at": 838.16,
+"out": 843.08,
+"text": "3 MESES DESPUÉS",
+"x": 1300,
+"y": 190,
+"size": 90,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+},
+{
+"t": "tag",
+"at": 843.48,
+"out": 844.9,
+"text": "SIN UNA AMPOLLA",
+"pt": [
+0.2,
+0.36,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": 240,
+"dy": -200,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 844.72,
+"out": 844.9,
+"text": "SIN SAL EN EL ZÓCALO",
+"pt": [
+-0.6,
+0.08,
+-1.35
+],
+"x": 960,
+"y": 540,
+"dx": -280,
+"dy": -160,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 847.62,
+"out": 850.2,
+"text": "LOS MALVONES SIGUEN AHÍ",
+"x": 1250,
+"y": 190,
+"size": 72,
+"col": "#7dffb8",
+"edge": "#0b4a2a",
+"sub": null
+},
+{
+"t": "tag",
+"at": 850.5,
+"out": 852.36,
+"text": "UN POQUITO MÁS ABAJO",
+"pt": null,
+"x": 960,
+"y": 620,
+"dx": -300,
+"dy": -260,
+"col": "#7dffb8",
+"sub": null,
+"size": 46
+},
+{
+"t": "check",
+"at": 852.66,
+"out": 870.9,
+"items": [
+{
+"at": 854.44,
+"tx": "SEPA CUÁL DE LAS 3 TIENE"
+},
+{
+"at": 856.98,
+"tx": "CORTE EL AGUA AFUERA"
+},
+{
+"at": 858.68,
+"tx": "LA SAL, EN SECO"
+},
+{
+"at": 860.34,
+"tx": "PIQUE +30 CM"
+},
+{
+"at": 862.78,
+"tx": "HIDRÓFUGO EN EL AGUA"
+},
+{
+"at": 864.28,
+"tx": "ESPERE 3-4 SEMANAS"
+},
+{
+"at": 866.28,
+"tx": "LA PRUEBA DEL ALUMINIO"
+},
+{
+"at": 867.94,
+"tx": "PINTURA QUE RESPIRE"
+}
+]
+},
+{
+"t": "big",
+"at": 878.46,
+"out": 878.9,
+"text": "PÁG. 11",
+"x": 1560,
+"y": 150,
+"size": 120,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "big",
+"at": 883.12,
+"out": 883.4,
+"text": "66 ARREGLOS",
+"x": 1350,
+"y": 190,
+"size": 110,
+"col": "#ffd60a",
+"edge": "#5a4500",
+"sub": null
+},
+{
+"t": "tag",
+"at": 885.7,
+"out": 891.38,
+"text": "AMBIENTE POR AMBIENTE",
+"pt": null,
+"x": 960,
+"y": 640,
+"dx": -300,
+"dy": -300,
+"col": "#ffd08a",
+"sub": null,
+"size": 46
+},
+{
+"t": "tag",
+"at": 888.66,
+"out": 891.38,
+"text": "LO QUE DICE EN EL MOSTRADOR",
+"pt": null,
+"x": 1000,
+"y": 760,
+"dx": 300,
+"dy": -200,
+"col": "#ffd08a",
+"sub": null,
+"size": 46
+},
+{
+"t": "big",
+"at": 891.58,
+"out": 894.6,
+"text": "1 MANO DE IMPERMEABLE",
+"x": 960,
+"y": 180,
+"size": 80,
+"col": "#ffffff",
+"edge": null,
+"sub": "= EL MANUAL… Y LE SOBRA"
+},
+{
+"t": "link",
+"at": 899.1,
+"out": 905.4799999999999
+},
+{
+"t": "ask",
+"at": 905.68,
+"out": 911.6
+},
+{
+"t": "big",
+"at": 917.3,
+"out": 921.54,
+"text": "EL TECHO DE DOÑA ELENA",
+"x": 960,
+"y": 190,
+"size": 84,
+"col": "#fff1cf",
+"edge": null,
+"sub": null
+},
+{
+"t": "stamp",
+"at": 921.74,
+"out": 923.4200000000001,
+"text": "NO SE ARREGLA CON PINTURA",
+"x": 960,
+"y": 260,
+"size": 72,
+"col": null
+},
+{
+"t": "big",
+"at": 924.7,
+"out": 926.5,
+"text": "NOS VEMOS EN LA PRÓXIMA PARED",
+"x": 960,
+"y": 200,
+"size": 70,
+"col": "#ffffff",
+"edge": null,
+"sub": null
+}
+],
+"book": [
+{
+"at": 522.53,
+"out": 530.6,
+"box": [
+0.071,
+0.54,
+0.929,
+0.586
+]
+},
+{
+"at": 871.98,
+"out": 879.0,
+"box": [
+0.075,
+0.445,
+0.83,
+0.523
+]
+},
+{
+"at": 873.2,
+"out": 879.0,
+"box": [
+0.071,
+0.54,
+0.929,
+0.586
+]
+},
+{
+"at": 875.16,
+"out": 879.0,
+"box": [
+0.07,
+0.84,
+0.49,
+0.91
+],
+"col": "#ff9f43"
+}
+],
+"end": 926.5
+}
