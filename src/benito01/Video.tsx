@@ -60,6 +60,12 @@ const Pills: React.FC<{ t: number; at: number; items: string[]; out: number; y?:
   </div>
 );
 
+// destello cálido sobre UN solo mundo (el "light" de mundo a mundo monta 2 WebGL y cuelga el chunk en el farm)
+const Flash: React.FC<{ t: number; at: number }> = ({ t, at }) => {
+  const k = (t - at + 0.25) / 0.5; if (k <= 0 || k >= 1) return null; const g = Math.sin(Math.PI * k);
+  return <div style={{ position: "absolute", inset: 0, background: `radial-gradient(ellipse 80% 70% at ${30 + 40 * k}% 45%, rgba(255,236,200,${0.95 * g}), rgba(255,170,90,${0.35 * g}) 50%, transparent 80%)`, mixBlendMode: "screen" }} />;
+};
+
 // cita de Don Aurelio / de Benito: comillas grandes, palabras que entran de a una
 const Quote: React.FC<{ t: number; at: number; out: number; lines: { at: number; txt: string }[]; by?: string }> = ({ t, at, out, lines, by }) => {
   const o = e(t, at - 0.1, at + 0.25) * (1 - e(t, out, out + 0.35)); if (o <= 0.01) return null;
@@ -192,7 +198,7 @@ export const V = makeVideo({
     W3(M(464.9), "portal", undefined, [[476.6, 481.4]]),
     AV(481.3, "whipL"),
     W3(M(481.3), "portal"),                                                        // peinar la red
-    W3(497.1, "light"),
+    W3(497.1, "cut"),
     AV(500.4, "whip"),
     W3(M(500.4), "portal"),                                                        // el doble
     AV(515.2, "whipL"),
@@ -200,7 +206,7 @@ export const V = makeVideo({
     CL(524.5, "h_poke", "whipL"),
     AV(531.2, "whip"),
     W3(M(531.2), "portal"),
-    W3(543.3, "light"),                                                            // el horno
+    W3(543.3, "cut"),                                                            // el horno
     // ---- secreto 5: la olla caliente ----
     AV(547.8, "whip"),
     CL(M(547.8), "b_pot_oven", "whipL"),
@@ -298,6 +304,7 @@ export const V = makeVideo({
   ],
   pieces: (t) => {
     const L: React.ReactNode[] = [];
+    L.push(<Flash key="fl1" t={t} at={497.1} />, <Flash key="fl2" t={t} at={543.3} />);
     const tag = (key: string, a: number, out: number, q: [number, number, number], text: string, sub?: string, col?: string, dx = 220, dy = -120) => {
       if (t < a - 0.1 || t > out + 0.4) return;
       const s = screenOf(t, q);
