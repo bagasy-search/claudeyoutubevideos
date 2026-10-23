@@ -442,7 +442,7 @@ const Aisle: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => {
   const camZ = sc.cam.p[2];
   // lamparitas colgando cada 2,4 m (las 4 más cercanas a la cámara alumbran de verdad)
   const bulbs = Array.from({ length: 16 }, (_, i) => -i * 2.4 + 0.6);
-  const near = bulbs.filter((z) => z < camZ + 2.5).slice(0, 4);
+  const near = [...bulbs].sort((a, b) => Math.abs(a - (camZ - 3)) - Math.abs(b - (camZ - 3))).slice(0, 4);   // siempre 4: cambiar la cantidad de luces recompila todos los shaders
   // polvo en la luz
   const dust: number[] = [];
   for (let i = 0; i < 700; i++) { const ph = (t * 0.02 * (0.5 + rnd(i, 1)) + rnd(i, 2)) % 1; dust.push((rnd(i, 3) - 0.5) * 1.5, 0.3 + ((rnd(i, 4) + ph) % 1) * 2.0, camZ - 0.5 - rnd(i, 5) * 9); }
@@ -454,8 +454,8 @@ const Aisle: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => {
     <group>
       <fog attach="fog" args={[night ? "#05040a" : "#1a120b", 2.5, night ? 9 : 17]} />
       <hemisphereLight args={["#f1dcc0", "#3a2a1a", night ? 0.03 : 0.32]} />
-      {!night && near.map((z, i) => <pointLight key={i} position={[0, 2.25, z]} intensity={2.4} distance={6} decay={1.6} color="#ffc98a" castShadow={i === 0} shadow-mapSize-width={1024} shadow-mapSize-height={1024} shadow-bias={-0.0004} />)}
-      {!!night && <pointLight position={lantern} intensity={1.6 + 0.12 * Math.sin(t * 11) * Math.sin(t * 7)} distance={4.5} decay={1.7} color="#ff9a4a" castShadow shadow-bias={-0.0004} />}
+      {!night && near.map((z, i) => <pointLight key={i} position={[0, 2.25, z]} intensity={2.4} distance={6} decay={1.6} color="#ffc98a" />)}
+      {!!night && <pointLight position={lantern} intensity={1.6 + 0.12 * Math.sin(t * 11) * Math.sin(t * 7)} distance={4.5} decay={1.7} color="#ff9a4a" />}
       {!!night && <mesh position={lantern}><sphereGeometry args={[0.03, 16, 12]} /><meshBasicMaterial color="#ffd38a" toneMapped={false} /></mesh>}
       {/* piso de tablas, techo de vigas, pared del fondo */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, -18]} receiveShadow><planeGeometry args={[3, 44]} /><meshStandardMaterial map={tx.planks} roughness={0.85} color="#8a7058" /></mesh>
@@ -470,7 +470,7 @@ const Aisle: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => {
       <Inst geo={BOARD} n={A.boards.length} set={setBoard} mat={<meshStandardMaterial map={tx.planks} roughness={0.8} />} cast />
       <Inst geo={BOARD} n={A.posts.length} set={setPost} mat={<meshStandardMaterial roughness={0.8} />} />
       <Inst geo={cont} n={A.jars.length} set={setJar} mat={<meshStandardMaterial roughness={0.32} emissive="#3a1a04" emissiveIntensity={0.15} />} cast />
-      <Inst geo={GLASS_FULL} n={A.jars.length} set={setGlass} mat={<meshPhysicalMaterial color="#e6f2ec" roughness={0.06} transparent opacity={0.2} clearcoat={1} depthWrite={false} envMapIntensity={1.8} />} />
+      <Inst geo={GLASS_FULL} n={A.jars.length} set={setGlass} mat={<meshStandardMaterial color="#e6f2ec" roughness={0.06} metalness={0.1} transparent opacity={0.22} depthWrite={false} envMapIntensity={1.8} />} />
       <Inst geo={LID} n={A.jars.length} set={setLid} mat={<meshStandardMaterial roughness={0.3} metalness={0.9} />} />
       {glow.length > 0 && <Pts pts={glow} col="#ffcf7a" size={0.16} o={0.55} map={tx.flake} add />}
       {!night && <Pts pts={dust} col="#ffe7c2" size={0.012} o={0.5} map={tx.flake} />}
@@ -507,7 +507,7 @@ const Bench: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => {
 export const PantryWorld: React.FC<{ t: number; sc: Scene }> = ({ t, sc }) => (
   <ThreeCanvas width={W} height={H} shadows gl={{ antialias: true, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
     <Cam k={sc.cam} t={t} />
-    <Post bloom={sc.where === "aisle" ? 0.55 : 0.28} threshold={0.88} exposure={sc.night ? 0.95 : 0.9} env={sc.where === "aisle" ? 0.12 : 0.22} />
+    <Post ao={sc.where !== "aisle"} bloom={sc.where === "aisle" ? 0.55 : 0.28} threshold={0.88} exposure={sc.night ? 0.95 : 0.9} env={sc.where === "aisle" ? 0.12 : 0.22} />
     <color attach="background" args={[sc.night ? "#05040a" : "#140d08"]} />
     {sc.where === "aisle" ? <Aisle t={t} sc={sc} /> : <Bench t={t} sc={sc} />}
   </ThreeCanvas>
