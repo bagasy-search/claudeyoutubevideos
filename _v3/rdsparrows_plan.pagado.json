@@ -1,0 +1,3207 @@
+{
+ "total": 1355.168,
+ "avatarEnd": 1355.168,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0.0,
+   "dur": 5.14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 5.14,
+   "dur": 2.9,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp11.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 8.04,
+   "dur": 4.04,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp10.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 12.08,
+   "dur": 11.16,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 30,
+    "unit": "million people",
+    "label": "DIED OF HUNGER IN CHINA · 1959-1961",
+    "compare": "The worst famine anybody has ever counted.",
+    "source": "Sources: Banister 1987 · Ashton et al. 1984",
+    "photo": "img/rdsparrows_a58_cemetery_hill.jpg",
+    "at": 12.08,
+    "compareAt": 13.08
+   },
+   "bed": "img/rdsparrows_r03_feeder_blur.jpg"
+  },
+  {
+   "t": 23.24,
+   "dur": 4.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 27.7,
+   "dur": 3.56,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g03.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 31.26,
+   "dur": 3.02,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g19.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 34.28,
+   "dur": 3.94,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g48.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 38.22,
+   "dur": 4.44,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 42.66,
+   "dur": 3.5,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a73_field_birds_harvest.mp4",
+   "rate": 0.862
+  },
+  {
+   "t": 46.16,
+   "dur": 3.5,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s06_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 49.66,
+   "dur": 3.16,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s04_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 52.82,
+   "dur": 3.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a53_wild_plants.mp4",
+   "real": false,
+   "rate": 0.819
+  },
+  {
+   "t": 56.22,
+   "dur": 3.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 59.74,
+   "dur": 3.54,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g28.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 63.28,
+   "dur": 3.8,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g12.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 67.08,
+   "dur": 3.52,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp22.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 70.6,
+   "dur": 4.68,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 75.28,
+   "dur": 3.16,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g34.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 78.44,
+   "dur": 3.12,
+   "sec": "S1",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r13_window_arms.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 81.56,
+   "dur": 3.38,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r43_tractor.jpg"
+  },
+  {
+   "t": 84.94,
+   "dur": 5.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 90.32,
+   "dur": 4.7,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r33_reports_spread.jpg"
+  },
+  {
+   "t": 95.02,
+   "dur": 4.24,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r01_jar_window.jpg"
+  },
+  {
+   "t": 99.26,
+   "dur": 4.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 103.5,
+   "dur": 9.26,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "THE SPARROWS",
+    "sub": "China · 1958-1962",
+    "part": "",
+    "stamp": "TRUE STORY",
+    "typeAt": 103.5,
+    "stampAt": 106.04
+   },
+   "bed": "img/rdsparrows_r14_folder_open_blur.jpg"
+  },
+  {
+   "t": 112.76,
+   "dur": 3.62,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 116.38,
+   "dur": 3.66,
+   "sec": "S4",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r38_hen_yard.jpg"
+  },
+  {
+   "t": 120.04,
+   "dur": 3.76,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a18_tree_sparrows_branch.mp4",
+   "rate": 0.785
+  },
+  {
+   "t": 123.8,
+   "dur": 5.98,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 129.78,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "THE PLAN",
+    "sub": "",
+    "part": "PART 1",
+    "stamp": "",
+    "typeAt": 129.88
+   },
+   "bed": "img/rdsparrows_r04_seed_palm_blur.jpg"
+  },
+  {
+   "t": 133.98,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 1",
+    "part": "THE PLAN"
+   },
+   "bed": "img/rdsparrows_r04_seed_palm_blur.jpg"
+  },
+  {
+   "t": 137.9,
+   "dur": 3.58,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 141.48,
+   "dur": 2.76,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 144.24,
+   "dur": 5.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 149.4,
+   "dur": 3.12,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a07_flies_food.mp4",
+   "rate": 0.967
+  },
+  {
+   "t": 152.52,
+   "dur": 3.0,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a08_mosquito_paddy.mp4",
+   "rate": 0.928
+  },
+  {
+   "t": 155.52,
+   "dur": 3.26,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a09_rat_grain.mp4",
+   "rate": 0.884
+  },
+  {
+   "t": 158.78,
+   "dur": 5.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 164.3,
+   "dur": 3.62,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp23.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 167.92,
+   "dur": 4.28,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_un04.mp4",
+   "rate": 0.925,
+   "_dup": 1
+  },
+  {
+   "t": 172.2,
+   "dur": 3.64,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_un02.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 175.84,
+   "dur": 4.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 180.74,
+   "dur": 3.8,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp08.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 184.54,
+   "dur": 3.9,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_f04.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 188.44,
+   "dur": 4.42,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 192.86,
+   "dur": 3.48,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s04_06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 196.34,
+   "dur": 3.14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 199.48,
+   "dur": 4.92,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un15.mp4",
+   "real": true,
+   "rate": 0.925
+  },
+  {
+   "t": 204.4,
+   "dur": 3.56,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f06.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 207.96,
+   "dur": 6.06,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 214.02,
+   "dur": 14.14,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "BigStat",
+   "props": {
+    "value": 4,
+    "unit": "pounds of grain",
+    "label": "WHAT ONE SPARROW EATS IN A YEAR · THE OFFICIAL MATH",
+    "compare": "Kill one sparrow, save four pounds. On paper.",
+    "source": "Source: TIME, May 5, 1958",
+    "photo": "img/rdsparrows_a12_grain_scale.jpg",
+    "at": 216.56,
+    "compareAt": 219.42
+   },
+   "bed": "img/rdsparrows_r04_seed_palm_blur.jpg"
+  },
+  {
+   "t": 228.16,
+   "dur": 3.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 231.4,
+   "dur": 3.18,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_a51_road_empty.jpg"
+  },
+  {
+   "t": 234.58,
+   "dur": 2.86,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f13.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 237.44,
+   "dur": 3.3,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g58.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 240.74,
+   "dur": 5.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 246.2,
+   "dur": 2.94,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 249.14,
+   "dur": 3.26,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g18.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 252.4,
+   "dur": 2.94,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g23.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 255.34,
+   "dur": 5.22,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 260.56,
+   "dur": 3.54,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_f19.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 264.1,
+   "dur": 3.82,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g46.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 267.92,
+   "dur": 5.14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 273.06,
+   "dur": 3.32,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g36.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 276.38,
+   "dur": 3.4,
+   "sec": "S3",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r17_cast_iron.jpg"
+  },
+  {
+   "t": 279.78,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "THE WARNING",
+    "sub": "",
+    "part": "PART 2",
+    "stamp": "",
+    "typeAt": 279.88
+   },
+   "bed": "img/rdsparrows_r01_jar_window_blur.jpg"
+  },
+  {
+   "t": 283.98,
+   "dur": 2.98,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 2",
+    "part": "THE WARNING"
+   },
+   "bed": "img/rdsparrows_r01_jar_window_blur.jpg"
+  },
+  {
+   "t": 286.96,
+   "dur": 4.06,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 291.02,
+   "dur": 4.28,
+   "sec": "S3",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r09_binoculars.jpg"
+  },
+  {
+   "t": 295.3,
+   "dur": 4.68,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_a24_field_notebook.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 299.98,
+   "dur": 5.62,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 305.6,
+   "dur": 3.7,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp04.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 309.3,
+   "dur": 3.4,
+   "sec": "S3",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r34_magnifier.jpg"
+  },
+  {
+   "t": 312.7,
+   "dur": 11.06,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/rdsparrows_a70_full_granary_family.jpg",
+    "rightImg": "img/rdsparrows_a21_beetle_jar_macro.jpg",
+    "leftHead": "WHAT THEY SAID",
+    "rightHead": "WHAT THEY FEED THEIR BABIES",
+    "leftText": "Grain",
+    "rightText": "Mostly insects",
+    "stamp": "FREE PEST CONTROL",
+    "leftAt": 312.7,
+    "rightAt": 318.82
+   },
+   "bed": "img/rdsparrows_r01_jar_window_blur.jpg"
+  },
+  {
+   "t": 323.76,
+   "dur": 4.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 327.84,
+   "dur": 3.78,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a19_sparrow_feeding_chicks.mp4",
+   "real": false,
+   "rate": 0.798
+  },
+  {
+   "t": 331.62,
+   "dur": 4.24,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f01.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 335.86,
+   "dur": 3.432,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s05_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 339.292,
+   "dur": 3.94,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f20.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 343.232,
+   "dur": 5.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 348.412,
+   "dur": 3.34,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp02.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 351.752,
+   "dur": 3.46,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_un03.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 355.212,
+   "dur": 3.48,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_s07_07.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 358.692,
+   "dur": 3.26,
+   "sec": "S3",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r05_pot_spoon.jpg"
+  },
+  {
+   "t": 361.952,
+   "dur": 3.68,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 365.632,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "THE BATTLE",
+    "sub": "",
+    "part": "PART 3",
+    "stamp": "",
+    "typeAt": 365.73
+   },
+   "bed": "img/rdsparrows_r02_newspaper_blur.jpg"
+  },
+  {
+   "t": 369.832,
+   "dur": 4.58,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 3",
+    "part": "THE BATTLE"
+   },
+   "bed": "img/rdsparrows_r02_newspaper_blur.jpg"
+  },
+  {
+   "t": 374.412,
+   "dur": 5.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 380.232,
+   "dur": 13.5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 3000000,
+    "unit": "people",
+    "label": "OUT IN THE STREETS OF PEKING · ONE MORNING, 1958",
+    "compare": "More than everyone in Chicago today.",
+    "source": "Source: TIME, May 5, 1958 · U.S. Census Bureau",
+    "photo": "img/rdsparrows_a04_empty_sky.jpg",
+    "at": 380.23,
+    "compareAt": 382.23
+   },
+   "bed": "img/rdsparrows_r02_newspaper_blur.jpg"
+  },
+  {
+   "t": 393.732,
+   "dur": 3.42,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 397.152,
+   "dur": 3.64,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a03_rooftop_flags.mp4",
+   "rate": 0.801
+  },
+  {
+   "t": 400.792,
+   "dur": 3.62,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s06_08.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 404.412,
+   "dur": 3.86,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a05_fallen_feathers.mp4",
+   "rate": 0.764
+  },
+  {
+   "t": 408.272,
+   "dur": 4.78,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 413.052,
+   "dur": 4.4,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp17.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 417.452,
+   "dur": 3.9,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_s03_03.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 421.352,
+   "dur": 3.72,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 425.072,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g26.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 428.472,
+   "dur": 3.8,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g51.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 432.272,
+   "dur": 3.32,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g29.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 435.592,
+   "dur": 3.56,
+   "sec": "S5",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r31_sparrow_nest.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 439.152,
+   "dur": 3.26,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 442.412,
+   "dur": 9.24,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "No warrior shall be withdrawn until the battle is won.",
+    "who": "People's Daily, Peking",
+    "year": "1958",
+    "source": "Quoted in TIME, May 5, 1958",
+    "at": 442.41,
+    "until": 448.07,
+    "highlight": "until the battle is won",
+    "bed": "img/rdsparrows_a31_old_newspaper_china.jpg"
+   },
+   "bed": "img/rdsparrows_r02_newspaper_blur.jpg"
+  },
+  {
+   "t": 451.652,
+   "dur": 8.76,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 310000,
+    "unit": "sparrows",
+    "label": "KILLED IN PEKING ALONE · 1958",
+    "compare": "About 4 million more across the rest of China.",
+    "source": "Source: TIME, May 5, 1958",
+    "photo": "img/rdsparrows_a30_broken_nest_eggs.jpg",
+    "at": 451.37,
+    "compareAt": 456.71
+   },
+   "bed": "img/rdsparrows_r02_newspaper_blur.jpg"
+  },
+  {
+   "t": 460.412,
+   "dur": 5.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 465.492,
+   "dur": 3.72,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp18.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 469.212,
+   "dur": 3.58,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g15.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 472.792,
+   "dur": 3.7,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s04_02.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 476.492,
+   "dur": 3.78,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a32_slingshot_child.mp4",
+   "rate": 0.807
+  },
+  {
+   "t": 480.272,
+   "dur": 4.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 485.092,
+   "dur": 12.74,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 20000,
+    "unit": "sparrows",
+    "label": "ONE 16-YEAR-OLD BOY · YUNNAN",
+    "compare": "Held up as a hero by a youth magazine.",
+    "source": "China Youth, via TIME, May 5, 1958",
+    "photo": "img/rdsparrows_a34_tally_sticks.jpg",
+    "at": 489.49,
+    "compareAt": 493.11
+   },
+   "bed": "img/rdsparrows_r02_newspaper_blur.jpg"
+  },
+  {
+   "t": 497.832,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 501.632,
+   "dur": 2.72,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 504.352,
+   "dur": 13.44,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "It was fun to wipe out the Four Pests.",
+    "who": "A former schoolboy, Sichuan",
+    "year": "",
+    "source": "Judith Shapiro, Mao's War Against Nature (2001)",
+    "at": 504.35,
+    "until": 507.87,
+    "highlight": "fun",
+    "bed": "img/rdsparrows_a63_armband_badge.jpg"
+   },
+   "bed": "img/rdsparrows_r02_newspaper_blur.jpg"
+  },
+  {
+   "t": 517.792,
+   "dur": 6.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 523.792,
+   "dur": 3.08,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_s07_05.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 526.872,
+   "dur": 3.74,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g17.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 530.612,
+   "dur": 3.28,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un08.mp4",
+   "real": true,
+   "rate": 0.882
+  },
+  {
+   "t": 533.892,
+   "dur": 3.28,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g33.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 537.172,
+   "dur": 5.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 542.372,
+   "dur": 4.12,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 546.492,
+   "dur": 3.54,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s07_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 550.032,
+   "dur": 3.88,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s07_02.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 553.912,
+   "dur": 4.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 558.252,
+   "dur": 3.6,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g27.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 561.852,
+   "dur": 3.02,
+   "sec": "S5",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r08_notebook_math.jpg"
+  },
+  {
+   "t": 564.872,
+   "dur": 3.46,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un14.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 0.738
+  },
+  {
+   "t": 568.332,
+   "dur": 3.64,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 571.972,
+   "dur": 3.84,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g41.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 575.812,
+   "dur": 3.86,
+   "sec": "S5",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r07_map_point.jpg"
+  },
+  {
+   "t": 579.672,
+   "dur": 3.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 583.132,
+   "dur": 3.36,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f14.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 586.492,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "YEAR BY YEAR",
+    "sub": "",
+    "part": "PART 4",
+    "stamp": "",
+    "typeAt": 586.59
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 590.972,
+   "dur": 1.62,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 4",
+    "part": "YEAR BY YEAR"
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 592.592,
+   "dur": 5.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 598.172,
+   "dur": 3.2,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g40.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 601.372,
+   "dur": 4.08,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g69.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 605.452,
+   "dur": 3.98,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp06.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 609.432,
+   "dur": 5.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 615.232,
+   "dur": 4.14,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r19_shovel_deep.jpg"
+  },
+  {
+   "t": 619.372,
+   "dur": 4.28,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp12.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 623.652,
+   "dur": 3.64,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 627.292,
+   "dur": 3.74,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g68.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 631.032,
+   "dur": 3.66,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_a39_close_planting.jpg"
+  },
+  {
+   "t": 634.692,
+   "dur": 4.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 639.032,
+   "dur": 3.38,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g45.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 642.412,
+   "dur": 8.76,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/rdsparrows_a38_records_desk.jpg",
+    "rightImg": "img/rdsparrows_a43_empty_bowl.jpg",
+    "leftHead": "ON PAPER",
+    "rightHead": "IN THE BOWL",
+    "leftText": "Record harvests",
+    "rightText": "Hunger",
+    "stamp": "YOU CAN'T EAT PAPER",
+    "leftAt": 642.41,
+    "rightAt": 648.55
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 651.172,
+   "dur": 4.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 655.372,
+   "dur": 4.18,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 659.552,
+   "dur": 3.12,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un13.mp4",
+   "real": true,
+   "rate": 0.736
+  },
+  {
+   "t": 662.672,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 666.272,
+   "dur": 3.68,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a17_unharvested.mp4",
+   "rate": 0.82
+  },
+  {
+   "t": 669.952,
+   "dur": 3.54,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g52.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 673.492,
+   "dur": 3.06,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 676.552,
+   "dur": 13.0,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "When there is not enough to eat, people starve to death. It is better to let half of the people die so that the other half can eat their fill.",
+    "who": "Mao Zedong",
+    "year": "March 25, 1959",
+    "source": "Secret meeting in Shanghai · Gansu Provincial Archives, via F. Dikötter, Mao's Great Famine (2010)",
+    "at": 676.55,
+    "until": 687.44,
+    "highlight": "let half of the people die",
+    "bed": "img/rdsparrows_a56_archive_boxes.jpg"
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 689.552,
+   "dur": 2.952,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g32.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 692.504,
+   "dur": 3.56,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 696.064,
+   "dur": 3.96,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r23_ledger.jpg"
+  },
+  {
+   "t": 700.024,
+   "dur": 3.92,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g14.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 703.944,
+   "dur": 9.28,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "× what people needed",
+    "label": "FOOD GROWN IN CHINA · 1959",
+    "compare": "And people were starving anyway.",
+    "source": "Meng, Qian & Yared, Review of Economic Studies (2015)",
+    "photo": "img/rdsparrows_a42_granary_full.jpg",
+    "at": 705.06,
+    "compareAt": 709.98
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 713.224,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 717.824,
+   "dur": 2.98,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r06_scale_grain.jpg"
+  },
+  {
+   "t": 720.804,
+   "dur": 3.52,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a41_grain_carts.mp4",
+   "_dup": 1,
+   "real": false,
+   "rate": 0.753
+  },
+  {
+   "t": 724.324,
+   "dur": 3.26,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g63.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 727.584,
+   "dur": 2.98,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r20_empty_pot.jpg"
+  },
+  {
+   "t": 730.564,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 735.164,
+   "dur": 3.4,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g56.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 738.564,
+   "dur": 3.96,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un05.mp4",
+   "real": true,
+   "rate": 0.863
+  },
+  {
+   "t": 742.524,
+   "dur": 6.98,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/rdsparrows_map_china.jpg",
+    "pins": [
+     {
+      "x": 1240,
+      "y": 700,
+      "label": "LUSHAN",
+      "year": "1959",
+      "at": 745.16,
+      "zoom": 2.2
+     }
+    ],
+    "kicker": "CHINA",
+    "credit": "Map: CIA, China Administrative Divisions · Public domain · Wikimedia Commons"
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 749.504,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 753.804,
+   "dur": 3.48,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_f02.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 757.284,
+   "dur": 3.92,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g44.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 761.204,
+   "dur": 3.6,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f18.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 764.804,
+   "dur": 3.48,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 768.284,
+   "dur": 4.0,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp14.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 772.284,
+   "dur": 4.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 776.864,
+   "dur": 3.98,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r28_bamboo.jpg"
+  },
+  {
+   "t": 780.844,
+   "dur": 3.7,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_a60_hospital_corridor.jpg"
+  },
+  {
+   "t": 784.544,
+   "dur": 4.56,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_a65_old_scientist_desk.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 789.104,
+   "dur": 5.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 794.564,
+   "dur": 4.36,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 798.924,
+   "dur": 3.42,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_f10.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 802.344,
+   "dur": 3.92,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a47_locusts_field.mp4",
+   "rate": 0.753
+  },
+  {
+   "t": 806.264,
+   "dur": 4.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 810.424,
+   "dur": 3.58,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a48_locust_close.mp4",
+   "real": false,
+   "rate": 0.852
+  },
+  {
+   "t": 814.004,
+   "dur": 3.52,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a46_bare_field_drought.mp4",
+   "_dup": 1,
+   "rate": 0.838
+  },
+  {
+   "t": 817.524,
+   "dur": 4.12,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 50,
+   "lugar": "avatar"
+  },
+  {
+   "t": 821.644,
+   "dur": 8.12,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Stop killing sparrows. Replace them with bedbugs.",
+    "who": "Mao Zedong",
+    "year": "March 18, 1960",
+    "source": "Party directive, 1960 · via Judith Shapiro (2001)",
+    "at": 821.64,
+    "until": 826.44,
+    "highlight": "bedbugs",
+    "bed": "img/rdsparrows_a49_bedbug_bed.jpg"
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 829.764,
+   "dur": 10.38,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/rdsparrows_a10_four_pests_poster.jpg",
+    "rightImg": "img/rdsparrows_a54_boarding_school.jpg",
+    "leftHead": "THE LIST · 1958",
+    "rightHead": "THE LIST · APRIL 1960",
+    "leftText": "Rats · Flies · Mosquitoes · Sparrows",
+    "rightText": "Rats · Flies · Mosquitoes · Bedbugs",
+    "stamp": "TOO LATE",
+    "leftAt": 829.4,
+    "rightAt": 832.56
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 840.144,
+   "dur": 4.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 51,
+   "lugar": "avatar"
+  },
+  {
+   "t": 844.724,
+   "dur": 8.96,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/rdsparrows_doc_cia1960.png",
+    "aspect": 0.7727,
+    "highlights": [
+     {
+      "x": 13.5,
+      "y": 21.6,
+      "w": 31.5,
+      "h": 6,
+      "at": 845.64
+     },
+     {
+      "x": 61,
+      "y": 21.8,
+      "w": 16.5,
+      "h": 2.4,
+      "at": 846.92
+     },
+     {
+      "x": 50,
+      "y": 47.3,
+      "w": 25,
+      "h": 1.9,
+      "at": 848.04
+     }
+    ],
+    "chip": "CIA REPORT · SEPT 1960",
+    "source": "CIA Information Report, Conditions in China, 13 Sept 1960 · CIA-RDP80T00246A056000500001-4",
+    "note": {
+     "text": "Food shortage. Sept 1960.",
+     "at": 848.94
+    },
+    "credit": "CIA FOIA Reading Room · Public domain",
+    "bed": "img/rdsparrows_a50_post_office.jpg"
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 853.684,
+   "dur": 6.44,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/rdsparrows_map_china.jpg",
+    "pins": [
+     {
+      "x": 1150,
+      "y": 580,
+      "label": "XINYANG, HENAN",
+      "year": "1960",
+      "at": 848.22,
+      "zoom": 2.2
+     }
+    ],
+    "kicker": "CHINA",
+    "credit": "Map: CIA, China Administrative Divisions · Public domain · Wikimedia Commons"
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 860.124,
+   "dur": 4.42,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 52,
+   "lugar": "avatar"
+  },
+  {
+   "t": 864.544,
+   "dur": 3.7,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g37.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 868.244,
+   "dur": 3.68,
+   "sec": "S6",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r22_grain_bin.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 871.924,
+   "dur": 5.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 53,
+   "lugar": "avatar"
+  },
+  {
+   "t": 877.124,
+   "dur": 4.2,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g53.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 881.324,
+   "dur": 4.08,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g02.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 885.404,
+   "dur": 5.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 54,
+   "lugar": "avatar"
+  },
+  {
+   "t": 890.784,
+   "dur": 3.66,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp07.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 894.444,
+   "dur": 3.32,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_bp21.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 897.764,
+   "dur": 2.52,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g60.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 900.284,
+   "dur": 3.6,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a66_mud_hut.mp4",
+   "real": false,
+   "rate": 0.819
+  },
+  {
+   "t": 903.884,
+   "dur": 3.14,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g04.mp4",
+   "real": true,
+   "rate": 1,
+   "_dup": 1
+  },
+  {
+   "t": 907.024,
+   "dur": 3.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 55,
+   "lugar": "avatar"
+  },
+  {
+   "t": 910.404,
+   "dur": 3.44,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g50.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 913.844,
+   "dur": 3.18,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g30.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 917.024,
+   "dur": 3.9,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g62.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 920.924,
+   "dur": 3.62,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g54.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 924.544,
+   "dur": 5.66,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 56,
+   "lugar": "avatar"
+  },
+  {
+   "t": 930.204,
+   "dur": 10.66,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 36,
+    "unit": "million dead",
+    "label": "YANG JISHENG'S COUNT · TOMBSTONE",
+    "compare": "His book is banned in China to this day.",
+    "source": "Yang Jisheng, Tombstone (2008)",
+    "photo": "img/rdsparrows_a57_book_plain.jpg",
+    "at": 932.78,
+    "compareAt": 935.24
+   },
+   "bed": "img/rdsparrows_r10_wheat_heads_blur.jpg"
+  },
+  {
+   "t": 940.864,
+   "dur": 3.98,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 57,
+   "lugar": "avatar"
+  },
+  {
+   "t": 944.844,
+   "dur": 5.1,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "THE NUMBER",
+    "sub": "",
+    "part": "PART 5",
+    "stamp": "",
+    "typeAt": 944.94
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 949.944,
+   "dur": 2.3,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 5",
+    "part": "THE NUMBER"
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 952.244,
+   "dur": 4.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 58,
+   "lugar": "avatar"
+  },
+  {
+   "t": 956.484,
+   "dur": 8.96,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/rdsparrows_a55_village_house_door.jpg",
+    "yearFrom": 1959,
+    "yearTo": 1961,
+    "popFrom": 0,
+    "popTo": 30000000,
+    "unit": "deaths",
+    "label": "EXCESS DEATHS IN CHINA · 1959-1961",
+    "from": 956.48,
+    "to": 965.44,
+    "marks": [
+     {
+      "year": 1959,
+      "note": "famine begins"
+     },
+     {
+      "year": 1961,
+      "note": "≈ 30 million"
+     }
+    ],
+    "source": "Sources: Banister 1987 · Ashton et al. 1984"
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 965.444,
+   "dur": 4.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 59,
+   "lugar": "avatar"
+  },
+  {
+   "t": 969.784,
+   "dur": 4.32,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r15_old_photo.jpg"
+  },
+  {
+   "t": 974.104,
+   "dur": 4.56,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g55.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 978.664,
+   "dur": 5.64,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 60,
+   "lugar": "avatar"
+  },
+  {
+   "t": 984.304,
+   "dur": 4.0,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g49.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 988.304,
+   "dur": 4.48,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r32_coffee_think.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 992.784,
+   "dur": 4.08,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_s07_04.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 996.864,
+   "dur": 5.78,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 61,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1002.644,
+   "dur": 2.94,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s04_01.mp4",
+   "rate": 1.0,
+   "real": true
+  },
+  {
+   "t": 1005.584,
+   "dur": 3.7,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a11_sparrow_grain.mp4",
+   "rate": 0.797
+  },
+  {
+   "t": 1009.284,
+   "dur": 2.98,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r10_wheat_heads.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1012.264,
+   "dur": 5.672,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 62,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1017.936,
+   "dur": 7.56,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "million extra deaths",
+    "label": "LINKED TO THE SPARROW CAMPAIGN ALONE",
+    "compare": "About 1 death in 15.",
+    "source": "NBER Working Paper 34087 (2025)",
+    "photo": "img/rdsparrows_a71_wheat_field_today.jpg",
+    "at": 1017.94,
+    "compareAt": 1019.36
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 1025.496,
+   "dur": 3.34,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g35.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1028.836,
+   "dur": 3.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 63,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1032.376,
+   "dur": 3.92,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g42.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1036.296,
+   "dur": 4.28,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r04_seed_palm.jpg"
+  },
+  {
+   "t": 1040.576,
+   "dur": 4.08,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g47.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1044.656,
+   "dur": 4.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 64,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1048.936,
+   "dur": 2.9,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g22.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1051.836,
+   "dur": 2.78,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_un11.mp4",
+   "rate": 0.918,
+   "_dup": 1
+  },
+  {
+   "t": 1054.616,
+   "dur": 4.44,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "WHO'S STILL PAYING",
+    "sub": "",
+    "part": "PART 6",
+    "stamp": "",
+    "typeAt": 1054.72
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 1059.056,
+   "dur": 4.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 65,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1063.256,
+   "dur": 0.04,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 6",
+    "part": "WHO'S STILL PAYING"
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 1063.296,
+   "dur": 2.4,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp19.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1065.696,
+   "dur": 8.96,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "BigStat",
+   "props": {
+    "value": 80,
+    "unit": "%",
+    "label": "DROP IN BIRTHS · WUHU, ANHUI · 1959-1960",
+    "compare": "Babies carried through the hunger: 2× the schizophrenia risk.",
+    "source": "St Clair et al., JAMA (2005)",
+    "photo": "img/rdsparrows_a59_cradle_empty.jpg",
+    "at": 1067.44,
+    "compareAt": 1076.58
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 1074.656,
+   "dur": 3.14,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g31.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1077.796,
+   "dur": 3.06,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r42_typewriter.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1080.856,
+   "dur": 3.68,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 66,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1084.536,
+   "dur": 3.62,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1088.156,
+   "dur": 3.82,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r36_baby_photo.jpg"
+  },
+  {
+   "t": 1091.976,
+   "dur": 3.4,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r26_calendar.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1095.376,
+   "dur": 5.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 67,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1101.076,
+   "dur": 2.84,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1103.916,
+   "dur": 3.38,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r47_sparrow_fence.jpg"
+  },
+  {
+   "t": 1107.296,
+   "dur": 3.42,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f05.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1110.716,
+   "dur": 3.06,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_s06_04.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1113.776,
+   "dur": 3.72,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 68,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1117.496,
+   "dur": 3.5,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g67.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1120.996,
+   "dur": 3.28,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_a61_cowshed.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1124.276,
+   "dur": 3.58,
+   "sec": "S7",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r27_shed_sweep.jpg"
+  },
+  {
+   "t": 1127.856,
+   "dur": 6.46,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/rdsparrows_a44_mountain_pavilion.jpg",
+    "rightImg": "img/rdsparrows_a62_broom_toilet.jpg",
+    "leftHead": "WRONG",
+    "rightHead": "RIGHT",
+    "leftText": "Blamed the weather",
+    "rightText": "Cleaned the toilets",
+    "stamp": "WHO PAID",
+    "leftAt": 1127.86,
+    "rightAt": 1131.16
+   },
+   "bed": "img/rdsparrows_r23_ledger_blur.jpg"
+  },
+  {
+   "t": 1134.316,
+   "dur": 3.78,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 69,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1138.096,
+   "dur": 4.3,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_bp05.mp4",
+   "real": true,
+   "rate": 0.921
+  },
+  {
+   "t": 1142.396,
+   "dur": 4.16,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un01.mp4",
+   "rate": 0.952,
+   "real": true
+  },
+  {
+   "t": 1146.556,
+   "dur": 5.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 70,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1152.256,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "WHAT WORKED",
+    "sub": "",
+    "part": "PART 7",
+    "stamp": "",
+    "typeAt": 1152.36
+   },
+   "bed": "img/rdsparrows_r28_bamboo_blur.jpg"
+  },
+  {
+   "t": 1156.456,
+   "dur": 2.36,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 7",
+    "part": "WHAT WORKED"
+   },
+   "bed": "img/rdsparrows_r28_bamboo_blur.jpg"
+  },
+  {
+   "t": 1158.816,
+   "dur": 5.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 71,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1164.316,
+   "dur": 3.16,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_s04_05.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1167.476,
+   "dur": 3.08,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_un12.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 1170.556,
+   "dur": 3.22,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a01_sparrow_roof.mp4",
+   "real": false,
+   "rate": 0.937
+  },
+  {
+   "t": 1173.776,
+   "dur": 4.14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 72,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1177.916,
+   "dur": 2.98,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a64_sparrows_return.mp4",
+   "rate": 0.811
+  },
+  {
+   "t": 1180.896,
+   "dur": 3.88,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g39.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1184.776,
+   "dur": 3.32,
+   "sec": "S8",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r24_radio.jpg"
+  },
+  {
+   "t": 1188.096,
+   "dur": 5.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 73,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1193.436,
+   "dur": 11.6,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/rdsparrows_map_china.jpg",
+    "pins": [
+     {
+      "x": 1322,
+      "y": 522,
+      "label": "XIAOGANG, ANHUI",
+      "year": "1978",
+      "at": 1197.52,
+      "zoom": 2.2
+     }
+    ],
+    "kicker": "CHINA",
+    "credit": "Map: CIA, China Administrative Divisions · Public domain · Wikimedia Commons"
+   },
+   "bed": "img/rdsparrows_r28_bamboo_blur.jpg"
+  },
+  {
+   "t": 1205.036,
+   "dur": 4.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 74,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1209.356,
+   "dur": 3.48,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_f12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1212.836,
+   "dur": 4.22,
+   "sec": "S8",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r29_sign_paper.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1217.056,
+   "dur": 3.98,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 75,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1221.036,
+   "dur": 2.88,
+   "sec": "S8",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r16_slingshot.jpg"
+  },
+  {
+   "t": 1223.916,
+   "dur": 2.9,
+   "sec": "S8",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r21_letters.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1226.816,
+   "dur": 13.2,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "If we are put in prison or executed, we will not complain. And the others in the group will raise our children to 18 years old.",
+    "who": "18 farmers, Xiaogang village",
+    "year": "1978",
+    "source": "Their secret contract, Xiaogang, Anhui province",
+    "at": 1226.82,
+    "until": 1237.54,
+    "highlight": "we will not complain",
+    "bed": "img/rdsparrows_a67_thumbprints.jpg"
+   },
+   "bed": "img/rdsparrows_r28_bamboo_blur.jpg"
+  },
+  {
+   "t": 1240.016,
+   "dur": 3.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 76,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1243.936,
+   "dur": 3.16,
+   "sec": "S8",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r45_pantry.jpg"
+  },
+  {
+   "t": 1247.096,
+   "dur": 3.3,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g61.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1250.396,
+   "dur": 3.56,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g21.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1253.956,
+   "dur": 3.18,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_un06.mp4",
+   "real": true,
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 1257.136,
+   "dur": 5.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 77,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1262.936,
+   "dur": 4.42,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "FILE Nº 04",
+    "title": "THE LESSON",
+    "sub": "",
+    "part": "PART 8",
+    "stamp": "",
+    "typeAt": 1263.04
+   },
+   "bed": "img/rdsparrows_r30_field_walk_blur.jpg"
+  },
+  {
+   "t": 1267.356,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "FILE 04 · PART 8",
+    "part": "THE LESSON"
+   },
+   "bed": "img/rdsparrows_r30_field_walk_blur.jpg"
+  },
+  {
+   "t": 1271.276,
+   "dur": 3.3,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r11_aphids.jpg"
+  },
+  {
+   "t": 1274.576,
+   "dur": 4.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 78,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1279.076,
+   "dur": 3.66,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r30_field_walk.jpg"
+  },
+  {
+   "t": 1282.736,
+   "dur": 2.94,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r44_gate.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1285.676,
+   "dur": 3.22,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a20_caterpillars_leaf.mp4",
+   "rate": 0.927
+  },
+  {
+   "t": 1288.896,
+   "dur": 3.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 79,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1292.476,
+   "dur": 4.12,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r37_porch.jpg"
+  },
+  {
+   "t": 1296.596,
+   "dur": 4.34,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r18_seed_tray.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 1300.936,
+   "dur": 4.04,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1304.976,
+   "dur": 3.98,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 80,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1308.956,
+   "dur": 3.72,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/rdsparrows_real/rdsparrows_g38.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 1312.676,
+   "dur": 3.66,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g13.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1316.336,
+   "dur": 3.5,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/rdsparrows_real/rdsparrows_g25.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1319.836,
+   "dur": 5.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 81,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1325.536,
+   "dur": 4.26,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r35_shake_head.jpg"
+  },
+  {
+   "t": 1329.796,
+   "dur": 3.82,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r14_folder_open.jpg"
+  },
+  {
+   "t": 1333.616,
+   "dur": 3.52,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/rdsparrows/rdsparrows_a25_bugle_dawn.mp4",
+   "_dup": 1,
+   "rate": 0.857
+  },
+  {
+   "t": 1337.136,
+   "dur": 4.14,
+   "sec": "S9",
+   "lugar": "ruth",
+   "kind": "imagen",
+   "asset": "img/rdsparrows_r46_closing_folder.jpg"
+  },
+  {
+   "t": 1341.276,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 82,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1345.076,
+   "dur": 10.092,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "05",
+    "label": "NEXT · FILE Nº 05",
+    "title": "FISHERMEN WOKE UP AND THE SEA WAS GONE",
+    "sub": "Who took it",
+    "part": "",
+    "stamp": "NEXT FILE",
+    "typeAt": 1345.08,
+    "stampAt": 1350.32
+   },
+   "bed": "img/rdsparrows_a75_aral_dry_tease_blur.jpg"
+  }
+ ]
+}
