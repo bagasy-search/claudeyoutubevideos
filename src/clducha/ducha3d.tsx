@@ -56,6 +56,9 @@ const Cam: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ---------------- páginas REALES de la guía (el render espera a que carguen) ----------------
+// libera cada espera UNA vez: la suelta Kick tras redibujar, o este respaldo si el mundo ya se desmontó (fin de un barrido)
+const libres = new Set<number>();
+const soltar = (h: number) => { if (!libres.has(h)) { libres.add(h); continueRender(h); } };
 const useImgTex = (ids: string[]) => {
   const [ready, bump] = useState(0);
   const r = useMemo(() => {
@@ -65,7 +68,7 @@ const useImgTex = (ids: string[]) => {
     let n = ids.length;
     for (const id of ids) {
       const flip = new THREE.Texture(); flip.center.set(0.5, 0.5); flip.rotation = Math.PI; flip.colorSpace = THREE.SRGBColorSpace; flip.anisotropy = 16;
-      const tx = L.load(staticFile(P + id + ".jpg"), (tt) => { flip.image = tt.image; flip.needsUpdate = true; if (--n === 0) bump(h); }, undefined, () => { if (--n === 0) bump(h); });
+      const tx = L.load(staticFile(P + id + ".jpg"), (tt) => { flip.image = tt.image; flip.needsUpdate = true; if (--n === 0) { bump(h); setTimeout(() => soltar(h), 1500); } }, undefined, () => { if (--n === 0) soltar(h); });
       tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 16; r[id] = tx; r[id + "_r"] = flip;
     }
     return r;
@@ -75,7 +78,7 @@ const useImgTex = (ids: string[]) => {
 // dentro del lienzo: cuando llegan las páginas redibuja ESTE cuadro (ThreeCanvas sólo avanza al cambiar de cuadro) y recién ahí suelta el render
 const Kick: React.FC<{ h: number }> = ({ h }) => {
   const { advance } = useThree();
-  React.useLayoutEffect(() => { if (!h) return; advance(performance.now()); requestAnimationFrame(() => requestAnimationFrame(() => continueRender(h))); }, [h]);
+  React.useLayoutEffect(() => { if (!h) return; advance(performance.now()); requestAnimationFrame(() => requestAnimationFrame(() => soltar(h))); }, [h]);
   return null;
 };
 
