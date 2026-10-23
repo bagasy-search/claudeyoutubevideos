@@ -212,7 +212,7 @@ const B: Beat[] = [
   AR(434.49, 6.7, near(0), near2(0), "whip", [1, 0.25, 0.25]), IM(441.18, "r_wellpump", "push"),
   AR(451.1, 3.5, near(1, -1), near2(1, -1), "flip", [0.25, 1, 0.25]), IM(454.62, "r_fridgestation", "zoom", [960, 540]),
   IM(464.66, "r_jacket", "whipL"), AR(469.66, 5.2, near(2), near2(2), "zoom", [0.25, 0.25, 1]), IM(474.84, "r_battery", "push"),
-  IM(482.18, "r_dead", "whip"), DK(489.08, "light", "#1d1408"),
+  IM(482.18, "r_dead", "whip"), DK(489.75, "light", "#1d1408"),
   IM(497.37, "r_hood", "zoom", [960, 500]), IM(503.78, "r_wheels", "push"),
   AR(514.25, 13.2, WIDE2, WIDE, "flip", [1, 1, 1], 0),
   // ===== lo que compraría =====
@@ -225,7 +225,7 @@ const B: Beat[] = [
   IM(633.27, "r_family", "light"), IM(639.0, "r_phones", "push"),
   IM(650.64, "r_milk", "whip"), IM(655.26, "r_bench", "zoom", [960, 560]),
   // ===== los 6 pasos =====
-  IM(667.78, "r_outlets", "push"), IM(672.36, "r_smallbank", "whip"), DK(676.28, "flip", "#0d1a12"),
+  IM(667.78, "r_outlets", "push"), IM(672.36, "r_smallbank", "whip"), DK(678.1, "flip", "#0d1a12"),
   DK(682.92, "light", "#121212"), IM(692.42, "r_station2", "whipL"),
   IM(697.75, "r_inverter", "zoom", [960, 540]),
   DK(714.8, "push", "#0a0f0c"),
@@ -429,8 +429,8 @@ const pieces = (t: number) => [
   <Words key="oc" t={t} items={[{ at: 896.1, txt: "OPEN ONCE." }, { at: 897.6, txt: "CLOSE IT.", col: "#5ee38f" }]} out={899.7} y={180} size={96} />,
   // la cuenta final
   <Words key="fmc" t={t} items={[{ at: 899.9, txt: "THE FINAL" }, { at: 900.6, txt: "MONEY COUNT", col: COL.amber }]} out={901.9} y={540} size={120} />,
-  <Bill key="gway" t={t} title="THE GENERATOR WAY" x={1170} y={110} rot={-12} rows={[{ at: 906.6, item: "GENERATOR", val: "$550" }, { at: 908.8, item: "GAS · 3 DAYS", val: "$100" }, { at: 911.6, item: "CANS + STABILIZER", val: "$30" }, { at: 913.4, item: "HEAVY CORD", val: "$50" }, { at: 914.8, item: "2 CO ALARMS", val: "$50" }, { at: 918.4, item: "HOUSE HOOKUP", val: "$500-1,000" }]} total={{ at: 923.1, txt: "$700-1,700" }} out={928.7} />,
-  <Words key="gs" t={t} items={[{ at: 925.6, txt: "+ GAS STORED ALL YEAR", col: COL.red }]} out={928.7} y={900} size={64} />,
+  <Bill key="gway" t={t} title="THE GENERATOR WAY" x={1170} y={110} rot={-12} rows={[{ at: 906.6, item: "GENERATOR", val: "$550" }, { at: 908.8, item: "GAS · 3 DAYS", val: "$100" }, { at: 911.6, item: "CANS + STABILIZER", val: "$30" }, { at: 913.4, item: "HEAVY CORD", val: "$50" }, { at: 914.8, item: "2 CO ALARMS", val: "$50" }, { at: 918.4, item: "HOUSE HOOKUP", val: "$500-1,000" }]} total={{ at: 923.1, txt: "$700-1,700" }} out={929.8} />,
+  <Words key="gs" t={t} items={[{ at: 925.6, txt: "+ GAS STORED ALL YEAR", col: COL.red }]} out={929.8} y={900} size={64} />,
   <Bill key="myw" t={t} title="MY WAY" x={1170} y={150} rot={-12} rows={[{ at: 929.9, item: "POWER STATION", val: "$450" }, { at: 932.4, item: "INVERTER + CABLES", val: "$100" }, { at: 936.4, item: "2 CO ALARMS", val: "$50" }, { at: 940.3, item: "GAS · 3 DAYS", val: "<$10" }]} total={{ at: 943.1, txt: "~$600", col: "#2b7a3d" }} out={947.4} />,
   <Words key="box" t={t} items={[{ at: 945.0, txt: "+ A BOX IN THE CLOSET", col: "#5ee38f" }]} out={947.4} y={900} size={64} />,
   <Words key="cmp" t={t} items={[{ at: 947.6, txt: "NO BLACKOUT?" }, { at: 948.6, txt: "IT GOES CAMPING", col: "#5ee38f" }]} out={949.8} y={180} size={80} />,
