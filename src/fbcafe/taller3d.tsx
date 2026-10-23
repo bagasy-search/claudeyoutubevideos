@@ -3,7 +3,7 @@
 // LA TABLA: cemento que parece pino viejo, EN CORTE en la punta (se ven las capas). La cámara baja a la superficie y la veta
 // crece como un paisaje. Al costado, junto a la pileta, el deck de madera de verdad que se pudre en dos inviernos.
 // UNA escena y UNA cámara; eventos clavados a la voz (EV, segundos globales). Render SÓLO en el farm (acá sólo stills).
-import React, { useLayoutEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { staticFile, delayRender, continueRender } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
@@ -94,8 +94,11 @@ const useImgTex = (ids: string[]) => {
 const Warm: React.FC<{ tex: THREE.Texture[] }> = ({ tex }) => {
   const { gl, advance } = useThree();
   const h = useRef<number | null>(null);
-  if (h.current === null) h.current = delayRender("texturas en GPU", { timeoutInMilliseconds: 110000 });
-  const ready = tex.every((x) => x.image);
+  if (h.current === null) h.current = delayRender("texturas en GPU", { timeoutInMilliseconds: 170000 });
+  // con el runner cargado (swangle, 4 pestañas) una textura puede no llegar nunca: a los 80 s se sube lo que haya y se sigue
+  const [late, setLate] = useState(false);
+  useEffect(() => { const k = setTimeout(() => setLate(true), 80000); return () => clearTimeout(k); }, []);
+  const ready = late || tex.every((x) => x.image);
   // cuando llegan (aunque sea tarde, con la máquina cargada): subirlas y VOLVER A DIBUJAR la escena; el lienzo
   // sólo se dibuja al cambiar de cuadro, así que sin este advance el cuadro queda con las texturas en negro
   useLayoutEffect(() => {
