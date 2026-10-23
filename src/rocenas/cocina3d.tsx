@@ -8,6 +8,7 @@ import React, { useMemo, useState } from "react";
 import { delayRender, continueRender } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
+import { manoCam } from "../kits/camara/CamaraMano";
 import * as THREE from "three";
 import { Post, rbox } from "./fx3d";
 import { HAND, handReady } from "./lib";
@@ -45,18 +46,22 @@ export type Key = { t: number; p: V; l: V; fov?: number; arc?: number };
 let KEYS: Key[] = [];
 export const setKeys = (k: Key[]) => { KEYS = [...KEYS.filter((x) => !k.some((y) => Math.abs(y.t - x.t) < 1e-6)), ...k].sort((a, b) => a.t - b.t); };
 export const camAt = (t: number) => {
-  if (!KEYS.length) return { p: v3([1.6, 1.7, 2.6]), l: v3([0, 0.8, -0.4]), fov: 40 };
+  if (!KEYS.length) return { p: v3([1.6, 1.7, 2.6]), l: v3([0, 0.8, -0.4]), fov: 40, t };
   let i = 0;
   while (i < KEYS.length - 1 && KEYS[i + 1].t <= t) i++;
   const a = KEYS[i], b = KEYS[Math.min(i + 1, KEYS.length - 1)];
   const k = b.t > a.t ? ease((t - a.t) / (b.t - a.t)) : 0;
   const p = v3(a.p).lerp(v3(b.p), k), l = v3(a.l).lerp(v3(b.l), k);
   if (b.arc) p.y += Math.sin(Math.PI * k) * b.arc;
-  p.x += Math.sin(t * 0.53) * 0.008; p.y += Math.sin(t * 0.71 + 1) * 0.006; // respiración de cámara en mano, muy suave
-  return { p, l, fov: lerp(a.fov ?? 38, b.fov ?? 38, k) };
+  return { p, l, fov: lerp(a.fov ?? 38, b.fov ?? 38, k), t };
 };
-export const project = (cm: { p: THREE.Vector3; l: THREE.Vector3; fov: number }, q: THREE.Vector3) => {
-  const cam = new THREE.PerspectiveCamera(cm.fov, W / H, 0.02, 400); cam.position.copy(cm.p); cam.lookAt(cm.l); cam.updateMatrixWorld(); cam.updateProjectionMatrix();
+// cámara a mano virtual (vara 23-oct): balanceo lento sobre la cámara 3D, también en project() para que los anclajes sigan pegados
+const aim = (cam: THREE.PerspectiveCamera, k: { p: THREE.Vector3; l: THREE.Vector3; t?: number }) => {
+  cam.position.copy(k.p); cam.up.set(0, 1, 0); cam.lookAt(k.l);
+  if (k.t !== undefined) { const m = manoCam(k.t); const D = Math.PI / 180; cam.rotateY(m.pan * D); cam.rotateX(m.tilt * D); cam.rotateZ(m.roll * D); }
+};
+export const project = (cm: { p: THREE.Vector3; l: THREE.Vector3; fov: number; t?: number }, q: THREE.Vector3) => {
+  const cam = new THREE.PerspectiveCamera(cm.fov, W / H, 0.02, 400); aim(cam, cm); cam.updateMatrixWorld(); cam.updateProjectionMatrix();
   const v = q.clone().project(cam); return { x: (v.x * 0.5 + 0.5) * W, y: (-v.y * 0.5 + 0.5) * H };
 };
 export const screenOf = (t: number, q: V) => project(camAt(t), v3(q));
@@ -69,7 +74,7 @@ export const camSpeed = (t: number) => {
 const Cam: React.FC<{ t: number }> = ({ t }) => {
   const { camera } = useThree(); const cm = camera as THREE.PerspectiveCamera;
   const k = camAt(t);
-  cm.position.copy(k.p); cm.up.set(0, 1, 0); cm.lookAt(k.l); cm.fov = k.fov; cm.near = 0.02; cm.far = 400; cm.updateProjectionMatrix();
+  aim(cm, k); cm.fov = k.fov; cm.near = 0.02; cm.far = 400; cm.updateProjectionMatrix();
   return null;
 };
 

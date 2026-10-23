@@ -4,6 +4,7 @@
 // (de a 10 centavos) con lo que cuesta. Entre mundo y toma real sólo portales y vapor; el avatar entra en sus ventanas.
 // Cada pieza nace con la palabra que la nombra (at("frase")). Las 25 cenas se arman solas desde la tabla DIN.
 import React from "react";
+import { CamaraMano } from "../kits/camara/CamaraMano";
 import { AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { World as WorldRaw, WorldProps, PT, Dish, Page, screenOf, camSpeed, setKeys, win, Key } from "./cocina3d";
 import AVW from "./avwin.json";
@@ -323,17 +324,17 @@ export const Main: React.FC = () => {
   const f = useCurrentFrame(), t = f / 30;
   const L: React.ReactNode[] = [];
   const idx = PARTS.findIndex((p) => t >= p.a && t < p.b);
-  if (inAv(t) || idx < 0) L.push(<Avatar key="av" t={t} />);
+  if (inAv(t) || idx < 0) L.push(<CamaraMano key="av"><Avatar t={t} /></CamaraMano>);
   else {
     const p = PARTS[idx], nx = PARTS[idx + 1];
     if (p.c) {
       const portaled = idx > 0 && PARTS[idx - 1].pt && Math.abs(PARTS[idx - 1].b - p.a) < 1e-6;
-      L.push(<Clip key={"c" + idx} k={p.c} t={t} a={portaled ? p.a - 0.7 : p.a} o={p.o} z={p.z} />);
+      L.push(<CamaraMano key={"c" + idx}><Clip k={p.c} t={t} a={portaled ? p.a - 0.7 : p.a} o={p.o} z={p.z} /></CamaraMano>);
     } else {
       L.push(<World key="w" t={t} />);
       if (p.pt && nx?.c && Math.abs(nx.a - p.b) < 1e-6) {
         const r = ei(t, p.b - 0.7, p.b);
-        if (r > 0) { const q = sc(t, p.pt); L.push(<Portal key="pt" x={q.x} y={q.y} r={r}><Clip k={nx.c} t={t} a={p.b - 0.7} o={nx.o} z={nx.z} /></Portal>); }
+        if (r > 0) { const q = sc(t, p.pt); L.push(<Portal key="pt" x={q.x} y={q.y} r={r}><CamaraMano><Clip k={nx.c} t={t} a={p.b - 0.7} o={nx.o} z={nx.z} /></CamaraMano></Portal>); }
       }
     }
   }
