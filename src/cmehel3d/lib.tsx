@@ -48,7 +48,7 @@ export const Take: React.FC<{ k: string; a: number; from?: number; z?: [number, 
   const t = useCurrentFrame() / FPS, sc = z[0] + (z[1] - z[0]) * e(t, a, a + dur);
   const inner = HAS.clips.includes(k)
     ? <Sequence from={s(a)} layout="none"><OffthreadVideo src={staticFile(P + "ltx/" + k + ".mp4")} startFrom={s(from)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></Sequence>
-    : <Img src={staticFile(P + "ff/" + k + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
+    : <Img src={staticFile(P + "ff/" + k.replace(/_s\d+$/, "") + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
   return <AbsoluteFill style={{ transform: `scale(${sc})` }}>{inner}</AbsoluteFill>;
 };
 

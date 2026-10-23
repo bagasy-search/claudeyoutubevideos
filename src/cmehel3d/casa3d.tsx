@@ -2,11 +2,13 @@
 // (cocina con el refrigerador). En la entrada, su auto con el cofre abierto: la batería es un TANQUE de vidrio cuyo nivel
 // baja y sube (carga = líquido), y de ahí sale el cable naranja como un río de luz hasta el refrigerador.
 // UNA escena y UNA cámara para todo el video; el día y la noche giran sobre la misma cuadra. Render SÓLO en el farm.
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import { continueRender, delayRender, staticFile } from "remotion";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { Post, useTextures, rbox } from "../cme3d01/fx3d";
+import { Book } from "../cme3d01/barrio3d";
 
 export const FPS = 30, W = 1920, H = 1080;
 const cl = (x: number) => Math.max(0, Math.min(1, x));
@@ -28,6 +30,10 @@ export const PT = {
   car: [1.4, 0.8, 5.6] as [number, number, number],
   plug: [2.55, 0.3, -1.5] as [number, number, number],
   table: [-0.9, 0.8, -1.2] as [number, number, number],
+  book: [-0.85, 0.79, -0.95] as [number, number, number],
+  alt: [2.75, 0.98, 5.95] as [number, number, number],
+  exhaust: [-0.75, 0.3, 6.1] as [number, number, number],
+  door: [2.6, 1.0, -1.48] as [number, number, number],
 };
 
 // ---------------- CÁMARA (claves en segundos de la voz) ----------------
@@ -84,13 +90,85 @@ const Cam: React.FC<{ t: number }> = ({ t }) => {
   return null;
 };
 
+// el resto del video agrega sus claves (Rest.tsx) antes de renderizar: la misma cámara sigue viajando
+export const addKeys = (ks: Key[]) => { KEYS.push(...ks); KEYS.sort((a, b) => a.t - b.t); };
+
 // ---------------- estado del relato (segundos de la voz) ----------------
-// el día: 0 = noche, 1 = día. "tres días seguidos" (40,2-42,6): el cielo gira tres veces sobre la misma cuadra
-export const dayAt = (t: number) => (t > 40.1 && t < 42.7 ? 0.5 - 0.5 * Math.cos(((t - 40.1) / 2.6) * Math.PI * 6) : 0);
-// nivel del tanque (carga de la batería del auto): lleno; la prueba vieja de 3 h 08 lo vacía hasta 11,8 V (56,5-63,8)
-export const levelAt = (t: number) => (t < 56.4 ? 1 : t < 65.5 ? 1 - 0.85 * win(t, 57.0, 63.6) : 1);
-// el refrigerador andando (el río de luz corre)
-const fridgeOn = (t: number) => (t > 19.5 ? 1 : 0);
+// el día: 0 = noche, 1 = día. "tres días seguidos" (40,2-42,6): el cielo gira tres veces sobre la misma cuadra.
+// La prueba: día 1 desde las 7 (424), 7 de la noche (514-518, se ve), mañana siguiente (524), día 2 a la noche (690),
+// día 3 (707), vuelve la luz a las 6 y 10 de la tarde: atardecer (757). Los saltos quedan tapados por el avatar.
+export const dayAt = (t: number) => {
+  if (t < 65.5) return t > 40.1 && t < 42.7 ? 0.5 - 0.5 * Math.cos(((t - 40.1) / 2.6) * Math.PI * 6) : 0;
+  return win(t, 423.5, 425) - win(t, 514.5, 518.5) + win(t, 523.5, 525) - win(t, 689.5, 691) + win(t, 706.5, 708) - 0.7 * win(t, 756.5, 758);
+};
+// nivel del tanque (carga): 12,63 lleno → 12,10 la mitad (día 1) → carga 12,48 → 12,02 la línea roja (día 2) → carga 12,52 → 12,05 (día 3)
+export const levelAt = (t: number) => {
+  if (t < 65.5) return t < 56.4 ? 1 : 1 - 0.85 * win(t, 57.0, 63.6);
+  return 1 - 0.5 * win(t, 527.6, 530.4) + 0.38 * win(t, 639.6, 650.5) - 0.56 * win(t, 700.0, 705.2) + 0.58 * win(t, 730.5, 736.5) - 0.56 * win(t, 744.0, 752.0);
+};
+// el refrigerador enchufado (el río de luz corre); se corta mientras el auto carga con el inversor apagado
+const fridgeOn = (t: number) => (t > 19.5 && !(t > 583.5 && t < 660) && !(t > 728 && t < 738.3) ? 1 : 0);
+// motor en marcha (cargando con el alternador)
+export const engineAt = (t: number) => (t > 623.0 && t < 652.4) || (t > 728.6 && t < 738.3) ? 1 : 0;
+// el inversor: calor de las pérdidas (ámbar) y "frito" (chispas) si queda prendido al arrancar
+const invHeatAt = (t: number) => win(t, 463.0, 463.8) * (1 - win(t, 472.5, 473.5)) + win(t, 543.6, 544.4) * (1 - win(t, 552.5, 553.5));
+const fritoAt = (t: number) => (t > 598.4 && t < 602.3 ? 1 : 0);
+// refrigerador en rayos X: se ven las botellas de hielo (2 arriba, 4 en el congelador) y las bolsas de agua
+export const xrayAt = (t: number) => win(t, 315.6, 316.4) * (1 - win(t, 359.6, 360)) + win(t, 363.4, 364.2) * (1 - win(t, 366.6, 367.4));
+// la rotación de cada noche: las dos de arriba bajan, bajan dos duras (353,6 → 359)
+const swapAt = (t: number) => ei(t, 355.8, 358.9);
+// la casa de los vecinos vuelve a tener luz a las 6 y 10 de la tarde del día 3
+const backAt = (t: number) => win(t, 757.0, 760.5);
+// el plan de 72 h pegado con cinta en la puerta del refrigerador
+const tapedAt = (t: number) => (t > 945.0 ? 1 : 0);
+const ei = (t: number, a: number, b: number) => ease((t - a) / (b - a));
+
+// ---------------- la guía sobre la mesa (páginas REALES del Plan Apagón) ----------------
+const PG = ["g001", "g010", "g011", "g012", "g013", "g030", "g031", "g032", "g033", "g034", "g035"];
+// las páginas se bajan UNA vez por pestaña y el lienzo 3D se monta recién con todas listas: el lienzo no se redibuja
+// por un cambio de estado, así que una textura que llega tarde salía negra (1er cuadro de cada chunk)
+const PAGE_IMG: Record<string, HTMLImageElement> = {};
+let pagesP: Promise<void> | null = null;
+const loadPages = (ids: string[]) => pagesP ?? (pagesP = Promise.all(ids.map((id) => new Promise<void>((res) => {
+  const im = new Image(); im.onload = () => res(); im.onerror = () => res(); im.src = staticFile("cmehel3d/" + id + ".jpg"); PAGE_IMG[id] = im;
+}))).then(() => undefined));
+const pagesOk = (ids: string[]) => ids.every((id) => PAGE_IMG[id]?.complete && PAGE_IMG[id].naturalWidth > 0);
+const useImgTex = (ids: string[]): Record<string, THREE.Texture> | null => {
+  const [ok, setOk] = useState(() => pagesOk(ids));
+  const [h] = useState(() => (pagesOk(ids) ? null : delayRender("paginas guia")));
+  useEffect(() => {
+    if (ok || h === null) return;
+    loadPages(ids).then(() => { setOk(true); requestAnimationFrame(() => requestAnimationFrame(() => continueRender(h))); });
+  }, []);
+  return useMemo(() => {
+    if (!ok) return null;
+    const r: Record<string, THREE.Texture> = {};
+    for (const id of ids) {
+      const img = PAGE_IMG[id];
+      const tx = new THREE.Texture(img); tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 16; tx.needsUpdate = true;
+      const flip = new THREE.Texture(img); flip.center.set(0.5, 0.5); flip.rotation = Math.PI; flip.colorSpace = THREE.SRGBColorSpace; flip.anisotropy = 16; flip.needsUpdate = true;
+      r[id] = tx; r[id + "_r"] = flip;
+    }
+    return r;
+  }, [ok]);
+};
+// qué muestra el libro en cada momento: pág. 13 (la cuenta), pág. 11 (los bloques), pág. 30-35 (el plan de 72 h)
+const bookState = (t: number, pg: Record<string, THREE.Texture>) => {
+  const fl = (a: number) => ei(t, a, a + 0.55);
+  if (t > 925) {
+    const f1 = fl(937.2), f2 = fl(938.4);
+    return { open: ei(t, 934.0, 935.4) * (1 - ei(t, 952.0, 953.2)), inside: f2 >= 1 ? pg.g034_r : f1 >= 1 ? pg.g032_r : pg.g030_r, right: f2 >= 1 ? pg.g035 : f1 >= 1 ? pg.g033 : pg.g031,
+      flips: [{ k: f1, tex: [pg.g031, pg.g032] as [THREE.Texture, THREE.Texture] }, { k: f2, tex: [pg.g033, pg.g034] as [THREE.Texture, THREE.Texture] }] };
+  }
+  if (t > 370) return { open: ei(t, 379.0, 380.4) * (1 - ei(t, 400, 401)), inside: pg.g010_r, right: pg.g011, flips: [] };
+  return { open: ei(t, 86.7, 88.1) * (1 - ei(t, 121.6, 122.9)), inside: pg.g012_r, right: pg.g013, flips: [] };
+};
+// punto (u,v) de la página derecha a h metros del papel, en el mundo (para rótulos y resaltados)
+export const bookPt = (u: number, v: number, h = 0): [number, number, number] => {
+  const q = new THREE.Vector3(0.004 + (u - 0.5) * 0.29, 0.006 + 0.038 + 0.0005 + h, (v - 0.5) * 0.438).applyAxisAngle(new THREE.Vector3(0, 1, 0), BOOK_ROT);
+  return [PT.book[0] + q.x, PT.book[1] + q.y, PT.book[2] + q.z];
+};
+const BOOK_ROT = 0.08;
 
 // ---------------- piezas ----------------
 type Tx = THREE.Texture | undefined;
@@ -102,7 +180,7 @@ const Glow: React.FC<{ p: [number, number, number]; s: [number, number]; col: st
 );
 
 // casa de block de un piso, techo plano con pretil y tinaco; a oscuras (alguna vela)
-const House: React.FC<{ x: number; z: number; flip?: boolean; tint: string; i: number; block?: Tx; t: number; day: number }> = ({ x, z, flip, tint, i, block, t, day }) => {
+const House: React.FC<{ x: number; z: number; flip?: boolean; tint: string; i: number; block?: Tx; t: number; day: number; back?: number }> = ({ x, z, flip, tint, i, block, t, day, back = 0 }) => {
   const candle = i % 4 === 2 ? 0.25 + 0.08 * Math.sin(t * 11 + i) + 0.05 * Math.sin(t * 23) : 0;
   const h = 3.2;
   return (
@@ -117,7 +195,7 @@ const House: React.FC<{ x: number; z: number; flip?: boolean; tint: string; i: n
       {[-2.6, 2.1].map((wx, k) => (
         <group key={k} position={[wx, 1.7, 2.52]}>
           <Box p={[0, 0, -0.01]} s={[1.6, 1.3, 0.05]} c="#d9d2c4" r={0.9} rad={0.01} />
-          <Glow p={[0, 0, 0.02]} s={[1.4, 1.1]} col={k === 0 && candle ? "#ff9a3a" : "#8fa6c6"} o={k === 0 && candle ? candle : day * 0.35} />
+          <Glow p={[0, 0, 0.02]} s={[1.4, 1.1]} col={back > 0.02 ? "#ffd28a" : k === 0 && candle ? "#ff9a3a" : "#8fa6c6"} o={back > 0.02 ? Math.max(win(back, (i * 0.13 + k * 0.07) % 0.6, ((i * 0.13 + k * 0.07) % 0.6) + 0.3) * 0.95, day * 0.35) : k === 0 && candle ? candle : day * 0.35} />
           {[-0.45, 0, 0.45].map((bx) => <mesh key={bx} position={[bx, 0, 0.06]}><boxGeometry args={[0.03, 1.1, 0.03]} /><meshStandardMaterial color="#1b1b1b" metalness={0.6} roughness={0.5} /></mesh>)}
           {k === 0 && candle > 0 && <pointLight position={[0, 0, 0.8]} intensity={candle * 1.6} distance={3} color="#ff9a3a" />}
         </group>
@@ -127,15 +205,15 @@ const House: React.FC<{ x: number; z: number; flip?: boolean; tint: string; i: n
 };
 
 // el río de luz: cable naranja grueso con pulsos que viajan (corriente que va al refrigerador)
-const River: React.FC<{ pts: [number, number, number][]; on: number; t: number; r?: number }> = ({ pts, on, t, r = 0.022 }) => {
+const River: React.FC<{ pts: [number, number, number][]; on: number; t: number; r?: number; c?: string; ce?: string; sp?: number }> = ({ pts, on, t, r = 0.022, c = "#e2611b", ce = "#ff8a2a", sp = 0.32 }) => {
   const curve = useMemo(() => new THREE.CatmullRomCurve3(pts.map(v3)), [pts.map((p) => p.join()).join("|")]);
   const geo = useMemo(() => new THREE.TubeGeometry(curve, 120, r, 10, false), [curve, r]);
   const N = 9;
   return (
     <group>
-      <mesh geometry={geo} castShadow><meshStandardMaterial color="#e2611b" emissive="#ff8a2a" emissiveIntensity={0.35 + on * 0.9} roughness={0.55} toneMapped={false} /></mesh>
+      <mesh geometry={geo} castShadow><meshStandardMaterial color={c} emissive={ce} emissiveIntensity={0.35 + on * 0.9} roughness={0.55} toneMapped={false} /></mesh>
       {on > 0.02 && Array.from({ length: N }, (_, i) => {
-        const q = curve.getPoint(((t * 0.32 + i / N) % 1));
+        const q = curve.getPoint(((t * sp + i / N) % 1));
         return <mesh key={i} position={q}><sphereGeometry args={[r * 2.4, 12, 8]} /><meshBasicMaterial color="#fff1c4" toneMapped={false} transparent opacity={on * 0.95} /></mesh>;
       })}
     </group>
@@ -143,12 +221,18 @@ const River: React.FC<{ pts: [number, number, number][]; on: number; t: number; 
 };
 
 // el auto: sedán viejo plateado con el cofre abierto; la batería es un tanque de vidrio con el nivel de carga
-const Car: React.FC<{ t: number; level: number; lit: number }> = ({ t, level, lit }) => {
+const Car: React.FC<{ t: number; level: number; lit: number; eng: number }> = ({ t, level, lit, eng }) => {
   const col = level > 0.55 ? "#38ff7a" : level > 0.3 ? "#ffb257" : "#ff4a3d";
   const blink = level < 0.3 && Math.sin(t * 9) < 0 ? 0.35 : 1;
   const wob = Math.sin(t * 2.2) * 0.004 * level;
   return (
-    <group position={[1.4, 0, 5.6]}>
+    <group position={[1.4, eng * Math.sin(t * 61) * 0.0035, 5.6]}>
+      {/* motor en marcha: el alternador gira y el escape echa humo */}
+      <group position={[1.35, 0.98, 0.35]}>
+        <mesh rotation={[Math.PI / 2, 0, 0]}><cylinderGeometry args={[0.09, 0.09, 0.12, 18]} /><meshStandardMaterial color="#8a8f95" metalness={0.7} roughness={0.35} emissive="#38ff7a" emissiveIntensity={eng * 0.25} /></mesh>
+        <mesh position={[0, 0, 0.065]} rotation={[0, 0, t * 40 * eng]}><boxGeometry args={[0.16, 0.025, 0.01]} /><meshStandardMaterial color="#2a2d31" /></mesh>
+      </group>
+      {eng > 0 && Array.from({ length: 10 }, (_, k) => { const ph = (t * 0.6 + k / 10) % 1; return <mesh key={k} position={[-2.15 - ph * 1.3, 0.25 + ph * 0.9, 0.55 + Math.sin(t + k) * 0.1]}><sphereGeometry args={[0.07 + ph * 0.3, 10, 8]} /><meshStandardMaterial color="#9a9a9a" transparent opacity={0.32 * (1 - ph)} depthWrite={false} roughness={1} /></mesh>; })}
       {/* carrocería */}
       <Box p={[0, 0.62, 0]} s={[4.3, 0.62, 1.78]} c="#9aa1a8" r={0.32} m={0.55} rad={0.12} />
       <Box p={[-0.35, 1.18, 0]} s={[2.2, 0.55, 1.6]} c="#9aa1a8" r={0.32} m={0.55} rad={0.16} />
@@ -182,10 +266,15 @@ const Car: React.FC<{ t: number; level: number; lit: number }> = ({ t, level, li
 };
 
 // el inversor en el piso, sobre una tabla, al lado de la rueda
-const Inverter: React.FC<{ on: number; t: number }> = ({ on, t }) => (
+const Inverter: React.FC<{ on: number; t: number; heat: number; frito: number }> = ({ on, t, heat, frito }) => (
   <group position={[3.9, 0, 4.35]}>
     <Box p={[0, 0.03, 0]} s={[0.55, 0.05, 0.4]} c="#7a5a3a" r={0.9} />
-    <Box p={[0, 0.13, 0]} s={[0.36, 0.14, 0.24]} c="#b8bec4" r={0.35} m={0.6} />
+    <Box p={[0, 0.13, 0]} s={[0.36, 0.14, 0.24]} c="#b8bec4" r={0.35} m={0.6} e="#ff6a1a" ei={heat * (0.55 + 0.15 * Math.sin(t * 5))} />
+    {heat > 0.02 && <pointLight position={[0, 0.35, 0.2]} intensity={heat * 1.4} distance={1.6} color="#ff7a2a" />}
+    {heat > 0.02 && Array.from({ length: 7 }, (_, k) => { const ph = (t * 0.45 + k / 7) % 1; return <mesh key={"h" + k} position={[-0.14 + (k % 4) * 0.09 + Math.sin(t * 3 + k) * 0.02, 0.24 + ph * 0.5, -0.04 + (k % 2) * 0.08]}><sphereGeometry args={[0.03 + ph * 0.05, 10, 8]} /><meshBasicMaterial color="#ffb070" transparent opacity={heat * 0.28 * (1 - ph)} depthWrite={false} toneMapped={false} /></mesh>; })}
+    {frito > 0 && Array.from({ length: 16 }, (_, k) => { const ph = (t * 1.7 + rnd(k, 9)) % 1, a = rnd(k, 8) * 6.28; return <mesh key={"s" + k} position={[Math.cos(a) * ph * 0.35, 0.2 + ph * 0.32 - ph * ph * 0.4, Math.sin(a) * ph * 0.35]}><sphereGeometry args={[0.009, 6, 4]} /><meshBasicMaterial color="#fff2a8" toneMapped={false} transparent opacity={1 - ph} /></mesh>; })}
+    {frito > 0 && Array.from({ length: 6 }, (_, k) => { const ph = (t * 0.35 + k / 6) % 1; return <mesh key={"f" + k} position={[Math.sin(k * 2.1) * 0.05, 0.25 + ph * 0.9, Math.cos(k * 1.7) * 0.05]}><sphereGeometry args={[0.05 + ph * 0.14, 10, 8]} /><meshBasicMaterial color="#202020" transparent opacity={0.55 * (1 - ph)} depthWrite={false} /></mesh>; })}
+    {frito > 0 && <pointLight position={[0, 0.3, 0.1]} intensity={Math.sin(t * 37) > 0.2 ? 2.2 : 0.4} distance={2} color="#ffe08a" />}
     {Array.from({ length: 6 }, (_, k) => <mesh key={k} position={[-0.15 + k * 0.06, 0.205, 0]}><boxGeometry args={[0.012, 0.012, 0.22]} /><meshStandardMaterial color="#8a9096" metalness={0.6} /></mesh>)}
     <mesh position={[0.181, 0.15, 0.06]} rotation={[0, Math.PI / 2, 0]}><circleGeometry args={[0.012, 10]} /><meshBasicMaterial color={on ? (Math.sin(t * 4) > -0.8 ? "#38ff7a" : "#1d4a2a") : "#1d4a2a"} toneMapped={false} /></mesh>
   </group>
@@ -212,15 +301,48 @@ const Sky: React.FC<{ day: number; flake: THREE.Texture }> = ({ day, flake }) =>
   );
 };
 
+// refrigerador en rayos X: estantes, 2 botellas de hielo abajo (refrigerador) y 4 en el congelador (arriba);
+// la rotación de la noche cambia las 2 de abajo por 2 duras de arriba (sw 0→1)
+type V3 = [number, number, number];
+const Fridgeray: React.FC<{ xr: number; t: number; sw: number }> = ({ xr, t, sw }) => {
+  const shelf = (y: number) => <mesh position={[0, y, 0]}><boxGeometry args={[0.7, 0.012, 0.6]} /><meshStandardMaterial color="#cfe8ff" transparent opacity={0.35 * xr} roughness={0.2} /></mesh>;
+  const bottle = (k: string, p: V3, frozen: number) => (
+    <group key={k} position={p}>
+      <mesh><cylinderGeometry args={[0.055, 0.055, 0.26, 18]} /><meshStandardMaterial color={new THREE.Color("#3f8fe0").lerp(new THREE.Color("#eef8ff"), frozen)} emissive={new THREE.Color("#0e3a6a").lerp(new THREE.Color("#5f8fb0"), frozen)} emissiveIntensity={0.22 * xr} transparent opacity={0.92 * xr} roughness={0.25} /></mesh>
+      <mesh position={[0, 0.16, 0]}><cylinderGeometry args={[0.022, 0.03, 0.06, 12]} /><meshStandardMaterial color="#e8e8e8" transparent opacity={xr} /></mesh>
+    </group>
+  );
+  const mv = (a: V3, b: V3, k: number): V3 => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k + Math.sin(Math.PI * k) * 0.35];
+  const A0: V3 = [-0.17, 0.76, 0.05], B0: V3 = [0.05, 0.76, 0.05], C0: V3 = [-0.17, 1.4, 0.05], D0: V3 = [0.05, 1.4, 0.05];
+  const thaw = 0.15 + 0.85 * win(t, 359.5, 362);
+  return (
+    <group>
+      <mesh position={[0, 0.85, 0]}><boxGeometry args={[0.74, 1.66, 0.66]} /><meshStandardMaterial color="#0d1c2c" transparent opacity={0.55 * xr} side={THREE.BackSide} depthWrite={false} /></mesh>
+      {shelf(0.6)}{shelf(1.22)}{shelf(0.3)}
+      {bottle("a", mv(A0, C0, sw), thaw)}
+      {bottle("b", mv(B0, D0, sw), thaw)}
+      {bottle("c", mv(C0, A0, sw), 1)}
+      {bottle("d", mv(D0, B0, sw), 1)}
+      {bottle("e", [0.22, 1.4, 0.05], 1)}
+      {bottle("f", [-0.05, 1.4, -0.16], 1)}
+      <Box p={[0.22, 0.7, -0.05]} s={[0.12, 0.2, 0.08]} c="#f2f2f2" o={xr} />
+      <Box p={[-0.05, 1.33, -0.05]} s={[0.3, 0.08, 0.2]} c="#b5443a" o={xr} />
+      <pointLight position={[0, 1.0, 0.5]} intensity={0.22 * xr} distance={1.4} color="#bfe6ff" />
+    </group>
+  );
+};
+
 // ===================================================================================================
 export const World: React.FC<{ t: number }> = ({ t }) => {
   const tx = useTextures();
-  const day = dayAt(t), level = levelAt(t), on = fridgeOn(t);
+  const day = dayAt(t), level = levelAt(t), on = fridgeOn(t), xr = xrayAt(t), eng = engineAt(t);
+  const pgN = useImgTex(PG), pg: Record<string, THREE.Texture> = pgN ?? {}, bk = bookState(t, pg);
   const skyN = new THREE.Color("#070b14"), skyD = new THREE.Color("#8fa6c6");
   const sky = skyN.clone().lerp(skyD, day * 0.8);
   // el compresor: la caja tiembla apenas cuando arranca
   const kick = t > 24.4 && t < 25.4 ? Math.sin(t * 70) * 0.004 * (1 - win(t, 24.9, 25.4)) : 0;
   const river: [number, number, number][] = [[3.85, 0.2, 4.35], [3.4, 0.03, 3.6], [3.05, 0.03, 2.6], [2.85, 0.03, 1.2], [2.75, 0.03, -0.6], [2.6, 0.08, -1.5], [2.55, 0.3, -1.52]];
+  if (!pgN) return null;   // delayRender sostiene el cuadro hasta que están las páginas
   return (
     <ThreeCanvas width={W} height={H} shadows gl={{ antialias: true, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
       <Cam t={t} />
@@ -241,8 +363,8 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[1.0, 0.015, 4.9]} receiveShadow><planeGeometry args={[7.4, 4.6]} /><meshStandardMaterial color="#6f6c66" roughness={0.95} map={tx.concrete} /></mesh>
 
       {/* la cuadra apagada */}
-      {[-27, -18, -9, 9, 18, 27].map((x, i) => <House key={"a" + x} x={x} z={0} tint={["#d8cfbf", "#c9b9a1", "#b8c4c0", "#d9c3a5", "#c7c0b3", "#cfd2c6"][i]} i={i} block={tx.block} t={t} day={day} />)}
-      {[-22.5, -13.5, -4.5, 4.5, 13.5, 22.5].map((x, i) => <House key={"b" + x} x={x} z={17.0} flip tint={["#cdbfae", "#bcc8c4", "#d6c8b0", "#c3b8a6", "#d2cdbd", "#bfb5a5"][i]} i={i + 7} block={tx.block} t={t} day={day} />)}
+      {[-27, -18, -9, 9, 18, 27].map((x, i) => <House key={"a" + x} x={x} z={0} tint={["#d8cfbf", "#c9b9a1", "#b8c4c0", "#d9c3a5", "#c7c0b3", "#cfd2c6"][i]} i={i} block={tx.block} t={t} day={day} back={backAt(t)} />)}
+      {[-22.5, -13.5, -4.5, 4.5, 13.5, 22.5].map((x, i) => <House key={"b" + x} x={x} z={17.0} flip tint={["#cdbfae", "#bcc8c4", "#d6c8b0", "#c3b8a6", "#d2cdbd", "#bfb5a5"][i]} i={i + 7} block={tx.block} t={t} day={day} back={backAt(t)} />)}
       {/* postes apagados con cables */}
       {[-24, -12, 12, 24].map((x) => <mesh key={x} position={[x, 3.6, 3.6]} castShadow><cylinderGeometry args={[0.12, 0.16, 7.2, 10]} /><meshStandardMaterial color="#8e8a82" roughness={0.9} /></mesh>)}
       {[-1, 1].map((k) => <mesh key={k} position={[0, 7.0, 3.6 + k * 0.5]} rotation={[0, 0, Math.PI / 2]}><cylinderGeometry args={[0.012, 0.012, 200, 4]} /><meshStandardMaterial color="#111" /></mesh>)}
@@ -265,7 +387,12 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
         {[[-1.6, -0.5], [-0.2, -0.5], [-1.6, -1.3], [-0.2, -1.3]].map(([x, z], i) => <Box key={i} p={[x, 0.37, z]} s={[0.06, 0.74, 0.06]} c="#5f3f27" />)}
         {/* EL REFRIGERADOR: viejo, blanco, dos puertas, andando */}
         <group position={[2.6 + kick, 0, -1.85]}>
-          <Box p={[0, 0.85, 0]} s={[0.78, 1.7, 0.7]} c="#eceef0" r={0.35} m={0.08} rad={0.05} />
+          {xr < 0.98 && <Box p={[0, 0.85, 0]} s={[0.78, 1.7, 0.7]} c="#eceef0" r={0.35} m={0.08} rad={0.05} o={xr > 0.02 ? 1 - xr * 0.85 : undefined} />}
+          {xr > 0.02 && <Fridgeray xr={xr} t={t} sw={swapAt(t)} />}
+          {tapedAt(t) > 0 && pg.g030 && <group position={[-0.06, 0.82, 0.362]} rotation={[0, 0, -0.04]}>
+            <mesh><planeGeometry args={[0.3, 0.45]} /><meshStandardMaterial map={pg.g030} roughness={0.9} /></mesh>
+            {[[-0.1, 0.22, 0.3], [0.1, 0.22, -0.25]].map(([x, y, r], i) => <mesh key={i} position={[x, y, 0.002]} rotation={[0, 0, r]}><planeGeometry args={[0.09, 0.03]} /><meshStandardMaterial color="#e9e0c4" transparent opacity={0.75} roughness={0.5} /></mesh>)}
+          </group>}
           <mesh position={[0, 1.22, 0.355]}><boxGeometry args={[0.76, 0.012, 0.01]} /><meshStandardMaterial color="#9aa0a6" /></mesh>
           <mesh position={[0.3, 1.42, 0.37]}><boxGeometry args={[0.03, 0.26, 0.03]} /><meshStandardMaterial color="#888" metalness={0.7} /></mesh>
           <mesh position={[0.3, 0.92, 0.37]}><boxGeometry args={[0.03, 0.36, 0.03]} /><meshStandardMaterial color="#888" metalness={0.7} /></mesh>
@@ -282,8 +409,13 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
       </group>
 
       {/* la entrada: el auto, el inversor y el río de luz hasta el refrigerador */}
-      <Car t={t} level={level} lit={on} />
-      <Inverter on={on} t={t} />
+      <Car t={t} level={level} lit={on} eng={eng} />
+      {eng > 0 && <River pts={[[2.75, 1.0, 5.95], [2.92, 1.32, 5.85], [3.05, 1.5, 5.62]]} on={1} t={t} r={0.016} c="#1f9a4a" ce="#38ff7a" sp={0.9} />}
+      {/* la guía Plan Apagón sobre la mesa de la cocina */}
+      {/* luz de lectura sobre la guía abierta (sin sombra: el techo de la casa le tapaba la página derecha) */}
+      {bk.open > 0.01 && <pointLight position={[PT.book[0] - 0.1, PT.book[1] + 0.75, PT.book[2] + 0.25]} intensity={1.6 * bk.open} distance={2.2} decay={2} color="#ffe9cc" />}
+      {pg.g001 && <Book p={PT.book} rotY={BOOK_ROT} open={bk.open} cover={pg.g001} inside={bk.inside} right={bk.right} spine="#f28fc2" flips={bk.flips} />}
+      <Inverter on={on} t={t} heat={invHeatAt(t)} frito={fritoAt(t)} />
       <River pts={river} on={on} t={t} />
     </ThreeCanvas>
   );
