@@ -96,7 +96,7 @@ export const Min1Body: React.FC<{ t: number }> = ({ t }) => {
       <HeatHaze t={t} amt={e(t, A.carne, A.sudar + 1) * 0.55}>
         <Take k="h_carne" a={A.cocina} />
         <AbsoluteFill style={{ background: "radial-gradient(ellipse at 45% 50%, transparent 45%, rgba(0,0,0,.55) 100%)" }} />
-        <Tag t={t} at={A.carne} x={700} y={560} dx={-180} dy={170} text="LA CARNE DEL MES" col={COL.red} out={A.cuadra - 0.3} size={46} />
+        <Tag t={t} at={A.carne} x={720} y={620} dx={-40} dy={230} text="LA CARNE DEL MES" col={COL.red} out={A.cuadra - 0.3} size={46} />
         <Thermo t={t} at={A.cocina + 0.4} x={1600} y={470} from={4} to={11} dur={A.sudar - A.cocina} out={A.cuadra - 0.3} />
       </HeatHaze>} cur={<Avatar t={t} />} />);
   }
@@ -154,7 +154,7 @@ export const Min1Body: React.FC<{ t: number }> = ({ t }) => {
       <Take k="c_tester" a={A.medi} z={[1.0, 1.04]} />
       <Lcd t={t} at={A.medi + 0.6} out={A.noche - 0.1} v="12,63" x={1560} y={230} label="DÍA 1 · 6:00" />
       <Lcd t={t} at={A.noche} out={A.pero - 0.2} v="12,10" x={1560} y={230} label="DÍA 1 · 24 H" col="#ffd36a" />
-      <Head t={t} at={A.medi + 0.2} out={A.pero - 0.2} text="LO MEDÍ" y={880} size={64} col={COL.ink} />
+      <Head t={t} at={A.medi + 0.2} out={A.pero - 0.2} text="LO MEDÍ" y={70} size={64} col={COL.ink} />
     </>} cur={<Avatar t={t} />} dir={1} />);
   }
   // ===== L · pero → sola · avatar + rótulo "un tipo con una pinza en la mano" =====

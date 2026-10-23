@@ -273,7 +273,6 @@ export const World: React.FC<{ t: number }> = ({ t }) => {
           {/* imanes y una foto pegada */}
           {[[-0.15, 0.8, "#c62828"], [0.05, 1.0, "#2a62c9"], [-0.05, 0.65, "#f0b400"]].map(([x, y, c], i) => <mesh key={i} position={[x as number, y as number, 0.36]}><circleGeometry args={[0.025, 12]} /><meshStandardMaterial color={c as string} /></mesh>)}
           <mesh position={[-0.12, 0.9, 0.358]} rotation={[0, 0, 0.08]}><planeGeometry args={[0.14, 0.1]} /><meshStandardMaterial color="#d8c9a8" /></mesh>
-          {on > 0 && <pointLight position={[0, 0.2, 0.5]} intensity={0.5} distance={1.2} color="#7fd6ff" />}
         </group>
         {/* el foco del techo: la única luz de la cuadra */}
         <mesh position={PT.bulb}><sphereGeometry args={[0.07, 14, 10]} /><meshBasicMaterial color={new THREE.Color("#2a2a2a").lerp(new THREE.Color("#fff3d0"), 1)} toneMapped={false} /></mesh>
