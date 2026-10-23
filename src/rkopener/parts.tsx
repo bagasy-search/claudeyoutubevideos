@@ -224,7 +224,7 @@ export const Comment: React.FC<{ t: number; at: number; out: number; reply: numb
   const q = "Was there a remote on your visor? Be honest.", n = Math.round(q.length * e(t, a0 + 0.3, a0 + 2.4));
   const rs = ["yes… two of them 😬", "it's on my key ring now", "never thought about the door from the garage"];
   return (
-    <div style={{ position: "absolute", left: 360, top: 170, width: 1200, opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px)`, fontFamily: FONT }}>
+    <div style={{ position: "absolute", left: 60, top: 600, width: 820, opacity: o, transform: `translateY(${(1 - Math.min(1, k)) * 120}px)`, fontFamily: FONT }}>
       <div style={{ padding: "34px 44px", borderRadius: 28, background: "rgba(250,248,242,.97)", boxShadow: "0 40px 80px rgba(0,0,0,.6)" }}>
         <div style={{ fontWeight: 900, fontSize: 30, color: "#b03a2e", letterSpacing: 3 }}>💬 TELL ME IN THE COMMENTS</div>
         <div style={{ fontWeight: 800, fontSize: 56, color: "#1d2733", marginTop: 14, lineHeight: 1.2, minHeight: 140 }}>{q.slice(0, n)}<span style={{ opacity: Math.sin(t * 9) > 0 ? 1 : 0 }}>|</span></div>
