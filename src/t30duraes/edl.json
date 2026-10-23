@@ -2569,12 +2569,17 @@
 "o": {
 "build": {
 "lines": [
-"Alguien",
-"*SE NEGÓ.*"
+"no desaparecieron *solos.*"
 ],
-"y": 340,
-"size": 110,
-"a": 142
+"a": 4,
+"y": 170,
+"size": 90
+},
+"big": {
+"w": "SE NEGÓ.",
+"size": 230,
+"y": 430,
+"a": 152
 }
 }
 },

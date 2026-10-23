@@ -75,6 +75,12 @@ export const Aside: React.FC<{ a: number; t: string; x: number; y: number }> = (
 const Credit: React.FC<{ t?: string }> = ({ t }) => t ? <div style={{ position: "absolute", right: 30, bottom: 22, fontFamily: F, fontWeight: 700, fontSize: 20, color: "rgba(240,235,229,.62)", textShadow: "0 1px 4px #000" }}>{t}</div> : null;
 const Vig: React.FC<{ k?: number }> = ({ k = 0.62 }) => <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 50%, transparent 50%, rgba(0,0,0,${k}) 100%)` }} />;
 
+// brasas que suben lentas: que ninguna tarjeta quede quieta (el QC del farm marca congelado)
+export const Embers: React.FC<{ n?: number; c?: string }> = ({ n = 34, c = "255,170,90" }) => {
+  const f = useCurrentFrame();
+  return <>{Array.from({ length: n }).map((_, i) => { const ph = (f / (240 + rnd(i, 11) * 200) + rnd(i, 12)) % 1; const x = rnd(i, 13) * 1920 + Math.sin(f / 40 + i) * 30; const r = 3 + rnd(i, 14) * 5;
+    return <div key={i} style={{ position: "absolute", left: x, top: 1100 - ph * 1200, width: r, height: r, borderRadius: r, background: `rgba(${c},${0.55 * Math.sin(ph * Math.PI)})`, boxShadow: `0 0 ${r * 3}px rgba(${c},.5)` }} />; })}</>;
+};
 // overlays comunes de un plano (texto encima del real o del dibujo)
 export type Ov = { build?: { lines: string[]; a?: number; size?: number; color?: string; y?: number; out?: number }; big?: { w: string; a?: number; color?: string; size?: number; x?: number; y?: number };
   label?: string; scrib?: { a?: number; cx: number; cy: number; rx: number; ry: number; text: string; tx: number; ty: number }; aside?: { t: string; a?: number; x: number; y: number }; credit?: string };
@@ -222,7 +228,8 @@ export const JobRoster: React.FC<{ active?: number; final?: number[]; caption?: 
   const f = useCurrentFrame();
   const N = JOBS.length, W = 206, H = 330, G = 20, X0 = (1920 - (N * W + (N - 1) * G)) / 2;
   return (
-    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 58%, #4a2d18 0%, #140c07 78%)` }}>
+    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 58%, #4a2d18 0%, #140c07 78%)`, transform: `scale(${1 + Math.min(f, 300) * 0.00012})` }}>
+      <Embers />
       {JOBS.map((j, i) => {
         const t = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
         const done = final ? f >= final[i] : i < active;
@@ -711,7 +718,7 @@ export const RadiumScene: React.FC<{ d: number; mode?: "bright" | "lipdip" | "gr
 // 15. electrocardiograma que se corta (con respeto: sólo la línea)
 export const EcgScene: React.FC<{ d: number; cut?: number; o?: Ov; dim?: boolean }> = ({ d, cut = 0.6, o = {}, dim }) => {
   const f = useCurrentFrame();
-  const W = 1920, prog = interpolate(f, [0, d], [0, 1], clamp), head = prog * W * 1.15;
+  const W = 1920, prog = interpolate(f, [0, d], [0, 1], clamp), head = (0.15 + prog) * W * 1.15;
   const pts: string[] = [];
   for (let x = 0; x <= Math.min(head, W); x += 6) {
     const flat = x > W * cut;
@@ -778,7 +785,8 @@ export const Timeline100: React.FC<{ d: number; o?: Ov }> = ({ d, o = {} }) => {
   const f = useCurrentFrame();
   const p = ease(f, 15, d * 0.8), yr = Math.round(1775 + p * 100);
   return (
-    <AbsoluteFill style={{ background: "linear-gradient(180deg,#140c08,#090605)" }}>
+    <AbsoluteFill style={{ background: "linear-gradient(180deg,#140c08,#090605)", transform: `scale(${interpolate(f, [0, Math.max(d, 2)], [1, 1.05], clamp)})` }}>
+      <Embers />
       <div style={{ position: "absolute", left: 260, top: 620, width: 1400, height: 10, background: "rgba(240,235,229,.25)", borderRadius: 5 }} />
       <div style={{ position: "absolute", left: 260, top: 620, width: 1400 * p, height: 10, background: RED, borderRadius: 5, boxShadow: `0 0 20px ${RED}` }} />
       {[0, 1].map((k) => <div key={k} style={{ position: "absolute", left: 260 + k * 1400 - 14, top: 611, width: 28, height: 28, borderRadius: 14, background: k ? (p > 0.99 ? RED : "#555") : ORA }} />)}
@@ -824,8 +832,8 @@ export const PayScale: React.FC<{ d: number; o?: Ov; l?: string; r?: string }> =
 // fondo oscuro + texto (BigWord / Build) para las frases que pegan
 export const WordCard: React.FC<{ d: number; o?: Ov; tone?: "dark" | "warm" | "red" }> = ({ d, o = {}, tone = "dark" }) => {
   const f = useCurrentFrame();
-  const bg = tone === "red" ? "radial-gradient(ellipse at 50% 50%, #3a0c08 0%, #0c0303 75%)" : tone === "warm" ? "radial-gradient(ellipse at 50% 60%, #4a2d18 0%, #140c07 78%)" : "radial-gradient(ellipse at 50% 50%, #14263a 0%, #05090f 75%)";
-  return <AbsoluteFill style={{ background: bg, transform: `scale(${interpolate(f, [0, Math.max(d, 2)], [1, 1.04], clamp)})` }}><Overlays o={o} /></AbsoluteFill>;
+  const bg = tone === "red" ? "radial-gradient(ellipse at 50% 50%, #6a1a10 0%, #1c0606 80%)" : tone === "warm" ? "radial-gradient(ellipse at 50% 60%, #4a2d18 0%, #140c07 78%)" : "radial-gradient(ellipse at 50% 50%, #14263a 0%, #05090f 75%)";
+  return <AbsoluteFill style={{ background: bg, transform: `scale(${interpolate(f, [0, Math.max(d, 2)], [1, 1.06], clamp)})` }}><Embers c={tone === "dark" ? "140,190,255" : "255,150,90"} /><Overlays o={o} /></AbsoluteFill>;
 };
 // pantalla partida en diagonal: BUENA NOTICIA. / MALA NOTICIA.
 export const DiagSplit: React.FC<{ d: number; l: string; r: string; wl: string; wr: string; a?: number }> = ({ d, l, r, wl, wr, a = 40 }) => {
@@ -848,7 +856,8 @@ export const AskCard: React.FC<{ d: number; q: string; bell?: boolean; o?: Ov }>
   const f = useCurrentFrame();
   const sw = Math.sin(f / 4) * 14 * (1 - ease(f, 20, 50));
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #4a2d18 0%, #140c07 78%)" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #4a2d18 0%, #140c07 78%)", transform: `scale(${interpolate(f, [0, Math.max(d, 2)], [1, 1.06], clamp)})` }}>
+      <Embers />
       {bell && <svg width={220} height={240} viewBox="0 0 100 110" style={{ position: "absolute", left: 850, top: 160, transform: `rotate(${sw}deg)`, transformOrigin: "50% 8%" }}>
         <path d="M50,8 C28,8 22,30 22,50 L22,70 L12,84 L88,84 L78,70 L78,50 C78,30 72,8 50,8 Z" fill={ORA} /><circle cx={50} cy={94} r={9} fill={ORA} /><rect x={46} y={0} width={8} height={10} rx={3} fill={ORA} /></svg>}
       <div style={{ position: "absolute", left: 200, right: 200, top: 480, textAlign: "center", fontFamily: F, fontWeight: 800, fontSize: 72, color: INK, lineHeight: 1.15, opacity: ease(f, 10, 20), transform: `translateY(${(1 - ease(f, 10, 20)) * 20}px)` }}>{q}</div>
