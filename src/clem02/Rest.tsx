@@ -215,8 +215,8 @@ const M = makeVideo({
     L.push(<Receipt key="rc" t={t} title="HIS SHELF · A YEAR" x={1260} y={110} sc={0.9} out={781.4} totalAt={at("$200")}
       rows={[{ at: at("Glass cleaner", 760), item: "GLASS CLEANER", $: 30 }, { at: at("bathroom spray", 760), item: "BATHROOM SPRAY", $: 36 }, { at: at("stove cleaner"), item: "STOVE CLEANER", $: 28 }, { at: at("hard water remover"), item: "HARD WATER REMOVER", $: 40 }, { at: at("washing machine cleaner", 760), item: "WASHER CLEANER", $: 30 }, { at: at("weed spray"), item: "WEED SPRAY", $: 36 }, { at: at("rust remover"), item: "RUST REMOVER", $: 25 }]} />);
     L.push(<BigNum key="200" t={t} at={at("$200")} text="$200-250" x={560} y={820} size={130} col={COL.red} sub="A YEAR AT STORE PRICES" out={781.4} />);
-    L.push(<Words key="gal" t={t} items={[{ at: at("A gallon of white vinegar"), txt: "1 GALLON = $3-4" }, { at: at("one gallon a month"), txt: "≈ 1 GALLON A MONTH", col: COL.amber }]} out={794.2} y={180} size={84} />);
-    L.push(<Versus key="vs" t={t} at={at("$45")} out={798.5} title="A YEAR" L={{ label: "THE SHELF", val: "$200-250", h: 0.85, col: COL.red, mark: "x" }} R={{ label: "THE JAR", val: "≈ $45", h: 0.2, col: ORANGE, mark: "ok" }} />);
+    L.push(<Words key="gal" t={t} items={[{ at: at("A gallon of white vinegar"), txt: "1 GALLON = $3-4" }, { at: at("one gallon a month"), txt: "≈ 1 GALLON A MONTH", col: COL.amber }]} out={at("$45") - 0.1} y={180} size={84} />);
+    L.push(<Versus key="vs" t={t} at={at("$45")} out={794.3} title="A YEAR" L={{ label: "THE SHELF", val: "$200+", h: 0.72, col: COL.red }} R={{ label: "THE JAR", val: "≈ $45", h: 0.2, col: ORANGE, mark: "ok" }} />);
     L.push(<BigNum key="kp" t={t} at={798.9} text="$150-200" x={960} y={330} size={190} col="#9df0b4" edge="#1f5a36" sub="A YEAR IN HIS POCKET" out={806.0} />);
     L.push(<Words key="10b" t={t} items={[{ at: at("ten bottles"), txt: "10 BOTTLES" }, { at: at("one jar and one spray bottle"), txt: "→ 1 JAR + 1 SPRAY", col: ORANGE }]} out={811.4} y={880} size={84} />);
     L.push(<Words key="pf" t={t} items={[{ at: at("cloud of perfume"), txt: "NO CLOUD OF PERFUME" }]} out={823.5} y={180} size={84} />);
@@ -237,7 +237,8 @@ const M = makeVideo({
 });
 
 export const Rest: React.FC = () => {
-  useCurrentFrame();
+  // antes del final del minuto 1 no se dibuja nada: el fondo opaco taparía al Min1 (Sequence de abajo)
+  if (useCurrentFrame() < Math.round(MIN1_END * 30)) return null;
   return <AbsoluteFill style={{ background: "#05070b" }}><M.Body /></AbsoluteFill>;
 };
 export const restClipPlan = M.clipPlan;
