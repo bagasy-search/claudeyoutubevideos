@@ -131,16 +131,18 @@ export const Cards: React.FC<{ bg: string; cards: string[]; o?: Ov }> = ({ bg, c
   const W = cards.length > 2 ? 380 : 440, H = W * 1.25, G = 46, X0 = (o.big ? 1100 : 960) - (cards.length * W + (cards.length - 1) * G) / 2;
   return (
     <AbsoluteFill style={{ background: "#000" }}>
-      <AbsoluteFill style={{ filter: "blur(28px) brightness(.36) saturate(.8)", transform: "scale(1.15)" }}><Img src={sf(bg)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
+      <AbsoluteFill style={{ filter: "blur(28px) brightness(.36) saturate(.8)", transform: `scale(${1.15 + f * 0.0006})` }}><Img src={sf(bg)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
+      <AbsoluteFill style={{ transform: `scale(${1 + f * 0.0004})` }}>
       {cards.map((c, i) => {
         const t = spring({ frame: f - 3 - i * 12, fps: 30, config: { damping: 15, mass: 0.8 } });
         const tilt = (rnd(i, 7) - 0.5) * 5;
         return (
           <div key={i} style={{ position: "absolute", left: X0 + i * (W + G), top: 540 - H / 2 + 40 + (1 - t) * 90, width: W, height: H, opacity: t, transform: `rotate(${tilt * (1 - t * 0.6)}deg)`, borderRadius: 12, overflow: "hidden", border: "6px solid rgba(255,255,255,.93)", boxShadow: "0 30px 60px rgba(0,0,0,.6)" }}>
-            <Img src={sf(c)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.08 - 0.08 * ease(f, i * 12, i * 12 + 90)})` }} />
+            <Img src={sf(c)} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.12 - f * 0.0005})` }} />
           </div>
         );
       })}
+      </AbsoluteFill>
       <Overlays o={{ ...o, big: o.big ? { x: 90, y: 440, size: 170, color: ORA, ...o.big } : undefined }} />
     </AbsoluteFill>
   );
@@ -223,6 +225,7 @@ export const JobRoster: React.FC<{ active?: number; final?: number[]; caption?: 
   const W = 192, H = 320, G = 18, X0 = (1920 - (9 * W + 8 * G)) / 2;
   return (
     <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 58%, #4a2d18 0%, #140c07 78%)` }}>
+      <AbsoluteFill style={{ transform: `scale(${1 + Math.min(f, 900) * 0.00011})`, transformOrigin: "50% 48%" }}>
       {JOBS.map((j, i) => {
         const t = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
         const done = final ? f >= final[i] : i < active;
@@ -241,6 +244,7 @@ export const JobRoster: React.FC<{ active?: number; final?: number[]; caption?: 
           </div>
         );
       })}
+      </AbsoluteFill>
       {caption && <Build a={22} lines={[caption]} y={150} size={86} />}
     </AbsoluteFill>
   );
@@ -711,7 +715,7 @@ export const RadiumScene: React.FC<{ d: number; mode?: "bright" | "lipdip" | "gr
 // 15. electrocardiograma que se corta (con respeto: sólo la línea)
 export const EcgScene: React.FC<{ d: number; cut?: number; o?: Ov; dim?: boolean }> = ({ d, cut = 0.6, o = {}, dim }) => {
   const f = useCurrentFrame();
-  const W = 1920, prog = interpolate(f, [0, d], [0, 1], clamp), head = prog * W * 1.15;
+  const W = 1920, prog = interpolate(f, [0, d], [0.22, 1], clamp), head = prog * W * 1.15;
   const pts: string[] = [];
   for (let x = 0; x <= Math.min(head, W); x += 6) {
     const flat = x > W * cut;
@@ -721,8 +725,8 @@ export const EcgScene: React.FC<{ d: number; cut?: number; o?: Ov; dim?: boolean
   }
   const col = dim ? "#8aa" : "#5dff8a";
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #08140e 0%, #020604 80%)" }}>
-      <AbsoluteFill style={{ backgroundImage: "linear-gradient(rgba(93,255,138,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(93,255,138,.07) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #17402c 0%, #07160e 80%)" }}>
+      <AbsoluteFill style={{ backgroundImage: "linear-gradient(rgba(93,255,138,.14) 1px, transparent 1px), linear-gradient(90deg, rgba(93,255,138,.14) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><polyline points={pts.join(" ")} fill="none" stroke={col} strokeWidth={6} strokeLinejoin="round" style={{ filter: `drop-shadow(0 0 10px ${col})` }} /></svg>
       <Overlays o={o} />
     </AbsoluteFill>
@@ -824,7 +828,7 @@ export const PayScale: React.FC<{ d: number; o?: Ov; l?: string; r?: string }> =
 // fondo oscuro + texto (BigWord / Build) para las frases que pegan
 export const WordCard: React.FC<{ d: number; o?: Ov; tone?: "dark" | "warm" | "red" }> = ({ d, o = {}, tone = "dark" }) => {
   const f = useCurrentFrame();
-  const bg = tone === "red" ? "radial-gradient(ellipse at 50% 50%, #3a0c08 0%, #0c0303 75%)" : tone === "warm" ? "radial-gradient(ellipse at 50% 60%, #4a2d18 0%, #140c07 78%)" : "radial-gradient(ellipse at 50% 50%, #14263a 0%, #05090f 75%)";
+  const bg = tone === "red" ? "radial-gradient(ellipse at 50% 50%, #6e1a10 0%, #2a0806 80%)" : tone === "warm" ? "radial-gradient(ellipse at 50% 60%, #4a2d18 0%, #140c07 78%)" : "radial-gradient(ellipse at 50% 50%, #1f3a58 0%, #0b1622 80%)";
   return <AbsoluteFill style={{ background: bg, transform: `scale(${interpolate(f, [0, Math.max(d, 2)], [1, 1.04], clamp)})` }}><Overlays o={o} /></AbsoluteFill>;
 };
 // pantalla partida en diagonal: GOOD NEWS. / BAD NEWS.
@@ -849,6 +853,15 @@ export const AskCard: React.FC<{ d: number; q: string; bell?: boolean; o?: Ov }>
   const sw = Math.sin(f / 4) * 14 * (1 - ease(f, 20, 50));
   return (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 55%, #4a2d18 0%, #140c07 78%)" }}>
+      <div style={{ position: "absolute", top: 730, left: 0, display: "flex", gap: 22, opacity: 0.5, transform: `translateX(${-((f * 2.2) % (9 * 222))}px)` }}>
+        {[...JOBS, ...JOBS, ...JOBS].map((j, i) => (
+          <div key={i} style={{ width: 200, height: 250, flex: "none", borderRadius: 12, background: "linear-gradient(180deg, #24180f 0%, #4a3020 100%)", border: "3px solid rgba(255,170,90,.45)", fontFamily: F, textAlign: "center", color: INK }}>
+            <div style={{ display: "flex", justifyContent: "center", marginTop: 30 }}><Icon i={i % 9} c={ORA} /></div>
+            <div style={{ marginTop: 16, fontSize: 28, fontWeight: 800 }}>{j.y}</div>
+            <div style={{ marginTop: 4, fontSize: 18, fontWeight: 800, color: "rgba(240,235,229,.75)", padding: "0 8px" }}>{j.job}</div>
+          </div>
+        ))}
+      </div>
       {bell && <svg width={220} height={240} viewBox="0 0 100 110" style={{ position: "absolute", left: 850, top: 160, transform: `rotate(${sw}deg)`, transformOrigin: "50% 8%" }}>
         <path d="M50,8 C28,8 22,30 22,50 L22,70 L12,84 L88,84 L78,70 L78,50 C78,30 72,8 50,8 Z" fill={ORA} /><circle cx={50} cy={94} r={9} fill={ORA} /><rect x={46} y={0} width={8} height={10} rx={3} fill={ORA} /></svg>}
       <div style={{ position: "absolute", left: 200, right: 200, top: 480, textAlign: "center", fontFamily: F, fontWeight: 800, fontSize: 72, color: INK, lineHeight: 1.15, opacity: ease(f, 10, 20), transform: `translateY(${(1 - ease(f, 10, 20)) * 20}px)` }}>{q}</div>
