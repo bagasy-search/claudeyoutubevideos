@@ -60,8 +60,8 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: { label: 
       <div key={i} style={{ width: 380, textAlign: "center", fontFamily: FONT, transform: `rotateY(${(i ? -1 : 1) * 14}deg) translateY(${(1 - k) * 80}px)`, opacity: e(t, a, a + 0.15) }}>
         <div style={{ height: 460, display: "flex", alignItems: "flex-end", justifyContent: "center", position: "relative" }}>
           <div style={{ width: 230, height: 460 * c.h * g, borderRadius: "22px 22px 8px 8px", background: `linear-gradient(90deg, ${c.col}cc, ${c.col}, ${c.col}aa)`, boxShadow: `0 0 50px ${c.col}66, inset 0 3px 0 rgba(255,255,255,.55), 0 30px 60px rgba(0,0,0,.6)` }} />
-          <div style={{ position: "absolute", bottom: 460 * c.h * g + 18, left: 0, right: 0, fontWeight: 900, fontSize: 84, color: COL.ink, textShadow: extrude(8, "rgba(0,0,0,.7)") }}>{c.val}</div>
-          {mk > 0 && <div style={{ position: "absolute", top: 20, right: 10, width: 110, height: 110, borderRadius: "50%", background: c.mark === "ok" ? "#2fbf71" : COL.red, color: "#fff", fontSize: 76, fontWeight: 900, lineHeight: "110px", transform: `scale(${mk}) rotate(${(1 - mk) * -40}deg)`, boxShadow: "0 16px 30px rgba(0,0,0,.5)" }}>{c.mark === "ok" ? "✓" : "✕"}</div>}
+          <div style={{ position: "absolute", bottom: 460 * c.h * g + 18, left: 0, right: 0, fontWeight: 900, fontSize: c.val.length > 9 ? 54 : 84, lineHeight: 1.05, color: COL.ink, textShadow: extrude(8, "rgba(0,0,0,.7)") }}>{c.val}</div>
+          {mk > 0 && <div style={{ position: "absolute", bottom: 16, right: 30, width: 110, height: 110, borderRadius: "50%", background: c.mark === "ok" ? "#2fbf71" : COL.red, color: "#fff", fontSize: 76, fontWeight: 900, lineHeight: "110px", transform: `scale(${mk}) rotate(${(1 - mk) * -40}deg)`, boxShadow: "0 16px 30px rgba(0,0,0,.5)" }}>{c.mark === "ok" ? "✓" : "✕"}</div>}
         </div>
         <div style={{ marginTop: 22, fontWeight: 900, fontSize: 44, letterSpacing: 6, color: c.col, textShadow: extrude(5, "rgba(0,0,0,.75)") }}>{c.label}</div>
       </div>
@@ -69,9 +69,9 @@ export const Versus: React.FC<{ t: number; at: number; out: number; L: { label: 
   };
   return (
     <AbsoluteFill style={{ opacity: o }}>
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 70% at 50% 55%, rgba(4,8,14,.72), rgba(4,8,14,.35))" }} />
-      {title && <div style={{ position: "absolute", top: y - 420, left: 0, right: 0, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 58, letterSpacing: 8, color: COL.ink, textShadow: extrude(6, "rgba(0,0,0,.7)"), opacity: e(t, at, at + 0.3) }}>{title}</div>}
-      <div style={{ position: "absolute", left: 0, right: 0, top: y - 300, display: "flex", justifyContent: "center", gap: 160, perspective: 1600 }}>{col(L, 0)}{col(R, 1)}</div>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse 70% 70% at 50% 55%, rgba(4,8,14,.88), rgba(4,8,14,.62))" }} />
+      {title && <div style={{ position: "absolute", top: y - 480, left: 0, right: 0, textAlign: "center", fontFamily: FONT, fontWeight: 900, fontSize: 58, letterSpacing: 8, color: COL.ink, textShadow: extrude(6, "rgba(0,0,0,.7)"), opacity: e(t, at, at + 0.3) }}>{title}</div>}
+      <div style={{ position: "absolute", left: 0, right: 0, top: y - 260, display: "flex", justifyContent: "center", gap: 160, perspective: 1600 }}>{col(L, 0)}{col(R, 1)}</div>
     </AbsoluteFill>
   );
 };

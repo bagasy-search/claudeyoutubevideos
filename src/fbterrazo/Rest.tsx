@@ -181,7 +181,7 @@ const Hilo: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ---------- anclas de las piezas ----------
-const A = {
+export const A = {
   venecia: ax("hace mas de 500 anos", 147.2), recortes: ax("se llevaban los recortes", 152), nadie: ax("pedacitos que nadie queria", 156),
   cal: ax("los mezclaban con cal", 157.3), rodillas: ax("de rodillas", 163), nombre: ax("de ahi viene el nombre", 167.5), pobres: ax("era el piso de los pobres", 170.3),
   ricos: ax("lo que tiraban los ricos", 172), bancos: ax("los bancos", 175), setenta: ax("70 80 anos despues", 182), floja: ax("sin una baldosa floja", 184),
