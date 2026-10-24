@@ -1,0 +1,3078 @@
+{
+"end": 950.82,
+"shots": [
+{
+"a": 0.0,
+"b": 2.46,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "hook",
+"o": {
+"build": {
+"lines": [
+"Estás *agachado.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 2.46,
+"b": 5.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_03_0.mp4",
+"o": {
+"label": "Sur de África",
+"credit": "Kent Wang · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 5.22,
+"b": 6.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a01_dry_river.jpg"
+}
+},
+{
+"a": 6.52,
+"b": 8.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_dryriver_01.jpg",
+"o": {
+"credit": "Thomas Fuhrmann · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 8.8,
+"b": 12.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipboat_01.jpg",
+"o": {
+"credit": "Staff · CC0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 12.06,
+"b": 13.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_06_1.mp4",
+"o": {
+"big": {
+"w": "14",
+"size": 230,
+"y": 330,
+"color": "#edb269",
+"a": 0
+},
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 13.58,
+"b": 15.1,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "hook"
+}
+},
+{
+"a": 15.1,
+"b": 17.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_03_2.mp4",
+"o": {
+"build": {
+"lines": [
+"4 días sin *comer.*"
+],
+"a": 32
+},
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 17.74,
+"b": 19.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a03_hippo_alone.jpg"
+}
+},
+{
+"a": 19.78,
+"b": 20.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_3.mp4",
+"o": {
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 20.88,
+"b": 23.6,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "SOLO.",
+"size": 260,
+"y": 360,
+"a": 11
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 23.6,
+"b": 26.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipwater_01.jpg",
+"o": {
+"build": {
+"lines": [
+"la comida más *fácil* del año."
+],
+"a": 4,
+"size": 84
+},
+"credit": "AMADOU BAHLEMAN FARID · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 26.48,
+"b": 28.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a04_lioness_stand.jpg"
+}
+},
+{
+"a": 28.86,
+"b": 31.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a05_hippo_turn.jpg"
+}
+},
+{
+"a": 31.02,
+"b": 34.38,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "gape",
+"o": {
+"build": {
+"lines": [
+"y abre la *boca.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 34.38,
+"b": 37.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/es_hipA_01_0.mp4",
+"o": {
+"credit": "kartfamily · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 37.1,
+"b": 40.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_08_0.mp4",
+"o": {
+"build": {
+"lines": [
+"nadie lo intenta *dos veces.*"
+],
+"size": 86,
+"a": 57
+},
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 40.14,
+"b": 48.92,
+"k": "ilus",
+"t": "weigh",
+"p": {
+"o": {
+"build": {
+"lines": [
+"más que *todos juntos.*"
+],
+"a": 194
+}
+}
+},
+"big": true
+},
+{
+"a": 48.92,
+"b": 50.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_01_0.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 50.3,
+"b": 52.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_08_10.mp4",
+"o": {
+"label": "Panthera leo",
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 52.58,
+"b": 55.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_02_6.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 55.44,
+"b": 57.74,
+"k": "g",
+"t": "score",
+"p": {
+"n": 1,
+"o": {
+"build": {
+"lines": [
+"*6* armas."
+],
+"a": 4,
+"y": 880,
+"size": 90
+}
+}
+},
+"big": true
+},
+{
+"a": 57.74,
+"b": 58.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipyawn_01.jpg",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 58.74,
+"b": 61.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a35_tusks_close.jpg"
+}
+},
+{
+"a": 61.22,
+"b": 65.42,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_04_5.mp4",
+"o": {
+"credit": "Bettina May · CC BY 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 65.42,
+"b": 67.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a27_lions_rest_after.jpg"
+}
+},
+{
+"a": 67.34,
+"b": 77.94,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbete y activa la campanita: cada semana, un lugar donde no deberías estar."
+}
+},
+{
+"a": 77.94,
+"b": 80.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_12.mp4",
+"o": {
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 80.92,
+"b": 88.66,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/t30colmies/cand/en_lionpride_01.jpg",
+"cards": [
+"img/t30colmies/cand/en_lionpride_02.jpg",
+"img/t30colmies/cand/es_hiprun_02.jpg"
+],
+"o": {
+"build": {
+"lines": [
+"¿La *manada* o el *hipopótamo?*"
+],
+"a": 4,
+"size": 80
+},
+"credit": "Benh LIEU SONG · CC BY-SA 3.0 / I've Got It On Film! · CC BY 2.0 / Timothy A. Gonsalves · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 88.66,
+"b": 89.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_05_1.mp4",
+"o": {
+"aside": {
+"t": "sé honesto…",
+"x": 1150,
+"y": 300,
+"a": 4
+},
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 89.94,
+"b": 95.66,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"primero, los *números.*"
+],
+"a": 4,
+"y": 380,
+"size": 110
+}
+}
+}
+},
+{
+"a": 95.66,
+"b": 100.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lioness_01.jpg",
+"o": {
+"label": "Leona",
+"big": {
+"w": "120-130 kg",
+"size": 130,
+"y": 760,
+"x": 90,
+"color": "#edb269",
+"a": 62
+},
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 100.92,
+"b": 103.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionmale_02.jpg",
+"o": {
+"label": "Macho",
+"big": {
+"w": "≈190 kg",
+"size": 130,
+"y": 760,
+"x": 90,
+"color": "#edb269",
+"a": 50
+},
+"credit": "Charles J. Sharp · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 103.82,
+"b": 107.02,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "lie",
+"o": {
+"build": {
+"lines": [
+"un velocista con *cuchillos.*"
+],
+"a": 71
+}
+}
+}
+},
+{
+"a": 107.02,
+"b": 109.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionhunt_01.jpg",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 109.06,
+"b": 114.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a07_lion_paw.jpg",
+"o": {
+"scrib": {
+"cx": 760,
+"cy": 640,
+"rx": 330,
+"ry": 170,
+"text": "la garganta.",
+"tx": 1300,
+"ty": 280,
+"a": 70
+}
+}
+}
+},
+{
+"a": 114.4,
+"b": 116.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a33_zebra.jpg",
+"o": {
+"label": "Cebra"
+}
+}
+},
+{
+"a": 116.96,
+"b": 118.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_wildebeest_02.jpg",
+"o": {
+"label": "Ñu",
+"credit": "Giles Laurent · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 118.02,
+"b": 125.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a34_buffalo.jpg",
+"o": {
+"label": "Búfalo"
+}
+}
+},
+{
+"a": 125.82,
+"b": 127.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipland_01.jpg",
+"o": {
+"label": "Hippopotamus amphibius",
+"credit": "Prof Chen Hualin · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 127.3,
+"b": 132.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_20.mp4",
+"o": {
+"big": {
+"w": "1,5 t",
+"size": 200,
+"y": 700,
+"x": 90,
+"color": "#edb269",
+"a": 117
+},
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 132.66,
+"b": 136.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a28_hippo_scar_old.jpg",
+"o": {
+"big": {
+"w": "+3 t",
+"size": 200,
+"y": 700,
+"x": 90,
+"color": "#f14536",
+"a": 61
+}
+}
+}
+},
+{
+"a": 136.02,
+"b": 137.6,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"un auto *chico.*"
+],
+"a": 2,
+"y": 380,
+"size": 120
+}
+}
+}
+},
+{
+"a": 137.6,
+"b": 141.38,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "lie"
+}
+},
+{
+"a": 141.38,
+"b": 149.86,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "gape",
+"o": {
+"build": {
+"lines": [
+"nada es lo que *parece.*"
+],
+"a": 125
+}
+}
+}
+},
+{
+"a": 149.86,
+"b": 156.1,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "lie"
+}
+},
+{
+"a": 156.1,
+"b": 163.06,
+"k": "ilus",
+"t": "prey",
+"p": {},
+"big": true
+},
+{
+"a": 163.06,
+"b": 165.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionpride_04.jpg",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 165.86,
+"b": 169.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionhunt_02.jpg",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 169.88,
+"b": 177.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_28.mp4",
+"o": {
+"big": {
+"w": "×3 ×4 ×5",
+"size": 150,
+"y": 720,
+"x": 90,
+"color": "#f14536",
+"a": 80
+},
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 177.12,
+"b": 181.42,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "stand"
+}
+},
+{
+"a": 181.42,
+"b": 184.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a20_lion_limp.jpg",
+"o": {
+"build": {
+"lines": [
+"el hambre *apuesta.*"
+],
+"a": 58
+}
+}
+}
+},
+{
+"a": 184.38,
+"b": 188.62,
+"k": "g",
+"t": "score",
+"p": {
+"n": 1,
+"hot": 0
+},
+"big": true
+},
+{
+"a": 188.62,
+"b": 192.98,
+"k": "g",
+"t": "score",
+"p": {
+"n": 2,
+"hot": 1,
+"o": {
+"big": {
+"w": "ARMA 1",
+"size": 120,
+"y": 890,
+"color": "#edb269",
+"a": 14
+}
+}
+},
+"big": true
+},
+{
+"a": 192.98,
+"b": 196.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/es_hipA_01_5.mp4",
+"o": {
+"credit": "kartfamily · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 196.88,
+"b": 199.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipyawn_02.jpg",
+"o": {
+"build": {
+"lines": [
+"una *advertencia.*"
+],
+"a": 26
+},
+"credit": "Andy Morffew · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 199.06,
+"b": 203.92,
+"k": "ilus",
+"t": "jaw",
+"p": {
+"mode": "open"
+},
+"big": true
+},
+{
+"a": 203.92,
+"b": 207.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipyawn_03.jpg",
+"o": {
+"credit": "Pierre Mistrot · CC BY 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 207.24,
+"b": 212.0,
+"k": "ilus",
+"t": "jaw",
+"p": {
+"mode": "tusk"
+},
+"big": true
+},
+{
+"a": 212.0,
+"b": 214.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipteeth_01.jpg",
+"o": {
+"label": "Colmillo inferior",
+"credit": "Mrjohncummings · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 214.04,
+"b": 222.86,
+"k": "ilus",
+"t": "jaw",
+"p": {
+"mode": "grind"
+},
+"big": true
+},
+{
+"a": 222.86,
+"b": 226.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipteeth_04.jpg",
+"o": {
+"credit": "Erasmus Kamugisha · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 226.62,
+"b": 230.86,
+"k": "ilus",
+"t": "jaw",
+"p": {
+"mode": "bite"
+},
+"big": true
+},
+{
+"a": 230.86,
+"b": 239.254,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipskull_02.jpg",
+"o": {
+"label": "Cráneo de hipopótamo",
+"credit": "Guywelch2000 · CC BY 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 239.254,
+"b": 241.714,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_croc_02_3.mp4",
+"o": {
+"credit": "Bernard Dupont · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 241.714,
+"b": 244.374,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a29_boat_river.jpg"
+}
+},
+{
+"a": 244.374,
+"b": 246.514,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionmale_01.jpg",
+"o": {
+"credit": "Charles J. Sharp · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 246.514,
+"b": 248.394,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"No está hecho",
+"*para eso.*"
+],
+"a": 2,
+"y": 330,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 248.394,
+"b": 251.814,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipyawn_04.jpg",
+"o": {
+"credit": "Jon Connell · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 251.814,
+"b": 256.254,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipyawn_05.jpg",
+"o": {
+"credit": "wwarby · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 256.254,
+"b": 261.774,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_03_12.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 261.774,
+"b": 265.794,
+"k": "g",
+"t": "score",
+"p": {
+"n": 3,
+"hot": 2,
+"o": {
+"big": {
+"w": "ARMA 2",
+"size": 120,
+"y": 890,
+"color": "#edb269",
+"a": 19
+}
+}
+},
+"big": true
+},
+{
+"a": 265.794,
+"b": 269.194,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_08_20.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 269.194,
+"b": 273.354,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionclaw_01.jpg",
+"o": {
+"build": {
+"lines": [
+"garras · mandíbulas · *esperar.*"
+],
+"size": 84,
+"a": 97
+},
+"credit": "nearsjasmine · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 273.354,
+"b": 275.054,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hipskin_01.jpg",
+"o": {
+"credit": "Paul Harrison · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 275.054,
+"b": 286.734,
+"k": "ilus",
+"t": "skin",
+"p": {
+"mode": "claw"
+},
+"big": true
+},
+{
+"a": 286.734,
+"b": 287.694,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hipchg_01.jpg",
+"o": {
+"credit": "William Warby · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 287.694,
+"b": 292.074,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipteeth_02.jpg",
+"o": {
+"scrib": {
+"cx": 960,
+"cy": 560,
+"rx": 420,
+"ry": 200,
+"text": "más cuero.",
+"tx": 1300,
+"ty": 230,
+"a": 94
+},
+"credit": "Dennis G. Jarvis · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 292.074,
+"b": 295.274,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_01_6.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 295.274,
+"b": 301.554,
+"k": "ilus",
+"t": "skin",
+"p": {
+"mode": "neck",
+"o": {
+"build": {
+"lines": [
+"no hay *cuello.*"
+],
+"a": 6,
+"size": 96
+}
+}
+},
+"big": true
+},
+{
+"a": 301.554,
+"b": 305.574,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hippod_03.jpg",
+"o": {
+"credit": "BMKME · CC0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 305.574,
+"b": 311.154,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "stand"
+}
+},
+{
+"a": 311.154,
+"b": 317.634,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Wilhelm Kuhnert, pintura",
+"side": "c",
+"v": "img/t30colmies/cand/en_hipwater_02.jpg",
+"ar": 1.2886,
+"o": {
+"build": {
+"lines": [
+"de dónde *agarrarse.*"
+],
+"size": 88,
+"a": 27
+},
+"credit": "Internet Archive Book Images · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 317.634,
+"b": 321.894,
+"k": "g",
+"t": "score",
+"p": {
+"n": 4,
+"hot": 3,
+"o": {
+"big": {
+"w": "ARMA 3",
+"size": 120,
+"y": 890,
+"color": "#edb269",
+"a": 22
+}
+}
+},
+"big": true
+},
+{
+"a": 321.894,
+"b": 325.154,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_36.mp4",
+"o": {
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 325.154,
+"b": 328.134,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "FORTALEZA.",
+"size": 210,
+"y": 420,
+"a": 52
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 328.134,
+"b": 333.374,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hipuw_02.jpg",
+"o": {
+"credit": "cloudzilla · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 333.374,
+"b": 340.634,
+"k": "ilus",
+"t": "rivercut",
+"p": {
+"mode": "bottom",
+"o": {
+"build": {
+"lines": [
+"caminan por el *fondo.*"
+],
+"y": 90,
+"a": 142
+}
+}
+}
+},
+{
+"a": 340.634,
+"b": 346.214,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_okavango_02_0.mp4",
+"o": {
+"label": "León cruzando un río",
+"credit": "Gregory \"Slobirdr\" Smith · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 346.214,
+"b": 347.814,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_okavango_02_5.mp4",
+"o": {
+"credit": "Gregory \"Slobirdr\" Smith · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 347.814,
+"b": 349.534,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_okavango_02_9.mp4",
+"o": {
+"credit": "Gregory \"Slobirdr\" Smith · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 349.534,
+"b": 359.354,
+"k": "ilus",
+"t": "rivercut",
+"p": {
+"mode": "lion",
+"o": {
+"build": {
+"lines": [
+"*cocodrilos.*"
+],
+"y": 90,
+"a": 110
+}
+}
+}
+},
+{
+"a": 359.354,
+"b": 362.034,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_03_2.mp4",
+"o": {
+"credit": "Kent Wang · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 362.034,
+"b": 367.114,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hippod_05.jpg",
+"o": {
+"credit": "BMKME · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 367.114,
+"b": 368.394,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a16_hippo_mud.jpg",
+"o": {
+"big": {
+"w": "1. VOLVER AL AGUA",
+"size": 80,
+"y": 150,
+"x": 110,
+"color": "#f0ebe5",
+"a": 0
+}
+}
+}
+},
+{
+"a": 368.394,
+"b": 371.054,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a06_hippo_gape.jpg"
+}
+},
+{
+"a": 371.054,
+"b": 372.414,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/es_hipA_01_9.mp4",
+"o": {
+"build": {
+"lines": [
+"*esperar.*"
+],
+"a": 2
+},
+"credit": "kartfamily · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 372.414,
+"b": 376.134,
+"k": "g",
+"t": "score",
+"p": {
+"n": 5,
+"hot": 4,
+"o": {
+"big": {
+"w": "ARMA 4",
+"size": 120,
+"y": 890,
+"color": "#edb269",
+"a": 20
+}
+}
+},
+"big": true
+},
+{
+"a": 376.134,
+"b": 379.014,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hiprun_01.jpg",
+"o": {
+"credit": "Kore · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 379.014,
+"b": 388.834,
+"k": "ilus",
+"t": "speed",
+"p": {
+"mode": "race",
+"o": {
+"build": {
+"lines": [
+"*30* km/h"
+],
+"y": 90,
+"size": 96,
+"a": 127
+}
+}
+}
+},
+{
+"a": 388.834,
+"b": 393.654,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_08_30.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 393.654,
+"b": 397.934,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a12_hippo_run.jpg"
+}
+},
+{
+"a": 397.934,
+"b": 402.014,
+"k": "ilus",
+"t": "speed",
+"p": {
+"mode": "turn"
+}
+},
+{
+"a": 402.014,
+"b": 406.134,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipnight_03.jpg",
+"o": {
+"credit": "Steve Garvie · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 406.134,
+"b": 415.074,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "gape"
+}
+},
+{
+"a": 415.074,
+"b": 421.234,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_44.mp4",
+"o": {
+"aside": {
+"t": "¿por detrás? no.",
+"x": 1150,
+"y": 300,
+"a": 8
+},
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 421.234,
+"b": 426.454,
+"k": "g",
+"t": "score",
+"p": {
+"n": 6,
+"hot": 5,
+"o": {
+"big": {
+"w": "ARMA 5",
+"size": 120,
+"y": 890,
+"color": "#edb269",
+"a": 76
+}
+}
+},
+"big": true
+},
+{
+"a": 426.454,
+"b": 431.394,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a30_hippo_walkaway.jpg"
+}
+},
+{
+"a": 431.394,
+"b": 444.494,
+"k": "ilus",
+"t": "pod",
+"p": {
+"o": {
+"build": {
+"lines": [
+"un *macho* dominante."
+],
+"y": 880,
+"size": 80,
+"a": 295
+}
+}
+}
+},
+{
+"a": 444.494,
+"b": 448.324,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a13_hippo_pod.jpg",
+"o": {
+"build": {
+"lines": [
+"atacar al *grupo.*"
+],
+"a": 75
+}
+}
+}
+},
+{
+"a": 448.324,
+"b": 450.614,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipfight_01.jpg",
+"o": {
+"label": "Serengeti",
+"credit": "Giles Laurent · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 450.614,
+"b": 452.234,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipfight_02.jpg",
+"o": {
+"credit": "Pedroserafin · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 452.234,
+"b": 454.384,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_6.mp4",
+"o": {
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 454.384,
+"b": 460.954,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_botswana_01.jpg",
+"o": {
+"scrib": {
+"cx": 960,
+"cy": 560,
+"rx": 300,
+"ry": 180,
+"text": "cicatrices.",
+"tx": 1350,
+"ty": 250,
+"a": 5
+},
+"credit": "Joachim Huber · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 460.954,
+"b": 464.314,
+"k": "g",
+"t": "score",
+"p": {
+"n": 7,
+"hot": 6,
+"o": {
+"big": {
+"w": "ARMA 6",
+"size": 120,
+"y": 890,
+"color": "#edb269",
+"a": 19
+}
+}
+},
+"big": true
+},
+{
+"a": 464.314,
+"b": 466.234,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"suda un escudo",
+"*ROJO.*"
+],
+"a": 2,
+"y": 320,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 466.234,
+"b": 470.774,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hipchg_02.jpg",
+"o": {
+"credit": "William Warby · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 470.774,
+"b": 474.774,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a15_red_sweat.jpg"
+}
+},
+{
+"a": 474.774,
+"b": 476.969,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "ilustración de 1900",
+"side": "c",
+"v": "img/t30colmies/cand/en_hipnight_02.jpg",
+"ar": 1.5789,
+"o": {
+"build": {
+"lines": [
+"«sudor de *sangre*»"
+],
+"a": 24
+},
+"credit": "Internet Archive Book Images · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 476.969,
+"b": 485.109,
+"k": "ilus",
+"t": "sweat",
+"p": {
+"mode": "drop",
+"o": {
+"build": {
+"lines": [
+"ni sangre, ni *sudor.*"
+],
+"a": 4,
+"y": 90
+}
+}
+}
+},
+{
+"a": 485.109,
+"b": 487.269,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hipuw_01.jpg",
+"o": {
+"credit": "Katsutoshi Seki · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 487.269,
+"b": 495.569,
+"k": "ilus",
+"t": "sweat",
+"p": {
+"mode": "shield",
+"o": {
+"build": {
+"lines": [
+"*protector solar.*"
+],
+"y": 90,
+"a": 53
+}
+}
+}
+},
+{
+"a": 495.569,
+"b": 503.249,
+"k": "ilus",
+"t": "rivercut",
+"p": {
+"mode": "bottom"
+}
+},
+{
+"a": 503.249,
+"b": 507.029,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hiprun_03.jpg",
+"o": {
+"credit": "Timothy A. Gonsalves · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 507.029,
+"b": 509.829,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a21_hippo_calf.jpg"
+}
+},
+{
+"a": 509.829,
+"b": 513.149,
+"k": "ilus",
+"t": "hurt",
+"p": {
+"mode": "paw"
+}
+},
+{
+"a": 513.149,
+"b": 516.009,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_40.mp4",
+"o": {
+"aside": {
+"t": "sigue de largo.",
+"x": 1150,
+"y": 300,
+"a": 42
+},
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 516.009,
+"b": 522.249,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "hook"
+}
+},
+{
+"a": 522.249,
+"b": 526.289,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_croc_02_10.mp4",
+"o": {
+"credit": "Bernard Dupont · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 526.289,
+"b": 531.649,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_croc_03_0.mp4",
+"o": {
+"label": "Cocodrilo del Nilo",
+"credit": "Frank Vincentz · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 531.649,
+"b": 534.709,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/es_crocA_06_2.mp4",
+"o": {
+"big": {
+"w": "5 m",
+"size": 220,
+"y": 700,
+"x": 90,
+"color": "#edb269",
+"a": 0
+},
+"credit": "Frank Vincentz · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 534.709,
+"b": 539.229,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_croc_05_3.mp4",
+"o": {
+"credit": "Frank Vincentz · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 539.229,
+"b": 546.949,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a11_croc_bank.jpg"
+}
+},
+{
+"a": 546.949,
+"b": 549.249,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hippod_04.jpg",
+"o": {
+"credit": "BMKME · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 549.249,
+"b": 560.949,
+"k": "ilus",
+"t": "croc",
+"p": {
+"o": {
+"build": {
+"lines": [
+"van *hacia él.*"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 560.949,
+"b": 570.689,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a17_croc_retreat.jpg",
+"o": {
+"aside": {
+"t": "permiso, permiso…",
+"x": 1150,
+"y": 300,
+"a": 20
+}
+}
+}
+},
+{
+"a": 570.689,
+"b": 574.249,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Rubens, c. 1615",
+"side": "c",
+"v": "img/t30colmies/cand/en_hipcroc_03.jpg",
+"ar": 1.2949,
+"o": {
+"credit": "Peter Paul Rubens · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 574.249,
+"b": 576.649,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/es_crocA_06_14.mp4",
+"o": {
+"credit": "Frank Vincentz · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 576.649,
+"b": 577.569,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_05_6.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 577.569,
+"b": 581.309,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hippod_02.jpg",
+"o": {
+"build": {
+"lines": [
+"hasta el cocodrilo le deja *espacio.*"
+],
+"size": 78,
+"a": 46
+},
+"credit": "BMKME · CC0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 581.309,
+"b": 588.689,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "lie"
+}
+},
+{
+"a": 588.689,
+"b": 590.829,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "FALLAN.",
+"size": 240,
+"y": 380,
+"a": 17
+}
+}
+},
+"big": true
+},
+{
+"a": 590.829,
+"b": 603.929,
+"k": "ilus",
+"t": "odds",
+"p": {
+"mode": "odds"
+},
+"big": true
+},
+{
+"a": 603.929,
+"b": 607.089,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_02_35.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 607.089,
+"b": 617.369,
+"k": "ilus",
+"t": "odds",
+"p": {
+"mode": "ledger"
+},
+"big": true
+},
+{
+"a": 617.369,
+"b": 619.949,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hpk_01.jpg",
+"o": {
+"build": {
+"lines": [
+"negocio *pésimo.*"
+],
+"a": 47
+},
+"credit": "Charles J. Sharp · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 619.949,
+"b": 623.849,
+"k": "g",
+"t": "score",
+"p": {
+"n": 7
+},
+"big": true
+},
+{
+"a": 623.849,
+"b": 629.229,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "stand",
+"o": {
+"build": {
+"lines": [
+"la manada se *abre.*"
+],
+"y": 90,
+"a": 103
+}
+}
+}
+},
+{
+"a": 629.229,
+"b": 632.849,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_08_5.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 632.849,
+"b": 635.369,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hipuw_03.jpg",
+"o": {
+"credit": "Vanmulondo · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 635.369,
+"b": 639.949,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hpk_02.jpg",
+"o": {
+"credit": "Diego Delso · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 639.949,
+"b": 645.029,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "stand",
+"o": {
+"aside": {
+"t": "ok ok, perdón!!",
+"x": 1150,
+"y": 300,
+"a": 41
+}
+}
+}
+},
+{
+"a": 645.029,
+"b": 652.389,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "charge",
+"o": {
+"big": {
+"w": "¡PUM!",
+"size": 200,
+"y": 140,
+"color": "#f14536",
+"a": 194
+}
+}
+}
+},
+{
+"a": 652.389,
+"b": 656.709,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a18_hippo_charge.jpg"
+}
+},
+{
+"a": 656.709,
+"b": 660.289,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionpride_05.jpg",
+"o": {
+"credit": "Rasheedhrasheed · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 660.289,
+"b": 663.649,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "lie"
+}
+},
+{
+"a": 663.649,
+"b": 670.109,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"en cámara *lenta.*"
+],
+"y": 380,
+"size": 110,
+"a": 43
+}
+}
+}
+},
+{
+"a": 670.109,
+"b": 676.989,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "slow",
+"o": {
+"build": {
+"lines": [
+"contra el *espacio.*"
+],
+"y": 90,
+"a": 158
+}
+}
+}
+},
+{
+"a": 676.989,
+"b": 681.289,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipyawn_06.jpg",
+"o": {
+"credit": "Jareynol2004 · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 681.289,
+"b": 683.669,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_hippo_07_16.mp4",
+"o": {
+"credit": "Amada44 · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 683.669,
+"b": 688.479,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"este es *mi río.*"
+],
+"y": 380,
+"size": 120,
+"a": 101
+}
+}
+}
+},
+{
+"a": 688.479,
+"b": 693.429,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "lie"
+}
+},
+{
+"a": 693.429,
+"b": 698.029,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a19_lions_lie.jpg"
+}
+},
+{
+"a": 698.029,
+"b": 700.009,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_06_15.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 700.009,
+"b": 704.129,
+"k": "ilus",
+"t": "hurt",
+"p": {
+"mode": "hospital",
+"o": {
+"build": {
+"lines": [
+"una herida es *hambre.*"
+],
+"y": 90,
+"a": 102
+}
+}
+}
+},
+{
+"a": 704.129,
+"b": 707.169,
+"k": "ilus",
+"t": "hurt",
+"p": {
+"mode": "jaw"
+}
+},
+{
+"a": 707.169,
+"b": 710.239,
+"k": "ilus",
+"t": "hurt",
+"p": {
+"mode": "paw"
+}
+},
+{
+"a": 710.239,
+"b": 712.203,
+"k": "g",
+"t": "ecg",
+"p": {
+"cut": 0.7,
+"o": {
+"build": {
+"lines": [
+"no hay *hospital.*"
+],
+"a": 4,
+"y": 120
+}
+}
+}
+},
+{
+"a": 712.203,
+"b": 716.883,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionmale_04.jpg",
+"o": {
+"build": {
+"lines": [
+"sus propias *heridas.*"
+],
+"a": 110
+},
+"credit": "Byrdyak · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 716.883,
+"b": 719.283,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_04_25.mp4",
+"o": {
+"credit": "Bettina May · CC BY 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 719.283,
+"b": 723.143,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"no vale perder",
+"*3 cazadores.*"
+],
+"a": 4,
+"y": 330,
+"size": 100
+}
+}
+}
+},
+{
+"a": 723.143,
+"b": 725.103,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"no es *NUNCA.*"
+],
+"a": 10,
+"y": 360,
+"size": 130
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 725.103,
+"b": 727.883,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_03_28.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 727.883,
+"b": 729.623,
+"k": "ilus",
+"t": "wins",
+"p": {
+"caption": "¿Cuándo *ganan?*"
+},
+"big": true
+},
+{
+"a": 729.623,
+"b": 731.183,
+"k": "ilus",
+"t": "wins",
+"p": {
+"active": 0
+},
+"big": true
+},
+{
+"a": 731.183,
+"b": 734.043,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/es_hipA_02_4.mp4",
+"o": {
+"credit": "Giles Laurent · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 734.043,
+"b": 738.583,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipcalf_01.jpg",
+"o": {
+"credit": "Adam Jones · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 738.583,
+"b": 742.863,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hyena_01.jpg",
+"o": {
+"label": "Hiena",
+"credit": "Charles J. Sharp · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 742.863,
+"b": 747.703,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipcalf_02.jpg",
+"o": {
+"build": {
+"lines": [
+"las *madres.*"
+],
+"a": 19
+},
+"credit": "autor desconocido · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 747.703,
+"b": 749.443,
+"k": "ilus",
+"t": "wins",
+"p": {
+"active": 1
+},
+"big": true
+},
+{
+"a": 749.443,
+"b": 759.303,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hipnight_01.jpg",
+"o": {
+"label": "De noche",
+"credit": "BMKME · CC0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 759.303,
+"b": 765.563,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "night",
+"o": {
+"build": {
+"lines": [
+"perdió su *fortaleza.*"
+],
+"y": 90,
+"a": 158
+}
+}
+}
+},
+{
+"a": 765.563,
+"b": 768.983,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a23_lions_night.jpg"
+}
+},
+{
+"a": 768.983,
+"b": 773.063,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "night",
+"o": {
+"build": {
+"lines": [
+"Sin *luna.*"
+],
+"y": 90,
+"a": 41
+}
+}
+}
+},
+{
+"a": 773.063,
+"b": 780.003,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a22_hippo_night.jpg"
+}
+},
+{
+"a": 780.003,
+"b": 786.283,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"ese silencio",
+"es la *manada.*"
+],
+"y": 330,
+"size": 110,
+"a": 165
+}
+}
+}
+},
+{
+"a": 786.283,
+"b": 788.923,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lionnight_01.jpg",
+"o": {
+"credit": "John Macallan Swan · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 788.923,
+"b": 795.003,
+"k": "ilus",
+"t": "rivercut",
+"p": {
+"mode": "lion",
+"o": {
+"build": {
+"lines": [
+"entre él y el *río.*"
+],
+"y": 90,
+"a": 67
+}
+}
+}
+},
+{
+"a": 795.003,
+"b": 803.623,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "night",
+"o": {
+"aside": {
+"t": "con permiso…",
+"x": 1150,
+"y": 300,
+"a": 215
+}
+}
+}
+},
+{
+"a": 803.623,
+"b": 807.763,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lioncub_04.jpg",
+"o": {
+"credit": "Charles J. Sharp · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 807.763,
+"b": 809.823,
+"k": "ilus",
+"t": "wins",
+"p": {
+"active": 2
+},
+"big": true
+},
+{
+"a": 809.823,
+"b": 814.413,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a24_mud_pools.jpg"
+}
+},
+{
+"a": 814.413,
+"b": 819.523,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "drought"
+}
+},
+{
+"a": 819.523,
+"b": 830.143,
+"k": "g",
+"t": "map",
+"p": {
+"at": [
+24.0,
+-18.7
+],
+"name": "Norte de Botsuana",
+"sub": "ríos de la temporada seca"
+},
+"big": true
+},
+{
+"a": 830.143,
+"b": 836.283,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "drought"
+}
+},
+{
+"a": 836.283,
+"b": 838.623,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/es_hipgraze_03.jpg",
+"o": {
+"credit": "Ad Meskens · CC BY-SA 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 838.623,
+"b": 842.803,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lioninjured_01.jpg",
+"o": {
+"build": {
+"lines": [
+"salen *heridos.*"
+],
+"a": 32
+},
+"credit": "Kevin Pluck · CC BY 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 842.803,
+"b": 845.023,
+"k": "ilus",
+"t": "wins",
+"p": {
+"active": 3
+},
+"big": true
+},
+{
+"a": 845.023,
+"b": 849.083,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_05_3.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 849.083,
+"b": 855.373,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a25_hippo_weak.jpg"
+}
+},
+{
+"a": 855.373,
+"b": 858.583,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_02_45.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 858.583,
+"b": 867.523,
+"k": "g",
+"t": "score",
+"p": {
+"n": 7,
+"verdict": true,
+"va": 205
+},
+"big": true
+},
+{
+"a": 867.523,
+"b": 869.763,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_06_22.mp4",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 869.763,
+"b": 872.263,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"la ley del *colmillo.*"
+],
+"y": 300,
+"size": 110,
+"a": 16
+}
+}
+}
+},
+{
+"a": 872.263,
+"b": 873.943,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30colmies/cand/en_lionmale_03.jpg",
+"r": "img/t30colmies/cand/es_hipmouth_01.jpg",
+"wl": "FUERTE",
+"wr": "HERIDO",
+"a": 17
+},
+"big": true
+},
+{
+"a": 873.943,
+"b": 876.423,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"quién se puede dar el lujo",
+"de salir *HERIDO.*"
+],
+"a": 2,
+"y": 320,
+"size": 96
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 876.423,
+"b": 878.863,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_river_03_0.mp4",
+"o": {
+"credit": "Farai Gandiya · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 878.863,
+"b": 884.703,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_hpk_04.jpg",
+"o": {
+"credit": "Dietmar Rabich · CC BY-SA 4.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 884.703,
+"b": 891.523,
+"k": "ilus",
+"t": "people",
+"p": {},
+"big": true
+},
+{
+"a": 891.523,
+"b": 895.703,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "grabado de 1890",
+"side": "c",
+"v": "img/t30colmies/cand/en_hipboat_03.jpg",
+"ar": 1.6396,
+"o": {
+"credit": "Internet Archive Book Images · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 895.703,
+"b": 898.523,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "foto de 1908",
+"side": "c",
+"v": "img/t30colmies/cand/en_hipboat_02.jpg",
+"ar": 1.259,
+"o": {
+"credit": "Internet Archive Book Images · Public domain · Wikimedia Commons"
+}
+}
+},
+{
+"a": 898.523,
+"b": 902.423,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30colmies/en_lion_04_40.mp4",
+"o": {
+"credit": "Bettina May · CC BY 3.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 902.423,
+"b": 906.543,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Nunca te pares entre un hipopótamo",
+"y su *RÍO.*"
+],
+"a": 2,
+"y": 320,
+"size": 90
+}
+}
+}
+},
+{
+"a": 906.543,
+"b": 911.003,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Te sorprendió el hipopótamo?",
+"bell": false
+}
+},
+{
+"a": 911.003,
+"b": 917.483,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30colmies/cand/en_buffalo_02.jpg",
+"r": "img/t30colmies/cand/en_crocjaw_01.jpg",
+"wl": "¿ELEFANTE?",
+"wr": "¿JAGUAR?",
+"a": 133
+},
+"big": true
+},
+{
+"a": 917.483,
+"b": 922.463,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Tu mejor enfrentamiento: el más votado va la semana que viene.",
+"bell": false
+}
+},
+{
+"a": 922.463,
+"b": 929.383,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_okavango_02.jpg",
+"o": {
+"credit": "Joachim Huber · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 929.383,
+"b": 936.893,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_okavango_03.jpg",
+"o": {
+"build": {
+"lines": [
+"hasta los hipopótamos *temen* cruzar."
+],
+"size": 78,
+"a": 145
+},
+"credit": "Joachim Huber · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 936.893,
+"b": 940.743,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbete + campanita para no perdértelo."
+}
+},
+{
+"a": 940.743,
+"b": 944.123,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/ag/t30colmies_a31_sunset_river.jpg"
+}
+},
+{
+"a": 944.123,
+"b": 946.123,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30colmies/cand/en_lioness_03.jpg",
+"o": {
+"credit": "Bernard DUPONT · CC BY-SA 2.0 · Wikimedia Commons"
+}
+}
+},
+{
+"a": 946.123,
+"b": 950.82,
+"k": "ilus",
+"t": "river",
+"p": {
+"mode": "end",
+"o": {
+"build": {
+"lines": [
+"todavía te está *mirando.*"
+],
+"a": 10
+}
+}
+}
+}
+]
+}

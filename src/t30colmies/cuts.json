@@ -1,0 +1,38 @@
+{
+ "lion_walk": {
+  "img": "img/t30colmies/cut/lion_r.png",
+  "ar": 1.3346
+ },
+ "lion_lie": {
+  "img": "img/t30colmies/cut/lionlie.png",
+  "ar": 2.0144
+ },
+ "lion_lie2": {
+  "img": "img/t30colmies/cut/lionlie.png",
+  "ar": 2.0144
+ },
+ "lion_male": {
+  "img": "img/t30colmies/cut/lion.png",
+  "ar": 1.3346
+ },
+ "hippo_side": {
+  "img": "img/t30colmies/cut/hippo.png",
+  "ar": 1.9814
+ },
+ "hippo_gape": {
+  "img": "img/t30colmies/cut/hippomouth.png",
+  "ar": 1.395
+ },
+ "croc": {
+  "img": "img/t30colmies/cut/croc.png",
+  "ar": 3.2124
+ },
+ "zebra": {
+  "img": "img/t30colmies/cut/zebra.png",
+  "ar": 1.2597
+ },
+ "hippo_calf": {
+  "img": "img/t30colmies/cut/calf.png",
+  "ar": 1.9205
+ }
+}
