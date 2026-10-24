@@ -2259,11 +2259,12 @@
 "o": {
 "build": {
 "lines": [
+"una sola vez,",
 "este es *mi río.*"
 ],
-"y": 380,
+"y": 330,
 "size": 120,
-"a": 101
+"a": 37
 }
 }
 }
@@ -2596,12 +2597,13 @@
 "o": {
 "build": {
 "lines": [
-"ese silencio",
+"detrás, bajo el pasto,",
+"no escuchas *nada.*",
 "es la *manada.*"
 ],
-"y": 330,
-"size": 110,
-"a": 165
+"y": 260,
+"size": 100,
+"a": 24
 }
 }
 }
