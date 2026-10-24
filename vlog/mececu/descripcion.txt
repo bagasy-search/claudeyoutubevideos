@@ -1,19 +1,27 @@
-https://manual-mecanico-claudio.vercel.app?src=mececu 👉 Todo lo de la batería, los bornes y cuándo llevarlo al taller está en las páginas 23 y 39 de mi Manual del Mecánico.
+Los 58 trucos de taller que te ahorran el diagnóstico (el de la batería está en la página 18) 👉 https://manual-mecanico-claudio.vercel.app/?src=yt-mececu
 
-Desconectar la batería 10 minutos reinicia la computadora de tu auto y lo ayuda a reaprender después de un arreglo. Pero no sirve para todo, y antes de tocar un cable hay 4 advertencias que nadie te dice: el código de la radio, las ventanillas, el airbag y los autos híbridos. Te muestro el paso a paso completo y la parte que todos se saltean.
+Soltar el cable negativo de la batería 10 minutos borra lo que la computadora de tu auto aprendió mal: el ralentí que tiembla, la aguja que sube y baja, la luz del motor después de una gasolina mala. Pero no arregla piezas rotas, y si lo haces mal te quedas sin radio, sin ventanillas de un toque o con la computadora quemada. Te muestro las 11 cosas en orden, con el auto de doña Elena: qué se resetea, qué cable, qué herramienta, cuánto esperar, el primer arranque que nadie hace y el número 11, el que te ahorra más plata.
 
 En este video:
-00:00 El auto raro en ralentí
-02:31 Qué es la computadora del auto y qué aprende
-03:40 Para qué sirve el reinicio
-03:59 Para qué NO sirve
-04:39 Las 4 advertencias: radio, ventanillas, airbag e híbridos
-08:37 El paso a paso: el negativo primero
-11:38 El reaprendizaje que todos se saltean
-13:35 El repaso
+00:00 El auto que tiembla en el semáforo
+01:56 Soy Claudio: lo que necesitas
+03:05 1. Qué se resetea de verdad
+04:54 2. Cuál cable se suelta
+06:59 3. La lista de antes de soltar
+08:37 4. Cuánto esperar (y el truco del freno)
+10:28 5. Limpiar los bornes con bicarbonato
+12:14 6. Reconectar: el positivo primero
+14:10 7. El primer arranque que nadie hace
+16:00 8. Radio, ventanillas y volante
+18:14 9. Cuándo sirve y cuándo es mentira
+21:06 10. Los autos que no se tocan así
+23:25 Los 5 errores
+24:20 Las 3 reglas de don Ramón
+27:04 11. Lee el código antes
+29:58 El repaso de las 11
 
 Soy Claudio, 35 años de mecánico. Aquí cada semana arreglamos algo del auto de doña Elena.
 
-⚠️ Nunca toques los conectores amarillos (airbag) ni los cables naranjas de un híbrido. Si la luz del airbag queda prendida, al taller.
+⚠️ Son consejos generales de taller. Nunca sueltes un cable con el motor andando ni toques los cables naranjas de un híbrido. Ante una luz roja, frenos o dirección, al mecánico de confianza.
 
 #bateriadelauto #trucosdemecanico #computadoradelauto

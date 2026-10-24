@@ -104,12 +104,12 @@ export const VsCard: React.FC<{ t: number; at: number; out: number; l: { h: stri
 export const Recap: React.FC<{ t: number; rows: { at: number; tx: string; no?: boolean }[]; out: number; title: string }> = ({ t, rows, out, title }) => {
   const o = e(t, rows[0].at - 0.2, rows[0].at) * (1 - e(t, out, out + 0.3)); if (o < 0.01) return null;
   return (
-    <div style={{ ...card, position: "absolute", left: 40, top: 110, width: 760, height: 860, padding: "26px 30px", opacity: o, overflow: "hidden", transform: "perspective(1400px) rotateY(8deg)", background: "repeating-linear-gradient(180deg, #fbf8ef 0 57px, #c9d6e6 57px 58px)" }}>
+    <div style={{ ...card, position: "absolute", left: 40, top: 100, width: 900, height: 880, padding: "26px 30px", opacity: o, overflow: "hidden", transform: "perspective(1400px) rotateY(8deg)", background: "repeating-linear-gradient(180deg, #fbf8ef 0 57px, #c9d6e6 57px 58px)" }}>
       <div style={{ fontWeight: 900, fontSize: 38, color: "#8a5a1e", letterSpacing: 4, marginBottom: 14 }}>{title}</div>
       {rows.map((r, i) => { const w = e(t, r.at, r.at + 0.35), ck = e(t, r.at + 0.35, r.at + 0.55); return (
         <div key={i} style={{ height: 58, display: "flex", alignItems: "center", gap: 14, clipPath: `inset(0 ${100 - 100 * w}% 0 0)` }}>
           <span style={{ fontSize: 40, color: r.no ? COL.red : "#1d8a4c", fontWeight: 900, transform: `scale(${ck})`, width: 44 }}>{r.no ? "✗" : "✓"}</span>
-          <span style={{ fontWeight: 800, fontSize: 32, color: "#1f3557", whiteSpace: "nowrap" }}>{r.tx}</span>
+          <span style={{ fontWeight: 800, fontSize: 27, color: "#1f3557", whiteSpace: "nowrap" }}>{r.tx}</span>
         </div>); })}
     </div>
   );

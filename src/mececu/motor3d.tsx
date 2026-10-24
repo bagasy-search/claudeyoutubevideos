@@ -7,7 +7,8 @@ import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { Post, rbox } from "./fx3d";
-import { at } from "./at";
+import PLAN from "./plan.json";
+import { manoCam } from "../kits/camara/CamaraMano";
 
 export const FPS = 30, W = 1920, H = 1080;
 const cl = (x: number) => Math.max(0, Math.min(1, x));
@@ -18,14 +19,9 @@ const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
 const rnd = (i: number, k = 1) => { const x = Math.sin(i * 127.1 + k * 311.7) * 43758.5453; return x - Math.floor(x); };
 type V3 = [number, number, number];
 
-// ---------------- tiempos de la voz (minuto 1) ----------------
-export const T = {
-  desc: at("desconecta la bateria"), compu: at("la computadora se reinicia"), reinicia: at("se reinicia"), sola: at("se arregla sola"),
-  verdad: at("es verdad"), aveces: at("a veces si"), peor: at("lo peor que"), borne: at("tocar ese borne"), correcta: at("forma correcta"),
-  incorrecta: at("forma incorrecta"), esa: at("esa computadora"), desordena: at("se desordena"), casos: at("en que casos"),
-  herr: at("la herramienta exacta"), primeros: at("primeros 10 minutos"), reconectar: at("reconectar"), saltean: at("todos se saltean"),
-  truco: at("el truco funcione"),
-};
+// ---------------- tiempos: TODO sale de plan.json (plan.py resuelve cada frase de la voz) ----------------
+type WP = { keys: { t: number; p: V3; l: V3; fov?: number; arc?: number }[]; clamp: [number, number][]; wrench: [number, number][]; brain: [number, string][]; warn: [number, number][] };
+const WD = (PLAN as unknown as { world: WP }).world;
 
 // ---------------- geometría (trompa hacia -z, el auto termina en el corte de z = -0.45) ----------------
 const BATT = { p: [-0.48, 0.86, -1.72] as V3, s: [0.32, 0.24, 0.2] as V3 };
@@ -39,31 +35,7 @@ export const PT = {
 
 // ---------------- CÁMARA ----------------
 export type Key = { t: number; p: V3; l: V3; fov?: number; arc?: number };
-export const KEYS: Key[] = [
-  // M1 · la maqueta entera → la batería (desconecta) → la computadora (se reinicia, aprende) → abre para "a veces sí / a veces lo peor"
-  { t: 22.4, p: [-2.3, 2.05, -3.7], l: [0, 0.82, -1.35], fov: 40 },
-  { t: T.desc - 0.4, p: [-1.15, 1.5, -2.65], l: [-0.45, 0.92, -1.72], fov: 32 },
-  { t: T.compu - 0.3, p: [-0.95, 1.42, -2.5], l: [-0.42, 0.92, -1.72], fov: 31 },
-  { t: T.compu + 0.9, p: [0.95, 1.42, -2.62], l: [0.52, 0.92, -1.78], fov: 29, arc: 0.06 },
-  { t: T.verdad, p: [0.78, 1.32, -2.38], l: [0.52, 0.92, -1.78], fov: 28 },
-  { t: T.aveces + 0.6, p: [-1.7, 2.15, -3.45], l: [0, 0.85, -1.4], fov: 40 },
-  { t: 33.9, p: [-1.55, 2.05, -3.3], l: [0, 0.85, -1.4], fov: 39 },
-  // M2 · el borne de cerca (antes de tocarlo) → correcta / incorrecta → la computadora que se desordena → se abre
-  { t: 52.9, p: [-0.12, 1.18, -2.18], l: [-0.38, 0.97, -1.69], fov: 28 },
-  { t: T.correcta - 0.4, p: [-0.22, 1.22, -2.24], l: [-0.38, 0.96, -1.69], fov: 27 },
-  { t: T.correcta + 0.6, p: [-1.35, 1.75, -2.95], l: [-0.2, 0.86, -1.5], fov: 36 },
-  { t: T.esa - 0.2, p: [-1.25, 1.7, -2.85], l: [-0.15, 0.86, -1.5], fov: 36 },
-  { t: T.esa + 1.0, p: [0.98, 1.36, -2.52], l: [0.52, 0.92, -1.78], fov: 28, arc: 0.06 },
-  { t: T.desordena + 0.8, p: [0.8, 1.27, -2.3], l: [0.52, 0.92, -1.78], fov: 27 },
-  { t: T.casos + 0.6, p: [0.1, 2.45, -3.65], l: [0, 0.85, -1.4], fov: 38 },
-  { t: 65.9, p: [0.2, 2.4, -3.55], l: [0, 0.85, -1.4], fov: 38 },
-  // M3 · la llave de 10 en el borne → se reconecta → la computadora vuelve a aprender en orden
-  { t: 70.8, p: [-1.0, 1.42, -2.5], l: [-0.4, 0.96, -1.71], fov: 30 },
-  { t: T.herr + 1.6, p: [-0.82, 1.32, -2.34], l: [-0.4, 0.96, -1.71], fov: 29 },
-  { t: T.primeros - 0.2, p: [0.15, 2.05, -3.25], l: [0.05, 0.86, -1.6], fov: 38, arc: 0.05 },
-  { t: T.saltean, p: [0.55, 1.62, -2.85], l: [0.3, 0.9, -1.72], fov: 33 },
-  { t: T.truco + 0.5, p: [0.6, 1.5, -2.65], l: [0.4, 0.9, -1.75], fov: 31 },
-];
+export const KEYS: Key[] = WD.keys;
 export const camAt = (t: number) => {
   let i = 0;
   while (i < KEYS.length - 1 && KEYS[i + 1].t <= t) i++;
@@ -72,6 +44,10 @@ export const camAt = (t: number) => {
   const v = (q: V3) => new THREE.Vector3(q[0], q[1], q[2]);
   const p = v(a.p).lerp(v(b.p), k), l = v(a.l).lerp(v(b.l), k);
   if (b.arc) p.y += Math.sin(Math.PI * k) * b.arc * 3;
+  // cámara a mano: balanceo lento (pan/tilt de décimas de grado) sobre la mirada
+  const m = manoCam(t, 0.8, 3), d = p.distanceTo(l), dir = l.clone().sub(p).normalize();
+  const right = new THREE.Vector3().crossVectors(dir, new THREE.Vector3(0, 1, 0)).normalize(), up = new THREE.Vector3().crossVectors(right, dir);
+  l.add(right.multiplyScalar(Math.tan((m.pan * Math.PI) / 180) * d)).add(up.multiplyScalar(Math.tan((m.tilt * Math.PI) / 180) * d));
   return { p, l, fov: lerp(a.fov ?? 50, b.fov ?? 50, k) };
 };
 export const project = (cm: { p: THREE.Vector3; l: THREE.Vector3; fov: number }, q: THREE.Vector3) => {
@@ -93,31 +69,25 @@ const Cam: React.FC<{ t: number }> = ({ t }) => {
 };
 
 // ---------------- estados (todo clavado a la voz) ----------------
+const inAny = (t: number, L: [number, number][], up = 0.6, dn = 0.45) => Math.max(0, ...L.map(([a, b]) => win(t, a, a + up) * (1 - win(t, b - dn, b))));
 // grampa del borne negativo: 0 = puesta, 1 = levantada y corrida
-export const clampAt = (t: number) => {
-  if (t < 40) return win(t, T.desc + 0.2, T.desc + 0.8) * (1 - win(t, T.reinicia - 0.5, T.reinicia - 0.1));
-  return win(t, T.herr + 1.6, T.herr + 2.2) * (1 - win(t, T.reconectar - 0.3, T.reconectar + 0.15));
-};
+export const clampAt = (t: number) => inAny(t, WD.clamp);
 // la llave de 10: visible y girando sobre la tuerca del borne
 const wrenchAt = (t: number) => {
-  const vis = (a: number, b: number) => win(t, a, a + 0.35) * (1 - win(t, b - 0.35, b));
-  const v = Math.max(vis(T.desc - 0.6, T.desc + 0.7), vis(T.herr - 0.2, T.herr + 1.9), vis(T.reconectar - 1.0, T.reconectar + 0.4));
-  const turn = t < 40 ? win(t, T.desc - 0.3, T.desc + 0.3) : t < T.reconectar - 1.2 ? win(t, T.herr + 0.2, T.herr + 1.5) : 1 - win(t, T.reconectar - 0.7, T.reconectar);
-  return { v, turn };
+  const v = inAny(t, WD.wrench, 0.35, 0.35);
+  const cur = WD.wrench.find(([a, b]) => t >= a - 0.4 && t <= b + 0.4);
+  return { v, turn: cur ? win(t, cur[0] + 0.2, cur[0] + 1.0) : 0 };
 };
-// el cerebro: modo y cuántas luces aprendieron
+// el cerebro: modo y cuántas luces aprendieron ("lost" = las 3 que parpadean en rojo)
 type Brain = { mode: "ok" | "caos" | "off" | "learn"; k: number; lost: number };
 export const brainAt = (t: number): Brain => {
-  if (t < 40) {
-    if (t < T.desc + 0.5) return { mode: "caos", k: 0, lost: 0 };
-    if (t < T.reinicia) return { mode: "off", k: 0, lost: 0 };
-    if (t < T.sola + 0.6) return { mode: "learn", k: win(t, T.reinicia, T.sola + 0.5), lost: 0 };
-    return { mode: "ok", k: 1, lost: t > T.peor - 0.2 ? win(t, T.peor - 0.2, T.peor + 0.3) : 0 };
-  }
-  if (t < 69) return t < T.desordena ? { mode: "ok", k: 1, lost: 0 } : { mode: "caos", k: 0, lost: 0 };
-  if (t < T.herr + 1.9) return { mode: "caos", k: 0, lost: 0 };
-  if (t < T.reconectar) return { mode: "off", k: 0, lost: 0 };
-  return { mode: t < T.truco + 0.3 ? "learn" : "ok", k: win(t, T.reconectar + 0.1, T.truco + 0.2), lost: 0 };
+  let i = -1;
+  for (let j = 0; j < WD.brain.length; j++) if (WD.brain[j][0] <= t) i = j;
+  if (i < 0) return { mode: "caos", k: 0, lost: 0 };
+  const [t0, m] = WD.brain[i], t1 = WD.brain[i + 1]?.[0] ?? t0 + 3;
+  if (m === "learn") return { mode: "learn", k: win(t, t0, Math.max(t0 + 0.8, t1 - 0.2)), lost: 0 };
+  if (m === "lost") return { mode: "ok", k: 1, lost: win(t, t0 - 0.2, t0 + 0.3) };
+  return { mode: m as Brain["mode"], k: 1, lost: 0 };
 };
 
 // ---------------- texturas ----------------
@@ -216,8 +186,8 @@ const BrainLights: React.FC<{ t: number; b: Brain }> = ({ t, b }) => {
 export const World: React.FC<{ t: number }> = ({ t }) => {
   const tx = useTex();
   const c = clampAt(t), w = wrenchAt(t), b = brainAt(t);
-  const warn = t > T.borne - 0.3 && t < T.correcta + 0.2 ? win(t, T.borne - 0.3, T.borne + 0.2) * (0.6 + 0.4 * Math.sin(t * 9)) : 0;
-  const shake = b.mode === "caos" && t < 40 && t < T.desc ? Math.sin(t * 47) * 0.0025 : 0; // el motor tiembla en ralentí
+  const warn = inAny(t, WD.warn, 0.5, 0.3) * (0.6 + 0.4 * Math.sin(t * 9));
+  const shake = b.mode === "caos" && c < 0.01 ? Math.sin(t * 47) * 0.0025 : 0; // el motor tiembla en ralentí (con la computadora desordenada)
   const clampPos: V3 = [NEG[0] + c * 0.06, NEG[1] + 0.012 + c * 0.12, NEG[2] - c * 0.05];
   return (
     <ThreeCanvas width={W} height={H} shadows gl={{ antialias: true, preserveDrawingBuffer: true }} style={{ position: "absolute", inset: 0 }}>
