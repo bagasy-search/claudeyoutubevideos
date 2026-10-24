@@ -1,0 +1,2186 @@
+{
+ "total": 853.192,
+ "avatarEnd": 853.192,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0.0,
+   "dur": 5.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 5.58,
+   "dur": 2.98,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 8.56,
+   "dur": 3.28,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j25_closed_curtain.jpg"
+  },
+  {
+   "t": 11.84,
+   "dur": 8.84,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 76000,
+    "unit": "personas",
+    "label": "MUEREN SOLAS EN SU CASA, CADA AÑO",
+    "compare": "En el país más educado del mundo.",
+    "source": "Agencia Nacional de Policía de Japón, 2024",
+    "photo": "img/t30pasaes_a01_doors_row.jpg",
+    "tone": "red",
+    "at": 13.84,
+    "compareAt": 16.76
+   },
+   "bed": "img/t30pasaes_j01_street_dusk_blur.jpg"
+  },
+  {
+   "t": 20.68,
+   "dur": 3.62,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 24.3,
+   "dur": 5.12,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a05_phone_bow.jpg"
+  },
+  {
+   "t": 29.42,
+   "dur": 4.2,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 33.62,
+   "dur": 1.96,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j02_mailbox_full.jpg"
+  },
+  {
+   "t": 35.58,
+   "dur": 3.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 39.06,
+   "dur": 2.96,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j03_meter.jpg"
+  },
+  {
+   "t": 42.02,
+   "dur": 2.98,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j04_knock.jpg"
+  },
+  {
+   "t": 45.0,
+   "dur": 3.02,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j33_window_inside.jpg"
+  },
+  {
+   "t": 48.02,
+   "dur": 3.04,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f37.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 51.06,
+   "dur": 3.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 54.06,
+   "dur": 3.76,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 14,
+    "unit": "millones",
+    "label": "DE PERSONAS VIVEN EN TOKIO",
+    "compare": "Y nadie vino a buscarlo.",
+    "source": "Gobierno Metropolitano de Tokio",
+    "photo": "img/t30pasaes_a65_windows_many.jpg",
+    "tone": "white",
+    "at": 53.16,
+    "compareAt": 54.06
+   },
+   "bed": "img/t30pasaes_j01_street_dusk_blur.jpg"
+  },
+  {
+   "t": 57.82,
+   "dur": 6.0,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f48.mp4",
+   "real": true,
+   "rate": 0.994
+  },
+  {
+   "t": 63.82,
+   "dur": 2.3,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j05_wallet_train.jpg"
+  },
+  {
+   "t": 66.12,
+   "dur": 2.0,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a08_lost_found.jpg"
+  },
+  {
+   "t": 68.12,
+   "dur": 3.68,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 71.8,
+   "dur": 5.12,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v02_01.mp4",
+   "real": true,
+   "rate": 0.969
+  },
+  {
+   "t": 76.92,
+   "dur": 6.78,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f62.mp4",
+   "real": true,
+   "rate": 0.88
+  },
+  {
+   "t": 83.7,
+   "dur": 4.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 88.24,
+   "dur": 5.12,
+   "sec": "S1",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_01.mp4",
+   "real": true,
+   "rate": 0.969
+  },
+  {
+   "t": 93.36,
+   "dur": 6.16,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · Nº 01",
+    "title": "JAPÓN",
+    "sub": "El lado que no sale en la postal",
+    "part": "",
+    "stamp": "",
+    "typeAt": 92.08
+   },
+   "bed": "img/t30pasaes_j07_tatami_laptop_blur.jpg"
+  },
+  {
+   "t": 99.52,
+   "dur": 1.38,
+   "sec": "S2",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v01_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 100.9,
+   "dur": 3.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 104.14,
+   "dur": 5.98,
+   "sec": "S2",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f55.mp4",
+   "real": true,
+   "rate": 0.998
+  },
+  {
+   "t": 110.12,
+   "dur": 3.1,
+   "sec": "S2",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v01_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 113.22,
+   "dur": 5.46,
+   "sec": "S2",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j08_wall_listen.jpg"
+  },
+  {
+   "t": 118.68,
+   "dur": 3.26,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 121.94,
+   "dur": 2.58,
+   "sec": "S2",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v40_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 124.52,
+   "dur": 8.62,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a60_mail_slot.jpg"
+  },
+  {
+   "t": 133.14,
+   "dur": 3.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 136.38,
+   "dur": 4.74,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "EL NÚMERO",
+    "sub": "",
+    "part": "PARTE 1",
+    "stamp": "",
+    "typeAt": 136.04
+   },
+   "bed": "img/t30pasaes_j10_police_paper_blur.jpg"
+  },
+  {
+   "t": 141.12,
+   "dur": 2.54,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j10_police_paper.jpg"
+  },
+  {
+   "t": 143.66,
+   "dur": 4.14,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f50.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 143.66,
+   "dur": 4.14,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 1",
+    "part": "EL NÚMERO"
+   },
+   "bed": "img/t30pasaes_j10_police_paper_blur.jpg"
+  },
+  {
+   "t": 147.8,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 151.4,
+   "dur": 16.98,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 76020,
+    "unit": "personas",
+    "label": "MURIERON SOLAS EN SU CASA · JAPÓN, 2024",
+    "compare": "Más de 3 de cada 4 tenían más de 65 años.",
+    "source": "Agencia Nacional de Policía de Japón (primer conteo nacional, 2024)",
+    "photo": "img/t30pasaes_keisatsucho.jpg",
+    "credit": "Foto: っ · CC BY-SA 3.0 · Wikimedia Commons",
+    "tone": "red",
+    "at": 152.8,
+    "compareAt": 153.68
+   },
+   "bed": "img/t30pasaes_j10_police_paper_blur.jpg"
+  },
+  {
+   "t": 168.38,
+   "dur": 3.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 171.72,
+   "dur": 6.8,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaes_a30_tv_through_wall.jpg",
+    "rightImg": "img/t30pasaes_a49_funeral_flowers.jpg",
+    "leftHead": "KODOKU",
+    "rightHead": "SHI",
+    "leftText": "Soledad",
+    "rightText": "Muerte",
+    "stamp": "KODOKUSHI",
+    "leftAt": 170.76,
+    "rightAt": 172.76
+   },
+   "bed": "img/t30pasaes_j10_police_paper_blur.jpg"
+  },
+  {
+   "t": 178.52,
+   "dur": 4.86,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j11_newspaper_store.jpg"
+  },
+  {
+   "t": 183.38,
+   "dur": 3.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 186.54,
+   "dur": 9.4,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/t30pasaes_map_kanto.jpg",
+    "pins": [
+     {
+      "x": 745,
+      "y": 760,
+      "label": "TOKIO",
+      "at": 186.82,
+      "zoom": 1.3
+     },
+     {
+      "x": 935,
+      "y": 580,
+      "label": "MATSUDO",
+      "at": 188.7,
+      "zoom": 1.9
+     },
+     {
+      "x": 1003,
+      "y": 559,
+      "label": "TOKIWADAIRA",
+      "year": "1960",
+      "at": 192.76,
+      "zoom": 2.6
+     }
+    ],
+    "kicker": "JAPÓN · CHIBA",
+    "credit": "Mapa: Soren Bradley · CC0 · Wikimedia Commons"
+   },
+   "bed": "img/t30pasaes_j10_police_paper_blur.jpg"
+  },
+  {
+   "t": 195.94,
+   "dur": 3.62,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_f05.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 199.56,
+   "dur": 4.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 204.52,
+   "dur": 1.52,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 206.04,
+   "dur": 3.9,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_v07_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 209.94,
+   "dur": 8.538,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j14_bank_atm.jpg"
+  },
+  {
+   "t": 218.478,
+   "dur": 3.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 221.638,
+   "dur": 6.602,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f06.mp4",
+   "real": true,
+   "rate": 0.904
+  },
+  {
+   "t": 228.24,
+   "dur": 4.458,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j38_prison_wall.jpg"
+  },
+  {
+   "t": 232.698,
+   "dur": 3.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 236.518,
+   "dur": 3.422,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j15_community_cafe.jpg"
+  },
+  {
+   "t": 239.94,
+   "dur": 7.498,
+   "sec": "S3",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_f33.mp4",
+   "rate": 0.796
+  },
+  {
+   "t": 247.438,
+   "dur": 1.66,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a21_elderly_walk.jpg"
+  },
+  {
+   "t": 249.098,
+   "dur": 4.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 253.198,
+   "dur": 2.62,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "RAZÓN 1 · LA EDAD",
+    "sub": "",
+    "part": "PARTE 2",
+    "stamp": "",
+    "typeAt": 249.2
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 255.818,
+   "dur": 4.48,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f08.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 255.818,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 2",
+    "part": "RAZÓN 1 · LA EDAD"
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 260.298,
+   "dur": 9.8,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 29.3,
+    "decimals": 1,
+    "unit": "%",
+    "label": "DE LA GENTE EN JAPÓN TIENE MÁS DE 65 AÑOS",
+    "compare": "Casi 1 de cada 3 personas en la calle.",
+    "source": "Oficina de Estadística de Japón, 2024",
+    "photo": "img/t30pasaes_a20_elderly_bench.jpg",
+    "tone": "white",
+    "at": 255.48,
+    "compareAt": 260.7
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 270.098,
+   "dur": 2.0,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v03_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 272.098,
+   "dur": 4.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 276.438,
+   "dur": 1.36,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f18.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 277.798,
+   "dur": 9.2,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 38,
+    "unit": "%",
+    "label": "DE LOS HOGARES: UNA SOLA PERSONA",
+    "compare": "Una persona, una llave, una puerta.",
+    "source": "Censo de Japón, 2020",
+    "photo": "img/t30pasaes_a23_key_door.jpg",
+    "tone": "white",
+    "at": 276.44,
+    "compareAt": 281.68
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 286.998,
+   "dur": 3.58,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "RAZÓN 2 · MEIWAKU",
+    "sub": "",
+    "part": "PARTE 3",
+    "stamp": "",
+    "typeAt": 284.98
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 290.578,
+   "dur": 3.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 294.538,
+   "dur": 3.68,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v12_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 294.538,
+   "dur": 3.68,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 3",
+    "part": "RAZÓN 2 · MEIWAKU"
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 298.218,
+   "dur": 3.9,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_v40_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 302.118,
+   "dur": 5.38,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j20_park_garbage.jpg"
+  },
+  {
+   "t": 307.498,
+   "dur": 4.14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 311.638,
+   "dur": 1.48,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j09_notebook_write.jpg"
+  },
+  {
+   "t": 313.118,
+   "dur": 4.933,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_v22_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 318.051,
+   "dur": 6.427,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j22_phone_call.jpg"
+  },
+  {
+   "t": 324.478,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 328.078,
+   "dur": 6.06,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j26_bow_door.jpg"
+  },
+  {
+   "t": 334.138,
+   "dur": 7.26,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaes_a07_wallet_seat.jpg",
+    "rightImg": "img/t30pasaes_a27_closed_door_night.jpg",
+    "leftHead": "LA EDUCACIÓN QUE…",
+    "rightHead": "…Y LA MISMA EDUCACIÓN",
+    "leftText": "Te devuelve la billetera",
+    "rightText": "No deja pedir ayuda",
+    "stamp": "LA PARADOJA",
+    "leftAt": 332.46,
+    "rightAt": 334.78
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 341.398,
+   "dur": 3.42,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 344.818,
+   "dur": 1.6,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f30.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 346.418,
+   "dur": 4.4,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v33_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 350.818,
+   "dur": 5.32,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "RAZÓN 3 · LAS PAREDES",
+    "sub": "",
+    "part": "PARTE 4",
+    "stamp": "",
+    "typeAt": 348.78
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 356.138,
+   "dur": 4.48,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f24.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 356.138,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 4",
+    "part": "RAZÓN 3 · LAS PAREDES"
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 360.618,
+   "dur": 3.16,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 363.778,
+   "dur": 3.66,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 367.438,
+   "dur": 9.38,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j24_tv_glow.jpg"
+  },
+  {
+   "t": 376.818,
+   "dur": 2.22,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j47_name_plate.jpg"
+  },
+  {
+   "t": 379.038,
+   "dur": 4.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 383.538,
+   "dur": 2.48,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 386.018,
+   "dur": 4.4,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a31_hikikomori_room.jpg"
+  },
+  {
+   "t": 390.418,
+   "dur": 3.86,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v09_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 394.278,
+   "dur": 4.24,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 1.46,
+    "decimals": 2,
+    "unit": "millones",
+    "label": "HIKIKOMORI · DE 15 A 64 AÑOS",
+    "compare": "Gente en la mitad de su vida.",
+    "source": "Oficina del Gabinete de Japón, encuesta 2023",
+    "photo": "img/t30pasaes_a31_hikikomori_room.jpg",
+    "tone": "white",
+    "at": 393.24,
+    "compareAt": 398.52
+   },
+   "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 398.518,
+   "dur": 4.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 403.318,
+   "dur": 2.82,
+   "sec": "S4",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v40_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 406.138,
+   "dur": 4.76,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "LA INDUSTRIA SILENCIOSA",
+    "sub": "",
+    "part": "PARTE 5",
+    "stamp": "",
+    "typeAt": 403.42
+   },
+   "bed": "img/t30pasaes_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 410.898,
+   "dur": 3.92,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v01_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 410.898,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 5",
+    "part": "LA INDUSTRIA SILENCIOSA"
+   },
+   "bed": "img/t30pasaes_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 414.818,
+   "dur": 2.48,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j27_cleaning_crew.jpg"
+  },
+  {
+   "t": 417.298,
+   "dur": 3.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 420.838,
+   "dur": 1.78,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a33_cleaning_suits.jpg"
+  },
+  {
+   "t": 422.618,
+   "dur": 6.3,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f25.mp4",
+   "real": true,
+   "rate": 0.947
+  },
+  {
+   "t": 428.918,
+   "dur": 4.878,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 433.796,
+   "dur": 3.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 437.296,
+   "dur": 3.022,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f13.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 440.318,
+   "dur": 4.2,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 444.518,
+   "dur": 2.4,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j28_miniature.jpg"
+  },
+  {
+   "t": 446.918,
+   "dur": 1.558,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a37_miniature_detail.jpg"
+  },
+  {
+   "t": 448.476,
+   "dur": 4.66,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 453.136,
+   "dur": 2.72,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f57.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 455.856,
+   "dur": 5.0,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30pasaes_a36_miniature_room.jpg",
+    "x": 1229,
+    "y": 393,
+    "r": 110,
+    "note": "El calendario, detenido",
+    "circleAt": 453.32,
+    "noteAt": 453.98
+   },
+   "bed": "img/t30pasaes_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 460.856,
+   "dur": 4.02,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v40_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 464.876,
+   "dur": 3.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 468.256,
+   "dur": 3.5,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j29_insurance_papers.jpg"
+  },
+  {
+   "t": 471.756,
+   "dur": 2.5,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f31.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 474.256,
+   "dur": 7.32,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f34.mp4",
+   "real": true,
+   "rate": 0.815
+  },
+  {
+   "t": 481.576,
+   "dur": 3.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 484.756,
+   "dur": 1.2,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a39_insurance_contract.jpg"
+  },
+  {
+   "t": 485.956,
+   "dur": 7.7,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f61.mp4",
+   "real": true,
+   "rate": 0.775
+  },
+  {
+   "t": 493.656,
+   "dur": 2.4,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f39.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 496.056,
+   "dur": 2.46,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v33_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 498.516,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 502.316,
+   "dur": 5.64,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f20.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 507.956,
+   "dur": 3.2,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j30_laptop_map.jpg"
+  },
+  {
+   "t": 511.156,
+   "dur": 4.12,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f27.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 515.276,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 519.076,
+   "dur": 1.94,
+   "sec": "S5",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v33_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 521.016,
+   "dur": 6.0,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaes_a40_for_rent.jpg",
+    "rightImg": "img/t30pasaes_a41_map_icons.jpg",
+    "leftHead": "UNA GENERACIÓN",
+    "rightHead": "LA SIGUIENTE",
+    "leftText": "Muere sola",
+    "rightText": "Alquila más barato",
+    "stamp": "JIKO BUKKEN",
+    "leftAt": 519.58,
+    "rightAt": 522.4
+   },
+   "bed": "img/t30pasaes_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 527.016,
+   "dur": 3.42,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "LAS CASAS VACÍAS",
+    "sub": "",
+    "part": "PARTE 6",
+    "stamp": "",
+    "typeAt": 524.46
+   },
+   "bed": "img/t30pasaes_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 530.436,
+   "dur": 4.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 534.756,
+   "dur": 6.32,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 9,
+    "unit": "millones",
+    "label": "DE CASAS VACÍAS EN JAPÓN · 2023",
+    "compare": "Nueve millones.",
+    "source": "Encuesta de Vivienda y Tierra, Ministerio del Interior, 2023",
+    "photo": "img/t30pasaes_a43_akiya_house.jpg",
+    "tone": "red",
+    "at": 531.96,
+    "compareAt": 534.76
+   },
+   "bed": "img/t30pasaes_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 541.076,
+   "dur": 3.92,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 541.076,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 6",
+    "part": "LAS CASAS VACÍAS"
+   },
+   "bed": "img/t30pasaes_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 544.996,
+   "dur": 3.34,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f29.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 548.336,
+   "dur": 3.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 552.036,
+   "dur": 7.76,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f09.mp4",
+   "real": true,
+   "rate": 0.769
+  },
+  {
+   "t": 559.796,
+   "dur": 5.3,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/t30pasaes_a48_maternity_empty.jpg",
+    "yearFrom": 1949,
+    "yearTo": 2024,
+    "popFrom": 2696638,
+    "popTo": 686061,
+    "unit": "bebés",
+    "label": "NACIMIENTOS EN JAPÓN POR AÑO",
+    "from": 555.94,
+    "to": 566.94,
+    "marks": [
+     {
+      "year": 1949,
+      "note": "2,7 millones"
+     },
+     {
+      "year": 2024,
+      "note": "686.061 · el mínimo"
+     }
+    ],
+    "source": "Ministerio de Salud de Japón · estadísticas vitales"
+   },
+   "bed": "img/t30pasaes_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 565.096,
+   "dur": 3.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 568.796,
+   "dur": 2.5,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f59.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 571.296,
+   "dur": 2.8,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 574.096,
+   "dur": 3.5,
+   "sec": "S6",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j36_newspapers_pile.jpg"
+  },
+  {
+   "t": 577.596,
+   "dur": 3.68,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_v14_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 581.276,
+   "dur": 3.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 584.736,
+   "dur": 3.36,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v02_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 588.096,
+   "dur": 9.1,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a51_sandwich_shelf.jpg"
+  },
+  {
+   "t": 597.196,
+   "dur": 4.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 601.396,
+   "dur": 2.5,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a53_prison_meal.jpg"
+  },
+  {
+   "t": 603.896,
+   "dur": 6.3,
+   "sec": "S6",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j39_living_room.jpg"
+  },
+  {
+   "t": 610.196,
+   "dur": 4.3,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v09_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 614.496,
+   "dur": 3.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 618.036,
+   "dur": 3.56,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 621.596,
+   "dur": 4.2,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f41.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 625.796,
+   "dur": 3.3,
+   "sec": "S6",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v40_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 629.096,
+   "dur": 2.6,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "LA TECNOLOGÍA DEL CUIDADO",
+    "sub": "",
+    "part": "PARTE 7",
+    "stamp": "",
+    "typeAt": 624.8
+   },
+   "bed": "img/t30pasaes_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 631.696,
+   "dur": 3.62,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 635.316,
+   "dur": 3.02,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j40_kettle.jpg"
+  },
+  {
+   "t": 635.316,
+   "dur": 3.02,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 7",
+    "part": "LA TECNOLOGÍA DEL CUIDADO"
+   },
+   "bed": "img/t30pasaes_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 638.336,
+   "dur": 3.6,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j41_tea_pour.jpg"
+  },
+  {
+   "t": 641.936,
+   "dur": 2.6,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a58_phone_message.jpg"
+  },
+  {
+   "t": 644.536,
+   "dur": 1.798,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f35.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 646.334,
+   "dur": 3.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 649.414,
+   "dur": 9.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30pasaes_a56_kettle_white.jpg",
+    "x": 444,
+    "y": 577,
+    "r": 150,
+    "note": "Mamá hizo té. Está bien.",
+    "circleAt": 644.83,
+    "noteAt": 645.33
+   },
+   "bed": "img/t30pasaes_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 658.914,
+   "dur": 2.4,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j16_patrol_flyer.jpg"
+  },
+  {
+   "t": 661.314,
+   "dur": 1.22,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a13_police_stats.jpg"
+  },
+  {
+   "t": 662.534,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 665.734,
+   "dur": 7.08,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j44_tea_two_cups.jpg"
+  },
+  {
+   "t": 672.814,
+   "dur": 3.4,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a70_corridor_wave.jpg"
+  },
+  {
+   "t": 676.214,
+   "dur": 3.42,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a61_tea_guest.jpg"
+  },
+  {
+   "t": 679.634,
+   "dur": 3.94,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 683.574,
+   "dur": 4.44,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v33_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 688.014,
+   "dur": 2.6,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v08_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 690.614,
+   "dur": 5.32,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_f54.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 695.934,
+   "dur": 4.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 700.114,
+   "dur": 8.44,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaes_kantei.jpg",
+    "rightImg": "img/t30pasaes_a63_law_paper.jpg",
+    "leftHead": "2021",
+    "rightHead": "2024",
+    "leftText": "Un ministro de la soledad",
+    "rightText": "Una ley nacional",
+    "stamp": "PROBLEMA PÚBLICO",
+    "credit": "Foto: AMANO Jun-ichi · CC BY 3.0 · Wikimedia Commons",
+    "leftAt": 693.67,
+    "rightAt": 701.75
+   },
+   "bed": "img/t30pasaes_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 708.554,
+   "dur": 3.2,
+   "sec": "S7",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_v39_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 711.754,
+   "dur": 4.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 716.154,
+   "dur": 4.76,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "PASAPORTE SUCIO · JAPÓN",
+    "title": "LO QUE APRENDÍ",
+    "sub": "",
+    "part": "PARTE 8",
+    "stamp": "",
+    "typeAt": 711.85
+   },
+   "bed": "img/t30pasaes_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 720.914,
+   "dur": 2.0,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 722.914,
+   "dur": 3.92,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v40_06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 722.914,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "JAPÓN · PARTE 8",
+    "part": "LO QUE APRENDÍ"
+   },
+   "bed": "img/t30pasaes_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 726.834,
+   "dur": 2.6,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v35_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 729.434,
+   "dur": 1.38,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j18_one_key.jpg"
+  },
+  {
+   "t": 730.814,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 734.414,
+   "dur": 2.52,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j23_hallway_doors.jpg"
+  },
+  {
+   "t": 736.934,
+   "dur": 7.334,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_f43.mp4",
+   "rate": 0.813
+  },
+  {
+   "t": 744.268,
+   "dur": 2.746,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_f26.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 747.014,
+   "dur": 3.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 750.714,
+   "dur": 2.154,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f58.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 752.868,
+   "dur": 2.9,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v33_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 755.768,
+   "dur": 3.4,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_f12.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 759.168,
+   "dur": 2.626,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaes_real/t30pasaes_f03.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 761.794,
+   "dur": 6.82,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/t30pasaes_map_kanto.jpg",
+    "pins": [
+     {
+      "x": 1003,
+      "y": 559,
+      "label": "TOKIWADAIRA",
+      "at": 758.53,
+      "zoom": 2.6
+     }
+    ],
+    "kicker": "MATSUDO · CHIBA",
+    "credit": "Mapa: Soren Bradley · CC0 · Wikimedia Commons"
+   },
+   "bed": "img/t30pasaes_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 768.614,
+   "dur": 3.98,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 772.594,
+   "dur": 1.4,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v18_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 773.994,
+   "dur": 7.0,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j21_phone_table.jpg"
+  },
+  {
+   "t": 780.994,
+   "dur": 3.1,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v41_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 784.094,
+   "dur": 2.68,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j49_door_hand.jpg"
+  },
+  {
+   "t": 786.774,
+   "dur": 4.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 790.774,
+   "dur": 4.62,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_a23_key_door.jpg"
+  },
+  {
+   "t": 795.394,
+   "dur": 7.6,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j48_hello.jpg"
+  },
+  {
+   "t": 802.994,
+   "dur": 1.44,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j50_backpack.jpg"
+  },
+  {
+   "t": 804.434,
+   "dur": 3.04,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 807.474,
+   "dur": 4.02,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_f02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 811.494,
+   "dur": 6.16,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaes_a67_cafe_morning.jpg",
+    "rightImg": "img/t30pasaes_a50_newspapers_door.jpg",
+    "leftHead": "SI ALGUIEN TOCA LA PUERTA",
+    "rightHead": "SI NADIE LA TOCA",
+    "leftText": "Tres días",
+    "rightText": "Tres años",
+    "stamp": "",
+    "leftAt": 806.47,
+    "rightAt": 809.45
+   },
+   "bed": "img/t30pasaes_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 817.654,
+   "dur": 3.7,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j01_street_dusk.jpg"
+  },
+  {
+   "t": 821.354,
+   "dur": 4.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 825.754,
+   "dur": 4.28,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v04_08.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 830.034,
+   "dur": 10.36,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "02",
+    "label": "PRÓXIMO · Nº 02",
+    "title": "EL PAÍS OPUESTO",
+    "sub": "Tan lleno de gente que no puedes estar solo",
+    "part": "",
+    "stamp": "",
+    "typeAt": 824.75
+   },
+   "bed": "img/t30pasaes_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 840.394,
+   "dur": 4.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 845.134,
+   "dur": 2.12,
+   "sec": "S8",
+   "lugar": "real",
+   "kind": "clip",
+   "asset": "broll/t30pasaes_real/t30pasaes_v40_07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 847.254,
+   "dur": 5.938,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaes_j43_letters_hand.jpg"
+  }
+ ]
+}
