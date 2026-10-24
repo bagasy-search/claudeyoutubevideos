@@ -50,7 +50,7 @@ export const InkPortal: React.FC<{ x: number; y: number; r: number; seed?: numbe
 
 // ---------- el avatar (SIN desenfoque, SIN halo: borde nítido, siempre a cuadro completo) ----------
 export const Avatar: React.FC<{ t: number }> = ({ t }) => {
-  const face = REEL ? <>{WIN.map((w, i) => (
+  const face = REEL ? <><Img src={staticFile(P + "av_still.jpg")} style={{ position: "absolute", width: "100%", height: "100%", objectFit: "cover" }} />{WIN.map((w, i) => (
     <Sequence key={i} from={s(w.ms) - 10} durationInFrames={s(w.me - w.ms) + 12} layout="none">
       <AbsoluteFill style={{ opacity: t >= w.ms - 0.4 && t < w.me + 0.4 ? 1 : 0 }}><OffthreadVideo src={staticFile(P + "reel0.mp4")} startFrom={Math.max(0, s(w.off) - 10)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} /></AbsoluteFill>
     </Sequence>))}</> : <Img src={staticFile(P + "av_still.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${1.01 + 0.01 * Math.sin(t * 0.7)})` }} />;

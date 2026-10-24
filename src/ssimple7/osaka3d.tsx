@@ -264,7 +264,7 @@ const Cup: React.FC<{ p: V; tex: THREE.Texture; s?: number; steam?: number; t?: 
     <mesh position={[0, 0.03, 0]} castShadow><cylinderGeometry args={[0.035, 0.026, 0.06, 24, 1, true]} /><meshStandardMaterial map={tex} color="#ffffff" roughness={0.18} side={THREE.DoubleSide} /></mesh>
     <mesh position={[0, 0.002, 0]}><cylinderGeometry args={[0.024, 0.024, 0.004, 20]} /><meshStandardMaterial color="#e9e4da" /></mesh>
     <mesh position={[0, 0.045, 0]} rotation={[-Math.PI / 2, 0, 0]}><circleGeometry args={[0.031, 24]} /><meshStandardMaterial color="#8a9a3a" roughness={0.1} /></mesh>
-    {steam > 0.01 && glow && Array.from({ length: 5 }, (_, i) => { const ph = (t * 0.35 + i / 5) % 1; return <sprite key={i} position={[Math.sin(ph * 6 + i) * 0.015, 0.07 + ph * 0.18, 0]} scale={[0.05 + ph * 0.06, 0.05 + ph * 0.06, 1]}><spriteMaterial map={glow} color="#ffffff" transparent opacity={steam * 0.22 * Math.sin(Math.PI * ph)} depthWrite={false} /></sprite>; })}
+    {steam > 0.01 && glow && Array.from({ length: 5 }, (_, i) => { const ph = (t * 0.35 + i / 5) % 1; return <sprite visible={false} key={i} position={[Math.sin(ph * 6 + i) * 0.015, 0.07 + ph * 0.18, 0]} scale={[0.05 + ph * 0.06, 0.05 + ph * 0.06, 1]}><spriteMaterial map={glow} color="#ffffff" transparent opacity={steam * 0.22 * Math.sin(Math.PI * ph)} depthWrite={false} /></sprite>; })}
   </group>
 );
 const Teapot: React.FC<{ p: V }> = ({ p }) => (
@@ -362,7 +362,7 @@ const Bowl: React.FC<{ p: V; k: number; t: number; glow: THREE.Texture }> = ({ p
     <mesh position={[0, 0.045, 0]} castShadow><cylinderGeometry args={[0.1, 0.055, 0.09, 32, 1, true]} /><meshStandardMaterial color="#7a1d12" roughness={0.3} side={THREE.DoubleSide} /></mesh>
     <mesh position={[0, 0.075, 0]} rotation={[-Math.PI / 2, 0, 0]}><circleGeometry args={[0.092, 32]} /><meshStandardMaterial color="#d9b77a" roughness={0.5} /></mesh>
     {[0, 1].map((i) => <Cyl key={i} p={[0.03 * i - 0.01, 0.1, 0.0]} r={0.003} h={0.24} c="#a77f3c" rot={[0.2, 0, 1.3]} />)}
-    {Array.from({ length: 5 }, (_, i) => { const ph = (t * 0.35 + i / 5) % 1; return <sprite key={i} position={[Math.sin(ph * 6 + i) * 0.03, 0.1 + ph * 0.22, 0]} scale={[0.07 + ph * 0.08, 0.07 + ph * 0.08, 1]}><spriteMaterial map={glow} color="#ffffff" transparent opacity={ease(k) * 0.24 * Math.sin(Math.PI * ph)} depthWrite={false} /></sprite>; })}
+    {Array.from({ length: 5 }, (_, i) => { const ph = (t * 0.35 + i / 5) % 1; return <sprite visible={false} key={i} position={[Math.sin(ph * 6 + i) * 0.03, 0.1 + ph * 0.22, 0]} scale={[0.07 + ph * 0.08, 0.07 + ph * 0.08, 1]}><spriteMaterial map={glow} color="#ffffff" transparent opacity={ease(k) * 0.24 * Math.sin(Math.PI * ph)} depthWrite={false} /></sprite>; })}
   </group>
 );
 

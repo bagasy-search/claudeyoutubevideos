@@ -207,7 +207,7 @@ export const Rest: React.FC = () => {
   O("66", <Counter t={t} at={at("when my mother was 66")} out={at("a little noodle shop") - 0.1} to={66} dur={0.6} label="HE QUIT THE BANK" x={1440} y={430} size={220} />);
   O("sick", <Hanko t={t} at={at("my mother was sick with worry")} text="EVERY NIGHT: “A MISTAKE”" x={1380} y={330} out={at("and one night he said") - 0.1} size={50} />);
   O("fail", <InkLine t={t} a={at("every time you call i feel")} b={atEnd("eat my noodles")} out={at("she told me she sat with") + 0.6} y={880} size={52} hot={["failing", "noodles"]} />);
-  O("r12", <Order t={t} out={at("she put it in an envelope") - 0.2} x={1400} y={520} items={[{ at: at("rule one"), n: "1", text: "say the worry once" }, { at: at("rule two"), n: "2", text: "decide the amount first" }]} />);
+  O("r12", <Order t={t} out={at("she put it in an envelope") - 0.2} x={1400} y={520} items={[{ at: at("rule one", 770), n: "1", text: "say the worry once" }, { at: at("rule two"), n: "2", text: "decide the amount first" }]} />);
   O("aq", <InkLine t={t} a={at("i am afraid for you")} b={atEnd("now i will be quiet")} out={at("and she was", 780) + 1.2} y={880} size={54} hot={["love", "quiet"]} />);
   O("env", <Envelope t={t} at={at("she put it in an envelope")} seal={at("gave it once")} cut={at("a gift with no string")} out={at("and every friday") - 0.1} />);
   O("22", <Counter t={t} at={at("the noodle shop lasted")} out={at("the mistake most of us make", 812) - 0.1} to={22} dur={0.8} label="YEARS · THE NOODLE SHOP" x={1440} y={430} size={240} />);
@@ -232,7 +232,7 @@ export const Rest: React.FC = () => {
   O("fl", <Order t={t} out={at("she said i cannot fix") - 0.1} x={1420} y={520} items={[{ at: at("a flood somewhere"), n: "↓", text: "a coin at the temple" }, { at: at("lonely old people"), n: "↓", text: "a sweet potato for Mrs. Tanaka" }]} />);
   O("tk", <InkLine t={t} a={at("i cannot fix the world")} b={atEnd("for mrs tanaka")} out={at("mistake most of us make is keeping") - 0.1} y={880} size={60} hot={["thursday"]} />);
   O("drip", <Drip t={t} at={at("like a dripping faucet")} out={at("i have a television") + 0.4} />);
-  O("tv", <CheckList t={t} out={at("so i do what my mother did") + 0.4} title="BAD NEWS, ALL DAY" x={1460} y={520} col={COL.red} items={[{ at: at("a television"), text: "a television" }, { at: at("a phone", 965), text: "a phone" }, { at: at("a tablet"), text: "a tablet" }]} />);
+  O("tv", <CheckList t={t} out={at("so i do what my mother did") + 0.4} title="BAD NEWS, ALL DAY" x={1460} y={520} col={COL.red} items={[{ at: at("a television", 960), text: "a television" }, { at: at("a phone", 965), text: "a phone" }, { at: at("a tablet"), text: "a tablet" }]} />);
   O("6c", <NewsClock t={t} at={at("the news once at six")} out={at("then i turn it off")} hour={6} label="6:00 · SITTING DOWN" />);
 
   // ================= #7 sus cosas → un cajón por mes + el sobre de arriba =================
