@@ -336,7 +336,7 @@ export const Rest: React.FC = () => {
   O("ty", <LowerThird t={t} at={at("thank you for sitting with me")} out={A.tonight - 0.1} name="Sachiko" l2="THANK YOU FOR SITTING WITH ME" l2at={at("thank you for sitting with me") + 0.3} />);
   O("ton", <CheckList t={t} out={at("the worries will still be") + 0.4} title="TONIGHT" x={1460} y={540} col={COL.indigo} items={[{ at: at("write your list"), text: "write your list" }, { at: at("write one next step"), text: "one next step" }, { at: at("close the notebook", A.tonight), text: "close the notebook" }]} />);
   O("sml", <InkLine t={t} a={at("most of them you will see")} b={atEnd("much smaller")} out={at("take care of yourself") + 0.4} y={880} size={66} hot={["smaller"]} />);
-  O("enso", <Enso t={t} at={at("take care of yourself")} out={END + 1} text="see you next time" />);
+  O("enso", <Enso t={t} at={at("take care of yourself")} out={END + 1} x={1570} y={400} R={190} text="see you next time" />);
 
   return <AbsoluteFill style={{ background: "#0b0a09" }}><SvgDefs /><Base t={t} />{L}</AbsoluteFill>;
 };

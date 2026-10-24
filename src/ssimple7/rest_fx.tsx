@@ -730,7 +730,7 @@ export const Enso: React.FC<{ t: number; at: number; out: number; x?: number; y?
   const pts = Array.from({ length: Math.max(2, Math.round(N * g)) }, (_, i) => { const a = a0 + (i / N) * Math.PI * 1.88; const rr = R * (1 + 0.03 * Math.sin(i * 0.7)); return [x + Math.cos(a) * rr, y + Math.sin(a) * rr]; });
   return <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, opacity: o }}>
     {pts.slice(1).map((p, i) => { const w = 34 * Math.sin(Math.PI * Math.min(1, (i / N) * 1.05 + 0.1)) + 6; return <line key={i} x1={pts[i][0]} y1={pts[i][1]} x2={p[0]} y2={p[1]} stroke={COL.ink} strokeWidth={w} strokeLinecap="round" />; })}
-    {text && <text x={x} y={y + R + 120} textAnchor="middle" fontFamily={BRUSH} fontSize={90} fill={COL.ink} opacity={e(t, at + 1.4, at + 1.9)}>{text}</text>}
+    {text && <text x={x} y={y + R + 120} textAnchor="middle" fontFamily={BRUSH} fontSize={90} fill={COL.cream} stroke={COL.ink} strokeWidth={14} paintOrder="stroke" strokeLinejoin="round" opacity={e(t, at + 1.4, at + 1.9)}>{text}</text>}
   </svg>;
 };
 
