@@ -1,0 +1,668 @@
+[
+ {
+  "key": "clip_6333",
+  "src": "broll/t30invien_real/t30invien_d04.mp4",
+  "start": 6.333333333333333,
+  "dur": 3.9386666666666668
+ },
+ {
+  "key": "imagen_11000",
+  "src": "img/t30invien_a01_cold_mug.jpg",
+  "start": 11,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_14400",
+  "src": "img/t30invien_l01_cold_coffee.jpg",
+  "start": 14.4,
+  "dur": 2
+ },
+ {
+  "key": "imagen_20433",
+  "src": "img/t30invien_l38_cane_snow.jpg",
+  "start": 20.433333333333334,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "imagen_23300",
+  "src": "img/t30invien_l52_window_snow.jpg",
+  "start": 23.3,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_27233",
+  "src": "broll/t30invien_real/t30invien_i13.mp4",
+  "start": 27.233333333333334,
+  "dur": 3.9605999999999995
+ },
+ {
+  "key": "imagen_35233",
+  "src": "img/t30invien_l04_calendar_sunday.jpg",
+  "start": 35.233333333333334,
+  "dur": 6.4
+ },
+ {
+  "key": "imagen_41633",
+  "src": "img/t30invien_l46_telling_train.jpg",
+  "start": 41.63333333333333,
+  "dur": 6.233333333333333
+ },
+ {
+  "key": "clip_53433",
+  "src": "broll/t30invien_real/t30invien_h01.mp4",
+  "start": 53.43333333333333,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "imagen_56067",
+  "src": "img/t30invien_l35_granddaughter.jpg",
+  "start": 56.06666666666667,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_58867",
+  "src": "img/t30invien_l45_phone_help.jpg",
+  "start": 58.86666666666667,
+  "dur": 6.2
+ },
+ {
+  "key": "imagen_69667",
+  "src": "img/t30invien_l54_woodshop_plane.jpg",
+  "start": 69.66666666666667,
+  "dur": 1.5
+ },
+ {
+  "key": "clip_71167",
+  "src": "broll/t30invien_real/t30invien_i02.mp4",
+  "start": 71.16666666666667,
+  "dur": 3.6
+ },
+ {
+  "key": "imagen_74767",
+  "src": "img/t30invien_l05_bread_dough.jpg",
+  "start": 74.76666666666667,
+  "dur": 6.1
+ },
+ {
+  "key": "clip_93300",
+  "src": "broll/t30invien_real/t30invien_y13.mp4",
+  "start": 93.3,
+  "dur": 3.4
+ },
+ {
+  "key": "clip_100933",
+  "src": "broll/t30invien_real/t30invien_y14.mp4",
+  "start": 100.93333333333334,
+  "dur": 4.4442
+ },
+ {
+  "key": "clip_106333",
+  "src": "broll/t30invien_real/t30invien_h02.mp4",
+  "start": 106.33333333333333,
+  "dur": 3.9545333333333335
+ },
+ {
+  "key": "clip_120267",
+  "src": "broll/t30invien_real/t30invien_e04.mp4",
+  "start": 120.26666666666667,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_136567",
+  "src": "img/t30invien_a10_kettle_stove.jpg",
+  "start": 136.56666666666666,
+  "dur": 2.8
+ },
+ {
+  "key": "clip_142800",
+  "src": "broll/t30invien_real/t30invien_y09.mp4",
+  "start": 142.8,
+  "dur": 4.452
+ },
+ {
+  "key": "imagen_158033",
+  "src": "img/t30invien_l53_dialing_end.jpg",
+  "start": 158.03333333333333,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_160867",
+  "src": "broll/t30invien_real/t30invien_e09.mp4",
+  "start": 160.86666666666667,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "imagen_164800",
+  "src": "img/t30invien_l12_reading_glasses.jpg",
+  "start": 164.8,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_173333",
+  "src": "broll/t30invien_real/t30invien_b04.mp4",
+  "start": 173.33333333333334,
+  "dur": 3.9266666666666667
+ },
+ {
+  "key": "clip_191567",
+  "src": "broll/t30invien_real/t30invien_b05.mp4",
+  "start": 191.56666666666666,
+  "dur": 3.962133333333333
+ },
+ {
+  "key": "clip_196100",
+  "src": "broll/t30invien_real/t30invien_j06.mp4",
+  "start": 196.1,
+  "dur": 3.8
+ },
+ {
+  "key": "clip_199900",
+  "src": "broll/t30invien_real/t30invien_j13.mp4",
+  "start": 199.9,
+  "dur": 3.9565333333333337
+ },
+ {
+  "key": "imagen_214233",
+  "src": "img/t30invien_l06_loaf_oven.jpg",
+  "start": 214.23333333333332,
+  "dur": 4.1
+ },
+ {
+  "key": "imagen_218333",
+  "src": "img/t30invien_l16_postcard.jpg",
+  "start": 218.33333333333334,
+  "dur": 5.733333333333333
+ },
+ {
+  "key": "clip_228200",
+  "src": "broll/t30invien_real/t30invien_i04.mp4",
+  "start": 228.2,
+  "dur": 1.6666666666666667
+ },
+ {
+  "key": "clip_235367",
+  "src": "broll/t30invien_real/t30invien_e16.mp4",
+  "start": 235.36666666666667,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_248133",
+  "src": "broll/t30invien_real/t30invien_k01.mp4",
+  "start": 248.13333333333333,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "clip_251600",
+  "src": "broll/t30invien_real/t30invien_j05.mp4",
+  "start": 251.6,
+  "dur": 2.5
+ },
+ {
+  "key": "imagen_254100",
+  "src": "img/t30invien_l18_pickup_drive.jpg",
+  "start": 254.1,
+  "dur": 3.8
+ },
+ {
+  "key": "clip_257900",
+  "src": "broll/t30invien_real/t30invien_e15.mp4",
+  "start": 257.9,
+  "dur": 2.7666666666666666
+ },
+ {
+  "key": "clip_264833",
+  "src": "broll/t30invien_real/t30invien_i03.mp4",
+  "start": 264.8333333333333,
+  "dur": 1.7333333333333334
+ },
+ {
+  "key": "clip_266567",
+  "src": "broll/t30invien_real/t30invien_i14.mp4",
+  "start": 266.56666666666666,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_270167",
+  "src": "broll/t30invien_real/t30invien_i01.mp4",
+  "start": 270.1666666666667,
+  "dur": 2.6
+ },
+ {
+  "key": "imagen_272767",
+  "src": "img/t30invien_l19_grill_cold.jpg",
+  "start": 272.76666666666665,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "clip_280667",
+  "src": "broll/t30invien_real/t30invien_j12.mp4",
+  "start": 280.6666666666667,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_283733",
+  "src": "broll/t30invien_real/t30invien_d01.mp4",
+  "start": 283.73333333333335,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_286133",
+  "src": "img/t30invien_l20_rotary_dial.jpg",
+  "start": 286.1333333333333,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_306767",
+  "src": "img/t30invien_a03_wall_phone.jpg",
+  "start": 306.76666666666665,
+  "dur": 1.5666666666666667
+ },
+ {
+  "key": "clip_312767",
+  "src": "broll/t30invien_real/t30invien_p08.mp4",
+  "start": 312.76666666666665,
+  "dur": 3.9375
+ },
+ {
+  "key": "imagen_316933",
+  "src": "img/t30invien_a14_elevator_lot.jpg",
+  "start": 316.93333333333334,
+  "dur": 6.6
+ },
+ {
+  "key": "clip_334800",
+  "src": "broll/t30invien_real/t30invien_dw01.mp4",
+  "start": 334.8,
+  "dur": 3.9459333333333335
+ },
+ {
+  "key": "imagen_340033",
+  "src": "img/t30invien_l17_funeral_back.jpg",
+  "start": 340.03333333333336,
+  "dur": 5.233333333333333
+ },
+ {
+  "key": "imagen_358733",
+  "src": "img/t30invien_l25_writing_note.jpg",
+  "start": 358.73333333333335,
+  "dur": 1.2333333333333334
+ },
+ {
+  "key": "imagen_365933",
+  "src": "img/t30invien_l03_wall_phone.jpg",
+  "start": 365.93333333333334,
+  "dur": 5.633333333333334
+ },
+ {
+  "key": "clip_371567",
+  "src": "broll/t30invien_real/t30invien_y16.mp4",
+  "start": 371.56666666666666,
+  "dur": 4.434
+ },
+ {
+  "key": "imagen_383000",
+  "src": "img/t30invien_l27_rain_window.jpg",
+  "start": 383,
+  "dur": 1.7666666666666666
+ },
+ {
+  "key": "imagen_384767",
+  "src": "img/t30invien_a13_taped_ball.jpg",
+  "start": 384.76666666666665,
+  "dur": 6.333333333333333
+ },
+ {
+  "key": "clip_391100",
+  "src": "broll/t30invien_real/t30invien_k04.mp4",
+  "start": 391.1,
+  "dur": 2
+ },
+ {
+  "key": "clip_397867",
+  "src": "broll/t30invien_real/t30invien_k07.mp4",
+  "start": 397.8666666666667,
+  "dur": 4.9324
+ },
+ {
+  "key": "clip_403767",
+  "src": "broll/t30invien_real/t30invien_e12.mp4",
+  "start": 403.76666666666665,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_407367",
+  "src": "broll/t30invien_real/t30invien_k09.mp4",
+  "start": 407.3666666666667,
+  "dur": 2.2666666666666666
+ },
+ {
+  "key": "clip_414967",
+  "src": "broll/t30invien_real/t30invien_e07.mp4",
+  "start": 414.96666666666664,
+  "dur": 2.033333333333333
+ },
+ {
+  "key": "imagen_417000",
+  "src": "img/t30invien_a12_wedding_frame.jpg",
+  "start": 417,
+  "dur": 7.4
+ },
+ {
+  "key": "clip_424400",
+  "src": "broll/t30invien_real/t30invien_e10.mp4",
+  "start": 424.4,
+  "dur": 2.5
+ },
+ {
+  "key": "clip_430467",
+  "src": "broll/t30invien_real/t30invien_y10.mp4",
+  "start": 430.46666666666664,
+  "dur": 3.9576
+ },
+ {
+  "key": "clip_435567",
+  "src": "broll/t30invien_real/t30invien_d07.mp4",
+  "start": 435.56666666666666,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_438767",
+  "src": "img/t30invien_l49_depot.jpg",
+  "start": 438.76666666666665,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_447267",
+  "src": "broll/t30invien_real/t30invien_j04.mp4",
+  "start": 447.26666666666665,
+  "dur": 1.7333333333333334
+ },
+ {
+  "key": "imagen_449000",
+  "src": "img/t30invien_l42_young_shop.jpg",
+  "start": 449,
+  "dur": 7.9
+ },
+ {
+  "key": "clip_456900",
+  "src": "broll/t30invien_real/t30invien_d02.mp4",
+  "start": 456.9,
+  "dur": 1.8333333333333333
+ },
+ {
+  "key": "clip_461900",
+  "src": "broll/t30invien_real/t30invien_d05.mp4",
+  "start": 461.9,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_470733",
+  "src": "broll/t30invien_real/t30invien_e02.mp4",
+  "start": 470.73333333333335,
+  "dur": 2.2
+ },
+ {
+  "key": "clip_478033",
+  "src": "broll/t30invien_real/t30invien_i05.mp4",
+  "start": 478.03333333333336,
+  "dur": 3.6
+ },
+ {
+  "key": "imagen_481633",
+  "src": "img/t30invien_l11_kettle.jpg",
+  "start": 481.6333333333333,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_484833",
+  "src": "img/t30invien_l30_knock_door.jpg",
+  "start": 484.8333333333333,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_491833",
+  "src": "img/t30invien_l31_coffee_silent.jpg",
+  "start": 491.8333333333333,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_495067",
+  "src": "img/t30invien_l40_empty_chair.jpg",
+  "start": 495.06666666666666,
+  "dur": 5.1
+ },
+ {
+  "key": "imagen_500167",
+  "src": "img/t30invien_l36_donuts_cups.jpg",
+  "start": 500.1666666666667,
+  "dur": 1.5
+ },
+ {
+  "key": "imagen_506167",
+  "src": "img/t30invien_l33_creased_photo.jpg",
+  "start": 506.1666666666667,
+  "dur": 4.366666666666666
+ },
+ {
+  "key": "imagen_523200",
+  "src": "img/t30invien_l34_pocketknife.jpg",
+  "start": 523.2,
+  "dur": 2.3666666666666667
+ },
+ {
+  "key": "clip_525567",
+  "src": "broll/t30invien_real/t30invien_p02.mp4",
+  "start": 525.5666666666667,
+  "dur": 4.952333333333334
+ },
+ {
+  "key": "clip_531100",
+  "src": "broll/t30invien_real/t30invien_dw03.mp4",
+  "start": 531.1,
+  "dur": 2.7666666666666666
+ },
+ {
+  "key": "clip_539700",
+  "src": "broll/t30invien_real/t30invien_b11.mp4",
+  "start": 539.7,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "clip_542933",
+  "src": "broll/t30invien_real/t30invien_b10.mp4",
+  "start": 542.9333333333333,
+  "dur": 1.8333333333333333
+ },
+ {
+  "key": "clip_559733",
+  "src": "broll/t30invien_real/t30invien_dw06.mp4",
+  "start": 559.7333333333333,
+  "dur": 1.7666666666666666
+ },
+ {
+  "key": "clip_561500",
+  "src": "broll/t30invien_real/t30invien_y07.mp4",
+  "start": 561.5,
+  "dur": 1.4333333333333333
+ },
+ {
+  "key": "clip_575100",
+  "src": "broll/t30invien_real/t30invien_d06.mp4",
+  "start": 575.1,
+  "dur": 3.9503999999999997
+ },
+ {
+  "key": "imagen_606933",
+  "src": "img/t30invien_a15_legion_hall.jpg",
+  "start": 606.9333333333333,
+  "dur": 6.233333333333333
+ },
+ {
+  "key": "imagen_613167",
+  "src": "img/t30invien_l15_legion_cards.jpg",
+  "start": 613.1666666666666,
+  "dur": 3.5
+ },
+ {
+  "key": "imagen_616667",
+  "src": "img/t30invien_l14_grain_elevator.jpg",
+  "start": 616.6666666666666,
+  "dur": 2.2333333333333334
+ },
+ {
+  "key": "imagen_622267",
+  "src": "img/t30invien_a45_ambulance.jpg",
+  "start": 622.2666666666667,
+  "dur": 5.833333333333333
+ },
+ {
+  "key": "imagen_640133",
+  "src": "img/t30invien_l26_phone_laugh.jpg",
+  "start": 640.1333333333333,
+  "dur": 1.2666666666666666
+ },
+ {
+  "key": "imagen_641400",
+  "src": "img/t30invien_l10_cardigan.jpg",
+  "start": 641.4,
+  "dur": 6.433333333333334
+ },
+ {
+  "key": "clip_647833",
+  "src": "broll/t30invien_real/t30invien_j03.mp4",
+  "start": 647.8333333333334,
+  "dur": 1.9666666666666666
+ },
+ {
+  "key": "imagen_654633",
+  "src": "img/t30invien_l41_motorcycle.jpg",
+  "start": 654.6333333333333,
+  "dur": 6.9
+ },
+ {
+  "key": "clip_661533",
+  "src": "broll/t30invien_real/t30invien_e08.mp4",
+  "start": 661.5333333333333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_664533",
+  "src": "img/t30invien_l24_hand_held.jpg",
+  "start": 664.5333333333333,
+  "dur": 1.2666666666666666
+ },
+ {
+  "key": "clip_675767",
+  "src": "broll/t30invien_real/t30invien_p09.mp4",
+  "start": 675.7666666666667,
+  "dur": 1.3333333333333333
+ },
+ {
+  "key": "clip_677100",
+  "src": "broll/t30invien_real/t30invien_y04.mp4",
+  "start": 677.1,
+  "dur": 3.9621
+ },
+ {
+  "key": "imagen_681800",
+  "src": "img/t30invien_a19_funeral_home.jpg",
+  "start": 681.8,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_705033",
+  "src": "img/t30invien_l43_diner.jpg",
+  "start": 705.0333333333333,
+  "dur": 6.266666666666667
+ },
+ {
+  "key": "imagen_711300",
+  "src": "img/t30invien_l44_grandkids.jpg",
+  "start": 711.3,
+  "dur": 5.633333333333334
+ },
+ {
+  "key": "clip_721233",
+  "src": "broll/t30invien_real/t30invien_i11.mp4",
+  "start": 721.2333333333333,
+  "dur": 3.957466666666667
+ },
+ {
+  "key": "clip_725700",
+  "src": "broll/t30invien_real/t30invien_y02.mp4",
+  "start": 725.7,
+  "dur": 2.533333333333333
+ },
+ {
+  "key": "imagen_737500",
+  "src": "img/t30invien_l47_donut_box.jpg",
+  "start": 737.5,
+  "dur": 6.333333333333333
+ },
+ {
+  "key": "clip_743833",
+  "src": "broll/t30invien_real/t30invien_y18.mp4",
+  "start": 743.8333333333334,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "imagen_751100",
+  "src": "img/t30invien_l50_notebook.jpg",
+  "start": 751.1,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_771133",
+  "src": "img/t30invien_l51_pouring_two.jpg",
+  "start": 771.1333333333333,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_778000",
+  "src": "broll/t30invien_real/t30invien_k03.mp4",
+  "start": 778,
+  "dur": 3.963866666666667
+ },
+ {
+  "key": "clip_782133",
+  "src": "broll/t30invien_real/t30invien_y05.mp4",
+  "start": 782.1333333333333,
+  "dur": 4.444999999999999
+ },
+ {
+  "key": "clip_791067",
+  "src": "broll/t30invien_real/t30invien_y11.mp4",
+  "start": 791.0666666666667,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_793933",
+  "src": "broll/t30invien_real/t30invien_b12.mp4",
+  "start": 793.9333333333333,
+  "dur": 2.3666666666666667
+ },
+ {
+  "key": "clip_807367",
+  "src": "broll/t30invien_real/t30invien_j08.mp4",
+  "start": 807.3666666666667,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "clip_810600",
+  "src": "broll/t30invien_real/t30invien_i06.mp4",
+  "start": 810.6,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_814533",
+  "src": "broll/t30invien_real/t30invien_e05.mp4",
+  "start": 814.5333333333333,
+  "dur": 3.1666666666666665
+ },
+ {
+  "key": "clip_823633",
+  "src": "broll/t30invien_real/t30invien_e01.mp4",
+  "start": 823.6333333333333,
+  "dur": 4.976933333333334
+ }
+]

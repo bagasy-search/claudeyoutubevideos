@@ -1,0 +1,2325 @@
+{
+ "total": 829.037,
+ "avatarEnd": 829.037,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0,
+   "dur": 6.333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 6.333333333333333,
+   "dur": 4.666666666666667,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_d04.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.844
+  },
+  {
+   "t": 11,
+   "dur": 3.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a01_cold_mug.jpg"
+  },
+  {
+   "t": 14.4,
+   "dur": 2,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l01_cold_coffee.jpg"
+  },
+  {
+   "t": 16.4,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 20.433333333333334,
+   "dur": 2.8666666666666667,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l38_cane_snow.jpg"
+  },
+  {
+   "t": 23.3,
+   "dur": 3.933333333333333,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l52_window_snow.jpg"
+  },
+  {
+   "t": 27.233333333333334,
+   "dur": 4.6,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i13.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.861
+  },
+  {
+   "t": 31.833333333333332,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 35.233333333333334,
+   "dur": 6.4,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l04_calendar_sunday.jpg"
+  },
+  {
+   "t": 41.63333333333333,
+   "dur": 6.233333333333333,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l46_telling_train.jpg"
+  },
+  {
+   "t": 47.86666666666667,
+   "dur": 5.566666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 53.43333333333333,
+   "dur": 2.6333333333333333,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_h01.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 56.06666666666667,
+   "dur": 2.8,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l35_granddaughter.jpg"
+  },
+  {
+   "t": 58.86666666666667,
+   "dur": 6.2,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l45_phone_help.jpg"
+  },
+  {
+   "t": 65.06666666666666,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 69.66666666666667,
+   "dur": 1.5,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l54_woodshop_plane.jpg"
+  },
+  {
+   "t": 71.16666666666667,
+   "dur": 3.6,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 74.76666666666667,
+   "dur": 6.1,
+   "sec": "S1",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l05_bread_dough.jpg"
+  },
+  {
+   "t": 80.86666666666666,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 85.16666666666667,
+   "dur": 8.133333333333333,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 90,
+    "unit": "years",
+    "label": "TO FIGURE IT OUT",
+    "photo": "img/t30invien_a11_cardigan_chair.jpg",
+    "at": 86.24,
+    "prefix": "",
+    "tone": "white"
+   },
+   "bed": "img/t30invien_l01_cold_coffee_blur.jpg"
+  },
+  {
+   "t": 93.3,
+   "dur": 3.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y13.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 96.7,
+   "dur": 4.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 100.93333333333334,
+   "dur": 5.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y14.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.823
+  },
+  {
+   "t": 106.33333333333333,
+   "dur": 4.433333333333334,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_h02.mp4",
+   "real": true,
+   "rate": 0.892,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 110.76666666666667,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 113.76666666666667,
+   "dur": 6.5,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "NINETY-TWO WINTERS",
+    "title": "LOU",
+    "sub": "Farm town, Iowa · machinist",
+    "stamp": "",
+    "typeAt": 114.36,
+    "stampAt": 118.86,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30invien_l07_front_gate_blur.jpg"
+  },
+  {
+   "t": 120.26666666666667,
+   "dur": 3.3,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_e04.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 123.56666666666666,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 126.86666666666666,
+   "dur": 9.7,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "BigStat",
+   "props": {
+    "value": 58,
+    "unit": "years",
+    "label": "MARRIED TO JUNE",
+    "compare": "Gone six winters now.",
+    "photo": "img/t30invien_g06_june.jpg",
+    "at": 127.48,
+    "compareAt": 130.24,
+    "prefix": "",
+    "tone": "white"
+   },
+   "bed": "img/t30invien_l07_front_gate_blur.jpg"
+  },
+  {
+   "t": 136.56666666666666,
+   "dur": 2.8,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a10_kettle_stove.jpg"
+  },
+  {
+   "t": 139.36666666666667,
+   "dur": 3.433333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 142.8,
+   "dur": 5.6,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_y09.mp4",
+   "rate": 0.795,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 148.4,
+   "dur": 6.366666666666666,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "02",
+    "label": "EVERY WEEK, RIGHT HERE",
+    "title": "SUBSCRIBE + BELL",
+    "sub": "Which friend do you need to call?",
+    "stamp": "",
+    "typeAt": 149,
+    "stampAt": 153.36,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30invien_l07_front_gate_blur.jpg"
+  },
+  {
+   "t": 154.76666666666668,
+   "dur": 3.2666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 158.03333333333333,
+   "dur": 2.8333333333333335,
+   "sec": "S2",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l53_dialing_end.jpg"
+  },
+  {
+   "t": 160.86666666666667,
+   "dur": 3.933333333333333,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_e09.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 164.8,
+   "dur": 3.6,
+   "sec": "S2",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l12_reading_glasses.jpg"
+  },
+  {
+   "t": 168.4,
+   "dur": 4.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 173.33333333333334,
+   "dur": 4.133333333333334,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_b04.mp4",
+   "real": true,
+   "rate": 0.95,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 173.98,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 1",
+    "part": "SIX BOYS"
+   },
+   "bed": "img/t30invien_l13_taped_ball_blur.jpg"
+  },
+  {
+   "t": 177.46666666666667,
+   "dur": 9.233333333333333,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "FriendStrip",
+   "props": {
+    "faces": [
+     {
+      "img": "img/t30invien_g01_walt.jpg",
+      "name": "Walt",
+      "x": 50,
+      "y": 28,
+      "z": 1.3,
+      "inAt": 177.82
+     },
+     {
+      "img": "img/t30invien_g02_ray.jpg",
+      "name": "Skinny Ray",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "inAt": 178.58
+     },
+     {
+      "img": "img/t30invien_g03_dutch.jpg",
+      "name": "Dutch",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "inAt": 179.76
+     },
+     {
+      "img": "img/t30invien_g04_swede.jpg",
+      "name": "the Swede",
+      "x": 55,
+      "y": 22,
+      "z": 2,
+      "inAt": 180.54
+     },
+     {
+      "img": "img/t30invien_g05_ronnie.jpg",
+      "name": "Ronnie",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "inAt": 181.72
+     }
+    ],
+    "label": "SIX BOYS · ONE TOWN",
+    "note": "...and me.",
+    "noteAt": 182.38
+   },
+   "bed": "img/t30invien_l13_taped_ball_blur.jpg"
+  },
+  {
+   "t": 186.7,
+   "dur": 4.866666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 191.56666666666666,
+   "dur": 4.533333333333333,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_b05.mp4",
+   "rate": 0.874,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 196.1,
+   "dur": 3.8,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_j06.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 199.9,
+   "dur": 4.933333333333334,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_j13.mp4",
+   "rate": 0.802,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 204.83333333333334,
+   "dur": 5.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 30,
+    "unit": "years",
+    "label": "OF SATURDAY NIGHT CARDS",
+    "compare": "At the Legion hall.",
+    "photo": "img/t30invien_a16_cards_table.jpg",
+    "at": 205.44,
+    "compareAt": 207.32,
+    "prefix": "",
+    "tone": "white"
+   },
+   "bed": "img/t30invien_l13_taped_ball_blur.jpg"
+  },
+  {
+   "t": 210.33333333333334,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 210.34,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LESSON 1",
+    "part": "THEY GO A LITTLE AT A TIME"
+   },
+   "bed": "img/t30invien_l13_taped_ball_blur.jpg"
+  },
+  {
+   "t": 214.23333333333332,
+   "dur": 4.1,
+   "sec": "S3",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l06_loaf_oven.jpg"
+  },
+  {
+   "t": 218.33333333333334,
+   "dur": 5.733333333333333,
+   "sec": "S3",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l16_postcard.jpg"
+  },
+  {
+   "t": 224.06666666666666,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 228.2,
+   "dur": 1.6666666666666667,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i04.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 229.86666666666667,
+   "dur": 5.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "years",
+    "label": "WITHOUT SEEING THE SWEDE",
+    "compare": "No fight. Nothing.",
+    "photo": "img/t30invien_a18_des_moines_road.jpg",
+    "at": 230.9,
+    "compareAt": 232.16,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30invien_l13_taped_ball_blur.jpg"
+  },
+  {
+   "t": 235.36666666666667,
+   "dur": 3.1,
+   "sec": "S3",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_e16.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 238.46666666666667,
+   "dur": 6.266666666666667,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "FriendStrip",
+   "props": {
+    "faces": [
+     {
+      "img": "img/t30invien_g01_walt.jpg",
+      "name": "Walt",
+      "x": 50,
+      "y": 28,
+      "z": 1.3
+     },
+     {
+      "img": "img/t30invien_g02_ray.jpg",
+      "name": "Skinny Ray",
+      "x": 50,
+      "y": 30,
+      "z": 1.3
+     },
+     {
+      "img": "img/t30invien_g03_dutch.jpg",
+      "name": "Dutch",
+      "x": 50,
+      "y": 30,
+      "z": 1.3
+     },
+     {
+      "img": "img/t30invien_g04_swede.jpg",
+      "name": "the Swede",
+      "x": 55,
+      "y": 22,
+      "z": 2,
+      "goneAt": 237.7
+     },
+     {
+      "img": "img/t30invien_g05_ronnie.jpg",
+      "name": "Ronnie",
+      "x": 50,
+      "y": 30,
+      "z": 1.3
+     }
+    ],
+    "focus": 3,
+    "focusAt": 239.06,
+    "note": "the Swede",
+    "noteAt": 239.92
+   },
+   "bed": "img/t30invien_l13_taped_ball_blur.jpg"
+  },
+  {
+   "t": 244.73333333333332,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 248.13333333333333,
+   "dur": 3.466666666666667,
+   "sec": "S3",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_k01.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 251.6,
+   "dur": 2.5,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_j05.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 254.1,
+   "dur": 3.8,
+   "sec": "S3",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l18_pickup_drive.jpg"
+  },
+  {
+   "t": 257.9,
+   "dur": 2.7666666666666666,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_e15.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 260.6666666666667,
+   "dur": 4.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 262.659,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LESSON 2",
+    "part": "A CALL BEATS A VISIT"
+   },
+   "bed": "img/t30invien_l19_grill_cold_blur.jpg"
+  },
+  {
+   "t": 264.8333333333333,
+   "dur": 1.7333333333333334,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i03.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 266.56666666666666,
+   "dur": 3.6,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i14.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 270.1666666666667,
+   "dur": 2.6,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i01.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 272.76666666666665,
+   "dur": 2.7333333333333334,
+   "sec": "S4",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l19_grill_cold.jpg"
+  },
+  {
+   "t": 275.5,
+   "dur": 5.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 280.6666666666667,
+   "dur": 3.066666666666667,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_j12.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 283.73333333333335,
+   "dur": 2.4,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_d01.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 286.1333333333333,
+   "dur": 2.8,
+   "sec": "S4",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l20_rotary_dial.jpg"
+  },
+  {
+   "t": 288.93333333333334,
+   "dur": 5.5,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 5,
+    "unit": "minutes",
+    "label": "ONE PHONE CALL",
+    "compare": "It would have cost nothing.",
+    "photo": "img/t30invien_a22_rotary_phone.jpg",
+    "at": 289.54,
+    "compareAt": 291.22,
+    "prefix": "",
+    "tone": "white"
+   },
+   "bed": "img/t30invien_l19_grill_cold_blur.jpg"
+  },
+  {
+   "t": 294.43333333333334,
+   "dur": 3.433333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 297.8666666666667,
+   "dur": 8.9,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FriendStrip",
+   "props": {
+    "faces": [
+     {
+      "img": "img/t30invien_g01_walt.jpg",
+      "name": "Walt",
+      "x": 50,
+      "y": 28,
+      "z": 1.3
+     },
+     {
+      "img": "img/t30invien_g02_ray.jpg",
+      "name": "Skinny Ray",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 296.18
+     },
+     {
+      "img": "img/t30invien_g03_dutch.jpg",
+      "name": "Dutch",
+      "x": 50,
+      "y": 30,
+      "z": 1.3
+     },
+     {
+      "img": "img/t30invien_g04_swede.jpg",
+      "name": "the Swede",
+      "x": 55,
+      "y": 22,
+      "z": 2,
+      "goneAt": 237.7
+     },
+     {
+      "img": "img/t30invien_g05_ronnie.jpg",
+      "name": "Ronnie",
+      "x": 50,
+      "y": 30,
+      "z": 1.3
+     }
+    ],
+    "focus": 1,
+    "focusAt": 298.48,
+    "note": "alone, in winter",
+    "noteAt": 300.48
+   },
+   "bed": "img/t30invien_l19_grill_cold_blur.jpg"
+  },
+  {
+   "t": 306.76666666666665,
+   "dur": 1.5666666666666667,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a03_wall_phone.jpg"
+  },
+  {
+   "t": 308.3333333333333,
+   "dur": 4.433333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 310.099,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LESSON 3",
+    "part": "PRIDE IS A LUXURY"
+   },
+   "bed": "img/t30invien_l22_hardware_blur.jpg"
+  },
+  {
+   "t": 312.76666666666665,
+   "dur": 4.166666666666667,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_p08.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.945
+  },
+  {
+   "t": 316.93333333333334,
+   "dur": 6.6,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a14_elevator_lot.jpg"
+  },
+  {
+   "t": 323.53333333333336,
+   "dur": 6.2,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 11,
+    "unit": "years",
+    "label": "WITHOUT SPEAKING TO DUTCH",
+    "compare": "Four blocks apart.",
+    "photo": "img/t30invien_a25_street_blocks.jpg",
+    "at": 324.12,
+    "compareAt": 327.6,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30invien_l22_hardware_blur.jpg"
+  },
+  {
+   "t": 329.73333333333335,
+   "dur": 5.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 334.8,
+   "dur": 5.233333333333333,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_dw01.mp4",
+   "rate": 0.754,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 340.03333333333336,
+   "dur": 5.233333333333333,
+   "sec": "S5",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l17_funeral_back.jpg"
+  },
+  {
+   "t": 345.26666666666665,
+   "dur": 3.566666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 348.8333333333333,
+   "dur": 9.9,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "FriendStrip",
+   "props": {
+    "faces": [
+     {
+      "img": "img/t30invien_g01_walt.jpg",
+      "name": "Walt",
+      "x": 50,
+      "y": 28,
+      "z": 1.3
+     },
+     {
+      "img": "img/t30invien_g02_ray.jpg",
+      "name": "Skinny Ray",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 296.18
+     },
+     {
+      "img": "img/t30invien_g03_dutch.jpg",
+      "name": "Dutch",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 347.56
+     },
+     {
+      "img": "img/t30invien_g04_swede.jpg",
+      "name": "the Swede",
+      "x": 55,
+      "y": 22,
+      "z": 2,
+      "goneAt": 237.7
+     },
+     {
+      "img": "img/t30invien_g05_ronnie.jpg",
+      "name": "Ronnie",
+      "x": 50,
+      "y": 30,
+      "z": 1.3
+     }
+    ],
+    "focus": 2,
+    "focusAt": 349.44,
+    "note": "too late",
+    "noteAt": 350.64
+   },
+   "bed": "img/t30invien_l22_hardware_blur.jpg"
+  },
+  {
+   "t": 358.73333333333335,
+   "dur": 1.2333333333333334,
+   "sec": "S5",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l25_writing_note.jpg"
+  },
+  {
+   "t": 359.96666666666664,
+   "dur": 5.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 365.93333333333334,
+   "dur": 5.633333333333334,
+   "sec": "S5",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l03_wall_phone.jpg"
+  },
+  {
+   "t": 368.059,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LESSON 4",
+    "part": "NO REASON NEEDED"
+   },
+   "bed": "img/t30invien_l26_phone_laugh_blur.jpg"
+  },
+  {
+   "t": 371.56666666666666,
+   "dur": 6,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y16.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.739
+  },
+  {
+   "t": 377.56666666666666,
+   "dur": 5.433333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 383,
+   "dur": 1.7666666666666666,
+   "sec": "S6",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l27_rain_window.jpg"
+  },
+  {
+   "t": 384.76666666666665,
+   "dur": 6.333333333333333,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a13_taped_ball.jpg"
+  },
+  {
+   "t": 391.1,
+   "dur": 2,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_k04.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 393.1,
+   "dur": 4.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 397.8666666666667,
+   "dur": 5.9,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_k07.mp4",
+   "rate": 0.836,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 400.139,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LESSON 5",
+    "part": "HER FRIENDS ARE YOURS"
+   },
+   "bed": "img/t30invien_l28_casserole_blur.jpg"
+  },
+  {
+   "t": 403.76666666666665,
+   "dur": 3.6,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_e12.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 407.3666666666667,
+   "dur": 2.2666666666666666,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_k09.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 409.6333333333333,
+   "dur": 5.333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 414.96666666666664,
+   "dur": 2.033333333333333,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_e07.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 417,
+   "dur": 7.4,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a12_wedding_frame.jpg"
+  },
+  {
+   "t": 424.4,
+   "dur": 2.5,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_e10.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 426.9,
+   "dur": 3.566666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 430.46666666666664,
+   "dur": 5.1,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_y10.mp4",
+   "rate": 0.776,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 431.639,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LESSON 6",
+    "part": "SHOW UP WHEN IT'S UGLY"
+   },
+   "bed": "img/t30invien_l30_knock_door_blur.jpg"
+  },
+  {
+   "t": 435.56666666666666,
+   "dur": 3.2,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_d07.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 438.76666666666665,
+   "dur": 3.033333333333333,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l49_depot.jpg"
+  },
+  {
+   "t": 441.8,
+   "dur": 5.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 447.26666666666665,
+   "dur": 1.7333333333333334,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_j04.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 449,
+   "dur": 7.9,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l42_young_shop.jpg"
+  },
+  {
+   "t": 456.9,
+   "dur": 1.8333333333333333,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_d02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 458.73333333333335,
+   "dur": 3.1666666666666665,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 461.9,
+   "dur": 2.8333333333333335,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_d05.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 464.73333333333335,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "years",
+    "label": "RONNIE, ALONE WITH HIS SHAME",
+    "compare": "Nobody knocked on his door.",
+    "photo": "img/t30invien_a34_front_door.jpg",
+    "at": 465.32,
+    "compareAt": 467.72,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30invien_l30_knock_door_blur.jpg"
+  },
+  {
+   "t": 470.73333333333335,
+   "dur": 2.2,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_e02.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 472.93333333333334,
+   "dur": 5.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 478.03333333333336,
+   "dur": 3.6,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i05.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 481.6333333333333,
+   "dur": 3.2,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l11_kettle.jpg"
+  },
+  {
+   "t": 484.8333333333333,
+   "dur": 3.2,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l30_knock_door.jpg"
+  },
+  {
+   "t": 488.03333333333336,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 491.8333333333333,
+   "dur": 3.2333333333333334,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l31_coffee_silent.jpg"
+  },
+  {
+   "t": 495.06666666666666,
+   "dur": 5.1,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l40_empty_chair.jpg"
+  },
+  {
+   "t": 500.1666666666667,
+   "dur": 1.5,
+   "sec": "S8",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l36_donuts_cups.jpg"
+  },
+  {
+   "t": 501.6666666666667,
+   "dur": 4.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 502.659,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LESSON 7",
+    "part": "KEEP WHAT TIES YOU"
+   },
+   "bed": "img/t30invien_l32_hutch_drawer_blur.jpg"
+  },
+  {
+   "t": 506.1666666666667,
+   "dur": 4.366666666666666,
+   "sec": "S9",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l33_creased_photo.jpg"
+  },
+  {
+   "t": 510.53333333333336,
+   "dur": 8.433333333333334,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30invien_a37_six_boys.jpg",
+    "x": 988,
+    "y": 778,
+    "r": 70,
+    "note": "the taped-up ball",
+    "circleAt": 512.1,
+    "noteAt": 512.7,
+    "zoom": 1.45
+   },
+   "bed": "img/t30invien_l32_hutch_drawer_blur.jpg"
+  },
+  {
+   "t": 518.9666666666667,
+   "dur": 4.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 523.2,
+   "dur": 2.3666666666666667,
+   "sec": "S9",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l34_pocketknife.jpg"
+  },
+  {
+   "t": 525.5666666666667,
+   "dur": 5.533333333333333,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_p02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.895
+  },
+  {
+   "t": 531.1,
+   "dur": 2.7666666666666666,
+   "sec": "S9",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_dw03.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 533.8666666666667,
+   "dur": 5.833333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 536.239,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "THE STUDY",
+    "part": "HARVARD · 1938"
+   },
+   "bed": "img/t30invien_l35_granddaughter_blur.jpg"
+  },
+  {
+   "t": 539.7,
+   "dur": 3.2333333333333334,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_b11.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 542.9333333333333,
+   "dur": 1.8333333333333333,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_b10.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 544.7666666666667,
+   "dur": 9.166666666666666,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/t30invien_a40_harvard_brick.jpg",
+    "yearFrom": 1938,
+    "yearTo": 2018,
+    "unit": "",
+    "label": "HUNDREDS OF MEN · THEIR WHOLE LIVES",
+    "from": 542.34,
+    "to": 547.36,
+    "marks": [
+     {
+      "year": 1938,
+      "note": "it starts"
+     },
+     {
+      "year": 2018,
+      "note": "80 years"
+     }
+    ],
+    "source": "Harvard Study of Adult Development (since 1938)",
+    "linear": true
+   },
+   "bed": "img/t30invien_l35_granddaughter_blur.jpg"
+  },
+  {
+   "t": 553.9333333333333,
+   "dur": 5.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 559.7333333333333,
+   "dur": 1.7666666666666666,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_dw06.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 561.5,
+   "dur": 1.4333333333333333,
+   "sec": "S10",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y07.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 562.9333333333333,
+   "dur": 7.833333333333333,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30invien_a41_files.jpg",
+    "rightImg": "img/t30invien_a35_two_cups.jpg",
+    "leftHead": "NOT THIS",
+    "rightHead": "THIS",
+    "leftText": "Money. Work. Being important.",
+    "rightText": "Their relationships.",
+    "leftAt": 563.54,
+    "rightAt": 567.82,
+    "stamp": ""
+   },
+   "bed": "img/t30invien_l35_granddaughter_blur.jpg"
+  },
+  {
+   "t": 570.7666666666667,
+   "dur": 4.333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 575.1,
+   "dur": 4.8,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_d06.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.823
+  },
+  {
+   "t": 579.9,
+   "dur": 5.533333333333333,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "FriendStrip",
+   "props": {
+    "faces": [
+     {
+      "img": "img/t30invien_g01_walt.jpg",
+      "name": "Walt",
+      "x": 50,
+      "y": 28,
+      "z": 1.3
+     },
+     {
+      "img": "img/t30invien_g02_ray.jpg",
+      "name": "Skinny Ray",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 296.18
+     },
+     {
+      "img": "img/t30invien_g03_dutch.jpg",
+      "name": "Dutch",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 347.56
+     },
+     {
+      "img": "img/t30invien_g04_swede.jpg",
+      "name": "the Swede",
+      "x": 55,
+      "y": 22,
+      "z": 2,
+      "goneAt": 237.7
+     },
+     {
+      "img": "img/t30invien_g05_ronnie.jpg",
+      "name": "Ronnie",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 577.9
+     }
+    ],
+    "note": "five of six",
+    "noteAt": 580.5
+   },
+   "bed": "img/t30invien_l35_granddaughter_blur.jpg"
+  },
+  {
+   "t": 584.399,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 2",
+    "part": "WALT"
+   },
+   "bed": "img/t30invien_l36_donuts_cups_blur.jpg"
+  },
+  {
+   "t": 585.4333333333333,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 589.2333333333333,
+   "dur": 12.066666666666666,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "BigStat",
+   "props": {
+    "value": 10,
+    "unit": "years",
+    "label": "JUST THE TWO OF US",
+    "compare": "Tuesdays and Fridays.",
+    "photo": "img/t30invien_a44_two_hand_cards.jpg",
+    "at": 589.82,
+    "compareAt": 594.7,
+    "prefix": "",
+    "tone": "white"
+   },
+   "bed": "img/t30invien_l36_donuts_cups_blur.jpg"
+  },
+  {
+   "t": 601.3,
+   "dur": 5.633333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 606.9333333333333,
+   "dur": 6.233333333333333,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a15_legion_hall.jpg"
+  },
+  {
+   "t": 613.1666666666666,
+   "dur": 3.5,
+   "sec": "S11",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l15_legion_cards.jpg"
+  },
+  {
+   "t": 616.6666666666666,
+   "dur": 2.2333333333333334,
+   "sec": "S11",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l14_grain_elevator.jpg"
+  },
+  {
+   "t": 618.9,
+   "dur": 3.3666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 622.2666666666667,
+   "dur": 5.833333333333333,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a45_ambulance.jpg"
+  },
+  {
+   "t": 628.1,
+   "dur": 7.033333333333333,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "FriendStrip",
+   "props": {
+    "faces": [
+     {
+      "img": "img/t30invien_g01_walt.jpg",
+      "name": "Walt",
+      "x": 50,
+      "y": 28,
+      "z": 1.3,
+      "goneAt": 625.38
+     },
+     {
+      "img": "img/t30invien_g02_ray.jpg",
+      "name": "Skinny Ray",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 296.18
+     },
+     {
+      "img": "img/t30invien_g03_dutch.jpg",
+      "name": "Dutch",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 347.56
+     },
+     {
+      "img": "img/t30invien_g04_swede.jpg",
+      "name": "the Swede",
+      "x": 55,
+      "y": 22,
+      "z": 2,
+      "goneAt": 237.7
+     },
+     {
+      "img": "img/t30invien_g05_ronnie.jpg",
+      "name": "Ronnie",
+      "x": 50,
+      "y": 30,
+      "z": 1.3,
+      "goneAt": 577.9
+     }
+    ],
+    "focus": 0,
+    "focusAt": 628.7,
+    "note": "the last one",
+    "noteAt": 630.3
+   },
+   "bed": "img/t30invien_l36_donuts_cups_blur.jpg"
+  },
+  {
+   "t": 635.1333333333333,
+   "dur": 5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 640.1333333333333,
+   "dur": 1.2666666666666666,
+   "sec": "S11",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l26_phone_laugh.jpg"
+  },
+  {
+   "t": 641.4,
+   "dur": 6.433333333333334,
+   "sec": "S11",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l10_cardigan.jpg"
+  },
+  {
+   "t": 647.8333333333334,
+   "dur": 1.9666666666666666,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_j03.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 649.8,
+   "dur": 4.833333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 654.6333333333333,
+   "dur": 6.9,
+   "sec": "S11",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l41_motorcycle.jpg"
+  },
+  {
+   "t": 658.038,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 3",
+    "part": "THE ONE THING"
+   },
+   "bed": "img/t30invien_l41_motorcycle_blur.jpg"
+  },
+  {
+   "t": 661.5333333333333,
+   "dur": 3,
+   "sec": "S12",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_e08.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 664.5333333333333,
+   "dur": 1.2666666666666666,
+   "sec": "S12",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l24_hand_held.jpg"
+  },
+  {
+   "t": 665.8,
+   "dur": 5.166666666666667,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "BigStat",
+   "props": {
+    "value": 60,
+    "unit": "and up",
+    "label": "NEW FRIENDS, EVERY DECADE",
+    "photo": "img/t30invien_a48_diner.jpg",
+    "at": 666.4,
+    "prefix": "",
+    "tone": "green"
+   },
+   "bed": "img/t30invien_l41_motorcycle_blur.jpg"
+  },
+  {
+   "t": 670.9666666666667,
+   "dur": 4.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 675.7666666666667,
+   "dur": 1.3333333333333333,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_p09.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 677.1,
+   "dur": 4.7,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y04.mp4",
+   "real": true,
+   "rate": 0.843,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 681.8,
+   "dur": 3.066666666666667,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30invien_a19_funeral_home.jpg"
+  },
+  {
+   "t": 684.8666666666667,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 687.8666666666667,
+   "dur": 12.5,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30invien_a46_empty_chair.jpg",
+    "rightImg": "img/t30invien_a47_garage_motorcycle.jpg",
+    "leftHead": "ALL YOUR AGE",
+    "rightHead": "YOUNGER TOO",
+    "leftText": "They go one by one.",
+    "rightText": "They'll outlive you.",
+    "leftAt": 688.48,
+    "rightAt": 696.24,
+    "stamp": ""
+   },
+   "bed": "img/t30invien_l41_motorcycle_blur.jpg"
+  },
+  {
+   "t": 700.3666666666667,
+   "dur": 4.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 705.0333333333333,
+   "dur": 6.266666666666667,
+   "sec": "S12",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l43_diner.jpg"
+  },
+  {
+   "t": 711.3,
+   "dur": 5.633333333333334,
+   "sec": "S12",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l44_grandkids.jpg"
+  },
+  {
+   "t": 716.9333333333333,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 721.2333333333333,
+   "dur": 4.466666666666667,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i11.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.886
+  },
+  {
+   "t": 725.7,
+   "dur": 2.533333333333333,
+   "sec": "S12",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 728.2333333333333,
+   "dur": 5.066666666666666,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "BigStat",
+   "props": {
+    "value": 92,
+    "unit": "years old",
+    "label": "STARTING NOW",
+    "compare": "Late, but starting.",
+    "photo": "img/t30invien_a51_town_square.jpg",
+    "at": 728.82,
+    "compareAt": 728.84,
+    "prefix": "",
+    "tone": "green"
+   },
+   "bed": "img/t30invien_l48_town_bench_blur.jpg"
+  },
+  {
+   "t": 733.3,
+   "dur": 4.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 737.5,
+   "dur": 6.333333333333333,
+   "sec": "S13",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l47_donut_box.jpg"
+  },
+  {
+   "t": 743.8333333333334,
+   "dur": 3.6333333333333333,
+   "sec": "S13",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y18.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 747.4666666666667,
+   "dur": 3.6333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 751.1,
+   "dur": 3.066666666666667,
+   "sec": "S13",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l50_notebook.jpg"
+  },
+  {
+   "t": 751.698,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "HOMEWORK",
+    "part": "THIS WEEK"
+   },
+   "bed": "img/t30invien_l48_town_bench_blur.jpg"
+  },
+  {
+   "t": 754.1666666666666,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 757.1666666666666,
+   "dur": 9.466666666666667,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "things",
+    "label": "THIS WEEK",
+    "compare": "Call an old friend. Talk to someone younger.",
+    "photo": "img/t30invien_a50_old_phone_hands.jpg",
+    "at": 757.78,
+    "compareAt": 759.2,
+    "prefix": "",
+    "tone": "green"
+   },
+   "bed": "img/t30invien_l48_town_bench_blur.jpg"
+  },
+  {
+   "t": 766.6333333333333,
+   "dur": 4.5,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "BigStat",
+   "props": {
+    "value": 5,
+    "unit": "minutes",
+    "prefix": "+",
+    "label": "REALLY TALK",
+    "photo": "img/t30invien_a54_cards_phone.jpg",
+    "at": 767.22,
+    "tone": "green"
+   },
+   "bed": "img/t30invien_l48_town_bench_blur.jpg"
+  },
+  {
+   "t": 771.1333333333333,
+   "dur": 2.6,
+   "sec": "S13",
+   "lugar": "lou",
+   "kind": "imagen",
+   "asset": "img/t30invien_l51_pouring_two.jpg"
+  },
+  {
+   "t": 773.7333333333333,
+   "dur": 4.266666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 778,
+   "dur": 4.133333333333334,
+   "sec": "S13",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30invien_real/t30invien_k03.mp4",
+   "rate": 0.959,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 782.1333333333333,
+   "dur": 5.833333333333333,
+   "sec": "S13",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y05.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.762
+  },
+  {
+   "t": 787.9666666666667,
+   "dur": 3.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 791.0666666666667,
+   "dur": 2.8666666666666667,
+   "sec": "S13",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_y11.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 793.9333333333333,
+   "dur": 2.3666666666666667,
+   "sec": "S13",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_b12.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 796.3,
+   "dur": 7.833333333333333,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "03",
+    "label": "TELL ME IN THE COMMENTS",
+    "title": "HOW OLD ARE YOU?",
+    "sub": "How many friends from when you were a kid?",
+    "stamp": "",
+    "typeAt": 796.9,
+    "stampAt": 798.16,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30invien_l48_town_bench_blur.jpg"
+  },
+  {
+   "t": 804.1333333333333,
+   "dur": 3.2333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 50,
+   "lugar": "avatar"
+  },
+  {
+   "t": 807.3666666666667,
+   "dur": 3.2333333333333334,
+   "sec": "S13",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_j08.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 810.6,
+   "dur": 3.933333333333333,
+   "sec": "S13",
+   "lugar": "lou",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_i06.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 814.5333333333333,
+   "dur": 3.1666666666666665,
+   "sec": "S13",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_e05.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  },
+  {
+   "t": 817.7,
+   "dur": 5.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 51,
+   "lugar": "avatar"
+  },
+  {
+   "t": 823.6333333333333,
+   "dur": 5.433333333333334,
+   "sec": "S13",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30invien_real/t30invien_e01.mp4",
+   "real": true,
+   "rate": 0.916,
+   "credit": "Prelinger Archives · Public domain · Internet Archive"
+  }
+ ]
+}
