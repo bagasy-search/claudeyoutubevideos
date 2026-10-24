@@ -1,0 +1,746 @@
+[
+ {
+  "key": "clip_3833",
+  "src": "broll/t30pasaen_real/t30pasaen_f05.mp4",
+  "start": 3.8333333333333335,
+  "dur": 2.2333333333333334
+ },
+ {
+  "key": "clip_6067",
+  "src": "broll/t30pasaen_real/t30pasaen_f47.mp4",
+  "start": 6.066666666666666,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_21433",
+  "src": "img/t30pasaen_j22_phone_call.jpg",
+  "start": 21.433333333333334,
+  "dur": 3.3
+ },
+ {
+  "key": "clip_24733",
+  "src": "broll/t30pasaen_real/t30pasaen_f74.mp4",
+  "start": 24.733333333333334,
+  "dur": 3.9
+ },
+ {
+  "key": "clip_28633",
+  "src": "broll/t30pasaen_real/t30pasaen_f37.mp4",
+  "start": 28.633333333333333,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "clip_35033",
+  "src": "broll/t30pasaen_real/t30pasaen_v30_02.mp4",
+  "start": 35.03333333333333,
+  "dur": 4.433333333333334
+ },
+ {
+  "key": "imagen_39467",
+  "src": "img/t30pasaen_j46_window_night.jpg",
+  "start": 39.46666666666667,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "clip_43133",
+  "src": "broll/t30pasaen_real/t30pasaen_v01_05.mp4",
+  "start": 43.13333333333333,
+  "dur": 3.7666666666666666
+ },
+ {
+  "key": "imagen_46900",
+  "src": "img/t30pasaen_j30_laptop_map.jpg",
+  "start": 46.9,
+  "dur": 1.9333333333333333
+ },
+ {
+  "key": "clip_52333",
+  "src": "broll/t30pasaen_real/t30pasaen_f07.mp4",
+  "start": 52.333333333333336,
+  "dur": 2.1333333333333333
+ },
+ {
+  "key": "imagen_54467",
+  "src": "img/t30pasaen_j05_wallet_train.jpg",
+  "start": 54.46666666666667,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "imagen_58133",
+  "src": "img/t30pasaen_j06_vending.jpg",
+  "start": 58.13333333333333,
+  "dur": 4.433333333333334
+ },
+ {
+  "key": "clip_66700",
+  "src": "broll/t30pasaen_real/t30pasaen_f15.mp4",
+  "start": 66.7,
+  "dur": 2.033333333333333
+ },
+ {
+  "key": "imagen_68733",
+  "src": "img/t30pasaen_j09_notebook_write.jpg",
+  "start": 68.73333333333333,
+  "dur": 3.8666666666666667
+ },
+ {
+  "key": "clip_72600",
+  "src": "broll/t30pasaen_real/t30pasaen_v04_01.mp4",
+  "start": 72.6,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "clip_87467",
+  "src": "broll/t30pasaen_real/t30pasaen_f10.mp4",
+  "start": 87.46666666666667,
+  "dur": 2.466666666666667
+ },
+ {
+  "key": "clip_89933",
+  "src": "broll/t30pasaen_real/t30pasaen_f73.mp4",
+  "start": 89.93333333333334,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "clip_93600",
+  "src": "broll/t30pasaen_real/t30pasaen_v03_05.mp4",
+  "start": 93.6,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "clip_96833",
+  "src": "broll/t30pasaen_real/t30pasaen_v40_11.mp4",
+  "start": 96.83333333333333,
+  "dur": 2.2666666666666666
+ },
+ {
+  "key": "clip_102433",
+  "src": "broll/t30pasaen_real/t30pasaen_v30_01.mp4",
+  "start": 102.43333333333334,
+  "dur": 1.9666666666666666
+ },
+ {
+  "key": "clip_104400",
+  "src": "broll/t30pasaen_real/t30pasaen_f77.mp4",
+  "start": 104.4,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "imagen_107767",
+  "src": "img/t30pasaen_j50_backpack.jpg",
+  "start": 107.76666666666667,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "imagen_118700",
+  "src": "img/t30pasaen_j28_miniature.jpg",
+  "start": 118.7,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_122200",
+  "src": "broll/t30pasaen/t30pasaen_a64_city_night.mp4",
+  "start": 122.2,
+  "dur": 1.6
+ },
+ {
+  "key": "clip_127533",
+  "src": "broll/t30pasaen_real/t30pasaen_f11.mp4",
+  "start": 127.53333333333333,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "imagen_139267",
+  "src": "img/t30pasaen_j10_police_paper.jpg",
+  "start": 139.26666666666668,
+  "dur": 2.2666666666666666
+ },
+ {
+  "key": "imagen_151200",
+  "src": "img/t30pasaen_j11_newspaper_store.jpg",
+  "start": 151.2,
+  "dur": 3.1333333333333333
+ },
+ {
+  "key": "clip_167800",
+  "src": "broll/t30pasaen_real/t30pasaen_f18.mp4",
+  "start": 167.8,
+  "dur": 3.533333333333333
+ },
+ {
+  "key": "clip_171333",
+  "src": "broll/t30pasaen_real/t30pasaen_f19.mp4",
+  "start": 171.33333333333334,
+  "dur": 1.3666666666666667
+ },
+ {
+  "key": "clip_176167",
+  "src": "broll/t30pasaen_real/t30pasaen_v07_01.mp4",
+  "start": 176.16666666666666,
+  "dur": 2.2666666666666666
+ },
+ {
+  "key": "clip_178433",
+  "src": "broll/t30pasaen_real/t30pasaen_f49.mp4",
+  "start": 178.43333333333334,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_181733",
+  "src": "img/t30pasaen_j14_bank_atm.jpg",
+  "start": 181.73333333333332,
+  "dur": 4.666666666666667
+ },
+ {
+  "key": "clip_189700",
+  "src": "broll/t30pasaen_real/t30pasaen_f71.mp4",
+  "start": 189.7,
+  "dur": 2.8
+ },
+ {
+  "key": "clip_192500",
+  "src": "broll/t30pasaen_real/t30pasaen_f21.mp4",
+  "start": 192.5,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_196000",
+  "src": "broll/t30pasaen_real/t30pasaen_f20.mp4",
+  "start": 196,
+  "dur": 3.7666666666666666
+ },
+ {
+  "key": "clip_199767",
+  "src": "broll/t30pasaen_real/t30pasaen_v39_02.mp4",
+  "start": 199.76666666666668,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_203067",
+  "src": "img/t30pasaen_j15_community_cafe.jpg",
+  "start": 203.06666666666666,
+  "dur": 3.533333333333333
+ },
+ {
+  "key": "clip_206600",
+  "src": "broll/t30pasaen/t30pasaen_a46_weeds_porch.mp4",
+  "start": 206.6,
+  "dur": 2.066666666666667
+ },
+ {
+  "key": "clip_217467",
+  "src": "broll/t30pasaen/t30pasaen_a72_tokyo_dawn.mp4",
+  "start": 217.46666666666667,
+  "dur": 2.976666666666667
+ },
+ {
+  "key": "clip_247400",
+  "src": "broll/t30pasaen/t30pasaen_a09_vending_row.mp4",
+  "start": 247.4,
+  "dur": 1.4
+ },
+ {
+  "key": "imagen_252367",
+  "src": "img/t30pasaen_j01_street_dusk.jpg",
+  "start": 252.36666666666667,
+  "dur": 1.4333333333333333
+ },
+ {
+  "key": "clip_253800",
+  "src": "broll/t30pasaen_real/t30pasaen_v40_02.mp4",
+  "start": 253.8,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_257733",
+  "src": "broll/t30pasaen_real/t30pasaen_v13_01.mp4",
+  "start": 257.73333333333335,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "imagen_261167",
+  "src": "img/t30pasaen_j21_phone_table.jpg",
+  "start": 261.1666666666667,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_268100",
+  "src": "img/t30pasaen_j26_bow_door.jpg",
+  "start": 268.1,
+  "dur": 3.533333333333333
+ },
+ {
+  "key": "clip_271633",
+  "src": "broll/t30pasaen/t30pasaen_a21_elderly_walk.mp4",
+  "start": 271.6333333333333,
+  "dur": 2.7371
+ },
+ {
+  "key": "clip_275000",
+  "src": "broll/t30pasaen/t30pasaen_a20_elderly_bench.mp4",
+  "start": 275,
+  "dur": 1.6333333333333333
+ },
+ {
+  "key": "clip_280800",
+  "src": "broll/t30pasaen_real/t30pasaen_f75.mp4",
+  "start": 280.8,
+  "dur": 4.866666666666666
+ },
+ {
+  "key": "imagen_292667",
+  "src": "img/t30pasaen_j18_one_key.jpg",
+  "start": 292.6666666666667,
+  "dur": 1.4
+ },
+ {
+  "key": "imagen_297667",
+  "src": "img/t30pasaen_j19_silent_train.jpg",
+  "start": 297.6666666666667,
+  "dur": 2.466666666666667
+ },
+ {
+  "key": "clip_304067",
+  "src": "broll/t30pasaen/t30pasaen_a23_key_door.mp4",
+  "start": 304.06666666666666,
+  "dur": 3.008
+ },
+ {
+  "key": "clip_310500",
+  "src": "broll/t30pasaen_real/t30pasaen_f32.mp4",
+  "start": 310.5,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "clip_313133",
+  "src": "broll/t30pasaen_real/t30pasaen_v04_14.mp4",
+  "start": 313.1333333333333,
+  "dur": 3.9
+ },
+ {
+  "key": "imagen_317033",
+  "src": "img/t30pasaen_j24_tv_glow.jpg",
+  "start": 317.03333333333336,
+  "dur": 2.066666666666667
+ },
+ {
+  "key": "clip_322767",
+  "src": "broll/t30pasaen/t30pasaen_a30_tv_through_wall.mp4",
+  "start": 322.76666666666665,
+  "dur": 1.5
+ },
+ {
+  "key": "clip_324267",
+  "src": "broll/t30pasaen/t30pasaen_a12_tv_glow_wall.mp4",
+  "start": 324.26666666666665,
+  "dur": 2.3825999999999996
+ },
+ {
+  "key": "imagen_327567",
+  "src": "img/t30pasaen_j17_elderly_street.jpg",
+  "start": 327.56666666666666,
+  "dur": 3.2
+ },
+ {
+  "key": "clip_334867",
+  "src": "broll/t30pasaen_real/t30pasaen_f33.mp4",
+  "start": 334.8666666666667,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_354800",
+  "src": "broll/t30pasaen/t30pasaen_a34_sorting_letters.mp4",
+  "start": 354.8,
+  "dur": 2.7371
+ },
+ {
+  "key": "clip_358167",
+  "src": "broll/t30pasaen_real/t30pasaen_f45.mp4",
+  "start": 358.1666666666667,
+  "dur": 3.8
+ },
+ {
+  "key": "clip_365667",
+  "src": "broll/t30pasaen/t30pasaen_a33_cleaning_suits.mp4",
+  "start": 365.6666666666667,
+  "dur": 2.7520000000000002
+ },
+ {
+  "key": "clip_368867",
+  "src": "broll/t30pasaen_real/t30pasaen_f41.mp4",
+  "start": 368.8666666666667,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_372367",
+  "src": "broll/t30pasaen_real/t30pasaen_f42.mp4",
+  "start": 372.3666666666667,
+  "dur": 4.533333333333333
+ },
+ {
+  "key": "imagen_381467",
+  "src": "img/t30pasaen_j37_shoplift_shelf.jpg",
+  "start": 381.46666666666664,
+  "dur": 1.4666666666666666
+ },
+ {
+  "key": "imagen_392933",
+  "src": "img/t30pasaen_j33_window_inside.jpg",
+  "start": 392.93333333333334,
+  "dur": 1.6
+ },
+ {
+  "key": "clip_398733",
+  "src": "broll/t30pasaen/t30pasaen_a01_doors_row.mp4",
+  "start": 398.73333333333335,
+  "dur": 1.6
+ },
+ {
+  "key": "clip_400333",
+  "src": "broll/t30pasaen_real/t30pasaen_f34.mp4",
+  "start": 400.3333333333333,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_403567",
+  "src": "img/t30pasaen_j13_danchi_look_up.jpg",
+  "start": 403.56666666666666,
+  "dur": 3.566666666666667
+ },
+ {
+  "key": "imagen_407133",
+  "src": "img/t30pasaen_j29_insurance_papers.jpg",
+  "start": 407.1333333333333,
+  "dur": 2.566666666666667
+ },
+ {
+  "key": "clip_413133",
+  "src": "broll/t30pasaen_real/t30pasaen_f46.mp4",
+  "start": 413.1333333333333,
+  "dur": 1.2
+ },
+ {
+  "key": "imagen_414333",
+  "src": "img/t30pasaen_a39_insurance_contract.jpg",
+  "start": 414.3333333333333,
+  "dur": 3.8
+ },
+ {
+  "key": "imagen_418133",
+  "src": "img/t30pasaen_a71_crowded_market.jpg",
+  "start": 418.1333333333333,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_421367",
+  "src": "img/t30pasaen_j12_danchi_walk.jpg",
+  "start": 421.3666666666667,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "clip_428533",
+  "src": "broll/t30pasaen/t30pasaen_a16_danchi_balconies.mp4",
+  "start": 428.53333333333336,
+  "dur": 2.9015
+ },
+ {
+  "key": "imagen_432033",
+  "src": "img/t30pasaen_j07_tatami_laptop.jpg",
+  "start": 432.03333333333336,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_435433",
+  "src": "img/t30pasaen_j36_newspapers_pile.jpg",
+  "start": 435.43333333333334,
+  "dur": 1.7666666666666666
+ },
+ {
+  "key": "clip_440733",
+  "src": "broll/t30pasaen_real/t30pasaen_f50.mp4",
+  "start": 440.73333333333335,
+  "dur": 1.9
+ },
+ {
+  "key": "clip_474200",
+  "src": "broll/t30pasaen_real/t30pasaen_v21_02.mp4",
+  "start": 474.2,
+  "dur": 3.1666666666666665
+ },
+ {
+  "key": "clip_477367",
+  "src": "broll/t30pasaen_real/t30pasaen_f61.mp4",
+  "start": 477.3666666666667,
+  "dur": 3.8666666666666667
+ },
+ {
+  "key": "clip_481233",
+  "src": "broll/t30pasaen_real/t30pasaen_f52.mp4",
+  "start": 481.23333333333335,
+  "dur": 3
+ },
+ {
+  "key": "clip_487667",
+  "src": "broll/t30pasaen_real/t30pasaen_f62.mp4",
+  "start": 487.6666666666667,
+  "dur": 1.5
+ },
+ {
+  "key": "imagen_496433",
+  "src": "img/t30pasaen_j03_meter.jpg",
+  "start": 496.43333333333334,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_502367",
+  "src": "img/t30pasaen_j35_playground.jpg",
+  "start": 502.3666666666667,
+  "dur": 1.2
+ },
+ {
+  "key": "clip_503567",
+  "src": "broll/t30pasaen/t30pasaen_a14_newspaper_stack.mp4",
+  "start": 503.56666666666666,
+  "dur": 2.9835
+ },
+ {
+  "key": "clip_507467",
+  "src": "broll/t30pasaen_real/t30pasaen_f51.mp4",
+  "start": 507.46666666666664,
+  "dur": 3.5
+ },
+ {
+  "key": "imagen_510967",
+  "src": "img/t30pasaen_j39_living_room.jpg",
+  "start": 510.96666666666664,
+  "dur": 1.3
+ },
+ {
+  "key": "clip_516233",
+  "src": "broll/t30pasaen_real/t30pasaen_v02_01.mp4",
+  "start": 516.2333333333333,
+  "dur": 2.3333333333333335
+ },
+ {
+  "key": "clip_518567",
+  "src": "broll/t30pasaen_real/t30pasaen_v02_02.mp4",
+  "start": 518.5666666666667,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "imagen_521933",
+  "src": "img/t30pasaen_a52_prison_wall.jpg",
+  "start": 521.9333333333333,
+  "dur": 3.7
+ },
+ {
+  "key": "imagen_525633",
+  "src": "img/t30pasaen_j38_prison_wall.jpg",
+  "start": 525.6333333333333,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_537500",
+  "src": "broll/t30pasaen/t30pasaen_a57_kettle_steam.mp4",
+  "start": 537.5,
+  "dur": 2.6078
+ },
+ {
+  "key": "clip_541433",
+  "src": "broll/t30pasaen_real/t30pasaen_f56.mp4",
+  "start": 541.4333333333333,
+  "dur": 1.9666666666666666
+ },
+ {
+  "key": "clip_552767",
+  "src": "broll/t30pasaen/t30pasaen_a56_kettle_white.mp4",
+  "start": 552.7666666666667,
+  "dur": 2.8520000000000003
+ },
+ {
+  "key": "clip_555867",
+  "src": "broll/t30pasaen_real/t30pasaen_f06.mp4",
+  "start": 555.8666666666667,
+  "dur": 4.2
+ },
+ {
+  "key": "clip_563367",
+  "src": "broll/t30pasaen_real/t30pasaen_v26_02.mp4",
+  "start": 563.3666666666667,
+  "dur": 3.5
+ },
+ {
+  "key": "imagen_574433",
+  "src": "img/t30pasaen_j02_mailbox_full.jpg",
+  "start": 574.4333333333333,
+  "dur": 1.3
+ },
+ {
+  "key": "imagen_579367",
+  "src": "img/t30pasaen_j40_kettle.jpg",
+  "start": 579.3666666666667,
+  "dur": 2.033333333333333
+ },
+ {
+  "key": "clip_581400",
+  "src": "broll/t30pasaen_real/t30pasaen_f67.mp4",
+  "start": 581.4,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "imagen_585033",
+  "src": "img/t30pasaen_j43_letters_hand.jpg",
+  "start": 585.0333333333333,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "imagen_592167",
+  "src": "img/t30pasaen_j44_tea_two_cups.jpg",
+  "start": 592.1666666666666,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "imagen_595100",
+  "src": "img/t30pasaen_j41_tea_pour.jpg",
+  "start": 595.1,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_598700",
+  "src": "broll/t30pasaen/t30pasaen_a22_one_cup.mp4",
+  "start": 598.7,
+  "dur": 2.715
+ },
+ {
+  "key": "clip_604867",
+  "src": "broll/t30pasaen/t30pasaen_a50_newspapers_door.mp4",
+  "start": 604.8666666666667,
+  "dur": 2.3762
+ },
+ {
+  "key": "clip_608500",
+  "src": "broll/t30pasaen_real/t30pasaen_f68.mp4",
+  "start": 608.5,
+  "dur": 4
+ },
+ {
+  "key": "imagen_627733",
+  "src": "img/t30pasaen_j16_patrol_flyer.jpg",
+  "start": 627.7333333333333,
+  "dur": 1.4666666666666666
+ },
+ {
+  "key": "clip_634400",
+  "src": "broll/t30pasaen/t30pasaen_a11_back_alley_window.mp4",
+  "start": 634.4,
+  "dur": 2.7375000000000003
+ },
+ {
+  "key": "clip_641867",
+  "src": "broll/t30pasaen_real/t30pasaen_f27.mp4",
+  "start": 641.8666666666667,
+  "dur": 3.6
+ },
+ {
+  "key": "imagen_645467",
+  "src": "img/t30pasaen_j23_hallway_doors.jpg",
+  "start": 645.4666666666667,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "clip_649133",
+  "src": "broll/t30pasaen/t30pasaen_a06_door_ajar.mp4",
+  "start": 649.1333333333333,
+  "dur": 3.0399999999999996
+ },
+ {
+  "key": "clip_655467",
+  "src": "broll/t30pasaen_real/t30pasaen_f30.mp4",
+  "start": 655.4666666666667,
+  "dur": 4.633333333333334
+ },
+ {
+  "key": "imagen_660100",
+  "src": "img/t30pasaen_j45_gov_building.jpg",
+  "start": 660.1,
+  "dur": 4.166666666666667
+ },
+ {
+  "key": "clip_681400",
+  "src": "broll/t30pasaen/t30pasaen_a32_curtains_closed.mp4",
+  "start": 681.4,
+  "dur": 2.3
+ },
+ {
+  "key": "imagen_683700",
+  "src": "img/t30pasaen_a18_cafe_community.jpg",
+  "start": 683.7,
+  "dur": 3
+ },
+ {
+  "key": "clip_686700",
+  "src": "broll/t30pasaen_real/t30pasaen_v22_01.mp4",
+  "start": 686.7,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_690100",
+  "src": "img/t30pasaen_a67_cafe_morning.jpg",
+  "start": 690.1,
+  "dur": 1.7666666666666666
+ },
+ {
+  "key": "clip_696267",
+  "src": "broll/t30pasaen/t30pasaen_a68_door_knock_hand.mp4",
+  "start": 696.2666666666667,
+  "dur": 2.970833333333333
+ },
+ {
+  "key": "clip_700433",
+  "src": "broll/t30pasaen_real/t30pasaen_f76.mp4",
+  "start": 700.4333333333333,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "clip_703767",
+  "src": "broll/t30pasaen_real/t30pasaen_v04_13.mp4",
+  "start": 703.7666666666667,
+  "dur": 2.1666666666666665
+ },
+ {
+  "key": "clip_709333",
+  "src": "broll/t30pasaen_real/t30pasaen_f70.mp4",
+  "start": 709.3333333333334,
+  "dur": 1.4
+ },
+ {
+  "key": "imagen_726700",
+  "src": "img/t30pasaen_j49_door_hand.jpg",
+  "start": 726.7,
+  "dur": 1.5666666666666667
+ },
+ {
+  "key": "clip_731400",
+  "src": "broll/t30pasaen_real/t30pasaen_v01_04.mp4",
+  "start": 731.4,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_734467",
+  "src": "broll/t30pasaen_real/t30pasaen_v01_06.mp4",
+  "start": 734.4666666666667,
+  "dur": 3.533333333333333
+ },
+ {
+  "key": "imagen_738000",
+  "src": "img/t30pasaen_j25_closed_curtain.jpg",
+  "start": 738,
+  "dur": 3.8666666666666667
+ },
+ {
+  "key": "imagen_745900",
+  "src": "img/t30pasaen_j48_hello.jpg",
+  "start": 745.9,
+  "dur": 3.5
+ }
+]

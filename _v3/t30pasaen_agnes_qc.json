@@ -1,0 +1,299 @@
+{
+ "clips": {
+  "t30pasaen_a14_newspaper_stack": {
+   "size": 1078661,
+   "mtime": 1792797089883,
+   "auto": null,
+   "hint": "Newspaper pages flutter up on their own",
+   "dur": 3.067,
+   "revisado": "2026-10-23T23:32:08.036Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a01_doors_row": {
+   "size": 522878,
+   "mtime": 1792797107299,
+   "auto": null,
+   "hint": "Orange human-shaped shadow appears on wall/door in later fra",
+   "dur": 2.833,
+   "revisado": "2026-10-23T23:32:08.035Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a12_tv_glow_wall": {
+   "size": 391794,
+   "mtime": 1792797086050,
+   "auto": null,
+   "hint": "",
+   "dur": 2.467,
+   "revisado": "2026-10-23T23:32:08.040Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a03_mailbox_overflow": {
+   "size": 435661,
+   "mtime": 1792797116911,
+   "auto": null,
+   "hint": "Floating paper appearing in the middle frame.",
+   "dur": 2.567,
+   "revisado": "2026-10-23T23:32:08.036Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a11_back_alley_window": {
+   "size": 899905,
+   "mtime": 1792797082292,
+   "auto": null,
+   "hint": "Rightmost AC unit melting/changing shape",
+   "dur": 2.833,
+   "revisado": "2026-10-23T23:32:08.036Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a23_key_door": {
+   "size": 382541,
+   "mtime": 1792797034688,
+   "auto": null,
+   "hint": "",
+   "dur": 3.133,
+   "revisado": "2026-10-23T23:32:08.041Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a20_elderly_bench": {
+   "size": 967709,
+   "mtime": 1792797102426,
+   "auto": null,
+   "hint": "image 1 itself containing an unwanted person",
+   "dur": 3.1,
+   "revisado": "2026-10-23T23:32:08.037Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a06_door_ajar": {
+   "size": 548032,
+   "mtime": 1792797129574,
+   "auto": null,
+   "hint": "",
+   "dur": 3.133,
+   "revisado": "2026-10-23T23:32:08.039Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a21_elderly_walk": {
+   "size": 938661,
+   "mtime": 1792797028531,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-23T23:32:08.040Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a34_sorting_letters": {
+   "size": 850303,
+   "mtime": 1792797281942,
+   "auto": null,
+   "hint": "Objects swapped between hands in last frame",
+   "dur": 2.833,
+   "revisado": "2026-10-23T23:32:08.037Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a32_curtains_closed": {
+   "size": 578206,
+   "mtime": 1792797052033,
+   "auto": null,
+   "hint": "",
+   "dur": 3.033,
+   "revisado": "2026-10-23T23:32:08.041Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a33_cleaning_suits": {
+   "size": 753247,
+   "mtime": 1792797274405,
+   "auto": null,
+   "hint": "Image 1 itself containing an unwanted person",
+   "dur": 2.833,
+   "revisado": "2026-10-23T23:32:08.037Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a43_akiya_house": {
+   "size": 989650,
+   "mtime": 1792797293292,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-23T23:32:08.041Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a44_akiya_inside": {
+   "size": 338558,
+   "mtime": 1792797299531,
+   "auto": null,
+   "hint": "",
+   "dur": 3.033,
+   "revisado": "2026-10-23T23:32:08.041Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a22_one_cup": {
+   "size": 407688,
+   "mtime": 1792797030380,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-23T23:32:08.040Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a36_miniature_room": {
+   "size": 832841,
+   "mtime": 1792797289785,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-23T23:32:08.041Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a09_vending_row": {
+   "size": 457974,
+   "mtime": 1792797132256,
+   "auto": null,
+   "hint": "",
+   "dur": 3.033,
+   "revisado": "2026-10-23T23:32:08.040Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a16_danchi_balconies": {
+   "size": 566180,
+   "mtime": 1792797096081,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-23T23:32:08.040Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a56_kettle_white": {
+   "size": 298535,
+   "mtime": 1792797071540,
+   "auto": null,
+   "hint": "",
+   "dur": 2.933,
+   "revisado": "2026-10-23T23:32:08.042Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a30_tv_through_wall": {
+   "size": 280202,
+   "mtime": 1792797045858,
+   "auto": null,
+   "hint": "TV screen blue bar moves from bottom to top",
+   "dur": 3.067,
+   "revisado": "2026-10-23T23:32:08.037Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a46_weeds_porch": {
+   "size": 2053081,
+   "mtime": 1792797059138,
+   "auto": null,
+   "hint": "Green artifacts on ivy and yellow foundation in last frame",
+   "dur": 2.833,
+   "revisado": "2026-10-23T23:32:08.038Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a57_kettle_steam": {
+   "size": 540463,
+   "mtime": 1792797073757,
+   "auto": null,
+   "hint": "",
+   "dur": 2.7,
+   "revisado": "2026-10-23T23:32:08.042Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a04_meter_dial": {
+   "size": 1024218,
+   "mtime": 1792797124656,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-23T23:32:08.039Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a68_door_knock_hand": {
+   "size": 470035,
+   "mtime": 1792797245359,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-23T23:32:08.042Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a59_mail_scooter": {
+   "size": 1301250,
+   "mtime": 1792797076495,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-23T23:32:08.042Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a64_city_night": {
+   "size": 671984,
+   "mtime": 1792797240300,
+   "auto": null,
+   "hint": "A person appears in the window in the first video frame.",
+   "dur": 1.7,
+   "revisado": "2026-10-23T23:32:08.038Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a60_mail_slot": {
+   "size": 1238483,
+   "mtime": 1792797235621,
+   "auto": null,
+   "hint": "envelopes stretching and melting unnaturally",
+   "dur": 3.067,
+   "revisado": "2026-10-23T23:32:08.038Z",
+   "rechazado": "sobres se derriten en la mano",
+   "ok": false
+  },
+  "t30pasaen_a50_newspapers_door": {
+   "size": 675178,
+   "mtime": 1792797067730,
+   "auto": null,
+   "hint": "Extra newspaper appeared on floor",
+   "dur": 2.467,
+   "revisado": "2026-10-23T23:32:08.038Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30pasaen_a72_tokyo_dawn": {
+   "size": 762178,
+   "mtime": 1792797247011,
+   "auto": null,
+   "hint": "Sun and flock of birds appeared in the sky.",
+   "dur": 3.1,
+   "revisado": "2026-10-23T23:32:08.038Z",
+   "rechazado": null,
+   "ok": true
+  }
+ },
+ "hojas": null,
+ "version": 2,
+ "slug": "t30pasaen",
+ "at": "2026-10-23T23:32:08.047Z",
+ "repeticion": null
+}

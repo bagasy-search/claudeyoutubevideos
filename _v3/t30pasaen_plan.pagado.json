@@ -1,0 +1,2247 @@
+{
+ "total": 753.244,
+ "avatarEnd": 753.244,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0.0,
+   "dur": 3.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 3.82,
+   "dur": 2.26,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 6.08,
+   "dur": 3.3,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f47.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 9.38,
+   "dur": 8.1,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 76000,
+    "unit": "people a year",
+    "label": "DIE ALONE AT HOME · JAPAN",
+    "compare": "In the most polite country on earth.",
+    "source": "National Police Agency, 2024",
+    "photo": "img/t30pasaen_a27_closed_door_night.jpg",
+    "tone": "red",
+    "at": 10.8,
+    "compareAt": 14.08
+   },
+   "bed": "img/t30pasaen_j01_street_dusk_blur.jpg"
+  },
+  {
+   "t": 17.48,
+   "dur": 3.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 21.44,
+   "dur": 3.28,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j22_phone_call.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 24.72,
+   "dur": 3.9,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f74.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 28.62,
+   "dur": 3.38,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f37.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 32.0,
+   "dur": 3.02,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 35.02,
+   "dur": 4.44,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_v30_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 39.46,
+   "dur": 3.66,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j46_window_night.jpg"
+  },
+  {
+   "t": 43.12,
+   "dur": 3.78,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v01_05.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 46.9,
+   "dur": 1.94,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j30_laptop_map.jpg"
+  },
+  {
+   "t": 48.84,
+   "dur": 3.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 52.32,
+   "dur": 2.16,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f07.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 54.48,
+   "dur": 3.64,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j05_wallet_train.jpg"
+  },
+  {
+   "t": 58.12,
+   "dur": 4.46,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j06_vending.jpg"
+  },
+  {
+   "t": 62.58,
+   "dur": 4.12,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 66.7,
+   "dur": 2.04,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f15.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 68.74,
+   "dur": 3.86,
+   "sec": "S1",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j09_notebook_write.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 72.6,
+   "dur": 3.64,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_v04_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 76.24,
+   "dur": 6.7,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "DIRTY PASSPORT Nº 01",
+    "title": "JAPAN",
+    "sub": "The side the postcard doesn't show",
+    "part": "",
+    "stamp": "BEHIND THE DOOR",
+    "typeAt": 76.24,
+    "stampAt": 81.74
+   },
+   "bed": "img/t30pasaen_j07_tatami_laptop_blur.jpg"
+  },
+  {
+   "t": 82.94,
+   "dur": 4.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 87.48,
+   "dur": 2.46,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f10.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 89.94,
+   "dur": 3.66,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f73.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 93.6,
+   "dur": 3.24,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_v03_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 96.84,
+   "dur": 2.26,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v40_11.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 99.1,
+   "dur": 3.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 102.44,
+   "dur": 1.96,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v30_01.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 104.4,
+   "dur": 3.36,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f77.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 107.76,
+   "dur": 3.28,
+   "sec": "S2",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j50_backpack.jpg"
+  },
+  {
+   "t": 111.04,
+   "dur": 3.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 114.78,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "THE NUMBER",
+    "sub": "",
+    "part": "PART 1",
+    "stamp": "",
+    "typeAt": 114.88
+   },
+   "bed": "img/t30pasaen_j09_notebook_write_blur.jpg"
+  },
+  {
+   "t": 118.7,
+   "dur": 3.5,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j28_miniature.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 122.2,
+   "dur": 2.0,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 1",
+    "part": "THE NUMBER"
+   },
+   "bed": "img/t30pasaen_j09_notebook_write_blur.jpg"
+  },
+  {
+   "t": 122.2,
+   "dur": 2.0,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a64_city_night.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 124.2,
+   "dur": 3.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 127.54,
+   "dur": 3.34,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f11.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 130.88,
+   "dur": 8.4,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 76020,
+    "unit": "people",
+    "label": "DIED ALONE AT HOME · JAPAN · 2024",
+    "compare": "More than 3 in 4 were over 65.",
+    "source": "National Police Agency, 2024",
+    "photo": "img/t30pasaen_a13_police_stats.jpg",
+    "tone": "red",
+    "at": 132.2,
+    "compareAt": 134.26
+   },
+   "bed": "img/t30pasaen_j09_notebook_write_blur.jpg"
+  },
+  {
+   "t": 139.28,
+   "dur": 2.24,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j10_police_paper.jpg"
+  },
+  {
+   "t": 141.52,
+   "dur": 3.68,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 145.2,
+   "dur": 6.0,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaen_a54_living_room_alone.jpg",
+    "rightImg": "img/t30pasaen_a49_funeral_flowers.jpg",
+    "leftHead": "KODOKU",
+    "rightHead": "SHI",
+    "leftText": "Solitude",
+    "rightText": "Death",
+    "stamp": "KODOKUSHI",
+    "leftAt": 146.24,
+    "rightAt": 148.14
+   },
+   "bed": "img/t30pasaen_j09_notebook_write_blur.jpg"
+  },
+  {
+   "t": 151.2,
+   "dur": 3.14,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j11_newspaper_store.jpg"
+  },
+  {
+   "t": 154.34,
+   "dur": 4.26,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 158.6,
+   "dur": 9.2,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/t30pasaen_map_kanto.jpg",
+    "pins": [
+     {
+      "x": 745,
+      "y": 760,
+      "label": "TOKYO",
+      "at": 159.36,
+      "zoom": 1.3
+     },
+     {
+      "x": 935,
+      "y": 580,
+      "label": "MATSUDO",
+      "at": 160.76,
+      "zoom": 1.9
+     },
+     {
+      "x": 1003,
+      "y": 559,
+      "label": "TOKIWADAIRA",
+      "year": "1960",
+      "at": 163.82,
+      "zoom": 2.6
+     }
+    ],
+    "kicker": "JAPAN · CHIBA",
+    "credit": "Map: Soren Bradley · CC0 · Wikimedia Commons"
+   },
+   "bed": "img/t30pasaen_j09_notebook_write_blur.jpg"
+  },
+  {
+   "t": 167.8,
+   "dur": 3.52,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f18.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 171.32,
+   "dur": 1.38,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f19.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 172.7,
+   "dur": 3.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 176.18,
+   "dur": 2.24,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_v07_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 178.42,
+   "dur": 3.32,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f49.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 181.74,
+   "dur": 4.66,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j14_bank_atm.jpg"
+  },
+  {
+   "t": 186.4,
+   "dur": 3.311,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 189.711,
+   "dur": 2.8,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f71.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 192.511,
+   "dur": 3.5,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f21.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 196.011,
+   "dur": 3.74,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f20.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 199.751,
+   "dur": 3.3,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v39_02.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 203.051,
+   "dur": 3.56,
+   "sec": "S3",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j15_community_cafe.jpg"
+  },
+  {
+   "t": 206.611,
+   "dur": 2.04,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a46_weeds_porch.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 208.651,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 213.251,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "AN OLD COUNTRY",
+    "sub": "",
+    "part": "PART 2",
+    "stamp": "",
+    "typeAt": 213.35
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 217.451,
+   "dur": 3.36,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 2",
+    "part": "AN OLD COUNTRY"
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 217.451,
+   "dur": 3.36,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a72_tokyo_dawn.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 220.811,
+   "dur": 5.32,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 29.3,
+    "decimals": 1,
+    "unit": "%",
+    "label": "OF JAPAN IS 65 OR OLDER",
+    "source": "Statistics Bureau, 2024",
+    "photo": "img/t30pasaen_a55_street_whole.jpg",
+    "tone": "white",
+    "at": 219.73
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 226.131,
+   "dur": 5.66,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30pasaen_doc_pyramid.jpg",
+    "aspect": 1.435,
+    "highlights": [
+     {
+      "x": 1,
+      "y": 6.5,
+      "w": 98,
+      "h": 29.5,
+      "at": 224.85
+     }
+    ],
+    "chip": "AGE BY AGE",
+    "source": "CIA World Factbook, 2015",
+    "credit": "Public domain",
+    "note": {
+     "text": "Nearly 1 in 3 over 65",
+     "at": 225.45
+    },
+    "bed": "img/t30pasaen_a15_danchi_aerial.jpg"
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 231.791,
+   "dur": 3.86,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 235.651,
+   "dur": 7.28,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 38,
+    "unit": "%",
+    "label": "OF HOUSEHOLDS ARE ONE PERSON ALONE",
+    "compare": "One person. One key. One door.",
+    "source": "Census of Japan, 2020",
+    "photo": "img/t30pasaen_a29_modern_tower.jpg",
+    "tone": "white",
+    "at": 236.53,
+    "compareAt": 239.91
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 242.931,
+   "dur": 4.46,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "MEIWAKU",
+    "sub": "",
+    "part": "PART 3",
+    "stamp": "",
+    "typeAt": 242.45
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 247.391,
+   "dur": 1.4,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 3",
+    "part": "MEIWAKU"
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 247.391,
+   "dur": 1.4,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a09_vending_row.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 248.791,
+   "dur": 3.56,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 252.351,
+   "dur": 1.44,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j01_street_dusk.jpg"
+  },
+  {
+   "t": 253.791,
+   "dur": 3.94,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v40_02.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 257.731,
+   "dur": 3.44,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v13_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 261.171,
+   "dur": 3.22,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j21_phone_table.jpg"
+  },
+  {
+   "t": 264.391,
+   "dur": 3.72,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 268.111,
+   "dur": 3.52,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j26_bow_door.jpg"
+  },
+  {
+   "t": 271.631,
+   "dur": 3.36,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a21_elderly_walk.mp4",
+   "_dup": 1,
+   "real": false,
+   "rate": 0.828
+  },
+  {
+   "t": 274.991,
+   "dur": 1.64,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a20_elderly_bench.mp4",
+   "_dup": 1,
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 276.631,
+   "dur": 4.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 280.791,
+   "dur": 4.88,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f75.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 285.671,
+   "dur": 7.0,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaen_a08_lost_found.jpg",
+    "rightImg": "img/t30pasaen_a05_phone_bow.jpg",
+    "leftHead": "IT RETURNS",
+    "rightHead": "IT KEEPS",
+    "leftText": "Your lost wallet",
+    "rightText": "An old man from asking for help",
+    "stamp": "SAME POLITENESS",
+    "leftAt": 287.69,
+    "rightAt": 290.13
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 292.671,
+   "dur": 1.38,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j18_one_key.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 294.051,
+   "dur": 3.62,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 297.671,
+   "dur": 2.46,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j19_silent_train.jpg"
+  },
+  {
+   "t": 300.131,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "THE WALLS",
+    "sub": "",
+    "part": "PART 4",
+    "stamp": "",
+    "typeAt": 300.23
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 304.051,
+   "dur": 3.16,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 4",
+    "part": "THE WALLS"
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 304.051,
+   "dur": 3.16,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a23_key_door.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 307.211,
+   "dur": 3.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 310.491,
+   "dur": 2.64,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f32.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 313.131,
+   "dur": 3.9,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v04_14.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 317.031,
+   "dur": 2.08,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j24_tv_glow.jpg"
+  },
+  {
+   "t": 319.111,
+   "dur": 3.66,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 322.771,
+   "dur": 1.5,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a30_tv_through_wall.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 324.271,
+   "dur": 3.28,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a12_tv_glow_wall.mp4",
+   "real": false,
+   "rate": 0.737
+  },
+  {
+   "t": 327.551,
+   "dur": 3.22,
+   "sec": "S4",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j17_elderly_street.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 330.771,
+   "dur": 4.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 334.851,
+   "dur": 3.94,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f33.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 338.791,
+   "dur": 8.28,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 1.5,
+    "decimals": 1,
+    "unit": "million people",
+    "label": "WITHDRAWN FROM SOCIETY · AGES 15-64",
+    "compare": "In the middle of their lives.",
+    "source": "Cabinet Office, 2023",
+    "photo": "img/t30pasaen_a31_hikikomori_room.jpg",
+    "tone": "white",
+    "at": 341.99,
+    "compareAt": 347.07
+   },
+   "bed": "img/t30pasaen_j17_elderly_street_blur.jpg"
+  },
+  {
+   "t": 347.071,
+   "dur": 3.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 350.611,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "THE QUIET INDUSTRY",
+    "sub": "",
+    "part": "PART 5",
+    "stamp": "",
+    "typeAt": 350.71
+   },
+   "bed": "img/t30pasaen_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 354.811,
+   "dur": 3.36,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 5",
+    "part": "THE QUIET INDUSTRY"
+   },
+   "bed": "img/t30pasaen_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 354.811,
+   "dur": 3.36,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a34_sorting_letters.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 358.171,
+   "dur": 3.8,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f45.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 361.971,
+   "dur": 3.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 365.671,
+   "dur": 3.18,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a33_cleaning_suits.mp4",
+   "real": false,
+   "rate": 0.875
+  },
+  {
+   "t": 368.851,
+   "dur": 3.52,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f41.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 372.371,
+   "dur": 4.52,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f42.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 376.891,
+   "dur": 4.591,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 381.482,
+   "dur": 1.46,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j37_shoplift_shelf.jpg"
+  },
+  {
+   "t": 382.942,
+   "dur": 10.0,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30pasaen_a36_miniature_room.jpg",
+    "x": 595,
+    "y": 400,
+    "r": 150,
+    "note": "The calendar stopped",
+    "chip": "LOOK CLOSER",
+    "circleAt": 392.18,
+    "noteAt": 392.68
+   },
+   "bed": "img/t30pasaen_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 392.942,
+   "dur": 1.58,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j33_window_inside.jpg"
+  },
+  {
+   "t": 394.522,
+   "dur": 4.22,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 398.742,
+   "dur": 1.6,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a01_doors_row.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 400.342,
+   "dur": 3.24,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f34.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 403.582,
+   "dur": 3.54,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j13_danchi_look_up.jpg"
+  },
+  {
+   "t": 407.122,
+   "dur": 2.58,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j29_insurance_papers.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 409.702,
+   "dur": 3.42,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 413.122,
+   "dur": 1.2,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f46.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 414.322,
+   "dur": 3.8,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_a39_insurance_contract.jpg"
+  },
+  {
+   "t": 418.122,
+   "dur": 3.26,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_a71_crowded_market.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 421.382,
+   "dur": 2.72,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j12_danchi_walk.jpg"
+  },
+  {
+   "t": 424.102,
+   "dur": 4.42,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 428.522,
+   "dur": 3.5,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a16_danchi_balconies.mp4",
+   "_dup": 1,
+   "real": false,
+   "rate": 0.843
+  },
+  {
+   "t": 432.022,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j07_tatami_laptop.jpg"
+  },
+  {
+   "t": 435.422,
+   "dur": 1.78,
+   "sec": "S5",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j36_newspapers_pile.jpg"
+  },
+  {
+   "t": 437.202,
+   "dur": 3.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 440.722,
+   "dur": 1.9,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f50.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 442.622,
+   "dur": 6.28,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30pasaen_a41_map_icons.jpg",
+    "x": 950,
+    "y": 150,
+    "r": 170,
+    "note": "Each icon: a death",
+    "chip": "LOOK CLOSER",
+    "circleAt": 444.46,
+    "noteAt": 445.24
+   },
+   "bed": "img/t30pasaen_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 448.902,
+   "dur": 3.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 452.382,
+   "dur": 5.98,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaen_a40_for_rent.jpg",
+    "rightImg": "img/t30pasaen_a42_old_building_stairs.jpg",
+    "leftHead": "ONE GENERATION",
+    "rightHead": "THE NEXT",
+    "leftText": "Loneliness",
+    "rightText": "A discount",
+    "stamp": "JIKO BUKKEN",
+    "leftAt": 453.88,
+    "rightAt": 456.08
+   },
+   "bed": "img/t30pasaen_j26_bow_door_blur.jpg"
+  },
+  {
+   "t": 458.362,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "ZOOM OUT",
+    "sub": "",
+    "part": "PART 6",
+    "stamp": "",
+    "typeAt": 458.46
+   },
+   "bed": "img/t30pasaen_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 462.282,
+   "dur": 8.16,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 9,
+    "unit": "million empty homes",
+    "label": "AKIYA · JAPAN · 2023",
+    "compare": "About 1 in 7 homes in the country.",
+    "source": "Housing Survey, 2023",
+    "photo": "img/t30pasaen_a45_akiya_village.jpg",
+    "tone": "white",
+    "at": 464.58,
+    "compareAt": 467.12
+   },
+   "bed": "img/t30pasaen_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 470.442,
+   "dur": 3.76,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 470.442,
+   "dur": 3.08,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 6",
+    "part": "ZOOM OUT"
+   },
+   "bed": "img/t30pasaen_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 474.202,
+   "dur": 3.18,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_v21_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 477.382,
+   "dur": 3.84,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f61.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 481.222,
+   "dur": 3.02,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f52.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 484.242,
+   "dur": 3.42,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 487.662,
+   "dur": 1.5,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f62.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 489.162,
+   "dur": 7.28,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 686061,
+    "unit": "babies",
+    "label": "BORN TO JAPANESE PARENTS · 2024",
+    "compare": "The lowest since records began in 1899.",
+    "source": "Health Ministry, 2025",
+    "photo": "img/t30pasaen_a48_maternity_empty.jpg",
+    "tone": "red",
+    "at": 490.92,
+    "compareAt": 494.68
+   },
+   "bed": "img/t30pasaen_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 496.442,
+   "dur": 2.38,
+   "sec": "S6",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j03_meter.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 498.822,
+   "dur": 3.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 502.362,
+   "dur": 1.22,
+   "sec": "S6",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j35_playground.jpg"
+  },
+  {
+   "t": 503.582,
+   "dur": 3.88,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "real": false,
+   "asset": "broll/t30pasaen/t30pasaen_a14_newspaper_stack.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 507.462,
+   "dur": 3.52,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f51.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 510.982,
+   "dur": 1.3,
+   "sec": "S6",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j39_living_room.jpg"
+  },
+  {
+   "t": 512.282,
+   "dur": 3.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 516.242,
+   "dur": 2.34,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v02_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 518.582,
+   "dur": 3.36,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_v02_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 521.942,
+   "dur": 3.68,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_a52_prison_wall.jpg"
+  },
+  {
+   "t": 525.622,
+   "dur": 2.86,
+   "sec": "S6",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j38_prison_wall.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 528.482,
+   "dur": 4.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 533.002,
+   "dur": 4.5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaen_a53_prison_meal.jpg",
+    "rightImg": "img/t30pasaen_a44_akiya_inside.jpg",
+    "leftHead": "PRISON",
+    "rightHead": "HOME",
+    "leftText": "Meals, company",
+    "rightText": "Nobody",
+    "stamp": "LESS LONELY",
+    "leftAt": 533.86,
+    "rightAt": 534.96
+   },
+   "bed": "img/t30pasaen_j32_countryside_house_blur.jpg"
+  },
+  {
+   "t": 537.502,
+   "dur": 3.92,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a57_kettle_steam.mp4",
+   "real": false,
+   "rate": 0.72
+  },
+  {
+   "t": 541.422,
+   "dur": 1.98,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f56.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 543.402,
+   "dur": 4.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 547.862,
+   "dur": 4.92,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "CHECKING IN",
+    "sub": "",
+    "part": "PART 7",
+    "stamp": "",
+    "typeAt": 548.96
+   },
+   "bed": "img/t30pasaen_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 552.782,
+   "dur": 3.08,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 7",
+    "part": "CHECKING IN"
+   },
+   "bed": "img/t30pasaen_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 552.782,
+   "dur": 3.08,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a56_kettle_white.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 555.862,
+   "dur": 4.22,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f06.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 560.082,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 563.382,
+   "dur": 3.491,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v26_02.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 566.873,
+   "dur": 7.56,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Mom made tea. Mom is fine.",
+    "who": "The kettle's message",
+    "year": "",
+    "source": "A message, every time she boils water",
+    "at": 566.87,
+    "until": 569.15,
+    "highlight": "Mom is fine",
+    "bed": "img/t30pasaen_a58_phone_message.jpg"
+   },
+   "bed": "img/t30pasaen_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 574.433,
+   "dur": 1.3,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j02_mailbox_full.jpg"
+  },
+  {
+   "t": 575.733,
+   "dur": 3.62,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 579.353,
+   "dur": 2.04,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j40_kettle.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 581.393,
+   "dur": 3.64,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f67.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 585.033,
+   "dur": 3.36,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j43_letters_hand.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 588.393,
+   "dur": 3.78,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 592.173,
+   "dur": 2.92,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j44_tea_two_cups.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 595.093,
+   "dur": 3.6,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j41_tea_pour.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 598.693,
+   "dur": 3.02,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a22_one_cup.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 601.713,
+   "dur": 3.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 604.873,
+   "dur": 3.62,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a50_newspapers_door.mp4",
+   "_dup": 1,
+   "real": false,
+   "rate": 0.668
+  },
+  {
+   "t": 608.493,
+   "dur": 4.02,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f68.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 612.513,
+   "dur": 11.24,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaen_a62_gov_building.jpg",
+    "rightImg": "img/t30pasaen_a63_law_paper.jpg",
+    "leftHead": "2021",
+    "rightHead": "2024",
+    "leftText": "A minister for loneliness",
+    "rightText": "A national law on loneliness",
+    "stamp": "OFFICIAL",
+    "leftAt": 612.99,
+    "rightAt": 620.79
+   },
+   "bed": "img/t30pasaen_j40_kettle_blur.jpg"
+  },
+  {
+   "t": 623.753,
+   "dur": 3.98,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 627.733,
+   "dur": 1.46,
+   "sec": "S7",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j16_patrol_flyer.jpg",
+   "_dup": 1
+  },
+  {
+   "t": 629.193,
+   "dur": 5.2,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "Nº 01",
+    "title": "WHERE I ENDED UP",
+    "sub": "",
+    "part": "PART 8",
+    "stamp": "",
+    "typeAt": 629.29
+   },
+   "bed": "img/t30pasaen_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 634.393,
+   "dur": 4.16,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "PART 8",
+    "part": "WHERE I ENDED UP"
+   },
+   "bed": "img/t30pasaen_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 634.393,
+   "dur": 4.16,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a11_back_alley_window.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 638.553,
+   "dur": 3.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 641.873,
+   "dur": 3.6,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f27.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 645.473,
+   "dur": 3.66,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j23_hallway_doors.jpg"
+  },
+  {
+   "t": 649.133,
+   "dur": 3.16,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a06_door_ajar.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 652.293,
+   "dur": 3.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 655.473,
+   "dur": 4.64,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_f30.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 660.113,
+   "dur": 4.14,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j45_gov_building.jpg"
+  },
+  {
+   "t": 664.253,
+   "dur": 3.24,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 667.493,
+   "dur": 9.94,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "MapPin",
+   "props": {
+    "map": "img/t30pasaen_map_kanto.jpg",
+    "pins": [
+     {
+      "x": 1003,
+      "y": 559,
+      "label": "TOKIWADAIRA",
+      "at": 668.83,
+      "zoom": 2.6
+     }
+    ],
+    "kicker": "MATSUDO · CHIBA",
+    "credit": "Map: Soren Bradley · CC0 · Wikimedia Commons",
+    "bed": "img/t30pasaen_map_kanto.jpg"
+   },
+   "bed": "img/t30pasaen_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 677.433,
+   "dur": 3.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 681.393,
+   "dur": 2.3,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30pasaen/t30pasaen_a32_curtains_closed.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 683.693,
+   "dur": 3.02,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_a18_cafe_community.jpg"
+  },
+  {
+   "t": 686.713,
+   "dur": 3.38,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30pasaen_real/t30pasaen_v22_01.mp4",
+   "_dup": 1,
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 690.093,
+   "dur": 1.78,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_a67_cafe_morning.jpg"
+  },
+  {
+   "t": 691.873,
+   "dur": 4.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 696.273,
+   "dur": 4.16,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "real": false,
+   "asset": "broll/t30pasaen/t30pasaen_a68_door_knock_hand.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 700.433,
+   "dur": 3.32,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f76.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 703.753,
+   "dur": 2.18,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v04_13.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 705.933,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 709.333,
+   "dur": 1.4,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_f70.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 710.733,
+   "dur": 6.44,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30pasaen_a70_corridor_wave.jpg",
+    "rightImg": "img/t30pasaen_a66_curtain_still.jpg",
+    "leftHead": "SOMEONE KNOWS YOUR NAME",
+    "rightHead": "NOBODY DOES",
+    "leftText": "Found in 3 days",
+    "rightText": "Found in 3 years",
+    "stamp": "",
+    "leftAt": 713.01,
+    "rightAt": 713.75
+   },
+   "bed": "img/t30pasaen_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 717.173,
+   "dur": 9.52,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Do you know the name of the person on the other side of your wall?",
+    "who": "Tell me in the comments",
+    "year": "",
+    "source": "",
+    "at": 716.63,
+    "until": 720.13,
+    "highlight": "the other side of your wall",
+    "bed": "img/t30pasaen_a69_name_plate.jpg"
+   },
+   "bed": "img/t30pasaen_j46_window_night_blur.jpg"
+  },
+  {
+   "t": 726.693,
+   "dur": 1.56,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j49_door_hand.jpg"
+  },
+  {
+   "t": 728.253,
+   "dur": 3.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 731.413,
+   "dur": 3.04,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v01_04.mp4",
+   "rate": 1.0,
+   "_dup": 1
+  },
+  {
+   "t": 734.453,
+   "dur": 3.54,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30pasaen_real/t30pasaen_v01_06.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 737.993,
+   "dur": 3.86,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j25_closed_curtain.jpg"
+  },
+  {
+   "t": 741.853,
+   "dur": 4.04,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 745.893,
+   "dur": 3.52,
+   "sec": "S8",
+   "lugar": "javier",
+   "kind": "imagen",
+   "asset": "img/t30pasaen_j48_hello.jpg"
+  },
+  {
+   "t": 749.413,
+   "dur": 3.831,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  }
+ ]
+}
