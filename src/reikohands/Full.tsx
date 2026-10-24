@@ -73,11 +73,14 @@ const inB = (t: number, k: string) => { const i = BEATS.findIndex((b) => b.k ===
 
 const M = makeVideo({
   caps: CAPS as [string, number][], avwin: AVW as number[][], avail: AVAIL as { clips: string[]; imgs: string[] }, T0: 0, TEND, flashAtStart: false,
-  beats: ({ AV }) => BEATS.map((b): Beat => {
+  beats: ({ AV }) => BEATS.map((b, i): Beat => {
     // cámara a mano (vara 23-oct): avatar y tomas envueltos en CamaraMano; el mundo la lleva en su cámara 3D (nunca dos capas)
     const mano = (x: Beat): Beat => ({ ...x, r: (t) => <CamaraMano seed={4}>{x.r(t)}</CamaraMano> });
     if (b.k === "AV") return mano({ ...AV(b.a, b.tr), a: b.a });
-    if (b.k.startsWith("W:")) return { a: b.a, tr: b.tr, p: [960, 470], r: (t) => <World t={t} name={b.k.slice(2)} a={b.a} /> };
+    // mundo → mundo: nunca "light" (monta dos ThreeCanvas a la vez y bajo swangle se cuelga el cuadro: 7 tramos caídos el 24-oct);
+    // el latigazo muestra uno solo por vez
+    const ww = b.k.startsWith("W:") && BEATS[i - 1]?.k.startsWith("W:") && b.tr === "light";
+    if (b.k.startsWith("W:")) return { a: b.a, tr: ww ? (i % 2 ? "whip" : "whipL") : b.tr, p: [960, 470], r: (t) => <World t={t} name={b.k.slice(2)} a={b.a} /> };
     // tramo de toma "o02@4.1": la toma corre desde su segundo 4,1 (cada tramo se usa una sola vez; la toma avanza)
     // plano de agnes "ag_rh_b01x": ~3 s, se usa entero desde su cuadro 0
     const [k, off] = b.k.split("@");
