@@ -1,4 +1,5 @@
 import React from "react";
+import { Easing, interpolate } from "remotion";
 import { SUELO, lerp, clamp, suave } from "./lib";
 
 // Marioneta de palitos. Los ángulos se miden desde "colgando hacia abajo"; positivo = hacia adelante.
@@ -24,6 +25,7 @@ export type Look = {
   guantes?: string;
   vincha?: string;
   mono?: string;
+  papel?: boolean; // marioneta de cartulina: remaches en las articulaciones, sin sonrisa de emoji
 };
 export type Borde = { dx: number; dy: number; color: string; op: number };
 
@@ -78,12 +80,15 @@ export const mezclar = (a: Pose, b: Pose, u: number): Pose => ({
 export const con = (b: Pose, cambios: Partial<Pose>): Pose => ({ ...b, ...cambios });
 
 // secuencia de poses: cada llave [t, pose, dur] llega a su pose en t, transicionando durante dur antes
-export const secuencia = (t: number, ks: [number, Pose, number?][]) => {
+// viva = anticipación + pasada (back in-out): el cuerpo junta envión antes y se pasa un poco al llegar
+const vivo = Easing.inOut(Easing.back(1.3));
+export const secuencia = (t: number, ks: [number, Pose, number?][], viva = false) => {
   let P = ks[0][1];
   for (let i = 1; i < ks.length; i++) {
     const [ti, Pi, d = 0.4] = ks[i];
     if (t < ti - d) break;
-    P = mezclar(P, Pi, suave(t, ti - d, ti));
+    const u = viva ? interpolate(t, [ti - d, ti], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: vivo }) : suave(t, ti - d, ti);
+    P = mezclar(P, Pi, u);
   }
   return P;
 };
@@ -197,15 +202,22 @@ const Cuerpo: React.FC<{ x: number; P: Pose; look: Look; color: string; principa
           <path d="M18,-9 L50,-7 Q54,-2 48,1 L20,-1 Z" fill={principal ? "#5a1414" : color} />
         </g>
       )}
-      {cara && principal && <Rostro x={e.cab[0]} y={e.cab[1]} c={cara} inclin={inclin} />}
+      {cara && principal && <Rostro x={e.cab[0]} y={e.cab[1]} c={cara} inclin={inclin} papel={look.papel} />}
       {brazo(0)}
+      {look.papel && principal && (
+        <g fill="#9c8a6c" stroke="#3a2c1c" strokeWidth={1.2}>
+          {[e.hombro, e.cuello, [x, P.y] as [number, number], e.brazos[0].codo, e.piernas[0].rod].map((q, i) => (
+            <circle key={i} cx={q[0]} cy={q[1]} r={look.ancho * 0.36} />
+          ))}
+        </g>
+      )}
       {taza !== undefined && principal && <Taza x={e.brazos[taza].mano[0] + 4} y={e.brazos[taza].mano[1] - 2} t={t} vapor={vapor} />}
     </g>
   );
 };
 
 // la cara: de perfil (mirando adelante, giro 0) a de frente (giro 1)
-const Rostro: React.FC<{ x: number; y: number; c: Cara; inclin: number }> = ({ x, y, c, inclin }) => {
+const Rostro: React.FC<{ x: number; y: number; c: Cara; inclin: number; papel?: boolean }> = ({ x, y, c, inclin, papel }) => {
   const g = c.giro;
   const grande = c.ojos ?? 1;
   const ry = 4.2 * grande * (1 - c.parpado * 0.9);
@@ -234,7 +246,7 @@ const Rostro: React.FC<{ x: number; y: number; c: Cara; inclin: number }> = ({ x
       )}
       {boca > 0.08 ? (
         <ellipse cx={bx} cy={11} rx={bw * 0.75} ry={2 + 7 * boca} fill="#fff6e8" />
-      ) : (
+      ) : papel ? null : (
         <path
           d={`M${bx - bw},${9} Q${bx},${9 + curvaB} ${bx + bw},${9 - 1.5 * c.sonrisa}`}
           stroke="#fff6e8"

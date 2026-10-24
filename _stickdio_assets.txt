@@ -1,0 +1,7 @@
+stickdio/cafe_barra.png
+stickdio/cafe_fondo.jpg
+stickdio/cafe_planta.png
+stickdio/insert_mesa.jpg
+stickdio/ring_fondo.jpg
+stickdio/ring_lona.png
+stickdio/techo.jpg
