@@ -20,9 +20,10 @@ export const at = (ph: string, after = 0): number => {
   throw new Error("at(): no encuentro «" + ph + "» en words.json");
 };
 
-const AV = AVAIL as { reel: boolean; reelLen?: number; ltx: string[] };
+const AV = AVAIL as { reel: boolean; reelLen?: number; ltx: string[]; ag?: Record<string, number> };
 const LTX = new Set(AV.ltx); // tomas LTX ya bajadas (public/rkopener/ltx_<k>.mp4); si no, el cuadro clave img_<k>.jpg
-export const clip = (k: string) => (LTX.has(k) ? "ltx_" + k : "img_" + k);
+const AG = new Set(Object.keys(AV.ag ?? {})); // clips agnes de ~3 s (public/reikoneck/ag_<k>.mp4): sólo en el primer uso, la segunda vez va la foto
+export const clip = (k: string, from = 0) => (LTX.has(k) ? "ltx_" + k : AG.has(k) && from === 0 ? "ag_" + k : "img_" + k);
 const REEL_LEN = AV.reelLen ?? 301.8;
 export const WIN: { ms: number; me: number; off: number }[] = (AVW as { win: { ms: number; me: number; off: number }[] }).win;
 export const winAt = (t: number) => WIN.findIndex((w) => t >= w.ms && t < w.me);
@@ -39,8 +40,8 @@ export const Avatar: React.FC<{ t: number }> = ({ t }) => {
 
 // toma real (LTX o cuadro clave) con empuje lento propio por plano
 export const Shot: React.FC<{ k: string; t: number; a: number; z?: [number, number]; ox?: number; oy?: number; dur?: number; dim?: number; from?: number }> = ({ k, t, a, z = [1.03, 1.12], ox = 0, oy = 0, dur = 8, dim = 0, from = 0 }) => {
-  const q = e(t, a, a + dur), sc = z[0] + (z[1] - z[0]) * q, id = clip(k);
-  return <AbsoluteFill style={{ transform: `scale(${sc}) translate(${ox * q}px, ${oy * q}px)`, filter: dim > 0 ? `brightness(${1 - dim})` : undefined }}><Vid id={id} from={from} at={id.startsWith("ltx_") ? a : undefined} /></AbsoluteFill>;
+  const q = e(t, a, a + dur), sc = z[0] + (z[1] - z[0]) * q, id = clip(k, from);
+  return <AbsoluteFill style={{ transform: `scale(${sc}) translate(${ox * q}px, ${oy * q}px)`, filter: dim > 0 ? `brightness(${1 - dim})` : undefined }}><Vid id={id} from={from} at={id.startsWith("img_") ? undefined : a} /></AbsoluteFill>;
 };
 export const Swipe: React.FC<{ t: number; a: number; b: number; from: React.ReactNode; to: React.ReactNode; dir?: number; vert?: boolean }> = ({ t, a, b, from, to, dir = 1, vert }) => {
   const k = ei(t, a, b), ax = vert ? "Y" : "X", D = vert ? 1080 : 1920;

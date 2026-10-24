@@ -1,1 +1,40 @@
-{"reel": false, "ltx": []}
+{
+ "reel": false,
+ "ltx": [
+  "g_mirror",
+  "g_touch"
+ ],
+ "ag": {
+  "c_dots": 3.13,
+  "c_down": 3.07,
+  "e_kettle": 3.1,
+  "g_mirror": 3.07,
+  "g_phone": 3.07,
+  "g_touch": 3.0,
+  "k_ceiling": 3.07,
+  "k_kettle": 3.03,
+  "n_kimono": 3.07,
+  "n_posture": 3.07,
+  "o_drops": 2.93,
+  "o_jars": 3.07,
+  "o_side": 3.07,
+  "o_up": 2.2,
+  "p_dict": 3.1,
+  "p_down": 3.07,
+  "p_up": 3.07,
+  "pl_high": 3.07,
+  "pl_soba": 2.7,
+  "pl_towel": 3.07,
+  "s_cream": 3.07,
+  "s_higasa": 2.83,
+  "s_women": 3.07,
+  "salon_shoulders": 3.1,
+  "salon_towel": 3.07,
+  "t_neck": 3.07,
+  "t_water": 3.07,
+  "t_wring": 3.0,
+  "w_hot": 2.83,
+  "w_pat": 3.0,
+  "w_wash": 2.47
+ }
+}

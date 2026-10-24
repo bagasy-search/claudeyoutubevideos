@@ -1,7 +1,8 @@
 // rkopener (base cerpapeles/gary01) · piezas 2.5D (HTML/SVG con perspectiva real) que viven ENCIMA del mundo 3D, de las tomas y del avatar borroneado.
 import React from "react";
-import { AbsoluteFill, Img, OffthreadVideo, Sequence, staticFile } from "remotion";
+import { AbsoluteFill, Freeze, Img, OffthreadVideo, Sequence, staticFile } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Montserrat";
+import AVAIL from "./avail.json";
 
 export const { fontFamily: FONT } = loadFont("normal", { weights: ["600", "800", "900"], subsets: ["latin"] });
 export const FPS = 30;
@@ -25,6 +26,12 @@ export const extrude = (n: number, col: string, dx = 0.6, dy = 1) =>
 // toma (LTX mp4 o foto) a cuadro completo
 export const Vid: React.FC<{ id: string; from?: number; at?: number; style?: React.CSSProperties; vol?: number }> = ({ id, from = 0, at, style, vol = 0 }) => {
   if (id.startsWith("img_")) return <Img src={staticFile(PS + id + ".jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} />;
+  // clip agnes (~3 s): a media velocidad y congelado en su último cuadro si la frase dura más
+  if (id.startsWith("ag_")) {
+    const last = Math.floor(((AVAIL as { ag?: Record<string, number> }).ag?.[id.slice(3)] ?? 3) * 2 * FPS) - 4;
+    const ag = <Freeze frame={last} active={(f) => f > last}><OffthreadVideo src={staticFile(PS + id + ".mp4")} playbackRate={0.5} muted style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} /></Freeze>;
+    return at === undefined ? ag : <Sequence from={s(at)} layout="none">{ag}</Sequence>;
+  }
   const v = <OffthreadVideo src={staticFile(PS + id + ".mp4")} startFrom={s(from)} muted={vol === 0} volume={vol} style={{ width: "100%", height: "100%", objectFit: "cover", ...style }} />;
   // at = segundo de la composición en que arranca la toma (la toma corre desde su cuadro `from`)
   return at === undefined ? v : <Sequence from={s(at)} layout="none">{v}</Sequence>;
