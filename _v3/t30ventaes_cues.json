@@ -1,0 +1,980 @@
+[
+ {
+  "key": "clip_5167",
+  "src": "broll/t30ventaes_real/t30ventaes_f12.mp4",
+  "start": 5.166666666666667,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_18033",
+  "src": "broll/t30ventaes_real/t30ventaes_y04.mp4",
+  "start": 18.033333333333335,
+  "dur": 3.7
+ },
+ {
+  "key": "imagen_21733",
+  "src": "img/t30ventaes_r05_mostrador_no.jpg",
+  "start": 21.733333333333334,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_24400",
+  "src": "broll/t30ventaes_real/t30ventaes_s03.mp4",
+  "start": 24.4,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_30867",
+  "src": "broll/t30ventaes_real/t30ventaes_b04.mp4",
+  "start": 30.866666666666667,
+  "dur": 4.166666666666667
+ },
+ {
+  "key": "clip_35033",
+  "src": "broll/t30ventaes_real/t30ventaes_b07.mp4",
+  "start": 35.03333333333333,
+  "dur": 4.166666666666667
+ },
+ {
+  "key": "imagen_46967",
+  "src": "img/t30ventaes_r07_cobro_mantenimiento.jpg",
+  "start": 46.96666666666667,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_49833",
+  "src": "broll/t30ventaes_ag/t30ventaes_a13_sala_reuniones.mp4",
+  "start": 49.833333333333336,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_52700",
+  "src": "broll/t30ventaes_real/t30ventaes_t10.mp4",
+  "start": 52.7,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_59667",
+  "src": "broll/t30ventaes_real/t30ventaes_b19.mp4",
+  "start": 59.666666666666664,
+  "dur": 4.5532666666666675
+ },
+ {
+  "key": "clip_64800",
+  "src": "broll/t30ventaes_ag/t30ventaes_a47_agencia_vaciada.mp4",
+  "start": 64.8,
+  "dur": 2.2819999999999996
+ },
+ {
+  "key": "clip_67600",
+  "src": "broll/t30ventaes_ag/t30ventaes_a66_puerta_vidrio.mp4",
+  "start": 67.6,
+  "dur": 2.957666666666667
+ },
+ {
+  "key": "clip_75500",
+  "src": "broll/t30ventaes_real/t30ventaes_b02.mp4",
+  "start": 75.5,
+  "dur": 2
+ },
+ {
+  "key": "clip_77500",
+  "src": "broll/t30ventaes_real/t30ventaes_u19.mp4",
+  "start": 77.5,
+  "dur": 2.7
+ },
+ {
+  "key": "clip_94467",
+  "src": "broll/t30ventaes_ag/t30ventaes_a67_escritorio_atardecer.mp4",
+  "start": 94.46666666666667,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_96867",
+  "src": "broll/t30ventaes_real/t30ventaes_y06.mp4",
+  "start": 96.86666666666666,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "imagen_99733",
+  "src": "img/t30ventaes_r10_hermana_furiosa.jpg",
+  "start": 99.73333333333333,
+  "dur": 3.3
+ },
+ {
+  "key": "clip_114733",
+  "src": "broll/t30ventaes_ag/t30ventaes_a10_frasco_caramelos.mp4",
+  "start": 114.73333333333333,
+  "dur": 2.5
+ },
+ {
+  "key": "imagen_120833",
+  "src": "img/t30ventaes_r13_firma_cartas.jpg",
+  "start": 120.83333333333333,
+  "dur": 3.566666666666667
+ },
+ {
+  "key": "clip_124400",
+  "src": "broll/t30ventaes_real/t30ventaes_y13.mp4",
+  "start": 124.4,
+  "dur": 3.566666666666667
+ },
+ {
+  "key": "clip_127967",
+  "src": "broll/t30ventaes_real/t30ventaes_y09.mp4",
+  "start": 127.96666666666667,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "clip_143767",
+  "src": "broll/t30ventaes_ag/t30ventaes_a53_caja_quemada.mp4",
+  "start": 143.76666666666668,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "imagen_149567",
+  "src": "img/t30ventaes_r16_cafecito_comentarios.jpg",
+  "start": 149.56666666666666,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "imagen_152500",
+  "src": "img/t30ventaes_a15_cafe_tablet.jpg",
+  "start": 152.5,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "imagen_155167",
+  "src": "img/t30ventaes_r50_libreta_cajon.jpg",
+  "start": 155.16666666666666,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_163933",
+  "src": "broll/t30ventaes_real/t30ventaes_y01.mp4",
+  "start": 163.93333333333334,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "imagen_166600",
+  "src": "img/t30ventaes_r17_alcancia.jpg",
+  "start": 166.6,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_169267",
+  "src": "broll/t30ventaes_real/t30ventaes_b20.mp4",
+  "start": 169.26666666666668,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "imagen_177733",
+  "src": "img/t30ventaes_r18_una_carta.jpg",
+  "start": 177.73333333333332,
+  "dur": 5.066666666666666
+ },
+ {
+  "key": "clip_194100",
+  "src": "broll/t30ventaes_real/t30ventaes_u04.mp4",
+  "start": 194.1,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_196933",
+  "src": "broll/t30ventaes_real/t30ventaes_b10.mp4",
+  "start": 196.93333333333334,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_199767",
+  "src": "broll/t30ventaes_real/t30ventaes_t09.mp4",
+  "start": 199.76666666666668,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_214233",
+  "src": "broll/t30ventaes_real/t30ventaes_t11.mp4",
+  "start": 214.23333333333332,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "imagen_217667",
+  "src": "img/t30ventaes_r20_pregunta_asesora.jpg",
+  "start": 217.66666666666666,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "clip_221133",
+  "src": "broll/t30ventaes_real/t30ventaes_u09.mp4",
+  "start": 221.13333333333333,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_228067",
+  "src": "img/t30ventaes_r08_computadora.jpg",
+  "start": 228.06666666666666,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_230733",
+  "src": "broll/t30ventaes_real/t30ventaes_t03.mp4",
+  "start": 230.73333333333332,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_233400",
+  "src": "broll/t30ventaes_real/t30ventaes_s05.mp4",
+  "start": 233.4,
+  "dur": 3.8333333333333335
+ },
+ {
+  "key": "imagen_242167",
+  "src": "img/t30ventaes_r21_retiro_grande.jpg",
+  "start": 242.16666666666666,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_245100",
+  "src": "broll/t30ventaes_real/t30ventaes_b14.mp4",
+  "start": 245.1,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_248033",
+  "src": "broll/t30ventaes_real/t30ventaes_t05.mp4",
+  "start": 248.03333333333333,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_256000",
+  "src": "broll/t30ventaes_ag/t30ventaes_a05_telefono_reloj.mp4",
+  "start": 256,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_258400",
+  "src": "broll/t30ventaes_real/t30ventaes_b05.mp4",
+  "start": 258.4,
+  "dur": 3.4
+ },
+ {
+  "key": "clip_261800",
+  "src": "broll/t30ventaes_real/t30ventaes_u29.mp4",
+  "start": 261.8,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "imagen_264733",
+  "src": "img/t30ventaes_a34_martillo_juez.jpg",
+  "start": 264.73333333333335,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_272033",
+  "src": "broll/t30ventaes_real/t30ventaes_f11.mp4",
+  "start": 272.03333333333336,
+  "dur": 4.166666666666667
+ },
+ {
+  "key": "clip_276200",
+  "src": "broll/t30ventaes_real/t30ventaes_s09.mp4",
+  "start": 276.2,
+  "dur": 4.551833333333334
+ },
+ {
+  "key": "clip_287133",
+  "src": "broll/t30ventaes_real/t30ventaes_y07.mp4",
+  "start": 287.1333333333333,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "clip_289767",
+  "src": "broll/t30ventaes_real/t30ventaes_y08.mp4",
+  "start": 289.76666666666665,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_292367",
+  "src": "broll/t30ventaes_real/t30ventaes_f02.mp4",
+  "start": 292.3666666666667,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "clip_295000",
+  "src": "broll/t30ventaes_ag/t30ventaes_a02_sobre_puerta.mp4",
+  "start": 295,
+  "dur": 2.2848
+ },
+ {
+  "key": "clip_298400",
+  "src": "broll/t30ventaes_real/t30ventaes_y03.mp4",
+  "start": 298.4,
+  "dur": 1.4
+ },
+ {
+  "key": "clip_311067",
+  "src": "broll/t30ventaes_ag/t30ventaes_a01_mostrador_vacio.mp4",
+  "start": 311.06666666666666,
+  "dur": 3.017
+ },
+ {
+  "key": "imagen_319467",
+  "src": "img/t30ventaes_r24_no_fraccionar.jpg",
+  "start": 319.46666666666664,
+  "dur": 3.533333333333333
+ },
+ {
+  "key": "imagen_323000",
+  "src": "img/t30ventaes_r32_dos_circulos.jpg",
+  "start": 323,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_339133",
+  "src": "broll/t30ventaes_ag/t30ventaes_a31_sala_espera.mp4",
+  "start": 339.1333333333333,
+  "dur": 2.976
+ },
+ {
+  "key": "clip_343267",
+  "src": "broll/t30ventaes_real/t30ventaes_f16.mp4",
+  "start": 343.26666666666665,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "imagen_351533",
+  "src": "img/t30ventaes_r28_clientes_gracias.jpg",
+  "start": 351.53333333333336,
+  "dur": 3.1
+ },
+ {
+  "key": "imagen_354633",
+  "src": "img/t30ventaes_r01_libreta.jpg",
+  "start": 354.6333333333333,
+  "dur": 5.133333333333334
+ },
+ {
+  "key": "clip_364500",
+  "src": "broll/t30ventaes_real/t30ventaes_s01.mp4",
+  "start": 364.5,
+  "dur": 3.7632
+ },
+ {
+  "key": "imagen_368767",
+  "src": "img/t30ventaes_a19_escritorio_asesor.jpg",
+  "start": 368.76666666666665,
+  "dur": 4
+ },
+ {
+  "key": "clip_372767",
+  "src": "broll/t30ventaes_real/t30ventaes_y15.mp4",
+  "start": 372.76666666666665,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_386900",
+  "src": "broll/t30ventaes_real/t30ventaes_u03.mp4",
+  "start": 386.9,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_406133",
+  "src": "img/t30ventaes_r27_formulario_confianza.jpg",
+  "start": 406.1333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_408533",
+  "src": "broll/t30ventaes_real/t30ventaes_u20.mp4",
+  "start": 408.53333333333336,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_411733",
+  "src": "img/t30ventaes_r06_telefono_numeros.jpg",
+  "start": 411.73333333333335,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_414333",
+  "src": "broll/t30ventaes_real/t30ventaes_a02.mp4",
+  "start": 414.3333333333333,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_422567",
+  "src": "broll/t30ventaes_real/t30ventaes_y10.mp4",
+  "start": 422.56666666666666,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_425633",
+  "src": "broll/t30ventaes_real/t30ventaes_s14.mp4",
+  "start": 425.6333333333333,
+  "dur": 2.5
+ },
+ {
+  "key": "clip_428133",
+  "src": "broll/t30ventaes_real/t30ventaes_s15.mp4",
+  "start": 428.1333333333333,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_430967",
+  "src": "broll/t30ventaes_ag/t30ventaes_a07_terminal_banco.mp4",
+  "start": 430.96666666666664,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_437700",
+  "src": "img/t30ventaes_r49_llave_hija.jpg",
+  "start": 437.7,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_440100",
+  "src": "broll/t30ventaes_real/t30ventaes_w02.mp4",
+  "start": 440.1,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_442767",
+  "src": "broll/t30ventaes_real/t30ventaes_s12.mp4",
+  "start": 442.76666666666665,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_446267",
+  "src": "broll/t30ventaes_real/t30ventaes_s02.mp4",
+  "start": 446.26666666666665,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_452767",
+  "src": "broll/t30ventaes_real/t30ventaes_s16.mp4",
+  "start": 452.76666666666665,
+  "dur": 3.2
+ },
+ {
+  "key": "clip_455967",
+  "src": "broll/t30ventaes_real/t30ventaes_s08.mp4",
+  "start": 455.96666666666664,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_472733",
+  "src": "img/t30ventaes_r30_hermana_mesa.jpg",
+  "start": 472.73333333333335,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_476033",
+  "src": "img/t30ventaes_r22_hijo_llorando.jpg",
+  "start": 476.03333333333336,
+  "dur": 4.833333333333333
+ },
+ {
+  "key": "imagen_485867",
+  "src": "img/t30ventaes_r33_hermana_firma.jpg",
+  "start": 485.8666666666667,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_488267",
+  "src": "broll/t30ventaes_real/t30ventaes_b09.mp4",
+  "start": 488.26666666666665,
+  "dur": 3.7523999999999997
+ },
+ {
+  "key": "clip_513000",
+  "src": "broll/t30ventaes_real/t30ventaes_f10.mp4",
+  "start": 513,
+  "dur": 2.3666666666666667
+ },
+ {
+  "key": "imagen_520367",
+  "src": "img/t30ventaes_r34_notario.jpg",
+  "start": 520.3666666666667,
+  "dur": 2.7666666666666666
+ },
+ {
+  "key": "clip_523133",
+  "src": "broll/t30ventaes_real/t30ventaes_s07.mp4",
+  "start": 523.1333333333333,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "imagen_525867",
+  "src": "img/t30ventaes_r35_hija_poder.jpg",
+  "start": 525.8666666666667,
+  "dur": 4.466666666666667
+ },
+ {
+  "key": "clip_535633",
+  "src": "broll/t30ventaes_real/t30ventaes_u01.mp4",
+  "start": 535.6333333333333,
+  "dur": 3.7816
+ },
+ {
+  "key": "clip_539500",
+  "src": "broll/t30ventaes_real/t30ventaes_b15.mp4",
+  "start": 539.5,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_542433",
+  "src": "broll/t30ventaes_real/t30ventaes_b17.mp4",
+  "start": 542.4333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_548667",
+  "src": "broll/t30ventaes_real/t30ventaes_f08.mp4",
+  "start": 548.6666666666666,
+  "dur": 4.5776666666666666
+ },
+ {
+  "key": "imagen_553833",
+  "src": "img/t30ventaes_r12_caramelos.jpg",
+  "start": 553.8333333333334,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "imagen_570067",
+  "src": "img/t30ventaes_r54_cuelga.jpg",
+  "start": 570.0666666666667,
+  "dur": 3.1666666666666665
+ },
+ {
+  "key": "clip_578767",
+  "src": "broll/t30ventaes_real/t30ventaes_t12.mp4",
+  "start": 578.7666666666667,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "imagen_582100",
+  "src": "img/t30ventaes_r38_papel_chequera.jpg",
+  "start": 582.1,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "clip_585433",
+  "src": "broll/t30ventaes_real/t30ventaes_u24.mp4",
+  "start": 585.4333333333333,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "imagen_594767",
+  "src": "img/t30ventaes_r58_circula_cobros.jpg",
+  "start": 594.7666666666667,
+  "dur": 2.566666666666667
+ },
+ {
+  "key": "imagen_609567",
+  "src": "img/t30ventaes_a58_monedas_boleta.jpg",
+  "start": 609.5666666666667,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_612433",
+  "src": "broll/t30ventaes_real/t30ventaes_y12.mp4",
+  "start": 612.4333333333333,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_615467",
+  "src": "broll/t30ventaes_real/t30ventaes_w01.mp4",
+  "start": 615.4666666666667,
+  "dur": 3
+ },
+ {
+  "key": "clip_622433",
+  "src": "broll/t30ventaes_real/t30ventaes_u18.mp4",
+  "start": 622.4333333333333,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "imagen_626100",
+  "src": "img/t30ventaes_r39_instala_app.jpg",
+  "start": 626.1,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "clip_629733",
+  "src": "broll/t30ventaes_real/t30ventaes_u16.mp4",
+  "start": 629.7333333333333,
+  "dur": 2.8
+ },
+ {
+  "key": "clip_641867",
+  "src": "broll/t30ventaes_real/t30ventaes_u31.mp4",
+  "start": 641.8666666666667,
+  "dur": 4.266666666666667
+ },
+ {
+  "key": "clip_650033",
+  "src": "broll/t30ventaes_real/t30ventaes_f09.mp4",
+  "start": 650.0333333333333,
+  "dur": 4.568266666666667
+ },
+ {
+  "key": "imagen_654967",
+  "src": "img/t30ventaes_r43_certificado_plazo.jpg",
+  "start": 654.9666666666667,
+  "dur": 3.7333333333333334
+ },
+ {
+  "key": "clip_662300",
+  "src": "broll/t30ventaes_real/t30ventaes_b13.mp4",
+  "start": 662.3,
+  "dur": 3.6
+ },
+ {
+  "key": "imagen_665900",
+  "src": "img/t30ventaes_r42_tasa_telefono.jpg",
+  "start": 665.9,
+  "dur": 4.733333333333333
+ },
+ {
+  "key": "clip_673767",
+  "src": "broll/t30ventaes_real/t30ventaes_u33.mp4",
+  "start": 673.7666666666667,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "clip_677233",
+  "src": "broll/t30ventaes_real/t30ventaes_y14.mp4",
+  "start": 677.2333333333333,
+  "dur": 4.4
+ },
+ {
+  "key": "imagen_695267",
+  "src": "img/t30ventaes_r37_caminando_agencia.jpg",
+  "start": 695.2666666666667,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "clip_697933",
+  "src": "broll/t30ventaes_real/t30ventaes_u22.mp4",
+  "start": 697.9333333333333,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "imagen_706033",
+  "src": "img/t30ventaes_r41_calendario_rojo.jpg",
+  "start": 706.0333333333333,
+  "dur": 3.7
+ },
+ {
+  "key": "imagen_709733",
+  "src": "img/t30ventaes_r44_agencia_cerrada.jpg",
+  "start": 709.7333333333333,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_712633",
+  "src": "broll/t30ventaes_ag/t30ventaes_a14_puerta_cerrada.mp4",
+  "start": 712.6333333333333,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_715533",
+  "src": "broll/t30ventaes_real/t30ventaes_u23.mp4",
+  "start": 715.5333333333333,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_722767",
+  "src": "broll/t30ventaes_real/t30ventaes_a06.mp4",
+  "start": 722.7666666666667,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_725700",
+  "src": "broll/t30ventaes_ag/t30ventaes_a46_persiana_banco.mp4",
+  "start": 725.7,
+  "dur": 2.7954666666666665
+ },
+ {
+  "key": "clip_728633",
+  "src": "broll/t30ventaes_real/t30ventaes_f07.mp4",
+  "start": 728.6333333333333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_735933",
+  "src": "img/t30ventaes_r23_llama_dia_antes.jpg",
+  "start": 735.9333333333333,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "imagen_753200",
+  "src": "img/t30ventaes_r29_llamar_hija.jpg",
+  "start": 753.2,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "imagen_756533",
+  "src": "img/t30ventaes_r46_atencion_preferente.jpg",
+  "start": 756.5333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_758933",
+  "src": "broll/t30ventaes_real/t30ventaes_u30.mp4",
+  "start": 758.9333333333333,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_766533",
+  "src": "broll/t30ventaes_ag/t30ventaes_a50_cajas_seguridad.mp4",
+  "start": 766.5333333333333,
+  "dur": 2.533333333333333
+ },
+ {
+  "key": "imagen_769067",
+  "src": "img/t30ventaes_r47_caja_seguridad.jpg",
+  "start": 769.0666666666667,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_771967",
+  "src": "broll/t30ventaes_real/t30ventaes_u12.mp4",
+  "start": 771.9666666666667,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_792567",
+  "src": "broll/t30ventaes_ag/t30ventaes_a03_letra_chica.mp4",
+  "start": 792.5666666666667,
+  "dur": 2.7789333333333333
+ },
+ {
+  "key": "imagen_797100",
+  "src": "img/t30ventaes_r52_deposito_chico.jpg",
+  "start": 797.1,
+  "dur": 3.9
+ },
+ {
+  "key": "clip_801000",
+  "src": "broll/t30ventaes_real/t30ventaes_s17.mp4",
+  "start": 801,
+  "dur": 2.533333333333333
+ },
+ {
+  "key": "clip_806600",
+  "src": "broll/t30ventaes_real/t30ventaes_u11.mp4",
+  "start": 806.6,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_809000",
+  "src": "broll/t30ventaes_real/t30ventaes_y05.mp4",
+  "start": 809,
+  "dur": 3
+ },
+ {
+  "key": "imagen_812000",
+  "src": "img/t30ventaes_r48_fotos_joyas.jpg",
+  "start": 812,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "imagen_827933",
+  "src": "img/t30ventaes_r09_lista_once.jpg",
+  "start": 827.9333333333333,
+  "dur": 3.1666666666666665
+ },
+ {
+  "key": "imagen_831100",
+  "src": "img/t30ventaes_r60_cierre_ventana.jpg",
+  "start": 831.1,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_833700",
+  "src": "broll/t30ventaes_real/t30ventaes_f03.mp4",
+  "start": 833.7,
+  "dur": 4.545466666666666
+ },
+ {
+  "key": "clip_842467",
+  "src": "broll/t30ventaes_real/t30ventaes_u02.mp4",
+  "start": 842.4666666666667,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "clip_845100",
+  "src": "broll/t30ventaes_real/t30ventaes_f06.mp4",
+  "start": 845.1,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_848600",
+  "src": "broll/t30ventaes_real/t30ventaes_a05.mp4",
+  "start": 848.6,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_856700",
+  "src": "broll/t30ventaes_real/t30ventaes_b01.mp4",
+  "start": 856.7,
+  "dur": 3.3
+ },
+ {
+  "key": "clip_860000",
+  "src": "broll/t30ventaes_real/t30ventaes_a01.mp4",
+  "start": 860,
+  "dur": 4.550133333333333
+ },
+ {
+  "key": "imagen_869567",
+  "src": "img/t30ventaes_r51_libreta_nieto.jpg",
+  "start": 869.5666666666667,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_871967",
+  "src": "img/t30ventaes_a27_celular_mensaje.jpg",
+  "start": 871.9666666666667,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_875067",
+  "src": "broll/t30ventaes_real/t30ventaes_b16.mp4",
+  "start": 875.0666666666667,
+  "dur": 3.566666666666667
+ },
+ {
+  "key": "imagen_883333",
+  "src": "img/t30ventaes_r25_llenan_papel.jpg",
+  "start": 883.3333333333334,
+  "dur": 4
+ },
+ {
+  "key": "clip_896767",
+  "src": "broll/t30ventaes_real/t30ventaes_t04.mp4",
+  "start": 896.7666666666667,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_904267",
+  "src": "broll/t30ventaes_real/t30ventaes_r01.mp4",
+  "start": 904.2666666666667,
+  "dur": 4.549933333333334
+ },
+ {
+  "key": "imagen_908900",
+  "src": "img/t30ventaes_r53_llamada_sospecha.jpg",
+  "start": 908.9,
+  "dur": 4.333333333333333
+ },
+ {
+  "key": "clip_917600",
+  "src": "broll/t30ventaes_ag/t30ventaes_a38_buzon_sobres.mp4",
+  "start": 917.6,
+  "dur": 2.433333333333333
+ },
+ {
+  "key": "clip_926767",
+  "src": "broll/t30ventaes_real/t30ventaes_f04.mp4",
+  "start": 926.7666666666667,
+  "dur": 4.366666666666666
+ },
+ {
+  "key": "imagen_934967",
+  "src": "img/t30ventaes_r14_reunion.jpg",
+  "start": 934.9666666666667,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "imagen_938233",
+  "src": "img/t30ventaes_r56_senora_ahorros.jpg",
+  "start": 938.2333333333333,
+  "dur": 3.3
+ },
+ {
+  "key": "clip_941533",
+  "src": "broll/t30ventaes_real/t30ventaes_u28.mp4",
+  "start": 941.5333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_943933",
+  "src": "broll/t30ventaes_real/t30ventaes_u13.mp4",
+  "start": 943.9333333333333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_952433",
+  "src": "img/t30ventaes_r45_tarjeta_atras.jpg",
+  "start": 952.4333333333333,
+  "dur": 4.066666666666666
+ },
+ {
+  "key": "clip_980533",
+  "src": "broll/t30ventaes_real/t30ventaes_s11.mp4",
+  "start": 980.5333333333333,
+  "dur": 3.1333333333333333
+ },
+ {
+  "key": "clip_983667",
+  "src": "broll/t30ventaes_real/t30ventaes_u25.mp4",
+  "start": 983.6666666666666,
+  "dur": 3.1666666666666665
+ },
+ {
+  "key": "clip_992200",
+  "src": "broll/t30ventaes_ag/t30ventaes_a20_cajon_billetes.mp4",
+  "start": 992.2,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_994600",
+  "src": "img/t30ventaes_r57_calculadora.jpg",
+  "start": 994.6,
+  "dur": 2.7
+ },
+ {
+  "key": "clip_997300",
+  "src": "broll/t30ventaes_ag/t30ventaes_a56_archivo_viejo.mp4",
+  "start": 997.3,
+  "dur": 2.652
+ },
+ {
+  "key": "clip_1000767",
+  "src": "broll/t30ventaes_real/t30ventaes_u21.mp4",
+  "start": 1000.7666666666667,
+  "dur": 2.433333333333333
+ },
+ {
+  "key": "clip_1007500",
+  "src": "broll/t30ventaes_real/t30ventaes_u27.mp4",
+  "start": 1007.5,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_1032267",
+  "src": "img/t30ventaes_r19_tres_estados.jpg",
+  "start": 1032.2666666666667,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "imagen_1035133",
+  "src": "img/t30ventaes_r03_carta_cerrada.jpg",
+  "start": 1035.1333333333334,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_1042033",
+  "src": "broll/t30ventaes_ag/t30ventaes_a57_edificio_estado.mp4",
+  "start": 1042.0333333333333,
+  "dur": 2.660266666666667
+ },
+ {
+  "key": "clip_1049500",
+  "src": "broll/t30ventaes_real/t30ventaes_t06.mp4",
+  "start": 1049.5,
+  "dur": 2.5
+ }
+]

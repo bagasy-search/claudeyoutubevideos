@@ -1,0 +1,2763 @@
+{
+ "total": 1057.927,
+ "avatarEnd": 1057.927,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0.0,
+   "dur": 5.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 5.18,
+   "dur": 2.64,
+   "sec": "S1",
+   "lugar": "rodolfo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_f12.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · dominio público · Internet Archive",
+   "rate": 1.0
+  },
+  {
+   "t": 7.82,
+   "dur": 6.22,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 65,
+    "unit": "años",
+    "label": "EL BANCO LE EMPIEZA A CERRAR PUERTAS",
+    "photo": "img/t30ventaes_a41_fila_ventanilla.jpg",
+    "at": 8.22,
+    "compare": "Despacito. Sin avisar.",
+    "compareAt": 11.88,
+    "tone": "red"
+   },
+   "bed": "img/t30ventaes_r01_libreta_blur.jpg"
+  },
+  {
+   "t": 14.04,
+   "dur": 4.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 18.04,
+   "dur": 3.68,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_y04.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 21.72,
+   "dur": 2.68,
+   "sec": "S1",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r05_mostrador_no.jpg"
+  },
+  {
+   "t": 24.4,
+   "dur": 2.4,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_s03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 26.8,
+   "dur": 4.08,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 30.88,
+   "dur": 4.14,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 35.02,
+   "dur": 4.18,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 39.2,
+   "dur": 4.58,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 40,
+    "unit": "minutos",
+    "label": "APRETANDO NÚMEROS POR UN COBRO RARO",
+    "photo": "img/t30ventaes_a61_tarjeta_teclado.jpg",
+    "at": 39.2,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r01_libreta_blur.jpg"
+  },
+  {
+   "t": 43.78,
+   "dur": 3.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 46.96,
+   "dur": 2.87,
+   "sec": "S1",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r07_cobro_mantenimiento.jpg"
+  },
+  {
+   "t": 49.83,
+   "dur": 2.87,
+   "sec": "S1",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a13_sala_reuniones.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 52.7,
+   "dur": 3.04,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_t10.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · dominio público · Internet Archive",
+   "rate": 1.0
+  },
+  {
+   "t": 55.74,
+   "dur": 3.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 59.66,
+   "dur": 5.14,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b19.mp4",
+   "real": true,
+   "rate": 0.887
+  },
+  {
+   "t": 64.8,
+   "dur": 2.8,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a47_agencia_vaciada.mp4",
+   "real": false,
+   "rate": 0.815
+  },
+  {
+   "t": 67.6,
+   "dur": 3.16,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a66_puerta_vidrio.mp4",
+   "real": false,
+   "rate": 0.934
+  },
+  {
+   "t": 70.76,
+   "dur": 4.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 75.5,
+   "dur": 2.0,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 77.5,
+   "dur": 2.7,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u19.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 80.2,
+   "dur": 8.88,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 11,
+    "unit": "cosas",
+    "label": "LO QUE EL BANCO LE DEJÓ DE PERMITIR",
+    "photo": "img/t30ventaes_a12_cartas_sello.jpg",
+    "at": 82.38,
+    "compare": "La número cuatro enojó a mi hermana.",
+    "compareAt": 98.26,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r01_libreta_blur.jpg"
+  },
+  {
+   "t": 89.08,
+   "dur": 5.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 94.46,
+   "dur": 2.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a67_escritorio_atardecer.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 96.86,
+   "dur": 2.88,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 99.74,
+   "dur": 3.28,
+   "sec": "S1",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r10_hermana_furiosa.jpg"
+  },
+  {
+   "t": 103.02,
+   "dur": 4.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 107.54,
+   "dur": 7.2,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "VENTANILLA 3",
+    "title": "DON RODOLFO",
+    "sub": "35 años en una agencia de Lima · de cajero a gerente",
+    "stamp": "",
+    "typeAt": 108.32,
+    "stampAt": 109.78
+   },
+   "bed": "img/t30ventaes_r11_foto_agencia_blur.jpg"
+  },
+  {
+   "t": 114.74,
+   "dur": 2.48,
+   "sec": "S2",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a10_frasco_caramelos.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 117.22,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 120.82,
+   "dur": 3.57,
+   "sec": "S2",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r13_firma_cartas.jpg"
+  },
+  {
+   "t": 124.39,
+   "dur": 3.57,
+   "sec": "S2",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_y13.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 127.96,
+   "dur": 3.46,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 131.42,
+   "dur": 4.78,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 136.2,
+   "dur": 7.56,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "02",
+    "label": "CADA SEMANA, UN CAJÓN MÁS",
+    "title": "SUSCRÍBASE + CAMPANITA",
+    "sub": "¿Qué fue lo que más rabia le dio de su banco?",
+    "stamp": "",
+    "typeAt": 136.5,
+    "stampAt": 146.42
+   },
+   "bed": "img/t30ventaes_r11_foto_agencia_blur.jpg"
+  },
+  {
+   "t": 143.76,
+   "dur": 2.66,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a53_caja_quemada.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 146.42,
+   "dur": 3.14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 149.56,
+   "dur": 2.948,
+   "sec": "S2",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r16_cafecito_comentarios.jpg"
+  },
+  {
+   "t": 152.508,
+   "dur": 2.666,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_a15_cafe_tablet.jpg"
+  },
+  {
+   "t": 155.174,
+   "dur": 2.666,
+   "sec": "S2",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r50_libreta_cajon.jpg"
+  },
+  {
+   "t": 155.4,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 1",
+    "part": "CUENTA VIEJA, REGLAS NUEVAS"
+   },
+   "bed": "img/t30ventaes_r17_alcancia_blur.jpg"
+  },
+  {
+   "t": 157.84,
+   "dur": 6.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 163.94,
+   "dur": 2.667,
+   "sec": "S3",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_y01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 166.607,
+   "dur": 2.667,
+   "sec": "S3",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r17_alcancia.jpg"
+  },
+  {
+   "t": 169.273,
+   "dur": 2.667,
+   "sec": "S3",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_b20.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 171.94,
+   "dur": 5.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 177.74,
+   "dur": 5.06,
+   "sec": "S3",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r18_una_carta.jpg"
+  },
+  {
+   "t": 182.8,
+   "dur": 7.0,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaes_a16_alcancia.jpg",
+    "rightImg": "img/t30ventaes_a06_estado_cuenta.jpg",
+    "leftHead": "ANTES",
+    "rightHead": "AHORA",
+    "leftText": "Sin cobros. Hasta una alcancía.",
+    "rightText": "Comisión de mantenimiento.",
+    "kicker": "SU CUENTA DE TODA LA VIDA",
+    "stamp": "",
+    "leftAt": 163.22,
+    "rightAt": 187.3
+   },
+   "bed": "img/t30ventaes_r17_alcancia_blur.jpg"
+  },
+  {
+   "t": 189.8,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 194.1,
+   "dur": 2.84,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 196.94,
+   "dur": 2.84,
+   "sec": "S3",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_b10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 199.78,
+   "dur": 2.84,
+   "sec": "S3",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_t09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 202.62,
+   "dur": 7.48,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "estados de cuenta",
+    "label": "LÉALOS RENGLÓN POR RENGLÓN",
+    "photo": "img/t30ventaes_a18_tres_estados.jpg",
+    "at": 202.62,
+    "compare": "Busque: comisión · mantenimiento · cargo por servicio",
+    "compareAt": 207.92,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r17_alcancia_blur.jpg"
+  },
+  {
+   "t": 210.1,
+   "dur": 4.12,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 214.22,
+   "dur": 3.46,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_t11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 217.68,
+   "dur": 3.46,
+   "sec": "S3",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r20_pregunta_asesora.jpg"
+  },
+  {
+   "t": 221.14,
+   "dur": 3.28,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_u09.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 224.42,
+   "dur": 3.66,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 228.08,
+   "dur": 2.653,
+   "sec": "S3",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r08_computadora.jpg"
+  },
+  {
+   "t": 230.733,
+   "dur": 2.653,
+   "sec": "S3",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_t03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 233.387,
+   "dur": 3.853,
+   "sec": "S3",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_s05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 237.24,
+   "dur": 4.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 239.12,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 2",
+    "part": "SU EFECTIVO, CON PREGUNTAS"
+   },
+   "bed": "img/t30ventaes_r21_retiro_grande_blur.jpg"
+  },
+  {
+   "t": 242.16,
+   "dur": 2.933,
+   "sec": "S4",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r21_retiro_grande.jpg"
+  },
+  {
+   "t": 245.093,
+   "dur": 2.933,
+   "sec": "S4",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_b14.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 248.027,
+   "dur": 2.933,
+   "sec": "S4",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_t05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 250.96,
+   "dur": 5.04,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 256.0,
+   "dur": 2.4,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a05_telefono_reloj.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 258.4,
+   "dur": 3.388,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_b05.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 261.788,
+   "dur": 2.947,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u29.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 264.735,
+   "dur": 2.947,
+   "sec": "S4",
+   "kind": "imagen",
+   "lugar": "escena",
+   "asset": "img/t30ventaes_a34_martillo_juez.jpg"
+  },
+  {
+   "t": 267.682,
+   "dur": 4.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 272.042,
+   "dur": 4.146,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_f11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 276.188,
+   "dur": 5.174,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_s09.mp4",
+   "rate": 0.881
+  },
+  {
+   "t": 281.362,
+   "dur": 5.78,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 287.142,
+   "dur": 2.615,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 289.757,
+   "dur": 2.615,
+   "sec": "S4",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_y08.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 292.373,
+   "dur": 2.615,
+   "sec": "S4",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_f02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 294.988,
+   "dur": 3.4,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a02_sobre_puerta.mp4",
+   "real": false,
+   "rate": 0.672
+  },
+  {
+   "t": 298.388,
+   "dur": 1.412,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 299.8,
+   "dur": 6.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 306.3,
+   "dur": 4.76,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 1,
+    "unit": "día antes",
+    "label": "PIDA EL EFECTIVO GRANDE CON TIEMPO",
+    "photo": "img/t30ventaes_a21_boleta_retiro.jpg",
+    "at": 306.1,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r21_retiro_grande_blur.jpg"
+  },
+  {
+   "t": 311.062,
+   "dur": 3.5,
+   "sec": "S4",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a01_mostrador_vacio.mp4",
+   "real": false,
+   "rate": 0.862
+  },
+  {
+   "t": 314.562,
+   "dur": 4.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 319.482,
+   "dur": 3.509,
+   "sec": "S4",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r24_no_fraccionar.jpg"
+  },
+  {
+   "t": 322.991,
+   "dur": 3.509,
+   "sec": "S4",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r32_dos_circulos.jpg"
+  },
+  {
+   "t": 326.5,
+   "dur": 7.3,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaes_a24_sobres_fila.jpg",
+    "rightImg": "img/t30ventaes_a25_formulario_mostrador.jpg",
+    "leftHead": "NUNCA",
+    "rightHead": "SÍ",
+    "leftText": "Partir el retiro en pedacitos.",
+    "rightText": "Sáquela y deje que llenen el papel.",
+    "kicker": "EL RETIRO GRANDE",
+    "stamp": "",
+    "leftAt": 318.28,
+    "rightAt": 331.3
+   },
+   "bed": "img/t30ventaes_r21_retiro_grande_blur.jpg"
+  },
+  {
+   "t": 333.8,
+   "dur": 5.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 339.062,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 3",
+    "part": "EL BANCO PUEDE FRENAR SU OPERACIÓN"
+   },
+   "bed": "img/t30ventaes_r27_formulario_confianza_blur.jpg"
+  },
+  {
+   "t": 339.12,
+   "dur": 4.142,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a31_sala_espera.mp4",
+   "real": false,
+   "rate": 0.72
+  },
+  {
+   "t": 343.262,
+   "dur": 2.68,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_f16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 345.942,
+   "dur": 5.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 351.522,
+   "dur": 3.12,
+   "sec": "S5",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r28_clientes_gracias.jpg"
+  },
+  {
+   "t": 354.642,
+   "dur": 5.12,
+   "sec": "S5",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r01_libreta.jpg"
+  },
+  {
+   "t": 359.762,
+   "dur": 4.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 364.502,
+   "dur": 4.26,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_s01.mp4",
+   "real": true,
+   "rate": 0.882
+  },
+  {
+   "t": 368.762,
+   "dur": 3.998,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_a19_escritorio_asesor.jpg"
+  },
+  {
+   "t": 372.76,
+   "dur": 2.4,
+   "sec": "S5",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_y15.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 375.16,
+   "dur": 5.88,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 35,
+    "unit": "años",
+    "label": "DETRÁS DEL ESCRITORIO",
+    "photo": "img/t30ventaes_a29_pareja_sale.jpg",
+    "at": 375.46,
+    "compare": "Esta regla salvó a más clientes que ninguna.",
+    "compareAt": 376.66,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r27_formulario_confianza_blur.jpg"
+  },
+  {
+   "t": 381.04,
+   "dur": 5.86,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 386.9,
+   "dur": 3.06,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 389.96,
+   "dur": 10.202,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaes_a28_formulario_tabla.jpg",
+    "rightImg": "img/t30ventaes_a22_senora_telefono.jpg",
+    "leftHead": "QUÉ HACE",
+    "rightHead": "ACCESO A SU PLATA",
+    "leftText": "El banco llama a esa persona antes.",
+    "rightText": "Ninguno.",
+    "kicker": "CONTACTO DE CONFIANZA",
+    "stamp": "",
+    "leftAt": 390.26,
+    "rightAt": 396.36
+   },
+   "bed": "img/t30ventaes_r27_formulario_confianza_blur.jpg"
+  },
+  {
+   "t": 400.162,
+   "dur": 5.98,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 406.142,
+   "dur": 2.4,
+   "sec": "S5",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r27_formulario_confianza.jpg"
+  },
+  {
+   "t": 408.542,
+   "dur": 3.18,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_u20.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 411.722,
+   "dur": 2.61,
+   "sec": "S5",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r06_telefono_numeros.jpg"
+  },
+  {
+   "t": 414.322,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 4",
+    "part": "LA CUENTA MANCOMUNADA"
+   },
+   "bed": "img/t30ventaes_r30_hermana_mesa_blur.jpg"
+  },
+  {
+   "t": 414.332,
+   "dur": 2.61,
+   "sec": "S5",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_real/t30ventaes_a02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · dominio público · Internet Archive",
+   "rate": 1.0
+  },
+  {
+   "t": 416.942,
+   "dur": 5.64,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 422.582,
+   "dur": 3.04,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 425.622,
+   "dur": 2.5,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_s14.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 428.122,
+   "dur": 2.86,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_s15.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 430.982,
+   "dur": 2.4,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a07_terminal_banco.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 433.382,
+   "dur": 4.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 437.702,
+   "dur": 2.4,
+   "sec": "S6",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r49_llave_hija.jpg"
+  },
+  {
+   "t": 440.102,
+   "dur": 2.648,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_w02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 442.75,
+   "dur": 3.506,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_s12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 446.256,
+   "dur": 3.506,
+   "sec": "S6",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_real/t30ventaes_s02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · dominio público · Internet Archive",
+   "rate": 1.0
+  },
+  {
+   "t": 449.762,
+   "dur": 3.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 452.762,
+   "dur": 3.199,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_s16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 455.961,
+   "dur": 3.199,
+   "sec": "S6",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_s08.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 459.16,
+   "dur": 9.062,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "hijos",
+    "label": "AGREGÓ A UNO SOLO A LA CUENTA",
+    "photo": "img/t30ventaes_a33_mesa_familia.jpg",
+    "at": 459.46,
+    "compare": "Los otros dos se pueden quedar sin nada.",
+    "compareAt": 461.6,
+    "tone": "red"
+   },
+   "bed": "img/t30ventaes_r30_hermana_mesa_blur.jpg"
+  },
+  {
+   "t": 468.222,
+   "dur": 4.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 472.742,
+   "dur": 3.28,
+   "sec": "S6",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r30_hermana_mesa.jpg"
+  },
+  {
+   "t": 476.022,
+   "dur": 4.84,
+   "sec": "S6",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r22_hijo_llorando.jpg"
+  },
+  {
+   "t": 480.862,
+   "dur": 5.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 485.862,
+   "dur": 2.4,
+   "sec": "S6",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r33_hermana_firma.jpg"
+  },
+  {
+   "t": 488.262,
+   "dur": 3.938,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b09.mp4",
+   "real": true,
+   "rate": 0.954
+  },
+  {
+   "t": 492.2,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 495.8,
+   "dur": 11.94,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaes_a30_dos_manos_libreta.jpg",
+    "rightImg": "img/t30ventaes_a32_testamento.jpg",
+    "leftHead": "AYUDA CON LOS PAGOS",
+    "rightHead": "A QUIÉN VA LA PLATA",
+    "leftText": "Apoderado, autorizado o un poder.",
+    "rightText": "Beneficiarios en la cuenta.",
+    "kicker": "NO LAS MEZCLE",
+    "stamp": "",
+    "leftAt": 491.4,
+    "rightAt": 505.24
+   },
+   "bed": "img/t30ventaes_r30_hermana_mesa_blur.jpg"
+  },
+  {
+   "t": 507.74,
+   "dur": 5.26,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 513.0,
+   "dur": 2.382,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_f10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 515.382,
+   "dur": 5.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 516.482,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 5",
+    "part": "EL PODER QUE NO ACEPTAN"
+   },
+   "bed": "img/t30ventaes_r34_notario_blur.jpg"
+  },
+  {
+   "t": 520.382,
+   "dur": 2.74,
+   "sec": "S7",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r34_notario.jpg"
+  },
+  {
+   "t": 523.122,
+   "dur": 2.74,
+   "sec": "S7",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_s07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 525.862,
+   "dur": 4.461,
+   "sec": "S7",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r35_hija_poder.jpg"
+  },
+  {
+   "t": 530.323,
+   "dur": 5.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 535.643,
+   "dur": 3.844,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_u01.mp4",
+   "rate": 0.978
+  },
+  {
+   "t": 539.486,
+   "dur": 2.957,
+   "sec": "S7",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_b15.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 542.443,
+   "dur": 2.4,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b17.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 544.843,
+   "dur": 3.84,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 548.683,
+   "dur": 5.147,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_f08.mp4",
+   "real": true,
+   "rate": 0.886
+  },
+  {
+   "t": 553.83,
+   "dur": 3.65,
+   "sec": "S7",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r12_caramelos.jpg"
+  },
+  {
+   "t": 557.48,
+   "dur": 3.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 560.48,
+   "dur": 9.6,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "AHORA QUE ESTÁ SANO, ESTE MES",
+    "title": "Su poder, revisado",
+    "items": [
+     {
+      "text": "Llévelo a su agencia con la persona que nombró"
+     },
+     {
+      "text": "Que lo revisen y lo registren desde ya"
+     },
+     {
+      "text": "Si falta algo, corríjalo con el notario"
+     }
+    ],
+    "bed": "img/t30ventaes_a36_poder_sello.jpg"
+   },
+   "bed": "img/t30ventaes_r34_notario_blur.jpg"
+  },
+  {
+   "t": 570.08,
+   "dur": 3.143,
+   "sec": "S7",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r54_cuelga.jpg"
+  },
+  {
+   "t": 573.223,
+   "dur": 5.56,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 578.783,
+   "dur": 3.327,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_t12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 582.11,
+   "dur": 3.327,
+   "sec": "S7",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r38_papel_chequera.jpg"
+  },
+  {
+   "t": 584.563,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 6",
+    "part": "EL PAPEL LE EMPIEZA A COSTAR"
+   },
+   "bed": "img/t30ventaes_r38_papel_chequera_blur.jpg"
+  },
+  {
+   "t": 585.436,
+   "dur": 3.327,
+   "sec": "S7",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_u24.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 588.763,
+   "dur": 6.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 594.763,
+   "dur": 2.577,
+   "sec": "S8",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r58_circula_cobros.jpg"
+  },
+  {
+   "t": 597.34,
+   "dur": 7.66,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "DE A POQUITO",
+    "title": "Cobros nuevos",
+    "items": [
+     {
+      "text": "El estado de cuenta impreso"
+     },
+     {
+      "text": "La operación en ventanilla"
+     },
+     {
+      "text": "La chequera"
+     }
+    ],
+    "bed": "img/t30ventaes_a39_chequera.jpg"
+   },
+   "bed": "img/t30ventaes_r38_papel_chequera_blur.jpg"
+  },
+  {
+   "t": 605.003,
+   "dur": 4.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 609.583,
+   "dur": 2.86,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_a58_monedas_boleta.jpg"
+  },
+  {
+   "t": 612.443,
+   "dur": 3.02,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 615.463,
+   "dur": 3.02,
+   "sec": "S8",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_w01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 618.483,
+   "dur": 3.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 622.443,
+   "dur": 3.65,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u18.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 626.093,
+   "dur": 3.65,
+   "sec": "S8",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r39_instala_app.jpg"
+  },
+  {
+   "t": 629.743,
+   "dur": 2.777,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 632.52,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 635.72,
+   "dur": 6.16,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "días",
+    "label": "MIRE SU CUENTA CADA",
+    "photo": "img/t30ventaes_a40_celular_app.jpg",
+    "at": 636.02,
+    "prefix": "2–",
+    "compare": "Sólo para mirar, no para mover plata.",
+    "compareAt": 637.32,
+    "tone": "green"
+   },
+   "bed": "img/t30ventaes_r38_papel_chequera_blur.jpg"
+  },
+  {
+   "t": 641.88,
+   "dur": 4.243,
+   "sec": "S8",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_u31.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 646.123,
+   "dur": 3.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 650.043,
+   "dur": 4.92,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_f09.mp4",
+   "real": true,
+   "rate": 0.926
+  },
+  {
+   "t": 650.483,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 7",
+    "part": "EL PLAZO FIJO QUE SE RENOVÓ SOLO"
+   },
+   "bed": "img/t30ventaes_r41_calendario_rojo_blur.jpg"
+  },
+  {
+   "t": 654.963,
+   "dur": 3.74,
+   "sec": "S9",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r43_certificado_plazo.jpg"
+  },
+  {
+   "t": 658.703,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 662.303,
+   "dur": 3.588,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b13.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 665.891,
+   "dur": 4.752,
+   "sec": "S9",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r42_tasa_telefono.jpg"
+  },
+  {
+   "t": 670.643,
+   "dur": 3.14,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 673.783,
+   "dur": 3.436,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_u33.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 677.219,
+   "dur": 4.4,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y14.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 681.619,
+   "dur": 4.881,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 686.5,
+   "dur": 8.76,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "BigStat",
+   "props": {
+    "value": 1,
+    "unit": "semana antes",
+    "label": "UNA SEGUNDA NOTA EN EL CALENDARIO",
+    "photo": "img/t30ventaes_a45_despertador.jpg",
+    "at": 686.8,
+    "compare": "El vencimiento, anotado en rojo.",
+    "compareAt": 688,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r41_calendario_rojo_blur.jpg"
+  },
+  {
+   "t": 695.26,
+   "dur": 2.684,
+   "sec": "S9",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r37_caminando_agencia.jpg"
+  },
+  {
+   "t": 697.944,
+   "dur": 2.62,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_u22.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 700.564,
+   "dur": 5.459,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 706.023,
+   "dur": 3.721,
+   "sec": "S9",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r41_calendario_rojo.jpg"
+  },
+  {
+   "t": 709.744,
+   "dur": 2.893,
+   "sec": "S9",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r44_agencia_cerrada.jpg"
+  },
+  {
+   "t": 712.637,
+   "dur": 2.893,
+   "sec": "S9",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a14_puerta_cerrada.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 714.123,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 8",
+    "part": "LA AGENCIA DE SIEMPRE PUEDE CERRAR"
+   },
+   "bed": "img/t30ventaes_r44_agencia_cerrada_blur.jpg"
+  },
+  {
+   "t": 715.53,
+   "dur": 2.893,
+   "sec": "S9",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_u23.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 718.423,
+   "dur": 4.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 722.783,
+   "dur": 2.92,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_a06.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · dominio público · Internet Archive",
+   "rate": 1.0
+  },
+  {
+   "t": 725.703,
+   "dur": 2.92,
+   "sec": "S10",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a46_persiana_banco.mp4",
+   "real": false,
+   "rate": 0.953
+  },
+  {
+   "t": 728.623,
+   "dur": 3.02,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_f07.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 731.643,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 735.943,
+   "dur": 3.937,
+   "sec": "S10",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r23_llama_dia_antes.jpg"
+  },
+  {
+   "t": 739.88,
+   "dur": 8.96,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "ANTES DE QUE PASE",
+    "title": "Tenga a mano",
+    "items": [
+     {
+      "text": "Su segunda agencia más cercana"
+     },
+     {
+      "text": "El número de atrás de su tarjeta"
+     },
+     {
+      "text": "La atención para adultos mayores"
+     }
+    ],
+    "bed": "img/t30ventaes_a49_baston_silla.jpg"
+   },
+   "bed": "img/t30ventaes_r44_agencia_cerrada_blur.jpg"
+  },
+  {
+   "t": 748.843,
+   "dur": 4.341,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 50,
+   "lugar": "avatar"
+  },
+  {
+   "t": 753.184,
+   "dur": 3.359,
+   "sec": "S10",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r29_llamar_hija.jpg"
+  },
+  {
+   "t": 756.543,
+   "dur": 2.4,
+   "sec": "S10",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r46_atencion_preferente.jpg"
+  },
+  {
+   "t": 758.943,
+   "dur": 2.82,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u30.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 761.763,
+   "dur": 4.76,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 51,
+   "lugar": "avatar"
+  },
+  {
+   "t": 764.583,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 9",
+    "part": "LA CAJA DE SEGURIDAD NO ESTÁ ASEGURADA"
+   },
+   "bed": "img/t30ventaes_r47_caja_seguridad_blur.jpg"
+  },
+  {
+   "t": 766.523,
+   "dur": 2.54,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a50_cajas_seguridad.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 769.063,
+   "dur": 2.9,
+   "sec": "S11",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r47_caja_seguridad.jpg"
+  },
+  {
+   "t": 771.963,
+   "dur": 2.4,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 774.363,
+   "dur": 3.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 52,
+   "lugar": "avatar"
+  },
+  {
+   "t": 777.363,
+   "dur": 10.0,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaes_a43_certificado.jpg",
+    "rightImg": "img/t30ventaes_a51_caja_abierta.jpg",
+    "leftHead": "CUBIERTO, HASTA UN LÍMITE",
+    "rightHead": "NO ES UN DEPÓSITO",
+    "leftText": "Ahorros, cuenta corriente, plazo fijo.",
+    "rightText": "Lo que está adentro de la caja.",
+    "kicker": "EL SEGURO DE DEPÓSITOS",
+    "stamp": "",
+    "leftAt": 775.2,
+    "rightAt": 784.7
+   },
+   "bed": "img/t30ventaes_r47_caja_seguridad_blur.jpg"
+  },
+  {
+   "t": 787.363,
+   "dur": 5.201,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 53,
+   "lugar": "avatar"
+  },
+  {
+   "t": 792.564,
+   "dur": 4.539,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a03_letra_chica.mp4",
+   "real": false,
+   "rate": 0.613
+  },
+  {
+   "t": 797.103,
+   "dur": 3.9,
+   "sec": "S11",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r52_deposito_chico.jpg"
+  },
+  {
+   "t": 801.003,
+   "dur": 2.522,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_s17.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 803.525,
+   "dur": 3.06,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 54,
+   "lugar": "avatar"
+  },
+  {
+   "t": 806.585,
+   "dur": 2.4,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 808.985,
+   "dur": 3.018,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_y05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 812.003,
+   "dur": 3.242,
+   "sec": "S11",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r48_fotos_joyas.jpg"
+  },
+  {
+   "t": 815.25,
+   "dur": 9.375,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "SU CAJA DE SEGURIDAD",
+    "title": "Tres cosas",
+    "items": [
+     {
+      "text": "Lista y fotos, guardadas en su casa"
+     },
+     {
+      "text": "¿Su seguro de hogar la cubre?"
+     },
+     {
+      "text": "Alguien de confianza sabe que existe"
+     }
+    ],
+    "bed": "img/t30ventaes_a54_llave_cinta.jpg"
+   },
+   "bed": "img/t30ventaes_r47_caja_seguridad_blur.jpg"
+  },
+  {
+   "t": 824.625,
+   "dur": 3.32,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 55,
+   "lugar": "avatar"
+  },
+  {
+   "t": 827.945,
+   "dur": 3.14,
+   "sec": "S11",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r09_lista_once.jpg"
+  },
+  {
+   "t": 831.085,
+   "dur": 2.6,
+   "sec": "S11",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r60_cierre_ventana.jpg"
+  },
+  {
+   "t": 833.685,
+   "dur": 4.88,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_f03.mp4",
+   "rate": 0.934
+  },
+  {
+   "t": 835.385,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 10",
+    "part": "LA PLATA OLVIDADA"
+   },
+   "bed": "img/t30ventaes_r50_libreta_cajon_blur.jpg"
+  },
+  {
+   "t": 838.565,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 56,
+   "lugar": "avatar"
+  },
+  {
+   "t": 842.465,
+   "dur": 2.62,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 845.085,
+   "dur": 3.5,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_f06.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 848.585,
+   "dur": 2.4,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_a05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 850.985,
+   "dur": 5.72,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 57,
+   "lugar": "avatar"
+  },
+  {
+   "t": 856.705,
+   "dur": 3.28,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_b01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 859.985,
+   "dur": 5.04,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_a01.mp4",
+   "real": true,
+   "rate": 0.904
+  },
+  {
+   "t": 865.025,
+   "dur": 4.54,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 58,
+   "lugar": "avatar"
+  },
+  {
+   "t": 869.565,
+   "dur": 2.4,
+   "sec": "S12",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r51_libreta_nieto.jpg"
+  },
+  {
+   "t": 871.965,
+   "dur": 3.09,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_a27_celular_mensaje.jpg"
+  },
+  {
+   "t": 875.055,
+   "dur": 3.57,
+   "sec": "S12",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_b16.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 878.625,
+   "dur": 4.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 59,
+   "lugar": "avatar"
+  },
+  {
+   "t": 883.325,
+   "dur": 3.995,
+   "sec": "S12",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r25_llenan_papel.jpg"
+  },
+  {
+   "t": 887.32,
+   "dur": 9.453,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "BigStat",
+   "props": {
+    "value": 1,
+    "unit": "vez al año",
+    "label": "UN MOVIMIENTO CHIQUITO EN CADA CUENTA",
+    "photo": "img/t30ventaes_a55_libreta_polvo.jpg",
+    "at": 887.62,
+    "compare": "El movimiento la mantiene viva.",
+    "compareAt": 895.28,
+    "tone": "green"
+   },
+   "bed": "img/t30ventaes_r50_libreta_cajon_blur.jpg"
+  },
+  {
+   "t": 896.773,
+   "dur": 3.013,
+   "sec": "S12",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_t04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 899.785,
+   "dur": 4.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 60,
+   "lugar": "avatar"
+  },
+  {
+   "t": 904.265,
+   "dur": 4.64,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_r01.mp4",
+   "rate": 0.982
+  },
+  {
+   "t": 904.985,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 11",
+    "part": "LA LLAMADA DE «SU BANCO»"
+   },
+   "bed": "img/t30ventaes_r53_llamada_sospecha_blur.jpg"
+  },
+  {
+   "t": 908.905,
+   "dur": 4.32,
+   "sec": "S13",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r53_llamada_sospecha.jpg"
+  },
+  {
+   "t": 913.225,
+   "dur": 4.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 61,
+   "lugar": "avatar"
+  },
+  {
+   "t": 917.605,
+   "dur": 2.425,
+   "sec": "S13",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a38_buzon_sobres.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 920.03,
+   "dur": 6.72,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "BigStat",
+   "props": {
+    "value": 4,
+    "unit": "números",
+    "label": "DE SU TARJETA: YA LOS SABEN",
+    "photo": "img/t30ventaes_a48_tarjeta_atras.jpg",
+    "at": 920.33,
+    "compare": "Y en la pantalla, el nombre del banco.",
+    "compareAt": 921.73,
+    "tone": "red"
+   },
+   "bed": "img/t30ventaes_r53_llamada_sospecha_blur.jpg"
+  },
+  {
+   "t": 926.75,
+   "dur": 4.395,
+   "sec": "S13",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_f04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 931.145,
+   "dur": 3.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 62,
+   "lugar": "avatar"
+  },
+  {
+   "t": 934.965,
+   "dur": 3.28,
+   "sec": "S13",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r14_reunion.jpg"
+  },
+  {
+   "t": 938.245,
+   "dur": 3.28,
+   "sec": "S13",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r56_senora_ahorros.jpg"
+  },
+  {
+   "t": 941.525,
+   "dur": 2.4,
+   "sec": "S13",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u28.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 943.925,
+   "dur": 3.02,
+   "sec": "S13",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaes_real/t30ventaes_u13.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 946.945,
+   "dur": 5.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 63,
+   "lugar": "avatar"
+  },
+  {
+   "t": 952.425,
+   "dur": 4.06,
+   "sec": "S13",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r45_tarjeta_atras.jpg"
+  },
+  {
+   "t": 956.49,
+   "dur": 8.85,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "PhoneAlert",
+   "props": {
+    "kicker": "LA LLAMADA FALSA",
+    "title": "Área de fraudes",
+    "body": "Movimientos sospechosos. Valide su identidad.",
+    "action": "Cuelgue y llame usted",
+    "side": "right",
+    "bg": "img/t30ventaes_a63_senora_llora.jpg"
+   },
+   "bed": "img/t30ventaes_r53_llamada_sospecha_blur.jpg"
+  },
+  {
+   "t": 965.34,
+   "dur": 4.0,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "BigStat",
+   "props": {
+    "value": 4,
+    "unit": "palabras",
+    "label": "CUELGUE Y LLAME USTED",
+    "photo": "img/t30ventaes_a60_dedo_colgar.jpg",
+    "at": 965.64,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r53_llamada_sospecha_blur.jpg"
+  },
+  {
+   "t": 969.34,
+   "dur": 3.0,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 64,
+   "lugar": "avatar"
+  },
+  {
+   "t": 971.825,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LA CUENTA",
+    "part": "SUMEMOS"
+   },
+   "bed": "img/t30ventaes_r57_calculadora_blur.jpg"
+  },
+  {
+   "t": 972.34,
+   "dur": 8.18,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "BigStat",
+   "props": {
+    "value": 12,
+    "unit": "cobros al año",
+    "label": "UNA COMISIÓN QUE NO SABÍA QUE PAGABA",
+    "photo": "img/t30ventaes_a44_calculadora.jpg",
+    "at": 972.9,
+    "tone": "red"
+   },
+   "bed": "img/t30ventaes_r57_calculadora_blur.jpg"
+  },
+  {
+   "t": 980.52,
+   "dur": 3.152,
+   "sec": "S14",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_s11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 983.673,
+   "dur": 3.152,
+   "sec": "S14",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_u25.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 986.825,
+   "dur": 5.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 65,
+   "lugar": "avatar"
+  },
+  {
+   "t": 992.205,
+   "dur": 2.4,
+   "sec": "S14",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a20_cajon_billetes.mp4",
+   "real": false,
+   "rate": 1.0
+  },
+  {
+   "t": 994.605,
+   "dur": 2.704,
+   "sec": "S14",
+   "lugar": "rodolfo",
+   "kind": "imagen",
+   "asset": "img/t30ventaes_r57_calculadora.jpg"
+  },
+  {
+   "t": 997.309,
+   "dur": 3.464,
+   "sec": "S14",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a56_archivo_viejo.mp4",
+   "real": false,
+   "rate": 0.765
+  },
+  {
+   "t": 1000.773,
+   "dur": 2.412,
+   "sec": "S14",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u21.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1003.185,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 66,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1007.485,
+   "dur": 3.08,
+   "sec": "S14",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaes_real/t30ventaes_u27.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1010.57,
+   "dur": 9.235,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "SU TAREA · ESTA SEMANA",
+    "title": "Dos cosas",
+    "items": [
+     {
+      "text": "Marque con un círculo cada cobro"
+     },
+     {
+      "text": "Pregunte por el contacto de confianza"
+     }
+    ],
+    "bed": "img/t30ventaes_a64_circulos_rojos.jpg"
+   },
+   "bed": "img/t30ventaes_r57_calculadora_blur.jpg"
+  },
+  {
+   "t": 1019.805,
+   "dur": 4.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 67,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1024.605,
+   "dur": 7.645,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "03",
+    "label": "CUÉNTEME EN LOS COMENTARIOS",
+    "title": "¿CUÁL NÚMERO?",
+    "sub": "¿Y desde qué país me ve?",
+    "stamp": "",
+    "typeAt": 1026.55,
+    "stampAt": 1028.46
+   },
+   "bed": "img/t30ventaes_r57_calculadora_blur.jpg"
+  },
+  {
+   "t": 1032.25,
+   "dur": 2.888,
+   "sec": "AV",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r19_tres_estados.jpg"
+  },
+  {
+   "t": 1035.138,
+   "dur": 2.888,
+   "sec": "AV",
+   "kind": "imagen",
+   "lugar": "rodolfo",
+   "asset": "img/t30ventaes_r03_carta_cerrada.jpg"
+  },
+  {
+   "t": 1038.025,
+   "dur": 4.02,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 68,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1042.045,
+   "dur": 2.855,
+   "sec": "S14",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaes_ag/t30ventaes_a57_edificio_estado.mp4",
+   "real": false,
+   "rate": 0.928
+  },
+  {
+   "t": 1044.9,
+   "dur": 4.6,
+   "kind": "componente",
+   "sec": "S14",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "palabras",
+    "label": "LA CARTA ANTES DE QUE LE CIERREN LA CUENTA",
+    "photo": "img/t30ventaes_a17_carta_abierta.jpg",
+    "at": 1045.2,
+    "tone": "white"
+   },
+   "bed": "img/t30ventaes_r57_calculadora_blur.jpg"
+  },
+  {
+   "t": 1049.5,
+   "dur": 2.5,
+   "sec": "S14",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaes_real/t30ventaes_t06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 1052.0,
+   "dur": 5.927,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 69
+  }
+ ]
+}
