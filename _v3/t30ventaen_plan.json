@@ -1,0 +1,2637 @@
+{
+ "total": 1014.886,
+ "avatarEnd": 1014.886,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0,
+   "dur": 5.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 5.466666666666667,
+   "dur": 3.566666666666667,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 9.033333333333333,
+   "dur": 5,
+   "kind": "componente",
+   "sec": "S0",
+   "comp": "BigStat",
+   "props": {
+    "value": 65,
+    "unit": "and up",
+    "label": "WHEN THE BANK STARTS CLOSING DOORS",
+    "photo": "img/t30ventaen_a03_fine_print.jpg",
+    "tone": "red",
+    "at": 9.74,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h01_counter_no_blur.jpg"
+  },
+  {
+   "t": 14.033333333333333,
+   "dur": 3.2666666666666666,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h02_unopened_letter.jpg"
+  },
+  {
+   "t": 17.3,
+   "dur": 3.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 20.766666666666666,
+   "dur": 2.7666666666666666,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_y04.mp4",
+   "rate": 1
+  },
+  {
+   "t": 23.533333333333335,
+   "dur": 2.8,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h01_counter_no.jpg"
+  },
+  {
+   "t": 26.333333333333332,
+   "dur": 3.4,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_a30_son_withdraw.jpg"
+  },
+  {
+   "t": 29.733333333333334,
+   "dur": 3.3666666666666667,
+   "sec": "S0",
+   "kind": "clip",
+   "real": true,
+   "rate": 1,
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_u01.mp4"
+  },
+  {
+   "t": 33.1,
+   "dur": 3.066666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 36.166666666666664,
+   "dur": 2.7666666666666666,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_b04.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 38.93333333333333,
+   "dur": 3.3666666666666667,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h16_teller_question.jpg"
+  },
+  {
+   "t": 42.3,
+   "dur": 6.9,
+   "kind": "componente",
+   "sec": "S0",
+   "comp": "BigStat",
+   "props": {
+    "value": 40,
+    "unit": "minutes",
+    "label": "ON HOLD, PRESSING NUMBERS",
+    "photo": "img/t30ventaen_a04_phone_menu.jpg",
+    "tone": "white",
+    "at": 42.3,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h01_counter_no_blur.jpg"
+  },
+  {
+   "t": 49.2,
+   "dur": 4.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 53.7,
+   "dur": 4.5,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_b11.mp4",
+   "rate": 1
+  },
+  {
+   "t": 58.2,
+   "dur": 2.3,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 60.5,
+   "dur": 4.566666666666666,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_b07.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 65.06666666666666,
+   "dur": 3.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 69.03333333333333,
+   "dur": 2.2666666666666666,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a06_handshake.mp4",
+   "real": false,
+   "rate": 1
+  },
+  {
+   "t": 71.3,
+   "dur": 3.1333333333333333,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h20_laptop_wire.jpg"
+  },
+  {
+   "t": 74.43333333333334,
+   "dur": 3.1333333333333333,
+   "sec": "S0",
+   "kind": "clip",
+   "real": true,
+   "rate": 1,
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_u03.mp4"
+  },
+  {
+   "t": 77.56666666666666,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 80.56666666666666,
+   "dur": 8.566666666666666,
+   "kind": "componente",
+   "sec": "S0",
+   "comp": "BigStat",
+   "props": {
+    "value": 11,
+    "unit": "things",
+    "label": "BANKS QUIETLY STOPPED LETTING SENIORS DO",
+    "compare": "Number four made my sister angry.",
+    "photo": "img/t30ventaen_a08_brick_branch.jpg",
+    "tone": "white",
+    "at": 81.17,
+    "compareAt": 87.73,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h01_counter_no_blur.jpg"
+  },
+  {
+   "t": 89.13333333333334,
+   "dur": 1.4333333333333333,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y13.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 90.56666666666666,
+   "dur": 3.8666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 94.43333333333334,
+   "dur": 3.7,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_y05.mp4",
+   "rate": 1
+  },
+  {
+   "t": 98.13333333333334,
+   "dur": 2.3,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u16.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 100.43333333333334,
+   "dur": 3.3333333333333335,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h24_sister_angry.jpg"
+  },
+  {
+   "t": 103.76666666666667,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 107.8,
+   "dur": 1.8666666666666667,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h05_young_teller.jpg"
+  },
+  {
+   "t": 109.66666666666667,
+   "dur": 6.5,
+   "kind": "componente",
+   "sec": "S0",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "TELLER WINDOW THREE",
+    "title": "HAROLD",
+    "sub": "35 years at a small brick branch · Pennsylvania",
+    "stamp": "",
+    "typeAt": 110.27,
+    "stampAt": 110.95,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30ventaen_h01_counter_no_blur.jpg"
+  },
+  {
+   "t": 116.16666666666667,
+   "dur": 1.7666666666666666,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y02.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 117.93333333333334,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 121.23333333333333,
+   "dur": 3.3333333333333335,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h07_manager_desk.jpg"
+  },
+  {
+   "t": 124.56666666666666,
+   "dur": 6,
+   "sec": "S0",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_r01.mp4",
+   "rate": 0.76
+  },
+  {
+   "t": 130.56666666666666,
+   "dur": 2.8333333333333335,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h08_lock_doors.jpg"
+  },
+  {
+   "t": 133.4,
+   "dur": 3.933333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 137.33333333333334,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S0",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "02",
+    "label": "EVERY WEEK, ONE MORE DRAWER",
+    "title": "SUBSCRIBE + BELL",
+    "sub": "What did your bank do that made you angriest?",
+    "stamp": "",
+    "typeAt": 137.93,
+    "stampAt": 142.93,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30ventaen_h01_counter_no_blur.jpg"
+  },
+  {
+   "t": 144.33333333333334,
+   "dur": 2.2333333333333334,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h44_list_home.jpg"
+  },
+  {
+   "t": 146.56666666666666,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 150.46666666666667,
+   "dur": 2.7666666666666666,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a02_letter_pile.mp4",
+   "real": false,
+   "rate": 1
+  },
+  {
+   "t": 153.23333333333332,
+   "dur": 3.3,
+   "sec": "S0",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h10_old_passbook.jpg"
+  },
+  {
+   "t": 155.7333,
+   "dur": 3.6334,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 1",
+    "part": "OLD ACCOUNT, NEW RULES"
+   },
+   "bed": "img/t30ventaen_h10_old_passbook_blur.jpg"
+  },
+  {
+   "t": 156.53333333333333,
+   "dur": 3.3,
+   "sec": "S0",
+   "kind": "clip",
+   "real": true,
+   "rate": 1,
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_u33.mp4"
+  },
+  {
+   "t": 159.83333333333334,
+   "dur": 5.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 165.3,
+   "dur": 7.5,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaen_a12_toaster_box.jpg",
+    "rightImg": "img/t30ventaen_a05_monthly_fee.jpg",
+    "leftHead": "THEN",
+    "rightHead": "NOW",
+    "leftText": "Free checking.",
+    "rightText": "A monthly maintenance fee.",
+    "leftAt": 165.9,
+    "rightAt": 171.4,
+    "stamp": ""
+   },
+   "bed": "img/t30ventaen_h10_old_passbook_blur.jpg"
+  },
+  {
+   "t": 172.8,
+   "dur": 5.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f09.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.844
+  },
+  {
+   "t": 178.2,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 182.8,
+   "dur": 4.466666666666667,
+   "sec": "S1",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h35_tablet_alone.jpg"
+  },
+  {
+   "t": 187.26666666666668,
+   "dur": 3.7,
+   "sec": "S1",
+   "kind": "imagen",
+   "lugar": "harold",
+   "asset": "img/t30ventaen_h13_circle_fee.jpg"
+  },
+  {
+   "t": 190.96666666666667,
+   "dur": 2.9,
+   "sec": "S1",
+   "lugar": "harold",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u28.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 193.86666666666667,
+   "dur": 4.433333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 198.3,
+   "dur": 6.166666666666667,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "statements",
+    "label": "READ THEM LINE BY LINE",
+    "compare": "Look for: maintenance fee · service charge.",
+    "photo": "img/t30ventaen_a14_three_statements.jpg",
+    "tone": "white",
+    "at": 198.9,
+    "compareAt": 202.88,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h10_old_passbook_blur.jpg"
+  },
+  {
+   "t": 204.46666666666667,
+   "dur": 4.3,
+   "sec": "S1",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h14_phone_ask.jpg"
+  },
+  {
+   "t": 208.76666666666668,
+   "dur": 4.733333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 213.5,
+   "dur": 3.6,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u25.mp4",
+   "rate": 1
+  },
+  {
+   "t": 217.1,
+   "dur": 2.6,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a40_branch_empty.mp4",
+   "real": false,
+   "rate": 1
+  },
+  {
+   "t": 219.7,
+   "dur": 1.2666666666666666,
+   "sec": "S1",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h22_daughter_phone.jpg"
+  },
+  {
+   "t": 220.96666666666667,
+   "dur": 6.733333333333333,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Old account, new rules. Read the letter.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 221.94,
+    "until": 225.64,
+    "highlight": "Read the letter."
+   },
+   "bed": "img/t30ventaen_h10_old_passbook_blur.jpg"
+  },
+  {
+   "t": 227.7,
+   "dur": 3.7333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 227.7,
+   "dur": 3.6333,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 2",
+    "part": "YOUR CASH, WITH QUESTIONS"
+   },
+   "bed": "img/t30ventaen_h15_withdraw_slip_blur.jpg"
+  },
+  {
+   "t": 231.43333333333334,
+   "dur": 3.1,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_b05.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 234.53333333333333,
+   "dur": 4.533333333333333,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_y07.mp4",
+   "rate": 0.969
+  },
+  {
+   "t": 239.06666666666666,
+   "dur": 2.3666666666666667,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y08.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 241.43333333333334,
+   "dur": 3.1333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 244.56666666666666,
+   "dur": 4.7,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_a05.mp4",
+   "rate": 0.97
+  },
+  {
+   "t": 249.26666666666668,
+   "dur": 6.7,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "BigStat",
+   "props": {
+    "value": 10000,
+    "unit": "",
+    "prefix": "$",
+    "label": "CASH IN ONE DAY = A REPORT",
+    "compare": "That's the law. It's not about you.",
+    "photo": "img/t30ventaen_a17_cash_counter.jpg",
+    "tone": "white",
+    "at": 249.87,
+    "compareAt": 253.35
+   },
+   "bed": "img/t30ventaen_h15_withdraw_slip_blur.jpg"
+  },
+  {
+   "t": 255.96666666666667,
+   "dur": 1.4666666666666666,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y15.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 257.43333333333334,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 260.8333333333333,
+   "dur": 1.4333333333333333,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_w01.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 262.26666666666665,
+   "dur": 3.3,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_a21_teller_kind.jpg"
+  },
+  {
+   "t": 265.56666666666666,
+   "dur": 3.3,
+   "sec": "S2",
+   "kind": "imagen",
+   "lugar": "harold",
+   "asset": "img/t30ventaen_h19_cash_envelope.jpg"
+  },
+  {
+   "t": 268.8666666666667,
+   "dur": 2.4,
+   "sec": "S2",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h17_grandma_comfort.jpg"
+  },
+  {
+   "t": 271.26666666666665,
+   "dur": 4.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 276.1666666666667,
+   "dur": 4.233333333333333,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_y14.mp4",
+   "rate": 1
+  },
+  {
+   "t": 280.4,
+   "dur": 3.2,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a48_card_back.mp4",
+   "real": false,
+   "rate": 0.943
+  },
+  {
+   "t": 283.6,
+   "dur": 4.533333333333333,
+   "sec": "S2",
+   "lugar": "harold",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_t04.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 288.1333333333333,
+   "dur": 5.633333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 293.76666666666665,
+   "dur": 5.2,
+   "sec": "S2",
+   "lugar": "harold",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u05.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.88
+  },
+  {
+   "t": 298.96666666666664,
+   "dur": 2.966666666666667,
+   "sec": "S2",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h15_withdraw_slip.jpg"
+  },
+  {
+   "t": 301.93333333333334,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaen_a23_split_envelopes.jpg",
+    "rightImg": "img/t30ventaen_a19_report_form.jpg",
+    "leftHead": "NEVER",
+    "rightHead": "DO THIS",
+    "leftText": "Break it into smaller pieces.",
+    "rightText": "Take it out. Let them file the paper.",
+    "leftAt": 302.53,
+    "rightAt": 308.53,
+    "stamp": ""
+   },
+   "bed": "img/t30ventaen_h15_withdraw_slip_blur.jpg"
+  },
+  {
+   "t": 309.93333333333334,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 313.96666666666664,
+   "dur": 1.8,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u30.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 315.76666666666665,
+   "dur": 7.566666666666666,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "The paper doesn't hurt you. Hiding from it does.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 316.9,
+    "until": 320.6,
+    "highlight": "Hiding from it does."
+   },
+   "bed": "img/t30ventaen_h15_withdraw_slip_blur.jpg"
+  },
+  {
+   "t": 323.3333,
+   "dur": 3.9,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 3",
+    "part": "THE BANK CAN HOLD IT"
+   },
+   "bed": "img/t30ventaen_h20_laptop_wire_blur.jpg"
+  },
+  {
+   "t": 323.3333333333333,
+   "dur": 1.5333333333333334,
+   "sec": "S2",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_u27.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 324.8666666666667,
+   "dur": 4.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 329.6333333333333,
+   "dur": 3.8,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u19.mp4",
+   "rate": 1
+  },
+  {
+   "t": 333.43333333333334,
+   "dur": 4.4,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u20.mp4",
+   "rate": 1
+  },
+  {
+   "t": 337.8333333333333,
+   "dur": 3.433333333333333,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y12.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 341.26666666666665,
+   "dur": 3.6666666666666665,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 344.93333333333334,
+   "dur": 2.933333333333333,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_b19.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 347.8666666666667,
+   "dur": 3.9,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_f16.mp4",
+   "rate": 1
+  },
+  {
+   "t": 351.76666666666665,
+   "dur": 3.6666666666666665,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_s11.mp4",
+   "rate": 1
+  },
+  {
+   "t": 355.43333333333334,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 360.03333333333336,
+   "dur": 5,
+   "sec": "S3",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h18_phone_branch_ahead.jpg"
+  },
+  {
+   "t": 365.03333333333336,
+   "dur": 4.2,
+   "sec": "S3",
+   "kind": "imagen",
+   "lugar": "escena",
+   "asset": "img/t30ventaen_a24_wire_laptop.jpg"
+  },
+  {
+   "t": 369.23333333333335,
+   "dur": 2.2333333333333334,
+   "sec": "S3",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h21_trusted_form.jpg"
+  },
+  {
+   "t": 371.46666666666664,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaen_a27_trusted_form.jpg",
+    "rightImg": "img/t30ventaen_a28_church_friend.jpg",
+    "leftHead": "WHAT IT DOES",
+    "rightHead": "ACCESS TO YOUR MONEY",
+    "leftText": "The bank can call them first.",
+    "rightText": "None.",
+    "leftAt": 372.07,
+    "rightAt": 376.95,
+    "stamp": ""
+   },
+   "bed": "img/t30ventaen_h20_laptop_wire_blur.jpg"
+  },
+  {
+   "t": 378.46666666666664,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 382.06666666666666,
+   "dur": 3.4,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y11.mp4",
+   "real": true,
+   "rate": 0.744
+  },
+  {
+   "t": 385.46666666666664,
+   "dur": 1.5,
+   "sec": "S3",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h26_family_lobby.jpg"
+  },
+  {
+   "t": 386.96666666666664,
+   "dur": 9.233333333333333,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "One form. It protects you from the scammer and it protects you from the bank guessing wrong.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 387.57,
+    "until": 392.1,
+    "highlight": "One form."
+   },
+   "bed": "img/t30ventaen_h20_laptop_wire_blur.jpg"
+  },
+  {
+   "t": 396.2,
+   "dur": 5.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 396.2,
+   "dur": 3.6333,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 4",
+    "part": "THE JOINT ACCOUNT TRAP"
+   },
+   "bed": "img/t30ventaen_h24_sister_angry_blur.jpg"
+  },
+  {
+   "t": 401.5,
+   "dur": 1.5333333333333334,
+   "sec": "S4",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h03_fine_print.jpg"
+  },
+  {
+   "t": 403.03333333333336,
+   "dur": 4.533333333333333,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_f11.mp4",
+   "rate": 1
+  },
+  {
+   "t": 407.56666666666666,
+   "dur": 2.5,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_s03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 410.06666666666666,
+   "dur": 2.066666666666667,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a52_flood.mp4",
+   "real": false,
+   "rate": 1
+  },
+  {
+   "t": 412.1333333333333,
+   "dur": 3.3333333333333335,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 415.46666666666664,
+   "dur": 5.733333333333333,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_w02.mp4",
+   "rate": 0.795
+  },
+  {
+   "t": 421.2,
+   "dur": 3.566666666666667,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_s07.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 424.76666666666665,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 428.56666666666666,
+   "dur": 2.7333333333333334,
+   "sec": "S4",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h27_will_desk.jpg"
+  },
+  {
+   "t": 431.3,
+   "dur": 2.7333333333333334,
+   "sec": "S4",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h06_lollipop_jar.jpg"
+  },
+  {
+   "t": 434.03333333333336,
+   "dur": 6.133333333333334,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "kids",
+    "label": "YOU ADDED ONE TO THE ACCOUNT",
+    "compare": "The other two might get nothing.",
+    "photo": "img/t30ventaen_a32_three_kids.jpg",
+    "tone": "red",
+    "at": 434.63,
+    "compareAt": 436.51,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h24_sister_angry_blur.jpg"
+  },
+  {
+   "t": 440.1666666666667,
+   "dur": 5.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 446.1,
+   "dur": 1.7,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f07.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 447.8,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f01.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 451,
+   "dur": 6.133333333333334,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_f12.mp4",
+   "rate": 0.743
+  },
+  {
+   "t": 457.1333333333333,
+   "dur": 4.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 461.6,
+   "dur": 9,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaen_a16_senior_account.jpg",
+    "rightImg": "img/t30ventaen_a33_probate.jpg",
+    "leftHead": "HELP WITH THE BILLS",
+    "rightHead": "WHO GETS THE MONEY",
+    "leftText": "Authorized signer or power of attorney.",
+    "rightText": "Payable-on-death beneficiary.",
+    "leftAt": 462.2,
+    "rightAt": 469.2,
+    "stamp": ""
+   },
+   "bed": "img/t30ventaen_h24_sister_angry_blur.jpg"
+  },
+  {
+   "t": 470.6,
+   "dur": 3.1666666666666665,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_s09.mp4",
+   "rate": 1
+  },
+  {
+   "t": 473.76666666666665,
+   "dur": 5.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 478.9,
+   "dur": 2.933333333333333,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_s12.mp4",
+   "rate": 1
+  },
+  {
+   "t": 481.8333333333333,
+   "dur": 8.4,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Help with the bills and ownership of the money are two different things.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 482.84,
+    "until": 487.04,
+    "highlight": "two different things."
+   },
+   "bed": "img/t30ventaen_h24_sister_angry_blur.jpg"
+  },
+  {
+   "t": 490.2333,
+   "dur": 3.6334,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 5",
+    "part": "YOUR POWER OF ATTORNEY"
+   },
+   "bed": "img/t30ventaen_h29_lawyer_poa_blur.jpg"
+  },
+  {
+   "t": 490.23333333333335,
+   "dur": 1.6,
+   "sec": "S4",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_b16.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 491.8333333333333,
+   "dur": 4.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 496.03333333333336,
+   "dur": 4.033333333333333,
+   "sec": "S5",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h29_lawyer_poa.jpg"
+  },
+  {
+   "t": 500.06666666666666,
+   "dur": 5.066666666666666,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u18.mp4",
+   "rate": 0.897
+  },
+  {
+   "t": 505.1333333333333,
+   "dur": 4.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 509.1666666666667,
+   "dur": 4.533333333333333,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f17.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 513.7,
+   "dur": 4.766666666666667,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "weeks",
+    "label": "“WE HAVE TO SEND IT TO LEGAL”",
+    "photo": "img/t30ventaen_a36_legal_dept.jpg",
+    "tone": "white",
+    "at": 514.3,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h29_lawyer_poa_blur.jpg"
+  },
+  {
+   "t": 518.4666666666667,
+   "dur": 3,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_a01.mp4",
+   "rate": 1
+  },
+  {
+   "t": 521.4666666666667,
+   "dur": 4.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 526.4333333333333,
+   "dur": 3.3666666666666667,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_b03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 529.8,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_b17.mp4",
+   "rate": 1
+  },
+  {
+   "t": 533.2,
+   "dur": 4.066666666666666,
+   "sec": "S5",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h37_calendar_red.jpg"
+  },
+  {
+   "t": 537.2666666666667,
+   "dur": 4.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 542.0666666666667,
+   "dur": 1.5,
+   "sec": "S5",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h31_poa_on_file.jpg"
+  },
+  {
+   "t": 543.5666666666667,
+   "dur": 2.6,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y09.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 546.1666666666666,
+   "dur": 5.266666666666667,
+   "sec": "S5",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h30_daughter_bank_no.jpg"
+  },
+  {
+   "t": 551.4333333333333,
+   "dur": 5.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 556.6333333333333,
+   "dur": 7.833333333333333,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Do it while you can still walk in and sign.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 557.23,
+    "until": 558.8,
+    "highlight": "walk in and sign."
+   },
+   "bed": "img/t30ventaen_h29_lawyer_poa_blur.jpg"
+  },
+  {
+   "t": 564.4666666666667,
+   "dur": 2.7666666666666666,
+   "sec": "S5",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_u29.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 564.4667,
+   "dur": 3.6333,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 6",
+    "part": "PAPER COSTS YOU NOW"
+   },
+   "bed": "img/t30ventaen_h32_paper_statement_blur.jpg"
+  },
+  {
+   "t": 567.2333333333333,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 571.5333333333333,
+   "dur": 2.7666666666666666,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f10.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 574.3,
+   "dur": 2.566666666666667,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u08.mp4",
+   "rate": 1
+  },
+  {
+   "t": 576.8666666666667,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "LITTLE BY LITTLE",
+    "title": "New fees",
+    "items": [
+     {
+      "text": "A paper statement"
+     },
+     {
+      "text": "A teller-assisted transfer"
+     },
+     {
+      "text": "A cashier's check"
+     }
+    ],
+    "bed": "img/t30ventaen_a38_checkbook_stack.jpg"
+   },
+   "bed": "img/t30ventaen_h32_paper_statement_blur.jpg"
+  },
+  {
+   "t": 583.8666666666667,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 588.4666666666667,
+   "dur": 3.033333333333333,
+   "sec": "S6",
+   "lugar": "harold",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a37_paper_mail.mp4",
+   "rate": 0.951,
+   "real": false
+  },
+  {
+   "t": 591.5,
+   "dur": 2.4,
+   "sec": "S6",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h33_checkbook_write.jpg"
+  },
+  {
+   "t": 593.9,
+   "dur": 3.9,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u21.mp4",
+   "rate": 1
+  },
+  {
+   "t": 597.8,
+   "dur": 2.7333333333333334,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u26.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 600.5333333333333,
+   "dur": 3.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 604.5,
+   "dur": 4.533333333333333,
+   "sec": "S6",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h34_tablet_help.jpg"
+  },
+  {
+   "t": 609.0333333333333,
+   "dur": 4.533333333333333,
+   "sec": "S6",
+   "kind": "imagen",
+   "lugar": "harold",
+   "asset": "img/t30ventaen_h32_paper_statement.jpg"
+  },
+  {
+   "t": 613.5666666666667,
+   "dur": 5.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 619.2333333333333,
+   "dur": 8.1,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Seeing your own account often is the best fraud protection there is.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 619.83,
+    "until": 622.42,
+    "highlight": "best fraud protection"
+   },
+   "bed": "img/t30ventaen_h32_paper_statement_blur.jpg"
+  },
+  {
+   "t": 627.3333,
+   "dur": 3.9334,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 7",
+    "part": "THE CD THAT RENEWED ITSELF"
+   },
+   "bed": "img/t30ventaen_h36_cd_certificate_blur.jpg"
+  },
+  {
+   "t": 627.3333333333334,
+   "dur": 1.9333333333333333,
+   "sec": "S6",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_s17.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 629.2666666666667,
+   "dur": 3.7666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 633.0333333333333,
+   "dur": 1.2333333333333334,
+   "sec": "S7",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h04_walk_out.jpg"
+  },
+  {
+   "t": 634.2666666666667,
+   "dur": 5.4,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_b02.mp4",
+   "rate": 0.774
+  },
+  {
+   "t": 639.6666666666666,
+   "dur": 6.466666666666667,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "BigStat",
+   "props": {
+    "value": 10,
+    "unit": "days",
+    "prefix": "7–",
+    "label": "THE WINDOW AFTER YOUR CD MATURES",
+    "compare": "One notice. Then it rolls over.",
+    "photo": "img/t30ventaen_a42_cd_certificate.jpg",
+    "tone": "white",
+    "at": 640.27,
+    "compareAt": 642.83
+   },
+   "bed": "img/t30ventaen_h36_cd_certificate_blur.jpg"
+  },
+  {
+   "t": 646.1333333333333,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 649.4333333333333,
+   "dur": 4.133333333333334,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_s15.mp4",
+   "rate": 1
+  },
+  {
+   "t": 653.5666666666667,
+   "dur": 5.266666666666667,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 0.772
+  },
+  {
+   "t": 658.8333333333334,
+   "dur": 4.566666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 663.4,
+   "dur": 4.066666666666666,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_s05.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 667.4666666666667,
+   "dur": 5.4,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_s16.mp4",
+   "rate": 0.847
+  },
+  {
+   "t": 672.8666666666667,
+   "dur": 6.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 679.5333333333333,
+   "dur": 7.566666666666666,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Your loyalty is not paying you interest. The calendar is.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 680.13,
+    "until": 682.72,
+    "highlight": "The calendar is."
+   },
+   "bed": "img/t30ventaen_h36_cd_certificate_blur.jpg"
+  },
+  {
+   "t": 687.1,
+   "dur": 3.3,
+   "sec": "S7",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_b01.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 687.1,
+   "dur": 3.6333,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 8",
+    "part": "WHEN THE BRANCH CLOSES"
+   },
+   "bed": "img/t30ventaen_h39_closed_branch_blur.jpg"
+  },
+  {
+   "t": 690.4,
+   "dur": 3.7666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 694.1666666666666,
+   "dur": 2.7666666666666666,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u15.mp4",
+   "rate": 1
+  },
+  {
+   "t": 696.9333333333333,
+   "dur": 4.4,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_s01.mp4",
+   "rate": 0.854
+  },
+  {
+   "t": 701.3333333333334,
+   "dur": 4.233333333333333,
+   "sec": "S8",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h41_old_driver.jpg"
+  },
+  {
+   "t": 705.5666666666667,
+   "dur": 3.7666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 709.3333333333334,
+   "dur": 2.033333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u09.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 711.3666666666667,
+   "dur": 3.466666666666667,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u23.mp4",
+   "rate": 1
+  },
+  {
+   "t": 714.8333333333334,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 717.8333333333334,
+   "dur": 13.266666666666667,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Only call the number printed on the back of your card, never a number from a text message.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 718.43,
+    "until": 719.48,
+    "highlight": "the back of your card"
+   },
+   "bed": "img/t30ventaen_h39_closed_branch_blur.jpg"
+  },
+  {
+   "t": 731.1,
+   "dur": 5.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 734.3333,
+   "dur": 3.9334,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 9",
+    "part": "THE BOX IS NOT INSURED"
+   },
+   "bed": "img/t30ventaen_h42_sdb_open_blur.jpg"
+  },
+  {
+   "t": 736.2666666666667,
+   "dur": 2,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u12.mp4",
+   "rate": 1
+  },
+  {
+   "t": 738.2666666666667,
+   "dur": 3.2,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u13.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 741.4666666666667,
+   "dur": 2.066666666666667,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u04.mp4",
+   "rate": 1
+  },
+  {
+   "t": 743.5333333333333,
+   "dur": 10.5,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30ventaen_a41_tablet_balance.jpg",
+    "rightImg": "img/t30ventaen_a51_sdb_contents.jpg",
+    "leftHead": "INSURED",
+    "rightHead": "NOT INSURED",
+    "leftText": "Checking · savings · CDs, up to the limit.",
+    "rightText": "What's in your safe deposit box.",
+    "leftAt": 744.13,
+    "rightAt": 750.11,
+    "stamp": ""
+   },
+   "bed": "img/t30ventaen_h42_sdb_open_blur.jpg"
+  },
+  {
+   "t": 754.0333333333333,
+   "dur": 4.433333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 758.4666666666667,
+   "dur": 3.9,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a54_insurance_policy.mp4",
+   "real": false,
+   "rate": 0.763
+  },
+  {
+   "t": 762.3666666666667,
+   "dur": 3.6666666666666665,
+   "sec": "S9",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h28_pod_form.jpg"
+  },
+  {
+   "t": 766.0333333333333,
+   "dur": 3.6333333333333333,
+   "sec": "S9",
+   "kind": "clip",
+   "real": true,
+   "rate": 1,
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_u11.mp4"
+  },
+  {
+   "t": 769.6666666666666,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 774.2666666666667,
+   "dur": 6,
+   "sec": "S9",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h43_sdb_photos.jpg"
+  },
+  {
+   "t": 780.2666666666667,
+   "dur": 9.233333333333333,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "SAFE DEPOSIT BOX",
+    "title": "Three things",
+    "items": [
+     {
+      "text": "A list and photos, kept at home"
+     },
+     {
+      "text": "Check your homeowner's or renter's policy"
+     },
+     {
+      "text": "Someone you trust knows the box exists"
+     }
+    ],
+    "bed": "img/t30ventaen_a50_sdb_wall.jpg"
+   },
+   "bed": "img/t30ventaen_h42_sdb_open_blur.jpg"
+  },
+  {
+   "t": 789.5,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 50,
+   "lugar": "avatar"
+  },
+  {
+   "t": 794.1,
+   "dur": 4.766666666666667,
+   "sec": "S9",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h45_dormant_passbook.jpg"
+  },
+  {
+   "t": 798.8,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 10",
+    "part": "FORGOTTEN MONEY"
+   },
+   "bed": "img/t30ventaen_h45_dormant_passbook_blur.jpg"
+  },
+  {
+   "t": 798.8666666666667,
+   "dur": 3.433333333333333,
+   "sec": "S9",
+   "kind": "imagen",
+   "lugar": "harold",
+   "asset": "img/t30ventaen_h42_sdb_open.jpg"
+  },
+  {
+   "t": 802.3,
+   "dur": 5.166666666666667,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u07.mp4",
+   "real": true,
+   "rate": 0.883
+  },
+  {
+   "t": 807.4666666666667,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 51,
+   "lugar": "avatar"
+  },
+  {
+   "t": 811.6,
+   "dur": 4.4,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_b18.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 816,
+   "dur": 5.566666666666666,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_u06.mp4",
+   "real": true,
+   "rate": 0.82
+  },
+  {
+   "t": 821.5666666666667,
+   "dur": 3.933333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 52,
+   "lugar": "avatar"
+  },
+  {
+   "t": 825.5,
+   "dur": 3.2666666666666666,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_s10.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 828.7666666666667,
+   "dur": 3.2333333333333334,
+   "sec": "S10",
+   "kind": "imagen",
+   "lugar": "escena",
+   "asset": "img/t30ventaen_a55_dusty_passbook.jpg"
+  },
+  {
+   "t": 832,
+   "dur": 5.1,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_s08.mp4",
+   "real": true,
+   "rate": 0.894
+  },
+  {
+   "t": 837.1,
+   "dur": 4.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 53,
+   "lugar": "avatar"
+  },
+  {
+   "t": 842,
+   "dur": 4.5,
+   "sec": "S10",
+   "lugar": "harold",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a56_unclaimed_files.mp4",
+   "rate": 0.507,
+   "real": false
+  },
+  {
+   "t": 846.5,
+   "dur": 5.133333333333334,
+   "sec": "S10",
+   "lugar": "harold",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a57_piggy_bank.mp4",
+   "rate": 0.588,
+   "real": false
+  },
+  {
+   "t": 851.6333333333333,
+   "dur": 5.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 54,
+   "lugar": "avatar"
+  },
+  {
+   "t": 856.6666666666666,
+   "dur": 2.1666666666666665,
+   "sec": "S10",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h09_drawer_open.jpg"
+  },
+  {
+   "t": 858.8333333333334,
+   "dur": 5.3,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Activity keeps it alive.",
+    "who": "Harold",
+    "source": "35 years behind the bank desk",
+    "at": 859.43,
+    "until": 859.86,
+    "highlight": "alive."
+   },
+   "bed": "img/t30ventaen_h45_dormant_passbook_blur.jpg"
+  },
+  {
+   "t": 864.1333,
+   "dur": 3.9334,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 11",
+    "part": "THE CALL FROM “YOUR BANK”"
+   },
+   "bed": "img/t30ventaen_h49_scam_call_blur.jpg"
+  },
+  {
+   "t": 864.1333333333333,
+   "dur": 2.8666666666666667,
+   "sec": "S10",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30ventaen_real/t30ventaen_b20.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 867,
+   "dur": 4.533333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 55,
+   "lugar": "avatar"
+  },
+  {
+   "t": 871.5333333333333,
+   "dur": 4.266666666666667,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_y06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 875.8,
+   "dur": 6.133333333333334,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y10.mp4",
+   "real": true,
+   "rate": 0.743
+  },
+  {
+   "t": 881.9333333333333,
+   "dur": 6.7,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "BigStat",
+   "props": {
+    "value": 4,
+    "unit": "digits",
+    "label": "OF YOUR CARD — THEY ALREADY KNOW",
+    "compare": "Caller ID even says the bank's name.",
+    "photo": "img/t30ventaen_a59_caller_id.jpg",
+    "tone": "red",
+    "at": 882.53,
+    "compareAt": 884.13,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h49_scam_call_blur.jpg"
+  },
+  {
+   "t": 888.6333333333333,
+   "dur": 6.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 56,
+   "lugar": "avatar"
+  },
+  {
+   "t": 895.1333333333333,
+   "dur": 1.4,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_s14.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 896.5333333333333,
+   "dur": 3.5,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_t08.mp4",
+   "rate": 1
+  },
+  {
+   "t": 900.0333333333333,
+   "dur": 4.2,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30ventaen_real/t30ventaen_u17.mp4",
+   "rate": 1
+  },
+  {
+   "t": 904.2333333333333,
+   "dur": 1.4,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a60_code_text.mp4",
+   "real": false,
+   "rate": 1
+  },
+  {
+   "t": 905.6333333333333,
+   "dur": 3.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 57,
+   "lugar": "avatar"
+  },
+  {
+   "t": 909.1333333333333,
+   "dur": 3.1666666666666665,
+   "sec": "S11",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h40_card_back.jpg"
+  },
+  {
+   "t": 912.3,
+   "dur": 3.1333333333333333,
+   "sec": "S11",
+   "kind": "clip",
+   "real": true,
+   "rate": 1,
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_t02.mp4"
+  },
+  {
+   "t": 915.4333333333333,
+   "dur": 2.8666666666666667,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_t09.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 918.3,
+   "dur": 8,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "PhoneAlert",
+   "props": {
+    "kicker": "THE FAKE CALL",
+    "title": "Fraud Department",
+    "body": "Suspicious activity on your account. Verify now.",
+    "action": "Hang up, then call back",
+    "side": "right",
+    "bg": "img/t30ventaen_a62_old_couple_sad.jpg"
+   },
+   "bed": "img/t30ventaen_h49_scam_call_blur.jpg"
+  },
+  {
+   "t": 926.3,
+   "dur": 3.7333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 58,
+   "lugar": "avatar"
+  },
+  {
+   "t": 928.5333,
+   "dur": 3.6667,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "THE TOTAL",
+    "part": "LET'S ADD IT UP"
+   },
+   "bed": "img/t30ventaen_h53_adding_up_blur.jpg"
+  },
+  {
+   "t": 930.0333333333333,
+   "dur": 2.1666666666666665,
+   "sec": "S11",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h12_statements_line.jpg"
+  },
+  {
+   "t": 932.2,
+   "dur": 3.1,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_r03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 935.3,
+   "dur": 8.433333333333334,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "BigStat",
+   "props": {
+    "value": 180,
+    "unit": "a year",
+    "prefix": "$",
+    "label": "A FEE YOU DIDN'T KNOW ABOUT",
+    "compare": "$10–15 a month.",
+    "photo": "img/t30ventaen_a63_adding_tape.jpg",
+    "tone": "red",
+    "at": 935.9,
+    "compareAt": 937.4
+   },
+   "bed": "img/t30ventaen_h53_adding_up_blur.jpg"
+  },
+  {
+   "t": 943.7333333333333,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "BigStat",
+   "props": {
+    "value": 500,
+    "unit": "a year",
+    "prefix": "$",
+    "label": "A CD 1% LOWER ON $50,000",
+    "photo": "img/t30ventaen_a45_coin_growth.jpg",
+    "tone": "red",
+    "at": 944.33
+   },
+   "bed": "img/t30ventaen_h53_adding_up_blur.jpg"
+  },
+  {
+   "t": 948.7666666666667,
+   "dur": 3.2333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 59,
+   "lugar": "avatar"
+  },
+  {
+   "t": 952,
+   "dur": 3.7666666666666666,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_b13.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 955.7666666666667,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 60,
+   "lugar": "avatar"
+  },
+  {
+   "t": 960.3666666666667,
+   "dur": 4.066666666666666,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f02.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 964.4333333333333,
+   "dur": 3.2666666666666666,
+   "sec": "S12",
+   "kind": "clip",
+   "real": true,
+   "rate": 1,
+   "lugar": "archivo",
+   "asset": "broll/t30ventaen_real/t30ventaen_s06.mp4"
+  },
+  {
+   "t": 967.7,
+   "dur": 8.133333333333333,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "YOUR HOMEWORK · THIS WEEK",
+    "title": "Two things",
+    "items": [
+     {
+      "text": "Circle every fee on your last three statements"
+     },
+     {
+      "text": "Ask about a trusted contact person"
+     }
+    ],
+    "bed": "img/t30ventaen_a13_old_checkbook.jpg"
+   },
+   "bed": "img/t30ventaen_h53_adding_up_blur.jpg"
+  },
+  {
+   "t": 975.8333333333334,
+   "dur": 4.833333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 61,
+   "lugar": "avatar"
+  },
+  {
+   "t": 980.6666666666666,
+   "dur": 1.4666666666666666,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_y01.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 982.1333333333333,
+   "dur": 4.433333333333334,
+   "sec": "S12",
+   "lugar": "harold",
+   "kind": "imagen",
+   "asset": "img/t30ventaen_h23_one_form.jpg"
+  },
+  {
+   "t": 986.5666666666667,
+   "dur": 4.466666666666667,
+   "sec": "S12",
+   "kind": "clip",
+   "lugar": "harold",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a66_branch_dusk.mp4",
+   "rate": 0.668,
+   "real": false
+  },
+  {
+   "t": 991.0333333333333,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "03",
+    "label": "TELL ME IN THE COMMENTS",
+    "title": "WHICH NUMBER?",
+    "sub": "And what state are you in?",
+    "stamp": "",
+    "typeAt": 991.63,
+    "stampAt": 993.93,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30ventaen_h53_adding_up_blur.jpg"
+  },
+  {
+   "t": 997.0333333333333,
+   "dur": 5.566666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 62,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1002.6,
+   "dur": 1.4333333333333333,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_real/t30ventaen_f08.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1004.0333333333333,
+   "dur": 4.266666666666667,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30ventaen_ag/t30ventaen_a61_red_button.mp4",
+   "real": false,
+   "rate": 0.705
+  },
+  {
+   "t": 1008.3,
+   "dur": 6.6,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "BigStat",
+   "props": {
+    "value": 3,
+    "unit": "words",
+    "label": "NEXT WEEK: THE LETTER BEFORE THEY CLOSE YOUR ACCOUNT",
+    "photo": "img/t30ventaen_a65_mail_trash.jpg",
+    "tone": "white",
+    "at": 1008.9,
+    "prefix": ""
+   },
+   "bed": "img/t30ventaen_h53_adding_up_blur.jpg"
+  }
+ ]
+}
