@@ -302,3 +302,4 @@ img/t30ventaes_r58_circula_cobros_blur.jpg
 img/t30ventaes_r60_cierre_ventana.jpg
 img/t30ventaes_r60_cierre_ventana_blur.jpg
 t30ventaes.m4a
+img/t30ventaes_a63_senora_llora.jpg
