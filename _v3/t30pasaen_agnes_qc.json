@@ -294,6 +294,11 @@
  "hojas": null,
  "version": 2,
  "slug": "t30pasaen",
- "at": "2026-10-23T23:32:08.047Z",
- "repeticion": null
+ "at": "2026-10-24T01:24:41.141Z",
+ "repeticion": {
+  "planos": 78,
+  "loops": 0,
+  "dobles": 0,
+  "ejemplos": []
+ }
 }
