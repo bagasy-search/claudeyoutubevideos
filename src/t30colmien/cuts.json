@@ -1,0 +1,74 @@
+{
+ "hippo": {
+  "img": "img/t30colmien/cut/hippo.png",
+  "ar": 1.9814,
+  "eye": [
+   0.88,
+   0.36
+  ],
+  "neck": [
+   0.74,
+   0.45
+  ]
+ },
+ "hippomouth": {
+  "img": "img/t30colmien/cut/hippomouth.png",
+  "ar": 1.395,
+  "eye": [
+   0.55,
+   0.2
+  ]
+ },
+ "lioness": {
+  "img": "img/t30colmien/cut/lioness.png",
+  "ar": 2.1054,
+  "eye": [
+   0.9,
+   0.25
+  ]
+ },
+ "lionlie": {
+  "img": "img/t30colmien/cut/lionlie.png",
+  "ar": 2.0144,
+  "eye": [
+   0.68,
+   0.2
+  ]
+ },
+ "lion": {
+  "img": "img/t30colmien/cut/lion.png",
+  "ar": 1.3346,
+  "eye": [
+   0.12,
+   0.13
+  ]
+ },
+ "croc": {
+  "img": "img/t30colmien/cut/croc.png",
+  "ar": 3.2124,
+  "eye": [
+   0.12,
+   0.3
+  ]
+ },
+ "zebra": {
+  "img": "img/t30colmien/cut/zebra.png",
+  "ar": 1.2597,
+  "eye": [
+   0.9,
+   0.62
+  ],
+  "neck": [
+   0.82,
+   0.4
+  ]
+ },
+ "cub": {
+  "img": "img/t30colmien/cut/cub.png",
+  "ar": 0.4309,
+  "eye": [
+   0.42,
+   0.2
+  ]
+ }
+}
