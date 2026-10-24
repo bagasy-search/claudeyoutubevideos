@@ -1,0 +1,3037 @@
+{
+"end": 966.43,
+"shots": [
+{
+"a": 0.0,
+"b": 2.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a02_clock_317.jpg"
+}
+},
+{
+"a": 2.1,
+"b": 3.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a06_bed_sleep.jpg"
+}
+},
+{
+"a": 3.68,
+"b": 7.28,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "moon"
+}
+},
+{
+"a": 7.28,
+"b": 8.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/fullmoon_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 8.52,
+"b": 11.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/moonnight_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 11.0,
+"b": 19.54,
+"k": "ilus",
+"t": "vanish",
+"p": {
+"at": 95,
+"o": {
+"big": {
+"w": "GONE.",
+"size": 230,
+"y": 640,
+"a": 95
+},
+"build": {
+"lines": [
+"No flash. No *sound.*"
+],
+"y": 120,
+"size": 96,
+"a": 174
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 19.54,
+"b": 21.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a03_rooftops_moon.jpg"
+}
+},
+{
+"a": 21.3,
+"b": 23.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a04_rooftops_nomoon.jpg",
+"o": {
+"scrib": {
+"cx": 1060,
+"cy": 300,
+"rx": 230,
+"ry": 150,
+"text": "nothing.",
+"tx": 560,
+"ty": 170,
+"a": 8
+}
+}
+}
+},
+{
+"a": 23.96,
+"b": 25.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a59_window_empty.jpg"
+}
+},
+{
+"a": 25.56,
+"b": 28.5,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "window"
+}
+},
+{
+"a": 28.5,
+"b": 30.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a05_ocean_night.jpg"
+}
+},
+{
+"a": 30.86,
+"b": 32.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/earthspace_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 32.4,
+"b": 34.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k03_waves_night.mp4",
+"o": {
+"build": {
+"lines": [
+"the ocean already *knows.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 34.66,
+"b": 36.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/moonlit_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 36.46,
+"b": 38.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/moonnight_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 38.28,
+"b": 41.02,
+"k": "ilus",
+"t": "hand",
+"p": {
+"o": {
+"build": {
+"lines": [
+"It's a *hand.*"
+],
+"a": 2,
+"size": 100
+}
+}
+}
+},
+{
+"a": 41.02,
+"b": 42.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/earthspace_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 42.98,
+"b": 45.06,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/earthrise_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 45.06,
+"b": 49.24,
+"k": "ilus",
+"t": "hand",
+"p": {
+"at": 90,
+"o": {
+"build": {
+"lines": [
+"that hand *let go.*"
+],
+"a": 90
+}
+}
+}
+},
+{
+"a": 49.24,
+"b": 54.48,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 12,
+"frm": 0,
+"to": 4320,
+"title": "72 HOURS.",
+"sub": "hour by hour.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 12,
+"big": true
+},
+{
+"a": 54.48,
+"b": 55.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a48_backyard_look.jpg"
+}
+},
+{
+"a": 55.72,
+"b": 57.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a13_globe_desk.jpg"
+}
+},
+{
+"a": 57.26,
+"b": 59.7,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/mission_01.jpg",
+"ar": 1.2632,
+"o": {
+"aside": {
+"t": "panic.",
+"x": 1180,
+"y": 320,
+"a": 38
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 59.7,
+"b": 60.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/zebra_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 60.96,
+"b": 63.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/sunrise_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 63.4,
+"b": 66.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/beach_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 66.22,
+"b": 75.54,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "steady",
+"o": {
+"build": {
+"lines": [
+"a few *million* years from now"
+],
+"size": 84,
+"a": 62
+}
+}
+},
+"big": true
+},
+{
+"a": 75.54,
+"b": 81.3,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "A new what-if night every week. Subscribe + bell."
+}
+},
+{
+"a": 81.3,
+"b": 86.9,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/earthmoon_01.jpg",
+"ar": 0.8934,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 86.9,
+"b": 91.36,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "What time is it where you are right now?",
+"bell": false
+}
+},
+{
+"a": 91.36,
+"b": 94.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a38_empty_sky_chairs.jpg"
+}
+},
+{
+"a": 94.1,
+"b": 96.3,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 0,
+"frm": 0,
+"to": 0,
+"title": "3:17 AM",
+"sub": "The clock is running.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 0,
+"big": true
+},
+{
+"a": 96.3,
+"b": 100.1,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 1,
+"frm": 0,
+"to": 1,
+"title": "3:18 AM",
+"sub": "One minute after.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 1,
+"big": true
+},
+{
+"a": 100.1,
+"b": 106.14,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "window",
+"o": {
+"build": {
+"lines": [
+"Do you *feel* it?"
+],
+"a": 98
+},
+"big": {
+"w": "NO.",
+"size": 220,
+"y": 380,
+"a": 134
+}
+}
+}
+},
+{
+"a": 106.14,
+"b": 108.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/fullmoon_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 108.54,
+"b": 124.34,
+"k": "ilus",
+"t": "scale",
+"p": {
+"at": 10,
+"o": {
+"build": {
+"lines": [
+"You don't *float.*"
+],
+"a": 178
+},
+"aside": {
+"t": "same weight.",
+"x": 880,
+"y": 600,
+"a": 308
+}
+}
+}
+},
+{
+"a": 124.34,
+"b": 127.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/moonlit_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 127.98,
+"b": 131.36,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/craters_01.jpg",
+"ar": 0.9357,
+"o": {
+"build": {
+"lines": [
+"a giant *mirror.*"
+],
+"a": 46
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 131.36,
+"b": 133.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/moonlit_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 133.94,
+"b": 137.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a10_flashlight.jpg"
+}
+},
+{
+"a": 137.7,
+"b": 149.32,
+"k": "ilus",
+"t": "farm",
+"p": {
+"mode": "drop",
+"at": 250,
+"o": {
+"big": {
+"w": "÷100",
+"size": 230,
+"y": 150,
+"color": "#edb269",
+"a": 308
+}
+}
+},
+"big": true
+},
+{
+"a": 149.32,
+"b": 153.38,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30lunaen/ag/t30lunaen_a08_silver_field.jpg",
+"r": "img/t30lunaen/ag/t30lunaen_a09_dark_field.jpg",
+"wl": "MOON.",
+"wr": "NO MOON.",
+"a": 88
+}
+},
+{
+"a": 153.38,
+"b": 160.82,
+"k": "ilus",
+"t": "farm",
+"p": {
+"mode": "stars",
+"o": {
+"build": {
+"lines": [
+"*Thousands* of them."
+],
+"a": 179
+}
+}
+},
+"big": true
+},
+{
+"a": 160.82,
+"b": 163.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/milkyway_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 163.72,
+"b": 165.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_k25_milkyway.jpg"
+}
+},
+{
+"a": 165.92,
+"b": 167.0,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 2,
+"frm": 1,
+"to": 13,
+"title": "3:30 AM",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 2,
+"big": true
+},
+{
+"a": 167.0,
+"b": 171.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/observ_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 171.18,
+"b": 174.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k05_dome_turn.mp4",
+"rate": 0.934
+}
+},
+{
+"a": 174.34,
+"b": 177.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/observ_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 177.4,
+"b": 181.24,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Apollo 11 · 1969",
+"side": "c",
+"v": "img/t30lunaen/real/retro_01.jpg",
+"ar": 0.9897,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 181.24,
+"b": 182.7,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Lunokhod",
+"side": "c",
+"v": "img/t30lunaen/real/lunokhod_02.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 182.7,
+"b": 189.84,
+"k": "ilus",
+"t": "laser",
+"p": {
+"mode": "echo",
+"o": {
+"build": {
+"lines": [
+"down to *millimeters.*"
+],
+"a": 174
+}
+}
+},
+"big": true
+},
+{
+"a": 189.84,
+"b": 192.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k04_laser.mp4"
+}
+},
+{
+"a": 192.46,
+"b": 194.16,
+"k": "ilus",
+"t": "laser",
+"p": {
+"mode": "lost",
+"o": {
+"big": {
+"w": "NOTHING.",
+"a": 10,
+"size": 200,
+"y": 430
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 194.16,
+"b": 198.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a12_screens.jpg"
+}
+},
+{
+"a": 198.56,
+"b": 200.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/mission_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 200.92,
+"b": 216.7,
+"k": "ilus",
+"t": "orbits",
+"p": {
+"at": 430
+}
+},
+{
+"a": 216.7,
+"b": 218.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a50_phone_works.jpg"
+}
+},
+{
+"a": 218.84,
+"b": 220.8,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/satellite_01.jpg",
+"ar": 1.0,
+"o": {
+"aside": {
+"t": "phew.",
+"x": 1200,
+"y": 360,
+"a": 12
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 220.8,
+"b": 225.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/mission_03.jpg",
+"o": {
+"build": {
+"lines": [
+"a very long *night.*"
+],
+"a": 77
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 225.5,
+"b": 226.78,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 3,
+"frm": 13,
+"to": 43,
+"title": "4 AM",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 3,
+"big": true
+},
+{
+"a": 226.78,
+"b": 228.82,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/earthmoon_02.jpg",
+"ar": 0.8653,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 228.82,
+"b": 248.338,
+"k": "ilus",
+"t": "bary",
+"p": {
+"mode": "show",
+"o": {
+"build": {
+"lines": [
+"The Earth *moves.*"
+],
+"a": 2,
+"size": 96
+},
+"scrib": {
+"cx": 860,
+"cy": 540,
+"rx": 90,
+"ry": 80,
+"text": "inside the Earth!",
+"tx": 1240,
+"ty": 820,
+"a": 315
+}
+}
+},
+"big": true
+},
+{
+"a": 248.338,
+"b": 254.338,
+"k": "ilus",
+"t": "bary",
+"p": {
+"mode": "stop",
+"at": 53,
+"o": {
+"build": {
+"lines": [
+"the wobble *stops.*"
+],
+"a": 53
+}
+}
+},
+"big": true
+},
+{
+"a": 254.338,
+"b": 256.698,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/starsky_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 256.698,
+"b": 263.078,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/llr_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 263.078,
+"b": 267.338,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 4,
+"frm": 43,
+"to": 103,
+"title": "5 AM",
+"sub": "The ocean begins to move.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 4,
+"big": true
+},
+{
+"a": 267.338,
+"b": 270.218,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/fundyhi_01.jpg",
+"o": {
+"build": {
+"lines": [
+"The *tides.*"
+],
+"size": 110,
+"a": 53
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 270.218,
+"b": 280.538,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "two",
+"o": {
+"build": {
+"lines": [
+"*two* big bulges"
+],
+"a": 129
+}
+}
+},
+"big": true
+},
+{
+"a": 280.538,
+"b": 287.278,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "spin"
+},
+"big": true
+},
+{
+"a": 287.278,
+"b": 297.418,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "sun",
+"o": {
+"build": {
+"lines": [
+"a bit less than *half.*"
+],
+"a": 166
+}
+}
+},
+"big": true
+},
+{
+"a": 297.418,
+"b": 305.158,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "vanish",
+"at": 19
+},
+"big": true
+},
+{
+"a": 305.158,
+"b": 309.418,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "calm",
+"o": {
+"build": {
+"lines": [
+"NO giant *tsunami.*"
+],
+"size": 110,
+"a": 81
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 309.418,
+"b": 311.918,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/beach_02.jpg",
+"o": {
+"aside": {
+"t": "nope.",
+"x": 1250,
+"y": 360,
+"a": 14
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 311.918,
+"b": 315.458,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k06_bath_slosh.mp4",
+"rate": 0.824
+}
+},
+{
+"a": 315.458,
+"b": 316.598,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "tub",
+"o": {
+"build": {
+"lines": [
+"It *sloshes.*"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 316.598,
+"b": 325.098,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "basin"
+}
+},
+{
+"a": 325.098,
+"b": 327.738,
+"k": "g",
+"t": "tidechart",
+"p": {},
+"big": true
+},
+{
+"a": 327.738,
+"b": 329.338,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a16_tide_gauge.jpg",
+"o": {
+"aside": {
+"t": "wait... what?",
+"x": 1100,
+"y": 300,
+"a": 8
+}
+}
+}
+},
+{
+"a": 329.338,
+"b": 333.378,
+"k": "ilus",
+"t": "pier",
+"p": {}
+},
+{
+"a": 333.378,
+"b": 338.138,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k07_pier_water.mp4",
+"rate": 0.564
+}
+},
+{
+"a": 338.138,
+"b": 340.618,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 5,
+"frm": 103,
+"to": 193,
+"title": "6:30 AM",
+"sub": "Sunrise.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 5,
+"big": true
+},
+{
+"a": 340.618,
+"b": 343.478,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k08_sunrise.mp4"
+}
+},
+{
+"a": 343.478,
+"b": 348.138,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a17_sunrise_trees.jpg"
+}
+},
+{
+"a": 348.138,
+"b": 354.058,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/daymoon_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 354.058,
+"b": 359.858,
+"k": "ilus",
+"t": "sunrise",
+"p": {}
+},
+{
+"a": 359.858,
+"b": 362.478,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a18_breakfast_tv.jpg"
+}
+},
+{
+"a": 362.478,
+"b": 368.578,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a19_phones.jpg",
+"o": {
+"build": {
+"lines": [
+"\"The Moon is *gone.*\""
+],
+"a": 79
+}
+}
+}
+},
+{
+"a": 368.578,
+"b": 372.058,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a20_calendar_wall.jpg"
+}
+},
+{
+"a": 372.058,
+"b": 374.298,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30lunaen/real/diwali_01.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 374.298,
+"b": 384.018,
+"k": "ilus",
+"t": "calendar",
+"p": {
+"at": 56
+},
+"big": true
+},
+{
+"a": 384.018,
+"b": 386.938,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a21_farmer_plant.jpg"
+}
+},
+{
+"a": 386.938,
+"b": 388.818,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/crescent_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 388.818,
+"b": 396.278,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/lantern_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 396.278,
+"b": 398.118,
+"k": "ilus",
+"t": "calendar",
+"p": {
+"at": -10,
+"o": {
+"build": {
+"lines": [
+"How do you count a *month* now?"
+],
+"a": 2,
+"size": 90
+}
+}
+},
+"big": true
+},
+{
+"a": 398.118,
+"b": 400.958,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 6,
+"frm": 193,
+"to": 343,
+"title": "9 AM",
+"sub": "The first strange high tide.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 6,
+"big": true
+},
+{
+"a": 400.958,
+"b": 402.798,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a23_coast_town.jpg"
+}
+},
+{
+"a": 402.798,
+"b": 405.878,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/harbor_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 405.878,
+"b": 408.998,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a24_wet_line.jpg",
+"o": {
+"scrib": {
+"cx": 960,
+"cy": 420,
+"rx": 520,
+"ry": 120,
+"text": "usual high tide.",
+"tx": 820,
+"ty": 780,
+"a": 34
+}
+}
+}
+},
+{
+"a": 408.998,
+"b": 410.658,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "NOT EVEN CLOSE.",
+"a": 2,
+"size": 140,
+"y": 420
+}
+}
+}
+},
+{
+"a": 410.658,
+"b": 420.758,
+"k": "g",
+"t": "tidechart",
+"p": {
+"o": {
+"big": {
+"w": "÷3",
+"size": 230,
+"x": 1420,
+"y": 120,
+"color": "#edb269",
+"a": 160
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 420.758,
+"b": 424.658,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/fundy_01.jpg",
+"o": {
+"label": "Bay of Fundy, Canada",
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 424.658,
+"b": 429.018,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/fundy_02.jpg",
+"o": {
+"build": {
+"lines": [
+"more than *10 meters.*"
+],
+"a": 66
+},
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 429.018,
+"b": 434.558,
+"k": "ilus",
+"t": "fundy",
+"p": {
+"mode": "big"
+}
+},
+{
+"a": 434.558,
+"b": 440.898,
+"k": "ilus",
+"t": "fundy",
+"p": {
+"mode": "small"
+}
+},
+{
+"a": 440.898,
+"b": 446.798,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/boatsmud_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 446.798,
+"b": 449.898,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/fundyhi_02.jpg",
+"o": {
+"aside": {
+"t": "okay, okay.",
+"x": 1150,
+"y": 330,
+"a": 70
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 449.898,
+"b": 454.058,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/tidepool_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 454.058,
+"b": 456.338,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a25_tidepool_dry.jpg"
+}
+},
+{
+"a": 456.338,
+"b": 458.858,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/mudflat_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 458.858,
+"b": 461.158,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k10_birds_mud.mp4"
+}
+},
+{
+"a": 461.158,
+"b": 465.178,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/knots_01.jpg",
+"o": {
+"build": {
+"lines": [
+"*Millions* of birds."
+],
+"a": 4
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 465.178,
+"b": 467.538,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a26_birds_flat.jpg"
+}
+},
+{
+"a": 467.538,
+"b": 470.878,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 7,
+"frm": 343,
+"to": 523,
+"title": "NOON",
+"sub": "The machines that run on the Moon.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 7,
+"big": true
+},
+{
+"a": 470.878,
+"b": 474.178,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a28_dam_sea.jpg"
+}
+},
+{
+"a": 474.178,
+"b": 478.318,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "La Rance, France",
+"side": "c",
+"v": "img/t30lunaen/real/rance_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 478.318,
+"b": 480.358,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1966",
+"side": "c",
+"v": "img/t30lunaen/real/rance_03.jpg",
+"ar": 1.6013,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 480.358,
+"b": 484.877,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Sihwa Lake, South Korea",
+"side": "c",
+"v": "img/t30lunaen/real/sihwa_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 484.877,
+"b": 488.657,
+"k": "ilus",
+"t": "plant",
+"p": {
+"mode": "run",
+"o": {
+"build": {
+"lines": [
+"~*250* megawatts"
+],
+"size": 90,
+"a": 71
+}
+}
+}
+},
+{
+"a": 488.657,
+"b": 491.257,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a29_homes_lights.jpg"
+}
+},
+{
+"a": 491.257,
+"b": 493.377,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k11_turbine_water.mp4"
+}
+},
+{
+"a": 493.377,
+"b": 495.177,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a27_dam_turbine.jpg"
+}
+},
+{
+"a": 495.177,
+"b": 501.357,
+"k": "ilus",
+"t": "plant",
+"p": {
+"mode": "drop"
+}
+},
+{
+"a": 501.357,
+"b": 508.917,
+"k": "ilus",
+"t": "plant",
+"p": {
+"mode": "drop",
+"at": -10,
+"o": {
+"build": {
+"lines": [
+"its fuel *vanished from the sky.*"
+],
+"size": 86,
+"a": 136
+}
+}
+}
+},
+{
+"a": 508.917,
+"b": 511.437,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 8,
+"frm": 523,
+"to": 883,
+"title": "6 PM",
+"sub": "The first night.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 8,
+"big": true
+},
+{
+"a": 511.437,
+"b": 515.517,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/sunrise_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 515.517,
+"b": 518.877,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/citynight_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 518.877,
+"b": 521.197,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k12_city_lights.mp4",
+"o": {
+"aside": {
+"t": "no contest.",
+"x": 1150,
+"y": 340,
+"a": 12
+}
+}
+}
+},
+{
+"a": 521.197,
+"b": 524.317,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/farmnight_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 524.317,
+"b": 525.237,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a31_beach_dark.jpg"
+}
+},
+{
+"a": 525.237,
+"b": 526.397,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a32_mountains_dark.jpg"
+}
+},
+{
+"a": 526.397,
+"b": 537.177,
+"k": "ilus",
+"t": "nights",
+"p": {
+"o": {
+"build": {
+"lines": [
+"Not one *bright* night."
+],
+"a": 181
+},
+"big": {
+"w": "EVER AGAIN.",
+"size": 150,
+"y": 430,
+"a": 245
+}
+}
+}
+},
+{
+"a": 537.177,
+"b": 540.897,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/lion_01.jpg",
+"ar": 0.8,
+"o": {
+"build": {
+"lines": [
+"this is where it gets *strange.*"
+],
+"size": 84,
+"a": 76
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 540.897,
+"b": 542.457,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/lion_02.jpg",
+"o": {
+"label": "Lion",
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 542.457,
+"b": 547.317,
+"k": "ilus",
+"t": "savanna",
+"p": {
+"mode": "bright"
+}
+},
+{
+"a": 547.317,
+"b": 552.357,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/lion_03.jpg",
+"o": {
+"label": "Serengeti, Tanzania",
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 552.357,
+"b": 556.777,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_k13_lion_walk.jpg"
+}
+},
+{
+"a": 556.777,
+"b": 558.577,
+"k": "ilus",
+"t": "savanna",
+"p": {
+"mode": "dark",
+"o": {
+"build": {
+"lines": [
+"*Every* night is a dark night."
+],
+"a": 2,
+"size": 90
+}
+}
+}
+},
+{
+"a": 558.577,
+"b": 560.037,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/zebra_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 560.037,
+"b": 563.957,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/wildebeest_01.jpg",
+"o": {
+"aside": {
+"t": "right?",
+"x": 1250,
+"y": 330,
+"a": 92
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 563.957,
+"b": 567.217,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/dungbeetle_01.jpg",
+"o": {
+"label": "Dung beetle",
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 567.217,
+"b": 577.297,
+"k": "ilus",
+"t": "beetle",
+"p": {
+"mode": "beetle",
+"o": {
+"build": {
+"lines": [
+"in a *straight* line."
+],
+"a": 116
+}
+}
+}
+},
+{
+"a": 577.297,
+"b": 579.557,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k15_moths.mp4",
+"rate": 0.465
+}
+},
+{
+"a": 579.557,
+"b": 582.957,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a37_birds_night.jpg"
+}
+},
+{
+"a": 582.957,
+"b": 584.397,
+"k": "ilus",
+"t": "beetle",
+"p": {
+"mode": "lost"
+}
+},
+{
+"a": 584.397,
+"b": 591.517,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 9,
+"frm": 883,
+"to": 1440,
+"title": "24 HOURS",
+"sub": "3:17 AM, the next day.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 9,
+"big": true
+},
+{
+"a": 591.517,
+"b": 597.617,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/starsky_02.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 597.617,
+"b": 603.597,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "calm"
+}
+},
+{
+"a": 603.597,
+"b": 607.197,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/tidepool_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 607.197,
+"b": 613.737,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/turbine_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 613.737,
+"b": 621.257,
+"k": "ilus",
+"t": "lookup",
+"p": {
+"mode": "look"
+}
+},
+{
+"a": 621.257,
+"b": 625.397,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/eclipse_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 625.397,
+"b": 631.577,
+"k": "ilus",
+"t": "eclipse",
+"p": {
+"mode": "solar",
+"o": {
+"build": {
+"lines": [
+"*Never* another eclipse."
+],
+"a": 2,
+"size": 96
+}
+}
+},
+"big": true
+},
+{
+"a": 631.577,
+"b": 635.537,
+"k": "ilus",
+"t": "eclipse",
+"p": {
+"mode": "lunar"
+},
+"big": true
+},
+{
+"a": 635.537,
+"b": 638.697,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "NO ECLIPSES.",
+"a": 2,
+"size": 170,
+"y": 380
+},
+"build": {
+"lines": [
+"*Ever.*"
+],
+"y": 640,
+"size": 100,
+"a": 58
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 638.697,
+"b": 641.957,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/eclipse_02.jpg",
+"ar": 1.0153,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 641.957,
+"b": 645.137,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a39_eclipse_glasses.jpg"
+}
+},
+{
+"a": 645.137,
+"b": 646.817,
+"k": "g",
+"t": "eclipsenone",
+"p": {}
+},
+{
+"a": 646.817,
+"b": 649.157,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 10,
+"frm": 1440,
+"to": 2160,
+"title": "36 HOURS",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 10,
+"big": true
+},
+{
+"a": 649.157,
+"b": 650.837,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/reef_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 650.837,
+"b": 654.157,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k17_reef_fish.mp4",
+"o": {
+"build": {
+"lines": [
+"a *lunar* clock."
+],
+"a": 50
+}
+},
+"rate": 0.768
+}
+},
+{
+"a": 654.157,
+"b": 657.937,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "coral spawning",
+"side": "c",
+"v": "img/t30lunaen/real/coral_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 657.937,
+"b": 660.337,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/reef_02.jpg",
+"ar": 0.6667,
+"o": {
+"label": "Great Barrier Reef",
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 660.337,
+"b": 671.697,
+"k": "ilus",
+"t": "reef",
+"p": {
+"mode": "spawn"
+}
+},
+{
+"a": 671.697,
+"b": 675.337,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k16_coral_spawn.mp4",
+"o": {
+"build": {
+"lines": [
+"an upside-down *snowstorm.*"
+],
+"size": 84,
+"a": 41
+}
+},
+"rate": 0.737
+}
+},
+{
+"a": 675.337,
+"b": 680.777,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a40_coral_night.jpg"
+}
+},
+{
+"a": 680.777,
+"b": 691.637,
+"k": "ilus",
+"t": "reef",
+"p": {
+"mode": "nomoon",
+"o": {
+"build": {
+"lines": [
+"don't *meet.*"
+],
+"a": 160
+}
+}
+}
+},
+{
+"a": 691.637,
+"b": 695.257,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Grunion · California",
+"side": "c",
+"v": "img/t30lunaen/real/beach_03.jpg",
+"ar": 1.7778,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 695.257,
+"b": 698.117,
+"k": "ilus",
+"t": "grunion",
+"p": {
+"mode": "on"
+}
+},
+{
+"a": 698.117,
+"b": 701.437,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k18_grunion.mp4",
+"rate": 0.808
+}
+},
+{
+"a": 701.437,
+"b": 706.857,
+"k": "ilus",
+"t": "grunion",
+"p": {
+"mode": "off"
+}
+},
+{
+"a": 706.857,
+"b": 711.837,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/arctic_01.jpg",
+"o": {
+"label": "Arctic · polar night",
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 711.837,
+"b": 713.837,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "zooplankton",
+"side": "c",
+"v": "img/t30lunaen/real/zoopl_01.jpg",
+"ar": 1.5059,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 713.837,
+"b": 719.657,
+"k": "ilus",
+"t": "arctic",
+"p": {
+"mode": "follow",
+"o": {
+"build": {
+"lines": [
+"The Moon was their *sun.*"
+],
+"a": 133
+}
+}
+}
+},
+{
+"a": 719.657,
+"b": 722.357,
+"k": "ilus",
+"t": "arctic",
+"p": {
+"mode": "gone"
+}
+},
+{
+"a": 722.357,
+"b": 723.817,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 11,
+"frm": 2160,
+"to": 2880,
+"title": "48 HOURS",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 11,
+"big": true
+},
+{
+"a": 723.817,
+"b": 730.915,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k09_tide_rocks.mp4",
+"rate": 0.411
+}
+},
+{
+"a": 730.915,
+"b": 734.355,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a45_port_cranes.jpg"
+}
+},
+{
+"a": 734.355,
+"b": 736.815,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/port_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 736.815,
+"b": 743.235,
+"k": "ilus",
+"t": "port",
+"p": {}
+},
+{
+"a": 743.235,
+"b": 745.435,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k20_ship_port.mp4"
+}
+},
+{
+"a": 745.435,
+"b": 748.155,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a46_fishing_night.jpg"
+}
+},
+{
+"a": 748.155,
+"b": 749.935,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k21_fishing_lamp.mp4"
+}
+},
+{
+"a": 749.935,
+"b": 753.915,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a47_net_empty.jpg"
+}
+},
+{
+"a": 753.915,
+"b": 758.455,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/lookup_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 758.455,
+"b": 760.975,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k22_stars_turn.mp4",
+"rate": 0.761
+}
+},
+{
+"a": 760.975,
+"b": 765.175,
+"k": "ilus",
+"t": "lookup",
+"p": {
+"mode": "memory"
+}
+},
+{
+"a": 765.175,
+"b": 769.295,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a49_old_books.jpg"
+}
+},
+{
+"a": 769.295,
+"b": 772.975,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/milkyway_02.jpg",
+"o": {
+"build": {
+"lines": [
+"an empty piece of *sky.*"
+],
+"a": 61
+},
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 772.975,
+"b": 780.015,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 12,
+"frm": 2880,
+"to": 4320,
+"title": "72 HOURS",
+"sub": "Three days.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 12,
+"big": true
+},
+{
+"a": 780.015,
+"b": 783.955,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "window",
+"o": {
+"build": {
+"lines": [
+"Humans are *fine.*"
+],
+"a": 2,
+"size": 100
+}
+}
+}
+},
+{
+"a": 783.955,
+"b": 787.315,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a51_power_station.jpg"
+}
+},
+{
+"a": 787.315,
+"b": 790.055,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/earthmoon_03.jpg",
+"ar": 0.7858,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 790.055,
+"b": 791.735,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/seasons_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 791.735,
+"b": 797.915,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a52_inland_town.jpg",
+"o": {
+"aside": {
+"t": "honestly? same.",
+"x": 1100,
+"y": 330,
+"a": 100
+}
+}
+}
+},
+{
+"a": 797.915,
+"b": 814.675,
+"k": "g",
+"t": "board",
+"p": {},
+"big": true
+},
+{
+"a": 814.675,
+"b": 819.135,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a53_ocean_floor.jpg"
+}
+},
+{
+"a": 819.135,
+"b": 835.375,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "spin",
+"o": {
+"build": {
+"lines": [
+"a *brake* on our spin"
+],
+"a": 304
+}
+}
+},
+"big": true
+},
+{
+"a": 835.375,
+"b": 841.455,
+"k": "g",
+"t": "daylen",
+"p": {},
+"big": true
+},
+{
+"a": 841.455,
+"b": 846.955,
+"k": "g",
+"t": "daylen",
+"p": {
+"flat": true
+},
+"big": true
+},
+{
+"a": 846.955,
+"b": 852.035,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 12,
+"frm": 4320,
+"to": 4320,
+"title": "THE FAR FUTURE",
+"sub": null,
+"far": true
+},
+"sfx": "whoosh",
+"roster": 12,
+"big": true
+},
+{
+"a": 852.035,
+"b": 860.415,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "seasons"
+},
+"big": true
+},
+{
+"a": 860.415,
+"b": 863.655,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "steady"
+},
+"big": true
+},
+{
+"a": 863.655,
+"b": 865.975,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k23_top_spin.mp4"
+}
+},
+{
+"a": 865.975,
+"b": 879.035,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "wander",
+"o": {
+"build": {
+"lines": [
+"Studies *disagree.*"
+],
+"size": 100,
+"a": 255
+},
+"aside": {
+"t": "nobody knows.",
+"x": 1200,
+"y": 700,
+"a": 359
+}
+}
+},
+"big": true
+},
+{
+"a": 879.035,
+"b": 884.115,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/glacier_01.jpg",
+"ar": 1.25,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 884.115,
+"b": 885.135,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a55_summer_heat.jpg"
+}
+},
+{
+"a": 885.135,
+"b": 886.395,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a56_winter_snow.jpg"
+}
+},
+{
+"a": 886.395,
+"b": 888.535,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k24_ice_calve.mp4"
+}
+},
+{
+"a": 888.535,
+"b": 891.755,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a57_ice_moving.jpg",
+"o": {
+"build": {
+"lines": [
+"Not in your *lifetime.*"
+],
+"a": 53
+}
+}
+}
+},
+{
+"a": 891.755,
+"b": 895.415,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/real/stroma_01.png",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 895.415,
+"b": 907.255,
+"k": "ilus",
+"t": "myth",
+"p": {
+"o": {
+"build": {
+"lines": [
+"one *myth.*"
+],
+"a": 2,
+"size": 110
+}
+}
+}
+},
+{
+"a": 907.255,
+"b": 910.495,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/craters_02.jpg",
+"ar": 1.0317,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 910.495,
+"b": 913.055,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a58_crater_closeup.jpg"
+}
+},
+{
+"a": 913.055,
+"b": 929.155,
+"k": "ilus",
+"t": "vanish",
+"p": {
+"sea": true,
+"at": -10,
+"o": {
+"build": {
+"lines": [
+"a quieter, *darker* planet."
+],
+"a": 159
+}
+}
+}
+},
+{
+"a": 929.155,
+"b": 932.655,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "What would you miss the most?",
+"bell": false
+}
+},
+{
+"a": 932.655,
+"b": 936.575,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/t30lunaen/real/moonlit_04.jpg",
+"cards": [
+"img/t30lunaen/real/fullmoon_03.jpg",
+"img/t30lunaen/real/lunarecl_01.jpg",
+"img/t30lunaen/real/harbor_02.jpg"
+],
+"o": {
+"credit": "Wikimedia Commons · public domain / CC"
+}
+}
+},
+{
+"a": 936.575,
+"b": 948.175,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "What should break next? Most voted goes next.",
+"bell": false
+}
+},
+{
+"a": 948.175,
+"b": 954.335,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "space",
+"o": {
+"build": {
+"lines": [
+"Next week:",
+"the Earth *stops spinning.*"
+],
+"a": 2,
+"y": 360,
+"size": 96
+}
+}
+}
+},
+{
+"a": 954.335,
+"b": 958.675,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaen/real/earthrise_02.jpg",
+"ar": 1.0191,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 958.675,
+"b": 961.615,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Subscribe + bell so you don't miss it."
+}
+},
+{
+"a": 961.615,
+"b": 963.935,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaen/ag/t30lunaen_a01_window_moon.jpg",
+"o": {
+"build": {
+"lines": [
+"Look up *tonight.*"
+],
+"a": 49
+}
+}
+}
+},
+{
+"a": 963.935,
+"b": 966.43,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaen/t30lunaen_k01_moon_clouds.mp4",
+"o": {
+"build": {
+"lines": [
+"While it's still *there.*"
+],
+"a": 2
+}
+}
+}
+}
+],
+"stops": [
+{
+"a": 96.3,
+"b": 96.3,
+"m0": 0,
+"m1": 1
+},
+{
+"a": 100.1,
+"b": 165.92,
+"m0": 1,
+"m1": 13
+},
+{
+"a": 167.0,
+"b": 225.5,
+"m0": 13,
+"m1": 43
+},
+{
+"a": 226.78,
+"b": 263.078,
+"m0": 43,
+"m1": 103
+},
+{
+"a": 267.338,
+"b": 338.138,
+"m0": 103,
+"m1": 193
+},
+{
+"a": 340.618,
+"b": 398.118,
+"m0": 193,
+"m1": 343
+},
+{
+"a": 400.958,
+"b": 467.538,
+"m0": 343,
+"m1": 523
+},
+{
+"a": 470.878,
+"b": 508.917,
+"m0": 523,
+"m1": 883
+},
+{
+"a": 511.437,
+"b": 584.397,
+"m0": 883,
+"m1": 1440
+},
+{
+"a": 591.517,
+"b": 646.817,
+"m0": 1440,
+"m1": 2160
+},
+{
+"a": 649.157,
+"b": 722.357,
+"m0": 2160,
+"m1": 2880
+},
+{
+"a": 723.817,
+"b": 772.975,
+"m0": 2880,
+"m1": 4320
+},
+{
+"a": 780.015,
+"b": 846.955,
+"m0": 4320,
+"m1": 4350
+}
+]
+}
