@@ -104,7 +104,7 @@ export const NoSign: React.FC<{ t: number; at: number; out: number; text: string
 };
 
 // el error N°: tarjeta grande con el número que se estampa y la frase
-export const MistakeCard: React.FC<{ t: number; at: number; out: number; n: number; text: string; x?: number; y?: number }> = ({ t, at, out, n, text, x = 560, y = 250 }) => {
+export const MistakeCard: React.FC<{ t: number; at: number; out: number; n: number; text: string; x?: number; y?: number }> = ({ t, at, out, n, text, x = 560, y = 900 }) => {
   const o = vis(t, at, out); if (o <= 0.01) return null;
   const k = Math.min(1.1, spr(t, at, 1.2));
   return <Abs x={x} y={y} o={o} tr={`perspective(1000px) rotateX(${(1 - Math.min(1, k)) * 80}deg) rotate(-2deg)`}>
