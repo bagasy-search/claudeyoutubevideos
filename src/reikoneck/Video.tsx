@@ -291,149 +291,149 @@ export const Video: React.FC = () => {
 
   // ===== GANCHO =====
   if (inW("w:bustS") && t < 20) { const c = P2(PT.chin); L.push(<Tag key="cam" t={t} at={F("from your hand") - 0.2} x={c.x} y={c.y} dx={-360} dy={-200} text="THE PHONE CAMERA" sub="LOOKING UP AT YOU" col={COL.amber} out={F("and there it is") - 0.1} size={52} />); }
-  tagAt("fold", "that soft fold", 10, PT.chin, "THE FOLD", { col: COL.red, dur: 2.6 });
-  tagAt("bands", "the two little bands", 10, PT.neck, "TWO LITTLE BANDS", { col: COL.amber, dur: 2.4, dx: -330 });
-  quote("when", "when did this happen", 20, "WHEN DID THIS HAPPEN?", { size: 92 });
-  chip("scarf", "wearing a scarf in july", 40, "A SCARF… IN JULY", false, 3.2);
-  quote("age", "this is just my age", 40, "“THIS IS JUST MY AGE”", { size: 78, col: "#ffd9b8" });
-  big("25y", "i worked 25 years", 50, "25 YEARS", { sub: "A BEAUTY SALON IN OSAKA", col: "#ffd9b8", edge: "#5a3a24" });
-  big("6070", "60 70 75 years old", 55, "60 · 70 · 75", { col: "#ffffff" });
-  chip("notn", "not that turkey neck", 60, "NOT THE TURKEY NECK", true, 3.4);
-  rows("luck", [["not because they are lucky", 70, "LUCKY", false], ["not because they have surgery", 70, "SURGERY", false]], 2.6);
-  rows("days", [["how you wash it", 85, "HOW YOU WASH IT", true], ["how you sleep", 85, "HOW YOU SLEEP ON IT", true], ["look at your phone", 85, "HOW YOU HOLD YOUR PHONE", true], ["where your sunscreen stops", 85, "WHERE YOUR SUNSCREEN STOPS", true]], 2.4, 200);
-  stamp("bor", "nobody can sell you a boring thing", 95, "NOBODY SELLS BORING", { size: 80 });
+  tagAt("fold", "that soft fold", 17, PT.chin, "THE FOLD", { col: COL.red, dur: 2.6 });
+  tagAt("bands", "the two little bands", 19, PT.neck, "TWO LITTLE BANDS", { col: COL.amber, dur: 2.4, dx: -330 });
+  quote("when", "when did this happen", 30, "WHEN DID THIS HAPPEN?", { size: 92 });
+  chip("scarf", "wearing a scarf in july", 47, "A SCARF… IN JULY", false, 3.2);
+  quote("age", "this is just my age", 50, "“THIS IS JUST MY AGE”", { size: 78, col: "#ffd9b8" });
+  big("25y", "i worked 25 years", 56, "25 YEARS", { sub: "A BEAUTY SALON IN OSAKA", col: "#ffd9b8", edge: "#5a3a24" });
+  big("6070", "60 70 75 years old", 66, "60 · 70 · 75", { col: "#ffffff" });
+  chip("notn", "not that turkey neck", 71, "NOT THE TURKEY NECK", true, 3.4);
+  rows("luck", [["not because they are lucky", 81, "LUCKY", false], ["not because they have surgery", 84, "SURGERY", false]], 2.6);
+  rows("days", [["how you wash it", 98, "HOW YOU WASH IT", true], ["how you sleep", 99, "HOW YOU SLEEP ON IT", true], ["look at your phone", 101, "HOW YOU HOLD YOUR PHONE", true], ["where your sunscreen stops", 102, "WHERE YOUR SUNSCREEN STOPS", true]], 2.4, 200);
+  stamp("bor", "nobody can sell you a boring thing", 109, "NOBODY SELLS BORING", { size: 80 });
   big("nine", "9 things we do in japan", 100, "9", { size: 300, y: 470, col: "#ffd9b8", edge: "#5a3a24", sub: "THINGS WE DO IN JAPAN AFTER 50", dur: 6.5 });
-  chip("free", "the first one costs nothing", 110, "#1 COSTS NOTHING", true, 2.6);
-  chip("gma", "something my grandmother did", 115, "#9 · MY GRANDMOTHER, EVERY DAY", true, 3.2);
+  chip("free", "the first one costs nothing", 119, "#1 COSTS NOTHING", true, 2.6);
+  chip("gma", "something my grandmother did", 125, "#9 · MY GRANDMOTHER, EVERY DAY", true, 3.2);
 
   // ===== QUIÉN SOY =====
-  { const a = F("my name is reiko", 125); L.push(<LowerThird key="lt" t={t} at={a + 0.2} out={a + 6.5} name="REIKO TANAKA" l2="ESTHETICIAN · 25 YEARS · OSAKA" l2at={a + 1.4} />); }
-  tagAt("six", "six chairs and one very old", 130, PT.radio, "6 CHAIRS · 1 OLD RADIO", { col: COL.amber, dur: 3.4 });
-  chip("nd", "i am not a doctor", 140, "NOT A DOCTOR · NO MIRACLES", false, 3.4);
-  rows("hands", [["with my hands on real women", 145, "WHAT I SAW CHANGE", true], ["i saw not change", 150, "WHAT I SAW NOT CHANGE", false]], 2.6);
-  stamp("lies", "things that are not true about the neck", 155, "NOT TRUE", { size: 120 });
-  tagAt("wr", "this is my washroom", 160, PT.mirror, "MY WASHROOM", { sub: "VERY SMALL, SORRY", col: "#fff", dur: 3.4 });
+  { const a = F("my name is reiko", 134); L.push(<LowerThird key="lt" t={t} at={a + 0.2} out={a + 6.5} name="REIKO TANAKA" l2="ESTHETICIAN · 25 YEARS · OSAKA" l2at={a + 1.4} />); }
+  tagAt("six", "six chairs and one very old", 144, PT.radio, "6 CHAIRS · 1 OLD RADIO", { col: COL.amber, dur: 3.4 });
+  chip("nd", "i am not a doctor", 148, "NOT A DOCTOR · NO MIRACLES", false, 3.4);
+  rows("hands", [["with my hands on real women", 155, "WHAT I SAW CHANGE", true], ["i saw not change", 160, "WHAT I SAW NOT CHANGE", false]], 2.6);
+  stamp("lies", "things that are not true about the neck", 166, "NOT TRUE", { size: 120 });
+  tagAt("wr", "this is my washroom", 170, PT.mirror, "MY WASHROOM", { sub: "VERY SMALL, SORRY", col: "#fff", dur: 3.4 });
 
   // ===== 1 · TOALLA TIBIA =====
-  title("t1", "thing number one the warm towel", 170, "1", "THE WARM TOWEL");
-  tagAt("osh", "we call it oshibori", 172, null, "OSHIBORI", { sub: "おしぼり · THE LITTLE WET TOWEL", col: COL.amber, dur: 4 });
-  big("40c", "about 40 degrees", 180, "40 °C", { sub: "LIKE A BATH YOU CAN SIT IN", col: "#ffd9b8", edge: "#5a3a24", dur: 4.2 });
-  chip("nh", "not hot never hot", 185, "NOT HOT. NEVER HOT.", false, 3);
-  tagAt("wrist", "inside of your wrist", 190, PT.sink, "TEST ON YOUR WRIST", { col: COL.amber, dur: 4 });
-  quote("tw", "twist until no water", 200, "TWIST · TWIST", { size: 96, dur: 2.4 });
-  L.push(<Stopwatch key="sw1" t={t} at={F("one minute maybe two", 210)} out={F("one minute maybe two", 210) + 4} x={1400} y={300} n={2} unit="MIN" label="UNTIL IT'S NOT WARM" />);
-  tagAt("sh", "the shoulders come down", 225, PT.collar, "SHOULDERS DOWN ~1 CM", { col: G, dur: 3.6 });
-  chip("drk", "it drinks better", 235, "DAMP SKIN DRINKS BETTER", true, 3.4);
-  quote("fav", "their favorite part", 250, "“MY FAVORITE PART”", { size: 84 });
-  big("2m", "minutes it costs nothing", 260, "2 MIN · $0", { col: G, edge: "#0b3a22" });
-  big("11y", "every month for 11 years", 265, "11 YEARS", { sub: "EVERY MONTH", dur: 3 });
-  tagAt("bank", "worked in a bank", 270, null, "A LADY FROM THE BANK", { sub: "NEAR THE STATION", dur: 3.4 });
-  quote("ns", "nobody touched my neck", 290, "“NOBODY TOUCHED MY NECK IN SO MANY YEARS”", { size: 70, dur: 5 });
-  quote("lg", "same skin just longer", 300, "SAME SKIN. JUST LONGER.", { col: G, size: 86 });
+  title("t1", "thing number one the warm towel", 177, "1", "THE WARM TOWEL");
+  tagAt("osh", "we call it oshibori", 180, null, "OSHIBORI", { sub: "おしぼり · THE LITTLE WET TOWEL", col: COL.amber, dur: 4 });
+  big("40c", "about 40 degrees", 195, "40 °C", { sub: "LIKE A BATH YOU CAN SIT IN", col: "#ffd9b8", edge: "#5a3a24", dur: 4.2 });
+  chip("nh", "not hot never hot", 201, "NOT HOT. NEVER HOT.", false, 3);
+  tagAt("wrist", "inside of your wrist", 204, PT.sink, "TEST ON YOUR WRIST", { col: COL.amber, dur: 4 });
+  quote("tw", "twist until no water", 216, "TWIST · TWIST", { size: 96, dur: 2.4 });
+  L.push(<Stopwatch key="sw1" t={t} at={F("one minute maybe two", 228)} out={F("one minute maybe two", 228) + 4} x={1400} y={300} n={2} unit="MIN" label="UNTIL IT'S NOT WARM" />);
+  tagAt("sh", "the shoulders come down", 239, PT.collar, "SHOULDERS DOWN ~1 CM", { col: G, dur: 3.6 });
+  chip("drk", "it drinks better", 249, "DAMP SKIN DRINKS BETTER", true, 3.4);
+  quote("fav", "their favorite part", 262, "“MY FAVORITE PART”", { size: 84 });
+  big("2m", "minutes it costs nothing", 270, "2 MIN · $0", { col: G, edge: "#0b3a22" });
+  big("11y", "every month for 11 years", 275, "11 YEARS", { sub: "EVERY MONTH", dur: 3 });
+  tagAt("bank", "worked in a bank", 278, null, "A LADY FROM THE BANK", { sub: "NEAR THE STATION", dur: 3.4 });
+  quote("ns", "nobody touched my neck", 296, "“NOBODY TOUCHED MY NECK IN SO MANY YEARS”", { size: 70, dur: 5 });
+  quote("lg", "same skin just longer", 307, "SAME SKIN. JUST LONGER.", { col: G, size: 86 });
 
   // ===== 2 · AGUA TIBIA, NUNCA FROTAR =====
-  title("t2", "thing number two", 305, "2", "LUKEWARM WATER · NEVER RUB");
-  rows("hr", [["in a hot shower", 310, "VERY HOT SHOWER", false], ["rub rub rub", 315, "RUB, RUB, RUB", false]], 3);
-  rows("thin", [["is thinner than the skin on your face", 330, "THINNER THAN YOUR FACE", false], ["fewer oil glands", 330, "FEWER OIL GLANDS", false]], 3.2);
-  tagAt("lk", "with lukewarm water", 340, null, "LUKEWARM · HANDS ONLY", { col: G, dur: 4 });
-  chip("fm", "the foam does the work", 350, "THE FOAM DOES THE WORK", true, 3);
-  quote("pl", "press lift press lift", 360, "PRESS · LIFT · PRESS · LIFT", { size: 84, col: G });
-  quote("silk", "treat your neck like silk", 370, "LIKE SILK, NOT THE KITCHEN FLOOR", { size: 74, col: "#ffd9b8", dur: 4 });
+  title("t2", "thing number two", 310, "2", "LUKEWARM WATER · NEVER RUB");
+  rows("hr", [["in a hot shower", 320, "VERY HOT SHOWER", false], ["rub rub rub", 325, "RUB, RUB, RUB", false]], 3);
+  rows("thin", [["is thinner than the skin on your face", 333, "THINNER THAN YOUR FACE", false], ["fewer oil glands", 337, "FEWER OIL GLANDS", false]], 3.2);
+  tagAt("lk", "with lukewarm water", 349, null, "LUKEWARM · HANDS ONLY", { col: G, dur: 4 });
+  chip("fm", "the foam does the work", 355, "THE FOAM DOES THE WORK", true, 3);
+  quote("pl", "press lift press lift", 366, "PRESS · LIFT · PRESS · LIFT", { size: 84, col: G });
+  quote("silk", "treat your neck like silk", 373, "LIKE SILK, NOT THE KITCHEN FLOOR", { size: 74, col: "#ffd9b8", dur: 4, y: 880 });
 
   // ===== 3 · LA CARA TERMINA EN LA CLAVÍCULA =====
-  title("t3", "thing number three", 375, "3", "THE FACE ENDS AT THE COLLARBONE");
-  tagAt("jaw", "doesnt end here at the jaw", 385, PT.chin, "NOT HERE", { col: COL.red, dur: 2.6, dx: -330 });
-  tagAt("clv", "the face ends here at the collarbone", 385, PT.collar, "HERE", { col: G, dur: 4, size: 70 });
-  stamp("lo", "like leftovers", 415, "LEFTOVERS", { size: 130 });
-  rows("5070", [["the face looks 50", 420, "FACE: 50", true], ["the neck looks 70", 420, "NECK: 70", false]], 3, 230);
-  chip("same", "same amount for the neck", 430, "SAME AMOUNT AS THE CHEEKS", true, 4);
+  title("t3", "thing number three", 378, "3", "THE FACE ENDS AT THE COLLARBONE");
+  tagAt("jaw", "doesnt end here at the jaw", 390, PT.chin, "NOT HERE", { col: COL.red, dur: 2.6, dx: -330 });
+  tagAt("clv", "the face ends here at the collarbone", 392, PT.collar, "HERE", { col: G, dur: 4, size: 70 });
+  stamp("lo", "like leftovers", 421, "LEFTOVERS", { size: 130 });
+  rows("5070", [["the face looks 50", 427, "FACE: 50", true], ["the neck looks 70", 429, "NECK: 70", false]], 3, 230);
+  chip("same", "same amount for the neck", 435, "SAME AMOUNT AS THE CHEEKS", true, 4);
 
   // ===== 4 · ACEITE DE CAMELIA =====
-  title("t4", "tip number 4", 445, "4", "CAMELLIA OIL · WHICH WAY YOUR HANDS GO");
-  tagAt("tsu", "this is tsubaki oil", 450, PT.oil, "TSUBAKI · 椿", { sub: "CAMELLIA OIL", col: COL.amber, dur: 4 });
+  title("t4", "tip number 4", 443, "4", "CAMELLIA OIL · WHICH WAY YOUR HANDS GO");
+  tagAt("tsu", "this is tsubaki oil", 448, PT.oil, "TSUBAKI · 椿", { sub: "CAMELLIA OIL", col: COL.amber, dur: 4 });
   big("2d", "two drops only two", 470, "2 DROPS", { col: "#ffd9b8", edge: "#5a3a24" });
-  tagAt("up", "front of the neck i go up", 480, PT.neck, "FRONT: UP ↑", { col: G, dur: 4 });
-  L.push(<Stopwatch key="sw10" t={t} at={F("slowly 10 times", 485)} out={F("slowly 10 times", 485) + 3.6} x={1400} y={300} n={10} unit="×" label="SLOWLY" />);
+  tagAt("up", "front of the neck i go up", 478, PT.neck, "FRONT: UP ↑", { col: G, dur: 4 });
+  L.push(<Stopwatch key="sw10" t={t} at={F("slowly ten times", 486)} out={F("slowly ten times", 486) + 3.6} x={1400} y={300} n={10} unit="×" label="SLOWLY" />);
   quote("pap", "smoothing a sheet of paper", 490, "SMOOTHING PAPER, NOT PUSHING DOUGH", { size: 70 });
-  tagAt("dn", "from behind the ear i go down", 500, null, "SIDES: DOWN ↓", { col: COL.amber, dur: 4 });
-  rows("dir", [["behind the ear down", 508, "BEHIND THE EAR → DOWN", true], ["front of the neck up", 508, "FRONT OF THE NECK → UP", true]], 3);
+  tagAt("dn", "from behind the ear i go down", 497, null, "SIDES: DOWN ↓", { col: COL.amber, dur: 4 });
+  rows("dir", [["behind the ear down", 508, "BEHIND THE EAR → DOWN", true], ["front of the neck up", 510, "FRONT OF THE NECK → UP", true]], 3);
   tagAt("jar", "in beautiful jars", 518, null, "EXPENSIVE · BEAUTIFUL JARS", { col: COL.amber, dur: 3.4 });
-  quote("hab", "the habits around the jar", 538, "IT'S THE HABITS AROUND THE JAR", { col: G, size: 78 });
-  { const a = F("your turkey neck will be lifted", 545); L.push(<Chip key="10d" t={t} at={a - 1.2} out={a + 2.5} text="“10 DAYS = LIFTED”" />); }
-  stamp("no", "no", 553, "NO.", { size: 200, y: 460, dur: 2.2 });
-  rows("does", [["the skin stays soft", 560, "STAYS SOFT", true], ["it stays moisturized", 560, "STAYS MOISTURIZED", true], ["you stop pulling it down", 560, "STOP PULLING IT DOWN", true]], 3);
-  chip("nm", "its not magic", 570, "NOT MAGIC. I WON'T LIE TO YOU.", false, 3.4);
+  quote("hab", "the habits around the jar", 537, "IT'S THE HABITS AROUND THE JAR", { col: G, size: 78 });
+  { const a = F("your turkey neck will be lifted", 546); L.push(<Chip key="10d" t={t} at={a - 1.2} out={a + 2.5} text="“10 DAYS = LIFTED”" />); }
+  stamp("no", "no", 548, "NO.", { size: 200, y: 460, dur: 2.2 });
+  rows("does", [["the skin stays soft", 557, "STAYS SOFT", true], ["it stays moisturized", 558, "STAYS MOISTURIZED", true], ["you stop pulling it down", 560, "STOP PULLING IT DOWN", true]], 3);
+  chip("nm", "its not magic", 565, "NOT MAGIC. I WON'T LIE TO YOU.", false, 3.4);
 
   // ===== 5 · EL PROTECTOR NO TERMINA EN EL MENTÓN =====
-  title("t5", "thing number five", 574, "5", "SUNSCREEN DOESN'T STOP AT THE CHIN");
-  chip("one", "if you only do one", 580, "IF YOU DO ONLY ONE, DO THIS ONE", true, 3.6);
-  big("40y", "for 40 years", 588, "40 YEARS OF SUN", { col: "#ffd27a", edge: "#5a4500" });
-  rows("2age", [["it looked older", 590, "SUN SIDE: OLDER", false], ["it looked younger", 595, "SHADOW: YOUNGER", true]], 3);
-  quote("2a", "two different ages", 600, "SAME NECK. TWO AGES.", { size: 86 });
-  rows("ss", [["and then down the neck", 610, "FACE → NECK", true], ["the back of", 612, "SIDES + BACK", true], ["the top of the chest", 615, "TOP OF THE CHEST", true]], 2.6, 220);
-  chip("cl", "even when its cloudy", 620, "CLOUDY · WINTER · EVERY MORNING", true, 3.4);
-  tagAt("hg", "the higasa", 625, null, "HIGASA · 日傘", { sub: "THE SUN UMBRELLA", col: COL.amber, dur: 4 });
-  quote("why", "this is why", 638, "THIS IS WHY.", { size: 100 });
-  tagAt("shd", "give your neck some shade", 640, PT.neck, "SCARF · COLLAR · SHADE", { col: G, dur: 3.6 });
+  title("t5", "thing number five", 568, "5", "SUNSCREEN DOESN'T STOP AT THE CHIN");
+  chip("one", "if you only do one", 576, "IF YOU DO ONLY ONE, DO THIS ONE", true, 3.6);
+  big("40y", "for 40 years", 586, "40 YEARS OF SUN", { col: "#ffd27a", edge: "#5a4500" });
+  rows("2age", [["it looked older", 588, "SUN SIDE: OLDER", false], ["it looked younger", 593, "SHADOW: YOUNGER", true]], 3);
+  quote("2a", "two different ages", 596, "SAME NECK. TWO AGES.", { size: 86 });
+  rows("ss", [["and then down the neck", 608, "FACE → NECK", true], ["the back of", 611, "SIDES + BACK", true], ["the top of the chest", 612, "TOP OF THE CHEST", true]], 2.6, 220);
+  chip("cl", "even when its cloudy", 615, "CLOUDY · WINTER · EVERY MORNING", true, 3.4);
+  tagAt("hg", "the higasa", 621, null, "HIGASA · 日傘", { sub: "THE SUN UMBRELLA", col: COL.amber, dur: 4 });
+  quote("why", "this is why", 631, "THIS IS WHY.", { size: 100 });
+  tagAt("shd", "give your neck some shade", 638, PT.neck, "SCARF · COLLAR · SHADE", { col: G, dur: 3.6 });
 
   // ===== 6 · EL CELULAR ARRIBA =====
-  title("t6", "thing number six", 648, "6", "BRING THE PHONE UP TO YOUR EYES");
-  quote("hlp", "the phone is helping to make it", 655, "THE PHONE HELPS MAKE IT", { col: "#ff8a7a", size: 84 });
-  tagAt("bend", "the skin of your neck is folding", 665, PT.chin, "FOLDING IN THE SAME PLACE", { col: COL.red, dur: 4 });
-  rows("hrs", [["one hour two hours", 670, "1 HOUR · 2 HOURS · 3 HOURS", false], ["every day that fold", 672, "EVERY DAY", false]], 3);
-  tagAt("smn", "smartphone neck", 685, null, "SUMAHO-KUBI · スマホ首", { sub: "SMARTPHONE NECK", col: COL.amber, dur: 4 });
-  tagAt("eye", "two hands up here", 695, PT.head, "UP TO YOUR EYES", { col: G, dur: 3.6, dx: -330 });
-  big("1000", "a thousand times a day", 705, "1,000× A DAY", { col: "#ff8a7a", edge: "#4a0c08" });
-  chip("tdy", "try it today", 712, "TRY IT TODAY", true, 3.2);
-  tagAt("dct", "two old dictionaries", 735, PT.dicts, "TWO OLD DICTIONARIES", { col: COL.amber, dur: 4 });
-  quote("ntd", "just not tired", 750, "“NOT YOUNGER. JUST NOT TIRED.”", { size: 76 });
+  title("t6", "thing number six", 639, "6", "BRING THE PHONE UP TO YOUR EYES");
+  quote("hlp", "the phone is helping to make it", 652, "THE PHONE HELPS MAKE IT", { col: "#ff8a7a", size: 84 });
+  tagAt("bend", "the skin of your neck is folding", 663, PT.chin, "FOLDING IN THE SAME PLACE", { col: COL.red, dur: 4 });
+  rows("hrs", [["one hour two hours", 667, "1 HOUR · 2 HOURS · 3 HOURS", false], ["every day that fold", 671, "EVERY DAY", false]], 3);
+  tagAt("smn", "smartphone neck", 680, null, "SUMAHO-KUBI · スマホ首", { sub: "SMARTPHONE NECK", col: COL.amber, dur: 4 });
+  tagAt("eye", "two hands up here", 691, PT.head, "UP TO YOUR EYES", { col: G, dur: 3.6, dx: -330 });
+  big("1000", "a thousand times a day", 701, "1,000× A DAY", { col: "#ff8a7a", edge: "#4a0c08" });
+  chip("tdy", "try it today", 703, "TRY IT TODAY", true, 3.2);
+  tagAt("dct", "two old dictionaries", 732, PT.dicts, "TWO OLD DICTIONARIES", { col: COL.amber, dur: 4 });
+  quote("ntd", "just not tired", 742, "“NOT YOUNGER. JUST NOT TIRED.”", { size: 76 });
 
   // ===== 7 · ALMOHADA BAJA =====
-  title("t7", "thing number seven", 755, "7", "A LOW PILLOW");
-  tagAt("8h", "chin to chest folded", 768, PT.pillow, "CHIN TO CHEST · 8 HOURS", { col: COL.red, dur: 4 });
-  tagAt("sbk", "sobakawa", 775, null, "SOBAKAWA · そば殻", { sub: "BUCKWHEAT HUSKS", col: COL.amber, dur: 4 });
-  tagAt("str", "it keeps the neck straight", 785, PT.pillow, "STRAIGHT, IN LINE WITH THE BACK", { col: G, dur: 4 });
-  chip("onep", "take one pillow away", 795, "TAKE ONE PILLOW AWAY", true, 3.4);
-  tagAt("rt", "a small rolled towel", 800, PT.pillow, "A SMALL ROLLED TOWEL", { col: G, dur: 4, dx: -330 });
+  title("t7", "thing number seven", 745, "7", "A LOW PILLOW");
+  tagAt("8h", "chin to chest folded", 761, PT.pillow, "CHIN TO CHEST · 8 HOURS", { col: COL.red, dur: 4 });
+  tagAt("sbk", "soba cover", 770, null, "SOBAKAWA · そば殻", { sub: "BUCKWHEAT HUSKS", col: COL.amber, dur: 4 });
+  tagAt("str", "it keeps the neck straight", 779, PT.pillow, "STRAIGHT, IN LINE WITH THE BACK", { col: G, dur: 4 });
+  chip("onep", "take one pillow away", 789, "TAKE ONE PILLOW AWAY", true, 3.4);
+  tagAt("rt", "a small rolled towel", 796, PT.pillow, "A SMALL ROLLED TOWEL", { col: G, dur: 4, dx: -330 });
 
   // ===== 8 · BESAR EL TECHO =====
-  title("t8", "thing number 8", 815, "8", "KISS THE CEILING");
-  rows("kc", [["sit straight or stand", 825, "SIT STRAIGHT", true], ["shoulders down", 828, "SHOULDERS DOWN", true], ["slowly look up", 830, "LOOK UP · LIPS FORWARD", true]], 2.6);
-  L.push(<Stopwatch key="sw5" t={t} at={F("hold it", 838)} out={F("hold it", 838) + 4} x={1400} y={300} n={5} label="HOLD IT" />);
-  tagAt("frn", "the front of your neck working", 840, PT.neck, "THE FRONT IS WORKING", { col: G, dur: 3.4 });
-  big("10x", "10 times in the morning", 845, "10× EVERY MORNING", { col: G, edge: "#0b3a22" });
-  tagAt("tng", "tongue flat", 855, null, "TONGUE ON THE ROOF · SWALLOW", { col: COL.amber, dur: 4.4 });
-  chip("bus", "nobody can see you do it", 868, "NOBODY CAN SEE YOU DO IT", true, 3.4);
-  chip("hon", "exercise doesnt remove loose skin", 872, "IT DOESN'T REMOVE LOOSE SKIN", false, 4);
-  quote("awk", "more firm more awake", 880, "MORE FIRM · MORE AWAKE", { col: G, size: 84 });
+  title("t8", "thing number 8", 812, "8", "KISS THE CEILING");
+  rows("kc", [["sit straight or stand", 820, "SIT STRAIGHT", true], ["shoulders down", 822, "SHOULDERS DOWN", true], ["slowly look up", 823, "LOOK UP · LIPS FORWARD", true]], 2.6);
+  L.push(<Stopwatch key="sw5" t={t} at={F("hold it", 831)} out={F("hold it", 831) + 4} x={1400} y={300} n={5} label="HOLD IT" />);
+  tagAt("frn", "the front of your neck working", 834, PT.neck, "THE FRONT IS WORKING", { col: G, dur: 3.4 });
+  big("10x", "10 times in the morning", 839, "10× EVERY MORNING", { col: G, edge: "#0b3a22" });
+  tagAt("tng", "tongue flat", 851, null, "TONGUE ON THE ROOF · SWALLOW", { col: COL.amber, dur: 4.4 });
+  chip("bus", "nobody can see you do it", 862, "NOBODY CAN SEE YOU DO IT", true, 3.4);
+  chip("hon", "exercise doesnt remove loose skin", 867, "IT DOESN'T REMOVE LOOSE SKIN", false, 4);
+  quote("awk", "more firm more awake", 875, "MORE FIRM · MORE AWAKE", { col: G, size: 84 });
 
   // ===== 9 · LA NUCA =====
-  title("t9", "show your nape like my grandmother", 895, "9", "SHOW YOUR NAPE LIKE MY GRANDMOTHER", 4.6);
-  tagAt("unj", "unaji we say", 912, PT.nape, "UNAJI · うなじ", { sub: "THE NAPE", col: COL.amber, dur: 4 });
-  quote("nf", "not the face the back", 915, "NOT THE FACE. THE BACK OF THE NECK.", { size: 72 });
-  tagAt("strg", "like a string is pulling", 925, PT.head, "A STRING PULLS YOU UP", { col: G, dur: 4, dx: -330 });
-  quote("obc", "nobody is looking at your neck", 940, "“OBAACHAN, NOBODY IS LOOKING”", { size: 72 });
-  quote("ila", "i am looking at it", 945, "“I AM LOOKING AT IT.”", { col: "#ffd9b8", size: 96 });
-  big("91", "she was 91", 948, "91", { size: 260, y: 430, sub: "LONG, STRAIGHT, NO FOLD", col: "#ffd9b8", edge: "#5a3a24", dur: 4.4 });
-  big("10s", "for 10 seconds", 960, "10 SECONDS", { sub: "EVERY MORNING, THIS MIRROR" });
+  title("t9", "show your nape like my grandmother", 1006, "9", "SHOW YOUR NAPE LIKE MY GRANDMOTHER", 4.6);
+  tagAt("unj", "unaji we say", 906, PT.nape, "UNAJI · うなじ", { sub: "THE NAPE", col: COL.amber, dur: 4 });
+  quote("nf", "not the face the back", 912, "NOT THE FACE. THE BACK OF THE NECK.", { size: 72 });
+  tagAt("strg", "like a string is pulling", 921, PT.head, "A STRING PULLS YOU UP", { col: G, dur: 4, dx: -330 });
+  quote("obc", "nobody is looking at your neck", 934, "“OBAACHAN, NOBODY IS LOOKING”", { size: 72 });
+  quote("ila", "i am looking at it", 938, "“I AM LOOKING AT IT.”", { col: "#ffd9b8", size: 96 });
+  big("91", "she was 91", 939, "91", { size: 260, y: 430, sub: "LONG, STRAIGHT, NO FOLD", col: "#ffd9b8", edge: "#5a3a24", dur: 4.4 });
+  big("10s", "for 10 seconds", 956, "10 SECONDS", { sub: "EVERY MORNING, THIS MIRROR" });
 
   // ===== REPASO =====
   {
     const R: [string, string][] = [["the warm towel", "THE WARM TOWEL · 2 MIN"], ["lukewarm water and you press", "LUKEWARM · PRESS, NEVER RUB"], ["the face ends at the collarbone", "FACE ENDS AT THE COLLARBONE"], ["two drops of oil", "2 DROPS · FRONT UP, SIDES DOWN"], ["sunscreen all the way down", "SUNSCREEN ALL THE WAY DOWN"], ["up to your eyes", "PHONE UP TO YOUR EYES"], ["a lower pillow", "A LOWER PILLOW"], ["kiss the ceiling", "KISS THE CEILING"], ["show your nape like my grandmother", "SHOW YOUR NAPE"]];
-    let after = F("thats the nine", 970);
+    let after = F("thats the nine", 971);
     const ts = R.map(([ph]) => { const a = F(ph, after); after = a + 0.2; return a; });
     ts.forEach((a, i) => { const out = i < 8 ? ts[i + 1] - 0.1 : a + 3; L.push(<PlaceTitle key={"r" + i} t={t} at={a - 0.6} out={out} n={String(i + 1)} name={R[i][1]} lbl="THING" />); });
   }
   big("3d", "for three days and then you stop", 1010, "3 DAYS… THEN STOP", { col: "#ff8a7a", edge: "#4a0c08", dur: 3 });
-  rows("pk2", [["the warm towel and the sunscreen", 1020, "THE WARM TOWEL", true], ["and the sunscreen", 1020, "THE SUNSCREEN", true]], 3.6);
-  big("1mo", "every day for one month", 1025, "1 MONTH", { sub: "THEN ADD ONE MORE", col: G, edge: "#0b3a22" });
+  rows("pk2", [["the warm towel and the sunscreen", 1020, "THE WARM TOWEL", true], ["and the sunscreen", 1021, "THE SUNSCREEN", true]], 3.6);
+  big("1mo", "every day for one month", 1024, "1 MONTH", { sub: "THEN ADD ONE MORE", col: G, edge: "#0b3a22" });
   chip("doc", "a lump a swelling", 1035, "LUMP · SWELLING · PAIN → SEE YOUR DOCTOR", false, 8);
 
   // ===== CTA: suscribirse + campanita + UNA pregunta =====
-  { const a = F("subscribe to the channel", 1050); L.push(<Subscribe key="sub" t={t} at={a - 0.3} bell={F("press the little bell", a)} out={a + 7.5} />); }
-  tagAt("nx", "next week is the hands", 1060, null, "NEXT WEEK: THE HANDS", { sub: "AFTER WASHING THE DISHES…", col: COL.amber, dur: 9 });
-  { const a = F("tell me one thing in the comments", 1075); L.push(<Comment key="cm" t={t} at={a} out={F("i read every comment", a) + 1.6} reply={F("what were you looking at", a) + 1.2} head="TELL ME IN THE COMMENTS" q="When was the first time you noticed your neck?" rs={["In the car mirror…", "A video call!", "My daughter's photo"]} />); }
-  quote("ktl", "put the kettle on", 1090, "PUT THE KETTLE ON. WARM A TOWEL.", { size: 72, col: "#ffd9b8" });
+  { const a = F("subscribe to the channel", 1051); L.push(<Subscribe key="sub" t={t} at={a - 0.3} bell={F("press the little bell", a)} out={a + 7.5} />); }
+  tagAt("nx", "next week is the hands", 1059, null, "NEXT WEEK: THE HANDS", { sub: "AFTER WASHING THE DISHES…", col: COL.amber, dur: 9 });
+  { const a = F("tell me one thing in the comments", 1072); L.push(<Comment key="cm" t={t} at={a} out={F("i read every comment", a) + 1.6} reply={F("what were you looking at", a) + 1.2} head="TELL ME IN THE COMMENTS" q="When was the first time you noticed your neck?" rs={["In the car mirror…", "A video call!", "My daughter's photo"]} />); }
+  quote("ktl", "put the kettle on", 1086, "PUT THE KETTLE ON. WARM A TOWEL.", { size: 72, col: "#ffd9b8" });
 
   return <AbsoluteFill style={{ background: "#000" }}>{L}</AbsoluteFill>;
 };

@@ -1,5 +1,5 @@
 {
- "reel": false,
+ "reel": true,
  "ltx": [
   "g_mirror",
   "g_touch"
@@ -36,5 +36,6 @@
   "w_hot": 2.83,
   "w_pat": 3.0,
   "w_wash": 2.47
- }
+ },
+ "reelLen": 311.24
 }

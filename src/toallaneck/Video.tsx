@@ -290,148 +290,148 @@ export const Video: React.FC = () => {
 
   // ===== GANCHO =====
   if (inW("w:bustS") && t < 20) { const c = P2(PT.chin); L.push(<Tag key="cam" t={t} at={F("desde tu mano") - 0.2} x={c.x} y={c.y} dx={-360} dy={-200} text="LA CÁMARA DEL CELULAR" sub="MIRÁNDOTE DESDE ABAJO" col={COL.amber} out={F("y ahi esta") - 0.1} size={52} />); }
-  tagAt("fold", "ese pliegue blandito", 10, PT.chin, "EL PLIEGUE", { col: COL.red, dur: 2.6 });
-  tagAt("bands", "las dos bandas", 10, PT.neck, "DOS BANDITAS", { col: COL.amber, dur: 2.4, dx: -330 });
-  quote("when", "cuando paso esto", 20, "¿CUÁNDO PASÓ ESTO?", { size: 92 });
-  chip("scarf", "panuelo en pleno verano", 35, "PAÑUELO… EN PLENO VERANO", false, 3.2);
-  quote("age", "bueno es la edad", 40, "«ES LA EDAD»", { size: 84, col: "#ffd9b8" });
-  big("25y", "yo trabaje 25 anos", 45, "25 AÑOS", { sub: "UN SALÓN DE BELLEZA EN OSAKA", col: "#ffd9b8", edge: "#5a3a24" });
-  big("6070", "60 70 75 anos", 50, "60 · 70 · 75", { col: "#ffffff" });
-  chip("notn", "no tenia papada de pavo", 55, "SIN PAPADA DE PAVO", true, 3.4);
-  rows("luck", [["porque tengan suerte", 65, "SUERTE", false], ["no es por cirugia", 65, "CIRUGÍA", false]], 2.6);
-  rows("days", [["como lo lavas", 75, "CÓMO LO LAVAS", true], ["como duermes encima", 75, "CÓMO DUERMES", true], ["miras el celular", 75, "CÓMO MIRAS EL CELULAR", true], ["hasta donde llega tu protector", 75, "HASTA DÓNDE LLEGA EL PROTECTOR", true]], 2.4, 200);
-  stamp("bor", "nadie te puede vender una cosa aburrida", 85, "LO ABURRIDO NO SE VENDE", { size: 74 });
-  big("nine", "9 cosas que hacemos en japon", 90, "9", { size: 300, y: 470, col: "#ffd9b8", edge: "#5a3a24", sub: "COSAS QUE HACEMOS EN JAPÓN DESPUÉS DE LOS 50", dur: 6.5 });
-  chip("free", "la primera no cuesta nada", 100, "LA #1 NO CUESTA NADA", true, 2.6);
-  chip("gma", "hacia mi abuela", 104, "LA #9 · MI ABUELA, TODOS LOS DÍAS", true, 3.2);
+  tagAt("fold", "ese pliegue blandito", 15, PT.chin, "EL PLIEGUE", { col: COL.red, dur: 2.6 });
+  tagAt("bands", "las dos bandas", 16, PT.neck, "DOS BANDITAS", { col: COL.amber, dur: 2.4, dx: -330 });
+  quote("when", "cuando paso esto", 26, "¿CUÁNDO PASÓ ESTO?", { size: 92 });
+  chip("scarf", "panuelo en pleno verano", 42, "PAÑUELO… EN PLENO VERANO", false, 3.2);
+  quote("age", "bueno es la edad", 45, "«ES LA EDAD»", { size: 84, col: "#ffd9b8" });
+  big("25y", "yo trabaje 25 anos", 50, "25 AÑOS", { sub: "UN SALÓN DE BELLEZA EN OSAKA", col: "#ffd9b8", edge: "#5a3a24" });
+  big("6070", "60 70 75 anos", 58, "60 · 70 · 75", { col: "#ffffff" });
+  chip("notn", "no tenia papada de pavo", 63, "SIN PAPADA DE PAVO", true, 3.4);
+  rows("luck", [["porque tengan suerte", 72, "SUERTE", false], ["no es por cirugia", 73, "CIRUGÍA", false]], 2.6);
+  rows("days", [["como lo lavas", 83, "CÓMO LO LAVAS", true], ["como duermes encima", 84, "CÓMO DUERMES", true], ["miras el celular", 85, "CÓMO MIRAS EL CELULAR", true], ["hasta donde llega tu protector", 87, "HASTA DÓNDE LLEGA EL PROTECTOR", true]], 2.4, 200);
+  stamp("bor", "nadie te puede vender una cosa aburrida", 94, "LO ABURRIDO NO SE VENDE", { size: 74 });
+  big("nine", "9 cosas que hacemos en japon", 98, "9", { size: 300, y: 470, col: "#ffd9b8", edge: "#5a3a24", sub: "COSAS QUE HACEMOS EN JAPÓN DESPUÉS DE LOS 50", dur: 6.5 });
+  chip("free", "la primera no cuesta nada", 103, "LA #1 NO CUESTA NADA", true, 2.6);
+  chip("gma", "hacia mi abuela", 109, "LA #9 · MI ABUELA, TODOS LOS DÍAS", true, 3.2);
 
   // ===== QUIÉN SOY =====
-  { const a = F("me llamo reiko", 112); L.push(<LowerThird key="lt" t={t} at={a + 0.2} out={a + 6.5} name="REIKO TANAKA" l2="ESTETICISTA · 25 AÑOS · OSAKA" l2at={a + 1.4} />); }
-  tagAt("six", "seis sillas y una radio", 118, PT.radio, "6 SILLAS · 1 RADIO VIEJITA", { col: COL.amber, dur: 3.4 });
-  chip("nd", "no soy doctora", 125, "NO SOY DOCTORA · NADA DE MILAGROS", false, 3.4);
-  rows("hands", [["lo que vi cambiar", 128, "LO QUE VI CAMBIAR", true], ["lo que vi que no cambiaba", 130, "LO QUE NO CAMBIABA", false]], 2.6);
-  stamp("lies", "que no son verdad", 135, "NO ES VERDAD", { size: 110 });
-  tagAt("wr", "este es mi bano", 140, PT.mirror, "MI BAÑO", { sub: "MUY CHIQUITO, PERDÓN", col: "#fff", dur: 3.4 });
+  { const a = F("me llamo reiko", 116); L.push(<LowerThird key="lt" t={t} at={a + 0.2} out={a + 6.5} name="REIKO TANAKA" l2="ESTETICISTA · 25 AÑOS · OSAKA" l2at={a + 1.4} />); }
+  tagAt("six", "seis sillas y una radio", 125, PT.radio, "6 SILLAS · 1 RADIO VIEJITA", { col: COL.amber, dur: 3.4 });
+  chip("nd", "no soy doctora", 128, "NO SOY DOCTORA · NADA DE MILAGROS", false, 3.4);
+  rows("hands", [["lo que vi cambiar", 137, "LO QUE VI CAMBIAR", true], ["lo que vi que no cambiaba", 138, "LO QUE NO CAMBIABA", false]], 2.6);
+  stamp("lies", "que no son verdad", 143, "NO ES VERDAD", { size: 110 });
+  tagAt("wr", "este es mi bano", 146, PT.mirror, "MI BAÑO", { sub: "MUY CHIQUITO, PERDÓN", col: "#fff", dur: 3.4 });
 
   // ===== 1 · TOALLA TIBIA =====
-  title("t1", "cosa numero 1", 145, "1", "LA TOALLA TIBIA");
-  tagAt("osh", "le decimos o", 148, null, "OSHIBORI", { sub: "おしぼり · LA TOALLITA MOJADA", col: COL.amber, dur: 4 });
-  big("40c", "unos 40 grados", 160, "40 °C", { sub: "COMO UN BAÑO LARGO", col: "#ffd9b8", edge: "#5a3a24", dur: 4.2 });
-  chip("nh", "no caliente nunca caliente", 165, "NO CALIENTE. NUNCA CALIENTE.", false, 3);
-  tagAt("wrist", "adentro de la muneca", 170, PT.sink, "PRUÉBALA EN LA MUÑECA", { col: COL.amber, dur: 4 });
-  quote("tw", "la retuerzo la retuerzo", 177, "LA RETUERZO · LA RETUERZO", { size: 90, dur: 2.4 });
-  L.push(<Stopwatch key="sw1" t={t} at={F("un minuto quizas dos", 188)} out={F("un minuto quizas dos", 188) + 4} x={1400} y={300} n={2} unit="MIN" label="HASTA QUE YA NO ESTÉ TIBIA" />);
-  tagAt("sh", "los hombros bajan", 196, PT.collar, "HOMBROS ABAJO ~1 CM", { col: G, dur: 3.6 });
-  chip("drk", "la absorbe mejor", 205, "LA PIEL HÚMEDA ABSORBE MEJOR", true, 3.4);
-  quote("fav", "su parte favorita", 218, "«SU PARTE FAVORITA»", { size: 84 });
-  big("2m", "dos minutos no cuesta nada", 225, "2 MIN · $0", { col: G, edge: "#0b3a22" });
-  big("11y", "durante 11 anos", 229, "11 AÑOS", { sub: "TODOS LOS MESES", dur: 3 });
-  tagAt("bank", "trabajaba en un banco", 232, null, "UNA SEÑORA DEL BANCO", { sub: "CERCA DE LA ESTACIÓN", dur: 3.4 });
-  quote("ns", "hace tantos anos que nadie me toca el cuello", 248, "«HACE TANTOS AÑOS QUE NADIE ME TOCA EL CUELLO»", { size: 66, dur: 5 });
-  quote("lg", "la misma piel solo mas largo", 258, "LA MISMA PIEL. SOLO MÁS LARGO.", { col: G, size: 82 });
+  title("t1", "cosa numero 1", 150, "1", "LA TOALLA TIBIA");
+  tagAt("osh", "le decimos o", 153, null, "OSHIBORI", { sub: "おしぼり · LA TOALLITA MOJADA", col: COL.amber, dur: 4 });
+  big("40c", "unos 40 grados", 167, "40 °C", { sub: "COMO UN BAÑO LARGO", col: "#ffd9b8", edge: "#5a3a24", dur: 4.2 });
+  chip("nh", "no caliente nunca caliente", 171, "NO CALIENTE. NUNCA CALIENTE.", false, 3);
+  tagAt("wrist", "adentro de la muneca", 175, PT.sink, "PRUÉBALA EN LA MUÑECA", { col: COL.amber, dur: 4 });
+  quote("tw", "la retuerzo la retuerzo", 184, "LA RETUERZO · LA RETUERZO", { size: 90, dur: 2.4 });
+  L.push(<Stopwatch key="sw1" t={t} at={F("un minuto quizas dos", 196)} out={F("un minuto quizas dos", 196) + 4} x={1400} y={300} n={2} unit="MIN" label="HASTA QUE YA NO ESTÉ TIBIA" />);
+  tagAt("sh", "los hombros bajan", 204, PT.collar, "HOMBROS ABAJO ~1 CM", { col: G, dur: 3.6 });
+  chip("drk", "la absorbe mejor", 213, "LA PIEL HÚMEDA ABSORBE MEJOR", true, 3.4);
+  quote("fav", "su parte favorita", 223, "«SU PARTE FAVORITA»", { size: 84 });
+  big("2m", "dos minutos no cuesta nada", 230, "2 MIN · $0", { col: G, edge: "#0b3a22" });
+  big("11y", "durante 11 anos", 234, "11 AÑOS", { sub: "TODOS LOS MESES", dur: 3 });
+  tagAt("bank", "trabajaba en un banco", 237, null, "UNA SEÑORA DEL BANCO", { sub: "CERCA DE LA ESTACIÓN", dur: 3.4 });
+  quote("ns", "hace tantos anos que nadie me toca el cuello", 252, "«HACE TANTOS AÑOS QUE NADIE ME TOCA EL CUELLO»", { size: 66, dur: 5 });
+  quote("lg", "la misma piel solo mas largo", 263, "LA MISMA PIEL. SOLO MÁS LARGO.", { col: G, size: 82 });
 
   // ===== 2 · AGUA TIBIA, NUNCA FROTAR =====
-  title("t2", "cosa numero 2", 262, "2", "AGUA TIBIA · NUNCA FROTAR");
-  rows("hr", [["en una ducha caliente", 266, "DUCHA MUY CALIENTE", false], ["frotan frotan frotan", 270, "FROTAR, FROTAR, FROTAR", false]], 3);
-  rows("thin", [["es mas delgada que la de la cara", 280, "MÁS DELGADA QUE LA CARA", false], ["tiene menos glandulas", 280, "MENOS GLÁNDULAS DE GRASA", false]], 3.2);
-  tagAt("lk", "con agua tibia y con las manos", 293, null, "AGUA TIBIA · SÓLO LAS MANOS", { col: G, dur: 4 });
-  chip("fm", "la espuma hace el trabajo", 300, "LA ESPUMA HACE EL TRABAJO", true, 3);
-  quote("pl", "apoyas levantas apoyas levantas", 305, "APOYAS · LEVANTAS · APOYAS · LEVANTAS", { size: 74, col: G });
-  quote("silk", "como si fuera seda", 318, "COMO SEDA, NO COMO EL PISO DE LA COCINA", { size: 68, col: "#ffd9b8", dur: 4 });
+  title("t2", "cosa numero 2", 266, "2", "AGUA TIBIA · NUNCA FROTAR");
+  rows("hr", [["en una ducha caliente", 272, "DUCHA MUY CALIENTE", false], ["frotan frotan frotan", 278, "FROTAR, FROTAR, FROTAR", false]], 3);
+  rows("thin", [["es mas delgada que la de la cara", 286, "MÁS DELGADA QUE LA CARA", false], ["tiene menos glandulas", 289, "MENOS GLÁNDULAS DE GRASA", false]], 3.2);
+  tagAt("lk", "con agua tibia y con las manos", 300, null, "AGUA TIBIA · SÓLO LAS MANOS", { col: G, dur: 4 });
+  chip("fm", "la espuma hace el trabajo", 306, "LA ESPUMA HACE EL TRABAJO", true, 3);
+  quote("pl", "apoyas levantas apoyas levantas", 315, "APOYAS · LEVANTAS · APOYAS · LEVANTAS", { size: 74, col: G });
+  quote("silk", "como si fuera seda", 323, "COMO SEDA, NO COMO EL PISO DE LA COCINA", { size: 68, col: "#ffd9b8", dur: 4, y: 880 });
 
   // ===== 3 · LA CARA TERMINA EN LA CLAVÍCULA =====
-  title("t3", "cosa numero 3", 322, "3", "LA CARA TERMINA EN LA CLAVÍCULA");
-  tagAt("jaw", "la cara no termina aqui", 333, PT.chin, "AQUÍ NO", { col: COL.red, dur: 2.6, dx: -330 });
-  tagAt("clv", "la cara termina aqui en la clavicula", 336, PT.collar, "AQUÍ", { col: G, dur: 4, size: 70 });
-  stamp("lo", "como las sobras", 357, "SOBRAS", { size: 140 });
-  rows("5070", [["la cara parece de 50", 362, "CARA: 50", true], ["y el cuello de 70", 362, "CUELLO: 70", false]], 3, 230);
-  chip("same", "la misma cantidad para el cuello", 368, "LA MISMA CANTIDAD QUE LAS MEJILLAS", true, 4);
+  title("t3", "cosa numero 3", 326, "3", "LA CARA TERMINA EN LA CLAVÍCULA");
+  tagAt("jaw", "la cara no termina aqui", 338, PT.chin, "AQUÍ NO", { col: COL.red, dur: 2.6, dx: -330 });
+  tagAt("clv", "la cara termina aqui en la clavicula", 341, PT.collar, "AQUÍ", { col: G, dur: 4, size: 70 });
+  stamp("lo", "como las sobras", 363, "SOBRAS", { size: 140 });
+  rows("5070", [["la cara parece de 50", 369, "CARA: 50", true], ["y el cuello de 70", 370, "CUELLO: 70", false]], 3, 230);
+  chip("same", "la misma cantidad para el cuello", 376, "LA MISMA CANTIDAD QUE LAS MEJILLAS", true, 4);
 
   // ===== 4 · ACEITE DE CAMELIA =====
-  title("t4", "cosa numero 4", 378, "4", "ACEITE DE CAMELIA · HACIA DÓNDE VAN LAS MANOS");
-  tagAt("tsu", "este es aceite de tsubaki", 383, PT.oil, "TSUBAKI · 椿", { sub: "ACEITE DE CAMELIA", col: COL.amber, dur: 4 });
-  big("2d", "dos gotas solo dos", 400, "2 GOTAS", { col: "#ffd9b8", edge: "#5a3a24" });
-  tagAt("up", "el frente del cuello voy para arriba", 405, PT.neck, "FRENTE: PARA ARRIBA ↑", { col: G, dur: 4 });
-  L.push(<Stopwatch key="sw10" t={t} at={F("despacito 10 veces", 412)} out={F("despacito 10 veces", 412) + 3.6} x={1400} y={300} n={10} unit="×" label="DESPACITO" />);
-  quote("pap", "como si alisaras una hoja de papel", 418, "ALISAR PAPEL, NO AMASAR PAN", { size: 74 });
-  tagAt("dn", "desde detras de la oreja voy para abajo", 427, null, "COSTADOS: PARA ABAJO ↓", { col: COL.amber, dur: 4 });
-  rows("dir", [["detras de la oreja para abajo", 437, "DETRÁS DE LA OREJA → ABAJO", true], ["el frente del cuello para arriba", 437, "EL FRENTE → ARRIBA", true]], 3);
-  tagAt("jar", "en frascos preciosos", 445, null, "CARAS · FRASCOS PRECIOSOS", { col: COL.amber, dur: 3.4 });
-  quote("hab", "son las costumbres alrededor del frasco", 460, "SON LAS COSTUMBRES ALREDEDOR DEL FRASCO", { col: G, size: 70 });
-  { const a = F("tu papada de pavo va a", 465); L.push(<Chip key="10d" t={t} at={a - 1.2} out={a + 2.5} text="«10 DÍAS = PAPADA ARRIBA»" />); }
-  stamp("no", "no yo hice esto", 474, "NO.", { size: 200, y: 460, dur: 2.2 });
-  rows("does", [["la piel se queda suave", 480, "SE QUEDA SUAVE", true], ["hidratada", 480, "HIDRATADA", true], ["dejas de tirarla para abajo", 480, "DEJAS DE TIRARLA PARA ABAJO", true]], 3);
-  chip("nm", "no es magia", 487, "NO ES MAGIA. NO TE QUIERO MENTIR.", false, 3.4);
+  title("t4", "cosa numero 4", 384, "4", "ACEITE DE CAMELIA · HACIA DÓNDE VAN LAS MANOS");
+  tagAt("tsu", "este es aceite de tsubaki", 389, PT.oil, "TSUBAKI · 椿", { sub: "ACEITE DE CAMELIA", col: COL.amber, dur: 4 });
+  big("2d", "dos gotas solo dos", 410, "2 GOTAS", { col: "#ffd9b8", edge: "#5a3a24" });
+  tagAt("up", "el frente del cuello voy para arriba", 416, PT.neck, "FRENTE: PARA ARRIBA ↑", { col: G, dur: 4 });
+  L.push(<Stopwatch key="sw10" t={t} at={F("despacito diez veces", 424)} out={F("despacito diez veces", 424) + 3.6} x={1400} y={300} n={10} unit="×" label="DESPACITO" />);
+  quote("pap", "como si alisaras una hoja de papel", 428, "ALISAR PAPEL, NO AMASAR PAN", { size: 74 });
+  tagAt("dn", "desde detras de la oreja voy para abajo", 434, null, "COSTADOS: PARA ABAJO ↓", { col: COL.amber, dur: 4 });
+  rows("dir", [["detras de la oreja para abajo", 445, "DETRÁS DE LA OREJA → ABAJO", true], ["el frente del cuello para arriba", 447, "EL FRENTE → ARRIBA", true]], 3);
+  tagAt("jar", "en frascos preciosos", 455, null, "CARAS · FRASCOS PRECIOSOS", { col: COL.amber, dur: 3.4 });
+  quote("hab", "son las costumbres alrededor del frasco", 472, "SON LAS COSTUMBRES ALREDEDOR DEL FRASCO", { col: G, size: 70 });
+  { const a = F("tu papada de pavo va a", 480); L.push(<Chip key="10d" t={t} at={a - 1.2} out={a + 2.5} text="«10 DÍAS = PAPADA ARRIBA»" />); }
+  stamp("no", "no yo hice esto", 482, "NO.", { size: 200, y: 460, dur: 2.2 });
+  rows("does", [["la piel se queda suave", 488, "SE QUEDA SUAVE", true], ["hidratada", 490, "HIDRATADA", true], ["dejas de tirarla para abajo", 491, "DEJAS DE TIRARLA PARA ABAJO", true]], 3);
+  chip("nm", "no es magia", 495, "NO ES MAGIA. NO TE QUIERO MENTIR.", false, 3.4);
 
   // ===== 5 · EL PROTECTOR NO TERMINA EN LA BARBILLA =====
-  title("t5", "cosa numero 5", 491, "5", "EL PROTECTOR NO TERMINA EN LA BARBILLA");
-  chip("one", "si solo haces una", 497, "SI HACES UNA SOLA, HAZ ESTA", true, 3.6);
-  big("40y", "durante 40 anos", 503, "40 AÑOS DE SOL", { col: "#ffd27a", edge: "#5a4500" });
-  rows("2age", [["se veia mas vieja", 505, "AL SOL: MÁS VIEJA", false], ["se veia mas joven", 509, "EN LA SOMBRA: MÁS JOVEN", true]], 3);
-  quote("2a", "dos edades distintas", 513, "EL MISMO CUELLO. DOS EDADES.", { size: 84 });
-  rows("ss", [["y despues baja por el cuello", 523, "CARA → CUELLO", true], ["los costados la nuca", 524, "COSTADOS + NUCA", true], ["la parte de arriba del pecho", 526, "ARRIBA DEL PECHO", true]], 2.6, 220);
-  chip("cl", "aunque este nublado", 530, "NUBLADO · INVIERNO · CADA MAÑANA", true, 3.4);
-  tagAt("hg", "la sombrilla para el sol", 536, null, "HIGASA · 日傘", { sub: "LA SOMBRILLA PARA EL SOL", col: COL.amber, dur: 4 });
-  quote("why", "por esto", 546, "POR ESTO.", { size: 100 });
-  tagAt("shd", "solo dale un poco de sombra", 550, PT.neck, "PAÑUELO · CUELLO ALTO · SOMBRA", { col: G, dur: 3.6 });
+  title("t5", "cosa numero 5", 498, "5", "EL PROTECTOR NO TERMINA EN LA BARBILLA");
+  chip("one", "si solo haces una", 504, "SI HACES UNA SOLA, HAZ ESTA", true, 3.6);
+  big("40y", "durante 40 anos", 511, "40 AÑOS DE SOL", { col: "#ffd27a", edge: "#5a4500" });
+  rows("2age", [["se veia mas vieja", 512, "AL SOL: MÁS VIEJA", false], ["se veia mas joven", 517, "EN LA SOMBRA: MÁS JOVEN", true]], 3);
+  quote("2a", "dos edades distintas", 520, "EL MISMO CUELLO. DOS EDADES.", { size: 84 });
+  rows("ss", [["y despues baja por el cuello", 530, "CARA → CUELLO", true], ["los costados la nuca", 532, "COSTADOS + NUCA", true], ["la parte de arriba del pecho", 534, "ARRIBA DEL PECHO", true]], 2.6, 220);
+  chip("cl", "aunque este nublado", 537, "NUBLADO · INVIERNO · CADA MAÑANA", true, 3.4);
+  tagAt("hg", "la sombrilla para el sol", 543, null, "HIGASA · 日傘", { sub: "LA SOMBRILLA PARA EL SOL", col: COL.amber, dur: 4 });
+  quote("why", "por esto", 551, "POR ESTO.", { size: 100 });
+  tagAt("shd", "solo dale un poco de sombra", 557, PT.neck, "PAÑUELO · CUELLO ALTO · SOMBRA", { col: G, dur: 3.6 });
 
   // ===== 6 · EL CELULAR ARRIBA =====
-  title("t6", "cosa numero 6", 556, "6", "SUBE EL CELULAR A LA ALTURA DE LOS OJOS");
-  quote("hlp", "el celular ayuda a hacerlo", 563, "EL CELULAR AYUDA A HACERLO", { col: "#ff8a7a", size: 80 });
-  tagAt("bend", "pliega siempre en el mismo lugar", 578, PT.chin, "SE DOBLA SIEMPRE EN EL MISMO LUGAR", { col: COL.red, dur: 4 });
-  rows("hrs", [["una hora dos horas", 580, "1 HORA · 2 HORAS · 3 HORAS", false], ["todos los dias", 583, "TODOS LOS DÍAS", false]], 3);
-  tagAt("smn", "cuello de celular", 590, null, "SUMAHO-KUBI · スマホ首", { sub: "CUELLO DE CELULAR", col: COL.amber, dur: 4 });
-  tagAt("eye", "con las dos manos aqui arriba", 600, PT.head, "A LA ALTURA DE LOS OJOS", { col: G, dur: 3.6, dx: -330 });
-  big("1000", "mil veces al dia", 608, "1.000 VECES AL DÍA", { col: "#ff8a7a", edge: "#4a0c08" });
-  chip("tdy", "pruebalo hoy", 612, "PRUÉBALO HOY", true, 3.2);
-  tagAt("dct", "con dos diccionarios viejos", 633, PT.dicts, "DOS DICCIONARIOS VIEJOS", { col: COL.amber, dur: 4 });
-  quote("ntd", "solo no cansado", 645, "«NO MÁS JOVEN. SÓLO NO CANSADO.»", { size: 72 });
+  title("t6", "cosa numero 6", 559, "6", "SUBE EL CELULAR A LA ALTURA DE LOS OJOS");
+  quote("hlp", "el celular ayuda a hacerlo", 570, "EL CELULAR AYUDA A HACERLO", { col: "#ff8a7a", size: 80 });
+  tagAt("bend", "pliega siempre en el mismo lugar", 581, PT.chin, "SE DOBLA SIEMPRE EN EL MISMO LUGAR", { col: COL.red, dur: 4 });
+  rows("hrs", [["una hora dos horas", 584, "1 HORA · 2 HORAS · 3 HORAS", false], ["todos los dias", 587, "TODOS LOS DÍAS", false]], 3);
+  tagAt("smn", "cuello de celular", 596, null, "SUMAHO-KUBI · スマホ首", { sub: "CUELLO DE CELULAR", col: COL.amber, dur: 4 });
+  tagAt("eye", "con las dos manos aqui arriba", 604, PT.head, "A LA ALTURA DE LOS OJOS", { col: G, dur: 3.6, dx: -330 });
+  big("1000", "mil veces al dia", 613, "1.000 VECES AL DÍA", { col: "#ff8a7a", edge: "#4a0c08" });
+  chip("tdy", "pruebalo hoy", 615, "PRUÉBALO HOY", true, 3.2);
+  tagAt("dct", "con dos diccionarios viejos", 639, PT.dicts, "DOS DICCIONARIOS VIEJOS", { col: COL.amber, dur: 4 });
+  quote("ntd", "solo no cansado", 649, "«NO MÁS JOVEN. SÓLO NO CANSADO.»", { size: 72 });
 
   // ===== 7 · ALMOHADA BAJA =====
   title("t7", "cosa numero 7", 650, "7", "UNA ALMOHADA BAJA");
-  tagAt("8h", "la barbilla contra el pecho", 660, PT.pillow, "BARBILLA AL PECHO · 8 HORAS", { col: COL.red, dur: 4 });
-  tagAt("sbk", "trigo sarraceno", 670, null, "SOBAKAWA · そば殻", { sub: "CÁSCARA DE TRIGO SARRACENO", col: COL.amber, dur: 4 });
-  tagAt("str", "mantiene el cuello derecho", 680, PT.pillow, "DERECHO, EN LÍNEA CON LA ESPALDA", { col: G, dur: 4 });
-  chip("onep", "saca una almohada", 686, "SACA UNA ALMOHADA", true, 3.4);
-  tagAt("rt", "una toalla chiquita enrollada", 692, PT.pillow, "UNA TOALLITA ENROLLADA", { col: G, dur: 4, dx: -330 });
+  tagAt("8h", "la barbilla contra el pecho", 665, PT.pillow, "BARBILLA AL PECHO · 8 HORAS", { col: COL.red, dur: 4 });
+  tagAt("sbk", "trigo sarraceno", 675, null, "SOBAKAWA · そば殻", { sub: "CÁSCARA DE TRIGO SARRACENO", col: COL.amber, dur: 4 });
+  tagAt("str", "mantiene el cuello derecho", 682, PT.pillow, "DERECHO, EN LÍNEA CON LA ESPALDA", { col: G, dur: 4 });
+  chip("onep", "saca una almohada", 690, "SACA UNA ALMOHADA", true, 3.4);
+  tagAt("rt", "una toalla chiquita enrollada", 695, PT.pillow, "UNA TOALLITA ENROLLADA", { col: G, dur: 4, dx: -330 });
 
   // ===== 8 · BESO AL TECHO =====
-  title("t8", "cosa numero 8", 706, "8", "DALE UN BESO AL TECHO");
-  rows("kc", [["sientate derecha", 713, "SIÉNTATE DERECHA", true], ["los hombros abajo", 714, "HOMBROS ABAJO", true], ["despacito mira al techo", 716, "MIRA ARRIBA · LABIOS ADELANTE", true]], 2.6);
-  L.push(<Stopwatch key="sw5" t={t} at={F("aguanta", 724)} out={F("aguanta", 724) + 4} x={1400} y={300} n={5} unit="SEG" label="AGUANTA" />);
-  tagAt("frn", "sientes el frente del cuello", 726, PT.neck, "EL FRENTE TRABAJA", { col: G, dur: 3.4 });
+  title("t8", "cosa numero 8", 708, "8", "DALE UN BESO AL TECHO");
+  rows("kc", [["sientate derecha", 715, "SIÉNTATE DERECHA", true], ["los hombros abajo", 717, "HOMBROS ABAJO", true], ["despacito mira al techo", 719, "MIRA ARRIBA · LABIOS ADELANTE", true]], 2.6);
+  L.push(<Stopwatch key="sw5" t={t} at={F("aguanta", 726)} out={F("aguanta", 726) + 4} x={1400} y={300} n={5} unit="SEG" label="AGUANTA" />);
+  tagAt("frn", "sientes el frente del cuello", 728, PT.neck, "EL FRENTE TRABAJA", { col: G, dur: 3.4 });
   big("10x", "10 veces en la manana", 728, "10× CADA MAÑANA", { col: G, edge: "#0b3a22" });
-  tagAt("tng", "pongo la lengua plana", 740, null, "LENGUA AL PALADAR · TRAGAS", { col: COL.amber, dur: 4.4 });
-  chip("bus", "nadie te ve hacerlo", 750, "NADIE TE VE HACERLO", true, 3.4);
-  chip("hon", "el ejercicio no quita la piel suelta", 754, "NO QUITA LA PIEL SUELTA", false, 4);
-  quote("awk", "mas firme mas despierto", 760, "MÁS FIRME · MÁS DESPIERTO", { col: G, size: 84 });
+  tagAt("tng", "pongo la lengua plana", 743, null, "LENGUA AL PALADAR · TRAGAS", { col: COL.amber, dur: 4.4 });
+  chip("bus", "nadie te ve hacerlo", 752, "NADIE TE VE HACERLO", true, 3.4);
+  chip("hon", "el ejercicio no quita la piel suelta", 757, "NO QUITA LA PIEL SUELTA", false, 4);
+  quote("awk", "mas firme mas despierto", 764, "MÁS FIRME · MÁS DESPIERTO", { col: G, size: 84 });
 
   // ===== 9 · LA NUCA =====
-  title("t9", "cosa numero 9", 774, "9", "MUESTRA TU NUCA COMO MI ABUELA", 4.6);
-  tagAt("unj", "decimos", 786, PT.nape, "UNAJI · うなじ", { sub: "LA NUCA", col: COL.amber, dur: 4 });
-  quote("nf", "no la cara la nuca", 792, "NO LA CARA. LA NUCA.", { size: 84 });
-  tagAt("strg", "como si un hilo", 800, PT.head, "UN HILO QUE TIRA PARA ARRIBA", { col: G, dur: 4, dx: -330 });
-  quote("obc", "nadie te esta mirando el cuello", 810, "«OBAACHAN, NADIE TE ESTÁ MIRANDO»", { size: 70 });
-  quote("ila", "yo me lo estoy mirando", 814, "«YO ME LO ESTOY MIRANDO.»", { col: "#ffd9b8", size: 90 });
+  title("t9", "cosa numero 9", 776, "9", "MUESTRA TU NUCA COMO MI ABUELA", 4.6);
+  tagAt("unj", "decimos", 788, PT.nape, "UNAJI · うなじ", { sub: "LA NUCA", col: COL.amber, dur: 4 });
+  quote("nf", "no la cara la nuca", 794, "NO LA CARA. LA NUCA.", { size: 84 });
+  tagAt("strg", "como si un hilo", 801, PT.head, "UN HILO QUE TIRA PARA ARRIBA", { col: G, dur: 4, dx: -330 });
+  quote("obc", "nadie te esta mirando el cuello", 812, "«OBAACHAN, NADIE TE ESTÁ MIRANDO»", { size: 70 });
+  quote("ila", "yo me lo estoy mirando", 815, "«YO ME LO ESTOY MIRANDO.»", { col: "#ffd9b8", size: 90 });
   big("91", "tenia 91 anos", 817, "91", { size: 260, y: 430, sub: "LARGO, DERECHO, SIN PLIEGUE", col: "#ffd9b8", edge: "#5a3a24", dur: 4.4 });
-  big("10s", "este espejo 10 segundos", 826, "10 SEGUNDOS", { sub: "CADA MAÑANA, ESTE ESPEJO" });
+  big("10s", "este espejo 10 segundos", 831, "10 SEGUNDOS", { sub: "CADA MAÑANA, ESTE ESPEJO" });
 
   // ===== REPASO =====
   {
     const R: [string, string][] = [["la toalla tibia dos minutos", "LA TOALLA TIBIA · 2 MIN"], ["agua tibia y presionas", "AGUA TIBIA · PRESIONAS, NUNCA FROTAS"], ["la cara termina en la clavicula", "LA CARA TERMINA EN LA CLAVÍCULA"], ["dos gotas de aceite", "2 GOTAS · FRENTE ARRIBA, COSTADOS ABAJO"], ["protector hasta abajo", "PROTECTOR HASTA ABAJO"], ["el celular a la altura de los ojos", "EL CELULAR A LA ALTURA DE LOS OJOS"], ["una almohada mas baja", "UNA ALMOHADA MÁS BAJA"], ["dale un beso al techo", "UN BESO AL TECHO"], ["muestra tu nuca como mi abuela", "MUESTRA TU NUCA"]];
-    let after = F("esas son las 9", 840);
+    let after = F("esas son las 9", 845);
     const ts = R.map(([ph]) => { const a = F(ph, after); after = a + 0.2; return a; });
     ts.forEach((a, i) => { const out = i < 8 ? ts[i + 1] - 0.1 : a + 3; L.push(<PlaceTitle key={"r" + i} t={t} at={a - 0.6} out={out} n={String(i + 1)} name={R[i][1]} lbl="COSA" />); });
   }
-  big("3d", "las haces 3 dias", 880, "3 DÍAS… Y LAS DEJAS", { col: "#ff8a7a", edge: "#4a0c08", dur: 3 });
-  rows("pk2", [["la toalla tibia y el protector", 888, "LA TOALLA TIBIA", true], ["y el protector", 888, "EL PROTECTOR", true]], 3.6);
+  big("3d", "las haces 3 dias", 882, "3 DÍAS… Y LAS DEJAS", { col: "#ff8a7a", edge: "#4a0c08", dur: 3 });
+  rows("pk2", [["la toalla tibia y el protector", 889, "LA TOALLA TIBIA", true], ["y el protector", 890, "EL PROTECTOR", true]], 3.6);
   big("1mo", "durante un mes", 894, "1 MES", { sub: "DESPUÉS SUMAS UNA MÁS", col: G, edge: "#0b3a22" });
-  chip("doc", "un bulto una hinchazon", 900, "BULTO · HINCHAZÓN · DOLOR → VE A TU MÉDICO", false, 8);
+  chip("doc", "un bulto una hinchazon", 903, "BULTO · HINCHAZÓN · DOLOR → VE A TU MÉDICO", false, 8);
 
   // ===== CTA: suscribirse + campanita + UNA pregunta =====
-  { const a = F("suscribete al canal", 915); L.push(<Subscribe key="sub" t={t} at={a - 0.3} bell={F("toca la campanita", a)} out={a + 7.5} label="SUSCRIBIRSE" done="SUSCRITO" />); }
-  tagAt("nx", "la proxima semana son las manos", 922, null, "LA PRÓXIMA SEMANA: LAS MANOS", { sub: "DESPUÉS DE LAVAR LOS PLATOS…", col: COL.amber, dur: 9 });
-  { const a = F("cuentame una cosa en los comentarios", 935); L.push(<Comment key="cm" t={t} at={a} out={F("leo todos los comentarios", a) + 1.6} reply={F("que estabas mirando", a) + 1.2} head="CUÉNTAME EN LOS COMENTARIOS" q="¿Cuándo fue la primera vez que te fijaste en tu cuello?" rs={["En el espejo del auto…", "¡En una videollamada!", "En una foto de mi hija"]} />); }
+  { const a = F("suscribete al canal", 917); L.push(<Subscribe key="sub" t={t} at={a - 0.3} bell={F("toca la campanita", a)} out={a + 7.5} label="SUSCRIBIRSE" done="SUSCRITO" />); }
+  tagAt("nx", "la proxima semana son las manos", 923, null, "LA PRÓXIMA SEMANA: LAS MANOS", { sub: "DESPUÉS DE LAVAR LOS PLATOS…", col: COL.amber, dur: 9 });
+  { const a = F("cuentame una cosa en los comentarios", 934); L.push(<Comment key="cm" t={t} at={a} out={F("leo todos los comentarios", a) + 1.6} reply={F("que estabas mirando", a) + 1.2} head="CUÉNTAME EN LOS COMENTARIOS" q="¿Cuándo fue la primera vez que te fijaste en tu cuello?" rs={["En el espejo del auto…", "¡En una videollamada!", "En una foto de mi hija"]} />); }
   quote("ktl", "ve a poner el agua", 946, "PON EL AGUA. ENTIBIA UNA TOALLA.", { size: 72, col: "#ffd9b8" });
 
   return <AbsoluteFill style={{ background: "#000" }}>{L}</AbsoluteFill>;
