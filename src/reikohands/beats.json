@@ -1,0 +1,1455 @@
+{
+"TEND": 1043.02,
+"beats": [
+{
+"a": 0,
+"k": "AV",
+"tr": "cut"
+},
+{
+"a": 3.697,
+"k": "g03@0.4",
+"tr": "whipL"
+},
+{
+"a": 6.697,
+"k": "g03@3.6",
+"tr": "whip"
+},
+{
+"a": 10.686,
+"k": "W:hand",
+"tr": "light"
+},
+{
+"a": 14.772,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 18.615,
+"k": "g03@7.9",
+"tr": "whipL"
+},
+{
+"a": 22.981,
+"k": "g03@12.5",
+"tr": "whipL"
+},
+{
+"a": 26.737,
+"k": "W:wide",
+"tr": "light"
+},
+{
+"a": 29.875,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 33.209,
+"k": "ag_rh_g01ax",
+"tr": "whipL"
+},
+{
+"a": 36.209,
+"k": "ag_rh_g01ay",
+"tr": "whip"
+},
+{
+"a": 38.942,
+"k": "W:skin:dry",
+"tr": "light"
+},
+{
+"a": 43.453,
+"k": "ag_rh_g01az",
+"tr": "whip"
+},
+{
+"a": 45.987,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 51.813,
+"k": "ag_rh_x01x",
+"tr": "whipL"
+},
+{
+"a": 54.78,
+"k": "W:hand:curl",
+"tr": "light"
+},
+{
+"a": 59.056,
+"k": "ag_rh_x01y",
+"tr": "whipL"
+},
+{
+"a": 62.056,
+"k": "g03@16.5",
+"tr": "whip"
+},
+{
+"a": 63.239,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 68.861,
+"k": "W:table",
+"tr": "portal"
+},
+{
+"a": 72.904,
+"k": "ag_rh_x01z",
+"tr": "whip"
+},
+{
+"a": 75.871,
+"k": "w01@0.4",
+"tr": "whipL"
+},
+{
+"a": 79.621,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 85.87,
+"k": "W:hand:palm",
+"tr": "portal"
+},
+{
+"a": 89.68,
+"k": "w01@4.4",
+"tr": "whipL"
+},
+{
+"a": 92.878,
+"k": "w01@7.8",
+"tr": "whip"
+},
+{
+"a": 97.065,
+"k": "W:wide|1",
+"tr": "light"
+},
+{
+"a": 100.031,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 104.471,
+"k": "w01@12.3",
+"tr": "whipL"
+},
+{
+"a": 109.036,
+"k": "w03@0.4",
+"tr": "whipL"
+},
+{
+"a": 112.989,
+"k": "W:basin",
+"tr": "light"
+},
+{
+"a": 115.903,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 119.721,
+"k": "w03@4.6",
+"tr": "whipL"
+},
+{
+"a": 124.052,
+"k": "w03@9.2",
+"tr": "whip"
+},
+{
+"a": 127.772,
+"k": "W:basin:hot",
+"tr": "light"
+},
+{
+"a": 130.42,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 136.411,
+"k": "w02@0.4",
+"tr": "whipL"
+},
+{
+"a": 140.509,
+"k": "w02@4.7",
+"tr": "whipL"
+},
+{
+"a": 143.995,
+"k": "W:basin:warm",
+"tr": "light"
+},
+{
+"a": 147.802,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 152.454,
+"k": "w02@8.5",
+"tr": "whipL"
+},
+{
+"a": 156.318,
+"k": "w02@12.6",
+"tr": "whip"
+},
+{
+"a": 159.571,
+"k": "W:skin:warm",
+"tr": "light"
+},
+{
+"a": 163.746,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 168.346,
+"k": "w01@17.1",
+"tr": "whipL"
+},
+{
+"a": 169.12,
+"k": "W:skin|1",
+"tr": "light"
+},
+{
+"a": 173.2,
+"k": "W:skin:hot",
+"tr": "light"
+},
+{
+"a": 177.208,
+"k": "w02@16.1",
+"tr": "whipL"
+},
+{
+"a": 179.127,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 184.183,
+"k": "ag_rh_w04x",
+"tr": "whipL"
+},
+{
+"a": 187.15,
+"k": "W:gloves",
+"tr": "light"
+},
+{
+"a": 190.924,
+"k": "ag_rh_w04y",
+"tr": "whip"
+},
+{
+"a": 193.824,
+"k": "ag_rh_w04z",
+"tr": "whipL"
+},
+{
+"a": 196.791,
+"k": "W:skin:cotton",
+"tr": "light"
+},
+{
+"a": 197.592,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 202.942,
+"k": "ag_rh_d01x",
+"tr": "whipL"
+},
+{
+"a": 205.942,
+"k": "ag_rh_d01y",
+"tr": "whip"
+},
+{
+"a": 208.409,
+"k": "W:gloves:double",
+"tr": "light"
+},
+{
+"a": 211.716,
+"k": "ag_rh_d01z",
+"tr": "whip"
+},
+{
+"a": 214.183,
+"k": "w01@18.1",
+"tr": "whipL"
+},
+{
+"a": 214.484,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 220.05,
+"k": "W:gloves:pair",
+"tr": "portal"
+},
+{
+"a": 223.124,
+"k": "ag_rh_d02y",
+"tr": "whipL"
+},
+{
+"a": 225.357,
+"k": "ag_rh_d02z",
+"tr": "whip"
+},
+{
+"a": 227.457,
+"k": "W:towel",
+"tr": "light"
+},
+{
+"a": 231.897,
+"k": "ag_rh_d03x",
+"tr": "whip"
+},
+{
+"a": 233.819,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 238.114,
+"k": "ag_rh_d03y",
+"tr": "whipL"
+},
+{
+"a": 241.081,
+"k": "W:timer",
+"tr": "light"
+},
+{
+"a": 245.287,
+"k": "ag_rh_d03z",
+"tr": "whipL"
+},
+{
+"a": 247.86,
+"k": "W:skin:soap",
+"tr": "light"
+},
+{
+"a": 249.86,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 253.448,
+"k": "W:skin:cream",
+"tr": "portal"
+},
+{
+"a": 257.421,
+"k": "ag_rh_t01x",
+"tr": "whip"
+},
+{
+"a": 260.387,
+"k": "w01@18.7",
+"tr": "whipL"
+},
+{
+"a": 260.67,
+"k": "W:skin:sweat",
+"tr": "light"
+},
+{
+"a": 262.67,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 268.903,
+"k": "ag_rh_t01y",
+"tr": "whipL"
+},
+{
+"a": 271.003,
+"k": "ag_rh_t02x",
+"tr": "whip"
+},
+{
+"a": 274.003,
+"k": "W:cream:jar",
+"tr": "light"
+},
+{
+"a": 277.509,
+"k": "ag_rh_t02y",
+"tr": "whip"
+},
+{
+"a": 280.242,
+"k": "ag_rh_t03x",
+"tr": "whipL"
+},
+{
+"a": 282.155,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 286.526,
+"k": "W:cream",
+"tr": "portal"
+},
+{
+"a": 289.798,
+"k": "ag_rh_t03y",
+"tr": "whipL"
+},
+{
+"a": 292.765,
+"k": "ag_rh_t03z",
+"tr": "whip"
+},
+{
+"a": 295.731,
+"k": "W:cream:press",
+"tr": "light"
+},
+{
+"a": 297.064,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 301.396,
+"k": "ag_rh_c01x",
+"tr": "whipL"
+},
+{
+"a": 304.429,
+"k": "ag_rh_c01y",
+"tr": "whipL"
+},
+{
+"a": 307.396,
+"k": "W:cream:knuckles",
+"tr": "light"
+},
+{
+"a": 311.801,
+"k": "ag_rh_c01z",
+"tr": "whipL"
+},
+{
+"a": 314.782,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 320.893,
+"k": "ag_rh_c02ax",
+"tr": "whipL"
+},
+{
+"a": 323.793,
+"k": "W:sun",
+"tr": "light"
+},
+{
+"a": 327.964,
+"k": "ag_rh_c02ay",
+"tr": "whip"
+},
+{
+"a": 330.931,
+"k": "w03@13.2",
+"tr": "whipL"
+},
+{
+"a": 331.334,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 335.263,
+"k": "W:skin:block",
+"tr": "portal"
+},
+{
+"a": 339.201,
+"k": "ag_rh_c02az",
+"tr": "whipL"
+},
+{
+"a": 342.167,
+"k": "ag_rh_c03x",
+"tr": "whip"
+},
+{
+"a": 345.167,
+"k": "W:hand:sun",
+"tr": "light"
+},
+{
+"a": 345.337,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 351.594,
+"k": "ag_rh_c03y",
+"tr": "whipL"
+},
+{
+"a": 354.327,
+"k": "ag_rh_c03z",
+"tr": "whipL"
+},
+{
+"a": 357.061,
+"k": "W:nail:push",
+"tr": "light"
+},
+{
+"a": 360.531,
+"k": "ag_rh_c04x",
+"tr": "whipL"
+},
+{
+"a": 363.431,
+"k": "ag_rh_c04z",
+"tr": "whip"
+},
+{
+"a": 365.82,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 369.393,
+"k": "W:nail:oil",
+"tr": "portal"
+},
+{
+"a": 372.63,
+"k": "ag_rh_s01x",
+"tr": "whip"
+},
+{
+"a": 375.63,
+"k": "ag_rh_s01y",
+"tr": "whipL"
+},
+{
+"a": 378.53,
+"k": "W:nail:file",
+"tr": "light"
+},
+{
+"a": 381.301,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 385.608,
+"k": "ag_rh_s01z",
+"tr": "whipL"
+},
+{
+"a": 388.641,
+"k": "ag_rh_s02x",
+"tr": "whip"
+},
+{
+"a": 391.541,
+"k": "W:wrap",
+"tr": "light"
+},
+{
+"a": 395.701,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 401.299,
+"k": "ag_rh_s02y",
+"tr": "whipL"
+},
+{
+"a": 404.266,
+"k": "ag_rh_s02z",
+"tr": "whipL"
+},
+{
+"a": 407.266,
+"k": "W:tea",
+"tr": "light"
+},
+{
+"a": 411.402,
+"k": "ag_rh_s03x",
+"tr": "whipL"
+},
+{
+"a": 414.416,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 418.189,
+"k": "ag_rh_s03y",
+"tr": "whipL"
+},
+{
+"a": 421.189,
+"k": "W:hand:curl|1",
+"tr": "light"
+},
+{
+"a": 425.091,
+"k": "ag_rh_s03z",
+"tr": "whip"
+},
+{
+"a": 427.691,
+"k": "w03@13.8",
+"tr": "whipL"
+},
+{
+"a": 428.771,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 433.133,
+"k": "W:hand:palm|1",
+"tr": "portal"
+},
+{
+"a": 436.802,
+"k": "ag_rh_s04x",
+"tr": "whipL"
+},
+{
+"a": 439.768,
+"k": "ag_rh_s04y",
+"tr": "whip"
+},
+{
+"a": 442.735,
+"k": "W:gloves:night",
+"tr": "light"
+},
+{
+"a": 444.075,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 449.332,
+"k": "ag_rh_s04z",
+"tr": "whipL"
+},
+{
+"a": 452.299,
+"k": "ag_rh_n01x",
+"tr": "whipL"
+},
+{
+"a": 454.665,
+"k": "W:wide:night",
+"tr": "light"
+},
+{
+"a": 457.867,
+"k": "ag_rh_n01z",
+"tr": "whipL"
+},
+{
+"a": 460.439,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 464.813,
+"k": "ag_rh_n02x",
+"tr": "whipL"
+},
+{
+"a": 467.78,
+"k": "W:hand:night",
+"tr": "light"
+},
+{
+"a": 472.348,
+"k": "ag_rh_n02y",
+"tr": "whip"
+},
+{
+"a": 475.248,
+"k": "g03@17.9",
+"tr": "whipL"
+},
+{
+"a": 476.236,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 480.968,
+"k": "W:skin:dry|1",
+"tr": "portal"
+},
+{
+"a": 485.302,
+"k": "ag_rh_n02z",
+"tr": "whipL"
+},
+{
+"a": 488.269,
+"k": "ag_rh_n03x",
+"tr": "whip"
+},
+{
+"a": 491.269,
+"k": "W:basin|1",
+"tr": "light"
+},
+{
+"a": 493.858,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 498.298,
+"k": "ag_rh_n03y",
+"tr": "whipL"
+},
+{
+"a": 501.031,
+"k": "ag_rh_n03z",
+"tr": "whipL"
+},
+{
+"a": 503.998,
+"k": "W:table|1",
+"tr": "light"
+},
+{
+"a": 509.653,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 514.351,
+"k": "ag_rh_n04x",
+"tr": "whipL"
+},
+{
+"a": 517.384,
+"k": "ag_rh_n04y",
+"tr": "whip"
+},
+{
+"a": 520.318,
+"k": "W:wide|2",
+"tr": "light"
+},
+{
+"a": 523.967,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 529.15,
+"k": "ag_rh_n04z",
+"tr": "whipL"
+},
+{
+"a": 532.083,
+"k": "ag_rh_o01x",
+"tr": "whipL"
+},
+{
+"a": 533.611,
+"k": "W:skin:sun",
+"tr": "light"
+},
+{
+"a": 537.011,
+"k": "ag_rh_o01y",
+"tr": "whipL"
+},
+{
+"a": 539.611,
+"k": "ag_rh_o01z",
+"tr": "whip"
+},
+{
+"a": 541.163,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 545.856,
+"k": "W:tea|1",
+"tr": "portal"
+},
+{
+"a": 549.022,
+"k": "ag_rh_o02x",
+"tr": "whip"
+},
+{
+"a": 551.989,
+"k": "ag_rh_o02y",
+"tr": "whipL"
+},
+{
+"a": 554.589,
+"k": "W:wide:night|1",
+"tr": "light"
+},
+{
+"a": 556.761,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 561.163,
+"k": "ag_rh_o02z",
+"tr": "whipL"
+},
+{
+"a": 564.13,
+"k": "ag_rh_o03x",
+"tr": "whip"
+},
+{
+"a": 567.096,
+"k": "W:hand|2",
+"tr": "light"
+},
+{
+"a": 572.784,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 578.661,
+"k": "ag_rh_o03y",
+"tr": "whipL"
+},
+{
+"a": 581.628,
+"k": "ag_rh_o03z",
+"tr": "whipL"
+},
+{
+"a": 584.594,
+"k": "W:sun|1",
+"tr": "light"
+},
+{
+"a": 589.432,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 595.002,
+"k": "ag_rh_b01x",
+"tr": "whipL"
+},
+{
+"a": 598.035,
+"k": "ag_rh_b01y",
+"tr": "whip"
+},
+{
+"a": 600.502,
+"k": "W:skin:sun|1",
+"tr": "light"
+},
+{
+"a": 604.334,
+"k": "ag_rh_b01z",
+"tr": "whip"
+},
+{
+"a": 606.492,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 612.258,
+"k": "ag_rh_b02x",
+"tr": "whipL"
+},
+{
+"a": 615.225,
+"k": "W:nail|1",
+"tr": "light"
+},
+{
+"a": 618.823,
+"k": "ag_rh_b02z",
+"tr": "whipL"
+},
+{
+"a": 621.29,
+"k": "ag_rh_b03x",
+"tr": "whip"
+},
+{
+"a": 624.036,
+"k": "W:nail",
+"tr": "light"
+},
+{
+"a": 626.036,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 630.357,
+"k": "w02@18.3",
+"tr": "whipL"
+},
+{
+"a": 630.611,
+"k": "W:nail:cut",
+"tr": "light"
+},
+{
+"a": 634.353,
+"k": "W:nail:cut|1",
+"tr": "light"
+},
+{
+"a": 637.485,
+"k": "ag_rh_b03y",
+"tr": "whipL"
+},
+{
+"a": 640.085,
+"k": "ag_rh_b03z",
+"tr": "whip"
+},
+{
+"a": 643.037,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 646.454,
+"k": "W:nail:push|1",
+"tr": "portal"
+},
+{
+"a": 650.952,
+"k": "ag_rh_x02x",
+"tr": "whip"
+},
+{
+"a": 653.852,
+"k": "ag_rh_x02y",
+"tr": "whipL"
+},
+{
+"a": 656.51,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 662.049,
+"k": "W:nail:oil|1",
+"tr": "portal"
+},
+{
+"a": 666.313,
+"k": "ag_rh_x03x",
+"tr": "whipL"
+},
+{
+"a": 669.28,
+"k": "ag_rh_x03y",
+"tr": "whip"
+},
+{
+"a": 672.28,
+"k": "W:nail:file|1",
+"tr": "light"
+},
+{
+"a": 675.094,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 679.94,
+"k": "ag_rh_x03z",
+"tr": "whipL"
+},
+{
+"a": 682.873,
+"k": "W:skin:block|1",
+"tr": "light"
+},
+{
+"a": 687.281,
+"k": "W:hand:sun|1",
+"tr": "light"
+},
+{
+"a": 690.611,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 694.834,
+"k": "W:wrap|1",
+"tr": "portal"
+},
+{
+"a": 698.02,
+"k": "W:hand:curl|2",
+"tr": "light"
+},
+{
+"a": 702.194,
+"k": "W:hand:palm|2",
+"tr": "light"
+},
+{
+"a": 705.757,
+"k": "W:skin:balm|1",
+"tr": "light"
+},
+{
+"a": 708.208,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 713.44,
+"k": "W:gloves:night|1",
+"tr": "portal"
+},
+{
+"a": 717.381,
+"k": "W:hand:night|1",
+"tr": "light"
+},
+{
+"a": 720.71,
+"k": "W:skin:dry|2",
+"tr": "light"
+},
+{
+"a": 725.029,
+"k": "W:basin|2",
+"tr": "light"
+},
+{
+"a": 726.894,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 730.954,
+"k": "W:skin:thin|1",
+"tr": "portal"
+},
+{
+"a": 734.05,
+"k": "W:cream:jar|1",
+"tr": "light"
+},
+{
+"a": 738.135,
+"k": "W:cream|1",
+"tr": "light"
+},
+{
+"a": 740.679,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 745.932,
+"k": "W:cream:press|1",
+"tr": "portal"
+},
+{
+"a": 750.394,
+"k": "W:cream:knuckles|1",
+"tr": "light"
+},
+{
+"a": 754.246,
+"k": "W:table|2",
+"tr": "light"
+},
+{
+"a": 758.34,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 762.78,
+"k": "W:wide|3",
+"tr": "portal"
+},
+{
+"a": 767.009,
+"k": "W:towel|1",
+"tr": "light"
+},
+{
+"a": 770.626,
+"k": "W:skin:rub|1",
+"tr": "light"
+},
+{
+"a": 775.038,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 779.785,
+"k": "W:timer|1",
+"tr": "portal"
+},
+{
+"a": 783.78,
+"k": "W:skin:minute|1",
+"tr": "light"
+},
+{
+"a": 787.164,
+"k": "W:tea|2",
+"tr": "light"
+},
+{
+"a": 789.644,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 795.084,
+"k": "W:wide:night|2",
+"tr": "portal"
+},
+{
+"a": 798.846,
+"k": "W:hand|3",
+"tr": "light"
+},
+{
+"a": 801.996,
+"k": "W:skin:cream|1",
+"tr": "light"
+},
+{
+"a": 806.135,
+"k": "W:skin:soap|1",
+"tr": "light"
+},
+{
+"a": 808.953,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 813.241,
+"k": "W:skin:sweat|1",
+"tr": "portal"
+},
+{
+"a": 817.758,
+"k": "W:gloves|1",
+"tr": "light"
+},
+{
+"a": 821.663,
+"k": "W:skin:cotton|1",
+"tr": "light"
+},
+{
+"a": 824.851,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 829.045,
+"k": "W:gloves:double|1",
+"tr": "portal"
+},
+{
+"a": 834.076,
+"k": "W:skin:balm",
+"tr": "light"
+},
+{
+"a": 837.748,
+"k": "W:gloves:pair|1",
+"tr": "light"
+},
+{
+"a": 842.064,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 847.591,
+"k": "W:skin:hot|1",
+"tr": "portal"
+},
+{
+"a": 851.641,
+"k": "W:basin:hot|1",
+"tr": "light"
+},
+{
+"a": 855.079,
+"k": "W:basin:warm|1",
+"tr": "light"
+},
+{
+"a": 859.69,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 862.956,
+"k": "W:skin:warm|1",
+"tr": "portal"
+},
+{
+"a": 866.772,
+"k": "W:hand|1",
+"tr": "light"
+},
+{
+"a": 869.977,
+"k": "W:skin:balm|2",
+"tr": "light"
+},
+{
+"a": 873.821,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 878.565,
+"k": "W:gloves:night|2",
+"tr": "portal"
+},
+{
+"a": 882.147,
+"k": "W:hand:night|2",
+"tr": "light"
+},
+{
+"a": 886.719,
+"k": "W:skin:dry|3",
+"tr": "light"
+},
+{
+"a": 891.226,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 897.211,
+"k": "W:basin|3",
+"tr": "portal"
+},
+{
+"a": 900.56,
+"k": "W:table|3",
+"tr": "light"
+},
+{
+"a": 904.897,
+"k": "W:wide|4",
+"tr": "light"
+},
+{
+"a": 910.147,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 916.137,
+"k": "W:tea|3",
+"tr": "portal"
+},
+{
+"a": 919.252,
+"k": "W:wide:night|3",
+"tr": "light"
+},
+{
+"a": 923.356,
+"k": "W:hand|4",
+"tr": "light"
+},
+{
+"a": 926.543,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 932.508,
+"k": "W:wrap|2",
+"tr": "portal"
+},
+{
+"a": 936.99,
+"k": "W:hand:curl|3",
+"tr": "light"
+},
+{
+"a": 940.86,
+"k": "W:hand:palm|3",
+"tr": "light"
+},
+{
+"a": 944.237,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 949.17,
+"k": "W:nail|2",
+"tr": "portal"
+},
+{
+"a": 953.418,
+"k": "W:nail:cut|2",
+"tr": "light"
+},
+{
+"a": 957.055,
+"k": "W:nail:push|2",
+"tr": "light"
+},
+{
+"a": 960.845,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 964.937,
+"k": "W:nail:oil|2",
+"tr": "portal"
+},
+{
+"a": 968.951,
+"k": "W:nail:file|2",
+"tr": "light"
+},
+{
+"a": 972.355,
+"k": "W:sun|2",
+"tr": "light"
+},
+{
+"a": 977.332,
+"k": "AV",
+"tr": "light"
+},
+{
+"a": 982.257,
+"k": "W:skin:sun|2",
+"tr": "portal"
+},
+{
+"a": 986.038,
+"k": "W:skin:block|2",
+"tr": "light"
+},
+{
+"a": 989.207,
+"k": "W:hand:sun|2",
+"tr": "light"
+},
+{
+"a": 995.099,
+"k": "AV",
+"tr": "whip"
+},
+{
+"a": 999.739,
+"k": "W:skin:thin|2",
+"tr": "portal"
+},
+{
+"a": 1003.286,
+"k": "W:cream:jar|2",
+"tr": "light"
+},
+{
+"a": 1009.181,
+"k": "AV",
+"tr": "push"
+},
+{
+"a": 1014.249,
+"k": "W:cream|2",
+"tr": "portal"
+},
+{
+"a": 1018.174,
+"k": "W:cream:press|2",
+"tr": "light"
+},
+{
+"a": 1021.487,
+"k": "W:cream:knuckles|2",
+"tr": "light"
+},
+{
+"a": 1026.896,
+"k": "AV",
+"tr": "whipL"
+},
+{
+"a": 1030.851,
+"k": "W:towel|2",
+"tr": "portal"
+},
+{
+"a": 1034.542,
+"k": "W:skin:rub|2",
+"tr": "light"
+},
+{
+"a": 1037.622,
+"k": "W:timer|2",
+"tr": "light"
+}
+]
+}

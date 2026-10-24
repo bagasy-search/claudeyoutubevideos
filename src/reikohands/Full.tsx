@@ -79,8 +79,10 @@ const M = makeVideo({
     if (b.k === "AV") return mano({ ...AV(b.a, b.tr), a: b.a });
     if (b.k.startsWith("W:")) return { a: b.a, tr: b.tr, p: [960, 470], r: (t) => <World t={t} name={b.k.slice(2)} a={b.a} /> };
     // tramo de toma "o02@4.1": la toma corre desde su segundo 4,1 (cada tramo se usa una sola vez; la toma avanza)
+    // plano de agnes "ag_rh_b01x": ~3 s, se usa entero desde su cuadro 0
     const [k, off] = b.k.split("@");
-    return mano({ a: b.a, tr: b.tr, p: [960, 470], k: b.k, r: (t) => <AbsoluteFill style={{ transform: `scale(${1.0 + 0.06 * Math.min(1, Math.max(0, (t - b.a) / 6))})` }}><Vid id={"ltx_" + k} from={+(off ?? 0)} at={b.a} /></AbsoluteFill> });
+    const id = k.startsWith("ag_") ? k : "ltx_" + k;
+    return mano({ a: b.a, tr: b.tr, p: [960, 470], k: b.k, r: (t) => <AbsoluteFill style={{ transform: `scale(${1.0 + 0.06 * Math.min(1, Math.max(0, (t - b.a) / 6))})` }}><Vid id={id} from={+(off ?? 0)} at={b.a} /></AbsoluteFill> });
   }),
   pieces: (t) => {
     const L: React.ReactNode[] = [], T = SPEC.L;
