@@ -170,7 +170,7 @@ const build = () => {
   b("entonces tienes dos caminos", "BK");
   { const r1 = Q("el motor esta frio"), r2 = Q("le sacas el agua al aire");
     pc("entonces tienes dos caminos", (t, a, bb) => <VsCard t={t} at={a} out={bb - 0.15} y={540}
-      l={{ h: "CALENTAR EL VIDRIO", rows: [{ at: r1, tx: "TARDA: MOTOR FRÍO" }] }} r={{ h: "SECAR EL AIRE", rows: [{ at: r2, tx: "BAJA EL PUNTO DE ROCÍO" }] }} />); }
+      l={{ h: "SECAR EL AIRE", rows: [{ at: r2, tx: "BAJA EL PUNTO DE ROCÍO" }] }} r={{ h: "CALENTAR EL VIDRIO", rows: [{ at: r1, tx: "TARDA: MOTOR FRÍO" }] }} />); }
   big("el primer camino tarda 10 minutos", "10 MIN vs 30 SEG", GREEN, "#0a3a1a", undefined, 110);
   // ================= PUNTO 2: el A/C seca =================
   b("una maquina que casi nadie usa", "BK");
