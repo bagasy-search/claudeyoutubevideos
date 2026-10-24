@@ -205,9 +205,9 @@ const Cuerpo: React.FC<{ x: number; P: Pose; look: Look; color: string; principa
       {cara && principal && <Rostro x={e.cab[0]} y={e.cab[1]} c={cara} inclin={inclin} papel={look.papel} />}
       {brazo(0)}
       {look.papel && principal && (
-        <g fill="#9c8a6c" stroke="#3a2c1c" strokeWidth={1.2}>
-          {[e.hombro, e.cuello, [x, P.y] as [number, number], e.brazos[0].codo, e.piernas[0].rod].map((q, i) => (
-            <circle key={i} cx={q[0]} cy={q[1]} r={look.ancho * 0.36} />
+        <g fill="#5e4e3a" stroke="#2a1f14" strokeWidth={1}>
+          {[e.hombro, [x, P.y] as [number, number], e.brazos[0].codo, e.piernas[0].rod].map((q, i) => (
+            <circle key={i} cx={q[0]} cy={q[1]} r={look.ancho * 0.26} />
           ))}
         </g>
       )}
@@ -245,8 +245,14 @@ const Rostro: React.FC<{ x: number; y: number; c: Cara; inclin: number; papel?: 
         </g>
       )}
       {boca > 0.08 ? (
-        <ellipse cx={bx} cy={11} rx={bw * 0.75} ry={2 + 7 * boca} fill="#fff6e8" />
-      ) : papel ? null : (
+        <path
+          d={`M${bx - bw},${8} Q${bx},${8 + 2 * c.sonrisa} ${bx + bw},${8 - 1.5 * c.sonrisa} Q${bx + bw * 0.7},${10 + 9 * boca} ${bx},${10 + 9 * boca} Q${bx - bw * 0.8},${10 + 9 * boca} ${bx - bw},${8} Z`}
+          fill="#fff6e8"
+          stroke="#fff6e8"
+          strokeWidth={1.6}
+          strokeLinejoin="round"
+        />
+      ) : (
         <path
           d={`M${bx - bw},${9} Q${bx},${9 + curvaB} ${bx + bw},${9 - 1.5 * c.sonrisa}`}
           stroke="#fff6e8"

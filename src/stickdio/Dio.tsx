@@ -170,7 +170,7 @@ const FotoBoxeador: React.FC<{ t: number }> = ({ t }) => {
       <rect x={FOTO.x - FOTO.w / 2} y={FOTO.y - FOTO.h / 2} width={FOTO.w} height={FOTO.h} fill="#e3cfa6" />
       <rect x={FOTO.x - FOTO.w / 2} y={FOTO.y + 54} width={FOTO.w} height={FOTO.h / 2 - 54} fill="#cdb284" />
       <g transform={`translate(${FOTO.x - 8},${FOTO.y + 72}) scale(0.44) translate(0,${-SUELO})`}>
-        <Figura x={0} P={G} mira={1} look={{ ...JOVEN, vincha: "#7a3a2a", guantes: "#7a3a2a" }} t={t} cara={{ giro: 0.2, sonrisa: 0, parpado: 0, enojo: 0.6 }} />
+        <Figura x={0} P={G} mira={1} look={{ ...JOVEN, vincha: "#7a3a2a", guantes: "#7a3a2a" }} t={t} cara={{ giro: 0.6, sonrisa: 0, parpado: 0, enojo: 0.6 }} />
       </g>
       {[FOTO.y + 14, FOTO.y + 37].map((y, i) => (
         <line key={i} x1={FOTO.x - FOTO.w / 2} x2={FOTO.x + FOTO.w / 2} y1={y} y2={y} stroke="#8a3a2a" strokeWidth={5} opacity={0.85} />
@@ -218,7 +218,7 @@ const ernesto = (t: number) => {
   const taza = t < 20.0 ? 0 : undefined;
   const x = ERNESTO_X - 14 * suave(t, V.pie, V.pie + 0.5) + 26 * seco(t, V.patea + 0.1, V.patea + 0.35);
   const mirada = suave(t, V.ernesto - 0.1, V.ernesto + 0.3) * (1 - suave(t, V.limpio + 0.2, V.limpio + 0.5));
-  return { x, P, mira: g.mira, taza, cara: { giro: g.bump * 0.9 + 0.1, sonrisa: 0, parpado: mirada * 0.5, enojo: 0.35 * suave(t, V.pie, V.pie + 0.4) } };
+  return { x, P, mira: g.mira, taza, cara: { giro: 0.55 + g.bump * 0.45, sonrisa: 0.15, parpado: mirada * 0.5, enojo: 0.35 * suave(t, V.pie, V.pie + 0.4) } };
 };
 
 const maton = (t: number) => {
@@ -247,7 +247,7 @@ const maton = (t: number) => {
     true,
   );
   const risa = suave(t, V.rie, V.rie + 0.2) * (1 - suave(t, V.pie + 0.2, V.pie + 0.5));
-  return { x: mov.x, P: t < 21.6 ? W : P, cara: { giro: 0.15, sonrisa: 0, parpado: 0, enojo: 0.7 * (1 - risa), boca: risa * (0.6 + 0.3 * Math.sin(t * 16)) } };
+  return { x: mov.x, P: t < 21.6 ? W : P, cara: { giro: 0.55, sonrisa: 0.4 * risa, parpado: 0, enojo: 0.7 * (1 - risa), boca: risa * (0.6 + 0.3 * Math.sin(t * 16)) } };
 };
 
 // ---------- cámaras ----------
@@ -314,7 +314,7 @@ const Cafeteria: React.FC<{ t: number; cam: Cam }> = ({ t, cam }) => {
       {/* Marta detrás de la barra */}
       <Lam D={1180} cam={cam} sombra>
         <g transform={`translate(0,${suelo(1180) - SUELO})`}>
-          <Figura x={MARTA_X} P={mP} mira={-1} look={MARTA} t={t} cara={{ giro: 0.15 + 0.7 * suave(t, V.patea + 0.3, V.patea + 0.6), sonrisa: 0, parpado: 0, boca: 0.4 * suave(t, V.patea + 0.3, V.patea + 0.6) }} bordes={CANTO} />
+          <Figura x={MARTA_X} P={mP} mira={-1} look={MARTA} t={t} cara={{ giro: 0.55 + 0.4 * suave(t, V.patea + 0.3, V.patea + 0.6), sonrisa: 0.5 * (1 - suave(t, V.patea + 0.3, V.patea + 0.6)), parpado: 0, boca: 0.4 * suave(t, V.patea + 0.3, V.patea + 0.6) }} bordes={CANTO} />
         </g>
       </Lam>
       <Lam D={1150} cam={cam} sombra fotos={[{ src: "stickdio/cafe_barra.png", x: 560, y: suelo(1150) + 8 - 144, w: 650, h: 288 }]} />
@@ -370,7 +370,7 @@ const Contrapicado: React.FC<{ t: number }> = ({ t }) => {
   ], true);
   // mira a todos de a uno y a "mire" clava los ojos en la cámara
   const barrido = suave(t, V.todo - 0.2, V.todo + 0.6) * (1 - suave(t, V.mire - 0.3, V.mire));
-  const giro = 0.15 + 0.5 * barrido * (0.5 + 0.5 * Math.sin(t * 3)) + 0.85 * suave(t, V.mire - 0.3, V.mire + 0.1);
+  const giro = 0.55 + 0.3 * barrido * (0.5 + 0.5 * Math.sin(t * 3)) + 0.85 * suave(t, V.mire - 0.3, V.mire + 0.1);
   const [lx, ly] = aPantalla(0, -40, F, cam);
   return (
     <AbsoluteFill style={{ backgroundColor: "#2a160c" }}>
@@ -512,9 +512,9 @@ const Ring: React.FC<{ t: number }> = ({ t }) => {
         {[ex, rx, refX].map((sx, i) => (
           <ellipse key={i} cx={sx + 8} cy={SUELO + 2} rx={i === 1 ? 46 + 60 * cae : 42} ry={6} fill="#0a0c18" opacity={0.5} />
         ))}
-        <Figura x={refX} P={refP} mira={-1} look={REFERI} t={t} cara={{ giro: 0.3, sonrisa: 0, parpado: 0 }} bordes={CANTO_FRIO} />
-        <Figura x={rx} P={rP} mira={-1} look={RIVAL} rot={88 * cae} t={t} cara={{ giro: 0, sonrisa: 0, parpado: cae > 0.5 ? 1 : 0, enojo: 0.6 * (1 - cae) }} bordes={CANTO_FRIO} />
-        <Figura x={ex} P={eP} mira={1} look={JOVEN} t={t} cara={{ giro: gana * 0.8, sonrisa: 0, parpado: 0, enojo: 0.7 * (1 - gana), boca: 0.5 * gana }} bordes={CANTO_FRIO} />
+        <Figura x={refX} P={refP} mira={-1} look={REFERI} t={t} cara={{ giro: 0.6, sonrisa: 0.2, parpado: 0 }} bordes={CANTO_FRIO} />
+        <Figura x={rx} P={rP} mira={-1} look={RIVAL} rot={88 * cae} t={t} cara={{ giro: 0.5, sonrisa: 0, parpado: cae > 0.5 ? 1 : 0, enojo: 0.6 * (1 - cae) }} bordes={CANTO_FRIO} />
+        <Figura x={ex} P={eP} mira={1} look={JOVEN} t={t} cara={{ giro: 0.55 + gana * 0.4, sonrisa: gana, parpado: 0, enojo: 0.7 * (1 - gana), boca: 0.5 * gana }} bordes={CANTO_FRIO} />
       </Lam>
       {/* la lona va ADELANTE: las cuerdas pasan por delante de los peleadores */}
       <Lam D={F} cam={cam} sombra fotos={[{ src: "stickdio/ring_lona.png", x: -60, y: 300 - 531 * 0.46 + (1086 * 0.46) / 2, w: 1524 * 0.46, h: 1086 * 0.46 }]} />
