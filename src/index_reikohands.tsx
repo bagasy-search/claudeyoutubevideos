@@ -3,6 +3,7 @@ import { AbsoluteFill, Composition, registerRoot, useCurrentFrame } from "remoti
 import { HandsWorld, sceneOf } from "./reikohands/hands3d";
 import { Img, staticFile } from "remotion";
 import { Polaroids, Notes, RedRing } from "./reikohands/papel";
+import { Full, FULL_FRAMES } from "./reikohands/Full";
 // prueba del mundo: una escena por props (sólo stills locales)
 const WorldTest: React.FC<{ name: string; u: number }> = ({ name, u }) => {
   const f = useCurrentFrame();
@@ -21,6 +22,7 @@ const Root = () => (
   <>
     <Composition id="PapelTest" component={PapelTest} durationInFrames={30} fps={30} width={1920} height={1080} defaultProps={{ k: 0 }} />
     <Composition id="HandsWorld" component={WorldTest} durationInFrames={30} fps={30} width={1920} height={1080} defaultProps={{ name: "wide", u: 3 }} />
+    <Composition id="ReikohandsFull" component={Full} durationInFrames={FULL_FRAMES} fps={30} width={1920} height={1080} />
   </>
 );
 registerRoot(Root);
