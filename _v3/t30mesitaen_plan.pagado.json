@@ -1,0 +1,2112 @@
+{
+ "total": 796.814,
+ "avatarEnd": 796.814,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0.0,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 5.4,
+   "dur": 2.8,
+   "sec": "S0",
+   "lugar": "c19",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c19_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 8.2,
+   "dur": 2.8,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l48_tell_fa.jpg"
+  },
+  {
+   "t": 11,
+   "dur": 4.46,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a23_gate_desk.jpg"
+  },
+  {
+   "t": 15.46,
+   "dur": 5.38,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 20.84,
+   "dur": 2.46,
+   "sec": "S0",
+   "lugar": "c04",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c04_03.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 23.3,
+   "dur": 4.2,
+   "sec": "S0",
+   "lugar": "c24",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_06.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 27.5,
+   "dur": 5.06,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a02_statement.jpg"
+  },
+  {
+   "t": 32.56,
+   "dur": 4.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 36.9,
+   "dur": 5.0,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l32_pack_shoes.jpg"
+  },
+  {
+   "t": 41.9,
+   "dur": 3.46,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l12_phone_fine.jpg"
+  },
+  {
+   "t": 45.36,
+   "dur": 3.46,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l39_gate_snack.jpg"
+  },
+  {
+   "t": 48.82,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 52.22,
+   "dur": 4.78,
+   "sec": "S0",
+   "lugar": "c24",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_13.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 57.0,
+   "dur": 3.72,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a04_man_bills.jpg"
+  },
+  {
+   "t": 60.72,
+   "dur": 3.72,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l44_service_desk.jpg"
+  },
+  {
+   "t": 64.44,
+   "dur": 4.46,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 68.9,
+   "dur": 1.25,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l38_snack_pack.jpg"
+  },
+  {
+   "t": 70.15,
+   "dur": 7.19,
+   "kind": "componente",
+   "sec": "S0",
+   "comp": "BigStat",
+   "props": {
+    "value": 11,
+    "unit": "things",
+    "label": "WHAT AIRLINES OVERCHARGE SENIORS FOR",
+    "compare": "Not opinions. What really happens.",
+    "photo": "img/t30mesitaen_l08_counting.jpg",
+    "tone": "white",
+    "at": 70.4,
+    "compareAt": 72.36
+   },
+   "bed": "img/t30mesitaen_l01_tray_coffee_blur.jpg"
+  },
+  {
+   "t": 77.34,
+   "dur": 4.38,
+   "sec": "S0",
+   "lugar": "c30",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c30_03.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 81.72,
+   "dur": 5.02,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 86.74,
+   "dur": 3.255,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l43_board_cancel.jpg"
+  },
+  {
+   "t": 89.995,
+   "dur": 3.255,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a22_family_board.jpg"
+  },
+  {
+   "t": 93.25,
+   "dur": 7.07,
+   "kind": "componente",
+   "sec": "S0",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": 1,
+    "label": "TRAY TABLE UP · Nº 01",
+    "title": "LINDA",
+    "sub": "35 years in the air · Columbus, Ohio",
+    "stamp": "",
+    "typeAt": 93.5,
+    "stampAt": 95.14
+   },
+   "bed": "img/t30mesitaen_l01_tray_coffee_blur.jpg"
+  },
+  {
+   "t": 100.32,
+   "dur": 4.88,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 105.2,
+   "dur": 4.11,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l10_porch.jpg"
+  },
+  {
+   "t": 109.31,
+   "dur": 4.11,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l09_fold_tray.jpg"
+  },
+  {
+   "t": 113.42,
+   "dur": 3.96,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 117.38,
+   "dur": 2.83,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l54_pour_coffee.jpg"
+  },
+  {
+   "t": 120.21,
+   "dur": 2.83,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l53_window_sunrise.jpg"
+  },
+  {
+   "t": 123.04,
+   "dur": 3.25,
+   "sec": "S0",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a12_calendar_tuesday.jpg"
+  },
+  {
+   "t": 126.29,
+   "dur": 3.25,
+   "sec": "S0",
+   "lugar": "c03",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c03_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 129.54,
+   "dur": 4.94,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 134.48,
+   "dur": 3.66,
+   "sec": "S0",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l27_policy_table.jpg"
+  },
+  {
+   "t": 138.14,
+   "dur": 4.72,
+   "sec": "S0",
+   "lugar": "c28",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c28_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 139.75,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 01",
+    "part": "THE SENIOR FARE"
+   },
+   "bed": "img/t30mesitaen_l11_two_prices_blur.jpg"
+  },
+  {
+   "t": 142.86,
+   "dur": 3.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 146.38,
+   "dur": 4.63,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a16_cane_gate.jpg"
+  },
+  {
+   "t": 151.01,
+   "dur": 10.13,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30mesitaen_l02_counter_offer.jpg",
+    "rightImg": "img/t30mesitaen_a11_two_results.jpg",
+    "leftHead": "THE SENIOR FARE",
+    "rightHead": "A REGULAR SALE FARE",
+    "leftText": "Off the full fare",
+    "rightText": "Can come in lower",
+    "stamp": "COMPARE THE TOTAL",
+    "leftAt": 151.26,
+    "rightAt": 156.88
+   },
+   "bed": "img/t30mesitaen_l11_two_prices_blur.jpg"
+  },
+  {
+   "t": 161.14,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 165.74,
+   "dur": 2.87,
+   "sec": "S1",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l11_two_prices.jpg"
+  },
+  {
+   "t": 168.61,
+   "dur": 2.87,
+   "sec": "S1",
+   "lugar": "c23",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c23_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 171.48,
+   "dur": 2.88,
+   "sec": "S1",
+   "lugar": "c20",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c20_07.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 174.36,
+   "dur": 3.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 178.06,
+   "dur": 3.227,
+   "sec": "S1",
+   "lugar": "c12",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c12_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 181.287,
+   "dur": 3.227,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a06_shop_shelves.jpg"
+  },
+  {
+   "t": 184.513,
+   "dur": 3.227,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a52_notepad_sums.jpg"
+  },
+  {
+   "t": 187.49,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 02",
+    "part": "PICKING YOUR SEAT"
+   },
+   "bed": "img/t30mesitaen_l13_seatmap_blur.jpg"
+  },
+  {
+   "t": 187.74,
+   "dur": 3.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 190.9,
+   "dur": 2.908,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a24_popup_checkout.jpg"
+  },
+  {
+   "t": 193.808,
+   "dur": 2.908,
+   "sec": "S2",
+   "lugar": "c26",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c26_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 196.715,
+   "dur": 2.908,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a45_red_board.jpg"
+  },
+  {
+   "t": 199.623,
+   "dur": 3.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 203.443,
+   "dur": 7.287,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30mesitaen_l13_seatmap.jpg",
+    "x": 1380,
+    "y": 520,
+    "r": 170,
+    "note": "Free at check-in",
+    "circleAt": 204.48,
+    "noteAt": 207.84
+   },
+   "bed": "img/t30mesitaen_l13_seatmap_blur.jpg"
+  },
+  {
+   "t": 210.73,
+   "dur": 4.973,
+   "sec": "S2",
+   "lugar": "c24",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_03.mp4",
+   "real": true,
+   "rate": 0.998
+  },
+  {
+   "t": 215.703,
+   "dur": 4.22,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 219.923,
+   "dur": 2.805,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a38_refill_station.jpg"
+  },
+  {
+   "t": 222.728,
+   "dur": 2.805,
+   "sec": "S2",
+   "lugar": "c04",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c04_11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 225.534,
+   "dur": 2.805,
+   "sec": "S2",
+   "lugar": "c10",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c10_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 228.339,
+   "dur": 2.9,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a54_carousel_flap.jpg"
+  },
+  {
+   "t": 231.239,
+   "dur": 3.244,
+   "sec": "S2",
+   "lugar": "c14",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c14_02.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 234.483,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 237.53,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 03",
+    "part": "WHEELCHAIR & ASSISTANCE"
+   },
+   "bed": "img/t30mesitaen_l17_wheelchair_desk_blur.jpg"
+  },
+  {
+   "t": 237.783,
+   "dur": 5.2,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a58_wheelchairs_row.jpg"
+  },
+  {
+   "t": 242.983,
+   "dur": 3.07,
+   "sec": "S3",
+   "lugar": "c28",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c28_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 246.053,
+   "dur": 3.07,
+   "sec": "S3",
+   "lugar": "c05",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c05_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 249.123,
+   "dur": 5.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 254.483,
+   "dur": 2.147,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a44_cpap_xray.jpg"
+  },
+  {
+   "t": 256.63,
+   "dur": 9.43,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30mesitaen_doc_assist.png",
+    "aspect": 0.7857,
+    "chip": "U.S. LAW · 14 CFR 382",
+    "source": "Source: U.S. DOT · 14 CFR 382.31 · 382.95",
+    "highlights": [
+     {
+      "x": 52.64,
+      "y": 29.64,
+      "w": 26.09,
+      "h": 2.43,
+      "at": 256.88
+     },
+     {
+      "x": 7.27,
+      "y": 32.36,
+      "w": 15.55,
+      "h": 2.43,
+      "at": 256.88
+     },
+     {
+      "x": 45.55,
+      "y": 59.93,
+      "w": 30.27,
+      "h": 2.43,
+      "at": 261.16
+     }
+    ],
+    "note": {
+     "text": "Assistance is free",
+     "at": 263.46
+    }
+   },
+   "bed": "img/t30mesitaen_l17_wheelchair_desk_blur.jpg"
+  },
+  {
+   "t": 266.063,
+   "dur": 1.4,
+   "sec": "S3",
+   "lugar": "c19",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c19_11.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 267.463,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 271.063,
+   "dur": 3.95,
+   "sec": "S3",
+   "lugar": "c10",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c10_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 275.013,
+   "dur": 3.95,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a21_boarding_crowd.jpg"
+  },
+  {
+   "t": 278.963,
+   "dur": 3.28,
+   "sec": "S3",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l07_crew_photo.jpg"
+  },
+  {
+   "t": 282.243,
+   "dur": 4.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 286.983,
+   "dur": 3.02,
+   "sec": "S3",
+   "lugar": "c24",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_08.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 288.01,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 04",
+    "part": "PRIORITY BOARDING"
+   },
+   "bed": "img/t30mesitaen_l21_first_board_blur.jpg"
+  },
+  {
+   "t": 290.003,
+   "dur": 3.02,
+   "sec": "S3",
+   "lugar": "c27",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c27_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 293.023,
+   "dur": 5.377,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 298.4,
+   "dur": 8.05,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30mesitaen_l22_line_watch.jpg",
+    "rightImg": "img/t30mesitaen_l21_first_board.jpg",
+    "leftHead": "PAY TO BOARD EARLY",
+    "rightHead": "ASK AT THE GATE",
+    "leftText": "A fee for a spot in line",
+    "rightText": "Extra time, no charge",
+    "stamp": "JUST ASK",
+    "leftAt": 298.7,
+    "rightAt": 301.66
+   },
+   "bed": "img/t30mesitaen_l21_first_board_blur.jpg"
+  },
+  {
+   "t": 306.45,
+   "dur": 3.233,
+   "sec": "S4",
+   "lugar": "c16",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c16_10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 309.683,
+   "dur": 3.45,
+   "sec": "S4",
+   "lugar": "c04",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c04_12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 313.133,
+   "dur": 3.45,
+   "sec": "S4",
+   "lugar": "c24",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_10.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 316.583,
+   "dur": 5.44,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 322.023,
+   "dur": 3.38,
+   "sec": "S4",
+   "lugar": "c03",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c03_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 325.403,
+   "dur": 3.38,
+   "sec": "S4",
+   "lugar": "c20",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c20_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 328.783,
+   "dur": 2.34,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a34_kitchen_phone.jpg"
+  },
+  {
+   "t": 330.87,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 05",
+    "part": "TRAVEL INSURANCE"
+   },
+   "bed": "img/t30mesitaen_l25_popup_blur.jpg"
+  },
+  {
+   "t": 331.123,
+   "dur": 4.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 335.303,
+   "dur": 4.6,
+   "sec": "S4",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l41_cpap.jpg"
+  },
+  {
+   "t": 339.903,
+   "dur": 3.6,
+   "sec": "S5",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l42_device_counter.jpg"
+  },
+  {
+   "t": 343.503,
+   "dur": 4.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 347.863,
+   "dur": 2.654,
+   "sec": "S5",
+   "lugar": "c23",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c23_06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 350.517,
+   "dur": 2.654,
+   "sec": "S5",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l26_card_call.jpg"
+  },
+  {
+   "t": 353.17,
+   "dur": 6.29,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30mesitaen_a25_card_back.jpg",
+    "x": 820,
+    "y": 560,
+    "r": 190,
+    "note": "Call this number first",
+    "circleAt": 353.42,
+    "noteAt": 356.86
+   },
+   "bed": "img/t30mesitaen_l25_popup_blur.jpg"
+  },
+  {
+   "t": 359.46,
+   "dur": 1.323,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a26_policy_papers.jpg"
+  },
+  {
+   "t": 360.783,
+   "dur": 3.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 364.143,
+   "dur": 3.62,
+   "sec": "S5",
+   "lugar": "c28",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c28_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 367.763,
+   "dur": 3.47,
+   "sec": "S5",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l25_popup.jpg"
+  },
+  {
+   "t": 371.233,
+   "dur": 3.47,
+   "sec": "S5",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l17_wheelchair_desk.jpg"
+  },
+  {
+   "t": 374.45,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 06",
+    "part": "PAYING IN DOLLARS"
+   },
+   "bed": "img/t30mesitaen_l28_cafe_terminal_blur.jpg"
+  },
+  {
+   "t": 374.703,
+   "dur": 3.86,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 378.563,
+   "dur": 3.44,
+   "sec": "S5",
+   "lugar": "c29",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c29_02.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 382.003,
+   "dur": 3.44,
+   "sec": "S5",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l29_market_abroad.jpg"
+  },
+  {
+   "t": 385.443,
+   "dur": 4.357,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 389.8,
+   "dur": 8.05,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30mesitaen_l28_cafe_terminal.jpg",
+    "rightImg": "img/t30mesitaen_a28_euro_coins.jpg",
+    "leftHead": "PAY IN DOLLARS",
+    "rightHead": "PAY IN LOCAL CURRENCY",
+    "leftText": "The merchant's rate",
+    "rightText": "Your bank's rate",
+    "stamp": "PICK LOCAL",
+    "leftAt": 390.1,
+    "rightAt": 394.36
+   },
+   "bed": "img/t30mesitaen_l28_cafe_terminal_blur.jpg"
+  },
+  {
+   "t": 397.85,
+   "dur": 3.977,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a05_register.jpg"
+  },
+  {
+   "t": 401.827,
+   "dur": 3.977,
+   "sec": "S6",
+   "lugar": "c13",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c13_06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 405.803,
+   "dur": 3.444,
+   "sec": "S6",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l15_ask_aisle.jpg"
+  },
+  {
+   "t": 409.0,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 07",
+    "part": "YOUR CHECKED BAG"
+   },
+   "bed": "img/t30mesitaen_l30_add_bag_blur.jpg"
+  },
+  {
+   "t": 409.247,
+   "dur": 3.48,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 412.727,
+   "dur": 2.74,
+   "sec": "S7",
+   "lugar": "c04",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c04_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 415.467,
+   "dur": 3.0,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a15_checkin_screen.jpg"
+  },
+  {
+   "t": 418.467,
+   "dur": 3.01,
+   "sec": "S7",
+   "lugar": "c21",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c21_12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 421.477,
+   "dur": 3.01,
+   "sec": "S7",
+   "lugar": "c17",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c17_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 424.487,
+   "dur": 3.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 428.067,
+   "dur": 3.513,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a32_hanging_scale.jpg"
+  },
+  {
+   "t": 431.58,
+   "dur": 6.61,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30mesitaen_l31_scale.jpg",
+    "x": 1000,
+    "y": 420,
+    "r": 150,
+    "note": "Weigh it at home",
+    "circleAt": 432.61,
+    "noteAt": 435.59
+   },
+   "bed": "img/t30mesitaen_l30_add_bag_blur.jpg"
+  },
+  {
+   "t": 438.19,
+   "dur": 2.357,
+   "sec": "S7",
+   "lugar": "c24",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 440.547,
+   "dur": 3.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 444.047,
+   "dur": 2.8,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a18_woman_bags_back.jpg"
+  },
+  {
+   "t": 446.847,
+   "dur": 3.49,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a13_seatmap_phone.jpg"
+  },
+  {
+   "t": 447.48,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 08",
+    "part": "BOOKING BY PHONE"
+   },
+   "bed": "img/t30mesitaen_l33_call_book_blur.jpg"
+  },
+  {
+   "t": 450.337,
+   "dur": 3.49,
+   "sec": "S7",
+   "lugar": "c20",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c20_08.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 453.827,
+   "dur": 3.26,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 457.087,
+   "dur": 4.2,
+   "sec": "S8",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l33_call_book.jpg"
+  },
+  {
+   "t": 461.287,
+   "dur": 4.56,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a01_ticket_counter.jpg"
+  },
+  {
+   "t": 465.847,
+   "dur": 4.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 470.587,
+   "dur": 1.553,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a35_mouse_hands.jpg"
+  },
+  {
+   "t": 472.14,
+   "dur": 6.99,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": 30,
+    "unit": "minutes",
+    "label": "WITH A GRANDKID AT THE COMPUTER",
+    "compare": "You decide. They drive the mouse.",
+    "photo": "img/t30mesitaen_l34_grandson.jpg",
+    "tone": "white",
+    "at": 473.21,
+    "compareAt": 476.53
+   },
+   "bed": "img/t30mesitaen_l33_call_book_blur.jpg"
+  },
+  {
+   "t": 479.13,
+   "dur": 3.937,
+   "sec": "S8",
+   "lugar": "c08",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c08_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 482.82,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 09",
+    "part": "WATER & SNACKS"
+   },
+   "bed": "img/t30mesitaen_l36_empty_bottle_blur.jpg"
+  },
+  {
+   "t": 483.067,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 487.367,
+   "dur": 2.727,
+   "sec": "S8",
+   "lugar": "c04",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c04_08.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 490.094,
+   "dur": 2.727,
+   "sec": "S8",
+   "lugar": "c16",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c16_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 492.82,
+   "dur": 6.587,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30mesitaen_a37_bottle_bin.jpg",
+    "x": 470,
+    "y": 590,
+    "r": 200,
+    "note": "Empty through security",
+    "circleAt": 493.07,
+    "noteAt": 495.57
+   },
+   "bed": "img/t30mesitaen_l36_empty_bottle_blur.jpg"
+  },
+  {
+   "t": 499.407,
+   "dur": 4.56,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 503.967,
+   "dur": 4.74,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a39_snack_bag.jpg"
+  },
+  {
+   "t": 508.707,
+   "dur": 2.867,
+   "sec": "S9",
+   "lugar": "c20",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c20_12.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 511.574,
+   "dur": 2.867,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a40_crew_lunch.jpg"
+  },
+  {
+   "t": 514.44,
+   "dur": 2.867,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a48_fridge_note.jpg"
+  },
+  {
+   "t": 517.307,
+   "dur": 3.88,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a41_drink_cart.jpg"
+  },
+  {
+   "t": 520.94,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 10",
+    "part": "MEDICATIONS & DEVICES"
+   },
+   "bed": "img/t30mesitaen_l40_pills_blur.jpg"
+  },
+  {
+   "t": 521.187,
+   "dur": 4.58,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 525.767,
+   "dur": 4.12,
+   "sec": "S9",
+   "lugar": "c25",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c25_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 529.887,
+   "dur": 3.2,
+   "sec": "S10",
+   "lugar": "c04",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c04_06.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 533.087,
+   "dur": 4.6,
+   "sec": "S10",
+   "lugar": "c24",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_02.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 537.687,
+   "dur": 2.4,
+   "sec": "S10",
+   "lugar": "c04",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c04_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 540.087,
+   "dur": 3.12,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 543.207,
+   "dur": 10.02,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30mesitaen_doc_devices.png",
+    "aspect": 0.7857,
+    "chip": "U.S. LAW · 14 CFR 382",
+    "source": "Source: U.S. DOT · 14 CFR 382.121",
+    "highlights": [
+     {
+      "x": 7.27,
+      "y": 47.5,
+      "w": 50.18,
+      "h": 2.43,
+      "at": 544.37
+     },
+     {
+      "x": 60.73,
+      "y": 62.64,
+      "w": 19.55,
+      "h": 2.43,
+      "at": 547.91
+     },
+     {
+      "x": 7.27,
+      "y": 65.36,
+      "w": 16.82,
+      "h": 2.43,
+      "at": 547.91
+     }
+    ],
+    "note": {
+     "text": "Not a second bag",
+     "at": 550.43
+    }
+   },
+   "bed": "img/t30mesitaen_l40_pills_blur.jpg"
+  },
+  {
+   "t": 553.227,
+   "dur": 4.34,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 557.32,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 11",
+    "part": "WHEN THE FLIGHT GOES WRONG"
+   },
+   "bed": "img/t30mesitaen_l43_board_cancel_blur.jpg"
+  },
+  {
+   "t": 557.567,
+   "dur": 2.927,
+   "sec": "S10",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l50_math.jpg"
+  },
+  {
+   "t": 560.494,
+   "dur": 2.927,
+   "sec": "S10",
+   "lugar": "c14",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c14_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 563.42,
+   "dur": 2.927,
+   "sec": "S10",
+   "lugar": "c08",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c08_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 566.347,
+   "dur": 4.1,
+   "sec": "S11",
+   "lugar": "c23",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c23_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 570.447,
+   "dur": 4.66,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 575.107,
+   "dur": 2.753,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a42_pill_purse.jpg"
+  },
+  {
+   "t": 577.86,
+   "dur": 13.987,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30mesitaen_doc_refund.png",
+    "aspect": 0.7857,
+    "chip": "U.S. LAW · 14 CFR 260",
+    "source": "Source: U.S. DOT · 14 CFR 260.6",
+    "highlights": [
+     {
+      "x": 53.09,
+      "y": 29.64,
+      "w": 23.45,
+      "h": 2.43,
+      "at": 580.13
+     },
+     {
+      "x": 7.27,
+      "y": 32.36,
+      "w": 14.45,
+      "h": 2.43,
+      "at": 580.13
+     },
+     {
+      "x": 11,
+      "y": 54.5,
+      "w": 27.09,
+      "h": 2.43,
+      "at": 588.57
+     }
+    ],
+    "note": {
+     "text": "Money, not a voucher",
+     "at": 587.59
+    }
+   },
+   "bed": "img/t30mesitaen_l43_board_cancel_blur.jpg"
+  },
+  {
+   "t": 591.847,
+   "dur": 3.16,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 595.007,
+   "dur": 3.21,
+   "sec": "S11",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l06_receipts.jpg"
+  },
+  {
+   "t": 598.217,
+   "dur": 3.21,
+   "sec": "S11",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l45_envelope.jpg"
+  },
+  {
+   "t": 601.427,
+   "dur": 2.4,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a47_vouchers.jpg"
+  },
+  {
+   "t": 603.827,
+   "dur": 2.323,
+   "sec": "S11",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l05_lap_statement.jpg"
+  },
+  {
+   "t": 606.15,
+   "dur": 5.92,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 611.82,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "BONUS",
+    "part": "THREE QUESTIONS"
+   },
+   "bed": "img/t30mesitaen_l46_calendar_blur.jpg"
+  },
+  {
+   "t": 612.07,
+   "dur": 3.93,
+   "sec": "S11",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l04_statement.jpg"
+  },
+  {
+   "t": 616.0,
+   "dur": 3.93,
+   "sec": "S11",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l40_pills.jpg"
+  },
+  {
+   "t": 619.93,
+   "dur": 3.39,
+   "sec": "S12",
+   "lugar": "c03",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c03_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 623.32,
+   "dur": 3.39,
+   "sec": "S12",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l14_kiosk.jpg"
+  },
+  {
+   "t": 626.71,
+   "dur": 3.18,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 629.89,
+   "dur": 3.74,
+   "sec": "S12",
+   "lugar": "c06",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c06_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 633.63,
+   "dur": 4.899,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a43_lonely_bag.jpg"
+  },
+  {
+   "t": 638.529,
+   "dur": 3.941,
+   "sec": "S12",
+   "lugar": "c22",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c22_07.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 642.47,
+   "dur": 4.28,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 646.75,
+   "dur": 3.635,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a03_receipts_card.jpg"
+  },
+  {
+   "t": 650.385,
+   "dur": 3.635,
+   "sec": "S12",
+   "lugar": "c22",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c22_03.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 654.02,
+   "dur": 10.39,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30mesitaen_doc_24h.png",
+    "aspect": 0.7857,
+    "chip": "U.S. RULE · 14 CFR 259",
+    "source": "Source: U.S. DOT · 14 CFR 259.5",
+    "highlights": [
+     {
+      "x": 10,
+      "y": 30.79,
+      "w": 56.72,
+      "h": 2.43,
+      "at": 659.25
+     }
+    ],
+    "note": {
+     "text": "24 hours, no penalty",
+     "at": 660.87
+    }
+   },
+   "bed": "img/t30mesitaen_l46_calendar_blur.jpg"
+  },
+  {
+   "t": 664.41,
+   "dur": 4.36,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 668.77,
+   "dur": 4.58,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a49_id_itinerary.jpg"
+  },
+  {
+   "t": 673.35,
+   "dur": 3.9,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a17_empty_concourse.jpg"
+  },
+  {
+   "t": 677.25,
+   "dur": 3.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 680.99,
+   "dur": 2.46,
+   "sec": "S12",
+   "lugar": "c24",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_09.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 683.45,
+   "dur": 4.933,
+   "sec": "S12",
+   "lugar": "c18",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c18_01.mp4",
+   "rate": 0.999
+  },
+  {
+   "t": 688.383,
+   "dur": 4.407,
+   "sec": "S12",
+   "lugar": "c24",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c24_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 692.79,
+   "dur": 5.52,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 698.31,
+   "dur": 3.973,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a33_cargo_hold.jpg"
+  },
+  {
+   "t": 701.96,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "BONUS",
+    "part": "THE MATH"
+   },
+   "bed": "img/t30mesitaen_l50_math_blur.jpg"
+  },
+  {
+   "t": 702.283,
+   "dur": 3.4,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a29_calc_statement.jpg"
+  },
+  {
+   "t": 705.683,
+   "dur": 3.547,
+   "sec": "S12",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l46_calendar.jpg"
+  },
+  {
+   "t": 709.23,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 713.83,
+   "dur": 2.81,
+   "sec": "S13",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l47_id_check.jpg"
+  },
+  {
+   "t": 716.64,
+   "dur": 2.81,
+   "sec": "S13",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l37_fountain.jpg"
+  },
+  {
+   "t": 719.45,
+   "dur": 5.75,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 725.2,
+   "dur": 6.56,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "trips a year",
+    "label": "TO SEE THE GRANDKIDS",
+    "compare": "One of them could be close to paid.",
+    "photo": "img/t30mesitaen_a53_grandkids_hug.jpg",
+    "tone": "green",
+    "at": 725.51,
+    "compareAt": 727.69
+   },
+   "bed": "img/t30mesitaen_l50_math_blur.jpg"
+  },
+  {
+   "t": 731.76,
+   "dur": 3.665,
+   "sec": "S13",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a46_stranded.jpg"
+  },
+  {
+   "t": 735.425,
+   "dur": 3.665,
+   "sec": "S13",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a30_counter_scale.jpg"
+  },
+  {
+   "t": 739.09,
+   "dur": 5.02,
+   "sec": "S13",
+   "lugar": "c17",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c17_02.mp4",
+   "rate": 0.989
+  },
+  {
+   "t": 744.11,
+   "dur": 3.82,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 747.93,
+   "dur": 7.55,
+   "kind": "componente",
+   "sec": "S13",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30mesitaen_a14_middle_seat.jpg",
+    "rightImg": "img/t30mesitaen_l19_wheelchair_ride.jpg",
+    "leftHead": "THING 1",
+    "rightHead": "THING 2",
+    "leftText": "Don't pay for the seat",
+    "rightText": "Ask for assistance",
+    "stamp": "",
+    "leftAt": 750.79,
+    "rightAt": 751.87
+   },
+   "bed": "img/t30mesitaen_l50_math_blur.jpg"
+  },
+  {
+   "t": 755.48,
+   "dur": 3.05,
+   "sec": "S13",
+   "lugar": "linda",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_l18_concourse.jpg"
+  },
+  {
+   "t": 758.53,
+   "dur": 4.76,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 763.29,
+   "dur": 3.053,
+   "sec": "S13",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a51_blanket_hand.jpg"
+  },
+  {
+   "t": 766.343,
+   "dur": 3.053,
+   "sec": "S13",
+   "lugar": "c19",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c19_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 769.397,
+   "dur": 3.053,
+   "sec": "S13",
+   "lugar": "c17",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c17_01.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 772.45,
+   "dur": 4.42,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 776.87,
+   "dur": 3.01,
+   "sec": "S13",
+   "lugar": "c17",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c17_04.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 779.88,
+   "dur": 3.01,
+   "sec": "S13",
+   "lugar": "c17",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c17_05.mp4",
+   "real": true,
+   "rate": 1.0
+  },
+  {
+   "t": 782.89,
+   "dur": 3.02,
+   "sec": "S13",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30mesitaen_a55_tag_ribbon.jpg"
+  },
+  {
+   "t": 785.91,
+   "dur": 4.74,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 790.65,
+   "dur": 3.24,
+   "sec": "S13",
+   "lugar": "c02",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c02_01.mp4",
+   "rate": 1.0
+  },
+  {
+   "t": 793.89,
+   "dur": 2.924,
+   "sec": "S13",
+   "lugar": "c22",
+   "kind": "clip",
+   "asset": "broll/t30mesitaen_real/t30mesitaen_c22_12.mp4",
+   "real": true,
+   "rate": 1.0
+  }
+ ]
+}

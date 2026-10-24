@@ -1,0 +1,800 @@
+[
+ {
+  "key": "clip_5400",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c19_03.mp4",
+  "start": 5.4,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_8200",
+  "src": "img/t30mesitaen_l48_tell_fa.jpg",
+  "start": 8.2,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_11000",
+  "src": "img/t30mesitaen_a23_gate_desk.jpg",
+  "start": 11,
+  "dur": 4.466666666666667
+ },
+ {
+  "key": "clip_20833",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c04_03.mp4",
+  "start": 20.833333333333332,
+  "dur": 2.466666666666667
+ },
+ {
+  "key": "clip_23300",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_06.mp4",
+  "start": 23.3,
+  "dur": 4.2
+ },
+ {
+  "key": "imagen_27500",
+  "src": "img/t30mesitaen_a02_statement.jpg",
+  "start": 27.5,
+  "dur": 5.066666666666666
+ },
+ {
+  "key": "imagen_36900",
+  "src": "img/t30mesitaen_l32_pack_shoes.jpg",
+  "start": 36.9,
+  "dur": 5
+ },
+ {
+  "key": "imagen_41900",
+  "src": "img/t30mesitaen_l12_phone_fine.jpg",
+  "start": 41.9,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "imagen_45367",
+  "src": "img/t30mesitaen_l39_gate_snack.jpg",
+  "start": 45.36666666666667,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "clip_52233",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_13.mp4",
+  "start": 52.233333333333334,
+  "dur": 4.766666666666667
+ },
+ {
+  "key": "imagen_57000",
+  "src": "img/t30mesitaen_a04_man_bills.jpg",
+  "start": 57,
+  "dur": 3.7333333333333334
+ },
+ {
+  "key": "imagen_60733",
+  "src": "img/t30mesitaen_l44_service_desk.jpg",
+  "start": 60.733333333333334,
+  "dur": 3.7
+ },
+ {
+  "key": "imagen_68900",
+  "src": "img/t30mesitaen_l38_snack_pack.jpg",
+  "start": 68.9,
+  "dur": 1.2666666666666666
+ },
+ {
+  "key": "clip_77333",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c30_03.mp4",
+  "start": 77.33333333333333,
+  "dur": 4.4
+ },
+ {
+  "key": "imagen_86733",
+  "src": "img/t30mesitaen_l43_board_cancel.jpg",
+  "start": 86.73333333333333,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "imagen_90000",
+  "src": "img/t30mesitaen_a22_family_board.jpg",
+  "start": 90,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "imagen_105200",
+  "src": "img/t30mesitaen_l10_porch.jpg",
+  "start": 105.2,
+  "dur": 4.1
+ },
+ {
+  "key": "imagen_109300",
+  "src": "img/t30mesitaen_l09_fold_tray.jpg",
+  "start": 109.3,
+  "dur": 4.133333333333334
+ },
+ {
+  "key": "imagen_117367",
+  "src": "img/t30mesitaen_l54_pour_coffee.jpg",
+  "start": 117.36666666666666,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "imagen_120200",
+  "src": "img/t30mesitaen_l53_window_sunrise.jpg",
+  "start": 120.2,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "imagen_123033",
+  "src": "img/t30mesitaen_a12_calendar_tuesday.jpg",
+  "start": 123.03333333333333,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "clip_126300",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c03_01.mp4",
+  "start": 126.3,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_134467",
+  "src": "img/t30mesitaen_l27_policy_table.jpg",
+  "start": 134.46666666666667,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "clip_138133",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c28_04.mp4",
+  "start": 138.13333333333333,
+  "dur": 4.733333333333333
+ },
+ {
+  "key": "imagen_146367",
+  "src": "img/t30mesitaen_a16_cane_gate.jpg",
+  "start": 146.36666666666667,
+  "dur": 4.633333333333334
+ },
+ {
+  "key": "imagen_165733",
+  "src": "img/t30mesitaen_l11_two_prices.jpg",
+  "start": 165.73333333333332,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_168600",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c23_04.mp4",
+  "start": 168.6,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_171467",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c20_07.mp4",
+  "start": 171.46666666666667,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_178067",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c12_02.mp4",
+  "start": 178.06666666666666,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_181300",
+  "src": "img/t30mesitaen_a06_shop_shelves.jpg",
+  "start": 181.3,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_184500",
+  "src": "img/t30mesitaen_a52_notepad_sums.jpg",
+  "start": 184.5,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_190900",
+  "src": "img/t30mesitaen_a24_popup_checkout.jpg",
+  "start": 190.9,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_193800",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c26_01.mp4",
+  "start": 193.8,
+  "dur": 2.9
+ },
+ {
+  "key": "imagen_196700",
+  "src": "img/t30mesitaen_a45_red_board.jpg",
+  "start": 196.7,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_210733",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_03.mp4",
+  "start": 210.73333333333332,
+  "dur": 4.956733333333333
+ },
+ {
+  "key": "imagen_219933",
+  "src": "img/t30mesitaen_a38_refill_station.jpg",
+  "start": 219.93333333333334,
+  "dur": 2.8
+ },
+ {
+  "key": "clip_222733",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c04_11.mp4",
+  "start": 222.73333333333332,
+  "dur": 2.8
+ },
+ {
+  "key": "clip_225533",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c10_02.mp4",
+  "start": 225.53333333333333,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_228333",
+  "src": "img/t30mesitaen_a54_carousel_flap.jpg",
+  "start": 228.33333333333334,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_231233",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c14_02.mp4",
+  "start": 231.23333333333332,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_237767",
+  "src": "img/t30mesitaen_a58_wheelchairs_row.jpg",
+  "start": 237.76666666666668,
+  "dur": 5.2
+ },
+ {
+  "key": "clip_242967",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c28_03.mp4",
+  "start": 242.96666666666667,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_246067",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c05_01.mp4",
+  "start": 246.06666666666666,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_254467",
+  "src": "img/t30mesitaen_a44_cpap_xray.jpg",
+  "start": 254.46666666666667,
+  "dur": 2.1666666666666665
+ },
+ {
+  "key": "clip_266067",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c19_11.mp4",
+  "start": 266.06666666666666,
+  "dur": 1.4
+ },
+ {
+  "key": "clip_271067",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c10_01.mp4",
+  "start": 271.06666666666666,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "imagen_275000",
+  "src": "img/t30mesitaen_a21_boarding_crowd.jpg",
+  "start": 275,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "imagen_278967",
+  "src": "img/t30mesitaen_l07_crew_photo.jpg",
+  "start": 278.96666666666664,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "clip_286967",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_08.mp4",
+  "start": 286.96666666666664,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_290000",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c27_03.mp4",
+  "start": 290,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_306467",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c16_10.mp4",
+  "start": 306.46666666666664,
+  "dur": 3.2
+ },
+ {
+  "key": "clip_309667",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c04_12.mp4",
+  "start": 309.6666666666667,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "clip_313133",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_10.mp4",
+  "start": 313.1333333333333,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "clip_322033",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c03_03.mp4",
+  "start": 322.03333333333336,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "clip_325400",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c20_05.mp4",
+  "start": 325.4,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "imagen_328767",
+  "src": "img/t30mesitaen_a34_kitchen_phone.jpg",
+  "start": 328.76666666666665,
+  "dur": 2.3666666666666667
+ },
+ {
+  "key": "imagen_335300",
+  "src": "img/t30mesitaen_l41_cpap.jpg",
+  "start": 335.3,
+  "dur": 4.6
+ },
+ {
+  "key": "imagen_339900",
+  "src": "img/t30mesitaen_l42_device_counter.jpg",
+  "start": 339.9,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_347867",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c23_06.mp4",
+  "start": 347.8666666666667,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "imagen_350533",
+  "src": "img/t30mesitaen_l26_card_call.jpg",
+  "start": 350.53333333333336,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "imagen_359467",
+  "src": "img/t30mesitaen_a26_policy_papers.jpg",
+  "start": 359.46666666666664,
+  "dur": 1.3
+ },
+ {
+  "key": "clip_364133",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c28_01.mp4",
+  "start": 364.1333333333333,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "imagen_367767",
+  "src": "img/t30mesitaen_l25_popup.jpg",
+  "start": 367.76666666666665,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "imagen_371233",
+  "src": "img/t30mesitaen_l17_wheelchair_desk.jpg",
+  "start": 371.23333333333335,
+  "dur": 3.466666666666667
+ },
+ {
+  "key": "clip_378567",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c29_02.mp4",
+  "start": 378.56666666666666,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "imagen_382000",
+  "src": "img/t30mesitaen_l29_market_abroad.jpg",
+  "start": 382,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "imagen_397867",
+  "src": "img/t30mesitaen_a05_register.jpg",
+  "start": 397.8666666666667,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "clip_401833",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c13_06.mp4",
+  "start": 401.8333333333333,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "imagen_405800",
+  "src": "img/t30mesitaen_l15_ask_aisle.jpg",
+  "start": 405.8,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "clip_412733",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c04_01.mp4",
+  "start": 412.73333333333335,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "imagen_415467",
+  "src": "img/t30mesitaen_a15_checkin_screen.jpg",
+  "start": 415.46666666666664,
+  "dur": 3
+ },
+ {
+  "key": "clip_418467",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c21_12.mp4",
+  "start": 418.46666666666664,
+  "dur": 3
+ },
+ {
+  "key": "clip_421467",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c17_03.mp4",
+  "start": 421.46666666666664,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "imagen_428067",
+  "src": "img/t30mesitaen_a32_hanging_scale.jpg",
+  "start": 428.06666666666666,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_438200",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_05.mp4",
+  "start": 438.2,
+  "dur": 2.3333333333333335
+ },
+ {
+  "key": "imagen_444033",
+  "src": "img/t30mesitaen_a18_woman_bags_back.jpg",
+  "start": 444.03333333333336,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_446833",
+  "src": "img/t30mesitaen_a13_seatmap_phone.jpg",
+  "start": 446.8333333333333,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_450333",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c20_08.mp4",
+  "start": 450.3333333333333,
+  "dur": 3.5
+ },
+ {
+  "key": "imagen_457100",
+  "src": "img/t30mesitaen_l33_call_book.jpg",
+  "start": 457.1,
+  "dur": 4.2
+ },
+ {
+  "key": "imagen_461300",
+  "src": "img/t30mesitaen_a01_ticket_counter.jpg",
+  "start": 461.3,
+  "dur": 4.533333333333333
+ },
+ {
+  "key": "imagen_470600",
+  "src": "img/t30mesitaen_a35_mouse_hands.jpg",
+  "start": 470.6,
+  "dur": 1.5333333333333334
+ },
+ {
+  "key": "clip_479133",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c08_01.mp4",
+  "start": 479.1333333333333,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_487367",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c04_08.mp4",
+  "start": 487.3666666666667,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "clip_490100",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c16_05.mp4",
+  "start": 490.1,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "imagen_503967",
+  "src": "img/t30mesitaen_a39_snack_bag.jpg",
+  "start": 503.96666666666664,
+  "dur": 4.733333333333333
+ },
+ {
+  "key": "clip_508700",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c20_12.mp4",
+  "start": 508.7,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "imagen_511567",
+  "src": "img/t30mesitaen_a40_crew_lunch.jpg",
+  "start": 511.56666666666666,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "imagen_514433",
+  "src": "img/t30mesitaen_a48_fridge_note.jpg",
+  "start": 514.4333333333333,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "imagen_517300",
+  "src": "img/t30mesitaen_a41_drink_cart.jpg",
+  "start": 517.3,
+  "dur": 3.9
+ },
+ {
+  "key": "clip_525767",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c25_01.mp4",
+  "start": 525.7666666666667,
+  "dur": 4.133333333333334
+ },
+ {
+  "key": "clip_529900",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c04_06.mp4",
+  "start": 529.9,
+  "dur": 3.2
+ },
+ {
+  "key": "clip_533100",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_02.mp4",
+  "start": 533.1,
+  "dur": 4.6
+ },
+ {
+  "key": "clip_537700",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c04_05.mp4",
+  "start": 537.7,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_557567",
+  "src": "img/t30mesitaen_l50_math.jpg",
+  "start": 557.5666666666667,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_560500",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c14_01.mp4",
+  "start": 560.5,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_563433",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c08_03.mp4",
+  "start": 563.4333333333333,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_566333",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c23_01.mp4",
+  "start": 566.3333333333334,
+  "dur": 4.1
+ },
+ {
+  "key": "imagen_575100",
+  "src": "img/t30mesitaen_a42_pill_purse.jpg",
+  "start": 575.1,
+  "dur": 2.7666666666666666
+ },
+ {
+  "key": "imagen_595000",
+  "src": "img/t30mesitaen_l06_receipts.jpg",
+  "start": 595,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "imagen_598233",
+  "src": "img/t30mesitaen_l45_envelope.jpg",
+  "start": 598.2333333333333,
+  "dur": 3.2
+ },
+ {
+  "key": "imagen_601433",
+  "src": "img/t30mesitaen_a47_vouchers.jpg",
+  "start": 601.4333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_603833",
+  "src": "img/t30mesitaen_l05_lap_statement.jpg",
+  "start": 603.8333333333334,
+  "dur": 2.3333333333333335
+ },
+ {
+  "key": "imagen_612067",
+  "src": "img/t30mesitaen_l04_statement.jpg",
+  "start": 612.0666666666667,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "imagen_616000",
+  "src": "img/t30mesitaen_l40_pills.jpg",
+  "start": 616,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_619933",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c03_05.mp4",
+  "start": 619.9333333333333,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_623333",
+  "src": "img/t30mesitaen_l14_kiosk.jpg",
+  "start": 623.3333333333334,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "clip_629900",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c06_01.mp4",
+  "start": 629.9,
+  "dur": 3.7333333333333334
+ },
+ {
+  "key": "imagen_633633",
+  "src": "img/t30mesitaen_a43_lonely_bag.jpg",
+  "start": 633.6333333333333,
+  "dur": 4.9
+ },
+ {
+  "key": "clip_638533",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c22_07.mp4",
+  "start": 638.5333333333333,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "imagen_646767",
+  "src": "img/t30mesitaen_a03_receipts_card.jpg",
+  "start": 646.7666666666667,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "clip_650400",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c22_03.mp4",
+  "start": 650.4,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "imagen_668767",
+  "src": "img/t30mesitaen_a49_id_itinerary.jpg",
+  "start": 668.7666666666667,
+  "dur": 4.6
+ },
+ {
+  "key": "imagen_673367",
+  "src": "img/t30mesitaen_a17_empty_concourse.jpg",
+  "start": 673.3666666666667,
+  "dur": 3.9
+ },
+ {
+  "key": "clip_681000",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_09.mp4",
+  "start": 681,
+  "dur": 2.466666666666667
+ },
+ {
+  "key": "clip_683467",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c18_01.mp4",
+  "start": 683.4666666666667,
+  "dur": 4.8951
+ },
+ {
+  "key": "clip_688367",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c24_04.mp4",
+  "start": 688.3666666666667,
+  "dur": 4.433333333333334
+ },
+ {
+  "key": "imagen_698300",
+  "src": "img/t30mesitaen_a33_cargo_hold.jpg",
+  "start": 698.3,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "imagen_702267",
+  "src": "img/t30mesitaen_a29_calc_statement.jpg",
+  "start": 702.2666666666667,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_705667",
+  "src": "img/t30mesitaen_l46_calendar.jpg",
+  "start": 705.6666666666666,
+  "dur": 3.566666666666667
+ },
+ {
+  "key": "imagen_713833",
+  "src": "img/t30mesitaen_l47_id_check.jpg",
+  "start": 713.8333333333334,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_716633",
+  "src": "img/t30mesitaen_l37_fountain.jpg",
+  "start": 716.6333333333333,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "imagen_731767",
+  "src": "img/t30mesitaen_a46_stranded.jpg",
+  "start": 731.7666666666667,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "imagen_735433",
+  "src": "img/t30mesitaen_a30_counter_scale.jpg",
+  "start": 735.4333333333333,
+  "dur": 3.6666666666666665
+ },
+ {
+  "key": "clip_739100",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c17_02.mp4",
+  "start": 739.1,
+  "dur": 4.945
+ },
+ {
+  "key": "imagen_755467",
+  "src": "img/t30mesitaen_l18_concourse.jpg",
+  "start": 755.4666666666667,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_763300",
+  "src": "img/t30mesitaen_a51_blanket_hand.jpg",
+  "start": 763.3,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_766333",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c19_04.mp4",
+  "start": 766.3333333333334,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_769400",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c17_01.mp4",
+  "start": 769.4,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_776867",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c17_04.mp4",
+  "start": 776.8666666666667,
+  "dur": 3
+ },
+ {
+  "key": "clip_779867",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c17_05.mp4",
+  "start": 779.8666666666667,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "imagen_782900",
+  "src": "img/t30mesitaen_a55_tag_ribbon.jpg",
+  "start": 782.9,
+  "dur": 3
+ },
+ {
+  "key": "clip_790667",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c02_01.mp4",
+  "start": 790.6666666666666,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "clip_793900",
+  "src": "broll/t30mesitaen_real/t30mesitaen_c22_12.mp4",
+  "start": 793.9,
+  "dur": 2.933333333333333
+ }
+]
