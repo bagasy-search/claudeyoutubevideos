@@ -228,7 +228,7 @@ export const JobRoster: React.FC<{ active?: number; final?: number[]; caption?: 
   const f = useCurrentFrame();
   const N = JOBS.length, W = 206, H = 330, G = 20, X0 = (1920 - (N * W + (N - 1) * G)) / 2;
   return (
-    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 58%, #4a2d18 0%, #140c07 78%)`, transform: `scale(${1 + Math.min(f, 300) * 0.00012})` }}>
+    <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 58%, #4a2d18 0%, #140c07 78%)`, transform: `scale(${1 + Math.min(f, 900) * 0.00008}) translateX(${Math.sin(f / 70) * 6}px)` }}>
       <Embers />
       {JOBS.map((j, i) => {
         const t = spring({ frame: f - i * 3, fps: 30, config: { damping: 16 } });
