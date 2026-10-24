@@ -1,0 +1,2950 @@
+{
+"end": 1092.86,
+"shots": [
+{
+"a": 0.0,
+"b": 3.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a02_clock_317.jpg"
+}
+},
+{
+"a": 3.24,
+"b": 4.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a06_bed_sleep.jpg"
+}
+},
+{
+"a": 4.64,
+"b": 8.44,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "moon"
+}
+},
+{
+"a": 8.44,
+"b": 9.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/fullmoon_01.jpg",
+"o": {
+"credit": "NASA · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 9.64,
+"b": 11.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/moonnight_01.jpg",
+"o": {
+"credit": "Vyacheslav Argenberg · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 11.82,
+"b": 20.18,
+"k": "ilus",
+"t": "vanish",
+"p": {
+"at": 95,
+"o": {
+"big": {
+"w": "NO ESTÁ.",
+"size": 230,
+"y": 640,
+"a": 95
+},
+"build": {
+"lines": [
+"Sin destello. Sin *ruido.*"
+],
+"y": 120,
+"size": 96,
+"a": 183
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 20.18,
+"b": 22.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a03_rooftops_moon.jpg"
+}
+},
+{
+"a": 22.02,
+"b": 24.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a04_rooftops_nomoon.jpg",
+"o": {
+"scrib": {
+"cx": 1060,
+"cy": 300,
+"rx": 230,
+"ry": 150,
+"text": "nada.",
+"tx": 560,
+"ty": 170,
+"a": 8
+}
+}
+}
+},
+{
+"a": 24.28,
+"b": 25.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a59_window_empty.jpg"
+}
+},
+{
+"a": 25.7,
+"b": 29.42,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "window"
+}
+},
+{
+"a": 29.42,
+"b": 30.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a05_ocean_night.jpg"
+}
+},
+{
+"a": 30.78,
+"b": 32.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/earthspace_02.jpg",
+"o": {
+"credit": "NASA · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 32.8,
+"b": 34.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k03_waves_night.mp4",
+"o": {
+"build": {
+"lines": [
+"el océano ya lo *sabe.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 34.48,
+"b": 35.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/moonlit_01.jpg",
+"o": {
+"credit": "Aert van der Neer · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 35.78,
+"b": 37.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/moonnight_02.jpg",
+"o": {
+"credit": "Vyacheslav Argenberg · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 37.32,
+"b": 38.54,
+"k": "ilus",
+"t": "hand",
+"p": {
+"o": {
+"build": {
+"lines": [
+"Es una *mano.*"
+],
+"a": 2,
+"size": 100
+}
+}
+}
+},
+{
+"a": 38.54,
+"b": 41.14,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/earthrise_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "NASA/Bill Anders · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 41.14,
+"b": 44.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/tidepool_01.jpg",
+"o": {
+"credit": "Brocken Inaglory · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 44.46,
+"b": 48.6,
+"k": "ilus",
+"t": "hand",
+"p": {
+"at": 70,
+"o": {
+"build": {
+"lines": [
+"esa mano *soltó.*"
+],
+"a": 56
+}
+}
+}
+},
+{
+"a": 48.6,
+"b": 53.68,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 12,
+"frm": 0,
+"to": 4320,
+"title": "72 HORAS.",
+"sub": "hora por hora.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 12,
+"big": true
+},
+{
+"a": 53.68,
+"b": 55.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a48_backyard_look.jpg"
+}
+},
+{
+"a": 55.48,
+"b": 57.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a13_globe_desk.jpg"
+}
+},
+{
+"a": 57.4,
+"b": 60.22,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/mission_01.jpg",
+"ar": 1.2632,
+"o": {
+"aside": {
+"t": "pánico.",
+"x": 1180,
+"y": 320,
+"a": 23
+},
+"credit": "Adam Cuerden · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 60.22,
+"b": 61.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/zebra_01.jpg",
+"o": {
+"credit": "Thomas Fuhrmann · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 61.52,
+"b": 63.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/sunrise_01.jpg",
+"o": {
+"credit": "Basile Morin · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 63.48,
+"b": 66.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/pier_01.jpg",
+"o": {
+"credit": "joiseyshowaa from Freehold, NJ, USA · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 66.92,
+"b": 76.94,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "steady",
+"o": {
+"build": {
+"lines": [
+"dentro de unos *millones* de años"
+],
+"size": 84,
+"a": 82
+}
+}
+},
+"big": true
+},
+{
+"a": 76.94,
+"b": 84.46,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Un «qué pasaría si» nuevo cada semana. Suscríbete + campanita."
+}
+},
+{
+"a": 84.46,
+"b": 91.18,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/earthmoon_02.jpg",
+"ar": 0.8653,
+"o": {
+"credit": "NASA · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 91.18,
+"b": 95.46,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Qué hora es donde estás ahora mismo?",
+"bell": false
+}
+},
+{
+"a": 95.46,
+"b": 98.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a38_empty_sky_chairs.jpg"
+}
+},
+{
+"a": 98.58,
+"b": 100.38,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 0,
+"frm": 0,
+"to": 0,
+"title": "3:17 a.m.",
+"sub": "El reloj está corriendo.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 0,
+"big": true
+},
+{
+"a": 100.38,
+"b": 103.82,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 1,
+"frm": 0,
+"to": 1,
+"title": "3:18 a.m.",
+"sub": "Un minuto después.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 1,
+"big": true
+},
+{
+"a": 103.82,
+"b": 109.24,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "window",
+"o": {
+"build": {
+"lines": [
+"¿Lo *sientes?*"
+],
+"a": 81
+},
+"big": {
+"w": "NO.",
+"size": 220,
+"y": 380,
+"a": 111
+}
+}
+}
+},
+{
+"a": 109.24,
+"b": 112.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/fullmoon_02.jpg",
+"o": {
+"credit": "NASA / GSFC / Arizona State Univ. … · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 112.0,
+"b": 129.76,
+"k": "ilus",
+"t": "scale",
+"p": {
+"at": 9,
+"o": {
+"build": {
+"lines": [
+"No *flotas.*"
+],
+"a": 161
+},
+"aside": {
+"t": "mismo peso.",
+"x": 880,
+"y": 600,
+"a": 295
+}
+}
+}
+},
+{
+"a": 129.76,
+"b": 132.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/moonlit_02.jpg",
+"o": {
+"credit": "László Mednyánszky · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 132.46,
+"b": 136.1,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/craters_01.jpg",
+"ar": 0.9357,
+"o": {
+"build": {
+"lines": [
+"un espejo *gigante.*"
+],
+"a": 43
+},
+"credit": "NASA Johnson Space Center / N/A · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 136.1,
+"b": 138.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/moonlit_03.jpg",
+"o": {
+"credit": "Arkhip Kuindzhi · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 138.84,
+"b": 144.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a10_flashlight.jpg"
+}
+},
+{
+"a": 144.56,
+"b": 156.14,
+"k": "ilus",
+"t": "farm",
+"p": {
+"mode": "drop",
+"at": 252,
+"o": {
+"big": {
+"w": "÷100",
+"size": 230,
+"y": 150,
+"color": "#edb269",
+"a": 304
+}
+}
+},
+"big": true
+},
+{
+"a": 156.14,
+"b": 160.14,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30lunaes/ag/t30lunaes_a08_silver_field.jpg",
+"r": "img/t30lunaes/ag/t30lunaes_a09_dark_field.jpg",
+"wl": "CON LUNA.",
+"wr": "SIN LUNA.",
+"a": 77
+}
+},
+{
+"a": 160.14,
+"b": 169.34,
+"k": "ilus",
+"t": "farm",
+"p": {
+"mode": "stars",
+"o": {
+"build": {
+"lines": [
+"*Miles.*"
+],
+"size": 110,
+"a": 160
+}
+}
+},
+"big": true
+},
+{
+"a": 169.34,
+"b": 172.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_k25_milkyway.jpg"
+}
+},
+{
+"a": 172.22,
+"b": 174.06,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 2,
+"frm": 1,
+"to": 13,
+"title": "3:30 a.m.",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 2,
+"big": true
+},
+{
+"a": 174.06,
+"b": 178.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/observ_01.jpg",
+"o": {
+"credit": "Astroval1 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 178.32,
+"b": 181.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k05_dome_turn.mp4",
+"rate": 0.905
+}
+},
+{
+"a": 181.58,
+"b": 185.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/observ_02.jpg",
+"o": {
+"credit": "F. Ocaña/J. Isabel/Quasar SR · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 185.24,
+"b": 188.76,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Apolo 11 · 1969",
+"side": "c",
+"v": "img/t30lunaes/real/retro_01.jpg",
+"ar": 0.9897,
+"o": {
+"credit": "NASA · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 188.76,
+"b": 190.82,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Lunojod",
+"side": "c",
+"v": "img/t30lunaes/real/lunokhod_02.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Armael · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 190.82,
+"b": 196.74,
+"k": "ilus",
+"t": "laser",
+"p": {
+"mode": "echo",
+"o": {
+"build": {
+"lines": [
+"al *milímetro.*"
+],
+"a": 128
+}
+}
+},
+"big": true
+},
+{
+"a": 196.74,
+"b": 199.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k04_laser.mp4"
+}
+},
+{
+"a": 199.24,
+"b": 201.04,
+"k": "ilus",
+"t": "laser",
+"p": {
+"mode": "lost",
+"o": {
+"big": {
+"w": "NADA.",
+"a": 10,
+"size": 200,
+"y": 430
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 201.04,
+"b": 205.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a12_screens.jpg"
+}
+},
+{
+"a": 205.3,
+"b": 207.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/mission_02.jpg",
+"o": {
+"credit": "NASA · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 207.76,
+"b": 222.68,
+"k": "ilus",
+"t": "orbits",
+"p": {
+"at": 407
+}
+},
+{
+"a": 222.68,
+"b": 225.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a50_phone_works.jpg"
+}
+},
+{
+"a": 225.16,
+"b": 226.8,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/satellite_01.jpg",
+"ar": 1.0,
+"o": {
+"aside": {
+"t": "uf.",
+"x": 1200,
+"y": 360,
+"a": 12
+},
+"credit": "NASA/NOAA/GSFC/Suomi NPP/VIIRS/Nor… · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 226.8,
+"b": 231.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/mission_03.jpg",
+"o": {
+"build": {
+"lines": [
+"una noche muy *larga.*"
+],
+"a": 82
+},
+"credit": "NASA on The Commons · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 231.92,
+"b": 235.12,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 3,
+"frm": 13,
+"to": 43,
+"title": "4:00 a.m.",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 3,
+"big": true
+},
+{
+"a": 235.12,
+"b": 238.12,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/earthmoon_03.jpg",
+"ar": 0.7858,
+"o": {
+"credit": "NASA · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 238.12,
+"b": 262.06,
+"k": "ilus",
+"t": "bary",
+"p": {
+"mode": "show",
+"o": {
+"build": {
+"lines": [
+"La Tierra se *mueve.*"
+],
+"a": 2,
+"size": 96
+},
+"scrib": {
+"cx": 860,
+"cy": 540,
+"rx": 90,
+"ry": 80,
+"text": "¡dentro de la Tierra!",
+"tx": 1240,
+"ty": 820,
+"a": 371
+}
+}
+},
+"big": true
+},
+{
+"a": 262.06,
+"b": 270.42,
+"k": "ilus",
+"t": "bary",
+"p": {
+"mode": "stop",
+"at": 56,
+"o": {
+"build": {
+"lines": [
+"el bamboleo se *detiene.*"
+],
+"a": 56
+}
+}
+},
+"big": true
+},
+{
+"a": 270.42,
+"b": 278.046,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/llr_01.jpg",
+"o": {
+"credit": "NASA · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 278.046,
+"b": 283.006,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 4,
+"frm": 43,
+"to": 103,
+"title": "5:00 a.m.",
+"sub": "El océano empieza a moverse.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 4,
+"big": true
+},
+{
+"a": 283.006,
+"b": 287.466,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/fundyhi_01.jpg",
+"o": {
+"build": {
+"lines": [
+"Las *mareas.*"
+],
+"size": 110,
+"a": 62
+},
+"credit": "NASA/METI/AIST/Japan Space Systems… · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 287.466,
+"b": 297.626,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "two",
+"o": {
+"build": {
+"lines": [
+"*dos* grandes abultamientos"
+],
+"a": 147
+}
+}
+},
+"big": true
+},
+{
+"a": 297.626,
+"b": 304.746,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "spin"
+},
+"big": true
+},
+{
+"a": 304.746,
+"b": 316.926,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "sun",
+"o": {
+"build": {
+"lines": [
+"un poco menos de la *mitad.*"
+],
+"a": 227
+}
+}
+},
+"big": true
+},
+{
+"a": 316.926,
+"b": 325.566,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "vanish",
+"at": 76
+},
+"big": true
+},
+{
+"a": 325.566,
+"b": 332.626,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "calm",
+"o": {
+"build": {
+"lines": [
+"NO hay un *tsunami.*"
+],
+"size": 110,
+"a": 107
+},
+"aside": {
+"t": "nada de eso.",
+"x": 1200,
+"y": 560,
+"a": 193
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 332.626,
+"b": 336.026,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k06_bath_slosh.mp4",
+"rate": 0.858
+}
+},
+{
+"a": 336.026,
+"b": 337.886,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "tub",
+"o": {
+"build": {
+"lines": [
+"Se *mece.*"
+],
+"a": 2,
+"y": 640
+}
+}
+}
+},
+{
+"a": 337.886,
+"b": 344.566,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "basin"
+}
+},
+{
+"a": 344.566,
+"b": 349.066,
+"k": "g",
+"t": "tidechart",
+"p": {
+"o": {
+"aside": {
+"t": "¿¿qué??",
+"x": 1300,
+"y": 200,
+"a": 124
+}
+}
+},
+"big": true
+},
+{
+"a": 349.066,
+"b": 353.826,
+"k": "ilus",
+"t": "pier",
+"p": {}
+},
+{
+"a": 353.826,
+"b": 355.966,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k07_pier_water.mp4"
+}
+},
+{
+"a": 355.966,
+"b": 361.086,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 5,
+"frm": 103,
+"to": 193,
+"title": "6:30 a.m.",
+"sub": "Amanece.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 5,
+"big": true
+},
+{
+"a": 361.086,
+"b": 362.826,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k08_sunrise.mp4"
+}
+},
+{
+"a": 362.826,
+"b": 368.206,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a17_sunrise_trees.jpg"
+}
+},
+{
+"a": 368.206,
+"b": 375.666,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/daymoon_03.jpg",
+"o": {
+"credit": "denebola2025 from North Ogden, UT,… · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 375.666,
+"b": 381.766,
+"k": "ilus",
+"t": "sunrise",
+"p": {}
+},
+{
+"a": 381.766,
+"b": 383.646,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a18_breakfast_tv.jpg"
+}
+},
+{
+"a": 383.646,
+"b": 390.806,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a19_phones.jpg",
+"o": {
+"build": {
+"lines": [
+"«La Luna *desapareció.*»"
+],
+"a": 113
+}
+}
+}
+},
+{
+"a": 390.806,
+"b": 394.866,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a20_calendar_wall.jpg"
+}
+},
+{
+"a": 394.866,
+"b": 396.606,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30lunaes/real/crescent_03.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Olympic National Park · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 396.606,
+"b": 408.106,
+"k": "ilus",
+"t": "calendar",
+"p": {
+"at": 80
+},
+"big": true
+},
+{
+"a": 408.106,
+"b": 412.526,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a21_farmer_plant.jpg"
+}
+},
+{
+"a": 412.526,
+"b": 414.926,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a14_pier_dawn.jpg"
+}
+},
+{
+"a": 414.926,
+"b": 423.566,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/lantern_02.jpg",
+"o": {
+"credit": "Syced · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 423.566,
+"b": 425.706,
+"k": "ilus",
+"t": "calendar",
+"p": {
+"at": -10,
+"o": {
+"build": {
+"lines": [
+"¿Cómo se cuenta un *mes* ahora?"
+],
+"a": 2,
+"size": 90
+}
+}
+},
+"big": true
+},
+{
+"a": 425.706,
+"b": 430.866,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 6,
+"frm": 193,
+"to": 343,
+"title": "9:00 a.m.",
+"sub": "La primera marea alta extraña.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 6,
+"big": true
+},
+{
+"a": 430.866,
+"b": 432.866,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a23_coast_town.jpg"
+}
+},
+{
+"a": 432.866,
+"b": 434.726,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/pier_03.jpg",
+"o": {
+"credit": "PattayaPatrol · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 434.726,
+"b": 437.626,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a24_wet_line.jpg",
+"o": {
+"scrib": {
+"cx": 960,
+"cy": 420,
+"rx": 520,
+"ry": 120,
+"text": "la marea de siempre.",
+"tx": 820,
+"ty": 780,
+"a": 37
+}
+}
+}
+},
+{
+"a": 437.626,
+"b": 439.026,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "NI CERCA.",
+"a": 2,
+"size": 170,
+"y": 420
+}
+}
+}
+},
+{
+"a": 439.026,
+"b": 448.946,
+"k": "g",
+"t": "tidechart",
+"p": {
+"o": {
+"big": {
+"w": "÷3",
+"size": 230,
+"x": 1420,
+"y": 120,
+"color": "#edb269",
+"a": 137
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 448.946,
+"b": 454.146,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/fundy_01.jpg",
+"o": {
+"label": "Bahía de Fundy, Canadá",
+"credit": "Lars Plougmann from United States · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 454.146,
+"b": 458.526,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/fundy_02.jpg",
+"o": {
+"build": {
+"lines": [
+"más de *10 metros.*"
+],
+"a": 65
+},
+"credit": "Dylan Kereluk from White Rock, Can… · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 458.526,
+"b": 463.586,
+"k": "ilus",
+"t": "fundy",
+"p": {
+"mode": "big"
+}
+},
+{
+"a": 463.586,
+"b": 470.386,
+"k": "ilus",
+"t": "fundy",
+"p": {
+"mode": "small"
+}
+},
+{
+"a": 470.386,
+"b": 476.446,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/boatsmud_01.jpg",
+"o": {
+"credit": "Richard Humphrey · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 476.446,
+"b": 480.226,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/fundyhi_02.jpg",
+"o": {
+"aside": {
+"t": "ya, ya.",
+"x": 1150,
+"y": 330,
+"a": 14
+},
+"credit": "Tony Webster from San Francisco, C… · Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 480.226,
+"b": 486.106,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/tidepool_02.jpg",
+"o": {
+"credit": "NOAA Photo Library · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 486.106,
+"b": 488.026,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a25_tidepool_dry.jpg"
+}
+},
+{
+"a": 488.026,
+"b": 492.266,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/mudflat_01.jpg",
+"o": {
+"credit": "Bering Land Bridge National Preser… · Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 492.266,
+"b": 494.866,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k10_birds_mud.mp4"
+}
+},
+{
+"a": 494.866,
+"b": 499.226,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/knots_01.jpg",
+"o": {
+"build": {
+"lines": [
+"*Millones* de aves."
+],
+"a": 4
+},
+"credit": "The Bushranger · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 499.226,
+"b": 501.886,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a26_birds_flat.jpg"
+}
+},
+{
+"a": 501.886,
+"b": 505.446,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 7,
+"frm": 343,
+"to": 523,
+"title": "MEDIODÍA",
+"sub": "Las máquinas que funcionan con la Luna.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 7,
+"big": true
+},
+{
+"a": 505.446,
+"b": 510.746,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a28_dam_sea.jpg"
+}
+},
+{
+"a": 510.746,
+"b": 514.646,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "La Rance, Francia",
+"side": "c",
+"v": "img/t30lunaes/real/rance_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Sw271149 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 514.646,
+"b": 516.666,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "1966",
+"side": "c",
+"v": "img/t30lunaes/real/rance_03.jpg",
+"ar": 1.6013,
+"o": {
+"credit": "Tswgb · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 516.666,
+"b": 521.506,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Lago Sihwa, Corea del Sur",
+"side": "c",
+"v": "img/t30lunaes/real/sihwa_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Sadopaul · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 521.506,
+"b": 526.526,
+"k": "ilus",
+"t": "plant",
+"p": {
+"mode": "run",
+"o": {
+"build": {
+"lines": [
+"~*250* megavatios"
+],
+"size": 90,
+"a": 46
+}
+}
+}
+},
+{
+"a": 526.526,
+"b": 529.166,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a29_homes_lights.jpg"
+}
+},
+{
+"a": 529.166,
+"b": 531.486,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k11_turbine_water.mp4"
+}
+},
+{
+"a": 531.486,
+"b": 532.826,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a27_dam_turbine.jpg"
+}
+},
+{
+"a": 532.826,
+"b": 539.186,
+"k": "ilus",
+"t": "plant",
+"p": {
+"mode": "drop"
+}
+},
+{
+"a": 539.186,
+"b": 547.512,
+"k": "ilus",
+"t": "plant",
+"p": {
+"mode": "drop",
+"at": -10,
+"o": {
+"build": {
+"lines": [
+"su combustible *desapareció del cielo.*"
+],
+"size": 80,
+"a": 124
+}
+}
+}
+},
+{
+"a": 547.512,
+"b": 552.912,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 8,
+"frm": 523,
+"to": 883,
+"title": "6:00 p.m.",
+"sub": "La primera noche.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 8,
+"big": true
+},
+{
+"a": 552.912,
+"b": 557.532,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/sunrise_02.jpg",
+"o": {
+"credit": "PuellaMarina · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 557.532,
+"b": 561.052,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/citynight_02.jpg",
+"o": {
+"credit": "Rhododendrites · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 561.052,
+"b": 564.552,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k12_city_lights.mp4",
+"o": {
+"aside": {
+"t": "ni compiten.",
+"x": 1150,
+"y": 340,
+"a": 12
+}
+},
+"rate": 0.852
+}
+},
+{
+"a": 564.552,
+"b": 567.172,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/farmnight_01.jpg",
+"o": {
+"credit": "Jody Claborn · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 567.172,
+"b": 568.232,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a31_beach_dark.jpg"
+}
+},
+{
+"a": 568.232,
+"b": 569.532,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a32_mountains_dark.jpg"
+}
+},
+{
+"a": 569.532,
+"b": 580.492,
+"k": "ilus",
+"t": "nights",
+"p": {
+"o": {
+"build": {
+"lines": [
+"Ni una noche *clara.*"
+],
+"a": 209
+},
+"big": {
+"w": "NUNCA MÁS.",
+"size": 150,
+"y": 430,
+"a": 280
+}
+}
+}
+},
+{
+"a": 580.492,
+"b": 584.432,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/lion_01.jpg",
+"ar": 0.8,
+"o": {
+"build": {
+"lines": [
+"aquí se pone *raro.*"
+],
+"size": 84,
+"a": 71
+},
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 584.432,
+"b": 586.012,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/lion_02.jpg",
+"o": {
+"label": "León",
+"credit": "Giles Laurent · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 586.012,
+"b": 591.372,
+"k": "ilus",
+"t": "savanna",
+"p": {
+"mode": "bright"
+}
+},
+{
+"a": 591.372,
+"b": 598.712,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a33_lion_grass.jpg",
+"o": {
+"label": "Serengueti, Tanzania"
+}
+}
+},
+{
+"a": 598.712,
+"b": 603.892,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_k13_lion_walk.jpg"
+}
+},
+{
+"a": 603.892,
+"b": 606.972,
+"k": "ilus",
+"t": "savanna",
+"p": {
+"mode": "dark",
+"o": {
+"build": {
+"lines": [
+"*Todas* las noches son oscuras."
+],
+"a": 2,
+"size": 90
+}
+}
+}
+},
+{
+"a": 606.972,
+"b": 609.312,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a34_zebras_night.jpg"
+}
+},
+{
+"a": 609.312,
+"b": 616.652,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/wildebeest_01.jpg",
+"o": {
+"credit": "Wolves201 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 616.652,
+"b": 620.392,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/dungbeetle_01.jpg",
+"o": {
+"label": "Escarabajo pelotero",
+"credit": "AmyAbroad · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 620.392,
+"b": 631.972,
+"k": "ilus",
+"t": "beetle",
+"p": {
+"mode": "beetle",
+"o": {
+"build": {
+"lines": [
+"en línea *recta.*"
+],
+"a": 140
+}
+}
+}
+},
+{
+"a": 631.972,
+"b": 633.472,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k15_moths.mp4",
+"rate": 0.7
+}
+},
+{
+"a": 633.472,
+"b": 637.192,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a37_birds_night.jpg"
+}
+},
+{
+"a": 637.192,
+"b": 642.712,
+"k": "ilus",
+"t": "beetle",
+"p": {
+"mode": "lost"
+}
+},
+{
+"a": 642.712,
+"b": 650.632,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 9,
+"frm": 883,
+"to": 1440,
+"title": "24 HORAS",
+"sub": "3:17 a.m. del día siguiente.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 9,
+"big": true
+},
+{
+"a": 650.632,
+"b": 656.952,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/starsky_01.jpg",
+"o": {
+"credit": "ESO/B. Tafreshi (twanight.org) · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 656.952,
+"b": 666.912,
+"k": "ilus",
+"t": "slosh",
+"p": {
+"mode": "calm"
+}
+},
+{
+"a": 666.912,
+"b": 674.252,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/turbine_01.jpg",
+"o": {
+"credit": "Gordon Leggett · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 674.252,
+"b": 681.932,
+"k": "ilus",
+"t": "lookup",
+"p": {
+"mode": "look"
+}
+},
+{
+"a": 681.932,
+"b": 686.932,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/eclipse_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Michael S Adler · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 686.932,
+"b": 693.372,
+"k": "ilus",
+"t": "eclipse",
+"p": {
+"mode": "solar",
+"o": {
+"build": {
+"lines": [
+"*Nunca* más un eclipse."
+],
+"a": 2,
+"size": 96
+}
+}
+},
+"big": true
+},
+{
+"a": 693.372,
+"b": 697.972,
+"k": "ilus",
+"t": "eclipse",
+"p": {
+"mode": "lunar"
+},
+"big": true
+},
+{
+"a": 697.972,
+"b": 701.292,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "SIN ECLIPSES.",
+"a": 2,
+"size": 170,
+"y": 380
+},
+"build": {
+"lines": [
+"*Nunca.*"
+],
+"y": 640,
+"size": 100,
+"a": 68
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 701.292,
+"b": 704.772,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/eclipse_02.jpg",
+"ar": 1.0153,
+"o": {
+"credit": "Luc Viatour · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 704.772,
+"b": 707.972,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a39_eclipse_glasses.jpg"
+}
+},
+{
+"a": 707.972,
+"b": 709.592,
+"k": "g",
+"t": "eclipsenone",
+"p": {}
+},
+{
+"a": 709.592,
+"b": 714.372,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 10,
+"frm": 1440,
+"to": 2160,
+"title": "36 HORAS",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 10,
+"big": true
+},
+{
+"a": 714.372,
+"b": 716.152,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/reef_01.jpg",
+"o": {
+"credit": "Toby Hudson · Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 716.152,
+"b": 722.352,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k17_reef_fish.mp4",
+"o": {
+"build": {
+"lines": [
+"un reloj *lunar.*"
+],
+"a": 59
+}
+},
+"rate": 0.411
+}
+},
+{
+"a": 722.352,
+"b": 726.232,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "desove de coral",
+"side": "c",
+"v": "img/t30lunaes/real/coral_01.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Diego Delso · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 726.232,
+"b": 728.692,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/reef_02.jpg",
+"ar": 0.6667,
+"o": {
+"label": "Gran Barrera de Coral",
+"credit": "Mediastudent2001 · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 728.692,
+"b": 743.292,
+"k": "ilus",
+"t": "reef",
+"p": {
+"mode": "spawn"
+}
+},
+{
+"a": 743.292,
+"b": 746.352,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k16_coral_spawn.mp4",
+"o": {
+"build": {
+"lines": [
+"una nevada al *revés.*"
+],
+"size": 90,
+"a": 46
+}
+},
+"rate": 0.877
+}
+},
+{
+"a": 746.352,
+"b": 753.732,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a40_coral_night.jpg"
+}
+},
+{
+"a": 753.732,
+"b": 766.652,
+"k": "ilus",
+"t": "reef",
+"p": {
+"mode": "nomoon",
+"o": {
+"build": {
+"lines": [
+"no se *encuentran.*"
+],
+"a": 163
+}
+}
+}
+},
+{
+"a": 766.652,
+"b": 770.792,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a42_grunion_sand.jpg",
+"o": {
+"label": "Grunión · California"
+}
+}
+},
+{
+"a": 770.792,
+"b": 774.712,
+"k": "ilus",
+"t": "grunion",
+"p": {
+"mode": "on"
+}
+},
+{
+"a": 774.712,
+"b": 777.692,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k18_grunion.mp4",
+"rate": 0.9
+}
+},
+{
+"a": 777.692,
+"b": 782.812,
+"k": "ilus",
+"t": "grunion",
+"p": {
+"mode": "off"
+}
+},
+{
+"a": 782.812,
+"b": 789.912,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/arctic_01.jpg",
+"o": {
+"label": "Ártico · noche polar",
+"credit": "Photographs and video by Gary Banz… · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 789.912,
+"b": 793.292,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "zooplancton",
+"side": "c",
+"v": "img/t30lunaes/real/zoopl_01.jpg",
+"ar": 1.5059,
+"o": {
+"credit": "NOAA Photo Library · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 793.292,
+"b": 797.952,
+"k": "ilus",
+"t": "arctic",
+"p": {
+"mode": "follow",
+"o": {
+"build": {
+"lines": [
+"La Luna era su *sol.*"
+],
+"a": 104
+}
+}
+}
+},
+{
+"a": 797.952,
+"b": 799.572,
+"k": "ilus",
+"t": "arctic",
+"p": {
+"mode": "gone"
+}
+},
+{
+"a": 799.572,
+"b": 805.332,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 11,
+"frm": 2160,
+"to": 2880,
+"title": "48 HORAS",
+"sub": null,
+"far": false
+},
+"sfx": "whoosh",
+"roster": 11,
+"big": true
+},
+{
+"a": 805.332,
+"b": 813.372,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/earthspace_03.jpg",
+"o": {
+"credit": "NASA / Kayla Barron · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 813.372,
+"b": 816.932,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a45_port_cranes.jpg"
+}
+},
+{
+"a": 816.932,
+"b": 819.578,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a60_harbor_office.jpg"
+}
+},
+{
+"a": 819.578,
+"b": 827.478,
+"k": "ilus",
+"t": "port",
+"p": {}
+},
+{
+"a": 827.478,
+"b": 831.538,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k20_ship_port.mp4",
+"rate": 0.727
+}
+},
+{
+"a": 831.538,
+"b": 834.858,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a46_fishing_night.jpg"
+}
+},
+{
+"a": 834.858,
+"b": 836.998,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k21_fishing_lamp.mp4"
+}
+},
+{
+"a": 836.998,
+"b": 842.038,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a47_net_empty.jpg"
+}
+},
+{
+"a": 842.038,
+"b": 847.598,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/starsky_02.jpg",
+"ar": 1.0,
+"o": {
+"credit": "APFL/ESO · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 847.598,
+"b": 850.118,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k22_stars_turn.mp4",
+"rate": 0.761
+}
+},
+{
+"a": 850.118,
+"b": 854.678,
+"k": "ilus",
+"t": "lookup",
+"p": {
+"mode": "memory"
+}
+},
+{
+"a": 854.678,
+"b": 859.578,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a49_old_books.jpg"
+}
+},
+{
+"a": 859.578,
+"b": 864.638,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/milkyway_02.jpg",
+"o": {
+"build": {
+"lines": [
+"un pedazo de cielo *vacío.*"
+],
+"a": 62
+},
+"credit": "Y. Beletsky/ESO · Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 864.638,
+"b": 869.578,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 12,
+"frm": 2880,
+"to": 4320,
+"title": "72 HORAS",
+"sub": "Tres días.",
+"far": false
+},
+"sfx": "whoosh",
+"roster": 12,
+"big": true
+},
+{
+"a": 869.578,
+"b": 873.738,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/earthspace_05.jpg",
+"o": {
+"credit": "NASA astronaut Ed Lu · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 873.738,
+"b": 883.398,
+"k": "ilus",
+"t": "bedroom",
+"p": {
+"mode": "window",
+"o": {
+"build": {
+"lines": [
+"Los humanos están *bien.*"
+],
+"a": 2,
+"size": 100
+}
+}
+}
+},
+{
+"a": 883.398,
+"b": 886.538,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/milkyway_03.jpg",
+"o": {
+"credit": "BLM Oregon &amp; Washington · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 886.538,
+"b": 888.998,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/sunrise_03.jpg",
+"o": {
+"credit": "Dietmar Rabich · Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 888.998,
+"b": 895.838,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a52_inland_town.jpg",
+"o": {
+"aside": {
+"t": "sinceramente: igual.",
+"x": 1060,
+"y": 330,
+"a": 107
+}
+}
+}
+},
+{
+"a": 895.838,
+"b": 914.878,
+"k": "g",
+"t": "board",
+"p": {},
+"big": true
+},
+{
+"a": 914.878,
+"b": 920.638,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a53_ocean_floor.jpg"
+}
+},
+{
+"a": 920.638,
+"b": 939.938,
+"k": "ilus",
+"t": "tides",
+"p": {
+"mode": "spin",
+"o": {
+"build": {
+"lines": [
+"un *freno* sobre nuestro giro"
+],
+"a": 377
+}
+}
+},
+"big": true
+},
+{
+"a": 939.938,
+"b": 946.478,
+"k": "g",
+"t": "daylen",
+"p": {},
+"big": true
+},
+{
+"a": 946.478,
+"b": 953.838,
+"k": "g",
+"t": "daylen",
+"p": {
+"flat": true
+},
+"big": true
+},
+{
+"a": 953.838,
+"b": 961.018,
+"k": "g",
+"t": "clock",
+"p": {
+"idx": 12,
+"frm": 4320,
+"to": 4320,
+"title": "FUTURO LEJANO",
+"sub": null,
+"far": true
+},
+"sfx": "whoosh",
+"roster": 12,
+"big": true
+},
+{
+"a": 961.018,
+"b": 970.718,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "seasons"
+},
+"big": true
+},
+{
+"a": 970.718,
+"b": 974.718,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "steady"
+},
+"big": true
+},
+{
+"a": 974.718,
+"b": 977.298,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k23_top_spin.mp4"
+}
+},
+{
+"a": 977.298,
+"b": 997.358,
+"k": "ilus",
+"t": "tilt",
+"p": {
+"mode": "wander",
+"o": {
+"build": {
+"lines": [
+"Los estudios no *coinciden.*"
+],
+"size": 96,
+"a": 280
+},
+"aside": {
+"t": "nadie lo sabe.",
+"x": 1200,
+"y": 700,
+"a": 377
+}
+}
+},
+"big": true
+},
+{
+"a": 997.358,
+"b": 999.038,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a55_summer_heat.jpg"
+}
+},
+{
+"a": 999.038,
+"b": 1000.758,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a56_winter_snow.jpg"
+}
+},
+{
+"a": 1000.758,
+"b": 1003.078,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k24_ice_calve.mp4"
+}
+},
+{
+"a": 1003.078,
+"b": 1006.238,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a57_ice_moving.jpg",
+"o": {
+"build": {
+"lines": [
+"No en tu *vida.*"
+],
+"a": 53
+}
+}
+}
+},
+{
+"a": 1006.238,
+"b": 1010.758,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/earthrise_02.jpg",
+"ar": 1.0191,
+"o": {
+"credit": "William Anders · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 1010.758,
+"b": 1022.918,
+"k": "ilus",
+"t": "myth",
+"p": {
+"o": {
+"build": {
+"lines": [
+"un *mito.*"
+],
+"a": 2,
+"size": 110
+}
+}
+}
+},
+{
+"a": 1022.918,
+"b": 1026.898,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30lunaes/real/craters_02.jpg",
+"ar": 1.0317,
+"o": {
+"credit": "NASA Johnson Space Center · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 1026.898,
+"b": 1034.418,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a58_crater_closeup.jpg"
+}
+},
+{
+"a": 1034.418,
+"b": 1053.658,
+"k": "ilus",
+"t": "vanish",
+"p": {
+"sea": true,
+"at": -10,
+"o": {
+"build": {
+"lines": [
+"más callado y más *oscuro.*"
+],
+"a": 178
+}
+}
+}
+},
+{
+"a": 1053.658,
+"b": 1057.438,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Qué extrañarías más?",
+"bell": false
+}
+},
+{
+"a": 1057.438,
+"b": 1062.198,
+"k": "real",
+"t": "cards",
+"p": {
+"bg": "img/t30lunaes/real/moonlit_04.jpg",
+"cards": [
+"img/t30lunaes/real/fullmoon_03.jpg",
+"img/t30lunaes/real/lunarecl_01.jpg",
+"img/t30lunaes/real/mudflat_02.jpg"
+],
+"o": {
+"credit": "Wikimedia Commons · dominio público / CC"
+}
+}
+},
+{
+"a": 1062.198,
+"b": 1072.958,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Qué se rompe la próxima vez? La más votada va después.",
+"bell": false
+}
+},
+{
+"a": 1072.958,
+"b": 1078.118,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "space",
+"o": {
+"build": {
+"lines": [
+"La semana que viene:",
+"la Tierra *deja de girar.*"
+],
+"a": 2,
+"y": 360,
+"size": 96
+}
+}
+}
+},
+{
+"a": 1078.118,
+"b": 1082.638,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/real/milkyway_04.jpg",
+"o": {
+"credit": "BLM Oregon &amp; Washington · Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 1082.638,
+"b": 1086.318,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbete + campanita para no perdértelo."
+}
+},
+{
+"a": 1086.318,
+"b": 1090.398,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30lunaes/ag/t30lunaes_a01_window_moon.jpg",
+"o": {
+"build": {
+"lines": [
+"Mira hacia arriba *esta noche.*"
+],
+"a": 66
+}
+}
+}
+},
+{
+"a": 1090.398,
+"b": 1092.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30lunaes/t30lunaes_k01_moon_clouds.mp4",
+"o": {
+"build": {
+"lines": [
+"Mientras todavía *está.*"
+],
+"a": 2
+}
+}
+}
+}
+],
+"stops": [
+{
+"a": 103.82,
+"b": 172.22,
+"m0": 1,
+"m1": 13
+},
+{
+"a": 174.06,
+"b": 231.92,
+"m0": 13,
+"m1": 43
+},
+{
+"a": 235.12,
+"b": 278.046,
+"m0": 43,
+"m1": 103
+},
+{
+"a": 283.006,
+"b": 355.966,
+"m0": 103,
+"m1": 193
+},
+{
+"a": 361.086,
+"b": 425.706,
+"m0": 193,
+"m1": 343
+},
+{
+"a": 430.866,
+"b": 501.886,
+"m0": 343,
+"m1": 523
+},
+{
+"a": 505.446,
+"b": 547.512,
+"m0": 523,
+"m1": 883
+},
+{
+"a": 552.912,
+"b": 642.712,
+"m0": 883,
+"m1": 1440
+},
+{
+"a": 650.632,
+"b": 709.592,
+"m0": 1440,
+"m1": 2160
+},
+{
+"a": 714.372,
+"b": 799.572,
+"m0": 2160,
+"m1": 2880
+},
+{
+"a": 805.332,
+"b": 864.638,
+"m0": 2880,
+"m1": 4320
+},
+{
+"a": 869.578,
+"b": 953.838,
+"m0": 4320,
+"m1": 4350
+}
+]
+}

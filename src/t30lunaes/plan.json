@@ -1,0 +1,1366 @@
+{
+"end": 1092.86,
+"shots": [
+{
+"a": 0.0,
+"b": 3.24,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a02_clock_317.jpg"
+},
+{
+"a": 3.24,
+"b": 4.64,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a06_bed_sleep.jpg"
+},
+{
+"a": 4.64,
+"b": 8.44,
+"k": "ilus",
+"src": "bedroom"
+},
+{
+"a": 8.44,
+"b": 9.64,
+"k": "real",
+"src": "img/t30lunaes/real/fullmoon_01.jpg"
+},
+{
+"a": 9.64,
+"b": 11.82,
+"k": "real",
+"src": "img/t30lunaes/real/moonnight_01.jpg"
+},
+{
+"a": 11.82,
+"b": 20.18,
+"k": "ilus",
+"src": "vanish",
+"sfx": "revelacion"
+},
+{
+"a": 20.18,
+"b": 22.02,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a03_rooftops_moon.jpg"
+},
+{
+"a": 22.02,
+"b": 24.28,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a04_rooftops_nomoon.jpg"
+},
+{
+"a": 24.28,
+"b": 25.7,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a59_window_empty.jpg"
+},
+{
+"a": 25.7,
+"b": 29.42,
+"k": "ilus",
+"src": "bedroom"
+},
+{
+"a": 29.42,
+"b": 30.78,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a05_ocean_night.jpg"
+},
+{
+"a": 30.78,
+"b": 32.8,
+"k": "real",
+"src": "img/t30lunaes/real/earthspace_02.jpg"
+},
+{
+"a": 32.8,
+"b": 34.48,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k03_waves_night.mp4"
+},
+{
+"a": 34.48,
+"b": 35.78,
+"k": "real",
+"src": "img/t30lunaes/real/moonlit_01.jpg"
+},
+{
+"a": 35.78,
+"b": 37.32,
+"k": "real",
+"src": "img/t30lunaes/real/moonnight_02.jpg"
+},
+{
+"a": 37.32,
+"b": 38.54,
+"k": "ilus",
+"src": "hand"
+},
+{
+"a": 38.54,
+"b": 41.14,
+"k": "real",
+"src": "img/t30lunaes/real/earthrise_01.jpg"
+},
+{
+"a": 41.14,
+"b": 44.46,
+"k": "real",
+"src": "img/t30lunaes/real/tidepool_01.jpg"
+},
+{
+"a": 44.46,
+"b": 48.6,
+"k": "ilus",
+"src": "hand"
+},
+{
+"a": 48.6,
+"b": 53.68,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 53.68,
+"b": 55.48,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a48_backyard_look.jpg"
+},
+{
+"a": 55.48,
+"b": 57.4,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a13_globe_desk.jpg"
+},
+{
+"a": 57.4,
+"b": 60.22,
+"k": "real",
+"src": "img/t30lunaes/real/mission_01.jpg"
+},
+{
+"a": 60.22,
+"b": 61.52,
+"k": "real",
+"src": "img/t30lunaes/real/zebra_01.jpg"
+},
+{
+"a": 61.52,
+"b": 63.48,
+"k": "real",
+"src": "img/t30lunaes/real/sunrise_01.jpg"
+},
+{
+"a": 63.48,
+"b": 66.92,
+"k": "real",
+"src": "img/t30lunaes/real/pier_01.jpg"
+},
+{
+"a": 66.92,
+"b": 76.94,
+"k": "ilus",
+"src": "tilt",
+"big": true
+},
+{
+"a": 76.94,
+"b": 84.46,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 84.46,
+"b": 91.18,
+"k": "real",
+"src": "img/t30lunaes/real/earthmoon_02.jpg"
+},
+{
+"a": 91.18,
+"b": 95.46,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 95.46,
+"b": 98.58,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a38_empty_sky_chairs.jpg"
+},
+{
+"a": 98.58,
+"b": 100.38,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 100.38,
+"b": 103.82,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 103.82,
+"b": 109.24,
+"k": "ilus",
+"src": "bedroom"
+},
+{
+"a": 109.24,
+"b": 112.0,
+"k": "real",
+"src": "img/t30lunaes/real/fullmoon_02.jpg"
+},
+{
+"a": 112.0,
+"b": 129.76,
+"k": "ilus",
+"src": "scale"
+},
+{
+"a": 129.76,
+"b": 132.46,
+"k": "real",
+"src": "img/t30lunaes/real/moonlit_02.jpg"
+},
+{
+"a": 132.46,
+"b": 136.1,
+"k": "real",
+"src": "img/t30lunaes/real/craters_01.jpg"
+},
+{
+"a": 136.1,
+"b": 138.84,
+"k": "real",
+"src": "img/t30lunaes/real/moonlit_03.jpg"
+},
+{
+"a": 138.84,
+"b": 144.56,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a10_flashlight.jpg"
+},
+{
+"a": 144.56,
+"b": 156.14,
+"k": "ilus",
+"src": "farm",
+"big": true
+},
+{
+"a": 156.14,
+"b": 160.14,
+"k": "g",
+"src": "split"
+},
+{
+"a": 160.14,
+"b": 169.34,
+"k": "ilus",
+"src": "farm",
+"big": true
+},
+{
+"a": 169.34,
+"b": 172.22,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_k25_milkyway.jpg"
+},
+{
+"a": 172.22,
+"b": 174.06,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 174.06,
+"b": 178.32,
+"k": "real",
+"src": "img/t30lunaes/real/observ_01.jpg"
+},
+{
+"a": 178.32,
+"b": 181.58,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k05_dome_turn.mp4"
+},
+{
+"a": 181.58,
+"b": 185.24,
+"k": "real",
+"src": "img/t30lunaes/real/observ_02.jpg"
+},
+{
+"a": 185.24,
+"b": 188.76,
+"k": "real",
+"src": "img/t30lunaes/real/retro_01.jpg"
+},
+{
+"a": 188.76,
+"b": 190.82,
+"k": "real",
+"src": "img/t30lunaes/real/lunokhod_02.jpg"
+},
+{
+"a": 190.82,
+"b": 196.74,
+"k": "ilus",
+"src": "laser",
+"big": true
+},
+{
+"a": 196.74,
+"b": 199.24,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k04_laser.mp4"
+},
+{
+"a": 199.24,
+"b": 201.04,
+"k": "ilus",
+"src": "laser",
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 201.04,
+"b": 205.3,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a12_screens.jpg"
+},
+{
+"a": 205.3,
+"b": 207.76,
+"k": "real",
+"src": "img/t30lunaes/real/mission_02.jpg"
+},
+{
+"a": 207.76,
+"b": 222.68,
+"k": "ilus",
+"src": "orbits"
+},
+{
+"a": 222.68,
+"b": 225.16,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a50_phone_works.jpg"
+},
+{
+"a": 225.16,
+"b": 226.8,
+"k": "real",
+"src": "img/t30lunaes/real/satellite_01.jpg"
+},
+{
+"a": 226.8,
+"b": 231.92,
+"k": "real",
+"src": "img/t30lunaes/real/mission_03.jpg"
+},
+{
+"a": 231.92,
+"b": 235.12,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 235.12,
+"b": 238.12,
+"k": "real",
+"src": "img/t30lunaes/real/earthmoon_03.jpg"
+},
+{
+"a": 238.12,
+"b": 262.06,
+"k": "ilus",
+"src": "bary",
+"big": true
+},
+{
+"a": 262.06,
+"b": 270.42,
+"k": "ilus",
+"src": "bary",
+"big": true
+},
+{
+"a": 270.42,
+"b": 278.046,
+"k": "real",
+"src": "img/t30lunaes/real/llr_01.jpg"
+},
+{
+"a": 278.046,
+"b": 283.006,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 283.006,
+"b": 287.466,
+"k": "real",
+"src": "img/t30lunaes/real/fundyhi_01.jpg"
+},
+{
+"a": 287.466,
+"b": 297.626,
+"k": "ilus",
+"src": "tides",
+"big": true
+},
+{
+"a": 297.626,
+"b": 304.746,
+"k": "ilus",
+"src": "tides",
+"big": true
+},
+{
+"a": 304.746,
+"b": 316.926,
+"k": "ilus",
+"src": "tides",
+"big": true
+},
+{
+"a": 316.926,
+"b": 325.566,
+"k": "ilus",
+"src": "tides",
+"big": true
+},
+{
+"a": 325.566,
+"b": 332.626,
+"k": "ilus",
+"src": "slosh",
+"sfx": "revelacion"
+},
+{
+"a": 332.626,
+"b": 336.026,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k06_bath_slosh.mp4"
+},
+{
+"a": 336.026,
+"b": 337.886,
+"k": "ilus",
+"src": "slosh"
+},
+{
+"a": 337.886,
+"b": 344.566,
+"k": "ilus",
+"src": "slosh"
+},
+{
+"a": 344.566,
+"b": 349.066,
+"k": "g",
+"src": "tidechart",
+"big": true
+},
+{
+"a": 349.066,
+"b": 353.826,
+"k": "ilus",
+"src": "pier"
+},
+{
+"a": 353.826,
+"b": 355.966,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k07_pier_water.mp4"
+},
+{
+"a": 355.966,
+"b": 361.086,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 361.086,
+"b": 362.826,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k08_sunrise.mp4"
+},
+{
+"a": 362.826,
+"b": 368.206,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a17_sunrise_trees.jpg"
+},
+{
+"a": 368.206,
+"b": 375.666,
+"k": "real",
+"src": "img/t30lunaes/real/daymoon_03.jpg"
+},
+{
+"a": 375.666,
+"b": 381.766,
+"k": "ilus",
+"src": "sunrise"
+},
+{
+"a": 381.766,
+"b": 383.646,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a18_breakfast_tv.jpg"
+},
+{
+"a": 383.646,
+"b": 390.806,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a19_phones.jpg"
+},
+{
+"a": 390.806,
+"b": 394.866,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a20_calendar_wall.jpg"
+},
+{
+"a": 394.866,
+"b": 396.606,
+"k": "real",
+"src": "img/t30lunaes/real/crescent_03.jpg"
+},
+{
+"a": 396.606,
+"b": 408.106,
+"k": "ilus",
+"src": "calendar",
+"big": true
+},
+{
+"a": 408.106,
+"b": 412.526,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a21_farmer_plant.jpg"
+},
+{
+"a": 412.526,
+"b": 414.926,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a14_pier_dawn.jpg"
+},
+{
+"a": 414.926,
+"b": 423.566,
+"k": "real",
+"src": "img/t30lunaes/real/lantern_02.jpg"
+},
+{
+"a": 423.566,
+"b": 425.706,
+"k": "ilus",
+"src": "calendar",
+"big": true
+},
+{
+"a": 425.706,
+"b": 430.866,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 430.866,
+"b": 432.866,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a23_coast_town.jpg"
+},
+{
+"a": 432.866,
+"b": 434.726,
+"k": "real",
+"src": "img/t30lunaes/real/pier_03.jpg"
+},
+{
+"a": 434.726,
+"b": 437.626,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a24_wet_line.jpg"
+},
+{
+"a": 437.626,
+"b": 439.026,
+"k": "g",
+"src": "word"
+},
+{
+"a": 439.026,
+"b": 448.946,
+"k": "g",
+"src": "tidechart",
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 448.946,
+"b": 454.146,
+"k": "real",
+"src": "img/t30lunaes/real/fundy_01.jpg"
+},
+{
+"a": 454.146,
+"b": 458.526,
+"k": "real",
+"src": "img/t30lunaes/real/fundy_02.jpg"
+},
+{
+"a": 458.526,
+"b": 463.586,
+"k": "ilus",
+"src": "fundy"
+},
+{
+"a": 463.586,
+"b": 470.386,
+"k": "ilus",
+"src": "fundy"
+},
+{
+"a": 470.386,
+"b": 476.446,
+"k": "real",
+"src": "img/t30lunaes/real/boatsmud_01.jpg"
+},
+{
+"a": 476.446,
+"b": 480.226,
+"k": "real",
+"src": "img/t30lunaes/real/fundyhi_02.jpg"
+},
+{
+"a": 480.226,
+"b": 486.106,
+"k": "real",
+"src": "img/t30lunaes/real/tidepool_02.jpg"
+},
+{
+"a": 486.106,
+"b": 488.026,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a25_tidepool_dry.jpg"
+},
+{
+"a": 488.026,
+"b": 492.266,
+"k": "real",
+"src": "img/t30lunaes/real/mudflat_01.jpg"
+},
+{
+"a": 492.266,
+"b": 494.866,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k10_birds_mud.mp4"
+},
+{
+"a": 494.866,
+"b": 499.226,
+"k": "real",
+"src": "img/t30lunaes/real/knots_01.jpg"
+},
+{
+"a": 499.226,
+"b": 501.886,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a26_birds_flat.jpg"
+},
+{
+"a": 501.886,
+"b": 505.446,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 505.446,
+"b": 510.746,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a28_dam_sea.jpg"
+},
+{
+"a": 510.746,
+"b": 514.646,
+"k": "real",
+"src": "img/t30lunaes/real/rance_01.jpg"
+},
+{
+"a": 514.646,
+"b": 516.666,
+"k": "real",
+"src": "img/t30lunaes/real/rance_03.jpg"
+},
+{
+"a": 516.666,
+"b": 521.506,
+"k": "real",
+"src": "img/t30lunaes/real/sihwa_01.jpg"
+},
+{
+"a": 521.506,
+"b": 526.526,
+"k": "ilus",
+"src": "plant"
+},
+{
+"a": 526.526,
+"b": 529.166,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a29_homes_lights.jpg"
+},
+{
+"a": 529.166,
+"b": 531.486,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k11_turbine_water.mp4"
+},
+{
+"a": 531.486,
+"b": 532.826,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a27_dam_turbine.jpg"
+},
+{
+"a": 532.826,
+"b": 539.186,
+"k": "ilus",
+"src": "plant"
+},
+{
+"a": 539.186,
+"b": 547.512,
+"k": "ilus",
+"src": "plant"
+},
+{
+"a": 547.512,
+"b": 552.912,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 552.912,
+"b": 557.532,
+"k": "real",
+"src": "img/t30lunaes/real/sunrise_02.jpg"
+},
+{
+"a": 557.532,
+"b": 561.052,
+"k": "real",
+"src": "img/t30lunaes/real/citynight_02.jpg"
+},
+{
+"a": 561.052,
+"b": 564.552,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k12_city_lights.mp4"
+},
+{
+"a": 564.552,
+"b": 567.172,
+"k": "real",
+"src": "img/t30lunaes/real/farmnight_01.jpg"
+},
+{
+"a": 567.172,
+"b": 568.232,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a31_beach_dark.jpg"
+},
+{
+"a": 568.232,
+"b": 569.532,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a32_mountains_dark.jpg"
+},
+{
+"a": 569.532,
+"b": 580.492,
+"k": "ilus",
+"src": "nights"
+},
+{
+"a": 580.492,
+"b": 584.432,
+"k": "real",
+"src": "img/t30lunaes/real/lion_01.jpg"
+},
+{
+"a": 584.432,
+"b": 586.012,
+"k": "real",
+"src": "img/t30lunaes/real/lion_02.jpg"
+},
+{
+"a": 586.012,
+"b": 591.372,
+"k": "ilus",
+"src": "savanna"
+},
+{
+"a": 591.372,
+"b": 598.712,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a33_lion_grass.jpg"
+},
+{
+"a": 598.712,
+"b": 603.892,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_k13_lion_walk.jpg"
+},
+{
+"a": 603.892,
+"b": 606.972,
+"k": "ilus",
+"src": "savanna"
+},
+{
+"a": 606.972,
+"b": 609.312,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a34_zebras_night.jpg"
+},
+{
+"a": 609.312,
+"b": 616.652,
+"k": "real",
+"src": "img/t30lunaes/real/wildebeest_01.jpg"
+},
+{
+"a": 616.652,
+"b": 620.392,
+"k": "real",
+"src": "img/t30lunaes/real/dungbeetle_01.jpg"
+},
+{
+"a": 620.392,
+"b": 631.972,
+"k": "ilus",
+"src": "beetle"
+},
+{
+"a": 631.972,
+"b": 633.472,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k15_moths.mp4"
+},
+{
+"a": 633.472,
+"b": 637.192,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a37_birds_night.jpg"
+},
+{
+"a": 637.192,
+"b": 642.712,
+"k": "ilus",
+"src": "beetle"
+},
+{
+"a": 642.712,
+"b": 650.632,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 650.632,
+"b": 656.952,
+"k": "real",
+"src": "img/t30lunaes/real/starsky_01.jpg"
+},
+{
+"a": 656.952,
+"b": 666.912,
+"k": "ilus",
+"src": "slosh"
+},
+{
+"a": 666.912,
+"b": 674.252,
+"k": "real",
+"src": "img/t30lunaes/real/turbine_01.jpg"
+},
+{
+"a": 674.252,
+"b": 681.932,
+"k": "ilus",
+"src": "lookup"
+},
+{
+"a": 681.932,
+"b": 686.932,
+"k": "real",
+"src": "img/t30lunaes/real/eclipse_01.jpg"
+},
+{
+"a": 686.932,
+"b": 693.372,
+"k": "ilus",
+"src": "eclipse",
+"big": true
+},
+{
+"a": 693.372,
+"b": 697.972,
+"k": "ilus",
+"src": "eclipse",
+"big": true
+},
+{
+"a": 697.972,
+"b": 701.292,
+"k": "g",
+"src": "word",
+"sfx": "revelacion"
+},
+{
+"a": 701.292,
+"b": 704.772,
+"k": "real",
+"src": "img/t30lunaes/real/eclipse_02.jpg"
+},
+{
+"a": 704.772,
+"b": 707.972,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a39_eclipse_glasses.jpg"
+},
+{
+"a": 707.972,
+"b": 709.592,
+"k": "g",
+"src": "eclipsenone"
+},
+{
+"a": 709.592,
+"b": 714.372,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 714.372,
+"b": 716.152,
+"k": "real",
+"src": "img/t30lunaes/real/reef_01.jpg"
+},
+{
+"a": 716.152,
+"b": 722.352,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k17_reef_fish.mp4"
+},
+{
+"a": 722.352,
+"b": 726.232,
+"k": "real",
+"src": "img/t30lunaes/real/coral_01.jpg"
+},
+{
+"a": 726.232,
+"b": 728.692,
+"k": "real",
+"src": "img/t30lunaes/real/reef_02.jpg"
+},
+{
+"a": 728.692,
+"b": 743.292,
+"k": "ilus",
+"src": "reef"
+},
+{
+"a": 743.292,
+"b": 746.352,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k16_coral_spawn.mp4"
+},
+{
+"a": 746.352,
+"b": 753.732,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a40_coral_night.jpg"
+},
+{
+"a": 753.732,
+"b": 766.652,
+"k": "ilus",
+"src": "reef"
+},
+{
+"a": 766.652,
+"b": 770.792,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a42_grunion_sand.jpg"
+},
+{
+"a": 770.792,
+"b": 774.712,
+"k": "ilus",
+"src": "grunion"
+},
+{
+"a": 774.712,
+"b": 777.692,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k18_grunion.mp4"
+},
+{
+"a": 777.692,
+"b": 782.812,
+"k": "ilus",
+"src": "grunion"
+},
+{
+"a": 782.812,
+"b": 789.912,
+"k": "real",
+"src": "img/t30lunaes/real/arctic_01.jpg"
+},
+{
+"a": 789.912,
+"b": 793.292,
+"k": "real",
+"src": "img/t30lunaes/real/zoopl_01.jpg"
+},
+{
+"a": 793.292,
+"b": 797.952,
+"k": "ilus",
+"src": "arctic"
+},
+{
+"a": 797.952,
+"b": 799.572,
+"k": "ilus",
+"src": "arctic"
+},
+{
+"a": 799.572,
+"b": 805.332,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 805.332,
+"b": 813.372,
+"k": "real",
+"src": "img/t30lunaes/real/earthspace_03.jpg"
+},
+{
+"a": 813.372,
+"b": 816.932,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a45_port_cranes.jpg"
+},
+{
+"a": 816.932,
+"b": 819.578,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a60_harbor_office.jpg"
+},
+{
+"a": 819.578,
+"b": 827.478,
+"k": "ilus",
+"src": "port"
+},
+{
+"a": 827.478,
+"b": 831.538,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k20_ship_port.mp4"
+},
+{
+"a": 831.538,
+"b": 834.858,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a46_fishing_night.jpg"
+},
+{
+"a": 834.858,
+"b": 836.998,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k21_fishing_lamp.mp4"
+},
+{
+"a": 836.998,
+"b": 842.038,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a47_net_empty.jpg"
+},
+{
+"a": 842.038,
+"b": 847.598,
+"k": "real",
+"src": "img/t30lunaes/real/starsky_02.jpg"
+},
+{
+"a": 847.598,
+"b": 850.118,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k22_stars_turn.mp4"
+},
+{
+"a": 850.118,
+"b": 854.678,
+"k": "ilus",
+"src": "lookup"
+},
+{
+"a": 854.678,
+"b": 859.578,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a49_old_books.jpg"
+},
+{
+"a": 859.578,
+"b": 864.638,
+"k": "real",
+"src": "img/t30lunaes/real/milkyway_02.jpg"
+},
+{
+"a": 864.638,
+"b": 869.578,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 869.578,
+"b": 873.738,
+"k": "real",
+"src": "img/t30lunaes/real/earthspace_05.jpg"
+},
+{
+"a": 873.738,
+"b": 883.398,
+"k": "ilus",
+"src": "bedroom"
+},
+{
+"a": 883.398,
+"b": 886.538,
+"k": "real",
+"src": "img/t30lunaes/real/milkyway_03.jpg"
+},
+{
+"a": 886.538,
+"b": 888.998,
+"k": "real",
+"src": "img/t30lunaes/real/sunrise_03.jpg"
+},
+{
+"a": 888.998,
+"b": 895.838,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a52_inland_town.jpg"
+},
+{
+"a": 895.838,
+"b": 914.878,
+"k": "g",
+"src": "board",
+"big": true
+},
+{
+"a": 914.878,
+"b": 920.638,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a53_ocean_floor.jpg"
+},
+{
+"a": 920.638,
+"b": 939.938,
+"k": "ilus",
+"src": "tides",
+"big": true
+},
+{
+"a": 939.938,
+"b": 946.478,
+"k": "g",
+"src": "daylen",
+"big": true
+},
+{
+"a": 946.478,
+"b": 953.838,
+"k": "g",
+"src": "daylen",
+"big": true
+},
+{
+"a": 953.838,
+"b": 961.018,
+"k": "g",
+"src": "clock",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 961.018,
+"b": 970.718,
+"k": "ilus",
+"src": "tilt",
+"big": true
+},
+{
+"a": 970.718,
+"b": 974.718,
+"k": "ilus",
+"src": "tilt",
+"big": true
+},
+{
+"a": 974.718,
+"b": 977.298,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k23_top_spin.mp4"
+},
+{
+"a": 977.298,
+"b": 997.358,
+"k": "ilus",
+"src": "tilt",
+"big": true
+},
+{
+"a": 997.358,
+"b": 999.038,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a55_summer_heat.jpg"
+},
+{
+"a": 999.038,
+"b": 1000.758,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a56_winter_snow.jpg"
+},
+{
+"a": 1000.758,
+"b": 1003.078,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k24_ice_calve.mp4"
+},
+{
+"a": 1003.078,
+"b": 1006.238,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a57_ice_moving.jpg"
+},
+{
+"a": 1006.238,
+"b": 1010.758,
+"k": "real",
+"src": "img/t30lunaes/real/earthrise_02.jpg"
+},
+{
+"a": 1010.758,
+"b": 1022.918,
+"k": "ilus",
+"src": "myth"
+},
+{
+"a": 1022.918,
+"b": 1026.898,
+"k": "real",
+"src": "img/t30lunaes/real/craters_02.jpg"
+},
+{
+"a": 1026.898,
+"b": 1034.418,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a58_crater_closeup.jpg"
+},
+{
+"a": 1034.418,
+"b": 1053.658,
+"k": "ilus",
+"src": "vanish"
+},
+{
+"a": 1053.658,
+"b": 1057.438,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 1057.438,
+"b": 1062.198,
+"k": "real",
+"src": "cards"
+},
+{
+"a": 1062.198,
+"b": 1072.958,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 1072.958,
+"b": 1078.118,
+"k": "g",
+"src": "word"
+},
+{
+"a": 1078.118,
+"b": 1082.638,
+"k": "real",
+"src": "img/t30lunaes/real/milkyway_04.jpg"
+},
+{
+"a": 1082.638,
+"b": 1086.318,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 1086.318,
+"b": 1090.398,
+"k": "real",
+"src": "img/t30lunaes/ag/t30lunaes_a01_window_moon.jpg"
+},
+{
+"a": 1090.398,
+"b": 1092.86,
+"k": "real",
+"src": "broll/t30lunaes/t30lunaes_k01_moon_clouds.mp4"
+}
+]
+}
