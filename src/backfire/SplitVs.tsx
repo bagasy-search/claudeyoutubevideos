@@ -30,10 +30,11 @@ export const SplitVs: React.FC<{
   leftAt?: number;
   rightAt?: number;
   credit?: string;
+  kicker?: string;           // rótulo de arriba (def. "THE PLAN · THE RESULT")
   bed?: string;
   t0?: number;
   durationInFrames?: number;
-}> = ({ leftImg, rightImg, leftHead = "WHAT THEY EXPECTED", rightHead = "WHAT HAPPENED", leftText, rightText, stamp = "BACKFIRED", leftAt, rightAt, credit, bed, t0, durationInFrames }) => {
+}> = ({ leftImg, rightImg, leftHead = "WHAT THEY EXPECTED", rightHead = "WHAT HAPPENED", leftText, rightText, stamp = "BACKFIRED", kicker = "THE PLAN · THE RESULT", leftAt, rightAt, credit, bed, t0, durationInFrames }) => {
   const now = useAbs(t0);
   const start = t0 ?? 0;
   const out = useOut(durationInFrames);
@@ -50,7 +51,7 @@ export const SplitVs: React.FC<{
         {stamp ? <Stamp text={stamp} p={sa} x={73} y={44} size={86} rot={-9} /> : null}
       </AbsoluteFill>
       <Grade vignette={0.5} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 96, textAlign: "center", fontFamily: F_TYPE, fontSize: 30, letterSpacing: 6, color: rgba(W.white, 0.75), opacity: la * out }}>THE PLAN · THE RESULT</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 96, textAlign: "center", fontFamily: F_TYPE, fontSize: 30, letterSpacing: 6, color: rgba(W.white, 0.75), opacity: la * out }}>{kicker}</div>
       <Credit text={credit} a={la} />
     </AbsoluteFill>
   );
