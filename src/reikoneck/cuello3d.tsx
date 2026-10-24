@@ -264,8 +264,8 @@ export const World: React.FC<{ t: number; camAt: ReturnType<typeof makeCam>["cam
   return (
     <ThreeCanvas width={W} height={H} style={{ position: "absolute", inset: 0 }} gl={{ antialias: true, preserveDrawingBuffer: true }} camera={{ fov: 38, position: [0, 2, 6] }}>
       <Cam t={t} camAt={camAt} />
-      <color attach="background" args={["#cfd8e2"]} />
-      <fog attach="fog" args={["#cfd8e2", 18, 48]} />
+      <color attach="background" args={["#e6dccd"]} />
+      <fog attach="fog" args={["#e6dccd", 14, 34]} />
       <ambientLight intensity={0.22} color="#fff4e6" />
       <hemisphereLight args={["#fff6e8", "#8d7a62", 0.3]} />
       {/* luz de la mañana: por la ventana esmerilada, desde la izquierda alta */}
@@ -277,8 +277,8 @@ export const World: React.FC<{ t: number; camAt: ReturnType<typeof makeCam>["cam
       <pointLight position={[0.8, 2.2, -1.0]} intensity={1.3} distance={4} color="#ffe3b8" />
       <pointLight position={[4.8, 2.2, -1.0]} intensity={1.1} distance={4.5} color="#ffe0b0" />
       {/* piso exterior / zócalo de la maqueta */}
-      <Box p={[0, -0.32, -0.6]} s={[22, 0.6, 4.6]} c="#3d3630" r={0.95} rad={0.02} cast={false} />
-      <mesh position={[0, -0.62, 6]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[60, 20]} /><meshStandardMaterial color="#b9b2a6" roughness={1} /></mesh>
+      <Box p={[0, -0.32, -0.6]} s={[22, 0.6, 4.6]} c="#7a5e45" r={0.85} rad={0.02} cast={false} />
+      <mesh position={[0, -0.62, 6]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow><planeGeometry args={[80, 40]} /><meshStandardMaterial color="#c9b49a" roughness={0.9} /></mesh>
 
       {/* ===== EL SALÓN (antes) ===== */}
       <Room x0={-10} x1={-5} floor="#d9d3c8" map={tx.tile} wall="#e8dcc6" wmap={tex.plaster} />

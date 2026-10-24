@@ -21,7 +21,7 @@ const T = (ph: string, after = 0): number => {
 // ---------------- poses de cámara por lugar ----------------
 type Pose = { p: V3; l: V3; fov: number };
 const POSE: Record<string, Pose> = {
-  house: { p: [0, 3.5, 10.6], l: [0, 0.75, -1.2], fov: 50 },
+  house: { p: [0, 2.9, 8.6], l: [0, 0.8, -1.2], fov: 46 },
   bath: { p: [-3, 1.9, 3.2], l: [-3, 1.2, -1.2], fov: 42 },
   bustF: { p: [-3, 1.75, 1.4], l: [-3, 1.45, -0.7], fov: 34 },
   bustC: { p: [-3, 1.7, 0.9], l: [-3, 1.35, -0.7], fov: 30 },
