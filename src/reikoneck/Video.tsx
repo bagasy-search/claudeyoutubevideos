@@ -51,7 +51,7 @@ const push = (q: Pose, k = 0.12): Pose => ({ p: q.p.map((v, i) => v + (q.l[i] - 
 type St = { b?: Partial<BustSt>; s?: Partial<BustSt>; l?: Partial<BustSt>; w?: Partial<Omit<WorldState, "bust" | "salon" | "lying">> };
 const RAW: [string, string, St?][] = [
   // ===== GANCHO: vos estás ahí, en el baño, con el celular =====
-  ["okay you are in the bathroom", "img:g_phone"],
+  ["okay youre in the bathroom", "img:g_phone"],
   ["and the camera is still on", "w:bustS", { b: { pitch: -0.7, fold: 1, phone: 1, phoneH: 0 } }],
   ["and there it is under your chin", "w:chin", { b: { pitch: -0.55, fold: 1 } }],
   ["and you put the phone down", "img:g_touch"],
@@ -63,11 +63,11 @@ const RAW: [string, string, St?][] = [
   ["chair japanese women", "w:salon", { w: { memory: 1, warm: 1 }, s: { pitch: 0.1 } }],
   ["and it is not because they are lucky", "wd:salon", { w: { memory: 1 } }],
   ["it gets old from what you do", "w:bustF"],
-  ["so today im going to show you nine things", "wd:house"],
+  ["so today im going to show you 9 things", "wd:house"],
   ["the first one costs nothing", "img:t_water"],
   ["and the last one is something my grandmother", "img:n_kimono"],
   ["my name is reiko", "w:salonW", { w: { memory: 1, warm: 1 } }],
-  ["i was an esthetician for 25 years", "img:salon_towel"],
+  ["i was an aesthetician for 25 years", "img:salon_towel"],
   ["i am not a doctor", "w:salon", { w: { memory: 1 } }],
   ["and there are some videos on the internet", "wd:bath"],
   ["this is my washroom", "w:bath", { w: { glow: { mirror: 0.5 } } }],
@@ -110,7 +110,7 @@ const RAW: [string, string, St?][] = [
   ["so tonight when you do your face", "img:c_down"],
 
   // ===== 4 · aceite de camelia y hacia dónde van las manos =====
-  ["thing number 4", "w:shelf", { w: { glow: { oil: 1 } } }],
+  ["tip number 4", "w:shelf", { w: { glow: { oil: 1 } } }],
   ["this is tsubaki oil", "img:o_drops"],
   ["japanese women have used it", "w:shelf", { w: { glow: { oil: 1 } } }],
   ["after the warm towel i put two drops", "img:o_drops@7"],
@@ -141,12 +141,12 @@ const RAW: [string, string, St?][] = [
   ["so what i do i bring the phone up", "img:p_up"],
   ["my husband laughed at me", "w:bustS", { b: { phone: 1, phoneH: 1 } }],
   ["in the salon i could tell which clients", "w:salonW", { w: { memory: 1 } }],
-  ["one lady a teacher", "img:p_dict"],
+  ["a teacher she raised", "img:p_dict"],
   ["she told me later", "w:dicts"],
 
   // ===== 7 · almohada baja =====
   ["thing number seven", "w:bedW", { w: { pillow: 1 }, l: { pitch: -0.6, fold: 1 } }],
-  ["you sleep seven eight hours", "img:pl_high"],
+  ["you sleep seven 8 hours", "img:pl_high"],
   ["many japanese families use a low pillow", "img:pl_soba"],
   ["it keeps the neck straight", "w:bed", { w: { pillow: 0 } }],
   ["you dont need a special japanese pillow", "img:pl_high@7"],
@@ -166,7 +166,7 @@ const RAW: [string, string, St?][] = [
   // ===== 9 · mostrar la nuca como la abuela =====
   ["show your nape like my grandmother", "w:bustB", { b: { kimono: 1 } }],
   ["my grandmother wore kimono", "img:n_kimono@7"],
-  ["unnaji we say", "w:bustB", { b: { kimono: 1 } }],
+  ["unaji we say", "w:bustB", { b: { kimono: 1 } }],
   ["so she walked like this", "img:n_posture"],
   ["like a string is pulling", "w:bustB", { b: { kimono: 1, string: 1, sh: 1 } }],
   ["and when i was a teenager", "wd:bustB", { b: { kimono: 1 } }],
@@ -176,8 +176,8 @@ const RAW: [string, string, St?][] = [
 
   // ===== repaso + cierre =====
   ["thats the nine", "wd:house"],
-  ["and please dont try to do all 9", "w:salonW", { w: { memory: 1 } }],
-  ["pick 2 just 2", "wd:bustF", { b: { towel: 1 } }],
+  ["and please dont try to do all nine", "w:salonW", { w: { memory: 1 } }],
+  ["pick two just two", "wd:bustF", { b: { towel: 1 } }],
   ["if you see a big change in your neck", "wd:bath"],
   ["if this helped you subscribe", "w:house"],
   ["and tell me one thing in the comments", "wd:house"],
@@ -298,11 +298,11 @@ export const Video: React.FC = () => {
   quote("age", "this is just my age", 40, "“THIS IS JUST MY AGE”", { size: 78, col: "#ffd9b8" });
   big("25y", "i worked 25 years", 50, "25 YEARS", { sub: "A BEAUTY SALON IN OSAKA", col: "#ffd9b8", edge: "#5a3a24" });
   big("6070", "60 70 75 years old", 55, "60 · 70 · 75", { col: "#ffffff" });
-  chip("notn", "not the turkey neck", 60, "NOT THE TURKEY NECK", true, 3.4);
+  chip("notn", "not that turkey neck", 60, "NOT THE TURKEY NECK", true, 3.4);
   rows("luck", [["not because they are lucky", 70, "LUCKY", false], ["not because they have surgery", 70, "SURGERY", false]], 2.6);
   rows("days", [["how you wash it", 85, "HOW YOU WASH IT", true], ["how you sleep", 85, "HOW YOU SLEEP ON IT", true], ["look at your phone", 85, "HOW YOU HOLD YOUR PHONE", true], ["where your sunscreen stops", 85, "WHERE YOUR SUNSCREEN STOPS", true]], 2.4, 200);
   stamp("bor", "nobody can sell you a boring thing", 95, "NOBODY SELLS BORING", { size: 80 });
-  big("nine", "nine things we do in japan", 100, "9", { size: 300, y: 470, col: "#ffd9b8", edge: "#5a3a24", sub: "THINGS WE DO IN JAPAN AFTER 50", dur: 6.5 });
+  big("nine", "9 things we do in japan", 100, "9", { size: 300, y: 470, col: "#ffd9b8", edge: "#5a3a24", sub: "THINGS WE DO IN JAPAN AFTER 50", dur: 6.5 });
   chip("free", "the first one costs nothing", 110, "#1 COSTS NOTHING", true, 2.6);
   chip("gma", "something my grandmother did", 115, "#9 · MY GRANDMOTHER, EVERY DAY", true, 3.2);
 
@@ -320,7 +320,7 @@ export const Video: React.FC = () => {
   big("40c", "about 40 degrees", 180, "40 °C", { sub: "LIKE A BATH YOU CAN SIT IN", col: "#ffd9b8", edge: "#5a3a24", dur: 4.2 });
   chip("nh", "not hot never hot", 185, "NOT HOT. NEVER HOT.", false, 3);
   tagAt("wrist", "inside of your wrist", 190, PT.sink, "TEST ON YOUR WRIST", { col: COL.amber, dur: 4 });
-  quote("tw", "twist twist", 200, "TWIST · TWIST", { size: 96, dur: 2.4 });
+  quote("tw", "twist until no water", 200, "TWIST · TWIST", { size: 96, dur: 2.4 });
   L.push(<Stopwatch key="sw1" t={t} at={F("one minute maybe two", 210)} out={F("one minute maybe two", 210) + 4} x={1400} y={300} n={2} unit="MIN" label="UNTIL IT'S NOT WARM" />);
   tagAt("sh", "the shoulders come down", 225, PT.collar, "SHOULDERS DOWN ~1 CM", { col: G, dur: 3.6 });
   chip("drk", "it drinks better", 235, "DAMP SKIN DRINKS BETTER", true, 3.4);
@@ -349,7 +349,7 @@ export const Video: React.FC = () => {
   chip("same", "same amount for the neck", 430, "SAME AMOUNT AS THE CHEEKS", true, 4);
 
   // ===== 4 · ACEITE DE CAMELIA =====
-  title("t4", "thing number 4", 445, "4", "CAMELLIA OIL · WHICH WAY YOUR HANDS GO");
+  title("t4", "tip number 4", 445, "4", "CAMELLIA OIL · WHICH WAY YOUR HANDS GO");
   tagAt("tsu", "this is tsubaki oil", 450, PT.oil, "TSUBAKI · 椿", { sub: "CAMELLIA OIL", col: COL.amber, dur: 4 });
   big("2d", "two drops only two", 470, "2 DROPS", { col: "#ffd9b8", edge: "#5a3a24" });
   tagAt("up", "front of the neck i go up", 480, PT.neck, "FRONT: UP ↑", { col: G, dur: 4 });
@@ -397,7 +397,7 @@ export const Video: React.FC = () => {
   tagAt("rt", "a small rolled towel", 800, PT.pillow, "A SMALL ROLLED TOWEL", { col: G, dur: 4, dx: -330 });
 
   // ===== 8 · BESAR EL TECHO =====
-  title("t8", "thing number eight", 815, "8", "KISS THE CEILING");
+  title("t8", "thing number 8", 815, "8", "KISS THE CEILING");
   rows("kc", [["sit straight or stand", 825, "SIT STRAIGHT", true], ["shoulders down", 828, "SHOULDERS DOWN", true], ["slowly look up", 830, "LOOK UP · LIPS FORWARD", true]], 2.6);
   L.push(<Stopwatch key="sw5" t={t} at={F("hold it", 838)} out={F("hold it", 838) + 4} x={1400} y={300} n={5} label="HOLD IT" />);
   tagAt("frn", "the front of your neck working", 840, PT.neck, "THE FRONT IS WORKING", { col: G, dur: 3.4 });
@@ -409,7 +409,7 @@ export const Video: React.FC = () => {
 
   // ===== 9 · LA NUCA =====
   title("t9", "show your nape like my grandmother", 895, "9", "SHOW YOUR NAPE LIKE MY GRANDMOTHER", 4.6);
-  tagAt("unj", "unnaji we say", 912, PT.nape, "UNAJI · うなじ", { sub: "THE NAPE", col: COL.amber, dur: 4 });
+  tagAt("unj", "unaji we say", 912, PT.nape, "UNAJI · うなじ", { sub: "THE NAPE", col: COL.amber, dur: 4 });
   quote("nf", "not the face the back", 915, "NOT THE FACE. THE BACK OF THE NECK.", { size: 72 });
   tagAt("strg", "like a string is pulling", 925, PT.head, "A STRING PULLS YOU UP", { col: G, dur: 4, dx: -330 });
   quote("obc", "nobody is looking at your neck", 940, "“OBAACHAN, NOBODY IS LOOKING”", { size: 72 });
@@ -419,14 +419,14 @@ export const Video: React.FC = () => {
 
   // ===== REPASO =====
   {
-    const R: [string, string][] = [["the warm towel", "THE WARM TOWEL · 2 MIN"], ["lukewarm water and you press", "LUKEWARM · PRESS, NEVER RUB"], ["the face ends at the collarbone", "FACE ENDS AT THE COLLARBONE"], ["two drops of oil", "2 DROPS · FRONT UP, SIDES DOWN"], ["sunscreen all the way down", "SUNSCREEN ALL THE WAY DOWN"], ["phone up to your eyes", "PHONE UP TO YOUR EYES"], ["a lower pillow", "A LOWER PILLOW"], ["kiss the ceiling", "KISS THE CEILING"], ["show your nape like my grandmother", "SHOW YOUR NAPE"]];
+    const R: [string, string][] = [["the warm towel", "THE WARM TOWEL · 2 MIN"], ["lukewarm water and you press", "LUKEWARM · PRESS, NEVER RUB"], ["the face ends at the collarbone", "FACE ENDS AT THE COLLARBONE"], ["two drops of oil", "2 DROPS · FRONT UP, SIDES DOWN"], ["sunscreen all the way down", "SUNSCREEN ALL THE WAY DOWN"], ["up to your eyes", "PHONE UP TO YOUR EYES"], ["a lower pillow", "A LOWER PILLOW"], ["kiss the ceiling", "KISS THE CEILING"], ["show your nape like my grandmother", "SHOW YOUR NAPE"]];
     let after = F("thats the nine", 970);
     const ts = R.map(([ph]) => { const a = F(ph, after); after = a + 0.2; return a; });
     ts.forEach((a, i) => { const out = i < 8 ? ts[i + 1] - 0.1 : a + 3; L.push(<PlaceTitle key={"r" + i} t={t} at={a - 0.6} out={out} n={String(i + 1)} name={R[i][1]} lbl="THING" />); });
   }
-  big("3d", "for 3 days and then you stop", 1010, "3 DAYS… THEN STOP", { col: "#ff8a7a", edge: "#4a0c08", dur: 3 });
+  big("3d", "for three days and then you stop", 1010, "3 DAYS… THEN STOP", { col: "#ff8a7a", edge: "#4a0c08", dur: 3 });
   rows("pk2", [["the warm towel and the sunscreen", 1020, "THE WARM TOWEL", true], ["and the sunscreen", 1020, "THE SUNSCREEN", true]], 3.6);
-  big("1mo", "every day for 1 month", 1025, "1 MONTH", { sub: "THEN ADD ONE MORE", col: G, edge: "#0b3a22" });
+  big("1mo", "every day for one month", 1025, "1 MONTH", { sub: "THEN ADD ONE MORE", col: G, edge: "#0b3a22" });
   chip("doc", "a lump a swelling", 1035, "LUMP · SWELLING · PAIN → SEE YOUR DOCTOR", false, 8);
 
   // ===== CTA: suscribirse + campanita + UNA pregunta =====

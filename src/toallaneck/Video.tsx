@@ -72,7 +72,7 @@ const RAW: [string, string, St?][] = [
 
   // ===== 1 · la toalla tibia =====
   ["cosa numero 1", "w:sink", { w: { glow: { sink: 1 } } }],
-  ["en japon le decimos oshibori", "img:e_kettle"],
+  ["en japon le decimos o", "img:e_kettle"],
   ["dejo correr el agua tibia", "img:t_water@7"],
   ["primero la tocas con la parte de adentro", "w:sink", { w: { glow: { sink: 1 } } }],
   ["despues mojo la toalla", "img:t_wring"],
@@ -155,7 +155,7 @@ const RAW: [string, string, St?][] = [
   ["cosa numero 8", "w:bustS", { b: { pitch: 0.55, kiss: 1 } }],
   ["despacito mira al techo", "img:k_ceiling"],
   ["sientes el frente del cuello", "w:bustS", { b: { pitch: 0.55, kiss: 1 } }],
-  ["diez veces en la manana", "img:k_ceiling@7"],
+  ["10 veces en la manana", "img:k_ceiling@7"],
   ["mientras espero que hierva el agua", "img:k_kettle"],
   ["sientes que el musculo", "w:kettle", { w: { kettle: 1 } }],
   ["nadie te ve hacerlo", "w:kitchen", { w: { kettle: 0.6 } }],
@@ -173,9 +173,9 @@ const RAW: [string, string, St?][] = [
   ["en la estacion cuando cocino", "img:n_station"],
 
   // ===== repaso + cierre =====
-  ["esas son las nueve", "wd:house"],
+  ["esas son las 9", "wd:house"],
   ["y por favor no intentes", "w:salonW", { w: { memory: 1 } }],
-  ["elige dos solo dos", "wd:bustF", { b: { towel: 1 } }],
+  ["elige 2 solo 2", "wd:bustF", { b: { towel: 1 } }],
   ["si ves un cambio grande", "wd:bath"],
   ["si esto te sirvio", "w:house"],
   ["y cuentame una cosa en los comentarios", "wd:house"],
@@ -315,7 +315,7 @@ export const Video: React.FC = () => {
 
   // ===== 1 · TOALLA TIBIA =====
   title("t1", "cosa numero 1", 145, "1", "LA TOALLA TIBIA");
-  tagAt("osh", "le decimos oshibori", 148, null, "OSHIBORI", { sub: "おしぼり · LA TOALLITA MOJADA", col: COL.amber, dur: 4 });
+  tagAt("osh", "le decimos o", 148, null, "OSHIBORI", { sub: "おしぼり · LA TOALLITA MOJADA", col: COL.amber, dur: 4 });
   big("40c", "unos 40 grados", 160, "40 °C", { sub: "COMO UN BAÑO LARGO", col: "#ffd9b8", edge: "#5a3a24", dur: 4.2 });
   chip("nh", "no caliente nunca caliente", 165, "NO CALIENTE. NUNCA CALIENTE.", false, 3);
   tagAt("wrist", "adentro de la muneca", 170, PT.sink, "PRUÉBALA EN LA MUÑECA", { col: COL.amber, dur: 4 });
@@ -400,7 +400,7 @@ export const Video: React.FC = () => {
   rows("kc", [["sientate derecha", 713, "SIÉNTATE DERECHA", true], ["los hombros abajo", 714, "HOMBROS ABAJO", true], ["despacito mira al techo", 716, "MIRA ARRIBA · LABIOS ADELANTE", true]], 2.6);
   L.push(<Stopwatch key="sw5" t={t} at={F("aguanta", 724)} out={F("aguanta", 724) + 4} x={1400} y={300} n={5} unit="SEG" label="AGUANTA" />);
   tagAt("frn", "sientes el frente del cuello", 726, PT.neck, "EL FRENTE TRABAJA", { col: G, dur: 3.4 });
-  big("10x", "diez veces en la manana", 728, "10× CADA MAÑANA", { col: G, edge: "#0b3a22" });
+  big("10x", "10 veces en la manana", 728, "10× CADA MAÑANA", { col: G, edge: "#0b3a22" });
   tagAt("tng", "pongo la lengua plana", 740, null, "LENGUA AL PALADAR · TRAGAS", { col: COL.amber, dur: 4.4 });
   chip("bus", "nadie te ve hacerlo", 750, "NADIE TE VE HACERLO", true, 3.4);
   chip("hon", "el ejercicio no quita la piel suelta", 754, "NO QUITA LA PIEL SUELTA", false, 4);
@@ -419,7 +419,7 @@ export const Video: React.FC = () => {
   // ===== REPASO =====
   {
     const R: [string, string][] = [["la toalla tibia dos minutos", "LA TOALLA TIBIA · 2 MIN"], ["agua tibia y presionas", "AGUA TIBIA · PRESIONAS, NUNCA FROTAS"], ["la cara termina en la clavicula", "LA CARA TERMINA EN LA CLAVÍCULA"], ["dos gotas de aceite", "2 GOTAS · FRENTE ARRIBA, COSTADOS ABAJO"], ["protector hasta abajo", "PROTECTOR HASTA ABAJO"], ["el celular a la altura de los ojos", "EL CELULAR A LA ALTURA DE LOS OJOS"], ["una almohada mas baja", "UNA ALMOHADA MÁS BAJA"], ["dale un beso al techo", "UN BESO AL TECHO"], ["muestra tu nuca como mi abuela", "MUESTRA TU NUCA"]];
-    let after = F("esas son las nueve", 840);
+    let after = F("esas son las 9", 840);
     const ts = R.map(([ph]) => { const a = F(ph, after); after = a + 0.2; return a; });
     ts.forEach((a, i) => { const out = i < 8 ? ts[i + 1] - 0.1 : a + 3; L.push(<PlaceTitle key={"r" + i} t={t} at={a - 0.6} out={out} n={String(i + 1)} name={R[i][1]} lbl="COSA" />); });
   }
