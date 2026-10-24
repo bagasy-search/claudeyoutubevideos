@@ -1,0 +1,199 @@
+{
+ "clips": {
+  "t30selloes_a12_oficina_escritorios": {
+   "size": 935227,
+   "mtime": 1792818362606,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-24T05:14:40.565Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a07_despacho_abogados": {
+   "size": 1059682,
+   "mtime": 1792818320156,
+   "auto": null,
+   "hint": "Lamp turns on in later frames, was off in original",
+   "dur": 3.067,
+   "revisado": "2026-10-24T05:14:40.562Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a05_hoja_gris": {
+   "size": 1873719,
+   "mtime": 1792818317713,
+   "auto": null,
+   "hint": "jump in framing and lighting, coffee ring stain position shi",
+   "dur": 3.067,
+   "revisado": "2026-10-24T05:14:40.561Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a22_archivo_polvo": {
+   "size": 938157,
+   "mtime": 1792818439300,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-24T05:14:40.566Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a14_tabla_ganancias": {
+   "size": 1146502,
+   "mtime": 1792818380971,
+   "auto": null,
+   "hint": "Document and stapler change shape/distort.",
+   "dur": 2.7,
+   "revisado": "2026-10-24T05:14:40.562Z",
+   "rechazado": "documento se deforma",
+   "ok": false
+  },
+  "t30selloes_a16_fabrica_cerrada": {
+   "size": 2088712,
+   "mtime": 1792818411605,
+   "auto": null,
+   "hint": "",
+   "dur": 3.1,
+   "revisado": "2026-10-24T05:14:40.565Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a10_nueve_carpetas": {
+   "size": 656485,
+   "mtime": 1792818346276,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-24T05:14:40.564Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a11_calle_sa": {
+   "size": 2541261,
+   "mtime": 1792818350343,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-24T05:14:40.565Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a08_sala_computadoras": {
+   "size": 1424735,
+   "mtime": 1792818322399,
+   "auto": null,
+   "hint": "",
+   "dur": 3.1,
+   "revisado": "2026-10-24T05:14:40.564Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a25_declaracion_80s": {
+   "size": 1208325,
+   "mtime": 1792818469713,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-24T05:14:40.566Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a24_caja_talones": {
+   "size": 1082539,
+   "mtime": 1792818465754,
+   "auto": null,
+   "hint": "plastic container changes shape in last frame",
+   "dur": 3.067,
+   "revisado": "2026-10-24T05:14:40.563Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a30_dos_sobres": {
+   "size": 900075,
+   "mtime": 1792818476219,
+   "auto": null,
+   "hint": "",
+   "dur": 3.1,
+   "revisado": "2026-10-24T05:14:40.566Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a54_lupa_carta": {
+   "size": 1997509,
+   "mtime": 1792818485187,
+   "auto": null,
+   "hint": "Jump in framing: scene changes to building exterior",
+   "dur": 3,
+   "revisado": "2026-10-24T05:14:40.563Z",
+   "rechazado": "salta a otra escena (edificio)",
+   "ok": false
+  },
+  "t30selloes_a61_correo_puerta": {
+   "size": 931093,
+   "mtime": 1792818487678,
+   "auto": null,
+   "hint": "",
+   "dur": 2.067,
+   "revisado": "2026-10-24T05:14:40.568Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a01_carta_doblada": {
+   "size": 1311553,
+   "mtime": 1792818306350,
+   "auto": null,
+   "hint": "microwave changes appearance; glasses move in last frame",
+   "dur": 3.067,
+   "revisado": "2026-10-24T05:14:40.559Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a62_ventanillas_vacias": {
+   "size": 1270498,
+   "mtime": 1792818490941,
+   "auto": null,
+   "hint": "",
+   "dur": 3.067,
+   "revisado": "2026-10-24T05:14:40.568Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a02_cajon_cartas": {
+   "size": 1091937,
+   "mtime": 1792818313476,
+   "auto": null,
+   "hint": "",
+   "dur": 3,
+   "revisado": "2026-10-24T05:14:40.564Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a27_frontera_puente": {
+   "size": 1366636,
+   "mtime": 1792818473285,
+   "auto": null,
+   "hint": "",
+   "dur": 2.933,
+   "revisado": "2026-10-24T05:14:40.566Z",
+   "rechazado": null,
+   "ok": true
+  },
+  "t30selloes_a53_buzon_enero": {
+   "size": 2196550,
+   "mtime": 1792818481112,
+   "auto": null,
+   "hint": "",
+   "dur": 2.833,
+   "revisado": "2026-10-24T05:14:40.567Z",
+   "rechazado": null,
+   "ok": true
+  }
+ },
+ "repeticion": null,
+ "version": 2,
+ "slug": "t30selloes",
+ "at": "2026-10-24T05:14:42.184Z",
+ "hojas": null
+}

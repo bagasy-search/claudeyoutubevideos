@@ -1,0 +1,1804 @@
+[
+ {
+  "t": 0,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 6.533333333333333,
+  "kind": "componente",
+  "comp": "YearCounter",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 11.533333333333333,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 14.633333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 20.433333333333334,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 23.633333333333333,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 27,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 30,
+  "kind": "componente",
+  "comp": "DocumentPage",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 41.766666666666666,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 46.93333333333333,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 52.5,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 58.86666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 62.36666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 66.2,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 69.53333333333333,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 72.8,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 75.46666666666667,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 78.46666666666667,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 81.96666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 85.4,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 88.73333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 92.73333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 95.13333333333334,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 102.13333333333334,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 105.76666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 111.7,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 114.43333333333334,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 118.63333333333334,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 124.46666666666667,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 129.56666666666666,
+  "kind": "componente",
+  "comp": "FileStamp",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 139.7,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 144,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 147.66666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 149.96666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 153.76666666666668,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 156.76666666666668,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 160.83333333333334,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 163.26666666666668,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 167.46666666666667,
+  "kind": "componente",
+  "comp": "FileStamp",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 174.06666666666666,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 177.36666666666667,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 182.96666666666667,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 185.56666666666666,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 190.33333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 193.53333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 197.56666666666666,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 200.16666666666666,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 202.86666666666667,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 206.26666666666668,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 213.63333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 216.63333333333333,
+  "kind": "componente",
+  "comp": "DocumentPage",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 228.63333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 233.83333333333334,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 236.23333333333332,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 239.63333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 246.03333333333333,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 249.86666666666667,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 252.16666666666666,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 256.1333333333333,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 260,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 263.5,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 269.73333333333335,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 273.23333333333335,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 277,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 282.06666666666666,
+  "kind": "componente",
+  "comp": "SceneCallout",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 288.06666666666666,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 292.56666666666666,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 295.93333333333334,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 299,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 303.8666666666667,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 307.53333333333336,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 312.8,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 315.26666666666665,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 318.06666666666666,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 321.56666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 326.03333333333336,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 331.2,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 336.23333333333335,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 340.06666666666666,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 344.8333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 350.43333333333334,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 354.1666666666667,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 358.46666666666664,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 362.93333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 366.56666666666666,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 369.76666666666665,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 376.1666666666667,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 381.56666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 387.26666666666665,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 391.03333333333336,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 396.9,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 401.1333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 404.1333333333333,
+  "kind": "componente",
+  "comp": "DocumentPage",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 421.8666666666667,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 426.8333333333333,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 431.6333333333333,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 435.5,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 437.8,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 442.56666666666666,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 446.53333333333336,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 452,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 459,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 463.6,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 466.8,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 472.4,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 474.96666666666664,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 478.1666666666667,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 484.1666666666667,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 488.8,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 491.1,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 494.96666666666664,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 501.43333333333334,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 506.1666666666667,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 510.96666666666664,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 515.5333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 518.1666666666666,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 524.5666666666667,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 528.7333333333333,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 531.0333333333333,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 534.5333333333333,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 536.9333333333333,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 540.3333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 543.8,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 548.8333333333334,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 555.1,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 560.7333333333333,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 568.0333333333333,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 571.2333333333333,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 574.5333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 577.9666666666667,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 581.7333333333333,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 585.4333333333333,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 590.9333333333333,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 594.1666666666666,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 597.6666666666666,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 601.5666666666667,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 604.8,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 611.1,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 616.3333333333334,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 621.1666666666666,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 625.0333333333333,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 627.3333333333334,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 631.2,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 636.0666666666667,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 640.8666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 644.0666666666667,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 647.8666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 654.1333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 657.1333333333333,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 663.2666666666667,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 668.5333333333333,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 673.2333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 675.5333333333333,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 681,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 683.3,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 688.5333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 691.5333333333333,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 694.9333333333333,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 698.5666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 704.0333333333333,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 706.7333333333333,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 710.0333333333333,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 713.3333333333334,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 717.7333333333333,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 722.8666666666667,
+  "kind": "componente",
+  "comp": "FileStamp",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 731.3666666666667,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 734,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 739.3333333333334,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 741.6666666666666,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 745.4666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 749.3,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 753.6666666666666,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 756.8666666666667,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 762.5333333333333,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 764.8333333333334,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 770.7666666666667,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 775,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 778.6,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 781.2,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 783.7333333333333,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 787.2666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 790.2666666666667,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 798.5666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 803.5333333333333,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 809.5333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 812.5333333333333,
+  "kind": "componente",
+  "comp": "DocumentPage",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 829.7666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 835.6666666666666,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 837.9666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 841.3333333333334,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 845.4,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 850.6666666666666,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 853.0333333333333,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 859.1666666666666,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 861.4666666666667,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 868.5,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 873.1666666666666,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 876.3666666666667,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 879.8666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 884.4,
+  "kind": "avatar",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 889.1,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 891.4,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 894.9,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 898.3666666666667,
+  "kind": "imagen",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 901.2666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 906.8333333333334,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 909.1333333333333,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 912.4666666666667,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 916.4,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 920.3666666666667,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 925.1333333333333,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 931.0666666666667,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 934.9,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 938.8333333333334,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 942.2,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 945.5666666666667,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 948.5666666666667,
+  "kind": "componente",
+  "comp": "DocumentPage",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 957.7,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 963.4666666666667,
+  "kind": "imagen",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 968.8666666666667,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 971.9666666666667,
+  "kind": "clip",
+  "tin": "zoom",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 974.9,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 978.1,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 982.5666666666667,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 987.8333333333334,
+  "kind": "avatar",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 991.1,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 994.1666666666666,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 998.1333333333333,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1004.8666666666667,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1008.7,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1012.1333333333333,
+  "kind": "clip",
+  "tin": "iris",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1015.5666666666667,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1017.8666666666667,
+  "kind": "avatar",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1021.4333333333333,
+  "kind": "componente",
+  "comp": "BigStat",
+  "tin": "zoom",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1031.2333333333333,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1036.7,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1040.1333333333334,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1043.6,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1047.5,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1051.7,
+  "kind": "clip",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1055.4,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1059.2333333333333,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1062.1333333333334,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1064.7,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1070.5666666666666,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1073.7333333333333,
+  "kind": "clip",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1077.8333333333333,
+  "kind": "componente",
+  "comp": "FileStamp",
+  "tin": "cut",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1084.6666666666667,
+  "kind": "avatar",
+  "tin": "push",
+  "tout": "push",
+  "ov": 10
+ },
+ {
+  "t": 1087.8,
+  "kind": "imagen",
+  "tin": "push",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1091.8333333333333,
+  "kind": "clip",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1095.6,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1100.2666666666667,
+  "kind": "avatar",
+  "tin": "iris",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1104.6,
+  "kind": "imagen",
+  "tin": "wipe",
+  "tout": "cut",
+  "ov": 10
+ },
+ {
+  "t": 1110.3333333333333,
+  "kind": "imagen",
+  "tin": "cut",
+  "tout": "cut",
+  "ov": 0
+ }
+]

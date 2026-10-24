@@ -1,0 +1,2716 @@
+{
+ "total": 1112.635,
+ "avatarEnd": 1112.635,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0,
+   "dur": 6.533333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 6.533333333333333,
+   "dur": 5,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/t30selloes_a28_pastel_cumple.jpg",
+    "yearFrom": 1940,
+    "yearTo": 1960,
+    "unit": "",
+    "label": "¿NACIÓ ANTES DE 1960?",
+    "from": 7.619999999999999,
+    "to": 10.34,
+    "marks": [
+     {
+      "year": 1960,
+      "note": "revise hoy"
+     }
+    ],
+    "linear": true
+   },
+   "bed": "img/t30selloes_e01_ventanilla_blur.jpg"
+  },
+  {
+   "t": 11.533333333333333,
+   "dur": 3.1,
+   "sec": "S1",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e02_renglon_pluma.jpg"
+  },
+  {
+   "t": 14.633333333333333,
+   "dur": 5.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 20.433333333333334,
+   "dur": 3.2,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b12.mp4",
+   "real": true,
+   "credit": "Your Social Security (años 40) · Federal Security Agency / Social Security Board · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 23.633333333333333,
+   "dur": 3.3666666666666667,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_ag/t30selloes_a16_fabrica_cerrada.mp4",
+   "real": false,
+   "rate": 0.902
+  },
+  {
+   "t": 27,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 30,
+   "dur": 11.766666666666667,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloes_doc_carta.jpg",
+    "chip": "LA CARTA",
+    "highlights": [
+     {
+      "x": 5.6,
+      "y": 19.36,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 36.38
+     },
+     {
+      "x": 5.6,
+      "y": 79.36,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 41.76
+     }
+    ],
+    "note": {
+     "text": "y la guarda en el cajón",
+     "at": 43.58
+    },
+    "aspect": 0.7727,
+    "source": "Carta de ejemplo hecha para este video · sin datos reales"
+   },
+   "bed": "img/t30selloes_e01_ventanilla_blur.jpg"
+  },
+  {
+   "t": 41.766666666666666,
+   "dur": 5.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 46.93333333333333,
+   "dur": 5.566666666666666,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s06.mp4",
+   "real": true,
+   "rate": 0.817
+  },
+  {
+   "t": 52.5,
+   "dur": 6.366666666666666,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a39_maestra_pizarron.jpg"
+  },
+  {
+   "t": 58.86666666666667,
+   "dur": 3.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 62.36666666666667,
+   "dur": 3.8333333333333335,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a07_despacho_abogados.jpg"
+  },
+  {
+   "t": 66.2,
+   "dur": 3.3333333333333335,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_d08.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 69.53333333333333,
+   "dur": 3.2666666666666666,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s14.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 72.8,
+   "dur": 2.6666666666666665,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s13.mp4",
+   "real": true,
+   "credit": "The Social Security Story (1962) · U.S. Dept. of Health, Education and Welfare · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 75.46666666666667,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 78.46666666666667,
+   "dur": 3.5,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b11.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 81.96666666666667,
+   "dur": 3.433333333333333,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a42_talon_pension.jpg"
+  },
+  {
+   "t": 85.4,
+   "dur": 3.3333333333333335,
+   "sec": "S1",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e08_telefono_mudo.jpg"
+  },
+  {
+   "t": 88.73333333333333,
+   "dur": 4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 92.73333333333333,
+   "dur": 2.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a49_calendario_tachado.jpg"
+  },
+  {
+   "t": 95.13333333333334,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 9,
+    "unit": "errores",
+    "label": "LOS QUE VI UNA Y OTRA VEZ",
+    "photo": "img/t30selloes_e09_nueve_carpetas.jpg",
+    "at": 95.72,
+    "tone": "red",
+    "compare": "Sobre todo en nacidos antes del 60.",
+    "compareAt": 100.72,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e01_ventanilla_blur.jpg"
+  },
+  {
+   "t": 102.13333333333334,
+   "dur": 3.6333333333333333,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_g10.mp4",
+   "rate": 1
+  },
+  {
+   "t": 105.76666666666667,
+   "dur": 5.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 111.7,
+   "dur": 2.7333333333333334,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a47_bandeja_formularios.jpg"
+  },
+  {
+   "t": 114.43333333333334,
+   "dur": 4.2,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_ag/t30selloes_a30_dos_sobres.mp4",
+   "real": false,
+   "rate": 0.726
+  },
+  {
+   "t": 118.63333333333334,
+   "dur": 5.833333333333333,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a31_frasco_monedas.jpg"
+  },
+  {
+   "t": 124.46666666666667,
+   "dur": 5.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 129.56666666666666,
+   "dur": 10.133333333333333,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "DEL OTRO LADO DEL VIDRIO",
+    "title": "DON ERNESTO",
+    "sub": "31 años en el Seguro Social · San Antonio, Texas",
+    "stamp": "",
+    "typeAt": 130.64,
+    "stampAt": 132.64,
+    "folder": "img/t30selloes_a46_escritorio_vacio.jpg"
+   },
+   "bed": "img/t30selloes_e01_ventanilla_blur.jpg"
+  },
+  {
+   "t": 139.7,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 144,
+   "dur": 3.6666666666666665,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_b35.mp4",
+   "rate": 1
+  },
+  {
+   "t": 147.66666666666666,
+   "dur": 2.3,
+   "sec": "S1",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e10_pila_expedientes.jpg"
+  },
+  {
+   "t": 149.96666666666667,
+   "dur": 3.8,
+   "sec": "S1",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e11_explica_senora.jpg"
+  },
+  {
+   "t": 153.76666666666668,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g17.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 156.76666666666668,
+   "dur": 4.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 160.83333333333334,
+   "dur": 2.433333333333333,
+   "sec": "S1",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e12_mesa_casa.jpg"
+  },
+  {
+   "t": 163.26666666666668,
+   "dur": 4.2,
+   "sec": "S1",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e05_cajon_cartas.jpg"
+  },
+  {
+   "t": 167.46666666666667,
+   "dur": 6.6,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "02",
+    "label": "CADA SEMANA, UNA CARTA",
+    "title": "SUSCRÍBASE + CAMPANITA",
+    "sub": "¿Qué nunca entendió de su carta?",
+    "stamp": "",
+    "typeAt": 168.08,
+    "stampAt": 170.08,
+    "folder": "img/t30selloes_a51_buzon_azul.jpg"
+   },
+   "bed": "img/t30selloes_e01_ventanilla_blur.jpg"
+  },
+  {
+   "t": 174.06666666666666,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 177.36666666666667,
+   "dur": 5.6,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a06_senor_solo_carta.jpg"
+  },
+  {
+   "t": 182.96666666666667,
+   "dur": 2.6,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_d02.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 185.56666666666666,
+   "dur": 4.766666666666667,
+   "sec": "S1",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e50_lee_sobre_tel.jpg"
+  },
+  {
+   "t": 190.32,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 1",
+    "part": "SU HISTORIAL DE GANANCIAS"
+   },
+   "bed": "img/t30selloes_e14_circulo_renglon_blur.jpg"
+  },
+  {
+   "t": 190.33333333333334,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 193.53333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S2",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e14_circulo_renglon.jpg"
+  },
+  {
+   "t": 197.56666666666666,
+   "dur": 2.6,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g11.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 200.16666666666666,
+   "dur": 2.7,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s10.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 202.86666666666667,
+   "dur": 3.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 206.26666666666668,
+   "dur": 7.366666666666666,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "BigStat",
+   "props": {
+    "value": 35,
+    "unit": "años",
+    "label": "SUS MEJORES AÑOS DE GANANCIAS",
+    "photo": "img/t30selloes_a23_dedo_renglon.jpg",
+    "at": 207.48,
+    "tone": "red",
+    "compare": "Ajustados por la inflación.",
+    "compareAt": 209.08,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e14_circulo_renglon_blur.jpg"
+  },
+  {
+   "t": 213.63333333333333,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 216.63333333333333,
+   "dur": 12,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloes_doc_earnings.jpg",
+    "chip": "HISTORIAL DE GANANCIAS",
+    "highlights": [
+     {
+      "x": 6,
+      "y": 21.82,
+      "w": 88,
+      "h": 13.64,
+      "at": 215.02
+     },
+     {
+      "x": 6,
+      "y": 51.36,
+      "w": 60,
+      "h": 2.27,
+      "at": 221.9
+     }
+    ],
+    "note": {
+     "text": "un cero baja el promedio",
+     "at": 224.48
+    },
+    "aspect": 0.7727,
+    "source": "Carta de ejemplo hecha para este video · sin datos reales"
+   },
+   "bed": "img/t30selloes_e14_circulo_renglon_blur.jpg"
+  },
+  {
+   "t": 228.63333333333333,
+   "dur": 5.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 233.83333333333334,
+   "dur": 2.4,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g01.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 236.23333333333332,
+   "dur": 3.4,
+   "sec": "S2",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e16_fabrica_cerrada.jpg"
+  },
+  {
+   "t": 239.63333333333333,
+   "dur": 6.4,
+   "sec": "S2",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e04_desdobla_carta.jpg"
+  },
+  {
+   "t": 244.82,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 2",
+    "part": "SUS DOS APELLIDOS"
+   },
+   "bed": "img/t30selloes_e17_dos_apellidos_blur.jpg"
+  },
+  {
+   "t": 246.03333333333333,
+   "dur": 3.8333333333333335,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 249.86666666666667,
+   "dur": 2.3,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a18_construccion.jpg"
+  },
+  {
+   "t": 252.16666666666666,
+   "dur": 3.966666666666667,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e17_dos_apellidos.jpg"
+  },
+  {
+   "t": 256.1333333333333,
+   "dur": 3.8666666666666667,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e18_tachar_guion.jpg"
+  },
+  {
+   "t": 260,
+   "dur": 3.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 263.5,
+   "dur": 6.233333333333333,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a09_pareja_lee.jpg"
+  },
+  {
+   "t": 269.73333333333335,
+   "dur": 3.5,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_d06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 273.23333333333335,
+   "dur": 3.7666666666666666,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_s02.mp4",
+   "rate": 1
+  },
+  {
+   "t": 277,
+   "dur": 5.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 282.06666666666666,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30selloes_a21_carpetas_mezcladas.jpg",
+    "x": 1180,
+    "y": 560,
+    "r": 260,
+    "note": "ganancias sin dueño",
+    "chip": "MIRE ESTO",
+    "circleAt": 282.66,
+    "noteAt": 285.7,
+    "zoom": 1.3
+   },
+   "bed": "img/t30selloes_e17_dos_apellidos_blur.jpg"
+  },
+  {
+   "t": 288.06666666666666,
+   "dur": 4.5,
+   "sec": "S3",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30selloes_real/t30selloes_g16.mp4",
+   "real": true,
+   "credit": "The Wise Years Wasted (1965) · U.S. Dept. of Labor · NARA · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 292.56666666666666,
+   "dur": 3.3666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 295.93333333333334,
+   "dur": 3.066666666666667,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b27.mp4",
+   "real": true,
+   "credit": "Your Social Security (años 40) · Federal Security Agency / Social Security Board · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 299,
+   "dur": 4.866666666666666,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s18.mp4",
+   "real": true,
+   "rate": 0.938
+  },
+  {
+   "t": 303.8666666666667,
+   "dur": 3.6666666666666665,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s12.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 307.53333333333336,
+   "dur": 5.266666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 312.8,
+   "dur": 2.466666666666667,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b01.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 315.26666666666665,
+   "dur": 2.8,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a55_renta.jpg"
+  },
+  {
+   "t": 318.06666666666666,
+   "dur": 3.5,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e47_compara_cartas.jpg"
+  },
+  {
+   "t": 321.56666666666666,
+   "dur": 4.466666666666667,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e21_caja_zapatos.jpg"
+  },
+  {
+   "t": 326.03333333333336,
+   "dur": 5.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 331.2,
+   "dur": 5.033333333333333,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a25_declaracion_80s.jpg"
+  },
+  {
+   "t": 336.23333333333335,
+   "dur": 3.8333333333333335,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e37_sello.jpg"
+  },
+  {
+   "t": 340.06666666666666,
+   "dur": 4.766666666666667,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g12.mp4",
+   "real": true,
+   "rate": 0.954
+  },
+  {
+   "t": 344.8333333333333,
+   "dur": 5.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 350.43333333333334,
+   "dur": 3.7333333333333334,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_ag/t30selloes_a53_buzon_enero.mp4",
+   "real": false,
+   "rate": 0.744
+  },
+  {
+   "t": 354.1666666666667,
+   "dur": 4.3,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b24.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 358.46666666666664,
+   "dur": 4.466666666666667,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e23_efectivo_mesa.jpg"
+  },
+  {
+   "t": 362.93333333333334,
+   "dur": 3.6333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 366.56666666666666,
+   "dur": 3.2,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_b16.mp4",
+   "rate": 1
+  },
+  {
+   "t": 369.76666666666665,
+   "dur": 6.4,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e06_frunce_lee.jpg"
+  },
+  {
+   "t": 376.1666666666667,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 381.56666666666666,
+   "dur": 5.7,
+   "sec": "S3",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e24_hijo_trabajador.jpg"
+  },
+  {
+   "t": 387.26666666666665,
+   "dur": 3.7666666666666666,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b04.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 391.03333333333336,
+   "dur": 5.866666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 391.159,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 3",
+    "part": "SU EDAD COMPLETA NO ES 65"
+   },
+   "bed": "img/t30selloes_e25_calendario_blur.jpg"
+  },
+  {
+   "t": 396.9,
+   "dur": 4.233333333333333,
+   "sec": "S4",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e25_calendario.jpg"
+  },
+  {
+   "t": 401.1333333333333,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 404.1333333333333,
+   "dur": 17.733333333333334,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloes_doc_fra.jpg",
+    "chip": "EDAD DE JUBILACIÓN COMPLETA",
+    "highlights": [
+     {
+      "x": 9,
+      "y": 24.91,
+      "w": 82,
+      "h": 4.55,
+      "at": 403.4
+     },
+     {
+      "x": 9,
+      "y": 30.82,
+      "w": 82,
+      "h": 4.55,
+      "at": 413.56
+     },
+     {
+      "x": 9,
+      "y": 36.73,
+      "w": 82,
+      "h": 4.55,
+      "at": 417.28
+     }
+    ],
+    "note": {
+     "text": "Sube 2 meses por año: 1960 = 67",
+     "at": 417
+    },
+    "aspect": 0.7727,
+    "source": "Carta de ejemplo hecha para este video · sin datos reales"
+   },
+   "bed": "img/t30selloes_e25_calendario_blur.jpg"
+  },
+  {
+   "t": 421.8666666666667,
+   "dur": 4.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 426.8333333333333,
+   "dur": 4.8,
+   "sec": "S4",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e43_reloj_pared.jpg"
+  },
+  {
+   "t": 431.6333333333333,
+   "dur": 3.8666666666666667,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b36.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 435.5,
+   "dur": 2.3,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g04.mp4",
+   "real": true,
+   "credit": "The Wise Years Wasted (1965) · U.S. Dept. of Labor · NARA · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 437.8,
+   "dur": 4.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 442.56666666666666,
+   "dur": 3.966666666666667,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_ag/t30selloes_a22_archivo_polvo.mp4",
+   "real": false,
+   "rate": 0.699
+  },
+  {
+   "t": 446.53333333333336,
+   "dur": 5.466666666666667,
+   "sec": "S4",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e26_pastel.jpg"
+  },
+  {
+   "t": 452,
+   "dur": 7,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 30,
+    "unit": "%",
+    "label": "MÁS CHICO SI LO PIDE A LOS 62",
+    "photo": "img/t30selloes_e27_calculadora.jpg",
+    "at": 452.6,
+    "tone": "red",
+    "compare": "Comparado con los 67, de por vida.",
+    "compareAt": 455.96,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e25_calendario_blur.jpg"
+  },
+  {
+   "t": 459,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 463.6,
+   "dur": 3.2,
+   "sec": "S4",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e15_regla_lista.jpg"
+  },
+  {
+   "t": 466.8,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 8,
+    "unit": "%",
+    "label": "POR CADA AÑO QUE ESPERA",
+    "photo": "img/t30selloes_a13_celular_mesa.jpg",
+    "at": 467.4,
+    "tone": "red",
+    "compare": "Hasta los 70. Después, nada.",
+    "compareAt": 469.4,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e25_calendario_blur.jpg"
+  },
+  {
+   "t": 472.4,
+   "dur": 2.566666666666667,
+   "sec": "S4",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e45_interprete.jpg"
+  },
+  {
+   "t": 474.96666666666664,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 478.1666666666667,
+   "dur": 6,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 12,
+    "unit": "meses",
+    "label": "PARA RETIRAR SU SOLICITUD",
+    "photo": "img/t30selloes_e28_reloj_arena.jpg",
+    "at": 478.78,
+    "tone": "red",
+    "compare": "Devuelve lo cobrado y empieza de nuevo.",
+    "compareAt": 482.78,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e25_calendario_blur.jpg"
+  },
+  {
+   "t": 484.1666666666667,
+   "dur": 4.633333333333334,
+   "sec": "S4",
+   "kind": "imagen",
+   "lugar": "escena",
+   "asset": "img/t30selloes_a43_pila_solicitudes.jpg"
+  },
+  {
+   "t": 488.8,
+   "dur": 2.3,
+   "sec": "S4",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e46_abrecartas.jpg"
+  },
+  {
+   "t": 491.1,
+   "dur": 3.8666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 494.96666666666664,
+   "dur": 6.466666666666667,
+   "sec": "S4",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e29_pareja_escritorio.jpg"
+  },
+  {
+   "t": 497.779,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 4",
+    "part": "EL BENEFICIO DE CÓNYUGE"
+   },
+   "bed": "img/t30selloes_e29_pareja_escritorio_blur.jpg"
+  },
+  {
+   "t": 501.43333333333334,
+   "dur": 4.733333333333333,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g09.mp4",
+   "real": true,
+   "rate": 0.958
+  },
+  {
+   "t": 506.1666666666667,
+   "dur": 4.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 510.96666666666664,
+   "dur": 4.566666666666666,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_b06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 515.5333333333333,
+   "dur": 2.6333333333333333,
+   "sec": "S5",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e30_dos_carpetas.jpg"
+  },
+  {
+   "t": 518.1666666666666,
+   "dur": 6.4,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 50,
+    "unit": "%",
+    "label": "DEL BENEFICIO DEL CÓNYUGE",
+    "photo": "img/t30selloes_a32_pareja_platos.jpg",
+    "at": 518.76,
+    "tone": "red",
+    "compare": "Si lo pide a su edad completa.",
+    "compareAt": 522.2,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e29_pareja_escritorio_blur.jpg"
+  },
+  {
+   "t": 524.5666666666667,
+   "dur": 4.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 528.7333333333333,
+   "dur": 2.3,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b37.mp4",
+   "real": true,
+   "credit": "Your Social Security (años 40) · Federal Security Agency / Social Security Board · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 531.0333333333333,
+   "dur": 3.5,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b29.mp4",
+   "real": true,
+   "credit": "Your Social Security (años 40) · Federal Security Agency / Social Security Board · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 534.5333333333333,
+   "dur": 2.4,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s11.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 536.9333333333333,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b02.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 540.3333333333334,
+   "dur": 3.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 543.8,
+   "dur": 5.033333333333333,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s07.mp4",
+   "real": true,
+   "rate": 0.904
+  },
+  {
+   "t": 548.8333333333334,
+   "dur": 6.266666666666667,
+   "sec": "S5",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e31_telefono_pared.jpg"
+  },
+  {
+   "t": 555.1,
+   "dur": 5.633333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 560.7333333333333,
+   "dur": 7.3,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 10,
+    "unit": "años",
+    "label": "DE MATRIMONIO, COMO MÍNIMO",
+    "photo": "img/t30selloes_a20_boda_70s.jpg",
+    "at": 561.34,
+    "tone": "red",
+    "compare": "No se volvió a casar · su ex tiene 62 o más.",
+    "compareAt": 565.84,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e29_pareja_escritorio_blur.jpg"
+  },
+  {
+   "t": 568.0333333333333,
+   "dur": 3.2,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b39.mp4",
+   "real": true,
+   "credit": "Your Social Security (años 40) · Federal Security Agency / Social Security Board · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 571.2333333333333,
+   "dur": 3.3,
+   "sec": "S5",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e03_pareja_se_va.jpg"
+  },
+  {
+   "t": 574.5333333333333,
+   "dur": 3.433333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 577.9666666666667,
+   "dur": 3.7666666666666666,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b22.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 581.7333333333333,
+   "dur": 3.7,
+   "sec": "S5",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e32_divorciada.jpg"
+  },
+  {
+   "t": 585.4333333333333,
+   "dur": 5.5,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g05.mp4",
+   "real": true,
+   "rate": 0.833
+  },
+  {
+   "t": 590.9333333333333,
+   "dur": 3.2333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 594.158,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 5",
+    "part": "VIUDAS Y VIUDOS"
+   },
+   "bed": "img/t30selloes_e33_viuda_formulario_blur.jpg"
+  },
+  {
+   "t": 594.1666666666666,
+   "dur": 3.5,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a37_viudo_dos_tazas.jpg"
+  },
+  {
+   "t": 597.6666666666666,
+   "dur": 3.9,
+   "sec": "S6",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e33_viuda_formulario.jpg"
+  },
+  {
+   "t": 601.5666666666667,
+   "dur": 3.2333333333333334,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b18.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 604.8,
+   "dur": 6.3,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 100,
+    "unit": "%",
+    "label": "PARA EL CÓNYUGE QUE QUEDA",
+    "photo": "img/t30selloes_a36_viuda_tumba.jpg",
+    "at": 605.4,
+    "tone": "red",
+    "compare": "Si ya cumplió su edad completa.",
+    "compareAt": 609.62,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e33_viuda_formulario_blur.jpg"
+  },
+  {
+   "t": 611.1,
+   "dur": 5.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 616.3333333333334,
+   "dur": 4.833333333333333,
+   "sec": "S6",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e34_flechas.jpg"
+  },
+  {
+   "t": 621.1666666666666,
+   "dur": 3.8666666666666667,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g03.mp4",
+   "real": true,
+   "credit": "The Wise Years Wasted (1965) · U.S. Dept. of Labor · NARA · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 625.0333333333333,
+   "dur": 2.3,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g14.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 627.3333333333334,
+   "dur": 3.8666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 631.2,
+   "dur": 4.866666666666666,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g08.mp4",
+   "real": true,
+   "credit": "The Wise Years Wasted (1965) · U.S. Dept. of Labor · NARA · dominio público",
+   "rate": 0.934
+  },
+  {
+   "t": 636.0666666666667,
+   "dur": 4.8,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b05.mp4",
+   "real": true,
+   "rate": 0.95
+  },
+  {
+   "t": 640.8666666666667,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 644.0666666666667,
+   "dur": 3.8,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s16.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 647.8666666666667,
+   "dur": 6.266666666666667,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a44_tarjeta_salud.jpg"
+  },
+  {
+   "t": 654.1333333333333,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 657.1333333333333,
+   "dur": 6.133333333333334,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 255,
+    "unit": "dólares",
+    "label": "PAGO ÚNICO POR FALLECIMIENTO",
+    "photo": "img/t30selloes_e35_mandado.jpg",
+    "at": 657.72,
+    "tone": "red",
+    "compare": "Hay que pedirlo dentro de 2 años.",
+    "compareAt": 659.32,
+    "prefix": "$"
+   },
+   "bed": "img/t30selloes_e33_viuda_formulario_blur.jpg"
+  },
+  {
+   "t": 663.2666666666667,
+   "dur": 5.266666666666667,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_d07.mp4",
+   "real": true,
+   "rate": 0.867
+  },
+  {
+   "t": 668.5333333333333,
+   "dur": 4.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 673.2333333333333,
+   "dur": 2.3,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a40_policia.jpg"
+  },
+  {
+   "t": 675.5333333333333,
+   "dur": 5.466666666666667,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a41_bomberos.jpg"
+  },
+  {
+   "t": 677.718,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 6",
+    "part": "MAESTROS, POLICÍAS, BOMBEROS"
+   },
+   "bed": "img/t30selloes_e36_maestra_pension_blur.jpg"
+  },
+  {
+   "t": 681,
+   "dur": 2.3,
+   "sec": "S7",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30selloes_real/t30selloes_b13.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 683.3,
+   "dur": 5.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 688.5333333333333,
+   "dur": 3,
+   "sec": "S7",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e36_maestra_pension.jpg"
+  },
+  {
+   "t": 691.5333333333333,
+   "dur": 3.4,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s05.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 694.9333333333333,
+   "dur": 3.6333333333333333,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_d05.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 698.5666666666667,
+   "dur": 5.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 704.0333333333333,
+   "dur": 2.7,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_b03.mp4",
+   "rate": 1
+  },
+  {
+   "t": 706.7333333333333,
+   "dur": 3.3,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g06.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 710.0333333333333,
+   "dur": 3.3,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b33.mp4",
+   "real": true,
+   "credit": "Your Social Security (años 40) · Federal Security Agency / Social Security Board · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 713.3333333333334,
+   "dur": 4.4,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_ag/t30selloes_a10_nueve_carpetas.mp4",
+   "real": false,
+   "rate": 0.633
+  },
+  {
+   "t": 717.7333333333333,
+   "dur": 5.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 722.8666666666667,
+   "dur": 8.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "03",
+    "label": "ENERO DE 2025 · NUEVA LEY",
+    "title": "SOCIAL SECURITY FAIRNESS ACT",
+    "sub": "Se terminaron las dos reglas",
+    "stamp": "",
+    "typeAt": 723.46,
+    "stampAt": 729.48,
+    "folder": "img/t30selloes_a48_firma_papeles.jpg"
+   },
+   "bed": "img/t30selloes_e36_maestra_pension_blur.jpg"
+  },
+  {
+   "t": 731.3666666666667,
+   "dur": 2.6333333333333333,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s22.mp4",
+   "real": true,
+   "credit": "The Social Security Story (1962) · U.S. Dept. of Health, Education and Welfare · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 734,
+   "dur": 5.333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 739.3333333333334,
+   "dur": 2.3333333333333335,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g15.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 741.6666666666666,
+   "dur": 3.8,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b15.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 745.4666666666667,
+   "dur": 3.8333333333333335,
+   "sec": "S7",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e38_pregunta_tarjeta.jpg"
+  },
+  {
+   "t": 749.3,
+   "dur": 4.366666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 753.6666666666666,
+   "dur": 3.2,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g07.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 756.8666666666667,
+   "dur": 5.666666666666667,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b23.mp4",
+   "real": true,
+   "rate": 0.805
+  },
+  {
+   "t": 762.5333333333333,
+   "dur": 2.3,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b21.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 764.8333333333334,
+   "dur": 5.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 770.7666666666667,
+   "dur": 4.233333333333333,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s17.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 771.078,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 7",
+    "part": "MEDICARE LE COBRA DE MÁS"
+   },
+   "bed": "img/t30selloes_e39_talon_descuento_blur.jpg"
+  },
+  {
+   "t": 775,
+   "dur": 3.6,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 778.6,
+   "dur": 2.6,
+   "sec": "S8",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e07_computadora.jpg"
+  },
+  {
+   "t": 781.2,
+   "dur": 2.533333333333333,
+   "sec": "S8",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e41_llena_formulario.jpg"
+  },
+  {
+   "t": 783.7333333333333,
+   "dur": 3.533333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 787.2666666666667,
+   "dur": 3,
+   "sec": "S8",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e40_declaracion_vieja.jpg"
+  },
+  {
+   "t": 790.2666666666667,
+   "dur": 8.3,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "años",
+    "label": "SU DECLARACIÓN DE HACE",
+    "photo": "img/t30selloes_a45_consultorio.jpg",
+    "at": 790.86,
+    "tone": "red",
+    "compare": "Un sueldo que a lo mejor ya no tiene.",
+    "compareAt": 797.08,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e39_talon_descuento_blur.jpg"
+  },
+  {
+   "t": 798.5666666666667,
+   "dur": 4.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 50,
+   "lugar": "avatar"
+  },
+  {
+   "t": 803.5333333333333,
+   "dur": 6,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b38.mp4",
+   "real": true,
+   "rate": 0.76
+  },
+  {
+   "t": 809.5333333333333,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 51,
+   "lugar": "avatar"
+  },
+  {
+   "t": 812.5333333333333,
+   "dur": 17.233333333333334,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloes_doc_ssa44.jpg",
+    "chip": "FORMULARIO SSA-44",
+    "highlights": [
+     {
+      "x": 6,
+      "y": 28.55,
+      "w": 60,
+      "h": 3.18,
+      "at": 814.04
+     },
+     {
+      "x": 6,
+      "y": 24.91,
+      "w": 60,
+      "h": 3.18,
+      "at": 815.34
+     },
+     {
+      "x": 6,
+      "y": 21.27,
+      "w": 60,
+      "h": 3.18,
+      "at": 818.28
+     },
+     {
+      "x": 6,
+      "y": 39.45,
+      "w": 60,
+      "h": 3.18,
+      "at": 820.26
+     }
+    ],
+    "note": {
+     "text": "SSA-44: anótelo",
+     "at": 822.56
+    },
+    "aspect": 0.7727,
+    "source": "Carta de ejemplo hecha para este video · sin datos reales"
+   },
+   "bed": "img/t30selloes_e39_talon_descuento_blur.jpg"
+  },
+  {
+   "t": 829.7666666666667,
+   "dur": 5.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 52,
+   "lugar": "avatar"
+  },
+  {
+   "t": 835.6666666666666,
+   "dur": 2.3,
+   "sec": "S8",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e42_nota_amarilla.jpg"
+  },
+  {
+   "t": 837.9666666666667,
+   "dur": 3.3666666666666667,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a60_llamada_estafa.jpg"
+  },
+  {
+   "t": 841.3333333333334,
+   "dur": 4.066666666666666,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s24.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 845.4,
+   "dur": 5.266666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 53,
+   "lugar": "avatar"
+  },
+  {
+   "t": 845.636,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 8",
+    "part": "EL RELOJ DE LOS 60 DÍAS"
+   },
+   "bed": "img/t30selloes_e43_reloj_pared_blur.jpg"
+  },
+  {
+   "t": 850.6666666666666,
+   "dur": 2.3666666666666667,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a62_ventanillas_vacias.jpg"
+  },
+  {
+   "t": 853.0333333333333,
+   "dur": 6.133333333333334,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b20.mp4",
+   "real": true,
+   "rate": 0.742
+  },
+  {
+   "t": 859.1666666666666,
+   "dur": 2.3,
+   "sec": "S9",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e44_buzon.jpg"
+  },
+  {
+   "t": 861.4666666666667,
+   "dur": 7.033333333333333,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "BigStat",
+   "props": {
+    "value": 60,
+    "unit": "días",
+    "label": "PARA PEDIR OTRA REVISIÓN",
+    "photo": "img/t30selloes_a50_mano_cajon.jpg",
+    "at": 862.08,
+    "tone": "red",
+    "compare": "Desde que le llega la carta.",
+    "compareAt": 867.12,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e43_reloj_pared_blur.jpg"
+  },
+  {
+   "t": 868.5,
+   "dur": 4.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 54,
+   "lugar": "avatar"
+  },
+  {
+   "t": 873.1666666666666,
+   "dur": 3.2,
+   "sec": "S9",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e22_pruebas_carpeta.jpg"
+  },
+  {
+   "t": 876.3666666666667,
+   "dur": 3.5,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_ag/t30selloes_a24_caja_talones.mp4",
+   "real": false,
+   "rate": 0.862
+  },
+  {
+   "t": 879.8666666666667,
+   "dur": 4.533333333333333,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a26_efectivo_mano.jpg"
+  },
+  {
+   "t": 884.4,
+   "dur": 4.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 55,
+   "lugar": "avatar"
+  },
+  {
+   "t": 889.1,
+   "dur": 2.3,
+   "sec": "S9",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e20_laptop.jpg"
+  },
+  {
+   "t": 891.4,
+   "dur": 3.5,
+   "sec": "S9",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e39_talon_descuento.jpg"
+  },
+  {
+   "t": 894.9,
+   "dur": 3.466666666666667,
+   "sec": "S9",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e19_archivo_sin_dueno.jpg"
+  },
+  {
+   "t": 898.3666666666667,
+   "dur": 2.9,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a52_monedas_pilas.jpg"
+  },
+  {
+   "t": 901.2666666666667,
+   "dur": 5.566666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 56,
+   "lugar": "avatar"
+  },
+  {
+   "t": 906.8333333333334,
+   "dur": 2.3,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a05_hoja_gris.jpg"
+  },
+  {
+   "t": 909.1333333333333,
+   "dur": 3.3333333333333335,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s26.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 912.4666666666667,
+   "dur": 3.933333333333333,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_d09.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 916.4,
+   "dur": 3.966666666666667,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s08.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 920.3666666666667,
+   "dur": 4.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 57,
+   "lugar": "avatar"
+  },
+  {
+   "t": 925.1333333333333,
+   "dur": 5.933333333333334,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b08.mp4",
+   "real": true,
+   "rate": 0.77
+  },
+  {
+   "t": 927.136,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 9",
+    "part": "REVISAR UNA VEZ NO ALCANZA"
+   },
+   "bed": "img/t30selloes_e46_abrecartas_blur.jpg"
+  },
+  {
+   "t": 931.0666666666667,
+   "dur": 3.8333333333333335,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b32.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 934.9,
+   "dur": 3.933333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 58,
+   "lugar": "avatar"
+  },
+  {
+   "t": 938.8333333333334,
+   "dur": 3.3666666666666667,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a35_mano_sin_anillo.jpg"
+  },
+  {
+   "t": 942.2,
+   "dur": 3.3666666666666667,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b30.mp4",
+   "real": true,
+   "credit": "Your Social Security (años 40) · Federal Security Agency / Social Security Board · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 945.5666666666667,
+   "dur": 3,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s25.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 948.5666666666667,
+   "dur": 9.133333333333333,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloes_doc_enero.jpg",
+    "chip": "LA CARTA DE ENERO",
+    "highlights": [
+     {
+      "x": 6,
+      "y": 20.82,
+      "w": 88,
+      "h": 4.55,
+      "at": 945.12
+     },
+     {
+      "x": 6,
+      "y": 27.64,
+      "w": 88,
+      "h": 4.55,
+      "at": 947.82
+     },
+     {
+      "x": 6,
+      "y": 41.27,
+      "w": 88,
+      "h": 4.55,
+      "at": 950.04
+     }
+    ],
+    "note": {
+     "text": "compárelo con el año pasado",
+     "at": 951.48
+    },
+    "aspect": 0.7727,
+    "source": "Carta de ejemplo hecha para este video · sin datos reales"
+   },
+   "bed": "img/t30selloes_e46_abrecartas_blur.jpg"
+  },
+  {
+   "t": 957.7,
+   "dur": 5.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 59,
+   "lugar": "avatar"
+  },
+  {
+   "t": 963.4666666666667,
+   "dur": 5.4,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a57_condado.jpg"
+  },
+  {
+   "t": 968.8666666666667,
+   "dur": 3.1,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_ag/t30selloes_a11_calle_sa.mp4",
+   "real": false,
+   "rate": 0.973
+  },
+  {
+   "t": 971.9666666666667,
+   "dur": 2.933333333333333,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloes_real/t30selloes_b26.mp4",
+   "rate": 1
+  },
+  {
+   "t": 974.9,
+   "dur": 3.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 60,
+   "lugar": "avatar"
+  },
+  {
+   "t": 978.1,
+   "dur": 4.466666666666667,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b07.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 982.5666666666667,
+   "dur": 5.266666666666667,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a56_banco.jpg"
+  },
+  {
+   "t": 987.8333333333334,
+   "dur": 3.2666666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 61,
+   "lugar": "avatar"
+  },
+  {
+   "t": 991.1,
+   "dur": 3.066666666666667,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b17.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 994.1666666666666,
+   "dur": 3.966666666666667,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b14.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 998.1333333333333,
+   "dur": 6.733333333333333,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "BigStat",
+   "props": {
+    "value": 1200,
+    "unit": "al año",
+    "label": "UN BENEFICIO DE CÓNYUGE NUNCA PEDIDO",
+    "photo": "img/t30selloes_e48_cuenta_libreta.jpg",
+    "at": 998.74,
+    "tone": "red",
+    "compare": "Cien dólares al mes × 12.",
+    "compareAt": 1000.24,
+    "prefix": "$"
+   },
+   "bed": "img/t30selloes_e46_abrecartas_blur.jpg"
+  },
+  {
+   "t": 1004.8666666666667,
+   "dur": 3.8333333333333335,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 62,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1008.7,
+   "dur": 3.433333333333333,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a19_limpieza.jpg"
+  },
+  {
+   "t": 1012.1333333333333,
+   "dur": 3.433333333333333,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_d04.mp4",
+   "real": true,
+   "credit": "If You Work for Yourself (1952) · Social Security Administration · NARA · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 1015.5666666666667,
+   "dur": 2.3,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s21.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1017.8666666666667,
+   "dur": 3.566666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 63,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1019.396,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "LA TAREA",
+    "part": "DOS COSAS ESTA SEMANA"
+   },
+   "bed": "img/t30selloes_e49_escribe_sobre_blur.jpg"
+  },
+  {
+   "t": 1021.4333333333333,
+   "dur": 9.8,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "cosas",
+    "label": "ESTA SEMANA",
+    "photo": "img/t30selloes_a58_cafe_carta.jpg",
+    "at": 1022.04,
+    "tone": "red",
+    "compare": "Revise su historial · pregunte por el beneficio más alto.",
+    "compareAt": 1024.62,
+    "prefix": ""
+   },
+   "bed": "img/t30selloes_e49_escribe_sobre_blur.jpg"
+  },
+  {
+   "t": 1031.2333333333333,
+   "dur": 5.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 64,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1036.7,
+   "dur": 3.433333333333333,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a04_sala_espera.jpg"
+  },
+  {
+   "t": 1040.1333333333334,
+   "dur": 3.466666666666667,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b25.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1043.6,
+   "dur": 3.9,
+   "sec": "S11",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e49_escribe_sobre.jpg"
+  },
+  {
+   "t": 1047.5,
+   "dur": 4.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 65,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1051.7,
+   "dur": 3.7,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s20.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1055.4,
+   "dur": 3.8333333333333335,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s19.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1059.2333333333333,
+   "dur": 2.9,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_s23.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1062.1333333333334,
+   "dur": 2.566666666666667,
+   "sec": "S11",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e51_cuelga_estafa.jpg"
+  },
+  {
+   "t": 1064.7,
+   "dur": 5.866666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 66,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1070.5666666666666,
+   "dur": 3.1666666666666665,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_g13.mp4",
+   "real": true,
+   "credit": "The Wise Years Wasted (1965) · U.S. Dept. of Labor · NARA · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 1073.7333333333333,
+   "dur": 4.1,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b19.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1077.8333333333333,
+   "dur": 6.833333333333333,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "04",
+    "label": "CUÉNTEME EN LOS COMENTARIOS",
+    "title": "¿EN QUÉ AÑO NACIÓ?",
+    "sub": "¿Sabía su edad de jubilación completa?",
+    "stamp": "",
+    "typeAt": 1078.44,
+    "stampAt": 1082.5,
+    "folder": "img/t30selloes_a29_fiesta_jubilacion.jpg"
+   },
+   "bed": "img/t30selloes_e49_escribe_sobre_blur.jpg"
+  },
+  {
+   "t": 1084.6666666666667,
+   "dur": 3.1333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 67,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1087.8,
+   "dur": 4.033333333333333,
+   "sec": "S11",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e13_saca_sobre.jpg"
+  },
+  {
+   "t": 1091.8333333333333,
+   "dur": 3.7666666666666666,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloes_real/t30selloes_b31.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 1095.6,
+   "dur": 4.666666666666667,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a61_correo_puerta.jpg"
+  },
+  {
+   "t": 1100.2666666666667,
+   "dur": 4.333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 68,
+   "lugar": "avatar"
+  },
+  {
+   "t": 1104.6,
+   "dur": 5.733333333333333,
+   "sec": "S11",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_e01_ventanilla.jpg"
+  },
+  {
+   "t": 1110.3333333333333,
+   "dur": 2.3,
+   "sec": "S11",
+   "lugar": "ernesto",
+   "kind": "imagen",
+   "asset": "img/t30selloes_a63_familia_mesa.jpg"
+  }
+ ]
+}
