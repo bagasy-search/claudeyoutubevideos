@@ -261,7 +261,7 @@ export const DayRing: React.FC<{ t: number; out: number; marks: { at: number; h:
       {marks.map((m, i) => { const r = (ang(m.h) * Math.PI) / 180, on = i <= cur, now = i === cur;
         return <g key={i} opacity={on ? 1 : 0.25}>
           <circle cx={310 + R * Math.cos(r)} cy={310 + R * Math.sin(r)} r={now ? 18 : 11} fill={now ? COL.red : COL.ink} />
-          <text x={310 + (R - 46) * Math.cos(r)} y={318 + (R - 46) * Math.sin(r)} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={24} fill={COL.ink}>{m.h > 12.9 ? Math.floor(m.h - 12) : Math.floor(m.h)}{m.h % 1 ? ":30" : ""}</text>
+          {(i === 0 || m.h - marks[i - 1].h >= 0.9) && <text x={310 + (R - 46) * Math.cos(r)} y={318 + (R - 46) * Math.sin(r)} textAnchor="middle" fontFamily={FONT} fontWeight={800} fontSize={24} fill={COL.ink}>{m.h > 12.9 ? Math.floor(m.h - 12) : Math.floor(m.h)}{m.h % 1 ? ":30" : ""}</text>}
         </g>; })}
       {cur >= 0 && <text x={310} y={322} textAnchor="middle" fontFamily={BRUSH} fontSize={50} fill={COL.red}>{marks[cur].text}</text>}
     </svg>
