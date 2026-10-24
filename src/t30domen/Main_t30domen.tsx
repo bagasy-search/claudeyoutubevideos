@@ -2,7 +2,7 @@
 // La EDL sale de D:/rtmp_t30domen/tools/plan.mjs → edl.json. Video mudo: el sonido (Mixkit/Freesound por acción)
 // se mezcla fuera de Remotion (public/t30domen_mix.wav) y lo pega encfin.
 import React from "react";
-import { AbsoluteFill, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, Easing } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, Easing, getInputProps } from "remotion";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 import edl from "./edl.json";
 
@@ -13,6 +13,8 @@ export const TOTAL_FRAMES_T30DOMEN = edl.total;
 type Seg = { tipo: string; from: number; dur: number; s0?: number; s1?: number; v?: number; paso: number; zoom?: number };
 const SEGS = edl.segs as Seg[];
 const ACCENT = "#e0793a"; // óxido
+// Sólo para stills de control locales: el cuadro de la fuente sale de un jpg extraído con ffmpeg (el render real usa el video).
+const STILL_FR = Boolean((getInputProps() as { stillFr?: boolean }).stillFr);
 
 const Plano: React.FC<{ s: Seg }> = ({ s }) => {
   const f = useCurrentFrame();
@@ -20,8 +22,9 @@ const Plano: React.FC<{ s: Seg }> = ({ s }) => {
   const z = z0 + interpolate(f, [0, s.dur], [0, 0.025], { extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ background: "#000", overflow: "hidden" }}>
-      <OffthreadVideo src={SRC} muted startFrom={Math.round((s.s0 as number) * FPS)} playbackRate={s.v}
-        style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)})` }} />
+      {STILL_FR ? <Img src={staticFile(`fr/${Math.round(((s.s0 as number) + (f / FPS) * (s.v as number)) * 1000)}.jpg`)}
+        style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)})` }} /> : <OffthreadVideo src={SRC} muted startFrom={Math.round((s.s0 as number) * FPS)} playbackRate={s.v}
+        style={{ width: "100%", height: "100%", objectFit: "cover", transform: `scale(${z.toFixed(4)})` }} />}
     </AbsoluteFill>
   );
 };
