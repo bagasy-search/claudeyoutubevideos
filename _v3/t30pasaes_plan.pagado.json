@@ -418,7 +418,8 @@
     "rightText": "Muerte",
     "stamp": "KODOKUSHI",
     "leftAt": 170.76,
-    "rightAt": 172.76
+    "rightAt": 172.76,
+    "kicker": "LA PALABRA"
    },
    "bed": "img/t30pasaes_j10_police_paper_blur.jpg"
   },
@@ -825,7 +826,8 @@
     "rightText": "No deja pedir ayuda",
     "stamp": "LA PARADOJA",
     "leftAt": 332.46,
-    "rightAt": 334.78
+    "rightAt": 334.78,
+    "kicker": "DOS CARAS"
    },
    "bed": "img/t30pasaes_j17_elderly_street_blur.jpg"
   },
@@ -1327,7 +1329,8 @@
     "rightText": "Alquila más barato",
     "stamp": "JIKO BUKKEN",
     "leftAt": 519.58,
-    "rightAt": 522.4
+    "rightAt": 522.4,
+    "kicker": "EL NEGOCIO"
    },
    "bed": "img/t30pasaes_j26_bow_door_blur.jpg"
   },
@@ -1805,7 +1808,8 @@
     "stamp": "PROBLEMA PÚBLICO",
     "credit": "Foto: AMANO Jun-ichi · CC BY 3.0 · Wikimedia Commons",
     "leftAt": 693.67,
-    "rightAt": 701.75
+    "rightAt": 701.75,
+    "kicker": "LA RESPUESTA DEL GOBIERNO"
    },
    "bed": "img/t30pasaes_j40_kettle_blur.jpg"
   },
@@ -2109,7 +2113,8 @@
     "rightText": "Tres años",
     "stamp": "",
     "leftAt": 806.47,
-    "rightAt": 809.45
+    "rightAt": 809.45,
+    "kicker": "LA DIFERENCIA"
    },
    "bed": "img/t30pasaes_j46_window_night_blur.jpg"
   },
