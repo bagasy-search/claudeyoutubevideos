@@ -199,7 +199,6 @@ img/t30ventaes_a57_edificio_estado_blur.jpg
 img/t30ventaes_a58_monedas_boleta.jpg
 img/t30ventaes_a58_monedas_boleta_blur.jpg
 img/t30ventaes_a66_puerta_vidrio_blur.jpg
-img/t30ventaes_qr.png
 img/t30ventaes_r01_libreta.jpg
 img/t30ventaes_r01_libreta_blur.jpg
 img/t30ventaes_r03_carta_cerrada.jpg
