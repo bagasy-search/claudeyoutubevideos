@@ -71,10 +71,12 @@ const useImgTex = (ids: string[]) => {
     const L = new THREE.TextureLoader();
     const r: Record<string, THREE.Texture> = {};
     const h = delayRender("paginas recetario", { timeoutInMilliseconds: 110000 });
-    let n = ids.length;
+    let n = ids.length, done = false;
+    const fin = () => { if (!done) { done = true; continueRender(h); } };
+    setTimeout(fin, 80000); // salida a los 80 s: en swangle la carga fría a veces se cuelga
     for (const id of ids) {
       const flip = new THREE.Texture(); flip.center.set(0.5, 0.5); flip.rotation = Math.PI; flip.colorSpace = THREE.SRGBColorSpace; flip.anisotropy = 16;
-      const tx = L.load(staticFile(P + id + ".jpg"), (tt) => { flip.image = tt.image; flip.needsUpdate = true; if (--n === 0) { bump((x) => x + 1); requestAnimationFrame(() => requestAnimationFrame(() => continueRender(h))); } }, undefined, () => { if (--n === 0) continueRender(h); });
+      const tx = L.load(staticFile(P + id + ".jpg"), (tt) => { flip.image = tt.image; flip.needsUpdate = true; if (--n === 0) { bump((x) => x + 1); requestAnimationFrame(() => requestAnimationFrame(fin)); } }, undefined, () => { if (--n === 0) fin(); });
       tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 16; r[id] = tx; r[id + "_r"] = flip;
     }
     return r;
