@@ -1,0 +1,2499 @@
+{
+ "total": 952.506,
+ "avatarEnd": 952.506,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0,
+   "dur": 6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 0,
+   "lugar": "avatar"
+  },
+  {
+   "t": 6,
+   "dur": 3.466666666666667,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/t30selloen_a01_folded_letter.jpg",
+    "yearFrom": 1945,
+    "yearTo": 1960,
+    "unit": "",
+    "label": "BORN BEFORE",
+    "from": 5.74,
+    "to": 8.6,
+    "marks": [
+     {
+      "year": 1960,
+      "note": "Check one line today."
+     }
+    ],
+    "linear": true
+   },
+   "bed": "img/t30selloen_f01_glass_window_blur.jpg"
+  },
+  {
+   "t": 9.466666666666667,
+   "dur": 2.8,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L07.mp4",
+   "real": true,
+   "credit": "Vocational Guidance Films · Life Insurance Occupations (1948) · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 12.266666666666667,
+   "dur": 2.8,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s04.mp4",
+   "real": true,
+   "credit": "Social Security Administration · The Social Security Story (1962) · Public domain · Internet Archive"
+  },
+  {
+   "t": 15.066666666666666,
+   "dur": 4.733333333333333,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f03_watch_leave.jpg"
+  },
+  {
+   "t": 19.8,
+   "dur": 4.066666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 1,
+   "lugar": "avatar"
+  },
+  {
+   "t": 23.866666666666667,
+   "dur": 4.633333333333334,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f04_unfold_letter.jpg"
+  },
+  {
+   "t": 28.5,
+   "dur": 4.6,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a05_gray_page.mp4",
+   "real": false,
+   "rate": 0.655
+  },
+  {
+   "t": 33.1,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 2,
+   "lugar": "avatar"
+  },
+  {
+   "t": 37.233333333333334,
+   "dur": 12.233333333333333,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_carta.png",
+    "aspect": 0.7727,
+    "chip": "THE LETTER",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 5.6,
+      "y": 79.36,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 40.94,
+      "zoom": 1.6
+     }
+    ],
+    "note": {
+     "text": "...into the drawer",
+     "at": 42.78
+    }
+   },
+   "bed": "img/t30selloen_f01_glass_window_blur.jpg"
+  },
+  {
+   "t": 49.46666666666667,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 3,
+   "lugar": "avatar"
+  },
+  {
+   "t": 53.6,
+   "dur": 4.366666666666666,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y04.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive"
+  },
+  {
+   "t": 57.96666666666667,
+   "dur": 3.033333333333333,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g07.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 61,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a07_lawyer_office.mp4",
+   "real": false,
+   "rate": 0.798
+  },
+  {
+   "t": 64,
+   "dur": 7.9,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30selloen_a08_server_room.jpg",
+    "x": 1280,
+    "y": 380,
+    "r": 170,
+    "note": "what's in their file",
+    "circleAt": 66.68,
+    "noteAt": 67.72,
+    "zoom": 1.3
+   },
+   "bed": "img/t30selloen_f01_glass_window_blur.jpg"
+  },
+  {
+   "t": 71.9,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 4,
+   "lugar": "avatar"
+  },
+  {
+   "t": 75.5,
+   "dur": 3.9,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y02.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 79.4,
+   "dur": 3.9,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f08_phone_no_call.jpg"
+  },
+  {
+   "t": 83.3,
+   "dur": 2.8666666666666667,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f39_mailbox.jpg"
+  },
+  {
+   "t": 86.16666666666667,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 5,
+   "lugar": "avatar"
+  },
+  {
+   "t": 89.46666666666667,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f09_nine_fingers.jpg"
+  },
+  {
+   "t": 92.46666666666667,
+   "dur": 7.166666666666667,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 9,
+    "unit": "mistakes",
+    "label": "I SAW OVER AND OVER",
+    "compare": "Mostly born before 1960.",
+    "photo": "img/t30selloen_a10_nine_folders.jpg",
+    "at": 93.06,
+    "compareAt": 98.24,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f01_glass_window_blur.jpg"
+  },
+  {
+   "t": 99.63333333333334,
+   "dur": 4.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 6,
+   "lugar": "avatar"
+  },
+  {
+   "t": 104.43333333333334,
+   "dur": 4.666666666666667,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f37_sticky_note.jpg"
+  },
+  {
+   "t": 109.1,
+   "dur": 3.3,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a11_phone_family.mp4",
+   "real": false,
+   "rate": 0.803
+  },
+  {
+   "t": 112.4,
+   "dur": 2.8333333333333335,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f44_envelope_phone.jpg"
+  },
+  {
+   "t": 115.23333333333333,
+   "dur": 4.2,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 7,
+   "lugar": "avatar"
+  },
+  {
+   "t": 119.43333333333334,
+   "dur": 4,
+   "sec": "S1",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f06_frowns_reading.jpg"
+  },
+  {
+   "t": 123.43333333333334,
+   "dur": 10.733333333333333,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "STAMPED AND FILED",
+    "title": "FRANK",
+    "sub": "Claims representative · New Jersey",
+    "stamp": "FILED",
+    "typeAt": 124.04,
+    "stampAt": 126.02,
+    "folder": "img/wb_folder.jpg"
+   }
+  },
+  {
+   "t": 134.16666666666666,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 8,
+   "lugar": "avatar"
+  },
+  {
+   "t": 137.76666666666668,
+   "dur": 4.6,
+   "sec": "S2",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f10_carry_files.jpg"
+  },
+  {
+   "t": 142.36666666666667,
+   "dur": 4.6,
+   "sec": "S2",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f21_cake.jpg"
+  },
+  {
+   "t": 146.96666666666667,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 9,
+   "lugar": "avatar"
+  },
+  {
+   "t": 150.86666666666667,
+   "dur": 3.933333333333333,
+   "sec": "S2",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f41_letter_opener.jpg"
+  },
+  {
+   "t": 154.8,
+   "dur": 6.5,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "02",
+    "label": "EVERY WEEK, ONE MORE LETTER",
+    "title": "SUBSCRIBE + BELL",
+    "sub": "What line did you never understand?",
+    "stamp": "",
+    "typeAt": 155.4,
+    "stampAt": 159.9,
+    "folder": "img/wb_folder.jpg"
+   }
+  },
+  {
+   "t": 161.3,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 10,
+   "lugar": "avatar"
+  },
+  {
+   "t": 164.9,
+   "dur": 4.366666666666666,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y23.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 169.26666666666668,
+   "dur": 3.2666666666666666,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s10.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 172.53333333333333,
+   "dur": 4,
+   "sec": "S2",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f14_earnings_circle.jpg"
+  },
+  {
+   "t": 176.53333333333333,
+   "dur": 3.7333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 11,
+   "lugar": "avatar"
+  },
+  {
+   "t": 176.54,
+   "dur": 3.727,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 1",
+    "part": "YOUR EARNINGS RECORD"
+   },
+   "bed": "img/t30selloen_f14_earnings_circle_blur.jpg"
+  },
+  {
+   "t": 180.26666666666668,
+   "dur": 10.9,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_carta.png",
+    "aspect": 0.7727,
+    "chip": "THE LETTER · LINE 1",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 5.6,
+      "y": 19.36,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 179.72,
+      "zoom": 1.8
+     }
+    ]
+   },
+   "bed": "img/t30selloen_f14_earnings_circle_blur.jpg"
+  },
+  {
+   "t": 191.16666666666666,
+   "dur": 5.333333333333333,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 35,
+    "unit": "years",
+    "label": "YOUR HIGHEST EARNINGS",
+    "compare": "Adjusted for inflation.",
+    "photo": "img/t30selloen_a16_factory_payroll.jpg",
+    "at": 191.78,
+    "compareAt": 193.74,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f14_earnings_circle_blur.jpg"
+  },
+  {
+   "t": 196.5,
+   "dur": 4.433333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 12,
+   "lugar": "avatar"
+  },
+  {
+   "t": 200.93333333333334,
+   "dur": 2.466666666666667,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_g10.mp4",
+   "rate": 1
+  },
+  {
+   "t": 203.4,
+   "dur": 6.166666666666667,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 0,
+    "unit": "dollars",
+    "prefix": "$",
+    "label": "EACH MISSING YEAR COUNTS AS",
+    "compare": "For the rest of your life.",
+    "photo": "img/t30selloen_a20_zero_year.jpg",
+    "at": 204,
+    "compareAt": 208.16,
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f14_earnings_circle_blur.jpg"
+  },
+  {
+   "t": 209.56666666666666,
+   "dur": 3.1,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L01.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 212.66666666666666,
+   "dur": 3.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 13,
+   "lugar": "avatar"
+  },
+  {
+   "t": 216.36666666666667,
+   "dur": 4.2,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g02.mp4",
+   "real": true,
+   "credit": "National Council on the Aging · The Wise Years Wasted (c. 1965) · CC0 · National Archives"
+  },
+  {
+   "t": 220.56666666666666,
+   "dur": 2.9,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y25.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive"
+  },
+  {
+   "t": 223.46666666666667,
+   "dur": 3.6666666666666665,
+   "sec": "S3",
+   "lugar": "frank",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y13.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 227.13333333333333,
+   "dur": 4.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 14,
+   "lugar": "avatar"
+  },
+  {
+   "t": 231.23333333333332,
+   "dur": 3.566666666666667,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s16.mp4",
+   "real": true,
+   "credit": "Social Security Administration · The Social Security Story (1962) · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 234.8,
+   "dur": 3.6,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_y22.mp4",
+   "rate": 1
+  },
+  {
+   "t": 238.4,
+   "dur": 4.133333333333334,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s09.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 242.53333333333333,
+   "dur": 4.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 15,
+   "lugar": "avatar"
+  },
+  {
+   "t": 246.76666666666668,
+   "dur": 4.766666666666667,
+   "sec": "S3",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f15_ruler_down.jpg"
+  },
+  {
+   "t": 251.53333333333333,
+   "dur": 9.966666666666667,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_earnings.png",
+    "aspect": 0.7727,
+    "chip": "EARNINGS RECORD",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 6,
+      "y": 51.36,
+      "w": 60,
+      "h": 2.27,
+      "at": 254.97,
+      "zoom": 1.7
+     },
+     {
+      "x": 6,
+      "y": 63.64,
+      "w": 60,
+      "h": 2.27,
+      "at": 256.77,
+      "zoom": 1.7
+     }
+    ],
+    "note": {
+     "text": "Look for the zeros.",
+     "at": 278.51
+    }
+   },
+   "bed": "img/t30selloen_f14_earnings_circle_blur.jpg"
+  },
+  {
+   "t": 261.5,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 16,
+   "lugar": "avatar"
+  },
+  {
+   "t": 265.1,
+   "dur": 4.2,
+   "sec": "S3",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f43_envelope_write.jpg"
+  },
+  {
+   "t": 269.3,
+   "dur": 3.1333333333333333,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L15.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 272.43333333333334,
+   "dur": 3.4,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s15.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 275.8333333333333,
+   "dur": 2.6666666666666665,
+   "sec": "S3",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f19_proof_folder.jpg"
+  },
+  {
+   "t": 278.5,
+   "dur": 3.5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 17,
+   "lugar": "avatar"
+  },
+  {
+   "t": 282,
+   "dur": 4.066666666666666,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_n08.mp4",
+   "real": true,
+   "credit": "U.S. National Archives · Public domain · Wikimedia Commons"
+  },
+  {
+   "t": 282.567,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 2",
+    "part": "FULL RETIREMENT AGE"
+   },
+   "bed": "img/t30selloen_f20_wall_calendar_blur.jpg"
+  },
+  {
+   "t": 286.06666666666666,
+   "dur": 3.3333333333333335,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y10.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive"
+  },
+  {
+   "t": 289.4,
+   "dur": 3.3333333333333335,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g17.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 292.73333333333335,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 18,
+   "lugar": "avatar"
+  },
+  {
+   "t": 295.73333333333335,
+   "dur": 16.966666666666665,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_fra.png",
+    "aspect": 0.7727,
+    "chip": "FULL RETIREMENT AGE",
+    "source": "Social Security Administration rules",
+    "highlights": [
+     {
+      "x": 9,
+      "y": 24.91,
+      "w": 82,
+      "h": 4.55,
+      "at": 295.73
+     },
+     {
+      "x": 9,
+      "y": 30.82,
+      "w": 82,
+      "h": 4.55,
+      "at": 301.27
+     },
+     {
+      "x": 9,
+      "y": 36.73,
+      "w": 82,
+      "h": 4.55,
+      "at": 305.49
+     },
+     {
+      "x": 9,
+      "y": 60.36,
+      "w": 82,
+      "h": 4.55,
+      "at": 310.95
+     }
+    ]
+   },
+   "bed": "img/t30selloen_f20_wall_calendar_blur.jpg"
+  },
+  {
+   "t": 312.7,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 19,
+   "lugar": "avatar"
+  },
+  {
+   "t": 316.6,
+   "dur": 3.8666666666666667,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_s23.mp4",
+   "rate": 1
+  },
+  {
+   "t": 320.46666666666664,
+   "dur": 2.8,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y05.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 323.26666666666665,
+   "dur": 3.5,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloen_a24_retire_party.jpg"
+  },
+  {
+   "t": 326.76666666666665,
+   "dur": 3.7666666666666666,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_g15.mp4",
+   "rate": 1
+  },
+  {
+   "t": 330.53333333333336,
+   "dur": 4.266666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 20,
+   "lugar": "avatar"
+  },
+  {
+   "t": 334.8,
+   "dur": 6.2,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 30,
+    "unit": "%",
+    "prefix": "~",
+    "label": "SMALLER CHECK AT 62",
+    "compare": "Than at 67. For life.",
+    "photo": "img/t30selloen_a25_two_checks.jpg",
+    "at": 335.39,
+    "compareAt": 338.51,
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f20_wall_calendar_blur.jpg"
+  },
+  {
+   "t": 341,
+   "dur": 2.7,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g19.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 343.7,
+   "dur": 2.7,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L16.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 346.4,
+   "dur": 6.433333333333334,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 8,
+    "unit": "% a year",
+    "label": "EVERY YEAR YOU WAIT",
+    "compare": "Up to age 70.",
+    "photo": "img/t30selloen_a27_growing_jar.jpg",
+    "at": 347.01,
+    "compareAt": 348.95,
+    "tone": "green",
+    "prefix": ""
+   },
+   "bed": "img/t30selloen_f20_wall_calendar_blur.jpg"
+  },
+  {
+   "t": 352.8333333333333,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 21,
+   "lugar": "avatar"
+  },
+  {
+   "t": 357.43333333333334,
+   "dur": 4.866666666666666,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y17.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 362.3,
+   "dur": 3.8,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y19.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 366.1,
+   "dur": 3.1,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_y18.mp4",
+   "rate": 1
+  },
+  {
+   "t": 369.2,
+   "dur": 5.033333333333333,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "BigStat",
+   "props": {
+    "value": 12,
+    "unit": "months",
+    "label": "TO WITHDRAW YOUR APPLICATION",
+    "compare": "Pay it back, start over.",
+    "photo": "img/t30selloen_a26_hourglass.jpg",
+    "at": 369.81,
+    "compareAt": 370.81,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f20_wall_calendar_blur.jpg"
+  },
+  {
+   "t": 374.23333333333335,
+   "dur": 3.8666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 22,
+   "lugar": "avatar"
+  },
+  {
+   "t": 374.247,
+   "dur": 3.853,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 3",
+    "part": "THE SPOUSAL BENEFIT"
+   },
+   "bed": "img/t30selloen_f24_couple_desk_blur.jpg"
+  },
+  {
+   "t": 378.1,
+   "dur": 9.633333333333333,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_carta.png",
+    "aspect": 0.7727,
+    "chip": "THE LETTER · LINE 3",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 5.6,
+      "y": 34.36,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 377.27,
+      "zoom": 1.8
+     }
+    ]
+   },
+   "bed": "img/t30selloen_f24_couple_desk_blur.jpg"
+  },
+  {
+   "t": 387.73333333333335,
+   "dur": 4.266666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 23,
+   "lugar": "avatar"
+  },
+  {
+   "t": 392,
+   "dur": 6.366666666666666,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 50,
+    "unit": "%",
+    "label": "OF YOUR SPOUSE'S FULL BENEFIT",
+    "compare": "At your full retirement age.",
+    "photo": "img/t30selloen_a28_married_kitchen.jpg",
+    "at": 392.61,
+    "compareAt": 396.89,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f24_couple_desk_blur.jpg"
+  },
+  {
+   "t": 398.3666666666667,
+   "dur": 3.8,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_w02.mp4",
+   "rate": 1
+  },
+  {
+   "t": 402.1666666666667,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 24,
+   "lugar": "avatar"
+  },
+  {
+   "t": 406.46666666666664,
+   "dur": 3.433333333333333,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_w01.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 409.9,
+   "dur": 3.5,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_w09.mp4",
+   "rate": 1
+  },
+  {
+   "t": 413.4,
+   "dur": 2.6,
+   "sec": "S5",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f25_two_files.jpg"
+  },
+  {
+   "t": 416,
+   "dur": 3.2333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 25,
+   "lugar": "avatar"
+  },
+  {
+   "t": 419.23333333333335,
+   "dur": 4.666666666666667,
+   "sec": "S5",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f24_couple_desk.jpg"
+  },
+  {
+   "t": 423.9,
+   "dur": 3.1666666666666665,
+   "sec": "S5",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f26_phone_argument.jpg"
+  },
+  {
+   "t": 427.06666666666666,
+   "dur": 3.1333333333333333,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a44_divorce_papers.mp4",
+   "real": false,
+   "rate": 0.963
+  },
+  {
+   "t": 430.2,
+   "dur": 3.066666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 26,
+   "lugar": "avatar"
+  },
+  {
+   "t": 433.26666666666665,
+   "dur": 11.833333333333334,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30selloen_a31_ring_hand.jpg",
+    "rightImg": "img/t30selloen_a09_old_couple_kitchen.jpg",
+    "leftHead": "YOU",
+    "rightHead": "YOUR EX",
+    "leftText": "10+ years married. Not remarried.",
+    "rightText": "Loses nothing. Isn't even told.",
+    "leftAt": 433.87,
+    "rightAt": 443.03,
+    "stamp": ""
+   },
+   "bed": "img/t30selloen_f24_couple_desk_blur.jpg"
+  },
+  {
+   "t": 445.1,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 27,
+   "lugar": "avatar"
+  },
+  {
+   "t": 449.23333333333335,
+   "dur": 3.933333333333333,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_L09.mp4",
+   "rate": 1
+  },
+  {
+   "t": 453.1666666666667,
+   "dur": 4.966666666666667,
+   "sec": "S5",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f27_divorced_woman.jpg"
+  },
+  {
+   "t": 458.1333333333333,
+   "dur": 4.5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 10,
+    "unit": "years",
+    "label": "OF MARRIAGE",
+    "compare": "That's the number.",
+    "photo": "img/t30selloen_a18_wedding_couple.jpg",
+    "at": 458.73,
+    "compareAt": 459.89,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f24_couple_desk_blur.jpg"
+  },
+  {
+   "t": 462.627,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 4",
+    "part": "WIDOWS AND WIDOWERS"
+   },
+   "bed": "img/t30selloen_f28_widow_form_blur.jpg"
+  },
+  {
+   "t": 462.6333333333333,
+   "dur": 4.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 28,
+   "lugar": "avatar"
+  },
+  {
+   "t": 466.8666666666667,
+   "dur": 3.8333333333333335,
+   "sec": "S6",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f28_widow_form.jpg"
+  },
+  {
+   "t": 470.7,
+   "dur": 6.2,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 100,
+    "unit": "%",
+    "label": "SURVIVOR BENEFIT",
+    "compare": "Of what your spouse was getting.",
+    "photo": "img/t30selloen_a32_widow_grave.jpg",
+    "at": 471.31,
+    "compareAt": 473.39,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f28_widow_form_blur.jpg"
+  },
+  {
+   "t": 476.9,
+   "dur": 4.266666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 29,
+   "lugar": "avatar"
+  },
+  {
+   "t": 481.1666666666667,
+   "dur": 4.4,
+   "sec": "S6",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f29_switch_arrows.jpg"
+  },
+  {
+   "t": 485.56666666666666,
+   "dur": 11.6,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30selloen_a33_widower_table.jpg",
+    "rightImg": "img/t30selloen_a49_coins_slow.jpg",
+    "leftHead": "FIRST",
+    "rightHead": "LATER",
+    "leftText": "Survivor benefit, early.",
+    "rightText": "Your own, grown at 70.",
+    "leftAt": 486.17,
+    "rightAt": 492.13,
+    "stamp": ""
+   },
+   "bed": "img/t30selloen_f28_widow_form_blur.jpg"
+  },
+  {
+   "t": 497.1666666666667,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 30,
+   "lugar": "avatar"
+  },
+  {
+   "t": 501.3,
+   "dur": 4.266666666666667,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_L06.mp4",
+   "rate": 1
+  },
+  {
+   "t": 505.56666666666666,
+   "dur": 2.9,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 508.46666666666664,
+   "dur": 4.833333333333333,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s17.mp4",
+   "real": true,
+   "credit": "Social Security Administration · The Social Security Story (1962) · Public domain · Internet Archive"
+  },
+  {
+   "t": 513.3,
+   "dur": 5.266666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 31,
+   "lugar": "avatar"
+  },
+  {
+   "t": 518.5666666666667,
+   "dur": 2.8333333333333335,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L12.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 521.4,
+   "dur": 2.8,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L02.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 524.2,
+   "dur": 5.8,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "BigStat",
+   "props": {
+    "value": 255,
+    "unit": "dollars",
+    "prefix": "$",
+    "label": "ONE-TIME DEATH PAYMENT",
+    "compare": "Apply within two years.",
+    "photo": "img/t30selloen_a34_grocery_bag.jpg",
+    "at": 524.81,
+    "compareAt": 528.59,
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f28_widow_form_blur.jpg"
+  },
+  {
+   "t": 530,
+   "dur": 4.733333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 32,
+   "lugar": "avatar"
+  },
+  {
+   "t": 534.7333333333333,
+   "dur": 2.466666666666667,
+   "sec": "S6",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f30_groceries.jpg"
+  },
+  {
+   "t": 537.2,
+   "dur": 4.233333333333333,
+   "sec": "S6",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f31_teacher_pension.jpg"
+  },
+  {
+   "t": 541.033,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 5",
+    "part": "TEACHERS, POLICE, FIREFIGHTERS"
+   },
+   "bed": "img/t30selloen_f31_teacher_pension_blur.jpg"
+  },
+  {
+   "t": 541.4333333333333,
+   "dur": 4.233333333333333,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g14.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 545.6666666666666,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 33,
+   "lugar": "avatar"
+  },
+  {
+   "t": 551.0666666666667,
+   "dur": 3.3,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a37_firefighters.mp4",
+   "real": false,
+   "rate": 0.808
+  },
+  {
+   "t": 554.3666666666667,
+   "dur": 7.166666666666667,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_carta.png",
+    "aspect": 0.7727,
+    "chip": "THE LETTER · LINE 5",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 5.6,
+      "y": 49.36,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 548.91,
+      "zoom": 1.8
+     }
+    ]
+   },
+   "bed": "img/t30selloen_f31_teacher_pension_blur.jpg"
+  },
+  {
+   "t": 561.5333333333333,
+   "dur": 5.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 34,
+   "lugar": "avatar"
+  },
+  {
+   "t": 567.3,
+   "dur": 4.233333333333333,
+   "sec": "S7",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f11_across_desk.jpg"
+  },
+  {
+   "t": 571.5333333333333,
+   "dur": 2.966666666666667,
+   "sec": "S7",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f12_kitchen_table.jpg"
+  },
+  {
+   "t": 574.5,
+   "dur": 2.966666666666667,
+   "sec": "S7",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f32_stamp_form.jpg"
+  },
+  {
+   "t": 577.4666666666667,
+   "dur": 3.3666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 35,
+   "lugar": "avatar"
+  },
+  {
+   "t": 580.8333333333334,
+   "dur": 6.633333333333334,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/t30selloen_a35_teacher_class.jpg",
+    "yearFrom": 1983,
+    "yearTo": 2025,
+    "unit": "",
+    "label": "THE OLD PENSION RULES · ENDED",
+    "from": 574.43,
+    "to": 579.11,
+    "marks": [
+     {
+      "year": 2025,
+      "note": "Social Security Fairness Act"
+     }
+    ],
+    "source": "Social Security Fairness Act, signed January 2025",
+    "linear": true
+   },
+   "bed": "img/t30selloen_f31_teacher_pension_blur.jpg"
+  },
+  {
+   "t": 587.4666666666667,
+   "dur": 4.2,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_n14.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 591.6666666666666,
+   "dur": 3.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 36,
+   "lugar": "avatar"
+  },
+  {
+   "t": 595.6333333333333,
+   "dur": 3.466666666666667,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s26.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 599.1,
+   "dur": 3.466666666666667,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_n11.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 602.5666666666667,
+   "dur": 4.6,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L22.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 607.1666666666666,
+   "dur": 3.433333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 37,
+   "lugar": "avatar"
+  },
+  {
+   "t": 610.6,
+   "dur": 2.8666666666666667,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_L11.mp4",
+   "rate": 1
+  },
+  {
+   "t": 613.4666666666667,
+   "dur": 5.1,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_L20.mp4",
+   "real": true,
+   "rate": 0.973
+  },
+  {
+   "t": 618.5666666666667,
+   "dur": 4.833333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 38,
+   "lugar": "avatar"
+  },
+  {
+   "t": 621.673,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 6",
+    "part": "MEDICARE PART B"
+   },
+   "bed": "img/t30selloen_f34_payment_stub_blur.jpg"
+  },
+  {
+   "t": 623.4,
+   "dur": 7.366666666666666,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_carta.png",
+    "aspect": 0.7727,
+    "chip": "THE LETTER · LINE 6",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 5.6,
+      "y": 56.86,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 622.39,
+      "zoom": 1.8
+     }
+    ]
+   },
+   "bed": "img/t30selloen_f34_payment_stub_blur.jpg"
+  },
+  {
+   "t": 630.7666666666667,
+   "dur": 3.6,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_L13.mp4",
+   "rate": 1
+  },
+  {
+   "t": 634.3666666666667,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 39,
+   "lugar": "avatar"
+  },
+  {
+   "t": 639.7666666666667,
+   "dur": 3.433333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_w05.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 643.2,
+   "dur": 7.266666666666667,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "years ago",
+    "label": "THE TAX RETURN THEY USE",
+    "compare": "Not what you earn today.",
+    "photo": "img/t30selloen_a22_tax_return_old.jpg",
+    "at": 643.81,
+    "compareAt": 649.07,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f34_payment_stub_blur.jpg"
+  },
+  {
+   "t": 650.4666666666667,
+   "dur": 4.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 40,
+   "lugar": "avatar"
+  },
+  {
+   "t": 655.1666666666666,
+   "dur": 12.033333333333333,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_ssa44.png",
+    "aspect": 0.7727,
+    "chip": "FORM SSA-44",
+    "source": "Rebuilt example of the SSA-44 form",
+    "highlights": [
+     {
+      "x": 6,
+      "y": 28.55,
+      "w": 60,
+      "h": 3.18,
+      "at": 658.21
+     },
+     {
+      "x": 6,
+      "y": 24.91,
+      "w": 60,
+      "h": 3.18,
+      "at": 659.77
+     },
+     {
+      "x": 6,
+      "y": 21.27,
+      "w": 60,
+      "h": 3.18,
+      "at": 661.99
+     },
+     {
+      "x": 6,
+      "y": 39.45,
+      "w": 60,
+      "h": 3.18,
+      "at": 663.23
+     }
+    ]
+   },
+   "bed": "img/t30selloen_f34_payment_stub_blur.jpg"
+  },
+  {
+   "t": 667.2,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 41,
+   "lugar": "avatar"
+  },
+  {
+   "t": 671.1,
+   "dur": 2.466666666666667,
+   "sec": "S8",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f35_old_tax_return.jpg"
+  },
+  {
+   "t": 673.5666666666667,
+   "dur": 3.533333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s08.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 677.1,
+   "dur": 3.566666666666667,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y27.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 680.6666666666666,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "BigStat",
+   "props": {
+    "value": 44,
+    "unit": "",
+    "prefix": "SSA-",
+    "label": "WRITE IT DOWN",
+    "compare": "Life-changing event form.",
+    "photo": "img/t30selloen_a43_forms_tray.jpg",
+    "at": 681.25,
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f34_payment_stub_blur.jpg"
+  },
+  {
+   "t": 684.853,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 7",
+    "part": "THE 60-DAY CLOCK"
+   },
+   "bed": "img/t30selloen_f38_wall_clock_blur.jpg"
+  },
+  {
+   "t": 684.8666666666667,
+   "dur": 3.6333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 42,
+   "lugar": "avatar"
+  },
+  {
+   "t": 688.5,
+   "dur": 4.6,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_n01.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 693.1,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 43,
+   "lugar": "avatar"
+  },
+  {
+   "t": 696.1,
+   "dur": 7.133333333333334,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_carta.png",
+    "aspect": 0.7727,
+    "chip": "THE LETTER · LINE 7",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 5.6,
+      "y": 64.36,
+      "w": 88.8,
+      "h": 6.82,
+      "at": 691.37,
+      "zoom": 1.8
+     }
+    ]
+   },
+   "bed": "img/t30selloen_f38_wall_clock_blur.jpg"
+  },
+  {
+   "t": 703.2333333333333,
+   "dur": 6.066666666666666,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "BigStat",
+   "props": {
+    "value": 60,
+    "unit": "days",
+    "label": "TO ASK FOR RECONSIDERATION",
+    "compare": "The clock runs in the drawer too.",
+    "photo": "img/t30selloen_a46_calendar_days.jpg",
+    "at": 703.83,
+    "compareAt": 707.79,
+    "tone": "red",
+    "prefix": ""
+   },
+   "bed": "img/t30selloen_f38_wall_clock_blur.jpg"
+  },
+  {
+   "t": 709.3,
+   "dur": 5.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 44,
+   "lugar": "avatar"
+  },
+  {
+   "t": 714.4666666666667,
+   "dur": 3.3333333333333335,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a39_stack_applications.mp4",
+   "real": false,
+   "rate": 0.886
+  },
+  {
+   "t": 717.8,
+   "dur": 3.433333333333333,
+   "sec": "S9",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f33_phone_ask.jpg"
+  },
+  {
+   "t": 721.2333333333333,
+   "dur": 3.4,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s11.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 724.6333333333333,
+   "dur": 5,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 45,
+   "lugar": "avatar"
+  },
+  {
+   "t": 729.6333333333333,
+   "dur": 4.966666666666667,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y01.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive"
+  },
+  {
+   "t": 734.6,
+   "dur": 3.3333333333333335,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a45_wall_clock.mp4",
+   "real": false,
+   "rate": 0.764
+  },
+  {
+   "t": 737.9333333333333,
+   "dur": 5.333333333333333,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30selloen_a47_drawer_closing.jpg",
+    "rightImg": "img/t30selloen_a48_mailbox_blue.jpg",
+    "leftHead": "SILENCE",
+    "rightHead": "ASK",
+    "leftText": "The clock runs out.",
+    "rightText": "Reconsideration. Waiver. Slower payback.",
+    "leftAt": 738.54,
+    "rightAt": 740.12,
+    "stamp": ""
+   },
+   "bed": "img/t30selloen_f38_wall_clock_blur.jpg"
+  },
+  {
+   "t": 743.26,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 8",
+    "part": "TAX YOU DON'T OWE"
+   },
+   "bed": "img/t30selloen_f40_tax_piles_blur.jpg"
+  },
+  {
+   "t": 743.2666666666667,
+   "dur": 4.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 46,
+   "lugar": "avatar"
+  },
+  {
+   "t": 747.3666666666667,
+   "dur": 5.6,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "BigStat",
+   "props": {
+    "value": 85,
+    "unit": "%",
+    "label": "OF YOUR BENEFIT CAN BE TAXED",
+    "compare": "Depends on your other income.",
+    "photo": "img/t30selloen_a50_tax_forms.jpg",
+    "at": 747.98,
+    "compareAt": 751.04,
+    "prefix": "",
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f40_tax_piles_blur.jpg"
+  },
+  {
+   "t": 752.9666666666667,
+   "dur": 4.466666666666667,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s21.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 757.4333333333333,
+   "dur": 3.6333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 47,
+   "lugar": "avatar"
+  },
+  {
+   "t": 761.0666666666667,
+   "dur": 2.8,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g16.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 763.8666666666667,
+   "dur": 2.8,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y06.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 766.6666666666666,
+   "dur": 4.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 48,
+   "lugar": "avatar"
+  },
+  {
+   "t": 771.5666666666667,
+   "dur": 8.566666666666666,
+   "kind": "componente",
+   "sec": "S10",
+   "comp": "YearCounter",
+   "props": {
+    "photo": "img/t30selloen_a52_april_rain.jpg",
+    "yearFrom": 2025,
+    "yearTo": 2028,
+    "unit": "",
+    "label": "EXTRA SENIOR DEDUCTION · 65 AND OLDER",
+    "from": 769.26,
+    "to": 770.7,
+    "marks": [],
+    "source": "Temporary deduction for seniors, tax years 2025-2028",
+    "linear": true
+   },
+   "bed": "img/t30selloen_f40_tax_piles_blur.jpg"
+  },
+  {
+   "t": 780.1333333333333,
+   "dur": 3,
+   "sec": "S10",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f40_tax_piles.jpg"
+  },
+  {
+   "t": 783.1333333333333,
+   "dur": 3.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 49,
+   "lugar": "avatar"
+  },
+  {
+   "t": 786.2333333333333,
+   "dur": 2.5,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_w06.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 788.7333333333333,
+   "dur": 2.9,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y21.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 791.6333333333333,
+   "dur": 3.4,
+   "sec": "S10",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30selloen_real/t30selloen_s25.mp4",
+   "rate": 1
+  },
+  {
+   "t": 795.0333333333333,
+   "dur": 6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 50,
+   "lugar": "avatar"
+  },
+  {
+   "t": 801.0333333333333,
+   "dur": 5.033333333333333,
+   "sec": "S10",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloen_a53_january_snow.jpg",
+   "real": false
+  },
+  {
+   "t": 802.42,
+   "dur": 3.64,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 9",
+    "part": "CHECK IT EVERY JANUARY"
+   },
+   "bed": "img/t30selloen_f41_letter_opener_blur.jpg"
+  },
+  {
+   "t": 806.0666666666667,
+   "dur": 4.533333333333333,
+   "sec": "S11",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f34_payment_stub.jpg"
+  },
+  {
+   "t": 810.6,
+   "dur": 5.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 51,
+   "lugar": "avatar"
+  },
+  {
+   "t": 815.8333333333334,
+   "dur": 3.3333333333333335,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y07.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 819.1666666666666,
+   "dur": 3.3,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_n03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 822.4666666666667,
+   "dur": 10.066666666666666,
+   "kind": "componente",
+   "sec": "S11",
+   "comp": "DocumentPage",
+   "props": {
+    "page": "img/t30selloen_doc_enero.png",
+    "aspect": 0.7727,
+    "chip": "THE JANUARY LETTER",
+    "source": "Rebuilt example · not a real notice",
+    "highlights": [
+     {
+      "x": 6,
+      "y": 20.82,
+      "w": 88,
+      "h": 4.55,
+      "at": 819.2
+     },
+     {
+      "x": 6,
+      "y": 27.64,
+      "w": 88,
+      "h": 4.55,
+      "at": 821.82
+     },
+     {
+      "x": 6,
+      "y": 41.27,
+      "w": 88,
+      "h": 4.55,
+      "at": 823.28
+     }
+    ],
+    "note": {
+     "text": "Compare to last year.",
+     "at": 826.1
+    }
+   },
+   "bed": "img/t30selloen_f41_letter_opener_blur.jpg"
+  },
+  {
+   "t": 832.5333333333333,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 52,
+   "lugar": "avatar"
+  },
+  {
+   "t": 835.8333333333334,
+   "dur": 2.933333333333333,
+   "sec": "S11",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30selloen_ag/t30selloen_a55_rental_office.mp4",
+   "real": false
+  },
+  {
+   "t": 838.7666666666667,
+   "dur": 3.433333333333333,
+   "sec": "S11",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f22_calculator.jpg"
+  },
+  {
+   "t": 842.2,
+   "dur": 3.433333333333333,
+   "sec": "S11",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g03.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 845.6333333333333,
+   "dur": 4.733333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 53,
+   "lugar": "avatar"
+  },
+  {
+   "t": 850.3666666666667,
+   "dur": 4.066666666666666,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_g11.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 854.4333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_n07.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 858.4666666666667,
+   "dur": 5.166666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 54,
+   "lugar": "avatar"
+  },
+  {
+   "t": 863.6333333333333,
+   "dur": 11.2,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "BigStat",
+   "props": {
+    "value": 1200,
+    "unit": "a year",
+    "prefix": "$",
+    "label": "$100 A MONTH NEVER CLAIMED",
+    "compare": "Nobody's stealing. Nobody adds it.",
+    "photo": "img/t30selloen_a58_coffee_letter.jpg",
+    "at": 864.24,
+    "compareAt": 873.44,
+    "tone": "red"
+   },
+   "bed": "img/t30selloen_f43_envelope_write_blur.jpg"
+  },
+  {
+   "t": 874.8333333333334,
+   "dur": 5.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 55,
+   "lugar": "avatar"
+  },
+  {
+   "t": 880.7666666666667,
+   "dur": 2.8333333333333335,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_n05.mp4",
+   "real": true,
+   "credit": "U.S. National Archives · Public domain · Wikimedia Commons"
+  },
+  {
+   "t": 882.94,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "HOMEWORK",
+    "part": "TWO THINGS THIS WEEK"
+   },
+   "bed": "img/t30selloen_f43_envelope_write_blur.jpg"
+  },
+  {
+   "t": 883.6,
+   "dur": 2.8333333333333335,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s13.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 886.4333333333333,
+   "dur": 2.8,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s28.mp4",
+   "real": true,
+   "credit": "Social Security Administration · The Social Security Story (1962) · Public domain · Internet Archive"
+  },
+  {
+   "t": 889.2333333333333,
+   "dur": 2.8,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y28.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive"
+  },
+  {
+   "t": 892.0333333333333,
+   "dur": 5.033333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 56,
+   "lugar": "avatar"
+  },
+  {
+   "t": 897.0666666666667,
+   "dur": 12.4,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Am I getting the highest benefit I'm eligible for, on any record?",
+    "who": "The one question to ask",
+    "source": "Write it on the back of an envelope",
+    "at": 897.66,
+    "until": 896.36,
+    "highlight": "highest benefit",
+    "portrait": "img/t30selloen_a59_envelope_back.jpg"
+   },
+   "bed": "img/t30selloen_f43_envelope_write_blur.jpg"
+  },
+  {
+   "t": 909.4666666666667,
+   "dur": 6,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 57,
+   "lugar": "avatar"
+  },
+  {
+   "t": 915.4666666666667,
+   "dur": 5.1,
+   "sec": "S12",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f45_hang_up.jpg"
+  },
+  {
+   "t": 920.5666666666667,
+   "dur": 5,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30selloen_a60_scam_phone.jpg",
+    "x": 1020,
+    "y": 730,
+    "r": 130,
+    "note": "a scam, every time",
+    "circleAt": 921.16,
+    "noteAt": 924.16,
+    "zoom": 1.3
+   },
+   "bed": "img/t30selloen_f43_envelope_write_blur.jpg"
+  },
+  {
+   "t": 925.5666666666667,
+   "dur": 2.9,
+   "kind": "componente",
+   "sec": "S12",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "03",
+    "label": "TELL ME IN THE COMMENTS",
+    "title": "WHAT YEAR WERE YOU BORN?",
+    "sub": "Did you know your real retirement age?",
+    "stamp": "",
+    "typeAt": 926.16,
+    "stampAt": 927.06,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30selloen_f43_envelope_write_blur.jpg"
+  },
+  {
+   "t": 928.4666666666667,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 58,
+   "lugar": "avatar"
+  },
+  {
+   "t": 931.4666666666667,
+   "dur": 3.5,
+   "sec": "S12",
+   "lugar": "frank",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y26.mp4",
+   "real": true,
+   "credit": "Federal Security Agency · Your Social Security (c. 1950) · Public domain · Internet Archive",
+   "rate": 1
+  },
+  {
+   "t": 934.9666666666667,
+   "dur": 3.9,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_y09.mp4",
+   "real": true,
+   "rate": 1
+  },
+  {
+   "t": 938.8666666666667,
+   "dur": 2.7,
+   "sec": "S12",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30selloen_real/t30selloen_s19.mp4",
+   "real": true,
+   "credit": "Social Security Administration · The Social Security Story (1962) · Public domain · Internet Archive"
+  },
+  {
+   "t": 941.5666666666667,
+   "dur": 5.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "win": 59,
+   "lugar": "avatar"
+  },
+  {
+   "t": 947.2666666666667,
+   "dur": 2.6,
+   "sec": "S12",
+   "lugar": "frank",
+   "kind": "imagen",
+   "asset": "img/t30selloen_f01_glass_window.jpg"
+  },
+  {
+   "t": 949.8666666666667,
+   "dur": 2.6333333333333333,
+   "sec": "S12",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30selloen_a62_office_glass.jpg"
+  }
+ ]
+}
