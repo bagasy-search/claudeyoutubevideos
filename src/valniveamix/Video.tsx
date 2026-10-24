@@ -132,7 +132,7 @@ const RAW: B[] = [
   C(496.0, "v_sabila"), C(497.6, "b_escurre", "push"), C(500.8, "b_filete", "zoom", ZC), W(503.8, "wide", "wide2", "light"),
   // el minuto justo
   C(514.0, "b_lavar"), C(514.9, "b_toalla", "push"), C(517.6, "l_humeda", "zoom", ZC), W(522.1, "skTop", "sk", "light"),
-  W(528.5, "skTop", "sk", "cut"), C(530.0, "l_toques", "zoom", ZC), W(536.4, "wide", "wide2", "flip"),
+  W(528.5, "skTop", "sk", "cut"), C(530.0, "l_toques", "zoom", ZC), W(536.4, "wide", "wide2", "light"),
   W(545.5, "skTop2", "skTop", "cut"), C(547.7, "b_mojarse", "push"), W(551.6, "bowl", "bowl2", "zoom"), C(555.0, "b_cucharon", "push"),
   C(563.0, "b_garbanzo"), C(567.4, "b_almohada", "light"),
   C(577.8, "b_ojo"), C(587.3, "b_hueso", "push"),
