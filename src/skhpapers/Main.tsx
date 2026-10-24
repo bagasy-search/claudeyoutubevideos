@@ -431,7 +431,7 @@ export const Main: React.FC = () => {
   O("ld2", <Order t={t} out={A.recap - 0.3} x={1380} y={480} items={[{ at: a("ask them to come and choose now"), n: "1", text: "come and choose · now" }, { at: a("one saturday with lunch"), n: "2", text: "one Saturday, with lunch" }, { at: a("take three things"), n: "3", text: "they take 3 things" }, { at: a("write them in your letter"), n: "4", text: "→ into your letter" }]} />);
 
   // ================= el repaso: las 11 en una hoja =================
-  O("rcp", <ElevenList t={t} out={A.close - 0.3} x={60} y={40} items={RECAP.map((r, i) => ({ at: r, text: ["Start with paper that has no story.", "Decide at the door (the genkan).", "Manuals go — except safety & warranty.", "Receipts live short · ask your accountant.", "One card per person.", "One thin blue folder: a map.", "Read once more · keep ten per person.", "Give the children their childhood now.", "Decide your own diaries.", "Someday: one shelf, one date.", "“Open this first”: which 10% to keep."][i] }))} />);
+  O("rcp", <ElevenList t={t} out={A.close - 0.3} x={1150} y={40} sc={0.82} items={RECAP.map((r, i) => ({ at: r, text: ["Start with paper that has no story.", "Decide at the door (the genkan).", "Manuals go — except safety & warranty.", "Receipts live short · ask your accountant.", "One card per person.", "One thin blue folder: a map.", "Read once more · keep ten per person.", "Give the children their childhood now.", "Decide your own diaries.", "Someday: one shelf, one date.", "“Open this first”: which 10% to keep."][i] }))} />);
   O("env2", <Hanko t={t} at={a("on the back of an envelope")} text="ON THE BACK OF AN ENVELOPE" x={1420} y={900} out={RECAP[0] + 2} size={46} rot={-3} />);
 
   // ================= cierre =================

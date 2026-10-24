@@ -221,9 +221,9 @@ export const Week: React.FC<{ t: number; out: number; days: { at: number; d: str
 };
 
 // ---------- el repaso: las 11 reglas en una hoja (cada línea se enciende) ----------
-export const ElevenList: React.FC<{ t: number; out: number; items: { at: number; text: string }[]; x?: number; y?: number; title?: string }> = ({ t, out, items, x = 60, y = 50, title = "THE 11 RULES" }) => {
+export const ElevenList: React.FC<{ t: number; out: number; items: { at: number; text: string }[]; x?: number; y?: number; title?: string; sc?: number }> = ({ t, out, items, x = 60, y = 50, title = "THE 11 RULES", sc = 1 }) => {
   const o = vis(t, items[0].at - 0.4, out); if (o <= 0.01) return null;
-  return <div style={{ position: "absolute", left: x, top: y, opacity: o, width: 860, ...PAPER, padding: "20px 34px 22px", borderTop: `14px solid ${COL.red}` }}>
+  return <div style={{ position: "absolute", left: x, top: y, opacity: o, width: 860, transform: `scale(${sc})`, transformOrigin: "0 0", ...PAPER, padding: "20px 34px 22px", borderTop: `14px solid ${COL.red}` }}>
     <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 26, letterSpacing: 6, color: COL.red, marginBottom: 4 }}>{title}</div>
     {items.map((it, i) => { const k = e(t, it.at, it.at + 0.3);
       return <div key={i} style={{ display: "flex", gap: 14, alignItems: "baseline", opacity: 0.16 + 0.84 * k, transform: `translateX(${(1 - k) * -30}px)` }}>
