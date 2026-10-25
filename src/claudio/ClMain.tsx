@@ -30,6 +30,8 @@ import { ClStoreLabel, ClMixLight, ClProtocol, ClLabelLens } from "./ClMezcla";
 import { ClFlushJet3D, ClRiseOrSpin, ClTankMark, ClTwoDays, ClStickWire } from "./ClDescarga";
 import { ClFilterTest, ClPotBoil, ClGrainWipe } from "./ClCampana";
 import { ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds } from "./ClColchon";
+import { ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide } from "./ClLavabo";
+import { manoCam } from "../kits/camara/CamaraMano";
 
 // Ken-Burns al azar POR PLANO (regla 1.ter): sentido 50/50, amplitud 3-9 % fotos / 1,5-4 % clips, foco 28-72 %, paneo atado a la escala.
 const useKB = (seed: number, clip: boolean) => {
@@ -77,6 +79,7 @@ const Placeholder: React.FC<{ avatar?: boolean }> = ({ avatar }) => (
 
 const COMP: Record<string, React.FC<any>> = {
   ClRimCutaway3D, ClBottle3D, ClMicroscope3D, ClHallway3D, ClChapter, ClCheck, ClBookPage, ClQRCard, ClDoDont, ClPins, ClColorCode, ClBeforeAfter, ClSplit, ClMeasureCup, ClTimer30, ClRimJets, ClNeverMix, ClBowl3D, ClValve3D, ClPumiceTest, ClPasteRecipe, ClNotebook, ClVideoRef, ClWasher3D, ClFilterFind, ClDoseCap, ClSmellTest, ClPores3D, ClSwab, ClSpores, ClFlashlight, ClWallLeak, ClHygrometer, ClTray3D, ClPasteCheck, ClCoating, ClTally, ClReceipt, ClCaulk3D, ClFilmWrap, ClTubMap, ClCaulkGun, ClMixCloud3D, ClStoreLabel, ClMixLight, ClProtocol, ClLabelLens, ClFlushJet3D, ClMattressLayers3D, ClDampSoaked, ClSprayMix, ClDryFan, ClThreeRounds, ClRiseOrSpin, ClTankMark, ClTwoDays, ClStickWire, ClFilterTest, ClPotBoil, ClGrainWipe,
+  ClFaucet3D, ClDropDry, ClAerator, ClMaterials, ClAcidBase, ClWrapGuide,
 };
 const OVC: Record<string, React.FC<any>> = { ClNameTag, ClStampOv, ClChip, ClAsk };
 
@@ -88,9 +91,29 @@ const Shot: React.FC<{ c: any }> = ({ c }) => {
   return <Placeholder />;
 };
 
+// cámara a mano virtual (vara 23-oct): balanceo lento CONTINUO con el reloj global (no se reinicia en cada plano); los componentes
+// no llevan (sus mundos 3D/2.5D ya se mueven). Transición: cada plano entra XF cuadros antes, sobre el anterior (disolución, empuje
+// o barrido), con su reloj corrido para que el avatar siga en sincro.
+const XF = 7;
+const Mano: React.FC<{ t0: number; children: React.ReactNode }> = ({ t0, children }) => {
+  const f = useCurrentFrame(); const { fps } = useVideoConfig(); const m = manoCam((t0 + f) / fps, 1, 7);
+  return (<AbsoluteFill style={{ overflow: "hidden", perspective: 1600 }}><AbsoluteFill style={{ transform: `translate3d(${m.x}px, ${m.y}px, 0) rotateX(${m.tilt}deg) rotateY(${m.pan}deg) rotateZ(${m.roll}deg) scale(1.05)` }}>{children}</AbsoluteFill></AbsoluteFill>);
+};
+const Enter: React.FC<{ x: number; seed: number; children: React.ReactNode }> = ({ x, seed, children }) => {
+  const f = useCurrentFrame();
+  if (x <= 0 || f >= x) return <>{children}</>;
+  const k = interpolate(f, [0, x], [0, 1], { extrapolateRight: "clamp" }), e = k * k * (3 - 2 * k), kind = Math.floor(rnd(seed + 17) * 3);
+  const st: React.CSSProperties = kind === 0 ? { opacity: e } : kind === 1 ? { opacity: e, scale: String(1.08 - 0.08 * e) } : { opacity: Math.min(1, e * 1.6), translate: `${(1 - e) * (rnd(seed) > 0.5 ? 14 : -14)}% 0`, filter: `blur(${(1 - e) * 10}px)` };
+  return <AbsoluteFill style={st}>{children}</AbsoluteFill>;
+};
+const lead = (TL: any[], i: number) => (i === 0 ? 0 : Math.min(XF, TL[i - 1].dur - 2, TL[i].from));
 export const ClMain: React.FC<{ TL: any[]; OV: any[]; AUDIO: string }> = ({ TL, OV, AUDIO }) => (
   <AbsoluteFill style={{ backgroundColor: CL.white }}>
-    {TL.map((c, i) => (<Sequence key={"b" + i} from={c.from} durationInFrames={c.dur}><Shot c={c} /></Sequence>))}
+    {TL.map((c, i) => {
+      const x = Math.max(0, lead(TL, i)); const cc = x && c.sf != null ? { ...c, sf: Math.max(0, c.sf - x) } : c;
+      const body = <Shot c={x && c.k === "av" && c.sf < x ? c : cc} />;
+      return (<Sequence key={"b" + i} from={c.from - x} durationInFrames={c.dur + x}><Enter x={x} seed={c.seed || i}>{c.k === "comp" ? body : <Mano t0={c.from - x}>{body}</Mano>}</Enter></Sequence>);
+    })}
     {OV.map((o, i) => { const C = OVC[o.name]; return C ? <Sequence key={"o" + i} from={o.from} durationInFrames={o.dur}><C {...o.props} /></Sequence> : null; })}
     <Audio src={staticFile(AUDIO)} />
   </AbsoluteFill>

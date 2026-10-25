@@ -1,0 +1,102 @@
+[
+ {
+  "name": "bd_sink0",
+  "q": "bathroom sink",
+  "scene": "Ordinary real footage: bathroom sink, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_faucet1",
+  "q": "bathroom faucet water",
+  "scene": "Ordinary real footage: bathroom faucet water, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hotelbath2",
+  "q": "hotel bathroom",
+  "scene": "Ordinary real footage: hotel bathroom, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_vinegar3",
+  "q": "vinegar cleaning",
+  "scene": "Ordinary real footage: vinegar cleaning, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_spray4",
+  "q": "spray bottle cleaning",
+  "scene": "Ordinary real footage: spray bottle cleaning, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_tap5",
+  "q": "water tap running",
+  "scene": "Ordinary real footage: water tap running, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_towel6",
+  "q": "bathroom towels",
+  "scene": "Ordinary real footage: bathroom towels, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_mirror7",
+  "q": "bathroom mirror",
+  "scene": "Ordinary real footage: bathroom mirror, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_drain8",
+  "q": "sink drain water",
+  "scene": "Ordinary real footage: sink drain water, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cleaning9",
+  "q": "cleaning bathroom",
+  "scene": "Ordinary real footage: cleaning bathroom, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_hall10",
+  "q": "hotel corridor",
+  "scene": "Ordinary real footage: hotel corridor, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_drop11",
+  "q": "water drop",
+  "scene": "Ordinary real footage: water drop, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_marble12",
+  "q": "marble texture",
+  "scene": "Ordinary real footage: marble texture, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_brush13",
+  "q": "toothbrush sink",
+  "scene": "Ordinary real footage: toothbrush sink, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_cloth14",
+  "q": "microfiber cloth",
+  "scene": "Ordinary real footage: microfiber cloth, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_kitchen15",
+  "q": "kitchen counter",
+  "scene": "Ordinary real footage: kitchen counter, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_window16",
+  "q": "bathroom window light",
+  "scene": "Ordinary real footage: bathroom window light, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_tiles17",
+  "q": "bathroom tiles",
+  "scene": "Ordinary real footage: bathroom tiles, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_soap18",
+  "q": "soap bubbles",
+  "scene": "Ordinary real footage: soap bubbles, real everyday look, no person looking at the camera."
+ },
+ {
+  "name": "bd_steam19",
+  "q": "warm water steam",
+  "scene": "Ordinary real footage: warm water steam, real everyday look, no person looking at the camera."
+ }
+]

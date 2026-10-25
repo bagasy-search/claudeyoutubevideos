@@ -1,0 +1,1115 @@
+[
+  {
+    "text": " 3.",
+    "startMs": 0,
+    "endMs": 660,
+    "timestampMs": 660,
+    "confidence": 1.0
+  },
+  {
+    "text": " Ponga",
+    "startMs": 660,
+    "endMs": 880,
+    "timestampMs": 880,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 880,
+    "endMs": 1000,
+    "timestampMs": 1000,
+    "confidence": 1.0
+  },
+  {
+    "text": " bolsita",
+    "startMs": 1000,
+    "endMs": 1460,
+    "timestampMs": 1460,
+    "confidence": 1.0
+  },
+  {
+    "text": " con",
+    "startMs": 1460,
+    "endMs": 1680,
+    "timestampMs": 1680,
+    "confidence": 1.0
+  },
+  {
+    "text": " vinagre",
+    "startMs": 1680,
+    "endMs": 2100,
+    "timestampMs": 2100,
+    "confidence": 1.0
+  },
+  {
+    "text": " en",
+    "startMs": 2100,
+    "endMs": 2240,
+    "timestampMs": 2240,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 2240,
+    "endMs": 2380,
+    "timestampMs": 2380,
+    "confidence": 1.0
+  },
+  {
+    "text": " boca",
+    "startMs": 2380,
+    "endMs": 2580,
+    "timestampMs": 2580,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 2580,
+    "endMs": 2760,
+    "timestampMs": 2760,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 2760,
+    "endMs": 2880,
+    "timestampMs": 2880,
+    "confidence": 1.0
+  },
+  {
+    "text": " llave",
+    "startMs": 2880,
+    "endMs": 3140,
+    "timestampMs": 3140,
+    "confidence": 1.0
+  },
+  {
+    "text": " atada",
+    "startMs": 3140,
+    "endMs": 3940,
+    "timestampMs": 3940,
+    "confidence": 1.0
+  },
+  {
+    "text": " con",
+    "startMs": 3940,
+    "endMs": 4140,
+    "timestampMs": 4140,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 4140,
+    "endMs": 4300,
+    "timestampMs": 4300,
+    "confidence": 1.0
+  },
+  {
+    "text": " liga.",
+    "startMs": 4300,
+    "endMs": 5060,
+    "timestampMs": 5060,
+    "confidence": 1.0
+  },
+  {
+    "text": " 4.",
+    "startMs": 5140,
+    "endMs": 5800,
+    "timestampMs": 5800,
+    "confidence": 1.0
+  },
+  {
+    "text": " Envuelva",
+    "startMs": 5800,
+    "endMs": 6240,
+    "timestampMs": 6240,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 6240,
+    "endMs": 6400,
+    "timestampMs": 6400,
+    "confidence": 1.0
+  },
+  {
+    "text": " base",
+    "startMs": 6400,
+    "endMs": 6640,
+    "timestampMs": 6640,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 6640,
+    "endMs": 6800,
+    "timestampMs": 6800,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 6800,
+    "endMs": 6940,
+    "timestampMs": 6940,
+    "confidence": 1.0
+  },
+  {
+    "text": " llave",
+    "startMs": 6940,
+    "endMs": 7180,
+    "timestampMs": 7180,
+    "confidence": 1.0
+  },
+  {
+    "text": " con",
+    "startMs": 7180,
+    "endMs": 7640,
+    "timestampMs": 7640,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 7640,
+    "endMs": 7820,
+    "timestampMs": 7820,
+    "confidence": 1.0
+  },
+  {
+    "text": " venda",
+    "startMs": 7820,
+    "endMs": 8060,
+    "timestampMs": 8060,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 8060,
+    "endMs": 8200,
+    "timestampMs": 8200,
+    "confidence": 1.0
+  },
+  {
+    "text": " papel",
+    "startMs": 8200,
+    "endMs": 8560,
+    "timestampMs": 8560,
+    "confidence": 1.0
+  },
+  {
+    "text": " empapada.",
+    "startMs": 8560,
+    "endMs": 9420,
+    "timestampMs": 9420,
+    "confidence": 1.0
+  },
+  {
+    "text": " 5.",
+    "startMs": 9420,
+    "endMs": 10080,
+    "timestampMs": 10080,
+    "confidence": 1.0
+  },
+  {
+    "text": " Ponga",
+    "startMs": 10080,
+    "endMs": 10460,
+    "timestampMs": 10460,
+    "confidence": 1.0
+  },
+  {
+    "text": " otra",
+    "startMs": 10460,
+    "endMs": 10880,
+    "timestampMs": 10880,
+    "confidence": 1.0
+  },
+  {
+    "text": " tira",
+    "startMs": 10880,
+    "endMs": 11140,
+    "timestampMs": 11140,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 11140,
+    "endMs": 11300,
+    "timestampMs": 11300,
+    "confidence": 1.0
+  },
+  {
+    "text": " papel",
+    "startMs": 11300,
+    "endMs": 11620,
+    "timestampMs": 11620,
+    "confidence": 1.0
+  },
+  {
+    "text": " sobre",
+    "startMs": 11620,
+    "endMs": 12220,
+    "timestampMs": 12220,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 12220,
+    "endMs": 12420,
+    "timestampMs": 12420,
+    "confidence": 1.0
+  },
+  {
+    "text": " aro",
+    "startMs": 12420,
+    "endMs": 12520,
+    "timestampMs": 12520,
+    "confidence": 1.0
+  },
+  {
+    "text": " del",
+    "startMs": 12520,
+    "endMs": 12740,
+    "timestampMs": 12740,
+    "confidence": 1.0
+  },
+  {
+    "text": " desagüe.",
+    "startMs": 12740,
+    "endMs": 13200,
+    "timestampMs": 13200,
+    "confidence": 1.0
+  },
+  {
+    "text": " 6.",
+    "startMs": 13600,
+    "endMs": 14240,
+    "timestampMs": 14240,
+    "confidence": 1.0
+  },
+  {
+    "text": " Rocíe",
+    "startMs": 14240,
+    "endMs": 14740,
+    "timestampMs": 14740,
+    "confidence": 1.0
+  },
+  {
+    "text": " todo",
+    "startMs": 14740,
+    "endMs": 14940,
+    "timestampMs": 14940,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 14940,
+    "endMs": 15100,
+    "timestampMs": 15100,
+    "confidence": 1.0
+  },
+  {
+    "text": " resto",
+    "startMs": 15100,
+    "endMs": 15360,
+    "timestampMs": 15360,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 15360,
+    "endMs": 15520,
+    "timestampMs": 15520,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 15520,
+    "endMs": 15640,
+    "timestampMs": 15640,
+    "confidence": 1.0
+  },
+  {
+    "text": " porcelana",
+    "startMs": 15640,
+    "endMs": 16180,
+    "timestampMs": 16180,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 16180,
+    "endMs": 16600,
+    "timestampMs": 16600,
+    "confidence": 1.0
+  },
+  {
+    "text": " ponga",
+    "startMs": 16600,
+    "endMs": 16960,
+    "timestampMs": 16960,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 16960,
+    "endMs": 17100,
+    "timestampMs": 17100,
+    "confidence": 1.0
+  },
+  {
+    "text": " alarma",
+    "startMs": 17100,
+    "endMs": 17420,
+    "timestampMs": 17420,
+    "confidence": 1.0
+  },
+  {
+    "text": " cada",
+    "startMs": 17420,
+    "endMs": 17720,
+    "timestampMs": 17720,
+    "confidence": 1.0
+  },
+  {
+    "text": " 5",
+    "startMs": 17720,
+    "endMs": 18040,
+    "timestampMs": 18040,
+    "confidence": 1.0
+  },
+  {
+    "text": " minutos.",
+    "startMs": 18040,
+    "endMs": 18680,
+    "timestampMs": 18680,
+    "confidence": 1.0
+  },
+  {
+    "text": " 7.",
+    "startMs": 19040,
+    "endMs": 19620,
+    "timestampMs": 19620,
+    "confidence": 1.0
+  },
+  {
+    "text": " Con",
+    "startMs": 19620,
+    "endMs": 19760,
+    "timestampMs": 19760,
+    "confidence": 1.0
+  },
+  {
+    "text": " cada",
+    "startMs": 19760,
+    "endMs": 20040,
+    "timestampMs": 20040,
+    "confidence": 1.0
+  },
+  {
+    "text": " alarma,",
+    "startMs": 20040,
+    "endMs": 20880,
+    "timestampMs": 20880,
+    "confidence": 1.0
+  },
+  {
+    "text": " rocíe",
+    "startMs": 20880,
+    "endMs": 21220,
+    "timestampMs": 21220,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 21220,
+    "endMs": 21300,
+    "timestampMs": 21300,
+    "confidence": 1.0
+  },
+  {
+    "text": " porcelana",
+    "startMs": 21300,
+    "endMs": 21860,
+    "timestampMs": 21860,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 21860,
+    "endMs": 21980,
+    "timestampMs": 21980,
+    "confidence": 1.0
+  },
+  {
+    "text": " las",
+    "startMs": 21980,
+    "endMs": 22140,
+    "timestampMs": 22140,
+    "confidence": 1.0
+  },
+  {
+    "text": " vendas.",
+    "startMs": 22140,
+    "endMs": 22840,
+    "timestampMs": 22840,
+    "confidence": 1.0
+  },
+  {
+    "text": " Mientras",
+    "startMs": 22040,
+    "endMs": 23120,
+    "timestampMs": 23120,
+    "confidence": 1.0
+  },
+  {
+    "text": " tanto,",
+    "startMs": 23120,
+    "endMs": 24160,
+    "timestampMs": 24160,
+    "confidence": 1.0
+  },
+  {
+    "text": " limpie",
+    "startMs": 24160,
+    "endMs": 24200,
+    "timestampMs": 24200,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 24200,
+    "endMs": 24320,
+    "timestampMs": 24320,
+    "confidence": 1.0
+  },
+  {
+    "text": " espejo.",
+    "startMs": 24320,
+    "endMs": 24740,
+    "timestampMs": 24740,
+    "confidence": 1.0
+  },
+  {
+    "text": " 8.",
+    "startMs": 25140,
+    "endMs": 25740,
+    "timestampMs": 25740,
+    "confidence": 1.0
+  },
+  {
+    "text": " A",
+    "startMs": 25740,
+    "endMs": 25880,
+    "timestampMs": 25880,
+    "confidence": 1.0
+  },
+  {
+    "text": " los",
+    "startMs": 25880,
+    "endMs": 26020,
+    "timestampMs": 26020,
+    "confidence": 1.0
+  },
+  {
+    "text": " 15",
+    "startMs": 26020,
+    "endMs": 26360,
+    "timestampMs": 26360,
+    "confidence": 1.0
+  },
+  {
+    "text": " minutos,",
+    "startMs": 26360,
+    "endMs": 27280,
+    "timestampMs": 27280,
+    "confidence": 1.0
+  },
+  {
+    "text": " frote",
+    "startMs": 27280,
+    "endMs": 27500,
+    "timestampMs": 27500,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 27500,
+    "endMs": 27660,
+    "timestampMs": 27660,
+    "confidence": 1.0
+  },
+  {
+    "text": " porcelana",
+    "startMs": 27660,
+    "endMs": 28220,
+    "timestampMs": 28220,
+    "confidence": 1.0
+  },
+  {
+    "text": " con",
+    "startMs": 28220,
+    "endMs": 28480,
+    "timestampMs": 28480,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 28480,
+    "endMs": 28700,
+    "timestampMs": 28700,
+    "confidence": 1.0
+  },
+  {
+    "text": " lado",
+    "startMs": 28700,
+    "endMs": 28900,
+    "timestampMs": 28900,
+    "confidence": 1.0
+  },
+  {
+    "text": " suave",
+    "startMs": 28900,
+    "endMs": 29240,
+    "timestampMs": 29240,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 29240,
+    "endMs": 29420,
+    "timestampMs": 29420,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 29420,
+    "endMs": 29520,
+    "timestampMs": 29520,
+    "confidence": 1.0
+  },
+  {
+    "text": " esponja",
+    "startMs": 29520,
+    "endMs": 29960,
+    "timestampMs": 29960,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 29960,
+    "endMs": 30400,
+    "timestampMs": 30400,
+    "confidence": 1.0
+  },
+  {
+    "text": " enjuague.",
+    "startMs": 30400,
+    "endMs": 30900,
+    "timestampMs": 30900,
+    "confidence": 1.0
+  },
+  {
+    "text": " 9.",
+    "startMs": 31260,
+    "endMs": 31740,
+    "timestampMs": 31740,
+    "confidence": 1.0
+  },
+  {
+    "text": " A",
+    "startMs": 31740,
+    "endMs": 32080,
+    "timestampMs": 32080,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 32080,
+    "endMs": 32200,
+    "timestampMs": 32200,
+    "confidence": 1.0
+  },
+  {
+    "text": " hora,",
+    "startMs": 32200,
+    "endMs": 32820,
+    "timestampMs": 32820,
+    "confidence": 1.0
+  },
+  {
+    "text": " saque",
+    "startMs": 32820,
+    "endMs": 33000,
+    "timestampMs": 33000,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 33000,
+    "endMs": 33200,
+    "timestampMs": 33200,
+    "confidence": 1.0
+  },
+  {
+    "text": " bolsita",
+    "startMs": 33200,
+    "endMs": 33580,
+    "timestampMs": 33580,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 33580,
+    "endMs": 33700,
+    "timestampMs": 33700,
+    "confidence": 1.0
+  },
+  {
+    "text": " las",
+    "startMs": 33700,
+    "endMs": 33840,
+    "timestampMs": 33840,
+    "confidence": 1.0
+  },
+  {
+    "text": " vendas,",
+    "startMs": 33840,
+    "endMs": 34580,
+    "timestampMs": 34580,
+    "confidence": 1.0
+  },
+  {
+    "text": " cepillo",
+    "startMs": 34580,
+    "endMs": 34960,
+    "timestampMs": 34960,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 34960,
+    "endMs": 35120,
+    "timestampMs": 35120,
+    "confidence": 1.0
+  },
+  {
+    "text": " dientes,",
+    "startMs": 35120,
+    "endMs": 35880,
+    "timestampMs": 35880,
+    "confidence": 1.0
+  },
+  {
+    "text": " palillo",
+    "startMs": 35880,
+    "endMs": 36260,
+    "timestampMs": 36260,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 36260,
+    "endMs": 36660,
+    "timestampMs": 36660,
+    "confidence": 1.0
+  },
+  {
+    "text": " enjuague.",
+    "startMs": 36660,
+    "endMs": 37580,
+    "timestampMs": 37580,
+    "confidence": 1.0
+  },
+  {
+    "text": " 10.",
+    "startMs": 37620,
+    "endMs": 38060,
+    "timestampMs": 38060,
+    "confidence": 1.0
+  },
+  {
+    "text": " Si",
+    "startMs": 38060,
+    "endMs": 38360,
+    "timestampMs": 38360,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 38360,
+    "endMs": 38540,
+    "timestampMs": 38540,
+    "confidence": 1.0
+  },
+  {
+    "text": " chorro",
+    "startMs": 38540,
+    "endMs": 38840,
+    "timestampMs": 38840,
+    "confidence": 1.0
+  },
+  {
+    "text": " sigue",
+    "startMs": 38840,
+    "endMs": 39100,
+    "timestampMs": 39100,
+    "confidence": 1.0
+  },
+  {
+    "text": " torcido,",
+    "startMs": 39100,
+    "endMs": 40140,
+    "timestampMs": 40140,
+    "confidence": 1.0
+  },
+  {
+    "text": " desenrosque",
+    "startMs": 40140,
+    "endMs": 40600,
+    "timestampMs": 40600,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 40600,
+    "endMs": 40760,
+    "timestampMs": 40760,
+    "confidence": 1.0
+  },
+  {
+    "text": " aireador",
+    "startMs": 40760,
+    "endMs": 41160,
+    "timestampMs": 41160,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 41160,
+    "endMs": 41660,
+    "timestampMs": 41660,
+    "confidence": 1.0
+  },
+  {
+    "text": " déjelo",
+    "startMs": 41660,
+    "endMs": 41980,
+    "timestampMs": 41980,
+    "confidence": 1.0
+  },
+  {
+    "text": " media",
+    "startMs": 41980,
+    "endMs": 42340,
+    "timestampMs": 42340,
+    "confidence": 1.0
+  },
+  {
+    "text": " hora",
+    "startMs": 42340,
+    "endMs": 42540,
+    "timestampMs": 42540,
+    "confidence": 1.0
+  },
+  {
+    "text": " en",
+    "startMs": 42540,
+    "endMs": 42660,
+    "timestampMs": 42660,
+    "confidence": 1.0
+  },
+  {
+    "text": " vinagre.",
+    "startMs": 42660,
+    "endMs": 43560,
+    "timestampMs": 43560,
+    "confidence": 1.0
+  },
+  {
+    "text": " 11.",
+    "startMs": 43520,
+    "endMs": 44160,
+    "timestampMs": 44160,
+    "confidence": 1.0
+  },
+  {
+    "text": " Enjuague",
+    "startMs": 44160,
+    "endMs": 44640,
+    "timestampMs": 44640,
+    "confidence": 1.0
+  },
+  {
+    "text": " todo",
+    "startMs": 44640,
+    "endMs": 44960,
+    "timestampMs": 44960,
+    "confidence": 1.0
+  },
+  {
+    "text": " con",
+    "startMs": 44960,
+    "endMs": 45140,
+    "timestampMs": 45140,
+    "confidence": 1.0
+  },
+  {
+    "text": " mucha",
+    "startMs": 45140,
+    "endMs": 45500,
+    "timestampMs": 45500,
+    "confidence": 1.0
+  },
+  {
+    "text": " agua",
+    "startMs": 45500,
+    "endMs": 45760,
+    "timestampMs": 45760,
+    "confidence": 1.0
+  },
+  {
+    "text": " tibia.",
+    "startMs": 45760,
+    "endMs": 46140,
+    "timestampMs": 46140,
+    "confidence": 1.0
+  },
+  {
+    "text": " 12.",
+    "startMs": 46540,
+    "endMs": 47220,
+    "timestampMs": 47220,
+    "confidence": 1.0
+  },
+  {
+    "text": " La",
+    "startMs": 47220,
+    "endMs": 47320,
+    "timestampMs": 47320,
+    "confidence": 1.0
+  },
+  {
+    "text": " más",
+    "startMs": 47320,
+    "endMs": 47560,
+    "timestampMs": 47560,
+    "confidence": 1.0
+  },
+  {
+    "text": " importante,",
+    "startMs": 47560,
+    "endMs": 48740,
+    "timestampMs": 48740,
+    "confidence": 1.0
+  },
+  {
+    "text": " seque",
+    "startMs": 48740,
+    "endMs": 48900,
+    "timestampMs": 48900,
+    "confidence": 1.0
+  },
+  {
+    "text": " todo",
+    "startMs": 48900,
+    "endMs": 49200,
+    "timestampMs": 49200,
+    "confidence": 1.0
+  },
+  {
+    "text": " con",
+    "startMs": 49200,
+    "endMs": 49400,
+    "timestampMs": 49400,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 49400,
+    "endMs": 49560,
+    "timestampMs": 49560,
+    "confidence": 1.0
+  },
+  {
+    "text": " paño",
+    "startMs": 49560,
+    "endMs": 49780,
+    "timestampMs": 49780,
+    "confidence": 1.0
+  },
+  {
+    "text": " de",
+    "startMs": 49780,
+    "endMs": 49980,
+    "timestampMs": 49980,
+    "confidence": 1.0
+  },
+  {
+    "text": " microfibra",
+    "startMs": 49980,
+    "endMs": 50540,
+    "timestampMs": 50540,
+    "confidence": 1.0
+  },
+  {
+    "text": " hasta",
+    "startMs": 50540,
+    "endMs": 51100,
+    "timestampMs": 51100,
+    "confidence": 1.0
+  },
+  {
+    "text": " que",
+    "startMs": 51100,
+    "endMs": 51360,
+    "timestampMs": 51360,
+    "confidence": 1.0
+  },
+  {
+    "text": " brille.",
+    "startMs": 51360,
+    "endMs": 51620,
+    "timestampMs": 51620,
+    "confidence": 1.0
+  },
+  {
+    "text": " una",
+    "startMs": 52060,
+    "endMs": 52220,
+    "timestampMs": 52220,
+    "confidence": 1.0
+  },
+  {
+    "text": " hora",
+    "startMs": 52220,
+    "endMs": 52440,
+    "timestampMs": 52440,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 52440,
+    "endMs": 52580,
+    "timestampMs": 52580,
+    "confidence": 1.0
+  },
+  {
+    "text": " media",
+    "startMs": 52580,
+    "endMs": 52740,
+    "timestampMs": 52740,
+    "confidence": 1.0
+  },
+  {
+    "text": " en",
+    "startMs": 52740,
+    "endMs": 52860,
+    "timestampMs": 52860,
+    "confidence": 1.0
+  },
+  {
+    "text": " total",
+    "startMs": 52860,
+    "endMs": 53200,
+    "timestampMs": 53200,
+    "confidence": 1.0
+  },
+  {
+    "text": " la",
+    "startMs": 53200,
+    "endMs": 53640,
+    "timestampMs": 53640,
+    "confidence": 1.0
+  },
+  {
+    "text": " mayor",
+    "startMs": 53640,
+    "endMs": 53960,
+    "timestampMs": 53960,
+    "confidence": 1.0
+  },
+  {
+    "text": " parte",
+    "startMs": 53960,
+    "endMs": 54340,
+    "timestampMs": 54340,
+    "confidence": 1.0
+  },
+  {
+    "text": " esperando",
+    "startMs": 54340,
+    "endMs": 54860,
+    "timestampMs": 54860,
+    "confidence": 1.0
+  },
+  {
+    "text": " y",
+    "startMs": 54860,
+    "endMs": 55460,
+    "timestampMs": 55460,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 55460,
+    "endMs": 55580,
+    "timestampMs": 55580,
+    "confidence": 1.0
+  },
+  {
+    "text": " lavabo",
+    "startMs": 55580,
+    "endMs": 55940,
+    "timestampMs": 55940,
+    "confidence": 1.0
+  },
+  {
+    "text": " queda",
+    "startMs": 55940,
+    "endMs": 56440,
+    "timestampMs": 56440,
+    "confidence": 1.0
+  },
+  {
+    "text": " como",
+    "startMs": 56440,
+    "endMs": 56700,
+    "timestampMs": 56700,
+    "confidence": 1.0
+  },
+  {
+    "text": " el",
+    "startMs": 56700,
+    "endMs": 56860,
+    "timestampMs": 56860,
+    "confidence": 1.0
+  },
+  {
+    "text": " día",
+    "startMs": 56860,
+    "endMs": 57000,
+    "timestampMs": 57000,
+    "confidence": 1.0
+  },
+  {
+    "text": " que",
+    "startMs": 57000,
+    "endMs": 57160,
+    "timestampMs": 57160,
+    "confidence": 1.0
+  },
+  {
+    "text": " lo",
+    "startMs": 57160,
+    "endMs": 57300,
+    "timestampMs": 57300,
+    "confidence": 1.0
+  },
+  {
+    "text": " instalaron",
+    "startMs": 57300,
+    "endMs": 57820,
+    "timestampMs": 57820,
+    "confidence": 1.0
+  }
+]
