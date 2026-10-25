@@ -6,6 +6,7 @@ import { C, ent, prog, Escena, Rayos, Particulas, Emote, cabeza, Pergamino, Zzz,
 import { Mundo, camEn, Key, PastoAlto, SAJON, SENOR, VIK, barbaDe, gy } from "./mundo";
 import { G, Ch, Ruta, Globo, Cuenta, Sello, Flash, LanzaMano } from "./comun";
 import { Corona, Drakkar } from "./vik";
+import { Portada } from "./Portada";
 
 // 0-51,6 s · EL GANCHO. Todo pasa en el mismo mundo (la noche del Trent): la proa del dragón contra la luna,
 // vos tirado en el pasto, la cámara que se aleja y descubre 2.000 vikingos durmiendo, tu señor que susurra,
@@ -40,11 +41,13 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
   return (
     <AbsoluteFill>
       {/* 0 · 3 de la mañana: la proa del dragón recortada contra la luna */}
-      <Escena t={t} t0={0} t1={1.6} zoom={0} entra="corte">
-        <Mundo t={t} cam={cam} luna={[1240, 430, 300]} />
+      {t < 1.7 && (
+      <AbsoluteFill>
+        <Portada t={t} />
         <G t={t} t0={0.12} text="3:00 AM" x={470} y={190} size={170} color={C.ambar} />
         <Ch t={t} t0={0.75} text="THE RIVER TRENT · 873" color={C.violeta} x={120} y={960} size={50} />
-      </Escena>
+      </AbsoluteFill>
+      )}
       {/* 1 · vos, boca abajo en el pasto mojado, con una lanza de ayer */}
       <Escena t={t} t0={1.6} t1={6.3} zoom={0} entra="barrido" golpes={[4.9]}>
         <Mundo t={t} cam={cam} yo={<>{<YoHill t={t} />}{pasto}</>} />
