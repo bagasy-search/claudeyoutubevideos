@@ -82,7 +82,7 @@ def PQ(ph, q):
     if a is not None: PADQ.append({"a": a, "q": q})
 
 # ---------------- fotos: cada una en SU frase (shots.json); RE = frase nueva si la original cae bajo una pieza ----------------
-RE = {'h02': 'Coach thought cash was power', 'f09': 'And Coach was happy, because the', 'h12': "it. Because I've seen deposits become", 'h24': 'bank. And only when the price', 'f44': 'from Pinecrest. March two thousand thirteen.', 'h43': 'in the box.'}
+RE = {'h02': 'Coach thought cash was power', 'f09': 'And Coach was happy, because the', 'h12': "it. Because I've seen deposits become", 'h24': 'bank. And only when the price', 'f44': 'from Pinecrest. March two thousand thirteen.'}
 for sh in SHOTS:
     a = at(RE.get(sh["name"], sh["at"]))
     if a is not None: BEATS.append(dict(a=a, base="img:" + sh["name"], tr=None))
@@ -238,6 +238,8 @@ O("I was the finance manager at Bird Road", "guia", 8.5, pag="tasa", until="in a
 O("to stay under the ten thousand", "guia", 8.5, pag="lapiz_rojo")
 # fin CTA
 # ======================= ARMADO (igual para todos los videos) =======================
+for o in OVS:   # cierre hasta el final del video
+    if o["k"] == "end" and END - o["b"] < 6: o["b"] = round(END, 2)
 BEATS.sort(key=lambda b: b["a"])
 used = set()
 for b in BEATS:
