@@ -1,0 +1,2747 @@
+{
+"end": 2238.283,
+"voz": 2237.283,
+"par": [
+{
+"i": 0,
+"tag": "HOOK",
+"t": 0.09
+},
+{
+"i": 1,
+"tag": "HOOK",
+"t": 42.02
+},
+{
+"i": 2,
+"tag": "HOOK",
+"t": 67.42
+},
+{
+"i": 3,
+"tag": "HOOK",
+"t": 99.03
+},
+{
+"i": 4,
+"tag": "PROMISE",
+"t": 125.98
+},
+{
+"i": 5,
+"tag": "PROMISE",
+"t": 165.42
+},
+{
+"i": 6,
+"tag": "INTRO",
+"t": 178.82
+},
+{
+"i": 7,
+"tag": "CTA",
+"t": 218.18
+},
+{
+"i": 8,
+"tag": "S1",
+"t": 266.74
+},
+{
+"i": 9,
+"tag": "S1",
+"t": 305.28
+},
+{
+"i": 10,
+"tag": "S1",
+"t": 341.1
+},
+{
+"i": 11,
+"tag": "S1",
+"t": 380.14
+},
+{
+"i": 12,
+"tag": "S1",
+"t": 407.16
+},
+{
+"i": 13,
+"tag": "S2",
+"t": 438.32
+},
+{
+"i": 14,
+"tag": "S2",
+"t": 473.76
+},
+{
+"i": 15,
+"tag": "S2",
+"t": 506.82
+},
+{
+"i": 16,
+"tag": "S2",
+"t": 551.88
+},
+{
+"i": 17,
+"tag": "S2",
+"t": 578.421
+},
+{
+"i": 18,
+"tag": "REGANCHO",
+"t": 604.201
+},
+{
+"i": 19,
+"tag": "S3",
+"t": 619.941
+},
+{
+"i": 20,
+"tag": "S3",
+"t": 655.561
+},
+{
+"i": 21,
+"tag": "S3",
+"t": 690.081
+},
+{
+"i": 22,
+"tag": "S3",
+"t": 718.281
+},
+{
+"i": 23,
+"tag": "S3",
+"t": 754.621
+},
+{
+"i": 24,
+"tag": "S4",
+"t": 779.901
+},
+{
+"i": 25,
+"tag": "S4",
+"t": 808.001
+},
+{
+"i": 26,
+"tag": "S4",
+"t": 837.481
+},
+{
+"i": 27,
+"tag": "S4",
+"t": 875.361
+},
+{
+"i": 28,
+"tag": "S4",
+"t": 911.021
+},
+{
+"i": 29,
+"tag": "REGANCHO",
+"t": 945.141
+},
+{
+"i": 30,
+"tag": "S5",
+"t": 960.041
+},
+{
+"i": 31,
+"tag": "S5",
+"t": 994.001
+},
+{
+"i": 32,
+"tag": "S5",
+"t": 1026.241
+},
+{
+"i": 33,
+"tag": "S5",
+"t": 1062.461
+},
+{
+"i": 34,
+"tag": "S6",
+"t": 1089.021
+},
+{
+"i": 35,
+"tag": "S6",
+"t": 1120.021
+},
+{
+"i": 36,
+"tag": "S6",
+"t": 1158.381
+},
+{
+"i": 37,
+"tag": "S6",
+"t": 1194.461
+},
+{
+"i": 38,
+"tag": "S6",
+"t": 1221.501
+},
+{
+"i": 39,
+"tag": "REGANCHO",
+"t": 1243.601
+},
+{
+"i": 40,
+"tag": "CTA",
+"t": 1261.841
+},
+{
+"i": 41,
+"tag": "S7",
+"t": 1319.041
+},
+{
+"i": 42,
+"tag": "S7",
+"t": 1355.521
+},
+{
+"i": 43,
+"tag": "S7",
+"t": 1388.501
+},
+{
+"i": 44,
+"tag": "S7",
+"t": 1432.521
+},
+{
+"i": 45,
+"tag": "S7",
+"t": 1470.181
+},
+{
+"i": 46,
+"tag": "ERRORES",
+"t": 1498.621
+},
+{
+"i": 47,
+"tag": "ERRORES",
+"t": 1519.981
+},
+{
+"i": 48,
+"tag": "ERRORES",
+"t": 1544.881
+},
+{
+"i": 49,
+"tag": "ERRORES",
+"t": 1571.201
+},
+{
+"i": 50,
+"tag": "ERRORES",
+"t": 1593.801
+},
+{
+"i": 51,
+"tag": "ERRORES",
+"t": 1618.741
+},
+{
+"i": 52,
+"tag": "REGANCHO",
+"t": 1640.321
+},
+{
+"i": 53,
+"tag": "RECETA",
+"t": 1659.881
+},
+{
+"i": 54,
+"tag": "RECETA",
+"t": 1703.262
+},
+{
+"i": 55,
+"tag": "RECETA",
+"t": 1738.802
+},
+{
+"i": 56,
+"tag": "RECETA",
+"t": 1792.802
+},
+{
+"i": 57,
+"tag": "PREGUNTAS",
+"t": 1817.482
+},
+{
+"i": 58,
+"tag": "PREGUNTAS",
+"t": 1837.242
+},
+{
+"i": 59,
+"tag": "PREGUNTAS",
+"t": 1875.802
+},
+{
+"i": 60,
+"tag": "PREGUNTAS",
+"t": 1906.742
+},
+{
+"i": 61,
+"tag": "PREGUNTAS",
+"t": 1942.582
+},
+{
+"i": 62,
+"tag": "PREGUNTAS",
+"t": 1976.702
+},
+{
+"i": 63,
+"tag": "SOBRAS",
+"t": 2006.982
+},
+{
+"i": 64,
+"tag": "SOBRAS",
+"t": 2023.302
+},
+{
+"i": 65,
+"tag": "SOBRAS",
+"t": 2052.702
+},
+{
+"i": 66,
+"tag": "REGION",
+"t": 2077.362
+},
+{
+"i": 67,
+"tag": "REGION",
+"t": 2119.342
+},
+{
+"i": 68,
+"tag": "CIERRE",
+"t": 2145.282
+},
+{
+"i": 69,
+"tag": "CIERRE",
+"t": 2187.762
+},
+{
+"i": 70,
+"tag": "CIERRE",
+"t": 2208.222
+}
+],
+"parts": [
+{
+"a": 4.572,
+"b": 9.91,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 9.91,
+"b": 17.602,
+"c": "n_orilla_parrilla"
+},
+{
+"a": 22.733,
+"b": 25.333,
+"c": "f_corta_tabla"
+},
+{
+"a": 25.333,
+"b": 29.933,
+"c": "n_jugo_tabla"
+},
+{
+"a": 29.933,
+"b": 39.968,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 44.546,
+"b": 49.146,
+"c": "n_compadres_patio"
+},
+{
+"a": 49.146,
+"b": 59.051,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 64.334,
+"b": 68.934,
+"c": "n_de_un_jalon"
+},
+{
+"a": 68.934,
+"b": 73.534,
+"c": "n_tenedor_pica"
+},
+{
+"a": 73.534,
+"b": 77.334,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 83.084,
+"b": 86.25,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 86.25,
+"b": 90.85,
+"c": "n_mastica"
+},
+{
+"a": 90.85,
+"b": 98.92,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 104.254,
+"b": 116.573,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 120.744,
+"b": 125.344,
+"c": "n_taqueria_cara"
+},
+{
+"a": 125.344,
+"b": 127.87,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 127.87,
+"b": 132.47,
+"c": "n_jarritos"
+},
+{
+"a": 132.47,
+"b": 135.123,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 140.068,
+"b": 155.657,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 160.027,
+"b": 173.309,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 178.541,
+"b": 183.141,
+"c": "f_presenta"
+},
+{
+"a": 183.141,
+"b": 195.805,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 199.924,
+"b": 213.55,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 266.74,
+"b": 268.489,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 272.181,
+"b": 276.781,
+"c": "n_carniceria_65"
+},
+{
+"a": 276.781,
+"b": 287.843,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 291.662,
+"b": 294.57,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 294.57,
+"b": 299.17,
+"c": "n_pieza_entera"
+},
+{
+"a": 299.17,
+"b": 302.05,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 302.05,
+"b": 307.688,
+"c": "n_patio_lleno"
+},
+{
+"a": 311.837,
+"b": 316.25,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 316.25,
+"b": 320.85,
+"c": "n_marmoleo"
+},
+{
+"a": 320.85,
+"b": 324.0,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 328.537,
+"b": 344.737,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 349.072,
+"b": 356.35,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 356.35,
+"b": 360.95,
+"c": "f_carnicero"
+},
+{
+"a": 360.95,
+"b": 363.504,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 368.049,
+"b": 370.649,
+"c": "n_bistec_delgado"
+},
+{
+"a": 370.649,
+"b": 375.249,
+"c": "n_contra_fibra"
+},
+{
+"a": 375.249,
+"b": 380.884,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 386.313,
+"b": 391.15,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 391.15,
+"b": 395.75,
+"c": "n_arrachera_precio"
+},
+{
+"a": 395.75,
+"b": 401.684,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 406.939,
+"b": 414.61,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 414.61,
+"b": 421.214,
+"c": "n_bola_seca"
+},
+{
+"a": 424.49,
+"b": 435.23,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 435.23,
+"b": 439.635,
+"c": "f_ver_cortes"
+},
+{
+"a": 443.355,
+"b": 449.97,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 449.97,
+"b": 454.57,
+"c": "n_naranjo"
+},
+{
+"a": 454.57,
+"b": 459.085,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 462.452,
+"b": 467.052,
+"c": "n_abuela_exprime"
+},
+{
+"a": 467.052,
+"b": 471.652,
+"c": "n_tina_capas"
+},
+{
+"a": 471.652,
+"b": 475.21,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 479.429,
+"b": 491.35,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 491.35,
+"b": 495.946,
+"c": "n_ceviche"
+},
+{
+"a": 499.023,
+"b": 513.423,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 518.563,
+"b": 531.219,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 536.873,
+"b": 552.224,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 557.845,
+"b": 563.831,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 563.831,
+"b": 568.431,
+"c": "n_cerveza_medio"
+},
+{
+"a": 568.431,
+"b": 572.821,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 577.123,
+"b": 585.871,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 585.871,
+"b": 592.213,
+"c": "n_blanca_aguada"
+},
+{
+"a": 596.718,
+"b": 601.171,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 601.171,
+"b": 605.771,
+"c": "f_escurre"
+},
+{
+"a": 605.771,
+"b": 610.41,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 615.476,
+"b": 627.795,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 632.813,
+"b": 643.411,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 643.411,
+"b": 649.085,
+"c": "n_hermosillo"
+},
+{
+"a": 655.082,
+"b": 659.682,
+"c": "n_don_chuy"
+},
+{
+"a": 659.682,
+"b": 670.664,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 673.984,
+"b": 678.584,
+"c": "n_bote_llora"
+},
+{
+"a": 678.584,
+"b": 687.933,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 691.818,
+"b": 707.418,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 710.905,
+"b": 725.425,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 729.923,
+"b": 734.411,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 734.411,
+"b": 739.011,
+"c": "f_sal_asador"
+},
+{
+"a": 739.011,
+"b": 742.631,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 742.631,
+"b": 745.352,
+"c": "n_sal_cristales"
+},
+{
+"a": 749.353,
+"b": 764.353,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 768.986,
+"b": 773.586,
+"c": "n_platito_sal"
+},
+{
+"a": 773.586,
+"b": 781.539,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 784.889,
+"b": 787.831,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 787.831,
+"b": 790.431,
+"c": "n_burro_carbon"
+},
+{
+"a": 790.431,
+"b": 795.031,
+"c": "f_ocote"
+},
+{
+"a": 795.031,
+"b": 801.779,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 806.599,
+"b": 820.373,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 824.989,
+"b": 830.471,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 830.471,
+"b": 835.071,
+"c": "n_ceniza_blanca"
+},
+{
+"a": 835.071,
+"b": 837.303,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 840.954,
+"b": 857.637,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 860.737,
+"b": 864.251,
+"c": "f_abanico"
+},
+{
+"a": 864.251,
+"b": 868.851,
+"c": "f_refresco"
+},
+{
+"a": 868.851,
+"b": 873.051,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 873.051,
+"b": 875.946,
+"c": "f_pala"
+},
+{
+"a": 881.117,
+"b": 894.944,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 898.028,
+"b": 900.891,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 900.891,
+"b": 905.491,
+"c": "f_mano"
+},
+{
+"a": 905.491,
+"b": 912.383,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 916.53,
+"b": 925.691,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 925.691,
+"b": 928.5,
+"c": "n_gasolinera"
+},
+{
+"a": 932.078,
+"b": 947.616,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 952.436,
+"b": 966.961,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 971.82,
+"b": 976.42,
+"c": "n_parrilla_carro"
+},
+{
+"a": 976.42,
+"b": 982.969,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 987.816,
+"b": 990.416,
+"c": "f_cebolla_frota"
+},
+{
+"a": 990.416,
+"b": 995.016,
+"c": "n_cebolla_chilla"
+},
+{
+"a": 995.016,
+"b": 1003.863,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 1008.14,
+"b": 1022.767,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 1025.951,
+"b": 1030.551,
+"c": "n_pegada_rota"
+},
+{
+"a": 1030.551,
+"b": 1037.551,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 1037.551,
+"b": 1041.738,
+"c": "f_cepillo"
+},
+{
+"a": 1047.67,
+"b": 1052.27,
+"c": "n_trapito_aceite"
+},
+{
+"a": 1052.27,
+"b": 1062.236,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 1068.217,
+"b": 1081.964,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 1086.8,
+"b": 1091.4,
+"c": "f_nietos_cebolla"
+},
+{
+"a": 1091.4,
+"b": 1102.636,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 1106.648,
+"b": 1111.248,
+"c": "f_quieto"
+},
+{
+"a": 1111.248,
+"b": 1119.76,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 1123.54,
+"b": 1134.418,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 1138.597,
+"b": 1143.197,
+"c": "n_costrita"
+},
+{
+"a": 1143.197,
+"b": 1146.231,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 1146.231,
+"b": 1150.831,
+"c": "n_hoyitos"
+},
+{
+"a": 1150.831,
+"b": 1155.125,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 1159.829,
+"b": 1165.051,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1165.051,
+"b": 1169.651,
+"c": "n_espacio"
+},
+{
+"a": 1169.651,
+"b": 1173.629,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 1176.844,
+"b": 1181.444,
+"c": "f_pinzas_vuelta"
+},
+{
+"a": 1181.444,
+"b": 1191.131,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 1194.649,
+"b": 1206.031,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 1206.031,
+"b": 1209.642,
+"c": "n_tandas"
+},
+{
+"a": 1215.131,
+"b": 1228.331,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 1231.681,
+"b": 1240.771,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 1240.771,
+"b": 1245.371,
+"c": "f_manazo"
+},
+{
+"a": 1245.371,
+"b": 1248.157,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 1253.87,
+"b": 1261.841,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 1319.041,
+"b": 1322.132,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 1325.232,
+"b": 1338.295,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 1341.867,
+"b": 1346.411,
+"c": "n_charco"
+},
+{
+"a": 1346.411,
+"b": 1350.971,
+"c": "f_tabla_mezquite"
+},
+{
+"a": 1350.971,
+"b": 1357.12,
+"c": "n_servilleta"
+},
+{
+"a": 1361.648,
+"b": 1375.254,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 1378.94,
+"b": 1395.777,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 1400.271,
+"b": 1404.871,
+"c": "f_pica"
+},
+{
+"a": 1404.871,
+"b": 1414.386,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1420.178,
+"b": 1422.511,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 1422.511,
+"b": 1427.111,
+"c": "f_regresa_jugo"
+},
+{
+"a": 1427.111,
+"b": 1432.323,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 1436.164,
+"b": 1451.467,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 1455.077,
+"b": 1465.071,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 1465.071,
+"b": 1469.893,
+"c": "n_tortilla_comal"
+},
+{
+"a": 1474.198,
+"b": 1477.191,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 1477.191,
+"b": 1481.791,
+"c": "n_perro_lame"
+},
+{
+"a": 1481.791,
+"b": 1488.778,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 1492.629,
+"b": 1497.229,
+"c": "f_compadres_preguntan"
+},
+{
+"a": 1497.229,
+"b": 1506.63,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 1511.724,
+"b": 1515.931,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 1515.931,
+"b": 1520.531,
+"c": "n_azotea"
+},
+{
+"a": 1520.531,
+"b": 1524.096,
+"c": "n_refri_helada"
+},
+{
+"a": 1527.156,
+"b": 1542.433,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 1547.253,
+"b": 1549.511,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 1549.511,
+"b": 1554.111,
+"c": "n_chorreando"
+},
+{
+"a": 1554.111,
+"b": 1562.479,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 1567.495,
+"b": 1572.095,
+"c": "n_cebollitas"
+},
+{
+"a": 1572.095,
+"b": 1579.052,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1583.282,
+"b": 1585.791,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 1585.791,
+"b": 1590.391,
+"c": "n_palmo"
+},
+{
+"a": 1590.391,
+"b": 1598.072,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 1601.956,
+"b": 1615.248,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 1618.375,
+"b": 1622.975,
+"c": "n_mise"
+},
+{
+"a": 1622.975,
+"b": 1626.211,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 1626.211,
+"b": 1630.811,
+"c": "n_moscas"
+},
+{
+"a": 1630.811,
+"b": 1633.892,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 1638.98,
+"b": 1654.428,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 1658.308,
+"b": 1666.611,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 1666.611,
+"b": 1670.957,
+"c": "f_mandado"
+},
+{
+"a": 1674.089,
+"b": 1691.481,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 1695.364,
+"b": 1709.764,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 1713.544,
+"b": 1718.132,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 1718.132,
+"b": 1722.732,
+"c": "f_pesos"
+},
+{
+"a": 1722.732,
+"b": 1725.795,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 1729.925,
+"b": 1745.752,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1749.139,
+"b": 1762.753,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 1765.853,
+"b": 1781.583,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 1785.193,
+"b": 1800.672,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 1805.519,
+"b": 1813.612,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 1813.612,
+"b": 1817.982,
+"c": "n_dos_asadores"
+},
+{
+"a": 1821.098,
+"b": 1825.698,
+"c": "f_comentarios"
+},
+{
+"a": 1825.698,
+"b": 1832.892,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 1832.892,
+"b": 1837.036,
+"c": "n_departamento"
+},
+{
+"a": 1842.164,
+"b": 1846.764,
+"c": "n_sarten_humo"
+},
+{
+"a": 1846.764,
+"b": 1856.22,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 1860.127,
+"b": 1873.044,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 1876.786,
+"b": 1881.386,
+"c": "n_arrachera"
+},
+{
+"a": 1881.386,
+"b": 1892.173,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 1897.744,
+"b": 1911.079,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 1915.108,
+"b": 1919.708,
+"c": "n_norte_sal"
+},
+{
+"a": 1919.708,
+"b": 1931.028,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 1935.498,
+"b": 1944.312,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 1944.312,
+"b": 1948.912,
+"c": "n_lena"
+},
+{
+"a": 1948.912,
+"b": 1951.116,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1954.245,
+"b": 1967.837,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 1971.187,
+"b": 1975.787,
+"c": "n_briqueta"
+},
+{
+"a": 1975.787,
+"b": 1981.492,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 1981.492,
+"b": 1986.988,
+"c": "f_dedo"
+},
+{
+"a": 1990.966,
+"b": 2005.739,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 2009.491,
+"b": 2022.99,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 2027.359,
+"b": 2031.959,
+"c": "n_salpicon"
+},
+{
+"a": 2031.959,
+"b": 2042.509,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 2046.119,
+"b": 2057.152,
+"k0": "vapor",
+"k1": "vapor2"
+},
+{
+"a": 2057.152,
+"b": 2059.804,
+"c": "n_chilaquiles"
+},
+{
+"a": 2064.172,
+"b": 2068.772,
+"c": "n_quesadillas"
+},
+{
+"a": 2068.772,
+"b": 2078.563,
+"k0": "plato2",
+"k1": "carne"
+},
+{
+"a": 2083.299,
+"b": 2087.899,
+"c": "n_sonora"
+},
+{
+"a": 2087.899,
+"b": 2090.412,
+"k0": "hoyo",
+"k1": "hoyo2"
+},
+{
+"a": 2090.412,
+"b": 2095.012,
+"c": "n_monterrey"
+},
+{
+"a": 2095.012,
+"b": 2098.757,
+"k0": "pared",
+"k1": "pared2"
+},
+{
+"a": 2103.105,
+"b": 2115.798,
+"k0": "aereo2",
+"k1": "mesa"
+},
+{
+"a": 2119.128,
+"b": 2135.69,
+"k0": "plato",
+"k1": "plato2"
+},
+{
+"a": 2139.608,
+"b": 2146.192,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 2146.192,
+"b": 2150.792,
+"c": "f_taco_camara"
+},
+{
+"a": 2150.792,
+"b": 2153.655,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 2157.416,
+"b": 2169.58,
+"k0": "carne2",
+"k1": "carneL"
+},
+{
+"a": 2173.939,
+"b": 2190.373,
+"k0": "lumbre",
+"k1": "fogon"
+},
+{
+"a": 2195.12,
+"b": 2199.72,
+"c": "f_un_kilo"
+},
+{
+"a": 2199.72,
+"b": 2207.887,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 2212.709,
+"b": 2228.897,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 2233.583,
+"b": 2238.283,
+"c": "f_adios"
+}
+],
+"cta": [
+{
+"a": 218.18,
+"b": 266.74
+},
+{
+"a": 1261.841,
+"b": 1319.041
+}
+],
+"sec": [
+266.74,
+438.32,
+619.941,
+779.901,
+960.041,
+1089.021,
+1319.041
+],
+"pops": [
+{
+"k": "Tag",
+"at": 10.16,
+"d": 4,
+"anchor": "carne",
+"text": "ORILLA DORADITA",
+"sub": "CON SUS RAYITAS"
+},
+{
+"k": "Stamp",
+"at": 20.6,
+"d": 4,
+"text": "¿VES ESE JUGO?",
+"col": "#f2c14e"
+},
+{
+"k": "Pill",
+"at": 28.0,
+"d": 4,
+"text": "NO ES ARRACHERA: ES CARNE BARATA",
+"col": "#f2c14e"
+},
+{
+"k": "BigNum",
+"at": 35.28,
+"d": 5,
+"text": "7 SECRETOS",
+"sub": "LOS QUE LAS TAQUERÍAS NO TE DICEN"
+},
+{
+"k": "Pill",
+"at": 59.22,
+"d": 4,
+"text": "UN CHORRITO DE PETRÓLEO…"
+},
+{
+"k": "Onoma",
+"at": 68.56,
+"d": 4,
+"text": "¡SE PEGA!",
+"col": "#ff8a6a"
+},
+{
+"k": "Stamp",
+"at": 76.12,
+"d": 4,
+"text": "GRIS, COMO HERVIDA"
+},
+{
+"k": "Pensado",
+"at": 96.14,
+"d": 4.5,
+"text": "…como suela de huarache",
+"size": 86
+},
+{
+"k": "Palomita",
+"at": 99.03,
+"d": 4,
+"text": "NO FUISTE TÚ"
+},
+{
+"k": "Precio",
+"at": 118.91,
+"d": 5,
+"top": "$200",
+"sub": "POR PERSONA, EN LA TAQUERÍA"
+},
+{
+"k": "Senales",
+"at": 133.08,
+"d": 14,
+"title": "LOS 7 SECRETOS",
+"rows": [
+{
+"at": 133.08,
+"text": "1 · los cortes"
+},
+{
+"at": 137.68,
+"text": "2 · la marinada"
+},
+{
+"at": 141.86,
+"text": "3 · la sal"
+},
+{
+"at": 145.16,
+"text": "4 · el carbón"
+},
+{
+"at": 148.7,
+"text": "5 · la parrilla"
+},
+{
+"at": 151.8,
+"text": "6 · la vuelta"
+},
+{
+"at": 154.28,
+"text": "7 · la tabla"
+}
+]
+},
+{
+"k": "Card",
+"at": 168.48,
+"d": 5,
+"top": "EL SECRETO Nº 3",
+"sub": "toda la vida te dijeron lo contrario",
+"col": "#ff8a6a"
+},
+{
+"k": "Pensado",
+"at": 174.04,
+"d": 4,
+"text": "…yo lo hice mal 40 años",
+"size": 90
+},
+{
+"k": "LowerThird",
+"at": 180.62,
+"d": 5,
+"name": "DON LUPE",
+"l2": "71 AÑOS · RANCHO DE PÁTZCUARO"
+},
+{
+"k": "Tag",
+"at": 189.62,
+"d": 4,
+"x": 980,
+"y": 560,
+"text": "PÁTZCUARO",
+"sub": "MICHOACÁN"
+},
+{
+"k": "Pill",
+"at": 201.84,
+"d": 4,
+"text": "EL ASADOR ES MÍO",
+"col": "#f2c14e"
+},
+{
+"k": "Aroma",
+"at": 208.5,
+"d": 4.5
+},
+{
+"k": "Desc",
+"at": 257.38,
+"d": 8,
+"x": 1440,
+"y": 860
+},
+{
+"k": "QR",
+"at": 261.02,
+"d": 7,
+"x": 1560,
+"y": 560
+},
+{
+"k": "Tag",
+"at": 276.01,
+"d": 4.5,
+"x": 980,
+"y": 560,
+"text": "LA CARNICERÍA DEL PUEBLO",
+"sub": "1965 · YO TENÍA 11 AÑOS"
+},
+{
+"k": "Cita",
+"at": 289.78,
+"d": 5,
+"text": "A mí deme aguja y espaldilla, pero córtemela como yo le digo.",
+"who": "ABUELO TEODORO",
+"size": 74
+},
+{
+"k": "Tag",
+"at": 316.5,
+"d": 4.5,
+"x": 980,
+"y": 560,
+"text": "GRASITA ENTREVERADA",
+"sub": "SE DERRITE ADENTRO"
+},
+{
+"k": "Pill",
+"at": 339.6,
+"d": 4,
+"text": "MÁS SABROSOS, Y LA MITAD DE PRECIO",
+"col": "#f2c14e"
+},
+{
+"k": "Bascula",
+"at": 344.91,
+"d": 4.5,
+"kg": 7,
+"label": "7 KILOS PA' 30",
+"sub": "4 aguja · 3 espaldilla"
+},
+{
+"k": "Card",
+"at": 365.24,
+"d": 5.5,
+"top": "MEDIO DEDO, CONTRA LA FIBRA",
+"sub": "así se le pide al carnicero"
+},
+{
+"k": "Stamp",
+"at": 379.88,
+"d": 4,
+"text": "A LO LARGO: CHICLE"
+},
+{
+"k": "Receipt",
+"at": 384.21,
+"d": 5,
+"title": "LA CARNE ASADA DEL DOMINGO",
+"rows": [
+{
+"at": 384.21,
+"item": "aguja y espaldilla, 7 kg",
+"$": 1160
+}
+]
+},
+{
+"k": "Versus",
+"at": 391.4,
+"d": 5.5,
+"a": "ARRACHERA",
+"b": "AGUJA",
+"rows": [
+[
+"$350 el kilo",
+true,
+false
+],
+[
+"$170 el kilo",
+false,
+true
+]
+]
+},
+{
+"k": "FixCard",
+"at": 408.7,
+"d": 6,
+"prob": "«BISTEC PARA ASAR»",
+"fix": [
+"el corte por su nombre,",
+"medio dedo"
+]
+},
+{
+"k": "Card",
+"at": 445.54,
+"d": 4.5,
+"top": "NARANJA AGRIA",
+"sub": "del naranjo viejo del corral"
+},
+{
+"k": "Stamp",
+"at": 491.6,
+"d": 4.5,
+"text": "SE COCE, COMO CEVICHE"
+},
+{
+"k": "Pill",
+"at": 505.06,
+"d": 4.5,
+"text": "NO MÁS DE 12 HORAS",
+"col": "#f2c14e"
+},
+{
+"k": "Lista",
+"at": 512.06,
+"d": 12,
+"rows": [
+[
+"jugo de 1 kg de naranja",
+512.7
+],
+[
+"jugo de 10 limones",
+515.29
+],
+[
+"6 ajos, pimienta, aceite",
+519.07
+],
+[
+"capas con cebolla",
+529.74
+]
+]
+},
+{
+"k": "Cronometro",
+"at": 538.76,
+"d": 4.5,
+"mins": 720,
+"label": "6 A 12 HORAS. NI UNA MÁS"
+},
+{
+"k": "Receipt",
+"at": 543.8,
+"d": 6,
+"title": "LA CARNE ASADA DEL DOMINGO",
+"rows": [
+{
+"at": 543.8,
+"item": "naranjas",
+"$": 30
+},
+{
+"at": 546.06,
+"item": "limones",
+"$": 25
+},
+{
+"at": 550.92,
+"item": "ajo, cebolla, pimienta, aceite",
+"$": 40
+}
+]
+},
+{
+"k": "Nota",
+"at": 575.241,
+"d": 5,
+"lines": [
+"La cerveza es",
+"pa'l asador,",
+"no pa' la carne."
+]
+},
+{
+"k": "Versus",
+"at": 580.121,
+"d": 5.5,
+"a": "DESDE EL VIERNES",
+"b": "LA NOCHE ANTES",
+"rows": [
+[
+"jugosa, no harinosa",
+false,
+true
+]
+]
+},
+{
+"k": "Stamp",
+"at": 606.281,
+"d": 4.5,
+"text": "NI UN GRANO DE SAL",
+"col": "#f2c14e"
+},
+{
+"k": "Stamp",
+"at": 621.761,
+"d": 4.5,
+"text": "¡LA SAL, AL ÚLTIMO!",
+"col": "#f2c14e"
+},
+{
+"k": "Tag",
+"at": 641.841,
+"d": 4.5,
+"x": 980,
+"y": 560,
+"text": "HERMOSILLO, 1999",
+"sub": "EL ASADOR DE DON CHUY"
+},
+{
+"k": "Cita",
+"at": 671.401,
+"d": 5,
+"text": "La carne pasa toda la noche llorando en el bote.",
+"who": "DON CHUY",
+"size": 82
+},
+{
+"k": "Tag",
+"at": 691.941,
+"d": 4.5,
+"x": 980,
+"y": 560,
+"text": "LA SAL JALA EL AGUA",
+"sub": "Y ESE JUGO YA NO REGRESA"
+},
+{
+"k": "Versus",
+"at": 706.401,
+"d": 5.5,
+"a": "DESDE LA NOCHE",
+"b": "JUSTO ANTES",
+"rows": [
+[
+"costrita dorada",
+false,
+true
+],
+[
+"el jugo adentro",
+false,
+true
+]
+]
+},
+{
+"k": "Card",
+"at": 737.801,
+"d": 5,
+"top": "SAL DE GRANO",
+"sub": "no sal fina: el crujidito"
+},
+{
+"k": "Pill",
+"at": 751.041,
+"d": 4,
+"text": "3 CUCHARADAS PA' 7 KILOS"
+},
+{
+"k": "Pensado",
+"at": 776.481,
+"d": 4,
+"text": "…la mitad no me cree",
+"size": 90
+},
+{
+"k": "Card",
+"at": 784.441,
+"d": 4.5,
+"top": "CARBÓN DE ENCINO",
+"sub": "y astillitas de ocote"
+},
+{
+"k": "Stamp",
+"at": 796.701,
+"d": 4,
+"text": "NUNCA PETRÓLEO"
+},
+{
+"k": "Cita",
+"at": 813.761,
+"d": 5,
+"text": "El que tiene prisa con el carbón, come carne gris.",
+"who": "ABUELO TEODORO",
+"size": 80
+},
+{
+"k": "Tag",
+"at": 830.721,
+"d": 4.5,
+"x": 980,
+"y": 560,
+"text": "CENIZA BLANCA",
+"sub": "COMO CON HARINA: LISTO"
+},
+{
+"k": "Cronometro",
+"at": 835.631,
+"d": 4.5,
+"mins": 40,
+"label": "30 A 40 MINUTOS"
+},
+{
+"k": "Precio",
+"at": 846.861,
+"d": 5,
+"top": "$150",
+"sub": "5 KILOS DE CARBÓN"
+},
+{
+"k": "Versus",
+"at": 881.341,
+"d": 6,
+"a": "MUCHO CARBÓN",
+"b": "POQUITO",
+"rows": [
+[
+"la carne, fuerte",
+true,
+false
+],
+[
+"cebollitas y tortillas",
+false,
+true
+]
+]
+},
+{
+"k": "Card",
+"at": 901.141,
+"d": 5,
+"top": "LA PRUEBA DE LA MANO",
+"sub": "2 o 3 segundos: listo"
+},
+{
+"k": "FixCard",
+"at": 912.621,
+"d": 6,
+"prob": "PETRÓLEO Y PRISAS",
+"fix": [
+"ocote, y 40 minutos"
+]
+},
+{
+"k": "Pensado",
+"at": 947.921,
+"d": 4,
+"text": "…¿con una cebolla?",
+"size": 96
+},
+{
+"k": "Tag",
+"at": 967.661,
+"d": 4.5,
+"x": 980,
+"y": 560,
+"text": "PARRILLA DE FIERRO",
+"sub": "LA REJA DE UN CARRO DEL 40"
+},
+{
+"k": "Onoma",
+"at": 988.081,
+"d": 4,
+"text": "¡SSSSS!"
+},
+{
+"k": "Senales",
+"at": 995.981,
+"d": 10,
+"title": "¿PARA QUÉ LA CEBOLLA?",
+"rows": [
+{
+"at": 997.521,
+"text": "1 · limpia lo pegado"
+},
+{
+"at": 1005.681,
+"text": "2 · la engrasa"
+},
+{
+"at": 1012.241,
+"text": "3 · deja su saborcito"
+}
+]
+},
+{
+"k": "Lista",
+"at": 1031.921,
+"d": 10,
+"rows": [
+[
+"parrilla 5 min al fuego",
+1031.921
+],
+[
+"cepillo de alambre",
+1037.801
+],
+[
+"½ cebolla, frotar fuerte",
+1042.521
+]
+]
+},
+{
+"k": "Pill",
+"at": 1060.881,
+"d": 4,
+"text": "LA CEBOLLA, A LA SALSA",
+"col": "#f2c14e"
+},
+{
+"k": "Palomita",
+"at": 1087.041,
+"d": 4,
+"text": "CHILLA LA CEBOLLA: YA VIENE"
+},
+{
+"k": "Stamp",
+"at": 1090.841,
+"d": 4.5,
+"text": "UNA SOLA VUELTA",
+"col": "#f2c14e",
+"size": 110
+},
+{
+"k": "Onoma",
+"at": 1117.921,
+"d": 4,
+"text": "¡ZAS!"
+},
+{
+"k": "Cita",
+"at": 1122.041,
+"d": 5,
+"text": "La carne en la parrilla es como el pan en el horno.",
+"who": "ABUELO TEODORO",
+"size": 80
+},
+{
+"k": "Senales",
+"at": 1138.921,
+"d": 9,
+"title": "ASÍ SE VA EL JUGO",
+"rows": [
+{
+"at": 1138.921,
+"text": "moverla: se rompe"
+},
+{
+"at": 1144.641,
+"text": "picarla: un hoyito por gota"
+},
+{
+"at": 1149.181,
+"text": "aplastarla: la exprimes"
+}
+]
+},
+{
+"k": "Cronometro",
+"at": 1168.241,
+"d": 4.5,
+"mins": 2,
+"label": "2 MINUTOS POR LADO"
+},
+{
+"k": "Pill",
+"at": 1177.121,
+"d": 4,
+"text": "CON PINZAS, NUNCA TENEDOR"
+},
+{
+"k": "Pill",
+"at": 1206.281,
+"d": 4,
+"text": "DE A POQUITO, POR TANDAS",
+"col": "#f2c14e"
+},
+{
+"k": "BigNum",
+"at": 1246.101,
+"d": 5,
+"text": "EL Nº 7",
+"sub": "PASA EN LA TABLA"
+},
+{
+"k": "Desc",
+"at": 1313.401,
+"d": 8,
+"x": 1440,
+"y": 860
+},
+{
+"k": "QR",
+"at": 1316.401,
+"d": 7,
+"x": 1560,
+"y": 560
+},
+{
+"k": "Tag",
+"at": 1346.781,
+"d": 4.5,
+"anchor": "carne",
+"text": "TABLA DE MEZQUITE",
+"sub": "LA DE CUANDO SE CASÓ"
+},
+{
+"k": "Cronometro",
+"at": 1354.721,
+"d": 4.5,
+"mins": 5,
+"label": "5 MINUTOS, TAPADITA"
+},
+{
+"k": "Pill",
+"at": 1372.001,
+"d": 4,
+"text": "EL JUGO SE CALMA Y SE QUEDA"
+},
+{
+"k": "Versus",
+"at": 1396.081,
+"d": 5.5,
+"a": "A LO LARGO",
+"b": "ATRAVESADA",
+"rows": [
+[
+"se deshace al morder",
+false,
+true
+]
+]
+},
+{
+"k": "Stamp",
+"at": 1422.761,
+"d": 4.5,
+"text": "¡SE LE REGRESA SU JUGO!",
+"col": "#f2c14e"
+},
+{
+"k": "Lista",
+"at": 1434.341,
+"d": 10,
+"rows": [
+[
+"tabla, servilleta, cuchillo",
+1434.341
+],
+[
+"5 min tapadita",
+1446.761
+],
+[
+"tiras contra la fibra",
+1448.341
+],
+[
+"su jugo + ½ limón",
+1453.801
+]
+]
+},
+{
+"k": "Pensado",
+"at": 1492.761,
+"d": 5,
+"text": "…Lupe, ¿y dónde compraste esta carne?",
+"size": 78
+},
+{
+"k": "BigNum",
+"at": 1503.001,
+"d": 4.5,
+"text": "5 ERRORES",
+"sub": "LOS QUE VEO EN TODAS LAS CARNES ASADAS",
+"col": "#ff8a6a"
+},
+{
+"k": "FixCard",
+"at": 1521.581,
+"d": 7,
+"prob": "1 · HELADA, DEL REFRI",
+"fix": [
+"20-30 min antes,",
+"a la sombra"
+]
+},
+{
+"k": "FixCard",
+"at": 1546.841,
+"d": 7,
+"prob": "2 · CHORREANDO MARINADA",
+"fix": [
+"escúrrela bien"
+]
+},
+{
+"k": "FixCard",
+"at": 1573.341,
+"d": 7,
+"prob": "3 · LA PARRILLA MAL PUESTA",
+"fix": [
+"un palmo: 10-15 cm"
+]
+},
+{
+"k": "FixCard",
+"at": 1595.421,
+"d": 7,
+"prob": "4 · NADA LISTO",
+"fix": [
+"todo junto al asador"
+]
+},
+{
+"k": "FixCard",
+"at": 1621.961,
+"d": 7,
+"prob": "5 · TIRAR LO QUE SOBRA",
+"fix": [
+"al refri, 3 días"
+]
+},
+{
+"k": "Receipt",
+"at": 1666.861,
+"d": 22,
+"sc": 0.7,
+"x": 1420,
+"y": 110,
+"title": "30 PERSONAS",
+"totalAt": 1696.872,
+"rows": [
+{
+"at": 1674.341,
+"item": "aguja y espaldilla, 7 kg",
+"$": 1160
+},
+{
+"at": 1678.912,
+"item": "naranjas y limones",
+"$": 55
+},
+{
+"at": 1685.762,
+"item": "cebolla, ajo, pimienta, aceite",
+"$": 40
+},
+{
+"at": 1691.052,
+"item": "carbón y ocote",
+"$": 150
+}
+]
+},
+{
+"k": "Precio",
+"at": 1699.032,
+"d": 5,
+"top": "$48",
+"sub": "POR PERSONA, EN TU PATIO"
+},
+{
+"k": "Precio",
+"at": 1713.242,
+"d": 5,
+"x": 470,
+"top": "$180-200",
+"sub": "LA ORDEN, EN LA TAQUERÍA"
+},
+{
+"k": "Cifra",
+"at": 1718.382,
+"d": 5,
+"to": 4500,
+"pre": "+$",
+"sub": "LO QUE TE AHORRAS"
+},
+{
+"k": "Cita",
+"at": 1737.082,
+"d": 5,
+"text": "La cocina de rancho no es de pobre. Es la del que sabe hacer cuentas.",
+"who": "DON LUPE",
+"size": 72
+},
+{
+"k": "Lista",
+"at": 1742.942,
+"d": 16,
+"rows": [
+[
+"SÁBADO AM: los cortes",
+1742.942
+],
+[
+"SÁBADO PM: marinada sin sal",
+1750.602
+],
+[
+"DOMINGO: ocote, 40 min",
+1762.862
+],
+[
+"parrilla con su cebolla",
+1771.882
+],
+[
+"sal, 2 min por lado",
+1776.402
+],
+[
+"la tabla y su jugo",
+1784.382
+]
+]
+},
+{
+"k": "Card",
+"at": 1799.362,
+"d": 4.5,
+"top": "¿60 PERSONAS?",
+"sub": "dos asadores, dos asadores"
+},
+{
+"k": "Card",
+"at": 1834.602,
+"d": 4.5,
+"top": "¿SIN ASADOR?",
+"sub": "sartén o comal de fierro"
+},
+{
+"k": "Pill",
+"at": 1867.482,
+"d": 4,
+"text": "Y ABRE LA VENTANA"
+},
+{
+"k": "Card",
+"at": 1877.982,
+"d": 4.5,
+"top": "¿Y LA ARRACHERA?",
+"sub": "quítale la telita"
+},
+{
+"k": "Card",
+"at": 1912.822,
+"d": 4.5,
+"top": "¿SÓLO CON SAL?",
+"sub": "en el norte, con mezquite: una maravilla"
+},
+{
+"k": "Card",
+"at": 1944.562,
+"d": 4.5,
+"top": "¿CARBÓN O LEÑA?",
+"sub": "nunca briqueta con químicos"
+},
+{
+"k": "Senales",
+"at": 1981.742,
+"d": 10,
+"title": "LA PRUEBA DEL DEDO",
+"rows": [
+{
+"at": 1988.242,
+"text": "como el cachete · cruda"
+},
+{
+"at": 1993.622,
+"text": "la nariz · en su punto"
+},
+{
+"at": 1998.062,
+"text": "la frente · se pasó"
+}
+]
+},
+{
+"k": "Card",
+"at": 2029.322,
+"d": 4.5,
+"top": "EL SALPICÓN DEL LUNES",
+"sub": "frío, en tostadas"
+},
+{
+"k": "Precio",
+"at": 2043.782,
+"d": 5,
+"top": "$20",
+"sub": "EL PLATO, EN TU CASA"
+},
+{
+"k": "Precio",
+"at": 2047.782,
+"d": 5,
+"x": 470,
+"top": "$110",
+"sub": "EN UNA FONDA"
+},
+{
+"k": "Pill",
+"at": 2068.182,
+"d": 4,
+"text": "CONGELADA: UN MES",
+"col": "#f2c14e"
+},
+{
+"k": "Senales",
+"at": 2085.662,
+"d": 14,
+"title": "LA CARNE ASADA DE CADA TIERRA",
+"rows": [
+{
+"at": 2085.662,
+"text": "Sonora · pura sal y mezquite"
+},
+{
+"at": 2090.662,
+"text": "Monterrey · arrachera y costilla"
+},
+{
+"at": 2097.782,
+"text": "Jalisco · frijoles de la olla"
+},
+{
+"at": 2103.442,
+"text": "Michoacán · naranja y encino"
+}
+]
+},
+{
+"k": "Card",
+"at": 2193.882,
+"d": 5,
+"top": "¿MARINADA O PURA SAL?",
+"sub": "en los comentarios, los leo todos"
+},
+{
+"k": "Desc",
+"at": 2214.862,
+"d": 7,
+"x": 1440,
+"y": 860
+},
+{
+"k": "QR",
+"at": 2214.862,
+"d": 7,
+"x": 1560,
+"y": 560
+},
+{
+"k": "Card",
+"at": 2218.882,
+"d": 4,
+"top": "SUSCRÍBETE",
+"sub": "cada fin de semana se prende el fogón"
+},
+{
+"k": "Card",
+"at": 2225.622,
+"d": 5,
+"top": "NO HAY CARNE ASADA SIN CHARROS",
+"sub": "el video de los frijoles"
+}
+],
+"dish": "asada",
+"ui": {
+"pre": "SECRETO",
+"guia": "El Fogón de Don Lupe",
+"pag": "Libro 4 · pág. 18 · Carne Asada con Cortes Baratos",
+"tr": [
+"LOS CORTES BARATOS, Y CÓMO SE PIDEN",
+"LA MARINADA TIENE RELOJ",
+"LA SAL VA AL ÚLTIMO",
+"EL CARBÓN SE ESPERA",
+"LA PARRILLA SE LIMPIA CON CEBOLLA",
+"UNA SOLA VUELTA, SIN APLASTAR",
+"LA TABLA Y SU JUGO"
+],
+"hl": [
+[
+0.07,
+0.169,
+0.205,
+0.03,
+"$48 POR PERSONA, EN TU COCINA"
+],
+[
+0.275,
+0.169,
+0.24,
+0.03,
+"$200 EN LA TAQUERÍA"
+],
+[
+0.518,
+0.169,
+0.165,
+0.03,
+"RINDE 30 PERSONAS"
+],
+[
+0.075,
+0.787,
+0.85,
+0.085,
+"EL TRUCO DE DON LUPE"
+]
+]
+},
+"night": []
+}
