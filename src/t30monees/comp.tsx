@@ -157,7 +157,11 @@ const Push: React.FC<{ d: number; k?: number; ox?: string; children: React.React
 export const WordCard: React.FC<{ d: number; o?: Ov; tone?: "dark" | "warm" | "red" }> = ({ d, o = {}, tone = "dark" }) => {
   const f = useCurrentFrame();
   const bg = tone === "red" ? "radial-gradient(ellipse at 50% 50%, #6e1a10 0%, #2a0806 80%)" : tone === "warm" ? "radial-gradient(ellipse at 50% 60%, #4a2d18 0%, #140c07 78%)" : "radial-gradient(ellipse at 50% 50%, #1f3a58 0%, #0b1622 80%)";
-  return <AbsoluteFill style={{ background: bg, transform: `scale(${interpolate(f, [0, Math.max(d, 2)], [1, 1.04], clamp)})` }}><Overlays o={o} /></AbsoluteFill>;
+  // polvo dorado que sube lento + zoom: el cartel nunca queda congelado (QC farm: freezedetect 146 s)
+  return <AbsoluteFill style={{ background: bg, overflow: "hidden" }}>
+    {Array.from({ length: 34 }).map((_, i) => { const y = (1180 - ((f * (0.9 + rnd(i) * 1.6) + rnd(i + 50) * 1200) % 1300)); return <div key={i} style={{ position: "absolute", left: rnd(i + 9) * 1920 + Math.sin(f / 23 + i) * 18, top: y, width: 4 + rnd(i + 3) * 7, height: 4 + rnd(i + 3) * 7, borderRadius: 9, background: "rgba(237,178,105,.55)", filter: "blur(1px)" }} />; })}
+    <AbsoluteFill style={{ transform: `scale(${interpolate(f, [0, Math.max(d, 2)], [1, 1.09], clamp)})` }}><Overlays o={o} /></AbsoluteFill>
+  </AbsoluteFill>;
 };
 // pantalla partida en diagonal: GOOD NEWS. / BAD NEWS.
 export const DiagSplit: React.FC<{ d: number; l: string; r: string; wl: string; wr: string; a?: number }> = ({ d, l, r, wl, wr, a = 40 }) => {
@@ -580,13 +584,13 @@ export const TenCoins: React.FC<{ d: number; cyc?: number; o?: Ov; fill0?: numbe
 // 7. "los gastos necesarios crecen hasta igualar lo que ganamos"
 export const CreepChart: React.FC<{ d: number; o?: Ov }> = ({ d, o = {} }) => {
   const f = useCurrentFrame();
-  const p = ease(f, 6, Math.max(20, d - 20));
+  const p = ease(f, 6, Math.max(20, d - 4));
   const X0 = 260, X1 = 1680, Y0 = 900;
   const inc = (x: number) => x < 0.45 ? 620 : 420;
   const exp = (x: number) => { const lag = x < 0.45 ? 620 + (1 - Math.exp(-x * 9)) * 0 : 420; const base = x < 0.45 ? 760 - (760 - 640) * (x / 0.45) : 640 - (640 - 440) * Math.min(1, (x - 0.45) / 0.35); return Math.max(lag + 18, base); };
   const pts = (fn: (x: number) => number) => Array.from({ length: 61 }).map((_, i) => { const x = i / 60; return `${X0 + x * (X1 - X0)},${fn(x)}`; }).join(" ");
   return (
-    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #1f2a38 0%, #0a0d12 80%)" }}>
+    <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 50%, #1f2a38 0%, #0a0d12 80%)", transform: `scale(${1 + f * 0.0004})` }}>
       <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
         <defs><clipPath id="cc"><rect x={0} y={0} width={X0 + p * (X1 - X0)} height={1080} /></clipPath></defs>
         <line x1={X0} y1={Y0} x2={X1} y2={Y0} stroke="rgba(240,235,229,.4)" strokeWidth={4} /><line x1={X0} y1={Y0} x2={X0} y2={300} stroke="rgba(240,235,229,.4)" strokeWidth={4} />

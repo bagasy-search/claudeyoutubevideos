@@ -720,13 +720,14 @@
 "una parte de todo lo que gano",
 "es *MÍA.*"
 ],
+"a": 6,
 "y": 330,
-"size": 86,
-"a": 131
+"size": 86
 }
 }
 },
 "sfx": "revelacion",
+"hit": 131,
 "big": true
 },
 {
