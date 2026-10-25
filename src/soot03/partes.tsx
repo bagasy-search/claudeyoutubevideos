@@ -8,8 +8,10 @@ import { keys5, amb5, lluvia5, sol5, W5, N5, S5 } from "./T5";
 import { keys6, amb6, lluvia6, niebla6, rayos6, sol6, W6, N6, S6 } from "./T6";
 import { keys7, amb7, lluvia7, sol7, W7, S7 } from "./T7";
 import { keys8, amb8, lluvia8, sol8, W8, S8 } from "./T8";
+import { keysM, ambM, SM } from "./Mini";
 
 export const PARTES: Parte[] = [
+  { keys: keysM, amb: ambM, S: SM },
   { keys: keys0, amb: amb0, lluvia: lluvia0, rayos: rayos0, W: W0, N: N0, S: S0 },
   { keys: keys1, amb: amb1, lluvia: lluvia1, sol: sol1, obra: obra1, W: W1, N: N1, S: S1 },
   { keys: keys2, amb: amb2, lluvia: lluvia2, nieve: nieve2, sol: sol2, W: W2, S: S2 },
