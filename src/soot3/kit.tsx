@@ -18,22 +18,127 @@ export const ent = (t: number, t0: number, d = 0, cfg = { damping: 12, stiffness
 export const prog = (t: number, a: number, b: number) =>
   interpolate(t, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
 
-// ── escena: monta a sus hijos sólo en [t0, t1) y les aplica un empuje de cámara sorteado (in/out, foco 35-65 %)
-export const Escena: React.FC<{ t: number; t0: number; t1: number; children: React.ReactNode; zoom?: number; seed?: number; fondo?: string }> = ({ t, t0, t1, children, zoom, seed, fondo = C.noche }) => {
-  if (t < t0 || t >= t1) return null;
+// ── escena: monta a sus hijos en [t0, t1 + SOLAPE) — la siguiente entra ENCIMA con su transición — y les aplica
+// un empuje de cámara sorteado (in/out, foco 35-65 %) + golpes de zoom en las palabras fuertes.
+export const SOLAPE = 0.34;
+export type Entrada = "iris" | "barrido" | "zoom" | "diag" | "corte" | "sube";
+const ENTRADAS: Entrada[] = ["iris", "barrido", "zoom", "diag", "corte", "sube", "barrido", "zoom"];
+export const Escena: React.FC<{ t: number; t0: number; t1: number; children: React.ReactNode; zoom?: number; seed?: number; fondo?: string; entra?: Entrada; golpes?: number[]; banda?: string; ix?: number; iy?: number }> = ({ t, t0, t1, children, zoom, seed, fondo = C.noche, entra, golpes = [], banda, ix = 960, iy = 540 }) => {
+  if (t < t0 || t >= t1 + SOLAPE) return null;
   const r = rnd(seed ?? Math.round(t0 * 1000) + 3);
   const vel = 0.018 + r() * 0.02;
   const amp = zoom ?? Math.min(0.16, vel * (t1 - t0));
   const dentro = r() < 0.5;
   const ox = 35 + r() * 30, oy = 35 + r() * 30;
-  const u = interpolate(t, [t0, t1], [0, 1], { easing: Easing.inOut(Easing.sin) });
+  const tipo = entra ?? ENTRADAS[Math.floor(r() * ENTRADAS.length)];
+  const col = banda ?? [C.rojo, C.ambar, C.teal, C.violeta, C.rosa][Math.floor(r() * 5)];
+  const u = interpolate(t, [t0, t1 + SOLAPE], [0, 1], { easing: Easing.inOut(Easing.sin) });
   const k = dentro ? u : 1 - u;
+  const golpe = golpes.reduce((a, g) => a + (t >= g ? 0.075 * Math.exp(-(t - g) * 7) : 0), 0);
+  // entrada (0 → 1 en ~0,32 s)
+  const e = interpolate(t, [t0, t0 + 0.32], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  let clip = "none", tr = "";
+  let extra: React.ReactNode = null;
+  if (e < 1) {
+    if (tipo === "iris") clip = `circle(${e * 125}% at ${ix}px ${iy}px)`;
+    else if (tipo === "barrido") { tr = `translateX(${(1 - e) * 105}%)`; extra = <div style={{ position: "absolute", top: 0, bottom: 0, width: 140, left: `${(1 - e) * 105}%`, marginLeft: -140, background: col }} />; }
+    else if (tipo === "sube") { tr = `translateY(${(1 - e) * 105}%)`; extra = <div style={{ position: "absolute", left: 0, right: 0, height: 120, top: `${(1 - e) * 105}%`, marginTop: -120, background: col }} />; }
+    else if (tipo === "diag") { const p = e * 260 - 60; clip = `polygon(-10% -10%, ${p}% -10%, ${p - 60}% 110%, -10% 110%)`; }
+    else if (tipo === "zoom") tr = `scale(${1.6 - 0.6 * e})`;
+  }
+  const corteGolpe = tipo === "corte" ? 0.09 * Math.exp(-(t - t0) * 8) : 0;
   return (
-    <AbsoluteFill style={{ overflow: "hidden", backgroundColor: fondo }}>
-      <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${1.04 + amp * k})` }}>{children}</AbsoluteFill>
-    </AbsoluteFill>
+    <>
+      <AbsoluteFill style={{ overflow: "hidden", backgroundColor: fondo, clipPath: clip, transform: tr, opacity: tipo === "zoom" ? Math.min(1, e * 2.2) : 1 }}>
+        <AbsoluteFill style={{ transformOrigin: `${ox}% ${oy}%`, transform: `scale(${1.04 + amp * k + golpe + corteGolpe})` }}>{children}</AbsoluteFill>
+      </AbsoluteFill>
+      {extra && <AbsoluteFill style={{ pointerEvents: "none" }}>{extra}</AbsoluteFill>}
+    </>
   );
 };
+
+// ── partículas: polvo, brasas, luciérnagas, destellos, lluvia de oro
+export const Particulas: React.FC<{ t: number; tipo: "polvo" | "brasas" | "luciernagas" | "destellos" | "lluviaoro"; n?: number; seed?: number }> = ({ t, tipo, n = 40, seed = 3 }) => {
+  const r = rnd(seed * 7 + 1);
+  const ps = Array.from({ length: n }, () => ({ x: r() * 1920, y: r() * 1080, v: 0.4 + r(), f: r() * 6, s: r() }));
+  return (
+    <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
+      {ps.map((p, i) => {
+        if (tipo === "polvo") {
+          const x = ((p.x + t * 30 * p.v + Math.sin(t * 0.7 + p.f) * 40) % 1960) - 20, y = p.y + Math.sin(t * 0.5 + p.f) * 30;
+          return <circle key={i} cx={x} cy={y} r={2 + p.s * 4} fill="#fff1d0" opacity={0.18 + 0.25 * p.s} />;
+        }
+        if (tipo === "brasas") {
+          const y = 1100 - ((p.y + t * 90 * p.v) % 1180), x = p.x + Math.sin(t * 1.3 + p.f) * 50;
+          return <circle key={i} cx={x} cy={y} r={2 + p.s * 3.5} fill={p.s > 0.5 ? "#ffb347" : "#ff6a3d"} opacity={0.5 + 0.5 * Math.sin(t * 5 + p.f) ** 2} />;
+        }
+        if (tipo === "luciernagas") {
+          const x = p.x + Math.sin(t * 0.6 * p.v + p.f) * 70, y = 560 + (p.y % 520) + Math.cos(t * 0.8 + p.f) * 40;
+          const a = Math.max(0, Math.sin(t * 1.8 * p.v + p.f));
+          return <g key={i} opacity={a}><circle cx={x} cy={y} r={14} fill="#d9ff7a" opacity={0.18} /><circle cx={x} cy={y} r={4} fill="#f2ffb0" /></g>;
+        }
+        if (tipo === "lluviaoro") {
+          const y = ((p.y + t * 260 * p.v) % 1180) - 60, x = p.x;
+          return <rect key={i} x={x} y={y} width={7} height={7} transform={`rotate(${t * 200 * p.v + p.f * 60} ${x + 3} ${y + 3})`} fill={p.s > 0.5 ? C.oro : "#fff6c8"} />;
+        }
+        const a = Math.max(0, Math.sin(t * 2.4 * p.v + p.f)) ** 6;
+        const d = 10 + p.s * 18;
+        return <path key={i} d={`M ${p.x} ${p.y - d} L ${p.x + d * 0.22} ${p.y - d * 0.22} L ${p.x + d} ${p.y} L ${p.x + d * 0.22} ${p.y + d * 0.22} L ${p.x} ${p.y + d} L ${p.x - d * 0.22} ${p.y + d * 0.22} L ${p.x - d} ${p.y} L ${p.x - d * 0.22} ${p.y - d * 0.22} Z`} fill="#fff8d6" opacity={a} />;
+      })}
+    </svg>
+  );
+};
+// rayos de luz que giran lento detrás de un astro u objeto
+export const Rayos: React.FC<{ t: number; x: number; y: number; color?: string; n?: number; op?: number; largo?: number }> = ({ t, x, y, color = "#fff3c4", n = 14, op = 0.13, largo = 1400 }) => (
+  <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
+    <g transform={`translate(${x} ${y}) rotate(${t * 6})`}>
+      {Array.from({ length: n }, (_, i) => {
+        const a = (i / n) * Math.PI * 2, b = a + Math.PI / n / 1.4;
+        return <path key={i} d={`M 0 0 L ${Math.cos(a) * largo} ${Math.sin(a) * largo} L ${Math.cos(b) * largo} ${Math.sin(b) * largo} Z`} fill={color} opacity={op} />;
+      })}
+    </g>
+  </svg>
+);
+// primer plano oscuro (pasto/piedras) que pasa con paralaje: da profundidad
+export const Frente: React.FC<{ t: number; color?: string; vel?: number; seed?: number }> = ({ t, color = "#1a0d2a", vel = 60, seed = 5 }) => {
+  const r = rnd(seed);
+  const mats = Array.from({ length: 9 }, (_, i) => ({ x: i * 260 + r() * 120, w: 160 + r() * 220, h: 50 + r() * 90, pasto: r() < 0.6 }));
+  const dx = (t * vel) % 2340;
+  return (
+    <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
+      {mats.map((m, i) => {
+        const x = ((m.x - dx + 2340) % 2340) - 200;
+        const w = m.w / 7;
+        return m.pasto ? (
+          <g key={i} fill={color}>
+            {Array.from({ length: 7 }, (_, k) => <path key={k} d={`M ${x + k * w} 1090 Q ${x + k * w + 6} ${1080 - m.h * 0.7} ${x + k * w + 18 + Math.sin(t * 2 + k) * 6} ${1080 - m.h * (0.7 + ((k * 37) % 10) / 30)} Q ${x + k * w + 16} 1060 ${x + k * w + 24} 1090 Z`} />)}
+          </g>
+        ) : <ellipse key={i} cx={x + m.w / 2} cy={1095} rx={m.w / 2} ry={m.h * 0.7} fill={color} />;
+      })}
+    </svg>
+  );
+};
+// emociones sobre la cabeza (sudor, lágrimas, !, ?, enojo, brillos, susto)
+export type Emo = "sudor" | "lagrimas" | "excl" | "preg" | "enojo" | "brillos" | "susto";
+export const Emote: React.FC<{ t: number; t0: number; t1?: number; tipo: Emo; x: number; y: number; s?: number }> = ({ t, t0, t1 = 1e9, tipo, x, y, s = 1 }) => {
+  if (t < t0 || t > t1) return null;
+  const e = ent(t, t0, 0, { damping: 9, stiffness: 220 });
+  const lt = t - t0;
+  let g: React.ReactNode = null;
+  if (tipo === "sudor") { const k = (lt * 0.9) % 1; g = <path transform={`translate(110 ${-40 + k * 70})`} d="M 0 -26 Q 16 0 0 12 Q -16 0 0 -26 Z" fill="#7fd6ff" stroke="#fff" strokeWidth={4} opacity={1 - k * 0.6} />; }
+  if (tipo === "lagrimas") g = <>{[-1, 1].map((d) => <path key={d} d={`M ${d * 38} 20 q ${d * 4} 40 ${d * 2} ${60 + Math.sin(lt * 9) * 6}`} stroke="#7fd6ff" strokeWidth={14} fill="none" strokeLinecap="round" opacity={0.9} />)}</>;
+  if (tipo === "excl" || tipo === "preg") g = <g transform={`translate(130 -150) rotate(${Math.sin(lt * 8) * 6})`}><ellipse cx={0} cy={0} rx={48} ry={56} fill={tipo === "excl" ? C.rojo : C.violeta} stroke="#fff" strokeWidth={6} /><text x={0} y={24} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={72} fill="#fff">{tipo === "excl" ? "!" : "?"}</text></g>;
+  if (tipo === "enojo") g = <g transform={`translate(90 -120) scale(${1 + Math.sin(lt * 14) * 0.08})`} stroke={C.rojo} strokeWidth={11} strokeLinecap="round">{[0, 90, 180, 270].map((a) => <path key={a} transform={`rotate(${a})`} d="M 8 -26 Q 6 -8 26 -8" fill="none" />)}</g>;
+  if (tipo === "brillos") g = <>{[[-130, -120], [130, -90], [90, -190]].map(([dx, dy], i) => { const a = Math.max(0, Math.sin(lt * 6 + i * 2)); const d = 26 * a; return <path key={i} transform={`translate(${dx} ${dy})`} d={`M 0 ${-d} L ${d * 0.25} ${-d * 0.25} L ${d} 0 L ${d * 0.25} ${d * 0.25} L 0 ${d} L ${-d * 0.25} ${d * 0.25} L ${-d} 0 L ${-d * 0.25} ${-d * 0.25} Z`} fill="#fff3a0" />; })}</>;
+  if (tipo === "susto") g = <g stroke="#fff" strokeWidth={8} strokeLinecap="round">{[-1, 1].map((d) => [0, 1, 2].map((i) => <line key={`${d}${i}`} x1={d * (125 + i * 4)} y1={-60 + i * 30} x2={d * (160 + i * 4 + Math.sin(lt * 20) * 6)} y2={-70 + i * 30} />))}</g>;
+  return (
+    <svg style={{ position: "absolute", left: x - 200 * s, top: y - 200 * s, overflow: "visible", pointerEvents: "none" }} width={400 * s} height={400 * s} viewBox="-200 -200 400 400">
+      <g transform={`scale(${e})`}>{g}</g>
+    </svg>
+  );
+};
+// centro de la cabeza de una Persona en pantalla (para colgarle emociones)
+export const cabeza = (x: number, y: number, h = 560) => ({ x, y: y - 450 * (h / 560), s: h / 560 });
 
 // ── cielos
 const CIELOS = {
@@ -90,8 +195,9 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
   const s = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out})`, transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
+    <div style={{ position: "absolute", left: x, top: y, transform: `translate(${centro ? "-50%" : "0"}, -50%) scale(${s * out}) rotate(${(1 - s) * -8}deg)`, overflow: "hidden", transformOrigin: centro ? "center" : "left center", fontFamily, fontWeight: 700, fontSize: size, color: tinta, background: color, padding: `${size * 0.16}px ${size * 0.42}px`, borderRadius: size * 0.3, boxShadow: "0 8px 0 rgba(20,10,50,.35)", letterSpacing: 1, whiteSpace: "nowrap", lineHeight: 1.15 }}>
       {text}
+      <div style={{ position: "absolute", top: 0, bottom: 0, width: size * 0.9, left: `${interpolate(t, [t0 + 0.12, t0 + 0.6], [-30, 130], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}%`, background: "linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent)", transform: "skewX(-20deg)" }} />
     </div>
   );
 };
@@ -109,18 +215,30 @@ export const Grande: React.FC<{ t: number; t0: number; text: string; x?: number;
 // ── mapa de puntos (tierra real de world-atlas, imperio c. 117 dibujado a mano)
 const M = MAPA as { paso: number; pts: [number, number, number][]; lugares: { n: string; x: number; y: number }[] };
 export const lugar = (n: string) => M.lugares.find((l) => l.n === n)!;
-export const MapaPuntos: React.FC<{ t: number; enciende?: [number, number]; desde?: string; brillo?: string; pulsa?: string[]; t0Pulsa?: number }> = ({ t, enciende, desde = "ROME", brillo = C.ambar, pulsa = [], t0Pulsa = 0 }) => {
+export const MapaPuntos: React.FC<{ t: number; enciende?: [number, number]; desde?: string; brillo?: string; pulsa?: string[]; t0Pulsa?: number; rutas?: { a: string; t0: number }[]; vuela?: { n: string; z: number; t: [number, number] } }> = ({ t, enciende, desde = "ROME", brillo = C.ambar, pulsa = [], t0Pulsa = 0, rutas = [], vuela }) => {
   const o = lugar(desde);
   const maxD = 1500;
   const u = enciende ? prog(t, enciende[0], enciende[1]) : 1;
   return (
     <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 45%, ${C.noche2} 0%, ${C.noche} 70%)` }}>
-      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, transformOrigin: "0 0", transform: vuela ? (() => { const v = prog(t, vuela.t[0], vuela.t[1]); const l = lugar(vuela.n); const z = 1 + (vuela.z - 1) * v; return `translate(${(960 - l.x * z) * v + 0 * (1 - v)}px, ${(540 - l.y * z) * v}px) scale(${z})`; })() : undefined }}>
         {M.pts.map(([x, y, imp], i) => {
           const d = Math.hypot(x - o.x, y - o.y) / maxD;
           const on = imp && u > d;
           const fresco = on ? clamp((u - d) * 12, 0, 1) : 0;
           return <circle key={i} cx={x} cy={y} r={on ? 3.6 + (1 - fresco) * 2.5 : 3.2} fill={on ? brillo : "#3d2d7a"} opacity={on ? 0.95 : 0.8} />;
+        })}
+        {rutas.map(({ a, t0 }, i) => {
+          if (t < t0) return null;
+          const l = lugar(a);
+          const mx = (o.x + l.x) / 2, my = Math.min(o.y, l.y) - 120;
+          const u = prog(t, t0, t0 + 0.7);
+          return (
+            <g key={a + i}>
+              <path d={`M ${o.x} ${o.y} Q ${mx} ${my} ${l.x} ${l.y}`} stroke="#fff" strokeWidth={5} fill="none" strokeDasharray="14 12" strokeDashoffset={-t * 60} opacity={0.85} pathLength={1000} style={{ strokeDasharray: `${u * 1000} 1000` }} />
+              {u >= 1 && <circle cx={l.x} cy={l.y} r={12} fill={C.ambar} stroke="#fff" strokeWidth={4} />}
+            </g>
+          );
         })}
         {pulsa.map((n, i) => {
           const l = lugar(n);
@@ -139,8 +257,8 @@ export const MapaPuntos: React.FC<{ t: number; enciende?: [number, number]; desd
 };
 
 // ── objetos
-export const Moneda: React.FC<{ x: number; y: number; r?: number; rot?: number }> = ({ x, y, r = 40, rot = 0 }) => (
-  <svg style={{ position: "absolute", left: x - r, top: y - r, overflow: "visible" }} width={r * 2} height={r * 2}>
+export const Moneda: React.FC<{ x: number; y: number; r?: number; rot?: number; gira?: number; t?: number }> = ({ x, y, r = 40, rot = 0, gira = 0, t = 0 }) => (
+  <svg style={{ position: "absolute", left: x - r, top: y - r, overflow: "visible", transform: gira ? `scaleX(${Math.max(0.08, Math.abs(Math.cos(t * gira * Math.PI)))})` : undefined }} width={r * 2} height={r * 2}>
     <g transform={`rotate(${rot} ${r} ${r})`}>
       <ellipse cx={r} cy={r + r * 0.12} rx={r} ry={r} fill="#b87a14" />
       <circle cx={r} cy={r} r={r} fill={C.oro} />
@@ -266,7 +384,17 @@ export const Grilla: React.FC<{ t: number; t0: number; de: number; a: number; tA
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${e})`, background: "rgba(27,18,64,.92)", borderRadius: 34, padding: "28px 30px 22px", boxShadow: "0 14px 0 rgba(10,5,30,.45)" }}>
       <div style={{ display: "grid", gridTemplateColumns: `repeat(20, ${26 * s}px)`, gap: `${6 * s}px ${4 * s}px` }}>
-        {Array.from({ length: 100 }, (_, i) => <Fig key={i} s={s} c={muerto.has(i) ? "#5d5a7a" : C.teal} />)}
+        {Array.from({ length: 100 }, (_, i) => {
+          const k = orden.indexOf(i);
+          if (k < de || k >= a) return <Fig key={i} s={s} c={k < de ? "#5d5a7a" : C.teal} />;
+          const td = tA[0] + ((k - de + 0.5) / (a - de)) * (tA[1] - tA[0]);
+          const u = clamp((t - td) / 0.3, 0, 1);
+          return (
+            <div key={i} style={{ transform: `translateY(${u * 8 * s}px) rotate(${u * 80}deg)`, transformOrigin: "50% 100%", opacity: 1 - u * 0.35 }}>
+              <Fig s={s} c={u <= 0 ? C.teal : u < 0.5 ? C.rojo : "#5d5a7a"} />
+            </div>
+          );
+        })}
       </div>
       <div style={{ display: "flex", gap: 18, marginTop: 18, fontFamily, fontWeight: 700, fontSize: 44 }}>
         <span style={{ background: C.teal, color: C.noche, padding: "4px 20px", borderRadius: 12 }}>ALIVE {100 - muertos}</span>

@@ -20,7 +20,7 @@ type Props = {
   ropa?: Ropa; expr?: Expr; habla?: boolean; camina?: number; // camina = fase en ciclos/s (0 = quieto)
   bI?: number; bD?: number; cI?: number; cD?: number; // hombro y codo, grados (0 = colgando)
   mira?: number; miraY?: number; flip?: boolean; casco?: "no" | "legion" | "centurion"; viejo?: boolean;
-  sombra?: string; manoD?: React.ReactNode; manoI?: React.ReactNode; inclina?: number; opacity?: number;
+  sombra?: string; manoD?: React.ReactNode; manoI?: React.ReactNode; inclina?: number; opacity?: number; aparece?: number; ladea?: number; salta?: number;
 };
 
 const BOCA: Record<Expr, string> = {
@@ -48,6 +48,18 @@ export const Persona: React.FC<Props> = (p) => {
   const ciclo = (t + desfase) % 3.1;
   const parp = expr === "dormido" ? 0.08 : ciclo < 0.12 ? 0.12 : 1;
   const respira = Math.sin((t + desfase) * 2.2) * 3;
+  // entrada con anticipación: crece desde los pies, se estira y se aplasta (squash & stretch)
+  const ap = p.aparece === undefined ? 1 : t < p.aparece ? 0 : 1;
+  const la = p.aparece === undefined ? 9 : t - p.aparece;
+  const sy = la < 0.6 ? 1 + Math.sin(la * 16) * Math.exp(-la * 6) * 0.22 : 1;
+  const sx = la < 0.6 ? 1 - Math.sin(la * 16) * Math.exp(-la * 6) * 0.14 : 1;
+  const crece = p.aparece === undefined ? 1 : Math.min(1, la / 0.12);
+  // salto: rebote vertical que decae (sorpresa, alegría)
+  const sl = p.salta === undefined || t < p.salta ? 0 : t - p.salta;
+  const salto = sl > 0 && sl < 0.7 ? -Math.abs(Math.sin(sl * 9)) * Math.exp(-sl * 4) * 80 : 0;
+  // los ojos se mueven solos (micro sacadas) y la cabeza acompaña la respiración
+  const sac = Math.round(Math.sin((t + desfase) * 0.9) * 2) * 0.12;
+  const ladea = (p.ladea ?? 0) + Math.sin((t + desfase) * 1.1) * 2;
   const fase = camina * t * Math.PI * 2;
   const pierna = camina ? Math.sin(fase) * 24 : 0;
   const bote = camina ? Math.abs(Math.sin(fase)) * -10 : 0;
@@ -86,7 +98,7 @@ export const Persona: React.FC<Props> = (p) => {
           <stop offset="0" stopColor="#ffd77a" /><stop offset="0.5" stopColor="#d9962e" /><stop offset="1" stopColor="#8a5414" />
         </linearGradient>
       </defs>
-      <g transform={`scale(${flip ? -1 : 1} 1) rotate(${inclina} 0 -200) translate(0 ${bote})`}>
+      <g transform={`scale(${(flip ? -1 : 1) * sx * crece * ap} ${sy * crece * ap}) rotate(${inclina} 0 -200) translate(0 ${bote + salto})`}>
         {!sombra && <ellipse cx={0} cy={4} rx={110} ry={16} fill="rgba(20,10,40,.28)" />}
         {/* piernas */}
         {[-1, 1].map((s) => (
@@ -110,7 +122,7 @@ export const Persona: React.FC<Props> = (p) => {
         {!sombra && <circle cx={0} cy={-228} r={9} fill="#e8b84a" />}
         {/* cuello y cabeza */}
         <rect x={-20} y={-372} width={40} height={40} fill={c(ropa.piel2)} />
-        <g transform={`translate(0 ${respira * 0.6})`}>
+        <g transform={`translate(0 ${respira * 0.6}) rotate(${ladea} 0 -360)`}>
           <circle cx={-96} cy={-440} r={18} fill={c(ropa.piel2)} />
           <circle cx={96} cy={-440} r={18} fill={c(ropa.piel2)} />
           <ellipse cx={0} cy={-450} rx={100} ry={104} fill={piel} />
@@ -135,8 +147,8 @@ export const Persona: React.FC<Props> = (p) => {
                 return (
                   <g key={s} transform={`translate(${ex} ${ey}) scale(${esc} ${esc * parp})`}>
                     <ellipse cx={0} cy={0} rx={23} ry={28} fill="#fff" />
-                    <circle cx={mira * 8} cy={4 + miraY * 8} r={expr === "miedo" ? 11 : 15} fill={ojos} />
-                    <circle cx={mira * 8 + 5} cy={-3 + miraY * 8} r={5.5} fill="#fff" />
+                    <circle cx={(mira + sac) * 8} cy={4 + miraY * 8} r={expr === "miedo" ? 11 : 15} fill={ojos} />
+                    <circle cx={(mira + sac) * 8 + 5} cy={-3 + miraY * 8} r={5.5} fill="#fff" />
                   </g>
                 );
               })}
