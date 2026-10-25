@@ -1,0 +1,120 @@
+import React from "react";
+import { AbsoluteFill, interpolate, Easing } from "remotion";
+import { rnd } from "../soot/lib";
+import { C, fontFamily, ent, prog, Rayos, Particulas } from "./kit";
+import { Trampas } from "./kit2";
+
+// Piezas comunes de soot06: tarjeta de trampa (encima del mundo, sin cortar), inserto que se abre en iris desde
+// un objeto del mundo y se cierra de vuelta hacia él, marcadores numerados en el mundo y la ruta de la noche.
+
+// ── tarjeta de trampa: banda diagonal + número gigante + nombre + hora; el mundo sigue vivo atrás (oscurecido)
+export const TarjetaTrampa: React.FC<{ t: number; t0: number; t1: number; n: number; nombre: string; hora: string; color?: string }> = ({ t, t0, t1, n, nombre, hora, color = C.rojo }) => {
+  if (t < t0 - 0.05 || t > t1 + 0.4) return null;
+  const e = prog(t, t0, t0 + 0.35), s = prog(t, t1, t1 + 0.4);
+  const k = e * (1 - s);
+  const num = ent(t, t0 + 0.08, 0, { damping: 8, stiffness: 200 });
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <AbsoluteFill style={{ background: `rgba(14,8,40,${0.55 * k})` }} />
+      <div style={{ position: "absolute", left: -200, right: -200, top: 330, height: 420, background: color, transform: `skewY(-6deg) translateX(${(1 - e) * -2400 + s * 2400}px)`, boxShadow: "0 18px 0 rgba(10,5,30,.4)" }} />
+      <div style={{ position: "absolute", left: -200, right: -200, top: 300, height: 20, background: C.oro, transform: `skewY(-6deg) translateX(${(1 - e) * 2400 - s * 2400}px)` }} />
+      <div style={{ position: "absolute", left: 230, top: 540, transform: `translate(-50%,-50%) scale(${num * (1 - s)}) rotate(${(1 - num) * -30 - 6}deg)`, fontFamily, fontWeight: 700, fontSize: 420, color: C.crema, WebkitTextStroke: `30px ${C.noche}`, paintOrder: "stroke fill", lineHeight: 1 }}>{n}</div>
+      <div style={{ position: "absolute", left: 470, top: 410, transform: `translateX(${(1 - ent(t, t0 + 0.15)) * 900}px) skewY(-6deg)`, opacity: 1 - s, fontFamily, fontWeight: 700, fontSize: 64, color: C.oro, letterSpacing: 4 }}>TRAP #{n} · {hora}</div>
+      <div style={{ position: "absolute", left: 470, top: 470, transform: `translateX(${(1 - ent(t, t0 + 0.28)) * 1100}px) skewY(-6deg)`, opacity: 1 - s, fontFamily, fontWeight: 700, fontSize: 170, color: "#fff", WebkitTextStroke: `14px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap", lineHeight: 1.1 }}>{nombre}</div>
+      <div style={{ opacity: 1 - s }}><Trampas t={t} t0={t0 + 0.4} n={n} x={1300} y={820} on={C.oro} /></div>
+    </AbsoluteFill>
+  );
+};
+
+// ── inserto: escena a pantalla completa que nace en iris desde (ix, iy) — el objeto del mundo que la motiva —
+// y al final se cierra hacia (ox, oy). Fondo saturado con rayos (la vara del video 1).
+export const Inserto: React.FC<{ t: number; t0: number; t1: number; ix?: number; iy?: number; ox?: number; oy?: number; fondo?: string; fondo2?: string; rayos?: boolean; children: React.ReactNode; empuje?: number }> = ({ t, t0, t1, ix = 960, iy = 540, ox, oy, fondo = C.violeta, fondo2 = C.noche, rayos = true, children, empuje = 0.06 }) => {
+  if (t < t0 || t > t1) return null;
+  const a = interpolate(t, [t0, t0 + 0.4], [0, 1], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  const b = interpolate(t, [t1 - 0.36, t1], [1, 0], { extrapolateLeft: "clamp", easing: Easing.in(Easing.cubic) });
+  const r = Math.min(a, b);
+  const cx = t < (t0 + t1) / 2 ? ix : ox ?? ix, cy = t < (t0 + t1) / 2 ? iy : oy ?? iy;
+  const z = 1.04 + empuje * prog(t, t0, t1);
+  return (
+    <AbsoluteFill style={{ clipPath: r < 1 ? `circle(${r * 2300}px at ${cx}px ${cy}px)` : undefined }}>
+      <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 45%, ${fondo}, ${fondo2} 85%)` }} />
+      {rayos && <Rayos t={t} x={960} y={540} op={0.07} />}
+      <AbsoluteFill style={{ transform: `scale(${z})` }}>{children}</AbsoluteFill>
+      {r < 1 && <div style={{ position: "absolute", left: cx - r * 2300, top: cy - r * 2300, width: r * 4600, height: r * 4600, borderRadius: "50%", border: "16px solid #fff", boxSizing: "border-box" }} />}
+    </AbsoluteFill>
+  );
+};
+
+// ── marcador numerado clavado en el mundo (pin redondo con número) — coordenadas de mundo
+export const Marcador: React.FC<{ t: number; t0: number; x: number; y: number; n: number | string; s?: number; color?: string; t1?: number }> = ({ t, t0, x, y, n, s = 1, color = C.rojo, t1 = 1e9 }) => {
+  if (t < t0 || t > t1 + 0.3) return null;
+  const e = ent(t, t0, 0, { damping: 8, stiffness: 220 }) * (t > t1 ? Math.max(0, 1 - (t - t1) / 0.3) : 1);
+  const lat = 1 + Math.sin((t - t0) * 6) * 0.04;
+  return (
+    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -100%) scale(${e * s * lat})`, transformOrigin: "50% 100%" }}>
+      <svg width={140} height={180} viewBox="-70 -170 140 180" style={{ overflow: "visible" }}>
+        <path d="M 0 0 Q -60 -70 -60 -110 A 60 60 0 1 1 60 -110 Q 60 -70 0 0 Z" fill={color} stroke="#fff" strokeWidth={10} />
+        <text x={0} y={-86} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill="#fff">{n}</text>
+      </svg>
+    </div>
+  );
+};
+// ── ruta punteada de puntos del mundo que se dibuja de a poco (u 0..1)
+export const Ruta: React.FC<{ t: number; pts: [number, number][]; u: number; color?: string; w?: number }> = ({ t, pts, u, color = "#fff", w = 22 }) => {
+  if (u <= 0) return null;
+  let d = `M ${pts[0][0]} ${pts[0][1]}`;
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
+    d += ` C ${p1[0] + (p2[0] - p0[0]) / 6} ${p1[1] + (p2[1] - p0[1]) / 6} ${p2[0] - (p3[0] - p1[0]) / 6} ${p2[1] - (p3[1] - p1[1]) / 6} ${p2[0]} ${p2[1]}`;
+  }
+  return (
+    <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible", pointerEvents: "none" }} width={10} height={10}>
+      <path d={d} stroke="rgba(14,8,40,.55)" strokeWidth={w + 16} fill="none" strokeLinejoin="round" strokeLinecap="round" pathLength={1000} strokeDasharray={`${u * 1000} 1000`} />
+      <path d={d} stroke={color} strokeWidth={w} fill="none" strokeLinejoin="round" strokeLinecap="round" pathLength={1000} strokeDasharray={`${u * 1000} 1000`} />
+      <path d={d} stroke={C.rojo} strokeWidth={w * 0.45} fill="none" strokeLinejoin="round" strokeDasharray="30 40" strokeDashoffset={-t * 120} opacity={u >= 1 ? 1 : 0} />
+    </svg>
+  );
+};
+// ── rastrillo (portcullis) que cae en la puerta de la muralla (coordenadas de mundo)
+export const Rastrillo: React.FC<{ t: number; tc: number }> = ({ t, tc }) => {
+  if (t < tc || t > tc + 4) return null;
+  const u = Math.min(1, ((t - tc) / 0.28) ** 2);
+  const reb = t > tc + 0.28 ? Math.abs(Math.sin((t - tc - 0.28) * 20)) * Math.exp(-(t - tc - 0.28) * 8) * 30 : 0;
+  const y = 3240 + (1 - u) * -320 - reb;
+  return (
+    <div style={{ position: "absolute", left: 2490, top: 3240, width: 260, height: 480, overflow: "hidden" }}><svg style={{ position: "absolute", left: 0, top: y - 3240, overflow: "visible" }} width={260} height={480}>
+      {Array.from({ length: 6 }, (_, i) => <rect key={i} x={10 + i * 44} y={0} width={14} height={460} fill="#4a4a5a" />)}
+      {Array.from({ length: 7 }, (_, i) => <rect key={i} x={0} y={20 + i * 66} width={250} height={14} fill="#4a4a5a" />)}
+      {Array.from({ length: 6 }, (_, i) => <path key={i} d={`M ${10 + i * 44} 460 l 7 30 l 7 -30`} fill="#4a4a5a" />)}
+    </svg></div>
+  );
+};
+// ── confeti de felicitaciones (pantalla)
+export const Confeti: React.FC<{ t: number; t0: number; n?: number }> = ({ t, t0, n = 90 }) => {
+  if (t < t0 || t > t0 + 2.6) return null;
+  const r = rnd(5);
+  const u = t - t0;
+  return (
+    <svg style={{ position: "absolute", inset: 0, pointerEvents: "none" }} width={1920} height={1080}>
+      {Array.from({ length: n }, (_, i) => {
+        const a = -Math.PI / 2 + (r() - 0.5) * 2.2, v = 900 + r() * 900, ox = r() < 0.5 ? 200 : 1720;
+        const x = ox + Math.cos(a) * v * u * (ox < 960 ? 1 : -1) * 0.6, y = 1100 + Math.sin(a) * v * u + 900 * u * u;
+        return <rect key={i} x={x} y={y} width={18} height={30} fill={[C.rojo, C.oro, C.teal, C.rosa, C.lima, C.lila][i % 6]} transform={`rotate(${u * 600 * (r() - 0.5)} ${x + 9} ${y + 15})`} />;
+      })}
+    </svg>
+  );
+};
+// ── tarjetita con ícono para listas rápidas (FREEZE / STARVE / ...)
+export const Ficha: React.FC<{ t: number; t0: number; x: number; y: number; label: string; color: string; icono: React.ReactNode; tacha?: number }> = ({ t, t0, x, y, label, color, icono, tacha = 1e9 }) => {
+  if (t < t0) return null;
+  const e = ent(t, t0, 0, { damping: 9, stiffness: 220 });
+  const tc = prog(t, tacha, tacha + 0.2);
+  return (
+    <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) scale(${e}) rotate(${(1 - e) * 20}deg)`, width: 250, height: 290, background: "#fff6e0", borderRadius: 28, border: `10px solid ${color}`, boxShadow: "0 12px 0 rgba(14,8,40,.45)", overflow: "hidden" }}>
+      <svg width={230} height={200} viewBox="-115 -100 230 200" style={{ position: "absolute", left: 0, top: 6 }}>{icono}</svg>
+      <div style={{ position: "absolute", left: 0, right: 0, bottom: 10, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color }}>{label}</div>
+      {tc > 0 && <svg style={{ position: "absolute", inset: 0 }} width={230} height={270}><line x1={20} y1={20} x2={20 + 190 * tc} y2={20 + 230 * tc} stroke={C.rojo} strokeWidth={22} strokeLinecap="round" /></svg>}
+    </div>
+  );
+};
+export const Brasas: React.FC<{ t: number }> = ({ t }) => <Particulas t={t} tipo="brasas" n={40} seed={9} />;
