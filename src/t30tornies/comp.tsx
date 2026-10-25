@@ -549,6 +549,14 @@ export const PaintStack: React.FC<{ d: number; mode?: "color" | "white"; o?: Ov 
   const nOn = L.filter((_, i) => f > 10 + i * step).length;
   return (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 40% 50%, #2a3550 0%, #0b1622 80%)" }}>
+      <Push d={d} k={0.06} ox="35% 70%">
+      {/* pistola de pintura que barre la pila sin parar (la escena nunca queda quieta) */}
+      {(() => { const sx = 260 + (Math.sin(f / 22) + 1) * 380, top = 820 - (nOn + 1) * 74 - 150; return <>
+        <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}>
+          {Array.from({ length: 26 }).map((_, i) => { const t = ((f * 0.06 + i / 26) % 1); return <circle key={i} cx={sx + 40 + (rnd(i, 4) - 0.5) * 160 * t} cy={top + 90 + t * 120} r={3 + 5 * t} fill={L[Math.max(0, nOn - 1)][1]} opacity={0.7 * (1 - t)} />; })}
+        </svg>
+        <svg width={140} height={110} style={{ position: "absolute", left: sx, top }}><path d="M10,30 h80 l20,12 v14 l-20,12 h-80 Z" fill="#5d6873" stroke={INK} strokeWidth="4" /><rect x="34" y="68" width="20" height="40" rx="4" fill="#3c454f" stroke={INK} strokeWidth="4" /><rect x="40" y="6" width="30" height="24" rx="6" fill="#8a96a2" stroke={INK} strokeWidth="4" /></svg>
+      </>; })()}
       <div style={{ position: "absolute", left: 200, top: 820, width: 900, height: 70, background: "linear-gradient(180deg,#b8c0c8,#7d858d)", borderRadius: 6 }} />
       <div style={{ position: "absolute", left: 230, top: 838, fontFamily: F, fontWeight: 800, fontSize: 30, color: "#2b3036" }}>PIEL DEL AVIÓN</div>
       {L.map(([n, c], i) => {
@@ -557,7 +565,7 @@ export const PaintStack: React.FC<{ d: number; mode?: "color" | "white"; o?: Ov 
           <div style={{ position: "absolute", left: 30, top: 14, fontFamily: F, fontWeight: 800, fontSize: 32, color: i === 1 && mode === "white" || n === "FONDO" || n === "BARNIZ" || n === "BASE" ? "#2b3036" : "#fff" }}>{n}</div>
         </div>;
       })}
-      <div style={{ position: "absolute", left: 1260, top: 280 }}>
+      <div style={{ position: "absolute", left: 1260, top: 280, transform: `rotate(${Math.sin(f / 16) * 4}deg)`, transformOrigin: "50% 0%" }}>
         <svg width={460} height={520}>
           <path d="M60,440 L400,440 L360,200 L100,200 Z" fill="#2b3a4c" stroke={INK} strokeWidth="6" />
           <circle cx="230" cy="170" r="44" fill="none" stroke={INK} strokeWidth="10" />
@@ -565,6 +573,7 @@ export const PaintStack: React.FC<{ d: number; mode?: "color" | "white"; o?: Ov 
         </svg>
         <div style={{ textAlign: "center", fontFamily: F, fontWeight: 900, fontSize: 56, color: mode === "color" ? RED : "#7ee08a", marginTop: -10 }}>{mode === "color" ? "+ KILOS" : "MÁS LIVIANO"}</div>
       </div>
+      </Push>
       <Overlays o={o} />
     </AbsoluteFill>
   );
@@ -769,8 +778,12 @@ export const PatchMatch: React.FC<{ d: number; o?: Ov }> = ({ d, o = {} }) => {
   const p = ease(f, 15, 35);
   return (
     <Hangar>
+      <Push d={d} k={0.06}>
       <Jet x={520} y={480} w={820} patch={mix("#f4f5f2", "#f1f2ee", p)} />
       <Jet x={1400} y={760} w={820} body="#2f5fa8" tail="#2f5fa8" patch={mix("#2f5fa8", "#4a86c8", p)} />
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0 }}><ellipse cx={1412} cy={765} rx={110} ry={70} fill="none" stroke={RED} strokeWidth="7" strokeDasharray="22 16" strokeDashoffset={-f * 2} opacity={ease(f, 40, 50) * (0.75 + 0.25 * Math.sin(f / 6))} /></svg>
+      <Person x={180 + ((f * 2.2) % 1500)} y={960} s={0.75} walk arms="down" />
+      </Push>
       <div style={{ position: "absolute", left: 340, top: 640, fontFamily: F, fontWeight: 900, fontSize: 52, color: "#7ee08a", opacity: ease(f, 30, 40) }}>BLANCO: igual</div>
       <div style={{ position: "absolute", left: 1170, top: 920, fontFamily: F, fontWeight: 900, fontSize: 52, color: RED, opacity: ease(f, 40, 50) }}>ESPECIAL: uy</div>
       <Overlays o={o} />
