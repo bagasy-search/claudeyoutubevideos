@@ -358,6 +358,14 @@ for i, g in enumerate(segs):
     if pe < b - 1.0: add.append({"a": round(pe + 0.3, 2), "k": "w", "view": ["floor", "lot", "desk", "wide"][i % 4], "tr": "portal"})
 segs = sorted(segs + add, key=lambda g: g["a"])
 
+# sin flashes: un plano (no avatar) de menos de 1 s se funde con el anterior
+out = []
+for i, g in enumerate(segs):
+    b = segs[i + 1]["a"] if i + 1 < len(segs) else END
+    if out and g["k"] != "av" and b - g["a"] < 1.0: continue
+    out.append(g)
+segs = out
+
 def push(v, k=0.1):
     p, l, f = V[v]; return [round(p[i] + (l[i] - p[i]) * k, 3) for i in range(3)], l, f
 keys = []
