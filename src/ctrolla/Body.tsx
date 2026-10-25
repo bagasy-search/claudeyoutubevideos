@@ -83,7 +83,8 @@ export const Body: React.FC = () => {
   // plano vigente (el que ya empezó a entrar)
   let i = -1; for (let k = 0; k < PL.length; k++) if (t >= PL[k].s - TR) i = k;
   const w = WIN.find((x) => t >= x.ms - 0.15 && t < x.me);
-  const avFull = w && t >= w.ms + 0.4 && (i < 0 || t < PL[i].s - TR);
+  // avatar entero: la ventana ya abrió y el plano vigente es ANTERIOR a ella (el que sigue entra al cerrar la ventana)
+  const avFull = w && t >= w.ms + 0.4 && (i < 0 || PL[i].s - TR < w.ms);
   if (i < 0 || avFull) {
     L.push(<Avatar key="av" t={t} />);
   } else {
