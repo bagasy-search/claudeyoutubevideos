@@ -1,0 +1,39 @@
+{
+ "desc": "💍 La lista de hoy + El Método del Cerrajero",
+ "replies": [
+  {
+   "f": "🇲🇽",
+   "tx": "en la lata de galletas 😅"
+  },
+  {
+   "f": "🇦🇷",
+   "tx": "en el costurero de mi abuela"
+  },
+  {
+   "f": "🇨🇴",
+   "tx": "en el bolsillo de un abrigo viejo"
+  }
+ ],
+ "pages": {
+  "l4 64": {
+   "hl": "LAS JOYAS DE FAMILIA: FOTO, PESO Y QUIÉN LAS HEREDÓ",
+   "n": 29,
+   "bar": [
+    0.15675742953431374,
+    0.08262194045866379,
+    0.6807951085707721,
+    0.05405137033173532
+   ]
+  },
+  "l4 63": {
+   "hl": "EL INVENTARIO CON FOTOS Y NÚMEROS DE SERIE",
+   "n": 28,
+   "bar": [
+    0.16165632360121784,
+    0.08392980363633898,
+    0.7264260435416028,
+    0.027877884681778726
+   ]
+  }
+ }
+}
