@@ -586,16 +586,19 @@ export const Kids: React.FC<{ d: number; o?: Ov; lines?: string[]; at?: number; 
   const f = useCurrentFrame();
   const X = [520, 960, 1400], who = ["THE OLDEST", "THE DAUGHTER", "THE YOUNGEST"];
   return (
-    <Push d={d} k={0.05}>
+    <Push d={d} k={0.09} ox={`${50 + Math.sin(f / 70) * 8}% 45%`}>
       <AbsoluteFill style={{ background: mode === "office" ? "linear-gradient(180deg,#3a2d22,#1a130d)" : "radial-gradient(ellipse at 50% 70%, #3b2a34 0%, #0e0a10 80%)" }}>
         {mode === "office" && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, background: "repeating-linear-gradient(90deg,#4a3828 0 140px,#3e2f22 140px 280px)", opacity: 0.6 }} />}
+        {/* luz que barre despacio + polvo en el aire: la escena nunca queda quieta */}
+        <div style={{ position: "absolute", left: 960 + Math.sin(f / 45) * 620 - 520, top: 120, width: 1040, height: 900, background: "radial-gradient(closest-side, rgba(255,214,160,.22) 0%, transparent 100%)" }} />
+        {Array.from({ length: 46 }).map((_, i) => <div key={"p" + i} style={{ position: "absolute", left: (rnd(i, 4) * 1920 + f * (0.4 + rnd(i, 6))) % 1920, top: 1000 - ((rnd(i, 5) * 1000 + f * (0.8 + rnd(i, 7) * 1.2)) % 1000), width: 4, height: 4, borderRadius: 2, background: "rgba(255,230,200,.55)" }} />)}
         <div style={{ position: "absolute", left: 0, top: 900, width: 1920, height: 180, background: "#120c0a" }} />
         {X.map((x, i) => {
           const t = ease(f, 4 + i * 6, 14 + i * 6), sa = ats ? ats[i] ?? at : at + i * 26, say = ease(f, sa, sa + 10);
           const dim = hl >= 0 && hl !== i;
           return <React.Fragment key={i}>
             <div style={{ position: "absolute", left: x - 160, top: 930, width: 320, height: 40, borderRadius: "50%", background: "rgba(0,0,0,.4)" }} />
-            <div style={{ opacity: t * (dim ? 0.4 : 1) }}><Fig x={x} y={920} s={[1.75, 1.6, 1.5][i]} w={{ dark: true, skirt: i === 1 }} arms={mode === "letters" ? "hold" : mode === "phones" ? "hold" : "down"} /></div>
+            <div style={{ opacity: t * (dim ? 0.4 : 1), transform: `translate(${Math.sin(f / 26 + i * 2) * 6}px, ${Math.sin(f / 17 + i) * 3}px)` }}><Fig x={x} y={920} s={[1.75, 1.6, 1.5][i]} w={{ dark: true, skirt: i === 1 }} arms={mode === "letters" ? "hold" : mode === "phones" ? "hold" : "down"} /></div>
             {mode === "letters" && <div style={{ position: "absolute", left: x + 40, top: 600, width: 70, height: 50, background: "#f7f3ea", transform: `rotate(${-10 + Math.sin(f / 20 + i) * 3}deg)`, opacity: t }} />}
             {mode === "phones" && <div style={{ position: "absolute", left: x + 34, top: 560, width: 36, height: 64, borderRadius: 6, background: "#222", border: "3px solid #555", boxShadow: say > 0 ? `0 0 20px ${ORA}` : "none" }} />}
             <div style={{ position: "absolute", left: x - 150, top: 940, width: 300, textAlign: "center", fontFamily: F, fontWeight: 800, fontSize: 30, letterSpacing: 2, color: dim ? "rgba(240,235,229,.35)" : "rgba(240,235,229,.85)", opacity: t }}>{who[i]}</div>
