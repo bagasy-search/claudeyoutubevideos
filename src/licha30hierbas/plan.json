@@ -1,0 +1,2063 @@
+{
+"slug": "licha30hierbas",
+"end": 1900.93,
+"face": {
+"x": 920,
+"y": 500
+},
+"parts": [
+{
+"a": 4.36,
+"b": 10.49,
+"c": "hierbas_n000"
+},
+{
+"a": 10.49,
+"b": 15.51,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 19.0,
+"b": 25.04,
+"c": "hierbas_n001"
+},
+{
+"a": 25.04,
+"b": 29.98,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 33.13,
+"b": 39.41,
+"c": "hierbas_l002"
+},
+{
+"a": 39.41,
+"b": 44.55,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 49.17,
+"b": 56.31,
+"c": "hierbas_l003"
+},
+{
+"a": 56.31,
+"b": 62.16,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 66.83,
+"b": 71.96,
+"c": "hierbas_n004"
+},
+{
+"a": 71.96,
+"b": 76.15,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 80.8,
+"b": 87.86,
+"c": "hierbas_l005"
+},
+{
+"a": 87.86,
+"b": 93.63,
+"k0": "puerta",
+"k1": "puerta2"
+},
+{
+"a": 97.63,
+"b": 104.38,
+"c": "hierbas_n006"
+},
+{
+"a": 104.38,
+"b": 109.91,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 113.56,
+"b": 120.14,
+"c": "hierbas_l007"
+},
+{
+"a": 120.14,
+"b": 125.53,
+"k0": "frente",
+"k1": "patio2"
+},
+{
+"a": 130.61,
+"b": 138.11,
+"c": "hierbas_n008"
+},
+{
+"a": 138.11,
+"b": 145.07,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 149.67,
+"b": 156.35,
+"c": "hierbas_n009"
+},
+{
+"a": 156.35,
+"b": 161.82,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 166.12,
+"b": 172.49,
+"c": "hierbas_n010"
+},
+{
+"a": 172.49,
+"b": 177.71,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 183.31,
+"b": 189.89,
+"c": "hierbas_l011"
+},
+{
+"a": 189.89,
+"b": 195.27,
+"k0": "cama",
+"k1": "cama2"
+},
+{
+"a": 199.42,
+"b": 205.28,
+"k0": "jarros",
+"k1": "j0"
+},
+{
+"a": 205.28,
+"b": 209.44,
+"c": "hierbas_l012"
+},
+{
+"a": 214.39,
+"b": 221.82,
+"c": "hierbas_n013"
+},
+{
+"a": 221.82,
+"b": 227.89,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 231.6,
+"b": 238.17,
+"c": "hierbas_l014"
+},
+{
+"a": 238.17,
+"b": 243.55,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 248.52,
+"b": 254.29,
+"c": "hierbas_n015"
+},
+{
+"a": 254.29,
+"b": 259.02,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 264.22,
+"b": 271.72,
+"c": "hierbas_n016"
+},
+{
+"a": 271.72,
+"b": 278.26,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 283.32,
+"b": 289.59,
+"c": "hierbas_l017"
+},
+{
+"a": 289.59,
+"b": 294.72,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 300.13,
+"b": 307.01,
+"c": "hierbas_n018"
+},
+{
+"a": 307.01,
+"b": 312.63,
+"k0": "jarros",
+"k1": "j1"
+},
+{
+"a": 318.46,
+"b": 325.37,
+"c": "hierbas_n019"
+},
+{
+"a": 325.37,
+"b": 331.03,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 335.71,
+"b": 341.76,
+"c": "hierbas_n020"
+},
+{
+"a": 341.76,
+"b": 346.71,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 351.24,
+"b": 358.67,
+"c": "hierbas_l021"
+},
+{
+"a": 358.67,
+"b": 364.74,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 367.9,
+"b": 374.35,
+"c": "hierbas_n022"
+},
+{
+"a": 374.35,
+"b": 379.63,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 383.98,
+"b": 389.12,
+"k0": "jarros",
+"k1": "j2"
+},
+{
+"a": 389.12,
+"b": 395.06,
+"c": "hierbas_l023"
+},
+{
+"a": 400.99,
+"b": 408.14,
+"c": "hierbas_n024"
+},
+{
+"a": 408.14,
+"b": 413.99,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 418.58,
+"b": 424.91,
+"c": "hierbas_n025"
+},
+{
+"a": 424.91,
+"b": 430.08,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 434.44,
+"b": 441.94,
+"c": "hierbas_n026"
+},
+{
+"a": 441.94,
+"b": 448.37,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 453.22,
+"b": 459.8,
+"c": "hierbas_n027"
+},
+{
+"a": 459.8,
+"b": 465.19,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 470.62,
+"b": 476.84,
+"c": "hierbas_n028"
+},
+{
+"a": 476.84,
+"b": 481.92,
+"k0": "puerta",
+"k1": "puerta2"
+},
+{
+"a": 486.38,
+"b": 497.71,
+"k0": "jarros",
+"k1": "j3"
+},
+{
+"a": 497.71,
+"b": 500.71,
+"c": "hierbas_l029"
+},
+{
+"a": 504.92,
+"b": 510.84,
+"c": "hierbas_n030"
+},
+{
+"a": 510.84,
+"b": 515.68,
+"k0": "frente",
+"k1": "patio2"
+},
+{
+"a": 519.28,
+"b": 525.58,
+"c": "hierbas_n031"
+},
+{
+"a": 525.58,
+"b": 530.74,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 536.31,
+"b": 543.46,
+"c": "hierbas_n032"
+},
+{
+"a": 543.46,
+"b": 549.31,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 554.89,
+"b": 561.22,
+"c": "hierbas_l033"
+},
+{
+"a": 561.22,
+"b": 566.39,
+"k0": "hierbas2",
+"k1": "hierbas"
+},
+{
+"a": 569.75,
+"b": 576.1,
+"c": "hierbas_l034"
+},
+{
+"a": 576.1,
+"b": 581.29,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 585.96,
+"b": 592.84,
+"c": "hierbas_n035"
+},
+{
+"a": 592.84,
+"b": 598.47,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 603.27,
+"b": 609.66,
+"c": "hierbas_n036"
+},
+{
+"a": 609.66,
+"b": 614.88,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 619.68,
+"b": 626.34,
+"c": "hierbas_n037"
+},
+{
+"a": 626.34,
+"b": 631.78,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 636.96,
+"b": 643.44,
+"c": "hierbas_n038"
+},
+{
+"a": 643.44,
+"b": 648.74,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 653.75,
+"b": 659.55,
+"c": "hierbas_n039"
+},
+{
+"a": 659.55,
+"b": 664.29,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 668.42,
+"b": 676.74,
+"k0": "jarros",
+"k1": "j5"
+},
+{
+"a": 676.74,
+"b": 679.74,
+"c": "hierbas_l040"
+},
+{
+"a": 683.27,
+"b": 689.57,
+"c": "hierbas_n041"
+},
+{
+"a": 689.57,
+"b": 694.72,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 698.42,
+"b": 705.21,
+"c": "hierbas_n042"
+},
+{
+"a": 705.21,
+"b": 710.77,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 716.07,
+"b": 721.94,
+"c": "hierbas_l043"
+},
+{
+"a": 721.94,
+"b": 726.74,
+"k0": "buro",
+"k1": "buro2"
+},
+{
+"a": 730.29,
+"b": 736.34,
+"c": "hierbas_n044"
+},
+{
+"a": 736.34,
+"b": 741.29,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 747.24,
+"b": 753.86,
+"c": "hierbas_n045"
+},
+{
+"a": 753.86,
+"b": 759.27,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 764.56,
+"b": 770.19,
+"c": "hierbas_l046"
+},
+{
+"a": 770.19,
+"b": 774.79,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 779.86,
+"b": 784.85,
+"c": "hierbas_n047"
+},
+{
+"a": 784.85,
+"b": 788.94,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 794.85,
+"b": 801.71,
+"c": "hierbas_n048"
+},
+{
+"a": 801.71,
+"b": 807.33,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 812.66,
+"b": 819.28,
+"c": "hierbas_n049"
+},
+{
+"a": 819.28,
+"b": 824.69,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 828.26,
+"b": 835.43,
+"c": "hierbas_n050"
+},
+{
+"a": 835.43,
+"b": 841.3,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 847.41,
+"b": 853.52,
+"c": "hierbas_n051"
+},
+{
+"a": 853.52,
+"b": 858.52,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 863.84,
+"b": 873.24,
+"k0": "jarros",
+"k1": "j6"
+},
+{
+"a": 873.24,
+"b": 876.24,
+"c": "hierbas_l052"
+},
+{
+"a": 881.03,
+"b": 888.53,
+"c": "hierbas_n053"
+},
+{
+"a": 888.53,
+"b": 894.91,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 900.54,
+"b": 907.38,
+"c": "hierbas_n054"
+},
+{
+"a": 907.38,
+"b": 912.98,
+"k0": "hierbas2",
+"k1": "hierbas"
+},
+{
+"a": 916.09,
+"b": 921.67,
+"c": "hierbas_l055"
+},
+{
+"a": 921.67,
+"b": 926.23,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 930.04,
+"b": 936.78,
+"c": "hierbas_n056"
+},
+{
+"a": 936.78,
+"b": 942.29,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 947.18,
+"b": 952.18,
+"k0": "jarros",
+"k1": "j7"
+},
+{
+"a": 952.18,
+"b": 957.75,
+"c": "hierbas_l057"
+},
+{
+"a": 961.13,
+"b": 968.63,
+"c": "hierbas_n058"
+},
+{
+"a": 968.63,
+"b": 975.03,
+"k0": "mesaT",
+"k1": "mesa"
+},
+{
+"a": 978.78,
+"b": 985.66,
+"c": "hierbas_n059"
+},
+{
+"a": 985.66,
+"b": 991.28,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 995.68,
+"b": 1000.83,
+"c": "hierbas_l060"
+},
+{
+"a": 1000.83,
+"b": 1005.04,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 1009.46,
+"b": 1016.96,
+"c": "hierbas_n061"
+},
+{
+"a": 1016.96,
+"b": 1023.3,
+"k0": "jarros",
+"k1": "j8"
+},
+{
+"a": 1027.5,
+"b": 1033.89,
+"c": "hierbas_n062"
+},
+{
+"a": 1033.89,
+"b": 1039.12,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 1043.62,
+"b": 1049.34,
+"c": "hierbas_l063"
+},
+{
+"a": 1049.34,
+"b": 1054.02,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1057.37,
+"b": 1064.67,
+"c": "hierbas_n064"
+},
+{
+"a": 1064.67,
+"b": 1070.64,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 1075.24,
+"b": 1081.46,
+"c": "hierbas_l065"
+},
+{
+"a": 1081.46,
+"b": 1086.55,
+"k0": "hierbas2",
+"k1": "hierbas"
+},
+{
+"a": 1091.81,
+"b": 1098.27,
+"c": "hierbas_n066"
+},
+{
+"a": 1098.27,
+"b": 1103.56,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1108.7,
+"b": 1114.6,
+"c": "hierbas_n067"
+},
+{
+"a": 1114.6,
+"b": 1119.42,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 1123.75,
+"b": 1129.7,
+"c": "hierbas_n068"
+},
+{
+"a": 1129.7,
+"b": 1134.56,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1139.22,
+"b": 1146.29,
+"c": "hierbas_n069"
+},
+{
+"a": 1146.29,
+"b": 1152.08,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 1155.37,
+"b": 1161.97,
+"c": "hierbas_n070"
+},
+{
+"a": 1161.97,
+"b": 1167.37,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1170.97,
+"b": 1177.32,
+"k0": "jarros",
+"k1": "j0"
+},
+{
+"a": 1177.32,
+"b": 1180.32,
+"c": "hierbas_l071"
+},
+{
+"a": 1184.23,
+"b": 1191.7,
+"c": "hierbas_n072"
+},
+{
+"a": 1191.7,
+"b": 1197.81,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 1203.15,
+"b": 1208.72,
+"c": "hierbas_n073"
+},
+{
+"a": 1208.72,
+"b": 1213.27,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 1219.29,
+"b": 1226.06,
+"c": "hierbas_n074"
+},
+{
+"a": 1226.06,
+"b": 1231.6,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 1235.88,
+"b": 1242.93,
+"c": "hierbas_l075"
+},
+{
+"a": 1242.93,
+"b": 1248.69,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 1252.8,
+"b": 1260.89,
+"k0": "jarros",
+"k1": "j1"
+},
+{
+"a": 1260.89,
+"b": 1263.89,
+"c": "hierbas_n076"
+},
+{
+"a": 1268.69,
+"b": 1276.19,
+"c": "hierbas_n077"
+},
+{
+"a": 1276.19,
+"b": 1283.63,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1287.83,
+"b": 1294.8,
+"c": "hierbas_l078"
+},
+{
+"a": 1294.8,
+"b": 1300.5,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1305.3,
+"b": 1311.08,
+"c": "hierbas_n079"
+},
+{
+"a": 1311.08,
+"b": 1315.8,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 1320.95,
+"b": 1326.74,
+"k0": "jarros",
+"k1": "j2"
+},
+{
+"a": 1326.74,
+"b": 1333.65,
+"c": "hierbas_l080"
+},
+{
+"a": 1337.7,
+"b": 1343.69,
+"c": "hierbas_n081"
+},
+{
+"a": 1343.69,
+"b": 1348.6,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1353.01,
+"b": 1359.76,
+"c": "hierbas_n082"
+},
+{
+"a": 1359.76,
+"b": 1365.29,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 1370.52,
+"b": 1376.35,
+"c": "hierbas_n083"
+},
+{
+"a": 1376.35,
+"b": 1381.12,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1386.15,
+"b": 1392.82,
+"c": "hierbas_l084"
+},
+{
+"a": 1392.82,
+"b": 1398.27,
+"k0": "jarros",
+"k1": "j3"
+},
+{
+"a": 1403.07,
+"b": 1410.42,
+"c": "hierbas_n085"
+},
+{
+"a": 1410.42,
+"b": 1416.43,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 1421.0,
+"b": 1428.28,
+"c": "hierbas_n086"
+},
+{
+"a": 1428.28,
+"b": 1434.24,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1440.21,
+"b": 1445.59,
+"c": "hierbas_l087"
+},
+{
+"a": 1445.59,
+"b": 1449.99,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 1455.54,
+"b": 1464.45,
+"k0": "jarros",
+"k1": "j4"
+},
+{
+"a": 1464.45,
+"b": 1467.45,
+"c": "hierbas_n088"
+},
+{
+"a": 1472.56,
+"b": 1479.36,
+"c": "hierbas_l089"
+},
+{
+"a": 1479.36,
+"b": 1484.92,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 1490.91,
+"b": 1498.13,
+"c": "hierbas_n090"
+},
+{
+"a": 1498.13,
+"b": 1504.03,
+"k0": "cama2",
+"k1": "buro"
+},
+{
+"a": 1509.3,
+"b": 1516.03,
+"c": "hierbas_n091"
+},
+{
+"a": 1516.03,
+"b": 1521.53,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 1525.53,
+"b": 1531.71,
+"c": "hierbas_l092"
+},
+{
+"a": 1531.71,
+"b": 1536.77,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 1541.58,
+"b": 1549.01,
+"c": "hierbas_l093"
+},
+{
+"a": 1549.01,
+"b": 1555.08,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1559.88,
+"b": 1567.08,
+"c": "hierbas_n094"
+},
+{
+"a": 1567.08,
+"b": 1572.97,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 1576.49,
+"b": 1581.66,
+"c": "hierbas_n095"
+},
+{
+"a": 1581.66,
+"b": 1585.89,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 1591.19,
+"b": 1598.21,
+"c": "hierbas_n096"
+},
+{
+"a": 1598.21,
+"b": 1603.95,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1609.32,
+"b": 1615.65,
+"c": "hierbas_n097"
+},
+{
+"a": 1615.65,
+"b": 1620.82,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1625.87,
+"b": 1633.24,
+"c": "hierbas_n098"
+},
+{
+"a": 1633.24,
+"b": 1639.27,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 1644.06,
+"b": 1650.95,
+"c": "hierbas_l099"
+},
+{
+"a": 1650.95,
+"b": 1656.59,
+"k0": "hierbas2",
+"k1": "hierbas"
+},
+{
+"a": 1662.52,
+"b": 1668.98,
+"c": "hierbas_n100"
+},
+{
+"a": 1668.98,
+"b": 1674.26,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 1678.95,
+"b": 1686.3,
+"c": "hierbas_l101"
+},
+{
+"a": 1686.3,
+"b": 1692.31,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1696.56,
+"b": 1702.89,
+"c": "hierbas_n102"
+},
+{
+"a": 1702.89,
+"b": 1708.06,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 1711.41,
+"b": 1717.23,
+"c": "hierbas_n103"
+},
+{
+"a": 1717.23,
+"b": 1722.0,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1727.17,
+"b": 1733.68,
+"c": "hierbas_n104"
+},
+{
+"a": 1733.68,
+"b": 1739.0,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 1742.86,
+"b": 1749.61,
+"c": "hierbas_n105"
+},
+{
+"a": 1749.61,
+"b": 1755.14,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 1760.22,
+"b": 1767.1,
+"c": "hierbas_l106"
+},
+{
+"a": 1767.1,
+"b": 1772.72,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 1776.48,
+"b": 1783.49,
+"c": "hierbas_n107"
+},
+{
+"a": 1783.49,
+"b": 1789.23,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 1794.42,
+"b": 1800.68,
+"c": "hierbas_n108"
+},
+{
+"a": 1800.68,
+"b": 1805.8,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1810.75,
+"b": 1817.88,
+"c": "hierbas_l109"
+},
+{
+"a": 1817.88,
+"b": 1823.72,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1829.07,
+"b": 1836.3,
+"c": "hierbas_n110"
+},
+{
+"a": 1836.3,
+"b": 1842.22,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1847.19,
+"b": 1852.97,
+"c": "hierbas_n111"
+},
+{
+"a": 1852.97,
+"b": 1857.69,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 1863.11,
+"b": 1870.26,
+"c": "hierbas_l112"
+},
+{
+"a": 1870.26,
+"b": 1876.11,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 1881.31,
+"b": 1887.96,
+"c": "hierbas_n113"
+},
+{
+"a": 1887.96,
+"b": 1893.4,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 1898.21,
+"b": 1900.93,
+"c": "hierbas_l114"
+}
+],
+"ov": [
+{
+"a": 6.86,
+"b": 11.86,
+"k": "chips",
+"items": [
+"latas de chiles",
+"ollas despostilladas",
+"una tina de lavar"
+],
+"y": 860
+},
+{
+"a": 23.74,
+"b": 28.74,
+"k": "precio",
+"label": "EN EL SÚPER",
+"casa": "$15 epazote",
+"fuera": "$40 orégano"
+},
+{
+"a": 50.48,
+"b": 54.48,
+"k": "cinta",
+"text": "15 HIERBAS DEL PATIO"
+},
+{
+"a": 56.3,
+"b": 61.3,
+"k": "escrito",
+"text": "cómo se siembra · para qué · su medida · el error",
+"y": 880,
+"col": "#f2c14e",
+"size": 64
+},
+{
+"a": 87.42,
+"b": 95.42,
+"k": "aviso",
+"title": "NO SOY DOCTORA",
+"text": "una hierba no cura nada · si tomas pastillas o estás embarazada, pregúntale a tu doctor",
+"x": 400,
+"y": 300
+},
+{
+"a": 110.12,
+"b": 116.12,
+"k": "lower",
+"name": "TÍA LICHA",
+"l2": "63 AÑOS · LA HERMANA DE DOÑA CHAYO",
+"l2at": 113.76
+},
+{
+"a": 127.64,
+"b": 132.64,
+"k": "chips",
+"items": [
+"su farmacia",
+"su despensa",
+"su jardín"
+],
+"y": 860
+},
+{
+"a": 154.6,
+"b": 178.6,
+"k": "cta",
+"libro": "LIBRO 4 · LOS TÉS DEL PATIO",
+"pag": "página 31 · + libro 5, p. 49",
+"casa": "$2–12",
+"fuera": "$30–50",
+"qr": 192.14
+},
+{
+"a": 203.08,
+"b": 208.08,
+"k": "lbl",
+"n": 1,
+"word": "HIERBA",
+"title": "Epazote",
+"sub": "LA REINA DEL PATIO"
+},
+{
+"a": 214.62,
+"b": 223.62,
+"k": "receta",
+"title": "CÓMO SE SIEMBRA",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 215.32,
+"text": "de semilla"
+},
+{
+"at": 216.68,
+"text": "a pleno sol"
+},
+{
+"at": 218.14,
+"text": "casi no pide agua"
+}
+]
+},
+{
+"a": 226.46,
+"b": 230.46,
+"k": "tag",
+"text": "LATA DE MANTECA",
+"sub": "JUNTO AL LAVADERO",
+"x": 1520,
+"y": 760
+},
+{
+"a": 245.2,
+"b": 249.2,
+"k": "sello",
+"text": "1 RAMITA · ½ KG DE FRIJOL"
+},
+{
+"a": 249.6,
+"b": 254.6,
+"k": "error",
+"text": "EL ERROR: DEMASIADO Y DESDE EL PRINCIPIO"
+},
+{
+"a": 274.04,
+"b": 282.8,
+"k": "pizarra",
+"x": 360,
+"y": 420,
+"rows": [
+{
+"at": 276.7,
+"text": "en cantidad de cocina: poquito"
+},
+{
+"at": 281.2,
+"text": "en grandes cantidades, no"
+}
+]
+},
+{
+"a": 299.9,
+"b": 304.9,
+"k": "lbl",
+"n": 2,
+"word": "HIERBA",
+"title": "Hierbabuena",
+"sub": "LA MÁS AGRADECIDA"
+},
+{
+"a": 315.0,
+"b": 332.98,
+"k": "receta",
+"title": "CÓMO SE SIEMBRA",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 315.74,
+"text": "sombra a medias"
+},
+{
+"at": 317.22,
+"text": "mucha agua"
+},
+{
+"at": 331.38,
+"text": "siempre en su propia maceta"
+}
+]
+},
+{
+"a": 347.72,
+"b": 354.72,
+"k": "receta",
+"title": "TÉ DE DESPUÉS DE COMER",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 347.72,
+"text": "8 hojas"
+},
+{
+"at": 351.4,
+"text": "agua recién hervida · 4 min tapado"
+}
+]
+},
+{
+"a": 353.08,
+"b": 358.08,
+"k": "error",
+"text": "EL ERROR: HERVIRLA"
+},
+{
+"a": 372.66,
+"b": 377.66,
+"k": "aviso",
+"title": "OJO",
+"text": "si padeces de agruras, sobre todo en la noche",
+"x": 400,
+"y": 300
+},
+{
+"a": 402.38,
+"b": 407.38,
+"k": "lbl",
+"n": 3,
+"word": "HIERBA",
+"title": "Ruda",
+"sub": "NUNCA PARA TOMAR"
+},
+{
+"a": 421.46,
+"b": 428.46,
+"k": "receta",
+"title": "CÓMO SE SIEMBRA",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 422.02,
+"text": "a pleno sol"
+},
+{
+"at": 423.92,
+"text": "con buen drenaje"
+},
+{
+"at": 425.26,
+"text": "casi no se riega"
+}
+]
+},
+{
+"a": 456.68,
+"b": 462.68,
+"k": "error",
+"text": "LA RUDA NO SE TOMA"
+},
+{
+"a": 462.16,
+"b": 468.16,
+"k": "dicho",
+"text": "la ruda es para afuera, nunca para adentro",
+"x": 420,
+"y": 860
+},
+{
+"a": 471.14,
+"b": 477.14,
+"k": "aviso",
+"title": "EMBARAZADAS",
+"text": "ni acercarse a un té de ruda",
+"x": 400,
+"y": 300
+},
+{
+"a": 498.86,
+"b": 503.86,
+"k": "lbl",
+"n": 4,
+"word": "HIERBA",
+"title": "Romero",
+"sub": "HUELE A MONTE"
+},
+{
+"a": 519.04,
+"b": 524.04,
+"k": "error",
+"text": "EL ERROR: QUERERLO DEMASIADO"
+},
+{
+"a": 527.14,
+"b": 533.14,
+"k": "receta",
+"title": "RIEGO",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 527.14,
+"text": "1 vez por semana"
+},
+{
+"at": 528.58,
+"text": "en lluvias: nada"
+}
+]
+},
+{
+"a": 572.1,
+"b": 576.1,
+"k": "sello",
+"text": "LA MITAD DE SAL"
+},
+{
+"a": 584.04,
+"b": 589.04,
+"k": "lbl",
+"n": 5,
+"word": "HIERBA",
+"title": "Sábila",
+"sub": "NOMÁS POR FUERA"
+},
+{
+"a": 607.6,
+"b": 613.6,
+"k": "receta",
+"title": "CÓMO SE SIEMBRA",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 607.6,
+"text": "muy poquita agua"
+},
+{
+"at": 609.38,
+"text": "cada 2 semanas"
+}
+]
+},
+{
+"a": 631.94,
+"b": 636.94,
+"k": "error",
+"text": "EL ERROR: COMÉRSELA"
+},
+{
+"a": 650.28,
+"b": 655.28,
+"k": "aviso",
+"title": "QUEMADURA FUERTE",
+"text": "al doctor",
+"x": 400,
+"y": 300
+},
+{
+"a": 676.44,
+"b": 681.44,
+"k": "lbl",
+"n": 6,
+"word": "HIERBA",
+"title": "Orégano",
+"sub": "DE MACETA Y DE MONTE"
+},
+{
+"a": 703.0,
+"b": 711.0,
+"k": "receta",
+"title": "CÓMO SE SECA",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 703.84,
+"text": "en manojitos de cabeza"
+},
+{
+"at": 705.62,
+"text": "en la sombra · 1 semana"
+},
+{
+"at": 708.02,
+"text": "frasco de vidrio"
+}
+]
+},
+{
+"a": 723.78,
+"b": 728.78,
+"k": "error",
+"text": "EL ERROR: GUARDARLO AÑOS"
+},
+{
+"a": 727.94,
+"b": 731.94,
+"k": "sello",
+"text": "DURA 6 MESES"
+},
+{
+"a": 760.24,
+"b": 764.24,
+"k": "cinta",
+"text": "LOS 5 ERRORES DE LAS MACETAS",
+"col": "#e0503a"
+},
+{
+"a": 772.02,
+"b": 852.5,
+"k": "check",
+"title": "LOS 5 ERRORES",
+"x": 360,
+"y": 470,
+"labels": [
+"maceta sin agujero",
+"regar de más",
+"todas juntas",
+"no cortarlas",
+"tierra apelmazada"
+],
+"ats": [
+772.02,
+794.92,
+818.48,
+833.1,
+850.9
+]
+},
+{
+"a": 871.04,
+"b": 876.04,
+"k": "lbl",
+"n": 7,
+"word": "HIERBA",
+"title": "Albahaca",
+"sub": "LA DELICADA"
+},
+{
+"a": 895.24,
+"b": 899.24,
+"k": "hora",
+"label": "NOVIEMBRE",
+"h": 7,
+"x": 380,
+"y": 240
+},
+{
+"a": 913.32,
+"b": 918.32,
+"k": "error",
+"text": "EL ERROR: DEJAR QUE ECHE FLOR"
+},
+{
+"a": 949.98,
+"b": 954.98,
+"k": "lbl",
+"n": 8,
+"word": "HIERBA",
+"title": "Toronjil",
+"sub": "OLOR A LIMÓN"
+},
+{
+"a": 969.5,
+"b": 976.5,
+"k": "receta",
+"title": "TÉ DE LA NOCHE",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 969.5,
+"text": "5 ramitas frescas"
+},
+{
+"at": 974.34,
+"text": "agua recién hervida · 5 min tapada"
+}
+]
+},
+{
+"a": 983.32,
+"b": 988.32,
+"k": "error",
+"text": "EL ERROR: SECARLO"
+},
+{
+"a": 1011.78,
+"b": 1016.78,
+"k": "lbl",
+"n": 9,
+"word": "HIERBA",
+"title": "Manzanilla",
+"sub": "SE SIEMBRA EN INVIERNO"
+},
+{
+"a": 1040.98,
+"b": 1047.98,
+"k": "receta",
+"title": "TÉ DE MANZANILLA",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 1040.98,
+"text": "1 cucharada por taza"
+},
+{
+"at": 1045.54,
+"text": "agua recién hervida · 5 min"
+}
+]
+},
+{
+"a": 1057.64,
+"b": 1062.64,
+"k": "error",
+"text": "EL ERROR: HERVIRLA 10 MINUTOS"
+},
+{
+"a": 1063.76,
+"b": 1068.76,
+"k": "aviso",
+"title": "OJO",
+"text": "si eres alérgica a las margaritas o al polen",
+"x": 400,
+"y": 300
+},
+{
+"a": 1103.78,
+"b": 1108.78,
+"k": "lbl",
+"n": 10,
+"word": "HIERBA",
+"title": "Laurel",
+"sub": "UN ÁRBOL EN TINA"
+},
+{
+"a": 1137.82,
+"b": 1141.82,
+"k": "sello",
+"text": "2 HOJAS POR OLLA"
+},
+{
+"a": 1140.16,
+"b": 1145.16,
+"k": "error",
+"text": "EL ERROR: 5 O 6 HOJAS"
+},
+{
+"a": 1172.84,
+"b": 1175.84,
+"k": "escrito",
+"text": "sin cubito · menos sal",
+"col": "#f2c14e"
+},
+{
+"a": 1179.6,
+"b": 1184.6,
+"k": "lbl",
+"n": 11,
+"word": "HIERBA",
+"title": "Zacate limón",
+"sub": "PARA REGALAR"
+},
+{
+"a": 1207.02,
+"b": 1215.64,
+"k": "receta",
+"title": "TÉ DE ZACATE",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 1207.02,
+"text": "2 hojas en un nudito"
+},
+{
+"at": 1211.5,
+"text": "1½ taza de agua"
+},
+{
+"at": 1214.04,
+"text": "5 min a fuego bajo"
+}
+]
+},
+{
+"a": 1224.1,
+"b": 1229.1,
+"k": "error",
+"text": "EL ERROR: CORTARLO CON LA MANO"
+},
+{
+"a": 1253.18,
+"b": 1258.18,
+"k": "precio",
+"label": "UN VASO",
+"casa": "casi $0",
+"fuera": "$35"
+},
+{
+"a": 1259.2,
+"b": 1264.2,
+"k": "lbl",
+"n": 12,
+"word": "HIERBA",
+"title": "Hoja santa",
+"sub": "LA DE LOS TAMALES"
+},
+{
+"a": 1300.84,
+"b": 1305.84,
+"k": "error",
+"text": "EL ERROR: A DIARIO Y A MONTONES"
+},
+{
+"a": 1315.94,
+"b": 1319.94,
+"k": "sello",
+"text": "1 HOJA POR TAMAL"
+},
+{
+"a": 1324.54,
+"b": 1329.54,
+"k": "lbl",
+"n": 13,
+"word": "HIERBA",
+"title": "Estafiate",
+"sub": "AMARGO DE VERDAD"
+},
+{
+"a": 1362.08,
+"b": 1368.08,
+"k": "aviso",
+"title": "NI EMBARAZADAS NI NIÑOS",
+"text": "no es para tomar seguido",
+"x": 400,
+"y": 300
+},
+{
+"a": 1367.88,
+"b": 1372.88,
+"k": "error",
+"text": "EL ERROR: TOMARLO DE DIARIO"
+},
+{
+"a": 1386.56,
+"b": 1391.56,
+"k": "lbl",
+"n": 14,
+"word": "HIERBA",
+"title": "Pericón",
+"sub": "PURO MICHOACÁN"
+},
+{
+"a": 1399.54,
+"b": 1403.54,
+"k": "hora",
+"label": "28 DE SEPTIEMBRE",
+"h": 8,
+"x": 380,
+"y": 240
+},
+{
+"a": 1442.41,
+"b": 1447.41,
+"k": "error",
+"text": "EL ERROR: ECHARLE MUCHO"
+},
+{
+"a": 1464.27,
+"b": 1469.27,
+"k": "lbl",
+"n": 15,
+"word": "HIERBA",
+"title": "Mejorana",
+"sub": "PRIMA DEL ORÉGANO"
+},
+{
+"a": 1491.15,
+"b": 1495.15,
+"k": "sello",
+"text": "1 CDITA POR FRASCO"
+},
+{
+"a": 1505.89,
+"b": 1510.89,
+"k": "error",
+"text": "EL ERROR: COMO SI FUERA ORÉGANO"
+},
+{
+"a": 1532.29,
+"b": 1536.29,
+"k": "cinta",
+"text": "LAS 5 PARA EMPEZAR SIN PATIO"
+},
+{
+"a": 1534.85,
+"b": 1584.85,
+"k": "check",
+"title": "SIN PATIO",
+"x": 360,
+"y": 470,
+"labels": [
+"hierbabuena",
+"epazote",
+"toronjil",
+"romero",
+"zacate limón"
+],
+"ats": [
+1534.85,
+1549.03,
+1560.21,
+1566.57,
+1576.69
+]
+},
+{
+"a": 1600.55,
+"b": 1614.55,
+"k": "precio",
+"label": "AL MES",
+"casa": "$20 una vez",
+"fuera": "$100–150"
+},
+{
+"a": 1629.13,
+"b": 1689.13,
+"k": "nunca",
+"y": 640,
+"title": "LO QUE NUNCA HACÍA",
+"labels": [
+"cortar al mediodía",
+"secar al sol",
+"tomar lo que no conoce"
+],
+"ats": [
+1639.57,
+1662.77,
+1679.29
+]
+},
+{
+"a": 1705.01,
+"b": 1709.01,
+"k": "aviso",
+"title": "SI TOMAS PASTILLAS",
+"text": "pregúntale a tu doctor",
+"x": 400,
+"y": 300
+},
+{
+"a": 1768.95,
+"b": 1798.95,
+"k": "cta",
+"libro": "LIBRO 5 · MENOS SAL, MÁS SABOR",
+"pag": "página 49 · + libro 4, p. 31",
+"casa": "$2–48",
+"fuera": "$25–150",
+"qr": 1811.21
+},
+{
+"a": 1856.17,
+"b": 1866.17,
+"k": "chips",
+"items": [
+"maceta con agujero",
+"riego poquito",
+"cada una en su lata",
+"se cortan de arriba",
+"se secan a la sombra"
+],
+"y": 860
+},
+{
+"a": 1874.05,
+"b": 1880.05,
+"k": "comentario",
+"text": "¿Qué hierba tenía tu abuela que yo no dije?",
+"send": 1881.57
+},
+{
+"a": 1896.01,
+"b": 1899.01,
+"k": "escrito",
+"text": "siempre hay una ramita para ti",
+"col": "#c9b3ea",
+"y": 250
+}
+],
+"items": [
+203.08,
+299.9,
+386.92,
+498.86,
+584.04,
+676.44,
+871.04,
+949.98,
+1011.78,
+1103.78,
+1179.6,
+1259.2,
+1324.54,
+1386.56,
+1464.27
+],
+"noche": 0.45
+}
