@@ -1,0 +1,913 @@
+{
+"end": 770.75,
+"shots": [
+{
+"a": 0.0,
+"b": 3.62,
+"k": "real",
+"src": "img/t30tornies/real/terminal_01.jpg"
+},
+{
+"a": 3.62,
+"b": 5.2,
+"k": "real",
+"src": "img/t30tornies/real/airport2_01.jpg"
+},
+{
+"a": 5.2,
+"b": 7.06,
+"k": "real",
+"src": "img/t30tornies/real/tails_01.jpg"
+},
+{
+"a": 7.06,
+"b": 9.28,
+"k": "real",
+"src": "img/t30tornies/real/oldjet_01.jpg"
+},
+{
+"a": 9.28,
+"b": 12.7,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a18_factory_line.png"
+},
+{
+"a": 12.7,
+"b": 14.76,
+"k": "ilus",
+"src": "gate",
+"sfx": "revelacion"
+},
+{
+"a": 14.76,
+"b": 16.6,
+"k": "real",
+"src": "img/t30tornies/real/whitejet_01.jpg"
+},
+{
+"a": 16.6,
+"b": 18.1,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a03_tail_fins.png"
+},
+{
+"a": 18.1,
+"b": 20.06,
+"k": "real",
+"src": "img/t30tornies/real/gate2_01.jpg"
+},
+{
+"a": 20.06,
+"b": 29.84,
+"k": "ilus",
+"src": "copy"
+},
+{
+"a": 29.84,
+"b": 31.1,
+"k": "g",
+"src": "word",
+"sfx": "revelacion"
+},
+{
+"a": 31.1,
+"b": 36.46,
+"k": "real",
+"src": "img/t30tornies/real/a350b_01.jpg"
+},
+{
+"a": 36.46,
+"b": 37.98,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a05_hot_apron.png"
+},
+{
+"a": 37.98,
+"b": 38.88,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a20_scale.png"
+},
+{
+"a": 38.88,
+"b": 39.88,
+"k": "real",
+"src": "img/t30tornies/real/gpu_01.jpg"
+},
+{
+"a": 39.88,
+"b": 42.38,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a29_rivet_crack.png"
+},
+{
+"a": 42.38,
+"b": 44.42,
+"k": "real",
+"src": "img/t30tornies/real/composite2_01.jpg"
+},
+{
+"a": 44.42,
+"b": 46.94,
+"k": "real",
+"src": "img/t30tornies/real/cabin2_01.jpg"
+},
+{
+"a": 46.94,
+"b": 52.96,
+"k": "ilus",
+"src": "black"
+},
+{
+"a": 52.96,
+"b": 56.3,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a54_black_jet.png"
+},
+{
+"a": 56.3,
+"b": 62.38,
+"k": "g",
+"src": "board",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 62.38,
+"b": 65.3,
+"k": "real",
+"src": "img/t30tornies/real/gate2_02.jpg"
+},
+{
+"a": 65.3,
+"b": 69.02,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k02_heat_haze.mp4"
+},
+{
+"a": 69.02,
+"b": 72.46,
+"k": "real",
+"src": "img/t30tornies/real/airport2_03.jpg"
+},
+{
+"a": 72.46,
+"b": 82.44,
+"k": "ilus",
+"src": "sun"
+},
+{
+"a": 82.44,
+"b": 88.02,
+"k": "ilus",
+"src": "car",
+"sfx": "revelacion"
+},
+{
+"a": 88.02,
+"b": 93.72,
+"k": "ilus",
+"src": "car"
+},
+{
+"a": 93.72,
+"b": 95.58,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a09_hand_hood.png"
+},
+{
+"a": 95.58,
+"b": 111.8,
+"k": "ilus",
+"src": "sun",
+"big": true
+},
+{
+"a": 111.8,
+"b": 116.7,
+"k": "real",
+"src": "img/t30tornies/real/boeing787_02.jpg"
+},
+{
+"a": 116.7,
+"b": 120.28,
+"k": "ilus",
+"src": "cool"
+},
+{
+"a": 120.28,
+"b": 122.92,
+"k": "real",
+"src": "img/t30tornies/real/cabin2_02.jpg"
+},
+{
+"a": 122.92,
+"b": 128.42,
+"k": "ilus",
+"src": "cool"
+},
+{
+"a": 128.42,
+"b": 132.72,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k06_hose.mp4"
+},
+{
+"a": 132.72,
+"b": 135.46,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a14_fuel_truck.png"
+},
+{
+"a": 135.46,
+"b": 136.92,
+"k": "g",
+"src": "word"
+},
+{
+"a": 136.92,
+"b": 141.98,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k01_taxi.mp4"
+},
+{
+"a": 141.98,
+"b": 149.24,
+"k": "g",
+"src": "multi",
+"big": true
+},
+{
+"a": 149.24,
+"b": 152.84,
+"k": "real",
+"src": "img/t30tornies/real/window2_01.jpg"
+},
+{
+"a": 152.84,
+"b": 154.52,
+"k": "real",
+"src": "img/t30tornies/real/inflight_01.jpg"
+},
+{
+"a": 154.52,
+"b": 156.9,
+"k": "g",
+"src": "board",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 156.9,
+"b": 161.48,
+"k": "ilus",
+"src": "xray"
+},
+{
+"a": 161.48,
+"b": 164.34,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a15_aluminum_sheet.png"
+},
+{
+"a": 164.34,
+"b": 170.32,
+"k": "real",
+"src": "img/t30tornies/real/a350b_02.jpg"
+},
+{
+"a": 170.32,
+"b": 173.18,
+"k": "ilus",
+"src": "xray",
+"big": true
+},
+{
+"a": 173.18,
+"b": 175.84,
+"k": "real",
+"src": "img/t30tornies/real/carbon_01.jpg"
+},
+{
+"a": 175.84,
+"b": 178.14,
+"k": "real",
+"src": "img/t30tornies/real/composite2_02.jpg"
+},
+{
+"a": 178.14,
+"b": 180.34,
+"k": "real",
+"src": "img/t30tornies/real/inflight_02.jpg"
+},
+{
+"a": 180.34,
+"b": 196.717,
+"k": "ilus",
+"src": "xray"
+},
+{
+"a": 196.717,
+"b": 205.897,
+"k": "ilus",
+"src": "rules",
+"big": true
+},
+{
+"a": 205.897,
+"b": 210.117,
+"k": "g",
+"src": "rule"
+},
+{
+"a": 210.117,
+"b": 213.677,
+"k": "real",
+"src": "img/t30tornies/real/a350b_03.jpg"
+},
+{
+"a": 213.677,
+"b": 219.177,
+"k": "real",
+"src": "img/t30tornies/real/composite2_03.jpg"
+},
+{
+"a": 219.177,
+"b": 223.317,
+"k": "g",
+"src": "board",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 223.317,
+"b": 226.137,
+"k": "real",
+"src": "img/t30tornies/real/paint2_01.jpg"
+},
+{
+"a": 226.137,
+"b": 230.437,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a19_paint_can.png"
+},
+{
+"a": 230.437,
+"b": 234.997,
+"k": "real",
+"src": "img/t30tornies/real/inflight_03.jpg"
+},
+{
+"a": 234.997,
+"b": 237.937,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_k09_spray.png"
+},
+{
+"a": 237.937,
+"b": 244.797,
+"k": "ilus",
+"src": "seesaw",
+"big": true
+},
+{
+"a": 244.797,
+"b": 247.577,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a21_luggage_pile.png"
+},
+{
+"a": 247.577,
+"b": 250.477,
+"k": "ilus",
+"src": "takeoff"
+},
+{
+"a": 250.477,
+"b": 254.577,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k04_clouds.mp4"
+},
+{
+"a": 254.577,
+"b": 265.017,
+"k": "ilus",
+"src": "takeoff"
+},
+{
+"a": 265.017,
+"b": 267.497,
+"k": "real",
+"src": "img/t30tornies/real/tail2_01.jpg"
+},
+{
+"a": 267.497,
+"b": 281.757,
+"k": "ilus",
+"src": "stack",
+"big": true
+},
+{
+"a": 281.757,
+"b": 289.937,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k10_masking.mp4"
+},
+{
+"a": 289.937,
+"b": 298.737,
+"k": "ilus",
+"src": "stack"
+},
+{
+"a": 298.737,
+"b": 302.217,
+"k": "real",
+"src": "img/t30tornies/real/polished_01.jpg"
+},
+{
+"a": 302.217,
+"b": 308.557,
+"k": "real",
+"src": "img/t30tornies/real/baremetal_01.jpg"
+},
+{
+"a": 308.557,
+"b": 311.377,
+"k": "real",
+"src": "img/t30tornies/real/dc3_01.jpg"
+},
+{
+"a": 311.377,
+"b": 321.297,
+"k": "ilus",
+"src": "polish"
+},
+{
+"a": 321.297,
+"b": 328.177,
+"k": "ilus",
+"src": "polish"
+},
+{
+"a": 328.177,
+"b": 332.757,
+"k": "g",
+"src": "board",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 332.757,
+"b": 335.717,
+"k": "g",
+"src": "word",
+"sfx": "revelacion"
+},
+{
+"a": 335.717,
+"b": 338.397,
+"k": "real",
+"src": "img/t30tornies/real/inspect2_01.jpg"
+},
+{
+"a": 338.397,
+"b": 343.777,
+"k": "ilus",
+"src": "walk",
+"big": true
+},
+{
+"a": 343.777,
+"b": 349.797,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k08_hangar_doors.mp4"
+},
+{
+"a": 349.797,
+"b": 354.177,
+"k": "real",
+"src": "img/t30tornies/real/ndt_01.jpg"
+},
+{
+"a": 354.177,
+"b": 356.997,
+"k": "ilus",
+"src": "lupa"
+},
+{
+"a": 356.997,
+"b": 359.497,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a30_dent.png"
+},
+{
+"a": 359.497,
+"b": 364.437,
+"k": "real",
+"src": "img/t30tornies/real/oilleak_01.jpg"
+},
+{
+"a": 364.437,
+"b": 367.257,
+"k": "real",
+"src": "img/t30tornies/real/corrosion_01.jpg"
+},
+{
+"a": 367.257,
+"b": 376.917,
+"k": "ilus",
+"src": "lupa"
+},
+{
+"a": 376.917,
+"b": 383.397,
+"k": "ilus",
+"src": "lupa"
+},
+{
+"a": 383.397,
+"b": 390.254,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a34_white_paper.png"
+},
+{
+"a": 390.254,
+"b": 397.454,
+"k": "real",
+"src": "img/t30tornies/real/rivet2_01.jpg"
+},
+{
+"a": 397.454,
+"b": 402.154,
+"k": "real",
+"src": "img/t30tornies/real/mx2_02.jpg"
+},
+{
+"a": 402.154,
+"b": 405.574,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k07_flashlight.mp4"
+},
+{
+"a": 405.574,
+"b": 414.234,
+"k": "g",
+"src": "board",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 414.234,
+"b": 418.514,
+"k": "real",
+"src": "img/t30tornies/real/gate2_03.jpg"
+},
+{
+"a": 418.514,
+"b": 427.714,
+"k": "ilus",
+"src": "lessor"
+},
+{
+"a": 427.714,
+"b": 436.994,
+"k": "ilus",
+"src": "lease",
+"big": true
+},
+{
+"a": 436.994,
+"b": 441.914,
+"k": "real",
+"src": "img/t30tornies/real/storage_01.jpg"
+},
+{
+"a": 441.914,
+"b": 444.654,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k12_stripper.mp4"
+},
+{
+"a": 444.654,
+"b": 446.834,
+"k": "real",
+"src": "img/t30tornies/real/depaint2_01.jpg"
+},
+{
+"a": 446.834,
+"b": 458.194,
+"k": "ilus",
+"src": "hdays"
+},
+{
+"a": 458.194,
+"b": 462.054,
+"k": "real",
+"src": "img/t30tornies/real/storage_03.jpg"
+},
+{
+"a": 462.054,
+"b": 468.934,
+"k": "ilus",
+"src": "tail",
+"big": true
+},
+{
+"a": 468.934,
+"b": 480.074,
+"k": "real",
+"src": "img/t30tornies/real/boneyard_01.jpg"
+},
+{
+"a": 480.074,
+"b": 483.334,
+"k": "g",
+"src": "word"
+},
+{
+"a": 483.334,
+"b": 490.034,
+"k": "g",
+"src": "board",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 490.034,
+"b": 500.674,
+"k": "ilus",
+"src": "fade",
+"big": true
+},
+{
+"a": 500.674,
+"b": 504.334,
+"k": "ilus",
+"src": "fade"
+},
+{
+"a": 504.334,
+"b": 511.854,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a51_faded_close.png"
+},
+{
+"a": 511.854,
+"b": 518.274,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a50_faded_tail.png"
+},
+{
+"a": 518.274,
+"b": 531.374,
+"k": "ilus",
+"src": "fade"
+},
+{
+"a": 531.374,
+"b": 534.834,
+"k": "real",
+"src": "img/t30tornies/real/mx2_03.jpg"
+},
+{
+"a": 534.834,
+"b": 539.494,
+"k": "g",
+"src": "board",
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 539.494,
+"b": 547.774,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a52_patch.png"
+},
+{
+"a": 547.774,
+"b": 550.894,
+"k": "real",
+"src": "img/t30tornies/real/apron_01.jpg"
+},
+{
+"a": 550.894,
+"b": 554.774,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a53_paint_chips.png"
+},
+{
+"a": 554.774,
+"b": 563.894,
+"k": "ilus",
+"src": "patch"
+},
+{
+"a": 563.894,
+"b": 583.572,
+"k": "g",
+"src": "board",
+"big": true
+},
+{
+"a": 583.572,
+"b": 590.232,
+"k": "g",
+"src": "board",
+"big": true
+},
+{
+"a": 590.232,
+"b": 596.672,
+"k": "g",
+"src": "word",
+"sfx": "revelacion"
+},
+{
+"a": 596.672,
+"b": 602.592,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a54_black_jet.png"
+},
+{
+"a": 602.592,
+"b": 608.372,
+"k": "real",
+"src": "img/t30tornies/real/gates_01.jpg"
+},
+{
+"a": 608.372,
+"b": 611.832,
+"k": "real",
+"src": "img/t30tornies/real/terminal_02.jpg"
+},
+{
+"a": 611.832,
+"b": 616.052,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a54_black_jet.png"
+},
+{
+"a": 616.052,
+"b": 623.812,
+"k": "ilus",
+"src": "black"
+},
+{
+"a": 623.812,
+"b": 627.512,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k18_black_taxi.mp4"
+},
+{
+"a": 627.512,
+"b": 637.152,
+"k": "ilus",
+"src": "black"
+},
+{
+"a": 637.152,
+"b": 639.612,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a56_phone_photo.png"
+},
+{
+"a": 639.612,
+"b": 643.812,
+"k": "real",
+"src": "img/t30tornies/real/a350b_04.jpg"
+},
+{
+"a": 643.812,
+"b": 651.372,
+"k": "ilus",
+"src": "black"
+},
+{
+"a": 651.372,
+"b": 660.672,
+"k": "real",
+"src": "img/t30tornies/real/composite2_04.jpg"
+},
+{
+"a": 660.672,
+"b": 675.412,
+"k": "ilus",
+"src": "black"
+},
+{
+"a": 675.412,
+"b": 681.912,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a55_black_top_light.png"
+},
+{
+"a": 681.912,
+"b": 696.132,
+"k": "ilus",
+"src": "black"
+},
+{
+"a": 696.132,
+"b": 697.852,
+"k": "real",
+"src": "img/t30tornies/real/gate2_05.jpg"
+},
+{
+"a": 697.852,
+"b": 703.732,
+"k": "g",
+"src": "word",
+"sfx": "revelacion"
+},
+{
+"a": 703.732,
+"b": 712.272,
+"k": "real",
+"src": "img/t30tornies/real/terminal2_01.jpg"
+},
+{
+"a": 712.272,
+"b": 717.012,
+"k": "ilus",
+"src": "gate"
+},
+{
+"a": 717.012,
+"b": 720.572,
+"k": "real",
+"src": "img/t30tornies/real/mx2_04.jpg"
+},
+{
+"a": 720.572,
+"b": 722.752,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a06_roof_sun.png"
+},
+{
+"a": 722.752,
+"b": 724.932,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a48_paint_drums.png"
+},
+{
+"a": 724.932,
+"b": 727.472,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a37_paint_hangar.png"
+},
+{
+"a": 727.472,
+"b": 730.772,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k15_rivets_light.mp4"
+},
+{
+"a": 730.772,
+"b": 734.832,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a02_row_white.png"
+},
+{
+"a": 734.832,
+"b": 739.792,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 739.792,
+"b": 747.032,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 747.032,
+"b": 754.012,
+"k": "real",
+"src": "img/t30tornies/ag/t30tornies_a58_seat_window.png"
+},
+{
+"a": 754.012,
+"b": 760.332,
+"k": "ilus",
+"src": "win"
+},
+{
+"a": 760.332,
+"b": 763.552,
+"k": "g",
+"src": "ask"
+},
+{
+"a": 763.552,
+"b": 768.552,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k20_window_clouds.mp4"
+},
+{
+"a": 768.552,
+"b": 770.75,
+"k": "real",
+"src": "broll/t30tornies/t30tornies_k19_dusk_gates.mp4"
+}
+]
+}

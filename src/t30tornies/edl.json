@@ -1,0 +1,2059 @@
+{
+"end": 770.75,
+"shots": [
+{
+"a": 0.0,
+"b": 3.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/terminal_01.jpg",
+"o": {
+"label": "Cualquier aeropuerto",
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 3.62,
+"b": 5.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/airport2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 5.2,
+"b": 7.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/tails_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 7.06,
+"b": 9.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/oldjet_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 9.28,
+"b": 12.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a18_factory_line.png"
+}
+},
+{
+"a": 12.7,
+"b": 14.76,
+"k": "ilus",
+"t": "gate",
+"p": {
+"mode": "row",
+"o": {
+"big": {
+"w": "BLANCOS.",
+"size": 230,
+"y": 330,
+"a": 25
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 14.76,
+"b": 16.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/whitejet_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 16.6,
+"b": 18.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a03_tail_fins.png"
+}
+},
+{
+"a": 18.1,
+"b": 20.06,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/gate2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 20.06,
+"b": 29.84,
+"k": "ilus",
+"t": "copy",
+"p": {
+"o": {
+"aside": {
+"t": "¿cuestión de gusto?",
+"x": 1180,
+"y": 330,
+"a": 88
+}
+}
+}
+},
+{
+"a": 29.84,
+"b": 31.1,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "NO ES ASÍ.",
+"a": 2,
+"size": 200,
+"y": 400
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 31.1,
+"b": 36.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/a350b_01.jpg",
+"o": {
+"build": {
+"lines": [
+"decisiones *calculadas.*"
+],
+"a": 80
+},
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 36.46,
+"b": 37.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a05_hot_apron.png",
+"o": {
+"label": "el sol"
+}
+}
+},
+{
+"a": 37.98,
+"b": 38.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a20_scale.png",
+"o": {
+"label": "el peso"
+}
+}
+},
+{
+"a": 38.88,
+"b": 39.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/gpu_01.jpg",
+"o": {
+"label": "el dinero",
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 39.88,
+"b": 42.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a29_rivet_crack.png",
+"o": {
+"label": "grietas"
+}
+}
+},
+{
+"a": 42.38,
+"b": 44.42,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30tornies/real/composite2_01.jpg",
+"ar": 1.25,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 44.42,
+"b": 46.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/cabin2_01.jpg",
+"o": {
+"aside": {
+"t": "casi nadie lo sabe.",
+"x": 1150,
+"y": 330,
+"a": 43
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 46.94,
+"b": 52.96,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "photo",
+"o": {
+"build": {
+"lines": [
+"aviones pintados de *NEGRO.*"
+],
+"a": 37
+}
+}
+}
+},
+{
+"a": 52.96,
+"b": 56.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a54_black_jet.png"
+}
+},
+{
+"a": 56.3,
+"b": 62.38,
+"k": "g",
+"t": "board",
+"p": {
+"n": 0,
+"o": {
+"build": {
+"lines": [
+"El *sol.*"
+],
+"y": 60,
+"size": 90,
+"a": 145
+}
+}
+},
+"sfx": "whoosh",
+"roster": 1,
+"big": true
+},
+{
+"a": 62.38,
+"b": 65.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/gate2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 65.3,
+"b": 69.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k02_heat_haze.mp4",
+"rate": 0.721
+}
+},
+{
+"a": 69.02,
+"b": 72.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/airport2_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 72.46,
+"b": 82.44,
+"k": "ilus",
+"t": "sun",
+"p": {
+"mode": "one",
+"at": 15,
+"o": {
+"build": {
+"lines": [
+"una superficie *enorme*"
+],
+"size": 90,
+"a": 121
+}
+}
+}
+},
+{
+"a": 82.44,
+"b": 88.02,
+"k": "ilus",
+"t": "car",
+"p": {
+"mode": "black",
+"at": 140,
+"o": {
+"big": {
+"w": "¡QUEMA!",
+"size": 170,
+"y": 200,
+"a": 140
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 88.02,
+"b": 93.72,
+"k": "ilus",
+"t": "car",
+"p": {
+"mode": "white",
+"at": 131
+}
+},
+{
+"a": 93.72,
+"b": 95.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a09_hand_hood.png"
+}
+},
+{
+"a": 95.58,
+"b": 111.8,
+"k": "ilus",
+"t": "sun",
+"p": {
+"mode": "duel",
+"at": 109,
+"o": {
+"build": {
+"lines": [
+"El blanco *refleja.*"
+],
+"a": 4,
+"size": 88,
+"y": 40
+}
+}
+},
+"big": true
+},
+{
+"a": 111.8,
+"b": 116.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/boeing787_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 116.7,
+"b": 120.28,
+"k": "ilus",
+"t": "cool",
+"p": {
+"mode": "heat",
+"o": {
+"build": {
+"lines": [
+"la cabina *se calienta.*"
+],
+"size": 90,
+"y": 60,
+"a": 58
+}
+}
+}
+},
+{
+"a": 120.28,
+"b": 122.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/cabin2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 122.92,
+"b": 128.42,
+"k": "ilus",
+"t": "cool",
+"p": {
+"mode": "cool",
+"o": {
+"label": "APU + aire de tierra"
+}
+}
+},
+{
+"a": 128.42,
+"b": 132.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k06_hose.mp4",
+"rate": 0.678
+}
+},
+{
+"a": 132.72,
+"b": 135.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a14_fuel_truck.png"
+}
+},
+{
+"a": 135.46,
+"b": 136.92,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"Todo eso *cuesta.*"
+],
+"a": 2,
+"y": 420,
+"size": 100
+}
+}
+}
+},
+{
+"a": 136.92,
+"b": 141.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k01_taxi.mp4",
+"o": {
+"build": {
+"lines": [
+"menos calor *adentro.*"
+],
+"a": 98
+}
+},
+"rate": 0.576
+}
+},
+{
+"a": 141.98,
+"b": 149.24,
+"k": "g",
+"t": "multi",
+"p": {
+"at": 97,
+"o": {
+"build": {
+"lines": [
+"una cantidad de dinero *enorme*"
+],
+"y": 860,
+"size": 80,
+"a": 161
+}
+}
+},
+"big": true
+},
+{
+"a": 149.24,
+"b": 152.84,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30tornies/real/window2_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 152.84,
+"b": 154.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/inflight_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 154.52,
+"b": 156.9,
+"k": "g",
+"t": "board",
+"p": {
+"n": 1
+},
+"sfx": "whoosh",
+"roster": 2,
+"big": true
+},
+{
+"a": 156.9,
+"b": 161.48,
+"k": "ilus",
+"t": "xray",
+"p": {
+"mode": "alu"
+}
+},
+{
+"a": 161.48,
+"b": 164.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a15_aluminum_sheet.png"
+}
+},
+{
+"a": 164.34,
+"b": 170.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/a350b_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 170.32,
+"b": 173.18,
+"k": "ilus",
+"t": "xray",
+"p": {
+"mode": "cfrp",
+"o": {
+"build": {
+"lines": [
+"materiales *compuestos*"
+],
+"size": 90,
+"y": 60,
+"a": 17
+}
+}
+},
+"big": true
+},
+{
+"a": 173.18,
+"b": 175.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/carbon_01.jpg",
+"o": {
+"label": "fibra de carbono",
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 175.84,
+"b": 178.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/composite2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 178.14,
+"b": 180.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/inflight_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 180.34,
+"b": 196.717,
+"k": "ilus",
+"t": "xray",
+"p": {
+"mode": "heat",
+"o": {
+"build": {
+"lines": [
+"una *debilidad.*"
+],
+"a": 4,
+"size": 100,
+"y": 60
+}
+}
+}
+},
+{
+"a": 196.717,
+"b": 205.897,
+"k": "ilus",
+"t": "rules",
+"p": {
+"o": {
+"build": {
+"lines": [
+"cuánto puede ir *oscuro*"
+],
+"size": 86,
+"y": 60,
+"a": 231
+}
+}
+},
+"big": true
+},
+{
+"a": 205.897,
+"b": 210.117,
+"k": "g",
+"t": "rule",
+"p": {
+"at": 76
+}
+},
+{
+"a": 210.117,
+"b": 213.677,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/a350b_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 213.677,
+"b": 219.177,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/composite2_03.jpg",
+"o": {
+"build": {
+"lines": [
+"prácticamente *obligatorio.*"
+],
+"a": 52
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 219.177,
+"b": 223.317,
+"k": "g",
+"t": "board",
+"p": {
+"n": 2,
+"o": {
+"build": {
+"lines": [
+"El *peso.*"
+],
+"y": 60,
+"size": 90,
+"a": 41
+}
+}
+},
+"sfx": "whoosh",
+"roster": 3,
+"big": true
+},
+{
+"a": 223.317,
+"b": 226.137,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/paint2_01.jpg",
+"o": {
+"build": {
+"lines": [
+"la pintura *pesa.*"
+],
+"a": 38
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 226.137,
+"b": 230.437,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a19_paint_can.png",
+"o": {
+"aside": {
+"t": "no pesa nada.",
+"x": 1180,
+"y": 320,
+"a": 84
+}
+}
+}
+},
+{
+"a": 230.437,
+"b": 234.997,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30tornies/real/inflight_03.jpg",
+"ar": 1.2843,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 234.997,
+"b": 237.937,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_k09_spray.png",
+"o": {
+"build": {
+"lines": [
+"*cientos* de kilos"
+],
+"color": "#edb269",
+"a": 58
+}
+}
+}
+},
+{
+"a": 237.937,
+"b": 244.797,
+"k": "ilus",
+"t": "seesaw",
+"p": {
+"o": {
+"build": {
+"lines": [
+"pintura *≈ pasajeros*"
+],
+"size": 86,
+"y": 60,
+"a": 130
+}
+}
+},
+"big": true
+},
+{
+"a": 244.797,
+"b": 247.577,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a21_luggage_pile.png"
+}
+},
+{
+"a": 247.577,
+"b": 250.477,
+"k": "ilus",
+"t": "takeoff",
+"p": {
+"mode": "lift"
+}
+},
+{
+"a": 250.477,
+"b": 254.577,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k04_clouds.mp4",
+"o": {
+"aside": {
+"t": "eso es combustible.",
+"x": 1150,
+"y": 330,
+"a": 77
+}
+},
+"rate": 0.589
+}
+},
+{
+"a": 254.577,
+"b": 265.017,
+"k": "ilus",
+"t": "takeoff",
+"p": {
+"mode": "years",
+"o": {
+"build": {
+"lines": [
+"*muchísimo* combustible"
+],
+"size": 90,
+"y": 60,
+"a": 260
+}
+}
+}
+},
+{
+"a": 265.017,
+"b": 267.497,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/tail2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 267.497,
+"b": 281.757,
+"k": "ilus",
+"t": "stack",
+"p": {
+"mode": "color",
+"o": {
+"build": {
+"lines": [
+"más *capas.*"
+],
+"size": 90,
+"y": 40,
+"a": 70
+}
+}
+},
+"big": true
+},
+{
+"a": 281.757,
+"b": 289.937,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k10_masking.mp4",
+"rate": 0.4
+}
+},
+{
+"a": 289.937,
+"b": 298.737,
+"k": "ilus",
+"t": "stack",
+"p": {
+"mode": "white",
+"o": {
+"build": {
+"lines": [
+"más simple. *Más liviano.*"
+],
+"size": 86,
+"y": 40,
+"a": 158
+}
+}
+}
+},
+{
+"a": 298.737,
+"b": 302.217,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/polished_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 302.217,
+"b": 308.557,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/baremetal_01.jpg",
+"o": {
+"label": "aluminio pelado",
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 308.557,
+"b": 311.377,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/dc3_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 311.377,
+"b": 321.297,
+"k": "ilus",
+"t": "polish",
+"p": {
+"mode": "shine",
+"o": {
+"aside": {
+"t": "días. de pulir.",
+"x": 1080,
+"y": 420,
+"a": 253
+}
+}
+}
+},
+{
+"a": 321.297,
+"b": 328.177,
+"k": "ilus",
+"t": "polish",
+"p": {
+"mode": "back",
+"o": {
+"build": {
+"lines": [
+"eligieron el *blanco.*"
+],
+"size": 96,
+"y": 60,
+"a": 123
+}
+}
+}
+},
+{
+"a": 328.177,
+"b": 332.757,
+"k": "g",
+"t": "board",
+"p": {
+"n": 3
+},
+"sfx": "whoosh",
+"roster": 4,
+"big": true
+},
+{
+"a": 332.757,
+"b": 335.717,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "GRIETAS.",
+"a": 2,
+"size": 230,
+"y": 400
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 335.717,
+"b": 338.397,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/inspect2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 338.397,
+"b": 343.777,
+"k": "ilus",
+"t": "walk",
+"p": {
+"o": {
+"label": "la vuelta de inspección"
+}
+},
+"big": true
+},
+{
+"a": 343.777,
+"b": 349.797,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k08_hangar_doors.mp4",
+"rate": 0.484
+}
+},
+{
+"a": 349.797,
+"b": 354.177,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/ndt_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 354.177,
+"b": 356.997,
+"k": "ilus",
+"t": "lupa",
+"p": {
+"mode": "white",
+"find": "crack"
+}
+},
+{
+"a": 356.997,
+"b": 359.497,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a30_dent.png"
+}
+},
+{
+"a": 359.497,
+"b": 364.437,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/oilleak_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 364.437,
+"b": 367.257,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/corrosion_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 367.257,
+"b": 376.917,
+"k": "ilus",
+"t": "lupa",
+"p": {
+"mode": "white",
+"find": "all",
+"o": {
+"build": {
+"lines": [
+"resalta *enseguida.*"
+],
+"size": 90,
+"y": 60,
+"a": 235
+}
+}
+}
+},
+{
+"a": 376.917,
+"b": 383.397,
+"k": "ilus",
+"t": "lupa",
+"p": {
+"mode": "dark",
+"find": "all",
+"o": {
+"build": {
+"lines": [
+"se pueden *esconder.*"
+],
+"size": 90,
+"y": 60,
+"a": 152
+}
+}
+}
+},
+{
+"a": 383.397,
+"b": 390.254,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a34_white_paper.png",
+"o": {
+"build": {
+"lines": [
+"una hoja de papel *limpia.*"
+],
+"a": 59
+}
+}
+}
+},
+{
+"a": 390.254,
+"b": 397.454,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/rivet2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 397.454,
+"b": 402.154,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/mx2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 402.154,
+"b": 405.574,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k07_flashlight.mp4",
+"o": {
+"aside": {
+"t": "más tranquilidad.",
+"x": 1180,
+"y": 330,
+"a": 59
+}
+},
+"rate": 0.853
+}
+},
+{
+"a": 405.574,
+"b": 414.234,
+"k": "g",
+"t": "board",
+"p": {
+"n": 4,
+"o": {
+"build": {
+"lines": [
+"no el del *combustible.*"
+],
+"y": 60,
+"size": 88,
+"a": 133
+}
+}
+},
+"sfx": "whoosh",
+"roster": 5,
+"big": true
+},
+{
+"a": 414.234,
+"b": 418.514,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/gate2_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 418.514,
+"b": 427.714,
+"k": "ilus",
+"t": "lessor",
+"p": {
+"o": {
+"build": {
+"lines": [
+"*alquilados.*"
+],
+"size": 110,
+"y": 60,
+"a": 115
+}
+}
+}
+},
+{
+"a": 427.714,
+"b": 436.994,
+"k": "ilus",
+"t": "lease",
+"p": {
+"o": {
+"build": {
+"lines": [
+"a veces en otro *continente.*"
+],
+"size": 84,
+"y": 40,
+"a": 230
+}
+}
+},
+"big": true
+},
+{
+"a": 436.994,
+"b": 441.914,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/storage_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 441.914,
+"b": 444.654,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k12_stripper.mp4",
+"rate": 0.979
+}
+},
+{
+"a": 444.654,
+"b": 446.834,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/depaint2_01.jpg",
+"o": {
+"aside": {
+"t": "no es una pared.",
+"x": 1180,
+"y": 330,
+"a": 12
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 446.834,
+"b": 458.194,
+"k": "ilus",
+"t": "hdays",
+"p": {
+"o": {
+"build": {
+"lines": [
+"un día *perdido.*"
+],
+"size": 96,
+"y": 60,
+"a": 293
+}
+}
+}
+},
+{
+"a": 458.194,
+"b": 462.054,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/storage_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 462.054,
+"b": 468.934,
+"k": "ilus",
+"t": "tail",
+"p": {},
+"big": true
+},
+{
+"a": 468.934,
+"b": 480.074,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/boneyard_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 480.074,
+"b": 483.334,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"se vende más fácil.",
+"se renta *más fácil.*"
+],
+"a": 2,
+"y": 380,
+"size": 100
+}
+}
+}
+},
+{
+"a": 483.334,
+"b": 490.034,
+"k": "g",
+"t": "board",
+"p": {
+"n": 5
+},
+"sfx": "whoosh",
+"roster": 6,
+"big": true
+},
+{
+"a": 490.034,
+"b": 500.674,
+"k": "ilus",
+"t": "fade",
+"p": {
+"mode": "sky",
+"o": {
+"build": {
+"lines": [
+"la radiación es *más fuerte*"
+],
+"size": 86,
+"y": 60,
+"a": 290
+}
+}
+},
+"big": true
+},
+{
+"a": 500.674,
+"b": 504.334,
+"k": "ilus",
+"t": "fade",
+"p": {
+"mode": "tail"
+}
+},
+{
+"a": 504.334,
+"b": 511.854,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a51_faded_close.png",
+"o": {
+"label": "rojo → rosado"
+}
+}
+},
+{
+"a": 511.854,
+"b": 518.274,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a50_faded_tail.png"
+}
+},
+{
+"a": 518.274,
+"b": 531.374,
+"k": "ilus",
+"t": "fade",
+"p": {
+"mode": "white",
+"o": {
+"build": {
+"lines": [
+"sigue pareciendo *blanco.*"
+],
+"size": 96,
+"y": 60,
+"a": 186
+}
+}
+}
+},
+{
+"a": 531.374,
+"b": 534.834,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/mx2_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 534.834,
+"b": 539.494,
+"k": "g",
+"t": "board",
+"p": {
+"n": 6
+},
+"sfx": "whoosh",
+"roster": 7,
+"big": true
+},
+{
+"a": 539.494,
+"b": 547.774,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a52_patch.png"
+}
+},
+{
+"a": 547.774,
+"b": 550.894,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/apron_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 550.894,
+"b": 554.774,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a53_paint_chips.png",
+"o": {
+"aside": {
+"t": "complicado.",
+"x": 1200,
+"y": 330,
+"a": 91
+}
+}
+}
+},
+{
+"a": 554.774,
+"b": 563.894,
+"k": "ilus",
+"t": "patch",
+"p": {}
+},
+{
+"a": 563.894,
+"b": 583.572,
+"k": "g",
+"t": "board",
+"p": {
+"all": true,
+"at": [
+146,
+266,
+375,
+482,
+99999,
+99999,
+99999
+]
+},
+"roster": 8,
+"big": true
+},
+{
+"a": 583.572,
+"b": 590.232,
+"k": "g",
+"t": "board",
+"p": {
+"all": true,
+"at": [
+-20,
+-20,
+-20,
+-20,
+0,
+107,
+149
+]
+},
+"big": true
+},
+{
+"a": 590.232,
+"b": 596.672,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "SIETE.",
+"size": 250,
+"y": 380,
+"a": 47
+},
+"build": {
+"lines": [
+"empujando hacia el *mismo color.*"
+],
+"y": 760,
+"size": 70,
+"a": 101
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 596.672,
+"b": 602.592,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a54_black_jet.png"
+}
+},
+{
+"a": 602.592,
+"b": 608.372,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30tornies/real/gates_01.jpg",
+"ar": 1.25,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 608.372,
+"b": 611.832,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/terminal_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 611.832,
+"b": 616.052,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a54_black_jet.png"
+}
+},
+{
+"a": 616.052,
+"b": 623.812,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "photo",
+"o": {
+"aside": {
+"t": "¡uuuh!",
+"x": 1180,
+"y": 280,
+"a": 154
+}
+}
+}
+},
+{
+"a": 623.812,
+"b": 627.512,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k18_black_taxi.mp4",
+"rate": 0.77
+}
+},
+{
+"a": 627.512,
+"b": 637.152,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "heat",
+"o": {
+"build": {
+"lines": [
+"un gasto de *publicidad*"
+],
+"size": 86,
+"y": 40,
+"a": 238
+}
+}
+}
+},
+{
+"a": 637.152,
+"b": 639.612,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a56_phone_photo.png"
+}
+},
+{
+"a": 639.612,
+"b": 643.812,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/a350b_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 643.812,
+"b": 651.372,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "special",
+"o": {
+"build": {
+"lines": [
+"oscuras… pero *reflejan*"
+],
+"size": 86,
+"y": 40,
+"a": 119
+}
+}
+}
+},
+{
+"a": 651.372,
+"b": 660.672,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/composite2_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 660.672,
+"b": 675.412,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "top",
+"o": {
+"scrib": {
+"cx": 900,
+"cy": 470,
+"rx": 560,
+"ry": 90,
+"text": "más clara arriba.",
+"tx": 980,
+"ty": 230,
+"a": 312
+}
+}
+}
+},
+{
+"a": 675.412,
+"b": 681.912,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a55_black_top_light.png"
+}
+},
+{
+"a": 681.912,
+"b": 696.132,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "pays",
+"o": {
+"build": {
+"lines": [
+"paga por *llamar* la atención."
+],
+"size": 86,
+"y": 330,
+"a": 146
+}
+}
+}
+},
+{
+"a": 696.132,
+"b": 697.852,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/gate2_05.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 697.852,
+"b": 703.732,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "BLANCO.",
+"size": 250,
+"y": 400,
+"a": 118
+},
+"build": {
+"lines": [
+"la regla sigue siendo:"
+],
+"a": 4,
+"y": 230,
+"size": 80
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 703.732,
+"b": 712.272,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/terminal2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 712.272,
+"b": 717.012,
+"k": "ilus",
+"t": "gate",
+"p": {
+"mode": "end",
+"o": {
+"build": {
+"lines": [
+"no son *aburridos.*"
+],
+"size": 100,
+"y": 60,
+"a": 94
+}
+}
+}
+},
+{
+"a": 717.012,
+"b": 720.572,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/real/mx2_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 720.572,
+"b": 722.752,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a06_roof_sun.png"
+}
+},
+{
+"a": 722.752,
+"b": 724.932,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a48_paint_drums.png"
+}
+},
+{
+"a": 724.932,
+"b": 727.472,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a37_paint_hangar.png"
+}
+},
+{
+"a": 727.472,
+"b": 730.772,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k15_rivets_light.mp4",
+"rate": 0.894
+}
+},
+{
+"a": 730.772,
+"b": 734.832,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a02_row_white.png",
+"o": {
+"build": {
+"lines": [
+"un color que nadie",
+"se detiene a *mirar.*"
+],
+"a": 65
+}
+}
+}
+},
+{
+"a": 734.832,
+"b": 739.792,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Alguna vez se subió a un avión que no fuera blanco?",
+"bell": false
+}
+},
+{
+"a": 739.792,
+"b": 747.032,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿De qué color era, y de qué aerolínea?",
+"bell": false
+}
+},
+{
+"a": 747.032,
+"b": 754.012,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornies/ag/t30tornies_a58_seat_window.png"
+}
+},
+{
+"a": 754.012,
+"b": 760.332,
+"k": "ilus",
+"t": "win",
+"p": {
+"o": {
+"build": {
+"lines": [
+"Próxima semana:",
+"ventanillas *redondas.*"
+],
+"a": 4,
+"size": 90,
+"y": 60
+}
+}
+}
+},
+{
+"a": 760.332,
+"b": 763.552,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbase y active la campanita."
+}
+},
+{
+"a": 763.552,
+"b": 768.552,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k20_window_clouds.mp4",
+"o": {
+"build": {
+"lines": [
+"los detalles que hacen",
+"que todo *funcione.*"
+],
+"a": 88
+}
+},
+"rate": 0.59
+}
+},
+{
+"a": 768.552,
+"b": 770.75,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornies/t30tornies_k19_dusk_gates.mp4"
+}
+}
+]
+}
