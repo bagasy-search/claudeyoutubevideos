@@ -15,6 +15,7 @@ import { P5 } from "./P5";
 import { P6 } from "./P6";
 import { P7 } from "./P7";
 import { P8 } from "./P8";
+import { Cuadro0 } from "./Cuadro0";
 
 // Soot 04 completo: UN mundo, UNA cámara. Cada parte aporta sus claves de cámara, su paleta y lo que pone
 // en el mundo (detrás de las olas / en el mundo / delante del agua) y en pantalla (hud). Tiempo absoluto.
@@ -58,6 +59,7 @@ export const Completo: React.FC = () => {
           {act.map((p, i) => <React.Fragment key={`h${i}`}>{p.hud?.(t)}</React.Fragment>)}
         </CamCtx.Provider>
       </CamaraMano>
+      <Cuadro0 t={t} />
     </AbsoluteFill>
   );
 };
