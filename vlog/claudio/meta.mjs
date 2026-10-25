@@ -13,7 +13,7 @@ const card = (await get("tracked_channels?select=plan&id=eq.303"))[0].plan.find(
 if (!card) throw new Error("no hay tarjeta con ?src=" + SLUG);
 const desc = fs.readFileSync(R + `vlog/${SLUG}/desc.txt`, "utf8").trim();
 if (!desc.includes("[[CHAPTERS]]")) throw new Error("desc.txt sin [[CHAPTERS]]");
-const linea1 = `${CF.cta} 👉 ${card.cta_url.split("?")[0]}`;  // link LIMPIO sin ?src= (feedback_cta_primer_renglon_todos_los_videos, 24-oct)
+const linea1 = `${CF.cta} 👉 ${card.cta_url.split("?")[0].replace(/\/$/, "")}`;  // link LIMPIO sin ?src= (feedback_cta_primer_renglon_todos_los_videos, 24-oct)
 const meta = { title: card.title, description: linea1 + "\n\n" + desc.replace("[[CHAPTERS]]", chapters), pinned_comment: CF.pinned };
 const all = JSON.stringify(meta);
 if (/gratis|free|regal|sin costo/i.test(all)) throw new Error("⛔ la meta ofrece algo GRATIS: " + all.match(/.{0,40}(gratis|free|regal|sin costo).{0,40}/i)[0]);
