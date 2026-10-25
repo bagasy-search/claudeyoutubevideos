@@ -40,7 +40,7 @@ const Carta: React.FC<{ t: number; t0: number; x: number; y: number; k: "calor" 
     </div>
   );
 };
-const Pala: React.FC<{ x: number; y: number; s?: number; rot?: number }> = ({ x, y, s = 1, rot = 0 }) => (
+export const Pala: React.FC<{ x: number; y: number; s?: number; rot?: number }> = ({ x, y, s = 1, rot = 0 }) => (
   <svg style={{ position: "absolute", left: x - 100 * s, top: y - 400 * s, overflow: "visible", transform: `rotate(${rot}deg)` }} width={200 * s} height={800 * s} viewBox="-100 -400 200 800">
     <rect x={-14} y={-390} width={28} height={520} rx={12} fill="#8a5a2a" />
     <rect x={-50} y={-400} width={100} height={30} rx={14} fill="#6b3a1f" />
