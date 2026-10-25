@@ -54,3 +54,14 @@ export const Carrito: React.FC<{ x: number; y: number; dir?: 1 | -1; lleno?: num
 export const Bolsa: React.FC<{ color?: string }> = ({ color = "#c9a36a" }) => (
   <g><path d="M-20,0 L20,0 L24,46 L-24,46 Z" fill={color} /><path d="M-10,0 Q0,-16 10,0" stroke={color} strokeWidth={4} fill="none" /></g>
 );
+
+// walkie-talkie: cuerpo + antena + luz (verde cuando habla)
+export const Walkie: React.FC<{ color?: string; s?: number; luz?: boolean }> = ({ color = "#d8382c", s = 1, luz }) => (
+  <g transform={`scale(${s}) rotate(-8)`}>
+    <rect x={-6} y={-46} width={4} height={22} rx={2} fill="#2a2420" />
+    <rect x={-12} y={-28} width={26} height={44} rx={6} fill={color} stroke="#2a1410" strokeWidth={2} />
+    <rect x={-7} y={-20} width={16} height={12} rx={2} fill="#2a2420" />
+    {[0, 1, 2].map((k) => <rect key={k} x={-6} y={-2 + k * 5} width={14} height={2} rx={1} fill="#7a1c14" />)}
+    <circle cx={8} cy={-24} r={2.5} fill={luz ? "#7dff8a" : "#3a5a3a"} />
+  </g>
+);

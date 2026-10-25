@@ -183,17 +183,24 @@ export const enTiempo = <T,>(cl: ClaveT<T>[], f: number, fps: number, mezcla: (a
 
 // ---------- ropa y accesorios ----------
 export type Accesorio =
-  | { t: "gorra"; color: string; atras?: boolean }
+  | { t: "gorra"; color: string; atras?: boolean; placa?: string }
   | { t: "capucha"; color: string }
   | { t: "pelo"; forma: "corto" | "punta" | "bob" | "cola" | "calvo"; color: string }
   | { t: "barba"; color: string }
   | { t: "bufanda"; color: string }
   | { t: "mochila"; color: string }
-  | { t: "lentes"; color?: string }
+  | { t: "lentes"; color?: string; forma?: "redondo" | "gato" }
   | { t: "sombrero"; color: string }
   | { t: "vincha"; color: string }
   | { t: "bata"; color: string }
-  | { t: "corbata"; color: string };
+  | { t: "corbata"; color: string; suelta?: boolean }
+  | { t: "trenzas"; color: string; lazo?: string }
+  | { t: "gorroPapel"; color: string }
+  | { t: "auriculares"; color: string }
+  | { t: "delantal"; color: string }
+  | { t: "chaleco"; color: string }
+  | { t: "parche"; color: string; lado?: 1 | -1 }
+  | { t: "orejas"; color: string };
 
 export type Estilo = "palo" | "frijol" | "demonio" | "zombi";
 export type Look = {
@@ -360,7 +367,16 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
             {luz && <rect x={-ancho / 2} y={-tl - 6} width={ancho} height={tl + 14} rx={ancho * 0.42} fill="none" stroke={`url(#rb${uid})`} strokeWidth={4} />}
           </>
         )}
-        {tiene("corbata") && <path d={`M-4,${-tl + 4} L4,${-tl + 4} L6,${-tl * 0.35} L0,${-tl * 0.25} L-6,${-tl * 0.35} Z`} fill={tiene("corbata").color} />}
+        {tiene("chaleco") && !frijol && !demonio && <path d={`M${-ancho / 2},${-tl - 2} L${-ancho * 0.12},${-tl - 2} L${ancho * 0.04},${-tl * 0.3} L${-ancho * 0.12},4 L${-ancho / 2},4 Z M${ancho / 2},${-tl - 2} L${ancho * 0.2},${-tl - 2} L${ancho * 0.12},${-tl * 0.35} L${ancho * 0.22},4 L${ancho / 2},4 Z`} fill={tiene("chaleco").color} />}
+        {tiene("delantal") && (
+          <g fill={tiene("delantal").color}>
+            <rect x={-ancho * 0.36} y={-tl * 0.78} width={ancho * 0.72} height={tl * 0.78 + 34} rx={6} />
+            <path d={`M${-ancho * 0.3},${-tl * 0.78} L${-ancho * 0.2},${-tl - 4} M${ancho * 0.3},${-tl * 0.78} L${ancho * 0.2},${-tl - 4}`} stroke={tiene("delantal").color} strokeWidth={4} />
+            <rect x={-ancho * 0.2} y={-tl * 0.3} width={ancho * 0.4} height={14} rx={3} fill={oscurecer(tiene("delantal").color, 0.82)} />
+          </g>
+        )}
+        {tiene("parche") && <rect x={(tiene("parche").lado ?? 1) * ancho * 0.12 - 7} y={-tl * 0.8} width={14} height={10} rx={2} fill={tiene("parche").color} stroke="#f4efe4" strokeWidth={1.5} />}
+        {tiene("corbata") && <path transform={tiene("corbata").suelta ? `rotate(9 0 ${-tl + 4})` : undefined} d={`M-4,${-tl + (tiene("corbata").suelta ? 12 : 4)} L4,${-tl + (tiene("corbata").suelta ? 12 : 4)} L6,${-tl * 0.35} L0,${-tl * 0.25} L-6,${-tl * 0.35} Z`} fill={tiene("corbata").color} />}
         {tiene("mochila") && <rect x={-ancho / 2 - 20} y={-tl + 6} width={24} height={tl * 0.7} rx={8} fill={tiene("mochila").color} />}
       </g>
     );
@@ -427,6 +443,13 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
       {capucha && <path d={`M${-R * 1.05},${R * 0.95} Q${-R * 1.25},${-R * 0.1} ${-R * 0.7},${-R * 0.78} Q${-R * 0.2},${-R * 1.12} ${R * 0.25},${-R * 1.02} Q${-R * 0.35},${-R * 0.55} ${-R * 0.55},${R * 0.2} Q${-R * 0.2},${R * 1.05} ${R * 0.75},${R * 0.92} Q${R * 0.2},${R * 1.3} ${-R * 1.05},${R * 0.95} Z`} fill={capucha.color} />}
       {pelo?.forma === "bob" && <path d={`M${-R - 8},${R * 0.75} Q${-R - 12},${-R - 10} 0,${-R - 9} Q${R + 12},${-R - 10} ${R + 8},${R * 0.75} Z`} fill={pelo.color} />}
       {pelo?.forma === "cola" && <path d={`M${-R + 2},${-R * 0.2} Q${-R - 30},${R * 0.2} ${-R - 22},${R * 1.2} Q${-R - 6},${R * 0.5} ${-R + 4},${R * 0.2} Z`} fill={pelo.color} />}
+      {tiene("trenzas") && [-1, 1].map((sd) => (
+        <g key={sd} fill={tiene("trenzas").color}>
+          {[0, 1, 2, 3].map((q) => <ellipse key={q} cx={sd * (R * 0.82 + q * 2)} cy={R * 0.35 + q * 17} rx={9 - q * 0.8} ry={10} />)}
+          <circle cx={sd * (R * 0.82 + 8)} cy={R * 0.35 + 70} r={5} fill={tiene("trenzas").lazo ?? "#e2483a"} />
+        </g>
+      ))}
+      {tiene("orejas") && [-1, 1].map((sd) => <path key={sd} d={`M${sd * R * 0.55},${-R * 0.7} Q${sd * (R + 26)},${-R * 0.4} ${sd * (R + 14)},${R * 1.1} Q${sd * (R + 2)},${R * 1.25} ${sd * R * 0.8},${R * 0.1} Z`} fill={tiene("orejas").color} />)}
       {demonio && [16, 9, 4].map((w, i) => <circle key={i} r={R + w * 0.5} fill="none" stroke={neon} strokeWidth={w} opacity={0.12 + i * 0.12} />)}
       <circle r={R} fill={piel} stroke={contorno !== "none" ? contorno : undefined} strokeWidth={demonio ? 3 : 4} />
       <circle r={R} fill={`url(#hs${uid})`} />
@@ -453,7 +476,10 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
       {e.gota > 0.05 && <path d={`M${Rk * 0.78},${-Rk * 0.35} q5,9 0,13 q-5,-4 0,-13 Z`} fill="#9fd6ff" opacity={e.gota} />}
       {tiene("lentes") && (
         <g stroke={tiene("lentes").color ?? (frijol ? "#2a2622" : "#efe7d6")} strokeWidth={2.4} fill="none">
-          <circle cx={-ojoS + cx} cy={-4} r={13} /><circle cx={ojoS + cx} cy={-4} r={13} /><path d={`M${-0.5 + cx},-6 L${0.5 + cx},-6`} />
+          {tiene("lentes").forma === "gato"
+            ? [-1, 1].map((sd) => <path key={sd} d={`M${sd * ojoS + cx - 14 * sd},-8 Q${sd * ojoS + cx},-14 ${sd * ojoS + cx + 14 * sd},-8 L${sd * ojoS + cx + sd * 20},-18 Q${sd * ojoS + cx + sd * 14},4 ${sd * ojoS + cx},7 Q${sd * ojoS + cx - sd * 14},4 ${sd * ojoS + cx - 14 * sd},-8 Z`} strokeWidth={3.4} />)
+            : <><circle cx={-ojoS + cx} cy={-4} r={13} /><circle cx={ojoS + cx} cy={-4} r={13} /></>}
+          <path d={`M${-0.5 + cx},-6 L${0.5 + cx},-6`} />
         </g>
       )}
       </g>
@@ -467,12 +493,26 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
           <path d={`M${-R - 1},${-R * 0.2} Q${-R},${-R - 8} 0,${-R - 8} Q${R},${-R - 8} ${R + 1},${-R * 0.2} Z`} fill={gorra.color} />
           <path d={gorra.atras ? `M${-R + 2},${-R * 0.25} L${-R - 22},${-R * 0.18} Q${-R - 22},${-R * 0.38} ${-R + 2},${-R * 0.42} Z` : `M${R - 2},${-R * 0.25} L${R + 24},${-R * 0.18} Q${R + 24},${-R * 0.38} ${R - 2},${-R * 0.42} Z`} fill={oscurecer(gorra.color, 0.82)} />
           <circle cx={0} cy={-R - 7} r={3} fill={oscurecer(gorra.color, 0.82)} />
+          {gorra.placa && <path d={`M${R * 0.25},${-R * 0.72} l7,-5 l7,5 l-2,9 l-10,0 Z`} fill={gorra.placa} />}
         </g>
       )}
       {sombrero && (
         <g>
           <ellipse cx={0} cy={-R * 0.55} rx={R + 30} ry={9} fill={sombrero.color} />
           <path d={`M${-R * 0.75},${-R * 0.55} L${-R * 0.6},${-R - 22} Q0,${-R - 30} ${R * 0.6},${-R - 22} L${R * 0.75},${-R * 0.55} Z`} fill={oscurecer(sombrero.color, 0.85)} />
+        </g>
+      )}
+      {tiene("gorroPapel") && (
+        <g>
+          <path d={`M${-R - 4},${-R * 0.35} L${-R * 0.8},${-R - 18} L${R * 0.8},${-R - 18} L${R + 4},${-R * 0.35} Z`} fill={tiene("gorroPapel").color} stroke={oscurecer(tiene("gorroPapel").color, 0.8)} strokeWidth={2} />
+          <rect x={-R - 4} y={-R * 0.55} width={2 * R + 8} height={9} fill={oscurecer(tiene("gorroPapel").color, 0.85)} />
+        </g>
+      )}
+      {tiene("auriculares") && (
+        <g stroke={tiene("auriculares").color} fill="none" strokeLinecap="round">
+          <path d={`M${-R - 3},${-R * 0.05} Q0,${-R - 22} ${R + 3},${-R * 0.05}`} strokeWidth={5} />
+          <rect x={R - 4} y={-R * 0.15} width={12} height={22} rx={5} fill={tiene("auriculares").color} strokeWidth={0} />
+          <path d={`M${R + 2},${R * 0.2} Q${R * 0.9},${R * 0.75} ${R * 0.35},${R * 0.62}`} strokeWidth={3} />
         </g>
       )}
       {vincha && <path d={`M${-R},${-R * 0.45} Q0,${-R * 0.85} ${R},${-R * 0.45}`} stroke={vincha.color} strokeWidth={7} fill="none" />}

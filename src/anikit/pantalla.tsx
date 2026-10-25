@@ -180,3 +180,31 @@ export const PanelHUD: React.FC<{ titulo: string; x: number; y: number; w: numbe
 export const MarcaCorto: React.FC<{ texto?: string; color?: string }> = ({ texto = "Animated Short Film", color = "#efe8da" }) => (
   <div style={{ position: "absolute", right: 40, bottom: 30, fontFamily: F_HUD, fontWeight: 500, fontSize: 22, letterSpacing: 2, color, opacity: 0.55 }}>{texto}</div>
 );
+
+// Etiqueta que flota sobre un personaje y lo sigue: número grande + rótulo («38 / REAL AGE»). x, y = punto de pantalla
+// (sacarlo con enPantalla(claves, f, fps, actor.x, PISO - altura)); claves = el valor que rueda.
+export const EtiquetaFlotante: React.FC<{ x: number; y: number; rotulo: string; claves: { f: number; v: number; d?: number }[] | number; sufijo?: string; color?: string; desde?: number; hasta?: number; tam?: number; dec?: number }> = ({ x, y, rotulo, claves, sufijo = "", color = "#7dff6a", desde = 0, hasta, tam = 64, dec = 0 }) => {
+  const { f, s, o } = useEntrada(desde, hasta);
+  const v = typeof claves === "number" ? claves : valorEn(claves, f).v;
+  return (
+    <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `translate(-50%,-100%) scale(${0.7 + 0.3 * s})`, transformOrigin: "50% 100%", textAlign: "center", fontFamily: F_HUD, whiteSpace: "nowrap", textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>
+      <div style={{ fontWeight: 600, fontSize: tam, lineHeight: 1, color, fontVariantNumeric: "tabular-nums" }}>{v.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec })}{sufijo}</div>
+      <div style={{ fontWeight: 500, fontSize: tam * 0.36, letterSpacing: 3, color: "#f4efe4", marginTop: 2 }}>{rotulo}</div>
+      <div style={{ width: 3, height: tam * 0.4, background: color, margin: "6px auto 0", borderRadius: 2, opacity: 0.8 }} />
+    </div>
+  );
+};
+
+// Reloj del día en píldora: «5:12 AM». min = minutos desde la medianoche (puede rodar con valorEn)
+export const RelojDia: React.FC<{ min: number; x?: number; y?: number; desde?: number; hasta?: number; color?: string; tam?: number }> = ({ min, x = 1640, y = 56, desde = 0, hasta, color = "#f4efe4", tam = 38 }) => {
+  const { s, o } = useEntrada(desde, hasta);
+  const m = ((Math.floor(min) % 1440) + 1440) % 1440, h = Math.floor(m / 60), h12 = h % 12 === 0 ? 12 : h % 12;
+  const txt = `${h12}:${String(m % 60).padStart(2, "0")} ${h < 12 ? "AM" : "PM"}`;
+  const a = ((m % 720) / 720) * 360, b = ((m % 60) / 60) * 360;
+  return (
+    <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `scale(${0.85 + 0.15 * s})`, display: "flex", alignItems: "center", gap: 12, background: "rgba(16,14,20,0.82)", borderRadius: 40, padding: "8px 22px 8px 14px", fontFamily: F_HUD, fontWeight: 600, fontSize: tam, color, fontVariantNumeric: "tabular-nums", whiteSpace: "nowrap", boxShadow: "0 4px 14px rgba(0,0,0,0.35)" }}>
+      <svg width={tam} height={tam} viewBox="-12 -12 24 24"><circle r="10" fill="none" stroke={color} strokeWidth="2.2" /><path d="M0,0 L0,-5.5" stroke={color} strokeWidth="2.4" strokeLinecap="round" transform={`rotate(${a})`} /><path d="M0,0 L0,-8" stroke={color} strokeWidth="1.6" strokeLinecap="round" transform={`rotate(${b})`} /></svg>
+      {txt}
+    </div>
+  );
+};
