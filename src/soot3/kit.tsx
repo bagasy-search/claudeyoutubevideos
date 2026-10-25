@@ -263,7 +263,7 @@ export const Moneda: React.FC<{ x: number; y: number; r?: number; rot?: number; 
       <ellipse cx={r} cy={r + r * 0.12} rx={r} ry={r} fill="#b87a14" />
       <circle cx={r} cy={r} r={r} fill={C.oro} />
       <circle cx={r} cy={r} r={r * 0.74} fill="none" stroke="#d99a1e" strokeWidth={r * 0.1} />
-      <text x={r} y={r + r * 0.32} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={r * 0.9} fill="#b87a14">S</text>
+      <text x={r} y={r + r * 0.32} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={r * 0.9} fill="#b87a14">X</text>
       <path d={`M ${r * 0.45} ${r * 0.55} Q ${r * 0.7} ${r * 0.25} ${r * 1.1} ${r * 0.3}`} stroke="#fff6c8" strokeWidth={r * 0.12} fill="none" strokeLinecap="round" />
     </g>
   </svg>
