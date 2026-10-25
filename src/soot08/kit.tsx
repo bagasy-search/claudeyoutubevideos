@@ -16,7 +16,7 @@ export const C = {
 export const ent = (t: number, t0: number, d = 0, cfg = { damping: 12, stiffness: 170 }) =>
   spring({ frame: Math.round((t - t0 - d) * FPS), fps: FPS, config: cfg });
 export const prog = (t: number, a: number, b: number) =>
-  interpolate(t, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  b <= a ? (t >= a ? 1 : 0) : interpolate(t, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
 
 // ── escena: monta a sus hijos en [t0, t1 + SOLAPE) — la siguiente entra ENCIMA con su transición — y les aplica
 // un empuje de cámara sorteado (in/out, foco 35-65 %) + golpes de zoom en las palabras fuertes.
