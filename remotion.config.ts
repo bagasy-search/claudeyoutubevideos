@@ -11,3 +11,4 @@ import { enableTailwind } from '@remotion/tailwind-v4';
 Config.setVideoImageFormat("jpeg");
 Config.setOverwriteOutput(true);
 Config.overrideWebpackConfig(enableTailwind);
+Config.setEnforceAudioTrack(true); // vext01: clip mudo, el stitch del farm exige pista de audio
