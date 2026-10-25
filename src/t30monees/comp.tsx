@@ -1018,8 +1018,9 @@ export const OneCoin: React.FC<{ d: number; o?: Ov }> = ({ d, o = {} }) => {
   return (
     <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 60%, #3a2414 0%, #070504 75%)", overflow: "hidden" }}>
       <Push d={d} k={0.08} ox="50% 70%">
-        <Purse x={960} y={980} s={1.4} fill={land ? 0.12 : 0.02} glow={land ? 0.6 * (1 - ease(f, 50, 90)) + 0.15 : 0} />
+        <Purse x={960} y={980} s={1.4} fill={land ? 0.12 : 0.02} glow={land ? 0.6 * (1 - ease(f, 50, 90)) + 0.2 + 0.12 * Math.sin(f / 9) : 0} />
         {!land && <Coin x={960} y={-80 + drop * 760} r={44} rot={f * 14} />}
+        {land && Array.from({ length: 22 }).map((_, i) => { const t = ((f - 44) * (0.8 + rnd(i) * 1.4) + rnd(i + 7) * 300) % 360; return <div key={i} style={{ position: "absolute", left: 960 + (rnd(i + 2) - 0.5) * 900 + Math.sin(f / 19 + i) * 20, top: 1000 - t * 2.4, width: 5 + rnd(i + 4) * 6, height: 5 + rnd(i + 4) * 6, borderRadius: 9, background: "rgba(233,199,98,.6)", opacity: 1 - t / 360 }} />; })}
       </Push>
       <Overlays o={o} />
     </AbsoluteFill>

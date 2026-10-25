@@ -539,9 +539,9 @@
 "¿qué sabe *él*",
 "que nosotros no?"
 ],
+"a": 6,
 "y": 380,
-"size": 100,
-"a": 67
+"size": 100
 }
 }
 }
@@ -1001,8 +1001,7 @@
 "LO QUE",
 "SOBRA."
 ],
-"hot": 2,
-"a": 54
+"hot": 2
 }
 }
 }
@@ -1339,14 +1338,15 @@
 "interés",
 "*COMPUESTO.*"
 ],
+"a": 6,
 "y": 330,
 "size": 110,
-"color": "#e9c762",
-"a": 56
+"color": "#e9c762"
 }
 }
 },
-"sfx": "revelacion"
+"sfx": "revelacion",
+"hit": 56
 },
 {
 "a": 320.621,
