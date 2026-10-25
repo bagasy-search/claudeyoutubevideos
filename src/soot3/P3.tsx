@@ -399,9 +399,9 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
     </Escena>
 
     {/* 093 · puentes, canales, fuertes y acueductos */}
-    <Escena t={t} t0={346.72} t1={350.16} entra="iris" ix={960} iy={540} golpes={[347.04, 347.9, 348.82, 349.08]}>
+    <Escena t={t} t0={346.72} t1={350.16} entra="iris" ix={960} iy={540} golpes={[346.8, 347.9, 348.82, 349.08]}>
       <AbsoluteFill style={{ background: "#1b1240" }} />
-      {([[347.04, "BRIDGES", "#4fb3e8", 0], [347.9, "CANALS", "#2ec4d6", 1], [348.82, "FORTS", "#c9773a", 2], [349.08, "AQUEDUCTS", "#9b7bf0", 3]] as const).map(([t0, txt, col, i]) => {
+      {([[346.8, "BRIDGES", "#4fb3e8", 0], [347.9, "CANALS", "#2ec4d6", 1], [348.82, "FORTS", "#c9773a", 2], [349.08, "AQUEDUCTS", "#9b7bf0", 3]] as const).map(([t0, txt, col, i]) => {
         if (t < t0) return null;
         const x = (i % 2) * 960, y = Math.floor(i / 2) * 540;
         return (

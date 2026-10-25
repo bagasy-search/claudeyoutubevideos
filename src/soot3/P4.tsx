@@ -246,10 +246,12 @@ export const P4: React.FC<{ t: number }> = ({ t }) => (
       <Grande t={t} t0={435.6} text="DECIMATION" y={170} size={150} color="#fff" borde={C.rojo} />
       {Array.from({ length: 10 }, (_, i) => {
         const marcado = i === 6 && t > 438.6;
-        return <Persona key={i} x={150 + i * 180} y={1000} h={380} t={t} seed={170 + i} casco="legion" expr={marcado ? "miedo" : i === 6 || t < 438.6 ? "neutro" : "triste"} aparece={436.6 + i * 0.05} sombra={marcado ? C.rojo : undefined} />;
+        return <Persona key={i} x={150 + i * 180} y={1000} h={380} t={t} seed={170 + i} casco="legion" expr={marcado ? "miedo" : i === 6 || t < 438.6 ? "neutro" : "triste"} aparece={433.0 + i * 0.12} sombra={marcado ? C.rojo : undefined} />;
       })}
       {t > 437.6 && t < 439.3 && <Urna x={960} y={420} s={0.8} t={t} t0={437.7} tSaca={438.3} />}
       {t > 438.56 && <svg style={{ position: "absolute", left: 1230 - 100, top: 560 }} width={200} height={140}><path d="M 100 130 L 40 20 L 160 20 Z" fill={C.rojo} transform={`translate(0 ${Math.sin(t * 8) * 10})`} /></svg>}
+      <Chip t={t} t0={432.9} text="REALLY BAD BEHAVIOR" color={C.rojo} x={160} y={140} size={56} t1={435.5} />
+      <Chip t={t} t0={434.6} text="BY A WHOLE UNIT" color={C.ambar} tinta={C.noche} x={160} y={260} size={56} t1={435.5} />
       <Chip t={t} t0={437.12} text="EVERY TENTH MAN" color={C.ambar} tinta={C.noche} x={160} y={340} size={56} />
       <Chip t={t} t0={438.56} text="CHOSEN BY LOT" color={C.violeta} x={160} y={460} size={56} />
       <Chip t={t} t0={439.9} text="KILLED BY THE OTHER NINE" color={C.rojo} x={960} y={360} size={52} />
