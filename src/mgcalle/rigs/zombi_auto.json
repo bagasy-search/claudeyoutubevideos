@@ -1,0 +1,176 @@
+{
+ "ancho": 1024,
+ "alto": 1536,
+ "piezas": {
+  "brazoI": {
+   "caja": [
+    578,
+    432,
+    229,
+    315
+   ],
+   "pivote": [
+    658,
+    487
+   ]
+  },
+  "antebrazoI": {
+   "caja": [
+    668,
+    650,
+    186,
+    358
+   ],
+   "pivote": [
+    749,
+    688
+   ],
+   "padre": "brazoI"
+  },
+  "brazoD": {
+   "caja": [
+    283,
+    384,
+    251,
+    349
+   ],
+   "pivote": [
+    433,
+    476
+   ]
+  },
+  "antebrazoD": {
+   "caja": [
+    184,
+    600,
+    258,
+    386
+   ],
+   "pivote": [
+    373,
+    662
+   ],
+   "padre": "brazoD"
+  },
+  "piernaI": {
+   "caja": [
+    566,
+    865,
+    458,
+    671
+   ],
+   "pivote": [
+    640,
+    885
+   ]
+  },
+  "piernaD": {
+   "caja": [
+    0,
+    865,
+    569,
+    671
+   ],
+   "pivote": [
+    496,
+    885
+   ]
+  },
+  "cabeza": {
+   "caja": [
+    293,
+    80,
+    348,
+    391
+   ],
+   "pivote": [
+    452,
+    450
+   ]
+  },
+  "torso": {
+   "caja": [
+    385,
+    418,
+    333,
+    487
+   ],
+   "pivote": [
+    568,
+    880
+   ]
+  }
+ },
+ "orden": [
+  "brazoI",
+  "antebrazoI",
+  "piernaI",
+  "piernaD",
+  "cabeza",
+  "torso",
+  "brazoD",
+  "antebrazoD"
+ ],
+ "alias": {
+  "brazoFrente": "brazoD",
+  "antebrazoFrente": "antebrazoD",
+  "brazoAtras": "brazoI",
+  "antebrazoAtras": "antebrazoI",
+  "piernaFrente": "piernaD",
+  "piernaAtras": "piernaI"
+ },
+ "puntos": {
+  "nariz": [
+   452,
+   336
+  ],
+  "hombroI": [
+   658,
+   487
+  ],
+  "hombroD": [
+   433,
+   476
+  ],
+  "codoI": [
+   749,
+   688
+  ],
+  "codoD": [
+   373,
+   662
+  ],
+  "munecaI": [
+   802,
+   846
+  ],
+  "munecaD": [
+   281,
+   814
+  ],
+  "caderaI": [
+   640,
+   882
+  ],
+  "caderaD": [
+   496,
+   878
+  ],
+  "rodillaI": [
+   647,
+   1093
+  ],
+  "rodillaD": [
+   443,
+   1062
+  ],
+  "tobilloI": [
+   694,
+   1347
+  ],
+  "tobilloD": [
+   439,
+   1339
+  ]
+ }
+}
