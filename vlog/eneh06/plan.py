@@ -158,6 +158,11 @@ for _ in range(6):
             add.append({"a": round(g["a"] + min(3.6, d / 2), 2), "k": "w", "view": v, "tr": "cut"})
     if not add: break
     segs = sorted(segs + add, key=lambda g: g["a"])
+# el plano del avatar no pasa del final de su ventana (sin reel después = destello negro en el MP4, QC eh06 309 s):
+# si el plano siguiente arranca después de me, se adelanta a me (25-oct)
+WME = {round(w["ms"], 2): w["me"] for w in AVW}
+for i, g in enumerate(segs[:-1]):
+    if g["k"] == "av" and g["a"] in WME and segs[i + 1]["a"] > WME[g["a"]] + 0.04: segs[i + 1]["a"] = round(WME[g["a"]], 2)
 
 # ---------------- cámara: llaves por plano del mundo (empuje lento; mundo→mundo = movimiento continuo) ----------------
 def push(v, k=0.1):
