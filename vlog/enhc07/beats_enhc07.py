@@ -50,6 +50,12 @@ O("I sold cars on Coral Way", "map", 4.5, pins=[{"at": "I sold cars on Coral Way
 B("the finance office at Bird Road Auto Plaza", "w:desk", "cut")
 B("Now I'm on your side of the desk", "w:pad", "zoom")
 
+# ----- CTA de la guía (voz insertada por ins_cta_c.py) -----
+_a, _b, _c, _z = at("Five books. I call them"), at("One whole book is just your trade-in"), at("The link is in the first line of the description, or scan"), at("your phone camera. Okay")
+B("Before number one, real quick", "w:desk", "fade"); B("Five books. I call them", "w:pad", "cut")
+if None not in (_a, _b, _c, _z): O("Five books. I call them", "guide", round(_z - _a + 0.6, 2), cover="g_hd-trade.jpg", page="g_script_pago.jpg", pg="BOOK 1 · PAGE 24", tb=round(_b - _a, 2), tc=round(_c - _a, 2))
+SFX("Five books. I call them", WHOOSH, -30); SFX("One whole book is just your trade-in", PAGE, -26); SFX("The link is in the first line of the description, or scan", PAPER, -28)
+
 # ======================= 1. EL PAPEL DE CUATRO CAJAS =======================
 O("Number one. The paper with four boxes", "step", 3.6, n="1", tx="THE FOUR BOXES")
 KF("calyr", "Number one. The paper with four boxes", 1975); KF("cal", "Number one. The paper with four boxes", 5); KF("pad", "Number one. The paper with four boxes", 0)
@@ -287,6 +293,12 @@ O("The dent in the door, the air conditioning", "deal", 7.0, title="DON'T FIX", 
 B("The dealer fixes it at his cost", "w:trade", "cut")
 B("a burned-out bulb, a wiper blade", "w:tradews", "cut")
 B("Let the dealer fix it. That's his business", "w:floor", "zoom")
+
+# ----- CTA de la guía (voz insertada por ins_cta_c.py) -----
+_a, _b, _c, _z = at("Let me stop for one second"), at("On page forty-one is the four-square"), at("The link is in the first line of the description, or point"), at("at the code on the screen. Okay")
+B("Let me stop for one second", "w:desk", "fade"); B("Let me stop for one second", "w:pad", "cut")
+if None not in (_a, _b, _c, _z): O("Let me stop for one second", "guide", round(_z - _a + 0.6, 2), cover="g_hd-lot.jpg", page="g_four_square.jpg", pg="BOOK 1 · PAGE 41 · ABE'S FOUR-SQUARE", tb=round(_b - _a, 2), tc=round(_c - _a, 2))
+SFX("Let me stop for one second", WHOOSH, -30); SFX("On page forty-one is the four-square", PAGE, -26); SFX("The link is in the first line of the description, or point", PAPER, -28)
 
 # ======================= 8. EL IMPUESTO =======================
 O("Number eight. The tax nobody explains", "step", 3.6, n="8", tx="THE TAX")

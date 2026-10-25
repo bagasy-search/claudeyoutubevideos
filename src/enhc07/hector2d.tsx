@@ -2,7 +2,8 @@
 // amarillo, la tira de los 12 meses (malos / buenos), la hoja del trato con los cargos que se tachan, el mapa de Miami con
 // el lugar y el año de la historia, el contador de dólares, la escalera del bono y la ficha de la persona (lugar · año).
 import React from "react";
-import { COL, FONT, e, ei, extrude, spr } from "./lib";
+import { Img as RImg, staticFile } from "remotion";
+import { COL, FONT, P, e, ei, extrude, spr } from "./lib";
 
 const fadeIO = (t: number, at: number, out: number, fi = 0.25, fo = 0.3) => e(t, at - fi, at) * (1 - e(t, out, out + fo));
 const HANDF = "'Segoe Print','Bradley Hand','Marker Felt','Comic Sans MS',cursive";
@@ -163,6 +164,55 @@ export const PersonCard: React.FC<{ t: number; at: number; out: number; name: st
         <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 58, color: COL.ink, letterSpacing: 2, textShadow: extrude(5, "#000"), whiteSpace: "nowrap" }}>{name}</div>
         <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 28, color: "#e9c27a", letterSpacing: 5, minHeight: 36, whiteSpace: "nowrap" }}>{l2.slice(0, n2)}</div>
       </div>
+    </div>
+  );
+};
+
+// LA GUÍA (CTA): 1) las 5 tapas suben con el nombre · 2) el libro se abre en 3D sobre una página REAL del PDF ·
+// 3) tarjeta con la página + QR grande a la URL corta (nunca la URL escrita en pantalla). tb/tc = segundos desde at.
+export const GuideBook: React.FC<{ t: number; at: number; out: number; cover: string; page: string; pg: string; tb?: number; tc?: number }> =
+  ({ t, at, out, cover, page, pg, tb = 6.5, tc = 17 }) => {
+  const o = fadeIO(t, at, out, 0.3, 0.4); if (o <= 0.01) return null;
+  const B = at + tb, C = at + tc;
+  const a1 = e(t, at, at + 0.9) * (1 - e(t, B - 0.4, B + 0.2));
+  const k1 = Math.min(1, spr(t, at, 0.7));
+  const a2 = e(t, B - 0.2, B + 0.4) * (1 - e(t, C - 0.3, C + 0.3));
+  const open = ei(t, B + 0.6, B + 2.6);                       // la tapa gira sobre el lomo y deja ver la página
+  const zoom = 1 + 0.18 * ei(t, B + 2.6, C - 0.3);
+  const a3 = e(t, C - 0.1, C + 0.5), k3 = Math.min(1, spr(t, C, 0.8));
+  const img = (f: string) => staticFile(P + f);
+  const Img = RImg;
+  return (
+    <div style={{ position: "absolute", inset: 0, opacity: o, fontFamily: FONT }}>
+      <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at center, rgba(8,12,20,.55), rgba(4,6,10,.88))" }} />
+      {a1 > 0.01 && <div style={{ position: "absolute", left: 960, top: 560, opacity: a1, transform: `translate(-50%,-50%) translateY(${(1 - k1) * 260}px) scale(${0.85 + 0.15 * k1})`, textAlign: "center" }}>
+        <Img src={img("g_set.png")} style={{ width: 1180, display: "block", margin: "0 auto", filter: "drop-shadow(0 40px 50px rgba(0,0,0,.7))" }} />
+        <div style={{ fontWeight: 900, fontSize: 64, color: "#fff", letterSpacing: 2, textShadow: extrude(6, "#7a5a12"), marginTop: -10, whiteSpace: "nowrap" }}>THE OTHER SIDE OF THE DESK</div>
+        <div style={{ fontWeight: 800, fontSize: 38, color: COL.amber, letterSpacing: 4, marginTop: 8 }}>5 BOOKS · 427 PAGES · HECTOR'S SCRIPTS</div>
+      </div>}
+      {a2 > 0.01 && <div style={{ position: "absolute", left: 960, top: 540, opacity: a2, perspective: 2200, transform: `translate(-50%,-50%) scale(${zoom})` }}>
+        <div style={{ position: "relative", width: 1240, height: 860, transformStyle: "preserve-3d", transform: "rotateX(14deg)" }}>
+          <div style={{ position: "absolute", left: 640, top: 0, width: 600, height: 860, background: "#fbf8f1", boxShadow: "0 40px 70px rgba(0,0,0,.6)", borderRadius: "0 8px 8px 0", overflow: "hidden" }}>
+            <Img src={img(page)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          </div>
+          <div style={{ position: "absolute", left: 40, top: 0, width: 600, height: 860, background: "linear-gradient(90deg,#efe9dc,#fbf8f1 70%,#e6dfcf)", borderRadius: "8px 0 0 8px", opacity: open, boxShadow: "0 40px 70px rgba(0,0,0,.5)" }} />
+          <div style={{ position: "absolute", left: 640, top: 0, width: 600, height: 860, transformOrigin: "0 50%", transform: `rotateY(${-178 * open}deg)`, transformStyle: "preserve-3d" }}>
+            <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", borderRadius: "0 8px 8px 0", overflow: "hidden", boxShadow: "inset 10px 0 18px rgba(0,0,0,.35)" }}><Img src={img(cover)} style={{ width: "100%", height: "100%", objectFit: "cover" }} /></div>
+            <div style={{ position: "absolute", inset: 0, backfaceVisibility: "hidden", transform: "rotateY(180deg)", background: "linear-gradient(270deg,#efe9dc,#fbf8f1 70%,#e6dfcf)", borderRadius: "8px 0 0 8px" }} />
+          </div>
+        </div>
+        <div style={{ position: "absolute", left: 940, top: 900, opacity: e(t, B + 2.4, B + 3), padding: "10px 26px", borderRadius: 14, background: COL.amber, color: "#1b1405", fontWeight: 900, fontSize: 36, whiteSpace: "nowrap", transform: "translateX(-50%)" }}>{pg}</div>
+      </div>}
+      {a3 > 0.01 && <div style={{ position: "absolute", left: 960, top: 540, opacity: a3, transform: `translate(-50%,-50%) perspective(1500px) rotateY(${(1 - k3) * -60}deg) scale(${0.8 + 0.2 * k3})`, display: "flex", gap: 46, alignItems: "center", padding: 36, borderRadius: 26, background: "linear-gradient(180deg, rgba(22,30,44,.97), rgba(10,15,24,.97))", boxShadow: "0 40px 80px rgba(0,0,0,.6)" }}>
+        <Img src={img(page)} style={{ width: 420, height: 560, objectFit: "cover", borderRadius: 10, boxShadow: "0 20px 40px rgba(0,0,0,.6)" }} />
+        <div style={{ width: 620, textAlign: "center" }}>
+          <div style={{ fontWeight: 900, fontSize: 46, color: COL.amber, letterSpacing: 1 }}>THE OTHER SIDE OF THE DESK</div>
+          <div style={{ fontWeight: 800, fontSize: 30, color: "#b9c3d3", marginBottom: 18 }}>{pg}</div>
+          <div style={{ background: "#fff", borderRadius: 18, padding: 16, display: "inline-block" }}><Img src={img("qr.png")} style={{ width: 400, height: 400, display: "block" }} /></div>
+          <div style={{ fontWeight: 900, fontSize: 38, color: "#fff", marginTop: 16 }}>📱 SCAN IT WITH YOUR PHONE CAMERA</div>
+          <div style={{ fontWeight: 700, fontSize: 28, color: "#b9c3d3", marginTop: 8 }}>or the link in the first line of the description</div>
+        </div>
+      </div>}
     </div>
   );
 };
