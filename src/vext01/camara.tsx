@@ -103,16 +103,19 @@ export const Capa: React.FC<{ z: number; children: React.ReactNode; desenfoqueMa
   const par = Math.max(0.05, z); // cuánto le afecta el movimiento de cámara (cielo ~5 %, primer término >100 %)
   const zoom = 1 + (c.zoom - 1) * par;
   const blur = Math.min(40, Math.abs(z - c.foco) * desenfoqueMax);
+  // la transform del style se COMPONE con la de cámara (antes la pisaba: la capa perdía el paralaje).
+  // el desenfoque va en un hijo SIN transform: en el farm (swangle) filter+transform grande en el mismo nodo
+  // corrompía las teselas del compositor (franjas con pedazos de otra parte del cuadro).
+  const { transform: tExtra, ...resto } = style ?? {};
   return (
     <AbsoluteFill
       style={{
-        transform: `translate(${-c.x * par}px, ${-c.y * par}px) rotate(${c.rot * par}deg) scale(${zoom})`,
+        transform: `translate(${-c.x * par}px, ${-c.y * par}px) rotate(${c.rot * par}deg) scale(${zoom})${tExtra ? " " + tExtra : ""}`,
         transformOrigin: "50% 50%",
-        filter: blur > 0.6 ? `blur(${blur.toFixed(1)}px)` : undefined,
-        ...style,
+        ...resto,
       }}
     >
-      {children}
+      <AbsoluteFill style={{ filter: blur > 0.6 ? `blur(${blur.toFixed(1)}px)` : undefined }}>{children}</AbsoluteFill>
     </AbsoluteFill>
   );
 };

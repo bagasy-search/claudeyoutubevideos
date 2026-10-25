@@ -237,8 +237,10 @@ const P1: React.FC = () => {
       </Capa>
       <Capa z={1.8} desenfoqueMax={22}>
         <Svg>
-          <rect x={-200} y={960} width={900} height={300} rx={30} fill="#120c09" />
-          <path d="M60 1080 L90 760 Q170 720 250 760 L280 1080 Z" fill="#20283c" />
+          <rect x={40} y={800} width={300} height={360} rx={40} fill="#2b3a52" />
+          <rect x={20} y={780} width={340} height={50} rx={20} fill="#1b2433" />
+          <path d="M320 830 L310 1100" stroke={C.calido} strokeWidth={14} opacity={0.4} strokeLinecap="round" />
+          <path d="M60 820 L70 1100" stroke={C.frio} strokeWidth={6} opacity={0.25} strokeLinecap="round" />
         </Svg>
       </Capa>
       <Polvo seed="p1" caja={[500, 60, 900, 700]} />
@@ -389,7 +391,7 @@ const ParedCocina: React.FC<{ hora?: string }> = ({ hora = "3:07" }) => {
       <path d={`M860 368 L1620 368 L1760 780 L720 780 Z`} fill="url(#charcoCal)" />
       <Rayos y={368} x0={880} x1={1600} tira={0.8} />
       {/* reloj */}
-      <g transform="translate(1060,470)">
+      <g transform="translate(805,470)">
         <circle r={44} fill="#e9e2d0" stroke="#3a3348" strokeWidth={7} />
         <rect x={-2.5} y={-24} width={5} height={26} fill="#20182b" rx={2} transform={`rotate(${93 + f * 0.01})`} />
         <rect x={-2} y={-36} width={4} height={38} fill="#20182b" rx={2} transform={`rotate(${42 + f * 0.1})`} />
@@ -547,7 +549,7 @@ const latido = (g: number) => { // g = cuadro global
   const ph = ((((g - LATIDO0) % BPM_F) + BPM_F) % BPM_F) / BPM_F;
   return Math.exp(-ph * 7);
 };
-const Cabeza: React.FC<{ x: number; y: number; R: number; parpadoIzq: number; pulso: number; frio: number; extraAnillos?: number }> = ({ x, y, R, parpadoIzq, pulso, frio, extraAnillos = 0 }) => {
+const Cabeza: React.FC<{ x: number; y: number; R: number; parpadoIzq: number; parpadoDer?: number; pulso: number; frio: number; extraAnillos?: number }> = ({ x, y, R, parpadoIzq, parpadoDer = 0.18, pulso, frio, extraAnillos = 0 }) => {
   const borde = frio > 0.5 ? C.frio : C.calido;
   return (
     <g transform={`translate(${x},${y})`}>
@@ -564,7 +566,7 @@ const Cabeza: React.FC<{ x: number; y: number; R: number; parpadoIzq: number; pu
       <circle r={R} fill="none" stroke={borde} strokeWidth={2} opacity={0.25} />
       {/* ojos simples mirando a la izquierda (el aire del cuadro) */}
       {[-0.42, 0.06].map((cx, i) => {
-        const lid = i === 0 ? parpadoIzq : 0.18;
+        const lid = i === 0 ? parpadoIzq : parpadoDer;
         const ex = cx * R, ey = -R * 0.12, rx = R * 0.16, ry = R * 0.2;
         return (
           <g key={i}>
@@ -582,8 +584,9 @@ const Cabeza: React.FC<{ x: number; y: number; R: number; parpadoIzq: number; pu
 const P5: React.FC = () => {
   const f = useF(); // 0-90
   const { fps } = useVideoConfig();
-  const tics = [13, 28, 45]; // global 343/358/375: entre latidos (334, 351, 367, 383)
-  const parpado = tics.some((t) => f >= t && f < t + 3) ? 0.62 : 0.2;
+  const tics = [33, 50]; // global 363/380: entre latidos (351, 367, 383)
+  const abre = lerp(f, [21, 25], [1, 0.2], Easing.out(Easing.cubic)); // abre los ojos con el latido de 351
+  const parpado = Math.max(abre, tics.some((t) => f >= t && f < t + 3) ? 0.62 : 0.2);
   const frio = lerp(f, [0, 90], [0, 1], Easing.inOut(Easing.sin));
   const extra = lerp(f, [78, 96], [0, 1], Easing.in(Easing.cubic)); // T5: el anillo se abre y su borde revela P6
   return (
@@ -601,7 +604,7 @@ const P5: React.FC = () => {
         <AbsoluteFill style={{ transform: "translate(-180px,-60px)" }}><MesadaCocina persona={false} /></AbsoluteFill>
       </Capa>
       <Capa z={1}>
-        <Svg><Cabeza x={1240} y={600} R={270} parpadoIzq={parpado} pulso={latido(f + 330)} frio={frio} extraAnillos={extra} /></Svg>
+        <Svg><Cabeza x={1240} y={600} R={270} parpadoIzq={parpado} parpadoDer={Math.max(abre, 0.18)} pulso={latido(f + 330)} frio={frio} extraAnillos={extra} /></Svg>
       </Capa>
       <AbsoluteFill style={{ background: `linear-gradient(90deg, rgba(255,150,70,${0.12 * (1 - frio)}) 0%, rgba(70,110,255,${0.14 * frio}) 100%)`, mixBlendMode: "soft-light" }} />
       <Vineta o={0.72} />
@@ -620,7 +623,7 @@ const P6: React.FC = () => {
     <Plano
       claves={[
         { f: -12, x: 88, y: 19, zoom: 1.31, foco: 1 }, // T5: café del tamaño del 1er anillo (r 314 en 1239,600)
-        { f: 76, x: 0, y: 0, zoom: 1.08, resorte: { damping: 40, stiffness: 8 } },
+        { f: 76, x: 1.12 * 280, y: 1.12 * 60, zoom: 1.12, resorte: { damping: 40, stiffness: 8 } }, // termina centrada
         { f: 90, x: 6 * 280, y: 6 * 60, zoom: 6, curva: "in" }, // T6: se zambulle en el café
       ]}
       mano={1.5} seed={6} fondo={C.madera}>
