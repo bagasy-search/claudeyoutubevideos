@@ -1,0 +1,2352 @@
+{
+"end": 712.2,
+"shots": [
+{
+"a": 0.0,
+"b": 2.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/terminal_01.jpg",
+"o": {
+"label": "Any airport",
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 2.46,
+"b": 3.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vapron_tl.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 3.9,
+"b": 5.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/tails_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 5.38,
+"b": 7.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/oldjet_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 7.28,
+"b": 9.42,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vtko_head.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 9.42,
+"b": 11.3,
+"k": "ilus",
+"t": "gate",
+"p": {
+"mode": "row",
+"o": {
+"big": {
+"w": "WHITE.",
+"size": 240,
+"y": 330,
+"a": 28
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 11.3,
+"b": 12.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/va380.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 12.8,
+"b": 14.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a03_tail_fins.png"
+}
+},
+{
+"a": 14.16,
+"b": 16.3,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/gate2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 16.3,
+"b": 22.98,
+"k": "ilus",
+"t": "copy",
+"p": {
+"o": {
+"aside": {
+"t": "just taste?",
+"x": 1240,
+"y": 330,
+"a": 26
+}
+}
+}
+},
+{
+"a": 22.98,
+"b": 24.02,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "IT ISN'T.",
+"a": 2,
+"size": 210,
+"y": 400
+}
+}
+}
+},
+{
+"a": 24.02,
+"b": 28.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/a350b_01.jpg",
+"o": {
+"build": {
+"lines": [
+"carefully *calculated.*"
+],
+"a": 50
+},
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 28.16,
+"b": 29.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a05_hot_apron.png",
+"o": {
+"label": "the sun"
+}
+}
+},
+{
+"a": 29.66,
+"b": 31.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a20_scale.png",
+"o": {
+"label": "weight. money."
+}
+}
+},
+{
+"a": 31.14,
+"b": 33.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a29_rivet_crack.png",
+"o": {
+"label": "cracks"
+}
+}
+},
+{
+"a": 33.12,
+"b": 34.66,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30tornien/real/composite2_01.jpg",
+"ar": 1.25,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 34.66,
+"b": 37.42,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/cabin2_01.jpg",
+"o": {
+"aside": {
+"t": "never heard of it.",
+"x": 1150,
+"y": 330,
+"a": 52
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 37.42,
+"b": 41.32,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "photo",
+"o": {
+"build": {
+"lines": [
+"planes painted *BLACK.*"
+],
+"a": 109
+}
+}
+}
+},
+{
+"a": 41.32,
+"b": 43.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a33_dark_skin.png"
+}
+},
+{
+"a": 43.6,
+"b": 48.54,
+"k": "g",
+"t": "board",
+"p": {
+"n": 0,
+"o": {
+"build": {
+"lines": [
+"The *sun.*"
+],
+"y": 60,
+"size": 90,
+"a": 123
+}
+}
+},
+"sfx": "whoosh",
+"roster": 1,
+"big": true
+},
+{
+"a": 48.54,
+"b": 51.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vdusk_push.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 51.6,
+"b": 53.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k02_heat_haze.mp4"
+}
+},
+{
+"a": 53.36,
+"b": 56.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vapron_tl2.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 56.5,
+"b": 64.94,
+"k": "ilus",
+"t": "sun",
+"p": {
+"mode": "one",
+"at": 11,
+"o": {
+"build": {
+"lines": [
+"a *huge* surface"
+],
+"size": 90,
+"a": 109
+}
+}
+}
+},
+{
+"a": 64.94,
+"b": 67.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a07_black_car.png"
+}
+},
+{
+"a": 67.86,
+"b": 69.94,
+"k": "ilus",
+"t": "car",
+"p": {
+"mode": "black",
+"at": 41,
+"o": {
+"big": {
+"w": "IT BURNS.",
+"size": 170,
+"y": 200,
+"a": 41
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 69.94,
+"b": 73.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a08_white_car.png"
+}
+},
+{
+"a": 73.58,
+"b": 74.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a10_hand_white.png"
+}
+},
+{
+"a": 74.46,
+"b": 76.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a09_hand_hood.png"
+}
+},
+{
+"a": 76.52,
+"b": 82.1,
+"k": "ilus",
+"t": "sun",
+"p": {
+"mode": "duel",
+"at": 73,
+"o": {
+"build": {
+"lines": [
+"White *reflects.*"
+],
+"a": 4,
+"size": 88,
+"y": 40
+}
+}
+},
+"big": true
+},
+{
+"a": 82.1,
+"b": 84.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/boeing787_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 84.94,
+"b": 87.7,
+"k": "ilus",
+"t": "cool",
+"p": {
+"mode": "heat",
+"o": {
+"build": {
+"lines": [
+"the cabin *heats up.*"
+],
+"size": 90,
+"y": 60,
+"a": 45
+}
+}
+}
+},
+{
+"a": 87.7,
+"b": 90.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/cabin2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 90.68,
+"b": 95.96,
+"k": "ilus",
+"t": "cool",
+"p": {
+"mode": "cool",
+"o": {
+"label": "APU + ground air"
+}
+}
+},
+{
+"a": 95.96,
+"b": 99.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a13_pca_hose.png"
+}
+},
+{
+"a": 99.52,
+"b": 102.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a14_fuel_truck.png"
+}
+},
+{
+"a": 102.14,
+"b": 103.72,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"All of that costs *money.*"
+],
+"a": 2,
+"y": 420,
+"size": 100
+}
+}
+}
+},
+{
+"a": 103.72,
+"b": 107.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/taxi2_01.jpg",
+"o": {
+"build": {
+"lines": [
+"less heat *inside.*"
+],
+"a": 61
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 107.04,
+"b": 113.16,
+"k": "g",
+"t": "multi",
+"p": {
+"at": 74,
+"o": {
+"build": {
+"lines": [
+"an *enormous* amount"
+],
+"y": 860,
+"size": 86,
+"a": 140
+}
+}
+},
+"big": true
+},
+{
+"a": 113.16,
+"b": 116.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vwing_white.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 116.02,
+"b": 117.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vcontrail.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 117.64,
+"b": 119.86,
+"k": "g",
+"t": "board",
+"p": {
+"n": 1
+},
+"sfx": "whoosh",
+"roster": 2,
+"big": true
+},
+{
+"a": 119.86,
+"b": 123.36,
+"k": "ilus",
+"t": "xray",
+"p": {
+"mode": "alu"
+}
+},
+{
+"a": 123.36,
+"b": 125.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a15_aluminum_sheet.png"
+}
+},
+{
+"a": 125.7,
+"b": 129.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/a350b_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 129.86,
+"b": 132.18,
+"k": "ilus",
+"t": "xray",
+"p": {
+"mode": "cfrp",
+"o": {
+"build": {
+"lines": [
+"*composite* materials"
+],
+"size": 90,
+"y": 60,
+"a": 25
+}
+}
+},
+"big": true
+},
+{
+"a": 132.18,
+"b": 133.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/carbon_01.jpg",
+"o": {
+"label": "carbon fiber",
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 133.94,
+"b": 136.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/composite2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 136.08,
+"b": 138.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vcloud_wing.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 138.38,
+"b": 148.2,
+"k": "ilus",
+"t": "xray",
+"p": {
+"mode": "heat",
+"o": {
+"build": {
+"lines": [
+"a *weakness.*"
+],
+"a": 4,
+"size": 100,
+"y": 60
+}
+}
+}
+},
+{
+"a": 148.2,
+"b": 154.68,
+"k": "ilus",
+"t": "rules",
+"p": {
+"o": {
+"build": {
+"lines": [
+"how much can go *dark*"
+],
+"size": 86,
+"y": 60,
+"a": 168
+}
+}
+},
+"big": true
+},
+{
+"a": 154.68,
+"b": 158.14,
+"k": "g",
+"t": "rule",
+"p": {
+"at": 64
+},
+"sfx": "revelacion"
+},
+{
+"a": 158.14,
+"b": 160.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/a350b_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 160.92,
+"b": 164.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/composite2_03.jpg",
+"o": {
+"build": {
+"lines": [
+"practically *required.*"
+],
+"a": 52
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 164.58,
+"b": 166.64,
+"k": "g",
+"t": "board",
+"p": {
+"n": 2,
+"o": {
+"build": {
+"lines": [
+"*Weight.*"
+],
+"y": 60,
+"size": 90,
+"a": 34
+}
+}
+},
+"sfx": "whoosh",
+"roster": 3,
+"big": true
+},
+{
+"a": 166.64,
+"b": 169.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/paint2_01.jpg",
+"o": {
+"build": {
+"lines": [
+"paint is *heavy.*"
+],
+"a": 47
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 169.36,
+"b": 171.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a19_paint_can.png",
+"o": {
+"aside": {
+"t": "weighs nothing.",
+"x": 1180,
+"y": 320,
+"a": 50
+}
+}
+}
+},
+{
+"a": 171.78,
+"b": 175.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vland_sxm.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 175.38,
+"b": 177.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/paintsprayAF_01.jpg",
+"o": {
+"build": {
+"lines": [
+"*hundreds* of pounds"
+],
+"color": "#edb269",
+"a": 41
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 177.84,
+"b": 183.64,
+"k": "ilus",
+"t": "seesaw",
+"p": {
+"o": {
+"build": {
+"lines": [
+"paint ≈ *passengers.*"
+],
+"size": 86,
+"y": 60,
+"a": 105
+}
+}
+},
+"big": true
+},
+{
+"a": 183.64,
+"b": 185.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a21_luggage_pile.png"
+}
+},
+{
+"a": 185.96,
+"b": 189.44,
+"k": "ilus",
+"t": "takeoff",
+"p": {
+"mode": "lift"
+}
+},
+{
+"a": 189.44,
+"b": 192.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k04_clouds.mp4",
+"o": {
+"aside": {
+"t": "that's fuel.",
+"x": 1220,
+"y": 330,
+"a": 68
+}
+},
+"rate": 0.833
+}
+},
+{
+"a": 192.34,
+"b": 201.28,
+"k": "ilus",
+"t": "takeoff",
+"p": {
+"mode": "years",
+"o": {
+"build": {
+"lines": [
+"a *staggering* amount of fuel"
+],
+"size": 84,
+"y": 60,
+"a": 223
+}
+}
+}
+},
+{
+"a": 201.28,
+"b": 203.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/gate2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 203.74,
+"b": 214.58,
+"k": "ilus",
+"t": "stack",
+"p": {
+"mode": "color",
+"o": {
+"build": {
+"lines": [
+"more *layers.*"
+],
+"size": 90,
+"y": 40,
+"a": 25
+}
+}
+},
+"big": true
+},
+{
+"a": 214.58,
+"b": 221.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/tail2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 221.34,
+"b": 226.66,
+"k": "ilus",
+"t": "stack",
+"p": {
+"mode": "white",
+"o": {
+"build": {
+"lines": [
+"simpler. *Lighter.*"
+],
+"size": 90,
+"y": 40,
+"a": 116
+}
+}
+}
+},
+{
+"a": 226.66,
+"b": 229.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/polished_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 229.22,
+"b": 233.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/baremetal_01.jpg",
+"o": {
+"label": "bare aluminum",
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 233.62,
+"b": 236.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/dc3_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 236.0,
+"b": 245.86,
+"k": "ilus",
+"t": "polish",
+"p": {
+"mode": "shine",
+"o": {
+"aside": {
+"t": "days. of polishing.",
+"x": 1080,
+"y": 420,
+"a": 259
+}
+}
+}
+},
+{
+"a": 245.86,
+"b": 251.46,
+"k": "ilus",
+"t": "polish",
+"p": {
+"mode": "back",
+"o": {
+"build": {
+"lines": [
+"they chose *white.*"
+],
+"size": 96,
+"y": 60,
+"a": 129
+}
+}
+}
+},
+{
+"a": 251.46,
+"b": 255.78,
+"k": "g",
+"t": "board",
+"p": {
+"n": 3
+},
+"sfx": "whoosh",
+"roster": 4,
+"big": true
+},
+{
+"a": 255.78,
+"b": 256.88,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "CRACKS.",
+"a": 2,
+"size": 230,
+"y": 400
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 256.88,
+"b": 259.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/inspect2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 259.18,
+"b": 262.84,
+"k": "ilus",
+"t": "walk",
+"p": {
+"o": {
+"label": "the walkaround"
+}
+},
+"big": true
+},
+{
+"a": 262.84,
+"b": 267.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/mx2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 267.54,
+"b": 270.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/ndt_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 270.94,
+"b": 272.92,
+"k": "ilus",
+"t": "lupa",
+"p": {
+"mode": "white",
+"find": "crack"
+}
+},
+{
+"a": 272.92,
+"b": 274.78,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a30_dent.png"
+}
+},
+{
+"a": 274.78,
+"b": 278.38,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a31_oil_streak.png"
+}
+},
+{
+"a": 278.38,
+"b": 280.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/corrosion_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 280.76,
+"b": 287.62,
+"k": "ilus",
+"t": "lupa",
+"p": {
+"mode": "white",
+"find": "all",
+"o": {
+"build": {
+"lines": [
+"it *jumps* right out"
+],
+"size": 90,
+"y": 60,
+"a": 161
+}
+}
+}
+},
+{
+"a": 287.62,
+"b": 292.38,
+"k": "ilus",
+"t": "lupa",
+"p": {
+"mode": "dark",
+"find": "all",
+"o": {
+"build": {
+"lines": [
+"those signs can *hide.*"
+],
+"size": 90,
+"y": 60,
+"a": 112
+}
+}
+}
+},
+{
+"a": 292.38,
+"b": 296.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a34_white_paper.png",
+"o": {
+"build": {
+"lines": [
+"a clean sheet of *paper.*"
+],
+"a": 44
+}
+}
+}
+},
+{
+"a": 296.88,
+"b": 302.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/rivet2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 302.92,
+"b": 307.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vnavy_hangar.mp4",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 307.16,
+"b": 310.48,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30tornien/real/inspect2_02.jpg",
+"ar": 1.2582,
+"o": {
+"aside": {
+"t": "peace of mind.",
+"x": 1180,
+"y": 330,
+"a": 68
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 310.48,
+"b": 318.38,
+"k": "g",
+"t": "board",
+"p": {
+"n": 4,
+"o": {
+"build": {
+"lines": [
+"not *fuel* money."
+],
+"y": 60,
+"size": 88,
+"a": 115
+}
+}
+},
+"sfx": "whoosh",
+"roster": 5,
+"big": true
+},
+{
+"a": 318.38,
+"b": 322.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/gate2_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 322.12,
+"b": 330.98,
+"k": "ilus",
+"t": "lessor",
+"p": {
+"o": {
+"build": {
+"lines": [
+"*leased.*"
+],
+"size": 110,
+"y": 60,
+"a": 111
+}
+}
+}
+},
+{
+"a": 330.98,
+"b": 337.92,
+"k": "ilus",
+"t": "lease",
+"p": {
+"o": {
+"build": {
+"lines": [
+"sometimes another *continent.*"
+],
+"size": 84,
+"y": 40,
+"a": 171
+}
+}
+},
+"big": true
+},
+{
+"a": 337.92,
+"b": 341.36,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/painthangar_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 341.36,
+"b": 344.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/depaint2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 344.74,
+"b": 346.52,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/paint2_03.jpg",
+"o": {
+"aside": {
+"t": "not a wall.",
+"x": 1200,
+"y": 330,
+"a": 12
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 346.52,
+"b": 356.1,
+"k": "ilus",
+"t": "hdays",
+"p": {
+"o": {
+"build": {
+"lines": [
+"a day *lost.*"
+],
+"size": 96,
+"y": 60,
+"a": 230
+}
+}
+}
+},
+{
+"a": 356.1,
+"b": 359.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/boneyard_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 359.68,
+"b": 366.36,
+"k": "ilus",
+"t": "tail",
+"p": {},
+"big": true
+},
+{
+"a": 366.36,
+"b": 374.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/storage_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 374.84,
+"b": 378.14,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"easier to lease.",
+"easier to *sell.*"
+],
+"a": 2,
+"y": 380,
+"size": 100
+}
+}
+}
+},
+{
+"a": 378.14,
+"b": 385.22,
+"k": "g",
+"t": "board",
+"p": {
+"n": 5
+},
+"sfx": "whoosh",
+"roster": 6,
+"big": true
+},
+{
+"a": 385.22,
+"b": 393.04,
+"k": "ilus",
+"t": "fade",
+"p": {
+"mode": "sky",
+"o": {
+"build": {
+"lines": [
+"the radiation is *stronger*"
+],
+"size": 86,
+"y": 60,
+"a": 209
+}
+}
+},
+"big": true
+},
+{
+"a": 393.04,
+"b": 396.14,
+"k": "ilus",
+"t": "fade",
+"p": {
+"mode": "tail"
+}
+},
+{
+"a": 396.14,
+"b": 400.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a51_faded_close.png",
+"o": {
+"label": "Reds → pink"
+}
+}
+},
+{
+"a": 400.96,
+"b": 405.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a50_faded_tail.png"
+}
+},
+{
+"a": 405.62,
+"b": 414.42,
+"k": "ilus",
+"t": "fade",
+"p": {
+"mode": "white",
+"o": {
+"build": {
+"lines": [
+"still looks *white.*"
+],
+"size": 96,
+"y": 60,
+"a": 119
+}
+}
+}
+},
+{
+"a": 414.42,
+"b": 417.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/mx2_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 417.0,
+"b": 420.24,
+"k": "g",
+"t": "board",
+"p": {
+"n": 6
+},
+"sfx": "whoosh",
+"roster": 7,
+"big": true
+},
+{
+"a": 420.24,
+"b": 426.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a52_patch.png"
+}
+},
+{
+"a": 426.26,
+"b": 428.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/airport2_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 428.84,
+"b": 431.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a53_paint_chips.png",
+"o": {
+"aside": {
+"t": "headache.",
+"x": 1200,
+"y": 330,
+"a": 68
+}
+}
+}
+},
+{
+"a": 431.94,
+"b": 436.4,
+"k": "ilus",
+"t": "patch",
+"p": {}
+},
+{
+"a": 436.4,
+"b": 442.98,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"How do you paint",
+"an *airplane?*"
+],
+"a": 4,
+"y": 330,
+"size": 100
+}
+}
+},
+"sfx": "whoosh"
+},
+{
+"a": 442.98,
+"b": 447.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k13_tow.mp4",
+"rate": 0.688
+}
+},
+{
+"a": 447.22,
+"b": 454.08,
+"k": "ilus",
+"t": "phangar",
+"p": {
+"o": {
+"build": {
+"lines": [
+"huge *fans* and filters"
+],
+"size": 86,
+"y": 60,
+"a": 35
+}
+}
+},
+"big": true
+},
+{
+"a": 454.08,
+"b": 461.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/paintAF_03.jpg",
+"o": {
+"aside": {
+"t": "picky.",
+"x": 1300,
+"y": 330,
+"a": 32
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 461.68,
+"b": 464.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a38_fans_filters.png",
+"o": {
+"build": {
+"lines": [
+"like a *laboratory.*"
+],
+"a": 38
+}
+}
+}
+},
+{
+"a": 464.22,
+"b": 467.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/depaint2_02.jpg",
+"o": {
+"build": {
+"lines": [
+"the *hardest* part."
+],
+"a": 16
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 467.32,
+"b": 476.14,
+"k": "ilus",
+"t": "mask",
+"p": {
+"o": {
+"build": {
+"lines": [
+"windows, sensors, *probes…*"
+],
+"size": 84,
+"y": 60,
+"a": 82
+}
+}
+},
+"big": true
+},
+{
+"a": 476.14,
+"b": 479.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/masking_01.jpg",
+"o": {
+"build": {
+"lines": [
+"by *hand.*"
+],
+"a": 64
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 479.44,
+"b": 482.6,
+"k": "ilus",
+"t": "strip",
+"p": {
+"mode": "strip"
+}
+},
+{
+"a": 482.6,
+"b": 486.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/sanding_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 486.4,
+"b": 491.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k11_sander.mp4",
+"rate": 0.501
+}
+},
+{
+"a": 491.96,
+"b": 498.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a43_bare_skin.png"
+}
+},
+{
+"a": 498.88,
+"b": 509.5,
+"k": "ilus",
+"t": "strip",
+"p": {
+"mode": "bare",
+"o": {
+"build": {
+"lines": [
+"every *rivet*, every seam"
+],
+"size": 86,
+"y": 60,
+"a": 196
+}
+}
+}
+},
+{
+"a": 509.5,
+"b": 511.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/ndt_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 511.46,
+"b": 512.98,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a44_primer.png"
+}
+},
+{
+"a": 512.98,
+"b": 523.36,
+"k": "ilus",
+"t": "steps",
+"p": {
+"o": {
+"build": {
+"lines": [
+"you guessed it: *white.*"
+],
+"size": 86,
+"y": 40,
+"a": 106
+}
+}
+},
+"big": true
+},
+{
+"a": 523.36,
+"b": 527.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k10_masking.mp4",
+"rate": 0.661
+}
+},
+{
+"a": 527.72,
+"b": 530.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a47_clear_coat.png"
+}
+},
+{
+"a": 530.7,
+"b": 541.8,
+"k": "g",
+"t": "weeks",
+"p": {},
+"big": true
+},
+{
+"a": 541.8,
+"b": 545.16,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a28_hangar_check.png"
+}
+},
+{
+"a": 545.16,
+"b": 549.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/paint2_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 549.74,
+"b": 555.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vtaxi_wing.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 555.22,
+"b": 574.38,
+"k": "g",
+"t": "board",
+"p": {
+"all": true,
+"at": [
+55,
+135,
+247,
+289,
+382,
+489,
+544
+]
+},
+"roster": 8,
+"big": true
+},
+{
+"a": 574.38,
+"b": 579.14,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "SEVEN.",
+"size": 250,
+"y": 380,
+"a": 60
+},
+"build": {
+"lines": [
+"all pushing toward the *same color.*"
+],
+"y": 760,
+"size": 70,
+"a": 80
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 579.14,
+"b": 583.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vdusk_land.mp4",
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 583.5,
+"b": 588.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/airport2_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 588.86,
+"b": 591.84,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30tornien/real/gates_01.jpg",
+"ar": 1.25,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 591.84,
+"b": 595.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a54_black_jet.png"
+}
+},
+{
+"a": 595.74,
+"b": 602.18,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "photo",
+"o": {
+"aside": {
+"t": "ooooh.",
+"x": 1180,
+"y": 280,
+"a": 137
+}
+}
+}
+},
+{
+"a": 602.18,
+"b": 605.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k18_black_taxi.mp4",
+"rate": 0.858
+}
+},
+{
+"a": 605.5,
+"b": 613.5,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "heat",
+"o": {
+"build": {
+"lines": [
+"an *advertising* expense"
+],
+"size": 86,
+"y": 40,
+"a": 193
+}
+}
+}
+},
+{
+"a": 613.5,
+"b": 615.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a56_phone_photo.png"
+}
+},
+{
+"a": 615.7,
+"b": 618.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/a350b_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 618.86,
+"b": 624.42,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "special",
+"o": {
+"build": {
+"lines": [
+"dark… but *reflective*"
+],
+"size": 86,
+"y": 40,
+"a": 79
+}
+}
+}
+},
+{
+"a": 624.42,
+"b": 630.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/composite2_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 630.24,
+"b": 641.54,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "top",
+"o": {
+"scrib": {
+"cx": 900,
+"cy": 470,
+"rx": 560,
+"ry": 90,
+"text": "lighter on top.",
+"tx": 980,
+"ty": 230,
+"a": 232
+}
+}
+}
+},
+{
+"a": 641.54,
+"b": 645.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a55_black_top_light.png"
+}
+},
+{
+"a": 645.88,
+"b": 656.26,
+"k": "ilus",
+"t": "black",
+"p": {
+"mode": "pays",
+"o": {
+"build": {
+"lines": [
+"paying to be *noticed.*"
+],
+"size": 90,
+"y": 330,
+"a": 100
+}
+}
+}
+},
+{
+"a": 656.26,
+"b": 658.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/apron_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 658.0,
+"b": 661.66,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"big": {
+"w": "WHITE.",
+"size": 250,
+"y": 400,
+"a": 87
+},
+"build": {
+"lines": [
+"the rule is still:"
+],
+"a": 4,
+"y": 230,
+"size": 80
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 661.66,
+"b": 664.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vwing_tko.mp4",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 664.82,
+"b": 668.36,
+"k": "ilus",
+"t": "gate",
+"p": {
+"mode": "end",
+"o": {
+"build": {
+"lines": [
+"not *boring.*"
+],
+"size": 100,
+"y": 60,
+"a": 74
+}
+}
+}
+},
+{
+"a": 668.36,
+"b": 671.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/mx2_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 671.7,
+"b": 673.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a06_roof_sun.png"
+}
+},
+{
+"a": 673.64,
+"b": 675.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a48_paint_drums.png"
+}
+},
+{
+"a": 675.46,
+"b": 677.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a37_paint_hangar.png"
+}
+},
+{
+"a": 677.7,
+"b": 681.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/real/rivet2_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 681.18,
+"b": 684.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/ag/t30tornien_a02_row_white.png",
+"o": {
+"build": {
+"lines": [
+"a color nobody *looks at.*"
+],
+"a": 59
+}
+}
+}
+},
+{
+"a": 684.96,
+"b": 689.22,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Have you ever flown on a plane that wasn't white?",
+"bell": false
+}
+},
+{
+"a": 689.22,
+"b": 693.64,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "What color was it — and which airline?",
+"bell": false
+}
+},
+{
+"a": 693.64,
+"b": 698.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30tornien/v/vold_land.mp4",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 698.92,
+"b": 704.1,
+"k": "ilus",
+"t": "win",
+"p": {
+"o": {
+"build": {
+"lines": [
+"Next week: *round* windows."
+],
+"a": 4,
+"size": 90,
+"y": 60
+}
+}
+}
+},
+{
+"a": 704.1,
+"b": 706.14,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Subscribe + bell so you don't miss it."
+}
+},
+{
+"a": 706.14,
+"b": 710.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k20_window_clouds.mp4",
+"o": {
+"build": {
+"lines": [
+"the details that make it *work.*"
+],
+"a": 79
+}
+},
+"rate": 0.73
+}
+},
+{
+"a": 710.18,
+"b": 712.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30tornien/t30tornien_k19_dusk_gates.mp4"
+}
+}
+]
+}
