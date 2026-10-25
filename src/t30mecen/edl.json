@@ -2682,8 +2682,7 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "broll/t30mecen/t30mecen_k17_porch_on.mp4",
-"rate": 0.604
+"v": "img/t30mecen/ag/t30mecen_a55_porch_light_on.png"
 }
 },
 {
@@ -2794,14 +2793,15 @@
 "k": "real",
 "t": "real",
 "p": {
-"v": "img/t30mecen/ag/t30mecen_a55_porch_light_on.png",
+"v": "img/t30mecen/real/porchnight_01.jpg",
 "o": {
 "aside": {
 "t": "not the lottery.",
 "x": 1150,
 "y": 330,
 "a": 97
-}
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
 }
 }
 },
