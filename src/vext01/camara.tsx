@@ -67,7 +67,7 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
 // Capa: z = profundidad (0 lejos … 1 foco … 1,6 primer término). desenfoqueMax en px a distancia 1 del foco.
 export const Capa: React.FC<{ z: number; children: React.ReactNode; desenfoqueMax?: number; style?: React.CSSProperties }> = ({ z, children, desenfoqueMax = 18, style }) => {
   const c = useContext(Ctx);
-  const par = 0.35 + 0.65 * z; // cuánto le afecta el movimiento de cámara
+  const par = Math.max(0.05, z); // cuánto le afecta el movimiento de cámara (cielo ~5 %, primer término >100 %)
   const zoom = 1 + (c.zoom - 1) * par;
   const blur = Math.min(40, Math.abs(z - c.foco) * desenfoqueMax);
   return (
