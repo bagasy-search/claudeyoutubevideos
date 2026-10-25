@@ -4,6 +4,7 @@ import { C, ent, prog, fontFamily, Chip, Emote, Pan, Particulas, Rayos } from ".
 import { Persona } from "./persona";
 import { Reloj, Termometro, Moneda3, Rosbif, V, T, Carta } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, CasaAdentro, NINO, NINA, HILANDERO, OBRERO, CAPATAZ, GenteFab, FCX, mulaVaiven } from "./mundo";
+import { Mini0 } from "./Mini0";
 import { Gran, Cuenta, Sello, Tachado, Lista, Carretes, Flash, sacudon, Velo } from "./capas";
 
 // PARTE A · gancho y premisa (0-81,3 s). Un solo pueblo: la calle de noche → el reloj → el portón que se cierra →
@@ -97,6 +98,8 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
         </>
       )}
 
+      {/* cuadro 0 = la miniatura en código, que cobra vida y se zambulle en el reloj de la torre */}
+      <Mini0 t={t} />
       {/* ── capas de pantalla ── */}
       <Chip t={t} t0={0.12} t1={1.5} text="AGE 9" color={C.rojo} x={960} y={170} centro size={150} />
       <Chip t={t} t0={2.2} t1={3.4} text="5:30 AM" color={C.violeta} x={960} y={950} centro size={96} />
