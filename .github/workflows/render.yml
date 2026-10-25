@@ -267,7 +267,7 @@ jobs:
           # Costo real: 8 rondas y 6 renders en `cmetemu` buscandolo en el archivo equivocado.
           # La UNICA forma correcta de forzar CFR conservando el reordenamiento es RE-ENCODEAR.
           # Verificado midiendo pts vs dts en las dos variantes antes de tocar esto.
-          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v:0 -map 0:a:0 -vf "setpts=N/30/TB,format=yuv420p" -r 30 -fps_mode cfr -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -video_track_timescale 90000 -c:a aac -b:a 192k -ar 48000 -af "aresample=async=1:first_pts=0,apad" -movflags +faststart "$SLUG.mp4"; then OK=1; fi
+          if ffmpeg -y -v error -i "_cat_$SLUG.mp4" -map 0:v:0 -map 0:a:0 -vf "setpts=N/30/TB,format=yuv420p" -r 30 -fps_mode cfr -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p -video_track_timescale 90000 -c:a aac -b:a 192k -ar 48000 -af "aresample=async=1:first_pts=0,apad=whole_dur=$(( ${{ github.event.inputs.total_frames }} / 30 ))" -t $(( ${{ github.event.inputs.total_frames }} / 30 )) -movflags +faststart "$SLUG.mp4"; then OK=1; fi
           # ⛔⛔ COMPUERTA: el final TIENE que tener pista de audio y durar casi lo mismo que el video.
           if [ "$OK" = "1" ]; then
             VD=$(ffprobe -v error -select_streams v -show_entries stream=duration -of csv=p=0 "$SLUG.mp4")
