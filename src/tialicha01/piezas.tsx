@@ -427,11 +427,11 @@ export const Aviso: React.FC<{ t: number; at: number; out: number; x: number; y:
     <svg width={110} height={110} viewBox="0 0 100 100"><rect x={36} y={8} width={28} height={84} rx={6} fill={LI.rojo} /><rect x={8} y={36} width={84} height={28} rx={6} fill={LI.rojo} /></svg>
     <div><Lbl s={30} c={LI.morado} ls={5}>{title}</Lbl><div style={{ fontFamily: HAND, fontWeight: 700, fontSize: 60, color: LI.tinta, lineHeight: 1.05 }}>{text}</div></div></div></Pop>;
 // las tres que la abuela NUNCA cenaba: tres cazuelitas tapadas; cada tapa se levanta y cae la X
-export const Nunca3: React.FC<{ t: number; at: number; ats: number[]; labels: string[]; out: number; y: number }> = ({ t, at, ats, labels, out, y }) => {
+export const Nunca3: React.FC<{ t: number; at: number; ats: number[]; labels: string[]; out: number; y: number; title?: string }> = ({ t, at, ats, labels, out, y, title = "LO QUE NUNCA CENABA" }) => {
   const o = e(t, at, at + 0.15) * (1 - e(t, out, out + 0.3));
   if (o <= 0.01) return null;
   return <AbsoluteFill style={{ opacity: o }}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: y - 250, textAlign: "center" }}><Lbl f={SERIF} s={70} w={900} c={LI.maiz}><span style={{ textShadow: extrude(5, "#3a1408") }}>LO QUE NUNCA CENABA</span></Lbl></div>
+    <div style={{ position: "absolute", left: 0, right: 0, top: y - 250, textAlign: "center" }}><Lbl f={SERIF} s={70} w={900} c={LI.maiz}><span style={{ textShadow: extrude(5, "#3a1408") }}>{title}</span></Lbl></div>
     {labels.map((l, i) => { const k = Math.min(1.06, spr(t, at + 0.15 * i, 1.2)), lid = ei(t, ats[i], ats[i] + 0.5); return <div key={i} style={{ position: "absolute", left: 480 + i * 480, top: y, transform: `translate(-50%,-50%) scale(${k})`, textAlign: "center" }}>
       <div style={{ position: "relative", width: 300, height: 190 }}>
         <div style={{ position: "absolute", left: 20, top: 70, width: 260, height: 110, borderRadius: "0 0 130px 130px", background: "linear-gradient(#b5582f,#7a3a18)", boxShadow: SH }} />
