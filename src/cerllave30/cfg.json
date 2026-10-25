@@ -1,0 +1,49 @@
+{
+ "desc": "🔑 La lista de hoy + El Método del Cerrajero",
+ "replies": [
+  {
+   "f": "🇲🇽",
+   "tx": "debajo de la maceta 😅"
+  },
+  {
+   "f": "🇦🇷",
+   "tx": "arriba del marco de la puerta"
+  },
+  {
+   "f": "🇨🇴",
+   "tx": "en el buzón"
+  }
+ ],
+ "pages": {
+  "l2 39": {
+   "hl": "CAJA DE COMBINACIÓN PARA EL CUIDADOR",
+   "n": 16,
+   "bar": [
+    0.15010377472522213,
+    0.0838380004420425,
+    0.6270994547924964,
+    0.02605560572460444
+   ]
+  },
+  "l1 16": {
+   "hl": "NI UNA LLAVE ESCONDIDA AFUERA",
+   "n": 5,
+   "bar": [
+    0.12541188757404004,
+    0.08474020524458452,
+    0.5090670616798152,
+    0.027067483073533183
+   ]
+  },
+  "l2 40": {
+   "hl": "LLAVES SIN NOMBRE NI DIRECCIÓN",
+   "n": 17,
+   "bar": [
+    0.1491235845229205,
+    0.08519132209546638,
+    0.5409739001903658,
+    0.02757341211492365
+   ]
+  }
+ }
+}
