@@ -735,12 +735,14 @@ const Barrido: React.FC = () => {
   const f = useCurrentFrame(); // 0-18, tapa todo alrededor del 9
   const x = interpolate(f, [0, 18], [2500, -3300], { easing: Easing.inOut(Easing.sin) });
   return (
-    <AbsoluteFill style={{ filter: "blur(28px)" }}>
+    <AbsoluteFill>
       <Svg>
         <defs>
+          {/* desenfoque DENTRO del SVG (lo pinta Skia): el blur CSS de capa entera corrompe teselas en el farm */}
+          <filter id="mangaBlur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation={28} /></filter>
           <linearGradient id="mangaSombra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#000" stopOpacity={0.55} /><stop offset="0.5" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={0.6} /></linearGradient>
         </defs>
-        <g transform={`translate(${x},0) rotate(-6 960 540)`}>
+        <g transform={`translate(${x},0) rotate(-6 960 540)`} filter="url(#mangaBlur)">
           <rect x={0} y={-500} width={3000} height={2100} rx={600} fill={C.teal} />
           <rect x={0} y={-500} width={3000} height={2100} rx={600} fill="url(#mangaSombra)" />
           <ellipse cx={120} cy={520} rx={420} ry={700} fill={C.negro} />

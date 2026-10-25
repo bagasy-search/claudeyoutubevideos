@@ -16,7 +16,7 @@ export const OffsetCtx = createContext(0);
 export const useF = () => useCurrentFrame() - useContext(OffsetCtx);
 const curvas = { in: Easing.in(Easing.cubic), out: Easing.out(Easing.cubic), inout: Easing.inOut(Easing.cubic) };
 
-type Estado = { x: number; y: number; zoom: number; rot: number; foco: number };
+type Estado = { x: number; y: number; zoom: number; rot: number; foco: number; fondo?: string };
 const Ctx = createContext<Estado>({ x: 0, y: 0, zoom: 1, rot: 0, foco: 1 });
 
 // posición de cámara en el cuadro f: cada tramo entre claves avanza con un resorte (llega con inercia, rebota apenas)
@@ -91,31 +91,36 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
         </svg>
       )}
       <AbsoluteFill style={{ filter: mb ? `url(#${id})` : undefined }}>
-        <Ctx.Provider value={{ x: p.x + s.x + (extra.x ?? 0), y: p.y + s.y + (extra.y ?? 0), zoom: p.zoom * (extra.zoom ?? 1), rot: p.rot + s.rot, foco: p.foco }}>{children}</Ctx.Provider>
+        <Ctx.Provider value={{ x: p.x + s.x + (extra.x ?? 0), y: p.y + s.y + (extra.y ?? 0), zoom: p.zoom * (extra.zoom ?? 1), rot: p.rot + s.rot, foco: p.foco, fondo }}>{children}</Ctx.Provider>
       </AbsoluteFill>
     </AbsoluteFill>
   );
 };
 
-// Capa: z = profundidad (0 lejos … 1 foco … 1,6 primer término). desenfoqueMax en px a distancia 1 del foco.
+// Capa: z = profundidad (0 lejos … 1 foco … 1,6 primer término). desenfoqueMax = cuánta profundidad atmosférica a distancia 1.
+// SIN filter: blur. En el farm (swangle) cualquier blur CSS en capas grandes corrompe las teselas del compositor
+// (franjas con pedazos de otra parte del cuadro) aunque vaya en un nodo hijo. La profundidad se da con BRUMA:
+// las capas detrás del foco se funden hacia el color de fondo del plano (como las referencias: fondo apagado, personajes nítidos).
 export const Capa: React.FC<{ z: number; children: React.ReactNode; desenfoqueMax?: number; style?: React.CSSProperties }> = ({ z, children, desenfoqueMax = 18, style }) => {
   const c = useContext(Ctx);
   const par = Math.max(0.05, z); // cuánto le afecta el movimiento de cámara (cielo ~5 %, primer término >100 %)
   const zoom = 1 + (c.zoom - 1) * par;
-  const blur = Math.min(40, Math.abs(z - c.foco) * desenfoqueMax);
-  // la transform del style se COMPONE con la de cámara (antes la pisaba: la capa perdía el paralaje).
-  // el desenfoque va en un hijo SIN transform: en el farm (swangle) filter+transform grande en el mismo nodo
-  // corrompía las teselas del compositor (franjas con pedazos de otra parte del cuadro).
+  // la transform del style se COMPONE con la de cámara (antes la pisaba: la capa perdía el paralaje)
   const { transform: tExtra, ...resto } = style ?? {};
+  // bruma sólo detrás del foco (la capa de bruma tapa lo que hay debajo = sólo capas aún más lejanas)
+  const bruma = z < c.foco ? Math.min(0.45, (c.foco - z) * desenfoqueMax * 0.03) : 0;
   return (
-    <AbsoluteFill
-      style={{
-        transform: `translate(${-c.x * par}px, ${-c.y * par}px) rotate(${c.rot * par}deg) scale(${zoom})${tExtra ? " " + tExtra : ""}`,
-        transformOrigin: "50% 50%",
-        ...resto,
-      }}
-    >
-      <AbsoluteFill style={{ filter: blur > 0.6 ? `blur(${blur.toFixed(1)}px)` : undefined }}>{children}</AbsoluteFill>
-    </AbsoluteFill>
+    <>
+      <AbsoluteFill
+        style={{
+          transform: `translate(${-c.x * par}px, ${-c.y * par}px) rotate(${c.rot * par}deg) scale(${zoom})${tExtra ? " " + tExtra : ""}`,
+          transformOrigin: "50% 50%",
+          ...resto,
+        }}
+      >
+        {children}
+      </AbsoluteFill>
+      {bruma > 0.02 && <AbsoluteFill style={{ background: c.fondo ?? "#000", opacity: bruma, pointerEvents: "none" }} />}
+    </>
   );
 };
