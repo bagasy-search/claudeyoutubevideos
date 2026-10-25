@@ -49,6 +49,12 @@ B("The box, we called it", "w:desk", "zoom")
 O("The box, we called it", "tag", 3.2, pt="pad", text="THE BOX", sub="the finance office", col="#ffb257")
 B("Now I'm on your side of the desk", "w:pad", "cut")
 
+# ----- CTA de la guía (voz insertada por ins_cta_c.py) -----
+_a, _b, _c, _z = at("Five books. I call them"), at("The calendar we're talking about today"), at("The link is in the first line of the description, or scan"), at("your phone camera. Okay")
+B("Before number one, real quick", "w:desk", "fade"); B("Five books. I call them", "w:pad", "cut")
+if None not in (_a, _b, _c, _z): O("Five books. I call them", "guide", round(_z - _a + 0.6, 2), cover="g_hd-lot.jpg", page="g_script_pago.jpg", pg="BOOK 1 · PAGE 24", tb=round(_b - _a, 2), tc=round(_c - _a, 2))
+SFX("Five books. I call them", WHOOSH, -30); SFX("The calendar we're talking about today", PAGE, -26); SFX("The link is in the first line of the description, or scan", PAPER, -28)
+
 # ======================= 1. LA PIZARRA =======================
 O("Number one. The board", "step", 3.6, n="1", tx="THE BOARD")
 KF("calyr", "Number one. The board", 1975); KF("cal", "Number one. The board", 5); KF("board", "Number one. The board", 0)
@@ -245,6 +251,12 @@ B("The young people pay for the new model year", "img:f32", "zoom")
 O("You collect the discount", "stamp", 2.6, text="YOU COLLECT", col="#3fd17a", rot=-5)
 O("Do you have any of last year's models left", "comment", 4.0, text="\"Do you have any of last year's models left?\"", y=880)
 B("Do you have any of last year's models left", "w:lot", "cut")
+
+# ----- CTA de la guía (voz insertada por ins_cta_c.py) -----
+_a, _b, _c, _z = at("Let me stop for one second"), at("On page fifty-five"), at("The link is in the first line of the description, or point"), at("at the code on the screen. Okay")
+B("Let me stop for one second", "w:desk", "fade"); B("Let me stop for one second", "w:pad", "cut")
+if None not in (_a, _b, _c, _z): O("Let me stop for one second", "guide", round(_z - _a + 0.6, 2), cover="g_hd-lot.jpg", page="g_lapiz_rojo.jpg", pg="BOOK 3 · PAGE 55 · $6,536 SAVED", tb=round(_b - _a, 2), tc=round(_c - _a, 2))
+SFX("Let me stop for one second", WHOOSH, -30); SFX("On page fifty-five", PAGE, -26); SFX("The link is in the first line of the description, or point", PAPER, -28)
 
 # ======================= 7. EL DÍA Y LA HORA =======================
 O("Number seven. The day, and the hour", "step", 3.6, n="7", tx="THE DAY · AND THE HOUR")

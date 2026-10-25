@@ -9,7 +9,7 @@ import { World as WorldRaw, PT, screenOf } from "./concesionaria3d";
 import { BigNum, COL, DrawX, Flash, LowerThird, Chips, P, Portal, Tag, e, ei, s } from "./lib";
 import { MaxTimer, StepPlate, ErrorCard, Routine, Recap, Comment, HourClock } from "./rest2d";
 import { Stamp } from "./piezas";
-import { FourSquare, MonthStrip, DealSheet, MiamiMap, MoneyRoll, StairStep, PersonCard } from "./hector2d";
+import { FourSquare, MonthStrip, DealSheet, MiamiMap, MoneyRoll, StairStep, PersonCard, GuideBook } from "./hector2d";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 import SEGS from "./segs.json";
 import OV from "./ov.json";
@@ -100,6 +100,7 @@ const Piece: React.FC<{ o: O; t: number }> = ({ o, t }) => {
     case "map": return <MiamiMap t={t} at={o.a} out={o.b} pins={p.pins} />;
     case "money": return <MoneyRoll t={t} at={o.a} out={o.b} from={p.from} to={p.to} label={p.label} col={p.col} x={p.x} y={p.y} size={p.size} dur={p.dur} pre={p.pre} suf={p.suf} />;
     case "stair": return <StairStep t={t} at={o.a} out={o.b} steps={p.steps} x={p.x} y={p.y} />;
+    case "guide": return <GuideBook t={t} at={o.a} out={o.b} cover={p.cover} page={p.page} pg={p.pg} tb={p.tb} tc={p.tc} />;
     case "person": return <PersonCard t={t} at={o.a} out={o.b} name={p.name} l2={p.l2} x={p.x} y={p.y} />;
     case "lower": return <LowerThird t={t} at={o.a} out={o.b} name={p.name} l2={p.l2} l2at={o.a + 0.5} />;
     case "x": return <DrawX t={t} at={o.a} x={p.x} y={p.y} w={p.w} h={p.h} />;
