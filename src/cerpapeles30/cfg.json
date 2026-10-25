@@ -1,0 +1,77 @@
+{
+ "desc": "📁 La lista de hoy + El Método del Cerrajero",
+ "replies": [
+  {
+   "f": "🇲🇽",
+   "tx": "en el congelador 😅"
+  },
+  {
+   "f": "🇦🇷",
+   "tx": "debajo del colchón"
+  },
+  {
+   "f": "🇨🇴",
+   "tx": "en una caja de zapatos en el ropero"
+  }
+ ],
+ "three": [
+  {
+   "ic": "📁",
+   "tx": "EL ORIGINAL",
+   "sub": "MANUALES O CAJA ATORNILLADA"
+  },
+  {
+   "ic": "☁️",
+   "tx": "FOTO + NUBE",
+   "sub": "CELULAR CON CLAVE"
+  },
+  {
+   "ic": "🏡",
+   "tx": "UNA COPIA AFUERA",
+   "sub": "EN CASA DE UN FAMILIAR"
+  }
+ ],
+ "index": {
+  "title": "TU NOMBRE · ¿QUÉ ES? · ¿DÓNDE ESTÁ EL ORIGINAL?",
+  "rows": [
+   [
+    "Escritura de la casa",
+    "carpeta de manuales"
+   ],
+   [
+    "Testamento",
+    "con el escribano"
+   ],
+   [
+    "Pasaportes",
+    "caja del clóset"
+   ],
+   [
+    "Partidas de nacimiento",
+    "carpeta de manuales"
+   ]
+  ]
+ },
+ "pages": {
+  "l4 61": {
+   "hl": "LOS PAPELES QUE NO SE REEMPLAZAN, EN UNA CARPETA",
+   "n": 26,
+   "bar": [
+    0.15666072820526322,
+    0.08262194045866379,
+    0.677174000958212,
+    0.05405137033173532
+   ]
+  },
+  "l4 62": {
+   "hl": "FOTOS DE LOS PAPELES EN EL CELULAR Y EN LA NUBE",
+   "n": 27,
+   "bar": [
+    0.15477270238539753,
+    0.08349384924378057,
+    0.7573545244004991,
+    0.027356793182064788
+   ]
+  }
+ }
+}
