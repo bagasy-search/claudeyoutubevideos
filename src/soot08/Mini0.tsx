@@ -3,9 +3,9 @@ import { interpolate, Easing } from "remotion";
 import { rnd } from "../soot/lib";
 
 // CUADRO 0 = la miniatura elegida (soot08_elegida.png) SIN el texto y SIN la flecha, rehecha en código.
-// Coordenadas en píxeles de la miniatura (1672x941). 0-1,2 s la escena cobra vida (engranaje, pelusa,
-// parpadeo, el bastón); 1,2-2,05 s la cámara se zambulle en el reloj de la pared, las agujas corren
-// hacia atrás a las 5:30 y el reloj calza exacto sobre el reloj de la torre del gancho (fundido 2,05-2,25).
+// Coordenadas en píxeles de la miniatura (1672x941). 0-1,2 s la escena cobra vida (engranaje, correa,
+// pelusa, parpadeo, el bastón); 1,2-2,05 s la cámara se zambulle en el reloj de la pared, las agujas
+// corren hacia atrás a las 5:30 y el reloj calza exacto sobre el reloj de la torre del gancho (fundido 2,05-2,25).
 export const MINI_FIN = 2.25;
 const W = 1672, H = 941, K = 1920 / W;
 // reloj de la pared (miniatura) → reloj de la torre a los 2,05 s (centro 966,506, esfera r 312 px)
@@ -15,41 +15,86 @@ const Z1 = 312 / (RR * K);
 const ease = Easing.inOut(Easing.cubic);
 const pr = (t: number, a: number, b: number, e = ease) => interpolate(t, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: e });
 
-const Pelusa: React.FC<{ x: number; y: number; r: number; o?: number; seed: number }> = ({ x, y, r, o = 1, seed }) => {
+// copo de algodón: racimo de bolitas con sombra abajo y brillo arriba
+const Pelusa: React.FC<{ x: number; y: number; r: number; o?: number; seed: number; blur?: boolean; tinte?: string }> = ({ x, y, r, o = 1, seed, blur, tinte = "#efe3cf" }) => {
   const q = rnd(seed);
-  const n = 7;
+  const n = 9;
   return (
-    <g transform={`translate(${x} ${y})`} opacity={o}>
+    <g transform={`translate(${x} ${y})`} opacity={o} filter={blur ? "url(#m0bl)" : undefined}>
       {Array.from({ length: n }, (_, i) => {
         const a = (i / n) * Math.PI * 2 + q();
-        const d = r * (0.35 + q() * 0.3);
-        return <circle key={i} cx={Math.cos(a) * d} cy={Math.sin(a) * d * 0.8} r={r * (0.45 + q() * 0.25)} fill={i % 3 ? "#fbf6ec" : "#efe4d2"} />;
+        const d = r * (0.3 + q() * 0.35);
+        return <circle key={i} cx={Math.cos(a) * d} cy={Math.sin(a) * d * 0.75 + r * 0.08} r={r * (0.4 + q() * 0.25)} fill={tinte} />;
       })}
-      <circle r={r * 0.6} fill="#fffaf2" />
+      {Array.from({ length: 6 }, (_, i) => {
+        const a = (i / 6) * Math.PI * 2 + q();
+        const d = r * (0.2 + q() * 0.3);
+        return <circle key={`b${i}`} cx={Math.cos(a) * d - r * 0.08} cy={Math.sin(a) * d * 0.7 - r * 0.12} r={r * (0.3 + q() * 0.2)} fill="#fffdf7" />;
+      })}
+      {Array.from({ length: 5 }, (_, i) => {
+        const a = q() * Math.PI * 2;
+        return <path key={`f${i}`} d={`M ${Math.cos(a) * r * 0.6} ${Math.sin(a) * r * 0.5} q ${Math.cos(a) * r * 0.4} ${Math.sin(a) * r * 0.2} ${Math.cos(a) * r * 0.7} ${Math.sin(a) * r * 0.5}`} stroke="#fffaf0" strokeWidth={Math.max(1, r * 0.06)} fill="none" opacity={0.8} />;
+      })}
     </g>
   );
 };
 
-const Engranaje: React.FC<{ x: number; y: number; r: number; dientes: number; rot: number; c1: string; c2: string }> = ({ x, y, r, dientes, rot, c1, c2 }) => {
+// engranaje con dientes, brazos, cubo y brillo de canto
+const Engranaje: React.FC<{ r: number; dientes: number; rot: number; c1: string; c2: string; brazos?: number }> = ({ r, dientes, rot, c1, c2, brazos = 6 }) => {
   const d: string[] = [];
   for (let i = 0; i < dientes; i++) {
     const a0 = (i / dientes) * Math.PI * 2, a1 = ((i + 0.5) / dientes) * Math.PI * 2, s = Math.PI / dientes;
     const p = (a: number, rr: number) => `${Math.cos(a) * rr} ${Math.sin(a) * rr}`;
-    d.push(`${i ? "L" : "M"} ${p(a0 - s * 0.45, r - 22)} L ${p(a0 - s * 0.3, r)} L ${p(a0 + s * 0.3, r)} L ${p(a0 + s * 0.45, r - 22)} L ${p(a1, r - 22)}`);
+    d.push(`${i ? "L" : "M"} ${p(a0 - s * 0.5, r - 26)} L ${p(a0 - s * 0.32, r)} L ${p(a0 + s * 0.32, r)} L ${p(a0 + s * 0.5, r - 26)} L ${p(a1, r - 26)}`);
   }
   return (
-    <g transform={`translate(${x} ${y}) rotate(${rot})`}>
-      <path d={d.join(" ") + " Z"} fill={c1} stroke="#2a2420" strokeWidth={4} />
-      <circle r={r - 40} fill={c2} />
-      <circle r={r - 62} fill="none" stroke="#3a342f" strokeWidth={8} opacity={0.6} />
-      {[0, 60, 120, 180, 240, 300].map((a) => <rect key={a} x={-18} y={-(r - 70)} width={36} height={r - 150} rx={8} fill="#4a4540" transform={`rotate(${a})`} opacity={0.55} />)}
-      <circle r={r * 0.32} fill="#7c7873" stroke="#2f2a26" strokeWidth={6} />
-      <circle r={r * 0.17} fill="#56524d" />
-      <circle r={r * 0.07} fill="#2b2724" />
-      <path d={`M ${-r * 0.62} ${-r * 0.5} A ${r * 0.8} ${r * 0.8} 0 0 1 ${r * 0.2} ${-r * 0.78}`} stroke="#c9c3ba" strokeWidth={10} fill="none" opacity={0.5} strokeLinecap="round" />
+    <g transform={`rotate(${rot})`}>
+      <path d={d.join(" ") + " Z"} fill={c1} stroke="#1e1b19" strokeWidth={5} />
+      <circle r={r - 30} fill="none" stroke="#9a948c" strokeWidth={5} opacity={0.5} />
+      <circle r={r - 46} fill={c2} />
+      {Array.from({ length: brazos }, (_, i) => (
+        <path key={i} d={`M ${-r * 0.1} ${-r * 0.3} L ${-r * 0.07} ${-(r - 50)} L ${r * 0.07} ${-(r - 50)} L ${r * 0.1} ${-r * 0.3} Z`} fill={c1} stroke="#24201d" strokeWidth={3} transform={`rotate(${(i * 360) / brazos})`} />
+      ))}
+      <circle r={r - 60} fill="none" stroke="#1e1b19" strokeWidth={10} opacity={0.35} />
+      <circle r={r * 0.34} fill="#6c6761" stroke="#24201d" strokeWidth={6} />
+      {Array.from({ length: 6 }, (_, i) => <circle key={i} cx={Math.cos((i * Math.PI) / 3) * r * 0.25} cy={Math.sin((i * Math.PI) / 3) * r * 0.25} r={r * 0.025} fill="#2a2623" />)}
     </g>
   );
 };
+
+// mancha de mugre irregular
+const Mugre: React.FC<{ x: number; y: number; r: number; seed: number; o?: number }> = ({ x, y, r, seed, o = 0.7 }) => {
+  const q = rnd(seed);
+  const n = 9;
+  const pts = Array.from({ length: n }, (_, i) => {
+    const a = (i / n) * Math.PI * 2;
+    const rr = r * (0.55 + q() * 0.6);
+    return [Math.cos(a) * rr, Math.sin(a) * rr * 0.75];
+  });
+  const d = pts.map(([px, py], i) => `${i ? "L" : "M"} ${px.toFixed(1)} ${py.toFixed(1)}`).join(" ") + " Z";
+  return (
+    <g transform={`translate(${x} ${y})`} opacity={o}>
+      <path d={d} fill="#5a3e28" strokeLinejoin="round" stroke="#5a3e28" strokeWidth={r * 0.25} />
+      {Array.from({ length: 5 }, (_, i) => <circle key={i} cx={(q() - 0.5) * r * 3} cy={(q() - 0.5) * r * 2} r={r * (0.1 + q() * 0.18)} fill="#5a3e28" />)}
+    </g>
+  );
+};
+
+// mano apoyada en el piso, vista desde adelante: palma + 4 dedos + pulgar
+const Mano: React.FC<{ x: number; y: number; s?: number; flip?: boolean }> = ({ x, y, s = 1, flip }) => (
+  <g transform={`translate(${x} ${y}) scale(${flip ? -s : s} ${s})`}>
+    <path d="M -60 -6 Q -62 -40 -30 -48 Q 10 -52 40 -40 Q 62 -26 60 -4 Z" fill="#f4b98c" />
+    {[[-52, 0, 22], [-24, 4, 24], [6, 4, 23], [34, 0, 20]].map(([fx, fy, l], i) => (
+      <g key={i}>
+        <path d={`M ${fx - 11} ${fy - 14} Q ${fx - 13} ${fy + l * 0.5} ${fx - 6} ${fy + l * 0.55} Q ${fx + 4} ${fy + l * 0.62} ${fx + 12} ${fy + l * 0.45} Q ${fx + 13} ${fy} ${fx + 11} ${fy - 14} Z`} fill="#f6c29a" stroke="#d48a62" strokeWidth={2} />
+        <path d={`M ${fx - 5} ${fy + l * 0.28} Q ${fx} ${fy + l * 0.34} ${fx + 6} ${fy + l * 0.28}`} stroke="#d48a62" strokeWidth={1.6} fill="none" />
+        <path d={`M ${fx - 5} ${fy + l * 0.5} Q ${fx} ${fy + l * 0.42} ${fx + 6} ${fy + l * 0.5}`} stroke="#fde3cc" strokeWidth={2} fill="none" />
+      </g>
+    ))}
+    <path d="M 52 -30 Q 82 -26 86 -6 Q 84 6 70 4 Q 62 -10 46 -14 Z" fill="#f4b98c" stroke="#d48a62" strokeWidth={2} />
+    <path d="M -40 -38 Q 0 -46 40 -34" stroke="#ffe0c6" strokeWidth={5} fill="none" opacity={0.7} />
+  </g>
+);
 
 export const Mini0: React.FC<{ t: number }> = ({ t }) => {
   if (t >= MINI_FIN) return null;
@@ -69,218 +114,379 @@ export const Mini0: React.FC<{ t: number }> = ({ t }) => {
   const baston = -4 * Math.sin(Math.max(0, t - 0.3) * 7) * Math.exp(-Math.max(0, t - 0.3) * 1.2);
   const lagr = pr(t, 0.2, 1.6, Easing.linear) * 26;
   const q = rnd(77);
-  const vuelan = Array.from({ length: 16 }, () => ({ x: 980 + q() * 620, y: 280 + q() * 420, r: 10 + q() * 22, vx: -40 - q() * 90, vy: 30 + q() * 60, f: q() * 6 }));
-  const caen = Array.from({ length: 22 }, () => ({ x: q() * W, y: q() * H * 0.8, r: 3 + q() * 6, f: q() * 6 }));
+  const vuelan = Array.from({ length: 12 }, () => ({ x: 1050 + q() * 520, y: 300 + q() * 380, r: 14 + q() * 24, vx: -50 - q() * 90, vy: 30 + q() * 60, f: q() * 6 }));
+  const motas = Array.from({ length: 70 }, () => ({ x: q() * 900, y: q() * H * 0.9, r: 1.5 + q() * 3.5, f: q() * 6 }));
+  const tablas = Array.from({ length: 18 }, (_, i) => i);
   return (
     <svg width={1920} height={1080} viewBox="0 0 1920 1080" style={{ position: "absolute", left: 0, top: 0, opacity: op }}>
       <defs>
-        <linearGradient id="m0pared" x1="0" y1="0" x2="1" y2="0.3">
-          <stop offset="0" stopColor="#f2d2a0" /><stop offset="0.25" stopColor="#a8754a" /><stop offset="0.55" stopColor="#4e3628" /><stop offset="1" stopColor="#2a1f1a" />
+        <linearGradient id="m0pared" x1="0" y1="0" x2="1" y2="0.2">
+          <stop offset="0" stopColor="#f7dcae" /><stop offset="0.18" stopColor="#c99a68" /><stop offset="0.42" stopColor="#6e5040" /><stop offset="0.7" stopColor="#3a2e2a" /><stop offset="1" stopColor="#25201f" />
         </linearGradient>
         <linearGradient id="m0piso" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#8a5a36" /><stop offset="0.5" stopColor="#5a3721" /><stop offset="1" stopColor="#3a2416" />
+          <stop offset="0" stopColor="#8a5430" /><stop offset="0.3" stopColor="#56321c" /><stop offset="1" stopColor="#24130a" />
         </linearGradient>
-        <radialGradient id="m0luz" cx="0.08" cy="0.45" r="0.75">
-          <stop offset="0" stopColor="#fff2cf" stopOpacity="0.5" /><stop offset="0.45" stopColor="#ffd796" stopOpacity="0.14" /><stop offset="1" stopColor="#ffd796" stopOpacity="0" />
+        <linearGradient id="m0pisoLuz" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#ffd9a0" stopOpacity="0.55" /><stop offset="0.5" stopColor="#ffcf8a" stopOpacity="0.12" /><stop offset="1" stopColor="#ffcf8a" stopOpacity="0" />
+        </linearGradient>
+        <radialGradient id="m0luz" cx="0.05" cy="0.42" r="0.6">
+          <stop offset="0" stopColor="#fff0c8" stopOpacity="0.95" /><stop offset="0.3" stopColor="#ffc870" stopOpacity="0.42" /><stop offset="1" stopColor="#ffdca0" stopOpacity="0" />
+        </radialGradient>
+        <linearGradient id="m0frio" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0.4" stopColor="#1a2436" stopOpacity="0" /><stop offset="1" stopColor="#1a2436" stopOpacity="0.38" />
+        </linearGradient>
+        <radialGradient id="m0contraluz" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stopColor="#ffd28a" stopOpacity="0.9" /><stop offset="1" stopColor="#ffb860" stopOpacity="0" />
         </radialGradient>
         <linearGradient id="m0ventana" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#fffaf0" /><stop offset="1" stopColor="#f3d9a6" />
+          <stop offset="0" stopColor="#ffffff" /><stop offset="0.6" stopColor="#fdf0d4" /><stop offset="1" stopColor="#f0d5a0" />
+        </linearGradient>
+        <linearGradient id="m0cielo" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#d9ecf7" /><stop offset="1" stopColor="#f6f0df" />
+        </linearGradient>
+        <linearGradient id="m0madera" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#3a2a20" /><stop offset="0.3" stopColor="#5a4232" /><stop offset="0.5" stopColor="#3e2d22" /><stop offset="1" stopColor="#24190f" />
+        </linearGradient>
+        <linearGradient id="m0hierro" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#56504a" /><stop offset="0.25" stopColor="#3a3632" /><stop offset="1" stopColor="#1c1916" />
+        </linearGradient>
+        <linearGradient id="m0rodillo" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#ffffff" /><stop offset="0.5" stopColor="#efe6d6" /><stop offset="1" stopColor="#b9aa92" />
         </linearGradient>
         <linearGradient id="m0pantalon" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#5a3b26" /><stop offset="1" stopColor="#3a2518" />
+          <stop offset="0" stopColor="#6a4a32" /><stop offset="0.5" stopColor="#4a321f" /><stop offset="1" stopColor="#2a1a10" />
         </linearGradient>
-        <linearGradient id="m0gorra" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#a8784a" /><stop offset="1" stopColor="#7a5232" />
+        <linearGradient id="m0camisa" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#f2ebdc" /><stop offset="0.6" stopColor="#d6cbb6" /><stop offset="1" stopColor="#a89a84" />
         </linearGradient>
-        <radialGradient id="m0cara" cx="0.45" cy="0.4" r="0.7">
-          <stop offset="0" stopColor="#ffd8b4" /><stop offset="1" stopColor="#f0b083" />
+        <linearGradient id="m0gorra" x1="0" y1="0" x2="0.4" y2="1">
+          <stop offset="0" stopColor="#b88a5c" /><stop offset="0.6" stopColor="#8a6240" /><stop offset="1" stopColor="#5e4028" />
+        </linearGradient>
+        <radialGradient id="m0cara" cx="0.42" cy="0.38" r="0.72">
+          <stop offset="0" stopColor="#ffe0c0" /><stop offset="0.7" stopColor="#f6bc8e" /><stop offset="1" stopColor="#e09a6c" />
         </radialGradient>
+        <radialGradient id="m0brazo" cx="0.3" cy="0.3" r="0.9">
+          <stop offset="0" stopColor="#ffd6b2" /><stop offset="1" stopColor="#e8a476" />
+        </radialGradient>
+        <linearGradient id="m0saco" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#5c5654" /><stop offset="0.35" stopColor="#3a3534" /><stop offset="1" stopColor="#24201f" />
+        </linearGradient>
+        <linearGradient id="m0correa" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#c07a3e" /><stop offset="0.5" stopColor="#8a4a20" /><stop offset="1" stopColor="#5e2e12" />
+        </linearGradient>
+        <radialGradient id="m0metal" cx="0.35" cy="0.3" r="0.8">
+          <stop offset="0" stopColor="#b4aea6" /><stop offset="0.5" stopColor="#6e6963" /><stop offset="1" stopColor="#36322f" />
+        </radialGradient>
+        <filter id="m0bl" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" /></filter>
+        <filter id="m0bl2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="14" /></filter>
+        <filter id="m0grano" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.012 0.18" numOctaves={3} seed={4} />
+          <feColorMatrix values="0 0 0 0 0.16  0 0 0 0 0.1  0 0 0 0 0.05  0 0 0 0.55 -0.12" />
+        </filter>
+        <filter id="m0yeso" x="0" y="0" width="100%" height="100%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves={4} seed={9} />
+          <feColorMatrix values="0 0 0 0 0.25  0 0 0 0 0.18  0 0 0 0 0.12  0 0 0 0.35 -0.08" />
+        </filter>
+        <clipPath id="m0clipPiso"><path d={`M 0 765 L 720 640 L ${W} 655 L ${W} ${H} L 0 ${H} Z`} /></clipPath>
       </defs>
       <g transform={`translate(${tx} ${ty}) scale(${s}) translate(${-fx} ${-fy}) scale(${K})`}>
-        {/* fondo: pared del galpón con ventanales a la izquierda, la luz entra a raudales */}
+        {/* ── fondo: pared de yeso y ladrillo, ventanales con cielo, techo de vigas ── */}
         <rect x={0} y={0} width={W} height={H} fill="url(#m0pared)" />
-        <path d="M 0 0 L 640 0 L 380 120 L 0 150 Z" fill="#4a3426" opacity={0.75} />
-        {[0, 1, 2, 3].map((i) => <path key={i} d={`M ${30 + i * 150} 0 L ${10 + i * 120} 140`} stroke="#2e2019" strokeWidth={16} opacity={0.6} />)}
-        <g opacity={0.95}>
-          <rect x={-10} y={120} width={95} height={540} fill="url(#m0ventana)" />
-          {[200, 290, 380, 470, 560].map((y) => <rect key={y} x={-10} y={y} width={95} height={7} fill="#6b4a32" opacity={0.7} />)}
-          <rect x={38} y={120} width={7} height={540} fill="#6b4a32" opacity={0.7} />
-          <rect x={85} y={110} width={20} height={560} fill="#5a3d2a" />
-          <rect x={300} y={330} width={70} height={310} fill="url(#m0ventana)" opacity={0.85} />
-          <rect x={425} y={285} width={60} height={140} fill="#e6eef5" />
-          <rect x={453} y={285} width={5} height={140} fill="#6b4a32" /><rect x={425} y={350} width={60} height={5} fill="#6b4a32" />
+        <rect x={0} y={0} width={W} height={H} filter="url(#m0yeso)" />
+        <path d="M 0 0 L 700 0 L 430 110 L 0 160 Z" fill="#3a2a22" opacity={0.85} />
+        {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M ${20 + i * 150} 0 L ${0 + i * 115} 150`} stroke="#22170f" strokeWidth={18} opacity={0.75} />)}
+        <path d="M 0 150 L 430 108" stroke="#5a4232" strokeWidth={10} />
+        {/* ventanal izquierdo: marcos con 4 columnas de vidrios */}
+        <g>
+          <rect x={-10} y={115} width={100} height={560} fill="url(#m0cielo)" />
+          {[150, 215, 280, 345, 410, 475, 540, 605].map((y) => <rect key={y} x={-10} y={y} width={100} height={6} fill="#7a5a40" opacity={0.85} />)}
+          {[22, 55].map((x) => <rect key={x} x={x} y={115} width={6} height={560} fill="#7a5a40" opacity={0.85} />)}
+          <rect x={88} y={105} width={24} height={580} fill="#4a3424" /><rect x={90} y={105} width={6} height={580} fill="#8a6a4a" />
+          <rect x={290} y={330} width={90} height={300} fill="url(#m0cielo)" opacity={0.9} />
+          {[380, 430, 480, 530, 580].map((y) => <rect key={y} x={290} y={y} width={90} height={5} fill="#7a5a40" opacity={0.7} />)}
+          {[318, 348].map((x) => <rect key={x} x={x} y={330} width={5} height={300} fill="#7a5a40" opacity={0.7} />)}
+          <rect x={424} y={282} width={64} height={146} fill="url(#m0cielo)" />
+          <rect x={453} y={282} width={5} height={146} fill="#6b4a32" /><rect x={424} y={330} width={64} height={5} fill="#6b4a32" /><rect x={424} y={378} width={64} height={5} fill="#6b4a32" />
+          <rect x={418} y={276} width={76} height={158} fill="none" stroke="#4a3424" strokeWidth={8} />
         </g>
-        {/* rayos de luz desde los ventanales */}
-        <g opacity={0.14 + 0.03 * Math.sin(t * 2)}>
-          {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M ${40 + i * 10} ${150 + i * 90} L ${700 + i * 120} ${560 + i * 70} L ${700 + i * 120} ${640 + i * 70} L ${40 + i * 10} ${200 + i * 90} Z`} fill="#fff1c9" />)}
+        {/* rayos de luz polvorienta desde el ventanal */}
+        <g opacity={0.2 + 0.03 * Math.sin(t * 2)} filter="url(#m0bl2)">
+          {[0, 1, 2, 3].map((i) => <path key={i} d={`M ${60 + i * 8} ${170 + i * 120} L ${760 + i * 110} ${610 + i * 50} L ${760 + i * 110} ${700 + i * 50} L ${60 + i * 8} ${240 + i * 120} Z`} fill="#fff1c9" />)}
         </g>
-        {/* reloj de la pared */}
+        {/* ── reloj de la pared ── */}
         <g transform={`translate(${RX} ${RY})`}>
-          <circle r={RR + 22} fill="#2e2620" />
-          <circle r={RR + 12} fill="#5a4a3e" />
-          <circle r={RR} fill="#f1e7cf" />
+          <circle r={RR + 26} cx={6} cy={8} fill="#1a120c" opacity={0.45} />
+          <circle r={RR + 24} fill="#2a211b" />
+          <circle r={RR + 16} fill="url(#m0metal)" opacity={0.55} />
+          <circle r={RR + 9} fill="#3a2e26" />
+          <circle r={RR} fill="#f3ead4" />
+          <circle r={RR} fill="none" stroke="#d9c9a4" strokeWidth={8} />
           {Array.from({ length: 60 }, (_, i) => <line key={i} x1={0} y1={-RR + 6} x2={0} y2={i % 5 ? -RR + 12 : -RR + 18} stroke="#3a2e26" strokeWidth={i % 5 ? 1.5 : 4} transform={`rotate(${i * 6})`} />)}
           {Array.from({ length: 12 }, (_, i) => {
             const a = ((i + 1) / 12) * Math.PI * 2;
-            return <text key={i} x={Math.sin(a) * (RR - 36)} y={-Math.cos(a) * (RR - 36) + 10} textAnchor="middle" fontFamily="Georgia, serif" fontSize={28} fill="#2a221c">{i + 1}</text>;
+            return <text key={i} x={Math.sin(a) * (RR - 36)} y={-Math.cos(a) * (RR - 36) + 11} textAnchor="middle" fontFamily="Georgia, 'Times New Roman', serif" fontSize={30} fill="#2a221c">{i + 1}</text>;
           })}
-          <line x1={0} y1={10} x2={0} y2={-58} stroke="#1e1915" strokeWidth={8} strokeLinecap="round" transform={`rotate(${am})`} />
-          <line x1={0} y1={14} x2={0} y2={-92} stroke="#1e1915" strokeWidth={5} strokeLinecap="round" transform={`rotate(${mm})`} />
-          <line x1={0} y1={16} x2={0} y2={-96} stroke="#5a1a14" strokeWidth={2} transform={`rotate(${t * 360})`} />
-          <circle r={8} fill="#1e1915" />
-          <path d={`M ${-RR * 0.75} ${-RR * 0.45} Q ${-RR * 0.4} ${-RR * 0.9} ${RR * 0.15} ${-RR * 0.92}`} stroke="#fff" strokeWidth={6} fill="none" opacity={0.35} strokeLinecap="round" />
+          <path d={`M -5 12 L -3 -58 L 0 -64 L 3 -58 L 5 12 Z`} fill="#1e1915" transform={`rotate(${am})`} />
+          <path d={`M -3.5 16 L -2 -90 L 0 -96 L 2 -90 L 3.5 16 Z`} fill="#1e1915" transform={`rotate(${mm})`} />
+          <line x1={0} y1={18} x2={0} y2={-98} stroke="#7a1e14" strokeWidth={2} transform={`rotate(${t * 360})`} />
+          <circle r={8} fill="#1e1915" /><circle r={3} fill="#9a8a6a" />
+          <path d={`M ${-RR * 0.8} ${-RR * 0.4} Q ${-RR * 0.45} ${-RR * 0.92} ${RR * 0.15} ${-RR * 0.95}`} stroke="#fff" strokeWidth={10} fill="none" opacity={0.3} strokeLinecap="round" />
+          <circle r={RR} fill="url(#m0luz)" opacity={0.25} />
         </g>
-        {/* piso de tablones en perspectiva */}
-        <path d={`M 0 760 L 700 640 L ${W} 660 L ${W} ${H} L 0 ${H} Z`} fill="url(#m0piso)" />
-        {Array.from({ length: 16 }, (_, i) => <line key={i} x1={720} y1={642} x2={-900 + i * 240} y2={H + 40} stroke="#2f1d12" strokeWidth={3} opacity={0.55} />)}
-        <path d={`M 0 860 Q 500 760 1100 800 L 1100 830 Q 500 800 0 900 Z`} fill="#fff0cc" opacity={0.12} />
-        {/* el capataz, al fondo a la izquierda, bastón en alto */}
+        {/* ── piso de tablones con veta, brillo de la ventana y polvo ── */}
+        <path d={`M 0 765 L 720 640 L ${W} 655 L ${W} ${H} L 0 ${H} Z`} fill="url(#m0piso)" />
+        <g clipPath="url(#m0clipPiso)">
+          <rect x={0} y={600} width={W} height={400} filter="url(#m0grano)" />
+          {tablas.map((i) => <line key={i} x1={730} y1={640} x2={-1300 + i * 230} y2={H + 60} stroke="#24140a" strokeWidth={3.5} opacity={0.6} />)}
+          {[690, 715, 750, 800, 870].map((y, i) => <path key={i} d={`M 0 ${y + 80 - i * 8} Q 700 ${y - 10} ${W} ${y + 5}`} stroke="#24140a" strokeWidth={2} opacity={0.35} fill="none" />)}
+          <path d={`M 0 800 Q 400 720 900 700 L 1000 730 Q 400 770 0 900 Z`} fill="url(#m0pisoLuz)" />
+          {/* contraluz cálido debajo de la máquina, al fondo */}
+          <ellipse cx={1250} cy={680} rx={420} ry={40} fill="url(#m0contraluz)" opacity={0.75} />
+          {Array.from({ length: 40 }, (_, i) => { const k = rnd(300 + i); return <ellipse key={i} cx={k() * W} cy={760 + k() * 180} rx={4 + k() * 14} ry={2 + k() * 4} fill="#f6efe2" opacity={0.75} />; })}
+        </g>
+        {/* ── el capataz al fondo a la izquierda: galera, bigote, bastón en alto ── */}
         <g transform="translate(205 0)">
-          <ellipse cx={0} cy={765} rx={110} ry={14} fill="#1e140e" opacity={0.4} />
-          <path d="M -70 640 L -80 755 L -30 760 L -20 650 Z" fill="#26201d" />
-          <path d="M 25 650 L 45 758 L 100 758 L 80 640 Z" fill="#26201d" />
-          <ellipse cx={-55} cy={760} rx={38} ry={12} fill="#141010" /><ellipse cx={75} cy={760} rx={38} ry={12} fill="#141010" />
-          <path d="M -105 520 Q -5 485 95 520 L 125 690 Q 10 720 -115 690 Z" fill="#33302e" />
-          <path d="M -40 515 L 0 610 L 40 515 Z" fill="#f3efe8" />
-          <path d="M -30 540 L 0 640 L 30 540 L 25 650 L -25 650 Z" fill="#3e3a37" />
-          <path d="M -18 520 L 0 530 L 18 520 L 18 538 L 0 530 L -18 538 Z" fill="#111" />
+          <ellipse cx={0} cy={768} rx={130} ry={16} fill="#1a100a" opacity={0.45} />
+          {/* piernas con pliegues */}
+          <path d="M -78 640 L -96 752 L -40 758 L -24 650 Z" fill="#28221f" />
+          <path d="M 22 650 L 50 752 L 104 752 L 78 638 Z" fill="#221d1a" />
+          <path d="M -70 680 L -60 700 M 40 690 L 56 710" stroke="#4a4240" strokeWidth={3} />
+          <path d="M -112 752 Q -100 740 -40 746 L -36 766 L -114 766 Z" fill="#100c0b" />
+          <path d="M 46 748 Q 100 738 118 752 L 118 766 L 44 766 Z" fill="#100c0b" />
+          {/* levita */}
+          <path d="M -112 520 Q -10 480 100 518 L 136 692 Q 60 714 18 690 L 0 640 L -18 690 Q -70 712 -128 690 Z" fill="url(#m0saco)" />
+          <path d="M -112 520 Q -150 600 -128 690 L -110 692 Q -125 610 -100 528 Z" fill="#7a706a" opacity={0.6} />
+          <path d="M -46 512 L -10 600 L -26 640 L -60 530 Z" fill="#2e2a29" /><path d="M 46 512 L 10 600 L 26 640 L 60 530 Z" fill="#2e2a29" />
+          {/* chaleco, camisa, moño, cadena de reloj */}
+          <path d="M -40 515 L 0 605 L 40 515 Z" fill="#f6f1e8" />
+          <path d="M -30 548 L 0 640 L 30 548 L 26 660 L -26 660 Z" fill="#3c3634" />
+          {[580, 605, 630].map((y) => <circle key={y} cx={0} cy={y} r={4} fill="#c9b07a" />)}
+          <path d="M -24 616 Q -6 632 16 616" stroke="#d6b46a" strokeWidth={3} fill="none" />
+          <path d="M -20 518 L 0 528 L 20 518 L 20 540 L 0 530 L -20 540 Z" fill="#0e0c0b" />
           {/* brazo con el bastón */}
           <g transform={`rotate(${baston} -85 530)`}>
-            <path d="M -95 525 Q -140 560 -120 600 L -95 600 Q -95 570 -70 545 Z" fill="#33302e" />
-            <line x1={-150} y1={380} x2={-50} y2={690} stroke="#6a4024" strokeWidth={11} strokeLinecap="round" transform="translate(45 0) rotate(-12 -100 535)" />
-            <circle cx={-110} cy={598} r={22} fill="#e9a07a" />
+            <path d="M -102 525 Q -150 565 -128 612 L -100 608 Q -100 575 -72 548 Z" fill="url(#m0saco)" />
+            <line x1={-108} y1={392} x2={-48} y2={652} stroke="#5a341c" strokeWidth={12} strokeLinecap="round" />
+            <line x1={-106} y1={392} x2={-50} y2={640} stroke="#9a6a3e" strokeWidth={3} strokeLinecap="round" />
+            <path d="M -134 588 Q -136 612 -114 618 Q -92 616 -92 596 Q -96 580 -116 580 Z" fill="#e89a74" />
+            <path d="M -120 588 L -96 590 M -122 598 L -96 600 M -120 607 L -98 608" stroke="#c0704c" strokeWidth={2} />
           </g>
-          <path d="M 95 525 Q 140 570 120 625 L 98 622 Q 105 585 78 550 Z" fill="#33302e" />
-          <circle cx={112} cy={630} r={20} fill="#e9a07a" />
-          {/* cabeza */}
-          <ellipse cx={0} cy={478} rx={52} ry={50} fill="#e9a07a" />
-          <circle cx={-48} cy={482} r={12} fill="#df9470" /><circle cx={48} cy={482} r={12} fill="#df9470" />
-          <circle cx={-18} cy={470} r={9} fill="#fff" /><circle cx={18} cy={470} r={9} fill="#fff" />
-          <circle cx={-16} cy={471} r={5} fill="#111" /><circle cx={16} cy={471} r={5} fill="#111" />
-          <path d="M -36 450 L -6 462" stroke="#1a1310" strokeWidth={8} strokeLinecap="round" /><path d="M 36 450 L 6 462" stroke="#1a1310" strokeWidth={8} strokeLinecap="round" />
-          <ellipse cx={0} cy={485} rx={9} ry={8} fill="#d47e5a" />
-          <path d="M -40 505 Q -20 486 0 496 Q 20 486 40 505 Q 20 498 0 504 Q -20 498 -40 505 Z" fill="#1a1310" />
-          <path d="M -12 512 Q 0 506 12 512" stroke="#5a2a1a" strokeWidth={3} fill="none" />
+          <path d="M 98 525 Q 146 570 128 628 L 104 626 Q 110 586 82 552 Z" fill="#2e2a29" />
+          <path d="M 104 616 Q 102 646 122 648 Q 140 646 138 624 Q 132 610 116 612 Z" fill="#e89a74" />
+          {/* cabeza roja de rabia */}
+          <ellipse cx={0} cy={480} rx={54} ry={52} fill="#ec9a72" />
+          <ellipse cx={-6} cy={470} rx={38} ry={30} fill="#f6b48c" opacity={0.6} />
+          <ellipse cx={-30} cy={500} rx={16} ry={10} fill="#e0705a" opacity={0.6} /><ellipse cx={30} cy={500} rx={16} ry={10} fill="#e0705a" opacity={0.6} />
+          <ellipse cx={-52} cy={484} rx={11} ry={15} fill="#e08a64" /><ellipse cx={52} cy={484} rx={11} ry={15} fill="#d07a58" />
+          <ellipse cx={-18} cy={472} rx={10} ry={9} fill="#fff" /><ellipse cx={18} cy={472} rx={10} ry={9} fill="#fff" />
+          <circle cx={-15} cy={474} r={5.5} fill="#1a0e08" /><circle cx={15} cy={474} r={5.5} fill="#1a0e08" />
+          <circle cx={-17} cy={472} r={1.8} fill="#fff" /><circle cx={13} cy={472} r={1.8} fill="#fff" />
+          <path d="M -40 448 L -4 464 L -6 458 L -38 442 Z" fill="#1a1310" /><path d="M 40 448 L 4 464 L 6 458 L 38 442 Z" fill="#1a1310" />
+          <path d="M -6 462 Q 0 468 6 462" stroke="#a0503a" strokeWidth={2} fill="none" />
+          <path d="M -8 478 Q -12 494 0 496 Q 12 494 8 478 Z" fill="#d97a58" />
+          <path d="M -48 512 Q -30 490 -4 498 Q 0 494 4 498 Q 30 490 48 512 Q 30 506 18 510 Q 8 504 0 508 Q -8 504 -18 510 Q -30 506 -48 512 Z" fill="#140e0b" />
+          <path d="M -14 520 Q 0 512 14 520" stroke="#5a2016" strokeWidth={4} fill="none" strokeLinecap="round" />
           {/* galera */}
-          <ellipse cx={0} cy={436} rx={66} ry={13} fill="#151212" />
-          <path d="M -40 436 L -44 368 Q 0 358 44 368 L 40 436 Z" fill="#1d1a19" />
-          <rect x={-42} y={420} width={84} height={12} fill="#3a2e2a" />
-          <path d="M -30 372 L -28 425" stroke="#fff" strokeWidth={4} opacity={0.15} />
+          <ellipse cx={0} cy={438} rx={70} ry={14} fill="#100d0c" />
+          <path d="M -42 438 L -46 366 Q 0 354 46 366 L 42 438 Z" fill="#1b1817" />
+          <path d="M -44 366 Q 0 356 46 366 Q 0 376 -44 366 Z" fill="#2c2826" />
+          <rect x={-43} y={420} width={86} height={14} fill="#3a2e2a" />
+          <path d="M -32 372 L -30 428" stroke="#fff" strokeWidth={6} opacity={0.12} />
+          {/* luz de borde desde el ventanal */}
+          <path d="M -128 690 Q -150 600 -112 520 Q -60 498 -40 446" stroke="#ffdca6" strokeWidth={4} fill="none" opacity={0.55} />
         </g>
-        {/* la hiladora (mule): patas, rodillos de algodón y viga que viene hacia cámara */}
+        {/* ── la hiladora: patas de hierro remachadas, rodillos de algodón, viga con conos ── */}
         <g>
-          <path d="M 380 540 L 1100 160 L 1150 220 L 400 610 Z" fill="#3a2a20" />
-          <path d="M 360 400 L 760 190 L 780 225 L 380 440 Z" fill="#6a4a30" />
-          {Array.from({ length: 9 }, (_, i) => {
-            const k = i / 8;
-            return <ellipse key={i} cx={400 + k * 330} cy={455 - k * 175} rx={26 + k * 8} ry={44 + k * 10} fill={i % 2 ? "#f4ede0" : "#fbf7ee"} transform={`rotate(-28 ${400 + k * 330} ${455 - k * 175})`} />;
-          })}
-          {Array.from({ length: 10 }, (_, i) => {
-            const k = i / 9;
-            return <ellipse key={i} cx={410 + k * 320} cy={525 - k * 170} rx={22 + k * 8} ry={36 + k * 8} fill={i % 2 ? "#ece2d0" : "#f6efe2"} transform={`rotate(-28 ${410 + k * 320} ${525 - k * 170})`} />;
-          })}
-          <path d="M 370 455 L 760 245" stroke="#8a5a32" strokeWidth={12} />
-          <path d="M 375 540 L 760 330" stroke="#8a5a32" strokeWidth={10} />
-          {/* maquinaria oscura bajo la viga */}
-          <path d="M 380 600 L 1150 230 L 1300 300 L 1320 640 L 1000 660 L 420 760 Z" fill="#2a201b" />
-          {Array.from({ length: 8 }, (_, i) => <circle key={i} cx={430 + i * 38} cy={680 - i * 12} r={22} fill="none" stroke="#4a3a30" strokeWidth={6} strokeDasharray="6 5" />)}
-          {Array.from({ length: 7 }, (_, i) => <line key={i} x1={600 + i * 90} y1={560 - i * 40} x2={600 + i * 90} y2={660} stroke="#3e302a" strokeWidth={6} />)}
-          {/* patas de hierro */}
-          <rect x={345} y={300} width={50} height={470} fill="#2c2420" /><rect x={352} y={300} width={10} height={470} fill="#4a3c33" />
-          <rect x={335} y={735} width={70} height={30} fill="#231c18" />
-          <rect x={505} y={250} width={65} height={540} fill="#2c2420" /><rect x={512} y={250} width={12} height={540} fill="#4e4036" />
-          <rect x={492} y={760} width={92} height={36} fill="#231c18" />
-          {[340, 420, 520, 640, 700].map((y, i) => <circle key={i} cx={537} cy={y} r={6} fill="#6a5a4e" />)}
-          {/* viga superior grande con los conos de algodón, viene hacia la cámara arriba a la derecha */}
-          <path d="M 560 330 L 1380 -40 L 1460 20 L 600 400 Z" fill="#4a3628" />
-          <path d="M 560 330 L 1380 -40 L 1390 -20 L 575 352 Z" fill="#7a5a3e" />
-          <path d="M 600 395 L 1460 15" stroke="#2a1d16" strokeWidth={16} />
-          {Array.from({ length: 11 }, (_, i) => {
-            const k = i / 10;
-            const cx = 640 + k * 640, cy = 335 - k * 300, r = 26 + k * 26;
-            return <Pelusa key={i} x={cx} y={cy} r={r} seed={i + 5} />;
-          })}
-          {Array.from({ length: 22 }, (_, i) => <line key={i} x1={640 + i * 30} y1={355 - i * 14} x2={650 + i * 30} y2={470 - i * 10} stroke="#d8cbb4" strokeWidth={1.5} opacity={0.5} />)}
-        </g>
-        {/* engranaje gigante + correa a la derecha */}
-        <rect x={1270} y={80} width={80} height={280} fill="#24201d" />
-        <Engranaje x={1330} y={600} r={130} dientes={18} rot={-rot * 1.9 + 7} c1="#4e4a46" c2="#3e3a36" />
-        <Engranaje x={1525} y={330} r={300} dientes={40} rot={rot} c1="#5e5a56" c2="#4c4844" />
-        <g transform="rotate(-18 1290 385)">
-          <ellipse cx={1290} cy={385} rx={195} ry={225} fill="none" stroke="#7a4220" strokeWidth={20} />
-          <ellipse cx={1290} cy={385} rx={195} ry={225} fill="none" stroke="#b06a36" strokeWidth={6} strokeDasharray="40 30" strokeDashoffset={-t * 300} opacity={0.6} />
-        </g>
-        {/* estela de pelusa que escupe el engranaje */}
-        {Array.from({ length: 14 }, (_, i) => <line key={i} x1={1000 + i * 22} y1={300 + i * 22} x2={1180 + i * 18} y2={340 + i * 24} stroke="#efe6d6" strokeWidth={2} opacity={0.35} />)}
-        {/* el chico gateando, cara de terror (cara ~825,545) */}
-        <g transform={`translate(0 ${resp * 0.5})`}>
-          <ellipse cx={960} cy={845} rx={430} ry={30} fill="#1e130b" opacity={0.5} />
-          {/* espalda y piernas (pantalón con parche), se van hacia el fondo a la derecha */}
-          <path d="M 1000 560 Q 1130 540 1250 620 Q 1330 690 1340 790 L 1250 830 Q 1150 830 1080 790 L 990 700 Z" fill="url(#m0pantalon)" />
-          <path d="M 1230 690 Q 1320 720 1345 800 L 1352 838 L 1262 842 Q 1250 790 1205 760 Z" fill="#33200f" />
-          <path d="M 1250 805 L 1350 800 L 1356 840 L 1255 845 Z" fill="#1f140d" />
-          <rect x={1158} y={738} width={66} height={62} fill="#a5764a" transform="rotate(-14 1190 768)" stroke="#6a4628" strokeWidth={3} strokeDasharray="6 5" />
-          {[[1090, 640], [1180, 610], [1280, 700]].map(([x, y], i) => <ellipse key={i} cx={x} cy={y} rx={18} ry={10} fill="#7a5a3a" opacity={0.5} />)}
-          {/* torso: camisa sucia y tiradores */}
-          <path d="M 660 650 Q 720 575 860 572 Q 1000 568 1060 620 L 1040 760 L 720 770 Z" fill="#d9cfbf" />
-          <path d="M 845 575 L 880 770" stroke="#3a2518" strokeWidth={26} /><path d="M 1000 585 L 1020 760" stroke="#3a2518" strokeWidth={26} />
-          {[[740, 690], [930, 640], [975, 700], [800, 735], [700, 660]].map(([x, y], i) => <ellipse key={i} cx={x} cy={y} rx={15} ry={9} fill="#7a5a3a" opacity={0.6} />)}
-          {/* brazo izquierdo de pantalla: hombro 700,690 → mano 600,815 */}
-          <path d="M 670 660 Q 625 700 620 745 L 680 760 Q 690 720 735 690 Z" fill="#d9cfbf" />
-          <ellipse cx={650} cy={752} rx={40} ry={22} fill="#cbbea8" />
-          <path d="M 622 760 Q 600 785 595 812 L 655 815 Q 662 790 680 768 Z" fill="#f6c49a" />
-          <ellipse cx={640} cy={790} rx={12} ry={8} fill="#7a5a3a" opacity={0.55} />
-          <path d="M 540 832 Q 552 800 605 800 Q 665 800 685 832 Q 645 846 540 840 Z" fill="#f6c49a" />
-          {[555, 580, 607, 635].map((x) => <line key={x} x1={x} y1={828} x2={x + 6} y2={840} stroke="#d9946c" strokeWidth={3} />)}
-          {/* brazo derecho: hombro 1000,680 → mano 940,825 */}
-          <path d="M 975 660 Q 1030 700 1022 760 L 965 768 Q 965 720 935 690 Z" fill="#d9cfbf" />
-          <ellipse cx={992} cy={762} rx={40} ry={22} fill="#cbbea8" />
-          <path d="M 962 772 L 1015 772 L 1000 832 L 948 832 Z" fill="#f6c49a" />
-          <ellipse cx={985} cy={795} rx={13} ry={9} fill="#7a5a3a" opacity={0.55} />
-          <path d="M 870 848 Q 882 812 935 812 Q 995 812 1010 848 Q 960 860 870 852 Z" fill="#f6c49a" />
-          {[888, 915, 943, 972].map((x) => <line key={x} x1={x} y1={840} x2={x + 4} y2={852} stroke="#d9946c" strokeWidth={3} />)}
-          {/* cabeza */}
-          <circle cx={688} cy={598} r={30} fill="#f0b48a" /><circle cx={690} cy={600} r={14} fill="#e0997a" />
-          <circle cx={950} cy={540} r={26} fill="#f0b48a" />
-          <ellipse cx={822} cy={548} rx={135} ry={122} fill="url(#m0cara)" />
-          <path d="M 690 520 Q 672 570 700 600 L 712 540 Z" fill="#e39a45" />
-          <path d="M 930 470 Q 960 500 948 535 L 925 495 Z" fill="#e39a45" />
-          {/* ojos grandes */}
-          {[[767, 552, 40], [868, 508, 38]].map(([x, y, r], i) => (
-            <g key={i}>
-              <ellipse cx={x} cy={y} rx={r} ry={r * 1.08 * parp} fill="#fff" stroke="#3a2416" strokeWidth={3} />
-              {parp > 0.5 && <><circle cx={x - 6} cy={y + 1} r={r * 0.56} fill="#6a3c1c" /><circle cx={x - 7} cy={y + 2} r={r * 0.33} fill="#1a0f08" /><circle cx={x - 15} cy={y - 10} r={r * 0.18} fill="#fff" /></>}
+          {/* fondo oscuro de la máquina */}
+          <path d="M 380 610 L 1180 200 L 1330 250 L 1330 650 L 1000 670 L 420 770 Z" fill="#1e1814" />
+          <path d="M 380 610 L 1180 200 L 1330 250 L 1330 650 L 1000 670 L 420 770 Z" fill="url(#m0frio)" />
+          {/* rodillos de algodón (3 filas) entre las patas izquierdas */}
+          {[0, 1, 2].map((f) => (
+            <g key={f}>
+              <path d={`M ${392} ${470 + f * 62} L ${700} ${300 + f * 62 - 40} L ${706} ${338 + f * 62 - 40} L ${398} ${508 + f * 62} Z`} fill="url(#m0rodillo)" />
+              {Array.from({ length: 14 }, (_, i) => <path key={i} d={`M ${400 + i * 22} ${474 + f * 62 - i * 12.2} q 4 18 0 34`} stroke="#c9bba2" strokeWidth={2} fill="none" opacity={0.8} />)}
+              <path d={`M ${392} ${464 + f * 62} L ${700} ${294 + f * 62 - 40}`} stroke="#8a6a40" strokeWidth={7} />
             </g>
           ))}
-          <path d="M 728 512 Q 760 506 794 488" stroke="#8a5a2a" strokeWidth={7} fill="none" strokeLinecap="round" />
-          <path d="M 838 462 Q 868 462 900 476" stroke="#8a5a2a" strokeWidth={7} fill="none" strokeLinecap="round" />
-          <ellipse cx={742} cy={612} rx={26} ry={16} fill="#f08a7a" opacity={0.5} /><ellipse cx={905} cy={570} rx={24} ry={15} fill="#f08a7a" opacity={0.5} />
-          <circle cx={912} cy={566} r={15} fill="#6a4a30" opacity={0.6} /><circle cx={900} cy={588} r={9} fill="#6a4a30" opacity={0.5} /><circle cx={760} cy={640} r={10} fill="#6a4a30" opacity={0.45} />
-          <path d="M 818 572 Q 826 578 832 571" stroke="#c9845e" strokeWidth={3} fill="none" />
+          <path d="M 380 445 L 740 250" stroke="#b08a50" strokeWidth={14} /><path d="M 380 441 L 740 246" stroke="#e0c08a" strokeWidth={3} />
+          <path d="M 376 395 L 760 190" stroke="#6a4a2a" strokeWidth={12} />
+          {/* engranajes chicos y ejes en la parte baja */}
+          {Array.from({ length: 6 }, (_, i) => (
+            <g key={i} transform={`translate(${430 + i * 45} ${690 - i * 14}) scale(0.09)`}><Engranaje r={300} dientes={16} rot={rot * (i % 2 ? -3 : 3)} c1="#4a4038" c2="#2e2722" brazos={4} /></g>
+          ))}
+          {Array.from({ length: 10 }, (_, i) => <line key={i} x1={600 + i * 70} y1={580 - i * 32} x2={600 + i * 70} y2={680 - i * 4} stroke="#3a2e26" strokeWidth={5} />)}
+          {Array.from({ length: 8 }, (_, i) => <line key={i} x1={620} y1={600 + i * 8} x2={1200} y2={320 + i * 36} stroke="#4a3a2e" strokeWidth={3} opacity={0.6} />)}
+          {/* patas de hierro con remaches */}
+          {[[345, 300, 52, 470], [502, 250, 70, 540]].map(([x, y, w, h], i) => (
+            <g key={i}>
+              <rect x={x} y={y} width={w} height={h} fill="url(#m0hierro)" />
+              <rect x={x + 4} y={y} width={w * 0.18} height={h} fill="#7a6e64" opacity={0.6} />
+              <rect x={x - 12} y={y + h - 34} width={w + 24} height={36} rx={4} fill="#1e1a17" />
+              <rect x={x - 12} y={y + h - 34} width={w + 24} height={6} fill="#5a5048" />
+              {Array.from({ length: Math.floor(h / 70) }, (_, j) => <circle key={j} cx={x + w * 0.6} cy={y + 40 + j * 70} r={5} fill="#8a7e72" stroke="#1a1612" strokeWidth={2} />)}
+            </g>
+          ))}
+          <path d="M 330 590 L 600 450 L 610 470 L 340 612 Z" fill="#3a2a1e" /><path d="M 330 590 L 600 450" stroke="#7a5a3a" strokeWidth={3} />
+          {/* cuerpo superior de la hiladora: llena la franja de arriba, con dos filas de rollos de algodón y varillas de bronce */}
+          <path d={`M 340 300 L 740 -10 L ${W} -10 L ${W} 0 L 1480 10 L 600 410 L 380 520 Z`} fill="#1c1611" />
+          <path d={`M 340 300 L 740 -10 L ${W} -10 L ${W} 0 L 1480 10 L 600 410 L 380 520 Z`} fill="url(#m0frio)" opacity={0.6} />
+          {[0, 1].map((f) => (
+            <g key={f}>
+              {Array.from({ length: 16 }, (_, i) => {
+                const k = i / 15;
+                const cx = 380 + f * 120 + k * (480 + f * 260), cy = 330 - f * 20 - k * (360 + f * 40), r = 30 + k * 26 + f * 6;
+                return (
+                  <g key={i} transform={`translate(${cx} ${cy}) rotate(-36)`}>
+                    <ellipse cx={0} cy={r * 0.5} rx={r * 1.15} ry={r * 0.55} fill="#120d09" opacity={0.6} />
+                    <Pelusa x={0} y={0} r={r * 1.05} seed={200 + i + f * 20} tinte="#e8dcc6" />
+                  </g>
+                );
+              })}
+              <path d={`M ${360 + f * 120} ${372 - f * 20} L ${880 + f * 380} ${-40 - f * 60}`} stroke="#9a7444" strokeWidth={10} />
+              <path d={`M ${360 + f * 120} ${368 - f * 20} L ${880 + f * 380} ${-44 - f * 60}`} stroke="#e8c88e" strokeWidth={2.5} />
+            </g>
+          ))}
+          {Array.from({ length: 6 }, (_, i) => <rect key={i} x={560 + i * 150} y={300 - i * 80} width={14} height={140} fill="#2a2018" transform={`rotate(-30 ${567 + i * 150} ${370 - i * 80})`} />)}
+          {/* viga superior grande: tablón con veta y borde iluminado */}
+          <path d="M 560 330 L 1400 -60 L 1480 10 L 600 410 Z" fill="url(#m0madera)" />
+          {Array.from({ length: 7 }, (_, i) => <path key={i} d={`M ${575 + i * 6} ${345 + i * 9} L ${1420 + i * 8} ${-40 + i * 7}`} stroke="#22170f" strokeWidth={1.5} opacity={0.6} />)}
+          <path d="M 560 330 L 1400 -60 L 1404 -46 L 566 346 Z" fill="#b08a62" opacity={0.75} />
+          <path d="M 600 410 L 1480 10" stroke="#120c08" strokeWidth={14} />
+          {Array.from({ length: 9 }, (_, i) => <circle key={i} cx={620 + i * 95} cy={380 - i * 43} r={5} fill="#a08a6a" stroke="#1a120c" strokeWidth={2} />)}
+          {/* hilos que bajan de los conos */}
+          {Array.from({ length: 34 }, (_, i) => <line key={i} x1={620 + i * 24} y1={345 - i * 11} x2={628 + i * 24} y2={430 - i * 7} stroke="#e8dcc4" strokeWidth={1.2} opacity={0.55} />)}
+        </g>
+        {/* ── derecha: engranaje gigante en perspectiva, ménsula, correa de cuero ── */}
+        <g>
+          <rect x={1268} y={70} width={84} height={300} fill="url(#m0hierro)" /><rect x={1272} y={70} width={10} height={300} fill="#7a6e64" opacity={0.5} />
+          {Array.from({ length: 4 }, (_, j) => <circle key={j} cx={1320} cy={110 + j * 70} r={6} fill="#8a7e72" stroke="#1a1612" strokeWidth={2} />)}
+          {/* rueda grande del fondo */}
+          <g transform="translate(1640 300) scale(0.75 1)"><Engranaje r={330} dientes={44} rot={-rot * 0.7} c1="#4a4744" c2="#3a3734" /></g>
+          <g transform="translate(1330 600) scale(0.8 1)"><Engranaje r={130} dientes={18} rot={-rot * 1.9 + 7} c1="#4e4a46" c2="#34302d" brazos={4} /></g>
+          {/* engranaje principal visto de costado */}
+          <g transform="translate(1515 300) scale(0.72 1)">
+            <ellipse cx={-34} cy={0} rx={300} ry={300} fill="#1a1715" />
+            <Engranaje r={300} dientes={42} rot={rot} c1="#6e6a65" c2="#58544f" />
+            <circle r={300} fill="url(#m0frio)" opacity={0.6} />
+          </g>
+          {/* cubo cilíndrico que sobresale */}
+          <ellipse cx={1468} cy={290} rx={52} ry={88} fill="#3a3632" />
+          <rect x={1390} y={202} width={78} height={176} fill="url(#m0metal)" />
+          <ellipse cx={1390} cy={290} rx={46} ry={88} fill="#8a847c" stroke="#2a2623" strokeWidth={5} />
+          <ellipse cx={1384} cy={290} rx={22} ry={42} fill="#4a4540" />
+          <path d="M 1360 230 Q 1370 214 1392 210" stroke="#d8d2c8" strokeWidth={6} fill="none" opacity={0.7} />
+          {/* correa de cuero que abraza el engranaje */}
+          <g transform="rotate(-24 1380 300)">
+            <ellipse cx={1380} cy={300} rx={215} ry={300} fill="none" stroke="#2a150a" strokeWidth={30} opacity={0.5} />
+            <ellipse cx={1380} cy={300} rx={215} ry={300} fill="none" stroke="url(#m0correa)" strokeWidth={24} />
+            <ellipse cx={1380} cy={300} rx={203} ry={288} fill="none" stroke="#e0a56a" strokeWidth={3} opacity={0.6} />
+            <ellipse cx={1380} cy={300} rx={215} ry={300} fill="none" stroke="#5a2a10" strokeWidth={4} strokeDasharray="6 40" strokeDashoffset={-t * 420} opacity={0.7} />
+          </g>
+          <rect x={1460} y={640} width={90} height={160} fill="url(#m0hierro)" />
+          <rect x={1440} y={780} width={130} height={30} rx={4} fill="#151210" />
+          {/* estela de fibras que escupe el engranaje */}
+          {Array.from({ length: 22 }, (_, i) => { const k = rnd(500 + i); const a = 0.5 + k() * 0.7; const l = 120 + k() * 200; const x0 = 1280 - k() * 60, y0 = 360 + k() * 200; return <line key={i} x1={x0} y1={y0} x2={x0 - Math.cos(a) * l} y2={y0 - Math.sin(a) * l * 0.4 + 40} stroke="#f2e9d8" strokeWidth={1 + k() * 1.5} opacity={0.35 + k() * 0.3} />; })}
+        </g>
+        {/* ── el chico gateando, cara de terror (cara ~825,545) ── */}
+        <g transform={`translate(0 ${resp * 0.5})`}>
+          <ellipse cx={960} cy={845} rx={440} ry={32} fill="#1a0e06" opacity={0.55} />
+          {/* espalda y piernas (pantalón con pliegues, manchas y parche cosido) */}
+          <path d="M 1000 560 Q 1130 535 1255 615 Q 1335 690 1345 790 L 1255 832 Q 1150 832 1080 792 L 990 700 Z" fill="url(#m0pantalon)" />
+          <path d="M 1050 600 Q 1120 640 1110 700 M 1180 620 Q 1230 660 1220 720 M 1270 690 Q 1300 740 1290 790" stroke="#2a1a10" strokeWidth={5} fill="none" opacity={0.7} />
+          <path d="M 1010 575 Q 1130 548 1240 610" stroke="#8a6a4a" strokeWidth={5} fill="none" opacity={0.6} />
+          <path d="M 1228 690 Q 1320 718 1346 800 L 1352 838 L 1262 842 Q 1250 790 1205 760 Z" fill="#2e1c10" />
+          <path d="M 1248 802 Q 1300 790 1352 798 L 1362 842 L 1252 846 Z" fill="#1a110b" />
+          <path d="M 1255 838 L 1360 836" stroke="#4a3426" strokeWidth={4} />
+          <g transform="rotate(-14 1190 768)">
+            <rect x={1156} y={736} width={70} height={64} rx={4} fill="#b0804e" />
+            <rect x={1156} y={736} width={70} height={64} rx={4} fill="none" stroke="#5a3a1e" strokeWidth={3} strokeDasharray="7 6" />
+            <path d="M 1160 750 L 1220 744 M 1162 780 L 1222 776" stroke="#8a6038" strokeWidth={2} opacity={0.6} />
+          </g>
+          <Mugre x={1090} y={640} r={14} seed={11} o={0.5} /><Mugre x={1190} y={612} r={12} seed={12} o={0.5} /><Mugre x={1290} y={700} r={16} seed={13} o={0.45} />
+          {/* torso: camisa con pliegues, tiradores, mugre */}
+          <path d="M 660 650 Q 720 572 860 568 Q 1000 564 1062 618 L 1042 762 L 720 772 Z" fill="url(#m0camisa)" />
+          <path d="M 760 620 Q 800 680 780 740 M 900 600 Q 930 660 920 740 M 960 610 Q 1000 670 980 750" stroke="#a89880" strokeWidth={3} fill="none" opacity={0.8} />
+          <path d="M 800 580 Q 840 600 870 580" stroke="#a89880" strokeWidth={4} fill="none" />
+          <path d="M 845 575 L 880 770" stroke="#3a2416" strokeWidth={26} /><path d="M 1000 585 L 1020 760" stroke="#3a2416" strokeWidth={26} />
+          <path d="M 840 580 L 873 770" stroke="#6a4a32" strokeWidth={4} /><path d="M 994 590 L 1012 760" stroke="#6a4a32" strokeWidth={4} />
+          <circle cx={866} cy={700} r={6} fill="#b89a6a" />
+          {[[740, 690, 13, 21], [930, 640, 12, 22], [975, 708, 10, 23], [800, 735, 11, 24], [700, 660, 9, 25]].map(([x, y, r, sd], i) => <Mugre key={i} x={x} y={y} r={r} seed={sd} o={0.55} />)}
+          {/* brazo izquierdo de pantalla: manga arremangada → antebrazo → mano */}
+          <path d="M 670 660 Q 622 700 616 748 L 682 762 Q 692 722 738 690 Z" fill="url(#m0camisa)" />
+          <path d="M 610 742 Q 650 770 690 760 Q 696 744 684 736 Q 650 742 616 730 Z" fill="#cbbea6" />
+          <path d="M 612 748 Q 650 760 686 752" stroke="#9a8a72" strokeWidth={3} fill="none" />
+          <path d="M 622 760 Q 598 786 592 812 L 656 816 Q 664 790 682 768 Z" fill="url(#m0brazo)" />
+          <Mugre x={642} y={786} r={11} seed={31} o={0.65} />
+          <Mano x={612} y={822} s={0.9} />
+          {/* brazo derecho */}
+          <path d="M 975 660 Q 1032 700 1024 762 L 962 770 Q 962 722 932 690 Z" fill="url(#m0camisa)" />
+          <path d="M 956 758 Q 990 780 1030 766 Q 1032 752 1022 744 Q 990 752 960 744 Z" fill="#cbbea6" />
+          <path d="M 962 772 L 1016 772 L 1002 834 L 946 834 Z" fill="url(#m0brazo)" />
+          <Mugre x={986} y={798} r={14} seed={32} o={0.7} />
+          <Mano x={944} y={840} s={0.9} flip />
+          {/* orejas y cara */}
+          <ellipse cx={690} cy={598} rx={30} ry={34} fill="#f2b088" /><path d="M 682 584 Q 700 598 688 616" stroke="#d0805c" strokeWidth={5} fill="none" />
+          <ellipse cx={950} cy={540} rx={26} ry={30} fill="#eca47c" />
+          <ellipse cx={822} cy={548} rx={135} ry={122} fill="url(#m0cara)" />
+          <path d="M 700 600 Q 760 668 860 664 Q 920 650 948 590 Q 930 640 860 652 Q 760 656 700 600 Z" fill="#d88a60" opacity={0.45} />
+          {/* pelo pelirrojo que asoma */}
+          <path d="M 688 520 Q 668 570 700 604 L 704 576 L 716 590 L 714 548 Z" fill="#e39a45" />
+          <path d="M 696 530 Q 690 560 704 580" stroke="#f2b868" strokeWidth={3} fill="none" />
+          <path d="M 928 470 Q 962 500 950 538 L 940 520 L 930 528 L 924 494 Z" fill="#d88a38" />
+          {/* ojos grandes con iris degradado y brillo */}
+          {[[767, 552, 40], [868, 508, 38]].map(([x, y, r], i) => (
+            <g key={i}>
+              <ellipse cx={x} cy={y} rx={r} ry={r * 1.08 * parp} fill="#fff" stroke="#2a180c" strokeWidth={3.5} />
+              {parp > 0.5 && (
+                <>
+                  <path d={`M ${x - r} ${y - 4} Q ${x} ${y - r * 1.2} ${x + r} ${y - 4}`} fill="#e6e0dc" opacity={0.5} />
+                  <circle cx={x - 6} cy={y + 1} r={r * 0.58} fill="#7a4420" />
+                  <circle cx={x - 6} cy={y + 1} r={r * 0.58} fill="none" stroke="#3a1c0a" strokeWidth={3} />
+                  <circle cx={x - 4} cy={y + 6} r={r * 0.4} fill="#a0602c" opacity={0.6} />
+                  <circle cx={x - 7} cy={y + 2} r={r * 0.32} fill="#140a04" />
+                  <circle cx={x - 16} cy={y - 11} r={r * 0.19} fill="#fff" /><circle cx={x + 4} cy={y + 12} r={r * 0.08} fill="#fff" />
+                </>
+              )}
+            </g>
+          ))}
+          <path d="M 728 512 Q 760 504 794 486" stroke="#9a6030" strokeWidth={8} fill="none" strokeLinecap="round" />
+          <path d="M 838 462 Q 868 460 900 476" stroke="#9a6030" strokeWidth={8} fill="none" strokeLinecap="round" />
+          <path d="M 812 512 Q 818 520 822 528" stroke="#e09a70" strokeWidth={2.5} fill="none" opacity={0.7} />
+          <ellipse cx={740} cy={614} rx={28} ry={17} fill="#f07a68" opacity={0.45} /><ellipse cx={905} cy={570} rx={26} ry={16} fill="#f07a68" opacity={0.45} />
+          <Mugre x={912} y={570} r={14} seed={41} o={0.6} /><Mugre x={758} y={642} r={9} seed={42} o={0.5} /><Mugre x={895} y={600} r={7} seed={43} o={0.5} />
+          <path d="M 818 572 Q 826 580 834 571" stroke="#c97a52" strokeWidth={3} fill="none" />
+          <ellipse cx={826} cy={566} rx={10} ry={6} fill="#fff" opacity={0.25} />
           {/* boca abierta de terror: comisuras abajo */}
-          <path d="M 806 636 Q 818 606 842 604 Q 868 604 878 630 Q 870 652 842 654 Q 816 654 806 636 Z" fill="#5a1a1a" />
+          <path d="M 806 636 Q 818 606 842 604 Q 868 604 878 630 Q 870 652 842 654 Q 816 654 806 636 Z" fill="#5a1414" />
           <path d="M 822 646 Q 842 634 862 644 Q 852 654 842 654 Q 830 654 822 646 Z" fill="#e66a6a" />
           <path d="M 816 618 Q 842 608 868 618 L 865 624 Q 842 616 819 624 Z" fill="#fff" />
+          <path d="M 806 636 Q 818 606 842 604 Q 868 604 878 630" stroke="#3a0e0a" strokeWidth={3} fill="none" />
           {/* lágrima y gota de sudor */}
-          <path d={`M 718 ${582 + lagr} q -9 16 0 22 q 9 -6 0 -22 Z`} fill="#bfe6ff" stroke="#6aaad6" strokeWidth={2} />
-          <path d="M 912 488 q -6 12 0 16 q 6 -4 0 -16 Z" fill="#bfe6ff" stroke="#6aaad6" strokeWidth={2} />
-          {/* gorra plana marrón, ladeada */}
+          <path d={`M 718 ${582 + lagr} q -10 18 0 25 q 10 -7 0 -25 Z`} fill="#c6eaff" stroke="#5a9ac6" strokeWidth={2} />
+          <path d={`M 716 ${592 + lagr} q -2 6 1 9`} stroke="#fff" strokeWidth={2} fill="none" />
+          <path d="M 912 486 q -7 14 0 19 q 7 -5 0 -19 Z" fill="#c6eaff" stroke="#5a9ac6" strokeWidth={2} />
+          {/* gorra plana marrón, ladeada, con costuras y botón */}
           <g transform="translate(-6 -30) translate(830 470) scale(0.88) translate(-830 -470)">
-          <path d="M 588 545 Q 560 450 640 385 Q 740 320 860 330 Q 950 345 940 410 Q 915 440 860 455 Q 720 495 588 545 Z" fill="url(#m0gorra)" />
-          <path d="M 575 540 Q 720 478 870 445 Q 925 432 945 412 Q 942 450 880 470 Q 730 510 590 568 Z" fill="#6a4426" />
-          <path d="M 650 400 Q 750 345 880 350" stroke="#c49a6a" strokeWidth={6} fill="none" opacity={0.55} />
-          <circle cx={770} cy={348} r={10} fill="#8a6038" />
+            <path d="M 588 545 Q 560 450 640 385 Q 740 320 860 330 Q 950 345 940 410 Q 915 440 860 455 Q 720 495 588 545 Z" fill="url(#m0gorra)" />
+            <path d="M 640 385 Q 720 380 770 348 M 700 470 Q 760 400 860 330 M 610 500 Q 700 430 800 410" stroke="#6a4628" strokeWidth={3} fill="none" opacity={0.6} strokeDasharray="8 5" />
+            <path d="M 575 540 Q 720 478 870 445 Q 925 432 945 412 Q 942 450 880 470 Q 730 510 590 568 Z" fill="#5e3e22" />
+            <path d="M 580 548 Q 720 490 880 456" stroke="#9a7046" strokeWidth={3} fill="none" opacity={0.7} />
+            <path d="M 650 400 Q 750 345 880 350" stroke="#e0b888" strokeWidth={7} fill="none" opacity={0.55} />
+            <circle cx={770} cy={348} r={11} fill="#7a5232" /><circle cx={767} cy={345} r={4} fill="#b08a5a" />
           </g>
         </g>
-        {/* pelusa: montones en las esquinas, copos en el piso y copos que vuelan del engranaje */}
-        {[[60, 850, 90], [150, 900, 80], [20, 930, 70], [1580, 880, 110], [1470, 920, 90], [1650, 800, 80], [460, 800, 22], [740, 805, 24], [1250, 865, 28], [1420, 830, 30]].map(([x, y, r], i) => <Pelusa key={i} x={x} y={y} r={r} seed={60 + i} />)}
+        {/* ── pelusa: montones desenfocados en las esquinas, copos en el piso y copos que vuelan ── */}
+        {[[60, 860, 95], [170, 910, 85], [10, 940, 80], [1600, 890, 120], [1470, 930, 95], [1660, 800, 85]].map(([x, y, r], i) => <Pelusa key={i} x={x} y={y} r={r} seed={60 + i} blur />)}
+        {[[460, 800, 20], [740, 808, 22], [1250, 868, 30], [1420, 830, 26], [300, 860, 16], [1100, 870, 18]].map(([x, y, r], i) => <Pelusa key={i} x={x} y={y} r={r} seed={80 + i} />)}
         {vuelan.map((p, i) => {
           const k = ((t * 0.6 + p.f) % 1.6);
-          return <Pelusa key={i} x={p.x + p.vx * k} y={p.y + p.vy * k} r={p.r} o={0.9} seed={100 + i} />;
+          return <Pelusa key={i} x={p.x + p.vx * k} y={p.y + p.vy * k} r={p.r} o={0.92} seed={100 + i} blur={p.r > 30} />;
         })}
-        {caen.map((p, i) => <circle key={i} cx={p.x + Math.sin(t * 2 + p.f) * 10} cy={(p.y + t * 40) % H} r={p.r} fill="#fff8ea" opacity={0.7} />)}
-        {/* luz cálida que baña todo desde la izquierda */}
+        {/* motas de polvo flotando en la luz */}
+        {motas.map((p, i) => <circle key={i} cx={p.x + Math.sin(t * 1.5 + p.f) * 12} cy={(p.y + t * 18) % H} r={p.r} fill="#fff6e0" opacity={0.55 + 0.3 * Math.sin(t * 3 + p.f)} />)}
+        {/* luz cálida de la izquierda contra sombra fría a la derecha */}
         <rect x={0} y={0} width={W} height={H} fill="url(#m0luz)" />
+        <rect x={0} y={0} width={W} height={H} fill="url(#m0frio)" />
       </g>
     </svg>
   );
