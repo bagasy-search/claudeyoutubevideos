@@ -133,7 +133,7 @@ for w in AVW:
 segs.sort(key=lambda g: g["a"])
 out = []
 for g in segs:  # sin planos de menos de 1,2 s (se come el más corto)
-    if out and g["a"] - out[-1]["a"] < 1.2 and out[-1]["k"] != "av" and g["k"] != "av": out[-1] = g; continue
+    if out and g["a"] - out[-1]["a"] < 1.2 and out[-1]["k"] != "av" and g["k"] != "av": out[-1] = dict(g, a=out[-1]["a"]); continue  # el que se come conserva el inicio (si no, la salida del avatar queda en negro)
     out.append(g)
 segs = out
 
@@ -208,6 +208,13 @@ for o in OVS:
     if "from_" in o: o["from"] = o.pop("from_")
     if o["k"] == "routine": o.setdefault("hl", -1)
     ov.append(o)
+# tarjetas CENTRADAS nunca encima de la cara del avatar: arrancan al salir de la ventana (las laterales/abajo quedan)
+CENTRO = {"map", "inv", "blink", "fridge", "next", "comment", "big", "recap"}
+for o in ov:
+    if o["k"] not in CENTRO or not (600 <= o.get("x", 960) <= 1300): continue
+    for w in AVW:
+        if o["a"] < w["me"] - 0.2 and o["b"] > w["ms"] + 0.2:
+            d = o["b"] - o["a"]; o["a"] = round(w["me"] + 0.1, 2); o["b"] = round(o["a"] + max(2.5, d - 0.5 * (o["a"] - w["ms"])), 2)
 ov.sort(key=lambda o: o["a"])
 
 # vistas de adentro del horno = la tapa afuera (si no, se ve la chapa cerrada)
