@@ -27,6 +27,8 @@ const PL: B2[] = (() => {
   const xs = BEATS.map((b) => { const w = inWin(b.a); return { ...b, s: w ? w.me + 0.05 : b.a, afterAv: false } as B2; }).sort((x, y) => x.s - y.s);
   const out: B2[] = [];
   xs.forEach((b, i) => { if (i + 1 < xs.length && xs[i + 1].s - b.s < 0.8) return; out.push(b); });
+  // el plano que sigue a cada ventana entra AL CERRARLA (si arrancaba unas décimas después, el avatar ya apagado dejaba negro)
+  WIN.forEach((w) => { const b = out.find((x) => x.s >= w.ms); if (b && b.s > w.me + 0.05) b.s = w.me + 0.05; });
   // ¿entre el plano anterior y éste hubo una ventana del avatar? → éste sale del avatar
   out.forEach((b, i) => { const p0 = i ? out[i - 1].s : -1; b.afterAv = WIN.some((w) => w.me > p0 && w.me <= b.s + 0.06); });
   return out;
@@ -89,7 +91,8 @@ export const Body: React.FC = () => {
     L.push(<Avatar key="av" t={t} />);
   } else {
     const b = PL[i], p = ei(t, b.s - TR, b.s + 0.06);
-    const prev = b.afterAv ? <Avatar t={Math.min(t, b.s - 0.01)} /> : i > 0 ? node(PL[i - 1], t) : <Avatar t={t} />;
+    const wo = WIN.find((x) => x.me <= b.s + 0.06 && x.me > b.s - 1);
+    const prev = b.afterAv ? <Avatar t={Math.min(t, b.s - 0.01, wo ? wo.me - 0.04 : 1e9)} /> : i > 0 ? node(PL[i - 1], t) : <Avatar t={t} />;
     const cur = node(b, t);
     if (p >= 1) L.push(<AbsoluteFill key={"b" + i}>{cur}</AbsoluteFill>);
     else VIA(b.via ?? "whip", p, prev, cur, ptOf(t, b.q), "b" + i, b.afterAv).forEach((x) => L.push(x));
