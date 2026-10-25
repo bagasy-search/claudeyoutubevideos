@@ -1,0 +1,2564 @@
+{
+"end": 770.89,
+"shots": [
+{
+"a": 0.0,
+"b": 1.8,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/cand/ishtar_05.jpg",
+"o": {
+"label": "Babylon",
+"credit": "Wikimedia Commons · Joyofmuseums · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 1.8,
+"b": 3.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g06_babylon_dusk.png",
+"o": {
+"build": {
+"lines": [
+"the *richest* city",
+"in the world."
+],
+"a": 2,
+"size": 90
+}
+}
+}
+},
+{
+"a": 3.86,
+"b": 5.28,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "caravan"
+}
+},
+{
+"a": 5.28,
+"b": 8.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k01_caravan.mp4",
+"rate": 0.802
+}
+},
+{
+"a": 8.46,
+"b": 10.06,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Assyrian relief",
+"side": "c",
+"v": "img/t30moneen/cand/chariot_02.jpg",
+"ar": 1.5534,
+"o": {
+"credit": "Wikimedia Commons · Osama Shukir Muhammed Amin FRCP(Glas · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 10.06,
+"b": 11.76,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Lyre of Ur",
+"side": "c",
+"v": "img/t30moneen/cand/lyreur_03.jpg",
+"ar": 0.6641,
+"o": {
+"credit": "Wikimedia Commons · Osama Shukir Muhammed Amin FRCP(Glas · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 11.76,
+"b": 14.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k17_palms.mp4",
+"o": {
+"build": {
+"lines": [
+"sunup to *sundown.*"
+],
+"a": 4
+}
+}
+}
+},
+{
+"a": 14.48,
+"b": 16.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g03_chariot_shop.png"
+}
+},
+{
+"a": 16.56,
+"b": 18.14,
+"k": "ilus",
+"t": "purse",
+"p": {
+"mode": "empty",
+"p0": 0,
+"p1": 0,
+"o": {
+"build": {
+"lines": [
+"empty *purses.*"
+],
+"a": 25
+}
+}
+}
+},
+{
+"a": 18.14,
+"b": 22.76,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "ask",
+"cues": [
+139
+]
+}
+},
+{
+"a": 22.76,
+"b": 26.7,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"I work so *hard...*",
+"and nothing's *left.*"
+],
+"a": 4,
+"y": 330,
+"size": 100
+}
+}
+}
+},
+{
+"a": 26.7,
+"b": 28.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g50_tablet_shelves.png"
+}
+},
+{
+"a": 28.28,
+"b": 30.44,
+"k": "ilus",
+"t": "book",
+"p": {
+"mode": "book"
+}
+},
+{
+"a": 30.44,
+"b": 31.64,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/hanging_02.jpg",
+"ar": 1.3361,
+"o": {
+"credit": "Wikimedia Commons · CC BY 4.0"
+}
+}
+},
+{
+"a": 31.64,
+"b": 34.24,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Bruegel, 1563",
+"side": "c",
+"v": "img/t30moneen/cand/babel_01.jpg",
+"ar": 1.3665,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 34.24,
+"b": 37.86,
+"k": "g",
+"t": "book",
+"p": {
+"mode": "author"
+}
+},
+{
+"a": 37.86,
+"b": 40.84,
+"k": "ilus",
+"t": "book",
+"p": {
+"mode": "pamphlets",
+"o": {
+"build": {
+"lines": [
+"*free* pamphlets."
+],
+"a": 48
+}
+}
+}
+},
+{
+"a": 40.84,
+"b": 43.76,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"one of the most read",
+"money books in *history.*"
+],
+"a": 6,
+"y": 360
+}
+}
+}
+},
+{
+"a": 43.76,
+"b": 46.36,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Clay tablet · Mesopotamia",
+"side": "c",
+"v": "img/t30moneen/cand/cuneiform_06.jpg",
+"ar": 0.9208,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 46.36,
+"b": 48.18,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/ishtarlion_01.jpg",
+"ar": 1.6396,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 48.18,
+"b": 50.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/cand/ishtarlion_02.jpg",
+"o": {
+"build": {
+"lines": [
+"Not even a *little.*"
+],
+"a": 2,
+"y": 420
+},
+"credit": "Wikimedia Commons · Maksim Sokolov (maxergon.com) · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 50.14,
+"b": 56.9,
+"k": "g",
+"t": "roster",
+"p": {
+"caption": "the *7* cures for a lean purse"
+},
+"big": true
+},
+{
+"a": 56.9,
+"b": 59.5,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": -1
+}
+},
+{
+"a": 59.5,
+"b": 61.1,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Cylinder seal",
+"side": "c",
+"v": "img/t30moneen/cand/cylseal_03.jpg",
+"ar": 1.7844,
+"o": {
+"credit": "Wikimedia Commons · Zunkir · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 61.1,
+"b": 65.92,
+"k": "ilus",
+"t": "glass",
+"p": {
+"mode": "grey",
+"o": {
+"build": {
+"lines": [
+"the *mistake.*"
+],
+"a": 53
+}
+}
+}
+},
+{
+"a": 65.92,
+"b": 71.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g29_inside_out.png",
+"o": {
+"build": {
+"lines": [
+"the *first* money",
+"you ever save."
+],
+"size": 88,
+"a": 97
+}
+}
+}
+},
+{
+"a": 71.46,
+"b": 73.38,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/ishtar_06.jpg",
+"ar": 1.4015,
+"o": {
+"credit": "Wikimedia Commons · Radomir Vrbovsky · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 73.38,
+"b": 76.4,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": 0
+}
+},
+{
+"a": 76.4,
+"b": 78.98,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": 1
+}
+},
+{
+"a": 78.98,
+"b": 81.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g54_gate_crowd.png"
+}
+},
+{
+"a": 81.4,
+"b": 86.38,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "memory"
+}
+},
+{
+"a": 86.38,
+"b": 87.86,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/cuneiform_02.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 87.86,
+"b": 90.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g02_low_wall.png",
+"o": {
+"build": {
+"lines": [
+"no *smarter.*",
+"no *stronger.*"
+],
+"a": 2,
+"y": 330
+}
+}
+}
+},
+{
+"a": 90.82,
+"b": 92.0,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": 2
+}
+},
+{
+"a": 92.0,
+"b": 95.56,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g08_rich_court.png",
+"o": {
+"build": {
+"lines": [
+"the *richest* man in Babylon."
+],
+"size": 84,
+"a": 37
+}
+}
+}
+},
+{
+"a": 95.56,
+"b": 100.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g07_street.png"
+}
+},
+{
+"a": 100.28,
+"b": 101.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k10_dust_street.mp4",
+"o": {
+"build": {
+"lines": [
+"What does he know",
+"that *we don't?*"
+],
+"a": 2,
+"y": 330
+}
+}
+}
+},
+{
+"a": 101.7,
+"b": 105.4,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "walk",
+"o": {
+"build": {
+"lines": [
+"They *asked* him."
+],
+"a": 89
+}
+}
+}
+},
+{
+"a": 105.4,
+"b": 109.02,
+"k": "ilus",
+"t": "house",
+"p": {
+"mode": "welcome"
+}
+},
+{
+"a": 109.02,
+"b": 113.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k03_stylus.mp4",
+"rate": 0.685
+}
+},
+{
+"a": 113.28,
+"b": 114.82,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Clay tablet",
+"side": "c",
+"v": "img/t30moneen/cand/cuneiform_01.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 114.82,
+"b": 118.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g51_silver_scale.png",
+"o": {
+"label": "a moneylender"
+}
+}
+},
+{
+"a": 118.08,
+"b": 120.66,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": 3
+}
+},
+{
+"a": 120.66,
+"b": 126.38,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "deal",
+"cue": 119
+}
+},
+{
+"a": 126.38,
+"b": 127.7,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "night"
+}
+},
+{
+"a": 127.7,
+"b": 129.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g11_dawn_tablet.png"
+}
+},
+{
+"a": 129.72,
+"b": 131.94,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "dawn",
+"cue": 20
+}
+},
+{
+"a": 131.94,
+"b": 137.44,
+"k": "g",
+"t": "quote",
+"p": {
+"lines": [
+"a part of all I earn",
+"is *mine to keep.*"
+],
+"a": 70
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 137.44,
+"b": 140.3,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "laugh",
+"cue": 57
+}
+},
+{
+"a": 140.3,
+"b": 144.84,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k04_lamp.mp4",
+"o": {
+"build": {
+"lines": [
+"*Everything* I earn is mine!"
+],
+"y": 400,
+"size": 96,
+"a": 80
+}
+},
+"rate": 0.613
+}
+},
+{
+"a": 144.84,
+"b": 147.26,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Assyrian relief",
+"side": "c",
+"v": "img/t30moneen/cand/scribe_03.jpg",
+"ar": 1.8373,
+"o": {
+"credit": "Wikimedia Commons · Osama Shukir Muhammed Amin FRCP(Glas · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 147.26,
+"b": 150.92,
+"k": "ilus",
+"t": "pay",
+"p": {
+"mode": "everyone",
+"cues": [
+16,
+36,
+86
+]
+},
+"big": true
+},
+{
+"a": 150.92,
+"b": 153.62,
+"k": "ilus",
+"t": "pay",
+"p": {
+"mode": "empty",
+"cues": [
+0,
+0,
+0
+],
+"o": {
+"build": {
+"lines": [
+"except *YOURSELF.*"
+],
+"a": 33
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 153.62,
+"b": 156.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g05_empty_purse.png"
+}
+},
+{
+"a": 156.86,
+"b": 160.9,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g16_full_purse.png",
+"o": {
+"build": {
+"lines": [
+"the *foundation.*"
+],
+"y": 420,
+"a": 70
+}
+}
+}
+},
+{
+"a": 160.9,
+"b": 163.9,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 0
+},
+"big": true
+},
+{
+"a": 163.9,
+"b": 166.96,
+"k": "ilus",
+"t": "ten",
+"p": {
+"mode": "one"
+},
+"big": true
+},
+{
+"a": 166.96,
+"b": 169.4,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g15_ten_coins.png",
+"o": {
+"build": {
+"lines": [
+"*1* out of *10.*"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 169.4,
+"b": 172.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k02_coin_purse.mp4",
+"rate": 0.874
+}
+},
+{
+"a": 172.66,
+"b": 176.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g24_sapling.png",
+"o": {
+"build": {
+"lines": [
+"*small.*",
+"that's why it works."
+],
+"a": 2,
+"y": 360
+}
+}
+}
+},
+{
+"a": 176.24,
+"b": 178.74,
+"k": "ilus",
+"t": "house",
+"p": {
+"mode": "tell"
+}
+},
+{
+"a": 178.74,
+"b": 183.52,
+"k": "ilus",
+"t": "purse",
+"p": {
+"mode": "tenNine",
+"p0": 0.1,
+"p1": 0.35
+},
+"big": true
+},
+{
+"a": 183.52,
+"b": 185.66,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k06_stack.mp4"
+}
+},
+{
+"a": 185.66,
+"b": 193.053,
+"k": "ilus",
+"t": "ten",
+"p": {
+"mode": "nine",
+"o": {
+"build": {
+"lines": [
+"you don't even *feel* it."
+],
+"y": 90,
+"a": 63
+}
+}
+},
+"big": true
+},
+{
+"a": 193.053,
+"b": 197.253,
+"k": "ilus",
+"t": "purse",
+"p": {
+"mode": "heavy",
+"p0": 0.6,
+"p1": 0.75,
+"o": {
+"build": {
+"lines": [
+"*heavy.*"
+],
+"a": 91
+}
+}
+}
+},
+{
+"a": 197.253,
+"b": 203.333,
+"k": "ilus",
+"t": "ten",
+"p": {
+"mode": "first"
+},
+"big": true
+},
+{
+"a": 203.333,
+"b": 206.633,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"You save *FIRST.*"
+],
+"a": 2,
+"y": 400,
+"size": 110
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 206.633,
+"b": 209.333,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 1
+},
+"big": true
+},
+{
+"a": 209.333,
+"b": 217.253,
+"k": "ilus",
+"t": "house",
+"p": {
+"mode": "students",
+"say": "But I can't save one coin!",
+"sayAt": 161
+}
+},
+{
+"a": 217.253,
+"b": 220.173,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g49_short_wallet.png"
+}
+},
+{
+"a": 220.173,
+"b": 224.113,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Clay tablet",
+"side": "c",
+"v": "img/t30moneen/cand/cuneiform_08.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 224.113,
+"b": 229.213,
+"k": "ilus",
+"t": "creep",
+"p": {
+"mode": "match",
+"o": {
+"build": {
+"lines": [
+"*necessary* expenses"
+],
+"a": 6,
+"y": 60,
+"size": 80
+}
+}
+},
+"big": true
+},
+{
+"a": 229.213,
+"b": 232.493,
+"k": "ilus",
+"t": "creep",
+"p": {
+"mode": "raise"
+},
+"big": true
+},
+{
+"a": 232.493,
+"b": 234.713,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g32_market.png"
+}
+},
+{
+"a": 234.713,
+"b": 241.813,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30moneen/ag/t30moneen_g42_grain_jars.png",
+"r": "img/t30moneen/cand/carnelian_01.jpg",
+"wl": "NEED",
+"wr": "WANT",
+"a": 117,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 241.813,
+"b": 245.553,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g21_list.png",
+"o": {
+"build": {
+"lines": [
+"make a *list.*"
+],
+"a": 56
+}
+}
+}
+},
+{
+"a": 245.553,
+"b": 250.713,
+"k": "ilus",
+"t": "sort",
+"p": {
+"mode": "sort"
+},
+"big": true
+},
+{
+"a": 250.713,
+"b": 253.473,
+"k": "ilus",
+"t": "sort",
+"p": {
+"mode": "more",
+"o": {
+"build": {
+"lines": [
+"always one *more.*"
+],
+"y": 60,
+"a": 43
+}
+}
+}
+},
+{
+"a": 253.473,
+"b": 259.993,
+"k": "ilus",
+"t": "ten",
+"p": {
+"mode": "pay9"
+},
+"big": true
+},
+{
+"a": 259.993,
+"b": 261.773,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"your own *month.*"
+],
+"a": 2,
+"y": 420
+}
+}
+}
+},
+{
+"a": 261.773,
+"b": 264.453,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k16_coffee.mp4"
+}
+},
+{
+"a": 264.453,
+"b": 267.013,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g19_card_laptop.png"
+}
+},
+{
+"a": 267.013,
+"b": 270.293,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g20_parcel.png"
+}
+},
+{
+"a": 270.293,
+"b": 272.113,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"not a *crime.*"
+],
+"a": 2,
+"y": 420
+}
+}
+}
+},
+{
+"a": 272.113,
+"b": 274.773,
+"k": "ilus",
+"t": "house",
+"p": {
+"mode": "laugh",
+"o": {
+"aside": {
+"t": "not a monk.",
+"x": 1100,
+"y": 380,
+"a": 55
+}
+}
+}
+},
+{
+"a": 274.773,
+"b": 277.813,
+"k": "ilus",
+"t": "sort",
+"p": {
+"mode": "decide",
+"o": {
+"build": {
+"lines": [
+"*YOU* decide."
+],
+"a": 53
+}
+}
+}
+},
+{
+"a": 277.813,
+"b": 281.253,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g10_stylus_hands.png",
+"o": {
+"build": {
+"lines": [
+"write. look. *pick.*"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 281.253,
+"b": 287.053,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Ancient coins",
+"side": "c",
+"v": "img/t30moneen/cand/coins_02.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · Tilemahos Efthimiadis from Athens, G · CC BY 2.0"
+}
+}
+},
+{
+"a": 287.053,
+"b": 290.733,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k22_counting.mp4",
+"o": {
+"build": {
+"lines": [
+"a *dozen* little ones."
+],
+"y": 400,
+"a": 23
+}
+},
+"rate": 0.802
+}
+},
+{
+"a": 290.733,
+"b": 292.213,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/coins_04.jpg",
+"ar": 1.2508,
+"o": {
+"credit": "Wikimedia Commons · Birmingham Museums Trust, Teresa Gil · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 292.213,
+"b": 296.793,
+"k": "ilus",
+"t": "purse",
+"p": {
+"mode": "leak",
+"p0": 0.4,
+"p1": 0.25,
+"o": {
+"build": {
+"lines": [
+"little *leaks.*"
+],
+"a": 35
+}
+}
+}
+},
+{
+"a": 296.793,
+"b": 299.353,
+"k": "ilus",
+"t": "cage",
+"p": {
+"mode": "cage"
+},
+"big": true
+},
+{
+"a": 299.353,
+"b": 305.693,
+"k": "ilus",
+"t": "cage",
+"p": {
+"mode": "map",
+"o": {
+"big": {
+"w": "a MAP.",
+"a": 2,
+"size": 150,
+"y": 60,
+"color": "#edb269"
+}
+}
+}
+},
+{
+"a": 305.693,
+"b": 308.193,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 2
+},
+"big": true
+},
+{
+"a": 308.193,
+"b": 311.313,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k18_scale.mp4",
+"o": {
+"build": {
+"lines": [
+"most people *skip* this."
+],
+"a": 2,
+"y": 400
+}
+},
+"rate": 0.935
+}
+},
+{
+"a": 311.313,
+"b": 314.793,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g22_drawer.png"
+}
+},
+{
+"a": 314.793,
+"b": 316.213,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/coins_03.jpg",
+"ar": 0.9005,
+"o": {
+"credit": "Wikimedia Commons · Birmingham Museums Trust, Teresa Gil · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 316.213,
+"b": 322.913,
+"k": "ilus",
+"t": "army",
+"p": {
+"mode": "march",
+"o": {
+"build": {
+"lines": [
+"an *army* of workers."
+],
+"a": 61
+}
+}
+},
+"big": true
+},
+{
+"a": 322.913,
+"b": 327.093,
+"k": "ilus",
+"t": "army",
+"p": {
+"mode": "return"
+},
+"big": true
+},
+{
+"a": 327.093,
+"b": 330.773,
+"k": "ilus",
+"t": "tree",
+"p": {
+"gens": 4
+},
+"big": true
+},
+{
+"a": 330.773,
+"b": 333.013,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g23_palm_harvest.png",
+"o": {
+"build": {
+"lines": [
+"*compound* interest."
+],
+"y": 400,
+"a": 22
+}
+}
+}
+},
+{
+"a": 333.013,
+"b": 337.853,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "4,000 years old",
+"side": "c",
+"v": "img/t30moneen/cand/cuneiform_07.jpg",
+"ar": 0.9208,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 337.853,
+"b": 343.813,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g47_coin_palm.png"
+}
+},
+{
+"a": 343.813,
+"b": 345.513,
+"k": "ilus",
+"t": "tree",
+"p": {
+"gens": 3,
+"years": true
+},
+"big": true
+},
+{
+"a": 345.513,
+"b": 350.873,
+"k": "ilus",
+"t": "cross",
+"p": {
+"o": {
+"big": {
+"w": "MORE.",
+"size": 170,
+"y": 120,
+"color": "#e9c762",
+"a": 78
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 350.873,
+"b": 354.353,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 3
+},
+"big": true
+},
+{
+"a": 354.353,
+"b": 356.793,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"the *mistake.*"
+],
+"a": 2,
+"y": 420,
+"size": 120
+}
+}
+}
+},
+{
+"a": 356.793,
+"b": 365.013,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g17_coin_jar.png"
+}
+},
+{
+"a": 365.013,
+"b": 366.113,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": 4
+}
+},
+{
+"a": 366.113,
+"b": 367.833,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k07_brick.mp4"
+}
+},
+{
+"a": 367.833,
+"b": 371.353,
+"k": "ilus",
+"t": "voyage",
+"p": {
+"mode": "go"
+},
+"big": true
+},
+{
+"a": 371.353,
+"b": 373.333,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g26_phoenician_port.png"
+}
+},
+{
+"a": 373.333,
+"b": 375.673,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g28_real_jewels.png"
+}
+},
+{
+"a": 375.673,
+"b": 380.913,
+"k": "ilus",
+"t": "voyage",
+"p": {
+"mode": "back"
+},
+"big": true
+},
+{
+"a": 380.913,
+"b": 384.073,
+"k": "ilus",
+"t": "glass",
+"p": {
+"mode": "reveal",
+"at": 56,
+"o": {
+"big": {
+"w": "GLASS.",
+"size": 220,
+"y": 140,
+"a": 56
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 384.073,
+"b": 387.226,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/kf/t30moneen_k09_beads.png"
+}
+},
+{
+"a": 387.226,
+"b": 391.466,
+"k": "ilus",
+"t": "expert",
+"p": {
+"mode": "scold",
+"cues": [
+65
+]
+}
+},
+{
+"a": 391.466,
+"b": 399.706,
+"k": "ilus",
+"t": "expert",
+"p": {
+"mode": "pairs",
+"cues": [
+37,
+105,
+209
+]
+},
+"big": true
+},
+{
+"a": 399.706,
+"b": 404.346,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"the *first* money",
+"is the hardest."
+],
+"y": 330,
+"a": 43
+}
+}
+}
+},
+{
+"a": 404.346,
+"b": 409.966,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k15_spill.mp4",
+"rate": 0.513
+}
+},
+{
+"a": 409.966,
+"b": 415.926,
+"k": "ilus",
+"t": "expert",
+"p": {
+"mode": "ask",
+"cues": [
+10
+]
+}
+},
+{
+"a": 415.926,
+"b": 421.966,
+"k": "ilus",
+"t": "balance",
+"p": {
+"l": "SAFE",
+"r": "FAST & PROMISING",
+"tip": -7
+}
+},
+{
+"a": 421.966,
+"b": 426.966,
+"k": "ilus",
+"t": "glass",
+"p": {
+"mode": "brick",
+"o": {
+"build": {
+"lines": [
+"a *brickmaker* buying glass."
+],
+"size": 84,
+"a": 95
+}
+}
+}
+},
+{
+"a": 426.966,
+"b": 431.266,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/cuneiform_05.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 431.266,
+"b": 433.626,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": 5
+}
+},
+{
+"a": 433.626,
+"b": 438.746,
+"k": "ilus",
+"t": "rodan",
+"p": {
+"mode": "reward",
+"cues": [
+116
+]
+},
+"big": true
+},
+{
+"a": 438.746,
+"b": 442.086,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g31_fifty_gold.png"
+}
+},
+{
+"a": 442.086,
+"b": 453.746,
+"k": "ilus",
+"t": "rodan",
+"p": {
+"mode": "crowd",
+"cues": [
+76,
+184,
+212,
+269
+]
+},
+"big": true
+},
+{
+"a": 453.746,
+"b": 455.206,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g52_torch_street.png"
+}
+},
+{
+"a": 455.206,
+"b": 460.826,
+"k": "ilus",
+"t": "cast",
+"p": {
+"focus": 6
+}
+},
+{
+"a": 460.826,
+"b": 461.766,
+"k": "ilus",
+"t": "tokens",
+"p": {
+"mode": "open"
+},
+"big": true
+},
+{
+"a": 461.766,
+"b": 464.066,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k13_tokens.mp4"
+}
+},
+{
+"a": 464.066,
+"b": 467.806,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Clay tablet & envelope",
+"side": "c",
+"v": "img/t30moneen/cand/envelope_02.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · Maksim Sokolov (maxergon.com) · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 467.806,
+"b": 470.446,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g34_tokens_close.png"
+}
+},
+{
+"a": 470.446,
+"b": 473.526,
+"k": "ilus",
+"t": "tokens",
+"p": {
+"mode": "stories",
+"cues": [
+20,
+99999,
+99999
+]
+},
+"big": true
+},
+{
+"a": 473.526,
+"b": 478.046,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g35_cattle.png"
+}
+},
+{
+"a": 478.046,
+"b": 485.426,
+"k": "ilus",
+"t": "tokens",
+"p": {
+"mode": "split",
+"cues": [
+0,
+32,
+219
+]
+},
+"big": true
+},
+{
+"a": 485.426,
+"b": 488.386,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g36_jewelry_table.png"
+}
+},
+{
+"a": 488.386,
+"b": 492.346,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Lydian coins",
+"side": "c",
+"v": "img/t30moneen/cand/lydian_02.jpg",
+"ar": 1.5035,
+"o": {
+"credit": "Wikimedia Commons · Dosseman · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 492.346,
+"b": 495.226,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g44_sealed_tablet.png"
+}
+},
+{
+"a": 495.226,
+"b": 507.866,
+"k": "ilus",
+"t": "q3",
+"p": {
+"cues": [
+114,
+173,
+245
+]
+},
+"big": true
+},
+{
+"a": 507.866,
+"b": 509.646,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g56_money_box.png"
+}
+},
+{
+"a": 509.646,
+"b": 515.926,
+"k": "ilus",
+"t": "balance",
+"p": {
+"l": "A LITTLE TOO CAREFUL",
+"r": "REGRET",
+"tip": -7
+}
+},
+{
+"a": 515.926,
+"b": 522.186,
+"k": "ilus",
+"t": "rodan",
+"p": {
+"mode": "keep"
+},
+"big": true
+},
+{
+"a": 522.186,
+"b": 527.086,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Ancient glass beads",
+"side": "c",
+"v": "img/t30moneen/cand/glass_02.jpg",
+"ar": 0.9542,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 527.086,
+"b": 530.626,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g30_spears.png",
+"o": {
+"build": {
+"lines": [
+"*ask* before you lose it."
+],
+"a": 2,
+"y": 400
+}
+}
+}
+},
+{
+"a": 530.626,
+"b": 537.006,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g37_mattress.png",
+"o": {
+"aside": {
+"t": "not here.",
+"x": 1150,
+"y": 360,
+"a": 136
+}
+}
+}
+},
+{
+"a": 537.006,
+"b": 539.586,
+"k": "ilus",
+"t": "army",
+"p": {
+"mode": "march"
+},
+"big": true
+},
+{
+"a": 539.586,
+"b": 546.586,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g55_army_workers.png"
+}
+},
+{
+"a": 546.586,
+"b": 550.326,
+"k": "ilus",
+"t": "balance",
+"p": {
+"l": "GROWTH",
+"r": "SAFETY",
+"tip": 0,
+"o": {
+"build": {
+"lines": [
+"*together.*"
+],
+"a": 37
+}
+}
+},
+"big": true
+},
+{
+"a": 550.326,
+"b": 554.026,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 4
+},
+"big": true
+},
+{
+"a": 554.026,
+"b": 555.586,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Babylon today",
+"side": "c",
+"v": "img/t30moneen/cand/babruins_05.jpg",
+"ar": 1.5,
+"o": {
+"credit": "Wikimedia Commons · Osama Sarm · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 555.586,
+"b": 559.606,
+"k": "ilus",
+"t": "home",
+"p": {
+"mode": "rent"
+},
+"big": true
+},
+{
+"a": 559.606,
+"b": 564.946,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g38_cramped_room.png"
+}
+},
+{
+"a": 564.946,
+"b": 570.266,
+"k": "ilus",
+"t": "home",
+"p": {
+"mode": "own"
+}
+},
+{
+"a": 570.266,
+"b": 574.626,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g39_home_garden.png"
+}
+},
+{
+"a": 574.626,
+"b": 580.119,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/babruins_02.jpg",
+"ar": 1.5035,
+"o": {
+"credit": "Wikimedia Commons · Osama Shukir Muhammed Amin FRCP(Glas · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 580.119,
+"b": 585.939,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g40_house_build.png"
+}
+},
+{
+"a": 585.939,
+"b": 588.359,
+"k": "ilus",
+"t": "home",
+"p": {
+"mode": "build",
+"o": {
+"build": {
+"lines": [
+"something *yours.*"
+],
+"a": 32
+}
+}
+}
+},
+{
+"a": 588.359,
+"b": 591.399,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 5
+},
+"big": true
+},
+{
+"a": 591.399,
+"b": 594.559,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g41_old_hands.png"
+}
+},
+{
+"a": 594.559,
+"b": 603.439,
+"k": "ilus",
+"t": "age",
+"p": {
+"mode": "age"
+},
+"big": true
+},
+{
+"a": 603.439,
+"b": 607.799,
+"k": "ilus",
+"t": "age",
+"p": {
+"mode": "family"
+}
+},
+{
+"a": 607.799,
+"b": 611.799,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g57_old_porch.png"
+}
+},
+{
+"a": 611.799,
+"b": 616.779,
+"k": "ilus",
+"t": "army",
+"p": {
+"mode": "old"
+},
+"big": true
+},
+{
+"a": 616.779,
+"b": 620.679,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k19_garden.mp4",
+"o": {
+"build": {
+"lines": [
+"prepared *today.*"
+],
+"y": 400,
+"a": 47
+}
+},
+"rate": 0.491
+}
+},
+{
+"a": 620.679,
+"b": 623.599,
+"k": "g",
+"t": "roster",
+"p": {
+"active": 6
+},
+"big": true
+},
+{
+"a": 623.599,
+"b": 632.859,
+"k": "ilus",
+"t": "house",
+"p": {
+"mode": "students"
+}
+},
+{
+"a": 632.859,
+"b": 634.839,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g12_baker.png",
+"o": {
+"build": {
+"lines": [
+"*wanting* isn't enough."
+],
+"a": 2,
+"y": 400
+}
+}
+}
+},
+{
+"a": 634.839,
+"b": 637.939,
+"k": "ilus",
+"t": "stairs",
+"p": {},
+"big": true
+},
+{
+"a": 637.939,
+"b": 640.599,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g43_polish_bowl.png"
+}
+},
+{
+"a": 640.599,
+"b": 643.379,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Ancient gold coins",
+"side": "c",
+"v": "img/t30moneen/cand/coins_01.jpg",
+"ar": 1.5035,
+"o": {
+"credit": "Wikimedia Commons · Dosseman · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 643.379,
+"b": 656.399,
+"k": "ilus",
+"t": "virtues",
+"p": {
+"cues": [
+64,
+129,
+173,
+256
+]
+},
+"big": true
+},
+{
+"a": 656.399,
+"b": 659.139,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g58_family_meal.png"
+}
+},
+{
+"a": 659.139,
+"b": 661.799,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"people can *TRUST.*"
+],
+"y": 400,
+"size": 110,
+"a": 34
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 661.799,
+"b": 682.899,
+"k": "g",
+"t": "roster",
+"p": {
+"final": [
+119,
+243,
+359,
+499,
+99999,
+99999,
+99999
+]
+},
+"big": true
+},
+{
+"a": 682.899,
+"b": 695.639,
+"k": "g",
+"t": "roster",
+"p": {
+"final": [
+0,
+0,
+0,
+0,
+0,
+149,
+248
+]
+},
+"big": true
+},
+{
+"a": 695.639,
+"b": 699.159,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g60_road_wall.png"
+}
+},
+{
+"a": 699.159,
+"b": 701.739,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g46_road_home.png"
+}
+},
+{
+"a": 701.739,
+"b": 710.479,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "home",
+"cues": [
+113,
+213
+]
+}
+},
+{
+"a": 710.479,
+"b": 715.259,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k14_torches.mp4",
+"o": {
+"build": {
+"lines": [
+"every single *day.*"
+],
+"y": 400,
+"a": 94
+}
+},
+"rate": 0.506
+}
+},
+{
+"a": 715.259,
+"b": 717.219,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k20_feet_road.mp4"
+}
+},
+{
+"a": 717.219,
+"b": 720.019,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30moneen/cand/cuneiform_03.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 720.019,
+"b": 724.279,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k21_glass_light.mp4",
+"o": {
+"build": {
+"lines": [
+"no *tricks.*"
+],
+"y": 420,
+"a": 104
+}
+},
+"rate": 0.7
+}
+},
+{
+"a": 724.279,
+"b": 731.179,
+"k": "ilus",
+"t": "purse",
+"p": {
+"mode": "years",
+"p0": 0.1,
+"p1": 0.8,
+"o": {
+"build": {
+"lines": [
+"*1* coin out of *10.*"
+],
+"a": 47
+}
+}
+},
+"big": true
+},
+{
+"a": 731.179,
+"b": 734.319,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30moneen/t30moneen_k12_sapling.mp4",
+"o": {
+"build": {
+"lines": [
+"*boring.*",
+"that's why it works."
+],
+"a": 2,
+"y": 360
+}
+},
+"rate": 0.929
+}
+},
+{
+"a": 734.319,
+"b": 742.219,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Of these seven rules, which one is the hardest for you to stick to?",
+"bell": false
+}
+},
+{
+"a": 742.219,
+"b": 745.499,
+"k": "g",
+"t": "roster",
+"p": {
+"hot": 1,
+"caption": "mine: *#2*",
+"final": [
+0,
+0,
+0,
+0,
+0,
+0,
+0
+]
+},
+"big": true
+},
+{
+"a": 745.499,
+"b": 748.119,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g18_coffee.png"
+}
+},
+{
+"a": 748.119,
+"b": 752.659,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30moneen/ag/t30moneen_g48_camel_desert.png",
+"o": {
+"build": {
+"lines": [
+"the *5 laws* of gold."
+],
+"a": 49
+}
+}
+}
+},
+{
+"a": 752.659,
+"b": 758.459,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Babylon, early 1900s",
+"side": "c",
+"v": "img/t30moneen/cand/babold_04.jpg",
+"ar": 1.219,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 758.459,
+"b": 760.519,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Subscribe + bell so you don't miss it."
+}
+},
+{
+"a": 760.519,
+"b": 763.779,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "dawn",
+"cue": 9999
+}
+},
+{
+"a": 763.779,
+"b": 767.139,
+"k": "g",
+"t": "quote",
+"p": {
+"lines": [
+"a part of all you earn",
+"is *yours to keep.*"
+],
+"a": 2
+},
+"big": true
+},
+{
+"a": 767.139,
+"b": 770.89,
+"k": "ilus",
+"t": "purse",
+"p": {
+"mode": "one",
+"p0": 0.1,
+"o": {
+"build": {
+"lines": [
+"Start *today.*"
+],
+"a": 2
+}
+}
+}
+}
+]
+}
