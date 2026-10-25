@@ -1,0 +1,569 @@
+// vext01 v2 — "La taza número 9" (19 s). Tratamiento del director creativo: café a las 3 AM, revelación de
+// las 8 tazas vacías, el corazón se desboca. Cámara orgánica (camara.tsx) + foley cuadro a cuadro (sonido.tsx).
+import React from "react";
+import { AbsoluteFill, Sequence, interpolate, random, spring, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import { loadFont } from "@remotion/google-fonts/Caveat";
+import { Plano, Capa, golpe, respira } from "./camara";
+import { Sonidos } from "./sonido";
+
+const { fontFamily: mano } = loadFont("normal", { weights: ["700"], subsets: ["latin"] });
+
+const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
+const lerp = (f: number, a: number[], b: number[], ease = Easing.inOut(Easing.cubic)) => {
+  const r = a.map((v, i) => (i > 0 && v <= a[i - 1] ? a[i - 1] + 0.001 * i : v));
+  return interpolate(f, r, b, { ...cl, easing: ease });
+};
+
+// paleta: noche azul + acento cálido de la tira de luz bajo la alacena
+const C = {
+  noche: "#0f1628", noche2: "#18223b", pared: "#1c2640", azulejo: "#24304e",
+  calido: "#ffb766", calido2: "#ffd9a0", madera: "#5b3d2a", madera2: "#7a5236", maderaLuz: "#a8743f",
+  porcelana: "#f3ede2", porcSombra: "#b9b3ab", cafe: "#2a170c", cafe2: "#4a2a16", teal: "#2bb3a3", negro: "#05070d",
+  frio: "#7fb0ff",
+};
+export const BPM_F = 30 * 60 / 110; // un latido cada 16,36 cuadros
+
+// ── piezas ────────────────────────────────────────────────────────────────
+const Vapor: React.FC<{ x: number; y: number; s?: number; o?: number; seed?: string }> = ({ x, y, s = 1, o = 0.5, seed = "v" }) => {
+  const f = useCurrentFrame();
+  return (
+    <g transform={`translate(${x},${y}) scale(${s})`} style={{ mixBlendMode: "screen" }}>
+      {[0, 1, 2].map((i) => {
+        const t = ((f * 0.9 + i * 40 + random(seed + i) * 30) % 120) / 120;
+        const dx = Math.sin(t * 6 + i * 2) * 14;
+        const op = Math.sin(t * Math.PI) * o;
+        return (
+          <path key={i} d={`M${-20 + i * 20 + dx} ${-t * 160} q 14 -26 0 -52 t 0 -52`} stroke="#fff6ea" strokeWidth={10 - t * 4}
+            fill="none" strokeLinecap="round" opacity={op} style={{ filter: "blur(5px)" }} />
+        );
+      })}
+    </g>
+  );
+};
+
+// taza de perfil. lleno 0..1, el café se ve por la boca (elipse)
+const Taza: React.FC<{ x: number; y: number; s?: number; lleno?: number; luz?: string; ola?: number }> = ({ x, y, s = 1, lleno = 0, luz = C.calido, ola = 0 }) => {
+  const W = 92, H = 104; // boca a y=0, base a y=H
+  const nivel = H * (1 - lleno * 0.86);
+  return (
+    <g transform={`translate(${x},${y}) scale(${s})`}>
+      <ellipse cx={0} cy={H + 6} rx={W * 0.62} ry={9} fill="#000" opacity={0.45} />
+      <path d={`M${W / 2 - 4} 22 C ${W / 2 + 44} 18, ${W / 2 + 44} 78, ${W / 2 - 10} 74`} stroke={C.porcelana} strokeWidth={13} fill="none" />
+      <path d={`M${-W / 2} 0 L${-W / 2 + 8} ${H - 10} Q${-W / 2 + 10} ${H} 0 ${H} Q${W / 2 - 10} ${H} ${W / 2 - 8} ${H - 10} L${W / 2} 0 Z`} fill={C.porcelana} />
+      {/* sombreado: luz cálida de un lado, azul del otro */}
+      <path d={`M${W / 2} 0 L${W / 2 - 8} ${H - 10} Q${W / 2 - 10} ${H} 0 ${H} L 8 ${H} L 20 0 Z`} fill={C.porcSombra} opacity={0.55} />
+      <path d={`M${-W / 2 + 6} 6 L${-W / 2 + 12} ${H - 16}`} stroke={luz} strokeWidth={6} opacity={0.55} strokeLinecap="round" />
+      <ellipse cx={0} cy={0} rx={W / 2} ry={11} fill="#d9d2c6" />
+      {lleno > 0.02 && (
+        <ellipse cx={0} cy={Math.min(nivel * 0.12, 6)} rx={W / 2 - 5} ry={8 + ola} fill={C.cafe} />
+      )}
+      {lleno > 0.02 && <ellipse cx={-10} cy={Math.min(nivel * 0.12, 6) - 2} rx={14} ry={3} fill={C.calido} opacity={0.35} />}
+    </g>
+  );
+};
+
+// brazo de tubo teal con puño negro (la mano de la referencia). desde = hombro fuera de cuadro, puño en (px,py)
+const Brazo: React.FC<{ dx: number; dy: number; px: number; py: number; grosor?: number; luz?: string; ang?: number }> = ({ dx, dy, px, py, grosor = 46, luz = C.calido, ang = 0 }) => (
+  <g>
+    <path d={`M${dx} ${dy} Q${(dx + px) / 2 + 30} ${(dy + py) / 2 + 60} ${px} ${py}`} stroke={luz} strokeWidth={grosor + 6} fill="none" strokeLinecap="round" transform="translate(-3,-3)" opacity={0.8} />
+    <path d={`M${dx} ${dy} Q${(dx + px) / 2 + 30} ${(dy + py) / 2 + 60} ${px} ${py}`} stroke={C.teal} strokeWidth={grosor} fill="none" strokeLinecap="round" />
+    <g transform={`translate(${px},${py}) rotate(${ang})`}>
+      <circle r={grosor * 0.78} fill={luz} transform="translate(-3,-3)" opacity={0.8} />
+      <circle r={grosor * 0.75} fill={C.negro} />
+      {[-1, 0, 1].map((k) => <circle key={k} cx={-grosor * 0.55} cy={k * grosor * 0.35} r={grosor * 0.24} fill={C.negro} />)}
+    </g>
+  </g>
+);
+
+const Cafetera: React.FC<{ x: number; y: number; s?: number; rot?: number; nivel?: number; ola?: number }> = ({ x, y, s = 1, rot = 0, nivel = 0.6, ola = 0 }) => (
+  <g transform={`translate(${x},${y}) rotate(${rot}) scale(${s})`}>
+    <defs>
+      <clipPath id="vidrio"><path d="M-70 -110 L70 -110 L95 60 Q95 90 60 90 L-60 90 Q-95 90 -95 60 Z" /></clipPath>
+    </defs>
+    <path d="M-70 -110 L70 -110 L95 60 Q95 90 60 90 L-60 90 Q-95 90 -95 60 Z" fill="#9fb6d6" opacity={0.18} />
+    <g clipPath="url(#vidrio)">
+      <rect x={-120} y={90 - 200 * nivel + ola} width={240} height={300} fill={C.cafe} transform={`rotate(${-rot} 0 ${90 - 200 * nivel})`} />
+      <rect x={-120} y={90 - 200 * nivel + ola} width={240} height={6} fill={C.cafe2} transform={`rotate(${-rot} 0 ${90 - 200 * nivel})`} />
+    </g>
+    <path d="M-70 -110 L70 -110 L95 60 Q95 90 60 90 L-60 90 Q-95 90 -95 60 Z" fill="none" stroke="#cfe0ff" strokeWidth={4} opacity={0.6} />
+    <path d="M-62 -100 L-82 50" stroke="#fff" strokeWidth={6} opacity={0.35} strokeLinecap="round" />
+    {/* pico */}
+    <path d="M-70 -110 L-100 -126 L-66 -96 Z" fill="#9fb6d6" opacity={0.5} />
+    {/* tapa y asa */}
+    <rect x={-74} y={-132} width={148} height={26} rx={8} fill="#141820" />
+    <path d="M78 -96 C150 -96 150 40 86 40" stroke="#141820" strokeWidth={22} fill="none" strokeLinecap="round" />
+  </g>
+);
+
+const Pared: React.FC<{ tira?: number }> = ({ tira = 1 }) => (
+  <svg width="100%" height="100%" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" style={{ position: "absolute", inset: 0 }}>
+    <defs>
+      <linearGradient id="pw" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stopColor={C.calido} stopOpacity={0.55 * tira} />
+        <stop offset="0.35" stopColor={C.pared} stopOpacity={1} />
+        <stop offset="1" stopColor={C.noche} />
+      </linearGradient>
+    </defs>
+    <rect x={-200} y={-200} width={2320} height={1480} fill="url(#pw)" />
+    {Array.from({ length: 14 }).map((_, i) => <rect key={"h" + i} x={-200} y={i * 80} width={2320} height={3} fill={C.azulejo} opacity={0.5} />)}
+    {Array.from({ length: 30 }).map((_, i) => <rect key={"v" + i} x={-200 + i * 160 + ((Math.floor(i / 1) % 2) * 0)} y={0} width={3} height={1080} fill={C.azulejo} opacity={0.3} />)}
+    {/* alacena y tira de luz */}
+    <rect x={-200} y={-200} width={2320} height={260} fill="#2a1d18" />
+    <rect x={-200} y={56} width={2320} height={10} fill={C.calido2} opacity={tira} />
+  </svg>
+);
+
+const Mesada: React.FC<{ y?: number }> = ({ y = 780 }) => (
+  <svg width="100%" height="100%" viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
+    <defs>
+      <linearGradient id="md" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stopColor={C.maderaLuz} /><stop offset="0.25" stopColor={C.madera2} /><stop offset="1" stopColor={C.madera} />
+      </linearGradient>
+    </defs>
+    <rect x={-300} y={y} width={2520} height={600} fill="url(#md)" />
+    {Array.from({ length: 7 }).map((_, i) => (
+      <path key={i} d={`M-300 ${y + 24 + i * 34} C 400 ${y + 18 + i * 34}, 1200 ${y + 32 + i * 34}, 2220 ${y + 22 + i * 34}`} stroke="#3e2819" strokeWidth={2} opacity={0.35} fill="none" />
+    ))}
+    <rect x={-300} y={y} width={2520} height={5} fill={C.calido2} opacity={0.5} />
+  </svg>
+);
+
+const Polvo: React.FC<{ n?: number; seed?: string; caja?: [number, number, number, number] }> = ({ n = 26, seed = "p", caja = [0, 0, 1920, 1080] }) => {
+  const f = useCurrentFrame();
+  const [x0, y0, w, h] = caja;
+  return (
+    <svg width="100%" height="100%" viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, mixBlendMode: "screen" }}>
+      {Array.from({ length: n }).map((_, i) => {
+        const x = x0 + random(seed + "x" + i) * w + Math.sin((f + i * 31) / 50) * 14;
+        const y = y0 + (((random(seed + "y" + i) * h - f * (0.2 + random(seed + "v" + i) * 0.4)) % h) + h) % h;
+        return <circle key={i} cx={x} cy={y} r={1 + random(seed + "r" + i) * 2} fill={C.calido2} opacity={0.2 + 0.4 * Math.abs(Math.sin((f + i * 11) / 37))} />;
+      })}
+    </svg>
+  );
+};
+
+const Vineta: React.FC<{ o?: number }> = ({ o = 0.65 }) => (
+  <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0) 40%, rgba(0,0,0,${o}) 100%)` }} />
+);
+const Franjas: React.FC = () => (
+  <AbsoluteFill>
+    <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 58, background: "#000" }} />
+    <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 58, background: "#000" }} />
+  </AbsoluteFill>
+);
+const Svg: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+  <svg width="100%" height="100%" viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, overflow: "visible" }}>{children}</svg>
+);
+
+// ── P1 (0-60): detalle, la mano agarra la cafetera ──────────────────────────
+const P1: React.FC = () => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const llega = spring({ frame: f - 2, fps, config: { damping: 16, stiffness: 70 }, durationInFrames: 22 });
+  const sube = lerp(f, [30, 54], [0, -46], Easing.out(Easing.cubic));
+  const ola = f > 30 ? Math.sin((f - 30) * 0.7) * 7 * Math.exp(-(f - 30) / 12) : 0;
+  const px = interpolate(llega, [0, 1], [1780, 1132]);
+  const py = interpolate(llega, [0, 1], [600, 476]) + sube;
+  return (
+    <Plano claves={[{ f: 0, x: 0, y: 0, zoom: 1.02, foco: 1 }, { f: 60, x: -26, y: -12, zoom: 1.07, resorte: { damping: 30, stiffness: 20 } }]} mano={7.5} seed={1} fondo={C.noche}>
+      <Capa z={0.45} desenfoqueMax={16}><Pared /></Capa>
+      <Capa z={1}>
+        <Mesada y={800} />
+        <Svg>
+          {/* base de la cafetera con luz roja */}
+          <rect x={720} y={762} width={360} height={44} rx={10} fill="#141820" />
+          <circle cx={1040} cy={784} r={6} fill="#ff4a3d" opacity={0.6 + 0.4 * Math.sin(f / 5)} />
+          <Cafetera x={900} y={672 + sube} s={1.55} nivel={0.62} ola={ola} />
+          <Vapor x={760} y={480 + sube} s={1.2} o={0.35} seed="v1" />
+          <Brazo dx={2050} dy={760} px={px} py={py} grosor={60} />
+        </Svg>
+      </Capa>
+      <Capa z={1.8} desenfoqueMax={22}>
+        <Svg>
+          <rect x={-200} y={960} width={900} height={300} rx={30} fill="#120c09" />
+          <path d="M60 1080 L90 760 Q170 720 250 760 L280 1080 Z" fill="#20283c" />
+        </Svg>
+      </Capa>
+      <Polvo seed="p1" caja={[500, 60, 900, 700]} />
+      <Vineta />
+    </Plano>
+  );
+};
+
+// ── P2 (60-165): perfil, el chorro cae en la taza ───────────────────────────
+const P2: React.FC = () => {
+  const f = useCurrentFrame(); // local 0-105
+  const lleno = lerp(f, [4, 90], [0, 0.84], Easing.inOut(Easing.sin));
+  const corte = lerp(f, [88, 94], [0, 1]); // el chorro se corta desde arriba
+  const arranque = lerp(f, [0, 4], [0, 1]);
+  const CX = 1040, CY = 690, S = 2.6;
+  const sup = CY + 6 * S;
+  const pico = { x: 780, y: 300 };
+  const wob = (k: number) => Math.sin(f * 1.3 + k) * 3;
+  const y0 = pico.y + (sup - pico.y) * corte;
+  const y1 = pico.y + (sup - pico.y) * arranque;
+  const gotas = [
+    { f0: 96, x: CX - 30 }, { f0: 103, x: CX - 26 },
+  ];
+  return (
+    <Plano claves={[{ f: 0, x: -20, y: 0, zoom: 1.04, foco: 1 }, { f: 50, x: 20, y: 6, zoom: 1.06, foco: 1 }, { f: 70, x: 30, y: 10, zoom: 1.075, foco: 1.15, resorte: { damping: 22, stiffness: 50 } }]} mano={7} seed={2} fondo={C.noche}>
+      <Capa z={0.4} desenfoqueMax={18}><Pared /></Capa>
+      <Capa z={1}>
+        <Svg>
+          <Cafetera x={680} y={420} s={1.5} rot={-58} nivel={0.42 - lleno * 0.25} />
+          <Brazo dx={260} dy={-140} px={560} py={300} grosor={60} ang={-58} />
+          {corte < 1 && (
+            <path d={`M${pico.x} ${y0} C ${pico.x + 120 + wob(0)} ${y0 + 40}, ${CX - 40 + wob(1)} ${Math.max(y0, sup - 220)}, ${CX - 30 + wob(2)} ${y1}`}
+              stroke={C.cafe2} strokeWidth={13} fill="none" strokeLinecap="round" />
+          )}
+          {corte < 1 && <path d={`M${pico.x + 4} ${y0 + 4} C ${pico.x + 120} ${y0 + 44}, ${CX - 44} ${Math.max(y0, sup - 216)}, ${CX - 34} ${y1}`} stroke={C.calido} strokeWidth={3} fill="none" opacity={0.5} />}
+          {gotas.map((g, i) => {
+            const t = (f - g.f0) / 6;
+            if (t < 0 || t > 1) return null;
+            return <ellipse key={i} cx={g.x} cy={pico.y + 230 + t * (sup - pico.y - 230)} rx={6} ry={9} fill={C.cafe2} />;
+          })}
+        </Svg>
+      </Capa>
+      <Capa z={1.15} desenfoqueMax={18}>
+        <Mesada y={958} />
+        <Svg>
+          <Taza x={CX} y={CY} s={S} lleno={lleno} ola={f < 92 ? 1.5 + Math.sin(f) : 0} />
+          <Vapor x={CX} y={CY - 10} s={1.6} o={0.15 + lleno * 0.4} seed="v2" />
+        </Svg>
+      </Capa>
+      <Polvo seed="p2" caja={[400, 60, 1100, 800]} />
+      <Vineta />
+    </Plano>
+  );
+};
+
+// ── P3 (165-225): la taza se apoya, la cámara siente el golpe ───────────────
+const P3: React.FC = () => {
+  const f = useCurrentFrame(); // 0-60
+  const { fps } = useVideoConfig();
+  const T = 15; // cuadro del contacto (global 180)
+  const baja = spring({ frame: f, fps, config: { damping: 26, stiffness: 120 }, durationInFrames: T });
+  const ty = interpolate(baja, [0, 1], [610, 742]);
+  const suelta = lerp(f, [25, 42], [0, 1], Easing.in(Easing.quad));
+  const cuchara = f > T + 2 ? Math.sin((f - T - 2) * 1.9) * 4 * Math.exp(-(f - T - 2) / 6) : 0;
+  return (
+    <Plano claves={[{ f: 0, x: 0, y: 0, zoom: 1.0, foco: 1 }, { f: 60, x: 6, y: 4, zoom: 1.015 }]} mano={2.5} seed={3} fondo={C.noche} extra={{ y: golpe(f, T, 3) }}>
+      <Capa z={0.4} desenfoqueMax={18}><Pared /></Capa>
+      <Capa z={1}>
+        <Mesada y={860} />
+        <Svg>
+          {/* plato y cucharita */}
+          <ellipse cx={960} cy={1000} rx={250} ry={34} fill="#000" opacity={0.4} />
+          <ellipse cx={960} cy={990} rx={240} ry={36} fill={C.porcelana} />
+          <ellipse cx={960} cy={984} rx={170} ry={22} fill="#ddd6ca" />
+          <g transform={`rotate(${cuchara} 1170 980)`}>
+            <path d="M1080 990 L1300 960" stroke="#c9ccd4" strokeWidth={9} strokeLinecap="round" />
+            <ellipse cx={1310} cy={958} rx={26} ry={12} fill="#c9ccd4" transform="rotate(-8 1310 958)" />
+          </g>
+          <Taza x={960} y={ty} s={2.35} lleno={0.84} ola={f > T ? 3 * Math.exp(-(f - T) / 5) * Math.sin(f) : 0} />
+          <Vapor x={960} y={ty - 20} s={1.7} o={0.5} seed="v3" />
+          <Brazo dx={1900 + suelta * 300} dy={1150} px={1180 + suelta * 420} py={ty + 70 + suelta * 120} grosor={58} />
+        </Svg>
+      </Capa>
+      <Capa z={1.75} desenfoqueMax={22}>
+        <Svg><Cafetera x={150} y={760} s={2.4} nivel={0.25} /></Svg>
+      </Capa>
+      <Polvo seed="p3" caja={[500, 60, 900, 700]} />
+      <Vineta />
+    </Plano>
+  );
+};
+
+// ── set de cocina completa (P4 y fondo de P5) ───────────────────────────────
+const Exterior: React.FC = () => (
+  <Svg>
+    <defs>
+      <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#0b1634" /><stop offset="1" stopColor="#24386b" /></linearGradient>
+      <radialGradient id="luna" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stopColor="#fff" /><stop offset="0.3" stopColor="#dfeaff" /><stop offset="1" stopColor="#dfeaff" stopOpacity={0} /></radialGradient>
+    </defs>
+    <rect x={180} y={120} width={560} height={480} fill="url(#cielo)" />
+    <circle cx={560} cy={230} r={110} fill="url(#luna)" opacity={0.5} />
+    <circle cx={560} cy={230} r={34} fill="#f4f7ff" />
+    <path d="M180 600 V480 H240 V450 H300 V500 H360 V430 H430 V490 H500 V470 H570 V520 H640 V460 H740 V600 Z" fill="#0a1124" />
+    {[[250, 470], [320, 510], [445, 455], [590, 535], [680, 480]].map(([x, y], i) => <rect key={i} x={x} y={y} width={9} height={11} fill="#ffd27a" opacity={0.7} />)}
+  </Svg>
+);
+const ParedCocina: React.FC<{ hora?: string }> = ({ hora = "3:07" }) => {
+  const f = useCurrentFrame();
+  return (
+    <Svg>
+      <defs>
+        <linearGradient id="pc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor={C.noche2} /><stop offset="1" stopColor={C.pared} /></linearGradient>
+        <radialGradient id="charcoCal" cx="0.5" cy="0" r="1"><stop offset="0" stopColor={C.calido} stopOpacity={0.5} /><stop offset="1" stopColor={C.calido} stopOpacity={0} /></radialGradient>
+      </defs>
+      {/* pared con agujero para la ventana */}
+      <path d="M-300 -300 H2220 V1380 H-300 Z M180 120 V600 H740 V120 Z" fill="url(#pc)" fillRule="evenodd" />
+      <rect x={160} y={100} width={600} height={520} fill="none" stroke="#2a1d18" strokeWidth={22} />
+      <rect x={452} y={110} width={14} height={500} fill="#2a1d18" />
+      <rect x={170} y={350} width={580} height={14} fill="#2a1d18" />
+      {/* alacenas */}
+      <rect x={860} y={60} width={760} height={300} fill="#2a1d18" rx={6} />
+      {[0, 1, 2].map((i) => <rect key={i} x={880 + i * 250} y={80} width={230} height={260} fill="#33241d" rx={4} />)}
+      <rect x={860} y={356} width={760} height={12} fill={C.calido2} />
+      <path d={`M860 368 L1620 368 L1760 780 L720 780 Z`} fill="url(#charcoCal)" />
+      {/* reloj */}
+      <g transform="translate(1060,470)">
+        <circle r={44} fill="#e9e2d0" stroke="#3a3348" strokeWidth={7} />
+        <rect x={-2.5} y={-24} width={5} height={26} fill="#20182b" rx={2} transform={`rotate(${93 + f * 0.01})`} />
+        <rect x={-2} y={-36} width={4} height={38} fill="#20182b" rx={2} transform={`rotate(${42 + f * 0.1})`} />
+        <rect x={-1} y={-38} width={2} height={42} fill="#d1494a" transform={`rotate(${(Math.floor(f / 30) * 6) % 360})`} />
+        <circle r={4} fill="#d1494a" />
+      </g>
+      {/* heladera con post-it */}
+      <g transform="translate(1690,140)">
+        <rect width={300} height={720} rx={18} fill="#c9cfd8" />
+        <rect width={300} height={720} rx={18} fill={C.noche} opacity={0.55} />
+        <rect x={0} y={250} width={300} height={6} fill="#5c6474" />
+        <rect x={250} y={80} width={14} height={140} rx={7} fill="#7d8698" />
+        <g transform="translate(60,320) rotate(-6)">
+          <rect width={120} height={110} fill="#f6d65a" />
+          <text x={60} y={72} textAnchor="middle" fontFamily={mano} fontWeight={700} fontSize={46} fill="#2b2b2b">DÍA 3</text>
+        </g>
+      </g>
+      <text x={0} y={0} fontSize={1} fill="transparent">{hora}</text>
+    </Svg>
+  );
+};
+const MesadaCocina: React.FC<{ vacias?: number; llena?: boolean; persona?: boolean; ojos?: number }> = ({ vacias = 8, llena = true, persona = true, ojos = 1 }) => {
+  const f = useCurrentFrame();
+  const resp = Math.sin(f / 22) * 3; // respira: el hombro sube y baja
+  return (
+    <>
+      {persona && (
+        <Svg>
+          {/* stickman de pie detrás de la mesada, luz de borde cálida SÓLO del lado de la alacena */}
+          <g transform={`translate(1240,${470 + resp * 0.3})`}>
+            <path d="M-34 70 Q0 52 34 70 L46 330 L-46 330 Z" fill={C.teal} />
+            <path d="M-34 70 L-46 330" stroke={C.calido} strokeWidth={4} opacity={0.8} />
+            <rect x={-6} y={40} width={12} height={34} fill={C.negro} />
+            <path d="M-40 84 Q-80 180 -40 268" stroke={C.negro} strokeWidth={15} fill="none" strokeLinecap="round" />
+            <path d="M-44 84 Q-84 180 -44 268" stroke={C.calido} strokeWidth={4} fill="none" opacity={0.7} />
+            <path d="M40 84 Q76 180 40 268" stroke={C.negro} strokeWidth={15} fill="none" strokeLinecap="round" />
+            <circle cx={0} cy={0} r={52} fill={C.negro} />
+            <path d="M-50 -14 A52 52 0 0 1 -14 -50" stroke={C.calido} strokeWidth={5} fill="none" opacity={0.85} />
+            <g opacity={ojos}>
+              <ellipse cx={-22} cy={-4} rx={7} ry={5} fill="#f2efe6" />
+              <ellipse cx={6} cy={-4} rx={7} ry={5} fill="#f2efe6" />
+              <rect x={-34} y={-14} width={50} height={6} fill={C.negro} />
+            </g>
+          </g>
+        </Svg>
+      )}
+      <Mesada y={780} />
+      <Svg>
+        {Array.from({ length: vacias }).map((_, i) => (
+          <g key={i} opacity={0.96}>
+            <Taza x={300 + i * 118} y={700 + (i % 2) * 6} s={0.82} lleno={0} luz={i > 4 ? C.calido : C.frio} />
+          </g>
+        ))}
+        {llena && <Taza x={1360} y={690} s={0.9} lleno={0.84} />}
+        {llena && <Vapor x={1360} y={680} s={0.6} o={0.45} seed="v4" />}
+      </Svg>
+    </>
+  );
+};
+
+// ── P4 (225-330): travelling hacia atrás, la revelación ─────────────────────
+const P4: React.FC = () => {
+  const f = useCurrentFrame(); // 0-105
+  return (
+    <Plano
+      claves={[
+        { f: 0, x: 400, y: 160, zoom: 2.2, foco: 1 },
+        { f: 8, x: 400, y: 160, zoom: 2.2 },
+        { f: 78, x: 0, y: 0, zoom: 1.0, resorte: { damping: 17, stiffness: 55, mass: 1.2 } },
+      ]}
+      mano={3.5} seed={4} fondo={C.noche}
+    >
+      <Capa z={0.08}><Exterior /></Capa>
+      <Capa z={0.55} desenfoqueMax={4}><ParedCocina /></Capa>
+      <Capa z={1}><MesadaCocina /></Capa>
+      <Capa z={1.9} desenfoqueMax={20}>
+        <Svg>
+          {/* repasador colgando en primer término */}
+          <path d="M1780 -100 L1980 -100 L1990 420 Q1890 450 1790 410 Z" fill="#7a2f3a" />
+          <path d="M1790 300 L1990 310" stroke="#e8d9c0" strokeWidth={14} opacity={0.7} />
+        </Svg>
+      </Capa>
+      <Polvo seed="p4" caja={[860, 370, 900, 420]} />
+      <Vineta o={0.7} />
+      {/* la heladera se apaga: el cuarto se "enfría" un poco (75) */}
+      <AbsoluteFill style={{ background: "#0a1430", opacity: lerp(f, [75, 95], [0, 0.12]), mixBlendMode: "multiply" }} />
+    </Plano>
+  );
+};
+
+// ── P5 (330-420): primer plano al tercio, el corazón ────────────────────────
+const latido = (f: number) => {
+  const ph = (f % BPM_F) / BPM_F;
+  return Math.exp(-ph * 7);
+};
+const Cabeza: React.FC<{ x: number; y: number; R: number; parpadoIzq: number; pulso: number; frio: number; extraAnillos?: number }> = ({ x, y, R, parpadoIzq, pulso, frio, extraAnillos = 0 }) => {
+  const borde = frio > 0.5 ? C.frio : C.calido;
+  return (
+    <g transform={`translate(${x},${y})`}>
+      {[1, 2, 3].map((k) => (
+        <circle key={k} r={R + 22 * k + pulso * 14 * k + extraAnillos * 160 * k} fill="none" stroke={C.frio} strokeWidth={2.2}
+          opacity={(0.32 / k) * (0.35 + pulso) * (1 - extraAnillos * 0.6)} />
+      ))}
+      <path d={`M${-R * 1.6} ${R + 300} Q${-R * 1.5} ${R * 0.95} 0 ${R * 0.92} Q${R * 1.5} ${R * 0.95} ${R * 1.6} ${R + 300} Z`} fill={C.teal} />
+      <circle r={R} fill={C.negro} />
+      {/* luz de borde del lado izquierdo (alacena), se enfría con el plano */}
+      <path d={`M${-R * 0.2} ${-R * 0.98} A${R} ${R} 0 0 0 ${-R * 0.98} ${R * 0.2}`} stroke={C.calido} strokeWidth={8} fill="none" opacity={1 - frio} strokeLinecap="round" />
+      <path d={`M${-R * 0.2} ${-R * 0.98} A${R} ${R} 0 0 0 ${-R * 0.98} ${R * 0.2}`} stroke={C.frio} strokeWidth={8} fill="none" opacity={frio} strokeLinecap="round" />
+      <circle r={R} fill="none" stroke={borde} strokeWidth={2} opacity={0.25} />
+      {/* ojos simples mirando a la izquierda (el aire del cuadro) */}
+      {[-0.42, 0.06].map((cx, i) => {
+        const lid = i === 0 ? parpadoIzq : 0.18;
+        const ex = cx * R, ey = -R * 0.12, rx = R * 0.13, ry = R * 0.17;
+        return (
+          <g key={i}>
+            <ellipse cx={ex} cy={ey} rx={rx} ry={ry} fill="#f3efe4" />
+            <circle cx={ex - rx * 0.35} cy={ey + ry * 0.05} r={rx * 0.42} fill="#141018" />
+            <circle cx={ex - rx * 0.5} cy={ey - ry * 0.25} r={rx * 0.14} fill={C.frio} />
+            <rect x={ex - rx - 4} y={ey - ry - 4} width={rx * 2 + 8} height={(ry * 2 + 8) * lid} fill={C.negro} />
+          </g>
+        );
+      })}
+      <path d={`M${-R * 0.34} ${R * 0.42} L${R * 0.02} ${R * 0.42}`} stroke="#f3efe4" strokeWidth={10} strokeLinecap="round" />
+    </g>
+  );
+};
+const P5: React.FC = () => {
+  const f = useCurrentFrame(); // 0-90
+  const { fps } = useVideoConfig();
+  const tics = [20, 32, 41];
+  const parpado = tics.some((t) => f >= t && f < t + 3) ? 0.62 : 0.2;
+  const frio = lerp(f, [0, 90], [0, 1], Easing.inOut(Easing.sin));
+  const extra = lerp(f, [78, 90], [0, 1], Easing.in(Easing.cubic)); // los anillos se abren: corte por forma a P6
+  return (
+    <Plano claves={[{ f: 0, x: 0, y: 0, zoom: 1.0, foco: 1 }, { f: 90, x: 18, y: 4, zoom: 1.02, resorte: { damping: 40, stiffness: 10 } }]} mano={3} seed={5} fondo={C.noche} extra={{ zoom: respira(f, fps) }}>
+      <Capa z={0.3} desenfoqueMax={20} style={{ transform: "scale(1.5)" }}>
+        <AbsoluteFill style={{ transform: "translate(-180px,-60px)" }}><ParedCocina /></AbsoluteFill>
+      </Capa>
+      <Capa z={0.45} desenfoqueMax={22} style={{ transform: "scale(1.5)" }}>
+        <AbsoluteFill style={{ transform: "translate(-180px,-60px)" }}><MesadaCocina persona={false} /></AbsoluteFill>
+      </Capa>
+      <Capa z={1}>
+        <Svg><Cabeza x={1240} y={600} R={270} parpadoIzq={parpado} pulso={latido(f)} frio={frio} extraAnillos={extra} /></Svg>
+      </Capa>
+      <AbsoluteFill style={{ background: `linear-gradient(90deg, rgba(255,150,70,${0.12 * (1 - frio)}) 0%, rgba(70,110,255,${0.14 * frio}) 100%)`, mixBlendMode: "soft-light" }} />
+      <Vineta o={0.72} />
+    </Plano>
+  );
+};
+
+// ── P6 (420-510): cenital del café, ondas al ritmo del corazón ──────────────
+const P6: React.FC = () => {
+  const f = useCurrentFrame(); // 0-90; los latidos siguen la misma grilla global
+  const g = f + 90; // continuidad de fase con P5
+  const beats = Array.from({ length: 8 }).map((_, i) => Math.ceil(90 / BPM_F) * BPM_F + i * BPM_F - 90).filter((b) => b > -40 && b < 100);
+  const oscurece = lerp(f, [60, 90], [0, 0.45]);
+  return (
+    <Plano claves={[{ f: 0, x: 0, y: 0, zoom: 1.0, foco: 1 }, { f: 90, x: 0, y: 0, zoom: 1.1, resorte: { damping: 40, stiffness: 8 } }]} mano={3.5} seed={6} fondo={C.madera}>
+      <Capa z={0.9} desenfoqueMax={10}>
+        <Svg>
+          <rect x={-300} y={-300} width={2520} height={1680} fill={C.madera} />
+          {Array.from({ length: 12 }).map((_, i) => <rect key={i} x={-300} y={-100 + i * 120} width={2520} height={4} fill="#3e2819" opacity={0.5} />)}
+          <radialGradient id="luzCen" cx="0.3" cy="0.1" r="0.9"><stop offset="0" stopColor={C.calido} stopOpacity={0.35} /><stop offset="1" stopColor={C.calido} stopOpacity={0} /></radialGradient>
+          <rect x={-300} y={-300} width={2520} height={1680} fill="url(#luzCen)" />
+        </Svg>
+      </Capa>
+      <Capa z={1}>
+        <Svg>
+          <g transform="translate(1240,600)">
+            <circle r={330} fill="#000" opacity={0.35} cx={14} cy={18} />
+            <circle r={330} fill={C.porcelana} />
+            <circle r={300} fill="#ddd6ca" />
+            <path d="M300 -30 C420 -30 420 120 296 110" stroke={C.porcelana} strokeWidth={40} fill="none" />
+            <circle r={268} fill={C.porcelana} />
+            <defs>
+              <radialGradient id="cafeTop" cx="0.4" cy="0.35" r="0.7"><stop offset="0" stopColor={C.cafe2} /><stop offset="1" stopColor={C.cafe} /></radialGradient>
+              <clipPath id="sup"><circle r={240} /></clipPath>
+            </defs>
+            <circle r={240} fill="url(#cafeTop)" />
+            <g clipPath="url(#sup)">
+              {beats.map((b, i) => {
+                const t = (f - b) / 26;
+                if (t < 0 || t > 1) return null;
+                return <circle key={i} r={20 + t * 240} fill="none" stroke={C.calido2} strokeWidth={5 - t * 4} opacity={(1 - t) * 0.55} />;
+              })}
+              <ellipse cx={-90} cy={-110} rx={70} ry={22} fill={C.calido2} opacity={0.18} transform="rotate(-30 -90 -110)" />
+            </g>
+          </g>
+          <text fontSize={1} fill="transparent">{g}</text>
+        </Svg>
+      </Capa>
+      <AbsoluteFill style={{ background: "#000", opacity: oscurece }} />
+      <Vineta o={0.6} />
+    </Plano>
+  );
+};
+
+// ── P7 (510-570): toma un sorbo, negro al tragar ────────────────────────────
+const P7: React.FC = () => {
+  const f = useCurrentFrame(); // 0-60, negro desde 33
+  const { fps } = useVideoConfig();
+  const sube = spring({ frame: f - 1, fps, config: { damping: 20, stiffness: 70 }, durationInFrames: 18 });
+  const cx = interpolate(sube, [0, 1], [1120, 975]);
+  const cy = interpolate(sube, [0, 1], [1080, 740]);
+  const ang = interpolate(sube, [0, 1], [0, -24]) + lerp(f, [20, 30], [0, -10]);
+  const traga = f >= 30 && f < 34 ? 6 : 0;
+  if (f >= 33) return <AbsoluteFill style={{ background: "#000" }} />;
+  return (
+    <Plano claves={[{ f: 0, x: 0, y: 0, zoom: 1.02, foco: 1 }, { f: 33, x: -10, y: -6, zoom: 1.05 }]} mano={5} seed={7} fondo={C.noche}>
+      <Capa z={0.35} desenfoqueMax={22} style={{ transform: "scale(1.3)" }}><ParedCocina /></Capa>
+      <Capa z={1}>
+        <Svg>
+          <g transform={`translate(1150,${560 + traga})`}>
+            <path d="M-120 230 Q0 200 160 230 L240 600 L-200 600 Z" fill={C.teal} />
+            <circle r={230} fill={C.negro} />
+            <path d="M-46 -226 A230 230 0 0 0 -226 -46" stroke={C.frio} strokeWidth={8} fill="none" strokeLinecap="round" />
+            <ellipse cx={-120} cy={-40} rx={24} ry={32} fill="#f3efe4" />
+            <circle cx={-128} cy={-36} r={11} fill="#141018" />
+          </g>
+          <g transform={`rotate(${ang} ${cx} ${cy})`}>
+            <Taza x={cx} y={cy - 60} s={1.9} lleno={0.84 - lerp(f, [20, 32], [0, 0.2])} />
+          </g>
+          <Brazo dx={1400} dy={1200} px={cx + 150} py={cy + 40} grosor={56} luz={C.frio} />
+        </Svg>
+      </Capa>
+      <Vineta o={0.7} />
+    </Plano>
+  );
+};
+
+export const PLANOS = [
+  { c: P1, d: 60 },
+  { c: P2, d: 105 },
+  { c: P3, d: 60 },
+  { c: P4, d: 105 },
+  { c: P5, d: 90 },
+  { c: P6, d: 90 },
+  { c: P7, d: 60 },
+];
+export const TAZA_FRAMES = PLANOS.reduce((a, p) => a + p.d, 0); // 570
+
+export const TazaNueve: React.FC<{ sonido?: boolean }> = ({ sonido = true }) => {
+  let t = 0;
+  return (
+    <AbsoluteFill style={{ background: "#000" }}>
+      {PLANOS.map(({ c: P, d }, i) => {
+        const from = t;
+        t += d;
+        return (
+          <Sequence key={i} from={from} durationInFrames={d}>
+            <P />
+          </Sequence>
+        );
+      })}
+      <Franjas />
+      {sonido && <Sonidos />}
+    </AbsoluteFill>
+  );
+};
