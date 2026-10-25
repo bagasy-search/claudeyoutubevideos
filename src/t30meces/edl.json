@@ -1,0 +1,2536 @@
+{
+"end": 780.76,
+"shots": [
+{
+"a": 0.0,
+"b": 3.22,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a01_viewing_room.png",
+"o": {
+"build": {
+"lines": [
+"Se pelearon la *casa.*"
+],
+"a": 60
+}
+}
+}
+},
+{
+"a": 3.22,
+"b": 5.12,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/funeral_02.jpg",
+"ar": 1.2229,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 5.12,
+"b": 8.14,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a03_hallway_backs.png",
+"o": {
+"scrib": {
+"cx": 960,
+"cy": 470,
+"rx": 330,
+"ry": 300,
+"text": "a 3 metros.",
+"tx": 300,
+"ty": 170,
+"a": 16
+}
+}
+}
+},
+{
+"a": 8.14,
+"b": 9.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a02_paper_cups.png"
+}
+},
+{
+"a": 9.34,
+"b": 11.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k13_cups.mp4"
+}
+},
+{
+"a": 11.68,
+"b": 13.92,
+"k": "ilus",
+"t": "kitchen",
+"p": {
+"mode": "viewing"
+}
+},
+{
+"a": 13.92,
+"b": 15.9,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [
+"Se vende y se reparte.",
+"",
+""
+],
+"ats": [
+35
+]
+}
+},
+{
+"a": 15.9,
+"b": 17.74,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/townhouse_01.jpg",
+"ar": 0.8125,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 17.74,
+"b": 19.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/street_01.jpg",
+"o": {
+"big": {
+"w": "÷3",
+"size": 230,
+"color": "#edb269",
+"x": 1350,
+"y": 120,
+"a": 3
+},
+"credit": "Wikimedia Commons · CC BY 2.5"
+}
+}
+},
+{
+"a": 19.54,
+"b": 21.38,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [
+"Se vende y se reparte.",
+"Yo me quedo con los muebles buenos.",
+""
+],
+"hl": 1,
+"ats": [
+-60,
+12
+]
+}
+},
+{
+"a": 21.38,
+"b": 23.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a04_furniture.png",
+"o": {
+"label": "los muebles buenos"
+}
+}
+},
+{
+"a": 23.24,
+"b": 27.56,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [
+"",
+"",
+"¿Quién es «la señora esa»?"
+],
+"hl": 2,
+"ats": [
+-60,
+-60,
+56
+]
+}
+},
+{
+"a": 27.56,
+"b": 28.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a05_kitchen_back.png"
+}
+},
+{
+"a": 28.82,
+"b": 31.58,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/kitchen_01.jpg",
+"o": {
+"aside": {
+"t": "«de la familia».",
+"x": 1150,
+"y": 320,
+"a": 21
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 31.58,
+"b": 33.56,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"big": {
+"w": "YO.",
+"size": 260,
+"y": 360,
+"a": 28
+}
+}
+}
+},
+{
+"a": 33.56,
+"b": 36.44,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "cross",
+"o": {
+"label": "Carmen · 58"
+}
+}
+},
+{
+"a": 36.44,
+"b": 39.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/mailbox_01.jpg",
+"o": {
+"big": {
+"w": "22 AÑOS.",
+"size": 150,
+"y": 170,
+"color": "#edb269",
+"a": 52
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 39.62,
+"b": 40.72,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/townhouse_02.jpg",
+"ar": 0.717,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 40.72,
+"b": 44.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k12_key.mp4",
+"o": {
+"build": {
+"lines": [
+"*todos* los días."
+],
+"a": 74
+}
+},
+"rate": 0.694
+}
+},
+{
+"a": 44.2,
+"b": 46.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a70_condolences.png"
+}
+},
+{
+"a": 46.6,
+"b": 50.04,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a39_folding_chairs.png"
+}
+},
+{
+"a": 50.04,
+"b": 52.46,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "dusk",
+"o": {
+"big": {
+"w": "NO ERA SUYA.",
+"size": 170,
+"y": 170,
+"a": 22
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 52.46,
+"b": 55.34,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a06_two_houses.png",
+"o": {
+"build": {
+"lines": [
+"Me la dejó a *mí.*"
+],
+"a": 29
+}
+}
+}
+},
+{
+"a": 55.34,
+"b": 57.36,
+"k": "g",
+"t": "will",
+"p": {},
+"big": true
+},
+{
+"a": 57.36,
+"b": 61.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a47_drawer_cloths.png",
+"o": {
+"scrib": {
+"cx": 1100,
+"cy": 640,
+"rx": 300,
+"ry": 150,
+"text": "sólo él y yo.",
+"tx": 420,
+"ty": 230,
+"a": 34
+}
+}
+}
+},
+{
+"a": 61.18,
+"b": 65.06,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 0
+},
+"sfx": "whoosh",
+"roster": 0,
+"big": true
+},
+{
+"a": 65.06,
+"b": 69.16,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"Yo no pedí *nada.*"
+],
+"y": 380,
+"a": 11
+}
+}
+}
+},
+{
+"a": 69.16,
+"b": 74.08,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "couple",
+"o": {
+"build": {
+"lines": [
+"hace *once* años"
+],
+"a": 41
+}
+}
+}
+},
+{
+"a": 74.08,
+"b": 78.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a10_two_rockers.png",
+"o": {
+"label": "Doña Elena"
+}
+}
+},
+{
+"a": 78.92,
+"b": 83.72,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "dark",
+"o": {
+"build": {
+"lines": [
+"la casa se *apagó.*"
+],
+"a": 40
+}
+}
+}
+},
+{
+"a": 83.72,
+"b": 86.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k04_porch_off.mp4"
+}
+},
+{
+"a": 86.08,
+"b": 88.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a09_dry_flowers.png"
+}
+},
+{
+"a": 88.08,
+"b": 94.98,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "empty",
+"o": {
+"build": {
+"lines": [
+"*todas* las tardes."
+],
+"size": 88,
+"a": 119
+}
+}
+}
+},
+{
+"a": 94.98,
+"b": 97.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a11_cemetery.png"
+}
+},
+{
+"a": 97.94,
+"b": 99.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/cemetery_01.jpg",
+"o": {
+"big": {
+"w": "2 DÍAS.",
+"a": 2,
+"size": 180,
+"color": "#edb269",
+"y": 150
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 99.12,
+"b": 109.64,
+"k": "ilus",
+"t": "kids",
+"p": {
+"mode": "phones",
+"lines": [
+"una vez al mes",
+"en Navidad",
+"una llamada en el cumpleaños"
+],
+"ats": [
+149,
+188,
+239
+]
+}
+},
+{
+"a": 109.64,
+"b": 113.82,
+"k": "ilus",
+"t": "route",
+"p": {},
+"big": true
+},
+{
+"a": 113.82,
+"b": 118.74,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a12_wall_phone.png",
+"o": {
+"build": {
+"lines": [
+"el teléfono que *no sonaba.*"
+],
+"a": 115
+}
+}
+}
+},
+{
+"a": 118.74,
+"b": 122.06,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"big": {
+"w": "40 MIN.",
+"a": 2,
+"size": 200,
+"y": 170,
+"color": "#edb269"
+},
+"build": {
+"lines": [
+"«Ni siquiera es *lejos.*»"
+],
+"y": 600,
+"size": 92,
+"a": 65
+}
+}
+}
+},
+{
+"a": 122.06,
+"b": 125.64,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a13_trash_curb.png"
+}
+},
+{
+"a": 125.64,
+"b": 126.86,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/curb_02.jpg",
+"ar": 0.6768,
+"o": {
+"aside": {
+"t": "nada más.",
+"x": 1200,
+"y": 330,
+"a": 8
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 126.86,
+"b": 132.34,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "tuesday"
+}
+},
+{
+"a": 132.34,
+"b": 134.16,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "notue",
+"at": 27
+}
+},
+{
+"a": 134.16,
+"b": 135.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a07_knock_door.png"
+}
+},
+{
+"a": 135.26,
+"b": 136.7,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/porch_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 136.7,
+"b": 141.84,
+"k": "ilus",
+"t": "fall",
+"p": {
+"o": {
+"build": {
+"lines": [
+"hasta la *madrugada.*"
+],
+"a": 113
+}
+}
+}
+},
+{
+"a": 141.84,
+"b": 146.0,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a67_bruise_cane.png"
+}
+},
+{
+"a": 146.0,
+"b": 148.04,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/phone_01.jpg",
+"ar": 1.2682,
+"o": {
+"build": {
+"lines": [
+"«No le diga a mis *hijos.*»"
+],
+"a": 2
+},
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 148.04,
+"b": 150.58,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"«No quiero *molestarlos.*»"
+],
+"a": 2,
+"y": 400,
+"size": 96
+}
+}
+}
+},
+{
+"a": 150.58,
+"b": 154.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/clock_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 154.82,
+"b": 159.02,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a14_bathroom_floor.png"
+}
+},
+{
+"a": 159.02,
+"b": 163.44,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a26_old_man_window.png",
+"o": {
+"build": {
+"lines": [
+"molestar a sus *hijos.*"
+],
+"a": 53
+}
+}
+}
+},
+{
+"a": 163.44,
+"b": 170.48,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "cross",
+"o": {
+"build": {
+"lines": [
+"*todas* las mañanas."
+],
+"a": 68
+}
+}
+}
+},
+{
+"a": 170.48,
+"b": 175.78,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/porch_03.jpg",
+"ar": 0.75,
+"o": {
+"aside": {
+"t": "«buenos días, vecina»",
+"x": 1050,
+"y": 330,
+"a": 54
+},
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 175.78,
+"b": 177.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a15_bread_door.png"
+}
+},
+{
+"a": 177.82,
+"b": 182.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k05_stove.mp4",
+"rate": 0.66
+}
+},
+{
+"a": 182.24,
+"b": 184.94,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a16_sunday_pot.png"
+}
+},
+{
+"a": 184.94,
+"b": 188.2,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a18_car_doctor.png"
+}
+},
+{
+"a": 188.2,
+"b": 190.46,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/mainst_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 190.46,
+"b": 194.5,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k06_pills.mp4",
+"rate": 0.689
+}
+},
+{
+"a": 194.5,
+"b": 196.561,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a17_pill_box.png"
+}
+},
+{
+"a": 196.561,
+"b": 197.901,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 1
+},
+"sfx": "whoosh",
+"roster": 1,
+"big": true
+},
+{
+"a": 197.901,
+"b": 199.481,
+"k": "ilus",
+"t": "years",
+"p": {},
+"big": true
+},
+{
+"a": 199.481,
+"b": 201.961,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"Nunca le cobré *nada.*"
+],
+"a": 2,
+"y": 380
+}
+}
+}
+},
+{
+"a": 201.961,
+"b": 207.241,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a19_kitchen_coffee.png"
+}
+},
+{
+"a": 207.241,
+"b": 214.841,
+"k": "ilus",
+"t": "kitchen",
+"p": {
+"mode": "stories",
+"bubbles": [
+"el ferrocarril",
+"el baile",
+"el cuarto de atrás"
+],
+"ats": [
+56,
+109,
+184
+],
+"o": {
+"build": {
+"lines": [
+"«Usted me paga con la *plática.*»"
+],
+"a": 5
+}
+}
+}
+},
+{
+"a": 214.841,
+"b": 217.761,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "el ferrocarril",
+"side": "c",
+"v": "img/t30meces/real/rryard_01.jpg",
+"ar": 1.5059,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 217.761,
+"b": 223.621,
+"k": "ilus",
+"t": "memory",
+"p": {
+"mode": "dance",
+"at": 46
+}
+},
+{
+"a": 223.621,
+"b": 229.041,
+"k": "ilus",
+"t": "memory",
+"p": {
+"mode": "build",
+"at": 119
+}
+},
+{
+"a": 229.041,
+"b": 233.161,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a45_kitchen_alone.png"
+}
+},
+{
+"a": 233.161,
+"b": 236.861,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "talk"
+}
+},
+{
+"a": 236.861,
+"b": 240.881,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/phone_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 240.881,
+"b": 245.301,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 2
+},
+"sfx": "whoosh",
+"roster": 2,
+"big": true
+},
+{
+"a": 245.301,
+"b": 255.361,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [
+"Estoy muy ocupado. Si es grave, al hospital.",
+"",
+""
+],
+"hl": 0,
+"ats": [
+112
+]
+}
+},
+{
+"a": 255.361,
+"b": 256.781,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a29_hospital_corridor.png"
+}
+},
+{
+"a": 256.781,
+"b": 261.701,
+"k": "ilus",
+"t": "hosp",
+"p": {
+"mode": "nights"
+}
+},
+{
+"a": 261.701,
+"b": 268.741,
+"k": "ilus",
+"t": "hosp",
+"p": {
+"mode": "kids"
+}
+},
+{
+"a": 268.741,
+"b": 273.201,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a28_hospital_chair.png",
+"o": {
+"build": {
+"lines": [
+"Más *callado.*"
+],
+"a": 94
+}
+}
+}
+},
+{
+"a": 273.201,
+"b": 276.941,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k01_rocker.mp4",
+"o": {
+"label": "la mecedora de Doña Elena"
+},
+"rate": 0.78
+}
+},
+{
+"a": 276.941,
+"b": 285.001,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "walter",
+"o": {
+"build": {
+"lines": [
+"«¿quién te quiere *de verdad?*»"
+],
+"a": 173
+}
+}
+}
+},
+{
+"a": 285.001,
+"b": 287.741,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a30_porch_evening.png"
+}
+},
+{
+"a": 287.741,
+"b": 292.841,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "talk",
+"o": {
+"build": {
+"lines": [
+"«uno ve quién se *queda.*»"
+],
+"a": 104
+}
+}
+}
+},
+{
+"a": 292.841,
+"b": 300.861,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a64_porch_sunset.png"
+}
+},
+{
+"a": 300.861,
+"b": 305.101,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a31_lawyer_door.png",
+"o": {
+"build": {
+"lines": [
+"había llamado a un *notario.*"
+],
+"a": 69
+}
+}
+}
+},
+{
+"a": 305.101,
+"b": 307.201,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 3
+},
+"sfx": "whoosh",
+"roster": 3,
+"big": true
+},
+{
+"a": 307.201,
+"b": 308.841,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/hands_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 308.841,
+"b": 312.441,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/ward_01.jpg",
+"ar": 1.2222,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 312.441,
+"b": 314.741,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a32_nail_clip.png"
+}
+},
+{
+"a": 314.741,
+"b": 318.021,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a33_newspaper.png"
+}
+},
+{
+"a": 318.021,
+"b": 323.941,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a34_phone_pillow.png"
+}
+},
+{
+"a": 323.941,
+"b": 327.721,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"«aunque sean las *3 de la mañana.*»"
+],
+"y": 400,
+"size": 96,
+"a": 54
+}
+}
+}
+},
+{
+"a": 327.721,
+"b": 330.861,
+"k": "ilus",
+"t": "tracks",
+"p": {}
+},
+{
+"a": 330.861,
+"b": 333.701,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k11_slippers.mp4",
+"o": {
+"aside": {
+"t": "en pantuflas.",
+"x": 1100,
+"y": 330,
+"a": 10
+}
+},
+"rate": 0.722
+}
+},
+{
+"a": 333.701,
+"b": 336.121,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 4
+},
+"sfx": "whoosh",
+"roster": 4,
+"big": true
+},
+{
+"a": 336.121,
+"b": 338.001,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/townhouse_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 338.001,
+"b": 340.961,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a36_key_door.png"
+}
+},
+{
+"a": 340.961,
+"b": 347.981,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k21_curtains.mp4",
+"rate": 0.415
+}
+},
+{
+"a": 347.981,
+"b": 354.081,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "grey",
+"o": {
+"build": {
+"lines": [
+"sin *molestar* a nadie."
+],
+"size": 88,
+"a": 103
+}
+}
+}
+},
+{
+"a": 354.081,
+"b": 357.961,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "cars"
+}
+},
+{
+"a": 357.961,
+"b": 362.321,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a38_three_cars.png"
+}
+},
+{
+"a": 362.321,
+"b": 366.801,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/funeral_04.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 366.801,
+"b": 372.681,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 5
+},
+"sfx": "whoosh",
+"roster": 5,
+"big": true
+},
+{
+"a": 372.681,
+"b": 375.081,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a40_coffee_urn.png"
+}
+},
+{
+"a": 375.081,
+"b": 376.481,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/chairs_02.png",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 376.481,
+"b": 378.981,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/cemetery_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 378.981,
+"b": 387.961,
+"k": "ilus",
+"t": "kitchen",
+"p": {
+"mode": "viewing",
+"o": {
+"aside": {
+"t": "y no tan baja.",
+"x": 1000,
+"y": 760,
+"a": 221
+}
+}
+}
+},
+{
+"a": 387.961,
+"b": 393.521,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [
+"Hay que vender rápido.",
+"",
+""
+],
+"hl": 0,
+"ats": [
+136
+]
+}
+},
+{
+"a": 393.521,
+"b": 395.341,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a41_sale_sign.png"
+}
+},
+{
+"a": 395.341,
+"b": 399.701,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [
+"Hay que vender rápido.",
+"Primero hay que tasarla.",
+""
+],
+"hl": 1,
+"ats": [
+-60,
+39
+]
+}
+},
+{
+"a": 399.701,
+"b": 404.381,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [
+"",
+"",
+"Yo quiero la mecedora de mamá."
+],
+"hl": 2,
+"ats": [
+-60,
+-60,
+37
+]
+}
+},
+{
+"a": 404.381,
+"b": 409.401,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/rocker_02.jpg",
+"ar": 0.6667,
+"o": {
+"build": {
+"lines": [
+"«No vale *nada.*»"
+],
+"a": 58
+},
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 409.401,
+"b": 411.221,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "¿NO VALE NADA?",
+"a": 2,
+"size": 170,
+"y": 380
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 411.221,
+"b": 415.001,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "couple",
+"o": {
+"big": {
+"w": "40 AÑOS.",
+"size": 170,
+"y": 160,
+"color": "#edb269",
+"a": 70
+}
+}
+}
+},
+{
+"a": 415.001,
+"b": 417.621,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a42_wash_cups.png"
+}
+},
+{
+"a": 417.621,
+"b": 430.761,
+"k": "ilus",
+"t": "kitchen",
+"p": {
+"mode": "daughter",
+"at": -60,
+"o": {
+"build": {
+"lines": [
+"«Muchas gracias por *todo.*»"
+],
+"size": 84,
+"a": 314
+}
+}
+}
+},
+{
+"a": 430.761,
+"b": 436.241,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"«Ya no hace falta que *venga.*»"
+],
+"a": 2,
+"y": 380,
+"size": 92
+}
+}
+}
+},
+{
+"a": 436.241,
+"b": 438.861,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a43_key_ring.png",
+"o": {
+"build": {
+"lines": [
+"«¿Me puede dejar la *llave?*»"
+],
+"a": 2
+}
+}
+}
+},
+{
+"a": 438.861,
+"b": 444.041,
+"k": "ilus",
+"t": "kitchen",
+"p": {
+"mode": "daughter",
+"at": 100
+}
+},
+{
+"a": 444.041,
+"b": 448.561,
+"k": "g",
+"t": "key",
+"p": {
+"at": 95,
+"o": {
+"build": {
+"lines": [
+"todos los días durante *seis años.*"
+],
+"a": 22
+}
+}
+}
+},
+{
+"a": 448.561,
+"b": 451.001,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a44_key_palm.png"
+}
+},
+{
+"a": 451.001,
+"b": 457.462,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a08_porch_dark.png",
+"o": {
+"build": {
+"lines": [
+"mi mejor *amigo.*"
+],
+"a": 143
+}
+}
+}
+},
+{
+"a": 457.462,
+"b": 459.201,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k22_rain_window.mp4"
+}
+},
+{
+"a": 459.201,
+"b": 463.321,
+"k": "ilus",
+"t": "kitchen",
+"p": {
+"mode": "cry",
+"at": 68
+}
+},
+{
+"a": 463.321,
+"b": 469.681,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a46_manila_dresser.png"
+}
+},
+{
+"a": 469.681,
+"b": 479.581,
+"k": "ilus",
+"t": "env",
+"p": {
+"mode": "front",
+"at": 192
+}
+},
+{
+"a": 479.581,
+"b": 488.101,
+"k": "ilus",
+"t": "env",
+"p": {
+"mode": "back",
+"at": 98
+}
+},
+{
+"a": 488.101,
+"b": 493.101,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k14_envelope.mp4",
+"rate": 0.57
+}
+},
+{
+"a": 493.101,
+"b": 499.541,
+"k": "ilus",
+"t": "env",
+"p": {
+"mode": "drawer",
+"at": -60
+}
+},
+{
+"a": 499.541,
+"b": 503.181,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 6
+},
+"sfx": "whoosh",
+"roster": 6,
+"big": true
+},
+{
+"a": 503.181,
+"b": 507.221,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a48_downtown.png",
+"o": {
+"label": "El centro"
+}
+}
+},
+{
+"a": 507.221,
+"b": 510.281,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a49_law_desk.png",
+"o": {
+"label": "Lic. Ramírez"
+}
+}
+},
+{
+"a": 510.281,
+"b": 512.361,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k15_letter.mp4"
+}
+},
+{
+"a": 512.361,
+"b": 516.741,
+"k": "ilus",
+"t": "env",
+"p": {
+"mode": "open",
+"at": 0
+}
+},
+{
+"a": 516.741,
+"b": 525.481,
+"k": "g",
+"t": "will",
+"p": {
+"hl": [
+-60,
+77
+]
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 525.481,
+"b": 531.522,
+"k": "g",
+"t": "will",
+"p": {
+"hl": [
+-60,
+-60,
+0
+]
+},
+"big": true
+},
+{
+"a": 531.522,
+"b": 536.962,
+"k": "g",
+"t": "will",
+"p": {
+"hl": [
+-60,
+-60,
+-60,
+73
+]
+},
+"big": true
+},
+{
+"a": 536.962,
+"b": 539.441,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a50_open_envelope.png"
+}
+},
+{
+"a": 539.441,
+"b": 542.402,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/will_01.jpg",
+"ar": 0.5795,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 542.402,
+"b": 546.842,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/lawbooks_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 546.842,
+"b": 550.522,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/lawbooks_02.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 550.522,
+"b": 560.061,
+"k": "ilus",
+"t": "letter",
+"p": {
+"head": "Carmen:",
+"lines": [
+"mis hijos van a decir que usted me convenció.",
+"Que se aprovechó de un viejo.",
+"Usted y yo sabemos que no es cierto.",
+"Usted nunca me pidió nada."
+],
+"per": 72,
+"at": 4
+},
+"big": true
+},
+{
+"a": 560.061,
+"b": 568.522,
+"k": "ilus",
+"t": "letter",
+"p": {
+"lines": [
+"Por eso le dejo esto. No como pago,",
+"porque lo que usted hizo no se paga.",
+"Se lo dejo porque esta casa tiene que",
+"quedar con alguien que la quiera."
+],
+"hl": [
+3
+],
+"per": 70,
+"at": 2
+},
+"big": true
+},
+{
+"a": 568.522,
+"b": 573.162,
+"k": "ilus",
+"t": "letter",
+"p": {
+"lines": [
+"Y la única persona que la quiso",
+"estos años, además de mí,",
+"fue usted."
+],
+"hl": [
+2
+],
+"per": 46,
+"at": 2
+},
+"big": true
+},
+{
+"a": 573.162,
+"b": 576.262,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/rocker_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 576.262,
+"b": 581.162,
+"k": "g",
+"t": "willmap",
+"p": {
+"at": [
+-60,
+-60,
+20
+],
+"o": {
+"build": {
+"lines": [
+"«el único que la *recordó.*»"
+],
+"size": 80,
+"y": 60,
+"a": 92
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 581.162,
+"b": 583.702,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a51_four_chairs.png"
+}
+},
+{
+"a": 583.702,
+"b": 590.062,
+"k": "ilus",
+"t": "office",
+"p": {
+"mode": "four",
+"o": {
+"aside": {
+"t": "tan incómodo.",
+"x": 1200,
+"y": 520,
+"a": 143
+}
+}
+},
+"big": true
+},
+{
+"a": 590.062,
+"b": 597.622,
+"k": "ilus",
+"t": "kids",
+"p": {
+"mode": "office",
+"lines": [
+"No puede ser. No estaba bien de la cabeza. Vamos a impugnar.",
+"",
+""
+],
+"hl": 0,
+"ats": [
+65
+]
+}
+},
+{
+"a": 597.622,
+"b": 607.482,
+"k": "ilus",
+"t": "office",
+"p": {
+"mode": "mind",
+"at": 227
+},
+"big": true
+},
+{
+"a": 607.482,
+"b": 609.382,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/courthouse_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 609.382,
+"b": 616.062,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Vino *dos veces.*"
+],
+"a": 2,
+"y": 380,
+"size": 110
+},
+"aside": {
+"t": "semanas de diferencia.",
+"x": 1100,
+"y": 640,
+"a": 90
+}
+}
+}
+},
+{
+"a": 616.062,
+"b": 619.742,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a52_four_letters.png"
+}
+},
+{
+"a": 619.742,
+"b": 624.002,
+"k": "ilus",
+"t": "office",
+"p": {
+"mode": "letters",
+"at": -60
+},
+"big": true
+},
+{
+"a": 624.002,
+"b": 629.942,
+"k": "ilus",
+"t": "kids",
+"p": {
+"mode": "letters",
+"lines": [],
+"hl": 0
+}
+},
+{
+"a": 629.942,
+"b": 633.382,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a53_jacket_pocket.png"
+}
+},
+{
+"a": 633.382,
+"b": 635.822,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "dark",
+"o": {
+"build": {
+"lines": [
+"Nunca más dijo *«impugnar».*"
+],
+"y": 400,
+"size": 100,
+"a": 0
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 635.822,
+"b": 642.842,
+"k": "ilus",
+"t": "kids",
+"p": {
+"mode": "office",
+"lines": [
+"",
+"…",
+""
+],
+"hl": 1,
+"ats": [
+-60,
+171
+]
+}
+},
+{
+"a": 642.842,
+"b": 647.482,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k16_handshake.mp4",
+"o": {
+"label": "Andrés"
+},
+"rate": 0.578
+}
+},
+{
+"a": 647.482,
+"b": 653.202,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a54_handshake.png"
+}
+},
+{
+"a": 653.202,
+"b": 659.562,
+"k": "ilus",
+"t": "kids",
+"p": {
+"mode": "office",
+"lines": [
+"",
+"",
+"Yo no sabía que mi papá estaba tan solo."
+],
+"hl": 2,
+"ats": [
+-60,
+-60,
+0
+]
+}
+},
+{
+"a": 659.562,
+"b": 662.542,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/phone_04.jpg",
+"ar": 1.0,
+"o": {
+"build": {
+"lines": [
+"«Yo también pude *llamar.*»"
+],
+"size": 86,
+"a": 54
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0 fr"
+}
+}
+},
+{
+"a": 662.542,
+"b": 667.542,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/rocker_05.jpg",
+"ar": 0.6667,
+"o": {
+"credit": "Wikimedia Commons · Public domain"
+}
+}
+},
+{
+"a": 667.542,
+"b": 672.402,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "andy"
+}
+},
+{
+"a": 672.402,
+"b": 680.022,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/lawoffice_02.jpg",
+"ar": 0.603,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 680.022,
+"b": 683.402,
+"k": "g",
+"t": "tl",
+"p": {
+"idx": 7
+},
+"sfx": "whoosh",
+"roster": 7,
+"big": true
+},
+{
+"a": 683.402,
+"b": 687.042,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a60_boxes.png"
+}
+},
+{
+"a": 687.042,
+"b": 691.622,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k17_porch_on.mp4",
+"rate": 0.586
+}
+},
+{
+"a": 691.622,
+"b": 693.702,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k18_watering.mp4"
+}
+},
+{
+"a": 693.702,
+"b": 698.722,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a20_back_room.png"
+}
+},
+{
+"a": 698.722,
+"b": 701.262,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a57_empty_spot.png"
+}
+},
+{
+"a": 701.262,
+"b": 703.282,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "pickup",
+"at": -60
+}
+},
+{
+"a": 703.282,
+"b": 704.742,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a58_chair_truck.png"
+}
+},
+{
+"a": 704.742,
+"b": 709.302,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a59_sunday_table.png",
+"o": {
+"build": {
+"lines": [
+"un domingo al *mes.*"
+],
+"a": 32
+}
+}
+}
+},
+{
+"a": 709.302,
+"b": 713.662,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "today",
+"o": {
+"build": {
+"lines": [
+"de seguir visitando a su *papá.*"
+],
+"a": 59
+}
+}
+}
+},
+{
+"a": 713.662,
+"b": 720.022,
+"k": "ilus",
+"t": "kids",
+"p": {
+"lines": [],
+"hl": 2,
+"o": {
+"build": {
+"lines": [
+"Cada uno vive con lo que *hizo.*"
+],
+"size": 86,
+"a": 139
+}
+}
+}
+},
+{
+"a": 720.022,
+"b": 723.522,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a55_porch_light_on.png",
+"o": {
+"aside": {
+"t": "no es la lotería.",
+"x": 1150,
+"y": 330,
+"a": 71
+}
+}
+}
+},
+{
+"a": 723.522,
+"b": 728.462,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k19_road.mp4",
+"o": {
+"build": {
+"lines": [
+"todavía está a *tiempo.*"
+],
+"a": 108
+}
+},
+"rate": 0.577
+}
+},
+{
+"a": 728.462,
+"b": 733.502,
+"k": "g",
+"t": "list",
+"p": {
+"items": [
+[
+"40 minutos en coche",
+"no es lejos."
+],
+[
+"1 llamada a la semana",
+"no es mucho."
+]
+],
+"at": [
+0,
+82
+]
+}
+},
+{
+"a": 733.502,
+"b": 738.322,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30meces/t30meces_k20_sunset.mp4",
+"rate": 0.605
+}
+},
+{
+"a": 738.322,
+"b": 740.882,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "couple"
+}
+},
+{
+"a": 740.882,
+"b": 749.862,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "¿Don Julián hizo bien en dejarle la casa a la vecina?",
+"bell": false
+}
+},
+{
+"a": 749.862,
+"b": 752.882,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30meces/real/porch_04.jpg",
+"r": "img/t30meces/real/street_02.jpg",
+"wl": "¿LA VECINA?",
+"wr": "¿LA FAMILIA?",
+"a": 0,
+"o": {
+"credit": "Wikimedia Commons · public domain / CC"
+}
+}
+},
+{
+"a": 752.882,
+"b": 755.902,
+"k": "real",
+"t": "arch",
+"p": {
+"v": "img/t30meces/real/coffee_01.jpg",
+"ar": 0.6674,
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 755.902,
+"b": 762.422,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/real/lawbooks_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 762.422,
+"b": 769.482,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a63_basement.png",
+"o": {
+"build": {
+"lines": [
+"escondido en el *sótano.*"
+],
+"a": 191
+}
+}
+}
+},
+{
+"a": 769.482,
+"b": 773.042,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbase y toque la campanita."
+}
+},
+{
+"a": 773.042,
+"b": 777.242,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30meces/ag/t30meces_a62_hand_phone.png",
+"o": {
+"build": {
+"lines": [
+"llame a sus *padres.*"
+],
+"a": 34
+}
+}
+}
+},
+{
+"a": 777.242,
+"b": 780.76,
+"k": "ilus",
+"t": "porch",
+"p": {
+"mode": "sunset",
+"o": {
+"build": {
+"lines": [
+"Nunca lo *piden.*"
+],
+"a": 47
+}
+}
+}
+}
+]
+}
