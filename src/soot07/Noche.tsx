@@ -8,6 +8,7 @@ import { B, M, DUR, Beat } from "./guion07";
 import { FPS, X, V, cam, temaEn, oscuridad, fuego, CALLE, edifEn, X_CASA } from "./motor07";
 import { CieloNoche, Horizonte, Siluetas, Suelo, Fachada, Frente, Oscuridad, Capa, SvgMundo, paleta, pantalla, altoEdif, Luz } from "./mundo";
 import { Carro, Carga, Caidas, Caida, tCaida, Asomado, Inundacion, Chorro, Derrumbe, Escalera, subidaPos, Puntales, Ratones, Lampara, Gente, Peligros, MuroSombras, ventana, cl, en, lerp } from "./piezas";
+import { Portada } from "./Portada";
 import { MapaCielo, RelojNoche, Balanza, ReglaAltura, Estrellitas } from "./mapas";
 
 export const NOCHE_DUR = DUR;
@@ -458,6 +459,7 @@ export const Noche: React.FC = () => {
           <Hud t={t} />
         </AbsoluteFill>
       </CamaraMano>
+      <Portada t={t} />
     </AbsoluteFill>
   );
 };
