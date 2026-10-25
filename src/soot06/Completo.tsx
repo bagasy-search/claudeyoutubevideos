@@ -12,6 +12,7 @@ import * as P5 from "./T5";
 import * as P6 from "./T6";
 import * as P7 from "./T7";
 import * as PF from "./Final";
+import { Cuadro0, C0_FIN } from "./Cuadro0";
 
 // soot06 completo: UN mundo (el castillo en corte) y UNA cámara que viaja toda la noche sin cortar.
 // Cada parte aporta sus llaves de cámara, sus actores dentro del mundo y su capa de pantalla (chips, insertos).
@@ -35,11 +36,12 @@ export const Completo: React.FC = () => {
   const c = camEn(t, CAM);
   return (
     <AbsoluteFill style={{ backgroundColor: "#0e0a2a" }}>
-      <CamaraMano intensidad={0.7}>
+      <CamaraMano intensidad={interpolate(t, [0, C0_FIN], [0, 0.7], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}>
         <Camara c={c}>
           <Mundo t={t} c={c} hora={horaEn(t)} fuego={fuegoEn(t)} incendio={incendioEn(t)} asco={ascoEn(t)} nieve={nieveEn(t)} postigos={postigosEn(t)} />
           {PARTES.map((p, i) => (t >= p.T0 - 1.5 && t < p.T1 + 1.5 ? <p.Mundo key={i} t={t} c={c} /> : null))}
         </Camara>
+        {t < C0_FIN && <Cuadro0 t={t} />}
         {PARTES.map((p, i) => (t >= p.T0 - 1.5 && t < p.T1 + 1.5 ? <p.Capa key={i} t={t} c={c} /> : null))}
       </CamaraMano>
     </AbsoluteFill>
