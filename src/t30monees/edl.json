@@ -1,0 +1,2356 @@
+{
+"end": 675.72,
+"shots": [
+{
+"a": 0.0,
+"b": 1.86,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/cand/ishtarlion_03.jpg",
+"o": {
+"build": {
+"lines": [
+"hace casi *4.000* años"
+],
+"a": 19
+},
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 1.86,
+"b": 4.28,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_g01_city_dawn.png",
+"o": {
+"label": "Babilonia"
+}
+}
+},
+{
+"a": 4.28,
+"b": 6.04,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "hook"
+}
+},
+{
+"a": 6.04,
+"b": 8.96,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k01_caravan_move.mp4",
+"rate": 0.919
+}
+},
+{
+"a": 8.96,
+"b": 10.48,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_g04_chariot_shop.png"
+}
+},
+{
+"a": 10.48,
+"b": 12.78,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Ur, c. 2500 a. C.",
+"side": "c",
+"v": "img/t30monees/cand/lyreur_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 12.78,
+"b": 15.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k11_palms_wind.mp4",
+"o": {
+"label": "del alba al ocaso"
+}
+}
+},
+{
+"a": 15.1,
+"b": 17.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_g08_sunset_road.png"
+}
+},
+{
+"a": 17.1,
+"b": 18.6,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/chariot_02.jpg",
+"ar": 1.5534,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 18.6,
+"b": 21.68,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "empty",
+"o": {
+"big": {
+"w": "VACÍA.",
+"size": 220,
+"y": 400,
+"a": 57
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 21.68,
+"b": 23.88,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "ask"
+}
+},
+{
+"a": 23.88,
+"b": 26.46,
+"k": "g",
+"t": "word",
+"p": {
+"o": {
+"build": {
+"lines": [
+"quizá *usted* también…"
+],
+"y": 420,
+"size": 96,
+"a": 0
+}
+}
+}
+},
+{
+"a": 26.46,
+"b": 28.88,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_g07_tired_hands.png",
+"o": {
+"label": "«si trabajo tanto…»"
+}
+}
+},
+{
+"a": 28.88,
+"b": 30.38,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"big": {
+"w": "¿NADA?",
+"a": 3,
+"size": 230,
+"y": 380
+}
+}
+}
+},
+{
+"a": 30.38,
+"b": 32.82,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_b01_booklet.png"
+}
+},
+{
+"a": 32.82,
+"b": 34.6,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_b02_bank1920.png",
+"o": {
+"label": "hace cien años"
+}
+}
+},
+{
+"a": 34.6,
+"b": 36.26,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Babel, Bruegel 1563",
+"side": "c",
+"v": "img/t30monees/cand/babel_01.jpg",
+"ar": 1.3665,
+"o": {
+"credit": "Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 36.26,
+"b": 38.2,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/ishtar_01.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 38.2,
+"b": 42.54,
+"k": "ilus",
+"t": "book",
+"p": {
+"mode": "book"
+}
+},
+{
+"a": 42.54,
+"b": 46.24,
+"k": "ilus",
+"t": "book",
+"p": {
+"mode": "pamph",
+"o": {
+"build": {
+"lines": [
+"lo regalaban los *bancos.*"
+],
+"a": 52
+}
+}
+}
+},
+{
+"a": 46.24,
+"b": 48.68,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_b03_pamphlets.png"
+}
+},
+{
+"a": 48.68,
+"b": 51.76,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "tablilla escolar",
+"side": "c",
+"v": "img/t30monees/cand/cuneiform_06.jpg",
+"ar": 0.9209,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 51.76,
+"b": 53.62,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/cuneiform_05.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 53.62,
+"b": 54.36,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"ni un *poquito.*"
+],
+"y": 420,
+"size": 110,
+"a": 0
+}
+}
+}
+},
+{
+"a": 54.36,
+"b": 57.26,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/ziggurat_01.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY 3.0"
+}
+}
+},
+{
+"a": 57.26,
+"b": 62.46,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"intro": true
+},
+"big": true
+},
+{
+"a": 62.46,
+"b": 66.0,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Código de Hammurabi",
+"side": "c",
+"v": "img/t30monees/cand/hammurabi_02.jpg",
+"ar": 1.4988,
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 66.0,
+"b": 68.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k03_stylus_write.mp4"
+}
+},
+{
+"a": 68.26,
+"b": 74.08,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/glass_02.jpg",
+"ar": 0.9543,
+"o": {
+"build": {
+"lines": [
+"el *error*"
+],
+"size": 100,
+"a": 35
+},
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 74.08,
+"b": 76.7,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/coins_02.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY 2.0"
+}
+}
+},
+{
+"a": 76.7,
+"b": 79.12,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_t05_coin_pile.png",
+"o": {
+"build": {
+"lines": [
+"el primer *dinero*"
+],
+"size": 90,
+"a": 13
+}
+}
+}
+},
+{
+"a": 79.12,
+"b": 80.98,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Babilonia, 1932",
+"side": "c",
+"v": "img/t30monees/cand/babold_01.jpg",
+"ar": 1.3773,
+"o": {
+"credit": "Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 80.98,
+"b": 86.52,
+"k": "ilus",
+"t": "wall",
+"p": {
+"names": true,
+"mode": "hook"
+}
+},
+{
+"a": 86.52,
+"b": 88.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_g02_caravan.png"
+}
+},
+{
+"a": 88.54,
+"b": 93.96,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "kids"
+}
+},
+{
+"a": 93.96,
+"b": 94.76,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_p01_street_kids.png"
+}
+},
+{
+"a": 94.76,
+"b": 96.56,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "ejercicio de escuela",
+"side": "c",
+"v": "img/t30monees/cand/cuneiform_08.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 96.56,
+"b": 99.74,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/standard_03.jpg",
+"ar": 1.5881,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 99.74,
+"b": 105.1,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "rich",
+"o": {
+"build": {
+"lines": [
+"el hombre más *rico*"
+],
+"size": 90,
+"a": 105
+}
+}
+},
+"big": true
+},
+{
+"a": 105.1,
+"b": 107.62,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_g03_two_wall.png"
+}
+},
+{
+"a": 107.62,
+"b": 111.82,
+"k": "g",
+"t": "word",
+"p": {
+"o": {
+"build": {
+"lines": [
+"¿qué sabe *él*",
+"que nosotros no?"
+],
+"y": 380,
+"size": 100,
+"a": 67
+}
+}
+}
+},
+{
+"a": 111.82,
+"b": 116.08,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/cand/babruins_05.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 116.08,
+"b": 117.82,
+"k": "ilus",
+"t": "street",
+"p": {
+"mode": "door",
+"o": {
+"build": {
+"lines": [
+"fueron a *preguntarle.*"
+],
+"a": 0
+}
+}
+}
+},
+{
+"a": 117.82,
+"b": 119.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_p03_rich_house.png",
+"o": {
+"label": "la casa de Arkad"
+}
+}
+},
+{
+"a": 119.54,
+"b": 121.24,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k09_fountain.mp4"
+}
+},
+{
+"a": 121.24,
+"b": 124.44,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "night"
+}
+},
+{
+"a": 124.44,
+"b": 126.54,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "tablilla, The Met",
+"side": "c",
+"v": "img/t30monees/cand/cuneiform_01.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 126.54,
+"b": 127.72,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a01_tablets.png",
+"o": {
+"aside": {
+"t": "(muy poco)",
+"x": 1200,
+"y": 300
+}
+}
+}
+},
+{
+"a": 127.72,
+"b": 130.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a05_lender_table.png",
+"o": {
+"label": "Algamish"
+}
+}
+},
+{
+"a": 130.54,
+"b": 131.54,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a06_old_hands_silver.png"
+}
+},
+{
+"a": 131.54,
+"b": 134.22,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/envelope_02.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 134.22,
+"b": 140.52,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "night",
+"o": {
+"build": {
+"lines": [
+"el *secreto* de su fortuna"
+],
+"size": 84,
+"a": 128
+}
+}
+}
+},
+{
+"a": 140.52,
+"b": 141.92,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a04_dawn_window.png"
+}
+},
+{
+"a": 141.92,
+"b": 146.06,
+"k": "ilus",
+"t": "scribe",
+"p": {
+"mode": "give"
+}
+},
+{
+"a": 146.06,
+"b": 152.82,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"una parte de todo lo que gano",
+"es *MÍA.*"
+],
+"y": 330,
+"size": 86,
+"a": 131
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 152.82,
+"b": 156.1,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a02_stylus_clay.png",
+"o": {
+"aside": {
+"t": "¿una broma?",
+"x": 1180,
+"y": 330,
+"a": 46
+}
+}
+}
+},
+{
+"a": 156.1,
+"b": 158.5,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/cylseal_02.jpg",
+"ar": 1.3043,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 158.5,
+"b": 160.3,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/coins_01.jpg",
+"ar": 1.5035,
+"o": {
+"build": {
+"lines": [
+"¡todo es *mío!*"
+],
+"a": 0
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 160.3,
+"b": 164.32,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k12_oven_fire.mp4",
+"o": {
+"label": "panadero"
+},
+"rate": 0.576
+}
+},
+{
+"a": 164.32,
+"b": 165.26,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a08_tailor.png",
+"o": {
+"label": "sastre"
+}
+}
+},
+{
+"a": 165.26,
+"b": 167.18,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a09_sandals.png",
+"o": {
+"label": "sandalias"
+}
+}
+},
+{
+"a": 167.18,
+"b": 170.381,
+"k": "ilus",
+"t": "payall",
+"p": {
+"o": {
+"build": {
+"lines": [
+"menos a ti *mismo.*"
+],
+"a": 38
+}
+}
+}
+},
+{
+"a": 170.381,
+"b": 173.401,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_g06_empty_purse.png",
+"o": {
+"build": {
+"lines": [
+"para ti no queda *nada.*"
+],
+"a": 56
+}
+}
+}
+},
+{
+"a": 173.401,
+"b": 178.321,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/hammurabi_04.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 178.321,
+"b": 181.521,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"active": 0
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 181.521,
+"b": 184.581,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r01_ten_coins.png"
+}
+},
+{
+"a": 184.581,
+"b": 186.961,
+"k": "ilus",
+"t": "ten",
+"p": {
+"o": {
+"build": {
+"lines": [
+"una de cada *diez.*"
+],
+"a": 0
+}
+}
+},
+"big": true
+},
+{
+"a": 186.961,
+"b": 189.981,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k02_coin_purse.mp4",
+"rate": 0.767
+}
+},
+{
+"a": 189.981,
+"b": 193.961,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/lydian_01.jpg",
+"ar": 1.094,
+"o": {
+"aside": {
+"t": "¿sólo una?",
+"x": 1250,
+"y": 260
+},
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 193.961,
+"b": 201.801,
+"k": "ilus",
+"t": "ten",
+"p": {
+"fill0": 0.35
+}
+},
+{
+"a": 201.801,
+"b": 203.901,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k13_coins_fall.mp4"
+}
+},
+{
+"a": 203.901,
+"b": 208.301,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_p05_feast_table.png"
+}
+},
+{
+"a": 208.301,
+"b": 210.761,
+"k": "g",
+"t": "split",
+"p": {
+"l": "img/t30monees/ag/t30monees_t02_palm_grove.png",
+"r": "img/t30monees/cand/coins_04.jpg",
+"wl": "CON 9.",
+"wr": "CON 10.",
+"a": 53
+}
+},
+{
+"a": 210.761,
+"b": 215.281,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r03_full_purse.png",
+"o": {
+"build": {
+"lines": [
+"empieza a *pesar.*"
+],
+"a": 104
+}
+}
+}
+},
+{
+"a": 215.281,
+"b": 220.421,
+"k": "g",
+"t": "word",
+"p": {
+"o": {
+"stamp": {
+"lines": [
+"NO SE GUARDA",
+"LO QUE",
+"SOBRA."
+],
+"hot": 2,
+"a": 54
+}
+}
+}
+},
+{
+"a": 220.421,
+"b": 221.361,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"big": {
+"w": "PRIMERO.",
+"a": 4,
+"size": 220,
+"y": 380
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 221.361,
+"b": 225.121,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k10_grain_pour.mp4",
+"rate": 0.785
+}
+},
+{
+"a": 225.121,
+"b": 228.401,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"active": 1
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 228.401,
+"b": 232.861,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r04_market.png"
+}
+},
+{
+"a": 232.861,
+"b": 235.261,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/assyrrelief_01.jpg",
+"ar": 1.5118,
+"o": {
+"aside": {
+"t": "¡imposible!",
+"x": 1240,
+"y": 300
+},
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 235.261,
+"b": 238.241,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_z07_empty_jar.png",
+"o": {
+"build": {
+"lines": [
+"ni *una* moneda"
+],
+"a": 35
+}
+}
+}
+},
+{
+"a": 238.241,
+"b": 240.861,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r06_basic.png"
+}
+},
+{
+"a": 240.861,
+"b": 245.661,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Babilonia, c. 1932",
+"side": "c",
+"v": "img/t30monees/cand/babold_02.jpg",
+"ar": 0.8108,
+"o": {
+"credit": "Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 245.661,
+"b": 255.781,
+"k": "g",
+"t": "creep",
+"p": {},
+"big": true
+},
+{
+"a": 255.781,
+"b": 258.801,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r08_scale.png"
+}
+},
+{
+"a": 258.801,
+"b": 264.581,
+"k": "ilus",
+"t": "wants",
+"p": {
+"o": {
+"build": {
+"lines": [
+"lo que se nos *antoja.*"
+],
+"a": 133
+}
+}
+}
+},
+{
+"a": 264.581,
+"b": 268.181,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r07_tablet_list.png"
+}
+},
+{
+"a": 268.181,
+"b": 270.141,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/cuneiform_03.jpg",
+"ar": 1.3333,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 270.141,
+"b": 276.141,
+"k": "ilus",
+"t": "list",
+"p": {}
+},
+{
+"a": 276.141,
+"b": 279.521,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r05_luxury.png",
+"o": {
+"build": {
+"lines": [
+"siempre hay *uno más.*"
+],
+"a": 56
+}
+}
+}
+},
+{
+"a": 279.521,
+"b": 284.221,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/coins_03.jpg",
+"ar": 0.9006,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 2.0"
+}
+}
+},
+{
+"a": 284.221,
+"b": 285.841,
+"k": "g",
+"t": "word",
+"p": {
+"o": {
+"build": {
+"lines": [
+"nunca con la *DÉCIMA.*"
+],
+"y": 420,
+"size": 100,
+"a": 0
+}
+}
+}
+},
+{
+"a": 285.841,
+"b": 289.261,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"active": 2
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 289.261,
+"b": 292.841,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_t04_grain_store.png"
+}
+},
+{
+"a": 292.841,
+"b": 294.701,
+"k": "g",
+"t": "word",
+"p": {
+"o": {
+"build": {
+"lines": [
+"guardar está *bien.*"
+],
+"a": 0
+}
+}
+}
+},
+{
+"a": 294.701,
+"b": 299.761,
+"k": "ilus",
+"t": "still",
+"p": {
+"o": {
+"build": {
+"lines": [
+"se queda *quieto.*"
+],
+"a": 111
+}
+}
+}
+},
+{
+"a": 299.761,
+"b": 304.601,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/chariot_01.jpg",
+"ar": 1.5059,
+"o": {
+"build": {
+"lines": [
+"un *ejército*"
+],
+"size": 100,
+"a": 77
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 304.601,
+"b": 313.921,
+"k": "ilus",
+"t": "army",
+"p": {}
+},
+{
+"a": 313.921,
+"b": 316.861,
+"k": "ilus",
+"t": "tree",
+"p": {
+"gens": 5,
+"o": {
+"build": {
+"lines": [
+"los *hijos* de los hijos"
+],
+"size": 90,
+"a": 54
+}
+}
+},
+"big": true
+},
+{
+"a": 316.861,
+"b": 320.621,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"interés",
+"*COMPUESTO.*"
+],
+"y": 330,
+"size": 110,
+"color": "#e9c762",
+"a": 56
+}
+}
+},
+"sfx": "revelacion"
+},
+{
+"a": 320.621,
+"b": 325.081,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/cuneiform_04.jpg",
+"ar": 1.3333,
+"o": {
+"build": {
+"lines": [
+"*4.000* años"
+],
+"size": 110,
+"a": 86
+},
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 325.081,
+"b": 328.521,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_t06_sprout.png"
+}
+},
+{
+"a": 328.521,
+"b": 332.081,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_t01_field_workers.png"
+}
+},
+{
+"a": 332.081,
+"b": 334.301,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k17_sheep_walk.mp4"
+}
+},
+{
+"a": 334.301,
+"b": 340.481,
+"k": "g",
+"t": "cross",
+"p": {},
+"big": true
+},
+{
+"a": 340.481,
+"b": 344.681,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"active": 3
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 344.681,
+"b": 347.421,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"el *error.*"
+],
+"y": 400,
+"size": 130,
+"a": 31
+}
+}
+}
+},
+{
+"a": 347.421,
+"b": 353.781,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_r02_jar_coins.png",
+"o": {
+"label": "un año ahorrando"
+}
+}
+},
+{
+"a": 353.781,
+"b": 356.381,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/cylseal_03.jpg",
+"ar": 1.7844,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 356.381,
+"b": 357.961,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k14_kiln_smoke.mp4",
+"o": {
+"label": "Azmur, ladrillero"
+}
+}
+},
+{
+"a": 357.961,
+"b": 360.141,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "ladrillo de Babilonia",
+"side": "c",
+"v": "img/t30monees/cand/brickstamp_02.jpg",
+"ar": 1.5035,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 360.141,
+"b": 363.321,
+"k": "g",
+"t": "map",
+"p": {},
+"big": true
+},
+{
+"a": 363.321,
+"b": 365.561,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_z03_tyre_port.png"
+}
+},
+{
+"a": 365.561,
+"b": 367.621,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_z04_jewels.png"
+}
+},
+{
+"a": 367.621,
+"b": 369.981,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k07_ship_sail.mp4"
+}
+},
+{
+"a": 369.981,
+"b": 373.881,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/carnelian_02.jpg",
+"ar": 1.0475,
+"o": {
+"build": {
+"lines": [
+"una gran *ganancia*"
+],
+"size": 90,
+"a": 31
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 373.881,
+"b": 378.741,
+"k": "ilus",
+"t": "glass",
+"p": {
+"crack": 103,
+"o": {
+"big": {
+"w": "VIDRIO.",
+"size": 230,
+"y": 120,
+"a": 103
+}
+}
+},
+"sfx": "revelacion",
+"big": true
+},
+{
+"a": 378.741,
+"b": 382.701,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_z05_glass.png",
+"o": {
+"build": {
+"lines": [
+"un año, *perdido.*"
+],
+"a": 13
+}
+}
+}
+},
+{
+"a": 382.701,
+"b": 385.481,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_a03_lamp_night.png"
+}
+},
+{
+"a": 385.481,
+"b": 388.961,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/babold_04.jpg",
+"ar": 1.219,
+"o": {
+"aside": {
+"t": "cero lástima",
+"x": 1240,
+"y": 280
+},
+"credit": "Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 388.961,
+"b": 399.641,
+"k": "ilus",
+"t": "askwho",
+"p": {
+"at": [
+47,
+173,
+269
+]
+},
+"big": true
+},
+{
+"a": 399.641,
+"b": 401.221,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/hammurabi_03.jpg",
+"ar": 0.75,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 401.221,
+"b": 404.781,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/lydian_02.jpg",
+"ar": 1.5035,
+"o": {
+"build": {
+"lines": [
+"el más *difícil*"
+],
+"size": 90,
+"a": 61
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 404.781,
+"b": 408.601,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k08_beads_pour.mp4",
+"rate": 0.764
+}
+},
+{
+"a": 408.601,
+"b": 411.661,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_z06_jeweler.png",
+"o": {
+"build": {
+"lines": [
+"crecer *rápido*"
+],
+"size": 90,
+"a": 53
+}
+}
+}
+},
+{
+"a": 411.661,
+"b": 415.241,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_h04_seal.png"
+}
+},
+{
+"a": 415.241,
+"b": 417.941,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/glass_04.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 417.941,
+"b": 423.201,
+"k": "ilus",
+"t": "safe",
+"p": {}
+},
+{
+"a": 423.201,
+"b": 426.661,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/glass_01.jpg",
+"ar": 1.0,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 426.661,
+"b": 430.581,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/brickstamp_03.jpg",
+"ar": 1.5035,
+"o": {
+"build": {
+"lines": [
+"comprando *vidrio.*"
+],
+"size": 90,
+"a": 64
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 430.581,
+"b": 435.821,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"active": 4
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 435.821,
+"b": 437.181,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/cand/babruins_01.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 437.181,
+"b": 443.301,
+"k": "ilus",
+"t": "house",
+"p": {
+"mode": "rent"
+}
+},
+{
+"a": 443.301,
+"b": 445.501,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_c01_rented_room.png"
+}
+},
+{
+"a": 445.501,
+"b": 448.601,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_c04_toys.png"
+}
+},
+{
+"a": 448.601,
+"b": 456.301,
+"k": "ilus",
+"t": "house",
+"p": {
+"mode": "own",
+"o": {
+"build": {
+"lines": [
+"un lugar *propio*"
+],
+"size": 90,
+"a": 64
+}
+}
+},
+"big": true
+},
+{
+"a": 456.301,
+"b": 459.741,
+"k": "real",
+"t": "real",
+"p": {
+"v": "broll/t30monees/t30monees_k16_flower_breeze.mp4",
+"rate": 0.848
+}
+},
+{
+"a": 459.741,
+"b": 465.041,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_c02_own_house.png"
+}
+},
+{
+"a": 465.041,
+"b": 469.761,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_c03_flowers.png"
+}
+},
+{
+"a": 469.761,
+"b": 472.681,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_p04_door.png",
+"o": {
+"build": {
+"lines": [
+"algo *suyo.*"
+],
+"a": 40
+}
+}
+}
+},
+{
+"a": 472.681,
+"b": 476.801,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"active": 5
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 476.801,
+"b": 479.481,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_v01_old_hands.png"
+}
+},
+{
+"a": 479.481,
+"b": 488.961,
+"k": "ilus",
+"t": "life",
+"p": {},
+"big": true
+},
+{
+"a": 488.961,
+"b": 492.641,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_v03_family_meal.png"
+}
+},
+{
+"a": 492.641,
+"b": 496.861,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_v04_bench_old.png"
+}
+},
+{
+"a": 496.861,
+"b": 503.201,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_t03_flock.png",
+"o": {
+"build": {
+"lines": [
+"sus monedas, *trabajando*"
+],
+"size": 86,
+"a": 95
+}
+}
+}
+},
+{
+"a": 503.201,
+"b": 507.302,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "red",
+"o": {
+"build": {
+"lines": [
+"se prepara",
+"*HOY.*"
+],
+"y": 330,
+"size": 110,
+"a": 17
+}
+}
+}
+},
+{
+"a": 507.302,
+"b": 510.922,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"active": 6
+},
+"sfx": "whoosh",
+"big": true
+},
+{
+"a": 510.922,
+"b": 515.222,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/scribe_03.jpg",
+"ar": 1.8373,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 515.222,
+"b": 521.362,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "tablilla de alumno",
+"side": "c",
+"v": "img/t30monees/cand/cuneiform_07.jpg",
+"ar": 0.9209,
+"o": {
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 521.362,
+"b": 523.562,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_h01_craftsman.png"
+}
+},
+{
+"a": 523.562,
+"b": 529.882,
+"k": "ilus",
+"t": "stairs",
+"p": {},
+"big": true
+},
+{
+"a": 529.882,
+"b": 532.782,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/lyreur_03.jpg",
+"ar": 0.6641,
+"o": {
+"build": {
+"lines": [
+"le pagan *más.*"
+],
+"a": 52
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 532.782,
+"b": 547.702,
+"k": "g",
+"t": "four",
+"p": {
+"at": [
+63,
+155,
+205,
+313
+]
+},
+"big": true
+},
+{
+"a": 547.702,
+"b": 555.042,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_h05_give_bread.png",
+"o": {
+"build": {
+"lines": [
+"alguien en quien *confiar.*"
+],
+"size": 84,
+"a": 157
+}
+}
+}
+},
+{
+"a": 555.042,
+"b": 575.502,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"final": [
+155,
+284,
+424,
+99999,
+99999,
+99999,
+99999
+]
+},
+"big": true
+},
+{
+"a": 575.502,
+"b": 580.522,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/phoenship_03.jpg",
+"ar": 1.5023,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 580.522,
+"b": 594.502,
+"k": "ilus",
+"t": "tablilla",
+"p": {
+"final": [
+-40,
+-40,
+-40,
+-40,
+0,
+149,
+268
+]
+},
+"big": true
+},
+{
+"a": 594.502,
+"b": 598.802,
+"k": "ilus",
+"t": "wall",
+"p": {
+"mode": "grey"
+}
+},
+{
+"a": 598.802,
+"b": 612.382,
+"k": "ilus",
+"t": "walk",
+"p": {
+"b1": "«demasiado sencillo…»",
+"b2": "«no es un secreto: es una regla»"
+}
+},
+{
+"a": 612.382,
+"b": 617.182,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_f01_walk_dusk.png",
+"o": {
+"build": {
+"lines": [
+"algo más *difícil*"
+],
+"size": 90,
+"a": 19
+}
+}
+}
+},
+{
+"a": 617.182,
+"b": 619.022,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_f03_night_city.png"
+}
+},
+{
+"a": 619.022,
+"b": 622.142,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/babold_05.jpg",
+"ar": 0.7433,
+"o": {
+"credit": "Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 622.142,
+"b": 626.302,
+"k": "g",
+"t": "word",
+"p": {
+"o": {
+"stamp": {
+"lines": [
+"NO ES",
+"UN",
+"TRUCO."
+],
+"hot": 2
+}
+}
+}
+},
+{
+"a": 626.302,
+"b": 629.762,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/cand/ishtar_02.jpg",
+"o": {
+"build": {
+"lines": [
+"una moneda de cada *diez*"
+],
+"size": 84,
+"a": 63
+},
+"credit": "Wikimedia Commons · CC0"
+}
+}
+},
+{
+"a": 629.762,
+"b": 633.942,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/cand/ziggurat_03.jpg",
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 633.942,
+"b": 636.542,
+"k": "g",
+"t": "word",
+"p": {
+"tone": "warm",
+"o": {
+"build": {
+"lines": [
+"es aburrido.",
+"y por eso *FUNCIONA.*"
+],
+"y": 360,
+"size": 96,
+"a": 0
+}
+}
+}
+},
+{
+"a": 636.542,
+"b": 648.082,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "De estas siete reglas, ¿cuál es la que más le cuesta cumplir?",
+"bell": false
+},
+"big": true
+},
+{
+"a": 648.082,
+"b": 651.062,
+"k": "g",
+"t": "word",
+"p": {
+"o": {
+"build": {
+"lines": [
+"lo necesario",
+"vs. los *antojos*"
+],
+"y": 360,
+"size": 100,
+"a": 0
+}
+}
+}
+},
+{
+"a": 651.062,
+"b": 656.122,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/camelcar_01.jpg",
+"ar": 1.5,
+"o": {
+"build": {
+"lines": [
+"las 5 leyes del *oro*"
+],
+"size": 90,
+"a": 57
+},
+"credit": "Wikimedia Commons · CC BY-SA 4.0"
+}
+}
+},
+{
+"a": 656.122,
+"b": 660.522,
+"k": "real",
+"t": "arch",
+"p": {
+"side": "c",
+"v": "img/t30monees/cand/camelcar_02.jpg",
+"ar": 1.5547,
+"o": {
+"credit": "Wikimedia Commons · CC BY-SA 3.0"
+}
+}
+},
+{
+"a": 660.522,
+"b": 663.982,
+"k": "g",
+"t": "ask",
+"p": {
+"q": "Suscríbase y active la campanita",
+"bell": true
+}
+},
+{
+"a": 663.982,
+"b": 667.702,
+"k": "real",
+"t": "arch",
+"p": {
+"year": "Puerta de Ishtar, 1902",
+"side": "c",
+"v": "img/t30monees/cand/babexc_04.png",
+"ar": 1.5686,
+"o": {
+"credit": "Wikimedia Commons · Dominio público"
+}
+}
+},
+{
+"a": 667.702,
+"b": 671.522,
+"k": "real",
+"t": "real",
+"p": {
+"v": "img/t30monees/ag/t30monees_f02_one_coin.png"
+}
+},
+{
+"a": 671.522,
+"b": 675.72,
+"k": "ilus",
+"t": "onecoin",
+"p": {
+"o": {
+"build": {
+"lines": [
+"Empiece *hoy.*"
+],
+"y": 140,
+"size": 110,
+"a": 0
+}
+}
+}
+}
+]
+}
