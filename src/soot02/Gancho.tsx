@@ -1,6 +1,7 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
+import { Portada } from "./Portada";
 import { Persona, APION, LUCIUS } from "./persona";
 import { C, fontFamily, ent, prog, Escena, Cam, Chip, Grande, Particulas, Emote, cabeza } from "./kit";
 import { Pergamino } from "./kit";
@@ -28,12 +29,10 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
     <>
       {/* 0,00 · "You are 20 years old" — adentro del casco, fila de abajo, a oscuras, el agua de la sentina a los pies */}
       <Escena t={t} t0={0} t1={1.42} entra="nada" sale="baja" quieta>
-        <Cam t={t} k={[[0, 800, 700, 2.5], [1.6, 800, 760, 2.1]]}>
-          <Corte t={t} boga={0.7} agua={0.13} oscuro={0.6} heroeExpr="cansado" luz={0.6} />
-        </Cam>
-        <CuentaN t={t} t0={0.05} t1={0.5} a={20} x={1480} y={420} size={340} color={C.ambar} />
-        <Chip t={t} t0={0.56} text="YEARS OLD" color={C.rojo} x={1480} y={660} centro size={70} />
-        <Particulas t={t} tipo="polvo" n={24} seed={3} />
+        {/* cuadro 0 = la miniatura sin texto ni flecha, rehecha en código; después cobra vida */}
+        <Portada t={t} />
+        <CuentaN t={t} t0={0.12} t1={0.55} a={20} x={900} y={330} size={260} color={C.ambar} />
+        <Chip t={t} t0={0.6} text="YEARS OLD" color={C.rojo} x={900} y={500} centro size={60} />
       </Escena>
 
       {/* 1,42 · "you cannot swim" — la cámara baja: debajo del casco, en el mar, pataleando */}
