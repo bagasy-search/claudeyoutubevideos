@@ -4,6 +4,7 @@
 import React from "react";
 import { AbsoluteFill, Img, OffthreadVideo, interpolate, spring, staticFile, useCurrentFrame } from "remotion";
 import { loadFont } from "@remotion/google-fonts/Montserrat";
+import { loadFont as loadHand } from "@remotion/google-fonts/Kalam";
 import { C, Person, SunsetStage, Stamp, ease } from "../kits/btg/kit";
 
 const { fontFamily: F } = loadFont("normal", { weights: ["700", "800", "900"], subsets: ["latin"] });
@@ -11,7 +12,9 @@ export const INK = "#f0ebe5", RED = "#f14536", ORA = "#edb269", GOLD = "#e9c762"
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const rnd = (i: number, s = 1) => { const x = Math.sin(i * 127.1 + s * 311.7) * 43758.5453; return x - Math.floor(x); };
 const sf = (p: string) => staticFile(p);
-const HAND = "'Segoe Print','Comic Sans MS','Bradley Hand',cursive";
+// letra a mano: Google Font (el farm es Linux, no tiene Segoe Print)
+const { fontFamily: HANDF } = loadHand("normal", { weights: ["400", "700"], subsets: ["latin"] });
+const HAND = `${HANDF}, cursive`;
 
 // ───────────────────────── texto (firma del estilo) ─────────────────────────
 export const Build: React.FC<{ a?: number; lines: string[]; out?: number; y?: number; size?: number; color?: string; step?: number }> = ({ a = 6, lines, out, y = 120, size = 96, color = RED, step = 15 }) => {
