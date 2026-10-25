@@ -1,0 +1,2026 @@
+{
+"slug": "licha30caldos",
+"end": 1876.36,
+"face": {
+"x": 920,
+"y": 500
+},
+"parts": [
+{
+"a": 3.34,
+"b": 10.84,
+"c": "caldos_n000"
+},
+{
+"a": 10.84,
+"b": 17.62,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 21.65,
+"b": 28.73,
+"c": "caldos_n001"
+},
+{
+"a": 28.73,
+"b": 34.52,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 40.2,
+"b": 45.98,
+"c": "caldos_n002"
+},
+{
+"a": 45.98,
+"b": 50.7,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 55.3,
+"b": 62.8,
+"c": "caldos_l003"
+},
+{
+"a": 62.8,
+"b": 69.78,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 75.47,
+"b": 81.8,
+"c": "caldos_l004"
+},
+{
+"a": 81.8,
+"b": 86.97,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 91.86,
+"b": 98.93,
+"c": "caldos_n005"
+},
+{
+"a": 98.93,
+"b": 104.72,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 109.99,
+"b": 116.2,
+"c": "caldos_l006"
+},
+{
+"a": 116.2,
+"b": 121.28,
+"k0": "puerta",
+"k1": "puerta2"
+},
+{
+"a": 127.17,
+"b": 133.19,
+"c": "caldos_n007"
+},
+{
+"a": 133.19,
+"b": 138.11,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 142.13,
+"b": 149.43,
+"c": "caldos_n008"
+},
+{
+"a": 149.43,
+"b": 155.41,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 160.17,
+"b": 166.63,
+"c": "caldos_n009"
+},
+{
+"a": 166.63,
+"b": 171.92,
+"k0": "mesaT",
+"k1": "mesa"
+},
+{
+"a": 177.79,
+"b": 183.6,
+"c": "caldos_l010"
+},
+{
+"a": 183.6,
+"b": 188.35,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 192.19,
+"b": 198.5,
+"c": "caldos_n011"
+},
+{
+"a": 198.5,
+"b": 203.66,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 209.52,
+"b": 215.44,
+"c": "caldos_n012"
+},
+{
+"a": 215.44,
+"b": 220.28,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 224.66,
+"b": 232.16,
+"c": "caldos_n013"
+},
+{
+"a": 232.16,
+"b": 238.43,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 242.83,
+"b": 251.72,
+"k0": "jarros",
+"k1": "j0"
+},
+{
+"a": 251.72,
+"b": 254.72,
+"c": "caldos_l014"
+},
+{
+"a": 260.63,
+"b": 266.59,
+"c": "caldos_n015"
+},
+{
+"a": 266.59,
+"b": 271.46,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 275.98,
+"b": 282.96,
+"c": "caldos_l016"
+},
+{
+"a": 282.96,
+"b": 288.67,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 293.48,
+"b": 300.36,
+"c": "caldos_n017"
+},
+{
+"a": 300.36,
+"b": 305.99,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 311.19,
+"b": 316.92,
+"c": "caldos_n018"
+},
+{
+"a": 316.92,
+"b": 321.61,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 326.21,
+"b": 332.26,
+"c": "caldos_n019"
+},
+{
+"a": 332.26,
+"b": 337.21,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 341.95,
+"b": 348.29,
+"c": "caldos_n020"
+},
+{
+"a": 348.29,
+"b": 353.47,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 359.14,
+"b": 366.58,
+"c": "caldos_l021"
+},
+{
+"a": 366.58,
+"b": 372.66,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 377.39,
+"b": 384.09,
+"c": "caldos_n022"
+},
+{
+"a": 384.09,
+"b": 389.58,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 394.38,
+"b": 400.9,
+"c": "caldos_n023"
+},
+{
+"a": 400.9,
+"b": 406.23,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 411.33,
+"b": 418.72,
+"c": "caldos_n024"
+},
+{
+"a": 418.72,
+"b": 424.76,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 428.43,
+"b": 435.1,
+"c": "caldos_n025"
+},
+{
+"a": 435.1,
+"b": 440.56,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 444.0,
+"b": 449.65,
+"c": "caldos_l026"
+},
+{
+"a": 449.65,
+"b": 454.28,
+"k0": "mesa2",
+"k1": "mesaT"
+},
+{
+"a": 460.1,
+"b": 464.88,
+"k0": "jarros",
+"k1": "j2"
+},
+{
+"a": 464.88,
+"b": 472.0,
+"c": "caldos_n027"
+},
+{
+"a": 475.9,
+"b": 482.23,
+"c": "caldos_n028"
+},
+{
+"a": 482.23,
+"b": 487.41,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 491.58,
+"b": 498.37,
+"c": "caldos_n029"
+},
+{
+"a": 498.37,
+"b": 503.92,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 509.86,
+"b": 516.44,
+"c": "caldos_n030"
+},
+{
+"a": 516.44,
+"b": 521.83,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 526.63,
+"b": 532.99,
+"c": "caldos_n031"
+},
+{
+"a": 532.99,
+"b": 538.19,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 541.81,
+"b": 549.31,
+"c": "caldos_n032"
+},
+{
+"a": 549.31,
+"b": 555.84,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 560.16,
+"b": 566.65,
+"c": "caldos_n033"
+},
+{
+"a": 566.65,
+"b": 571.96,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 577.91,
+"b": 584.27,
+"c": "caldos_l034"
+},
+{
+"a": 584.27,
+"b": 589.48,
+"k0": "mesaT",
+"k1": "mesa"
+},
+{
+"a": 593.07,
+"b": 600.13,
+"c": "caldos_n035"
+},
+{
+"a": 600.13,
+"b": 605.9,
+"k0": "jarros",
+"k1": "j3"
+},
+{
+"a": 609.51,
+"b": 615.97,
+"c": "caldos_n036"
+},
+{
+"a": 615.97,
+"b": 621.25,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 627.13,
+"b": 633.25,
+"c": "caldos_n037"
+},
+{
+"a": 633.25,
+"b": 638.25,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 643.2,
+"b": 649.41,
+"c": "caldos_l038"
+},
+{
+"a": 649.41,
+"b": 654.49,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 659.29,
+"b": 665.28,
+"c": "caldos_n039"
+},
+{
+"a": 665.28,
+"b": 670.18,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 673.54,
+"b": 681.04,
+"c": "caldos_n040"
+},
+{
+"a": 681.04,
+"b": 688.24,
+"k0": "frente",
+"k1": "patio2"
+},
+{
+"a": 691.84,
+"b": 698.21,
+"c": "caldos_n041"
+},
+{
+"a": 698.21,
+"b": 703.42,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 707.1,
+"b": 713.4,
+"k0": "jarros",
+"k1": "j4"
+},
+{
+"a": 713.4,
+"b": 716.44,
+"c": "caldos_n042"
+},
+{
+"a": 719.45,
+"b": 726.35,
+"c": "caldos_n043"
+},
+{
+"a": 726.35,
+"b": 731.99,
+"k0": "mesa2",
+"k1": "mesaT"
+},
+{
+"a": 737.22,
+"b": 742.77,
+"c": "caldos_n044"
+},
+{
+"a": 742.77,
+"b": 747.31,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 751.71,
+"b": 758.85,
+"c": "caldos_l045"
+},
+{
+"a": 758.85,
+"b": 764.7,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 769.1,
+"b": 775.66,
+"c": "caldos_n046"
+},
+{
+"a": 775.66,
+"b": 781.03,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 785.83,
+"b": 791.88,
+"c": "caldos_n047"
+},
+{
+"a": 791.88,
+"b": 796.83,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 801.64,
+"b": 809.14,
+"c": "caldos_l048"
+},
+{
+"a": 809.14,
+"b": 816.22,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 820.75,
+"b": 827.42,
+"c": "caldos_n049"
+},
+{
+"a": 827.42,
+"b": 832.87,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 838.07,
+"b": 844.36,
+"c": "caldos_n050"
+},
+{
+"a": 844.36,
+"b": 849.51,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 855.17,
+"b": 862.67,
+"c": "caldos_l051"
+},
+{
+"a": 862.67,
+"b": 869.24,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 875.4,
+"b": 882.33,
+"c": "caldos_n052"
+},
+{
+"a": 882.33,
+"b": 888.0,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 893.6,
+"b": 900.49,
+"c": "caldos_n053"
+},
+{
+"a": 900.49,
+"b": 906.12,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 910.52,
+"b": 915.8,
+"k0": "jarros",
+"k1": "j5"
+},
+{
+"a": 915.8,
+"b": 923.53,
+"c": "caldos_n054"
+},
+{
+"a": 928.33,
+"b": 934.87,
+"c": "caldos_n055"
+},
+{
+"a": 934.87,
+"b": 940.23,
+"k0": "jarros",
+"k1": "jarros2"
+},
+{
+"a": 943.88,
+"b": 951.31,
+"c": "caldos_n056"
+},
+{
+"a": 951.31,
+"b": 957.38,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 961.92,
+"b": 968.31,
+"c": "caldos_l057"
+},
+{
+"a": 968.31,
+"b": 973.54,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 978.74,
+"b": 984.75,
+"c": "caldos_n058"
+},
+{
+"a": 984.75,
+"b": 989.67,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 995.28,
+"b": 1002.51,
+"c": "caldos_n059"
+},
+{
+"a": 1002.51,
+"b": 1008.43,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1012.93,
+"b": 1021.43,
+"k0": "jarros",
+"k1": "j6"
+},
+{
+"a": 1021.43,
+"b": 1024.43,
+"c": "caldos_l060"
+},
+{
+"a": 1027.72,
+"b": 1034.55,
+"c": "caldos_n061"
+},
+{
+"a": 1034.55,
+"b": 1040.14,
+"k0": "hierbas2",
+"k1": "hierbas"
+},
+{
+"a": 1044.44,
+"b": 1051.67,
+"c": "caldos_n062"
+},
+{
+"a": 1051.67,
+"b": 1057.58,
+"k0": "patio2",
+"k1": "frente"
+},
+{
+"a": 1062.38,
+"b": 1067.93,
+"c": "caldos_n063"
+},
+{
+"a": 1067.93,
+"b": 1072.47,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1076.67,
+"b": 1084.17,
+"c": "caldos_n064"
+},
+{
+"a": 1084.17,
+"b": 1091.63,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1095.23,
+"b": 1101.9,
+"c": "caldos_n065"
+},
+{
+"a": 1101.9,
+"b": 1107.36,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 1111.32,
+"b": 1117.71,
+"k0": "jarros",
+"k1": "j7"
+},
+{
+"a": 1117.71,
+"b": 1120.71,
+"c": "caldos_n066"
+},
+{
+"a": 1125.87,
+"b": 1133.02,
+"c": "caldos_n067"
+},
+{
+"a": 1133.02,
+"b": 1138.87,
+"k0": "mesaT",
+"k1": "mesa"
+},
+{
+"a": 1142.04,
+"b": 1148.17,
+"c": "caldos_n068"
+},
+{
+"a": 1148.17,
+"b": 1153.19,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1159.14,
+"b": 1165.2,
+"c": "caldos_l069"
+},
+{
+"a": 1165.2,
+"b": 1170.16,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 1174.56,
+"b": 1182.06,
+"c": "caldos_n070"
+},
+{
+"a": 1182.06,
+"b": 1188.29,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1192.32,
+"b": 1199.06,
+"c": "caldos_n071"
+},
+{
+"a": 1199.06,
+"b": 1204.57,
+"k0": "patio",
+"k1": "patio2"
+},
+{
+"a": 1209.63,
+"b": 1217.08,
+"c": "caldos_l072"
+},
+{
+"a": 1217.08,
+"b": 1223.18,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1226.37,
+"b": 1231.8,
+"k0": "jarros",
+"k1": "j8"
+},
+{
+"a": 1231.8,
+"b": 1238.37,
+"c": "caldos_n073"
+},
+{
+"a": 1243.8,
+"b": 1250.35,
+"c": "caldos_n074"
+},
+{
+"a": 1250.35,
+"b": 1255.71,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1260.37,
+"b": 1267.45,
+"c": "caldos_n075"
+},
+{
+"a": 1267.45,
+"b": 1273.25,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 1278.51,
+"b": 1284.46,
+"c": "caldos_n076"
+},
+{
+"a": 1284.46,
+"b": 1289.33,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1293.31,
+"b": 1300.19,
+"c": "caldos_n077"
+},
+{
+"a": 1300.19,
+"b": 1305.81,
+"k0": "cama",
+"k1": "cama2"
+},
+{
+"a": 1310.68,
+"b": 1318.36,
+"k0": "jarros",
+"k1": "j9"
+},
+{
+"a": 1318.36,
+"b": 1324.04,
+"c": "caldos_l078"
+},
+{
+"a": 1328.77,
+"b": 1335.58,
+"c": "caldos_n079"
+},
+{
+"a": 1335.58,
+"b": 1341.16,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 1345.62,
+"b": 1353.12,
+"c": "caldos_n080"
+},
+{
+"a": 1353.12,
+"b": 1360.0,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1364.19,
+"b": 1371.48,
+"c": "caldos_n081"
+},
+{
+"a": 1371.48,
+"b": 1377.45,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1382.65,
+"b": 1388.27,
+"c": "caldos_n082"
+},
+{
+"a": 1388.27,
+"b": 1392.87,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1397.47,
+"b": 1404.97,
+"c": "caldos_l083"
+},
+{
+"a": 1404.97,
+"b": 1411.66,
+"k0": "hierbas2",
+"k1": "jarros"
+},
+{
+"a": 1414.98,
+"b": 1421.31,
+"c": "caldos_l084"
+},
+{
+"a": 1421.31,
+"b": 1426.48,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1432.08,
+"b": 1439.39,
+"c": "caldos_n085"
+},
+{
+"a": 1439.39,
+"b": 1445.37,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1449.77,
+"b": 1455.95,
+"c": "caldos_n086"
+},
+{
+"a": 1455.95,
+"b": 1461.0,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1465.8,
+"b": 1471.54,
+"c": "caldos_n087"
+},
+{
+"a": 1471.54,
+"b": 1476.23,
+"k0": "hierbas",
+"k1": "jarros"
+},
+{
+"a": 1480.43,
+"b": 1487.9,
+"c": "caldos_n088"
+},
+{
+"a": 1487.9,
+"b": 1494.01,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1497.61,
+"b": 1504.21,
+"c": "caldos_n089"
+},
+{
+"a": 1504.21,
+"b": 1509.61,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1514.98,
+"b": 1521.01,
+"c": "caldos_l090"
+},
+{
+"a": 1521.01,
+"b": 1525.94,
+"k0": "mesa",
+"k1": "mesa2"
+},
+{
+"a": 1530.83,
+"b": 1537.98,
+"c": "caldos_n091"
+},
+{
+"a": 1537.98,
+"b": 1543.83,
+"k0": "mesa2",
+"k1": "mesaT"
+},
+{
+"a": 1548.04,
+"b": 1554.73,
+"c": "caldos_n092"
+},
+{
+"a": 1554.73,
+"b": 1560.21,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1564.15,
+"b": 1570.98,
+"c": "caldos_n093"
+},
+{
+"a": 1570.98,
+"b": 1576.56,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1582.39,
+"b": 1589.13,
+"c": "caldos_l094"
+},
+{
+"a": 1589.13,
+"b": 1594.65,
+"k0": "hierbas",
+"k1": "hierbas2"
+},
+{
+"a": 1599.3,
+"b": 1605.16,
+"c": "caldos_n095"
+},
+{
+"a": 1605.16,
+"b": 1609.96,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1613.12,
+"b": 1620.55,
+"c": "caldos_n096"
+},
+{
+"a": 1620.55,
+"b": 1626.62,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1630.22,
+"b": 1637.62,
+"c": "caldos_n097"
+},
+{
+"a": 1637.62,
+"b": 1643.67,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1648.95,
+"b": 1654.73,
+"c": "caldos_n098"
+},
+{
+"a": 1654.73,
+"b": 1659.46,
+"k0": "fogonW",
+"k1": "fogon2"
+},
+{
+"a": 1663.99,
+"b": 1670.96,
+"c": "caldos_l099"
+},
+{
+"a": 1670.96,
+"b": 1676.67,
+"k0": "mesa",
+"k1": "mesaT"
+},
+{
+"a": 1681.36,
+"b": 1686.6,
+"c": "caldos_n100"
+},
+{
+"a": 1686.6,
+"b": 1690.88,
+"k0": "buro",
+"k1": "buro2"
+},
+{
+"a": 1695.08,
+"b": 1702.53,
+"c": "caldos_n101"
+},
+{
+"a": 1702.53,
+"b": 1708.62,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1713.2,
+"b": 1720.03,
+"c": "caldos_n102"
+},
+{
+"a": 1720.03,
+"b": 1725.61,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1731.15,
+"b": 1737.27,
+"c": "caldos_n103"
+},
+{
+"a": 1737.27,
+"b": 1742.28,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1747.66,
+"b": 1755.16,
+"c": "caldos_l104"
+},
+{
+"a": 1755.16,
+"b": 1761.69,
+"k0": "puerta",
+"k1": "puerta2"
+},
+{
+"a": 1764.93,
+"b": 1772.24,
+"c": "caldos_n105"
+},
+{
+"a": 1772.24,
+"b": 1778.23,
+"k0": "mesaT",
+"k1": "mesa"
+},
+{
+"a": 1782.77,
+"b": 1788.79,
+"c": "caldos_l106"
+},
+{
+"a": 1788.79,
+"b": 1793.72,
+"k0": "frente",
+"k1": "frente2"
+},
+{
+"a": 1798.86,
+"b": 1806.21,
+"c": "caldos_n107"
+},
+{
+"a": 1806.21,
+"b": 1812.23,
+"k0": "fogon2",
+"k1": "fogonW"
+},
+{
+"a": 1816.13,
+"b": 1822.63,
+"c": "caldos_n108"
+},
+{
+"a": 1822.63,
+"b": 1827.94,
+"k0": "fogon",
+"k1": "fogon2"
+},
+{
+"a": 1832.49,
+"b": 1839.11,
+"c": "caldos_l109"
+},
+{
+"a": 1839.11,
+"b": 1844.53,
+"k0": "fogonW",
+"k1": "fogon"
+},
+{
+"a": 1849.74,
+"b": 1856.69,
+"c": "caldos_l110"
+},
+{
+"a": 1856.69,
+"b": 1862.38,
+"k0": "mesaT",
+"k1": "mesa2"
+},
+{
+"a": 1867.08,
+"b": 1871.63,
+"c": "caldos_l111"
+},
+{
+"a": 1871.63,
+"b": 1876.36,
+"k0": "fogon2",
+"k1": "fogonW"
+}
+],
+"ov": [
+{
+"a": 0.0,
+"b": 4.0,
+"k": "hora",
+"label": "7:00 p.m.",
+"h": 7,
+"x": 380,
+"y": 240
+},
+{
+"a": 22.76,
+"b": 27.76,
+"k": "chips",
+"items": [
+"un pedazo de pan",
+"un yogur",
+"tortillas de ayer"
+],
+"y": 860
+},
+{
+"a": 42.76,
+"b": 47.76,
+"k": "chips",
+"items": [
+"un fogón",
+"una olla de barro",
+"un caldo"
+],
+"y": 860
+},
+{
+"a": 54.02,
+"b": 58.02,
+"k": "cinta",
+"text": "10 CALDOS DE RANCHO"
+},
+{
+"a": 59.12,
+"b": 64.12,
+"k": "escrito",
+"text": "su medida · paso a paso · el error · lo que cuesta",
+"y": 880,
+"col": "#f2c14e",
+"size": 64
+},
+{
+"a": 85.72,
+"b": 93.72,
+"k": "aviso",
+"title": "NO SOY DOCTORA",
+"text": "un caldo no cura nada · esto es cocina de rancho",
+"x": 400,
+"y": 300
+},
+{
+"a": 106.48,
+"b": 112.48,
+"k": "lower",
+"name": "TÍA LICHA",
+"l2": "63 AÑOS · LA HERMANA DE DOÑA CHAYO",
+"l2at": 109.68
+},
+{
+"a": 125.36,
+"b": 129.36,
+"k": "tag",
+"text": "LA OLLA GRANDOTA",
+"sub": "DE DOMINGO A MIÉRCOLES",
+"x": 1520,
+"y": 760
+},
+{
+"a": 145.48,
+"b": 171.48,
+"k": "cta",
+"libro": "LIBRO 2 · LOS CALDOS DE LA ABUELA",
+"pag": "pág. 13 pollo · pág. 31 res",
+"casa": "$14–48",
+"fuera": "$55–130",
+"qr": 181.28
+},
+{
+"a": 200.8,
+"b": 222.8,
+"k": "check",
+"title": "¿POR QUÉ CALDO?",
+"x": 360,
+"y": 470,
+"labels": [
+"era barato",
+"una sola olla",
+"ligerito para la noche"
+],
+"ats": [
+200.8,
+209.88,
+217.08
+]
+},
+{
+"a": 251.82,
+"b": 256.82,
+"k": "lbl",
+"n": 1,
+"word": "CALDO",
+"title": "Caldo de pollo",
+"sub": "CON SUS VERDURAS"
+},
+{
+"a": 255.1,
+"b": 273.26,
+"k": "receta",
+"title": "PARA 4 PLATOS",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 256.72,
+"text": "½ pollo de rancho"
+},
+{
+"at": 261.06,
+"text": "2½ litros de agua"
+},
+{
+"at": 263.12,
+"text": "½ cebolla · 2 ajos · apio"
+},
+{
+"at": 267.52,
+"text": "zanahoria · calabacita · papa"
+},
+{
+"at": 271.66,
+"text": "1 elote · ejotes"
+}
+]
+},
+{
+"a": 279.16,
+"b": 306.08,
+"k": "receta",
+"title": "PASO A PASO",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 279.16,
+"text": "pollo en agua FRÍA"
+},
+{
+"at": 284.96,
+"text": "fuego bajito"
+},
+{
+"at": 291.76,
+"text": "se espuma"
+},
+{
+"at": 298.3,
+"text": "40 min: lo duro"
+},
+{
+"at": 304.48,
+"text": "+15: lo suave · sal al final"
+}
+]
+},
+{
+"a": 317.12,
+"b": 322.12,
+"k": "error",
+"text": "EL ERROR: TODO AL MISMO TIEMPO"
+},
+{
+"a": 331.14,
+"b": 335.14,
+"k": "sello",
+"text": "LO DURO PRIMERO"
+},
+{
+"a": 346.4,
+"b": 352.4,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$25",
+"fuera": "$70–80"
+},
+{
+"a": 357.04,
+"b": 362.04,
+"k": "lbl",
+"n": 2,
+"word": "CALDO",
+"title": "Cocido de res",
+"sub": "EL DEL DOMINGO"
+},
+{
+"a": 366.14,
+"b": 387.56,
+"k": "receta",
+"title": "PARA 6 PLATOS",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 367.68,
+"text": "1 kg de chambarete con hueso"
+},
+{
+"at": 370.5,
+"text": "+ hueso con tuétano"
+},
+{
+"at": 372.86,
+"text": "3 litros de agua"
+},
+{
+"at": 377.74,
+"text": "elote · zanahoria · papa · chayote"
+},
+{
+"at": 385.96,
+"text": "garbanzo remojado"
+}
+]
+},
+{
+"a": 405.94,
+"b": 410.94,
+"k": "dicho",
+"text": "el secreto del cocido es el tiempo",
+"x": 420,
+"y": 860
+},
+{
+"a": 425.06,
+"b": 430.06,
+"k": "error",
+"text": "EL ERROR: SALARLO AL PRINCIPIO"
+},
+{
+"a": 434.3,
+"b": 438.3,
+"k": "sello",
+"text": "LA SAL AL FINAL"
+},
+{
+"a": 450.58,
+"b": 456.58,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$40",
+"fuera": "$100–130"
+},
+{
+"a": 475.0,
+"b": 480.0,
+"k": "lbl",
+"n": 3,
+"word": "CALDO",
+"title": "Churipo",
+"sub": "PURO MICHOACÁN"
+},
+{
+"a": 489.94,
+"b": 493.94,
+"k": "tag",
+"text": "CORUNDAS",
+"sub": "TAMALITOS DE TRIÁNGULO",
+"x": 1520,
+"y": 760
+},
+{
+"a": 510.0,
+"b": 520.0,
+"k": "receta",
+"title": "EL CHILE",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 511.14,
+"text": "4 guajillo + 2 anchos"
+},
+{
+"at": 514.36,
+"text": "sin semillas ni venas"
+},
+{
+"at": 516.14,
+"text": "2 ajos · ¼ cebolla"
+}
+]
+},
+{
+"a": 556.1,
+"b": 561.1,
+"k": "error",
+"text": "EL ERROR: LAS SEMILLAS Y LAS VENAS"
+},
+{
+"a": 564.82,
+"b": 568.82,
+"k": "escrito",
+"text": "no es picante: es sabroso",
+"col": "#f2c14e"
+},
+{
+"a": 589.7,
+"b": 594.7,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$45",
+"fuera": ""
+},
+{
+"a": 593.42,
+"b": 598.42,
+"k": "lbl",
+"n": 4,
+"word": "CALDO",
+"title": "Sopa tarasca",
+"sub": "DE PÁTZCUARO"
+},
+{
+"a": 614.24,
+"b": 629.08,
+"k": "receta",
+"title": "PARA 4 PLATOS",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 614.24,
+"text": "2 tazas de frijol con su caldo"
+},
+{
+"at": 618.6,
+"text": "2 jitomates · ¼ cebolla · ajo"
+},
+{
+"at": 622.86,
+"text": "1 litro de caldo"
+},
+{
+"at": 627.48,
+"text": "tortillas de ayer en tiritas"
+}
+]
+},
+{
+"a": 677.04,
+"b": 682.04,
+"k": "error",
+"text": "EL ERROR: FREÍRLAS EN MUCHO ACEITE"
+},
+{
+"a": 703.78,
+"b": 709.78,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$15",
+"fuera": "$90"
+},
+{
+"a": 711.2,
+"b": 716.2,
+"k": "lbl",
+"n": 5,
+"word": "CALDO",
+"title": "Caldo michi",
+"sub": "EL DEL LAGO"
+},
+{
+"a": 716.82,
+"b": 720.82,
+"k": "tag",
+"text": "MICHI = PESCADO",
+"sub": "EN PURÉPECHA",
+"x": 1520,
+"y": 760
+},
+{
+"a": 777.1,
+"b": 782.1,
+"k": "error",
+"text": "EL ERROR: EL PESCADO AL PRINCIPIO"
+},
+{
+"a": 790.02,
+"b": 794.02,
+"k": "sello",
+"text": "EL PESCADO AL ÚLTIMO"
+},
+{
+"a": 804.96,
+"b": 809.96,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$35",
+"fuera": ""
+},
+{
+"a": 812.7,
+"b": 816.7,
+"k": "cinta",
+"text": "LOS 5 ERRORES DEL CALDO",
+"col": "#e0503a"
+},
+{
+"a": 824.12,
+"b": 914.12,
+"k": "check",
+"title": "LOS 5 ERRORES",
+"x": 360,
+"y": 470,
+"labels": [
+"agua caliente",
+"hervirlo fuerte",
+"no espumarlo",
+"el cubito",
+"la sal al principio"
+],
+"ats": [
+824.12,
+841.04,
+855.64,
+870.92,
+903.12
+]
+},
+{
+"a": 913.6,
+"b": 918.6,
+"k": "lbl",
+"n": 6,
+"word": "CALDO",
+"title": "Albóndigas",
+"sub": "CON ARROZ ADENTRO"
+},
+{
+"a": 928.34,
+"b": 940.34,
+"k": "receta",
+"title": "LAS ALBÓNDIGAS",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 928.34,
+"text": "½ kg de carne molida"
+},
+{
+"at": 932.88,
+"text": "1 huevo"
+},
+{
+"at": 934.5,
+"text": "3 cdas de arroz crudo"
+},
+{
+"at": 937.38,
+"text": "5 hojas de hierbabuena"
+}
+]
+},
+{
+"a": 967.04,
+"b": 971.04,
+"k": "sello",
+"text": "ARROZ CRUDO ADENTRO"
+},
+{
+"a": 995.5,
+"b": 1000.5,
+"k": "error",
+"text": "EL ERROR: MOVERLAS"
+},
+{
+"a": 1013.1,
+"b": 1019.1,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$35",
+"fuera": "$75"
+},
+{
+"a": 1020.26,
+"b": 1025.26,
+"k": "lbl",
+"n": 7,
+"word": "CALDO",
+"title": "Caldo de habas",
+"sub": "EL MÁS HUMILDE"
+},
+{
+"a": 1088.38,
+"b": 1093.38,
+"k": "error",
+"text": "EL ERROR: NO REMOJARLAS"
+},
+{
+"a": 1099.44,
+"b": 1103.44,
+"k": "tag",
+"text": "LA AMARILLA",
+"sub": "LA PELADA",
+"x": 1520,
+"y": 760
+},
+{
+"a": 1107.56,
+"b": 1113.56,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$14",
+"fuera": "$55"
+},
+{
+"a": 1118.08,
+"b": 1123.08,
+"k": "lbl",
+"n": 8,
+"word": "CALDO",
+"title": "Caldo de hongos",
+"sub": "DE TEMPORADA"
+},
+{
+"a": 1181.34,
+"b": 1188.34,
+"k": "aviso",
+"title": "NUNCA",
+"text": "hongos del monte que no conoces · cómpralos en el mercado",
+"x": 400,
+"y": 300
+},
+{
+"a": 1202.3,
+"b": 1207.3,
+"k": "error",
+"text": "EL ERROR: LAVARLOS EN AGUA"
+},
+{
+"a": 1209.84,
+"b": 1214.84,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$30",
+"fuera": ""
+},
+{
+"a": 1229.6,
+"b": 1234.6,
+"k": "lbl",
+"n": 9,
+"word": "CALDO",
+"title": "Camarón seco",
+"sub": "DE CUARESMA"
+},
+{
+"a": 1278.82,
+"b": 1282.82,
+"k": "escrito",
+"text": "las cabecitas no se tiran",
+"col": "#f2c14e"
+},
+{
+"a": 1293.52,
+"b": 1298.52,
+"k": "error",
+"text": "EL ERROR: ECHARLE SAL"
+},
+{
+"a": 1316.16,
+"b": 1321.16,
+"k": "lbl",
+"n": 10,
+"word": "CALDO",
+"title": "El de 20 minutos",
+"sub": "GARBANZO Y HUEVO"
+},
+{
+"a": 1366.86,
+"b": 1374.86,
+"k": "receta",
+"title": "LOS HUEVOS",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 1366.86,
+"text": "enteros, uno por uno"
+},
+{
+"at": 1370.64,
+"text": "sin moverlos"
+},
+{
+"at": 1371.74,
+"text": "tapado 4 min"
+}
+]
+},
+{
+"a": 1377.82,
+"b": 1382.82,
+"k": "error",
+"text": "EL ERROR: BATIR LOS HUEVOS"
+},
+{
+"a": 1396.04,
+"b": 1402.04,
+"k": "precio",
+"label": "UN PLATO",
+"casa": "$18",
+"fuera": "20 minutos"
+},
+{
+"a": 1411.86,
+"b": 1416.86,
+"k": "dicho",
+"text": "sí vale la pena, mija: tú vales la pena",
+"x": 420,
+"y": 860
+},
+{
+"a": 1418.26,
+"b": 1422.26,
+"k": "cinta",
+"text": "CALDO TODA LA SEMANA"
+},
+{
+"a": 1423.5,
+"b": 1458.66,
+"k": "receta",
+"title": "EL CALDO BASE",
+"x": 360,
+"y": 430,
+"rows": [
+{
+"at": 1426.04,
+"text": "domingo: 1 olla de caldo base"
+},
+{
+"at": 1434.86,
+"text": "sin verduras"
+},
+{
+"at": 1436.48,
+"text": "3 horas a fuego bajito"
+},
+{
+"at": 1452.38,
+"text": "3-4 días en el refri"
+},
+{
+"at": 1457.06,
+"text": "congelado en litros: meses"
+}
+]
+},
+{
+"a": 1468.44,
+"b": 1480.44,
+"k": "check",
+"title": "CADA NOCHE OTRO",
+"x": 360,
+"y": 470,
+"labels": [
+"lunes: verduras y arroz",
+"martes: fideo",
+"miércoles: frijol molido",
+"jueves: huevo"
+],
+"ats": [
+1468.44,
+1470.72,
+1472.46,
+1476.5
+]
+},
+{
+"a": 1515.16,
+"b": 1519.16,
+"k": "cinta",
+"text": "CON QUÉ SE ACOMPAÑA"
+},
+{
+"a": 1520.74,
+"b": 1565.74,
+"k": "check",
+"title": "LA MESA DEL CALDO",
+"x": 360,
+"y": 470,
+"labels": [
+"tortillas en la lumbre",
+"el platito de en medio",
+"una cucharada de arroz"
+],
+"ats": [
+1520.74,
+1538.56,
+1562.58
+]
+},
+{
+"a": 1534.86,
+"b": 1537.86,
+"k": "sello",
+"text": "2 TORTILLAS, NO 5"
+},
+{
+"a": 1619.98,
+"b": 1669.98,
+"k": "nunca",
+"y": 640,
+"title": "LO QUE NUNCA HACÍA",
+"labels": [
+"recalentar 3 veces",
+"dejarlo tibio de noche",
+"servirlo hirviendo"
+],
+"ats": [
+1623.72,
+1640.42,
+1660.8
+]
+},
+{
+"a": 1739.66,
+"b": 1771.66,
+"k": "cta",
+"libro": "LIBRO 2 · LOS CALDOS DE LA ABUELA",
+"pag": "4 semanas de caldos",
+"casa": "$14–48",
+"fuera": "$55–130",
+"qr": 1785.8
+},
+{
+"a": 1821.52,
+"b": 1831.52,
+"k": "chips",
+"items": [
+"agua fría",
+"fuego bajito",
+"espumar",
+"lo duro primero",
+"sin cubito",
+"sal al final"
+],
+"y": 860
+},
+{
+"a": 1844.92,
+"b": 1850.92,
+"k": "comentario",
+"text": "¿Cuál era el caldo de tu abuela en las noches de frío?",
+"send": 1849.1
+},
+{
+"a": 1872.9,
+"b": 1875.9,
+"k": "escrito",
+"text": "abrígate, mija",
+"col": "#c9b3ea",
+"y": 250
+}
+],
+"items": [
+251.82,
+357.04,
+462.68,
+593.42,
+711.2,
+913.6,
+1020.26,
+1118.08,
+1229.6,
+1316.16
+],
+"noche": 0.45
+}
