@@ -47,7 +47,7 @@ jobs:
     # Un chunk que se cuelga (blur/backdrop-filter pesado bajo swangle, o decode trabado) NO debe
     # comerse el default de 360 min de un runner en silencio. Con esto FALLA en 25' y stitch
     # (if:!cancelled()) persiste los buenos → re-render parcial limpio con only_chunks. (21-sep-2026)
-    timeout-minutes: 60
+    timeout-minutes: 110
     strategy:
       fail-fast: false
       matrix:
@@ -119,12 +119,12 @@ jobs:
             TMPDIR=/dev/shm npx remotion render "$ENTRY" "${{ github.event.inputs.comp_id }}" \
               "out/chunk_${{ matrix.idx }}.mp4" \
               --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
-              --concurrency=4 --timeout=180000 --crf=23 --gl=swangle
+              --concurrency=4 --timeout=420000 --crf=23 --gl=swangle
           else
             TMPDIR=/dev/shm npx remotion render "${{ github.event.inputs.comp_id }}" \
               "out/chunk_${{ matrix.idx }}.mp4" \
               --frames=${{ steps.r.outputs.start }}-${{ steps.r.outputs.end }} \
-              --concurrency=4 --timeout=180000 --crf=23 --gl=swangle
+              --concurrency=4 --timeout=420000 --crf=23 --gl=swangle
           fi
       - name: reportar progreso del chunk (Bagasy)
         continue-on-error: true
