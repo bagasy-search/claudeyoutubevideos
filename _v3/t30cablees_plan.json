@@ -1,0 +1,2758 @@
+{
+ "total": 1073.72,
+ "avatarEnd": 1073.72,
+ "fps": 30,
+ "beats": [
+  {
+   "t": 0,
+   "dur": 3.6333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 0
+  },
+  {
+   "t": 3.6333333333333333,
+   "dur": 3.1666666666666665,
+   "sec": "S1",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30cablees_real/t30cablees_e06.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 6.8,
+   "dur": 8.4,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 7,
+    "unit": "cosas",
+    "label": "QUE USTED TIENE Y YO EN MI CASA NO",
+    "photo": "img/t30cablees_a09_pulpo.jpg",
+    "at": 7.1,
+    "compare": "Ninguna. Por respeto.",
+    "compareAt": 14.16,
+    "tone": "red",
+    "prefix": ""
+   },
+   "bed": "img/t30cablees_r01_tester_bolsa_blur.jpg"
+  },
+  {
+   "t": 15.2,
+   "dur": 2.9,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_a05_humo_contacto.jpg"
+  },
+  {
+   "t": 18.1,
+   "dur": 5.933333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 1
+  },
+  {
+   "t": 24.033333333333335,
+   "dur": 4,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_y01.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Your Fire Department (1949) · dominio público"
+  },
+  {
+   "t": 28.033333333333335,
+   "dur": 4.2,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_d02.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · More Dangerous Than Dynamite (1941) · dominio público"
+  },
+  {
+   "t": 32.233333333333334,
+   "dur": 3.1,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_s04.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Safety: Harm Hides at Home · dominio público"
+  },
+  {
+   "t": 35.333333333333336,
+   "dur": 3.2333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 2
+  },
+  {
+   "t": 38.56666666666667,
+   "dur": 2.4,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_n02.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Why Not Live? · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 40.96666666666667,
+   "dur": 3.2666666666666666,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r02_entra_casa.jpg"
+  },
+  {
+   "t": 44.233333333333334,
+   "dur": 2.4,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r03_mira_quemado.jpg"
+  },
+  {
+   "t": 46.63333333333333,
+   "dur": 3.433333333333333,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_c08.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 50.06666666666667,
+   "dur": 3.7333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 3
+  },
+  {
+   "t": 53.8,
+   "dur": 4.133333333333334,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r04_senora_habla.jpg"
+  },
+  {
+   "t": 57.93333333333333,
+   "dur": 3.8,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_y04.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Your Fire Department (1949) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 61.733333333333334,
+   "dur": 2.3333333333333335,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r21_conecta_uno.jpg"
+  },
+  {
+   "t": 64.06666666666666,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 4
+  },
+  {
+   "t": 69.46666666666667,
+   "dur": 4.966666666666667,
+   "sec": "S1",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30cablees_a24_muchos_aparatos.jpg"
+  },
+  {
+   "t": 74.43333333333334,
+   "dur": 2.7,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r01_tester_bolsa.jpg"
+  },
+  {
+   "t": 77.13333333333334,
+   "dur": 4.933333333333334,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_k06.mp4",
+   "rate": 0.901,
+   "credit": "Prelinger Archives · Know the Cause (1954) · dominio público"
+  },
+  {
+   "t": 82.06666666666666,
+   "dur": 4.533333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 5
+  },
+  {
+   "t": 86.6,
+   "dur": 6.333333333333333,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "01",
+    "label": "40 AÑOS CON LAS MANOS EN LOS CABLES",
+    "title": "MAESTRO RAMIRO",
+    "sub": "Electricista · Monterrey",
+    "stamp": "",
+    "typeAt": 87.36,
+    "stampAt": 90.02,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30cablees_r01_tester_bolsa_blur.jpg"
+  },
+  {
+   "t": 92.93333333333334,
+   "dur": 4.5,
+   "kind": "componente",
+   "sec": "S1",
+   "comp": "BigStat",
+   "props": {
+    "value": 19,
+    "unit": "años",
+    "label": "CARGÁNDOLE LA ESCALERA A SU TÍO",
+    "photo": "img/t30cablees_a26_foco_cambiar.jpg",
+    "at": 93.54,
+    "tone": "white",
+    "prefix": ""
+   },
+   "bed": "img/t30cablees_r01_tester_bolsa_blur.jpg"
+  },
+  {
+   "t": 97.43333333333334,
+   "dur": 2.3666666666666667,
+   "sec": "S1",
+   "kind": "imagen",
+   "lugar": "ramiro",
+   "asset": "img/t30cablees_r07_manos.jpg"
+  },
+  {
+   "t": 99.8,
+   "dur": 4.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 6
+  },
+  {
+   "t": 104.03333333333333,
+   "dur": 3,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_y05.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Your Fire Department (1949) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 107.03333333333333,
+   "dur": 2.966666666666667,
+   "sec": "S1",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r10_levanta_tapete.jpg"
+  },
+  {
+   "t": 109.06,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 1",
+    "part": "LA EXTENSIÓN Y EL PULPO"
+   },
+   "bed": "img/t30cablees_r08_pulpo_seniala_blur.jpg"
+  },
+  {
+   "t": 110,
+   "dur": 2.966666666666667,
+   "sec": "S1",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/t30cablees_a31_arreglo_compadre.jpg"
+  },
+  {
+   "t": 112.96666666666667,
+   "dur": 2.7666666666666666,
+   "sec": "S2",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r11_cable_mano.jpg"
+  },
+  {
+   "t": 115.73333333333333,
+   "dur": 4.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 7
+  },
+  {
+   "t": 120.63333333333334,
+   "dur": 3.933333333333333,
+   "sec": "S2",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r09_desenchufa.jpg"
+  },
+  {
+   "t": 124.56666666666666,
+   "dur": 2.9,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a11_ext_tapete.mp4",
+   "real": false,
+   "rate": 0.96
+  },
+  {
+   "t": 127.46666666666667,
+   "dur": 3.966666666666667,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_d03.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · More Dangerous Than Dynamite (1941) · dominio público"
+  },
+  {
+   "t": 131.43333333333334,
+   "dur": 3.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 8
+  },
+  {
+   "t": 134.53333333333333,
+   "dur": 3.933333333333333,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_v26.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 138.46666666666667,
+   "dur": 3.1,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_h01.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Home Electrical (1915) · dominio público"
+  },
+  {
+   "t": 141.56666666666666,
+   "dur": 3.066666666666667,
+   "sec": "S2",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r14_derretida.jpg"
+  },
+  {
+   "t": 144.63333333333333,
+   "dur": 4.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 9
+  },
+  {
+   "t": 149.33333333333334,
+   "dur": 4.233333333333333,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a13_podadora.mp4",
+   "real": false,
+   "rate": 0.696
+  },
+  {
+   "t": 153.56666666666666,
+   "dur": 3.4,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a14_arbolito.mp4",
+   "real": false,
+   "rate": 0.895
+  },
+  {
+   "t": 156.96666666666667,
+   "dur": 3.3666666666666667,
+   "sec": "S2",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r12_calentador_ext.jpg"
+  },
+  {
+   "t": 160.33333333333334,
+   "dur": 4.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 10
+  },
+  {
+   "t": 164.43333333333334,
+   "dur": 3.6333333333333333,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v02.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 168.06666666666666,
+   "dur": 3.6,
+   "sec": "S2",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30cablees_a15_cable_cuarteado.jpg"
+  },
+  {
+   "t": 171.66666666666666,
+   "dur": 3,
+   "sec": "S2",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r13_cable_cuarteado.jpg"
+  },
+  {
+   "t": 174.66666666666666,
+   "dur": 3.066666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 11
+  },
+  {
+   "t": 177.73333333333332,
+   "dur": 4.933333333333334,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_d04.mp4",
+   "real": true,
+   "rate": 0.897,
+   "credit": "Prelinger Archives · More Dangerous Than Dynamite (1941) · dominio público"
+  },
+  {
+   "t": 182.66666666666666,
+   "dur": 3.8666666666666667,
+   "sec": "S2",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_y02.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Your Fire Department (1949) · dominio público"
+  },
+  {
+   "t": 186.53333333333333,
+   "dur": 4.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 12
+  },
+  {
+   "t": 191.2,
+   "dur": 9.9,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30cablees_a16_ext_derretida.jpg",
+    "x": 1100,
+    "y": 600,
+    "r": 170,
+    "note": "derretida, pegada al piso",
+    "chip": "FÍJESE",
+    "circleAt": 191.5,
+    "noteAt": 195.08
+   },
+   "bed": "img/t30cablees_r08_pulpo_seniala_blur.jpg"
+  },
+  {
+   "t": 201.1,
+   "dur": 6.166666666666667,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "inviernos",
+    "label": "EL CALENTADOR EN LA EXTENSIÓN",
+    "photo": "img/t30cablees_a12_calentador.jpg",
+    "at": 201.4,
+    "compare": "No pasó nada de pura suerte.",
+    "compareAt": 205.28,
+    "tone": "red",
+    "prefix": ""
+   },
+   "bed": "img/t30cablees_r08_pulpo_seniala_blur.jpg"
+  },
+  {
+   "t": 207.26666666666668,
+   "dur": 4.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 13
+  },
+  {
+   "t": 211.96666666666667,
+   "dur": 10.566666666666666,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30cablees_a12_calentador.jpg",
+    "rightImg": "img/t30cablees_a17_contacto_pared.jpg",
+    "leftHead": "NUNCA",
+    "rightHead": "SIEMPRE",
+    "leftText": "En una extensión o en un pulpo",
+    "rightText": "Directo a un contacto de la pared",
+    "stamp": "",
+    "leftAt": 213.04,
+    "rightAt": 220.68,
+    "kicker": "LO QUE CALIENTA"
+   },
+   "bed": "img/t30cablees_r08_pulpo_seniala_blur.jpg"
+  },
+  {
+   "t": 222.53333333333333,
+   "dur": 3.533333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 14
+  },
+  {
+   "t": 226.06666666666666,
+   "dur": 2.3666666666666667,
+   "sec": "S2",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r08_pulpo_seniala.jpg"
+  },
+  {
+   "t": 228.43333333333334,
+   "dur": 3.933333333333333,
+   "sec": "S2",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r15_contacto_nuevo.jpg"
+  },
+  {
+   "t": 232.36666666666667,
+   "dur": 8.766666666666667,
+   "kind": "componente",
+   "sec": "S2",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "EN LA CASA DEL MAESTRO RAMIRO",
+    "title": "La 1 de 7",
+    "items": [
+     {
+      "text": "1. Nada que caliente en una extensión o pulpo"
+     }
+    ],
+    "bed": "img/t30cablees_a72_taller_atardecer.jpg"
+   },
+   "bed": "img/t30cablees_r08_pulpo_seniala_blur.jpg"
+  },
+  {
+   "t": 241.13333333333333,
+   "dur": 5.833333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 15
+  },
+  {
+   "t": 243.98,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 2",
+    "part": "EL BREAKER QUE SE BOTA"
+   },
+   "bed": "img/t30cablees_r16_tablero_abre_blur.jpg"
+  },
+  {
+   "t": 246.96666666666667,
+   "dur": 4.533333333333333,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e19.mp4",
+   "real": true,
+   "rate": 0.98,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 251.5,
+   "dur": 3.1,
+   "sec": "S3",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r17_breaker_dedo.jpg"
+  },
+  {
+   "t": 254.6,
+   "dur": 3.1,
+   "sec": "S3",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_w01.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · A Word to the Wives (c. 1955) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 257.7,
+   "dur": 3.6333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 16
+  },
+  {
+   "t": 261.3333333333333,
+   "dur": 3.8333333333333335,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e01.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 265.1666666666667,
+   "dur": 5.2,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_d05.mp4",
+   "real": true,
+   "rate": 0.856,
+   "credit": "Prelinger Archives · More Dangerous Than Dynamite (1941) · dominio público"
+  },
+  {
+   "t": 270.3666666666667,
+   "dur": 4.333333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 17
+  },
+  {
+   "t": 274.7,
+   "dur": 2.9,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e22.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 277.6,
+   "dur": 2.9,
+   "sec": "S3",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r18_dos_breakers.jpg"
+  },
+  {
+   "t": 280.5,
+   "dur": 4.7,
+   "sec": "S3",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e09.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público",
+   "rate": 0.949
+  },
+  {
+   "t": 285.2,
+   "dur": 4.466666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 18
+  },
+  {
+   "t": 289.6666666666667,
+   "dur": 2.433333333333333,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e05.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 292.1,
+   "dur": 3.6,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e15.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 295.7,
+   "dur": 3.2666666666666666,
+   "sec": "S3",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v11.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 298.96666666666664,
+   "dur": 3.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 19
+  },
+  {
+   "t": 302.06666666666666,
+   "dur": 9.5,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30cablees_a21_breaker_grande.jpg",
+    "rightImg": "img/t30cablees_a23_cable_quemado_pared.jpg",
+    "leftHead": "BREAKER MÁS GRANDE",
+    "rightHead": "EL CABLE ES EL MISMO",
+    "leftText": "Ya no se bota",
+    "rightText": "Se calienta adentro de la pared",
+    "stamp": "",
+    "leftAt": 302.35,
+    "rightAt": 304.51,
+    "kicker": "EL ARREGLO DEL CONOCIDO"
+   },
+   "bed": "img/t30cablees_r16_tablero_abre_blur.jpg"
+  },
+  {
+   "t": 311.56666666666666,
+   "dur": 4.533333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 20
+  },
+  {
+   "t": 316.1,
+   "dur": 3.066666666666667,
+   "sec": "S3",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r23_breaker_abajo.jpg"
+  },
+  {
+   "t": 319.1666666666667,
+   "dur": 3.066666666666667,
+   "sec": "S3",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r16_tablero_abre.jpg"
+  },
+  {
+   "t": 322.23333333333335,
+   "dur": 4.933333333333334,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v23.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público",
+   "rate": 0.901
+  },
+  {
+   "t": 327.1666666666667,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 21
+  },
+  {
+   "t": 330.46666666666664,
+   "dur": 2.5,
+   "sec": "S3",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r20_desconecta_todo.jpg"
+  },
+  {
+   "t": 332.96666666666664,
+   "dur": 3.3333333333333335,
+   "sec": "S3",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a25_cable_pelado.mp4",
+   "real": false,
+   "rate": 0.719
+  },
+  {
+   "t": 336.3,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 22
+  },
+  {
+   "t": 339.3,
+   "dur": 8.766666666666667,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "BigStat",
+   "props": {
+    "value": 2,
+    "unit": "veces",
+    "label": "SI UN BREAKER SE BOTA",
+    "photo": "img/t30cablees_a20_breaker_botado.jpg",
+    "at": 339.61,
+    "compare": "Desconecto todo y busco al culpable.",
+    "compareAt": 340.77,
+    "tone": "white",
+    "prefix": ""
+   },
+   "bed": "img/t30cablees_r16_tablero_abre_blur.jpg"
+  },
+  {
+   "t": 348.06666666666666,
+   "dur": 9.8,
+   "kind": "componente",
+   "sec": "S3",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "EN LA CASA DEL MAESTRO RAMIRO",
+    "title": "Las 2 de 7",
+    "items": [
+     {
+      "text": "1. Nada que caliente en una extensión o pulpo"
+     },
+     {
+      "text": "2. El breaker que se bota se escucha"
+     }
+    ],
+    "bed": "img/t30cablees_a19_breakers.jpg"
+   },
+   "bed": "img/t30cablees_r16_tablero_abre_blur.jpg"
+  },
+  {
+   "t": 357.85,
+   "dur": 3.5,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 3",
+    "part": "CORTAR Y COMPROBAR"
+   },
+   "bed": "img/t30cablees_r23_breaker_abajo_blur.jpg"
+  },
+  {
+   "t": 357.8666666666667,
+   "dur": 3.2333333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 23
+  },
+  {
+   "t": 361.1,
+   "dur": 2.8333333333333335,
+   "sec": "S4",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r27_apagador.jpg"
+  },
+  {
+   "t": 363.93333333333334,
+   "dur": 2.8,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e18.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 366.73333333333335,
+   "dur": 4.966666666666667,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a27_apagador.mp4",
+   "real": false,
+   "rate": 0.609
+  },
+  {
+   "t": 371.7,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 24
+  },
+  {
+   "t": 376.3,
+   "dur": 4.266666666666667,
+   "sec": "S4",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r34_gfci_test.jpg"
+  },
+  {
+   "t": 380.56666666666666,
+   "dur": 3.9,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e21.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 384.46666666666664,
+   "dur": 3.5,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e02.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 387.96666666666664,
+   "dur": 4.366666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 25
+  },
+  {
+   "t": 392.3333333333333,
+   "dur": 4.466666666666667,
+   "sec": "S4",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r25_etiqueta.jpg"
+  },
+  {
+   "t": 396.8,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 26
+  },
+  {
+   "t": 399.8,
+   "dur": 9.533333333333333,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "PullQuote",
+   "props": {
+    "quote": "Las etiquetas mienten. Los apagadores mienten. El tester no.",
+    "who": "Su tío, el primer maestro",
+    "source": "Lo que le dijo a Ramiro a los diecinueve",
+    "at": 400.11,
+    "until": 405.11,
+    "highlight": "El tester no.",
+    "bed": "img/t30cablees_a29_tester_brilla.jpg"
+   },
+   "bed": "img/t30cablees_r23_breaker_abajo_blur.jpg"
+  },
+  {
+   "t": 409.3333333333333,
+   "dur": 2.433333333333333,
+   "sec": "S4",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30cablees_real/t30cablees_c04.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 411.76666666666665,
+   "dur": 2.8,
+   "sec": "S4",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r28_caja_dos.jpg"
+  },
+  {
+   "t": 414.56666666666666,
+   "dur": 5.566666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 27
+  },
+  {
+   "t": 420.1333333333333,
+   "dur": 3.433333333333333,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30cablees_a18_tablero_cerrado.jpg"
+  },
+  {
+   "t": 423.56666666666666,
+   "dur": 3.4,
+   "sec": "S4",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r24_tester_contacto.jpg"
+  },
+  {
+   "t": 426.96666666666664,
+   "dur": 2.7333333333333334,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_h03.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Home Electrical (1915) · dominio público"
+  },
+  {
+   "t": 429.7,
+   "dur": 5.366666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 28
+  },
+  {
+   "t": 435.06666666666666,
+   "dur": 3.4,
+   "sec": "S4",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r29_tester_vivo.jpg"
+  },
+  {
+   "t": 438.46666666666664,
+   "dur": 3.4,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30cablees_a32_pila_tester.jpg"
+  },
+  {
+   "t": 441.8666666666667,
+   "dur": 3.4,
+   "sec": "S4",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r40_socket_roto.jpg"
+  },
+  {
+   "t": 445.26666666666665,
+   "dur": 5.766666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 29
+  },
+  {
+   "t": 451.03333333333336,
+   "dur": 2.7333333333333334,
+   "sec": "S4",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_h06.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · The Home Electrical (1915) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 453.76666666666665,
+   "dur": 2.7333333333333334,
+   "sec": "S4",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_s01.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Safety: Harm Hides at Home · dominio público"
+  },
+  {
+   "t": 456.5,
+   "dur": 4.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 30
+  },
+  {
+   "t": 460.8,
+   "dur": 8.766666666666667,
+   "kind": "componente",
+   "sec": "S4",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "SIEMPRE IGUAL",
+    "title": "Tres pasos · 30 segundos",
+    "items": [
+     {
+      "text": "Lo pruebo en algo vivo"
+     },
+     {
+      "text": "Corto el breaker"
+     },
+     {
+      "text": "Lo pruebo en lo que voy a tocar"
+     }
+    ],
+    "bed": "img/t30cablees_a33_cajon_cocina.jpg"
+   },
+   "bed": "img/t30cablees_r23_breaker_abajo_blur.jpg"
+  },
+  {
+   "t": 469.55,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 4",
+    "part": "LA TIERRA Y LA PROTECCIÓN CONTRA FUGAS"
+   },
+   "bed": "img/t30cablees_r31_clavija3_blur.jpg"
+  },
+  {
+   "t": 469.56666666666666,
+   "dur": 3.8666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 31
+  },
+  {
+   "t": 473.43333333333334,
+   "dur": 4.2,
+   "sec": "S5",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r31_clavija3.jpg"
+  },
+  {
+   "t": 477.6333333333333,
+   "dur": 2.6,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v33.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 480.23333333333335,
+   "dur": 3.2666666666666666,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a35_adaptador.mp4",
+   "real": false,
+   "rate": 0.808
+  },
+  {
+   "t": 483.5,
+   "dur": 3.3666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 32
+  },
+  {
+   "t": 486.8666666666667,
+   "dur": 4.333333333333333,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_y03.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Your Fire Department (1949) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 491.2,
+   "dur": 5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30cablees_a34_contacto_tierra.jpg",
+    "x": 960,
+    "y": 870,
+    "r": 100,
+    "note": "la salida de emergencia",
+    "chip": "FÍJESE",
+    "circleAt": 491.49,
+    "noteAt": 493.03
+   },
+   "bed": "img/t30cablees_r31_clavija3_blur.jpg"
+  },
+  {
+   "t": 496.2,
+   "dur": 3.966666666666667,
+   "sec": "S5",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30cablees_real/t30cablees_e07.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 500.1666666666667,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 33
+  },
+  {
+   "t": 503.76666666666665,
+   "dur": 4.166666666666667,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_v04.mp4",
+   "rate": 0.95,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 507.93333333333334,
+   "dur": 2.9,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v14.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 510.8333333333333,
+   "dur": 4.7,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v13.mp4",
+   "real": true,
+   "rate": 0.941,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 515.5333333333333,
+   "dur": 4.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 34
+  },
+  {
+   "t": 520.1333333333333,
+   "dur": 2.4,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_s10.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Safety: Harm Hides at Home · dominio público"
+  },
+  {
+   "t": 522.5333333333333,
+   "dur": 3.5,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a38_piso_mojado.mp4",
+   "real": false,
+   "rate": 0.845
+  },
+  {
+   "t": 526.0333333333333,
+   "dur": 2.6,
+   "sec": "S5",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r26_tio_tester.jpg"
+  },
+  {
+   "t": 528.6333333333333,
+   "dur": 3.1666666666666665,
+   "sec": "S5",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_n03.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Why Not Live? · dominio público"
+  },
+  {
+   "t": 531.8,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 35
+  },
+  {
+   "t": 535.7,
+   "dur": 4,
+   "sec": "S5",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v12.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 539.7,
+   "dur": 5,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30cablees_a39_gfci_bano.jpg",
+    "x": 950,
+    "y": 470,
+    "r": 120,
+    "note": "prueba · restablecer",
+    "chip": "FÍJESE",
+    "circleAt": 540,
+    "noteAt": 542.3
+   },
+   "bed": "img/t30cablees_r31_clavija3_blur.jpg"
+  },
+  {
+   "t": 544.7,
+   "dur": 3.3,
+   "sec": "S5",
+   "kind": "imagen",
+   "lugar": "ramiro",
+   "asset": "img/t30cablees_r35_gfci_reset.jpg"
+  },
+  {
+   "t": 548,
+   "dur": 4.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 36
+  },
+  {
+   "t": 552.1,
+   "dur": 3.933333333333333,
+   "sec": "S5",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r53_recorre_casa.jpg"
+  },
+  {
+   "t": 556.0333333333333,
+   "dur": 2.9,
+   "sec": "S5",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_h05.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · The Home Electrical (1915) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 558.9333333333333,
+   "dur": 3.4,
+   "sec": "S5",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r48_mira_luz.jpg"
+  },
+  {
+   "t": 562.3333333333334,
+   "dur": 3.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 37
+  },
+  {
+   "t": 565.4333333333333,
+   "dur": 3.2333333333333334,
+   "sec": "S5",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r36_secadora.jpg"
+  },
+  {
+   "t": 568.6666666666666,
+   "dur": 6.433333333333334,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "BigStat",
+   "props": {
+    "value": 1,
+    "unit": "vez al mes",
+    "label": "APRIETE EL BOTÓN DE PRUEBA",
+    "photo": "img/t30cablees_a40_secadora_lavabo.jpg",
+    "at": 568.96,
+    "compare": "Tiene que hacer clic y cortar.",
+    "compareAt": 572.62,
+    "tone": "white",
+    "prefix": ""
+   },
+   "bed": "img/t30cablees_r31_clavija3_blur.jpg"
+  },
+  {
+   "t": 575.1,
+   "dur": 2.6666666666666665,
+   "sec": "S5",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30cablees_real/t30cablees_v15.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 577.7666666666667,
+   "dur": 3.6666666666666665,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 38
+  },
+  {
+   "t": 581.4333333333333,
+   "dur": 2.4,
+   "sec": "S5",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r37_cuatro_dedos.jpg"
+  },
+  {
+   "t": 583.8333333333334,
+   "dur": 14.033333333333333,
+   "kind": "componente",
+   "sec": "S5",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "EN LA CASA DEL MAESTRO RAMIRO",
+    "title": "Vamos por la mitad",
+    "items": [
+     {
+      "text": "1. Nada que caliente en una extensión o pulpo"
+     },
+     {
+      "text": "2. El breaker que se bota se escucha"
+     },
+     {
+      "text": "3. Corto y compruebo con el tester"
+     },
+     {
+      "text": "4. La tierra no se quita"
+     }
+    ],
+    "bed": "img/t30cablees_a71_tablero_abierto.jpg"
+   },
+   "bed": "img/t30cablees_r31_clavija3_blur.jpg"
+  },
+  {
+   "t": 597.8666666666667,
+   "dur": 4.366666666666666,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 39
+  },
+  {
+   "t": 599.08,
+   "dur": 4.2,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 5",
+    "part": "EL FOCO QUE DICE LA LÁMPARA"
+   },
+   "bed": "img/t30cablees_r37_cuatro_dedos_blur.jpg"
+  },
+  {
+   "t": 602.2333333333333,
+   "dur": 3.066666666666667,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v08.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 605.3,
+   "dur": 3.066666666666667,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_c03.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 608.3666666666667,
+   "dur": 5,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30cablees_a43_socket_etiqueta.jpg",
+    "x": 980,
+    "y": 510,
+    "r": 120,
+    "note": "máximo tantos watts",
+    "chip": "FÍJESE",
+    "circleAt": 608.66,
+    "noteAt": 610.54
+   },
+   "bed": "img/t30cablees_r37_cuatro_dedos_blur.jpg"
+  },
+  {
+   "t": 613.3666666666667,
+   "dur": 3.3333333333333335,
+   "sec": "S6",
+   "kind": "imagen",
+   "lugar": "ramiro",
+   "asset": "img/t30cablees_r39_foco_grande.jpg"
+  },
+  {
+   "t": 616.7,
+   "dur": 3.1666666666666665,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 40
+  },
+  {
+   "t": 619.8666666666667,
+   "dur": 3.8666666666666667,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v27.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 623.7333333333333,
+   "dur": 3.8333333333333335,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a46_socket_roto.mp4",
+   "real": false,
+   "rate": 0.799
+  },
+  {
+   "t": 627.5666666666667,
+   "dur": 3.933333333333333,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e11.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 631.5,
+   "dur": 5.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 41
+  },
+  {
+   "t": 637.3,
+   "dur": 4.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 42
+  },
+  {
+   "t": 642.2666666666667,
+   "dur": 9.6,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30cablees_a44_foco_filamento.jpg",
+    "rightImg": "img/t30cablees_a48_led_base.jpg",
+    "leftHead": "FOCO DE FILAMENTO",
+    "rightHead": "FOCO LED",
+    "leftText": "Calentaba muchísimo",
+    "rightText": "Calienta poco",
+    "stamp": "",
+    "leftAt": 642.56,
+    "rightAt": 646.54,
+    "kicker": "ANTES · HOY"
+   },
+   "bed": "img/t30cablees_r37_cuatro_dedos_blur.jpg"
+  },
+  {
+   "t": 651.8666666666667,
+   "dur": 2.8666666666666667,
+   "sec": "S6",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30cablees_real/t30cablees_e03.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 654.7333333333333,
+   "dur": 2.8666666666666667,
+   "sec": "S6",
+   "kind": "clip",
+   "lugar": "escena",
+   "asset": "broll/t30cablees_ag/t30cablees_a47_focos_cajon.mp4",
+   "real": false,
+   "rate": 0.923
+  },
+  {
+   "t": 657.6,
+   "dur": 4.833333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 43
+  },
+  {
+   "t": 662.4333333333333,
+   "dur": 2.8666666666666667,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_c06.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 665.3,
+   "dur": 2.9,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_k04.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Know the Cause (1954) · dominio público"
+  },
+  {
+   "t": 668.2,
+   "dur": 2.8666666666666667,
+   "sec": "S6",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_h04.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Home Electrical (1915) · dominio público"
+  },
+  {
+   "t": 671.0666666666667,
+   "dur": 2.466666666666667,
+   "sec": "S6",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_n04.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Why Not Live? · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 673.5333333333333,
+   "dur": 5.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 44
+  },
+  {
+   "t": 679.2,
+   "dur": 13,
+   "kind": "componente",
+   "sec": "S6",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "EN LA CASA DEL MAESTRO RAMIRO",
+    "title": "Las 5 de 7",
+    "items": [
+     {
+      "text": "1. Nada que caliente en una extensión o pulpo"
+     },
+     {
+      "text": "2. El breaker que se bota se escucha"
+     },
+     {
+      "text": "3. Corto y compruebo con el tester"
+     },
+     {
+      "text": "4. La tierra no se quita"
+     },
+     {
+      "text": "5. El foco que dice la lámpara"
+     }
+    ],
+    "bed": "img/t30cablees_a49_lampara_recableada.jpg"
+   },
+   "bed": "img/t30cablees_r37_cuatro_dedos_blur.jpg"
+  },
+  {
+   "t": 692.2,
+   "dur": 5.7,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 45
+  },
+  {
+   "t": 692.2,
+   "dur": 4.48,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 6",
+    "part": "NADA CARGANDO DE NOCHE EN LA CAMA"
+   },
+   "bed": "img/t30cablees_r42_cel_cama_blur.jpg"
+  },
+  {
+   "t": 697.9,
+   "dur": 2.3666666666666667,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a51_tableta_sillon.mp4",
+   "real": false,
+   "rate": 1
+  },
+  {
+   "t": 700.2666666666667,
+   "dur": 2.6,
+   "sec": "S7",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r43_bateria_scooter.jpg"
+  },
+  {
+   "t": 702.8666666666667,
+   "dur": 3.966666666666667,
+   "sec": "S7",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r45_cargador_abierto.jpg"
+  },
+  {
+   "t": 706.8333333333334,
+   "dur": 3.966666666666667,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_s07.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Safety: Harm Hides at Home · dominio público"
+  },
+  {
+   "t": 710.8,
+   "dur": 5.666666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 46
+  },
+  {
+   "t": 716.4666666666667,
+   "dur": 2.6,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_s06.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Safety: Harm Hides at Home · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 719.0666666666667,
+   "dur": 2.6,
+   "sec": "S7",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e20.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 721.6666666666666,
+   "dur": 4.3,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_k03.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Know the Cause (1954) · dominio público"
+  },
+  {
+   "t": 725.9666666666667,
+   "dur": 2.4,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_w06.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · A Word to the Wives (c. 1955) · dominio público"
+  },
+  {
+   "t": 728.3666666666667,
+   "dur": 6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 47
+  },
+  {
+   "t": 734.3666666666667,
+   "dur": 3.5,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v09.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 737.8666666666667,
+   "dur": 3.2,
+   "sec": "S7",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a55_cobijas.mp4",
+   "real": false,
+   "rate": 0.87
+  },
+  {
+   "t": 741.0666666666667,
+   "dur": 11.233333333333333,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30cablees_a50_cel_almohada.jpg",
+    "rightImg": "img/t30cablees_a56_buro_cargando.jpg",
+    "leftHead": "ENTRE COBIJAS",
+    "rightHead": "SOBRE ALGO DURO",
+    "leftText": "El calor no tiene a dónde irse",
+    "rightText": "Con aire alrededor",
+    "stamp": "",
+    "leftAt": 741.38,
+    "rightAt": 750.5,
+    "kicker": "DÓNDE CARGA EL CELULAR"
+   },
+   "bed": "img/t30cablees_r42_cel_cama_blur.jpg"
+  },
+  {
+   "t": 752.3,
+   "dur": 3.3,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 48
+  },
+  {
+   "t": 755.6,
+   "dur": 4.566666666666666,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e16.mp4",
+   "real": true,
+   "rate": 0.972,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 760.1666666666666,
+   "dur": 2.6333333333333333,
+   "sec": "S7",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e10.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 762.8,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 49
+  },
+  {
+   "t": 766.9333333333333,
+   "dur": 10.133333333333333,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30cablees_a58_cargador_bueno.jpg",
+    "rightImg": "img/t30cablees_a57_cargador_barato.jpg",
+    "leftHead": "CARGADOR SERIO",
+    "rightHead": "CARGADOR PIRATA",
+    "leftText": "Protecciones que cortan",
+    "rightText": "A veces ni la mitad",
+    "stamp": "",
+    "leftAt": 767.22,
+    "rightAt": 775.26,
+    "kicker": "POR FUERA SE VEN IGUAL"
+   },
+   "bed": "img/t30cablees_r42_cel_cama_blur.jpg"
+  },
+  {
+   "t": 777.0666666666667,
+   "dur": 3.1,
+   "sec": "S7",
+   "kind": "imagen",
+   "lugar": "ramiro",
+   "asset": "img/t30cablees_r46_dos_cargadores.jpg"
+  },
+  {
+   "t": 780.1666666666666,
+   "dur": 4.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 50
+  },
+  {
+   "t": 784.2666666666667,
+   "dur": 3.1333333333333333,
+   "sec": "S7",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_h02.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Home Electrical (1915) · dominio público"
+  },
+  {
+   "t": 787.4,
+   "dur": 13,
+   "kind": "componente",
+   "sec": "S7",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "EN LA CASA DEL MAESTRO RAMIRO",
+    "title": "Las 6 de 7",
+    "items": [
+     {
+      "text": "1. Nada que caliente en una extensión o pulpo"
+     },
+     {
+      "text": "2. El breaker que se bota se escucha"
+     },
+     {
+      "text": "3. Corto y compruebo con el tester"
+     },
+     {
+      "text": "4. La tierra no se quita"
+     },
+     {
+      "text": "5. El foco que dice la lámpara"
+     },
+     {
+      "text": "6. Nada cargando entre cobijas"
+     }
+    ],
+    "bed": "img/t30cablees_a53_baterias.jpg"
+   },
+   "bed": "img/t30cablees_r42_cel_cama_blur.jpg"
+  },
+  {
+   "t": 800.4,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 51
+  },
+  {
+   "t": 800.96,
+   "dur": 3.92,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "ActChip",
+   "props": {
+    "fileNo": "Nº 7",
+    "part": "LOS AVISOS DE LA CASA"
+   },
+   "bed": "img/t30cablees_r47_mano_placa_blur.jpg"
+  },
+  {
+   "t": 804.5333333333333,
+   "dur": 4.066666666666666,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v31.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 808.6,
+   "dur": 4.066666666666666,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v01.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 812.6666666666666,
+   "dur": 2.7,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r05_cocina_cliente.jpg"
+  },
+  {
+   "t": 815.3666666666667,
+   "dur": 4.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 52
+  },
+  {
+   "t": 819.7666666666667,
+   "dur": 4.3,
+   "sec": "S8",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r47_mano_placa.jpg"
+  },
+  {
+   "t": 824.0666666666667,
+   "dur": 2.8,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_c02.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 826.8666666666667,
+   "dur": 3.8666666666666667,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v17.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 830.7333333333333,
+   "dur": 3.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 53
+  },
+  {
+   "t": 834.5333333333333,
+   "dur": 2.433333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_k01.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Know the Cause (1954) · dominio público"
+  },
+  {
+   "t": 836.9666666666667,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_k02.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Know the Cause (1954) · dominio público"
+  },
+  {
+   "t": 841,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "ramiro",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_w03.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · A Word to the Wives (c. 1955) · dominio público",
+   "rate": 0.984
+  },
+  {
+   "t": 845.0333333333333,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 54
+  },
+  {
+   "t": 848.6333333333333,
+   "dur": 4.033333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_w07.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · A Word to the Wives (c. 1955) · dominio público"
+  },
+  {
+   "t": 852.6666666666666,
+   "dur": 4,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a01_chispa_contacto.mp4",
+   "real": false,
+   "rate": 0.749
+  },
+  {
+   "t": 856.6666666666666,
+   "dur": 3.6,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_ag/t30cablees_a63_clavija_floja.mp4",
+   "real": false,
+   "rate": 0.85
+  },
+  {
+   "t": 860.2666666666667,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 55
+  },
+  {
+   "t": 863.8666666666667,
+   "dur": 5.033333333333333,
+   "sec": "S8",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r50_oreja_tablero.jpg"
+  },
+  {
+   "t": 868.9,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 56
+  },
+  {
+   "t": 871.9,
+   "dur": 12.066666666666666,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "LA CASA SIEMPRE AVISA ANTES",
+    "title": "Los 5 avisos",
+    "items": [
+     {
+      "text": "Contacto o apagador tibio"
+     },
+     {
+      "text": "Olor a plástico quemado que va y viene"
+     },
+     {
+      "text": "Luces que parpadean o bajan"
+     },
+     {
+      "text": "Chispita o clavija floja"
+     },
+     {
+      "text": "Zumbido del tablero o un apagador"
+     }
+    ],
+    "bed": "img/t30cablees_a64_tablero_viejo.jpg"
+   },
+   "bed": "img/t30cablees_r47_mano_placa_blur.jpg"
+  },
+  {
+   "t": 883.9666666666667,
+   "dur": 1.2,
+   "sec": "S8",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r22_huele.jpg"
+  },
+  {
+   "t": 885.1666666666666,
+   "dur": 5.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 57
+  },
+  {
+   "t": 890.9666666666667,
+   "dur": 4.3,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e12.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 895.2666666666667,
+   "dur": 4.133333333333334,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 58
+  },
+  {
+   "t": 899.4,
+   "dur": 10.533333333333333,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SceneCallout",
+   "props": {
+    "photo": "img/t30cablees_a65_empalme_cinta.jpg",
+    "x": 975,
+    "y": 430,
+    "r": 190,
+    "note": "sin caja, sin nada",
+    "chip": "FÍJESE",
+    "circleAt": 899.69,
+    "noteAt": 908.13
+   },
+   "bed": "img/t30cablees_r47_mano_placa_blur.jpg"
+  },
+  {
+   "t": 909.9333333333333,
+   "dur": 3.3,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v10.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 913.2333333333333,
+   "dur": 2.4,
+   "sec": "S8",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r51_empalme_techo.jpg"
+  },
+  {
+   "t": 915.6333333333333,
+   "dur": 4.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 59
+  },
+  {
+   "t": 920.5333333333333,
+   "dur": 2.6333333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e14.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 923.1666666666666,
+   "dur": 2.6333333333333333,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "imagen",
+   "asset": "img/t30cablees_a22_cable_pared.jpg"
+  },
+  {
+   "t": 925.8,
+   "dur": 7.766666666666667,
+   "kind": "componente",
+   "sec": "S8",
+   "comp": "SplitVs",
+   "props": {
+    "leftImg": "img/t30cablees_a66_cinta_seca.jpg",
+    "rightImg": "img/t30cablees_a67_caja_registro.jpg",
+    "leftHead": "ESCONDIDO",
+    "rightHead": "EN CAJA DE REGISTRO",
+    "leftText": "Cinta que se seca donde nadie lo ve",
+    "rightText": "Con tapa y conectores buenos",
+    "stamp": "",
+    "leftAt": 926.09,
+    "rightAt": 928.57,
+    "kicker": "LOS EMPALMES"
+   },
+   "bed": "img/t30cablees_r47_mano_placa_blur.jpg"
+  },
+  {
+   "t": 933.5666666666667,
+   "dur": 5.233333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 60
+  },
+  {
+   "t": 938.8,
+   "dur": 3.966666666666667,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 61
+  },
+  {
+   "t": 942.7666666666667,
+   "dur": 2.6333333333333333,
+   "sec": "S8",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_v32.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 945.4,
+   "dur": 3.6,
+   "sec": "S8",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_c05.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 949,
+   "dur": 3,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 62
+  },
+  {
+   "t": 952,
+   "dur": 17.1,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "PARA QUE LE QUEDE CLARO",
+    "title": "Las 7 del Maestro Ramiro",
+    "items": [
+     {
+      "text": "1. Nada que caliente en una extensión o pulpo"
+     },
+     {
+      "text": "2. El breaker que se bota se escucha"
+     },
+     {
+      "text": "3. Corto y compruebo con el tester"
+     },
+     {
+      "text": "4. La tierra no se quita"
+     },
+     {
+      "text": "5. El foco que dice la lámpara"
+     },
+     {
+      "text": "6. Nada cargando entre cobijas"
+     },
+     {
+      "text": "7. Atiendo los avisos y los empalmes van en caja"
+     }
+    ],
+    "bed": "img/t30cablees_a69_casa_vuelta.jpg"
+   },
+   "bed": "img/t30cablees_r53_recorre_casa_blur.jpg"
+  },
+  {
+   "t": 969.1,
+   "dur": 3.6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 63
+  },
+  {
+   "t": 972.7,
+   "dur": 3.066666666666667,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_d07.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · More Dangerous Than Dynamite (1941) · dominio público"
+  },
+  {
+   "t": 975.7666666666667,
+   "dur": 3.066666666666667,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_c07.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 978.8333333333334,
+   "dur": 3.066666666666667,
+   "sec": "S9",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r42_cel_cama.jpg"
+  },
+  {
+   "t": 981.9,
+   "dur": 5.4,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 64
+  },
+  {
+   "t": 987.3,
+   "dur": 2.966666666666667,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e04.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 990.2666666666667,
+   "dur": 2.933333333333333,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_c09.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 993.2,
+   "dur": 8.866666666666667,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "RayChecklist",
+   "props": {
+    "kicker": "SU TAREA DE ESTA SEMANA",
+    "title": "Dos cosas nada más",
+    "items": [
+     {
+      "text": "Busque pulpos en su casa"
+     },
+     {
+      "text": "Ponga la mano en las placas de sus contactos"
+     }
+    ],
+    "bed": "img/t30cablees_a10_pulpo_tele.jpg"
+   },
+   "bed": "img/t30cablees_r53_recorre_casa_blur.jpg"
+  },
+  {
+   "t": 1002.0666666666667,
+   "dur": 4.8,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 65
+  },
+  {
+   "t": 1006.8666666666667,
+   "dur": 2.8333333333333335,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "real": true,
+   "asset": "broll/t30cablees_real/t30cablees_v22.mp4",
+   "rate": 1,
+   "credit": "Prelinger Archives · Vista Stock Shots: Home Construction (1960) · dominio público"
+  },
+  {
+   "t": 1009.7,
+   "dur": 3.566666666666667,
+   "sec": "S9",
+   "lugar": "escena",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_s08.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · Safety: Harm Hides at Home · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 1013.2666666666667,
+   "dur": 3.6,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_h07.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Home Electrical (1915) · dominio público"
+  },
+  {
+   "t": 1016.8666666666667,
+   "dur": 6,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 66
+  },
+  {
+   "t": 1022.8666666666667,
+   "dur": 3,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_w02.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · A Word to the Wives (c. 1955) · dominio público"
+  },
+  {
+   "t": 1025.8666666666666,
+   "dur": 6.433333333333334,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "FileStamp",
+   "props": {
+    "fileNo": "02",
+    "label": "CUÉNTEME EN LOS COMENTARIOS",
+    "title": "¿CUÁL DE LAS 7 TIENE?",
+    "sub": "Sea honesto, aquí nadie lo regaña",
+    "stamp": "",
+    "typeAt": 1026.17,
+    "stampAt": 1029.65,
+    "folder": "img/wb_folder.jpg"
+   },
+   "bed": "img/t30cablees_r53_recorre_casa_blur.jpg"
+  },
+  {
+   "t": 1032.3,
+   "dur": 3.033333333333333,
+   "sec": "S9",
+   "kind": "clip",
+   "lugar": "archivo",
+   "asset": "broll/t30cablees_real/t30cablees_c01.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Crimes of Carelessness (1947) · dominio público"
+  },
+  {
+   "t": 1035.3333333333333,
+   "dur": 3,
+   "sec": "S9",
+   "kind": "clip",
+   "lugar": "ramiro",
+   "asset": "broll/t30cablees_real/t30cablees_e08.mp4",
+   "real": true,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público",
+   "rate": 1
+  },
+  {
+   "t": 1038.3333333333333,
+   "dur": 3.933333333333333,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 67
+  },
+  {
+   "t": 1042.2666666666667,
+   "dur": 4.9,
+   "sec": "S9",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r33_lavadora.jpg"
+  },
+  {
+   "t": 1047.1666666666667,
+   "dur": 4.1,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 68
+  },
+  {
+   "t": 1051.2666666666667,
+   "dur": 10.233333333333333,
+   "kind": "componente",
+   "sec": "S9",
+   "comp": "BigStat",
+   "props": {
+    "value": 10,
+    "unit": "minutos",
+    "label": "LA PRÓXIMA SEMANA: LA CASA USADA",
+    "photo": "img/t30cablees_a70_casa_venta.jpg",
+    "at": 1051.55,
+    "compare": "Suscríbase y active la campanita.",
+    "compareAt": 1059.41,
+    "tone": "white",
+    "prefix": ""
+   },
+   "bed": "img/t30cablees_r53_recorre_casa_blur.jpg"
+  },
+  {
+   "t": 1061.5,
+   "dur": 2.6,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_e13.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · The Electrician (1942) · dominio público"
+  },
+  {
+   "t": 1064.1,
+   "dur": 3.9,
+   "sec": "AV",
+   "kind": "avatar",
+   "lugar": "avatar",
+   "win": 69
+  },
+  {
+   "t": 1068,
+   "dur": 2.8666666666666667,
+   "sec": "S9",
+   "lugar": "archivo",
+   "kind": "clip",
+   "asset": "broll/t30cablees_real/t30cablees_s09.mp4",
+   "real": true,
+   "rate": 1,
+   "credit": "Prelinger Archives · Safety: Harm Hides at Home · dominio público"
+  },
+  {
+   "t": 1070.8666666666666,
+   "dur": 2.8666666666666667,
+   "sec": "S9",
+   "lugar": "ramiro",
+   "kind": "imagen",
+   "asset": "img/t30cablees_r56_cierra_garage.jpg"
+  }
+ ]
+}

@@ -1,0 +1,908 @@
+[
+ {
+  "key": "clip_3633",
+  "src": "broll/t30cablees_real/t30cablees_e06.mp4",
+  "start": 3.6333333333333333,
+  "dur": 3.1666666666666665
+ },
+ {
+  "key": "imagen_15200",
+  "src": "img/t30cablees_a05_humo_contacto.jpg",
+  "start": 15.2,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_24033",
+  "src": "broll/t30cablees_real/t30cablees_y01.mp4",
+  "start": 24.033333333333335,
+  "dur": 4
+ },
+ {
+  "key": "clip_28033",
+  "src": "broll/t30cablees_real/t30cablees_d02.mp4",
+  "start": 28.033333333333335,
+  "dur": 4.2
+ },
+ {
+  "key": "clip_32233",
+  "src": "broll/t30cablees_real/t30cablees_s04.mp4",
+  "start": 32.233333333333334,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_38567",
+  "src": "broll/t30cablees_real/t30cablees_n02.mp4",
+  "start": 38.56666666666667,
+  "dur": 2.4
+ },
+ {
+  "key": "imagen_40967",
+  "src": "img/t30cablees_r02_entra_casa.jpg",
+  "start": 40.96666666666667,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "imagen_44233",
+  "src": "img/t30cablees_r03_mira_quemado.jpg",
+  "start": 44.233333333333334,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_46633",
+  "src": "broll/t30cablees_real/t30cablees_c08.mp4",
+  "start": 46.63333333333333,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "imagen_53800",
+  "src": "img/t30cablees_r04_senora_habla.jpg",
+  "start": 53.8,
+  "dur": 4.133333333333334
+ },
+ {
+  "key": "clip_57933",
+  "src": "broll/t30cablees_real/t30cablees_y04.mp4",
+  "start": 57.93333333333333,
+  "dur": 3.8
+ },
+ {
+  "key": "imagen_61733",
+  "src": "img/t30cablees_r21_conecta_uno.jpg",
+  "start": 61.733333333333334,
+  "dur": 2.3333333333333335
+ },
+ {
+  "key": "imagen_69467",
+  "src": "img/t30cablees_a24_muchos_aparatos.jpg",
+  "start": 69.46666666666667,
+  "dur": 4.966666666666667
+ },
+ {
+  "key": "imagen_74433",
+  "src": "img/t30cablees_r01_tester_bolsa.jpg",
+  "start": 74.43333333333334,
+  "dur": 2.7
+ },
+ {
+  "key": "clip_77133",
+  "src": "broll/t30cablees_real/t30cablees_k06.mp4",
+  "start": 77.13333333333334,
+  "dur": 4.444933333333334
+ },
+ {
+  "key": "imagen_97433",
+  "src": "img/t30cablees_r07_manos.jpg",
+  "start": 97.43333333333334,
+  "dur": 2.3666666666666667
+ },
+ {
+  "key": "clip_104033",
+  "src": "broll/t30cablees_real/t30cablees_y05.mp4",
+  "start": 104.03333333333333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_107033",
+  "src": "img/t30cablees_r10_levanta_tapete.jpg",
+  "start": 107.03333333333333,
+  "dur": 2.966666666666667
+ },
+ {
+  "key": "imagen_110000",
+  "src": "img/t30cablees_a31_arreglo_compadre.jpg",
+  "start": 110,
+  "dur": 2.966666666666667
+ },
+ {
+  "key": "imagen_112967",
+  "src": "img/t30cablees_r11_cable_mano.jpg",
+  "start": 112.96666666666667,
+  "dur": 2.7666666666666666
+ },
+ {
+  "key": "imagen_120633",
+  "src": "img/t30cablees_r09_desenchufa.jpg",
+  "start": 120.63333333333334,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_124567",
+  "src": "broll/t30cablees_ag/t30cablees_a11_ext_tapete.mp4",
+  "start": 124.56666666666666,
+  "dur": 2.784
+ },
+ {
+  "key": "clip_127467",
+  "src": "broll/t30cablees_real/t30cablees_d03.mp4",
+  "start": 127.46666666666667,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "clip_134533",
+  "src": "broll/t30cablees_real/t30cablees_v26.mp4",
+  "start": 134.53333333333333,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_138467",
+  "src": "broll/t30cablees_real/t30cablees_h01.mp4",
+  "start": 138.46666666666667,
+  "dur": 3.1
+ },
+ {
+  "key": "imagen_141567",
+  "src": "img/t30cablees_r14_derretida.jpg",
+  "start": 141.56666666666666,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_149333",
+  "src": "broll/t30cablees_ag/t30cablees_a13_podadora.mp4",
+  "start": 149.33333333333334,
+  "dur": 2.9463999999999997
+ },
+ {
+  "key": "clip_153567",
+  "src": "broll/t30cablees_ag/t30cablees_a14_arbolito.mp4",
+  "start": 153.56666666666666,
+  "dur": 3.043
+ },
+ {
+  "key": "imagen_156967",
+  "src": "img/t30cablees_r12_calentador_ext.jpg",
+  "start": 156.96666666666667,
+  "dur": 3.3666666666666667
+ },
+ {
+  "key": "clip_164433",
+  "src": "broll/t30cablees_real/t30cablees_v02.mp4",
+  "start": 164.43333333333334,
+  "dur": 3.6333333333333333
+ },
+ {
+  "key": "imagen_168067",
+  "src": "img/t30cablees_a15_cable_cuarteado.jpg",
+  "start": 168.06666666666666,
+  "dur": 3.6
+ },
+ {
+  "key": "imagen_171667",
+  "src": "img/t30cablees_r13_cable_cuarteado.jpg",
+  "start": 171.66666666666666,
+  "dur": 3
+ },
+ {
+  "key": "clip_177733",
+  "src": "broll/t30cablees_real/t30cablees_d04.mp4",
+  "start": 177.73333333333332,
+  "dur": 4.4252
+ },
+ {
+  "key": "clip_182667",
+  "src": "broll/t30cablees_real/t30cablees_y02.mp4",
+  "start": 182.66666666666666,
+  "dur": 3.8666666666666667
+ },
+ {
+  "key": "imagen_226067",
+  "src": "img/t30cablees_r08_pulpo_seniala.jpg",
+  "start": 226.06666666666666,
+  "dur": 2.3666666666666667
+ },
+ {
+  "key": "imagen_228433",
+  "src": "img/t30cablees_r15_contacto_nuevo.jpg",
+  "start": 228.43333333333334,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_246967",
+  "src": "broll/t30cablees_real/t30cablees_e19.mp4",
+  "start": 246.96666666666667,
+  "dur": 4.442666666666667
+ },
+ {
+  "key": "imagen_251500",
+  "src": "img/t30cablees_r17_breaker_dedo.jpg",
+  "start": 251.5,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_254600",
+  "src": "broll/t30cablees_real/t30cablees_w01.mp4",
+  "start": 254.6,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_261333",
+  "src": "broll/t30cablees_real/t30cablees_e01.mp4",
+  "start": 261.3333333333333,
+  "dur": 3.8333333333333335
+ },
+ {
+  "key": "clip_265167",
+  "src": "broll/t30cablees_real/t30cablees_d05.mp4",
+  "start": 265.1666666666667,
+  "dur": 4.4512
+ },
+ {
+  "key": "clip_274700",
+  "src": "broll/t30cablees_real/t30cablees_e22.mp4",
+  "start": 274.7,
+  "dur": 2.9
+ },
+ {
+  "key": "imagen_277600",
+  "src": "img/t30cablees_r18_dos_breakers.jpg",
+  "start": 277.6,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_280500",
+  "src": "broll/t30cablees_real/t30cablees_e09.mp4",
+  "start": 280.5,
+  "dur": 4.4603
+ },
+ {
+  "key": "clip_289667",
+  "src": "broll/t30cablees_real/t30cablees_e05.mp4",
+  "start": 289.6666666666667,
+  "dur": 2.433333333333333
+ },
+ {
+  "key": "clip_292100",
+  "src": "broll/t30cablees_real/t30cablees_e15.mp4",
+  "start": 292.1,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_295700",
+  "src": "broll/t30cablees_real/t30cablees_v11.mp4",
+  "start": 295.7,
+  "dur": 3.2666666666666666
+ },
+ {
+  "key": "imagen_316100",
+  "src": "img/t30cablees_r23_breaker_abajo.jpg",
+  "start": 316.1,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_319167",
+  "src": "img/t30cablees_r16_tablero_abre.jpg",
+  "start": 319.1666666666667,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_322233",
+  "src": "broll/t30cablees_real/t30cablees_v23.mp4",
+  "start": 322.23333333333335,
+  "dur": 4.444933333333334
+ },
+ {
+  "key": "imagen_330467",
+  "src": "img/t30cablees_r20_desconecta_todo.jpg",
+  "start": 330.46666666666664,
+  "dur": 2.5
+ },
+ {
+  "key": "clip_332967",
+  "src": "broll/t30cablees_ag/t30cablees_a25_cable_pelado.mp4",
+  "start": 332.96666666666664,
+  "dur": 2.3966666666666665
+ },
+ {
+  "key": "imagen_361100",
+  "src": "img/t30cablees_r27_apagador.jpg",
+  "start": 361.1,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_363933",
+  "src": "broll/t30cablees_real/t30cablees_e18.mp4",
+  "start": 363.93333333333334,
+  "dur": 2.8
+ },
+ {
+  "key": "clip_366733",
+  "src": "broll/t30cablees_ag/t30cablees_a27_apagador.mp4",
+  "start": 366.73333333333335,
+  "dur": 3.0247
+ },
+ {
+  "key": "imagen_376300",
+  "src": "img/t30cablees_r34_gfci_test.jpg",
+  "start": 376.3,
+  "dur": 4.266666666666667
+ },
+ {
+  "key": "clip_380567",
+  "src": "broll/t30cablees_real/t30cablees_e21.mp4",
+  "start": 380.56666666666666,
+  "dur": 3.9
+ },
+ {
+  "key": "clip_384467",
+  "src": "broll/t30cablees_real/t30cablees_e02.mp4",
+  "start": 384.46666666666664,
+  "dur": 3.5
+ },
+ {
+  "key": "imagen_392333",
+  "src": "img/t30cablees_r25_etiqueta.jpg",
+  "start": 392.3333333333333,
+  "dur": 4.466666666666667
+ },
+ {
+  "key": "clip_409333",
+  "src": "broll/t30cablees_real/t30cablees_c04.mp4",
+  "start": 409.3333333333333,
+  "dur": 2.433333333333333
+ },
+ {
+  "key": "imagen_411767",
+  "src": "img/t30cablees_r28_caja_dos.jpg",
+  "start": 411.76666666666665,
+  "dur": 2.8
+ },
+ {
+  "key": "imagen_420133",
+  "src": "img/t30cablees_a18_tablero_cerrado.jpg",
+  "start": 420.1333333333333,
+  "dur": 3.433333333333333
+ },
+ {
+  "key": "imagen_423567",
+  "src": "img/t30cablees_r24_tester_contacto.jpg",
+  "start": 423.56666666666666,
+  "dur": 3.4
+ },
+ {
+  "key": "clip_426967",
+  "src": "broll/t30cablees_real/t30cablees_h03.mp4",
+  "start": 426.96666666666664,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "imagen_435067",
+  "src": "img/t30cablees_r29_tester_vivo.jpg",
+  "start": 435.06666666666666,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_438467",
+  "src": "img/t30cablees_a32_pila_tester.jpg",
+  "start": 438.46666666666664,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_441867",
+  "src": "img/t30cablees_r40_socket_roto.jpg",
+  "start": 441.8666666666667,
+  "dur": 3.4
+ },
+ {
+  "key": "clip_451033",
+  "src": "broll/t30cablees_real/t30cablees_h06.mp4",
+  "start": 451.03333333333336,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "clip_453767",
+  "src": "broll/t30cablees_real/t30cablees_s01.mp4",
+  "start": 453.76666666666665,
+  "dur": 2.7333333333333334
+ },
+ {
+  "key": "imagen_473433",
+  "src": "img/t30cablees_r31_clavija3.jpg",
+  "start": 473.43333333333334,
+  "dur": 4.2
+ },
+ {
+  "key": "clip_477633",
+  "src": "broll/t30cablees_real/t30cablees_v33.mp4",
+  "start": 477.6333333333333,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_480233",
+  "src": "broll/t30cablees_ag/t30cablees_a35_adaptador.mp4",
+  "start": 480.23333333333335,
+  "dur": 2.639466666666667
+ },
+ {
+  "key": "clip_486867",
+  "src": "broll/t30cablees_real/t30cablees_y03.mp4",
+  "start": 486.8666666666667,
+  "dur": 4.333333333333333
+ },
+ {
+  "key": "clip_496200",
+  "src": "broll/t30cablees_real/t30cablees_e07.mp4",
+  "start": 496.2,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "clip_503767",
+  "src": "broll/t30cablees_real/t30cablees_v04.mp4",
+  "start": 503.76666666666665,
+  "dur": 3.9583333333333335
+ },
+ {
+  "key": "clip_507933",
+  "src": "broll/t30cablees_real/t30cablees_v14.mp4",
+  "start": 507.93333333333334,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_510833",
+  "src": "broll/t30cablees_real/t30cablees_v13.mp4",
+  "start": 510.8333333333333,
+  "dur": 4.4227
+ },
+ {
+  "key": "clip_520133",
+  "src": "broll/t30cablees_real/t30cablees_s10.mp4",
+  "start": 520.1333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_522533",
+  "src": "broll/t30cablees_ag/t30cablees_a38_piso_mojado.mp4",
+  "start": 522.5333333333333,
+  "dur": 2.9575
+ },
+ {
+  "key": "imagen_526033",
+  "src": "img/t30cablees_r26_tio_tester.jpg",
+  "start": 526.0333333333333,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_528633",
+  "src": "broll/t30cablees_real/t30cablees_n03.mp4",
+  "start": 528.6333333333333,
+  "dur": 3.1666666666666665
+ },
+ {
+  "key": "clip_535700",
+  "src": "broll/t30cablees_real/t30cablees_v12.mp4",
+  "start": 535.7,
+  "dur": 4
+ },
+ {
+  "key": "imagen_544700",
+  "src": "img/t30cablees_r35_gfci_reset.jpg",
+  "start": 544.7,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_552100",
+  "src": "img/t30cablees_r53_recorre_casa.jpg",
+  "start": 552.1,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_556033",
+  "src": "broll/t30cablees_real/t30cablees_h05.mp4",
+  "start": 556.0333333333333,
+  "dur": 2.9
+ },
+ {
+  "key": "imagen_558933",
+  "src": "img/t30cablees_r48_mira_luz.jpg",
+  "start": 558.9333333333333,
+  "dur": 3.4
+ },
+ {
+  "key": "imagen_565433",
+  "src": "img/t30cablees_r36_secadora.jpg",
+  "start": 565.4333333333333,
+  "dur": 3.2333333333333334
+ },
+ {
+  "key": "clip_575100",
+  "src": "broll/t30cablees_real/t30cablees_v15.mp4",
+  "start": 575.1,
+  "dur": 2.6666666666666665
+ },
+ {
+  "key": "imagen_581433",
+  "src": "img/t30cablees_r37_cuatro_dedos.jpg",
+  "start": 581.4333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_602233",
+  "src": "broll/t30cablees_real/t30cablees_v08.mp4",
+  "start": 602.2333333333333,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_605300",
+  "src": "broll/t30cablees_real/t30cablees_c03.mp4",
+  "start": 605.3,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_613367",
+  "src": "img/t30cablees_r39_foco_grande.jpg",
+  "start": 613.3666666666667,
+  "dur": 3.3333333333333335
+ },
+ {
+  "key": "clip_619867",
+  "src": "broll/t30cablees_real/t30cablees_v27.mp4",
+  "start": 619.8666666666667,
+  "dur": 3.8666666666666667
+ },
+ {
+  "key": "clip_623733",
+  "src": "broll/t30cablees_ag/t30cablees_a46_socket_roto.mp4",
+  "start": 623.7333333333333,
+  "dur": 3.0628333333333337
+ },
+ {
+  "key": "clip_627567",
+  "src": "broll/t30cablees_real/t30cablees_e11.mp4",
+  "start": 627.5666666666667,
+  "dur": 3.933333333333333
+ },
+ {
+  "key": "clip_651867",
+  "src": "broll/t30cablees_real/t30cablees_e03.mp4",
+  "start": 651.8666666666667,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_654733",
+  "src": "broll/t30cablees_ag/t30cablees_a47_focos_cajon.mp4",
+  "start": 654.7333333333333,
+  "dur": 2.6459333333333337
+ },
+ {
+  "key": "clip_662433",
+  "src": "broll/t30cablees_real/t30cablees_c06.mp4",
+  "start": 662.4333333333333,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_665300",
+  "src": "broll/t30cablees_real/t30cablees_k04.mp4",
+  "start": 665.3,
+  "dur": 2.9
+ },
+ {
+  "key": "clip_668200",
+  "src": "broll/t30cablees_real/t30cablees_h04.mp4",
+  "start": 668.2,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "clip_671067",
+  "src": "broll/t30cablees_real/t30cablees_n04.mp4",
+  "start": 671.0666666666667,
+  "dur": 2.466666666666667
+ },
+ {
+  "key": "clip_697900",
+  "src": "broll/t30cablees_ag/t30cablees_a51_tableta_sillon.mp4",
+  "start": 697.9,
+  "dur": 2.3666666666666667
+ },
+ {
+  "key": "imagen_700267",
+  "src": "img/t30cablees_r43_bateria_scooter.jpg",
+  "start": 700.2666666666667,
+  "dur": 2.6
+ },
+ {
+  "key": "imagen_702867",
+  "src": "img/t30cablees_r45_cargador_abierto.jpg",
+  "start": 702.8666666666667,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "clip_706833",
+  "src": "broll/t30cablees_real/t30cablees_s07.mp4",
+  "start": 706.8333333333334,
+  "dur": 3.966666666666667
+ },
+ {
+  "key": "clip_716467",
+  "src": "broll/t30cablees_real/t30cablees_s06.mp4",
+  "start": 716.4666666666667,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_719067",
+  "src": "broll/t30cablees_real/t30cablees_e20.mp4",
+  "start": 719.0666666666667,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_721667",
+  "src": "broll/t30cablees_real/t30cablees_k03.mp4",
+  "start": 721.6666666666666,
+  "dur": 4.3
+ },
+ {
+  "key": "clip_725967",
+  "src": "broll/t30cablees_real/t30cablees_w06.mp4",
+  "start": 725.9666666666667,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_734367",
+  "src": "broll/t30cablees_real/t30cablees_v09.mp4",
+  "start": 734.3666666666667,
+  "dur": 3.5
+ },
+ {
+  "key": "clip_737867",
+  "src": "broll/t30cablees_ag/t30cablees_a55_cobijas.mp4",
+  "start": 737.8666666666667,
+  "dur": 2.7840000000000003
+ },
+ {
+  "key": "clip_755600",
+  "src": "broll/t30cablees_real/t30cablees_e16.mp4",
+  "start": 755.6,
+  "dur": 4.4388
+ },
+ {
+  "key": "clip_760167",
+  "src": "broll/t30cablees_real/t30cablees_e10.mp4",
+  "start": 760.1666666666666,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "imagen_777067",
+  "src": "img/t30cablees_r46_dos_cargadores.jpg",
+  "start": 777.0666666666667,
+  "dur": 3.1
+ },
+ {
+  "key": "clip_784267",
+  "src": "broll/t30cablees_real/t30cablees_h02.mp4",
+  "start": 784.2666666666667,
+  "dur": 3.1333333333333333
+ },
+ {
+  "key": "clip_804533",
+  "src": "broll/t30cablees_real/t30cablees_v31.mp4",
+  "start": 804.5333333333333,
+  "dur": 4.066666666666666
+ },
+ {
+  "key": "clip_808600",
+  "src": "broll/t30cablees_real/t30cablees_v01.mp4",
+  "start": 808.6,
+  "dur": 4.066666666666666
+ },
+ {
+  "key": "imagen_812667",
+  "src": "img/t30cablees_r05_cocina_cliente.jpg",
+  "start": 812.6666666666666,
+  "dur": 2.7
+ },
+ {
+  "key": "imagen_819767",
+  "src": "img/t30cablees_r47_mano_placa.jpg",
+  "start": 819.7666666666667,
+  "dur": 4.3
+ },
+ {
+  "key": "clip_824067",
+  "src": "broll/t30cablees_real/t30cablees_c02.mp4",
+  "start": 824.0666666666667,
+  "dur": 2.8
+ },
+ {
+  "key": "clip_826867",
+  "src": "broll/t30cablees_real/t30cablees_v17.mp4",
+  "start": 826.8666666666667,
+  "dur": 3.8666666666666667
+ },
+ {
+  "key": "clip_834533",
+  "src": "broll/t30cablees_real/t30cablees_k01.mp4",
+  "start": 834.5333333333333,
+  "dur": 2.433333333333333
+ },
+ {
+  "key": "clip_836967",
+  "src": "broll/t30cablees_real/t30cablees_k02.mp4",
+  "start": 836.9666666666667,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_841000",
+  "src": "broll/t30cablees_real/t30cablees_w03.mp4",
+  "start": 841,
+  "dur": 3.9688
+ },
+ {
+  "key": "clip_848633",
+  "src": "broll/t30cablees_real/t30cablees_w07.mp4",
+  "start": 848.6333333333333,
+  "dur": 4.033333333333333
+ },
+ {
+  "key": "clip_852667",
+  "src": "broll/t30cablees_ag/t30cablees_a01_chispa_contacto.mp4",
+  "start": 852.6666666666666,
+  "dur": 2.996
+ },
+ {
+  "key": "clip_856667",
+  "src": "broll/t30cablees_ag/t30cablees_a63_clavija_floja.mp4",
+  "start": 856.6666666666666,
+  "dur": 3.06
+ },
+ {
+  "key": "imagen_863867",
+  "src": "img/t30cablees_r50_oreja_tablero.jpg",
+  "start": 863.8666666666667,
+  "dur": 5.033333333333333
+ },
+ {
+  "key": "imagen_883967",
+  "src": "img/t30cablees_r22_huele.jpg",
+  "start": 883.9666666666667,
+  "dur": 1.2
+ },
+ {
+  "key": "clip_890967",
+  "src": "broll/t30cablees_real/t30cablees_e12.mp4",
+  "start": 890.9666666666667,
+  "dur": 4.3
+ },
+ {
+  "key": "clip_909933",
+  "src": "broll/t30cablees_real/t30cablees_v10.mp4",
+  "start": 909.9333333333333,
+  "dur": 3.3
+ },
+ {
+  "key": "imagen_913233",
+  "src": "img/t30cablees_r51_empalme_techo.jpg",
+  "start": 913.2333333333333,
+  "dur": 2.4
+ },
+ {
+  "key": "clip_920533",
+  "src": "broll/t30cablees_real/t30cablees_e14.mp4",
+  "start": 920.5333333333333,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "imagen_923167",
+  "src": "img/t30cablees_a22_cable_pared.jpg",
+  "start": 923.1666666666666,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "clip_942767",
+  "src": "broll/t30cablees_real/t30cablees_v32.mp4",
+  "start": 942.7666666666667,
+  "dur": 2.6333333333333333
+ },
+ {
+  "key": "clip_945400",
+  "src": "broll/t30cablees_real/t30cablees_c05.mp4",
+  "start": 945.4,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_972700",
+  "src": "broll/t30cablees_real/t30cablees_d07.mp4",
+  "start": 972.7,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_975767",
+  "src": "broll/t30cablees_real/t30cablees_c07.mp4",
+  "start": 975.7666666666667,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "imagen_978833",
+  "src": "img/t30cablees_r42_cel_cama.jpg",
+  "start": 978.8333333333334,
+  "dur": 3.066666666666667
+ },
+ {
+  "key": "clip_987300",
+  "src": "broll/t30cablees_real/t30cablees_e04.mp4",
+  "start": 987.3,
+  "dur": 2.966666666666667
+ },
+ {
+  "key": "clip_990267",
+  "src": "broll/t30cablees_real/t30cablees_c09.mp4",
+  "start": 990.2666666666667,
+  "dur": 2.933333333333333
+ },
+ {
+  "key": "clip_1006867",
+  "src": "broll/t30cablees_real/t30cablees_v22.mp4",
+  "start": 1006.8666666666667,
+  "dur": 2.8333333333333335
+ },
+ {
+  "key": "clip_1009700",
+  "src": "broll/t30cablees_real/t30cablees_s08.mp4",
+  "start": 1009.7,
+  "dur": 3.566666666666667
+ },
+ {
+  "key": "clip_1013267",
+  "src": "broll/t30cablees_real/t30cablees_h07.mp4",
+  "start": 1013.2666666666667,
+  "dur": 3.6
+ },
+ {
+  "key": "clip_1022867",
+  "src": "broll/t30cablees_real/t30cablees_w02.mp4",
+  "start": 1022.8666666666667,
+  "dur": 3
+ },
+ {
+  "key": "clip_1032300",
+  "src": "broll/t30cablees_real/t30cablees_c01.mp4",
+  "start": 1032.3,
+  "dur": 3.033333333333333
+ },
+ {
+  "key": "clip_1035333",
+  "src": "broll/t30cablees_real/t30cablees_e08.mp4",
+  "start": 1035.3333333333333,
+  "dur": 3
+ },
+ {
+  "key": "imagen_1042267",
+  "src": "img/t30cablees_r33_lavadora.jpg",
+  "start": 1042.2666666666667,
+  "dur": 4.9
+ },
+ {
+  "key": "clip_1061500",
+  "src": "broll/t30cablees_real/t30cablees_e13.mp4",
+  "start": 1061.5,
+  "dur": 2.6
+ },
+ {
+  "key": "clip_1068000",
+  "src": "broll/t30cablees_real/t30cablees_s09.mp4",
+  "start": 1068,
+  "dur": 2.8666666666666667
+ },
+ {
+  "key": "imagen_1070867",
+  "src": "img/t30cablees_r56_cierra_garage.jpg",
+  "start": 1070.8666666666666,
+  "dur": 2.8666666666666667
+ }
+]
