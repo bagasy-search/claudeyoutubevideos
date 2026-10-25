@@ -26,6 +26,10 @@ const CUES: Cue[] = [
   { f: 156, s: "gota", db: -20, d: 10, tono: 1.05 },
   { f: 160, s: "clic_base", db: -26, d: 16, tono: 0.95 }, // la cafetera vuelve a su base (fuera de cuadro)
   { f: 163, s: "gota", db: -25, d: 10, tono: 0.94 },
+  // aire de las dos transiciones rápidas (paneo T1 y manga que pasa por la lente T2), bien abajo
+  { f: 52, s: "swoosh_lento", db: -33, d: 18, fade: 6 },
+  { f: 157, s: "swoosh_aire", db: -31, d: 16, fade: 6 },
+  { f: 159, s: "roce", db: -30, d: 12, tono: 0.85 },
   // P3 (165-225) la taza se apoya en 180: roce del plato 2 cuadros antes, porcelana contra porcelana
   { f: 168, s: "roce", db: -32, d: 20, tono: 1.1 },
   { f: 178, s: "roce", db: -36, d: 6, tono: 1.4 },

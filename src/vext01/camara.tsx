@@ -4,10 +4,17 @@
 // - Paralaje: cada capa se mueve según su profundidad (z=0 fondo lejano, z=1 plano de foco, z>1 primer término).
 // - Foco: cada capa se desenfoca según su distancia al plano de foco (rack focus animable).
 import React, { createContext, useContext } from "react";
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 
 export type Pose = { x: number; y: number; zoom: number; rot?: number; foco?: number };
-export type Clave = Pose & { f: number; resorte?: { damping?: number; stiffness?: number; mass?: number } };
+// curva: en vez de resorte, tramo con easing y zoom LOGARÍTMICO (empujes enormes que aceleran o frenan parejo)
+export type Clave = Pose & { f: number; resorte?: { damping?: number; stiffness?: number; mass?: number }; curva?: "in" | "out" | "inout" };
+
+// Desfase de cuadro: un plano puede arrancar ANTES de su corte (entrada encimada) y seguir DESPUÉS (salida).
+// useF() = cuadro local respecto del corte nominal (negativo durante la entrada).
+export const OffsetCtx = createContext(0);
+export const useF = () => useCurrentFrame() - useContext(OffsetCtx);
+const curvas = { in: Easing.in(Easing.cubic), out: Easing.out(Easing.cubic), inout: Easing.inOut(Easing.cubic) };
 
 type Estado = { x: number; y: number; zoom: number; rot: number; foco: number };
 const Ctx = createContext<Estado>({ x: 0, y: 0, zoom: 1, rot: 0, foco: 1 });
@@ -20,6 +27,17 @@ export const poseEn = (claves: Clave[], f: number, fps: number): Estado => {
     if (f < k.f) {
       // el tramo arranca en la clave anterior
       const a = claves[i - 1];
+      if (k.curva) {
+        const u = interpolate(f, [a.f, k.f], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: curvas[k.curva] });
+        const z = Math.exp(interpolate(u, [0, 1], [Math.log(p.zoom), Math.log(k.zoom)]));
+        // x,y siguen al zoom: así el punto apuntado queda clavado mientras el zoom crece geométricamente
+        const w = (z - p.zoom) / (k.zoom - p.zoom || 1);
+        const r = Math.abs(k.zoom - p.zoom) > 0.01 ? w : u;
+        return {
+          x: p.x + (k.x - p.x) * r, y: p.y + (k.y - p.y) * r, zoom: z,
+          rot: p.rot + ((k.rot ?? p.rot) - p.rot) * u, foco: p.foco + ((k.foco ?? p.foco) - p.foco) * u,
+        };
+      }
       const t = spring({ frame: f - a.f, fps, config: { damping: 18, stiffness: 60, mass: 1.1, ...k.resorte }, durationInFrames: Math.max(2, k.f - a.f) });
       return {
         x: interpolate(t, [0, 1], [p.x, k.x]),
@@ -53,13 +71,28 @@ export const respira = (f: number, fps: number) => 1 + 0.003 * Math.sin((f / fps
 
 // Plano: aplica la cámara a sus capas. claves en coordenadas del mundo (px de 1920x1080 alrededor del centro)
 export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; children: React.ReactNode; fondo?: string; extra?: { x?: number; y?: number; zoom?: number } }> = ({ claves, mano = 4, seed = 0, children, fondo = "#000", extra = {} }) => {
-  const f = useCurrentFrame();
+  const f = useF();
   const { fps } = useVideoConfig();
   const p = poseEn(claves, f, fps);
   const s = temblor(f, fps, mano, seed);
+  // motion blur de obturador: la velocidad de cámara de este cuadro (px/cuadro en el plano de foco) se vuelve desenfoque
+  // direccional. Medio obturador (180°) = la mitad del recorrido del cuadro. Sólo se activa en movimientos rápidos.
+  // en el primer cuadro (antes de la 1ª clave no hay pasado) se mide hacia adelante: el plano entra YA en movimiento
+  const q = f - 1 < claves[0].f ? poseEn(claves, f + 1, fps) : poseEn(claves, f - 1, fps);
+  const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
+  const sx = Math.min(60, vx * 0.5), sy = Math.min(60, vy * 0.5);
+  const mb = sx > 1.5 || sy > 1.5;
+  const id = `mb${seed}`;
   return (
     <AbsoluteFill style={{ background: fondo, overflow: "hidden" }}>
-      <Ctx.Provider value={{ x: p.x + s.x + (extra.x ?? 0), y: p.y + s.y + (extra.y ?? 0), zoom: p.zoom * (extra.zoom ?? 1), rot: p.rot + s.rot, foco: p.foco }}>{children}</Ctx.Provider>
+      {mb && (
+        <svg width={0} height={0} style={{ position: "absolute" }}>
+          <filter id={id} x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation={`${sx.toFixed(1)} ${sy.toFixed(1)}`} edgeMode="duplicate" /></filter>
+        </svg>
+      )}
+      <AbsoluteFill style={{ filter: mb ? `url(#${id})` : undefined }}>
+        <Ctx.Provider value={{ x: p.x + s.x + (extra.x ?? 0), y: p.y + s.y + (extra.y ?? 0), zoom: p.zoom * (extra.zoom ?? 1), rot: p.rot + s.rot, foco: p.foco }}>{children}</Ctx.Provider>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
