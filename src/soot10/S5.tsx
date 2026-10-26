@@ -218,7 +218,7 @@ export const O5: React.FC<{ t: number }> = ({ t }) => {
   if (t < 466 || t > 573) return null;
   return (
     <>
-      {en(t, 527.9, 530.0) && [1380, 1620].map((x, i) => <Persona key={i} x={x} y={1100} h={430} t={t} seed={400 + i} ropa={PIRATA(i + 2)} flip={i === 1} expr="enojado" bD={100 + Math.sin(t * 8 + i) * 40} cD={30} aparece={527.9 + i * 0.15} />)}
+      {en(t, 527.9, 530.0) && [1380, 1620].map((x, i) => <Persona key={i} x={x} y={1050} h={430} t={t} seed={400 + i} ropa={PIRATA(i + 2)} flip={i === 1} expr="enojado" bD={100 + Math.sin(t * 8 + i) * 40} cD={30} aparece={527.9 + i * 0.15} />)}
       <CartelTrampa t={t} t0={466.14} n={5} nombre="THE FOOD" t1={468.4} />
       <S t={466.14} p="whoosh_big" g={-4} />
       <S t={466.35} p="wood_hit" g={-4} />

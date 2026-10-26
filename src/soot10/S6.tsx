@@ -24,9 +24,9 @@ export const K6: Key[] = [
   [615.0, CHAR + 250, 1680, 0.95, 0.6, "seco"],
   [622.6, CHAR + 500, 1820, 1.3, 1.0],
   [626.5, CHAR + 500, 1850, 2.2, 0.8],
-  [627.9, 2150, 1360, -1.8, 0.5, "seco"],
+  [627.9, 2300, 1360, -1.8, 0.5, "seco"],
   [632.0, 2250, 1360, -2.6, 0.7],
-  [636.7, 2050, 1370, -2.4, 0.7],
+  [636.7, 2170, 1370, -2.05, 0.7],
   [640.8, 2600, 1400, -3.2, 0.7],
   [642.6, 2050, 1330, -1.5, 0.8],
   [646.1, 2050, 1300, -1.2, 0.8],
@@ -186,7 +186,7 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
       <Mapa t={t} t0={601.2} t1={610.4} titulo="FEVER COUNTRY"
         cam={[[601.2, -60, 18, 1.6], [605.0, -40, 14, 1.4], [608.0, -40, 14, 1.5]]}
         pins={[{ lugar: "jamaica", t0: 603.6, txt: "CARIBBEAN", icono: "cruz" }, { lugar: "antigua", t0: 604.0, icono: "cruz" }, { lugar: "nassau", t0: 604.3, icono: "cruz" }, { lugar: "capecoast", t0: 605.0, txt: "WEST AFRICA", icono: "cruz" }, { lugar: "africa", t0: 605.4, icono: "cruz" }]} />
-      {en(t, 601.6, 610.4) && <Persona x={260} y={1100} h={380} t={t} seed={7} ropa={GRUMETE} expr="miedo" bD={70} cD={-40} aparece={601.6} />}
+      {en(t, 601.6, 610.4) && <Persona x={260} y={1050} h={380} t={t} seed={7} ropa={GRUMETE} expr="miedo" bD={70} cD={-40} aparece={601.6} />}
       <S t={601.2} p="unroll" g={-4} />
       {[603.6, 604.0, 604.3, 605.0, 605.4].map((a, i) => <S key={i} t={a} p="stamp" g={-10} pitch={1 + i * 0.05} />)}
       <Txt t={t} t0={606.4} t1={608.2} text="YELLOW FEVER" y={900} size={120} color={C.oro} />

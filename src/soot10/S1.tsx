@@ -249,8 +249,8 @@ export const O1: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={94.1} t1={97.2} text="ONE MORNING..." y={170} size={110} />
       <Txt t={t} t0={97.3} t1={99.6} text="FASTER THAN YOU" y={170} size={110} />
       <Txt t={t} t0={100.0} t1={102.9} text="BLACK FLAG" y={170} size={130} color={C.crema} borde="#000" />
-      {en(t, 100.0, 102.9) && <Persona x={320} y={1100} h={420} t={t} seed={7} ropa={GRUMETE} expr="sorpresa" bD={150 + Math.sin(t * 5) * 8} cD={10} aparece={100.0} />}
-      {en(t, 100.3, 102.9) && <Persona x={620} y={1100} h={470} t={t} seed={240} ropa={PIRATA(1)} expr="miedo" bD={60} cD={-30} aparece={100.3} />}
+      {en(t, 100.0, 102.9) && <Persona x={320} y={1050} h={420} t={t} seed={7} ropa={GRUMETE} expr="sorpresa" bD={150 + Math.sin(t * 5) * 8} cD={10} aparece={100.0} />}
+      {en(t, 100.3, 102.9) && <Persona x={620} y={1050} h={470} t={t} seed={240} ropa={PIRATA(1)} expr="miedo" bD={60} cD={-30} aparece={100.3} />}
       <Txt t={t} t0={103.1} t1={106.9} text="MOST DID NOT FIGHT" y={170} size={110} palabras={[103.1, 104.8, 105.4, 106.0]} />
       <Txt t={t} t0={107.0} t1={111.9} text="NOT DYING FOR SUGAR" y={170} size={110} palabras={[107, 110.2, 110.8, 111.2]} />
       <Txt t={t} t0={112.1} t1={113.5} text="FLAG DOWN" y={170} size={120} color={C.crema} />

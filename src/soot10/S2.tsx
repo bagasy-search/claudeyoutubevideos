@@ -177,7 +177,7 @@ export const O2: React.FC<{ t: number }> = ({ t }) => {
   return (
     <>
       {/* el chico reacciona en primer plano */}
-      {en(t, 207.6, 210.1) && <Persona x={300} y={1100} h={400} t={t} seed={7} ropa={GRUMETE} expr="miedo" ladea={Math.sin(t * 3) * 6} bD={110} cD={60} aparece={207.6} />}
+      {en(t, 207.6, 210.1) && <Persona x={300} y={1050} h={400} t={t} seed={7} ropa={GRUMETE} expr="miedo" ladea={Math.sin(t * 3) * 6} bD={110} cD={60} aparece={207.6} />}
       <CartelTrampa t={t} t0={152.56} n={2} nombre="THE CHORES" t1={154.6} />
       <S t={152.56} p="whoosh_big" g={-4} />
       <S t={152.75} p="wood_hit" g={-4} />
@@ -192,7 +192,7 @@ export const O2: React.FC<{ t: number }> = ({ t }) => {
       <S t={189.0} p="coin" g={-10} />
       <Txt t={t} t0={195.4} t1={196.7} text="FLOGGING THE GLASS" y={170} size={110} color={C.oro} />
       <Txt t={t} t0={196.9} t1={199.6} text="GUESS WHO GOT FLOGGED?" y={170} size={96} />
-      {en(t, 197.3, 199.6) && <Persona x={320} y={1100} h={480} t={t} seed={241} ropa={PIRATA(2)} expr="enojado" bD={140 + Math.sin(t * 7) * 30} cD={20} aparece={197.3} />}
+      {en(t, 197.3, 199.6) && <Persona x={320} y={1050} h={480} t={t} seed={241} ropa={PIRATA(2)} expr="enojado" bD={140 + Math.sin(t * 7) * 30} cD={20} aparece={197.3} />}
       <Txt t={t} t0={199.8} t1={201.1} text="THE PUMP" y={170} size={130} />
       <Txt t={t} t0={204.0} t1={207.5} text="THE BILGE" y={170} size={130} color={C.lima} />
       <Txt t={t} t0={207.8} t1={210.1} text="FALLS · SPILLS · ROTS · DIES" y={930} size={84} color={C.lima} />

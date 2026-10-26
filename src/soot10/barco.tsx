@@ -31,7 +31,7 @@ export const camara = (t: number, keys: Key[]): Cam => {
     if (t < k0) break;
     // viaje largo (mucho cielo/mar vacío en el medio) = barrido rápido de 0,5 s en vez de un paneo lento por la nada
     const lejos = Math.hypot(x - c.x, y - c.y) * Math.min(c.z, z) > 3000;
-    if (lejos) d = Math.min(d, 0.3);
+    if (lejos) d = 0; // viaje largo = corte duro: el latigazo dejaba cuadros de cielo vacío
     const ease = lejos ? Easing.inOut(Easing.poly(5)) : tipo === "seco" ? Easing.out(Easing.cubic) : tipo === "lineal" ? Easing.linear : Easing.inOut(Easing.cubic);
     const u = d <= 0 ? 1 : interpolate(t, [k0, k0 + d], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: ease });
     // el zoom se interpola en escala logarítmica (el dolly se siente parejo)

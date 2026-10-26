@@ -218,7 +218,7 @@ export const O4: React.FC<{ t: number }> = ({ t }) => {
   if (t < 369 || t > 468) return null;
   return (
     <>
-      {en(t, 407.6, 410.6) && <Persona x={330} y={1100} h={420} t={t} seed={7} ropa={GRUMETE} expr="miedo" bD={140} cD={100} aparece={407.6} />}
+      {en(t, 407.6, 410.6) && <Persona x={330} y={1050} h={420} t={t} seed={7} ropa={GRUMETE} expr="miedo" bD={140} cD={100} aparece={407.6} />}
       <CartelTrampa t={t} t0={369.84} n={4} nombre="THE PUNISHMENTS" t1={372.0} />
       <S t={369.84} p="whoosh_big" g={-4} />
       <S t={370.05} p="wood_hit" g={-4} />
@@ -251,7 +251,7 @@ export const O4: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={446.5} t1={448.2} text="NO THEATER NEEDED" y={170} size={100} color={C.lila} />
       <Txt t={t} t0={448.5} t1={451.2} text="THE SEA IS ENOUGH" y={170} size={110} color={C.teal} />
       <Txt t={t} t0={458.8} t1={461.7} text="DUTCH NAVY · LONG BEFORE" y={170} size={90} color={C.oro} />
-      {en(t, 458.8, 461.7) && <Persona x={1640} y={1100} h={400} t={t} seed={7} ropa={GRUMETE} expr="miedo" ladea={Math.sin(t * 3) * 5} bD={110} cD={60} aparece={458.8} />}
+      {en(t, 458.8, 461.7) && <Persona x={1640} y={1050} h={400} t={t} seed={7} ropa={GRUMETE} expr="miedo" ladea={Math.sin(t * 3) * 5} bD={110} cD={60} aparece={458.8} />}
       <Txt t={t} t0={461.9} t1={464.3} text="TOO MUCH TROUBLE" y={170} size={110} />
       <Txt t={t} t0={464.5} t1={466.1} text="A ROPE'S END" y={170} size={120} color={C.lima} />
     </>
