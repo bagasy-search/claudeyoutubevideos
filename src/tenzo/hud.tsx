@@ -29,7 +29,7 @@ export const HudTenzo: React.FC<{ min: number | ClvMin; dia: number | string; es
   return (
     <>
       <AbsoluteFill style={{ pointerEvents: "none" }}>
-        <div style={{ position: "absolute", left: 70, top: 56, opacity: o, transform: `translateY(${(1 - s) * 14}px)`, fontFamily: F_HUD, fontWeight: 500, fontSize: 40, lineHeight: 1.22, color: "#d9d4ca", letterSpacing: 1, textShadow: "0 2px 0 rgba(0,0,0,0.4), 0 0 18px rgba(0,0,0,0.55)" }}>
+        <div style={{ position: "absolute", left: 54, top: 42, padding: "10px 18px 8px", borderRadius: 14, background: "rgba(14,12,18,0.5)", opacity: o, transform: `translateY(${(1 - s) * 14}px)`, fontFamily: F_HUD, fontWeight: 500, fontSize: 40, lineHeight: 1.22, color: "#d9d4ca", letterSpacing: 1, textShadow: "0 2px 0 rgba(0,0,0,0.4), 0 0 18px rgba(0,0,0,0.55)" }}>
           <div style={{ whiteSpace: "nowrap" }}>
             SCREEN TIME{" "}
             <span style={{ color: col, display: "inline-block", fontWeight: 600, transform: `scale(${1 + 0.14 * pop})`, transformOrigin: "0% 70%", textShadow: est === "sube" ? `0 0 18px ${ACENTO}aa` : est === "congelado" ? "0 0 16px rgba(255,255,255,0.6)" : undefined }}>

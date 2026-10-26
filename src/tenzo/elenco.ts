@@ -52,7 +52,8 @@ export const MARA_ANT: Look = { estilo: "demonio", neon: "#ff8a3a", alto: 1.45 }
 
 // ---------- parábolas ----------
 export const MONJE_JOVEN: Look = { estilo: "frijol", piel: "#d9a273", camisa: "#e07a2c", miembro: "#d9a273", pantalon: "#e07a2c", zapatos: "#d9a273", accesorios: [{ t: "pelo", forma: "calvo", color: "#d9a273" }, { t: "tunica", color: "#e07a2c", largo: 0.9 }] };
-export const BUDA: Look = { estilo: "frijol", piel: "#e2ad78", camisa: "#d8902e", miembro: "#e2ad78", pantalon: "#d8902e", zapatos: "#e2ad78", accesorios: [{ t: "pelo", forma: "corto", color: "#3a2618" }, { t: "tunica", color: "#d8902e", largo: 1 }], alto: 1.02 };
+// el Buda se distingue del monje joven: túnica granate-dorada, pelo azul noche (iconografía), orejas largas y rosario
+export const BUDA: Look = { estilo: "frijol", piel: "#e2ad78", camisa: "#9c3b22", miembro: "#e2ad78", pantalon: "#9c3b22", zapatos: "#e2ad78", accesorios: [{ t: "pelo", forma: "corto", color: "#1d2340" }, { t: "orejas", color: "#e2ad78" }, { t: "tunica", color: "#c7861f", largo: 1 }, { t: "rosario", color: "#6b4224" }], alto: 1.08 };
 export const AMRAPALI: Look = { estilo: "frijol", piel: "#cf9468", camisa: "#b8323a", miembro: "#cf9468", pantalon: "#b8323a", zapatos: "#cf9468", accesorios: [{ t: "pelo", forma: "cola", color: "#1e1410" }, { t: "tunica", color: "#b8323a", largo: 1 }, { t: "bufanda", color: "#f2c14a" }] };
 export const AMRAPALI_MONJA: Look = { ...AMRAPALI, camisa: "#e9dcc4", pantalon: "#e9dcc4", accesorios: [{ t: "pelo", forma: "bob", color: "#1e1410" }, { t: "tunica", color: "#e9dcc4", largo: 1 }] };
 export const SIDDHARTHA: Look = { estilo: "frijol", piel: "#dfa877", camisa: "#f1e2c0", miembro: "#dfa877", pantalon: "#f1e2c0", zapatos: "#c9963a", accesorios: [{ t: "pelo", forma: "cola", color: "#22160e" }, { t: "tunica", color: "#f1e2c0", largo: 0.8 }, { t: "bufanda", color: "#e0a23a" }] };
