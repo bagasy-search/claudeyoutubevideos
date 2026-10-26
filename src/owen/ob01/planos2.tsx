@@ -63,8 +63,8 @@ export const P24Manos: React.FC = () => {
 // ---------- 25 · las manos de Owen: blandas, con un café de estación de servicio ----------
 export const P25Cafe: React.FC = () => (
   <EnBus cl={[mira(0, 330, BUS_PISO - 230, 2.6), mira(140, 300, BUS_PISO - 250, 3.0, { curva: "inout" })]} hora="manana" min={398} avance={(f) => 4000 + f * 12}
-    owen={{ manos: "I", poses: [{ f: 0, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 115, hI: 25, cI: 50 } }], enManoD: <VasoCafe />, caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.2, y: 0.8 } }] }}
-    hud={<Mano texto="soft." x={1500} y={240} desde={kDe(164.6)(166.8)} color="#ffd27a" tam={130} />} />
+    owen={{ manos: "I", poses: [{ f: 0, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 115, hI: 25, cI: 50 } }], enManoD: <g transform="scale(1.8)"><VasoCafe /></g>, caras: [{ f: 0, v: "duda" }, { f: kDe(164.6)(166.8), v: "sorpresa" }], miradas: [{ f: 0, v: { x: 0.2, y: 0.8 } }] }}
+    hud={<Mano texto="soft." x={1450} y={300} desde={kDe(164.6)(166.6)} color="#ffd27a" tam={230} vel={5} />} />
 );
 
 // ---------- 26 · parada 12: el fumador (+9) ----------
@@ -74,20 +74,20 @@ export const P26Fumador: React.FC = () => {
   const BX = 1900; // el bus parado; la puerta delantera (dir 1, frente a la derecha) queda cerca de BX + 760·esc
   const PUERTA = BX + 560;
   const tira = k(172.6);
-  const cl = [mira(0, PUERTA - 250, 760, 0.95), mira(k(174.3), PUERTA - 120, 760, 1.15, { curva: "inout" })];
+  const cl = [mira(0, PUERTA - 420, ASH_PISO - 190, 1.7), mira(tira, PUERTA - 310, ASH_PISO - 190, 1.9, { curva: "inout" }), mira(k(175.6), PUERTA - 200, ASH_PISO - 220, 1.5, { curva: "inout" })];
   const ruta = [{ f: 0, x: PUERTA - 520, y: ASH_PISO + 40 }, { f: tira, x: PUERTA - 300, y: ASH_PISO + 40 }, { f: tira + 30, x: PUERTA - 300, y: ASH_PISO + 40 }, { f: k(175.6), x: PUERTA, y: ASH_PISO + 40 }];
   const pucho = f < tira ? null : { x: PUERTA - 270 + (f - tira) * 9, y: ASH_PISO - 150 + (f - tira) ** 2 * 0.6 };
   return (
     <Escena Set={Ashland} pal={PAL} claves={cl} seed={26} setProps={{ hora: "manana", centro: () => PUERTA, paradas: [{ x: PUERTA - 120, num: 12, refugio: false }], autos: 3 }}
       medio={<>
         <Bus9 x={BX} y={ASH_CARRIL - 120} esc={0.62} dir={1} hora="manana" puertas={1} kneel={8} />
-        <Actor look={FUMADOR} escala={ESC * 0.75} seed={13} ruta={ruta} poses={[{ f: 0, v: { hD: 40, cD: 120 } }, { f: tira - 8, v: { hD: 60, cD: 60 } }, { f: tira, v: { hD: 95, cD: -10 } }, { f: tira + 14, v: "parado" }]} caras={[{ f: 0, v: "picaro" }]} opacidad={(ff) => (ff > k(175.6) ? 0 : 1)} />
+        <Actor look={FUMADOR} escala={ESC} seed={13} ruta={ruta} poses={[{ f: 0, v: { hD: 40, cD: 120 } }, { f: tira - 8, v: { hD: 60, cD: 60 } }, { f: tira, v: { hD: 95, cD: -10 } }, { f: tira + 14, v: "parado" }]} caras={[{ f: 0, v: "picaro" }]} opacidad={(ff) => (ff > k(175.6) ? 0 : 1)} />
         {pucho && pucho.y < ASH_PISO + 150 && <g transform={`translate(${pucho.x},${pucho.y}) rotate(${(f - tira) * 30})`}><rect x={-12} y={-3} width={24} height={6} fill="#f4efe4" /><circle cx={-12} r={4} fill="#ff6a2a" /></g>}
         {f < tira && <path d={`M${PUERTA - 520 + (f / tira) * 220 + 30},${ASH_PISO - 150} q12,-24 0,-48 q-12,-24 4,-46`} stroke="#c9d3e0" strokeWidth={5} fill="none" opacity={0.6} />}
       </>}
       hud={<>
         <Pildora texto="STOP 12" x={960} y={950} desde={0} hasta={k(173)} color="#f4efe4" />
-        {f >= k(174.4) && f < k(176) && <ManoMundo cl={cl} x={PUERTA - 300} y={ASH_PISO - 230} texto="+9" desde={k(174.4)} color={ROJO_OWEN} tam={110} />}
+        {f >= k(174.4) && f < k(176) && <ManoMundo cl={cl} x={PUERTA - 300} y={ASH_PISO - 230} texto="+9" desde={k(174.4)} color={ROJO_OWEN} tam={190} />}
         <Pildora texto="SMOKING = ONE OF THE STRONGEST CLOCK ACCELERATORS" x={960} y={950} desde={k(175.8)} color="#ffd27a" />
         <HudOwen min={430} part="47/47" />
       </>} />
@@ -106,7 +106,7 @@ export const P26bEspejo: React.FC = () => {
         <Marco x={0} y={0} w={700} h={390} radio={80} espejar><ReflejoOwen /></Marco>
         <div style={{ position: "absolute", left: 470, top: 40, fontFamily: F_HUD, fontWeight: 600, fontSize: 110, color: ROJO_OWEN, textShadow: "0 4px 12px rgba(0,0,0,0.6)" }}>47?</div>
       </div>
-      <Mano texto="He doesn't smoke." x={560} y={860} desde={k(179.6)} color="#f4efe4" tam={60} />
+      <Mano texto="He doesn't smoke." x={1430} y={640} desde={k(179.6)} color="#f4efe4" tam={70} />
     </AbsoluteFill>
   );
 };
@@ -150,12 +150,12 @@ export const P28Caminan: React.FC = () => {
     { look: OBRERO, a: 1700, b: 2050, n: 61, edad: 48, seed: 24 },
   ];
   const fin = k(206.8);
-  const cl = [mira(0, 1200, ASH_PISO - 200, 0.8), mira(fin, 1700, ASH_PISO - 200, 0.8)];
+  const cl = [mira(0, 1150, ASH_PISO - 230, 1.3), mira(fin, 1900, ASH_PISO - 230, 1.35, { curva: "lineal" })];
   return (
     <Escena Set={Ashland} pal={PAL} claves={cl} seed={28} setProps={{ hora: "dia", centro: (ff: number) => 1200 + (ff / fin) * 500, autos: 5 }}
-      medio={<>{peat.map((p, i) => <Actor key={i} look={p.look} escala={ESC * 0.8} seed={p.seed} ruta={[{ f: 0, x: p.a, y: Y }, { f: fin, x: p.b, y: Y, curva: "lineal" }]} caras={[{ f: 0, v: p.n < 40 ? "feliz" : "cansado" }]} />)}</>}
+      medio={<>{peat.map((p, i) => <Actor key={i} look={p.look} escala={ESC} seed={p.seed} ruta={[{ f: 0, x: p.a, y: Y }, { f: fin, x: p.b, y: Y, curva: "lineal" }]} caras={[{ f: 0, v: p.n < 40 ? "feliz" : "cansado" }]} />)}</>}
       hud={<>
-        {peat.map((p, i) => <Etq key={i} cl={cl} x={(ff) => p.a + (p.b - p.a) * Math.min(1, ff / fin)} y={Y - 270} n={p.n} edad={p.edad} desde={k(201.6) + i * 12} tam={52} />)}
+        {peat.map((p, i) => <Etq key={i} cl={cl} x={(ff) => p.a + (p.b - p.a) * Math.min(1, ff / fin)} y={Y - (i % 2 ? 450 : 330)} n={p.n} edad={p.edad} desde={k(201.6) + i * 12} tam={90} />)}
         <Pildora texto="10:00 AM · OWEN HAS A THEORY" x={960} y={950} desde={0} hasta={k(203.4)} color="#f4efe4" />
         <Pildora texto="LOW NUMBERS WALK FAST" x={960} y={950} desde={k(203.5)} color={VERDE} />
         <HudOwen min={600} part="47/47" />
@@ -186,7 +186,7 @@ export const P31Mediodia: React.FC = () => {
     sent(OFICINISTA, 7, { caras: [{ f: 0, v: "risa" }], habla: [[20, 280]], n: 33, edad: 39, desde: k(235.3), seed: 34 }),
     { look: RUNNER, ruta: [{ f: 0, x: 1640, y: BUS_PISO }], poses: [{ f: 0, v: "agarrarAlto" }], dir: [{ f: 0, v: -1 }], caras: [{ f: 0, v: "neutral" }], seed: 35 },
   ];
-  const cl = [mira(0, 1000, 640, 1.05), mira(k(234.6), 2050, 640, 1.1, { curva: "inout" }), mira(k(236.2), 2150, 640, 1.12)];
+  const cl = [mira(0, 1050, 640, 1.1), mira(k(233.6), 1250, 640, 1.15, { curva: "inout" }), mira(k(234.6), 1950, 640, 1.15, { curva: "inout" }), mira(k(236.2), 2000, 640, 1.18)]; // rótulos de las filas 2-4 dentro del área segura
   return (
     <EnBus cl={cl} hora="dia" min={720} avance={(f) => 9000 + f * 10} pas={pas} owen={{ caras: [{ f: 0, v: "neutral" }] }}
       hud={<>
@@ -435,10 +435,10 @@ const BatMundo: React.FC<{ cl: ReturnType<typeof mira>[]; x: number; y: number; 
   if (f < desde) return null;
   const p = enPantalla(cl, f, fps, x, y);
   const col = pct < 10 ? "#ff3d2e" : pct < 40 ? "#ffc24a" : VERDE;
-  const on = !alerta || f % 16 < 10;
-  const s = Math.min(1, (f - desde) / 8);
+  const op = alerta ? 0.75 + 0.25 * Math.cos((f / 16) * Math.PI * 2) : 1; // pulso suave, nada de 1↔0,35 a saltos
+  const s = Math.min(1, (f - desde) / 8) * (alerta ? 2.4 + 0.15 * Math.sin(f / 5) : 2.0);
   return (
-    <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, textAlign: "center", fontFamily: F_HUD, opacity: on ? 1 : 0.35 }}>
+    <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%", textAlign: "center", fontFamily: F_HUD, opacity: op }}>
       <svg width={165} height={75} viewBox="0 0 110 50"><rect x={3} y={3} width={94} height={44} rx={9} fill="rgba(10,12,18,0.7)" stroke={col} strokeWidth={5} /><rect x={99} y={16} width={8} height={18} rx={3} fill={col} /><rect x={10} y={10} width={80 * pct / 100} height={30} rx={5} fill={col} /></svg>
       <div style={{ fontWeight: 700, fontSize: 44, color: col, textShadow: "0 3px 8px rgba(0,0,0,0.7)" }}>{pct}%</div>
     </div>
@@ -446,16 +446,16 @@ const BatMundo: React.FC<{ cl: ReturnType<typeof mira>[]; x: number; y: number; 
 };
 export const P45Baterias: React.FC = () => {
   const k = kDe(385.0);
-  const cl = [mira(0, 1100, 640, 1.05), mira(k(393.4), 1900, 640, 1.3, { curva: "inout" })];
+  const cl = [mira(0, 1150, 660, 1.25), mira(k(393.0), 1300, 660, 1.3), mira(k(393.4), ASIENTO_X(7) - 60, 680, 1.9, { curva: "out" })];
   const pas: Pas[] = [sent(SCRUBS, 2, { seed: 61, poses: [{ f: 0, v: "celular" }] }), sent(OBRERO, 4, { seed: 62, enManoD: <VasoCafe />, poses: [{ f: 0, v: "sentado" }, { f: 60, v: { ...SIT, hD: 150, cD: 150, cabeza: -10 } }, { f: 90, v: "sentado" }] }), sent(ESTUDIANTE, 6, { caras: [{ f: 0, v: "feliz" }, { f: 70, v: "risa" }], seed: 63, habla: [[60, 110]], poses: [{ f: 0, v: "sentado" }, { f: 60, v: { ...SIT, hD: 150, cD: 20 } }, { f: 110, v: "sentado" }] }), sent(SENORA, 7, { caras: [{ f: 0, v: "cansado" }], seed: 64, poses: [{ f: 0, v: "sentado" }, { f: k(393.5), v: { ...SIT, tronco: 10, cabeza: 26 } }] })];
   return (
     <EnBus cl={cl} hora="manana" part="46/47" min={400} avance={(f) => 2000 + f * 12} pas={pas} owen={{ caras: [{ f: 0, v: "sorpresa" }] }}
       hud={<>
         <Pildora texto="NEXT WEEK" x={960} y={950} desde={k(385.2)} color="#ffd27a" tam={44} />
-        <BatMundo cl={cl} x={ASIENTO_X(2)} y={BUS_PISO - 300} pct={72} desde={k(387.7)} />
-        <BatMundo cl={cl} x={ASIENTO_X(4)} y={BUS_PISO - 300} pct={45} desde={k(388.2)} />
-        <BatMundo cl={cl} x={ASIENTO_X(6)} y={BUS_PISO - 300} pct={91} desde={k(388.7)} />
-        <BatMundo cl={cl} x={ASIENTO_X(7)} y={BUS_PISO - 300} pct={3} desde={k(393.5)} alerta />
+        <BatMundo cl={cl} x={ASIENTO_X(2)} y={BUS_PISO - 250} pct={72} desde={k(387.7)} />
+        <BatMundo cl={cl} x={ASIENTO_X(4)} y={BUS_PISO - 250} pct={45} desde={k(388.2)} />
+        <BatMundo cl={cl} x={ASIENTO_X(6)} y={BUS_PISO - 250} pct={91} desde={k(388.7)} />
+        <BatMundo cl={cl} x={ASIENTO_X(7)} y={BUS_PISO - 250} pct={3} desde={k(393.5)} alerta />
       </>} />
   );
 };

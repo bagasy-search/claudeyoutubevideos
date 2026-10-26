@@ -19,11 +19,11 @@ const Profe: React.FC<{ f: number }> = ({ f }) => {
   const poses = Array.from({ length: 90 }).map((_, i) => ({ f: i * per, v: POSES_PROFE[(i * 3) % POSES_PROFE.length] }));
   const caras = Array.from({ length: 90 }).map((_, i) => ({ f: i * per + 6, v: CARAS_PROFE[i % CARAS_PROFE.length] in EXPRESIONES ? CARAS_PROFE[i % CARAS_PROFE.length] : "neutral" }));
   // camina de un lado al otro de su rincón cada ~4 s (pasos reales), se para a explicar
-  const ruta = Array.from({ length: 24 }).flatMap((_, i) => { const x = i % 2 ? 1740 : 1830; return [{ f: i * 120 + 40, x: i % 2 ? 1830 : 1740, y: 1040 }, { f: i * 120 + 100, x, y: 1040 }]; });
+  const ruta = Array.from({ length: 24 }).flatMap((_, i) => { const x = i % 2 ? 1660 : 1750; return [{ f: i * 120 + 40, x: i % 2 ? 1750 : 1660, y: 1050 }, { f: i * 120 + 100, x, y: 1050 }]; }); // 26-oct: más grande y dentro del área segura (a 1830 se cortaba en el borde)
   const dir = Array.from({ length: 24 }).map((_, i) => ({ f: i * 120 + 40, v: (i % 2 ? -1 : 1) as 1 | -1 }));
   return (
     <g>
-      <Actor look={OWEN} escala={1.45} seed={9} ruta={[{ f: 0, x: 1830, y: 1040 }, ...ruta]} dir={[{ f: 0, v: -1 }, ...dir]}
+      <Actor look={OWEN} escala={2.0} seed={9} ruta={[{ f: 0, x: 1750, y: 1050 }, ...ruta]} dir={[{ f: 0, v: -1 }, ...dir]}
         poses={poses} caras={caras} habla={Array.from({ length: 60 }).map((_, i) => [i * 45 + 4, i * 45 + 34] as [number, number])} miradas={[{ f: 0, v: { x: -0.7, y: -0.3 } }, { f: 150, v: { x: 0.4, y: 0.2 } }, { f: 200, v: { x: -0.7, y: -0.3 } }, { f: 400, v: { x: 0.3, y: 0 } }, { f: 440, v: { x: -0.7, y: -0.3 } }]} />
     </g>
   );
@@ -51,11 +51,12 @@ export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fue
 export const AdnCpG: React.FC<{ n?: number; desde?: number }> = ({ n = 353, desde = 20 }) => {
   const f = useF();
   const vistos = Math.round(interpolate(f, [desde, desde + 90], [0, n], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
-  const pasos = 44;
+  const pop = vistos > 0 && vistos < n ? 1 + 0.08 * Math.abs(Math.sin(f * 0.5)) : 1 + 0.12 * Math.max(0, 1 - (f - desde - 90) / 12);
+  const pasos = 38; // 26-oct: termina en x≈1530, el profe (más grande) queda libre a la derecha
   return (
     <Pizarra titulo="353 SPOTS ON YOUR DNA" fuente="Horvath, Genome Biology, 2013">
       {Array.from({ length: pasos }).map((_, i) => {
-        const x = 160 + i * 37;
+        const x = 150 + i * 37;
         const ph = i * 0.42 + f * 0.05;
         const y1 = 560 + Math.sin(ph) * 150, y2 = 560 - Math.sin(ph) * 150;
         const z = Math.cos(ph);
@@ -69,7 +70,7 @@ export const AdnCpG: React.FC<{ n?: number; desde?: number }> = ({ n = 353, desd
           </g>
         );
       })}
-      <text x={960} y={900} fontFamily={F_HUD} fontWeight={600} fontSize={110} fill={VERDE} textAnchor="middle">{vistos}</text>
+      <text x={960} y={900} fontFamily={F_HUD} fontWeight={600} fontSize={130} fill={VERDE} textAnchor="middle" transform={`translate(960,860) scale(${pop}) translate(-960,-860)`}>{vistos}</text>
       <text x={960} y={960} fontFamily={F_HUD} fontSize={34} letterSpacing={3} fill={TINTA} textAnchor="middle">CpG SITES · CHEMICAL TAGS THAT CHANGE WITH AGE</text>
     </Pizarra>
   );
@@ -107,9 +108,9 @@ export const Dinamometro: React.FC<{ lb?: number; caida?: number; desdeCaida?: n
   const { fps } = useVideoConfig();
   const sube = spring({ frame: f - 10, fps, config: { damping: 9 } });
   const baja = ease(f, desdeCaida, desdeCaida + 25);
-  const pulso = Math.max(0, Math.sin(f / 9)) ** 3;
-  const v = lb * sube - caida * baja + pulso * 4 * sube;
-  const ang = -120 + (v / 140) * 240 + Math.sin(f * 1.3) * 1.2;
+  const pulso = Math.max(0, Math.sin(f / 14)) ** 2; // aprieta y suelta cada ~1,5 s: la aguja nunca queda clavada
+  const v = lb * sube - caida * baja - (1 - pulso) * 9 * sube;
+  const ang = -120 + (v / 140) * 240 + Math.sin(f * 0.21) * 1.2; // 26-oct: vibración lenta (a 1,3 rad/cuadro el ojo marcaba lageos)
   return (
     <Pizarra titulo="GRIP STRENGTH" fuente="Leong et al., The Lancet, 2015 · ~140,000 people · 17 countries">
       <g transform="translate(760,600)">

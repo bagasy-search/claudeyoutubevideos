@@ -45,8 +45,8 @@ export const P01Mini: React.FC = () => {
         </>} />
       <EtiquetaFlotante x={1360} y={470} rotulo="REAL AGE" claves={31} desde={-30} color={VERDE} tam={88} />
       <EtiquetaFlotante x={1770} y={430} rotulo="REAL AGE" claves={58} desde={-30} color={VERDE} tam={88} />
-      <Marco x={100} y={70} w={560} h={310} radio={70} espejar><ReflejoOwen /></Marco>
-      <div style={{ position: "absolute", left: 500, top: 250, fontFamily: F_HUD, fontWeight: 700, fontSize: 100, color: ROJO_OWEN, textShadow: "0 0 24px rgba(255,90,74,0.8), 0 4px 12px rgba(0,0,0,0.6)" }}>47</div>
+      <Marco x={80} y={60} w={720} h={400} radio={80} espejar><ReflejoOwen /></Marco>
+      <div style={{ position: "absolute", left: 600, top: 300, fontFamily: F_HUD, fontWeight: 700, fontSize: 150, color: ROJO_OWEN, textShadow: "0 0 24px rgba(255,90,74,0.8), 0 4px 12px rgba(0,0,0,0.6)" }}>47</div>
       <MarcaCorto />
     </AbsoluteFill>
   );
@@ -248,7 +248,7 @@ export const P11Semana: React.FC = () => {
 };
 
 export const P12DosEdades: React.FC = () => <AbsoluteFill><DosRelojes cal={29} bio={29} titulo="YOUR BODY KEEPS TWO AGES" /><HudOwen part="47/47" /></AbsoluteFill>;
-export const P13Adn: React.FC = () => <AbsoluteFill><AdnCpG n={353} desde={kDe(66.4)(72.5)} /><HudOwen part="47/47" /></AbsoluteFill>;
+export const P13Adn: React.FC = () => <AbsoluteFill><AdnCpG n={353} desde={kDe(66.4)(67.2)} /><HudOwen part="47/47" /></AbsoluteFill>;
 export const P14NoCoinciden: React.FC = () => {
   const k = kDe(80.9);
   return (

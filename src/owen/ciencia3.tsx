@@ -106,11 +106,11 @@ export const Glinfatico: React.FC<{ dCrece?: number; dLava?: number; dNombre?: n
   const lava = ease(f, dLava, dLava + 120);
   const owen = ease(f, dOwen, dOwen + 20);
   const sep = 1 + 0.6 * g * (1 - owen);
-  const basura = Array.from({ length: 26 }).map((_, i) => ({ x: 420 + ((i * 197) % 1080), y: 380 + ((i * 113) % 420) }));
+  const basura = Array.from({ length: 26 }).map((_, i) => ({ x: 280 + ((i * 197) % 1080), y: 380 + ((i * 113) % 420) }));
   return (
     <Pizarra titulo="THE BRAIN TAKES OUT ITS TRASH" fuente="Xie et al., Science, 2013 · University of Rochester">
       {Array.from({ length: 12 }).map((_, i) => {
-        const cx = 960 + ((i % 4) - 1.5) * 230 * sep, cy = 590 + (Math.floor(i / 4) - 1) * 170 * sep;
+        const cx = 820 + ((i % 4) - 1.5) * 230 * sep, cy = 590 + (Math.floor(i / 4) - 1) * 170 * sep;
         return <ellipse key={i} cx={cx} cy={cy} rx={95} ry={68} fill="#3a2a44" stroke={ROSA_C} strokeWidth={6} />;
       })}
       {basura.map((b, i) => {

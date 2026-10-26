@@ -517,8 +517,8 @@ export const P31Micro: React.FC = () => {
           </g>)}
           <path d="M-60,150 q60,18 120,0" stroke="#f4efe4" strokeWidth={10} fill="none" opacity={0.6} />
         </g>
-        {[0, 1].map((i) => <g key={i} opacity={0.35 + 0.65 * Math.max(0, Math.sin(((f - i * 30) / 60) * Math.PI * 2))} transform={`translate(${1360 + i * 180},500) scale(${1 + 0.12 * Math.max(0, Math.sin(((f - i * 30) / 60) * Math.PI * 2))}) translate(${-(1360 + i * 180)},-500)`}><circle cx={1360 + i * 180} cy={500} r={70} fill="none" stroke="#ffd27a" strokeWidth={10} /><text x={1360 + i * 180} y={530} fontFamily={F_HUD} fontWeight={800} fontSize={84} fill="#ffd27a" textAnchor="middle">{i + 1}</text></g>)}
-        <text x={1450} y={640} fontFamily={F_HUD} fontWeight={700} fontSize={40} fill="#f4efe4" textAnchor="middle">SECONDS · LIGHTS OUT</text>
+        {[0, 1].map((i) => <g key={i} opacity={0.35 + 0.65 * Math.max(0, Math.sin(((f - i * 30) / 60) * Math.PI * 2))} transform={`translate(${1220 + i * 180},500) scale(${1 + 0.12 * Math.max(0, Math.sin(((f - i * 30) / 60) * Math.PI * 2))}) translate(${-(1220 + i * 180)},-500)`}><circle cx={1220 + i * 180} cy={500} r={70} fill="none" stroke="#ffd27a" strokeWidth={10} /><text x={1220 + i * 180} y={530} fontFamily={F_HUD} fontWeight={800} fontSize={84} fill="#ffd27a" textAnchor="middle">{i + 1}</text></g>)}
+        <text x={1310} y={640} fontFamily={F_HUD} fontWeight={700} fontSize={40} fill="#f4efe4" textAnchor="middle">SECONDS · LIGHTS OUT</text>
         {p > 0.5 && [0, 1, 2].map((i) => { const t = ((f + i * 14) % 42) / 42; return <text key={i} x={1000 + t * 120} y={330 - t * 160} fontFamily={F_HUD} fontWeight={800} fontSize={60 + i * 20} fill="#ffe04a" opacity={Math.sin(t * Math.PI)}>Z</text>; })}
       </Pizarra>
       <Mano texto="your brain just switches off." x={960} y={880} desde={k(272.3)} hasta={k(275.5)} color="#ffd27a" tam={64} />

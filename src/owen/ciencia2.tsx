@@ -89,13 +89,13 @@ export const Adenosina: React.FC<{ llenaHasta?: number; vaciaDesde?: number; vac
           return <circle key={k} cx={ox + (x - ox) * u} cy={oy + (y - oy) * u} r={13} fill={AMBAR} opacity={k < vis ? 0.95 : u > 0 && u < 1 ? u : 0} />;
         })}
       </g>
-      <g transform="translate(1440,300)">
+      <g transform="translate(1340,300)">
         <rect x={-50} y={0} width={100} height={500} rx={20} fill="none" stroke={GRIS} strokeWidth={8} />
         <rect x={-40} y={490 - 480 * nivel} width={80} height={480 * nivel} rx={12} fill={nivel > 0.6 ? ROJO : AMBAR} />
         <T x={0} y={580} s={34}>TIRED</T>
       </g>
       <T x={760} y={1000} s={46} c={f < vaciaDesde ? AMBAR : AZUL}>{f < vaciaDesde ? "AWAKE: IT BUILDS UP" : "SLEEP: IT EMPTIES"}</T>
-      {f > owenDesde && <text x={1440} y={250} fontFamily={F_MANO} fontWeight={700} fontSize={56} fill={ROJO} textAnchor="middle" opacity={ease(f, owenDesde, owenDesde + 10)}>Owen: 5 h</text>}
+      {f > owenDesde && <text x={1340} y={250} fontFamily={F_MANO} fontWeight={700} fontSize={56} fill={ROJO} textAnchor="middle" opacity={ease(f, owenDesde, owenDesde + 10)}>Owen: 5 h</text>}
     </Pizarra>
   );
 };
