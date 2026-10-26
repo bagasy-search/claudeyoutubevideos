@@ -133,7 +133,7 @@ export const Muro: React.FC<{ c: Cam; piedra: string; t: number; sombra?: string
         <linearGradient id="luzM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffffff" stopOpacity={0.17} /><stop offset="0.45" stopColor="#ffffff" stopOpacity={0} /><stop offset="1" stopColor="#140a24" stopOpacity={0.34} /></linearGradient>
         <linearGradient id="sombraM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#140a24" stopOpacity={0.4} /><stop offset="1" stopColor="#140a24" stopOpacity={0} /></linearGradient>
       </defs>
-      <rect x={x0} y={TOP} width={x1 - x0} height={BASE - TOP + 40} fill="url(#luzM)" />
+      <rect x={x0} y={TOP} width={x1 - x0} height={BASE - TOP} fill="url(#luzM)" />
       {c.z > 0.25 && <Desgaste x0={x0} x1={x1} t={t} oscuro={oscuro} />}
       <rect x={x0} y={TOP} width={x1 - x0} height={16} fill={claro} />
       <rect x={x0} y={BASE - 30} width={x1 - x0} height={70} fill={oscuro} opacity={0.35} />
@@ -145,7 +145,7 @@ export const Muro: React.FC<{ c: Cam; piedra: string; t: number; sombra?: string
       {TORRES.filter((x) => x > x0 - 400 && x < x1 + 400).map((x) => <Torre key={x} x={x} piedra={piedra} claro={claro} oscuro={oscuro} t={t} />)}
       {[1, 2, 3, 4, 5, 6, 7].map((k) => MC(k)).filter((x) => x > x0 - 800 && x < x1 + 800).map((x, i) => <Milecastle key={x} x={x} piedra={piedra} claro={claro} oscuro={oscuro} k={i} />)}
       <rect x={x0} y={BASE + 10} width={x1 - x0} height={30} fill={sombra} />
-      <rect x={x0} y={BASE + 40} width={x1 - x0} height={150} fill="url(#sombraM)" />
+      <rect x={x0} y={BASE + 40} width={x1 - x0} height={45} fill="url(#sombraM)" />
       {c.z > 0.25 && <Matas x0={x0} x1={x1} t={t} oscuro={oscuro} />}
       </g>
     </SW>
