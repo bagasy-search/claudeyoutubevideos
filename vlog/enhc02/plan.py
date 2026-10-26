@@ -346,6 +346,13 @@ for i, g in enumerate(segs):
     out.append(g)
 segs = out
 
+# 26-oct: el plano av no puede pasar del fin de su ventana: después el reel trae relleno NEGRO (QC: 0,3 s de negro en 669 s)
+fin_av = {round(ms, 2): me for ms, me in avw}
+for i, g in enumerate(segs[:-1]):
+    me = fin_av.get(round(g["a"], 2))
+    if g["k"] == "av" and me is not None and segs[i + 1]["k"] != "av" and segs[i + 1]["a"] > me + 0.04:
+        segs[i + 1]["a"] = round(me, 2)   # reel negro: el plano siguiente entra justo al terminar la ventana
+
 def push(v, k=0.1):
     p, l, f = V[v]; return [round(p[i] + (l[i] - p[i]) * k, 3) for i in range(3)], l, f
 keys = []
