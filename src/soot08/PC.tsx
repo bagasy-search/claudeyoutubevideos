@@ -85,7 +85,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
             {t > 246.5 && t < 251.7 && (
               <>
                 <svg style={{ position: "absolute", left: 2900, top: -18, overflow: "visible" }} width={600} height={40}><ellipse cx={300} cy={20} rx={300 * prog(t, 246.6, 247.4)} ry={20} fill="#2a2238" opacity={0.85} /><ellipse cx={240} cy={14} rx={120 * prog(t, 246.6, 247.4)} ry={6} fill="#8a7ac0" opacity={0.6} /></svg>
-                {t > 248.6 && <div style={{ position: "absolute", left: 0, top: 0, transform: `translate(${interpolate(t, [248.6, 249.6], [3100, 3420], { extrapolateRight: "clamp" })}px, ${-40}px) rotate(${interpolate(t, [248.6, 249.6], [0, 40], { extrapolateRight: "clamp" })}deg)` }}><Bota x={0} y={0} s={0.9} /></div>}
+                {t > 248.6 && <div style={{ position: "absolute", left: 0, top: 0, transform: `translate(${interpolate(t, [248.6, 249.6], [3100, 3420], { extrapolateRight: "clamp" })}px, ${-10}px) rotate(${interpolate(t, [248.6, 249.6], [0, 40], { extrapolateRight: "clamp" })}deg)` }}><Bota x={0} y={0} s={0.35} /></div>}
               </>
             )}
             {/* doffers: bobinas llenas que vuelan al canasto */}

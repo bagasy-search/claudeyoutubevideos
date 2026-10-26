@@ -139,9 +139,9 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={347.7} t1={349.6} text="“STRIPPER'S ASTHMA”" color={C.naranja} x={1300} y={150} centro size={70} />
       {t > 349.8 && t < 364.3 && <Velo t={t} t0={349.8} t1={364} op={0.9} />}
       {t > 349.9 && t < 364.1 && <Persona t={t} seed={2} x={330} y={1010} h={620} ropa={NINO} gorro="gorra" expr={Math.sin(t * 3) > 0.4 ? "dormido" : "triste"} inclina={10 + 9 * Math.max(0, Math.sin(t * 3))} bD={150} cD={150} aparece={350.0} />}
-      <Pulmones t={t} t0={349.9} t1={364.0} x={1000} y={560} s={1.1} sucio={0.15 + prog(t, 350, 355) * 0.85} apaga={prog(t, 353.3, 355.4)} />
-      <Chip t={t} t0={350.5} t1={355.3} text="A TIGHT CHEST" color={C.noche} x={420} y={330} centro size={56} />
-      <Chip t={t} t0={351.6} t1={355.3} text="A COUGH THAT NEVER LEFT" color={C.noche} x={1340} y={330} centro size={56} />
+      <Pulmones t={t} t0={349.9} t1={364.0} x={1320} y={600} s={0.9} sucio={0.15 + prog(t, 350, 355) * 0.85} apaga={prog(t, 353.3, 355.4)} />
+      <Chip t={t} t0={350.5} t1={355.3} text="A TIGHT CHEST" color={C.noche} x={1320} y={130} centro size={56} />
+      <Chip t={t} t0={351.6} t1={355.3} text="A COUGH THAT NEVER LEFT" color={C.noche} x={1320} y={225} centro size={56} />
       <Chip t={t} t0={353.3} t1={355.3} text="LUNGS STOP WORKING" color={C.rojo} x={960} y={950} centro size={66} />
       <Gran t={t} t0={357.0} t1={359.7} text="BYSSINOSIS" y={180} size={150} color={C.crema} />
       <Chip t={t} t0={358.5} t1={359.7} text="“BROWN LUNG”" color={C.naranja} x={960} y={950} centro size={74} />
@@ -151,7 +151,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Primer t={t} t0={364.5} t1={368.4} lado="izq" g={{ expr: "miedo", bD: 165, cD: 150, bI: 165, cI: 150 }} emo="susto" />
       <Chip t={t} t0={366.4} t1={368.5} text="DOZENS OF MACHINES · BELTS · SHAFTS" color={C.noche} x={960} y={950} centro size={58} />
       {t > 368.4 && t < 371.6 && <Velo t={t} t0={368.4} t1={371.3} op={0.45} />}
-      <Oreja t={t} t0={368.5} t1={371.3} x={960} y={560} s={1.1} sorda={prog(t, 369.6, 370.6)} />
+      <Oreja t={t} t0={368.5} t1={371.3} x={1560} y={520} s={0.62} sorda={prog(t, 369.6, 370.6)} />
       <Chip t={t} t0={369.4} t1={371.3} text="HEARING: LOST" color={C.rojo} x={960} y={150} centro size={74} />
       <Chip t={t} t0={371.5} t1={374.7} text="TALKING BY READING LIPS" color={C.violeta} x={960} y={150} centro size={70} />
       <Oreja t={t} t0={374.9} t1={380.8} x={1660} y={360} s={0.42} sorda={1} />

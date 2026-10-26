@@ -140,10 +140,10 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       {t > 16.1 && t < 18.2 && <div style={{ position: "absolute", left: 1560, top: 170, transform: `scale(${ent(t, 16.1)})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={prog(t, 16.2, 17.4) * 0.92} unidad="F" /></div></div>}
       <Chip t={t} t0={16.6} t1={18.2} text="HOTTER THAN SPAIN IN SUMMER" color={C.naranja} x={800} y={160} centro size={68} />
       <Chip t={t} t0={18.4} t1={20.5} text="A MACHINE THAT DOES NOT STOP" color={C.noche} x={960} y={140} centro size={70} />
-      <Chip t={t} t0={20.6} t1={23.6} text="NOT FOR LUNCH" color={C.violeta} x={960} y={300} centro size={84} />
-      <Chip t={t} t0={21.75} t1={23.6} text="NOT FOR TEARS" color={C.teal} tinta={C.noche} x={960} y={430} centro size={84} />
+      <Chip t={t} t0={20.6} t1={23.6} text="NOT FOR LUNCH" color={C.violeta} x={1300} y={300} centro size={84} />
+      <Chip t={t} t0={21.75} t1={23.6} text="NOT FOR TEARS" color={C.teal} tinta={C.noche} x={1300} y={430} centro size={84} />
       <Emote t={t} t0={21.8} t1={23.6} tipo="lagrimas" x={960 + (2700 - cam.x) * cam.z} y={540 + (-200 - 450 * (300 / 560) - cam.y) * cam.z} s={0.55 * cam.z} />
-      <Chip t={t} t0={22.9} t1={23.6} text="NOT FOR FINGERS" color={C.rojo} x={960} y={560} centro size={96} />
+      <Chip t={t} t0={22.9} t1={23.6} text="NOT FOR FINGERS" color={C.rojo} x={1300} y={560} centro size={96} />
       <Chip t={t} t0={24.9} t1={27.6} text="LANCASHIRE, ENGLAND" color={C.violeta} x={960} y={150} centro size={76} />
       <Gran t={t} t0={26.6} t1={30.2} text="c. 1830" y={880} size={170} color={C.ambar} />
       {t > 27.9 && t < 32 && <Particulas t={t} tipo="lluviaoro" n={60} seed={5} />}

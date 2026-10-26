@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { C, ent, prog, Chip, Emote, Pan, Zzz } from "./kit";
 import { Reloj, Moneda3, RelojBolsillo, Retrete } from "./kit3";
-import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, CasaAdentro, Sala, NINO, NINA, HILANDERO, OBRERO, DUENO, GenteFab, FCX, CASA_NINO } from "./mundo";
+import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, CasaAdentro, Sala, NINO, NINA, HILANDERO, OBRERO, DUENO, CAPATAZ, GenteFab, FCX, CASA_NINO } from "./mundo";
 import { Gran, Cuenta, Sello, Tachado, Flash, sacudon, Velo, Horror, BarraDia, Latigo, Semana } from "./capas";
 import { Girado, Despertador, Goteras, Primer } from "./piezas";
 import { Persona } from "./persona";
@@ -220,8 +220,13 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Flash t={t} at={[165.1]} color="#ffdddd" />
       <Chip t={t} t0={166.1} t1={169.2} text="YOU COULD NOT CHECK" color={C.noche} x={960} y={150} centro size={76} />
       <RelojBolsillo t={t} t0={167.4} t1={170.0} x={960} y={540} s={1.2} />
+      {/* vuelta 11 OJO: el capataz le saca el reloj a un obrero (antes fachada sin nadie) */}
+      {t > 166.2 && t < 170.0 && <>
+        <Persona t={t} seed={46} ropa={OBRERO(2)} gorro="gorra" x={420} y={1070} h={600} expr={t < 168 ? "sorpresa" : "enojado"} mira={1} bD={t < 168 ? 100 : 60} aparece={166.3} />
+        <Persona t={t} seed={61} ropa={CAPATAZ} gorro="copa" x={1500} y={1070} h={640} flip expr="enojado" habla bD={t < 168 ? 110 : 40} aparece={166.5} />
+      </>}
       <Tachado t={t} t0={169.4} t1={170.0} x={960} y={540} w={360} h={360} />
-      <Chip t={t} t0={168.0} t1={170.0} text="WATCHES? NOT ALLOWED" color={C.rojo} x={960} y={880} centro size={66} />
+      <Chip t={t} t0={168.0} t1={170.0} text="WATCHES? NOT ALLOWED" color={C.rojo} x={960} y={270} centro size={66} />
       <Semana t={t} t0={170.2} tDom={172.9} t1={174.4} y={540} />
       <Chip t={t} t0={170.3} t1={172.8} text="SIX DAYS A WEEK" color={C.rojo} x={960} y={300} centro size={80} />
       <Chip t={t} t0={172.9} t1={174.4} text="…UNLESS THE MACHINES NEED CLEANING" color={C.naranja} x={960} y={300} centro size={58} />

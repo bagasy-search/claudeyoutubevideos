@@ -259,6 +259,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       {/* CTA */}
       <Chip t={t} t0={885.8} t1={890.4} text="SURVIVED A FULL SHIFT?" color={C.noche} x={960} y={150} centro size={66} />
       <Velo t={t} t0={886.4} t1={895.6} op={0.5} />
+      {t > 885.9 && t < 895.6 && <Persona t={t} seed={2} ropa={NINO} gorro="gorra" x={200} y={1070} h={560} expr="feliz" mira={1} bD={t > 888.6 ? 150 : 40} cD={t > 888.6 ? 20 : 30} salta={888.7} aparece={886.0} />}
       {t > 886.6 && t < 895.4 && (
         <div style={{ position: "absolute", left: 960 - 400, top: 380, width: 800, height: 150, borderRadius: 75, background: C.rojo, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 76, color: "#fff", letterSpacing: 3, whiteSpace: "nowrap", transform: `scale(${ent(t, 886.7) * (t > 888.4 && t < 888.7 ? 0.9 : 1) * (1 - prog(t, 895.1, 895.4))})`, boxShadow: "0 12px 0 #8a1d2a", fontFamily }}>
           {t > 888.6 ? "SUBSCRIBED ✓" : "SUBSCRIBE"}
