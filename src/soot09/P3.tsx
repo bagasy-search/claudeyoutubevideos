@@ -228,7 +228,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       {t > 226.3 && t < 231.6 && <MapaRio t={t} />}
       <Chip t={t} t0={232.18} t1={235.3} text="DEEP WATER" color={C.teal} tinta={C.noche} x={960} y={930} centro size={56} />
       <Chip t={t} t0={234.84} t1={235.8} text="TIE UP TO THE TREES" color="#1f6a3a" x={960} y={140} centro size={52} />
-      <Chip t={t} t0={236.48} t1={237.6} text="EASY TO DEFEND" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
+      <Chip t={t} t0={236.48} t1={237.25} text="EASY TO DEFEND" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
       {/* plano medio: el barco amarrado a un árbol de la orilla, un colono tira del cabo */}
       <Vineta t={t} t0={232.6} t1={236.2} x={960} y={540} w={1180} h={660} cielo="#bfe0ee" suelo="#6a8a3a" sueloY={470}>
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1180} height={660}>
@@ -317,12 +317,12 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={298.1} t1={301.5} text="THIN RING" color={C.rojo} x={1450} y={300} centro size={50} />
           <Chip t={t} t0={299.02} t1={301.5} text="= DRY YEAR" color={C.naranja} x={1450} y={380} centro size={50} />
           <Chip t={t} t0={301.54} t1={311.9} text="1606 – 1612" color={C.rojo} x={1450} y={300} centro size={64} />
-          {t > 304.2 && <Grande t={t} t0={304.24} text="WORST DROUGHT" x={1520} y={470} size={80} color={C.ambar} />}
-          {t > 306.1 && <Grande t={t} t0={306.14} text="IN 770 YEARS" x={1520} y={600} size={80} />}
+          {t > 304.2 && <Grande t={t} t0={304.24} text="WORST DROUGHT" x={1570} y={470} size={62} color={C.ambar} />}
+          {t > 306.1 && <Grande t={t} t0={306.14} text="IN 770 YEARS" x={1570} y={580} size={62} />}
           {t > 310.2 && <div style={{ position: "absolute", left: 960, top: 930, transform: `translate(-50%,0) scale(${ent(t, 310.26)})`, fontFamily, fontWeight: 700, fontSize: 56, color: "#fff", background: C.rojo, borderRadius: 12, padding: "4px 16px", whiteSpace: "nowrap" }}>THE RED RINGS: THAT IS WHEN YOU ARRIVE</div>}
         </div>
       )}
-      {t > 308.3 && t < 310.0 && <Grande t={t} t0={308.36} text="770 YEARS" y={930} size={130} color="#ff5a6a" />}
+      {t > 308.3 && t < 310.0 && <Grande t={t} t0={308.36} text="770 YEARS" x={1570} y={800} size={110} color="#ff5a6a" />}
       {/* seasoning */}
       {t > 313.5 && t < 322.7 && (
         <>

@@ -7,6 +7,7 @@ import { Mundo, K, En, SUELO, AGUA } from "./mundo";
 import { Base, FX } from "./base";
 import { TOM, GENT, COLONO, POW, SMITH, Poste, Nave, Pepitas, Frasco, Barril, Olla, Canasta, Cuentas, Nieve, Cartel, Mosquitos } from "./kitj";
 import { Globo, Lupa, Olor, Tacha } from "./kitj2";
+import { Vineta, Rotulo } from "./vineta";
 
 // TRAMPA 4 · EL ORO (342,7-439,3 s). El incendio del fuerte, los que trajo el barco (orfebres, refinadores, joyero, perfumista),
 // la fiebre del oro en la arena del río, el barco cargado de tierra brillante que vuelve a Londres, oro de tontos,
@@ -228,6 +229,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
               <path d={`M -120 206 L 120 206 L ${120 - 90 * u} ${206 - 150 * u} L ${-120 + 90 * u} ${206 - 150 * u} Z`} fill="#e8d090" />
               <rect x={-5} y={-6} width={10} height={206 - 150 * u} fill="#e8d090" opacity={u < 1 ? 1 : 0} />
             </svg>
+            {[[330, 1240, false], [1590, 1241, true]].map(([x, seed, fl], k) => <div key={k} style={{ position: "absolute", left: 0, top: 0, opacity: e }}><Persona x={x as number} y={1075} h={560} t={t} seed={seed as number} ropa={GENT(k + 1)} gola expr="triste" flip={fl as boolean} inclina={(fl ? -1 : 1) * (6 + Math.abs(Math.sin(t * 4 + k)) * 10)} bD={60 + Math.abs(Math.sin(t * 4 + k)) * 60} cD={30} manoD={<g><rect x={-6} y={-160} width={12} height={200} fill="#6a4a2a" /><path d="M -28 30 L 28 30 L 22 96 Q 0 112 -22 96 Z" fill="#7a7a84" /><circle cx={0} cy={110} r={22} fill="#e8d090" /></g>} /></div>)}
             {Array.from({ length: 6 }, (_, i) => {
               const on = t > 401.8 + i * 0.45;
               return <div key={i} style={{ position: "absolute", left: 300 + i * 230, top: 830, transform: `translate(-50%,0) scale(${e})`, width: 190, padding: "6px 0", textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: on ? "#8a8a94" : C.noche, background: "#fff3d6", border: "6px solid #2a1408", borderRadius: 14, textDecoration: on ? "line-through" : "none", textDecorationColor: C.rojo, textDecorationThickness: 8 }}>WEEK {i + 1}</div>;
@@ -238,6 +240,14 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={401.42} t1={403.9} text="WEEKS OF PLANTING SEASON" color={C.lima} tinta={C.noche} x={960} y={140} centro size={54} />
       <Chip t={t} t0={403.18} t1={403.9} text="→ GONE" color={C.rojo} x={960} y={220} centro size={54} />
       {t > 404.0 && t < 405.4 && <Grande t={t} t0={404.12} text="FOR SAND" y={180} size={130} color="#e8d090" />}
+      <Vineta t={t} t0={405.5} t1={412.65} x={960} y={650} w={1300} h={560} cielo="#f0d8a8" suelo="#7a8a4a" sueloY={420} rot={-1}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={560}><rect x={0} y={430} width={560} height={130} fill="#4a8ab0" />{[0, 1, 2].map((k) => <ellipse key={k} cx={120 + k * 160} cy={470} rx={60} ry={14} fill="#c0a050" opacity={0.7} />)}</svg>
+        {[[110, 1250], [270, 1251], [430, 1252]].map(([x, seed], k) => <Persona key={seed} x={x} y={560} h={300} t={t} seed={seed} ropa={GENT(k)} gola gorro={k === 1 ? "copa" : "sombrero"} expr="feliz" inclina={30} bD={70 + Math.sin(t * 6 + k) * 20} cD={40} manoD={<ellipse cx={0} cy={10} rx={40} ry={12} fill="#7a7a84" stroke="#3a3a44" strokeWidth={4} />} />)}
+        <Persona x={900} y={600} h={460} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" gorro="morion" gola expr={t > 410.9 ? "orgullo" : "enojado"} flip={t < 408.4} mira={t < 408.4 ? 0.5 : -0.2} bI={50} cI={120} bD={50} cD={120} habla={t > 406.4 && t < 408.2} />
+        {t > 410.9 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={560}><path d={`M ${845} ${470 - 260 * (1 - prog(t, 410.9, 411.3))} L 960 ${360 - 260 * (1 - prog(t, 410.9, 411.3))}`} stroke={C.oro} strokeWidth={26} opacity={prog(t, 410.9, 411.0)} /></svg>}
+        <Rotulo t={t} t0={406.4} x={280} y={70} text="DIG GOLD · WASH GOLD" color={C.oro} tinta={C.noche} size={40} />
+        {[1080, 1180].map((x, k) => t > 411.2 && <Persona key={x} x={x} y={600} h={360} t={t} seed={1253 + k} ropa={COLONO(k)} expr="feliz" flip salta={411.3 + k * 0.2} bD={150} cD={20} />)}
+      </Vineta>
       <Chip t={t} t0={406.4} t1={408.4} text="ONE MAN REFUSES" color={C.rojo} x={960} y={140} centro size={56} />
       <Chip t={t} t0={408.5} t1={410.7} text="JOHN SMITH" color={C.rojo} x={960} y={140} centro size={60} />
       <Chip t={t} t0={409.6} t1={410.7} text="FORMER PRISONER" color="#6a6a7a" x={960} y={220} centro size={46} />
@@ -246,6 +256,18 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={415.1} t1={416.3} text="ONE SIMPLE RULE" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={415.84} t1={416.3} text="UNPOPULAR" color={C.rojo} x={960} y={1010} centro size={40} />
       {t > 419.6 && t < 421.3 && <Grande t={t} t0={420.4} text="FURIOUS" y={930} size={120} color="#ff5a6a" />}
+      <Vineta t={t} t0={421.4} t1={427.75} x={960} y={630} w={1240} h={600} cielo="#e8dcc0" suelo="#8a6a3a" sueloY={470} rot={1}>
+        {(() => { const ampolla = <g><circle r={26} fill="#f2b48a" /><circle cx={-8} cy={-6} r={8} fill="#e8505a" /><circle cx={9} cy={6} r={7} fill="#e8505a" /></g>; const frio = t > 424.9; return <>
+          <Persona x={430} y={640} h={480} t={t} seed={1256} ropa={GENT(2)} gola gorro="pluma" capa="#2a1a3a" expr={frio ? "sorpresa" : "enojado"} habla={t < 424.6} bI={frio ? 30 : 120} cI={frio ? 10 : 40} bD={frio ? 150 : 120} cD={frio ? 10 : 40} manoI={frio ? undefined : ampolla} manoD={frio ? undefined : ampolla} inclina={frio ? Math.sin(t * 40) * 3 : 0} />
+          {t > 422.6 && t < 424.8 && <div style={{ position: "absolute", left: 160, top: 60, fontFamily, fontWeight: 700, fontSize: 52, color: C.rojo, background: "#fff", border: "5px solid #1b1240", borderRadius: 18, padding: "4px 20px", transform: `scale(${ent(t, 422.65)})` }}>#@%&!</div>}
+          <Persona x={780} y={640} h={480} t={t} seed={1257} ropa={COLONO(0)} expr="neutro" flip bD={t > 424.6 ? 150 : 60} cD={t > 424.6 ? 60 : 20} bI={t > 424.6 ? 140 : 10} />
+          {t > 424.6 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={600}>
+            <g transform={`translate(600 150) rotate(${-70 * prog(t, 424.7, 425.0)})`}><path d="M -50 -40 L 50 -40 L 40 50 L -40 50 Z" fill="#8a5a2e" stroke="#4e2a12" strokeWidth={6} /></g>
+            {t > 424.95 && t < 426.6 && Array.from({ length: 10 }, (_, k) => { const f = ((t * 3 + k / 10) % 1); return <circle key={k} cx={560 - f * 40} cy={150 + f * 120} r={10} fill="#5ab0e8" />; })}
+            {frio && <text x={270} y={110} fontFamily={fontFamily} fontWeight={700} fontSize={70} fill="#2a7ac8" stroke="#fff" strokeWidth={6} paintOrder="stroke">BRRR!</text>}
+          </svg>}
+        </>; })()}
+      </Vineta>
       <Chip t={t} t0={421.6} t1={422.6} text="BLISTERS" color={C.rosa} x={960} y={140} centro size={56} />
       <Chip t={t} t0={424.62} t1={427.6} text="COLD WATER, EVERY CURSE" color="#2a7ac8" x={960} y={140} centro size={54} />
       {t > 416.3 && t < 421.4 && (

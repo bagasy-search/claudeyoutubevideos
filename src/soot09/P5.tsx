@@ -7,6 +7,7 @@ import { Mundo, K, En, SUELO } from "./mundo";
 import { Base, FX } from "./base";
 import { COLONO, POW, SMITH, Poste, Canasta, Cuentas, Hacha, Choclo, Nieve, Anillos, Rayo } from "./kitj";
 import { Globo, Tacha } from "./kitj2";
+import { Vineta, Rotulo } from "./vineta";
 
 // TRAMPA 5 · LOS VECINOS (439,3-550,6 s). Tsenacommacah y Wahunsenacah (Powhatan); el maíz por cobre y cuentas;
 // la sequía también vacía sus campos; Smith capturado; la versión de Smith (Pocahontas) en un libro de cuentos con signo
@@ -166,7 +167,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
       {t > 491.3 && t < 494.5 && <Globo t={t} t0={491.31} t1={494.4} x={1260} y={260} text="WHY KEEP FEEDING THEM?" size={44} cola="izq" />}
       <Chip t={t} t0={492.73} t1={494.4} text="THEY ARE TAKING YOUR LAND" color={C.rojo} x={960} y={930} centro size={54} />
       <Chip t={t} t0={494.53} t1={498.8} text="DECEMBER 1607" color="#6a8ab8" x={960} y={140} centro size={60} />
-      <Chip t={t} t0={497.21} t1={498.8} text="UPRIVER, FOR FOOD" color={C.oro} tinta={C.noche} x={960} y={220} centro size={48} />
+      <Chip t={t} t0={497.21} t1={498.8} text="UPRIVER, FOR FOOD" color={C.oro} tinta={C.noche} x={960} y={930} centro size={48} />
       {t > 499.0 && t < 500.3 && <Grande t={t} t0={499.13} text="CAPTURED" y={200} size={140} color="#ff5a6a" />}
       <Chip t={t} t0={500.79} t1={503.3} text="TOWN → TOWN → TOWN" color={C.tierra} x={960} y={140} centro size={54} />
       <Chip t={t} t0={502.63} t1={504.6} text="BEFORE POWHATAN" color="#8a5a2e" x={960} y={930} centro size={56} />
@@ -199,7 +200,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={507.61} t1={511.0} text="ABOUT TO BE EXECUTED" color={C.rojo} x={960} y={930} centro size={52} />
           <Chip t={t} t0={511.69} t1={515.3} text="POCAHONTAS · ABOUT 11" color={C.rosa} x={960} y={930} centro size={52} />
           {[["REALLY HAPPENED?", 516.93], ["A CEREMONY HE MISUNDERSTOOD?", 519.43], ["MADE UP TO SELL BOOKS?", 521.31]].map(([s, t0], i) => (
-            <Chip key={i} t={t} t0={t0 as number} t1={522.4} text={s as string} color={[C.teal, C.violeta, C.naranja][i]} tinta={i === 0 ? C.noche : undefined} x={960} y={872 + i * 78} centro size={50} />
+            <Chip key={i} t={t} t0={t0 as number} t1={[519.4, 521.3, 522.4][i]} text={s as string} color={[C.teal, C.violeta, C.naranja][i]} tinta={i === 0 ? C.noche : undefined} x={960} y={940} centro size={54} />
           ))}
         </div>
       )}
@@ -208,16 +209,28 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={529.27} t1={530.6} text="CARRYING FOOD" color={C.oro} tinta={C.noche} x={960} y={930} centro size={56} />
       {t > 531.9 && t < 535.1 && <Grande t={t} t0={532.25} text="IT SAVED MANY" y={200} size={120} color={C.lima} />}
       {/* sube y baja */}
-      {t > 535.0 && t < 546.0 && (
-        <svg style={{ position: "absolute", left: 360, top: 150, opacity: ent(t, 535.1) * (1 - prog(t, 545.5, 546.0)) }} width={1200} height={380}>
-          <rect width={1200} height={380} rx={28} fill="#fff3d6" stroke="#2a1408" strokeWidth={8} />
-          <path d={`M 60 190 L 240 90 L 420 290 L 600 100 L 780 300 L 960 120 L 1140 260`} stroke={C.violeta} strokeWidth={16} fill="none" strokeLinejoin="round" strokeDasharray="2200" strokeDashoffset={2200 * (1 - prog(t, 535.2, 539.8))} />
-          {[["GIFTS", 240, 70, 536.53], ["THREATS", 420, 340, 537.31], ["TRADING", 600, 80, 538.33], ["RAIDS", 780, 350, 539.09]].map(([s, x, y, t0]) => <text key={s as string} x={x as number} y={y as number} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill={(s === "THREATS" || s === "RAIDS") ? C.rojo : "#2a7a3a"} opacity={prog(t, t0 as number, (t0 as number) + 0.2)}>{s as string}</text>)}
-        </svg>
-      )}
+      {/* plano medio: las relaciones suben y bajan — regalos, amenazas, trueque, saqueo; y quién depende de quién */}
+      {t > 535.0 && t < 546.05 && (() => {
+        const f = t < 536.53 ? 0 : t < 537.31 ? 1 : t < 538.33 ? 2 : t < 539.09 ? 3 : t < 540.15 ? 4 : 5;
+        const canasta = <g><path d="M -44 -6 L 44 -6 L 34 44 L -34 44 Z" fill="#a0683a" stroke="#4e2a12" strokeWidth={5} />{[-24, 0, 24].map((dx) => <ellipse key={dx} cx={dx} cy={-14} rx={13} ry={18} fill="#f2c230" stroke="#a07a10" strokeWidth={3} />)}</g>;
+        const garrote = <g><line x1={0} y1={40} x2={0} y2={-90} stroke="#5a3a1a" strokeWidth={12} /><circle cx={0} cy={-96} r={22} fill="#5a3a1a" /></g>;
+        const cuentas = <g>{[0, 1, 2, 3, 4].map((k) => <circle key={k} cx={-24 + k * 12} cy={8 + Math.sin(k * 1.3) * 6} r={8} fill={["#3ac0e0", "#e04a6a", "#f2c230"][k % 3]} stroke="#1b1240" strokeWidth={2} />)}</g>;
+        const cx = f === 4 ? interpolate(t, [539.1, 540.1], [380, 150], { extrapolateRight: "clamp" }) : 380;
+        const rot: [string, string][] = [["", ""], ["GIFTS", "#2a7a3a"], ["THREATS", C.rojo], ["TRADING", C.teal], ["RAIDS", C.rojo], ["WHO NEEDS WHOM?", C.violeta]];
+        return <Vineta t={t} t0={535.1} t1={546.0} x={960} y={470} w={1300} h={640} cielo="#f2d9a8" cielo2="#e8c088" suelo="#7a5a30" sueloY={470} rot={-0.8}>
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={640}>
+            <path d="M 1010 470 Q 1160 230 1310 470 Z" fill="#a8844a" stroke="#5a3a1a" strokeWidth={6} />
+            {Array.from({ length: 6 }, (_, k) => <path key={k} d={`M ${k * 34} 470 L ${k * 34} 250 L ${17 + k * 34} 225 L ${34 + k * 34} 250 L ${34 + k * 34} 470 Z`} fill="#7a5530" stroke="#3a2412" strokeWidth={4} />)}
+            {f === 5 && [0, 1, 2, 3, 4, 5].map((k) => <ellipse key={k} cx={1080 + (k % 3) * 46} cy={455 - Math.floor(k / 3) * 34} rx={22} ry={30} fill="#f2c230" stroke="#a07a10" strokeWidth={3} />)}
+          </svg>
+          <Persona x={cx} y={820} h={520} t={t} seed={1320} ropa={COLONO(2)} flaco={f === 5 ? 0.35 : 0.15} flip={f === 4} camina={f === 4 ? 2.6 : 0} inclina={f === 5 ? 14 : 0} expr={(["neutro", "feliz", "miedo", "feliz", "enojado", "triste"] as const)[f]} bD={[20, 80, 20, 80, 40, 110][f]} cD={[0, 30, 0, 30, 60, 10][f]} bI={f === 2 ? 120 : 10} manoD={f === 3 ? cuentas : f === 4 ? canasta : undefined} />
+          <Persona x={920} y={820} h={540} t={t} seed={1321} ropa={POW(0)} plumaPelo flip expr={(["neutro", "feliz", "enojado", "neutro", "enojado", "orgullo"] as const)[f]} bD={[20, 80, 160, 80, 130, 30][f]} cD={[0, 30, 20, 30, 20, 0][f]} manoD={f === 2 || f === 4 ? garrote : f === 1 || f === 3 ? canasta : undefined} />
+          {f > 0 && <Rotulo key={f} t={t} t0={[535.1, 536.53, 537.31, 538.33, 539.09, 540.15][f]} x={650} y={80} text={rot[f][0]} color={rot[f][1]} size={56} />}
+        </Vineta>;
+      })()}
       {t > 546.1 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}><Lluvia t={t} n={140} seed={9} /></div>}
-      {t > 541.4 && t < 546.0 && <Grande t={t} t0={543.21} text="THE ENGLISH DEPEND ON THEM" y={720} size={80} color={C.ambar} />}
-      <Chip t={t} t0={544.47} t1={546.0} text="NOT THE OTHER WAY AROUND" color={C.rojo} x={960} y={860} centro size={50} />
+      {t > 541.4 && t < 546.0 && <Grande t={t} t0={543.21} text="THE ENGLISH DEPEND ON THEM" y={880} size={72} color={C.ambar} />}
+      <Chip t={t} t0={544.47} t1={546.0} text="NOT THE OTHER WAY AROUND" color={C.rojo} x={960} y={1010} centro size={44} />
       <Chip t={t} t0={546.6} t1={550.6} text="AUTUMN 1609" color={C.naranja} x={960} y={140} centro size={84} />
       {t > 548.7 && <Grande t={t} t0={548.71} text="EVERYTHING GOES WRONG" y={880} size={84} color="#ff5a6a" />}
       {t > 494.4 && t < 504.8 && <Nieve t={t} n={60} op={0.7} />}

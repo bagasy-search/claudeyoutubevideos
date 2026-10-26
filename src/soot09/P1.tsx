@@ -49,7 +49,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
         {t > 58.8 && t < 63.8 && ([[3640, "VIRGINIA!", 60.1], [3820, "GOLD!!", 60.94], [4140, "VIRGINIA?!", 61.84]] as [number, string, number][]).map(([x, s, t0], i) => (
           <En key={i} x={x} w={300}>
             <Persona x={x} y={SUELO} h={330} t={t} seed={90 + i} ropa={COLONO(i + 2)} expr={i === 1 ? "sorpresa" : "feliz"} habla flip={i === 1} gorro={i === 2 ? "gorra" : undefined} />
-            <Globo t={t} t0={t0} x={x + (i === 1 ? -40 : 40)} y={SUELO - 360} text={s} size={58} cola={i === 1 ? "der" : "izq"} />
+            <Globo t={t} t0={t0} x={x + (i === 1 ? -40 : 40)} y={SUELO - 360 - (i === 1 ? 130 : 0)} text={s} size={58} cola={i === 1 ? "der" : "izq"} />
           </En>
         ))}
         {/* la Virginia Company: inversores de galera, la carta real y la corona */}
@@ -100,7 +100,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
               ladea={f.i === 3 && t > 115.4 && t < 119 ? -14 : 0} inclina={f.i === 3 && t > 115.4 && t < 119 ? 6 : 0} />}
             {f.gent && t > 110.88 && <div style={{ position: "absolute", left: f.x - 120, top: SUELO - 470, width: 240, height: 500, background: "radial-gradient(ellipse at 50% 100%, rgba(255,230,140,.55), transparent 70%)", opacity: ent(t, 110.9 + f.i * 0.05), pointerEvents: "none" }} />}
             {OFICIO[f.i] && <Icono k={OFICIO[f.i][0]} x={f.x} y={SUELO - (f.chico ? 330 : 440)} s={0.55} t={t} t0={OFICIO[f.i][1]} />}
-            {OFICIO[f.i] && t > OFICIO[f.i][1] && t < 126.2 && <div style={{ position: "absolute", left: f.x - 70, top: SUELO - (f.chico ? 270 : 380) + (f.i % 2) * 34, width: 140, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: "#fff", WebkitTextStroke: "7px #1b1240", paintOrder: "stroke fill", whiteSpace: "nowrap", transform: `scale(${ent(t, OFICIO[f.i][1])})` }}>{({ pala: "LABORER", sierra: "CARPENTER", yunque: "SMITH", navaja: "BARBER", casco: "SOLDIER", nino: "BOY" } as Record<string, string>)[OFICIO[f.i][0]]}</div>}
+            {OFICIO[f.i] && t > OFICIO[f.i][1] && t < 126.2 && <div style={{ position: "absolute", left: f.x - 70, top: SUELO - (f.chico ? 270 : 380) - (f.i % 2) * 70, width: 140, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: "#fff", WebkitTextStroke: "7px #1b1240", paintOrder: "stroke fill", whiteSpace: "nowrap", transform: `scale(${ent(t, OFICIO[f.i][1])})` }}>{({ pala: "LABORER", sierra: "CARPENTER", yunque: "SMITH", navaja: "BARBER", casco: "SOLDIER", nino: "BOY" } as Record<string, string>)[OFICIO[f.i][0]]}</div>}
           </En>
         ))}
         {enFila && t > 112.9 && t < 119.3 && <Globo t={t} t0={115.48} t1={118.9} x={6080} y={SUELO - 400} text="MANUAL LABOR? EW." size={54} cola="der" />}
@@ -120,8 +120,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={58.22} t1={60.0} text="SMOKE" color="#6a6a7a" x={1380} y={240} size={50} />
       <Chip t={t} t0={58.78} t1={60.0} text="HORSES" color={C.tierra} x={1380} y={320} size={50} />
       <Chip t={t} t0={63.04} t1={66.1} text="INVESTORS" color={C.violeta} x={960} y={930} centro size={58} />
-      <Chip t={t} t0={66.44} t1={69.0} text="ROYAL CHARTER · KING JAMES" color={C.oro} tinta={C.noche} x={960} y={930} centro size={56} />
-      <Chip t={t} t0={68.72} t1={70.2} text="LOOKING FOR MEN" color={C.rojo} x={960} y={140} centro size={60} />
+      <Chip t={t} t0={66.44} t1={68.7} text="ROYAL CHARTER · KING JAMES" color={C.oro} tinta={C.noche} x={960} y={930} centro size={56} />
+      <Chip t={t} t0={68.72} t1={70.2} text="LOOKING FOR MEN" color={C.rojo} x={960} y={930} centro size={60} />
       {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" x={960} y={190} size={100} color={C.ambar} />}
       {t > 74.0 && t < 77.9 && <div style={{ position: "absolute", left: 0, top: 0 }}><Particulas t={t} tipo="destellos" n={26} seed={4} /></div>}
       {/* corte: los españoles cargando el oro de México y Perú */}
@@ -179,7 +179,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
           <Grande t={t} t0={127.34} text="FARMERS: 0" y={720} size={120} color="#ff5a6a" />
         </>
       )}
-      <Chip t={t} t0={129.4} t1={133.6} text="SUSAN CONSTANT" color={C.violeta} x={420} y={250} centro size={50} />
+      
       <Chip t={t} t0={130.6} t1={133.6} text="GODSPEED" color={C.teal} tinta={C.noche} x={960} y={250} centro size={50} />
       <Chip t={t} t0={131.6} t1={133.6} text="DISCOVERY" color={C.naranja} x={1500} y={250} centro size={50} />
       <Chip t={t} t0={132.26} t1={133.6} text="TINY" color={C.rosa} x={1420} y={760} size={50} />

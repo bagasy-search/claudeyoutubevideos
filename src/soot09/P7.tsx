@@ -42,7 +42,7 @@ const Menu: React.FC<{ t: number }> = ({ t }) => {
         return (
           <div key={k} style={{ position: "absolute", left: 0, top: 0, opacity: t > sig + 0.3 ? 0.55 : 1 }}>
             <Bicho k={k} x={x - 70} y={y} s={0.42} t={t} t0={t0} />
-            <div style={{ position: "absolute", left: x - 10, top: y - 18, fontFamily, fontWeight: 700, fontSize: label.length > 10 ? 38 : 46, color: "#3a1a0a", whiteSpace: "nowrap" }}>{label}</div>
+            <div style={{ position: "absolute", left: x - 10, top: y - 18, fontFamily, fontWeight: 700, fontSize: label.length > 12 ? 32 : label.length > 10 ? 38 : 46, color: "#3a1a0a", whiteSpace: "nowrap" }}>{label}</div>
             <Tacha t={t} t0={sig} x={x + 10} y={y} r={70} />
           </div>
         );
@@ -171,6 +171,27 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={655.13} t1={656.8} text="YOUNG" color={C.teal} tinta={C.noche} x={620} y={930} size={44} />
       <Chip t={t} t0={655.91} t1={656.8} text="SON OF AN EARL" color={C.oro} tinta={C.noche} x={880} y={930} size={44} />
       {t > 657.6 && t < 659.4 && <Grande t={t} t0={657.8} text="ENOUGH." y={200} size={150} color={C.rojo} />}
+      {/* plano medio: la partida que sale a cambiar maíz cae en una emboscada */}
+      {t > 659.2 && t < 663.5 && (() => {
+        const giro = prog(t, 660.95, 661.2), huye = prog(t, 661.1, 663.4);
+        const canasta = <path d="M -40 -6 L 40 -6 L 30 40 L -30 40 Z" fill="#a0683a" stroke="#4e2a12" strokeWidth={5} />;
+        const flechas: [number, number, number][] = [[660.9, 620, 430], [661.05, 470, 470], [661.2, 840, 400], [661.4, 330, 520], [661.6, 560, 360], [661.8, 760, 540]];
+        const xb = 550;
+        return <Vineta t={t} t0={659.25} t1={663.45} x={960} y={540} w={1300} h={640} cielo="#9ab88a" cielo2="#d0dcb0" suelo="#5a6a30" sueloY={500} rot={-1} sacude={t > 660.9 && t < 661.5 ? 5 : 0}>
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={640}>
+            {[60, 260, 560, 900, 1120].map((x, k) => <g key={x}><rect x={x - 18} y={200} width={36} height={300} fill="#4a3a22" /><circle cx={x} cy={180} r={110 + (k % 2) * 30} fill={k % 2 ? "#3a6a32" : "#2e5a2a"} /></g>)}
+          </svg>
+          {[0, 1, 2].map((i) => t > 660.6 + i * 0.15 && <Persona key={i} x={1060 + i * 100} y={800} h={500} t={t} seed={1350 + i} ropa={POW(i)} plumaPelo flip expr="enojado" bD={90} cD={0} bI={80} cI={10} manoD={<path d="M 0 -80 Q 46 0 0 80" stroke="#5a3a1a" strokeWidth={8} fill="none" />} aparece={660.6 + i * 0.15} />)}
+          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1300} height={640}>
+            {[1000, 1180, 1320].map((x) => <ellipse key={x} cx={x} cy={600} rx={150} ry={110} fill="#2e5a26" />)}
+          </svg>
+          {[0, 1, 2].map((i) => { const cae = i === 2 ? prog(t, 661.5, 661.9) : 0; const x = 250 + i * 210 + 90 * prog(t, 659.25, 660.95) - (i === 2 ? 0 : 700 * huye); return <Persona key={i} x={x} y={820} h={480} t={t} seed={1355 + i} ropa={COLONO(i)} flaco={0.25} flip={giro > 0.5} camina={cae > 0 ? 0 : t < 660.95 ? 1.3 : 3.0} inclina={-80 * cae} expr={t > 660.9 ? "miedo" : "neutro"} bD={60} cD={40} manoD={i === 0 || (i === 1 && t < 661.3) ? canasta : undefined} />; })}
+          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1300} height={640}>
+            {t > 661.3 && <g>{[0, 1, 2, 3, 4].map((k) => <ellipse key={k} cx={xb + (k - 2) * 40 * prog(t, 661.3, 661.8)} cy={600 - Math.sin(Math.PI * prog(t, 661.3, 661.8)) * 40} rx={14} ry={20} fill="#f2c230" stroke="#a07a10" strokeWidth={3} />)}<path d={`M ${xb - 40} 570 L ${xb + 40} 570 L ${xb + 30} 616 L ${xb - 30} 616 Z`} fill="#a0683a" stroke="#4e2a12" strokeWidth={5} transform={`rotate(${70 * prog(t, 661.3, 661.6)} ${xb} 600)`} /></g>}
+            {flechas.map(([t0, x, y], k) => { if (t < t0) return null; const v = prog(t, t0, t0 + 0.3), d = Math.max(0, t - t0 - 0.3); return <g key={k} transform={`translate(${x + (1 - v) * 700} ${y - (1 - v) * 80}) rotate(${-6 + Math.sin(d * 40) * 6 * Math.exp(-d * 5)})`}><line x1={0} y1={0} x2={150} y2={0} stroke="#3a2412" strokeWidth={8} /><path d="M 0 0 L 18 -10 L 18 10 Z" fill="#3a3a3a" /><path d="M 150 0 L 176 -16 M 150 0 L 176 16 M 136 0 L 162 -16 M 136 0 L 162 16" stroke="#e8e0c8" strokeWidth={6} /></g>; })}
+          </svg>
+        </Vineta>;
+      })()}
       <Chip t={t} t0={659.23} t1={660.95} text="TRADING PARTY" color={C.tierra} x={960} y={140} centro size={56} />
       <Chip t={t} t0={660.99} t1={663.3} text="AMBUSHED" color={C.rojo} x={960} y={140} centro size={60} />
       <Chip t={t} t0={661.95} t1={663.3} text="MANY NEVER COME BACK" color={C.violeta} x={960} y={930} centro size={52} />
@@ -251,7 +272,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         {[[200, 1210, 1, 4], [400, 1211, 0, -6], [890, 1212, 2, 8], [1090, 1213, 3, -4]].map(([x, seed, c, inc], k) => <Persona key={seed} x={x} y={620} h={420} t={t} seed={seed} ropa={{ ...COLONO(c), tunica: "#7a7468", tunica2: "#4e4a42" }} flaco={0.95} expr={k === 2 ? "dormido" : "triste"} flip={k > 1} mira={k > 1 ? -0.5 : 0.5} inclina={inc + Math.sin(t * 1.4 + k) * 3} bI={k % 2 ? 40 : 20} bD={k % 2 ? 60 : 30} cD={80} />)}
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={620}><path d="M 560 560 Q 645 600 730 560" stroke="#5a5a64" strokeWidth={10} fill="#8a8a94" /></svg>
       </Vineta>
-      {t > 732.6 && t < 736.2 && <Tablero t={t} valor={Math.round(interpolate(t, [733.7, 735.8], [500, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }))} titulo="ALIVE" rojo={t > 735.6} x={960} y={300} s={1.8} />}
+      {t > 732.6 && t < 736.2 && <Tablero t={t} valor={Math.round(interpolate(t, [733.7, 735.8], [500, 60], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }))} titulo="ALIVE" rojo={t > 735.6} x={960} y={420} s={1.8} />}
       {t > 739.5 && <Grande t={t} t0={739.67} text="THE STARVING TIME" y={200} size={130} color={C.ambar} />}
     </AbsoluteFill>
   );

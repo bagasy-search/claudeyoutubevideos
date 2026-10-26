@@ -220,7 +220,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       )}
       {t > 191.6 && t < 193.8 && (
         <>
-          <Chip t={t} t0={191.88} t1={193.8} text="PRISONER" color="#6a6a7a" x={300} y={160} size={58} />
+          <Chip t={t} t0={191.88} t1={192.9} text="PRISONER" color="#6a6a7a" x={300} y={160} size={58} />
           <Tacha t={t} t0={192.5} x={430} y={190} r={110} />
           {t > 192.9 && <Grande t={t} t0={192.94} text="COUNSELOR" y={330} size={120} color={C.ambar} />}
         </>

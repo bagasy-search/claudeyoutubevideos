@@ -1,7 +1,7 @@
 import React from "react";
 import { Persona } from "./persona";
 import { ent, prog } from "./kit";
-import { GENT, COLONO, SMITH, POW } from "./kitj";
+import { GENT, COLONO, SMITH, POW, TOM } from "./kitj";
 
 // PRIMER PLANO: en los tramos donde el mundo queda en plano general, un personaje grande entra desde abajo
 // y actúa lo que dice la voz en ese segundo (el mundo queda de fondo). Coordenadas de pantalla.
@@ -36,7 +36,6 @@ const E_: E[] = [
   [379.7, 386.0, "I", { seed: 1111, ropa: COLONO(1), expr: "sorpresa", manoD: pepita }],
   [394.0, 400.0, "D", { seed: 1112, ropa: GENT(3), gola: true, gorro: "copa", expr: "orgullo", manoD: bolsa }],
   [415.6, 420.4, "I", { seed: 1113, ropa: SMITH, barba: "#8a4a1a", gorro: "morion", gola: true, expr: "enojado", habla: true, bD: 140, cD: 20 }],
-  [420.6, 425.0, "I", { seed: 1114, ropa: GENT(1), gola: true, gorro: "copa", expr: "enojado" }],
   [435.6, 441.0, "I", { seed: 1115, ropa: COLONO(0), expr: "feliz", manoD: azada }],
   [459.6, 465.0, "D", { seed: 1116, ropa: COLONO(3), expr: "neutro", flaco: 0.2, manoD: cuenco }],
   [487.7, 494.3, "D", { seed: 1144, ropa: POW(2), viejo: true, plumaPelo: true, capa: "#6a3a1a", expr: "enojado", habla: true, bD: 140, cD: 30 }],
@@ -48,9 +47,10 @@ const E_: E[] = [
   [674.1, 677.0, "I", { seed: 1123, ropa: GENT(3), gola: true, expr: "triste", flaco: 0.55 }],
   [695.7, 700.5, "I", { seed: 1124, ropa: COLONO(2), expr: "triste", flaco: 0.6, manoD: hatillo }],
   [700.7, 703.2, "D", { seed: 1125, ropa: COLONO(3), expr: "miedo", flaco: 0.6, manoD: pala }],
-  [779.0, 784.0, "I", { seed: 1127, ropa: COLONO(1), expr: "triste", flaco: 0.5, manoD: hatillo }],
-  [789.6, 795.2, "D", { seed: 1128, ropa: COLONO(0), expr: "triste", flaco: 0.5 }],
+  [741.2, 743.1, "D", { seed: 7, ropa: TOM, gorro: "sombrero", expr: "sorpresa", flaco: 0.2, bD: 150, cD: 30, habla: true }],
+  [779.0, 781.6, "I", { seed: 1127, ropa: COLONO(1), expr: "triste", flaco: 0.5, manoD: hatillo }],
   [815.6, 819.3, "I", { seed: 1129, ropa: COLONO(2), expr: "feliz", flaco: 0.4, bD: 150, cD: 30 }],
+  [888.8, 892.2, "I", { seed: 7, ropa: TOM, gorro: "sombrero", expr: "feliz", flaco: 0.2, bD: 150, cD: 20, habla: true }],
   [860.6, 864.2, "D", { seed: 1131, ropa: COLONO(3), expr: "triste", flaco: 0.3 }],
 ];
 

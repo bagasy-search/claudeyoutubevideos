@@ -226,6 +226,29 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={577.07} t1={583.0} text="LEAKING" color="#2a7ac8" x={250} y={140} size={56} />
       <Chip t={t} t0={579.65} t1={583.0} text="GENTLEMEN INCLUDED" color={C.violeta} x={250} y={220} size={44} />
       <Chip t={t} t0={582.31} t1={583.0} text="DAY AND NIGHT" color={C.noche2} x={1420} y={140} size={50} />
+      {/* plano medio: tiran la carga por la borda (también los caballeros) y cortan el mástil */}
+      {t > 583.1 && t < 589.3 && (() => {
+        const items: [string, number][] = [["barril", 584.2], ["canon", 585.43], ["cofre", 586.07], ["bolsa", 586.71]];
+        const tiro = (j: number) => items.reduce((m, [, t0], i) => i % 2 === j ? Math.max(m, prog(t, t0 - 0.55, t0 - 0.15) * (1 - prog(t, t0 + 0.1, t0 + 0.5))) : m, 0);
+        const hacha = t > 587.4, cae = prog(t, 588.2, 588.95);
+        return <Vineta t={t} t0={583.2} t1={589.25} x={1180} y={630} w={1240} h={640} cielo="#3a4258" cielo2="#5a6478" suelo="#6a4424" sueloY={470} sacude={3} rot={1}>
+          <div style={{ position: "absolute", left: 0, top: 0, width: 1240, height: 640, transform: `rotate(${Math.sin(t * 2.2) * 5}deg)`, transformOrigin: "620px 470px" }}>
+            <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1240} height={640}>
+              <rect x={900} y={-200} width={600} height={1000} fill="#1f4a6a" />
+              <path d={`M 900 ${560 + Math.sin(t * 4) * 14} Q 1060 ${520 + Math.sin(t * 4 + 1) * 20} 1240 ${560 + Math.sin(t * 4 + 2) * 14} L 1240 900 L 900 900 Z`} fill="#2f6f8f" />
+              <rect x={-200} y={470} width={1100} height={400} fill="#6a4424" />
+              {Array.from({ length: 10 }, (_, k) => <line key={k} x1={-200 + k * 110} y1={470} x2={-260 + k * 110} y2={700} stroke="#4a2e14" strokeWidth={4} />)}
+              <g transform={`rotate(${-80 * cae} 240 470)`}><rect x={222} y={-200} width={36} height={670} fill="#4a2a12" /><path d="M 258 -150 Q 470 0 258 260 Z" fill="#c8c0b0" stroke="#7a705e" strokeWidth={5} /></g>
+              {hacha && t < 588.4 && Math.sin(t * 14) > 0.6 && <path d="M 232 400 l 34 -14 l -8 34 Z" fill="#f2e2a0" />}
+              {items.map(([k, t0]) => { const u = prog(t, t0 - 0.15, t0 + 0.75); if (u <= 0 || u >= 1) return null; const x = 780 + u * 360, y = 330 - 280 * u + 560 * u * u; return <g key={k} transform={`translate(${x} ${y}) rotate(${u * 420})`}>{k === "canon" ? <g><rect x={-70} y={-20} width={140} height={40} rx={18} fill="#2a2a30" /><circle cx={-30} cy={26} r={20} fill="#5a3a1a" /><circle cx={34} cy={26} r={20} fill="#5a3a1a" /></g> : k === "cofre" ? <g><rect x={-55} y={-36} width={110} height={72} rx={8} fill="#8a5a2e" stroke="#3a1a08" strokeWidth={6} /><rect x={-55} y={-8} width={110} height={10} fill="#e0b44a" /></g> : k === "barril" ? <g><ellipse cx={0} cy={0} rx={40} ry={55} fill="#9a6a3a" stroke="#3a1a08" strokeWidth={6} /><line x1={-40} y1={-20} x2={40} y2={-20} stroke="#3a1a08" strokeWidth={6} /><line x1={-40} y1={20} x2={40} y2={20} stroke="#3a1a08" strokeWidth={6} /></g> : <path d="M -40 30 Q -50 -30 0 -40 Q 50 -30 40 30 Z" fill="#c8b088" stroke="#5a4020" strokeWidth={6} />}</g>; })}
+              {items.map(([k, t0]) => { const v = prog(t, t0 + 0.7, t0 + 1.3); if (v <= 0 || v >= 1) return null; return <g key={`s${k}`}>{Array.from({ length: 7 }, (_, i) => { const a = -Math.PI / 2 + (i - 3) * 0.35; return <ellipse key={i} cx={1140 + Math.cos(a) * 140 * v} cy={600 + Math.sin(a) * 200 * v + v * v * 120} rx={12} ry={18} fill="#cfeaff" opacity={1 - v} />; })}</g>; })}
+              <rect x={880} y={380} width={36} height={300} fill="#5a3418" stroke="#2a1408" strokeWidth={5} />
+            </svg>
+            <Persona x={hacha ? 420 : 640} y={820} h={500} t={t} seed={1330} ropa={COLONO(0)} flip={hacha} flaco={0.2} expr={hacha ? "enojado" : "miedo"} inclina={hacha ? 0 : 12 * tiro(0)} bD={hacha ? 120 + 50 * Math.sin(t * 14) * (1 - cae) : 30 + 140 * tiro(0)} cD={20} manoD={hacha ? <g><line x1={0} y1={30} x2={0} y2={-80} stroke="#5a3a1a" strokeWidth={10} /><path d="M -4 -80 L -44 -96 L -44 -52 L -4 -64 Z" fill="#8a8a96" stroke="#2a2a30" strokeWidth={4} /></g> : undefined} />
+            <Persona x={790} y={820} h={480} t={t} seed={1331} ropa={GENT(1)} gola flaco={0.1} expr={cae > 0.3 ? "sorpresa" : "miedo"} inclina={12 * tiro(1)} bD={30 + 140 * tiro(1)} bI={30 + 120 * tiro(1)} cD={20} />
+          </div>
+        </Vineta>;
+      })()}
       <Chip t={t} t0={583.23} t1={587.3} text="THROW IT ALL OVERBOARD" color={C.rojo} x={960} y={140} centro size={56} />
       <Chip t={t} t0={585.43} t1={587.3} text="CANNONS" color="#3a3a44" x={300} y={260} size={44} />
       <Chip t={t} t0={586.07} t1={587.3} text="CHESTS" color={C.tierra} x={300} y={335} size={44} />
@@ -267,10 +290,56 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
         {[[233, 614.27, "SICK", C.lima, C.noche], [700, 615.25, "LITTLE FOOD", C.naranja, "#fff"], [1166, 616.37, "NO LEADERS", C.violeta, "#fff"]].map(([x, t0, s, c, k]) => <Rotulo key={s as string} t={t} t0={t0 as number} x={x as number} y={110} text={s as string} color={c as string} tinta={k as string} size={52} />)}
       </Vineta>
       {t > 617.4 && t < 622.2 && <Tablero t={t} valor={interpolate(t, [619.7, 620.6], [100, 500], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} titulo="MOUTHS TO FEED" rojo={t > 620.4} x={1640} y={150} s={1.2} />}
+      {/* plano medio: Smith dormido en el bote con la pólvora en el regazo; chispa, fuego, se tira al río */}
+      {t > 628.6 && t < 638.9 && (() => {
+        const u = prog(t, 636.1, 637.5), fuego = t > 634.95 && t < 637.5, chispa = t > 634.27 && t < 634.95;
+        const sx = 640 + 560 * u, sy = 790 - 380 * Math.sin(Math.PI * u) + 420 * u * u;
+        const c = cabeza(sx, sy, 520);
+        return <Vineta t={t} t0={628.7} t1={638.85} x={960} y={540} w={1300} h={640} cielo="#2a3656" cielo2="#5a6a8a" suelo="#2f5f7f" sueloY={500} sacude={t > 634.95 && t < 635.8 ? 9 : 0} rot={-0.8}>
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={640}>
+            <circle cx={1120} cy={110} r={50} fill="#f4ecc8" />
+            {[60, 200, 980, 1220].map((x, k) => <g key={x}><rect x={x - 12} y={330} width={24} height={180} fill="#1a2418" /><circle cx={x} cy={320} r={70 + (k % 2) * 20} fill="#1e3022" /></g>)}
+            <path d={`M 0 ${520 + Math.sin(t * 2) * 6} Q 650 ${505 + Math.sin(t * 2 + 1) * 8} 1300 ${520 + Math.sin(t * 2 + 2) * 6} L 1300 640 L 0 640 Z`} fill="#3a7a9a" opacity={0.6} />
+          </svg>
+          <Persona x={sx} y={sy} h={520} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr={t < 634.9 ? "dormido" : "miedo"} inclina={-50 * u} bD={t < 634.9 ? 15 : 150 + Math.sin(t * 20) * 20} bI={t < 634.9 ? 15 : 150 + Math.cos(t * 20) * 20} cD={t < 634.9 ? 60 : 20} cI={t < 634.9 ? 60 : 20} />
+          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1300} height={640}>
+            <path d="M 300 600 L 1000 600 Q 980 700 900 720 L 400 720 Q 320 700 300 600 Z" fill="#6a4424" stroke="#2a1408" strokeWidth={8} />
+            <rect x={300} y={590} width={700} height={20} rx={8} fill="#8a5a2e" stroke="#2a1408" strokeWidth={5} />
+            {t < 634.95 && <g transform="translate(700 560)"><path d="M -60 40 Q -66 -30 0 -44 Q 66 -30 60 40 Z" fill="#6a5a3a" stroke="#3a2a12" strokeWidth={6} /><text x={0} y={18} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={26} fill="#fff">POWDER</text></g>}
+            {t < 634.27 && [0, 1, 2].map((k) => { const z = (t * 0.7 + k / 3) % 1; return <text key={k} x={c.x + 60 + z * 80} y={c.y - 40 - z * 120} fontFamily={fontFamily} fontWeight={700} fontSize={34 + z * 30} fill="#fff" opacity={1 - z}>Z</text>; })}
+            {chispa && [0, 1, 2, 3, 4].map((k) => <circle key={k} cx={700 + Math.sin(t * 40 + k * 2) * 26} cy={512 - k * 10 - Math.abs(Math.cos(t * 33 + k)) * 20} r={7 - k} fill={k % 2 ? "#ffd34a" : "#ff6a2a"} />)}
+            {fuego && Array.from({ length: 9 }, (_, i) => { const w = Math.sin(t * (12 + i) + i * 2) * 14; const x0 = sx - 120 + i * 30, y0 = sy - 200; return <path key={i} d={`M ${x0} ${y0} Q ${x0 - 18 + w} ${y0 - 110 - (i % 3) * 30} ${x0 + 14 + w} ${y0 - 200 + (i % 2) * 40} Q ${x0 + 44 - w} ${y0 - 90} ${x0 + 32} ${y0} Z`} fill={["#ff5a1a", "#ffb23a", "#fff0a0"][i % 3]} opacity={0.85} />; })}
+            {t > 637.3 && (() => { const v = prog(t, 637.35, 638.6); return Array.from({ length: 11 }, (_, i) => { const a = -Math.PI / 2 + (i - 5) * 0.28; return <ellipse key={i} cx={1180 + Math.cos(a) * 240 * v} cy={560 + Math.sin(a) * 330 * v + v * v * 220} rx={16} ry={26} fill="#cfeaff" stroke="#fff" strokeWidth={3} opacity={1 - v} />; }); })()}
+          </svg>
+          {t > 634.95 && t < 635.5 && <div style={{ position: "absolute", left: 0, top: 0, width: 1300, height: 640, background: "#ffb040", opacity: 0.7 * (1 - prog(t, 634.95, 635.5)) }} />}
+        </Vineta>;
+      })()}
+      {/* plano medio: Smith quemado y vendado en la cubierta, Jamestown se aleja */}
+      {t > 638.95 && t < 643.8 && (() => {
+        const c = cabeza(560, 860, 540), lejos = prog(t, 639.0, 643.7);
+        return <Vineta t={t} t0={639.0} t1={643.75} x={960} y={540} w={1240} h={620} cielo="#c8d4e0" cielo2="#e8eef4" suelo="#6a4424" sueloY={470} rot={1}>
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={620}>
+            <rect x={0} y={300} width={1240} height={170} fill="#3a7a9a" />
+            <path d={`M ${-100 - lejos * 500} 300 Q ${150 - lejos * 500} ${190 + lejos * 60} ${420 - lejos * 500} 300 Z`} fill="#3a6a3a" />
+            {[0, 1, 2].map((k) => <rect key={k} x={40 - lejos * 500 + k * 60} y={250 + lejos * 30} width={14} height={50} fill="#5a3a1a" />)}
+          </svg>
+          <Persona x={560} y={860} h={540} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="triste" mira={-0.5} bD={110 + Math.sin(t * 5) * 18} cD={30} bI={20} />
+          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1240} height={620}>
+            <path d={`M ${c.x - 70} ${c.y - 30} Q ${c.x} ${c.y - 110} ${c.x + 70} ${c.y - 30}`} stroke="#fff" strokeWidth={26} fill="none" strokeLinecap="round" />
+            <circle cx={c.x + 40} cy={c.y - 60} r={10} fill="#d84a3a" opacity={0.7} />
+            <path d={`M ${c.x - 90} ${c.y + 160} L ${c.x + 80} ${c.y + 330}`} stroke="#fff" strokeWidth={30} strokeLinecap="round" />
+            <rect x={0} y={560} width={1240} height={26} fill="#5a3418" stroke="#2a1408" strokeWidth={5} />
+            {[80, 300, 520, 740, 960, 1180].map((x) => <rect key={x} x={x} y={560} width={22} height={70} fill="#5a3418" />)}
+          </svg>
+          <Persona x={980} y={860} h={500} t={t} seed={1340} ropa={COLONO(1)} flip expr="neutro" bD={150 + Math.sin(t * 6) * 20} bI={140 + Math.cos(t * 6) * 20} cD={20} cI={20} />
+          <Rotulo t={t} t0={639.4} x={560} y={80} text="BURNED · BANDAGED" color={C.rojo} size={44} />
+          <Rotulo t={t} t0={640.0} x={200} y={200} text="JAMESTOWN" color={C.tierra} size={34} />
+        </Vineta>;
+      })()}
       <Chip t={t} t0={622.67} t1={624.5} text="ONE MORE PASSENGER..." color="#6a6a7a" x={960} y={140} centro size={54} />
       {t > 624.5 && t < 626.0 && <Grande t={t} t0={624.65} text="RATS" y={200} size={160} color="#c8c8d8" />}
       {t > 634.9 && t < 635.6 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, background: "#fff2c0", opacity: 0.85 * (1 - prog(t, 634.95, 635.6)) }} />}
-      {t > 637.5 && t < 638.8 && <Grande t={t} t0={637.55} text="SPLASH!" y={260} size={130} color="#8fd0ff" />}
+      {t > 637.5 && t < 638.8 && <Grande t={t} t0={637.55} text="SPLASH!" y={960} size={110} color="#8fd0ff" />}
       <Chip t={t} t0={626.13} t1={628.5} text="INTO THE STOREHOUSE" color={C.tierra} x={960} y={930} centro size={54} />
       <Chip t={t} t0={629.23} t1={631.5} text="SEPTEMBER" color={C.naranja} x={960} y={140} centro size={56} />
       <Chip t={t} t0={632.31} t1={634.9} text="GUNPOWDER ON HIS LAP" color={C.rojo} x={960} y={930} centro size={54} />
@@ -278,7 +347,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={636.13} t1={638.8} text="INTO THE RIVER" color="#2a7ac8" x={960} y={140} centro size={56} />
       <Chip t={t} t0={638.91} t1={640.4} text="BADLY WOUNDED" color={C.rojo} x={960} y={140} centro size={56} />
       <Chip t={t} t0={640.01} t1={642.3} text="HOME · OCTOBER" color={C.violeta} x={960} y={930} centro size={54} />
-      {t > 642.3 && t < 643.8 && <Grande t={t} t0={642.41} text="HE NEVER COMES BACK" y={200} size={100} color={C.ambar} />}
+      {t > 642.3 && t < 643.8 && <Grande t={t} t0={642.41} text="HE NEVER COMES BACK" y={960} size={90} color={C.ambar} />}
       {/* la ficha de Smith, tachada */}
       {t > 643.7 && t < 647.0 && (
         <div style={{ position: "absolute", left: 810, top: 260, transformOrigin: "150px 170px", transform: `scale(${1.5 * ent(t, 643.8) * (1 - prog(t, 646.5, 647.0))}) rotate(-3deg)`, width: 300, height: 340, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>

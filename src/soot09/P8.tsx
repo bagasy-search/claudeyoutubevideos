@@ -8,6 +8,7 @@ import { Base, FX } from "./base";
 import { GENT, COLONO, POW, Nave, Bote, Bicho, Tortuga, Tabaco, Barril, Tinte, Cruz } from "./kitj";
 import { Icono } from "./kitj2";
 import { Vineta } from "./vineta";
+import { TOM } from "./kitj";
 
 // EL GIRO (741,1-908,6 s). Deliverance y Patience llegan de Bermudas; 60 sobrevivientes; Gates abandona Jamestown;
 // río abajo, el bote del gancho (el de la farola, en la curva) trae a De La Warr; vuelven. Rolfe y el tabaco;
@@ -184,6 +185,23 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={750.29} t1={751.9} text="+ THE SEA VENTURE SURVIVORS" color={C.oro} tinta={C.noche} x={960} y={140} centro size={54} />
       {t > 752.0 && t < 753.6 && <Grande t={t} t0={752.41} text="THEY DID NOT DROWN" y={240} size={110} color={C.lima} />}
       <Chip t={t} t0={753.97} t1={758.2} text="10 MONTHS IN BERMUDA" color={C.teal} tinta={C.noche} x={960} y={140} centro size={56} />
+      {/* plano medio: los náufragos en Bermudas cazan cerdos, cargan tortugas y serruchan cedro para dos barcos */}
+      <Vineta t={t} t0={754.0} t1={761.65} x={1150} y={590} w={1180} h={620} cielo="#bfe6f2" suelo="#e8d090" sueloY={440} rot={1}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1180} height={620}>
+          <rect x={0} y={400} width={1180} height={50} fill="#3a9ac0" />
+          {[90, 1090].map((x) => <g key={x}><path d={`M ${x} 450 Q ${x + 10} 300 ${x - 6} 160`} stroke="#8a6a3a" strokeWidth={22} fill="none" />{[-60, -20, 20, 60].map((a) => <path key={a} d={`M ${x - 6} 160 Q ${x + a * 2} ${110 + Math.abs(a)} ${x + a * 3.4} ${190 + Math.abs(a)}`} stroke="#3a9a3a" strokeWidth={16} fill="none" />)}</g>)}
+          {t > 758.4 && <g opacity={prog(t, 758.4, 758.8)}><path d="M 640 440 Q 820 520 1000 440" stroke="#8a5a2e" strokeWidth={18} fill="none" />{[0, 1, 2, 3, 4].map((k) => <path key={k} d={`M ${680 + k * 70} ${452 + (k === 2 ? 26 : 14)} L ${660 + k * 76} 330`} stroke="#8a5a2e" strokeWidth={12} />)}<rect x={420} y={500} width={240} height={34} rx={14} fill="#b0642a" stroke="#5a2a10" strokeWidth={5} /></g>}
+        </svg>
+        {t < 758.4 ? <>
+          {(() => { const u = prog(t, 754.2, 758.3); return <><div style={{ position: "absolute", left: 0, top: 0 }}><Bicho k="cerdo" x={260 + u * 700} y={540 + Math.abs(Math.sin(t * 10)) * -14} s={0.7} t={t} /></div>
+          <Persona x={70 + u * 640} y={620} h={380} t={t} seed={1260} ropa={GENT(2)} gola expr="feliz" camina={2.2} inclina={12} bD={110} cD={20} habla /></>; })()}
+          <Persona x={980} y={620} h={360} t={t} seed={1261} ropa={COLONO(1)} expr="feliz" flip bI={60} bD={60} cI={70} cD={70} manoD={<g transform="translate(-60 -10) scale(0.6)"><ellipse rx={80} ry={50} fill="#4a8a3a" stroke="#2a5a1a" strokeWidth={8} /></g>} />
+        </> : <>
+          <Persona x={380} y={620} h={360} t={t} seed={1262} ropa={COLONO(2)} expr="neutro" inclina={10} bD={70 + Math.sin(t * 9) * 30} cD={30} />
+          <Persona x={720} y={620} h={360} t={t} seed={1263} ropa={GENT(2)} gola expr="feliz" flip inclina={-10} bD={70 - Math.sin(t * 9) * 30} cD={30} />
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1180} height={620}><g transform={`translate(${550 + Math.sin(t * 9) * 40} 470)`}><rect x={-90} y={-10} width={180} height={20} fill="#c0c4cc" stroke="#5a5a64" strokeWidth={4} /><rect x={-110} y={-18} width={24} height={36} rx={6} fill="#6a4a2a" /><rect x={86} y={-18} width={24} height={36} rx={6} fill="#6a4a2a" /></g>{Array.from({ length: 5 }, (_, k) => { const f = (t * 2 + k / 5) % 1; return <circle key={k} cx={550 + (k - 2) * 20} cy={500 + f * 60} r={5} fill="#e8b070" opacity={1 - f} />; })}</svg>
+        </>}
+      </Vineta>
       <Chip t={t} t0={756.15} t1={758.2} text="PIGS" color="#e88a9a" tinta={C.noche} x={300} y={260} size={44} />
       <Chip t={t} t0={757.01} t1={758.2} text="TURTLES" color={C.lima} tinta={C.noche} x={300} y={335} size={44} />
       <Chip t={t} t0={757.43} t1={758.2} text="BIRDS" color="#6a6a7a" x={300} y={410} size={44} />
@@ -210,8 +228,37 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={776.47} t1={781.4} text="7 JUNE 1610" color={C.naranja} x={960} y={140} centro size={60} />
       <Chip t={t} t0={778.93} t1={781.4} text="EVERYONE ON BOARD" color={C.teal} tinta={C.noche} x={960} y={930} centro size={54} />
       <Chip t={t} t0={781.57} t1={784.4} text="BURN THE FORT!" color={C.naranja} x={960} y={140} centro size={56} />
+      {/* plano medio: quieren quemar el fuerte; Gates los frena y deja guardia en el portón */}
+      <Vineta t={t} t0={781.7} t1={787.8} x={960} y={650} w={1240} h={560} cielo="#f0c890" suelo="#6a5a3a" sueloY={440} rot={-1}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={560}>{Array.from({ length: 24 }, (_, k) => k > 9 && k < 14 ? null : <path key={k} d={`M ${k * 52} 450 L ${k * 52} 190 L ${26 + k * 52} 165 L ${52 + k * 52} 190 L ${52 + k * 52} 450 Z`} fill="#7a5530" stroke="#3a2412" strokeWidth={4} />)}<rect x={520} y={160} width={208} height={30} fill="#5a3a1a" /></svg>
+        <Persona x={330} y={600} h={400} t={t} seed={1270} ropa={{ ...COLONO(0), tunica: "#7a7468", tunica2: "#4e4a42" }} flaco={0.7} expr={t > 784.8 ? "sorpresa" : "enojado"} habla={t < 784.4} bD={150} cD={20} inclina={t > 784.8 ? -10 * prog(t, 784.8, 785.2) : 6} manoD={<g><rect x={-8} y={-110} width={16} height={130} fill="#6a4a2a" /><path d={`M 0 -110 Q ${-30 + Math.sin(t * 20) * 6} -160 0 ${-210 - Math.sin(t * 17) * 12} Q 30 -160 0 -110 Z`} fill="#ff9a2a" /><path d="M 0 -118 Q -14 -150 0 -170 Q 14 -150 0 -118 Z" fill="#ffe08a" /></g>} />
+        <Persona x={660} y={600} h={440} t={t} seed={660} ropa={GENT(2)} gola gorro="morion" barba="#5a3a2a" expr={t > 784.4 ? "enojado" : "neutro"} flip bD={t > 784.4 ? 95 : 10} cD={0} habla={t > 784.4 && t < 785.6} />
+        {t > 785.6 && <Persona x={980} y={600} h={420} t={t} seed={1271} ropa={GENT(1)} gola gorro="morion" expr="neutro" flip aparece={785.6} bD={20} manoD={<g><rect x={-6} y={-300} width={12} height={340} fill="#6a4a2a" /><path d="M 0 -300 L -30 -250 L 30 -250 Z" fill="#9a9aa4" /></g>} />}
+      </Vineta>
       {t > 784.4 && t < 785.9 && <Grande t={t} t0={784.83} text="NO." y={240} size={170} color={C.crema} />}
       <Chip t={t} t0={785.95} t1={787.7} text="A GUARD AT THE GATES" color={C.violeta} x={960} y={930} centro size={52} />
+      {/* plano medio: en cubierta, los 60 esqueléticos miran atrás mientras el río pasa */}
+      <Vineta t={t} t0={788.1} t1={797.4} x={960} y={680} w={1300} h={560} cielo="#f4c890" cielo2="#e8a070" suelo="#6a3416" sueloY={430} rot={0.8}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={560}>
+          <rect x={0} y={330} width={1300} height={100} fill="#2f6f8f" />
+          {Array.from({ length: 9 }, (_, k) => { const x = ((k * 190 - (t - 788) * 90) % 1710 + 1710) % 1710 - 200; return <g key={k}><rect x={x} y={250} width={16} height={90} fill="#3a2a1a" /><path d={`M ${x - 50} 280 L ${x + 8} 150 L ${x + 66} 280 Z`} fill="#2f6a3a" /></g>; })}
+          <rect x={0} y={400} width={1300} height={34} fill="#4a2410" /><rect x={600} y={0} width={30} height={430} fill="#3a2010" /><path d="M 636 30 Q 820 150 636 300 Z" fill="#f4ecd8" stroke="#8a7a6a" strokeWidth={5} />
+        </svg>
+        {[[180, 1280, 0], [360, 1281, 1], [860, 1282, 2], [1060, 1283, 3]].map(([x, seed, c], k) => <Persona key={seed} x={x} y={560} h={360} t={t} seed={seed} ropa={{ ...COLONO(c), tunica: "#7a7468", tunica2: "#4e4a42" }} flaco={0.9} expr={t > 791.7 && k % 2 ? "triste" : "neutro"} flip={k > 1} mira={k > 1 ? 0.6 : -0.6} inclina={(k > 1 ? -1 : 1) * (4 + Math.sin(t * 1.4 + k) * 3)} bI={k === 0 ? 20 : 10} bD={k === 3 ? 150 : 10} cD={k === 3 ? 30 : 10} />)}
+        {t > 795.4 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1300} height={560}><text x={1100} y={140} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={120} fill={C.ambar} stroke="#1b1240" strokeWidth={8} paintOrder="stroke" transform={`translate(1100 100) scale(${ent(t, 795.5)}) translate(-1100 -100)`}>!</text></svg>}
+      </Vineta>
+      {/* plano medio: el bote del mensajero, un remero y el mensajero con la carta en alto */}
+      <Vineta t={t} t0={797.5} t1={803.65} x={960} y={600} w={1240} h={600} cielo="#f4d0a0" suelo="#2f6f8f" sueloY={380} rot={-1}>
+        {(() => { const x = 620 + Math.sin(t * 0.8) * 30, y = 470 + Math.sin(t * 2) * 8, rem = Math.sin(t * 5); return <>
+          <Persona x={x - 120} y={y + 20} h={300} t={t} seed={1284} ropa={COLONO(1)} expr="neutro" inclina={rem * 14} bI={60 + rem * 40} bD={60 + rem * 40} cI={30} cD={30} />
+          <Persona x={x + 130} y={y + 20} h={340} t={t} seed={1285} ropa={GENT(0)} gola gorro="sombrero" expr="feliz" habla={t > 801.4} flip bD={160 + Math.sin(t * 8) * 12} cD={20} manoD={<g><rect x={-34} y={-60} width={68} height={50} fill="#f4ecd8" stroke="#6a4a2a" strokeWidth={5} /><circle cx={0} cy={-36} r={9} fill={C.rojo} /></g>} />
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={600}>
+            <path d={`M ${x - 300} ${y - 10} L ${x + 300} ${y - 10} L ${x + 240} ${y + 70} L ${x - 240} ${y + 70} Z`} fill="#8a5a2e" stroke="#3a1a08" strokeWidth={8} />
+            <line x1={x - 100} y1={y - 40} x2={x - 260 - rem * 40} y2={y + 110} stroke="#6a4a2a" strokeWidth={12} />
+            <path d={`M 0 ${y + 60} Q 310 ${y + 40 + Math.sin(t * 3) * 10} 620 ${y + 60} T 1240 ${y + 60} L 1240 600 L 0 600 Z`} fill="#2a5f80" />
+          </svg>
+        </>; })()}
+      </Vineta>
       <Chip t={t} t0={787.81} t1={791.6} text="DOWN THE RIVER" color="#2a7ac8" x={960} y={140} centro size={56} />
       <Chip t={t} t0={789.77} t1={791.6} text="TOWARD HOME" color={C.lima} tinta={C.noche} x={960} y={930} centro size={54} />
       {t > 791.7 && t < 794.7 && <Grande t={t} t0={792.0} text="THE ADVENTURE IS OVER" y={230} size={100} color={C.crema} />}
@@ -237,6 +284,16 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {t > 826.2 && t < 828.4 && <Grande t={t} t0={826.4} text="ONE MORE TWIST" y={420} size={130} color={C.ambar} />}
       <Chip t={t} t0={828.83} t1={831.6} text="ON THE SEA VENTURE..." color={C.teal} tinta={C.noche} x={960} y={140} centro size={54} />
       <Chip t={t} t0={829.0} t1={833.3} text="JOHN ROLFE" color={C.oro} tinta={C.noche} x={960} y={930} centro size={64} />
+      {/* plano medio: John Rolfe, de náufrago a plantador de tabaco */}
+      <Vineta t={t} t0={829.2} t1={838.45} x={960} y={560} w={1240} h={600} cielo={t < 833 ? "#bfe6f2" : "#d8e8c0"} suelo={t < 833 ? "#e8d090" : "#7a5a30"} sueloY={450} rot={1}>
+        {t < 833 ? <>
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={600}><rect x={0} y={420} width={1240} height={40} fill="#3a9ac0" /><path d="M 900 450 L 1180 450 L 1120 380 L 960 380 Z" fill="#5a2a10" transform="rotate(-12 1040 420)" /></svg>
+          <Persona x={520} y={620} h={440} t={t} seed={1290} ropa={GENT(3)} gola expr="neutro" mira={0.3} bD={30} cD={60} manoD={<path d="M -40 -10 L 40 -10 L 30 40 L -30 40 Z" fill="#c8a868" />} />
+        </> : <>
+          {[0, 1, 2, 3, 4].map((k) => <div key={k} style={{ position: "absolute", left: 0, top: 0 }}><Tabaco x={640 + k * 120} y={350} s={0.6} crece={prog(t, 833.4 + k * 0.5, 835.6 + k * 0.5)} /></div>)}
+          <Persona x={380} y={640} h={440} t={t} seed={1290} ropa={GENT(3)} gola expr="feliz" inclina={22 + Math.sin(t * 3) * 6} bD={80} cD={30} habla={t > 835.4} />
+        </>}
+      </Vineta>
       <Chip t={t} t0={835.47} t1={838.3} text="SWEET TOBACCO" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
       <Chip t={t} t0={836.41} t1={838.3} text="SEEDS FROM THE CARIBBEAN" color={C.teal} tinta={C.noche} x={960} y={930} centro size={50} />
       {t > 839.2 && t < 840.8 && <Grande t={t} t0={839.43} text="A SENSATION" y={220} size={120} color={C.ambar} />}
@@ -252,11 +309,22 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={848.45} t1={853.1} text="THE SHIPWRECK" color={C.tierra} x={300} y={240} size={46} />
       <Chip t={t} t0={849.27} t1={853.1} text="THE MAGIC ISLAND" color={C.teal} tinta={C.noche} x={300} y={320} size={46} />
       <Chip t={t} t0={851.71} t1={853.1} text="→ LONDON" color={C.violeta} x={960} y={930} centro size={54} />
-      {t > 845.2 && t < 853.3 && (() => { const k = prog(t, 845.4, 852.9); const x = 1700 - k * 1500; const y = 520 - Math.sin(k * Math.PI) * 220 + Math.sin(t * 4) * 12; return (
+      {t > 845.2 && t < 853.3 && (() => { const k = prog(t, 845.4, 852.9); const x = 1700 - k * 1500; const y = 700 - Math.sin(k * Math.PI) * 220 + Math.sin(t * 4) * 12; return (
         <div style={{ position: "absolute", left: x - 130, top: y - 90, transform: `rotate(${Math.sin(t * 3) * 8}deg) scale(${ent(t, 845.3) * (1 - prog(t, 852.9, 853.3))})` }}>
           <svg width={260} height={180} style={{ overflow: "visible" }}><rect x={10} y={10} width={240} height={160} rx={10} fill="#f4ecd8" stroke="#6a4a2a" strokeWidth={8} /><path d="M 10 10 L 130 100 L 250 10" stroke="#6a4a2a" strokeWidth={7} fill="none" /><circle cx={130} cy={100} r={22} fill={C.rojo} stroke="#7a1010" strokeWidth={5} />{[0, 1, 2].map((j) => <path key={j} d={`M ${270 + j * 26} ${60 + j * 26} l 40 0`} stroke="#fff" strokeWidth={6} strokeLinecap="round" opacity={0.7} />)}</svg>
           <div style={{ position: "absolute", left: -40, top: 190, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill", whiteSpace: "nowrap" }}>TO LONDON</div>
         </div>); })()}
+      {/* plano medio: Shakespeare lee la carta del naufragio y escribe La Tempestad */}
+      <Vineta t={t} t0={853.4} t1={860.1} x={960} y={640} w={1240} h={600} cielo="#e8d8b8" suelo="#7a5a3a" sueloY={470} rot={-1}>
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1240} height={600}>
+          <rect x={120} y={60} width={220} height={200} fill="#4a6a8a" stroke="#4a2a12" strokeWidth={10} /><line x1={230} y1={60} x2={230} y2={260} stroke="#4a2a12" strokeWidth={8} />
+          <rect x={460} y={400} width={560} height={30} fill="#6a3a1a" /><rect x={480} y={430} width={24} height={140} fill="#5a2a10" /><rect x={976} y={430} width={24} height={140} fill="#5a2a10" />
+          <g transform="translate(860 360) scale(0.35)"><path d="M -160 0 L 160 0 L 120 70 L -120 70 Z" fill="#7a3e1a" /><rect x={-8} y={-220} width={16} height={220} fill="#3a2010" /><path d="M 12 -200 Q 120 -120 12 -30 Z" fill="#f4ecd8" /></g>
+          <rect x={560} y={370} width={160} height={30} fill="#f4ecd8" stroke="#8a7a6a" strokeWidth={3} />
+          {t > 856.5 && <g transform={`translate(900 140) scale(${ent(t, 856.6)})`}><ellipse rx={190} ry={90} fill="#fff" stroke="#1b1240" strokeWidth={6} /><circle cx={-150} cy={110} r={18} fill="#fff" stroke="#1b1240" strokeWidth={5} /><path d="M -110 40 L -20 -40 L 80 40 Z" fill="#7a3e1a" transform={`rotate(${Math.sin(t * 3) * 15})`} /><path d="M 40 -60 L 10 -10 L 40 -10 L 10 50" stroke="#e0b020" strokeWidth={9} fill="none" /></g>}
+        </svg>
+        <Persona x={420} y={640} h={440} t={t} seed={1295} ropa={{ ...GENT(0), tunica: "#2a2a3a", tunica2: "#1a1a24" }} gola barba="#6a4a2a" expr={t > 856.5 ? "sorpresa" : "neutro"} mira={0.5} miraY={0.3} bD={110} cD={60} manoD={<path d="M 0 0 L 60 -100 Q 76 -90 62 -74 Z" fill="#f4ecd8" stroke="#6a5a4a" strokeWidth={3} />} />
+      </Vineta>
       <Chip t={t} t0={855.37} t1={858.3} text="WILLIAM SHAKESPEARE" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />
       {t > 858.9 && t < 860.5 && <Grande t={t} t0={859.15} text="THE TEMPEST" y={200} size={140} color={C.ambar} />}
       <Chip t={t} t0={860.25} t1={862.4} text="NOT A HAPPY ENDING" color={C.rojo} x={960} y={140} centro size={56} />
@@ -290,8 +358,17 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         <div style={{ position: "absolute", left: 300, top: 150, width: 1320, padding: "30px 40px 10px", background: "rgba(27,18,64,.82)", borderRadius: 30, boxSizing: "border-box" }}>
           {([["THE WRONG PEOPLE", 880.63, C.violeta], ["THE WRONG PLACE", 881.85, C.lima], ["THE WRONG TREASURE", 883.37, C.oro], ["THE WORST DROUGHT IN 7 CENTURIES", 884.71, C.naranja], ["SOMEONE ELSE'S LAND", 886.9, C.teal]] as [string, number, string][]).map(([s, t0, col], i) => (
             <div key={s} style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 22, opacity: t > t0 ? 1 : 0, transform: `translateX(${(1 - prog(t, t0, t0 + 0.3)) * -200}px)` }}>
-              <div style={{ width: 84, height: 84, borderRadius: 42, background: col, border: "6px solid #fff", fontFamily, fontWeight: 700, fontSize: 48, color: C.noche, textAlign: "center", lineHeight: "72px" }}>{i + 1}</div>
-              <div style={{ fontFamily, fontWeight: 700, fontSize: 58, whiteSpace: "nowrap", color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{s}</div>
+              <div style={{ width: 84, height: 84, flexShrink: 0, borderRadius: 42, background: col, border: "6px solid #fff", fontFamily, fontWeight: 700, fontSize: 48, color: C.noche, textAlign: "center", lineHeight: "72px" }}>{i + 1}</div>
+              <div style={{ fontFamily, fontWeight: 700, fontSize: 54, whiteSpace: "nowrap", color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{s}</div>
+              <div style={{ position: "relative", flexShrink: 0, width: 120, height: 84, marginLeft: "auto", transform: `scale(${1.5 * ent(t, t0 + 0.15)})` }}>
+                {i === 0 && <Persona x={60} y={92} h={110} t={t} seed={1296} ropa={GENT(1)} gola gorro="pluma" expr="orgullo" />}
+                {i === 4 && <Persona x={60} y={92} h={110} t={t} seed={1297} ropa={POW(1)} plumaPelo expr="enojado" />}
+                {i > 0 && i < 4 && <svg width={120} height={84} viewBox="-60 -42 120 84">
+                  {i === 1 && <g><ellipse cx={0} cy={18} rx={56} ry={18} fill="#5a6a2a" />{[-36, -14, 10, 32].map((x) => <path key={x} d={`M ${x} 18 Q ${x + 4} -10 ${x + 8} -36`} stroke="#6a8a2a" strokeWidth={6} fill="none" />)}</g>}
+                  {i === 2 && <g><path d="M -44 30 L 44 30 L 26 -10 L 8 6 L -6 -24 L -26 6 Z" fill="#ffd34a" stroke="#c89a1a" strokeWidth={5} /><text x={0} y={22} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={26} fill={C.rojo}>FAKE</text></g>}
+                  {i === 3 && <g><circle r={24} fill="#ffb020" />{Array.from({ length: 8 }, (_, k) => <line key={k} x1={0} y1={-32} x2={0} y2={-42} stroke="#ffb020" strokeWidth={6} transform={`rotate(${k * 45 + t * 40})`} />)}</g>}
+                </svg>}
+              </div>
             </div>
           ))}
         </div>
