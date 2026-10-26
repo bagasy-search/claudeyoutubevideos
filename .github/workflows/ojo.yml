@@ -12,7 +12,7 @@ jobs:
     env: { GH_TOKEN: "${{ github.token }}" }
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get install -y -qq ffmpeg imagemagick >/dev/null
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
       - name: medir
         run: |
           for S in $(cat slugs.txt); do

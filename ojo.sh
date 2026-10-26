@@ -7,7 +7,7 @@ mkdir -p f; t=0; i=0
 while [ $t -le $D ]; do
   ffmpeg -v error -ss $t -i $M -frames:v 1 -vf "scale=640:-2,drawtext=text='$(printf %d:%02d $((t/60)) $((t%60)))':x=8:y=8:fontsize=30:fontcolor=yellow:box=1:boxcolor=black@0.7" f/$(printf %04d $i).jpg; t=$((t+10)); i=$((i+1))
 done
-montage f/*.jpg -tile 4x3 -geometry +4+4 -background black ojo_${S}_p%02d.jpg
+ffmpeg -v error -y -framerate 1 -i f/%04d.jpg -vf "tile=4x3:padding=4:margin=4" ojo_${S}_p%02d.jpg
 # cortes de escena
 ffmpeg -v error -i $M -vf "select='gt(scene,0.35)',showinfo" -vsync vfr -f null - 2>&1 | grep -o 'pts_time:[0-9.]*' | cut -d: -f2 > ojo_${S}_cortes.txt || true
 echo "cortes: $(wc -l < ojo_${S}_cortes.txt)"
