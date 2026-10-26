@@ -3,13 +3,14 @@ import { AbsoluteFill, useCurrentFrame, interpolate } from "remotion";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 import { rnd } from "../soot/lib";
 import { Persona, CENTURION, CIVIL } from "./persona";
-import { Bolsa } from "./kit2";
+import { Bolsa, Papiro } from "./kit2";
 import {
   C, FPS, fontFamily, ent, prog, Escena, Cielo, Estrellas, Astro, Colinas, Chip, Grande, MapaPuntos, lugar,
   Moneda, Pan, Bota, Tienda, Pergamino, Aguila, Casa, Mesa, Pluma, Palo, Garrote, Zzz, Grilla,
   Particulas, Rayos, Frente, Emote, cabeza,
 } from "./kit";
 import { CapaMiniatura } from "./Miniatura";
+import { Cuenta } from "./P1";
 import { FilaLejana, Campamento, Pueblo, Ruta, Bosque, Valle, Interior, Campo, Reloj, Tablero, TRAMPAS, pose, Nubes, Estandarte, Carpa, Torre, Empalizada } from "./kit3";
 
 // Soot and Sandals v3 — piloto del gancho (0-63,5 s) 100 % motion graphics en código, cero imágenes.
@@ -18,6 +19,11 @@ import { FilaLejana, Campamento, Pueblo, Ruta, Bosque, Valle, Interior, Campo, R
 export const PILOTO_DUR = Math.ceil(63.6 * FPS);
 
 const primerPlano = (h: number, cy: number) => cy + 450 * (h / 560);
+const TableroC: React.FC<React.ComponentProps<typeof Tablero>> = (p) => (
+  <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 60%, #f6e3b4, #d9b878 70%, #b88a4a)" }}>
+    <AbsoluteFill style={{ transform: "scale(0.85)", transformOrigin: "50% 52%" }}><Tablero {...p} /></AbsoluteFill>
+  </AbsoluteFill>
+);
 const SueloCalle: React.FC<{ y?: number; color?: string }> = ({ y = 860, color = "#8a4a2a" }) => (
   <div style={{ position: "absolute", left: 0, right: 0, top: y, bottom: 0, background: `linear-gradient(180deg, ${color}, #4a2418)` }} />
 );
@@ -67,19 +73,21 @@ export const Piloto: React.FC = () => {
 
         {/* 002a · se acercaron y firmaron */}
         <Escena t={t} t0={7.2} t1={9.02} zoom={0.1} entra="iris" ix={960} iy={560}>
-          <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 40%, #7a3fd0, ${C.noche} 75%)` }} />
-          <Rayos t={t} x={960} y={540} color="#c9a8ff" op={0.08} />
-          <Pergamino x={960} y={560} w={760} abre={prog(t, 7.25, 7.7)} lineas={8} firma={prog(t, 8.2, 8.95)} titulo="SACRAMENTUM" />
-          {t > 7.6 && (() => {
+          <Interior />
+          <Mesa x={800} y={850} w={820} />
+          <Pergamino x={800} y={520} w={660} abre={Math.max(0.3, prog(t, 7.2, 7.6))} lineas={7} firma={prog(t, 8.2, 8.95)} titulo="SACRAMENTUM" />
+          {(() => {
             const u = prog(t, 8.2, 8.95);
             return (
               <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}>
-                <g transform={`translate(${660 + u * 290} ${820 - Math.sin(u * 20) * 18 - (1 - ent(t, 7.6)) * 300})`}><Pluma /></g>
+                <g transform={`translate(${560 + u * 290} ${800 - Math.sin(u * 20) * 18})`}><Pluma /></g>
               </svg>
             );
           })()}
-          <Chip t={t} t0={7.3} text="WALKED UP" color={C.violeta} x={260} y={300} size={56} />
-          <Chip t={t} t0={8.3} text="SIGNED" color={C.teal} tinta={C.noche} x={1420} y={300} size={72} />
+          <Persona x={1440} y={1030} h={660} t={t} seed={1} casco="legion" expr={t < 8.2 ? "orgullo" : "feliz"} mira={-0.8} bD={interpolate(prog(t, 7.2, 7.8), [0, 1], [10, 70])} cD={60} bI={10} />
+          <Emote t={t} t0={8.95} tipo="brillos" {...L(1440, 1030, 660)} />
+          <Chip t={t} t0={7.25} text="WALKED UP" color={C.violeta} x={150} y={150} size={56} />
+          <Chip t={t} t0={8.3} text="SIGNED" color={C.teal} tinta={C.noche} x={1240} y={150} size={72} />
         </Escena>
 
         {/* 002b · y juraron lealtad a Roma: en el campamento de la miniatura, mano en alto frente al águila */}
@@ -88,8 +96,12 @@ export const Piloto: React.FC = () => {
           <div style={{ position: "absolute", left: 1254, top: 380, width: 14, height: 560, background: "#6b3a1f" }} />
           <Aguila x={1260} y={330} s={1.1} />
           <Particulas t={t} tipo="destellos" n={14} seed={6} />
-          <Persona x={820} y={1010} h={620} t={t} seed={1} casco="legion" expr="orgullo" bD={interpolate(ent(t, 9.15), [0, 1], [8, 150])} cD={14} bI={8} mira={0.5} />
-          <Persona x={1560} y={1000} h={640} t={t} seed={7} ropa={CENTURION} casco="centurion" expr="orgullo" flip habla bD={interpolate(ent(t, 9.3), [0, 1], [10, 95])} cD={10} />
+          {[260, 440, 620, 1010].map((x, i) => (
+            <Persona key={x} x={x} y={930} h={360} t={t} seed={140 + i} casco="legion" expr="orgullo" mira={0.6} bD={interpolate(ent(t, 9.05, 0.08 + i * 0.07), [0, 1], [8, 150])} cD={14} />
+          ))}
+          <Persona x={820} y={1030} h={600} t={t} seed={1} casco="legion" expr="orgullo" bD={interpolate(ent(t, 9.05), [0, 1], [8, 150])} cD={14} bI={8} mira={0.5} />
+          <Persona x={1560} y={1010} h={620} t={t} seed={7} ropa={CENTURION} casco="centurion" expr="orgullo" flip habla bD={95} cD={10} bI={14}
+            manoD={<g transform="rotate(90)"><rect x={-80} y={-20} width={160} height={110} rx={6} fill="#f6e3b4" stroke="#c98f4a" strokeWidth={8} />{[0, 1, 2].map((k) => <rect key={k} x={-60} y={2 + k * 26} width={120 - k * 20} height={9} rx={4} fill="#c79a5a" />)}</g>} />
           <Emote t={t} t0={9.8} tipo="brillos" {...L(820, 1010, 620)} s={1.2} />
           <Chip t={t} t0={9.74} text="THE OATH" color={C.rojo} x={140} y={190} size={72} />
           <Chip t={t} t0={10.12} text="TO ROME" color={C.oro} tinta={C.noche} x={140} y={310} size={56} />
@@ -128,62 +140,65 @@ export const Piloto: React.FC = () => {
             const dir = r() < 0.5 ? -1 : 1, vx = 300 + r() * 500, rr = r() - 0.5;
             return <div key={i} style={{ position: "absolute", left: 560 + u * vx * dir, top: 380 - u * 400 + u * u * 500, width: 90, height: 100, background: "#fff", borderTop: `22px solid ${C.rojo}`, borderRadius: 8, transform: `rotate(${u * 400 * rr}deg)`, opacity: Math.max(0, 1 - u * 0.8) }} />;
           })}
-          <Persona x={1450} y={1060} h={560} t={t} seed={1} expr={t < 15.64 ? "sorpresa" : "triste"} mira={-0.6} aparece={14.0} />
+          <Persona x={1450} y={1040} h={560} t={t} seed={1} casco="legion" expr={t < 15.64 ? "sorpresa" : "triste"} mira={-0.6} />
           {t >= 15.64 && (
             <svg style={{ position: "absolute", left: 1290, top: 40, transform: `scale(${ent(t, 15.64)})`, transformOrigin: "160px 120px" }} width={320} height={260}>
               <path d="M 160 230 C 40 150 20 60 90 40 C 130 30 155 60 160 80 C 165 60 190 30 230 40 C 300 60 280 150 160 230 Z" fill={C.rosa} stroke="#fff" strokeWidth={10} />
               <line x1={60} y1={30} x2={60 + 210 * prog(t, 15.8, 16.05)} y2={30 + 200 * prog(t, 15.8, 16.05)} stroke={C.rojo} strokeWidth={26} strokeLinecap="round" />
             </svg>
           )}
-          <Emote t={t} t0={16.0} tipo="lagrimas" {...L(1450, 1060, 560)} />
+          <Emote t={t} t0={16.0} tipo="lagrimas" {...L(1450, 1040, 560)} />
           <Chip t={t} t0={15.7} text="NO WIFE" color={C.rojo} x={1450} y={360} centro size={66} />
         </Escena>
 
-        {/* 005 · la paga viene con descuentos: el soldado ve cómo sus monedas vuelan a la comida, las botas y la tienda */}
+        {/* 005 · la paga viene con descuentos: el intendente cobra la comida, las botas y la carpa de la pila del soldado */}
         <Escena t={t} t0={16.78} t1={21.54} zoom={0.05} entra="corte" golpes={[18.72, 19.76, 20.72]}>
           <Campamento t={t} hora="tarde" tropa={false} dx={(t - 16.78) * 20} />
-          <AbsoluteFill style={{ background: "rgba(27,18,64,.35)" }} />
+          <AbsoluteFill style={{ background: "rgba(27,18,64,.3)" }} />
           {(() => {
             const sale = [18.72, 19.76, 20.72];
-            const dest = [[420, 420], [860, 330], [1300, 420]];
-            const quedan = 12 - sale.filter((s) => t > s).length * 3;
+            const quedan = 12 - sale.filter((s) => t > s + 0.3).length * 3;
             const triste = quedan <= 6;
             return (
               <>
-                <Persona x={1640} y={1030} h={620} t={t} seed={1} casco="legion" flip expr={quedan === 12 ? "feliz" : triste ? "triste" : "sorpresa"} bD={60} cD={60} bI={triste ? 120 : 40} cI={triste ? 120 : 30} />
-                <Bolsa x={1400} y={900} s={0.55} t={t} />
+                <Papiro t={t} x={780} y={330} w={560} t0={16.8} titulo="DEDUCTIONS" tacha={false} items={[
+                  { txt: "FOOD", t0: 18.72, monto: "-3" }, { txt: "BOOTS", t0: 19.76, monto: "-3" }, { txt: "TENT", t0: 20.72, monto: "-3" },
+                ]} />
+                <Persona x={300} y={1010} h={540} t={t} seed={44} ropa={CIVIL(1)} expr="feliz" habla mira={0.6} {...pose("contar", t, 1.3)} />
+                <Mesa x={760} y={790} w={600} />
+                <div style={{ position: "absolute", left: 500, top: 700, width: 130, height: 92, background: "#7a4520", border: "7px solid #4a2810", borderRadius: 12 }}>
+                  <div style={{ position: "absolute", left: -10, right: -10, top: -26, height: 30, background: "#9a5a2a", border: "7px solid #4a2810", borderRadius: "14px 14px 4px 4px" }} />
+                </div>
+                {t > 18.72 && <div style={{ position: "absolute", inset: 0, transform: `scale(${ent(t, 18.72)})`, transformOrigin: "730px 760px" }}><Pan x={730} y={755} s={0.6} /></div>}
+                {t > 19.76 && <div style={{ position: "absolute", inset: 0, transform: `scale(${ent(t, 19.76)})`, transformOrigin: "870px 760px" }}><Bota x={870} y={725} s={0.55} /></div>}
+                {t > 20.72 && <div style={{ position: "absolute", inset: 0, transform: `scale(${ent(t, 20.72)})`, transformOrigin: "1000px 760px" }}><Tienda x={1000} y={770} s={0.45} /></div>}
                 {Array.from({ length: 12 }, (_, i) => {
                   const g = Math.floor((11 - i) / 3);
-                  const ts = g < 3 ? sale[g] + (i % 3) * 0.07 : 1e9;
-                  const u = prog(t, ts, ts + 0.45);
-                  const x0 = 1400, y0 = 800 - i * 26;
-                  const [dx, dy] = g < 3 ? dest[g] : [x0, y0];
-                  const e = ent(t, 16.78, i * 0.05);
+                  const ts = g < 3 ? sale[g] + ((11 - i) % 3) * 0.08 : 1e9;
+                  const u = prog(t, ts, ts + 0.5);
                   if (u >= 1) return null;
-                  return <Moneda key={i} x={x0 + (dx - x0) * u} y={y0 + (dy - y0) * u - Math.sin(u * Math.PI) * 160 - (1 - e) * 300} r={52 * (1 - u * 0.4)} gira={u > 0 ? 3 : 0} t={t} />;
+                  const x0 = 1190, y0 = 950 - i * 24, dx = 565, dy = 690;
+                  return <Moneda key={i} x={x0 + (dx - x0) * u} y={y0 + (dy - y0) * u - Math.sin(u * Math.PI) * 260} r={46} gira={u > 0 ? 3 : 0} t={t} />;
                 })}
-                <Chip t={t} t0={16.88} text={`PAY  ${quedan}/12`} color={quedan > 6 ? C.oro : C.rojo} tinta={quedan > 6 ? C.noche : "#fff"} x={1400} y={300} centro size={58} />
+                <Persona x={1490} y={1030} h={620} t={t} seed={1} casco="legion" flip mira={0.7} expr={quedan === 12 ? "feliz" : triste ? "triste" : "sorpresa"} bD={triste ? 120 : 60} cD={triste ? 110 : 60} bI={triste ? 120 : 30} cI={triste ? 110 : 30} />
+                {triste && <Emote t={t} t0={20.1} tipo="lagrimas" {...L(1490, 1030, 620)} />}
+                <Chip t={t} t0={16.8} text={`PAY  ${quedan}/12`} color={quedan > 6 ? C.oro : C.rojo} tinta={quedan > 6 ? C.noche : "#fff"} x={1330} y={290} centro size={58} />
               </>
             );
           })()}
-          {t > 18.72 && <div style={{ transform: `scale(${ent(t, 18.72)})`, transformOrigin: "420px 600px", position: "absolute", inset: 0 }}><Pan x={420} y={600} s={1.3} /><Chip t={t} t0={18.8} text="FOOD -3" color={C.rojo} x={420} y={760} centro size={48} /></div>}
-          {t > 19.76 && <div style={{ transform: `scale(${ent(t, 19.76)})`, transformOrigin: "860px 560px", position: "absolute", inset: 0 }}><Bota x={860} y={560} s={1.0} /><Chip t={t} t0={19.84} text="BOOTS -3" color={C.rojo} x={860} y={760} centro size={48} /></div>}
-          {t > 20.72 && <div style={{ transform: `scale(${ent(t, 20.72)})`, transformOrigin: "1300px 620px", position: "absolute", inset: 0 }}><Tienda x={1300} y={640} s={0.9} /><Chip t={t} t0={20.8} text="TENT -3" color={C.rojo} x={1060} y={860} centro size={48} /></div>}
-          <Chip t={t} t0={17.64} text="DEDUCTIONS" color={C.violeta} x={700} y={150} centro size={60} />
         </Escena>
-
         {/* 006 · el centurión puede pegarte con un palo, todos los días */}
         <Escena t={t} t0={21.54} t1={25.44} entra="corte" golpes={[23.34, 24.66]}>
           <Campamento t={t} hora="tarde" dx={(t - 21.5) * 25} />
           <AbsoluteFill style={{ background: "rgba(140,20,40,.38)" }} />
           <Particulas t={t} tipo="brasas" n={30} seed={8} />
           {/* cámara contrapicada: el centurión enorme */}
-          <Persona x={1180} y={primerPlano(1250, 540)} h={1250} t={t} seed={7} ropa={CENTURION} casco="centurion" expr="enojado" mira={-0.8}
+          <Persona x={1120} y={1040} h={760} t={t} seed={7} ropa={CENTURION} casco="centurion" expr="enojado" mira={-0.8}
             bD={t < 23.2 ? interpolate(Math.sin(t * 6), [-1, 1], [70, 120]) : interpolate(((t - 23.2) * 2.6) % 1, [0, 0.55, 1], [160, 40, 160])} cD={40} manoD={<Palo largo={260} />} bI={14} flip />
-          <Emote t={t} t0={22.86} tipo="enojo" {...L(1180, primerPlano(1250, 540), 1250)} s={2} />
-          <Persona x={400} y={1000} h={420} t={t} seed={1} expr="miedo" mira={0.9} bI={130} bD={130} cI={110} cD={110} inclina={-8 + Math.sin(t * 30) * (t > 23.34 ? 2 : 0)} />
-          <Emote t={t} t0={23.4} tipo="susto" {...L(400, 1000, 420)} />
-          <Chip t={t} t0={23.88} text="VINE STICK" color={C.ambar} tinta={C.noche} x={1420} y={130} size={58} />
+          <Emote t={t} t0={22.86} tipo="enojo" {...L(1120, 1040, 760)} s={1.4} />
+          <Persona x={520} y={1030} h={520} t={t} seed={1} casco="legion" expr="miedo" mira={0.9} bI={130} bD={130} cI={110} cD={110} inclina={-8 + Math.sin(t * 30) * (t > 23.34 ? 2 : 0)} />
+          <Emote t={t} t0={23.4} tipo="susto" {...L(520, 1030, 520)} />
+          <Chip t={t} t0={23.88} text="VINE STICK" color={C.ambar} tinta={C.noche} x={1360} y={300} size={58} />
           <Chip t={t} t0={24.66} text="EVERY DAY" color={C.rojo} x={150} y={180} size={80} />
           {/* rayitas del calendario: 7 días, 7 golpes */}
           {Array.from({ length: 7 }, (_, i) => t > 24.7 + i * 0.09 && <div key={i} style={{ position: "absolute", left: 160 + i * 46, top: 280, width: 14, height: 70, borderRadius: 7, background: "#fff", transform: `rotate(${i === 4 ? 0 : 12}deg) scaleY(${ent(t, 24.7 + i * 0.09)})` }} />)}
@@ -226,21 +241,27 @@ export const Piloto: React.FC = () => {
           {t > 29.18 && <AbsoluteFill style={{ background: "#fff", opacity: Math.max(0, 0.7 - (t - 29.18) * 3) }} />}
         </Escena>
 
-        {/* 008 · y el retiro, de verdad */}
-        <Escena t={t} t0={29.84} t1={32.18} entra="iris" banda={C.teal} ix={800} iy={600}>
-          <Cielo tipo="dia" />
-          <Astro x={300} y={220} r={80} />
-          <Colinas capas={["#8fd16a", "#5fae4a", "#3f8a3a"]} base={620} seed={30} alto={80} dx={(t - 29.8) * 15} />
-          <Casa x={1450} y={760} s={1.5} tono="#fff0d0" techo="#d0613f" luz />
-          <Persona x={800} y={960} h={620} t={t} seed={1} expr="feliz" viejo bD={110} cD={60} manoD={<Moneda x={-35} y={-35} r={35} gira={1} t={t} />} salta={30.5} />
-          <Emote t={t} t0={30.6} tipo="brillos" {...L(800, 960, 620)} s={1.4} />
-          <Frente t={t} color="#2f6a2a" vel={30} seed={8} />
-          <Chip t={t} t0={30.0} text="RETIREMENT" color={C.teal} tinta={C.noche} x={960} y={150} centro size={84} />
-          {t > 30.42 && <Bolsa x={1080} y={860} s={0.9} t={t} t0={30.42} txt="3,000" />}
-          <Chip t={t} t0={30.42} text="LAND + 3,000 DENARII" color={C.violeta} x={1150} y={300} size={52} />
-          <Chip t={t} t0={31.28} text="REAL" color={C.oro} tinta={C.noche} x={1150} y={410} size={60} />
+        {/* 008 · y el retiro, de verdad: el veterano con su bolsa de 3.000 que le pesa, su parcela y su casa */}
+        <Escena t={t} t0={29.84} t1={32.18} entra="corte" banda={C.teal}>
+          <Campo t={t} dx={(t - 29.8) * 15} />
+          <Astro x={300} y={200} r={70} />
+          <Casa x={1600} y={860} s={1.0} tono="#fff0d0" techo="#d0613f" luz />
+          {/* cerco y cartel de la parcela */}
+          <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+            {Array.from({ length: 9 }, (_, i) => <rect key={i} x={1040 + i * 90} y={880} width={14} height={90} fill="#8a5a2a" />)}
+            <rect x={1030} y={900} width={760} height={12} fill="#a8723a" /><rect x={1030} y={935} width={760} height={12} fill="#a8723a" />
+            <rect x={1172} y={800} width={16} height={190} fill="#6b3a1f" />
+          </svg>
+          <div style={{ position: "absolute", left: 1180, top: 790, transform: `translate(-50%,-50%) rotate(${-4 + Math.sin(t * 2) * 1.5}deg) scale(${ent(t, 29.84)})`, background: "#d9a85a", border: "7px solid #6b3a1f", borderRadius: 10, padding: "4px 20px", fontFamily, fontWeight: 700, fontSize: 40, color: "#5a3418", whiteSpace: "nowrap" }}>YOUR LAND</div>
+          <Persona x={720} y={1030} h={640} t={t} seed={1} casco="legion" viejo expr="feliz" bD={18 - 6 * prog(t, 30.4, 30.9)} cD={6} bI={28} cI={-20} manoI={<line x1={0} y1={-20} x2={-10} y2={250} stroke="#6b3a1f" strokeWidth={16} strokeLinecap="round" />} inclina={5 + 3 * prog(t, 30.4, 30.9)} salta={31.3} />
+          <Bolsa x={880} y={905 + 18 * prog(t, 30.4, 30.9)} s={0.72} t={t} txt="3,000" />
+          <Emote t={t} t0={31.3} tipo="brillos" {...L(720, 1030, 640)} s={1.3} />
+          <Frente t={t} color="#3f7a30" vel={30} seed={8} />
+          <Chip t={t} t0={29.84} text="RETIREMENT" color={C.teal} tinta={C.noche} x={960} y={110} centro size={76} />
+          <Cuenta t={t} t0={29.84} t1={30.6} de={0} a={3000} x={1380} y={300} size={150} color={C.oro} />
+          <Chip t={t} t0={29.9} text="DENARII + LAND" color={C.violeta} x={1380} y={440} centro size={48} />
+          <Chip t={t} t0={31.28} text="REAL" color={C.oro} tinta={C.noche} x={1380} y={560} centro size={60} />
         </Escena>
-
         {/* 009a · generoso, incluso */}
         <Escena t={t} t0={32.18} t1={33.26} entra="zoom" golpes={[32.2]}>
           <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 60%, #ffcf5a, #c9771f 80%)` }} />
@@ -252,7 +273,7 @@ export const Piloto: React.FC = () => {
             return <Moneda key={i} x={x} y={y} r={60} rot={rot} gira={gi} t={t + ph} />;
           })}
           <Particulas t={t} tipo="lluviaoro" n={50} seed={12} />
-          <Persona x={960} y={1040} h={560} t={t} seed={1} viejo expr="feliz" {...pose("festejar", t, 1.4)} salta={32.3} />
+          <Persona x={960} y={1040} h={560} t={t} seed={1} casco="legion" viejo expr="feliz" {...pose("festejar", t, 1.4)} salta={32.3} />
           <Grande t={t} t0={32.2} text="GENEROUS" y={260} size={170} color="#fff" />
         </Escena>
 
@@ -274,15 +295,36 @@ export const Piloto: React.FC = () => {
           <Chip t={t} t0={37.22} text="NEVER COLLECTED" color="#5d5a7a" x={960} y={230} centro size={56} />
         </Escena>
 
-        {/* 010 · así que hoy, VOS te alistás: el protagonista de cuerpo entero te señala */}
+        {/* 010 · así que hoy, VOS te alistás: el protagonista llega al portón y la ficha de alistamiento se llena con «YOU» */}
         <Escena t={t} t0={39.22} t1={41.74} entra="corte" golpes={[40.08]}>
-          <Campamento t={t} dx={(t - 39.2) * 40} />
-          <Persona x={760} y={1040} h={780} t={t} seed={1} casco="legion" expr={t < 40.6 ? "sorpresa" : "feliz"} bD={interpolate(ent(t, 40.08), [0, 1], [8, 85])} cD={5} mira={t < 40.08 ? -0.5 : 0} ladea={t > 40.6 ? 5 : 0} />
-          <Emote t={t} t0={39.4} t1={40.5} tipo="preg" {...L(760, 1040, 780)} s={1.4} />
-          <Grande t={t} t0={40.08} text="YOU" x={1460} y={360} size={220} color={C.oro} />
-          <Chip t={t} t0={40.9} text="JOIN THE LEGION" color={C.violeta} x={1460} y={560} centro size={60} />
+          <Campamento t={t} dx={(t - 39.2) * 30} />
+          {(() => {
+            const x = interpolate(t, [39.22, 39.95], [380, 600], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+            const llega = t > 39.95;
+            return <>
+              <Persona x={x} y={1035} h={700} t={t} seed={1} casco="legion" camina={llega ? 0 : 1.6} expr={t < 40.08 ? "sorpresa" : "feliz"}
+                bD={llega ? interpolate(ent(t, 39.95), [0, 1], [8, 35]) : undefined} cD={llega ? interpolate(ent(t, 39.95), [0, 1], [10, 125]) : undefined} mira={0.7} ladea={t > 40.6 ? 5 : 0} salta={40.7} />
+              <Emote t={t} t0={39.3} t1={40.05} tipo="preg" {...L(x, 1035, 700)} s={1.3} />
+              <Emote t={t} t0={40.7} tipo="brillos" {...L(x, 1035, 700)} s={1.3} />
+            </>;
+          })()}
+          {/* ficha de alistamiento que se llena sola */}
+          <div style={{ position: "absolute", left: 1340, top: 520, width: 640, height: 560, transform: `translate(-50%,-50%) rotate(2deg) scale(${ent(t, 39.22)})`, background: "linear-gradient(180deg,#fbeec8,#f0d9a0)", border: "9px solid #8a5a2a", borderRadius: 22, boxShadow: "16px 18px 0 rgba(20,8,40,.35)", fontFamily, fontWeight: 700, color: "#4a2a10" }}>
+            <div style={{ position: "absolute", top: 22, width: "100%", textAlign: "center", fontSize: 50, color: C.rojo, letterSpacing: 3 }}>LEGION ENLISTMENT</div>
+            {([["NAME", t > 40.08 ? "YOU" : "", 40.08], ["AGE", t > 40.5 ? "18" : "", 40.5], ["TERM", t > 40.9 ? "25 YEARS" : "", 40.9]] as const).map(([k, v, tv], i) => (
+              <div key={k} style={{ position: "absolute", left: 50, right: 50, top: 120 + i * 135, height: 110, borderBottom: "6px dashed #b98a4a", display: "flex", alignItems: "flex-end", gap: 24 }}>
+                <span style={{ fontSize: 40, color: "#8a5a2a", paddingBottom: 10 }}>{k}:</span>
+                {v && <span style={{ fontSize: i === 0 ? 100 : 64, color: i === 0 ? C.rojo : "#2b3a8f", transform: `scale(${ent(t, tv)})`, transformOrigin: "left bottom", lineHeight: 1 }}>{v}</span>}
+              </div>
+            ))}
+          </div>
+          {t < 41.2 && (() => {
+            const fila = t < 40.08 ? 0 : t < 40.5 ? 1 : 2;
+            const xx = 1180 + (fila === 0 ? Math.sin(t * 9) * 30 : 120 + Math.sin(t * 9) * 30), yy = 400 + fila * 135 - Math.abs(Math.sin(t * 14)) * 12;
+            return <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}><g transform={`translate(${xx} ${yy})`}><Pluma /></g></svg>;
+          })()}
+          <Chip t={t} t0={40.9} text="JOIN THE LEGION" color={C.violeta} x={1340} y={150} centro size={56} />
         </Escena>
-
         {/* 011 · tu carrera entera, paso a paso */}
         <Escena t={t} t0={41.74} t1={45.0} zoom={0.04} entra="diag">
           <Cielo tipo="atardecer" />
@@ -308,30 +350,36 @@ export const Piloto: React.FC = () => {
 
         {/* 012 · cada forma en que la Legión intenta matarte: el tablero del viaje de 25 años */}
         <Escena t={t} t0={45.0} t1={48.36} entra="corte" golpes={[47.76]}>
-          <Tablero t={t} t0={45.2} en={0} de={0} />
+          <TableroC t={t} t0={45.2} en={0} de={0} />
           <Chip t={t} t0={45.32} text="EVERY SINGLE WAY" color={C.violeta} x={760} y={170} centro size={60} t1={47.2} />
           <Chip t={t} t0={47.24} text="TO KILL YOU" color={C.rojo} x={760} y={170} centro size={76} />
         </Escena>
 
         {/* 013a · son siete: las 7 casillas laten una por una */}
         <Escena t={t} t0={48.36} t1={49.84} entra="corte" golpes={[48.84]}>
-          <Tablero t={t} t0={44.0} en={Math.max(0, Math.min(6, Math.floor((t - 48.4) / 0.18)))} de={Math.max(0, Math.min(6, Math.floor((t - 48.4) / 0.18)))} />
+          <TableroC t={t} t0={44.0} en={Math.max(0, Math.min(6, Math.floor((t - 48.4) / 0.18)))} de={Math.max(0, Math.min(6, Math.floor((t - 48.4) / 0.18)))} />
           <Grande t={t} t0={48.84} text="7 TRAPS" x={760} y={200} size={150} color={C.rojo} />
         </Escena>
 
-        {/* 013b · vamos a anotarte: la mesa del reclutador en el campamento */}
+        {/* 013b · vamos a anotarte: el reclutador le desliza la pluma y el protagonista firma en la mesa del campamento */}
         <Escena t={t} t0={49.84} t1={51.14} entra="corte">
-          <Campamento t={t} dx={(t - 49.8) * 40} />
-          <Mesa x={1150} y={690} w={480} />
-          <Pergamino x={1150} y={620} w={300} abre={0.25} lineas={0} />
-          <Persona x={1440} y={900} h={430} t={t} seed={7} ropa={CENTURION} casco="centurion" expr="feliz" bD={100} cD={60} flip habla />
-          <Persona x={interpolate(t, [49.84, 50.8], [300, 760], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={940} h={470} t={t} seed={1} expr="feliz" camina={t < 50.8 ? 1.6 : 0} />
-          <Chip t={t} t0={50.08} text="SIGN HERE" color={C.teal} tinta={C.noche} x={1150} y={430} centro size={60} />
+          <Campamento t={t} dx={(t - 49.8) * 30} />
+          <Persona x={1330} y={990} h={560} t={t} seed={7} ropa={CENTURION} casco="centurion" expr="feliz" flip habla {...pose("empujar", t, 0.6)} inclina={6} />
+          <Mesa x={1000} y={790} w={640} />
+          {/* hoja con renglón de firma */}
+          <div style={{ position: "absolute", left: 830, top: 742, width: 300, height: 46, background: "#fbeec8", border: "5px solid #b98a4a", borderRadius: 6, transform: "skewX(-18deg)" }}>
+            <div style={{ position: "absolute", left: 30, right: 30, bottom: 10, height: 5, background: "#8a5a2a" }} />
+            <div style={{ position: "absolute", left: 40, bottom: 10, height: 8, width: `${prog(t, 50.5, 51.1) * 70}%`, borderRadius: 4, background: "#2b3a8f" }} />
+          </div>
+          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}>
+            <g transform={`translate(${interpolate(t, [49.84, 50.4], [1180, 900], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) + (t > 50.5 ? Math.sin(t * 22) * 14 + prog(t, 50.5, 51.1) * 160 : 0)} ${750 - (t > 50.5 ? Math.abs(Math.sin(t * 18)) * 10 : 0)})`}><Pluma /></g>
+          </svg>
+          <Persona x={640} y={1030} h={620} t={t} seed={1} casco="legion" expr="feliz" mira={0.6} {...(t > 50.4 ? pose("escribir", t, 1.8) : { bD: 50, cD: 40 })} inclina={t > 50.4 ? 10 : 4} />
+          <Chip t={t} t0={49.9} text="SIGN HERE" color={C.teal} tinta={C.noche} x={1000} y={230} centro size={60} />
         </Escena>
-
         {/* 014 · trampa número uno: el contrato. La ficha cae en la casilla 1 */}
         <Escena t={t} t0={51.14} t1={53.56} zoom={0.05} entra="corte" golpes={[51.68, 52.56]}>
-          <Tablero t={t} t0={50.0} en={0} de={0} marca={51.68} />
+          <TableroC t={t} t0={50.0} en={0} de={0} marca={51.68} />
           <Chip t={t} t0={51.14} text="TRAP 1 OF 7" color={C.rojo} x={760} y={170} centro size={64} />
           <Grande t={t} t0={52.5} text="THE CONTRACT" x={900} y={420} size={130} />
         </Escena>
@@ -348,7 +396,7 @@ export const Piloto: React.FC = () => {
         {/* 016a · tenés 18 años */}
         <Escena t={t} t0={55.7} t1={57.26} entra="barrido" golpes={[55.94]}>
           <Pueblo t={t} dx={(t - 55.7) * 30} />
-          <Persona x={760} y={1040} h={760} t={t} seed={1} expr="feliz" mira={0.5} aparece={55.72} {...pose("saludar", t, 0.7)} />
+          <Persona x={760} y={1040} h={760} t={t} seed={1} casco="legion" expr="feliz" mira={0.5} {...pose("saludar", t, 0.7)} />
           <Grande t={t} t0={55.94} text="18" x={1480} y={420} size={300} color="#fff" />
           <Chip t={t} t0={56.36} text="YEARS OLD" color={C.violeta} x={1480} y={640} centro size={64} />
         </Escena>
@@ -362,7 +410,7 @@ export const Piloto: React.FC = () => {
           <Casa x={1620} y={790} s={1.5} tono="#f2c89a" techo="#a8452c" />
           <SueloCalle y={780} color="#c98a4a" />
           <Particulas t={t} tipo="polvo" n={60} seed={16} />
-          <Persona x={interpolate(t, [57.26, 58.46], [900, 1120], { extrapolateRight: "clamp" })} y={960} h={470} t={t} seed={1} expr="neutro" camina={1.3} />
+          <Persona x={interpolate(t, [57.26, 58.46], [900, 1120], { extrapolateRight: "clamp" })} y={960} h={470} t={t} seed={1} casco="legion" expr="neutro" camina={1.3} />
           <Frente t={t} color="#6a3a1a" vel={70} seed={17} />
           <Chip t={t} t0={57.78} text="DUSTY TOWN" color={C.tierra} x={960} y={140} centro size={66} />
         </Escena>
@@ -372,6 +420,13 @@ export const Piloto: React.FC = () => {
           <MapaPuntos t={t} pulsa={["GAUL", "SPAIN"]} t0Pulsa={59.0} vuela={{ n: "GAUL", z: 1.7, t: [58.46, 59.6] }} />
           <Chip t={t} t0={59.02} text="GAUL" color={C.rojo} x={1000} y={470} size={64} />
           <Chip t={t} t0={59.56} text="OR SPAIN" color={C.rojo} x={420} y={830} size={64} />
+          {/* postal del pueblo: el protagonista sale de su casa con el atado al hombro */}
+          <div style={{ position: "absolute", left: 1330, top: 560, width: 470, height: 380, overflow: "hidden", borderRadius: 18, border: "10px solid #fff8ec", boxShadow: "14px 16px 0 rgba(10,5,30,.45)", transform: `rotate(3deg) scale(${ent(t, 58.46)})`, background: "linear-gradient(180deg,#f2ae62,#fde3b4)" }}>
+            <Casa x={110} y={250} s={0.7} tono="#f0c08a" techo="#b5552c" />
+            <Casa x={360} y={240} s={0.6} tono="#e8b07a" />
+            <div style={{ position: "absolute", left: 0, right: 0, top: 240, bottom: 0, background: "linear-gradient(180deg,#d39a5a,#a8692e)" }} />
+            <Persona x={interpolate(t, [58.46, 60.34], [150, 300])} y={350} h={230} t={t} seed={1} casco="legion" expr="neutro" camina={1.4} />
+          </div>
         </Escena>
 
         {/* 016d · el campo de la familia no alcanza para dos hermanos */}
@@ -383,11 +438,11 @@ export const Piloto: React.FC = () => {
             {Array.from({ length: 8 }, (_, i) => <line key={i} x1={-200 + i * 300} y1={380} x2={700 + i * 80} y2={0} stroke="#6a421c" strokeWidth={14} />)}
           </svg>
           <Casa x={1600} y={720} s={0.9} tono="#e8c08a" />
-          <Persona x={620} y={980} h={560} t={t} seed={1} expr="triste" mira={0.8} aparece={60.4} />
+          <Persona x={620} y={1000} h={560} t={t} seed={1} casco="legion" expr="triste" mira={0.8} />
           <Persona x={1180} y={990} h={520} t={t} seed={77} ropa={CIVIL(4)} expr="triste" mira={-0.8} flip aparece={62.38} />
           {/* un solo pan para dos */}
           <div style={{ position: "absolute", inset: 0, transform: `scale(${ent(t, 61.6)})`, transformOrigin: "900px 860px" }}><Pan x={900} y={860} s={0.8} /></div>
-          <Emote t={t} t0={62.6} tipo="sudor" {...L(620, 980, 560)} />
+          <Emote t={t} t0={62.6} tipo="sudor" {...L(620, 1000, 560)} />
           <Particulas t={t} tipo="polvo" n={30} seed={18} />
           <Chip t={t} t0={60.88} text="FAMILY FARM" color={C.tierra} x={960} y={130} centro size={64} />
           <Chip t={t} t0={62.38} text="TOO SMALL FOR TWO" color={C.rojo} x={960} y={250} centro size={64} />

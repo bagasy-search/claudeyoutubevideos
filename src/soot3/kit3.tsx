@@ -246,7 +246,7 @@ export const Reloj: React.FC<{ t: number; anio: number; edad: number; x?: number
 // ── TABLERO DEL VIAJE: camino de 25 años con las 7 trampas; la ficha (el soldadito) avanza. Se usa en el gancho, en cada
 // cartela de trampa y en el CTA (reemplaza los «TRAP #N» sobre rayos).
 export const TRAMPAS = ["THE CONTRACT", "TRAINING", "THE MARCH", "THE CENTURION", "THE CAMP", "THE BATTLE", "RETIREMENT"];
-const CASILLAS: [number, number][] = [[330, 800], [580, 690], [820, 800], [1100, 640], [1380, 760], [1620, 560], [1760, 330]];
+const CASILLAS: [number, number][] = [[400, 790], [620, 700], [830, 790], [1070, 655], [1310, 755], [1515, 585], [1640, 390]];
 export const Tablero: React.FC<{ t: number; t0: number; en: number; de?: number; tAvanza?: number; marca?: number; hecho?: number }> = ({ t, t0, en, de, tAvanza, marca, hecho = 0 }) => {
   const ini = de ?? Math.max(0, en - 1);
   const u = tAvanza === undefined ? 1 : prog(t, tAvanza, tAvanza + 1.1);
