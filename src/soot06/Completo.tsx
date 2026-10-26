@@ -13,6 +13,7 @@ import * as P6 from "./T6";
 import * as P7 from "./T7";
 import * as PF from "./Final";
 import { Cuadro0, C0_FIN } from "./Cuadro0";
+import { RelojNoche } from "./comun";
 
 // soot06 completo: UN mundo (el castillo en corte) y UNA cámara que viaja toda la noche sin cortar.
 // Cada parte aporta sus llaves de cámara, sus actores dentro del mundo y su capa de pantalla (chips, insertos).
@@ -44,6 +45,7 @@ export const Completo: React.FC = () => {
         {t < C0_FIN && <Cuadro0 t={t} />}
         {PARTES.map((p, i) => (t >= p.T0 - 1.5 && t < p.T1 + 1.5 ? <p.Capa key={i} t={t} c={c} /> : null))}
       </CamaraMano>
+      <RelojNoche t={t} />
     </AbsoluteFill>
   );
 };

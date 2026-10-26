@@ -14,7 +14,7 @@ export const C = {
 };
 
 export const ent = (t: number, t0: number, d = 0, cfg = { damping: 12, stiffness: 170 }) =>
-  spring({ frame: Math.round((t - t0 - d) * FPS), fps: FPS, config: cfg });
+  spring({ frame: Math.floor((t - t0 - d) * FPS + 1e-4), fps: FPS, config: cfg }); // floor+eps: con t0*30 en ,5 el round repetía/saltaba cuadros (lageos)
 export const prog = (t: number, a: number, b: number) =>
   interpolate(t, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
 

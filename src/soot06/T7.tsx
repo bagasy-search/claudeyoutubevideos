@@ -33,7 +33,17 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
   const tose = t > 791.4;
   return (
     <>
-      {DORMIDOS.map(([x, r], i) => <Acostado key={i} x={x} y={PISO - 10} h={260} t={t} seed={80 + i} ropa={SIERVO(r)} flip={i % 2 === 1} expr={tose && i % 3 === 0 ? "miedo" : "dormido"} />)}
+      {DORMIDOS.map(([x, r], i) => {
+        const tw = 796.2 + (i % 4) * 0.25; // se despiertan y corren a la puerta trabada
+        if (i % 2 === 0 && t > tw) {
+          const u = prog(t, tw, tw + 1.6), xd = 4600 + i * 70;
+          const golpea = t > tw + 1.6 ? Math.sin(t * 15 + i) * 30 : 0;
+          return <Persona key={i} x={x + (xd - x) * u} y={PISO} h={270} t={t} seed={80 + i} ropa={SIERVO(r)} expr="miedo" camina={u < 1 ? 3 : 0} flip={xd < x} bD={u < 1 ? 40 : 150 + golpea} cD={u < 1 ? 20 : 30} bI={u < 1 ? 30 : 140 - golpea} cI={30} />;
+        }
+        return <Acostado key={i} x={x} y={PISO - 10} h={260} t={t} seed={80 + i} ropa={SIERVO(r)} flip={i % 2 === 1} expr={tose && i % 3 === 0 ? "miedo" : "dormido"} />;
+      })}
+      {/* el cocinero que huye de la cocina en llamas */}
+      {t > 780.2 && t < 785 && <Persona x={3500 - 600 * prog(t, 780.6, 783.6)} y={2965} h={300} t={t} seed={91} ropa={SIERVO(1)} expr="miedo" camina={3} flip bD={150} cD={40} bI={150} cI={40} />}
       {t < 802 ? <Acostado x={5300} y={PISO - 10} h={260} t={t} seed={7} ropa={CHICO} expr={tose ? "miedo" : "dormido"} />
         : <Persona x={5300} y={PISO} h={270} t={t} seed={7} ropa={CHICO} expr="miedo" />}
       {/* el junco olvidado, encendido en el piso */}
@@ -64,12 +74,13 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
   return (
     <>
       <TarjetaTrampa t={t} t0={749.47} t1={751.5} n={7} nombre="THE FIRE" hora="4 AM" color={C.naranja} />
-      {t >= 751.61 && t < 753.2 && <Grande t={t} t0={751.61} text="4 AM." y={180} size={150} color={C.crema} />}
+      {t >= 751.61 && t < 753.2 && <><div style={{ position: "absolute", left: 960, top: 180, width: 560, height: 190, transform: "translate(-50%,-50%)", borderRadius: 30, background: "rgba(18,10,28,.85)", opacity: ent(t, 751.61) }} /><Grande t={t} t0={751.61} text="4 AM." y={180} size={150} color={C.crema} /></>}
       <Chip t={t} t0={753.29} t1={756.8} text="THINK ABOUT EVERYTHING WE PUT INSIDE" color={C.naranja} x={960} y={140} centro size={52} />
       {/* las 7 cosas que arden */}
+      {t > 756.8 && t < 772.5 && <div style={{ position: "absolute", left: 80, top: 112, width: 640, height: 76 * n + 24, borderRadius: 24, background: "rgba(18,10,28,.82)", border: `4px solid ${C.naranja}`, opacity: ent(t, 756.85) }} />}
       {t > 756.8 && t < 772.5 && COSAS.map(([x, y, label, t0], i) => {
         const p = P(x, y);
-        return t >= t0 && (
+        return t >= t0 && p.x > 780 && (
           <React.Fragment key={i}>
             <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, overflow: "hidden", pointerEvents: "none" }}>
               <div style={{ position: "absolute", left: p.x, top: p.y }}><Marcador t={t} t0={t0} x={0} y={0} n={i + 1} s={0.8} color={C.naranja} /></div>
@@ -116,8 +127,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* puertas trabadas por dentro */}
       {t > 796.1 && t < 801.0 && (
         <>
-          <div style={{ position: "absolute", left: puerta.x - 240 * c.z, top: puerta.y - 40 * c.z, width: 480 * c.z, height: 80 * c.z, borderRadius: 20, border: `12px solid ${C.rojo}`, boxShadow: `0 0 40px ${C.rojo}`, opacity: ent(t, 796.5) * (0.75 + 0.25 * Math.sin(t * 8)) }} />
-          <div style={{ position: "absolute", left: puerta.x + 200 * c.z, top: puerta.y - 260 * c.z, fontSize: 110, transform: `scale(${ent(t, 796.7, 0, { damping: 7, stiffness: 260 })})` }}>🔒</div>
+          <div style={{ position: "absolute", left: puerta.x - 300 * c.z, top: puerta.y + 40 * c.z, fontSize: 150, transform: `translate(-50%,-50%) rotate(${Math.sin(t * 15) * 6 * prog(t, 798, 798.3)}deg) scale(${ent(t, 796.7, 0, { damping: 7, stiffness: 260 })})`, filter: "drop-shadow(0 0 18px #ff3b30)" }}>🔒</div>
         </>
       )}
       <Chip t={t} t0={796.09} t1={801.0} text="DOORS BARRED FROM THE INSIDE" color={C.rojo} x={960} y={140} centro size={56} />
@@ -129,7 +139,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Chip t={t} t0={803.01} t1={807.2} text="ARROWS CAN'T GET IN 🏹" color={C.lima} tinta={C.noche} x={160} y={880} size={48} />
       {t >= 805.47 && <Chip t={t} t0={805.47} t1={807.2} text="…PEOPLE CAN'T GET OUT" color={C.rojo} x={1060} y={880} size={48} />}
       {t >= 807.29 && t < 809.6 && <Grande t={t} t0={807.45} text="DESIGNED TO KEEP THE WORLD OUT" y={180} size={84} color={C.crema} />}
-      {t >= 809.67 && t < 811.6 && <Grande t={t} t0={809.67} text="4 AM. IN A FIRE." y={180} size={120} color={C.naranja} />}
+      {t >= 809.67 && t < 811.6 && <><div style={{ position: "absolute", left: 960, top: 180, width: 1100, height: 190, transform: "translate(-50%,-50%)", borderRadius: 30, background: "rgba(18,10,28,.85)", opacity: ent(t, 809.67) }} /><Grande t={t} t0={809.67} text="4 AM. IN A FIRE." y={180} size={120} color={C.naranja} /></>}
       {t >= 811.67 && t < 813.6 && <Grande t={t} t0={812.07} text="EXACTLY THE PROBLEM." y={940} size={110} color={C.rojo} />}
     </>
   );

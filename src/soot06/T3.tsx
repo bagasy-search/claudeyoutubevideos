@@ -5,7 +5,7 @@ import { Lluvia } from "./kit2";
 import { Persona, Expr, Ropa } from "./persona";
 import { CamP, Llave, aPantalla } from "./mundo";
 import { CHICO, SENOR, DAMA, SIERVO, Perro, Rata, Manta } from "./objetos";
-import { TarjetaTrampa, Inserto } from "./comun";
+import { TarjetaTrampa, Inserto, Yo } from "./comun";
 
 // TRAMPA 3 · EL FRÍO (281,6-415,5 s). El solar de las películas (para el señor) contra el piso del salón: banco,
 // colchón de paja o piso; los juncos de Erasmo con 20 años de mugre; los perros y su lugar tibio; 30 personas;
@@ -150,6 +150,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               return <div key={i} style={{ position: "absolute", left: 160, right: 160, top: 960 - (i + 1) * 60 * sube, height: 60 * sube, background: ["#8a6a3a", "#7a5a2a", "#9a7a3a", "#6a4a22", "#8a6a2a"][i % 5], borderTop: "4px solid rgba(255,255,255,.25)" }} />;
             })}
             <div style={{ position: "absolute", left: 160, right: 160, top: 960, height: 70, background: "#6b6b7a" }} />
+            <Acostado x={760} y={958 - 600 * prog(t, 328.3, 331.6)} h={300} t={t} seed={7} ropa={CHICO} expr={t > 339.9 ? "miedo" : t > 335.2 ? "sorpresa" : "dormido"} />
             <div style={{ position: "absolute", left: 1600, top: 970, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff" }}>STONE</div>
             <Chip t={t} t0={325.94} text="FLOORS COVERED IN RUSHES" color={C.noche} x={160} y={110} size={50} />
             <Chip t={t} t0={327.76} text="ONLY TOPPED UP" color={C.ambar} tinta={C.noche} x={160} y={200} size={50} />
@@ -193,21 +194,21 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <div style={{ position: "absolute", left: x0, top: 300, width: W, height: 660, background: "repeating-linear-gradient(0deg,#7a7a92 0 76px,#5a5a72 76px 82px)", borderRadius: 8, boxShadow: "inset 0 0 0 8px #3a3a52" }} />
               <div style={{ position: "absolute", left: x0, top: 230, width: W, height: 16, background: C.oro, borderRadius: 8 }} />
               <div style={{ position: "absolute", left: x0 + W / 2, top: 140, transform: "translateX(-50%)", fontFamily, fontWeight: 700, fontSize: 90, color: "#fff", WebkitTextStroke: `9px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>{m < 6.5 ? `${Math.round(m)} M` : "~7 M"}</div>
-              <Persona x={x0 + W + 130} y={960} h={260} t={t} seed={7} ropa={CHICO} expr={t < 370.3 ? "sorpresa" : "miedo"} mira={-1} />
+              <div style={{ position: "absolute", left: t > 371.7 ? Math.sin(t * 70) * 4 : 0, top: 0 }}><Persona x={x0 + W + 170} y={960} h={420} t={t} seed={7} ropa={CHICO} expr={t < 370.3 ? "sorpresa" : "miedo"} mira={-1} bI={t > 371.7 ? 150 : 10} cI={t > 371.7 ? 150 : 10} bD={t > 371.7 ? 150 : 10} cD={t > 371.7 ? 150 : 10} /></div>
               {t > 371.7 && [0, 1, 2, 3].map((i) => { const u = ((t - 371.7) * 0.7 + i / 4) % 1; return <div key={i} style={{ position: "absolute", left: x0 + W - 40 + u * 220, top: 400 + i * 130, fontFamily, fontWeight: 700, fontSize: 90, color: "#9fe0ff", opacity: Math.sin(u * Math.PI) }}>❄</div>; })}
             </>
           );
         })()}
-        <Chip t={t} t0={364.0} text="CASTLE WALLS" color={C.violeta} x={1450} y={140} centro size={56} />
-        <Chip t={t} t0={368.67} text="✓ GREAT AGAINST A SIEGE" color={C.lima} tinta={C.noche} x={1580} y={330} centro size={44} />
-        <Chip t={t} t0={370.35} text="✗ TERRIBLE AT NIGHT" color={C.rojo} x={1580} y={430} centro size={44} />
-        <Chip t={t} t0={371.79} text="STONE SOAKS UP COLD" color={C.teal} tinta={C.noche} x={1580} y={580} centro size={44} />
-        <Chip t={t} t0={373.75} text="…GIVES IT BACK ALL NIGHT" color="#bfefff" tinta={C.noche} x={1580} y={680} centro size={42} />
+        <Chip t={t} t0={364.0} text="CASTLE WALLS" color={C.violeta} x={1500} y={140} centro size={56} />
+        <Chip t={t} t0={368.67} text="✓ GREAT AGAINST A SIEGE" color={C.lima} tinta={C.noche} x={1500} y={330} centro size={44} />
+        <Chip t={t} t0={370.35} text="✗ TERRIBLE AT NIGHT" color={C.rojo} x={1500} y={430} centro size={44} />
+        <Chip t={t} t0={371.79} text="STONE SOAKS UP COLD" color={C.teal} tinta={C.noche} x={1500} y={580} centro size={44} />
+        <Chip t={t} t0={373.75} text="…GIVES IT BACK ALL NIGHT" color="#bfefff" tinta={C.noche} x={1500} y={680} centro size={42} />
       </Inserto>
       {/* vidrio: sólo reyes e iglesias */}
       <Chip t={t} t0={376.23} t1={380.4} text="GLASS WINDOWS" color={C.teal} tinta={C.noche} x={960} y={140} centro size={62} />
       <Chip t={t} t0={378.5} t1={380.4} text="LUXURY: KINGS + CHURCHES" color={C.oro} tinta={C.noche} x={960} y={950} centro size={56} />
-      {t > 377 && t < 380.4 && <Emote t={t} t0={377.2} tipo="brillos" x={P(6700, 1300).x} y={P(6700, 1300).y} s={1.6} />}
+      {t > 377 && t < 380.4 && <Emote t={t} t0={377.2} tipo="brillos" x={P(6700, 1300).x + 220} y={P(6700, 1300).y + 160} s={1.6} />}
       {/* postigos */}
       <Chip t={t} t0={382.08} t1={386.3} text="WOODEN SHUTTERS" color={C.tierra} x={160} y={150} size={58} />
       <Chip t={t} t0={383.67} t1={386.3} text="+ OILED LINEN (MAYBE)" color={C.ambar} tinta={C.noche} x={160} y={260} size={50} />
@@ -231,7 +232,8 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             </svg>
             <Chip t={t} t0={391.94} text="THE START OF" color={C.violeta} x={640} y={200} size={44} />
             <Chip t={t} t0={392.55} text="WHAT CLIMATE HISTORIANS CALL…" color={C.noche} x={640} y={290} size={50} />
-            {t >= 394.26 && <Grande t={t} t0={394.26} text="THE LITTLE ICE AGE" x={1150} y={560} size={110} color="#e6f8ff" />}
+            {t >= 394.26 && <Grande t={t} t0={394.26} text="THE LITTLE ICE AGE" x={1020} y={560} size={110} color="#e6f8ff" />}
+            <Yo t={t} t0={392.0} x={1730} h={520} y={1060} expr="miedo" tiembla bD={150} cD={150} bI={150} cI={150} ropa={{ ...CHICO, piel: "#c8e6f5", piel2: "#9cc8e0" }} />
             {t > 394 && Array.from({ length: 30 }, (_, i) => { const u = (t * 0.3 + i / 30) % 1; return <div key={i} style={{ position: "absolute", left: (i * 137) % 1920, top: u * 1080, width: 12, height: 12, borderRadius: 6, background: "#fff", opacity: 0.8 }} />; })}
           </>
         ) : (

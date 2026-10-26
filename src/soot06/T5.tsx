@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./ki
 import { Persona, Ropa } from "./persona";
 import { CamP, Llave, aPantalla } from "./mundo";
 import { CHICO, GUARDIA, SIERVO, Rata, Gato, Pulgas, PanTrampa, Manta, Perro } from "./objetos";
-import { TarjetaTrampa, Inserto } from "./comun";
+import { TarjetaTrampa, Inserto, Yo } from "./comun";
 import { Acostado } from "./T3";
 
 // TRAMPA 5 · LAS RATAS (550,2-660,9 s). Medianoche: el primer y el segundo sueño (Ekirch); despertás y las oís:
@@ -133,6 +133,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         ) : (
           <>
             <Barra t={t} />
+            <Yo t={t} t0={562.35} x={1730} h={460} y={1060} expr={t > 568.1 && t < 574.6 ? "sorpresa" : "dormido"} habla={t > 571.5 && t < 574.5} bD={t > 571.5 && t < 574.5 ? 110 : 10} cD={t > 571.5 && t < 574.5 ? 40 : 10} mira={-0.6} flip />
             <Chip t={t} t0={564.61} t1={566.8} text="BED SOON AFTER DARK" color={C.violeta} x={960} y={880} centro size={54} />
             <Chip t={t} t0={566.87} t1={568.1} text="A FEW HOURS…" color="#3b4cc0" x={960} y={880} centro size={54} />
             <Chip t={t} t0={568.17} t1={571.4} text="WIDE AWAKE IN THE MIDDLE OF THE NIGHT" color={C.ambar} tinta={C.noche} x={960} y={880} centro size={50} />
@@ -190,6 +191,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
           <>
             <Chip t={t} t0={617.13} text="TRICK #1" color={C.rojo} x={960} y={110} centro size={64} />
             {[[460, 620], [960, 820], [1460, 620], [960, 420]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x - 140, top: y - 60, width: 280, height: 120, background: "#e8c07a", border: `8px solid #a8743a`, borderRadius: 40, transform: `scale(${ent(t, 618.2 + i * 0.25)})` }}><div style={{ margin: "14px 18px", height: 70, borderRadius: 30, background: "#d6e8f2", opacity: prog(t, 619.6, 620.2) * 0.9 }} /></div>)}
+            <Yo t={t} t0={617.2} x={1760} h={470} y={1070} expr={t > 624.8 ? "feliz" : t > 622.2 ? "sorpresa" : "orgullo"} bD={t < 622.2 ? 90 : 140} cD={t < 622.2 ? 60 : 30} mira={-0.7} flip />
             <Chip t={t} t0={618.17} text="BREAD SLICES" color={C.oro} tinta={C.noche} x={160} y={220} size={50} />
             <Chip t={t} t0={619.57} text="+ STICKY GLUE" color={C.teal} tinta={C.noche} x={160} y={310} size={50} />
             {t > 622.2 && <div style={{ position: "absolute", left: 0, top: 0 }}><PanTrampa x={960} y={620} s={0.75} t={t} t0={622.3} /></div>}
@@ -219,6 +221,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 </svg>
               );
             })()}
+            <Yo t={t} t0={626.35} x={250} h={470} y={1070} expr={t > 632.7 ? "feliz" : t > 630.3 ? "enojado" : "orgullo"} bD={t > 630.3 ? 120 : 60} cD={t > 632.6 && t < 633 ? 0 : 80} mira={0.7} />
             <Chip t={t} t0={627.01} t1={632.6} text="A BLANKET OVER THE BED" color={C.violeta} x={160} y={220} size={50} />
             <Chip t={t} t0={628.45} t1={632.6} text="FLEAS TRAPPED INSIDE" color={C.rojo} x={160} y={310} size={50} />
             <Chip t={t} t0={630.37} t1={633.5} text="FOLD IT UP… VERY CAREFULLY" color={C.teal} tinta={C.noche} x={960} y={900} centro size={52} />

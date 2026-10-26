@@ -4,7 +4,7 @@ import { C, prog, Chip, Grande, Emote, cabeza } from "./kit";
 import { Persona } from "./persona";
 import { CamP, Llave, aPantalla, SUELO } from "./mundo";
 import { CHICO, GUARDIA, Rata, Jarra, Trinchero, Campanita, Globo } from "./objetos";
-import { Marcador, Ruta, Rastrillo, Confeti, Ficha } from "./comun";
+import { Marcador, Rastrillo, Confeti, Ficha } from "./comun";
 
 // GANCHO 0-55,2 s. Plan de director (un cambio cada ~0,7-1 s, todo dentro del mismo castillo):
 // 0-5   bandera en la torre en primerísimo plano → dolly hacia atrás: el castillo entero al atardecer, nieve, DECEMBER 1300
@@ -27,6 +27,7 @@ export const CAM: Llave[] = [
 ];
 
 // la ruta de la noche (de pin en pin) y los 7 pines
+const HOP = 0.72; // s por salto de la bolita
 export const PINES: [number, number, number][] = [[6100, 2800, 1], [6700, 1600, 2], [5150, 2420, 3], [7450, 2440, 4], [6300, 3460, 5], [5100, 760, 6], [5800, 2950, 7]];
 
 export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
@@ -87,8 +88,14 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
       )}
       {t > 40.4 && t < 44.2 && <Globo t={t} t0={40.9} x={7560} y={2230} text="HELLO!" s={0.7} />}
       {/* la ruta de la noche + 7 pines */}
-      {t > 45 && t < 53 && <Ruta t={t} pts={PINES.map(([x, y]) => [x, y - 60])} u={prog(t, 47.3, 50.6)} />}
-      {t > 45 && t < 54 && PINES.map(([x, y, n], i) => <Marcador key={n} t={t} t0={51.66 + i * 0.09} t1={52.45} x={x} y={y - 60} n={n} s={2.6} />)}
+      {/* una bolita dorada (vos) salta de pin en pin: cada trampa brota cuando cae (antes: curva que se cruzaba = garabato) */}
+      {t > 47.3 && t < 47.3 + 6 * HOP + 0.3 && (() => {
+        const k = Math.min(5, Math.floor((t - 47.3) / HOP)), u = Math.min(1, (t - 47.3 - k * HOP) / HOP);
+        const [ax, ay] = PINES[k], [bx2, by2] = PINES[k + 1];
+        const x = ax + (bx2 - ax) * u, y = ay - 60 + (by2 - ay) * u - Math.sin(Math.PI * u) * 700 - 260;
+        return <div style={{ position: "absolute", left: x - 70, top: y - 70, width: 140, height: 140, borderRadius: 70, background: C.oro, border: "16px solid #fff", boxShadow: "0 14px 0 rgba(14,8,40,.4)" }} />;
+      })()}
+      {t > 45 && t < 54 && PINES.map(([x, y, n], i) => <Marcador key={n} t={t} t0={47.3 + i * 0.72} t1={52.45} x={x} y={y - 60} n={n} s={2.6} />)}
       {/* campana de la torre */}
       <Campanita x={6900} y={560} s={1.6} t={t} tb={[52.76, 53.1, 53.5]} />
     </>

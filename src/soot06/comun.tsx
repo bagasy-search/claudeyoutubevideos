@@ -3,6 +3,8 @@ import { AbsoluteFill, interpolate, Easing } from "remotion";
 import { rnd } from "../soot/lib";
 import { C, fontFamily, ent, prog, Rayos, Particulas } from "./kit";
 import { Trampas } from "./kit2";
+import { Persona, Expr, Ropa } from "./persona";
+import { CHICO } from "./objetos";
 
 // Piezas comunes de soot06: tarjeta de trampa (encima del mundo, sin cortar), inserto que se abre en iris desde
 // un objeto del mundo y se cierra de vuelta hacia él, marcadores numerados en el mundo y la ruta de la noche.
@@ -29,8 +31,9 @@ export const TarjetaTrampa: React.FC<{ t: number; t0: number; t1: number; n: num
 // ── inserto: escena a pantalla completa que nace en iris desde (ix, iy) — el objeto del mundo que la motiva —
 // y al final se cierra hacia (ox, oy). Fondo saturado con rayos (la vara del video 1).
 export const Inserto: React.FC<{ t: number; t0: number; t1: number; ix?: number; iy?: number; ox?: number; oy?: number; fondo?: string; fondo2?: string; rayos?: boolean; children: React.ReactNode; empuje?: number }> = ({ t, t0, t1, ix = 960, iy = 540, ox, oy, fondo = C.violeta, fondo2 = C.noche, rayos = true, children, empuje = 0.06 }) => {
-  if (t < t0 || t > t1) return null;
-  const a = interpolate(t, [t0, t0 + 0.4], [0, 1], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  const dl = ix === 960 && iy === 540 ? 0 : 0.25; // encadenado (sale de otro inserto) = sin demora
+  if (t < t0 + dl || t > t1) return null;
+  const a = interpolate(t, [t0 + dl, t0 + dl + 0.35], [0, 1], { extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   const b = interpolate(t, [t1 - 0.36, t1], [1, 0], { extrapolateLeft: "clamp", easing: Easing.in(Easing.cubic) });
   const r = Math.min(a, b);
   const cx = t < (t0 + t1) / 2 ? ix : ox ?? ix, cy = t < (t0 + t1) / 2 ? iy : oy ?? iy;
@@ -118,3 +121,46 @@ export const Ficha: React.FC<{ t: number; t0: number; x: number; y: number; labe
   );
 };
 export const Brasas: React.FC<{ t: number }> = ({ t }) => <Particulas t={t} tipo="brasas" n={40} seed={9} />;
+
+// ── VOS dentro de un inserto: el chico de la miniatura, grande y de cuerpo entero, actuando lo que se cuenta
+// (la vara: nunca un objeto solo sobre rayos). Entra con salto desde abajo; gesto = brazos (bD/cD) + objeto en mano.
+export const Yo: React.FC<{ t: number; t0: number; x: number; y?: number; h?: number; expr?: Expr; habla?: boolean; flip?: boolean; bD?: number; cD?: number; bI?: number; cI?: number; manoD?: React.ReactNode; mira?: number; tiembla?: boolean; ropa?: Ropa }> = ({ t, t0, x, y = 1050, h = 640, expr = "sorpresa", habla, flip, bD = 8, cD = 10, bI, cI, manoD, mira = 0, tiembla, ropa = CHICO }) => {
+  if (t < t0) return null;
+  const sube = interpolate(t, [t0, t0 + 0.35], [h * 0.9, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.back(1.6)) });
+  const tir = tiembla ? Math.sin(t * 70) * 4 : 0;
+  return (
+    <div style={{ position: "absolute", left: tir, top: sube }}>
+      <Persona x={x} y={y} h={h} t={t} seed={7} ropa={ropa} expr={expr} habla={habla} flip={flip} bD={bD} cD={cD} bI={bI} cI={cI} manoD={manoD} mira={mira} />
+    </div>
+  );
+};
+
+// ── reloj de la noche (HUD fijo, abajo a la derecha): hora que avanza + trampa n/7 con 7 puntos que se van llenando
+const HORAS: [number, number][] = [[55.2, 16], [201.5, 18], [281.6, 20], [415.5, 22], [550.2, 24], [660.9, 26], [749.5, 28], [813.5, 29]];
+const TRAMPA_T0 = [55.2, 201.5, 281.6, 415.5, 550.2, 660.9, 749.5];
+export const RelojNoche: React.FC<{ t: number }> = ({ t }) => {
+  if (t < 58.0 || t > 813.3) return null;
+  const op = Math.min(prog(t, 58.0, 58.6), 1 - prog(t, 812.8, 813.3));
+  const hh = interpolate(t, HORAS.map((k) => k[0]), HORAS.map((k) => k[1]), { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const h24 = Math.floor(hh) % 24, mm = Math.floor((hh % 1) * 60 / 15) * 15;
+  const lbl = `${h24 % 12 === 0 ? 12 : h24 % 12}:${String(mm).padStart(2, "0")} ${h24 >= 12 ? "PM" : "AM"}`;
+  const n = TRAMPA_T0.filter((x) => t >= x).length;
+  const ang = (hh % 12) * 30, angM = (hh % 1) * 360;
+  return (
+    <div style={{ position: "absolute", right: 22, top: 18, transform: "scale(.78)", transformOrigin: "100% 0", opacity: op, display: "flex", alignItems: "center", gap: 14, background: "rgba(14,10,42,.82)", border: "5px solid #fff", borderRadius: 26, padding: "10px 20px 10px 12px", fontFamily, fontWeight: 700, color: C.crema, boxShadow: "0 8px 0 rgba(10,6,30,.4)" }}>
+      <svg width={74} height={74} viewBox="-37 -37 74 74">
+        <circle r={33} fill="#fff6e0" stroke={C.oro} strokeWidth={5} />
+        <line x1={0} y1={0} x2={Math.sin(ang * Math.PI / 180) * 17} y2={-Math.cos(ang * Math.PI / 180) * 17} stroke={C.noche} strokeWidth={6} strokeLinecap="round" />
+        <line x1={0} y1={0} x2={Math.sin(angM * Math.PI / 180) * 26} y2={-Math.cos(angM * Math.PI / 180) * 26} stroke={C.rojo} strokeWidth={4} strokeLinecap="round" />
+        <circle r={4} fill={C.noche} />
+      </svg>
+      <div>
+        <div style={{ fontSize: 40, lineHeight: 1 }}>{lbl}</div>
+        <div style={{ display: "flex", gap: 6, marginTop: 6, alignItems: "center" }}>
+          <span style={{ fontSize: 22, color: C.oro, marginRight: 4 }}>TRAP {n}/7</span>
+          {Array.from({ length: 7 }, (_, i) => <div key={i} style={{ width: 13, height: 13, borderRadius: 7, background: i < n ? C.rojo : "rgba(255,255,255,.25)", transform: `scale(${i === n - 1 ? 1 + 0.5 * (1 - prog(t, TRAMPA_T0[i], TRAMPA_T0[i] + 0.5)) : 1})` }} />)}
+        </div>
+      </div>
+    </div>
+  );
+};

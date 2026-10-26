@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Particulas } fro
 import { Persona, Expr } from "./persona";
 import { CamP, Llave, aPantalla, SUELO } from "./mundo";
 import { CHICO, SENOR, DAMA, GUARDIA, SIERVO, Perro, Trinchero, Arenque, Castor, Ganso, Jarra, Olla } from "./objetos";
-import { TarjetaTrampa, Inserto } from "./comun";
+import { TarjetaTrampa, Inserto, Yo } from "./comun";
 
 // TRAMPA 1 · LA CENA (55,2-201,5 s). Todo en el gran salón: la procesión entra, el estrado del señor, la jerarquía
 // de los bancos hasta vos junto a la puerta, el trinchero de pan duro, la limosna en la puerta (y el perro),
@@ -249,7 +249,8 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Chip t={t} t0={176.4} t1={177.4} text="+ A MUG OF ALE" color={C.ambar} tinta={C.noche} x={960} y={960} centro size={60} />
       {/* inserto: un galón por persona por día — nace de la jarra */}
       <Inserto t={t} t0={177.2} t1={189.7} ix={jarra.x} iy={jarra.y} fondo="#ffb020" fondo2="#b8541f">
-        <Jarra x={520} y={560} s={2.2} t={t} t0={177.4} nivel={1} />
+        <Jarra x={720} y={560} s={2.2} t={t} t0={177.4} nivel={1} />
+        <Yo t={t} t0={177.3} x={330} h={560} y={1060} expr={t > 185.1 ? "orgullo" : "feliz"} habla={t > 179.5 && t < 181} bD={t > 180.6 ? 120 : 30} cD={t > 180.6 ? 60 : 20} />
         {t >= 180.62 && <Grande t={t} t0={180.62} text="1 GALLON" x={1240} y={330} size={170} color={C.crema} />}
         <Chip t={t} t0={181.12} text="PER PERSON" color={C.noche} x={1240} y={500} centro size={60} />
         <Chip t={t} t0={181.8} text="PER DAY" color={C.rojo} x={1240} y={600} centro size={60} />

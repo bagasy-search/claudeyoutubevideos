@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./ki
 import { Persona } from "./persona";
 import { CamP, Llave, aPantalla, SUELO } from "./mundo";
 import { GUARDIA, Jarra, Cuerno } from "./objetos";
-import { TarjetaTrampa, Inserto } from "./comun";
+import { TarjetaTrampa, Inserto, Yo } from "./comun";
 
 // TRAMPA 6 · LA GUARDIA (660,9-749,5 s). 2 de la mañana en el adarve: en tiempos de paz, un condestable y un
 // puñado de guardias cansados, con frío y un galón de cerveza encima. El enemigo lo sabía: Roxburgh 1314
@@ -12,8 +12,8 @@ import { TarjetaTrampa, Inserto } from "./comun";
 // Edimburgo (el acantilado, por el camino secreto del que bajaba a ver a la novia). Una vaca o un ejército.
 export const T0 = 660.9, T1 = 749.5;
 export const CAM: Llave[] = [
-  [661.6, 2620, 1880, 1.0], [663.4, 2620, 1860, 1.35], [664.7, 2620, 1860, 1.35], [666.6, 2620, 1950, 0.9], [668.5, 2620, 2050, 0.75],
-  [674.4, 2620, 2000, 0.85], [676.2, 2620, 1900, 1.15], [680.8, 2620, 1880, 1.25], [682.2, 2620, 1900, 1.1],
+  [661.6, 2620, 1880, 1.0], [663.4, 2620, 1860, 1.35], [664.7, 2620, 1860, 1.35], [666.6, 2620, 1950, 0.9], [668.5, 2620, 1980, 1.0],
+  [674.4, 2620, 1960, 1.05], [676.2, 2620, 1900, 1.15], [680.8, 2620, 1880, 1.25], [682.2, 2620, 1900, 1.1],
   [729.9, 2620, 1920, 1.05], [735.8, 2620, 1900, 1.15], [737.6, 2620, 2000, 0.9], [741.6, 2620, 1900, 1.25],
   [743.2, 1650, 3350, 0.8], [745.6, 1600, 3400, 0.85], [747.6, 1950, 2900, 0.6], [749.3, 2050, 2800, 0.6],
 ];
@@ -58,8 +58,9 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
       <Persona x={2620} y={ADARVE} h={330} t={t} seed={22} ropa={GUARDIA} casco="medieval" expr={!desp ? "dormido" : t < 666 ? "sorpresa" : t < 731 ? "triste" : t < 745.5 ? "miedo" : "miedo"}
         inclina={!desp ? 8 : t > 745.5 ? 14 : Math.sin(t * 1.2) * 4} bD={t > 737.4 && t < 739.2 ? 150 : 30} cD={t > 737.4 && t < 739.2 ? 30 : 10}
         manoD={t > 737.4 && t < 739.2 ? <g transform="translate(0 -20) scale(0.35)"><Cuerno x={0} y={0} /></g> : undefined} mira={t > 742 ? -0.6 : 0.2} miraY={t > 742 ? 0.6 : 0} />
-      {t > 669 && <Persona x={2490} y={ADARVE} h={330} t={t} seed={23} ropa={{ ...GUARDIA, tunica: "#7a1a2a", tunica2: "#4a0a1a" }} casco="medieval" expr="orgullo" aparece={671.9} bD={100} cD={20} />}
-      {t > 672.8 && [2735, 2805].map((x, i) => <Persona key={i} x={x} y={ADARVE} h={300} t={t} seed={24 + i} ropa={GUARDIA} casco="medieval" expr={i ? "dormido" : "triste"} aparece={672.9 + i * 0.2} inclina={i ? 10 : 0} flip />)}
+      {t > 669 && <Persona x={2490} y={ADARVE} h={330} t={t} seed={23} ropa={{ ...GUARDIA, tunica: "#7a1a2a", tunica2: "#4a0a1a" }} casco="medieval" expr={t > 733.5 && t < 737 ? "feliz" : "orgullo"} aparece={671.9} bD={t > 733.5 && t < 737 ? 150 : 100} cD={t > 733.5 && t < 737 ? 120 : 20} miraY={t > 733.5 && t < 737 ? -0.6 : 0}
+        manoD={t > 733.5 && t < 737 ? <g transform="translate(0 -10) scale(0.4)"><Jarra x={0} y={0} s={1} t={t} t0={733.5} nivel={0.5} /></g> : undefined} />}
+      {t > 672.8 && [2735, 2805].map((x, i) => <Persona key={i} x={x} y={ADARVE} h={300} t={t} seed={24 + i} ropa={GUARDIA} casco="medieval" expr={i ? "dormido" : t > 739 ? "dormido" : t > 734.4 ? "sorpresa" : "triste"} habla={!i && t > 734.4 && t < 736} aparece={672.9 + i * 0.2} inclina={i ? 10 + Math.sin(t * 1.5) * 3 : t > 740.4 ? Math.min(28, (t - 740.4) * 40) : Math.sin(t * 2) * 5} flip />)}
       {t > 679.8 && t < 683 && <div style={{ position: "absolute", left: 0, top: 0 }}><Jarra x={2700} y={ADARVE - 20} s={0.5} t={t} t0={679.9} nivel={0.2} /></div>}
       {t > 682 && t < 735 && <div style={{ position: "absolute", left: 2780, top: 1560 }}><Zzz x={0} y={0} t={t} /></div>}
       {/* en el campo, del otro lado del foso: ¿vacas o un ejército? */}
@@ -177,13 +178,13 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 <rect x={820} y={210} width={500} height={140} fill="#6a6a80" />
                 {Array.from({ length: 7 }, (_, i) => <rect key={i} x={820 + i * 75} y={180} width={45} height={34} fill="#6a6a80" />)}
                 {[100, 260, 1640, 1780].map((x, i) => <g key={i}><rect x={x} y={930} width={120} height={110} fill="#7a4a2a" /><path d={`M ${x - 10} 930 L ${x + 60} 870 L ${x + 130} 930 Z`} fill="#3a2a2a" /><rect x={x + 44} y={960} width={30} height={30} fill="#ffb84a" opacity={0.6 + 0.4 * Math.sin(t * 3 + i)} /></g>)}
-                <path d="M 1450 1040 Q 1380 900 1420 800 Q 1360 700 1400 600 Q 1340 500 1320 380" stroke="#fff" strokeWidth={10} strokeDasharray="22 16" fill="none" pathLength={100} strokeDashoffset={100 - 100 * sendero} />
+                <path d="M 1450 1040 Q 1380 900 1420 800 Q 1360 700 1400 600 Q 1340 500 1320 380" stroke={C.oro} strokeWidth={18} strokeDasharray="26 18" strokeLinecap="round" fill="none" pathLength={100} strokeDashoffset={100 - 100 * sendero} />
               </svg>
               <div style={{ position: "absolute", left: 960, top: 100, transform: `translate(-50%,-50%) scale(${ent(t, 716.39)})`, fontFamily, fontWeight: 700, fontSize: 90, color: C.crema, WebkitTextStroke: `9px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>EDINBURGH CASTLE</div>
               <Chip t={t} t0={714.09} text="SAME YEAR, A FEW WEEKS LATER" color={C.violeta} x={110} y={200} size={44} />
               <Chip t={t} t0={718.27} text="AT NIGHT" color={C.noche} x={110} y={280} size={50} />
               <Chip t={t} t0={719.21} text="BY CLIMBING THE CLIFF" color={C.rojo} x={110} y={360} size={50} />
-              {t > 720.5 && <Persona x={1440} y={interpolate(t, [720.6, 729.5], [1030, 420], cl)} h={150} t={t} seed={71} ropa={DOUGLAS} expr={t > 727.8 ? "feliz" : "enojado"} bI={160} bD={160} cI={10} cD={10} />}
+              {t > 720.5 && [0, 1, 2, 3].map((k) => <Persona key={k} x={1440 - (k % 2) * 60 + Math.sin(t * 5 + k) * 8} y={interpolate(t, [720.6 + k * 0.9, 729.5 + k * 0.9], [1150, 470], cl)} h={260} t={t} seed={71 + k} ropa={DOUGLAS} expr={t > 727.8 && k === 0 ? "feliz" : "enojado"} bI={155 + Math.sin(t * 9 + k) * 18} bD={155 - Math.sin(t * 9 + k) * 18} cI={10} cD={10} aparece={720.6 + k * 0.9} />)}
               <Chip t={t} t0={720.57} text="ONE MAN USED TO BE IN THE GARRISON" color={C.teal} tinta={C.noche} x={110} y={480} size={40} />
               {t >= 724.23 && t < 725.6 && <Grande t={t} t0={724.23} text="A SECRET PATH" y={540} size={90} color={C.oro} />}
               {t > 727.8 && <div style={{ position: "absolute", left: 1600, top: 760, fontSize: 110, transform: `scale(${ent(t, 728.17, 0, { damping: 6, stiffness: 240 }) * (1 + 0.08 * Math.sin(t * 10))})` }}>❤️</div>}

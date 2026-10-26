@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Moneda } from ".
 import { Persona } from "./persona";
 import { CamP, Llave, aPantalla, Llama } from "./mundo";
 import { CHICO, SIERVO, Vela, Junco, Campanita, Olla } from "./objetos";
-import { TarjetaTrampa, Inserto, Ficha } from "./comun";
+import { TarjetaTrampa, Inserto, Ficha, Yo } from "./comun";
 
 // TRAMPA 2 · LA OSCURIDAD (201,5-281,6 s). Afuera negro total; adentro la luz cuesta plata: cera (iglesia y señor),
 // sebo (oveja quemada) y abajo de la escalera el junco. La campana del toque de queda (couvre-feu → curfew) y las velas
@@ -93,6 +93,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         {t < 220.1 ? (
           <>
             <Vela x={620} y={560} s={1.6} t={t} t0={212.7} />
+            <Yo t={t} t0={212.65} x={280} expr={t > 216.6 ? "sorpresa" : "feliz"} bD={t > 216.6 ? 150 : 40} cD={t > 216.6 ? 40 : 30} mira={0.6} />
             {[0, 1, 2].map((i) => { const a = t * 2 + i * 2.1; return <g key={i}><svg style={{ position: "absolute", left: 620 + Math.cos(a) * 260 - 30, top: 420 + Math.sin(a * 1.3) * 120 - 20, overflow: "visible" }} width={60} height={40}><ellipse cx={30} cy={22} rx={26} ry={18} fill="#ffd23a" stroke={C.noche} strokeWidth={5} /><path d="M 20 6 L 20 38 M 34 6 L 34 38" stroke={C.noche} strokeWidth={6} /><ellipse cx={28} cy={2} rx={16} ry={10} fill="#fff" opacity={0.8} /></svg></g>; })}
             <Chip t={t} t0={212.66} text="BEESWAX" color={C.oro} tinta={C.noche} x={1050} y={200} size={80} />
             <Chip t={t} t0={214.48} text="BURNS CLEAN" color={C.lima} tinta={C.noche} x={1050} y={330} size={54} />
@@ -104,6 +105,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         ) : (
           <>
             <Vela x={620} y={560} s={1.6} t={t} t0={220.2} sebo />
+            <Yo t={t} t0={220.15} x={300} y={1080} h={600} expr={t > 225.5 ? "enojado" : "neutro"} bD={t > 227.3 ? 150 : 20} cD={t > 227.3 ? 150 : 10} mira={0.6} tiembla={t > 227.3 && t < 228.2} />
             <Chip t={t} t0={221.5} text="TALLOW" color={C.tierra} x={1050} y={200} size={80} />
             <Chip t={t} t0={223.06} text="= ANIMAL FAT" color={C.ambar} tinta={C.noche} x={1050} y={330} size={54} />
             {t > 224.4 && (
@@ -145,6 +147,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               </svg>
             )}
             {t >= 235.7 && t < 237.9 && <Olla x={960} y={720} s={1.3} t={t} t0={235.75} />}
+            <Yo t={t} t0={233.2} x={300} y={1080} h={600} expr={t > 242.5 ? "triste" : t > 237.9 ? "sorpresa" : "orgullo"} bD={t > 237.9 ? 70 : 45} cD={t > 237.9 ? 30 : 60} mira={0.6} habla={t > 243.2} />
             {t >= 237.9 && <Junco x={900} y={640} s={1.5} t={t} t0={237.95} quema={prog(t, 239.2, 242.4)} />}
             {t > 239.8 && (
               <svg style={{ position: "absolute", left: 1350, top: 470, transform: `scale(${ent(t, 239.8)})` }} width={300} height={300} viewBox="-150 -150 300 300">
