@@ -16,12 +16,17 @@ import { P6 } from "./P6";
 import { P7 } from "./P7";
 import { P8 } from "./P8";
 import { Cuadro0 } from "./Cuadro0";
+import { MostrarInsertos, Ins } from "./insertos";
+import { INS_A } from "./ins_a";
+import { INS_B } from "./ins_b";
+import { INS_C } from "./ins_c";
 
 // Soot 04 completo: UN mundo, UNA cámara. Cada parte aporta sus claves de cámara, su paleta y lo que pone
 // en el mundo (detrás de las olas / en el mundo / delante del agua) y en pantalla (hud). Tiempo absoluto.
 export const COMPLETO_DUR = Math.ceil(901.8 * FPS);
 const PARTES: Parte[] = [P0, P1, P2, P3, P4, P5, P6, P7, P8];
 const KEYS = PARTES.flatMap((p) => p.keys).sort((a, b) => a.t - b.t);
+const INSERTOS: Ins[] = [...INS_A, ...INS_B, ...INS_C].sort((a, b) => a.a - b.a);
 const PAL = PARTES.flatMap((p) => p.pal).sort((a, b) => a[0] - b[0]);
 
 const LejosBase: React.FC<{ t: number; noche: boolean }> = ({ t, noche }) => (
@@ -57,6 +62,7 @@ export const Completo: React.FC = () => {
             {act.map((p, i) => <React.Fragment key={`d${i}`}>{p.frente?.(t)}</React.Fragment>)}
           </CapaMundo>
           {act.map((p, i) => <React.Fragment key={`h${i}`}>{p.hud?.(t)}</React.Fragment>)}
+          <MostrarInsertos t={t} lista={INSERTOS} />
         </CamCtx.Provider>
       </CamaraMano>
       <Cuadro0 t={t} />

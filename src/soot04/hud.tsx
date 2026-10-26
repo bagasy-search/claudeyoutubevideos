@@ -2,6 +2,9 @@ import React from "react";
 import { interpolate } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande } from "./kit";
 import { Svg } from "./kit3";
+import { Rayos2 } from "./insertos";
+import { mezcla } from "./mundo";
+import { Chico } from "./reparto";
 
 // Piezas de pantalla de Soot 04: cartel de trampa, boyas del mapa del viaje, mapa de Massachusetts,
 // mapa del Pacífico (ruta del Essex), colectivo para la escala, iconos.
@@ -12,11 +15,13 @@ export const CartelTrampa: React.FC<{ t: number; t0: number; t1: number; n: numb
   const out = interpolate(t, [t1, t1 + 0.4], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <div style={{ position: "absolute", inset: 0, opacity: out }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 120, height: 330, background: "rgba(20,10,40,.55)", transform: `scaleY(${ent(t, t0)})` }} />
-      <Grande t={t} t0={t0 + 0.05} text={`TRAP #${n}`} y={230} size={150} color={C.crema} />
-      <Chip t={t} t0={t0 + 0.55} text={nombre} color={col} x={960} y={380} centro size={72} />
+      <div style={{ position: "absolute", inset: 0, clipPath: `circle(${Math.min(1, (t - t0) / 0.22) * 82}% at 50% 40%)` }}><Rayos2 t={t} c1={col} c2={mezcla(col, "#1b1240", 0.18)} cy={420} /></div>
+      <Grande t={t} t0={t0 + 0.05} text={`TRAP #${n}`} y={300} size={210} color={C.crema} />
+      <Chip t={t} t0={t0 + 0.55} text={nombre} color={C.noche} x={960} y={500} centro size={84} />
+      {t > t0 + 0.15 && <Chico x={320} y={1290} h={1050} t={t} expr={(["miedo", "sorpresa", "triste", "miedo", "enojado", "miedo", "triste"] as const)[(n - 1) % 7]} salta={t0 + 0.2} bD={n % 2 ? 150 : 40} cD={n % 2 ? 20 : 120} bI={n % 2 ? 40 : 150} cI={n % 2 ? 110 : 20} mira={0.7} />}
+      <Svg x={1650} y={640 + Math.sin(t * 2.4) * 18} s={2.0 * ent(t, t0 + 0.35)} rot={Math.sin(t * 1.8) * 8}><circle r={110} fill="#fff" stroke={C.noche} strokeWidth={12} /><Icono k={n} /></Svg>
       {Array.from({ length: 7 }, (_, i) => (
-        <div key={i} style={{ position: "absolute", left: 960 - 3 * 80 + i * 80 - 24, top: 470, width: 48, height: 48, borderRadius: 24, background: i < n ? col : "rgba(255,255,255,.2)", border: "6px solid #fff", transform: `scale(${ent(t, t0 + 0.2, i * 0.05) * (i === n - 1 ? 1 + 0.2 * Math.abs(Math.sin(t * 6)) : 1)})` }} />
+        <div key={i} style={{ position: "absolute", left: 960 - 3 * 80 + i * 80 - 24, top: 640, width: 48, height: 48, borderRadius: 24, background: i < n ? C.oro : "rgba(255,255,255,.2)", border: "6px solid #fff", transform: `scale(${ent(t, t0 + 0.2, i * 0.05) * (i === n - 1 ? 1 + 0.2 * Math.abs(Math.sin(t * 6)) : 1)})` }} />
       ))}
     </div>
   );
