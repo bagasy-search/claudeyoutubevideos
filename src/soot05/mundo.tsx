@@ -423,10 +423,10 @@ const Torre: React.FC<{ t: number }> = ({ t }) => (
     </SVG>
     {/* la Torre Blanca */}
     <SVG x={12700} y={SUELO - 2000} w={1500} h={2000}>
-      <rect x={0} y={300} width={1500} height={1700} fill="#ece4f4" />
-      {Array.from({ length: 10 }, (_, i) => <rect key={i} x={i * 155} y={240} width={90} height={70} fill="#ece4f4" />)}
+      <g transform="translate(0 300)"><Bloques w={1500} h={1700} seed={91} col="#d9cdb6" jun="#b3a68c" /></g>
+      {Array.from({ length: 10 }, (_, i) => <rect key={i} x={i * 155} y={240} width={90} height={70} fill="#d9cdb6" stroke="#b3a68c" strokeWidth={4} />)}
       {[0, 1350].map((x, k) => (
-        <g key={k}><rect x={x - 40} y={140} width={230} height={1860} fill="#ddd2ea" /><path d={`M ${x - 50} 150 Q ${x + 75} -10 ${x + 200} 150 Z`} fill="#9b7bf0" /></g>
+        <g key={k}><rect x={x - 40} y={140} width={230} height={1860} fill="#cbbea5" stroke="#b3a68c" strokeWidth={4} /><path d={`M ${x - 50} 150 Q ${x + 75} -10 ${x + 200} 150 Z`} fill="#9b7bf0" /></g>
       ))}
       {[1, 2, 3].map((j) => [0, 1, 2, 3].map((i) => <rect key={`${i}${j}`} x={300 + i * 250} y={420 + j * 330} width={70} height={140} rx={35} fill="#2a1f45" />))}
       {/* corte: la habitación del obispo en el último piso */}
@@ -434,7 +434,8 @@ const Torre: React.FC<{ t: number }> = ({ t }) => (
       <ellipse cx={745} cy={560} rx={520} ry={200} fill="url(#glowV)" opacity={0.8} />
       <rect x={240} y={700} width={1010} height={30} fill="#6b3a1f" />
       <rect x={1250} y={470} width={90} height={160} rx={40} fill="#ffcf7a" />
-      <text x={750} y={250} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill="#5b2bb5" letterSpacing={5}>TOWER OF LONDON</text>
+      <rect x={330} y={170} width={840} height={110} rx={22} fill="#2a1460" stroke="#fff3d6" strokeWidth={8} />
+      <text x={750} y={252} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill="#fff3d6" letterSpacing={5}>TOWER OF LONDON</text>
     </SVG>
     {/* Little Ease: celda mínima en el sótano */}
     <SVG x={12900} y={SUELO + 20} w={420} h={300}>

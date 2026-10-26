@@ -27,9 +27,12 @@ export const camara = (K: Llave[], t: number): Pose => {
 };
 const pose = (K: Llave[], i: number, t: number): Pose => {
   const k = K[i];
-  const d = k[4] ?? 0.9;
-  if (i === 0 || t >= k[0] + d) return deriva(k, i, t - k[0] - (i === 0 ? 0 : d));
+  if (i === 0) return deriva(k, i, t - k[0]);
   const a = pose(K, i - 1, k[0]);
+  // viaje mínimo según lo que recorre la pantalla (OJO vuelta 1: nada de teletransportes de 1 cuadro)
+  const zm = Math.sqrt(a.z * k[3]);
+  const d = Math.max(k[4] ?? 0.9, Math.min(2.2, 0.45 + Math.hypot(k[1] - a.x, k[2] - a.y) * zm / 2600 + Math.abs(Math.log(k[3] / a.z)) * 0.35));
+  if (t >= k[0] + d) return deriva(k, i, t - k[0] - d);
   const u = easeIO(Math.min(1, Math.max(0, (t - k[0]) / d)));
   const dist = Math.hypot(k[1] - a.x, k[2] - a.y);
   const lz0 = Math.log(a.z), lz1 = Math.log(k[3]);
@@ -226,7 +229,7 @@ export const Camino: React.FC<{ t: number; T: number[]; visible: [number, number
           </div>
         );
       })}
-      {n > 0 && <div style={{ marginLeft: 10, fontFamily, fontWeight: 700, fontSize: 36, color: "#fff3d6", textShadow: "0 4px 0 #1b1240" }}>{TRAMPAS[n - 1]}</div>}
+      {n > 0 && <div style={{ marginLeft: 10, fontFamily, fontWeight: 700, fontSize: 36, color: "#fff3d6", background: "rgba(27,18,64,.88)", border: "4px solid #fff3d6", borderRadius: 27, padding: "2px 22px", lineHeight: 1.2 }}>{TRAMPAS[n - 1]}</div>}
     </div>
   );
 };
@@ -241,7 +244,7 @@ export const Plano: React.FC<{ t: number; K: Llave[]; A: Act[]; W: Ev[]; extraMu
   return (
     <AbsoluteFill>
       <CieloMundo t={t} cx={c.x} cy={c.y} z={c.z} />
-      <AbsoluteFill style={{ overflow: "hidden", filter: blur ? `blur(${blur.toFixed(1)}px)` : undefined }}>
+      <AbsoluteFill style={{ overflow: "hidden", filter: `brightness(1.16) saturate(1.1)${blur ? ` blur(${blur.toFixed(1)}px)` : ""}` }}>
         <div style={{ position: "absolute", left: 0, top: 0, width: 1, height: 1, transformOrigin: "0 0", transform: `translate(${960 - c.x * c.z}px, ${540 - c.y * c.z}px) scale(${c.z})` }}>
           <Mundo t={t} x0={x0} x1={x1} />
           {extraMundo?.(c)}

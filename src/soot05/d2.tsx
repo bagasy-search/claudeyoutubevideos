@@ -137,7 +137,9 @@ cam(349.1, 3820, SUELO + 1250, 1.0, 1.4);
 s(349.0, "fall", -2); s(349.9, "slam", 0); s(350.0, "boom", -4);
 o(349.9, "grande", { txt: "TRAP #4", y: 420, s: 170, c: C.oro, t1: 352.2 });
 o(351.0, "chip", { txt: "THE HOLE", x: 960, y: 620, c: C.rojo, s: 84, t1: 352.2 });
-act({ a: 349.6, b: 357.6, x: 3820, y: Y.pozo, h: 400, ropa: YO, seed: 1, expr: [[0, "miedo"], [355, "triste"]], aparece: 349.6 });
+act({ a: 349.6, b: 357.6, x: 3820, y: Y.pozo, h: 400, ropa: YO, seed: 1, expr: [[0, "miedo"], [352.6, "sorpresa"], [353.4, "miedo"], [355, "triste"]], aparece: 349.6, miraY: -1, bI: 150, bD: 150, cI: 20, cD: 20, salta: [352.7, 354.3, 356.1] });
+cam(352.4, 3820, SUELO + 1290, 1.3, 4.5);
+for (let i = 0; i < 3; i++) w(352.6 + i * 1.6, "ico", { ico: "agua", x: 3800 + i * 40, y: SUELO + 700, x2: 3820, y2: Y.pozo - 420, anim: "vuela", dur: 0.6, s: 0.25, t1: 353.3 + i * 1.6 });
 o(352.5, "chip", { txt: "\"MEDIEVAL DUNGEON\"", x: 960, y: 140, c: C.violeta, s: 64, t1: 357.6 });
 s(352.6, "drop", -6); s(354.2, "drop", -8); s(356.0, "drop", -6);
 // 357.82 donjon = la torre del castillo, lo más seguro
@@ -176,7 +178,8 @@ o(387.4, "ico", { ico: "puerta", x: 420, y: 330, s: 0.8, txt: "X", tag: "NO STAI
 o(388.3, "ico", { ico: "llave", x: 420, y: 640, s: 0.8, txt: "X", tag: "NO DOOR", t1: 389.0 });
 s(387.5, "fail", -6); s(388.3, "fail", -6);
 // 389.06 te bajan con una soga
-cam(389.0, 19100, SUELO + 820, 0.8, 0.8);
+cam(389.0, 19100, SUELO + 260, 0.75, 0.8);
+cam(390.4, 19100, SUELO + 820, 0.8, 1.2);
 act({ a: 389.0, b: 430.5, x: 19100, y: [SUELO - 20, Y.botella], tw: [389.3, 391.2], h: 360, ropa: YO, seed: 1, expr: [[0, "miedo"], [392.5, "triste"], [395.6, "feliz"], [397.5, "enojado"], [399.6, "triste"]], bI: 160, bD: 160, cI: 10, cD: 10 });
 s(389.3, "cloth", -2); s(389.9, "cloth", -4); s(390.6, "cloth", -4); s(391.2, "stomp", -3);
 o(391.0, "chip", { txt: "THE ONLY WAY OUT:", x: 960, y: 140, c: C.violeta, s: 58, t1: 395.4 });
@@ -217,7 +220,7 @@ o(424.3, "grande", { txt: "OUBLIETTE", y: 300, s: 160, c: C.oro, t1: 427.6 });
 s(424.3, "slam", -1);
 o(425.8, "chip", { txt: "OUBLIER = TO FORGET", x: 960, y: 470, c: C.violeta, s: 60, t1: 427.6 });
 s(427.7, "wood_hit", 0); s(427.8, "boom", -6);
-o(427.9, "oscuro", { t1: 430.6, a: 0.75 });
+o(427.9, "oscuro", { t1: 430.6, a: 0.45 });
 o(428.6, "chip", { txt: "SO HE COULD BE FORGOTTEN", x: 960, y: 900, c: C.rojo, s: 56, t1: 430.5 });
 // 430.6 la Little Ease de la Torre: ni parado ni acostado
 cam(430.6, 13110, SUELO + 130, 1.35, 1.8);
@@ -234,6 +237,7 @@ o(442.5, "chip", { txt: "ONLY CROUCH", x: 960, y: 140, c: C.violeta, s: 62, t1: 
 o(443.6, "cuenta", { de: 1, a: 9, dur: 0.8, x: 1500, y: 360, s: 160, c: C.oro, suf: " DAYS", t1: 444.6 });
 // 444.72 confesión: muchas «oubliettes» eran depósitos, pozos o letrinas
 cam(444.6, 13450, SUELO - 700, 0.5, 1.2);
+act({ a: 444.6, b: 469.7, x: 12620, y: Y.calle, h: 640, ropa: YO, seed: 1, expr: [[0, "neutro"], [449.3, "sorpresa"], [453.6, "feliz"], [457.8, "orgullo"], [460.3, "sorpresa"], [462.3, "feliz"]], habla: [[445.0, 448.8], [449.3, 452.0]], bD: 130, cD: 30, aparece: 444.8, salta: [460.4, 466.6] });
 o(445.0, "chip", { txt: "A SMALL CONFESSION", x: 960, y: 140, c: C.teal, tinta: C.noche, s: 64, t1: 449.0 });
 o(446.9, "chip", { txt: "TRUTH > LEGEND", x: 960, y: 250, c: C.oro, tinta: C.noche, s: 52, t1: 449.0 });
 o(449.3, "chip", { txt: "\"OUBLIETTES\" WERE OFTEN...", x: 960, y: 140, c: C.violeta, s: 58, t1: 457.6 });

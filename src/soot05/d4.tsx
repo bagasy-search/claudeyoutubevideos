@@ -1,8 +1,8 @@
 import React from "react";
 import { C } from "./kit";
-import { SUELO, L } from "./mundo";
+import { SUELO } from "./mundo";
 import { cam, act, o, w, fee, s, trampa, Y, YO, CARCELERO, JUEZ, PRESO } from "./base";
-import { Recibo, Pines, Letrero } from "./extras";
+import { Recibo, Letrero } from "./extras";
 import type { Pose } from "./motor";
 import type { Ropa } from "./persona";
 
@@ -57,7 +57,7 @@ s(776.5, "slam", -2);
 const HOWARD: Ropa = { tunica: "#2a2a3a", tunica2: "#14141f", cinto: "#c9a23a", piel: "#f2c0a0", piel2: "#d89a7a", pelo: "#d8d8d8" };
 act({ a: 778.7, b: 793.0, x: 3500, y: Y.baja, h: 430, ropa: HOWARD, seed: 261, sobre: "sombrero", expr: [[0, "neutro"], [783, "orgullo"]], habla: [[780.4, 783.4]], manoD: "pergamino", bD: 90, cD: 60, aparece: 778.8 });
 o(778.83, "cuenta", { de: 1300, a: 1774, dur: 1.0, x: 1450, y: 300, s: 220, c: C.oro, t1: 788.1 });
-o(780.6, "chip", { txt: "JOHN HOWARD → PARLIAMENT", x: 1450, y: 470, c: C.teal, tinta: C.noche, s: 44, t1: 788.1 });
+o(779.0, "chip", { txt: "JOHN HOWARD → PARLIAMENT", x: 1450, y: 470, c: C.teal, tinta: C.noche, s: 44, t1: 788.1 });
 o(784.6, "sello", { txt: "FEES ABOLISHED FOR THE INNOCENT", x: 960, y: 820, s: 60, c: C.lima });
 s(784.6, "stamp", 0); s(785.0, "fanfare", -10);
 o(788.3, "linea", { x: 360, y: 640, x2: 1560, y2: 640, c: C.oro, t1: 793.0 });
@@ -73,7 +73,6 @@ act({ a: 793.0, b: 802.6, x: 3400, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [
 // 799.63 ¿peor que la muerte? · 802.69 el giro
 o(799.7, "grande", { txt: "WORSE THAN DEATH?", y: 400, s: 130, c: C.rojo, t1: 802.6 });
 s(799.7, "suspense", -4);
-o(802.7, "flash", { c: "#fff7d6" });
 o(802.7, "grande", { txt: "THE TWIST", y: 420, s: 170, c: C.oro, t1: 804.6 });
 s(802.7, "slam", 0); s(802.75, "boom", -2); s(802.8, "riser", -8);
 cam(803.9, 10850, SUELO - 760, 0.62, 1.8);
@@ -123,6 +122,8 @@ act({ a: 840.4, b: 846.1, x: [12000, 10850], tw: [840.6, 843.2], y: Y.savoy, h: 
 o(838.0, "chip", { txt: "RELEASED ON A PROMISE", x: 960, y: 140, c: C.teal, tinta: C.noche, s: 58, t1: 840.4 });
 o(840.6, "chip", { txt: "...AND CAME BACK BY CHOICE", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 58, t1: 843.6 });
 s(840.6, "spring", -4);
+cam(839.0, 11600, SUELO - 560, 0.8, 1.6);
+cam(841.6, 11000, SUELO - 560, 0.85, 1.6);
 o(843.7, "ico", { ico: "corona", x: 960, y: 340, s: 1.1, tag: "DIED THERE · STILL LIVING LIKE A KING", c: C.violeta, t1: 846.1 });
 // 846.17 Ricardo Corazón de León: 150.000 marcos
 cam(846.1, 13440, SUELO - 1400, 1.0, 1.6);
@@ -168,7 +169,8 @@ o(883.2, "ico", { ico: "mazo", x: 600, y: 420, s: 1.0, txt: "X", tag: "NEVER THE
 o(884.8, "ico", { ico: "bolsa", x: 1320, y: 420, s: 1.4, tag: "IT WAS THE PURSE", c: C.oro, t1: 886.8 });
 s(883.2, "fail", -4); s(884.8, "coin", 0); s(884.9, "slam", -2);
 // 886.95 el verdadero secreto: clasificar a la gente por la plata
-cam(886.9, 6000, SUELO - 300, 0.18, 1.8);
+cam(886.9, 3500, Y.baja - 330, 1.0, 1.4);
+act({ a: 886.9, b: 894.8, x: 3500, y: Y.baja, h: 440, ropa: YO, seed: 1, expr: [[0, "sorpresa"], [889.4, "enojado"], [891.6, "miedo"]], salta: [889.5], bD: 120, cD: 20 });
 s(886.8, "whoosh_big", -2);
 o(887.0, "chip", { txt: "THE REAL SECRET", x: 960, y: 140, c: C.oro, tinta: C.noche, s: 64, t1: 894.7 });
 o(889.4, "ico", { ico: "mazo", x: 560, y: 520, s: 0.9, txt: "X", tag: "NOT BUILT TO PUNISH", t1: 894.7 });
@@ -191,28 +193,26 @@ o(902.3, "grande", { txt: "YOU A BILL", y: 520, s: 150, c: C.oro, t1: 903.8 });
 s(901.6, "boom", -2); s(902.3, "slam", 0);
 // 903.81 CTA: salís con las orejas puestas → suscribite → la próxima: una noche en un castillo
 cam(903.8, 1500, SUELO - 380, 1.0, 1.0);
-act({ a: 903.8, b: 917.6, x: [2000, 1150], tw: [903.9, 906.6], y: Y.calle, h: 430, ropa: YO, seed: 1, expr: [[0, "feliz"], [906.6, "orgullo"]], camina: 1.4, flip: true, salta: [906.8] });
+act({ a: 903.8, b: 917.6, x: [2000, 1150], tw: [903.9, 906.6], y: Y.calle, h: 430, ropa: YO, seed: 1, expr: [[0, "feliz"], [906.6, "orgullo"], [913.0, "sorpresa"], [914.6, "feliz"]], habla: [[913.0, 916.5]], camina: 1.4, flip: true, salta: [906.8, 913.1], bD: 140, cD: 30 });
 o(904.6, "ico", { ico: "oreja", x: 600, y: 330, s: 0.9, tag: "EARS: STILL ATTACHED", c: C.lima, t1: 907.3 });
 s(904.6, "ding", -3);
 o(907.4, "grande", { txt: "SUBSCRIBE", y: 300, s: 150, c: C.rojo, t1: 909.3 });
 o(907.9, "ico", { ico: "campana", x: 1480, y: 300, s: 0.9, anim: "gira", t1: 909.3 });
 s(907.4, "slam", -2); s(907.9, "ding", 0);
-cam(909.3, 13450, SUELO - 900, 0.45, 1.4);
-s(909.2, "whoosh_big", -2);
-o(909.6, "chip", { txt: "NEXT TIME:", x: 960, y: 140, c: C.violeta, s: 60, t1: 912.3 });
-o(910.2, "grande", { txt: "ONE NIGHT IN A MEDIEVAL CASTLE", y: 300, s: 84, c: C.oro, t1: 912.3 });
-s(910.2, "riser", -8);
-cam(912.3, 10200, SUELO - 300, 0.088, 1.5);
-s(912.2, "whoosh_big", -1);
+// 909.3 golpe a pantalla llena (golpe.tsx): NEXT TIME · ONE NIGHT IN A MEDIEVAL CASTLE
+s(909.3, "whoosh_big", -2); s(910.2, "riser", -8);
+cam(912.3, 1250, SUELO - 400, 1.15, 1.4);
+o(912.5, "sello", { txt: "PAID?", x: 1640, y: 330, s: 90, rot: -10, t1: 917.6 });
+s(912.5, "stamp", -2);
 o(913.0, "chip", { txt: "WHICH TRAP GOT YOU FIRST?", x: 960, y: 140, c: C.rojo, s: 64, t1: 917.6 });
-o(914.6, "chip", { txt: "TELL ME IN THE COMMENTS", x: 960, y: 940, c: C.oro, tinta: C.noche, s: 56, t1: 917.6 });
+o(914.0, "ico", { ico: "campana", x: 1560, y: 640, s: 0.8, anim: "gira", tag: "SUBSCRIBE", c: C.rojo, t1: 917.6 });
+o(914.6, "chip", { txt: "TELL ME IN THE COMMENTS", x: 960, y: 900, c: C.oro, tinta: C.noche, s: 56, t1: 917.6 });
 s(914.6, "pop", -3);
 
 export const X4 = (t: number, c: Pose): React.ReactNode => (
   <>
     {/* la factura del rey: un rollo que no se termina nunca */}
     {t >= 834.0 && t < 837.7 && <Recibo t={t} t0={834.0} x={10600} y={SUELO - 760} largo={720} dur={3.0} w={300} items={[["RANSOM", "3,000,000"], ["SERVANTS", "∞"], ["HORSES", "∞"], ["WINE", "∞"]]} resalta={0} />}
-    <Pines t={t} t0={912.5} t1={917.6} z={c.z} P={[[L.oficina.x, SUELO - 700], [L.torre.x, SUELO - 2150], [L.tribunal.x, SUELO - 1450], [L.botella.x, SUELO + 600], [L.comun.x, SUELO - 1600], [L.fleet.x, SUELO - 1250], [L.puerta.x, SUELO - 1600]]} />
   </>
 );
 export const P4 = (t: number): React.ReactNode => <Letrero t={t} t0={807.15} t1={808.4} txt="HOTEL SAVOY" estrellas={5} />;

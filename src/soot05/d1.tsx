@@ -20,7 +20,7 @@ o(56.6, "sello", { txt: "NOT THE PUNISHMENT", x: 960, y: 820, s: 84, rot: -5, t1
 // 58.34 sheep → hanged / fined / cut something off
 wi(58.9, "oveja", VX + 190, Y.baja - 120, { s: 0.85, t1: 62.6 });
 s(58.9, "pop", -2);
-o(59.7, "ico", { ico: "soga", x: 520, y: 330, s: 1.1, anim: "cae", tag: "HANGED", t1: 62.7 });
+o(59.7, "ico", { ico: "soga", x: 1450, y: 420, s: 1.1, anim: "cae", tag: "HANGED", t1: 62.7 });
 o(60.6, "ico", { ico: "moneda", x: 960, y: 330, s: 1.0, tag: "FINED", c: C.violeta, t1: 62.7 });
 o(61.56, "ico", { ico: "cuchilla", x: 1400, y: 330, s: 1.1, tag: "CUT OFF", rot: -20, t1: 62.7 });
 s(59.7, "swish", -2); s(60.6, "coin", -2); s(61.6, "sword", -2); s(61.7, "gasp", -6);
@@ -86,7 +86,7 @@ w(107.2, "chip", { txt: "1 WEEK OLD", x: 4200, y: Y.baja - 340, c: C.lima, tinta
 s(107.2, "drop", -4);
 // 108.3 los vecinos: garnish
 cam(108.2, 3500, Y.baja - 320, 1.05, 0.9);
-act({ a: 108.3, b: 153.2, x: 3200, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [113.8, "triste"], [116.6, "sorpresa"], [118.5, "miedo"], [121, "triste"], [123, "neutro"], [137.6, "feliz"], [139.7, "triste"], [142.2, "neutro"]], salta: [116.7] });
+act({ a: 108.3, b: 130.2, x: 3200, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [113.8, "triste"], [116.6, "sorpresa"], [118.5, "miedo"], [121, "triste"], [123, "neutro"], [137.6, "feliz"], [139.7, "triste"], [142.2, "neutro"]], salta: [116.7] });
 for (let i = 0; i < 5; i++)
   act({ a: 108.3, b: 122, x: [4500 + i * 110, 3420 + i * 150], tw: [108.4 + i * 0.25, 109.9 + i * 0.25], y: Y.baja + (i % 2) * 8, h: 390 + (i % 3) * 20, ropa: PRESO(i), seed: 90 + i, flip: true,
     expr: [[0, "neutro"], [112.8, "orgullo"], [114.6, "feliz"], [116.4, "enojado"], [118.5, "feliz"]], habla: [[110.1, 111.8]], manoD: i % 2 ? "jarra" : undefined, bD: i % 2 ? 60 : 8, cD: i % 2 ? 70 : 10 });
@@ -111,7 +111,7 @@ for (let i = 0; i < 4; i++) s(128.6 + i * 0.3, "drop", -4);
 w(129.5, "chip", { txt: "THE LOAVES THAT CAME OUT WRONG", x: 3520, y: Y.baja - 560, c: C.ambar, tinta: C.noche, s: 36, t1: 130.5 });
 // 130.16 la reja a la calle, la caja en un palo, los que pasan
 cam(130.3, 4480, Y.baja - 280, 1.3, 0.9);
-act({ a: 130.2, b: 142.2, x: 4250, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [136.4, "feliz"], [139.7, "triste"]], bD: 100, cD: 10 });
+act({ a: 130.2, b: 142.2, x: 4250, y: Y.baja, h: 430, ropa: YO, seed: 1, expr: [[0, "triste"], [136.4, "feliz"], [139.7, "triste"]], bD: 45, cD: 30 });
 act({ a: 130.2, b: 142.2, x: [5000, 4640], tw: [134.2, 135.6], y: Y.calle, h: 430, ropa: PRESO(7), seed: 101, flip: true, expr: [[0, "neutro"], [135.8, "feliz"]], bD: 60, cD: 40 });
 for (let i = 0; i < 3; i++) w(135.9 + i * 0.25, "ico", { ico: "moneda", x: 4660, y: Y.baja - 520, anim: "cae", s: 0.3, t1: 136.6 + i * 0.25 });
 s(136.0, "coin", -2); s(136.5, "coin", -4);
@@ -168,7 +168,7 @@ o(177.4, "grande", { txt: "THE EASEMENT", y: 400, s: 140, c: C.oro, t1: 179.2 })
 o(177.9, "grande", { txt: "OF IRONS", y: 580, s: 140, c: C.oro, t1: 179.2 });
 s(177.4, "fanfare", -6);
 // 179.22 pensalo: no eran para que no te escapes... eran para ALQUILAR
-cam(179.1, CX, Y.alta - 330, 2.2, 0.9);
+cam(179.1, CX, Y.alta - 300, 1.5, 0.9);
 o(181.6, "chip", { txt: "NOT FOR ESCAPES", x: 960, y: 140, c: C.violeta, s: 62, t1: 184.8 });
 o(184.0, "chip", { txt: "(NOT ONLY)", x: 960, y: 250, c: C.rosa, s: 40, t1: 184.8 });
 cam(185.0, 3880, Y.alta - 380, 1.05, 0.6);

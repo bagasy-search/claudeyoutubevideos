@@ -55,7 +55,7 @@ fee(17.78, 1, "CANDLE");
 cam(18.3, YX + 400, Y.baja - 120, 1.9, 0.45);
 wi(18.5, "paja", YX + 420, Y.baja - 230, { s: 1.1, tag: "STRAW", t1: 19.3 });
 fee(18.6, 1, "STRAW");
-cam(19.3, YX - 40, Y.baja - 90, 2.6, 0.45);
+cam(19.3, YX - 20, Y.baja - 250, 1.6, 0.45);
 w(19.6, "chip", { txt: "+ IRON", x: YX + 60, y: Y.baja - 160, c: C.rojo, s: 34, t1: 20.9 });
 s(19.54, "metal", -2);
 // 21.12 «And if you cannot pay» — bolsillos vacíos → al piso, junto al desagüe, a oscuras
@@ -69,11 +69,11 @@ o(24.8, "oscuro", { t1: 28.0, a: 0.96 });
 s(24.8, "wind", -10); s(25.0, "suspense", -4);
 o(26.2, "chip", { txt: "THE PART THAT SOUNDS LIKE A JOKE", x: 960, y: 200, c: C.violeta, s: 54, t1: 27.8 });
 // 27.9 «Even if the judge says you are innocent» — luz, vuelo al tribunal
-cam(27.75, 6250, SUELO - 400, 1.1, 1.0);
+cam(27.75, 6250, SUELO - 520, 0.95, 1.0);
 s(27.7, "whoosh_big", -3);
 act({ a: 27.7, b: 52, x: 6700, y: Y.estrado, h: 400, ropa: JUEZ, seed: 31, sobre: "cofia", viejo: true, expr: [[0, "neutro"], [40.5, "miedo"]], habla: [[28.3, 29.3]], bD: 120, cD: 40, manoD: "mazo", rot: 0, flip: true });
 act({ a: 27.7, b: 30.1, x: 5880, y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "miedo"], [29.2, "feliz"]], salta: [29.25] });
-o(29.16, "sello", { txt: "INNOCENT", c: "#2a9a4a", x: 960, y: 260, s: 120 });
+o(29.16, "sello", { txt: "INNOCENT", c: "#2a9a4a", x: 560, y: 260, s: 120 });
 s(29.1, "wood_hit", 0);
 // 30.0 «you still cannot walk out» — corre a la puerta; el carcelero la tapa con la mano extendida
 act({ a: 30.1, b: 33.9, x: [5880, 5240], tw: [30.1, 31.2], y: Y.sala, h: 430, ropa: YO, seed: 1, expr: [[0, "feliz"], [31.3, "sorpresa"]], camina: 2.2 });
@@ -81,7 +81,8 @@ cam(30.2, 5200, SUELO - 330, 1.25, 1.0);
 act({ a: 30.8, b: 34, x: 5000, y: Y.sala, h: 450, ropa: CARCELERO, seed: 7, sobre: "gorro", expr: "orgullo", bD: 100, cD: 0, aparece: 30.8, habla: [[31.7, 33]] });
 s(30.8, "spring", -2);
 fee(32.6, 6, "ONE MORE FEE");
-o(32.3, "sello", { txt: "+1 FEE", x: 1500, y: 260, s: 100 });
+// 32.3 golpe a pantalla llena (golpe.tsx): INNOCENT. STILL PAYING.
+s(32.3, "slam", -1); s(32.65, "boom", -5);
 // 33.94 «By the end of this video...» — loop abierto
 cam(33.9, 6000, SUELO - 560, 0.72, 1.4);
 o(37.02, "sello", { txt: "NOT GUILTY", c: "#2a9a4a", x: 960, y: 300, s: 110, t1: 39.3 });
@@ -102,7 +103,7 @@ s(42.3, "fall", -2); s(43.1, "fall", -3); s(43.4, "fall", -4); s(44.2, "fall", -
 cam(45.95, 10200, SUELO - 300, 0.088, 1.5);
 s(45.9, "whoosh_big", 0); s(46.0, "riser", -6);
 for (let i = 0; i < 7; i++) s(46.32 + 0.22 * i, "tick", -2);
-o(47.0, "chip", { txt: "7 TRAPS", x: 960, y: 120, c: C.rojo, s: 72 });
+o(47.3, "chip", { txt: "7 TRAPS", x: 960, y: 120, c: C.rojo, s: 72 });
 // 48.84 «Let's go in.» — picada a Newgate y adentro
 cam(48.75, 1450, SUELO - 520, 1.05, 1.1);
 s(48.7, "whoosh_big", -2); s(49.6, "wood_hit", -4);
