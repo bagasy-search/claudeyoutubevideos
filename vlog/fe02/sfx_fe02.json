@@ -1,0 +1,3880 @@
+[
+{
+"t": 0,
+"sonido": "cuarto_bed.wav",
+"pool": "cuarto",
+"dB": -40,
+"por_que": "tono de cuarto bajo todo el video"
+},
+{
+"t": 2.47,
+"sonido": "678.mp3",
+"pool": "swell",
+"dB": -24,
+"por_que": "subida antes de $86.400"
+},
+{
+"t": 3.4,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 3.69,
+"sonido": "juniorsoundays-ui-sound-56-527824.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag $86.400"
+},
+{
+"t": 3.7,
+"sonido": "boom.wav",
+"pool": "boom",
+"dB": -18,
+"por_que": "REVELACIÓN DE PRECIO $86.400"
+},
+{
+"t": 3.87,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 5.49,
+"sonido": "sfx_whoosh_soft.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → pluma"
+},
+{
+"t": 5.89,
+"sonido": "2998.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 8.59,
+"sonido": "freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → retrato"
+},
+{
+"t": 8.64,
+"sonido": "1070.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de retrato"
+},
+{
+"t": 8.69,
+"sonido": "impactWood_heavy_001.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave NO FIRME TODAVÍA"
+},
+{
+"t": 10.15,
+"sonido": "2638.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 10.55,
+"sonido": "bookFlip2.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 11.83,
+"sonido": "cam_travel.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → pluma"
+},
+{
+"t": 12.23,
+"sonido": "2367.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 14.46,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 18.6,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 18.72,
+"sonido": "1900.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 18.89,
+"sonido": "select_007.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "entra big 9 RENGLONES"
+},
+{
+"t": 21.95,
+"sonido": "1492.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → lapida"
+},
+{
+"t": 22.0,
+"sonido": "2606.mp3",
+"pool": "viento",
+"dB": -28,
+"por_que": "ambiente de lapida"
+},
+{
+"t": 27.23,
+"sonido": "1462.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → oficina"
+},
+{
+"t": 27.28,
+"sonido": "1072.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de oficina"
+},
+{
+"t": 30.67,
+"sonido": "1484.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 31.07,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 31.61,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 37.45,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 37.75,
+"sonido": "chip_pop3d.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra lower"
+},
+{
+"t": 37.92,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de fotos"
+},
+{
+"t": 40.13,
+"sonido": "smooth_airy_whoosh_m_#2-1780923688387.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ventana"
+},
+{
+"t": 40.18,
+"sonido": "1554.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 43.89,
+"sonido": "yc_whoosh_warm.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cupula"
+},
+{
+"t": 43.94,
+"sonido": "627.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de cupula"
+},
+{
+"t": 43.97,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra lugar"
+},
+{
+"t": 48.71,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 53.35,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 53.65,
+"sonido": "bookFlip3.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra mapa"
+},
+{
+"t": 53.82,
+"sonido": "3157.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de corte"
+},
+{
+"t": 55.81,
+"sonido": "whoosh.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → corte"
+},
+{
+"t": 55.86,
+"sonido": "counter_up.mp3",
+"pool": "roll",
+"dB": -24,
+"por_que": "cuenta que sube"
+},
+{
+"t": 56.21,
+"sonido": "179.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de corte"
+},
+{
+"t": 59.49,
+"sonido": "stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 59.89,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 62.37,
+"sonido": "sfx_trans2.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → veladora"
+},
+{
+"t": 62.42,
+"sonido": "1330.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladora"
+},
+{
+"t": 65.17,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 68.9,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 69.37,
+"sonido": "338.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de exhibicion"
+},
+{
+"t": 71.77,
+"sonido": "1167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → tag1"
+},
+{
+"t": 72.17,
+"sonido": "clothBelt2.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "foley de tag1"
+},
+{
+"t": 74.13,
+"sonido": "sfx_trans1.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 74.53,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 76.85,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra lista"
+},
+{
+"t": 77.62,
+"sonido": "tick_001.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 78.12,
+"sonido": "digit_tick.mp3",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 78.62,
+"sonido": "select_005.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 79.12,
+"sonido": "select_002.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 80.85,
+"sonido": "164.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → sobre"
+},
+{
+"t": 81.25,
+"sonido": "2380.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de sobre"
+},
+{
+"t": 82.27,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 86.71,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 86.83,
+"sonido": "617.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 92.11,
+"sonido": "168.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → veladoras"
+},
+{
+"t": 92.16,
+"sonido": "2590.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladoras"
+},
+{
+"t": 92.21,
+"sonido": "impactWood_heavy_004.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave SUSCRÍBASE · EN UN DÍA TRANQUILO"
+},
+{
+"t": 94.37,
+"sonido": "ksjsbwuil-whoosh3-481204.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 94.77,
+"sonido": "bookFlip2.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 97.47,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición up al avatar"
+},
+{
+"t": 101.44,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 101.56,
+"sonido": "369.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 101.74,
+"sonido": "pin_plop.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra comment"
+},
+{
+"t": 106.31,
+"sonido": "2632.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → fotos"
+},
+{
+"t": 106.7,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "sobre"
+},
+{
+"t": 106.71,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de fotos"
+},
+{
+"t": 107.5,
+"sonido": "yc_paper_tear.mp3",
+"pool": "tear",
+"dB": -23,
+"por_que": "se abre el sobre"
+},
+{
+"t": 111.59,
+"sonido": "167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → sobre"
+},
+{
+"t": 111.99,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de sobre"
+},
+{
+"t": 114.7,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 120.66,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 121.13,
+"sonido": "3157.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de exhibicion"
+},
+{
+"t": 122.77,
+"sonido": "3161.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ataud1"
+},
+{
+"t": 122.85,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 123.17,
+"sonido": "impactWood_heavy_002.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de ataud1"
+},
+{
+"t": 126.33,
+"sonido": "1471.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → exhibicion"
+},
+{
+"t": 126.73,
+"sonido": "179.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de exhibicion"
+},
+{
+"t": 129.51,
+"sonido": "2627.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → tapa"
+},
+{
+"t": 129.91,
+"sonido": "impactWood_heavy_003.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de tapa"
+},
+{
+"t": 132.26,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 137.52,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 137.99,
+"sonido": "cloth1.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "foley de tag1"
+},
+{
+"t": 140.94,
+"sonido": "1170.mp3",
+"pool": "swell",
+"dB": -24,
+"por_que": "subida antes de +$11.000"
+},
+{
+"t": 142.04,
+"sonido": "1898.mp3",
+"pool": "cloth",
+"dB": -26,
+"por_que": "gira la etiqueta del ataúd"
+},
+{
+"t": 142.09,
+"sonido": "2637.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → tag1"
+},
+{
+"t": 142.16,
+"sonido": "3005.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag +$11.000"
+},
+{
+"t": 142.17,
+"sonido": "549.mp3",
+"pool": "boom",
+"dB": -18,
+"por_que": "REVELACIÓN DE PRECIO +$11.000"
+},
+{
+"t": 142.49,
+"sonido": "cloth4.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "foley de tag1"
+},
+{
+"t": 142.54,
+"sonido": "switch_007.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "etiqueta se asienta"
+},
+{
+"t": 146.75,
+"sonido": "1464.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ataud2"
+},
+{
+"t": 147.15,
+"sonido": "impactPunch_heavy_004.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de ataud2"
+},
+{
+"t": 147.94,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 151.19,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 151.49,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra ficha"
+},
+{
+"t": 151.66,
+"sonido": "impactPlank_medium_000.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de ataud1"
+},
+{
+"t": 161.37,
+"sonido": "yc_stamp.mp3",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave NADA MÁS"
+},
+{
+"t": 161.87,
+"sonido": "2608.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → tapa"
+},
+{
+"t": 162.27,
+"sonido": "impactWood_heavy_000.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de tapa"
+},
+{
+"t": 163.95,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 169.79,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición fade desde el avatar"
+},
+{
+"t": 170.11,
+"sonido": "pluck_001.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 170.26,
+"sonido": "1535.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de faros"
+},
+{
+"t": 170.46,
+"sonido": "juniorsoundays-ui-sound-73-527841.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 170.81,
+"sonido": "juniorsoundays-ui-sound-70-527837.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 176.09,
+"sonido": "sfx_trans3.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 176.14,
+"sonido": "628.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 180.42,
+"sonido": "clothBelt.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "gira la etiqueta del ataúd"
+},
+{
+"t": 180.47,
+"sonido": "sfx_trans4.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → tag2"
+},
+{
+"t": 180.87,
+"sonido": "cloth2.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "foley de tag2"
+},
+{
+"t": 180.92,
+"sonido": "click_003.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "etiqueta se asienta"
+},
+{
+"t": 181.05,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 186.29,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra dicho"
+},
+{
+"t": 186.34,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 186.46,
+"sonido": "1070.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 190.71,
+"sonido": "1474.mp3",
+"pool": "whoosh_big",
+"dB": -22,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 191.11,
+"sonido": "bookFlip3.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 194.41,
+"sonido": "2380.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra quote"
+},
+{
+"t": 197.33,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 202.32,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 202.79,
+"sonido": "2376.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 202.94,
+"sonido": "2370.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "tacha en la cotización 3D"
+},
+{
+"t": 206.53,
+"sonido": "488.mp3",
+"pool": "whoosh_big",
+"dB": -22,
+"por_que": "vuelo de cámara → tag3"
+},
+{
+"t": 206.93,
+"sonido": "cloth3.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "foley de tag3"
+},
+{
+"t": 207.14,
+"sonido": "confirmation_001.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag COMISIÓN"
+},
+{
+"t": 212.25,
+"sonido": "1462.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ataud1"
+},
+{
+"t": 212.65,
+"sonido": "2182.mp3",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de ataud1"
+},
+{
+"t": 213.74,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 217.38,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 217.85,
+"sonido": "338.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de sillas"
+},
+{
+"t": 217.91,
+"sonido": "floraphonic-ui-pop-up-15-197897.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 218.26,
+"sonido": "floraphonic-casual-click-pop-ui-7-262127.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 218.61,
+"sonido": "floraphonic-casual-click-pop-ui-2-262119.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 223.33,
+"sonido": "164.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 223.38,
+"sonido": "1900.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 226.93,
+"sonido": "167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 226.98,
+"sonido": "618.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 228.14,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición up al avatar"
+},
+{
+"t": 232.1,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 232.12,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 232.57,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 235.97,
+"sonido": "sfx_trans2.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 236.02,
+"sonido": "623.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 242.59,
+"sonido": "168.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 242.99,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra ficha"
+},
+{
+"t": 245.58,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 250.24,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 250.71,
+"sonido": "impactPunch_heavy_000.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 255.05,
+"sonido": "sfx_trans3.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urnas"
+},
+{
+"t": 255.45,
+"sonido": "impactPunch_heavy_001.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 259.79,
+"sonido": "yc_whoosh_warm.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urnas"
+},
+{
+"t": 259.89,
+"sonido": "yc_gavel.mp3",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave NINGUNA LEY LO OBLIGA"
+},
+{
+"t": 260.19,
+"sonido": "impactPunch_heavy_002.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 262.12,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 268.48,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición fade desde el avatar"
+},
+{
+"t": 268.8,
+"sonido": "pin_plop2.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 268.95,
+"sonido": "3129.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de carroza"
+},
+{
+"t": 269.15,
+"sonido": "node_pop.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 269.5,
+"sonido": "floraphonic-minimal-pop-click-ui-1-198301.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 272.39,
+"sonido": "1167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 272.44,
+"sonido": "1072.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 276.01,
+"sonido": "2632.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cupula"
+},
+{
+"t": 276.06,
+"sonido": "627.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de cupula"
+},
+{
+"t": 276.09,
+"sonido": "bookFlip3.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra lugar"
+},
+{
+"t": 278.4,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 282.86,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 282.98,
+"sonido": "2641.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladoras"
+},
+{
+"t": 287.93,
+"sonido": "2638.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 287.98,
+"sonido": "628.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 292.05,
+"sonido": "2637.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 292.45,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 292.87,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra quote"
+},
+{
+"t": 296.47,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 302.01,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 302.48,
+"sonido": "2998.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 302.63,
+"sonido": "2370.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "tacha en la cotización 3D"
+},
+{
+"t": 304.53,
+"sonido": "maximize_003.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra comment"
+},
+{
+"t": 305.83,
+"sonido": "ksjsbwuil-whoosh3-481204.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → pluma"
+},
+{
+"t": 306.23,
+"sonido": "2376.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 309.57,
+"sonido": "freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → bovedas"
+},
+{
+"t": 309.65,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 309.97,
+"sonido": "impactMetal_light_001.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de bovedas"
+},
+{
+"t": 312.49,
+"sonido": "1464.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → bovedas"
+},
+{
+"t": 312.89,
+"sonido": "impactMetal_light_002.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de bovedas"
+},
+{
+"t": 313.75,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 319.75,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición fade desde el avatar"
+},
+{
+"t": 320.22,
+"sonido": "metalLatch.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de boveda_llana"
+},
+{
+"t": 323.05,
+"sonido": "1471.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → boveda_llana"
+},
+{
+"t": 323.12,
+"sonido": "maximize_008.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag REGLA DEL CEMENTERIO"
+},
+{
+"t": 323.45,
+"sonido": "impactMetal_light_004.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de boveda_llana"
+},
+{
+"t": 327.53,
+"sonido": "3161.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → boveda_lujo"
+},
+{
+"t": 327.93,
+"sonido": "impactMetal_light_003.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de boveda_lujo"
+},
+{
+"t": 330.49,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 336.11,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 336.58,
+"sonido": "metalClick.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de bovedas"
+},
+{
+"t": 336.85,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra ficha"
+},
+{
+"t": 344.97,
+"sonido": "sfx_whoosh_soft.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → boveda_llana"
+},
+{
+"t": 345.37,
+"sonido": "impactMetal_light_000.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de boveda_llana"
+},
+{
+"t": 349.05,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 353.82,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 353.94,
+"sonido": "2473.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de patio"
+},
+{
+"t": 359.69,
+"sonido": "sfx_trans1.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → nicho"
+},
+{
+"t": 359.74,
+"sonido": "1177.mp3",
+"pool": "viento",
+"dB": -28,
+"por_que": "ambiente de nicho"
+},
+{
+"t": 364.31,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición up al avatar"
+},
+{
+"t": 367.61,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 367.93,
+"sonido": "maximize_009.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 368.08,
+"sonido": "2367.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 368.28,
+"sonido": "maximize_007.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 368.63,
+"sonido": "maximize_004.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 369.34,
+"sonido": "2998.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "tacha en la cotización 3D"
+},
+{
+"t": 373.63,
+"sonido": "1492.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → veladora"
+},
+{
+"t": 373.68,
+"sonido": "2641.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladora"
+},
+{
+"t": 375.65,
+"sonido": "smooth_airy_whoosh_m_#2-1780923688387.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → boveda_lujo"
+},
+{
+"t": 376.05,
+"sonido": "impactMetal_light_001.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de boveda_lujo"
+},
+{
+"t": 382.06,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 386.52,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 386.99,
+"sonido": "impactMetal_light_002.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de boveda_lujo"
+},
+{
+"t": 387.45,
+"sonido": "impactWood_heavy_002.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave ESO NO ES CIERTO"
+},
+{
+"t": 391.75,
+"sonido": "2627.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urnas"
+},
+{
+"t": 391.83,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 392.15,
+"sonido": "impactPunch_heavy_003.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 395.09,
+"sonido": "stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urnas"
+},
+{
+"t": 395.49,
+"sonido": "impactPlank_medium_001.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 397.73,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 402.37,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 402.69,
+"sonido": "cloth3.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "etiqueta 2.5D que gira"
+},
+{
+"t": 402.84,
+"sonido": "impactPlank_medium_002.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 406.95,
+"sonido": "2608.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urna_barro"
+},
+{
+"t": 407.05,
+"sonido": "1898.mp3",
+"pool": "cloth",
+"dB": -26,
+"por_que": "etiqueta 2.5D que gira"
+},
+{
+"t": 407.35,
+"sonido": "impactPlank_medium_003.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urna_barro"
+},
+{
+"t": 412.63,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 416.58,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 417.05,
+"sonido": "impactMetal_light_000.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de urna_marmol"
+},
+{
+"t": 418.47,
+"sonido": "impactWood_heavy_003.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave GUARDAN LO MISMO"
+},
+{
+"t": 420.03,
+"sonido": "whoosh.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urna_barro"
+},
+{
+"t": 420.43,
+"sonido": "impactPlank_medium_004.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urna_barro"
+},
+{
+"t": 426.23,
+"sonido": "sfx_trans4.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → pluma"
+},
+{
+"t": 426.31,
+"sonido": "bookFlip2.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra dicho"
+},
+{
+"t": 426.63,
+"sonido": "2370.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 427.28,
+"sonido": "2376.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "tacha en la cotización 3D"
+},
+{
+"t": 429.05,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 434.89,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 435.19,
+"sonido": "2380.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra lugar"
+},
+{
+"t": 435.36,
+"sonido": "impactPunch_heavy_004.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urna_barro"
+},
+{
+"t": 436.61,
+"sonido": "3115.mp3",
+"pool": "whoosh_big",
+"dB": -22,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 436.66,
+"sonido": "1900.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 441.69,
+"sonido": "cam_travel.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urnas"
+},
+{
+"t": 442.09,
+"sonido": "impactPlank_medium_000.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 446.15,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 450.79,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 451.09,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra ficha"
+},
+{
+"t": 451.26,
+"sonido": "2182.mp3",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urnas"
+},
+{
+"t": 456.45,
+"sonido": "1484.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → urna_barro"
+},
+{
+"t": 456.85,
+"sonido": "impactWood_heavy_004.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de urna_barro"
+},
+{
+"t": 461.89,
+"sonido": "1471.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cupula"
+},
+{
+"t": 461.94,
+"sonido": "618.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de cupula"
+},
+{
+"t": 463.68,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 469.89,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 470.01,
+"sonido": "1240.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de flores"
+},
+{
+"t": 470.19,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 476.61,
+"sonido": "2632.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → flores"
+},
+{
+"t": 481.98,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 486.59,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 486.71,
+"sonido": "617.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 486.91,
+"sonido": "yc_gavel.mp3",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave NO LO ES"
+},
+{
+"t": 488.99,
+"sonido": "2637.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → flores"
+},
+{
+"t": 489.04,
+"sonido": "28.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de flores"
+},
+{
+"t": 491.31,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra mapa"
+},
+{
+"t": 493.75,
+"sonido": "1462.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → flores"
+},
+{
+"t": 498.43,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición up al avatar"
+},
+{
+"t": 504.24,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 504.36,
+"sonido": "2472.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de patio"
+},
+{
+"t": 510.57,
+"sonido": "Smooth_cinematic_zoo_#4-1780916032291.mp3",
+"pool": "whoosh_big",
+"dB": -22,
+"por_que": "vuelo de cámara → patio"
+},
+{
+"t": 516.84,
+"sonido": "1464.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 516.89,
+"sonido": "1070.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 517.05,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 522.34,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 522.64,
+"sonido": "2380.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra quote"
+},
+{
+"t": 522.81,
+"sonido": "2367.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 522.96,
+"sonido": "2376.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "tacha en la cotización 3D"
+},
+{
+"t": 524.68,
+"sonido": "1484.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → veladora"
+},
+{
+"t": 524.73,
+"sonido": "1330.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladora"
+},
+{
+"t": 527.95,
+"sonido": "2364.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag UN FRASCO DE VIDRIO"
+},
+{
+"t": 531.66,
+"sonido": "167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → flores"
+},
+{
+"t": 531.71,
+"sonido": "2473.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de flores"
+},
+{
+"t": 533.21,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 536.99,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición fade desde el avatar"
+},
+{
+"t": 537.11,
+"sonido": "1240.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de flores"
+},
+{
+"t": 537.29,
+"sonido": "juniorsoundays-ui-sound-41-527814.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra comment"
+},
+{
+"t": 540.18,
+"sonido": "cam_travel.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cochera"
+},
+{
+"t": 540.26,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 540.58,
+"sonido": "1566.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de cochera"
+},
+{
+"t": 541.73,
+"sonido": "1559.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "se encienden los faros de la carroza"
+},
+{
+"t": 541.83,
+"sonido": "2365.mp3",
+"pool": "flash",
+"dB": -27,
+"por_que": "faros"
+},
+{
+"t": 542.62,
+"sonido": "1486.mp3",
+"pool": "whoosh_big",
+"dB": -22,
+"por_que": "vuelo de cámara → carroza"
+},
+{
+"t": 543.02,
+"sonido": "1535.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de carroza"
+},
+{
+"t": 547.89,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 552.03,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 552.32,
+"sonido": "sfx_pop.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag SIN DIRECCIÓN"
+},
+{
+"t": 552.5,
+"sonido": "3129.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de cochera"
+},
+{
+"t": 556.11,
+"sonido": "sfx_trans2.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cochera"
+},
+{
+"t": 556.51,
+"sonido": "1559.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de cochera"
+},
+{
+"t": 560.12,
+"sonido": "sfx_trans1.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cochera"
+},
+{
+"t": 560.52,
+"sonido": "1566.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de cochera"
+},
+{
+"t": 561.78,
+"sonido": "impactWood_heavy_000.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave COBRA POR FAMILIA"
+},
+{
+"t": 564.56,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 570.21,
+"sonido": "786.mp3",
+"pool": "swell",
+"dB": -24,
+"por_que": "subida antes de $1.500 – 3.500"
+},
+{
+"t": 570.25,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 570.72,
+"sonido": "1535.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de carroza"
+},
+{
+"t": 571.43,
+"sonido": "tick_002.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "entra big $1.500 – 3.500"
+},
+{
+"t": 571.44,
+"sonido": "cp_boom.wav",
+"pool": "boom",
+"dB": -18,
+"por_que": "REVELACIÓN DE PRECIO $1.500 – 3.500"
+},
+{
+"t": 576.63,
+"sonido": "1170.mp3",
+"pool": "swell",
+"dB": -24,
+"por_que": "subida antes de la revelación $5.000 = ALARMA"
+},
+{
+"t": 578.07,
+"sonido": "cam_zoom_punch.mp3",
+"pool": "boom",
+"dB": -18,
+"por_que": "REVELACIÓN DE PRECIO $5.000 = ALARMA"
+},
+{
+"t": 578.08,
+"sonido": "yc_stamp.mp3",
+"pool": "stamp",
+"dB": -19,
+"por_que": "sello $5.000 = ALARMA"
+},
+{
+"t": 581.39,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 585.55,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 586.02,
+"sonido": "3129.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de carroza"
+},
+{
+"t": 588.0,
+"sonido": "arnav_geddada-ui-sound-2-374229.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 588.35,
+"sonido": "juniorsoundays-ui-sound-80-527880.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 588.7,
+"sonido": "pluck_002.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 589.76,
+"sonido": "164.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carroza"
+},
+{
+"t": 590.16,
+"sonido": "1559.mp3",
+"pool": "coche",
+"dB": -24,
+"por_que": "foley de carroza"
+},
+{
+"t": 593.9,
+"sonido": "168.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → veladora"
+},
+{
+"t": 593.95,
+"sonido": "2590.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladora"
+},
+{
+"t": 596.15,
+"sonido": "gentle_papercard_pop_#2-1780923860389.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag 12 A 48 HORAS"
+},
+{
+"t": 598.45,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 603.49,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 603.61,
+"sonido": "1072.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 606.54,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra dicho"
+},
+{
+"t": 613.44,
+"sonido": "3161.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → pluma"
+},
+{
+"t": 613.84,
+"sonido": "2367.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 614.29,
+"sonido": "2370.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "tacha en la cotización 3D"
+},
+{
+"t": 615.49,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 619.99,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 620.14,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 620.46,
+"sonido": "1908.mp3",
+"pool": "cajon",
+"dB": -26,
+"por_que": "foley de archivero"
+},
+{
+"t": 623.92,
+"sonido": "1492.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 624.32,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 627.64,
+"sonido": "cloth4.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "etiqueta 2.5D que gira"
+},
+{
+"t": 630.69,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición up al avatar"
+},
+{
+"t": 634.53,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 635.0,
+"sonido": "192.mp3",
+"pool": "cajon",
+"dB": -26,
+"por_que": "foley de archivero"
+},
+{
+"t": 640.58,
+"sonido": "sfx_trans4.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 640.63,
+"sonido": "1900.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 644.18,
+"sonido": "confirmation_002.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 644.22,
+"sonido": "2638.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 644.53,
+"sonido": "confirmation_003.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 644.88,
+"sonido": "maximize_005.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 647.79,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 653.23,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 653.7,
+"sonido": "bookFlip2.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 658.06,
+"sonido": "1167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 658.3,
+"sonido": "maximize_001.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 658.46,
+"sonido": "bookFlip3.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 658.65,
+"sonido": "maximize_002.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 659.0,
+"sonido": "maximize_006.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "chip"
+},
+{
+"t": 662.82,
+"sonido": "2627.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ventana"
+},
+{
+"t": 662.87,
+"sonido": "369.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 664.99,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 669.83,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 670.18,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra dicho"
+},
+{
+"t": 670.3,
+"sonido": "2998.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 671.47,
+"sonido": "2376.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "tacha en la cotización 3D"
+},
+{
+"t": 675.1,
+"sonido": "2608.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 675.15,
+"sonido": "1072.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 679.7,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 684.65,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 684.95,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 685.12,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de sobre"
+},
+{
+"t": 687.86,
+"sonido": "yc_whoosh_warm.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → veladora"
+},
+{
+"t": 687.91,
+"sonido": "2590.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladora"
+},
+{
+"t": 691.42,
+"sonido": "freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → veladora"
+},
+{
+"t": 694.98,
+"sonido": "sfx_trans3.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → sobre"
+},
+{
+"t": 695.38,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de sobre"
+},
+{
+"t": 697.63,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 702.31,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 702.43,
+"sonido": "623.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de cupula"
+},
+{
+"t": 704.48,
+"sonido": "whoosh.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → corte"
+},
+{
+"t": 704.88,
+"sonido": "338.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de corte"
+},
+{
+"t": 706.12,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra refrendo"
+},
+{
+"t": 711.2,
+"sonido": "smooth_airy_whoosh_m_#2-1780923688387.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ventana"
+},
+{
+"t": 711.25,
+"sonido": "1554.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 713.35,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 719.18,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición fade desde el avatar"
+},
+{
+"t": 719.3,
+"sonido": "1554.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 719.48,
+"sonido": "soft_3D_pop-in_with__#3-1780924131285.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra comment"
+},
+{
+"t": 722.56,
+"sonido": "2615.mp3",
+"pool": "whoosh_big",
+"dB": -22,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 722.61,
+"sonido": "1070.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 723.56,
+"sonido": "impactWood_heavy_001.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave EL PLAN VENCE"
+},
+{
+"t": 731.84,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 736.88,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 737.35,
+"sonido": "2998.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 738.18,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra quote"
+},
+{
+"t": 743.2,
+"sonido": "sfx_whoosh_soft.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 743.25,
+"sonido": "1900.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 745.86,
+"sonido": "yc_gavel.mp3",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave ENTONCES NO FIRMO HOY"
+},
+{
+"t": 747.38,
+"sonido": "stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → sillas"
+},
+{
+"t": 747.78,
+"sonido": "3157.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de sillas"
+},
+{
+"t": 750.05,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 754.2,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 754.67,
+"sonido": "179.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de sillas"
+},
+{
+"t": 755.92,
+"sonido": "ksjsbwuil-whoosh3-481204.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 755.97,
+"sonido": "617.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 759.51,
+"sonido": "164.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 763.1,
+"sonido": "167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ventana"
+},
+{
+"t": 763.15,
+"sonido": "369.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 764.97,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición up al avatar"
+},
+{
+"t": 770.49,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 770.61,
+"sonido": "369.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 770.79,
+"sonido": "px_capPop.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra comment"
+},
+{
+"t": 773.42,
+"sonido": "2608.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → oficina"
+},
+{
+"t": 773.47,
+"sonido": "1072.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de oficina"
+},
+{
+"t": 776.28,
+"sonido": "freesound_community-whoosh-blow-flutter-shortwav-14678.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carpeta"
+},
+{
+"t": 776.68,
+"sonido": "bookFlip2.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 779.39,
+"sonido": "bookFlip3.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "la Carpeta se abre"
+},
+{
+"t": 780.05,
+"sonido": "sfx_trans1.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carpeta"
+},
+{
+"t": 780.09,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "hojas"
+},
+{
+"t": 780.13,
+"sonido": "confirmation_004.ogg",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag LA CARPETA DE LA FAMILIA"
+},
+{
+"t": 780.45,
+"sonido": "2380.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 783.75,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 787.25,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 787.54,
+"sonido": "tiny_soft_tickclick__#3-1780923823227.mp3",
+"pool": "tick",
+"dB": -27,
+"por_que": "entra big 37"
+},
+{
+"t": 787.72,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 791.95,
+"sonido": "sfx_trans2.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carpeta"
+},
+{
+"t": 792.35,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 795.39,
+"sonido": "impactWood_heavy_003.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave PÁGINA 25"
+},
+{
+"t": 796.58,
+"sonido": "2627.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carpeta"
+},
+{
+"t": 796.98,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 798.37,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 802.53,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "la Carpeta se cierra"
+},
+{
+"t": 805.1,
+"sonido": "731.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra lower"
+},
+{
+"t": 805.47,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición fade desde el avatar"
+},
+{
+"t": 805.62,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra cap"
+},
+{
+"t": 805.94,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 810.12,
+"sonido": "1462.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 810.52,
+"sonido": "bookFlip2.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 814.64,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 818.56,
+"sonido": "impactWood_heavy_002.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave PAQUETE"
+},
+{
+"t": 818.99,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 819.46,
+"sonido": "179.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de corte"
+},
+{
+"t": 823.26,
+"sonido": "sfx_whoosh_soft.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → corte"
+},
+{
+"t": 823.66,
+"sonido": "338.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de corte"
+},
+{
+"t": 827.46,
+"sonido": "whoosh.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → tag3"
+},
+{
+"t": 827.86,
+"sonido": "cloth1.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "foley de tag3"
+},
+{
+"t": 827.89,
+"sonido": "cloth2.ogg",
+"pool": "cloth",
+"dB": -26,
+"por_que": "gira la etiqueta del ataúd"
+},
+{
+"t": 828.39,
+"sonido": "sfx_paper_tick.mp3",
+"pool": "tick",
+"dB": -27,
+"por_que": "etiqueta se asienta"
+},
+{
+"t": 830.9,
+"sonido": "smooth_airy_whoosh_m_#2-1780923688387.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 830.95,
+"sonido": "628.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 831.47,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 835.66,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 835.78,
+"sonido": "623.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 839.76,
+"sonido": "2637.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 839.81,
+"sonido": "1070.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 840.48,
+"sonido": "bookFlip3.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra ficha"
+},
+{
+"t": 846.53,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 850.78,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 850.9,
+"sonido": "1072.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 855.16,
+"sonido": "1492.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 855.56,
+"sonido": "2380.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 855.64,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra lista"
+},
+{
+"t": 856.41,
+"sonido": "switch_002.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 856.91,
+"sonido": "click_004.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 857.41,
+"sonido": "tick_004.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 857.91,
+"sonido": "click_001.ogg",
+"pool": "tick",
+"dB": -27,
+"por_que": "renglón de la lista"
+},
+{
+"t": 863.58,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 869.1,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 869.57,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 871.42,
+"sonido": "168.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carpeta"
+},
+{
+"t": 871.82,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 874.34,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra dicho"
+},
+{
+"t": 880.82,
+"sonido": "yc_whoosh_warm.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 881.22,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 882.08,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 886.52,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 886.99,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 887.09,
+"sonido": "2367.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "pluma que tacha"
+},
+{
+"t": 898.07,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición up al avatar"
+},
+{
+"t": 901.68,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 902.15,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 906.53,
+"sonido": "786.mp3",
+"pool": "swell",
+"dB": -24,
+"por_que": "subida antes de la revelación LA MITAD"
+},
+{
+"t": 907.97,
+"sonido": "deep_cinematic_clean_#2-1780923641873.mp3",
+"pool": "boom",
+"dB": -18,
+"por_que": "REVELACIÓN DE PRECIO LA MITAD"
+},
+{
+"t": 907.98,
+"sonido": "impactWood_heavy_000.ogg",
+"pool": "stamp",
+"dB": -19,
+"por_que": "sello LA MITAD"
+},
+{
+"t": 909.64,
+"sonido": "3161.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → corte"
+},
+{
+"t": 910.04,
+"sonido": "3157.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de corte"
+},
+{
+"t": 914.3,
+"sonido": "cam_travel.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ventana"
+},
+{
+"t": 914.35,
+"sonido": "1554.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 915.99,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 920.5,
+"sonido": "678.mp3",
+"pool": "swell",
+"dB": -24,
+"por_que": "subida antes de US$11.000"
+},
+{
+"t": 921.43,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom desde el avatar"
+},
+{
+"t": 921.55,
+"sonido": "369.mp3",
+"pool": "calle",
+"dB": -28,
+"por_que": "ambiente de ventana"
+},
+{
+"t": 921.72,
+"sonido": "2357.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra tag US$11.000"
+},
+{
+"t": 921.73,
+"sonido": "2915.mp3",
+"pool": "boom",
+"dB": -18,
+"por_que": "REVELACIÓN DE PRECIO US$11.000"
+},
+{
+"t": 925.16,
+"sonido": "1471.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 925.56,
+"sonido": "2380.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 927.9,
+"sonido": "2632.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carpeta"
+},
+{
+"t": 928.3,
+"sonido": "bookFlip2.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 930.83,
+"sonido": "bookFlip3.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "la Carpeta se abre"
+},
+{
+"t": 931.53,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "hojas"
+},
+{
+"t": 931.8,
+"sonido": "stereogenicstudio-swish-swoosh-woosh-sfx-36-357175.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → carpeta"
+},
+{
+"t": 932.2,
+"sonido": "bookOpen.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de carpeta"
+},
+{
+"t": 933.19,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 937.15,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición down desde el avatar"
+},
+{
+"t": 937.27,
+"sonido": "2472.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de flores"
+},
+{
+"t": 937.52,
+"sonido": "impactPlank_medium_003.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "balanza"
+},
+{
+"t": 938.35,
+"sonido": "1097.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "la Carpeta se cierra"
+},
+{
+"t": 938.5,
+"sonido": "ksjsbwuil-whoosh3-481204.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → capilla"
+},
+{
+"t": 938.55,
+"sonido": "618.mp3",
+"pool": "campana",
+"dB": -28,
+"por_que": "ambiente de capilla"
+},
+{
+"t": 938.62,
+"sonido": "impactMetal_light_003.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "plato de la balanza cae"
+},
+{
+"t": 941.8,
+"sonido": "impactWood_heavy_001.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave UN FUNERAL SUYO"
+},
+{
+"t": 944.48,
+"sonido": "2638.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → flores"
+},
+{
+"t": 944.53,
+"sonido": "28.mp3",
+"pool": "pajaros",
+"dB": -28,
+"por_que": "ambiente de flores"
+},
+{
+"t": 946.42,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición zoom al avatar"
+},
+{
+"t": 951.51,
+"sonido": "1476.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 951.63,
+"sonido": "1330.mp3",
+"pool": "vela",
+"dB": -27,
+"por_que": "ambiente de veladoras"
+},
+{
+"t": 954.18,
+"sonido": "sfx_trans3.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → boveda_lujo"
+},
+{
+"t": 954.58,
+"sonido": "impactMetal_light_004.ogg",
+"pool": "metal",
+"dB": -25,
+"por_que": "foley de boveda_lujo"
+},
+{
+"t": 956.28,
+"sonido": "1167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → fotos"
+},
+{
+"t": 956.68,
+"sonido": "yc_page_flip.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de fotos"
+},
+{
+"t": 957.43,
+"sonido": "2384.mp3",
+"pool": "tear",
+"dB": -23,
+"por_que": "se abre el sobre amarillo 3D"
+},
+{
+"t": 957.98,
+"sonido": "1105.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra quote"
+},
+{
+"t": 960.54,
+"sonido": "1464.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → sobre"
+},
+{
+"t": 960.94,
+"sonido": "1104.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de sobre"
+},
+{
+"t": 962.76,
+"sonido": "sfx_trans4.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → cotizacion"
+},
+{
+"t": 963.16,
+"sonido": "bookFlip1.ogg",
+"pool": "paper",
+"dB": -24,
+"por_que": "foley de cotizacion"
+},
+{
+"t": 964.61,
+"sonido": "1488.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición portal al avatar"
+},
+{
+"t": 969.11,
+"sonido": "1461.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeR desde el avatar"
+},
+{
+"t": 969.23,
+"sonido": "1070.mp3",
+"pool": "reloj",
+"dB": -28,
+"por_que": "ambiente de escritorio"
+},
+{
+"t": 972.72,
+"sonido": "1484.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → escritorio"
+},
+{
+"t": 976.26,
+"sonido": "cam_travel.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → pluma"
+},
+{
+"t": 976.36,
+"sonido": "impactWood_heavy_004.ogg",
+"pool": "stamp",
+"dB": -22,
+"por_que": "sello suave PERO PARA TACHAR"
+},
+{
+"t": 976.66,
+"sonido": "2370.mp3",
+"pool": "pluma",
+"dB": -23,
+"por_que": "foley de pluma"
+},
+{
+"t": 979.12,
+"sonido": "167.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → exhibicion"
+},
+{
+"t": 979.52,
+"sonido": "3157.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de exhibicion"
+},
+{
+"t": 980.56,
+"sonido": "2792.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición swipeL al avatar"
+},
+{
+"t": 986.03,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición fade desde el avatar"
+},
+{
+"t": 986.5,
+"sonido": "338.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de exhibicion"
+},
+{
+"t": 990.47,
+"sonido": "3161.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → exhibicion"
+},
+{
+"t": 990.87,
+"sonido": "179.mp3",
+"pool": "piso",
+"dB": -26,
+"por_que": "foley de exhibicion"
+},
+{
+"t": 994.84,
+"sonido": "164.mp3",
+"pool": "whoosh",
+"dB": -25,
+"por_que": "vuelo de cámara → ataud2"
+},
+{
+"t": 995.24,
+"sonido": "impactPlank_medium_001.ogg",
+"pool": "wood_hit",
+"dB": -24,
+"por_que": "foley de ataud2"
+},
+{
+"t": 997.38,
+"sonido": "2048.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris al avatar"
+},
+{
+"t": 1002.72,
+"sonido": "1530.mp3",
+"pool": "paper",
+"dB": -24,
+"por_que": "entra ficha"
+},
+{
+"t": 1003.03,
+"sonido": "1506.mp3",
+"pool": "swish",
+"dB": -26,
+"por_que": "transición iris desde el avatar"
+},
+{
+"t": 1003.15,
+"sonido": "1275.mp3",
+"pool": "viento",
+"dB": -28,
+"por_que": "ambiente de nicho"
+},
+{
+"t": 1007.46,
+"sonido": "px_capPop_alt1.mp3",
+"pool": "pop",
+"dB": -26,
+"por_que": "entra comment"
+},
+{
+"t": 1010.39,
+"sonido": "1170.mp3",
+"pool": "swell",
+"dB": -26,
+"por_que": "swell suave final en la lápida"
+},
+{
+"t": 1010.64,
+"sonido": "deep-cinematic-zoom-3.mp3",
+"pool": "whoosh_big",
+"dB": -22,
+"por_que": "vuelo de cámara → lapida"
+}
+]
