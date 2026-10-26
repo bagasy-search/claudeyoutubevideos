@@ -200,7 +200,9 @@ export type Accesorio =
   | { t: "delantal"; color: string }
   | { t: "chaleco"; color: string }
   | { t: "parche"; color: string; lado?: 1 | -1 }
-  | { t: "orejas"; color: string };
+  | { t: "orejas"; color: string }
+  | { t: "gorroLana"; color: string; vuelta?: string; pompon?: boolean }
+  | { t: "bigote"; color: string };
 
 export type Estilo = "palo" | "frijol" | "demonio" | "zombi";
 export type Look = {
@@ -460,6 +462,7 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
         <Ojo s={-1} /><Ojo s={1} />
         {e.rubor > 0.01 && [-1, 1].map((s) => <ellipse key={s} cx={s * 22 + cx} cy={12} rx={8} ry={4} fill="#ff7a7a" opacity={0.35 * e.rubor} />)}
         {barba && <path d={`M${-Rk},${4} Q${-Rk * 0.6},${Rk + 16} 0,${Rk + 12} Q${Rk * 0.6},${Rk + 16} ${Rk},${4} Q${Rk * 0.3},${Rk * 0.55} 0,${Rk * 0.5} Q${-Rk * 0.3},${Rk * 0.55} ${-Rk},${4} Z`} fill={barba.color} />}
+        {tiene("bigote") && <path d={`M${cx * 0.9 - 17},${by - 2} Q${cx * 0.9 - 9},${by - 12} ${cx * 0.9},${by - 7} Q${cx * 0.9 + 9},${by - 12} ${cx * 0.9 + 17},${by - 2} Q${cx * 0.9 + 8},${by - 5} ${cx * 0.9},${by - 3} Q${cx * 0.9 - 8},${by - 5} ${cx * 0.9 - 17},${by - 2} Z`} fill={tiene("bigote").color} />}
         <g transform={`translate(${cx * 0.9},${by})`}>
           {demonio ? (
             <path d={`M${-14},-2 Q0,${12 + bo} 14,-2`} stroke={neon} strokeWidth={4.5} fill="none" strokeLinecap="round" />
@@ -500,6 +503,14 @@ export const Personaje: React.FC<PersonajeProps> = (props) => {
         <g>
           <ellipse cx={0} cy={-R * 0.55} rx={R + 30} ry={9} fill={sombrero.color} />
           <path d={`M${-R * 0.75},${-R * 0.55} L${-R * 0.6},${-R - 22} Q0,${-R - 30} ${R * 0.6},${-R - 22} L${R * 0.75},${-R * 0.55} Z`} fill={oscurecer(sombrero.color, 0.85)} />
+        </g>
+      )}
+      {tiene("gorroLana") && (
+        <g>
+          <path d={`M${-R - 3},${-R * 0.3} Q${-R * 0.95},${-R - 16} 0,${-R - 15} Q${R * 0.95},${-R - 16} ${R + 3},${-R * 0.3} Z`} fill={tiene("gorroLana").color} />
+          {[-0.5, -0.17, 0.17, 0.5].map((q) => <path key={q} d={`M${q * R},${-R * 0.45} Q${q * R * 1.05},${-R * 0.9} ${q * R * 0.9},${-R - 10}`} stroke={oscurecer(tiene("gorroLana").color, 0.82)} strokeWidth={2.4} fill="none" />)}
+          <rect x={-R - 6} y={-R * 0.48} width={2 * R + 12} height={R * 0.32} rx={R * 0.14} fill={tiene("gorroLana").vuelta ?? "#efe3c8"} />
+          {tiene("gorroLana").pompon && <circle cx={0} cy={-R - 16} r={9} fill={tiene("gorroLana").vuelta ?? "#efe3c8"} />}
         </g>
       )}
       {tiene("gorroPapel") && (
