@@ -317,7 +317,7 @@ const Cta: React.FC<{ t: number }> = ({ t }) => {
       {t > M.cual - 0.3 && <Tx x={1300} y={620} s={64} col={C.ambar} op={pr(t, M.cual - 0.3, M.cual + 0.1)}>WHICH TRAP GETS YOU FIRST?</Tx>}
       {t > M.cual && TRAMPAS.map((k, j) => {
         const e = ent(t, M.cual + 0.2 + j * 0.22, 0, { damping: 9, stiffness: 220 });
-        return <g key={k} transform={`translate(${880 + j * 140} 780) scale(${e})`}><Ico k={k} x={0} y={0} s={0.62} /><Tx x={0} y={120} s={44}>{`${j + 1}`}</Tx></g>;
+        return <g key={k} transform={`translate(${850 + j * 150} 780) scale(${e})`}><Ico k={k} x={0} y={0} s={0.62} /><Tx x={0} y={120} s={44}>{`${j + 1}`}</Tx></g>;
       })}
     </g>
   );
