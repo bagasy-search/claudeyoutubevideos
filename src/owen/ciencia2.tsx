@@ -77,7 +77,7 @@ export const Adenosina: React.FC<{ llenaHasta?: number; vaciaDesde?: number; vac
   const N = 70;
   const vis = Math.round(N * nivel);
   return (
-    <Pizarra titulo="ADENOSINE · THE TIRED METER" profe={false}>
+    <Pizarra titulo="ADENOSINE · THE TIRED METER" profe={owenDesde > 1e8}>
       {owenDesde < 1e8 && <Actor look={OWEN} escala={2.1} seed={1} ruta={[{ f: 0, x: 1690, y: 1170 }]} dir={[{ f: 0, v: -1 }]}
         poses={Array.from({ length: 12 }).map((_, i) => ({ f: i * 50, v: i % 2 ? { hD: 150, cD: 150, cabeza: -12, tronco: -4 } : { hD: 25, cD: 25, hI: 25, cI: 25, cabeza: 4 } }))}
         caras={[{ f: 0, v: "cansado" }, { f: owenDesde, v: "zombi" }]} miradas={[{ f: 0, v: { x: -1, y: -0.3 } }]} />}
