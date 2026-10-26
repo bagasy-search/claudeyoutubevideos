@@ -34,7 +34,7 @@ export const TelGrande: React.FC<{ modo: "hora" | "screentime" | "feed" | "apaga
   const m = minHasta !== undefined ? Math.round(interpolate(f, [desde + 10, desde + 50], [min, minHasta], cl)) : min;
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", left: x - (W / 2) * s, top: y - (H / 2) * s, width: W, height: H, transform: `scale(${s * (0.85 + 0.15 * e)}) rotate(${inclina}deg)`, transformOrigin: "0 0", opacity: e }}>
+      <div style={{ position: "absolute", left: x - (W / 2) * s, top: y - (H / 2) * s, width: W, height: H, transform: `scale(${s * (0.85 + 0.15 * e)}) rotate(${inclina}deg)`, transformOrigin: "0 0", opacity: desde <= 2 ? 1 : Math.min(1, e * 1.6) }}>
         {/* halo de la pantalla */}
         {modo !== "apagado" && <div style={{ position: "absolute", left: -260, top: -260, width: W + 520, height: H + 520, borderRadius: "50%", background: `radial-gradient(closest-side, ${ACENTO}55, transparent)` }} />}
         <div style={{ position: "absolute", inset: 0, borderRadius: 70, background: "#15171c", boxShadow: "0 30px 80px rgba(0,0,0,0.6)" }} />

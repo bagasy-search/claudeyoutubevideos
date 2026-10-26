@@ -87,7 +87,11 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   // velocidad REAL en pantalla = cuánto se corre el punto del mundo que está en el centro (p.x = (X-960)*zoom: un zoom lejos
   // del origen cambia p.x sin que nada se mueva en pantalla, y antes eso desenfocaba los empujes en x grandes)
   const vx = Math.abs(p.x / p.zoom - q.x / q.zoom) * p.zoom, vy = Math.abs(p.y / p.zoom - q.y / q.zoom) * p.zoom;
-  const sx = Math.min(60, vx * 0.5), sy = Math.min(60, vy * 0.5);
+  // un salto de >90 px en 1 cuadro es un CORTE (claves pegadas), no un paneo: sin desenfoque (antes dejaba un cuadro embarrado de 60 px).
+  // tope 14 px: más que eso se lee como cuadro roto, no como velocidad
+  const corte = vx > 90 || vy > 90;
+  // rampa desde 16 px/cuadro (un paneo moderado no se desenfoca) y tope 10 px
+  const sx = corte ? 0 : Math.min(10, Math.max(0, vx * 0.5 - 8)), sy = corte ? 0 : Math.min(10, Math.max(0, vy * 0.5 - 8));
   const mb = sx > 1.5 || sy > 1.5;
   const id = `mb${seed}`;
   return (

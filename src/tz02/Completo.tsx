@@ -18,7 +18,7 @@ const CORTES: [number, React.FC, Trans?][] = [
   [198.07, B.Q43Ruega, { tipo: "luz", d: 14 }], [206.33, B.Q44Ordena], [217.0, B.Q45Cuatro], [219.0, B.Q46Viejo], [225.49, B.Q47QueLePasa], [228.01, B.Q48Viejo],
   [232.55, B.Q49ATodos], [235.71, B.Q50ATi],
   [238.65, B.Q51Camina, { tipo: "luz", d: 12 }], [245.63, B.Q52Parada], [252.61, B.Q53Manos], [254.99, B.Q54NuncaLoVio],
-  [259.61, B.Q55Enfermo, { tipo: "luz", d: 12 }], [264.19, B.Q56Laptop, { tipo: "luz", d: 12 }], [271.93, B.Q57Diane], [280.99, B.Q58Diecinueve],
+  [259.61, B.Q55Enfermo, { tipo: "luz", d: 12 }], [264.19, B.Q56Laptop, { tipo: "fundido", d: 12 }], [271.93, B.Q57Diane], [280.99, B.Q58Diecinueve],
   [283.43, B.Q59Funeral, { tipo: "luz", d: 12 }], [289.73, B.Q60Bici, { tipo: "luz", d: 12 }], [309.2, B.Q61ComoLaSuya], [310.69, B.Q62Parado],
   [313.2, B.Q63Monje, { tipo: "luz", d: 14 }], [325.01, B.Q64Quien], [326.63, B.Q65Dejo], [331.13, B.Q66Jaula, { tipo: "fundido", d: 12 }], [339.88, B.Q67Sale],
   [343.78, B.Q68Dia3, { tipo: "fundido", d: 12 }], [346.38, B.Q69Toalla], [352.16, B.Q70Tiende], [357.12, B.Q71Ochenta], [358.96, B.Q72NoAgarra], [360.32, B.Q73Vi],

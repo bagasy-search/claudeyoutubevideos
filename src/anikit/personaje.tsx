@@ -99,7 +99,8 @@ export const articulaciones = (p: Pose, asiento?: number, H: Huesos = HUESOS, se
   const cad = { x: 0, y: caderaY };
   const t = dirV(180 + p.tronco, H.torso); // torso hacia arriba
   const hombro = { x: cad.x + t.x, y: cad.y + t.y };
-  const c = dirV(180 + p.tronco + p.cabeza, H.cuello + H.cabezaR);
+  // la cabeza gira sobre el hombro: con cabezas grandes un ángulo >16° la despega del cuerpo (viejo doblado de tz02) → tope ±16
+  const c = dirV(180 + p.tronco + Math.max(-16, Math.min(16, p.cabeza)), H.cuello + H.cabezaR);
   const cabeza = { x: hombro.x + c.x, y: hombro.y + c.y };
   const brazo = (h: number, k: number, dx: number) => {
     const o = { x: hombro.x + dx, y: hombro.y + 6 };
