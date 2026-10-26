@@ -145,7 +145,7 @@ const DecoCuarto: React.FC = () => {
         </g>
       ))}
       {/* póster: sol ámbar sobre un horizonte (el único color fuerte del cuarto) */}
-      <g transform={`translate(${X - 380},${P - 560}) rotate(-2)`}>
+      <g transform={`translate(${X - 400},${P - 440}) rotate(-2) scale(0.85)`}>
         <rect x={0} y={0} width={230} height={320} fill="#1b1d24" stroke="#3a3f48" strokeWidth={6} />
         <circle cx={115} cy={140} r={62} fill={ACENTO} />
         <rect x={14} y={170} width={202} height={136} fill="#14161b" />
