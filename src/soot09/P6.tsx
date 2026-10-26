@@ -12,12 +12,12 @@ import { Lupa, Tacha } from "./kitj2";
 // tirando todo y cortando el palo mayor, Somers 3 días al timón, el arrecife de Bermudas; el resto llega a Jamestown
 // sin líderes, con ratas; Smith y la pólvora; se va y nunca vuelve.
 export const CAM6: K[] = [
-  [550.7, 24600, 600, 0.36], [551.7, 12600, 640, 0.85], [552.8, 12600, 640, 0.85], [553.7, 3300, 640, 1.3], [556.5, 3300, 640, 1.36],
+  [550.7, 24400, 690, 0.8], [551.0, 24400, 690, 0.8], [551.12, 12600, 640, 0.85], [552.9, 12600, 640, 0.88], [553.02, 3300, 640, 1.3], [556.5, 3300, 640, 1.36],
   [557.6, 7100, 600, 0.4], [561.6, 7100, 600, 0.42], [562.4, 5900, 640, 0.95], [568.8, 6050, 640, 0.95], [569.6, 6500, 600, 0.6],
-  [571.4, 10700, 600, 0.45], [574.9, 11550, 640, 0.75], [578.0, 11750, 660, 0.8], [583.1, 11850, 680, 0.95], [588.5, 11950, 660, 0.9],
+  [571.4, 9900, 650, 0.8], [572.2, 11150, 650, 0.82], [574.9, 11550, 640, 0.75], [578.0, 11750, 660, 0.8], [583.1, 11850, 680, 0.95], [588.5, 11950, 660, 0.9],
   [589.4, 11840, 700, 1.6], [592.3, 12020, 700, 1.55], [593.2, 12500, 640, 0.6], [597.2, 12900, 650, 0.62], [598.6, 13350, 680, 0.75],
   [607.6, 13400, 640, 0.55], [608.4, 21800, 620, 0.5], [611.2, 22300, 620, 0.55], [612.3, 23620, 700, 1.0], [621.4, 23720, 700, 1.02],
-  [622.4, 24580, 720, 1.15], [627.9, 24600, 720, 1.2], [628.7, 22250, 760, 1.25], [633.6, 22300, 800, 1.6], [636.0, 22350, 780, 1.7], [637.8, 22400, 790, 1.55], [638.9, 21700, 640, 0.6],
+  [622.4, 24580, 720, 1.15], [627.9, 24600, 720, 1.2], [628.7, 22250, 790, 1.55], [633.6, 22300, 800, 1.65], [636.0, 22350, 780, 1.7], [637.8, 22400, 790, 1.55], [638.9, 21700, 640, 0.6],
   [643.0, 20300, 620, 0.5], [643.8, 24350, 620, 0.6], [649.6, 24350, 620, 0.62],
 ];
 const CIELO6: [number, string][] = [
@@ -36,7 +36,7 @@ const otroX = (i: number, t: number) => {
 
 // la bodega de la Sea Venture: todos achican, caballeros incluidos
 const Achique: React.FC<{ t: number }> = ({ t }) => {
-  const agua = interpolate(t, [575.7, 582.6], [120, 420], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const agua = interpolate(t, [575.7, 582.6], [90, 230], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <div style={{ position: "absolute", inset: 0, transform: `rotate(${Math.sin(t * 2.2) * 9}deg)` }}>
       <div style={{ position: "absolute", inset: 0, background: "#3a2414" }} />
@@ -46,6 +46,8 @@ const Achique: React.FC<{ t: number }> = ({ t }) => {
             bD={60 + Math.abs(Math.sin(t * 5 + i)) * 90} cD={40} manoD={<g><path d="M -20 -10 L 20 -10 L 16 26 L -16 26 Z" fill="#8a6a4a" stroke="#4e3622" strokeWidth={4} /></g>} />
         </div>
       ))}
+      {/* el agua que tiran por la borda con los baldes */}
+      {[150, 290, 430, 570, 690].map((x, i) => { const k = ((t * 1.6 + i * 0.37) % 1); return <div key={`a${x}`} style={{ position: "absolute", left: x + (i > 2 ? -1 : 1) * k * 120, top: 360 - Math.sin(k * Math.PI) * 220, width: 46, height: 30, borderRadius: "50%", background: "#8fd0ff", border: "4px solid #fff", opacity: 1 - k * 0.6 }} />; })}
       <div style={{ position: "absolute", left: 0, bottom: 0, width: 800, height: agua, background: "rgba(42,122,200,.75)", borderTop: "6px solid #8fd0ff" }} />
       {Array.from({ length: 10 }, (_, i) => { const k = ((t * 1.3 + i / 10) % 1); return <div key={i} style={{ position: "absolute", left: 60 + i * 70, top: 40 + k * 300, width: 10, height: 26, borderRadius: 6, background: "#8fd0ff", opacity: 1 - k }} />; })}
     </div>
@@ -59,7 +61,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
   const tilt = prog(t, 596.9, 597.5) * 14;
   const tormenta = t > 570.6 && t < 593.2;
   const smithBote = 22250;
-  const salto = prog(t, 636.1, 637.0);
+  const salto = prog(t, 636.1, 637.7);
   return (
     <AbsoluteFill>
       <Mundo t={t} cam={CAM6} cielo={CIELO6}>
@@ -139,13 +141,13 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
                 <Persona x={smithBote + salto * 300} y={AGUA - 30 - Math.sin(salto * Math.PI) * 200 + salto * 120} h={220} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" expr="miedo" bD={170} bI={170} cD={20} cI={20} inclina={salto * 40} />
                 {/* el cuerpo en llamas mientras salta */}
                 <svg style={{ position: "absolute", left: smithBote + salto * 300 - 90, top: AGUA - 250 - Math.sin(salto * Math.PI) * 200 + salto * 120, overflow: "visible" }} width={180} height={220}>
-                  {Array.from({ length: 6 }, (_, i) => { const w = Math.sin(t * (11 + i) + i * 2) * 10; const x0 = 20 + i * 28; return <path key={i} d={`M ${x0} 200 Q ${x0 - 14 + w} ${120 - (i % 3) * 20} ${x0 + 10 + w} ${40 + (i % 2) * 30} Q ${x0 + 34 - w} 130 ${x0 + 26} 200 Z`} fill={["#ff5a1a", "#ffb23a", "#fff0a0"][i % 3]} opacity={0.9 * (1 - prog(t, 636.8, 637.0))} />; })}
+                  {Array.from({ length: 6 }, (_, i) => { const w = Math.sin(t * (11 + i) + i * 2) * 10; const x0 = 20 + i * 28; return <path key={i} d={`M ${x0} 200 Q ${x0 - 14 + w} ${120 - (i % 3) * 20} ${x0 + 10 + w} ${40 + (i % 2) * 30} Q ${x0 + 34 - w} 130 ${x0 + 26} 200 Z`} fill={["#ff5a1a", "#ffb23a", "#fff0a0"][i % 3]} opacity={0.9 * (1 - prog(t, 637.4, 637.6))} />; })}
                 </svg>
               </>
             ) : null}
-            {t > 631.8 && t < 636.1 && <svg style={{ position: "absolute", left: smithBote - 40, top: AGUA - 110, overflow: "visible" }} width={80} height={70}><path d="M 6 20 Q 40 -6 74 20 L 70 64 L 10 64 Z" fill="#6a5a3a" stroke="#3a2a12" strokeWidth={5} /><text x={40} y={52} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={18} fill="#fff">POWDER</text></svg>}
+            {t > 628.6 && t < 636.1 && <svg style={{ position: "absolute", left: smithBote - 70, top: AGUA - 85, overflow: "visible", transform: "scale(1.5)" }} width={80} height={70}>{t > 633.6 && <g>{[0, 1, 2, 3].map((k) => <circle key={k} cx={40 + Math.sin(t * 30 + k) * 14} cy={-6 - k * 8} r={6 - k} fill={k % 2 ? "#ffd34a" : "#ff6a2a"} />)}</g>}<path d="M 6 20 Q 40 -6 74 20 L 70 64 L 10 64 Z" fill="#6a5a3a" stroke="#3a2a12" strokeWidth={5} /><text x={40} y={52} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={18} fill="#fff">POWDER</text></svg>}
             <Explosion t={t} t0={634.95} x={smithBote} y={AGUA - 80} s={1.0} />
-            {t > 636.9 && t < 638.8 && <svg style={{ position: "absolute", left: smithBote + 220, top: AGUA - 160, overflow: "visible" }} width={160} height={160}>{Array.from({ length: 9 }, (_, i) => { const k = prog(t, 637.0, 637.9); const a = -Math.PI / 2 + (i - 4) * 0.3; return <ellipse key={i} cx={80 + Math.cos(a) * 200 * k} cy={150 + Math.sin(a) * 260 * k + k * k * 140} rx={18} ry={28} fill="#8fd0ff" stroke="#fff" strokeWidth={4} opacity={1 - k} />; })}</svg>}
+            {t > 637.5 && t < 638.8 && <svg style={{ position: "absolute", left: smithBote + 220, top: AGUA - 160, overflow: "visible" }} width={160} height={160}>{Array.from({ length: 9 }, (_, i) => { const k = prog(t, 637.55, 638.5); const a = -Math.PI / 2 + (i - 4) * 0.3; return <ellipse key={i} cx={80 + Math.cos(a) * 200 * k} cy={150 + Math.sin(a) * 260 * k + k * k * 140} rx={18} ry={28} fill="#8fd0ff" stroke="#fff" strokeWidth={4} opacity={1 - k} />; })}</svg>}
           </En>
         )}
         {/* Smith vuelve a Inglaterra: el barco se va río abajo */}
@@ -178,7 +180,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       )}
       <Chip t={t} t0={564.41} t1={569.6} text="THE NEW LEADERS" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />
       <Chip t={t} t0={568.29} t1={569.6} text="ALL ON THE FLAGSHIP" color={C.rojo} x={960} y={930} centro size={54} />
-      <Chip t={t} t0={570.95} t1={573.9} text="JULY 1609" color={C.naranja} x={960} y={140} centro size={60} />
+      <Chip t={t} t0={570.7} t1={574.6} text="JULY 1609" color={C.naranja} x={960} y={140} centro size={60} />
       {t > 574.7 && t < 575.9 && <Grande t={t} t0={574.95} text="HURRICANE" y={240} size={150} color="#fff" />}
       {/* la lupa: todos achican */}
       {t > 575.6 && t < 583.2 && (
@@ -201,7 +203,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ fontSize: 88, color: C.noche, lineHeight: 1 }}>{Math.min(3, Math.max(1, Math.floor(interpolate(t, [590.6, 592.2], [1, 3.99]))))}<span style={{ fontSize: 36 }}> DAYS</span></div>
         </div>
       )}
-      <Chip t={t} t0={594.37} t1={596.8} text="LAND!" color={C.lima} tinta={C.noche} x={960} y={140} centro size={60} />
+      <Chip t={t} t0={594.37} t1={597.5} text="LAND!" color={C.lima} tinta={C.noche} x={960} y={140} centro size={70} />
+      <Chip t={t} t0={597.6} t1={602.5} text="BERMUDA" color={C.teal} tinta={C.noche} x={960} y={930} centro size={70} />
       <Chip t={t} t0={594.85} t1={597.5} text="ON PURPOSE" color={C.rojo} x={960} y={930} centro size={56} />
       {t > 597.5 && t < 598.9 && <Grande t={t} t0={597.75} text="BERMUDA" y={200} size={150} color={C.teal} />}
       {t > 599.0 && t < 601.0 && <Grande t={t} t0={599.85} text="EVERYONE SURVIVES" y={930} size={96} color={C.lima} />}
@@ -222,7 +225,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={622.67} t1={624.5} text="ONE MORE PASSENGER..." color="#6a6a7a" x={960} y={140} centro size={54} />
       {t > 624.5 && t < 626.0 && <Grande t={t} t0={624.65} text="RATS" y={200} size={160} color="#c8c8d8" />}
       {t > 634.9 && t < 635.6 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, background: "#fff2c0", opacity: 0.85 * (1 - prog(t, 634.95, 635.6)) }} />}
-      {t > 636.9 && t < 638.2 && <Grande t={t} t0={636.95} text="SPLASH!" y={260} size={130} color="#8fd0ff" />}
+      {t > 637.5 && t < 638.8 && <Grande t={t} t0={637.55} text="SPLASH!" y={260} size={130} color="#8fd0ff" />}
       <Chip t={t} t0={626.13} t1={628.5} text="INTO THE STOREHOUSE" color={C.tierra} x={960} y={930} centro size={54} />
       <Chip t={t} t0={629.23} t1={631.5} text="SEPTEMBER" color={C.naranja} x={960} y={140} centro size={56} />
       <Chip t={t} t0={632.31} t1={634.9} text="GUNPOWDER ON HIS LAP" color={C.rojo} x={960} y={930} centro size={54} />

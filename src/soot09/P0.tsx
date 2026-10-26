@@ -16,7 +16,7 @@ export const CAM0: K[] = [
   [24.7, 23900, 520, 0.5], [27.6, FX, 520, 0.56], [29.4, 25100, 600, 0.8], [31.9, 25300, 620, 0.86],
   [32.4, 23150, 590, 2.0], [32.95, 23150, 590, 2.05], [34.75, 3000, 560, 0.55], [35.4, 3000, 600, 0.32],
   [40.7, 28200, 640, 0.32], [42.4, 15400, 860, 0.074], [44.0, 15400, 860, 0.077], [45.0, 21100, 780, 1.25],
-  [49.6, 20850, 770, 1.3], [50.15, 20700, 740, 0.9], [51.35, 6250, 570, 0.88], [51.9, 6150, 580, 0.92],
+  [49.6, 20850, 770, 1.3], [50.15, 20700, 740, 0.9], [50.19, 6300, 600, 0.95], [51.9, 6200, 610, 1.0],
 ];
 export const CIELO0: [number, string][] = [[0, "amanecer"], [6.8, "verano"], [10.6, "amanecer"], [27.6, "invierno"], [32.3, "amanecer"], [33.4, "londres"], [35.4, "mar"], [42.2, "primavera"], [50.3, "londres"]];
 
@@ -130,8 +130,10 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
             {Array.from({ length: 16 }, (_, i) => { const y = AGUA + 120 + (i % 5) * 70; const x = 21500 + ((i * 173 + t * (60 + (i % 4) * 30) * (i % 2 ? 1 : -1)) % 1250 + 1250) % 1250; return <Pez key={i} t={t} x={x} y={y} s={0.6 + (i % 3) * 0.2} flip={i % 2 === 0} esturion={i % 4 === 1} seed={i} />; })}
           </>
         )}
+        {/* peces que saltan en el río, al lado de los que pasan hambre */}
+        {t > 20.6 && t < 23.4 && [0, 1, 2, 3].map((i) => { const u = ((t - 20.7 - i * 0.55) / 1.1); if (u < 0 || u > 1) return null; const x = 22560 + i * 130 + u * 160; return <Pez key={`s${i}`} t={t} x={x} y={AGUA + 10 - Math.sin(u * Math.PI) * 230} s={0.9} flip={i % 2 === 1} seed={i + 30} />; })}
         {/* los 7 carteles: aparecen cuando la cámara pasa en el vuelo hacia adelante */}
-        {t > 35.3 && t < 42.6 && POSTES.map(([n, x, txt]) => <En key={n} x={x} w={900}><Poste t={t} t0={tPaso(x)} x={x} y={x > 5600 && x < 22800 ? AGUA + 20 : SUELO + 10} n={n} titulo={txt} s={1.7} /></En>)}
+        {t > 35.3 && t < 37.0 && POSTES.map(([n, x, txt]) => <En key={n} x={x} w={900}><Poste t={t} t0={tPaso(x)} x={x} y={x > 5600 && x < 22800 ? AGUA + 20 : SUELO + 10} n={n} titulo={txt} s={1.7} /></En>)}
         {/* LONDRES 1606: vos sano, en el muelle, al lado del Susan Constant */}
         {t > 49.8 && (
           <>
@@ -184,11 +186,11 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       )}
       <Chip t={t} t0={33.82} t1={35.2} text="SAIL THERE" color={C.teal} tinta={C.noche} x={960} y={880} centro size={64} />
       <Chip t={t} t0={36.82} t1={40.2} text="STEP BY STEP" color={C.violeta} x={960} y={150} centro size={62} />
-      {t > 38.9 && t < 42.6 && (
+      {t > 36.8 && t < 42.6 && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, opacity: 1 - prog(t, 42.2, 42.6) }}>
-          <div style={{ position: "absolute", inset: 0, background: "rgba(27,18,64,.92)", opacity: ent(t, 38.95) }} />
+          <div style={{ position: "absolute", inset: 0, background: "#1b1240", opacity: prog(t, 36.8, 37.1) }} />
           {Array.from({ length: 7 }, (_, i) => {
-            const g = prog(t, 39.2 + i * 0.22, 39.5 + i * 0.22);
+            const g = prog(t, 37.2 + i * 0.45, 37.5 + i * 0.45);
             return (
               <div key={i} style={{ position: "absolute", left: 130 + i * 240, top: 330, width: 210, height: 300, transform: `scaleX(${Math.abs(1 - 2 * g) || 0.02}) rotate(${(i - 3) * 2}deg)`, background: g > 0.5 ? "#f4e2b8" : "#5a3a1a", border: "8px solid #2a1408", borderRadius: 20, textAlign: "center", fontFamily, fontWeight: 700 }}>
                 {g > 0.5 && <><div style={{ fontSize: 44, color: "#7a1a24", marginTop: 26 }}>TRAP</div><div style={{ fontSize: 130, color: C.rojo, lineHeight: 1 }}>{i + 1}</div><div style={{ fontSize: 70, color: C.noche }}>?</div></>}

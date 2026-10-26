@@ -89,8 +89,8 @@ const Siembra: React.FC<{ t: number }> = ({ t }) => {
         <text x={960} y={705} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill={C.noche}>PLANTING SEASON · 1607</text>
         <rect x={xm(0.5)} y={760} width={xm(3.5) - xm(0.5)} height={70} rx={20} fill={C.lima} stroke="#2a5a1a" strokeWidth={6} />
         <rect x={xm(0.5)} y={760} width={(xm(2.5) - xm(0.5)) * gris} height={70} rx={20} fill="#8a8a8a" opacity={0.92} />
-        {gris > 0.95 && <text x={(xm(0.5) + xm(2.5)) / 2} y={808} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#fff">HALF GONE</text>}
-        {mes.map((m, i) => <g key={m}><line x1={xm(i)} y1={850} x2={xm(i)} y2={870} stroke={C.noche} strokeWidth={5} /><text x={xm(i) + W / 12} y={920} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={36} fill={C.noche}>{m}</text></g>)}
+        {gris > 0.95 && <text x={(xm(0.5) + xm(2.5)) / 2} y={808} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={48} fill="#fff">HALF GONE</text>}
+        {mes.map((m, i) => <g key={m}><line x1={xm(i)} y1={850} x2={xm(i)} y2={870} stroke={C.noche} strokeWidth={5} /><text x={xm(i) + W / 12} y={925} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={46} fill={C.noche}>{m}</text></g>)}
         <g transform={`translate(${xm(marca)} 740)`}><path d="M -26 -40 L 26 -40 L 0 0 Z" fill={C.rojo} /><rect x={-4} y={0} width={8} height={110} fill={C.rojo} /></g>
       </svg>
       {t > 204.8 && <div style={{ position: "absolute", left: xm(2.5) - 120, top: 560, transform: `scale(${ent(t, 204.8)})`, fontFamily, fontWeight: 700, fontSize: 46, color: "#fff", background: C.rojo, borderRadius: 14, padding: "4px 18px", whiteSpace: "nowrap" }}>MID-MAY · YOU ARRIVE</div>}
@@ -197,7 +197,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       {t > 171.0 && t < 184.2 && (
         <div style={{ position: "absolute", left: 120, top: 150, transformOrigin: "50% 0", transform: `scale(${1.35 * ent(t, 171.1) * (1 - prog(t, 183.6, 184.2))}) rotate(4deg)`, width: 260, height: 300, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
           <Persona x={130} y={300} h={330} t={t} seed={31} ropa={SMITH} barba="#8a4a1a" gorro="morion" expr="orgullo" />
-          <div style={{ position: "absolute", left: 0, top: 6, width: 260, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 36, color: C.rojo }}>REMEMBER HIM</div>
+          <div style={{ position: "absolute", left: 0, top: 6, width: 260, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 31, color: C.rojo, whiteSpace: "nowrap" }}>REMEMBER HIM</div>
           {t > 172.3 && <svg style={{ position: "absolute", left: 180, top: 70, transform: `scale(${ent(t, 172.64)}) rotate(${(t - 172.6) * 40}deg)` }} width={70} height={70} viewBox="-35 -35 70 70"><path d="M 0 -32 L 9 -10 L 32 -10 L 13 4 L 20 28 L 0 13 L -20 28 L -13 4 L -32 -10 L -9 -10 Z" fill={C.ambar} stroke="#2a1408" strokeWidth={4} /></svg>}
         </div>
       )}
@@ -206,7 +206,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={178.82} t1={180.4} text="TALL FORESTS" color="#1f6a3a" x={960} y={930} centro size={58} />
       <Chip t={t} t0={180.5} t1={181.7} text="STRAWBERRIES" color={C.rojo} x={960} y={930} centro size={58} />
       <Chip t={t} t0={181.9} t1={184.0} text="RIVERS THAT SWALLOW SHIPS" color={C.teal} tinta={C.noche} x={960} y={930} centro size={56} />
-      <Chip t={t} t0={184.98} t1={187.0} text="SEALED ORDERS" color={C.rojo} x={960} y={140} centro size={60} />
+      <Chip t={t} t0={184.98} t1={186.5} text="SEALED ORDERS" color={C.rojo} x={960} y={140} centro size={60} />
       {/* la lista de nombres que sale de la caja */}
       {t > 186.5 && t < 193.8 && (
         <div style={{ position: "absolute", left: 640, top: 150, width: 640, transform: `scale(${ent(t, 186.6) * (1 - prog(t, 193.2, 193.8))}) rotate(-3deg)`, background: "#f4e6c4", border: "8px solid #8a6a3a", borderRadius: 14, padding: "16px 20px" }}>
@@ -214,7 +214,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           {["EDWARD WINGFIELD", "JOHN RATCLIFFE", "GEORGE KENDALL", "+ 3 MORE", "JOHN SMITH"].map((n, i) => {
             const smith = i === 4;
             const on = t > 187.4 + i * 0.3;
-            return <div key={n} style={{ fontFamily, fontWeight: 700, fontSize: smith && t > 190.6 ? 56 : 46, color: smith && t > 190.6 ? "#fff" : C.noche, background: smith && t > 190.6 ? C.rojo : "transparent", borderRadius: 8, padding: "0 8px", marginTop: 4, opacity: on ? 1 : 0, transform: `translateX(${on ? 0 : -30}px) scale(${smith && t > 190.6 ? 1 + 0.08 * Math.sin((t - 190.6) * 10) * (1 - prog(t, 190.6, 191.6)) : 1})` }}>{n}</div>;
+            return <div key={n} style={{ fontFamily, fontWeight: 700, fontSize: smith && t > 190.6 ? 62 : 52, color: smith && t > 190.6 ? "#fff" : C.noche, background: smith && t > 190.6 ? C.rojo : "transparent", borderRadius: 8, padding: "0 8px", marginTop: 4, opacity: on ? 1 : 0, transform: `translateX(${on ? 0 : -30}px) scale(${smith && t > 190.6 ? 1 + 0.08 * Math.sin((t - 190.6) * 10) * (1 - prog(t, 190.6, 191.6)) : 1})` }}>{n}</div>;
           })}
         </div>
       )}

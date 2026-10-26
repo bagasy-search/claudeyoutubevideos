@@ -12,11 +12,11 @@ import { Globo, Icono, Tacha, Almacen, Carreta, Olor, Torta } from "./kitj2";
 // el almacén común, la fila del muelle (caballeros sin oficio) y los tres barcos que zarpan.
 export const CAM1: K[] = [
   [51.9, 6150, 580, 0.92], [52.7, 5300, 560, 0.85], [54.0, 5150, 560, 0.9], [55.6, 4750, 580, 1.0], [57.3, 4450, 580, 0.96],
-  [59.6, 4150, 600, 0.9], [62.6, 3950, 600, 0.95], [63.6, 3300, 560, 0.95], [67.2, 3300, 540, 1.0], [69.1, 2950, 600, 0.95],
+  [59.6, 3950, 640, 1.3], [62.6, 3900, 640, 1.35], [63.6, 3300, 560, 0.95], [67.2, 3300, 540, 1.0], [69.1, 2950, 600, 0.95],
   [70.4, 2760, 610, 2.05], [86.9, 2760, 610, 2.2], [88.7, 2700, 818, 5.6], [89.7, 2700, 818, 5.8], [90.5, 2880, 600, 1.35],
   [92.9, 2850, 600, 1.42], [93.7, 2150, 650, 1.25], [99.5, 2050, 650, 1.3], [101.6, 1700, 610, 0.95], [103.5, 1250, 650, 1.2],
   [104.9, 1250, 650, 1.26], [105.85, 6020, 600, 0.9], [110.6, 6020, 600, 0.93], [112.9, 5890, 560, 1.55], [118.9, 5890, 560, 1.6],
-  [119.7, 6020, 600, 0.9], [127.9, 6060, 600, 0.95], [129.1, 7080, 600, 0.62], [132.8, 7120, 600, 0.65], [138.2, 7700, 600, 0.6],
+  [119.7, 6060, 640, 1.3], [125.8, 6080, 640, 1.32], [126.4, 6060, 600, 0.95], [127.9, 6060, 600, 0.95], [129.1, 7080, 600, 0.62], [132.8, 7120, 600, 0.65], [138.2, 7700, 600, 0.6],
 ];
 const CIELO1: [number, string][] = [[50.3, "londres"], [70.2, "amanecer"], [88.3, "londres"], [128.0, "mar"]];
 
@@ -37,6 +37,9 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill>
       <Mundo t={t} cam={CAM1} cielo={CIELO1}>
         <Base t={t} />
+        {/* "a bordo": colonos con su hatillo subiendo por la planchada */}
+        {t > 51.2 && t < 53.8 && [0, 1, 2].map((i) => { const x = interpolate(t, [51.2, 53.8], [6230 + i * 120, 6560 + i * 120]); return <En key={`b${i}`} x={x} w={200}><Persona x={x} y={SUELO - 30 - Math.max(0, x - 6450) * 0.35} h={300} t={t} seed={150 + i} ropa={COLONO(i + 2)} expr="feliz" camina={1.6} bD={140} cD={60} manoD={<circle cx={0} cy={-30} r={34} fill="#b0905a" stroke="#5a3a1a" strokeWidth={6} />} /></En>; })}
+        {t > 51.2 && t < 53.8 && <svg style={{ position: "absolute", left: 6400, top: SUELO - 40, overflow: "visible" }} width={10} height={10}><path d="M 0 10 L 420 -140" stroke="#7a4a24" strokeWidth={22} strokeLinecap="round" />{[1, 2, 3, 4, 5].map((k) => <line key={k} x1={k * 70} y1={10 - k * 25 - 6} x2={k * 70} y2={10 - k * 25 + 12} stroke="#4e2a12" strokeWidth={6} />)}</svg>}
         {/* el cartel #1 clavado en la calle */}
         {t < 55.3 && <En x={5250} w={500}><Poste t={t} t0={51.66} x={5250} y={SUELO + 10} n={1} titulo="THE AD" s={1.55} /></En>}
         {/* carreta que cruza con su olor */}
@@ -53,7 +56,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
           <>
             <En x={3300} w={400}><div style={{ position: "absolute", left: 3300, top: 230, transform: `translate(-50%,-50%) scale(${ent(t, 64.6)}) rotate(${Math.sin(t * 2) * 2}deg)`, fontFamily, fontWeight: 700, fontSize: 54, color: "#ffe6b0", background: "#5a2a5a", border: "6px solid #2a1430", borderRadius: 10, padding: "6px 18px", whiteSpace: "nowrap" }}>VIRGINIA COMPANY</div></En>
             {[3150, 3450].map((x, i) => <En key={x} x={x} w={250}><Persona x={x} y={SUELO} h={360} t={t} seed={110 + i} ropa={GENT(i + 2)} expr={i ? "enojado" : "orgullo"} habla={i === 0} bD={i === 0 ? 110 : undefined} cD={i === 0 ? 30 : undefined} gorro="copa" gola flip={i === 1} aparece={63.0 + i * 0.2} barba={i ? "#5a3a2a" : undefined} /></En>)}
-            {t > 66.4 && <Pergamino x={3300} y={540} w={360} abre={prog(t, 66.45, 66.9) * 0.55} lineas={5} firma={prog(t, 67.3, 68.2)} titulo="CHARTER" />}
+            {t > 66.4 && <Pergamino x={3300} y={430} w={360} abre={prog(t, 66.45, 66.9) * 0.55} lineas={5} firma={prog(t, 67.3, 68.2)} titulo="CHARTER" />}
             {/* el rey Jacobo entrega la carta */}
             {t > 65.9 && <En x={3640} w={300}><Persona x={3640} y={SUELO} h={440} t={t} seed={119} ropa={{ ...GENT(0), tunica: "#8a1a2e", tunica2: "#5a0f1e" }} capa="#c9a24a" gola barba="#6a4a2a" expr="orgullo" flip bI={150} cI={10} aparece={65.95} manoI={<g transform="rotate(-20)"><rect x={-14} y={-60} width={28} height={110} rx={10} fill="#f6e3b4" stroke="#7a3d14" strokeWidth={5} /></g>} />
               <Corona x={3640} y={SUELO - 462} s={0.48} t={t} t0={66.0} />
@@ -95,7 +98,8 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
               manoD={f.i === 2 && t > 113.6 && t < 119.2 ? <g transform="scale(0.8)"><Pala /></g> : undefined} bD={f.i === 2 && t > 113.6 && t < 119.2 ? 75 : undefined} cD={f.i === 2 && t > 113.6 && t < 119.2 ? 20 : undefined}
               ladea={f.i === 3 && t > 115.4 && t < 119 ? -14 : 0} inclina={f.i === 3 && t > 115.4 && t < 119 ? 6 : 0} />}
             {f.gent && t > 110.88 && <div style={{ position: "absolute", left: f.x - 120, top: SUELO - 470, width: 240, height: 500, background: "radial-gradient(ellipse at 50% 100%, rgba(255,230,140,.55), transparent 70%)", opacity: ent(t, 110.9 + f.i * 0.05), pointerEvents: "none" }} />}
-            {OFICIO[f.i] && <Icono k={OFICIO[f.i][0]} x={f.x} y={SUELO - (f.chico ? 330 : 440)} s={0.42} t={t} t0={OFICIO[f.i][1]} />}
+            {OFICIO[f.i] && <Icono k={OFICIO[f.i][0]} x={f.x} y={SUELO - (f.chico ? 330 : 440)} s={0.55} t={t} t0={OFICIO[f.i][1]} />}
+            {OFICIO[f.i] && t > OFICIO[f.i][1] && t < 126.2 && <div style={{ position: "absolute", left: f.x - 70, top: SUELO - (f.chico ? 270 : 380) + (f.i % 2) * 34, width: 140, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: "#fff", WebkitTextStroke: "7px #1b1240", paintOrder: "stroke fill", whiteSpace: "nowrap", transform: `scale(${ent(t, OFICIO[f.i][1])})` }}>{({ pala: "LABORER", sierra: "CARPENTER", yunque: "SMITH", navaja: "BARBER", casco: "SOLDIER", nino: "BOY" } as Record<string, string>)[OFICIO[f.i][0]]}</div>}
           </En>
         ))}
         {enFila && t > 112.9 && t < 119.3 && <Globo t={t} t0={115.48} t1={118.9} x={6080} y={SUELO - 400} text="MANUAL LABOR? EW." size={54} cola="der" />}
@@ -117,7 +121,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={63.04} t1={66.1} text="INVESTORS" color={C.violeta} x={960} y={930} centro size={58} />
       <Chip t={t} t0={66.44} t1={69.0} text="ROYAL CHARTER · KING JAMES" color={C.oro} tinta={C.noche} x={960} y={930} centro size={56} />
       <Chip t={t} t0={68.72} t1={70.2} text="LOOKING FOR MEN" color={C.rojo} x={960} y={140} centro size={60} />
-      {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" y={930} size={110} color={C.ambar} />}
+      {t > 70.1 && t < 71.8 && <Grande t={t} t0={70.56} text="IRRESISTIBLE" x={1380} y={180} size={110} color={C.ambar} />}
       {t > 74.0 && t < 77.9 && <div style={{ position: "absolute", left: 0, top: 0 }}><Particulas t={t} tipo="destellos" n={26} seed={4} /></div>}
       <Chip t={t} t0={76.68} t1={77.9} text="MEXICO" color={C.teal} tinta={C.noche} x={250} y={880} size={46} />
       <Chip t={t} t0={77.3} t1={77.9} text="PERU" color={C.teal} tinta={C.noche} x={1450} y={880} size={46} />
@@ -135,15 +139,15 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
           {t > 95.0 + i * 0.5 && <svg style={{ position: "absolute", inset: 0 }} width={116} height={128}><path d="M 14 20 L 104 112 M 104 20 L 14 112" stroke={C.rojo} strokeWidth={12} strokeLinecap="round" opacity={0.85} /></svg>}
         </div>;
       })}
-      <Chip t={t} t0={95.32} t1={96.8} text="GROW" color={C.lima} tinta={C.noche} x={1060} y={540} centro size={58} />
-      <Chip t={t} t0={95.96} t1={97.4} text="CATCH" color={C.teal} tinta={C.noche} x={1060} y={630} centro size={58} />
-      <Chip t={t} t0={96.36} t1={98.0} text="FIND" color={C.ambar} tinta={C.noche} x={1060} y={720} centro size={58} />
+      <Chip t={t} t0={95.32} t1={98.6} text="GROW" color={C.lima} tinta={C.noche} x={1060} y={540} centro size={58} />
+      <Chip t={t} t0={95.96} t1={98.6} text="CATCH" color={C.teal} tinta={C.noche} x={1060} y={630} centro size={58} />
+      <Chip t={t} t0={96.36} t1={98.6} text="FIND" color={C.ambar} tinta={C.noche} x={1060} y={720} centro size={58} />
       <Chip t={t} t0={99.82} t1={101.4} text="YOUR FOOD" color={C.naranja} x={960} y={930} centro size={56} />
       <Chip t={t} t0={101.64} t1={103.3} text="YOUR PROFIT → LONDON" color={C.violeta} x={960} y={140} centro size={56} />
       <Chip t={t} t0={103.36} t1={105.2} text="NEVER SET FOOT IN A SWAMP" color={C.rojo} x={960} y={930} centro size={54} />
       {t > 106.8 && t < 112.6 && <Tablero t={t} valor={interpolate(t, [107.4, 108.6], [0, 105], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} titulo="ON BOARD" x={1680} y={150} />}
       <Chip t={t} t0={108.54} t1={110.6} text="MEN AND BOYS" color={C.teal} tinta={C.noche} x={1680} y={290} centro size={42} />
-      <Torta t={t} t0={110.88} x={330} y={300} frac={1 / 3} />
+      {t < 119.4 && <Torta t={t} t0={110.88} x={330} y={300} frac={1 / 3} />}
       <Chip t={t} t0={111.86} t1={112.8} text="GENTLEMEN" color={C.violeta} x={500} y={300} size={56} />
       <Chip t={t} t0={115.48} t1={118.9} text="NEVER DONE MANUAL LABOR" color={C.rojo} x={960} y={930} centro size={56} />
       {t > 118.2 && t < 119.3 && <Grande t={t} t0={118.26} text="PROUD OF IT" y={170} size={110} color={C.ambar} />}
@@ -154,6 +158,9 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
           <Grande t={t} t0={127.34} text="FARMERS: 0" y={720} size={120} color="#ff5a6a" />
         </>
       )}
+      <Chip t={t} t0={129.4} t1={133.6} text="SUSAN CONSTANT" color={C.violeta} x={420} y={250} centro size={50} />
+      <Chip t={t} t0={130.6} t1={133.6} text="GODSPEED" color={C.teal} tinta={C.noche} x={960} y={250} centro size={50} />
+      <Chip t={t} t0={131.6} t1={133.6} text="DISCOVERY" color={C.naranja} x={1500} y={250} centro size={50} />
       <Chip t={t} t0={132.26} t1={133.6} text="TINY" color={C.rosa} x={1420} y={760} size={50} />
       <Chip t={t} t0={134.38} t1={136.0} text="THE FUTURE OF AN EMPIRE" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />
       <Chip t={t} t0={135.88} t1={138.6} text="NOBODY KNOWS HOW TO GROW CORN" color={C.rojo} x={960} y={930} centro size={54} />

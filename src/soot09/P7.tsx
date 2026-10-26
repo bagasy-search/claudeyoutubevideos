@@ -16,7 +16,7 @@ export const CAM7: K[] = [
   [649.7, 24350, 620, 0.62], [650.6, 24650, 650, 0.95], [651.9, 24650, 650, 0.95], [652.7, 24350, 680, 1.05], [656.6, 24350, 680, 1.05],
   [657.5, 28200, 640, 0.75], [659.0, 28200, 640, 0.75], [659.9, 26150, 680, 0.82], [663.2, 26350, 680, 0.85], [664.0, 24900, 670, 0.72],
   [669.7, 25150, 660, 0.66], [673.4, 25100, 660, 0.68], [674.2, 24350, 680, 0.9], [687.5, 24400, 680, 0.95], [695.4, 24350, 640, 0.7],
-  [696.3, 25500, 680, 0.66], [702.5, 26200, 680, 0.7], [703.4, 24350, 740, 1.0], [707.9, 24350, 740, 1.08], [708.6, 24350, 780, 1.1],
+  [696.3, 25500, 680, 0.66], [699.3, 26100, 680, 0.7], [699.7, 25930, 780, 1.25], [702.5, 25960, 780, 1.3], [703.4, 24350, 740, 1.0], [707.9, 24350, 740, 1.08], [708.6, 24350, 780, 1.1],
   [719.4, 24380, 780, 1.15], [720.3, 22000, 780, 0.95], [727.4, 22150, 780, 0.98], [728.2, 23400, 680, 0.6], [731.0, 23500, 680, 0.6],
   [731.9, 24350, 700, 0.85], [741.1, 24350, 700, 0.9],
 ];
@@ -77,13 +77,14 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         {t > 659.2 && t < 663.6 && parte.map((_, i) => {
           const x = parteX(i);
           const op = 1 - prog(t, 661.9 + i * 0.3, 662.8 + i * 0.3);
-          return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: op }}><Persona x={x} y={SUELO} h={230} t={t} seed={760 + i} ropa={COLONO(i)} camina={t < 661.8 ? 1.4 : 0} expr={t > 660.9 ? "miedo" : "neutro"} flaco={0.2} manoD={i === 1 ? <path d="M -24 -4 L 24 -4 Q 20 22 0 24 Q -20 22 -24 -4 Z" fill="#a0683a" /> : undefined} /></div></En>;
+          return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: op }}><Persona x={x} y={SUELO} h={230} t={t} seed={760 + i} ropa={COLONO(i)} camina={t < 661.4 ? 1.4 : 0} inclina={-75 * prog(t, 661.4 + i * 0.25, 661.9 + i * 0.25)} expr={t > 660.9 ? "miedo" : "neutro"} flaco={0.2} manoD={i === 1 ? <path d="M -24 -4 L 24 -4 Q 20 22 0 24 Q -20 22 -24 -4 Z" fill="#a0683a" /> : undefined} /></div></En>;
         })}
         {t > 660.8 && t < 662.6 && (
           <svg style={{ position: "absolute", left: 26100, top: SUELO - 300, overflow: "visible" }} width={10} height={10}>
-            {[0, 1, 2, 3, 4].map((i) => { const k = prog(t, 660.9 + i * 0.12, 661.5 + i * 0.12); if (k <= 0 || k >= 1) return null; const x = 900 - k * 600 + i * 30, y = 40 + i * 30 + k * 60; return <g key={i}><line x1={x} y1={y} x2={x + 70} y2={y - 8} stroke="#5a3a1a" strokeWidth={5} /><path d={`M ${x} ${y} l 14 -9 l 0 14 Z`} fill="#3a3a3a" /></g>; })}
+            {[0, 1, 2, 3, 4].map((i) => { const k = prog(t, 660.9 + i * 0.12, 661.5 + i * 0.12); if (k <= 0 || k >= 1) return null; const x = 900 - k * 500 + i * 30, y = 100 + i * 25 + k * 60; return <g key={i}><line x1={x} y1={y} x2={x + 70} y2={y - 8} stroke="#5a3a1a" strokeWidth={5} /><path d={`M ${x} ${y} l 14 -9 l 0 14 Z`} fill="#3a3a3a" /></g>; })}
           </svg>
         )}
+        {t > 660.5 && t < 663.6 && [27050, 27250, 27450].map((x, i) => <En key={x} x={x} w={200}><Persona x={x} y={SUELO} h={260} t={t} seed={765 + i} ropa={POW(i)} plumaPelo flip expr="enojado" bD={120} cD={10} bI={110} cI={0} manoD={<path d="M 0 -70 Q 40 0 0 70" stroke="#5a3a1a" strokeWidth={8} fill="none" />} aparece={660.6 + i * 0.15} /></En>)}
         {/* el sitio: ojos en el bosque */}
         {t > 663.8 && t < 674.0 && (
           <>
@@ -105,7 +106,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         {t > 695.5 && t < 703.0 && (
           <>
             {[0, 1, 2].map((i) => { const x = interpolate(t, [695.8 + i * 0.4, 699.8 + i * 0.4], [FX + 400, 27200 + i * 120], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return <En key={i} x={x} w={200}><Persona x={x} y={SUELO} h={220} t={t} seed={790 + i} ropa={COLONO(i)} camina={1.2} flaco={0.35} expr="triste" /></En>; })}
-            {t > 699.4 && [0, 1].map((i) => { const x = 25800 + i * 260; return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, 701.4 + i * 0.3, 702.2 + i * 0.3) }}><Persona x={x} y={SUELO} h={210} t={t} seed={795 + i} ropa={COLONO(i + 2)} inclina={30} bD={160 + Math.sin(t * 8 + i) * 20} flaco={0.35} expr="triste" aparece={699.6 + i * 0.2} /></div></En>; })}
+            {t > 699.4 && [0, 1].map((i) => { const x = 25800 + i * 260; return <En key={i} x={x} w={200}><div style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, 701.4 + i * 0.3, 702.2 + i * 0.3) }}><Persona x={x} y={SUELO} h={210} t={t} seed={795 + i} ropa={COLONO(i + 2)} inclina={30} bD={160 + Math.sin(t * 8 + i) * 20} flaco={0.35} expr="triste" aparece={699.6 + i * 0.2} manoD={<g><rect x={-5} y={-20} width={10} height={130} fill="#6a4a2a" /><path d="M -22 104 L 22 104 L 16 150 Q 0 162 -16 150 Z" fill="#7a7a84" /></g>} /><svg style={{ position: "absolute", left: x + 30, top: SUELO - 30, overflow: "visible" }} width={10} height={10}><ellipse cx={60} cy={30} rx={90} ry={26} fill="#5a3a1a" />{[0, 1, 2].map((j) => <path key={j} d={`M ${20 + j * 40} 20 q 10 ${-30 - j * 6} 30 -${40 * prog(t, 700.2 + j * 0.4 + i * 0.2, 700.8 + j * 0.4 + i * 0.2)}`} stroke="#b08a5a" strokeWidth={9} fill="none" strokeLinecap="round" />)}</svg></div></En>; })}
           </>
         )}
         {t > 702.9 && t < 708.4 && (
@@ -136,6 +137,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         })}
         {t > 719.5 && t < 728.2 && (
           <En x={22150} w={700}>
+            {t > 721.6 && t < 725.8 && <div style={{ position: "absolute", left: 0, top: 0, opacity: ent(t, 721.7) * (1 - prog(t, 725.3, 725.8)) }}><Pez t={t} x={22150 + 460 - (t - 721.6) * 60} y={AGUA - 20 - Math.sin(prog(t, 721.9, 724.6) * Math.PI) * 180} s={3.4} esturion flip seed={9} /></div>}
             <Bote x={22150} y={AGUA - 20} t={t} s={1.4} />
             <Persona x={22150} y={AGUA - 30} h={240} t={t} seed={840} ropa={COLONO(1)} flaco={t > 725.7 ? 0.5 : 0.2} expr={t > 725.9 ? "triste" : t > 721.9 ? "sorpresa" : "neutro"} mira={0.4} manoD={<line x1={0} y1={0} x2={260} y2={-260} stroke="#6a4a2a" strokeWidth={8} />} />
             <svg style={{ position: "absolute", left: 22150, top: AGUA - 270, overflow: "visible" }} width={10} height={10}>
@@ -168,7 +170,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={655.13} t1={656.8} text="YOUNG" color={C.teal} tinta={C.noche} x={620} y={930} size={44} />
       <Chip t={t} t0={655.91} t1={656.8} text="SON OF AN EARL" color={C.oro} tinta={C.noche} x={880} y={930} size={44} />
       {t > 657.6 && t < 659.4 && <Grande t={t} t0={657.8} text="ENOUGH." y={200} size={150} color={C.rojo} />}
-      <Chip t={t} t0={659.23} t1={661.9} text="TRADING PARTY" color={C.tierra} x={960} y={140} centro size={56} />
+      <Chip t={t} t0={659.23} t1={660.95} text="TRADING PARTY" color={C.tierra} x={960} y={140} centro size={56} />
       <Chip t={t} t0={660.99} t1={663.3} text="AMBUSHED" color={C.rojo} x={960} y={140} centro size={60} />
       <Chip t={t} t0={661.95} t1={663.3} text="MANY NEVER COME BACK" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={663.43} t1={665.8} text="BEHIND THE WALLS" color={C.tierra} x={960} y={140} centro size={56} />
@@ -211,7 +213,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       {t > 712.4 && t < 719.6 && (
         <div style={{ position: "absolute", left: 1330, top: 170, transform: `scale(${ent(t, 712.5) * (1 - prog(t, 719.1, 719.6))}) rotate(2deg)`, width: 360, height: 460, background: "#efe2c4", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden", filter: "sepia(.6)" }}>
           <Persona x={180} y={500} h={400} t={t} seed={812} ropa={{ ...COLONO(2), tunica: "#7a5a7a", tunica2: "#4e3a4e" }} expr="neutro" />
-          <div style={{ position: "absolute", left: 0, top: 10, width: 360, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: "#5a1a0a" }}>ENGLISH GIRL · 14</div>
+          <div style={{ position: "absolute", left: 0, top: 10, width: 360, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 40, color: "#5a1a0a", background: "#efe2c4", padding: "4px 0" }}>ENGLISH GIRL · 14</div>
           {t > 714.9 && <div style={{ position: "absolute", left: 0, bottom: 14, width: 360, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 72, color: "#2a1408", transform: `scale(${ent(t, 714.97)})` }}>"JANE"</div>}
         </div>
       )}

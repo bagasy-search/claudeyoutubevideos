@@ -170,9 +170,19 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={744.7} t1={747.3} text="DELIVERANCE" color={C.ambar} tinta={C.noche} x={560} y={300} centro size={56} />
       <Chip t={t} t0={745.0} t1={747.3} text="PATIENCE" color={C.crema} tinta={C.noche} x={1360} y={300} centro size={56} />
       <Chip t={t} t0={744.79} t1={747.3} text="TWO SMALL SHIPS" color={C.teal} tinta={C.noche} x={960} y={930} centro size={54} />
-      <Chip t={t} t0={748.13} t1={751.9} text="GATES" color={C.violeta} x={560} y={140} centro size={54} />
-      <Chip t={t} t0={749.45} t1={751.9} text="SOMERS" color={C.teal} tinta={C.noche} x={960} y={140} centro size={54} />
-      <Chip t={t} t0={750.29} t1={751.9} text="THE SEA VENTURE" color={C.oro} tinta={C.noche} x={1380} y={140} centro size={54} />
+      {t > 748.0 && t < 752.0 && (
+        <div style={{ position: "absolute", left: 960, top: 560, width: 1100, height: 640, transform: `translate(-50%,-50%) scale(${ent(t, 748.05) * (1 - prog(t, 751.6, 752.0))}) rotate(1.5deg)`, background: "#cfe0ea", border: "10px solid #2a1408", borderRadius: 28, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, top: 470, width: 1100, height: 170, background: "#8a5a2e" }} />
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1100} height={640}><rect x={530} y={0} width={24} height={480} fill="#5a3a1a" /><path d="M 560 40 Q 760 160 560 330 Z" fill="#f4ecd8" stroke="#8a7a6a" strokeWidth={5} /></svg>
+          {[280, 790].map((x, i) => t > 748.1 + i * 1.3 && (
+            <div key={x} style={{ position: "absolute", left: 0, top: 0 }}>
+              <Persona x={x} y={780} h={600} t={t} seed={660 + i} ropa={GENT(i + 2)} gola gorro={i ? "sombrero" : "morion"} barba={i ? "#d8d0c8" : "#5a3a2a"} expr="feliz" flip={i === 1} mira={i ? -0.3 : 0.3} bD={i ? undefined : 150 + Math.sin(t * 7) * 20} aparece={748.1 + i * 1.3} />
+              <div style={{ position: "absolute", left: x - 250, top: 560, width: 500, whiteSpace: "nowrap", textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff", background: i ? C.teal : C.violeta, border: "5px solid #1b1240", borderRadius: 14, transform: `scale(${ent(t, 748.2 + i * 1.3)})` }}>{i ? "ADM. GEORGE SOMERS" : "SIR THOMAS GATES"}</div>
+            </div>
+          ))}
+        </div>
+      )}
+      <Chip t={t} t0={750.29} t1={751.9} text="+ THE SEA VENTURE SURVIVORS" color={C.oro} tinta={C.noche} x={960} y={140} centro size={54} />
       {t > 752.0 && t < 753.6 && <Grande t={t} t0={752.41} text="THEY DID NOT DROWN" y={240} size={110} color={C.lima} />}
       <Chip t={t} t0={753.97} t1={758.2} text="10 MONTHS IN BERMUDA" color={C.teal} tinta={C.noche} x={960} y={140} centro size={56} />
       <Chip t={t} t0={756.15} t1={758.2} text="PIGS" color="#e88a9a" tinta={C.noche} x={300} y={260} size={44} />
@@ -184,7 +194,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       {t > 764.0 && t < 766.3 && <Grande t={t} t0={764.17} text="DELIVERANCE" y={200} size={130} color={C.ambar} />}
       {t > 765.0 && t < 766.3 && <Grande t={t} t0={765.11} text="& PATIENCE" y={350} size={110} color={C.crema} />}
       <Chip t={t} t0={766.53} t1={767.9} text="FULL OF HOPE" color={C.lima} tinta={C.noche} x={960} y={140} centro size={56} />
-      <Chip t={t} t0={767.95} t1={770.9} text="60 WALKING SKELETONS" color={C.rojo} x={960} y={140} centro size={56} />
+      {t > 767.9 && t < 770.95 && <Grande t={t} t0={768.0} text="60 WALKING SKELETONS" y={200} size={84} color={C.rojo} />}
       <Chip t={t} t0={769.71} t1={770.9} text="A RUINED FORT" color="#6a5a4a" x={960} y={930} centro size={52} />
       <Chip t={t} t0={770.97} t1={774.7} text="GATES DECIDES" color={C.violeta} x={960} y={140} centro size={56} />
       {t > 774.6 && t < 776.5 && <Grande t={t} t0={774.77} text="JAMESTOWN IS FINISHED" y={220} size={104} color={C.rojo} />}
@@ -233,6 +243,11 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={848.45} t1={853.1} text="THE SHIPWRECK" color={C.tierra} x={300} y={240} size={46} />
       <Chip t={t} t0={849.27} t1={853.1} text="THE MAGIC ISLAND" color={C.teal} tinta={C.noche} x={300} y={320} size={46} />
       <Chip t={t} t0={851.71} t1={853.1} text="→ LONDON" color={C.violeta} x={960} y={930} centro size={54} />
+      {t > 845.2 && t < 853.3 && (() => { const k = prog(t, 845.4, 852.9); const x = 1700 - k * 1500; const y = 520 - Math.sin(k * Math.PI) * 220 + Math.sin(t * 4) * 12; return (
+        <div style={{ position: "absolute", left: x - 130, top: y - 90, transform: `rotate(${Math.sin(t * 3) * 8}deg) scale(${ent(t, 845.3) * (1 - prog(t, 852.9, 853.3))})` }}>
+          <svg width={260} height={180} style={{ overflow: "visible" }}><rect x={10} y={10} width={240} height={160} rx={10} fill="#f4ecd8" stroke="#6a4a2a" strokeWidth={8} /><path d="M 10 10 L 130 100 L 250 10" stroke="#6a4a2a" strokeWidth={7} fill="none" /><circle cx={130} cy={100} r={22} fill={C.rojo} stroke="#7a1010" strokeWidth={5} />{[0, 1, 2].map((j) => <path key={j} d={`M ${270 + j * 26} ${60 + j * 26} l 40 0`} stroke="#fff" strokeWidth={6} strokeLinecap="round" opacity={0.7} />)}</svg>
+          <div style={{ position: "absolute", left: -40, top: 190, width: 340, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill", whiteSpace: "nowrap" }}>TO LONDON</div>
+        </div>); })()}
       <Chip t={t} t0={855.37} t1={858.3} text="WILLIAM SHAKESPEARE" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />
       {t > 858.9 && t < 860.5 && <Grande t={t} t0={859.15} text="THE TEMPEST" y={200} size={140} color={C.ambar} />}
       <Chip t={t} t0={860.25} t1={862.4} text="NOT A HAPPY ENDING" color={C.rojo} x={960} y={140} centro size={56} />
@@ -243,14 +258,14 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ display: "flex", flexWrap: "wrap", gap: 14, justifyContent: "center" }}>
             {Array.from({ length: 60 }, (_, i) => {
               const vis = t > 865.5 + i * 0.012;
-              const muere = i >= 12 && t > 871.0 + ((i * 37) % 48) * 0.012;
+              const muere = i >= 12 && t > 870.9 + ((i * 37) % 48) * 0.006;
               return <div key={i} style={{ width: 50, height: 50, borderRadius: 25, background: muere ? "#5a5470" : C.lima, border: "5px solid #1b1240", opacity: vis ? (muere ? 0.45 : 1) : 0, transform: `scale(${vis ? 1 : 0})` }} />;
             })}
           </div>
           <div style={{ fontFamily, fontWeight: 700, fontSize: 64, color: t > 871.5 ? C.rojo : C.lima, textAlign: "center", marginTop: 20, WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{t < 870.8 ? (t > 865.7 ? "6,000 SAILED" : "") : "1,200 ALIVE"}</div>
         </div>
       )}
-      <Chip t={t} t0={868.57} t1={870.8} text="THE KING TAKES CONTROL" color={C.oro} tinta={C.noche} x={960} y={140} centro size={52} />
+      <Chip t={t} t0={868.57} t1={870.8} text="THE KING TAKES CONTROL" color={C.oro} tinta={C.noche} x={960} y={120} centro size={70} />
       <Chip t={t} t0={872.81} t1={875.2} text="NOT ONE BAD WINTER" color={C.violeta} x={960} y={140} centro size={56} />
       {t > 875.0 && t < 880.2 && (
         <>
@@ -262,12 +277,12 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         </>
       )}
       {/* lo que salió mal */}
-      {t > 880.0 && t < 888.3 && (
+      {t > 880.0 && t < 888.8 && (
         <div style={{ position: "absolute", left: 360, top: 170, width: 1200 }}>
-          {([["THE WRONG PEOPLE", 880.63, C.violeta], ["THE WRONG PLACE", 881.85, C.lima], ["THE WRONG TREASURE", 883.37, C.oro], ["THE WORST DROUGHT IN 700 YEARS", 884.71, C.naranja], ["SOMEONE ELSE'S LAND", 887.13, C.teal]] as [string, number, string][]).map(([s, t0, col], i) => (
+          {([["THE WRONG PEOPLE", 880.63, C.violeta], ["THE WRONG PLACE", 881.85, C.lima], ["THE WRONG TREASURE", 883.37, C.oro], ["THE WORST DROUGHT IN 7 CENTURIES", 884.71, C.naranja], ["SOMEONE ELSE'S LAND", 886.9, C.teal]] as [string, number, string][]).map(([s, t0, col], i) => (
             <div key={s} style={{ display: "flex", alignItems: "center", gap: 24, marginBottom: 22, opacity: t > t0 ? 1 : 0, transform: `translateX(${(1 - ent(t, t0)) * -200}px)` }}>
               <div style={{ width: 84, height: 84, borderRadius: 42, background: col, border: "6px solid #fff", fontFamily, fontWeight: 700, fontSize: 48, color: C.noche, textAlign: "center", lineHeight: "72px" }}>{i + 1}</div>
-              <div style={{ fontFamily, fontWeight: 700, fontSize: 64, color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{s}</div>
+              <div style={{ fontFamily, fontWeight: 700, fontSize: 58, whiteSpace: "nowrap", color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill" }}>{s}</div>
             </div>
           ))}
         </div>

@@ -11,7 +11,7 @@ import { Globo, Tacha } from "./kitj2";
 // TRAMPA 3 · LA ISLA (213,7-342,7 s). Río arriba hasta la península, el fuerte en 19 días, el agua del río que vuelve,
 // mosquitos y fiebres, las cruces de noche, los anillos del ciprés (la peor sequía en 770 años), "seasoning" y 104 → 38.
 export const CAM3: K[] = [
-  [213.8, 22900, 560, 0.68], [214.6, 22950, 570, 0.74], [216.0, 22900, 600, 0.76], [218.0, 21000, 600, 0.45], [225.6, 20500, 600, 0.42],
+  [213.5, 22820, 550, 0.64], [214.6, 22950, 575, 0.75], [217.5, 22920, 600, 0.76], [218.2, 21000, 600, 0.45], [225.6, 20500, 600, 0.42],
   [226.4, 20800, 600, 0.42], [231.0, 22200, 640, 0.55], [232.6, 22760, 720, 1.0], [235.4, 22800, 720, 1.0], [236.3, 23050, 650, 0.7],
   [237.3, 23400, 640, 0.6], [238.5, 25600, 700, 0.75], [240.0, 24330, 700, 0.85], [246.8, 24350, 690, 0.88], [248.3, 24300, 700, 1.25],
   [251.2, 24350, 700, 1.2], [252.6, 22880, 800, 1.7], [258.9, 22880, 800, 1.75], [259.8, 22880, 800, 1.55], [264.9, 22900, 800, 1.6],
@@ -37,22 +37,24 @@ const Salero: React.FC<{ t: number; x: number; y: number; s?: number }> = ({ t, 
 
 // mini mapa del río James: de la bahía hasta la península
 const MapaRio: React.FC<{ t: number }> = ({ t }) => {
-  const e = ent(t, 226.5) * (1 - prog(t, 231.0, 231.5));
+  const e = ent(t, 226.35) * (1 - prog(t, 231.0, 231.5));
   const d = prog(t, 227.0, 230.9);
   const path = "M 120 560 Q 360 520 470 420 T 820 330 Q 980 300 1100 230";
   return (
     <div style={{ position: "absolute", left: 360, top: 170, width: 1200, height: 700, transform: `scale(${e})`, background: "#f4e6c4", border: "10px solid #6b3a1f", borderRadius: 30, boxShadow: "0 14px 0 rgba(20,10,40,.35)" }}>
       <svg width={1180} height={680} style={{ position: "absolute", left: 0, top: 0 }}>
+        <path d="M 0 0 L 1180 0 L 1180 680 L 0 680 Z" fill="#b8cf8a" />
+        {Array.from({ length: 22 }, (_, i) => <circle key={i} cx={60 + ((i * 197) % 1080)} cy={60 + ((i * 113) % 300) + (i % 2) * 200} r={26 + (i % 3) * 8} fill="#6a9a4a" opacity={0.8} />)}
         <path d="M 0 580 Q 60 520 120 560 L 120 680 L 0 680 Z" fill="#7ab0d8" />
         <path d={path} stroke="#7ab0d8" strokeWidth={46} fill="none" strokeLinecap="round" />
         <path d={path} stroke="#2a6a9a" strokeWidth={10} fill="none" strokeDasharray="1600" strokeDashoffset={1600 * (1 - d)} />
-        <path d="M 1040 245 Q 1080 190 1150 205 Q 1170 245 1120 265 Q 1080 280 1040 245 Z" fill="#7a9a4a" stroke="#3e6a28" strokeWidth={6} opacity={prog(t, 227.6, 228.2)} />
-        <text x={70} y={650} fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#2a4a6a">THE BAY</text>
-        <text x={500} y={500} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#2a4a6a" opacity={prog(t, 230.7, 231)}>JAMES RIVER</text>
+        <path d="M 1040 245 Q 1080 190 1150 205 Q 1170 245 1120 265 Q 1080 280 1040 245 Z" fill="#c8a040" stroke="#7a4a10" strokeWidth={8} />
+        <text x={70} y={650} fontFamily={fontFamily} fontWeight={700} fontSize={50} fill="#1a3a5a">THE BAY</text>
+        <text x={500} y={500} fontFamily={fontFamily} fontWeight={700} fontSize={52} fill="#1a3a5a" opacity={prog(t, 227.4, 227.8)}>JAMES RIVER</text>
         <text x={660} y={260} fontFamily={fontFamily} fontWeight={700} fontSize={56} fill={C.rojo} opacity={prog(t, 229.1, 229.4)}>60 KM UPRIVER</text>
         {d > 0 && (() => { const k = d; const x = 120 + k * 980, y = 560 - k * 330 + Math.sin(k * 6) * 20; return <g transform={`translate(${x} ${y})`}><path d="M -30 0 L 30 0 L 20 18 L -20 18 Z" fill="#7a3e1a" /><path d="M 0 0 L 0 -50 L 28 -14 Z" fill="#fff" /></g>; })()}
       </svg>
-      {t > 227.7 && <div style={{ position: "absolute", left: 830, top: 80, transform: `scale(${ent(t, 227.74)})`, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: C.violeta, borderRadius: 12, padding: "4px 16px", whiteSpace: "nowrap" }}>ALMOST AN ISLAND</div>}
+      {t > 227.7 && <div style={{ position: "absolute", left: 760, top: 70, transform: `scale(${ent(t, 227.74)})`, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff", background: C.violeta, borderRadius: 12, padding: "4px 16px", whiteSpace: "nowrap" }}>ALMOST AN ISLAND</div>}
     </div>
   );
 };
@@ -79,7 +81,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
         <Base t={t} />
         {t < 218 && <En x={22950} w={900}><Poste t={t} t0={213.8} x={22950} y={SUELO + 10} n={3} titulo="THE ISLAND" s={1.25} /></En>}
         {/* el galeón español que no se anima a subir */}
-        {t > 220.5 && t < 226.6 && (() => { const x = interpolate(t, [220.6, 223.6, 226.4], [17900, 19300, 18200], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return <En x={x} w={500}><Nave x={x} y={AGUA - 120} t={t} tam={0.95} casco="#3a2a2a" bandera={false} vela={1} /><svg style={{ position: "absolute", left: x - 60, top: AGUA - 700, overflow: "visible" }} width={120} height={120}><rect x={0} y={0} width={120} height={80} fill="#f4c020" /><rect x={0} y={20} width={120} height={40} fill="#c81d2e" /></svg></En>; })()}
+        {t > 220.5 && t < 226.6 && (() => { const x = interpolate(t, [220.6, 223.6, 226.4], [19300, 20300, 19700], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); return <En x={x} w={500}><Nave x={x} y={AGUA - 120} t={t} tam={0.95} casco="#3a2a2a" bandera={false} vela={1} /><svg style={{ position: "absolute", left: x - 60, top: AGUA - 700, overflow: "visible" }} width={120} height={120}><rect x={0} y={0} width={120} height={80} fill="#f4c020" /><rect x={0} y={20} width={120} height={40} fill="#c81d2e" /></svg></En>; })()}
         {/* la soga del barco al árbol */}
         {t > 233.8 && t < 251.5 && (
           <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}>
@@ -234,6 +236,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
           <div style={{ fontSize: 96, color: C.noche, lineHeight: 1 }}>{dia}<span style={{ fontSize: 40 }}> / 19</span></div>
         </div>
       )}
+      {t > 239.4 && t < 247.2 && <div style={{ position: "absolute", left: 1160, top: 40, width: 680, height: 600, background: "#cfe3a8", border: "8px solid #2a1408", borderRadius: 26, opacity: ent(t, 239.45) * (1 - prog(t, 246.9, 247.2)) }} />}
       {t > 239.4 && t < 247.2 && <FuerteTriangulo x={1500} y={330} s={0.6} t={t} dibuja={prog(t, 239.5, 246.2)} />}
       <Chip t={t} t0={241.98} t1={243.2} text="A TRIANGLE" color={C.tierra} x={1500} y={590} centro size={44} />
       <Chip t={t} t0={243.24} t1={247.0} text="WALLS · 4 METERS" color="#7a4620" x={960} y={930} centro size={54} />
@@ -248,7 +251,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       {t > 256.7 && t < 265.0 && (
         <div style={{ position: "absolute", left: 1540, top: 120, transform: `scale(${ent(t, 256.8) * (1 - prog(t, 264.5, 265.0))}) rotate(-4deg)`, width: 290, height: 330, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 18, overflow: "hidden" }}>
           <Persona x={145} y={340} h={340} t={t} seed={44} ropa={GENT(1)} gola gorro="pluma" barba="#3a2416" expr={t > 261.8 ? "enojado" : "neutro"} habla={t > 259.5} />
-          <div style={{ position: "absolute", left: 0, top: 4, width: 290, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 30, color: C.rojo }}>GEORGE PERCY</div>
+          <div style={{ position: "absolute", left: 0, top: 268, width: 290, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 36, color: "#fff", background: C.rojo }}>GEORGE PERCY</div>
         </div>
       )}
       <Chip t={t} t0={260.06} t1={261.8} text="HIGH TIDE → SALTY" color="#2a7ac8" x={960} y={930} centro size={56} />
@@ -271,14 +274,14 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
       {t > 295.8 && t < 311.9 && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${1 - prog(t, 311.3, 311.9)})`, transformOrigin: "960px 540px" }}>
           <div style={{ position: "absolute", inset: 0, background: "rgba(27,18,64,.55)", opacity: ent(t, 295.9) }} />
-          <Anillos t={t} t0={295.96} x={720} y={560} r={360} tMarca={301.36} />
+          <div style={{ position: "absolute", left: 0, top: 0, transformOrigin: "720px 560px", transform: `scale(${1 + prog(t, 296.5, 303.5) * 0.18})` }}><Anillos t={t} t0={295.96} x={720} y={560} r={360} tMarca={301.36} /></div>
           <Chip t={t} t0={296.36} t1={298.0} text="1 RING = 1 YEAR" color={C.ambar} tinta={C.noche} x={1450} y={300} centro size={50} />
-          <Chip t={t} t0={298.1} t1={299.8} text="THIN RING" color={C.rojo} x={1450} y={300} centro size={50} />
-          <Chip t={t} t0={299.02} t1={300.4} text="= DRY YEAR" color={C.naranja} x={1450} y={380} centro size={50} />
+          <Chip t={t} t0={298.1} t1={301.5} text="THIN RING" color={C.rojo} x={1450} y={300} centro size={50} />
+          <Chip t={t} t0={299.02} t1={301.5} text="= DRY YEAR" color={C.naranja} x={1450} y={380} centro size={50} />
           <Chip t={t} t0={301.54} t1={311.9} text="1606 – 1612" color={C.rojo} x={1450} y={300} centro size={64} />
-          {t > 304.2 && <Grande t={t} t0={304.24} text="WORST DROUGHT" x={1450} y={470} size={86} color={C.ambar} />}
-          {t > 306.1 && <Grande t={t} t0={306.14} text="IN 770 YEARS" x={1450} y={600} size={86} />}
-          {t > 310.2 && <div style={{ position: "absolute", left: 330, top: 940, transform: `scale(${ent(t, 310.26)})`, fontFamily, fontWeight: 700, fontSize: 42, color: "#fff", background: C.rojo, borderRadius: 12, padding: "4px 16px", whiteSpace: "nowrap" }}>THE RED RINGS: THAT IS WHEN YOU ARRIVE</div>}
+          {t > 304.2 && <Grande t={t} t0={304.24} text="WORST DROUGHT" x={1520} y={470} size={80} color={C.ambar} />}
+          {t > 306.1 && <Grande t={t} t0={306.14} text="IN 770 YEARS" x={1520} y={600} size={80} />}
+          {t > 310.2 && <div style={{ position: "absolute", left: 960, top: 930, transform: `translate(-50%,0) scale(${ent(t, 310.26)})`, fontFamily, fontWeight: 700, fontSize: 56, color: "#fff", background: C.rojo, borderRadius: 12, padding: "4px 16px", whiteSpace: "nowrap" }}>THE RED RINGS: THAT IS WHEN YOU ARRIVE</div>}
         </div>
       )}
       {t > 308.3 && t < 310.0 && <Grande t={t} t0={308.36} text="770 YEARS" y={930} size={130} color="#ff5a6a" />}
@@ -307,9 +310,9 @@ export const P3: React.FC<{ t: number }> = ({ t }) => {
           </div>
         );
       })()}
-      <Chip t={t} t0={330.66} t1={333.0} text="JANUARY 1608" color="#6a8ab8" x={960} y={140} centro size={60} />
+      <Chip t={t} t0={330.66} t1={338.6} text="JANUARY 1608" color="#6a8ab8" x={960} y={140} centro size={60} />
       {t > 329.9 && <Nieve t={t} n={70} op={0.75 * prog(t, 330, 331.5)} />}
-      {t > 334.9 && <Tablero t={t} valor={interpolate(t, [335.5, 337.6], [104, 38], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} rojo={t > 336.8} x={1660} y={150} s={t < 339 ? 1.25 : 1} />}
+      {t > 334.9 && <Tablero t={t} valor={interpolate(t, [335.5, 337.6], [104, 38], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} rojo={t > 336.8} x={1560} y={190} s={t < 339 ? 1.7 : 1} />}
       {t > 341.3 && <Grande t={t} t0={341.72} text="…THE GOOD ONE" y={930} size={110} color={C.ambar} />}
       {noche && <Tinte color="#0a0820" op={0.6} />}
     </AbsoluteFill>

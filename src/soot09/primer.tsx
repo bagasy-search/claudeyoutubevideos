@@ -22,12 +22,11 @@ const panfleto = <g><rect x={-40} y={-90} width={90} height={110} fill="#f4ecd8"
 
 const E_: E[] = [
   [35.5, 38.9, "D", { seed: 1101, ropa: COLONO(0), expr: "neutro", habla: true }],
-  [50.5, 53.6, "D", { seed: 1102, ropa: COLONO(1), expr: "feliz", bD: 150, cD: 30 }],
   [99.7, 104.8, "I", { seed: 1103, ropa: COLONO(2), expr: "triste", manoD: cuenco }],
   [135.5, 139.6, "D", { seed: 1104, ropa: GENT(2), gola: true, gorro: "copa", expr: "sorpresa", manoD: choclo }],
   [278.6, 284.0, "D", { seed: 1105, ropa: GENT(1), gola: true, gorro: "pluma", expr: "triste", flaco: 0.3, manoD: pluma }],
   [284.3, 290.6, "I", { seed: 1106, ropa: COLONO(3), expr: "miedo", flaco: 0.45 }],
-  [291.0, 296.0, "I", { seed: 1107, ropa: CIENT, expr: "sorpresa", habla: true }],
+  [291.0, 296.0, "I", { seed: 1107, ropa: CIENT, expr: "sorpresa", habla: true, bD: 80, cD: 60, manoD: <g><rect x={-6} y={-20} width={12} height={150} fill="#8a8a94" /><rect x={-40} y={-30} width={80} height={16} rx={6} fill="#6a4a2a" /></g> }],
   [345.6, 350.4, "I", { seed: 1108, ropa: COLONO(0), expr: "miedo" }],
   [350.6, 355.0, "D", { seed: 1109, ropa: COLONO(2), expr: "triste", manoD: balde }],
   [355.4, 360.4, "D", { seed: 1110, ropa: GENT(0), gola: true, gorro: "copa", expr: "neutro" }],
@@ -45,11 +44,9 @@ const E_: E[] = [
   [669.8, 674.0, "I", { seed: 1123, ropa: GENT(3), gola: true, expr: "triste", flaco: 0.55 }],
   [695.7, 700.5, "I", { seed: 1124, ropa: COLONO(2), expr: "triste", flaco: 0.6, manoD: hatillo }],
   [700.7, 703.2, "D", { seed: 1125, ropa: COLONO(3), expr: "miedo", flaco: 0.6, manoD: pala }],
-  [765.6, 771.0, "D", { seed: 1126, ropa: GENT(1), gola: true, gorro: "morion", expr: "sorpresa" }],
   [779.0, 784.0, "I", { seed: 1127, ropa: COLONO(1), expr: "triste", flaco: 0.5, manoD: hatillo }],
   [789.6, 795.2, "D", { seed: 1128, ropa: COLONO(0), expr: "triste", flaco: 0.5 }],
   [815.6, 819.3, "I", { seed: 1129, ropa: COLONO(2), expr: "feliz", flaco: 0.4, bD: 150, cD: 30 }],
-  [845.6, 853.2, "D", { seed: 1130, ropa: GENT(0), gola: true, gorro: "copa", expr: "sorpresa", manoD: panfleto }],
   [860.6, 864.2, "D", { seed: 1131, ropa: COLONO(3), expr: "triste", flaco: 0.3 }],
 ];
 

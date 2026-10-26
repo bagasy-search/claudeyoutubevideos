@@ -83,12 +83,12 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
             <En key={i} x={xx} w={250}>
               <Persona x={xx} y={SUELO} h={250} t={t} seed={400 + i} ropa={GENT(i)} gola gorro={perf ? "pluma" : i % 2 ? "copa" : "sombrero"} camina={t < 359.6 + i * 0.25 ? 1.5 : 0} expr={perf && t > 366.3 ? "orgullo" : t > 368.5 ? "sorpresa" : "neutro"}
                 manoD={perf ? <g transform="scale(0.35)"><Frasco x={0} y={0} /></g> : undefined} bD={perf && t > 366 ? 70 : 0} />
-              {t > t0 && (i === 0 || NUEVOS[i - 1][1] !== of) && <div style={{ position: "absolute", left: x - 130, top: SUELO - ([0, 0, 1, 0, 0, 1][i] ? 440 : 345), width: 260, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
+              {t > t0 && (i === 0 || NUEVOS[i - 1][1] !== of) && <div style={{ position: "absolute", left: x - 150, top: SUELO - ([0, 0, 1, 0, 0, 1][i] ? 450 : 350), width: 300, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 48, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
               {perf && t > 366.5 && <Olor t={t} x={x + 60} y={SUELO - 230} color="#ff8fc8" />}
             </En>
           );
         })}
-        {t > 368.4 && t < 372.4 && <Mosquitos t={t} x={23300} y={SUELO - 300} n={30} r={260} seed={6} />}
+        {t > 368.4 && t < 372.4 && <Mosquitos t={t} x={23300} y={SUELO - 150} n={30} r={170} seed={6} />}
         {/* la arena que brilla */}
         {t > 378.4 && t < 401.5 && <En x={22950} w={600}><Pepitas t={t} x={22950} y={SUELO - 6} n={34} w={420} seed={11} apaga={prog(t, 399.4, 400.8)} /></En>}
         {/* la fiebre: todos cavando, lavando, refinando, cargando */}
@@ -114,7 +114,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
             {t > 410.7 && <svg style={{ position: "absolute", left: smithX - 60, top: SUELO - 230, overflow: "visible", opacity: ent(t, 410.96) }} width={120} height={120}><path d="M 10 0 L 110 110" stroke={C.oro} strokeWidth={22} /></svg>}
           </En>
         )}
-        {t > 416.2 && <En x={24300} w={500}><Cartel x={24300} y={SUELO - 300} s={0.42} t={t} t0={416.3} titulo="NEW RULE" lineas={["HE THAT WILL", "NOT WORK", "SHALL NOT EAT"]} tl={[417.26, 417.7, 418.84]} /></En>}
+        {t > 421.2 && <En x={24300} w={500}><Cartel x={24300} y={SUELO - 300} s={0.42} t={t} t0={416.3} titulo="NEW RULE" lineas={["HE THAT WILL", "NOT WORK", "SHALL NOT EAT"]} tl={[417.26, 417.7, 418.84]} /></En>}
         {/* los caballeros furiosos, con ampollas, insultando; agua fría por la manga */}
         {furiosos && [24180, 24330, 24480].map((x, i) => (
           <En key={x} x={x} w={200}>
@@ -245,11 +245,11 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={412.64} t1={414.4} text="AUTUMN 1608" color={C.naranja} x={960} y={140} centro size={56} />
       <Chip t={t} t0={415.1} t1={416.3} text="ONE SIMPLE RULE" color={C.violeta} x={960} y={930} centro size={52} />
       <Chip t={t} t0={415.84} t1={416.3} text="UNPOPULAR" color={C.rojo} x={960} y={1010} centro size={40} />
-      {t > 419.6 && t < 421.3 && <Grande t={t} t0={420.4} text="FURIOUS" y={170} size={120} color="#ff5a6a" />}
+      {t > 419.6 && t < 421.3 && <Grande t={t} t0={420.4} text="FURIOUS" y={930} size={120} color="#ff5a6a" />}
       <Chip t={t} t0={421.6} t1={422.6} text="BLISTERS" color={C.rosa} x={960} y={140} centro size={56} />
       <Chip t={t} t0={424.62} t1={427.6} text="COLD WATER, EVERY CURSE" color="#2a7ac8" x={960} y={140} centro size={54} />
-      {t > 417.1 && t < 420.5 && (
-        <div style={{ position: "absolute", left: 960, top: 150, width: 860, transform: `scale(${ent(t, 417.15) * (1 - prog(t, 420.1, 420.5))}) rotate(-1deg)`, transformOrigin: "50% 0", background: "#f4e6c4", border: "10px solid #8a6a3a", borderRadius: 18, padding: "14px 28px", fontFamily, fontWeight: 700, textAlign: "center" }}>
+      {t > 416.3 && t < 421.4 && (
+        <div style={{ position: "absolute", left: 960, top: 150, width: 860, transform: `scale(${ent(t, 416.35) * (1 - prog(t, 421.0, 421.4))}) rotate(-1deg)`, transformOrigin: "50% 0", background: "#f4e6c4", border: "10px solid #8a6a3a", borderRadius: 18, padding: "14px 28px", fontFamily, fontWeight: 700, textAlign: "center" }}>
           <div style={{ fontSize: 40, color: "#7a1a24" }}>SMITH'S NEW RULE</div>
           <div style={{ fontSize: 68, color: C.noche, lineHeight: 1.05 }}>HE THAT WILL NOT WORK</div>
           <div style={{ fontSize: 68, color: C.rojo, lineHeight: 1.05, opacity: prog(t, 418.7, 419.0) }}>SHALL NOT EAT</div>

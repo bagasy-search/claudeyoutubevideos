@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona } from "./persona";
 import { C, ent, prog, Chip, Grande, fontFamily, Emote, cabeza } from "./kit";
-import { Trampas } from "./kit2";
+import { Trampas, Lluvia } from "./kit2";
 import { Mundo, K, En, SUELO } from "./mundo";
 import { Base, FX } from "./base";
 import { COLONO, POW, SMITH, Poste, Canasta, Cuentas, Hacha, Choclo, Nieve, Anillos, Rayo } from "./kitj";
@@ -17,7 +17,7 @@ export const CAM5: K[] = [
   [471.4, 26300, 700, 0.95], [472.4, 26300, 700, 0.9], [477.2, 29500, 790, 1.15], [479.9, 29500, 790, 1.2], [481.0, 28800, 720, 1.05],
   [487.4, 28750, 720, 1.1], [488.6, 28200, 700, 1.25], [494.2, 28200, 700, 1.3], [495.4, 25600, 680, 0.85], [499.2, 26700, 680, 0.95],
   [503.4, 28000, 680, 0.85], [504.6, 28150, 700, 0.95], [522.3, 28150, 700, 0.95], [524.6, 26950, 700, 0.95], [533.6, 25450, 700, 0.95], [534.8, 25300, 660, 0.8],
-  [536.4, 24800, 620, 0.5], [545.9, 25200, 620, 0.48], [549.8, 24600, 600, 0.36],
+  [536.4, 24800, 620, 0.5], [545.9, 24500, 690, 0.72], [549.8, 24400, 690, 0.8],
 ];
 const CIELO5: [number, string][] = [[439.0, "verano"], [457.0, "primavera"], [471.7, "verano"], [494.4, "invierno"], [522.4, "primavera"], [546.0, "tormenta"]];
 
@@ -91,7 +91,10 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           );
         })}
         {caravana && t > 529 && [24900, 25040].map((x, i) => <En key={x} x={x} w={200}><Persona x={x} y={SUELO} h={230} t={t} seed={610 + i} ropa={COLONO(i)} expr="feliz" flaco={0.2} salta={Math.abs(Math.sin(t * 5 + i)) * 16} /></En>)}
-        {t > 546.0 && <Rayo t={t} t0={548.7} x={24900} />}
+        {t > 546.0 && <Rayo t={t} t0={547.0} x={24900} />}
+        {t > 546.0 && <Rayo t={t} t0={548.7} x={23900} />}
+        {/* todo sale mal a la vez: corren a refugiarse */}
+        {t > 546.1 && [0, 1, 2, 3, 4].map((i) => { const x = interpolate(t, [546.2, 550.6], [23700 + i * 170, 24250 + i * 170 + (i % 2 ? 200 : -100)]); return <En key={`c${i}`} x={x} w={200}><Persona x={x} y={SUELO} h={250} t={t} seed={580 + i} ropa={COLONO(i)} flaco={0.3} expr={i % 2 ? "miedo" : "sorpresa"} camina={2.2} bD={160} bI={150} cD={30} cI={30} flip={i % 2 === 1} /></En>; })}
       </Mundo>
 
       {/* pantalla */}
@@ -107,9 +110,9 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
             <div style={{ position: "absolute", left: 380, top: 220, width: 1160, height: 640, transform: `scale(${e}) rotate(-1.5deg)`, background: "#f1dfb6", border: "12px solid #6b3a1f", borderRadius: 26, overflow: "hidden", boxShadow: "0 16px 0 rgba(20,10,40,.4)" }}>
               <svg width={1136} height={616} style={{ position: "absolute", left: 0, top: 0 }}>
                 <path d="M 0 0 L 160 0 Q 120 200 180 340 Q 120 480 160 616 L 0 616 Z" fill="#8ab8d8" />
-                {rios.map((d, i) => <path key={i} d={d} stroke="#7ab0d8" strokeWidth={22} fill="none" strokeLinecap="round" strokeDasharray="1400" strokeDashoffset={1400 * (1 - prog(t, 445.0 + i * 0.3, 446.6 + i * 0.3))} />)}
-                <path d="M 230 80 Q 700 10 1060 120 Q 1110 380 980 560 Q 600 610 230 540 Q 190 300 230 80 Z" fill="rgba(200,149,90,.25)" stroke="#a0683a" strokeWidth={8} strokeDasharray="26 14" opacity={prog(t, 446.4, 447.2)} />
-                {Array.from({ length: 30 }, (_, i) => { const x = 270 + ((i * 271) % 760), y = 120 + ((i * 137) % 400); const on = prog(t, 447.8 + i * 0.05, 448.1 + i * 0.05); return <g key={i} transform={`translate(${x} ${y}) scale(${on})`}><path d="M -22 10 L -22 -4 Q 0 -26 22 -4 L 22 10 Z" fill="#b08a5a" stroke="#5a3a1a" strokeWidth={4} /><rect x={-6} y={0} width={12} height={10} fill="#3a2416" /></g>; })}
+                {rios.map((d, i) => <path key={i} d={d} stroke="#7ab0d8" strokeWidth={22} fill="none" strokeLinecap="round" strokeDasharray="1400" strokeDashoffset={1400 * (1 - prog(t, 444.6 + i * 0.15, 445.6 + i * 0.15))} />)}
+                <path d="M 230 80 Q 700 10 1060 120 Q 1110 380 980 560 Q 600 610 230 540 Q 190 300 230 80 Z" fill="rgba(200,149,90,.25)" stroke="#a0683a" strokeWidth={8} strokeDasharray="26 14" opacity={prog(t, 444.9, 445.5)} />
+                {Array.from({ length: 30 }, (_, i) => { const x = 270 + ((i * 271) % 760), y = 120 + ((i * 137) % 400); const on = prog(t, 445.3 + i * 0.05, 445.6 + i * 0.05); return <g key={i} transform={`translate(${x} ${y}) scale(${on})`}><path d="M -22 10 L -22 -4 Q 0 -26 22 -4 L 22 10 Z" fill="#b08a5a" stroke="#5a3a1a" strokeWidth={4} /><rect x={-6} y={0} width={12} height={10} fill="#3a2416" /></g>; })}
                 <g transform={`translate(840 250) scale(${prog(t, 449.6, 450.0)})`}><circle r={30} fill={C.rojo} stroke="#fff" strokeWidth={6} /><path d="M -12 -2 L 0 -18 L 12 -2 L 8 14 L -8 14 Z" fill="#ffd34a" /></g>
                 <text x={250} y={600} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#2a4a6a">CHESAPEAKE BAY</text>
               </svg>
@@ -179,7 +182,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
             {[340, 860].map((x, i) => <div key={x} style={{ position: "absolute", left: 0, top: 0 }}><Persona x={x} y={700} h={420} t={t} seed={620 + i} ropa={POW(i)} plumaPelo flip={i === 1} expr="enojado" bD={t > 507.6 && t < 512.9 ? 160 : 40} cD={20} manoD={<rect x={-10} y={-10} width={20} height={130} rx={10} fill="#5a3418" />} /></div>)}
             <Persona x={600} y={700} h={380} t={t} seed={540} ropa={POW(2)} viejo plumaPelo capa="#6a3a1a" expr="neutro" />
             {/* Pocahontas */}
-            {t > 511.3 && (() => { const x = interpolate(t, [511.4, 512.9], [1250, 560], { extrapolateRight: "clamp" }); const tendida = t > 512.9; return tendida ? <div style={{ position: "absolute", left: 430, top: 610, transform: "rotate(-90deg)", transformOrigin: "0 0" }}><Persona x={0} y={0} h={240} t={t} seed={600} ropa={POW(0)} plumaPelo expr="miedo" /></div> : <Persona x={x} y={700} h={240} t={t} seed={600} ropa={POW(0)} plumaPelo flip camina={2.5} expr="miedo" />; })()}
+            {t > 504.9 && (() => { const x = interpolate(t, [511.4, 512.9], [1050, 560], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }); const tendida = t > 512.9; return tendida ? <div style={{ position: "absolute", left: 430, top: 610, transform: "rotate(-90deg)", transformOrigin: "0 0" }}><Persona x={0} y={0} h={240} t={t} seed={600} ropa={POW(0)} plumaPelo expr="miedo" /></div> : <Persona x={x} y={700} h={240} t={t} seed={600} ropa={POW(0)} plumaPelo flip camina={2.5} expr="miedo" />; })()}
             {t > 515.4 && <div style={{ position: "absolute", right: 60, top: 140, fontFamily, fontWeight: 700, fontSize: 300, color: C.rojo, lineHeight: 1, transform: `scale(${ent(t, 515.5)}) rotate(12deg)`, filter: "none" }}>?</div>}
           </div>
           <Chip t={t} t0={507.61} t1={511.0} text="ABOUT TO BE EXECUTED" color={C.rojo} x={960} y={930} centro size={52} />
@@ -201,6 +204,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           {[["GIFTS", 240, 70, 536.53], ["THREATS", 420, 340, 537.31], ["TRADING", 600, 80, 538.33], ["RAIDS", 780, 350, 539.09]].map(([s, x, y, t0]) => <text key={s as string} x={x as number} y={y as number} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill={(s === "THREATS" || s === "RAIDS") ? C.rojo : "#2a7a3a"} opacity={prog(t, t0 as number, (t0 as number) + 0.2)}>{s as string}</text>)}
         </svg>
       )}
+      {t > 546.1 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}><Lluvia t={t} n={140} seed={9} /></div>}
       {t > 541.4 && t < 546.0 && <Grande t={t} t0={543.21} text="THE ENGLISH DEPEND ON THEM" y={720} size={80} color={C.ambar} />}
       <Chip t={t} t0={544.47} t1={546.0} text="NOT THE OTHER WAY AROUND" color={C.rojo} x={960} y={860} centro size={50} />
       <Chip t={t} t0={546.6} t1={550.6} text="AUTUMN 1609" color={C.naranja} x={960} y={140} centro size={84} />
