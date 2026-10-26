@@ -208,8 +208,8 @@ export const O0: React.FC<{ t: number }> = ({ t }) => {
       {hondo > 0 && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 55% 55%, rgba(10,30,80,0) 35%, rgba(4,10,40,1) 95%)", opacity: hondo }} />}
       <Txt t={t} t0={0.45} t1={5.2} text="AGE: 12" x={1050} y={150} size={96} fondo={C.rojo} rot={-4} />
       <S t={0.45} p="pop" g={-6} />
-      <Txt t={t} t0={5.34} t1={6.9} text="CONGRATULATIONS!" y={200} size={130} color={C.oro} />
-      <Txt t={t} t0={6.2} t1={8.7} text="CABIN BOY" y={170} size={140} />
+      <Txt t={t} t0={5.34} t1={6.6} text="CONGRATULATIONS!" y={200} size={130} color={C.oro} />
+      <Txt t={t} t0={6.95} t1={8.7} text="CABIN BOY" y={170} size={140} />
       <Txt t={t} t0={8.92} t1={10.0} text="THE PAY..." y={170} size={120} />
       <Txt t={t} t0={10.06} t1={11.25} text="THE FOOD..." y={170} size={120} color={C.lima} />
       <Txt t={t} t0={11.6} t1={16.7} text="VOTED. IN WRITING." y={150} size={110} palabras={[11.6, 12.6, 13.0]} />

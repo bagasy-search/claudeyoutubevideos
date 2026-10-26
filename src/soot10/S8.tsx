@@ -14,7 +14,7 @@ const BON = 5400; // el Bonetta (mundo)
 const DK = 1855; // su cubierta
 const WX = -3500; // el naufragio en el fondo
 const CX = WX + 1100, CY = FONDO - 150; // la concreción
-const JOHN: Ropa = { tunica: "#3d6fa8", tunica2: "#264a7a", cinto: "#2a1a10", piel: "#f5c7a0", piel2: "#dc9d78", pelo: "#a0602c", piernas: "#2a2a3a", gorro: "no", gorroCol: "#000" };
+export const JOHN: Ropa = { tunica: "#3d6fa8", tunica2: "#264a7a", cinto: "#2a1a10", piel: "#f5c7a0", piel2: "#dc9d78", pelo: "#a0602c", piernas: "#2a2a3a", gorro: "no", gorroCol: "#000" };
 const JOHN_P: Ropa = { ...JOHN, gorro: "bandana", gorroCol: "#e8344a" };
 const MADRE: Ropa = { ...CIVIL(0), tunica: "#c94f8a", tunica2: "#8a2f5e" };
 const BELLAMY: Ropa = { ...CAPITAN, tunica: "#2a2a3a", tunica2: "#16161f" };
