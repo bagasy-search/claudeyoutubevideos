@@ -179,23 +179,23 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       {/* dos remeros apilados, de lado: arriba el culpable, abajo la víctima */}
       {t >= 276 && (
         <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-          <rect x={0} y={520} width={1920} height={30} fill="#3a1c0e" />
-          <g transform={`translate(1060 510) scale(1.5)`}><Remero fase={t * 3.2} ropa="#a8673f" piel="#f2b48a" expr={t < 277.2 ? "neutro" : "feliz"} seed={4} t={t} /></g>
-          <g transform={`translate(860 1000) scale(1.5)`}><Remero fase={t * 3.2 + 0.4} ropa="#2fb5d8" piel="#c98b62" pelo="#1d1410" expr={t < 277.5 ? "cansado" : "miedo"} seed={2} t={t} sudor /></g>
+          <rect x={0} y={570} width={1920} height={30} fill="#3a1c0e" />
+          <g transform={`translate(1060 560) scale(1.3)`}><Remero fase={t * 3.2} ropa="#a8673f" piel="#f2b48a" expr={t < 277.2 ? "neutro" : "feliz"} seed={4} t={t} /></g>
+          <g transform={`translate(860 920) scale(1.3)`}><Remero fase={t * 3.2 + 0.4} ropa="#2fb5d8" piel="#c98b62" pelo="#1d1410" expr={t < 277.5 ? "cansado" : "miedo"} seed={2} t={t} sudor /></g>
         </svg>
       )}
-      <Nubecita t={t} t0={277.2} x1={1000} y1={500} x2={780} y2={700} />
+      <Nubecita t={t} t0={277.2} x1={1000} y1={550} x2={800} y2={690} />
       <Chip t={t} t0={271.8} text="A 2,400-YEAR-OLD JOKE" color={C.violeta} x={960} y={90} centro size={58} />
       <Chip t={t} t0={274.1} t1={276} text="ARISTOPHANES" color={C.oro} tinta={C.noche} x={960} y={850} centro size={70} />
       <Chip t={t} t0={276.2} text="TOP ROW" color={C.lima} tinta={C.noche} x={1500} y={380} centro size={50} />
       <Chip t={t} t0={278.6} text="YOU" color="#2fb5d8" tinta={C.noche} x={500} y={700} centro size={60} />
       <Chip t={t} t0={280.6} text="24 CENTURIES LATER..." color={C.rojo} x={960} y={960} centro size={56} />
-      <Emote t={t} t0={278.0} tipo="susto" x={860 - 20} y={1000 - 330} s={1.4} />
+      <Emote t={t} t0={278.0} tipo="susto" x={860 - 20} y={920 - 300} s={1.4} />
     </Escena>
 
     {/* 285,8 · "Your personal space: one bench, less than a meter... bring their own cushion, a small leather pad, because hours on bare wood will destroy you" */}
     <Escena t={t} t0={285.8} t1={297.7} entra="fundido" sale="paneo" fondo="#7a4520" golpes={[287.3, 288.2, 291.1, 293.5]}>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, #8a5228, #5a3018)" }} />
+      <AbsoluteFill style={{ background: "repeating-linear-gradient(180deg, #8a5228 0px, #7e4a22 118px, #5a3018 118px, #5a3018 126px)" }} />
       {/* vista de arriba: hileras de cabezas en sus bancos */}
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
         {Array.from({ length: 5 }, (_, i) => (

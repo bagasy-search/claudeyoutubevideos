@@ -173,7 +173,6 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
           {t > 385.05 && t < 385.4 && <AbsoluteFill style={{ background: "#fff", opacity: 0.3 * (1 - prog(t, 385.05, 385.4)) }} />}
         </AbsoluteFill>
       )}
-      <Apion t={t} t0={376.2} t1={381} x={1700} y={1050} h={420} borda={1020} acts={[[376.6, "senala"], [378.2, "asombro"]]} />
       <Chip t={t} t0={376.6} t1={380.8} text="OAR: 4+ METERS" color={C.oro} tinta={C.noche} x={960} y={300} centro size={64} />
       <Chip t={t} t0={378.2} t1={380.8} text="A FOREST OF OARS" color={C.violeta} x={960} y={150} centro size={58} />
       <Chip t={t} t0={381.04} t1={384.8} text="0.5 SECONDS LATE" color={C.rojo} x={960} y={150} centro size={62} />
@@ -269,10 +268,10 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
         <AbsoluteFill style={{ background: "#ff2a2a", opacity: t > 431 ? 0.18 + 0.12 * Math.sin(t * 14) : 0, mixBlendMode: "multiply" }} />
         {t > 433 && <Particulas t={t} tipo="brasas" n={30} seed={12} />}
       </Cam>
-      <Franja t={t} />
+      <Franja t={t} alto={t > 431 ? 400 : 250} />
       <Chip t={t} t0={428.86} t1={430.9} text="THE CALL EVERY ROWER DREADS" color={C.violeta} x={960} y={150} centro size={56} />
-      <Grande t={t} t0={431.08} text="FASTER." y={300} size={170} color={C.crema} />
-      <Grande t={t} t0={431.94} text="RAMMING SPEED!" y={520} size={150} color={C.rojo} />
+      <Grande t={t} t0={431.08} text="FASTER." y={120} size={130} color={C.crema} />
+      <Grande t={t} t0={431.94} text="RAMMING SPEED!" y={260} size={130} color={C.rojo} />
       <Chip t={t} t0={433.0} text="LUNGS ON FIRE" color={C.ambar} tinta={C.noche} x={960} y={960} centro size={62} />
     </Escena>
 

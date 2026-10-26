@@ -282,7 +282,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
           <Arbol x={1700} y={720} s={0.35} />
         </Cam>
       )}
-      <Apion t={t} t0={901.0} t1={904.65} x={420} y={1075} h={420} flip={false} acts={[[901.2, "asombro"], [903.6, "senala"]]} />
+      <Apion t={t} t0={901.0} t1={904.65} x={420} y={1040} h={420} viejo flip={false} acts={[[901.2, "asombro"], [903.6, "senala"]]} />
       {t < 904.65 && <Chip t={t} t0={901.0} text="NEXT: THE EDGE OF THE WORLD" color={C.violeta} x={960} y={140} centro size={54} />}
       {t >= 903.0 && t < 904.65 && <Grande t={t} t0={903.0} text="HADRIAN'S WALL" y={300} size={140} color={C.crema} />}
       {t >= 904.65 && (
@@ -295,7 +295,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
             })}
           </svg>
           <Chip t={t} t0={904.7} text="TELL ME IN THE COMMENTS" color={C.violeta} x={960} y={200} centro size={58} />
-          <Apion t={t} t0={904.8} x={1740} y={1070} h={330} desde="nada" acts={[[904.9, "senala"], [906.1, "piensa"], [907.6, "festeja"]]} />
+          <Apion t={t} t0={904.8} x={1740} y={1040} h={330} viejo desde="nada" acts={[[904.9, "senala"], [906.1, "piensa"], [907.6, "festeja"]]} />
           <Chip t={t} t0={906.01} text="WHICH TRAP GETS YOU FIRST?" color={C.rojo} x={960} y={860} centro size={58} />
         </>
       )}
