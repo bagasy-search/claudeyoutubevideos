@@ -296,3 +296,57 @@ export const FondoLuz: React.FC<{ t: number; c1: string; c2: string; ang?: numbe
     </>
   );
 };
+
+// campo / granja: colinas verdes con borde de luz, pueblo lejano, cerca y camino de tierra
+export const SetCampo: React.FC<SP> = ({ t, dx = 0, hora = "tarde", tinte, children }) => {
+  const r = rnd(21);
+  return (
+    <>
+      <Cielo hora={hora} hasta={600} />
+      <Astro x={1480 + dx * 0.1} y={200} r={80} hora={hora} />
+      <Bultos y={560} col="#6a7ac8" seed={31} r={170} dx={dx * 0.12} />
+      <Bruma y={600} col={CIELO[hora][3]} op={0.5} />
+      <Pueblo t={t} y={640} col="#4a5a9a" win={CAPAS[hora].win} seed={9} s={0.6} dx={dx * 0.25} torre={false} />
+      <Bultos y={660} col="#3f8a4a" rim="#c8f08a" seed={37} r={140} dx={dx * 0.4} />
+      <Bultos y={800} col="#2f6e3a" rim="#a8e070" seed={41} r={120} dx={dx * 0.7} />
+      <svg style={{ position: "absolute", left: 0, top: 0, transform: `translateX(${dx}px)`, overflow: "visible" }} width={1920} height={1080}>
+        <path d="M 760 1080 Q 900 900 1060 820 L 1120 820 Q 1040 920 1160 1080 Z" fill="#c89a5a" />
+        {Array.from({ length: 12 }, (_, i) => <rect key={i} x={-60 + i * 180} y={880 + (i % 2) * 6} width={14} height={110} fill="#6a3f22" />)}
+        <rect x={-60} y={900} width={2100} height={12} fill="#7a4a26" /><rect x={-60} y={940} width={2100} height={12} fill="#7a4a26" />
+        {Array.from({ length: 40 }, (_, i) => { const x = r() * 1920, y = 960 + r() * 110; return <path key={`g${i}`} d={`M ${x} ${y} l 6 -26 l 6 26`} fill="#1f4a28" />; })}
+      </svg>
+      {children}
+      <Grado hora={hora} xLuz={1480} yLuz={200} tinte={tinte} />
+    </>
+  );
+};
+
+// isla tropical: mar turquesa, palmeras que se mecen con borde de luz, arena y follaje denso
+export const SetTropico: React.FC<SP> = ({ t, dx = 0, hora = "tarde", tinte, children }) => {
+  const Palma = ({ x, y, s, k }: { x: number; y: number; s: number; k: number }) => {
+    const m = Math.sin(t * 0.9 + k) * 4;
+    return (
+      <svg style={{ position: "absolute", left: x, top: y, overflow: "visible" }} width={1} height={1}>
+        <path d={`M 0 0 Q ${30 * s} ${-200 * s} ${10 * s + m} ${-420 * s}`} stroke="#5a3418" strokeWidth={26 * s} fill="none" strokeLinecap="round" />
+        <g transform={`translate(${10 * s + m} ${-420 * s}) rotate(${m})`}>
+          {[-150, -110, -60, -20, 25, 70, 120, 160].map((a, i) => <path key={i} d={`M 0 0 Q ${Math.cos((a * Math.PI) / 180) * 120 * s} ${Math.sin((a * Math.PI) / 180) * 120 * s - 60 * s} ${Math.cos((a * Math.PI) / 180) * 230 * s} ${Math.sin((a * Math.PI) / 180) * 230 * s + 40 * s}`} stroke={i % 2 ? "#2f8a3a" : "#3fa84a"} strokeWidth={30 * s} fill="none" strokeLinecap="round" />)}
+          <circle cx={0} cy={14 * s} r={18 * s} fill="#6a4a1a" /><circle cx={22 * s} cy={18 * s} r={16 * s} fill="#7a5a22" />
+        </g>
+      </svg>
+    );
+  };
+  return (
+    <>
+      <Cielo hora={hora} hasta={620} />
+      <Astro x={1500 + dx * 0.1} y={200} r={80} hora={hora} />
+      <AguaLuz t={t} y={620} hora="dia" xLuz={1500} c={["#1fb8c0", "#0a6a96"]} />
+      <Bultos y={700} col="#2a6a4a" rim="#bff08a" seed={51} r={130} dx={dx * 0.4} />
+      <div style={{ position: "absolute", inset: 0, transform: `translateX(${dx * 0.6}px)` }}>
+        <Palma x={260} y={820} s={1} k={1} /><Palma x={1640} y={800} s={1.15} k={2} /><Palma x={1380} y={760} s={0.7} k={3} />
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 860, bottom: 0, background: "linear-gradient(180deg, #f2d08a, #c89a5a)" }} />
+      {children}
+      <Grado hora={hora} xLuz={1500} yLuz={200} tinte={tinte} />
+    </>
+  );
+};

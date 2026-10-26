@@ -10,9 +10,9 @@ const PP: [number, number, Expr, G, ("chico" | "essex")?][] = [
   [37.9, 41.0, "sorpresa", "senala"], [45.8, 51.3, "neutro", "senala"], [56.1, 59.0, "miedo", "cabeza"],
   [63.1, 64.6, "feliz", "puno"], [66.5, 68.7, "feliz", "senala"], [139.9, 141.4, "sorpresa", "senala"],
   [159.9, 164.4, "neutro", "sostiene"], [181.0, 182.5, "sorpresa", "puno"], [255.4, 258.2, "triste", "sostiene"],
-  [268.5, 277.8, "triste", "cabeza"], [331.1, 333.7, "triste", "sostiene"], [347.7, 352.2, "sorpresa", "senala"],
-  [359.2, 362.3, "feliz", "senala"], [367.9, 370.1, "sorpresa", "senala"], [450.1, 452.5, "miedo", "cabeza"], [459.8, 462.5, "miedo", "puno"],
-  [470.4, 476.2, "miedo", "cabeza"], [521.0, 523.4, "miedo", "cabeza"], [609.3, 611.8, "sorpresa", "senala"],
+  [268.5, 277.8, "triste", "sostiene"], [331.1, 333.7, "triste", "sostiene"], [347.7, 352.2, "sorpresa", "senala"],
+  [359.2, 362.3, "feliz", "senala"], [367.9, 370.1, "sorpresa", "senala"], [450.1, 452.5, "miedo", "senala"], [459.8, 462.5, "miedo", "puno"],
+  [470.4, 476.2, "miedo", "sostiene"], [521.0, 523.4, "miedo", "senala"], [609.3, 611.8, "sorpresa", "senala"],
   [705.2, 707.9, "miedo", "cabeza", "essex"],
 ];
 const GESTO: Record<G, { bD: number; cD: number; bI: number; cI: number }> = {
@@ -51,8 +51,8 @@ export const Primerplano: React.FC<{ t: number; lista: { a: number; b: number }[
     const j = hs.findIndex((h) => t >= h[0] && t < h[1]);
     if (j < 0) return null;
     const [ha, hb] = hs[j];
-    const gs: G[] = ["senala", "cabeza", "puno", "sostiene"];
-    p = [ha, hb, animo(ha, j), gs[j % 4], ha > 662.8 && ha < 800 ? "essex" : undefined];
+    const gs: G[] = ["senala", "puno", "sostiene"]; // vuelta 9: sin «manos en la cabeza» automático (se repetía)
+    p = [ha, hb, animo(ha, j), gs[j % 3], ha > 662.8 && ha < 800 ? "essex" : undefined];
     lado = j % 2;
   }
   const [a, b, expr, g, quien] = p;

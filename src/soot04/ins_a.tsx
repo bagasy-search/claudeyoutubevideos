@@ -492,7 +492,7 @@ export const INS_A: Ins[] = [
           <Monto t={t} ks={[[207.8, 200], [212.3, 169], [216.8, 129], [219.3, 117], [220.6, 99], [222.2, 95], [229.2, -9]]} x={1380} y={300} size={200} color={t > 229.3 ? C.rojo : C.oro} />
           {it.map(([t0, txt, m, g], k) => (
             <React.Fragment key={k}>
-              <Vuela t={t} t0={t0 - 0.5} t1={t0} x0={2100} y0={420 + k * 60} x1={720} y1={560} arco={160} giro={-360} s={1.1} queda={false}>{g}</Vuela>
+              <Vuela t={t} t0={t0 - 0.5} t1={t0} x0={-300} y0={420 + k * 60} x1={720} y1={560} arco={160} giro={-360} s={1.1} queda={false}>{g}</Vuela>
               {t > t0 && <div style={{ position: "absolute", left: 1060, top: 470 + k * 82, fontFamily, fontWeight: 700, fontSize: 46, color: "#fff", transform: `scale(${ent(t, t0)})`, transformOrigin: "left", whiteSpace: "nowrap" }}><span style={{ color: C.rojo }}>{m}</span>  {txt}</div>}
             </React.Fragment>
           ))}

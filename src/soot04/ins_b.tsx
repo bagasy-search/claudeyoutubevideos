@@ -106,7 +106,7 @@ export const INS_B: Ins[] = [
               <g transform={`scale(${ent(t, 306.2)})`}><path d="M -110 -120 L 110 -120 L 90 60 Q 0 90 -90 60 Z" fill="#f4f0e8" stroke={C.noche} strokeWidth={8} /><ellipse cx={0} cy={-120} rx={110} ry={26} fill="#5a3418" /><path d="M 110 -80 Q 180 -60 100 10" stroke={C.noche} strokeWidth={14} fill="none" />{[0, 1, 2].map((k) => { const u = (t * 0.8 + k / 3) % 1; return <path key={k} d={`M ${-40 + k * 40} ${-150 - u * 120} q 20 -30 0 -60`} stroke="#fff" strokeWidth={8} fill="none" opacity={1 - u} />; })}</g>
             </svg>
           )}
-          <Chip t={t} t0={306.3} text="SOAK IT IN COFFEE" color={C.noche} x={1350} y={1010} centro size={54} />
+          <Chip t={t} t0={306.3} text="SOAK IT IN COFFEE" color={C.noche} x={1350} y={890} centro size={54} />
         </>
       );
     },
@@ -294,7 +294,7 @@ export const INS_B: Ins[] = [
       return (
         <>
           <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translateY(${baja}px)` }}>
-            <Chico x={960} y={1010} h={760} t={t} expr="miedo" bD={160} bI={160} cD={10} cI={10} inclina={t > 440.4 ? Math.sin(t * 14) * 10 : 0} />
+            <Chico x={960} y={1010} h={760} t={t} expr="miedo" bD={t > 440.4 ? 120 + Math.sin(t * 11) * 35 : 70} cD={t > 440.4 ? 40 + Math.sin(t * 13) * 30 : 90} bI={t > 440.4 ? 150 + Math.sin(t * 9 + 1) * 25 : 40} cI={t > 440.4 ? 20 : 80} inclina={t > 440.4 ? Math.sin(t * 14) * 10 : -6} mira={0.4} miraY={0.8} />
             <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}>
               <ellipse cx={1000} cy={995} rx={50 - prog(t, 439.6, 440.1) * 18} ry={20} fill="none" stroke="#e8d28a" strokeWidth={14} />
               <path d={t > 440.4 ? `M 1000 1010 L ${1000 + Math.sin(t * 9) * 20} 1700` : `M 1040 1000 Q 1400 ${980 + Math.sin(t * 8) * 30} 2000 990`} stroke="#e8d28a" strokeWidth={14} fill="none" />
@@ -316,7 +316,7 @@ export const INS_B: Ins[] = [
     d: (t) => (
       <>
         <Hacha x={960} y={560} s={3.2 * ent(t, 445.6)} rot={interpolate(t, [446.6, 447.1], [-30, 40], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
-        <Chico x={360} y={1290} h={1000} t={t} expr={t < 448 ? "miedo" : "sorpresa"} bD={150} cD={20} bI={150} cI={20} salta={448.9} />
+        <Chico x={360} y={1290} h={1000} t={t} expr={t < 448 ? "miedo" : "sorpresa"} salta={448.9} />
         <Chip t={t} t0={446.1} text="HATCHET: CUT THE LINE" color={C.violeta} x={960} y={150} centro size={62} />
         <Monto t={t} ks={[[448.0, 3], [448.4, 2], [448.8, 1], [449.2, 0]]} x={1560} y={560} size={200} pre="" color={t > 449.2 ? C.rojo : C.crema} />
         <Sello t={t} t0={449.0} text="NO TIME" x={960} y={900} size={110} rot={-6} />
@@ -393,7 +393,7 @@ export const INS_B: Ins[] = [
       return (
         <>
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
-          <g transform={`translate(560 560) scale(${0.6 + 0.4 * ent(t, 498.4)})`}>
+          <g transform={`translate(330 470) scale(${0.55 * (0.6 + 0.4 * ent(t, 498.4))})`}>
             <circle r={230} fill="#ff8a1a" stroke={C.noche} strokeWidth={10} /><circle r={160} fill="#ffd08a" opacity={pela} />
             <path d="M 0 -230 A 230 230 0 1 1 -1 -230" fill="none" stroke="#e8701a" strokeWidth={60} strokeDasharray={1445} strokeDashoffset={1445 * pela} />
             <path d={`M 0 -230 Q ${120 + pela * 200} ${-300 - pela * 100} ${260 + pela * 260} ${-140 + pela * 300}`} stroke="#e8701a" strokeWidth={46} fill="none" strokeLinecap="round" opacity={pela > 0.05 ? 1 : 0} />
@@ -404,8 +404,8 @@ export const INS_B: Ins[] = [
             <path d={`M 380 -80 Q 420 -300 ${260 + pela * 60} -480`} stroke="#f0d0b0" strokeWidth={50} fill="none" strokeLinecap="round" opacity={pela} />
             <line x1={260 + pela * 60} y1={-480} x2={260 + pela * 60} y2={-640} stroke="#5a3418" strokeWidth={10} />
           </g>
-          <text x={560} y={190} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 498.5, 498.8)}>LIKE PEELING AN ORANGE</text>
-          <text x={1380} y={940} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.noche} opacity={prog(t, 502.7, 503.0)}>…1 TON A STRIP</text>
+          <text x={480} y={190} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill={C.crema} stroke={C.noche} strokeWidth={12} paintOrder="stroke" opacity={prog(t, 498.5, 498.8)}>LIKE PEELING AN ORANGE</text>
+          <text x={1380} y={1030} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.crema} stroke={C.noche} strokeWidth={12} paintOrder="stroke" opacity={prog(t, 502.7, 503.0)}>…1 TON A STRIP</text>
         </svg>
         <Marino i={2} x={1000} y={1260} h={620} t={t} expr="enojado" bD={110 + Math.sin(t * 5) * 25} cD={60} manoD={<g transform="rotate(-150) scale(1.1)"><Pala x={0} y={0} /></g>} inclina={Math.sin(t * 5) * 5} />
         </>
@@ -493,14 +493,14 @@ export const INS_B: Ins[] = [
           {t < 565.2 && <Marino i={5} x={250} y={1300} h={980} t={t} expr={t < 560.6 ? "neutro" : "sorpresa"} mira={1} miraY={-0.4} salta={560.7} bD={t > 560.6 ? 120 : 60} cD={t > 560.6 ? 10 : 100} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />}
           <Chip t={t} t0={557.6} t1={560.8} text="THE HEAD" color={C.violeta} x={960} y={90} centro size={56} />
           <Rot t={t} t0={561.0} t1={565.6} text="SPERMACETI" x={960} y={130} size={110} color={C.crema} />
-          <Chip t={t} t0={562.1} t1={565.7} text="THE FINEST CANDLE WAX" color={C.ambar} tinta={C.noche} x={960} y={1000} centro size={50} />
+          <Chip t={t} t0={562.1} t1={565.7} text="THE FINEST CANDLE WAX" color={C.ambar} tinta={C.noche} x={960} y={940} centro size={50} />
           {t >= 565.2 && (
             <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: "polygon(300px 240px, 1600px 240px, 1600px 620px, 300px 620px)" }}>
               <Marino i={2} x={interpolate(t, [565.3, 566.6], [1700, 1300], { extrapolateRight: "clamp" })} y={interpolate(t, [565.3, 566.6], [500, 760], { extrapolateRight: "clamp" })} h={600} t={t} expr="feliz" flip bD={t > 567.6 ? interpolate(Math.sin(t * 6), [-1, 1], [40, 140]) : 70} manoD={<path d="M -50 0 L 50 0 L 40 90 L -40 90 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />} />
             </div>
           )}
           <Chip t={t} t0={565.9} text="A MAN CLIMBS INSIDE" color={C.rojo} x={1250} y={140} centro size={54} />
-          <Chip t={t} t0={567.7} text="+ A BUCKET" color={C.teal} tinta={C.noche} x={1250} y={240} centro size={54} />
+          <Chip t={t} t0={567.7} text="+ A BUCKET" color={C.teal} tinta={C.noche} x={1640} y={140} centro size={54} />
         </>
       );
     },

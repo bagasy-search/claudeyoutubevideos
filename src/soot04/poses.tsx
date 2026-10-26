@@ -59,7 +59,7 @@ export const vida = (t: number, seed: number, lista: (keyof typeof POSES)[] = OR
 
 // repertorios por ánimo (para que la multitud actúe la emoción de la frase)
 export const ANIMO: Record<string, (keyof typeof POSES)[]> = {
-  miedo: ["cabeza", "encoge", "susurra", "cruzados", "codazo"],
+  miedo: ["encoge", "susurra", "cruzados", "codazo", "senala"],
   alegre: ["aplaude", "puno", "saluda", "explica", "codazo"],
   triste: ["cruzados", "piensa", "rasca", "encoge"],
   charla: ["explica", "codazo", "susurra", "senala", "rasca", "encoge", "cuenta"],

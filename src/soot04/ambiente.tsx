@@ -1,6 +1,6 @@
 import React from "react";
 import { Gaviota, Ballenero, Isla } from "./kit3";
-import { SetPuerto, SetCamarote, SetCubierta, SetMar } from "./sets";
+import { SetPuerto, SetCamarote, SetCubierta, SetMar, SetCampo, SetTropico } from "./sets";
 import { Multitud, type Puesta } from "./multitud";
 import { Persona, CIVIL, MARINO } from "./persona";
 
@@ -15,12 +15,21 @@ const gentio = (civil: boolean) => (p: Puesta) => (
 // Ahora cada inserto va sobre un AMBIENTE ilustrado del tramo del relato (puerto, oficina/taberna, cubierta,
 // mar abierto, deriva, puerto de noche), con profundidad, cosas que se mueven solas y una deriva lenta de cámara.
 // El color del inserto (c1) queda como viñeta en los bordes para no perder la paleta de cada escena.
-type Esc = "puerto" | "interior" | "cubierta" | "mar" | "deriva" | "noche";
-const escenario = (t: number): Esc =>
-  t < 130 ? "puerto" : t < 300 ? "interior" : t < 560 ? "cubierta" : t < 662 ? "mar" : t < 800 ? "deriva" : "noche";
+type Esc = "puerto" | "interior" | "cubierta" | "mar" | "deriva" | "noche" | "campo" | "tropico";
+// vuelta 9 OJO: tramos con lugar propio (el relato sale del barco) mandan sobre el tramo general
+const LUGAR: [number, number, Esc][] = [
+  [240, 262, "puerto"], // Nantucket cuáquera
+  [610, 637, "tropico"], // Marquesas / Melville
+  [640, 655, "puerto"], // de vuelta en Nantucket
+  [838, 846, "interior"], // Pollard viejo
+  [858, 872, "campo"], // petróleo en Pennsylvania
+];
+const verde = (c: string) => { const [r, g, b] = [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16)); return g > r + 10 && g > b; };
+const escenario = (t: number, c1 = "#000000"): Esc =>
+  LUGAR.find((l) => t >= l[0] && t < l[1])?.[2] ?? (verde(c1) && t < 200 ? "campo" : t < 130 ? "puerto" : t < 300 ? "interior" : t < 560 ? "cubierta" : t < 662 ? "mar" : t < 800 ? "deriva" : "noche");
 
 export const Ambiente: React.FC<{ t: number; c1: string; c2: string; cx?: number; cy?: number }> = ({ t, c1, c2, cx = 960, cy = 540 }) => {
-  const e = escenario(t);
+  const e = escenario(t, c1);
   const dx = Math.sin(t * 0.21) * 40; // deriva lenta de cámara (capa cercana se mueve más)
   // vuelta 8 OJO: los ambientes pasan a los SETS ILUSTRADOS CON LUZ (sets.tsx), al nivel del molde
   let capa: React.ReactNode;
@@ -45,6 +54,8 @@ export const Ambiente: React.FC<{ t: number; c1: string; c2: string; cx?: number
         {[0, 1].map((i) => { const x = ((i * 1100 + t * 60) % 2400) - 240; return <svg key={i} style={{ position: "absolute", left: x, top: 760 + i * 120, overflow: "visible" }} width={1} height={1}><path d="M -40 0 Q -10 -70 30 -90 Q 20 -40 40 0 Z" fill="#1a0f2a" /><path d="M -60 4 Q 0 -6 60 4" stroke="#ffb890" strokeWidth={4} fill="none" /></svg>; })}
       </>} />
     );
+  else if (e === "campo") capa = <SetCampo t={t} dx={dx} hora="tarde" />;
+  else if (e === "tropico") capa = <SetTropico t={t} dx={dx} hora="tarde" />;
   else capa = <SetPuerto t={t} dx={dx} hora="noche"><Multitud t={t} n={6} y={915} h={230} filas={2} seed={12} caminan={0.5} pinta={gentio(true)} /></SetPuerto>;
   return (
     <>

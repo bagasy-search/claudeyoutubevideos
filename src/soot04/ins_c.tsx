@@ -1,5 +1,6 @@
 import React from "react";
 import { conVida } from "./poses";
+import { SetMar, SetCubierta } from "./sets";
 import { interpolate } from "remotion";
 import { C, ent, prog, Chip, Emote, fontFamily } from "./kit";
 import { Svg, Cachalote, Bote, Splash, Ballenero, Isla, CasaNan, Farol, Galleta, Pajitas, Pistola, Tiburon, Humo, Barril0, Moneda0 } from "./kit3";
@@ -83,8 +84,10 @@ export const INS_C: Ins[] = [
           <Selva t={t} />
           <Chico x={corre} y={980} h={700} t={t} expr={entra > 0.5 ? "feliz" : "miedo"} camina={2.4} bD={70} bI={110} cD={40} cI={40} mira={1} />
           {entra > 0 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `inset(0 0 0 ${2000 - entra * 900}px)` }}><svg width={1920} height={1080}>{Array.from({ length: 6 }, (_, k) => <ellipse key={k} cx={1100 + k * 160} cy={860 + (k % 2) * 60} rx={170} ry={130} fill={k % 2 ? "#2f8a4a" : "#3aa05a"} />)}</svg></div>}
-          {t >= 615.2 && <Svg x={280} y={300} s={ent(t, 615.2)}><circle r={70} fill="#ff9a2a" /><path d="M 0 -70 q 10 -40 40 -40" stroke="#3a6a2a" strokeWidth={10} fill="none" /></Svg>}
-          {t >= 615.2 && <Svg x={440} y={300} s={ent(t, 615.5)}><path d="M -40 -70 L 40 -70 L 50 70 L -50 70 Z" fill="#8ad0ff" stroke={C.noche} strokeWidth={6} /></Svg>}
+          {t >= 615.2 && <Svg x={380} y={560} s={1.4 * ent(t, 615.2)}><circle r={70} fill="#ff9a2a" /><path d="M 0 -70 q 10 -40 40 -40" stroke="#3a6a2a" strokeWidth={10} fill="none" /></Svg>}
+          {t >= 615.2 && <Svg x={600} y={560} s={1.4 * ent(t, 615.5)}><path d="M -40 -70 L 40 -70 L 50 70 L -50 70 Z" fill="#8ad0ff" stroke={C.noche} strokeWidth={6} /></Svg>}
+          <Chip t={t} t0={615.3} text="FRESH FRUIT" color={C.naranja} x={380} y={420} centro size={52} />
+          <Chip t={t} t0={615.6} text="WATER" color={C.teal} x={600} y={720} centro size={52} />
           <Rot t={t} t0={612.0} text="THEY RAN AWAY" x={1100} y={170} size={120} color={C.crema} />
           <Chip t={t} t0={618.4} text="…AND NEVER CAME BACK" color={C.violeta} x={1100} y={320} centro size={58} />
         </>
@@ -260,11 +263,15 @@ export const INS_C: Ins[] = [
       const wx = 2600 - (2600 - 1660) * (0.45 * v + 0.55 * v * v); // entra ya en cuadro y acelera
       const sac = golpe && t < 702.0 ? Math.sin(t * 70) * 26 * (702.0 - t) : 0;
       const zoom = 1 + 0.18 * v * v + (golpe ? 0.06 : 0);
-      const flash = golpe ? Math.max(0, 1 - (t - 700.7) / 0.1) * 0.85 : 0; // ≤3 cuadros
+      const flash = golpe ? Math.max(0, 1 - (t - 700.7) / 0.1) * 0.5 : 0; // ≤3 cuadros (vuelta 8: más bajo, lavaba el plano)
+      const hunde = prog(t, 701.0, 702.5);
       return (
         <>
           <div style={{ position: "absolute", inset: 0, transform: `translate(${sac}px, ${sac * 0.6}px) scale(${zoom})`, transformOrigin: "1250px 600px" }}>
-            <Ballenero x={760} y={560} t={t} escala={0.55} nombre="ESSEX" roto={golpe ? 0.12 * Math.min(1, (t - 700.7) / 0.4) : 0} />
+            {/* vuelta 8 OJO: faltaba ver que se hunde → la proa se escora y baja después del golpe */}
+            <div style={{ position: "absolute", inset: 0, transform: `translateY(${hunde * 70}px) rotate(${hunde * 7}deg)`, transformOrigin: "1150px 600px" }}>
+              <Ballenero x={760} y={560} t={t} escala={0.55} nombre="ESSEX" roto={golpe ? 0.12 + 0.2 * hunde : 0} />
+            </div>
             {/* estela de espuma detrás de la ballena (crece con la velocidad) */}
             {Array.from({ length: 14 }, (_, k) => {
               const ex = wx + 420 + k * (60 + 120 * v);
@@ -274,7 +281,13 @@ export const INS_C: Ins[] = [
             {golpe && <Cachalote x={1660 + Math.sin(Math.min(1, (t - 700.7) / 0.6) * Math.PI) * 70} y={600} t={t} s={0.85} flip nada={0.5} enojo />}
             {/* líneas de velocidad */}
             {v > 0.3 && !golpe && Array.from({ length: 8 }, (_, k) => <div key={`l${k}`} style={{ position: "absolute", left: wx + 300 + ((k * 137 + t * 900) % 500), top: 470 + k * 34, width: 160 + v * 200, height: 6, borderRadius: 3, background: "rgba(255,255,255,.75)" }} />)}
-            {golpe && <Splash x={1240} y={590} t={t} t0={700.7} s={3.2} />}
+            {golpe && <Splash x={1240} y={590} t={t} t0={700.7} s={1.8} />}
+            {/* corona de agua SÓLIDA con contorno (las gotas translúcidas gigantes se leían como burbujas lavadas) */}
+            {golpe && t < 702.0 && (() => {
+              const u = Math.min(1, (t - 700.7) / 0.35), f = 1 - prog(t, 701.4, 702.0);
+              const pk = Array.from({ length: 7 }, (_, i) => { const x = -270 + i * 90, alto = (i % 2 ? 170 : 300) * (1 - Math.abs(i - 3) / 5); return `Q ${x - 10} ${-alto * u * 0.6} ${x + 20} ${-alto * u} Q ${x + 50} ${-alto * u * 1.05} ${x + 55} ${-alto * u * 0.55} Q ${x + 70} ${-alto * u * 0.25} ${x + 90} ${-30 * u}`; }).join(" ");
+              return <svg style={{ position: "absolute", left: 1240, top: 610, overflow: "visible", opacity: f }} width={1} height={1}><path d={`M -300 0 ${pk} L 360 0 Z`} fill="#f4fbff" stroke="#1d3d72" strokeWidth={7} strokeLinejoin="round" />{Array.from({ length: 10 }, (_, i) => <circle key={i} cx={-250 + i * 60} cy={-(200 + (i % 3) * 90) * u + 400 * u * u * (i % 2)} r={14 + (i % 3) * 6} fill="#f4fbff" stroke="#1d3d72" strokeWidth={5} />)}<path d={`M -240 -20 Q 0 ${-60 * u} 240 -20`} stroke="#9fd6f5" strokeWidth={14} fill="none" /></svg>;
+            })()}
             {/* astillas de la proa */}
             {golpe && Array.from({ length: 16 }, (_, k) => {
               const u = Math.min(1, (t - 700.7) / 1.2), ang = -Math.PI * (0.15 + 0.7 * ((k * 7) % 16) / 16);
@@ -486,7 +499,7 @@ export const INS_C: Ins[] = [
     fondo: () => <Grad c1="#140e22" c2="#06040c" />,
     d: (t) => (
       <>
-        <Marino i={2} x={330} y={1290} h={900} t={t} expr="miedo" bD={160} bI={160} cD={10} cI={10} mira={1} />
+        <Marino i={2} x={330} y={1290} h={900} t={t} expr="miedo" mira={1} />
         <Marino i={4} x={1640} y={1290} h={860} t={t} expr="triste" flip bD={20} cD={40} inclina={-6} />
         <Pistola x={960} y={560} s={2.4 * ent(t, 791.0)} rot={-6} humo={t > 792.55 ? 1 - prog(t, 792.8, 794) * 0.6 : 0} />
         <Chip t={t} t0={790.7} text="CHOSEN BY LOT" color={C.violeta} x={960} y={180} centro size={60} />
@@ -509,11 +522,14 @@ export const INS_C: Ins[] = [
             <Chip t={t} t0={797.5} text="PICKED UP · SOUTH AMERICA" color={C.violeta} x={1150} y={330} centro size={52} />
           </>
         )}
-        {t >= 799.8 && <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,#2a2440,#141024)" }} />}
+        {t >= 799.8 && <div style={{ position: "absolute", inset: 0 }}><SetCubierta t={t} hora="noche" /></div>}
         {t >= 799.8 && [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map((k) => {
           // vuelta 5: la tripulación REAL (no muñequitos), los que mueren caen y se apagan
           const vive = [1, 3, 6, 8, 11, 14, 16, 18].includes(k), ap = vive ? 0 : prog(t, 801.6 + (k % 7) * 0.08, 802.0 + (k % 7) * 0.08);
-          return <Marino key={k} i={k % 6} x={960 + ((k % 10) - 4.5) * 178} y={(k < 10 ? 560 : 880) + ap * 40} h={330} t={t} expr={ap > 0.3 ? "dormido" : vive && t > 802.3 ? "triste" : "miedo"} inclina={ap * 70 * (k % 2 ? 1 : -1)} opacity={1 - ap * 0.7} />;
+          // vuelta 9 OJO: no dos filas de clones → 3 filas de profundidad (8/7/5), ropa distinta, cada uno con su gesto
+          const fila = k < 8 ? 0 : k < 15 ? 1 : 2, j = fila === 0 ? k : fila === 1 ? k - 8 : k - 15, n = [8, 7, 5][fila];
+          const px = 960 + (j - (n - 1) / 2) * [215, 250, 330][fila] + ((k * 37) % 50) - 25;
+          return <Marino key={k} i={k} x={px} y={[470, 680, 880][fila] + ap * 40} h={[250, 320, 400][fila]} t={t} expr={ap > 0.3 ? "dormido" : vive && t > 802.3 ? "triste" : "miedo"} inclina={ap * 70 * (k % 2 ? 1 : -1)} opacity={1 - ap * 0.7} />;
         })}
         {t >= 799.8 && <Monto t={t} t0={799.8} ks={[[799.8, 20], [801.7, 8]]} x={960} y={120} size={110} pre="" suf=" ALIVE" color={C.crema} />}
         <Rot t={t} t0={802.3} text="8 SURVIVED" x={960} y={t > 799.8 ? 1000 : 380} size={120} color={C.lima} />

@@ -16,7 +16,8 @@ export const Rayos2: React.FC<{ t: number; c1: string; c2: string; cx?: number; 
 // vuelta 8 OJO: los fondos lisos y el mar plano pasan a los sets con luz (sets.tsx) sin tocar cada escena
 export const Grad: React.FC<{ c1: string; c2: string; ang?: number }> = ({ c1, c2, ang = 180 }) => {
   const t = useCurrentFrame() / 30;
-  return <FondoLuz t={t} c1={c1} c2={c2} ang={ang} />;
+  // vuelta 9 OJO: el bokeh liso seguía leyéndose «vacío» → set ilustrado del lugar del relato, con el color como tinte
+  return ang === 180 ? <Ambiente t={t} c1={c1} c2={c2} /> : <FondoLuz t={t} c1={c1} c2={c2} ang={ang} />;
 };
 // cielo arriba + mar abajo (horizonte en y)
 export const Mar: React.FC<{ t: number; y?: number; cielo?: [string, string]; mar?: [string, string] }> = ({ t, y = 640, cielo = ["#7fc8f0", "#d8f0ff"] }) => (

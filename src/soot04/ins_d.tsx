@@ -277,9 +277,9 @@ export const INS_D: Ins[] = [
           : <Marino key={k} i={k} x={600 + k * 360} y={644} h={560} t={t} expr="neutro" bD={110} cD={60} inclina={Math.sin(t * 3 + k) * 6} />)}
         {t < 493.8 && <Marino i={4} x={1730} y={1300} h={920} t={t} expr={t < 490.3 ? "orgullo" : "neutro"} flip mira={-1} bD={t > 490.3 ? 140 : 60} cD={t > 490.3 ? 20 : 100} salta={490.4} manoD={<line x1={0} y1={0} x2={0} y2={-200} stroke="#8a8a9a" strokeWidth={14} strokeDasharray="22 8" />} />}
         <Chip t={t} t0={489.4} text="DRAGGED BACK" color={C.violeta} x={960} y={130} centro size={54} />
-        <Chip t={t} t0={490.3} text="CHAINED TO THE SHIP" color={C.noche} x={960} y={220} centro size={50} />
+        <Chip t={t} t0={490.3} text="CHAINED TO THE SHIP" color={C.noche} x={960} y={120} centro size={50} />
         <Rot t={t} t0={492.4} t1={493.6} text="THE CUTTING IN" x={960} y={60} size={90} color={C.crema} />
-        <Chip t={t} t0={494.7} text="A NARROW PLANK OVER THE WATER" color={C.rojo} x={960} y={1010} centro size={48} />
+        <Chip t={t} t0={494.7} text="A NARROW PLANK OVER THE WATER" color={C.rojo} x={960} y={930} centro size={48} />
       </>
     ),
   },
@@ -342,7 +342,7 @@ export const INS_D: Ins[] = [
           <Chip t={t} t0={536.2} text="THE CRISPY SCRAPS" color={C.tierra} x={960} y={210} centro size={50} />
           <Rot t={t} t0={538.8} t1={540.3} text="THE WHALE BURNS ITSELF" x={1100} y={340} size={78} color={C.rojo} tiembla />
           {t >= 540.4 && <Monto t={t} ks={[[541.2, 1], [542.3, 2], [543.2, 3]]} x={960} y={340} size={120} pre="DAY " color={C.crema} />}
-          {t >= 540.4 && <Chip t={t} t0={540.5} text={dias >= 3 ? "3 DAYS STRAIGHT" : "DAY AND NIGHT"} color={C.noche} x={960} y={210} centro size={52} />}
+          {t >= 540.4 && <Chip t={t} t0={540.5} text={dias >= 3 ? "3 DAYS STRAIGHT" : "DAY AND NIGHT"} color={C.noche} x={1560} y={250} centro size={52} />}
         </>
       );
     },
