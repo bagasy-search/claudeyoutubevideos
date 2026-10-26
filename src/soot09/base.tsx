@@ -64,7 +64,8 @@ export const Base: React.FC<{ t: number }> = ({ t }) => {
       {/* pueblo Powhatan y sus campos de maíz */}
       {[27600, 28200, 28800].map((x, i) => <En key={x} x={x} w={400}><Yehakin x={x} t={t + i} s={i === 1 ? 1.15 : 0.95} /></En>)}
       <En x={29500} w={600}>
-        <>{Array.from({ length: 10 }, (_, i) => <Choclo key={i} x={29200 + i * 70} y={SUELO - 100 - (i % 2) * 10} s={0.8} />)}</>
+        {/* en la sequía (1609) el maizal verde se apaga y quedan los tallos secos de P5 */}
+        <div style={{ position: "absolute", left: 0, top: 0, opacity: t > 476.8 && t < 494.4 ? 1 - prog(t, 476.9, 478.0) : 1 }}>{Array.from({ length: 10 }, (_, i) => <Choclo key={i} x={29200 + i * 70} y={SUELO - 100 - (i % 2) * 10} s={0.8} />)}</div>
       </En>
       {/* arrecife de Bermudas */}
       <En x={13000} w={400}>

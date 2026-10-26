@@ -61,7 +61,12 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
           </>
         )}
         {/* los campos de maíz de los Powhatan también se secan */}
-        {t > 476.8 && t < 480.3 && <En x={29550} w={700}><svg style={{ position: "absolute", left: 29150, top: SUELO - 200, overflow: "visible", opacity: prog(t, 478.2, 479.2) }} width={760} height={200}>{Array.from({ length: 10 }, (_, i) => <path key={i} d={`M ${50 + i * 70} 200 q -40 -80 -20 -150 M ${50 + i * 70} 200 q 40 -60 30 -120`} stroke="#a08a4a" strokeWidth={10} fill="none" />)}</svg></En>}
+        {t > 476.8 && t < 494.4 && <En x={29550} w={700}><svg style={{ position: "absolute", left: 29150, top: SUELO - 200, overflow: "visible", opacity: prog(t, 477.0, 478.0) }} width={760} height={200}>{Array.from({ length: 10 }, (_, i) => <path key={i} d={`M ${50 + i * 70} 200 q -40 -80 -20 -150 M ${50 + i * 70} 200 q 40 -60 30 -120`} stroke="#a08a4a" strokeWidth={10} fill="none" />)}</svg></En>}
+        {/* una madre esconde su canasta y abraza al hijo */}
+        {t > 483.8 && t < 487.6 && <En x={28650} w={500}>
+          <Persona x={28700} y={SUELO} h={290} t={t} seed={545} ropa={POW(3)} flip expr="triste" inclina={-10} bD={70} cD={80} mira={-0.5} aparece={483.9} manoD={<path d="M -40 30 Q -50 -20 0 -26 Q 50 -20 40 30 Z" fill="#c8a868" stroke="#6a4a2a" strokeWidth={6} />} />
+          <Persona x={28560} y={SUELO} h={170} t={t} seed={546} ropa={POW(1)} expr="triste" miraY={-0.6} mira={0.5} aparece={484.0} />
+        </En>}
         {/* la canasta que se va del plato de una familia */}
         {t > 480.2 && t < 487.6 && (() => { const u = prog(t, 481.0, 483.6); return <Canasta x={28950 - u * 900} y={SUELO - 140 - Math.sin(u * Math.PI) * 240} s={0.45} />; })()}
         {/* Smith río arriba, en invierno, capturado */}

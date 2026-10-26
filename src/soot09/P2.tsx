@@ -233,8 +233,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
         <div style={{ position: "absolute", left: 0, top: 0 }}>
           <Choclo x={760} y={330} s={1.6} t={t} t0={208.3} />
           <div style={{ position: "absolute", left: 1100, top: 380, transform: `scale(${ent(t, 210.06)})`, transformOrigin: "50% 100%" }}><Choclo x={0} y={0} s={0.55} /></div>
-          <Chip t={t} t0={210.06} t1={211.6} text="SMALL" color={C.rosa} x={1050} y={460} size={48} />
-          <Chip t={t} t0={210.52} t1={211.6} text="LATE" color={C.rojo} x={1200} y={460} size={48} />
+          <Chip t={t} t0={210.06} t1={211.6} text="SMALL" color={C.rosa} x={1250} y={250} size={56} />
+          <Chip t={t} t0={210.52} t1={211.6} text="LATE" color={C.rojo} x={1250} y={340} size={56} />
           {t > 209.0 && <svg style={{ position: "absolute", left: 960, top: 300, overflow: "visible" }} width={10} height={10}><path d="M -60 40 L 40 40" stroke="#fff" strokeWidth={14} strokeLinecap="round" opacity={ent(t, 209.4)} /><path d="M 20 18 L 48 40 L 20 62" stroke="#fff" strokeWidth={14} fill="none" strokeLinecap="round" opacity={ent(t, 209.4)} /></svg>}
         </div>
       )}
