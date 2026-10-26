@@ -155,8 +155,12 @@ const Consejo: React.FC<{ t: number }> = ({ t }) => {
 const Cienaga: React.FC<{ t: number }> = ({ t }) => (
   <AbsoluteFill style={{ background: "linear-gradient(180deg,#5c6f8f,#8b95aa)" }}>
     <div style={{ position: "absolute", left: 0, right: 0, top: 720, bottom: 0, background: "#4a4a2a" }} />
-    <Persona x={960} y={960} h={520} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" expr={t > T("is the first piece", D) ? "feliz" : "triste"} bD={t > T("is the first piece", D) ? 150 : 20} cD={t > T("is the first piece", D) ? 160 : 0} />
+    {[0, 1, 2, 3, 4, 5].map((i) => <div key={"j" + i} style={{ position: "absolute", left: 80 + i * 330, top: 600, width: 14, height: 140, background: "#5a6a2a", borderRadius: 7, transform: `rotate(${Math.sin(t * 1.3 + i) * 6}deg)`, transformOrigin: "50% 100%" }} />)}
+    {(() => { const t0 = T("if you are the soldier freezing", D); const k = prog(t, t0, t0 + 3.2); const ok = t > T("is the first piece", D); return <Persona x={960} y={960 + 60 * k} h={520} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" expr={ok ? "feliz" : k > 0.3 ? "miedo" : "triste"} bD={ok ? 150 : 60 + 70 * k} cD={ok ? 160 : 40} bI={ok ? 20 : 60 + 70 * k} cI={40} />; })()}
     <div style={{ position: "absolute", left: 0, right: 0, top: 820, bottom: 0, background: "#3a3a20" }} />
+    {Array.from({ length: 7 }, (_, i) => { const q = (t * 0.9 + i / 7) % 1; return <div key={"b" + i} style={{ position: "absolute", left: 860 + ((i * 53) % 200), top: 830 - q * 40, width: 18 + (i % 3) * 8, height: 18 + (i % 3) * 8, borderRadius: "50%", border: "4px solid #8a8a5a", opacity: 1 - q }} />; })}
+    {[0, 1].map((i) => { const t0 = T("if you are the soldier freezing", D) + 0.8 + i * 0.5; return <Actua key={"l" + i} t={t} beats={[[t0, "camina"], [t0 + 2, "miedo"]]} x0={-200 - i * 180} x1={2200} y={1150 + i * 30} h={560} frio vuelta={t0} />; })}
+    {[0, 1, 2, 3].map((i) => <div key={"jj" + i} style={{ position: "absolute", left: i * 560 - 40, top: 860, width: 22, height: 260, background: "#3f5a1f", borderRadius: 11, transform: `rotate(${-8 + Math.sin(t * 1.7 + i) * 7}deg)`, transformOrigin: "50% 100%" }} />)}
     {Array.from({ length: 8 }, (_, i) => <div key={i} style={{ position: "absolute", left: 200 + i * 220, top: 830 + Math.sin(t * 3 + i) * 6, width: 120, height: 16, borderRadius: 8, background: "#6a6a3a" }} />)}
     <Lluvia t={t} n={170} op={0.6} seed={61} />
     <Chip t={t} t0={T("if you are the soldier freezing", D)} text="A BOG · SCOTLAND" color="#4a4a2a" x={960} y={140} centro size={56} />
@@ -184,6 +188,8 @@ const Conspira: React.FC<{ t: number }> = ({ t }) => {
   const pulse = t > a ? 1 + 0.08 * Math.sin(t * 12) : 1;
   return (
     <Mapa t={t}>
+      {([[930, 120, "#4fb0d8"], [600, 560, C.lima], [1560, 760, C.ambar]] as const).map(([x0, y0, col], i) => <div key={"o" + i} style={{ position: "absolute", left: x0 - 70, top: y0 - 70 + 40, width: 140, height: 140, borderRadius: "50%", border: `10px solid ${col}`, transform: `scale(${0.8 + 0.25 * Math.abs(Math.sin(t * 4 + i))})` }} />)}
+      {([[930, 120], [600, 560], [1560, 760]] as const).map(([x0, y0], i) => <Picto key={"q" + i} x={x0} y={y0 + 40 - Math.abs(Math.sin(t * 5 + i)) * 20} s={0.42} t={t} seed={520 + i} grita />)}
       <div style={{ position: "absolute", inset: 0, transform: `scale(${pulse})`, transformOrigin: "960px 600px" }}>
         <Flecha t={t} t0={p} d="M 930 120 Q 960 330 960 500" col="#4fb0d8" w={34} />
         <Flecha t={t} t0={s} d="M 600 560 Q 760 540 860 580" col={C.lima} w={34} />
