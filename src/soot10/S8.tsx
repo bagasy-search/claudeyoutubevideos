@@ -318,10 +318,10 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={892.7} t1={895.0} text="MOST NEVER CHOSE IT" y={170} size={110} />
       {en(t, 895.2, 903.6) && <div style={{ position: "absolute", left: 600, top: 400 }}>
         <svg width={1} height={1} style={{ overflow: "visible" }}>
-          <Sello t={t} t0={895.36} txt="FORCED" size={70} rot={-10} />
-          <g transform="translate(0 150)"><Sello t={t} t0={896.28} txt="FORGOTTEN" size={70} rot={6} c={C.violeta} /></g>
-          <g transform="translate(0 300)"><Sello t={t} t0={897.12} txt="SOLD" size={70} rot={-4} c={C.naranja} /></g>
-          <g transform="translate(720 150)"><Sello t={t} t0={900.98} txt="BEGGING" size={110} rot={-8} c={C.ambar} /></g>
+          <Sello t={t} t0={895.36} txt="FORCED" size={84} rot={-10} fondo="#f4ead2" />
+          <g transform="translate(0 165)"><Sello t={t} t0={896.28} txt="FORGOTTEN" size={84} rot={6} c={C.violeta} fondo="#f4ead2" /></g>
+          <g transform="translate(0 330)"><Sello t={t} t0={897.12} txt="SOLD" size={96} rot={-4} c="#c8401a" fondo="#f4ead2" /></g>
+          <g transform="translate(720 150)"><Sello t={t} t0={900.98} txt="BEGGING" size={110} rot={-8} c="#b8860b" fondo="#f4ead2" /></g>
         </svg>
       </div>}
       {[895.36, 896.28, 897.12].map((a, i) => <S key={i} t={a} p="stamp" g={-4} />)}

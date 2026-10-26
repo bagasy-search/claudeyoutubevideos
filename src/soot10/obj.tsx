@@ -383,13 +383,13 @@ export const Precio: React.FC<{ txt: string; t?: number; c?: string }> = ({ txt,
   </g>
 );
 // sello de goma que golpea (NO BOYS ALLOWED, MYTH, FORCED...)
-export const Sello: React.FC<{ t: number; t0: number; txt: string; c?: string; size?: number; rot?: number }> = ({ t, t0, txt, c = C.rojo, size = 90, rot = -12 }) => {
+export const Sello: React.FC<{ t: number; t0: number; txt: string; c?: string; size?: number; rot?: number; fondo?: string }> = ({ t, t0, txt, c = C.rojo, size = 90, rot = -12, fondo }) => {
   if (t < t0) return null;
   const u = interpolate(t, [t0, t0 + 0.14], [2.6, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
   const w = txt.length * size * 0.62 + size * 0.9;
   return (
     <g transform={`rotate(${rot}) scale(${u})`} opacity={Math.min(1, (t - t0) * 9)}>
-      <rect x={-w / 2} y={-size * 0.78} width={w} height={size * 1.4} rx={size * 0.2} fill="none" stroke={c} strokeWidth={size * 0.13} />
+      <rect x={-w / 2} y={-size * 0.78} width={w} height={size * 1.4} rx={size * 0.2} fill={fondo ?? "none"} stroke={c} strokeWidth={size * 0.13} />
       <text x={0} y={size * 0.33} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={size} fill={c} letterSpacing={3}>{txt}</text>
     </g>
   );
