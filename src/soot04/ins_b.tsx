@@ -409,7 +409,9 @@ export const INS_B: Ins[] = [
           <text x={480} y={190} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill={C.crema} stroke={C.noche} strokeWidth={12} paintOrder="stroke" opacity={prog(t, 498.5, 498.8)}>LIKE PEELING AN ORANGE</text>
           <text x={1380} y={1030} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={C.crema} stroke={C.noche} strokeWidth={12} paintOrder="stroke" opacity={prog(t, 502.7, 503.0)}>…1 TON A STRIP</text>
         </svg>
-        <Marino i={2} x={1000} y={1260} h={620} t={t} expr="enojado" bD={110 + Math.sin(t * 5) * 25} cD={60} manoD={<g transform="rotate(-150) scale(1.1)"><Pala x={0} y={0} /></g>} inclina={Math.sin(t * 5) * 5} />
+        {/* vuelta 12 OJO: el protagonista corta la grasa con la pala (antes un marinero chico de fondo) */}
+        <Marino i={2} x={1720} y={1180} h={520} t={t + 0.4} expr="neutro" flip bD={100 + Math.sin(t * 3) * 30} cD={40} />
+        <Chico x={700} y={1300} h={900} t={t} expr="enojado" bD={95 + Math.max(0, Math.sin(t * 4.5)) * 45} cD={70 - Math.max(0, Math.sin(t * 4.5)) * 50} bI={70 + Math.max(0, Math.sin(t * 4.5)) * 30} cI={90} manoD={<g transform="rotate(20) scale(1.3)"><Pala x={0} y={0} /></g>} inclina={Math.sin(t * 4.5) * 7} />
         </>
       );
     },
