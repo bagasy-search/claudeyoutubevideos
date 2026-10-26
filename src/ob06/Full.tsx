@@ -16,6 +16,11 @@ import { armar, PlanB, K, sentadoBus, parado, POSE_CELU_SENTADO, Pizarra, GloboM
 import { BusInterior, Bus9, BUS_PISO, BUS_PUNTOS, ASIENTO_X, alVolante, Volante, marchaParadas, kneelEn, Auto } from "../owen/mundo/bus";
 import { Ashland, ASH_PISO, ASH_CARRIL } from "../owen/mundo/ashland";
 import { TwoFlatCorte, TF_PISO, TF_ARRIBA, TF_PUNTOS } from "../owen/mundo/twoflat";
+import * as A6 from "./escA";
+import * as B6 from "./escB";
+import * as C6 from "./escC";
+import * as D6 from "./escD";
+import * as E6 from "./escE";
 import { Halden, HAL_PISO, HAL_PUNTOS, LogoHalden } from "../owen/mundo/halden";
 import { Descanso, DES_PISO, DES_PUNTOS, CajaDonas } from "../owen/mundo/sala";
 
@@ -989,7 +994,7 @@ const r28: PlanB = {
   },
 };
 
-export const PLANOS_OB06: PlanB[] = [r01, r02, r03, r03b, r04, r05, r06, r07, r07b, r08, r09, r10, r11, r12, r13, r14, r15, r16, r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r28];
+export const PLANOS_OB06: PlanB[] = [A6.r01, A6.r02, A6.r03, A6.r03c, A6.r03b, A6.r04, A6.r05, A6.r05b, A6.r05c, A6.r05d, B6.r06, B6.r06b, B6.r06c, B6.r06c2, B6.r06d, B6.r06e, B6.r06f, B6.r07, B6.r07c, B6.r07b, B6.r07d, B6.r07e, B6.r08, C6.r09, C6.r09b, C6.r09c, C6.r09d, C6.r09e, C6.r10, C6.r10b, C6.r10c, C6.r11, C6.r11b, C6.r11c, C6.r11d, C6.r12, C6.r12b, C6.r13, C6.r13b, C6.r14, C6.r14b, C6.r14c, C6.r14d, C6.r14e, C6.r14f, D6.r15, D6.r15b, D6.r15c, D6.r15d, D6.r15e, D6.r16, D6.r17, D6.r17b, D6.r17c, D6.r18, D6.r18b, D6.r18c, D6.r19, D6.r19b, D6.r19c, D6.r19d, D6.r20, D6.r20b, D6.r20c, D6.r21, D6.r21b, D6.r21c, D6.r21d, E6.r22, E6.r22b, E6.r22c, E6.r22d, E6.r22e, E6.r22f, E6.r23, E6.r23b, E6.r23c, E6.r24, E6.r24b, E6.r24c, E6.r24d, E6.r24e, E6.r25, E6.r25b, E6.r25c, E6.r26, E6.r26b, E6.r26c, E6.r27, E6.r27b, E6.r28, E6.r28b, E6.r28c, E6.r28d];
 export const OB06 = armar(PLANOS_OB06);
 
 const HORAS: [number, number | null][] = [[0, 17 * 60 + 12], [4.2, null], [10.42, 5 * 60 + 12], [25.22, null], [30.02, 5 * 60 + 20], [45.22, null], [79.7, 6 * 60 + 15], [90.42, 9 * 60 + 40], [98.16, 10 * 60 + 2], [104.46, null], [146.76, 11 * 60 + 5], [159.66, null], [170.48, 12 * 60 + 30], [179.32, null], [223.1, 15 * 60 + 40], [226.8, null], [231.4, 15 * 60 + 52], [240.12, 16 * 60], [286.34, null], [309.98, 16 * 60 + 12], [346.16, 16 * 60 + 18], [363.08, null], [377.98, null], [391.4, 5 * 60 + 12], [396.68, 13 * 60]];
