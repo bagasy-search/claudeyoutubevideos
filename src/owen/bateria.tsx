@@ -18,10 +18,11 @@ export const colorPct = (pct: number) => (pct < 15 ? "#ff3d2e" : pct < 45 ? "#ff
 export const BateriaSvg: React.FC<{ pct: number; capa?: number; tam?: number; alerta?: boolean; f: number }> = ({ pct, capa = 0, tam = 1, alerta, f }) => {
   const col = colorPct(pct);
   const on = !alerta || f % 16 < 10;
+  const pulso = alerta ? 0.78 + 0.22 * Math.cos((f / 16) * Math.PI * 2) : 1; // 26-oct: pulso suave (el 1↔0,4 a saltos se leía como fantasma)
   const w = 150 * tam, h = 68 * tam;
   const lleno = Math.max(0.02, pct / 100);
   return (
-    <div style={{ position: "relative", textAlign: "center", fontFamily: F_HUD, opacity: on ? 1 : 0.4 }}>
+    <div style={{ position: "relative", textAlign: "center", fontFamily: F_HUD, opacity: pulso }}>
       <svg width={w + 14 * tam} height={h} viewBox="0 0 164 68" style={{ filter: undefined }}>
         <rect x={4} y={4} width={142} height={60} rx={12} fill="rgba(10,12,18,0.78)" stroke={col} strokeWidth={6} />
         <rect x={148} y={22} width={12} height={24} rx={4} fill={col} />

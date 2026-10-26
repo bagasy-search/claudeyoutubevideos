@@ -263,22 +263,22 @@ export const SiestaNasa: React.FC<{ dAlerta?: number }> = ({ dAlerta = 120 }) =>
     const u = ease(f, d, d + 30);
     return (
       <g opacity={ease(f, d - 5, d + 5)}>
-        <T x={300} y={y + 20} s={50} a="start" w={700}>{et}</T>
-        <rect x={760} y={y - 40} width={700 * (v / 60) * u} height={80} rx={14} fill={VERDE} />
-        <T x={780 + 700 * (v / 60) * u} y={y + 22} s={64} a="start" c={VERDE}>+{Math.round(v * u)}%</T>
+        <T x={260} y={y + 24} s={64} a="start" w={700}>{et}</T>
+        <rect x={760} y={y - 55} width={700 * (v / 60) * u} height={110} rx={16} fill={VERDE} />
+        <T x={780 + 700 * (v / 60) * u} y={y + 30} s={88} a="start" c={VERDE}>+{Math.round(v * u)}%</T>
       </g>
     );
   };
   return (
     <Pizarra titulo="NASA · A 26-MINUTE NAP" fuente="Rosekind et al., NASA Ames, 1994 · long-haul pilots">
-      <g transform="translate(820,430) scale(1.5)">
-        <rect x={-180} y={-10} width={360} height={30} rx={12} fill="#3a4a72" />
-        <g transform="rotate(-90 0 -20)"><Actor look={OWEN} escala={0.7} seed={13} vivo={0} ruta={[{ f: 0, x: 0, y: -20 }]} caras={[{ f: 0, v: "zombi" }]} ajuste={(q, ff) => ({ ...q, tronco: q.tronco + Math.sin(ff / 18) * 3 })} /></g>
-        {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <text key={i} x={140 + t * 80} y={-100 - t * 70} fontFamily={F_HUD} fontWeight={800} fontSize={44 + i * 14} fill={AMBAR} opacity={Math.sin(t * Math.PI)}>Z</text>; })}
-        <T x={-330} y={10} s={60} c={VERDE} w={800}>{Math.min(26, Math.floor(f / 8))}′</T>
+      <g transform="translate(960,400) scale(1.5)">
+        <rect x={-330} y={-10} width={660} height={34} rx={14} fill="#3a4a72" />
+        <g transform="rotate(-90 0 -20)"><Actor look={OWEN} escala={1.35} seed={13} vivo={0} ruta={[{ f: 0, x: 0, y: -20 }]} caras={[{ f: 0, v: "dormido" }]} ajuste={(q, ff) => ({ ...q, tronco: q.tronco + Math.sin(ff / 18) * 3, cabeza: q.cabeza + Math.sin(ff / 18 + 1) * 4, hD: q.hD + Math.sin(ff / 18) * 6 })} /></g>
+        {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <text key={i} x={-250 + t * 60} y={-10 - t * 60} fontFamily={F_HUD} fontWeight={800} fontSize={54 + i * 18} fill={AMBAR} opacity={Math.sin(t * Math.PI)}>Z</text>; })}
+        <T x={420} y={20} s={72} c={VERDE} w={800}>{Math.min(26, Math.floor(f / 8))}′</T>
       </g>
-      {bar(640, 34, "PERFORMANCE", 30)}
-      {bar(800, 54, "ALERTNESS", dAlerta)}
+      {bar(680, 34, "PERFORMANCE", 30)}
+      {bar(840, 54, "ALERTNESS", dAlerta)}
       <text x={960} y={960} fontFamily={F_MANO} fontWeight={700} fontSize={64} fill={AMBAR} textAnchor="middle" opacity={ease(f, dAlerta + 50, dAlerta + 60)}>short, not deep</text>
     </Pizarra>
   );
