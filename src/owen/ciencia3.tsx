@@ -178,17 +178,20 @@ export const Factura: React.FC<{ dTotal?: number; dSexto?: number }> = ({ dTotal
   const cuenta = Math.round(31412 * ease(f, dTotal, dTotal + 30));
   const circ = ease(f, dTotal + 34, dTotal + 64);
   const num = (n: number) => "$" + n.toLocaleString("en-US");
+  // golpe a cada cifra: cuando el número termina de contar salta y la hoja da un respingo
+  const golpe = (d: number) => (f < d ? 0 : Math.exp(-(f - d) / 5));
+  const respingo = filas.reduce((acc, _, i) => acc + golpe(tFila(i) + 24), 0) * 10;
   const sacude = f > dTotal + 30 && f < dTotal + 44 ? Math.sin((f - dTotal) * 2.4) * 6 : 0;
   return (
     <div style={{ position: "absolute", inset: 0, background: "#1b1612" }}>
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
-        <g transform={`translate(${960 - 300 * sx + sacude},${560 + (1 - a) * 80 + tiembla}) rotate(${-2 + sx * -2 + tiembla * 0.15})`} opacity={a}>
+        <g transform={`translate(${960 - 300 * sx + sacude},${560 + (1 - a) * 80 + tiembla - respingo}) rotate(${-2 + sx * -2 + tiembla * 0.15})`} opacity={a}>
           <rect x={-380} y={-460} width={760} height={920} fill="#fbf8f0" />
           <circle cx={-300} cy={-385} r={36} fill="#2a6fd6" /><path d="M-300,-405 v40 M-320,-385 h40" stroke="#fff" strokeWidth={10} />
           <T x={-250} y={-372} s={40} c="#1a2a4a" a="start" w={700}>St. Anthony Hospital</T>
           <T x={-330} y={-280} s={30} c="#5a5a5a" a="start">Patient: Rosa · 81 · Hip replacement</T>
           {filas.map(([d, v, sg], i) => { const e = ease(f, tFila(i), tFila(i) + 10); return e > 0 && (
-            <g key={d} opacity={e} transform={`translate(${(1 - e) * -30},0)`}><T x={-330} y={-190 + i * 70} s={32} c="#333" a="start">{d}</T><T x={330} y={-190 + i * 70} s={32} c={sg ? "#2a7a3a" : "#333"} a="end">{sg + num(Math.round(v * ease(f, tFila(i), tFila(i) + 24)))}</T></g>
+            <g key={d} opacity={e} transform={`translate(${(1 - e) * -30},0)`}><T x={-330} y={-190 + i * 70} s={32} c="#333" a="start">{d}</T><g transform={`translate(330,${-190 + i * 70}) scale(${golpe(tFila(i) + 24) * 0.35 + 1}) translate(-330,${190 - i * 70})`}><T x={330} y={-190 + i * 70} s={32} c={sg ? "#2a7a3a" : "#333"} a="end">{sg + num(Math.round(v * ease(f, tFila(i), tFila(i) + 24)))}</T></g></g>
           ); })}
           <path d="M-330,120 H330" stroke="#999" strokeWidth={3} />
           <T x={-330} y={200} s={38} c="#333" a="start" w={700}>BALANCE DUE</T>
