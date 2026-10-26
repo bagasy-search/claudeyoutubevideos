@@ -188,8 +188,8 @@ export const BusInterior: React.FC<BusProps> = ({ capa, f, hora = "dia", avance 
       {Array.from({ length: 9 }).map((_, i) => {
         const ax = 700 + i * 320;
         const c = ["#2f6b4a", "#c23a2e", "#1f5fa8", "#e7b240", "#6a3a8a"][i % 5];
-        const t = ["RIDE THE 9", "VENTRA", "FLU SHOTS $0", "LEARN ENGLISH", "SEE SOMETHING SAY SOMETHING", "CITY COLLEGES", "INJURED? CALL", "DIVVY", "PRIORITY SEATING"][i];
-        return <g key={i}><rect x={ax} y={T + 30} width={290} height={56} rx={4} fill={c} /><text x={ax + 145} y={T + 66} fontFamily={F_HUD} fontWeight={600} fontSize={i === 4 ? 13 : 20} fill="#fff" textAnchor="middle">{t}</text></g>;
+        const t = ["RIDE THE 9", "VENTRA", "FLU SHOTS $0", "LEARN ENGLISH", "SEE IT · SAY IT", "CITY COLLEGES", "LAW HELP 24/7", "DIVVY", "PRIORITY SEATING"][i];
+        return <g key={i}><rect x={ax} y={T + 30} width={290} height={56} rx={4} fill={c} /><text x={ax + 145} y={T + 66} fontFamily={F_HUD} fontWeight={600} fontSize={22} fill="#fff" textAnchor="middle">{t}</text></g>;
       })}
       {/* techo: tubos fluorescentes y pasamanos */}
       <rect x={-200} y={T - 30} width={4000} height={34} fill="#8f989f" />

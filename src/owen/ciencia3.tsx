@@ -42,7 +42,7 @@ export const NoLaSiente: React.FC<{ dCorte?: number }> = ({ dCorte = 60 }) => {
 // 2 · sentirse despierto vs estar despierto: dos curvas; la zona de 17-19 h = alcohol en sangre 0,05
 export const SentirVsSer: React.FC<{ dCurvas?: number; d05?: number }> = ({ dCurvas = 120, d05 = 390 }) => {
   const f = useF();
-  const x0 = 360, x1 = 1600, y0 = 820, H = 460;
+  const x0 = 250, x1 = 1210, y0 = 820, H = 460;
   const X = (h: number) => x0 + (h / 24) * (x1 - x0);
   const sent = (h: number) => y0 - H * (0.86 - 0.06 * (h / 24));
   const real = (h: number) => y0 - H * (0.9 - 0.75 * Math.pow(Math.max(0, h - 8) / 16, 1.4));
@@ -59,6 +59,9 @@ export const SentirVsSer: React.FC<{ dCurvas?: number; d05?: number }> = ({ dCur
       <polyline points={pts(real)} fill="none" stroke={ROJO} strokeWidth={10} strokeLinecap="round" />
       <T x={x1 + 20} y={sent(24) + 10} s={34} c={VERDE} a="start" o={ease(f, dCurvas + 150, dCurvas + 160)}>how you FEEL</T>
       <T x={x1 + 20} y={real(24) + 10} s={34} c={ROJO} a="start" o={ease(f, dCurvas + 150, dCurvas + 160)}>how you DO</T>
+      {/* las puntas de las dos curvas: viajan mientras se dibujan y después laten; la flecha marca la brecha que crece */}
+      {[sent, real].map((fn, i) => { const h = 24 * u; const late = 1 + 0.25 * Math.sin(f * 0.25 + i * 2); return <circle key={i} cx={X(h)} cy={fn(h)} r={16 * late} fill={i ? ROJO : VERDE} stroke="#0e1428" strokeWidth={4} />; })}
+      {u > 0.55 && (() => { const h = 24 * u; const g = ease(f, dCurvas + 80, dCurvas + 110); return <g opacity={g}><path d={`M${X(h) + 36},${sent(h) + 14} V${real(h) - 14}`} stroke="#ffd27a" strokeWidth={6} markerEnd="" /><path d={`M${X(h) + 22},${real(h) - 34} L${X(h) + 36},${real(h) - 12} L${X(h) + 50},${real(h) - 34}`} fill="none" stroke="#ffd27a" strokeWidth={6} /></g>; })()}
     </Pizarra>
   );
 };
@@ -167,28 +170,38 @@ export const Factura: React.FC<{ dTotal?: number; dSexto?: number }> = ({ dTotal
   const a = ease(f, 0, 18);
   const tot = ease(f, dTotal, dTotal + 12);
   const sx = ease(f, dSexto, dSexto + 20);
+  // las manos de Owen sostienen la hoja y tiemblan; cada renglón entra y su número cuenta hacia arriba; la birome encierra el total
+  const tiembla = Math.sin(f * 0.9) * 3 + Math.sin(f * 2.1) * 1.5;
+  const filas: [string, number, string][] = [["Surgery & anesthesia", 48920, ""], ["Hospital stay · 4 nights", 21300, ""], ["Physical therapy", 6410, ""], ["Insurance paid", 45218, "−"]];
+  const tFila = (i: number) => 20 + i * Math.max(30, (dTotal - 40) / 4);
+  const cuenta = Math.round(31412 * ease(f, dTotal, dTotal + 30));
+  const circ = ease(f, dTotal + 34, dTotal + 64);
+  const num = (n: number) => "$" + n.toLocaleString("en-US");
+  const sacude = f > dTotal + 30 && f < dTotal + 44 ? Math.sin((f - dTotal) * 2.4) * 6 : 0;
   return (
     <div style={{ position: "absolute", inset: 0, background: "#1b1612" }}>
       <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}>
-        <g transform={`translate(${960 - 300 * sx},${560 + (1 - a) * 80}) rotate(${-2 + sx * -2})`} opacity={a}>
+        <g transform={`translate(${960 - 300 * sx + sacude},${560 + (1 - a) * 80 + tiembla}) rotate(${-2 + sx * -2 + tiembla * 0.15})`} opacity={a}>
           <rect x={-380} y={-460} width={760} height={920} fill="#fbf8f0" />
           <circle cx={-300} cy={-385} r={36} fill="#2a6fd6" /><path d="M-300,-405 v40 M-320,-385 h40" stroke="#fff" strokeWidth={10} />
           <T x={-250} y={-372} s={40} c="#1a2a4a" a="start" w={700}>St. Anthony Hospital</T>
           <T x={-330} y={-280} s={30} c="#5a5a5a" a="start">Patient: Rosa · 81 · Hip replacement</T>
-          {[["Surgery & anesthesia", "$48,920"], ["Hospital stay · 4 nights", "$21,300"], ["Physical therapy", "$6,410"], ["Insurance paid", "−$45,218"]].map(([d, v], i) => (
-            <g key={d}><T x={-330} y={-190 + i * 70} s={30} c="#333" a="start">{d}</T><T x={330} y={-190 + i * 70} s={30} c="#333" a="end">{v}</T></g>
-          ))}
+          {filas.map(([d, v, sg], i) => { const e = ease(f, tFila(i), tFila(i) + 10); return e > 0 && (
+            <g key={d} opacity={e} transform={`translate(${(1 - e) * -30},0)`}><T x={-330} y={-190 + i * 70} s={32} c="#333" a="start">{d}</T><T x={330} y={-190 + i * 70} s={32} c={sg ? "#2a7a3a" : "#333"} a="end">{sg + num(Math.round(v * ease(f, tFila(i), tFila(i) + 24)))}</T></g>
+          ); })}
           <path d="M-330,120 H330" stroke="#999" strokeWidth={3} />
-          <T x={-330} y={200} s={36} c="#333" a="start" w={700}>BALANCE DUE</T>
-          <g opacity={tot} transform={`translate(330,330) scale(${0.8 + 0.2 * tot})`}><T x={0} y={0} s={110} c="#c23a2e" a="end" w={800}>$31,412</T></g>
-          <T x={0} y={420} s={26} c="#777">FINAL NOTICE</T>
+          <T x={-330} y={200} s={38} c="#333" a="start" w={700}>BALANCE DUE</T>
+          <g opacity={tot} transform={`translate(300,330) scale(${0.8 + 0.2 * tot})`}><T x={0} y={0} s={96} c="#c23a2e" a="end" w={800}>{num(cuenta)}</T></g>
+          {circ > 0 && <ellipse cx={110} cy={300} rx={240} ry={90} fill="none" stroke="#c23a2e" strokeWidth={8} strokeDasharray={1100} strokeDashoffset={1100 * (1 - circ)} transform="rotate(-4 130 300)" />}
+          <T x={0} y={420} s={28} c="#777">FINAL NOTICE</T>
+          {[-1, 1].map((sd) => <g key={sd} transform={`translate(${sd * 360},380)`}><ellipse rx={70} ry={120} fill="#1a1a1a" transform={`rotate(${sd * -24})`} /><ellipse cx={-sd * 40} cy={-70} rx={30} ry={52} fill="#1a1a1a" transform={`rotate(${sd * -40})`} /></g>)}
         </g>
         {sx > 0 && <g opacity={sx} transform="translate(1340,560)">
           <rect x={-220} y={-300} width={440} height={600} rx={28} fill="#0e1428" stroke="#f4efe4" strokeWidth={4} />
-          <T x={0} y={-220} s={36} c="#f4efe4" w={700}>THE TRIAL PAYS</T>
+          <T x={0} y={-220} s={38} c="#f4efe4" w={700}>THE TRIAL PAYS</T>
           <rect x={-60} y={-160} width={120} height={360} rx={12} fill="#2a3a62" />
-          <rect x={-60} y={200 - 360 / 6.3} width={120} height={360 / 6.3} rx={12} fill={VERDE} />
-          <T x={0} y={260} s={44} c={VERDE} w={700}>less than 1/6</T>
+          <rect x={-60} y={200 - (360 / 6.3) * ease(f, dSexto + 10, dSexto + 40)} width={120} height={(360 / 6.3) * ease(f, dSexto + 10, dSexto + 40)} rx={12} fill={VERDE} />
+          <T x={0} y={260} s={48} c={VERDE} w={700}>less than 1/6</T>
         </g>}
       </svg>
     </div>

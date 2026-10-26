@@ -62,7 +62,7 @@ export const Contador: React.FC<{ lineas: Linea[]; x?: number; y?: number; tam?:
 };
 
 // Etiqueta tipo hoja de calendario: «+75 YEARS», «DAY 15»
-export const Calendario: React.FC<{ texto: string; x?: number; y?: number; desde?: number; hasta?: number; acento?: string; tam?: number }> = ({ texto, x = 1500, y = 70, desde = 0, hasta, acento = "#e2483a", tam = 44 }) => {
+export const Calendario: React.FC<{ texto: string; x?: number; y?: number; desde?: number; hasta?: number; acento?: string; tam?: number }> = ({ texto, x = 1560, y = 160, desde = 0, hasta, acento = "#e2483a", tam = 44 }) => {
   const { s, o } = useEntrada(desde, hasta);
   return (
     <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `rotate(${(1 - s) * -6}deg) scale(${0.8 + 0.2 * s})`, transformOrigin: "50% 0%" }}>
@@ -127,7 +127,7 @@ export const TextoMano: React.FC<{ texto: string; x: number; y: number; desde: n
 };
 
 // Globo de diálogo con cola hacia el que habla (coordenadas de pantalla)
-export const Globo: React.FC<{ texto: string; x: number; y: number; desde: number; hasta: number; cola?: "izq" | "der" | "abajo"; tam?: number; fondo?: string; color?: string; pensamiento?: boolean }> = ({ texto, x, y, desde, hasta, cola = "abajo", tam = 40, fondo = "#fbf8f1", color = "#221c18", pensamiento }) => {
+export const Globo: React.FC<{ texto: string; x: number; y: number; desde: number; hasta: number; cola?: "izq" | "der" | "abajo"; tam?: number; fondo?: string; color?: string; pensamiento?: boolean }> = ({ texto, x, y, desde, hasta, cola = "abajo", tam = 48, fondo = "#fbf8f1", color = "#221c18", pensamiento }) => {
   const f = useF();
   const { fps } = useVideoConfig();
   if (f < desde || f > hasta) return null;
@@ -151,7 +151,7 @@ export const Globo: React.FC<{ texto: string; x: number; y: number; desde: numbe
 };
 
 // Píldora de dato con borde (Awaken: «≈ 1-2 hidden 'lethal' mutations per person»)
-export const Pildora: React.FC<{ texto: string; x?: number; y?: number; desde: number; hasta?: number; color?: string; tam?: number }> = ({ texto, x = 960, y = 60, desde, hasta, color = "#f1d36b", tam = 34 }) => {
+export const Pildora: React.FC<{ texto: string; x?: number; y?: number; desde: number; hasta?: number; color?: string; tam?: number }> = ({ texto, x = 960, y = 60, desde, hasta, color = "#f1d36b", tam = 42 }) => {
   const { s, o } = useEntrada(desde, hasta);
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translateX(-50%) translateY(${(1 - s) * -12}px)`, opacity: o, fontFamily: F_HUD, fontWeight: 500, fontSize: tam, color: "#f6f0e2", border: `3px solid ${color}`, borderRadius: 40, padding: "6px 22px", background: "rgba(10,14,30,0.55)", whiteSpace: "nowrap" }}>

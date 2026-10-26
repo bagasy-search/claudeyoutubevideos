@@ -15,14 +15,16 @@ const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1],
 const POSES_PROFE = ["señalar", "hablar", "pensar", "señalar", "manosCintura", "hablar", "encogerse", "señalar"];
 const CARAS_PROFE = ["neutral", "feliz", "pensar", "sorpresa", "neutral", "feliz"];
 const Profe: React.FC<{ f: number }> = ({ f }) => {
-  const per = 48;
-  const poses = Array.from({ length: 40 }).map((_, i) => ({ f: i * per, v: POSES_PROFE[i % POSES_PROFE.length] }));
-  const caras = Array.from({ length: 40 }).map((_, i) => ({ f: i * per + 10, v: CARAS_PROFE[i % CARAS_PROFE.length] in EXPRESIONES ? CARAS_PROFE[i % CARAS_PROFE.length] : "neutral" }));
+  const per = 22;
+  const poses = Array.from({ length: 90 }).map((_, i) => ({ f: i * per, v: POSES_PROFE[(i * 3) % POSES_PROFE.length] }));
+  const caras = Array.from({ length: 90 }).map((_, i) => ({ f: i * per + 6, v: CARAS_PROFE[i % CARAS_PROFE.length] in EXPRESIONES ? CARAS_PROFE[i % CARAS_PROFE.length] : "neutral" }));
+  // camina de un lado al otro de su rincón cada ~4 s (pasos reales), se para a explicar
+  const ruta = Array.from({ length: 24 }).flatMap((_, i) => { const x = i % 2 ? 1560 : 1770; return [{ f: i * 120 + 40, x: i % 2 ? 1770 : 1560, y: 1040 }, { f: i * 120 + 100, x, y: 1040 }]; });
+  const dir = Array.from({ length: 24 }).map((_, i) => ({ f: i * 120 + 40, v: (i % 2 ? -1 : 1) as 1 | -1 }));
   return (
     <g>
-      <ellipse cx={1745} cy={1036} rx={120} ry={18} fill="#0b1426" opacity={0.6} />
-      <Actor look={OWEN} escala={0.95} seed={9} ruta={[{ f: 0, x: 1760, y: 1030 }, { f: 300, x: 1760 }, { f: 330, x: 1700 }, { f: 600, x: 1700 }, { f: 630, x: 1760 }]} dir={[{ f: 0, v: -1 }]}
-        poses={poses} caras={caras} habla={Array.from({ length: 30 }).map((_, i) => [i * 70 + 6, i * 70 + 50] as [number, number])} miradas={[{ f: 0, v: { x: -0.6, y: -0.2 } }, { f: 200, v: { x: 0.3, y: 0.2 } }, { f: 260, v: { x: -0.6, y: -0.2 } }]} />
+      <Actor look={OWEN} escala={1.35} seed={9} ruta={[{ f: 0, x: 1770, y: 1040 }, ...ruta]} dir={[{ f: 0, v: -1 }, ...dir]}
+        poses={poses} caras={caras} habla={Array.from({ length: 60 }).map((_, i) => [i * 45 + 4, i * 45 + 34] as [number, number])} miradas={[{ f: 0, v: { x: -0.7, y: -0.3 } }, { f: 150, v: { x: 0.4, y: 0.2 } }, { f: 200, v: { x: -0.7, y: -0.3 } }, { f: 400, v: { x: 0.3, y: 0 } }, { f: 440, v: { x: -0.7, y: -0.3 } }]} />
     </g>
   );
 };

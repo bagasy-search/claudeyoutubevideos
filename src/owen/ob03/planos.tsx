@@ -448,15 +448,15 @@ export const P20Edificio: React.FC = () => {
           <rect x={0} y={-620} width={600} height={620} fill="#e9ecef" />
           {[0, 1, 2, 3, 4].map((fl) => [0, 1, 2, 3, 4].map((w) => {
             const on = fl === 3;
-            return <rect key={`${fl}-${w}`} x={40 + w * 110} y={-110 - fl * 120} width={80} height={80} fill={on ? "#fff3b0" : "#3a4256"} opacity={on ? 0.85 + 0.15 * Math.sin(f / 7 + w) : 1} />;
+            return <rect key={`${fl}-${w}`} x={40 + w * 110} y={-110 - fl * 120} width={80} height={80} fill={on ? "#fff3b0" : "#3a4256"} opacity={on ? (((f * 7 + w * 13) % 53) < 3 ? 0.35 : 0.85 + 0.15 * Math.sin(f / 7 + w)) : 1} />;
           }))}
           <rect x={250} y={-90} width={100} height={90} fill="#2a3040" />
           {[0, 1, 2, 3, 4].map((w) => <rect key={w} x={40 + w * 110} y={-470} width={80} height={80} fill="#fff3b0" opacity={0.25} filter="blur(8px)" />)}
         </g>
-        <Actor look={OWEN_CASA} escala={0.75} seed={6} ruta={[{ f: 0, x: 200, y: 885 }, { f: k(190.6), x: 900 }]} caras={[{ f: 0, v: "determinado" }]} poses={[{ f: 0, v: "parado" }, { f: k(190.7), v: "agarrarAlto" }]} miradas={[{ f: k(190.7), v: { x: 0, y: -1 } }]} />
+        <Actor look={OWEN_CASA} escala={1.15} seed={6} ruta={[{ f: 0, x: 120, y: 900 }, { f: k(190.6), x: 860 }]} caras={[{ f: 0, v: "determinado" }]} poses={[{ f: 0, v: "parado" }, { f: k(190.7), v: "agarrarAlto" }]} miradas={[{ f: k(190.7), v: { x: 0, y: -1 } }]} />
       </svg>
-      <Pildora texto="FULTON MARKET · NO SIGN" x={960} y={950} desde={0} hasta={k(190.8)} color="#f4efe4" />
-      <Pildora texto="2 AM · 4TH FLOOR · EVERY LIGHT ON" x={960} y={950} desde={k(190.9)} color="#fff3b0" />
+      <Pildora texto="FULTON MARKET · NO SIGN" x={960} y={190} desde={0} hasta={k(190.8)} color="#f4efe4" />
+      <Pildora texto="2 AM · 4TH FLOOR · EVERY LIGHT ON" x={960} y={190} desde={k(190.9)} color="#fff3b0" />
       <HudOwen min={120} part={PART} />
     </AbsoluteFill>
   );
@@ -569,8 +569,8 @@ export const P28Leche: React.FC = () => {
       </>}
       hud={<>
         <Cansa cl={cl} x={PIES.x + 10} y={PIES.y - 74 - 240} pct={0} glitch />
-        <Pildora texto="4 AM · ROSA" x={960} y={950} desde={0} hasta={k(290.1)} color="#f4efe4" />
-        <Pildora texto="WARM MILK · LIKE WHEN HE WAS SEVEN" x={960} y={950} desde={k(290.3)} color="#ffd27a" />
+        <Pildora texto="4 AM · ROSA" x={1420} y={1000} desde={0} hasta={k(290.1)} color="#f4efe4" />
+        <Pildora texto="WARM MILK · LIKE WHEN HE WAS SEVEN" x={1300} y={1000} desde={k(290.3)} color="#ffd27a" />
         <HudOwen min={240} part={PART} />
       </>} />
   );
@@ -613,7 +613,7 @@ export const P31Mijo: React.FC = () => {
       hud={<>
         <Globo texto="Mijo, numbers on paper are just numbers." x={760} y={230} desde={k(317.7)} hasta={k(321.1)} cola="abajo" tam={54} />
         <Mano texto="he knows something she doesn't" x={1350} y={280} desde={k(321.2)} hasta={k(323.7)} color="#f4efe4" tam={56} />
-        <Mano texto="numbers are the only thing he can see now." x={960} y={880} desde={k(323.8)} color={ROJO_OWEN} tam={60} />
+        <Mano texto="numbers are the only thing he can see now." x={960} y={130} desde={k(323.8)} color={ROJO_OWEN} tam={60} />
         <HudOwen min={252} part={PART} />
       </>} />
   );
@@ -651,9 +651,9 @@ export const P33Duerme: React.FC = () => {
       </g>}
       hud={<>
         <Cansa cl={cl} x={PIES.x + 10} y={PIES.y - 74 - 240} pct={[{ f: salta, v: 0 }, { f: salta + 8, v: 100 }]} desde={0} hasta={duerme + 4} tam={1.2} />
-        <Mano texto="for the first time in 3 days, it moves" x={960} y={860} desde={k(339.0)} hasta={salta} color="#f4efe4" tam={64} />
+        <Mano texto="for the first time in 3 days, it moves" x={1000} y={110} desde={k(339.0)} hasta={salta} color="#f4efe4" tam={64} />
         {f > salta && f < duerme && <div style={{ position: "absolute", inset: 0, background: "radial-gradient(circle at 50% 35%, #fff3d8 0%, #ff3d2e 60%)", opacity: Math.max(0, 0.45 - (f - salta) / 30) }} />}
-        <Mano texto="asleep before his head hits the pillow" x={960} y={880} desde={duerme + 6} color="#6fa8ff" tam={56} />
+        <Mano texto="asleep before his head hits the pillow" x={960} y={180} desde={duerme + 6} color="#6fa8ff" tam={56} />
         <HudOwen min={314} part="44/47" />
       </>} />
   );
@@ -683,11 +683,11 @@ export const P34Precios: React.FC = () => {
 export const P35Cta: React.FC = () => {
   const k = kDe(358.06);
   const f = useF();
-  const cl = [mira(0, CAMA - 60, A - 120, 2.4), mira(k(366), CAMA - 40, A - 120, 2.6)];
+  const cl = [mira(0, CAMA - 20, A - 140, 1.6), mira(k(366), CAMA, A - 140, 1.75)];
   const resp = Math.sin(f / 18);
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={35} setProps={{ hora: "dia", luzCocina: false, luzBaño: false, luzDorm: false }}
-      medio={<g transform={`rotate(-90 ${CAMA} ${A - 60})`}><Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: CAMA, y: A - 60 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "zombi" }]} ajuste={(q) => ({ ...q, tronco: q.tronco + resp * 3, cabeza: q.cabeza + resp * 4, hD: q.hD + resp * 5 })} /></g>}
+      medio={<g transform={`translate(0,-110) rotate(-90 ${CAMA} ${A - 60})`}><Actor look={OWEN_CASA} escala={ESC} seed={6} vivo={0} ruta={[{ f: 0, x: CAMA, y: A - 60 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "zombi" }]} ajuste={(q) => ({ ...q, tronco: q.tronco + resp * 3, cabeza: q.cabeza + resp * 4, hD: q.hD + resp * 5 })} /></g>}
       hud={<>
         {[0, 1, 2].map((i) => { const t = ((f + i * 20) % 60) / 60; return <div key={i} style={{ position: "absolute", left: 1000 + t * 140, top: 420 - t * 200, fontFamily: F_HUD, fontWeight: 800, fontSize: 80 + i * 22, color: "#ffe04a", opacity: Math.sin(t * Math.PI), textShadow: "0 4px 10px rgba(0,0,0,0.5)" }}>Z</div>; })}
         {f > k(361.6) && <div style={{ position: "absolute", left: 960, top: 800, transform: `translateX(-50%) scale(${1 + Math.max(0, Math.sin((f - k(361.6)) / 6)) * 0.05})`, display: "flex", alignItems: "center", gap: 18, background: "#e22a2a", color: "#fff", fontFamily: F_HUD, fontWeight: 800, fontSize: 56, padding: "14px 40px", borderRadius: 18, boxShadow: "0 10px 30px rgba(0,0,0,0.4)" }}>SUBSCRIBE <span style={{ display: "inline-block", fontSize: 50, transform: `rotate(${Math.sin(f / 3) * 14}deg)` }}>🔔</span></div>}
