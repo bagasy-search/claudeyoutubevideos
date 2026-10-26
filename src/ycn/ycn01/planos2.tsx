@@ -29,10 +29,10 @@ export const P33Sabia: React.FC = () => (
 export const P34Entra: React.FC = () => {
   const k = kDe(198.9);
   return (
-    <Sala cl={[mira(0, PU - 100, 560, 1.0), mira(k(203), PU - 500, 580, 1.4, { curva: "inout" })]} sp={{ tv: "alerta" }}
+    <Sala cl={[mira(0, PU - 60, 620, 1.7), mira(k(203), PU - 480, 640, 1.9, { curva: "inout" })]} sp={{ tv: "alerta" }}
       gente={[
         { l: MORDIDO, ruta: [{ f: 0, x: PU + 40 }, { f: k(204.5), x: PU - 560, curva: "out" }], p: brazoTapado, c: "miedo", d: -1, mD: TOALLA },
-        { l: LIGA2, x: PU - 1100, p: "brazosCruzados", c: "neutral", d: 1 },
+        { l: LIGA2, x: PU - 820, p: "brazosCruzados", c: "neutral", d: 1 },
       ]}
       hud={<><HudDia dia={1} desde={9999} hora="8:14 PM" /><Rotulo t="lane 3 · I sold him a beer" x={260} y={160} desde={k(202.2)} flecha="der" /></>} />
   );
@@ -65,11 +65,11 @@ export const P36Cuenta: React.FC = () => {
 export const P37Banco: React.FC = () => {
   const k = kDe(215.8);
   return (
-    <Sala cl={[mira(0, BA + 100, 560, 1.3), mira(k(220.9), BA + 60, 620, 1.8, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta" }}
+    <Sala cl={[mira(0, BA + 140, 620, 1.7), mira(k(220.9), BA + 100, 640, 2.0, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta" }}
       detras={[{ l: LIGA3, x: 4380, p: "manosCara", c: "miedo", d: -1 }]}
       gente={[
         { l: MORDIDO, ruta: [{ f: 0, x: BA + 400 }, { f: k(217.8), x: BA }], sent: [{ f: 0, v: undefined }, { f: k(218), v: 60 }], p: [{ f: 0, v: brazoTapado }, { f: k(218), v: "sentado" }, { f: k(219.5), v: { hD: 60, cD: 40, hI: 20, cI: 30 } }], c: "miedo", d: -1 },
-        { l: DOT, ruta: [{ f: 0, x: BA + 600 }, { f: k(217.8), x: BA + 170 }], p: [{ f: 0, v: "parado" }, { f: k(218.2), v: "agacharse" }], c: "determinado", d: -1, mD: (ff: number) => (ff > k(219.6) ? TOALLA : null) },
+        { l: DOT, ruta: [{ f: 0, x: BA + 700 }, { f: k(217.8), x: BA + 420 }], p: [{ f: 0, v: "parado" }, { f: k(218.2), v: "agacharse" }], c: "determinado", d: -1, mD: (ff: number) => (ff > k(219.6) ? TOALLA : null) },
       ]}
       hud={<HudDia dia={1} desde={9999} hora="8:17 PM" />} />
   );
@@ -103,10 +103,10 @@ export const P39Susurra: React.FC = () => {
 export const P40Levanto: React.FC = () => {
   const k = kDe(232.91);
   return (
-    <Sala cl={[mira(0, -760, 560, 1.6), mira(k(237), -1100, 600, 1.4, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
-      gente={[{ l: RAFI, ruta: [{ f: 0, x: -460 }, { f: k(235), x: -660 }, { f: k(239), x: -1500 }], p: [{ f: 0, v: "parado" }, { f: k(234.5), v: { hD: 80, cD: 60, hI: 80, cI: 60 } }], c: "miedo", d: [{ f: 0, v: -1 }] }]}
-      sobre={<A l={NELL} ruta={[{ f: 0, x: -760, y: P }, { f: k(235), x: -700, y: P - 40 }, { f: k(239), x: -1540, y: P - 40 }]} sent={[{ f: 0, v: 184 }, { f: k(235), v: 120 }]} p={[{ f: 0, v: "sentado" }, { f: k(235), v: { hD: 60, cD: 120, pI: 60, rI: 80, pD: 70, rD: 90 } }]} c="miedo" d={-1} mD={<Walkie s={0.85} />} mir={{ x: 1, y: 0 }} />}
-      hud={<><HudDia dia={1} desde={9999} hora="8:16 PM" /><Rotulo t="the score screens kept the time" x={1100} y={140} desde={k(238)} /></>} />
+    <Sala cl={[mira(0, -720, 600, 1.9), mira(k(237), -880, 620, 2.0, { curva: "inout" })]} snack sp={{ tv: "alerta" }}
+      gente={[{ l: RAFI, ruta: [{ f: 0, x: -460 }, { f: k(235), x: -660 }, { f: k(239), x: -1000 }], p: [{ f: 0, v: "parado" }, { f: k(234.5), v: { hD: 80, cD: 60, hI: 80, cI: 60 } }], c: "miedo", d: [{ f: 0, v: -1 }] }]}
+      sobre={<A l={NELL} ruta={[{ f: 0, x: -760, y: P }, { f: k(235), x: -700, y: P - 40 }, { f: k(239), x: -1040, y: P - 40 }]} sent={[{ f: 0, v: 184 }, { f: k(235), v: 120 }]} p={[{ f: 0, v: "sentado" }, { f: k(235), v: { hD: 60, cD: 120, pI: 60, rI: 80, pD: 70, rD: 90 } }]} c="miedo" d={-1} mD={<Walkie s={0.85} />} mir={{ x: 1, y: 0 }} />}
+      hud={<><HudDia dia={1} desde={9999} hora="8:16 PM" /><Rotulo t="the score screens kept the time" x={1180} y={900} desde={k(238)} /></>} />
   );
 };
 
@@ -117,10 +117,14 @@ export const P41Once: React.FC = () => {
   const min = Math.round(interpolate(f, [0, k(244.4)], [16, 27], { extrapolateRight: "clamp" }));
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, BA, 560, 1.7), mira(k(244.8), BA, 600, 2.0, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta" }}
+      <Sala cl={[mira(0, BA + 180, 640, 1.9), mira(k(244.8), BA + 200, 650, 2.1, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta" }}
         gente={[{ l: MORDIDO, x: BA, sent: 60, p: { tronco: 30, pI: 88, rI: 88, pD: 92, rD: 92, hD: 60, cD: 130, hI: 50, cI: 120, cabeza: 30 }, c: "cansado", d: -1, mD: TOALLA }]} />
       <div style={{ position: "absolute", left: 1250, top: 110, fontFamily: F_HUD, fontWeight: 600, fontSize: 110, color: ROJO, fontVariantNumeric: "tabular-nums", textShadow: "0 0 30px rgba(255,74,61,0.6)" }}>8:{String(min).padStart(2, "0")} PM</div>
-      <Dice quien="rafi" t="11 minutes" x={1260} y={260} desde={k(243)} tam={80} />
+      <div style={{ position: "absolute", left: 1300, top: 300, width: 300, height: 300, borderRadius: 150, border: "10px solid #f4efe4", background: "rgba(10,12,20,0.75)" }}>
+        <div style={{ position: "absolute", left: 140, top: 20, width: 10, height: 130, background: ROJO, transformOrigin: "5px 130px", transform: `rotate(${interpolate(f, [0, k(244.4)], [0, 330], { extrapolateRight: "clamp" })}deg)` }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 190, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 56, color: "#f4efe4", fontVariantNumeric: "tabular-nums" }}>{min - 16}:00</div>
+      </div>
+      <Dice quien="rafi" t="11 minutes" x={1600} y={620} desde={k(243)} tam={80} />
       <HudDia dia={1} desde={9999} />
     </AbsoluteFill>
   );
@@ -142,12 +146,12 @@ export const P42Despacio: React.FC = () => {
 export const P43Ruido: React.FC = () => {
   const k = kDe(249.39);
   return (
-    <Sala cl={[mira(0, pistaX(5), 420, 1.0), mira(k(252.3), 2900, 560, 0.7, { curva: "inout" }), mira(k(255), BA - 200, 560, 1.4, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta", tiros: [{ pista: 5, f0: 6 }] }}
+    <Sala cl={[mira(0, pistaX(5), 520, 1.5), mira(k(252.2), pistaX(5), 540, 1.6, { curva: "inout" }), mira(k(252.3), BA - 120, 640, 2.0), mira(k(256.8), BA - 320, 640, 1.8, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta", tiros: [{ pista: 5, f0: 6 }] }}
       gente={[
         { l: LIGA2, x: pistaX(5), p: [{ f: 0, v: "tirarSuelta" }, { f: 50, v: "celebrar" }], c: "risa" },
         { l: zombi(MORDIDO), ruta: [{ f: 0, x: BA - 60 }, { f: k(253), x: BA - 60 }, { f: k(256.8), x: BA - 520, curva: "lineal" }], p: "zombi", c: "zombi", d: [{ f: 0, v: -1 }] },
       ]}
-      hud={<Pildora texto="THEY COME TO NOISE" x={960} y={940} desde={k(253.5)} color={ROJO} />} />
+      hud={<Pildora texto="THEY COME TO NOISE" x={960} y={140} desde={k(253.5)} color={ROJO} />} />
   );
 };
 
@@ -156,12 +160,12 @@ export const P44Grito: React.FC = () => {
   const k = kDe(256.81);
   return (
     <Sacude en={[k(259.6)]} amp={7}>
-      <Sala cl={[mira(0, 2400, 520, 0.7), mira(k(260.8), 2600, 540, 0.85, { curva: "inout" })]} sp={{ luz: "alerta", tv: "alerta" }}
+      <Sala cl={[mira(0, 2500, 620, 1.3), mira(k(260.8), 2900, 640, 1.45, { curva: "inout" })]} sp={{ luz: "alerta", tv: "alerta" }}
         gente={[
           { l: LIGA3, ruta: [{ f: 0, x: 2300 }, { f: 120, x: 3800 }], correr: 1, c: "miedo", p: "manosCara" }, { l: PINPAL, ruta: [{ f: 0, x: 1800 }, { f: 120, x: 3200 }], correr: 1, c: "miedo" },
           { l: LIGA, ruta: [{ f: 0, x: 2700 }, { f: 120, x: 4200 }], correr: 1, c: "miedo" }, { l: zombi(MORDIDO), ruta: [{ f: 0, x: 3600 }, { f: 120, x: 3300 }], p: "zombi", c: "zombi", d: -1 },
         ]}
-        hud={<Dice quien="otro" t="AAAH—" x={1100} y={200} desde={k(259.6)} tam={100} />} />
+        hud={<Dice quien="otro" t="AAAH—" x={960} y={170} desde={k(259.6)} tam={120} />} />
     </Sacude>
   );
 };
@@ -211,12 +215,12 @@ export const P47Nombre: React.FC = () => {
 export const P48Cal: React.FC = () => {
   const k = kDe(277.85);
   return (
-    <Sala cl={[mira(0, CH - 900, 560, 1.0), mira(k(282.9), CH - 450, 560, 1.1, { curva: "inout" })]} sp={{ luz: "alerta" }}
+    <Sala cl={[mira(0, CH - 1750, 700, 1.5), mira(k(282.9), CH - 120, 700, 1.6, { curva: "lineal" })]} sp={{ luz: "alerta" }}
       gente={[
         { l: CAL, ruta: [{ f: 0, x: CH - 1900 }, { f: k(282.9), x: CH - 60, curva: "lineal" }], correr: 1, c: "determinado", d: 1, mI: <Linterna prendida={false} /> },
         { l: LIGA, ruta: [{ f: 0, x: 3600 }, { f: k(282.9), x: 2600 }], correr: 1, c: "miedo", d: -1 },
       ]}
-      hud={<Dice quien="rafi" t="not the doors. the chain." x={300} y={170} desde={k(280.2)} tam={66} />} />
+      hud={<Dice quien="rafi" t="not the doors. the chain." x={960} y={150} desde={k(280.2)} tam={66} />} />
   );
 };
 
@@ -235,8 +239,8 @@ export const P50Tira: React.FC = () => {
   const k = kDe(288.53);
   const tiron = Array.from({ length: 10 }).flatMap((_, i) => [{ f: i * 14, v: "agarrarAlto" }, { f: i * 14 + 7, v: { hD: 60, cD: 40, hI: 70, cI: 30, tronco: 14, bajar: 8 } }]);
   return (
-    <Sala cl={[mira(0, CH - 60, 500, 2.2), mira(k(291.3), CH - 160, 560, 1.6, { curva: "inout" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(291.4)], [0.3, 0.55]) }}
-      gente={[{ l: CAL, x: CH - 40, p: tiron, c: "enojo", d: 1 }]} />
+    <Sala cl={[mira(0, CH - 260, 560, 1.8), mira(k(291.3), CH - 300, 600, 1.6, { curva: "inout" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(291.4)], [0.3, 0.55]) }}
+      gente={[{ l: CAL, x: CH - 90, p: tiron, c: "enojo", d: 1 }]} />
   );
 };
 
@@ -273,7 +277,7 @@ export const P53Tiro: React.FC = () => {
   const f = useF();
   return (
     <Sacude en={[k(309.9)]} amp={14}>
-      <Sala cl={[mira(0, PU - 260, P - 200, 1.6), mira(k(309.9), PU - 120, P - 100, 2.6, { curva: "in" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(309.9)], [0.86, 1], { extrapolateRight: "clamp" }) }}
+      <Sala cl={[mira(0, PU - 260, P - 200, 1.6), mira(k(309.9), PU - 400, P - 150, 2.0, { curva: "in" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(309.9)], [0.86, 1], { extrapolateRight: "clamp" }) }}
         gente={[
           { l: RAFI, ruta: [{ f: 0, x: PU - 900 }, { f: k(305.6), x: PU - 360, curva: "out" }, { f: k(310.5), x: PU - 720, curva: "out" }], correr: 1, p: [{ f: 0, v: "parado" }, { f: k(305.6), v: { tronco: 78, hD: 95, cD: 0, hI: 90, cI: 10, pI: -40, rI: 30, pD: -50, rD: 20 } }, { f: k(307.5), v: { tronco: -14, hD: 40, cD: 60, hI: 40, cI: 60, pI: -30, pD: 20 } }], c: [{ f: 0, v: "miedo" }, { f: k(307.5), v: "determinado" }], d: [{ f: 0, v: 1 }] },
           { l: NELL, ruta: [{ f: 0, x: PU - 200 }, { f: k(306), x: PU - 200 }, { f: k(310.5), x: PU - 560, curva: "out" }], p: [{ f: 0, v: gateo }, { f: k(307), v: "sentadoSuelo" }], c: "miedo", d: 1 },
@@ -287,7 +291,8 @@ export const P53Tiro: React.FC = () => {
 // ---------- 54 · metal contra baldosa ----------
 export const P54Metal: React.FC = () => (
   <AbsoluteFill>
-    <Sala cl={[mira(0, PU, P - 40, 3.6), mira(96, PU - 20, P - 40, 3.9, { curva: "inout" })]} sp={{ luz: "alerta", persiana: 1 }} />
+    <Sala cl={[mira(0, PU - 60, P - 80, 3.0), mira(96, PU - 80, P - 80, 3.3, { curva: "inout" })]} sp={{ luz: "alerta", persiana: 1 }}
+      gente={[{ l: NELL, x: PU - 230, p: "sentadoSuelo", c: "miedo", d: 1, mir: { x: 1, y: 0.2 } }]} />
     <Dice quien="rafi" t="metal on tile." x={960} y={300} desde={20} centro tam={80} />
   </AbsoluteFill>
 );
@@ -296,7 +301,7 @@ export const P54Metal: React.FC = () => (
 export const P55Rueda: React.FC = () => {
   const k = kDe(314.33);
   return (
-    <Sala cl={[mira(0, PU - 100, P - 180, 1.8), mira(k(318), PU - 320, P - 150, 2.0, { curva: "inout" }), mira(k(321), PU - 420, P - 130, 2.4, { curva: "inout" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(317.2)], [0.88, 1], { extrapolateRight: "clamp" }) }}
+    <Sala cl={[mira(0, PU - 100, P - 120, 1.7), mira(k(318), PU - 320, P - 100, 1.9, { curva: "inout" }), mira(k(321), PU - 420, P - 90, 2.2, { curva: "inout" })]} sp={{ luz: "alerta", persiana: (ff: number) => interpolate(ff, [0, k(317.2)], [0.88, 1], { extrapolateRight: "clamp" }) }}
       gente={[{ l: MARLON, ruta: [{ f: 0, x: PU + 120, y: P }, { f: k(317.2), x: PU - 420, curva: "out" }], p: [{ f: 0, v: { tronco: 80, pI: 60, rI: 90, pD: 70, rD: 100, hD: 90, cD: 10, hI: 60, cI: 120 } }, { f: k(317.2), v: { ...{ tronco: -70, pI: -80, rI: 10, pD: -70, rD: 20 }, hI: 50, cI: 130, hD: 20, cD: 30, bajar: 120 } }], c: "miedo", d: -1, mD: <Maletin /> }]}
       hud={<Rotulo t="his LEFT arm" x={1150} y={720} desde={k(320.5)} flecha="izq" />} />
   );
@@ -316,14 +321,26 @@ export const P56Bien: React.FC = () => {
 };
 
 // ---------- 57 · empiezan los golpes: manos en el metal, docenas ----------
+// palma oscura que pega contra la persiana desde afuera: aparece en el golpe y se apaga
+const Mano: React.FC<{ g: number; x: number; y: number }> = ({ g, x, y }) => {
+  const f = useF();
+  const o = interpolate(f, [g - 2, g, g + 16], [0, 0.85, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <svg style={{ position: "absolute", left: x, top: y, opacity: o, transform: `scale(${1 + (f - g > 0 ? 0 : 0.15)})` }} width={130} height={150} viewBox="0 0 130 150">
+      <ellipse cx={65} cy={95} rx={42} ry={48} fill="#0b0d14" />
+      {[18, 42, 66, 90].map((cx, i) => <rect key={i} x={cx} y={14 + Math.abs(i - 1.5) * 8} width={20} height={60} rx={10} fill="#0b0d14" />)}
+      <rect x={100} y={70} width={20} height={44} rx={10} fill="#0b0d14" transform="rotate(30 110 92)" />
+    </svg>
+  );
+};
 export const P57Golpes: React.FC = () => {
   const k = kDe(328.07);
   const gs = Array.from({ length: 14 }).map((_, i) => 8 + i * 13 + (i % 3) * 4);
   return (
     <Sacude en={gs} amp={4}>
-      <Sala cl={[mira(0, PU - 300, 560, 1.3), mira(k(334.4), PU - 600, 560, 1.0, { curva: "inout" })]} sp={{ luz: "alerta", persiana: 1 }}
-        gente={[{ l: DOT, ruta: [{ f: 0, x: PU - 500 }, { f: 120, x: PU - 900 }], c: "miedo", d: 1, p: "parado" }, { l: RAFI, ruta: [{ f: 0, x: PU - 700 }, { f: 120, x: PU - 1100 }], c: "miedo", d: 1, mD: undefined }, { l: NELL, ruta: [{ f: 0, x: PU - 820 }, { f: 120, x: PU - 1200 }], c: "miedo", d: 1, p: "encogerse" }]}
-        hud={<Dice quien="otro" t="BANG  BANG  BANG" x={1150} y={330} desde={10} tam={72} rot={-6} />} />
+      <Sala cl={[mira(0, PU - 420, 620, 1.8), mira(k(334.4), PU - 560, 630, 1.7, { curva: "inout" })]} sp={{ luz: "alerta", persiana: 1 }}
+        gente={[{ l: DOT, ruta: [{ f: 0, x: PU - 380 }, { f: 120, x: PU - 560 }], c: "miedo", d: 1, p: "parado" }, { l: RAFI, ruta: [{ f: 0, x: PU - 560 }, { f: 120, x: PU - 760 }], c: "miedo", d: 1, mD: undefined }, { l: NELL, ruta: [{ f: 0, x: PU - 680 }, { f: 120, x: PU - 880 }], c: "miedo", d: 1, p: "encogerse" }]}
+        hud={<>{gs.map((g, i) => <Mano key={i} g={g} x={1380 + ((i * 137) % 380)} y={240 + ((i * 89) % 380)} />)}<Dice quien="otro" t="BANG  BANG  BANG" x={960} y={130} desde={10} centro tam={80} rot={-4} /></>} />
     </Sacude>
   );
 };
@@ -340,8 +357,9 @@ export const P58Palanca: React.FC = () => {
 
 // ---------- 59 · dieciséis máquinas se paran ----------
 export const P59Paran: React.FC = () => (
-  <Maquinas cl={[mira(0, 2000, 500, 0.6), mira(160, 2100, 520, 0.7, { curva: "inout" })]} sp={{ encendidas: [], luz: "noche" }}
-    hud={<Dice quien="rafi" t="all sixteen stopped." x={960} y={150} desde={20} centro tam={70} />} />
+  <Maquinas cl={[mira(0, 1900, 620, 1.6), mira(160, 2000, 600, 1.2, { curva: "inout" })]} sp={{ encendidas: [], luz: "noche" }}
+    gente={[{ l: CAL, x: 1800, p: [{ f: 0, v: "agarrarAlto" }, { f: 40, v: "manosCara" }], c: [{ f: 0, v: "determinado" }, { f: 40, v: "sorpresa" }], d: 1, mI: <Linterna />, luz: RIM.linterna }]}
+    hud={<Dice quien="rafi" t="all sixteen stopped." x={960} y={150} desde={4} centro tam={70} />} />
 );
 
 // ---------- 60 · los golpes se vuelven lentos, más bajos… ----------
@@ -378,8 +396,8 @@ export const P62Regla1: React.FC = () => {
 export const P63Regla2: React.FC = () => {
   const k = kDe(356);
   return (
-    <Sala cl={[mira(0, -800, 560, 1.0), mira(k(361.2), -800, 560, 1.3, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
-      detras={[{ l: RAFI, x: -1100, p: "pensar", c: "cansado", d: 1 }]}
+    <Sala cl={[mira(0, -560, 630, 1.6), mira(k(361.2), -540, 640, 1.8, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
+      detras={[{ l: RAFI, x: -860, p: "pensar", c: "cansado", d: 1 }]}
       gente={[{ l: DOT, x: -300, p: [{ f: 0, v: "señalar" }, { f: 60, v: "hablar" }], c: "determinado", habla: [[k(357.2), k(361)]], d: -1 }, { l: CAL, x: -100, p: "brazosCruzados", c: "cansado", d: -1 }]}
       hud={<><HudDia dia={1} desde={9999} hora="12:00 AM" /><Dice quien="dot" t="RULE 2: COUNT EVERYTHING." x={960} y={150} desde={k(358.9)} centro tam={86} /></>} />
   );
@@ -390,8 +408,8 @@ export const P64Cuento: React.FC = () => {
   const k = kDe(361.3);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, -1200, 520, 1.7), mira(k(369.3), -1000, 500, 1.9, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
-        detras={[{ l: RAFI, ruta: [{ f: 0, x: -1300 }, { f: k(369), x: -1000 }], p: "celular", c: "determinado", d: 1, mD: <Anotador /> }]} luzAct={RIM.linterna} />
+      <Sala cl={[mira(0, -1380, 560, 2.2), mira(k(369.3), -1300, 560, 2.4, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
+        detras={[{ l: RAFI, ruta: [{ f: 0, x: -1500 }, { f: k(369), x: -1300 }], p: "celular", c: "determinado", d: 1, mD: <Anotador /> }]} luzAct={RIM.linterna} />
       <Lista x={1180} y={180} tam={58} lineas={[{ t: "41  CHIPS", desde: k(366.1) }, { t: "96  HOT DOGS", desde: k(369.4) }]} />
     </AbsoluteFill>
   );
@@ -400,9 +418,9 @@ export const P65Cuento2: React.FC = () => {
   const k = kDe(369.4);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, -700, 500, 1.9), mira(k(376.2), -500, 500, 2.1, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
+      <Sala cl={[mira(0, -720, 640, 1.8), mira(k(376.2), -620, 640, 2.0, { curva: "inout" })]} snack sp={{ luz: "noche", tv: "apagada" }}
         detras={[{ l: RAFI, ruta: [{ f: 0, x: -800 }, { f: k(376), x: -560 }], p: "celular", c: "determinado", d: 1, mD: <Anotador /> }]}
-        gente={[{ l: DOT, x: -200, p: "brazosCruzados", c: "picaro", d: -1, habla: [[k(374.3), k(376)]] }]} luzAct={RIM.linterna} />
+        gente={[{ l: DOT, x: -380, p: "brazosCruzados", c: "picaro", d: -1, habla: [[k(374.3), k(376)]] }]} luzAct={RIM.linterna} />
       <Lista x={1180} y={180} tam={58} lineas={[{ t: "41  CHIPS" }, { t: "96  HOT DOGS" }, { t: "18  PRETZELS", desde: k(370.5) }, { t: "12  CANDY BARS", desde: k(371.7) }, { t: "SODA  (doesn't count)", desde: k(374.3), color: "#ff8fb8" }]} />
     </AbsoluteFill>
   );
@@ -413,10 +431,10 @@ export const P66Freezer: React.FC = () => {
   const k = kDe(376.2);
   return (
     <AbsoluteFill>
-      <Cocina cl={[mira(0, 1500, 500, 0.75), mira(k(384.1), CP.puerta, 520, 1.15, { curva: "inout" })]} sp={{ luz: "noche" }}
+      <Cocina cl={[mira(0, 800, 620, 1.6), mira(k(384.1), CP.puerta - 260, 620, 1.85, { curva: "inout" })]} sp={{ luz: "noche" }}
         gente={[{ l: RAFI, ruta: [{ f: 0, x: 600 }, { f: k(382), x: CP.puerta - 300 }], c: "determinado", mD: <Linterna />, luz: RIM.linterna }]} />
       <Lista x={1180} y={180} tam={54} lineas={[{ t: "BURGER PATTIES", desde: k(379.9) }, { t: "FRIES", desde: k(381.1) }, { t: "ICE CREAM", desde: k(381.9) }]} />
-      <Dice quien="dot" t="enough for weeks" x={1200} y={500} desde={k(382.8)} tam={64} />
+      <Dice quien="dot" t="enough for weeks" x={1180} y={880} desde={k(382.8)} tam={64} />
     </AbsoluteFill>
   );
 };
@@ -447,7 +465,7 @@ export const P68Raya: React.FC = () => {
 export const P69Mira: React.FC = () => {
   const k = kDe(396.77);
   return (
-    <Sala cl={[mira(0, 1500, 600, 1.4), mira(k(401.8), 1600, 560, 1.2, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1 }}
+    <Sala cl={[mira(0, 1560, 650, 1.8), mira(k(401.8), 1660, 640, 1.7, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1 }}
       gente={[{ l: NELL, x: 1860, sent: 0, p: { tronco: -6, pI: 30, rI: 140, pD: 40, rD: 150, hD: 70, cD: 150 }, c: "triste", d: 1, mD: <Walkie s={0.8} /> }, { l: CAL, ruta: [{ f: 0, x: 1250 }, { f: k(399.5), x: 1250 }, { f: k(401.8), x: 1680 }], p: [{ f: 0, v: "brazosCruzados" }, { f: k(399), v: "parado" }], c: [{ f: 0, v: "triste" }, { f: k(399), v: "determinado" }], d: 1 }]}
       hud={<HudDia dia={1} />} />
   );
@@ -469,7 +487,7 @@ export const P70DayOne: React.FC = () => {
 export const P71Lado: React.FC = () => {
   const k = kDe(408.3);
   return (
-    <Sala cl={[mira(0, 1900, 360, 0.9), mira(k(410.6), 1900, 400, 0.7, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1, dia: "DAY ONE" }}
+    <Sala cl={[mira(0, pistaX(8) - 40, 450, 1.45), mira(k(410.6), pistaX(8) - 60, 480, 1.25, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1, dia: "DAY ONE" }}
       gente={[{ l: CAL, x: pistaX(8) - 60, p: "parado", c: "triste", d: -1, luz: RIM.pantalla }, { l: NELL, x: 1860, sent: 0, p: "sentadoSuelo", c: "neutral", d: 1, mir: { x: 0, y: -1 }, mD: <Walkie s={0.8} /> }]}
       hud={<><HudDia dia={1} /><Dice quien="cal" t="So she can see it from anywhere." x={960} y={150} desde={k(408.5)} centro tam={64} /></>} />
   );
@@ -502,7 +520,7 @@ export const P73Toc: React.FC = () => {
 export const P74Frio: React.FC = () => {
   const k = kDe(419.95);
   return (
-    <Cocina cl={[mira(0, 900, 520, 1.0), mira(k(427), CP.puerta - 200, 520, 1.5, { curva: "inout" })]} sp={{ luz: "noche", golpes: [k(424), k(424.6), k(425.2)] }}
+    <Cocina cl={[mira(0, 640, 640, 1.8), mira(k(426.5), CP.puerta - 400, 640, 1.9, { curva: "lineal" })]} sp={{ luz: "noche", golpes: [k(424), k(424.6), k(425.2)] }}
       gente={[{ l: RAFI, ruta: [{ f: 0, x: 500 }, { f: k(426.5), x: CP.puerta - 400, curva: "lineal" }], c: "miedo", mD: <Linterna />, luz: RIM.linterna, d: 1 }]}
       hud={<><Dice quien="rafi" t="colder." x={1300} y={300} desde={k(423)} tam={70} /><Dice quien="rafi" t="the walk-in freezer." x={1100} y={420} desde={k(425.4)} tam={64} /></>} />
   );
@@ -512,7 +530,8 @@ export const P74Frio: React.FC = () => {
 export const P75Ley: React.FC = () => {
   const k = kDe(427.13);
   return (
-    <EnFreezer cl={[mira(0, 1060, 420, 0.95), mira(k(433.4), FP.perilla, 600, 2.4, { curva: "inout" })]} sp={{ vacio: 0 }}
+    <EnFreezer cl={[mira(0, 1060, 420, 0.95), mira(k(433.4), FP.perilla + 80, 600, 2.2, { curva: "inout" })]} sp={{ vacio: 0 }}
+      gente={[{ l: GUS, x: FP.perilla + 280, p: "parado", c: "cansado", d: -1, mir: { x: -1, y: 0 }, luz: RIM.frio }]}
       hud={<><Pildora texto="SAFETY RELEASE · BY LAW" x={960} y={140} desde={k(430.5)} /><Rotulo t="push it → the door opens" x={1250} y={740} desde={k(433.8)} flecha="izq" color={ROJO} /></>} />
   );
 };
@@ -521,7 +540,8 @@ export const P75Ley: React.FC = () => {
 export const P76Vivo: React.FC = () => {
   const k = kDe(433.49);
   return (
-    <EnFreezer cl={[mira(0, FP.perilla, 600, 2.8), mira(k(439.6), FP.perilla - 20, 620, 3.4, { curva: "lineal" })]} sp={{ vacio: 0 }}
+    <EnFreezer cl={[mira(0, FP.perilla, 600, 2.8), mira(k(439.6), FP.perilla + 60, 620, 2.9, { curva: "lineal" })]} sp={{ vacio: 0 }}
+      gente={[{ l: GUS, x: FP.perilla + 280, p: "parado", c: "cansado", d: -1, mir: { x: -1, y: 0 }, luz: RIM.frio }]}
       hud={<Dice quien="rafi" t="anyone alive can push that knob." x={960} y={860} desde={k(437.7)} centro tam={66} />} />
   );
 };
@@ -530,8 +550,11 @@ export const P76Vivo: React.FC = () => {
 export const P77NoPodia: React.FC = () => {
   const k = kDe(439.71);
   return (
-    <Cocina cl={[mira(0, CP.puerta, 480, 1.6), mira(k(441.1), CP.puerta, 480, 1.9, { curva: "lineal" })]} sp={{ luz: "noche", golpes: [8, 18, 28] }}
-      gente={[{ l: RAFI, x: CP.puerta - 420, c: "miedo", mD: <Linterna />, luz: RIM.linterna, d: 1, p: "encogerse" }]} />
+    <Sacude en={[8, 18, 28]} amp={6}>
+      <Cocina cl={[mira(0, CP.puerta - 200, 620, 1.6), mira(k(441.1), CP.puerta - 200, 630, 1.8, { curva: "lineal" })]} sp={{ luz: "noche", golpes: [8, 18, 28] }}
+        gente={[{ l: RAFI, x: CP.puerta - 420, c: "miedo", mD: <Linterna />, luz: RIM.linterna, d: 1, p: "encogerse" }]}
+        hud={<Dice quien="otro" t="KNOCK.  KNOCK.  KNOCK." x={1300} y={200} desde={8} tam={64} rot={-4} />} />
+    </Sacude>
   );
 };
 
@@ -548,7 +571,7 @@ export const P78Gus: React.FC = () => {
       <Recuerdo />
       <HudDia dia={1} desde={9999} hora="8:10 PM" />
       <Rotulo t="GUS · night manager" x={240} y={170} desde={k(447.3)} flecha="der" />
-      <Dice quien="rafi" t="Gus, grab me a case of fries?" x={260} y={760} desde={k(448)} tam={60} />
+      <Dice quien="rafi" t="Gus, grab me a case of fries?" x={960} y={300} centro desde={k(448)} tam={60} />
     </AbsoluteFill>
   );
 };
@@ -569,5 +592,6 @@ export const P79Uno: React.FC = () => {
 
 // ---------- 80 · pantalla final: el Ep. 2 ----------
 export const P80Final: React.FC = () => (
-  <Final ep={2} titulo={"Someone Is Knocking\nFrom Inside The Freezer"} fondo={<Cocina cl={[mira(0, CP.puerta, 500, 1.2), mira(300, CP.puerta - 200, 500, 1.0, { curva: "inout" })]} sp={{ luz: "noche", golpes: [40, 52, 64, 160, 172, 184] }} />} />
+  <Final ep={2} titulo={"Someone Is Knocking\nFrom Inside The Freezer"} fondo={<Cocina cl={[mira(0, CP.puerta, 500, 1.2), mira(300, CP.puerta - 200, 500, 1.0, { curva: "inout" })]} sp={{ luz: "noche", golpes: [40, 52, 64, 160, 172, 184] }}
+    gente={[{ l: RAFI, x: CP.puerta + 460, p: "encogerse", c: "miedo", d: -1, mI: <Linterna />, luz: RIM.linterna }]} />} />
 );
