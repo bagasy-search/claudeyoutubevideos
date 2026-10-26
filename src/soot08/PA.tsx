@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { C, ent, prog, fontFamily, Chip, Emote, Pan, Particulas, Rayos } from "./kit";
 import { Persona } from "./persona";
-import { ContraMula } from "./contra";
+import { ContraMula, Campanazo } from "./contra";
 import { Reloj, Termometro, Moneda3, Rosbif, V, T, Carta } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, CasaAdentro, NINO, NINA, HILANDERO, OBRERO, CAPATAZ, GenteFab, FCX, mulaVaiven } from "./mundo";
 import { Mini0 } from "./Mini0";
@@ -163,7 +163,9 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={47.2} text="CHILD" color={C.rojo} x={500} y={860} centro size={56} />
         </>
       )}
-      <ContraMula t={t} t0={45.8} t1={51.1} x={1300} g={{ expr: "miedo" }} />
+      <ContraMula t={t} t0={45.8} t1={51.1} />
+      <ContraMula t={t} t0={18.4} t1={21.7} x={-500} u0={0.3} u1={0.9} z={1.1} g={{ camina: 1.6, expr: "triste" }} />
+      <Campanazo t={t} t0={79.6} t1={81.3} />
       <Chip t={t} t0={49.6} t1={51.0} text="THE MACHINE DOESN'T CARE" color={C.noche} x={960} y={150} centro size={70} />
       <Gran t={t} t0={51.3} t1={53.4} text="YOUR PARENTS?" y={170} size={140} />
       <Chip t={t} t0={53.5} t1={54.3} text="NOT CRUEL" color={C.teal} tinta={C.noche} x={960} y={950} centro size={70} />
@@ -204,8 +206,8 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={75.5} t1={79.2} text="3,600 MILES AWAY" color={C.teal} tinta={C.noche} x={420} y={760} centro size={62} />
       <Chip t={t} t0={77.6} t1={79.2} text="WHY?" color={C.rojo} x={420} y={130} centro size={90} />
       <Velo t={t} t0={79.5} t1={81.5} op={0.25} />
-      <Gran t={t} t0={79.6} t1={81.3} text="YOUR SHIFT" x={560} y={390} size={140} />
-      <Gran t={t} t0={80.4} t1={81.3} text="STARTS NOW" x={560} y={570} size={150} color={C.ambar} />
+      <Gran t={t} t0={79.6} t1={81.3} text="YOUR SHIFT" x={560} y={170} size={130} />
+      <Gran t={t} t0={80.4} t1={81.3} text="STARTS NOW" x={560} y={330} size={140} color={C.ambar} />
     </AbsoluteFill>
   );
 };

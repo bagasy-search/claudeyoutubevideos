@@ -74,7 +74,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       )}
 
       {/* ── capas de pantalla ── */}
-      <ContraMula t={t} t0={660.5} t1={666.3} x={620} vel={1.3} g={{ expr: "triste", ...(t > 663.6 ? { bD: -20 + 12 * Math.sin(t * 9), bI: -20 - 12 * Math.sin(t * 9), cD: 40, cI: 40, inclina: 14 } : {}) }} />
+      <ContraMula t={t} t0={660.5} t1={666.3} x={-820} u0={0.9} u1={0.5} z={1.15} g={{ bD: 10, bI: 10, cD: 10, cI: 10, inclina: 10, ladea: -8, mira: -1,  expr: "triste", ...(t > 663.6 ? { bD: -20 + 12 * Math.sin(t * 9), bI: -20 - 12 * Math.sin(t * 9), cD: 40, cI: 40, inclina: 14 } : {}) }} />
       <Latigo t={t} at={[650.25, 673.61, 691.31, 711.31]} />
       <Horror t={t} t0={650.25} n={7} nombre="YOUR BODY" t1={652.1} />
       <Lista t={t} t0={652.4} t1={658.3} x={90} y={150} titulo="YOU SURVIVED…" size={52} previa items={[

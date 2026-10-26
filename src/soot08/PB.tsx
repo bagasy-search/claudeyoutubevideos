@@ -153,7 +153,7 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
         { de: 18, a: 19.5, t0: 119.7, t1: 120.3, color: C.teal },
         { de: 19.5, a: 22.5, t0: 120.8, t1: 121.6, color: C.rojo },
       ]} />
-      <Chip t={t} t0={119.7} t1={120.7} text="+ THE BREAKS" color={C.teal} tinta={C.noche} x={1500} y={700} centro size={56} />
+      <Chip t={t} t0={119.7} t1={120.7} text="+ THE BREAKS" color={C.teal} tinta={C.noche} x={1500} y={880} centro size={56} />
       <Gran t={t} t0={121.0} t1={122.7} text="MUCH LONGER" y={200} size={140} color={C.rojo} />
       {/* 1832: la sala del comité */}
       <Gran t={t} t0={123.1} t1={125.6} text="1832" y={180} size={200} color={C.ambar} />

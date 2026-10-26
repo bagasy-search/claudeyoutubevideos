@@ -144,6 +144,7 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       {aviso && (
         <div style={{ position: "absolute", inset: 0, opacity: 1 - prog(t, 445.3, 445.7) }}>
           {t < 426.5 && <div style={{ opacity: 1 - prog(t, 425.9, 426.4) }}><Aviso t={t} t0={409.4} x={t < 415.8 ? 860 : 860 - 300 * prog(t, 415.8, 416.4)} y={500} w={t < 415.8 ? 1150 : 1150 - 230 * prog(t, 415.8, 416.4)} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} /></div>}
+          {t > 409.6 && t < 415.9 && <Persona t={t} seed={61} ropa={CAPATAZ} gorro="copa" x={1690} y={1050} h={620} flip expr="enojado" bD={95 + 14 * Math.sin(t * 7)} cD={70} mira={-1} aparece={409.7} opacity={1 - prog(t, 415.6, 415.9)} />}
           {t > 415.8 && t < 440.1 && <Vineta t={t} />}
           {/* vuelta 10 OJO: 2º diseño de E2 — la viñeta al centro y la cuenta de lo perdido en la semana */}
           {t > 426.2 && t < 440.1 && <div style={{ position: "absolute", left: 120, top: 360, width: 400, padding: "26px 0", borderRadius: 26, background: "#2a1530", border: "8px solid #fff3d6", textAlign: "center", fontFamily, fontWeight: 700, color: "#fff3d6", transform: `scale(${ent(t, 426.2)})` }}><div style={{ fontSize: 40 }}>FINED SO FAR</div><div style={{ fontSize: 120, color: C.rojo }}>{t < 428.6 ? 4 : t < 432.8 ? 5 : 11}s</div></div>}
@@ -168,6 +169,16 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={445.8} t1={447.4} text="THOSE WERE THE ADULTS" color={C.noche} x={960} y={150} centro size={70} />
       {t > 447.5 && t < 453.7 && (
         <>
+          {/* vuelta 11 OJO: la semana del piecer en casillas; la multa se come un día y medio (antes: nene de frente en la pared) */}
+          <AbsoluteFill style={{ background: "linear-gradient(180deg,#e9c99a,#c9a274)", opacity: prog(t, 447.5, 447.8) * (1 - prog(t, 453.4, 453.7)) }}>
+            <div style={{ position: "absolute", left: 0, top: 900, width: 1920, height: 180, background: "#7a5230" }} />
+            {["MON", "TUE", "WED", "THU", "FRI", "SAT"].map((d, i) => { const ido = i === 0 ? prog(t, 451.6, 452.1) : i === 1 ? 0.5 * prog(t, 452.0, 452.5) : 0; return (
+              <div key={d} style={{ position: "absolute", left: 470 + i * 160, top: 540, width: 140, height: 200, borderRadius: 16, background: "#fff3d6", border: "6px solid #2a1530", overflow: "hidden", fontFamily, fontWeight: 700, fontSize: 36, color: "#2a1530", textAlign: "center", paddingTop: 16, transform: `scale(${ent(t, 447.9 + i * 0.12)})` }}>
+                {d}<div style={{ position: "absolute", left: 0, bottom: 0, width: `${ido * 100}%`, height: "100%", background: "rgba(214,60,80,.75)" }} />
+              </div>); })}
+            <Persona t={t} seed={2} ropa={NINO} gorro="gorra" x={250} y={1000} h={600} expr={t > 451.4 ? "triste" : "neutro"} mira={1} bD={t > 451.4 ? 40 : 110} cD={60} />
+            <Persona t={t} seed={61} ropa={CAPATAZ} gorro="copa" x={1720} y={1000} h={640} flip expr="enojado" bD={t > 451.4 ? 120 : 30} habla={t > 451.4} />
+          </AbsoluteFill>
           <Chip t={t} t0={447.6} t1={453.6} text="A PIECER'S WEEK" color={C.violeta} x={960} y={150} centro size={70} />
           {[0, 1, 2, 3].map((i) => <Moneda3 key={i} t={t} t0={448.4 + i * 0.2} t1={453.5} x={600 + i * 240} y={330} s={0.75} txt="1s" />)}
           <Tachado t={t} t0={451.4} t1={453.5} x={600} y={330} w={230} h={230} />

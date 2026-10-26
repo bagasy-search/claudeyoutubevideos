@@ -114,7 +114,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       <Velo t={t} t0={588.05} t1={591.2} op={0.55} />
       <Gran t={t} t0={588.15} t1={591.2} text="LESS THAN A SECOND" y={440} size={120} color={C.crema} />
       {/* vuelta 10 OJO: la silueta de la niña sigue en el plano (antes quedaba sólo el texto) */}
-      {t > 588.2 && t < 591.2 && <Persona t={t} seed={3} x={960} y={1060} h={420} ropa={NINA} gorro="cofia" largo expr="miedo" sombra="#d8455a" opacity={0.8 * ent(t, 588.3) * (1 - prog(t, 590.9, 591.2))} />}
+      {t > 588.2 && t < 591.2 && <Persona t={t} seed={3} x={960} y={1060} h={420} ropa={NINA} gorro="cofia" largo expr="miedo" opacity={0.85 * ent(t, 588.3) * (1 - prog(t, 590.9, 591.2))} />}
       <Lista t={t} t0={591.5} t1={598.9} x={90} y={170} titulo="NEXT IN LINE…" size={56} items={[{ txt: "SLEEVES", t0: 591.6, ok: false }, { txt: "APRONS", t0: 592.3, ok: false }, { txt: "FINGERS", t0: 593.0, ok: false }]} />
       <Chip t={t} t0={594.1} t1={598.9} text="CLEANING MACHINES · STILL RUNNING" color={C.rojo} x={1250} y={950} centro size={58} />
       <Gran t={t} t0={599.35} t1={600.2} text="AND THEN WHAT?" y={540} size={130} color={C.ambar} />
