@@ -79,10 +79,7 @@ export const W0: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         </div>
       )}
       {/* pines de las 7 trampas sobre los milecastles */}
-      {/* se van ANTES del zoom a MC(1): con la cámara cerca, pines de escala 26 hacen capas gigantes y Chrome se cae en el farm */}
-      {t > 44 && t < 47.75 && <div style={{ position: "absolute", left: 0, top: 0, opacity: 1 - prog(t, 47.3, 47.7) }}>{["POSTING", "WEATHER", "SUPPLY", "BOREDOM", "NEIGHBORS", "THE NORTH", "THE END"].map((ic, i) => (
-        <Pin key={i} t={t} t0={44.34 + i * 0.3} n={i + 1} x={MC(i + 1)} y={TOP - 520} s={26} icono={ic} act={t > 46.98 && i === 0} />
-      ))}</div>}
+
     </>
   );
 };
@@ -106,6 +103,12 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
   const [mx1] = pant(47000, 600, c);
   return (
     <>
+      {/* pines de las 7 trampas sobre los milecastles: en PANTALLA (en el mundo eran de escala 26 = capas de ~4700 px que
+          tiraban a Chrome en el farm); se van antes del zoom a MC(1) */}
+      {t > 44 && t < 47.75 && <div style={{ position: "absolute", inset: 0, opacity: 1 - prog(t, 47.3, 47.7) }}>{["POSTING", "WEATHER", "SUPPLY", "BOREDOM", "NEIGHBORS", "THE NORTH", "THE END"].map((ic, i) => {
+        const [px, py] = pant(MC(i + 1), TOP - 520, c);
+        return <Pin key={i} t={t} t0={44.34 + i * 0.3} n={i + 1} x={px} y={py} s={26 * c.z} icono={ic} act={t > 46.98 && i === 0} />;
+      })}</div>}
       <Relampago t={t} t0={0.05} x={1500} /><Relampago t={t} t0={6.08} x={420} /><Relampago t={t} t0={23.6} x={1650} />
       {/* 0-1,3: tenés 19 */}
       <Sale t={t} t0={0.22} t1={1.3}><Chip t={t} t0={0.22} text="YOU. AGE: 19" color={C.rojo} x={960} y={930} centro size={92} /></Sale>
