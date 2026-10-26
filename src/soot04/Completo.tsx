@@ -63,7 +63,7 @@ export const Completo: React.FC = () => {
             <Olas pal={pal} frente />
             {act.map((p, i) => <React.Fragment key={`d${i}`}>{p.frente?.(t)}</React.Fragment>)}
           </CapaMundo>
-          <Primerplano t={t} />
+          <Primerplano t={t} lista={INSERTOS} />
           {act.map((p, i) => <React.Fragment key={`h${i}`}>{p.hud?.(t)}</React.Fragment>)}
           <MostrarInsertos t={t} lista={INSERTOS} />
         </CamCtx.Provider>

@@ -190,8 +190,9 @@ export const Colinas: React.FC<{ capas: string[]; base?: number; dx?: number; se
 );
 
 // ── chapita (CORNELL · 2015 de la ref)
-export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size = 62, centro, tinta = "#fff" }) => {
+export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; color?: string; x: number; y: number; size?: number; centro?: boolean; tinta?: string }> = ({ t, t0, t1 = 1e9, text, color = C.violeta, x, y, size: size0 = 62, centro, tinta = "#fff" }) => {
   if (t < t0 || t > t1 + 0.3) return null;
+  const size = Math.max(size0, 56); // vuelta 4: nada de etiquetas chicas
   const s0 = ent(t, t0, 0, { damping: 11, stiffness: 180 });
   const out = interpolate(t, [t1, t1 + 0.3], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const w = anchoTxt(text, size) + size * 0.84, z = seguro(centro ? x : x + w / 2, y, w, size * 1.5);

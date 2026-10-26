@@ -93,20 +93,29 @@ export const Vuela: React.FC<{ t: number; t0: number; t1: number; x0: number; y0
 // montaje: el inserto activo entra con una de 4 transiciones (iris / barrido / zoom / corte seco, alternadas
 // para que no sea siempre el mismo círculo) y sale por corte seco (el iris de salida dejaba cuadros vacíos); empuje lento adentro
 export const MostrarInsertos: React.FC<{ t: number; lista: Ins[] }> = ({ t, lista }) => {
-  const idx = lista.findIndex((k) => t >= k.a && t < k.b);
-  if (idx < 0) return null;
+  // vuelta 4: un hueco ≤0,35 s entre dos insertos dejaba ver 2-3 cuadros del mundo (fantasmas): se sostiene el anterior
+  let idx = lista.findIndex((k) => t >= k.a && t < k.b);
+  let tt = t;
+  if (idx < 0) {
+    const prev = lista.findIndex((k, j) => t >= k.b && t < k.b + 0.35 && lista[j + 1] && lista[j + 1].a - k.b <= 0.35);
+    if (prev < 0) return null;
+    idx = prev;
+    tt = lista[prev].b - 0.01;
+  }
   const i = lista[idx];
+  // el contenido arranca ya armado (los elementos que entraban en `a` dejaban el primer cuadro vacío o un disco oscuro)
+  const tc = Math.max(tt, i.a + 0.3);
   const tipo = (["iris", "barrido", "zoom", "corte"] as const)[idx % 4];
   const IN = 0.2;
-  const r = tipo === "corte" ? 1 : Math.min(1, (t - i.a) / IN);
+  const r = tipo === "corte" ? 1 : Math.min(1, (tt - i.a) / IN);
   const e = Easing.out(Easing.cubic)(Math.max(0, r));
-  const z = 1 + (i.z ?? 0.05) * ((t - i.a) / (i.b - i.a)) + (tipo === "zoom" ? 0.25 * (1 - e) : 0);
-  const clip = r >= 1 ? undefined : tipo === "iris" ? `circle(${e * 82}% at 50% 52%)` : tipo === "barrido" ? `inset(0 ${(1 - e) * 100}% 0 0)` : undefined;
+  const z = 1 + (i.z ?? 0.05) * ((tt - i.a) / (i.b - i.a)) + (tipo === "zoom" ? 0.25 * (1 - e) : 0);
+  const clip = r >= 1 ? undefined : tipo === "iris" ? `circle(${18 + e * 64}% at 50% 52%)` : tipo === "barrido" ? `inset(0 ${(1 - e) * 100}% 0 0)` : undefined;
   return (
-    <div style={{ position: "absolute", inset: 0, overflow: "hidden", clipPath: clip, opacity: tipo === "zoom" ? Math.min(1, e * 1.6) : 1 }}>
+    <div style={{ position: "absolute", inset: 0, overflow: "hidden", clipPath: clip }}>
       <div style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: "50% 55%" }}>
-        {i.fondo(t)}
-        {i.d(t)}
+        {i.fondo(tc)}
+        {i.d(tc)}
       </div>
       {r < 1 && tipo === "iris" && <div style={{ position: "absolute", inset: 0, boxShadow: `inset 0 0 0 ${18 * (1 - e)}px #fff` }} />}
       {r < 1 && tipo === "barrido" && <div style={{ position: "absolute", top: 0, bottom: 0, left: `${e * 100}%`, width: 26, marginLeft: -13, background: C.oro, boxShadow: `0 0 0 6px ${C.noche}` }} />}

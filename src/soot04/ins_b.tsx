@@ -214,6 +214,7 @@ export const INS_B: Ins[] = [
             {t > 383.1 && <g opacity={prog(t, 383.1, 383.4)}><line x1={260} y1={850} x2={260 + 1400 * prog(t, 383.1, 383.7)} y2={850} stroke={C.oro} strokeWidth={10} /><line x1={260} y1={820} x2={260} y2={880} stroke={C.oro} strokeWidth={10} /><line x1={1660} y1={820} x2={1660} y2={880} stroke={C.oro} strokeWidth={10} opacity={prog(t, 383.6, 383.7)} /></g>}
             {t > 388.2 && <path d={`M 900 500 L 940 560 L 910 610 L 960 680 L 930 740`} stroke={C.rojo} strokeWidth={10} fill="none" strokeDasharray={300} strokeDashoffset={300 * (1 - prog(t, 388.3, 388.6))} />}
           </svg>
+          <Chico x={1780} y={1300} h={820} t={t} expr={t > 388.2 ? "miedo" : "sorpresa"} mira={-1} bD={t > 386.7 ? 150 : 95} cD={t > 386.7 ? 20 : 0} salta={388.3} />
           <Rot t={t} t0={383.4} text="30 FEET" x={960} y={930} size={110} color={C.oro} />
           <Chip t={t} t0={381.5} text="WHALEBOAT" color={C.teal} tinta={C.noche} x={960} y={150} centro size={66} />
           <Chip t={t} t0={384.6} text="THIN CEDAR" color="#a8783e" x={400} y={330} centro size={52} />

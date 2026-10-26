@@ -100,7 +100,7 @@ export const P1: Parte = {
             {t > 93.2 && <g transform={`translate(170 -40) scale(${ent(t, 93.2)})`}>{[0, 72, 144, 216, 288].map((a) => <ellipse key={a} cx={0} cy={-26} rx={18} ry={30} fill={C.rosa} transform={`rotate(${a})`} />)}<circle r={16} fill={C.ambar} /></g>}
           </g>
         ) : (
-          <g>{Array.from({ length: 7 }, (_, i) => <g key={i} transform={`translate(${-150 + (i % 4) * 100} ${-30 + Math.floor(i / 4) * 90}) scale(${ent(t, 95.6 + i * 0.08)})`}><Moneda0 r={44} /></g>)}</g>
+          <g>{Array.from({ length: 7 }, (_, i) => <g key={i} transform={`translate(${-150 + (i % 4) * 100} ${-30 + Math.floor(i / 4) * 90}) scale(${ent(t, 95.3 + i * 0.05)})`}><Moneda0 r={44} /></g>)}</g>
         )}
       </Globo>
       {/* ── Nantucket: el chico llega con su equipo y el land shark lo empuja a la planchada */}

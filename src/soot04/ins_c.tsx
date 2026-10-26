@@ -179,6 +179,7 @@ export const INS_C: Ins[] = [
       <>
         {t < 668.3 && <Ballenero x={960} y={760} t={t} escala={0.55} nombre="ESSEX" />}
         <Rot t={t} t0={662.9} t1={668.0} text="AUGUST 1819" x={960} y={170} size={130} color={C.crema} />
+        {t < 668.3 && <Marino i={2} x={1660} y={1290} h={860} t={t} expr="feliz" mira={-1} bD={140} cD={30} salta={665.0} />}
         {t < 668.3 && <Monto t={t} ks={[[667.2, 0], [667.5, 21]]} x={960} y={960} size={110} pre="" suf=" MEN" color={C.oro} />}
         {t > 668.3 && (
           <>
@@ -347,7 +348,7 @@ export const INS_C: Ins[] = [
           {t > 733.6 && t < 738.6 && <Svg x={260} y={520} s={0.9 * ent(t, 733.7)}><circle r={110} fill="#fff" stroke={C.noche} strokeWidth={10} /><Icono k={7} /></Svg>}
           <Chip t={t} t0={735.6} t1={738.6} text="'THEY EAT VISITORS'" color={C.rojo} x={260} y={680} centro size={44} />
           <Chip t={t} t0={737.9} text="THE OTHER WAY →" color={C.oro} tinta={C.noche} x={1250} y={200} centro size={58} />
-          <Pollard x={1460} y={1100} h={520} t={t} expr={t > 747 ? "triste" : "enojado"} flip bD={100} cD={10} />
+          <Pollard x={1480} y={1290} h={820} t={t} expr={t > 747 ? "triste" : "enojado"} flip bD={100} cD={10} />
           <Monto t={t} ks={[[744.0, 0], [744.6, 4000]]} x={1000} y={960} size={90} pre="" suf="+ KM" color={C.crema} />
           {t > 738.8 && <div style={{ position: "absolute", left: 60, top: 900, fontFamily, fontWeight: 700, fontSize: 70, color: C.crema, WebkitTextStroke: `6px ${C.noche}`, paintOrder: "stroke fill" }}>DAY {dias}</div>}
           <Rot t={t} t0={747.1} text="THE WHOLE TRAGEDY" x={960} y={160} size={110} color={C.rojo} />
@@ -381,7 +382,7 @@ export const INS_C: Ins[] = [
         <>
           {[["FOOD", comida, C.tierra, 230], ["WATER", agua, C.teal, 380]].map(([n, v, col, y]) => (
             <div key={n as string} style={{ position: "absolute", left: 260, top: y as number, width: 1400, height: 90, background: "rgba(0,0,0,.35)", borderRadius: 45, border: "6px solid #fff" }}>
-              <div style={{ width: `${(v as number) * 100}%`, height: "100%", background: (v as number) < 0.25 ? C.rojo : col as string, borderRadius: 45 }} />{(v as number) < 0.02 && <div style={{ position: "absolute", right: 40, top: 6, fontFamily, fontWeight: 700, fontSize: 60, color: C.rojo, WebkitTextStroke: `5px #fff`, paintOrder: "stroke fill", opacity: Math.floor(t * 3) % 2 ? 1 : 0.35 }}>EMPTY</div>}
+              <div style={{ width: `${(v as number) * 100}%`, height: "100%", background: (v as number) < 0.25 ? C.rojo : col as string, borderRadius: 45 }} />{(v as number) < 0.02 && <div style={{ position: "absolute", right: 40, top: 6, fontFamily, fontWeight: 700, fontSize: 56, color: "#fff", background: C.rojo, padding: "0 22px", borderRadius: 30, border: `5px solid ${C.noche}`, transform: `scale(${Math.floor(t * 3) % 2 ? 1.08 : 1})` }}>EMPTY</div>}
               <div style={{ position: "absolute", left: 30, top: 6, fontFamily, fontWeight: 700, fontSize: 60, color: "#fff", WebkitTextStroke: `5px ${C.noche}`, paintOrder: "stroke fill" }}>{n as string}</div>
             </div>
           ))}
@@ -457,6 +458,8 @@ export const INS_C: Ins[] = [
     fondo: () => <Grad c1="#140e22" c2="#06040c" />,
     d: (t) => (
       <>
+        <Marino i={2} x={330} y={1290} h={900} t={t} expr="miedo" bD={160} bI={160} cD={10} cI={10} mira={1} />
+        <Marino i={4} x={1640} y={1290} h={860} t={t} expr="triste" flip bD={20} cD={40} inclina={-6} />
         <Pistola x={960} y={560} s={2.4 * ent(t, 791.0)} rot={-6} humo={t > 792.55 ? 1 - prog(t, 792.8, 794) * 0.6 : 0} />
         <Chip t={t} t0={790.7} text="CHOSEN BY LOT" color={C.violeta} x={960} y={180} centro size={60} />
         {t > 792.6 && <div style={{ position: "absolute", inset: 0, background: `rgba(0,0,0,${0.5 * prog(t, 792.65, 793.1)})` }} />}
@@ -472,13 +475,14 @@ export const INS_C: Ins[] = [
         {t < 799.8 && (
           <>
             <Ballenero x={1450} y={640} t={t} escala={0.42} />
+            <Marino i={4} x={1760} y={1300} h={860} t={t} expr={t > 797.5 ? "feliz" : "triste"} bD={t > 797.5 ? 150 : 30} cD={t > 797.5 ? 20 : 60} mira={-1} flip salta={797.6} />
             {[0, 1].map((k) => <Bote key={k} x={interpolate(t, [796.2, 799.0], [300, 950], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) + k * 260} y={700} t={t} s={0.55} rema={0.6} gente={<>{[-80, 10, 100].map((ox, j) => <circle key={j} cx={ox} cy={-70} r={22} fill="#f2b48a" />)}</>} />)}
             <Monto t={t} ks={[[794.2, 0], [794.8, 90]]} x={500} y={170} size={140} pre="" suf=" DAYS" color={C.crema} />
             <Chip t={t} t0={797.5} text="PICKED UP · SOUTH AMERICA" color={C.violeta} x={1150} y={330} centro size={52} />
           </>
         )}
         {t > 799.8 && <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,#2a2440,#141024)" }} />}
-        {t > 799.8 && <Veinte t={t} t0={799.9} vivos={8} tMuere={801.6} y={640} dos />}
+        {t > 799.8 && <Veinte t={t} t0={799.5} vivos={8} tMuere={801.6} y={640} dos />}
         {t > 799.8 && <Chip t={t} t0={800.0} text="20 MEN" color={C.noche} x={960} y={120} centro size={66} />}
         <Rot t={t} t0={802.3} text="8 SURVIVED" x={960} y={t > 799.8 ? 1000 : 380} size={120} color={C.lima} />
       </>
@@ -687,7 +691,7 @@ export const INS_C: Ins[] = [
         <Chip t={t} t0={872.8} text="THE GREENHAND RETURNS" color={C.violeta} x={480} y={200} centro size={52} />
         {[["4 YEARS OLDER", 877.0], ["SUNBURNED", 878.1], ["MISSING A TOOTH", 879.0], ["SMELLS OF SMOKE", 880.0]].map(([w, t0], k) => <Chip key={k} t={t} t0={t0 as number} t1={883.0} text={w as string} color={[C.noche, C.rojo, "#4a4e58", "#3a3034"][k]} x={1300} y={300 + k * 100} centro size={50} />)}
         <Monto t={t} ks={[[881.2, 0], [881.8, -9]]} x={1300} y={760} size={150} color={C.rojo} t0={881.2} />
-        {t > 884.0 && <Persona x={1450} y={1200} h={600} t={t} seed={210} ropa={CUAQUERO} casco="cuaquero" pantalon="#3a3a3a" expr="feliz" bD={110} cD={60} manoD={<g>{[0, 1, 2].map((k) => <circle key={k} cx={k * 14} cy={-k * 10} r={22} fill={C.oro} stroke="#8a5a10" strokeWidth={4} />)}</g>} flip />}
+        {t > 884.0 && <Persona x={1560} y={1290} h={900} t={t} seed={210} ropa={CUAQUERO} casco="cuaquero" pantalon="#3a3a3a" expr="feliz" bD={110} cD={60} manoD={<g>{[0, 1, 2].map((k) => <circle key={k} cx={k * 14} cy={-k * 10} r={22} fill={C.oro} stroke="#8a5a10" strokeWidth={4} />)}</g>} flip />}
         <Rot t={t} t0={886.5} text="WHO WAS REALLY HUNTING?" x={960} y={960} size={86} color={C.crema} />
       </>
     ),

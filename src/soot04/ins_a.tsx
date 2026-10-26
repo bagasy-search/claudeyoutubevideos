@@ -36,6 +36,7 @@ export const INS_A: Ins[] = [
           <svg style={{ position: "absolute", left: 1260, top: 560, overflow: "visible" }} width={1} height={1}>
             <g transform={`scale(${ent(t, 9.8)})`}>
               <circle r={330} fill={C.oro} stroke={C.noche} strokeWidth={12} />
+              {t < tc && <text y={80} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={240} fill={C.noche} transform={`scale(${1 + Math.sin(t * 6) * 0.06})`}>?</text>}
               {Array.from({ length: n }, (_, i) => { const a = (i / n) * Math.PI * 2 - Math.PI / 2; const u = prog(t, tc + (i / n) * 0.35, tc + (i / n) * 0.35 + 0.1); return <line key={i} x1={0} y1={0} x2={Math.cos(a) * 330 * u} y2={Math.sin(a) * 330 * u} stroke="#a8781a" strokeWidth={n > 50 ? 2 : 6} opacity={n > 50 ? 0.45 : 1} />; })}
               {t > 12.6 && (() => { const k = prog(t, 12.6, 13.1); const a0 = -Math.PI / 2, a1 = a0 + (Math.PI * 2) / 175; return <path d={`M ${Math.cos(a0 + 0.004) * 60 * k} ${-60 * k} L ${Math.cos(a0) * 330 + 0} ${Math.sin(a0) * 330 - 90 * k} L ${Math.cos(a1) * 330} ${Math.sin(a1) * 330 - 90 * k} Z`} fill={C.rojo} stroke="#fff" strokeWidth={3} transform={`translate(${70 * k} ${-90 * k})`} />; })()}
             </g>
