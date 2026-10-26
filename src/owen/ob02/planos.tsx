@@ -255,8 +255,8 @@ export const P14Capa: React.FC = () => {
         <BateriaSvg pct={38} capa={interpolate(f, [12, 80], [0, 17], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} f={f} />
       </div>
       {f > 4 && f < 90 && <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}><g transform={`translate(1080,${300 - Math.min(1, f / 10) * 40}) rotate(${-40 - Math.min(1, f / 14) * 60})`}><rect x={-34} y={-70} width={68} height={140} rx={14} fill="#2fd16a" /><rect x={-34} y={-70} width={68} height={22} fill="#1a8a44" /></g>{Array.from({ length: 8 }).map((_, i) => { const t = ((f + i * 5) % 20) / 20; return <circle key={i} cx={1010 - t * 20} cy={300 + t * 160} r={9} fill="#ffe04a" opacity={1 - t} />; })}</svg>}
-      <Mano texto="it just LOOKS full" x={520} y={860} desde={k(108.0)} color="#fff6c8" tam={70} />
-      {corte > 0 && <Mano texto="underneath: the same red" x={1400} y={860} desde={k(110.6)} color={ROJO_OWEN} tam={70} />}
+      <Mano texto="it just LOOKS full" x={700} y={860} desde={k(108.0)} hasta={k(110.5)} color="#fff6c8" tam={88} />
+      {corte > 0 && <Mano texto="underneath: the same red" x={700} y={860} desde={k(110.6)} color={ROJO_OWEN} tam={88} />}
       <HudOwen part={PART} />
     </AbsoluteFill>
   );
@@ -320,7 +320,7 @@ export const P18Cafe: React.FC = () => {
 export const P19Lena: React.FC = () => {
   const k = kDe(159.84);
   // primeros planos alternados por frase: Owen pregunta / Lena contesta / los dos / el billete
-  const cl = [mira(0, CAFE + 330, ASH_PISO - 300, 2.1), mira(k(161.3), CAFE + 350, ASH_PISO - 300, 2.15), mira(k(161.4), CAFE + 640, ASH_PISO - 320, 2.2), mira(k(163.7), CAFE + 600, ASH_PISO - 320, 2.3), mira(k(163.8), CAFE + 480, ASH_PISO - 310, 1.6), mira(k(169.5), CAFE + 470, ASH_PISO - 310, 1.7), mira(k(169.6), CAFE + 380, ASH_PISO - 300, 2.2, { curva: "out" })];
+  const cl = [mira(0, CAFE + 330, ASH_PISO - 300, 2.1), mira(k(161.3), CAFE + 350, ASH_PISO - 300, 2.15), mira(k(161.3) + 1, CAFE + 640, ASH_PISO - 320, 2.2), mira(k(163.7), CAFE + 600, ASH_PISO - 320, 2.3), mira(k(163.7) + 1, CAFE + 480, ASH_PISO - 310, 1.6), mira(k(169.5), CAFE + 470, ASH_PISO - 310, 1.7), mira(k(169.5) + 1, CAFE + 380, ASH_PISO - 300, 2.2)]; // 26-oct v5 (ojo: tirones 2:41/2:43/2:49): cortes secos de 1 cuadro, sin zoom intermedio
   const f = useF();
   const deja = k(170.4);
   return (
@@ -478,7 +478,7 @@ export const P29Deriva: React.FC = () => {
         <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 540 * cierra * 0.8, background: "linear-gradient(#0d0a10 85%, rgba(13,10,16,0))" }} />
         <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 540 * cierra * 0.8, background: "linear-gradient(rgba(13,10,16,0), #0d0a10 15%)" }} />
       </>}
-      {cierra > 0.5 && <div style={{ position: "absolute", left: 0, right: 0, top: 480, textAlign: "center", fontFamily: F_HUD, fontWeight: 800, fontSize: 110, color: "#ff5a4a", textShadow: "0 6px 20px rgba(0,0,0,0.8)" }}>{f < k(260.9) ? "1 second..." : "2..."}</div>}
+      {cierra > 0.25 && <div style={{ position: "absolute", left: 0, right: 0, top: 455, textAlign: "center", fontFamily: F_HUD, fontWeight: 900, fontSize: 140, lineHeight: 1, color: "#fff", WebkitTextStroke: "6px #ff3d2e", opacity: Math.min(1, (cierra - 0.25) * 4), textShadow: "0 6px 20px rgba(0,0,0,0.8)" }}>{f < k(260.9) ? "1 second..." : "2..."}</div>}
     </AbsoluteFill>
   );
 };
@@ -582,10 +582,11 @@ export const P35Rosa: React.FC = () => {
         <Bat cl={cl} x={TF_PUNTOS.sillaRosa} y={P - 300} pct={[{ f: 0, v: 66 }, { f: k(327.7), v: 65 }]} desde={k(314.6)} tam={1.2} />
         <Bat cl={cl} x={TF_PUNTOS.sillaOwen} y={P - 300} pct={[{ f: 0, v: 24 }, { f: k(329.8), v: 18 }]} desde={k(327.8)} tam={1.2} alerta />
         <Pildora texto="ROSA · 81 · 65% AT 6 PM" x={960} y={960} desde={k(314.6)} hasta={k(327.6)} color="#f4efe4" />
-        {[["a walk in the morning", 316.9], ["real food, regular times", 319.1], ["water, not soda", 320.9], ["a nap after lunch", 322.1], ["in bed by 9:30", 323.3]].map(([t, a], i) => (
-          <Mano key={i} texto={t as string} x={1450} y={180 + i * 100} desde={k(a as number)} hasta={k(327.6)} color="#ffd27a" tam={52} />
+        {/* 26-oct v5 (ojo: los manuscritos pisaban baterías y calendario): una nota por vez, arriba al centro */}
+        {[["a walk in the morning", 316.9, 319.0], ["real food, regular times", 319.1, 320.8], ["water, not soda", 320.9, 322.0], ["a nap after lunch", 322.1, 323.2], ["in bed by 9:30", 323.3, 325.1]].map(([t, a, b], i) => (
+          <Mano key={i} texto={t as string} x={960} y={150} desde={k(a as number)} hasta={k(b as number)} color="#ffd27a" tam={80} />
         ))}
-        <Mano texto="spent on purpose" x={430} y={130} desde={k(325.2)} color={VERDE} tam={60} />
+        <Mano texto="spent on purpose" x={960} y={150} desde={k(325.2)} hasta={k(327.7)} color={VERDE} tam={84} />
         <Pildora texto="OWEN: A HOLE IN A BUCKET" x={960} y={960} desde={k(327.9)} color={ROJO_OWEN} tam={52} />
         <HudOwen min={1080} part={PART} />
       </>} />

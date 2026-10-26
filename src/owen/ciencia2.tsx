@@ -33,8 +33,8 @@ export const Combustible: React.FC<{ dHigado?: number; dMusculo?: number; dCereb
       <g opacity={0.35 + 0.65 * ease(f, d - 6, d + 4)}>
         <rect x={x - 70} y={820 - 420} width={140} height={420} rx={16} fill="none" stroke={GRIS} strokeWidth={6} />
         <rect x={x - 62} y={812 - h} width={124} height={Math.max(0, h - 4)} rx={10} fill={col} />
-        <T x={x} y={790 - h} s={56} c={col}>{Math.round(g * u)} g</T>
-        <T x={x} y={890} s={36}>{et}</T>
+        <T x={x} y={790 - h} s={96} c={col}>{Math.round(g * u)} g</T>
+        <T x={x} y={900} s={56}>{et}</T>
       </g>
     );
   };
@@ -42,27 +42,27 @@ export const Combustible: React.FC<{ dHigado?: number; dMusculo?: number; dCereb
   return (
     <Pizarra titulo="STORED FUEL" fuente="Glycogen stores · adult averages" profe={false}>
       {/* 26-oct (ojo 5/10: hígado apagado, Owen mini): barra del HÍGADO que faltaba + Owen x1.8 comiendo */}
-      <Actor look={OWEN} escala={1.5} seed={12} ruta={[{ f: 0, x: 170, y: 1010 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]}
+      <Actor look={OWEN} escala={2.6} seed={12} ruta={[{ f: 0, x: 170, y: 1150 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]}
         poses={Array.from({ length: 30 }).map((_, i) => ({ f: i * 16, v: i % 2 ? { hD: 150, cD: 150, cabeza: 6 } : { hD: 60, cD: 80 } }))} habla={Array.from({ length: 30 }).map((_, i) => [i * 16 + 2, i * 16 + 8] as [number, number])}
         enManoD={<g><rect x={-30} y={-18} width={60} height={30} rx={8} fill="#e8b866" /><rect x={-30} y={-6} width={60} height={8} fill="#7ac943" /></g>} />
       {Array.from({ length: 14 }).map((_, i) => {
-        const t = ((f + i * 9) % 60) / 60, dest = i % 2 ? 720 : 420;
+        const t = ((f + i * 9) % 60) / 60, dest = i % 2 ? 650 : 380;
         const x = 260 + (dest - 260) * t, y = 760 - Math.sin(t * Math.PI) * 260 + (1 - t) * 40;
         return <circle key={i} cx={x} cy={y} r={11} fill={AMBAR} opacity={Math.sin(t * Math.PI) * 0.9} />;
       })}
-      {barra(420, 100, 500, "LIVER", dHigado, "#c96a4a")}
-      {barra(720, 400, 500, "MUSCLES", dMusculo, AMBAR)}
-      <g transform="translate(1240,520)" opacity={0.25 + 0.75 * ease(f, dCerebro - 6, dCerebro + 4)}>
+      {barra(380, 100, 500, "LIVER", Math.min(dHigado, 30), "#c96a4a")}
+      {barra(650, 400, 500, "MUSCLES", Math.min(dMusculo, 75), AMBAR)}
+      <g transform="translate(1340,520)" opacity={0.25 + 0.75 * ease(f, dCerebro - 6, dCerebro + 4)}>
         <g transform={`scale(${1 + (f > dCerebro ? Math.max(0, Math.sin((f - dCerebro) / 5)) * 0.04 : 0)})`}><Cerebro r={190} /></g>
         {f > dCerebro && Array.from({ length: 6 }).map((_, i) => { const a = i * 1.05 + f / 20; return <path key={i} d={`M${Math.cos(a) * 210},${Math.sin(a) * 150} l${Math.cos(a) * 40},${Math.sin(a) * 30}`} stroke={AZUL} strokeWidth={8} strokeLinecap="round" opacity={(f + i * 5) % 20 < 10 ? 1 : 0.2} />; })}
         <circle cx={-330} cy={330} r={70} fill="none" stroke={GRIS} strokeWidth={22} />
         <circle cx={-330} cy={330} r={70} fill="none" stroke={AZUL} strokeWidth={22} strokeDasharray={`${440 * 0.02 * uc} 440`} transform="rotate(-90 -330 330)" />
-        <T x={-330} y={345} s={40} c={AZUL}>2%</T>
-        <T x={-330} y={450} s={28}>OF BODY WEIGHT</T>
+        <T x={-330} y={352} s={64} c={AZUL}>2%</T>
+        <T x={-330} y={460} s={40}>OF BODY WEIGHT</T>
         <circle cx={250} cy={330} r={70} fill="none" stroke={GRIS} strokeWidth={22} />
         <circle cx={250} cy={330} r={70} fill="none" stroke={ROJO} strokeWidth={22} strokeDasharray={`${440 * 0.2 * uc} 440`} transform="rotate(-90 250 330)" />
-        <T x={250} y={345} s={40} c={ROJO}>20%</T>
-        <T x={250} y={450} s={28}>OF ALL ENERGY</T>
+        <T x={250} y={352} s={64} c={ROJO}>20%</T>
+        <T x={250} y={460} s={40}>OF ALL ENERGY</T>
       </g>
     </Pizarra>
   );

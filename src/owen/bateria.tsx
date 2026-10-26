@@ -18,19 +18,20 @@ export const colorPct = (pct: number) => (pct < 15 ? "#ff3d2e" : pct < 45 ? "#ff
 export const BateriaSvg: React.FC<{ pct: number; capa?: number; tam?: number; alerta?: boolean; f: number }> = ({ pct, capa = 0, tam = 1, alerta, f }) => {
   const col = colorPct(pct);
   const on = !alerta || f % 16 < 10;
-  const pulso = alerta ? 0.78 + 0.22 * Math.cos((f / 16) * Math.PI * 2) : 1; // 26-oct: pulso suave (el 1↔0,4 a saltos se leía como fantasma)
+  const pulso = alerta ? 0.5 + 0.5 * Math.cos((f / 16) * Math.PI * 2) : 0; // 26-oct v5 (ojo: «translúcida»): la batería queda OPACA; la alerta late con escala y un halo rojo detrás
   const w = 150 * tam, h = 68 * tam;
   const lleno = Math.max(0.02, pct / 100);
   return (
-    <div style={{ position: "relative", textAlign: "center", fontFamily: F_HUD, opacity: pulso }}>
-      <svg width={w + 14 * tam} height={h} viewBox="0 0 164 68" style={{ filter: undefined }}>
-        <rect x={4} y={4} width={142} height={60} rx={12} fill="rgba(10,12,18,0.78)" stroke={col} strokeWidth={6} />
+    <div style={{ position: "relative", textAlign: "center", fontFamily: F_HUD, transform: `scale(${1 + 0.07 * pulso})` }}>
+      {alerta && <div style={{ position: "absolute", left: "50%", top: "40%", width: w * 1.6, height: h * 2.4, transform: "translate(-50%,-50%)", borderRadius: "50%", background: "radial-gradient(closest-side, rgba(255,61,46,0.55), rgba(255,61,46,0))", opacity: 0.4 + 0.6 * pulso }} />}
+      <svg width={w + 14 * tam} height={h} viewBox="0 0 164 68" style={{ position: "relative" }}>
+        <rect x={4} y={4} width={142} height={60} rx={12} fill="#0c0f16" stroke={col} strokeWidth={6} />
         <rect x={148} y={22} width={12} height={24} rx={4} fill={col} />
         <rect x={12} y={12} width={126 * lleno} height={44} rx={6} fill={col} />
         {capa > 0 && <rect x={12 + 126 * lleno} y={12} width={126 * Math.min(1 - lleno, capa / 100)} height={12} rx={4} fill="#fff6c8" opacity={0.95} />}
         {capa > 0 && <rect x={12 + 126 * lleno} y={24} width={126 * Math.min(1 - lleno, capa / 100)} height={32} rx={4} fill="none" stroke="#fff6c8" strokeWidth={2} strokeDasharray="6 6" opacity={0.6} />}
       </svg>
-      <div style={{ fontWeight: 700, fontSize: 44 * tam, lineHeight: 1, color: capa > 0 ? "#fff6c8" : col, textShadow: "0 3px 8px rgba(0,0,0,0.8)" }}>{Math.round(pct + capa)}%</div>
+      <div style={{ position: "relative", fontWeight: 700, fontSize: 44 * tam, lineHeight: 1, color: capa > 0 ? "#fff6c8" : col, textShadow: "0 3px 8px rgba(0,0,0,0.8)" }}>{Math.round(pct + capa)}%</div>
     </div>
   );
 };
@@ -45,8 +46,10 @@ export const Bat: React.FC<{ cl: Clave[]; x: number | ((f: number) => number); y
   const s = (desde === 0 ? 1 : Math.min(1, (f - desde) / 8)) * // desde 0 = ya está en el 1er cuadro del plano (ojo: «cuadro 0 sin medidor»)
     Math.min(1.3, Math.max(0.85, z)) * Math.max(1.3, tam); // nunca chica (vara del director)
   const v = valor(pct, f), c = valor(capa, f);
+  // 26-oct v5 (ojo: «la batería queda cortada al borde»): siempre entera dentro del cuadro
+  const px = Math.min(1920 - 100 * s - 30, Math.max(100 * s + 30, p.x)), py = Math.min(1060, Math.max(125 * s + 80, p.y));
   return (
-    <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%" }}>
+    <div style={{ position: "absolute", left: px, top: py, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%" }}>
       <BateriaSvg pct={v} capa={c} f={f} alerta={alerta ?? v < 8} />
       {zz && [0, 1, 2].map((k) => {
         const t = ((f + k * 20) % 60) / 60;
