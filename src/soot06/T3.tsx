@@ -16,7 +16,7 @@ export const CAM: Llave[] = [
   [298.3, 5100, 2780, 1.35], [300.2, 5100, 2780, 1.35], [301.6, 5800, 2640, 0.62], [303.0, 5300, 2780, 1.1], [308.2, 5500, 2800, 1.0],
   [309.4, 5150, 2900, 1.5], [310.6, 5150, 2930, 2.1], [318.3, 5250, 2930, 2.0],
   [342.2, 5150, 2880, 1.5], [344.4, 5250, 2850, 1.2], [349.6, 5500, 2850, 1.15], [354.4, 6200, 2800, 1.15],
-  [355.8, 5750, 2780, 0.95], [363.4, 5850, 2790, 1.0], [365.0, 4800, 2650, 1.0], [375.6, 4850, 2650, 1.05],
+  [355.8, 6100, 2830, 1.45], [363.4, 6150, 2830, 1.5], [365.0, 4800, 2650, 1.0], [375.6, 4850, 2650, 1.05],
   [377.0, 6700, 1350, 1.15], [380.3, 6700, 1360, 1.15], [381.6, 5150, 2330, 1.55], [390.8, 5200, 2380, 1.35],
   [392.0, 5400, 2500, 0.8], [405.0, 5400, 2650, 0.8], [406.6, 5500, 2850, 1.0], [413.0, 5450, 2860, 1.05], [415.4, 5150, 2900, 1.5],
 ];
@@ -120,7 +120,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* el solar de las películas */}
       <Chip t={t} t0={285.19} t1={287.5} text="CASTLE BEDROOMS IN THE MOVIES" color={C.violeta} x={960} y={140} centro size={54} />
       {["FOUR-POSTER BED", "THICK CURTAINS", "ROARING FIRE"].map((k, i) => {
-        const p = [P(5600, 1360), P(5850, 1700), P(4850, 1800)][i];
+        const p = [P(5600, 1360), P(5900, 1540), P(4850, 1800)][i];
         return <Chip key={k} t={t} t0={[288.19, 289.61, 290.73][i]} t1={296.8} text={`✓ ${k}`} color={C.lima} tinta={C.noche} x={p.x} y={p.y} centro size={46} />;
       })}
       <Chip t={t} t0={292.11} t1={296.8} text="THEY DID EXIST…" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />
@@ -176,7 +176,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             {t > 331.6 && <div style={{ position: "absolute", left: 1450, top: 200, transform: `translate(-50%,-50%) scale(${ent(t, 331.64, 0, { damping: 8, stiffness: 220 })})`, fontFamily, fontWeight: 700, fontSize: 140, color: C.crema, WebkitTextStroke: `12px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>{Math.round(interpolate(t, [331.64, 332.6], [1, 20], cl))} YEARS</div>}
             {/* lo que hay adentro, cayendo y quedando enterrado */}
             {([["🍺 BEER", 335.2], ["🧈 GREASE", 336.35], ["🍖 FOOD SCRAPS", 337.08], ["🦴 BONES", 337.96], ["💦 SPIT", 339.31], ["🐕 DOG URINE", 339.99], ["🧍 …AND MEN'S", 341.06]] as const).map(([k, t0], i) => {
-              const y = interpolate(t, [t0, t0 + 0.35], [-100, 380 + (i % 2) * 130], cl);
+              const y = interpolate(t, [t0, t0 + 0.35], [-100, 600 + (i % 2) * 120], cl);
               return t > t0 ? <div key={k} style={{ position: "absolute", left: 200 + i * 225, top: y, transform: `rotate(${i % 2 ? 6 : -6}deg)`, background: "#fff6e0", border: `6px solid ${C.noche}`, borderRadius: 16, padding: "6px 14px", fontFamily, fontWeight: 700, fontSize: 32, color: C.noche, whiteSpace: "nowrap" }}>{k}</div> : null;
             })}
             {t >= 334.19 && t < 335.2 && <Grande t={t} t0={334.19} text="AN ANCIENT COLLECTION" y={420} size={90} color={C.crema} />}
@@ -230,6 +230,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {t > 377 && t < 380.4 && <Emote t={t} t0={377.2} tipo="brillos" x={P(6700, 1300).x + 220} y={P(6700, 1300).y + 160} s={1.6} />}
       {t > 377 && t < 380.4 && <Yo t={t} t0={377.1} x={1640} h={560} y={1070} expr="sorpresa" mira={-1} />}
       {t > 388.2 && t < 391.6 && <Yo t={t} t0={388.3} x={1650} h={560} y={1070} expr="miedo" tiembla bD={150} cD={150} bI={150} cI={150} ropa={{ ...CHICO, piel: "#c8e6f5", piel2: "#9cc8e0" }} />}
+      {t > 406.5 && t < 413.6 && <Yo t={t} t0={406.6} x={1700} h={540} y={1070} expr="miedo" tiembla bD={150} cD={150} bI={150} cI={150} ropa={{ ...CHICO, piel: "#c8e6f5", piel2: "#9cc8e0" }} />}
       {/* postigos */}
       <Chip t={t} t0={382.08} t1={386.3} text="WOODEN SHUTTERS" color={C.tierra} x={160} y={150} size={58} />
       <Chip t={t} t0={383.67} t1={386.3} text="+ OILED LINEN (MAYBE)" color={C.ambar} tinta={C.noche} x={160} y={260} size={50} />
@@ -267,7 +268,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 <div style={{ position: "absolute", left: 0, right: 0, bottom: 14, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff" }}>{k}</div>
               </div>
             ))}
-            {[250, 1680].map((x, i) => <Persona key={x} x={x} y={1050} h={420} t={t} seed={130 + i} ropa={SIERVO(i + 2)} expr="triste" aparece={398.4 + i * 0.3} bD={i ? 150 : 10} cD={i ? 150 : 10} inclina={i ? 0 : 6} flip={i === 1} />)}
+            {[260, 1680].map((x, i) => <Persona key={x} x={x} y={900} h={420} t={t} seed={130 + i} ropa={SIERVO(i + 2)} expr="triste" aparece={398.4 + i * 0.3} bD={i ? 150 : 10} cD={i ? 150 : 10} inclina={i ? 0 : 6} flip={i === 1} />)}
             <Chip t={t} t0={398.76} text="THE RAIN WILL NOT STOP" color={C.teal} tinta={C.noche} x={960} y={300} centro size={54} />
             {t >= 401.62 && <Grande t={t} t0={401.62} text="THE GREAT FAMINE" y={780} size={130} color={C.rojo} />}
             <Chip t={t} t0={402.73} text="MILLIONS DEAD · NORTHERN EUROPE" color={C.crema} tinta={C.noche} x={960} y={930} centro size={52} />

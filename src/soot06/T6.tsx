@@ -100,7 +100,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       )}
       <Chip t={t} t0={676.09} t1={681.3} text="A FEW TIRED MEN" color={C.violeta} x={160} y={150} size={58} />
       {[["IN THE COLD", "#bfefff", 677.27], ["IN THE DARK", C.noche, 678.09], ["AT 2 AM", C.teal, 678.77], ["AFTER A GALLON OF ALE", C.ambar, 679.55]].map(([k, col, t0], i) => (
-        <Chip key={i} t={t} t0={t0 as number} t1={681.3} text={k as string} color={col as string} tinta={i === 1 ? C.crema : C.noche} x={160} y={250 + i * 80} size={44} />
+        <Chip key={i} t={t} t0={t0 as number} t1={681.3} text={k as string} color={col as string} tinta={i === 1 ? C.crema : C.noche} x={100} y={250 + i * 80} size={44} />
       ))}
       {t > 677.3 && t < 681.3 && <Emote t={t} t0={677.4} tipo="sudor" {...cabeza(g.x, g.y, 330 * c.z)} />}
       {t >= 681.33 && t < 682.4 && <Grande t={t} t0={681.33} text="AND THE ENEMY KNEW IT." y={940} size={96} color={C.rojo} />}
@@ -127,7 +127,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <Chip t={t} t0={688.43} text="ON THE SCOTTISH BORDER" color={C.teal} tinta={C.noche} x={110} y={410} size={42} />
               <Chip t={t} t0={689.81} text="THE NIGHT BEFORE LENT" color={C.oro} tinta={C.noche} x={110} y={510} size={50} />
               {t > 691.1 && ["🍗", "🍺", "🎶", "🍺"].map((k, i) => <div key={i} style={{ position: "absolute", left: 1300 + i * 120, top: 470 - Math.abs(Math.sin(t * 5 + i)) * 30, fontSize: 64, transform: `scale(${ent(t, 691.2 + i * 0.2)})` }}>{k}</div>)}
-              {t > 689.9 && [1330, 1560, 1700].map((x, i) => <Persona key={x} x={x} y={425} h={170} t={t} seed={160 + i} ropa={GUARDIA} casco="medieval" expr="feliz" habla aparece={689.92 + i * 0.03} bD={150} cD={40 + Math.sin(t * 6 + i) * 30} salta={691.3 + i * 0.4} />)}
+              {t > 689.9 && [1330, 1560, 1700].map((x, i) => <Persona key={x} x={x} y={425} h={250} t={t} seed={160 + i} ropa={GUARDIA} casco="medieval" expr="feliz" habla aparece={689.92 + i * 0.03} bD={150} cD={40 + Math.sin(t * 6 + i) * 30} salta={691.3 + i * 0.4} />)}
               <Chip t={t} t0={691.15} text="THE GARRISON IS PARTYING" color={C.lima} tinta={C.noche} x={1160} y={940} size={46} />
             </>
           );

@@ -15,7 +15,7 @@ export const T0 = 550.2, T1 = 660.9;
 export const CAM: Llave[] = [
   [551.0, 5300, 2820, 1.0], [552.6, 5300, 2860, 1.5], [556.3, 5300, 2870, 1.6],
   [576.6, 5300, 2870, 1.6], [580.4, 5800, 2820, 1.15], [583.4, 5850, 2800, 0.95], [585.6, 5300, 2900, 1.6], [588.0, 5300, 2900, 1.6],
-  [589.6, 4600, 3200, 0.9], [590.6, 3300, 3560, 1.7], [592.1, 3310, 3570, 1.75], [593.3, 6150, 2850, 1.05], [594.9, 6150, 2880, 1.1], [595.7, 6150, 2920, 2.0],
+  [589.5, 4600, 3200, 0.9], [589.55, 3300, 3560, 1.7], [590.6, 3300, 3560, 1.7], [592.1, 3310, 3570, 1.75], [593.3, 6150, 2850, 1.05], [594.9, 6150, 2880, 1.1], [595.7, 6150, 2920, 2.0],
   [596.6, 6100, 2850, 1.0], [601.6, 6150, 2830, 0.95], [603.4, 6150, 2830, 0.75], [605.4, 6150, 2850, 0.8], [607.2, 6100, 2900, 1.2],
   [654.9, 5300, 2870, 1.5], [656.9, 5300, 2880, 1.6], [658.2, 4300, 2400, 0.75], [660.6, 2620, 1880, 1.0],
 ];
@@ -192,7 +192,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
           <>
             <Chip t={t} t0={617.13} text="TRICK #1" color={C.rojo} x={960} y={110} centro size={64} />
             {[[460, 620], [960, 820], [1460, 620], [960, 420]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x - 140, top: y - 60, width: 280, height: 120, background: "radial-gradient(ellipse at 50% 45%, #f6dca0 55%, #d9a45a 70%)", border: `14px solid #9a5a22`, borderRadius: "60px 60px 34px 34px", boxShadow: "inset 0 0 0 6px rgba(255,255,255,.55)", transform: `scale(${ent(t, 618.2 + i * 0.25)})` }}><div style={{ margin: "14px 18px", height: 70, borderRadius: 30, background: "#d6e8f2", opacity: prog(t, 619.6, 620.2) * 0.9 }} /></div>)}
-            <Yo t={t} t0={617.2} x={1590} h={450} y={1040} expr={t > 624.8 ? "feliz" : t > 622.2 ? "sorpresa" : "orgullo"} bD={t < 622.2 ? 90 : 140} cD={t < 622.2 ? 60 : 30} mira={-0.7} flip />
+            <Yo t={t} t0={617.2} x={1530} h={450} y={1040} expr={t > 624.8 ? "feliz" : t > 622.2 ? "sorpresa" : "orgullo"} bD={t < 622.2 ? 90 : 140} cD={t < 622.2 ? 60 : 30} mira={-0.7} flip />
             <Chip t={t} t0={618.17} text="BREAD SLICES" color={C.oro} tinta={C.noche} x={160} y={220} size={50} />
             <Chip t={t} t0={619.57} text="+ STICKY GLUE" color={C.teal} tinta={C.noche} x={160} y={310} size={50} />
             {t > 622.2 && <div style={{ position: "absolute", left: 0, top: 0 }}><PanTrampa x={960} y={620} s={0.75} t={t} t0={622.3} /></div>}
@@ -272,7 +272,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                     <rect x={560} y={330} width={800} height={500} fill="#8a8a9a" stroke="#4a4a5a" strokeWidth={70} />
                     {[560, 720, 880, 1040, 1200].map((x) => <rect key={x} x={x - 35} y={260} width={100} height={70} fill="#8a8a9a" />)}
                   </svg>
-                  {[760, 960, 1160].map((x, i) => <Persona key={x} x={x} y={800} h={280} t={t} seed={150 + i} ropa={i === 1 ? GUARDIA : SIERVO(i)} casco={i === 1 ? "medieval" : "no"} expr={t > 653.8 ? "miedo" : "orgullo"} aparece={651.93 + i * 0.02} salta={t > 653.8 ? 653.9 + i * 0.1 : undefined} />)}
+                  {[760, 960, 1160].map((x, i) => <Persona key={x} x={x} y={800} h={280} t={t} seed={150 + i} ropa={i === 1 ? GUARDIA : SIERVO(i)} casco={i === 1 ? "medieval" : "no"} expr={t > 653.8 ? "miedo" : "orgullo"} aparece={651.85} salta={t > 653.8 ? 653.9 + i * 0.1 : undefined} />)}
                   <Chip t={t} t0={651.97} text="THICK WALLS" color={C.violeta} x={960} y={190} centro size={60} />
                   {t > 652.6 && <div style={{ position: "absolute", left: 1220, top: 180, transform: `rotate(-10deg) scale(${ent(t, 652.83, 0, { damping: 7, stiffness: 260 })})`, border: `10px solid ${C.rojo}`, borderRadius: 16, padding: "4px 24px", background: "rgba(255,255,255,.92)", fontFamily, fontWeight: 700, fontSize: 52, color: C.rojo, whiteSpace: "nowrap" }}>DID NOT HELP</div>}
                   {t > 653.7 && Array.from({ length: 6 }, (_, i) => <div key={i} style={{ position: "absolute", left: 0, top: 0 }}><Rata x={interpolate(t, [653.7 + i * 0.1, 655.2], [700 + i * 100, 1250 - i * 90], cl)} y={780 - (i % 2) * 120} s={0.7} t={t} flip={i % 2 === 1} /></div>)}

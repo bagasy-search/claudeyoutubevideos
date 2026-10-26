@@ -17,7 +17,7 @@ export const CAM: Llave[] = [
   [437.2, 7460, 2950, 1.15], [440.5, 7500, 3480, 1.15], [443.0, 7600, 3400, 0.66], [448.6, 7650, 3250, 0.6],
   [456.6, 7450, 2370, 2.0], [459.6, 7450, 2380, 2.05], [461.6, 7480, 3000, 0.7], [464.4, 7480, 2950, 0.7], [465.6, 7450, 2370, 2.3], [474.8, 7450, 2380, 2.2],
   [493.0, 7450, 2600, 1.0], [495.0, 7590, 3620, 1.7], [499.9, 7600, 3620, 1.8],
-  [511.3, 7640, 3800, 1.0], [513.8, 7450, 2700, 0.72], [538.6, 7450, 2750, 0.72], [542.4, 7450, 2950, 0.66],
+  [511.3, 7640, 3800, 1.0], [513.8, 7450, 2700, 0.72], [538.6, 7450, 2380, 1.9], [542.4, 7450, 2650, 1.0],
   [544.2, 7450, 2380, 2.0], [546.6, 7250, 2650, 1.0], [549.6, 5350, 2800, 0.95],
 ];
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -72,7 +72,7 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
         <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
           {/* el caño en corte: tubo de piedra y lo que cae por él */}
           <rect x={7380} y={2480} width={140} height={(SUELO - 2480) * prog(t, 434.5, 435.4)} fill="#2a2030" stroke="#8a8098" strokeWidth={14} />
-          {[0, 1].map((k) => { const u = prog(t, 436.2 + k * 1.6, 437.4 + k * 1.6); return u > 0 && u < 1 ? <ellipse key={k} cx={7450 + Math.sin(u * 12) * 18} cy={2500 + (SUELO - 2500) * u * u} rx={34} ry={44} fill="#6a4a22" stroke={C.noche} strokeWidth={6} /> : null; })}
+          {[0, 1, 2, 3].map((k) => { const u = prog(t, 436.2 + k * 1.2, 437.4 + k * 1.2); return u > 0 && u < 1 ? <ellipse key={k} cx={7450 + Math.sin(u * 12) * 18} cy={2500 + (SUELO - 2500) * u * u} rx={34} ry={44} fill="#6a4a22" stroke={C.noche} strokeWidth={6} /> : null; })}
           <line x1={7450} y1={2480} x2={7450} y2={2480 + (SUELO - 2480) * prog(t, 435.3, 440.1)} stroke={C.rojo} strokeWidth={24} strokeLinecap="round" strokeDasharray="40 30" strokeDashoffset={-t * 300} />
           {t > 440.1 && [0, 1, 2, 3, 4, 5].map((i) => { const u = prog(t, 440.1, 441.0); return <circle key={i} cx={7450 + Math.cos(i) * 140 * u} cy={SUELO + 30 - Math.sin(i * 0.5 + 0.4) * 160 * u + 300 * u * u} r={22} fill="#6a5a1a" />; })}
         </svg>
@@ -149,7 +149,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Chip t={t} t0={430.32} t1={434.3} text="INSIDE THE THICK WALL" color={C.teal} tinta={C.noche} x={asiento.x - 520} y={asiento.y - 230} size={46} />
       <Chip t={t} t0={432.37} t1={434.3} text="STONE OR WOOD SEAT" color={C.tierra} x={asiento.x + 150} y={asiento.y - 60} size={44} />
       <Chip t={t} t0={433.52} t1={434.3} text="+ A HOLE" color={C.rojo} x={asiento.x + 150} y={asiento.y + 40} size={44} />
-      <Chip t={t} t0={435.35} t1={440.0} text="A LONG SHAFT" color={C.rojo} x={P(7450, 3000).x + 60} y={P(7450, 3000).y} size={54} />
+      <Chip t={t} t0={435.35} t1={440.0} text="A LONG SHAFT" color={C.rojo} x={P(7450, 3000).x + 60} y={Math.min(900, Math.max(130, P(7450, 3000).y))} size={54} />
       <Chip t={t} t0={438.11} t1={440.0} text="…OUT THE OTHER SIDE" color={C.ambar} tinta={C.noche} x={P(7450, 3300).x + 60} y={P(7450, 3300).y} size={46} />
       {t >= 440.14 && t < 441.3 && <Grande t={t} t0={440.14} text="INTO THE MOAT" y={180} size={120} color={C.lima} />}
       <Chip t={t} t0={441.19} t1={443.2} text="OR A PIT AT THE BOTTOM" color={C.tierra} x={960} y={950} centro size={54} />
@@ -246,7 +246,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* inserto: Londres 1281 — nace del pozo */}
       <Inserto t={t} t0={500.2} t1={511.3} ix={pozo.x} iy={pozo.y} fondo="#c9773a" fondo2="#3a1a10">
         <div style={{ position: "absolute", left: 960, top: 150, transform: `translate(-50%,-50%) scale(${ent(t, 500.39)})`, fontFamily, fontWeight: 700, fontSize: 120, color: C.crema, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>LONDON · 1281</div>
-        {Array.from({ length: 13 }, (_, i) => <Persona key={i} x={260 + i * 108} y={560} h={220} t={t} seed={120 + i} ropa={SIERVO(i)} expr={i % 3 === 0 ? "enojado" : "triste"} aparece={501.9 + i * 0.05} ladea={Math.sin(t * 3 + i) * 5} habla={t > 509.9 && i % 4 === 1} />)}
+        {Array.from({ length: 13 }, (_, i) => <Persona key={i} x={260 + i * 108} y={560} h={220} t={t} seed={120 + i} ropa={SIERVO(i)} expr={i % 3 === 0 ? "enojado" : "triste"} aparece={500.3 + i * 0.03} ladea={Math.sin(t * 3 + i) * 5} habla={t > 509.9 && i % 4 === 1} />)}
         <Chip t={t} t0={502.35} text="13 MEN" color={C.ambar} tinta={C.noche} x={260} y={640} size={54} t1={506.7} />
         {Array.from({ length: 5 }, (_, i) => <div key={i} style={{ position: "absolute", left: 760 + i * 140, top: 640, fontSize: 90, transform: `scale(${ent(t, 502.67 + i * 0.12)})` }}>🌙</div>)}
         <Chip t={t} t0={503.09} text="5 NIGHTS" color={C.violeta} x={1500} y={660} size={54} t1={506.7} />

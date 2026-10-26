@@ -1,6 +1,6 @@
 import React from "react";
 import { interpolate } from "remotion";
-import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza } from "./kit";
+import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza , Zzz } from "./kit";
 import { Persona } from "./persona";
 import { CamP, Llave, aPantalla, Llama } from "./mundo";
 import { CHICO, SIERVO } from "./objetos";
@@ -43,7 +43,8 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
         return <Acostado key={i} x={x} y={PISO - 10} h={260} t={t} seed={80 + i} ropa={SIERVO(r)} flip={i % 2 === 1} expr={tose && i % 3 === 0 ? "miedo" : "dormido"} />;
       })}
       {/* el cocinero que huye de la cocina en llamas */}
-      {t > 774.4 && t <= 780.2 && <Persona x={3500} y={3530} h={330} t={t} seed={91} ropa={SIERVO(1)} expr={t > 779.6 ? "sorpresa" : "dormido"} inclina={t > 779.6 ? 0 : 10} flip />}
+      {t > 774.4 && t <= 780.2 && <Persona x={3500} y={3530} h={330} t={t} seed={91} ropa={SIERVO(1)} expr={t > 780.15 ? "sorpresa" : "dormido"} inclina={t > 780.15 ? 0 : 14} flip />}
+      {t > 774.6 && t < 780.15 && <div style={{ position: "absolute", left: 3560, top: 3120 }}><Zzz x={0} y={0} t={t} /></div>}
       {t > 780.2 && t < 785 && <Persona x={3500 - 600 * prog(t, 780.6, 783.6)} y={3530} h={330} t={t} seed={91} ropa={SIERVO(1)} expr="miedo" camina={3} flip bD={150} cD={40} bI={150} cI={40} />}
       {t < 796.4 ? <Acostado x={5300} y={PISO - 10} h={260} t={t} seed={7} ropa={CHICO} expr={tose ? "miedo" : "dormido"} />
         : <Persona x={5300 - 260 * prog(t, 797.2, 798.6)} y={PISO} h={270} t={t} seed={7} ropa={CHICO} expr="miedo" salta={796.4} camina={t > 797.2 && t < 798.6 ? 3 : 0} flip bD={150} cD={150} bI={150} cI={150} />}

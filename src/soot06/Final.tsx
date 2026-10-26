@@ -149,11 +149,11 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               </svg>
               <Chip t={t} t0={867.93} text="GREAT LORDS OWNED SEVERAL CASTLES + MANORS" color={C.noche} x={960} y={120} centro size={46} />
               <Chip t={t} t0={870.73} text="TRAVELING ALL YEAR LONG" color={C.oro} tinta={C.noche} x={960} y={210} centro size={50} />
-              {t > 870.4 && <Carro x={interpolate(t, [870.5, 884.6], [60, 1360], cl)} y={780} t={t} carga={[
+              {t > 868.0 && <Carro x={interpolate(t, [868.1, 884.6], [60, 1360], cl)} y={780} t={t} carga={[
                 t > 874.4 ? "🛏️" : "", t > 875.6 ? "🧶" : "", t > 876.6 ? "🧰" : "",
               ]} />}
-              {t > 870.4 && <Persona x={interpolate(t, [870.5, 884.6], [60, 1360], cl) + 400} y={1010} h={380} t={t} seed={40} ropa={SENOR} expr="orgullo" camina={1.4} />}
-              {t > 877.6 && <div style={{ position: "absolute", left: interpolate(t, [870.5, 884.6], [60, 1360], cl) + 80, top: 660, fontSize: 80, transform: `scale(${ent(t, 877.8)})` }}>🪟</div>}
+              {t > 868.0 && <Persona x={interpolate(t, [868.1, 884.6], [60, 1360], cl) + 400} y={1010} h={380} t={t} seed={40} ropa={SENOR} expr="orgullo" camina={1.4} />}
+              {t > 877.6 && <div style={{ position: "absolute", left: interpolate(t, [868.1, 884.6], [60, 1360], cl) + 80, top: 660, fontSize: 80, transform: `scale(${ent(t, 877.8)})` }}>🪟</div>}
               <Chip t={t} t0={872.59} t1={879.4} text="WITH THE WHOLE HOUSEHOLD" color={C.violeta} x={960} y={310} centro size={58} />
               <Chip t={t} t0={874.21} t1={879.4} text="BEDS · TAPESTRIES · CHESTS" color={C.rojo} x={960} y={400} centro size={58} />
               <Chip t={t} t0={877.63} t1={879.4} text="…EVEN GLASS WINDOWS" color={C.teal} tinta={C.noche} x={960} y={490} centro size={58} />
@@ -205,14 +205,14 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                   WHICH OF THE <span style={{ color: C.rojo }}>7 TRAPS</span><br />WOULD GET YOU FIRST?
                 </div>
                 {[["🍲", "SUPPER"], ["🕯️", "DARK"], ["❄️", "COLD"], ["🚽", "TOILET"], ["🐀", "RATS"], ["🛡️", "WATCH"], ["🔥", "FIRE"]].map(([e, k], i) => (
-                  <div key={k} style={{ position: "absolute", left: 890 + (i - 3) * 236, top: 640, width: 216, height: 200, transform: `translate(-50%,-50%) scale(${ent(t, 907.4 + i * 0.08)})`, borderRadius: 24, background: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? "#fff3b0" : C.crema, border: `8px solid ${Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? C.oro : C.noche}`, boxShadow: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? `0 0 40px ${C.oro}` : "0 10px 0 rgba(14,8,40,.45)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700 }}>
+                  <div key={k} style={{ position: "absolute", left: 840 + (i - 3) * 236, top: 640, width: 216, height: 200, transform: `translate(-50%,-50%) scale(${ent(t, 907.4 + i * 0.08)})`, borderRadius: 24, background: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? "#fff3b0" : C.crema, border: `8px solid ${Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? C.oro : C.noche}`, boxShadow: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? `0 0 40px ${C.oro}` : "0 10px 0 rgba(14,8,40,.45)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700 }}>
                     <div style={{ fontSize: 96, lineHeight: 1 }}>{e}</div>
                     <div style={{ fontSize: 38, color: C.noche, marginTop: 8 }}>{k}</div>
                   </div>
                 ))}
 
-                <Yo t={t} t0={906.0} x={1790} y={1080} h={380} expr="sorpresa" habla flip bD={115} cD={10} />
-                <Chip t={t} t0={906.4} text="🔔 SUBSCRIBE · NEXT: A NIGHT IN ANCIENT ROME" color={C.rojo} x={960} y={110} centro size={44} />
+                <Yo t={t} t0={906.0} x={1745} y={1080} h={360} expr="sorpresa" habla flip bD={115} cD={10} />
+                <Chip t={t} t0={906.4} text="🔔 SUBSCRIBE · NEXT: A NIGHT IN ANCIENT ROME" color={C.rojo} x={960} y={145} centro size={44} />
                 <Chip t={t} t0={906.11} text="TELL ME IN THE COMMENTS 💬" color={C.lima} tinta={C.noche} x={960} y={900} centro size={60} />
               </>
             )}

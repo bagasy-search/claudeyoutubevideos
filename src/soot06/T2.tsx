@@ -83,7 +83,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Ficha t={t} t0={207.4} x={520} y={600} label="LIGHTS" color={C.rojo} tacha={207.9} icono={<g><rect x={-8} y={-60} width={16} height={130} fill="#3a3a48" /><circle cx={0} cy={-70} r={30} fill="#ffe08a" /></g>} />
       <Ficha t={t} t0={208.38} x={960} y={600} label="MOON" color={C.rojo} tacha={208.9} icono={<path d="M 30 -60 A 66 66 0 1 0 30 60 A 50 50 0 1 1 30 -60 Z" fill="#fff3b0" />} />
       </>}
-      {t >= 209.62 && t < 210.6 && <><div style={{ position: "absolute", left: 960, top: 880, width: 560, height: 180, transform: "translate(-50%,-50%)", borderRadius: 28, background: "rgba(14,8,40,.85)", opacity: ent(t, 209.62) }} /><Grande t={t} t0={209.62} text="NOTHING." x={960} y={880} size={120} color={C.rojo} /></>}
+      {t >= 209.62 && t < 210.6 && <><div style={{ position: "absolute", left: 900, top: 880, width: 600, height: 180, transform: "translate(-50%,-50%)", borderRadius: 28, background: "rgba(14,8,40,.85)", opacity: ent(t, 209.62) }} /><Grande t={t} t0={209.62} text="NOTHING." x={900} y={880} size={120} color={C.rojo} /></>}
       {t > 204.5 && t < 210.7 && <Yo t={t} t0={204.6} x={1750} h={520} expr="miedo" bD={95} cD={10} bI={95} cI={10} mira={-1} tiembla={t > 206.2 && t < 207.3} />}
       {/* adentro: la luz cuesta plata */}
       <Chip t={t} t0={210.78} t1={212.8} text="INSIDE…" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={60} />

@@ -190,11 +190,11 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* calendario de días de pescado — nace del plato */}
       <Inserto t={t} t0={117.0} t1={132.4} ix={plato.x} iy={plato.y} fondo="#2d5bb5" fondo2={C.noche}>
         <Calendario t={t} />
-        <Yo t={t} t0={117.5} x={1720} h={400} y={1040} flip expr={t > 129.3 ? "triste" : "sorpresa"} habla={t > 121 && t < 124} bD={110 + Math.sin(t * 5) * 8} cD={20} />
+        <Yo t={t} t0={117.5} x={1660} h={400} y={1030} flip expr={t > 129.3 ? "triste" : "sorpresa"} habla={t > 121 && t < 124} bD={110 + Math.sin(t * 5) * 8} cD={20} />
         <Chip t={t} t0={121.36} text="FRIDAYS" color={C.rojo} x={150} y={760} size={44} />
         <Chip t={t} t0={122.6} text="MANY WED + SAT" color={C.naranja} x={410} y={760} size={44} />
         <Chip t={t} t0={125.02} text="LENT + ADVENT" color={C.violeta} x={860} y={760} size={44} />
-        {t >= 127.6 && <Grande t={t} t0={127.6} text="≈ 1/3 OF THE YEAR" y={890} size={110} color={C.oro} />}
+        {t >= 127.6 && <Grande t={t} t0={127.6} text="≈ 1/3 OF THE YEAR" y={850} size={110} color={C.oro} />}
         <Chip t={t} t0={129.48} text="NO MEAT" color={C.rojo} x={1250} y={760} size={44} />
         <Chip t={t} t0={130.92} text="DECEMBER = ADVENT" color={C.oro} tinta={C.noche} x={1500} y={230} centro size={50} />
       </Inserto>
