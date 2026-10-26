@@ -62,9 +62,9 @@ export const P24Manos: React.FC = () => {
 
 // ---------- 25 · las manos de Owen: blandas, con un café de estación de servicio ----------
 export const P25Cafe: React.FC = () => (
-  <EnBus cl={[mira(0, 300, BUS_PISO - 220, 2.6), mira(140, 280, BUS_PISO - 230, 2.8)]} hora="manana" min={398} avance={(f) => 4000 + f * 12}
+  <EnBus cl={[mira(0, 330, BUS_PISO - 230, 2.6), mira(140, 300, BUS_PISO - 250, 3.0, { curva: "inout" })]} hora="manana" min={398} avance={(f) => 4000 + f * 12}
     owen={{ manos: "I", poses: [{ f: 0, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 115, hI: 25, cI: 50 } }], enManoD: <VasoCafe />, caras: [{ f: 0, v: "duda" }], miradas: [{ f: 0, v: { x: 0.2, y: 0.8 } }] }}
-    hud={<Mano texto="soft." x={1280} y={760} desde={kDe(164.6)(166.8)} color="#ffd27a" tam={70} />} />
+    hud={<Mano texto="soft." x={1500} y={240} desde={kDe(164.6)(166.8)} color="#ffd27a" tam={130} />} />
 );
 
 // ---------- 26 · parada 12: el fumador (+9) ----------
