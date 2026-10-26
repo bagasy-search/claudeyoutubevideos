@@ -75,6 +75,54 @@ export const EnLavadero: React.FC<LavP> = ({ cam, leo, tenzo, mara, extra = [], 
 export const LAV = { ...L, P: LAV_PISO };
 
 // ---------- el cuarto de Leo (Wilson Avenue) ----------
+// la pared detrás de la cama: guirnalda de lucecitas cálidas que titilan, póster, estante con libros y planta, corcho
+// con dibujos chiquitos y fotos (que en el plano medio y en el primer plano el fondo cuente quién es Leo)
+const DecoCuarto: React.FC = () => {
+  const f = useF();
+  const P = CTO_PISO, X = C.colchon;
+  const luces = Array.from({ length: 15 }).map((_, i) => {
+    const t = i / 14, x = X - 520 + t * 1040, y = P - 700 + 70 * Math.sin(Math.PI * t);
+    return { x, y, o: 0.65 + 0.35 * Math.sin(f / 9 + i * 1.7) };
+  });
+  return (
+    <g>
+      <path d={`M${X - 520},${P - 700} Q${X},${P - 560} ${X + 520},${P - 700}`} stroke="#1a1c22" strokeWidth={3} fill="none" />
+      {luces.map((l, i) => (
+        <g key={i}>
+          <circle cx={l.x} cy={l.y + 10} r={34} fill={ACENTO} opacity={0.16 * l.o} />
+          <circle cx={l.x} cy={l.y + 10} r={9} fill="#ffc57a" opacity={l.o} />
+        </g>
+      ))}
+      {/* póster: sol ámbar sobre un horizonte (el único color fuerte del cuarto) */}
+      <g transform={`translate(${X - 380},${P - 560}) rotate(-2)`}>
+        <rect x={0} y={0} width={230} height={320} fill="#1b1d24" stroke="#3a3f48" strokeWidth={6} />
+        <circle cx={115} cy={140} r={62} fill={ACENTO} />
+        <rect x={14} y={170} width={202} height={136} fill="#14161b" />
+        {[0, 1, 2, 3].map((k) => <rect key={k} x={30 + k * 48} y={190 - (k % 2) * 30} width={34} height={120 + (k % 2) * 30} fill="#22252d" />)}
+      </g>
+      {/* estante con libros y una planta */}
+      <g transform={`translate(${X + 150},${P - 470})`}>
+        <rect x={0} y={0} width={330} height={14} fill="#5a4634" />
+        {[["#7a8a9a", 24, 92], ["#b8483a", 20, 80], ["#cdbfa2", 26, 100], ["#4a5a6a", 18, 76], ["#8a6a4a", 22, 88]].map(([c, w, h], k) => (
+          <rect key={k} x={16 + k * 30} y={-(h as number)} width={w as number} height={h as number} fill={c as string} />
+        ))}
+        <rect x={220} y={-62} width={56} height={62} rx={6} fill="#a8583a" />
+        <path d={`M248,-62 q-${30 + 4 * Math.sin(f / 30)},-40 -40,-90 M248,-62 q10,-60 4,-110 M248,-62 q${34 + 4 * Math.sin(f / 26)},-30 52,-80`} stroke="#4a8a5a" strokeWidth={12} strokeLinecap="round" fill="none" />
+      </g>
+      {/* corcho con dibujos y fotos */}
+      <g transform={`translate(${X + 200},${P - 380})`}>
+        <rect x={0} y={0} width={280} height={190} rx={6} fill="#8a6a48" />
+        {[[18, 16, -4, "#e6e2d8"], [110, 22, 3, "#d8d0b8"], [196, 14, -2, "#e6e2d8"], [40, 104, 2, "#cfd6de"], [150, 100, -3, "#e6e2d8"]].map(([x, y, r, c], k) => (
+          <g key={k} transform={`translate(${x},${y}) rotate(${r})`}>
+            <rect x={0} y={0} width={70} height={60} fill={c as string} />
+            <path d={k % 2 ? "M12,44 Q34,10 58,40" : "M14,40 L34,18 L56,42"} stroke="#3a3a40" strokeWidth={3} fill="none" />
+            <circle cx={35} cy={-2} r={5} fill={ACENTO} />
+          </g>
+        ))}
+      </g>
+    </g>
+  );
+};
 export type CtoP = { cam: Clave[]; leo?: ActF; mara?: ActF; dia?: boolean; luzPuerta?: number; lampara?: boolean; tren?: number; hud?: React.ReactNode; medio?: React.ReactNode; detras?: React.ReactNode; frente?: React.ReactNode; seed?: number; mano?: number };
 export const EnCuarto: React.FC<CtoP> = ({ cam, leo, mara, dia, luzPuerta = 0, lampara = false, tren = -1, hud, medio, detras, frente, seed = 3, mano = 2.5 }) => {
   const f = useF();
@@ -84,7 +132,7 @@ export const EnCuarto: React.FC<CtoP> = ({ cam, leo, mara, dia, luzPuerta = 0, l
   const mm = m ? mk({ look: MARA, escala: ESC * 1.1, seed: 5, ruta: [{ f: 0, x: C.colchon - 200, y: P - 30 }], dir: [{ f: 0, v: 1 }], caras: [{ f: 0, v: "feliz" }], opacidad: () => 0.9 }, m) : null;
   return (
     <Escena Set={Cuarto} pal={dia ? PAL_DIA : PAL} seed={seed} mano={mano} claves={cam} setProps={{ luzPuerta, lampara, tren }}
-      detras={detras}
+      detras={<><DecoCuarto />{detras}</>}
       medio={<>{mm && <Actor {...mm} />}{a && <Actor {...a} />}{medio}</>} frente={frente} hud={hud} />
   );
 };
@@ -122,6 +170,7 @@ export const PantallaTel: React.FC<{ children?: React.ReactNode; zoom0?: number;
   const dx = 6 * Math.sin(f / 41), dy = 4 * Math.sin(f / 37 + 1);
   return (
     <AbsoluteFill style={{ background: fondo, overflow: "hidden" }}>
+      <div style={{ position: "absolute", left: 960 - 220, top: 540 - 450, width: 440, height: 900, transform: `scale(${2.4 * z})`, transformOrigin: "50% 50%", filter: "blur(28px) brightness(0.45) saturate(1.2)", overflow: "hidden" }}>{children}</div>
       <div style={{ position: "absolute", left: 960 - 700, top: 540 - 700, width: 1400, height: 1400, borderRadius: "50%", background: `radial-gradient(circle, ${ACENTO}${Math.round(40 * luz).toString(16).padStart(2, "0")} 0%, transparent 60%)` }} />
       <div style={{ position: "absolute", left: 960 - 250, top: 540 - 500, width: 500, height: 1000, transform: `translate(${dx}px,${dy}px) scale(${z})`, transformOrigin: "50% 50%" }}>
         <div style={{ position: "absolute", inset: 0, borderRadius: 56, background: "#121218", border: "6px solid #34343e" }} />
@@ -294,9 +343,9 @@ export const TextoMano: React.FC<VozP> = (p) => <VozLimpia {...p} tinta={p.color
 // ---------- cámaras tipo para cortar las charlas (campo / contracampo / dos / inserto), con empuje lento de 6 % ----------
 const lento = (X: number, Y: number, z: number, s: number, extra: Partial<Clave> = {}): Clave[] => [mira(0, X, Y, z, extra), mira(Math.round(s * 30), X, Y, z * 1.06, { ...extra, curva: "inout" })];
 export const CAM = {
-  leo: (s: number, z = 2.2) => lento(L.leo + 40, LAV_PISO - 285, z, s),
+  leo: (s: number, z = 2.2) => lento(L.leo - 10, LAV_PISO - 285, z, s),
   tenzo: (s: number, z = 2.2) => lento(L.tenzo + 90, LAV_PISO - 220, z, s),
-  dos: (s: number, z = 1.5) => lento(1450, LAV_PISO - 270, z, s),
+  dos: (s: number, z = 1.8) => lento(1450, LAV_PISO - 275, z, s),
   mesa: (s: number) => lento(L.tenzo - 110, LAV_PISO - 150, 3.2, s),
   // por detrás del hombro de Leo: Leo grande y desenfocado a la izquierda, Tenzo al fondo
   hombroLeo: (s: number) => lento(L.leo + 380, LAV_PISO - 300, 1.9, s),
