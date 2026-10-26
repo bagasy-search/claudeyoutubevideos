@@ -4,7 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Pergamino } from
 import { Fuerte, Ropa, Mula } from "./kit2";
 import { Persona, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant, FUERTE_V } from "./mundo";
-import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Carro, Banio, TablillaGrande, Burbuja } from "./kit3";
+import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Carro, Banio, TablillaGrande, Burbuja, gesto, Termometro } from "./kit3";
 
 // TRAMPA 2 · EL CLIMA (182,6-331,2 s). Viajamos por el muro a la cresta del Whin Sill: viento del Atlántico, lluvia,
 // llovizna, lluvia de costado, nieve; el barro que traba el carro; los pantalones; la capa británica; Vindolanda y sus
@@ -19,7 +19,7 @@ const tVin = T("we know about the socks", D);
 const YOV = VX + 1050; // vos, ya en Vindolanda
 
 export const keys2: K[] = [
-  [183.0, 7000, 520, 0.32], [184.4, YO2, 470, 1.5], ck("the central part", D, M2, 560, 0.55), ck("it is beautiful", D, M2 + 200, 520, 0.42),
+  [183.0, 7000, 520, 0.32], [184.4, YO2, 470, 1.5], ck("the central part", D, M2 + 200, 540, 0.9), ck("it is beautiful", D, M2 + 200, 520, 0.42),
   ck("it is also exactly", D, YO2, 470, 1.55), ck("with nothing to stop", D, YO2 + 40, 470, 1.8), ck("it rains", D, YO2, 480, 1.2),
   ck("then it drizzles", D, YO2, 470, 1.35), ck("then it rains sideways", D, YO2 - 100, 490, 0.95), ck("it snows", D, YO2, 470, 1.5),
   ck("the roads turn into mud", D, CX, 780, 1.05), ck("one merchant", D, CX, 760, 1.2), ck("because the roads are so bad", D, CX + 60, 780, 1.4),
@@ -55,11 +55,12 @@ const Cresta: React.FC<{ t: number }> = ({ t }) => {
           return <path key={i} d={`M ${-300 + k * 2300} ${y} q 60 -18 120 0 t 120 0`} stroke="#fff" strokeWidth={8} fill="none" strokeLinecap="round" opacity={0.75 * Math.sin(k * Math.PI)} />;
         })}
       </svg>
-      <div style={{ position: "absolute", left: 40, top: 40, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>← NORTH</div>
-      <div style={{ position: "absolute", right: 40, top: 40, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>SOUTH →</div>
-      {t > a && <Chip t={t} t0={a} text="THE WHIN SILL" color="#2a2a36" x={760} y={300} centro size={64} />}
+      {up > 0.5 && <Persona {...gesto(t, [[a, "señala"], [T("it is beautiful", D) - 0.6, "festeja"], [c, "miedo"], [T("with nothing to stop", D), "tiembla"]])} x={905} y={880 - 440 * up - 130} h={240} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" inclina={t > c ? -14 : 0} />}
+      <div style={{ position: "absolute", left: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>← NORTH</div>
+      <div style={{ position: "absolute", right: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>SOUTH →</div>
+      {t > a && <Chip t={t} t0={a} text="THE WHIN SILL" color="#2a2a36" x={1380} y={430} centro size={64} />}
       {t > b && <Chip t={t} t0={b} text="CLIFFS FACING NORTH" color={C.violeta} x={520} y={820} centro size={50} />}
-      {t > c && <Chip t={t} t0={c} text="ATLANTIC WIND →" color={C.teal} tinta={C.noche} x={420} y={170} centro size={62} />}
+      {t > c && <Chip t={t} t0={c} text="ATLANTIC WIND →" color={C.teal} tinta={C.noche} x={460} y={200} centro size={62} />}
       {t > T("with nothing to stop", D) && <Grande t={t} t0={T("with nothing to stop", D)} text="NOTHING TO STOP IT" y={980} size={84} color={C.ambar} />}
     </AbsoluteFill>
   );
@@ -76,7 +77,8 @@ const Siria: React.FC<{ t: number }> = ({ t }) => {
         {[360, 1560].map((x) => <g key={x} opacity={1 - k}><rect x={x - 12} y={560} width={24} height={260} fill="#8a5a2a" />{[0, 1, 2, 3, 4].map((i) => <ellipse key={i} cx={x + Math.cos(i * 1.3) * 90} cy={560 + Math.sin(i * 1.3) * 30} rx={110} ry={26} fill="#3f8a3a" transform={`rotate(${i * 40 - 80} ${x} 560)`} />)}</g>)}
         {k > 0 && Array.from({ length: 70 }, (_, i) => { const kk = (t * 2.2 + i * 0.137) % 1; const x = (i * 97) % 1920; return <line key={i} x1={x} y1={kk * 1080} x2={x + 20} y2={kk * 1080 + 50} stroke="#d6e6ff" strokeWidth={5} opacity={k} />; })}
       </svg>
-      <Persona x={960} y={880} h={460} t={t} seed={24} ropa={AUX(1)} casco="legion" expr={k > 0.5 ? "triste" : "feliz"} bD={k > 0.5 ? 150 : 30} cD={k > 0.5 ? 120 : 10} malla />
+      {(() => { const g = gesto(t, [[a, "festeja"], [b, "tiembla"]]); return <Persona {...g} x={900 + g.dx} y={880} h={460} t={t} seed={24} ropa={AUX(1)} casco="legion" malla />; })()}
+      <Termometro t={t} t0={a} de={35} a={6} dur={0.4} x={1560} y={560} s={1.1} />
       <Chip t={t} t0={a} text={k > 0.5 ? "BRITAIN · 6°C · RAIN" : "SYRIA · 35°C"} color={k > 0.5 ? "#2a2350" : C.naranja} x={960} y={150} centro size={76} />
     </AbsoluteFill>
   );
@@ -110,6 +112,7 @@ const Edicto: React.FC<{ t: number }> = ({ t }) => {
           return <div key={i} style={{ marginLeft: 70, marginTop: 34, fontFamily, fontWeight: 700, fontSize: 50, color: hl ? "#fff" : "#4a2a17", background: hl ? C.rojo : "transparent", width: 1060, padding: "6px 14px", borderRadius: 12, opacity: t > a + 0.3 + i * 0.2 ? 1 : 0 }}>{l}</div>;
         })}
       </div>
+      <Persona x={170} y={1060} h={420} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" pantalon="#6b4a2f" {...gesto(t, [[a + 0.2, "lee"], [b, "señala"], [b + 1.4, "festeja"]])} />
       {t > b && <Chip t={t} t0={b + 0.2} text="THE BRITISH HOODED CLOAK" color={C.ambar} tinta={C.noche} x={960} y={1010} centro size={58} />}
     </AbsoluteFill>
   );
@@ -145,7 +148,7 @@ const Parte: React.FC<{ t: number }> = ({ t }) => {
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 50%, #2d1b69, #120a2c 80%)" }}>
       {Array.from({ length: 752 }, (_, i) => {
-        const cx = 160 + (i % 47) * 34, cy = 300 + Math.floor(i / 47) * 40;
+        const cx = 110 + (i % 47) * 31, cy = 280 + Math.floor(i / 47) * 36;
         return t > T("the first cohort", D) + i * 0.002 ? <div key={i} style={{ position: "absolute", left: cx, top: cy, width: 22, height: 30, borderRadius: "11px 11px 4px 4px", background: col(i) }} /> : null;
       })}
       <Cu t={t} w="752 men" d={D} de={0} a={752} sube={1} dur={3.2} y={170} size={130} suf=" ON THE BOOKS" color="#fff" />
@@ -154,6 +157,7 @@ const Parte: React.FC<{ t: number }> = ({ t }) => {
       {t > d1 && <Chip t={t} t0={d1} text="15 SICK" color={C.lima} tinta={C.noche} x={400} y={180} centro size={64} />}
       {t > d2 && <Chip t={t} t0={d2} text="6 WOUNDED" color={C.rojo} x={960} y={180} centro size={64} />}
       {t > d3 && <Chip t={t} t0={d3} text="10 · INFLAMED EYES" color={C.ambar} tinta={C.noche} x={1500} y={180} centro size={64} />}
+      <Persona x={1760} y={1000} h={400} t={t} seed={91} ropa={{ ...AUX(0), tunica: "#a3202f", tunica2: "#5e0f1d" }} casco="centurion" {...gesto(t, [[T("the first cohort", D), "lee"], [b, "sorpresa"], [c, "enojado"], [d3, "niega"]])} />
       <Chip t={t} t0={T("the first cohort", D)} t1={b} text="1st COHORT OF TUNGRIANS" color={C.violeta} x={960} y={1000} centro size={56} />
       {t > T("men from belgium", D) && t < b && <Chip t={t} t0={T("men from belgium", D)} text="FROM BELGIUM · LIKE YOU" color={C.teal} tinta={C.noche} x={960} y={920} centro size={46} />}
     </AbsoluteFill>
@@ -190,10 +194,10 @@ const Termas: React.FC<{ t: number }> = ({ t }) => {
         {t > f && Array.from({ length: 9 }, (_, i) => <div key={"f" + i} style={{ position: "absolute", left: 76 + i * 108, top: 70 - Math.abs(Math.sin(t * 9 + i)) * 30, width: 40, height: 80, borderRadius: "50% 50% 30% 30%", background: i % 2 ? "#ff7a3d" : "#ffb020" }} />)}
       </div>
       {t > f && <Chip t={t} t0={f} text="FIRES UNDER THE FLOOR · ALL WINTER" color={C.naranja} x={960} y={1010} centro size={50} />}
-      {t > feliz && <Persona x={380} y={760} h={380} t={t} seed={3} ropa={TUNGRO} expr="feliz" aparece={feliz} bD={150} cD={160} bI={150} cI={160} />}
+      {(() => { const t0 = T("with a hot room", D); const x = t < f ? 1540 - 1160 * prog(t, t0 + 0.4, t0 + 2.4) : 380; return <Persona x={x} y={760} h={380} t={t} seed={3} ropa={TUNGRO} {...gesto(t, [[t0, "tiembla"], [T("a warm room", D), "encoge"], [f, "habla"], [feliz, "festeja"]])} camina={t > t0 + 0.4 && t < t0 + 2.4 ? 1.4 : 0} flip={t < t0 + 2.4} />; })()}
       <Chip t={t} t0={T("every fort had one", D)} t1={f} text="EVERY FORT HAD ONE" color={C.violeta} x={960} y={150} centro size={60} />
-      {t > T("it was not rome", D) && <Chip t={t} t0={T("it was not rome", D)} text="ROME ✗" color="#2a2350" x={700} y={150} centro size={70} />}
-      {t > T("it was that hot room", D) && <Chip t={t} t0={T("it was that hot room", D)} text="THE HOT ROOM ✓" color={C.rojo} x={1260} y={150} centro size={70} />}
+      {t > T("it was not rome", D) && <Chip t={t} t0={T("it was not rome", D)} text="ROME ✗" color="#2a2350" x={700} y={170} centro size={70} />}
+      {t > T("it was that hot room", D) && <Chip t={t} t0={T("it was that hot room", D)} text="THE HOT ROOM ✓" color={C.rojo} x={1260} y={170} centro size={70} />}
     </AbsoluteFill>
   );
 };
@@ -208,11 +212,12 @@ export const W2: React.FC<{ t: number; c: Cam }> = ({ t }) => {
   return (
     <>
       {/* compañeros en la cresta */}
-      {t < tVin && [-900, 700].map((dx, i) => <Persona key={i} x={YO2 + dx} y={TOP} h={220} t={t} seed={44 + i} ropa={AUX(i + 2)} casco="legion" malla={i === 0} pantalon={pant_ && t > 229 ? "#5a4a3a" : undefined} expr={sideways ? "miedo" : "triste"} inclina={viento * -8} bD={sideways ? 160 : 20} cD={sideways ? 150 : 0} />)}
+      {t < tVin && [-900, 700].map((dx, i) => <Persona key={i} x={YO2 + dx} y={TOP} h={220} t={t} seed={44 + i} ropa={AUX(i + 2)} casco="legion" malla={i === 0} pantalon={pant_ && t > 229 ? "#5a4a3a" : undefined} {...gesto(t, [[183, "tiembla"], [T("then it rains sideways", D), "miedo"], [206.3, "tiembla"], [T("nobody cares", D) - 0.3, "festeja"], [T("you want wool", D), "encoge"]])} inclina={viento * -8} />)}
       {/* vos */}
-      {!enV && <Persona x={YO2} y={TOP} h={230} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon={pant_} capa={capa} inclina={viento * -10 + (sideways ? -6 : 0)}
-        expr={t < 194 ? "triste" : t < 195.3 ? "feliz" : t < 204 ? "miedo" : t < 206 ? "sorpresa" : t < 222 ? "triste" : t < 224 ? "orgullo" : t < 229 ? "triste" : "feliz"}
-        bD={sideways ? 170 : t > 230 && t < 236 ? 110 : 15} cD={sideways ? 160 : 20} bI={t > 205 && t < 206.3 ? 150 : 10} />}
+      {!enV && <Persona x={YO2} y={TOP} h={230} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon={pant_} capa={capa}
+        {...gesto(t, [[183, "tiembla"], [194.1, "festeja"], [195.3, "miedo"], [T("it rains", D), "encoge"], [T("then it drizzles", D), "tiembla"], [T("then it rains sideways", D), "miedo"], [T("it snows", D), "sorpresa"], [206.3, "tiembla"],
+          [T("so you adapt", D), "habla"], [T("no proper roman", D), "niega"], [T("you wear trousers", D), "festeja"], [T("on the wall", D), "habla"], [T("nobody cares", D), "festeja"], [T("you want wool", D), "habla"], [T("thick socks", D), "señala"], [T("a heavy hooded cloak", D), "festeja"], [T("britain became so famous", D), "habla"]])}
+        inclina={viento * -10 + (sideways ? -6 : 0)} />}
       {/* el carro empantanado */}
       {t > 205 && t < 218 && (
         <>
@@ -227,7 +232,7 @@ export const W2: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       <Fuerte x={VX} y={BASE - 190} s={0.9} w={1700} piedra />
       {t > tVin - 1 && t < tVin + 7 && <div style={{ position: "absolute", left: VX - 420, top: BASE - 640, width: 840, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 120, color: "#fff", WebkitTextStroke: "14px #2a1530", paintOrder: "stroke fill", transform: `scale(${ent(t, tVin + 0.3)})` }}>VINDOLANDA</div>}
       {enV && <Persona x={YOV} y={BASE} h={240} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" aparece={tVin + 2}
-        expr={t < T("somewhere", D) ? "feliz" : t < T("the cold does not only", D) ? "triste" : t < 284 ? "miedo" : "triste"} bD={t > 270 && t < 279 ? 120 : 12} inclina={t > 281.6 && t < 282.6 ? 18 * Math.sin((t - 281.6) * Math.PI) : 0} />}
+        {...gesto(t, [[tVin + 2, "habla"], [T("a letter from home", D), "sorpresa"], [T("it says", D), "lee"], [T("two pairs of underpants", D), "festeja"], [T("somewhere", D), "triste"], [T("the cold does not only", D), "tiembla"], [T("it makes you sick", D), "miedo"], [T("at vindolanda", D), "triste"]])} />}
       {/* el baño humeante */}
       <Banio x={BX} y={BASE - 310} t={t} s={1} />
     </>
@@ -251,7 +256,7 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("then it rains sideways", D) && t < T("it snows", D) && Array.from({ length: 40 }, (_, i) => { const k = (t * 3 + i * 0.173) % 1; return <div key={i} style={{ position: "absolute", left: -200 + k * 2400, top: (i * 61) % 1080, width: 180, height: 6, borderRadius: 3, background: "#d6e6ff", opacity: 0.7 }} />; })}
       <Gr t={t} w="for a change" d={D} txt="FOR A CHANGE…" y={880} size={90} c={C.crema} dur={1.0} />
       <Gr t={t} w="the roads turn into mud" d={D} txt="MUD." y={200} size={170} c="#c9a36a" dur={1.3} />
-      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={960} y={360} w={1560} vel={26} titulo="A MERCHANT · VINDOLANDA TABLET"
+      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={1330} y={150} w={900} vel={26} titulo="A MERCHANT · VINDOLANDA TABLET"
         lineas={["“I would have collected the goods already…", "…but I did not want to injure the animals", "while the roads are bad.”"]} />}
       <Ch t={t} w="so you adapt" d={D} txt="SO YOU ADAPT" y={150} c={C.teal} tinta={C.noche} size={66} dur={1.0} />
       <Ch t={t} w="no proper roman" d={D} txt="NO PROPER ROMAN WOULD…" y={150} c={C.rojo} size={60} dur={3.4} />
@@ -273,7 +278,7 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Plano t={t} t0={T("in the 1970s", D) - 0.1} t1={T("most of them were written", D) + 2.2} desde={[960, 760]} fondo="#9fc6e0"><Excava t={t} /></Plano>
       <Ch t={t} w="most of them were written" d={D} txt="WRITTEN ~AD 85-130" y={1000} c={C.ambar} tinta={C.noche} size={56} dur={4.2} dt={0.2} />
       <Ch t={t} w="the wall went up" d={D} txt="← AS THE WALL WENT UP" y={900} c={C.teal} tinta={C.noche} size={50} dur={1.4} />
-      <Gr t={t} w="a letter from home" d={D} txt="A LETTER FROM HOME" y={180} size={110} c={C.rosa} dur={1.6} />
+      <Gr t={t} w="a letter from home" d={D} txt="A LETTER FROM HOME" y={940} size={110} c={C.rosa} dur={1.2} />
       {t > T("it says", D) && t < T("somewhere", D) + 0.2 && (
         <>
           <TablillaGrande t={t} t0={T("it says", D)} x={960} y={330} w={1500} vel={30} lineas={["“I have sent you… socks,", "two pairs of sandals,", "and two pairs of underpants.”"]} />
@@ -290,6 +295,8 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
           <Persona x={250} y={500} h={360} t={t} seed={72} ropa={CIVIL(1)} expr="feliz" bD={130} cD={40} manoD={<path d="M -40 -60 L 40 -60 L 40 30 Q 80 40 70 70 L -20 70 Z" fill="#c9a0e8" />} />
         </AbsoluteFill>
       </Burbuja>
+      {t > T("the cold does not only", D) && t < T("a strength report", D) && <Termometro t={t} t0={T("the cold does not only", D)} de={9} a={-3} dur={1.6} x={1680} y={520} />}
+      {t > T("the cold does not only", D) && t < T("a strength report", D) && Array.from({ length: 4 }, (_, i) => { const k = ((t - T("the cold does not only", D)) * 0.8 + i / 4) % 1; return <div key={i} style={{ position: "absolute", left: yv[0] + 40 + k * 160, top: yv[1] + 40 * c.z - k * 120, width: 60 + k * 120, height: 40 + k * 80, borderRadius: "50%", background: "#eef6ff", opacity: 0.6 * (1 - k) }} />; })}
       <Ch t={t} w="the cold does not only" d={D} txt="COLD = MISERABLE" y={150} c="#3d7fc9" size={60} dur={2.0} />
       <Gr t={t} w="it makes you sick" d={D} txt="…AND SICK." y={200} size={140} c={C.lima} dur={1.2} />
       <Emote t={t} t0={T("it makes you sick", D)} t1={T("at vindolanda", D)} tipo="sudor" x={yv[0]} y={yv[1]} s={c.z * 0.5} />

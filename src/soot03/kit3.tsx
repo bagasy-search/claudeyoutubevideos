@@ -271,3 +271,74 @@ export const Burbuja: React.FC<{ t: number; t0: number; t1: number; x: number; y
   );
 };
 export const Easing_ = Easing;
+
+
+// gestos sincronizados: devuelve props de Persona para el beat activo (sirve para cualquier personaje ya puesto)
+export const gesto = (t: number, beats: [number, Gesto][]) => {
+  let i = 0;
+  for (let k = 0; k < beats.length; k++) if (beats[k][0] <= t) i = k;
+  const [tb, g] = beats[i];
+  const d = t - tb;
+  const ciclo = (f: number, a: number) => Math.sin(d * f) * a;
+  let expr: Expr = "neutro", habla = false, bI = 8, bD = 8, cI = 10, cD = 10, inclina = 0, salta: number | undefined, ladea = 0, dy = 0, dx = 0;
+  switch (t < beats[0][0] ? "nada" : g) {
+    case "señala": bD = 115 + ciclo(5, 6); cD = 5; expr = "sorpresa"; habla = true; inclina = 4; break;
+    case "habla": bD = 50 + ciclo(4, 25); cD = 60 + ciclo(3, 20); bI = 30 + ciclo(3.3, 15); habla = true; expr = "neutro"; break;
+    case "sorpresa": bD = 150; bI = 150; cD = 30; cI = 30; expr = "sorpresa"; salta = tb; break;
+    case "miedo": bD = 120 + ciclo(30, 4); bI = 120 + ciclo(31, 4); cD = 110; cI = 110; expr = "miedo"; dx = ciclo(40, 3); inclina = -6; break;
+    case "tiembla": bD = 70; bI = 70; cD = 140; cI = 140; expr = "triste"; dx = ciclo(45, 4); break;
+    case "cava": bD = 60 + ciclo(7, 45); bI = 40 + ciclo(7, 45); cD = 40; cI = 40; inclina = 12 + ciclo(7, 8); expr = "enojado"; break;
+    case "carga": bD = 165; bI = 165; cD = 20; cI = 20; inclina = -4; expr = "enojado"; dy = Math.abs(ciclo(6, 6)); break;
+    case "lee": bD = 75; bI = 75; cD = 95; cI = 95; expr = "neutro"; ladea = ciclo(1.5, 5); inclina = 6; break;
+    case "festeja": bD = 160 + ciclo(9, 15); bI = 160 + ciclo(9, 15); cD = 20; cI = 20; expr = "feliz"; salta = tb + Math.floor(d / 0.8) * 0.8; habla = true; break;
+    case "niega": bD = 40; bI = 40; cD = 90; cI = 90; expr = "enojado"; ladea = ciclo(10, 10); habla = true; break;
+    case "encoge": bD = 50; bI = 50; cD = 120 + ciclo(3, 10); cI = 120 + ciclo(3, 10); expr = "triste"; ladea = 8; break;
+    case "duerme": bD = 10; bI = 10; expr = "dormido"; inclina = 6 + ciclo(1.2, 3); break;
+    case "triste": bD = 15; bI = 15; expr = "triste"; inclina = 8; ladea = -6; break;
+    case "enojado": bD = 100 + ciclo(8, 25); cD = 70; bI = 20; expr = "enojado"; habla = true; break;
+    case "escribe": bD = 70 + ciclo(12, 6); cD = 100 + ciclo(9, 8); bI = 60; cI = 90; expr = "neutro"; inclina = 10; break;
+    case "golpea": bD = 120 + Math.abs(ciclo(9, 50)); cD = 30; expr = "enojado"; habla = true; break;
+    default: break;
+  }
+  return { expr, habla, bI, bD, cI, cD, inclina, salta, ladea, dx, dy };
+};
+
+// ── ACTÚA: personaje de cuerpo entero que entra caminando, frena y hace gestos sincronizados a la voz.
+// beats = [t, gesto] en orden; el gesto vale desde su t hasta el siguiente. Nunca queda clavado: cada gesto tiene su ciclo.
+export type Gesto = "camina" | "señala" | "habla" | "sorpresa" | "miedo" | "tiembla" | "cava" | "carga" | "lee" | "festeja" | "niega" | "encoge" | "duerme" | "triste" | "enojado" | "escribe" | "golpea";
+export const Actua: React.FC<{ t: number; beats: [number, Gesto][]; x0: number; x1: number; y: number; h?: number; quien?: number; frio?: boolean; manoD?: React.ReactNode; manoI?: React.ReactNode; vuelta?: number; sale?: number; casco?: boolean; ropa?: RopaT }> = ({ t, beats, x0, x1, y, h = 300, quien = -1, frio, manoD, manoI, vuelta, sale, casco = true, ropa }) => {
+  if (!beats.length || t < beats[0][0]) return null;
+  let i = 0;
+  for (let k = 0; k < beats.length; k++) if (beats[k][0] <= t) i = k;
+  const [tb, g] = beats[i];
+  const d = t - tb;
+  // camina desde x0 hasta x1 en el primer beat "camina"; si hay "sale", se va por x0
+  const tc = beats[0][0];
+  const llega = beats.length > 1 ? beats[1][0] : tc + 1.2;
+  let x = interpolate(t, [tc, llega], [x0, x1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  if (sale !== undefined && t > sale) x = interpolate(t, [sale, sale + 1.4], [x1, x0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
+  const anda = (t < llega && g === "camina") || (sale !== undefined && t > sale);
+  const flip = sale !== undefined && t > sale ? x0 > x1 : x0 > x1 ? true : false;
+  const G = gesto(t, beats);
+  const { expr, habla, bI, bD, cI, cD, inclina, salta, ladea } = G, dx = G.dx, dy = G.dy;
+  const P = { x: x + dx, y: y + dy, h, t, expr, habla, camina: anda ? 1.3 : 0, bI, bD, cI, cD, inclina, salta, ladea, flip: vuelta !== undefined && t > vuelta ? !flip : flip, manoD, manoI };
+  if (ropa) return <Persona {...P} seed={40 + quien} ropa={ropa} casco={casco ? "legion" : "no"} />;
+  return quien < 0 ? <Yo {...P} frio={frio} casco={casco} /> : <Otro {...P} i={quien} casco={casco} />;
+};
+
+// termómetro que baja/sube con número que corre
+export const Termometro: React.FC<{ t: number; t0: number; de: number; a: number; dur?: number; x: number; y: number; s?: number }> = ({ t, t0, de, a, dur = 1.2, x, y, s = 1 }) => {
+  if (t < t0) return null;
+  const k = prog(t, t0 + 0.2, t0 + 0.2 + dur);
+  const v = Math.round(de + (a - de) * k);
+  const f = Math.max(0.08, Math.min(1, (v + 5) / 45));
+  const col = v > 20 ? C.rojo : v > 10 ? C.naranja : "#4ab8ff";
+  return (
+    <div style={{ position: "absolute", left: x - 70 * s, top: y - 260 * s, width: 140 * s, height: 420 * s, transform: `scale(${ent(t, t0)})` }}>
+      <div style={{ position: "absolute", left: 40 * s, top: 0, width: 60 * s, height: 320 * s, borderRadius: 30 * s, background: "#fff", border: `${6 * s}px solid #2a1530` }} />
+      <div style={{ position: "absolute", left: 56 * s, top: (16 + 290 * (1 - f)) * s, width: 28 * s, height: 290 * f * s, borderRadius: 14 * s, background: col }} />
+      <div style={{ position: "absolute", left: 20 * s, top: 290 * s, width: 100 * s, height: 100 * s, borderRadius: "50%", background: col, border: `${6 * s}px solid #2a1530` }} />
+      <div style={{ position: "absolute", left: -60 * s, width: 260 * s, top: 400 * s, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 64 * s, color: "#fff", WebkitTextStroke: `${8 * s}px #2a1530`, paintOrder: "stroke fill" }}>{v}°C</div>
+    </div>
+  );
+};

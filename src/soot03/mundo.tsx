@@ -240,15 +240,15 @@ export const Clima: React.FC<{ t: number; a: Ambiente }> = ({ t, a }) => {
           return <circle key={"n" + i} cx={x} cy={y} r={4 + w * 6} fill="#fff" opacity={0.85} />;
         })}
       </svg>
-      {a.rayo > 0 && <AbsoluteFill style={{ background: "#eef0ff", opacity: a.rayo * 0.75, mixBlendMode: "screen" }} />}
+      {a.rayo > 0 && <AbsoluteFill style={{ background: "#eef0ff", opacity: a.rayo * 0.32, mixBlendMode: "screen" }} />}
     </>
   );
 };
 // rayos: lista de tiempos → destello que decae (doble golpe)
 export const destello = (t: number, ts: number[]) => ts.reduce((m, r) => {
   const d = t - r;
-  if (d < 0 || d > 0.6) return m;
-  return Math.max(m, Math.exp(-d * 14) + (d > 0.12 ? 0.6 * Math.exp(-(d - 0.12) * 12) : 0));
+  if (d < 0 || d > 0.3) return m;
+  return Math.max(m, Math.exp(-d * 22) + (d > 0.08 ? 0.4 * Math.exp(-(d - 0.08) * 20) : 0));
 }, 0);
 export const Relampago: React.FC<{ t: number; t0: number; x: number }> = ({ t, t0, x }) => {
   const d = t - t0;
@@ -266,18 +266,17 @@ export const Relampago: React.FC<{ t: number; t0: number; x: number }> = ({ t, t
 };
 
 // ── Plano: un detalle del mundo que se abre a pantalla completa desde su punto (iris) y vuelve a cerrarse en él.
-export const Plano: React.FC<{ t: number; t0: number; t1: number; desde?: [number, number]; fondo?: string; children: React.ReactNode; forma?: "circulo" | "rect" }> = ({ t, t0, t1, desde = [960, 540], fondo = C.noche, children }) => {
-  if (t < t0 || t > t1 + 0.36) return null;
-  const e = interpolate(t, [t0, t0 + 0.36], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
-  const s = interpolate(t, [t1, t1 + 0.36], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
-  const k = Math.min(e, s);
-  // empuje lento y continuo mientras está abierto (nunca un cuadro quieto: el QC marca congelado a los 2 s)
-  const vive = 0.012 * Math.min(t - t0, 12) + 0.006 * Math.sin((t - t0) * 0.9);
-  const zoom = 1.25 - 0.25 * e + (1 - s) * 0.5 + vive;
+export const Plano: React.FC<{ t: number; t0: number; t1: number; desde?: [number, number]; fondo?: string; children: React.ReactNode; forma?: "circulo" | "rect" }> = ({ t, t0, t1, fondo = C.noche, children }) => {
+  if (t < t0 || t > t1 + 0.3) return null;
+  // barrido diagonal rápido (entra de izquierda a derecha, sale hacia la derecha): el contenido está entero desde el 1er cuadro
+  const e = interpolate(t, [t0, t0 + 0.3], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
+  const s = interpolate(t, [t1, t1 + 0.3], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
+  const a = -300 + 2520 * e, b = -300 + 2520 * s;
+  const clip = `polygon(${b + 300}px 0, ${a + 300}px 0, ${a}px 1080px, ${b}px 1080px)`;
   return (
-    <AbsoluteFill style={{ clipPath: `circle(${k * 125}% at ${desde[0]}px ${desde[1]}px)`, background: fondo, overflow: "hidden" }}>
-      <AbsoluteFill style={{ transformOrigin: `${desde[0]}px ${desde[1]}px`, transform: `translate(${Math.sin((t - t0) * 0.5) * 10}px, ${Math.cos((t - t0) * 0.4) * 6}px) scale(${zoom})` }}>{children}</AbsoluteFill>
-      <AbsoluteFill style={{ boxShadow: "inset 0 0 0 14px rgba(255,255,255,.9)", borderRadius: k < 1 ? "50%" : 0, opacity: k < 0.98 ? 1 : 0 }} />
+    <AbsoluteFill style={{ clipPath: clip, background: fondo, overflow: "hidden" }}>
+      <AbsoluteFill style={{ transform: `translateX(${(1 - e) * -120 + s * 120}px)` }}>{children}</AbsoluteFill>
+      {(e < 1 || s > 0) && <div style={{ position: "absolute", left: (e < 1 ? a : b) + 270 + 11, top: -40, width: 60, height: 1160, background: "#fff", transform: "skewX(-15.5deg)", transformOrigin: "0 0" }} />}
     </AbsoluteFill>
   );
 };

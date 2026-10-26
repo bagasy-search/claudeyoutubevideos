@@ -22,9 +22,7 @@ const SOLES = PARTES.flatMap((p) => p.sol ?? []).sort((a, b) => a[0] - b[0]);
 
 export const Mundo3: React.FC<{ desde?: number }> = ({ desde = 0 }) => {
   const t = useCurrentFrame() / FPS + desde;
-  // respiración suave del zoom: la cámara nunca queda clavada (el QC marca congelado a los 2 s de cuadro quieto)
-  const c0 = camara(t, KEYS);
-  const c = { ...c0, z: c0.z * (1 + 0.012 * Math.sin(t * 0.7)), x: c0.x + Math.sin(t * 0.45) * 14 / c0.z };
+  const c = camara(t, KEYS);
   const so = [...SOLES].reverse().find((s) => s[0] <= t);
   const a = { pal: paleta(t, AMB), lluvia: LL(t), nieve: NI(t), niebla: NB(t), rayo: destello(t, RAYOS), sol: so && so[1] > -900 ? ([so[1], so[2]] as [number, number]) : undefined, luna: !!so?.[3], obra: PARTES.map((p) => p.obra?.(t)).find((o) => !!o) ?? null };
   return (

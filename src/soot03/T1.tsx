@@ -1,10 +1,10 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Pergamino, MapaPuntos, lugar, Rayos } from "./kit";
-import { Denario } from "./kit2";
+import { Denario, Soldadito } from "./kit2";
 import { Persona, CENTURION, LUCIUS, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant } from "./mundo";
-import { Yo, Picto, DiplomaBronce, Gr, Cu, Sale, Ch, T, ck } from "./kit3";
+import { Yo, Picto, DiplomaBronce, Gr, Cu, Sale, Ch, T, ck, Actua } from "./kit3";
 
 // TRAMPA 1 · EL DESTINO (48,3-182,6 s). El muro se DESARMA al año 122 y lo levantan las legiones delante nuestro;
 // corte transversal (zanja · muro · camino · vallum); fuertes que se encienden; el muro que "encogió en el lavado";
@@ -18,16 +18,15 @@ const frente = (t: number) => OB0 + (OB1 - OB0) * u1(t);
 const YOX = M1 + 330;
 
 export const keys1: K[] = [
-  [48.6, M1, 520, 0.62], ck("year 122", D, M1 - 300, 600, 0.45), ck("hadrian has just", D, 3000, 640, 1.0), ck("biographer", D, 3100, 620, 1.2),
-  ck("he was the first", D, 3250, 680, 1.0), ck("80 miles long", D, 4000, 600, 0.4), ck("to separate the", D, 4000, 520, 0.42),
-  ck("80 roman miles", D, 4000, 560, 0.35), ck("legions build it", D, 1200, 640, 0.6), ck("in about six years", D, 2400, 640, 0.6),
-  ck("a stone curtain", D, 3200, 640, 0.6), ck("a small fort every", D, M1, 560, 0.48), ck("two watchtowers", D, 7000, 520, 0.2),
+  [48.6, M1, 520, 0.62], ck("year 122", D, M1 - 300, 600, 0.45), ck("hadrian has just", D, 3150, 700, 1.45), ck("biographer", D, 3420, 720, 1.6),
+  ck("he was the first", D, 3380, 700, 1.35), ck("80 miles long", D, 4000, 600, 0.4, 0.5), ck("to separate the", D, 4000, 520, 0.42),
+  ck("80 roman miles", D, 4000, 560, 0.35), [68.6, 487, 700, 1.1], [70.0, 1448, 700, 1.05], [71.5, 2477, 700, 1.0], [73.0, 3507, 700, 1.0], [74.5, 4536, 700, 0.95], ck("a small fort every", D, M1, 560, 0.48), ck("two watchtowers", D, 7000, 520, 0.2),
   ck("behind it", D, 7000, 520, 0.2, -0.3), ck("and eventually", D, 19000, 600, 0.036), ck("changed their minds", D, 6900, 640, 0.9),
   ck("the wall was planned", D, 6900, 640, 0.9), ck("then the legions go home", D, 5600, 640, 0.6), ck("needs somebody", D, M1 + 200, 560, 0.62),
   ck("that somebody is you", D, YOX, 470, 1.9), ck("you are an auxiliary", D, YOX + 60, 470, 1.6), ck("not a citizen of rome", D, YOX + 60, 470, 1.8),
   ck("rome recruited men", D, YOX + 60, 470, 1.8), ck("your pay is lower", D, YOX + 200, 480, 1.4), ck("and your reward", D, YOX + 160, 460, 1.6),
-  ck("so on paper", D, YOX + 100, 470, 1.4), ck("in practice", D, YOX, 480, 1.0), ck("who do not consider", D, YOX - 300, 520, 0.85),
-  ck("to protect them", D, YOX, 470, 0.75), ck("that was the good news", D, YOX, 440, 1.5), [182.3, YOX, 450, 1.3],
+  ck("so on paper", D, YOX + 100, 470, 1.4), ck("in practice", D, YOX, 480, 1.0), ck("who do not consider", D, YOX - 200, 500, 1.25),
+  ck("to protect them", D, YOX, 470, 1.15), ck("that was the good news", D, YOX, 440, 1.5), [182.3, YOX, 450, 1.3],
 ];
 export const amb1: [number, Pal][] = [[48.4, "gris"], [50.6, "dia"], [110.8, "gris"], [171.9, "tormenta"]];
 export const lluvia1: [number, number][] = [[48.5, 0.25], [50.6, 0], [171.6, 0], [173, 0.85], [182.5, 0.7]];
@@ -56,10 +55,10 @@ export const W1: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       {/* Adriano entra caminando y señala */}
       {t > 52.8 && t < 68.6 && (() => {
         const x = 2500 + 700 * prog(t, 53.0, 56.0);
-        const cb = cabeza(x, BASE, 260);
+        const cb = cabeza(x, BASE, 330);
         return (
           <>
-            <Persona x={x} y={BASE} h={260} t={t} seed={88} ropa={{ ...CIVIL(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" }} viejo camina={t < 56 ? 1.3 : 0}
+            <Persona x={x} y={BASE} h={330} t={t} seed={88} ropa={{ ...CIVIL(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" }} viejo camina={t < 56 ? 1.3 : 0}
               expr={t > 62.5 && t < 65 ? "enojado" : "orgullo"} habla={t > 58.8 && t < 64.5} bD={t > 58.8 ? 120 : 10} cD={t > 58.8 ? 10 : 10} mira={0.6} />
             <Laurel x={cb.x} y={cb.y - 70 * cb.s} s={cb.s} />
           </>
@@ -72,7 +71,16 @@ export const W1: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         </svg>
       )}
       {/* obreros que levantan el muro en el frente de obra */}
-      {t > 68.3 && t < 80 && [0, 1, 2, 3, 4].map((i) => <Obrero key={i} t={t} i={i} x={f - 520 + i * 230} carga={i % 2 === 0} />)}
+      {t > 68.3 && t < 80 && [0, 1, 2, 3, 4, 5, 6, 7, 8].map((i) => <Obrero key={i} t={t} i={i} x={f - 1300 + i * 230 + (i % 2 ? Math.sin(t * 2 + i) * 60 : 0)} carga={i % 2 === 0} />)}
+      {/* andamio y grúa de rueda (treadwheel) en el frente de obra */}
+      {t > 68.3 && t < 80 && (
+        <svg style={{ position: "absolute", left: f - 80, top: TOP - 520, overflow: "visible" }} width={1} height={1}>
+          <line x1={0} y1={820} x2={60} y2={0} stroke="#7a4a22" strokeWidth={22} /><line x1={60} y1={0} x2={360} y2={60} stroke="#7a4a22" strokeWidth={18} />
+          <line x1={340} y1={60} x2={340} y2={60 + 300 + Math.sin(t * 3) * 120} stroke="#3a2a1a" strokeWidth={6} />
+          <rect x={290} y={360 + Math.sin(t * 3) * 120} width={100} height={60} rx={6} fill="#d8c8ae" stroke="#8a7a64" strokeWidth={6} />
+          <g transform={`translate(-60 700) rotate(${t * 140})`}><circle r={120} fill="none" stroke="#7a4a22" strokeWidth={16} />{[0, 45, 90, 135].map((a) => <line key={a} x1={-120} y1={0} x2={120} y2={0} stroke="#7a4a22" strokeWidth={10} transform={`rotate(${a})`} />)}</g>
+        </svg>
+      )}
       {t > 68.3 && t < 79 && [0, 1, 2].map((i) => {
         const k = ((t * 1.6 + i / 3) % 1);
         return <div key={"b" + i} style={{ position: "absolute", left: f - 40 + i * 30, top: TOP - 900 + k * (900 + 60), width: 110, height: 60, borderRadius: 8, background: "#d8c8ae", border: "6px solid #8a7a64", transform: `rotate(${(1 - k) * 90}deg)`, opacity: k < 0.95 ? 1 : 0 }} />;
@@ -97,9 +105,16 @@ export const W1: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         const yy = TOP - caida * caida * 1400;
         const cold = t > 171.9;
         return (
-          <Yo x={YOX} y={yy} t={t} frio={cold} aparece={116.5}
-            expr={t < 117.7 ? "sorpresa" : t < 119.2 ? "triste" : t < 123 ? "orgullo" : t < 146 ? "neutro" : t < 150 ? "triste" : t < 169 ? "feliz" : t < 171.9 ? "orgullo" : t < 178 ? "triste" : "miedo"}
-            habla={false} mira={t > 176.4 && t < 178.3 ? -0.8 : t > 178.3 ? 0.6 : 0} bD={t > 150 && t < 156 ? 120 : 12} />
+          <>
+            <Actua t={t} x0={YOX} x1={YOX} y={yy} h={230} frio={cold}
+              beats={[[116.3, "sorpresa"], [117.7, "triste"], [T("not a legionary", D), "niega"], [T("you are an auxiliary", D), "encoge"], [T("a provincial", D), "habla"], [T("not a citizen of rome", D), "triste"],
+                [T("your pay is lower", D), "niega"], [T("contract is the same", D), "encoge"], [T("and your reward", D), "sorpresa"], [T("called a diploma", D), "festeja"],
+                [T("archaeologists have found", D), "lee"], [T("a quarter of a century", D), "duerme"], [T("two little pieces", D), "encoge"], [T("on paper", D), "festeja"], [T("in practice", D), "sorpresa"],
+                [T("dampest corner", D), "tiembla"], [T("not consider you one of them", D), "triste"], [T("consider you the enemy", D), "miedo"]]} />
+            {/* la familia aparece con el diploma */}
+            {t > T("your wife", D) && t < T("archaeologists have found", D) + 0.3 && <Persona x={YOX + 190} y={TOP} h={210} t={t} seed={71} ropa={CIVIL(2)} aparece={T("your wife", D)} expr="feliz" bD={140} cD={30} habla />}
+            {t > T("your children", D) && t < T("archaeologists have found", D) + 0.3 && [0, 1].map((k) => <Persona key={k} x={YOX + 320 + k * 110} y={TOP} h={140} t={t} seed={72 + k} ropa={CIVIL(3 + k)} aparece={T("your children", D) + k * 0.15} expr="feliz" salta={T("your children", D) + 0.3 + k * 0.2} bD={150} bI={150} />)}
+          </>
         );
       })()}
       {/* el oficial romano que te mira de arriba */}
@@ -111,7 +126,7 @@ export const N1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
   const vis = (t > 62.5 && t < 65.2) || (t > 178.2 && t < 183);
   if (!vis) return null;
   const bx = c.x * 0.62;
-  return <>{Array.from({ length: 7 }, (_, i) => <Picto key={i} x={bx - 500 + i * 160} y={330 + (i % 2) * 20} s={0.7} t={t} seed={i + 30} sube={(t > 170 ? 178.4 : 62.6) + i * 0.06} grita />)}</>;
+  return <>{Array.from({ length: 7 }, (_, i) => <Picto key={i} x={bx - 600 + i * 190} y={330 + (i % 2) * 20} s={t > 170 ? 1.05 : 0.7} t={t} seed={i + 30} sube={(t > 170 ? 178.4 : 62.6) + i * 0.06} grita />)}</>;
 };
 
 // corte transversal norte ↔ sur
@@ -143,18 +158,40 @@ const Corte: React.FC<{ t: number }> = ({ t }) => {
 };
 // el muro ancho que se angosta (vista de arriba) y los pantalones encogidos
 const Ancho: React.FC<{ t: number }> = ({ t }) => {
-  const n = T("built narrower", D), p = T("like a pair of trousers", D);
-  const w = 360 - 140 * prog(t, n - 0.1, n + 0.5);
+  const n = T("built narrower", D), p = T("like a pair of trousers", D), t0 = T("the wall was planned", D);
+  const w = 600 - 180 * prog(t, n - 0.1, n + 0.9);
+  const tf = T("thick foundations", D);
   return (
     <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #9b7bf0, #2d1b69 75%)" }}>
       {t < p && (
         <>
-          <div style={{ position: "absolute", left: 160, top: 540 - 360 / 2, width: 1600, height: 360, background: "#b5a48a", border: "8px dashed #fff", opacity: 0.35 }} />
-          <div style={{ position: "absolute", left: 160, top: 540 - w / 2, width: 1600, height: w, background: "repeating-linear-gradient(90deg,#d8c8ae 0 110px,#c9b8a0 110px 116px)", border: "8px solid #8a7a64" }} />
-          <div style={{ position: "absolute", left: 1800, top: 540 - 180, height: 360, borderLeft: "8px solid #fff" }} />
-          <Grande t={t} t0={T("10 roman feet", D)} text="10 ROMAN FEET" y={250} size={96} color={C.ambar} />
-          {t > n && <Grande t={t} t0={n} text="→ 6-8 FEET" y={830} size={96} color={C.rojo} borde="#fff" />}
-          {t > T("thick foundations", D) && <Chip t={t} t0={T("thick foundations", D)} text="THICK FOUNDATIONS STILL THERE" color={C.teal} tinta={C.noche} x={960} y={960} centro size={52} />}
+          <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+            <rect x={0} y={900} width={1920} height={180} fill="#5f8a3a" />
+            {/* cimientos anchos (10 pies) que quedan */}
+            <rect x={660} y={840} width={600} height={60} fill="#a8967a" stroke={t > tf ? C.teal : "#6a5a44"} strokeWidth={t > tf ? 12 : 6} />
+            {/* muro: hiladas que bajan al levantarse */}
+            {Array.from({ length: 8 }, (_, k) => {
+              const ek = prog(t, t0 + 0.2 + k * 0.12, t0 + 0.5 + k * 0.12);
+              return <rect key={k} x={960 - w / 2} y={785 - k * 55 - (1 - ek) * 300} width={w} height={55} fill={k % 2 ? "#d8c8ae" : "#cdbb9e"} stroke="#8a7a64" strokeWidth={5} opacity={ek} />;
+            })}
+            {/* cota */}
+            <line x1={960 - w / 2} y1={965} x2={960 + w / 2} y2={965} stroke="#fff" strokeWidth={8} />
+            <line x1={960 - w / 2} y1={940} x2={960 - w / 2} y2={990} stroke="#fff" strokeWidth={8} />
+            <line x1={960 + w / 2} y1={940} x2={960 + w / 2} y2={990} stroke="#fff" strokeWidth={8} />
+            {/* piedras que vuelan cuando lo angostan */}
+            {t > n - 0.1 && t < n + 1.6 && Array.from({ length: 8 }, (_, i) => {
+              const k = prog(t, n - 0.1 + i * 0.1, n + 0.7 + i * 0.1);
+              const sx = i % 2 ? 1 : -1;
+              return <rect key={i} x={960 + sx * (300 - 40) + sx * k * (260 + i * 30)} y={420 + i * 45 - Math.sin(k * Math.PI) * 220 + k * 300} width={60} height={34} rx={4} fill="#cdbb9e" stroke="#8a7a64" strokeWidth={4} transform={`rotate(${k * 400 * sx} ${960 + sx * 300} 430)`} opacity={1 - prog(t, n + 1.2, n + 1.6)} />;
+            })}
+          </svg>
+          {/* obrero arriba del muro que pica piedra */}
+          <Actua t={t} x0={960 - w / 2 + 80} x1={960 - w / 2 + 80} y={345} h={170} quien={1} beats={[[t0, "habla"], [n - 0.4, "cava"], [n + 1.5, "festeja"]]} />
+          {/* soldado al lado: la escala humana */}
+          <Actua t={t} x0={1900} x1={1480} y={900} h={330} quien={3} beats={[[t0 + 0.2, "camina"], [t0 + 1.2, "señala"], [n, "sorpresa"], [n + 1.0, "niega"], [tf, "señala"]]} />
+          {t < n && <Grande t={t} t0={T("10 roman feet", D)} text="10 ROMAN FEET" y={110} size={96} color={C.ambar} />}
+          {t > n && <Grande t={t} t0={n} text="→ 6-8 FEET" y={110} size={96} color={C.rojo} borde="#fff" />}
+          {t > tf && <Chip t={t} t0={tf} text="← FOUNDATIONS: STILL 10 FT" color={C.teal} tinta={C.noche} x={1560} y={1030} centro size={46} />}
         </>
       )}
       {t >= p && (() => {
@@ -170,6 +207,7 @@ const Ancho: React.FC<{ t: number }> = ({ t }) => {
               </g>
             </svg>
             <Chip t={t} t0={p} text="SHRANK IN THE WASH" color={C.rosa} x={960} y={170} centro size={70} />
+            <Actua t={t} x0={1950} x1={1460} y={980} h={420} quien={0} casco={false} beats={[[p, "camina"], [p + 0.8, "sorpresa"], [p + 1.6, "triste"]]} />
           </>
         );
       })()}
@@ -180,7 +218,7 @@ const Ancho: React.FC<{ t: number }> = ({ t }) => {
 const ORIG: { w: string; a: string; txt: string; dx?: number }[] = [
   { w: "belgians", a: "GAUL", txt: "BELGIANS" }, { w: "dutch", a: "GERMANY", txt: "DUTCH", dx: -80 }, { w: "spaniards", a: "SPAIN", txt: "SPANIARDS" },
   { w: "germans", a: "GERMANY", txt: "GERMANS", dx: 90 }, { w: "romanians from dacia", a: "DANUBE", txt: "DACIANS" }, { w: "archers from syria", a: "SYRIA", txt: "SYRIAN ARCHERS" },
-  { w: "moors from north africa", a: "AFRICA", txt: "MOORS" }, { w: "a unit of boatmen", a: "SYRIA", txt: "TIGRIS BOATMEN", dx: 160 },
+  { w: "moors from north africa", a: "AFRICA", txt: "MOORS" }, { w: "a unit of boatmen", a: "SYRIA", txt: "TIGRIS BOATMEN", dx: 0 },
 ];
 const Origenes: React.FC<{ t: number }> = ({ t }) => {
   const b = lugar("BRITAIN");
@@ -199,7 +237,17 @@ const Origenes: React.FC<{ t: number }> = ({ t }) => {
         })}
         <circle cx={b.x} cy={b.y} r={18 + Math.sin(t * 6) * 4} fill={C.ambar} stroke="#fff" strokeWidth={5} />
       </svg>
-      {z < 1.15 && ORIG.map((o, i) => { const l = lugar(o.a); const t0 = T(o.w, D); return t > t0 ? <Chip key={i} t={t} t0={t0} text={o.txt} color={i === 7 ? C.teal : C.violeta} tinta={i === 7 ? C.noche : "#fff"} x={l.x + (o.dx ?? 0)} y={l.y + 50 + (i % 2) * 44} centro size={36} /> : null; })}
+      {/* un soldadito marcha por cada ruta hasta Britania */}
+      {ORIG.map((o, i) => {
+        const t0 = T(o.w, D);
+        if (t < t0 + 0.2) return null;
+        const l = lugar(o.a), x0 = l.x + (o.dx ?? 0) * 0.3, y0 = l.y + (o.dx ?? 0) * 0.2;
+        const mx = (x0 + b.x) / 2, my = Math.min(y0, b.y) - 120;
+        const u = prog(t, t0 + 0.2, t0 + 3.2), q = 1 - u;
+        const px = q * q * x0 + 2 * q * u * mx + u * u * b.x, py = q * q * y0 + 2 * q * u * my + u * u * b.y;
+        return u < 1 ? <Soldadito key={i} x={px} y={py + 10} s={0.32} t={t} seed={i + 5} avanza={1} color={i === 7 ? C.teal : undefined} /> : null;
+      })}
+      {z < 1.15 && ORIG.map((o, i) => { const l = lugar(o.a); const t0 = T(o.w, D); return t > t0 ? <Chip key={i} t={t} t0={t0} text={o.txt} color={i === 7 ? C.teal : C.violeta} tinta={i === 7 ? C.noche : "#fff"} x={Math.max(200, Math.min(1720, l.x + (o.dx ?? 0)))} y={l.y + 50 + (i === 7 ? 96 : (i % 2) * 44)} centro size={36} /> : null; })}
       {t > T("stationed at the mouth", D) + 0.8 && <Chip t={t} t0={T("stationed at the mouth", D) + 0.8} text="ARBEIA · SOUTH SHIELDS" color={C.rojo} x={b.x + 60} y={b.y + 60} centro size={22} />}
     </AbsoluteFill>
   );
@@ -220,6 +268,24 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("his biographer", D) && t < T("he was the first", D) + 0.2 && <Pergamino x={1440} y={520} w={480} abre={prog(t, T("his biographer", D), T("his biographer", D) + 0.6) * 0.7} titulo="HIS BIOGRAPHY" lineas={5} />}
       <Ch t={t} w="he was the first" d={D} txt="“THE FIRST TO BUILD A WALL”" y={140} c={C.crema} tinta="#7a3d14" size={60} dur={2.5} />
       <Cu t={t} w="80 miles long" d={D} de={0} a={80} sube={0.8} dur={3.3} y={300} size={170} suf=" MILES" color={C.ambar} />
+      {/* Adriano en primer plano señala la línea (de punta a punta) */}
+      <Sale t={t} t0={T("80 miles long", D) - 0.4} t1={T("the legions build it", D) - 0.1}>
+        <Actua t={t} x0={2150} x1={1640} y={1075} h={560} ropa={{ ...CIVIL(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" }} casco={false} quien={48}
+          beats={[[T("80 miles long", D) - 0.4, "camina"], [T("80 miles long", D) + 0.4, "señala"], [T("separate the romans", D), "habla"], [T("from the barbarians", D), "enojado"], [T("80 roman miles", D), "señala"], [T("73 of ours", D), "habla"]]} />
+      </Sale>
+      {/* contador de obra: millas levantadas */}
+      {t > 68.6 && t < 79.5 && (
+        <div style={{ position: "absolute", right: 60, bottom: 60, padding: "14px 28px", borderRadius: 22, background: "#2a1530", border: "6px solid #fff", fontFamily, fontWeight: 700, color: "#fff", fontSize: 44, transform: `scale(${ent(t, 68.6)})` }}>
+          🧱 MILES BUILT: <span style={{ color: C.ambar }}>{Math.round(80 * prog(t, 68.6, 79))}</span> / 80
+        </div>
+      )}
+      {/* capataz en primer plano que cuenta torres con los dedos */}
+      <Sale t={t} t0={T("two watchtowers", D) - 0.2} t1={T("and eventually", D) - 0.2}>
+        <Actua t={t} x0={-200} x1={300} y={1075} h={520} quien={2} beats={[[T("two watchtowers", D) - 0.2, "camina"], [T("two watchtowers", D) + 0.5, "señala"], [T("between each pair", D), "habla"]]} />
+      </Sale>
+      <Sale t={t} t0={T("more than a dozen", D) - 0.2} t1={T("the wall was planned", D) - 0.2}>
+        <Actua t={t} x0={2100} x1={1600} y={1075} h={520} quien={4} beats={[[T("more than a dozen", D) - 0.2, "camina"], [T("more than a dozen", D) + 0.5, "sorpresa"], [T("changed their minds", D), "encoge"]]} />
+      </Sale>
       <Ch t={t} w="separate the romans" d={D} txt="ROMANS" x={560} y={930} c={C.rojo} size={70} dur={2.2} />
       <Ch t={t} w="from the barbarians" d={D} txt="BARBARIANS" x={1360} y={170} c="#2a2350" size={70} dur={1.8} />
       <Ch t={t} w="80 roman miles" d={D} txt="80 ROMAN MILES" y={160} c={C.violeta} size={70} dur={3.2} />
@@ -240,6 +306,25 @@ export const S1: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Ch t={t} w="go home to their big" d={D} txt="→ YORK · CHESTER · CAERLEON" y={160} c={C.rojo} size={56} dur={3.0} />
       <Ch t={t} w="needs somebody" d={D} txt="SOMEBODY HAS TO STAND ON IT" y={160} c={C.violeta} size={58} dur={2.2} />
       <Gr t={t} w="that somebody is you" d={D} txt="YOU." y={190} size={200} c={C.ambar} dur={1.1} dt={0.3} />
+      {/* legajo con sello AUXILIARY */}
+      {t > T("not a legionary", D) && t < T("rome recruited men", D) && (
+        <div style={{ position: "absolute", left: 1400, top: 420, width: 440, height: 500, background: "#f6e3b4", border: "8px solid #8a5a2a", borderRadius: 14, transform: `scale(${ent(t, T("not a legionary", D))}) rotate(3deg)`, fontFamily, fontWeight: 700, color: "#5a3418", padding: 30, boxSizing: "border-box" }}>
+          <div style={{ fontSize: 40 }}>SERVICE RECORD</div>
+          <div style={{ fontSize: 30, marginTop: 20, opacity: 0.8 }}>NAME: YOU<br />AGE: 19<br />FROM: BELGIUM</div>
+          <div style={{ position: "absolute", left: 40, top: 300, fontSize: 60, color: C.rojo, border: `8px solid ${C.rojo}`, borderRadius: 12, padding: "4px 18px", transform: `rotate(-12deg) scale(${t > T("you are an auxiliary", D) ? 1 + 2 * (1 - prog(t, T("you are an auxiliary", D), T("you are an auxiliary", D) + 0.18)) : 0})`, opacity: t > T("you are an auxiliary", D) ? 1 : 0 }}>AUXILIARY</div>
+        </div>
+      )}
+      {/* "una carrera" en papel que se rompe con el viento */}
+      {t > T("on paper", D) && t < T("dampest corner", D) + 0.6 && (() => {
+        const r = prog(t, T("in practice", D), T("in practice", D) + 1.2);
+        return [0, 1].map((k) => (
+          <div key={k} style={{ position: "absolute", left: 1300 + k * 230, top: 330, width: 230, height: 420, overflow: "hidden", transform: `translate(${r * (k ? 700 : -200)}px, ${r * (k ? -300 : 500)}px) rotate(${r * (k ? 70 : -50)}deg) scale(${ent(t, T("on paper", D))})`, opacity: 1 - prog(t, T("dampest corner", D), T("dampest corner", D) + 0.6) }}>
+            <div style={{ position: "absolute", left: -k * 230, width: 460, height: 420, background: "#f6e3b4", border: "8px solid #8a5a2a", boxSizing: "border-box", fontFamily, fontWeight: 700, color: "#5a3418", padding: 28 }}>
+              <div style={{ fontSize: 40 }}>CAREER PLAN</div><div style={{ fontSize: 30, marginTop: 18, lineHeight: 1.5 }}>✓ 25 YEARS<br />✓ STEADY PAY<br />✓ CITIZENSHIP<br />✓ FAMILY</div>
+            </div>
+          </div>
+        ));
+      })()}
       <Ch t={t} w="not a legionary" d={D} txt="LEGIONARY ✗" x={560} y={220} c={C.rojo} size={64} dur={1.4} />
       <Ch t={t} w="you are an auxiliary" d={D} txt="AUXILIARY ✓" x={1360} y={220} c={C.teal} tinta={C.noche} size={64} dur={2.1} dt={0.4} />
       <Ch t={t} w="a provincial" d={D} txt="PROVINCIAL" x={1360} y={330} c={C.violeta} size={50} dur={1.4} />

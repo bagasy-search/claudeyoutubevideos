@@ -116,7 +116,7 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Plano t={t} t0={1.32} t1={3.95} desde={[ojo[0], ojo[1]]}>
         {memoria(t)}
         <Chip t={t} t0={2.18} text="A RIVER" color={C.teal} tinta={C.noche} x={960} y={760} centro size={56} />
-        <Chip t={t} t0={3.1} text="BELGIUM" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={96} />
+        <Chip t={t} t0={3.1} text="BELGIUM" color={C.ambar} tinta={C.noche} x={960} y={230} centro size={96} />
       </Plano>
       <Gr t={t} w="end of the world" d={4} txt="THE END OF THE WORLD" y={170} size={120} c={C.crema} dur={1.2} />
       <Sale t={t} t0={7.0} t1={8.1}><Chip t={t} t0={7.0} text="IT'S A WALL." color={C.violeta} x={960} y={150} centro size={80} /></Sale>
@@ -148,10 +148,17 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Gr t={t} w="rain" d={17} txt="RAIN." y={180} size={170} c="#bfe6ff" dur={1.0} />
       {/* el trato */}
       {t > 18.72 && t < 20.4 && <Pergamino x={1450} y={520} w={520} abre={prog(t, 18.72, 19.3) * 0.75} titulo="THE DEAL" lineas={6} firma={prog(t, 19.5, 20.2)} />}
+      {t > 18.9 && t < 20.4 && ["25 YEARS ✓", "LOW PAY ✓", "CITIZENSHIP ✓"].map((k, i) => <Chip key={k} t={t} t0={19.0 + i * 0.35} text={k} color={i === 2 ? C.oro : "#fff"} tinta={C.noche} x={1450} y={430 + i * 90} centro size={46} />)}
       <Cu t={t} w="25 years" d={19} de={0} a={25} sube={0.8} dur={2.6} x={1380} y={330} size={210} suf=" YEARS" color={C.ambar} />
       <Cu t={t} w="years on this wall" d={19} de={1} a={9131} sube={1.7} dur={2.0} x={1380} y={520} size={80} pre="DAY " color="#fff" dt={0.2} />
       {t > 20.4 && t < 22.4 && <AbsoluteFill style={{ background: "#0b0826", opacity: 0.35 * (0.5 + 0.5 * Math.sin(t * 40)) }} />}
       <Sale t={t} t0={23.08} t1={24.5}><Craneo x={1460} y={460} t={t} t0={23.08} s={1.5} rot={Math.sin(t * 10) * 6} /></Sale>
+      {t > 23.1 && t < 24.5 && (
+        <div style={{ position: "absolute", left: 1160, top: 640, width: 600, height: 54, borderRadius: 27, background: "#2a1530", border: "6px solid #fff", overflow: "hidden" }}>
+          <div style={{ width: `${100 - 78 * prog(t, 23.2, 24.2)}%`, height: "100%", background: `linear-gradient(90deg, ${C.rojo}, #ff8a5a)` }} />
+          <div style={{ position: "absolute", inset: 0, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 32, lineHeight: "42px", color: "#fff" }}>SURVIVAL ODDS</div>
+        </div>
+      )}
       <Sale t={t} t0={23.46} t1={24.5}><Chip t={t} t0={23.46} text="IF YOU'RE STILL ALIVE" color={C.rojo} x={960} y={950} centro size={70} /></Sale>
       {/* la ciudadanía */}
       {t > 24.64 && t < 27.1 && <Rayos t={t} x={1400} y={430} color="#ffe27a" op={0.2} />}
