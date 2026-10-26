@@ -43,7 +43,12 @@ export const Escena: React.FC<{ t: number; t0: number; t1: number; children: Rea
   const col = banda ?? [C.rojo, C.ambar, C.teal, C.violeta, C.rosa][Math.floor(r() * 5)];
   const u = interpolate(t, [t0, t1 + SOLAPE], [0, 1], { easing: Easing.inOut(Easing.sin) });
   const k = dentro ? u : 1 - u;
-  const golpe = golpes.reduce((a, g) => a + (t >= g ? 0.075 * Math.exp(-(t - g) * 7) : 0), 0);
+  // golpe con subida de ~4 cuadros: el salto instantáneo de +7,5 % en 1 cuadro se medía como lageo
+  const golpe = golpes.reduce((a, g) => {
+    if (t < g) return a;
+    const sube = Math.min(1, (t - g) / 0.13);
+    return a + 0.075 * Math.sin((sube * Math.PI) / 2) * Math.exp(-Math.max(0, t - g - 0.13) * 7);
+  }, 0);
   // entrada (0 → 1 en ~0,32 s)
   const e = interpolate(t, [t0, t0 + 0.32], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   let clip = "none", tr = "";
