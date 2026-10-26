@@ -169,7 +169,7 @@ export const M0: React.FC<{ t: number }> = ({ t }) => {
           <g transform={`translate(2230 ${FONDO - 6}) rotate(10) scale(0.8)`}><Canon x={0} y={0} t={t} flip /></g>
           {[[1700, 5], [1760, 10], [1820, 3], [2050, 8], [2100, 2]].map(([x, d], i) => <g key={i} transform={`translate(${x} ${FONDO - d}) scale(0.35)`}><Moneda8 r={40} oro t={t} /></g>)}
           <g transform={`translate(1950 ${FONDO - 40}) scale(0.42)`}><Zapato brillo={t > 31.5 ? 1 : 0} t={t} /></g>
-          {en(t, 28.5, 39.5) && <g transform={`translate(${interpolate(t, [28.5, 33], [1150, 1780], { extrapolateRight: "clamp" })} ${FONDO - 150 + Math.sin(t) * 12}) scale(0.42)`}><Buzo t={t} luz={prog(t, 29.5, 30.5)} /></g>}
+          {en(t, 28.5, 39.5) && <g transform={`translate(${interpolate(t, [28.5, 33], [1150, 1780], { extrapolateRight: "clamp" })} ${interpolate(t, [28.5, 32.5], [FONDO - 150, FONDO - 70], { extrapolateRight: "clamp" }) + Math.sin(t) * 8}) scale(0.42)`}><Buzo t={t} luz={prog(t, 29.5, 30.5)} /></g>}
           <S t={26.3} p="splash" g={-4} />
           <S t={26.6} p="bubble" g={-6} />
           <S t={28.6} p="bubble" g={-10} />

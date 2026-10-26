@@ -242,7 +242,8 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       {/* el chico vuelve: los sellos y el CTA */}
       {en(t, 895.2, 903.6) && <Persona x={1500} y={1100} h={440} t={t} seed={7} ropa={GRUMETE} flip expr={t > 900.9 ? "feliz" : "triste"} bD={t > 900.9 ? 160 : 20} cD={30} aparece={895.2} />}
       {en(t, 908.0, 912.3) && <Persona x={1720} y={1100} h={420} t={t} seed={7} ropa={GRUMETE} flip expr="feliz" bD={en(t, 911.3, 911.9) ? 170 : 130 + Math.sin(t * 9) * 30} cD={20} aparece={908.0} />}
-      <Txt t={t} t0={807.9} t1={810.8} text="SO... A DEATH TRAP?" y={170} size={110} />
+      <Txt t={t} t0={807.9} t1={810.8} text="SO... A DEATH TRAP?" y={960} size={110} />
+      {en(t, 807.9, 810.8) && <Persona x={1620} y={1100} h={420} t={t} seed={7} ropa={GRUMETE} expr="triste" bD={60 + Math.abs(Math.sin(t * 2)) * 50} cD={90} aparece={807.9} />}
       <Txt t={t} t0={810.9} t1={811.9} text="HERE'S THE TWIST" y={170} size={140} color={C.oro} />
       <S t={810.9} p="whoosh_big" g={-4} />
       <Txt t={t} t0={812.2} t1={813.2} text="REMEMBER: BEGGING" y={170} size={110} color={C.ambar} />
@@ -354,6 +355,7 @@ export const O8: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={916.7} t1={917.3} text="THE EXECUTIONER" y={170} size={150} color={C.rojo} />
       <S t={917.8} p="whoosh_big" g={-6} />
       <Txt t={t} t0={917.9} t1={923} text="WHICH TRAP GETS YOU FIRST?" y={150} size={96} color={C.oro} />
+      {en(t, 918.0, 923) && <Persona x={1650} y={1100} h={420} t={t} seed={7} ropa={GRUMETE} flip expr="feliz" habla bD={130 + Math.sin(t * 4) * 15} cD={10} aparece={918.0} />}
       <Lista t={t} x={560} y={230} size={50} w={800} titulo="TELL ME IN THE COMMENTS"
         items={["THE CAPTURE", "THE CHORES", "THE ARTICLES", "THE PUNISHMENTS", "THE FOOD", "THE FEVER", "THE BATTLE"].map((txt, i) => ({ txt: `${i + 1}. ${txt}`, t0: 918.3 + i * 0.25 }))} />
       {Array.from({ length: 7 }, (_, i) => <S key={i} t={918.3 + i * 0.25} p="write" g={-14} pitch={1 + i * 0.04} />)}

@@ -216,6 +216,7 @@ export const O7: React.FC<{ t: number }> = ({ t }) => {
       <S t={668.7} p="wood_hit" g={-4} />
       <Txt t={t} t0={674.4} t1={677.7} text="REALITY: AVOID THE FIGHT" y={170} size={100} color={C.lima} />
       <Txt t={t} t0={677.9} t1={680.4} text="THE BLACK FLAG = A MESSAGE" y={800} size={90} />
+      {en(t, 677.9, 680.4) && <Persona x={1770} y={1100} h={460} t={t} seed={243} ropa={PIRATA(3)} expr="enojado" habla bD={150 + Math.sin(t * 6) * 15} cD={20} aparece={677.9} />}
       <Txt t={t} t0={691.9} t1={694.7} text="NO POLITE CANNON DUELS" y={170} size={100} color={C.lila} />
       <Txt t={t} t0={697.1} t1={699.1} text="COME IN CLOSE" y={170} size={120} color={C.oro} />
       <Txt t={t} t0={703.6} t1={705.5} text="MUSKETS!" y={170} size={140} color={C.rojo} />
