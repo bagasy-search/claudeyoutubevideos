@@ -347,17 +347,18 @@ export const INS_A: Ins[] = [
   // ── «about half of the crew were greenhands… The experienced sailors knew better»
   {
     a: 141.4, b: 148.3,
-    fondo: () => <Grad c1="#2d4a8a" c2="#1b2a5a" />,
+    fondo: () => <Grad c1="#2d4a8a" c2="#1b2a5a" ang={180} />,
     d: (t) => (
       <>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 900, bottom: 0, background: "#7a4a26" }} />
-        {Array.from({ length: 8 }, (_, k) => {
-          const verde = k % 2 === 1, x = 170 + k * 225;
+        {/* vuelta 10 OJO: fila en dos profundidades, cada uno con su gesto (no una hilera quieta con halos) */}
+        {[1, 3, 5, 7, 0, 2, 4, 6].map((k) => {
+          const verde = k % 2 === 1, x = 170 + k * 225, fondo = k % 2 === 0;
+          const yy = fondo ? 900 : 1000, hh = fondo ? 470 : 560;
           return (
             <React.Fragment key={k}>
-              {verde && t >= 142.6 && <div style={{ position: "absolute", left: x - 110, top: 380, width: 220, height: 560, borderRadius: 110, background: "rgba(155,225,93,.35)", transform: `scale(${ent(t, 142.6 + k * 0.05)})` }} />}
-              {verde ? <Persona x={x} y={920} h={520} t={t} seed={7 + k} ropa={GREEN} rayas="#eaf2ff" pantalon="#2a3a5a" casco="gorro" expr={t > 146 ? "miedo" : "sorpresa"} />
-                : <Marino i={k} x={x} y={920} h={540} t={t} expr={t > 145.6 ? "orgullo" : "neutro"} mira={t > 145.6 ? -1 : 0} flip={t > 146.6} camina={t > 146.9 ? 1.2 : 0} />}
+              {verde && t >= 142.6 && <div style={{ position: "absolute", left: x - 120, top: yy - 20, width: 240, height: 44, borderRadius: "50%", background: "rgba(155,225,93,.55)", transform: `scale(${ent(t, 142.6 + k * 0.05)})` }} />}
+              {verde ? <Persona {...conVida({ t: t + k * 0.7, expr: t > 146 ? "miedo" : "sorpresa" }, 30 + k)} x={x} y={yy} h={hh} seed={7 + k} ropa={GREEN} rayas="#eaf2ff" pantalon="#2a3a5a" casco="gorro" />
+                : <Marino i={k} x={x} y={yy} h={hh} t={t} expr={t > 145.6 ? "orgullo" : "neutro"} mira={t > 145.6 ? -1 : 0} flip={t > 146.6} camina={t > 146.9 ? 1.2 : 0} />}
             </React.Fragment>
           );
         })}
@@ -519,9 +520,9 @@ export const INS_A: Ins[] = [
       <>
         <Iglesia x={960} y={900} s={1.6} />
         <div style={{ position: "absolute", left: 0, right: 0, top: 900, bottom: 0, background: "#6a6a7a" }} />
-        <Persona x={520} y={1180} h={900} t={t} seed={21} ropa={CUAQUERO} casco="cuaquero" pantalon="#2a282e" expr={t < 248 ? "dormido" : t < 252.4 ? "neutro" : "orgullo"} habla={t > 248 && t < 252.4} inclina={t >= 249.6 && t < 252.3 ? Math.sin(t * 7) * 6 : 0} bD={t < 248 ? 45 : t < 252.4 ? 70 + Math.sin(t * 4) * 25 : 150} cD={t < 248 ? 115 : t < 252.4 ? 60 : 10} bI={45} cI={115} mira={t > 252.4 ? 0.6 : 0}
+        <Persona x={520} y={1180} h={760} t={t} seed={21} ropa={CUAQUERO} casco="cuaquero" pantalon="#2a282e" expr={t < 248 ? "dormido" : t < 252.4 ? "neutro" : "orgullo"} habla={t > 248 && t < 252.4} inclina={t >= 249.6 && t < 252.3 ? Math.sin(t * 7) * 6 : 0} bD={t < 248 ? 45 : t < 252.4 ? 70 + Math.sin(t * 4) * 25 : 150} cD={t < 248 ? 115 : t < 252.4 ? 60 : 10} bI={45} cI={115} mira={t > 252.4 ? 0.6 : 0}
           manoD={t > 253.8 ? <g transform="rotate(180) scale(.7)"><Arpon x={0} y={0} /></g> : undefined} />
-        <Persona x={1400} y={1180} h={860} t={t} seed={22} ropa={{ ...CUAQUERO, tunica: "#7a7480", tunica2: "#55505a", pelo: "#8a6a4a" }} casco="cuaquero" pantalon="#2a282e" expr={t < 248 ? "dormido" : t < 252.6 ? "neutro" : "feliz"} inclina={t >= 251.5 && t < 252.6 ? Math.sin(t * 8) * 7 : 0} bD={t >= 249.6 && t < 252.6 ? 120 : 45} cD={t >= 249.6 && t < 252.6 ? 20 : 115} bI={45} cI={115} salta={252.7} flip />
+        <Persona x={1400} y={1180} h={730} t={t} seed={22} ropa={{ ...CUAQUERO, tunica: "#7a7480", tunica2: "#55505a", pelo: "#8a6a4a" }} casco="cuaquero" pantalon="#2a282e" expr={t < 252.6 ? "neutro" : "feliz"} inclina={t >= 251.5 && t < 252.6 ? Math.sin(t * 8) * 7 : 0} bD={t >= 249.6 && t < 252.6 ? 120 : 70 + Math.abs(Math.sin(t * 3.2)) * 40} cD={t >= 249.6 && t < 252.6 ? 20 : 70} manoD={t < 249.6 ? <g transform="translate(0 -30) scale(.6)"><Moneda0 r={60} /></g> : undefined} bI={45} cI={115} salta={252.7} flip />
         <Chip t={t} t0={243.8} t1={247.0} text="NANTUCKET QUAKERS" color={C.violeta} x={960} y={110} centro size={66} />
         <Chip t={t} t0={248.0} text="PLAIN GREY" color="#6a6670" x={960} y={250} centro size={54} />
         <Chip t={t} t0={249.6} text="NO WARS" color="#6a6670" x={960} y={350} centro size={54} />

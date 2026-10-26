@@ -1,6 +1,6 @@
 import React from "react";
 import { Gaviota, Ballenero, Isla } from "./kit3";
-import { SetPuerto, SetCamarote, SetCubierta, SetMar, SetCampo, SetTropico } from "./sets";
+import { SetPuerto, SetCamarote, SetCubierta, SetMar, SetCampo, SetTropico, Carga, Red, PrimerPlano, type Hora } from "./sets";
 import { Multitud, type Puesta } from "./multitud";
 import { Persona, CIVIL, MARINO } from "./persona";
 
@@ -21,7 +21,8 @@ const LUGAR: [number, number, Esc][] = [
   [240, 262, "puerto"], // Nantucket cuáquera
   [610, 637, "tropico"], // Marquesas / Melville
   [640, 655, "puerto"], // de vuelta en Nantucket
-  [838, 846, "interior"], // Pollard viejo
+  [579, 600, "cubierta"], // el capitán, delante de su tripulación
+  [837.6, 846, "interior"], // Pollard viejo
   [858, 872, "campo"], // petróleo en Pennsylvania
 ];
 const verde = (c: string) => { const [r, g, b] = [1, 3, 5].map((i) => parseInt(c.slice(i, i + 2), 16)); return g > r + 10 && g > b; };
@@ -33,13 +34,25 @@ export const Ambiente: React.FC<{ t: number; c1: string; c2: string; cx?: number
   const dx = Math.sin(t * 0.21) * 40; // deriva lenta de cámara (capa cercana se mueve más)
   // vuelta 8 OJO: los ambientes pasan a los SETS ILUSTRADOS CON LUZ (sets.tsx), al nivel del molde
   let capa: React.ReactNode;
-  if (e === "puerto") capa = <SetPuerto t={t} dx={dx} hora="tarde" barco={<Ballenero x={1320} y={650} t={t} escala={0.2} />}>
+  // vuelta 10 OJO: el puerto y la cubierta ya no son un único fondo repetido: la hora y la utilería cambian por tramo
+  const hP: Hora = t < 45 ? "dia" : t < 95 ? "tarde" : t < 240 ? "atardecer" : "dia";
+  const hC: Hora = t < 380 ? "dia" : t < 470 ? "tarde" : "atardecer";
+  if (e === "puerto") capa = <>
+    <SetPuerto t={t} dx={dx} hora={hP} barco={<Ballenero x={t % 90 < 45 ? 1320 : 560} y={650} t={t} escala={0.2} />}>
+      {Math.floor(t / 30) % 2 === 0 && <Red x={1380} y={560} t={t} />}
+      <Carga y={905} hora={hP} seed={Math.floor(t / 20)} xs={Math.floor(t / 20) % 2 ? [160, 1560, 1780] : [220, 470, 1700]} />
       <Multitud t={t} n={9} y={915} h={230} filas={2} seed={3} caminan={0.45} pinta={gentio(true)} />
-    </SetPuerto>;
-  else if (e === "interior") capa = <SetCamarote t={t} dx={dx} hora="noche" ventana={<div style={{ position: "absolute", left: 0, top: 0 }}><Ballenero x={((t * 22) % 700) - 200} y={215} t={t} escala={0.12} /></div>} />;
-  else if (e === "cubierta") capa = <SetCubierta t={t} dx={dx} hora="tarde" lejos={<Ballenero x={1450} y={630} t={t + 3} escala={0.15} />}>
+    </SetPuerto>
+    <PrimerPlano t={t} dx={dx} hora={hP} tipo="muelle" />
+  </>;
+  else if (e === "interior") capa = <SetCamarote t={t} dx={dx} hora={t < 200 || t > 830 ? "tarde" : "noche"} xLamp={t < 200 ? 560 : 980} ventana={<div style={{ position: "absolute", left: 0, top: 0 }}><Ballenero x={((t * 22) % 700) - 200} y={215} t={t} escala={0.12} /></div>} />;
+  else if (e === "cubierta") capa = <>
+    <SetCubierta t={t} dx={dx} hora={hC} lejos={<Ballenero x={Math.floor(t / 40) % 2 ? 420 : 1450} y={630} t={t + 3} escala={0.15} />}>
+      <Carga y={935} hora={hC} seed={Math.floor(t / 25)} s={0.9} xs={Math.floor(t / 25) % 2 ? [200, 1720] : [1500, 1760]} />
       <Multitud t={t} n={7} y={930} h={240} filas={2} seed={8} caminan={0.3} repertorio={["tira", "jarras", "senala", "rasca", "explica"]} pinta={gentio(false)} />
-    </SetCubierta>;
+    </SetCubierta>
+    <PrimerPlano t={t} dx={dx} hora={hC} tipo="cubierta" />
+  </>;
   else if (e === "mar")
     capa = (
       <SetMar t={t} dx={dx} hora="dia" lejos={<>

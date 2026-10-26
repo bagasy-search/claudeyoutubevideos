@@ -125,8 +125,8 @@ export const INS_D: Ins[] = [
       return (
         <>
           <div style={{ position: "absolute", left: -40, top: 860, width: 1300, height: 260, background: "#7a4a26", borderTop: "14px solid #9a6a3a" }} />
-          <Chico x={interpolate(t, [237.6, 239.0], [200, 640], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={1290} h={1000} t={t} expr={v < 0 ? "triste" : "neutro"} camina={t >= 237.6 && t < 239 ? 2 : 0} bD={10} bI={10} />
-          <div style={{ position: "absolute", left: 1380, top: 470, transform: `translate(-50%,-50%) rotate(4deg) scale(${ent(t, 230.9)})`, width: 520, padding: 30, background: "#f6ecd2", border: "8px solid #5a3418", fontFamily, fontWeight: 700, color: "#2a1530", textAlign: "center" }}>
+          <Chico x={interpolate(t, [237.6, 239.0], [400, 640], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={1290} h={1000} t={t} expr={v < 0 ? "triste" : "neutro"} camina={t >= 237.6 && t < 239 ? 2 : 0} bD={10} bI={10} />
+          <div style={{ position: "absolute", left: 1380, top: 470, transform: `translate(-50%,-50%) rotate(4deg) scale(${ent(t, 230.55)})`, width: 520, padding: 30, background: "#f6ecd2", border: "8px solid #5a3418", fontFamily, fontWeight: 700, color: "#2a1530", textAlign: "center" }}>
             <div style={{ fontSize: 36 }}>CREW ACCOUNT · PAID OFF</div>
             <div style={{ fontSize: 120, color: v < 0 ? C.rojo : "#2a7a3a" }}>{v < 0 ? "-" : ""}${Math.abs(v).toFixed(2)}</div>
             <div style={{ fontSize: 30 }}>AFTER 4 YEARS AT SEA</div>
@@ -157,7 +157,10 @@ export const INS_D: Ins[] = [
       const domingo = t > 314.3;
       return (
         <>
-          <Chico x={560} y={1290} h={1080} t={t} expr={domingo ? "feliz" : "miedo"} bD={100} cD={80} salta={316.9} manoD={<g transform="translate(20 -20)"><ellipse rx={110} ry={30} fill="#f4f0e8" stroke={C.noche} strokeWidth={6} /></g>} />
+          <Chico x={560} y={1290} h={1080} t={t} expr={domingo ? "feliz" : "miedo"} bD={78} cD={40} salta={316.9} manoD={<g transform="translate(20 -20)">{/* vuelta 10 OJO: plato de lata con la comida, no un óvalo blanco */}
+            <ellipse cy={8} rx={122} ry={36} fill="#5a6070" stroke={C.noche} strokeWidth={6} /><ellipse rx={100} ry={26} fill="#9aa2b0" /><ellipse cx={-30} cy={-6} rx={46} ry={10} fill="#d8dee8" opacity={0.7} />
+            {domingo ? <path d="M -50 -4 Q -48 -58 0 -62 Q 48 -58 50 -4 Z" fill="#8a5a2a" stroke="#4a2a10" strokeWidth={5} /> : <path d="M -56 -2 Q -60 -34 -16 -40 Q 40 -46 58 -16 Q 60 6 20 8 Q -30 10 -56 -2 Z" fill="#a8443a" stroke="#5a2018" strokeWidth={5} />}
+            {domingo && <path d="M -40 -40 Q 0 -30 40 -44" stroke="#3a1a08" strokeWidth={9} fill="none" />}</g>} />
           {!domingo && (
             <>
               <Svg x={1300} y={520} s={1.4 * ent(t, 309.0)}><path d="M -140 40 Q -160 -60 -40 -80 Q 100 -100 150 -20 Q 160 60 40 70 Q -80 80 -140 40 Z" fill="#a8443a" stroke="#5a2018" strokeWidth={8} /><path d="M -100 0 Q 0 -30 110 -10" stroke="#e8a090" strokeWidth={10} fill="none" /></Svg>
@@ -172,8 +175,8 @@ export const INS_D: Ins[] = [
               <Svg x={1300} y={560} s={1.5 * ent(t, 317.1)}><path d="M -150 60 Q -160 -100 0 -110 Q 160 -100 150 60 Z" fill="#8a5a2a" stroke="#4a2a10" strokeWidth={8} />{[0, 1, 2, 3].map((k) => <path key={k} d={`M ${-120 + k * 80} -90 q 10 ${40 + (k % 2) * 30} 0 ${70 + (k % 2) * 40}`} stroke="#3a1a08" strokeWidth={22} strokeLinecap="round" fill="none" />)}<ellipse cx={0} cy={60} rx={190} ry={30} fill="#f4f0e8" stroke={C.noche} strokeWidth={6} /></Svg>
               <Chip t={t} t0={314.5} text="SUNDAY" color={C.violeta} x={1300} y={150} centro size={66} />
               <Chip t={t} t0={315.5} text="IF THE COOK IS IN A GOOD MOOD" color={C.noche} x={1300} y={250} centro size={44} />
-              <Rot t={t} t0={317.1} t1={319.7} text="DUFF + MOLASSES" x={1300} y={880} size={90} color={C.oro} />
-              <Rot t={t} t0={319.9} text="HIGHLIGHT OF YOUR WEEK" x={1300} y={880} size={76} color={C.crema} />
+              <Rot t={t} t0={317.1} t1={319.7} text="DUFF + MOLASSES" x={1300} y={800} size={90} color={C.oro} />
+              <Rot t={t} t0={319.9} text="HIGHLIGHT OF YOUR WEEK" x={1300} y={800} size={76} color={C.crema} />
             </>
           )}
         </>
@@ -333,7 +336,7 @@ export const INS_D: Ins[] = [
             ))}
             <rect x={460} y={880} width={1100} height={140} fill="#a8443a" stroke="#5a2018" strokeWidth={8} />
           </svg>
-          <Humo x={1000} y={460} t={t} s={2} n={14} col="#141010" op={0.7} />
+          <Humo x={1000} y={520} t={t} s={1.2} n={14} col="#141010" op={0.85} viento={-80} />
           <Chico x={300} y={1290} h={980} t={t} expr="enojado" bD={110 + Math.sin(t * 4) * 20} cD={60} manoD={<line x1={0} y1={0} x2={0} y2={-260} stroke="#5a3418" strokeWidth={12} />} />
           {t >= 535.8 && Array.from({ length: 6 }, (_, k) => <Vuela key={k} t={t} t0={535.9 + k * 0.25} t1={536.6 + k * 0.25} x0={1720} y0={1000} x1={800 + (k % 2) * 440} y1={880} arco={300} giro={200} queda={false}><rect x={-26} y={-16} width={52} height={32} rx={8} fill="#b8783a" /></Vuela>)}
           <Marino i={2} x={1700} y={1290} h={900} t={t} expr="neutro" flip bD={t > 535.8 ? 110 + Math.sin(t * 6) * 30 : 30} cD={60} />

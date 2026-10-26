@@ -483,14 +483,19 @@ export const Sol: React.FC<{ x: number; y: number; r?: number; col?: string }> =
   </Svg>
 );
 // humo grasiento (columna) en coordenadas locales: sube desde (x, y)
-export const Humo: React.FC<{ x: number; y: number; t: number; s?: number; n?: number; op?: number; col?: string; viento?: number }> = ({ x, y, t, s = 1, n = 14, op = 0.8, col = "#2a2228", viento = -260 }) => (
-  <Svg x={x} y={y} s={s}>
-    {Array.from({ length: n }, (_, i) => {
-      const k = (t * 0.32 + i / n) % 1;
-      return <circle key={i} cx={k * viento * 3 + Math.sin(i * 2.3 + t) * 40} cy={-k * 1300} r={60 + k * 260} fill={col} opacity={op * (1 - k) * 0.9} />;
-    })}
-  </Svg>
-);
+// vuelta 10 OJO: humo = columnas desenfocadas que suben y se abren (no círculos planos)
+export const Humo: React.FC<{ x: number; y: number; t: number; s?: number; n?: number; op?: number; col?: string; viento?: number }> = ({ x, y, t, s = 1, n = 14, op = 0.8, col = "#2a2228", viento = -260 }) => {
+  // lienzo real (no svg de 1x1) para que el desenfoque CSS no se recorte
+  return (
+    <svg style={{ position: "absolute", left: x - 900 * s, top: y - 1150 * s, overflow: "visible", filter: `blur(${14 * s}px)` }} width={1800 * s} height={1250 * s} viewBox="-900 -1150 1800 1250">
+      {Array.from({ length: n }, (_, i) => {
+        const k = (t * 0.22 + i / n) % 1;
+        const r = 50 + k * 200;
+        return <ellipse key={i} cx={k * viento * 2.2 + Math.sin(i * 2.3 + t * 0.8 + k * 4) * (20 + k * 50)} cy={-k * 900} rx={r} ry={r * 0.8} fill={col} opacity={op * Math.min(1, k * 6) * (1 - k * 0.8)} />;
+      })}
+    </svg>
+  );
+};
 // salpicadura (anillo de gotas) que nace en t0
 export const Splash: React.FC<{ x: number; y: number; t: number; t0: number; s?: number; col?: string }> = ({ x, y, t, t0, s = 1, col = "#eaf8ff" }) => {
   const k = (t - t0) / 1.1;

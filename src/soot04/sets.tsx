@@ -350,3 +350,73 @@ export const SetTropico: React.FC<SP> = ({ t, dx = 0, hora = "tarde", tinte, chi
     </>
   );
 };
+
+// ── vuelta 10 OJO: utilería de muelle/cubierta y primer plano desenfocado (profundidad del molde)
+// carga: cajones, barriles y rollos de soga apoyados en el piso, con luz de costado y sombra de contacto
+export const Carga: React.FC<{ y: number; hora: Hora; xs?: number[]; seed?: number; s?: number }> = ({ y, hora, xs = [180, 420, 1500, 1760], seed = 5, s = 1 }) => {
+  const luz = CAPAS[hora].win;
+  const madera = hora === "dia" ? ["#b07a48", "#7a4a26"] : ["#7a4a3a", "#3a1e24"];
+  return (
+    <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}>
+      {xs.map((x, i) => {
+        const k = (i * 7 + seed) % 3;
+        const w = (k === 0 ? 150 : k === 1 ? 110 : 130) * s;
+        return (
+          <g key={i} transform={`translate(${x} ${y})`}>
+            <ellipse cx={0} cy={4} rx={w * 0.7} ry={14 * s} fill="#000" opacity={0.35} />
+            {k === 0 && <>
+              <rect x={-w / 2} y={-w} width={w} height={w} fill={madera[0]} stroke={madera[1]} strokeWidth={6} />
+              <path d={`M ${-w / 2} ${-w} L ${w / 2} 0 M ${w / 2} ${-w} L ${-w / 2} 0`} stroke={madera[1]} strokeWidth={8} />
+              <rect x={-w / 2} y={-w} width={w * 0.22} height={w} fill={luz} opacity={0.22} />
+              <rect x={-w / 2 + 20} y={-w - 70 * s} width={w - 40} height={70 * s} fill={madera[0]} stroke={madera[1]} strokeWidth={5} />
+            </>}
+            {k === 1 && <>
+              <path d={`M ${-w / 2} ${-w * 1.3} Q ${-w * 0.62} ${-w * 0.65} ${-w / 2} 0 L ${w / 2} 0 Q ${w * 0.62} ${-w * 0.65} ${w / 2} ${-w * 1.3} Z`} fill={madera[0]} stroke={madera[1]} strokeWidth={6} />
+              {[0.2, 0.65, 1.1].map((f) => <path key={f} d={`M ${-w * 0.56} ${-w * f} L ${w * 0.56} ${-w * f}`} stroke="#3a3440" strokeWidth={10} />)}
+              <path d={`M ${-w * 0.44} ${-w * 1.2} Q ${-w * 0.55} ${-w * 0.65} ${-w * 0.44} ${-w * 0.1}`} stroke={luz} strokeWidth={10} opacity={0.35} fill="none" />
+            </>}
+            {k === 2 && <>
+              {[0, 1, 2, 3].map((j) => <ellipse key={j} cx={0} cy={-18 * s - j * 20 * s} rx={w * 0.55 - j * 8} ry={26 * s} fill="none" stroke={j % 2 ? "#c8a060" : "#a8804a"} strokeWidth={14 * s} />)}
+              <path d={`M ${w * 0.4} ${-20 * s} Q ${w * 0.9} ${-10 * s} ${w * 1.1} ${10 * s}`} stroke="#a8804a" strokeWidth={10 * s} fill="none" />
+            </>}
+          </g>
+        );
+      })}
+    </svg>
+  );
+};
+
+// red de pesca colgada (fondo de muelle), se mece apenas
+export const Red: React.FC<{ x: number; y: number; t: number; w?: number; h?: number; col?: string }> = ({ x, y, t, w = 360, h = 300, col = "#2a1e30" }) => {
+  const m = Math.sin(t * 0.9 + x) * 8;
+  return (
+    <svg style={{ position: "absolute", left: x, top: y, overflow: "visible" }} width={w} height={h}>
+      <line x1={0} y1={0} x2={w} y2={0} stroke={col} strokeWidth={10} />
+      {Array.from({ length: 9 }, (_, i) => <path key={i} d={`M ${(i * w) / 8} 0 Q ${(i * w) / 8 + m} ${h * 0.6} ${(i * w) / 8 + m * 1.5} ${h - Math.abs(i - 4) * 18}`} stroke={col} strokeWidth={3} fill="none" opacity={0.8} />)}
+      {Array.from({ length: 6 }, (_, j) => <path key={`h${j}`} d={`M 0 ${(j + 1) * h / 7} Q ${w / 2 + m} ${(j + 1) * h / 7 + 30} ${w} ${(j + 1) * h / 7}`} stroke={col} strokeWidth={3} fill="none" opacity={0.8} />)}
+    </svg>
+  );
+};
+
+// primer plano desenfocado en los bordes (barril / pilote / soga), con parallax mayor que el set
+export const PrimerPlano: React.FC<{ t: number; dx?: number; hora: Hora; tipo?: "muelle" | "cubierta" }> = ({ t, dx = 0, hora, tipo = "muelle" }) => {
+  const col = hora === "dia" ? "#2a1a14" : "#120a18";
+  const luz = CAPAS[hora].rim;
+  return (
+    <div style={{ position: "absolute", inset: 0, transform: `translateX(${dx * 1.8}px)`, filter: "blur(14px)", pointerEvents: "none" }}>
+      <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}>
+        {tipo === "muelle" ? <>
+          <rect x={-60} y={520} width={170} height={600} rx={20} fill={col} />
+          <rect x={92} y={520} width={14} height={600} fill={luz} opacity={0.35} />
+          <path d={`M 1790 1100 Q 1760 900 1820 820 L 2000 820 L 2000 1100 Z`} fill={col} />
+          <path d={`M -40 560 Q 300 ${600 + Math.sin(t * 0.7) * 12} 640 540`} stroke={col} strokeWidth={22} fill="none" />
+        </> : <>
+          <path d={`M -80 1100 L -80 760 Q 60 700 200 760 L 200 1100 Z`} fill={col} />
+          <line x1={1840} y1={-40} x2={1700 + Math.sin(t * 0.6) * 14} y2={1120} stroke={col} strokeWidth={28} />
+          <line x1={1900} y1={-40} x2={1790 + Math.sin(t * 0.6) * 14} y2={1120} stroke={col} strokeWidth={14} />
+          <line x1={1858} y1={-40} x2={1720 + Math.sin(t * 0.6) * 14} y2={1120} stroke={luz} strokeWidth={5} opacity={0.3} />
+        </>}
+      </svg>
+    </div>
+  );
+};

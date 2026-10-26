@@ -627,11 +627,16 @@ export const INS_C: Ins[] = [
         )}
         {t >= 837.6 && (
           <>
-            <div style={{ position: "absolute", inset: 0, background: "#3a2a2a" }} />
+            {/* vuelta 10 OJO: la cocina de Pollard (camarote con lámpara del ambiente) + mesa con vela, no un fondo liso */}
             <div style={{ position: "absolute", left: 1300, top: 220, width: 360, height: 420, background: "#fff", border: `10px solid ${C.noche}`, borderRadius: 20, fontFamily, fontWeight: 700, textAlign: "center", transform: `scale(${ent(t, 837.8)})` }}>
               <div style={{ background: C.rojo, color: "#fff", fontSize: 60, padding: 10 }}>NOV</div><div style={{ fontSize: 220, color: C.noche, lineHeight: "300px" }}>20</div>
             </div>
-            <Pollard x={640} y={1260} h={900} t={t} viejo expr="triste" bD={10} cD={20} inclina={6} />
+            <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
+              <rect x={880} y={880} width={820} height={44} rx={8} fill="#8a5a32" stroke="#3a1e12" strokeWidth={6} /><rect x={920} y={924} width={34} height={160} fill="#5a3418" /><rect x={1620} y={924} width={34} height={160} fill="#5a3418" />
+              <rect x={1080} y={800} width={26} height={80} fill="#f4ead2" stroke="#8a7a5a" strokeWidth={3} /><path d={`M 1093 ${796 + Math.sin(t * 9) * 2} q -12 -26 0 -46 q 12 20 0 46`} fill="#ffcf5a" />
+            </svg>
+            <div style={{ position: "absolute", left: 1093 - 220, top: 760 - 220, width: 440, height: 440, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,200,110,.45), transparent 65%)", opacity: 0.85 + 0.15 * Math.sin(t * 7) }} />
+            <Pollard x={640} y={1260} h={900} t={t} viejo expr="triste" bD={20 + Math.sin(t * 1.3) * 8} cD={30} inclina={6} mira={0.6} />
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><rect x={1000} y={900} width={600} height={30} fill="#7a4a26" /><ellipse cx={1300} cy={890} rx={140} ry={26} fill="#f4f0e8" stroke={C.noche} strokeWidth={6} /><circle cx={1270} cy={876} r={20} fill="#c9773a" /><circle cx={1330} cy={880} r={16} fill="#5a8a3a" /></svg>
             <Sello t={t} t0={840.4} text="LOCKED IN" x={1480} y={760} size={60} rot={6} />
             <Chip t={t} t0={842.0} text="DID NOT EAT" color={C.noche} x={1300} y={1010} centro size={52} />

@@ -95,7 +95,7 @@ export const INS_B: Ins[] = [
       const muerde = t >= 305.2 && t < 305.6;
       return (
         <>
-          <Chico x={620} y={1300} h={1150} t={t} expr={t < 305.2 ? "feliz" : t < 306.2 ? "miedo" : "triste"} bD={t < 306.1 ? 110 : 80} cD={t < 306.1 ? 110 : 60}
+          <Chico x={620} y={1300} h={1150} t={t} expr={t < 305.2 ? "feliz" : t < 306.2 ? "miedo" : "triste"} bD={t < 304.7 ? 70 : t < 306.1 ? 112 : 80} cD={t < 304.7 ? 45 : t < 306.1 ? 112 : 60}
             manoD={t < 306.1 ? <g transform="translate(0 -20) scale(.9)"><rect x={-90} y={-90} width={180} height={180} rx={22} fill="#e2b874" stroke="#b5874a" strokeWidth={8} />{t >= 305.3 && <path d="M -90 -20 L -20 10 L 10 -40 L 90 20" stroke="#5a3418" strokeWidth={7} fill="none" />}</g> : undefined} inclina={muerde ? -6 : 0} />
           {t >= 305.3 && <Emote t={t} t0={305.3} tipo="susto" x={760} y={240} s={1.3} />}
           <Galleta x={1350} y={520} s={2.4 * ent(t, 301.6)} rot={8} />
@@ -461,7 +461,8 @@ export const INS_B: Ins[] = [
     fondo: () => <Grad c1="#4a4044" c2="#26201e" />,
     d: (t) => (
       <>
-        <Humo x={1500} y={1000} t={t} s={3} n={18} col="#141010" op={0.85} viento={-1} />
+        <Humo x={1640} y={1080} t={t} s={1.7} n={16} col="#141010" op={0.9} viento={-60} />
+        <Humo x={1180} y={1080} t={t + 1.3} s={1.3} n={12} col="#241c1c" op={0.7} viento={-40} />
         <Chico x={640} y={1300} h={1150} t={t} expr={t < 549 ? "triste" : "enojado"} bD={t > 553.4 ? 140 : 20} cD={t > 553.4 ? 150 : 30} />
         {t >= 545.5 && [[560, 420], [720, 470], [600, 560], [680, 380]].map(([x, y], k) => <div key={k} style={{ position: "absolute", left: x, top: y, width: 70, height: 40, borderRadius: "50%", background: "rgba(20,16,16,.55)", transform: `scale(${ent(t, 545.6 + k * 0.4)})` }} />)}
         <Chip t={t} t0={544.4} text="BLACK, GREASY SMOKE" color="#2a2224" x={1400} y={150} centro size={56} />
@@ -483,6 +484,12 @@ export const INS_B: Ins[] = [
             <path d="M 160 300 Q 160 180 420 170 L 1400 170 Q 1820 200 1820 520 Q 1800 900 1300 920 L 420 920 Q 160 900 160 700 Z" fill="#3a4a6a" stroke={C.noche} strokeWidth={12} />
             <path d="M 300 300 Q 300 240 460 240 L 1300 240 Q 1600 260 1600 470 L 1600 560 Q 1500 620 1300 620 L 460 620 Q 300 620 300 540 Z" fill={`rgb(${200 + brilla * 55},${180 + brilla * 60},${100 + brilla * 60})`} stroke="#8a7030" strokeWidth={8} />
             {brilla > 0 && <path d="M 300 300 Q 300 240 460 240 L 1300 240 Q 1600 260 1600 470 L 1600 560 Q 1500 620 1300 620 L 460 620 Q 300 620 300 540 Z" fill="#fff6c8" opacity={0.25 + 0.15 * Math.sin(t * 6)} />}
+            {/* vuelta 10 OJO: el aceite deja de ser un óvalo plano: brillo especular, burbujas que suben, vetas del tejido y la piel arrugada */}
+            <path d="M 360 300 Q 700 262 1280 270" stroke="#fffbe0" strokeWidth={22} strokeLinecap="round" fill="none" opacity={0.55} />
+            {Array.from({ length: 7 }, (_, k) => <path key={`v${k}`} d={`M ${360 + k * 170} 600 Q ${420 + k * 170 + Math.sin(t + k) * 20} 450 ${380 + k * 170} 300`} stroke="#b89640" strokeWidth={5} fill="none" opacity={0.5} />)}
+            {Array.from({ length: 16 }, (_, k) => { const u = (t * 0.35 + k / 16) % 1; return <circle key={`b${k}`} cx={380 + ((k * 337) % 1180) + Math.sin(t * 2 + k) * 10} cy={600 - u * 330} r={5 + (k % 3) * 4} fill="#fffbe0" opacity={0.75 * (1 - u)} />; })}
+            {Array.from({ length: 9 }, (_, k) => <path key={`p${k}`} d={`M ${230 + k * 150} 200 q 40 -14 80 0`} stroke="#28344e" strokeWidth={6} fill="none" />)}
+            {Array.from({ length: 6 }, (_, k) => <path key={`q${k}`} d={`M ${1660 + (k % 2) * 40} ${380 + k * 70} q 30 -10 60 4`} stroke="#28344e" strokeWidth={6} fill="none" />)}
             <path d="M 300 700 Q 900 760 1500 700" stroke="#2a3450" strokeWidth={10} fill="none" />
             {/* vuelta 7 OJO: «THE HEAD» era un blob ilegible → ojo, mandíbula con dientes y aleta: se lee cachalote */}
             <circle cx={1660} cy={720} r={30} fill="#fff" stroke={C.noche} strokeWidth={6} /><circle cx={1652} cy={724} r={14} fill={C.noche} />
@@ -500,7 +507,7 @@ export const INS_B: Ins[] = [
             </div>
           )}
           <Chip t={t} t0={565.9} text="A MAN CLIMBS INSIDE" color={C.rojo} x={1250} y={140} centro size={54} />
-          <Chip t={t} t0={567.7} text="+ A BUCKET" color={C.teal} tinta={C.noche} x={1640} y={140} centro size={54} />
+          <Chip t={t} t0={567.7} text="+ A BUCKET" color={C.teal} tinta={C.noche} x={1250} y={240} centro size={54} />
         </>
       );
     },
@@ -545,8 +552,8 @@ export const INS_B: Ins[] = [
           </div>
           <Sello t={t} t0={597.8} text="OUTLAWED 1850" x={1360} y={820} size={80} rot={-8} />
           <Persona x={520} y={1300} h={950} t={t} seed={11} ropa={CAPITAN} casco="capitan" barba="#3a2616" pantalon="#141a30" expr={t < 600.6 ? "neutro" : "orgullo"} bD={t >= 600.6 && t < 601.6 ? 120 : 40} bI={t > 601.6 ? 110 : 30} cI={t > 601.6 ? 100 : 20} cD={30} />
-          <Chip t={t} t0={594.8} text="FLOGGING = WHIPPING A MAN TIED UP" color={C.violeta} x={960} y={110} centro size={44} />
-          <Rot t={t} t0={601.0} text="DIDN'T GET THE MESSAGE" x={1250} y={990} size={80} color={C.rojo} />
+          <Chip t={t} t0={594.8} t1={600.8} text="FLOGGING = WHIPPING A MAN TIED UP" color={C.violeta} x={960} y={110} centro size={44} />
+          <Rot t={t} t0={601.0} text="DIDN'T GET THE MESSAGE" x={1250} y={130} size={80} color={C.rojo} />
         </>
       );
     },
