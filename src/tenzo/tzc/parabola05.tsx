@@ -3,7 +3,7 @@
 // SEGUNDOS ABSOLUTOS de la voz; el video los encadena con `planosDe()`.
 import React from "react";
 import { interpolate } from "remotion";
-import { mira, useF } from "../../anikit/camara";
+import { Clave, mira, useF } from "../../anikit/camara";
 import { Actor } from "../../anikit/actor";
 import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
@@ -13,7 +13,7 @@ import { PALETAS } from "../../anikit/paletas";
 import { Look } from "../../anikit/personaje";
 import { Circo, CIRCO_PISO, CIRCO_PUNTOS as C } from "../sets/circo";
 import { Elefanta, Estaca, Soga, tobillo } from "../sets/elefanta";
-import { TramoS } from "./tramos";
+import { partir, TramoS } from "./tramos";
 
 const pal = PALETAS.parabola;
 const P = CIRCO_PISO;
@@ -78,9 +78,9 @@ const Kioto: React.FC = () => (
 );
 
 // 114,0-122,0 · «behind the tent, in the mud, a little boy with a shaved head… looking at something he cannot understand»
-const Detras: React.FC = () => (
+const Detras: React.FC<{ cam?: Clave[] }> = ({ cam }) => (
   <Escena Set={Circo} pal={pal} seed={52} mano={2}
-    claves={[mira(0, 1900, 520, 0.95), mira(150, (C.nino + ELX) / 2 + 40, P - 330, 0.95, { curva: "inout" }), mira(240, (C.nino + ELX) / 2 + 40, P - 330, 1.0)]}
+    claves={cam ?? [mira(0, 1900, 520, 0.95), mira(150, (C.nino + ELX) / 2 + 40, P - 330, 0.95, { curva: "inout" }), mira(240, (C.nino + ELX) / 2 + 40, P - 330, 1.0)]}
     medio={<>
       <Ele balanceo={5} />
       <EstacaSoga />
@@ -121,12 +121,12 @@ const LaEstaca: React.FC = () => (
 );
 
 // 139,9-147,9 · «The elephant does not pull… swaying a little, eating hay, as if the rope were a wall of iron»
-const NoTira: React.FC = () => {
+const NoTira: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   const tr = interpolate(f, [20, 70, 120, 170, 200, 240], [0, 1, 1, 0.2, 1, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <Escena Set={Circo} pal={pal} seed={56} mano={2}
-      claves={[mira(0, ELX + 80, 520, 1.05), mira(240, ELX + 20, 540, 1.12, { curva: "inout" })]}
+      claves={cam ?? [mira(0, ELX + 80, 520, 1.05), mira(240, ELX + 20, 540, 1.12, { curva: "inout" })]}
       medio={<>
         <Ele balanceo={12} trompa={tr} oreja={0.5} />
         <EstacaSoga tension={0.1} />
@@ -192,9 +192,9 @@ const Cria: React.FC<{ tramo: "tira" | "noche" | "rinde" }> = ({ tramo }) => {
   return (
     <Escena Set={Circo} pal={pal} setProps={{ variante: tramo === "noche" ? "noche" : undefined }} seed={61} mano={1.6}
       claves={tramo === "rinde"
-        ? [mira(0, ELX + 20, P - 120, 1.7), mira(200, ELX + 40, P - 120, 1.95, { curva: "inout" })]
+        ? [mira(0, (TOBC.x + C.estaca) / 2, P - 40, 3.0), mira(80, (TOBC.x + C.estaca) / 2, P - 40, 3.1), mira(82, ELX + 100, P - 150, 2.4), mira(189, ELX + 100, P - 150, 2.6, { curva: "inout" })]
         : tramo === "tira" ? [mira(0, ELX - 60, P - 130, 1.5), mira(120, ELX - 40, P - 120, 1.65, { curva: "inout" }), mira(128, (TOBC.x + C.estaca) / 2, P - 50, 2.6), mira(264, (TOBC.x + C.estaca) / 2, P - 50, 2.8)]
-        : [mira(0, ELX + 40, P - 140, 2.0), mira(180, ELX + 40, P - 140, 2.2, { curva: "inout" })]}
+        : [mira(0, ELX + 40, P - 140, 2.0), mira(90, ELX + 40, P - 140, 2.1), mira(92, (TOBC.x + C.estaca) / 2, P - 50, 2.7), mira(180, (TOBC.x + C.estaca) / 2, P - 50, 2.85)]}
       medio={<>
         <g transform={`translate(${dx},0) rotate(${-4 * tiron},${ELX},${P})`}>
           <Elefanta x={ELX} y={P} s={0.38} cria f={f} balanceo={tira ? 0 : 2} fase={tira ? f / 26 : undefined}
@@ -222,7 +222,7 @@ const Golpea: React.FC = () => (
 // 184,5-188,7 · «She grew up. She grew so big she could pull down this whole tent.»
 const Crecio: React.FC = () => (
   <Escena Set={Circo} pal={pal} seed={63} mano={2}
-    claves={[mira(0, 1900, 430, 0.72), mira(126, 1950, 440, 0.76, { curva: "inout" })]}
+    claves={[mira(0, 1900, 430, 0.72), mira(126, 2300, 470, 0.95, { curva: "inout" })]}
     medio={<>
       <Ele balanceo={6} oreja={0.6} />
       <EstacaSoga />
@@ -262,10 +262,10 @@ const Ojo: React.FC = () => {
 
 export const PARABOLA05: TramoS[] = [
   { t0: 106.0, t1: 114.0, el: <Kioto />, trans: { tipo: "luz", d: 20, color: "#ffcf84" } },
-  { t0: 114.0, t1: 122.0, el: <Detras /> },
+  ...partir(114.0, 122.0, (cam) => <Detras cam={cam} />, [[114.0, [mira(0, 1900, 520, 0.95), mira(120, C.nino + 60, P - 280, 1.3, { curva: "inout" })]], [118.0, [mira(0, C.nino + 40, P - 210, 2.3), mira(120, C.nino + 40, P - 215, 2.4)]]]),
   { t0: 122.0, t1: 130.0, el: <Revela /> },
   { t0: 130.0, t1: 139.8, el: <LaEstaca /> },
-  { t0: 139.8, t1: 147.9, el: <NoTira /> },
+  ...partir(139.8, 147.9, (cam) => <NoTira cam={cam} />, [[139.8, [mira(0, ELX + 80, 520, 1.05), mira(120, ELX + 60, 530, 1.1)]], [143.8, [mira(0, ELX + 330, 430, 1.8), mira(123, ELX + 330, 435, 1.95)]]]),
   { t0: 147.9, t1: 152.2, el: <Busca /> },
   { t0: 152.2, t1: 157.5, el: <Pregunta /> },
   { t0: 157.5, t1: 161.2, el: <Sonrie /> },

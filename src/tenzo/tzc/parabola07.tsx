@@ -304,7 +304,7 @@ const Marcha: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
 // 226,5-233,7 · «Diogenes is lying there, warming himself in the sun. He does not get up. Alexander looks down at him.»
 const Picado: React.FC = () => (
   <Escena Set={Agora} pal={pal} seed={112} mano={1.6}
-    claves={[mira(0, DIO.x + 160, P - 260, 1.6, { rot: -4 }), mira(216, DIO.x + 170, P - 240, 1.78, { rot: -5, curva: "inout" })]}
+    claves={[mira(0, DIO.x + 200, P - 330, 1.45, { rot: -4 }), mira(216, DIO.x + 210, P - 320, 1.6, { rot: -5, curva: "inout" })]}
     medio={<>
       <BarrilCon dio={{ caras: [{ f: 0, v: "cansado" }] }} />
       <Actor look={ALEJANDRO} escala={REY_ESC} seed={130} luz={{ lado: 1, color: "#fff0b0", fuerza: 1 }} ruta={[{ f: 0, x: REY + 40, y: P + 20 }]} dir={[{ f: 0, v: -1 }]}
@@ -352,11 +352,11 @@ const Ofrece: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   );
 };
 // 251,9-259,3 · «The whole market holds its breath… please step a little to the side, you are blocking my sun.»
-const MiSol: React.FC = () => {
+const MiSol: React.FC<{ cam?: Clave[] }> = ({ cam }) => {
   const f = useF();
   return (
     <Escena Set={Agora} pal={pal} seed={116} mano={1} detras={<Sol x={REY + 300} y={P - 560} r={100} />}
-      claves={[mira(0, BX + 120, P - 260, 1.35), mira(222, BX + 80, P - 250, 1.55, { curva: "inout" })]}
+      claves={cam ?? [mira(0, BX + 120, P - 260, 1.35), mira(222, BX + 80, P - 250, 1.55, { curva: "inout" })]}
       medio={<>
         <BarrilCon dio={{ caras: [{ f: 0, v: "neutral" }], habla: hab(251.9, [[255.0, 259.3]]), poses: [{ f: 0, v: ACOSTADO }, { f: loc(251.9, 256.0), v: { ...ACOSTADO, hD: 70, cD: 40 } }, { f: loc(251.9, 256.6), v: { ...ACOSTADO, hD: 90, cD: 20 } }, { f: loc(251.9, 257.2), v: { ...ACOSTADO, hD: 70, cD: 40 } }, { f: loc(251.9, 257.8), v: { ...ACOSTADO, hD: 90, cD: 20 } }] }} />
         <SombraRey x={REY + 40} y={P - 2} largo={560} fuerza={0.45} />
@@ -423,11 +423,11 @@ export const PARABOLA07: TramoS[] = [
   { t0: 189.4, t1: 199.2, el: <LaPuerta />, trans: { tipo: "fundido", d: 12 } },
   { t0: 199.2, t1: 204.5, el: <Mapa /> },
   ...partir(204.5, 213.4, (cam) => <Reverencia cam={cam} />, [[204.5, [mira(0, A.stoa - 100, P - 260, 1.25), mira(123, A.stoa + 300, P - 260, 1.3, { curva: "inout" })]], [208.6, [mira(0, A.stoa + 1100, P - 280, 1.6), mira(144, A.stoa + 1250, P - 280, 1.7, { curva: "inout" })]]]),
-  ...partir(213.4, 226.5, (cam) => <Marcha cam={cam} />, [[213.4, [mira(0, 1000, P - 300, 1.35), mira(120, 1650, P - 300, 1.4)]], [217.4, [mira(0, 1990, P - 320, 1.6), mira(120, 1990, P - 320, 1.7)]], [221.4, [mira(0, REY - 200, P - 280, 1.2), mira(153, REY - 150, P - 290, 1.35, { curva: "inout" })]]]),
+  ...partir(213.4, 226.5, (cam) => <Marcha cam={cam} />, [[213.4, [mira(0, 1000, P - 320, 1.65), mira(120, 1650, P - 320, 1.7)]], [217.4, [mira(0, 1990, P - 320, 1.6), mira(120, 1990, P - 320, 1.7)]], [221.4, [mira(0, REY - 220, P - 300, 1.5), mira(153, REY - 180, P - 310, 1.65, { curva: "inout" })]]]),
   { t0: 226.5, t1: 233.7, el: <Picado /> },
   { t0: 233.7, t1: 241.0, el: <Presentan /> },
-  ...partir(241.0, 251.9, (cam) => <Ofrece cam={cam} />, [[241.0, [mira(0, REY + 40, P - 340, 2.0), mira(100, REY + 40, P - 345, 2.1)]], [244.4, [mira(0, BX + 160, P - 330, 1.05), mira(225, BX + 160, P - 350, 1.12)]]]),
-  { t0: 251.9, t1: 259.3, el: <MiSol /> },
+  ...partir(241.0, 251.9, (cam) => <Ofrece cam={cam} />, [[241.0, [mira(0, REY + 40, P - 340, 2.0), mira(100, REY + 40, P - 345, 2.1)]], [244.4, [mira(0, BX, P - 400, 1.3), mira(225, BX, P - 410, 1.36)]]]),
+  ...partir(251.9, 259.3, (cam) => <MiSol cam={cam} />, [[251.9, [mira(0, BX + 140, P - 300, 1.6), mira(93, BX + 120, P - 300, 1.7)]], [255.0, [mira(0, DIO.x + 80, P - 200, 2.6), mira(129, DIO.x + 80, P - 205, 2.8)]]]),
   ...partir(259.3, 269.0, (cam) => <Espadas cam={cam} />, [[259.3, [mira(0, REY + 420, P - 300, 1.05), mira(126, REY + 460, P - 300, 1.12)]], [263.5, [mira(0, REY + 40, P - 340, 2.2), mira(165, REY + 40, P - 345, 2.35)]]]),
   ...partir(269.0, 276.9, (cam) => <SeCorre cam={cam} />, [[269.0, [mira(0, DIO.x + 170, P - 270, 1.85), mira(110, DIO.x + 170, P - 275, 1.95)]], [272.7, [mira(0, BX + 160, P - 250, 1.3), mira(126, BX + 120, P - 240, 1.45, { curva: "inout" })]]]),
   { t0: 276.9, t1: 284.1, el: <Deseo /> },
