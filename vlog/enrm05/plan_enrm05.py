@@ -427,6 +427,10 @@ def clip_len(p):
     except Exception: return 0.0
 LTXD = PUB + f"{SL}/ltx/"; AGD = PUB + f"broll/{SL}/"; IMGD = PUB + f"{SL}/img/"
 ltx_ok = {f[:-4] for f in os.listdir(LTXD) if f.endswith(".mp4")} if os.path.isdir(LTXD) else set()
+# 25-oct (regla del creador): LTX = Ramón HACIENDO lo que narra (vlog, cámara fija). Los clips de texto-a-video viejos (r4_*/r5_*) salen;
+# cada foto con su cara tiene su toma en un clip de 3 tomas (ltx_vlog.py) → mapa foto → [clip, desde, largo].
+ltx_ok = {x for x in ltx_ok if x.startswith("rm05v")}
+VMAP = json.load(open("D:/rtmp_enrm05/ltx_vlog_mapa.json", encoding="utf8")) if os.path.exists("D:/rtmp_enrm05/ltx_vlog_mapa.json") else {}
 ag_ok = {f[:-4] for f in os.listdir(AGD) if f.endswith(".mp4")} if os.path.isdir(AGD) else set()
 img_ok = {f[:-4] for f in os.listdir(IMGD) if f.endswith(".jpg")}
 used, notes = set(), []
@@ -459,6 +463,9 @@ def resolve(base, a):
         notes.append(f"LTX {lid} no llegó → {alt}"); base = "img:" + alt
     force_ph = base.startswith("ph:")
     pid = base.split(":", 1)[1]
+    if not force_ph and pid in VMAP and VMAP[pid][0] in ltx_ok and ("vl_" + pid) not in used:
+        cid, fr, ln = VMAP[pid]; used.add("vl_" + pid); used.add(pid)
+        return {"k": "clip", "src": f"{SL}/ltx/{cid}.mp4", "from": fr, "len": ln, "id": "vl_" + pid}
     if not force_ph and pid in ag_ok and ("ag_" + pid) not in used:
         used.add("ag_" + pid); return {"k": "clip", "src": f"broll/{SL}/{pid}.mp4", "len": clip_len(AGD + pid + ".mp4"), "id": "ag_" + pid}
     if pid in img_ok and pid not in used:
