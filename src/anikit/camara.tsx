@@ -86,7 +86,9 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   const q = f - 1 < claves[0].f ? poseEn(claves, f + 1, fps) : poseEn(claves, f - 1, fps);
   // velocidad del punto del mundo que está en el centro (un empuje de zoom sobre un punto lejano NO es un paneo)
   const vx = Math.abs(p.x / p.zoom - q.x / q.zoom) * p.zoom, vy = Math.abs(p.y / p.zoom - q.y / q.zoom) * p.zoom;
-  const sx = Math.min(60, vx * 0.5), sy = Math.min(60, vy * 0.5);
+  // salto >200 px en un cuadro = corte duro (dos claves pegadas): ese cuadro va nítido. Tope 12 px: un paneo se lee, no se embarra.
+  const corte = vx > 200 || vy > 200;
+  const sx = corte ? 0 : Math.min(12, vx * 0.35), sy = corte ? 0 : Math.min(12, vy * 0.35);
   const mb = sx > 1.5 || sy > 1.5;
   const id = `mb${seed}`;
   return (
