@@ -128,6 +128,13 @@ export const Muro: React.FC<{ c: Cam; piedra: string; t: number; sombra?: string
         </pattern>
       </defs>
       <rect x={x0} y={TOP} width={x1 - x0} height={BASE - TOP + 40} fill="url(#piedra)" />
+      {/* luz sobre la cara del muro: arriba más clara, al pie en sombra */}
+      <defs>
+        <linearGradient id="luzM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffffff" stopOpacity={0.17} /><stop offset="0.45" stopColor="#ffffff" stopOpacity={0} /><stop offset="1" stopColor="#140a24" stopOpacity={0.34} /></linearGradient>
+        <linearGradient id="sombraM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#140a24" stopOpacity={0.4} /><stop offset="1" stopColor="#140a24" stopOpacity={0} /></linearGradient>
+      </defs>
+      <rect x={x0} y={TOP} width={x1 - x0} height={BASE - TOP + 40} fill="url(#luzM)" />
+      {c.z > 0.25 && <Desgaste x0={x0} x1={x1} t={t} oscuro={oscuro} />}
       <rect x={x0} y={TOP} width={x1 - x0} height={16} fill={claro} />
       <rect x={x0} y={BASE - 30} width={x1 - x0} height={70} fill={oscuro} opacity={0.35} />
       {Array.from({ length: nA }, (_, i) => {
@@ -138,18 +145,49 @@ export const Muro: React.FC<{ c: Cam; piedra: string; t: number; sombra?: string
       {TORRES.filter((x) => x > x0 - 400 && x < x1 + 400).map((x) => <Torre key={x} x={x} piedra={piedra} claro={claro} oscuro={oscuro} t={t} />)}
       {[1, 2, 3, 4, 5, 6, 7].map((k) => MC(k)).filter((x) => x > x0 - 800 && x < x1 + 800).map((x, i) => <Milecastle key={x} x={x} piedra={piedra} claro={claro} oscuro={oscuro} k={i} />)}
       <rect x={x0} y={BASE + 10} width={x1 - x0} height={30} fill={sombra} />
+      <rect x={x0} y={BASE + 40} width={x1 - x0} height={150} fill="url(#sombraM)" />
+      {c.z > 0.25 && <Matas x0={x0} x1={x1} t={t} oscuro={oscuro} />}
       </g>
     </SW>
   );
 };
-const Torre: React.FC<{ x: number; piedra: string; claro: string; oscuro: string; t: number }> = ({ x, piedra, claro, oscuro }) => (
+const Torre: React.FC<{ x: number; piedra: string; claro: string; oscuro: string; t: number }> = ({ x, piedra, claro, oscuro, t }) => (
   <g>
     <rect x={x - 150} y={TOP - 260} width={300} height={BASE - TOP + 260} fill="url(#piedra)" stroke={oscuro} strokeWidth={6} />
     <rect x={x - 170} y={TOP - 290} width={340} height={40} rx={6} fill={claro} stroke={oscuro} strokeWidth={5} />
     {[0, 1, 2, 3].map((i) => <rect key={i} x={x - 165 + i * 92} y={TOP - 340} width={56} height={54} rx={4} fill={piedra} stroke={oscuro} strokeWidth={4} />)}
     <rect x={x - 30} y={TOP - 200} width={60} height={90} rx={30} fill={oscuro} />
+    <rect x={x + 96} y={TOP - 470} width={10} height={190} fill="#4a3020" />
+    <path d={`M 106 ${TOP - 466} Q ${150 + 14 * Math.sin(t * 2.4 + x)} ${TOP - 450 + 10 * Math.sin(t * 3 + x)} 196 ${TOP - 440} L ${190 + 10 * Math.sin(t * 2.4 + x + 1)} ${TOP - 380} Q 150 ${TOP - 392 + 8 * Math.sin(t * 2.7 + x)} 106 ${TOP - 400} Z`} transform={`translate(${x} 0)`} fill="#b3202e" stroke="#6a0f1a" strokeWidth={4} />
+    <circle cx={x + 150} cy={TOP - 420} r={12} fill="#f2c23a" />
   </g>
 );
+// manchas de humedad, musgo, grietas y hiedra que cuelga (deterministas por tramo de 380)
+const hsh = (k: number, j = 0) => { const v = Math.sin(k * 91.7 + j * 47.3) * 43758.5453; return v - Math.floor(v); };
+const Desgaste: React.FC<{ x0: number; x1: number; t: number; oscuro: string }> = ({ x0, x1, t, oscuro }) => {
+  const out: React.ReactNode[] = [];
+  for (let k = Math.floor(x0 / 380); k <= Math.ceil(x1 / 380); k++) {
+    const x = k * 380 + hsh(k) * 200, tipo = Math.floor(hsh(k, 1) * 5);
+    if (tipo === 0) out.push(<g key={k}>{[0, 1, 2].map((j) => <ellipse key={j} cx={x + j * 34} cy={BASE - 40 - hsh(k, j + 2) * 60} rx={46 - j * 8} ry={22} fill="#4f7a34" opacity={0.42} />)}</g>);
+    else if (tipo === 1) out.push(<path key={k} d={`M ${x} ${TOP + 40} l 18 50 l -14 40 l 22 60 l -10 50`} stroke={oscuro} strokeWidth={5} fill="none" opacity={0.7} />);
+    else if (tipo === 2) {
+      const sw = 6 * Math.sin(t * 1.6 + k);
+      out.push(<g key={k}><path d={`M ${x} ${TOP + 10} q ${sw} 70 ${-8 + sw} 150 q ${-sw} 60 ${6} 120`} stroke="#3c6a2a" strokeWidth={6} fill="none" />{[0, 1, 2, 3, 4, 5].map((j) => <ellipse key={j} cx={x + (j % 2 ? 14 : -12) + sw * (j / 6)} cy={TOP + 30 + j * 44} rx={16} ry={10} fill={j % 2 ? "#4f8a34" : "#3f7a2a"} transform={`rotate(${j % 2 ? 30 : -30} ${x} ${TOP + 30 + j * 44})`} />)}</g>);
+    } else if (tipo === 3) out.push(<rect key={k} x={x} y={TOP + 60 + Math.floor(hsh(k, 4) * 4) * 60} width={56} height={26} rx={5} fill={oscuro} opacity={0.38} />);
+    else out.push(<ellipse key={k} cx={x} cy={TOP + 120 + hsh(k, 5) * 120} rx={70} ry={110} fill={oscuro} opacity={0.16} />);
+  }
+  return <g>{out}</g>;
+};
+// matas de pasto y piedritas al pie del muro (se mecen)
+const Matas: React.FC<{ x0: number; x1: number; t: number; oscuro: string }> = ({ x0, x1, t, oscuro }) => {
+  const out: React.ReactNode[] = [];
+  for (let k = Math.floor(x0 / 110); k <= Math.ceil(x1 / 110); k++) {
+    const x = k * 110 + hsh(k, 7) * 60, y = BASE + 8 + hsh(k, 8) * 14, sw = 7 * Math.sin(t * 2 + k * 0.7);
+    if (hsh(k, 9) < 0.18) { out.push(<ellipse key={k} cx={x} cy={y + 6} rx={26} ry={13} fill={oscuro} opacity={0.75} />); continue; }
+    out.push(<g key={k}>{[-1, 0, 1].map((j) => <path key={j} d={`M ${x + j * 9} ${y} q ${j * 6 + sw * 0.5} -22 ${j * 14 + sw} -${34 + (j === 0 ? 12 : 0)}`} stroke={j === 0 ? "#3f7a2a" : "#4f8a34"} strokeWidth={7} strokeLinecap="round" fill="none" />)}</g>);
+  }
+  return <g>{out}</g>;
+};
 export const Milecastle: React.FC<{ x: number; piedra: string; claro: string; oscuro: string; k: number }> = ({ x, piedra, claro, oscuro, k }) => (
   <g>
     <rect x={x - 520} y={TOP - 120} width={1040} height={BASE - TOP + 120} fill="url(#piedra)" stroke={oscuro} strokeWidth={6} />

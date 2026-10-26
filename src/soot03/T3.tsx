@@ -1,5 +1,6 @@
 import React from "react";
 import { Sala } from "./sets";
+import { Camino } from "./escenas4";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Bota, Moneda } from "./kit";
 import { Papiro, Item, Mula } from "./kit2";
@@ -140,6 +141,7 @@ export const S3: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
     <>
       <CartelTrampa t={t} t0={331.18} n={3} titulo="THE SUPPLY LINE" color={C.naranja} />
       <Ch t={t} w="here is the thing" d={D} txt="THE END OF THE WORLD…" y={150} c="#2a2350" size={60} dur={2.3} />
+      <Plano t={t} t0={T("nothing grows there", D) - 0.1} t1={T("grain", D) - 0.15} desde={[960, 600]} fondo="#6f82a0"><Camino t={t} t0={T("nothing grows there", D)} tTodo={T("so everything has to come", D)} /></Plano>
       <Ch t={t} w="nothing grows there" d={D} txt="NOTHING YOU WANT TO EAT GROWS HERE" y={150} c={C.rojo} size={54} dur={2.4} />
       <Ch t={t} w="so everything has to come" d={D} txt="EVERYTHING COMES UP THE ROADS" y={150} c={C.violeta} size={60} dur={2.2} />
       {cargas.map(([w, tx, ic], i) => t > T(w, D) && t < T("and above all", D) + 0.3 ? (

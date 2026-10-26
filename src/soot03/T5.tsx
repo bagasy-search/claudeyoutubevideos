@@ -59,14 +59,15 @@ const Informe: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill>
       <Sala t={t} tono="violeta" />
       <Persona x={230} y={1050} h={440} t={t} seed={95} ropa={{ ...AUX(4), tunica: "#c9a23d", tunica2: "#8f7025" }} casco="legion" malla {...gesto(t, [[a, "escribe"], [T("they have no armor", D), "festeja"], [b, "señala"], [T("it is the only time", D), "habla"]])} />
-      <div style={{ position: "absolute", inset: 0, transform: `scale(${1 + 0.55 * Easing.inOut(Easing.cubic)(prog(t, T("it is the only time", D), T("it is the only time", D) + 1.4))})`, transformOrigin: "960px 500px" }}>
+      <div style={{ position: "absolute", inset: 0, opacity: 1 - 0.55 * prog(t, T("it is the only time", D), T("it is the only time", D) + 0.6) }}>
         <TablillaGrande t={t} t0={a + 0.5} x={1100} y={470} w={1360} vel={30} titulo="VINDOLANDA · A REPORT ON THE BRITONS"
           lineas={["“…the Britons are unprotected by armour.", "There are very many cavalry…", "…nor do the Brittunculi mount", "in order to throw javelins.”"]} />
-        {t > T("it is the only time", D) + 0.6 && <div style={{ position: "absolute", left: 790, top: 452, width: 340, height: 84, borderRadius: 42, border: `8px solid ${C.rojo}`, transform: `scale(${ent(t, T("it is the only time", D) + 0.6)})` }} />}
+        
       </div>
       {[["they have no armor", "NO ARMOR", 520, C.rojo], ["they have lots of cavalry", "LOTS OF CAVALRY", 1400, C.teal]].map(([p, tx, x, col], i) => t > T(p as string, D) && t < b ? <Chip key={i} t={t} t0={T(p as string, D)} text={tx as string} color={col as string} tinta={i ? C.noche : "#fff"} x={(x as number) === 520 ? 820 : 1460} y={900} centro size={60} /> : null)}
       {t > b && <div style={{ position: "absolute", left: 560, right: 160, top: 780, height: 150, background: C.ambar, borderRadius: 24, transform: `scale(${ent(t, b + 0.4)}) rotate(-2deg)`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 96, color: C.noche, letterSpacing: 4 }}>BRITTUNCULI</div>}
       {t > w && <Chip t={t} t0={w} t1={T("and it was written", D) - 0.2} text="= “WRETCHED LITTLE BRITONS”" color={C.rojo} x={1100} y={990} centro size={60} />}
+      {t > T("it is the only time", D) && <Grande t={t} t0={T("it is the only time", D) + 0.3} text="“BRITTUNCULI”" x={1100} y={560} size={150} color={C.rojo} borde="#fff" />}
       {t > T("it is the only time", D) && <Chip t={t} t0={T("it is the only time", D)} text="THE ONLY TIME THIS WORD EVER APPEARS" color="#fff" tinta={C.noche} x={1100} y={130} centro size={52} />}
     </AbsoluteFill>
   );
@@ -176,7 +177,7 @@ export const S5: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("still unsolved", D) && t < T("then there are the locals", D) && <div style={{ position: "absolute", left: 960 - 300, top: 330, width: 600, height: 150, border: `14px solid ${C.rojo}`, borderRadius: 20, fontFamily, fontWeight: 700, fontSize: 100, color: C.rojo, textAlign: "center", lineHeight: "122px", transform: `rotate(-8deg) scale(${1.6 - 0.6 * ent(t, T("still unsolved", D))})`, opacity: ent(t, T("still unsolved", D)) }}>UNSOLVED</div>}
       <Ch t={t} w="then there are the locals" d={D} txt="THE LOCALS BEYOND THE WALL" y={150} c={C.violeta} size={58} dur={2.2} />
       <Plano t={t} t0={T("one roman report", D) - 0.1} t1={T("but here is the problem", D) - 0.15} desde={[960, 400]} fondo="#1b1240"><Informe t={t} /></Plano>
-      <Ch t={t} w="and it was written" d={D} txt="WRITTEN BY A SOLDIER ON THE WALL" y={1000} c={C.teal} tinta={C.noche} size={50} dur={3.8} />
+      <Ch t={t} w="and it was written" d={D} txt="WRITTEN BY A SOLDIER ON THE WALL" y={940} c={C.teal} tinta={C.noche} size={50} dur={3.8} />
       <Ch t={t} w="but here is the problem" d={D} txt="THE PROBLEM WITH “WRETCHED”…" y={150} c={C.rojo} size={58} dur={2.6} />
       <Plano t={t} t0={T("they know the land", D) - 0.1} t1={T("which brings us", D) - 0.15} desde={[960, 360]} fondo="#7fa05a"><Terreno t={t} /></Plano>
       <Ch t={t} w="which brings us" d={D} txt="THE REASON THE WALL WAS BUILT…" y={150} c="#2a2350" size={58} dur={3.2} />

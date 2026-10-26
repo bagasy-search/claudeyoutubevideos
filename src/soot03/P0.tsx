@@ -4,6 +4,7 @@ import { C, fontFamily, ent, prog, Chip, Grande, Rayos, Emote, cabeza, Pergamino
 import { Craneo } from "./kit2";
 import { BRIT, IRL } from "./T6";
 import { TOP, MC, K, Cam, Pal, pant, Plano, Relampago } from "./mundo";
+import { Multitud } from "./escenas4";
 import { Yo, Otro, Picto, Ojos, Rayitas, Pin, DiplomaBronce, Gr, Cu, Sale } from "./kit3";
 
 // GANCHO (0-48,3 s): tormenta de noche en el muro → recuerdo de Bélgica dentro del ojo → la cámara sale hasta ver
@@ -172,7 +173,8 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Sale t={t} t0={25.86} t1={27.0}><Chip t={t} t0={25.86} text="★ ROMAN CITIZEN ★" color={C.oro} tinta={C.noche} x={1400} y={780} centro size={64} /></Sale>
       <Emote t={t} t0={25.9} t1={27} tipo="brillos" {...(() => { const [x, y] = pant(YX, CAB.y, c); return { x, y }; })()} s={c.z * 0.4} />
       {/* de dónde venían los de la fila */}
-      {t > 31.2 && t < 35.2 && ["BELGIUM", "SYRIA", "SPAIN", "IRAQ", "HOLLAND", "MOROCCO"].map((n, i) => { const [x, y] = pant(FILA[i], TOP - 330 - (i % 2) * 70, c); return <Chip key={n} t={t} t0={31.2 + i * 0.12} text={n} color={[C.ambar, C.rojo, C.teal, C.violeta, C.lima, C.naranja][i]} tinta={i === 0 || i === 2 || i === 4 ? C.noche : "#fff"} x={x} y={y} centro size={Math.max(26, 40 * c.z)} />; })}
+      <Plano t={t} t0={28.55} t1={33.5} fondo="#0e0a28"><Multitud t={t} t0={28.6} tSenal={30.34} tDuda={31.8} tLab={31.2} labels={["BELGIUM", "SYRIA", "SPAIN", "IRAQ", "HOLLAND", "MOROCCO"]} /></Plano>
+      {t > 33.5 && t < 35.2 && ["BELGIUM", "SYRIA", "SPAIN", "IRAQ", "HOLLAND", "MOROCCO"].map((n, i) => { const [x, y] = pant(FILA[i], TOP - 330 - (i % 2) * 70, c); return <Chip key={n} t={t} t0={31.2 + i * 0.12} text={n} color={[C.ambar, C.rojo, C.teal, C.violeta, C.lima, C.naranja][i]} tinta={i === 0 || i === 2 || i === 4 ? C.noche : "#fff"} x={x} y={y} centro size={Math.max(26, 40 * c.z)} />; })}
       {/* la parte rara */}
       <Sale t={t} t0={27.04} t1={28.5}><Chip t={t} t0={27.2} text="THE STRANGE PART" color={C.violeta} x={960} y={150} centro size={76} /></Sale>
       <Sale t={t} t0={30.46} t1={31.7}><Chip t={t} t0={30.46} text="KEEPING THE BARBARIANS OUT" color="#2a2350" x={960} y={140} centro size={62} /></Sale>

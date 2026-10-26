@@ -1,5 +1,6 @@
 import React from "react";
 import { Sala } from "./sets";
+import { MiraNorte, Frio } from "./escenas4";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, fontMano, ent, prog, Chip, Grande, Emote, cabeza, Zzz } from "./kit";
 import { Papiro } from "./kit2";
@@ -28,8 +29,8 @@ export const keys4: K[] = [
 export const amb4: [number, Pal][] = [[432.0, "gris"], [447.6, "gris"], [495.0, "atardecer"], [513.0, "calido"], [518.1, "gris"]];
 export const lluvia4: [number, number][] = [[432.0, 0.2], [447.6, 0.25], [463.0, 0.1], [478.4, 0.5], [480.0, 0.1], [495.0, 0], [518.0, 0.15], [536.3, 0.1]];
 
-// lo que ves cuando mirás al norte
-const Norte: React.FC<{ t: number }> = ({ t }) => {
+// lo que ves cuando mirás al norte (reemplazado por MiraNorte en la vuelta 4)
+export const Norte: React.FC<{ t: number }> = ({ t }) => {
   const ov = T("at a sheep", D);
   const z = 1 + 0.25 * prog(t, T("at hills", D), T("at a sheep", D) + 1.5);
   return (
@@ -135,7 +136,7 @@ const Partes: React.FC<{ t: number }> = ({ t }) => {
       {Array.from({ length: 14 }, (_, i) => <div key={"b" + i} style={{ position: "absolute", left: 1420 + (i % 2) * 40, top: 900 - i * 34 - (1 - ent(t, T("duty reports", D) + i * 0.08)) * 600, width: 380, height: 40, background: i % 2 ? "#c9a46a" : "#d8b87a", border: "4px solid #8a6a3a", borderRadius: 6 }} />)}
       <Persona x={1640} y={1060} h={400} t={t} seed={91} ropa={CENTURION} casco="centurion" {...gesto(t, [[T("the officers file", D), "escribe"], [T("duty reports", D), "golpea"], [T("who was sent to the workshops", D), "escribe"], [T("who was sent to collect", D), "señala"]])} />
       <Cu t={t} w="the officers file" d={D} de={12} a={37} sube={6} dur={9} x={960} y={120} size={70} pre="REPORTS TODAY: " color="#fff" />
-      <Papiro t={t} x={900} y={580} w={820} t0={T("the officers file", D) + 0.2} tacha={false} titulo="TODAY · CENTURY OF FLAVIUS" items={it.map(([w, tx]) => ({ txt: tx, t0: T(w, D), monto: "✓" }))} />
+      <Papiro t={t} x={900} y={580} w={820} t0={T("the officers file", D) + 0.2} tacha={false} titulo="TODAY · CENTURY OF FLAVIUS" items={[{ txt: "CENTURY OF FLAVIUS · 80 MEN", t0: T("the officers file", D) + 0.5, monto: "✓" }, { txt: "PRESENT AND FIT: 74", t0: T("the officers file", D) + 1.0, monto: "✓" }, ...it.map(([w, tx]) => ({ txt: tx, t0: T(w, D), monto: "✓" }))]} />
     </AbsoluteFill>
   );
 };
@@ -198,7 +199,8 @@ export const S4: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Ch t={t} w="with just a handful" d={D} txt="JUST A HANDFUL" y={260} c="#2a2350" size={56} dur={0.9} />
       <Ch t={t} w="your job is to stand" d={D} txt="YOUR JOB: STAND HERE" y={150} c={C.teal} tinta={C.noche} size={62} dur={1.6} />
       <Ch t={t} w="in the wind" d={D} txt="IN THE WIND" y={260} c="#3d7fc9" size={50} dur={0.8} />
-      <Plano t={t} t0={T("and look north", D) - 0.1} t1={T("then you climb down", D) - 0.15} desde={[yo[0], yo[1]]} fondo="#8b95aa"><Norte t={t} /></Plano>
+      <Plano t={t} t0={T("your job is to stand", D) + 0.2} t1={T("then you climb down", D) - 0.15} desde={[yo[0], yo[1]]} fondo="#8b95aa"><MiraNorte t={t} t0={T("your job is to stand", D) + 0.2} tLomas={T("at hills", D)} tPasto={T("at grass", D)} tMas={T("at more grass", D)} tOveja={T("at a sheep", D)} /></Plano>
+      {t > T("and look north", D) && t < T("at hills", D) && <Chip t={t} t0={T("and look north", D)} text="LOOK NORTH." color="#2a2350" x={1300} y={300} centro size={70} />}
       <Ch t={t} w="then you climb down" d={D} txt="CLIMB DOWN" x={560} y={150} c={C.violeta} size={56} dur={1.6} />
       <Ch t={t} w="someone else climbs up" d={D} txt="SOMEONE ELSE CLIMBS UP" x={1300} y={150} c={C.ambar} tinta={C.noche} size={56} dur={1.6} />
       <Plano t={t} t0={T("and you go back", D)} t1={T("there is a gate", D) - 0.15} desde={[960, 700]} fondo="#3a2418"><Cuartel8 t={t} /></Plano>
@@ -220,6 +222,7 @@ export const S4: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Gr t={t} w="on the edge of the world" d={D} txt="…ON THE EDGE OF THE WORLD" y={880} size={84} c={C.crema} dur={1.4} />
       <Ch t={t} w="because somebody had" d={D} txt="SOMEBODY HAD TO MAKE IT FEEL LIKE HOME" y={150} c={C.violeta} size={52} dur={1.8} />
       <Plano t={t} t0={T("the officers file", D) - 0.2} t1={T("rome could not always", D) - 0.15} desde={[960, 700]} fondo="#1b1240"><Partes t={t} /></Plano>
+      <Plano t={t} t0={T("rome could not always", D) - 0.1} t1={T("and that was the good part", D) - 0.1} desde={[960, 600]} fondo="#141030"><Frio t={t} t0={T("rome could not always", D)} tOrg={T("but it could always", D)} /></Plano>
       <Ch t={t} w="rome could not always" d={D} txt="WARM ✗" x={620} y={170} c="#3d7fc9" size={80} dur={3.9} />
       <Ch t={t} w="but it could always" d={D} txt="ORGANIZED ✓" x={1300} y={170} c={C.teal} tinta={C.noche} size={80} dur={1.9} />
       <Ch t={t} w="and that was the good part" d={D} txt="THAT WAS THE GOOD PART…" y={150} c={C.ambar} tinta={C.noche} size={56} dur={2.5} />

@@ -15,8 +15,8 @@ const FILA = 22000;
 const ESTE = 45300;
 
 export const keys8: K[] = [
-  [822.2, 22000, 430, 0.042], [822.9, 22000, 430, 0.043], ck("remember who stood", D, FILA, 470, 0.85), ck("at the beginning", D, FILA, 480, 0.72),
-  ck("and those men did", D, FILA, 520, 0.6), ck("they stayed", D, FILA, 500, 1.0), ck("at south shields", D, 34000, 500, 0.09),
+  [822.2, 22000, 430, 0.042], [822.9, 22000, 430, 0.043], ck("remember who stood", D, FILA, 450, 1.25), ck("at the beginning", D, FILA, 470, 1.1),
+  ck("and those men did", D, FILA, 500, 0.9), ck("they stayed", D, FILA, 500, 1.0), ck("at south shields", D, 34000, 500, 0.09),
   ck("at the eastern end", D, ESTE + 300, 560, 0.5), ck("a syrian and a british", D, ESTE, 720, 1.15), ck("on the wall nobody wanted", D, ESTE, 700, 0.9),
   ck("and when rome finally left", D, ESTE + 300, 600, 0.42), ck("nobody wanted to guard", D, ESTE - 300, 600, 0.3), ck("some of them simply could not", D, ESTE - 300, 680, 1.1),
   ck("because by then it was home", D, ESTE - 350, 680, 1.5), ck("if you enjoyed surviving", D, ESTE + 200, 640, 0.5), [919.6, ESTE + 300, 620, 0.42],
@@ -189,12 +189,12 @@ export const W8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
     <>
       {/* la fila de los que cuidaban el muro, con su origen */}
       {t > 823 && t < 847 && ORIG.map((o, i) => {
-        const x = FILA - 750 + i * 300;
+        const x = FILA - 575 + i * 230;
         const t0 = T(ORIGW[i], D);
         return (
           <React.Fragment key={i}>
             <Otro i={i} x={x} y={TOP} h={220} t={t} expr={t > quedan ? "feliz" : t > T("all of these men were", D) ? "orgullo" : "neutro"} salta={t > quedan ? quedan + i * 0.08 : undefined} />
-            {t > t0 && <Chip t={t} t0={t0} text={o === "BOATMEN FROM IRAQ" ? "IRAQ" : o} color={[C.violeta, C.teal, C.ambar, C.rojo, "#3f8a3a", "#3d7fc9"][i]} tinta={i === 1 || i === 2 ? C.noche : "#fff"} x={x} y={TOP - 300} centro size={44} />}
+            {t > t0 && <Chip t={t} t0={t0} text={o === "BOATMEN FROM IRAQ" ? "IRAQ" : o} color={[C.violeta, C.teal, C.ambar, C.rojo, "#3f8a3a", "#3d7fc9"][i]} tinta={i === 1 || i === 2 ? C.noche : "#fff"} x={x} y={TOP - 300 - (i % 2) * 60} centro size={44} />}
             {t > T("all of these men were", D) && t < T("romes last line", D) && (() => { const t0b = T("all of these men were", D) + i * 0.1, fl = T("all of these men were", D) + 1.5 + i * 0.1, g = t > fl; const sy = Math.abs(Math.cos(Math.PI * prog(t, fl - 0.15, fl + 0.15))); return <div style={{ position: "absolute", left: 0, top: 0, transform: `scaleY(${t > fl - 0.15 && t < fl + 0.15 ? sy : 1})`, transformOrigin: `${x}px ${TOP + 70 + (i % 2) * 70}px` }}><Chip t={t} t0={t0b} text={g ? "ROMAN DEFENDER" : "BARBARIAN"} color={g ? C.violeta : C.rojo} x={x} y={TOP + 70 + (i % 2) * 70} centro size={36} /></div>; })()}
             {t > quedan && <Emote t={t} t0={quedan + i * 0.1} t1={quedan + 1.6} tipo="brillos" {...cabeza(x, TOP, 220)} s={0.5} />}
           </React.Fragment>

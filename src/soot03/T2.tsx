@@ -1,5 +1,6 @@
 import React from "react";
 import { Sala } from "./sets";
+import { Pantalones } from "./escenas4";
 import { AbsoluteFill } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Pergamino } from "./kit";
 import { Fuerte, Ropa, Mula } from "./kit2";
@@ -43,26 +44,46 @@ const Cresta: React.FC<{ t: number }> = ({ t }) => {
   const a = T("the wind sill", D), b = T("with cliffs facing north", D), c = T("it is also exactly", D);
   const p0 = T("the central part", D) + 0.6, up = prog(t, p0, p0 + 0.9);
   return (
-    <AbsoluteFill style={{ background: "linear-gradient(180deg,#5c6f8f,#a9b8cc)" }}>
+    <AbsoluteFill style={{ background: "linear-gradient(180deg,#4f6488,#9fb2cc 60%,#d8dfe8)" }}>
+      <div style={{ position: "absolute", left: 1380, top: 60, width: 520, height: 520, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,236,190,.55), rgba(255,236,190,0) 65%)" }} />
       <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-        <path d={`M 0 1080 L 0 ${980 - 60 * up} L 420 ${960 - 120 * up} L 700 ${880 - 320 * up} L 760 ${880 - 420 * up} L 900 ${880 - 440 * up} L 1300 ${900 - 360 * up} L 1920 ${940 - 200 * up} L 1920 1080 Z`} fill="#2a2a36" />
-        <path d={`M 700 ${880 - 320 * up} L 760 ${880 - 420 * up} L 790 ${880 - 300 * up} L 740 ${880 - 200 * up} Z`} fill="#40404f" opacity={prog(t, b, b + 0.4)} />
-        {Array.from({ length: 6 }, (_, i) => <path key={i} d={`M ${720 + i * 90} ${470 + i * 8} l 26 -34 l 26 34`} stroke="#5a5a6e" strokeWidth={6} fill="none" opacity={up} />)}
-        <rect x={860} y={880 - 440 * up - 130} width={90} height={130} fill="#c9b8a0" stroke="#8a7a64" strokeWidth={6} opacity={up} />
-        <path d={`M 940 ${1080} L 1920 1080 L 1920 ${940 - 200 * up} L 1300 ${900 - 360 * up} Z`} fill="#7fb34a" opacity={0.75} />
+        <defs>
+          <linearGradient id="roca" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#5a5866" /><stop offset="1" stopColor="#24222e" /></linearGradient>
+          <clipPath id="risco"><path d={`M 0 1080 L 0 ${980 - 60 * up} L 420 ${960 - 120 * up} L 700 ${880 - 320 * up} L 760 ${880 - 420 * up} L 900 ${880 - 440 * up} L 1300 ${900 - 360 * up} L 1920 ${940 - 200 * up} L 1920 1080 Z`} /></clipPath>
+        </defs>
+        {/* colinas lejanas (Escocia al norte, Britania al sur) */}
+        <path d={`M 0 ${700 + 40 * Math.sin(t * 0.05)} Q 300 600 640 690 T 1300 650 T 1920 700 L 1920 1080 L 0 1080 Z`} fill="#7d8fae" opacity={0.7} />
+        <path d="M 0 800 Q 360 720 760 790 T 1500 760 T 1920 790 L 1920 1080 L 0 1080 Z" fill="#6b7f98" opacity={0.8} />
+        {/* el risco: roca con estratos, grietas y luz en la cara sur */}
+        <path d={`M 0 1080 L 0 ${980 - 60 * up} L 420 ${960 - 120 * up} L 700 ${880 - 320 * up} L 760 ${880 - 420 * up} L 900 ${880 - 440 * up} L 1300 ${900 - 360 * up} L 1920 ${940 - 200 * up} L 1920 1080 Z`} fill="url(#roca)" />
+        <g clipPath="url(#risco)">
+          {Array.from({ length: 12 }, (_, k) => <path key={k} d={`M 0 ${470 + k * 52} Q 480 ${450 + k * 52 + (k % 3) * 14} 960 ${480 + k * 52} T 1920 ${470 + k * 52}`} stroke="#000" strokeOpacity={0.22} strokeWidth={6} fill="none" />)}
+          {[[560, 640], [680, 560], [820, 520], [610, 760], [740, 700]].map(([x, y], k) => <path key={"g" + k} d={`M ${x} ${y} l 18 50 l -14 40 l 22 60`} stroke="#15141c" strokeWidth={6} fill="none" strokeLinecap="round" />)}
+          <path d={`M 900 ${880 - 440 * up} L 1300 ${900 - 360 * up} L 1920 ${940 - 200 * up} L 1920 1080 L 940 1080 Z`} fill="#fff" opacity={0.07} />
+        </g>
+        {/* pasto que cubre la ladera sur */}
+        <path d={`M 940 ${1080} L 1920 1080 L 1920 ${940 - 200 * up} L 1300 ${900 - 360 * up} L 900 ${880 - 440 * up} L 960 ${900 - 400 * up} Z`} fill="#7fb34a" opacity={0.85} />
+        {Array.from({ length: 22 }, (_, i) => { const x = 980 + i * 42, y0 = 900 - 440 * up + (x - 900) * (up * 80 / 400) + 30; return <path key={"h" + i} d={`M ${x} ${y0 + 40} l 6 -26 l 6 26`} stroke="#5f8f34" strokeWidth={5} fill="none" opacity={up} transform={`rotate(${Math.sin(t * 2 + i) * 6} ${x} ${y0 + 40})`} />; })}
+        {/* la muralla sobre la cresta, con almenas */}
+        <g opacity={up}>
+          <path d={`M 700 ${880 - 320 * up} L 760 ${880 - 420 * up} L 900 ${880 - 440 * up} L 1300 ${900 - 360 * up} L 1300 ${900 - 360 * up - 70} L 900 ${880 - 440 * up - 70} L 760 ${880 - 420 * up - 70} L 700 ${880 - 320 * up - 70} Z`} fill="#c9b8a0" stroke="#8a7a64" strokeWidth={5} />
+          {Array.from({ length: 14 }, (_, i) => { const x = 770 + i * 38, y = x < 900 ? 880 - 420 * up - 70 - (x - 760) * (20 * up / 140) : 880 - 440 * up - 70 + (x - 900) * (80 * up / 400); return <rect key={"a" + i} x={x} y={y - 26} width={22} height={28} fill="#c9b8a0" stroke="#8a7a64" strokeWidth={4} />; })}
+        </g>
+        {/* niebla que corre por el valle norte */}
+        {[0, 1, 2].map((k) => <ellipse key={"n" + k} cx={((t * (30 + k * 12) + k * 700) % 2600) - 300} cy={760 + k * 70} rx={420} ry={60} fill="#e8eef6" opacity={0.35} />)}
         {t > c && Array.from({ length: 16 }, (_, i) => {
           const k = ((t - c) * 1.3 + i * 0.13) % 1;
           const y = 220 + (i % 8) * 50;
           return <path key={i} d={`M ${-300 + k * 2300} ${y} q 60 -18 120 0 t 120 0`} stroke="#fff" strokeWidth={8} fill="none" strokeLinecap="round" opacity={0.75 * Math.sin(k * Math.PI)} />;
         })}
       </svg>
-      {up > 0.5 && <Persona {...gesto(t, [[a, "señala"], [T("it is beautiful", D) - 0.6, "festeja"], [c, "miedo"], [T("with nothing to stop", D), "tiembla"]])} x={905} y={880 - 440 * up - 130} h={240} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" inclina={t > c ? -14 : 0} />}
+      {up > 0.5 && <Persona {...gesto(t, [[a, "señala"], [T("it is beautiful", D) - 0.6, "festeja"], [b, "señala"], [c, "miedo"], [T("with nothing to stop", D), "tiembla"]])} x={905} y={880 - 440 * up - 66} h={330} t={t} seed={3} ropa={TUNGRO} casco="legion" malla capa="#3f6b2a" inclina={t > c ? -14 : 0} />}
       <div style={{ position: "absolute", left: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>← NORTH</div>
       <div style={{ position: "absolute", right: 60, top: 60, fontFamily, fontWeight: 700, fontSize: 54, color: "#fff" }}>SOUTH →</div>
       {t > Math.min(a, p0 + 0.5) && <Chip t={t} t0={Math.min(a, p0 + 0.5)} text="THE WHIN SILL" color="#2a2a36" x={1380} y={430} centro size={64} />}
-      {t > b && <Chip t={t} t0={b} text="CLIFFS FACING NORTH" color={C.violeta} x={520} y={820} centro size={50} />}
+      {t > b && <Chip t={t} t0={b} t1={T("with nothing to stop", D) - 0.2} text="CLIFFS FACING NORTH" color={C.violeta} x={520} y={820} centro size={50} />}
       {t > c && <Chip t={t} t0={c} text="ATLANTIC WIND →" color={C.teal} tinta={C.noche} x={460} y={200} centro size={62} />}
-      {t > T("with nothing to stop", D) && <Grande t={t} t0={T("with nothing to stop", D)} text="NOTHING TO STOP IT" y={980} size={84} color={C.ambar} />}
+      {t > T("with nothing to stop", D) && <Grande t={t} t0={T("with nothing to stop", D)} text="NOTHING TO STOP IT" y={880} size={84} color={C.ambar} />}
     </AbsoluteFill>
   );
 };
@@ -270,8 +291,9 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       {t > T("then it rains sideways", D) && t < T("it snows", D) && Array.from({ length: 40 }, (_, i) => { const k = (t * 3 + i * 0.173) % 1; return <div key={i} style={{ position: "absolute", left: -200 + k * 2400, top: (i * 61) % 1080, width: 180, height: 6, borderRadius: 3, background: "#d6e6ff", opacity: 0.7 }} />; })}
       <Gr t={t} w="for a change" d={D} txt="FOR A CHANGE…" y={880} size={90} c={C.crema} dur={1.0} />
       <Gr t={t} w="the roads turn into mud" d={D} txt="MUD." y={200} size={170} c="#c9a36a" dur={1.3} />
-      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={1170} y={300} w={1320} vel={26} titulo="A MERCHANT · VINDOLANDA TABLET"
+      {t > T("one merchant", D) && t < T("so you adapt", D) && <TablillaGrande t={t} t0={T("one merchant", D) + 0.4} x={1380} y={250} w={900} vel={26} titulo="A MERCHANT · VINDOLANDA TABLET"
         lineas={["“I would have collected the goods already…", "…but I did not want to injure the animals", "while the roads are bad.”"]} />}
+      <Plano t={t} t0={T("so you adapt", D) - 0.1} t1={T("for centuries", D) - 0.15} desde={[960, 600]} fondo="#b9a98e"><Pantalones t={t} t0={T("so you adapt", D)} tPant={T("you wear trousers", D)} /></Plano>
       <Ch t={t} w="so you adapt" d={D} txt="SO YOU ADAPT" y={150} c={C.teal} tinta={C.noche} size={66} dur={1.0} />
       <Ch t={t} w="no proper roman" d={D} txt="NO PROPER ROMAN WOULD…" y={150} c={C.rojo} size={60} dur={3.4} />
       <Gr t={t} w="you wear trousers" d={D} txt="TROUSERS." y={200} size={180} c={C.ambar} dur={1.4} />
@@ -292,10 +314,10 @@ export const S2: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Plano t={t} t0={T("in the 1970s", D) - 0.1} t1={T("most of them were written", D) + 2.2} desde={[960, 760]} fondo="#9fc6e0"><Excava t={t} /></Plano>
       <Ch t={t} w="most of them were written" d={D} txt="WRITTEN ~AD 85-130" y={1000} c={C.ambar} tinta={C.noche} size={56} dur={4.2} dt={0.2} />
       <Ch t={t} w="the wall went up" d={D} txt="← AS THE WALL WENT UP" y={900} c={C.teal} tinta={C.noche} size={50} dur={1.4} />
-      <Gr t={t} w="a letter from home" d={D} txt="A LETTER FROM HOME" y={930} size={110} c="#fff" borde="#b0255a" dur={1.2} />
-      {t > T("it says", D) && t < T("somewhere", D) + 0.2 && (
+      
+      {t > T("a letter from home", D) && t < T("somewhere", D) + 0.2 && (
         <>
-          <TablillaGrande t={t} t0={T("it says", D)} x={1000} y={250} w={1300} vel={30} lineas={["“I have sent you… socks,", "two pairs of sandals,", "and two pairs of underpants.”"]} />
+          <TablillaGrande t={t} t0={T("a letter from home", D) + 0.3} x={1000} y={250} w={1300} vel={16} titulo="A LETTER FROM HOME · VINDOLANDA" lineas={["“I have sent you… socks,", "two pairs of sandals,", "and two pairs of underpants.”"]} />
           <Ropa k="medias" x={520} y={800} t={t} t0={T("i have sent you socks", D) + 0.6} s={1.2} rot={-10} />
           <Ropa k="sandalia" x={860} y={810} t={t} t0={T("two pairs of sandals", D)} s={1.1} rot={6} />
           <Ropa k="sandalia" x={1000} y={830} t={t} t0={T("two pairs of sandals", D) + 0.25} s={1.1} rot={18} />
