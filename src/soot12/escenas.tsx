@@ -102,16 +102,20 @@ export const CrecePueblo: React.FC<{ t: number; t0: number; t1: number; x?: numb
   const n = 22;
   return (
     <svg style={{ position: "absolute", left: x - 900, top: y - 600, overflow: "visible" }} width={1800} height={640}>
+      {u > 0.7 && Array.from({ length: 60 }, (_, k) => <rect key={"e" + k} x={20 + k * 30} y={600 - 70 * prog(u, 0.7, 0.95)} width={22} height={70 * prog(u, 0.7, 0.95)} fill="#8a5a32" stroke="#2a1530" strokeWidth={3} />)}
       {Array.from({ length: n }, (_, i) => {
         const bx = 60 + i * 78 + r() * 20;
         const etapa = u * 3 - (Math.abs(i - n / 2) / n) * 1.2;
-        const h = 60 + r() * 220, col = ["#e8b98a", "#c9a3e8", "#9ad1d6", "#f2c4a0", "#b8d68a"][i % 5];
+        const h = 70 + r() * 80, col = ["#e8d4b0", "#d8c09a", "#ecdcbc", "#cdb48c", "#e2caa2"][i % 5];
         if (etapa <= 0) return null;
         if (etapa < 1) return <path key={i} d={`M ${bx} 600 l 34 -60 l 34 60 Z`} fill="#d6c49a" stroke="#2a1530" strokeWidth={4} />;
         if (etapa < 2) return <g key={i}><rect x={bx} y={540} width={68} height={60} fill="#a8794a" stroke="#2a1530" strokeWidth={4} /><path d={`M ${bx - 8} 540 l 42 -36 l 42 36 Z`} fill="#7a5a3a" stroke="#2a1530" strokeWidth={4} /></g>;
-        return <g key={i}><rect x={bx} y={600 - h} width={70} height={h} fill={col} stroke="#2a1530" strokeWidth={4} />
-          {Array.from({ length: Math.floor(h / 50) }, (_, k) => <rect key={k} x={bx + 14} y={620 - h + k * 50} width={16} height={20} fill="#ffe28a" />)}
-          {Array.from({ length: Math.floor(h / 50) }, (_, k) => <rect key={"b" + k} x={bx + 40} y={620 - h + k * 50} width={16} height={20} fill="#ffe28a" />)}</g>;
+        if (i === 11) return <g key={i}><rect x={bx} y={600 - 230} width={70} height={230} fill="#cfc4b0" stroke="#2a1530" strokeWidth={4} /><path d={`M ${bx - 6} ${370} l 41 -60 l 41 60 Z`} fill="#6e4a2a" stroke="#2a1530" strokeWidth={4} /><path d={`M ${bx + 35} 296 v -40 M ${bx + 22} 278 h 26`} stroke="#2a1530" strokeWidth={6} /><path d={`M ${bx + 25} 600 v -40 q 10 -16 20 0 v 40 Z`} fill="#3a2418" /></g>;
+        return <g key={i}><rect x={bx} y={600 - h} width={74} height={h} fill={col} stroke="#2a1530" strokeWidth={4} />
+          <path d={`M ${bx} ${600 - h} L ${bx + 74} 600 M ${bx + 74} ${600 - h} L ${bx} 600 M ${bx + 37} ${600 - h} V 600`} stroke="#6e4a2a" strokeWidth={6} />
+          <path d={`M ${bx - 12} ${600 - h + 4} Q ${bx + 37} ${600 - h - 70} ${bx + 86} ${600 - h + 4} Z`} fill="#c9a24a" stroke="#2a1530" strokeWidth={4} />
+          <rect x={bx + 26} y={570} width={22} height={30} fill="#3a2418" />
+          <rect x={bx + 8} y={600 - h + 20} width={14} height={14} fill="#ffcf6a" /></g>;
       })}
     </svg>
   );
@@ -133,12 +137,15 @@ export const Hallazgo: React.FC<{ t: number; t0: number; x: number; y: number; c
 // texto de saga/crónica en pergamino (citas)
 export const Cita: React.FC<{ t: number; t0: number; texto: string; autor?: string; x?: number; y?: number; w?: number; size?: number }> = ({ t, t0, texto, autor, x = 960, y = 540, w = 1200, size = 60 }) => {
   if (t < t0) return null;
+  // una sola comilla (la del componente) y el texto arranca con la tarjeta: las primeras palabras ya están
+  texto = texto.replace(/^[“"]+/, "").replace(/[”"]+$/, "");
   const e = ent(t, t0, 0, { damping: 14, stiffness: 150 });
-  const n = Math.floor(interpolate(t, [t0 + 0.2, t0 + 0.2 + texto.length * 0.03], [0, texto.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  const n0 = Math.min(texto.length, Math.max(texto.indexOf(" ", 12), 12));
+  const n = Math.floor(interpolate(t, [t0, t0 + texto.length * 0.022], [n0, texto.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   return (
     <div style={{ position: "absolute", left: x, top: y, width: w, transform: `translate(-50%,-50%) scale(${e}) rotate(${(1 - e) * 4 - 1}deg)`, background: "#f4e6c4", border: "10px solid #8a5a32", borderRadius: 26, padding: "40px 56px", boxShadow: "0 18px 0 rgba(10,5,30,.45)" }}>
       <div style={{ fontFamily, fontWeight: 600, fontSize: size, color: "#3b2416", lineHeight: 1.25 }}>
-        <span style={{ color: C.rojo, fontSize: size * 1.6, lineHeight: 0.5 }}>“</span>{texto.slice(0, n)}<span style={{ opacity: 0 }}>{texto.slice(n)}</span>
+        <span style={{ color: C.rojo, fontSize: size * 1.6, lineHeight: 0.5 }}>“</span>{texto.slice(0, n)}{n >= texto.length && <span style={{ color: C.rojo }}>”</span>}<span style={{ opacity: 0 }}>{texto.slice(n)}</span>
       </div>
       {autor && <div style={{ marginTop: 22, fontFamily, fontWeight: 700, fontSize: size * 0.6, color: "#8a5a32", textAlign: "right", opacity: n >= texto.length ? 1 : 0 }}>— {autor}</div>}
     </div>

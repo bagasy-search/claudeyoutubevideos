@@ -19,7 +19,7 @@ type Props = {
   x: number; y: number; h?: number; t: number; seed?: number;
   ropa?: Ropa; expr?: Expr; habla?: boolean; camina?: number; // camina = fase en ciclos/s (0 = quieto)
   bI?: number; bD?: number; cI?: number; cD?: number; // hombro y codo, grados (0 = colgando)
-  mira?: number; miraY?: number; flip?: boolean; casco?: "no" | "legion" | "centurion" | "vikingo" | "saxon"; viejo?: boolean; barba?: string; pelera?: boolean;
+  mira?: number; miraY?: number; flip?: boolean; casco?: "no" | "legion" | "centurion" | "vikingo" | "saxon"; viejo?: boolean; barba?: string; pelera?: boolean; mujer?: boolean; corona?: boolean; soloCabeza?: boolean;
   sombra?: string; manoD?: React.ReactNode; manoI?: React.ReactNode; inclina?: number; opacity?: number; aparece?: number; ladea?: number; salta?: number;
 };
 
@@ -99,7 +99,8 @@ export const Persona: React.FC<Props> = (p) => {
         </linearGradient>
       </defs>
       <g transform={`scale(${(flip ? -1 : 1) * sx * crece * ap} ${sy * crece * ap}) rotate(${inclina} 0 -200) translate(0 ${bote + salto})`}>
-        {!sombra && <ellipse cx={0} cy={4} rx={110} ry={16} fill="rgba(20,10,40,.28)" />}
+        {!sombra && !p.soloCabeza && <ellipse cx={0} cy={4} rx={110} ry={16} fill="rgba(20,10,40,.28)" />}
+        {!p.soloCabeza && <>
         {/* piernas */}
         {[-1, 1].map((s) => (
           <g key={s} transform={`rotate(${s * pierna} ${s * 28} -190)`}>
@@ -110,8 +111,11 @@ export const Persona: React.FC<Props> = (p) => {
         ))}
         {/* brazo de atrás */}
         <Brazo s={-1} a={bI} codo={cI} mano={p.manoI} />
-        {/* túnica */}
-        <path d={`M -64 ${-338 + respira} Q 0 ${-352 + respira} 64 ${-338 + respira} L 88 -172 Q 0 -150 -88 -172 Z`} fill={tun} />
+        {/* túnica (vestido largo hasta los pies si es mujer) */}
+        {p.mujer
+          ? <path d={`M -60 ${-338 + respira} Q 0 ${-352 + respira} 60 ${-338 + respira} L 74 -240 Q 120 -100 128 -8 Q 0 8 -128 -8 Q -120 -100 -74 -240 Z`} fill={tun} />
+          : <path d={`M -64 ${-338 + respira} Q 0 ${-352 + respira} 64 ${-338 + respira} L 88 -172 Q 0 -150 -88 -172 Z`} fill={tun} />}
+        {p.mujer && !sombra && <path d="M -110 -60 Q 0 -40 110 -60" stroke={ropa.cinto} strokeWidth={10} fill="none" />}
         {(casco === "legion" || casco === "centurion") && !sombra && (
           <g>
             <path d={`M -62 ${-330 + respira} L 62 ${-330 + respira} L 66 -240 L -66 -240 Z`} fill="#b9c2cf" opacity={0.92} />
@@ -121,15 +125,25 @@ export const Persona: React.FC<Props> = (p) => {
         <rect x={-74} y={-238} width={148} height={20} rx={6} fill={c(ropa.cinto)} />
         {p.pelera && <path d={`M -78 ${-326 + respira} Q 0 ${-290 + respira} 78 ${-326 + respira} Q 70 ${-362 + respira} 0 ${-356 + respira} Q -70 ${-362 + respira} -78 ${-326 + respira} Z`} fill={c("#8a6a4a")} stroke={c("#5a4030")} strokeWidth={6} />}
         {!sombra && <circle cx={0} cy={-228} r={9} fill="#e8b84a" />}
+        </>}
         {/* cuello y cabeza */}
         <rect x={-20} y={-372} width={40} height={40} fill={c(ropa.piel2)} />
         <g transform={`translate(0 ${respira * 0.6}) rotate(${ladea} 0 -360)`}>
           <circle cx={-96} cy={-440} r={18} fill={c(ropa.piel2)} />
           <circle cx={96} cy={-440} r={18} fill={c(ropa.piel2)} />
           {casco === "vikingo" && <path d="M -98 -470 Q -122 -390 -96 -330 L -70 -340 Q -88 -400 -80 -460 Z M 98 -470 Q 122 -390 96 -330 L 70 -340 Q 88 -400 80 -460 Z" fill={c(ropa.pelo)} />}
+          {p.mujer && [-1, 1].map((sd) => (
+            <g key={sd} fill={c(ropa.pelo)}>
+              {[0, 1, 2, 3, 4, 5].map((k) => <ellipse key={k} cx={sd * (96 + k * 3)} cy={-420 + k * 40} rx={26 - k * 1.5} ry={26} stroke={c("#2a1530")} strokeWidth={3} />)}
+              <rect x={sd * 108 - 10} y={-196} width={20} height={14} rx={4} fill={c("#e8b84a")} />
+            </g>
+          ))}
           <ellipse cx={0} cy={-450} rx={100} ry={104} fill={piel} />
+          {p.mujer && <path d="M -104 -440 Q -110 -566 0 -566 Q 110 -566 104 -440 Q 90 -520 0 -520 Q -90 -520 -104 -440 Z" fill={c(ropa.pelo)} />}
+          {p.corona && <g><path d="M -84 -540 L -84 -610 L -46 -572 L 0 -630 L 46 -572 L 84 -610 L 84 -540 Z" fill={c("#f2c230")} stroke={c("#2a1530")} strokeWidth={6} strokeLinejoin="round" />
+            {!sombra && [-46, 0, 46].map((cx) => <circle key={cx} cx={cx} cy={-556} r={10} fill={cx ? "#3f9a5a" : "#d6283e"} />)}</g>}
           {/* pelo (rulos) */}
-          {casco === "no" && (
+          {casco === "no" && !p.mujer && (
             <g fill={c(p.viejo ? "#c9c4c0" : ropa.pelo)}>
               <path d="M -100 -452 Q -104 -560 0 -560 Q 104 -560 100 -452 Q 86 -500 40 -506 Q 0 -488 -44 -506 Q -88 -500 -100 -452 Z" />
               {[-78, -46, -14, 18, 50, 80].map((cx, i) => <circle key={i} cx={cx} cy={-540 + Math.abs(cx) * 0.25} r={26} />)}
@@ -154,6 +168,8 @@ export const Persona: React.FC<Props> = (p) => {
                   </g>
                 );
               })}
+              {p.mujer && parp >= 0.2 && [-1, 1].map((sd) => <path key={sd} d={`M ${sd * 38 + sd * 18} -474 l ${sd * 14} -10 M ${sd * 38 + sd * 8} -480 l ${sd * 8} -12 M ${sd * 38 - sd * 4} -482 l ${sd * 2} -13`} stroke="#2a1530" strokeWidth={5} strokeLinecap="round" />)}
+              {p.mujer && <ellipse cx={0} cy={-386} rx={16} ry={7} fill="#d6455a" opacity={0.85} />}
               {/* cejas */}
               {[-1, 1].map((s) => (
                 <line key={s} x1={s * 60} y1={-494 + ce} x2={s * 18} y2={-494 + ci} stroke={p.viejo ? "#9c958f" : ropa.pelo} strokeWidth={9} strokeLinecap="round" />
@@ -201,7 +217,7 @@ export const Persona: React.FC<Props> = (p) => {
           )}
         </g>
         {/* brazo de adelante */}
-        <Brazo s={1} a={bD} codo={cD} mano={p.manoD} />
+        {!p.soloCabeza && <Brazo s={1} a={bD} codo={cD} mano={p.manoD} />}
       </g>
     </svg>
   );

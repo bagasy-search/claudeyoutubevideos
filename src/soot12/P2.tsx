@@ -55,23 +55,31 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           <Persona x={1290} y={gy(1290) + 30} h={300} t={t} seed={4} ropa={SENOR} expr="enojado" bD={t > 189 && t < 191 ? 150 : 20} cD={20} />
         </Mundo>
         <Cartel t={t} t0={186.8} t1={189.0} n={2} nombre="THE DITCH" />
-        <Ch t={t} t0={189.4} t1={194.0} text="THE SIGNAL" color={C.violeta} x={120} y={140} size={60} />
-        <Ch t={t} t0={190.6} t1={194.0} text="SLOWLY · QUIETLY" color={C.teal} tinta={C.noche} x={120} y={250} size={52} />
+        <Ch t={t} t0={189.4} t1={194.0} text="THE SIGNAL" color={C.violeta} x={120} y={150} size={60} />
+        <Ch t={t} t0={190.6} t1={194.0} text="SLOWLY · QUIETLY" color={C.teal} tinta={C.noche} x={120} y={260} size={52} />
         <Cuenta t={t} t0={194.2} t1={196.1} de={0} a={200} dur={0.9} x={960} y={210} size={180} sufijo=" MEN" />
-        <Ch t={t} t0={194.9} t1={196.1} text="TRYING NOT TO COUGH 🤫" color={C.ambar} tinta={C.noche} x={960} y={340} centro size={50} />
-        <G t={t} t0={196.3} text="THE GROUND DROPS AWAY" y={220} size={100} color={C.crema} />
+        <Ch t={t} t0={194.9} t1={196.1} text="TRYING NOT TO COUGH 🤫" color={C.ambar} tinta={C.noche} x={960} y={350} centro size={50} />
+        {t > 196.3 && t < 198.4 && <Particulas t={t} tipo="polvo" n={30} seed={12} />}
+        <G t={t} t0={196.3} text="THE GROUND DROPS AWAY" y={930} size={96} color={C.crema} />
         <Flash t={t} t0={196.3} dur={0.18} />
       </Escena>
       {/* 1 · lo que encontraron los arqueólogos: un D gigante con las puntas en el río */}
       <Escena t={t} t0={199.22} t1={208.64} entra="iris" ix={960} iy={760} golpes={[203.6, 206.2]}>
         <PlanoRepton t={t} zanja={203.6} iglesia={206.4} />
-        <Ch t={t} t0={199.5} text="REPTON · ARCHAEOLOGISTS FOUND IT" color={C.violeta} x={120} y={130} size={52} />
+        <Persona x={250} y={1120} h={560} t={t} seed={64} ropa={{ tunica: "#d8a23a", tunica2: "#9a6a1a", cinto: "#5a3418", piel: "#e8b08a", piel2: "#c98864", pelo: "#3a2418" }} mujer expr={t > 203.6 ? "sorpresa" : "feliz"} mira={0.9} bD={t > 203.4 ? 105 : 40 + Math.max(0, Math.sin(t * 7)) * 50} cD={t > 203.4 ? 0 : 60}
+          manoD={t > 203.4 ? undefined : <g transform="rotate(180)"><rect x={-8} y={-20} width={16} height={130} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /><path d="M -8 110 L 0 140 L 8 110 Z" fill="#8a5a32" /></g>} />
+        <Ch t={t} t0={199.5} text="REPTON · ARCHAEOLOGISTS FOUND IT" color={C.violeta} x={120} y={150} size={52} />
         <G t={t} t0={203.6} text="A GIANT “D”" x={1380} y={300} size={110} color={C.ambar} />
         <Ch t={t} t0={205.4} text="BOTH ENDS → INTO THE RIVER" color={C.teal} tinta={C.noche} x={1420} y={450} centro size={50} />
       </Escena>
       {/* 2 · detrás, el terraplén con la empalizada · y la iglesia, que no tiraron: la hicieron portón */}
       <Escena t={t} t0={208.64} t1={222.48} zoom={0} entra="zoom" golpes={[217.7, 219.5]}>
         <Mundo t={t} cam={cam}>
+          {t < 213.2 && [3690, 3790, 3880].map((x, i) => (
+            <Persona key={i} x={x} y={gy(x) + 20} h={170} t={t} seed={400 + i} ropa={VIK(i + 1)} casco="vikingo" barba={barbaDe(i + 1)} expr="enojado" flip={i === 1} bD={60 + Math.max(0, Math.sin(t * 6 + i * 2)) * 80} cD={40} bI={50} cI={60}
+              manoD={<g transform="rotate(170)"><rect x={-5} y={-30} width={10} height={150} fill="#8a5a32" /><path d="M -22 118 L 22 118 L 16 160 L -16 160 Z" fill="#9aa6b8" stroke="#2a1530" strokeWidth={4} /></g>} />
+          ))}
+          {t < 213.2 && [3690, 3790, 3880].map((x, i) => Math.sin(t * 6 + i * 2) > 0.5 && <div key={"d" + i} style={{ position: "absolute", left: x - 40, top: gy(x) - 120 - Math.sin(t * 6 + i * 2) * 50, width: 26, height: 18, borderRadius: 9, background: "#6a4a2e" }} />)}
           {t > 208.8 && t < 213 && (
             <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
               <path d={`M 3650 860 L 3720 770 L 3840 770 L 3920 860`} fill="none" stroke={C.ambar} strokeWidth={14} strokeDasharray="30 14" opacity={ent(t, 208.9)} />
@@ -83,24 +91,25 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
             </svg>
           )}
         </Mundo>
-        <Ch t={t} t0={208.9} t1={212.9} text="A BANK OF EARTH" color={C.ambar} tinta={C.noche} x={120} y={140} size={58} />
-        <Ch t={t} t0={210.6} t1={212.9} text="+ A WOODEN FENCE" color={C.violeta} x={120} y={250} size={54} />
-        <Ch t={t} t0={213.0} t1={215.2} text="NOW THE WORRYING PART…" color={C.rojo} x={960} y={130} centro size={58} />
-        <Ch t={t} t0={215.3} t1={217.6} text="THE OLD STONE CHURCH? NOT KNOCKED DOWN" color={C.teal} tinta={C.noche} x={960} y={130} centro size={52} />
+        <Ch t={t} t0={208.9} t1={212.9} text="A BANK OF EARTH" color={C.ambar} tinta={C.noche} x={120} y={160} size={58} />
+        <Ch t={t} t0={210.6} t1={212.9} text="+ A WOODEN FENCE" color={C.violeta} x={120} y={270} size={54} />
+        <Ch t={t} t0={213.0} t1={215.2} text="NOW THE WORRYING PART…" color={C.rojo} x={960} y={150} centro size={58} />
+        <Ch t={t} t0={215.3} t1={217.6} text="THE OLD STONE CHURCH? NOT KNOCKED DOWN" color={C.teal} tinta={C.noche} x={960} y={150} centro size={52} />
         <G t={t} t0={217.7} t1={219.4} text="PART OF THE WALL" y={180} size={110} color={C.crema} />
-        <Sello t={t} t0={219.5} text="VIKING GATEHOUSE" x={960} y={200} size={86} rot={-5} />
-        <Ch t={t} t0={220.2} text="A MERCIAN SAINT'S CHURCH ✝" color={C.violeta} x={960} y={330} centro size={46} />
+        <Sello t={t} t0={219.5} text="VIKING GATEHOUSE" x={960} y={220} size={86} rot={-5} />
+        <Ch t={t} t0={220.2} text="A MERCIAN SAINT'S CHURCH ✝" color={C.violeta} x={960} y={350} centro size={46} />
       </Escena>
       {/* 3 · no atacás un montón de carpas: atacás un fuerte, hecho en semanas, por gente que ya lo hizo */}
       <Escena t={t} t0={222.48} t1={231.09} entra="diag" golpes={[223.6, 225.6, 228.0]}>
-        <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 55%, #33227a, #120e36 80%)" }} />
+        <Mundo t={t} cam={{ x: 5000, y: 560, z: 0.7 }} />
+        <AbsoluteFill style={{ background: "rgba(10,6,34,.55)" }} />
         {t < 225.5 && [600, 960, 1320].map((x, i) => <Tienda key={i} x={x} y={640} s={0.62} k={i} t={t} t0={222.6 + i * 0.15} />)}
         {t > 223.6 && t < 225.5 && (
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
             <path d="M 420 360 L 1500 860 M 1500 360 L 420 860" stroke={C.rojo} strokeWidth={34} strokeLinecap="round" pathLength={1} style={{ strokeDasharray: `${prog(t, 223.6, 224.0)} 1` }} />
           </svg>
         )}
-        {t < 225.5 && <Ch t={t} t0={222.6} text="A PILE OF TENTS?" color={C.violeta} x={960} y={140} centro size={64} />}
+        {t < 225.5 && <Ch t={t} t0={222.6} text="A PILE OF TENTS?" color={C.violeta} x={960} y={150} centro size={64} />}
         {t > 225.5 && (
           <div style={{ position: "absolute", left: 960, top: 640, transform: `translate(-50%,-50%) scale(${ent(t, 225.5)})` }}>
             <svg width={1300} height={460} viewBox="-650 -300 1300 460">
@@ -113,11 +122,11 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           </div>
         )}
         <G t={t} t0={225.6} text="A FORT" y={200} size={170} color={C.crema} />
-        <Ch t={t} t0={227.0} text="BUILT IN A FEW WEEKS" color={C.ambar} tinta={C.noche} x={960} y={340} centro size={54} />
+        <Ch t={t} t0={227.0} text="BUILT IN A FEW WEEKS" color={C.ambar} tinta={C.noche} x={960} y={350} centro size={54} />
         {["THANET", "SHEPPEY", "READING", "TORKSEY"].map((n, i) => (
-          <Ch key={n} t={t} t0={228.0 + i * 0.5} text={`${n} ✓`} color={C.teal} tinta={C.noche} x={250 + i * 470} y={990} centro size={44} />
+          <Ch key={n} t={t} t0={228.0 + i * 0.5} text={`${n} ✓`} color={C.teal} tinta={C.noche} x={330 + i * 420} y={940} centro size={44} />
         ))}
-        <Ch t={t} t0={229.4} text="DONE IT MANY TIMES" color={C.rojo} x={960} y={880} centro size={50} />
+        <Ch t={t} t0={229.4} text="DONE IT MANY TIMES" color={C.rojo} x={960} y={830} centro size={50} />
       </Escena>
       {/* 4 · cruzar la zanja de noche: barro a las rodillas, la pared resbala, el que sale queda recortado contra el cielo */}
       <Escena t={t} t0={231.09} t1={247.68} zoom={0} entra="corte" golpes={[233.5, 238.5, 242.0]}>
@@ -126,7 +135,9 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
             {/* estacas en el fondo que no ves */}
             {t > 245.5 && [3420, 3500, 3580].map((x, i) => <path key={i} d={`M ${x - 14} 1032 L ${x} ${980 - (i % 2) * 14} L ${x + 14} 1032 Z`} fill="#5e3a1e" stroke="#2a1530" strokeWidth={4} opacity={ent(t, 245.5 + i * 0.12) * 0.85} />)}
           </svg>
-          <Yo t={t} x={xz} y={yz + (t > 235.8 ? 6 : 0)} expr={t > 238 ? "sorpresa" : "miedo"} />
+          <Persona x={xz + (t > 233.6 && t < 238.3 ? Math.sin(t * 13) * 6 : 0)} y={yz + prog(t, 233.6, 237.5) * 46} h={260} t={t} seed={3} ropa={SAJON} expr={t > 238 ? "sorpresa" : "miedo"}
+            bD={t > 233.6 && t < 238.3 ? 120 + Math.sin(t * 9) * 30 : 30} cD={20} bI={t > 233.6 && t < 238.3 ? 120 + Math.sin(t * 9 + 2) * 30 : 8} cI={20} manoD={<LanzaMano a={50} inclina={-14} largo={420} />} />
+          {t > 233.6 && t < 238.3 && Math.sin(t * 13) > 0.4 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>{[0, 1, 2, 3].map((k) => <circle key={k} cx={xz - 50 + k * 34} cy={960 - Math.abs(Math.sin(t * 20 + k)) * 40} r={8} fill="#6a4a2e" />)}</svg>}
           {/* el barro, encima de las piernas */}
           <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
             <path d={`M ${XB[0]} 975 Q 3500 ${966 + Math.sin(t * 2) * 4} ${XB[1]} 975 ${BARRO}Z`} fill="#4a3220" opacity={0.96} />
@@ -138,25 +149,26 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
               <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
                 <ellipse cx={3680} cy={700} rx={180} ry={140} fill="#6a5ac8" opacity={0.35 * ent(t, 238.6)} />
               </svg>
-              <Persona x={3600 + sube * 70} y={940 - sube * 150} h={240} t={t} seed={312} ropa={SAJON} sombra="#06051a" inclina={30 - sube * 20} bI={140} bD={150} />
+              <Persona x={3600 + sube * 70} y={940 - sube * 150} h={240} t={t} seed={312} ropa={SAJON} sombra="#06051a" casco="saxon" inclina={30 - sube * 20} bI={140} bD={60} cD={20} manoD={<LanzaMano a={40} largo={380} />} />
             </>
           )}
           {/* el vikingo en el terraplén, lanza a la altura justa */}
           <Persona x={3800} y={772} h={300} t={t} seed={205} ropa={VIK(5)} casco="vikingo" barba={barbaDe(5)} expr="enojado" flip aparece={238.9} manoD={<LanzaMano a={90} inclina={-82} largo={520} />} />
         </Mundo>
-        <Ch t={t} t0={231.3} t1={233.4} text="NOW CROSS IT. AT NIGHT." color={C.violeta} x={960} y={130} centro size={60} />
-        <Ch t={t} t0={233.6} t1={238.3} text="MUD UP TO YOUR KNEES" color={C.ambar} tinta={C.noche} x={120} y={140} size={56} />
-        <Ch t={t} t0={235.9} t1={238.3} text="STEEP · SLIPPERY" color={C.teal} tinta={C.noche} x={120} y={250} size={52} />
-        <Ch t={t} t0={238.6} t1={247.6} text="LIT UP AGAINST THE SKY" color={C.rojo} x={120} y={140} size={56} />
-        <Ch t={t} t0={242.2} t1={247.6} text="EXACTLY SPEAR HEIGHT" color={C.ambar} tinta={C.noche} x={120} y={250} size={52} />
+        <Ch t={t} t0={231.3} t1={233.4} text="NOW CROSS IT. AT NIGHT." color={C.violeta} x={960} y={150} centro size={60} />
+        <Ch t={t} t0={233.6} t1={238.3} text="MUD UP TO YOUR KNEES" color={C.ambar} tinta={C.noche} x={120} y={160} size={56} />
+        <Ch t={t} t0={235.9} t1={238.3} text="STEEP · SLIPPERY" color={C.teal} tinta={C.noche} x={120} y={270} size={52} />
+        <Ch t={t} t0={238.6} t1={247.6} text="LIT UP AGAINST THE SKY" color={C.rojo} x={120} y={160} size={56} />
+        <Ch t={t} t0={242.2} t1={247.6} text="EXACTLY SPEAR HEIGHT" color={C.ambar} tinta={C.noche} x={120} y={270} size={52} />
         <Emote t={t} t0={245.4} tipo="preg" x={760} y={760} s={1.4} />
-        <Ch t={t} t0={245.6} text="AND THE BOTTOM? YOU CAN'T SEE IT" color={C.violeta} x={960} y={1000} centro size={46} />
+        <Ch t={t} t0={245.6} text="AND THE BOTTOM? YOU CAN'T SEE IT" color={C.violeta} x={960} y={940} centro size={46} />
       </Escena>
       {/* 5 · preguntale a los de Wessex: Reading, invierno del 870, entre dos ríos */}
       <Escena t={t} t0={247.68} t1={254.6} zoom={0} entra="zoom">
         <MapaN t={t} cam={[[247.68, 690, 720, 1.8], [250.6, 700, 767, 3.2], [254.6, 700, 767, 3.8]]} desde="NORWAY"
           pulsa={[{ n: "READING", t0: 251.0, color: C.rojo, label: "READING", lado: "der" }]} />
-        <Ch t={t} t0={247.9} text="ASK THE MEN OF WESSEX" color={C.ambar} tinta={C.noche} x={120} y={140} size={60} />
+        {Array.from({ length: 9 }, (_, i) => { const x = interpolate(t, [247.7, 254.6], [-200 + i * 120, 500 + i * 120]); return <Persona key={i} x={x} y={1080 + (i % 2) * 20} h={300} t={t} seed={420 + i} ropa={SAJON} casco="saxon" expr="enojado" camina={1.5} bD={30} cD={20} manoD={<LanzaMano a={50} inclina={-14} largo={300} />} />; })}
+        <Ch t={t} t0={247.9} text="ASK THE MEN OF WESSEX" color={C.ambar} tinta={C.noche} x={120} y={150} size={60} />
         <G t={t} t0={251.5} text="WINTER 870" y={260} size={150} color={C.crema} />
         <Ch t={t} t0={253.0} text="THE SAME KIND OF CAMP" color={C.violeta} x={960} y={400} centro size={52} />
       </Escena>
@@ -169,26 +181,30 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           {t > 257.2 && <path d="M 470 410 Q 560 760 760 900" stroke="#7a5a3a" strokeWidth={34} fill="none" strokeLinecap="round" pathLength={1} style={{ strokeDasharray: `${prog(t, 257.2, 258.0)} 1` }} />}
         </svg>
         {t > 257.6 && [[760, 600], [860, 700], [700, 720]].map(([x, y], i) => <Tienda key={i} x={x} y={y} s={0.32} k={i} t={t} t0={257.7 + i * 0.12} />)}
+        {[[520, 560], [600, 720], [690, 860]].map(([x, y], i) => <Persona key={i} x={x} y={y} h={180} t={t} seed={430 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr="enojado" bD={60 + Math.max(0, Math.sin(t * 6 + i)) * 70} cD={40} />)}
+        {t > 257.6 && [0, 1, 2].map((i) => { const u = prog(t, 257.7 + i * 0.25, 258.3 + i * 0.25); const reb = prog(t, 258.3 + i * 0.25, 258.9 + i * 0.25); const x = 1500 - u * 860 + reb * 120, y = 520 + i * 140 - reb * 80; return u > 0 && reb < 1 && <svg key={i} style={{ position: "absolute", left: x - 60, top: y - 10, transform: `rotate(${reb > 0 ? -40 : 0}deg)` }} width={120} height={20}><line x1={10} y1={10} x2={110} y2={10} stroke="#3a2418" strokeWidth={6} /><path d="M 0 10 L 18 2 L 18 18 Z" fill="#c8d0dc" /></svg>; })}
         <Ch t={t} t0={256.0} text="THAMES" color={C.teal} tinta={C.noche} x={1500} y={700} centro size={52} />
         <Ch t={t} t0={256.8} text="KENNET" color={C.teal} tinta={C.noche} x={400} y={980} centro size={52} />
-        <Ch t={t} t0={257.4} text="A BANK OF EARTH BETWEEN TWO RIVERS" color={C.ambar} tinta={C.noche} x={960} y={110} centro size={54} />
+        <Ch t={t} t0={257.4} text="A BANK OF EARTH BETWEEN TWO RIVERS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={54} />
       </Escena>
       {/* 6 · Æthelwulf caza un grupo vikingo en campo abierto y gana · todos festejan */}
       <Escena t={t} t0={259.69} t1={268.44} entra="barrido" banda={C.lima} golpes={[263.4, 267.0]}>
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #8ad0f0, #d8f0f8 60%)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 760 Q 960 700 1920 760 L 1920 1080 L 0 1080 Z" fill="#6aaa4a" /><path d="M 0 840 Q 960 790 1920 840 L 1920 1080 L 0 1080 Z" fill="#5a9a3e" /></svg>
         {Array.from({ length: 7 }, (_, i) => {
-          const x = interpolate(t, [260, 263.4], [200 + i * 90, 700 + i * 90], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-          return <Persona key={i} x={x} y={900 + (i % 2) * 40} h={i === 0 ? 300 : 240} t={t} seed={330 + i} ropa={i === 0 ? SENOR : SAJON} casco="saxon" expr={t > 266.9 ? "feliz" : "enojado"} camina={t < 263.4 ? 1.8 : 0} salta={t > 266.9 ? 1 : 0} bD={30} cD={20} manoD={<LanzaMano a={50} inclina={-14} largo={360} />} />;
+          const x = interpolate(t, [260, 263.4, 266.9], [200 + i * 90, 760 + i * 90, 1000 + i * 90], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          return <Persona key={i} x={x} y={900 + (i % 2) * 40} h={i === 0 ? 300 : 240} t={t} seed={330 + i} ropa={i === 0 ? SENOR : SAJON} casco="saxon" expr={t > 266.9 ? "feliz" : "enojado"} camina={t < 266.9 ? 1.8 : 0} salta={t > 266.9 ? 1 : 0} bD={30} cD={20} manoD={<LanzaMano a={50} inclina={-14} largo={360} />} />;
         })}
         {Array.from({ length: 5 }, (_, i) => {
           const x = 1300 + i * 110 + Math.max(0, t - 262) * 220;
           return <Persona key={i} x={x} y={900 + (i % 2) * 30} h={230} t={t} seed={340 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr="miedo" flip camina={t > 262 ? 2 : 0} />;
         })}
+        {t > 263.3 && t < 264.2 && <Particulas t={t} tipo="polvo" n={30} seed={14} />}
+        <Flash t={t} t0={263.4} dur={0.15} />
         {t > 266.95 && <Particulas t={t} tipo="destellos" n={50} seed={8} />}
-        <Ch t={t} t0={259.9} t1={266.9} text="A FEW DAYS LATER" color={C.violeta} x={120} y={130} size={56} />
-        <Ch t={t} t0={260.6} t1={266.9} text="ÆTHELWULF · ENGLISH NOBLEMAN" color={C.ambar} tinta={C.noche} x={120} y={240} size={50} />
-        <Ch t={t} t0={262.0} t1={266.9} text="VIKING RAIDERS · OPEN FIELDS" color={C.rojo} x={1200} y={130} size={48} />
+        <Ch t={t} t0={259.9} t1={266.9} text="A FEW DAYS LATER" color={C.violeta} x={120} y={150} size={56} />
+        <Ch t={t} t0={260.6} t1={266.9} text="ÆTHELWULF · ENGLISH NOBLEMAN" color={C.ambar} tinta={C.noche} x={120} y={260} size={50} />
+        <Ch t={t} t0={262.0} t1={266.9} text="VIKING RAIDERS · OPEN FIELDS" color={C.rojo} x={120} y={370} size={48} />
         <Sello t={t} t0={263.4} t1={266.9} text="BEATEN!" x={1500} y={420} size={110} color={C.lima} rot={-8} />
         <G t={t} t0={267.0} text="EVERYONE CELEBRATED" y={300} size={110} color={C.crema} />
       </Escena>
@@ -204,7 +220,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           const x = x0 + (t - 268.4) * 30;
           return (
             <React.Fragment key={k}>
-              <Persona x={x} y={980} h={k ? 400 : 440} t={t} seed={370 + k} ropa={k ? { ...SENOR, tunica: "#c8a23a", tunica2: "#8a6a1a" } : { ...SENOR, tunica: "#a8283a", tunica2: "#6a1a2a" }} barba={k ? undefined : "#6b3a1f"} expr="enojado" camina={1.3} />
+              <Persona x={x} y={980} h={k ? 400 : 440} t={t} seed={370 + k} ropa={k ? { ...SENOR, tunica: "#c8a23a", tunica2: "#8a6a1a" } : { ...SENOR, tunica: "#a8283a", tunica2: "#6a1a2a" }} barba={k ? undefined : "#6b3a1f"} expr="enojado" camina={1.3}
+                bD={!k && t > 270.8 ? 170 : undefined} cD={!k && t > 270.8 ? 0 : undefined} manoD={!k ? <g transform={`rotate(${t > 270.8 ? 180 : 140})`}><rect x={-6} y={-200} width={12} height={200} fill="#dfe6f2" stroke="#2a1530" strokeWidth={4} /><rect x={-30} y={-6} width={60} height={12} fill="#c9a24a" /></g> : undefined} />
               <Corona x={x} y={980 - (k ? 400 : 440) * 1.02} s={k ? 0.42 : 0.5} t={t} t0={268.6 + k * 0.3} />
             </React.Fragment>
           );
@@ -219,28 +236,33 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #5a4a8a, #c87a6a 70%)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 700 L 1920 700 L 1920 1080 L 0 1080 Z" fill="#4a6a3a" /><path d="M 0 700 L 1920 700 L 1920 560 L 0 560 Z" fill="#6a5038" /></svg>
         <div style={{ position: "absolute", left: 0, top: 0 }}><Empalizada x={0} y={560} n={42} h={190} /></div>
+        {[380, 960, 1540].map((gx) => <div key={gx} style={{ position: "absolute", left: gx - 70, top: 400, width: 140, height: 170, background: "#1a0e14" }} />)}
         {[380, 960, 1540].map((gx, g) => (
           <React.Fragment key={g}>
-            <div style={{ position: "absolute", left: gx - 70, top: 400, width: 140, height: 170, background: "#1a0e14" }} />
             {Array.from({ length: 4 }, (_, i) => {
               const u = Math.max(0, t - 275.85 - i * 0.18);
               const x = gx + (i % 2 ? 1 : -1) * u * 120 * (1 + i * 0.2);
               const y = 580 + u * 260 + i * 6;
-              return <Persona key={i} x={x} y={Math.min(1060, y)} h={160 + Math.min(220, u * 140)} t={t} seed={380 + g * 4 + i} ropa={VIK(g + i)} casco="vikingo" barba={barbaDe(g + i)} expr="enojado" camina={2.2} flip={i % 2 === 0} />;
+              return <Persona key={i} x={x} y={Math.min(1080, y)} h={160 + Math.min(420, u * 280)} t={t} seed={380 + g * 4 + i} ropa={VIK(g + i)} casco="vikingo" barba={barbaDe(g + i)} expr="enojado" camina={2.2} flip={i % 2 === 0} />;
             })}
           </React.Fragment>
         ))}
         <Flash t={t} t0={275.9} dur={0.2} />
         <G t={t} t0={276.0} t1={278.1} text="EVERY GATE AT ONCE" y={200} size={110} color={C.crema} />
-        {t > 278.13 && <AbsoluteFill style={{ background: "rgba(20,10,30,.72)" }} />}
-        {t > 278.13 && <Cita t={t} t0={278.2} texto="There was great slaughter on both sides." autor="ANGLO-SAXON CHRONICLE" y={540} size={64} />}
+        {t > 278.13 && <AbsoluteFill style={{ background: "rgba(20,10,30,.35)" }} />}
+        {t > 278.13 && <Cita t={t} t0={278.2} texto="There was great slaughter on both sides." autor="ANGLO-SAXON CHRONICLE" x={960} y={250} w={1200} size={56} />}
       </Escena>
       {/* 9 · Æthelwulf, el héroe de cuatro días antes, muerto · los vikingos «dueños del lugar de la matanza» */}
       <Escena t={t} t0={281.89} t1={289.19} entra="iris" ix={960} iy={600} golpes={[282.2, 285.0]}>
-        <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 40%, #4a3a7a, #120e36 80%)" }} />
+        <AbsoluteFill style={{ background: "linear-gradient(180deg, #3a2a5a, #a85a5a 70%, #d88a5a)" }} />
+        <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 780 Q 960 730 1920 780 L 1920 1080 L 0 1080 Z" fill="#3a4a2e" />
+          {[[200, 820, 30], [1050, 900, -20], [1700, 840, 60], [380, 950, 80]].map(([x, y, r], i) => <g key={i} transform={`translate(${x} ${y}) rotate(${r})`}><rect x={-4} y={-110} width={8} height={130} fill="#5e3a1e" /><path d="M 0 -150 L 10 -110 L -10 -110 Z" fill="#9aa6b8" /></g>)}
+          {[[300, 860], [1500, 900]].map(([x, y], i) => <ellipse key={"e" + i} cx={x} cy={y} rx={50} ry={34} fill={["#2f78a8", "#d6283e"][i]} stroke="#2a1530" strokeWidth={5} />)}</svg>
         <Lapida x={620} y={640} s={1.15} t={t} t0={282.0} lineas={["ÆTHELWULF", "THE HERO", "OF THE WEEK"]} />
+        {(() => { const u = prog(t, 283.0, 284.2); const x = 1200 - u * 560, y = 200 + u * 230 - Math.sin(u * Math.PI) * 60; const ala = u < 1 ? Math.sin(t * 24) * 30 : 0;
+          return <svg style={{ position: "absolute", left: x - 70, top: y - 50, overflow: "visible" }} width={140} height={100}><path d={`M 70 50 L 20 ${30 - ala} L 50 50 Z M 70 50 L 120 ${30 - ala} L 90 50 Z`} fill="#1a1428" /><ellipse cx={70} cy={56} rx={34} ry={18} fill="#1a1428" /><circle cx={100} cy={44} r={13} fill="#1a1428" /><path d="M 110 42 L 128 46 L 110 50 Z" fill="#3a3448" /><circle cx={103} cy={41} r={3} fill="#ffd36a" /></svg>; })()}
         <Cruz x={620} y={300} s={0.7} t={t} t0={282.4} />
-        <Ch t={t} t0={282.2} text="KILLED" color={C.rojo} x={620} y={950} centro size={70} />
+        <Ch t={t} t0={282.2} text="KILLED" color={C.rojo} x={620} y={900} centro size={70} />
         <Cita t={t} t0={285.0} texto="…and the Vikings held the place of slaughter." autor="THE CHRONICLE" x={1340} y={520} w={900} size={56} />
       </Escena>
       {/* 10 · la zanja no está para frenarte: está para demorarte justo donde ellos quieren */}
@@ -253,7 +275,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
             </svg>
           )}
         </Mundo>
-        <Ch t={t} t0={289.4} text="NOT THERE TO STOP YOU" color={C.violeta} x={960} y={130} centro size={60} />
+        <Ch t={t} t0={289.4} text="NOT THERE TO STOP YOU" color={C.violeta} x={960} y={150} centro size={60} />
         <G t={t} t0={291.3} text="TO SLOW YOU DOWN" y={260} size={110} color={C.crema} />
         <Sello t={t} t0={293.0} text="RIGHT HERE" x={1350} y={560} size={80} rot={-8} />
       </Escena>

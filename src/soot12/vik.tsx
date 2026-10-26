@@ -163,24 +163,43 @@ export const Perro: React.FC<Pos & { modo?: "duerme" | "alerta" | "ladra" | "aul
   const ladra = modo === "ladra" && Math.sin(t * 9) > 0;
   const aulla = modo === "aulla";
   const cola = Math.sin(t * (modo === "alerta" ? 3 : 10)) * 12;
+  const boca = ladra || aulla ? 1 : 0;
+  // perro de presa de perfil (mira a +x): pecho hondo, cintura recogida, patas con garrón, hocico largo y oreja caída
   return (
     <Obj {...p} w={420} h={340}>
-      {[-90, -50, 60, 100].map((lx, i) => <rect key={i} x={lx - 12} y={20} width={24} height={110} rx={10} fill={i % 2 ? osc : color} stroke="#2a1530" strokeWidth={6} />)}
-      <path d={`M -120 -10 Q -170 ${-60 + cola} -190 ${-110 + cola}`} stroke={color} strokeWidth={24} fill="none" strokeLinecap="round" />
-      <ellipse cx={0} cy={0} rx={140} ry={60} fill={color} stroke="#2a1530" strokeWidth={8} />
-      <g transform={`translate(120 -40) rotate(${aulla ? -40 : ladra ? -8 : 0})`}>
-        <path d="M -30 30 Q -10 -40 20 -60 L 60 -40 Q 40 0 30 40 Z" fill={color} stroke="#2a1530" strokeWidth={8} strokeLinejoin="round" />
-        <path d="M 6 -96 L 18 -166 L 58 -104 Z" fill={osc} stroke="#2a1530" strokeWidth={7} strokeLinejoin="round" />
-        <circle cx={40} cy={-72} r={52} fill={color} stroke="#2a1530" strokeWidth={8} />
-        <path d={`M 70 -96 Q 130 -100 150 -76 Q 150 -60 128 -56 L 76 -50 Z`} fill={color} stroke="#2a1530" strokeWidth={8} strokeLinejoin="round" />
-        <path d={`M 80 -52 L 128 -54 Q ${ladra || aulla ? 132 : 130} ${ladra || aulla ? -14 : -40} ${ladra || aulla ? 100 : 104} ${ladra || aulla ? -16 : -36} L 76 -38 Z`} fill={color} stroke="#2a1530" strokeWidth={7} strokeLinejoin="round" />
-        {(ladra || aulla) && <path d="M 82 -50 L 126 -52 Q 124 -24 100 -22 L 80 -36 Z" fill="#7a1a2a" />}
-        {(ladra || aulla) && [92, 108].map((tx) => <path key={tx} d={`M ${tx} -52 l 5 10 l 5 -10`} fill="#fff" />)}
-        <circle cx={148} cy={-80} r={11} fill="#1d1430" />
-        <circle cx={58} cy={-84} r={11} fill="#fff" /><circle cx={62} cy={-84} r={6} fill="#1d1430" />
-        {modo !== "alerta" && <path d="M 40 -104 L 76 -94" stroke="#2a1530" strokeWidth={7} strokeLinecap="round" />}
+      <path d={`M -150 -14 Q -190 ${-60 + cola} -176 ${-112 + cola}`} stroke={color} strokeWidth={20} fill="none" strokeLinecap="round" />
+      <path d={`M -150 -14 Q -190 ${-60 + cola} -176 ${-112 + cola}`} stroke="#2a1530" strokeWidth={30} fill="none" strokeLinecap="round" opacity={0.0} />
+      {/* patas de atrás (la lejana más oscura) */}
+      <path d="M -70 10 Q -96 60 -70 84 L -78 128" stroke={osc} strokeWidth={26} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M 70 20 L 74 128" stroke={osc} strokeWidth={24} strokeLinecap="round" />
+      {/* cuerpo */}
+      <path d="M -152 -8 Q -150 -62 -90 -62 L 70 -68 Q 126 -70 146 -36 Q 162 4 132 42 Q 70 36 10 22 Q -70 40 -128 34 Q -164 22 -152 -8 Z" fill={color} stroke="#2a1530" strokeWidth={8} strokeLinejoin="round" />
+      <path d="M -120 -48 Q -20 -64 90 -58" stroke="#fff" strokeOpacity={0.18} strokeWidth={12} fill="none" strokeLinecap="round" />
+      <path d="M 40 10 Q 90 30 130 30" stroke="#2a1530" strokeOpacity={0.25} strokeWidth={8} fill="none" />
+      {/* patas de adelante: muslo con garrón atrás, recta adelante */}
+      <path d="M -112 0 Q -150 56 -114 84 L -122 128" stroke={color} strokeWidth={30} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M -112 0 Q -150 56 -114 84 L -122 128" stroke="#2a1530" strokeWidth={6} fill="none" strokeLinecap="round" opacity={0.35} />
+      <path d="M 108 26 L 112 128" stroke={color} strokeWidth={28} strokeLinecap="round" />
+      {[[-124, 132, color], [-80, 132, osc], [76, 132, osc], [114, 132, color]].map(([x, y, c], i) => <ellipse key={i} cx={(x as number) + 8} cy={y as number} rx={22} ry={10} fill={c as string} stroke="#2a1530" strokeWidth={5} />)}
+      {/* cuello y cabeza */}
+      <path d="M 96 -52 Q 120 -112 166 -128 L 196 -98 Q 160 -70 146 -24 Z" fill={color} stroke="#2a1530" strokeWidth={8} strokeLinejoin="round" />
+      <g transform={`translate(182 -128) rotate(${aulla ? -38 : ladra ? -6 : 0})`}>
+        <ellipse cx={0} cy={0} rx={48} ry={42} fill={color} stroke="#2a1530" strokeWidth={8} />
+        <path d={`M 26 -24 Q 70 -26 104 -8 Q 112 4 104 12 L 30 ${18 - boca * 4} Z`} fill={color} stroke="#2a1530" strokeWidth={8} strokeLinejoin="round" />
+        <g transform={`rotate(${boca * 22} 30 14)`}>
+          <path d="M 30 14 L 96 14 Q 98 30 84 32 L 34 34 Z" fill={color} stroke="#2a1530" strokeWidth={7} strokeLinejoin="round" />
+          {boca > 0 && [44, 60, 76].map((tx) => <path key={tx} d={`M ${tx} 15 l 5 -9 l 5 9`} fill="#fff" stroke="#2a1530" strokeWidth={2} />)}
+        </g>
+        {boca > 0 && <path d="M 32 10 L 98 8 L 92 18 L 34 18 Z" fill="#7a1a2a" />}
+        {boca > 0 && [48, 66, 82].map((tx) => <path key={tx} d={`M ${tx} 10 l 5 9 l 5 -9`} fill="#fff" stroke="#2a1530" strokeWidth={2} />)}
+        <ellipse cx={104} cy={-6} rx={12} ry={10} fill="#1d1430" />
+        <circle cx={100} cy={-10} r={3} fill="#fff" opacity={0.6} />
+        <ellipse cx={22} cy={-14} rx={11} ry={10} fill="#fff" stroke="#2a1530" strokeWidth={3} />
+        <circle cx={25} cy={-13} r={6} fill="#1d1430" />
+        {modo !== "alerta" && <path d="M 6 -32 L 40 -26" stroke="#2a1530" strokeWidth={7} strokeLinecap="round" />}
+        <path d="M -16 -36 Q -54 -30 -50 18 Q -34 22 -14 -6 Z" fill={osc} stroke="#2a1530" strokeWidth={7} strokeLinejoin="round" />
       </g>
-      {ladra && [0, 1, 2].map((i) => <path key={i} d={`M ${280 + i * 26} ${-140 - i * 10} Q ${300 + i * 26} -110 ${280 + i * 26} ${-80 + i * 10}`} stroke="#fff" strokeWidth={8} fill="none" strokeLinecap="round" />)}
+      {ladra && [0, 1, 2].map((i) => <path key={i} d={`M ${310 + i * 26} ${-170 - i * 10} Q ${330 + i * 26} -140 ${310 + i * 26} ${-110 + i * 10}`} stroke="#fff" strokeWidth={8} fill="none" strokeLinecap="round" />)}
     </Obj>
   );
 };
@@ -242,26 +261,49 @@ export const Lanza: React.FC<Pos & { largo?: number }> = ({ largo = 600, ...p })
     <path d={`M 0 ${-largo / 2 - 50} L 24 ${-largo / 2 + 30} L 0 ${-largo / 2 + 70} L -24 ${-largo / 2 + 30} Z`} fill="#c8d0dc" stroke="#2a1530" strokeWidth={6} />
   </Obj>
 );
-export const Antorcha: React.FC<Pos> = (p) => (
-  <Obj {...p} w={200} h={420}>
-    <rect x={-12} y={-60} width={24} height={240} rx={8} fill={V.madera} stroke="#2a1530" strokeWidth={6} />
-    <rect x={-22} y={-80} width={44} height={36} rx={8} fill="#5e3a1e" />
-    <Llamas t={p.t ?? 0} x={0} y={-78} s={1} ancho={70} seed={3} />
-  </Obj>
-);
-export const Caballo: React.FC<Pos & { come?: boolean; color?: string }> = ({ come, color = "#8a5a3a", ...p }) => {
+export const Antorcha: React.FC<Pos & { apagada?: boolean }> = ({ apagada, ...p }) => {
+  // antorcha de verdad: palo largo, cabeza de trapo con brea atada con cuerda, llama grande con halo
   const t = p.t ?? 0;
   return (
-    <Obj {...p} w={520} h={440}>
-      {[-130, -90, 100, 140].map((lx, i) => <rect key={i} x={lx - 12} y={20} width={24} height={160} rx={10} fill={i % 2 ? "#5e3a24" : color} stroke="#2a1530" strokeWidth={6} />)}
-      <path d="M -170 -20 Q -230 30 -220 110" stroke="#3a2418" strokeWidth={30} fill="none" strokeLinecap="round" />
-      <ellipse cx={0} cy={0} rx={180} ry={80} fill={color} stroke="#2a1530" strokeWidth={8} />
-      <g transform={`translate(150 -30) rotate(${come ? 60 + Math.sin(t * 2) * 6 : 0})`}>
-        <path d="M -20 20 L 40 -120 L 90 -110 L 50 30 Z" fill={color} stroke="#2a1530" strokeWidth={8} strokeLinejoin="round" />
-        <path d="M 40 -130 L 150 -100 L 140 -60 L 60 -80 Z" fill={color} stroke="#2a1530" strokeWidth={8} strokeLinejoin="round" />
-        <path d="M 30 -110 L 0 -20" stroke="#3a2418" strokeWidth={20} strokeLinecap="round" />
-        <circle cx={80} cy={-104} r={8} fill="#1d1430" />
-        <path d="M 50 -132 L 44 -170 L 70 -134 Z" fill={color} stroke="#2a1530" strokeWidth={6} />
+    <Obj {...p} w={220} h={520}>
+      {!apagada && <circle cx={0} cy={-150} r={120} fill="#ffb347" opacity={0.18 + Math.sin(t * 9) * 0.04} />}
+      <path d="M -10 -40 L 10 -40 L 16 260 L -16 260 Z" fill={V.madera} stroke="#2a1530" strokeWidth={6} strokeLinejoin="round" />
+      <path d="M -36 -110 Q -40 -60 -26 -30 L 26 -30 Q 40 -60 36 -110 Q 0 -124 -36 -110 Z" fill="#3a2418" stroke="#2a1530" strokeWidth={6} />
+      {[-96, -74, -52].map((y) => <path key={y} d={`M -36 ${y} Q 0 ${y + 10} 36 ${y}`} stroke="#c9a66b" strokeWidth={6} fill="none" />)}
+      {apagada
+        ? [0, 1, 2].map((i) => <path key={i} d={`M ${-10 + i * 10} -116 Q ${-30 + i * 10} ${-170 - (t * 60 + i * 30) % 80} ${-6 + i * 10} -230`} stroke="#8a8aa0" strokeWidth={12} fill="none" strokeLinecap="round" opacity={0.6} />)
+        : <Llamas t={t} x={0} y={-112} s={1.5} ancho={80} seed={3} />}
+    </Obj>
+  );
+};
+export const Caballo: React.FC<Pos & { come?: boolean; color?: string }> = ({ come, color = "#8a5a3a", ...p }) => {
+  // caballo de perfil: lomo largo, cuello arqueado, cabeza larga con hocico, crin, cola, patas finas con cascos
+  const t = p.t ?? 0;
+  const L = "#2a1530", osc = "#4a2a18";
+  const cola = Math.sin(t * 2.4) * 8;
+  const pata = (x: number, d: string, k: number) => (
+    <g key={k} transform={`translate(${x} 30)`}>
+      <path d={d} fill={k % 2 ? "#6e4428" : color} stroke={L} strokeWidth={6} strokeLinejoin="round" />
+      <rect x={-14} y={170} width={30} height={20} rx={4} fill="#2a1a14" stroke={L} strokeWidth={4} />
+    </g>
+  );
+  return (
+    <Obj {...p} w={560} h={460}>
+      <path d={`M -190 -40 Q -250 ${10 + cola} -240 ${120 + cola}`} stroke={osc} strokeWidth={34} fill="none" strokeLinecap="round" />
+      {pata(-150, "M -26 0 Q -20 60 -12 100 L -14 172 L 16 172 L 14 96 Q 26 50 24 0 Z", 0)}
+      {pata(-110, "M -22 0 Q -16 60 -10 100 L -12 172 L 16 172 L 14 96 Q 22 50 26 0 Z", 1)}
+      {pata(110, "M -20 0 L -12 172 L 16 172 L 18 0 Z", 2)}
+      {pata(150, "M -18 0 L -10 172 L 18 172 L 22 0 Z", 3)}
+      <path d="M -200 -30 Q -210 -90 -120 -96 Q 0 -86 120 -96 Q 196 -96 200 -20 Q 196 50 120 56 Q 0 66 -130 56 Q -206 50 -200 -30 Z" fill={color} stroke={L} strokeWidth={8} strokeLinejoin="round" />
+      <path d="M -150 -70 Q 0 -60 150 -78" stroke="#fff" strokeOpacity={0.15} strokeWidth={14} fill="none" />
+      <g transform={`translate(150 -60) rotate(${come ? 58 + Math.sin(t * 2) * 5 : Math.sin(t * 0.8) * 3})`}>
+        <path d="M -30 30 Q 0 -60 40 -140 L 96 -126 Q 70 -40 50 30 Z" fill={color} stroke={L} strokeWidth={8} strokeLinejoin="round" />
+        <path d="M 30 -150 Q 70 -180 110 -160 L 196 -96 Q 210 -76 190 -64 L 166 -60 Q 120 -76 76 -100 Z" fill={color} stroke={L} strokeWidth={8} strokeLinejoin="round" />
+        <ellipse cx={192} cy={-80} rx={9} ry={6} fill={L} />
+        <path d="M 170 -62 Q 184 -54 196 -64" stroke={L} strokeWidth={4} fill="none" />
+        <circle cx={104} cy={-138} r={9} fill="#1d1430" /><circle cx={107} cy={-141} r={3} fill="#fff" />
+        <path d="M 60 -160 L 54 -204 L 84 -164 Z" fill={color} stroke={L} strokeWidth={6} strokeLinejoin="round" />
+        <path d="M 40 -150 Q 10 -110 -4 -40 Q -20 10 -30 30 Q -50 -20 -30 -80 Q -10 -130 40 -150 Z" fill={osc} />
       </g>
     </Obj>
   );
@@ -306,15 +348,40 @@ export const Runa: React.FC<Pos & { lineas?: string[] }> = ({ lineas = [], ...p 
   </Obj>
 );
 // esqueleto acostado (fosa)
-export const Esqueleto: React.FC<Pos> = (p) => (
-  <Obj {...p} w={420} h={140}>
-    <circle cx={-170} cy={0} r={34} fill="#efe6cf" stroke="#2a1530" strokeWidth={6} />
-    <circle cx={-180} cy={-6} r={7} fill="#2a1530" /><circle cx={-160} cy={-6} r={7} fill="#2a1530" />
-    <line x1={-130} y1={0} x2={60} y2={0} stroke="#efe6cf" strokeWidth={14} strokeLinecap="round" />
-    {[-100, -70, -40, -10].map((rx) => <path key={rx} d={`M ${rx} -30 Q ${rx + 8} 0 ${rx} 30`} stroke="#efe6cf" strokeWidth={9} fill="none" strokeLinecap="round" />)}
-    <path d="M 60 0 L 180 -26 M 60 0 L 180 26 M -120 0 L -60 -50 M -120 0 L -60 50" stroke="#efe6cf" strokeWidth={12} strokeLinecap="round" />
-  </Obj>
-);
+export const Esqueleto: React.FC<Pos> = (p) => {
+  // esqueleto humano tendido (vista desde arriba): cráneo con mandíbula, columna, costillas, brazos, pelvis y piernas
+  const H = "#efe6cf", L = "#2a1530";
+  const hueso = (x1: number, y1: number, x2: number, y2: number, w = 13) => (
+    <g><line x1={x1} y1={y1} x2={x2} y2={y2} stroke={L} strokeWidth={w + 8} strokeLinecap="round" /><line x1={x1} y1={y1} x2={x2} y2={y2} stroke={H} strokeWidth={w} strokeLinecap="round" />
+      <circle cx={x1} cy={y1} r={w * 0.75} fill={H} stroke={L} strokeWidth={4} /><circle cx={x2} cy={y2} r={w * 0.75} fill={H} stroke={L} strokeWidth={4} /></g>
+  );
+  return (
+    <Obj {...p} w={440} h={200}>
+      {/* piernas */}
+      {hueso(70, -16, 150, -24)}{hueso(150, -24, 220, -20)}{hueso(70, 16, 150, 26)}{hueso(150, 26, 220, 24)}
+      <path d="M 218 -30 l 22 -4 l 4 12 l -24 4 Z M 218 18 l 24 2 l -2 12 l -24 -2 Z" fill={H} stroke={L} strokeWidth={4} />
+      {/* pelvis */}
+      <path d="M 40 -34 Q 90 -40 84 0 Q 90 40 40 34 Q 58 0 40 -34 Z" fill={H} stroke={L} strokeWidth={6} strokeLinejoin="round" />
+      {/* columna */}
+      {Array.from({ length: 9 }, (_, i) => <rect key={i} x={-118 + i * 18} y={-7} width={14} height={14} rx={4} fill={H} stroke={L} strokeWidth={4} />)}
+      {/* costillas (caja torácica) */}
+      <path d="M -120 -4 Q -100 -64 -40 -56 Q -10 -50 -6 -10 L -6 10 Q -10 50 -40 56 Q -100 64 -120 4 Z" fill="#2a1530" opacity={0.35} />
+      {[-104, -84, -64, -44, -24].map((rx, i) => (
+        <g key={rx}><path d={`M ${rx} -6 Q ${rx + 6} ${-52 + i * 3} ${rx + 30} ${-48 + i * 4}`} stroke={L} strokeWidth={14} fill="none" strokeLinecap="round" /><path d={`M ${rx} -6 Q ${rx + 6} ${-52 + i * 3} ${rx + 30} ${-48 + i * 4}`} stroke={H} strokeWidth={8} fill="none" strokeLinecap="round" />
+          <path d={`M ${rx} 6 Q ${rx + 6} ${52 - i * 3} ${rx + 30} ${48 - i * 4}`} stroke={L} strokeWidth={14} fill="none" strokeLinecap="round" /><path d={`M ${rx} 6 Q ${rx + 6} ${52 - i * 3} ${rx + 30} ${48 - i * 4}`} stroke={H} strokeWidth={8} fill="none" strokeLinecap="round" /></g>
+      ))}
+      {/* brazos a los costados */}
+      {hueso(-112, -50, -40, -78, 11)}{hueso(-40, -78, 30, -64, 10)}{hueso(-112, 50, -40, 78, 11)}{hueso(-40, 78, 30, 64, 10)}
+      {[-1, 1].map((s) => <g key={s}>{[0, 1, 2, 3].map((k) => <line key={k} x1={34} y1={s * (64 - k * 4)} x2={52} y2={s * (60 - k * 7)} stroke={H} strokeWidth={5} strokeLinecap="round" />)}</g>)}
+      {/* cráneo de frente con cuencas, nariz y dientes */}
+      <path d="M -150 -46 Q -210 -46 -214 0 Q -210 46 -150 46 Q -132 30 -132 0 Q -132 -30 -150 -46 Z" fill={H} stroke={L} strokeWidth={6} />
+      <path d="M -150 -30 Q -118 -24 -116 0 Q -118 24 -150 30" fill={H} stroke={L} strokeWidth={6} />
+      <ellipse cx={-176} cy={-18} rx={14} ry={12} fill={L} /><ellipse cx={-176} cy={18} rx={14} ry={12} fill={L} />
+      <path d="M -160 -5 l 10 5 l -10 5 Z" fill={L} />
+      {[-12, -4, 4, 12].map((dy) => <line key={dy} x1={-140} y1={dy} x2={-126} y2={dy} stroke={L} strokeWidth={3} />)}
+    </Obj>
+  );
+};
 // pastel de Alfred (los panes que se queman)
 export const Panes: React.FC<Pos & { quema?: number }> = ({ quema = 0, ...p }) => (
   <Obj {...p} w={360} h={200}>

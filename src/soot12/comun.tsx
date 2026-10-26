@@ -1,4 +1,5 @@
 import React from "react";
+import { Persona, Ropa, Expr } from "./persona";
 import { AbsoluteFill, interpolate } from "remotion";
 import { rnd } from "../soot/lib";
 import { C, ent, fontFamily, Grande, Chip } from "./kit";
@@ -17,7 +18,7 @@ export const Cartel: React.FC<{ t: number; t0: number; t1: number; n: number; no
   const out = interpolate(t, [t1 - 0.3, t1], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
-      <div style={{ position: "absolute", left: 960, top: 300, transform: `translate(-50%,-50%) scale(${e * out}) rotate(${(1 - e) * -10}deg)`, display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ position: "absolute", left: 960, top: 245, transform: `translate(-50%,-50%) scale(${e * out}) rotate(${(1 - e) * -10}deg)`, display: "flex", flexDirection: "column", alignItems: "center" }}>
         <div style={{ fontFamily, fontWeight: 700, fontSize: 64, color: C.noche, background: C.ambar, padding: "6px 34px", borderRadius: 18, letterSpacing: 4, boxShadow: "0 8px 0 rgba(10,5,30,.5)" }}>TRAP #{n}</div>
         <div style={{ fontFamily, fontWeight: 700, fontSize: 150, color: C.crema, WebkitTextStroke: `13px ${C.noche}`, paintOrder: "stroke fill", textShadow: `0 10px 0 ${C.noche}`, marginTop: 6, whiteSpace: "nowrap" }}>{nombre}</div>
         <div style={{ display: "flex", gap: 22, marginTop: 18 }}>
@@ -50,7 +51,7 @@ export const Ruta: React.FC<{ t: number; t0: number; dur?: number; hasta?: numbe
         return (
           <div key={p.n} style={{ position: "absolute", left: p.x, top: p.y - 120, transform: `scale(${e * escala * (act ? 1.25 + 0.08 * Math.sin(t * 8) : 1)})`, transformOrigin: "0 0" }}>
             <div style={{ position: "absolute", left: -75, top: -75, width: 150, height: 150, borderRadius: 75, background: act ? C.rojo : C.ambar, border: "12px solid #fff", boxSizing: "border-box", fontFamily, fontWeight: 700, fontSize: 92, color: act ? "#fff" : C.noche, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: act ? `0 0 60px ${C.rojo}` : "0 12px 0 rgba(10,5,30,.5)" }}>{p.n}</div>
-            <div style={{ position: "absolute", left: 0, top: p.n % 2 ? 120 : -120, transform: "translate(-50%,-50%)", fontFamily, fontWeight: 700, fontSize: 56, color: "#fff", background: "rgba(27,18,64,.85)", padding: "4px 22px", borderRadius: 14, whiteSpace: "nowrap" }}>{p.txt}</div>
+            <div style={{ position: "absolute", left: 0, top: p.n % 2 ? 120 : -120, transform: `translate(${p.n === 1 ? -22 : p.n === 7 ? -78 : -50}%,-50%)`, fontFamily, fontWeight: 700, fontSize: 56, color: "#fff", background: "rgba(27,18,64,.85)", padding: "4px 22px", borderRadius: 14, whiteSpace: "nowrap" }}>{p.txt}</div>
           </div>
         );
       })}
@@ -83,6 +84,9 @@ export const Cuenta: React.FC<{ t: number; t0: number; t1?: number; de: number; 
 export const Sello: React.FC<{ t: number; t0: number; t1?: number; text: string; x: number; y: number; size?: number; color?: string; rot?: number }> = ({ t, t0, t1 = 1e9, text, x, y, size = 90, color = C.rojo, rot = -12 }) => {
   if (t < t0 || t > t1) return null;
   const u = Math.min(1, (t - t0) / 0.14);
+  const w = text.length * size * 0.66 + size * 0.8;
+  x = Math.min(Math.max(x, w / 2 + 140), 1780 - w / 2);
+  y = Math.min(Math.max(y, size * 0.7 + 100), 980 - size * 0.7);
   const s = 2.4 - 1.4 * u + (u >= 1 ? 0.06 * Math.exp(-(t - t0 - 0.14) * 12) : 0);
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%,-50%) rotate(${rot}deg) scale(${s})`, opacity: Math.min(1, u * 2), fontFamily, fontWeight: 700, fontSize: size, color, border: `${size * 0.1}px solid ${color}`, borderRadius: size * 0.2, padding: `0 ${size * 0.3}px`, whiteSpace: "nowrap", letterSpacing: 4, background: "rgba(255,255,255,.08)" }}>{text}</div>
@@ -184,5 +188,38 @@ export const Nieve: React.FC<{ t: number; n?: number; seed?: number; op?: number
         return <circle key={i} cx={x} cy={y} r={s} fill="#fff" opacity={op * (0.5 + 0.5 * ph)} />;
       })}
     </svg>
+  );
+};
+
+// tendido boca abajo en el pasto: cuerpo largo pegado al suelo, codos apoyados, cabeza levantada que mira;
+// la espalda sube y baja con la respiración. (x, y) = mentón sobre el suelo; h = alto de la persona parada.
+export const Tendido: React.FC<{ x: number; y: number; h?: number; t: number; seed?: number; ropa: Ropa; expr?: Expr; mira?: number; flip?: boolean; lanza?: number; barba?: string; habla?: boolean; resp?: number; casco?: "no" | "vikingo" }> = ({ x, y, h = 330, t, seed = 3, ropa, expr = "miedo", mira = -0.3, flip, lanza, barba, habla, resp = 2.4, casco = "no" }) => {
+  const S = h / 560;
+  const sp = Math.sin(t * resp + seed) * 0.5 + 0.5;
+  const f = flip ? -1 : 1;
+  const L = "#2a1530";
+  return (
+    <>
+      <svg style={{ position: "absolute", left: x - 100 * S, top: y - 200 * S, overflow: "visible" }} width={900 * S} height={240 * S} viewBox={`${flip ? -800 : -100} -200 900 240`}>
+        <g transform={`scale(${f} 1)`}>
+          <ellipse cx={300} cy={16} rx={420} ry={22} fill="rgba(10,6,30,.35)" />
+          {/* piernas estiradas hacia atrás */}
+          <path d="M 420 -40 L 700 -30 Q 730 -26 728 -6 L 700 4 L 420 -4 Z" fill={ropa.piel2} stroke={L} strokeWidth={6} strokeLinejoin="round" />
+          <path d="M 420 -20 L 690 -10 L 720 10 L 420 14 Z" fill={ropa.piel2} stroke={L} strokeWidth={6} strokeLinejoin="round" opacity={0.85} />
+          <path d="M 700 -36 q 40 -4 44 24 l -40 6 Z" fill="#6b3a1f" stroke={L} strokeWidth={5} />
+          {/* espalda / túnica: sube con la respiración */}
+          <path d={`M 40 -60 Q 120 ${-118 - sp * 12} 260 ${-104 - sp * 10} Q 400 ${-92 - sp * 6} 450 -40 L 450 10 L 40 10 Z`} fill={ropa.tunica} stroke={L} strokeWidth={7} strokeLinejoin="round" />
+          <path d={`M 120 ${-100 - sp * 10} Q 260 ${-112 - sp * 10} 400 -70`} stroke="#fff" strokeOpacity={0.16} strokeWidth={12} fill="none" />
+          <rect x={300} y={-70} width={24} height={80} rx={6} fill={ropa.cinto} />
+          {/* codos apoyados, antebrazos hacia adelante */}
+          <path d="M 120 -40 L 40 -6 L -40 -6" stroke={ropa.tunica2} strokeWidth={34} strokeLinecap="round" fill="none" />
+          <path d="M 40 -6 L -50 -6" stroke={ropa.piel} strokeWidth={26} strokeLinecap="round" fill="none" />
+          <circle cx={-56} cy={-8} r={18} fill={ropa.piel} stroke={L} strokeWidth={4} />
+          {lanza !== undefined && <g transform={`translate(${-60 + lanza * 0} -14) rotate(-3)`}><rect x={-120} y={-7} width={620} height={14} rx={6} fill="#8a5a32" stroke={L} strokeWidth={4} /><path d="M -190 0 L -116 -18 L -90 0 L -116 18 Z" fill="#c8d0dc" stroke={L} strokeWidth={5} /></g>}
+        </g>
+      </svg>
+      {/* cabeza levantada que mira (la del muñeco de siempre) */}
+      <Persona soloCabeza x={x + f * 10 * S} y={y + 300 * S + sp * 3 * S} h={h} t={t} seed={seed} ropa={ropa} expr={expr} mira={mira} barba={barba} habla={habla} casco={casco} />
+    </>
   );
 };
