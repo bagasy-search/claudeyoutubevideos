@@ -5,7 +5,8 @@ import { Craneo } from "./kit2";
 import { BRIT, IRL } from "./T6";
 import { TOP, MC, K, Cam, Pal, pant, Plano, Relampago } from "./mundo";
 import { Multitud } from "./escenas4";
-import { Yo, Otro, Picto, Ojos, Rayitas, Pin, DiplomaBronce, Gr, Cu, Sale } from "./kit3";
+import { Yo, Otro, Picto, Ojos, Rayitas, Pin, DiplomaBronce, Gr, Cu, Sale, Actua } from "./kit3";
+import { Sala } from "./sets";
 
 // GANCHO (0-48,3 s): tormenta de noche en el muro → recuerdo de Bélgica dentro del ojo → la cámara sale hasta ver
 // el muro entero de mar a mar → el norte que odia → la lluvia → el trato (25 años = 9.131 días) → la ciudadanía →
@@ -51,7 +52,7 @@ export const W0: React.FC<{ t: number; c: Cam }> = ({ t }) => {
     <>
       {/* cartel ROMA ← 1.000 millas */}
       {t > 4.0 && t < 14 && (
-        <div style={{ position: "absolute", left: 640, top: TOP - 250, transform: `scale(${ent(t, 4.08)})`, transformOrigin: "50% 100%" }}>
+        <div style={{ position: "absolute", left: 640, top: TOP - 250, transform: `scale(${ent(t, 4.08)}) rotate(${Math.sin((t - 4.08) * 13) * Math.exp(-(t - 4.08) * 2.2) * 9}deg)`, transformOrigin: "50% 100%" }}>
           <svg width={260} height={250} style={{ overflow: "visible" }}><rect x={120} y={60} width={18} height={190} fill="#6b3a1f" /><path d="M 10 30 L 60 0 L 250 0 L 250 70 L 60 70 Z" fill="#c98f4a" stroke="#6b3a1f" strokeWidth={6} /><text x={150} y={32} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={30} fill="#2a1530">ROME</text><text x={150} y={60} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={22} fill="#7a2a1a">1,000 MILES</text></svg>
         </div>
       )}
@@ -59,9 +60,13 @@ export const W0: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       <Rayitas t={t} t0={20.4} t1={22.3} n={25} x={YX + 150} y={TOP + 60} s={0.9} />
       {vivo && (
         <Yo x={YX} y={TOP} t={t} frio
-          expr={t < 1.3 ? "sorpresa" : t < 7 ? "miedo" : t < 15.3 ? "neutro" : t < 16.6 ? "miedo" : t < 18.6 ? "triste" : t < 23 ? "neutro" : t < 24.6 ? "miedo" : t < 27 ? "feliz" : "orgullo"}
-          mira={t < 14 ? 0.3 : t < 16.6 ? 0.1 : 0.5} miraY={t > 14.3 && t < 16.6 ? -1 : 0} salta={t > 25.8 ? 25.86 : undefined}
-          bD={t > 24.6 && t < 27.2 ? 150 : 14} cD={t > 24.6 && t < 27.2 ? 20 : 10} habla={t > 46} />
+          expr={t < 1.3 ? "sorpresa" : t > 4.08 && t < 5.5 ? "sorpresa" : t < 7 ? "miedo" : t < 15.3 ? "neutro" : t < 16.6 ? "miedo" : t < 18.6 ? "triste" : t < 23 ? "neutro" : t < 24.6 ? "miedo" : t < 27 ? "feliz" : "orgullo"}
+          mira={t > 4.08 && t < 5.5 ? 0.9 : t < 14 ? 0.3 : t < 16.6 ? 0.1 : 0.5} miraY={t > 14.3 && t < 16.6 ? -1 : 0} salta={t > 25.8 ? 25.86 : t > 4.08 && t < 5.2 ? 4.12 : t >= 5.5 && t < 6.4 ? 5.52 : undefined}
+          bD={t > 4.08 && t < 5.5 ? 108 + Math.sin(t * 9) * 5 : t >= 5.5 && t < 7.0 ? 138 : t > 24.6 && t < 27.2 ? 150 : 14}
+          cD={t > 4.08 && t < 5.5 ? 6 : t >= 5.5 && t < 7.0 ? 122 : t > 24.6 && t < 27.2 ? 20 : 10}
+          bI={t >= 5.5 && t < 7.0 ? 138 : undefined} cI={t >= 5.5 && t < 7.0 ? 122 : undefined}
+          inclina={t >= 5.5 && t < 7.0 ? -5 + Math.sin(t * 38) * 2 : 0}
+          habla={t > 46 || (t > 4.08 && t < 5.5)} />
       )}
       {t > 33.5 && t < 37.8 && <div style={{ position: "absolute", left: 2100, top: TOP - 520, width: 2000, height: 700, borderRadius: "50%", background: "radial-gradient(ellipse, rgba(255,214,122,.9) 0%, rgba(255,160,80,.5) 40%, transparent 70%)", opacity: prog(t, 33.5, 34.0) * (1 - prog(t, 37.3, 37.8)) }} />}
       {/* la fila de los que no eran exactamente romanos */}
@@ -121,29 +126,17 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
       <Gr t={t} w="end of the world" d={4} txt="THE END OF THE WORLD" y={170} size={120} c={C.crema} dur={1.2} />
       <Sale t={t} t0={7.0} t1={8.1}><Chip t={t} t0={7.0} text="IT'S A WALL." color={C.violeta} x={960} y={150} centro size={80} /></Sale>
       {/* 73 millas de mar a mar: el cuello de Britania (×3) con el muro que se dibuja de costa a costa */}
-      <Plano t={t} t0={8.2} t1={13.75} fondo="#1b3a6a">
-        <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 55%, #3d7fc9, #1b3a6a 85%)" }}>
-          <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
-            <g transform={`translate(985 640) scale(${3 - 0.25 * prog(t, 8.2, 13.7)}) translate(-985 -522)`}>
-              <path d={IRL} fill="#5f8a4a" stroke="#fff" strokeWidth={2} />
-              <path d={BRIT} fill="#7fa05a" stroke="#fff" strokeWidth={2} />
-              <line x1={872} y1={524} x2={1098} y2={518} stroke="#f6efe2" strokeWidth={6} strokeLinecap="round" pathLength={1} strokeDasharray={`${prog(t, 8.4, 9.6)} 1`} />
-              {[0, 1, 2, 3, 4, 5, 6].map((k) => <rect key={k} x={878 + k * 35} y={514 - k * 0.9} width={7} height={9} fill="#b89a6a" opacity={prog(t, 8.5 + k * 0.16, 8.7 + k * 0.16)} />)}
-            </g>
-            {Array.from({ length: 14 }, (_, k) => { const q = ((t - 8.2) * 0.35 + k / 14) % 1; return <path key={k} d={`M ${(k % 2 ? 200 : 1480) + (k * 37) % 200} ${300 + (k * 61) % 600 + Math.sin(t + k) * 8} q 20 -10 40 0 t 40 0`} stroke="#9fd0ff" strokeWidth={5} fill="none" opacity={0.6 * Math.sin(q * Math.PI)} />; })}
-          </svg>
-          <Yo x={1580} y={1040} h={300} t={t} frio expr={t < 11 ? "sorpresa" : "triste"} mira={-0.6} />
-        </AbsoluteFill>
-      </Plano>
+      <Plano t={t} t0={8.2} t1={13.75} fondo="#1b3a6a"><MapaCuello t={t} /></Plano>
       <Cu t={t} w="73 miles" d={7} de={0} a={73} sube={1.0} dur={5.3} y={330} size={190} suf=" MILES" color={C.ambar} />
       <Sale t={t} t0={10.54} t1={13.8}><Chip t={t} t0={10.54} text="IRISH SEA" color={C.teal} tinta={C.noche} x={420} y={700} centro size={58} /></Sale>
-      <Sale t={t} t0={10.9} t1={13.8}><Chip t={t} t0={10.9} text="NORTH SEA" color={C.teal} tinta={C.noche} x={1430} y={520} centro size={58} /></Sale>
+      <Sale t={t} t0={10.9} t1={13.8}><Chip t={t} t0={10.9} text="NORTH SEA" color={C.teal} tinta={C.noche} x={1330} y={470} centro size={58} /></Sale>
       <Gr t={t} w="cold" d={11} txt="COLD." x={700} y={850} size={130} c="#bfe6ff" dur={1.4} />
       <Gr t={t} w="wet neck" d={11} txt="WET." x={1220} y={850} size={130} c="#7fd6ff" dur={0.9} />
       <Sale t={t} t0={12.4} t1={13.75}><Chip t={t} t0={12.4} text="NORTHERN BRITAIN" color={C.violeta} x={760} y={960} centro size={64} /></Sale>
       {/* el otro lado / tu lado */}
       <Sale t={t} t0={14.42} t1={16.6}><Chip t={t} t0={14.42} text="↑ THE OTHER SIDE" color="#2a2350" x={960} y={110} centro size={60} /></Sale>
-      <Sale t={t} t0={15.6} t1={16.6}><Chip t={t} t0={15.6} text="PEOPLE WHO HATE YOU" color={C.rojo} x={960} y={960} centro size={80} /></Sale>
+      <Plano t={t} t0={15.25} t1={16.72} fondo="#120c30"><Contraplano t={t} t0={15.25} /></Plano>
+      <Sale t={t} t0={15.6} t1={16.6}><Chip t={t} t0={15.6} text="PEOPLE WHO HATE YOU" color={C.rojo} x={500} y={960} centro size={80} /></Sale>
       <Sale t={t} t0={16.86} t1={17.7}><Chip t={t} t0={16.86} text="↓ YOUR SIDE" color={C.teal} tinta={C.noche} x={960} y={960} centro size={60} /></Sale>
       {/* la nube personal */}
       {t > 17.6 && t < 18.9 && (() => { const [nx, ny] = pant(YX, CAB.y - 260, c); const e = ent(t, 17.6); return (
@@ -153,20 +146,8 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
         </svg>
       ); })()}
       <Gr t={t} w="rain" d={17} txt="RAIN." y={180} size={170} c="#bfe6ff" dur={1.0} />
-      {/* el trato */}
-      {t > 18.72 && t < 20.4 && <Pergamino x={1450} y={520} w={520} abre={prog(t, 18.72, 19.3) * 0.75} titulo="THE DEAL" lineas={6} firma={prog(t, 19.5, 20.2)} />}
-      {t > 18.9 && t < 20.4 && ["25 YEARS ✓", "IF STILL ALIVE ✓", "CITIZENSHIP ✓"].map((k, i) => <Chip key={k} t={t} t0={19.0 + i * 0.35} text={k} color={i === 2 ? C.oro : "#fff"} tinta={C.noche} x={1450} y={430 + i * 90} centro size={46} />)}
-      <Cu t={t} w="25 years" d={19} de={0} a={25} sube={0.8} dur={2.6} x={1380} y={330} size={210} suf=" YEARS" color={C.ambar} />
-      <Cu t={t} w="years on this wall" d={19} de={1} a={9131} sube={1.7} dur={2.0} x={1380} y={520} size={80} pre="DAY " color="#fff" dt={0.2} />
-      {t > 20.4 && t < 22.4 && <AbsoluteFill style={{ background: "#0b0826", opacity: 0.35 * (0.5 + 0.5 * Math.sin(t * 40)) }} />}
-      <Sale t={t} t0={23.08} t1={24.5}><Craneo x={1460} y={460} t={t} t0={23.08} s={1.5} rot={Math.sin(t * 10) * 6} /></Sale>
-      {t > 23.1 && t < 24.5 && (
-        <div style={{ position: "absolute", left: 1160, top: 640, width: 640, height: 76, borderRadius: 38, background: "#2a1530", border: "6px solid #fff", overflow: "hidden" }}>
-          <div style={{ width: `${100 - 78 * prog(t, 23.2, 24.2)}%`, height: "100%", background: `linear-gradient(90deg, ${C.rojo}, #ff8a5a)` }} />
-          <div style={{ position: "absolute", inset: 0, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 42, lineHeight: "64px", color: "#fff", WebkitTextStroke: "6px #2a1530", paintOrder: "stroke fill" }}>SURVIVAL ODDS</div>
-        </div>
-      )}
-      <Sale t={t} t0={23.46} t1={24.5}><Chip t={t} t0={23.46} text="IF YOU'RE STILL ALIVE" color={C.rojo} x={960} y={950} centro size={70} /></Sale>
+      {/* el trato (0:20) + «si seguís vivo» (0:23): plano medio en el cuarto de guardia, tilda con el dedo */}
+      <Plano t={t} t0={18.7} t1={24.5} fondo="#141030"><Trato t={t} /></Plano>
       {/* la ciudadanía */}
       {t > 24.64 && t < 27.1 && <Rayos t={t} x={1400} y={430} color="#ffe27a" op={0.2} />}
       <Sale t={t} t0={24.64} t1={27.0}><div style={{ position: "absolute", inset: 0, transform: `translateY(${(1 - prog(t, 24.64, 25.3)) * -500}px)` }}><DiplomaBronce x={1400} y={430} t={t} t0={24.64} abre={prog(t, 25.1, 25.8)} s={0.9} /></div></Sale>
@@ -191,3 +172,171 @@ export const S0: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
   );
 };
 export { Grande, interpolate };
+
+// 0:10 · el cuello de Britania con relieve: sombra exterior, sombra interior por clip, espuma en la costa;
+// el muro se dibuja ESTE → OESTE con la paleta de albañil en la punta; el soldado entero señala, explica y tirita.
+const MapaCuello: React.FC<{ t: number }> = ({ t }) => {
+  const z = 3 - 0.25 * prog(t, 8.2, 13.7);
+  const u = prog(t, 8.35, 9.9);
+  const ex = 1098, ey = 518, wx = 872, wy = 524;
+  const px = ex + (wx - ex) * u, py = ey + (wy - ey) * u;
+  return (
+    <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 55%, #3d7fc9, #1b3a6a 85%)" }}>
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+        <defs>
+          <clipPath id="p0brit"><path d={BRIT} /></clipPath>
+          <clipPath id="p0irl"><path d={IRL} /></clipPath>
+        </defs>
+        <g transform={`translate(985 640) scale(${z}) translate(-985 -522)`}>
+          {/* sombra exterior (relieve) */}
+          <path d={IRL} fill="#0c2448" opacity={0.55} transform="translate(5 8)" />
+          <path d={BRIT} fill="#0c2448" opacity={0.55} transform="translate(5 8)" />
+          {/* espuma */}
+          <path d={IRL} fill="none" stroke="#bfe6ff" strokeWidth={5 + Math.sin(t * 3) * 1.5} opacity={0.5} />
+          <path d={BRIT} fill="none" stroke="#bfe6ff" strokeWidth={5 + Math.sin(t * 3) * 1.5} opacity={0.5} />
+          <path d={IRL} fill="#5f8a4a" />
+          <path d={BRIT} fill="#7fa05a" />
+          {/* sombra interior y luz del borde */}
+          <path d={BRIT} fill="none" stroke="#3f6a2a" strokeWidth={16} opacity={0.55} clipPath="url(#p0brit)" transform="translate(3 4)" />
+          <path d={IRL} fill="none" stroke="#3a5a2a" strokeWidth={16} opacity={0.55} clipPath="url(#p0irl)" transform="translate(3 4)" />
+          <path d={BRIT} fill="none" stroke="#c9e09a" strokeWidth={3} opacity={0.8} clipPath="url(#p0brit)" transform="translate(-2 -2)" />
+          {/* colinas del norte (relieve suave) */}
+          <g clipPath="url(#p0brit)">{[[930, 470], [1000, 455], [960, 440], [1040, 480]].map(([x, y], i) => <path key={i} d={`M ${x - 22} ${y} Q ${x} ${y - 16} ${x + 22} ${y} Z`} fill="#5f8a3e" />)}</g>
+          {/* el muro: de ESTE a OESTE, con sombra y almenas */}
+          <path d={`M ${ex} ${ey + 3} L ${px} ${py + 3}`} stroke="#2a1e10" strokeWidth={7} strokeLinecap="round" opacity={0.5} />
+          <path d={`M ${ex} ${ey} L ${px} ${py}`} stroke="#f6efe2" strokeWidth={6} strokeLinecap="round" />
+          {[0, 1, 2, 3, 4, 5, 6].map((k) => { const kx = ex - 12 - k * 34, on = prog(t, 8.4 + ((ex - kx) / (ex - wx)) * 1.55, 8.55 + ((ex - kx) / (ex - wx)) * 1.55); return <rect key={k} x={kx - 4} y={ey + (wy - ey) * ((ex - kx) / (ex - wx)) - 8 - on * 2} width={8} height={10} fill="#b89a6a" stroke="#6a4a2a" strokeWidth={1.2} opacity={on} />; })}
+          {u > 0 && u < 1 && <g transform={`translate(${px} ${py})`}><circle r={7 + Math.sin(t * 30) * 1.5} fill="#ffe27a" opacity={0.85} /><circle r={3} fill="#fff" /></g>}
+          {/* gotitas de lluvia que caen sobre el norte */}
+          {t > 12.1 && Array.from({ length: 10 }, (_, k) => { const q = ((t - 12.1) * 1.6 + k * 0.1) % 1; const x = 880 + (k * 23) % 230; return <line key={k} x1={x} y1={430 + q * 120} x2={x - 3} y2={438 + q * 120} stroke="#cfe8ff" strokeWidth={2.2} opacity={0.9} />; })}
+        </g>
+        {Array.from({ length: 14 }, (_, k) => { const q = ((t - 8.2) * 0.35 + k / 14) % 1; return <path key={k} d={`M ${(k % 2 ? 200 : 1480) + (k * 37) % 200} ${300 + (k * 61) % 600 + Math.sin(t + k) * 8} q 20 -10 40 0 t 40 0`} stroke="#9fd0ff" strokeWidth={5} fill="none" opacity={0.6 * Math.sin(q * Math.PI)} />; })}
+      </svg>
+      <Actua t={t} x0={1711} x1={1710} y={990} h={430} frio
+        beats={[[8.2, "sorpresa"], [8.7, "señala"], [10.0, "habla"], [11.0, "señala"], [12.1, "tiembla"], [13.2, "encoge"]]} />
+      {/* vaho: respira frío al tiritar */}
+      {t > 12.1 && [0, 1, 2].map((k) => { const q = ((t - 12.1) * 0.9 + k / 3) % 1; return <div key={k} style={{ position: "absolute", left: 1560 - q * 110, top: 660 - q * 40, width: 40 + q * 60, height: 30 + q * 40, borderRadius: "50%", background: "#eaf6ff", opacity: 0.55 * (1 - q) }} />; })}
+    </AbsoluteFill>
+  );
+};
+
+// picto visto DE ESPALDAS (contraplano): pelo en punta, espalda pintada con espirales, lanza y puño que se agitan
+const PictoEsp: React.FC<{ x: number; y: number; h: number; t: number; seed: number; pose: 0 | 1 | 2 }> = ({ x, y, h, t, seed, pose }) => {
+  const S = h / 560, ph = seed * 1.7;
+  const sac = Math.sin(t * 7 + ph);
+  const brD = pose === 0 ? -150 + sac * 12 : pose === 1 ? -120 + Math.abs(sac) * -40 : -60 + sac * 10;
+  const brI = pose === 2 ? -150 + sac * 20 : -30 + Math.sin(t * 5 + ph) * 10;
+  const bob = Math.abs(Math.sin(t * 6 + ph)) * -8;
+  return (
+    <svg style={{ position: "absolute", left: x - 300 * S, top: y - 640 * S, overflow: "visible" }} width={600 * S} height={680 * S} viewBox="-300 -640 600 680">
+      <ellipse cx={0} cy={0} rx={130} ry={22} fill="#000" opacity={0.3} />
+      <g transform={`translate(0 ${bob}) rotate(${Math.sin(t * 3 + ph) * 3} 0 -200)`}>
+        {[-1, 1].map((k) => <rect key={k} x={k * 30 - 22} y={-200} width={44} height={196} rx={18} fill="#1d1838" />)}
+        <path d="M -95 -340 Q -110 -200 -80 -170 L 80 -170 Q 110 -200 95 -340 Q 60 -380 0 -382 Q -60 -380 -95 -340 Z" fill="#2a2350" />
+        <path d="M -50 -320 q 30 20 0 50 q -30 30 10 60 M 40 -330 q -30 30 0 60 q 26 26 -6 56" stroke="#4fb0d8" strokeWidth={10} fill="none" strokeLinecap="round" />
+        <rect x={-92} y={-196} width={184} height={26} rx={8} fill="#6b3a1f" />
+        {/* brazo derecho (lanza o puño) */}
+        <g transform={`translate(80 -350) rotate(${brD})`}>
+          <line x1={0} y1={0} x2={0} y2={130} stroke="#2a2350" strokeWidth={42} strokeLinecap="round" />
+          {pose === 0 && <g transform="translate(0 140)"><rect x={-7} y={-260} width={14} height={380} fill="#5a3418" /><path d="M -14 -260 L 0 -320 L 14 -260 Z" fill="#c8ccd4" /></g>}
+          {pose === 1 && <circle cx={0} cy={140} r={30} fill="#2a2350" />}
+          {pose === 2 && <circle cx={0} cy={140} r={28} fill="#2a2350" />}
+        </g>
+        <g transform={`translate(-80 -350) rotate(${-brI})`}>
+          <line x1={0} y1={0} x2={0} y2={130} stroke="#2a2350" strokeWidth={42} strokeLinecap="round" />
+          {pose === 2 ? <g transform="translate(0 140)"><rect x={-7} y={-240} width={14} height={340} fill="#5a3418" /><path d="M -14 -240 L 0 -300 L 14 -240 Z" fill="#c8ccd4" /></g> : <circle cx={0} cy={140} r={28} fill="#2a2350" />}
+        </g>
+        {/* cabeza de atrás: pelo en punta */}
+        <circle cx={0} cy={-450} r={92} fill="#2a2350" />
+        <path d="M -96 -440 Q -110 -540 -60 -520 Q -50 -580 -10 -546 Q 10 -600 36 -540 Q 80 -580 80 -510 Q 120 -520 96 -440 Q 60 -400 0 -398 Q -60 -400 -96 -440 Z" fill="#a0602c" />
+        <path d="M -60 -430 L -70 -380 M 60 -430 L 70 -380" stroke="#7a4a22" strokeWidth={12} strokeLinecap="round" />
+      </g>
+    </svg>
+  );
+};
+// 0:16 · contraplano: tres pictos enormes de espaldas, en primer término, miran al soldadito del muro al fondo
+const Contraplano: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => (
+  <AbsoluteFill style={{ background: "linear-gradient(180deg,#120c30,#2a2160 60%,#3a2f6a)" }}>
+    <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+      {/* el muro al fondo, del lado de ellos */}
+      <rect x={-20} y={560} width={1960} height={120} fill="#7a7290" />
+      {Array.from({ length: 24 }, (_, i) => <rect key={i} x={i * 84} y={536} width={50} height={30} fill="#7a7290" />)}
+      {Array.from({ length: 6 }, (_, r) => Array.from({ length: 24 }, (_, c) => <rect key={r + "-" + c} x={c * 84 - (r % 2) * 42} y={566 + r * 19} width={80} height={16} fill="none" stroke="#5e5778" strokeWidth={2} />))}
+      <rect x={380} y={430} width={140} height={250} fill="#857d9c" />
+      {[0, 1, 2].map((i) => <rect key={i} x={384 + i * 48} y={410} width={34} height={26} fill="#857d9c" />)}
+      <path d="M 0 680 Q 500 650 960 690 T 1920 670 L 1920 1080 L 0 1080 Z" fill="#1d3a2a" />
+      <path d="M 0 760 Q 700 720 1920 780 L 1920 1080 L 0 1080 Z" fill="#162c20" />
+      {/* lluvia */}
+      {Array.from({ length: 50 }, (_, i) => { const q = ((t * 1.4 + i * 0.137) % 1); const x = (i * 97) % 1960; return <line key={i} x1={x} y1={q * 1100 - 40} x2={x - 10} y2={q * 1100} stroke="#9fb6e8" strokeWidth={3} opacity={0.45} />; })}
+    </svg>
+    {/* el soldadito, chiquito, en el muro */}
+    <Yo x={700} y={540} h={150} t={t} frio expr="miedo" bD={120} bI={120} cD={110} cI={110} mira={0.4} />
+    {/* tus vecinos, en primer término */}
+    <PictoEsp x={1180} y={1120} h={520} t={t} seed={1} pose={0} />
+    <PictoEsp x={1470} y={1150} h={580} t={t} seed={2} pose={1} />
+    <PictoEsp x={1770} y={1110} h={500} t={t} seed={3} pose={2} />
+    {/* gritos */}
+    {t > t0 + 0.3 && [1310, 1620].map((x, i) => <div key={i} style={{ position: "absolute", left: x, top: 400 + Math.sin(t * 9 + i) * 6, fontFamily, fontWeight: 700, fontSize: 56, color: "#ffd1d1", WebkitTextStroke: "8px #2a1530", paintOrder: "stroke fill", transform: `scale(${ent(t, t0 + 0.3 + i * 0.2)}) rotate(${i ? 8 : -8}deg)` }}>{i ? "OI!" : "GRR!"}</div>)}
+  </AbsoluteFill>
+);
+
+// 0:20-0:24 · EL TRATO: el soldado (plano medio) lee el contrato colgado en la pared del cuarto de guardia y tilda cada
+// renglón con el dedo cuando lo dice la voz; raya los días en la piedra; en «si seguís vivo» se le cae la cara,
+// aparece la calavera y la barra de supervivencia se vacía.
+const Trato: React.FC<{ t: number }> = ({ t }) => {
+  const L = [
+    { txt: "25 YEARS", t0: 20.42, ok: true },
+    { txt: "ON THIS WALL", t0: 21.3, ok: true },
+    { txt: "IF STILL ALIVE", t0: 23.3, ok: false },
+    { txt: "THEN: ROMAN ★", t0: 99, ok: true },
+  ];
+  const caida = prog(t, 23.2, 23.6);
+  const dias = Math.round(1 + 9130 * prog(t, 20.42, 22.3));
+  return (
+    <AbsoluteFill>
+      <Sala t={t} tono="noche" ventana="izq" estante={false} />
+      {/* tormenta en la ventana */}
+      {Array.from({ length: 12 }, (_, i) => { const q = ((t * 1.5 + i * 0.21) % 1); return <div key={i} style={{ position: "absolute", left: 190 + (i * 23) % 260, top: 160 + q * 340, width: 3, height: 22, background: "#bcd0ff", opacity: 0.7, transform: "rotate(12deg)" }} />; })}
+      {/* rayitas de los días, rayadas en la piedra */}
+      <Rayitas t={t} t0={20.42} t1={22.3} n={25} x={170} y={600} s={0.62} />
+      {t > 20.42 && t < 22.5 && <div style={{ position: "absolute", left: 120, top: 860, padding: "6px 18px", borderRadius: 14, background: "#2a1530", border: "5px solid #fff", fontFamily, fontWeight: 700, fontSize: 46, color: "#fff", transform: `scale(${ent(t, 20.42)})` }}>DAY <span style={{ color: C.ambar }}>{dias.toLocaleString("en-US")}</span></div>}
+      {/* el contrato clavado en la pared */}
+      <div style={{ position: "absolute", left: 1010, top: 150, width: 720, height: 660, transform: `scale(${ent(t, 18.85)}) rotate(${-1.5 + (t > 23.3 ? Math.sin((t - 23.3) * 30) * Math.exp(-(t - 23.3) * 5) * 3 : 0)}deg)`, transformOrigin: "50% 0%" }}>
+        <div style={{ position: "absolute", inset: 0, transform: "translate(16px,16px)", background: "rgba(0,0,0,.35)", borderRadius: 16 }} />
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,#fbeccb,#efd8a8)", border: "8px solid #8a5a2a", borderRadius: 16 }} />
+        <div style={{ position: "absolute", left: 340, top: -18, width: 36, height: 36, borderRadius: "50%", background: "#c81d2e", border: "5px solid #6a1018" }} />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 36, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 70, color: "#5a3418", letterSpacing: 2 }}>THE DEAL</div>
+        {L.map((l, i) => {
+          const on = t > l.t0;
+          const e = on ? ent(t, l.t0, 0, { damping: 9, stiffness: 240 }) : 0;
+          const gris = i === 3 ? 0.45 : 1;
+          return (
+            <div key={i} style={{ position: "absolute", left: 50, top: 160 + i * 112, height: 90, width: 620, display: "flex", alignItems: "center", gap: 26, opacity: gris }}>
+              <div style={{ width: 76, height: 76, borderRadius: 14, border: "7px solid #5a3418", background: "#fff8e6", position: "relative", flexShrink: 0 }}>
+                {on && <div style={{ position: "absolute", left: -8, top: -26, fontFamily, fontWeight: 700, fontSize: 96, lineHeight: "96px", color: l.ok ? "#2e9b5a" : C.rojo, transform: `scale(${e})` }}>{l.ok ? "✓" : "?"}</div>}
+              </div>
+              <div style={{ fontFamily, fontWeight: 700, fontSize: 52, color: !l.ok && on ? C.rojo : "#3a2418", whiteSpace: "nowrap" }}>{l.txt}</div>
+            </div>
+          );
+        })}
+        {/* firma */}
+        <svg style={{ position: "absolute", left: 360, top: 590 }} width={300} height={50}><path d="M 10 30 q 30 -30 50 0 t 50 0 t 50 -10 t 60 10" stroke="#2a1530" strokeWidth={5} fill="none" pathLength={1} strokeDasharray={`${prog(t, 19.3, 20.1)} 1`} /></svg>
+      </div>
+      {/* el soldado: entra, lee, tilda con el dedo, y se le cae la cara */}
+      <Actua t={t} x0={-150} x1={720} y={1000} h={540} frio
+        beats={[[18.7, "camina"], [19.5, "lee"], [20.36, "señala"], [21.22, "golpea"], [22.24, "habla"], [23.08, "señala"], [23.32, "miedo"], [23.95, "tiembla"]]} />
+      {/* gota de sudor cuando se le cae la cara */}
+      {t > 23.35 && <div style={{ position: "absolute", left: 800 + 0 * caida, top: 380 + ((t - 23.35) * 120) % 60, width: 26, height: 36, borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%", background: "#9fd0ff", border: "4px solid #2a1530" }} />}
+      {/* calavera + barra de supervivencia que se vacía */}
+      <Sale t={t} t0={23.3} t1={24.5}><Craneo x={1640} y={590} t={t} t0={23.3} s={1.05} rot={Math.sin(t * 10) * 6} /></Sale>
+      {t > 23.3 && (
+        <div style={{ position: "absolute", left: 1050, top: 850, width: 700, height: 104, borderRadius: 55, background: "#2a1530", border: "7px solid #fff", overflow: "hidden", transform: `scale(${ent(t, 23.3)})` }}>
+          <div style={{ width: `${100 - 82 * prog(t, 23.5, 24.4)}%`, height: "100%", background: `linear-gradient(90deg, ${C.rojo}, #ff8a5a)` }} />
+          <div style={{ position: "absolute", inset: 0, display: "flex", justifyContent: "center", alignItems: "center", gap: 24, fontFamily, fontWeight: 700, fontSize: 48, color: "#fff", WebkitTextStroke: "8px #2a1530", paintOrder: "stroke fill" }}>
+            SURVIVAL ODDS <span style={{ color: C.ambar }}>{Math.round(100 - 82 * prog(t, 23.5, 24.4))}%</span>
+          </div>
+        </div>
+      )}
+    </AbsoluteFill>
+  );
+};

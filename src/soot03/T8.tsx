@@ -2,9 +2,10 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Casa } from "./kit";
 import { Fuerte, Barco, Campana, Soldadito } from "./kit2";
-import { Persona, CIVIL } from "./persona";
+import { Persona, CIVIL, Expr } from "./persona";
+import { Exterior } from "./escenas4";
 import { TOP, BASE, K, Cam, Pal, Plano } from "./mundo";
-import { Gr, Cu, Ch, T, ck, Yo, Otro, Lapida2, Salon, Pin, gesto } from "./kit3";
+import { Gr, Cu, Ch, T, ck, Yo, Otro, Lapida2, Salon, Pin, gesto, TUNGRO } from "./kit3";
 
 // EL GIRO + CIERRE (822-919,6 s). Los que cuidaban el muro también eran "bárbaros": el muro de Roma contra los
 // bárbaros estaba hecho de bárbaros, y funcionó casi 300 años. Se quedaron: la lápida de Regina en South Shields que
@@ -27,6 +28,126 @@ export const sol8: [number, number, number, boolean?][] = [[822.2, 1400, 180], [
 
 const ORIG = ["BELGIANS", "DUTCH", "SPANIARDS", "SYRIANS", "MOORS", "BOATMEN FROM IRAQ"];
 const ORIGW = ["belgians", "dutch", "spaniards", "syrians", "moors", "boatmen from iraq"];
+
+// ── poses distintas para la fila de orígenes: cada uno reacciona a SU nombre y después hace otra cosa
+type PoseP = { expr?: Expr; habla?: boolean; bI?: number; bD?: number; cI?: number; cD?: number; inclina?: number; salta?: number; ladea?: number; mira?: number };
+const poseFila = (i: number, t: number): PoseP => {
+  const n = T(ORIGW[i], D), bb = T("all of these men were", D);
+  const ola = (f = 12) => 150 + Math.sin(t * f) * 22;
+  if (t < n) return { ...gesto(t, [[0, "lee"]]), expr: "neutro", mira: i % 2 ? -0.3 : 0.3, inclina: 0 };
+  if (t < n + 1.4) {
+    // el beat de su nombre
+    return ([
+      { bD: 150, cD: 20, expr: "feliz", habla: true, salta: n },
+      { ...gesto(t, [[n, "sorpresa"]]) },
+      { bD: 40, cD: 120, bI: 40, cI: 120, expr: "orgullo", habla: true, inclina: -4 },
+      { ...gesto(t, [[n, "festeja"]]) },
+      { ...gesto(t, [[n, "señala"]]), mira: 0.6 },
+      { ...gesto(t, [[n, "cava"]]), expr: "feliz" },
+    ] as PoseP[])[i];
+  }
+  if (t < bb) {
+    // entre nombres: el belga saluda al holandés y el holandés le devuelve el saludo
+    return ([
+      { bD: ola(), cD: 30, expr: "feliz", mira: 0.8, habla: true },
+      { bI: ola(11), cI: 30, expr: "feliz", mira: -0.8, habla: true },
+      { ...gesto(t, [[n, "habla"]]), mira: 0.5 },
+      { bD: 40, cD: 120, bI: 40, cI: 120, expr: "orgullo", inclina: -4 },
+      { ...gesto(t, [[n, "encoge"]]), expr: "feliz" },
+      { ...gesto(t, [[n, "festeja"]]) },
+    ] as PoseP[])[i];
+  }
+  // "barbarians too": cada uno se lo toma distinto
+  return [
+    { ...gesto(t, [[bb, "sorpresa"]]) },
+    { ...gesto(t, [[bb, "miedo"]]) },
+    { ...gesto(t, [[bb, "niega"]]) },
+    { ...gesto(t, [[bb, "encoge"]]) },
+    { ...gesto(t, [[bb, "enojado"]]) },
+    { ...gesto(t, [[bb, "tiembla"]]) },
+  ][i];
+};
+
+const PAN = <g><ellipse cx={0} cy={10} rx={50} ry={30} fill="#d9a050" stroke="#8a5a20" strokeWidth={6} />{[-20, 0, 20].map((x) => <path key={x} d={`M ${x - 8} -6 L ${x + 8} 18`} stroke="#8a5a20" strokeWidth={5} strokeLinecap="round" />)}</g>;
+const BARATES = { ...CIVIL(1), tunica: "#c9a23d", tunica2: "#8f7025" };
+const REGINA = { ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f", pelo: "#6b3a1f" };
+
+// 14:28 · la pareja frente a su casa al atardecer: él le alcanza pan, se dan la mano
+const Pareja: React.FC<{ t: number }> = ({ t }) => {
+  const sy = T("a syrian and a british", D), ed = T("on the edge of the world", D), bl = T("building a life", D), tg = T("together", 872), nw = T("on the wall nobody wanted", D);
+  const pasa = prog(t, bl + 0.3, tg);
+  const junta = t > tg;
+  const ex = 760, ey = 1040, eh = 500, ax = 1180, ah = 470;
+  const balanceo = junta ? Math.sin((t - tg) * 4) * 6 : 0;
+  const panX = interpolate(pasa, [0, 1], [ex + 200, ax - 190]), panY = 790 - Math.sin(pasa * Math.PI) * 40;
+  const ella = !junta;
+  return (
+    <Exterior t={t} tono="atardecer" horizonte={620}>
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+        {Array.from({ length: 8 }, (_, i) => <rect key={i} x={i * 150 - 40} y={640 - (i % 2) * 18} width={130} height={70 + (i % 2) * 18} fill="#c9b8a0" opacity={0.85} />)}
+        <path d="M -20 1080 L -20 990 Q 960 960 1940 990 L 1940 1080 Z" fill="#b08a5a" />
+      </svg>
+      <Casa x={1640} y={1000} s={1.7} tono="#e8b98a" techo="#8a5a2a" luz />
+      {[0, 1, 2].map((i) => { const k = ((t - sy) * 0.35 + i / 3) % 1; return <div key={i} style={{ position: "absolute", left: 1740 + k * 40, top: 520 - k * 280, width: 60 + k * 80, height: 60 + k * 80, borderRadius: "50%", background: "#e6e0d8", opacity: 0.7 * (1 - k) }} />; })}
+      {/* luz cálida de atardecer que baña a los dos */}
+      <div style={{ position: "absolute", left: 300, top: 120, width: 1300, height: 1000, background: "radial-gradient(ellipse at 60% 30%, rgba(255,190,110,.35), rgba(255,170,90,0) 60%)", mixBlendMode: "screen" }} />
+      <Persona x={ex} y={ey} h={eh} t={t} seed={430} ropa={BARATES} mira={t > ed && t < bl ? -0.7 : 0.7}
+        {...gesto(t, [[sy - 0.2, "habla"], [ed, "habla"], [bl, "habla"], [tg, "festeja"]])}
+        {...(t > ed && t < bl ? { bI: 110, cI: 5, bD: 20, cD: 20, habla: true } : {})}
+        {...(t > bl && !junta ? { bD: 72, cD: 8, expr: "feliz" as const } : {})}
+        {...(junta ? { bD: 72 + balanceo, cD: 8, bI: 20, cI: 20, expr: "feliz" as const, salta: undefined, inclina: 4 } : {})} manoD={t > bl && pasa < 0.05 ? PAN : undefined} />
+      <Persona x={ax} y={ey} h={ah} t={t} seed={431} ropa={REGINA} mujer flip mira={t > ed && t < bl ? -0.7 : 0.6}
+        {...gesto(t, [[sy - 0.2, "habla"], [ed, "lee"], [bl, "sorpresa"], [tg, "festeja"]])}
+        {...(t > bl + 0.4 && ella ? { bD: 70, cD: 10, expr: "feliz" as const, salta: undefined } : {})}
+        {...(junta ? { bD: 72 - balanceo, cD: 8, bI: 35, cI: 115, expr: "feliz" as const, salta: undefined, inclina: 4 } : {})} manoI={junta ? PAN : undefined} />
+      {pasa > 0.05 && pasa < 1 && <svg style={{ position: "absolute", left: panX - 60, top: panY - 40, overflow: "visible" }} width={120} height={80} viewBox="-60 -40 120 80">{PAN}</svg>}
+      {junta && <Emote t={t} t0={tg} tipo="brillos" x={(ex + ax) / 2} y={600} s={0.9} />}
+      {junta && <div style={{ position: "absolute", left: (ex + ax) / 2 - 40, top: 610 - prog(t, tg, tg + 1.5) * 90, fontSize: 80, transform: `scale(${ent(t, tg)})`, opacity: 1 - prog(t, tg + 1.2, tg + 1.8) }}>❤</div>}
+      {t < nw && <Chip t={t} t0={sy} text="A SYRIAN + A BRITON" color={C.violeta} x={960} y={150} centro size={56} />}
+    </Exterior>
+  );
+};
+
+// 14:58 · plano medio: el veterano deja la lanza, se da vuelta y abraza a su familia; la cámara se aleja recién al final
+const Familia: React.FC<{ t: number }> = ({ t }) => {
+  const ng = T("nobody wanted to guard", 893), at = T("and then when nobody", 896), cl = T("some of them simply could not", D), hm = T("because by then it was home", D);
+  const vuelve = t > at + 0.5;
+  const vx = interpolate(t, [cl, cl + 1.0], [560, 790], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const llegan = (d: number) => prog(t, at + 0.6 + d, cl + 0.6 + d);
+  const wx = interpolate(llegan(0), [0, 1], [1600, 1020]), k1 = interpolate(llegan(0.15), [0, 1], [1650, 920]), k2 = interpolate(llegan(0.3), [0, 1], [1700, 660]);
+  const abraza = t > hm;
+  const glow = prog(t, hm, hm + 1.0);
+  const aleja = prog(t, hm + 1.0, hm + 2.2);
+  const lanzaSuelta = t > at;
+  return (
+    <AbsoluteFill style={{ transform: `scale(${1 + 0.1 * prog(t, ng, hm + 0.6) - 0.1 * aleja})`, transformOrigin: "45% 70%", background: "#ffb070" }}>
+      <Exterior t={t} tono="atardecer" horizonte={640}>
+        <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+          {Array.from({ length: 6 }, (_, i) => <rect key={i} x={i * 200 - 60} y={760} width={140} height={160} rx={6} fill={["#c9b8a0", "#bfae94"][i % 2]} stroke="#a89878" strokeWidth={5} />)}
+          <rect x={-60} y={880} width={1240} height={60} fill="#b5a48a" />
+          <path d="M -20 1080 L -20 1000 Q 960 970 1940 1000 L 1940 1080 Z" fill="#b08a5a" />
+        </svg>
+        <Casa x={1660} y={1010} s={1.7} tono="#e8b98a" techo="#8a5a2a" luz />
+        {[0, 1, 2].map((i) => { const k = ((t - ng) * 0.35 + i / 3) % 1; return <div key={i} style={{ position: "absolute", left: 1760 + k * 40, top: 520 - k * 280, width: 60 + k * 80, height: 60 + k * 80, borderRadius: "50%", background: "#e6e0d8", opacity: 0.7 * (1 - k) }} />; })}
+        {/* la lanza: en la mano mientras mira al norte; después queda apoyada en el muro */}
+        {lanzaSuelta && <svg style={{ position: "absolute", left: 300, top: 560, overflow: "visible" }} width={60} height={420}><g transform={`rotate(${-12 * prog(t, at, at + 0.4)} 30 420)`}><rect x={26} y={30} width={10} height={390} fill="#7a4a1e" /><path d="M 31 0 L 44 40 L 18 40 Z" fill="#c8ccd4" stroke="#7d8796" strokeWidth={3} /></g></svg>}
+        <Persona x={wx} y={1040} h={470} t={t} seed={431} ropa={REGINA} mujer flip camina={llegan(0) > 0 && llegan(0) < 1 ? 1.3 : 0}
+          {...gesto(t, [[at + 0.6, "camina"], [cl + 0.6, "festeja"]])} {...(abraza ? { bD: 80, cD: 50, bI: 20, expr: "feliz" as const, salta: undefined, inclina: 8 } : {})} />
+        <Persona x={vx} y={1040} h={520} t={t} seed={3} ropa={TUNGRO} viejo malla capa="#3f6b2a" pantalon="#6b4a2f" flip={!vuelve} camina={t > cl && t < cl + 1.0 ? 1.2 : 0}
+          {...gesto(t, [[ng - 1, "lee"], [at, "encoge"], [at + 0.5, "sorpresa"], [cl, "festeja"]])}
+          {...(t < at ? { bD: 12, cD: 0 } : {})} {...(t > cl && !abraza ? { bD: 120, cD: 20, bI: 120, cI: 20, expr: "feliz" as const, salta: undefined } : {})}
+          {...(abraza ? { bD: 70, cD: 95, bI: 70, cI: 95, expr: "feliz" as const, salta: undefined, inclina: 0, ladea: 6 } : {})}
+          manoD={!lanzaSuelta ? <g><rect x={-5} y={-260} width={10} height={420} fill="#7a4a1e" /><path d="M 0 -300 L 13 -260 L -13 -260 Z" fill="#c8ccd4" /></g> : undefined} />
+        <Persona x={k1} y={1040} h={300} t={t} seed={442} ropa={CIVIL(5)} flip camina={llegan(0.15) > 0 && llegan(0.15) < 1 ? 1.8 : 0}
+          {...gesto(t, [[at + 0.75, "camina"], [cl + 0.75, "festeja"]])} {...(abraza ? { bD: 100, cD: 40, bI: 100, cI: 40, expr: "feliz" as const, salta: undefined } : {})} />
+        <Persona x={k2} y={1040} h={270} t={t} seed={441} ropa={CIVIL(3)} flip={t < cl + 0.9} camina={llegan(0.3) > 0 && llegan(0.3) < 1 ? 1.8 : 0}
+          {...gesto(t, [[at + 0.9, "camina"], [cl + 0.9, "festeja"]])} {...(abraza ? { bD: 110, cD: 40, bI: 110, cI: 40, expr: "feliz" as const, salta: undefined } : {})} />
+        {abraza && <Emote t={t} t0={hm + 0.1} tipo="brillos" x={vx + 80} y={560} s={1} />}
+        <div style={{ position: "absolute", left: 200, top: 100, width: 1500, height: 1000, background: "radial-gradient(ellipse at 45% 55%, rgba(255,200,120,.45), rgba(255,170,90,0) 60%)", opacity: glow, mixBlendMode: "screen" }} />
+      </Exterior>
+    </AbsoluteFill>
+  );
+};
 
 // 1) el muro hecho de bárbaros: ladrillos con los orígenes que caen uno por uno
 const Ladrillos: React.FC<{ t: number }> = ({ t }) => {
@@ -58,11 +179,21 @@ const Regina: React.FC<{ t: number }> = ({ t }) => {
   const pal = T("a man from palmyra", D), lat = T("underneath the latin", D), ar = T("in his own language", D), tr = T("regina", 865);
   const mapa = t > pal && t < lat;
   return (
-    <AbsoluteFill style={{ background: mapa ? "radial-gradient(circle at 50% 50%, #3d7fc9, #1b3a6a 85%)" : "radial-gradient(circle at 50% 45%, #6a6a7a, #2a2a3a 90%)" }}>
+    <AbsoluteFill style={{ background: mapa ? "radial-gradient(circle at 50% 50%, #3d7fc9, #1b3a6a 85%)" : "radial-gradient(circle at 40% 30%, #8a7466, #3a2a3a 90%)" }}>
       {!mapa && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${interpolate(t, [849, 869], [1, 1.08])})`, transformOrigin: "620px 560px" }}>
+          {/* piso de pasto y luz cálida que cae desde arriba sobre la lápida */}
+          <div style={{ position: "absolute", left: -100, right: -100, top: 960, bottom: -100, background: "#4a5a3a" }} />
+          <svg style={{ position: "absolute", inset: 0, mixBlendMode: "screen" }} width={1920} height={1080}>
+            <defs><linearGradient id="rayoR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffd08a" stopOpacity={0.75} /><stop offset="1" stopColor="#ffb060" stopOpacity={0.05} /></linearGradient></defs>
+            <polygon points={`${520 + Math.sin(t * 0.6) * 10},-20 ${820 + Math.sin(t * 0.6) * 10},-20 1120,1000 260,1000`} fill="url(#rayoR)" />
+            {Array.from({ length: 16 }, (_, i) => { const k = ((i * 0.37 + t * 0.05) % 1); return <circle key={i} cx={420 + ((i * 97) % 520) + Math.sin(t + i) * 12} cy={60 + k * 880} r={3 + (i % 3)} fill="#fff2c8" opacity={0.6 * Math.sin(Math.PI * k)} />; })}
+          </svg>
           <Lapida2 x={620} y={560} s={1.1} lineas={["D · M · REGINA", "LIBERTA ET", "CONIUGE"]} pie="BARATES" />
-          <Persona x={1000} y={1010} h={340} t={t} seed={432} ropa={{ ...CIVIL(4), tunica: "#3d7fc9", tunica2: "#25548f", pelo: "#6b3a1f" }} mujer flip opacity={1 - prog(t, T("who died at 30", D), T("who died at 30", D) + 0.8)} {...gesto(t, [[T("it belongs to a woman", D), "habla"], [T("a former slave", D), "triste"]])} />
+          <Persona x={980 - 40 * (1 - prog(t, 849.4, 850.6))} y={1010} h={440} t={t} seed={432} ropa={REGINA} mujer flip camina={t < 850.6 ? 1.2 : 0} opacity={1 - 0.75 * prog(t, T("who died at 30", D), T("who died at 30", D) + 1.0)} mira={-0.6}
+            {...gesto(t, [[849.4, "camina"], [T("it belongs to a woman", D), "lee"], [T("a former slave", D), "triste"]])}
+            {...(t > T("it belongs to a woman", D) ? { bD: 95 + Math.sin(t * 1.3) * 2, cD: 8, inclina: -6 } : {})} />
+          {t > T("who died at 30", D) && t < T("it was set up by her", D) + 1 && <Emote t={t} t0={T("who died at 30", D) + 0.2} t1={T("it was set up by her", D) + 1} tipo="lagrimas" {...cabeza(980, 1010, 440)} s={0.5} />}
           {t > T("it was set up by her", D) - 0.3 && <Persona x={190} y={1030} h={400} t={t} seed={430} ropa={{ ...CIVIL(1), tunica: "#c9a23d", tunica2: "#8f7025" }} {...gesto(t, [[T("it was set up by her", D) - 0.3, "golpea"], [lat, "escribe"], [tr, "triste"]])} />}
           {t > ar && (
             <svg style={{ position: "absolute", left: 400, top: 900, overflow: "visible" }} width={440} height={80}>
@@ -91,13 +222,13 @@ const Regina: React.FC<{ t: number }> = ({ t }) => {
       )}
       {!mapa && (
         <>
-          <Chip t={t} t0={T("there is a tombstone", D)} t1={T("it belongs to a woman", D)} text="SOUTH SHIELDS · A TOMBSTONE" color="#4a4a5a" x={1380} y={180} centro size={50} />
-          {([["it belongs to a woman", "REGINA", C.violeta], ["a briton", "A BRITON", C.teal], ["a former slave", "A FORMER SLAVE", "#4a4a5a"], ["who died at 30", "DIED AT 30", C.rojo], ["it was set up by her", "SET UP BY HER HUSBAND…", C.oro], ["baratice", "…BARATES", C.oro]] as [string, string, string][]).map(([w, tx, col], i) => t > T(w, D) && t < pal ? <Chip key={i} t={t} t0={T(w, D)} text={tx} color={col} tinta={col === C.oro || col === C.teal ? C.noche : "#fff"} x={1380} y={180 + (i % 6) * 100} centro size={52} /> : null)}
-          <Chip t={t} t0={lat} t1={ar - 0.1} text="UNDER THE LATIN…" color="#4a4a5a" x={1380} y={200} centro size={52} />
-          {t > ar && t < tr && <Chip t={t} t0={ar} text="ONE MORE LINE · IN ARAMAIC" color={C.ambar} tinta={C.noche} x={1380} y={200} centro size={50} />}
-          {t > tr && <Grande t={t} t0={tr} text="“REGINA," y={360} x={1380} size={80} color="#fff" />}
-          {t > T("freed woman of baratice", D) && <Grande t={t} t0={T("freed woman of baratice", D)} text="FREEDWOMAN OF BARATES," y={480} x={1380} size={60} color="#fff" />}
-          {t > T("alas", 868) && <Grande t={t} t0={T("alas", 868)} text="ALAS.”" y={620} x={1380} size={110} color={C.ambar} />}
+          <Chip t={t} t0={T("there is a tombstone", D)} t1={T("it belongs to a woman", D)} text="SOUTH SHIELDS · A TOMBSTONE" color="#4a4a5a" x={1460} y={180} centro size={50} />
+          {([["it belongs to a woman", "REGINA", C.violeta], ["a briton", "A BRITON", C.teal], ["a former slave", "A FORMER SLAVE", "#4a4a5a"], ["who died at 30", "DIED AT 30", C.rojo], ["it was set up by her", "SET UP BY HER HUSBAND…", C.oro], ["baratice", "…BARATES", C.oro]] as [string, string, string][]).map(([w, tx, col], i) => t > T(w, D) && t < pal ? <Chip key={i} t={t} t0={T(w, D)} text={tx} color={col} tinta={col === C.oro || col === C.teal ? C.noche : "#fff"} x={1480} y={180 + (i % 6) * 100} centro size={52} /> : null)}
+          <Chip t={t} t0={lat} t1={ar - 0.1} text="UNDER THE LATIN…" color="#4a4a5a" x={1460} y={200} centro size={52} />
+          {t > ar && t < tr && <Chip t={t} t0={ar} text="ONE MORE LINE · IN ARAMAIC" color={C.ambar} tinta={C.noche} x={1460} y={200} centro size={50} />}
+          {t > tr && <Grande t={t} t0={tr} text="“REGINA," y={360} x={1440} size={80} color="#fff" />}
+          {t > T("freed woman of baratice", D) && <Grande t={t} t0={T("freed woman of baratice", D)} text="FREEDWOMAN OF BARATES," y={480} x={1440} size={60} color="#fff" />}
+          {t > T("alas", 868) && <Grande t={t} t0={T("alas", 868)} text="ALAS.”" y={620} x={1440} size={110} color={C.ambar} />}
         </>
       )}
     </AbsoluteFill>
@@ -193,8 +324,8 @@ export const W8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         const t0 = T(ORIGW[i], D);
         return (
           <React.Fragment key={i}>
-            <Otro i={i} x={x} y={TOP} h={220} t={t} expr={t > quedan ? "feliz" : t > T("all of these men were", D) ? "orgullo" : "neutro"} salta={t > quedan ? quedan + i * 0.08 : undefined} />
-            {t > t0 && <Chip t={t} t0={t0} text={o === "BOATMEN FROM IRAQ" ? "IRAQ" : o} color={[C.violeta, C.teal, C.ambar, C.rojo, "#3f8a3a", "#3d7fc9"][i]} tinta={i === 1 || i === 2 ? C.noche : "#fff"} x={x} y={TOP - 300 - (i % 2) * 60} centro size={44} />}
+            <Otro i={i} x={x} y={TOP} h={220} t={t} {...(t > quedan ? { expr: "feliz" as const, salta: quedan + i * 0.08, bD: 150, bI: 150, cD: 20, cI: 20 } : poseFila(i, t))} />
+            {t > t0 && t < T("all of these men were", D) && <Chip t={t} t0={t0} text={o === "BOATMEN FROM IRAQ" ? "IRAQ" : o} color={[C.violeta, C.teal, C.ambar, C.rojo, "#3f8a3a", "#3d7fc9"][i]} tinta={i === 1 || i === 2 ? C.noche : "#fff"} x={x} y={TOP - 300 - (i % 2) * 60} centro size={44} />}
             {t > T("all of these men were", D) && t < T("romes last line", D) && (() => { const t0b = T("all of these men were", D) + i * 0.1, fl = T("all of these men were", D) + 1.5 + i * 0.1, g = t > fl; const sy = Math.abs(Math.cos(Math.PI * prog(t, fl - 0.15, fl + 0.15))); return <div style={{ position: "absolute", left: 0, top: 0, transform: `scaleY(${t > fl - 0.15 && t < fl + 0.15 ? sy : 1})`, transformOrigin: `${x}px ${TOP + 70 + (i % 2) * 70}px` }}><Chip t={t} t0={t0b} text={g ? "ROMAN DEFENDER" : "BARBARIAN"} color={g ? C.violeta : C.rojo} x={x} y={TOP + 70 + (i % 2) * 70} centro size={36} /></div>; })()}
             {t > quedan && <Emote t={t} t0={quedan + i * 0.1} t1={quedan + 1.6} tipo="brillos" {...cabeza(x, TOP, 220)} s={0.5} />}
           </React.Fragment>
@@ -232,10 +363,12 @@ export const S8: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       <Gr t={t} w="they stayed" d={D} txt="THEY STAYED." y={200} size={150} c={C.crema} dur={1.0} />
       <Ch t={t} w="at the eastern end" d={D} txt="THE EASTERN END OF THE WALL →" y={150} c="#4a4a5a" size={56} dur={1.6} />
       <Plano t={t} t0={T("there is a tombstone", D) - 0.1} t1={T("a syrian and a british", D) - 0.15} desde={[960, 600]} fondo="#2a2a3a"><Regina t={t} /></Plano>
+      <Plano t={t} t0={T("a syrian and a british", D) - 0.1} t1={T("and when rome finally left", D) - 0.12} desde={[960, 600]} fondo="#ffb070"><Pareja t={t} /></Plano>
       <Gr t={t} w="on the wall nobody wanted" d={D} txt="ON THE WALL NOBODY WANTED." y={200} size={84} c={C.crema} dur={1.5} />
       <Ch t={t} w="and when rome finally left" d={D} txt="WHEN ROME FINALLY LEFT…" y={150} c={C.rojo} size={58} dur={1.6} />
       <Ch t={t} w="some of them never went" d={D} txt="…SOME NEVER WENT HOME" y={260} c={C.violeta} size={58} dur={1.5} />
       <Plano t={t} t0={T("at the fort of bertuswald", D) - 0.1} t1={T("nobody wanted to guard", D) - 0.15} desde={[960, 600]} fondo="#f2b880"><Birdoswald t={t} /></Plano>
+      <Plano t={t} t0={T("nobody wanted to guard", 893) - 0.1} t1={T("if you enjoyed surviving", D) - 0.12} desde={[960, 600]} fondo="#ffb070"><Familia t={t} /></Plano>
       <Ch t={t} w="nobody wanted to guard" d={D} txt="NOBODY WANTED TO GUARD IT…" y={150} c="#4a4a5a" size={58} dur={2.9} />
       <Ch t={t} w="when nobody asked them" d={D} txt="…THEN NOBODY ASKED THEM TO" y={150} c={C.violeta} size={58} dur={1.9} />
       <Ch t={t} w="some of them simply could not" d={D} txt="AND SOME COULD NOT LEAVE" y={150} c={C.rojo} size={58} dur={2.1} />

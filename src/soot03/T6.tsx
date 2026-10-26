@@ -1,12 +1,12 @@
 import React from "react";
 import { Sala } from "./sets";
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Easing, interpolate } from "remotion";
 import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Moneda } from "./kit";
 import { Soldadito, Barco, Lluvia } from "./kit2";
 import { Laurel } from "./T1";
 import { Persona, CIVIL } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa, pant, Relampago } from "./mundo";
-import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Picto, Ojos, gesto, Actua } from "./kit3";
+import { Gr, Cu, Ch, T, ck, TUNGRO, AUX, Picto, Ojos, gesto, Actua, Sale, Gesto } from "./kit3";
 
 // TRAMPA 6 · EL NORTE (618,5-746,5 s). Los pueblos del norte cruzan el muro (año 180); el mapa de Britania: el Muro
 // Antonino que se levanta y se abandona; Severo marcha a Escocia, se le funde el enemigo en las ciénagas y muere en
@@ -32,6 +32,7 @@ export const niebla6: [number, number][] = [[618.8, 0], [712.3, 0], [729.7, 0.4]
 export const rayos6: number[] = [627.0, 631.0, 693.0, 694.9, 701.1];
 export const sol6: [number, number, number, boolean?][] = [[712.3, 1500, 170, true], [741.3, -999, 0]];
 
+const BARB = (i: number) => ({ tunica: ["#5a3a26", "#3f5a2a", "#6a2a2a"][i % 3], tunica2: ["#3a2418", "#2a3f1a", "#4a1a1a"][i % 3], cinto: "#2a1810", piel: "#a8c4e8", piel2: "#7896c4", pelo: ["#c9602c", "#a0602c", "#e0a050"][i % 3] });
 // ── mapa de Britania (dibujado a mano, norte arriba)
 export const BRIT = "M 905 70 L 960 60 L 1010 90 L 990 150 L 1030 190 L 1010 260 L 1060 300 L 1040 350 L 1080 400 L 1050 440 L 1100 520 L 1120 600 L 1160 660 L 1200 720 L 1230 790 L 1180 840 L 1240 880 L 1200 940 L 1100 960 L 980 980 L 880 990 L 800 1000 L 760 960 L 840 920 L 900 880 L 860 840 L 820 800 L 870 760 L 880 700 L 840 640 L 860 580 L 900 540 L 880 500 L 840 470 L 860 420 L 820 380 L 830 330 L 800 290 L 840 240 L 810 200 L 850 150 L 830 110 Z";
 export const IRL = "M 600 470 L 690 450 L 740 500 L 730 600 L 700 690 L 620 720 L 560 680 L 540 590 L 570 520 Z";
@@ -63,7 +64,9 @@ const Frontera: React.FC<{ t: number }> = ({ t }) => {
   const an = t < g ? prog(t, a, a + 1.2) : 1 + prog(t, g + 0.4, g + 1.6);
   return (
     <Mapa t={t} antonino={an}>
-      {t < a && <Chip t={t} t0={T("and the frontier", D) + 0.3} text="THE FRONTIER NEVER STOPPED MOVING" color={C.rojo} x={960} y={980} centro size={52} />}
+      {/* la raya de la frontera no se queda quieta: tres líneas que suben y bajan entre los dos muros */}
+      {t < a + 1.2 && [0, 1, 2].map((i) => { const fy = 450 - 70 * Math.sin((t - T("and the frontier", D)) * 1.9 + i * 2.1); const op = (1 - prog(t, a + 0.3, a + 1.2)) * prog(t, T("and the frontier", D), T("and the frontier", D) + 0.4); return <svg key={"fr" + i} style={{ position: "absolute", inset: 0, opacity: op * (0.95 - i * 0.2) }} width={1920} height={1080}><line x1={790} y1={fy + 6} x2={1120} y2={fy - 6} stroke={C.rojo} strokeWidth={12 - i * 2} strokeDasharray="26 16" strokeLinecap="round" /><path d={`M 1150 ${fy - 40} l 18 -26 l 18 26 M 1150 ${fy + 34} l 18 26 l 18 -26`} stroke={C.rojo} strokeWidth={8} fill="none" strokeLinecap="round" /></svg>; })}
+      {t < a && <Chip t={t} t0={T("and the frontier", D) + 0.3} text="THE FRONTIER NEVER STOPPED MOVING" color={C.rojo} x={960} y={950} centro size={52} />}
       <Cu t={t} w="only 20 years after" d={D} de={0} a={20} sube={0.8} dur={2.6} x={460} y={200} size={110} suf=" YEARS LATER" color="#fff" />
       {t > a && <Chip t={t} t0={a + 0.3} text="THE ANTONINE WALL" color="#7a5a2a" x={540} y={360} centro size={50} />}
       {t > T("made mostly of turf", D) && <Chip t={t} t0={T("made mostly of turf", D)} t1={g} text="MOSTLY TURF" color={C.lima} tinta={C.noche} x={540} y={440} centro size={42} />}
@@ -134,39 +137,72 @@ const SeveroMuere: React.FC<{ t: number }> = ({ t }) => {
     </Mapa>
   );
 };
-// 3) el consejo de Severo a sus hijos
+// 3) el consejo de Severo a sus hijos: levanta la mano, los hijos se acercan a la cama
 const Consejo: React.FC<{ t: number }> = ({ t }) => {
   const r: [string, string, string][] = [["get along with each other", "GET ALONG WITH EACH OTHER", C.teal], ["make the soldiers rich", "MAKE THE SOLDIERS RICH", C.oro], ["and ignore everyone else", "IGNORE EVERYONE ELSE", C.rojo]];
+  const la = T("his last advice", D), r0 = T(r[0][0], D), r1 = T(r[1][0], D), r2 = T(r[2][0], D);
+  const acerca = (i: number) => interpolate(t, [la + 0.4 + i * 0.25, la + 1.9 + i * 0.25], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.quad) });
+  const sx = [1520 - 470 * acerca(0), 1800 - 520 * acerca(1)];
+  const anda = (i: number) => acerca(i) > 0.02 && acerca(i) < 0.98;
+  const sev = t < r0 ? { expr: "triste" as const, habla: true, bD: 40 + 100 * prog(t, la, la + 0.8) + Math.sin(t * 3) * 5, cD: 10, bI: 10, cI: 10 } : gesto(t, [[r0, "señala"], [r1, "habla"], [r2, "señala"]]);
   return (
     <AbsoluteFill>
       <Sala t={t} tono="violeta" />
       <div style={{ position: "absolute", left: 180, top: 640, width: 760, height: 140, background: "#8a5a2a", borderRadius: 30 }} />
       <div style={{ position: "absolute", left: 200, top: 590, width: 700, height: 90, background: "#f6efe2", borderRadius: 40 }} />
-      <Persona x={360} y={760} h={320} t={t} seed={88} ropa={SEVERO} viejo {...gesto(t, [[T("his last advice", D), "habla"], [T(r[0][0], D), "señala"], [T(r[1][0], D), "habla"], [T(r[2][0], D), "señala"]])} inclina={-62} />
-      {(() => { const n = r.filter(([w]) => t > T(w, D)).length; return n ? <div key={n} style={{ position: "absolute", left: 600, top: 380, width: 150, height: 150, borderRadius: "50%", background: C.ambar, border: "8px solid #fff", fontFamily, fontWeight: 700, fontSize: 110, lineHeight: "150px", textAlign: "center", color: C.noche, transform: `scale(${ent(t, T(r[n - 1][0], D))})` }}>{n}</div> : null; })()}
-      <Persona x={1080} y={960} h={330} t={t} seed={160} ropa={{ ...CIVIL(1), tunica: "#c93d6a", tunica2: "#8f2547" }} flip mira={-0.6} {...gesto(t, [[T("his last advice", D), "lee"], [T(r[0][0], D), "niega"], [T(r[1][0], D), "festeja"], [T(r[2][0], D), "habla"]])} />
-      <Persona x={1360} y={960} h={330} t={t} seed={161} ropa={{ ...CIVIL(2), tunica: "#3d7fc9", tunica2: "#25548f" }} flip mira={-0.6} {...gesto(t, [[T("his last advice", D), "lee"], [T(r[0][0], D), "enojado"], [T(r[1][0], D), "festeja"], [T(r[2][0], D), "señala"]])} />
+      <Persona x={360} y={760} h={320} t={t} seed={88} ropa={SEVERO} viejo {...sev} inclina={-62} />
+      {(() => { const n = r.filter(([w]) => t > T(w, D)).length; return n ? <div key={n} style={{ position: "absolute", left: 640, top: 360, width: 150, height: 150, borderRadius: "50%", background: C.ambar, border: "8px solid #fff", fontFamily, fontWeight: 700, fontSize: 110, lineHeight: "150px", textAlign: "center", color: C.noche, transform: `scale(${ent(t, T(r[n - 1][0], D))})` }}>{n}</div> : null; })()}
+      <Persona x={sx[0]} y={1010} h={450} t={t} seed={160} ropa={{ ...CIVIL(1), tunica: "#c93d6a", tunica2: "#8f2547" }} flip mira={-0.6} camina={anda(0) ? 1.3 : 0} {...(anda(0) ? { expr: "sorpresa" as const } : gesto(t, [[la, "lee"], [r0, "niega"], [r1, "festeja"], [r2, "habla"]]))} />
+      <Persona x={sx[1]} y={1010} h={450} t={t} seed={161} ropa={{ ...CIVIL(2), tunica: "#3d7fc9", tunica2: "#25548f" }} flip mira={-0.6} camina={anda(1) ? 1.3 : 0} {...(anda(1) ? { expr: "triste" as const } : gesto(t, [[la, "lee"], [r0, "enojado"], [r1, "festeja"], [r2, "señala"]]))} />
       {r.map(([w, tx, col], i) => t > T(w, D) ? <Chip key={i} t={t} t0={T(w, D)} text={`${i + 1}. ${tx}`} color={col} tinta={i === 1 ? C.noche : "#fff"} x={1240} y={170 + i * 100} centro size={50} /> : null)}
-      <Chip t={t} t0={T("his last advice", D)} t1={T("get along with each other", D)} text="HIS LAST ADVICE TO HIS SONS" color={C.violeta} x={1240} y={170} centro size={50} />
+      <Chip t={t} t0={la} t1={r0} text="HIS LAST ADVICE TO HIS SONS" color={C.violeta} x={1240} y={170} centro size={50} />
     </AbsoluteFill>
   );
 };
-// 4) vos en la ciénaga, aprobando
-const Cienaga: React.FC<{ t: number }> = ({ t }) => (
-  <AbsoluteFill style={{ background: "linear-gradient(180deg,#5c6f8f,#8b95aa)" }}>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 720, bottom: 0, background: "#4a4a2a" }} />
-    {[0, 1, 2, 3, 4, 5].map((i) => <div key={"j" + i} style={{ position: "absolute", left: 80 + i * 330, top: 600, width: 14, height: 140, background: "#5a6a2a", borderRadius: 7, transform: `rotate(${Math.sin(t * 1.3 + i) * 6}deg)`, transformOrigin: "50% 100%" }} />)}
-    {(() => { const t0 = T("if you are the soldier freezing", D); const k = prog(t, t0, t0 + 3.2); const ok = t > T("is the first piece", D); return <Persona x={960} y={960 + 60 * k} h={520} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" expr={ok ? "feliz" : k > 0.3 ? "miedo" : "triste"} bD={ok ? 150 : 60 + 70 * k} cD={ok ? 160 : 40} bI={ok ? 20 : 60 + 70 * k} cI={40} />; })()}
-    <div style={{ position: "absolute", left: 0, right: 0, top: 820, bottom: 0, background: "#3a3a20" }} />
-    {Array.from({ length: 7 }, (_, i) => { const q = (t * 0.9 + i / 7) % 1; return <div key={"b" + i} style={{ position: "absolute", left: 860 + ((i * 53) % 200), top: 830 - q * 40, width: 18 + (i % 3) * 8, height: 18 + (i % 3) * 8, borderRadius: "50%", border: "4px solid #8a8a5a", opacity: 1 - q }} />; })}
-    {[0, 1].map((i) => { const t0 = T("if you are the soldier freezing", D) + 0.8 + i * 0.5; return <Actua key={"l" + i} t={t} beats={[[t0, "camina"], [t0 + 2, "miedo"]]} x0={-200 - i * 180} x1={2200} y={1150 + i * 30} h={560} frio vuelta={t0} />; })}
-    {[0, 1, 2, 3].map((i) => <div key={"jj" + i} style={{ position: "absolute", left: i * 560 - 40, top: 860, width: 22, height: 260, background: "#3f5a1f", borderRadius: 11, transform: `rotate(${-8 + Math.sin(t * 1.7 + i) * 7}deg)`, transformOrigin: "50% 100%" }} />)}
-    {Array.from({ length: 8 }, (_, i) => <div key={i} style={{ position: "absolute", left: 200 + i * 220, top: 830 + Math.sin(t * 3 + i) * 6, width: 120, height: 16, borderRadius: 8, background: "#6a6a3a" }} />)}
-    <Lluvia t={t} n={170} op={0.6} seed={61} />
-    <Chip t={t} t0={T("if you are the soldier freezing", D)} text="A BOG · SCOTLAND" color="#4a4a2a" x={960} y={140} centro size={56} />
-    {t > T("is the first piece", D) && <Grande t={t} t0={T("genuinely useful", D)} text="GENUINELY USEFUL." y={260} size={110} color={C.lima} />}
-  </AbsoluteFill>
+// 4) vos en la ciénaga de Escocia, hundido hasta la cintura con otros dos, y el consejo que por fin sirve
+const Junco: React.FC<{ x: number; y: number; t: number; s?: number; n?: number; col?: string }> = ({ x, y, t, s = 1, n = 5, col = "#3f5a1f" }) => (
+  <svg style={{ position: "absolute", left: x - 120 * s, top: y - 360 * s, overflow: "visible" }} width={240 * s} height={360 * s} viewBox="-120 -360 240 360">
+    {Array.from({ length: n }, (_, i) => { const a = -24 + i * (48 / Math.max(1, n - 1)) + Math.sin(t * 1.6 + i + x) * 5; const L = 260 + ((i * 37) % 80); return <g key={i} transform={`rotate(${a})`}><path d={`M 0 0 L 0 ${-L}`} stroke={col} strokeWidth={10} strokeLinecap="round" />{i % 2 === 0 && <rect x={-11} y={-L - 10} width={22} height={64} rx={11} fill="#6a3f1a" />}</g>; })}
+  </svg>
 );
+const Cienaga: React.FC<{ t: number }> = ({ t }) => {
+  const t0 = T("if you are the soldier freezing", D), fp = T("is the first piece", D), gu = T("genuinely useful", D);
+  const k = prog(t, t0, t0 + 2.6);
+  return (
+    <AbsoluteFill style={{ background: "linear-gradient(180deg,#6f7fa0 0%,#c9c2b8 55%,#e8d6b0 62%)" }}>
+      {/* sol pálido detrás de la niebla */}
+      <div style={{ position: "absolute", left: 1380 - 300, top: 330 - 300, width: 600, height: 600, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,200,.95) 0 10%, rgba(255,230,180,.35) 22%, rgba(255,230,180,0) 60%)" }} />
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+        {/* lomas y pinos lejanos */}
+        <path d="M 0 600 Q 300 470 640 560 T 1300 520 T 1920 560 L 1920 700 L 0 700 Z" fill="#7c8a8c" />
+        {Array.from({ length: 22 }, (_, i) => { const x = i * 92 + ((i * 41) % 30), hh = 70 + ((i * 53) % 60); return <path key={i} d={`M ${x} 640 L ${x + 26} ${640 - hh} L ${x + 52} 640 Z`} fill="#5a6a6a" />; })}
+        {/* agua de la ciénaga con reflejo */}
+        <rect x={0} y={640} width={1920} height={440} fill="url(#cg6)" />
+        <defs><linearGradient id="cg6" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#8a9a80" /><stop offset="0.4" stopColor="#4f5f3e" /><stop offset="1" stopColor="#2c3622" /></linearGradient></defs>
+        <ellipse cx={1380} cy={700} rx={380} ry={26} fill="#fff6d8" opacity={0.35} />
+        {Array.from({ length: 9 }, (_, i) => <ellipse key={"l" + i} cx={(i * 233 + 80) % 1920} cy={720 + ((i * 71) % 300)} rx={60} ry={12} fill="#5a7a3a" opacity={0.8} />)}
+      </svg>
+      {Array.from({ length: 5 }, (_, i) => <Junco key={"j" + i} x={140 + i * 420} y={690} t={t} s={0.55} col="#4a6a2a" />)}
+      {/* bancos de niebla que pasan */}
+      {Array.from({ length: 5 }, (_, i) => <div key={"n" + i} style={{ position: "absolute", left: ((t * (30 + i * 9) + i * 520) % 2700) - 700, top: 540 + i * 50, width: 900, height: 120, borderRadius: "50%", background: "#eef0f2", opacity: 0.32 }} />)}
+      {/* tres legionarios hundidos hasta la cintura */}
+      {[{ x: 430, h: 470, sd: 31, b: [[t0, "carga"], [fp, "habla"], [gu, "festeja"]] }, { x: 1500, h: 450, sd: 32, b: [[t0, "tiembla"], [t0 + 1.6, "señala"], [gu, "festeja"]] }].map((p, i) => (
+        <Persona key={i} x={p.x} y={1150 + 30 * k} h={p.h} t={t} seed={p.sd} ropa={AUX(i * 3)} casco="legion" malla capa="#7a2a2a" flip={i === 1} mira={i === 1 ? -0.5 : 0.5} {...gesto(t, p.b as [number, Gesto][])} />
+      ))}
+      {(() => { const ok = t > gu; const piensa = t > fp && !ok; return <Persona x={960} y={1180 + 50 * k} h={560} t={t} seed={3} ropa={TUNGRO} casco="legion" malla pantalon="#6b4a2f" capa="#3f6b2a" {...(ok ? gesto(t, [[gu, "festeja"]]) : piensa ? { expr: "sorpresa" as const, bD: 120, cD: 100, bI: 15, cI: 20, habla: true } : gesto(t, [[t0 - 0.2, "tiembla"]]))} />; })()}
+      {/* superficie del agua por delante: tapa las piernas, con ondas alrededor de cada uno */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 930, bottom: 0, background: "linear-gradient(180deg, rgba(74,90,52,.96), rgba(40,50,30,.98))" }} />
+      {[430, 960, 1500].map((x, i) => [0, 1].map((j) => { const q = (t * 0.7 + j / 2 + i * 0.3) % 1; return <div key={i + "-" + j} style={{ position: "absolute", left: x - 120 - q * 90, top: 920 - q * 6, width: 240 + q * 180, height: 34 + q * 14, borderRadius: "50%", border: "5px solid #a8b890", opacity: 0.8 * (1 - q) }} />; }))}
+      {Array.from({ length: 7 }, (_, i) => { const q = (t * 0.9 + i / 7) % 1; return <div key={"b" + i} style={{ position: "absolute", left: 860 + ((i * 53) % 200), top: 940 - q * 30, width: 16 + (i % 3) * 8, height: 16 + (i % 3) * 8, borderRadius: "50%", border: "4px solid #a8b890", opacity: 1 - q }} />; })}
+      {/* juncos en primer plano, a los costados */}
+      <Junco x={60} y={1120} t={t} s={1.15} n={6} />
+      <Junco x={1860} y={1120} t={t} s={1.2} n={6} />
+      <Lluvia t={t} n={110} op={0.4} seed={61} />
+      <Chip t={t} t0={t0} text="A BOG · SCOTLAND" color="#4a4a2a" x={960} y={140} centro size={56} />
+      {t > gu && <Grande t={t} t0={gu} text="GENUINELY USEFUL." y={270} size={110} color={C.lima} />}
+    </AbsoluteFill>
+  );
+};
 // 4b) el 367: tres pueblos corren hacia la muralla al mismo tiempo
 const Anio367: React.FC<{ t: number }> = ({ t }) => {
   const a = T("and then came the worst", D);
@@ -182,44 +218,64 @@ const Anio367: React.FC<{ t: number }> = ({ t }) => {
     </AbsoluteFill>
   );
 };
-// 5) la conspiración del 367
+// 5) la conspiración del 367: tres pueblos (íconos grandes) viajan sobre sus flechas; un soldado mira el mapa y se asusta
+const qb = (k: number, a: [number, number], c: [number, number], b: [number, number]) => [(1 - k) * (1 - k) * a[0] + 2 * (1 - k) * k * c[0] + k * k * b[0], (1 - k) * (1 - k) * a[1] + 2 * (1 - k) * k * c[1] + k * k * b[1]];
+const Insignia: React.FC<{ x: number; y: number; t: number; col: string; tipo: 0 | 1 | 2; s?: number }> = ({ x, y, t, col, tipo, s = 1 }) => (
+  <div style={{ position: "absolute", left: x - 85 * s, top: y - 85 * s, width: 170 * s, height: 170 * s, borderRadius: "50%", background: "#f6efe2", border: `${10 * s}px solid ${col}`, boxShadow: "0 10px 0 rgba(20,8,40,.35)", overflow: "hidden" }}>
+    <svg width={170 * s} height={170 * s} viewBox="-85 -85 170 170">
+      {tipo === 0 && <g><circle cx={0} cy={10} r={44} fill="#2a2350" /><path d="M -46 -2 Q -60 -58 -20 -36 Q 0 -74 20 -36 Q 60 -58 46 -2 Z" fill="#a0602c" /><circle cx={-15} cy={8} r={9} fill="#fff" /><circle cx={15} cy={8} r={9} fill="#fff" /><path d="M -28 -10 l 18 8 M 28 -10 l -18 8" stroke="#fff" strokeWidth={5} /><path d="M -30 30 q 10 -10 20 0 M 10 30 q 10 -10 20 0" stroke="#4fb0d8" strokeWidth={6} fill="none" /><rect x={-12} y={48} width={24} height={40} fill="#2a2350" /></g>}
+      {tipo === 1 && <g><circle cx={0} cy={12} r={42} fill="#f2c09a" /><path d="M -46 0 Q -40 -56 0 -54 Q 40 -56 46 0 Q 20 -24 0 -22 Q -20 -24 -46 0 Z" fill="#3f8a3a" /><circle cx={-14} cy={10} r={7} fill="#3b2416" /><circle cx={14} cy={10} r={7} fill="#3b2416" /><path d="M -16 34 Q 0 26 16 34" stroke="#3b2416" strokeWidth={5} fill="none" /><path d="M -30 46 Q 0 70 30 46 L 30 85 L -30 85 Z" fill="#c9602c" /><line x1={52} y1={-70} x2={52} y2={85} stroke="#6b4a2f" strokeWidth={8} /><path d="M 42 -66 L 52 -88 L 62 -66 Z" fill="#9aa4b4" /></g>}
+      {tipo === 2 && <g transform={`rotate(${Math.sin(t * 2.4) * 6})`}><path d="M -66 20 L 66 20 L 46 50 L -46 50 Z" fill="#8a4a20" /><rect x={-4} y={-60} width={8} height={80} fill="#6b3a1f" /><path d="M -40 -54 L 40 -54 L 34 10 L -34 10 Z" fill="#f2ead8" /><path d="M -12 -40 L 12 -40 L 0 -16 Z" fill={C.naranja} />{[-44, -20, 4, 28].map((xx) => <circle key={xx} cx={xx + 8} cy={26} r={10} fill={C.ambar} stroke="#6a4a10" strokeWidth={3} />)}<path d="M -85 62 Q -60 52 -40 62 T 0 62 T 40 62 T 85 62" stroke="#3d7fc9" strokeWidth={8} fill="none" /></g>}
+    </svg>
+  </div>
+);
 const Conspira: React.FC<{ t: number }> = ({ t }) => {
-  const p = T("picts from the north", D), s = T("scots from ireland", D), x = T("saxons from the sea", D), a = T("all at once", D);
+  const h0 = T("the historian ammianus", D), p = T("picts from the north", D), s = T("scots from ireland", D), x = T("saxons from the sea", D), a = T("all at once", D);
+  const ck_ = T("the roman commander of the coast", D), g = T("the general in charge", D);
   const pulse = t > a ? 1 + 0.08 * Math.sin(t * 12) : 1;
+  const R: { t0: number; a: [number, number]; c: [number, number]; b: [number, number]; col: string; tipo: 0 | 1 | 2; lab: string; lx: number; ly: number; lc: string }[] = [
+    { t0: p, a: [1500, 210], c: [1150, 260], b: [985, 470], col: "#4fb0d8", tipo: 0, lab: "PICTS · NORTH", lx: 1500, ly: 345, lc: "#2a2350" },
+    { t0: s, a: [430, 560], c: [640, 470], b: [860, 590], col: C.lima, tipo: 1, lab: "SCOTS · IRELAND", lx: 470, ly: 395, lc: "#3f8a3a" },
+    { t0: x, a: [1620, 760], c: [1420, 690], b: [1215, 735], col: C.ambar, tipo: 2, lab: "SAXONS · THE SEA", lx: 1600, ly: 895, lc: C.naranja },
+  ];
   return (
     <Mapa t={t}>
-      {([[930, 120, "#4fb0d8"], [600, 560, C.lima], [1560, 760, C.ambar]] as const).map(([x0, y0, col], i) => <div key={"o" + i} style={{ position: "absolute", left: x0 - 70, top: y0 - 70 + 40, width: 140, height: 140, borderRadius: "50%", border: `10px solid ${col}`, transform: `scale(${0.8 + 0.25 * Math.abs(Math.sin(t * 4 + i))})` }} />)}
-      {([[930, 120], [600, 560], [1560, 760]] as const).map(([x0, y0], i) => <Picto key={"q" + i} x={x0} y={y0 + 40 - Math.abs(Math.sin(t * 5 + i)) * 20} s={0.42} t={t} seed={520 + i} grita />)}
       <div style={{ position: "absolute", inset: 0, transform: `scale(${pulse})`, transformOrigin: "960px 600px" }}>
-        <Flecha t={t} t0={p} d="M 930 120 Q 960 330 960 500" col="#4fb0d8" w={34} />
-        <Flecha t={t} t0={s} d="M 600 560 Q 760 540 860 580" col={C.lima} w={34} />
-        <Flecha t={t} t0={x} d="M 1560 760 Q 1380 720 1200 730" col={C.ambar} w={34} />
+        {R.map((r, i) => <Flecha key={i} t={t} t0={r.t0} d={`M ${r.a[0]} ${r.a[1]} Q ${r.c[0]} ${r.c[1]} ${r.b[0]} ${r.b[1]}`} col={r.col} w={30} dur={1.6} />)}
       </div>
-      {([[p, 930, 120, 960, 500], [s, 600, 560, 860, 580], [x, 1560, 760, 1200, 730]] as const).map(([t0, x0, y0, x1, y1], i) => t > t0 ? [0, 1, 2].map((j) => { const k = prog(t, t0 + 0.3 + j * 0.35, t0 + 2.6 + j * 0.35); return <div key={i + "-" + j} style={{ position: "absolute", left: 0, top: 0, opacity: k > 0 && k < 1 ? 1 : 0 }}><Picto x={x0 + (x1 - x0) * k + (j - 1) * 30} y={y0 + (y1 - y0) * k + 40} s={0.32} t={t} seed={500 + i * 3 + j} grita /></div>; }) : null)}
-      {t > p && <Chip t={t} t0={p} text="PICTS · NORTH" color="#2a2350" x={620} y={160} centro size={50} />}
-      {t > s && <Chip t={t} t0={s} text="SCOTS · IRELAND" color="#3f8a3a" x={420} y={760} centro size={50} />}
-      {t > x && <Chip t={t} t0={x} text="SAXONS · THE SEA" color={C.naranja} x={1560} y={870} centro size={50} />}
-      {t > a && <Grande t={t} t0={a} text="ALL AT ONCE." x={470} y={930} size={90} color={C.rojo} borde="#fff" />}
-      <Chip t={t} t0={T("the historian ammianus", D)} t1={p} text="“A BARBARIAN CONSPIRACY”" color={C.rojo} x={960} y={150} centro size={60} />
-      {t > T("the roman commander of the coast", D) && <Chip t={t} t0={T("the roman commander of the coast", D)} text="COAST COMMANDER · KILLED" color={C.rojo} x={1450} y={330} centro size={44} />}
-      {t > T("the general in charge", D) && <Chip t={t} t0={T("the general in charge", D)} text="FRONTIER GENERAL · CAPTURED" color={C.rojo} x={1450} y={420} centro size={44} />}
+      {R.map((r, i) => { const k = Easing.inOut(Easing.quad)(prog(t, r.t0, r.t0 + 1.6)); const [ix, iy] = qb(k, r.a, r.c, r.b); const vivo = t > r.t0; const bob = vivo ? 0 : Math.sin(t * 4 + i) * 8; return <div key={"i" + i} style={{ position: "absolute", left: 0, top: 0, transform: `scale(${t > a ? pulse : 1})`, transformOrigin: `${ix}px ${iy}px` }}><Insignia x={ix} y={iy + bob} t={t} col={r.col} tipo={r.tipo} s={vivo ? 0.95 : 0.8 + 0.06 * Math.sin(t * 3 + i)} /></div>; })}
+      {R.map((r, i) => t > r.t0 ? <Chip key={"c" + i} t={t} t0={r.t0} text={r.lab} color={r.lc} x={r.lx} y={r.ly} centro size={46} /> : null)}
+      <Actua t={t} beats={[[h0, "lee"], [p, "sorpresa"], [s, "señala"], [x, "miedo"], [a, "tiembla"], [ck_, "triste"], [g, "miedo"]]} x0={230} x1={230} y={1060} h={440} frio />
+      {t > a && <Sale t={t} t0={a} t1={ck_ - 0.2}><Grande t={t} t0={a} text="ALL AT ONCE." x={960} y={150} size={100} color={C.rojo} borde="#fff" /></Sale>}
+      <Chip t={t} t0={h0} t1={p - 0.1} text="“A BARBARIAN CONSPIRACY”" color={C.rojo} x={900} y={150} centro size={52} />
+      {t > ck_ && <Chip t={t} t0={ck_} text="COAST COMMANDER · KILLED" color={C.rojo} x={430} y={150} centro size={42} />}
+      {t > g && <Chip t={t} t0={g} text="FRONTIER GENERAL · CAPTURED" color={C.rojo} x={1440} y={150} centro size={42} />}
     </Mapa>
   );
 };
-// 6) Teodosio retoma la provincia
+// 6) Teodosio retoma la provincia pueblo por pueblo: cada pin cae y él lo cuenta con el dedo
 const Teodosio: React.FC<{ t: number }> = ({ t }) => {
   const a = T("the emperors general theodosius", D), r = T("retake the province", D), d2 = T("and disband the scouts", D);
   const pueblos: [number, number][] = [[1180, 900], [1100, 800], [1000, 760], [1090, 660], [960, 640], [1020, 560]];
+  const paso = 0.38;
   const k = prog(t, a + 0.2, a + 2.6);
+  const n = pueblos.filter((_, i) => t > r + i * paso).length;
+  const H = 480, X = 300, Y = 1040, S = H / 560;
+  const obj = n ? pueblos[n - 1] : pueblos[0];
+  const ang = (Math.atan2(obj[0] - (X + 66 * S), obj[1] - (Y - 322 * S)) * 180) / Math.PI;
+  const cuenta = t > r && t < d2;
+  const tn = r + Math.max(0, n - 1) * paso;
   return (
     <Mapa t={t}>
       <Barco x={1500 - 380 * k} y={1020 - 60 * k} s={0.35} t={t} />
-      {pueblos.map(([x, y], i) => t > r + i * 0.3 ? <div key={i} style={{ position: "absolute", left: x - 22, top: y - 22, width: 44, height: 44, borderRadius: "50%", background: C.rojo, border: "6px solid #fff", transform: `scale(${ent(t, r + i * 0.3)})` }} /> : null)}
-      <Persona x={300} y={990} h={420} t={t} seed={91} ropa={{ ...AUX(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" }} casco="centurion" malla capa="#c81d2e" {...gesto(t, [[a, "habla"], [r, "señala"], [d2, "niega"]])} />
-      {t > r && <div style={{ position: "absolute", left: 1320, top: 380, fontFamily, fontWeight: 700, fontSize: 56, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill" }}>TOWNS RETAKEN: {pueblos.filter((_, i) => t > r + i * 0.3).length}</div>}
+      {pueblos.map(([x, y], i) => t > r + i * paso ? <div key={i} style={{ position: "absolute", left: x - 26, top: y - 26, width: 52, height: 52, borderRadius: "50%", background: C.rojo, border: "7px solid #fff", transform: `translateY(${(1 - ent(t, r + i * paso)) * -120}px) scale(${ent(t, r + i * paso)})`, display: "flex", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700, fontSize: 28, color: "#fff" }}>{i + 1}</div> : null)}
+      {n > 0 && cuenta && <div style={{ position: "absolute", left: obj[0] - 50, top: obj[1] - 50, width: 100, height: 100, borderRadius: "50%", border: `6px solid ${C.ambar}`, opacity: 1 - prog(t, tn, tn + 0.5), transform: `scale(${1 + prog(t, tn, tn + 0.5)})` }} />}
+      <Persona x={X} y={Y} h={H} t={t} seed={91} ropa={{ ...AUX(0), tunica: "#7a2a9a", tunica2: "#4a1a6a" }} casco="centurion" malla capa="#c81d2e"
+        {...(cuenta ? { expr: (n % 2 ? "orgullo" : "sorpresa") as "orgullo" | "sorpresa", habla: true, bD: ang, cD: 4, bI: 20 + (n % 2) * 30, cI: 40, inclina: 4 } : gesto(t, [[a, "habla"], [d2, "niega"]]))} />
+      {t > r && <div style={{ position: "absolute", left: 1150, top: 380, fontFamily, fontWeight: 700, fontSize: 60, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill", whiteSpace: "nowrap" }}>TOWNS RETAKEN: <span style={{ display: "inline-block", color: C.ambar, transform: `scale(${1 + 0.5 * (1 - prog(t, tn, tn + 0.35))})` }}>{n}</span></div>}
       <Chip t={t} t0={a} text="GENERAL THEODOSIUS" color={C.violeta} x={1460} y={180} centro size={54} />
       {t > r && <Chip t={t} t0={r} text="TOWN BY TOWN" color={C.rojo} x={1460} y={270} centro size={48} />}
-      {t > d2 && <Chip t={t} t0={d2} text="SCOUTS: DISBANDED ✗" color="#2a2350" x={640} y={330} centro size={50} />}
+      {t > d2 && <Chip t={t} t0={d2} text="SCOUTS: DISBANDED ✗" color="#2a2350" x={560} y={160} centro size={46} />}
     </Mapa>
   );
 };
@@ -231,22 +287,57 @@ export const W6: React.FC<{ t: number; c: Cam }> = ({ t }) => {
   const traidor = T("ammianus says they", D);
   return (
     <>
-      {/* el norte cruza el muro */}
-      {t > cruza - 0.2 && t < T("rome called it", D) + 0.5 && Array.from({ length: 10 }, (_, i) => {
-        const k = prog(t, cruza + i * 0.25, cruza + 3 + i * 0.25);
-        const corre = Math.max(0, t - (cruza + 3 + i * 0.25));
-        return <Picto key={i} x={M6 - 1200 + i * 260 + (i % 3) * 40 + 140 * k + corre * (70 + (i % 3) * 25)} y={TOP - 10 + k * 310 - 190 * Math.sin(Math.PI * k) + (i % 2) * 30 - (corre > 0 ? Math.abs(Math.sin(t * 7 + i)) * 22 : 0)} s={1.0 + (i % 3) * 0.15} t={t} seed={200 + i} sube={cruza + i * 0.12} grita />;
+      {/* el norte cruza el muro: bárbaros de tres tamaños y poses (hacha en alto, salto, carga), y dos escaleras */}
+      {t > cruza - 0.6 && t < T("rome called it", D) + 0.5 && Array.from({ length: 8 }, (_, i) => {
+        const t0 = cruza + [0, 0.5, 1.1, 1.6, 2.3, 2.9, 3.6, 4.2][i];
+        if (t < t0 - 0.5) return null;
+        const k = prog(t, t0, t0 + 1.2);
+        const corre = Math.max(0, t - (t0 + 1.2));
+        const h = [300, 400, 250, 440, 330, 270, 380, 310][i];
+        const x = M6 - 1250 + i * 290 + (i % 3) * 30 + 150 * k + corre * (60 + (i % 3) * 25);
+        const y = TOP - 10 + k * 310 - 210 * Math.sin(Math.PI * k);
+        const pose = i % 3;
+        const g = t < t0 ? { expr: "enojado" as const, habla: true, bD: 150, bI: 150, cD: 20, cI: 20 } : k < 1 ? { expr: "enojado" as const, habla: true, bD: 160, bI: 120, cD: 10, cI: 40, inclina: 10 } : pose === 0 ? { expr: "enojado" as const, habla: true, bD: 150 + Math.sin(t * 9 + i) * 20, cD: 30, bI: 30, cI: 40 } : pose === 1 ? { expr: "enojado" as const, habla: true, bD: 95, cD: 10, bI: 95, cI: 10, inclina: 12 } : { expr: "feliz" as const, habla: true, bD: 165, bI: 165, cD: 15, cI: 15 };
+        return <Persona key={i} x={x} y={y} h={h} t={t} seed={200 + i} ropa={BARB(i)} pantalon={i % 2 ? "#5a3a26" : "#3a5a8a"} camina={corre > 0 ? 1.7 : 0} {...g}
+          manoD={pose === 0 ? <g><rect x={-6} y={-90} width={12} height={130} fill="#6b4a2f" /><path d="M 4 -90 Q 50 -100 46 -50 L 4 -60 Z" fill="#9aa4b4" stroke="#5d6577" strokeWidth={4} /></g> : undefined} />;
+      })}
+      {t > cruza + 0.2 && t < T("rome called it", D) + 0.5 && [M6 - 560, M6 + 760].map((lx, L) => {
+        const sube = (j: number) => cruza + 0.8 + L * 0.7 + j * 2.6;
+        return (
+          <React.Fragment key={"e" + L}>
+            <div style={{ position: "absolute", left: lx - 300, top: TOP - 700, width: 600, height: 712, overflow: "hidden" }}>
+              <div style={{ position: "absolute", left: -(lx - 300), top: -(TOP - 700) }}>
+                <svg style={{ position: "absolute", left: lx - 80, top: TOP - 230 + 240 * (1 - ent(t, cruza + 0.2 + L * 0.5)), overflow: "visible" }} width={160} height={400}>
+                  <line x1={30} y1={0} x2={40} y2={400} stroke="#6b4a2f" strokeWidth={14} /><line x1={130} y1={0} x2={120} y2={400} stroke="#6b4a2f" strokeWidth={14} />
+                  {Array.from({ length: 8 }, (_, r) => <line key={r} x1={32} y1={30 + r * 50} x2={128} y2={30 + r * 50} stroke="#8a6a3a" strokeWidth={10} />)}
+                </svg>
+                {[0, 1].map((j) => { const u = prog(t, sube(j), sube(j) + 1.6); if (u <= 0 || u >= 1) return null; const sw = Math.sin(t * 9 + j) * 22; return <Persona key={j} x={lx} y={TOP + 360 - 370 * u} h={330 - j * 40} t={t} seed={260 + L * 2 + j} ropa={BARB(L + j + 1)} pantalon="#3a5a8a" expr="enojado" bD={150 + sw} bI={150 - sw} cD={30} cI={30} />; })}
+              </div>
+            </div>
+            {[0, 1].map((j) => { const t1 = sube(j) + 1.6; if (t < t1) return null; const kk = prog(t, t1 + 0.4, t1 + 1.4); const corre = Math.max(0, t - (t1 + 1.4)); const hh = 330 - j * 40;
+              return <Persona key={"b" + j} x={lx + 120 * kk + corre * 80} y={TOP - 10 + kk * 310 - 160 * Math.sin(Math.PI * kk)} h={hh} t={t} seed={260 + L * 2 + j} ropa={BARB(L + j + 1)} pantalon="#3a5a8a" camina={corre > 0 ? 1.7 : 0} {...(t < t1 + 0.4 ? { expr: "feliz" as const, habla: true, bD: 160, bI: 160, cD: 10, cI: 10 } : { expr: "enojado" as const, habla: true, bD: 120, bI: 60, cD: 20, cI: 30 })} />; })}
+          </React.Fragment>
+        );
       })}
       {t > fuego && t < T("rome called it", D) + 0.5 && [M6 - 300, M6 + 200, M6 + 600].map((x, i) => <React.Fragment key={i}>{[0, 1, 2].map((k) => <div key={k} style={{ position: "absolute", left: x - 70 + k * 50, top: TOP - 230 - Math.abs(Math.sin(t * 8 + k + i)) * 60, width: 90, height: 160, borderRadius: "50% 50% 30% 30%", background: k % 2 ? C.naranja : C.ambar, opacity: 0.9 }} />)}</React.Fragment>)}
       {t > T("and cut down a roman", D) - 0.3 && t < T("rome called it", D) + 0.5 && Array.from({ length: 7 }, (_, i) => <Soldadito key={i} x={M6 + 100 + i * 120} y={BASE} s={i === 3 ? 1.7 : 1.3} t={t} seed={210 + i} cae={T("and cut down a roman", D) + 0.6 + i * 0.12} />)}
-      {/* los areani: salen al norte, vuelven con plata */}
+      {/* los areani: uno agachado espiando, uno con antorcha, uno que señala; después cobran */}
       {t > T("rome had a group", D) - 0.3 && t < T("and you", 729) && [0, 1, 2].map((i) => {
-        const x = M6 - 1200 + i * 260;
+        const x = M6 - 1200 + i * 280;
         const vende = t > traidor;
+        const job = T("whose job was to travel", D) + i * 0.3, fp = T("for profit", D);
+        const H = 300;
+        const g0 = gesto(t, [[T("rome had a group", D), "camina"], [T("men called the", D) + i * 0.2, ["habla", "lee", "encoge"][i] as Gesto]]);
+        const pose = t < job ? g0 : !vende ? (i === 0 ? { expr: "neutro" as const, habla: false, bD: 25, bI: 25, cD: -50, cI: -50, inclina: 8 } : i === 1 ? { expr: "sorpresa" as const, habla: true, bD: 150, cD: 25, bI: 20, cI: 30 } : { ...gesto(t, [[job, "señala"]]), inclina: -6 }) : t < fp ? gesto(t, [[traidor, ["lee", "festeja", "habla"][i] as Gesto]]) : gesto(t, [[fp, ["festeja", "carga", "lee"][i] as Gesto]]);
+        const agacha = i === 0 && t > job && !vende;
         return (
           <React.Fragment key={i}>
-            <Persona x={x} y={TOP} h={220} t={t} seed={220 + i} ropa={{ ...CIVIL(i + 2), tunica: "#4a4a5a", tunica2: "#2a2a3a" }} flip={vende} mira={vende ? -0.8 : 0.4} {...gesto(t, [[T("rome had a group", D), "camina"], [T("whose job was to travel", D) + i * 0.3, "señala"], [traidor, "festeja"], [T("for profit", D), "carga"]])} />
-            {vende && <Moneda x={x - 130} y={TOP - 150 - Math.abs(Math.sin(t * 4 + i)) * 40} r={30} t={t} gira={2} />}
+            <div style={{ position: "absolute", left: 0, top: 0, transform: agacha ? "scaleY(0.76)" : undefined, transformOrigin: `${x}px ${TOP}px` }}>
+              <Persona x={x} y={TOP} h={H} t={t} seed={220 + i} ropa={{ ...CIVIL(i + 2), tunica: ["#4a4a5a", "#5a4a3a", "#3a4a5a"][i], tunica2: "#2a2a3a" }} flip={vende ? i !== 1 : false} mira={vende ? -0.8 : 0.4} {...pose}
+                manoD={i === 1 && !vende && t > job ? <g><rect x={-7} y={-10} width={14} height={150} fill="#6b4a2f" /><path d={`M -22 140 Q 0 ${210 + Math.abs(Math.sin(t * 13)) * 24} 22 140 Z`} fill={C.naranja} /><path d="M -11 140 Q 0 182 11 140 Z" fill={C.ambar} /></g> : undefined} />
+            </div>
+            {i === 1 && t > job && !vende && <div style={{ position: "absolute", left: x + 70 - 160, top: TOP - 350 - 160, width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,190,90,.55), rgba(255,190,90,0) 65%)" }} />}
+            {vende && <Moneda x={x - 150} y={TOP - 170 - Math.abs(Math.sin(t * 4 + i)) * 40} r={30} t={t} gira={2} />}
           </React.Fragment>
         );
       })}
@@ -259,7 +350,7 @@ export const N6: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {
   const a = T("and the worst part", D), b = 742;
   if (t < a || t > b) return null;
   const bx = M6 * 0.62;
-  return <>{Array.from({ length: 8 }, (_, i) => <Picto key={i} x={bx - 450 + i * 200} y={310 + (i % 2) * 30} s={0.65} t={t} seed={240 + i} sube={T("ammianus says they", D) + i * 0.1} />)}{t > T("in the fog", D) && [0, 1, 2, 3, 4].map((i) => <Ojos key={"o" + i} x={TU6 * 0.62 - 600 + i * 260} y={280} t={t} t0={T("in the fog", D) + i * 0.25} s={0.55} seed={i + 30} />)}</>;
+  return <>{Array.from({ length: 8 }, (_, i) => <Picto key={i} x={bx - 450 + i * 200} y={310 + (i % 2) * 30} s={0.65} t={t} seed={240 + i} sube={T("ammianus says they", D) + i * 0.1} />)}{t > T("whose job was to travel", D) && t < T("and you", 729) && [0, 1, 2, 3].map((i) => <React.Fragment key={"s" + i}><div style={{ position: "absolute", left: bx - 380 + i * 240 - 170, top: 360 + (i % 2) * 20 - 300, width: 340, height: 340, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,150,70,.6), rgba(255,150,70,0) 68%)", opacity: prog(t, T("whose job was to travel", D) + 0.2 + i * 0.25, T("whose job was to travel", D) + 0.8 + i * 0.25) }} /><Persona x={bx - 380 + i * 240} y={360 + (i % 2) * 20} h={170 + (i % 2) * 30} t={t} seed={300 + i} sombra="#140c26" flip={i % 2 === 1} aparece={T("whose job was to travel", D) + 0.4 + i * 0.25} {...gesto(t, [[T("whose job was to travel", D) + 0.4 + i * 0.25, "señala"], [T("ammianus says they", D) + i * 0.2, "festeja"]])} /></React.Fragment>)}{t > T("in the fog", D) && [0, 1, 2, 3, 4].map((i) => <Ojos key={"o" + i} x={TU6 * 0.62 - 600 + i * 260} y={280} t={t} t0={T("in the fog", D) + i * 0.25} s={0.55} seed={i + 30} />)}</>;
 };
 
 export const S6: React.FC<{ t: number; c: Cam }> = ({ t, c }) => {

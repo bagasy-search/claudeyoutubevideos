@@ -1,12 +1,13 @@
 import React from "react";
 import { Sala } from "./sets";
-import { AbsoluteFill } from "remotion";
-import { C, fontFamily, ent, prog, Chip, Grande, Emote, cabeza, Moneda, Bota, Pergamino } from "./kit";
+import { AbsoluteFill, interpolate, Easing } from "remotion";
+import { Exterior } from "./escenas4";
+import { C, fontFamily, fontMano, ent, prog, Chip, Grande, Emote, cabeza, Moneda, Bota, Pergamino } from "./kit";
 import { Soldadito, Mula, Bolsa } from "./kit2";
 import { Persona } from "./persona";
 import { TOP, BASE, MC, K, Cam, Pal, Plano, CartelTrampa } from "./mundo";
 import { Laurel } from "./T1";
-import { Gr, Ch, T, ck, Yo, Otro, Carro, Barril, Burbuja, DiplomaBronce, Pin, gesto, Actua } from "./kit3";
+import { Gr, Ch, T, ck, Yo, Otro, Carro, Barril, Burbuja, DiplomaBronce, Pin, gesto, AUX } from "./kit3";
 
 // TRAMPA 7 · EL FINAL (746,5-822 s). La línea de abastecimiento vuelve: hacia el 400 Roma saca ejércitos de Britania,
 // dejan de llegar monedas nuevas y se cae la cadena (sin monedas no hay paga, ni cerveza, ni botas, ni convoy); la carta
@@ -27,91 +28,258 @@ export const amb7: [number, Pal][] = [[746.6, "atardecer"], [783.7, "atardecer"]
 export const lluvia7: [number, number][] = [[746.6, 0.15], [783.7, 0.05], [797.3, 0.3], [802.2, 0.1], [821.9, 0.1]];
 export const sol7: [number, number, number, boolean?][] = [[746.6, 1500, 500], [797.3, -999, 0], [802.2, 1400, 180]];
 
-// 1) la línea de abastecimiento, otra vez: el camino del sur con carros
+// ── helpers de esta parte
+const CL = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
+const rotP = (px: number, py: number, deg: number, cx = 0, cy = 0): [number, number] => {
+  const r = (deg * Math.PI) / 180, c = Math.cos(r), s = Math.sin(r), dx = px - cx, dy = py - cy;
+  return [cx + dx * c - dy * s, cy + dx * s + dy * c];
+};
+// posición en pantalla de la mano de una Persona (lado 1 = derecho, -1 = izquierdo)
+const manoPos = (x: number, y: number, h: number, lado: 1 | -1, a: number, codo: number, inclina = 0, flip = false): [number, number] => {
+  const t1 = (-lado * a * Math.PI) / 180, t2 = (-lado * (a + codo) * Math.PI) / 180;
+  let px = lado * 66 - 92 * Math.sin(t1), py = -322 + 92 * Math.cos(t1);
+  px += -86 * Math.sin(t2); py += 86 * Math.cos(t2);
+  [px, py] = rotP(px, py, inclina, 0, -200);
+  const S = h / 560;
+  return [x + (flip ? -1 : 1) * px * S, y + py * S];
+};
+const ARRIERO = { tunica: "#8a5a2a", tunica2: "#5a3a1a", cinto: "#3a2410", piel: "#e8b48a", piel2: "#c98d66", pelo: "#3a2418" };
+
+// 1) la línea de abastecimiento vuelve: el convoy avanza… y la mula se planta; el arriero tira de la soga
 const Linea: React.FC<{ t: number }> = ({ t }) => {
   const a = T("remember the supply line", D), b = T("here is where it comes back", D);
-  // avance con frenada: velocidad 260 px/s que cae a 0 en 1,2 s desde "here is where it comes back"
-  const fr = Math.min(1, Math.max(0, (t - b) / 1.2));
-  const recorrido = (Math.min(t, b) - a) * 260 + (t > b ? 260 * 1.2 * (fr - fr * fr / 2) : 0);
+  const ox = interpolate(t, [a - 0.6, b], [-170, 0], { ...CL, easing: Easing.out(Easing.quad) });
+  const anda = t < b;
+  const pl = prog(t, b, b + 0.3);
+  const tir = t > b ? Math.sin((t - b) * 15) * 7 * Math.min(1, (t - b) / 0.3) : 0;
+  const tw = anda ? t : b;
+  // mula: se inclina hacia atrás (se planta) y patalea
+  const mx = 930 + ox - pl * 20, my = 832, ms = 0.9, mrot = -9 * pl + (t > b ? Math.sin((t - b) * 11) * 1.5 : 0);
+  const [hx0, hy0] = rotP(268 * ms, -50 * ms, mrot);
+  const hocico: [number, number] = [mx + hx0, my + hy0];
+  // arriero: camina adelante con la soga; en el beat se echa atrás tirando con las dos manos
+  const ah = 480, ax = 1440 + ox + (t > b ? 30 * pl + tir : 0), ay = 1012;
+  const bI = anda ? 62 : 84, cI = anda ? 14 : 4, inc = anda ? 0 : 16 + tir * 0.6;
+  const [rx, ry] = manoPos(ax, ay, ah, -1, bI, cI, inc);
+  const tensa = t > b;
+  const comba = tensa ? Math.sin((t - b) * 30) * 4 : 60;
   return (
-    <AbsoluteFill style={{ background: "linear-gradient(180deg,#f2b880,#f7d9a8 60%)" }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 640, bottom: 0, background: "#7fa05a" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 760, height: 90, background: "#b08a5a" }} />
-      {[0, 1, 2].map((i) => {
-        const x = -400 + (recorrido + i * 700) % 2700;
-        return (
-          <React.Fragment key={i}>
-            <Mula x={x + 300} y={760} s={0.55} t={t} camina={fr < 1 ? 1 : 0} carga={false} />
-            <Carro x={x} y={770} s={0.6} t={t} carga={i === 1 ? "barril" : "grano"} />
-          </React.Fragment>
-        );
-      })}
-      <Persona x={1500} y={1000} h={360} t={t} seed={97} ropa={{ tunica: "#8a5a2a", tunica2: "#5a3a1a", cinto: "#3a2410", piel: "#e8b48a", piel2: "#c98d66", pelo: "#3a2418" }} flip {...gesto(t, [[a, "carga"], [b, "sorpresa"], [b + 1.2, "encoge"]])} />
-      <Chip t={t} t0={a} t1={b} text="THE SUPPLY LINE" color={C.ambar} tinta={C.noche} x={960} y={300} centro size={64} />
-      {t > b && <Chip t={t} t0={b} text="THE SUPPLY LINE… STOPS." color={C.rojo} x={960} y={300} centro size={64} />}
-      <Grande t={t} t0={b + 0.3} text="TRAP #3 IS BACK" y={450} size={84} color={C.crema} />
-    </AbsoluteFill>
+    <Exterior t={t} tono="atardecer" horizonte={600}>
+      {/* el camino del sur */}
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+        <path d="M -50 1080 L -50 930 Q 960 880 1970 930 L 1970 1080 Z" fill="#b08a5a" />
+        <path d="M -50 940 Q 960 892 1970 940" stroke="#d8b886" strokeWidth={10} fill="none" opacity={0.6} />
+        {Array.from({ length: 14 }, (_, i) => <rect key={i} x={i * 140 - 20} y={600 - (i % 2) * 14} width={120} height={50 + (i % 2) * 14} fill="#c9b8a0" opacity={0.8} />)}
+      </svg>
+      <Carro x={400 + ox - pl * 20} y={872} s={0.8} t={tw} carga="barril" />
+      <Mula x={mx} y={my} s={ms} t={t} camina={anda ? 1.3 : 0} rot={mrot} carga />
+      {/* polvo de las patas que frenan */}
+      {t > b && [0, 1, 2, 3].map((i) => { const k = prog(t, b + i * 0.15, b + 0.9 + i * 0.15); return k > 0 && k < 1 ? <div key={i} style={{ position: "absolute", left: mx - 160 + i * 60 - k * 50, top: 990 - k * 60, width: 60 + k * 80, height: 40 + k * 50, borderRadius: "50%", background: "#e8d2a8", opacity: 0.8 * (1 - k) }} /> : null; })}
+      {/* la soga, del hocico a la mano */}
+      <svg style={{ position: "absolute", inset: 0, overflow: "visible" }} width={1920} height={1080}>
+        <path d={`M ${hocico[0]} ${hocico[1]} Q ${(hocico[0] + rx) / 2} ${(hocico[1] + ry) / 2 + comba} ${rx} ${ry}`} stroke="#c9a46a" strokeWidth={9} fill="none" strokeLinecap="round" />
+      </svg>
+      <Persona x={ax} y={ay} h={ah} t={t} seed={97} ropa={ARRIERO} camina={anda ? 1.3 : 0} bI={bI} cI={cI} bD={anda ? 20 : 70} cD={anda ? 20 : 60} inclina={inc} expr={anda ? "neutro" : t < b + 0.6 ? "sorpresa" : "enojado"} habla={t > b + 0.6} mira={-0.8} salta={b} />
+      {t > b && <Emote t={t} t0={b + 0.1} tipo="enojo" x={mx + 250} y={my - 170} s={0.6} />}
+      {t > b + 0.5 && <Emote t={t} t0={b + 0.5} tipo="sudor" {...cabeza(ax, ay, ah)} s={0.55} />}
+      <Chip t={t} t0={a} t1={b} text="THE SUPPLY LINE" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={60} />
+      {t > b && <Chip t={t} t0={b} text="THE SUPPLY LINE… STOPS." color={C.rojo} x={960} y={140} centro size={60} />}
+      {t > b + 0.3 && <Grande t={t} t0={b + 0.3} text="TRAP #3 IS BACK" y={270} size={84} color={C.crema} />}
+    </Exterior>
   );
 };
-// 2) la cadena: sin monedas no hay nada
+
+// 2) el cofre de las pagas: el ejército se va al sur y las monedas se van con él; los que quedan se asoman al cofre vacío
+const Cofre: React.FC<{ t: number }> = ({ t }) => {
+  const p = T("armies are being pulled", D), e = T("to fight for one", D), s = T("and something very small", D), dd = T("very deadly", D);
+  const N = 28;
+  const sale = (i: number) => p + 0.5 + i * 0.15;
+  const quedan = Array.from({ length: N }, (_, i) => sale(i) > t).filter(Boolean).length;
+  const cx = 600, cy = 830;
+  const tiembla = t > dd ? Math.sin((t - dd) * 40) * 3 * Math.max(0, 1 - (t - dd) / 0.6) : 0;
+  return (
+    <Exterior t={t} tono="gris" horizonte={600}>
+      {/* el ejército que se va al sur, en fila por el horizonte */}
+      {Array.from({ length: 10 }, (_, i) => {
+        const k = Math.max(0, t - p - i * 0.12);
+        const x = 300 + i * 120 + k * 260;
+        return x < 2050 ? <Soldadito key={i} x={x} y={650} s={0.8} t={t} seed={500 + i} avanza={1} /> : null;
+      })}
+      {/* el cofre (600 px), abierto */}
+      <svg style={{ position: "absolute", left: cx - 360 + tiembla, top: cy - 420, overflow: "visible" }} width={720} height={720} viewBox="-360 -420 720 720">
+        <ellipse cx={0} cy={262} rx={340} ry={30} fill="rgba(20,10,40,.3)" />
+        <path d="M -300 -40 L -280 -330 Q 0 -390 280 -330 L 300 -40 Z" fill="#7a4a1e" stroke="#3a2410" strokeWidth={10} />
+        <path d="M -250 -70 L -236 -300 Q 0 -350 236 -300 L 250 -70 Z" fill="#5a3414" />
+        {[-150, 150].map((x) => <rect key={x} x={x - 18} y={-345} width={36} height={300} fill="#5d6577" />)}
+        <rect x={-300} y={-60} width={600} height={70} fill="#2a1408" />
+        {Array.from({ length: quedan }, (_, i) => { const col = i % 7, fila = Math.floor(i / 7); return <circle key={i} cx={-210 + col * 70 + (fila % 2) * 35} cy={-10 - fila * 30} r={34} fill={C.oro} stroke="#a8650f" strokeWidth={6} />; })}
+        <rect x={-320} y={0} width={640} height={250} rx={18} fill="#a0622a" stroke="#3a2410" strokeWidth={10} />
+        {[-210, 210].map((x) => <rect key={x} x={x - 22} y={0} width={44} height={250} fill="#5d6577" />)}
+        <rect x={-320} y={110} width={640} height={30} fill="#5d6577" />
+        <rect x={-120} y={40} width={240} height={150} rx={14} fill="#f2e2c0" stroke="#3a2410" strokeWidth={8} />
+        <text x={0} y={95} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={36} fill="#5a3414">PAY</text>
+        <text x={0} y={168} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill={quedan === 0 ? C.rojo : "#1b1240"}>{quedan}</text>
+      </svg>
+      {/* las monedas que se van volando detrás del ejército */}
+      {Array.from({ length: N }, (_, i) => {
+        const k = prog(t, sale(i), sale(i) + 0.9);
+        if (k <= 0 || k >= 1) return null;
+        const x = cx - 200 + (i % 7) * 60 + k * (1500 - (i % 7) * 60), y = cy - 60 - Math.sin(k * Math.PI) * 330 - k * 120;
+        return <Moneda key={i} x={x} y={y} r={30} t={t} gira={3} />;
+      })}
+      {/* los que quedan: se asoman al cofre */}
+      <Persona x={180} y={1040} h={470} t={t} seed={61} ropa={AUX(2)} casco="legion" malla {...gesto(t, [[p, "habla"], [e, "enojado"], [s, "lee"], [dd, "triste"]])} inclina={t > s ? 18 : 0} mira={0.7} miraY={t > s ? 0.6 : 0} />
+      <Persona x={1110} y={1040} h={500} t={t} seed={62} ropa={AUX(1)} casco="legion" flip {...gesto(t, [[p, "sorpresa"], [e, "encoge"], [s, "lee"], [dd, "miedo"]])} inclina={t > s ? 22 : 0} mira={t > s ? 0.6 : -0.6} miraY={t > s ? 0.6 : 0} />
+      <Persona x={1480} y={1040} h={480} t={t} seed={63} ropa={AUX(4)} casco="legion" flip={t > s} {...gesto(t, [[p + 0.3, "señala"], [e, "niega"], [s, "lee"], [dd, "tiembla"]])} inclina={t > s ? 16 : 4} mira={t > s ? 0.5 : 0.8} />
+      {t > dd && <Emote t={t} t0={dd + 0.1} tipo="susto" {...cabeza(1110, 1040, 500)} s={0.6} />}
+      {t > dd && <Emote t={t} t0={dd + 0.3} tipo="lagrimas" {...cabeza(180, 1040, 470)} s={0.5} />}
+    </Exterior>
+  );
+};
+
+// 3) la cadena: sin monedas no hay nada. Cinco cajas encadenadas al centro y el soldado que las tacha una por una, harto
 const Cadena: React.FC<{ t: number }> = ({ t }) => {
-  const m = T("new roman coins", D);
-  const pasos: [string, string, React.ReactNode][] = [
-    ["no coins", "COINS", <Moneda x={0} y={0} r={70} t={t} />],
-    ["no pay", "PAY", <Bolsa x={0} y={0} s={0.6} txt="PAY" />],
-    ["no beer", "BEER", <Barril x={0} y={0} s={0.55} />],
-    ["no boots", "BOOTS", <Bota x={-20} y={0} s={1.2} />],
-    ["no convoy", "CONVOY", <Carro x={0} y={0} s={0.35} t={0} />],
-  ];
+  const m = T("new roman coins", D), para = m + 1.0, nc = T("no coins means", D);
+  const W: [string, string][] = [["no coins means", "COINS"], ["no pay", "PAY"], ["no beer", "BEER"], ["no boots", "BOOTS"], ["no convoy", "CONVOY"]];
+  const ti = W.map(([w]) => T(w, D));
+  const ico = (i: number): React.ReactNode => [<Moneda x={0} y={0} r={62} t={t} />, <Bolsa x={0} y={0} s={0.5} txt="PAY" />, <Barril x={0} y={0} s={0.5} />, <Bota x={-20} y={0} s={1.05} />, <Carro x={0} y={0} s={0.3} t={0} />][i];
+  const BX = (i: number) => 360 + i * 300, BY = 500;
+  let sx = interpolate(t, [m - 0.1, m + 1.1], [-160, BX(0) - 80], { ...CL, easing: Easing.out(Easing.quad) });
+  let anda = t < m + 1.1;
+  for (let i = 1; i < 5; i++) if (t > ti[i] - 0.5) { sx = interpolate(t, [ti[i] - 0.5, ti[i] - 0.08], [BX(i - 1) - 80, BX(i) - 80], CL); anda = t < ti[i] - 0.08; }
+  const fin = ti[4] + 0.55;
+  const golpe = ti.findIndex((x) => t >= x && t < x + 0.45);
+  const g = gesto(t, [[m - 0.1, "camina"], [para, "sorpresa"], [para + 0.8, "enojado"], [nc, "golpea"]]);
+  const sh = 400;
+  const brazoD = golpe >= 0 ? 150 - Math.abs(Math.sin((t - ti[golpe]) * 14)) * 35 : anda ? g.bD : t > fin ? 50 : 70;
+  const brocha = (
+    <g>
+      <rect x={-9} y={-20} width={18} height={190} rx={6} fill="#7a4a1e" />
+      <rect x={-20} y={160} width={40} height={64} rx={10} fill={C.rojo} />
+    </g>
+  );
   return (
-    <AbsoluteFill>
-      <Sala t={t} tono="piedra" />
-      {/* el chorro de monedas que se corta */}
-      {t < T("no coins means", D) + 0.3 && Array.from({ length: 9 }, (_, i) => {
-        const k = ((t - 755) * 0.7 + i / 9) % 1;
-        if (t > m + 0.8 && k > prog(t, m + 0.8, m + 2.2) * -1 + 1) return null;
-        return <Moneda key={i} x={200 + k * 1520} y={420 - Math.sin(k * Math.PI) * 180} r={44} t={t} gira={2} />;
+    <Exterior t={t} tono="gris" horizonte={760}>
+      {Array.from({ length: 22 }, (_, i) => {
+        const ts = m - 2.4 + i * 0.16;
+        if (ts > para) return null;
+        const k = (t - ts) / 2.2;
+        if (k <= 0 || k >= 1) return null;
+        return <Moneda key={i} x={-60 + k * 2040} y={330 - Math.sin(k * Math.PI) * 170} r={40} t={t} gira={2} />;
       })}
-      {t > m && t < T("no coins means", D) + 0.3 && <Grande t={t} t0={m + 0.6} text="NEW COINS: STOPPED." y={820} size={100} color={C.rojo} borde="#fff" />}
-      <Actua t={t} beats={[[m - 0.2, "camina"], [m + 1.4, "sorpresa"], [T("no coins means", D), "niega"], [T("no pay", D), "triste"], [T("no beer", D), "enojado"], [T("no boots", D), "tiembla"], [T("no convoy", D), "encoge"]]} x0={2100} x1={1720} y={1075} h={470} frio />
-      {pasos.map(([w, tx, ico], i) => {
-        const t0 = i === 0 ? T("no coins means", D) : T(w, D);
-        if (t < t0) return null;
-        const x = 230 + i * 330;
-        const tacha = prog(t, t0 + 0.3, t0 + 0.6);
-        return (
-          <div key={i} style={{ position: "absolute", left: x, top: 470, width: 0, height: 0, transform: `scale(${ent(t, t0)})` }}>
-            <div style={{ position: "absolute", left: -140, top: -140, width: 280, height: 280, borderRadius: 40, background: "#fff", border: "8px solid #1b1240" }} />
-            <div style={{ position: "absolute", left: 0, top: 0 }}>{ico}</div>
-            <svg style={{ position: "absolute", left: -140, top: -140, overflow: "visible" }} width={280} height={280}>
-              <line x1={30} y1={30} x2={250} y2={250} stroke={C.rojo} strokeWidth={26} strokeLinecap="round" pathLength={1} strokeDasharray={`${tacha} 1`} />
-              <line x1={250} y1={30} x2={30} y2={250} stroke={C.rojo} strokeWidth={26} strokeLinecap="round" pathLength={1} strokeDasharray={`${tacha} 1`} />
-            </svg>
-            <div style={{ position: "absolute", left: -160, width: 320, top: 160, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 48, color: "#1b1240" }}>NO {tx}</div>
-            {i > 0 && <div style={{ position: "absolute", left: -215, top: -40, fontFamily, fontWeight: 700, fontSize: 70, color: C.rojo }}>→</div>}
-          </div>
-        );
-      })}
-    </AbsoluteFill>
+      {t > m + 0.5 && t < nc - 0.1 && <Grande t={t} t0={m + 0.5} text="NEW COINS: STOPPED." y={470} size={100} color={C.rojo} borde="#fff" />}
+      {t > nc - 0.25 && (
+        <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `scale(${ent(t, nc - 0.25)})`, transformOrigin: `960px ${BY}px` }}>
+          {[0, 1, 2, 3].map((i) => {
+            const rompe = prog(t, ti[i + 1] + 0.12, ti[i + 1] + 0.5);
+            return [0, 1, 2].map((j) => {
+              const lado = j === 0 ? -1 : 1;
+              const x0 = BX(i) + 100 + j * 34, cae = j === 1 ? rompe * 60 : rompe * 25;
+              return <div key={i + "-" + j} style={{ position: "absolute", left: x0 - 4, top: BY - 18 + cae, width: 40, height: 36, borderRadius: 18, border: "9px solid #5d6577", transform: `rotate(${lado * rompe * 50 + (j % 2 ? 90 : 0)}deg)`, opacity: j === 1 ? 1 - rompe : 1 }} />;
+            });
+          })}
+          {W.map(([, tx], i) => {
+            const tacha = prog(t, ti[i] + 0.05, ti[i] + 0.3);
+            const sac = t > ti[i] && t < ti[i] + 0.3 ? Math.sin((t - ti[i]) * 60) * 6 : 0;
+            return (
+              <div key={i} style={{ position: "absolute", left: BX(i) + sac, top: BY, width: 0, height: 0 }}>
+                <div style={{ position: "absolute", left: -100, top: -100, width: 200, height: 200, borderRadius: 32, background: tacha > 0 ? "#f3e6e6" : "#fff", border: "8px solid #1b1240", boxShadow: "0 10px 0 rgba(20,8,40,.25)" }} />
+                <div style={{ position: "absolute", left: 0, top: 0, transform: "scale(0.8)" }}>{ico(i)}</div>
+                <svg style={{ position: "absolute", left: -100, top: -100, overflow: "visible" }} width={200} height={200}>
+                  <line x1={18} y1={18} x2={182} y2={182} stroke={C.rojo} strokeWidth={24} strokeLinecap="round" pathLength={1} strokeDasharray={`${tacha} 1`} />
+                  <line x1={182} y1={18} x2={18} y2={182} stroke={C.rojo} strokeWidth={24} strokeLinecap="round" pathLength={1} strokeDasharray={`${prog(t, ti[i] + 0.15, ti[i] + 0.4)} 1`} />
+                </svg>
+                <div style={{ position: "absolute", left: -160, width: 320, top: -172, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 46, color: tacha > 0 ? C.rojo : "#1b1240" }}>{tacha > 0 ? "NO " : ""}{tx}</div>
+              </div>
+            );
+          })}
+        </div>
+      )}
+      <Yo x={sx} y={1040} h={sh} t={t} frio camina={anda ? 1.6 : 0} expr={t < para ? "neutro" : t < para + 0.8 ? "sorpresa" : t > fin ? "triste" : "enojado"} habla={t > para + 0.8 && !anda} bD={brazoD} cD={golpe >= 0 ? 10 : 30} bI={t > fin ? 50 : g.bI} cI={t > fin ? 120 : g.cI} inclina={golpe >= 0 ? -4 : 0} ladea={t > fin ? 8 : 0} salta={t > para && t < para + 0.8 ? para : undefined} mira={t < para + 0.8 ? 0.3 : 0.5} miraY={t < nc ? -0.8 : -0.5} manoD={t > nc - 0.3 ? brocha : undefined} />
+      {t > para + 0.8 && t < fin && <Emote t={t} t0={para + 0.8} t1={fin} tipo="enojo" {...cabeza(sx, 1040, sh)} s={0.45} />}
+      {t > fin && <Emote t={t} t0={fin} tipo="sudor" {...cabeza(sx, 1040, sh)} s={0.45} />}
+    </Exterior>
   );
 };
-// 3) la carta de Honorio
+
+// 4) la carta de Honorio: el rescripto se escribe solo, letra por letra
+const Tipea: React.FC<{ t: number; t0: number; t1: number; txt: string; y: number; size: number; color: string }> = ({ t, t0, t1, txt, y, size, color }) => {
+  if (t < t0) return null;
+  const n = Math.floor(txt.length * prog(t, t0, t1));
+  const cur = n < txt.length && Math.floor(t * 8) % 2 === 0;
+  return <div style={{ position: "absolute", left: 1120 - 470, width: 940, top: y - size * 0.6, textAlign: "center", fontFamily: fontMano, fontWeight: 700, fontSize: size, color, whiteSpace: "nowrap" }}>{txt.slice(0, n)}<span style={{ opacity: cur ? 0.8 : 0 }}>|</span><span style={{ opacity: 0 }}>{txt.slice(n)}</span></div>;
+};
 const Carta: React.FC<{ t: number }> = ({ t }) => {
-  const a = T("the emperor honoros", D), s = T("it says", D);
+  const a = T("the emperor honoros", D), s = T("it says", D), o = T("you are on your own now", D), l = T("look after your own", D);
+  const sello = l + 1.0;
+  const sk = prog(t, sello, sello + 0.2);
   return (
     <AbsoluteFill>
       <Sala t={t} tono="violeta" />
-      <Persona x={250} y={1040} h={500} t={t} seed={93} ropa={{ tunica: C.oro, tunica2: "#8f7025", cinto: "#5a3418", piel: "#f2c09a", piel2: "#d99a72", pelo: "#3a2418" }} capa="#7a2a9a" {...gesto(t, [[a, "escribe"], [s, "habla"], [T("you are on your own now", D), "señala"], [T("look after your own", D), "encoge"]])} />
+      <Persona x={250} y={1040} h={500} t={t} seed={93} ropa={{ tunica: C.oro, tunica2: "#8f7025", cinto: "#5a3418", piel: "#f2c09a", piel2: "#d99a72", pelo: "#3a2418" }} capa="#7a2a9a" mira={0.7} {...gesto(t, [[a, "escribe"], [s, "habla"], [o, "señala"], [l, "encoge"], [sello, "golpea"], [sello + 0.5, "encoge"]])} />
       <Laurel x={250} y={1040 - 450 * (500 / 560) - 70 * (500 / 560)} s={0.85} />
-      <Pergamino x={1120} y={570} w={1040} abre={prog(t, a + 0.2, a + 1.2)} lineas={t > T("you are on your own now", D) ? 0 : 7} firma={prog(t, T("look after your own", D) + 0.6, T("look after your own", D) + 1.6)} titulo="TO THE CITIES OF BRITAIN" />
-      {t > T("you are on your own now", D) && <Grande t={t} t0={T("you are on your own now", D)} text="YOU ARE ON" x={1120} y={420} size={104} color="#1b1240" borde="#f6efe2" />}
-      {t > T("you are on your own now", D) && <Grande t={t} t0={T("you are on your own now", D) + 0.25} text="YOUR OWN NOW." x={1120} y={540} size={104} color="#1b1240" borde="#f6efe2" />}
-      {t > T("look after your own", D) && <Grande t={t} t0={T("look after your own", D)} text="LOOK AFTER YOUR" x={1120} y={690} size={72} color={C.rojo} borde="#f6efe2" />}
-      {t > T("look after your own", D) && <Grande t={t} t0={T("look after your own", D) + 0.2} text="OWN DEFENSE." x={1120} y={780} size={72} color={C.rojo} borde="#f6efe2" />}
+      <Pergamino x={1120} y={570} w={1040} abre={prog(t, a + 0.2, a + 1.2)} lineas={0} firma={prog(t, l + 0.9, l + 1.6)} titulo="TO THE CITIES OF BRITAIN" />
+      {t > a + 1.0 && (
+        <>
+          <Tipea t={t} t0={a + 1.1} t1={s - 0.2} txt="From Honorius, Emperor:" y={415} size={50} color="#7a3d14" />
+          <Tipea t={t} t0={o} t1={o + 0.9} txt="YOU ARE ON YOUR OWN NOW." y={530} size={70} color="#1b1240" />
+          <Tipea t={t} t0={l} t1={l + 0.85} txt="LOOK TO YOUR OWN DEFENCE." y={650} size={66} color={C.rojo} />
+        </>
+      )}
+      {t > sello && (
+        <div style={{ position: "absolute", left: 1500, top: 760, width: 0, height: 0, transform: `scale(${2.2 - 1.2 * sk}) rotate(-12deg)`, opacity: sk }}>
+          <div style={{ position: "absolute", left: -70, top: -70, width: 140, height: 140, borderRadius: "50%", background: "#b0202e", border: "8px solid #7a1018", boxShadow: "0 6px 0 rgba(0,0,0,.3)" }} />
+          <div style={{ position: "absolute", left: -70, width: 140, top: -24, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 36, color: "#ffd0d0" }}>SPQR</div>
+        </div>
+      )}
       <Chip t={t} t0={T("according to a later", D)} t1={a} text="A LATER HISTORIAN SAYS…" color={C.violeta} x={1120} y={130} centro size={56} />
       {t > a && <Chip t={t} t0={a} text="EMPEROR HONORIUS" color={C.oro} tinta={C.noche} x={1120} y={130} centro size={60} />}
-      {t > T("more or less", D) && t < T("you are on your own now", D) + 0.4 && <Chip t={t} t0={T("more or less", D)} text="(MORE OR LESS)" color="#2a2350" x={1120} y={985} centro size={44} />}
+      {t > T("more or less", D) && t < o + 0.4 && <Chip t={t} t0={T("more or less", D)} text="(MORE OR LESS)" color="#2a2350" x={1120} y={985} centro size={44} />}
     </AbsoluteFill>
+  );
+};
+
+// 5) vos, ya viejo, en el muro: el diploma de ciudadanía que llega… y se cierra de golpe y se va
+const Veterano: React.FC<{ t: number }> = ({ t }) => {
+  const th = T("think about what that means", D), vida = T("you have spent your whole life", D), pc = T("you were promised citizenship", D);
+  const got = T("and you got it", D), pa = T("your father got it", D), now = T("and now", 793), sw = T("has simply stopped writing", D);
+  const nb = T("no great final battle", D), ls = T("no last stand", D), cal = T("just a letter and then silence", D);
+  const cierra = prog(t, sw + 0.25, sw + 0.4);
+  const abre = Math.min(prog(t, pc + 0.4, pc + 1.0), 1 - cierra);
+  const vuela = prog(t, sw + 0.55, sw + 1.7);
+  const dx = interpolate(vuela, [0, 1], [960, 2200]), dy = interpolate(vuela, [0, 1], [480, 420]);
+  const baja = ent(t, pc);
+  const golpeC = t > sw + 0.4 && t < sw + 0.6 ? Math.sin((t - sw) * 70) * 10 : 0;
+  const alcanza = t > sw + 0.4 && t < nb;
+  const oscuro = prog(t, cal + 0.3, cal + 1.5) * 0.35;
+  const carta = prog(t, cal, cal + 1.0);
+  return (
+    <Exterior t={t} tono="atardecer" horizonte={640}>
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>
+        {Array.from({ length: 9 }, (_, i) => <rect key={i} x={i * 230 - 20} y={800} width={150} height={120} rx={6} fill={["#c9b8a0", "#bfae94", "#d2c2a8"][i % 3]} stroke="#a89878" strokeWidth={5} />)}
+        <rect x={-10} y={900} width={1940} height={190} fill="#b5a48a" />
+        {Array.from({ length: 12 }, (_, i) => <rect key={i} x={i * 170 - 40 + (i % 2) * 60} y={940 + (i % 3) * 40} width={150} height={34} rx={6} fill="#a8977c" opacity={0.6} />)}
+      </svg>
+      {t > pc && vuela < 1 && <div style={{ position: "absolute", left: dx - 330, top: dy - 330, width: 660, height: 660, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,220,140,.75), rgba(255,200,110,0) 65%)", opacity: (1 - cierra * 0.7) * (1 - vuela) }} />}
+      {t > pc && vuela < 1 && (
+        <div style={{ position: "absolute", left: 0, top: (1 - baja) * -500, width: 1920, height: 1080, transform: `translateX(${golpeC}px)` }}>
+          <DiplomaBronce x={dx} y={dy} s={0.7 * (1 - vuela * 0.6)} rot={vuela * 40} abre={Math.max(0.05, abre)} />
+        </div>
+      )}
+      {t > got && t < sw + 0.3 && <div style={{ position: "absolute", left: 960 - 200, top: 640, width: 400, transform: `scale(${ent(t, got)}) rotate(-6deg)`, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: C.noche, background: C.lima, border: "6px solid #1b1240", borderRadius: 14, padding: "6px 0" }}>✓ CIVIS ROMANUS</div>}
+      {t > pa && t < sw + 0.3 && <div style={{ position: "absolute", left: 960 - 200, top: 730, width: 400, transform: `scale(${ent(t, pa)}) rotate(4deg)`, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 40, color: C.noche, background: C.oro, border: "6px solid #1b1240", borderRadius: 14, padding: "6px 0" }}>✓ FATHER TOO</div>}
+      {sw + 0.4 < t && t < sw + 1.2 && <div style={{ position: "absolute", left: 960 - 200, top: 400, width: 400, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 84, color: "#fff", WebkitTextStroke: "10px #1b1240", paintOrder: "stroke fill", transform: `scale(${ent(t, sw + 0.4)})` }}>SLAM!</div>}
+      {t > cal && <div style={{ position: "absolute", left: 960 + Math.sin(carta * 9) * 60 - 70, top: interpolate(carta, [0, 1], [-120, 930]), width: 140, height: 90, background: "#f6e3b4", border: "5px solid #c98f4a", borderRadius: 8, transform: `rotate(${Math.sin(carta * 9) * 25 * (1 - carta)}deg)` }} />}
+      <Yo x={560} y={1040} h={520} t={t} frio viejo casco={false} mira={t > sw && t < nb ? 0.6 : t > cal ? 0.3 : 0.4} miraY={t > pc && t < nb ? -0.5 : t > cal ? 0.6 : 0}
+        {...gesto(t, [[th, "habla"], [vida, "señala"], [pc, "sorpresa"], [got, "festeja"], [pa, "lee"], [now, "habla"], [sw + 0.4, "señala"], [nb, "triste"], [ls, "encoge"], [cal, "triste"]])}
+        {...(alcanza ? { bD: 140, cD: 0, expr: "miedo" as const, inclina: 10 } : t > pa && t < now ? { bD: 40, cD: 120, expr: "orgullo" as const } : {})} />
+      <Otro i={3} x={1380} y={1040} h={500} t={t} viejo casco={false} flip mira={t > sw && t < nb ? 0.8 : -0.4} miraY={t > pc && t < nb ? -0.5 : t > cal ? 0.6 : 0}
+        {...gesto(t, [[th, "lee"], [vida, "habla"], [pc, "sorpresa"], [got, "festeja"], [pa, "habla"], [now, "lee"], [sw + 0.4, "sorpresa"], [nb, "niega"], [ls, "encoge"], [cal, "triste"]])}
+        {...(alcanza ? { bI: 150, cI: 0, bD: 30, expr: "miedo" as const, inclina: -10 } : {})} />
+      {t > sw + 0.5 && t < nb && <Emote t={t} t0={sw + 0.5} t1={nb} tipo="excl" {...cabeza(1380, 1040, 500)} s={0.5} />}
+      {t > cal + 0.5 && <Emote t={t} t0={cal + 0.5} tipo="lagrimas" {...cabeza(560, 1040, 520)} s={0.5} />}
+      <AbsoluteFill style={{ background: "#1b1240", opacity: oscuro }} />
+    </Exterior>
   );
 };
 
@@ -127,13 +295,6 @@ export const W7: React.FC<{ t: number; c: Cam }> = ({ t }) => {
         const k = Math.max(0, t - sacan - i * 0.15);
         return <Soldadito key={i} x={M7 - 1000 + (i % 6) * 230 + (i < 6 ? 0 : 110) + k * 240} y={BASE - (i < 6 ? 0 : 70)} s={i < 6 ? 1.25 : 1.05} t={t} seed={300 + i} avanza={1} />;
       })}
-      {t > sacan && t < viejo && (() => { const n = 8 - Math.round(8 * prog(t, sacan + 0.6, sacan + 3.6)); return (
-        <div style={{ position: "absolute", left: M7 + 260, top: TOP - 150, width: 0, height: 0 }}>
-          {Array.from({ length: n }, (_, i) => <div key={i} style={{ position: "absolute", left: -90 + (i % 4) * 46, top: -40 - Math.floor(i / 4) * 34, width: 44, height: 44, borderRadius: "50%", background: C.oro, border: "5px solid #8f7025" }} />)}
-          <div style={{ position: "absolute", left: -120, top: 0, width: 240, height: 130, background: "#8a5a2a", border: "8px solid #3a2410", borderRadius: 14 }} />
-          <div style={{ position: "absolute", left: -120, top: -100, width: 240, height: 40, background: "#a06a32", border: "8px solid #3a2410", borderRadius: 14, transform: "rotate(-24deg)", transformOrigin: "0 40px" }} />
-          {n === 0 && <div style={{ position: "absolute", left: -110, top: 150, fontFamily, fontWeight: 700, fontSize: 52, color: "#fff", WebkitTextStroke: "8px #1b1240", paintOrder: "stroke fill" }}>EMPTY</div>}
-        </div>); })()}
       {/* el puñado que queda en el muro */}
       {t > sacan && t < viejo && [0, 1].map((i) => <Otro key={i} i={i + 2} x={M7 - 300 + i * 260} y={TOP} t={t} expr="triste" mira={0.7} />)}
       {/* vos, ya viejo, en el muro */}
@@ -173,6 +334,7 @@ export const S7: React.FC<{ t: number; c: Cam }> = ({ t }) => {
     <>
       <CartelTrampa t={t} t0={746.49} n={7} titulo="THE ENDING" color={C.rojo} />
       <Plano t={t} t0={T("remember the supply line", D) - 0.1} t1={T("by around the year 400", D) - 0.15} desde={[960, 700]} fondo="#f2b880"><Linea t={t} /></Plano>
+      <Plano t={t} t0={T("armies are being pulled", D) - 0.1} t1={T("new roman coins", D) - 0.12} desde={[960, 600]} fondo="#c8d2dc"><Cofre t={t} /></Plano>
       <Gr t={t} w="by around the year 400" d={D} txt="AD 400" y={220} size={170} c={C.ambar} dur={1.6} />
       <Ch t={t} w="rome is in deep trouble" d={D} txt="ROME: IN DEEP TROUBLE EVERYWHERE" y={150} c={C.rojo} size={58} dur={1.9} />
       <Ch t={t} w="armies are being pulled" d={D} txt="ARMIES PULLED OUT OF BRITAIN →" y={150} c={C.violeta} size={56} dur={2.3} />
@@ -182,6 +344,7 @@ export const S7: React.FC<{ t: number; c: Cam }> = ({ t }) => {
       <Plano t={t} t0={T("new roman coins", D) - 0.1} t1={T("around the year 410", D) - 0.15} desde={[960, 540]} fondo="#d8c8ae"><Cadena t={t} /></Plano>
       <Gr t={t} w="around the year 410" d={D} txt="AD 410" y={540} size={220} c={C.crema} dur={1.6} />
       <Plano t={t} t0={T("according to a later", D) - 0.1} t1={T("think about what that means", D) - 0.15} desde={[960, 540]} fondo="#1b1240"><Carta t={t} /></Plano>
+      <Plano t={t} t0={T("think about what that means", D) - 0.1} t1={801.95} desde={[960, 600]} fondo="#ffb070"><Veterano t={t} /></Plano>
       <Ch t={t} w="think about what that means" d={D} txt="WHAT THAT MEANS FOR YOU" y={150} c={C.violeta} size={56} dur={2.0} />
       <Gr t={t} w="you have spent your whole life" d={D} txt="YOUR WHOLE LIFE · ON THIS WALL" y={160} size={70} c={C.crema} dur={2.8} />
       <Ch t={t} w="you were promised citizenship" d={D} txt="CITIZENSHIP: PROMISED" y={150} c={C.oro} tinta={C.noche} size={56} dur={1.7} />
