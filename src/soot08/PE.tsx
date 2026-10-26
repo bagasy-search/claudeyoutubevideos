@@ -16,7 +16,7 @@ export const E0 = 392.9, E1 = 473.5;
 const KE: K[] = [
   [392.9, 4280, -1560, 1.15], [394.8, 4280, -1560, 1.2], [395.6, 4150, -1430, 0.82], [401.7, 4150, -1430, 0.78], [404.6, 4280, -1560, 1.0], [409.4, 4280, -1560, 1.05], [445.7, 4280, -1560, 1.1],
   [445.71, 2600, -330, 1.55], [453.6, 2600, -330, 1.65], [455.4, 2620, -340, 1.5], [459.39, 2620, -340, 1.55],
-  [459.4, 5700, -1450, 0.75], [463.4, 5650, -1450, 0.8], [467.9, 5630, -1450, 0.82],
+  [459.4, 5420, -1450, 0.75], [463.4, 5400, -1450, 0.8], [467.9, 5380, -1450, 0.82],
   [467.91, 3600, -1500, 0.32], [473.5, 3600, -1500, 0.34],
 ];
 
@@ -35,8 +35,8 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
   const cam = camara(t, KE);
   const sh = sacudon(t, [440.1, 451.4, 463.6, 471.9]);
   const g1: GenteFab[] = [
-    { seed: 60, x: t > 401.7 && t < 409.4 ? 3760 : 4300, y: -1000, h: 480, ropa: DUENO, gorro: "copa", barba: true, expr: t > 395 && t < 409 ? "orgullo" : t > 468 ? "feliz" : "neutro", bD: t > 395.2 && t < 401 ? 60 : t > 401.7 && t < 404.6 ? 150 + 30 * Math.sin(t * 16) : t > 401.7 && t < 409.4 ? 110 + 10 * Math.sin(t * 4) : 0, cD: t > 401.7 && t < 404.6 ? 20 : 60, manoD: t > 401.7 && t < 404.6 ? <div style={{ position: "absolute", left: -12, top: -70, width: 24, height: 90, background: "#8a5a2c", borderRadius: 6 }}><div style={{ position: "absolute", left: -26, top: -6, width: 76, height: 34, background: "#5d5670", borderRadius: 6 }} /></div> : undefined, flip: !(t > 401.7 && t < 409.4), mira: t > 401.7 && t < 409.4 ? 1 : 0 },
-    { seed: 61, x: 4750, y: -1000, h: 470, ropa: CAPATAZ, gorro: "gorra", expr: "orgullo", mira: -1 },
+    { seed: 60, x: t > 401.7 && t < 409.4 ? 3760 : t > 459.4 && t < 467.9 ? 4650 : 4300, y: -1000, h: 480, ropa: DUENO, gorro: "copa", barba: true, expr: t > 395 && t < 409 ? "orgullo" : t > 468 ? "feliz" : "neutro", bD: t > 395.2 && t < 401 ? 60 : t > 401.7 && t < 404.6 ? 150 + 30 * Math.sin(t * 16) : t > 401.7 && t < 409.4 ? 110 + 10 * Math.sin(t * 4) : 0, cD: t > 401.7 && t < 404.6 ? 20 : 60, manoD: t > 401.7 && t < 404.6 ? <div style={{ position: "absolute", left: -12, top: -70, width: 24, height: 90, background: "#8a5a2c", borderRadius: 6 }}><div style={{ position: "absolute", left: -26, top: -6, width: 76, height: 34, background: "#5d5670", borderRadius: 6 }} /></div> : undefined, flip: !(t > 401.7 && t < 409.4), mira: t > 401.7 && t < 409.4 ? 1 : 0 },
+    { seed: 61, x: t > 459.4 && t < 467.9 ? 5050 : 4750, y: -1000, h: 470, ropa: CAPATAZ, gorro: "gorra", expr: "orgullo", mira: -1 },
   ];
   if (t > 399.4 && t < 405) for (let i = 0; i < 3; i++) g1.push({ seed: 62 + i, x: 3650 + i * 150, y: -1000, h: 440 + (i % 2) * 30, ropa: i === 1 ? HILANDERO : OBRERO(i + 2), expr: "enojado", habla: true, aparece: 399.5 + i * 0.15, bD: i === 0 ? 150 : 20 });
   const g0: GenteFab[] = [];

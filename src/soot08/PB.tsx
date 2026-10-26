@@ -136,7 +136,7 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Primer t={t} t0={154.3} t1={156.9} lado="izq" g={{ expr: "miedo", miraY: -1 }} emo="preg" />
       <Primer t={t} t0={174.3} t1={175.8} lado="izq" g={{ expr: "triste", camina: 1.1 }} />
       <Chip t={t} t0={174.4} t1={175.7} text="FINALLY HOME · 8:30 PM" color={C.noche} x={1180} y={150} centro size={62} />
-      <Chip t={t} t0={108.6} t1={110.0} text="THE GATE IS SHUT" color={C.noche} x={960} y={150} centro size={76} />
+      <Chip t={t} t0={108.6} t1={110.0} text="THE GATE IS SHUT" color={C.noche} x={960} y={960} centro size={76} />
       <Sello t={t} t0={110.1} t1={112.3} text="DOCKED" x={960} y={330} size={180} />
       {t > 111.5 && t < 115.3 && (
         <svg style={{ position: "absolute", left: 1460, top: 300, transform: `scale(${ent(t, 111.5, 0, { damping: 8, stiffness: 220 }) * (1 - prog(t, 115, 115.3))})`, overflow: "visible" }} width={200} height={240} viewBox="0 0 200 240">
@@ -164,7 +164,7 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={132.4} t1={136.6} text="HIS DAUGHTERS" color={C.teal} tinta={C.noche} x={960} y={950} centro size={66} />
       <Chip t={t} t0={133.3} t1={136.6} text="BUSY SEASON · ABOUT 6 WEEKS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={66} />
       <Velo t={t} t0={136.7} t1={146.4} op={1} />
-      {t > 138.9 && t < 146.4 && <Persona t={t} seed={23} x={interpolate(t, [139.0, 143.0], [360, 1660], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={690} h={260} ropa={NINA} gorro="cofia" largo camina={t < 143.0 ? 1.4 : 0} expr={t < 143.3 ? "triste" : "dormido"} inclina={t > 143.3 ? 10 : 4} aparece={139.0} />}
+      {t > 138.9 && t < 146.4 && <Persona t={t} seed={23} x={interpolate(t, [139.0, 143.0], [360, 1660], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={690} h={360} ropa={NINA} gorro="cofia" largo camina={t < 143.0 ? 1.4 : 0} expr={t < 143.3 ? "triste" : "dormido"} inclina={t > 143.3 ? 10 : 4} aparece={139.0} />}
       <BarraDia t={t} t0={136.8} t1={146.4} y={880} titulo="THE COULSON GIRLS · ONE DAY" tramos={[
         { de: 3, a: 12, t0: 137.0, t1: 138.4, color: C.rojo, txt: "AT THE MILL" },
         { de: 12, a: 22.5, t0: 138.4, t1: 140.0, color: C.rojo, txt: "STILL AT THE MILL" },
@@ -172,7 +172,7 @@ export const PB: React.FC<{ t: number }> = ({ t }) => {
       ]} />
       <Chip t={t} t0={137.0} t1={138.7} text="LEAVE 3:00 AM" color={C.noche} x={500} y={170} centro size={66} />
       <Chip t={t} t0={138.8} t1={146.4} text="HOME 10:30 PM" color={C.noche} x={1420} y={170} centro size={66} />
-      <Cuenta t={t} t0={139.0} t1={140.4} de={0} a={19} x={960} y={300} size={150} color={C.crema} suf="½ HOURS" fuera={143.0} />
+      <Cuenta t={t} t0={139.0} t1={140.4} de={0} a={19} x={700} y={230} size={140} color={C.crema} suf="½ HOURS" fuera={143.0} />
       <Chip t={t} t0={140.9} t1={143.0} text="YOUNGEST: JUST OVER 8" color={C.rojo} x={960} y={600} centro size={66} />
       <Chip t={t} t0={143.4} t1={146.4} text="ALL BREAKS: ~1 HOUR" color={C.lima} tinta={C.noche} x={960} y={620} centro size={80} />
       <Chip t={t} t0={148.0} t1={150.4} text="CARRIED TO BED" color={C.violeta} x={960} y={150} centro size={76} />

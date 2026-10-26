@@ -187,7 +187,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={744.9} t1={747.0} text="READERS WERE FURIOUS" y={190} size={120} color={C.rojo} />
       <Chip t={t} t0={747.1} t1={749.1} text="THE LETTER WOULD NOT GO AWAY" color={C.violeta} x={960} y={150} centro size={64} />
       <Velo t={t} t0={749.3} t1={760.4} op={0.6} />
-      <Sello t={t} t0={749.4} t1={760.3} text="FACTORY ACT · 1833" x={960} y={190} size={100} color={C.lima} rot={-6} />
+      <Sello t={t} t0={749.4} t1={760.3} text="FACTORY ACT · 1833" x={760} y={190} size={100} color={C.lima} rot={-6} />
       <Lista t={t} t0={750.4} t1={760.3} x={1180} y={330} size={50} items={[{ txt: "UNDER 9: BANNED", t0: 750.6, ok: true }, { txt: "HOURS LIMITED", t0: 753.4, ok: true }, { txt: "FACTORY INSPECTORS", t0: 755.5, ok: true }]} />
       <Cuenta t={t} t0={756.6} t1={757.8} de={0} a={4} suf=" INSPECTORS" x={1450} y={700} size={90} color={C.ambar} fuera={760.3} />
       <Chip t={t} t0={757.9} t1={760.3} text="FOR THE WHOLE COUNTRY" color={C.rojo} x={1450} y={830} centro size={52} />
@@ -195,7 +195,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={761.8} t1={763.4} text="ONE SMALL PROBLEM" color={C.noche} x={960} y={150} centro size={66} />
       <Gran t={t} t0={763.6} t1={765.4} text="HOW DO YOU PROVE A CHILD IS 9?" y={920} size={92} color={C.ambar} />
       <Chip t={t} t0={765.6} t1={768.9} text="NO BIRTH CERTIFICATES UNTIL 1837" color={C.rojo} x={960} y={150} centro size={60} />
-      <Chip t={t} t0={769.1} t1={770.4} text="CHECK THE HEIGHT" color={C.violeta} x={960} y={150} centro size={64} />
+      <Chip t={t} t0={769.1} t1={770.4} text="CHECK THE HEIGHT" color={C.violeta} x={960} y={960} centro size={64} />
       <Chip t={t} t0={770.5} t1={772.4} text="CHECK THE TEETH" color={C.violeta} x={960} y={150} centro size={64} />
       <Chip t={t} t0={772.5} t1={774.5} text="SIGN A PAPER: «AGE 9»" color={C.noche} x={960} y={150} centro size={64} />
       <Tilde t={t} t0={773.0} t1={774.5} x={1420} y={150} s={0.6} />
@@ -236,8 +236,8 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       {t > 832.3 && t < 836.8 && <Persona t={t} seed={262} x={1620} y={1010} h={560} ropa={DUENO} gorro="copa" flip mira={-1} expr="orgullo" bD={t < 834.8 ? 100 + 10 * Math.sin(t * 6) : 40} cD={t < 834.8 ? 30 : 20} habla={t < 834.6 && Math.floor(t * 4) % 2 === 0} aparece={832.3} manoD={<div style={{ position: "absolute", left: -55, top: -60, width: 110, height: 90, borderRadius: 18, background: "#fff", border: "6px solid #2a1530" }} />} />}
       <Globo t={t} t0={832.6} t1={834.6} x={1180} y={330} text="Back the South. Get your cotton." size={42} w={520} cola="der" />
       <Gran t={t} t0={834.8} t1={836.7} text="“NO.”" y={470} size={170} color={C.rojo} />
-      <Chip t={t} t0={827.0} t1={829.8} text="FURNITURE PAWNED · SOUP LINES" color={C.noche} x={960} y={150} centro size={60} />
-      <Sello t={t} t0={829.95} t1={832.2} text="THE LANCASHIRE COTTON FAMINE" x={960} y={330} size={84} />
+      <Chip t={t} t0={827.0} t1={829.8} text="FURNITURE PAWNED · SOUP LINES" color={C.noche} x={960} y={150} centro size={68} />
+      <Sello t={t} t0={829.95} t1={832.2} text="THE LANCASHIRE COTTON FAMINE" x={960} y={330} size={70} rot={0} />
       <Chip t={t} t0={832.3} t1={836.7} text="THE EASY WAY: HELP THE SOUTH, GET THE COTTON" color={C.violeta} x={960} y={150} centro size={52} />
       <Chip t={t} t0={836.9} t1={842.2} text="FREE TRADE HALL · MANCHESTER · END OF 1862" color={C.oro} tinta={C.noche} x={960} y={150} centro size={56} />
       <Gran t={t} t0={842.4} t1={846.6} text="FOR THE NORTH. AGAINST SLAVERY." y={190} size={92} color={C.lima} />

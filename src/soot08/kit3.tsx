@@ -152,8 +152,8 @@ export const FachadaFabrica: React.FC<P & { t: number; w: number; pisos: number;
         <path d="M -300 0 L -300 -560 Q 0 -760 300 -560 L 300 0 Z" fill="#2a1f38" />
         <g transform={`translate(-300 0) scale(${1 - portonAbre * 0.85} 1)`}><rect x={0} y={-600} width={300} height={600} fill={V.hierro} />{Array.from({ length: 6 }, (_, i) => <rect key={i} x={20 + i * 46} y={-580} width={14} height={580} fill={V.hierro2} />)}</g>
         <g transform={`translate(300 0) scale(${-(1 - portonAbre * 0.85)} 1)`}><rect x={0} y={-600} width={300} height={600} fill={V.hierro} />{Array.from({ length: 6 }, (_, i) => <rect key={i} x={20 + i * 46} y={-580} width={14} height={580} fill={V.hierro2} />)}</g>
-        <rect x={-360} y={-830} width={720} height={110} rx={14} fill="#e2c69a" />
-        <text x={0} y={-752} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={70} fill={T} letterSpacing={8}>COTTON MILL</text>
+        <rect x={-280} y={-780} width={560} height={86} rx={12} fill="#e2c69a" />
+        <text x={0} y={-718} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={54} fill={T} letterSpacing={6}>COTTON MILL</text>
         {/* torre del reloj */}
         <rect x={-260} y={-H - 900} width={520} height={900} fill="url(#ladfab)" />
         <path d="M -300 -900 L 0 -1300 L 300 -900 Z" transform={`translate(0 ${-H})`} fill="#3b2a4a" />

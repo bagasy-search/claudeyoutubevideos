@@ -117,7 +117,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={599.35} t1={600.2} text="AND THEN WHAT?" y={540} size={130} color={C.ambar} />
       <Lista t={t} t0={600.25} t1={607.7} x={110} y={200} titulo="IF YOU GOT HURT" size={70} items={[{ txt: "NO SICK PAY", t0: 600.3, ok: false }, { txt: "NO COMPENSATION", t0: 601.7, ok: false }, { txt: "NO JOB", t0: 606.0, ok: false }]} />
       <Primer t={t} t0={600.4} t1={610.6} lado="der" g={{ expr: "triste", bI: 40, cI: 110, manoI: <Venda /> }} emo="lagrimas" />
-      <Chip t={t} t0={607.9} t1={610.6} text="SOME OWNERS PAID THE DOCTOR" color={C.lima} tinta={C.noche} x={960} y={330} centro size={60} />
+      <Chip t={t} t0={607.9} t1={610.6} text="SOME OWNERS PAID THE DOCTOR" color={C.lima} tinta={C.noche} x={960} y={110} centro size={60} />
       <Tilde t={t} t0={608.2} t1={610.6} x={1460} y={330} s={0.7} />
       <Chip t={t} t0={609.95} t1={610.6} text="MANY DID NOT" color={C.rojo} x={960} y={470} centro size={70} />
       <Chip t={t} t0={610.9} t1={614.5} text="LOST A HAND AT 10 → BEGGING FOR LIFE" color={C.rojo} x={960} y={170} centro size={58} />
@@ -137,7 +137,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
           <rect x={74} y={330} width={42} height={230} rx={20} fill={on(3)} /><rect x={124} y={330} width={42} height={230} rx={20} fill={on(3)} />
         </svg>); })()}
       {["FINGERS", "HANDS", "ARMS", "LEGS"].map((w, i) => <Chip key={w} t={t} t0={625.6 + i * 0.85} t1={629.5} text={`MISSING ${w}`} color={i % 2 ? C.noche : C.rojo} x={260 + i * 390} y={150} centro size={34} />)}
-      <Gran t={t} t0={629.8} t1={634.4} text="AN ARMY BACK FROM A WAR" y={180} size={110} color={C.crema} />
+      <Gran t={t} t0={629.8} t1={634.4} text="AN ARMY BACK FROM A WAR" y={180} size={86} color={C.crema} />
       <Chip t={t} t0={634.6} t1={636.8} text="EXCEPT THIS ARMY NEVER LEFT TOWN" color={C.noche} x={960} y={150} centro size={62} />
       <Gran t={t} t0={637.0} t1={638.5} text="IT HAD JUST GONE TO WORK" y={180} size={110} color={C.ambar} />
       <Sello t={t} t0={639.4} t1={646.7} text="1844 · FENCE THE MACHINES" x={960} y={270} size={84} color={C.lima} rot={-4} />

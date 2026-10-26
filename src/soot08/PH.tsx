@@ -133,7 +133,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={711.5} t1={714.0} text="THE WORLD YOU CAME HOME TO" color={C.noche} x={960} y={150} centro size={62} />
       <Gran t={t} t0={714.2} t1={717.4} text="A DEATH TRAP FOR A CHILD?" y={200} size={110} color={C.crema} />
       <Flash t={t} at={[717.55]} />
-      <Sello t={t} t0={717.55} t1={718.7} text="YES. IT WAS." x={960} y={540} size={170} />
+      <Sello t={t} t0={717.55} t1={718.7} text="YES. IT WAS." x={960} y={540} size={124} />
     </AbsoluteFill>
   );
 };

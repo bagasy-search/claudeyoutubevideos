@@ -109,7 +109,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
           <text x={300} y={270} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#2a1530">COTTON THREAD · TOO DRY</text>
         </svg>); })()}
       <Chip t={t} t0={305.5} t1={308.4} text="HOT AND DAMP · ON PURPOSE" color={C.naranja} x={960} y={950} centro size={70} />
-      {t > 308.5 && t < 314.0 && <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${ent(t, 308.5) * (1 - prog(t, 313.7, 314))})`, transformOrigin: "960px 540px" }}><Pergamino x={960} y={540} w={760} abre={prog(t, 308.6, 309.4)} titulo="MILL RULES · 1823" /></div>}
+      {t > 308.5 && t < 314.0 && <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${ent(t, 308.5) * (1 - prog(t, 313.7, 314))})`, transformOrigin: "960px 540px" }}><Pergamino x={960} y={540} w={760} abre={prog(t, 308.6, 309.4)} lineas={0} titulo="MILL RULES · 1823" />{t > 309.3 && ["WINDOWS KEPT SHUT", "HEAT KEPT AT 80–84 °F", "AIR KEPT DAMP FOR THE THREAD"].map((l, i) => <div key={l} style={{ position: "absolute", left: 960, top: 470 + i * 90, transform: "translateX(-50%)", whiteSpace: "nowrap", fontFamily, fontWeight: 700, fontSize: 46, color: "#3a2410", opacity: ent(t, 309.4 + i * 0.5) }}>{l}</div>)}</div>}
       <Chip t={t} t0={310.2} t1={314.0} text="TYLDESLEY, NEAR MANCHESTER" color={C.violeta} x={960} y={950} centro size={64} />
       {t > 314.2 && t < 322.4 && (
         <div style={{ position: "absolute", left: 1650, top: 120, transform: `scale(${ent(t, 314.2) * (1 - prog(t, 322.1, 322.4))})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={0.2 + prog(t, 314.4, 317.4) * 0.66} marcas={[60, 70, 80, 90]} /></div></div>
@@ -162,9 +162,9 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Primer t={t} t0={381.1} t1={386.4} lado="der" x={1480} g={{ expr: "sorpresa", mira: -1, bI: 120, cI: 110 }} emo="preg" />
       <Lista t={t} t0={381.0} t1={389.6} x={110} y={170} titulo="ALL OF THAT…" size={74} previa items={[{ txt: "THE HEAT", t0: 383.0 }, { txt: "THE DUST", t0: 383.6 }, { txt: "THE NOISE", t0: 384.3 }, { txt: "14 HOURS", t0: 385.0 }]} />
       <Flash t={t} at={[386.5]} />
-      <Sello t={t} t0={386.5} t1={389.6} text="PERFECTLY LEGAL" x={1250} y={540} size={110} color={C.lima} rot={-8} />
+      <Sello t={t} t0={386.5} t1={389.6} text="PERFECTLY LEGAL" x={1180} y={820} size={90} color={C.lima} rot={-8} />
       <Chip t={t} t0={388.1} t1={389.6} text="THAT WAS JUST THE JOB" color={C.noche} x={1250} y={800} centro size={60} />
-      <Gran t={t} t0={389.8} t1={392.8} text="NOW: INVENTED ON PURPOSE" y={200} size={100} color={C.rojo} />
+      <Gran t={t} t0={389.8} t1={392.8} text="NOW: INVENTED ON PURPOSE" y={200} size={82} color={C.rojo} />
     </AbsoluteFill>
   );
 };

@@ -170,7 +170,7 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
         </>
       )}
       <Chip t={t} t0={555.3} t1={558.2} text="HUNG BY HIS WRISTS" color={C.rojo} x={960} y={1010} centro size={62} />
-      <Chip t={t} t0={558.4} t1={563.4} text="LEGS LIFTED · OVER A MOVING MACHINE" color={C.noche} x={960} y={1010} centro size={56} />
+      <Chip t={t} t0={558.4} t1={563.4} text="LEGS LIFTED · OVER A MOVING MACHINE" color={C.noche} x={960} y={990} centro size={46} />
       {/* contraste: la fábrica buena (New Lanark: chicos chicos a la escuela, no a la máquina) */}
       {t > 563.5 && t < 565.7 && (() => { const e = ent(t, 563.55), o = prog(t, 565.4, 565.7); return (
         <div style={{ position: "absolute", left: 960, top: 600, width: 1240, height: 600, transform: `translate(-50%,-50%) scale(${e * (1 - o)})`, background: "linear-gradient(180deg,#fff3c4,#ffd98a)", border: "10px solid #2a1530", borderRadius: 34, overflow: "hidden" }}>

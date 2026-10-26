@@ -20,10 +20,10 @@ const KA: K[] = [
   [0, 2300, -330, 1.75], [1.5, 2800, -380, 1.6],
   [2.05, FCX, -3440, 1.5], [3.4, FCX, -3440, 1.85],
   [3.85, 3250, -330, 1.6], [6.5, 3280, -330, 1.65], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
-  [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
+  [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 3100, -420, 1.55], [23.6, 3050, -420, 1.7],
   [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2650, -200, 1.35],
-  [35.2, 3020, -300, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 2680, -250, 1.55],
-  [45.7, 2620, -250, 1.6], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
+  [35.2, 3020, -300, 1.3], [36.3, 3100, -380, 1.25], [38.6, 3100, -300, 1.35], [40.6, 3700, -560, 1.7], [43.4, 2680, -250, 1.55],
+  [45.7, 2620, -250, 1.6], [48.5, 2850, -460, 1.1], [49.4, 2950, -250, 1.5], [51.0, 2950, -250, 1.55],
   [51.9, -1110, -420, 1.0], [52.8, -1175, -395, 7.5],
 ];
 // adentro de la casa (otro espacio: entramos por la ventana del cuarto y salimos por la misma)
@@ -123,7 +123,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
           <circle cx={100} cy={155} r={18} fill={T} /><rect x={92} y={160} width={16} height={40} fill={T} />
         </svg>
       )}
-      <Chip t={t} t0={7.75} t1={10.4} text="LOCKED AT THE FIRST BELL" color={C.noche} x={960} y={140} centro size={64} />
+      <Chip t={t} t0={7.75} t1={10.4} text="LOCKED AT THE FIRST BELL" color={C.noche} x={620} y={140} centro size={64} />
       {/* monedas que vuelan del bolsillo a la fábrica */}
       {[0, 1, 2, 3, 4].map((i) => {
         const t0 = 8.85 + i * 0.16;
@@ -135,10 +135,10 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={11.4} t1={13.4} text="A FEW SHILLINGS A WEEK" color={C.ambar} tinta={C.noche} x={960} y={950} centro size={72} />
       <Cuenta t={t} t0={14.2} t1={14.9} de={0} a={14} x={960} y={300} size={300} color={C.ambar} suf=" HOURS" fuera={15.8} />
       <Chip t={t} t0={15.2} t1={16.2} text="ON YOUR FEET" color={C.violeta} x={960} y={520} centro size={80} />
-      {t > 14.2 && t < 16.4 && <div style={{ position: "absolute", left: 1640, top: 700, transform: `translate(-50%,-50%) scale(${ent(t, 14.25) * (1 - prog(t, 16.1, 16.4))})` }}><div style={{ position: "relative", width: 1, height: 1 }}><Reloj x={0} y={0} s={0.85} hora={5.5 + prog(t, 14.3, 15.9) * 14} /></div></div>}
+      {t > 14.2 && t < 16.4 && <div style={{ position: "absolute", left: 1640, top: 950, transform: `translate(-50%,-50%) scale(${ent(t, 14.25) * (1 - prog(t, 16.1, 16.4))})` }}><div style={{ position: "relative", width: 1, height: 1 }}><Reloj x={0} y={0} s={0.85} hora={5.5 + prog(t, 14.3, 15.9) * 14} /></div></div>}
       {t > 16.1 && t < 18.2 && <div style={{ position: "absolute", left: 1560, top: 170, transform: `scale(${ent(t, 16.1)})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={prog(t, 16.2, 17.4) * 0.92} /></div></div>}
       <Chip t={t} t0={16.6} t1={18.2} text="HOTTER THAN SPAIN IN SUMMER" color={C.naranja} x={800} y={160} centro size={68} />
-      <Chip t={t} t0={18.4} t1={19.8} text="A MACHINE THAT DOES NOT STOP" color={C.noche} x={960} y={140} centro size={70} />
+      <Chip t={t} t0={18.4} t1={20.5} text="A MACHINE THAT DOES NOT STOP" color={C.noche} x={960} y={140} centro size={70} />
       <Chip t={t} t0={20.6} t1={23.6} text="NOT FOR LUNCH" color={C.violeta} x={960} y={300} centro size={84} />
       <Chip t={t} t0={21.75} t1={23.6} text="NOT FOR TEARS" color={C.teal} tinta={C.noche} x={960} y={430} centro size={84} />
       <Emote t={t} t0={21.8} t1={23.6} tipo="lagrimas" x={960 + (2700 - cam.x) * cam.z} y={540 + (-200 - 450 * (300 / 560) - cam.y) * cam.z} s={0.55 * cam.z} />
@@ -188,7 +188,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
         </svg>); })()}
       <Chip t={t} t0={66.4} t1={67.4} text="7 WAYS IT TRIES TO BREAK YOU" color={C.noche} x={1220} y={760} centro size={48} />
       <Chip t={t} t0={65.0} t1={67.4} text="INSIDE A VICTORIAN MILL · 5:30 AM" color={C.ambar} tinta={C.noche} x={1180} y={250} centro size={50} />
-      <Chip t={t} t0={68.7} t1={71.6} text="EVERY WAY IT TRIES TO BREAK YOU" color={C.rojo} x={960} y={140} centro size={66} />
+      <Chip t={t} t0={68.7} t1={71.6} text="EVERY WAY IT TRIES TO BREAK YOU" color={C.rojo} x={960} y={80} centro size={66} />
       <Carretes t={t} t0={71.8} t1={73.6} n={7} y={940} s={0.95} />
       <Gran t={t} t0={71.9} t1={73.6} text="7" y={180} size={260} color={C.rojo} />
       <Velo t={t} t0={74.3} t1={79.3} op={0.72} />
@@ -199,7 +199,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       })()}
       <Primer t={t} t0={74.5} t1={79.3} lado="der" x={1620} h={820} g={{ expr: t < 76.5 ? "sorpresa" : "miedo", mira: -1, miraY: -0.4 }} emo={t > 77.6 ? "preg" : undefined} />
       <Chip t={t} t0={74.6} t1={77} text="A PRESIDENT" color={C.violeta} x={420} y={130} centro size={70} />
-      <Chip t={t} t0={75.5} t1={79.2} text="4,000 MILES AWAY" color={C.teal} tinta={C.noche} x={420} y={760} centro size={62} />
+      <Chip t={t} t0={75.5} t1={79.2} text="3,600 MILES AWAY" color={C.teal} tinta={C.noche} x={420} y={760} centro size={62} />
       <Chip t={t} t0={77.6} t1={79.2} text="WHY?" color={C.rojo} x={420} y={130} centro size={90} />
       <Velo t={t} t0={79.5} t1={81.5} op={0.25} />
       <Gran t={t} t0={79.6} t1={81.3} text="YOUR SHIFT" y={390} size={170} />
