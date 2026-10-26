@@ -112,10 +112,10 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       {t > 308.5 && t < 314.0 && <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${ent(t, 308.5) * (1 - prog(t, 313.7, 314))})`, transformOrigin: "960px 540px" }}><Pergamino x={960} y={540} w={760} abre={prog(t, 308.6, 309.4)} lineas={0} titulo="MILL RULES · 1823" />{t > 309.3 && ["WINDOWS KEPT SHUT", "HEAT KEPT AT 80–84 °F", "AIR KEPT DAMP FOR THE THREAD"].map((l, i) => <div key={l} style={{ position: "absolute", left: 960, top: 470 + i * 90, transform: "translateX(-50%)", whiteSpace: "nowrap", fontFamily, fontWeight: 700, fontSize: 46, color: "#3a2410", opacity: ent(t, 309.4 + i * 0.5) }}>{l}</div>)}</div>}
       <Chip t={t} t0={310.2} t1={314.0} text="TYLDESLEY, NEAR MANCHESTER" color={C.violeta} x={960} y={950} centro size={64} />
       {t > 314.2 && t < 322.4 && (
-        <div style={{ position: "absolute", left: 1650, top: 120, transform: `scale(${ent(t, 314.2) * (1 - prog(t, 322.1, 322.4))})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={0.2 + prog(t, 314.4, 317.4) * 0.66} marcas={[60, 70, 80, 90]} /></div></div>
+        <div style={{ position: "absolute", left: 1650, top: 120, transform: `scale(${ent(t, 314.2) * (1 - prog(t, 322.1, 322.4))})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={0.2 + prog(t, 314.4, 317.4) * 0.66} marcas={[60, 70, 80, 90]} unidad="F" /></div></div>
       )}
       <Cuenta t={t} t0={314.6} t1={317.4} de={84} a={84} x={760} y={360} size={200} color={C.naranja} pre="80–" suf="°F" fuera={318.6} />
-      <Cuenta t={t} t0={318.7} t1={319.6} de={20} a={28} x={760} y={360} size={220} color={C.rojo} pre="≈" suf="°C" fuera={322.4} />
+      <Cuenta t={t} t0={318.7} t1={319.6} de={20} a={28} x={800} y={360} size={140} color={C.rojo} pre="80–84 °F ≈ " suf="°C" fuera={322.4} />
       <Chip t={t} t0={320.2} t1={322.4} text="EVERY DAY · ALL YEAR" color={C.noche} x={760} y={560} centro size={64} />
       <Sello t={t} t0={322.7} t1={324.4} text="WINDOWS SHUT" x={960} y={330} size={130} />
       <Cuenta t={t} t0={324.6} t1={325.6} de={14} a={14} x={960} y={470} size={120} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
@@ -162,7 +162,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Primer t={t} t0={381.1} t1={386.4} lado="der" x={1480} g={{ expr: "sorpresa", mira: -1, bI: 120, cI: 110 }} emo="preg" />
       <Lista t={t} t0={381.0} t1={389.6} x={110} y={170} titulo="ALL OF THAT…" size={74} previa items={[{ txt: "THE HEAT", t0: 383.0 }, { txt: "THE DUST", t0: 383.6 }, { txt: "THE NOISE", t0: 384.3 }, { txt: "14 HOURS", t0: 385.0 }]} />
       <Flash t={t} at={[386.5]} />
-      <Sello t={t} t0={386.5} t1={389.6} text="PERFECTLY LEGAL" x={1180} y={820} size={90} color={C.lima} rot={-8} />
+      <Sello t={t} t0={386.5} t1={389.6} text="PERFECTLY LEGAL" x={880} y={820} size={80} color={C.lima} rot={-8} />
       <Chip t={t} t0={388.1} t1={389.6} text="THAT WAS JUST THE JOB" color={C.noche} x={1250} y={800} centro size={60} />
       <Gran t={t} t0={389.8} t1={392.8} text="NOW: INVENTED ON PURPOSE" y={200} size={82} color={C.rojo} />
     </AbsoluteFill>

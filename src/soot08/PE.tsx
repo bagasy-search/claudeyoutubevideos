@@ -31,6 +31,62 @@ const ITEMS = [
 ];
 const focoEn = (t: number) => { let f = -1; ITEMS.forEach((it, i) => { if (t >= it.t0) f = i; }); return f; };
 
+// vuelta 9 OJO: cada multa ACTUADA en una viñeta al costado de la lista (antes: 30 s de lista sola)
+const VIN: { t0: number; t1: number; que: string }[] = [
+  { t0: 415.8, t1: 419.0, que: "sucio" }, { t0: 419.0, t1: 425.9, que: "lava" }, { t0: 425.9, t1: 428.6, que: "silba" },
+  { t0: 428.6, t1: 432.8, que: "tarde" }, { t0: 432.8, t1: 440.1, que: "enfermo" },
+];
+const Vineta: React.FC<{ t: number }> = ({ t }) => {
+  const v = VIN.find((q) => t >= q.t0 && t < q.t1) ?? VIN[VIN.length - 1];
+  const k = t - v.t0, e = ent(t, 415.85);
+  const L = 1150, T = 170, W = 700, H = 740;
+  const nino = { seed: 2, ropa: NINO, gorro: "gorra" as const };
+  return (
+    <div style={{ position: "absolute", left: L, top: T, width: W, height: H, borderRadius: 30, overflow: "hidden", border: "10px solid #fff3d6", boxShadow: "0 18px 0 rgba(0,0,0,.35)", transform: `scale(${e})`, transformOrigin: "50% 50%", background: v.que === "enfermo" ? "linear-gradient(180deg,#3a2f5a,#241c3e)" : "linear-gradient(180deg,#e9c99a,#c9a274)" }}>
+      <div style={{ position: "absolute", left: 0, top: H - 150, width: W, height: 150, background: v.que === "enfermo" ? "#1a1430" : "#7a5230" }} />
+      {/* la multa cae: moneda de 1s a la alcancía del patrón */}
+      <div style={{ position: "absolute", left: W - 150, top: -60 + Math.min(1, k / 0.6) * 160, width: 96, height: 96, borderRadius: 48, background: "#d9dde3", border: "8px solid #8a8494", fontFamily, fontWeight: 700, fontSize: 40, color: "#4a4560", display: "flex", alignItems: "center", justifyContent: "center", opacity: k < 2.4 ? 1 : 0 }}>{v.que === "enfermo" ? "6s" : "1s"}</div>
+      <div style={{ position: "absolute", left: 0, top: 0, width: W, height: H }}>
+        {v.que === "sucio" && <>
+          <Persona t={t} {...nino} x={300} y={620} h={520} expr="triste" bD={30 + 20 * Math.sin(t * 5)} cD={90} ladea={-6} />
+          {[[250, 330], [330, 400], [280, 470], [300, 250]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x, top: y, width: 34, height: 22, borderRadius: 12, background: "#5a4029", opacity: 0.8 }} />)}
+          <Persona t={t} seed={61} ropa={CAPATAZ} gorro="gorra" x={560} y={620} h={540} flip expr="enojado" bD={95} cD={0} habla />
+        </>}
+        {v.que === "lava" && <>
+          <div style={{ position: "absolute", left: 130, top: 420, width: 360, height: 30, background: "#6b4528", borderRadius: 8 }} />
+          <div style={{ position: "absolute", left: 160, top: 450, width: 26, height: 140, background: "#6b4528" }} />
+          <div style={{ position: "absolute", left: 434, top: 450, width: 26, height: 140, background: "#6b4528" }} />
+          {Array.from({ length: 6 }, (_, i) => <div key={i} style={{ position: "absolute", left: 200 + i * 40, top: 330 - ((k * 60 + i * 23) % 120), width: 22, height: 22, borderRadius: 11, border: "4px solid #fff", opacity: 0.8 }} />)}
+          <Persona t={t} {...nino} x={310} y={620} h={520} expr={k > 3 ? "miedo" : "neutro"} bD={70 + 8 * Math.sin(t * 9)} bI={70 - 8 * Math.sin(t * 9)} cD={50} cI={50} />
+          <div style={{ position: "absolute", left: 170, top: 340, width: 280, height: 80, background: "#a7a3b8", borderRadius: "0 0 70px 70px", border: "8px solid #2a1530" }} />
+          <div style={{ position: "absolute", left: 186, top: 344, width: 248, height: 18, background: "#7fb6d9", borderRadius: 9 }} />
+          {k > 3 && <Persona t={t} seed={61} ropa={CAPATAZ} gorro="gorra" x={590} y={620} h={540} flip expr="enojado" bD={95} cD={0} habla aparece={v.t0 + 3} />}
+        </>}
+        {v.que === "silba" && <>
+          <Persona t={t} {...nino} x={300} y={620} h={520} expr={k < 1.4 ? "feliz" : "sorpresa"} bD={k < 1.4 ? 20 : 150} cD={20} />
+          {k < 1.6 && ["♪", "♫", "♪"].map((n, i) => <div key={i} style={{ position: "absolute", left: 360 + i * 60 + Math.sin(t * 4 + i) * 14, top: 230 - ((k * 90 + i * 40) % 140), fontSize: 64, color: "#2a1530", fontWeight: 700 }}>{n}</div>)}
+          <Persona t={t} seed={61} ropa={CAPATAZ} gorro="gorra" x={570} y={620} h={540} flip expr="enojado" bD={95} cD={0} habla={k > 1} />
+        </>}
+        {v.que === "tarde" && <>
+          <div style={{ position: "absolute", left: 470, top: 90, width: 170, height: 170, borderRadius: 85, background: "#fff6dc", border: "10px solid #2a1530" }}>
+            <div style={{ position: "absolute", left: 76, top: 22, width: 8, height: 64, background: "#2a1530", transformOrigin: "4px 60px", transform: `rotate(${30 + k * 20}deg)` }} />
+          </div>
+          <Persona t={t} {...nino} x={120 + Math.min(k, 2.2) * 110} y={620} h={520} expr="miedo" camina={k < 2.2 ? 2.4 : 0} inclina={k < 2.2 ? 10 : 0} />
+          <div style={{ position: "absolute", left: 470, top: 280, fontFamily, fontWeight: 700, fontSize: 44, color: "#2a1530" }}>+5 MIN</div>
+        </>}
+        {v.que === "enfermo" && <>
+          <Persona t={t} {...nino} x={300} y={600} h={460} expr="triste" bD={20} cD={20} ladea={-12 + 4 * Math.sin(t * 6)} inclina={6 * Math.max(0, Math.sin(t * 7))} />
+          <div style={{ position: "absolute", left: 60, top: 420, width: 480, height: 90, background: "#c9c2dc", borderRadius: 30 }} />
+          <div style={{ position: "absolute", left: 40, top: 480, width: 520, height: 120, background: "#8a5a3c", borderRadius: 18 }} />
+          <Emote t={t} t0={v.t0 + 0.4} tipo="sudor" x={330} y={260} s={0.7} />
+          {Array.from({ length: 4 }, (_, i) => <div key={i} style={{ position: "absolute", left: 520 + (i % 2) * 40, top: 380 - ((k * 70 + i * 50) % 220), width: 60, height: 60, borderRadius: 30, background: "#fff", opacity: 0.35 }} />)}
+          <div style={{ position: "absolute", left: 470, top: 520, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff3d6" }}>STEAM</div>
+        </>}
+      </div>
+    </div>
+  );
+};
+
 export const PE: React.FC<{ t: number }> = ({ t }) => {
   const cam = camara(t, KE);
   const sh = sacudon(t, [440.1, 451.4, 463.6, 471.9]);
@@ -87,16 +143,16 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
       {aviso && <Velo t={t} t0={409.4} t1={445.6} op={0.85} />}
       {aviso && (
         <div style={{ position: "absolute", inset: 0, opacity: 1 - prog(t, 445.3, 445.7) }}>
-          {t < 440.1 && <Aviso t={t} t0={409.4} x={860} y={500} w={1150} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} />}
+          {t < 440.1 && <Aviso t={t} t0={409.4} x={t < 415.8 ? 860 : 860 - 300 * prog(t, 415.8, 416.4)} y={500} w={t < 415.8 ? 1150 : 1150 - 230 * prog(t, 415.8, 416.4)} titulo="TYLDESLEY MILL · FINES" items={ITEMS} foco={focoEn(t)} />}
+          {t > 415.8 && t < 440.1 && <Vineta t={t} />}
         </div>
       )}
       {/* anotaciones al costado del cartel */}
-      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 150, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} /></div></div>}
+      {t > 412.9 && t < 415.6 && <div style={{ position: "absolute", left: 150, top: 160, transform: `scale(${ent(t, 412.9) * 0.55})`, transformOrigin: "0 0" }}><div style={{ position: "relative" }}><Termometro x={0} y={860} nivel={0.86} unidad="F" /></div></div>}
       <Chip t={t} t0={412.9} t1={415.6} text="REMEMBER: 80–84°F INSIDE" color={C.naranja} x={960} y={1010} centro size={52} />
-      <Chip t={t} t0={422.7} t1={425.7} text="CAN'T BE DIRTY · CAN'T WASH" color={C.rojo} x={960} y={1010} centro size={56} />
-      <Chip t={t} t0={428.6} t1={432.6} text="ONE SHILLING · EACH TIME" color={C.noche} x={960} y={1010} centro size={52} />
-      <Chip t={t} t0={432.8} t1={437.8} text="AND THE BEST ONE…" color={C.violeta} x={960} y={1010} centro size={56} />
-      <Primer t={t} t0={415.9} t1={439.9} lado="der" x={1660} h={900} g={{ expr: t < 425.9 ? "triste" : t < 432.8 ? "enojado" : "miedo" }} emo={t < 428.6 ? undefined : "excl"} />
+      <Chip t={t} t0={422.7} t1={425.7} text="CAN'T BE DIRTY · CAN'T WASH" color={C.rojo} x={560} y={1000} centro size={56} />
+      <Chip t={t} t0={428.6} t1={432.6} text="ONE SHILLING · EACH TIME" color={C.noche} x={560} y={1000} centro size={52} />
+      <Chip t={t} t0={432.8} t1={437.8} text="AND THE BEST ONE…" color={C.violeta} x={560} y={1000} centro size={56} />
       <Flash t={t} at={[440.1]} />
       {t > 440.0 && t < 445.6 && (
         <>

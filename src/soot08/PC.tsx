@@ -22,7 +22,7 @@ const KM: K[] = [
 ];
 const KL: K[] = [
   [204.8, -450, -380, 1.15], [207.4, 480, -380, 1.1], [208.4, 250, -540, 0.82], [210.3, 0, -560, 0.72], [214.3, 0, -560, 0.72],
-  [251.7, 200, -320, 1.0], [253.3, 560, -150, 1.9], [257.9, 480, -330, 1.2], [262.5, -120, -330, 1.1], [263.9, -200, -330, 1.15], [267.5, -380, -330, 1.3], [271.0, -400, -300, 1.4],
+  [251.7, 200, -320, 1.0], [253.3, 560, -150, 1.9], [257.9, 330, -190, 1.7], [262.5, -520, -190, 1.7], [263.9, -200, -330, 1.15], [267.5, -380, -330, 1.3], [271.0, -400, -300, 1.4],
 ];
 const lado = (t: number) => (t >= 204.8 && t < 214.3) || (t >= 251.7 && t < 271.0);
 
@@ -118,7 +118,7 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
           <Espacio cam={cam}>
             <MulaPerfil t={t} u={uLado(t)} peligro={t > 263.6 && t < 271 ? prog(t, 263.6, 264.2) : 0}>
               {/* el scavenger: se arrastra panza abajo hasta debajo de los hilos (dibujado DETRÁS del carro) */}
-              {t > 251.7 && <Girado t={t} rot={-90} g={{ seed: 30, x: interpolate(t, [257.9, 262.4], [760, -330], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -6, h: 420, ropa: NINO, gorro: "gorra", expr: t < 263.9 ? "neutro" : t < 267.5 ? "miedo" : "sorpresa", bD: 170 + Math.sin(t * 8) * 10, bI: 160, descalzo: true }} />}
+              {t > 251.7 && <Girado t={t} rot={-90} g={{ seed: 30, x: interpolate(t, [257.9, 262.4], [760, -330], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -80, h: 420, ropa: NINO, gorro: "gorra", expr: t < 263.9 ? "neutro" : t < 267.5 ? "miedo" : "sorpresa", bD: 170 + Math.sin(t * 8) * 10, bI: 160, descalzo: true }} />}
               {t > 263.9 && t < 271 && <Emote t={t} t0={263.95} tipo="susto" x={-600} y={-120} s={0.6} />}
               {/* el hilandero, del otro lado del carro */}
               {t < 214.3 && <Persona t={t} seed={41} x={carroX(uLado(t)) + 420} y={0} h={480} ropa={HILANDERO} barba flip expr="neutro" bI={50} cI={40} camina={Math.abs(uLado(t + 0.05) - uLado(t)) > 0.002 ? 1.4 : 0} />}
@@ -129,6 +129,19 @@ export const PC: React.FC<{ t: number }> = ({ t }) => {
 
       <Primer t={t} t0={208.3} t1={214.2} lado="der" g={{ expr: t < 210.8 ? "sorpresa" : "miedo", mira: -1 }} />
       {/* ── capas de pantalla ── */}
+      {/* vuelta 9 OJO: contraplano desde el piso — el carro baja sobre el niño acostado */}
+      {t > 263.9 && t < 267.5 && (() => {
+        const cierra = 0.92 * prog(t, 264.0, 266.8), top = -220 + 520 * cierra;
+        return (
+          <AbsoluteFill style={{ background: "linear-gradient(180deg,#1c130d,#4a3424 70%,#5c4130)", opacity: ent(t, 263.9) }}>
+            <div style={{ position: "absolute", left: 0, top: top + 300, width: 1920, height: 420, background: `linear-gradient(180deg,rgba(0,0,0,${0.35 + 0.4 * cierra}),rgba(0,0,0,0))` }} />
+            {Array.from({ length: 14 }, (_, i) => <div key={i} style={{ position: "absolute", left: (i * 157 + (t * 40) % 157) % 1980 - 40, top: 620 + ((i * 53) % 260) - Math.sin(t * 1.3 + i) * 20, width: 18, height: 12, borderRadius: 8, background: "#e9e1d0", opacity: 0.55 }} />)}
+            <Girado t={t} rot={-90} g={{ seed: 30, x: 1180, y: 930, h: 660, ropa: NINO, gorro: "gorra", expr: "miedo", bD: 170 + Math.sin(t * 10) * 8, bI: 165, descalzo: true }} />
+            <div style={{ position: "absolute", left: -20, top, width: 1960, height: 300, background: "#6b4a2e", borderBottom: "14px solid #2a1530" }} />
+            {Array.from({ length: 26 }, (_, i) => <div key={i} style={{ position: "absolute", left: 20 + i * 75, top: top + 300, width: 22, height: 130, borderRadius: 10, background: `repeating-linear-gradient(${(t * 900) % 360}deg,#c9c2dc 0 8px,#8a8494 8px 16px)`, border: "4px solid #2a1530" }} />)}
+          </AbsoluteFill>
+        );
+      })()}
       <Latigo t={t} at={[189.75, 204.8, 214.3, 251.7, 271.0]} />
       <Horror t={t} t0={189.75} n={2} nombre="THE MACHINE" t1={192.0} />
       <Chip t={t} t0={192.2} t1={193.9} text="LET'S GIVE YOU A JOB" color={C.violeta} x={960} y={150} centro size={74} />

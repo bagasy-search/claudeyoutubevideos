@@ -151,7 +151,7 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
       )}
       {t > 548.4 && t < 552.3 && <Chancho x={1100} y={600} s={1.3 * ent(t, 548.5)} t={t} />}
       {t > 548.4 && t < 552.3 && <div style={{ position: "absolute", left: 1300, top: 660, width: 460, height: 90, background: "#7a4a22", borderRadius: "0 0 40px 40px", transform: `scale(${ent(t, 548.6)})`, border: "8px solid #2a1530" }} />}
-      {t > 549.8 && t < 552.3 && <Persona t={t} seed={89} x={1690} y={750} h={300} ropa={{ ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }} expr="triste" flip bD={70} cD={50} aparece={549.9} />}
+      {t > 549.8 && t < 552.3 && <Persona t={t} seed={89} x={1700} y={960} h={600} ropa={{ ...NINO, tunica: "#8a8494", tunica2: "#5d5670" }} expr="miedo" flip bD={80 + 14 * Math.sin(t * 7)} cD={30} inclina={10} mira={-1} aparece={549.9} />}
       <Chip t={t} t0={548.6} t1={552.0} text="SO HUNGRY THEY STOLE THE PIGS' FOOD" color={C.noche} x={960} y={150} centro size={58} />
       <Chip t={t} t0={552.1} t1={555.0} text="HIS BOOK SHOCKED THE COUNTRY" color={C.violeta} x={960} y={150} centro size={64} />
       {/* el libro que se abre, y lectores que se tapan la boca */}
@@ -170,13 +170,14 @@ export const PF: React.FC<{ t: number }> = ({ t }) => {
         <>
           <AbsoluteFill style={{ background: "#2a1d4a", opacity: prog(t, 555.1, 555.5) * 0.55 * (1 - prog(t, 563.2, 563.5)) }} />
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
-            <line x1={760} y1={160} x2={1160} y2={160} stroke="#fff3d6" strokeWidth={14} strokeLinecap="round" opacity={0.8} />
-            <line x1={960} y1={160} x2={960} y2={250} stroke="#fff3d6" strokeWidth={8} opacity={0.8} />
+            <rect x={620} y={96} width={680} height={30} rx={14} fill="#6b4a2e" stroke="#2a1530" strokeWidth={8} />
+            <line x1={928} y1={126} x2={928} y2={250} stroke="#d9c49a" strokeWidth={10} />
+            <line x1={992} y1={126} x2={992} y2={250} stroke="#d9c49a" strokeWidth={10} />
             <rect x={560} y={840} width={800} height={200} rx={24} fill="#5d5670" stroke="#2a1530" strokeWidth={10} />
             {Array.from({ length: 5 }, (_, i) => <g key={i} transform={`translate(${660 + i * 150} 900) rotate(${t * 140 * (i % 2 ? -1 : 1)})`}><circle r={52} fill="#8a8494" stroke="#2a1530" strokeWidth={8} />{[0, 60, 120].map((a) => <rect key={a} x={-8} y={-52} width={16} height={104} fill="#2a1530" transform={`rotate(${a})`} />)}<circle r={14} fill={C.oro} /></g>)}
             <rect x={560} y={820} width={800} height={30} rx={12} fill={C.rojo} opacity={0.85} />
           </svg>
-          <Persona t={t} seed={90} x={960} y={700 - Math.abs(Math.sin(t * 2.2)) * 60} h={460} ropa={NINO} gorro="gorra" bD={178} bI={178} cD={0} cI={0} expr="miedo" inclina={Math.sin(t * 2.2) * 4} />
+          <Persona t={t} seed={90} x={960} y={690} h={500} ropa={NINO} gorro="gorra" bD={176} bI={176} cD={60} cI={60} expr="miedo" inclina={Math.sin(t * 2.2) * 5} />
         </>
       )}
       <Chip t={t} t0={555.3} t1={558.2} text="HUNG BY HIS WRISTS" color={C.rojo} x={960} y={1010} centro size={62} />

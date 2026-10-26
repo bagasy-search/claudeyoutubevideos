@@ -208,7 +208,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={788.2} t1={790.1} text="NOT THE END OF CHILD LABOUR" color={C.rojo} x={960} y={150} centro size={62} />
       <Chip t={t} t0={790.3} t1={796.0} text="½ DAY AT WORK · ½ DAY AT SCHOOL" color={C.teal} tinta={C.noche} x={960} y={150} centro size={62} />
       <Chip t={t} t0={793.0} t1={796.0} text="FOR DECADES" color={C.noche} x={960} y={960} centro size={56} />
-      <Chip t={t} t0={796.2} t1={801.1} text="14 HOURS UNDER A RUNNING MACHINE: ENDING" color={C.lima} tinta={C.noche} x={960} y={150} centro size={56} />
+      <Chip t={t} t0={796.2} t1={801.1} text="NO MORE 14-HOUR DAYS" color={C.lima} tinta={C.noche} x={960} y={960} centro size={56} />
       <Gran t={t} t0={801.3} t1={804.7} text="ONE MORE CHAPTER" y={200} size={120} color={C.crema} />
       <Chip t={t} t0={803.0} t1={804.7} text="THE STRANGEST ONE" color={C.violeta} x={960} y={330} centro size={60} />
       <Chip t={t} t0={804.8} t1={809.6} text="ALL THAT COTTON CAME FROM SOMEWHERE" color={C.noche} x={960} y={150} centro size={60} />
@@ -237,7 +237,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Globo t={t} t0={832.6} t1={834.6} x={1180} y={330} text="Back the South. Get your cotton." size={42} w={520} cola="der" />
       <Gran t={t} t0={834.8} t1={836.7} text="“NO.”" y={470} size={170} color={C.rojo} />
       <Chip t={t} t0={827.0} t1={829.8} text="FURNITURE PAWNED · SOUP LINES" color={C.noche} x={960} y={150} centro size={68} />
-      <Sello t={t} t0={829.95} t1={832.2} text="THE LANCASHIRE COTTON FAMINE" x={960} y={330} size={70} rot={0} />
+      <Sello t={t} t0={829.95} t1={832.2} text="LANCASHIRE COTTON FAMINE" x={960} y={330} size={54} rot={0} />
       <Chip t={t} t0={832.3} t1={836.7} text="THE EASY WAY: HELP THE SOUTH, GET THE COTTON" color={C.violeta} x={960} y={150} centro size={52} />
       <Chip t={t} t0={836.9} t1={842.2} text="FREE TRADE HALL · MANCHESTER · END OF 1862" color={C.oro} tinta={C.noche} x={960} y={150} centro size={56} />
       <Gran t={t} t0={842.4} t1={846.6} text="FOR THE NORTH. AGAINST SLAVERY." y={190} size={92} color={C.lima} />
@@ -276,7 +276,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       )}
       {t > 895.6 && <Velo t={t} t0={895.6} t1={1e9} op={0.55} />}
       <Gran t={t} t0={895.7} t1={1e9} text="WHICH HORROR GETS YOU FIRST?" y={260} size={96} color={C.ambar} />
-      <Carretes t={t} t0={896.3} n={7} y={980} s={0.8} />
+      <Carretes t={t} t0={896.3} n={7} y={880} s={0.8} />
       <Chip t={t} t0={897.2} t1={1e9} text="TELL ME IN THE COMMENTS" color={C.violeta} x={960} y={900} centro size={60} />
     </AbsoluteFill>
   );

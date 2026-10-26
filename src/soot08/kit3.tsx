@@ -329,12 +329,12 @@ export const Pelusa: React.FC<{ t: number; x: number; y: number; w: number; h: n
 };
 
 // ── termómetro (°F) con el mercurio que sube
-export const Termometro: React.FC<P & { nivel: number; marcas?: number[] }> = ({ nivel, marcas = [60, 70, 80, 90], ...p }) => (
+export const Termometro: React.FC<P & { nivel: number; marcas?: number[]; unidad?: string }> = ({ nivel, marcas = [60, 70, 80, 90], unidad = "", ...p }) => (
   <Pie {...p} w={260} h={900}>
     <rect x={-70} y={-880} width={140} height={760} rx={70} fill="#fff6dc" stroke={T} strokeWidth={10} />
     <rect x={-22} y={-820 + 640 * (1 - nivel)} width={44} height={640 * nivel + 30} rx={22} fill={C.rojo} />
     <circle cx={0} cy={-110} r={100} fill={C.rojo} stroke={T} strokeWidth={10} />
-    {marcas.map((m, i) => <g key={m}><line x1={30} y1={-760 + i * 170} x2={64} y2={-760 + i * 170} stroke={T} strokeWidth={8} /><text x={-104} y={-746 + i * 170} textAnchor="end" fontFamily={fontFamily} fontWeight={700} fontSize={48} fill="#fff">{marcas[marcas.length - 1 - i]}°</text></g>)}
+    {marcas.map((m, i) => <g key={m}><line x1={30} y1={-760 + i * 170} x2={64} y2={-760 + i * 170} stroke={T} strokeWidth={8} /><text x={-104} y={-746 + i * 170} textAnchor="end" fontFamily={fontFamily} fontWeight={700} fontSize={48} fill="#fff">{marcas[marcas.length - 1 - i]}°{unidad}</text></g>)}
     <Brillo d="M -40 -830 L -40 -260" w={14} o={0.6} />
   </Pie>
 );

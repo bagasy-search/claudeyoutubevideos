@@ -14,7 +14,7 @@ import { Persona } from "./persona";
 export const H0 = 650.2, H1 = 718.8;
 
 const KH: K[] = [
-  [650.2, 3300, -1500, 0.32], [652.3, 2500, -232, 1.9], [658.5, 2560, -226, 1.95], [660.5, 2820, -275, 1.6], [666.4, 2700, -290, 1.5], [673.6, 2600, -420, 1.15],
+  [650.2, 2650, -400, 1.05], [652.3, 2500, -232, 1.9], [658.5, 2560, -226, 1.95], [660.5, 2820, -275, 1.6], [666.4, 2700, -290, 1.5], [673.6, 2600, -420, 1.15],
   [673.61, 300, -600, 0.62], [677.9, 500, -580, 0.75], [680.6, 820, -520, 1.1], [683.8, 820, -520, 1.15], [691.3, 700, -560, 0.9],
   [691.31, -1500, -420, 0.85], [699.5, -1200, -420, 0.9], [711.3, -900, -420, 0.9],
   [711.31, 300, -380, 1.3], [714.2, -700, -380, 1.35], [716.6, -900, -300, 1.9], [718.8, -1000, -300, 2.0],
@@ -34,7 +34,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
   const sh = sacudon(t, [717.55]);
   const dobla = prog(t, 666.3, 670.6);
   const g0: GenteFab[] = [];
-  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2) + (t > 663.6 && t < 666.3 ? 14 : 0) + (t > 660.5 && t < 666.4 ? 2.2 * Math.sin(t * 11) : 0), ladea: 6 * dobla, mira: t > 653.4 && t < 658.4 ? (Math.floor((t - 653.6) / 0.75) % 2 ? -1 : 1) : 1, salta: [653.0, 653.9, 654.8, 655.7, 656.6, 657.6].filter((x) => x <= t).pop(), bD: t > 657.6 && t < 658.5 ? 150 : t > 663.6 && t < 666.3 ? -20 + 12 * Math.sin(t * 9) : undefined, bI: t > 657.6 && t < 658.5 ? 150 : t > 663.6 && t < 666.3 ? -20 - 12 * Math.sin(t * 9) : undefined, cD: t > 663.6 && t < 666.3 ? 40 : undefined, cI: t > 663.6 && t < 666.3 ? 40 : undefined });
+  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2) + (t > 663.6 && t < 666.3 ? 14 : 0) + (t > 660.5 && t < 666.4 ? 2.2 * Math.sin(t * 11) : 0), ladea: 6 * dobla, mira: t > 653.4 && t < 658.4 ? (Math.floor((t - 653.6) / 0.75) % 2 ? -1 : 1) : 1, salta: [653.0, 653.9, 654.8, 655.7, 656.6, 657.6].filter((x) => x <= t).pop(), bD: t > 657.6 && t < 658.5 ? 70 : t > 663.6 && t < 666.3 ? -20 + 12 * Math.sin(t * 9) : undefined, bI: t > 657.6 && t < 658.5 ? 70 : t > 663.6 && t < 666.3 ? -20 - 12 * Math.sin(t * 9) : undefined, cD: t > 663.6 && t < 666.3 ? 40 : t > 657.6 && t < 658.5 ? 120 : undefined, cI: t > 663.6 && t < 666.3 ? 40 : t > 657.6 && t < 658.5 ? 120 : undefined });
   const gS: GenteFab[] = [
     ...[-1150, -850, -560, -260].map((x, i) => ({ seed: 70 + i, x, y: -170, h: 470, ropa: DUENO, gorro: "copa" as const, barba: i % 2 === 0, expr: (t > 680.6 ? "sorpresa" : "neutro") as GenteFab["expr"], mira: 1 })),
     { seed: 78, x: interpolate(t, [674, 679.5], [1500, 800], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -200, h: 480, ropa: OBRERO(2), flip: true, camina: t > 674 && t < 679.5 ? 0.6 : 0, expr: "triste", inclina: 10, bI: 8, manoI: <Muleta />, habla: t > 680.6 && t < 683.6 && Math.floor(t * 3) % 2 === 0 },

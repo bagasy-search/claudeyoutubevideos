@@ -20,7 +20,7 @@ const KA: K[] = [
   [0, 2300, -330, 1.75], [1.5, 2800, -380, 1.6],
   [2.05, FCX, -3440, 1.5], [3.4, FCX, -3440, 1.85],
   [3.85, 3250, -330, 1.6], [6.5, 3280, -330, 1.65], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
-  [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 3100, -300, 1.55], [23.6, 3050, -300, 1.7],
+  [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 2900, -300, 1.55], [23.6, 2950, -300, 1.7],
   [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2650, -200, 1.35],
   [35.2, 3020, -300, 1.3], [36.3, 3100, -380, 1.25], [38.6, 3100, -300, 1.35], [40.6, 3050, -330, 1.55], [43.4, 2680, -250, 1.55],
   [45.7, 2620, -250, 1.6], [48.5, 2850, -460, 1.1], [49.4, 2950, -250, 1.5], [51.0, 2950, -250, 1.55],
@@ -29,7 +29,7 @@ const KA: K[] = [
 // adentro de la casa (otro espacio: entramos por la ventana del cuarto y salimos por la misma)
 const KC: K[] = [[52.8, 610, -660, 4.2], [53.6, 0, -470, 1.25], [56.0, 80, -460, 1.3], [58.4, 240, -450, 1.32], [61.5, 380, -470, 1.3], [63.3, 610, -660, 1.4], [64.3, 610, -660, 5.0]];
 // afuera otra vez: de la ventana a la fábrica abierta con el mapa de los 7, y de ahí al horizonte
-const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 2000, -1800, 0.26], [72.6, 2220, -1900, 0.22], [75.6, 2220, -1930, 0.21], [78.9, 2240, -1930, 0.215], [79.6, 3550, -380, 0.8], [81.3, 3550, -360, 0.9]];
+const KB: K[] = [[64.3, -1175, -395, 5.5], [65.4, -600, -900, 0.9], [67.4, 2000, -1800, 0.26], [72.6, 2220, -1900, 0.22], [75.6, 2220, -1930, 0.21], [78.9, 2240, -1930, 0.215], [79.6, 2450, -220, 1.9], [81.3, 2430, -220, 2.0]];
 
 // los 7 horrores marcados sobre la fábrica abierta (piso, x, y)
 const MARCAS: [number, number, string][] = [[FCX, -3440, "THE CLOCK"], [3300, -420, "THE MACHINE"], [1800, -1500, "THE AIR"], [4400, -1600, "THE FINES"], [5550, -420, "THE STRAP"], [2400, -2400, "THE ACCIDENT"], [-1110, -500, "YOUR BODY"]];
@@ -46,7 +46,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
   if (t < 13.6) gente.push({ seed: 1, x: chicoX(t), y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 3.9 ? "miedo" : t < 5.1 ? "sorpresa" : "triste", camina: t < 3.9 ? 2.4 : 0, inclina: t < 3.9 ? 8 : 0, bD: t > 4.2 && t < 6 ? 120 : undefined, cD: 40, mira: t > 4 ? 1 : 0, ladea: t > 4.2 && t < 6.4 ? -8 * ent(t, 4.2) : 0, salta: 4.25 });
   if (t > 30 && t < 36) for (let i = 0; i < 9; i++) gente.push({ seed: 40 + i, x: interpolate(Math.min(t, 33.6), [30, 36], [-200 + i * 330, 900 + i * 330]), y: 10 + (i % 2) * 14, h: 250 + (i % 3) * 22, ropa: i % 3 ? OBRERO(i) : i % 2 ? NINA : NINO, gorro: i % 3 === 1 ? "cofia" : "gorra", largo: i % 3 === 1, camina: t > 33.6 ? 0 : 1.7, expr: t > 33.6 ? (i % 2 ? "miedo" : "sorpresa") : i % 2 ? "triste" : "neutro", mira: t > 33.6 ? 0 : 1, bD: t > 33.7 && i % 3 === 0 ? 150 : undefined, cD: t > 33.7 && i % 3 === 0 ? 120 : undefined });
   const adentro: GenteFab[] = [
-    { seed: 2, x: t < 38.7 ? 2700 : t < 40.6 ? interpolate(t, [38.7, 40.4], [2700, 3050]) : t > 45.7 && t < 51.1 ? 2800 - 70 * Math.max(0, Math.sin((t - 45.7) * 2.6)) : 2800, y: t > 38.7 && t < 40.6 ? 60 : 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 20 ? "miedo" : t < 23.7 ? "triste" : t < 45 ? "neutro" : "triste", inclina: t > 38.7 && t < 40.6 ? 78 : 0, bD: t > 40.6 && t < 43 ? 150 : undefined, cD: 60, mira: 1 },
+    { seed: 2, x: t > 18.4 && t < 21.7 ? 2700 + 120 * Math.sin((t - 18.4) * 1.9) : t < 38.7 ? 2700 : t < 40.6 ? interpolate(t, [38.7, 40.4], [2700, 3050]) : t > 45.7 && t < 51.1 ? 2800 - 70 * Math.max(0, Math.sin((t - 45.7) * 2.6)) : 2800, y: t > 38.7 && t < 40.6 ? 60 : 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 20 ? "miedo" : t < 23.7 ? "triste" : t < 45 ? "neutro" : "triste", camina: t > 18.4 && t < 21.7 ? 2.6 : 0, inclina: t > 38.7 && t < 40.6 ? 78 : t > 18.4 && t < 21.7 ? 10 : 0, bD: t > 40.6 && t < 43 ? 150 : t > 18.4 && t < 21.7 ? 120 + 25 * Math.sin(t * 12) : undefined, bI: t > 18.4 && t < 21.7 ? 110 - 25 * Math.sin(t * 12) : undefined, cD: 60, mira: 1 },
     { seed: 3, x: 4300, y: 0, h: 470, ropa: HILANDERO, expr: t > 43.5 && t < 45 ? "enojado" : "neutro", habla: t > 43.5 && t < 45, flip: true, bD: 30 },
     { seed: 4, x: 1900, y: 0, h: 290, ropa: NINA, gorro: "cofia", largo: true, expr: "triste", camina: 0.6 },
   ];
@@ -63,7 +63,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
           <CieloHora t={t} luz={interpolate(t, [0, 24, 30, 81], [0.05, 0.25, 0.75, 0.5], { extrapolateRight: "clamp" })} />
           <Espacio cam={cam} para={0.35}><div style={{ position: "absolute", left: 0, top: yb - 300 }}><Horizonte t={t} /></div></Espacio>
           <Espacio cam={cam}>
-            <Pueblo t={t} e={{ abre, hora, tCampana: t < 30 ? 7.4 : 79.5, porton, luzCasa: t > 64 ? 1 : 0.6 }} adentro={{ gente: adentro, calor: t > 15.9 && t < 24 ? prog(t, 15.9, 17) : 0, corta: t > 40.6 && t < 41.9 ? [10, 11] : [], mulaU: (t > 18 && t < 23.7) || (t > 45.7 && t < 51.1) ? (x) => mulaVaiven(x, 2.4) : undefined }} />
+            <Pueblo t={t} e={{ abre, hora, tCampana: t < 30 ? 7.4 : 79.5, porton, luzCasa: t > 64 ? 1 : 0.6 }} adentro={{ gente: adentro, calor: t > 15.9 && t < 24 ? prog(t, 15.9, 17) : 0, corta: t > 40.6 && t < 41.9 ? [10, 11] : t > 18.6 && t < 20.2 ? [10] : t > 20.4 && t < 21.6 ? [12] : [], mulaU: (t > 18 && t < 23.7) || (t > 45.7 && t < 51.1) ? (x) => mulaVaiven(x, 2.4) : undefined }} />
             {gente.map((g) => <Persona key={g.seed} t={t} {...g} />)}
             {/* el mapa de los 7 horrores dibujado sobre la fábrica abierta */}
             {t > 67.4 && t < 79.6 && (
@@ -136,7 +136,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Cuenta t={t} t0={14.2} t1={14.9} de={0} a={14} x={960} y={300} size={300} color={C.ambar} suf=" HOURS" fuera={15.8} />
       <Chip t={t} t0={15.2} t1={16.2} text="ON YOUR FEET" color={C.violeta} x={960} y={520} centro size={80} />
       {t > 14.2 && t < 16.4 && <div style={{ position: "absolute", left: 1640, top: 950, transform: `translate(-50%,-50%) scale(${ent(t, 14.25) * (1 - prog(t, 16.1, 16.4))})` }}><div style={{ position: "relative", width: 1, height: 1 }}><Reloj x={0} y={0} s={0.85} hora={5.5 + prog(t, 14.3, 15.9) * 14} /></div></div>}
-      {t > 16.1 && t < 18.2 && <div style={{ position: "absolute", left: 1560, top: 170, transform: `scale(${ent(t, 16.1)})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={prog(t, 16.2, 17.4) * 0.92} /></div></div>}
+      {t > 16.1 && t < 18.2 && <div style={{ position: "absolute", left: 1560, top: 170, transform: `scale(${ent(t, 16.1)})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={prog(t, 16.2, 17.4) * 0.92} unidad="F" /></div></div>}
       <Chip t={t} t0={16.6} t1={18.2} text="HOTTER THAN SPAIN IN SUMMER" color={C.naranja} x={800} y={160} centro size={68} />
       <Chip t={t} t0={18.4} t1={20.5} text="A MACHINE THAT DOES NOT STOP" color={C.noche} x={960} y={140} centro size={70} />
       <Chip t={t} t0={20.6} t1={23.6} text="NOT FOR LUNCH" color={C.violeta} x={960} y={300} centro size={84} />
