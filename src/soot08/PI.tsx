@@ -227,6 +227,8 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={813.95} t1={817.4} text="1861 · CIVIL WAR" y={200} size={120} color={C.crema} />
       <Chip t={t} t0={814.7} t1={817.4} text="THE NAVAL BLOCKADE" color={C.rojo} x={960} y={950} centro size={66} />
       <Chip t={t} t0={818.1} t1={821.6} text="THE NORTH BLOCKADES THE SOUTHERN PORTS" color={C.noche} x={960} y={150} centro size={56} />
+      {/* vuelta 12 OJO: el mapa con gente: una hilandera de Lancashire mira cómo deja de llegar el algodón */}
+      {t > 818.2 && t < 821.7 && <Persona t={t} seed={3} ropa={NINA} gorro="cofia" largo x={1700} y={1075} h={520} flip mira={-1} expr={t > 819.8 ? "miedo" : "neutro"} bD={t > 819.8 ? 160 : 40} cD={t > 819.8 ? 40 : 30} aparece={818.2} opacity={1 - prog(t, 821.4, 821.7)} />}
       <Chip t={t} t0={819.6} t1={821.6} text="THE COTTON STOPS" color={C.rojo} x={960} y={950} centro size={66} />
       <Gran t={t} t0={821.8} t1={823.9} text="THE MILLS WENT SILENT" y={540} size={120} color={C.crema} />
       <Chip t={t} t0={824.0} t1={826.8} text="HUNDREDS OF THOUSANDS OUT OF WORK" color={C.rojo} x={960} y={150} centro size={58} />
@@ -255,7 +257,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={846.8} t1={848.4} text="WHILE GOING HUNGRY" color={C.rojo} x={960} y={950} centro size={68} />
       {t > 848.5 && t < 861.6 && (() => {
         const k = prog(t, 848.6, 850.8);
-        return <Carta t={t} t0={848.6} x={1920 - k * 820} y={560} s={0.3 + k * 0.64} abre={prog(t, 853.4, 854.2)} lineas={t > 853.8 ? ["Washington · 19 January 1863", "To the working men of Manchester:", "“…sublime Christian heroism,", "not surpassed in any age…”"] : []} />;
+        return <Carta t={t} t0={848.6} x={1920 - k * 820} y={330} s={0.3 + k * 0.4} abre={prog(t, 853.4, 854.2)} lineas={t > 853.8 ? ["Washington · 19 January 1863", "To the working men of Manchester:", "“…sublime Christian heroism,", "not surpassed in any age…”"] : []} />;
       })()}
       <Chip t={t} t0={848.6} t1={851.6} text="A LETTER FROM WASHINGTON" color={C.violeta} x={960} y={130} centro size={62} />
       <Retrato t={t} t0={851.8} t1={854.6} x={290} y={480} g={{ seed: 261, ropa: DUENO, gorro: "copa", barba: true, expr: "neutro" }} nombre="ABRAHAM LINCOLN" sub="JANUARY 1863" s={0.85} />
