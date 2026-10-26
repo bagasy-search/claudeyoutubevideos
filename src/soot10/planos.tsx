@@ -4,7 +4,7 @@ import { C, prog } from "./kit";
 import { Rayos, Emote, fontFamily } from "./kit";
 import { Persona, GRUMETE, CAPITAN, PIRATA, Ropa } from "./persona";
 import { Txt, Contador, en } from "./dsl";
-import { Zapato, Buzo, Signo, Gato9, Cofre, Fruta, Tortuga, Galleta, Balde, Sable, Pistola, Microbio, TINTA } from "./obj";
+import { Zapato, Buzo, Signo, Sierra, Gato9, Cofre, Fruta, Tortuga, Galleta, Balde, Sable, Pistola, Microbio, TINTA } from "./obj";
 import { Campana, Fuerte, Ciudad, Craneo } from "./kit2";
 import { Canon } from "./barco";
 import { ROBERTS } from "./S3";
@@ -71,6 +71,23 @@ const Bandera: React.FC<{ t: number; sube: number }> = ({ t, sube }) => (
 const cae = (t: number, t0: number) => interpolate(t, [t0, t0 + 0.5], [0, 82], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) });
 
 export const PLANOS: Pl[] = [
+  // trampa 1: a los oficios los forzaban a venir, «politely, with a pistol nearby»
+  { t0: 127.98, t1: 133.44, c: ["#fff0c0", "#d88a3a"], suelo: "#6b3a1f", luz: [700, 300], r: (t) => <>
+    <Persona x={620} y={1030} h={700} t={t} seed={21} ropa={PIRATA(6)} expr={t > 129.6 ? "miedo" : "triste"} bD={15} cD={10} manoD={<g transform="rotate(80) scale(0.9)"><Sierra /></g>} ladea={Math.sin(t * 9) * 2} />
+    <Persona x={1380} y={1030} h={780} t={t} seed={22} ropa={PIRATA(3)} expr={t > 129.6 ? "feliz" : "enojado"} flip bD={t > 129.6 ? 90 : 40} cD={t > 129.6 ? 0 : 50} habla manoD={<g transform="rotate(-90) scale(1.1)"><Pistola t={t} /></g>} />
+    <Txt t={t} t0={128.0} t1={129.5} text="FORCED" y={170} size={140} color={C.rojo} />
+    <Txt t={t} t0={129.7} t1={133.3} text="“POLITELY”" y={170} size={130} color={C.oro} />
+  </> },
+  // giro: abril de 1717, la tormenta; John agarrado del timón
+  { t0: 843.56, t1: 848.88, c: ["#4a5a8a", "#0a0e1e"], suelo: "#2a1a1a", luz: [960, 200], r: (t) => <>
+    <V>
+      <g transform={`translate(780 600) rotate(${t * 40})`}>{Array.from({ length: 8 }, (_, i) => <rect key={i} x={-14} y={-330} width={28} height={330} rx={10} fill="#8a4520" transform={`rotate(${i * 45})`} />)}<circle r={220} fill="none" stroke="#8a4520" strokeWidth={40} /><circle r={50} fill="#5a2d14" /></g>
+      {Array.from({ length: 90 }, (_, i) => { const x = (i * 211) % 1920, y = ((t * 1400 + i * 97) % 1200) - 60; return <line key={i} x1={x} y1={y} x2={x - 30} y2={y + 70} stroke="#bcd0ff" strokeWidth={3} opacity={0.5} />; })}
+      <rect width={1920} height={1080} fill="#fff" opacity={[844.4, 846.6, 848.0].some((a) => t > a && t < a + 0.14) ? 0.55 : 0} />
+    </V>
+    <Persona x={760} y={1040} h={720} t={t} seed={330} ropa={JOHN} expr="miedo" bD={95} bI={95} cD={20} cI={20} ladea={Math.sin(t * 7) * 6} inclina={Math.sin(t * 1.6) * 6} />
+    <Txt t={t} t0={843.7} t1={848.8} text="APRIL 1717" y={160} size={140} color={C.crema} />
+  </> },
   // gancho: «you are the cabin boy» — el chico grande, el capitán lo señala
   { t0: 6.9, t1: 8.95, c: ["#ffe3a0", "#e07a3a"], suelo: "#8a4a20", luz: [700, 380], r: (t) => <>
     <Persona x={1450} y={1010} h={760} t={t} seed={11} ropa={CAPITAN} expr="orgullo" flip bD={95} cD={0} habla />
