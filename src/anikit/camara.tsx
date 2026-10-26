@@ -86,7 +86,8 @@ export const Plano: React.FC<{ claves: Clave[]; mano?: number; seed?: number; ch
   const q = f - 1 < claves[0].f ? poseEn(claves, f + 1, fps) : poseEn(claves, f - 1, fps);
   const vx = Math.abs(p.x - q.x), vy = Math.abs(p.y - q.y);
   const sx = Math.min(60, vx * 0.5), sy = Math.min(60, vy * 0.5);
-  const mb = sx > 1.5 || sy > 1.5;
+  // Owen Upgraded (26-oct): el desenfoque de obturador borroneaba carteles y globos en los paneos → apagado
+  const mb = false && (sx > 1.5 || sy > 1.5);
   const id = `mb${seed}`;
   return (
     <AbsoluteFill style={{ background: fondo, overflow: "hidden" }}>
