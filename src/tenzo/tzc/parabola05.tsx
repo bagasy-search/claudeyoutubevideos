@@ -7,7 +7,8 @@ import { mira, useF } from "../../anikit/camara";
 import { Actor } from "../../anikit/actor";
 import { Escena } from "../../anikit/escena";
 import { Halo } from "../../anikit/luz";
-import { F_HUD, TextoMano } from "../../anikit/pantalla";
+import { F_HUD } from "../../anikit/pantalla";
+import { TextoMano } from "./chicago";
 import { PALETAS } from "../../anikit/paletas";
 import { Look } from "../../anikit/personaje";
 import { Circo, CIRCO_PISO, CIRCO_PUNTOS as C } from "../sets/circo";
@@ -184,20 +185,26 @@ const Cria: React.FC<{ tramo: "tira" | "noche" | "rinde" }> = ({ tramo }) => {
   const f = useF();
   const tira = tramo !== "rinde";
   const lag = tramo === "noche" ? ((f % 90) / 90) : 0;
-  const tens = tira ? 0.85 + 0.15 * Math.sin(f / 6) : 0.1;
+  // tirones de verdad: arranca, la soga se tensa de golpe y la frena; entre tirón y tirón, afloja
+  const tiron = tira ? Math.pow(Math.abs(Math.sin(f / (tramo === "noche" ? 14 : 10))), 0.6) : 0;
+  const dx = tira ? 6 + 26 * tiron : 0;
+  const tens = tira ? 0.35 + 0.65 * tiron : 0.1;
   return (
     <Escena Set={Circo} pal={pal} setProps={{ variante: tramo === "noche" ? "noche" : undefined }} seed={61} mano={1.6}
       claves={tramo === "rinde"
         ? [mira(0, ELX + 20, P - 120, 1.7), mira(200, ELX + 40, P - 120, 1.95, { curva: "inout" })]
-        : [mira(0, ELX - 60, P - 130, 1.45), mira(260, ELX - 20, P - 120, 1.6, { curva: "inout" })]}
+        : tramo === "tira" ? [mira(0, ELX - 60, P - 130, 1.5), mira(120, ELX - 40, P - 120, 1.65, { curva: "inout" }), mira(128, (TOBC.x + C.estaca) / 2, P - 50, 2.6), mira(264, (TOBC.x + C.estaca) / 2, P - 50, 2.8)]
+        : [mira(0, ELX + 40, P - 140, 2.0), mira(180, ELX + 40, P - 140, 2.2, { curva: "inout" })]}
       medio={<>
-        <g transform={`translate(${tira ? 10 + 8 * Math.sin(f / 6) : 0},0)`}>
+        <g transform={`translate(${dx},0) rotate(${-4 * tiron},${ELX},${P})`}>
           <Elefanta x={ELX} y={P} s={0.38} cria f={f} balanceo={tira ? 0 : 2} fase={tira ? f / 26 : undefined}
             cabeza={tramo === "rinde" ? interpolate(f, [30, 120], [0, 16], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : tira ? -6 : 0}
             trompa={tira ? 0.55 + 0.25 * Math.sin(f / 7) : 0} lagrima={lag} ojo={tramo === "rinde" ? interpolate(f, [60, 140], [1, 0.45], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1} />
         </g>
-        <Soga a={{ x: TOBC.x + (tira ? 10 + 8 * Math.sin(f / 6) : 0), y: TOBC.y }} b={{ x: C.estaca, y: P + 10 }} tension={tens} />
-        <Estaca x={C.estaca} y={P + 10} />
+        <Soga a={{ x: TOBC.x + dx, y: TOBC.y }} b={{ x: C.estaca, y: P + 10 }} tension={tens} grosor={6} />
+        <Estaca x={C.estaca} y={P + 10} inclina={2 * tiron} />
+        {/* polvo en las patas en cada tirón */}
+        {tira && [0, 1, 2].map((k) => <circle key={k} cx={ELX + dx - 40 + k * 50} cy={P - 6 - tiron * 18 * (k + 1) / 3} r={10 + 16 * tiron} fill="#f2e2c4" opacity={0.28 * tiron} />)}
         {tramo === "noche" && <Halo x={ELX + 200} y={P - 500} r={500} color="#9fb4ff" fuerza={0.18} />}
       </>}
     />
@@ -233,8 +240,8 @@ const Sombra: React.FC = () => {
     <Escena Set={Circo} pal={pal} seed={64} mano={1.6}
       claves={[mira(0, 1500, 560, 1.15), mira(216, 1520, 590, 1.3, { curva: "inout" })]}
       medio={<>
-        <g opacity={0.34 * (1 - u)}><Elefanta x={1450} y={P - 20} s={0.95} f={f} balanceo={6} piel="#4a1a16" luz="#4a1a16" /></g>
-        <g opacity={0.34 * u}><Elefanta x={1450} y={P - 20} s={0.95 * 0.45} cria f={f} balanceo={2} cabeza={14} piel="#4a1a16" luz="#4a1a16" /></g>
+        <g opacity={0.5 * (1 - u)}><Elefanta x={1450} y={P - 20} s={0.95} f={f} balanceo={6} piel="#4a1a16" luz="#4a1a16" /></g>
+        <g opacity={0.55 * u}><Elefanta x={1450} y={P - 20} s={0.95 * 0.45} cria f={f} balanceo={2} cabeza={14} piel="#4a1a16" luz="#4a1a16" /></g>
       </>}
     />
   );
