@@ -14,6 +14,7 @@ import { P6K, P6H, P6Mundo, P6Pant } from "./P6";
 import { P7K, P7H, P7Mundo, P7Pant } from "./P7";
 import { P8K, P8H, P8Mundo, P8Pant } from "./P8";
 import { Mini } from "./Mini";
+import { HUD } from "./actores";
 
 // soot11 completo: UN mundo (el pueblo) y UNA cámara que viaja por todo el video. Cada parte aporta sus llaves de
 // cámara, sus horas del día, sus actores (en el mundo) y sus gráficos (en pantalla), todo en tiempo absoluto.
@@ -48,6 +49,7 @@ export const Completo: React.FC = () => {
         </Mundo>
       </CamaraMano>
       {PARTES.map((p, i) => (t >= p.a && t < p.b ? <p.S key={i} t={t} /> : null))}
+      <HUD t={t} t0={10.5} t1={906} valor={t > 865.6 ? 1 : 0} tGolpe={[12.3, 186.0, 265.6, 865.6].filter((g) => g <= t).pop() ?? -9} y={24} />
       <Mini t={t} />
     </AbsoluteFill>
   );

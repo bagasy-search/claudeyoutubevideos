@@ -36,8 +36,8 @@ export const P7K: Llave[] = [
   [707.6, PUESTO - 60, 560, 2.3, 0.8],
   [711.5, PUESTO, 560, 0.9, 0.9],
   [715.0, 5800, 420, 0.5, 1.2],
-  [718.6, 6000, 520, 0.2, 1.4],
-  [721.2, 6000, 520, 0.2, 1.0],
+  [718.6, 6000, 520, 0.17, 1.4],
+  [721.2, 6000, 520, 0.17, 1.0],
   [723.3, 7300, 600, 1.2, 1.2],
   [726.3, ATRAS, 620, 1.35, 0.9],
   [728.0, ATRAS - 40, 600, 1.7, 0.7],
@@ -152,7 +152,7 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
         <>
           {[5930, 6030, 6130, 6230].map((cx, i) => <Persona key={cx} x={cx} y={SUELO - 30} h={250} t={t} seed={730 + i} ropa={{ ...CIVIL(95 + i), tunica: "#8a8070", tunica2: "#6a6050" }} expr={i % 2 ? "triste" : "neutro"} bD={i === 1 ? 120 : 20} cD={i === 1 ? 70 : 10} flip />)}
           <Franz x={5780} y={SUELO - 10} t={t} expr="orgullo" bD={100} cD={0} manoD={<g><rect x={-30} y={-40} width={60} height={70} rx={6} fill="#fff6e0" stroke="#7a3d14" strokeWidth={4} /></g>} />
-          <TextoMundo x={6080} y={SUELO - 380} text="ONE LINE, PLEASE" size={48} color="#fff3d6" borde="#2b1c14" />
+          <TextoMundo x={6080} y={SUELO - 400} text="ONE LINE, PLEASE" size={70} color="#fff3d6" borde="#2b1c14" />
         </>
       )}
       {/* ── la casa del farol rojo (guiño) */}
@@ -195,11 +195,11 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
             <path d={`M ${PUESTO - 230} ${SUELO - 420} L ${PUESTO + 230} ${SUELO - 420} L ${PUESTO + 200} ${SUELO - 360} L ${PUESTO - 200} ${SUELO - 360} Z`} fill={C.violeta} />
             {[-1, 1].map((d) => <rect key={d} x={PUESTO + d * 190 - 6} y={SUELO - 420} width={12} height={220} fill="#4a2810" />)}
           </Svg>
-          <TextoMundo x={PUESTO} y={SUELO - 90} text="GALLOWS GOODS" size={50} color={C.ambar} borde="#2b1c14" />
           <Franz x={PUESTO - 60} y={SUELO - 140} t={t} expr="orgullo" habla={vig(t, 696.6, 700.8)} bD={vig(t, 700.8, 704.9) ? 110 : 40} cD={20} manoD={vig(t, 700.8, 704.9) ? <Soga /> : undefined} />
           <G x={PUESTO - 140} y={SUELO - 200}><Soga /></G>
           {["#7ac07a", "#c0a07a", "#9a7ac0"].map((col, i) => <G key={i} x={PUESTO + 60 + i * 56} y={SUELO - 200}><Frasco color={col} /></G>)}
-          {t > 704.9 && <TextoMundo x={PUESTO + 116} y={SUELO - 290} text="DON'T ASK" size={30} color="#fff3d6" borde="#2b1c14" rot={-6} />}
+          <TextoMundo x={PUESTO} y={SUELO - 150} text="GALLOWS GOODS" size={46} color={C.ambar} borde="#2b1c14" />
+          {vig(t, 704.9, 707.5) && <TextoMundo x={PUESTO + 116} y={SUELO - 290} text="DON'T ASK" size={30} color="#fff3d6" borde="#2b1c14" rot={-6} />}
           {/* el jugador con los dados */}
           {vig(t, 700.0, 705.0) && (
             <>
@@ -228,7 +228,7 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
       {vig(t, 717.8, 722.2) && (
         <>
           {["BLOOD", "TOUCH", "CHURCH", "ADDRESS", "MARRIAGE", "STAGE", "JOBS"].map((l, i) => (
-            <Pin key={i} t={t} t0={718.7 + i * 0.22} x={1700 + i * 1430} y={SUELO - 300 - (i % 2) * 450} n={i + 1} s={3.4} label={l} />
+            <Pin key={i} t={t} t0={718.7 + i * 0.22} x={1700 + i * 1430} y={SUELO - 100 - (i % 2) * 350} n={i + 1} s={3.4} label={l} />
           ))}
         </>
       )}
@@ -258,7 +258,7 @@ const Rollo: React.FC<{ t: number }> = ({ t }) => {
   const u = clamp((t - 647.6) / 4.5, 0, 1);
   const e = clamp((t - 647.4) / 0.3, 0, 1) * clamp((654.6 - t) / 0.3, 0, 1);
   return (
-    <div style={{ position: "absolute", left: 1480, top: 130, transform: `scale(${e})`, transformOrigin: "50% 0", width: 520, marginLeft: -260, fontFamily, fontWeight: 700 }}>
+    <div style={{ position: "absolute", left: 1420, top: 120, transform: `scale(${e})`, transformOrigin: "50% 0", width: 560, marginLeft: -280, fontFamily, fontWeight: 700 }}>
       <div style={{ height: 40, background: "#a8805a", borderRadius: 20 }} />
       <div style={{ background: "#fbecc8", borderLeft: "8px solid #7a3d14", borderRight: "8px solid #7a3d14", height: 40 + u * 640, overflow: "hidden", padding: "0 30px" }}>
         <div style={{ fontSize: 40, color: "#7a3d14", paddingTop: 14 }}>TO DO:</div>
@@ -315,7 +315,7 @@ export const P7Pant: React.FC<{ t: number }> = ({ t }) => (
     <Sello t={t} t0={715.1} t1={718.5} text="LONELY" x={520} y={560} size={110} rot={-10} color={C.violeta} />
     <Sello t={t} t0={717.35} t1={718.5} text="DIRTY" x={960} y={760} size={110} rot={6} color="#8a6a3a" />
     <Sello t={t} t0={717.95} t1={718.5} text="DANGEROUS" x={1400} y={560} size={110} rot={-6} />
-    <Titulo t={t} t0={718.65} t1={721.1} text="7 TRAPS" y={170} size={140} color={C.ambar} borde="#2b0a14" />
+    <Titulo t={t} t0={718.65} t1={721.1} text="7 TRAPS" y={950} size={140} color={C.ambar} borde="#2b0a14" />
     <Chip t={t} t0={721.25} t1={723.3} text="REMEMBER THE PROMISE?" color={C.violeta} x={960} y={150} centro size={60} />
     <Chip t={t} t0={723.4} t1={726.2} text="BY DAY: NO HANDSHAKE" color={C.noche} x={960} y={150} centro size={60} />
     <Chip t={t} t0={726.35} t1={728.0} text="BY NIGHT: AT YOUR BACK DOOR" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={60} />

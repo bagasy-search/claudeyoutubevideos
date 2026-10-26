@@ -67,7 +67,7 @@ const Aura: React.FC<{ t: number; x: number; t0: number; t1: number }> = ({ t, x
   return (
     <Svg>
       <g transform={`translate(${x} ${SUELO - 160}) scale(${e})`}>
-        <ellipse cx={0} cy={0} rx={190 + Math.sin(t * 4) * 8} ry={200} fill="rgba(120,220,80,.12)" stroke="#7ad83a" strokeWidth={6} strokeDasharray="16 14" strokeDashoffset={-t * 60} />
+        <ellipse cx={0} cy={0} rx={190 + Math.sin(t * 4) * 8} ry={200} fill="none" stroke="#7ad83a" strokeWidth={10} strokeDasharray="26 18" strokeDashoffset={-t * 60} />
         {Array.from({ length: 9 }, (_, i) => {
           const a = i * 0.7 + t * (0.6 + (i % 3) * 0.2);
           const rx = 150 + (i % 3) * 30;
@@ -94,6 +94,8 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
   const golpe = t > 239.4;
   return (
     <>
+      {/* los fieles ya sentados en la iglesia (empalma con el arranque de P3) */}
+      {t > 267.3 && [620, 840, 1060, 1280].map((bx, b) => <Gente key={bx} t={t} x0={bx - 95} x1={bx + 95} n={3} y={SUELO - 70} h={250} seed={60 + b} flipDe={-9} mira={-1} />)}
       {/* ── el viaje de Franz por el pueblo (hasta el código de vestimenta) */}
       {t < 214 && (
         <>
@@ -178,14 +180,17 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
             return (
               <Svg>
                 {parte === 0 ? (
-                  <g transform={`translate(${HORCA} ${SUELO - 760 + Math.sin(t * 2) * 10}) scale(${e})`}>
+                  <g transform={`translate(${HORCA} ${SUELO - 660 + Math.sin(t * 2) * 10}) scale(${e})`}>
                     {[[-90, 0, 80], [0, -30, 100], [90, 0, 80], [-40, 30, 70], [50, 34, 70]].map(([cx, cy, r], i) => <circle key={i} cx={cx} cy={cy} r={r} fill="#5b2b80" />)}
                     <text x={0} y={20} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill="#f2e6ff">SHAME</text>
                   </g>
                 ) : (
-                  Array.from({ length: 14 }, (_, i) => {
-                    const tx = HORCA - 650 + i * 100;
-                    return <circle key={i} cx={HORCA + (tx - HORCA) * parte} cy={SUELO - 760 + parte * 380} r={60 * (1 - parte) + 2} fill="#5b2b80" opacity={1 - parte} />;
+                  Array.from({ length: 16 }, (_, i) => {
+                    // pedazos que salen disparados en abanico y caen con gravedad
+                    const a = (i / 16) * Math.PI * 2 + 0.3, v = 520 + (i % 4) * 140, k = Math.min(parte * 1.4, 1);
+                    const px = HORCA + Math.cos(a) * v * k, py = SUELO - 660 + Math.sin(a) * v * 0.6 * k + 520 * k * k;
+                    const r = 46 * (1 - parte) + 4;
+                    return <path key={i} transform={`translate(${px} ${py}) rotate(${i * 47 + parte * 400})`} d={`M ${-r} 0 Q 0 ${-r * 1.3} ${r} 0 Q 0 ${r * 0.7} ${-r} 0 Z`} fill={i % 3 ? "#5b2b80" : "#8a4ab8"} stroke="#2b1240" strokeWidth={4} />;
                   })
                 )}
               </Svg>
@@ -317,7 +322,6 @@ export const P2Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={180.95} t1={183.1} text="CUSTOMERS: GONE" color={C.rojo} x={960} y={150} centro size={62} />
     <Titulo t={t} t0={183.3} t1={185.9} text="ONE HANDSHAKE..." y={180} size={110} color={C.crema} />
     <Titulo t={t} t0={186.0} t1={188.1} text="...AND NOBODY KNOWS YOU" y={180} size={90} color={C.rojo} borde="#2b0a14" />
-    <HUD t={t} t0={183.4} t1={188.3} valor={0} tGolpe={186.0} />
     <Chip t={t} t0={188.3} t1={189.5} text="SO PEOPLE WERE CAREFUL" color={C.violeta} x={960} y={150} centro size={58} />
     <Chip t={t} t0={189.55} t1={193.0} text="VERY. CAREFUL." color={C.rojo} x={960} y={150} centro size={70} />
     <Chip t={t} t0={193.2} t1={196.3} text="STUCK IN THE MUD? NO HELP" color={C.noche} x={960} y={150} centro size={58} />
@@ -344,7 +348,6 @@ export const P2Pant: React.FC<{ t: number }> = ({ t }) => (
     <Titulo t={t} t0={259.5} t1={261.6} text="THEY CARRY EACH OTHER" y={200} size={100} color={C.crema} />
     <Chip t={t} t0={263.25} t1={265.5} text="SURROUNDED BY PEOPLE" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
     <Chip t={t} t0={265.6} t1={267.4} text="TOUCHED BY NONE" color={C.rojo} x={960} y={150} centro size={66} />
-    <HUD t={t} t0={263.3} t1={268.5} valor={0} tGolpe={265.6} />
     <Chip t={t} t0={267.5} t1={270.2} text="NOW... TRY TO SIT DOWN" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={60} />
   </>
 );

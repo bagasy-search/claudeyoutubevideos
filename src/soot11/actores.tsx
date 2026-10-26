@@ -64,7 +64,7 @@ export const HUD: React.FC<{ t: number; t0: number; t1: number; valor: number; t
   const e = ent(t, t0, 0, { damping: 12, stiffness: 160 }) * interpolate(t, [t1, t1 + 0.4], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const g = t > tGolpe ? 1 + 0.35 * Math.exp(-(t - tGolpe) * 6) * Math.abs(Math.cos((t - tGolpe) * 12)) : 1;
   return (
-    <div style={{ position: "absolute", right: 1920 - x, top: y, transform: `scale(${e * g})`, transformOrigin: "100% 0", display: "flex", alignItems: "center", gap: 14, background: "rgba(27,18,64,.88)", padding: "10px 22px 10px 14px", borderRadius: 24, boxShadow: "0 8px 0 rgba(10,5,30,.4)", fontFamily, fontWeight: 700 }}>
+    <div style={{ position: "absolute", right: 1920 - x, top: y, transform: `scale(${e * g * 0.78})`, transformOrigin: "100% 0", display: "flex", alignItems: "center", gap: 14, background: "rgba(27,18,64,.88)", padding: "10px 22px 10px 14px", borderRadius: 24, boxShadow: "0 8px 0 rgba(10,5,30,.4)", fontFamily, fontWeight: 700 }}>
       <svg width={84} height={84} viewBox="-32 -32 64 64"><path d="M -26 6 L -6 -12 L 10 -6 L 26 -18 M -26 6 L -8 20 L 6 10 M 0 14 L 12 4 M 6 20 L 16 10" stroke="#fff3d6" strokeWidth={6} fill="none" strokeLinecap="round" strokeLinejoin="round" /></svg>
       <div style={{ color: "#fff3d6", fontSize: 36, lineHeight: 1 }}>HANDSHAKES<div style={{ fontSize: 70, color: valor > 0 ? C.lima : C.rojo }}>{valor}</div></div>
     </div>
@@ -92,7 +92,7 @@ export const Barras: React.FC<{ t: number; t0: number; t1?: number; items: { lab
         return (
           <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, fontFamily, fontWeight: 700 }}>
             <div style={{ width: ancho, height: (alto * it.v * e) / M, background: it.color, borderRadius: 16, boxShadow: "inset 0 -10px 0 rgba(0,0,0,.18)" }} />
-            <div style={{ color: "#fff3d6", fontSize: 32, whiteSpace: "nowrap" }}>{it.label}</div>
+            <div style={{ color: "#fff3d6", fontSize: 44, whiteSpace: "nowrap" }}>{it.label}</div>
           </div>
         );
       })}
@@ -165,8 +165,8 @@ export const Pin: React.FC<{ t: number; t0: number; x: number; y: number; n: num
 };
 // título grande con contorno que entra con resorte y SALE (t1)
 export const Titulo: React.FC<{ t: number; t0: number; t1: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string; rot?: number }> = ({ t, t0, t1, text, x = 960, y, size = 150, color = C.crema, borde = C.noche, rot = 0 }) => {
-  if (t < t0 || t > t1 + 0.25) return null;
-  const s = ent(t, t0, 0, { damping: 9, stiffness: 190 }) * interpolate(t, [t1, t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  if (t < t0 || t > t1 + 0.02) return null;
+  const s = ent(t, t0, 0, { damping: 9, stiffness: 190 }) * interpolate(t, [t1 - 0.12, t1 + 0.02], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translate(-50%, -50%) scale(${s}) rotate(${rot}deg)`, fontFamily, fontWeight: 700, fontSize: size, color, WebkitTextStroke: `${size * 0.09}px ${borde}`, paintOrder: "stroke fill", whiteSpace: "nowrap", letterSpacing: 2, textShadow: `0 ${size * 0.07}px 0 ${borde}`, textAlign: "center", lineHeight: 1.05 }}>
       {text}

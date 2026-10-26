@@ -76,7 +76,7 @@ export const Mundo: React.FC<{ t: number; keys: Llave[]; horas: [number, number]
   const prev = camEn(keys, t - 1 / 30);
   const hora = horaEn(horas, t);
   const vel = Math.hypot((cam.x - prev.x) * cam.z, (cam.y - prev.y) * cam.z) + Math.abs(Math.log(cam.z / prev.z)) * 900;
-  const blur = clamp((vel - 25) / 22, 0, 7);
+  const blur = clamp((vel - 70) / 45, 0, 2.2);
   const s = cieloEn(hora);
   const tr = `translate(${960 - cam.x * cam.z}px, ${540 - cam.y * cam.z}px) scale(${cam.z})`;
   const noche = clamp(hora - 1, 0, 1), tarde = clamp(1 - Math.abs(hora - 1), 0, 1);
@@ -92,7 +92,7 @@ export const Mundo: React.FC<{ t: number; keys: Llave[]; horas: [number, number]
         {noche > 0.01 && <AbsoluteFill style={{ background: "#2a2470", mixBlendMode: "multiply", opacity: noche * 0.55, pointerEvents: "none" }} />}
         {tarde > 0.01 && <AbsoluteFill style={{ background: "#ff8a4d", mixBlendMode: "soft-light", opacity: tarde * 0.35, pointerEvents: "none" }} />}
       </AbsoluteFill>
-      {blur > 2 && <Rafaga t={t} dx={cam.x - prev.x} op={clamp((blur - 2) / 4, 0, 0.8)} />}
+      {vel > 160 && <Rafaga t={t} dx={cam.x - prev.x} op={clamp((vel - 160) / 300, 0, 0.35)} />}
     </MundoCtx.Provider>
   );
 };
@@ -303,7 +303,7 @@ export const Espada: React.FC<P & { texto?: string; brillo?: number }> = ({ text
 // taburete de 3 patas
 export const Taburete: React.FC<P & { brillo?: boolean }> = ({ brillo, ...p }) => (
   <G {...p}>
-    {brillo && <ellipse cx={0} cy={-60} rx={170} ry={150} fill="#fff3a0" opacity={0.25} />}
+    {brillo && [0, 1, 2, 3, 4, 5, 6, 7].map((i) => { const a = (i / 8) * Math.PI * 2 - Math.PI / 2; return <line key={i} x1={Math.cos(a) * 120} y1={-60 + Math.sin(a) * 110} x2={Math.cos(a) * 165} y2={-60 + Math.sin(a) * 150} stroke="#ffd23a" strokeWidth={12} strokeLinecap="round" />; })}
     <line x1={-50} y1={-90} x2={-80} y2={0} stroke="#6b3a1f" strokeWidth={16} strokeLinecap="round" />
     <line x1={50} y1={-90} x2={80} y2={0} stroke="#6b3a1f" strokeWidth={16} strokeLinecap="round" />
     <line x1={0} y1={-90} x2={0} y2={-4} stroke="#4a2810" strokeWidth={16} strokeLinecap="round" />

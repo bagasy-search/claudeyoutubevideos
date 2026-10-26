@@ -35,13 +35,13 @@ export const P1K: Llave[] = [
   enV(V_ARBOL, 108.3, 960, 540, 1.0, 0.6),
   enV(V_ARBOL, 114.1, 560, 640, 2.3, 0.7),
   enV(V_ARBOL, 116.5, 760, 560, 1.2, 0.6),
-  [120.85, PT.espadaPared, 575, 1.65, 1.9],
-  [123.9, PT.espadaPared, 575, 1.75, 0.5],
+  [120.85, PT.espadaPared + 300, 575, 1.6, 1.9],
+  [123.9, PT.espadaPared + 300, 575, 1.7, 0.5],
   [126.9, PT.espadaPared, 545, 4.6, 0.8],
   [129.4, PT.espadaPared, 560, 1.85, 0.6],
   [133.1, PT.espadaPared, 700, 3.2, 0.6],
   [137.8, PT.espadaPared, 640, 4.2, 0.6],
-  [144.9, PT.espadaPared, 440, 4.2, 5.5],
+  [144.9, PT.espadaPared, 420, 5.2, 6.6],
   [146.2, 6730, 650, 1.6, 0.6],
   [149.4, 6730, 640, 1.8, 2.6],
   [151.0, DIARIO.x, DIARIO.y + 10, 3.6, 0.9],
@@ -71,13 +71,18 @@ const Hof: React.FC<{ t: number }> = ({ t }) => {
       <Persona x={360} y={SUELO - 190} h={300} t={t} seed={201} ropa={{ tunica: "#5b2bb5", tunica2: "#3a1a6a", cinto: "#f7c548", piel: "#f2c09a", piel2: "#d99872", pelo: "#3a2414" }} gorro="noble" barba="#3a2414"
         expr={apunta ? "enojado" : "orgullo"} bD={apunta ? 88 : 10} cD={apunta ? 2 : 10} habla={vig(t, 86.8, 89.6) || vig(t, 91.2, 95.4)} mira={1} />
       {[760, 880, 1000].map((x, i) => (
-        <Persona key={x} x={x} y={SUELO - 10} h={270} t={t} seed={210 + i} ropa={{ tunica: "#8a8070", tunica2: "#5a5248", cinto: "#3b2a1a", piel: "#e9b08a", piel2: "#c98f6a", pelo: "#4a3a2a" }} expr="triste" bD={14} bI={14} cD={40} cI={40}
+        <Persona key={x} x={x} y={SUELO - 10} h={[262, 284, 250][i]} t={t} seed={210 + i} gorro={(["campesino", undefined, "toca"] as const)[i]} ladea={[4, -3, 6][i]}
+          ropa={[{ tunica: "#8a8070", tunica2: "#5a5248", cinto: "#3b2a1a", piel: "#e9b08a", piel2: "#c98f6a", pelo: "#4a3a2a" }, { tunica: "#6f7f5a", tunica2: "#4a5a3a", cinto: "#3b2a1a", piel: "#c98a62", piel2: "#a86e4a", pelo: "#1e140c" }, { tunica: "#9a6a4a", tunica2: "#6a4a32", cinto: "#2b1c10", piel: "#f0c09a", piel2: "#d39a72", pelo: "#a0602a" }][i]} expr={(["triste", "miedo", "triste"] as const)[i]} bD={14} bI={14} cD={40} cI={40}
           manoD={<rect x={-30} y={-8} width={60} height={14} rx={6} fill="#c9a36a" />} />
       ))}
       {/* el lugar VACÍO del verdugo */}
       <Svg>
-        <g transform={`translate(1150 ${SUELO - 10})`} stroke="#7a3d14" strokeWidth={7} strokeDasharray="18 14" fill="none" opacity={0.9}>
-          <circle cx={0} cy={-240} r={56} /><path d="M -50 -170 L -60 -40 L 60 -40 L 50 -170 Z" /><line x1={-20} y1={-40} x2={-20} y2={0} /><line x1={20} y1={-40} x2={20} y2={0} />
+        <g transform={`translate(1150 ${SUELO - 10})`} stroke="#4a2a12" strokeWidth={6} strokeLinejoin="round">
+          {/* banco vacío: nadie de este oficio en la fila */}
+          <rect x={-70} y={-130} width={140} height={22} rx={6} fill="#a8622c" />
+          <path d="M -58 -108 L -70 0 M 58 -108 L 70 0 M -40 -108 L -30 0 M 40 -108 L 30 0" fill="none" strokeWidth={12} strokeLinecap="round" />
+          <path d="M -60 -56 L 60 -56" strokeWidth={8} />
+          <g transform={`translate(0 ${-170 + Math.sin(t * 2.4) * 4})`}><rect x={-34} y={-34} width={68} height={68} rx={14} fill="#fff3d6" /><text x={0} y={20} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={54} fill="#a3202f" stroke="none">?</text></g>
         </g>
       </Svg>
       {t > 80.9 && <G x={1150} y={SUELO - 360} rot={Math.sin(t * 3) * 4}><line x1={0} y1={-60} x2={0} y2={0} stroke="#5a3418" strokeWidth={8} /><rect x={-90} y={-40} width={180} height={70} rx={10} fill="#a8622c" /><text x={0} y={10} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill="#fff3d6">AWAY</text></G>}
@@ -231,7 +236,9 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     {vig(t, 137.7, 145.3) && (
       <div style={{ position: "absolute", left: 1380, top: 520, transform: `translate(-50%,-50%) rotate(-2deg) scale(${clamp((t - 137.7) / 0.35, 0, 1)})`, background: "#fbecc8", border: "10px solid #7a3d14", borderRadius: 20, padding: "26px 40px", maxWidth: 760, fontFamily, fontWeight: 700, color: "#5a2a10", textAlign: "center", boxShadow: "0 14px 0 rgba(20,10,50,.35)" }}>
         <div style={{ fontSize: 34, color: "#a3202f", marginBottom: 10 }}>ENGRAVED ON THE BLADE</div>
-        <div style={{ fontSize: 50, lineHeight: 1.15, opacity: t > 140.6 ? 1 : 0.25 }}>"When I raise this sword,<br />may God grant the sinner<br />eternal life."</div>
+        <div style={{ fontSize: 50, lineHeight: 1.15 }}>{["\"When I raise this sword,", "may God grant the sinner", "eternal life.\""].map((r, j) => (
+          <div key={j}>{r.split(" ").map((w, k, arr) => { const i0 = [0, 5, 10][j] + k, a = clamp((t - 138.3 - i0 * 0.33) / 0.25, 0, 1); return <span key={k} style={{ opacity: 0.12 + 0.88 * a, color: a > 0 && a < 1 ? "#a3202f" : undefined }}>{w}{k < arr.length - 1 ? " " : ""}</span>; })}</div>
+        ))}</div>
       </div>
     )}
     <Sello t={t} t0={145.35} t1={146.2} text="COMFORTING." x={960} y={300} color={C.violeta} size={100} rot={-6} />

@@ -227,7 +227,6 @@ export const P3Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={335.0} t1={338.4} text="THE EXECUTIONER OF PARIS" color={C.rojo} x={960} y={150} centro size={60} />
     <Titulo t={t} t0={338.5} t1={341.1} text="AN EVEN WEIRDER DEAL" y={190} size={100} color={C.ambar} />
     <Chip t={t} t0={341.2} t1={346.2} text="THE HAVAGE: A HANDFUL FROM EVERY SACK · FREE" color={C.violeta} x={960} y={150} centro size={48} />
-    <Chip t={t} t0={346.3} t1={350.7} text="MERCHANTS: NOT. YOUR. HAND." color={C.rojo} x={960} y={150} centro size={58} />
     <Titulo t={t} t0={350.8} t1={352.8} text="SO: A BIG IRON SPOON" y={190} size={100} color={C.crema} />
     <Chip t={t} t0={353.0} t1={359.2} text="EVERY MARKET DAY · STALL TO STALL" color={C.violeta} x={960} y={150} centro size={56} />
     <Chip t={t} t0={360.3} t1={363.9} text="THE KING ABOLISHED IT" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />

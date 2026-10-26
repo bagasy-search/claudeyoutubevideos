@@ -25,9 +25,9 @@ export const P5K: Llave[] = [
   [462.85, CASA - 40, 540, 2.2, 1.0],
   enV(V_MAPA, 465.0, 960, 540, 1.0, 1.4),
   enV(V_MAPA, 467.2, 1060, 280, 1.6, 0.8),
-  enV(V_MAPA, 470.2, 1100, 520, 1.15, 0.7),
+  enV(V_MAPA, 470.2, 980, 540, 1.0, 0.9),
   enV(V_MAPA, 474.9, 960, 540, 0.95, 0.7),
-  enV(V_MAPA, 482.0, 960, 540, 1.05, 4.0),
+  enV(V_MAPA, 482.0, 960, 540, 0.97, 4.0),
   [488.4, CASA - 40, 640, 1.6, 1.3],
   [491.8, CASA - 80, 700, 2.2, 0.6],
   [494.5, CASA - 40, 640, 1.5, 0.6],
@@ -53,8 +53,8 @@ const Corazon: React.FC<{ x: number; y: number; s?: number; color?: string }> = 
 
 // ── el mapa de Franconia adentro del cuadro de la pared
 const PUEBLOS: Record<string, [number, number]> = {
-  NUREMBERG: [960, 560], BAMBERG: [800, 250], BAYREUTH: [1330, 300], HOF: [1560, 110], ANSBACH: [640, 760],
-  "WÜRZBURG": [360, 360], REGENSBURG: [1450, 820], AUGSBURG: [880, 990],
+  NUREMBERG: [960, 560], BAMBERG: [800, 290], BAYREUTH: [1300, 330], HOF: [1500, 200], ANSBACH: [640, 740],
+  "WÜRZBURG": [440, 380], REGENSBURG: [1400, 800], AUGSBURG: [880, 920],
 };
 const Mapa: React.FC<{ t: number }> = ({ t }) => {
   const linea = (a: string, b: string, t0: number, color = C.rojo) => {
@@ -74,7 +74,7 @@ const Mapa: React.FC<{ t: number }> = ({ t }) => {
         <path d="M 600 60 Q 700 300 820 420 Q 940 520 960 560" stroke="#7fb8d8" strokeWidth={14} fill="none" />
         {[[300, 200], [1700, 400], [500, 900], [1200, 980], [1650, 700]].map(([x, y], i) => <path key={i} d={`M ${x - 60} ${y} L ${x} ${y - 70} L ${x + 60} ${y} Z`} fill="#c9a36a" />)}
         {/* manchas de las dinastías */}
-        {dinastia > 0 && [[800, 280], [1330, 320], [1450, 800], [640, 760], [960, 560]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={200 * clamp(dinastia * 1.5 - i * 0.12, 0, 1)} fill="#e8344a" opacity={0.16} />)}
+        {dinastia > 0 && ["BAMBERG", "BAYREUTH", "REGENSBURG", "ANSBACH", "NUREMBERG"].map((n, i) => { const [x, y] = PUEBLOS[n]; return <circle key={i} cx={x} cy={y} r={150 * clamp(dinastia * 1.5 - i * 0.12, 0, 1)} fill="rgba(232,52,74,.18)" stroke="#a3202f" strokeWidth={6} strokeDasharray="18 10" />; })}
         {linea("BAMBERG", "BAYREUTH", 465.4)}
         {linea("BAYREUTH", "REGENSBURG", 470.4)}
         {linea("NUREMBERG", "ANSBACH", 475.2, "#a3202f")}
@@ -88,7 +88,7 @@ const Mapa: React.FC<{ t: number }> = ({ t }) => {
             <circle cx={x} cy={y} r={22} fill="#7a3d14" />
             <path transform={`translate(${x} ${y - 30}) scale(0.9)`} d="M -40 0 Q -40 -46 0 -48 Q 40 -46 40 0 Z" fill="#7a1f3d" />
             <path transform={`translate(${x} ${y - 30}) scale(0.9)`} d="M 20 -40 Q 50 -80 70 -50" stroke={C.rojo} strokeWidth={8} fill="none" />
-            <text x={x} y={y + 64} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#5a2a10">{n}</text>
+            <text x={x} y={y + 64} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={48} fill="#5a2a10" stroke="#f3dcae" strokeWidth={8} paintOrder="stroke">{n}</text>
           </g>
         ))}
         {/* lo que viaja por las líneas: el oficio, la espada, el saber */}
@@ -98,7 +98,7 @@ const Mapa: React.FC<{ t: number }> = ({ t }) => {
           return <g key={i} transform={`translate(${x1 + (x2 - x1) * u} ${y1 + (y2 - y1) * u}) rotate(-30)`}><rect x={-6} y={-60} width={12} height={80} fill="#dfe6ee" stroke="#2b2140" strokeWidth={3} /><rect x={-24} y={16} width={48} height={10} fill="#8a5414" /></g>;
         })}
       </Svg>
-      <TextoMundo x={960} y={110} text="FRANCONIA" size={70} color="#7a3d14" borde="#f3dcae" />
+      {(t < 474.7 || t > 478.4) && <TextoMundo x={960} y={150} text="FRANCONIA" size={70} color="#7a3d14" borde="#f3dcae" />}
     </>
   );
 };

@@ -161,10 +161,16 @@ const Afuera: React.FC = () => {
 const Paris: React.FC = () => (
   <Vis x0={X.paris[0] - 300} x1={X.paris[1] + 300}>
     <G x={31500} y={SUELO - 40} s={1.3}>
-      <g fill="#9a8fb8" opacity={0.75}>
+      <g fill="#b9ad94" stroke="#5e5442" strokeWidth={6} strokeLinejoin="round">
         <rect x={-420} y={-560} width={170} height={560} /><rect x={250} y={-560} width={170} height={560} /><rect x={-250} y={-380} width={500} height={380} />
-        <circle cx={0} cy={-220} r={90} fill="#c8bde0" /><path d="M -10 -380 L 0 -640 L 10 -380 Z" />
+        <path d="M -430 -560 L -240 -560 L -240 -590 L -430 -590 Z M 240 -560 L 430 -560 L 430 -590 L 240 -590 Z" fill="#8f846c" />
+        <path d="M -10 -380 L 0 -640 L 10 -380 Z" fill="#5a6a8a" />
       </g>
+      <circle cx={0} cy={-220} r={92} fill="#3e4a6e" stroke="#5e5442" strokeWidth={6} />
+      {Array.from({ length: 12 }).map((_, i) => <line key={i} x1={0} y1={-220} x2={Math.cos((i * Math.PI) / 6) * 88} y2={-220 + Math.sin((i * Math.PI) / 6) * 88} stroke="#e9c46a" strokeWidth={5} />)}
+      <circle cx={0} cy={-220} r={22} fill="#c0392b" />
+      {[-335, 335].map((x) => [-470, -330, -190].map((y) => <path key={x + "_" + y} d={`M ${x - 26} ${y + 60} L ${x - 26} ${y} Q ${x} ${y - 38} ${x + 26} ${y} L ${x + 26} ${y + 60} Z`} fill="#2e3550" />))}
+      <path d="M -70 0 L -70 -110 Q 0 -190 70 -110 L 70 0 Z" fill="#4a3a2a" stroke="#5e5442" strokeWidth={6} />
     </G>
     {[30100, 30500, 32400, 32800].map((x, i) => <Fachwerk key={x} x={x} w={380} h={520 + (i % 2) * 80} muro="#efe4d0" viga="#c9bca4" techo="#5a6a8a" pisos={3} />)}
     <Puesto x={31200} tela={C.violeta} />

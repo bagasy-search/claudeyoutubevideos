@@ -43,6 +43,8 @@ export const espadaP0 = (t: number) => t < 58.95;
 
 // pinchitos del mapa (orden = orden de las trampas)
 const PINES: [number, number, string][] = [[6620, "THE SWORD"], [8900, "TOUCH"], [3350, "THE SEAT"], [7300, "THE BRIDGE"], [950, "MARRIAGE"], [4800, "THE STAGE"], [11400, "DIRTY JOBS"]].map(([x, l], i) => [x as number, i, l as string]);
+// fila de cada pinchito (alto = 1) para que ninguno pise a otro ni al HUD
+const PIN_Y = (i: number) => SUELO - 1100 - [0, 0, 0, 1, 0, 1, 0][i] * 1600;
 
 export const P0Mundo: React.FC<{ t: number }> = ({ t }) => {
   const caminaF = (a: number, b: number) => (t > a && t < b ? 1.5 : 0);
@@ -162,10 +164,10 @@ export const P0Mundo: React.FC<{ t: number }> = ({ t }) => {
       {vig(t, 41.2, 56.5) && (
         <>
           <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
-            <path d={PINES.map(([x], i) => `${i ? "L" : "M"} ${x} ${SUELO - 1500 - (i % 2) * 500}`).join(" ")} stroke="#fff" strokeWidth={60} fill="none" strokeDasharray="120 90" strokeLinecap="round" strokeLinejoin="round"
+            <path d={PINES.map(([x], i) => `${i ? "L" : "M"} ${x} ${PIN_Y(i)}`).join(" ")} stroke="#fff" strokeWidth={60} fill="none" strokeDasharray="120 90" strokeLinecap="round" strokeLinejoin="round"
               pathLength={1000} style={{ strokeDasharray: `${interp(t, [48.4, 52.4], [0, 1000])} 1000` }} opacity={0.9} />
           </svg>
-          {PINES.map(([x, i, l]) => <Pin key={i} t={t} t0={48.4 + i * 0.55} x={x} y={SUELO - 1500 - (i % 2) * 500} n={i + 1} s={4.6} label={l} color={[C.rojo, C.violeta, C.ambar, C.teal, C.rosa, C.naranja, C.lima][i]} />)}
+          {PINES.map(([x, i, l]) => <Pin key={i} t={t} t0={48.4 + i * 0.55} x={x} y={PIN_Y(i)} n={i + 1} s={3.4} label={l} color={[C.rojo, C.violeta, C.ambar, C.teal, C.rosa, C.naranja, C.lima][i]} />)}
           {/* la espada al principio del camino y el sol que "baja" al final de la vida */}
           {vig(t, 44.3, 53) && <Espada x={6620} y={SUELO - 2000} s={2.6 * clamp((t - 44.3) / 0.3, 0, 1)} rot={-20} />}
         </>
@@ -188,7 +190,6 @@ export const P0Pant: React.FC<{ t: number }> = ({ t }) => (
     {vig(t, 3.8, 6) && <div style={{ position: "absolute", left: 200, top: 230, display: "flex", gap: 12 }}>{Array.from({ length: 7 }, (_, i) => <div key={i} style={{ width: 56, height: 56, borderRadius: 12, background: t > 3.9 + i * 0.28 ? C.lima : "rgba(27,18,64,.6)", transform: `scale(${t > 3.9 + i * 0.28 ? 1 : 0.8})` }} />)}</div>}
     <Barras t={t} t0={6.0} t1={9.1} x={540} y={560} alto={420} ancho={110} items={[{ label: "BAKER", v: 30, color: "#e0a63a" }, { label: "SMITH", v: 36, color: "#7d8796" }, { label: "CARPENTER", v: 33, color: C.tierra }, { label: "YOU", v: 100, color: C.rojo, t0: 7.6 }]} />
     <Titulo t={t} t0={9.15} t1={13.3} text="20 YEARS" y={190} size={150} color={C.crema} />
-    <HUD t={t} t0={10.5} t1={1e9} valor={0} tGolpe={12.3} />
     <Chip t={t} t0={14.6} t1={17.0} text="ALONE · BY THE DOOR" color={C.rojo} x={1240} y={190} centro size={58} />
     <Chip t={t} t0={19.5} t1={22.3} text="↻ UPSIDE DOWN" color={C.ambar} tinta={C.noche} x={960} y={170} centro size={70} />
     <Chip t={t} t0={21.3} t1={22.4} text="JUST FOR YOU" color={C.violeta} x={960} y={280} centro size={54} />
