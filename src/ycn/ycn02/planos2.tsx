@@ -4,9 +4,9 @@
 import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { mira, useF } from "../../anikit/camara";
-import { F_HUD, Pildora } from "../../anikit/pantalla";
+import { F_HUD, F_MANO, Pildora } from "../../anikit/pantalla";
 import { Walkie, Bolsa } from "../../anikit/props";
-import { NELL, CAL, DOT, RAFI, MARLON, GUS, LIGA, RIM, ROJO, AMARILLO, zombi } from "../elenco";
+import { NELL, CAL, DOT, RAFI, MARLON, GUS, LIGA, RIM, ROJO, AMARILLO, TIZA, zombi } from "../elenco";
 import { pistaX, PISTAS_PUNTOS as PP } from "../sets/pistas";
 import { COCINA_YCN_PUNTOS as CP } from "../sets/cocina";
 import { FREEZER_PUNTOS as FP } from "../sets/freezer";
@@ -172,8 +172,11 @@ export const P52Una: React.FC = () => (
 );
 
 // plano cenital de la bolera: freezer → puerta de la cocina → alfombra → pie de la pista 16 → por la pista hasta el pozo
+// envuelto en scale 1.3: el plano ocupa ~80 % del cuadro; viajero = la cabeza de Gus caminando la ruta
+const CabezaGus = <g><circle r={34} fill="#7f9a6a" stroke="#fff" strokeWidth={5} /><circle cx={-11} cy={-6} r={6} fill="#f4efe4" /><circle cx={11} cy={-6} r={6} fill="#f4efe4" /><path d="M-12,14 L12,14" stroke="#2a2420" strokeWidth={4} /><path d="M-30,-22 L30,-22" stroke="#e8e0cc" strokeWidth={9} strokeLinecap="round" /></g>;
 const PlanoRuta: React.FC<{ desde: number; dur: number }> = ({ desde, dur }) => (
-  <Mapa x={960} y={560} w={1120} h={660} desde={desde} dur={dur} estilo="plano" titulo="CAL'S PLAN" acento={ROJO}
+  <div style={{ position: "absolute", inset: 0, transform: "scale(1.3)", transformOrigin: "960px 540px" }}>
+  <Mapa x={960} y={545} viajero={CabezaGus} w={1120} h={660} desde={desde} dur={dur} estilo="plano" titulo="CAL'S PLAN" acento={ROJO}
     ambientes={[
       { x: 40, y: 70, w: 240, h: 220, rotulo: "FREEZER", puertas: [{ lado: "s", pos: 0.5 }],
         dibujo: <g fill="none" stroke="#9fd6ff" strokeOpacity={0.7} strokeWidth={3}>{[0, 1, 2].map((i) => <rect key={i} x={24} y={40 + i * 50} width={190} height={30} rx={5} />)}</g> },
@@ -181,9 +184,10 @@ const PlanoRuta: React.FC<{ desde: number; dur: number }> = ({ desde, dur }) => 
         dibujo: <g fill="none" stroke="#cfe0ff" strokeOpacity={0.55} strokeWidth={3}><rect x={24} y={60} width={80} height={60} rx={6} /><rect x={130} y={60} width={86} height={60} rx={6} /></g> },
       { x: 300, y: 70, w: 260, h: 540, rotulo: "CARPET" },
       { x: 580, y: 70, w: 500, h: 540, rotulo: "LANES",
-        dibujo: <g>{[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <rect key={i} x={20 + i * 60} y={70} width={40} height={430} rx={4} fill="none" stroke={i === 7 ? ROJO : "#cfe0ff"} strokeOpacity={i === 7 ? 1 : 0.5} strokeWidth={i === 7 ? 5 : 3} />)}<rect x={452} y={44} width={56} height={34} rx={4} fill={ROJO} opacity={0.85} /><text x={480} y={530} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={30} fill={ROJO}>16</text></g> },
+        dibujo: <g>{[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <rect key={i} x={20 + i * 60} y={70} width={40} height={430} rx={4} fill="none" stroke={i === 7 ? ROJO : "#cfe0ff"} strokeOpacity={i === 7 ? 1 : 0.5} strokeWidth={i === 7 ? 5 : 3} />)}<rect x={452} y={44} width={56} height={34} rx={4} fill={ROJO} opacity={0.85} />{[14, 15].map((n, i) => <text key={n} x={360 + i * 60} y={530} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={26} fill="#cfe0ff" opacity={0.8}>{n}</text>)}<text x={480} y={530} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={34} fill={ROJO}>16</text></g> },
     ]}
     puntos={[{ x: 160, y: 190, rotulo: "GUS", lado: "der" }, { x: 160, y: 300, via: true }, { x: 160, y: 490, via: true }, { x: 290, y: 490, via: true }, { x: 430, y: 570, via: true }, { x: 1040, y: 570, via: true }, { x: 1040, y: 130, rotulo: "PIT · 3 FT", lado: "izq" }]} />
+  </div>
 );
 
 // ---------- 53 · Gus saldría del freezer, seguiría el ruido por la alfombra y la pista 16 hasta el pozo ----------
@@ -206,8 +210,8 @@ export const P53Ruta: React.FC = () => {
 // ---------- 54 · el pozo tiene tres pies de hondo ----------
 // corte del pozo: Gus (silueta zombi) adentro le llega a la cintura, la regla marca 3 FT
 const CortePozo: React.FC<{ f: number; left?: number; top?: number; esc?: number }> = ({ f, left = 980, top = 280, esc = 1 }) => {
-  const u = interpolate(f, [4, 26], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const g = interpolate(f, [18, 40], [-260, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const u = interpolate(f, [0, 1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const g = interpolate(f, [6, 30], [-260, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <svg width={860} height={560} viewBox="0 0 860 560" style={{ position: "absolute", left, top, transform: `scale(${esc})`, transformOrigin: "0 0" }}>
       <rect x={0} y={0} width={860} height={560} rx={24} fill="#141820" stroke="#e8dcc0" strokeWidth={5} opacity={0.94} />
@@ -249,7 +253,7 @@ export const P55Barra: React.FC = () => {
   const b = interpolate(f, [k(229.6), k(230.3)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   // 1º Cal en el cuarto de máquinas tirando la palanca de la barra hacia abajo; corte en el golpe a la barra trabada sobre el pozo
   if (f < k(230.2)) return (
-    <Maquinas cl={[mira(0, PIN_X(16) - 160, 560, 1.9), mira(k(230.2), PIN_X(16) - 170, 580, 2.2, { curva: "inout" })]} sp={{ encendidas: [16], luz: "noche" }}
+    <Maquinas cl={[mira(0, PIN_X(16) - 180, 700, 1.45), mira(k(230.2), PIN_X(16) - 190, 690, 1.6, { curva: "inout" })]} sp={{ encendidas: [16], luz: "noche" }}
       gente={[{ l: CAL, x: PIN_X(16) - 230, p: [{ f: 0, v: { hD: 170, cD: 0, hI: 160, cI: 10 } }, { f: k(229.6), v: { hD: 170, cD: 0, hI: 160, cI: 10 } }, { f: k(230.1), v: { hD: 110, cD: 10, hI: 100, cI: 20, tronco: 10 } }], c: "determinado", d: 1, luz: RIM.linterna }]}
       hud={<><Rotulo t="pull it down" x={1200} y={260} desde={k(228.4)} flecha="izq" color={AMARILLO} /><HudDia dia={9} rayas={9} /></>} />
   );
@@ -690,23 +694,23 @@ export const P92Mano: React.FC = () => {
 const Cuchara: React.FC = () => <g transform="rotate(-30)"><rect x={-3} y={-30} width={6} height={30} rx={3} fill="#d9d9e0" /><ellipse cx={0} cy={-34} rx={7} ry={10} fill="#d9d9e0" /></g>;
 export const P93Helado: React.FC = () => {
   const k = kDe(403.96);
-  const xs = [SN - 700, SN - 450, SN - 200, SN + 60, SN + 320];
+  const xs = [SN - 620, SN - 360, SN - 130, SN + 90, SN + 290]; // entre la caja, el servilletero y los frascos del mostrador
   const ls = [MARLON, NELL, DOT, CAL, RAFI];
   return (
-    <Sala cl={[mira(0, SN - 200, 520, 1.1), mira(k(408.8), SN - 200, 717, 1.5, { curva: "inout" })]} snack sp={N9C}
-      detras={ls.map((l, i) => ({ l, x: xs[i], p: [{ f: 0, v: "parado" }, { f: 30 + i * 10, v: { hD: 70, cD: 70 } }], c: "feliz", d: (i < 2 ? 1 : -1) as 1 | -1, mD: <Cuchara />, luz: RIM.cocina }))}
-      sobre={<PoteHelado s={2.2} />}
+    <Sala cl={[mira(0, SN - 195, 625, 2.0), mira(k(408.8), SN - 185, 620, 2.1, { curva: "inout" })]} snack sp={N9C}
+      detras={ls.map((l, i) => ({ l, x: xs[i], y: l === NELL ? P - 120 : undefined, p: [{ f: 0, v: "parado" }, { f: 30 + i * 10, v: { hD: 70, cD: 70 } }], c: "feliz", d: (i < 2 ? 1 : -1) as 1 | -1, mD: <Cuchara />, luz: RIM.cocina }))}
+      sobre={<g transform={`translate(${SN - 20},${P - 184})`}><PoteHelado s={1.9} /></g>}
       hud={<><Dice quien="rafi" t="one tub. five spoons." x={960} y={150} desde={k(407)} centro tam={70} /><HudDia dia={9} rayas={9} hora="8:00 PM" /></>} />
   );
 };
 
 // ---------- 94 · la primera vez que alguien se rió desde el día uno, hasta Marlon ----------
 export const P94Risa: React.FC = () => {
-  const xs = [SN - 700, SN - 450, SN - 200, SN + 60, SN + 320];
+  const xs = [SN - 620, SN - 360, SN - 130, SN + 90, SN + 290]; // entre la caja, el servilletero y los frascos del mostrador
   const ls = [MARLON, NELL, DOT, CAL, RAFI];
   return (
-    <Sala cl={[mira(0, SN - 250, 600, 2.0), mira(98, SN - 450, 600, 2.4, { curva: "inout" })]} snack sp={N9C}
-      detras={ls.map((l, i) => ({ l, x: xs[i], p: [{ f: 0, v: "celebrar" }, { f: 40 + i * 6, v: { hD: 70, cD: 70 } }], c: "risa", d: (i < 2 ? 1 : -1) as 1 | -1, habla: [[0, 90]], mD: <Cuchara />, luz: RIM.cocina }))}
+    <Sala cl={[mira(0, SN - 300, 615, 2.6), mira(98, SN - 470, 615, 3.0, { curva: "inout" })]} snack sp={N9C}
+      detras={ls.map((l, i) => ({ l, x: xs[i], y: l === NELL ? P - 120 : undefined, p: [{ f: 0, v: "celebrar" }, { f: 40 + i * 6, v: { hD: 70, cD: 70 } }], c: "risa", d: (i < 2 ? 1 : -1) as 1 | -1, habla: [[0, 90]], mD: <Cuchara />, luz: RIM.cocina }))}
       hud={<Rotulo t="even Marlon" x={240} y={200} desde={50} flecha="der" />} />
   );
 };
@@ -751,9 +755,9 @@ export const P96Venda: React.FC = () => {
 export const P97Dedo: React.FC = () => {
   const k = kDe(423.92);
   return (
-    <Sala cl={[mira(0, SN - 580, 620, 2.4), mira(k(426.6), SN - 620, 625, 2.8, { curva: "inout" }), mira(k(428.7), SN - 630, 625, 3.0, { curva: "lineal" })]} snack sp={N9C}
+    <Sala cl={[mira(0, SN - 640, 650, 2.9), mira(k(426.6), SN - 660, 640, 3.2, { curva: "inout" }), mira(k(428.7), SN - 665, 640, 3.35, { curva: "lineal" })]} snack sp={N9C}
       detras={[
-        { l: MARLON, x: SN - 700, p: [{ f: 0, v: { hI: 60, cI: 120, hD: 50, cD: 110 } }, { f: k(426.6), v: { hD: 30, cD: 160, hI: 20, cI: 30 } }], c: [{ f: 0, v: "miedo" }, { f: k(425.6), v: "neutral" }], d: 1, mir: { x: 1, y: 0 }, luz: RIM.cocina },
+        { l: MARLON, x: SN - 700, p: [{ f: 0, v: { hI: 60, cI: 120, hD: 50, cD: 110 } }, { f: k(426.6), v: { hD: 110, cD: 145, hI: 20, cI: 30 } }, { f: k(427.6), v: { hD: 106, cD: 150, hI: 22, cI: 32 } }, { f: k(428.5), v: { hD: 110, cD: 145, hI: 20, cI: 30 } }], c: [{ f: 0, v: "miedo" }, { f: k(425.6), v: "neutral" }], d: 1, mir: { x: 1, y: 0 }, luz: RIM.cocina },
       ]}
       gente={[{ l: NELL, x: SN - 420, p: { hD: 70, cD: 70 }, c: "miedo", d: -1, mir: { x: -1, y: -0.3 }, luz: RIM.cocina }]}
       hud={<Dice quien="marlon" t="shh." x={300} y={220} desde={k(426.8)} tam={90} />} />
@@ -771,7 +775,7 @@ export const P98Comentarios: React.FC = () => {
           { l: NELL, x: CP.puerta - 380, p: { hI: 20, cI: 30 }, c: "determinado", d: -1, mir: [{ f: 0, v: { x: 1, y: 0 } }, { f: k(430.4), v: { x: 0, y: 0 } }], luz: RIM.linterna, mD: <Walkie s={0.8} /> },
         ]} />
       <Velo color="#0b0a0c" o={0.2} />
-      <Pildora texto="TELL ME IN THE COMMENTS" x={960} y={160} desde={k(428.9)} />
+      <Pildora texto="TELL ME IN THE COMMENTS" x={960} y={980} desde={k(428.9)} tam={52} />
       <Dice quien="nell" t={"Would you have opened\nthat freezer?"} x={960} y={240} desde={k(430.3)} centro tam={96} rot={-2} />
       <HudDia dia={9} rayas={9} />
     </AbsoluteFill>
@@ -794,7 +798,16 @@ export const P99Nueve: React.FC = () => {
 };
 
 // ---------- 100 · pantalla final: el Ep. 3 ----------
+// Nell grande a la derecha escribe «DAY 21 ?» en la pared con tiza (trazo que avanza), la tarjeta del ep. 3 a la izquierda
+const Escribe21: React.FC = () => {
+  const f = useF();
+  const w = interpolate(f, [24, 150], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const q = interpolate(f, [170, 180, 190], [1, 1.12, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <div style={{ position: "absolute", left: 1150, top: 210, whiteSpace: "nowrap", fontFamily: F_MANO, fontWeight: 700, fontSize: 130, color: TIZA, transform: `rotate(-4deg) scale(${q})`, clipPath: `inset(0 ${100 - w}% 0 0)`, textShadow: "0 0 18px rgba(255,255,255,0.25)" }}>DAY 21 ?</div>
+  );
+};
 export const P100Final: React.FC = () => (
-  <Final ep={3} titulo={"One Of Us Was Bitten\nAnd Didn't Tell Anyone"} fondo={<Sala cl={[mira(0, SN - 600, 600, 2.0), mira(300, SN - 560, 600, 1.9, { curva: "inout" })]} snack sp={N9C}
-    gente={[{ l: NELL, x: SN - 300, p: Array.from({ length: 12 }).flatMap((_, i) => [{ f: i * 24, v: { hD: 150, cD: 20, cabeza: -6 } }, { f: i * 24 + 12, v: { hD: 160, cD: 35, cabeza: -6 } }]), c: "determinado", d: 1, mD: <Tiza />, luz: RIM.cocina }]} />} />
+  <Final ep={3} lado titulo={"One Of Us Was Bitten\nAnd Didn't Tell Anyone"} encima={<Escribe21 />} fondo={<Sala cl={[mira(0, SN - 415, 700, 2.7), mira(300, SN - 410, 698, 2.85, { curva: "inout" })]} snack sp={N9C}
+    gente={[{ l: NELL, x: SN - 380, p: Array.from({ length: 13 }).flatMap((_, i) => [{ f: i * 24, v: { hD: 128, cD: 12, tronco: -3, cabeza: -10 } }, { f: i * 24 + 12, v: { hD: 142, cD: 30, tronco: -3, cabeza: -8 } }]), c: "determinado", d: 1, mD: <Tiza />, luz: RIM.cocina }]} />} />
 );
