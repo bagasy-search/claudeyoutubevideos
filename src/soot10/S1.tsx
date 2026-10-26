@@ -21,7 +21,7 @@ export const K1: Key[] = [
   [62.6, -12100, 1560, 0.62, 1.4],
   [64.7, -8700, 1560, 0.95, 1.4],
   [66.4, -7500, 1150, 1.15, 1.8],
-  [69.9, -6500, 1380, 1.2, 0.9],
+  [69.9, -6450, 1330, 1.7, 0.9],
   [74.9, -6200, 1450, 0.7, 1.0],
   [79.4, -6250, 1350, 0.85, 0.7],
   [82.5, -7550, 1100, 1.7, 0.9],
@@ -41,7 +41,7 @@ export const K1: Key[] = [
   [141.6, -1350, 1330, 1.5, 0.8],
   [146.2, -3500 + 2250, 1360, 1.7, 0.7],
   [148.5, -3500 + 600, 1150, 1.3, 0.8],
-  [149.6, -3500 + 400, 1000, 1.3, 1.0],
+  [149.6, -3350, 1080, 1.7, 1.0],
   [151.1, 1900, 1360, -1.5, 1.6],
 ];
 
@@ -67,7 +67,7 @@ export const M1: React.FC<{ t: number }> = ({ t }) => {
           {chicos && Array.from({ length: 9 }, (_, i) => <Persona key={i} x={interpolate(t, [62.4 + i * 0.12, 66.5], [-15600 + i * 340, -10600 + i * 140])} y={1910} h={150 + (i % 3) * 18} t={t} seed={60 + i} ropa={{ ...CIVIL(i), gorro: "no" }} camina={1.7} />)}
           <G>
             <Lbl t={t} t0={57.6} t1={59.6} x={-14000} y={1560} txt="DAD?" size={70} color={C.lila} />
-            <Lbl t={t} t0={60.2} t1={62.4} x={-13300} y={1520} txt="EMPTY" size={64} color={C.rojo} />
+            <Lbl t={t} t0={60.2} t1={62.4} x={-13300} y={1600} txt="EMPTY" size={64} color={C.rojo} />
             <Lbl t={t} t0={61.2} t1={62.5} x={-13620} y={1680} txt="AGE 11-12" size={46} color={C.oro} />
             <S t={57.6} p="step" g={-10} />
             <S t={60.2} p="sad" g={-10} />
@@ -218,7 +218,7 @@ export const A1: React.FC<{ t: number }> = ({ t }) => {
         <>
           <Persona x={t < 144 ? 1600 : 1700} y={CUB} h={250} t={t} seed={81} ropa={PIRATA(1)} flip expr="orgullo" bD={en(t, 141.6, 144) ? 150 : 10} />
           <Persona x={t < 147.4 ? 2250 : t < 148.5 ? 2150 : interpolate(t, [148.5, 149.3], [2150, 520], { extrapolateRight: "clamp" })} y={t < 148.5 ? CUB : ALCA} h={180} t={t} seed={7} ropa={GRUMETE}
-            expr={t < 146.2 ? "miedo" : t < 147.4 ? "triste" : t < 149.3 ? "triste" : "neutro"} bD={en(t, 147.4, 148.5) ? 160 : en(t, 149.3, 149.6) ? 160 : 10} bI={en(t, 147.4, 148.5) ? 160 : 10} cD={en(t, 147.4, 148.5) ? 30 : 10}
+            expr={t < 146.2 ? "miedo" : t < 147.4 ? "triste" : t < 149.3 ? "triste" : "triste"} bD={en(t, 147.4, 148.5) ? 160 : en(t, 149.3, 149.6) ? 160 : t > 149.6 ? 110 : 10} bI={en(t, 147.4, 148.5) ? 160 : 10} cD={en(t, 147.4, 148.5) ? 30 : 10}
             inclina={en(t, 147.4, 148.5) ? 10 : 0} />
           <Persona x={2500} y={CUB} h={265} t={t} seed={3} ropa={CAPITAN} flip expr={t > 147.4 ? "sorpresa" : "neutro"} />
         </>
@@ -269,7 +269,7 @@ export const O1: React.FC<{ t: number }> = ({ t }) => {
       <S t={141.9} p="stamp" g={-4} />
       <S t={146.3} p="stamp" g={-4} />
       <S t={147.4} p="stamp" g={-3} />
-      <Txt t={t} t0={148.6} t1={150.8} text="REMEMBER: BEGGING" y={170} size={110} color={C.ambar} />
+      <Txt t={t} t0={148.6} t1={150.6} text="REMEMBER: BEGGING" y={170} size={110} color={C.ambar} />
       <Txt t={t} t0={150.9} t1={152.4} text="IT COMES BACK..." y={170} size={110} />
       <S t={151.0} p="suspense" g={-10} d={1.5} />
     </>
