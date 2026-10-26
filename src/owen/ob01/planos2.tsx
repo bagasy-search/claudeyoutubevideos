@@ -146,16 +146,16 @@ export const P28Caminan: React.FC = () => {
   const peat = [
     { look: OFICINISTA, a: 200, b: 2700, n: 34, edad: 41, seed: 21 },
     { look: SENORA, a: 1100, b: 1450, n: 78, edad: 66, seed: 22 },
-    { look: ESTUDIANTE, a: 500, b: 2900, n: 22, edad: 25, seed: 23 },
+    { look: ESTUDIANTE, a: 620, b: 2760, n: 22, edad: 25, seed: 23 },
     { look: OBRERO, a: 1700, b: 2050, n: 61, edad: 48, seed: 24 },
   ];
   const fin = k(206.8);
-  const cl = [mira(0, 1150, ASH_PISO - 230, 1.3), mira(fin, 1900, ASH_PISO - 230, 1.35, { curva: "lineal" })];
+  const cl = [mira(0, 700, ASH_PISO - 250, 1.7), mira(fin, 2650, ASH_PISO - 250, 1.75, { curva: "lineal" })]; // 26-oct v5 (ojo 6/10: diminutos): sigue al estudiante rápido que pasa a la señora lenta
   return (
     <Escena Set={Ashland} pal={PAL} claves={cl} seed={28} setProps={{ hora: "dia", centro: (ff: number) => 1200 + (ff / fin) * 500, autos: 5 }}
       medio={<>{peat.map((p, i) => <Actor key={i} look={p.look} escala={ESC} seed={p.seed} ruta={[{ f: 0, x: p.a, y: Y }, { f: fin, x: p.b, y: Y, curva: "lineal" }]} caras={[{ f: 0, v: p.n < 40 ? "feliz" : "cansado" }]} />)}</>}
       hud={<>
-        {peat.map((p, i) => <Etq key={i} cl={cl} x={(ff) => p.a + (p.b - p.a) * Math.min(1, ff / fin)} y={Y - (i % 2 ? 450 : 330)} n={p.n} edad={p.edad} desde={k(201.6) + i * 12} tam={90} />)}
+        {peat.map((p, i) => (i === 1 || i === 2) && <Etq key={i} cl={cl} x={(ff) => p.a + (p.b - p.a) * Math.min(1, ff / fin)} y={Y - 300} n={p.n} edad={p.edad} desde={k(201.6) + i * 12} tam={130} />)}
         <Pildora texto="10:00 AM · OWEN HAS A THEORY" x={960} y={950} desde={0} hasta={k(203.4)} color="#f4efe4" />
         <Pildora texto="LOW NUMBERS WALK FAST" x={960} y={950} desde={k(203.5)} color={VERDE} />
         <HudOwen min={600} part="47/47" />
@@ -246,16 +246,24 @@ export const P34Abrigo: React.FC = () => {
 };
 
 // ---------- 35 · la pulsera blanca de la Halden Clinic; baja en la 38 ----------
-const Pulsera: React.FC<{ o: number }> = ({ o }) => (
-  <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, opacity: o, transform: `scale(${1.25 - 0.25 * o})`, transformOrigin: "1080px 700px" }}>
-    <rect width={1920} height={1080} fill="#1d2230" opacity={0.85} />
-    <path d="M-50,760 C400,700 760,640 1100,600 L1180,860 C820,900 420,960 -50,1000 Z" fill="#7d8086" />
-    <path d="M1080,560 q160,-30 300,30 q60,40 40,120 q-20,90 -120,120 q-120,20 -200,-40 Z" fill="#c98e6a" />
-    <path d="M1000,585 q40,-10 70,-4 l70,270 q-30,8 -70,4 Z" fill="#f6f6f2" stroke="#d6dae0" strokeWidth={4} />
-    <g transform="translate(1040,720) rotate(-76)"><LogoHalden x={-120} y={0} s={0.55} /></g>
-    <text x={1060} y={1000} fontFamily={F_HUD} fontWeight={700} fontSize={72} fill="#f4efe4" textAnchor="middle">HALDEN</text>
-  </svg>
-);
+// 26-oct v5 (ojo 6/10: oscura, apenas se leía): muñeca grande y CENTRADA, luz clara, zoom lento y pop del logo
+const Pulsera: React.FC<{ o: number; t?: number }> = ({ o, t = 0 }) => {
+  const pop = 1 + Math.exp(-Math.max(0, t - 6) / 5) * Math.sin(Math.min(Math.PI, Math.max(0, t - 6) / 3)) * 0.25;
+  return (
+    <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0, opacity: o, transform: `scale(${(1.25 - 0.25 * o) * (1 + t * 0.0012)})`, transformOrigin: "960px 560px" }}>
+      <rect width={1920} height={1080} fill="#e9e1d2" />
+      <circle cx={960} cy={540} r={620} fill="#fff7e6" opacity={0.7} />
+      {/* antebrazo cruzando la pantalla: manga gris a la izquierda, muñeca y mano a la derecha */}
+      <path d="M-60,430 L700,410 L700,700 L-60,720 Z" fill="#6f747c" />
+      <path d="M700,420 L1240,436 L1240,684 L700,690 Z" fill="#c98e6a" />
+      <rect x={1180} y={380} width={300} height={340} rx={120} fill="#c98e6a" />
+      {[0, 1, 2, 3].map((i) => <path key={i} d={`M1440,${430 + i * 72} q50,0 50,30 q0,30 -50,30`} fill="none" stroke="#a8704f" strokeWidth={8} strokeLinecap="round" />)}
+      <rect x={860} y={398} width={190} height={316} rx={26} fill="#f8f8f4" stroke="#c9ced6" strokeWidth={6} />
+      <g transform={`translate(955,556) scale(${pop}) rotate(-90)`}><LogoHalden x={-120} y={0} s={0.7} /></g>
+      <text x={960} y={860} fontFamily={F_HUD} fontWeight={800} fontSize={110} fill="#1a2a4a" textAnchor="middle" transform={`translate(960,830) scale(${pop}) translate(-960,-830)`}>HALDEN</text>
+    </svg>
+  );
+};
 export const P35Pulsera: React.FC = () => {
   const f = useF();
   const k = kDe(262.9);
@@ -277,8 +285,8 @@ export const P35Pulsera: React.FC = () => {
           pas={[{ ...ab, poses: [{ f: 0, v: "sentado" }, { f: sale, v: "parado" }] }]} owen={{ caras: [{ f: 0, v: "miedo" }] }}
           hud={<Pildora texto="STOP 38" x={960} y={950} desde={k(272.7)} color="#f4efe4" />} />
       )}
-      <Pulsera o={pulsera} />
-      {pulsera > 0.5 && <Mano texto="Owen has the same one." x={560} y={200} desde={k(269.7)} color="#ffd27a" tam={60} />}
+      <Pulsera o={pulsera} t={f - k(266.8)} />
+      {pulsera > 0.5 && <Mano texto="Owen has the same one." x={960} y={150} desde={k(269.7)} color="#c23a2e" tam={80} />}
     </AbsoluteFill>
   );
 };
@@ -289,9 +297,9 @@ export const P36Tiembla: React.FC = () => {
   const k = kDe(275.4);
   return (
     <AbsoluteFill>
-      <EnBus cl={[mira(0, 300, BUS_PISO - 240, 2.4), mira(70, 290, BUS_PISO - 230, 2.7, { curva: "inout" })]} hora="tarde" min={868} avance={(ff) => 17000 + Math.max(0, ff - 30) * 4}
-        owen={{ caras: [{ f: 0, v: "miedo" }, { f: 40, v: "triste" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }, { f: 14, v: { x: 0.1, y: 0.9 } }], poses: [{ f: 0, v: "sentado" }, ...Array.from({ length: 40 }).map((_, i) => ({ f: 14 + i * 2, v: { hD: 60 + (i % 2 ? 7 : -7), cD: 100 + (i % 3) * 5, hI: 60 - (i % 2 ? 7 : -7), cI: 100, cabeza: 18 } }))] }}
-        hud={<Mano texto="his hands are shaking" x={1300} y={820} desde={k(276.0)} color="#f4efe4" tam={64} />} />
+      <EnBus cl={[mira(0, 300, BUS_PISO - 240, 2.4), mira(30, 300, BUS_PISO - 220, 2.6, { curva: "inout" }), mira(31, 320, BUS_PISO - 175, 3.4), mira(75, 320, BUS_PISO - 180, 3.6, { curva: "lineal" })]} hora="tarde" min={868} avance={(ff) => 17000 + Math.max(0, ff - 30) * 4}
+        owen={{ caras: [{ f: 0, v: "miedo" }, { f: 40, v: "triste" }], miradas: [{ f: 0, v: { x: 1, y: 0 } }, { f: 14, v: { x: 0.1, y: 0.9 } }], poses: [{ f: 0, v: "sentado" }, ...Array.from({ length: 40 }).map((_, i) => ({ f: 14 + i * 2, v: { hD: 60 + (i % 2 ? 16 : -16), cD: 100 + (i % 2 ? 12 : -4), hI: 60 - (i % 2 ? 16 : -16), cI: 100 + (i % 2 ? -4 : 12), cabeza: 18 } }))] }}
+        hud={<Mano texto="his hands are shaking" x={960} y={150} desde={k(276.0)} color="#f4efe4" tam={80} />} />
     </AbsoluteFill>
   );
 };
@@ -317,6 +325,17 @@ export const P38Rosa: React.FC = () => {
   const RX = TF_PUNTOS.sillaRosa - 40, OXX = TF_PUNTOS.sillaOwen + 40;
   const cl = [mira(0, 640, P - 260, 1.45), mira(k(287.5), RX + 40, P - 280, 2.1, { curva: "inout" }), mira(k(291.8), 640, P - 260, 1.55, { curva: "inout" }), mira(k(293.3), OXX - 30, P - 280, 2.0, { curva: "inout" }),
     mira(k(294.7), RX + 40, P - 280, 2.2, { curva: "inout" }), mira(k(297.4), 640, P - 260, 1.6, { curva: "inout" }), mira(k(299.5), RX + 60, P - 270, 2.3, { curva: "inout" }), mira(k(302.6), 640, P - 260, 1.5, { curva: "inout" }), mira(k(305.8), OXX - 40, P - 280, 1.9, { curva: "inout" }), mira(k(307.7), RX + 60, P - 270, 2.0, { curva: "inout" })];
+  // 26-oct v5 (ojo 6/10: «29 s en el mismo encuadre»): «2 miles to the market» = corte a Rosa caminando por Ashland con la bolsa
+  const mA = k(287.6), mB = k(291.7);
+  if (f >= mA && f < mB) {
+    const cm = [mira(mA, 860, ASH_PISO - 240, 1.9), mira(mB, 1420, ASH_PISO - 250, 2.0, { curva: "lineal" })];
+    return (
+      <Escena Set={Ashland} pal={PAL} claves={cm} seed={381} setProps={{ hora: "manana", centro: () => 1100, autos: 3 }}
+        medio={<Actor look={ROSA} escala={ESC} seed={5} ruta={[{ f: mA, x: 700, y: ASH_PISO + 40 }, { f: mB, x: 1450, y: ASH_PISO + 40, curva: "lineal" }]} caras={[{ f: 0, v: "feliz" }]}
+          enManoD={<g><path d="M-30,0 h60 l-8,80 h-44 Z" fill="#c9a26a" stroke="#8a6a3a" strokeWidth={3} /><circle cx={-12} cy={-6} r={12} fill="#d9472b" /><circle cx={12} cy={-10} r={11} fill="#6bbf4a" /></g>} />}
+        hud={<><Mano texto="2 miles to the market, every day" x={960} y={170} desde={mA} color="#ffd27a" tam={76} /><HudOwen min={540} part="47/47" /></>} />
+    );
+  }
   const notas: [string, number, number][] = [["2 miles to the market, every day", 287.6, 291.7], ["never owned a car", 291.8, 293.2], ["dinner at 5:00", 293.3, 294.6], ["bed 9:30 → up at 5:00", 294.7, 297.3], ["talks to half the block", 297.4, 299.4], ["sews with the same strong hands", 299.5, 302.6]];
   return (
     <Escena Set={TwoFlatCorte} pal={PAL} claves={cl} seed={38} setProps={{ hora: "tarde", luzBaño: false }}
@@ -329,8 +348,8 @@ export const P38Rosa: React.FC = () => {
         {notas.map(([t, a, b], i) => <Mano key={i} texto={t} x={1380} y={260} desde={k(a)} hasta={k(b)} color="#ffd27a" tam={58} />)}
         <Mano texto="none of it is special." x={1380} y={260} desde={k(302.7)} hasta={k(304.1)} color="#f4efe4" tam={64} />
         <Mano texto="all of it adds up." x={1380} y={260} desde={k(304.2)} hasta={k(305.8)} color={VERDE} tam={64} />
-        <Globo texto="What's your secret?" x={1150} y={330} desde={k(305.8)} hasta={k(307.7)} cola="abajo" tam={48} />
-        <Globo texto="Mijo, there is no secret. There is just every day." x={760} y={300} desde={k(307.8)} hasta={k(311.9)} cola="abajo" tam={48} />
+        <Globo texto="What's your secret?" x={1150} y={300} desde={k(305.8)} hasta={k(307.7)} cola="abajo" tam={68} />
+        <Globo texto={"Mijo, there is no secret." + String.fromCharCode(10) + "There is just every day."} x={760} y={260} desde={k(307.8)} hasta={k(311.9)} cola="abajo" tam={66} />
         <HudOwen min={1000 + Math.floor(f / 30) * 0} part="47/47" />
       </>} />
   );
@@ -469,15 +488,16 @@ const CtaSuscribir: React.FC<{ desde: number }> = ({ desde }) => {
 };
 export const P46Cta: React.FC = () => {
   const k = kDe(396.8);
-  const cl = [mira(0, 560, 640, 1.5), mira(k(408), 600, 640, 1.62)];
+  const cl = [mira(0, 560, 640, 1.5), mira(k(400.5), 540, 690, 2.0, { curva: "inout" }), mira(k(408), 540, 700, 2.1)]; // 26-oct v5: push-in a Owen que mira a cámara y al asiento «??»
+  const f = useF(); const { fps } = useVideoConfig(); const q = enPantalla(cl, f, fps, ASIENTO_X(1), BUS_PISO - 270);
   return (
     <EnBus cl={cl} hora="ocaso" part="46/47" min={1110} avance={() => 30000}
       pas={[sent(ABERNATHY, 3, { n: 58, edad: 72, desde: -10, caras: [{ f: 0, v: "feliz" }, { f: 40, v: "risa" }], seed: 2, habla: [[30, 70]], poses: [{ f: 0, v: "sentado" }, { f: 30, v: { ...SIT, hD: 150, cD: 30 } }, { f: 70, v: "sentado" }] })]}
       owen={{ caras: [{ f: 0, v: "feliz" }, { f: 70, v: "risa" }, { f: 110, v: "feliz" }], giros: [{ f: 0, v: 0.6 }, { f: 100, v: 0 }, { f: 130, v: 1 }], miradas: [{ f: 0, v: { x: 1, y: 0 } }, { f: 130, v: { x: 0, y: 0 } }], habla: [[70, 100]], manos: "I", poses: [{ f: 0, v: "sentado" }, { f: 70, v: { hD: 150, cD: 30 } }, { f: 104, v: "sentado" }, { f: 140, v: { hD: 120, cD: 60 } }, { f: 180, v: "sentado" }] }}
       hud={<>
-        <div style={{ position: "absolute", left: 960 + (ASIENTO_X(1) - 560) * 1.5, top: 540 + (BUS_PISO - 260 - 640) * 1.5, transform: "translate(-50%,-100%)", textAlign: "center", fontFamily: F_HUD, textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>
-          <div style={{ fontWeight: 600, fontSize: 96, color: VERDE }}>??</div>
-          <div style={{ fontWeight: 500, fontSize: 30, letterSpacing: 3, color: "#f4efe4" }}>YOUR REAL AGE</div>
+        <div style={{ position: "absolute", left: q.x, top: q.y, transform: "translate(-50%,-100%)", textAlign: "center", fontFamily: F_HUD, textShadow: "0 3px 10px rgba(0,0,0,0.7)" }}>
+          <div style={{ fontWeight: 800, fontSize: 180, lineHeight: 1, color: VERDE, transform: `scale(${1 + 0.06 * Math.sin(f / 10)})` }}>??</div>
+          <div style={{ fontWeight: 600, fontSize: 52, lineHeight: 1.1, letterSpacing: 3, color: "#f4efe4", whiteSpace: "nowrap" }}>YOUR REAL AGE</div>
         </div>
         <Pildora texto="What number would float over YOUR head?" x={960} y={860} desde={k(397.2)} color={VERDE} tam={48} />
         <Pildora texto="TELL US IN THE COMMENTS · WEEK 2 IS NEXT" x={960} y={960} desde={k(402.8)} color="#f4efe4" tam={40} />

@@ -9,14 +9,14 @@ import { Contador, EtiquetaFlotante, MarcaCorto, RelojDia, TextoMano, F_HUD } fr
 import { VERDE } from "./elenco";
 
 // el número flotante sobre una cabeza (X,Y en el MUNDO; sigue a la cámara). edad = años de calendario (rótulo).
-export const Etq: React.FC<{ cl: Clave[]; x: number | ((f: number) => number); y: number | ((f: number) => number); n: number | { f: number; v: number; d?: number }[]; edad?: number | string; desde?: number; hasta?: number; color?: string; tam?: number; sufijo?: string }> = ({ cl, x, y, n, edad, desde = 0, hasta, color = VERDE, tam = 84, sufijo }) => {
+export const Etq: React.FC<{ cl: Clave[]; x: number | ((f: number) => number); y: number | ((f: number) => number); n: number | { f: number; v: number; d?: number }[]; edad?: number | string; desde?: number; hasta?: number; color?: string; tam?: number; sufijo?: string }> = ({ cl, x, y, n, edad, desde = 0, hasta, color = VERDE, tam = 112, sufijo }) => {
   const f = useF();
   const { fps } = useVideoConfig();
   const X = typeof x === "function" ? x(f) : x, Y = typeof y === "function" ? y(f) : y;
   const p = enPantalla(cl, f, fps, X, Y);
   const z = cl.length ? cl[0].zoom : 1;
   const rot = edad === undefined ? "" : typeof edad === "number" ? `${edad} YRS OLD` : edad;
-  return <EtiquetaFlotante x={p.x} y={p.y} rotulo={rot} claves={n} desde={desde} hasta={hasta} color={color} tam={tam * Math.min(1.25, Math.max(0.8, z))} sufijo={sufijo} />;
+  return <EtiquetaFlotante x={p.x} y={p.y} rotulo={rot} claves={n} desde={desde} hasta={hasta} color={color} tam={tam * Math.min(1.25, Math.max(1, z))} /* 26-oct v5: rótulos x1.4 (director: «rótulos chicos») */ sufijo={sufijo} />;
 };
 
 // HUD fijo del día de Owen: reloj (min desde medianoche, o claves), contador de participantes, marca
@@ -39,7 +39,7 @@ export const Mano: React.FC<React.ComponentProps<typeof TextoMano>> = ({ tam = 6
   // 26-oct (ojo: textos a mano «cortados»): se escriben enteros en ≤20 cuadros y achican si no entran en 1780 px
   const lin = texto.split(String.fromCharCode(10));
   const largo = Math.max(...lin.map((l) => l.length));
-  const T = Math.min(Math.max(64, tam), 1780 / (largo * 0.5 + 0.9));
+  const T = Math.min(Math.max(72, tam), 1780 / (largo * 0.5 + 0.9));
   const vel = r.vel ?? Math.max(1.6, (2 * (texto.length + 3 * lin.length)) / 20);
   const ancho = largo * T * 0.5 + T * 0.9;
   const alto = lin.length * T * 1.05 + T * 0.5;

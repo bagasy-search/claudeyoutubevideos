@@ -156,7 +156,7 @@ export const Globo: React.FC<{ texto: string; x: number; y: number; desde: numbe
 
 // Píldora de dato con borde (Awaken: «≈ 1-2 hidden 'lethal' mutations per person»)
 export const Pildora: React.FC<{ texto: string; x?: number; y?: number; desde: number; hasta?: number; color?: string; tam?: number }> = ({ texto, x = 960, y = 60, desde, hasta, color = "#f1d36b", tam: tam0 = 42 }) => {
-  const tam = Math.max(40, tam0); // nunca chico: se lee en el celular
+  const tam = Math.max(52, tam0); // nunca chico: se lee en el celular
   const { s, o } = useEntrada(desde, hasta);
   return (
     <div style={{ position: "absolute", left: x, top: y, transform: `translateX(-50%) translateY(${(1 - s) * -12}px)`, opacity: o, fontFamily: F_HUD, fontWeight: 500, fontSize: tam, color: "#f6f0e2", border: `3px solid ${color}`, borderRadius: 40, padding: "6px 22px", background: "rgba(10,14,30,0.55)", whiteSpace: "nowrap" }}>

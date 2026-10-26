@@ -99,6 +99,6 @@ export const Tag: React.FC<{ cl: Clave[]; x: number; y: number; texto: string; d
   const p = enPantalla(cl, f, fps, x, y);
   const s = Math.min(1, (f - desde) / 8) * tam;
   return (
-    <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%", padding: "8px 22px", borderRadius: 18, background: fondo, border: `4px solid ${color}`, fontFamily: F_HUD, fontWeight: 700, fontSize: 44, color, whiteSpace: "nowrap" }}>{texto}</div>
+    <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%", padding: "8px 22px", borderRadius: 18, background: fondo, border: `4px solid ${color}`, fontFamily: F_HUD, fontWeight: 700, fontSize: 62, color, whiteSpace: "nowrap" }}>{texto}</div>
   );
 };
