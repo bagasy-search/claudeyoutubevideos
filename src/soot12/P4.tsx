@@ -27,9 +27,9 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill>
       {/* 0 · TRAMPA 4 · tuviste suerte: perros lejos, viento en la cara, entre las tiendas, todos roncan */}
       <Escena t={t} t0={393.39} t1={408.89} zoom={0} entra="corte" golpes={[401.2]}>
-        <Mundo t={t} cam={cam}>
+        <Mundo t={t} cam={cam} luna={[1700, 150, 70]}>
           {t > 395.8 && <Persona x={xyo} y={gy(xyo) + 4} h={320} t={t} seed={3} ropa={SAJON} expr={t > 406.3 ? "sorpresa" : "miedo"} inclina={22 + prog(t, 405.4, 406.2) * 6} miraY={prog(t, 405.4, 406.2) * 0.8} mira={t > 405.4 ? 0.4 : 0} camina={t < 405.4 ? 0.5 : 0} bD={30} cD={20} bI={t > 405.6 ? 70 : 8} cI={t > 405.6 ? 110 : 10} manoD={<LanzaMano a={50} inclina={-14} largo={420} />} />}
-          {t > 406.3 && <Emote t={t} t0={406.3} tipo="preg" x={5250} y={600} s={0.6} />}
+          {t > 406.3 && <Emote t={t} t0={406.3} tipo="preg" x={5250} y={680} s={0.6} />}
           {/* el viento en la cara */}
           {t > 398.4 && t < 405.4 && (
             <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
@@ -107,16 +107,18 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
         </svg>
         <Durmiente x={940} y={720} s={1.6} t={t} manta="#5a3a7a" hacha={false} />
         {/* dormido, estira la mano, agarra la lanza y la arrastra pegada al cuerpo */}
-        {(() => { const off = 300 * (1 - prog(t, 420.7, 421.5)); const reach = prog(t, 419.6, 420.6); const hx = 1000 + (off + 120) * reach, hy = 748 - 10 * reach; return (
+        {(() => { const ap = prog(t, 421.6, 422.1); const off = 300 * (1 - prog(t, 420.7, 421.5)) - 40 * ap; const reach = prog(t, 419.6, 420.6); const hx = 1000 + (off + 120) * reach, hy = 748 - 10 * reach + 14 * ap; return (
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
-            <g transform={`translate(${off} ${-off * 0.076})`}>
-              <line x1={560} y1={790} x2={1480} y2={720} stroke="#8a5a32" strokeWidth={16} strokeLinecap="round" />
+            <g transform={`translate(${off} ${-off * 0.076 + 14 * ap})`}>
+              <line x1={760} y1={775} x2={1480} y2={720} stroke="#8a5a32" strokeWidth={16} strokeLinecap="round" />
               <path d="M 1480 720 L 1560 700 L 1486 740 Z" fill="#c8d0dc" stroke="#2a1530" strokeWidth={5} />
             </g>
             {reach > 0 && <><path d={`M 990 740 Q ${(990 + hx) / 2} ${hy - 30} ${hx} ${hy}`} stroke="#5a3a7a" strokeWidth={34} fill="none" strokeLinecap="round" /><circle cx={hx} cy={hy} r={22} fill="#f2c4a0" stroke="#2a1530" strokeWidth={5} /></>}
           </svg>); })()}
         <Ch t={t} t0={422.4} text="SPEAR: 0 STEPS AWAY" color={C.teal} tinta={C.noche} x={960} y={960} centro size={48} />
-        <Zzz x={1240} y={640} t={t} />
+        {t < 421.6 ? <Zzz x={1240} y={640} t={t} /> : [0, 1, 2].map((i) => { const k = ((t * 0.7 + i / 3) % 1); return <div key={i} style={{ position: "absolute", left: 1180 + k * 200, top: 600 - k * 40 + Math.sin(k * 6) * 10, fontFamily: "Fredoka", fontWeight: 700, fontSize: 70 + k * 70, color: "#fff", WebkitTextStroke: `6px ${C.noche}`, paintOrder: "stroke fill", opacity: Math.sin(k * Math.PI) }}>Z</div>; })}
+        {/* el durmiente se acurruca con la lanza (aprieta) */}
+        {t > 421.6 && t < 422.4 && <Emote t={t} t0={421.7} tipo="brillos" x={1000} y={760} s={0.8} />}
         <G t={t} t0={421.6} text="NOT ONE STEP" y={490} size={110} color={C.ambar} />
         <Cita t={t} t0={418.6} texto="Never move one step away from your weapons… you never know when you will need your spear." autor="HÁVAMÁL" y={255} size={40} w={1500} />
       </Escena>
@@ -155,7 +157,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={429.4} text="SHIELD → AGAINST THE TENT POLE" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={50} />
         <Ch t={t} t0={431.6} text="SLEEPING IN THEIR CLOTHES" color={C.teal} tinta={C.noche} x={960} y={260} centro size={50} />
         {t > 431.6 && <Emote t={t} t0={431.8} tipo="excl" x={1000} y={560} s={1.3} />}
-        <Sello t={t} t0={433.6} text="NOT ALL AT ONCE" x={430} y={760} size={74} rot={-8} />
+        <Sello t={t} t0={433.6} text="NOT ALL AT ONCE" x={330} y={400} size={64} rot={-8} />
       </Escena>
       {/* 4 · la guardia: en los bordes, las puertas y los barcos, con un cuerno · no hace falta matarlo para perder: basta que sople una vez */}
       <Escena t={t} t0={435.8} t1={447.46} zoom={0} entra="barrido" golpes={[438.2, 445.0]}>
@@ -185,7 +187,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
           )}
         </Mundo>
         <Ch t={t} t0={447.7} text="WHO IS IN THOSE TENTS?" color={C.violeta} x={960} y={150} centro size={60} />
-        <Sello t={t} t0={450.1} text="NOT FARMERS" x={1440} y={920} size={84} rot={-6} />
+        <Sello t={t} t0={450.1} text="NOT FARMERS" x={1530} y={995} size={66} rot={-4} />
       </Escena>
       {/* 6 · llegaron en 865; lo primero: robar caballos · 8 años peleando, marchando, acampando · algunos, toda la vida */}
       <Escena t={t} t0={451.74} t1={464.43} entra="diag" zoom={0.02} golpes={[453.4, 457.8, 462.2]}>
@@ -216,20 +218,20 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
         <Rayos t={t} x={960} y={540} color="#ff6a4a" op={0.18} />
         {t > 472.3 && <Particulas t={t} tipo="brasas" n={50} seed={4} />}
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, transform: `translate(${t > 472.3 ? Math.sin(t * 40) * 6 : 0}px, 0)` }}>
-          <Persona x={interpolate(t, [464.6, 466.4], [1700, 960], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={1230} h={760} t={t} seed={520} ropa={{ tunica: "#8a6a4a", tunica2: "#5e4428", cinto: "#3a2418", piel: "#f2b48a", piel2: "#d98d66", pelo: "#a8552a" }} barba="#a8552a" pelera
+          <Persona x={interpolate(t, [464.6, 466.4], [1800, 1350], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={1230} h={760} t={t} seed={520} ropa={{ tunica: "#8a6a4a", tunica2: "#5e4428", cinto: "#3a2418", piel: "#f2b48a", piel2: "#d98d66", pelo: "#a8552a" }} barba="#a8552a" pelera
             camina={t < 466.4 ? 1.1 : 0} flip={t < 466.4}
             expr={t > 472.4 && t < 474.4 ? "sorpresa" : t > 468.6 ? "enojado" : "neutro"} ladea={t > 472.4 && t < 474.4 ? -14 : 0} miraY={t > 472.4 && t < 474.4 ? -0.8 : 0}
             bI={t > 473.8 ? 120 : t > 470.2 && t < 472.3 ? 100 + Math.abs(Math.sin(t * 9)) * 60 : 30} cI={t > 473.8 ? 100 : t > 470.2 && t < 472.3 ? 30 : 20}
             bD={t > 473.8 ? 120 : t > 470.2 && t < 472.3 ? 100 + Math.abs(Math.cos(t * 9)) * 60 : 30} cD={t > 473.8 ? 100 : t > 470.2 && t < 472.3 ? 30 : 20} mira={0.1}
             />
-          {t > 473.8 && <div style={{ position: "absolute", left: 975, top: 1120 - prog(t, 473.8, 474.4) * 400 + Math.sin(t * 30) * 6, transform: `translate(-50%,-50%) rotate(${Math.sin(t * 30) * 4}deg)` }}><svg width={300} height={300} viewBox="-150 -150 300 300"><EscudoR r={130} k={3} /></svg></div>}
+          {t > 473.8 && <div style={{ position: "absolute", left: 1365, top: 1120 - prog(t, 473.8, 474.4) * 400 + Math.sin(t * 30) * 6, transform: `translate(-50%,-50%) rotate(${Math.sin(t * 30) * 4}deg)` }}><svg width={300} height={300} viewBox="-150 -150 300 300"><EscudoR r={130} k={3} /></svg></div>}
         </div>
-        {t > 472.4 && t < 474.0 && <G t={t} t0={472.4} text="AWOOOO!" x={1460} y={400} size={90} color={C.crema} />}
+        {t > 472.4 && t < 474.0 && <G t={t} t0={472.4} text="AWOOOO!" x={900} y={330} size={84} color={C.crema} />}
         <Ch t={t} t0={464.7} t1={466.3} text="A FEW OF THEM MIGHT BE…" color={C.violeta} x={960} y={150} centro size={56} />
         <G t={t} t0={466.4} text="BERSERKERS" y={170} size={150} color={C.crema} />
-        <Ch t={t} t0={470.2} text="NO ARMOR" color={C.ambar} tinta={C.noche} x={380} y={460} centro size={70} />
-        <Ch t={t} t0={472.4} text="MAD AS DOGS OR WOLVES" color={C.rojo} x={380} y={580} centro size={56} />
-        <Ch t={t} t0={474.4} text="BITING THEIR OWN SHIELDS" color={C.ambar} tinta={C.noche} x={1480} y={980} centro size={60} />
+        <Ch t={t} t0={470.2} text="NO ARMOR" color={C.ambar} tinta={C.noche} x={160} y={420} size={48} />
+        <Ch t={t} t0={472.4} text="MAD AS DOGS OR WOLVES" color={C.rojo} x={160} y={510} size={48} />
+        <Ch t={t} t0={474.4} text="BITING THEIR OWN SHIELDS" color={C.ambar} tinta={C.noche} x={160} y={600} size={48} />
       </Escena>
       {/* 8 · vos: lanza de ayer · él, aun medio dormido, se despierta enojado, armado y ya de pie */}
       <Escena t={t} t0={476.13} t1={484.0} entra="corte" golpes={[478.4, 480.2]}>

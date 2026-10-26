@@ -12,7 +12,7 @@ import { Corona, Tienda, Empalizada, Iglesia, Cruz } from "./vik";
 // arriba, la iglesia convertida en portón, el corte de la zanja con el barro y el vikingo a la altura justa, y Reading 870.
 export const CAM2: Key[] = [
   [186.78, 3600, 520, 0.6], [189.02, 1900, 520, 1.0], [194.12, 2350, 600, 1.35], [196.16, 3100, 760, 1.45], [199.22, 3300, 880, 1.55],
-  [208.64, 3700, 720, 1.25], [212.9, 3820, 660, 1.1], [215.22, 4080, 560, 1.6], [219.4, 4060, 590, 1.45], [222.48, 3950, 600, 1.0],
+  [208.64, 3700, 720, 1.25], [212.9, 3820, 660, 1.1], [215.22, 4080, 515, 1.6], [219.4, 4060, 530, 1.45], [222.48, 3950, 600, 1.0],
   [231.09, 3480, 880, 1.9], [237.4, 3500, 900, 2.0], [239.4, 3600, 760, 1.3], [242.0, 3640, 740, 1.3], [247.68, 3620, 740, 1.25],
   [289.19, 3050, 760, 0.95], [291.0, 3300, 820, 1.2], [292.4, 3470, 860, 1.5], [295.06, 3520, 870, 1.65],
 ];
@@ -57,7 +57,10 @@ const Gatean: React.FC<{ t: number }> = ({ t }) => {
   return (
     <>
       {Array.from({ length: 14 }, (_, i) => {
-        const x = 1250 + (i % 7) * 70 - Math.floor(i / 7) * 160 + u * 1650 - (i % 3) * 30;
+        // al final la columna se aprieta hacia el frente (nadie queda cortado por el borde izquierdo)
+        const xf = 1670 + u * 1650;
+        const x0 = 1250 + (i % 7) * 70 - Math.floor(i / 7) * 160 + u * 1650 - (i % 3) * 30;
+        const x = xf - (xf - x0) * (1 - 0.5 * prog(t, 195.2, 198.6));
         return <Persona key={i} x={x} y={gy(x) + 26} h={180} t={t} seed={300 + i} ropa={i % 4 === 0 ? SENOR : SAJON} expr="miedo" inclina={38} camina={0.5} opacity={0.88} />;
       })}
       {(() => {
@@ -103,7 +106,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
     <AbsoluteFill>
       {/* 0 · TRAMPA 2 · la señal: bajás gateando con 200 hombres */}
       <Escena t={t} t0={186.78} t1={199.22} zoom={0} entra="corte" golpes={[196.3]}>
-        <Mundo t={t} cam={cam}>
+        <Mundo t={t} cam={cam} luna={[1700, 110, 78]}>
           <Gatean t={t} />
           {/* el señor da la señal desde la loma */}
           <Persona x={1290} y={gy(1290) + 30} h={300} t={t} seed={4} ropa={SENOR} expr="enojado" bD={t > 189 && t < 191 ? 150 : 20} cD={20} />
@@ -151,7 +154,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       </Escena>
       {/* 2 · detrás, el terraplén con la empalizada · y la iglesia, que no tiraron: la hicieron portón */}
       <Escena t={t} t0={208.64} t1={222.48} zoom={0} entra="zoom" golpes={[217.7, 219.5]}>
-        <Mundo t={t} cam={cam}>
+        <Mundo t={t} cam={cam} luna={[1700, 110, 70]}>
           {t < 213.2 && [3690, 3790, 3880].map((x, i) => (
             <Persona key={i} x={x} y={gy(x) + 20} h={170} t={t} seed={400 + i} ropa={VIK(i + 1)} casco="vikingo" barba={barbaDe(i + 1)} expr="enojado" flip={i === 1} bD={60 + Math.max(0, Math.sin(t * 6 + i * 2)) * 80} cD={40} bI={50} cI={60}
               manoD={<g transform="rotate(170)"><rect x={-5} y={-30} width={10} height={150} fill="#8a5a32" /><path d="M -22 118 L 22 118 L 16 160 L -16 160 Z" fill="#9aa6b8" stroke="#2a1530" strokeWidth={4} /></g>} />
@@ -204,7 +207,8 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={208.9} t1={212.9} text="A BANK OF EARTH" color={C.ambar} tinta={C.noche} x={120} y={160} size={58} />
         <Ch t={t} t0={210.6} t1={212.9} text="+ A WOODEN FENCE" color={C.violeta} x={120} y={270} size={54} />
         <Ch t={t} t0={213.0} t1={215.2} text="NOW THE WORRYING PART…" color={C.rojo} x={120} y={160} size={58} />
-        <Ch t={t} t0={215.3} t1={217.6} text="THE OLD STONE CHURCH? NOT KNOCKED DOWN" color={C.teal} tinta={C.noche} x={120} y={160} size={52} />
+        <Ch t={t} t0={215.3} t1={217.6} text="THE OLD STONE CHURCH?" color={C.teal} tinta={C.noche} x={120} y={160} size={56} />
+        <Ch t={t} t0={216.2} t1={217.6} text="NOT KNOCKED DOWN" color={C.rojo} x={120} y={270} size={52} />
         <Emote t={t} t0={215.4} t1={217.6} tipo="preg" x={1180} y={560} s={1.2} />
         <G t={t} t0={217.7} t1={219.4} text="PART OF THE WALL" x={700} y={200} size={110} color={C.crema} />
         <Sello t={t} t0={219.5} text="VIKING GATEHOUSE" x={650} y={330} size={78} rot={-5} />
@@ -212,7 +216,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       </Escena>
       {/* 3 · no atacás un montón de carpas: atacás un fuerte, hecho en semanas, por gente que ya lo hizo */}
       <Escena t={t} t0={222.48} t1={231.09} entra="diag" golpes={[223.6, 225.6, 228.0]}>
-        <Mundo t={t} cam={{ x: 5000, y: 560, z: 0.7 }} />
+        <Mundo t={t} cam={{ x: 5000, y: 560, z: 0.7 }} luna={[-400, -400, 1]} />
         <AbsoluteFill style={{ background: "rgba(10,6,34,.55)" }} />
         {t < 225.5 && [600, 960, 1320].map((x, i) => <Tienda key={i} x={x} y={640} s={0.62} k={i} t={t} t0={222.6 + i * 0.15} />)}
         {t > 223.6 && t < 225.5 && (
@@ -227,7 +231,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
           const fase = ((t - 226.4) / 0.9) % 1;
           const dia = fase < 0.5;
           const a = Math.PI * (dia ? fase * 2 : (fase - 0.5) * 2);
-          const cx = 960 - Math.cos(a) * 820, cy = 620 - Math.sin(a) * 330;
+          const cx = 960 - Math.cos(a) * 880, cy = 660 - Math.sin(a) * 240;
           return (
             <>
               <AbsoluteFill style={{ background: dia ? `rgba(120,170,230,${0.5 * Math.sin(a)})` : "transparent" }} />
@@ -264,12 +268,12 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
             manoD={carga ? <rect x={-70} y={-14} width={160} height={26} rx={12} fill="#8a5a32" stroke="#2a1530" strokeWidth={4} /> : <Maza a={-90} />} />;
         })}
         <G t={t} t0={225.6} text="A FORT" y={200} size={170} color={C.crema} />
-        <Ch t={t} t0={227.0} text="BUILT IN A FEW WEEKS" color={C.ambar} tinta={C.noche} x={960} y={350} centro size={54} />
+        <Ch t={t} t0={227.0} t1={229.3} text="BUILT IN A FEW WEEKS" color={C.ambar} tinta={C.noche} x={960} y={350} centro size={54} />
         <Cuenta t={t} t0={226.4} de={1} a={21} dur={4.2} x={1640} y={250} size={100} color={C.ambar} prefijo="DAY " />
         {["THANET", "SHEPPEY", "READING", "TORKSEY"].map((n, i) => (
           <Ch key={n} t={t} t0={228.0 + i * 0.5} text={`${n} ✓`} color={C.teal} tinta={C.noche} x={330 + i * 420} y={985} centro size={42} />
         ))}
-        <Ch t={t} t0={229.4} text="DONE IT MANY TIMES" color={C.rojo} x={1600} y={380} centro size={44} />
+        <Ch t={t} t0={229.4} text="BY MEN WHO'D DONE IT MANY TIMES" color={C.rojo} x={960} y={350} centro size={52} />
       </Escena>
       {/* 4 · cruzar la zanja de noche: barro a las rodillas, la pared resbala, el que sale queda recortado contra el cielo */}
       <Escena t={t} t0={231.09} t1={247.68} zoom={0} entra="corte" golpes={[233.5, 238.5, 242.0]}>
@@ -372,14 +376,44 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #8ad0f0, #d8f0f8 60%)" }} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><path d="M 0 760 Q 960 700 1920 760 L 1920 1080 L 0 1080 Z" fill="#6aaa4a" /><path d="M 0 840 Q 960 790 1920 840 L 1920 1080 L 0 1080 Z" fill="#5a9a3e" /></svg>
         {/* CARGA: los ingleses corren (x +700) con la lanza adelante; en «celebrated» saltan con los brazos arriba */}
-        {Array.from({ length: 7 }, (_, i) => {
+        {Array.from({ length: 8 }, (_, i) => {
           const fiesta = t > 266.95;
-          const x = interpolate(t, [260.2, 263.4, 266.9], [120 + i * 95, 820 + i * 95, 1000 + i * 95], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          const x = interpolate(t, [260.2, 263.4], [100 + i * 88, 620 + i * 115], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
           const corre = t > 260.2 && t < 263.4;
-          const salta = fiesta ? 266.95 + i * 0.08 + Math.floor((t - 266.95 - i * 0.08) / 0.7) * 0.7 : undefined;
-          return <Persona key={i} x={x} y={900 + (i % 2) * 40} h={i === 0 ? 300 : 240} t={t} seed={330 + i} ropa={i === 0 ? SENOR : SAJON} casco="saxon" expr={fiesta ? "feliz" : "enojado"} camina={corre ? 2.6 : t < 266.9 && t > 263.4 ? 1.0 : 0} inclina={corre ? 16 : 0} salta={salta}
-            bD={fiesta ? 165 + Math.sin(t * 8 + i) * 10 : corre ? 90 : 30} cD={fiesta ? 0 : 20} bI={fiesta ? 165 + Math.sin(t * 8 + i + 1) * 10 : 8} cI={0} manoD={<LanzaMano a={fiesta ? 0 : corre ? 0 : 50} inclina={corre ? 90 : -14} largo={360} />} />;
+          // «celebrated»: saltos de 60 px (0,35 s en el aire cada 0,5 s), desfasados 0,08 s
+          const ph = fiesta ? (t - 266.95 - i * 0.08) : -1;
+          const hop = ph > 0 && ph % 0.5 < 0.35 ? Math.sin(((ph % 0.5) / 0.35) * Math.PI) * 60 : 0;
+          const tira = fiesta && (i === 2 || i === 5); // estos dos tiran el casco al aire
+          return <Persona key={i} x={x} y={900 + (i % 2) * 40 - hop} h={i === 0 ? 300 : 240} t={t} seed={330 + i} ropa={i === 0 ? SENOR : SAJON} casco={tira ? "no" : "saxon"} expr={fiesta ? "feliz" : "enojado"} camina={corre ? 2.6 : 0} inclina={corre ? 16 : 0} habla={fiesta}
+            bD={fiesta ? 168 + Math.sin(t * 9 + i) * 10 : corre ? 90 : t > 263.4 ? 70 + Math.max(0, Math.sin(t * 7 + i)) * 60 : 30} cD={fiesta ? -10 : 20} bI={fiesta ? 168 + Math.sin(t * 9 + i + 1) * 10 : 8} cI={fiesta ? 10 : 0}
+            manoD={fiesta ? undefined : <LanzaMano a={corre ? 0 : 50} inclina={corre ? 90 : -14} largo={360} />} />;
         })}
+        {/* los dos cascos que vuelan por el aire */}
+        {t > 266.95 && [2, 5].map((i) => {
+          const u = t - 267.05 - i * 0.04;
+          if (u < 0) return null;
+          const x0 = 620 + i * 115, y0 = 900 + (i % 2) * 40 - 240;
+          const T = u % 1.4; // sube, cae, lo vuelven a tirar
+          const cx = x0 + (i === 2 ? -1 : 1) * T * 40, cy = y0 - 560 * T + 800 * T * T;
+          return <svg key={"k" + i} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
+            <g transform={`translate(${cx} ${cy}) rotate(${T * 540 * (i === 2 ? -1 : 1)})`}>
+              <path d="M -34 10 Q -36 -34 0 -38 Q 36 -34 34 10 Z" fill="#8c7a5c" stroke="#2a1530" strokeWidth={5} />
+              <rect x={-38} y={6} width={76} height={10} rx={4} fill="#6e5e44" stroke="#2a1530" strokeWidth={4} />
+            </g>
+          </svg>;
+        })}
+        {/* confeti: 20 papelitos que caen girando */}
+        {t > 266.95 && (
+          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
+            {Array.from({ length: 20 }, (_, k) => {
+              const u = t - 266.95 - (k % 5) * 0.07;
+              if (u < 0) return null;
+              const x = 200 + ((k * 337) % 1500) + Math.sin(u * 4 + k) * 40;
+              const y = 420 - 260 * Math.exp(-u * 6) + u * (170 + (k % 4) * 40) - 120 + (k % 3) * 40;
+              return <rect key={k} x={x - 10} y={y - 6} width={20} height={12} rx={3} fill={[C.rojo, C.ambar, C.teal, C.lima, C.violeta][k % 5]} transform={`rotate(${u * 400 + k * 40} ${x} ${y})`} />;
+            })}
+          </svg>
+        )}
         {/* los vikingos los esperan de frente y, al choque, se dan vuelta y huyen por la derecha */}
         {Array.from({ length: 5 }, (_, i) => {
           const huye = t > 263.3;
@@ -404,14 +438,14 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
         {/* el ejército: quieto en formación, levanta las lanzas cuando el rey alza la espada y arranca a marchar a la derecha */}
         {Array.from({ length: 22 }, (_, i) => {
           const marcha = Math.max(0, t - 273.4);
-          const x = -280 + i * 110 + (i % 3) * 30 + marcha * marcha * 60 + marcha * 120;
+          const x = -280 + i * 110 + (i % 3) * 30 + marcha * 130;
           const alza = t > 271.1 + (i % 7) * 0.05;
-          return <Persona key={i} x={x} y={860 + (i % 3) * 22} h={170} t={t} seed={360 + i} ropa={SAJON} casco="saxon" camina={marcha > 0 ? 1.6 : 0} sombra="#5a4a3a" opacity={0.75}
+          return <Persona key={i} x={x} y={860 + (i % 3) * 22} h={170} t={t} seed={360 + i} ropa={SAJON} casco="saxon" camina={marcha > 0 ? 1.8 : 0} sombra="#5a4a3a" opacity={0.8}
             bD={alza ? 160 + Math.sin(t * 6 + i) * 12 : 30} cD={alza ? 0 : 20} manoD={<LanzaMano a={alza ? 0 : 50} inclina={alza ? 0 : -14} largo={320} />} />;
         })}
         {[[700, 0], [1180, 1]].map(([x0, k]) => {
           const marcha = Math.max(0, t - 273.4);
-          const x = x0 + marcha * marcha * 60 + marcha * 120;
+          const x = x0 + marcha * 150; // Alfredo termina en x≈1540, entero
           const alza = !k && t > 270.8 && t < 273.4;
           return (
             <React.Fragment key={k}>
@@ -497,7 +531,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
             </>
           );
         })()}
-        <Cita t={t} t0={285.0} texto="…and the Vikings held the place of slaughter." autor="THE CHRONICLE" x={1340} y={330} w={880} size={50} />
+        <Cita t={t} t0={285.0} texto="…and the Vikings held the place of slaughter." autor="THE CHRONICLE" x={1320} y={200} w={700} size={40} />
       </Escena>
       {/* 10 · la zanja no está para frenarte: está para demorarte justo donde ellos quieren */}
       <Escena t={t} t0={289.19} t1={295.4} zoom={0} entra="barrido" golpes={[291.3, 293.0]}>

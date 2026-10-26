@@ -14,7 +14,7 @@ export const CAM8: Key[] = [
   [779.75, 5300, 640, 0.55], [783.33, 5000, 600, 0.7],
   [871.42, 3600, 640, 0.6], [875.47, 4080, 600, 1.2],
   [896.4, 1250, 440, 0.55], [898.26, 1250, 440, 0.6], [899.62, 3500, 600, 0.6], [900.49, 4700, 560, 0.6], [901.4, 5500, 560, 0.6],
-  [903.23, 7700, 560, 0.6], [904.09, 8800, 560, 0.6], [905.12, 9900, 560, 0.6], [906.54, 5575, -260, 0.18], [910.7, 5575, -260, 0.185],
+  [903.23, 7700, 560, 0.6], [904.09, 8800, 560, 0.6], [905.12, 9900, 560, 0.6], [906.54, 5575, -260, 0.16], [910.7, 5575, -260, 0.16],
   [910.78, 5400, 560, 0.45], [922.3, 5600, 540, 0.5],
 ];
 const ALFRED = { tunica: "#c8a23a", tunica2: "#8a6a1a", cinto: "#3b230f", piel: "#e8a880", piel2: "#c98864", pelo: "#3a2418" };
@@ -35,6 +35,16 @@ const Martillo: React.FC<{ x: number; y: number; s?: number }> = ({ x, y, s = 1 
     <rect x={-10} y={-44} width={20} height={60} fill="#dcc070" stroke="#2a1530" strokeWidth={5} />
     <path d="M -50 10 L 50 10 L 40 60 L -40 60 Z" fill="#dcc070" stroke="#2a1530" strokeWidth={6} />
   </svg>
+);
+
+// espada en la mano: a = bD+cD la deja parada; gira = 180 la pone punta abajo
+const EspadaMano: React.FC<{ a: number; gira?: number }> = ({ a, gira = 0 }) => (
+  <g transform={`rotate(${a + gira})`}>
+    <rect x={-9} y={-30} width={18} height={56} rx={5} fill="#6b4022" stroke="#2a1530" strokeWidth={5} />
+    <circle cx={0} cy={32} r={13} fill="#c9a24a" stroke="#2a1530" strokeWidth={5} />
+    <rect x={-40} y={-46} width={80} height={16} rx={6} fill="#c9a24a" stroke="#2a1530" strokeWidth={5} />
+    <path d="M -9 -46 L 9 -46 L 9 -276 L 0 -302 L -9 -276 Z" fill="#d8dee8" stroke="#2a1530" strokeWidth={6} />
+  </g>
 );
 
 const Asoman: React.FC<{ t: number; xs: number[]; y: number; flaco: number }> = ({ t, xs, y, flaco }) => (
@@ -81,8 +91,8 @@ const RutaP8: React.FC<{ t: number; t0: number; dur: number; activa?: number; es
 // (la 7 en una 2ª fila cuando la cámara está lejos) → nunca se cortan ni se pisan.
 const EtiquetasP8: React.FC<{ t: number; t0: number; dur: number; cam: Cam; escala: number; activa?: number }> = ({ t, t0, dur, cam, escala, activa }) => {
   if (t < t0) return null;
-  const fs = Math.max(36, Math.min(60, 56 * escala * cam.z));
   const lejos = cam.z < 0.35;
+  const fs = lejos ? 44 : Math.max(36, Math.min(60, 56 * escala * cam.z));
   return (
     <>
       {PARADAS.map((p) => {
@@ -93,10 +103,11 @@ const EtiquetasP8: React.FC<{ t: number; t0: number; dur: number; cam: Cam; esca
         const sx = 960 + (p.x - cam.x) * cam.z, sy = 540 + (p.y - 120 - cam.y) * cam.z;
         if (sx < -200 || sx > 2120) return null;
         const w = p.txt.length * fs * 0.62 + fs * 0.9, h = fs * 1.3;
-        const abajo = p.n % 2 === 1;
+        const abajo = lejos ? p.n % 2 === 0 : p.n % 2 === 1; // de lejos: impares arriba, pares abajo
         const fila2 = lejos && p.n === 7;
-        const cy = abajo ? sy + R + 12 + h / 2 + (fila2 ? h + 12 : 0) : sy - R - 12 - h / 2;
-        const cx = Math.max(80 + w / 2, Math.min(1840 - w / 2, sx));
+        const cy = abajo ? sy + R + 12 + h / 2 : sy - R - 12 - h / 2 - (fila2 ? h + 12 : 0);
+        const mg = lejos ? 140 : 80; // de lejos el golpe de zoom agranda: más margen
+        const cx = Math.max(mg + w / 2, Math.min(1920 - mg - w / 2, sx));
         return (
           <div key={p.n} style={{ position: "absolute", left: cx, top: cy, transform: `translate(-50%,-50%) scale(${e})`, fontFamily, fontWeight: 700, fontSize: fs, lineHeight: 1, color: "#fff", background: activa === p.n ? C.rojo : "rgba(27,18,64,.9)", padding: `${fs * 0.15}px ${fs * 0.4}px`, borderRadius: fs * 0.3, whiteSpace: "nowrap", boxShadow: "0 6px 0 rgba(10,5,30,.4)" }}>{p.txt}</div>
         );
@@ -151,8 +162,34 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
               const ax = interpolate(t, [788.4, 789.9], [180, 760], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
               return (
                 <>
-                  <Persona x={ax} y={990} h={480} t={t} seed={371} ropa={ALFRED} expr={t > 790 ? "enojado" : "triste"} mira={0.6} camina={t < 789.9 ? 1.3 : 0}
-                    salta={t > 790 && t < 790.4 ? 24 : 0} bD={t > 790 ? 150 : 20} cD={t > 790 ? 10 : 10} manoD={t > 790 ? <LanzaMano a={30} inclina={-10} largo={380} /> : undefined} />
+                  {/* recuerda: levanta la espada (789,9), la CLAVA en el barro (790,4-790,7) y se cruza de brazos, decidido */}
+                  {(() => {
+                    const alza = prog(t, 789.9, 790.3), clava = prog(t, 790.4, 790.7), cruza = prog(t, 790.75, 791.05);
+                    const enMano = t < 790.7;
+                    const bDa = enMano ? 20 + alza * 140 - clava * 110 : 20 - cruza * 5, cDa = enMano ? 10 : 10 - cruza * 115;
+                    const sx = ax + 170, sy = 1000; // queda clavada al costado, punta hundida en el barro
+                    return (
+                      <>
+                        {!enMano && (
+                          <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
+                            <g transform={`translate(${sx} ${sy - 30 * (1 - prog(t, 790.7, 790.8))})`}>
+                              <path d="M -9 -230 L 9 -230 L 9 0 L 0 26 L -9 0 Z" fill="#d8dee8" stroke="#2a1530" strokeWidth={6} />
+                              <rect x={-40} y={-246} width={80} height={16} rx={6} fill="#c9a24a" stroke="#2a1530" strokeWidth={5} />
+                              <rect x={-9} y={-300} width={18} height={56} rx={5} fill="#6b4022" stroke="#2a1530" strokeWidth={5} />
+                              <circle cx={0} cy={-306} r={13} fill="#c9a24a" stroke="#2a1530" strokeWidth={5} />
+                            </g>
+                            {/* salpicón de barro al clavarla */}
+                            {[-1, -0.5, 0.5, 1].map((d, i) => { const u = prog(t, 790.7, 791.2); return <circle key={i} cx={sx + d * (20 + u * 90)} cy={sy + 10 - Math.sin(u * Math.PI) * (50 + i * 12)} r={10 - u * 5} fill="#4a3a20" opacity={1 - u} />; })}
+                          </svg>
+                        )}
+                        <Persona x={ax} y={990} h={480} t={t} seed={371} ropa={ALFRED} expr={t > 789.9 ? "enojado" : "triste"} mira={t > 790.75 ? 0.1 : 0.6} miraY={t > 790.3 && t < 790.75 ? 0.5 : 0}
+                          camina={t < 789.9 ? 1.3 : 0} inclina={clava * 12 * (1 - cruza)}
+                          salta={t > 790.75 && t < 791.0 ? 14 : 0}
+                          bD={bDa} cD={cDa} bI={enMano ? 20 : 20 - cruza * 5} cI={enMano ? 10 : 10 - cruza * 115}
+                          manoD={enMano ? <EspadaMano a={bDa + cDa} gira={clava * 180} /> : undefined} />
+                      </>
+                    );
+                  })()}
                   <Corona x={ax} y={990 - 480 * 1.02} s={0.48} t={t} t0={788.5} />
                   {/* juncos delante que se mecen al pasar */}
                   <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>{Array.from({ length: 22 }, (_, i) => { const bx = i * 92 + 20; const k = Math.max(0, 1 - Math.abs(bx - ax) / 160); return <path key={i} d={`M ${bx} 1080 q ${6 + k * 30} -110 ${14 + k * 60} -${180 + (i % 3) * 30}`} stroke="#3e5e30" strokeWidth={10} fill="none" strokeLinecap="round" />; })}</svg>
@@ -168,18 +205,21 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         <AbsoluteFill style={{ background: "linear-gradient(180deg, #6ab8e8, #d8f0f8 60%)" }} />
         <Rayos t={t} x={1700} y={120} color="#fff8d0" op={0.25} />
         <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><circle cx={1700} cy={120} r={90} fill="#ffe28a" /><path d="M 0 760 Q 960 700 1920 760 L 1920 1080 L 0 1080 Z" fill="#6aaa4a" /></svg>
+        {/* OPEN BATTLE: los dos ejércitos corren uno hacia el otro (±250 px en ~1,2 s), chocan (797,9) y los vikingos dan media vuelta */}
         {Array.from({ length: 9 }, (_, i) => {
-          const x = interpolate(t, [796.6, 799.6], [200 + i * 80, 700 + i * 80], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-          return <Persona key={i} x={x} y={920 + (i % 2) * 40} h={i === 4 ? 340 : 260} t={t} seed={800 + i} ropa={i === 4 ? ALFRED : SAJON} casco={i === 4 ? "no" : "saxon"} expr="enojado" habla={i === 4 && t > 793.8 && t < 796.6} salta={t < 796.6 ? Math.max(0, Math.sin(t * 7 + i)) * 14 : 0} camina={t > 796.6 ? 1.8 : 0} bD={i === 4 && t < 796.6 ? 30 + prog(t, 793.6, 794.2) * 120 : 30} cD={20} manoD={<LanzaMano a={50} inclina={-14} largo={360} />} />;
+          const x = 200 + i * 80 + prog(t, 796.6, 797.9) * 250 + prog(t, 798.1, 800.0) * 160;
+          const corre = (t > 796.6 && t < 797.9) || (t > 798.1 && t < 800);
+          return <Persona key={i} x={x} y={920 + (i % 2) * 40} h={i === 4 ? 340 : 260} t={t} seed={800 + i} ropa={i === 4 ? ALFRED : SAJON} casco={i === 4 ? "no" : "saxon"} expr="enojado" habla={i === 4 && t > 793.8 && t < 796.6} salta={t < 796.6 ? Math.max(0, Math.sin(t * 7 + i)) * 14 : t > 797.9 && t < 798.1 ? 20 : 0} camina={corre ? 1.8 : 0} inclina={t > 796.6 && t < 797.9 ? 8 : 0} bD={i === 4 && t < 796.6 ? 30 + prog(t, 793.6, 794.2) * 120 : t > 797.8 && t < 798.2 ? 110 : 30} cD={20} manoD={<LanzaMano a={50} inclina={-14} largo={360} />} />;
         })}
-        <Corona x={interpolate(t, [796.6, 799.6], [520, 1020], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={920 - 340 * 1.02} s={0.36} t={t} t0={791.6} />
-        {Array.from({ length: 6 }, (_, i) => { const x = 1150 + i * 95 + Math.max(0, t - 798) * 260; return <Persona key={i} x={x} y={920 + (i % 2) * 30} h={250} t={t} seed={820 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr={t > 798 ? "miedo" : "enojado"} flip={t < 798} camina={t > 798 ? 2.2 : 0} salta={t < 798 ? Math.max(0, Math.sin(t * 6 + i * 1.7)) * 12 : 0} bD={t < 798 ? 120 + Math.sin(t * 6 + i) * 25 : 160} cD={20} />; })}
+        <Corona x={200 + 4 * 80 + prog(t, 796.6, 797.9) * 250 + prog(t, 798.1, 800.0) * 160} y={920 - 340 * 1.02} s={0.36} t={t} t0={791.6} />
+        {Array.from({ length: 6 }, (_, i) => { const huye = t > 798.0; const x = 1250 + i * 80 - prog(t, 796.6, 797.9) * 250 + prog(t, 798.1, 800.0) * 220; return <Persona key={i} x={x} y={920 + (i % 2) * 30} h={250} t={t} seed={820 + i} ropa={VIK(i)} casco="vikingo" barba={barbaDe(i)} expr={huye ? "miedo" : "enojado"} flip={!huye} mira={huye ? -0.6 : 0} camina={(t > 796.6 && t < 797.9) || huye ? 2.0 : 0} inclina={t > 796.6 && t < 797.9 ? 8 : 0} salta={t < 796.6 ? Math.max(0, Math.sin(t * 6 + i * 1.7)) * 12 : t > 797.9 && t < 798.15 ? 26 : 0} bD={t < 798 ? 120 + Math.sin(t * 6 + i) * 25 : 160} cD={20} />; })}
+        {t > 797.9 && t < 798.6 && [0, 1, 2].map((i) => <Emote key={i} t={t} t0={797.95 + i * 0.08} t1={798.6} tipo="excl" x={1000 + i * 120 - 160} y={560} s={0.5} />)}
         {t > 797.6 && t < 799.4 && <Particulas t={t} tipo="polvo" n={40} seed={8} />}
         <Flash t={t} t0={797.9} dur={0.15} color="#fff3c4" />
         <Ch t={t} t0={791.7} t1={793.5} text="A FEW MONTHS LATER · A NEW ARMY" color={C.violeta} x={960} y={150} centro size={56} />
-        <G t={t} t0={793.6} text="MAY 878 · EDINGTON" y={180} size={110} color={C.crema} />
-        <Ch t={t} t0={796.6} text="OPEN BATTLE" color={C.rojo} x={960} y={320} centro size={56} />
-        <Sello t={t} t0={798.2} text="IN DAYLIGHT" x={1300} y={460} size={84} color={C.ambar} rot={-8} />
+        <G t={t} t0={793.6} t1={798.1} text="MAY 878 · EDINGTON" y={180} size={110} color={C.crema} />
+        <Ch t={t} t0={796.6} text="OPEN BATTLE" color={C.rojo} x={960} y={350} centro size={56} />
+        <Sello t={t} t0={798.2} text="IN DAYLIGHT" x={1100} y={160} size={84} color={C.ambar} rot={-8} />
       </Escena>
       {/* 2 · se meten en su campamento fortificado · Alfredo no lo asalta, no espera la noche: se sienta frente a la puerta 14 días */}
       <Escena t={t} t0={800.02} t1={815.49} entra="iris" ix={960} iy={640} golpes={[805.5, 806.8, 808.5, 812.6, 813.9]}>
@@ -276,7 +316,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         <G t={t} t0={831.3} text="HE LET IT GET HUNGRY" y={240} size={120} color={C.ambar} />
       </Escena>
       {/* 5 · el otro método, más rápido: les pagaban · 845, la flota sube el Sena hasta París, Carlos el Calvo paga 7.000 libras de plata */}
-      <Escena t={t} t0={832.49} t1={841.5} zoom={0} entra="zoom" golpes={[836.5, 838.6]}>
+      <Escena t={t} t0={832.49} t1={841.5} zoom={0} entra="barrido" banda={C.ambar} golpes={[836.5, 838.6]}>
         <MapaN t={t} cam={[[832.49, 900, 700, 1.1], [838.0, 820, 950, 2.6], [841.5, 858, 978, 3.6]]} desde="NORWAY"
           pulsa={[{ n: "PARIS", t0: 839.6, color: C.ambar, label: "PARIS", lado: "der" }]}
           rutas={[{ de: "DENMARK", a: "SEINE", t0: 837.6, color: C.rojo, curva: 60, dur: 1.0, ancho: 12 }, { de: "SEINE", a: "PARIS", t0: 838.6, color: C.rojo, curva: 20, dur: 0.9, ancho: 12 }]}>
@@ -288,15 +328,24 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         </MapaN>
         {/* jefe vikingo que estira la mano (izq) y Carlos que le tira bolsas de plata (der) */}
         {(() => {
-          const ej = interpolate(t, [833.0, 834.0], [1260, 1040], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-          const ec = interpolate(t, [835.6, 836.6], [1260, 1040], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          const ej = 1020, ec = 1020; // enteros desde el primer cuadro (pies en y≈1020)
+          // la bolsa de plata vuela de la mano de Carlos a la del vikingo en 0,8 s con arco (dos veces)
+          const vuelos = [836.6, 837.7].map((t0) => ({ t0, u: prog(t, t0, t0 + 0.8) }));
+          const tieneBolsas = vuelos.filter((v) => v.u >= 1).length;
           const tira = t > 836.5 && t < 838.6 ? (Math.sin((t - 836.5) * 9) + 1) / 2 : 0;
           return (
             <>
-              <Persona x={260} y={ej} h={400} t={t} seed={881} ropa={VIK(1)} casco="vikingo" barba={barbaDe(1)} expr={t > 836.6 ? "feliz" : "orgullo"} mira={0.6}
-                bD={t > 834.4 ? 95 : 30} cD={t > 834.4 ? 10 + Math.sin(t * 6) * 10 : 20} habla={t > 834.4 && t < 836.4} />
+              <Persona x={260} y={ej} h={400} t={t} seed={881} ropa={VIK(1)} casco="vikingo" barba={barbaDe(1)} expr={tieneBolsas ? "feliz" : "orgullo"} mira={0.6}
+                salta={vuelos.some((v) => t > v.t0 + 0.8 && t < v.t0 + 1.1) ? 22 : 0}
+                bD={t > 834.4 ? 95 : 30} cD={t > 834.4 ? 10 + Math.sin(t * 6) * 10 : 20} habla={t > 834.4 && t < 836.4}
+                manoD={tieneBolsas ? <g><path d="M -26 -6 Q -34 30 0 34 Q 34 30 26 -6 Q 12 -16 0 -16 Q -12 -16 -26 -6 Z" fill="#d8dce8" stroke="#2a1530" strokeWidth={5} /><text x={0} y={22} textAnchor="middle" fontFamily="Fredoka" fontWeight={700} fontSize={24} fill="#2a1530">{tieneBolsas > 1 ? "$$" : "$"}</text></g> : undefined} />
+              {vuelos.map((v, i) => v.u > 0 && v.u < 1 ? (
+                <svg key={i} style={{ position: "absolute", left: 1550 + (330 - 1550) * v.u - 50, top: 800 - Math.sin(v.u * Math.PI) * 300 - 50, overflow: "visible", transform: `rotate(${-v.u * 540}deg)` }} width={100} height={100} viewBox="-50 -50 100 100">
+                  <path d="M -36 -8 Q -46 40 0 46 Q 46 40 36 -8 Q 16 -22 0 -22 Q -16 -22 -36 -8 Z" fill="#d8dce8" stroke="#2a1530" strokeWidth={6} />
+                  <path d="M -16 -22 L -8 -38 L 8 -38 L 16 -22" fill="#d8dce8" stroke="#2a1530" strokeWidth={6} /><text x={0} y={28} textAnchor="middle" fontFamily="Fredoka" fontWeight={700} fontSize={30} fill="#2a1530">$</text>
+                </svg>) : null)}
               <Persona x={1660} y={ec} h={420} t={t} seed={860} ropa={CARLOS} viejo barba="#8a6a4a" flip expr={t > 836.5 ? "miedo" : "neutro"} mira={-0.6}
-                bD={60 + tira * 90} cD={20 + tira * 50} manoD={t > 836.5 && t < 838.6 ? <g><path d="M -16 -4 Q -20 24 0 26 Q 20 24 16 -4 Z" fill="#d8dce8" stroke="#2a1530" strokeWidth={4} /></g> : undefined} />
+                bD={60 + tira * 90} cD={20 + tira * 50} manoD={(t > 836.0 && t < 836.6) || (t > 837.1 && t < 837.7) ? <g><path d="M -26 -6 Q -34 30 0 34 Q 34 30 26 -6 Q 12 -16 0 -16 Q -12 -16 -26 -6 Z" fill="#d8dce8" stroke="#2a1530" strokeWidth={5} /></g> : undefined} />
               <Corona x={1660} y={ec - 420 * 1.02} s={0.42} t={t} />
               {t > 834.4 && <Emote t={t} t0={836.7} tipo="brillos" x={140} y={700} s={0.7} />}
               {t > 836.5 && <Emote t={t} t0={836.6} tipo="sudor" x={1520} y={700} s={0.7} />}
@@ -397,7 +446,7 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         ); })()}
         <G t={t} t0={871.5} text="AND REPTON?" y={200} size={130} color={C.crema} />
         <Ch t={t} t0={872.4} text="THE GREAT ARMY LEFT IN THE SPRING…" color={C.violeta} x={960} y={340} centro size={52} />
-        <Sello t={t} t0={874.2} text="NOT ALL OF IT" x={1300} y={500} size={80} rot={-6} />
+        <Sello t={t} t0={874.2} text="NOT ALL OF IT" x={560} y={930} size={80} rot={-8} />
       </Escena>
       {/* 9 · junto a la iglesia: un guerrero con su espada, un martillo de Thor y un colmillo de jabalí · y 264+ huesos apilados */}
       <Escena t={t} t0={875.47} t1={896.4} entra="iris" ix={960} iy={700} golpes={[877.8, 880.6, 882.4, 884.2, 885.8, 889.2, 892.7]}>
@@ -441,19 +490,22 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
                 </>
               );
             })()}
-            <Ch t={t} t0={875.7} t1={877.7} text="RIGHT NEXT TO THE CHURCH" color={C.violeta} x={960} y={150} centro size={56} />
-            <Ch t={t} t0={877.8} text="A VIKING WARRIOR" color={C.rojo} x={960} y={150} centro size={56} />
+            <Ch t={t} t0={875.7} t1={877.7} text="RIGHT NEXT TO THE CHURCH" color={C.violeta} x={820} y={150} centro size={56} />
+            <Ch t={t} t0={877.8} text="A VIKING WARRIOR" color={C.rojo} x={820} y={150} centro size={56} />
             <Ch t={t} t0={880.6} text="HIS SWORD" color={C.teal} tinta={C.noche} x={1000} y={930} centro size={48} />
             <Ch t={t} t0={882.4} text="THOR'S HAMMER" color={C.ambar} tinta={C.noche} x={690} y={450} centro size={48} />
             <Ch t={t} t0={884.2} text="A WILD BOAR'S TUSK" color={C.teal} tinta={C.noche} x={1220} y={450} centro size={48} />
           </>
         ) : (
           <>
+            {/* el osario entra con un barrido de 0,3 s desde abajo (sin hueco negro) */}
+            <div style={{ position: "absolute", left: 0, top: 0, transform: `translateY(${(1 - ent(t, 885.7, 0, { damping: 14, stiffness: 260 })) * 700}px)` }}>
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><rect x={460} y={420} width={1000} height={520} fill="#a8a8b8" stroke="#2a1530" strokeWidth={10} /><rect x={500} y={460} width={920} height={440} fill="#3a2a2a" /></svg>
-            {Array.from({ length: 24 }, (_, i) => <Craneo key={i} x={560 + (i % 8) * 115} y={850 - Math.floor(i / 8) * 95} s={0.42} t={t} t0={886.0 + i * 0.05} />)}
+            {Array.from({ length: 24 }, (_, i) => <Craneo key={i} x={560 + (i % 8) * 115} y={850 - Math.floor(i / 8) * 95} s={0.42} t={t} t0={885.4 + i * 0.04} />)}
+            </div>
             {/* la arqueóloga entra con un farol, cuenta los cráneos y retrocede */}
             {(() => {
-              const x = interpolate(t, [885.8, 887.6, 892.6, 894.2], [1960, 1660, 1660, 1760], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+              const x = interpolate(t, [885.8, 887.6, 892.6, 894.2], [1960, 1660, 1660, 1600], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
               const cuenta = t > 889.2 && t < 892.6;
               return (
                 <>
@@ -506,7 +558,16 @@ export const P8: React.FC<{ t: number }> = ({ t }) => {
         )}
         <Ch t={t} t0={913.4} t1={916.6} text="MORE TRAPS ARE COMING" color={C.ambar} tinta={C.noche} x={960} y={560} centro size={62} />
         <AbsoluteFill style={{ opacity: ent(t, 911.0) }}>
-          <Persona x={1540} y={1180} h={760} t={t} seed={3} ropa={SAJON} expr={t > 916.8 ? "sorpresa" : "feliz"} mira={-0.3} bD={t > 916.8 ? 130 + Math.sin(t * 4) * 10 : 30 + Math.sin(t * 6) * 20} cD={t > 916.8 ? 20 : 30} habla />
+          {(() => {
+            // pulgar arriba con SUBSCRIBE (911,6-913,3), saluda con la campanita, y en la pregunta señala la lista
+            const pulgar = t > 911.7 && t < 913.3, pre = t > 916.8;
+            const bDv = pulgar ? 70 : pre ? 120 + Math.sin(t * 4) * 8 : 30 + Math.sin(t * 6) * 20, cDv = pulgar ? 95 : pre ? 10 : 30;
+            return (
+              <Persona x={1500} y={1050} h={600} t={t} seed={3} ropa={SAJON} expr={pre ? "sorpresa" : "feliz"} mira={-0.3} habla
+                salta={t > 911.7 && t < 912.0 ? 18 : 0} bD={bDv} cD={cDv} bI={pre ? 20 : 25} cI={pre ? 10 : 20}
+                manoD={pulgar ? <g transform={`rotate(${bDv + cDv}) scale(1.5)`}><rect x={-20} y={-18} width={40} height={36} rx={10} fill="#f2c4a0" stroke="#2a1530" strokeWidth={5} /><rect x={-8} y={-52} width={16} height={38} rx={8} fill="#f2c4a0" stroke="#2a1530" strokeWidth={5} /></g> : undefined} />
+            );
+          })()}
         </AbsoluteFill>
         {t > 916.75 && (
           <>

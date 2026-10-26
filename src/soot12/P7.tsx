@@ -12,7 +12,7 @@ import { Craneo } from "./kit2";
 // Bricio (1002), Oxford, la fosa de 30+ jóvenes, Gunnhild, Sven Barba de Horquilla rey de Inglaterra (1013) y la fosa de Dorset.
 export const CAM7: Key[] = [
   [667.71, 5000, 720, 1.0], [670.47, 4900, 700, 0.9], [673.83, 5200, 700, 0.75], [680.2, 5400, 700, 0.8],
-  [681.51, 6800, 640, 0.42], [685.87, 7600, 640, 0.36],
+  [681.51, 5750, 610, 0.8], [685.87, 5820, 590, 0.84],
   [758.64, 5200, 640, 0.5], [762.02, 5300, 680, 0.6],
 ];
 const VERDE = { tunica: "#4f8a5a", tunica2: "#2f5e3a", cinto: "#5a3418", piel: "#f2b48a", piel2: "#d98d66", pelo: "#a8552a" };
@@ -61,7 +61,15 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
               manoD={<LanzaMano a={alto ? 10 : 50} inclina={-14} largo={400} />} />;
           })}
           {/* los vikingos se despiertan y se estiran */}
-          {t > 681.6 && [[4700, 0], [5450, 1], [6200, 2], [6900, 3]].map(([x, k]) => <Persona key={"v" + k} x={x} y={862} h={260} t={t} seed={710 + k} ropa={VIK(k)} barba={barbaDe(k)} casco="vikingo" aparece={681.7 + k * 0.15} expr={t > 683.0 ? "enojado" : "dormido"} bD={t < 683.0 ? 165 : 40} cD={t < 683.0 ? 20 : 30} bI={t < 683.0 ? 165 : 40} cI={t < 683.0 ? 20 : 30} manoD={t > 683.0 ? <LanzaMano a={50} inclina={-14} largo={400} /> : undefined} />)}
+          {t > 681.6 && [4890, 5150, 5670, 5930, 6450, 6710].map((x, k) => {
+            // se levantan, se estiran con los brazos arriba y bostezan; al rato se dan vuelta enojados con la lanza
+            const t0 = 681.65 + k * 0.12;
+            const est = t < 683.4 + k * 0.1;
+            const ola = Math.sin((t - t0) * 3 + k);
+            return <Persona key={"v" + k} x={x} y={884} h={290} t={t} seed={710 + k} ropa={VIK(k)} barba={barbaDe(k)} casco="vikingo" aparece={t0} flip={k % 2 === 1}
+              expr={est ? (ola > 0.2 ? "dormido" : "sorpresa") : "enojado"} inclina={est ? -8 + ola * 8 : 6} ladea={est ? ola * 10 : 0} mira={est ? 0 : -0.8}
+              bD={est ? 165 + ola * 12 : 60} cD={est ? 15 : 30} bI={est ? 165 - ola * 12 : 40} cI={est ? 15 : 30} manoD={!est ? <LanzaMano a={50} inclina={-14} largo={400} /> : undefined} />;
+          })}
         </Mundo>
         {t > 680.2 && t < 681.5 && <Particulas t={t} tipo="destellos" n={60} seed={7} />}
         <CartelP t={t} t0={667.8} t1={670.4} n={7} nombre="THE MORNING AFTER" />
@@ -223,18 +231,18 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
       </Escena>
       {/* 6 · Sven Barba de Horquilla: diez años saqueando Inglaterra · 1013: Etelredo huye, Sven es rey de Inglaterra */}
       <Escena t={t} t0={741.38} t1={754.59} zoom={0} entra="zoom" golpes={[741.6, 747.7, 751.4]}>
-        <MapaN t={t} cam={[[741.38, 900, 560, 1.0], [754.5, 820, 620, 1.3]]} desde="NORWAY"
+        <MapaN t={t} cam={[[741.38, 640, 540, 1.0], [754.5, 700, 600, 1.15]]} desde="NORWAY"
           zona={[{ n: "ENGLAND", t0: 751.4, r: 160, color: C.rojo }]}
           rutas={Array.from({ length: 10 }, (_, i) => ({ de: "DENMARK", a: ["ENGLAND", "EASTANGLIA", "WINCHESTER", "OXFORD", "THANET"][i % 5], t0: 742.4 + i * 0.5, color: C.rojo, curva: 40 + (i % 3) * 40, dur: 0.5, ancho: 8 }))}>
           {(() => { const a = lugarN("DENMARK"), b = lugarN("THANET"); const u = prog(t, 742.4, 747.4); return <div style={{ position: "absolute", left: a.x + (b.x - a.x) * u, top: a.y + (b.y - a.y) * u, transform: `translate(-50%,-50%) scale(0.09)` }}><Drakkar x={0} y={0} s={1} t={t} vela={1} remos={1} /></div>; })()}
-          {t > 747.7 && (() => { const a = lugarN("WINCHESTER"), b = lugarN("PARIS"); const u = prog(t, 747.7, 750.8); return <div style={{ position: "absolute", left: a.x + (b.x - a.x) * u, top: a.y + (b.y - a.y) * u, transform: `translate(-50%,-50%) scale(0.1)` }}>
+          {t > 747.7 && (() => { const a = lugarN("WINCHESTER"), b0 = lugarN("PARIS"); const b = { x: a.x + (b0.x - a.x) * 0.6, y: a.y + (b0.y - a.y) * 0.55 }; const u = prog(t, 747.7, 750.8); return <div style={{ position: "absolute", left: a.x + (b.x - a.x) * u, top: a.y + (b.y - a.y) * u, transform: `translate(-50%,-50%) scale(0.1)` }}>
             <Persona x={-60} y={60} h={520} t={t} seed={721} ropa={ETHELRED} corona expr="miedo" mira={-0.9} bD={150} cD={60} bI={150} cI={60} />
             <Drakkar x={0} y={0} s={1} t={t} vela={0} remos={3} escudos={false} />
           </div>; })()}
         </MapaN>
         <div style={{ position: "absolute", left: 0, top: 0 }}>
           {(() => {
-            const Y = 990, H = 500, X = 1520;
+            const Y = 990, H = 500, X = 1660;
             const rey = t > 751.4;
             const senala = t > 742.4 && t < 751.4;
             return <>
@@ -246,11 +254,11 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
             </>;
           })()}
         </div>
-        <Ch t={t} t0={741.6} text="SWEIN FORKBEARD · KING OF DENMARK" color={C.rojo} x={110} y={150} size={50} />
-        <G t={t} t0={742.4} text={String(Math.round(interpolate(t, [742.4, 747.4], [1003, 1013], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })))} x={360} y={320} size={150} color={C.ambar} />
-        <Ch t={t} t0={743.2} t1={747.6} text="RAIDING ENGLAND · AGAIN AND AGAIN" color={C.violeta} x={110} y={450} size={40} />
-        <Ch t={t} t0={747.7} text="ÆTHELRED FLEES THE COUNTRY" color={C.teal} tinta={C.noche} x={110} y={450} size={40} />
-        <G t={t} t0={751.4} text="KING OF ENGLAND" x={620} y={940} size={100} color={C.crema} />
+        <Ch t={t} t0={741.6} text="SWEIN FORKBEARD · KING OF DENMARK" color={C.rojo} x={110} y={120} size={48} />
+        <G t={t} t0={742.4} text={String(Math.round(interpolate(t, [742.4, 747.4], [1003, 1013], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })))} x={330} y={270} size={130} color={C.ambar} />
+        <Ch t={t} t0={743.2} t1={747.6} text="RAIDING ENGLAND · AGAIN AND AGAIN" color={C.violeta} x={110} y={370} size={40} />
+        <Ch t={t} t0={747.7} text="ÆTHELRED FLEES THE COUNTRY" color={C.teal} tinta={C.noche} x={110} y={370} size={40} />
+        <G t={t} t0={751.4} text="KING OF ENGLAND" x={520} y={950} size={96} color={C.crema} />
       </Escena>
       {/* 7 · eso compró un ataque sorpresa exitoso: no paz, un rey danés */}
       <Escena t={t} t0={754.59} t1={762.49} entra="diag" golpes={[758.7, 760.2]}>
@@ -326,7 +334,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => {
         <Ch t={t} t0={764.9} t1={770.8} text="DORSET · 2009 · ROAD BUILDERS" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={52} />
         {t < 770.8 && <Cuenta t={t} t0={767.0} de={0} a={50} dur={0.8} x={960} y={290} size={140} color={C.crema} prefijo="~" />}
         <Ch t={t} t0={768.2} t1={770.8} text="YOUNG SCANDINAVIAN MEN" color={C.teal} tinta={C.noche} x={960} y={420} centro size={50} />
-        <Sello t={t} t0={770.9} t1={774.0} text="ALL BEHEADED" x={960} y={250} size={90} rot={-6} />
+        <Sello t={t} t0={770.9} t1={774.0} text="ALL BEHEADED" x={560} y={210} size={68} rot={-6} />
         {t > 774 && <AbsoluteFill style={{ background: `rgba(8,6,24,${prog(t, 774, 775) * 0.45})` }} />}
         <G t={t} t0={775.4} text="LOSING ≠ GOING HOME" y={170} size={110} color={C.crema} />
       </Escena>

@@ -18,12 +18,12 @@ export const CAM0: Key[] = [
   [10.26, 1400, 470, 2.1], [14.66, 1420, 470, 2.5],
   [28.7, 2050, 560, 1.25], [31.26, 2700, 690, 1.35],
   [36.66, 4150, 740, 1.15], [38.0, 4250, 770, 1.55], [39.0, 4330, 780, 2.3],
-  [39.01, 1480, 470, 2.2], [40.94, 1500, 430, 2.7], [41.25, 1500, 430, 2.7], [42.5, 5575, -260, 0.17], [49.14, 5575, -260, 0.168], [50.7, 5575, -260, 0.172], [51.56, 1300, 450, 0.9],
+  [39.01, 1480, 470, 2.2], [40.94, 1500, 430, 2.7], [40.941, 1420, 500, 1.55], [41.25, 1420, 500, 1.55], [42.5, 5575, -260, 0.17], [49.14, 5575, -260, 0.168], [50.7, 5575, -260, 0.172], [51.56, 1300, 450, 0.9],
 ];
 export const camYo = { x: 1480, y: 0 };
 
 type YoP = { t: number; expr?: "miedo" | "feliz" | "sorpresa" | "enojado" | "orgullo" | "neutro"; sube?: number; aparece?: number; tendido?: boolean; lanza?: number; dosManos?: boolean;
-  cod?: number; trago?: number; pasa?: number; senala?: number };
+  cod?: number; trago?: number; pasa?: number; senala?: number; hombro?: number };
 const CL = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
 // lanza suelta (mismo dibujo que la del Tendido) en coords de mundo: (x, y) = mentón de quien la tiene, S = h/560
 const LanzaSuelta: React.FC<{ x: number; y: number; S: number; rot?: number }> = ({ x, y, S, rot = -3 }) => (
@@ -34,7 +34,7 @@ const LanzaSuelta: React.FC<{ x: number; y: number; S: number; rot?: number }> =
     </g>
   </svg>
 );
-const YoHill: React.FC<YoP> = ({ t, expr = "miedo", sube = 0, aparece, tendido, lanza = 1, dosManos, cod = 0, trago = 0, pasa, senala = 0 }) => {
+const YoHill: React.FC<YoP> = ({ t, expr = "miedo", sube = 0, aparece, tendido, lanza = 1, dosManos, cod = 0, trago = 0, pasa, senala = 0, hombro = 0 }) => {
   const y = gy(1480) + 40 - sube;
   if (tendido) {
     // boca abajo en el pasto mojado: sólo asoman las cabezas; tu señor (al lado) te da un codazo y te pasa la lanza nueva
@@ -51,8 +51,8 @@ const YoHill: React.FC<YoP> = ({ t, expr = "miedo", sube = 0, aparece, tendido, 
   }
   return (
     <>
-      <Persona x={1480} y={y} h={330} t={t} seed={3} ropa={SAJON} expr={expr} bD={dosManos ? 70 : 30} cD={dosManos ? 70 : 20} bI={dosManos ? 40 : undefined} cI={dosManos ? 80 : undefined} mira={senala > 0.5 ? 0.6 : -0.3} aparece={aparece} manoD={<LanzaMano a={dosManos ? 10 : 50} inclina={-14} />} />
-      <Persona x={1290} y={gy(1290) + 36} h={360} t={t} seed={9} ropa={SENOR} barba="#3a2418" expr={t > 10.2 && t < 14.7 ? "feliz" : "neutro"} inclina={t > 10.2 && t < 14.7 ? 12 : 0} habla={(t > 10.6 && t < 14.4) || (senala > 0 && senala < 1)} mira={0.8} bD={senala > 0 ? 8 + 82 * senala : undefined} cD={senala > 0 ? 10 * (1 - senala) : undefined} />
+      <Persona x={1480} y={y} h={330} t={t} seed={3} ropa={SAJON} expr={expr} bD={dosManos ? 70 : 30} cD={dosManos ? 70 : 20} bI={dosManos ? 40 : undefined} cI={dosManos ? 80 : undefined} mira={senala > 0.5 ? 0.6 : hombro > 0.5 ? -0.8 : -0.3} aparece={aparece} manoD={<LanzaMano a={dosManos ? 10 : 50} inclina={-14} />} />
+      <Persona x={1290} y={gy(1290) + 36} h={360} t={t} seed={9} ropa={SENOR} barba="#3a2418" expr={t > 10.2 && t < 14.7 ? "feliz" : "neutro"} inclina={t > 10.2 && t < 14.7 ? 12 : 0} habla={(t > 10.6 && t < 14.4) || (senala > 0 && senala < 1)} mira={0.8} bD={senala > 0 ? 8 + 82 * senala : hombro > 0 ? 8 + 52 * hombro : undefined} cD={senala > 0 ? 10 * (1 - senala) : hombro > 0 ? 10 - 40 * hombro : undefined} />
       {/* los 200 hombres: cabezas oscuras entre el pasto */}
       {Array.from({ length: 16 }, (_, i) => <Persona key={i} x={1180 - i * 70} y={gy(1180 - i * 70) + 60} h={240 - (i % 3) * 20} t={t} seed={20 + i} ropa={CIVIL(i)} sombra="#101a2e" />)}
     </>
@@ -110,31 +110,43 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       {/* 4 · «Está equivocado»: un ojo vikingo se abre en la oscuridad (golpe de zoom, sin flash) */}
       <Escena t={t} t0={14.66} t1={15.82} zoom={0.12} entra="corte" fondo="#12081e">
         <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 55%, #3a1430, #0a0414 75%)" }} />
-        <AbsoluteFill style={{ transformOrigin: "960px 540px", transform: `scale(${1 + 0.15 * prog(t, 15.05, 15.05 + 4 / 30)})` }}>
-          <Persona x={960} y={3140} h={3000} t={t} seed={204} ropa={VIK(4)} casco="vikingo" barba={barbaDe(4)} expr={t < 15.05 ? "dormido" : "enojado"} mira={-0.6} />
+        {/* primer plano BAJADO: el borde del casco queda en y≈310 aun con el golpe de zoom (origen en los ojos) */}
+        <AbsoluteFill style={{ transformOrigin: "960px 860px", transform: `scale(${1 + 0.12 * prog(t, 15.05, 15.05 + 4 / 30)})` }}>
+          <Persona x={960} y={2048} h={1540} t={t} seed={204} ropa={VIK(4)} casco="vikingo" barba={barbaDe(4)} expr={t < 15.05 ? "dormido" : "enojado"} mira={-0.6} />
         </AbsoluteFill>
-        <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 250, background: "linear-gradient(180deg, #0a0414 80%, rgba(10,4,20,0))" }} />
-        <G t={t} t0={15.05} text="HE IS WRONG." y={95} size={110} color={C.rojo} borde="#12081e" />
+        <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 230, background: "linear-gradient(180deg, #0a0414 75%, rgba(10,4,20,0))" }} />
+        <Emote t={t} t0={15.1} tipo="enojo" x={1380} y={760} s={1.3} />
+        <G t={t} t0={15.05} text="HE IS WRONG." y={120} size={110} color={C.rojo} borde="#12081e" />
       </Escena>
       {/* 5 · el rey más listo de Inglaterra (silueta): llega, piensa con la mano en el mentón, se cruza de brazos y niega */}
       <Escena t={t} t0={15.82} t1={22.94} zoom={0} entra="iris" ix={960} iy={540} golpes={[20.6, 21.6]}>
         <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 60%, #ffcf5a, #c96a1e 45%, #3a1440 100%)" }} />
         <Rayos t={t} x={960} y={620} color="#fff3c4" op={0.18} />
         {(() => {
-          const hk = interpolate(t, [15.82, 17.6], [700, 880], { ...CL, easing: (u: number) => 1 - (1 - u) ** 3 });
-          const niega = t > 21.6 && t < 22.7 ? Math.sin((t - 21.6) * 15) * 11 : 0;
+          // llega en silueta (contraluz) y al pararse se revela con cara: piensa mirando el «?», cruza los brazos, niega con NOT ONCE
+          const hk = interpolate(t, [15.82, 17.6], [560, 700], { ...CL, easing: (u: number) => 1 - (1 - u) ** 3 });
+          const niega = t > 21.6 && t < 22.2 ? Math.sin(((t - 21.6) / 0.3) * Math.PI * 2) * 10 : 0;
           const piensa = t > 17.6 && t < 20.55;
-          const cruza = t >= 20.55;
-          const yk = 1380;
+          const cruza = ent(t, 20.55, 0, { damping: 12, stiffness: 200 });
+          const yk = 1010;
+          const rev = prog(t, 17.3, 17.9);
+          const S = hk / 560;
+          const cae = ent(t, 16.6);
+          const brazos = {
+            bD: piensa ? 35 : 8 + (15 - 8) * cruza, cD: piensa ? -181 : 10 + (-122 - 10) * cruza,
+            bI: piensa ? 15 : 8 + (15 - 8) * cruza, cI: piensa ? -122 : 10 + (-122 - 10) * cruza,
+          };
+          const comun = { x: 960, y: yk, h: hk, t, seed: 60, camina: t < 17.6 ? 1.3 : 0, ladea: niega + (piensa ? 7 : 0), corona: t > 17.25, ...brazos };
+          const REY = { tunica: "#7a2f9a", tunica2: "#4a1a66", cinto: "#e8b84a", piel: "#e8a880", piel2: "#c98864", pelo: "#a8642a" };
           return (<>
-            <Persona x={960} y={yk} h={hk} t={t} seed={60} ropa={SENOR} sombra="#2a1230" camina={t < 17.6 ? 1.3 : 0} ladea={niega + (piensa ? 6 : 0)}
-              bD={cruza ? 42 : piensa ? 22 : 8} cD={cruza ? -105 : piensa ? -150 : 10} bI={cruza ? 42 : 8} cI={cruza ? -105 : 10} />
-            <Corona x={960 + niega * 2.2} y={interpolate(ent(t, 16.6), [0, 1], [-200, yk - hk * 1.09])} s={1.3 * hk / 900} t={t} />
+            <Persona {...comun} ropa={REY} barba="#a8642a" expr={t > 21.6 ? "enojado" : piensa ? "neutro" : "orgullo"} mira={piensa ? 0.7 : t > 21.6 ? Math.sin((t - 21.6) * 21) * 0.8 : 0} miraY={piensa ? -0.4 : 0} habla={t > 21.55 && t < 22.3} opacity={rev} />
+            {rev < 1 && <Persona {...comun} ropa={REY} sombra="#2a1230" opacity={1 - rev} />}
+            {t <= 17.25 && <Corona x={960} y={interpolate(cae, [0, 1], [-200, yk - 585 * S])} s={0.76 * S} t={t} />}
           </>);
         })()}
         <G t={t} t0={17.3} t1={20.4} text="?" x={1430} y={560} size={240} color={C.crema} />
-        <Ch t={t} t0={17.3} text="THE SMARTEST KING" color={C.violeta} x={960} y={110} centro size={66} />
-        <Ch t={t} t0={18.4} text="VIKING AGE ENGLAND" color={C.teal} tinta={C.noche} x={960} y={240} centro size={44} />
+        <Ch t={t} t0={17.3} text="THE SMARTEST KING" color={C.violeta} x={430} y={190} centro size={62} />
+        <Ch t={t} t0={18.4} text="VIKING AGE ENGLAND" color={C.teal} tinta={C.noche} x={430} y={300} centro size={44} />
         <Sello t={t} t0={20.6} text="NEVER TRIED THIS" x={430} y={820} size={58} color="#5a0a24" rot={-8} />
         <Sello t={t} t0={21.6} text="NOT ONCE" x={1480} y={700} size={68} color="#2a0a30" rot={8} />
       </Escena>
@@ -262,8 +274,8 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
           </svg>
         ))}
         {t > 38.45 && <div style={{ position: "absolute", left: 1380, top: 330, transform: `translate(-50%,-50%) scale(${ent(t, 38.45)}) rotate(${Math.sin(t * 30) * 4}deg)`, fontFamily: "Fredoka", fontWeight: 700, fontSize: 70, color: C.rojo, WebkitTextStroke: "7px #12081e", paintOrder: "stroke fill" }}>GRRR…</div>}
-        <Ch t={t} t0={36.8} t1={37.8} text="SOUNDS EASY" color={C.lima} tinta={C.noche} x={200} y={130} size={64} />
-        <G t={t} t0={37.9} text="UNTIL YOU GET CLOSE" x={780} y={150} size={96} color={C.rojo} borde="#12081e" />
+        <Ch t={t} t0={36.8} t1={37.55} text="SOUNDS EASY" color={C.lima} tinta={C.noche} x={200} y={130} size={64} />
+        <G t={t} t0={37.9} text="UNTIL YOU GET CLOSE" x={660} y={140} size={82} color={C.rojo} borde="#12081e" />
       </Escena>
       {/* 11 · esta noche entrás vos */}
       <Escena t={t} t0={39.02} t1={40.94} zoom={0} entra="corte">
@@ -273,34 +285,34 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       </Escena>
       {/* 12 · el recorrido del ataque, de la loma al río: las 7 trampas, una por una, mientras caminás el camino */}
       <Escena t={t} t0={40.94} t1={51.56} zoom={0} entra="corte" golpes={[49.2]}>
-        <Mundo t={t} cam={cam} luna={[1720, 130, 64]} yo={<>{<YoHill t={t} expr="enojado" sube={60} dosManos />}{pasto}</>} />
+        <Mundo t={t} cam={cam} luna={[1720, 130, 64]} yo={<>{<YoHill t={t} expr="enojado" sube={60} dosManos hombro={interpolate(t, [40.94, 41.4, 42.1, 42.4], [0, 1, 1, 0], CL)} />}{pasto}</>} />
         {t > 42.3 && t < 50.8 && (() => {
           // camino en pantalla: 7 paradas parejas de x=200 a x=1720 sobre el campo de abajo
-          const N = 7, X0 = 180, X1 = 1720;
+          const N = 7, X0 = 290, X1 = 1630; // la Escena escala ×1,08: en pantalla el camino va de x≈160 a x≈1760
           const px = (i: number) => X0 + ((X1 - X0) * i) / (N - 1);
-          const py = (x: number) => 820 + Math.sin(x * 0.006) * 18;
+          const py = (x: number) => 795 + Math.sin(x * 0.006) * 18;
           const T0 = 42.6, T1 = 48.4; // el chico camina de la 1 a la 7
           const w = interpolate(t, [T0, T1], [0, 1], CL);
           const cx = X0 - 40 + (X1 - X0 + 40) * w;
           const op = interpolate(t, [42.3, 42.6, 50.5, 50.8], [0, 1, 1, 0], CL);
-          const pts = Array.from({ length: 61 }, (_, k) => { const x = X0 - 160 + (X1 - X0 + 260) * (k / 60); return `${k ? "L" : "M"} ${x} ${py(x)}`; }).join(" ");
+          const pts = Array.from({ length: 61 }, (_, k) => { const x = X0 - 70 + (X1 - X0 + 140) * (k / 60); return `${k ? "L" : "M"} ${x} ${py(x)}`; }).join(" ");
           const NOM = ["THE PLACE", "THE DITCH", "THE DOGS", "THE SLEEPERS", "THE SHIPS", "THE EXPERTS", "THE MORNING AFTER"];
           return <AbsoluteFill style={{ opacity: op }}>
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
               <path d={pts} stroke="rgba(10,6,30,.55)" strokeWidth={26} fill="none" strokeLinecap="round" />
               <path d={pts} stroke="#fff" strokeWidth={10} fill="none" strokeDasharray="34 22" strokeDashoffset={-t * 60} opacity={0.35} strokeLinecap="round" />
-              <path d={pts} stroke={C.ambar} strokeWidth={12} fill="none" strokeLinecap="round" pathLength={1000} strokeDasharray={`${Math.max(0, ((cx - (X0 - 160)) / (X1 - X0 + 260)) * 1000)} 2000`} />
+              <path d={pts} stroke={C.ambar} strokeWidth={12} fill="none" strokeLinecap="round" pathLength={1000} strokeDasharray={`${Math.max(0, ((cx - (X0 - 70)) / (X1 - X0 + 140)) * 1000)} 2000`} />
             </svg>
             {NOM.map((nm, i) => {
               const x = px(i), y = py(x);
               const tp = T0 + ((x - (X0 - 40)) / (X1 - X0 + 40)) * (T1 - T0);
               const on = t >= tp;
               const e = on ? ent(t, tp, 0, { damping: 9, stiffness: 220 }) : 0;
-              const fila = i % 2 === 0 ? 78 : 132;
+              const fila = i % 2 === 0 ? 84 : 150;
               const ult = i === N - 1;
               return <React.Fragment key={i}>
                 <div style={{ position: "absolute", left: x, top: y, width: 92, height: 92, transform: `translate(-50%,-50%) scale(${0.8 + 0.3 * e - (on ? 0.1 * Math.min(1, (t - tp) * 2) : 0)})`, borderRadius: 46, border: "8px solid #fff", boxSizing: "border-box", background: on ? (t >= 49.2 ? C.rojo : C.ambar) : "rgba(255,255,255,.18)", fontFamily: "Fredoka", fontWeight: 700, fontSize: 52, color: on ? C.noche : "rgba(255,255,255,.7)", display: "flex", alignItems: "center", justifyContent: "center", boxShadow: on ? `0 0 ${30 * e}px ${C.ambar}` : undefined }}>{i + 1}</div>
-                {on && <div style={{ position: "absolute", left: ult ? x + 46 : i === 0 ? x - 46 : x, top: y + fila, transform: `translate(${ult ? "-100%" : i === 0 ? "0%" : "-50%"},-50%) scale(${e})`, transformOrigin: ult ? "right center" : i === 0 ? "left center" : "center", fontFamily: "Fredoka", fontWeight: 700, fontSize: 38, color: "#fff", background: "rgba(27,18,64,.9)", padding: "4px 18px", borderRadius: 12, whiteSpace: "nowrap" }}>{nm}</div>}
+                {on && <div style={{ position: "absolute", left: ult ? x - 95 : i === 0 ? x - 46 : x, top: ult ? y - 92 : y + fila, transform: `translate(${ult ? "-100%" : i === 0 ? "0%" : "-50%"},calc(-50% + ${(1 - Math.min(1, e)) * 8}px))`, opacity: Math.min(1, e * 1.4), fontFamily: "Fredoka", fontWeight: 700, fontSize: 44, color: "#fff", background: "rgba(27,18,64,.92)", padding: "4px 20px", borderRadius: 12, whiteSpace: "nowrap" }}>{nm}</div>}
               </React.Fragment>;
             })}
             <Persona x={cx} y={py(cx) - 6} h={250} t={t} seed={3} ropa={SAJON} expr="enojado" camina={t < T1 ? 1.8 : 0} manoD={<LanzaMano a={40} largo={420} />} salta={t > T1 ? T1 + 0.05 : undefined} />
