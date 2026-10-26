@@ -187,7 +187,7 @@ export const P06Semana: React.FC = () => {
   return (
     <AbsoluteFill>
       <Pizarra><Participantes47 desde={6} apaga={k(31.5)} owen={k(30.1)} /></Pizarra>
-      <Mano texto="WEEK 3" x={960} y={170} desde={0} color="#f4efe4" tam={150} />
+      <Mano texto="WEEK 3" x={960} y={170} desde={-10} color="#f4efe4" tam={150} />
       <Pildora texto="PARTICIPANT 47" x={960} y={880} desde={k(30.1)} hasta={k(31.4)} color={ROJO_OWEN} />
       <Pildora texto="ONLY 45 STILL IN THE TRIAL" x={960} y={880} desde={k(31.5)} color={VERDE} />
       <HudOwen part={PART} />
