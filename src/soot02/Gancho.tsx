@@ -214,7 +214,7 @@ export const Gancho: React.FC<{ t: number }> = ({ t }) => {
         <Chip t={t} t0={41.32} text="MOST DANGEROUS THING?" color={C.violeta} x={960} y={150} centro size={62} />
         {t > 43.76 && <svg style={{ position: "absolute", left: 1150, top: 450 }} width={500} height={400}><g opacity={ent(t, 43.76)}><line x1={40} y1={40} x2={40 + 420 * prog(t, 43.76, 43.96)} y2={40 + 320 * prog(t, 43.76, 43.96)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /><line x1={460} y1={40} x2={460 - 420 * prog(t, 43.9, 44.1)} y2={40 + 320 * prog(t, 43.9, 44.1)} stroke={C.rojo} strokeWidth={40} strokeLinecap="round" /></g></svg>}
         <Grande t={t} t0={44.0} text="NOT THE ENEMY" x={1100} y={790} size={120} color={C.crema} />
-        <Apion t={t} t0={39.9} x={230} y={1050} h={420} borda={1020} acts={[[40.3, "habla"], [41.32, "piensa"], [43.76, "asombro"], [44.5, "senala"]]} flip={false} />
+        <Apion t={t} t0={39.9} x={230} y={1050} h={420} borda={1020} desde="nada" acts={[[40.3, "habla"], [41.32, "piensa"], [43.76, "asombro"], [44.5, "senala"]]} flip={false} />
         <Chip t={t} t0={44.6} text="?" color={C.ambar} tinta={C.noche} x={1500} y={300} centro size={90} />
       </Escena>
 

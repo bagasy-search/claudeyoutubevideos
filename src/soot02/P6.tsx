@@ -194,8 +194,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={718.63} t1={732.33} entra="fundido" sale="fundido" fondo="none" quieta golpes={[718.7, 720.3, 723.9, 726.2, 727.5, 729.7, 731.0]}>
       <Galera x={960} y={1040} s={1.5} t={t} boga={0} vela={false} corvus={0} balanceo={0.3} marines={false} />
       {t < 720.2 && <Grande t={t} t0={718.7} text="249 BC" x={960} y={250} size={150} color={C.crema} />}
-      {<Persona x={1240} y={820} h={480} t={t} seed={164} ropa={PULCRO} expr={t < 723.9 ? "orgullo" : t < 727.4 ? "enojado" : "feliz"} habla={t > 729.6 && t < 732.3} bD={t > 727.4 && t < 728.4 ? 160 : 40} cD={t > 727.4 && t < 728.4 ? 10 : 30} flip />}
-      <Persona x={560} y={820} h={380} t={t} seed={165} ropa={CIVIL(3)} expr={t < 726 ? "triste" : "sorpresa"} bD={70 + Math.sin(t * 3) * 10} cD={60} camina={t < 720.2 ? 1.2 : 0} />
+      {<Persona x={1240} y={905} h={480} t={t} seed={164} ropa={PULCRO} expr={t < 723.9 ? "orgullo" : t < 727.4 ? "enojado" : "feliz"} habla={t > 729.6 && t < 732.3} bD={t > 727.4 && t < 728.4 ? 160 : 40} cD={t > 727.4 && t < 728.4 ? 10 : 30} flip />}
+      <Persona x={560} y={905} h={380} t={t} seed={165} ropa={CIVIL(3)} expr={t < 726 ? "triste" : "sorpresa"} bD={70 + Math.sin(t * 3) * 10} cD={60} camina={t < 720.2 ? 1.2 : 0} />
       {/* jaula con los pollos sagrados y el plato de grano intacto */}
       {t >= 723.0 && (
         <svg style={{ position: "absolute", left: 640, top: 600, overflow: "visible" }} width={360} height={240}>
@@ -254,7 +254,7 @@ export const P6: React.FC<{ t: number }> = ({ t }) => (
           })}
         </svg>
       )}
-      <Apion t={t} t0={739.6} x={1710} y={1075} h={330} acts={[[739.7, "habla"], [743.2, "asombro"], [745.7, "miedo"], [749.2, "triste"]]} />
+      <Apion t={t} t0={739.6} x={1710} y={1075} h={330} desde="nada" acts={[[739.7, "habla"], [743.2, "asombro"], [745.7, "miedo"], [749.2, "triste"]]} />
       {t >= 749.13 && <CuentaN t={t} t0={750.0} t1={752.0} a={200000} pre="≈ " suf=" MEN" x={900} y={960} size={100} color={C.crema} />}
       {t >= 749.13 && <Chip t={t} t0={749.13} text="EVERY SHIP = A FEW HUNDRED ROWERS" color={C.rojo} x={960} y={190} centro size={56} />}
     </Escena>

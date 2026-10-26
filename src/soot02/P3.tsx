@@ -145,6 +145,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
     <Escena t={t} t0={376.1} t1={388.4} entra="paneo" sale="fundido" fondo="none" quieta golpes={[376.6, 381.0, 383.0, 385.1]}>
       <Cam t={t} k={[[376.1, 960, 540, 1.0], [380.4, 960, 560, 1.15], [381.2, 960, 540, 1.0], [388.4, 960, 540, 1.0]]}>
         {t < 381 && <Galera x={900} y={540} s={0.85} t={t} boga={0.6} vela={false} marines={false} />}
+        {t < 381 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}>{Array.from({ length: 30 }, (_, i) => { const x = 360 + i * 36, a = Math.sin(t * 0.6 * Math.PI * 2 - i * 0.12) * 40; return <g key={i}><line x1={x} y1={585} x2={x - 40 + a} y2={800} stroke="#6b3f1e" strokeWidth={7} strokeLinecap="round" /><rect x={x - 52 + a} y={780} width={24} height={44} rx={8} fill="#8a5a2a" transform={`rotate(${a / 3} ${x - 40 + a} 800)`} /></g>; })}</svg>}
         {t < 381 && t > 376.1 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><line x1={200} y1={980} x2={200 + 1520 * prog(t, 376.5, 377.4)} y2={980} stroke="#fff" strokeWidth={10} /></svg>}
       </Cam>
       {t >= 381 && (
@@ -156,7 +157,7 @@ export const P3: React.FC<{ t: number }> = ({ t }) => (
         </AbsoluteFill>
       )}
       <Apion t={t} t0={376.2} t1={381} x={1700} y={1050} h={420} borda={1020} acts={[[376.6, "senala"], [378.2, "asombro"]]} />
-      <Chip t={t} t0={376.6} t1={380.8} text="OAR: 4+ METERS" color={C.oro} tinta={C.noche} x={960} y={770} centro size={64} />
+      <Chip t={t} t0={376.6} t1={380.8} text="OAR: 4+ METERS" color={C.oro} tinta={C.noche} x={960} y={300} centro size={64} />
       <Chip t={t} t0={378.2} t1={380.8} text="A FOREST OF OARS" color={C.violeta} x={960} y={150} centro size={58} />
       <Chip t={t} t0={381.04} t1={384.8} text="0.5 SECONDS LATE" color={C.rojo} x={960} y={150} centro size={62} />
       <Chip t={t} t0={383.0} t1={384.8} text="BLADES CRASH" color={C.ambar} tinta={C.noche} x={960} y={260} centro size={56} />

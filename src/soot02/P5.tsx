@@ -108,7 +108,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
       <Chip t={t} t0={568.0} t1={572.4} text="SAME ORDER AS ON A SHIP" color={C.oro} tinta={C.noche} x={1300} y={130} size={46} />
       <Chip t={t} t0={570.4} t1={572.4} text="IMAGINARY OARS" color="#1d6f8a" x={1300} y={230} size={52} />
       <Chip t={t} t0={576.97} text="YOUR TRAINING:" color={C.violeta} x={960} y={140} centro size={58} />
-      <Grande t={t} t0={578.43} text="AIR ROWING" y={960} size={150} color={C.crema} />
+      <Chip t={t} t0={578.43} text="AIR ROWING" color={C.rojo} x={960} y={960} centro size={96} />
     </Escena>
 
     {/* 580,4 · "Of course, the Carthaginians were far better sailors, so the Romans changed the game." */}
@@ -172,7 +172,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => (
 
     {/* 609,0 · "In 260 BC, at Mylae, the consul Gaius Duilius tried it for the first time. The Carthaginians came in fast and confident. The crows came down, and Roman marines poured across." */}
     <Escena t={t} t0={609.0} t1={622.25} entra="fundido" sale="fundido" fondo="none" quieta golpes={[609.0, 611.3, 612.3, 615.4, 618.0, 619.9]}>
-      {t < 612.3 && <MapaMar t={t} puntos={[{ n: "MYLAE", t0: 611.2, color: C.rojo }]} zoom={{ n: "MYLAE", z: 2.6, t: [610.6, 612.3] }} />}
+      {t < 612.3 && <MapaMar t={t} puntos={[{ n: "MYLAE", t0: 609.4, color: C.rojo }]} zoom={{ n: "MYLAE", z: 2.6, t: [610.6, 612.3] }} />}
       {t < 612.3 && <Persona x={1640} y={1010} h={440} t={t} seed={190} ropa={DUILIO} expr="orgullo" bD={interpolate(t, [609.3, 610.2], [10, 115], cl)} cD={0} mira={-0.7} />}
       {t < 612.3 && <Chip t={t} t0={611.3} text="MYLAE · SICILY" color={C.rojo} x={1500} y={300} centro size={50} />}
       {t >= 612.3 && t < 615.4 && (

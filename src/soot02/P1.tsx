@@ -221,6 +221,7 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
           {Array.from({ length: 60 }, (_, i) => { const r = rnd(i + 80); const x = (r() * 1960 + (r() < 0.5 ? 1 : -1) * (t - 93) * 40) % 1960; return <g key={i} transform={`translate(${x} ${940 + r() * 90})`}><circle cx={0} cy={-26} r={9} fill={["#f2b48a", "#c98b62", "#8d5a3b"][i % 3]} /><rect x={-9} y={-18} width={18} height={22} rx={7} fill={["#9a6a4a", "#2fb5d8", "#8a5a7a", "#6a7a4a"][i % 4]} /></g>; })}
         </svg>
       </Cam>
+      <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><rect x={-20} y={1000} width={560} height={90} fill="#8a5a2a" /><rect x={-20} y={994} width={560} height={14} fill="#c48a4c" />{[60, 220, 380, 520].map((x) => <rect key={x} x={x} y={1008} width={16} height={80} fill="#5a3418" />)}</svg>
       <Apion t={t} t0={93.4} x={250} y={1010} h={400} acts={[[93.9, "habla"], [97.7, "senala"], [99.9, "asombro"], [101.9, "festeja"]]} flip={false} />
       <Chip t={t} t0={94.2} text="BIGGEST FLEET IN THE EMPIRE" color="#1d6f8a" x={960} y={140} centro size={62} />
       <Chip t={t} t0={97.7} text="VOLCANIC BAY" color={C.rojo} x={960} y={250} centro size={54} />

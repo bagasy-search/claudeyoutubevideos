@@ -205,6 +205,7 @@ export const P2: React.FC<{ t: number }> = ({ t }) => (
       </svg>
       {t > 288.2 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><line x1={980 + 120} y1={400} x2={980 + 230} y2={400} stroke="#fff" strokeWidth={10} /><path d="M 1090 380 L 1090 420 M 1220 380 L 1220 420" stroke="#fff" strokeWidth={10} /></svg>}
       <Chip t={t} t0={285.8} t1={290.8} text="YOUR PERSONAL SPACE" color={C.violeta} x={960} y={140} centro size={60} />
+      <Apion t={t} t0={285.9} t1={290.8} x={1630} y={1060} h={400} acts={[[286.0, "habla"], [288.2, "cansado"]]} />
       <Chip t={t} t0={287.26} t1={290.8} text="1 BENCH" color={C.oro} tinta={C.noche} x={980} y={760} centro size={66} />
       <Chip t={t} t0={288.2} t1={290.8} text="< 1 METER" color={C.rojo} x={1160} y={330} centro size={56} />
       {t > 290.8 && <Cojin x={960} y={interpolate(t, [291.1, 291.7], [-200, 560], cl)} s={1.6} />}

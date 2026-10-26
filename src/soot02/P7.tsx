@@ -138,12 +138,12 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
         );
       })}
       {(() => {
-        const x = interpolate(t, [831.3, 834.0, 835.2, 837.4], [-120, 230, 230, 1640], cl);
+        const x = interpolate(t, [831.3, 834.0, 835.2, 837.4], [-120, 230, 230, 1720], cl);
         const agacha = t > 834.0 && t < 835.2;
         return (
           <>
             <Persona x={x} y={1000} h={420} t={t} seed={7} ropa={APION} viejo camina={agacha ? 0 : 1.1} expr="triste" inclina={agacha ? 12 : 4} bD={agacha ? 70 : 20} cD={30} manoD={t < 834.6 ? <g><circle r={14} fill="#ff6a8a" /><circle cx={12} cy={-8} r={12} fill="#ffd27a" /><line x1={0} y1={10} x2={0} y2={60} stroke="#3f8f3e" strokeWidth={6} /></g> : undefined} />
-            <Persona x={x + 130} y={1000} h={280} t={t} seed={172} ropa={HIJO} camina={agacha ? 0 : 1.4} expr="triste" bD={40} cD={20} />
+            <Persona x={x + 105} y={1000} h={280} t={t} seed={172} ropa={HIJO} camina={agacha ? 0 : 1.4} expr="triste" bD={40} cD={20} />
           </>
         );
       })()}
@@ -168,7 +168,7 @@ export const P7: React.FC<{ t: number }> = ({ t }) => (
               <g transform={`translate(520 785) scale(1.1)`}><Remero fase={t * 0.5 * Math.PI * 2} ropa="#2fb5d8" piel="#c98b62" pelo="#d8d0c4" expr="cansado" seed={7} t={t} /></g>
             </svg>
             {t > 846.6 && <svg style={{ position: "absolute", inset: 0 }} width={1920} height={1080}><g opacity={0.45}><rect x={1042} y={520} width={16} height={260} fill="#fff" /><path d="M 1058 520 L 1170 550 L 1058 580 Z" fill="#fff" /></g><text x={1050} y={830} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={36} fill="#fff" stroke="#2a1530" strokeWidth={8} paintOrder="stroke">PROMISED: 26</text></svg>}
-            <CuentaN t={t} t0={846.6} t1={850.6} de={26} a={28} x={meta} y={430} size={110} color={t > 849 ? "#ff6a6a" : C.crema} pre="SERVICE: " suf=" YRS" />
+            <CuentaN t={t} t0={846.6} t1={850.6} de={26} a={28} x={meta - 150} y={430} size={110} color={t > 849 ? "#ff6a6a" : C.crema} pre="SERVICE: " suf=" YRS" />
           </>
         );
       })()}
