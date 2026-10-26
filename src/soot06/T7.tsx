@@ -15,7 +15,7 @@ export const T0 = 749.5, T1 = 813.5;
 export const CAM: Llave[] = [
   [750.6, 2050, 2800, 0.6], [752.4, 5800, 2600, 0.72], [756.6, 5800, 2600, 0.72], [757.4, 5500, 2900, 1.3], [758.4, 5500, 2900, 1.3],
   [759.2, 5800, 2250, 0.9], [762.4, 5800, 2300, 0.78], [763.2, 6200, 2900, 1.3], [764.0, 5000, 2700, 1.25], [766.6, 5300, 2850, 1.3],
-  [767.5, 5800, 2850, 1.2], [772.4, 5800, 2800, 1.0], [774.6, 3400, 3250, 0.9], [783.6, 3400, 3250, 0.9], [785.4, 5800, 2600, 0.7],
+  [767.5, 5400, 2850, 1.2], [772.4, 5450, 2800, 1.0], [774.6, 3400, 3150, 1.2], [783.6, 3300, 3150, 1.2], [785.4, 5800, 2600, 0.7],
   [789.4, 5800, 2650, 0.7], [790.3, 5550, 2900, 1.3], [791.3, 5550, 2900, 1.3], [793.2, 5800, 2550, 0.72], [795.8, 5800, 2600, 0.72],
   [796.8, 4770, 2770, 1.3], [800.9, 4770, 2770, 1.3], [801.8, 5150, 2380, 1.4], [806.8, 5150, 2420, 1.3], [808.6, 5800, 2550, 0.7], [813.3, 5800, 2600, 0.75],
 ];
@@ -43,7 +43,8 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
         return <Acostado key={i} x={x} y={PISO - 10} h={260} t={t} seed={80 + i} ropa={SIERVO(r)} flip={i % 2 === 1} expr={tose && i % 3 === 0 ? "miedo" : "dormido"} />;
       })}
       {/* el cocinero que huye de la cocina en llamas */}
-      {t > 780.2 && t < 785 && <Persona x={3500 - 600 * prog(t, 780.6, 783.6)} y={2965} h={300} t={t} seed={91} ropa={SIERVO(1)} expr="miedo" camina={3} flip bD={150} cD={40} bI={150} cI={40} />}
+      {t > 774.4 && t <= 780.2 && <Persona x={3500} y={3530} h={330} t={t} seed={91} ropa={SIERVO(1)} expr={t > 779.6 ? "sorpresa" : "dormido"} inclina={t > 779.6 ? 0 : 10} flip />}
+      {t > 780.2 && t < 785 && <Persona x={3500 - 600 * prog(t, 780.6, 783.6)} y={3530} h={330} t={t} seed={91} ropa={SIERVO(1)} expr="miedo" camina={3} flip bD={150} cD={40} bI={150} cI={40} />}
       {t < 796.4 ? <Acostado x={5300} y={PISO - 10} h={260} t={t} seed={7} ropa={CHICO} expr={tose ? "miedo" : "dormido"} />
         : <Persona x={5300 - 260 * prog(t, 797.2, 798.6)} y={PISO} h={270} t={t} seed={7} ropa={CHICO} expr="miedo" salta={796.4} camina={t > 797.2 && t < 798.6 ? 3 : 0} flip bD={150} cD={150} bI={150} cI={150} />}
       {/* el junco olvidado, encendido en el piso */}
@@ -132,7 +133,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       )}
       <Chip t={t} t0={796.09} t1={801.0} text="DOORS BARRED FROM THE INSIDE" color={C.rojo} x={960} y={140} centro size={56} />
       <Chip t={t} t0={798.15} t1={801.0} text="…BECAUSE THIS IS A CASTLE" color={C.violeta} x={960} y={240} centro size={48} />
-      {t >= 799.71 && t < 801.0 && <Grande t={t} t0={799.71} text="THAT IS THE WHOLE POINT." y={940} size={90} color={C.crema} />}
+      {t >= 799.71 && t < 801.0 && <Grande t={t} t0={799.71} text="THAT IS THE WHOLE POINT." y={870} size={90} color={C.crema} />}
       {/* ventanas = saeteras */}
       {t > 801.1 && t < 807.2 && <div style={{ position: "absolute", left: saet.x - 90 * c.z, top: saet.y - 200 * c.z, width: 180 * c.z, height: 400 * c.z, borderRadius: 40, border: `12px solid ${C.oro}`, opacity: ent(t, 801.3) }} />}
       <Chip t={t} t0={801.15} t1={807.2} text="WINDOWS = NARROW SLITS" color={C.oro} tinta={C.noche} x={960} y={140} centro size={56} />

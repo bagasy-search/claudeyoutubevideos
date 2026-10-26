@@ -149,6 +149,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 })}
                 <circle cx={960 + Math.cos(ang) * 700} cy={820 - Math.sin(ang) * 560} r={70} fill="#fff3b0" stroke="#fff" strokeWidth={8} />
               </svg>
+              <Yo t={t} t0={66.3} x={960} y={815} h={300} expr={t > 72.4 ? "triste" : "neutro"} mira={Math.cos(ang)} />
               <Grande t={t} t0={68.96} text="2 REAL MEALS" y={200} size={130} color={C.crema} />
               <Chip t={t} t0={70.5} text="DINNER" color={C.teal} tinta={C.noche} x={960 + Math.cos(Math.PI * 0.52) * 700} y={820 - Math.sin(Math.PI * 0.52) * 560 + 110} centro size={54} />
               <Chip t={t} t0={72.42} text="SUPPER" color={C.rojo} x={960 + Math.cos(Math.PI * 0.25) * 700} y={820 - Math.sin(Math.PI * 0.25) * 560 + 110} centro size={54} />
@@ -168,7 +169,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         return <Chip key={b.rol} t={t} t0={b.tr} t1={93.9} text={b.rol!} color={[C.rojo, C.violeta, C.teal, C.ambar, C.rosa][i]} tinta={i === 2 || i === 3 ? C.noche : C.crema} x={p.x} y={p.y} centro size={44} />;
       })}
       {t > 84 && t < 94 && (
-        <div style={{ position: "absolute", left: 160, right: 160, top: 1010, height: 26, borderRadius: 13, background: `linear-gradient(90deg, ${C.noche}, ${C.oro})`, transform: `scaleX(${prog(t, 84, 85)})`, transformOrigin: "right center" }}>
+        <div style={{ position: "absolute", left: 160, right: 160, top: 930, height: 26, borderRadius: 13, background: `linear-gradient(90deg, ${C.noche}, ${C.oro})`, transform: `scaleX(${prog(t, 84, 85)})`, transformOrigin: "right center" }}>
           <div style={{ position: "absolute", right: 0, top: -74, fontFamily, fontWeight: 700, fontSize: 60, color: C.oro, WebkitTextStroke: `8px ${C.noche}`, paintOrder: "stroke fill" }}>IMPORTANT</div>
           <div style={{ position: "absolute", left: 0, top: -74, fontFamily, fontWeight: 700, fontSize: 60, color: "#fff", WebkitTextStroke: `8px ${C.noche}`, paintOrder: "stroke fill" }}>NOT IMPORTANT</div>
         </div>
@@ -189,12 +190,12 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* calendario de días de pescado — nace del plato */}
       <Inserto t={t} t0={117.0} t1={132.4} ix={plato.x} iy={plato.y} fondo="#2d5bb5" fondo2={C.noche}>
         <Calendario t={t} />
-        <Yo t={t} t0={117.5} x={1450} h={420} flip expr={t > 129.3 ? "triste" : "sorpresa"} habla={t > 121 && t < 124} bD={110 + Math.sin(t * 5) * 8} cD={20} />
-        <Chip t={t} t0={121.36} text="FRIDAYS" color={C.rojo} x={200} y={760} size={50} />
-        <Chip t={t} t0={122.6} text="MANY WED + SAT" color={C.naranja} x={510} y={760} size={50} />
-        <Chip t={t} t0={125.02} text="LENT + ADVENT" color={C.violeta} x={1010} y={760} size={50} />
-        {t >= 127.6 && <Grande t={t} t0={127.6} text="≈ 1/3 OF THE YEAR" y={930} size={110} color={C.oro} />}
-        <Chip t={t} t0={129.48} text="NO MEAT" color={C.rojo} x={1480} y={760} size={50} />
+        <Yo t={t} t0={117.5} x={1720} h={400} y={1040} flip expr={t > 129.3 ? "triste" : "sorpresa"} habla={t > 121 && t < 124} bD={110 + Math.sin(t * 5) * 8} cD={20} />
+        <Chip t={t} t0={121.36} text="FRIDAYS" color={C.rojo} x={150} y={760} size={44} />
+        <Chip t={t} t0={122.6} text="MANY WED + SAT" color={C.naranja} x={410} y={760} size={44} />
+        <Chip t={t} t0={125.02} text="LENT + ADVENT" color={C.violeta} x={860} y={760} size={44} />
+        {t >= 127.6 && <Grande t={t} t0={127.6} text="≈ 1/3 OF THE YEAR" y={890} size={110} color={C.oro} />}
+        <Chip t={t} t0={129.48} text="NO MEAT" color={C.rojo} x={1250} y={760} size={44} />
         <Chip t={t} t0={130.92} text="DECEMBER = ADVENT" color={C.oro} tinta={C.noche} x={1500} y={230} centro size={50} />
       </Inserto>
       {t >= 134.06 && t < 135.3 && <Grande t={t} t0={134.06} text="FISH" y={190} size={160} color={C.teal} />}
@@ -223,6 +224,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               {Array.from({ length: 8 }, (_, i) => <path key={i} d={`M ${((i * 260 + t * 80) % 2200) - 200} ${780 + (i % 3) * 60} q 40 -20 80 0 t 80 0`} stroke="#bff0f7" strokeWidth={8} fill="none" />)}
             </svg>
             <Ganso x={960} y={600} s={1.7} brota={prog(t, 157.2, 159.6)} />
+            <Yo t={t} t0={151.5} x={300} y={1060} h={420} expr={t > 160.8 ? "enojado" : "sorpresa"} mira={0.8} bD={t > 157.7 && t < 160.8 ? 120 : 10} cD={20} />
             <Chip t={t} t0={151.38} text="BARNACLE GOOSE" color={C.noche} x={160} y={150} size={64} />
             <Chip t={t} t0={153.62} text="GERALD OF WALES, c. 1188" color={C.violeta} x={160} y={250} size={46} />
             {t > 155.54 && t < 162.3 && (
@@ -266,7 +268,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Chip t={t} t0={195.34} t1={199.3} text="THIRSTY" color={C.teal} tinta={C.noche} x={boy.x + 150} y={boy.y - 150} size={50} />
       <Chip t={t} t0={196.4} t1={199.3} text="SLIGHTLY DRUNK" color={C.rosa} x={boy.x + 150} y={boy.y + 20} size={50} />
       {t > 196 && t < 199.5 && <Emote t={t} t0={196.4} tipo="brillos" {...cabeza(boy.x, boy.y + 300 * c.z, 280 * c.z)} />}
-      {t >= 199.94 && t < 201.4 && <Grande t={t} t0={199.94} text="THE GOOD PART" y={200} size={140} color={C.oro} />}
+      {t >= 199.5 && t < 201.4 && <Grande t={t} t0={199.5} text="THE GOOD PART" y={200} size={140} color={C.oro} />}
       {t > 199 && t < 201.6 && <Particulas t={t} tipo="destellos" n={16} seed={4} />}
     </>
   );

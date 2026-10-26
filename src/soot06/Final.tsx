@@ -122,7 +122,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             <div style={{ position: "absolute", inset: 0, background: "rgba(14,8,40,.55)" }} />
             <div style={{ position: "absolute", left: 960, top: 300, transform: "translate(-50%,-50%)", fontFamily, fontWeight: 700, fontSize: 70, color: C.crema, WebkitTextStroke: `9px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>MISERY METER</div>
             {bar("🏰 CASTLE", 0.62, 857.41, 430, C.naranja)}
-            {bar("🛖 THE VILLAGE HUT", 0.98, 860.11, 600, C.rojo)}
+            {bar("🛖 THE VILLAGE HUT", 0.98, 859.55, 600, C.rojo)}
             {t >= 859.45 && <Chip t={t} t0={859.53} text="…JUST A LOT LESS MISERABLE" color={C.lima} tinta={C.noche} x={960} y={820} centro size={56} />}
           </>
         );
@@ -149,14 +149,14 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               </svg>
               <Chip t={t} t0={867.93} text="GREAT LORDS OWNED SEVERAL CASTLES + MANORS" color={C.noche} x={960} y={120} centro size={46} />
               <Chip t={t} t0={870.73} text="TRAVELING ALL YEAR LONG" color={C.oro} tinta={C.noche} x={960} y={210} centro size={50} />
-              {t > 872.6 && <Carro x={interpolate(t, [872.6, 884.6], [120, 1520], cl)} y={780} t={t} carga={[
+              {t > 870.4 && <Carro x={interpolate(t, [870.5, 884.6], [60, 1360], cl)} y={780} t={t} carga={[
                 t > 874.4 ? "🛏️" : "", t > 875.6 ? "🧶" : "", t > 876.6 ? "🧰" : "",
               ]} />}
-              {t > 872.6 && t < 879.9 && <Persona x={interpolate(t, [872.6, 884.6], [120, 1520], cl) + 380} y={1010} h={320} t={t} seed={40} ropa={SENOR} expr="orgullo" camina={1.4} />}
-              {t > 877.6 && <div style={{ position: "absolute", left: interpolate(t, [872.6, 884.6], [120, 1520], cl) + 80, top: 660, fontSize: 80, transform: `scale(${ent(t, 877.8)})` }}>🪟</div>}
-              <Chip t={t} t0={872.59} t1={879.8} text="WITH THE WHOLE HOUSEHOLD" color={C.violeta} x={960} y={310} centro size={58} />
-              <Chip t={t} t0={874.21} t1={879.8} text="BEDS · TAPESTRIES · CHESTS" color={C.rojo} x={960} y={400} centro size={58} />
-              <Chip t={t} t0={877.63} t1={879.8} text="…EVEN GLASS WINDOWS" color={C.teal} tinta={C.noche} x={960} y={490} centro size={58} />
+              {t > 870.4 && <Persona x={interpolate(t, [870.5, 884.6], [60, 1360], cl) + 400} y={1010} h={380} t={t} seed={40} ropa={SENOR} expr="orgullo" camina={1.4} />}
+              {t > 877.6 && <div style={{ position: "absolute", left: interpolate(t, [870.5, 884.6], [60, 1360], cl) + 80, top: 660, fontSize: 80, transform: `scale(${ent(t, 877.8)})` }}>🪟</div>}
+              <Chip t={t} t0={872.59} t1={879.4} text="WITH THE WHOLE HOUSEHOLD" color={C.violeta} x={960} y={310} centro size={58} />
+              <Chip t={t} t0={874.21} t1={879.4} text="BEDS · TAPESTRIES · CHESTS" color={C.rojo} x={960} y={400} centro size={58} />
+              <Chip t={t} t0={877.63} t1={879.4} text="…EVEN GLASS WINDOWS" color={C.teal} tinta={C.noche} x={960} y={490} centro size={58} />
               {t >= 879.89 && (
                 <div style={{ position: "absolute", left: 960, top: 520, transform: `translate(-50%,-50%) scale(${ent(t, 880.0)})`, textAlign: "center", fontFamily, fontWeight: 700, whiteSpace: "nowrap" }}>
                   <div style={{ fontSize: 56, color: C.noche }}>IN FRENCH, FURNITURE IS STILL…</div>
@@ -186,7 +186,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 <div style={{ background: C.rojo, color: "#fff", fontFamily, fontWeight: 700, fontSize: 64, padding: "18px 44px", borderRadius: 20, border: `8px solid ${C.noche}`, boxShadow: "0 12px 0 rgba(14,8,40,.5)", transform: `scale(${1 + 0.05 * Math.sin(t * 6)})` }}>SUBSCRIBE</div>
               </div>
             )}
-            {t > 897.7 && t < 905.95 && <Yo t={t} t0={897.8} x={230} y={1080} h={620} expr="feliz" habla bD={112} cD={-10} />}
+            {t > 897.7 && t < 905.95 && <Yo t={t} t0={897.8} x={310} y={1080} h={600} expr="neutro" habla bD={112} cD={-10} />}
             {t > 901.4 && t < 905.95 && <div style={{ position: "absolute", left: 0, top: 0 }}><Campana x={940} y={350} s={0.9} t={t} t0={901.5} t0b={901.77} /></div>}
             {t > 902.5 && t < 905.95 && (
               <div style={{ position: "absolute", left: 1150, top: 230, width: 620, height: 380, borderRadius: 30, overflow: "hidden", border: `10px solid ${C.oro}`, background: "linear-gradient(#1c1240, #4a2a6a)", transform: `rotate(3deg) scale(${ent(t, 902.6)})`, boxShadow: "0 16px 0 rgba(14,8,40,.5)" }}>
@@ -205,12 +205,14 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                   WHICH OF THE <span style={{ color: C.rojo }}>7 TRAPS</span><br />WOULD GET YOU FIRST?
                 </div>
                 {[["🍲", "SUPPER"], ["🕯️", "DARK"], ["❄️", "COLD"], ["🚽", "TOILET"], ["🐀", "RATS"], ["🛡️", "WATCH"], ["🔥", "FIRE"]].map(([e, k], i) => (
-                  <div key={k} style={{ position: "absolute", left: 960 + (i - 3) * 236, top: 640, width: 216, height: 200, transform: `translate(-50%,-50%) scale(${ent(t, 907.4 + i * 0.08)})`, borderRadius: 24, background: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? "#fff3b0" : C.crema, border: `8px solid ${Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? C.oro : C.noche}`, boxShadow: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? `0 0 40px ${C.oro}` : "0 10px 0 rgba(14,8,40,.45)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700 }}>
+                  <div key={k} style={{ position: "absolute", left: 890 + (i - 3) * 236, top: 640, width: 216, height: 200, transform: `translate(-50%,-50%) scale(${ent(t, 907.4 + i * 0.08)})`, borderRadius: 24, background: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? "#fff3b0" : C.crema, border: `8px solid ${Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? C.oro : C.noche}`, boxShadow: Math.floor((t - 908.3) * 2.5) % 7 === i && t > 908.3 ? `0 0 40px ${C.oro}` : "0 10px 0 rgba(14,8,40,.45)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", fontFamily, fontWeight: 700 }}>
                     <div style={{ fontSize: 96, lineHeight: 1 }}>{e}</div>
                     <div style={{ fontSize: 38, color: C.noche, marginTop: 8 }}>{k}</div>
                   </div>
                 ))}
 
+                <Yo t={t} t0={906.0} x={1790} y={1080} h={380} expr="sorpresa" habla flip bD={115} cD={10} />
+                <Chip t={t} t0={906.4} text="🔔 SUBSCRIBE · NEXT: A NIGHT IN ANCIENT ROME" color={C.rojo} x={960} y={110} centro size={44} />
                 <Chip t={t} t0={906.11} text="TELL ME IN THE COMMENTS 💬" color={C.lima} tinta={C.noche} x={960} y={900} centro size={60} />
               </>
             )}

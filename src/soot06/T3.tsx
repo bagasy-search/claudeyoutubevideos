@@ -16,7 +16,7 @@ export const CAM: Llave[] = [
   [298.3, 5100, 2780, 1.35], [300.2, 5100, 2780, 1.35], [301.6, 5800, 2640, 0.62], [303.0, 5300, 2780, 1.1], [308.2, 5500, 2800, 1.0],
   [309.4, 5150, 2900, 1.5], [310.6, 5150, 2930, 2.1], [318.3, 5250, 2930, 2.0],
   [342.2, 5150, 2880, 1.5], [344.4, 5250, 2850, 1.2], [349.6, 5500, 2850, 1.15], [354.4, 6200, 2800, 1.15],
-  [355.8, 5800, 2640, 0.62], [363.4, 5800, 2640, 0.64], [365.0, 4800, 2650, 1.0], [375.6, 4850, 2650, 1.05],
+  [355.8, 5750, 2780, 0.95], [363.4, 5850, 2790, 1.0], [365.0, 4800, 2650, 1.0], [375.6, 4850, 2650, 1.05],
   [377.0, 6700, 1350, 1.15], [380.3, 6700, 1360, 1.15], [381.6, 5150, 2330, 1.55], [390.8, 5200, 2380, 1.35],
   [392.0, 5400, 2500, 0.8], [405.0, 5400, 2650, 0.8], [406.6, 5500, 2850, 1.0], [413.0, 5450, 2860, 1.05], [415.4, 5150, 2900, 1.5],
 ];
@@ -24,12 +24,31 @@ const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const PISO = 2965;
 const ERASMO: Ropa = { tunica: "#2a2a3a", tunica2: "#14141f", cinto: "#2a2a3a", piel: "#f2c4a0", piel2: "#d99d7a", pelo: "#5a4a3a" };
 
-// persona acostada: el rig girado 90° con los pies en (x, y)
-export const Acostado: React.FC<{ x: number; y: number; h: number; t: number; seed: number; ropa: Ropa; expr?: Expr; flip?: boolean }> = ({ x, y, h, t, seed, ropa, expr = "dormido", flip }) => (
-  <div style={{ position: "absolute", left: 0, top: 0, transformOrigin: `${x}px ${y}px`, transform: `translateY(${-h * 0.13}px) rotate(${flip ? 90 : -90}deg)` }}>
-    <Persona x={x} y={y} h={h} t={t} seed={seed} ropa={ropa} expr={expr} />
-  </div>
-);
+// persona acostada de verdad: almohada de paja bajo la cabeza, el brazo doblado de almohada, rodillas apenas
+// flexionadas y una manta encima que sube y baja con la respiración (antes era el rig de pie girado 90°).
+export const Acostado: React.FC<{ x: number; y: number; h: number; t: number; seed: number; ropa: Ropa; expr?: Expr; flip?: boolean }> = ({ x, y, h, t, seed, ropa, expr = "dormido", flip }) => {
+  const d = flip ? 1 : -1; // hacia dónde queda la cabeza
+  const resp = expr === "dormido" ? Math.sin((t + seed) * 1.9) * 0.018 * h : 0;
+  const L = 0.66 * h, T = 0.27 * h + resp;
+  const manta = `M 0 ${-0.02 * h} Q ${d * 0.06 * h} ${-T * 0.85} ${d * 0.2 * h} ${-T * 0.8} Q ${d * 0.42 * h} ${-T * 1.05} ${d * L} ${-T * 0.95} L ${d * (L + 0.03 * h)} 0 Z`;
+  return (
+    <>
+      <svg style={{ position: "absolute", left: x - 1.2 * h, top: y - 0.6 * h, overflow: "visible" }} width={2.4 * h} height={0.7 * h} viewBox={`${-1.2 * h} ${-0.6 * h} ${2.4 * h} ${0.7 * h}`}>
+        <ellipse cx={d * 0.8 * h} cy={-0.07 * h} rx={0.2 * h} ry={0.075 * h} fill="#d9b25a" />
+        {[-2, -1, 0, 1, 2].map((k) => <line key={k} x1={d * 0.8 * h + k * 0.06 * h} y1={-0.13 * h} x2={d * 0.8 * h + k * 0.06 * h + 0.02 * h} y2={-0.01 * h} stroke="#b08a38" strokeWidth={0.012 * h} />)}
+        <ellipse cx={d * 0.3 * h} cy={0} rx={0.75 * h} ry={0.03 * h} fill="#000" opacity={0.25} />
+      </svg>
+      <div style={{ position: "absolute", left: 0, top: 0, transformOrigin: `${x}px ${y}px`, transform: `translateY(${-h * 0.12}px) rotate(${flip ? 84 : -84}deg)` }}>
+        <Persona x={x} y={y} h={h} t={t} seed={seed} ropa={ropa} expr={expr} bI={6} cI={6} bD={6} cD={6} />
+      </div>
+      <svg style={{ position: "absolute", left: x - 1.2 * h, top: y - 0.6 * h, overflow: "visible" }} width={2.4 * h} height={0.7 * h} viewBox={`${-1.2 * h} ${-0.6 * h} ${2.4 * h} ${0.7 * h}`}>
+        <path d={manta} fill={ropa.tunica2} />
+        <path d={manta} fill="#8a7a6a" opacity={0.55} />
+        {[0.15, 0.3, 0.45, 0.58].map((k) => <path key={k} d={`M ${d * k * h} ${-T * 0.85} q ${d * 0.02 * h} ${T * 0.4} 0 ${T * 0.8}`} stroke="#5d5040" strokeWidth={0.012 * h} fill="none" opacity={0.6} />)}
+      </svg>
+    </>
+  );
+};
 
 export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
   if (t < T0 - 1 || t > T1 + 1) return null;
@@ -39,10 +58,10 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
   return (
     <>
       {/* el solar: el señor y la señora (lo de las películas) */}
-      {t > 292 && t < 298.5 && (
+      {t > 287.7 && t < 298.5 && (
         <>
-          <Persona x={5450} y={1950} h={330} t={t} seed={61} ropa={SENOR} expr="orgullo" aparece={293.35} />
-          <Persona x={5620} y={1950} h={320} t={t} seed={62} ropa={DAMA} expr="feliz" aparece={293.9} flip />
+          <Persona x={5450} y={1950} h={330} t={t} seed={61} ropa={SENOR} expr={t < 292 ? "dormido" : "orgullo"} aparece={287.8} />
+          <Persona x={5620} y={1950} h={320} t={t} seed={62} ropa={DAMA} expr={t < 292 ? "dormido" : "feliz"} aparece={288.2} flip />
         </>
       )}
       {/* banco (con suerte), colchón de paja (más suerte), piso (nuevo) */}
@@ -150,7 +169,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               return <div key={i} style={{ position: "absolute", left: 160, right: 160, top: 880 - (i + 1) * 60 * sube, height: 60 * sube, background: ["#8a6a3a", "#7a5a2a", "#9a7a3a", "#6a4a22", "#8a6a2a"][i % 5], borderTop: "4px solid rgba(255,255,255,.25)" }} />;
             })}
             <div style={{ position: "absolute", left: 160, right: 160, top: 880, height: 90, background: "#6b6b7a" }} />
-            <Acostado x={760} y={1050 - 600 * prog(t, 328.3, 331.6)} h={300} t={t} seed={7} ropa={CHICO} expr={t > 339.9 ? "miedo" : t > 335.2 ? "sorpresa" : "dormido"} />
+            <Acostado x={820} y={1050 - 600 * prog(t, 328.3, 331.6)} h={520} t={t} seed={7} ropa={CHICO} expr={t > 339.9 ? "miedo" : t > 335.2 ? "sorpresa" : "dormido"} />
             <div style={{ position: "absolute", left: 1560, top: 895, fontFamily, fontWeight: 700, fontSize: 52, color: "#fff" }}>STONE</div>
             <Chip t={t} t0={325.94} text="FLOORS COVERED IN RUSHES" color={C.noche} x={210} y={140} size={50} />
             <Chip t={t} t0={327.76} text="ONLY TOPPED UP" color={C.ambar} tinta={C.noche} x={210} y={230} size={50} />
@@ -168,10 +187,10 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* tu colchón */}
       {t >= 342.26 && t < 344.4 && <Grande t={t} t0={342.26} text="YOUR MATTRESS" y={200} size={120} color={C.crema} />}
       <Chip t={t} t0={343.58} t1={345} text="NOT ALONE ON IT" color={C.rojo} x={960} y={950} centro size={58} />
-      <Chip t={t} t0={344.7} t1={349.8} text="THE LORD'S HUNTING DOGS" color={C.tierra} x={160} y={150} size={56} />
-      <Chip t={t} t0={347.43} t1={349.8} text="HAVE OPINIONS" color={C.rojo} x={160} y={260} size={56} />
+      <Chip t={t} t0={344.7} t1={349.2} text="THE LORD'S HUNTING DOGS" color={C.tierra} x={160} y={150} size={60} />
+      <Chip t={t} t0={347.43} t1={349.2} text="HAVE OPINIONS" color={C.rojo} x={160} y={260} size={56} />
       {t > 347.4 && t < 349.6 && <Emote t={t} t0={347.5} tipo="enojo" x={P(5560, PISO - 140).x} y={P(5560, PISO - 140).y} s={1.3} />}
-      <Chip t={t} t0={348.81} t1={349.8} text="WHO GETS THE WARM SPOT" color={C.oro} tinta={C.noche} x={960} y={950} centro size={56} />
+      <Chip t={t} t0={348.3} t1={349.4} text="WHO GETS THE WARM SPOT" color={C.oro} tinta={C.noche} x={960} y={950} centro size={56} />
       {/* ronquidos, tos, sigue comiendo */}
       {t > 350.5 && t < 355 && <Zzz x={P(5850, PISO - 200).x} y={P(5850, PISO - 200).y} t={t} />}
       <Chip t={t} t0={350.73} t1={355} text="SNORING" color={C.violeta} x={P(5850, 2600).x} y={P(5850, 2600).y} centro size={44} />
@@ -209,6 +228,8 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Chip t={t} t0={376.23} t1={380.4} text="GLASS WINDOWS" color={C.teal} tinta={C.noche} x={960} y={140} centro size={62} />
       <Chip t={t} t0={378.5} t1={380.4} text="LUXURY: KINGS + CHURCHES" color={C.oro} tinta={C.noche} x={960} y={950} centro size={56} />
       {t > 377 && t < 380.4 && <Emote t={t} t0={377.2} tipo="brillos" x={P(6700, 1300).x + 220} y={P(6700, 1300).y + 160} s={1.6} />}
+      {t > 377 && t < 380.4 && <Yo t={t} t0={377.1} x={1640} h={560} y={1070} expr="sorpresa" mira={-1} />}
+      {t > 388.2 && t < 391.6 && <Yo t={t} t0={388.3} x={1650} h={560} y={1070} expr="miedo" tiembla bD={150} cD={150} bI={150} cI={150} ropa={{ ...CHICO, piel: "#c8e6f5", piel2: "#9cc8e0" }} />}
       {/* postigos */}
       <Chip t={t} t0={382.08} t1={386.3} text="WOODEN SHUTTERS" color={C.tierra} x={160} y={150} size={58} />
       <Chip t={t} t0={383.67} t1={386.3} text="+ OILED LINEN (MAYBE)" color={C.ambar} tinta={C.noche} x={160} y={260} size={50} />
@@ -246,6 +267,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 <div style={{ position: "absolute", left: 0, right: 0, bottom: 14, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff" }}>{k}</div>
               </div>
             ))}
+            {[250, 1680].map((x, i) => <Persona key={x} x={x} y={1050} h={420} t={t} seed={130 + i} ropa={SIERVO(i + 2)} expr="triste" aparece={398.4 + i * 0.3} bD={i ? 150 : 10} cD={i ? 150 : 10} inclina={i ? 0 : 6} flip={i === 1} />)}
             <Chip t={t} t0={398.76} text="THE RAIN WILL NOT STOP" color={C.teal} tinta={C.noche} x={960} y={300} centro size={54} />
             {t >= 401.62 && <Grande t={t} t0={401.62} text="THE GREAT FAMINE" y={780} size={130} color={C.rojo} />}
             <Chip t={t} t0={402.73} text="MILLIONS DEAD · NORTHERN EUROPE" color={C.crema} tinta={C.noche} x={960} y={930} centro size={52} />

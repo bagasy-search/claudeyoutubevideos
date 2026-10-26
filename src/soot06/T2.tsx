@@ -13,7 +13,7 @@ export const T0 = 201.5, T1 = 281.6;
 export const CAM: Llave[] = [
   [203.7, 5600, 2560, 0.6], [205.9, 3700, 2350, 0.3], [209.9, 3500, 2450, 0.32], [211.6, 5750, 2620, 0.78], [229.9, 5900, 2640, 0.82],
   [244.6, 5600, 2700, 0.8], [246.2, 6900, 660, 1.15], [251.5, 6900, 660, 1.2],
-  [266.2, 6200, 1400, 0.5], [268.6, 3840, 2250, 0.31], [269.6, 3840, 2250, 0.32], [271.0, 5500, 2700, 0.9], [276.0, 5650, 2720, 0.85], [278.4, 5300, 2780, 1.35], [281.4, 5300, 2800, 1.3],
+  [266.2, 6200, 1400, 0.5], [268.6, 5300, 2820, 1.4], [269.6, 5300, 2820, 1.45], [271.0, 5500, 2700, 0.9], [276.0, 5650, 2720, 0.85], [278.4, 5300, 2780, 1.35], [281.4, 5300, 2800, 1.3],
 ];
 const BOY_X = 5300;
 const VELAS = [4980, 5420, 6180, 6620];
@@ -83,7 +83,8 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Ficha t={t} t0={207.4} x={520} y={600} label="LIGHTS" color={C.rojo} tacha={207.9} icono={<g><rect x={-8} y={-60} width={16} height={130} fill="#3a3a48" /><circle cx={0} cy={-70} r={30} fill="#ffe08a" /></g>} />
       <Ficha t={t} t0={208.38} x={960} y={600} label="MOON" color={C.rojo} tacha={208.9} icono={<path d="M 30 -60 A 66 66 0 1 0 30 60 A 50 50 0 1 1 30 -60 Z" fill="#fff3b0" />} />
       </>}
-      {t >= 209.62 && t < 210.6 && <><div style={{ position: "absolute", left: 1450, top: 600, width: 560, height: 180, transform: "translate(-50%,-50%)", borderRadius: 28, background: "rgba(14,8,40,.85)", opacity: ent(t, 209.62) }} /><Grande t={t} t0={209.62} text="NOTHING." x={1450} y={600} size={120} color={C.rojo} /></>}
+      {t >= 209.62 && t < 210.6 && <><div style={{ position: "absolute", left: 960, top: 880, width: 560, height: 180, transform: "translate(-50%,-50%)", borderRadius: 28, background: "rgba(14,8,40,.85)", opacity: ent(t, 209.62) }} /><Grande t={t} t0={209.62} text="NOTHING." x={960} y={880} size={120} color={C.rojo} /></>}
+      {t > 204.5 && t < 210.7 && <Yo t={t} t0={204.6} x={1750} h={520} expr="miedo" bD={95} cD={10} bI={95} cI={10} mira={-1} tiembla={t > 206.2 && t < 207.3} />}
       {/* adentro: la luz cuesta plata */}
       <Chip t={t} t0={210.78} t1={212.8} text="INSIDE…" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={60} />
       {t >= 211.48 && t < 212.8 && <Grande t={t} t0={211.48} text="LIGHT COSTS MONEY" y={300} size={120} color={C.oro} />}
@@ -96,9 +97,9 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             <Yo t={t} t0={212.65} x={280} expr={t > 216.6 ? "sorpresa" : "feliz"} bD={t > 216.6 ? 150 : 40} cD={t > 216.6 ? 40 : 30} mira={0.6} />
             {[0, 1, 2].map((i) => { const a = t * 2 + i * 2.1; return <g key={i}><svg style={{ position: "absolute", left: 620 + Math.cos(a) * 260 - 30, top: 420 + Math.sin(a * 1.3) * 120 - 20, overflow: "visible" }} width={60} height={40}><ellipse cx={30} cy={22} rx={26} ry={18} fill="#ffd23a" stroke={C.noche} strokeWidth={5} /><path d="M 20 6 L 20 38 M 34 6 L 34 38" stroke={C.noche} strokeWidth={6} /><ellipse cx={28} cy={2} rx={16} ry={10} fill="#fff" opacity={0.8} /></svg></g>; })}
             <Chip t={t} t0={212.66} text="BEESWAX" color={C.oro} tinta={C.noche} x={1050} y={200} size={80} />
-            <Chip t={t} t0={214.48} text="BURNS CLEAN" color={C.lima} tinta={C.noche} x={1050} y={330} size={54} />
-            <Chip t={t} t0={215.04} text="SMELLS SWEET" color={C.rosa} x={1050} y={430} size={54} />
-            {t >= 216.6 && <Grande t={t} t0={216.6} text="£££££" x={1300} y={620} size={150} color={C.rojo} />}
+            <Chip t={t} t0={214.48} text="BURNS CLEAN" color={C.lima} tinta={C.noche} x={1050} y={330} size={54} t1={216.5} />
+            <Chip t={t} t0={215.04} text="SMELLS SWEET" color={C.rosa} x={1050} y={430} size={54} t1={216.5} />
+            {t >= 216.6 && t < 218.4 && <Grande t={t} t0={216.6} text="£££££" x={1300} y={620} size={150} color={C.rojo} />}
             <Chip t={t} t0={218.48} text="⛪ CHURCH" color={C.violeta} x={1050} y={800} size={54} />
             <Chip t={t} t0={219.44} text="👑 THE LORD'S TABLE" color={C.noche} x={1050} y={900} size={54} />
           </>
@@ -166,6 +167,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* la campana */}
       <Chip t={t} t0={245.93} t1={251.6} text="THE EVENING BELL" color={C.oro} tinta={C.noche} x={campana.x} y={campana.y - 300} centro size={60} />
       {t > 246 && t < 251.6 && [0, 1, 2].map((i) => { const u = ((t - 246) * 0.9 + i / 3) % 1; return <div key={i} style={{ position: "absolute", left: campana.x - 160 - u * 300, top: campana.y - 160 - u * 300, width: 320 + u * 600, height: 320 + u * 600, borderRadius: "50%", border: `10px solid rgba(255,230,150,${0.7 * (1 - u)})` }} />; })}
+      {t > 246.5 && t < 251.7 && <Yo t={t} t0={246.6} x={1650} h={540} expr="miedo" bD={165} cD={150} bI={165} cI={150} tiembla />}
       <Chip t={t} t0={249.82} t1={251.6} text="COVER YOUR FIRES" color={C.rojo} x={960} y={900} centro size={60} />
       <Chip t={t} t0={250.87} t1={251.6} text="GO TO BED" color={C.violeta} x={960} y={990} centro size={50} />
       {/* inserto: couvre-feu → curfew, Guillermo el Conquistador */}

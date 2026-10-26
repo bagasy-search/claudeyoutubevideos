@@ -13,12 +13,12 @@ import { Acostado } from "./T3";
 // y el pago del gancho: Château Gaillard 1204, tomado por el caño de la letrina.
 export const T0 = 415.5, T1 = 550.2;
 export const CAM: Llave[] = [
-  [417.8, 5200, 2850, 1.2], [421.0, 5300, 2800, 1.0], [427.4, 7150, 2700, 1.0], [428.6, 7450, 2400, 1.35], [434.2, 7450, 2420, 1.3],
-  [437.2, 7480, 3150, 0.8], [440.5, 7560, 3550, 0.85], [443.0, 7600, 3400, 0.66], [448.6, 7650, 3250, 0.6],
-  [456.6, 7450, 2400, 1.3], [459.6, 7450, 2420, 1.3], [461.6, 7480, 3000, 0.7], [464.4, 7480, 2950, 0.7], [465.6, 7450, 2400, 1.6], [474.8, 7450, 2420, 1.45],
+  [417.8, 5200, 2850, 1.2], [421.0, 5300, 2800, 1.0], [427.4, 7150, 2700, 1.0], [428.6, 7450, 2370, 2.0], [434.2, 7450, 2380, 2.05],
+  [437.2, 7460, 2950, 1.15], [440.5, 7500, 3480, 1.15], [443.0, 7600, 3400, 0.66], [448.6, 7650, 3250, 0.6],
+  [456.6, 7450, 2370, 2.0], [459.6, 7450, 2380, 2.05], [461.6, 7480, 3000, 0.7], [464.4, 7480, 2950, 0.7], [465.6, 7450, 2370, 2.3], [474.8, 7450, 2380, 2.2],
   [493.0, 7450, 2600, 1.0], [495.0, 7590, 3620, 1.7], [499.9, 7600, 3620, 1.8],
   [511.3, 7640, 3800, 1.0], [513.8, 7450, 2700, 0.72], [538.6, 7450, 2750, 0.72], [542.4, 7450, 2950, 0.66],
-  [544.2, 7450, 2420, 1.3], [546.6, 7250, 2650, 1.0], [549.6, 5350, 2800, 0.95],
+  [544.2, 7450, 2380, 2.0], [546.6, 7250, 2650, 1.0], [549.6, 5350, 2800, 0.95],
 ];
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const PISO = 2965, PISO_L = 2470;
@@ -232,6 +232,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <span style={{ display: "inline-block", transform: `scale(${ent(t, 485.79)})`, fontSize: 120 }}>≈ WARD<span style={{ color: C.oro }}>ROBE</span></span>
             </div>
             {t > 487 && <div style={{ position: "absolute", left: 1180, top: 95, transform: `rotate(4deg) scale(${ent(t, 487.01, 0, { damping: 7, stiffness: 260 })})`, border: `10px solid ${C.violeta}`, borderRadius: 16, padding: "4px 24px", background: "rgba(255,255,255,.92)", fontFamily, fontWeight: 700, fontSize: 52, color: C.violeta, whiteSpace: "nowrap" }}>HISTORIANS ARGUE</div>}
+            <Yo t={t} t0={484.3} x={1650} h={500} y={1070} expr="enojado" bD={160} cD={150} mira={-0.6} flip tiembla={t > 486 && t < 486.6} />
             <Chip t={t} t0={489.79} text="BOTH FROM OLD FRENCH" color={C.noche} x={960} y={720} centro size={56} />
             <Chip t={t} t0={491.41} text="« A PLACE TO GUARD YOUR ROBES »" color={C.oro} tinta={C.noche} x={960} y={830} centro size={56} />
           </>
@@ -246,12 +247,12 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       <Inserto t={t} t0={500.2} t1={511.3} ix={pozo.x} iy={pozo.y} fondo="#c9773a" fondo2="#3a1a10">
         <div style={{ position: "absolute", left: 960, top: 150, transform: `translate(-50%,-50%) scale(${ent(t, 500.39)})`, fontFamily, fontWeight: 700, fontSize: 120, color: C.crema, WebkitTextStroke: `10px ${C.noche}`, paintOrder: "stroke fill", whiteSpace: "nowrap" }}>LONDON · 1281</div>
         {Array.from({ length: 13 }, (_, i) => <Persona key={i} x={260 + i * 108} y={560} h={220} t={t} seed={120 + i} ropa={SIERVO(i)} expr={i % 3 === 0 ? "enojado" : "triste"} aparece={501.9 + i * 0.05} ladea={Math.sin(t * 3 + i) * 5} habla={t > 509.9 && i % 4 === 1} />)}
-        <Chip t={t} t0={502.35} text="13 MEN" color={C.ambar} tinta={C.noche} x={260} y={640} size={54} />
+        <Chip t={t} t0={502.35} text="13 MEN" color={C.ambar} tinta={C.noche} x={260} y={640} size={54} t1={506.7} />
         {Array.from({ length: 5 }, (_, i) => <div key={i} style={{ position: "absolute", left: 760 + i * 140, top: 640, fontSize: 90, transform: `scale(${ent(t, 502.67 + i * 0.12)})` }}>🌙</div>)}
-        <Chip t={t} t0={503.09} text="5 NIGHTS" color={C.violeta} x={1500} y={660} size={54} />
-        <Chip t={t} t0={504.89} text="ONE PRISON CESSPIT" color={C.rojo} x={960} y={820} centro size={58} />
-        {t > 506.5 && ["MISERABLE", "DANGEROUS", "PAID WELL"].map((k, i) => <Chip key={k} t={t} t0={[507.09, 508.29, 509.11][i]} text={k} color={[C.violeta, C.rojo, C.lima][i]} tinta={i === 2 ? C.noche : C.crema} x={360 + i * 520} y={950} size={54} />)}
-        {t > 509.2 && [0, 1, 2, 3].map((i) => <Moneda key={i} x={1540 + i * 70} y={interpolate(t, [509.2 + i * 0.08, 509.6 + i * 0.08], [800, 900], cl)} r={30} t={t} gira={2} />)}
+        <Chip t={t} t0={503.09} text="5 NIGHTS" color={C.violeta} x={1500} y={660} size={54} t1={506.7} />
+        <Chip t={t} t0={504.89} text="ONE PRISON CESSPIT" color={C.rojo} x={960} y={820} centro size={58} t1={506.9} />
+        {t > 506.5 && ["MISERABLE", "DANGEROUS", "PAID WELL"].map((k, i) => <Chip key={k} t={t} t0={[507.09, 508.29, 509.11][i]} text={k} color={[C.violeta, C.rojo, C.lima][i]} tinta={i === 2 ? C.noche : C.crema} x={240 + i * 470} y={880} size={58} />)}
+        {t > 509.2 && [0, 1, 2, 3].map((i) => <Moneda key={i} x={1600 + i * 55} y={interpolate(t, [509.2 + i * 0.08, 509.6 + i * 0.08], [800, 900], cl)} r={30} t={t} gira={2} />)}
         {t >= 509.91 && <Grande t={t} t0={509.91} text="WHO ELSE WOULD DO IT?" y={300} size={100} color={C.crema} />}
       </Inserto>
       {/* el gancho se paga: el punto débil */}
@@ -282,10 +283,10 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                 <>
                   <Chip t={t} t0={523.43} text="ONE FAMOUS VERSION…" color={C.noche} x={110} y={230} size={50} />
                   <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: "inset(0 0 360px 0)" }} />
-                  <Persona x={subeX} y={subeY + 140} h={190} t={t} seed={31} ropa={GUARDIA} casco="medieval" expr="enojado" bI={170} bD={170} cI={10} cD={10} aparece={525.87} />
+                  <Persona x={subeX} y={subeY + 300} h={360} t={t} seed={31} ropa={GUARDIA} casco="medieval" expr="enojado" bI={170} bD={170} cI={10} cD={10} aparece={525.87} />
                   {[0, 1, 2].map((i) => <Persona key={i} x={1360 - i * 110} y={1000} h={240} t={t} seed={32 + i} ropa={GUARDIA} casco="medieval" expr="feliz" aparece={526.8 + i * 0.1} flip />)}
                   <Chip t={t} t0={526.79} text="A SOLDIER + A FEW COMPANIONS" color={C.ambar} tinta={C.noche} x={110} y={330} size={46} />
-                  {t >= 528.75 && t < 533.6 && <Grande t={t} t0={528.75} text="UP THE TOILET CHUTE" x={540} y={610} size={66} color={C.oro} />}
+                  {t >= 528.75 && t < 533.6 && <Grande t={t} t0={528.75} text="UP THE TOILET CHUTE" x={530} y={560} size={54} color={C.oro} />}
                   {t > 530.1 && (
                     <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
                       <path d="M 1300 1000 Q 1180 700 1240 455" stroke="#fff" strokeWidth={10} strokeDasharray="24 18" fill="none" pathLength={100} strokeDashoffset={100 - 100 * prog(t, 530.4, 531.9)} />

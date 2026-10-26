@@ -14,7 +14,7 @@ export const T0 = 660.9, T1 = 749.5;
 export const CAM: Llave[] = [
   [661.6, 2620, 1880, 1.0], [663.4, 2620, 1860, 1.35], [664.7, 2620, 1860, 1.35], [666.6, 2620, 1950, 0.9], [668.5, 2620, 1980, 1.0],
   [674.4, 2620, 1960, 1.05], [676.2, 2620, 1900, 1.15], [680.8, 2620, 1880, 1.25], [682.2, 2620, 1900, 1.1],
-  [729.9, 2620, 1920, 1.05], [735.8, 2620, 1900, 1.15], [737.6, 2620, 2000, 0.9], [741.6, 2620, 1900, 1.25],
+  [729.9, 2620, 1920, 1.05], [732.8, 2620, 1900, 1.1], [734.0, 2650, 1800, 2.0], [736.6, 2660, 1810, 2.1], [737.8, 2620, 2000, 0.9], [741.6, 2620, 1900, 1.25],
   [743.2, 1650, 3350, 0.8], [745.6, 1600, 3400, 0.85], [747.6, 1950, 2900, 0.6], [749.3, 2050, 2800, 0.6],
 ];
 const cl = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
@@ -99,7 +99,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
         </>
       )}
       <Chip t={t} t0={676.09} t1={681.3} text="A FEW TIRED MEN" color={C.violeta} x={160} y={150} size={58} />
-      {[["IN THE COLD", "#bfefff", 677.27], ["IN THE DARK", C.noche, 678.09], ["AT 2 AM", C.teal, 678.77], ["AFTER A GALLON OF ALE", C.ambar, 679.89]].map(([k, col, t0], i) => (
+      {[["IN THE COLD", "#bfefff", 677.27], ["IN THE DARK", C.noche, 678.09], ["AT 2 AM", C.teal, 678.77], ["AFTER A GALLON OF ALE", C.ambar, 679.55]].map(([k, col, t0], i) => (
         <Chip key={i} t={t} t0={t0 as number} t1={681.3} text={k as string} color={col as string} tinta={i === 1 ? C.crema : C.noche} x={160} y={250 + i * 80} size={44} />
       ))}
       {t > 677.3 && t < 681.3 && <Emote t={t} t0={677.4} tipo="sudor" {...cabeza(g.x, g.y, 330 * c.z)} />}
@@ -127,6 +127,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <Chip t={t} t0={688.43} text="ON THE SCOTTISH BORDER" color={C.teal} tinta={C.noche} x={110} y={410} size={42} />
               <Chip t={t} t0={689.81} text="THE NIGHT BEFORE LENT" color={C.oro} tinta={C.noche} x={110} y={510} size={50} />
               {t > 691.1 && ["🍗", "🍺", "🎶", "🍺"].map((k, i) => <div key={i} style={{ position: "absolute", left: 1300 + i * 120, top: 470 - Math.abs(Math.sin(t * 5 + i)) * 30, fontSize: 64, transform: `scale(${ent(t, 691.2 + i * 0.2)})` }}>{k}</div>)}
+              {t > 689.9 && [1330, 1560, 1700].map((x, i) => <Persona key={x} x={x} y={425} h={170} t={t} seed={160 + i} ropa={GUARDIA} casco="medieval" expr="feliz" habla aparece={689.92 + i * 0.03} bD={150} cD={40 + Math.sin(t * 6 + i) * 30} salta={691.3 + i * 0.4} />)}
               <Chip t={t} t0={691.15} text="THE GARRISON IS PARTYING" color={C.lima} tinta={C.noche} x={1160} y={940} size={46} />
             </>
           );
@@ -144,7 +145,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                   <>
                     <Persona x={1340} y={420} h={170} t={t} seed={22} ropa={GUARDIA} casco="medieval" expr="neutro" mira={-1} miraY={0.6} aparece={703.0} />
                     <Chip t={t} t0={701.43} text="THE OLD CHRONICLE SAYS…" color={C.tierra} x={110} y={240} size={50} />
-                    {t > 704.7 && <div style={{ position: "absolute", left: 1160, top: 120, width: 520, height: 230, borderRadius: 120, background: "#fff", border: `8px solid ${C.noche}`, transform: `scale(${ent(t, 704.8)})` }}>{t > 708.4 && [0, 1, 2].map((i) => <Vaca key={i} x={110 + i * 150} y={190} s={0.42} t={t} />)}</div>}
+                    {t > 704.7 && <div style={{ position: "absolute", left: 810, top: 90, width: 480, height: 230, borderRadius: 120, background: "#fff", border: `8px solid ${C.noche}`, transform: `scale(${ent(t, 704.8)})` }}>{t > 708.4 && [0, 1, 2].map((i) => <Vaca key={i} x={110 + i * 150} y={190} s={0.42} t={t} />)}</div>}
                     <Chip t={t} t0={705.39} text="DARK SHAPES IN THE FIELD" color={C.violeta} x={110} y={330} size={46} />
                     {t >= 708.47 && <><div style={{ position: "absolute", left: 960, top: 560, width: 1260, height: 160, transform: "translate(-50%,-50%)", borderRadius: 30, background: "rgba(14,8,40,.85)", opacity: ent(t, 708.47) }} /><Grande t={t} t0={708.47} text="«JUST A FARMER'S CATTLE»" y={560} size={84} color={C.crema} /></>}
                   </>
@@ -185,7 +186,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <Chip t={t} t0={714.09} text="SAME YEAR, A FEW WEEKS LATER" color={C.violeta} x={110} y={200} size={44} />
               <Chip t={t} t0={718.27} text="AT NIGHT" color={C.noche} x={110} y={280} size={50} />
               <Chip t={t} t0={719.21} text="BY CLIMBING THE CLIFF" color={C.rojo} x={110} y={360} size={50} />
-              {t > 719.2 && [0, 1, 2, 3].map((k) => <Persona key={k} x={1440 - (k % 2) * 60 + Math.sin(t * 5 + k) * 8} y={interpolate(t, [719.3 + k * 0.7, 729.0 + k * 0.7], [1010, 470], cl)} h={260} t={t} seed={71 + k} ropa={DOUGLAS} expr={t > 727.8 && k === 0 ? "feliz" : "enojado"} bI={155 + Math.sin(t * 9 + k) * 18} bD={155 - Math.sin(t * 9 + k) * 18} cI={10} cD={10} aparece={720.6 + k * 0.9} />)}
+              {t > 714.3 && [0, 1, 2, 3].map((k) => <Persona key={k} x={1440 - (k % 2) * 60 + Math.sin(t * 5 + k) * 8} y={interpolate(t, [714.4 + k * 0.4, 729.0 + k * 0.5], [960 - k * 70, 470], cl)} h={300} t={t} seed={71 + k} ropa={DOUGLAS} expr={t > 727.8 && k === 0 ? "feliz" : "enojado"} bI={155 + Math.sin(t * 9 + k) * 18} bD={155 - Math.sin(t * 9 + k) * 18} cI={10} cD={10} aparece={714.5 + k * 0.4} />)}
               <Chip t={t} t0={720.57} text="ONE MAN USED TO BE IN THE GARRISON" color={C.teal} tinta={C.noche} x={110} y={480} size={40} />
               {t >= 724.23 && t < 725.6 && <Grande t={t} t0={724.23} text="A SECRET PATH" y={540} size={90} color={C.oro} />}
               {t > 727.8 && <div style={{ position: "absolute", left: 1600, top: 760, fontSize: 110, transform: `scale(${ent(t, 728.17, 0, { damping: 6, stiffness: 240 }) * (1 + 0.08 * Math.sin(t * 10))})` }}>❤️</div>}

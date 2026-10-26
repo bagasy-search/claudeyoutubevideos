@@ -15,7 +15,7 @@ export const T0 = 550.2, T1 = 660.9;
 export const CAM: Llave[] = [
   [551.0, 5300, 2820, 1.0], [552.6, 5300, 2860, 1.5], [556.3, 5300, 2870, 1.6],
   [576.6, 5300, 2870, 1.6], [580.4, 5800, 2820, 1.15], [583.4, 5850, 2800, 0.95], [585.6, 5300, 2900, 1.6], [588.0, 5300, 2900, 1.6],
-  [589.6, 4600, 3000, 0.75], [590.6, 3400, 3260, 0.95], [592.1, 3420, 3260, 1.0], [593.3, 6150, 2850, 1.05], [594.9, 6150, 2880, 1.1], [595.7, 6150, 2920, 2.0],
+  [589.6, 4600, 3200, 0.9], [590.6, 3300, 3560, 1.7], [592.1, 3310, 3570, 1.75], [593.3, 6150, 2850, 1.05], [594.9, 6150, 2880, 1.1], [595.7, 6150, 2920, 2.0],
   [596.6, 6100, 2850, 1.0], [601.6, 6150, 2830, 0.95], [603.4, 6150, 2830, 0.75], [605.4, 6150, 2850, 0.8], [607.2, 6100, 2900, 1.2],
   [654.9, 5300, 2870, 1.5], [656.9, 5300, 2880, 1.6], [658.2, 4300, 2400, 0.75], [660.6, 2620, 1880, 1.0],
 ];
@@ -51,6 +51,8 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
       {t > 551.6 && <Manta x={5320} y={PISO - 30} s={0.8} t={t} w={300} cubre={1 + tapado * 1.4} />}
       {/* ratas */}
       {RATAS.map(([x0, x1, y, t0, d], i) => t > t0 && t < t0 + d + 0.1 && <Rata key={i} x={interpolate(t, [t0, t0 + d], [x0, x1], cl)} y={y} s={0.5} t={t} flip={x1 < x0} />)}
+      {/* una rata te camina por encima de la manta */}
+      {t > 585.7 && t < 588.2 && <Rata x={interpolate(t, [585.8, 588.0], [5080, 5420], cl)} y={PISO - 70 - Math.sin(prog(t, 585.8, 588.0) * Math.PI) * 25} s={0.75} t={t} />}
       {/* la paja del techo y los muros se mueven */}
       {t > 582.4 && t < 584.4 && (
         <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
@@ -74,7 +76,7 @@ export const Mundo: React.FC<{ t: number; c: CamP }> = ({ t }) => {
 
 // barra de la noche: primer sueño / despierto / segundo sueño
 const Barra: React.FC<{ t: number }> = ({ t }) => {
-  const X0 = 210, W = 1500, Y = 520;
+  const X0 = 210, W = 1400, Y = 520;
   const tramo = (a: number, b: number, col: string, t0: number, label: string, ly: number) => {
     const u = prog(t, t0, t0 + 0.7);
     return (
@@ -86,8 +88,7 @@ const Barra: React.FC<{ t: number }> = ({ t }) => {
   };
   return (
     <>
-      <div style={{ position: "absolute", left: X0 - 150, top: Y + 10, fontSize: 90 }}>🌇</div>
-      <div style={{ position: "absolute", left: X0 + W + 30, top: Y + 10, fontSize: 90, opacity: ent(t, 575.3) }}>🌅</div>
+            <div style={{ position: "absolute", left: X0 + W - 70, top: Y - 150, fontSize: 84, opacity: ent(t, 575.3) }}>🌅</div>
       {tramo(0, 0.42, "#3b4cc0", 562.4, "FIRST SLEEP", Y - 60)}
       {tramo(0.43, 0.57, C.ambar, 568.2, "AWAKE ~1 HOUR", Y + 200)}
       {tramo(0.58, 1, "#3b4cc0", 563.6, "SECOND SLEEP", Y - 60)}
@@ -128,12 +129,12 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
             <Persona x={560} y={960} h={480} t={t} seed={60} ropa={{ tunica: "#3a3a48", tunica2: "#22222e", cinto: "#a8743a", piel: "#f2c6a0", piel2: "#d99a78", pelo: "#7a5a3a" }} expr="orgullo" aparece={557.5} habla={t > 558 && t < 562} bD={120} cD={30} />
             <Chip t={t} t0={558.0} text="HISTORIAN ROGER EKIRCH" color={C.teal} tinta={C.noche} x={820} y={420} size={56} />
             {t > 559.7 && Array.from({ length: 14 }, (_, i) => <div key={i} style={{ position: "absolute", left: 860 + (i % 7) * 140, top: 560 + Math.floor(i / 7) * 190, width: 110, height: 150, background: "#f3e2b8", border: `6px solid ${C.noche}`, borderRadius: 8, transform: `rotate(${(i % 3 - 1) * 8}deg) scale(${ent(t, 559.8 + i * 0.07)})`, boxShadow: "0 8px 0 rgba(0,0,0,.3)" }}>{[0, 1, 2, 3].map((k) => <div key={k} style={{ margin: "16px 12px 0", height: 8, background: "#a8743a", borderRadius: 4 }} />)}</div>)}
-            <Chip t={t} t0={559.79} text="HUNDREDS OF OLD REFERENCES" color={C.oro} tinta={C.noche} x={860} y={960} size={50} />
+            <Chip t={t} t0={559.79} text="HUNDREDS OF OLD REFERENCES" color={C.oro} tinta={C.noche} x={860} y={890} size={50} />
           </>
         ) : (
           <>
             <Barra t={t} />
-            <Yo t={t} t0={562.35} x={1730} h={460} y={1060} expr={t > 568.1 && t < 574.6 ? "sorpresa" : "dormido"} habla={t > 571.5 && t < 574.5} bD={t > 571.5 && t < 574.5 ? 110 : 10} cD={t > 571.5 && t < 574.5 ? 40 : 10} mira={-0.6} flip />
+            <Yo t={t} t0={562.35} x={1760} h={430} y={1000} expr={t > 568.1 && t < 574.6 ? "sorpresa" : "dormido"} habla={t > 571.5 && t < 574.5} bD={t > 571.5 && t < 574.5 ? 110 : 10} cD={t > 571.5 && t < 574.5 ? 40 : 10} mira={-0.6} flip />
             <Chip t={t} t0={564.61} t1={566.8} text="BED SOON AFTER DARK" color={C.violeta} x={960} y={880} centro size={54} />
             <Chip t={t} t0={566.87} t1={568.1} text="A FEW HOURS…" color="#3b4cc0" x={960} y={880} centro size={54} />
             <Chip t={t} t0={568.17} t1={571.4} text="WIDE AWAKE IN THE MIDDLE OF THE NIGHT" color={C.ambar} tinta={C.noche} x={960} y={880} centro size={50} />
@@ -182,7 +183,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
               <div style={{ margin: "60px 40px", padding: 20, border: `6px solid ${C.oro}`, fontFamily, fontWeight: 700, fontSize: 46, color: C.oro, textAlign: "center", lineHeight: 1.2 }}>HOUSEHOLD<br />GUIDE</div>
               {t > 614.4 && <div style={{ position: "absolute", left: 40, right: 40, bottom: 60, background: "#f3e2b8", borderRadius: 10, padding: 14, fontFamily, fontWeight: 700, fontSize: 32, color: C.noche, textAlign: "center", transform: `scale(${ent(t, 614.6)})` }}>CHAPTER: FLEAS<br />IN YOUR BEDROOM</div>}
             </div>
-            <Persona x={430} y={960} h={480} t={t} seed={61} ropa={ESPOSO} viejo expr="orgullo" aparece={611.75} habla={t > 612 && t < 614} bD={110} cD={20} />
+            <Persona x={430} y={960} h={480} t={t} seed={61} ropa={ESPOSO} viejo expr="orgullo" aparece={608.0} habla={t > 612 && t < 614} bD={110} cD={20} />
             <Persona x={1500} y={960} h={420} t={t} seed={62} ropa={ESPOSA} expr="sorpresa" aparece={613.07} flip />
             <Chip t={t} t0={611.99} text="AN OLDER HUSBAND" color={C.violeta} x={430} y={1010} centro size={46} />
             <Chip t={t} t0={613.07} text="…FOR HIS YOUNG WIFE" color={C.rosa} x={1500} y={1010} centro size={46} />
@@ -191,7 +192,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
           <>
             <Chip t={t} t0={617.13} text="TRICK #1" color={C.rojo} x={960} y={110} centro size={64} />
             {[[460, 620], [960, 820], [1460, 620], [960, 420]].map(([x, y], i) => <div key={i} style={{ position: "absolute", left: x - 140, top: y - 60, width: 280, height: 120, background: "radial-gradient(ellipse at 50% 45%, #f6dca0 55%, #d9a45a 70%)", border: `14px solid #9a5a22`, borderRadius: "60px 60px 34px 34px", boxShadow: "inset 0 0 0 6px rgba(255,255,255,.55)", transform: `scale(${ent(t, 618.2 + i * 0.25)})` }}><div style={{ margin: "14px 18px", height: 70, borderRadius: 30, background: "#d6e8f2", opacity: prog(t, 619.6, 620.2) * 0.9 }} /></div>)}
-            <Yo t={t} t0={617.2} x={1670} h={470} y={1070} expr={t > 624.8 ? "feliz" : t > 622.2 ? "sorpresa" : "orgullo"} bD={t < 622.2 ? 90 : 140} cD={t < 622.2 ? 60 : 30} mira={-0.7} flip />
+            <Yo t={t} t0={617.2} x={1590} h={450} y={1040} expr={t > 624.8 ? "feliz" : t > 622.2 ? "sorpresa" : "orgullo"} bD={t < 622.2 ? 90 : 140} cD={t < 622.2 ? 60 : 30} mira={-0.7} flip />
             <Chip t={t} t0={618.17} text="BREAD SLICES" color={C.oro} tinta={C.noche} x={160} y={220} size={50} />
             <Chip t={t} t0={619.57} text="+ STICKY GLUE" color={C.teal} tinta={C.noche} x={160} y={310} size={50} />
             {t > 622.2 && <div style={{ position: "absolute", left: 0, top: 0 }}><PanTrampa x={960} y={620} s={0.75} t={t} t0={622.3} /></div>}
@@ -233,7 +234,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
       {/* inserto: la Peste Negra */}
       <Inserto t={t} t0={634.95} t1={655.4} ix={960} iy={540} ox={yo.x} oy={yo.y} fondo="#3a1a2a" fondo2="#08040c">
         {(() => {
-          const enOla = prog(t, 640.2, 644.0);
+          const enOla = prog(t, 638.4, 643.0);
           return (
             <>
               {t < 635.9 && <Grande t={t} t0={634.95} text="IT WAS NOT." y={540} size={160} color={C.crema} />}
@@ -243,7 +244,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                   <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
                     <path d="M 900 300 L 980 290 L 1010 360 L 990 430 L 1050 500 L 1080 600 L 1120 700 L 1090 780 L 980 800 L 860 820 L 830 760 L 900 700 L 870 620 L 890 540 L 850 470 L 880 400 Z" fill="#5a8a4a" stroke="#fff" strokeWidth={8} />
                     <path d="M 900 300 L 980 290 L 1010 360 L 990 430 L 1050 500 L 1080 600 L 1120 700 L 1090 780 L 980 800 L 860 820 L 830 760 L 900 700 L 870 620 L 890 540 L 850 470 L 880 400 Z" fill="#2a1a1a" opacity={0.85} style={{ clipPath: `inset(${(1 - enOla) * 100}% 0 0 0)` }} />
-                    {t > 640.2 && Array.from({ length: 8 }, (_, i) => <circle key={i} cx={980 + Math.sin(i * 2) * 100} cy={780 - enOla * 420 + i * 50} r={10} fill={C.rojo} />)}
+                    {t > 638.4 && Array.from({ length: 8 }, (_, i) => <circle key={i} cx={980 + Math.sin(i * 2) * 100} cy={780 - enOla * 420 + i * 50} r={10} fill={C.rojo} />)}
                   </svg>
                   <Chip t={t} t0={638.35} text="A DISEASE ARRIVES IN ENGLAND" color={C.rojo} x={110} y={420} size={46} />
                   <Chip t={t} t0={640.29} text="CARRIED (PARTLY) BY FLEAS" color={C.ambar} tinta={C.noche} x={1150} y={420} size={44} />
@@ -271,6 +272,7 @@ export const Capa: React.FC<{ t: number; c: CamP }> = ({ t, c }) => {
                     <rect x={560} y={330} width={800} height={500} fill="#8a8a9a" stroke="#4a4a5a" strokeWidth={70} />
                     {[560, 720, 880, 1040, 1200].map((x) => <rect key={x} x={x - 35} y={260} width={100} height={70} fill="#8a8a9a" />)}
                   </svg>
+                  {[760, 960, 1160].map((x, i) => <Persona key={x} x={x} y={800} h={280} t={t} seed={150 + i} ropa={i === 1 ? GUARDIA : SIERVO(i)} casco={i === 1 ? "medieval" : "no"} expr={t > 653.8 ? "miedo" : "orgullo"} aparece={651.93 + i * 0.02} salta={t > 653.8 ? 653.9 + i * 0.1 : undefined} />)}
                   <Chip t={t} t0={651.97} text="THICK WALLS" color={C.violeta} x={960} y={190} centro size={60} />
                   {t > 652.6 && <div style={{ position: "absolute", left: 1220, top: 180, transform: `rotate(-10deg) scale(${ent(t, 652.83, 0, { damping: 7, stiffness: 260 })})`, border: `10px solid ${C.rojo}`, borderRadius: 16, padding: "4px 24px", background: "rgba(255,255,255,.92)", fontFamily, fontWeight: 700, fontSize: 52, color: C.rojo, whiteSpace: "nowrap" }}>DID NOT HELP</div>}
                   {t > 653.7 && Array.from({ length: 6 }, (_, i) => <div key={i} style={{ position: "absolute", left: 0, top: 0 }}><Rata x={interpolate(t, [653.7 + i * 0.1, 655.2], [700 + i * 100, 1250 - i * 90], cl)} y={780 - (i % 2) * 120} s={0.7} t={t} flip={i % 2 === 1} /></div>)}
