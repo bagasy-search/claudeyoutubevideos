@@ -252,7 +252,7 @@ export const P6Pant: React.FC<{ t: number }> = ({ t }) => (
     <Titulo t={t} t0={604.75} t1={609.2} text="HOW DO YOU SURVIVE THIS?" y={200} size={96} color={C.crema} />
     <Chip t={t} t0={609.4} t1={611.1} text="FRANZ HAD A STRATEGY" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />
     <Chip t={t} t0={611.2} t1={613.4} text="A JOB FAMOUS FOR HEAVY DRINKING" color={C.violeta} x={960} y={150} centro size={56} />
-    <Cuenta t={t} t0={613.45} t1={618.2} de={0} a={0} dur={0.5} x={960} y={250} size={150} pre="WINE: " suf=" DROPS" color={C.lima} />
+    <Cuenta t={t} t0={613.45} t1={618.2} de={0} a={0} dur={0.5} x={640} y={300} size={130} pre="WINE: " suf=" DROPS" color={C.lima} />
     <Titulo t={t} t0={618.3} t1={622.5} text="STONE COLD SOBER" y={200} size={120} color={C.lima} borde="#1b2a10" />
     <Chip t={t} t0={622.7} t1={624.5} text="AND HIS JOURNAL SHOWS..." color={C.violeta} x={960} y={150} centro size={58} />
     <Grafico t={t} />

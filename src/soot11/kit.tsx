@@ -207,8 +207,8 @@ export const Chip: React.FC<{ t: number; t0: number; t1?: number; text: string; 
     return (
       <div style={{ position: "absolute", left: xs, top: ys, transform: `translate(-50%, -50%) scale(${out})`, fontFamily, fontWeight: 700, fontSize: sz, whiteSpace: "nowrap", lineHeight: 1.1, letterSpacing: 1 }}>
         {pal.map((w, i) => {
-          const si = ent(t, t0 + i * 0.07, 0, { damping: 10, stiffness: 210 });
-          return <span key={i} style={{ display: "inline-block", marginRight: i < pal.length - 1 ? sz * 0.42 : 0, opacity: Math.min(1, si * 1.6), transform: `translateY(${(1 - si) * 40}px) scale(${0.7 + 0.3 * Math.min(1, si)})`, color: relleno, WebkitTextStroke: `${sz * 0.1}px ${borde}`, paintOrder: "stroke fill", textShadow: `0 ${sz * 0.08}px 0 ${borde}` }}>{w}</span>;
+          const si = clamp((t - t0 - i * 0.05) / 0.12, 0, 1);
+          return <span key={i} style={{ display: "inline-block", marginRight: i < pal.length - 1 ? sz * 0.42 : 0, opacity: si, transform: `translateY(${(1 - si) * 10}px)`, color: relleno, WebkitTextStroke: `${sz * 0.1}px ${borde}`, paintOrder: "stroke fill", textShadow: `0 ${sz * 0.08}px 0 ${borde}` }}>{w}</span>;
         })}
         <div style={{ position: "absolute", left: "50%", bottom: -sz * 0.18, height: sz * 0.14, width: `${sub * 70}%`, transform: "translateX(-50%) rotate(-1deg)", background: tinta === "#fff" ? color : C.noche, borderRadius: sz * 0.07, boxShadow: "0 4px 0 rgba(20,10,50,.35)" }} />
       </div>

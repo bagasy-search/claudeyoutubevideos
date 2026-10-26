@@ -76,7 +76,7 @@ export const P8K: Llave[] = [
   [857.6, PLAZA, 560, 1.0, 1.2, 0.35],
   [860.0, PLAZA, 520, 1.5, 0.8],
   [864.9, PLAZA, 600, 1.15, 0.8],
-  [867.9, CEM, 420, 0.95, 1.0],
+  [867.9, CEM, 560, 0.95, 1.0],
   [869.6, CEM, 560, 0.9, 1.4],
   [873.1, CEM + 80, 580, 1.4, 1.0],
   [877.6, CEM, 480, 0.7, 1.6],
@@ -142,7 +142,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
         </>
       )}
       {/* ── el diario: lo que aprendió del cuerpo */}
-      {vig(t, 750.0, 764.9) && <Franz x={6700} y={SUELO - 10} t={t} flip expr="neutro" mira={-1} bD={70} cD={70} />}
+      {vig(t, 750.9, 764.9) && <Franz x={6700} y={SUELO - 10} t={t} flip expr="neutro" mira={-1} bD={70} cD={70} />}
       {/* ── el doctor del libro viejo, en la plaza */}
       {vig(t, 763.6, 782.6) && (
         <>
@@ -176,7 +176,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           <Persona x={interp(t, [782.2, 783.6, 785.4, 788.4], [PLAZA + 300, PLAZA + 300, 5900, ATRAS + 140])} y={SUELO - 20} h={280} t={t} seed={810} ropa={{ ...CIVIL(140), tunica: "#d8443a" }} gorro="capucha" capa="#1b2440"
             camina={vig(t, 782.2, 783.6) || vig(t, 785.4, 788.4) ? 1.4 : 0} flip={vig(t, 783.6, 785.4) ? Math.sin(t * 3) > 0 : false} mira={vig(t, 783.6, 785.4) ? Math.sign(Math.sin(t * 3)) : 0} expr="miedo" bD={t > 788.4 ? 130 : 60} cD={t > 788.4 ? 40 : 110} manoD={t > 788.4 ? undefined : <Cabestrillo />} />
           {vig(t, 783.6, 785.4) && <Emote t={t} t0={783.7} tipo="preg" x={5300} y={SUELO - 380} s={0.7} />}
-          {t > 788.4 && <TextoMundo x={ATRAS + 40} y={SUELO - 420} text="KNOCK KNOCK" size={60} color={C.ambar} borde="#2b1c14" rot={-6} />}
+          {t > 788.4 && <TextoMundo x={ATRAS + 40} y={SUELO - 330} text="KNOCK KNOCK" size={60} color={C.ambar} borde="#2b1c14" rot={-6} />}
         </>
       )}
       {/* ── esa mañana: el mercader se tira al barro para no rozarte la manga */}
@@ -289,8 +289,9 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           })}</Svg>
           {t > 869.0 && <G x={CEM} y={SUELO} s={1.7}><path d="M -70 0 L -70 -200 Q 0 -280 70 -200 L 70 0 Z" fill="#d8d4e0" stroke="#6a6676" strokeWidth={6} /><text x={0} y={-150} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#3a3646">FRANZ</text><text x={0} y={-114} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={30} fill="#3a3646">SCHMIDT</text><text x={0} y={-70} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={34} fill="#3a3646">1634</text>
             <path d="M -60 -10 Q 0 -40 60 -10" stroke="#3a8a3a" strokeWidth={10} fill="none" /></G>}
-          {t > 870.0 && <Gente t={t} x0={CEM - 700} x1={CEM - 200} n={5} y={SUELO + 20} h={290} seed={870} expr="triste" mira={1} />}
-          {t > 870.0 && <Gente t={t} x0={CEM + 200} x1={CEM + 700} n={5} y={SUELO + 20} h={290} seed={875} expr="triste" mira={-1} />}
+          {t > 866.8 && <Gente t={t} x0={CEM - 700} x1={CEM - 200} n={5} y={SUELO + 20} h={290} seed={870} expr="triste" mira={1} />}
+          {t > 866.8 && <Gente t={t} x0={CEM + 200} x1={CEM + 700} n={5} y={SUELO + 20} h={290} seed={875} expr="triste" mira={-1} />}
+          {t > 876.0 && <G x={CEM + 60} y={SUELO + 4} s={1.4 * clamp((t - 876) / 0.4, 0, 1)}><line x1={0} y1={0} x2={0} y2={-70} stroke="#3a7a1a" strokeWidth={6} />{[[-16, -78, C.rosa], [14, -86, C.ambar], [0, -98, C.rojo]].map(([x, y, c], i) => <circle key={i} cx={x as number} cy={y as number} r={15} fill={c as string} />)}</G>}
           {vig(t, 873.1, 877.6) && <TextoMundo x={CEM} y={SUELO - 420} text="AMONG THE HONORABLE" size={56} color={C.oro} borde="#2b1c14" />}
           <Particulas t={t} tipo="polvo" n={20} seed={16} />
         </>
@@ -310,7 +311,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           <Svg><rect x={7020} y={SUELO - 240} width={72} height={230} fill="#ffd27a" stroke="#4a2810" strokeWidth={6} /></Svg>
           {t > 891.9 && <Franz x={ATRAS - 60} y={SUELO - 10} t={t} expr="feliz" bD={100} cD={40} manoD={<g><rect x={-14} y={-10} width={28} height={40} rx={6} fill="#ffd27a" stroke="#4a2810" strokeWidth={4} /></g>} flip />}
           {t > 891.9 && <Persona x={ATRAS + 140} y={SUELO - 20} h={290} t={t} seed={890} ropa={CIVIL(180)} gorro="capucha" capa="#1b2440" flip expr="miedo" bD={110} cD={120} manoD={<Cabestrillo />} />}
-          {vig(t, 893.4, 898.4) && <TextoMundo x={ATRAS + 40} y={SUELO - 420} text="2. YOUR BONES" size={90} color={C.ambar} borde="#2b1c14" />}
+          {vig(t, 893.4, 896.3) && <TextoMundo x={ATRAS + 40} y={SUELO - 420} text="2. YOUR BONES" size={90} color={C.ambar} borde="#2b1c14" />}
         </>
       )}
       {/* ── el que mejor conocía a todos: hilos de oro de su casa a cada ventana */}
@@ -323,7 +324,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
             const mx = (x0 + x) / 2, my = Math.min(y0, y1) - 600 - Math.abs(x - x0) * 0.1;
             const px = x0 + (x - x0) * u, py = (1 - u) * (1 - u) * y0 + 2 * (1 - u) * u * my + u * u * y1;
             const qx = x0 + (mx - x0) * u, qy = y0 + (my - y0) * u;
-            return <g key={i}><path d={`M ${x0} ${y0} Q ${qx} ${qy} ${px} ${py}`} stroke={C.oro} strokeWidth={30} fill="none" strokeLinecap="round" /><path d={`M ${x0} ${y0} Q ${qx} ${qy} ${px} ${py}`} stroke="#fff3c0" strokeWidth={10} fill="none" strokeLinecap="round" />{u >= 1 && <rect x={px - 60} y={py - 70} width={120} height={140} rx={10} fill="#ffd27a" stroke="#4a2810" strokeWidth={10} />}<circle cx={px} cy={py} r={u >= 1 ? 46 + Math.sin(t * 5 + i) * 8 : 34} fill="#fff3c0" stroke={C.oro} strokeWidth={8} /></g>;
+            return <g key={i}><path d={`M ${x0} ${y0} Q ${qx} ${qy} ${px} ${py}`} stroke={C.oro} strokeWidth={14} strokeDasharray="40 26" fill="none" strokeLinecap="round" opacity={0.85} /><path d={`M ${x0} ${y0} Q ${qx} ${qy} ${px} ${py}`} stroke="#fff3c0" strokeWidth={5} fill="none" strokeLinecap="round" />{u >= 1 && <rect x={px - 60} y={py - 70} width={120} height={140} rx={10} fill="#ffd27a" stroke="#4a2810" strokeWidth={10} />}<circle cx={px} cy={py} r={u >= 1 ? 46 + Math.sin(t * 5 + i) * 8 : 34} fill="#fff3c0" stroke={C.oro} strokeWidth={8} /></g>;
           })}
           <circle cx={CASA} cy={SUELO - 420} r={110 + Math.sin(t * 4) * 12} fill="#fff3c0" stroke={C.oro} strokeWidth={14} />
         </Svg>
@@ -404,13 +405,13 @@ const Recap: React.FC<{ t: number }> = ({ t }) => {
   const items: [string, number][] = [["TOUCHED HIM", 882.05], ["SAT WITH HIM", 883.2], ["MARRIED IN", 884.45], ["CARRIED HIS COFFIN", 886.15]];
   const out = clamp((888.1 - t) / 0.3, 0, 1);
   return (
-    <div style={{ position: "absolute", left: 960, top: 330, transform: `translate(-50%,-50%) scale(${out * 0.86})`, display: "flex", gap: 26, fontFamily, fontWeight: 700 }}>
+    <div style={{ position: "absolute", left: 960, top: 330, transform: `translate(-50%,-50%) scale(${out})`, display: "flex", gap: 22, fontFamily, fontWeight: 700 }}>
       {items.map(([x, t0], i) => {
         const e = clamp((t - t0) / 0.25, 0, 1);
         return (
           <div key={x} style={{ width: 380, background: "rgba(27,18,64,.9)", borderRadius: 26, padding: "22px 16px", textAlign: "center", transform: `scale(${e}) rotate(${(i % 2 ? 1 : -1) * 3}deg)`, boxShadow: "0 10px 0 rgba(10,5,30,.4)" }}>
-            <div style={{ fontSize: 34, color: "#fff3d6" }}>NOBODY</div>
-            <div style={{ fontSize: 40, color: C.ambar, minHeight: 100 }}>{x}</div>
+            <div style={{ fontSize: 44, color: "#fff3d6" }}>NOBODY</div>
+            <div style={{ fontSize: 54, color: C.ambar, minHeight: 130, lineHeight: 1.1 }}>{x}</div>
             <div style={{ fontSize: 90, color: C.rojo, lineHeight: 1 }}>✗</div>
           </div>
         );
@@ -502,7 +503,7 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={803.15} t1={805.1} text="FRANZ BECAME FAMOUS FOR IT" color={C.oro} tinta={C.noche} x={960} y={150} centro size={58} />
     <Chip t={t} t0={805.2} t1={810.0} text="SET BONES ✓" color={C.lima} tinta={C.noche} x={380} y={150} centro size={48} />
     <Chip t={t} t0={806.65} t1={810.0} text="WOUNDS & BURNS ✓" color={C.teal} tinta={C.noche} x={960} y={150} centro size={48} />
-    <Chip t={t} t0={808.5} t1={810.0} text="HIS OWN MEDICINES ✓" color={C.ambar} tinta={C.noche} x={1540} y={150} centro size={48} />
+    <Chip t={t} t0={808.5} t1={810.0} text="HIS OWN MEDICINES ✓" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={810.05} t1={812.9} text="LATER, HE WROTE DOWN THE COUNT" color={C.violeta} x={960} y={150} centro size={56} />
     <Cuenta t={t} t0={813.0} t1={816.0} de={0} a={15000} dur={2.4} x={960} y={300} size={180} suf="+ PATIENTS" color={C.lima} />
     <Cruces t={t} t0={816.1} t1={820.0} />
@@ -529,7 +530,7 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Recap t={t} />
     <Titulo t={t} t0={888.15} t1={891.9} text="BUT THE TOWN NEEDED HIM TWICE" y={200} size={90} color={C.ambar} borde="#2b0a14" />
     <Chip t={t} t0={896.4} t1={898.3} text="IT JUST NEVER WANTED TO BE SEEN WITH HIM" color={C.noche} x={960} y={150} centro size={52} />
-    {vig(t, 898.6, 906.8) && <div style={{ position: "absolute", inset: 0, opacity: clamp((t - 898.6) / 0.3, 0, 1) * clamp((906.8 - t) / 0.3, 0, 1) }}><Franz x={interp(t, [898.6, 906.8], [230, 560])} y={1060} h={440} t={t} viejoF camina={1.1} expr={t > 901 ? "feliz" : "neutro"} habla={vig(t, 899.2, 902.6)} bD={vig(t, 903, 906) ? 120 + Math.sin(t * 6) * 15 : 15} cD={20} /></div>}
+    {vig(t, 898.6, 906.8) && <div style={{ position: "absolute", inset: 0, opacity: clamp((t - 898.6) / 0.3, 0, 1) * clamp((906.8 - t) / 0.3, 0, 1) }}><Franz x={interp(t, [898.6, 906.8], [330, 470])} y={1500} h={1000} t={t} viejoF camina={0.6} expr={t > 901 ? "feliz" : "neutro"} habla={vig(t, 899.2, 902.6)} bD={vig(t, 903, 906) ? 120 + Math.sin(t * 6) * 15 : 15} cD={20} /></div>}
     <Titulo t={t} t0={898.5} t1={902.8} text="THE MAN WHO KNEW EVERYBODY BEST" y={200} size={90} color={C.oro} borde="#2b1c14" />
     <Cta t={t} />
     <Titulo t={t} t0={907.0} t1={910.3} text="NEXT TIME: A SLEEPING VIKING CAMP" y={210} size={84} color={C.ambar} borde="#1a1440" />

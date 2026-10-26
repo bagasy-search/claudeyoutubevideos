@@ -116,7 +116,7 @@ export const P4Mundo: React.FC<{ t: number }> = ({ t }) => {
               </Svg>
               {(vig(t, 405.9, 407.4) || t > 409.3) && <TextoMundo x={5700} y={SUELO - 440} text="THIS BANK ✗" size={120} color="#fff3d6" borde="#2b1c14" />}
               {(vig(t, 407.2, 408.3) || t > 409.3) && <TextoMundo x={7500} y={SUELO - 440} text="THAT BANK ✗" size={120} color="#fff3d6" borde="#2b1c14" />}
-              {t > 408.5 && <TextoMundo x={CASA} y={SUELO - 880} text="THE MIDDLE ✓" size={110} color={C.ambar} borde="#2b1c14" />}
+              {vig(t, 408.5, 409.5) && <TextoMundo x={CASA} y={SUELO - 880} text="THE MIDDLE ✓" size={110} color={C.ambar} borde="#2b1c14" />}
             </>
           )}
           {vig(t, 412, 418) && <div style={{ position: "absolute", left: CASA - 960, top: SUELO - 900 }}><Particulas t={t} tipo="destellos" n={22} seed={14} /></div>}

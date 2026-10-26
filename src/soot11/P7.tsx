@@ -268,7 +268,7 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
         <>
           <Persona x={ATRAS + 120} y={SUELO - 20} h={300} t={t} seed={790} ropa={MERCADER} gorro="capucha" capa="#1b2440" flip expr="miedo" mira={-1} bD={130 + golpe * 20} cD={40 - golpe * 30} />
           {[0, 1].map((i) => <Persona key={i} x={ATRAS + 260 + i * 120} y={SUELO - 20} h={280} t={t} seed={791 + i} ropa={CIVIL(130 + i)} gorro="capucha" capa="#1b2440" flip expr="miedo" bD={i ? 140 : 20} cD={i ? 140 : 10} />)}
-          {vig(t, 726.5, 728.2) && <TextoMundo x={ATRAS + 40} y={SUELO - 420 - golpe * 10} text="KNOCK KNOCK" size={60} color={C.ambar} borde="#2b1c14" rot={-6} />}
+          {vig(t, 726.5, 728.2) && <TextoMundo x={ATRAS + 40} y={SUELO - 330 - golpe * 10} text="KNOCK KNOCK" size={60} color={C.ambar} borde="#2b1c14" rot={-6} />}
         </>
       )}
     </>
@@ -334,7 +334,7 @@ export const P7Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={696.65} t1={700.7} text="ANYTHING FROM THE GALLOWS = MAGIC (SUPPOSEDLY)" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={700.85} t1={704.8} text="HANGMAN'S ROPE = LUCK FOR GAMBLERS" color={C.lima} tinta={C.noche} x={960} y={150} centro size={54} />
     <Chip t={t} t0={704.95} t1={707.5} text="HEALING SALVES MADE FROM..." color={C.teal} tinta={C.noche} x={960} y={150} centro size={58} />
-    <Chip t={t} t0={707.6} t1={711.4} text="DON'T ASK." color={C.rojo} x={520} y={330} centro size={80} />
+    <Chip t={t} t0={707.6} t1={711.4} text="DON'T ASK." color={C.rojo} x={520} y={860} centro size={80} />
     <Chip t={t} t0={711.55} t1={715.0} text="THE ONLY SUPPLIER IN TOWN" color={C.oro} tinta={C.noche} x={960} y={150} centro size={60} />
     <Sello t={t} t0={715.1} t1={718.5} text="LONELY" x={520} y={560} size={110} rot={-10} color={C.violeta} />
     <Sello t={t} t0={717.35} t1={718.5} text="DIRTY" x={960} y={760} size={110} rot={6} color="#8a6a3a" />

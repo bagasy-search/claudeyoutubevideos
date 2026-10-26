@@ -15,17 +15,19 @@ export const SUELO = 880;
 export type Llave = [number, number, number, number, number?, number?];
 export type Cam = { x: number; y: number; z: number };
 const eio = Easing.inOut(Easing.cubic);
+const viajeDur = (k0: Llave, k1: Llave) => { const d = k1[4] ?? 0.7; return Math.abs(k1[1] - k0[1]) * Math.max(k0[3], k1[3]) > 2200 ? Math.min(d, 0.5) : d; };
 export const camEn = (keys: Llave[], t: number): Cam => {
   let i = 0;
   // la llave i es la última a la que la cámara YA llegó; el viaje a la siguiente arranca dur segundos antes
   while (i + 1 < keys.length && t >= keys[i + 1][0]) i++;
   const k0 = keys[i];
   const drift = (tt: number, k: Llave) => 1 + Math.min(0.06, Math.max(0, tt - k[0]) * 0.006);
-  if (i + 1 >= keys.length || t < keys[i + 1][0] - (keys[i + 1][4] ?? 0.7)) {
+  if (i + 1 >= keys.length || t < keys[i + 1][0] - viajeDur(k0, keys[i + 1])) {
     return { x: k0[1], y: k0[2], z: k0[3] * drift(t, k0) };
   }
   const k1 = keys[i + 1];
-  const d = k1[4] ?? 0.7;
+  // viaje largo entre escenarios = latigazo corto (no medio segundo mostrando la unión entre decorados)
+  const d = viajeDur(k0, k1);
   const u = eio(clamp((t - (k1[0] - d)) / d, 0, 1));
   const zA = k0[3] * drift(k1[0] - d, k0), zB = k1[3];
   let z = Math.exp(Math.log(zA) + (Math.log(zB) - Math.log(zA)) * u);
@@ -271,7 +273,7 @@ export const Fachwerk: React.FC<{ x: number; w: number; h: number; muro?: string
         </g>
       )}
       {cartel && (
-        <g transform={`translate(${x + w + 6} ${top + 60})`}>
+        <g transform={`translate(${x + w + 6} ${top + Math.min(h * 0.45, 250)})`}>
           <line x1={0} y1={0} x2={120} y2={0} stroke="#3b230f" strokeWidth={8} />
           <rect x={20} y={10} width={110} height={70} rx={10} fill="#3b230f" />
           <text x={75} y={58} textAnchor="middle" fontSize={28} fontFamily={fontFamily} fontWeight={700} fill="#f7c548">{cartel}</text>

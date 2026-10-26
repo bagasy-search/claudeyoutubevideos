@@ -160,7 +160,7 @@ export const P1Mundo: React.FC<{ t: number }> = ({ t }) => {
   return (
     <>
       {/* el brillo que baja por el acero mientras se lee el grabado */}
-      {vig(t, 138.0, 146.2) && <Espada x={PT.espadaPared} y={SUELO - 150} s={0.42} brillo={((t - 138.0) / 1.4) % 1} texto={"WHEN I RAISE THIS SWORD".slice(0, Math.floor(clamp((t - 138.3) / 3.2, 0, 1) * 23))} />}
+      {vig(t, 138.0, 146.2) && <Espada x={PT.espadaPared} y={SUELO - 150} s={0.42} brillo={((t - 138.0) / 1.4) % 1} />}
       <Tablon t={t} />
       {t >= 62.5 && <Franz x={x} y={SUELO - 10} t={t} flip={!sale} camina={sale && t < 160.6 ? 1.5 : 0}
         expr={vig(t, 146.3, 149.3) ? "orgullo" : escribe ? "feliz" : vig(t, 129.3, 137.7) ? "orgullo" : "neutro"} mira={escribe ? -1 : 0} miraY={escribe ? 1 : 0}

@@ -115,7 +115,6 @@ export const P3Mundo: React.FC<{ t: number }> = ({ t }) => {
           {/* uno estira la mano a TU jarra y la suelta como si quemara */}
           {vig(t, 305.7, 308.2) && <Persona x={interp(t, [305.7, 306.6, 307.0, 308.2], [3480, 3700, 3700, 3480])} y={SUELO - 10} h={280} t={t} seed={77} ropa={CIVIL(15)} gorro="campesino" camina={t < 306.6 || t > 307.0 ? 1.8 : 0}
             bD={vig(t, 306.4, 307.0) ? 140 : 10} expr={t > 306.8 ? "miedo" : "feliz"} salta={306.8} />}
-          {vig(t, 306.8, 308.2) && <Emote t={t} t0={306.8} tipo="excl" x={3700} y={SUELO - 330} s={0.6} />}
           {t > 312.1 && <G x={PT.taburete + 190} y={SUELO - 190} rot={Math.sin(t * 3) * 6}><line x1={0} y1={-20} x2={0} y2={20} stroke="#5a3418" strokeWidth={4} /><rect x={-70} y={20} width={140} height={40} rx={8} fill="#fff6e0" stroke={C.rojo} strokeWidth={4} /><text x={0} y={50} textAnchor="middle" fontSize={24} fontFamily={fontFamily} fontWeight={700} fill={C.rojo}>RESERVED</text></G>}
         </>
       )}
