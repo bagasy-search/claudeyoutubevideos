@@ -45,6 +45,9 @@ for it in json.load(open(f"D:/rtmp_{SL}/fotos_cara.json", encoding="utf8")):
     k = it["name"].split("_")[1]
     B(FOTO_FR.get(k, it["frase"]), "img:" + k, None, alt="w:wide")
 _cyc = ["w:doll", "w:wide", "w:outside", "w:house", "w:bench", "w:duct"]
-for j, it in enumerate(json.load(open(f"D:/rtmp/enzo/ltx/{SL}_pedidos.json", encoding="utf8"))):
+# 25-oct v2: tomas LTX de Enzo HACIENDO lo que narra (D:/rtmp/enzo/ltx2) → c_<clip><a|b|c>.mp4, cada una a su frase
+_T2 = json.load(open(f"D:/rtmp/enzo/ltx2/{SL}_tomas.json", encoding="utf8")); _F2 = {x["frase"] for x in _T2}
+for x in _T2: B(x["frase"], "img:" + x["id"], "cut", alt="w:wide")
+for j, it in enumerate(x for x in json.load(open(f"D:/rtmp/enzo/ltx/{SL}_pedidos.json", encoding="utf8")) if x["frase"] not in _F2):
     B(LTX_FR.get(it["id"], it["frase"]), "img:" + it["id"], "cut", alt=LTX_ALT.get(it["id"], _cyc[j % len(_cyc)]))
 
