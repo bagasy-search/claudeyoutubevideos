@@ -281,9 +281,9 @@ export const P1: React.FC<{ t: number }> = ({ t }) => (
         const rech = filas.filter((f) => t >= f[6]).length;
         return <>
           <Mesa x={1440} y={830} w={300} />
-          <Persona x={1650} y={1040} h={540} t={t} seed={89} ropa={CENTURION} casco="centurion" giro="34" flip expr="enojado" habla
+          <Persona x={1560} y={1040} h={520} t={t} seed={89} ropa={CENTURION} casco="centurion" giro="34" flip expr="enojado" habla
             {...(filas.some((f) => t > f[6] - 0.25 && t < f[6] + 0.3) ? pose("golpear", t, 1.6) : { bD: 40, cD: 60 })} agarra={<SelloMano />} agarraAng={80} />
-          <div style={{ position: "absolute", left: 1440, top: 900, transform: `translate(-50%,-50%) scale(${1 + filas.reduce((a2, f) => a2 + (t > f[6] ? 0.25 * Math.exp(-(t - f[6]) * 7) : 0), 0)})`, background: C.rojo, color: "#fff", fontFamily, fontWeight: 700, fontSize: 38, padding: "4px 16px", borderRadius: 10, border: "5px solid #fff", whiteSpace: "nowrap" }}>REJECTED: {rech}</div>
+          <div style={{ position: "absolute", left: 1400, top: 380, transform: `translate(-50%,-50%) scale(${1 + filas.reduce((a2, f) => a2 + (t > f[6] ? 0.25 * Math.exp(-(t - f[6]) * 7) : 0), 0)})`, background: C.rojo, color: "#fff", fontFamily, fontWeight: 700, fontSize: 38, padding: "4px 16px", borderRadius: 10, border: "5px solid #fff", whiteSpace: "nowrap" }}>REJECTED: {rech}</div>
           {filas.map(([seed, of, ci, lab, t0, giro, ts, espera, no], i) => {
             const sale = Math.max(0, t - ts - 0.45);
             const x = 270 + i * 212 - sale * 820;
