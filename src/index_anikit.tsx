@@ -6,6 +6,9 @@ import { ClipA } from "./anikit/clips/ClipA";
 import { ClipB } from "./anikit/clips/ClipB";
 import { ClipC } from "./anikit/clips/ClipC";
 import { ClipD } from "./anikit/clips/ClipD";
+import * as EX from "./anikit/ExplicaDemo";
+
+const DEMOS: [string, React.FC][] = [["Ex-Cuerpo", EX.ExCuerpo], ["Ex-Grafico", EX.ExGrafico], ["Ex-Comparacion", EX.ExComparacion], ["Ex-Cortina", EX.ExComparacionCortina], ["Ex-Mapa", EX.ExMapa], ["Ex-Plano", EX.ExPlano], ["Ex-Causa", EX.ExCausa], ["Ex-Medidor", EX.ExMedidor], ["Ex-Linea", EX.ExLinea], ["Ex-Lupa", EX.ExLupa], ["Ex-Multitud", EX.ExMultitud], ["Ex-Reacciones", EX.ExReacciones]];
 
 const Root = () => (
   <>
@@ -15,6 +18,7 @@ const Root = () => (
     <Composition id="ClipA" component={ClipA} durationInFrames={900} fps={30} width={1920} height={1080} />
     <Composition id="ClipB" component={ClipB} durationInFrames={900} fps={30} width={1920} height={1080} />
     <Composition id="ClipC" component={ClipC} durationInFrames={900} fps={30} width={1920} height={1080} />
+    {DEMOS.map(([id, C]) => <Composition key={id} id={id} component={C} durationInFrames={240} fps={30} width={1920} height={1080} />)}
     <Composition id="ClipD" component={ClipD} durationInFrames={900} fps={30} width={1920} height={1080} />
   </>
 );

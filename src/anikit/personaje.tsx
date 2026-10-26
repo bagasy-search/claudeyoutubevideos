@@ -160,6 +160,7 @@ export const EXPRESIONES: Record<string, Expr> = {
   cansado: E({ parpado: 0.55, ceja: -8, cejaY: 2, bocaW: 6, bocaC: -1.5, pupila: 4 }),
   asco: E({ ceja: 18, parpado: 0.25, bocaW: 9, bocaC: -4, bocaO: 2, bocaIz: -3, bocaDe: 3 }),
   determinado: E({ ceja: 18, cejaY: 1, parpado: 0.18, bocaW: 8, bocaC: 0.5, pupila: 4.2 }),
+  alivio: E({ parpado: 0.45, ceja: -10, cejaY: -3, bocaW: 8, bocaC: 4, bocaO: 1.6 }),
   zombi: E({ abre: 1, pupila: 0, parpado: 0.25, bocaW: 9, bocaC: -2, bocaO: 4, dientes: 0.6 }),
 };
 export const mezclaExpr = (a: Expr, b: Expr, t: number): Expr => {
