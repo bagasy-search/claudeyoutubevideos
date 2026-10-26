@@ -53,3 +53,50 @@ export const Bat: React.FC<{ cl: Clave[]; x: number | ((f: number) => number); y
     </div>
   );
 };
+
+// ob03: el medidor de cansancio (cerebrito + «N% TIRED») sobre la cabeza; glitch = tiembla y parpadea en rojo (el día 3)
+export const CerebroSvg: React.FC<{ pct: number; f: number; tam?: number; glitch?: boolean }> = ({ pct, f, tam = 1, glitch }) => {
+  const col = pct >= 60 ? VERDE : glitch ? "#ff3d2e" : "#ff6a5a";
+  const dx = glitch ? Math.sin(f * 2.7) * 4 : 0;
+  const on = !glitch || f % 22 < 17;
+  return (
+    <div style={{ position: "relative", textAlign: "center", fontFamily: F_HUD, transform: `translateX(${dx}px)`, opacity: on ? 1 : 0.55 }}>
+      <svg width={120 * tam} height={78 * tam} viewBox="-60 -44 120 78">
+        <path d="M-46,0 C-50,-30 -24,-42 0,-32 C24,-42 50,-30 46,0 C50,22 22,30 0,26 C-22,30 -50,22 -46,0 Z" fill="#ffb3c6" stroke={col} strokeWidth={5} />
+        <path d="M0,-32 C-6,-10 6,8 0,26" fill="none" stroke="#c75a7a" strokeWidth={4} />
+        <path d="M-32,-12 q14,-10 26,0 M-34,8 q16,10 30,0 M6,-12 q14,-10 26,0 M4,8 q16,10 30,0" fill="none" stroke="#c75a7a" strokeWidth={3.5} />
+        {glitch && [0, 1, 2].map((k) => <path key={k} d={`M${-58 + k * 6},${-40 + k * 4} l-10,-8`} stroke="#ff3d2e" strokeWidth={4} strokeLinecap="round" opacity={(f + k * 5) % 12 < 7 ? 1 : 0} />)}
+      </svg>
+      <div style={{ display: "inline-block", marginTop: 4 * tam, padding: `${4 * tam}px ${16 * tam}px`, borderRadius: 14 * tam, background: "rgba(10,12,18,0.82)", border: `${4 * tam}px solid ${col}`, boxShadow: glitch ? "0 0 24px rgba(255,61,46,0.7)" : undefined }}>
+        <div style={{ fontWeight: 700, fontSize: 46 * tam, lineHeight: 1, color: col }}>{Math.round(pct)}%</div>
+        <div style={{ fontWeight: 700, fontSize: 22 * tam, letterSpacing: 3, color: "#f4efe4" }}>TIRED</div>
+      </div>
+    </div>
+  );
+};
+
+export const Cansa: React.FC<{ cl: Clave[]; x: number | ((f: number) => number); y: number | ((f: number) => number); pct: number | ClvPct; desde?: number; hasta?: number; tam?: number; glitch?: boolean | ((f: number) => boolean) }> = ({ cl, x, y, pct, desde = 0, hasta, tam = 1, glitch }) => {
+  const f = useF();
+  const { fps } = useVideoConfig();
+  if (f < desde || (hasta !== undefined && f > hasta)) return null;
+  const p = enPantalla(cl, f, fps, typeof x === "function" ? x(f) : x, typeof y === "function" ? y(f) : y);
+  const z = cl.length ? cl[0].zoom : 1;
+  const s = Math.min(1, (f - desde) / 8) * Math.min(1.3, Math.max(0.85, z)) * tam;
+  return (
+    <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%" }}>
+      <CerebroSvg pct={valor(pct, f)} f={f} glitch={typeof glitch === "function" ? glitch(f) : glitch} />
+    </div>
+  );
+};
+
+// cartel de texto anclado al mundo (precio, «?», nombre)
+export const Tag: React.FC<{ cl: Clave[]; x: number; y: number; texto: string; desde?: number; hasta?: number; color?: string; fondo?: string; tam?: number }> = ({ cl, x, y, texto, desde = 0, hasta, color = "#f4efe4", fondo = "rgba(14,16,22,0.82)", tam = 1 }) => {
+  const f = useF();
+  const { fps } = useVideoConfig();
+  if (f < desde || (hasta !== undefined && f > hasta)) return null;
+  const p = enPantalla(cl, f, fps, x, y);
+  const s = Math.min(1, (f - desde) / 8) * tam;
+  return (
+    <div style={{ position: "absolute", left: p.x, top: p.y, transform: `translate(-50%,-100%) scale(${s})`, transformOrigin: "50% 100%", padding: "8px 22px", borderRadius: 18, background: fondo, border: `4px solid ${color}`, fontFamily: F_HUD, fontWeight: 700, fontSize: 44, color, whiteSpace: "nowrap" }}>{texto}</div>
+  );
+};
