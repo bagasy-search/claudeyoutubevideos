@@ -323,10 +323,11 @@ export const Noche: React.FC = () => {
     const uR = cl((t - M.bosta - 0.3) / 1.3), resb = uR > 0 && uR < 1 ? Math.sin(uR * Math.PI) : 0;
     const balde = en(t, M.sopa - 0.35, M.sopa + 1.3);
     const agita = Math.sin(t * 22) * 25;
+    const carroCerca = !contra && CARROS.some((k) => en(t, k.ta, k.tb) && Math.abs(carroX(k, t) - px) < 350);
     return (
-      <Persona x={px + golpeado} y={pyProt} h={H} t={t} seed={1} ropa={LUCIUS} expr={resb > 0.1 ? "sorpresa" : balde ? "miedo" : expr} camina={vel > 4 ? vel / 150 : 0} mira={vel > 4 ? 0.6 : 0}
-        manoD={balde ? undefined : manoD} bD={balde ? 165 : resb > 0.1 ? 130 + agita : contra ? 40 : manoD ? 55 : undefined} cD={balde ? 70 : manoD ? 55 : undefined} bI={balde ? 165 : resb > 0.1 ? 120 - agita : contra ? 40 : corre ? 60 : undefined} cI={balde ? 70 : undefined}
-        ladea={golpeado ? -18 : 0} inclina={resb > 0 ? -28 * resb : contra ? -6 : corre ? 10 : 0} salta={t > M.sopa - 1 && t < M.sopa + 3 ? M.sopa : M.cae} />
+      <Persona x={px + golpeado} y={pyProt + (carroCerca ? -26 : 0)} h={H} t={t} seed={1} ropa={LUCIUS} expr={resb > 0.1 ? "sorpresa" : balde || carroCerca ? "miedo" : expr} camina={vel > 4 ? vel / 150 : 0} mira={vel > 4 ? 0.6 : 0}
+        manoD={balde ? undefined : manoD} bD={balde ? 165 : carroCerca ? 120 : resb > 0.1 ? 130 + agita : contra ? 40 : manoD ? 55 : undefined} cD={balde ? 70 : manoD ? 55 : undefined} bI={balde ? 165 : carroCerca ? 130 : resb > 0.1 ? 120 - agita : contra ? 40 : corre ? 60 : undefined} cI={balde ? 70 : undefined}
+        ladea={golpeado ? -18 : 0} inclina={resb > 0 ? -28 * resb : carroCerca ? -14 : contra ? -6 : corre ? 10 : 0} salta={t > M.sopa - 1 && t < M.sopa + 3 ? M.sopa : M.cae} />
     );
   })();
   const salpica = en(t, M.sopa, M.sopa + 0.9) && (() => {
@@ -391,7 +392,7 @@ export const Noche: React.FC = () => {
               {en(t, M.bajada - 1, M.t6) && [300, 760, 1240, 1700].map((d) => <g key={d}><rect x={xVal + d - 50} y={-8} width={100} height={14} fill="#2a1a20" />{[0, 1, 2, 3].map((k) => <line key={k} x1={xVal + d - 36 + k * 24} y1={-8} x2={xVal + d - 36 + k * 24} y2={6} stroke="#555" strokeWidth={5} />)}</g>)}
               {en(t, M.agujero - 2, M.t6) && <ellipse cx={xAguj} cy={4} rx={110} ry={22} fill="#120a14" />}
               {[250, -350, 650].map((d, k) => <Chorro key={d} t={t} t0={M.reversa + k * 0.5} x={X(M.reversa) + d} />)}
-              {CARROS.filter((k) => !k.delante).map((k, i) => en(t, k.ta, k.frena ?? k.tb + 0.1) && <Carro key={i} x={carroX(k, t)} t={t} carga={k.carga} vx={t < k.tb ? (k.xb - k.xa) / (k.tb - k.ta) : 0} balanceo={k.bal} y={k.y} s={k.s} vuelco={k.frena ? cl((t - M.eje) / 0.3) : 0} />)}
+              {CARROS.filter((k) => !k.delante && k.frena !== undefined).map((k, i) => en(t, k.ta, k.frena ?? k.tb + 0.1) && <Carro key={i} x={carroX(k, t)} t={t} carga={k.carga} vx={t < k.tb ? (k.xb - k.xa) / (k.tb - k.ta) : 0} balanceo={k.bal} y={k.y} s={k.s} vuelco={k.frena ? cl((t - M.eje) / 0.3) : 0} />)}
               {/* el bloque de mármol cae del carro roto */}
               {en(t, M.eje, M.dormir) && (() => { const u = cl((t - M.eje - 0.05) / 0.3); const bx = X(M.eje) + 260 + 40 + u * 260; return <g transform={`translate(${bx} ${-310 * (1 - u * u) + 40}) rotate(${u * 28})`}><rect x={-170} y={-160} width={340} height={160} fill="#e9e4da" stroke={K} strokeWidth={6} /><path d="M -130 -130 q 60 30 120 -10 t 140 20" stroke="#b9b0a4" strokeWidth={5} fill="none" /></g>; })()}
               {en(t, M.eje + 0.3, M.eje + 4) && Array.from({ length: 10 }, (_, k) => { const s = t - M.eje - 0.3; return <circle key={k} cx={X(M.eje) + 560 + Math.cos(k * 1.3) * (100 + s * 200)} cy={-60 - Math.abs(Math.sin(k)) * (60 + s * 90)} r={80 + s * 50} fill="#d8d0c4" opacity={cl(0.7 - s / 4)} />; })}
@@ -467,7 +468,8 @@ export const Noche: React.FC = () => {
             {en(t, M.sonrie, M.huir) && <Emote t={t} t0={M.sonrie} t1={M.huir} tipo="sudor" x={px} y={-217} s={0.5} />}
             {/* carro que pasa a dos centímetros (delante) y el agua de la inundación */}
             <SvgMundo>
-              {CARROS.filter((k) => k.delante).map((k, i) => en(t, k.ta, k.tb) && <Carro key={i} x={carroX(k, t)} t={t} carga={k.carga} vx={(k.xb - k.xa) / (k.tb - k.ta)} y={k.y} s={k.s} />)}
+              {/* OJO v3: los carros pasan POR DELANTE del nene (pegado al muro), no a través */}
+              {CARROS.filter((k) => k.delante || k.frena === undefined).map((k, i) => en(t, k.ta, k.tb) && <Carro key={i} x={carroX(k, t)} t={t} carga={k.carga} vx={(k.xb - k.xa) / (k.tb - k.ta)} balanceo={k.bal} y={Math.max(k.y ?? 0, 90)} s={k.s} />)}
               {en(t, M.agujero + 1.1, M.agujero + 2.8) && <ellipse cx={xAguj} cy={14} rx={120} ry={16} fill="none" stroke="#9be7f0" strokeWidth={8} opacity={0.8} />}
               <Inundacion t={t} x0={px - 2600} x1={px + 2600} nivel={nivel} />
               {/* ventana de la casa: se prende cuando entra */}
