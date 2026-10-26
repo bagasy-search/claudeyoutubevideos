@@ -2,7 +2,7 @@
 // Vuelta 2 (director): multitudes con función (pose/escala/profundidad/gesto distintos), componente por frase, cortes limpios.
 // Vuelta 3 (director independiente): contraplanos / insertos / gráficos a pantalla completa en vez del mismo encuadre; el cuerpo hace lo que dice la voz; textos con placa.
 import React from "react";
-import { AbsoluteFill, Easing, interpolate } from "remotion";
+import { Easing, interpolate } from "remotion";
 import { mira, useF } from "../anikit/camara";
 import { Actor, ActorProps } from "../anikit/actor";
 import { Calendario, Globo, Pildora, Temporizador } from "../anikit/pantalla";
@@ -10,13 +10,13 @@ import { Halo } from "../anikit/luz";
 import { Multitud, ReaccionFx, conReaccion } from "../anikit/explica";
 import { ACENTO, ALDEANA, ALDEANO, AMRAPALI, BUDA, ESC, LOTO, MONJE_JOVEN, ORO, REY } from "../tenzo/elenco";
 import { Look } from "../anikit/personaje";
-import { Rotulo } from "../tenzo/hud";
 import { Cuenco, Elefante } from "../tenzo/utileria";
 import { VAI_PISO, VAI_PUNTOS } from "../tenzo/sets/vaishali";
 import { CEL_SENT, kDe, Lav, LAV_PUNTOS, SENTADO, Vai } from "./base";
 import { Hud } from "./planos1";
 import { Chispa, Collar, EspadaDe, Llamada, LlamadaMundo, Mango, Pensamiento, Rio, Salpica, lerp, usePantalla } from "./extras";
-import { BudaPrimerTermino, CuatroMeses, HaloBuda, HumoCiudad, InsertoCuenco, NubesLluvia, PlacaContador, Revela } from "./extras_2";
+import { BudaPrimerTermino, CuatroMeses, HaloBuda, HumoCiudad, NubesLluvia, PlacaContador, Revela } from "./extras_2";
+import { AroIris, InsertoCuenco2, MONJE_ALTO, MONJE_LENTES, MONJE_NOVICIO, MONJE_VIEJO, NombreCartel, RotuloClaro } from "./extras_2b";
 
 const VP = VAI_PISO, V = VAI_PUNTOS;
 const A: React.FC<ActorProps> = (p) => <Actor escala={ESC} {...p} />;
@@ -68,40 +68,50 @@ export const P29Calle: React.FC = () => (
         caras={[{ f: 0, v: k === 3 ? "risa" : "feliz" }]} poses={[{ f: 0, v: k === 1 ? { hD: 120, cD: 30 } : k === 4 ? "brazosCruzados" : "parado" }]} />)}
       <Notas x={880} y={560} desde={k29b(120.8)} />
     </>}
-    hud={<><Rotulo texto="VAISHALI, INDIA · 2,500 YEARS AGO" desde={8} />
+    hud={<><RotuloClaro texto="VAISHALI, INDIA · 2,500 YEARS AGO" desde={8} />
       <LlamadaMundo cl={c29b} X={602} Y={770} dx={360} dy={-250} texto="GOLD ON THE DOORS" desde={k29b(119.6)} />
       <LlamadaMundo cl={c29b} X={900} Y={560} dx={330} dy={-120} texto="MUSIC EVERY NIGHT" desde={k29b(120.9)} color="#ffe2a6" /></>} />
 );
-// ---------- 30 · «a woman named Amrapali»: plano medio, se levanta y baila con giros; rótulo con su nombre al decirlo ----------
+// ---------- 30 · «and in that city lived a woman» (plano medio del pabellón: se levanta y empieza a bailar) → «named Amrapali» (corte a plano cerrado: gira, mira a cámara; cartel grande con su nombre) ----------
 const k30 = kDe(121.5);
-export const P30Amrapali: React.FC = () => (
-  <Vai cl={[mira(0, V.pabellon, 630, 1.5), mira(110, V.pabellon + 10, 650, 1.9, { curva: "inout" })]} sp={{ noche: true }}
-    medio={<>
-      <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.pabellon, y: VP - 40 }]} asiento={[{ f: 0, v: 40 }, { f: 20, v: undefined }]}
-        dir={[{ f: 0, v: 1 }, { f: 44, v: -1 }, { f: 49, v: 1 }, { f: 78, v: -1 }, { f: 83, v: 1 }]}
-        poses={[{ f: 0, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 60, hI: 20, cI: 40 } }, { f: 24, v: "parado" }, { f: 34, v: { hD: 150, cD: 40, hI: 40, cI: 90, tronco: -6 } }, { f: 46, v: { hD: 160, cD: 20, hI: 160, cI: 20, pD: 20, rD: 40 } }, { f: 58, v: { hD: 40, cD: 90, hI: 150, cI: 40, tronco: 6 } }, { f: 80, v: { hD: 160, cD: 20, hI: 160, cI: 20, pI: -20, rI: 40 } }, { f: 92, v: { hD: 120, cD: 60, hI: 120, cI: 60 } }]}
-        caras={[{ f: 0, v: "feliz" }, { f: 40, v: "risa" }, { f: 70, v: "picaro" }]} giros={[{ f: 0, v: 0.3 }, { f: 44, v: -0.5 }, { f: 60, v: 0.4 }, { f: 92, v: 0 }]} miradas={[{ f: 0, v: { x: 0.6, y: -0.2 } }, { f: 70, v: { x: 0, y: 0 } }]} />
-      <Notas x={V.pabellon + 170} y={VP - 330} desde={8} />
-      <Notas x={V.pabellon - 260} y={VP - 300} desde={30} />
-    </>}
-    hud={<Rotulo texto="AMRAPALI · VAISHALI" desde={k30(123.68)} />} />
-);
+const T30 = k30(123.4), N30 = k30(124.0);
+export const P30Amrapali: React.FC = () => {
+  const f = useF();
+  const cl = f < T30 ? [mira(0, V.pabellon, 630, 1.5), mira(T30, V.pabellon + 10, 645, 1.75, { curva: "inout" })]
+    : [mira(T30, V.pabellon - 130, 690, 2.55), mira(110, V.pabellon - 150, 685, 2.7, { curva: "inout" })];
+  return (
+    <Vai cl={cl} sp={{ noche: true }}
+      medio={<>
+        <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.pabellon, y: VP - 40 }]} asiento={[{ f: 0, v: 40 }, { f: 20, v: undefined }]}
+          dir={[{ f: 0, v: 1 }, { f: 44, v: -1 }, { f: 49, v: 1 }, { f: T30 + 8, v: -1 }, { f: T30 + 13, v: 1 }]}
+          poses={[{ f: 0, v: { tronco: -4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 30, cD: 60, hI: 20, cI: 40 } }, { f: 22, v: "parado" }, { f: 30, v: { hD: 150, cD: 40, hI: 40, cI: 90, tronco: -6 } }, { f: 42, v: { hD: 160, cD: 20, hI: 160, cI: 20, pD: 20, rD: 40 } }, { f: 52, v: { hD: 40, cD: 90, hI: 150, cI: 40, tronco: 6 } },
+            { f: T30 + 6, v: { hD: 165, cD: 15, hI: 165, cI: 15, pI: -20, rI: 40 } }, { f: T30 + 18, v: { hD: 120, cD: 70, hI: 30, cI: 60, tronco: -4 } }, { f: N30 + 2, v: { hD: 150, cD: 30, hI: 60, cI: 120, tronco: -6, cabeza: -6 } }, { f: N30 + 20, v: { hD: 100, cD: 60, hI: 70, cI: 110, tronco: 4, cabeza: 4 } }]}
+          caras={[{ f: 0, v: "feliz" }, { f: 40, v: "risa" }, { f: N30, v: "picaro" }]} giros={[{ f: 0, v: 0.3 }, { f: 44, v: -0.5 }, { f: T30, v: 0.4 }, { f: N30, v: 0 }]}
+          miradas={[{ f: 0, v: { x: 0.6, y: -0.2 } }, { f: T30, v: { x: -0.6, y: -0.3 } }, { f: N30, v: { x: 0, y: 0 } }]} />
+        <Notas x={V.pabellon + 170} y={VP - 330} desde={8} />
+        <Notas x={V.pabellon - 260} y={VP - 300} desde={30} />
+      </>}
+      hud={<NombreCartel nombre="AMRAPALI" sub="VAISHALI · 500 BC" desde={N30} x={620} y={780} />} />
+  );
+};
 // ---------- 31 · «the lantern flickers» → inserto del farol que titila, Leo levanta la vista · «and the laundromat disappears» → la llama se abre en un círculo y adentro está Vaishali ----------
-const C31 = [mira(0, 1600, 700, 3.2), mira(14, 1600, 700, 3.25), mira(36, 1470, 690, 2.0, { curva: "inout" }), mira(73, 1520, 690, 2.1, { curva: "inout" })];
+// inserto de la llama (0-24: «the lantern flickers») → Leo levanta la vista y el iris nace de la llama («and the laundromat disappears»)
+const C31 = [mira(0, LAV_PUNTOS.farol - 90, 700, 4.2), mira(23, LAV_PUNTOS.farol - 100, 702, 4.4), mira(24, 1450, 690, 2.05), mira(73, 1480, 692, 2.15, { curva: "inout" })];
 export const P31Titila: React.FC = () => {
   const f = useF();
-  const p = usePantalla(C31, 1640, 700);
-  const r = interpolate(f, [40, 70], [0, 2300], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.cubic) });
+  const p = usePantalla(C31, LAV_PUNTOS.farol, 700);
+  const r = interpolate(f, [42, 71], [0, 2300], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.inOut(Easing.cubic) });
+  const titila = f < 24 ? (f % 7 < 2 ? 0.3 : f % 11 < 2 ? 0.65 : 1.8) : f < 40 ? 1.2 : lerp(f, 40, 46, 1.2, 2.6);
   return (
     <>
-      <Lav cl={C31} sp={{ luzFarol: f % 9 < 3 ? 0.35 : f % 13 < 2 ? 0.7 : 1.7 }} toalla={0.5}
-        leo={{ miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }, { f: 20, v: { x: 0.9, y: -0.1 } }], caras: [{ f: 0, v: "cansado" }, { f: 22, v: "sorpresa" }], poses: [{ f: 0, v: CEL_SENT }, { f: 22, v: { ...CEL_SENT, hD: 20, cD: 60, cabeza: 0, tronco: -10 } }] }}
-        tenzo={{ habla: [[0, 30]], caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], poses: [{ f: 0, v: { ...SENTADO, hD: 60, cD: 40, hI: 40, cI: 40 } }] }}
-        extra={<Halo x={LAV_PUNTOS.farol} y={700} r={lerp(f, 20, 60, 200, 900)} color={ORO} fuerza={lerp(f, 20, 60, 0.35, 0.9)} />} hud={<Hud />} />
+      <Lav cl={C31} sp={{ luzFarol: titila }} toalla={0.5}
+        leo={{ miradas: [{ f: 0, v: { x: 0.3, y: 0.7 } }, { f: 26, v: { x: 0.9, y: -0.1 } }], caras: [{ f: 0, v: "cansado" }, { f: 28, v: "sorpresa" }], poses: [{ f: 0, v: CEL_SENT }, { f: 28, v: { ...CEL_SENT, hD: 20, cD: 60, cabeza: 0, tronco: -10 } }] }}
+        tenzo={{ habla: [[0, 20]], caras: [{ f: 0, v: "feliz" }], miradas: [{ f: 0, v: { x: -0.9, y: 0 } }], poses: [{ f: 0, v: { ...SENTADO, hD: 60, cD: 40, hI: 40, cI: 40 } }, { f: 30, v: { ...SENTADO, hD: 110, cD: 30, hI: 40, cI: 40 } }] }}
+        extra={<Halo x={LAV_PUNTOS.farol} y={700} r={f < 24 ? 160 + 40 * (titila - 1) : lerp(f, 30, 46, 220, 420)} color={ORO} fuerza={f < 24 ? 0.25 + 0.25 * titila : lerp(f, 30, 46, 0.35, 0.6)} />} hud={<Hud />} />
       <Revela x={p.x} y={p.y} r={r}>
         <Vai cl={[mira(0, 760, 620, 1.15)]} medio={<Elefante x={230 + 3.6 * (f - 73)} piso={VP} dir={1} s={1.15} paso={f / 28} />} />
       </Revela>
-      {r > 0 && r < 2200 && <AbsoluteFill style={{ pointerEvents: "none" }}><svg width={1920} height={1080}><circle cx={p.x} cy={p.y} r={r} fill="none" stroke={ORO} strokeWidth={40} opacity={0.55} style={{ filter: "blur(8px)" }} /></svg></AbsoluteFill>}
+      <AroIris x={p.x} y={p.y} r={r} />
     </>
   );
 };
@@ -130,19 +140,49 @@ export const P31Elefantes: React.FC = () => {
       hud={<Pildora texto="HOT WIND · ELEPHANTS IN THE STREET" x={960} y={120} desde={k31(129.74)} color="#ffe2a6" />} />
   );
 };
-// ---------- 32 · el jardín de mangos: arranca un mango, lo huele; los hombres del portón se dan vuelta con un salto de sorpresa ----------
+// ---------- 32 · «in a garden full of mango trees» (general del jardín: ella arranca un mango y lo huele) → «the most beautiful woman» (plano medio de ella, sonríe) → «in all of India» (contraplano: los dos hombres del portón giran la cabeza y se les cae la mandíbula; uno suelta su canasta) ----------
 const k32 = kDe(131.5);
-export const P32Mangos: React.FC = () => (
-  <Vai cl={[mira(0, 2400, 520, 1.15), mira(70, 2480, 540, 1.22, { curva: "inout" }), mira(71, 2640, 640, 2.0), mira(160, 2660, 650, 2.15)]}
-    medio={<>
-      {[0, 1].map((k) => <A key={k} {...conReaccion({ look: HOMBRE(k + 1), seed: 45 + k, escala: ESC * 0.85, ruta: [{ f: 0, x: 2250 + k * 110, y: VP - 30 }], dir: [{ f: 0, v: -1 }, { f: k32(134.6) + k * 6, v: 1 }], caras: [{ f: 0, v: "neutral" }], poses: [{ f: 0, v: "parado" }] }, "sorpresa", k32(134.7) + k * 6, 70)} />)}
-      {[0, 1].map((k) => <ReaccionFx key={"fx" + k} tipo="sorpresa" f0={k32(134.7) + k * 6} x={2250 + k * 110} y={590} />)}
-      <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: 2560, y: VP }, { f: 56, x: 2700, y: VP }]} enManoD={(f: number) => (f > 84 ? <Mango s={1.4} /> : null)}
-        poses={[{ f: 0, v: { hD: 30, cD: 50, hI: 20, cI: 30 } }, { f: 70, v: { hD: 160, cD: 10, hI: 20, cI: 30, cabeza: -10 } }, { f: 86, v: { hD: 160, cD: 30 } }, { f: 100, v: { hD: 60, cD: 140, cabeza: 6 } }]}
-        caras={[{ f: 0, v: "feliz" }, { f: 104, v: "risa" }]} miradas={[{ f: 0, v: { x: 0.6, y: -0.6 } }, { f: 100, v: { x: 0.5, y: 0.2 } }]} />
-    </>}
-    hud={<Pildora texto="THE MOST BEAUTIFUL WOMAN IN INDIA" x={960} y={120} desde={k32(134.5)} color="#ffe2a6" />} />
-);
+const T32B = k32(133.9), T32C = k32(134.95);
+const MANGO32 = { x: 2700 };
+// canasta de mangos (MUNDO): se cae al soltarla
+const Canasta: React.FC<{ x: number; y: number; cae: number }> = ({ x, y, cae }) => {
+  const f = useF();
+  const t = lerp(f, cae, cae + 8, 0, 1);
+  const yy = y + t * t * 120;
+  return (
+    <g transform={`translate(${x},${yy}) rotate(${t * 24})`}>
+      <path d="M-46,-20 L46,-20 L36,30 L-36,30 Z" fill="#a8723a" stroke="#221c18" strokeWidth={4} />
+      {[-24, 0, 24].map((dx, i) => <circle key={i} cx={dx + t * (i - 1) * 30} cy={-28 - t * (i === 1 ? 40 : 10)} r={15} fill={i === 1 ? "#f2b23a" : "#e88a2a"} stroke="#221c18" strokeWidth={3} />)}
+    </g>
+  );
+};
+export const P32Mangos: React.FC = () => {
+  const f = useF();
+  const cl = f < T32B ? [mira(0, 2440, 560, 1.15), mira(T32B, 2650, 620, 1.75, { curva: "inout" })]
+    : f < T32C ? [mira(T32B, MANGO32.x + 10, 690, 2.5), mira(T32C, MANGO32.x + 10, 688, 2.65, { curva: "inout" })]
+    : [mira(T32C, 2300, 700, 2.35), mira(160, 2310, 698, 2.5, { curva: "inout" })];
+  const hombres = [0, 1].map((k) => {
+    const fr = T32C + 4 + k * 6;
+    return <A key={k} {...conReaccion({ look: HOMBRE(k + 1), seed: 45 + k, escala: ESC * 0.95, ruta: [{ f: 0, x: 2240 + k * 130, y: VP - 30 }], dir: [{ f: 0, v: -1 }, { f: fr, v: 1 }],
+      caras: [{ f: 0, v: "neutral" }, { f: fr, v: "sorpresa" }], giros: [{ f: 0, v: -0.3 }, { f: fr, v: 0.6 }], miradas: [{ f: 0, v: { x: -0.6, y: 0.3 } }, { f: fr, v: { x: 1, y: -0.1 } }],
+      poses: [{ f: 0, v: k ? { hD: 60, cD: 90, hI: 20, cI: 20 } : "parado" }] }, "sorpresa", fr, 70)} />;
+  });
+  return (
+    <Vai cl={cl}
+      medio={<>
+        {hombres}
+        {f >= T32C && [0, 1].map((k) => <ReaccionFx key={"fx" + k} tipo="sorpresa" f0={T32C + 4 + k * 6} x={2240 + k * 130} y={600} />)}
+        <Canasta x={2240 + 130 + 46} y={VP - 150} cae={T32C + 12} />
+        <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: 2560, y: VP }, { f: 40, x: MANGO32.x, y: VP }]} enManoD={(fr: number) => (fr > 52 ? <Mango s={1.4} /> : null)}
+          dir={[{ f: 0, v: 1 }, { f: T32B + 8, v: -1 }]}
+          poses={[{ f: 0, v: { hD: 30, cD: 50, hI: 20, cI: 30 } }, { f: 38, v: { hD: 172, cD: 0, hI: 20, cI: 30, cabeza: -14, tronco: -8 } }, { f: 54, v: { hD: 150, cD: 40, cabeza: -6 } }, { f: 64, v: { hD: 60, cD: 140, cabeza: 6 } }, { f: T32B + 10, v: { hD: 70, cD: 130, hI: 40, cI: 60, cabeza: -4, tronco: -4 } }, { f: T32C - 2, v: { hD: 60, cD: 140, hI: 30, cI: 80, cabeza: 6 } }]}
+          caras={[{ f: 0, v: "feliz" }, { f: 66, v: "risa" }, { f: T32B + 8, v: "feliz" }]} miradas={[{ f: 0, v: { x: 0.6, y: -0.6 } }, { f: 64, v: { x: 0.5, y: 0.2 } }, { f: T32B + 8, v: { x: -0.2, y: 0 } }]} giros={[{ f: 0, v: 0 }, { f: T32B + 8, v: -0.2 }]} />
+      </>}
+      hud={<>
+        <Pildora texto="THE MOST BEAUTIFUL WOMAN IN ALL OF INDIA" x={960} y={90} desde={k32(134.44)} color="#ffe2a6" tam={50} />
+      </>} />
+  );
+};
 // ---------- 33 · «princes crossed rivers»: dos príncipes vadean un río con regalos en alto → corte: «kings fought wars»: dos reyes se baten a espada, chispas; ella mira aburrida ----------
 const PRINCIPE = (c: string): Look => ({ ...REY, camisa: c, pantalon: c, accesorios: [{ t: "pelo", forma: "corto", color: "#2a1a10" }, { t: "tunica", color: c, largo: 1 }, { t: "vincha", color: "#e0b040" }] });
 const ALTO_REGALO = { hD: 105, cD: 45, hI: 100, cI: 50, tronco: -4, cabeza: -6 };
@@ -204,42 +244,54 @@ export const P34Todos: React.FC = () => {
       </>} />
   );
 };
-// ---------- 35 · «a group of monks walked through her street» (general: 5 monjes distintos, paso y escala propios; uno se frena en una puerta y una vecina le sirve) → «shaved heads, orange robes» (seguimiento en plano medio con llamadas) → «bowls in their hands» (INSERTO del cuenco que recibe arroz) ----------
+// ---------- 35 · «a group of monks walked through her street» (general: 5 monjes DISTINTOS — el viejo encorvado que pasa las cuentas, el alto de zancada larga, el de lentes que mira las casas, el novicio que salta, el joven calmo; uno se frena en una puerta y una vecina le sirve) → «shaved heads, orange robes» (plano medio del viejo y el alto, con llamadas) → «bowls in their hands» (INSERTO legible del cuenco que recibe arroz) ----------
 const k35 = kDe(146.8);
 const T35B = 90, T35C = k35(152.2);
-// monjes del general: [look, x0, px/cuadro, escala, dy, pose]
-const FILA35: [Look, number, number, number, number, Record<string, number>][] = [
-  [MONJE(3), -340, 2.1, 0.86, -64, PARADO_CUENCO],
-  [MONJE(1), 300, 0, 0.92, -36, PARADO_CUENCO],
-  [MONJE_JOVEN, -60, 2.5, 1.0, 0, PARADO_CUENCO],
-  [MONJE(2), 140, 2.8, 1.07, 26, { hD: 66, cD: 112, hI: 60, cI: 112, cabeza: 6 }],
-  [MONJE(0), -540, 2.4, 0.97, 12, OFRECE],
+type M35 = { look: Look; x0: number; v: number; s: number; dy: number; cara: string; pose: Record<string, number>; mov?: (p: Record<string, number>, fr: number, k: number) => Record<string, number>; salta?: boolean; miradas?: { f: number; v: { x: number; y: number } }[] };
+const FILA35: M35[] = [
+  // el viejo: lento, encorvado, pasa las cuentas con la mano izquierda
+  { look: MONJE_VIEJO, x0: 160, v: 1.5, s: 0.95, dy: -40, cara: "feliz", pose: { ...PARADO_CUENCO, tronco: 12, cabeza: 8, hI: 30, cI: 120 }, mov: (p, fr) => ({ ...p, cI: 120 + 14 * Math.sin(fr / 5), cabeza: 8 + 2 * Math.sin(fr / 11) }) },
+  // el alto: zancada larga, cabeza erguida
+  { look: MONJE_ALTO, x0: -170, v: 3.0, s: 1.0, dy: 10, cara: "neutral", pose: { ...PARADO_CUENCO, tronco: -4, cabeza: -6 } },
+  // el de lentes: se frena en la puerta (la vecina le sirve)
+  { look: MONJE_LENTES, x0: 300, v: 0, s: 0.92, dy: -36, cara: "feliz", pose: PARADO_CUENCO },
+  // el novicio: chiquito, va saltando y mira para arriba al viejo
+  { look: MONJE_NOVICIO, x0: 20, v: 2.2, s: 0.95, dy: 30, cara: "risa", pose: { hD: 70, cD: 100, hI: 64, cI: 104, cabeza: -10 }, salta: true, miradas: [{ f: 0, v: { x: 1, y: -0.8 } }, { f: 50, v: { x: -0.4, y: -0.6 } }] },
+  // el joven (el de la historia): calmo, mirada baja
+  { look: MONJE_JOVEN, x0: 880, v: 2.4, s: 1.0, dy: 0, cara: "neutral", pose: PARADO_CUENCO, miradas: [{ f: 0, v: { x: 0.5, y: 0.6 } }] },
 ];
 export const P35Monjes: React.FC = () => {
   const f = useF();
-  if (f >= T35C) return <InsertoCuenco desde={T35C} />;
+  if (f >= T35C) return <InsertoCuenco2 desde={T35C} />;
   if (f >= T35B) {
     const B0 = 520, B1 = 700;
     const cl = [mira(T35B, B0, 650, 1.9), mira(T35C, B1, 650, 1.9, { curva: "inout" })];
     return (
       <Vai cl={cl}
         medio={<>
-          <A look={MONJE_JOVEN} seed={72} escala={ESC * 0.95} ruta={[{ f: T35B, x: B0 - 230, y: VP - 20 }, { f: T35C, x: B1 - 230, y: VP - 20, curva: "inout" }]} caras={[{ f: 0, v: "neutral" }]} poses={[{ f: 0, v: PARADO_CUENCO }]} enManoD={<Cuenco />} miradas={[{ f: 0, v: { x: 0.6, y: 0.4 } }]} />
-          <A look={MONJE(2)} seed={73} ruta={[{ f: T35B, x: B0, y: VP }, { f: T35C, x: B1, y: VP, curva: "inout" }]} caras={[{ f: 0, v: "neutral" }]} poses={[{ f: 0, v: PARADO_CUENCO }]} enManoD={<Cuenco />} miradas={[{ f: 0, v: { x: 0.8, y: 0.2 } }]} />
+          <A look={MONJE_VIEJO} seed={72} escala={ESC * 0.95} ruta={[{ f: T35B, x: B0 - 250, y: VP - 20 }, { f: T35C, x: B1 - 250, y: VP - 20, curva: "inout" }]} caras={[{ f: 0, v: "feliz" }]} poses={[{ f: 0, v: { ...PARADO_CUENCO, tronco: 12, cabeza: 8, hI: 30, cI: 120 } }]}
+            ajuste={(p, fr) => ({ ...p, cI: 120 + 14 * Math.sin(fr / 5) })} enManoD={<Cuenco />} miradas={[{ f: 0, v: { x: 0.8, y: -0.4 } }]} giros={[{ f: 0, v: 0.2 }]} habla={[[T35B + 30, T35B + 44]]} />
+          <A look={MONJE_ALTO} seed={73} ruta={[{ f: T35B, x: B0, y: VP }, { f: T35C, x: B1, y: VP, curva: "inout" }]} caras={[{ f: 0, v: "neutral" }, { f: T35B + 34, v: "feliz" }]} poses={[{ f: 0, v: { ...PARADO_CUENCO, tronco: -4, cabeza: -6 } }]} enManoD={<Cuenco />}
+            miradas={[{ f: 0, v: { x: 0.8, y: 0.2 } }, { f: T35B + 30, v: { x: -0.9, y: 0.5 } }]} giros={[{ f: 0, v: 0 }, { f: T35B + 30, v: -0.4 }]} />
         </>}
-        hud={<><Llamada px={985} py={505} lx={1400} ly={250} texto="SHAVED HEADS" desde={k35(149.88)} hasta={T35C} tam={46} />
-          <Llamada px={990} py={830} lx={1420} ly={720} texto="ORANGE ROBES" desde={k35(151.08)} hasta={T35C} tam={46} /></>} />
+        hud={<><Llamada px={985} py={455} lx={1400} ly={230} texto="SHAVED HEADS" desde={k35(149.88)} hasta={T35C} tam={50} />
+          <Llamada px={990} py={830} lx={1420} ly={720} texto="ORANGE ROBES" desde={k35(151.08)} hasta={T35C} tam={50} /></>} />
     );
   }
   return (
-    <Vai cl={[mira(0, 700, 600, 1.02), mira(T35B, 820, 600, 1.08, { curva: "inout" })]}
+    <Vai cl={[mira(0, 560, 640, 1.25), mira(T35B, 700, 640, 1.32, { curva: "inout" })]}
       medio={<>
-        {FILA35.map(([look, x0, v, s, dy, pose], k) => {
-          const quieto = v === 0;
-          const ruta = quieto ? [{ f: 0, x: x0, y: VP + dy }, { f: 26, x: 500, y: VP + dy, curva: "out" as const }] : [{ f: 0, x: x0, y: VP + dy }, { f: T35B, x: x0 + v * T35B, y: VP + dy, curva: "lineal" as const }];
-          return <A key={k} look={look} seed={70 + k} escala={ESC * s} ruta={ruta} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: quieto ? "feliz" : "neutral" }]}
-            poses={quieto ? [{ f: 0, v: PARADO_CUENCO }, { f: 30, v: OFRECE }] : [{ f: 0, v: pose }]} enManoD={<Cuenco />} miradas={[{ f: 0, v: { x: 0.5, y: 0.4 } }]}
-            ajuste={quieto ? undefined : (p, fr) => ({ ...p, cabeza: (p.cabeza ?? 0) + 3 * Math.sin(fr / 9 + k) })} />;
+        {FILA35.map((m, k) => {
+          const quieto = m.v === 0;
+          const y = VP + m.dy;
+          const ruta = quieto ? [{ f: 0, x: m.x0, y }, { f: 26, x: 500, y, curva: "out" as const }]
+            : m.salta ? Array.from({ length: 11 }).map((_, i) => ({ f: i * 9, x: m.x0 + m.v * i * 9, y: y - (i % 2 ? 26 : 0), curva: "lineal" as const }))
+            : [{ f: 0, x: m.x0, y }, { f: T35B, x: m.x0 + m.v * T35B, y, curva: "lineal" as const }];
+          return <A key={k} look={m.look} seed={70 + k} escala={ESC * m.s} ruta={ruta} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: m.cara }]}
+            poses={quieto ? [{ f: 0, v: PARADO_CUENCO }, { f: 30, v: OFRECE }, { f: 62, v: { ...OFRECE, tronco: 14, cabeza: 10 } }] : [{ f: 0, v: m.pose }]} enManoD={<Cuenco s={m.look === MONJE_NOVICIO ? 0.8 : 1} />}
+            miradas={m.miradas ?? [{ f: 0, v: { x: 0.5, y: 0.4 } }]} habla={quieto ? [[64, 76]] : undefined}
+            giros={m.look === MONJE_LENTES ? undefined : m.look === MONJE_ALTO ? [{ f: 0, v: 0 }] : [{ f: 0, v: 0.1 }, { f: 45, v: -0.2 }]}
+            ajuste={m.mov ? (p, fr) => m.mov!(p as unknown as Record<string, number>, fr, k) as unknown as typeof p : quieto ? undefined : (p, fr) => ({ ...p, cabeza: (p.cabeza ?? 0) + 3 * Math.sin(fr / 9 + k) })} />;
         })}
         <A look={ALDEANA} seed={77} escala={ESC * 0.92} ruta={[{ f: 0, x: 720, y: VP - 36 }, { f: 18, x: 660, y: VP - 36 }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "feliz" }]}
           poses={[{ f: 0, v: "parado" }, { f: 30, v: { hD: 88, cD: 10, hI: 30, cI: 60 } }, { f: 44, v: { hD: 96, cD: 30, hI: 30, cI: 60 } }, { f: 58, v: { hD: 88, cD: 10, hI: 30, cI: 60 } }]} enManoD={<Cuenco s={0.8} />} />
@@ -301,20 +353,36 @@ export const P37Lluvias: React.FC = () => {
     </>
   );
 };
-// ---------- 38 · toda la calle contiene el aliento: la gente en primer término (de costado), uno le tira de la manga al otro; atrás se tapan la boca ----------
-export const P38Aliento: React.FC = () => (
-  <Vai cl={[mira(0, 1540, 640, 1.3), mira(76, 1620, 650, 1.48, { curva: "inout" })]}
-    medio={<>
-      {[0, 1, 2, 3].map((k) => <A key={"a" + k} look={HOMBRE(k + 5)} seed={80 + k} escala={ESC * 0.72} ruta={[{ f: 0, x: 1180 + k * 120, y: VP - 80 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }]} poses={[{ f: 0, v: "parado" }, { f: 10 + k * 8, v: "manosCara" }]} />)}
-      <A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.portal - 220, y: VP }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Cuenco />} poses={[{ f: 0, v: PARADO_CUENCO }]} />
-      <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal - 50, y: VP }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "picaro" }]} />
-      {/* primer término: tres de costado mirando a la pareja */}
-      <A look={ALDEANA} seed={86} escala={ESC * 1.35} ruta={[{ f: 0, x: 960, y: VP + 150 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }]} poses={[{ f: 0, v: "parado" }, { f: 8, v: "manosCara" }]} />
-      <A look={HOMBRE(1)} seed={87} escala={ESC * 1.35} ruta={[{ f: 0, x: 1340, y: VP + 160 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: 30, v: "duda" }]} giros={[{ f: 0, v: 0 }, { f: 30, v: -0.8 }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: 30, v: { x: -1, y: 0.2 } }]} poses={[{ f: 0, v: "parado" }, { f: 30, v: { hD: 30, cD: 140, hI: 20, cI: 30 } }]} />
-      <A look={HOMBRE(4)} seed={88} escala={ESC * 1.3} ruta={[{ f: 0, x: 1170, y: VP + 140 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: 20, v: "miedo" }]} habla={[[20, 50]]}
-        poses={[{ f: 0, v: "parado" }, { f: 18, v: { hD: 84, cD: 6, tronco: 8 } }, { f: 30, v: { hD: 78, cD: 20, tronco: 10 } }, { f: 40, v: { hD: 86, cD: 4, tronco: 8 } }]} />
-    </>} />
-);
+// ---------- 38 · «every man on that street» (paneo por las caras en primer término) → «held his breath» (todos toman aire a la vez y se tapan la boca con las dos manos; el cronómetro del aliento corre) ----------
+const k38 = kDe(168.5);
+const R38 = k38(169.8); // «held»
+const TAPA = { hD: 34, cD: 150, hI: 30, cI: 152, cabeza: 4, tronco: 2 }; // las dos manos sobre la boca
+const AIRE = { hD: 20, cD: 30, hI: 20, cI: 30, tronco: -8, cabeza: -10 }; // toma aire: pecho arriba
+export const P38Aliento: React.FC = () => {
+  const f = useF();
+  const fila = (k: number) => R38 - 6 + k * 3; // cada uno toma aire con un desfase mínimo
+  return (
+    <Vai cl={[mira(0, 1180, 700, 2.0), mira(R38 - 4, 1300, 690, 1.85, { curva: "inout" }), mira(76, 1480, 672, 1.62, { curva: "inout" })]}
+      medio={<>
+        {[0, 1, 2, 3].map((k) => <A key={"a" + k} look={HOMBRE(k + 5)} seed={80 + k} escala={ESC * 0.72} ruta={[{ f: 0, x: 1180 + k * 120, y: VP - 80 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: fila(k) + 6, v: "aguanta" }]}
+          poses={[{ f: 0, v: "parado" }, { f: fila(k), v: AIRE }, { f: fila(k) + 7, v: TAPA }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />)}
+        <A look={MONJE_JOVEN} seed={74} ruta={[{ f: 0, x: V.portal - 220, y: VP }]} caras={[{ f: 0, v: "neutral" }]} enManoD={<Cuenco />} poses={[{ f: 0, v: PARADO_CUENCO }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: 50, v: { x: 0.4, y: 0.7 } }]} />
+        <A look={AMRAPALI} seed={12} ruta={[{ f: 0, x: V.portal - 50, y: VP }]} dir={[{ f: 0, v: -1 }]} caras={[{ f: 0, v: "picaro" }]} poses={[{ f: 0, v: "parado" }, { f: 40, v: "manosCintura" }]} />
+        {/* primer término: tres de costado, cada uno con su gesto antes de contener el aire */}
+        <A look={ALDEANA} seed={86} escala={ESC * 1.35} ruta={[{ f: 0, x: 960, y: VP + 150 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: fila(0) + 6, v: "aguanta" }]}
+          poses={[{ f: 0, v: { hD: 60, cD: 120, hI: 20, cI: 20 } }, { f: fila(0), v: AIRE }, { f: fila(0) + 7, v: TAPA }]} miradas={[{ f: 0, v: { x: 1, y: -0.1 } }]} />
+        <A look={HOMBRE(4)} seed={88} escala={ESC * 1.3} ruta={[{ f: 0, x: 1170, y: VP + 140 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: fila(1) + 6, v: "aguanta" }]} habla={[[4, 22]]}
+          poses={[{ f: 0, v: "parado" }, { f: 6, v: { hD: 84, cD: 6, tronco: 8 } }, { f: 16, v: { hD: 78, cD: 20, tronco: 10 } }, { f: fila(1), v: AIRE }, { f: fila(1) + 7, v: TAPA }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }]} />
+        <A look={HOMBRE(1)} seed={87} escala={ESC * 1.35} ruta={[{ f: 0, x: 1340, y: VP + 160 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "sorpresa" }, { f: 14, v: "duda" }, { f: fila(2) + 6, v: "aguanta" }]}
+          giros={[{ f: 0, v: 0 }, { f: 12, v: -0.8 }, { f: fila(2), v: 0.3 }]} miradas={[{ f: 0, v: { x: 1, y: 0 } }, { f: 12, v: { x: -1, y: 0.2 } }, { f: fila(2), v: { x: 1, y: 0 } }]}
+          poses={[{ f: 0, v: "parado" }, { f: 12, v: { hD: 30, cD: 140, hI: 20, cI: 30 } }, { f: fila(2), v: AIRE }, { f: fila(2) + 7, v: TAPA }]} />
+      </>}
+      hud={<>
+        <Pildora texto="EVERY MAN · HELD HIS BREATH" x={960} y={90} desde={k38(169.2)} color="#ffe2a6" tam={50} />
+        <Temporizador seg={Math.max(0, (f - R38) / 30)} x={1500} y={170} tam={60} desde={R38} centesimas />
+      </>} />
+  );
+};
 // ---------- 39 · se inclina: «I will ask my teacher» (monje en el tercio izquierdo) ----------
 const k39 = kDe(171.04);
 export const P39Reverencia: React.FC = () => (
@@ -482,5 +550,5 @@ export const P45NoCreen: React.FC = () => (
     })}
       {[0, 2, 3].map((k) => <ReaccionFx key={"fx" + k} tipo="sorpresa" f0={F45[k]} x={V.monjes - 420 + k * 150 + (k > 2 ? 820 : 0)} y={650} />)}
     </>}
-    hud={<><Globo texto="WHAT?!" x={600} y={250} desde={6} hasta={70} tam={64} cola="abajo" /><Globo texto="HER house?!" x={1300} y={280} desde={24} hasta={72} tam={56} cola="abajo" /></>} />
+    hud={<><Globo texto="WHAT?!" x={560} y={280} desde={6} hasta={90} tam={80} cola="abajo" /><Globo texto="HER house?!" x={1330} y={300} desde={20} hasta={90} tam={80} cola="abajo" fondo="#fff4c8" /></>} />
 );

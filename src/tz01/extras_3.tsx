@@ -297,11 +297,12 @@ export const MaraCaja: React.FC<{ texto: string; x: number; y: number; desde: nu
 export const PanelOla: React.FC<{ p: number; seg?: number; x?: number; y?: number; s?: number; reloj?: boolean; desde?: number }> = ({ p, seg, x = 980, y = 40, s = 0.5, reloj = true, desde = 0 }) => {
   const f = useF();
   const o = lerp(f, desde, desde + 8, 0, 1);
+  const pp = Math.max(0.08, p); // v4: la curva ya asoma desde el 1.er cuadro (nunca caja negra vacía)
   const W = 1920 * s, H = 1080 * s * 0.86;
   return (
     <div style={{ position: "absolute", left: x, top: y, width: W, height: H, borderRadius: 24, overflow: "hidden", background: "rgba(14,15,19,0.88)", border: "3px solid #3a3f48", opacity: o, boxShadow: "0 10px 30px rgba(0,0,0,0.5)" }}>
       <div style={{ position: "absolute", left: 0, top: -1080 * s * 0.1, width: 1920, height: 1080, transform: `scale(${s})`, transformOrigin: "0 0" }}>
-        <Ola p={p} fondo={false} seg={seg} reloj={reloj} y={-40} />
+        <Ola p={pp} fondo={false} seg={seg} reloj={reloj} y={-40} />
       </div>
     </div>
   );
@@ -354,9 +355,14 @@ export const FarolApaga: React.FC<{ t: number; humo: number }> = ({ t, humo }) =
 };
 
 // ---------- placa de dato con fondo propio (para medidores sobre fondos cargados) ----------
-export const Placa: React.FC<{ x: number; y: number; w: number; h: number; o?: number }> = ({ x, y, w, h, o = 1 }) => (
-  <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 28, background: "rgba(14,15,19,0.78)", border: "2px solid #4a4f58", opacity: o }} />
-);
+// v4: `desde` = la caja funde en 8 cuadros JUNTO con su contenido (nunca se ve vacía antes del dato) y crece apenas desde 0,94
+export const Placa: React.FC<{ x: number; y: number; w: number; h: number; o?: number; desde?: number; hasta?: number }> = ({ x, y, w, h, o = 1, desde, hasta }) => {
+  const f = useF();
+  if (desde !== undefined && f < desde) return null;
+  const e = desde === undefined ? 1 : lerp(f, desde, desde + 8, 0, 1);
+  const s = hasta === undefined ? 1 : lerp(f, hasta - 8, hasta, 1, 0);
+  return <div style={{ position: "absolute", left: x, top: y, width: w, height: h, borderRadius: 28, background: "rgba(14,15,19,0.78)", border: "2px solid #4a4f58", opacity: o * e * s, transform: `scale(${0.94 + 0.06 * e})`, transformOrigin: "50% 50%" }} />;
+};
 
 // ---------- hombro de Tenzo de espaldas en primer término: cabeza pelada, oreja, borde de barba blanca, túnica gris y rosario ----------
 export const HombroTenzo: React.FC<{ x: number; y: number; r?: number; lado?: 1 | -1 }> = ({ x, y, r = 240, lado = -1 }) => {

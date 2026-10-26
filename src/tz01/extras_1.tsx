@@ -5,7 +5,8 @@ import { AbsoluteFill, interpolate, spring, useVideoConfig } from "remotion";
 import { useF } from "../anikit/camara";
 import { F_HUD, F_MANO } from "../anikit/pantalla";
 import { Halo } from "../anikit/luz";
-import { ACENTO, ORO } from "../tenzo/elenco";
+import { ACENTO } from "../tenzo/elenco";
+import { FarolArriba } from "./extras_1b";
 
 const cl = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
 const lerp = (f: number, a: number, b: number, v0: number, v1: number) => interpolate(f, [a, b], [v0, v1], cl);
@@ -128,8 +129,7 @@ export const PalmaToalla: React.FC<{ desde?: number; hasta: number }> = ({ desde
       <svg width={1920} height={1080} style={{ position: "absolute" }}>
         <rect x={120} y={140} width={1680} height={820} rx={18} fill="#c3c6cb" />
         {Array.from({ length: 9 }).map((_, k) => <rect key={k} x={120} y={180 + k * 86} width={1680} height={3} fill="#b2b5ba" />)}
-        <Halo x={1560} y={300} r={360} color={ORO} fuerza={0.45} />
-        <circle cx={1560} cy={300} r={46} fill="#ffe2a8" stroke="#a87a3a" strokeWidth={4} />
+        <FarolArriba x={1560} y={300} s={1.1} />
         {/* toalla doblada */}
         <rect x={560} y={330} width={760} height={460} rx={20} fill="#ece9e3" stroke="#bdb8ae" strokeWidth={4} />
         <line x1={560} y1={560} x2={1320} y2={560} stroke="#d4cfc5" strokeWidth={4} />
@@ -142,6 +142,10 @@ export const PalmaToalla: React.FC<{ desde?: number; hasta: number }> = ({ desde
         <g transform={`translate(${hx},${560 + 10 * Math.sin(u * Math.PI * 4)})`}>
           <path d="M60,60 L420,620" stroke="#8e8a82" strokeWidth={170} strokeLinecap="round" />
           <path d="M60,60 L120,150" stroke="#7a766e" strokeWidth={176} strokeLinecap="butt" opacity={0.5} />
+          {/* puño de la manga */}
+          <path d="M44,36 L96,116" stroke="#6e6a62" strokeWidth={186} strokeLinecap="butt" />
+          <path d="M44,36 L96,116" stroke="#8e8a82" strokeWidth={170} strokeLinecap="butt" />
+          <path d="M-14,94 L118,10" stroke="#221c18" strokeWidth={4} opacity={0.5} />
           {[-30, -10, 10, 30].map((a, i) => <rect key={i} x={-16} y={-176} width={32} height={120 - Math.abs(i - 1.5) * 12} rx={16} transform={`rotate(${a - 20} 0 0)`} fill="#f2bf8f" stroke="#221c18" strokeWidth={5} />)}
           <rect x={-16} y={-110} width={32} height={96} rx={16} transform="rotate(-100 0 0) translate(0,-20)" fill="#f2bf8f" stroke="#221c18" strokeWidth={5} />
           <ellipse cx={0} cy={0} rx={82} ry={90} fill="#f2bf8f" stroke="#221c18" strokeWidth={5} transform="rotate(-20)" />
