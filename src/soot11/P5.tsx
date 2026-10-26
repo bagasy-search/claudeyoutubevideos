@@ -34,8 +34,8 @@ export const P5K: Llave[] = [
   [499.0, CASA + 120, 680, 2.1, 0.7],
   [502.8, CASA + 40, 620, 1.3, 0.6],
   [505.85, CASA, 560, 3.0, 0.6],
-  [507.7, CASA, -950, 0.95, 1.0],
-  [509.0, 31450, -950, 0.95, 1.1],
+  [507.7, CASA, 250, 0.95, 1.0],
+  [509.0, 31450, 250, 0.95, 1.1],
   [510.3, 31450, 560, 0.85, 1.0],
   [514.9, 31450, 470, 0.7, 0.8],
   [518.35, GEN[3], 600, 1.6, 0.8],
@@ -54,7 +54,7 @@ const Corazon: React.FC<{ x: number; y: number; s?: number; color?: string }> = 
 // ── el mapa de Franconia adentro del cuadro de la pared
 const PUEBLOS: Record<string, [number, number]> = {
   NUREMBERG: [960, 560], BAMBERG: [800, 290], BAYREUTH: [1300, 330], HOF: [1520, 280], ANSBACH: [640, 740],
-  "WÜRZBURG": [440, 380], REGENSBURG: [1400, 760], AUGSBURG: [880, 860],
+  "WÜRZBURG": [440, 380], REGENSBURG: [1400, 760], AUGSBURG: [880, 790],
 };
 const Mapa: React.FC<{ t: number }> = ({ t }) => {
   const linea = (a: string, b: string, t0: number, color = C.rojo) => {
@@ -161,7 +161,7 @@ export const P5Mundo: React.FC<{ t: number }> = ({ t }) => {
             return t > 511.3 && t < 518.3 ? <Espada x={sx + 70} y={SUELO - 60 - Math.abs(Math.sin(k * Math.PI)) * 60} s={0.24} rot={-15} brillo={1} /> : null;
           })()}
           {GEN.map((gx, i) => {
-            const t0 = 511.0 + i * 0.6;
+            const t0 = 509.3 + i * 0.55;
             if (t < t0) return null;
             const adelante = i === 3 && vig(t, 518.3, 527.3) ? 1 : 0;
             const tieneEspada = (j: number) => t > 511.3 && t < 518.3 && Math.round(clamp((t - 511.3) / 3.4, 0, 1) * 5) === j;
@@ -171,8 +171,8 @@ export const P5Mundo: React.FC<{ t: number }> = ({ t }) => {
                   barba={[ "#d8d2cc", "#9c958f", "#2a1a10", undefined, "#6a3a1a", undefined][i]} viejo={i < 2} aparece={t0} inclina={i < 2 ? 5 : 0}
                   bD={tieneEspada(i) ? 70 : i === 1 ? 40 + Math.sin(t * 2) * 10 : 15} cD={tieneEspada(i) ? 60 : 10} bI={i === 5 ? 120 : 15} habla={i === 4 && vig(t, 511, 514.8)} mira={i < 3 ? 1 : -1}
                   expr={i === 3 && vig(t, 520.7, 527.3) ? "miedo" : i === 0 && vig(t, 527.3, 531.6) ? "feliz" : i === 5 ? "sorpresa" : "orgullo"} flip={i === 0 && vig(t, 527.3, 531.6)} />
-                <TextoMundo x={gx} y={SUELO - 400} text={["I", "II", "III", "IV", "V", "VI"][i]} size={56} color={C.ambar} borde="#2b1c14" />
-                <TextoMundo x={gx} y={SUELO + 50} text={["1688", "1707", "1726", "1754", "1795", "1840"][i]} size={34} color="#fff3d6" borde="#2b1c14" />
+                {(t < 514.9 || t > 527.3) && <TextoMundo x={gx} y={SUELO - 480} text={["I", "II", "III", "IV", "V", "VI"][i]} size={56} color={C.ambar} borde="#2b1c14" />}
+                {(t < 514.9 || t > 527.3) && <TextoMundo x={gx} y={SUELO - 425} text={["1688", "1707", "1726", "1754", "1795", "1840"][i]} size={30} color="#fff3d6" borde="#2b1c14" />}
               </React.Fragment>
             );
           })}
@@ -225,11 +225,11 @@ export const P5Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={454.9} t1={458.6} text="NO FAMILY WANTS THEIR DAUGHTER MARRYING YOU" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={458.7} t1={462.7} text="...OR THEIR SON MARRYING YOURS" color={C.noche} x={960} y={150} centro size={54} />
     <Titulo t={t} t0={462.85} t1={464.9} text="SO THEY MARRIED EACH OTHER" y={90} size={70} color={C.crema} />
-    <Chip t={t} t0={465.0} t1={470.0} text="SON OF ONE TOWN ♥ DAUGHTER OF THE NEXT" color={C.rojo} x={960} y={950} centro size={50} />
-    <Chip t={t} t0={470.2} t1={474.7} text="THEIR KIDS: THREE TOWNS AWAY" color={C.violeta} x={960} y={950} centro size={54} />
+    <Chip t={t} t0={465.0} t1={470.0} text="SON OF ONE TOWN ♥ DAUGHTER OF THE NEXT" color={C.rojo} x={960} y={1012} centro size={44} />
+    <Chip t={t} t0={470.2} t1={474.7} text="THEIR KIDS: THREE TOWNS AWAY" color={C.violeta} x={960} y={1012} centro size={44} />
     <Titulo t={t} t0={474.9} t1={478.2} text="DYNASTIES" y={200} size={150} color={C.rojo} borde="#2b0a14" />
-    <Chip t={t} t0={478.4} t1={482.9} text="WHOLE REGIONS · ALL RELATED" color={C.violeta} x={960} y={950} centro size={56} />
-    <Chip t={t} t0={483.0} t1={487.2} text="THE JOB · THE SWORDS · THE KNOWLEDGE" color={C.noche} x={960} y={950} centro size={52} />
+    <Chip t={t} t0={478.4} t1={482.9} text="WHOLE REGIONS · ALL RELATED" color={C.violeta} x={960} y={1012} centro size={44} />
+    <Chip t={t} t0={483.0} t1={487.2} text="THE JOB · THE SWORDS · THE KNOWLEDGE" color={C.noche} x={960} y={1012} centro size={44} />
     <Chip t={t} t0={487.4} t1={489.4} text="AND YOUR CHILDREN?" color={C.violeta} x={960} y={150} centro size={60} />
     <Chip t={t} t0={489.5} t1={491.7} text="AGE 5: THEY ALREADY KNEW" color={C.ambar} tinta={C.noche} x={960} y={150} centro size={58} />
     <Sello t={t} t0={491.8} t1={494.4} text="NO GUILD" x={1480} y={860} size={100} />

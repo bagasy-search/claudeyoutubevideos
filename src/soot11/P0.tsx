@@ -31,7 +31,7 @@ export const P0K: Llave[] = [
   [35.6, 8050, 590, 1.0, 0.4],
   [37.3, 7180, 610, 1.35, 1.5],
   [39.7, 7180, 620, 1.5, 0.5],
-  [42.2, 6200, -330, 0.14, 2.2],
+  [42.2, 6200, -330, 0.14, 1.6],
   [53.0, 6300, -300, 0.15, 0.5],
   [55.4, 6620, 560, 0.62, 2.1],
   [58.4, 6700, 620, 1.35, 1.2],
@@ -165,9 +165,9 @@ export const P0Mundo: React.FC<{ t: number }> = ({ t }) => {
         <>
           <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={10} height={10}>
             <path d={PINES.map(([x], i) => `${i ? "L" : "M"} ${x} ${PIN_Y(i)}`).join(" ")} stroke="#fff" strokeWidth={60} fill="none" strokeDasharray="120 90" strokeLinecap="round" strokeLinejoin="round"
-              pathLength={1000} style={{ strokeDasharray: `${interp(t, [48.4, 52.4], [0, 1000])} 1000` }} opacity={0.9} />
+              pathLength={1000} style={{ strokeDasharray: `${interp(t, [43.2, 48.6], [0, 1000])} 1000` }} opacity={0.9} />
           </svg>
-          {PINES.map(([x, i, l]) => <Pin key={i} t={t} t0={48.4 + i * 0.55} x={x} y={PIN_Y(i)} n={i + 1} s={3.4} label={l} color={[C.rojo, C.violeta, C.ambar, C.teal, C.rosa, C.naranja, C.lima][i]} />)}
+          {PINES.map(([x, i, l]) => <Pin key={i} t={t} t0={43.2 + i * 0.8} x={x} y={PIN_Y(i)} n={i + 1} s={3.4} label={l} color={[C.rojo, C.violeta, C.ambar, C.teal, C.rosa, C.naranja, C.lima][i]} />)}
           {/* la espada al principio del camino y el sol que "baja" al final de la vida */}
           {vig(t, 44.3, 53) && <Espada x={6620} y={SUELO - 2000} s={2.6 * clamp((t - 44.3) / 0.3, 0, 1)} rot={-20} />}
         </>
@@ -209,15 +209,15 @@ export const P0Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={48.4} t1={51.8} text="THE LONELIEST JOB IN TOWN" color={C.violeta} x={960} y={1000} centro size={60} />
     <Titulo t={t} t0={51.9} t1={53.4} text="7 TRAPS" y={985} size={150} color={C.ambar} />
     {/* no es un video de sangre */}
-    {vig(t, 53.2, 57.8) && (() => {
+    {vig(t, 53.2, 55.5) && (() => {
       const e = clamp((t - 53.6) / 0.3, 0, 1);
       return (
-        <div style={{ position: "absolute", left: 960, top: 520, transform: `translate(-50%,-50%) scale(${e * (t > 57.3 ? interp(t, [57.3, 57.8], [1, 0]) : 1)})` }}>
+        <div style={{ position: "absolute", left: 960, top: 520, transform: `translate(-50%,-50%) scale(${e * (t > 55.0 ? interp(t, [55.0, 55.5], [1, 0]) : 1)})` }}>
           <svg width={300} height={380} viewBox="-150 -200 300 380" style={{ overflow: "visible" }}><path d="M 0 -180 Q 130 20 110 80 Q 90 170 0 170 Q -90 170 -110 80 Q -130 20 0 -180 Z" fill={C.rojo} stroke="#fff" strokeWidth={10} /><ellipse cx={-40} cy={40} rx={22} ry={40} fill="#ff8a9a" /></svg>
         </div>
       );
     })()}
-    {t > 54.4 && t < 57.3 && <><Tacha t={t} t0={54.4} x={960} y={520} w={460} rot={-40} g={30} /><Tacha t={t} t0={54.6} x={960} y={520} w={460} rot={40} g={30} /></>}
+    {t > 54.4 && t < 55.2 && <><Tacha t={t} t0={54.4} x={960} y={520} w={460} rot={-40} g={30} /><Tacha t={t} t0={54.6} x={960} y={520} w={460} rot={40} g={30} /></>}
     <Chip t={t} t0={53.9} t1={55.0} text="NOT ABOUT BLOOD" color={C.rojo} x={960} y={200} centro size={70} />
     <Chip t={t} t0={55.1} t1={57.8} text="ABOUT EVERYTHING AROUND IT" color={C.teal} tinta={C.noche} x={960} y={200} centro size={60} />
     {vig(t, 55.1, 57.8) && [0, 1, 2, 3, 4].map((i) => {

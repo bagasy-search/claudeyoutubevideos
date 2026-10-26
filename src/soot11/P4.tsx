@@ -87,6 +87,12 @@ export const P4Mundo: React.FC<{ t: number }> = ({ t }) => {
           )}
         </>
       )}
+      {/* mercaderes que cruzan por la orilla abierta con sus sacos */}
+      {vig(t, 424.6, 429.2) && [0, 1, 2].map((i) => (
+        <React.Fragment key={i}>
+          <Persona x={interp(t, [424.6, 429.2], [4700 + i * 170, 5700 + i * 170])} y={SUELO - 10} h={280} t={t} seed={470 + i} ropa={CIVIL(60 + i * 3)} gorro={i === 1 ? "noble" : "campesino"} camina={1.5} expr={i === 2 ? "feliz" : "neutro"} habla={i === 0} bD={150} cD={40} manoD={<Saco x={0} y={10} s={0.5} />} />
+        </React.Fragment>
+      ))}
       {/* ── Núremberg: Franz llega con su atado y se instala en la casa del puente */}
       {t > 394 && (
         <>

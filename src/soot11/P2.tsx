@@ -25,7 +25,7 @@ export const P2K: Llave[] = [
   [188.3, 8900, 600, 1.3, 0.6],
   [193.1, 9220, 610, 1.4, 4.2],
   [196.5, HIELO + 40, 640, 1.8, 0.6],
-  [198.7, HIELO, 590, 2.6, 0.7],
+  [198.7, HIELO, 650, 2.1, 0.7],
   [203.7, HIELO - 10, 590, 3.4, 0.5],
   [205.6, HIELO + 10, 660, 3.2, 0.5],
   [208.4, HIELO, 560, 1.6, 0.7],
@@ -180,16 +180,16 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
             return (
               <Svg>
                 {parte === 0 ? (
-                  <g transform={`translate(${HORCA + 380} ${SUELO - 540 + Math.sin(t * 2) * 10}) scale(${e})`}>
+                  <g transform={`translate(${HORCA + 460} ${SUELO - 400 + Math.sin(t * 2) * 10}) scale(${e})`}>
                     {[[-90, 0, 80], [0, -30, 100], [90, 0, 80], [-40, 30, 70], [50, 34, 70]].map(([cx, cy, r], i) => <circle key={i} cx={cx} cy={cy} r={r} fill="#5b2b80" />)}
                     <text x={0} y={20} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={64} fill="#f2e6ff">SHAME</text>
                   </g>
                 ) : (
-                  Array.from({ length: 16 }, (_, i) => {
+                  Array.from({ length: 10 }, (_, i) => {
                     // pedazos que salen disparados en abanico y caen con gravedad
-                    const a = (i / 16) * Math.PI * 2 + 0.3, v = 520 + (i % 4) * 140, k = Math.min(parte * 1.4, 1);
-                    const px = HORCA + 380 + Math.cos(a) * v * k, py = SUELO - 540 + Math.sin(a) * v * 0.6 * k + 520 * k * k;
-                    const r = 46 * (1 - parte) + 4;
+                    const a = (i / 10) * Math.PI * 2 + 0.3, v = 520 + (i % 4) * 140, k = Math.min(parte * 1.4, 1);
+                    const px = HORCA + 460 + Math.cos(a) * v * k, py = SUELO - 400 + Math.sin(a) * v * 0.6 * k + 520 * k * k;
+                    const r = 26 * (1 - parte) + 3;
                     return <path key={i} transform={`translate(${px} ${py}) rotate(${i * 47 + parte * 400})`} d={`M ${-r} 0 Q 0 ${-r * 1.3} ${r} 0 Q 0 ${r * 0.7} ${-r} 0 Z`} fill={i % 3 ? "#5b2b80" : "#8a4ab8"} stroke="#2b1240" strokeWidth={4} />;
                   })
                 )}
@@ -258,7 +258,9 @@ export const P2Mundo: React.FC<{ t: number }> = ({ t }) => {
                 </React.Fragment>
               );
             })}
-            <G x={ENTIERRO + lleva} y={SUELO - 20 - alza * 300}>
+            {/* caballetes: el cajón espera apoyado en el suelo hasta que lo levantan */}
+            {alza < 1 && [-110, 110].map((dx) => <G key={dx} x={ENTIERRO + dx} y={SUELO - 10}><path d="M -40 0 L -10 -120 L 10 -120 L 40 0" stroke="#6a3c1a" strokeWidth={14} fill="none" strokeLinejoin="round" /><rect x={-50} y={-130} width={100} height={16} rx={4} fill="#7d4a24" /></G>)}
+            <G x={ENTIERRO + lleva} y={SUELO - 130 - alza * 200}>
               <path d="M -170 0 L -190 -50 L -150 -90 L 150 -90 L 190 -50 L 170 0 Z" fill="#4a2810" stroke="#2b1408" strokeWidth={6} />
               <rect x={-14} y={-80} width={28} height={70} fill="#c9a36a" /><rect x={-40} y={-60} width={80} height={22} fill="#c9a36a" />
               <path d="M 70 -90 Q 100 -140 140 -96 Z" fill="#7a1f3d" />

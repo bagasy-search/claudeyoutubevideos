@@ -64,8 +64,7 @@ const PerroMuerto: React.FC<{ x: number; t: number; op?: number }> = ({ x, t, op
 const CaballoMuerto: React.FC<{ x: number; t: number }> = ({ x, t }) => (
   <G x={x} y={SUELO - 6}>
     <ellipse cx={0} cy={-70} rx={170} ry={64} fill="#8a5a3a" />
-    {[-110, -60, 60, 110].map((lx) => <rect key={lx} x={lx - 12} y={-230} width={24} height={110} rx={10} fill="#8a5a3a" />)}
-    {[-110, -60, 60, 110].map((lx) => <rect key={lx} x={lx - 14} y={-246} width={28} height={22} rx={6} fill="#2b1c14" />)}
+    {[-110, -60, 60, 110].map((lx, k) => <g key={lx} transform={`rotate(${[-28, -10, 10, 28][k]} ${lx} -120)`}><rect x={lx - 13} y={-235} width={26} height={120} rx={11} fill="#7a4c30" stroke="#4a2a18" strokeWidth={4} /><rect x={lx - 15} y={-252} width={30} height={24} rx={6} fill="#2b1c14" /></g>)}
     <path d="M -160 -90 L -250 -60 L -290 -90 L -260 -130 L -170 -120 Z" fill="#8a5a3a" />
     <path d="M -170 -120 Q -200 -160 -160 -170" stroke="#3a2414" strokeWidth={16} fill="none" />
     <svg style={{ overflow: "visible" }}><OjoX x={-240} y={-100} r={10} /></svg>
@@ -125,7 +124,7 @@ export const P7Mundo: React.FC<{ t: number }> = ({ t }) => {
         <>
           {t < 662.0 && <CaballoMuerto x={CABALLO} t={t} />}
           {t >= 662.0 && <G x={interp(t, [662.0, 664.3], [CABALLO + 120, CABALLO + 800])} y={SUELO - 140} s={0.8}><ellipse cx={0} cy={-40} rx={150} ry={50} fill="#8a5a3a" /><svg style={{ overflow: "visible" }}><OjoX x={-130} y={-50} r={9} /></svg></G>}
-          {t > 660 && <Carro x={interp(t, [660, 661.6, 662.0, 664.3], [CABALLO + 700, CABALLO + 200, CABALLO + 120, CABALLO + 800])} />}
+          {t > 660 && <Carro x={interp(t, [660, 661.6, 662.0, 664.3], [CABALLO + 900, CABALLO + 480, CABALLO + 420, CABALLO + 1000])} />}
           {t > 660 && <Persona x={interp(t, [660, 661.6, 662.0, 664.3], [CABALLO + 960, CABALLO + 460, CABALLO + 380, CABALLO + 1060])} y={SUELO - 10} h={290} t={t} seed={601} ropa={DESOLLADOR} gorro="capucha" flip={t < 662} camina={t < 661.6 || t > 662 ? 1.6 : 0} expr="neutro" bD={130} cD={30} />}
           {t < 660.1 && [CABALLO - 360, CABALLO - 250, CABALLO + 300].map((cx, i) => <Persona key={cx} x={cx} y={SUELO - 10} h={280} t={t} seed={720 + i} ropa={CIVIL(90 + i)} flip={cx > CABALLO} expr="sorpresa" habla={i === 0} bD={i === 0 ? 150 : 20} cD={10} />)}
           <BurbujaM t={t} t0={658.9} t1={660.1} x={CABALLO - 360} y={SUELO - 420} text="EXECUTIONER!" size={44} />
@@ -310,7 +309,7 @@ export const P7Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={696.65} t1={700.7} text="ANYTHING FROM THE GALLOWS = MAGIC (SUPPOSEDLY)" color={C.noche} x={960} y={150} centro size={48} />
     <Chip t={t} t0={700.85} t1={704.8} text="HANGMAN'S ROPE = LUCK FOR GAMBLERS" color={C.lima} tinta={C.noche} x={960} y={150} centro size={54} />
     <Chip t={t} t0={704.95} t1={707.5} text="HEALING SALVES MADE FROM..." color={C.teal} tinta={C.noche} x={960} y={150} centro size={58} />
-    <Titulo t={t} t0={707.6} t1={711.4} text="DON'T ASK." y={210} size={150} color={C.crema} />
+    <Chip t={t} t0={707.6} t1={711.4} text="DON'T ASK." color={C.rojo} x={520} y={330} centro size={80} />
     <Chip t={t} t0={711.55} t1={715.0} text="THE ONLY SUPPLIER IN TOWN" color={C.oro} tinta={C.noche} x={960} y={150} centro size={60} />
     <Sello t={t} t0={715.1} t1={718.5} text="LONELY" x={520} y={560} size={110} rot={-10} color={C.violeta} />
     <Sello t={t} t0={717.35} t1={718.5} text="DIRTY" x={960} y={760} size={110} rot={6} color="#8a6a3a" />

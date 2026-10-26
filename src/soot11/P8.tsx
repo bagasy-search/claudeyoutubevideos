@@ -49,7 +49,7 @@ export const P8K: Llave[] = [
   [855.9, PLAZA, 560, 1.0, 1.2, 0.35],
   [860.0, PLAZA, 520, 1.5, 0.8],
   [864.9, PLAZA, 600, 1.15, 0.8],
-  [867.9, CEM, -950, 0.95, 1.0],
+  [867.9, CEM, 250, 0.95, 1.0],
   [869.6, CEM, 560, 0.9, 1.4],
   [873.1, CEM + 80, 580, 1.4, 1.0],
   [877.6, 6300, 400, 0.32, 1.6, 0.2],
@@ -59,10 +59,10 @@ export const P8K: Llave[] = [
   [894.5, ATRAS + 60, 600, 1.4, 1.2],
   [898.4, 6100, 420, 0.22, 1.6],
   [902.9, 6100, 420, 0.24, 2.0],
-  [906.9, 6100, -950, 0.95, 1.0],
-  [908.3, VIK, -950, 0.95, 1.2],
-  [909.7, VIK + 250, 540, 1.1, 1.2],
-  [913.9, VIK + 250, 500, 0.98, 4.0],
+  [906.9, 6100, 250, 0.95, 1.0],
+  [908.3, VIK, 250, 0.95, 1.2],
+  [909.7, VIK + 60, 540, 1.1, 1.2],
+  [913.9, VIK + 60, 500, 0.98, 4.0],
 ];
 // 0 = día, 1 = atardecer, 2 = noche
 export const P8H: [number, number][] = [
@@ -129,15 +129,15 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           <BurbujaM t={t} t0={778.0} t1={782.0} x={PLAZA - 40} y={SUELO - 430} text="DOLOR... MAGNUS... EST..." size={40} />
           {vig(t, 779.4, 782.2) && <G x={PLAZA - 220} y={SUELO - 10}><path d="M -60 -10 Q -70 -120 0 -130 Q 70 -120 60 -10 Z" fill="#c9a060" stroke="#7a5a2a" strokeWidth={6} /><text x={0} y={-50} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={60} fill={C.oro} stroke="#5a3a10" strokeWidth={3}>×10</text></G>}
           {/* los pacientes: brazo roto, tobillo, herida */}
-          {t > 773.4 && [["#d8443a", "BROKEN ARM?", 773.5], ["#2a8a5a", "TWISTED ANKLE?", 774.4], ["#5a6ac0", "A WOUND THAT WON'T HEAL?", 775.3]].map(([col, txt, t0], i) => {
-            const x0 = PLAZA + 300 + i * 160;
+          {t > 773.4 && [["#d8443a", "BROKEN ARM?", 773.5], ["#2a8a5a", "TWISTED ANKLE?", 774.4], ["#5a6ac0", "WON'T HEAL?", 775.3]].map(([col, txt, t0], i) => {
+            const x0 = PLAZA + 300 + i * 260;
             return (
               <React.Fragment key={i}>
                 <Persona x={x0} y={SUELO - 10} h={280} t={t} seed={810 + i} ropa={{ ...CIVIL(140 + i), tunica: col as string }} flip expr={t > 779.4 ? "miedo" : "triste"} aparece={t0 as number}
                   inclina={i === 1 ? -10 : 0} bD={i === 0 ? 60 : i === 2 ? 120 : 10} cD={i === 0 ? 110 : 40}
                   manoD={i === 0 ? <Cabestrillo /> : i === 2 ? <rect x={-30} y={-14} width={60} height={28} rx={8} fill="#f6efe6" /> : undefined}
                   manoI={i === 1 ? <rect x={-5} y={-40} width={10} height={260} fill="#8a5a2a" /> : undefined} />
-                {vig(t, t0 as number, 777) && <TextoMundo x={x0} y={SUELO - 380 - i * 70} text={txt as string} size={40} color="#fff3d6" borde="#2b1c14" />}
+                {vig(t, t0 as number, 777) && <TextoMundo x={x0} y={SUELO - 390 - (i % 2) * 95} text={txt as string} size={38} color="#fff3d6" borde="#2b1c14" />}
               </React.Fragment>
             );
           })}
@@ -207,7 +207,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
         <>
           {[PLAZA - 220, PLAZA - 80, PLAZA + 60].map((cx, i) => <Persona key={cx} x={cx} y={SUELO - 10} h={300} t={t} seed={830 + i} ropa={DOCTOR} gorro="noble" barba={i === 1 ? "#d8d2cc" : undefined} viejo={i === 1} expr="enojado" habla salta={vig(t, 837.7, 841.9) ? 1 : 0}
             bD={150 + Math.sin(t * 8 + i) * 15} cD={10} manoD={i === 1 ? <g><rect x={-6} y={-260} width={12} height={260} fill="#6b3a1f" /></g> : <Libro s={0.6} />} />)}
-          <G x={PLAZA - 80} y={SUELO - 590} rot={Math.sin(t * 4) * 3}><rect x={-260} y={-60} width={520} height={120} rx={14} fill="#fbecc8" stroke="#7a3d14" strokeWidth={8} /><text x={0} y={-8} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill={C.rojo}>STOP STEALING</text><text x={0} y={40} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill={C.rojo}>OUR PATIENTS!</text></G>
+          <G x={PLAZA - 80} y={SUELO - 500} rot={Math.sin(t * 4) * 3}><rect x={-260} y={-60} width={520} height={120} rx={14} fill="#fbecc8" stroke="#7a3d14" strokeWidth={8} /><text x={0} y={-8} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill={C.rojo}>STOP STEALING</text><text x={0} y={40} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill={C.rojo}>OUR PATIENTS!</text></G>
           {t > 841.9 && <Gente t={t} x0={interp(t, [841.9, 847.3], [PLAZA + 200, PLAZA + 900])} x1={interp(t, [841.9, 847.3], [PLAZA + 900, PLAZA + 1600])} n={6} y={SUELO + 20} h={280} seed={840} expr="feliz" habla />}
         </>
       )}
@@ -276,7 +276,7 @@ export const P8Mundo: React.FC<{ t: number }> = ({ t }) => {
           {vig(t, 887.8, 892.2) && <Franz x={PLAZA - 40} y={SUELO - 180} t={t} expr="neutro" bD={vig(t, 889.9, 891.6) ? 150 : 20} cD={vig(t, 889.9, 891.6) ? 20 : 10} manoD={<g transform="rotate(-20)"><rect x={-8} y={-300} width={16} height={300} fill="#dfe6ee" stroke="#2b2140" strokeWidth={4} /><rect x={-40} y={-10} width={80} height={16} fill="#8a5414" /></g>} />}
           {vig(t, 887.8, 892.2) && <Gente t={t} x0={PLAZA - 900} x1={PLAZA - 360} n={4} y={SUELO + 10} h={280} seed={888} expr="miedo" mira={1} />}
           {vig(t, 887.8, 892.2) && <Gente t={t} x0={PLAZA + 420} x1={PLAZA + 900} n={4} y={SUELO + 10} h={280} seed={889} expr="miedo" mira={-1} />}
-          {vig(t, 889.9, 892) && <TextoMundo x={PLAZA} y={SUELO - 400} text="1. JUSTICE" size={90} color={C.oro} borde="#2b1c14" />}
+          {vig(t, 889.9, 892) && <TextoMundo x={PLAZA + 420} y={SUELO - 470} text="1. JUSTICE" size={90} color={C.oro} borde="#2b1c14" />}
           <Svg><rect x={7020} y={SUELO - 240} width={72} height={230} fill="#ffd27a" stroke="#4a2810" strokeWidth={6} /></Svg>
           {t > 891.9 && <Franz x={ATRAS - 60} y={SUELO - 10} t={t} expr="feliz" bD={100} cD={40} manoD={<g><rect x={-14} y={-10} width={28} height={40} rx={6} fill="#ffd27a" stroke="#4a2810" strokeWidth={4} /></g>} flip />}
           {t > 891.9 && <Persona x={ATRAS + 140} y={SUELO - 20} h={290} t={t} seed={890} ropa={CIVIL(180)} gorro="capucha" capa="#1b2440" flip expr="miedo" bD={110} cD={120} manoD={<Cabestrillo />} />}
@@ -339,7 +339,7 @@ const Lamina: React.FC<{ t: number }> = ({ t }) => {
   );
   const B = "#f6efe6", K = "#7a6a5a";
   return (
-    <div style={{ position: "absolute", left: 1350, top: 560, transform: `translate(-50%,-50%) scale(${e}) rotate(2deg)`, background: "#fbecc8", border: "10px solid #7a3d14", borderRadius: 24, padding: 10, boxShadow: "0 14px 0 rgba(20,10,50,.35)" }}>
+    <div style={{ position: "absolute", left: 560, top: 560, transform: `translate(-50%,-50%) scale(${e * 0.88}) rotate(-2deg)`, background: "#fbecc8", border: "10px solid #7a3d14", borderRadius: 24, padding: 10, boxShadow: "0 14px 0 rgba(20,10,50,.35)" }}>
       <svg width={720} height={760} viewBox="-40 0 720 760">
         <g stroke={K} strokeWidth={5}>
           <circle cx={300} cy={100} r={62} fill={B} />
@@ -438,7 +438,7 @@ const Flash: React.FC<{ t: number; t0: number }> = ({ t, t0 }) => (t > t0 && t <
 
 export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
   <>
-    <Titulo t={t} t0={729.3} t1={730.5} text="THE TWIST" y={540} size={220} color={C.ambar} borde="#2b0a14" />
+    <Titulo t={t} t0={729.3} t1={730.5} text="THE TWIST" y={210} size={180} color={C.ambar} borde="#2b0a14" />
     <Chip t={t} t0={730.55} t1={733.4} text="ONE OF THE BEST-PAID MEN IN TOWN" color={C.oro} tinta={C.noche} x={960} y={150} centro size={56} />
     <Chip t={t} t0={733.5} t1={735.5} text="A WEEKLY SALARY FROM THE CITY" color={C.teal} tinta={C.noche} x={960} y={150} centro size={56} />
     <Chip t={t} t0={735.6} t1={737.1} text="+ EXTRA PAY FOR EVERY JOB" color={C.lima} tinta={C.noche} x={960} y={150} centro size={58} />
@@ -488,7 +488,7 @@ export const P8Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={869.6} t1={873.0} text="1634: NUREMBERG'S MOST RESPECTED CEMETERY" color={C.violeta} x={960} y={150} centro size={48} />
     <Titulo t={t} t0={875.45} t1={877.5} text="THE TOWN FOUND ROOM FOR HIM" y={220} size={90} color={C.oro} borde="#2b1c14" />
     <Titulo t={t} t0={877.65} t1={880.85} text="THE LONELIEST MAN IN TOWN?" y={220} size={100} color={C.crema} />
-    <Sello t={t} t0={880.9} t1={881.95} text="ABSOLUTELY." x={960} y={560} size={140} />
+    <Sello t={t} t0={880.9} t1={881.95} text="ABSOLUTELY." x={1480} y={880} size={100} />
     <Recap t={t} />
     <Titulo t={t} t0={888.15} t1={891.9} text="BUT THE TOWN NEEDED HIM TWICE" y={200} size={90} color={C.ambar} borde="#2b0a14" />
     <Chip t={t} t0={896.4} t1={898.3} text="IT JUST NEVER WANTED TO BE SEEN WITH HIM" color={C.noche} x={960} y={150} centro size={52} />

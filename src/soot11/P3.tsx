@@ -30,12 +30,12 @@ export const P3K: Llave[] = [
   [304.45, 3800, 580, 2.2, 0.6],
   [308.3, 3800, 520, 3.6, 0.6],
   [312.2, 3780, 590, 2.4, 0.6],
-  [315.0, 3400, -950, 0.95, 0.9],
-  [316.6, PAN, -950, 0.95, 1.0],
+  [315.0, 3400, 250, 0.95, 0.9],
+  [316.6, PAN, 250, 0.95, 1.0],
   [317.95, PAN, 600, 1.3, 0.9],
   [320.2, PAN, 560, 2.3, 0.6],
   [324.7, CASA_P, 660, 1.6, 0.8],
-  [327.9, CASA_P, 720, 2.6, 0.6],
+  [327.9, CASA_P, 700, 2.0, 0.6],
   [331.5, CASA_P, 650, 1.6, 1.0],
   [334.9, 31350, 600, 1.0, 0.9],
   [338.5, 31100, 600, 1.45, 0.6],
@@ -47,8 +47,8 @@ export const P3K: Llave[] = [
   [360.3, 31700, 600, 1.0, 0.8],
   [364.0, 31700, 620, 1.5, 0.8],
   [367.9, 31600, 520, 0.85, 1.0],
-  [372.75, 31600, -950, 0.95, 0.9],
-  [374.4, 10300, -950, 0.95, 1.2],
+  [372.75, 31600, 250, 0.95, 0.9],
+  [374.4, 10300, 250, 0.95, 1.2],
 ];
 export const P3H: [number, number][] = [[270.3, 0], [375.3, 0]];
 
@@ -116,7 +116,7 @@ export const P3Mundo: React.FC<{ t: number }> = ({ t }) => {
           {vig(t, 305.7, 308.2) && <Persona x={interp(t, [305.7, 306.6, 307.0, 308.2], [3480, 3700, 3700, 3480])} y={SUELO - 10} h={280} t={t} seed={77} ropa={CIVIL(15)} gorro="campesino" camina={t < 306.6 || t > 307.0 ? 1.8 : 0}
             bD={vig(t, 306.4, 307.0) ? 140 : 10} expr={t > 306.8 ? "miedo" : "feliz"} salta={306.8} />}
           {vig(t, 306.8, 308.2) && <Emote t={t} t0={306.8} tipo="excl" x={3700} y={SUELO - 330} s={0.6} />}
-          {t > 312.1 && <G x={PT.taburete + 60} y={SUELO - 330} rot={Math.sin(t * 3) * 6}><line x1={0} y1={-20} x2={0} y2={20} stroke="#5a3418" strokeWidth={4} /><rect x={-70} y={20} width={140} height={40} rx={8} fill="#fff6e0" stroke={C.rojo} strokeWidth={4} /><text x={0} y={50} textAnchor="middle" fontSize={24} fontFamily={fontFamily} fontWeight={700} fill={C.rojo}>RESERVED</text></G>}
+          {t > 312.1 && <G x={PT.taburete + 190} y={SUELO - 190} rot={Math.sin(t * 3) * 6}><line x1={0} y1={-20} x2={0} y2={20} stroke="#5a3418" strokeWidth={4} /><rect x={-70} y={20} width={140} height={40} rx={8} fill="#fff6e0" stroke={C.rojo} strokeWidth={4} /><text x={0} y={50} textAnchor="middle" fontSize={24} fontFamily={fontFamily} fontWeight={700} fill={C.rojo}>RESERVED</text></G>}
         </>
       )}
       {/* ── París: la panadería con la hogaza al revés y la casa de la superstición */}
@@ -151,7 +151,7 @@ export const P3Mundo: React.FC<{ t: number }> = ({ t }) => {
             manoD={cuchara ? <g transform="rotate(180)"><Cucharon x={0} y={-20} s={interp(t, [350.75, 351.2], [0.3, 1.7])} /></g> : undefined}
             manoI={<Saco x={0} y={170} s={interp(t, [341, 360], [0.35, 0.9])} />} />}
           {vig(t, 346.3, 350.7) && <BurbujaM t={t} t0={346.5} t1={350.6} x={31200} y={SUELO - 470} text="NON! NOT YOUR HAND!" size={36} />}
-          {vig(t, 341.2, 346.3) && SACOS.slice(0, 3).map((sx, i) => vig(t, 342.2 + i * 1.2, 343.4 + i * 1.2) ? <TextoMundo key={sx} x={sx} y={SUELO - 190} text="-1 HANDFUL" size={28} color={C.rojo} borde="#fff" /> : null)}
+          {vig(t, 341.2, 346.3) && SACOS.slice(0, 3).map((sx, i) => vig(t, 342.2 + i * 1.2, 343.4 + i * 1.2) ? <TextoMundo key={sx} x={sx} y={SUELO - 190} text="-1 HANDFUL" size={46} color={C.rojo} borde="#fff" /> : null)}
           {/* el rey lo abolió y les pagó */}
           {t > 360.2 && (
             <>

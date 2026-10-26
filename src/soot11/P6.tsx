@@ -126,7 +126,7 @@ export const P6Mundo: React.FC<{ t: number }> = ({ t }) => {
             const u = clamp((t - 593.1 - i * 0.12) / 0.9, 0, 1);
             if (u <= 0 || u >= 1) return null;
             const tx = fx + (i - 2.5) * 40;
-            return <G key={i} x={cx + (tx - cx) * u} y={SUELO - 200 - Math.sin(u * Math.PI) * 360 + (fy - SUELO + 100) * u}><Piedra /></G>;
+            return <G key={i} x={cx + (tx - cx) * u} y={SUELO - 200 - Math.sin(u * Math.PI) * 360 + (fy - SUELO + 100) * u} s={1.9} rot={u * 420}><Piedra />{u > 0.85 && [0, 1, 2, 3, 4].map((k) => <line key={k} x1={Math.cos(k * 1.26) * 30} y1={Math.sin(k * 1.26) * 30 - 10} x2={Math.cos(k * 1.26) * 60} y2={Math.sin(k * 1.26) * 60 - 10} stroke="#fff3d6" strokeWidth={6} strokeLinecap="round" />)}</G>;
           })}
           {vig(t, 593.3, 596) && <Emote t={t} t0={593.5} tipo="susto" x={PLAZA} y={ESC - 360} s={0.7} />}
         </>
@@ -173,14 +173,14 @@ const Grafico: React.FC<{ t: number }> = ({ t }) => {
   const n = 30;
   const pts = (f: (k: number) => number) => Array.from({ length: Math.max(2, Math.floor(n * u)) }, (_, i) => `${80 + (i / n) * 640},${f(i / n)}`).join(" ");
   return (
-    <div style={{ position: "absolute", left: 1150, top: 600, transform: `translate(-50%,-50%) scale(${e})`, background: "#fbecc8", border: "8px solid #7a3d14", borderRadius: 22, padding: 18, boxShadow: "0 12px 0 rgba(20,10,50,.35)" }}>
-      <svg width={780} height={420}>
+    <div style={{ position: "absolute", left: 860, top: 580, transform: `translate(-50%,-50%) scale(${e * 0.92})`, background: "#fbecc8", border: "8px solid #7a3d14", borderRadius: 22, padding: 18, boxShadow: "0 12px 0 rgba(20,10,50,.35)" }}>
+      <svg width={1010} height={420}>
         <line x1={80} y1={360} x2={740} y2={360} stroke="#7a3d14" strokeWidth={6} />
         <line x1={80} y1={40} x2={80} y2={360} stroke="#7a3d14" strokeWidth={6} />
         <polyline points={pts((k) => 90 + k * 230 + Math.sin(k * 20) * 10)} fill="none" stroke={C.rojo} strokeWidth={12} strokeLinecap="round" />
         <polyline points={pts((k) => 330 - k * 250 + Math.sin(k * 17) * 8)} fill="none" stroke="#2a8a3a" strokeWidth={12} strokeLinecap="round" />
-        <text x={560} y={300} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill={C.rojo}>SHOW</text>
-        <text x={560} y={120} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#2a8a3a">FAST</text>
+        <text x={752} y={334} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill={C.rojo} opacity={clamp((u - 0.9) * 10, 0, 1)}>SPECTACLE</text>
+        <text x={752} y={94} fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#2a8a3a" opacity={clamp((u - 0.9) * 10, 0, 1)}>QUICK END</text>
         <text x={90} y={400} fontFamily={fontFamily} fontWeight={700} fontSize={30} fill="#7a3d14">1573</text>
         <text x={650} y={400} fontFamily={fontFamily} fontWeight={700} fontSize={30} fill="#7a3d14">1617</text>
       </svg>
@@ -235,7 +235,7 @@ export const P6Pant: React.FC<{ t: number }> = ({ t }) => (
     <Chip t={t} t0={590.45} t1={593.0} text="ARMED WITH WHATEVER WAS IN THEIR HANDS" color={C.noche} x={960} y={150} centro size={52} />
     <Titulo t={t} t0={593.1} t1={594.5} text="STONES." y={200} size={150} color={C.crema} />
     <Chip t={t} t0={594.6} t1={598.5} text="MORE THAN ONE EXECUTIONER..." color={C.violeta} x={960} y={150} centro size={58} />
-    <Titulo t={t} t0={598.6} t1={602.1} text="RUN FOR YOUR LIFE" y={200} size={120} color={C.ambar} />
+    <Titulo t={t} t0={598.6} t1={602.1} text="RUN FOR YOUR LIFE" y={960} size={110} color={C.ambar} />
     <Chip t={t} t0={602.25} t1={604.6} text="SOME NEVER MADE IT TO THE BRIDGE" color={C.noche} x={960} y={150} centro size={56} />
     <Titulo t={t} t0={604.75} t1={609.2} text="HOW DO YOU SURVIVE THIS?" y={200} size={96} color={C.crema} />
     <Chip t={t} t0={609.4} t1={611.1} text="FRANZ HAD A STRATEGY" color={C.teal} tinta={C.noche} x={960} y={150} centro size={60} />

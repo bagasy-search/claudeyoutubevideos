@@ -15,7 +15,7 @@ export const V_ARBOL: Vent = { x: DIARIO.x - 160 * DIARIO.s - 48, y: DIARIO.y - 
 const TABLON = 7430;
 
 export const P1K: Llave[] = [
-  [60.6, 6760, 600, 1.55, 0.6],
+  [60.6, 6930, 600, 1.3, 0.6],
   [62.5, TABLON, 600, 1.55, 0.85],
   [66.75, TABLON, 700, 2.4, 0.5],
   [69.4, 6560, 640, 1.65, 0.85],
@@ -37,7 +37,7 @@ export const P1K: Llave[] = [
   enV(V_ARBOL, 116.5, 760, 560, 1.2, 0.6),
   [120.85, PT.espadaPared + 420, 575, 1.6, 1.9],
   [123.9, PT.espadaPared + 420, 575, 1.7, 0.5],
-  [126.9, PT.espadaPared, 545, 4.6, 0.8],
+  [126.9, PT.espadaPared, 370, 3.0, 0.8],
   [129.4, PT.espadaPared, 560, 1.85, 0.6],
   [133.1, PT.espadaPared, 700, 3.2, 0.6],
   [137.8, PT.espadaPared, 640, 4.2, 0.6],
@@ -85,7 +85,7 @@ const Hof: React.FC<{ t: number }> = ({ t }) => {
           <g transform={`translate(0 ${-170 + Math.sin(t * 2.4) * 4})`}><rect x={-34} y={-34} width={68} height={68} rx={14} fill="#fff3d6" /><text x={0} y={20} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={54} fill="#a3202f" stroke="none">?</text></g>
         </g>
       </Svg>
-      {t > 80.9 && <G x={1150} y={SUELO - 360} rot={Math.sin(t * 3) * 4}><line x1={0} y1={-60} x2={0} y2={0} stroke="#5a3418" strokeWidth={8} /><rect x={-90} y={-40} width={180} height={70} rx={10} fill="#a8622c" /><text x={0} y={10} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill="#fff3d6">AWAY</text></G>}
+      {t > 80.9 && <G x={1150} y={SUELO - 360} rot={Math.sin(t * 3) * 4}><rect x={-9} y={-20} width={18} height={380} fill="#5a3418" /><path d="M -90 -40 L 90 -40 L 125 -5 L 90 30 L -90 30 Z" fill="#a8622c" stroke="#5a3418" strokeWidth={5} /><text x={0} y={10} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={44} fill="#fff3d6">AWAY</text></G>}
       <Gente t={t} x0={1290} x1={1900} n={6} seed={22} h={260} y={SUELO - 30} mira={-1} expr={t > 84.4 ? "sorpresa" : "neutro"} aleja={{ desde: 1520, dx: 90, t0: 85.0 }} />
       <Persona x={1520} y={SUELO - 6} h={290} t={t} seed={230} ropa={HEINRICH} gorro="campesino" flip mira={-1} ladea={niega}
         expr={t < 84.6 ? "neutro" : t < 95.4 ? "miedo" : "triste"} salta={85.0} bI={30} cI={60} manoI={<Jaula />} />
@@ -124,7 +124,7 @@ const Arbol: React.FC<{ t: number }> = ({ t }) => {
       <TextoMundo x={960} y={470} text="HEINRICH" size={40} color="#7a3d14" borde="#f6e3b4" />
       <TextoMundo x={560} y={800} text="FRANZ" size={44} color="#a3202f" borde="#f6e3b4" />
       <Sello t={t} t0={101.6} text="UNCLEAN" x={1240} y={300} size={70} rot={-10} />
-      {hijos.map((x, i) => <Sello key={x} t={t} t0={102.85 + i * 0.22} text="UNCLEAN" x={x + 70} y={600} size={38} rot={-12 + i * 5} />)}
+      {hijos.map((x, i) => <Sello key={x} t={t} t0={102.85 + i * 0.22} text="UNCLEAN" x={x + 150} y={470} size={34} rot={-12 + i * 5} />)}
       {nietos.map((x, i) => <Sello key={x} t={t} t0={104.35 + i * 0.16} text="UNCLEAN" x={x + 40} y={900} size={28} rot={-14 + i * 4} />)}
       {t > 114 && t < 118.9 && <Svg><circle cx={560} cy={640} r={170} fill="none" stroke="#e8344a" strokeWidth={10} strokeDasharray={1070} strokeDashoffset={1070 * (1 - clamp((t - 114) / 0.5, 0, 1))} /></Svg>}
     </>
@@ -183,7 +183,7 @@ const Lista: React.FC<{ t: number; t0: number; t1: number }> = ({ t, t0, t1 }) =
   const items = ["BAKER", "SMITH", "CARPENTER", "BIRDCATCHER", "EXECUTIONER"];
   const e = clamp((t - t0) / 0.3, 0, 1) * interp(t, [t1, t1 + 0.3], [1, 0]);
   return (
-    <div style={{ position: "absolute", left: 1400, top: 540, transform: `translate(-50%,-50%) scale(${e}) rotate(3deg)`, background: "#fbecc8", borderRadius: 18, padding: "26px 44px", boxShadow: "0 14px 0 rgba(20,10,50,.35)", fontFamily, fontWeight: 700 }}>
+    <div style={{ position: "absolute", left: 290, top: 560, transform: `translate(-50%,-50%) scale(${e * 0.9}) rotate(-3deg)`, background: "#fbecc8", borderRadius: 18, padding: "26px 44px", boxShadow: "0 14px 0 rgba(20,10,50,.35)", fontFamily, fontWeight: 700 }}>
       <div style={{ fontSize: 44, color: "#7a3d14", marginBottom: 10 }}>CAREERS FOR FRANZ</div>
       {items.map((it, i) => {
         const ti = t0 + 0.25 + i * 0.32;
@@ -216,11 +216,11 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
     <Globo t={t} t0={95.6} t1={97.3} text="...yes." x={1250} y={320} size={64} cola="der" />
     <Titulo t={t} t0={97.4} t1={99.6} text="RUINED FOREVER" y={180} size={120} color={C.rojo} borde="#2b0a14" />
     <Chip t={t} t0={105.9} t1={108.2} text="NO MORE BIRDS" color={C.naranja} x={960} y={960} centro size={58} />
-    <Sello t={t} t0={108.5} t1={111.0} text="NO GUILD" x={500} y={860} size={90} />
+    <Sello t={t} t0={108.5} t1={111.0} text="NO GUILD" x={1500} y={930} size={84} />
     <Sello t={t} t0={111.2} t1={113.9} text="NO WEDDING" x={1420} y={860} size={90} rot={10} />
     <Chip t={t} t0={114.1} t1={116.4} text="FRANZ · AGE 19" color={C.rojo} x={960} y={150} centro size={62} />
     <Lista t={t} t0={116.5} t1={118.9} />
-    <Titulo t={t} t0={119.0} t1={120.8} text="HERE. TAKE IT." y={190} size={110} color={C.crema} />
+    <Chip t={t} t0={119.0} t1={120.8} text="HERE. TAKE IT." color={C.rojo} x={560} y={800} centro size={72} />
     {vig(t, 120.9, 124.0) && (
       <div style={{ position: "absolute", left: 360, top: 560, transform: `translate(-50%,-50%) rotate(-30deg) scale(${clamp((t - 120.9) / 0.3, 0, 1)})` }}>
         <svg width={120} height={560} viewBox="-60 -500 120 560" style={{ overflow: "visible" }}><path d="M -26 -60 L -26 -400 L 0 -480 L 26 -400 L 26 -60 Z" fill="#e8eef4" stroke="#2b2140" strokeWidth={8} /><rect x={-80} y={-70} width={160} height={24} rx={10} fill="#c98f2a" /><rect x={-14} y={-46} width={28} height={90} rx={8} fill="#4a2810" /></svg>
@@ -239,7 +239,7 @@ export const P1Pant: React.FC<{ t: number }> = ({ t }) => (
       <div style={{ position: "absolute", left: 1380, top: 520, transform: `translate(-50%,-50%) rotate(-2deg) scale(${clamp((t - 137.7) / 0.35, 0, 1)})`, background: "#fbecc8", border: "10px solid #7a3d14", borderRadius: 20, padding: "26px 40px", maxWidth: 760, fontFamily, fontWeight: 700, color: "#5a2a10", textAlign: "center", boxShadow: "0 14px 0 rgba(20,10,50,.35)" }}>
         <div style={{ fontSize: 34, color: "#a3202f", marginBottom: 10 }}>ENGRAVED ON THE BLADE</div>
         <div style={{ fontSize: 50, lineHeight: 1.15 }}>{["\"When I raise this sword,", "may God grant the sinner", "eternal life.\""].map((r, j) => (
-          <div key={j}>{r.split(" ").map((w, k, arr) => { const i0 = [0, 5, 10][j] + k, a = clamp((t - 138.3 - i0 * 0.33) / 0.25, 0, 1); return <span key={k} style={{ opacity: 0.12 + 0.88 * a, color: a > 0 && a < 1 ? "#a3202f" : undefined }}>{w}{k < arr.length - 1 ? " " : ""}</span>; })}</div>
+          <div key={j}>{r.split(" ").map((w, k, arr) => { const i0 = [0, 5, 10][j] + k, a = clamp((t - 138.3 - i0 * 0.33) / 0.25, 0, 1); return <span key={k} style={{ opacity: a, color: a > 0 && a < 1 ? "#a3202f" : undefined }}>{w}{k < arr.length - 1 ? " " : ""}</span>; })}</div>
         ))}</div>
       </div>
     )}
