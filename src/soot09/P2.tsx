@@ -207,12 +207,12 @@ export const P2: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={184.98} t1={187.0} text="SEALED ORDERS" color={C.rojo} x={960} y={140} centro size={60} />
       {/* la lista de nombres que sale de la caja */}
       {t > 186.5 && t < 193.8 && (
-        <div style={{ position: "absolute", left: 725, top: 150, width: 470, transform: `scale(${ent(t, 186.6) * (1 - prog(t, 193.2, 193.8))}) rotate(-3deg)`, background: "#f4e6c4", border: "8px solid #8a6a3a", borderRadius: 14, padding: "16px 20px" }}>
-          <div style={{ fontFamily, fontWeight: 700, fontSize: 34, color: "#7a1a24", textAlign: "center" }}>THE COUNCIL</div>
-          {["EDWARD WINGFIELD", "BARTHOLOMEW GOSNOLD", "CHRISTOPHER NEWPORT", "JOHN RATCLIFFE", "JOHN MARTIN", "GEORGE KENDALL", "JOHN SMITH"].map((n, i) => {
-            const smith = i === 6;
-            const on = t > 187.4 + i * 0.22;
-            return <div key={n} style={{ fontFamily, fontWeight: 700, fontSize: smith && t > 190.6 ? 40 : 28, color: smith && t > 190.6 ? "#fff" : C.noche, background: smith && t > 190.6 ? C.rojo : "transparent", borderRadius: 8, padding: "0 8px", marginTop: 4, opacity: on ? 1 : 0, transform: `translateX(${on ? 0 : -30}px) scale(${smith && t > 190.6 ? 1 + 0.08 * Math.sin((t - 190.6) * 10) * (1 - prog(t, 190.6, 191.6)) : 1})` }}>{n}</div>;
+        <div style={{ position: "absolute", left: 640, top: 150, width: 640, transform: `scale(${ent(t, 186.6) * (1 - prog(t, 193.2, 193.8))}) rotate(-3deg)`, background: "#f4e6c4", border: "8px solid #8a6a3a", borderRadius: 14, padding: "16px 20px" }}>
+          <div style={{ fontFamily, fontWeight: 700, fontSize: 54, color: "#7a1a24", textAlign: "center" }}>THE COUNCIL</div>
+          {["EDWARD WINGFIELD", "JOHN RATCLIFFE", "GEORGE KENDALL", "+ 3 MORE", "JOHN SMITH"].map((n, i) => {
+            const smith = i === 4;
+            const on = t > 187.4 + i * 0.3;
+            return <div key={n} style={{ fontFamily, fontWeight: 700, fontSize: smith && t > 190.6 ? 56 : 46, color: smith && t > 190.6 ? "#fff" : C.noche, background: smith && t > 190.6 ? C.rojo : "transparent", borderRadius: 8, padding: "0 8px", marginTop: 4, opacity: on ? 1 : 0, transform: `translateX(${on ? 0 : -30}px) scale(${smith && t > 190.6 ? 1 + 0.08 * Math.sin((t - 190.6) * 10) * (1 - prog(t, 190.6, 191.6)) : 1})` }}>{n}</div>;
           })}
         </div>
       )}

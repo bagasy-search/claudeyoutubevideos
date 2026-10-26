@@ -200,11 +200,11 @@ export const Anillos: React.FC<{ t: number; t0: number; x: number; y: number; r:
   const tot = anchos.reduce((a, b) => a + b, 0);
   let acc = 0;
   const rad = anchos.map((w) => { acc += w; return (acc / tot) * r; });
-  const crece = prog(t, t0, t0 + 1.4);
+  const crece = prog(t, t0, t0 + 0.5);
   const m = prog(t, tMarca, tMarca + 0.6);
   return (
     <svg style={{ position: "absolute", left: x - r - 40, top: y - r - 40, overflow: "visible" }} width={2 * r + 80} height={2 * r + 80} viewBox={`${-r - 40} ${-r - 40} ${2 * r + 80} ${2 * r + 80}`}>
-      <circle r={r + 30} fill="#5a3418" />
+      <circle r={(r + 30) * Math.min(1, crece * 1.1 + 0.02)} fill="#5a3418" />
       {rad.slice().reverse().map((rr, j) => {
         const i = N - 1 - j;
         const seco = i >= 24 && i <= 30;

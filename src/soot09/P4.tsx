@@ -83,7 +83,7 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
             <En key={i} x={xx} w={250}>
               <Persona x={xx} y={SUELO} h={250} t={t} seed={400 + i} ropa={GENT(i)} gola gorro={perf ? "pluma" : i % 2 ? "copa" : "sombrero"} camina={t < 359.6 + i * 0.25 ? 1.5 : 0} expr={perf && t > 366.3 ? "orgullo" : t > 368.5 ? "sorpresa" : "neutro"}
                 manoD={perf ? <g transform="scale(0.35)"><Frasco x={0} y={0} /></g> : undefined} bD={perf && t > 366 ? 70 : 0} />
-              {t > t0 && <div style={{ position: "absolute", left: x - 115, top: SUELO - (i % 2 ? 340 : 410), width: 230, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
+              {t > t0 && (i === 0 || NUEVOS[i - 1][1] !== of) && <div style={{ position: "absolute", left: x - 130, top: SUELO - ([0, 0, 1, 0, 0, 1][i] ? 440 : 345), width: 260, textAlign: "center", transform: `scale(${ent(t, t0)})`, fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: perf ? C.rosa : C.oro, borderRadius: 10, padding: "2px 0" }}>{of}</div>}
               {perf && t > 366.5 && <Olor t={t} x={x + 60} y={SUELO - 230} color="#ff8fc8" />}
             </En>
           );
@@ -176,8 +176,8 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       {t > 371.4 && t < 372.5 && <Grande t={t} t0={371.96} text="PERFUME?!" y={930} size={120} color={C.rosa} />}
       {/* Londres: los inversores quieren ganancia ya */}
       {t > 372.4 && t < 377.8 && (
-        <div style={{ position: "absolute", left: 1290, top: 140, width: 520, height: 420, transform: `scale(${ent(t, 372.5) * (1 - prog(t, 377.3, 377.8))}) rotate(3deg)`, background: "#a9a0b8", border: "10px solid #2a1408", borderRadius: 24, overflow: "hidden" }}>
-          <div style={{ position: "absolute", left: 0, top: 6, width: 520, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 36, color: "#fff", WebkitTextStroke: "6px #1b1240", paintOrder: "stroke fill" }}>MEANWHILE, LONDON</div>
+        <div style={{ position: "absolute", left: 1290, top: 140, width: 520, height: 420, transformOrigin: "100% 0", transform: `scale(${1.45 * ent(t, 372.5) * (1 - prog(t, 377.3, 377.8))}) rotate(3deg)`, background: "#a9a0b8", border: "10px solid #2a1408", borderRadius: 24, overflow: "hidden" }}>
+          <div style={{ position: "absolute", left: 0, top: 6, width: 520, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 44, color: "#fff", WebkitTextStroke: "7px #1b1240", paintOrder: "stroke fill" }}>MEANWHILE, LONDON</div>
           {[170, 350].map((x, i) => <Persona key={x} x={x} y={460} h={330} t={t} seed={120 + i} ropa={GENT(i)} gorro="copa" gola flip={i === 1} expr={t > 376 ? "enojado" : "orgullo"} />)}
           {t > 375.4 && <Globo t={t} t0={375.46} x={260} y={130} text="PROFIT. FAST." size={34} />}
         </div>
@@ -242,6 +242,13 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       {t > 419.6 && t < 421.3 && <Grande t={t} t0={420.4} text="FURIOUS" y={170} size={120} color="#ff5a6a" />}
       <Chip t={t} t0={421.6} t1={422.6} text="BLISTERS" color={C.rosa} x={960} y={140} centro size={56} />
       <Chip t={t} t0={424.62} t1={427.6} text="COLD WATER, EVERY CURSE" color="#2a7ac8" x={960} y={140} centro size={54} />
+      {t > 417.1 && t < 420.5 && (
+        <div style={{ position: "absolute", left: 960, top: 150, width: 860, transform: `scale(${ent(t, 417.15) * (1 - prog(t, 420.1, 420.5))}) rotate(-1deg)`, transformOrigin: "50% 0", background: "#f4e6c4", border: "10px solid #8a6a3a", borderRadius: 18, padding: "14px 28px", fontFamily, fontWeight: 700, textAlign: "center" }}>
+          <div style={{ fontSize: 40, color: "#7a1a24" }}>SMITH'S NEW RULE</div>
+          <div style={{ fontSize: 68, color: C.noche, lineHeight: 1.05 }}>HE THAT WILL NOT WORK</div>
+          <div style={{ fontSize: 68, color: C.rojo, lineHeight: 1.05, opacity: prog(t, 418.7, 419.0) }}>SHALL NOT EAT</div>
+        </div>
+      )}
       {t > 427.8 && t < 428.9 && <Grande t={t} t0={428.06} text="IT WORKS" y={200} size={130} color={C.lima} />}
       <Chip t={t} t0={430.22} t1={433.9} text="A WELL" color="#6a6a7a" x={300} y={160} size={46} />
       <Chip t={t} t0={431.02} t1={433.9} text="HOUSES" color={C.tierra} x={300} y={240} size={46} />
@@ -249,9 +256,9 @@ export const P4: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={433.22} t1={433.9} text="CORN TRADE" color={C.oro} tinta={C.noche} x={300} y={400} size={46} />
       {/* las muertes bajan */}
       {t > 434.0 && t < 439.2 && (
-        <svg style={{ position: "absolute", left: 1300, top: 150, opacity: ent(t, 434.1) }} width={520} height={330}>
+        <svg style={{ position: "absolute", left: 1220, top: 140, opacity: ent(t, 434.1), transform: "scale(1.25)", transformOrigin: "100% 0" }} width={520} height={330}>
           <rect width={520} height={330} rx={24} fill="#fff3d6" stroke="#2a1408" strokeWidth={8} />
-          <text x={260} y={56} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={38} fill={C.noche}>DEATHS</text>
+          <text x={260} y={56} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={48} fill={C.noche}>DEATHS</text>
           <path d={`M 50 90 L 140 110 L 230 100 ${prog(t, 434.56, 435.6) > 0 ? `L ${230 + 240 * prog(t, 434.56, 435.6)} ${100 + 170 * prog(t, 434.56, 435.6)}` : ""}`} stroke={C.rojo} strokeWidth={14} fill="none" strokeLinejoin="round" strokeLinecap="round" />
         </svg>
       )}

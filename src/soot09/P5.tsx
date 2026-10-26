@@ -81,7 +81,7 @@ export const P5: React.FC<{ t: number }> = ({ t }) => {
             <En key={i} x={x} w={250}>
               <Persona x={x} y={SUELO} h={nina ? 210 : 280} t={t} seed={nina ? 600 : 590 + i} ropa={POW(i)} plumaPelo flip camina={1.4} expr="feliz" bD={110} cD={60} />
               <Canasta x={x - 30} y={SUELO - (nina ? 230 : 300)} s={nina ? 0.26 : 0.32} />
-              {nina && t > 526.4 && <div style={{ position: "absolute", left: x - 140, top: SUELO - 360, width: 280, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 40, color: "#fff", background: C.rosa, borderRadius: 12, padding: "2px 0" }}>POCAHONTAS</div>}
+              {nina && t > 526.4 && <div style={{ position: "absolute", left: x - 200, top: SUELO - 380, width: 400, textAlign: "center", fontFamily, fontWeight: 700, fontSize: 60, color: "#fff", background: C.rosa, borderRadius: 12, padding: "2px 0" }}>POCAHONTAS</div>}
             </En>
           );
         })}

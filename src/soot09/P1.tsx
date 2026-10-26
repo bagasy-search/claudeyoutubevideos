@@ -3,7 +3,7 @@ import { AbsoluteFill, interpolate } from "remotion";
 import { Persona } from "./persona";
 import { C, ent, prog, Chip, Grande, fontFamily, Particulas, Pergamino, Moneda } from "./kit";
 import { Trampas } from "./kit2";
-import { Mundo, K, En, SUELO, AGUA, kx, mueve, camEn } from "./mundo";
+import { Mundo, K, En, SUELO, AGUA, kx, mueve, camEn, camV } from "./mundo";
 import { Base } from "./base";
 import { TOM, GENT, COLONO, Poste, Cartel, Corona, Choclo, Tablero, Pez, Nieve } from "./kitj";
 import { Globo, Icono, Tacha, Almacen, Carreta, Olor, Torta } from "./kitj2";
@@ -31,14 +31,14 @@ export const P1: React.FC<{ t: number }> = ({ t }) => {
   if (t < 51.2 || t > 138.6) return null;
   const yx = kx(YO, t);
   const yy = yx > 5500 ? SUELO - 30 : SUELO;
-  const c = camEn(CAM1, t);
+  const c = camV(CAM1, t);
   const enFila = t > 105.4;
   return (
     <AbsoluteFill>
       <Mundo t={t} cam={CAM1} cielo={CIELO1}>
         <Base t={t} />
         {/* el cartel #1 clavado en la calle */}
-        {t < 105.4 && <En x={5250} w={500}><Poste t={t} t0={51.66} x={5250} y={SUELO + 10} n={1} titulo="THE AD" s={1.55} /></En>}
+        {t < 55.3 && <En x={5250} w={500}><Poste t={t} t0={51.66} x={5250} y={SUELO + 10} n={1} titulo="THE AD" s={1.55} /></En>}
         {/* carreta que cruza con su olor */}
         {t > 56.8 && t < 61.5 && (() => { const x = interpolate(t, [56.8, 61.5], [3700, 5300]); return <En x={x} w={500}><Carreta t={t} x={x} y={SUELO - 90} s={0.9} /><Olor t={t} x={x + 120} y={SUELO - 200} /><Olor t={t + 0.4} x={x - 160} y={SUELO - 160} color="#a8a8b8" /></En>; })()}
         {/* la gente que habla de Virginia en cada esquina */}

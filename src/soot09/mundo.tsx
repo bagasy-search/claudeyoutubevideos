@@ -102,9 +102,16 @@ const Lejos: React.FC<{ cx: number; f: number; t: number; tono: Tono }> = ({ cx,
   );
 };
 
+// en tierra (Londres y Virginia) nunca tan lejos que la gente quede diminuta; en el mar sí se permite el plano general
+export const camV = (ks: K[], t: number) => {
+  const c0 = camEn(ks, t);
+  const enTierra = Math.max(Math.min(1, Math.max(0, (5600 - c0.x) / 800)), Math.min(1, Math.max(0, (c0.x - 18600) / 900)));
+  return { ...c0, z: c0.z + enTierra * Math.max(0, 0.8 - c0.z) };
+};
+
 // ── el mundo: cielo + capas lejanas + tierra/agua + hijos en coordenadas de mundo + capa cercana
 export const Mundo: React.FC<{ t: number; cam: K[]; cielo: [number, string][]; children: React.ReactNode; frente?: React.ReactNode; sinLejos?: boolean; cieloExtra?: React.ReactNode }> = ({ t, cam, cielo, children, frente, sinLejos, cieloExtra }) => {
-  const c = camEn(cam, t);
+  const c = camV(cam, t);
   const ik = invK(t);
   const t0n = tonoEn(cielo, t);
   const tono = ik > 0 ? { a: mz(t0n.a, HELADO.a, ik), b: mz(t0n.b, HELADO.b, ik), c: mz(t0n.c, HELADO.c, ik) } : t0n;

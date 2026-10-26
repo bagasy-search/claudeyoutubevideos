@@ -12,6 +12,7 @@ import { P6 } from "./P6";
 import { P7 } from "./P7";
 import { P8 } from "./P8";
 import { Mini } from "./Mini";
+import { Primer } from "./primer";
 
 // Video completo de soot09 (Jamestown): un solo mundo continuo, partes con tiempo absoluto.
 export const SOOT09_DUR = Math.ceil(908.6 * FPS);
@@ -23,6 +24,7 @@ export const Soot09: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: C.noche }}>
       <CamaraMano intensidad={0.7}>
         {PARTES.map(([a, b, P], i) => (t >= a && t < b ? <P key={i} t={t} /> : null))}
+        <Primer t={t} />
       </CamaraMano>
       <Mini t={t} />
     </AbsoluteFill>

@@ -178,8 +178,8 @@ export const P6: React.FC<{ t: number }> = ({ t }) => {
       {t > 587.5 && t < 589.2 && <Grande t={t} t0={588.19} text="CUT THE MAST" y={200} size={120} color={C.ambar} />}
       <Chip t={t} t0={589.31} t1={593.0} text="ADMIRAL SOMERS" color={C.teal} tinta={C.noche} x={960} y={140} centro size={56} />
       {t > 590.6 && t < 593.0 && (
-        <div style={{ position: "absolute", left: 80, top: 80, fontFamily, fontWeight: 700, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 20, padding: "8px 26px", textAlign: "center" }}>
-          <div style={{ fontSize: 28, color: C.rojo }}>NO SLEEP</div>
+        <div style={{ position: "absolute", left: 1460, top: 220, fontFamily, fontWeight: 700, background: "#fff3d6", border: "8px solid #2a1408", borderRadius: 20, padding: "8px 26px", textAlign: "center" }}>
+          <div style={{ fontSize: 40, color: C.rojo }}>NO SLEEP</div>
           <div style={{ fontSize: 88, color: C.noche, lineHeight: 1 }}>{Math.min(3, Math.max(1, Math.floor(interpolate(t, [590.6, 592.2], [1, 3.99]))))}<span style={{ fontSize: 36 }}> DAYS</span></div>
         </div>
       )}

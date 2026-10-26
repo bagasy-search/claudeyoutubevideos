@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate } from "remotion";
 import { Persona } from "./persona";
 import { C, ent, prog, Chip, Grande, fontFamily, Particulas } from "./kit";
-import { Mundo, K, camEn, En, SUELO, AGUA } from "./mundo";
+import { Mundo, K, camEn, camV, En, SUELO, AGUA } from "./mundo";
 import { Base, FX } from "./base";
 import { TOM, COLONO, Tablero, Nave, Pez, Cruz, Barril, Poste, Olla, Tinte, Bote } from "./kitj";
 
@@ -50,7 +50,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
   const otono = t > 6.8 && t < 10.7;
   const yo1610 = t < 33.6;
   const flipYo = t > 4.18 && t < 17.9;
-  const c = camEn(CAM0, t);
+  const c = camV(CAM0, t);
   const pant = (wx: number, wy: number) => ({ x: 960 + (wx - c.x) * c.z, y: 540 + (wy - c.y) * c.z });
   const naves = (x0: number) => [x0, x0 - 420];
   const [nD, nP] = t < 42 ? naves(22420) : naves(interpolate(t, [42.8, 49.6], [21650, 20950], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
@@ -193,7 +193,7 @@ export const P0: React.FC<{ t: number }> = ({ t }) => {
       <Tinte color="#2a1a40" op={t < 4 ? 0.7 : t > 27.6 && t < 32.3 ? 0.6 : 0.3} />
       {t > 47.6 && t < 50 && <Tinte color="#000" op={0.5} />}
       {/* destello blanco del rebobinado */}
-      {t > 32.9 && t < 33.2 && <AbsoluteFill style={{ background: "#fff", opacity: 1 - (t - 32.9) / 0.3 }} />}
+      {t > 32.9 && t < 33.2 && <AbsoluteFill style={{ background: "#ffe6a0", opacity: 0.45 * (1 - (t - 32.9) / 0.3) }} />}
     </AbsoluteFill>
   );
 };
