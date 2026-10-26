@@ -9,6 +9,7 @@ import { BigNum, COL, Chips, LowerThird, Tag, setSlug } from "../kits/yanqui3d/l
 import { makeVideo, Stamp, Beat, Tr } from "../kits/yanqui3d/engine";
 import { CamaraMano } from "../kits/camara/CamaraMano";
 import { CheckList, Mistake, MistakesDeal, StepTitle, TimeBars, Timer, Versus, Words } from "../kits/yanqui3d/pieces";
+import { CoolClock, OvenDial, PieBadge, PieTitle, RecipeCard, Stat, ZItem, ZocaloStack } from "./ui";
 import CAPS from "./caps.json";
 import AVW from "./avw.json";
 import AVAIL from "./avail.json";
@@ -49,8 +50,42 @@ const M = makeVideo({
     return mano(CL(b.a, b.k, b.tr, [960, 470], [1.0, 1.06]));
   }),
   pieces: (t, { at }) => {
+    // 26-oct · nivel nuevo (pedido del creador, molde ck2510d/ui.tsx): las piezas de abajo se escriben como antes y P() las
+    // traduce: todo texto → ZÓCALO de noticiero abajo-izq (crema/vino/dorado, apilable); números → Stat dorado / perilla del horno;
+    // listas largas y checklists → ficha de receta a la derecha; cada cena → título dorado + insignia arriba-der. Nada sobre la cara.
     const L: React.ReactNode[] = [];
-    const P = (n: React.ReactNode) => L.push(n);
+    const Z: ZItem[] = [];
+    const SUP: { a: number; n: number; name: string }[] = [];
+    const zl = (txt: string, tone: ZItem["tone"]) => tone === "warn" ? "WATCH OUT" : tone === "note" ? "LORETTA" : /[$¢]/.test(txt) ? "WHAT IT COSTS" : "LORETTA'S TIP";
+    const P = (n: React.ReactNode) => {
+      if (!React.isValidElement(n)) return;
+      const q = n.props as any, key = String(n.key);
+      if (n.type === Words) { const it = q.items[0], tone: ZItem["tone"] = it.col === COL.red ? "warn" : it.txt.startsWith("“") ? "note" : "tip"; Z.push({ key, a: it.at, out: cut(q.out), tone, label: zl(it.txt, tone), txt: it.txt }); return; }
+      if (n.type === Stamp) { Z.push({ key, a: q.at, out: q.out, tone: "tip", label: /#9|MISTAKE|STIRS/.test(q.text) ? "THE MISTAKE" : "REMEMBER THIS", txt: q.text }); return; }
+      if (n.type === LowerThird) { Z.push({ key, a: q.at, out: q.out, tone: "name", label: "YOUR HOST", txt: "Loretta", sub: q.l2 }); return; }
+      if (n.type === Chips) {
+        const its = (q.items as string[]);
+        if (its.join(" · ").length <= 40) Z.push({ key, a: q.at, out: q.out, tone: "list", label: "IN ONE LINE", txt: "", items: its.map((x, i) => ({ at: q.at + i * 0.25, txt: x })) });
+        else L.push(<RecipeCard key={key} t={t} title="What You Need" rows={its.map((x, i) => ({ at: q.at + i * 0.3, txt: x }))} out={q.out} />);
+        return;
+      }
+      if (n.type === CheckList) { L.push(<RecipeCard key={key} t={t} title={q.title} rows={q.rows} out={q.out} />); return; }
+      if (n.type === TimeBars) { L.push(<RecipeCard key={key} t={t} title="The Numbers" rows={q.rows.map((r: any) => ({ at: r.at, txt: `${r.label} — ${r.val}` }))} out={q.out} />); return; }
+      if (n.type === Versus) {
+        const nm = (x: any) => `${x.label}: ${x.val}`;
+        Z.push({ key: key + "L", a: q.at, out: q.out, tone: q.L.mark === "x" ? "warn" : "tip", label: q.title ?? "THE DIFFERENCE", txt: nm(q.L) });
+        Z.push({ key: key + "R", a: q.at + 0.9, out: q.out, tone: q.R.mark === "x" ? "warn" : "tip", label: q.title ?? "THE DIFFERENCE", txt: nm(q.R) });
+        return;
+      }
+      if (n.type === Timer) { L.push(<CoolClock key={key} t={t} at={q.at} out={q.out} label={`${q.secs} ${q.label}`} />); return; }
+      if (n.type === BigNum) {
+        const oven = /^(3\d\d|4\d\d)°F$/.test(q.text) && /OVEN|^$/.test(q.sub ?? "");
+        L.push(oven ? <OvenDial key={key} t={t} at={q.at} out={q.out} text={q.text} sub={q.sub} /> : <Stat key={key} t={t} at={q.at} out={q.out} text={q.text} sub={q.sub} size={q.text.length > 6 ? 150 : 210} />);
+        return;
+      }
+      if (n.type === StepTitle) { SUP.push({ a: q.at, n: q.n, name: q.name }); L.push(<PieTitle key={key} t={t} at={q.at} out={q.out} n={q.n} name={q.name} />); return; }
+      L.push(n);
+    };
     const W1 = (key: string, a: number, txt: string, col?: string, d = 3.4, size = 80) => P(<Words key={key} t={t} items={[{ at: a, txt, col }]} out={a + d} y={900} size={size} />);
     const PIN = (key: string, k: string, q: V3, a: number, text: string, col: string, d = 3.5, dx = 300, dy = -150) => {
       if (inB(t, k)) { const s = pin(t, k, q); P(<Tag key={key} t={t} at={a} x={s.x} y={s.y} dx={dx} dy={dy} text={text} col={col} size={36} out={a + d} />); }
@@ -252,6 +287,10 @@ const M = makeVideo({
     W1("ask", at("what's in your skillet tonight", 2726), "WHAT'S IN YOUR SKILLET TONIGHT?", COL.amber, 4.0, 80);
     W1("next", at("Next time on this channel", 2754), "NEXT: 10 SUPPERS IN ONE PIE PLATE", COL.amber, 4.2, 76);
     W1("place", at("set a place for yourself", 2783), "SET A PLACE FOR YOURSELF TONIGHT", COL.amber, 4.4, 80);
+    // insignia de la cena en curso (arriba-der) desde que termina su título hasta que empieza la siguiente / el repaso
+    const END = at("So there they are", 2350);
+    SUP.forEach((x, i) => L.push(<PieBadge key={"bdg" + x.n} t={t} at={x.a + 3.2} out={(SUP[i + 1]?.a ?? END) - 0.3} n={x.n} name={x.name.split(" · ")[0]} />));
+    L.push(<ZocaloStack key="zoc" t={t} items={Z} />);
     return L;
   },
 });
