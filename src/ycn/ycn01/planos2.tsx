@@ -121,8 +121,8 @@ export const P41Once: React.FC = () => {
     <AbsoluteFill>
       <Sala cl={[mira(0, BA + 180, 640, 1.9), mira(k(244.8), BA + 200, 650, 2.1, { curva: "inout" })]} banco zapatos sp={{ tv: "alerta" }}
         gente={[{ l: MORDIDO, x: BA, sent: 60, p: { tronco: 30, pI: 88, rI: 88, pD: 92, rD: 92, hD: 60, cD: 130, hI: 50, cI: 120, cabeza: 30 }, c: "cansado", d: -1, mD: TOALLA }]} />
-      <div style={{ position: "absolute", left: 1250, top: 110, fontFamily: F_HUD, fontWeight: 600, fontSize: 110, color: ROJO, fontVariantNumeric: "tabular-nums", textShadow: "0 0 30px rgba(255,74,61,0.6)" }}>8:{String(min).padStart(2, "0")} PM</div>
-      <div style={{ position: "absolute", left: 1300, top: 300, width: 300, height: 300, borderRadius: 150, border: "10px solid #f4efe4", background: "rgba(10,12,20,0.75)" }}>
+      <div style={{ position: "absolute", left: 1180, top: 40, fontFamily: F_HUD, fontWeight: 600, fontSize: 110, color: ROJO, fontVariantNumeric: "tabular-nums", textShadow: "0 0 30px rgba(255,74,61,0.6)" }}>8:{String(min).padStart(2, "0")} PM</div>
+      <div style={{ position: "absolute", left: 1260, top: 280, width: 300, height: 300, borderRadius: 150, transform: "scale(1.4)", transformOrigin: "50% 0", border: "10px solid #f4efe4", background: "rgba(10,12,20,0.75)" }}>
         <div style={{ position: "absolute", left: 140, top: 20, width: 10, height: 130, background: ROJO, transformOrigin: "5px 130px", transform: `rotate(${interpolate(f, [0, k(244.4)], [0, 330], { extrapolateRight: "clamp" })}deg)` }} />
         <div style={{ position: "absolute", left: 0, right: 0, top: 190, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 56, color: "#f4efe4", fontVariantNumeric: "tabular-nums" }}>{Math.floor(seg / 60)}:{String(seg % 60).padStart(2, "0")}</div>
       </div>
@@ -140,7 +140,8 @@ export const P42Despacio: React.FC = () => {
       gente={[
         { l: MORDIDO, x: BA, sent: [{ f: 0, v: 60 }, { f: k(246.5), v: undefined }], p: [{ f: 0, v: { tronco: 30, pI: 88, rI: 88, pD: 92, rD: 92, hD: 60, cD: 130, cabeza: 30 } }, { f: k(247), v: { cabeza: 38, tronco: 8, hD: -10, cD: 10, hI: -14, cI: 12 } }], c: [{ f: 0, v: "cansado" }, { f: k(246.8), v: "zombi" }], d: -1 },
         { l: DOT, x: BA - 360, p: "parado", c: [{ f: 0, v: "duda" }, { f: k(247.5), v: "miedo" }], d: 1 },
-      ]} />
+      ]}
+      hud={<div style={{ position: "absolute", right: 60, top: 50, padding: "10px 26px", borderRadius: 18, background: "rgba(10,12,20,0.8)", border: "5px solid #f4efe4", fontFamily: F_HUD, fontWeight: 700, fontSize: 84, color: ROJO, fontVariantNumeric: "tabular-nums" }}>11:00</div>} />
   );
 };
 
@@ -470,8 +471,8 @@ export const P68Raya: React.FC = () => {
 export const P69Mira: React.FC = () => {
   const k = kDe(396.77);
   return (
-    <Sala cl={[mira(0, 1560, 650, 1.8), mira(k(401.8), 1660, 640, 1.7, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1 }}
-      gente={[{ l: NELL, x: 1860, sent: 0, p: { tronco: -6, pI: 30, rI: 140, pD: 40, rD: 150, hD: 70, cD: 150 }, c: "triste", d: 1, mD: <Walkie s={0.8} /> }, { l: CAL, ruta: [{ f: 0, x: 1250 }, { f: k(399.5), x: 1250 }, { f: k(401.8), x: 1680 }], p: [{ f: 0, v: "brazosCruzados" }, { f: k(399), v: "parado" }], c: [{ f: 0, v: "triste" }, { f: k(399), v: "determinado" }], d: 1 }]}
+    <Sala cl={[mira(0, 1640, 700, 2.0), mira(k(401.8), 1700, 705, 2.1, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1 }}
+      gente={[{ l: NELL, x: 1860, sent: 0, p: { tronco: -6, pI: 30, rI: 140, pD: 40, rD: 150, hD: 70, cD: 150 }, c: "triste", d: 1, mD: <Walkie s={0.8} /> }, { l: CAL, ruta: [{ f: 0, x: 1420 }, { f: k(399.5), x: 1420 }, { f: k(401.8), x: 1680 }], p: [{ f: 0, v: "brazosCruzados" }, { f: k(399), v: "parado" }], c: [{ f: 0, v: "triste" }, { f: k(399), v: "determinado" }], d: 1 }]}
       hud={<HudDia dia={1} />} />
   );
 };
@@ -504,7 +505,7 @@ export const P71Lado: React.FC = () => {
   return (
     <Sala cl={[mira(0, pistaX(8) - 40, 721, 1.45), mira(k(410.6), pistaX(8) - 60, 480, 1.25, { curva: "inout" })]} sp={{ luz: "noche", persiana: 1, tiza: 1, dia: "DAY ONE" }}
       gente={[{ l: CAL, x: pistaX(8) - 60, p: "parado", c: "triste", d: -1, luz: RIM.pantalla }, { l: NELL, x: 1860, sent: 0, p: "sentadoSuelo", c: "neutral", d: 1, mir: { x: 0, y: -1 }, mD: <Walkie s={0.8} /> }]}
-      hud={<><HudDia dia={1} /><Dice quien="cal" t="So she can see it from anywhere." x={960} y={150} desde={k(408.5)} centro tam={64} /><Pantallon desde={k(409.4)} /></>} />
+      hud={<><HudDia dia={1} /><Dice quien="cal" t="So she can see it from anywhere." x={960} y={930} desde={k(408.5)} centro tam={64} /><Pantallon desde={k(409.4)} /></>} />
   );
 };
 

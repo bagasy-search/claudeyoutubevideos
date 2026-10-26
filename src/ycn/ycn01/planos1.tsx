@@ -349,7 +349,7 @@ const TeleGrande: React.FC<{ desde: number }> = ({ desde }) => {
   const u = interpolate(f, [desde, desde + 8], [0, 1], { extrapolateRight: "clamp" });
   const parpadeo = 0.85 + 0.15 * Math.abs(Math.sin(f / 5));
   return (
-    <div style={{ position: "absolute", left: 1040, top: 70, width: 760, height: 420, borderRadius: 22, background: "#15161c", padding: 18, opacity: u, transform: `scale(${0.9 + 0.1 * u})`, transformOrigin: "100% 0", boxShadow: "0 0 70px rgba(80,140,255,0.45)" }}>
+    <div style={{ position: "absolute", left: 1040, top: 40, width: 760, height: 420, borderRadius: 22, background: "#15161c", padding: 18, opacity: u, transform: `scale(${0.72 + 0.08 * u})`, transformOrigin: "100% 0", boxShadow: "0 0 70px rgba(80,140,255,0.45)" }}>
       <div style={{ position: "relative", width: "100%", height: "100%", borderRadius: 10, overflow: "hidden", background: `linear-gradient(180deg, #1f4fd6, #0f2f8f)`, opacity: parpadeo }}>
         <div style={{ position: "absolute", left: 0, right: 0, top: 40, textAlign: "center", fontFamily: F_HUD, fontWeight: 800, fontSize: 92, color: "#fff", letterSpacing: 4 }}>EMERGENCY</div>
         <div style={{ position: "absolute", left: 0, right: 0, top: 160, textAlign: "center", fontFamily: F_HUD, fontWeight: 700, fontSize: 64, color: "#ffd23a" }}>STAY INDOORS</div>
@@ -362,10 +362,10 @@ const TeleGrande: React.FC<{ desde: number }> = ({ desde }) => {
 export const P26Tv: React.FC = () => {
   const k = kDe(153.44);
   return (
-    <Sala cl={[mira(0, PP.tv, 120, 2.2), mira(k(158), PP.tv, 160, 2.6, { curva: "inout" }), mira(k(161), -230, 650, 2.0, { curva: "inout" }), mira(k(165.9), -260, 650, 2.15, { curva: "lineal" })]} snack sp={{ tv: "alerta" }}
+    <Sala cl={[mira(0, -200, 625, 1.85), mira(k(161), -230, 625, 1.95, { curva: "inout" }), mira(k(165.9), -260, 622, 2.05, { curva: "lineal" })]} snack sp={{ tv: "alerta" }}
       gente={[{ l: LIGA, x: -380, p: "parado", c: "feliz", d: 1, mD: <Bola s={0.8} /> }, { l: LIGA2, x: -230, p: "hablar", c: "risa", d: -1, habla: [[0, 400]] }, { l: LIGA3, x: -90, p: "brazosCruzados", c: "feliz", d: -1 }, { l: PINPAL, x: 60, p: "celebrar", c: "risa", d: 1 }]}
       detras={[{ l: RAFI, x: -800, p: "pensar", c: [{ f: 0, v: "neutral" }, { f: k(160), v: "duda" }], mir: { x: 0.3, y: -0.8 }, d: 1 }]}
-      hud={<><HudDia dia={1} desde={9999} hora="7:52 PM" /><TeleGrande desde={k(161)} /><Dice quien="tv" t="AVOID CONTACT WITH ANYONE WHO APPEARS ILL." x={960} y={980} desde={k(163.5)} centro tam={56} /></>} />
+      hud={<><HudDia dia={1} desde={9999} hora="7:52 PM" /><TeleGrande desde={k(153.5)} /><Dice quien="tv" t="AVOID CONTACT WITH ANYONE WHO APPEARS ILL." x={960} y={980} desde={k(163.5)} centro tam={56} /></>} />
   );
 };
 
@@ -415,6 +415,24 @@ export const P29Clic: React.FC = () => {
 };
 
 // ---------- 30 · la voz de mamá, rara: rápida, sin aire (a mano, celeste) ----------
+// inserto: el walkie grande en la mano de Nell, ondas de voz y la foto de mamá
+const InsertoWalkie: React.FC<{ desde: number }> = ({ desde }) => {
+  const f = useF();
+  if (f < desde) return null;
+  const u = interpolate(f, [desde, desde + 6], [0, 1], { extrapolateRight: "clamp" });
+  const z = interpolate(f, [desde, desde + 160], [1, 1.08], { extrapolateRight: "clamp" });
+  return (
+    <AbsoluteFill style={{ opacity: u, background: "radial-gradient(circle at 35% 55%, #2c3442 0%, #10131a 70%)" }}>
+      <svg width={1920} height={1080} style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: "35% 55%" }}>
+        <rect x={480} y={760} width={260} height={420} rx={60} fill="#f2c230" />
+        <g transform="translate(620,600) scale(11)"><Walkie luz={f % 10 < 6} /></g>
+        {[0, 1, 2, 3].map((i) => { const t = ((f - desde) / 30 + i / 4) % 1; return <path key={i} d={`M${800 + t * 260},${380 - t * 120} Q${860 + t * 320},${560} ${800 + t * 260},${740 + t * 120}`} fill="none" stroke="#9fd3ff" strokeWidth={10} strokeLinecap="round" opacity={1 - t} />; })}
+      </svg>
+      <Foto l={ANA} x={1480} y={120} w={360} cara="miedo" pie="Mom · night shift" busto />
+    </AbsoluteFill>
+  );
+};
+
 export const P30Mama: React.FC = () => {
   const k = kDe(176.2);
   return (
@@ -422,9 +440,10 @@ export const P30Mama: React.FC = () => {
       <Sala cl={[mira(0, -740, 669, 2.4), mira(k(188.5), -740, 658, 2.8, { curva: "lineal" })]} snack sp={{ tv: "alerta" }}
         sobre={<A l={NELL} x={-760} sent={184} p={{ hD: 70, cD: 150, cabeza: 8 }} c={[{ f: 0, v: "sorpresa" }, { f: k(184), v: "miedo" }]} d={-1} mD={<Walkie s={0.85} luz />} mir={{ x: -0.3, y: 0.2 }} />} />
       <Dice quien="ana" t="Nell, baby, listen to me." x={250} y={130} desde={k(180.6)} hasta={k(188.4)} tam={60} />
-      <Dice quien="ana" t="Stay with your dad." x={1200} y={300} desde={k(183.3)} hasta={k(188.4)} tam={60} />
-      <Dice quien="ana" t="Do NOT come to the hospital." x={230} y={760} desde={k(184.5)} hasta={k(188.4)} tam={60} />
-      <Dice quien="ana" t="They're not sick. They're—" x={1100} y={860} desde={k(186)} hasta={k(188.4)} tam={60} />
+      <InsertoWalkie desde={k(183.0)} />
+      <Dice quien="ana" t="Stay with your dad." x={900} y={860} desde={k(183.3)} hasta={k(184.4)} tam={64} />
+      <Dice quien="ana" t="Do NOT come to the hospital." x={900} y={860} desde={k(184.5)} hasta={k(185.9)} tam={64} />
+      <Dice quien="ana" t="They're not sick. They're—" x={900} y={860} desde={k(186)} hasta={k(188.4)} tam={64} />
     </AbsoluteFill>
   );
 };
@@ -442,7 +461,6 @@ export const P31Estatica: React.FC = () => {
       <Dice quien="nell" t="Mom?" x={1150} y={260} desde={k(191.4)} tam={56} />
       <Dice quien="nell" t="Mom." x={1300} y={400} desde={k(192.2)} tam={78} />
       <Dice quien="nell" t="MOM." x={1440} y={580} desde={k(192.9)} tam={104} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 960, height: 40, background: "repeating-linear-gradient(90deg,#f4efe4 0 6px,transparent 6px 14px)", opacity: f % 4 < 2 ? 0.35 : 0.15, transform: `translateX(${(f * 23) % 14}px)` }} />
     </AbsoluteFill>
   );
 };

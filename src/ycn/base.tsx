@@ -203,7 +203,7 @@ export const Sacude: React.FC<{ en: number[]; amp?: number; children: React.Reac
 export const Lista: React.FC<{ x: number; y: number; tam?: number; lineas: { t: string; desde?: number; color?: string; tachar?: number }[] }> = ({ x, y, tam = 58, lineas }) => {
   const f = useF();
   return (
-    <div style={{ position: "absolute", left: x, top: y, transform: "rotate(-2deg)", padding: "22px 34px", background: "rgba(10,8,12,0.45)", borderRadius: 18 }}>
+    <div style={{ position: "absolute", left: x, top: y, transform: "rotate(-2deg)", padding: "22px 34px", background: "rgba(10,8,12,0.74)", borderRadius: 18 }}>
       {lineas.map((l, i) => {
         const d = l.desde ?? 0;
         if (f < d) return null;

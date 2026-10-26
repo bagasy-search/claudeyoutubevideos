@@ -182,9 +182,9 @@ const PlanoRuta: React.FC<{ desde: number; dur: number }> = ({ desde, dur }) => 
         dibujo: <g fill="none" stroke="#9fd6ff" strokeOpacity={0.7} strokeWidth={3}>{[0, 1, 2].map((i) => <rect key={i} x={24} y={40 + i * 50} width={190} height={30} rx={5} />)}</g> },
       { x: 40, y: 310, w: 240, h: 300, rotulo: "KITCHEN", puertas: [{ lado: "n", pos: 0.5 }, { lado: "e", pos: 0.6 }],
         dibujo: <g fill="none" stroke="#cfe0ff" strokeOpacity={0.55} strokeWidth={3}><rect x={24} y={60} width={80} height={60} rx={6} /><rect x={130} y={60} width={86} height={60} rx={6} /></g> },
-      { x: 300, y: 70, w: 260, h: 540, rotulo: "CARPET" },
+      { x: 300, y: 70, w: 260, h: 540, rotulo: "CARPET", dibujo: <g>{Array.from({ length: 48 }).map((_, i) => <circle key={i} cx={30 + (i % 6) * 40} cy={70 + Math.floor(i / 6) * 58} r={7} fill={["#ff8fb8", "#9fd6ff", "#ffd23a"][i % 3]} opacity={0.55} />)}</g> },
       { x: 580, y: 70, w: 500, h: 540, rotulo: "LANES",
-        dibujo: <g>{[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <rect key={i} x={20 + i * 60} y={70} width={40} height={430} rx={4} fill="none" stroke={i === 7 ? ROJO : "#cfe0ff"} strokeOpacity={i === 7 ? 1 : 0.5} strokeWidth={i === 7 ? 5 : 3} />)}<rect x={452} y={44} width={56} height={34} rx={4} fill={ROJO} opacity={0.85} />{[14, 15].map((n, i) => <text key={n} x={360 + i * 60} y={530} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={26} fill="#cfe0ff" opacity={0.8}>{n}</text>)}<text x={480} y={530} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={34} fill={ROJO}>16</text></g> },
+        dibujo: <g>{[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <rect key={i} x={20 + i * 60} y={70} width={40} height={430} rx={4} fill={i === 7 ? "rgba(255,90,90,0.25)" : "rgba(214,170,110,0.35)"} stroke={i === 7 ? ROJO : "#cfe0ff"} strokeOpacity={i === 7 ? 1 : 0.5} strokeWidth={i === 7 ? 5 : 3} />)}<rect x={452} y={44} width={56} height={34} rx={4} fill={ROJO} opacity={0.85} />{[14, 15].map((n, i) => <text key={n} x={360 + i * 60} y={530} textAnchor="middle" fontFamily={F_HUD} fontWeight={600} fontSize={26} fill="#cfe0ff" opacity={0.8}>{n}</text>)}<text x={480} y={530} textAnchor="middle" fontFamily={F_HUD} fontWeight={700} fontSize={34} fill={ROJO}>16</text></g> },
     ]}
     puntos={[{ x: 160, y: 190, rotulo: "GUS", lado: "der" }, { x: 160, y: 300, via: true }, { x: 160, y: 490, via: true }, { x: 290, y: 490, via: true }, { x: 430, y: 570, via: true }, { x: 1040, y: 570, via: true }, { x: 1040, y: 130, rotulo: "PIT · 3 FT", lado: "izq" }]} />
   </div>
@@ -211,7 +211,7 @@ export const P53Ruta: React.FC = () => {
 // corte del pozo: Gus (silueta zombi) adentro le llega a la cintura, la regla marca 3 FT
 const CortePozo: React.FC<{ f: number; left?: number; top?: number; esc?: number }> = ({ f, left = 980, top = 280, esc = 1 }) => {
   const u = interpolate(f, [0, 1], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const g = interpolate(f, [6, 30], [-260, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const g = interpolate(f, [0, 14], [-140, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <svg width={860} height={560} viewBox="0 0 860 560" style={{ position: "absolute", left, top, transform: `scale(${esc})`, transformOrigin: "0 0" }}>
       <rect x={0} y={0} width={860} height={560} rx={24} fill="#141820" stroke="#e8dcc0" strokeWidth={5} opacity={0.94} />

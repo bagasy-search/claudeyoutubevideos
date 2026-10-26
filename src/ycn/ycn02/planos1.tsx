@@ -339,8 +339,8 @@ export const P26Cuatro: React.FC = () => {
   const k = kDe(101.52);
   return (
     <AbsoluteFill>
-      <Sala cl={[mira(0, SN, 736, 1.3), mira(k(104.6), PP.puertaCocina + 300, 717, 1.5, { curva: "inout" }), mira(k(106.2), PP.puertaCocina, 690, 1.9, { curva: "inout" })]} snack sp={D9}
-        detras={[{ l: DOT, x: SN, p: "brazosCruzados", c: "triste", d: -1 }]} />
+      <Sala cl={[mira(0, SN - 150, 685, 2.0), mira(k(103), SN - 150, 680, 2.2, { curva: "inout" }), mira(k(104.6), PP.puertaCocina + 300, 717, 1.5, { curva: "inout" }), mira(k(106.2), PP.puertaCocina, 690, 1.9, { curva: "inout" })]} snack sp={D9}
+        gente={[{ l: DOT, x: SN - 150, p: "brazosCruzados", c: "triste", d: -1 }]} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 120, textAlign: "center", fontFamily: F_HUD, fontWeight: 600, fontSize: 150, color: ROJO, opacity: interpolate(useF(), [k(103), k(103.4)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), textShadow: "0 0 34px rgba(255,74,61,0.55)" }}>4 DAYS LEFT</div>
       <Dice quien="rafi" t="…unless we opened the freezer." x={960} y={330} desde={k(104.6)} centro tam={64} />
       <HudDia dia={9} rayas={9} />
@@ -476,7 +476,7 @@ export const P37Educacion: React.FC = () => {
   return (
     <Sala cl={[mira(0, 1300, 560, 1.4), mira(k(156.8), 1100, 560, 2.0, { curva: "inout" }), mira(k(160.5), 1080, 673, 2.3, { curva: "lineal" })]} sp={D9}
       gente={[{ l: MARLON, x: 1050, p: [{ f: 0, v: "brazosCruzados" }, { f: k(157), v: "hablar" }, { f: k(159), v: { hD: 60, cD: 100, hI: 60, cI: 100 } }], c: [{ f: 0, v: "duda" }, { f: k(157), v: "picaro" }], d: 1, habla: [[k(157), k(160.5)]] }, { l: RAFI, x: 1640, sent: 0, p: sentadoPiso, c: "triste", d: -1 }]}
-      hud={<><Dice quien="marlon" t="So we leave him in there…" x={1080} y={200} desde={k(157.2)} hasta={k(158.7)} tam={62} /><Dice quien="marlon" t="…and we starve politely." x={1080} y={200} desde={k(158.8)} tam={62} /></>} />
+      hud={<><div style={{ position: "absolute", left: 0, right: 0, top: 160, height: 150, background: "rgba(10,8,14,0.72)", opacity: interpolate(useF(), [k(157), k(157.3)], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }} /><Dice quien="marlon" t="So we leave him in there…" x={960} y={190} desde={k(157.2)} hasta={k(158.7)} centro tam={78} /><Dice quien="marlon" t="…and we starve politely." x={960} y={190} desde={k(158.8)} centro tam={78} /></>} />
   );
 };
 
@@ -503,9 +503,9 @@ export const P39Idea: React.FC = () => {
 
 // ---------- 40 · su idea era el ruido ----------
 export const P40Ruido: React.FC = () => (
-  <Sala cl={[mira(0, SN, 700, 2.4), mira(52, SN, 710, 2.8, { curva: "inout" })]} snack sp={D9}
-    detras={[{ l: DOT, x: SN, p: "señalar", c: "determinado", d: -1, habla: [[10, 50]] }]}
-    hud={<Dice quien="dot" t="NOISE." x={1200} y={200} desde={8} tam={120} />} />
+  <Sala cl={[mira(0, SN - 150, 685, 2.0), mira(52, SN - 150, 680, 2.25, { curva: "inout" })]} snack sp={D9}
+    gente={[{ l: DOT, x: SN - 150, p: "señalar", c: "determinado", d: -1, habla: [[10, 50]] }]}
+    hud={<Dice quien="dot" t="NOISE." x={420} y={560} desde={8} tam={130} />} />
 );
 
 // ---------- 41 · el día uno aprendimos que siguen el sonido: cuando Cal cortó los pinsetters, se fueron ----------
@@ -515,7 +515,7 @@ export const P41Siguen: React.FC = () => {
   return (
     <AbsoluteFill>
       <Afuera cl={[mira(0, 1700, 690, 1.5), mira(k(175.4), 1250, 720, 1.3, { curva: "inout" })]} sp={{ sirenas: true, persiana: 1 }}
-        gente={zs.map((l, i) => ({ l: zombi(l), ruta: [{ f: 0, x: 1400 + i * 150, y: P + 10 * i }, { f: k(171.6), x: 1380 + i * 150, y: P + 10 * i }, { f: k(175.4), x: 600 + i * 170, y: P + 120 + 10 * i }], p: "zombi", c: "zombi", d: [{ f: 0, v: 1 as const }, { f: k(171.8), v: -1 as const }], seed: i + 3 }))} />
+        gente={zs.map((l, i) => ({ l: zombi(l), ruta: [{ f: 0, x: 1400 + i * 150 + (i % 2) * 40, y: P + 10 * i }, { f: k(170.2 + i * 0.35), x: 1330 + i * 150, y: P + 10 * i }, { f: k(175.4), x: 600 + i * 170, y: P + 120 + 10 * i }], p: "zombi", c: "zombi", d: [{ f: 0, v: 1 as const }, { f: k(169.9 + i * 0.35), v: -1 as const }], seed: i + 3 }))} />
       <Recuerdo />
       <Dice quien="rafi" t="they follow sound." x={960} y={140} desde={k(170)} centro tam={72} />
       <HudDia dia={1} rayas={1} />
