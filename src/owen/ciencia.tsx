@@ -7,6 +7,9 @@ import { useF } from "../anikit/camara";
 import { OWEN, VERDE } from "./elenco";
 import { Actor } from "../anikit/actor";
 import { EXPRESIONES } from "../anikit/personaje";
+import { FondoMundo, SetPz, setDe } from "./fondos";
+// escena que fuerza el set de sus láminas (o "pizarra" para la vieja)
+export const SetPizarra = React.createContext<SetPz | "pizarra" | null>(null);
 
 const AMBAR = "#ffc24a", ROJO = "#ff5a4a", TINTA = "#f4efe4", FONDO = "#14203a";
 const ease = (f: number, a: number, b: number) => interpolate(f, [a, b], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: (t) => 1 - Math.pow(1 - t, 3) });
@@ -31,8 +34,25 @@ const Profe: React.FC<{ f: number }> = ({ f }) => {
   );
 };
 
-export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fuente?: string; profe?: boolean }> = ({ children, titulo, fuente, profe = true }) => {
+export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fuente?: string; profe?: boolean; set?: SetPz | "pizarra" }> = ({ children, titulo, fuente, profe = true, set }) => {
   const f = useF();
+  const ctx = React.useContext(SetPizarra);
+  const s = set ?? ctx ?? setDe(titulo ?? fuente ?? "x");
+  if (s !== "pizarra") return (
+    <AbsoluteFill>
+      <FondoMundo set={s} conOwen={profe} />
+      <AbsoluteFill>
+        <svg viewBox="0 0 1920 1080" width="100%" height="100%">
+          {/* velo plano: el set se sigue viendo y moviendo detrás, el dato manda */}
+          <defs><linearGradient id="pzvelo" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stopColor="#0a1128" stopOpacity={0.78} /><stop offset="0.7" stopColor="#0a1128" stopOpacity={0.74} /><stop offset="0.86" stopColor="#0a1128" stopOpacity={0.3} /><stop offset="1" stopColor="#0a1128" stopOpacity={0.3} /></linearGradient></defs>
+          <rect width={1920} height={1080} fill={profe ? "url(#pzvelo)" : "#0a1128"} opacity={profe ? 1 : 0.66} />
+          {profe ? <g transform="translate(30,120) scale(0.77)">{children}</g> : children}
+          {titulo && <g opacity={ease(f, 0, 10)}><rect x={960 - titulo.length * 17 - 30} y={128} width={titulo.length * 34 + 60} height={70} rx={35} fill="#0a1128" opacity={0.85} /><text x={960} y={178} fontFamily={F_HUD} fontWeight={600} fontSize={52} letterSpacing={4} fill={TINTA} textAnchor="middle">{titulo}</text></g>}
+          {fuente && <text x={60} y={1040} fontFamily={F_HUD} fontSize={24} fill="#c0cae0" textAnchor="start" opacity={ease(f, 10, 25)}>{fuente}</text>}
+        </svg>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
   return (
     <AbsoluteFill style={{ background: FONDO }}>
       <svg viewBox="0 0 1920 1080" width="100%" height="100%">

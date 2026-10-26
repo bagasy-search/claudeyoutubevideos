@@ -42,7 +42,7 @@ export const Combustible: React.FC<{ dHigado?: number; dMusculo?: number; dCereb
   return (
     <Pizarra titulo="STORED FUEL" fuente="Glycogen stores · adult averages" profe={false}>
       {/* 26-oct (ojo 5/10: hígado apagado, Owen mini): barra del HÍGADO que faltaba + Owen x1.8 comiendo */}
-      <Actor look={OWEN} escala={2.6} seed={12} ruta={[{ f: 0, x: 170, y: 1150 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]}
+      <Actor look={OWEN} escala={2.6} seed={12} ruta={[{ f: 0, x: 260, y: 1150 }]} dir={[{ f: 0, v: 1 }]} caras={[{ f: 0, v: "feliz" }]}
         poses={Array.from({ length: 30 }).map((_, i) => ({ f: i * 16, v: i % 2 ? { hD: 150, cD: 150, cabeza: 6 } : { hD: 60, cD: 80 } }))} habla={Array.from({ length: 30 }).map((_, i) => [i * 16 + 2, i * 16 + 8] as [number, number])}
         enManoD={<g><rect x={-30} y={-18} width={60} height={30} rx={8} fill="#e8b866" /><rect x={-30} y={-6} width={60} height={8} fill="#7ac943" /></g>} />
       {Array.from({ length: 14 }).map((_, i) => {

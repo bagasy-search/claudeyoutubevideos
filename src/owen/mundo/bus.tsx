@@ -189,7 +189,20 @@ export const BusInterior: React.FC<BusProps> = ({ capa, f, hora = "dia", avance 
         const ax = 700 + i * 320;
         const c = ["#2f6b4a", "#c23a2e", "#1f5fa8", "#e7b240", "#6a3a8a"][i % 5];
         const t = ["RIDE THE 9", "VENTRA", "FLU SHOTS $0", "LEARN ENGLISH", "SEE IT · SAY IT", "CITY COLLEGES", "LAW HELP 24/7", "DIVVY", "PRIORITY SEATING"][i];
-        return <g key={i}><rect x={ax} y={T + 30} width={290} height={56} rx={4} fill={c} /><text x={ax + 145} y={T + 66} fontFamily={F_HUD} fontWeight={600} fontSize={22} fill="#fff" textAnchor="middle">{t}</text></g>;
+        // 26-oct: pictogramas en vez de texto (la cámara siempre cortaba «RIDE TH», «ENTRA», «SHOTS $0»)
+        const ic = [
+          <g><rect x={-22} y={-14} width={44} height={24} rx={6} fill="#fff" /><circle cx={-12} cy={14} r={5} fill="#fff" /><circle cx={12} cy={14} r={5} fill="#fff" /></g>,
+          <g><rect x={-24} y={-15} width={48} height={30} rx={5} fill="#fff" /><rect x={-24} y={-7} width={48} height={7} fill={c} /></g>,
+          <g><rect x={-6} y={-20} width={12} height={40} rx={3} fill="#fff" /><rect x={-20} y={-6} width={40} height={12} rx={3} fill="#fff" /></g>,
+          <g><path d="M-22,-16 h20 q2,0 2,4 v30 q-2,-4 -22,-4 Z M22,-16 h-20 q-2,0 -2,4 v30 q2,-4 22,-4 Z" fill="#fff" /></g>,
+          <g><ellipse rx={24} ry={13} fill="#fff" /><circle r={7} fill={c} /></g>,
+          <g><path d="M-24,-4 L0,-16 L24,-4 L0,8 Z" fill="#fff" /><rect x={-12} y={2} width={24} height={12} rx={3} fill="#fff" /></g>,
+          <g><rect x={-2} y={-18} width={4} height={34} fill="#fff" /><path d="M-22,-10 h44 M-22,-10 l-6,14 h12 Z M22,-10 l-6,14 h12 Z" stroke="#fff" strokeWidth={4} fill="#fff" /></g>,
+          <g><circle cx={-14} cy={8} r={10} fill="none" stroke="#fff" strokeWidth={4} /><circle cx={14} cy={8} r={10} fill="none" stroke="#fff" strokeWidth={4} /><path d="M-14,8 L-2,-10 L14,8" stroke="#fff" strokeWidth={4} fill="none" /></g>,
+          <g><circle cy={-12} r={7} fill="#fff" /><path d="M-8,-2 h16 v14 h-16 Z M-8,12 l-6,10 M8,12 l6,10" stroke="#fff" strokeWidth={4} fill="#fff" /></g>,
+        ][i];
+        void t;
+        return <g key={i}><rect x={ax} y={T + 30} width={290} height={56} rx={4} fill={c} /><g transform={`translate(${ax + 145},${T + 58})`}>{ic}</g></g>;
       })}
       {/* techo: tubos fluorescentes y pasamanos */}
       <rect x={-200} y={T - 30} width={4000} height={34} fill="#8f989f" />
