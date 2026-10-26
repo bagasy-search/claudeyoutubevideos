@@ -1,4 +1,5 @@
 import React from "react";
+import { conVida } from "./poses";
 import { interpolate } from "remotion";
 import { C, ent, prog, Chip, Emote, fontFamily } from "./kit";
 import { Svg, Cachalote, Bote, Splash, Ballenero, Isla, Arpon, Tiburon, Humo, Barril0, Moneda0 } from "./kit3";
@@ -11,7 +12,7 @@ const Agente: React.FC<{ x: number; y: number; h: number; t: number; expr?: any;
   <Persona {...p} seed={13} ropa={TIBURON} casco="galera" pantalon="#1a1420" />
 );
 const Marino: React.FC<{ i: number; x: number; y: number; h: number; t: number; expr?: any; bD?: number; cD?: number; bI?: number; cI?: number; flip?: boolean; camina?: number; salta?: number; inclina?: number; manoD?: React.ReactNode; mira?: number }> = ({ i, ...p }) => (
-  <Persona {...p} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
+  <Persona {...conVida(p, 60 + i)} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
 );
 const Diario: React.FC<{ t: number; t0: number; x: number; y: number; s?: number }> = ({ t, t0, x, y, s = 1 }) => (
   <div style={{ position: "absolute", left: x, top: y, width: 620, height: 520, transform: `translate(-50%,-50%) rotate(-3deg) scale(${s * ent(t, t0)})`, background: "#f4ecd8", border: `8px solid ${C.noche}`, padding: 26, fontFamily, fontWeight: 700, color: "#2a1530", textAlign: "center" }}>

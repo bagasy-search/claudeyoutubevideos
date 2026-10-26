@@ -82,11 +82,11 @@ export const mezcla = (a: string, b: string, u: number) => {
 };
 export type Pal = { cielo: [string, string, string, string]; agua: [string, string, string]; sol?: number };
 export const PALETAS: Record<string, Pal> = {
-  dia: { cielo: ["#3f8fd8", "#6cb8ec", "#a6dcf4", "#e8f6f2"], agua: ["#2a8fb8", "#155a8a", "#0a2448"] },
+  dia: { cielo: ["#2458c8", "#3f8fe8", "#8ccdf6", "#ffe8c0"], agua: ["#1f8ac4", "#0f4a8a", "#081a48"] },
   manana: { cielo: ["#5a7fd0", "#9ab4e8", "#f2c9a8", "#ffe7b8"], agua: ["#3b8fae", "#1a5a86", "#0a2448"] },
   tarde: { cielo: ["#2d1b69", "#7a2f8f", "#e2557a", "#ffb35a"], agua: ["#5a3a8a", "#2a2a6a", "#0c1238"] },
   noche: { cielo: ["#0a0820", "#16123e", "#2a2160", "#4a3a88"], agua: ["#1a2a5a", "#0e1a40", "#050a1e"] },
-  tropico: { cielo: ["#14a6c8", "#4ccbe0", "#9ae8e6", "#f4fbe0"], agua: ["#14b8b0", "#0a7a96", "#063056"] },
+  tropico: { cielo: ["#0f7ec8", "#2ab8e0", "#8ae6e6", "#fff2c8"], agua: ["#14b8b0", "#0a7a96", "#063056"] },
   tormenta: { cielo: ["#1e2030", "#343648", "#4e5064", "#6a6c7c"], agua: ["#2a3a4a", "#18242e", "#080e16"] },
   humo: { cielo: ["#2a1410", "#5a2a18", "#a04a22", "#e08a3a"], agua: ["#3a2a2a", "#1e1418", "#0a0608"] },
   sangre: { cielo: ["#1a0614", "#4a0f2a", "#8c1d34", "#e8563a"], agua: ["#4a1a3a", "#240a24", "#0a0410"] },

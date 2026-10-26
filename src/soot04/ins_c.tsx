@@ -1,4 +1,5 @@
 import React from "react";
+import { conVida } from "./poses";
 import { interpolate } from "remotion";
 import { C, ent, prog, Chip, Emote, fontFamily } from "./kit";
 import { Svg, Cachalote, Bote, Splash, Ballenero, Isla, CasaNan, Farol, Galleta, Pajitas, Pistola, Tiburon, Humo, Barril0, Moneda0 } from "./kit3";
@@ -9,7 +10,7 @@ import { Ins, Rayos2, Grad, Mar, Monto, Sello, Dice, Rot, Vuela } from "./insert
 
 // 10:00 – 15:02 · desertores, Melville, el Essex, el sorteo, el giro final y el cierre
 const Marino: React.FC<{ i: number; x: number; y: number; h: number; t: number; expr?: any; bD?: number; cD?: number; bI?: number; cI?: number; flip?: boolean; habla?: boolean; mira?: number; manoD?: React.ReactNode; camina?: number; salta?: number; inclina?: number; viejo?: boolean; opacity?: number }> = ({ i, ...p }) => (
-  <Persona {...p} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
+  <Persona {...conVida(p, 60 + i)} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
 );
 const Pollard: React.FC<{ x: number; y: number; h: number; t: number; expr?: any; salta?: number; bD?: number; cD?: number; bI?: number; cI?: number; flip?: boolean; habla?: boolean; viejo?: boolean; camina?: number; manoD?: React.ReactNode; mira?: number; inclina?: number }> = (p) => (
   <Persona {...p} seed={11} ropa={CAPITAN} casco="capitan" barba={p.viejo ? "#c8c8c8" : "#3a2616"} pantalon="#141a30" />

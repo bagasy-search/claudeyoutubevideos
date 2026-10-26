@@ -1,7 +1,9 @@
+import { useCurrentFrame } from "remotion";
 import React from "react";
 import { interpolate, Easing } from "remotion";
 import { C, ent, prog, fontFamily, seguro, anchoTxt } from "./kit";
 import { Ambiente } from "./ambiente";
+import { SetMar, FondoLuz, horaDe } from "./sets";
 
 // Insertos a pantalla completa (vara del molde de Soot): fondo limpio de rayos o degradé, personaje GRANDE actuando,
 // un texto fuerte. Entran y salen por iris sobre el mundo continuo. Cada inserto vive en [a, b) en tiempo absoluto.
@@ -11,21 +13,14 @@ export type Ins = { a: number; b: number; fondo: (t: number) => React.ReactNode;
 export const Rayos2: React.FC<{ t: number; c1: string; c2: string; cx?: number; cy?: number; n?: number; vel?: number }> = ({ t, c1, c2, cx = 960, cy = 540 }) => (
   <Ambiente t={t} c1={c1} c2={c2} cx={cx} cy={cy} />
 );
-export const Grad: React.FC<{ c1: string; c2: string; ang?: number }> = ({ c1, c2, ang = 180 }) => (
-  <div style={{ position: "absolute", inset: 0, background: `linear-gradient(${ang}deg, ${c1}, ${c2})` }} />
-);
+// vuelta 8 OJO: los fondos lisos y el mar plano pasan a los sets con luz (sets.tsx) sin tocar cada escena
+export const Grad: React.FC<{ c1: string; c2: string; ang?: number }> = ({ c1, c2, ang = 180 }) => {
+  const t = useCurrentFrame() / 30;
+  return <FondoLuz t={t} c1={c1} c2={c2} ang={ang} />;
+};
 // cielo arriba + mar abajo (horizonte en y)
-export const Mar: React.FC<{ t: number; y?: number; cielo?: [string, string]; mar?: [string, string] }> = ({ t, y = 640, cielo = ["#7fc8f0", "#d8f0ff"], mar = ["#2a7fb8", "#123c6a"] }) => (
-  <>
-    <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: y, background: `linear-gradient(180deg, ${cielo[0]}, ${cielo[1]})` }} />
-    <div style={{ position: "absolute", left: 0, right: 0, top: y, bottom: 0, background: `linear-gradient(180deg, ${mar[0]}, ${mar[1]})` }} />
-    <svg style={{ position: "absolute", left: 0, top: y - 14, overflow: "visible" }} width={1920} height={40}>
-      {Array.from({ length: 9 }, (_, i) => {
-        const x = ((i * 260 - t * 60) % 2340 + 2340) % 2340 - 200;
-        return <path key={i} d={`M ${x} 20 Q ${x + 60} 4 ${x + 120} 20 Q ${x + 180} 36 ${x + 240} 20`} stroke="rgba(255,255,255,.55)" strokeWidth={6} fill="none" />;
-      })}
-    </svg>
-  </>
+export const Mar: React.FC<{ t: number; y?: number; cielo?: [string, string]; mar?: [string, string] }> = ({ t, y = 640, cielo = ["#7fc8f0", "#d8f0ff"] }) => (
+  <SetMar t={t} y={y} hora={horaDe(cielo[0])} dx={Math.sin(t * 0.21) * 30} />
 );
 
 // monto que rueda por saltos: ks = [[t, valor], ...]

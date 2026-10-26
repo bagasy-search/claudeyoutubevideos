@@ -4,6 +4,7 @@ import { CamaraMano } from "../kits/camara/CamaraMano";
 import { FPS } from "./kit";
 import { CamCtx, camAt, CapaMundo, CapaLejos, Fondo, Olas, Submarino, palAt } from "./mundo";
 import { Sol, Nube } from "./kit3";
+import { Glow, Grado, type Hora } from "./sets";
 import { bx, LugaresFijos, BarcoNuestro } from "./estado";
 import type { Parte } from "./parte";
 import { P0 } from "./P0";
@@ -33,10 +34,15 @@ const PAL = PARTES.flatMap((p) => p.pal).sort((a, b) => a[0] - b[0]);
 
 const LejosBase: React.FC<{ t: number; noche: boolean }> = ({ t, noche }) => (
   <>
+    {/* vuelta 8 OJO: el astro con halo grande y un banco de nubes iluminadas sobre el horizonte (luz del molde) */}
+    <Glow x={1300} y={-430} r={noche ? 520 : 640} col={noche ? "#b8a0ff" : "#ffe08a"} op={0.6} />
     <Sol x={1300} y={-430} r={noche ? 80 : 110} col={noche ? "#fff6d8" : "#fff0b0"} />
+    {[0, 1, 2, 3, 4, 5].map((i) => <div key={`b${i}`} style={{ position: "absolute", left: i * 900 - 2700, top: -150 - (i % 2) * 40, width: 1100, height: 150, borderRadius: 90, background: noche ? "#3a2f7a" : "#ffffff", opacity: noche ? 0.45 : 0.55, filter: "blur(10px)" }} />)}
     {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => <Nube key={i} x={i * 1500 - 3000 + ((t * 8) % 1500)} y={-560 - (i % 3) * 140} s={0.6 + (i % 3) * 0.25} col={noche ? "#4a3a88" : "#fff"} op={noche ? 0.5 : 0.85} />)}
   </>
 );
+
+const hora = (p?: string): Hora => (p === "noche" || p === "abismo" ? "noche" : p === "tarde" || p === "sangre" || p === "humo" ? "atardecer" : p === "manana" || p === "calma" ? "tarde" : "dia");
 
 export const Completo: React.FC = () => {
   const t = useCurrentFrame() / FPS;
@@ -63,6 +69,7 @@ export const Completo: React.FC = () => {
             <Olas pal={pal} frente />
             {act.map((p, i) => <React.Fragment key={`d${i}`}>{p.frente?.(t)}</React.Fragment>)}
           </CapaMundo>
+          <Grado hora={hora(ult)} xLuz={1350} yLuz={170} />
           <Primerplano t={t} lista={INSERTOS} />
           {act.map((p, i) => <React.Fragment key={`h${i}`}>{p.hud?.(t)}</React.Fragment>)}
           <MostrarInsertos t={t} lista={INSERTOS} />

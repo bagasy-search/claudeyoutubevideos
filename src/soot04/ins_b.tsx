@@ -1,4 +1,5 @@
 import React from "react";
+import { conVida } from "./poses";
 import { interpolate } from "remotion";
 import { C, ent, prog, Chip, Emote, Zzz, fontFamily } from "./kit";
 import { Svg, Cachalote, Bote, Splash, Galleta, Rata, Cucaracha, Lampara, Hacha, Lanza, Pala, Tiburon, Humo, Barril0 } from "./kit3";
@@ -8,7 +9,7 @@ import { Ins, Rayos2, Grad, Mar, Monto, Sello, Dice, Rot, Vuela } from "./insert
 
 // 4:30 – 10:00 · el castillo de proa, la comida, la espera, el bote, el fuego y el capitán
 const Marino: React.FC<{ i: number; x: number; y: number; h: number; t: number; expr?: any; bD?: number; cD?: number; bI?: number; cI?: number; flip?: boolean; habla?: boolean; mira?: number; miraY?: number; manoD?: React.ReactNode; camina?: number; salta?: number; inclina?: number }> = ({ i, ...p }) => (
-  <Persona {...p} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
+  <Persona {...conVida(p, 60 + i)} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
 );
 // el chico tiznado / gastado: misma ropa, gorro rojo
 const Gotas: React.FC<{ t: number; xs: number[]; y0: number; y1: number; seed?: number }> = ({ t, xs, y0, y1, seed = 1 }) => (

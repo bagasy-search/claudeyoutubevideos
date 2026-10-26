@@ -1,4 +1,5 @@
 import React from "react";
+import { conVida } from "./poses";
 import { interpolate } from "remotion";
 import { C, ent, prog, Chip, Particulas, Emote, fontFamily } from "./kit";
 import { Svg, Cachalote, Bote, Splash, Farol, Moneda0, Barril0, Pajitas, Tiburon, Iglesia, Arpon } from "./kit3";
@@ -9,7 +10,7 @@ import { Ins, Rayos2, Grad, Mar, Monto, Sello, Dice, Rot, Vuela } from "./insert
 
 // 0:00 – 4:30 · el gancho, el reclutador, el lay, las deducciones y los cuáqueros
 const Marino: React.FC<{ i: number; x: number; y: number; h: number; t: number; expr?: any; bD?: number; cD?: number; bI?: number; cI?: number; flip?: boolean; habla?: boolean; mira?: number; manoD?: React.ReactNode; camina?: number; salta?: number; inclina?: number }> = ({ i, ...p }) => (
-  <Persona {...p} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
+  <Persona {...conVida(p, 60 + i)} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} />
 );
 // boleta de la tripulación (la que lo persigue todo el video)
 const Boleta: React.FC<{ t: number; t0: number; x: number; y: number; s?: number; rot?: number; saldo: React.ReactNode }> = ({ t, t0, x, y, s = 1, rot = -5, saldo }) => (

@@ -1,6 +1,7 @@
 import React from "react";
 import { Chico } from "./reparto";
 import { Persona, MARINO, type Expr } from "./persona";
+import { vida, ANIMO, POSES } from "./poses";
 
 // vuelta 3 OJO: en los tramos del mundo lejano entra un personaje GRANDE en primer plano, por encima del hombro,
 // que mira la escena y reacciona a la frase (el plano de cine del molde). [a, b, expr, gesto, quién]
@@ -59,7 +60,13 @@ export const Primerplano: React.FC<{ t: number; lista: { a: number; b: number }[
   // más chico y más alto: cabeza y torso enteros dentro del cuadro
   const y = 1250;
   // el gesto cambia a mitad de los tramos largos para que no quede posado
-  const G2 = Math.floor((t - a) / 2.4) % 2 ? GESTO[g === "senala" ? "puno" : "senala"] : GESTO[g];
+  // vuelta 8 OJO: en vez de alternar 2 gestos, actúa una cadena de la biblioteca de poses según el ánimo,
+  // arrancando por el gesto pedido (los planos largos ya no repiten la misma pose)
+  const rep: (keyof typeof POSES)[] = [g === "sostiene" ? "cuenta" : g, ...(expr === "miedo" || expr === "sorpresa" ? ANIMO.miedo : expr === "feliz" ? ANIMO.alegre : expr === "triste" ? ANIMO.triste : ANIMO.charla)];
+  const g0 = { ...GESTO[g], inclina: 0, ladea: 0 }, vv = vida(Math.max(0, t - a - 1.6), Math.round(a * 10) % 97, rep);
+  const um = Math.min(1, Math.max(0, (t - a - 1.6) / 0.45)), us = um * um * (3 - 2 * um);
+  const v = { bD: g0.bD + (vv.bD - g0.bD) * us, cD: g0.cD + (vv.cD - g0.cD) * us, bI: g0.bI + (vv.bI - g0.bI) * us, cI: g0.cI + (vv.cI - g0.cI) * us, inclina: (vv.inclina ?? 0) * us, ladea: (vv.ladea ?? 0) * us };
+  const G2 = { bD: v.bD, cD: v.cD, bI: v.bI, cI: v.cI, inclina: v.inclina, ladea: v.ladea };
   const comun = { x: lado ? 1640 : 280, y, h: 980, t, expr, mira: lado ? -1 : 1, salta: a + 0.35, ...G2 };
   return quien === "essex"
     ? <Persona {...comun} seed={63} ropa={MARINO(3)} casco="gorro" gorroCol="#2b6ad0" pantalon="#2a3a5a" />
