@@ -88,8 +88,8 @@ export const P8: Parte = {
   mundo: (t) => {
     const x = bx(t);
     const mx = x + 1800;
-    const eA = t > 820.6 && t < 843 ? salidaE(t, 820.6, 843) : 0;
-    const eC = t > 851.2 && t < 866.8 ? salidaE(t, 851.2, 866.8) : 0;
+    const eA = t >= 820.6 && t < 843 ? salidaE(t, 820.6, 843) : 0;
+    const eC = t >= 851.2 && t < 866.8 ? salidaE(t, 851.2, 866.8) : 0;
     const baja = prog(t, 874.0, 875.7);
     const enMuelle = t > 875.7;
     return (
@@ -99,16 +99,16 @@ export const P8: Parte = {
           {t < 874.0 && <Chico x={X_CHICO} y={CUBIERTA} t={t} expr={t > 807 && t < 820 ? "sorpresa" : "neutro"} mira={0.4} />}
         </EnBarco>
         {/* planchada y el greenhand que baja */}
-        {t > 872.6 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><line x1={x + PL[0]} y1={PL[1]} x2={PL[2]} y2={PL[3]} stroke="#9a6a3a" strokeWidth={22} strokeLinecap="round" /></svg>}
+        {t >= 872.6 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><line x1={x + PL[0]} y1={PL[1]} x2={PL[2]} y2={PL[3]} stroke="#9a6a3a" strokeWidth={22} strokeLinecap="round" /></svg>}
         {t >= 874.0 && !enMuelle && <Chico x={interpolate(baja, [0, 1], [x + PL[0], PL[2]])} y={interpolate(baja, [0, 1], [PL[1], PL[3]])} t={t} camina={1.4} inclina={6} expr="triste" />}
         {enMuelle && <Chico x={PL[2] + pz(t, [[875.7, 0], [877.3, 640], [883.0, 640], [884.6, 900]])} y={-60} t={t} camina={(t < 877.3) || (t > 883 && t < 884.6) ? 1.4 : 0} expr={t > 885.5 ? "sorpresa" : t > 881.2 ? "triste" : "neutro"} mira={t > 883 ? 1 : 0.5} viejo={false} />}
         {enMuelle && t > 880 && t < 884 && [0, 1, 2].map((k) => { const u = ((t - 880) * 0.7 + k / 3) % 1; return <Svg key={k} x={PL[2] + 640 + Math.sin(u * 7 + k) * 30} y={-320 - u * 200}><circle r={18 + u * 26} fill="#8a8a96" opacity={0.45 * (1 - u)} /></Svg>; })}
         {/* el cuáquero rico cuenta monedas frente a su casa */}
-        {t > 883.4 && (
+        {t >= 883.4 && (
           <>
             <Persona x={XQ + 260} y={-70} h={230} t={t} seed={33} ropa={CUAQUERO} casco="galera" pantalon="#2a2830" expr="orgullo" aparece={883.5} flip bD={60 + Math.sin(t * 6) * 25} />
             {Array.from({ length: Math.min(14, Math.floor((t - 883.6) * 4)) }, (_, k) => <Svg key={k} x={XQ + 120} y={-80 - k * 12}><ellipse rx={36} ry={12} fill="#f7c548" stroke="#a8781a" strokeWidth={4} /></Svg>)}
-            {t > 884.3 && <Svg x={XQ + 150} y={-330 - ((t * 1.4) % 1) * 160} rot={t * 300} s={0.6}><Moneda0 r={40} /></Svg>}
+            {t >= 884.3 && <Svg x={XQ + 150} y={-330 - ((t * 1.4) % 1) * 160} rot={t * 300} s={0.6}><Moneda0 r={40} /></Svg>}
           </>
         )}
         {/* espejismo A: Chase capitán · Pollard naufraga · Pollard sereno */}
@@ -122,15 +122,15 @@ export const P8: Parte = {
                   <Ballenero x={mx + pz(t, [[822.4, -100], [825.6, 300]])} y={-1160} t={t} escala={0.22} velas={1} roto={pz(t, [[825.6, 0], [827.8, 0.55]])} />
                 </div>
                 {[0, 1, 2, 3].map((k) => <Svg key={k} x={mx + 420 + k * 60} y={-1160}><path d={`M -40 10 L ${-10 + k * 4} ${-40 - (k % 2) * 30} L 40 10 Z`} fill="#5a5260" /></Svg>)}
-                {t > 827.9 && <Persona x={mx + 100} y={-1160} h={190} t={t} seed={11} ropa={CAPITAN} casco="no" barba="#3a2616" pantalon="#1a1420" expr="triste" aparece={827.9} />}
+                {t >= 827.9 && <Persona x={mx + 100} y={-1160} h={190} t={t} seed={11} ropa={CAPITAN} casco="no" barba="#3a2616" pantalon="#1a1420" expr="triste" aparece={827.9} />}
               </>
             )}
             {t >= 831.0 && (
               <>
                 {[-700, -380, 380, 700].map((d, k) => <CasaNan key={d} x={mx + d} y={-1160} s={0.55} tono={["#9aa0a8", "#8e949c", "#a8aeb6", "#9aa0a8"][k]} luz={k === 2 && t > 837.7} />)}
                 <Persona x={mx + pz(t, [[831.2, -300], [837.4, 200]])} y={-1160} h={190} t={t} seed={11} ropa={CAPITAN} casco="no" viejo barba="#d8d2cc" pantalon="#1a1420" camina={t < 837.4 ? 1 : 0} expr="triste" opacity={t > 837.7 ? pz(t, [[837.7, 1], [838.4, 0]]) : 1} manoD={<Farolito t={t} />} />
-                {t > 837.7 && <Calendario x={mx - 60} y={-1420} s={ent(t, 837.8) * 0.8} />}
-                {t > 839.4 && <Svg x={mx + 160} y={-1430} s={ent(t, 839.4) * 0.9}><ellipse rx={80} ry={26} fill="#f4f0e8" stroke="#2a1530" strokeWidth={6} /><path d="M -50 -60 L 50 40 M 50 -60 L -50 40" stroke={C.rojo} strokeWidth={14} strokeLinecap="round" /></Svg>}
+                {t >= 837.7 && <Calendario x={mx - 60} y={-1420} s={ent(t, 837.8) * 0.8} />}
+                {t >= 839.4 && <Svg x={mx + 160} y={-1430} s={ent(t, 839.4) * 0.9}><ellipse rx={80} ry={26} fill="#f4f0e8" stroke="#2a1530" strokeWidth={6} /><path d="M -50 -60 L 50 40 M 50 -60 L -50 40" stroke={C.rojo} strokeWidth={14} strokeLinecap="round" /></Svg>}
               </>
             )}
           </>
@@ -143,12 +143,12 @@ export const P8: Parte = {
               <>
                 {[-640, -400, 560].map((d) => <Svg key={d} x={mx + d} y={-1160} s={eC}><path d="M -160 0 Q 0 -140 160 0 Z" fill="#5a8a3a" /></Svg>)}
                 <Torre x={mx} y={-1160} t={t} s={0.6 * eC} chorro={prog(t, 853.6, 855.2)} />
-                {t > 857.5 && <div style={{ position: "absolute", left: 0, top: 0 }}><Lampara x={mx + 420} y={-1250} t={t} s={0.55} /></div>}
+                {t >= 857.5 && <div style={{ position: "absolute", left: 0, top: 0 }}><Lampara x={mx + 420} y={-1250} t={t} s={0.55} /></div>}
               </>
             ) : (
               <div style={{ position: "absolute", left: 0, top: 0, filter: "grayscale(0.85) brightness(0.8)" }}>
                 {[-560, 0, 560].map((d, k) => <Ballenero key={d} x={mx + d} y={-1160} t={t + k} escala={0.2} velas={0} roto={0.15 + k * 0.1} />)}
-                {t > 865.2 && <Torre x={mx + 820} y={-1160} t={t} s={0.4} chorro={1} />}
+                {t >= 865.2 && <Torre x={mx + 820} y={-1160} t={t} s={0.4} chorro={1} />}
               </div>
             )}
           </>
@@ -177,7 +177,7 @@ export const P8: Parte = {
       <Titulo t={t} t0={843.2} t1={845.0} text="THE FINAL IRONY" y={200} size={130} color={C.ambar} />
       <Chip t={t} t0={845.1} t1={849.3} text="THE INDUSTRY DIDN'T DIE BECAUSE OF A WHALE" color={C.violeta} x={960} y={140} centro size={46} />
       <Titulo t={t} t0={849.5} t1={851.2} text="…BUT A ROCK" y={220} size={150} color={C.crema} />
-      {t > 849.5 && t < 851.4 && <Svg x={960} y={620} s={ent(t, 849.6) * 1.4}><path d="M -160 80 Q -190 -10 -110 -80 Q -20 -140 90 -100 Q 190 -40 170 60 Q 120 110 -160 80 Z" fill="#6a6470" stroke="#2a1530" strokeWidth={8} /><path d="M -60 -50 L -10 10 M 60 -40 L 100 20" stroke="#4a4450" strokeWidth={8} /></Svg>}
+      {t >= 849.5 && t < 851.4 && <Svg x={960} y={620} s={ent(t, 849.6) * 1.4}><path d="M -160 80 Q -190 -10 -110 -80 Q -20 -140 90 -100 Q 190 -40 170 60 Q 120 110 -160 80 Z" fill="#6a6470" stroke="#2a1530" strokeWidth={8} /><path d="M -60 -50 L -10 10 M 60 -40 L 100 20" stroke="#4a4450" strokeWidth={8} /></Svg>}
       <Chip t={t} t0={851.4} t1={857.3} text="1859 · PENNSYLVANIA" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={58} />
       <Chip t={t} t0={853.6} t1={857.3} text="OIL · FROM THE GROUND" color="#2a2430" x={960} y={250} centro size={50} />
       <Chip t={t} t0={857.5} t1={861.1} text="KEROSENE: CHEAPER" color={C.lima} tinta={C.noche} x={960} y={140} centro size={46} />
@@ -194,22 +194,22 @@ export const P8: Parte = {
       <Titulo t={t} t0={885.5} t1={888.7} text="WHO WAS REALLY DOING THE HUNTING?" y={200} size={84} color={C.crema} />
       {/* CTA */}
       <Chip t={t} t0={888.9} t1={891.5} text="ENJOYED 4 YEARS ON A WHALING SHIP?" color={C.violeta} x={960} y={140} centro size={52} />
-      {t > 891.6 && t < 893.5 && (
-        <div style={{ position: "absolute", left: 960, top: 560, transform: `translate(-50%,-50%) scale(${ent(t, 891.6) * (1 + (t > 892.4 && t < 892.8 ? 0.06 * Math.sin(t * 60) : 0))})`, display: "flex", gap: 40, alignItems: "center" }}>
+      {t >= 891.6 && t < 893.5 && (
+        <div style={{ position: "absolute", left: 960, top: 560, transform: `translate(-50%,-50%) scale(${ent(t, 891.6) * (1 + (t >= 892.4 && t < 892.8 ? 0.06 * Math.sin(t * 60) : 0))})`, display: "flex", gap: 40, alignItems: "center" }}>
           <div style={{ background: C.rojo, color: "#fff", fontFamily, fontWeight: 700, fontSize: 80, padding: "24px 60px", borderRadius: 24, boxShadow: "0 12px 0 #8a1a20" }}>SUBSCRIBE</div>
-          {t > 892.4 && <svg width={150} height={150} viewBox="-75 -75 150 150" style={{ transform: `rotate(${Math.sin(t * 30) * 14 * Math.max(0, 1 - (t - 892.4))}deg)` }}><path d="M -46 30 L -46 -10 Q -46 -56 0 -58 Q 46 -56 46 -10 L 46 30 L 60 46 L -60 46 Z" fill="#f7c548" stroke="#2a1530" strokeWidth={8} /><circle cy={58} r={14} fill="#f7c548" stroke="#2a1530" strokeWidth={6} /></svg>}
+          {t >= 892.4 && <svg width={150} height={150} viewBox="-75 -75 150 150" style={{ transform: `rotate(${Math.sin(t * 30) * 14 * Math.max(0, 1 - (t - 892.4))}deg)` }}><path d="M -46 30 L -46 -10 Q -46 -56 0 -58 Q 46 -56 46 -10 L 46 30 L 60 46 L -60 46 Z" fill="#f7c548" stroke="#2a1530" strokeWidth={8} /><circle cy={58} r={14} fill="#f7c548" stroke="#2a1530" strokeWidth={6} /></svg>}
         </div>
       )}
-      {t > 893.6 && t < 896.5 && <Castillo e={ent(t, 893.6)} t={t} />}
+      {t >= 893.6 && t < 896.5 && <Castillo e={ent(t, 893.6)} t={t} />}
       <Chip t={t} t0={893.6} t1={896.5} text="NEXT TIME: A MEDIEVAL PRISON" color={C.violeta} x={960} y={140} centro size={58} />
       <Chip t={t} t0={896.6} t1={901.5} text="WHICH TRAP WOULD GET YOU FIRST?" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={58} />
-      {t > 897.6 && ["THE RECRUITER", "THE LAY", "THE FORECASTLE", "THE BOAT", "THE FIRE", "THE CAPTAIN", "THE ESSEX"].map((n, i) => (
+      {t >= 897.6 && ["THE RECRUITER", "THE LAY", "THE FORECASTLE", "THE BOAT", "THE FIRE", "THE CAPTAIN", "THE ESSEX"].map((n, i) => (
         <div key={i} style={{ position: "absolute", left: 960 + (i - 3) * 250, top: 600, transform: `translate(-50%,-50%) scale(${ent(t, 897.6 + i * 0.25)})`, width: 220, height: 220, borderRadius: 26, background: "#fff", border: "7px solid #2a1530", fontFamily, fontWeight: 700, textAlign: "center", color: "#2a1530" }}>
           <div style={{ fontSize: 96, color: C.rojo, marginTop: 12 }}>{i + 1}</div>
           <div style={{ fontSize: 26, marginTop: 4, padding: "0 10px" }}>{n}</div>
         </div>
       ))}
-      {t > 899.0 && <Emote t={t} t0={899.0} tipo="preg" x={1700} y={330} s={1.4} />}
+      {t >= 899.0 && <Emote t={t} t0={899.0} tipo="preg" x={1700} y={330} s={1.4} />}
     </>
   ),
 };

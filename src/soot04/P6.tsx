@@ -74,21 +74,21 @@ export const P6: Parte = {
     const x = bx(t);
     const capH = pz(t, [[584.9, 230], [586.2, 430], [588.0, 430], [588.8, 260], [591.1, 260], [592.2, 330], [609, 330], [610, 230]]);
     const fuera = t > 614.5 ? DESERTA : [];
-    const eM = t > 627.0 && t < 656.4 ? salidaE(t, 627.0, 656.4) : 0;
+    const eM = t >= 627.0 && t < 656.4 ? salidaE(t, 627.0, 656.4) : 0;
     const mx = x + 1800;
     return (
       <>
         <EnBarco t={t} x={x}>
-          <Tripulacion t={t} capitan={false} sin={[...fuera, ...(t > 603.4 && t < 609.4 ? [2] : [])]} expr={() => (t > 591 && t < 612 ? "miedo" : "neutro")} />
+          <Tripulacion t={t} capitan={false} sin={[...fuera, ...(t >= 603.4 && t < 609.4 ? [2] : [])]} expr={() => (t > 591 && t < 612 ? "miedo" : "neutro")} />
           {/* nuevos marineros contratados en la isla */}
-          {t > 621.5 && DESERTA.map((i, k) => <Persona key={i} x={XMARINO(i)} y={CUBIERTA} h={200} t={t} seed={300 + k} ropa={MARINO(k + 9)} casco="no" pantalon="#e8e2d0" expr="neutro" aparece={621.6 + k * 0.4} flip={k % 2 === 0} />)}
-          <Capitan t={t} h={capH} expr={t > 591.1 && t < 612 ? "enojado" : t > 588.2 && t < 591 ? "orgullo" : "neutro"} bD={t > 600.6 && t < 602.6 ? 120 : 8} cD={30} />
+          {t >= 621.5 && DESERTA.map((i, k) => <Persona key={i} x={XMARINO(i)} y={CUBIERTA} h={200} t={t} seed={300 + k} ropa={MARINO(k + 9)} casco="no" pantalon="#e8e2d0" expr="neutro" aparece={621.6 + k * 0.4} flip={k % 2 === 0} />)}
+          <Capitan t={t} h={capH} expr={t >= 591.1 && t < 612 ? "enojado" : t >= 588.2 && t < 591 ? "orgullo" : "neutro"} bD={t >= 600.6 && t < 602.6 ? 120 : 8} cD={30} />
           <Chico x={X_CHICO} y={CUBIERTA} t={t} expr={t > 591 && t < 612 ? "miedo" : t > 613 && t < 626 ? "sorpresa" : "neutro"} mira={t > 613 && t < 626 ? 1 : 0.4} />
           {/* hierros en los tobillos del marino 2 (insinuado) */}
-          {t > 603.4 && t < 609.4 && <Marino i={2} t={t} expr="triste" inclina={6} />}
-          {t > 603.4 && t < 609.4 && <Svg x={XMARINO(2)} y={CUBIERTA - 6} s={ent(t, 603.5)}><circle cx={-16} r={12} fill="none" stroke="#5a5e6a" strokeWidth={6} /><circle cx={16} r={12} fill="none" stroke="#5a5e6a" strokeWidth={6} /><path d="M -4 0 Q 0 16 4 0" stroke="#5a5e6a" strokeWidth={5} fill="none" /></Svg>}
+          {t >= 603.4 && t < 609.4 && <Marino i={2} t={t} expr="triste" inclina={6} />}
+          {t >= 603.4 && t < 609.4 && <Svg x={XMARINO(2)} y={CUBIERTA - 6} s={ent(t, 603.5)}><circle cx={-16} r={12} fill="none" stroke="#5a5e6a" strokeWidth={6} /><circle cx={16} r={12} fill="none" stroke="#5a5e6a" strokeWidth={6} /><path d="M -4 0 Q 0 16 4 0" stroke="#5a5e6a" strokeWidth={5} fill="none" /></Svg>}
           {/* la carta de la ley de 1850 que el capitán tira por la borda */}
-          {t > 600.6 && t < 603.2 && (
+          {t >= 600.6 && t < 603.2 && (
             <Svg x={pz(t, [[600.6, 900], [601.6, -400], [602.4, -900]])} y={pz(t, [[600.6, -900], [601.6, -520], [602.4, -200], [603.2, 200]])} rot={pz(t, [[601.6, 0], [603.2, 380]])} s={0.9}>
               <rect x={-70} y={-48} width={140} height={96} rx={6} fill="#f4f0e8" stroke="#3a2418" strokeWidth={5} />
               <text y={-6} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={24} fill="#3a2418">LAW · 1850</text>
@@ -97,7 +97,7 @@ export const P6: Parte = {
           )}
         </EnBarco>
         {/* los que desertan: saltan, nadan, corren a la selva */}
-        {t > 613.3 && t < 621 && DESERTA.map((i, k) => {
+        {t >= 613.3 && t < 621 && DESERTA.map((i, k) => {
           const a = 613.4 + k * 0.9;
           const u = prog(t, a, a + 4.2);
           if (u <= 0) return null;
@@ -111,7 +111,7 @@ export const P6: Parte = {
             : <Marino key={i} i={i} t={t} x={px} y={py} camina={u > 0.6 ? 2.2 : 0} flip={false} expr="feliz" />;
         })}
         {/* canoa con los nuevos marineros */}
-        {t > 619.8 && t < 622 && <Svg x={pz(t, [[619.8, X_ISLA - 900], [621.6, x + 500]])} y={30}><path d="M -160 -20 Q 0 20 160 -20 Q 120 30 0 34 Q -120 30 -160 -20 Z" fill="#7a4a26" />{[-80, 0, 80].map((d, k) => <circle key={k} cx={d} cy={-40} r={20} fill={["#8d5a3b", "#6e4128", "#c98b62"][k]} />)}</Svg>}
+        {t >= 619.8 && t < 622 && <Svg x={pz(t, [[619.8, X_ISLA - 900], [621.6, x + 500]])} y={30}><path d="M -160 -20 Q 0 20 160 -20 Q 120 30 0 34 Q -120 30 -160 -20 Z" fill="#7a4a26" />{[-80, 0, 80].map((d, k) => <circle key={k} cx={d} cy={-40} r={20} fill={["#8d5a3b", "#6e4128", "#c98b62"][k]} />)}</Svg>}
         {/* espejismo de Melville */}
         {eM > 0 && (
           <>
@@ -122,7 +122,7 @@ export const P6: Parte = {
             <Libro t={t} t0={637.2} x={mx + 420} y={-1420} titulo="TYPEE" col="#2f6a3a" />
             <Libro t={t} t0={639.0} x={mx + 760} y={-1420} titulo="MOBY-DICK" col="#1d2a52" ballena />
             {/* Nantucket, años después: el visitante y el hombre que sobrevivió */}
-            {t > 643.1 && (
+            {t >= 643.1 && (
               <>
                 <Persona x={mx - 200} y={-1160} h={200 * eM} t={t} seed={411} ropa={{ tunica: "#3a2a22", tunica2: "#1a120e", cinto: "#0c0f20", piel: "#f0c29e", piel2: "#d29c78", pelo: "#5a3a22" }} casco="galera" barba="#5a3a22" pantalon="#1a1420" aparece={643.2} expr={t > 651.4 ? "sorpresa" : "neutro"} mira={1} />
                 <Persona x={mx + 140} y={-1160} h={200 * eM} t={t} seed={412} ropa={CUAQUERO} casco="no" viejo barba="#d8d2cc" pantalon="#45424a" aparece={643.6} expr="triste" flip opacity={0.92} />
@@ -131,7 +131,7 @@ export const P6: Parte = {
             )}
           </>
         )}
-        {t > 655.8 && <Humo x={x + 500} y={300} t={t} s={0.6} n={10} col="#cfe8ff" op={0.4} viento={30} />}
+        {t >= 655.8 && <Humo x={x + 500} y={300} t={t} s={0.6} n={10} col="#cfe8ff" op={0.4} viento={30} />}
       </>
     );
   },
@@ -166,8 +166,8 @@ export const P6: Parte = {
       <Chip t={t} t0={648.2} t1={651.3} text="TO THE ISLANDERS: NOBODY" color="#5a5e6a" x={960} y={140} centro size={58} />
       <Chip t={t} t0={651.4} t1={654.3} text="TO MELVILLE: THE MOST IMPRESSIVE MAN" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={50} />
       <Chip t={t} t0={654.4} t1={660.2} text="INSPIRED BY A REAL NANTUCKET SHIP" color={C.violeta} x={960} y={140} centro size={54} />
-      {t > 591.2 && t < 594 && <Emote t={t} t0={591.2} tipo="enojo" x={760} y={420} s={1.5} />}
-      {t > 651.5 && t < 654.2 && <Emote t={t} t0={651.5} tipo="brillos" x={860} y={520} s={1.4} />}
+      {t >= 591.2 && t < 594 && <Emote t={t} t0={591.2} tipo="enojo" x={760} y={420} s={1.5} />}
+      {t >= 651.5 && t < 654.2 && <Emote t={t} t0={651.5} tipo="brillos" x={860} y={520} s={1.4} />}
     </>
   ),
 };

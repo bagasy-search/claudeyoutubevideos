@@ -100,16 +100,20 @@ export const MostrarInsertos: React.FC<{ t: number; lista: Ins[] }> = ({ t, list
     const prev = lista.findIndex((k, j) => t >= k.b && t < k.b + 0.35 && lista[j + 1] && lista[j + 1].a - k.b <= 0.35);
     if (prev < 0) return null;
     idx = prev;
-    tt = lista[prev].b - 0.01;
+    tt = t; // sigue corriendo (congelarlo daba cuadros duplicados = lageo)
   }
   const i = lista[idx];
   // el contenido arranca ya armado (los elementos que entraban en `a` dejaban el primer cuadro vacío o un disco oscuro)
   const tc = Math.max(tt, i.a + 0.3);
-  const tipo = (["iris", "barrido", "zoom", "corte"] as const)[idx % 4];
+  // vuelta 5: el iris/barrido muestreado a mitad parecía un disco negro o una mancha tapando la escena → corte seco siempre
+  const tipo = "corte" as "iris" | "barrido" | "zoom" | "corte";
   const IN = 0.2;
   const r = tipo === "corte" ? 1 : Math.min(1, (tt - i.a) / IN);
   const e = Easing.out(Easing.cubic)(Math.max(0, r));
-  const z = 1 + (i.z ?? 0.05) * ((tt - i.a) / (i.b - i.a)) + (tipo === "zoom" ? 0.25 * (1 - e) : 0);
+  // cadencia del molde (~3,5 s): en insertos largos, corte seco a un plano más cerrado y vuelta (punch-in alternado)
+  const tramo = Math.floor((t - i.a) / 3.4), largo = i.b - i.a > 5.5;
+  const punch = largo && tramo % 2 === 1 && i.b - t > 1.2 ? 1.08 : 1;
+  const z = punch * (1 + (i.z ?? 0.05) * ((t - i.a) / (i.b - i.a)) + (tipo === "zoom" ? 0.25 * (1 - e) : 0));
   const clip = r >= 1 ? undefined : tipo === "iris" ? `circle(${18 + e * 64}% at 50% 52%)` : tipo === "barrido" ? `inset(0 ${(1 - e) * 100}% 0 0)` : undefined;
   return (
     <div style={{ position: "absolute", inset: 0, overflow: "hidden", clipPath: clip }}>

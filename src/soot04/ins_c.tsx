@@ -56,13 +56,13 @@ export const INS_C: Ins[] = [
     fondo: () => <Grad c1="#2a2440" c2="#120e22" />,
     d: (t) => (
       <>
-        <Chico x={760} y={1290} h={1100} t={t} expr={t < 605.7 ? "triste" : "miedo"} bD={20} bI={20} cD={70} cI={70} inclina={t > 605.7 && t < 606.1 ? -8 : 0} />
-        {t > 604.0 && (
+        <Chico x={760} y={1290} h={1100} t={t} expr={t < 605.7 ? "triste" : "miedo"} bD={20} bI={20} cD={70} cI={70} inclina={t >= 605.7 && t < 606.1 ? -8 : 0} />
+        {t >= 604.0 && (
           <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
             <g opacity={prog(t, 604.0, 604.2)}><circle cx={700} cy={760} r={34} fill="none" stroke="#8a8a9a" strokeWidth={16} /><circle cx={820} cy={760} r={34} fill="none" stroke="#8a8a9a" strokeWidth={16} />{Array.from({ length: 5 }, (_, k) => <ellipse key={k} cx={734 + k * 18} cy={770 + Math.sin(t * 4 + k) * 4} rx={12} ry={8} fill="none" stroke="#8a8a9a" strokeWidth={8} />)}</g>
           </svg>
         )}
-        {t > 605.7 && <Rot t={t} t0={605.7} t1={606.3} text="WHACK!" x={1040} y={330} size={80} color={C.naranja} tiembla />}
+        {t >= 605.7 && <Rot t={t} t0={605.7} t1={606.3} text="WHACK!" x={1040} y={330} size={80} color={C.naranja} tiembla />}
         <Chip t={t} t0={604.0} text="IN IRONS" color="#4a4e58" x={1460} y={300} centro size={66} />
         <Chip t={t} t0={604.8} text="STARVED" color={C.tierra} x={1460} y={420} centro size={66} />
         <Chip t={t} t0={605.7} text="BEATEN" color={C.rojo} x={1460} y={540} centro size={66} />
@@ -82,8 +82,8 @@ export const INS_C: Ins[] = [
           <Selva t={t} />
           <Chico x={corre} y={980} h={700} t={t} expr={entra > 0.5 ? "feliz" : "miedo"} camina={2.4} bD={70} bI={110} cD={40} cI={40} mira={1} />
           {entra > 0 && <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080, clipPath: `inset(0 0 0 ${2000 - entra * 900}px)` }}><svg width={1920} height={1080}>{Array.from({ length: 6 }, (_, k) => <ellipse key={k} cx={1100 + k * 160} cy={860 + (k % 2) * 60} rx={170} ry={130} fill={k % 2 ? "#2f8a4a" : "#3aa05a"} />)}</svg></div>}
-          {t > 615.2 && <Svg x={280} y={300} s={ent(t, 615.2)}><circle r={70} fill="#ff9a2a" /><path d="M 0 -70 q 10 -40 40 -40" stroke="#3a6a2a" strokeWidth={10} fill="none" /></Svg>}
-          {t > 615.2 && <Svg x={440} y={300} s={ent(t, 615.5)}><path d="M -40 -70 L 40 -70 L 50 70 L -50 70 Z" fill="#8ad0ff" stroke={C.noche} strokeWidth={6} /></Svg>}
+          {t >= 615.2 && <Svg x={280} y={300} s={ent(t, 615.2)}><circle r={70} fill="#ff9a2a" /><path d="M 0 -70 q 10 -40 40 -40" stroke="#3a6a2a" strokeWidth={10} fill="none" /></Svg>}
+          {t >= 615.2 && <Svg x={440} y={300} s={ent(t, 615.5)}><path d="M -40 -70 L 40 -70 L 50 70 L -50 70 Z" fill="#8ad0ff" stroke={C.noche} strokeWidth={6} /></Svg>}
           <Rot t={t} t0={612.0} text="THEY RAN AWAY" x={1100} y={170} size={120} color={C.crema} />
           <Chip t={t} t0={618.4} text="…AND NEVER CAME BACK" color={C.violeta} x={1100} y={320} centro size={58} />
         </>
@@ -120,9 +120,9 @@ export const INS_C: Ins[] = [
       return (
         <>
           <Selva t={t} y={820} />
-          <Melville x={x} y={1240} h={escondido ? 880 : 940} t={t} expr={t > 636.4 ? "miedo" : escondido ? "neutro" : "feliz"} camina={t > 630.8 && t < 634 ? 2.6 : 0} mira={t > 636.4 ? -1 : 1} bD={escondido ? 150 : 80} cD={escondido ? 30 : 50} />
+          <Melville x={x} y={1240} h={escondido ? 880 : 940} t={t} expr={t > 636.4 ? "miedo" : escondido ? "neutro" : "feliz"} camina={t >= 630.8 && t < 634 ? 2.6 : 0} mira={t > 636.4 ? -1 : 1} bD={escondido ? 150 : 80} cD={escondido ? 30 : 50} />
           {escondido && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>{Array.from({ length: 5 }, (_, k) => <ellipse key={k} cx={980 + k * 110} cy={1000 + (k % 2) * 30} rx={140} ry={110} fill={k % 2 ? "#2f8a4a" : "#3aa05a"} />)}</svg>}
-          {t > 635.8 && [[300, 820], [520, 880], [1600, 840]].map(([ex, ey], k) => <svg key={k} style={{ position: "absolute", left: ex, top: ey, overflow: "visible" }} width={1} height={1}><g transform={`scale(${ent(t, 635.8 + k * 0.2)})`}><ellipse cx={0} cy={0} rx={150} ry={100} fill="#246a38" /><circle cx={-30} cy={0} r={16} fill="#fff" /><circle cx={30} cy={0} r={16} fill="#fff" /><circle cx={-26 + Math.sin(t * 2) * 6} cy={2} r={8} fill={C.noche} /><circle cx={34 + Math.sin(t * 2) * 6} cy={2} r={8} fill={C.noche} /></g></svg>)}
+          {t >= 635.8 && [[300, 820], [520, 880], [1600, 840]].map(([ex, ey], k) => <svg key={k} style={{ position: "absolute", left: ex, top: ey, overflow: "visible" }} width={1} height={1}><g transform={`scale(${ent(t, 635.8 + k * 0.2)})`}><ellipse cx={0} cy={0} rx={150} ry={100} fill="#246a38" /><circle cx={-30} cy={0} r={16} fill="#fff" /><circle cx={30} cy={0} r={16} fill="#fff" /><circle cx={-26 + Math.sin(t * 2) * 6} cy={2} r={8} fill={C.noche} /><circle cx={34 + Math.sin(t * 2) * 6} cy={2} r={8} fill={C.noche} /></g></svg>)}
           <Rot t={t} t0={627.3} text="1842" x={420} y={180} size={150} color={C.crema} />
           <Chip t={t} t0={629.0} text="A YOUNG SAILOR" color={C.violeta} x={420} y={310} centro size={54} />
           <Chip t={t} t0={632.6} text="MARQUESAS ISLANDS" color={C.teal} tinta={C.noche} x={1350} y={170} centro size={58} />
@@ -163,7 +163,7 @@ export const INS_C: Ins[] = [
         <div style={{ position: "absolute", left: 0, right: 0, top: 820, bottom: 0, background: "#8a8070" }} />
         <Melville x={interpolate(t, [643.3, 645.6], [-200, 520], { extrapolateRight: "clamp" })} y={1200} h={820} t={t} expr={t > 651.4 ? "sorpresa" : "feliz"} camina={t < 645.6 ? 2.2 : 0} bD={t > 651.4 ? 100 : 20} cD={t > 651.4 ? 10 : 20} mira={1} />
         <Pollard x={1180} y={1200} h={820} t={t} viejo expr={t < 650.6 ? "triste" : "neutro"} flip mira={-1} />
-        {t > 649.2 && [1500, 1640, 1780].map((x, k) => <Persona key={k} x={x} y={1200} h={560} t={t} seed={300 + k} ropa={CUAQUERO} casco="cuaquero" pantalon="#3a3a3a" expr="neutro" flip={t < 650.4} camina={t > 650.4 ? 2 : 0} />)}
+        {t >= 649.2 && [1500, 1640, 1780].map((x, k) => <Persona key={k} x={x} y={1200} h={560} t={t} seed={300 + k} ropa={CUAQUERO} casco="cuaquero" pantalon="#3a3a3a" expr="neutro" flip={t < 650.4} camina={t > 650.4 ? 2 : 0} />)}
         <Chip t={t} t0={645.4} text="NANTUCKET" color={C.violeta} x={960} y={130} centro size={60} />
         <Chip t={t} t0={646.7} text="THE MAN WHO LIVED THROUGH IT" color={C.noche} x={1180} y={230} centro size={46} />
         <Sello t={t} t0={650.6} text="ISLANDERS: NOBODY" x={1560} y={340} size={62} rot={6} />
@@ -181,11 +181,11 @@ export const INS_C: Ins[] = [
         <Rot t={t} t0={662.9} t1={668.0} text="AUGUST 1819" x={960} y={170} size={130} color={C.crema} />
         {t < 668.3 && <Marino i={2} x={1660} y={1290} h={860} t={t} expr="feliz" mira={-1} bD={140} cD={30} salta={665.0} />}
         {t < 668.3 && <Monto t={t} ks={[[667.2, 0], [667.5, 21]]} x={960} y={960} size={110} pre="" suf=" MEN" color={C.oro} />}
-        {t > 668.3 && (
+        {t >= 668.3 && (
           <>
             <Pollard x={420} y={1290} h={920} t={t} expr={t < 671.6 ? "orgullo" : "neutro"} habla={t < 671.6} salta={668.4} bD={t < 671.6 ? 100 + Math.sin(t * 4) * 25 : 40} cD={t < 671.6 ? 10 : 20} bI={60} cI={110} />
             <Persona x={960} y={1290} h={900} t={t} seed={44} ropa={MARINO(2)} casco="no" barba="#7a5a2a" pantalon="#2a3a5a" expr="neutro" salta={671.8} opacity={t > 671.6 ? 1 : 0} />
-            {t > 674.8 && [1380, 1600].map((x, k) => <Persona key={k} x={x} y={1290} h={640} t={t} seed={70 + k} ropa={MARINO(k + 1)} casco={k ? "gorro" : "no"} pantalon="#3a3a4a" expr="sorpresa" salta={674.9 + k * 0.15} />)}
+            {t >= 674.8 && [1380, 1600].map((x, k) => <Persona key={k} x={x} y={1290} h={640} t={t} seed={70 + k} ropa={MARINO(k + 1)} casco={k ? "gorro" : "no"} pantalon="#3a3a4a" expr="sorpresa" salta={674.9 + k * 0.15} />)}
             <Chip t={t} t0={668.6} text="CAPT. GEORGE POLLARD" color={C.noche} x={420} y={180} centro size={44} />
             <Monto t={t} ks={[[670.2, 28]]} x={420} y={310} size={110} pre="" color={C.oro} suf=" YRS" />
             <Chip t={t} t0={672.0} text="1ST MATE OWEN CHASE" color={C.noche} x={1000} y={180} centro size={44} />
@@ -212,7 +212,7 @@ export const INS_C: Ins[] = [
               <div style={{ fontSize: 50 }}>{t < 677.8 ? "MONTHS" : "NOVEMBER"}</div>
             </div>
           )}
-          {t > 680.0 && (
+          {t >= 680.0 && (
             <>
               <Ballenero x={interpolate(lejos, [0, 1], [960, 1500])} y={520} t={t} escala={0.4 - lejos * 0.25} />
               <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><line x1={1500} y1={900} x2={1500 - 1300 * lejos} y2={900} stroke={C.oro} strokeWidth={12} /><line x1={1500} y1={870} x2={1500} y2={930} stroke={C.oro} strokeWidth={12} /></svg>
@@ -232,7 +232,7 @@ export const INS_C: Ins[] = [
     d: (t) => (
       <>
         <Cachalote x={1300} y={620} t={t} s={1.15} nada={0} />
-        {t > 694.4 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><circle cx={1580} cy={590} r={60 * ent(t, 694.5)} fill="none" stroke={C.rojo} strokeWidth={10} /></svg>}
+        {t >= 694.4 && <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><circle cx={1580} cy={590} r={60 * ent(t, 694.5)} fill="none" stroke={C.rojo} strokeWidth={10} /></svg>}
         <Persona x={360} y={1290} h={1050} t={t} seed={44} ropa={MARINO(2)} casco="no" barba="#7a5a2a" pantalon="#2a3a5a" expr={t < 687.7 ? "neutro" : "sorpresa"} mira={1} bD={t > 687.7 ? 100 : 20} cD={t > 687.7 ? 10 : 20} />
         <Chip t={t} t0={685.4} text="OWEN CHASE" color={C.noche} x={360} y={160} centro size={52} />
         <Chip t={t} t0={686.6} text="NEVER SEEN BEFORE" color={C.violeta} x={1300} y={160} centro size={54} />
@@ -292,7 +292,7 @@ export const INS_C: Ins[] = [
           <Ballenero x={1150} y={600} t={t} escala={0.6} nombre="ESSEX" roto={t > 710.0 ? 0.15 + hunde * 0.6 : 0} />
           <Cachalote x={wx} y={660} t={t} s={0.8} nada={1} enojo />
           <Persona x={1760} y={1300} h={1000} t={t} seed={44} ropa={MARINO(2)} casco="no" barba="#7a5a2a" pantalon="#2a3a5a" flip mira={-1} expr={t < 709.8 ? "sorpresa" : "miedo"} salta={710.05} bD={t > 709.8 ? 162 : 100} cD={t > 709.8 ? 12 : 10} bI={t > 709.8 ? 162 : 20} cI={t > 709.8 ? 12 : 20} inclina={t > 713.7 ? Math.sin(t * 3) * 6 : 0} />
-          {t > 710.0 && <Splash x={640} y={600} t={t} t0={710.0} s={2.6} />}
+          {t >= 710.0 && <Splash x={640} y={600} t={t} t0={710.0} s={2.6} />}
           <Chip t={t} t0={708.0} t1={711.4} text="IT COMES BACK" color={C.violeta} x={960} y={150} centro size={60} />
           <Rot t={t} t0={710.7} t1={713.5} text="2ND HIT · THE BOW" x={960} y={170} size={100} color={C.oro} tiembla />
           <Rot t={t} t0={714.1} t1={715.3} text="SINKING" x={960} y={170} size={120} color={C.crema} />
@@ -314,8 +314,8 @@ export const INS_C: Ins[] = [
         <Chip t={t} t0={720.3} text="3 SMALL BOATS" color={C.violeta} x={1160} y={300} centro size={56} />
         <Chip t={t} t0={722.5} text="LARGEST OCEAN ON EARTH" color={C.noche} x={1160} y={400} centro size={50} />
         <Galleta x={800} y={850} s={1.1 * ent(t, 724.3)} rot={8} />
-        {t > 725.3 && <Svg x={1160} y={850} s={1.2 * ent(t, 725.3)}><Barril0 /></Svg>}
-        {t > 726.3 && [0, 1].map((k) => <Svg key={k} x={1480 + k * 170} y={860} s={ent(t, 726.4 + k * 0.15)}><ellipse rx={70} ry={46} fill="#5a7a3a" stroke="#2a3a1a" strokeWidth={6} /><path d="M -50 -10 L 50 -10 M -30 -36 L -30 36 M 30 -36 L 30 36" stroke="#2a3a1a" strokeWidth={5} /><circle cx={84} cy={-6} r={20} fill="#7a9a5a" /></Svg>)}
+        {t >= 725.3 && <Svg x={1160} y={850} s={1.2 * ent(t, 725.3)}><Barril0 /></Svg>}
+        {t >= 726.3 && [0, 1].map((k) => <Svg key={k} x={1480 + k * 170} y={860} s={ent(t, 726.4 + k * 0.15)}><ellipse rx={70} ry={46} fill="#5a7a3a" stroke="#2a3a1a" strokeWidth={6} /><path d="M -50 -10 L 50 -10 M -30 -36 L -30 36 M 30 -36 L 30 36" stroke="#2a3a1a" strokeWidth={5} /><circle cx={84} cy={-6} r={20} fill="#7a9a5a" /></Svg>)}
         <Chip t={t} t0={724.3} text="HARDTACK" color={C.tierra} x={800} y={960} centro size={44} />
         <Chip t={t} t0={725.4} text="WATER" color={C.teal} tinta={C.noche} x={1160} y={960} centro size={44} />
         <Chip t={t} t0={726.4} text="TURTLES" color="#4a6a2a" x={1560} y={960} centro size={44} />
@@ -337,20 +337,20 @@ export const INS_C: Ins[] = [
             {Array.from({ length: 12 }, (_, k) => <line key={k} x1={0} y1={90 * k} x2={1920} y2={90 * k} stroke="rgba(255,255,255,.07)" strokeWidth={2} />)}
             <path d="M 1700 0 L 1920 0 L 1920 1080 L 1760 1080 Q 1680 820 1740 640 Q 1640 420 1700 0 Z" fill="#c9a06a" stroke="#7a5a2a" strokeWidth={8} />
             <text x={1800} y={540} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={40} fill="#5a3418" transform="rotate(-90 1800 540)">SOUTH AMERICA</text>
-            {t > 729.8 && <g opacity={prog(t, 729.8, 730.2)}><circle cx={240} cy={300} r={26} fill="#3aa05a" stroke="#fff" strokeWidth={6} /><circle cx={280} cy={330} r={16} fill="#3aa05a" /><line x1={760} y1={380} x2={760 - 520 * prog(t, 730.8, 731.6)} y2={380 - 80 * prog(t, 730.8, 731.6)} stroke="#fff" strokeWidth={8} strokeDasharray="20 16" /></g>}
+            {t >= 729.8 && <g opacity={prog(t, 729.8, 730.2)}><circle cx={240} cy={300} r={26} fill="#3aa05a" stroke="#fff" strokeWidth={6} /><circle cx={280} cy={330} r={16} fill="#3aa05a" /><line x1={760} y1={380} x2={760 - 520 * prog(t, 730.8, 731.6)} y2={380 - 80 * prog(t, 730.8, 731.6)} stroke="#fff" strokeWidth={8} strokeDasharray="20 16" /></g>}
             <path d="M 760 380 L 800 800 L 1620 660" stroke={C.oro} strokeWidth={12} fill="none" strokeDasharray={1260} strokeDashoffset={1260 * (1 - ruta)} strokeLinecap="round" />
             <g transform={`translate(760 380) scale(${ent(t, 728.4)})`}><path d="M -26 -26 L 26 26 M 26 -26 L -26 26" stroke={C.rojo} strokeWidth={12} strokeLinecap="round" /></g>
           </svg>
-          {t > 738.8 && <Bote x={bx} y={by} t={t} s={0.22} rema={1} gente={<>{[-150, -80, -10, 60, 130].map((ox, j) => <circle key={j} cx={ox} cy={-70} r={22} fill="#f2b48a" />)}</>} />}
+          {t >= 738.8 && <Bote x={bx} y={by} t={t} s={0.22} rema={1} gente={<>{[-150, -80, -10, 60, 130].map((ox, j) => <circle key={j} cx={ox} cy={-70} r={22} fill="#f2b48a" />)}</>} />}
           <Chip t={t} t0={728.4} text="ESSEX SANK HERE" color={C.rojo} x={760} y={300} centro size={40} />
           <Chip t={t} t0={729.9} text="MARQUESAS" color="#2f8a4a" x={260} y={210} centro size={46} />
           <Chip t={t} t0={731.0} text="2,000 KM" color={C.noche} x={500} y={440} centro size={46} />
-          {t > 733.6 && t < 738.6 && <Svg x={260} y={520} s={0.9 * ent(t, 733.7)}><circle r={110} fill="#fff" stroke={C.noche} strokeWidth={10} /><Icono k={7} /></Svg>}
+          {t >= 733.6 && t < 738.6 && <Svg x={260} y={520} s={0.9 * ent(t, 733.7)}><circle r={110} fill="#fff" stroke={C.noche} strokeWidth={10} /><Icono k={7} /></Svg>}
           <Chip t={t} t0={735.6} t1={738.6} text="'THEY EAT VISITORS'" color={C.rojo} x={260} y={680} centro size={44} />
           <Chip t={t} t0={737.9} text="THE OTHER WAY →" color={C.oro} tinta={C.noche} x={1250} y={200} centro size={58} />
           <Pollard x={1480} y={1290} h={820} t={t} expr={t > 747 ? "triste" : "enojado"} flip bD={100} cD={10} />
           <Monto t={t} ks={[[744.0, 0], [744.6, 4000]]} x={1000} y={960} size={90} pre="" suf="+ KM" color={C.crema} />
-          {t > 738.8 && <div style={{ position: "absolute", left: 60, top: 900, fontFamily, fontWeight: 700, fontSize: 70, color: C.crema, WebkitTextStroke: `6px ${C.noche}`, paintOrder: "stroke fill" }}>DAY {dias}</div>}
+          {t >= 738.8 && <div style={{ position: "absolute", left: 60, top: 900, fontFamily, fontWeight: 700, fontSize: 70, color: C.crema, WebkitTextStroke: `6px ${C.noche}`, paintOrder: "stroke fill" }}>DAY {dias}</div>}
           <Rot t={t} t0={747.1} text="THE WHOLE TRAGEDY" x={960} y={160} size={110} color={C.rojo} />
         </>
       );
@@ -364,7 +364,7 @@ export const INS_C: Ins[] = [
       <>
         <Isla x={960} y={760} t={t} s={1.2} seed={4} />
         {[0, 1, 2, 3, 4].map((k) => <Marino key={k} i={k} x={560 + k * 200} y={900} h={420} t={t} expr={t > 752 ? "feliz" : "triste"} bD={110 + Math.sin(t * 9 + k) * 30} cD={130} />)}
-        {t > 751.7 && t < 753 && Array.from({ length: 6 }, (_, k) => <Vuela key={k} t={t} t0={751.8 + k * 0.1} t1={752.4 + k * 0.1} x0={700 + k * 110} y0={420} x1={600 + k * 160} y1={760} arco={60} giro={200}><circle r={22} fill="#7a4a1a" /></Vuela>)}
+        {t >= 751.7 && t < 753 && Array.from({ length: 6 }, (_, k) => <Vuela key={k} t={t} t0={751.8 + k * 0.1} t1={752.4 + k * 0.1} x0={700 + k * 110} y0={420} x1={600 + k * 160} y1={760} arco={60} giro={200}><circle r={22} fill="#7a4a1a" /></Vuela>)}
         <Chip t={t} t0={749.6} text="A TINY ISLAND" color="#2f8a4a" x={960} y={160} centro size={60} />
         <Rot t={t} t0={751.9} t1={753.1} text="ATE EVERYTHING" x={960} y={300} size={100} color={C.crema} />
         <Sello t={t} t0={753.3} text="3 STAY BEHIND" x={960} y={300} size={80} rot={-4} />
@@ -424,7 +424,7 @@ export const INS_C: Ins[] = [
           {t < 780.4 && <Marino i={3} x={1660} y={1250} h={760} t={t} expr={t > 777.6 ? "sorpresa" : "miedo"} flip bD={t > 777.6 ? 140 : 30} cD={t > 777.6 ? 20 : 60} />}
           {t < 780.4 && <Rot t={t} t0={775.4} text="THEY DREW LOTS" x={960} y={170} size={110} color={C.crema} />}
           {t < 780.4 && <Chip t={t} t0={776.8} text="SHORT STRAW = DIES" color={C.rojo} x={960} y={300} centro size={58} />}
-          {t > 780.4 && (
+          {t >= 780.4 && (
             <>
               <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at 960px 560px, rgba(255,240,200,${0.5 * foco}) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,${0.6 * foco}) 60%)` }} />
               <Persona x={960} y={1260} h={960} t={t} seed={90} ropa={MARINO(4)} casco="no" pantalon="#2a3a5a" expr="miedo" bD={20} bI={20} cD={60} cI={60} />
@@ -442,10 +442,10 @@ export const INS_C: Ins[] = [
     fondo: (t) => <Grad c1="#3a3050" c2="#1a1430" />,
     d: (t) => (
       <>
-        <Pollard x={500} y={1270} h={950} t={t} expr={t > 787.4 ? "triste" : "neutro"} bD={t > 787.4 ? 120 : 30} cD={t > 787.4 ? 40 : 20} habla={t > 787.4 && t < 788.6} />
-        <Persona x={1420} y={1270} h={900} t={t} seed={90} ropa={MARINO(4)} casco="no" pantalon="#2a3a5a" expr={t > 789.3 ? "enojado" : "miedo"} flip habla={t > 789.3 && t < 789.8} bD={t > 789.3 ? 90 : 20} cD={t > 789.3 ? 10 : 30} />
+        <Pollard x={500} y={1270} h={950} t={t} expr={t > 787.4 ? "triste" : "neutro"} bD={t > 787.4 ? 120 : 30} cD={t > 787.4 ? 40 : 20} habla={t >= 787.4 && t < 788.6} />
+        <Persona x={1420} y={1270} h={900} t={t} seed={90} ropa={MARINO(4)} casco="no" pantalon="#2a3a5a" expr={t > 789.3 ? "enojado" : "miedo"} flip habla={t >= 789.3 && t < 789.8} bD={t > 789.3 ? 90 : 20} cD={t > 789.3 ? 10 : 30} />
         <Chip t={t} t0={783.1} text="THE CAPTAIN'S COUSIN" color={C.violeta} x={960} y={130} centro size={56} />
-        {t > 785.0 && t < 787.3 && <Svg x={960} y={420} s={ent(t, 785.0)}><path d="M 0 60 C -120 -20 -80 -110 0 -60 C 80 -110 120 -20 0 60 Z" fill={C.rojo} stroke={C.noche} strokeWidth={6} /></Svg>}
+        {t >= 785.0 && t < 787.3 && <Svg x={960} y={420} s={ent(t, 785.0)}><path d="M 0 60 C -120 -20 -80 -110 0 -60 C 80 -110 120 -20 0 60 Z" fill={C.rojo} stroke={C.noche} strokeWidth={6} /></Svg>}
         <Chip t={t} t0={785.0} t1={787.3} text="PROMISED HIS MOTHER" color={C.rojo} x={960} y={560} centro size={50} />
         <Dice t={t} t0={787.6} text="TAKE ME INSTEAD." x={700} y={400} size={56} cola="izq" />
         <Dice t={t} t0={789.4} text="NO." x={1300} y={520} size={90} cola="der" />
@@ -462,7 +462,7 @@ export const INS_C: Ins[] = [
         <Marino i={4} x={1640} y={1290} h={860} t={t} expr="triste" flip bD={20} cD={40} inclina={-6} />
         <Pistola x={960} y={560} s={2.4 * ent(t, 791.0)} rot={-6} humo={t > 792.55 ? 1 - prog(t, 792.8, 794) * 0.6 : 0} />
         <Chip t={t} t0={790.7} text="CHOSEN BY LOT" color={C.violeta} x={960} y={180} centro size={60} />
-        {t > 792.6 && <div style={{ position: "absolute", inset: 0, background: `rgba(0,0,0,${0.5 * prog(t, 792.65, 793.1)})` }} />}
+        {t >= 792.6 && <div style={{ position: "absolute", inset: 0, background: `rgba(0,0,0,${0.5 * prog(t, 792.65, 793.1)})` }} />}
       </>
     ),
   },
@@ -481,9 +481,13 @@ export const INS_C: Ins[] = [
             <Chip t={t} t0={797.5} text="PICKED UP · SOUTH AMERICA" color={C.violeta} x={1150} y={330} centro size={52} />
           </>
         )}
-        {t > 799.8 && <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,#2a2440,#141024)" }} />}
-        {t > 799.8 && <Veinte t={t} t0={799.5} vivos={8} tMuere={801.6} y={640} dos />}
-        {t > 799.8 && <Chip t={t} t0={800.0} text="20 MEN" color={C.noche} x={960} y={120} centro size={66} />}
+        {t >= 799.8 && <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg,#2a2440,#141024)" }} />}
+        {t >= 799.8 && [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19].map((k) => {
+          // vuelta 5: la tripulación REAL (no muñequitos), los que mueren caen y se apagan
+          const vive = [1, 3, 6, 8, 11, 14, 16, 18].includes(k), ap = vive ? 0 : prog(t, 801.6 + (k % 7) * 0.08, 802.0 + (k % 7) * 0.08);
+          return <Marino key={k} i={k % 6} x={960 + ((k % 10) - 4.5) * 178} y={(k < 10 ? 560 : 880) + ap * 40} h={330} t={t} expr={ap > 0.3 ? "dormido" : vive && t > 802.3 ? "triste" : "miedo"} inclina={ap * 70 * (k % 2 ? 1 : -1)} opacity={1 - ap * 0.7} />;
+        })}
+        {t >= 799.8 && <Monto t={t} t0={799.8} ks={[[799.8, 20], [801.7, 8]]} x={960} y={120} size={110} pre="" suf=" ALIVE" color={C.crema} />}
         <Rot t={t} t0={802.3} text="8 SURVIVED" x={960} y={t > 799.8 ? 1000 : 380} size={120} color={C.lima} />
       </>
     ),
@@ -496,8 +500,8 @@ export const INS_C: Ins[] = [
       <>
         <Chico x={420} y={1290} h={1050} t={t} expr={t < 807 ? "triste" : "sorpresa"} bD={t > 807 ? 150 : 40} cD={t > 807 ? 20 : 120} bI={40} cI={120} salta={807.0} />
         {t < 806.9 && <Rot t={t} t0={803.6} text="A DEATH TRAP?" x={1250} y={300} size={130} color={C.crema} />}
-        {t > 806.9 && <Rot t={t} t0={807.0} text="THE TWIST" x={1250} y={170} size={120} color={C.oro} tiembla />}
-        {t > 808.2 && (
+        {t >= 806.9 && <Rot t={t} t0={807.0} text="THE TWIST" x={1250} y={170} size={120} color={C.oro} tiembla />}
+        {t >= 808.2 && (
           <>
             <Svg x={1250} y={620} s={0.5 * ent(t, 808.2)}><Cachalote x={0} y={0} t={t} s={1} /></Svg>
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}><line x1={950} y1={440} x2={950 + 600 * prog(t, 808.6, 808.9)} y2={440 + 360 * prog(t, 808.6, 808.9)} stroke={C.noche} strokeWidth={26} strokeLinecap="round" /></svg>
@@ -533,8 +537,8 @@ export const INS_C: Ins[] = [
       <>
         <Ballenero x={1450} y={830} t={t} escala={0.5} />
         <div style={{ position: "absolute", left: -40, top: 820, width: 1000, height: 300, background: "#7a4a26", borderTop: "14px solid #9a6a3a" }} />
-        {[0, 1, 2].map((k) => <Marino key={k} i={k + 1} x={interpolate(t, [816.8, 820.5], [100 + k * 180, 700 + k * 180], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={1000} h={560} t={t} expr="triste" camina={t > 816.8 && t < 820.5 ? 2 : 0} />)}
-        {t > 821.4 && <Persona x={960} y={1290} h={980} t={t} seed={44} ropa={CAPITAN} casco="capitan" barba="#7a5a2a" pantalon="#141a30" expr="orgullo" salta={821.5} bD={40} />}
+        {[0, 1, 2].map((k) => <Marino key={k} i={k + 1} x={interpolate(t, [816.8, 820.5], [100 + k * 180, 700 + k * 180], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={1000} h={560} t={t} expr="triste" camina={t >= 816.8 && t < 820.5 ? 2 : 0} />)}
+        {t >= 821.4 && <Persona x={960} y={1290} h={980} t={t} seed={44} ropa={CAPITAN} casco="capitan" barba="#7a5a2a" pantalon="#141a30" expr="orgullo" salta={821.5} bD={40} />}
         <Chip t={t} t0={816.8} t1={821.3} text="MOST WENT BACK TO SEA" color={C.violeta} x={960} y={140} centro size={58} />
         <Rot t={t} t0={819.4} t1={821.3} text="THEY HAD TO EAT" x={960} y={300} size={100} color={C.crema} />
         <Chip t={t} t0={821.5} text="CHASE → CAPTAIN" color={C.noche} x={960} y={150} centro size={60} />
@@ -577,7 +581,7 @@ export const INS_C: Ins[] = [
             <Chip t={t} t0={835.4} text="THE TOWN WHALE OIL BUILT" color={C.noche} x={960} y={250} centro size={48} />
           </>
         )}
-        {t > 837.6 && (
+        {t >= 837.6 && (
           <>
             <div style={{ position: "absolute", inset: 0, background: "#3a2a2a" }} />
             <div style={{ position: "absolute", left: 1300, top: 220, width: 360, height: 420, background: "#fff", border: `10px solid ${C.noche}`, borderRadius: 20, fontFamily, fontWeight: 700, textAlign: "center", transform: `scale(${ent(t, 837.8)})` }}>
@@ -607,8 +611,8 @@ export const INS_C: Ins[] = [
               <line x1={560} y1={520} x2={560} y2={640} stroke={C.noche} strokeWidth={6} /><line x1={1360} y1={520} x2={1360} y2={640} stroke={C.noche} strokeWidth={6} />
               <path d="M 440 640 L 680 640 L 640 690 L 480 690 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />
               <path d="M 1240 640 L 1480 640 L 1440 690 L 1280 690 Z" fill="#8a8a9a" stroke={C.noche} strokeWidth={6} />
-              {t > 849.0 && <g transform={`translate(560 560) scale(${0.22 * ent(t, 849.0)})`}><Cachalote x={0} y={0} t={t} s={1} /></g>}
-              {t > 850.5 && <g transform={`translate(1360 600) scale(${ent(t, 850.5)})`}><path d="M -70 40 Q -80 -30 -20 -50 Q 50 -60 70 0 Q 70 40 -70 40 Z" fill="#6a6470" stroke={C.noche} strokeWidth={6} /></g>}
+              {t >= 849.0 && <g transform={`translate(560 560) scale(${0.22 * ent(t, 849.0)})`}><Cachalote x={0} y={0} t={t} s={1} /></g>}
+              {t >= 850.5 && <g transform={`translate(1360 600) scale(${ent(t, 850.5)})`}><path d="M -70 40 Q -80 -30 -20 -50 Q 50 -60 70 0 Q 70 40 -70 40 Z" fill="#6a6470" stroke={C.noche} strokeWidth={6} /></g>}
             </g>
           </svg>
           <Chico x={1680} y={1290} h={880} t={t} expr={t > 850.5 ? "sorpresa" : "neutro"} mira={-1} bD={t > 848 ? 150 : 40} cD={t > 848 ? 20 : 110} salta={850.6} />
@@ -658,10 +662,10 @@ export const INS_C: Ins[] = [
             <Rot t={t} t0={863.8} text="ROTTING IN THE HARBORS" x={960} y={170} size={96} color={C.crema} />
           </>
         )}
-        {t > 868.4 && (
+        {t >= 868.4 && (
           <>
             <div style={{ position: "absolute", left: 0, right: 0, top: 760, bottom: 0, background: "#6a8a3a" }} />
-            <Svg x={560} y={480} s={0.5 * ent(t, 868.5)}><Cachalote x={0} y={0} t={t} s={1} /></Svg>
+            <Svg x={560} y={480} s={0.5 * ent(t, 868.2)}><Cachalote x={0} y={0} t={t} s={1} /></Svg>
             <svg style={{ position: "absolute", left: 0, top: 0 }} width={1920} height={1080}>
               <line x1={300} y1={300} x2={300 + 520 * prog(t, 869.4, 869.7)} y2={300 + 360 * prog(t, 869.4, 869.7)} stroke={C.rojo} strokeWidth={26} strokeLinecap="round" />
               <ellipse cx={1400} cy={790} rx={260 * ent(t, 870.6)} ry={60 * ent(t, 870.6)} fill="#141010" />
@@ -685,13 +689,13 @@ export const INS_C: Ins[] = [
         <CasaNan x={1820} y={520} s={0.9} rica luz />
         <div style={{ position: "absolute", left: 0, right: 0, top: 520, bottom: 0, background: "#8a7a6a" }} />
         <div style={{ position: "absolute", left: -40, top: 640, width: 900, height: 40, background: "#9a6a3a", border: "6px solid #5a3418", transform: "rotate(10deg)", transformOrigin: "0 50%" }} />
-        <Chico x={interpolate(t, [873.9, 876.2], [140, 620], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [873.9, 876.2], [1040, 1180], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} h={interpolate(t, [876.6, 877.4], [860, 940], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} t={t} expr={t > 886.4 ? "enojado" : t > 883 ? "sorpresa" : "triste"} camina={t > 873.9 && t < 876.2 ? 2 : 0} mira={t > 883 ? 1 : 0} bD={t > 886.4 ? 150 : 20} cD={t > 886.4 ? 20 : 30} />
-        {t > 878.1 && <div style={{ position: "absolute", left: 560, top: 420, width: 140, height: 50, borderRadius: "50%", background: "rgba(232,52,74,.35)", transform: `scale(${ent(t, 878.1)})` }} />}
-        {t > 880.0 && <Humo x={620} y={460} t={t} s={0.8} n={8} col="#5a5050" op={0.5} />}
+        <Chico x={interpolate(t, [873.9, 876.2], [140, 620], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [873.9, 876.2], [1040, 1180], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} h={interpolate(t, [876.6, 877.4], [860, 940], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} t={t} expr={t > 886.4 ? "enojado" : t > 883 ? "sorpresa" : "triste"} camina={t >= 873.9 && t < 876.2 ? 2 : 0} mira={t > 883 ? 1 : 0} bD={t > 886.4 ? 150 : 20} cD={t > 886.4 ? 20 : 30} />
+        {t >= 878.1 && <div style={{ position: "absolute", left: 560, top: 420, width: 140, height: 50, borderRadius: "50%", background: "rgba(232,52,74,.35)", transform: `scale(${ent(t, 878.1)})` }} />}
+        {t >= 880.0 && <Humo x={620} y={460} t={t} s={0.8} n={8} col="#5a5050" op={0.5} />}
         <Chip t={t} t0={872.8} text="THE GREENHAND RETURNS" color={C.violeta} x={480} y={200} centro size={52} />
         {[["4 YEARS OLDER", 877.0], ["SUNBURNED", 878.1], ["MISSING A TOOTH", 879.0], ["SMELLS OF SMOKE", 880.0]].map(([w, t0], k) => <Chip key={k} t={t} t0={t0 as number} t1={883.0} text={w as string} color={[C.noche, C.rojo, "#4a4e58", "#3a3034"][k]} x={1300} y={300 + k * 100} centro size={50} />)}
         <Monto t={t} ks={[[881.2, 0], [881.8, -9]]} x={1300} y={760} size={150} color={C.rojo} t0={881.2} />
-        {t > 884.0 && <Persona x={1560} y={1290} h={900} t={t} seed={210} ropa={CUAQUERO} casco="cuaquero" pantalon="#3a3a3a" expr="feliz" bD={110} cD={60} manoD={<g>{[0, 1, 2].map((k) => <circle key={k} cx={k * 14} cy={-k * 10} r={22} fill={C.oro} stroke="#8a5a10" strokeWidth={4} />)}</g>} flip />}
+        {t >= 884.0 && <Persona x={1560} y={1290} h={900} t={t} seed={210} ropa={CUAQUERO} casco="cuaquero" pantalon="#3a3a3a" expr="feliz" bD={110} cD={60} manoD={<g>{[0, 1, 2].map((k) => <circle key={k} cx={k * 14} cy={-k * 10} r={22} fill={C.oro} stroke="#8a5a10" strokeWidth={4} />)}</g>} flip />}
         <Rot t={t} t0={886.5} text="WHO WAS REALLY HUNTING?" x={960} y={960} size={86} color={C.crema} />
       </>
     ),
@@ -705,20 +709,20 @@ export const INS_C: Ins[] = [
       return (
         <>
           <Chico x={420} y={1290} h={1060} t={t} expr={t > 896.5 ? "sorpresa" : "feliz"} habla bD={130} cD={10} mira={1} salta={891.7} />
-          {t < 891.6 && (
+          {t < 891.35 && (
             <>
               <Ballenero x={1250} y={760} t={t} escala={0.5} />
               <Monto t={t} ks={[[889.3, 4]]} x={1250} y={180} size={110} pre="" suf=" YEARS ON A WHALER" color={C.crema} />
             </>
           )}
-          {t > 891.5 && t < 896.3 && (
+          {t >= 891.35 && t < 896.3 && (
             <>
-              <div style={{ position: "absolute", left: 1150, top: 430, transform: `translate(-50%,-50%) scale(${ent(t, 891.6) * (t > 892.3 && t < 892.6 ? 0.92 : 1)})`, background: sub ? "#6a6470" : "#e8202a", color: "#fff", fontFamily, fontWeight: 700, fontSize: 84, padding: "26px 60px", borderRadius: 20, border: `8px solid ${C.noche}`, whiteSpace: "nowrap" }}>{sub ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>
+              <div style={{ position: "absolute", left: 1150, top: 430, transform: `translate(-50%,-50%) scale(${ent(t, 891.35) * (t >= 892.3 && t < 892.6 ? 0.92 : 1)})`, background: sub ? "#6a6470" : "#e8202a", color: "#fff", fontFamily, fontWeight: 700, fontSize: 84, padding: "26px 60px", borderRadius: 20, border: `8px solid ${C.noche}`, whiteSpace: "nowrap" }}>{sub ? "SUBSCRIBED ✓" : "SUBSCRIBE"}</div>
               <Svg x={1600} y={430} s={ent(t, 892.6)} rot={t > 892.6 ? Math.sin(t * 18) * 18 * Math.max(0, 1 - (t - 892.6) / 1.5) : 0}><path d="M -60 40 Q -60 -70 0 -76 Q 60 -70 60 40 L 76 60 L -76 60 Z" fill={C.oro} stroke={C.noche} strokeWidth={8} /><circle cy={74} r={16} fill={C.oro} stroke={C.noche} strokeWidth={6} /></Svg>
               <Chip t={t} t0={893.5} text="NEXT TIME: A MEDIEVAL PRISON" color={C.noche} x={1250} y={720} centro size={56} />
             </>
           )}
-          {t > 896.3 && (
+          {t >= 896.3 && (
             <>
               <Rot t={t} t0={896.4} text="WHICH TRAP GOT YOU?" x={1220} y={200} size={100} color={C.crema} />
               {Array.from({ length: 7 }, (_, k) => <Svg key={k} x={860 + (k % 4) * 230 + (k > 3 ? 115 : 0)} y={480 + Math.floor(k / 4) * 260} s={0.95 * ent(t, 898.6 + k * 0.08) * (Math.floor(t * 2) % 7 === k ? 1.12 : 1)}><circle r={110} fill="#fff" stroke={C.noche} strokeWidth={10} /><Icono k={k + 1} /><text y={-80} x={80} fontFamily={fontFamily} fontWeight={700} fontSize={56} fill={C.rojo} stroke={C.noche} strokeWidth={4} paintOrder="stroke">{k + 1}</text></Svg>)}

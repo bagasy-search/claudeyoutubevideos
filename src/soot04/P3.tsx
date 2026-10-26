@@ -58,7 +58,7 @@ const Proa: React.FC<{ t: number }> = ({ t }) => {
           const k = ((t - 289) * 0.8 + i * 0.37) % 1;
           return <circle key={i} cx={470 + i * 44} cy={-196 + k * 214} r={3.5} fill="#8ad0ff" opacity={0.8} />;
         })}
-        {t > 289.4 && <ellipse cx={600} cy={PISO + 2} rx={110 * ent(t, 289.6)} ry={6} fill="#5aa0d8" opacity={0.45} />}
+        {t >= 289.4 && <ellipse cx={600} cy={PISO + 2} rx={110 * ent(t, 289.6)} ry={6} fill="#5aa0d8" opacity={0.45} />}
         {/* oscuridad + luz de la lámpara */}
         <polygon points={POLI} fill="#05030a" opacity={oscuro} />
         <circle cx={640} cy={-150} r={150} fill="#ffcf6a" opacity={0.1 + 0.04 * Math.sin(t * 11)} />
@@ -68,37 +68,37 @@ const Proa: React.FC<{ t: number }> = ({ t }) => {
       {comida(308.5, 314.2) > 0 && <g transform={`translate(615 ${PISO - 50}) scale(${comida(308.5, 314.2) * 0.42})`}>
         <path d="M -60 10 Q -70 -40 -10 -44 Q 60 -50 64 0 Q 50 30 0 28 Q -50 30 -60 10 Z" fill="#a8443a" stroke="#5a1a14" strokeWidth={6} />
         <path d="M -30 -12 Q 0 -30 30 -12" stroke="#f4e6c4" strokeWidth={6} fill="none" />
-        {t > 311.2 && <path d="M -20 -60 Q -20 -96 0 -96 Q 20 -96 20 -60" stroke="#9aa0aa" strokeWidth={9} fill="none" transform={`scale(${ent(t, 311.2)})`} />}
+        {t >= 311.2 && <path d="M -20 -60 Q -20 -96 0 -96 Q 20 -96 20 -60" stroke="#9aa0aa" strokeWidth={9} fill="none" transform={`scale(${ent(t, 311.2)})`} />}
       </g>}
       {comida(314.4, 321.4) > 0 && <g transform={`translate(615 ${PISO - 48}) scale(${comida(314.4, 321.4) * 0.45})`}>
         <ellipse cx={0} cy={0} rx={56} ry={36} fill="#8a5a2a" stroke="#4a2a10" strokeWidth={6} />
         <path d="M -50 -12 Q 0 -40 50 -12 Q 40 6 20 -2 Q 0 16 -20 -2 Q -40 8 -50 -12 Z" fill="#3a1a08" />
         <circle cx={-14} cy={6} r={5} fill="#5a3418" /><circle cx={18} cy={12} r={5} fill="#5a3418" />
       </g>}
-      {t > 321.4 && t < 324.5 && [0, 1, 2].map((i) => {
+      {t >= 321.4 && t < 324.5 && [0, 1, 2].map((i) => {
         const se = interpolate(t, [322.0 + i * 0.6, 322.4 + i * 0.6], [1, 0], cl) * ent(t, 321.5 + i * 0.08);
         return <circle key={i} cx={590 + i * 26} cy={PISO - 48} r={11 * se} fill="#ff9a2a" stroke="#c86a10" strokeWidth={2} />;
       })}
-      {t > 327.1 && t < 331 && <ellipse cx={690} cy={PISO - 108 * 0.7} rx={6} ry={3} fill={C.rojo} opacity={ent(t, 327.1)} />}
+      {t >= 327.1 && t < 331 && <ellipse cx={690} cy={PISO - 108 * 0.7} rx={6} ry={3} fill={C.rojo} opacity={ent(t, 327.1)} />}
       </svg>
       <Lampara x={640} y={-178} t={t} s={0.34} />
       {/* el chico de pie en el piso */}
         <Chico x={520} y={PISO} h={112} t={t}
           expr={t < 277 ? "sorpresa" : t < 284 ? "neutro" : t < 294.7 ? "triste" : t < 300.9 ? "miedo" : t < 304.5 ? "neutro" : t < 308.5 ? "sorpresa" : t < 314.3 ? "miedo" : t < 321.5 ? "feliz" : "triste"}
           bD={t > 301 && t < 321 ? 70 : 8} cD={40} mira={0.6} salta={314.6} />
-      {t > 323.8 && <Marino i={4} t={t} x={690} y={PISO} h={108} expr={t < 327 ? "triste" : "miedo"} flip />}
+      {t >= 323.8 && <Marino i={4} t={t} x={690} y={PISO} h={108} expr={t < 327 ? "triste" : "miedo"} flip />}
       {/* bichos */}
-      {t > 294.7 && t < 301 && Array.from({ length: 9 }, (_, i) => {
+      {t >= 294.7 && t < 301 && Array.from({ length: 9 }, (_, i) => {
         const k = ((t - 294.7) * 0.22 + i * 0.11) % 1;
         const x = 450 + k * 280, y = i % 3 === 0 ? -190 + i * 18 : PISO - 2;
         return <Cucaracha key={i} x={x} y={y} t={t + i} s={0.34 * ent(t, 294.8 + i * 0.12)} rot={90} />;
       })}
-      {t > 296.6 && t < 301 && [0, 1].map((i) => {
+      {t >= 296.6 && t < 301 && [0, 1].map((i) => {
         const k = prog(t, 296.7 + i * 0.6, 300.8);
         return <Rata key={i} x={460 + k * 300 - i * 60} y={PISO} t={t} s={0.34 * ent(t, 296.7 + i * 0.6)} />;
       })}
       {comida(300.9, 308.4) > 0 && <><Galleta x={615} y={PISO - 52} s={0.15 * comida(300.9, 308.4)} rota={t > 303} />
-        {t > 304.5 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><g transform={`translate(${650} ${PISO - 60}) scale(${ent(t, 304.5) * 0.5})`}><rect x={-22} y={-30} width={44} height={50} rx={6} fill="#e8e2d0" stroke="#5a4020" strokeWidth={4} /><rect x={-18} y={-26} width={36} height={12} fill="#5a3418" /><path d="M 22 -16 q 16 4 0 22" stroke="#5a4020" strokeWidth={4} fill="none" /></g></svg>}</>}
+        {t >= 304.5 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><g transform={`translate(${650} ${PISO - 60}) scale(${ent(t, 304.5) * 0.5})`}><rect x={-22} y={-30} width={44} height={50} rx={6} fill="#e8e2d0" stroke="#5a4020" strokeWidth={4} /><rect x={-18} y={-26} width={36} height={12} fill="#5a3418" /><path d="M 22 -16 q 16 4 0 22" stroke="#5a4020" strokeWidth={4} fill="none" /></g></svg>}</>}
     </div>
   );
 };
@@ -171,23 +171,23 @@ export const P3: Parte = {
     return (
       <>
         <EnBarco t={t} x={x}>
-          <Tripulacion t={t} expr={(i) => (t > 359 && t < 367 ? "feliz" : t > 335 && t < 346 ? "triste" : "neutro")} sin={t > 353.4 ? [] : []} capitan={!(t > 353.4 && t < 368)} />
+          <Tripulacion t={t} expr={(i) => (t > 359 && t < 367 ? "feliz" : t > 335 && t < 346 ? "triste" : "neutro")} sin={t > 353.4 ? [] : []} capitan={!(t >= 353.4 && t < 368)} />
           {(t < 268.4 || (t > 331 && t < 338.6) || t > 348.4) && <Chico x={-660} y={CUBIERTA} t={t} expr={t > 359 && t < 367 ? "feliz" : "neutro"} mira={0.5} />}
           <Proa t={t} />
           <Vigia t={t} />
         </EnBarco>
         {/* el soplo lejano que sueña el vigía */}
-        {t > 346.5 && t < 348.6 && <Cachalote x={x + 3200} y={10} t={t} s={0.3} chorro={prog(t, 346.6, 347.0)} nada={0.3} />}
+        {t >= 346.5 && t < 348.6 && <Cachalote x={x + 3200} y={10} t={t} s={0.3} chorro={prog(t, 346.6, 347.0)} nada={0.3} />}
         {/* el otro ballenero (gam) */}
         {enGam && (
           <>
             <Ballenero x={x2} y={0} t={t + 1.7} velas={interpolate(t, [350, 352, 366, 368], [1, 0.3, 0.3, 1], cl)} nombre="PEARL" botes={[true, true, true]} />
             <EnBarco t={t + 1.7} x={x2}>
               {Array.from({ length: 9 }, (_, i) => <Persona key={i} x={-320 + i * 110} y={CUBIERTA} h={200} t={t} seed={130 + i} ropa={MARINO(i + 4)} casco={i % 2 ? "gorro" : "no"} gorroCol={["#e8a030", "#6a3a8a"][i % 2]} pantalon="#3a3a4a" flip={i % 2 === 1} expr={t > 359 && t < 368 ? "feliz" : "neutro"} />)}
-              {t > 356.6 && t < 368 && <Persona x={-470} y={CUBIERTA} h={230} t={t} seed={11} ropa={{ tunica: "#1d2a52", tunica2: "#0f1633", cinto: "#0c0f20", piel: "#e8a982", piel2: "#c4835e", pelo: "#3a2616" }} casco="capitan" barba="#3a2616" pantalon="#141a30" expr="feliz" />}
+              {t >= 356.6 && t < 368 && <Persona x={-470} y={CUBIERTA} h={230} t={t} seed={11} ropa={{ tunica: "#1d2a52", tunica2: "#0f1633", cinto: "#0c0f20", piel: "#e8a982", piel2: "#c4835e", pelo: "#3a2616" }} casco="capitan" barba="#3a2616" pantalon="#141a30" expr="feliz" />}
               <Persona x={-560} y={CUBIERTA} h={230} t={t} seed={150} ropa={{ tunica: "#3a2a5a", tunica2: "#1a1030", cinto: "#0c0f20", piel: "#d8a07a", piel2: "#b07a56", pelo: "#8a8a8a" }} casco="capitan" barba="#9a9a9a" pantalon="#141a30" expr={t > 357 ? "feliz" : "neutro"} />
             </EnBarco>
-            {t > 353.6 && t < 356.8 && <Bote x={interpolate(bote, [0, 1], [x + 760, x2 - 860])} y={30} t={t} s={0.9}
+            {t >= 353.6 && t < 356.8 && <Bote x={interpolate(bote, [0, 1], [x + 760, x2 - 860])} y={30} t={t} s={0.9}
               gente={<g transform="translate(-60 -50)"><rect x={-22} y={-90} width={44} height={84} rx={14} fill="#1d2a52" /><circle cx={0} cy={-112} r={24} fill="#e8a982" /><rect x={-28} y={-142} width={56} height={18} rx={6} fill="#141a30" /></g>} />}
             {[[355.3, true, "carta"], [355.7, false, "tabaco"], [356.2, true, "tabaco"], [356.6, false, "carta"], [357.1, true, "carta"], [357.8, false, "carta"]].map(([t0, ida, k], i) => (
               <Vuelo key={i} t={t} t0={t0 as number} ida={ida as boolean} k={k as "carta" | "tabaco"} x1={x + 200} x2={x2 - 200} />
@@ -245,10 +245,10 @@ export const P3: Parte = {
       <Chip t={t} t0={359.3} t1={362.0} text="YOUR ONLY SOCIAL LIFE FOR MONTHS" color={C.violeta} x={960} y={140} centro size={54} />
       <Titulo t={t} t0={366.45} t1={367.6} text="EVERYBODY LIES" y={200} size={120} color={C.rojo} />
       <Chip t={t} t0={367.8} t1={370.0} text="THEN, ONE MORNING…" color={C.crema} tinta={C.noche} x={960} y={140} centro size={62} />
-      {t > 268.7 && t < 270.4 && <Emote t={t} t0={268.7} tipo="susto" x={760} y={600} s={1.3} />}
-      {t > 294.9 && t < 297 && <Emote t={t} t0={294.9} tipo="susto" x={760} y={540} s={1.3} />}
-      {t > 314.6 && t < 319.6 && <Emote t={t} t0={314.6} tipo="brillos" x={960} y={560} s={1.5} />}
-      {t > 324.2 && t < 330 && <Emote t={t} t0={324.2} tipo="sudor" x={1260} y={520} s={1.3} />}
+      {t >= 268.7 && t < 270.4 && <Emote t={t} t0={268.7} tipo="susto" x={760} y={600} s={1.3} />}
+      {t >= 294.9 && t < 297 && <Emote t={t} t0={294.9} tipo="susto" x={760} y={540} s={1.3} />}
+      {t >= 314.6 && t < 319.6 && <Emote t={t} t0={314.6} tipo="brillos" x={960} y={560} s={1.5} />}
+      {t >= 324.2 && t < 330 && <Emote t={t} t0={324.2} tipo="sudor" x={1260} y={520} s={1.3} />}
     </>
   ),
 };

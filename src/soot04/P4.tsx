@@ -37,7 +37,7 @@ const Soga: React.FC<{ t: number }> = ({ t }) => {
   if (t < 421 || t > 470.5) return null;
   const b = bote(t), w = ballena(t);
   const x0 = b.x + 230, y0 = b.y - 50, x1 = w.x + (w.flip ? -260 : 260) * S, y1 = w.y - 90;
-  const tensa = t > 427.4 && t < 460;
+  const tensa = t >= 427.4 && t < 460;
   return (
     <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}>
       <path d={`M ${x0} ${y0} Q ${(x0 + x1) / 2} ${tensa ? (y0 + y1) / 2 : Math.max(y0, y1) + 120} ${x1} ${y1}`} stroke="#d8c08a" strokeWidth={6} fill="none" />
@@ -92,7 +92,7 @@ export const P4: Parte = {
     return (
       <>
         <EnBarco t={t} x={XS}>
-          <Tripulacion t={t} sin={t > 389.4 ? [1, 3, 5, 7] : []} expr={() => (t > 372.2 && t < 389 ? "sorpresa" : "neutro")} />
+          <Tripulacion t={t} sin={t > 389.4 ? [1, 3, 5, 7] : []} expr={() => (t >= 372.2 && t < 389 ? "sorpresa" : "neutro")} />
           {t < 389.4 && <Chico x={-660} y={CUBIERTA} t={t} expr="sorpresa" salta={372.4} mira={1} />}
         </EnBarco>
         {/* la ballena 1 */}
@@ -100,42 +100,42 @@ export const P4: Parte = {
           <>
             <Cachalote x={w.x} y={w.y} t={t} s={S} rot={w.rot} flip={w.flip} chorro={t < 416 ? Math.max(0, Math.sin(t * 0.9)) : t > 464.9 ? 0 : 0} sangre={t > 464.9 ? prog(t, 464.9, 465.6) : 0}
               arpones={t > 420.9 ? (t > 462.6 ? 2 : 1) : 0} nada={t > 459.8 ? 0.25 : t > 450 ? 1.6 : 1} enojo={t > 421} boca={t > 421 && t < 425 ? 0.6 : 0} />
-            {t > 401.3 && t < 406.2 && <Svg x={XW - 200} y={-220} s={ent(t, 401.4)}><text textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={110} fill="#eaf8ff" stroke="#1a3a5a" strokeWidth={12} paintOrder="stroke" opacity={0.5 + 0.5 * Math.sin(t * 3)}>PFFFHHH…</text></Svg>}
+            {t >= 401.3 && t < 406.2 && <Svg x={XW - 200} y={-220} s={ent(t, 401.4)}><text textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={110} fill="#eaf8ff" stroke="#1a3a5a" strokeWidth={12} paintOrder="stroke" opacity={0.5 + 0.5 * Math.sin(t * 3)}>PFFFHHH…</text></Svg>}
           </>
         )}
         {t > 421 && t < 425 && <Splash x={XW} y={0} t={t} t0={421.1} s={2.2} />}
-        {t > 425.1 && t < 428 && <Splash x={XW + 200} y={0} t={t} t0={425.2} s={3} />}
-        {t > 450.6 && t < 453 && <Splash x={XW + 900} y={0} t={t} t0={450.7} s={3} />}
+        {t >= 425.1 && t < 428 && <Splash x={XW + 200} y={0} t={t} t0={425.2} s={3} />}
+        {t >= 450.6 && t < 453 && <Splash x={XW + 900} y={0} t={t} t0={450.7} s={3} />}
         <Soga t={t} />
         {/* el bote del chico */}
-        {t > 389.4 && t < 486.8 && (
+        {t >= 389.4 && t < 486.8 && (
           <>
             <Bote x={b.x} y={b.y} t={t} s={1} rema={t < 390.6 ? 0 : t < 416.9 ? 1 : t > 470 ? 0.3 : 0} arponero={t > 389.6 ? arp + 0.001 : 0}
               rot={t > 450 && t < 459.8 ? -6 : 0}
-              gente={t > 459.8 && t < 464 ? <g transform={`translate(160 -150) rotate(${-40 + prog(t, 461, 462.6) * 50})`}><line x1={0} y1={0} x2={0} y2={-300} stroke="#6a4a2a" strokeWidth={8} /><path d="M -10 -300 L 0 -350 L 10 -300 Z" fill="#c8ccd4" /></g> : undefined} />
+              gente={t >= 459.8 && t < 464 ? <g transform={`translate(160 -150) rotate(${-40 + prog(t, 461, 462.6) * 50})`}><line x1={0} y1={0} x2={0} y2={-300} stroke="#6a4a2a" strokeWidth={8} /><path d="M -10 -300 L 0 -350 L 10 -300 Z" fill="#c8ccd4" /></g> : undefined} />
             {/* "VOS" sobre el remero del gorro rojo */}
-            {t > 393.6 && t < 396.2 && <Svg x={b.x - 150} y={b.y - 260 + Math.sin(t * 6) * 8} s={ent(t, 393.7)}><path d="M -18 -60 L 18 -60 L 18 -20 L 36 -20 L 0 20 L -36 -20 L -18 -20 Z" fill={C.lima} stroke="#2a1530" strokeWidth={5} /><text y={-80} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={54} fill={C.lima} stroke="#2a1530" strokeWidth={9} paintOrder="stroke">YOU</text></Svg>}
+            {t >= 393.6 && t < 396.2 && <Svg x={b.x - 150} y={b.y - 260 + Math.sin(t * 6) * 8} s={ent(t, 393.7)}><path d="M -18 -60 L 18 -60 L 18 -20 L 36 -20 L 0 20 L -36 -20 L -18 -20 Z" fill={C.lima} stroke="#2a1530" strokeWidth={5} /><text y={-80} textAnchor="middle" fontFamily={fontFamily} fontWeight={700} fontSize={54} fill={C.lima} stroke="#2a1530" strokeWidth={9} paintOrder="stroke">YOU</text></Svg>}
             {/* el arpón en vuelo */}
-            {t > 420.4 && t < 421.0 && <Arpon x={interpolate(t, [420.4, 421], [b.x + 230, XW - 200])} y={interpolate(t, [420.4, 420.7, 421], [b.y - 260, b.y - 400, w.y - 100])} s={1} rot={70} />}
+            {t >= 420.4 && t < 421.0 && <Arpon x={interpolate(t, [420.4, 421], [b.x + 230, XW - 200])} y={interpolate(t, [420.4, 420.7, 421], [b.y - 260, b.y - 400, w.y - 100])} s={1} rot={70} />}
             {/* la línea que humea en la tina, y el que le echa agua */}
-            {t > 427.4 && t < 437.3 && <>
+            {t >= 427.4 && t < 437.3 && <>
               <Humo x={b.x - 200} y={b.y - 60} t={t} s={0.5} n={8} col="#d8d0c8" op={0.7} viento={-60} />
               {Array.from({ length: 6 }, (_, i) => { const k = (t * 2 + i / 6) % 1; return <Svg key={i} x={b.x - 230 + k * 30} y={b.y - 150 + k * 90}><circle r={6} fill="#8ad0ff" /></Svg>; })}
             </>}
-            {t > 445.2 && t < 450 && <Hacha x={b.x + 120} y={b.y - 150} s={0.7} rot={-30 + Math.sin(t * 4) * 10} />}
+            {t >= 445.2 && t < 450 && <Hacha x={b.x + 120} y={b.y - 150} s={0.7} rot={-30 + Math.sin(t * 4) * 10} />}
             {t > 450 && t < 459.8 && Array.from({ length: 10 }, (_, i) => <Svg key={i} x={b.x - 300 - ((t * 1400 + i * 160) % 1600)} y={10 + (i % 4) * 26}><line x1={0} y1={0} x2={-180} y2={0} stroke="#fff" strokeWidth={6} strokeLinecap="round" opacity={0.7} /></Svg>)}
             {t > 461 && t < 462.8 && <Lanza x={interpolate(t, [461, 462.6], [b.x + 300, w.x - 120])} y={-200} s={0.8} rot={20} />}
           </>
         )}
         {/* "y vos, que vas al fondo con la línea": silueta fantasma que baja */}
-        {t > 437.3 && t < 445 && <div style={{ position: "absolute", left: 0, top: 0, opacity: 0.55 }}><Chico x={XW - 600 + prog(t, 437.5, 444.5) * 300} y={60 + prog(t, 437.5, 444.5) * 900} h={200} t={t} expr="miedo" inclina={170} /></div>}
+        {t >= 437.3 && t < 445 && <div style={{ position: "absolute", left: 0, top: 0, opacity: 0.55 }}><Chico x={XW - 600 + prog(t, 437.5, 444.5) * 300} y={60 + prog(t, 437.5, 444.5) * 900} h={200} t={t} expr="miedo" inclina={170} /></div>}
         {/* el otro bote y la segunda ballena */}
-        {t > 470.4 && t < 486.8 && (
+        {t >= 470.4 && t < 486.8 && (
           <>
             <Bote x={X2B} y={30 - otro * 60} t={t} rema={t < 478.9 ? 1 : 0} roto={otro} arponero={1} />
             <Cachalote x={X2B + 80} y={w2up} t={t} s={S} rot={-38} flip={t < 473.2} nada={1.4} enojo />
-            {t > 478.98 && <Splash x={X2B} y={0} t={t} t0={478.98} s={3.4} />}
-            {t > 480.4 && [-260, -90, 80, 240, 360].map((dx, i) => (
+            {t >= 478.98 && <Splash x={X2B} y={0} t={t} t0={478.98} s={3.4} />}
+            {t >= 480.4 && [-260, -90, 80, 240, 360].map((dx, i) => (
               <Svg key={i} x={X2B + dx * (1 + prog(t, 480.4, 482) * 0.6)} y={22 + Math.sin(t * 2 + i) * 6} s={ent(t, 480.5 + i * 0.1)}>
                 <circle cx={0} cy={-18} r={22} fill={["#f2b48a", "#8d5a3b", "#c98b62", "#f5c7a0", "#6e4128"][i]} />
                 <path d="M -40 4 L 40 4" stroke="#8a7a66" strokeWidth={14} strokeLinecap="round" />
@@ -187,9 +187,9 @@ export const P4: Parte = {
       <Chip t={t} t0={480.5} t1={483.0} text="HOLD ON TO A PLANK" color={C.teal} tinta={C.noche} x={960} y={140} centro size={58} />
       <Chip t={t} t0={483.1} t1={486.2} text="HAPPENED ALL THE TIME" color={C.violeta} x={960} y={140} centro size={58} />
       <Chip t={t} t0={484.4} t1={486.2} text="…THE EASY PART" color={C.rojo} x={960} y={250} centro size={50} />
-      {t > 372.4 && t < 375 && <Emote t={t} t0={372.4} tipo="excl" x={960} y={500} s={1.6} />}
-      {t > 421.2 && t < 425 && <Emote t={t} t0={421.2} tipo="susto" x={760} y={500} s={1.5} />}
-      {t > 479.1 && t < 482 && <Emote t={t} t0={479.1} tipo="susto" x={960} y={520} s={1.6} />}
+      {t >= 372.4 && t < 375 && <Emote t={t} t0={372.4} tipo="excl" x={960} y={500} s={1.6} />}
+      {t >= 421.2 && t < 425 && <Emote t={t} t0={421.2} tipo="susto" x={760} y={500} s={1.5} />}
+      {t >= 479.1 && t < 482 && <Emote t={t} t0={479.1} tipo="susto" x={960} y={520} s={1.6} />}
     </>
   ),
 };

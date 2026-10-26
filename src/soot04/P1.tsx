@@ -75,19 +75,19 @@ export const P1: Parte = {
         <>
           {[-600, -480, -360, -240, 600, 720, 840, 960].map((d, i) => <Cultivo key={d} x={X_FARM + d} t={t} seco={prog(t, 71.0 + i * 0.12, 71.6 + i * 0.12)} />)}
           <Svg x={X_FARM + 2300} y={-900} s={0.9}><path d="M -220 40 Q -240 -30 -150 -40 Q -120 -120 -20 -100 Q 50 -160 130 -90 Q 230 -100 230 0 Q 260 40 200 50 Z" fill="#6a6a80" />{Array.from({ length: 8 }, (_, i) => <line key={i} x1={-160 + i * 44} y1={60 + ((t * 300 + i * 40) % 200)} x2={-170 + i * 44} y2={90 + ((t * 300 + i * 40) % 200)} stroke="#8ab8f0" strokeWidth={5} />)}</Svg>
-          <Chico x={X_FARM + 560 + (t > 80.9 ? (t - 80.9) * 900 : 0)} y={-70} t={t} gorro="paja" h={250} expr={t < 71 ? "neutro" : t < 73.4 ? "triste" : "sorpresa"} camina={t > 80.9 ? 2.2 : 0} mira={t > 73.4 && t < 80.9 ? 0.6 : 0} />
+          <Chico x={X_FARM + 560 + (t > 80.9 ? (t - 80.9) * 900 : 0)} y={-70} t={t} gorro="paja" h={250} expr={t < 71 ? "neutro" : t < 73.4 ? "triste" : "sorpresa"} camina={t > 80.9 ? 2.2 : 0} mira={t >= 73.4 && t < 80.9 ? 0.6 : 0} />
         </>
       )}
       {/* ── la oficina del land shark */}
       {t > 80 && t < 109.5 && (
         <>
-          {t > 87.6 && <div style={{ position: "absolute", left: 0, top: 0, opacity: 0.28 * prog(t, 87.6, 88.2) }}><Tiburon x={NYT - 60} y={-560} t={t} s={1.5} flip /></div>}
-          <Persona x={NYT} y={-70} h={300} t={t} seed={13} ropa={TIBURON} casco="galera" pantalon="#1a1420" expr={t > 100.2 && t < 108 ? "orgullo" : "feliz"} habla={t > 89 && t < 100} flip
-            bD={t > 100.6 && t < 103.6 ? 70 : t > 89 && t < 100 ? interpolate(Math.sin(t * 4), [-1, 1], [40, 90]) : 10} cD={60} />
+          {t >= 87.6 && <div style={{ position: "absolute", left: 0, top: 0, opacity: 0.28 * prog(t, 87.6, 88.2) }}><Tiburon x={NYT - 60} y={-560} t={t} s={1.5} flip /></div>}
+          <Persona x={NYT} y={-70} h={300} t={t} seed={13} ropa={TIBURON} casco="galera" pantalon="#1a1420" expr={t >= 100.2 && t < 108 ? "orgullo" : "feliz"} habla={t > 89 && t < 100} flip
+            bD={t >= 100.6 && t < 103.6 ? 70 : t > 89 && t < 100 ? interpolate(Math.sin(t * 4), [-1, 1], [40, 90]) : 10} cD={60} />
           <div style={{ position: "absolute", left: X_NY + 20, top: -282, width: 460, height: 212, background: "#7a4a26", borderTop: "14px solid #9a6a3a" }} />
-          <Chico x={interpolate(t, [80.9, 83.3], [X_NY - 1100, NYB], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={-70} t={t} gorro="paja" h={250} camina={t < 83.3 ? 1.6 : 0} expr={t > 95.5 && t < 100 ? "feliz" : t > 104.6 ? "neutro" : "sorpresa"} salta={95.6} />
-          {t > 100.5 && t < 103.8 && <Svg x={NYT + 50} y={-330 + prog(t, 101.0, 101.6) * 120} s={0.7}><Moneda0 /></Svg>}
-          {t > 104.7 && t < 108 && Array.from({ length: 6 }, (_, i) => {
+          <Chico x={interpolate(t, [80.9, 83.3], [X_NY - 1100, NYB], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={-70} t={t} gorro="paja" h={250} camina={t < 83.3 ? 1.6 : 0} expr={t >= 95.5 && t < 100 ? "feliz" : t > 104.6 ? "neutro" : "sorpresa"} salta={95.6} />
+          {t >= 100.5 && t < 103.8 && <Svg x={NYT + 50} y={-330 + prog(t, 101.0, 101.6) * 120} s={0.7}><Moneda0 /></Svg>}
+          {t >= 104.7 && t < 108 && Array.from({ length: 6 }, (_, i) => {
             const u = prog(t, 104.9 + i * 0.25, 105.6 + i * 0.25);
             return u > 0 && u < 1 ? <Svg key={i} x={NYB + (NYT - NYB) * u} y={-220 - Math.sin(u * Math.PI) * 260} s={0.55} rot={u * 360}><Moneda0 /></Svg> : null;
           })}
@@ -97,7 +97,7 @@ export const P1: Parte = {
         {t < 95.4 ? (
           <g>
             <g transform="scale(0.32) translate(0 260)"><Isla x={0} y={0} t={t} s={1} seed={2} /></g>
-            {t > 93.2 && <g transform={`translate(170 -40) scale(${ent(t, 93.2)})`}>{[0, 72, 144, 216, 288].map((a) => <ellipse key={a} cx={0} cy={-26} rx={18} ry={30} fill={C.rosa} transform={`rotate(${a})`} />)}<circle r={16} fill={C.ambar} /></g>}
+            {t >= 93.2 && <g transform={`translate(170 -40) scale(${ent(t, 93.2)})`}>{[0, 72, 144, 216, 288].map((a) => <ellipse key={a} cx={0} cy={-26} rx={18} ry={30} fill={C.rosa} transform={`rotate(${a})`} />)}<circle r={16} fill={C.ambar} /></g>}
           </g>
         ) : (
           <g>{Array.from({ length: 7 }, (_, i) => <g key={i} transform={`translate(${-150 + (i % 4) * 100} ${-30 + Math.floor(i / 4) * 90}) scale(${ent(t, 95.3 + i * 0.05)})`}><Moneda0 r={44} /></g>)}</g>
@@ -112,22 +112,22 @@ export const P1: Parte = {
         </>
       )}
       {t < 146 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><line x1={PLANCHA[0]} y1={PLANCHA[1]} x2={PLANCHA[2]} y2={PLANCHA[3]} stroke="#9a6a3a" strokeWidth={22} strokeLinecap="round" /></svg>}
-      {t > 122.0 && t < 123.7 && <Chico x={interpolate(subida(t), [0, 1], [PLANCHA[0], PLANCHA[2]])} y={interpolate(subida(t), [0, 1], [PLANCHA[1], PLANCHA[3]])} t={t} gorro="paja" camina={1.6} expr="miedo" inclina={-8} />}
+      {t >= 122.0 && t < 123.7 && <Chico x={interpolate(subida(t), [0, 1], [PLANCHA[0], PLANCHA[2]])} y={interpolate(subida(t), [0, 1], [PLANCHA[1], PLANCHA[3]])} t={t} gorro="paja" camina={1.6} expr="miedo" inclina={-8} />}
       {/* ── a bordo */}
       {t >= 123.7 && (
         <EnBarco t={t} x={bx(t)}>
           {Array.from({ length: 10 }, (_, i) => (
             <React.Fragment key={i}>
               <Persona x={-300 + i * 95} y={CUBIERTA} h={200} t={t} seed={60 + i} ropa={MARINO(i)} casco={i % 3 === 0 ? "gorro" : "no"} gorroCol={["#2b6ad0", "#d8343a", "#3d6e5a"][i % 3]} pantalon={["#3a3a4a", "#2a3a5a", "#5a4a3a"][i % 3]} flip={i % 2 === 0} expr={t > 140 && i % 2 ? "miedo" : "neutro"} />
-              {t > 140.4 && i % 2 === 1 && <div style={{ position: "absolute", left: -300 + i * 95 - 24, top: CUBIERTA - 260, width: 48, height: 48, borderRadius: 24, background: C.lima, border: "5px solid #fff", transform: `scale(${ent(t, 140.4 + i * 0.06)})` }} />}
+              {t >= 140.4 && i % 2 === 1 && <div style={{ position: "absolute", left: -300 + i * 95 - 24, top: CUBIERTA - 260, width: 48, height: 48, borderRadius: 24, background: C.lima, border: "5px solid #fff", transform: `scale(${ent(t, 140.4 + i * 0.06)})` }} />}
             </React.Fragment>
           ))}
           <Persona x={-480} y={CUBIERTA} h={230} t={t} seed={11} ropa={CAPITAN} casco="capitan" barba="#3a2616" pantalon="#141a30" expr={t > 131 && t < 134 ? "orgullo" : "neutro"} bD={t > 124 && t < 133 ? 70 : 8} cD={40} />
           <Chico x={-660} y={CUBIERTA} t={t} gorro={t > 134.15} expr={t < 128.7 ? "neutro" : t < 133.9 ? "sorpresa" : t < 140 ? "orgullo" : "feliz"} salta={134.2} mira={0.4} />
-          {t > 133.6 && t < 134.2 && <Svg x={-660} y={CUBIERTA - 1000 + prog(t, 133.6, 134.15) * 560} s={0.45}><path d="M -104 -470 Q -110 -600 0 -604 Q 110 -600 104 -470 Z" fill="#d8343a" /></Svg>}
+          {t >= 133.6 && t < 134.2 && <Svg x={-660} y={CUBIERTA - 1000 + prog(t, 133.6, 134.15) * 560} s={0.45}><path d="M -104 -470 Q -110 -600 0 -604 Q 110 -600 104 -470 Z" fill="#d8343a" /></Svg>}
         </EnBarco>
       )}
-      {t > 143.8 && <Persona x={interpolate(t, [143.8, 149], [CX + 40, CX - 600])} y={-60} h={240} t={t} seed={77} ropa={MARINO(2)} casco="gorro" gorroCol="#3d6e5a" barba="#c9c4c0" viejo pantalon="#3a3a4a" camina={1.1} flip expr="feliz" bD={t > 146.5 ? interpolate(Math.sin(t * 9), [-1, 1], [140, 170]) : 8} />}
+      {t >= 143.8 && <Persona x={interpolate(t, [143.8, 149], [CX + 40, CX - 600])} y={-60} h={240} t={t} seed={77} ropa={MARINO(2)} casco="gorro" gorroCol="#3d6e5a" barba="#c9c4c0" viejo pantalon="#3a3a4a" camina={1.1} flip expr="feliz" bD={t > 146.5 ? interpolate(Math.sin(t * 9), [-1, 1], [140, 170]) : 8} />}
       <Barril x={CX - 120} y={-90} s={1.1} />
     </>
   ),
@@ -164,8 +164,8 @@ export const P1: Parte = {
       <Chip t={t} t0={140.4} t1={144.1} text="≈ HALF THE CREW" color={C.lima} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={144.3} t1={145.5} text="WHICH TELLS YOU SOMETHING" color={C.violeta} x={960} y={150} centro size={56} />
       <Chip t={t} t0={145.7} t1={148.8} text="THE PROS KNEW BETTER" color={C.rojo} x={960} y={150} centro size={64} />
-      {t > 95.6 && t < 99.8 && <Emote t={t} t0={95.6} tipo="brillos" x={700} y={560} s={1.4} />}
-      {t > 104.8 && t < 106.5 && <Emote t={t} t0={104.8} tipo="susto" x={700} y={560} s={1.4} />}
+      {t >= 95.6 && t < 99.8 && <Emote t={t} t0={95.6} tipo="brillos" x={700} y={560} s={1.4} />}
+      {t >= 104.8 && t < 106.5 && <Emote t={t} t0={104.8} tipo="susto" x={700} y={560} s={1.4} />}
       {t > 113 && t < 116 && <Particulas t={t} tipo="polvo" n={20} seed={5} />}
     </>
   ),

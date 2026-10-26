@@ -43,7 +43,7 @@ const boteX = (t: number, k: number) => {
   if (t < 755.2) return XH - 820 + k * 240;
   return XH - 820 + k * 240 + (t - 755.2) * 210 + k * 60 * prog(t, 755.2, 760);
 };
-const boteY = (t: number) => (t < 716.6 ? -300 : t < 717.4 ? pz(t, [[716.6, -300], [717.4, 30]]) : t > 749.3 && t < 755.2 ? -14 : 30);
+const boteY = (t: number) => (t < 716.6 ? -300 : t < 717.4 ? pz(t, [[716.6, -300], [717.4, 30]]) : t >= 749.3 && t < 755.2 ? -14 : 30);
 
 const Burbuja: React.FC<{ t: number; t0: number; t1: number; x: number; y: number; text: string }> = ({ t, t0, t1, x, y, text }) => {
   if (t < t0 || t > t1 + 0.25) return null;
@@ -141,7 +141,7 @@ export const P7: Parte = {
               {t < 716.4 && <Tripulacion t={t} capitan sin={[0, ...(t > 703.9 ? [1, 3, 5, 7] : [])]} expr={() => (t > 695.6 ? "miedo" : t > 687.7 ? "sorpresa" : "neutro")} />}
               {t < 716.4 && (t < 684.6 || t > 703) && <Marino i={0} t={t} expr={t > 695.6 ? "miedo" : "neutro"} />}
               {t >= 684.6 && t <= 703 && <Marino i={0} t={t} x={700} expr={t > 687.7 ? "sorpresa" : "neutro"} flip={false} bD={t > 686 ? 150 : 10} />}
-              {t > 703.9 && t < 716.4 && [1, 3, 5, 7].map((i, k) => <Marino key={i} i={i} t={t} x={XMARINO(i) + k * 20} y={CUBIERTA + 30} inclina={70 * (k % 2 ? 1 : -1) * prog(t, 703.95 + k * 0.12, 704.4 + k * 0.12)} expr="miedo" />)}
+              {t >= 703.9 && t < 716.4 && [1, 3, 5, 7].map((i, k) => <Marino key={i} i={i} t={t} x={XMARINO(i) + k * 20} y={CUBIERTA + 30} inclina={70 * (k % 2 ? 1 : -1) * prog(t, 703.95 + k * 0.12, 704.4 + k * 0.12)} expr="miedo" />)}
             </EnBarco>
           </div>
         )}
@@ -157,20 +157,20 @@ export const P7: Parte = {
           {t > a && t < a + 1.6 && Array.from({ length: 9 }, (_, k) => { const u = (t - a) / 1.6; return <Svg key={k} x={XE + 840 + Math.cos(k * 0.8) * 700 * u} y={-120 - Math.sin(k * 0.8 + 0.4) * 520 * u + 900 * u * u} rot={u * 400 + k * 40}><rect x={-40} y={-10} width={80} height={20} rx={4} fill="#7a4a26" /></Svg>; })}
         </React.Fragment>)}
         {/* los tres botes */}
-        {t > 716.4 && t < 767.6 && BOTES.map((_, k) => {
+        {t >= 716.4 && t < 767.6 && BOTES.map((_, k) => {
           const x = boteX(t, k);
           const deriva = t > 756.8;
           return (
             <React.Fragment key={k}>
-              <Bote x={x} y={boteY(t)} t={t} s={0.95} rema={deriva ? 0.15 : t > 749.3 && t < 755.2 ? 0 : 1} />
-              {t > 725.4 && t < 756.8 && k === 1 && <Tortuga x={x + 120} y={boteY(t) - 70} t={t} s={0.7} />}
-              {t > 723.5 && t < 756.8 && k === 0 && <Galleta x={x - 60} y={boteY(t) - 66} s={0.28} />}
-              {t > 724.5 && t < 756.8 && k === 2 && <Barril x={x + 80} y={boteY(t) - 80} s={0.32} />}
+              <Bote x={x} y={boteY(t)} t={t} s={0.95} rema={deriva ? 0.15 : t >= 749.3 && t < 755.2 ? 0 : 1} />
+              {t >= 725.4 && t < 756.8 && k === 1 && <Tortuga x={x + 120} y={boteY(t) - 70} t={t} s={0.7} />}
+              {t >= 723.5 && t < 756.8 && k === 0 && <Galleta x={x - 60} y={boteY(t) - 66} s={0.28} />}
+              {t >= 724.5 && t < 756.8 && k === 2 && <Barril x={x + 80} y={boteY(t) - 80} s={0.32} />}
             </React.Fragment>
           );
         })}
         {/* enterrados en el mar: un bulto envuelto que se desliza */}
-        {t > 761.1 && t < 763.6 && <Svg x={boteX(t, 1) + 240 + prog(t, 761.6, 762.4) * 120} y={-40 + prog(t, 761.6, 762.6) * 120} rot={prog(t, 761.6, 762.4) * 50}><ellipse rx={70} ry={22} fill="#e8e2d0" stroke="#8a7a66" strokeWidth={4} /></Svg>}
+        {t >= 761.1 && t < 763.6 && <Svg x={boteX(t, 1) + 240 + prog(t, 761.6, 762.4) * 120} y={-40 + prog(t, 761.6, 762.6) * 120} rot={prog(t, 761.6, 762.4) * 50}><ellipse rx={70} ry={22} fill="#e8e2d0" stroke="#8a7a66" strokeWidth={4} /></Svg>}
         <Splash x={boteX(t, 1) + 380} y={20} t={t} t0={762.5} s={0.8} />
         {/* la isla Henderson */}
         {t > 747 && t < 768 && (
@@ -178,29 +178,29 @@ export const P7: Parte = {
             <Isla x={XH} y={10} t={t} s={1.15} seed={9} />
             {t < 751.4 && [0, 1, 2, 3].map((k) => <Gaviota key={k} x={XH - 200 + k * 140} y={-260 - (k % 2) * 60} t={t + k} s={0.6} />)}
             {t < 751.8 && [0, 1, 2, 3, 4].map((k) => <Svg key={`h${k}`} x={XH - 300 + k * 110} y={-30} s={1 - prog(t, 751.2 + k * 0.1, 751.6 + k * 0.1)}><ellipse rx={16} ry={20} fill="#f4f0e8" stroke="#b8b0a0" strokeWidth={3} /></Svg>)}
-            {t > 753.25 && [0, 1, 2].map((k) => <Persona key={k} x={XH + 120 + k * 120} y={-6} h={150} t={t} seed={520 + k} ropa={MARINO(k + 3)} casco="no" pantalon="#e8e2d0" expr="triste" bD={t > 755.2 ? 150 + Math.sin(t * 6 + k) * 30 : 10} aparece={753.3 + k * 0.2} />)}
+            {t >= 753.25 && [0, 1, 2].map((k) => <Persona key={k} x={XH + 120 + k * 120} y={-6} h={150} t={t} seed={520 + k} ropa={MARINO(k + 3)} casco="no" pantalon="#e8e2d0" expr="triste" bD={t > 755.2 ? 150 + Math.sin(t * 6 + k) * 30 : 10} aparece={753.3 + k * 0.2} />)}
           </>
         )}
         {/* primer plano: el bote de Pollard */}
-        {t > 766.2 && (
+        {t >= 766.2 && (
           <>
             <div style={{ position: "absolute", left: XB - 1600, top: -1900, width: 3200, height: 3200, pointerEvents: "none" }}>
               <svg style={{ position: "absolute", left: 1600 - 160, top: 200, overflow: "visible" }} width={320} height={320}><circle cx={160} cy={160} r={150} fill="#f4f0d8" /><circle cx={110} cy={120} r={28} fill="#dcd6b8" /><circle cx={200} cy={200} r={20} fill="#dcd6b8" /></svg>
             </div>
             {HOMBRES.map((m, k) => {
-              const foco = t > 779.6 && t < 790.6 ? (k === 1 ? 1 : 0.55) : 1;
-              const ex = k === 1 && t > 779.6 ? "triste" : k === 0 && t > 787.4 && t < 789.3 ? "miedo" : t > 775.4 ? "miedo" : "triste";
-              return <Persona key={k} x={XB + m.dx + (k === 0 && t > 787.4 ? 60 * prog(t, 787.4, 788) : 0)} y={60} h={300} t={t} seed={m.seed} ropa={m.ropa} casco={k === 0 ? "capitan" : "no"} barba={m.barba} pantalon="#3a3440" expr={ex} flip={k > 1} mira={0.5} opacity={foco} bD={k === 0 && t > 775.4 && t < 780 ? 110 : 10} />;
+              const foco = t >= 779.6 && t < 790.6 ? (k === 1 ? 1 : 0.55) : 1;
+              const ex = k === 1 && t > 779.6 ? "triste" : k === 0 && t >= 787.4 && t < 789.3 ? "miedo" : t > 775.4 ? "miedo" : "triste";
+              return <Persona key={k} x={XB + m.dx + (k === 0 && t > 787.4 ? 60 * prog(t, 787.4, 788) : 0)} y={60} h={300} t={t} seed={m.seed} ropa={m.ropa} casco={k === 0 ? "capitan" : "no"} barba={m.barba} pantalon="#3a3440" expr={ex} flip={k > 1} mira={0.5} opacity={foco} bD={k === 0 && t >= 775.4 && t < 780 ? 110 : 10} />;
             })}
             <Svg x={XB} y={40} s={2.4}>
               <path d="M -250 -40 Q -270 -70 -280 -84 Q -150 -46 0 -44 Q 150 -46 280 -84 Q 270 -70 250 -40 Q 160 30 0 34 Q -160 30 -250 -40 Z" fill="#e8e2d0" stroke="#7a6a56" strokeWidth={5} />
               <path d="M -262 -54 Q 0 -30 262 -54" stroke="#3a6ab0" strokeWidth={8} fill="none" />
               {[-160, -40, 80, 190].map((d, i) => <path key={i} d={`M ${d} -40 l 16 40`} stroke="#b8ac96" strokeWidth={3} />)}
             </Svg>
-            {t > 775.4 && t < 781.4 && <Pajitas x={XB - 290} y={-50} s={0.7} saca={prog(t, 779.0, 779.6)} />}
+            {t >= 775.4 && t < 781.4 && <Pajitas x={XB - 290} y={-50} s={0.7} saca={prog(t, 779.0, 779.6)} />}
             <Burbuja t={t} t0={787.4} t1={789.2} x={XB - 370} y={-360} text="TAKE ME INSTEAD." />
             <Burbuja t={t} t0={789.3} t1={790.5} x={XB - 150} y={-360} text="NO." />
-            {t > 790.65 && t < 792.8 && <Pistola x={XB + 220} y={-110} s={0.5} rot={28} humo={t > 792.55 ? 1 : 0} />}
+            {t >= 790.65 && t < 792.8 && <Pistola x={XB + 220} y={-110} s={0.5} rot={28} humo={t > 792.55 ? 1 : 0} />}
           </>
         )}
       </>
@@ -258,14 +258,14 @@ export const P7: Parte = {
       <Chip t={t} t0={782.8} t1={787.2} text="THE CAPTAIN'S OWN COUSIN" color={C.violeta} x={960} y={140} centro size={56} />
       <Chip t={t} t0={784.6} t1={787.2} text="POLLARD PROMISED HIS MOTHER" color={C.ambar} tinta={C.noche} x={960} y={250} centro size={48} />
       <Chip t={t} t0={790.65} t1={792.4} text="ANOTHER YOUNG MAN · CHOSEN BY LOT" color="#5a5e6a" x={960} y={140} centro size={50} />
-      {t > 792.55 && t < 793.1 && <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: interpolate(t, [792.55, 793.1], [0.9, 0], cl) }} />}
+      {t >= 792.55 && t < 793.1 && <div style={{ position: "absolute", inset: 0, background: "#fff", opacity: interpolate(t, [792.55, 793.1], [0.9, 0], cl) }} />}
       <MapaPacifico t={t} t0={794.1} t1={799.6} tRuta={780} tIsla={0} tRescate={795.4} />
       <Chip t={t} t0={794.4} t1={799.6} text="~90 DAYS LATER · RESCUED" color={C.lima} tinta={C.noche} x={960} y={1010} centro size={50} />
       <div style={{ position: "absolute", inset: 0, opacity: interpolate(t, [803.0, 803.5], [1, 0], cl) }}>
         <Titulo t={t} t0={799.85} t1={803.2} text="8 OF 20 SURVIVED" y={260} size={130} color={C.crema} />
         <Fila t={t} t0={800.0} n={20} vivos={8} tMuere={800.9} y={700} />
       </div>
-      {t > 687.8 && t < 690 && <Emote t={t} t0={687.8} tipo="excl" x={1000} y={360} s={1.4} />}
+      {t >= 687.8 && t < 690 && <Emote t={t} t0={687.8} tipo="excl" x={1000} y={360} s={1.4} />}
     </>
   ),
 };

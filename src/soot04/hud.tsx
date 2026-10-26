@@ -163,7 +163,6 @@ export const Cuenta: React.FC<{ t: number; t0: number; t1: number; de: number; a
 };
 // texto grande que sale (con tiempo de salida)
 export const Titulo: React.FC<{ t: number; t0: number; t1: number; text: string; x?: number; y: number; size?: number; color?: string; borde?: string }> = ({ t1, ...p }) => {
-  if (p.t > t1 + 0.25) return null;
-  const out = interpolate(p.t, [t1, t1 + 0.25], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  return <div style={{ position: "absolute", inset: 0, opacity: out }}><Grande {...p} /></div>;
+  if (p.t > t1) return null; // vuelta 5: sin fundido de salida (dejaba texto fantasma)
+  return <Grande {...p} />;
 };

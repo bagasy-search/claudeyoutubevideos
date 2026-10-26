@@ -87,8 +87,8 @@ export const P5: Parte = {
   pal: [[540.2, "noche", 1.5], [549.0, "humo", 2.5], [556.6, "tarde", 2], [568, "dia", 3]],
   mundo: (t) => {
     const x = wx(t), y = wy(t);
-    const pela = t > 495.5 && t < 521 ? ((t - 495.5) * 140) % 260 : 0;
-    const resbala = t > 519.1 && t < 520.6 ? Math.sin((t - 519.1) * 9) * 18 * (1 - prog(t, 519.1, 520.6)) : 0;
+    const pela = t >= 495.5 && t < 521 ? ((t - 495.5) * 140) % 260 : 0;
+    const resbala = t >= 519.1 && t < 520.6 ? Math.sin((t - 519.1) * 9) * 18 * (1 - prog(t, 519.1, 520.6)) : 0;
     return (
       <>
         <EnBarco t={t} x={XS}>
@@ -101,25 +101,25 @@ export const P5: Parte = {
           {t > 521 && t < 578 && <Humo x={130} y={-340} t={t} s={t > 543 && t < 557 ? 1.3 : 0.75} n={16} col="#1a1418" op={0.85} viento={-200} />}
         </EnBarco>
         {/* el bote que la remolca y la cadena */}
-        {t > 486.5 && t < 492 && <Bote x={x - 900} y={30} t={t} rema={1} flip />}
-        {t > 486.5 && t < 569.6 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><path d={`M ${x - 640 * S} ${y - 10} Q ${x - 640 * S - 200} 40 ${t < 491.6 ? x - 700 : XS - 600} ${t < 491.6 ? 0 : -200}`} stroke="#5a5e6a" strokeWidth={9} strokeDasharray="20 8" fill="none" /></svg>}
+        {t >= 486.5 && t < 492 && <Bote x={x - 900} y={30} t={t} rema={1} flip />}
+        {t >= 486.5 && t < 569.6 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}><path d={`M ${x - 640 * S} ${y - 10} Q ${x - 640 * S - 200} 40 ${t < 491.6 ? x - 700 : XS - 600} ${t < 491.6 ? 0 : -200}`} stroke="#5a5e6a" strokeWidth={9} strokeDasharray="20 8" fill="none" /></svg>}
         {/* la ballena muerta */}
         {t < 574 && <Cachalote x={x} y={y} t={t} s={S} nada={0} rot={t > 569.4 ? 20 * prog(t, 569.4, 573) : 0} />}
         {/* espiral de la tira (rayas que corren sobre el lomo) */}
-        {t > 495.5 && t < 521 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}>{Array.from({ length: 5 }, (_, i) => <path key={i} d={`M ${x - 420 + i * 260 - pela} ${y - 150} q 40 80 0 160`} stroke="#f4d8c4" strokeWidth={14} fill="none" opacity={0.85} />)}</svg>}
+        {t >= 495.5 && t < 521 && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1} height={1}>{Array.from({ length: 5 }, (_, i) => <path key={i} d={`M ${x - 420 + i * 260 - pela} ${y - 150} q 40 80 0 160`} stroke="#f4d8c4" strokeWidth={14} fill="none" opacity={0.85} />)}</svg>}
         {/* brillo del espermaceti y el hombre dentro de la cabeza */}
-        {t > 557.2 && t < 569.4 && <Svg x={x + 480 * S} y={y - 80} s={ent(t, 557.3)}><ellipse rx={200} ry={90} fill="#fff6c8" opacity={0.25 + 0.12 * Math.sin(t * 5)} /></Svg>}
-        {t > 564.3 && t < 569.4 && (
+        {t >= 557.2 && t < 569.4 && <Svg x={x + 480 * S} y={y - 80} s={ent(t, 557.3)}><ellipse rx={200} ry={90} fill="#fff6c8" opacity={0.25 + 0.12 * Math.sin(t * 5)} /></Svg>}
+        {t >= 564.3 && t < 569.4 && (
           <>
             <Svg x={x + 430 * S} y={y - 150 * S} s={1}><ellipse rx={60} ry={16} fill="#2a1a10" /></Svg>
             <Marino i={9} t={t} x={x + 430 * S} y={y - 150 * S + pz(t, [[564.4, -40], [565.8, 60], [567.4, 30], [568.4, 60]])} h={150} expr="sorpresa" bD={150} cD={20} />
-            {t > 566.8 && <Svg x={x + 430 * S + 50} y={y - 150 * S - 60 - Math.abs(Math.sin(t * 3)) * 40}><path d="M -26 -30 L 26 -30 L 20 24 L -20 24 Z" fill="#8a8e98" stroke="#3a3e48" strokeWidth={4} /><ellipse cx={0} cy={-30} rx={26} ry={7} fill="#fff6c8" /></Svg>}
+            {t >= 566.8 && <Svg x={x + 430 * S + 50} y={y - 150 * S - 60 - Math.abs(Math.sin(t * 3)) * 40}><path d="M -26 -30 L 26 -30 L 20 24 L -20 24 Z" fill="#8a8e98" stroke="#3a3e48" strokeWidth={4} /><ellipse cx={0} cy={-30} rx={26} ry={7} fill="#fff6c8" /></Svg>}
           </>
         )}
         <Tira t={t} />
         <Tabla t={t} />
         {/* dos hombres en la plancha; desde 513.9 uno es el chico */}
-        {t > 492.2 && t < 521.5 && (
+        {t >= 492.2 && t < 521.5 && (
           <>
             <Marino i={2} t={t} x={XS - 120} y={TABLA_Y} h={190} expr="neutro" manoD={<Pala x={0} y={0} s={0.5} rot={160 + Math.sin(t * 3) * 14} />} />
             {t < 513.8 ? <Marino i={6} t={t} x={XS + 320} y={TABLA_Y} h={190} flip expr="neutro" manoD={<Pala x={0} y={0} s={0.5} rot={200 + Math.sin(t * 3 + 1) * 14} />} />
@@ -127,7 +127,7 @@ export const P5: Parte = {
           </>
         )}
         {/* tiburones */}
-        {t > 507.4 && t < 521.5 && Array.from({ length: 16 }, (_, i) => {
+        {t >= 507.4 && t < 521.5 && Array.from({ length: 16 }, (_, i) => {
           const r = 380 + (i % 4) * 160, ang = t * (0.35 + (i % 3) * 0.08) + i * 1.3;
           const dir = Math.cos(ang) > 0;
           const sx = x + Math.sin(ang) * r * 1.6, sy = 380 + Math.cos(ang) * r * 0.4 + (i % 4) * 70;
@@ -166,7 +166,7 @@ export const P5: Parte = {
       <Chip t={t} t0={550.3} t1={553.3} text="SKIN" color="#1a1418" x={760} y={140} centro size={50} />
       <Chip t={t} t0={551.2} t1={553.3} text="BUNK" color="#1a1418" x={1160} y={140} centro size={50} />
       <Chip t={t} t0={552.1} t1={553.3} text="HARDTACK" color="#1a1418" x={1560} y={140} centro size={50} />
-      {t > 552.1 && t < 553.4 && <Galleta x={1560} y={380} s={ent(t, 552.2) * 0.8} />}
+      {t >= 552.1 && t < 553.4 && <Galleta x={1560} y={380} s={ent(t, 552.2) * 0.8} />}
       <Chip t={t} t0={553.5} t1={557.0} text="SMELL IT BEFORE YOU SEE IT" color={C.violeta} x={960} y={140} centro size={58} />
       <Chip t={t} t0={557.2} t1={564.2} text="THE TREASURE IN THE HEAD" color={C.ambar} tinta={C.noche} x={960} y={140} centro size={58} />
       <Titulo t={t} t0={559.4} t1={564.2} text="SPERMACETI" y={260} size={130} color={C.crema} />
@@ -175,8 +175,8 @@ export const P5: Parte = {
       <Chip t={t} t0={569.6} t1={572.8} text="BARRELS → BELOW DECK" color={C.tierra} x={960} y={140} centro size={58} />
       <Chip t={t} t0={572.9} t1={575.6} text="AGAIN · AND AGAIN · AND AGAIN" color={C.violeta} x={960} y={140} centro size={56} />
       <Chip t={t} t0={575.6} t1={578.2} text="4 YEARS · UNTIL THE SHIP IS FULL" color={C.rojo} x={960} y={140} centro size={54} />
-      {t > 528.9 && t < 530 && <Emote t={t} t0={528.9} tipo="excl" x={1200} y={480} s={1.5} />}
-      {t > 519.2 && t < 521 && <Emote t={t} t0={519.2} tipo="susto" x={1100} y={420} s={1.4} />}
+      {t >= 528.9 && t < 530 && <Emote t={t} t0={528.9} tipo="excl" x={1200} y={480} s={1.5} />}
+      {t >= 519.2 && t < 521 && <Emote t={t} t0={519.2} tipo="susto" x={1100} y={420} s={1.4} />}
       {t > 546 && t < 549 && <Emote t={t} t0={546} tipo="sudor" x={960} y={520} s={1.5} />}
     </>
   ),

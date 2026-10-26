@@ -164,16 +164,16 @@ export const P2: Parte = {
     const x = bx(t);
     const espejo = (a: number, b: number) => (t > a && t < b ? salidaE(t, a, b) : 0);
     const eCama = espejo(201.0, 205.6), eMuelle = espejo(237.0, 241.4), eQ = espejo(241.0, 266);
-    const qExpr: Expr = t > 252.4 && t < 257.6 ? "enojado" : t > 257.6 ? "orgullo" : "neutro";
+    const qExpr: Expr = t >= 252.4 && t < 257.6 ? "enojado" : t > 257.6 ? "orgullo" : "neutro";
     return (
       <>
         <EnBarco t={t} x={x}>
-          <Tripulacion t={t} expr={(i) => (t > 160.1 && t < 163.5 ? "feliz" : t > 229.7 && t < 241 && i % 2 ? "triste" : "neutro")} />
+          <Tripulacion t={t} expr={(i) => (t >= 160.1 && t < 163.5 ? "feliz" : t >= 229.7 && t < 241 && i % 2 ? "triste" : "neutro")} />
           <Chico x={X_CHICO} y={CUBIERTA} t={t}
             expr={t < 160.1 ? "neutro" : t < 163.5 ? "feliz" : t < 172.2 ? "neutro" : t < 181 ? "sorpresa" : t < 193 ? "feliz" : t < 201 ? "sorpresa" : t < 207.8 ? "triste" : t < 229.7 ? "miedo" : "triste"}
-            bD={t > 209.6 && t < 222 ? 60 + Math.sin(t * 5) * 10 : 8} mira={0.4} salta={160.3} />
+            bD={t >= 209.6 && t < 222 ? 60 + Math.sin(t * 5) * 10 : 8} mira={0.4} salta={160.3} />
           {/* sin sueldo: la moneda tachada */}
-          {t > 152.7 && t < 155.9 && <Svg x={X_CHICO} y={CUBIERTA - 380} s={ent(t, 152.8) * interpolate(t, [155.4, 155.9], [1, 0], cl) * 1.3}><Moneda0 r={50} /><line x1={-60} y1={-60} x2={60} y2={60} stroke={C.rojo} strokeWidth={14} strokeLinecap="round" /></Svg>}
+          {t >= 152.7 && t < 155.9 && <Svg x={X_CHICO} y={CUBIERTA - 380} s={ent(t, 152.8) * interpolate(t, [155.4, 155.9], [1, 0], cl) * 1.3}><Moneda0 r={50} /><line x1={-60} y1={-60} x2={60} y2={60} stroke={C.rojo} strokeWidth={14} strokeLinecap="round" /></Svg>}
           <Barra t={t} t0={164.6} x={X_CAPITAN} den={15} rol="CAPTAIN" />
           <Barra t={t} t0={167.1} x={XMARINO(0)} den={20} rol="1ST MATE" />
           <Barra t={t} t0={169.9} x={XMARINO(3)} den={80} rol="HARPOONER" />
@@ -218,11 +218,11 @@ export const P2: Parte = {
             <CasaNan x={x + 2400 + 520} y={-1250} s={0.8 * eQ} rica={t > 263.1} luz={t > 263.1} />
             {[-180, 0, 180].map((d, k) => (
               <Persona key={k} x={x + 2400 + d} y={-1250} h={(k === 1 ? 270 : 240) * eQ} t={t} seed={90 + k} ropa={CUAQUERO} casco={k === 2 ? "no" : "cuaquero"} pantalon="#45424a" expr={qExpr} flip={k === 2}
-                bD={k === 1 && t > 257.7 ? 70 : t > 244.7 && t < 252 ? 150 : 8} cD={t > 244.7 && t < 252 && k !== 1 ? 120 : 30} bI={t > 244.7 && t < 252 ? 150 : 8} cI={t > 244.7 && t < 252 ? 120 : 20} />
+                bD={k === 1 && t > 257.7 ? 70 : t >= 244.7 && t < 252 ? 150 : 8} cD={t >= 244.7 && t < 252 && k !== 1 ? 120 : 30} bI={t >= 244.7 && t < 252 ? 150 : 8} cI={t >= 244.7 && t < 252 ? 120 : 20} />
             ))}
-            {t > 252.4 && t < 257.6 && <Cachalote x={x + 2400 + 1150} y={-1150 - prog(t, 252.5, 253.3) * 140} t={t} s={0.55} rot={-14} chorro={1} enojo />}
-            {t > 252.6 && t < 257.6 && <Arpon x={x + 2400 + 900} y={-1420} s={1.2} rot={30} />}
-            {t > 263.1 && Array.from({ length: 10 }, (_, i) => {
+            {t >= 252.4 && t < 257.6 && <Cachalote x={x + 2400 + 1150} y={-1150 - prog(t, 252.5, 253.3) * 140} t={t} s={0.55} rot={-14} chorro={1} enojo />}
+            {t >= 252.6 && t < 257.6 && <Arpon x={x + 2400 + 900} y={-1420} s={1.2} rot={30} />}
+            {t >= 263.1 && Array.from({ length: 10 }, (_, i) => {
               const u = ((t - 263.1) * 0.9 + i * 0.1) % 1;
               return <Svg key={i} x={interpolate(u, [0, 1], [x, x + 2400 + 520])} y={interpolate(u, [0, 1], [-300, -1350]) - Math.sin(u * Math.PI) * 300} s={0.5}><Moneda0 /></Svg>;
             })}
@@ -257,7 +257,7 @@ export const P2: Parte = {
         <Chip t={t} t0={198.5} t1={200.9} text="A YEAR" color={C.rojo} x={1240} y={450} centro size={54} />
         <Titulo t={t} t0={205.4} t1={207.6} text="BUT WAIT…" y={210} size={140} color={C.crema} />
         <Titulo t={t} t0={207.8} t1={209.6} text="THE DEDUCTIONS" y={210} size={130} color={C.rojo} />
-        {t > 207.8 && t < 229.6 && (
+        {t >= 207.8 && t < 229.6 && (
           <div style={{ position: "absolute", right: 70, top: 60, transform: `translateX(${sacude}px) scale(${ent(t, 207.9)})`, transformOrigin: "right top", fontFamily, fontWeight: 700, background: "#f4e6c4", border: "6px solid #3a2418", borderRadius: 18, padding: "10px 30px", textAlign: "center", boxShadow: "0 10px 0 rgba(0,0,0,.3)" }}>
             <div style={{ fontSize: 30, color: "#3a2418", letterSpacing: 2 }}>YOUR SHARE</div>
             <div style={{ fontSize: 110, color: v < 0 ? C.rojo : "#1a6a3a" }}>{v < 0 ? `-$${-v}` : `$${v}`}</div>
@@ -271,7 +271,7 @@ export const P2: Parte = {
         <Chip t={t} t0={222.4} t1={229.4} text="THE SLOP CHEST" color={C.tierra} x={560} y={160} centro size={62} />
         <Chip t={t} t0={225.6} t1={229.4} text="PRICES TO MAKE A PIRATE BLUSH" color={C.rosa} x={560} y={260} centro size={44} />
         <Chip t={t} t0={228.0} t1={229.4} text="DEDUCTED" color={C.rojo} x={960} y={900} centro size={80} />
-        {t > 229.7 && t < 237.0 && [["SEAMAN · 4 YEARS", "$3.12"], ["GREENHAND · 3 YEARS", "$0.75"], ["GREENHAND · 4 YEARS", "-$11.40"]].map(([a, b], i) => {
+        {t >= 229.7 && t < 237.0 && [["SEAMAN · 4 YEARS", "$3.12"], ["GREENHAND · 3 YEARS", "$0.75"], ["GREENHAND · 4 YEARS", "-$11.40"]].map(([a, b], i) => {
           const e = ent(t, 230.6 + i * 1.3) * interpolate(t, [236.6, 237.0], [1, 0], cl);
           return (
             <div key={i} style={{ position: "absolute", left: 240 + i * 500, top: 640, width: 440, transform: `scale(${e}) rotate(${(i - 1) * 3}deg)`, fontFamily, fontWeight: 700, background: "#f4e6c4", border: "5px solid #3a2418", borderRadius: 14, padding: "18px 20px", textAlign: "center", boxShadow: "0 10px 0 rgba(0,0,0,.3)" }}>
@@ -292,11 +292,11 @@ export const P2: Parte = {
         <Titulo t={t} t0={255.6} t1={257.6} text="THE FIGHTING QUAKERS" y={200} size={120} color={C.rojo} />
         <Chip t={t} t0={257.7} t1={263.0} text="SUNDAY: PRAY" color={C.teal} tinta={C.noche} x={560} y={170} centro size={58} />
         <Chip t={t} t0={259.6} t1={263.0} text="MONDAY: SIGN YOU AT 1/175" color={C.rojo} x={1300} y={170} centro size={52} />
-        {t > 259.7 && t < 263.0 && <Articulos t={t} t0={259.8} x={1500} y={640} s={0.55} lay="1/175" tLay={260.6} t1={262.8} />}
+        {t >= 259.7 && t < 263.0 && <Articulos t={t} t0={259.8} x={1500} y={640} s={0.55} lay="1/175" tLay={260.6} t1={262.8} />}
         <Chip t={t} t0={263.2} t1={265.8} text="NOT RICH BY ACCIDENT" color={C.oro} tinta={C.noche} x={960} y={170} centro size={66} />
-        {t > 160.2 && t < 163 && <Emote t={t} t0={160.2} tipo="brillos" x={960} y={560} s={1.6} />}
-        {t > 172.3 && t < 176 && <Emote t={t} t0={172.4} tipo="preg" x={1100} y={420} s={1.4} />}
-        {t > 205.5 && t < 208 && <Emote t={t} t0={205.5} tipo="excl" x={1100} y={420} s={1.4} />}
+        {t >= 160.2 && t < 163 && <Emote t={t} t0={160.2} tipo="brillos" x={960} y={560} s={1.6} />}
+        {t >= 172.3 && t < 176 && <Emote t={t} t0={172.4} tipo="preg" x={1100} y={420} s={1.4} />}
+        {t >= 205.5 && t < 208 && <Emote t={t} t0={205.5} tipo="excl" x={1100} y={420} s={1.4} />}
       </>
     );
   },
