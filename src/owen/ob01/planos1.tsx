@@ -16,6 +16,7 @@ import { Halden, HAL_PISO, HAL_PUNTOS, MostradorHalden, Formulario } from "../mu
 import { AdnCpG, DosRelojes, Pizarra } from "../ciencia";
 import { Etq, HudOwen, Marco, Notas, Mano } from "../comun";
 import { EnBus, ESC, kDe, OwenAlVolante, Pas, Pasajero } from "./base";
+import { Participantes47 } from "../ob03/planos";
 
 export const ROJO_OWEN = "#ff5a4a";
 const P = TF_PISO, A = TF_ARRIBA;
@@ -191,19 +192,18 @@ export const P10Halden: React.FC = () => {
   return (
     <Escena Set={Halden} pal={PAL} claves={cl} seed={10} setProps={{ hora: "manana", tablet: "47 / 47" }}
       medio={<>
-        <Actor look={HALE} escala={ESC} seed={8} ruta={[{ f: 0, x: HAL_PUNTOS.recepcion, y: HP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "parado" }, { f: k(54.2), v: "hablar" }]} caras={[{ f: 0, v: "feliz" }]} habla={[[k(54.3), k(56.8)]]} />
+        <Actor look={HALE} escala={ESC} seed={8} ruta={[{ f: 0, x: HAL_PUNTOS.recepcion, y: HP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: "parado" }, { f: 10, v: { hD: 80, cD: 10 } }, { f: 40, v: "parado" }, { f: k(44.2), v: "señalar" }, { f: k(46.0), v: "parado" }, { f: k(49.6), v: { hD: 70, cD: 60, hI: 70, cI: 60 } }, { f: k(51.0), v: "parado" }, { f: k(54.2), v: "hablar" }]} caras={[{ f: 0, v: "feliz" }]} habla={[[8, 40], [k(44.2), k(46.0)], [k(54.3), k(56.8)]]} miradas={[{ f: 0, v: { x: 1, y: 0.2 } }]} />
         <MostradorHalden />
-        <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: HAL_PUNTOS.silla - 140, y: HP }]} dir={[{ f: 0, v: 1 }]} poses={[{ f: 0, v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 70, cD: 40, hI: 25, cI: 50 } }, { f: k(44), v: "sentado" }]} asiento={[{ f: 0, v: 120 }]} caras={[{ f: 0, v: "determinado" }, { f: k(46), v: "feliz" }, { f: k(54.5), v: "duda" }]} />
+        <Actor look={OWEN_CASA} escala={ESC} seed={6} ruta={[{ f: 0, x: HAL_PUNTOS.silla - 140, y: HP }]} dir={[{ f: 0, v: 1 }]} poses={[...Array.from({ length: 8 }).map((_, i) => ({ f: k(40.6) + i * 9, v: { tronco: 14, pI: 88, rI: 88, pD: 92, rD: 92, hD: 60 + (i % 2) * 16, cD: 40 - (i % 2) * 14, hI: 25, cI: 50, cabeza: 14 } })), { f: k(44), v: "sentado" }, { f: k(46.4), v: { tronco: -6, pI: 88, rI: 88, pD: 92, rD: 92, hD: 150, cD: 20 } }, { f: k(48.0), v: "sentado" }, { f: k(49.6), v: { tronco: 4, pI: 88, rI: 88, pD: 92, rD: 92, hD: 60, cD: 80, hI: 60, cI: 100, cabeza: 18 } }, { f: k(51.2), v: "sentado" }]} asiento={[{ f: 0, v: 120 }]} caras={[{ f: 0, v: "determinado" }, { f: k(46), v: "feliz" }, { f: k(54.5), v: "duda" }]} miradas={[{ f: 0, v: { x: 0.3, y: 0.8 } }, { f: k(44), v: { x: -1, y: 0 } }, { f: k(49.6), v: { x: 0.2, y: 0.8 } }, { f: k(51.2), v: { x: -1, y: 0 } }]} />
       </>}
       hud={<>
-        <AbsoluteFill style={{ background: "#fff6e0", opacity: 0.12 }} />
         <Calendario texto="3 DAYS AGO" desde={0} hasta={k(44)} />
         {f < k(44.2) && <svg viewBox="0 0 1920 1080" style={{ position: "absolute", inset: 0 }}><Formulario x={1560} y={760 + Math.max(0, 20 - f) * 20} s={1.4} firma={firma} rot={-5} /></svg>}
         <Pildora texto="12 WEEKS · $4,700" x={960} y={160} desde={k(44.2)} hasta={k(49.4)} color={VERDE} />
-        <Mano texto="= grandma's hip surgery" x={1240} y={300} desde={k(46.4)} hasta={k(49.4)} color="#ffd27a" tam={60} />
+        <Mano texto="= grandma's hip surgery" x={1240} y={300} desde={k(46.4)} hasta={k(49.4)} color="#ffd27a" tam={64} />
         <Pildora texto="PARTICIPANT 47 OF 47" x={960} y={900} desde={k(51.2)} hasta={k(54.0)} color="#f4efe4" />
         <Contador lineas={[{ etiqueta: "PARTICIPANTS", claves: "47/47", color: VERDE }]} tam={38} desde={k(51.2)} />
-        <Globo texto="Side effects: mild and temporary." x={830} y={330} desde={k(54.3)} hasta={k(57.2)} cola="abajo" tam={40} />
+        <Globo texto="Side effects: mild and temporary." x={830} y={330} desde={k(54.3)} hasta={k(57.2)} cola="abajo" tam={48} />
         <HudOwen part={null} />
       </>} />
   );
@@ -214,9 +214,9 @@ export const P11Semana: React.FC = () => {
   const k = kDe(57.2);
   return (
     <AbsoluteFill>
-      <Pizarra><g /></Pizarra>
-      <Mano texto="WEEK 1" x={960} y={420} desde={0} color="#f4efe4" tam={170} />
-      <Pildora texto="THE PART THAT ISN'T MADE UP ↓" x={960} y={700} desde={k(58.6)} color={VERDE} />
+      <Pizarra><Participantes47 desde={4} apaga={99999} owen={k(58.0)} fuera={[]} /></Pizarra>
+      <Mano texto="WEEK 1" x={960} y={170} desde={0} color="#f4efe4" tam={150} />
+      <Pildora texto="THE PART THAT ISN'T MADE UP ↓" x={960} y={880} desde={k(58.6)} color={VERDE} tam={44} />
       <HudOwen part="47/47" />
     </AbsoluteFill>
   );
