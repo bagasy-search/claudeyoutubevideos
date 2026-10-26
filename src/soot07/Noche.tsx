@@ -12,6 +12,7 @@ import { CieloNoche, Horizonte, Siluetas, Suelo, Fachada, Frente, Oscuridad, Cap
 import { Carro, Carga, Caidas, Caida, tCaida, Asomado, Inundacion, Chorro, Derrumbe, Escalera, subidaPos, Puntales, Ratones, Lampara, Gente, Peligros, MuroSombras, ventana, cl, en, lerp } from "./piezas";
 import { Portada } from "./Portada";
 import { MapaCielo, RelojNoche, Balanza, ReglaAltura, Estrellitas } from "./mapas";
+import { Perspectiva } from "./perspectiva";
 
 export const NOCHE_DUR = DUR;
 const H = 270; // alto del protagonista
@@ -505,6 +506,7 @@ export const Noche: React.FC = () => {
         </AbsoluteFill>
       </CamaraMano>
       {/* OJO v3: carteles e inserts fuera de la cámara en mano (el balanceo los sacaba del cuadro por arriba) */}
+      <Perspectiva t={t} />
       <Piezas t={t} />
       <Hud t={t} />
       {(() => { const q = pz(px, pyProt - H * 0.82); return <Inserto t={t} px={cl(q.x, 0, 1920)} py={cl(q.y, 0, 1080)} sopa={sopa && t < M.limpia} />; })()}

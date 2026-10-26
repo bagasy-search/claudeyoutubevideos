@@ -471,6 +471,52 @@ ins({ v: "retrato", t: M.juv6, t1: atD(M.juv6, "complained that") - 0.2, titulo:
 ins({ v: "cta", t: M.cta + 0.3, t1: M.fin + 10, titulo: "YOU SURVIVED THE NIGHT", fondo: "violeta", pose: "celebra" });
 INS.sort((a, b) => a.t - b.t);
 
+// OJO v4: escenas en la CALLE EN PERSPECTIVA (set del molde) — trampas como planos de acción y caminatas hacia cámara
+export type EscTipo = "camina" | "gente" | "oscuro" | "oscuro2" | "linterna" | "carro" | "carro2" | "ventanas" | "baldazo" | "basura" | "maceta" | "ladron" | "agua" | "fuego" | "huida" | "vigiles" | "cadena";
+export type Esc = { t: number; d: number; tipo: EscTipo; p?: number };
+export const ESC: Esc[] = [];
+const es = (t: number, d: number, tipo: EscTipo, p?: number) => {
+  ESC.push({ t, d, tipo, p });
+  s(t, "whoosh_big", -4);
+  const x = (dt: number, pool: string, g = -4) => s(t + dt, pool, g);
+  if (tipo === "camina" || tipo === "gente" || tipo === "linterna") [0.4, 1.0, 1.6, 2.2, 2.8, 3.4, 4.0, 4.6].forEach((dt) => x(dt, "step", -12));
+  if (tipo === "gente") x(0.5, "crowd_angry", -16);
+  if (tipo === "oscuro" || tipo === "oscuro2") { x(0.2, "drone", -8); x(2.4, "suspense", -6); x(3.6, "gasp", -6); }
+  if (tipo === "carro" || tipo === "carro2") { x(0.3, "rumble", -6); x(0.6, "hoof", -4); x(1.4, "hoof", -3); x(1.9, "roll", -3); x(2.2, "gasp", -4); x(2.5, "whoosh_big", -2); x(3.6, "hoof", -6); }
+  if (tipo === "ventanas") { x(0.5, "creak", -6); x(1.3, "creak", -6); x(2.2, "snore", -8); }
+  if (tipo === "baldazo" || tipo === "basura") { x(1.2, "creak", -4); x(2.3, "whoosh", -3); x(2.75, "splash", 0); x(2.9, "gasp", -3); if (tipo === "basura") x(3.4, "splash", -4); }
+  if (tipo === "maceta") { x(1.2, "creak", -5); x((p ?? 4.3) - 0.6, "whoosh", -3); x(p ?? 4.3, "collapse", -2); x((p ?? 4.3) + 0.2, "gasp", -4); }
+  if (tipo === "ladron") { x(0.3, "drone", -8); x(1.5, "step", -6); x(2.4, "metal", -4); x(3.0, "gasp", -2); x(3.2, "whoosh", -4); }
+  if (tipo === "agua") { x(0.3, "splash", -6); x(1.6, "splash", -6); x(3.0, "splash", -5); x(4.4, "splash", -6); }
+  if (tipo === "fuego" || tipo === "huida") { x(0.2, "flame", -2); x(1.0, "crowd_angry", -6); x(2.6, "collapse", -6); x(3.4, "flame", -4); }
+  if (tipo === "vigiles" || tipo === "cadena") { x(0.3, "stomp", -4); x(0.9, "stomp", -5); x(1.5, "splash", -6); x(2.6, "splash", -6); x(3.8, "flame", -8); }
+  return t;
+};
+es(31.5, 5.5, "camina");
+es(82, 6, "oscuro");
+es(100.5, 6, "linterna");
+es(136, 6, "camina");
+es(189.5, 6, "carro");
+es(243.5, 5.5, "carro2");
+es(267.5, 5.5, "ventanas");
+es(299, 6, "baldazo");
+es(319, 6, "basura");
+es(335, 6, "camina");
+es(404.5, 6, "maceta", M.cayo - 404.5);
+es(428.6, 6, "ladron");
+es(463, 6, "oscuro2");
+es(500, 5.5, "camina");
+es(563, 6, "agua");
+es(610, 6, "fuego");
+es(704.5, 6, "huida");
+es(718.5, 6, "vigiles");
+es(749, 6, "cadena");
+es(809, 6, "gente");
+es(828, 6, "camina");
+es(868, 6, "camina");
+// ninguna escena pisa un inserto
+for (let k = ESC.length - 1; k >= 0; k--) { const e = ESC[k]; const ch = INS.find((i) => i.t < e.t + e.d && i.t1 + 0.5 > e.t); if (ch) { if (ch.t - e.t >= 4) e.d = ch.t - e.t; else ESC.splice(k, 1); } }
+
 // caminata y oscuridad, ordenadas
 VEL.sort((a, b) => a[0] - b[0]); OSC.sort((a, b) => a[0] - b[0]); FUEGO.sort((a, b) => a[0] - b[0]); PLANOS.sort((a, b) => a[0] - b[0]);
 // OJO v3: ningún plano general dura más de 4,5 s (vuelve al plano medio) y ninguna mirada arriba corta al nene por la mitad
