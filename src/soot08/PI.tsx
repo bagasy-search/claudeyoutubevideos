@@ -5,7 +5,7 @@ import { Campana } from "./kit2";
 import { AtlanticoMapa, PlantaAlgodon, Carta, Estatua, Velero, Mar } from "./kit3";
 import { Espacio, camara, K, CieloHora, Horizonte, Pueblo, Sala, RutaAlgodon, Arbolito, NINO, NINA, OBRERO, DUENO, GenteFab, Gente, FCX } from "./mundo";
 import { Gran, Cuenta, Sello, Tilde, Carretes, Flash, sacudon, Velo, Latigo, Lista, Globo } from "./capas";
-import { Retrato } from "./piezas";
+import { Retrato, Primer } from "./piezas";
 import { Persona } from "./persona";
 
 // PARTE I · EL GIRO (718,8-900,6 s). Los chicos hablan ante el comité → la carta de Oastler, «Yorkshire Slavery» →
@@ -19,7 +19,7 @@ const KI: K[] = [
   [718.8, 0, -620, 2.0], [720.4, 300, -600, 0.62], [722.4, 350, -540, 0.92], [729.7, 300, -600, 0.7],
   [729.8, -1300, -500, 0.8], [736.4, -1150, -480, 0.85], [744.8, -1300, -400, 1.0], [748.6, -1250, -400, 1.0], [750.3, 2750, -300, 1.2], [755.6, 2800, -300, 1.2], [756.5, 2900, -330, 0.95], [761.6, 2950, -330, 0.97],
   [761.71, 4300, -1450, 0.95], [769.0, 4380, -1400, 1.25], [779.5, 4350, -1420, 1.1],
-  [779.6, 2650, -330, 0.95], [790.2, 2800, -330, 1.0], [801.2, 2950, -330, 0.95],
+  [779.6, 2650, -250, 0.85], [790.2, 2800, -250, 0.9], [801.2, 2950, -250, 0.85],
   [801.27, -4700, -420, 0.7], [805.0, -4800, -330, 1.1], [809.7, -4700, -330, 1.15], [813.8, -4500, -460, 0.8], [813.9, -1600, -520, 0.55], [817.4, -200, -520, 0.55],
   [821.75, 3300, -1500, 0.32], [823.9, 3300, -1500, 0.3],
   [823.95, -1900, -480, 0.68], [836.7, -1000, -480, 0.72],
@@ -60,20 +60,20 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       : [];
   const gP: GenteFab[] = [];
   if (s === "calle") {
-    [-2100, -1700, -1350, -950, -550].forEach((x, i) => gP.push({ seed: 160 + i, x, y: 0, h: 460 + (i % 2) * 30, ropa: OBRERO(i), gorro: i % 2 ? "cofia" : "copa", largo: i % 2 === 1, expr: t > 744.8 ? "enojado" : t > 739.2 ? "sorpresa" : "neutro", flip: i % 2 === 0, habla: t > 744.8 && Math.floor(t * 4 + i) % 2 === 0, manoD: t < 744.8 ? <div style={{ position: "absolute", left: -40, top: -50, width: 80, height: 100, background: "#f6ecd0", border: "4px solid #c9a96a" }} /> : undefined, bD: t < 744.8 ? 60 : 0, cD: 70 }));
+    [-2100, -1700, -1350, -950, -550].forEach((x, i) => gP.push({ seed: 160 + i, x, y: 0, h: 460 + (i % 2) * 30, ropa: OBRERO(i), gorro: i % 2 ? "cofia" : "copa", largo: i % 2 === 1, expr: t > 744.8 ? "enojado" : t > 739.2 ? "sorpresa" : "neutro", flip: i % 2 === 0, habla: t > 744.8 && Math.floor(t * 4 + i) % 2 === 0, manoD: <div style={{ position: "absolute", left: -40, top: -50, width: 80, height: 100, background: "#f6ecd0", border: "4px solid #c9a96a" }} />, bD: t < 744.8 ? 60 : 150 + 25 * Math.sin(t * 9 + i * 2), cD: t < 744.8 ? 70 : 20, bI: t > 744.8 && i % 2 ? 140 + 20 * Math.sin(t * 8 + i) : 0, salta: t > 744.9 && t < 747.2 ? 744.9 + (i % 2) * 0.35 + Math.floor((t - 744.9 - (i % 2) * 0.35) / 0.75) * 0.75 : undefined }));
     // los chicos menores de 9 salen por el portón
     if (t > 750.4) for (let i = 0; i < 5; i++) gP.push({ seed: 170 + i, x: FCX - 200 - Math.max(0, t - 750.6 - i * 0.4) * 230, y: 0, h: 220 + (i % 2) * 20, ropa: i % 2 ? NINA : NINO, gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 1.3, flip: true, expr: "feliz", opacity: ent(t, 750.6 + i * 0.4) });
     if (t > 755.5) [1900, 2250, 2600, 2950].forEach((x, i) => gP.push({ seed: 180 + i, x, y: 0, h: 480, ropa: DUENO, gorro: "copa", expr: "neutro", aparece: 755.6 + i * 0.4, mira: 1 }));
   }
   if (s === "fiesta") {
-    for (let i = 0; i < 9; i++) gP.push({ seed: 190 + i, x: 1700 + i * 260, y: 0, h: i % 3 === 2 ? 260 : 450 + (i % 2) * 40, ropa: i % 3 === 2 ? NINO : OBRERO(i), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, expr: t < 788.1 ? "feliz" : "neutro", salta: t > 786 && t < 788.1 ? 1 : t < 786 && Math.sin(t * 5 + i * 1.7) > 0.6 ? 0.6 : 0, bD: t > 786 && t < 788.1 ? 160 : t < 788.1 ? 90 + 50 * Math.sin(t * 6 + i) : 20, bI: t > 786 && t < 788.1 ? 160 : t < 788.1 ? 40 + 40 * Math.sin(t * 5 + i * 2) : 20, inclina: t > 788.1 ? 8 + 4 * Math.sin(t * 2 + i) : 0, habla: t > 788.1 && Math.floor(t * 3 + i) % 3 === 0, flip: i % 2 === 1 });
+    for (let i = 0; i < 9; i++) gP.push({ seed: 190 + i, x: 1700 + i * 260, y: 0, h: i % 3 === 2 ? 260 : 450 + (i % 2) * 40, ropa: i % 3 === 2 ? NINO : OBRERO(i), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, expr: t < 788.1 ? "feliz" : "neutro", salta: t > 779.8 && t < 788.1 ? 779.8 + (i % 3) * 0.3 + Math.floor((t - 779.8 - (i % 3) * 0.3) / (t > 786 ? 0.7 : 1.6)) * (t > 786 ? 0.7 : 1.6) : undefined, bD: t > 786 && t < 788.1 ? 160 : t < 788.1 ? 90 + 50 * Math.sin(t * 6 + i) : 20, bI: t > 786 && t < 788.1 ? 160 : t < 788.1 ? 40 + 40 * Math.sin(t * 5 + i * 2) : 20, inclina: t > 788.1 ? 8 + 4 * Math.sin(t * 2 + i) : 0, habla: t > 788.1 && Math.floor(t * 3 + i) % 3 === 0, flip: i % 2 === 1 });
   }
   if (s === "hambre") {
-    for (let i = 0; i < 7; i++) gP.push({ seed: 200 + i, x: -2500 + i * 260, y: 0, h: i % 3 === 1 ? 250 : 440, ropa: i % 3 === 1 ? NINA : OBRERO(i), gorro: i % 2 ? "cofia" : undefined, largo: i % 2 === 1, expr: "triste", bD: 70, cD: 60, manoD: <div style={{ position: "absolute", left: -30, top: -14, width: 60, height: 28, background: "#d8cfc0", borderRadius: "0 0 30px 30px", border: "4px solid #2a1530" }} /> });
+    for (let i = 0; i < 7; i++) gP.push({ seed: 200 + i, x: -2500 + i * 260, y: 0, h: i % 3 === 1 ? 250 : 440, ropa: i % 3 === 1 ? NINA : OBRERO(i), gorro: i % 2 ? "cofia" : undefined, largo: i % 2 === 1, expr: t > 834.8 && t < 836.8 ? "enojado" : "triste", habla: t > 834.8 && t < 836.8 && Math.floor(t * 5 + i) % 2 === 0, bD: 70, cD: 60, manoD: <div style={{ position: "absolute", left: -30, top: -14, width: 60, height: 28, background: "#d8cfc0", borderRadius: "0 0 30px 30px", border: "4px solid #2a1530" }} /> });
     gP.push({ seed: 210, x: -520, y: 0, h: 470, ropa: OBRERO(4), gorro: "cofia", largo: true, flip: true, expr: "triste", bD: 100, cD: 40 });
   }
   if (s === "carta") {
-    for (let i = 0; i < 7; i++) gP.push({ seed: 220 + i, x: -2100 + i * 300, y: 0, h: 440 + (i % 2) * 40, ropa: OBRERO(i), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, expr: t > 854.7 ? "orgullo" : "sorpresa", mira: 1, flip: i > 3, bD: t > 862 ? 150 + 15 * Math.sin(t * 7 + i) : t > 854.7 ? 60 : 0, salta: t > 864.6 && t < 866 && i % 2 === 0 ? 0.7 : 0, habla: t > 855 && t < 861 && Math.floor(t * 3 + i) % 4 === 0 });
+    for (let i = 0; i < 7; i++) gP.push({ seed: 220 + i, x: -2100 + i * 300, y: 0, h: 440 + (i % 2) * 40, ropa: OBRERO(i), gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, expr: t > 854.7 ? "orgullo" : "sorpresa", mira: 1, flip: i > 3, bD: t > 862 ? 150 + 15 * Math.sin(t * 7 + i) : t > 854.7 ? 60 : 0, salta: i % 2 === 0 ? 864.6 + i * 0.08 : undefined, habla: t > 855 && t < 861 && Math.floor(t * 3 + i) % 4 === 0 });
   }
   const gPf: GenteFab[] = [];
   if (s === "plaza") {
@@ -84,7 +84,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       gPf.push({ seed: 242, x: FCX + 760, y: 0, h: 450, ropa: OBRERO(3), gorro: "cofia", largo: true, flip: true, expr: "orgullo", miraY: -1 });
     }
     // «la mayoría pasa de largo»: caminan POR DELANTE, nunca tapados
-    if (t > 879.4) for (let i = 0; i < 5; i++) {
+    if (t > 879.4 && t < 886.4) for (let i = 0; i < 5; i++) {
       const x = FCX - 2200 + ((t - 879.4) * 230 + i * 700) % 4400;
       gPf.push({ seed: 230 + i, x, y: 40, h: 240 + (i % 3) * 12, ropa: i % 2 ? NINA : NINO, gorro: i % 2 ? "cofia" : "gorra", largo: i % 2 === 1, camina: 1.2, expr: "neutro" });
     }
@@ -183,7 +183,8 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       {t > 733 && t < 744.6 && <div style={{ position: "absolute", left: 0, top: 0, transform: `scale(${ent(t, 733) * (1 - prog(t, 744.3, 744.6))})`, transformOrigin: "560px 540px" }}><Pergamino x={560} y={560} w={640} abre={prog(t, 733.1, 733.9)} titulo="LEEDS MERCURY" /></div>}
       <Gran t={t} t0={736.5} t1={739.0} text="“YORKSHIRE SLAVERY”" y={200} size={110} color={C.rojo} />
       <Chip t={t} t0={739.2} t1={744.6} text="MILL CHILDREN: TREATED WORSE THAN THE ENSLAVED" color={C.rojo} x={960} y={150} centro size={52} />
-      <Gran t={t} t0={744.9} t1={747.0} text="READERS WERE FURIOUS" y={200} size={110} color={C.rojo} />
+      <Velo t={t} t0={744.85} t1={747.0} op={0.35} />
+      <Gran t={t} t0={744.9} t1={747.0} text="READERS WERE FURIOUS" y={190} size={120} color={C.rojo} />
       <Chip t={t} t0={747.1} t1={749.1} text="THE LETTER WOULD NOT GO AWAY" color={C.violeta} x={960} y={150} centro size={64} />
       <Velo t={t} t0={749.3} t1={760.4} op={0.6} />
       <Sello t={t} t0={749.4} t1={760.3} text="FACTORY ACT · 1833" x={960} y={190} size={100} color={C.lima} rot={-6} />
@@ -192,7 +193,7 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={757.9} t1={760.3} text="FOR THE WHOLE COUNTRY" color={C.rojo} x={1450} y={830} centro size={52} />
       <Chip t={t} t0={760.5} t1={761.6} text="BUT IT WAS A START" color={C.lima} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={761.8} t1={763.4} text="ONE SMALL PROBLEM" color={C.noche} x={960} y={150} centro size={66} />
-      <Gran t={t} t0={763.6} t1={765.4} text="HOW DO YOU PROVE A CHILD IS 9?" y={200} size={96} color={C.ambar} />
+      <Gran t={t} t0={763.6} t1={765.4} text="HOW DO YOU PROVE A CHILD IS 9?" y={920} size={92} color={C.ambar} />
       <Chip t={t} t0={765.6} t1={768.9} text="NO BIRTH CERTIFICATES UNTIL 1837" color={C.rojo} x={960} y={150} centro size={60} />
       <Chip t={t} t0={769.1} t1={770.4} text="CHECK THE HEIGHT" color={C.violeta} x={960} y={150} centro size={64} />
       <Chip t={t} t0={770.5} t1={772.4} text="CHECK THE TEETH" color={C.violeta} x={960} y={150} centro size={64} />
@@ -201,12 +202,12 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Globo t={t} t0={774.7} t1={779.4} x={560} y={300} text="He's just big for his age!" size={48} w={620} />
       <Chip t={t} t0={775.5} t1={779.4} text="PARENTS NEEDED THE MONEY" color={C.rojo} x={1250} y={950} centro size={56} />
       <Velo t={t} t0={779.65} t1={786.0} op={0.25} />
-      <Sello t={t} t0={779.7} t1={786.0} text="TEN HOURS ACT · 1847" x={960} y={200} size={100} color={C.lima} rot={-6} />
-      <Cuenta t={t} t0={782.6} t1={784.6} de={14} a={10} suf=" HOURS A DAY" x={960} y={420} size={110} color={C.ambar} fuera={786.0} />
+      <Sello t={t} t0={779.7} t1={786.0} text="TEN HOURS ACT · 1847" x={960} y={170} size={96} color={C.lima} rot={-6} />
+      <Cuenta t={t} t0={782.6} t1={784.6} de={14} a={10} suf=" HOURS A DAY" x={960} y={960} size={100} color={C.ambar} fuera={786.0} />
       <Chip t={t} t0={786.1} t1={788.0} text="THEY CELEBRATED IN THE STREETS" color={C.oro} tinta={C.noche} x={960} y={150} centro size={62} />
       <Chip t={t} t0={788.2} t1={790.1} text="NOT THE END OF CHILD LABOUR" color={C.rojo} x={960} y={150} centro size={62} />
       <Chip t={t} t0={790.3} t1={796.0} text="½ DAY AT WORK · ½ DAY AT SCHOOL" color={C.teal} tinta={C.noche} x={960} y={150} centro size={62} />
-      <Chip t={t} t0={793.0} t1={796.0} text="FOR DECADES" color={C.noche} x={960} y={280} centro size={56} />
+      <Chip t={t} t0={793.0} t1={796.0} text="FOR DECADES" color={C.noche} x={960} y={960} centro size={56} />
       <Chip t={t} t0={796.2} t1={801.1} text="14 HOURS UNDER A RUNNING MACHINE: ENDING" color={C.lima} tinta={C.noche} x={960} y={150} centro size={56} />
       <Gran t={t} t0={801.3} t1={804.7} text="ONE MORE CHAPTER" y={200} size={120} color={C.crema} />
       <Chip t={t} t0={803.0} t1={804.7} text="THE STRANGEST ONE" color={C.violeta} x={960} y={330} centro size={60} />
@@ -218,6 +219,23 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={819.6} t1={821.6} text="THE COTTON STOPS" color={C.rojo} x={960} y={950} centro size={66} />
       <Gran t={t} t0={821.8} t1={823.9} text="THE MILLS WENT SILENT" y={540} size={120} color={C.crema} />
       <Chip t={t} t0={824.0} t1={826.8} text="HUNDREDS OF THOUSANDS OUT OF WORK" color={C.rojo} x={960} y={150} centro size={58} />
+      {/* gráfico: el algodón americano que llega a Inglaterra se derrumba */}
+      {t > 824.0 && t < 829.9 && (() => { const e = ent(t, 824.1) * (1 - prog(t, 829.6, 829.9)); const hs = [1, 0.62, 0.04]; return (
+        <div style={{ position: "absolute", left: 1240, top: 270, width: 600, height: 560, borderRadius: 26, background: "#fff6dc", border: "8px solid #2a1530", boxShadow: "12px 14px 0 rgba(20,8,40,.35)", transform: `scale(${e})`, transformOrigin: "50% 100%", fontFamily }}>
+          <div style={{ textAlign: "center", fontWeight: 700, fontSize: 34, color: "#2a1530", marginTop: 18 }}>AMERICAN COTTON → BRITAIN</div>
+          {hs.map((h, i) => { const g = prog(t, 824.4 + i * 0.7, 825.0 + i * 0.7); return (
+            <div key={i}>
+              <div style={{ position: "absolute", left: 70 + i * 170, bottom: 80, width: 120, height: 360 * h * g, background: i === 2 ? C.rojo : "#e9e2cf", border: "6px solid #2a1530", borderRadius: "12px 12px 0 0" }}>
+                <div style={{ position: "absolute", left: 18, right: 18, top: 14, height: Math.min(60, 360 * h * g - 20), borderRadius: 30, background: "#fff", opacity: i === 2 ? 0 : 1 }} />
+              </div>
+              <div style={{ position: "absolute", left: 70 + i * 170, bottom: 28, width: 120, textAlign: "center", fontWeight: 700, fontSize: 36, color: "#2a1530" }}>{1860 + i}</div>
+            </div>); })}
+          {t > 826.4 && <div style={{ position: "absolute", left: 370, top: 360, fontWeight: 700, fontSize: 40, color: C.rojo, whiteSpace: "nowrap", transform: `rotate(-6deg) scale(${ent(t, 826.4)})` }}>↓ ALMOST 0</div>}
+        </div>); })()}
+      {/* el atajo: un señor ofrece algodón del Sur, la multitud se niega */}
+      {t > 832.3 && t < 836.8 && <Persona t={t} seed={262} x={1620} y={1010} h={560} ropa={DUENO} gorro="copa" flip mira={-1} expr="orgullo" bD={t < 834.8 ? 100 + 10 * Math.sin(t * 6) : 40} cD={t < 834.8 ? 30 : 20} habla={t < 834.6 && Math.floor(t * 4) % 2 === 0} aparece={832.3} manoD={<div style={{ position: "absolute", left: -55, top: -60, width: 110, height: 90, borderRadius: 18, background: "#fff", border: "6px solid #2a1530" }} />} />}
+      <Globo t={t} t0={832.6} t1={834.6} x={1180} y={330} text="Back the South. Get your cotton." size={42} w={520} cola="der" />
+      <Gran t={t} t0={834.8} t1={836.7} text="“NO.”" y={470} size={170} color={C.rojo} />
       <Chip t={t} t0={827.0} t1={829.8} text="FURNITURE PAWNED · SOUP LINES" color={C.noche} x={960} y={150} centro size={60} />
       <Sello t={t} t0={829.95} t1={832.2} text="THE LANCASHIRE COTTON FAMINE" x={960} y={330} size={84} />
       <Chip t={t} t0={832.3} t1={836.7} text="THE EASY WAY: HELP THE SOUTH, GET THE COTTON" color={C.violeta} x={960} y={150} centro size={52} />
@@ -226,16 +244,17 @@ export const PI: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={846.8} t1={848.4} text="WHILE GOING HUNGRY" color={C.rojo} x={960} y={950} centro size={68} />
       {t > 848.5 && t < 861.6 && (() => {
         const k = prog(t, 848.6, 850.8);
-        return <Carta t={t} t0={848.6} x={1920 - k * 960} y={300} s={0.3 + k * 0.32} abre={prog(t, 853.4, 854.2)} lineas={t > 853.8 ? ["Washington · 19 January 1863", "To the working men of Manchester:", "“…sublime Christian heroism,", "not surpassed in any age…”"] : []} />;
+        return <Carta t={t} t0={848.6} x={1920 - k * 820} y={560} s={0.3 + k * 0.64} abre={prog(t, 853.4, 854.2)} lineas={t > 853.8 ? ["Washington · 19 January 1863", "To the working men of Manchester:", "“…sublime Christian heroism,", "not surpassed in any age…”"] : []} />;
       })()}
       <Chip t={t} t0={848.6} t1={851.6} text="A LETTER FROM WASHINGTON" color={C.violeta} x={960} y={130} centro size={62} />
-      <Retrato t={t} t0={851.8} t1={854.6} x={330} y={480} g={{ seed: 261, ropa: DUENO, gorro: "copa", barba: true, expr: "neutro" }} nombre="ABRAHAM LINCOLN" sub="JANUARY 1863" s={0.85} />
+      <Retrato t={t} t0={851.8} t1={854.6} x={290} y={480} g={{ seed: 261, ropa: DUENO, gorro: "copa", barba: true, expr: "neutro" }} nombre="ABRAHAM LINCOLN" sub="JANUARY 1863" s={0.85} />
       <Chip t={t} t0={851.8} t1={854.6} text="TO THE WORKING MEN OF MANCHESTER" color={C.noche} x={1150} y={130} centro size={54} />
       <Lista t={t} t0={861.8} t1={870.7} x={90} y={170} titulo="THE SAME PEOPLE WHO…" size={52} items={[{ txt: "WORKED THE MILLS AS KIDS", t0: 862.2, ok: true }, { txt: "PAID FOR THE STEAM", t0: 864.6, ok: true }, { txt: "WERE FINED FOR WHISTLING", t0: 866.4, ok: true }]} />
       <Gran t={t} t0={867.5} t1={870.7} text="SOMEONE ELSE'S FREEDOM > THEIR OWN BREAD" y={860} size={70} color={C.ambar} />
       <Chip t={t} t0={870.9} t1={873.6} text="MANCHESTER · STILL THERE TODAY" color={C.noche} x={960} y={150} centro size={60} />
       <Chip t={t} t0={877.4} t1={879.5} text="CARVED IN THE BASE: THAT LETTER" color={C.oro} tinta={C.noche} x={960} y={150} centro size={60} />
       <Chip t={t} t0={879.7} t1={882.4} text="MOST PEOPLE WALK RIGHT PAST IT · ON THEIR WAY TO WORK" color={C.violeta} x={960} y={150} centro size={48} />
+      <Primer t={t} t0={879.8} t1={885.7} lado="izq" h={900} x={300} g={{ expr: t < 882.6 ? "sorpresa" : "orgullo", mira: 1, miraY: -0.8 }} />
       <Gran t={t} t0={882.6} t1={885.6} text="EXACTLY THE POINT" y={200} size={120} color={C.crema} />
       {/* CTA */}
       <Chip t={t} t0={885.8} t1={890.4} text="SURVIVED A FULL SHIFT?" color={C.noche} x={960} y={150} centro size={66} />

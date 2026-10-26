@@ -17,7 +17,7 @@ const KH: K[] = [
   [650.2, 3300, -1500, 0.32], [652.3, 2500, -232, 1.9], [658.5, 2560, -226, 1.95], [660.5, 2820, -275, 1.6], [666.4, 2700, -290, 1.5], [673.6, 2600, -420, 1.15],
   [673.61, 300, -600, 0.62], [677.9, 500, -580, 0.75], [680.6, 820, -520, 1.1], [683.8, 820, -520, 1.15], [691.3, 700, -560, 0.9],
   [691.31, -1500, -420, 0.85], [699.5, -1200, -420, 0.9], [711.3, -900, -420, 0.9],
-  [711.31, 300, -380, 1.3], [716.0, -900, -380, 1.35], [718.8, -1110, -430, 1.3],
+  [711.31, 300, -380, 1.3], [714.2, -700, -380, 1.35], [716.6, -900, -300, 1.9], [718.8, -1000, -300, 2.0],
 ];
 const seg = (t: number) => (t < 673.61 ? "fab" : t < 691.31 ? "sala" : t < 711.31 ? "calle" : "noche");
 
@@ -34,7 +34,7 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
   const sh = sacudon(t, [717.55]);
   const dobla = prog(t, 666.3, 670.6);
   const g0: GenteFab[] = [];
-  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2) + (t > 660.5 && t < 666.4 ? 2.2 * Math.sin(t * 11) : 0), ladea: 6 * dobla, mira: 1 });
+  if (s === "fab") g0.push({ seed: 2, x: 2700, y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t > 658.5 ? "triste" : "neutro", inclina: 12 * prog(t, 670.5, 672.2) + (t > 660.5 && t < 666.4 ? 2.2 * Math.sin(t * 11) : 0), ladea: 6 * dobla, mira: t > 653.4 && t < 658.4 ? (Math.floor((t - 653.6) / 0.75) % 2 ? -1 : 1) : 1, salta: [653.6, 654.4, 655.2, 655.9, 656.6, 657.6].filter((x) => x <= t).pop(), bD: t > 657.6 && t < 658.5 ? 150 : undefined, bI: t > 657.6 && t < 658.5 ? 150 : undefined });
   const gS: GenteFab[] = [
     ...[-1150, -850, -560, -260].map((x, i) => ({ seed: 70 + i, x, y: -170, h: 470, ropa: DUENO, gorro: "copa" as const, barba: i % 2 === 0, expr: (t > 680.6 ? "sorpresa" : "neutro") as GenteFab["expr"], mira: 1 })),
     { seed: 78, x: interpolate(t, [674, 679.5], [1500, 800], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), y: -200, h: 480, ropa: OBRERO(2), flip: true, camina: t > 674 && t < 679.5 ? 0.6 : 0, expr: "triste", inclina: 10, bI: 8, manoI: <Muleta />, habla: t > 680.6 && t < 683.6 && Math.floor(t * 3) % 2 === 0 },
@@ -98,7 +98,13 @@ export const PH: React.FC<{ t: number }> = ({ t }) => {
           <Velo t={t} t0={683.9} t1={691.1} op={1} />
           <div style={{ position: "absolute", left: 560, top: 260, width: 8, height: 680, background: "#fff3d6", opacity: 0.35 }} />
           {[0, 1, 2, 3, 4, 5].map((i) => <div key={i} style={{ position: "absolute", left: 550, top: 930 - i * 130, width: 28, height: 4, background: "#fff3d6", opacity: 0.4 }} />)}
-          <Persona t={t} seed={2} x={800} y={930} h={500} ropa={{ ...NINO, piel: "#f1e4da" }} gorro="gorra" expr="triste" viejo={t > 689} aparece={684} />
+          {(() => { const hm = 520 - 90 * prog(t, 685.2, 686.8); return (<>
+          <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible", opacity: ent(t, 685.0) }} width={1} height={1}>
+            <line x1={640} y1={930 - 640 * 0.93} x2={1460} y2={930 - 640 * 0.93} stroke={C.lima} strokeWidth={6} strokeDasharray="20 12" />
+            <line x1={640} y1={930 - hm * 0.93} x2={1000} y2={930 - hm * 0.93} stroke={C.rojo} strokeWidth={6} strokeDasharray="20 12" />
+            <line x1={600} y1={930 - 640 * 0.93 + 10} x2={600} y2={930 - hm * 0.93 - 10} stroke="#fff3d6" strokeWidth={6} />
+          </svg>
+          <Persona t={t} seed={2} x={800} y={930} h={hm} ropa={{ ...NINO, piel: "#f1e4da" }} gorro="gorra" expr="triste" viejo={t > 689} aparece={684} /></>); })()}
           <Persona t={t} seed={140} x={1300} y={930} h={640} ropa={{ ...NINO, piel: "#c98b5e", tunica: "#6aa84f", tunica2: "#4b7d35" }} expr="feliz" aparece={684.3} />
           <Chip t={t} t0={684.2} t1={691.1} text="MILL CHILD" color={C.rojo} x={800} y={1000} centro size={44} />
           <Chip t={t} t0={684.5} t1={691.1} text="FIELD CHILD" color={C.lima} tinta={C.noche} x={1300} y={1000} centro size={44} />

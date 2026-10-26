@@ -106,15 +106,15 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Cuenta t={t} t0={318.7} t1={319.6} de={20} a={28} x={760} y={360} size={220} color={C.rojo} pre="≈" suf="°C" fuera={322.4} />
       <Chip t={t} t0={320.2} t1={322.4} text="EVERY DAY · ALL YEAR" color={C.noche} x={760} y={560} centro size={64} />
       <Sello t={t} t0={322.7} t1={324.4} text="WINDOWS SHUT" x={960} y={330} size={130} />
-      <Cuenta t={t} t0={324.6} t1={325.6} de={14} a={14} x={960} y={220} size={170} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
+      <Cuenta t={t} t0={324.6} t1={325.6} de={14} a={14} x={960} y={200} size={128} color={C.crema} suf=" HOURS OF SWEAT" fuera={327.1} />
       <Emote t={t} t0={324.6} t1={327.1} tipo="sudor" x={960 + (2300 - cam.x) * cam.z} y={540 + (-170 - cam.y) * cam.z} s={0.55 * cam.z} />
       <Chip t={t} t0={327.4} t1={331.8} text="A LANCASHIRE WINTER NIGHT" color={C.teal} tinta={C.noche} x={960} y={150} centro size={70} />
       <Chip t={t} t0={329.6} t1={333.0} text="SOAKING WET · THIN CLOTHES" color={C.violeta} x={960} y={950} centro size={66} />
       {t > 333.1 && t < 336.4 && (
         <div style={{ position: "absolute", left: 0, top: 0, width: 1920, height: 1080 }}>
-          <Chip t={t} t0={333.1} t1={336.3} text="COLD" color={C.teal} tinta={C.noche} x={330} y={300} centro size={80} />
-          <Chip t={t} t0={333.9} t1={336.3} text="→ FEVER" color={C.naranja} x={820} y={300} centro size={80} />
-          <Chip t={t} t0={334.8} t1={336.3} text="→ FUNERAL" color={C.noche} x={1390} y={300} centro size={80} />
+          <Chip t={t} t0={333.1} t1={336.3} text="COLD" color={C.teal} tinta={C.noche} x={330} y={140} centro size={80} />
+          <Chip t={t} t0={333.9} t1={336.3} text="→ FEVER" color={C.naranja} x={820} y={140} centro size={80} />
+          <Chip t={t} t0={334.8} t1={336.3} text="→ FUNERAL" color={C.noche} x={1390} y={140} centro size={80} />
         </div>
       )}
       <Lapida t={t} t0={335.2} t1={336.3} x={1390} y={620} s={0.5} lineas={["AGED", "10"]} />
@@ -125,7 +125,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={344.5} t1={346.2} text="ALL DAY · FOR YEARS" color={C.noche} x={960} y={950} centro size={66} />
       <Chip t={t} t0={346.4} t1={349.6} text="“MILL FEVER”" color={C.ambar} tinta={C.noche} x={620} y={150} centro size={70} />
       <Chip t={t} t0={347.7} t1={349.6} text="“STRIPPER'S ASTHMA”" color={C.naranja} x={1300} y={150} centro size={70} />
-      {t > 349.8 && t < 364.3 && <Velo t={t} t0={349.8} t1={364} op={0.55} />}
+      {t > 349.8 && t < 364.3 && <Velo t={t} t0={349.8} t1={364} op={0.9} />}
       <Pulmones t={t} t0={349.9} t1={364.0} x={960} y={560} s={1.1} sucio={0.15 + prog(t, 350, 355) * 0.85} apaga={prog(t, 353.3, 355.4)} />
       <Chip t={t} t0={350.5} t1={355.3} text="A TIGHT CHEST" color={C.noche} x={420} y={330} centro size={56} />
       <Chip t={t} t0={351.6} t1={355.3} text="A COUGH THAT NEVER LEFT" color={C.noche} x={1340} y={330} centro size={56} />
@@ -142,7 +142,7 @@ export const PD: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={369.4} t1={371.3} text="HEARING: LOST" color={C.rojo} x={960} y={150} centro size={74} />
       <Chip t={t} t0={371.5} t1={374.7} text="TALKING BY READING LIPS" color={C.violeta} x={960} y={150} centro size={70} />
       <Oreja t={t} t0={374.9} t1={380.8} x={1660} y={360} s={0.42} sorda={1} />
-      <Globo t={t} t0={375.6} t1={380.6} x={1180} y={330} text="WHAT? SAY AGAIN?" size={46} w={420} cola="der" />
+      <Globo t={t} t0={375.6} t1={380.6} x={1180} y={480} text="WHAT? SAY AGAIN?" size={46} w={420} cola="der" />
       <Chip t={t} t0={375.0} t1={380.8} text="DEAF" color={C.rojo} x={1660} y={560} centro size={60} />
       <Chip t={t} t0={375.0} t1={380.8} text="STILL DOING IT IN THE 1900s" color={C.teal} tinta={C.noche} x={960} y={150} centro size={66} />
       <Chip t={t} t0={377.6} t1={380.8} text="ACROSS A CROWDED ROOM · LONG RETIRED" color={C.noche} x={960} y={950} centro size={56} />

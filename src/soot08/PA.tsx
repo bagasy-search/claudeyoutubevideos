@@ -19,11 +19,11 @@ const chicoX = (t: number) => interpolate(t, [0, 3.9], [2150, 3180], { extrapola
 const KA: K[] = [
   [0, 2300, -330, 1.75], [1.5, 2800, -380, 1.6],
   [2.05, FCX, -3440, 1.5], [3.4, FCX, -3440, 1.85],
-  [3.85, 3380, -420, 1.25], [6.5, 3420, -400, 1.3], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
+  [3.85, 3250, -330, 1.6], [6.5, 3280, -330, 1.65], [8.0, 3560, -330, 1.75], [10.5, 3380, -380, 1.35], [13.3, 3500, -330, 1.3],
   [14.05, FCX, -330, 5.2], [14.7, 2850, -300, 1.6], [17.9, 2800, -300, 1.65], [18.8, 3300, -420, 1.55], [23.6, 3200, -420, 1.7],
   [25.3, 2300, -1900, 0.31], [27.9, 2100, -2100, 0.27], [30.4, 1900, -2600, 0.2], [32.2, 1900, -700, 0.6], [34.4, 2650, -200, 1.35],
-  [35.2, 3150, -380, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 2950, -250, 1.55],
-  [45.7, 2850, -250, 1.6], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
+  [35.2, 3150, -300, 1.3], [36.3, 3100, -420, 0.95], [38.6, 3100, -300, 1.1], [40.6, 3700, -560, 1.7], [43.4, 2680, -250, 1.55],
+  [45.7, 2620, -250, 1.6], [48.5, 2850, -460, 1.1], [49.4, 3300, -470, 1.5], [51.0, 3300, -470, 1.55],
   [51.9, -1110, -420, 1.0], [52.8, -1175, -395, 7.5],
 ];
 // adentro de la casa (otro espacio: entramos por la ventana del cuarto y salimos por la misma)
@@ -43,7 +43,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
   const sh = sacudon(t, [3.9, 4.2, 22.96]);
   // gente del pueblo: el chico, la fila de chicos al amanecer, los de adentro
   const gente: GenteFab[] = [];
-  if (t < 13.6) gente.push({ seed: 1, x: chicoX(t), y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 3.9 ? "miedo" : t < 5.1 ? "sorpresa" : "triste", camina: t < 3.9 ? 2.4 : 0, inclina: t < 3.9 ? 8 : 0, bD: t > 4.2 && t < 6 ? 120 : undefined, cD: 40, mira: t > 4 ? 1 : 0 });
+  if (t < 13.6) gente.push({ seed: 1, x: chicoX(t), y: 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 3.9 ? "miedo" : t < 5.1 ? "sorpresa" : "triste", camina: t < 3.9 ? 2.4 : 0, inclina: t < 3.9 ? 8 : 0, bD: t > 4.2 && t < 6 ? 120 : undefined, cD: 40, mira: t > 4 ? 1 : 0, ladea: t > 4.2 && t < 6.4 ? -8 * ent(t, 4.2) : 0, salta: 4.25 });
   if (t > 30 && t < 36) for (let i = 0; i < 9; i++) gente.push({ seed: 40 + i, x: interpolate(Math.min(t, 33.6), [30, 36], [-200 + i * 330, 900 + i * 330]), y: 10 + (i % 2) * 14, h: 250 + (i % 3) * 22, ropa: i % 3 ? OBRERO(i) : i % 2 ? NINA : NINO, gorro: i % 3 === 1 ? "cofia" : "gorra", largo: i % 3 === 1, camina: t > 33.6 ? 0 : 1.7, expr: t > 33.6 ? (i % 2 ? "miedo" : "sorpresa") : i % 2 ? "triste" : "neutro", mira: t > 33.6 ? 0 : 1, bD: t > 33.7 && i % 3 === 0 ? 150 : undefined, cD: t > 33.7 && i % 3 === 0 ? 120 : undefined });
   const adentro: GenteFab[] = [
     { seed: 2, x: t < 38.7 ? 2700 : t < 40.6 ? interpolate(t, [38.7, 40.4], [2700, 3050]) : 2800, y: t > 38.7 && t < 40.6 ? 60 : 0, h: 300, ropa: NINO, gorro: "gorra", expr: t < 20 ? "miedo" : t < 23.7 ? "triste" : t < 45 ? "neutro" : "triste", inclina: t > 38.7 && t < 40.6 ? 78 : 0, bD: t > 40.6 && t < 43 ? 150 : undefined, cD: 60, mira: 1 },
@@ -51,8 +51,8 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
     { seed: 4, x: 1900, y: 0, h: 290, ropa: NINA, gorro: "cofia", largo: true, expr: "triste", camina: 0.6 },
   ];
   const casa: GenteFab[] = [
-    { seed: 20, x: -560, y: -40, h: 520, ropa: OBRERO(1), expr: t < 57 ? "triste" : "neutro", habla: t > 57 && t < 58.4 },
-    { seed: 21, x: -200, y: -40, h: 490, ropa: OBRERO(4), largo: true, gorro: "cofia", expr: "triste", flip: true },
+    { seed: 20, x: -560, y: -40, h: 520, ropa: OBRERO(1), expr: t < 57 ? "triste" : "neutro", habla: t > 57 && t < 58.4, mira: 1, bD: t > 54.9 && t < 58.4 ? 70 + 25 * Math.sin(t * 7) : 0, cD: t > 54.9 && t < 58.4 ? 60 : 0, inclina: t > 54.9 && t < 58.4 ? 10 : 0 },
+    { seed: 21, x: t > 61.2 ? -200 + prog(t, 61.2, 62.2) * 180 : -200, y: -40, h: 490, ropa: OBRERO(4), largo: true, gorro: "cofia", expr: "triste", flip: t < 61.2, mira: t > 61.2 ? 1 : -1, bD: t > 62.0 ? 75 : 0, cD: t > 62.0 ? 50 : 0, inclina: t > 62.0 ? 8 : 0 },
     { seed: 22, x: 200, y: -20, h: 330, ropa: NINO, expr: t > 60.6 && t < 62.1 ? "triste" : t > 62.6 ? "orgullo" : "neutro", gorro: t > 62.6 ? "gorra" : undefined, aparece: undefined, salta: 62.6 },
   ];
   const yb = 0;
@@ -135,6 +135,7 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={11.4} t1={13.4} text="A FEW SHILLINGS A WEEK" color={C.ambar} tinta={C.noche} x={960} y={950} centro size={72} />
       <Cuenta t={t} t0={14.2} t1={14.9} de={0} a={14} x={960} y={300} size={300} color={C.ambar} suf=" HOURS" fuera={15.8} />
       <Chip t={t} t0={15.2} t1={16.2} text="ON YOUR FEET" color={C.violeta} x={960} y={520} centro size={80} />
+      {t > 14.2 && t < 16.4 && <div style={{ position: "absolute", left: 1620, top: 330, transform: `translate(-50%,-50%) scale(${ent(t, 14.25) * (1 - prog(t, 16.1, 16.4))})` }}><div style={{ position: "relative", width: 1, height: 1 }}><Reloj x={0} y={0} s={0.85} hora={5.5 + prog(t, 14.3, 15.9) * 14} /></div></div>}
       {t > 16.1 && t < 18.2 && <div style={{ position: "absolute", left: 1560, top: 170, transform: `scale(${ent(t, 16.1)})` }}><div style={{ position: "relative" }}><Termometro x={0} y={860} s={0.95} nivel={prog(t, 16.2, 17.4) * 0.92} /></div></div>}
       <Chip t={t} t0={16.6} t1={18.2} text="HOTTER THAN SPAIN IN SUMMER" color={C.naranja} x={800} y={160} centro size={68} />
       <Chip t={t} t0={18.4} t1={19.8} text="A MACHINE THAT DOES NOT STOP" color={C.noche} x={960} y={140} centro size={70} />
@@ -165,6 +166,13 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Gran t={t} t0={51.3} t1={53.4} text="YOUR PARENTS?" y={170} size={140} />
       <Chip t={t} t0={53.5} t1={54.3} text="NOT CRUEL" color={C.teal} tinta={C.noche} x={960} y={950} centro size={70} />
       <Chip t={t} t0={55.6} t1={57} text="EVERY PENNY" color={C.oro} tinta={C.noche} x={960} y={950} centro size={76} />
+      {/* el frasco de la familia: alquiler, pan, carbón */}
+      {t > 55.4 && t < 60.3 && (() => { const e = ent(t, 55.45) * (1 - prog(t, 60.0, 60.3)); const n = Math.floor(Math.max(0, (t - 55.8) / 0.45)); return (
+        <div style={{ position: "absolute", left: 1560, top: 50, width: 300, height: 420, transform: `scale(${e})`, transformOrigin: "50% 100%", fontFamily }}>
+          <div style={{ position: "absolute", left: 20, top: 60, width: 260, height: 340, borderRadius: "40px 40px 60px 60px", background: "rgba(220,240,255,.35)", border: "8px solid #fff6dc" }} />
+          {Array.from({ length: Math.min(n, 8) }, (_, i) => <div key={i} style={{ position: "absolute", left: 60 + (i % 3) * 60 + (i % 2) * 14, top: 340 - Math.floor(i / 3) * 38, width: 64, height: 26, borderRadius: "50%", background: C.oro, border: "4px solid #8a5a10" }} />)}
+          <div style={{ position: "absolute", left: 0, right: 0, top: 0, textAlign: "center", fontWeight: 700, fontSize: 34, color: "#fff6dc" }}>RENT · BREAD · COAL</div>
+        </div>); })()}
       <Chip t={t} t0={57.4} t1={58.4} text="DAD: WEAVER" color={C.violeta} x={420} y={170} centro size={60} />
       <Chip t={t} t0={60.36} t1={61.2} text="EATING" color={C.lima} tinta={C.noche} x={960} y={170} centro size={80} />
       <Chip t={t} t0={61.2} t1={62.1} text="NOT EATING" color={C.rojo} x={960} y={170} centro size={80} />
@@ -177,11 +185,11 @@ export const PA: React.FC<{ t: number }> = ({ t }) => {
       <Chip t={t} t0={68.7} t1={71.6} text="EVERY WAY IT TRIES TO BREAK YOU" color={C.rojo} x={960} y={140} centro size={66} />
       <Carretes t={t} t0={71.8} t1={73.6} n={7} y={940} s={0.95} />
       <Gran t={t} t0={71.9} t1={73.6} text="7" y={180} size={260} color={C.rojo} />
-      <Velo t={t} t0={74.3} t1={79.3} op={0.5} />
+      <Velo t={t} t0={74.3} t1={79.3} op={0.72} />
       {/* la carta que viene de 4.000 millas */}
       {t > 74.4 && t < 79.4 && (() => {
         const k = prog(t, 74.4, 75.3);
-        return <Carta t={t} t0={74.4} x={1500 - k * 1080} y={470 + Math.sin(k * Math.PI) * -140} s={0.4 + k * 0.08} abre={0} />;
+        return <Carta t={t} t0={74.4} x={1500 - k * 1050} y={420 + Math.sin(k * Math.PI) * -120} s={0.4 + k * 0.06} abre={0} />;
       })()}
       <Chip t={t} t0={74.6} t1={77} text="A PRESIDENT" color={C.violeta} x={420} y={130} centro size={70} />
       <Chip t={t} t0={75.5} t1={79.2} text="4,000 MILES AWAY" color={C.teal} tinta={C.noche} x={420} y={760} centro size={62} />

@@ -35,7 +35,7 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
   const cam = camara(t, KE);
   const sh = sacudon(t, [440.1, 451.4, 463.6, 471.9]);
   const g1: GenteFab[] = [
-    { seed: 60, x: 4300, y: -1000, h: 480, ropa: DUENO, gorro: "copa", barba: true, expr: t > 395 && t < 409 ? "orgullo" : t > 468 ? "feliz" : "neutro", bD: t > 395.2 && t < 401 ? 60 : 0, cD: 60, flip: true },
+    { seed: 60, x: t > 401.7 && t < 409.4 ? 3760 : 4300, y: -1000, h: 480, ropa: DUENO, gorro: "copa", barba: true, expr: t > 395 && t < 409 ? "orgullo" : t > 468 ? "feliz" : "neutro", bD: t > 395.2 && t < 401 ? 60 : t > 401.7 && t < 409.4 ? 110 + 10 * Math.sin(t * 4) : 0, cD: 60, flip: !(t > 401.7 && t < 409.4), mira: t > 401.7 && t < 409.4 ? 1 : 0 },
     { seed: 61, x: 4750, y: -1000, h: 470, ropa: CAPATAZ, gorro: "gorra", expr: "orgullo", mira: -1 },
   ];
   if (t > 399.4 && t < 405) for (let i = 0; i < 3; i++) g1.push({ seed: 62 + i, x: 3650 + i * 150, y: -1000, h: 440 + (i % 2) * 30, ropa: i === 1 ? HILANDERO : OBRERO(i + 2), expr: "enojado", habla: true, aparece: 399.5 + i * 0.15, bD: i === 0 ? 150 : 20 });
@@ -116,7 +116,7 @@ export const PE: React.FC<{ t: number }> = ({ t }) => {
           <Chip t={t} t0={451.6} t1={453.6} text="ONE FINE = DAYS OF WORK GONE" color={C.rojo} x={960} y={950} centro size={64} />
         </>
       )}
-      <Chip t={t} t0={453.8} t1={455.3} text="SOME MILLS WENT FURTHER" color={C.noche} x={960} y={150} centro size={70} />
+      <Chip t={t} t0={453.8} t1={455.0} text="SOME MILLS WENT FURTHER" color={C.noche} x={960} y={150} centro size={70} />
       <Gran t={t} t0={455.4} t1={457.4} text="THE TRUCK SYSTEM" y={190} size={130} color={C.ambar} />
       {t > 454.9 && t < 459.4 && [0, 1, 2].map((i) => <Ficha key={i} t={t} t0={454.9 + i * 0.3} t1={459.2} x={interpolate(t, [454.9 + i * 0.3, 455.7 + i * 0.3], [1700, 1180 + i * 170], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} y={interpolate(t, [454.9 + i * 0.3, 455.7 + i * 0.3], [420, 640 - (i % 2) * 40], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} s={0.7} />)}
       {t > 454.9 && t < 459.4 && <Persona t={t} seed={78} x={1780} y={900} h={420} ropa={CAPATAZ} flip mira={-1} expr="orgullo" bD={t < 457 ? 120 : 30} cD={t < 457 ? 80 : 20} aparece={454.9} />}

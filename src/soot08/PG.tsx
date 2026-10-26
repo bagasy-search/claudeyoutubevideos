@@ -15,7 +15,7 @@ export const G0 = 567.7, G1 = 650.2;
 const KG: K[] = [
   [567.7, 3300, -1500, 0.32], [570.4, 2600, -2450, 0.75], [574.2, 2550, -2420, 1.1], [578.9, 2400, -2330, 1.15], [582.4, 2400, -2300, 1.3], [586.8, 2420, -2290, 1.55], [588.3, 2420, -2290, 1.6], [591.3, 2500, -2380, 1.0],
   [591.4, 3550, -2380, 0.95], [594.0, 3600, -2330, 1.3], [599.3, 3620, -2300, 1.3], [610.7, 3600, -2300, 1.35],
-  [610.71, -1500, -420, 0.95], [617.6, -1350, -420, 0.88], [624.8, -200, -420, 0.9], [634.5, 1500, -420, 0.9], [638.6, 2400, -480, 0.75],
+  [610.71, -1500, -420, 0.95], [617.6, -1350, -420, 0.88], [624.8, 250, -300, 1.12], [634.5, 1450, -300, 1.12], [638.6, 2400, -480, 0.75],
   [638.61, 2500, -2450, 0.72], [646.9, 2500, -2450, 0.68], [650.2, 3300, -1500, 0.32],
 ];
 const seg = (t: number) => (t < 610.71 ? "piso2" : t < 638.61 ? "calle" : "vallas");
@@ -62,7 +62,7 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
     }
     if (t > 624.8) {
       const heridos: [number, boolean, number][] = [[-200, true, 0], [250, false, 1], [700, true, 2], [1150, false, 3], [1600, true, 4], [2050, false, 5]];
-      heridos.forEach(([hx, mul, i]) => gP.push({ seed: 50 + i, x: hx, y: 0, h: 470 - (i % 3) * 60, ropa: OBRERO(i + 2), gorro: i % 3 === 0 ? "gorra" : i % 3 === 1 ? "cofia" : undefined, largo: i % 3 === 1, expr: "triste", aparece: 624.9 + i * 0.35, bD: mul ? 8 : 0, manoD: mul ? <Muleta /> : undefined, bI: mul ? 0 : 30, cI: mul ? 0 : 110, inclina: mul ? 6 : 0 }));
+      heridos.forEach(([hx, mul, i]) => gP.push({ seed: 50 + i, x: hx + Math.max(0, t - 625.4) * 115 + (mul ? 14 * Math.sin(t * 5 + i) : 0), y: mul ? -Math.abs(Math.sin(t * 5 + i)) * 12 : 0, camina: 0.7, h: 470 - (i % 3) * 60, ropa: OBRERO(i + 2), gorro: i % 3 === 0 ? "gorra" : i % 3 === 1 ? "cofia" : undefined, largo: i % 3 === 1, expr: "triste", aparece: 624.9 + i * 0.35, bD: mul ? 8 : 0, manoD: mul ? <Muleta /> : undefined, bI: mul ? 0 : 30, cI: mul ? 0 : 110, inclina: mul ? 6 + 5 * Math.sin(t * 5 + i) : 3 * Math.sin(t * 4 + i) }));
     }
   }
   const pelo = t > 586.8 && t < 588.1;
@@ -125,7 +125,18 @@ export const PG: React.FC<{ t: number }> = ({ t }) => {
       {t > 611.5 && t < 617.5 && [0, 1, 2].map((i) => <Moneda3 key={i} t={t} t0={612 + i * 1.6} t1={617.3} x={960 + (-1150 - cam.x) * cam.z + i * 30 - 30} y={540 + (-50 - cam.y) * cam.z - 180 + Math.min(1, (t - 612 - i * 1.6) * 3) * 150} s={0.35} />)}
       <Retrato t={t} t0={617.8} t1={624.6} x={1480} y={460} g={{ seed: 92, ropa: OBRERO(5), gorro: "copa", barba: true, expr: "neutro" }} nombre="FRIEDRICH ENGELS" sub="MANCHESTER · 1840s" s={0.9} />
       <Chip t={t} t0={618.0} t1={624.6} text="WORKING IN HIS FATHER'S COTTON BUSINESS" color={C.violeta} x={760} y={150} centro size={52} />
-      {["FINGERS", "HANDS", "ARMS", "LEGS"].map((w, i) => <Chip key={w} t={t} t0={625.6 + i * 0.85} t1={629.5} text={`MISSING ${w}`} color={i % 2 ? C.noche : C.rojo} x={300 + i * 440} y={150} centro size={46} />)}
+      {/* el cuerpo: cada parte perdida se marca en rojo */}
+      {t > 625.0 && t < 629.7 && (() => { const e = ent(t, 625.05) * (1 - prog(t, 629.4, 629.7)); const on = (i: number) => (t > 625.6 + i * 0.85 ? C.rojo : "#fff6dc"); return (
+        <svg style={{ position: "absolute", left: 1620, top: 300, overflow: "visible", transform: `scale(${e})`, transformOrigin: "120px 300px" }} width={1} height={1}>
+          <rect x={-60} y={-40} width={360} height={660} rx={30} fill="#2a1530" opacity={0.85} />
+          <circle cx={120} cy={60} r={52} fill="#fff6dc" stroke="#fff" strokeWidth={4} />
+          <rect x={70} y={120} width={100} height={200} rx={30} fill="#fff6dc" />
+          <rect x={20} y={130} width={44} height={170} rx={20} fill={on(2)} /><rect x={176} y={130} width={44} height={170} rx={20} fill={on(2)} />
+          <circle cx={42} cy={318} r={26} fill={on(1)} /><circle cx={198} cy={318} r={26} fill={on(1)} />
+          <circle cx={30} cy={352} r={11} fill={on(0)} /><circle cx={54} cy={356} r={11} fill={on(0)} /><circle cx={186} cy={356} r={11} fill={on(0)} /><circle cx={210} cy={352} r={11} fill={on(0)} />
+          <rect x={74} y={330} width={42} height={230} rx={20} fill={on(3)} /><rect x={124} y={330} width={42} height={230} rx={20} fill={on(3)} />
+        </svg>); })()}
+      {["FINGERS", "HANDS", "ARMS", "LEGS"].map((w, i) => <Chip key={w} t={t} t0={625.6 + i * 0.85} t1={629.5} text={`MISSING ${w}`} color={i % 2 ? C.noche : C.rojo} x={230 + i * 400} y={150} centro size={44} />)}
       <Gran t={t} t0={629.8} t1={634.4} text="AN ARMY BACK FROM A WAR" y={180} size={110} color={C.crema} />
       <Chip t={t} t0={634.6} t1={636.8} text="EXCEPT THIS ARMY NEVER LEFT TOWN" color={C.noche} x={960} y={150} centro size={62} />
       <Gran t={t} t0={637.0} t1={638.5} text="IT HAD JUST GONE TO WORK" y={180} size={110} color={C.ambar} />
