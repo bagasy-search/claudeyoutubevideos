@@ -91,7 +91,6 @@ export const A6: React.FC<{ t: number }> = ({ t }) => {
         <Lbl t={t} t0={595.6} t1={598.3} x={2350} y={1245} txt="...OPENS AGAIN" size={26} color={C.rojo} />
         <S t={595.5} p="rip" g={-8} />
         {/* el limón */}
-        <P t={t} t0={599.2} t1={601.1} x={2150} y={1210} s={0.55} flota><Limon /></P>
         {en(t, 599.2, 601.1) && <circle cx={2150} cy={1210} r={70 + Math.sin(t * 5) * 6} fill="#fff3c4" opacity={0.25} />}
         <S t={599.2} p="sparkle" g={-8} />
         {/* mosquitos */}
@@ -180,6 +179,7 @@ export const O6: React.FC<{ t: number }> = ({ t }) => {
       <Txt t={t} t0={590.2} t1={591.3} text="LOOSE TEETH" y={170} size={110} color={C.crema} />
       <S t={588.1} p="squish" g={-8} />
       <S t={590.3} p="rattle" g={-8} d={1} />
+      {en(t, 598.6, 601.1) && <svg style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }} width={1920} height={1080}><P t={t} t0={598.6} t1={601.1} x={960} y={500} s={2.6} flota><Limon /></P></svg>}
       <Txt t={t} t0={598.5} t1={601.0} text="A LEMON." y={900} size={110} color={C.oro} />
       <Txt t={t} t0={599.4} t1={601.1} text="THE CURE (NOBODY KNEW)" y={120} size={80} color={C.oro} />
       {/* fiebres tropicales */}
