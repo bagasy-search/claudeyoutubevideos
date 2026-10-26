@@ -62,9 +62,15 @@ const SEGS: Seg[] = [];
   let cur: [number, number, number] = [PLANOS[0][1], PLANOS[0][2], PLANOS[0][3]];
   for (const [t0, dx, y, z, d] of PLANOS) {
     const prev = SEGS[SEGS.length - 1];
-    if (prev) cur = valSeg(prev, t0);
+    if (prev) cur = valSegP(prev, t0);
     SEGS.push({ t0, d: Math.max(0.01, d), de: cur, a: [dx, y, z] });
   }
+}
+// OJO v3: acercamiento lento (+7 % en 8 s) en todo plano sostenido: ningún cuadro queda igual muchos segundos
+function valSegP(s: Seg, t: number): [number, number, number] {
+  const v = valSeg(s, t);
+  v[2] *= 1 + 0.07 * cl((t - s.t0 - s.d) / 8);
+  return v;
 }
 function valSeg(s: Seg, t: number): [number, number, number] {
   const u = ease(cl((t - s.t0) / s.d));
@@ -75,7 +81,7 @@ const GOLPES = B.filter((b) => b.k === "trap" || (b.k === "big" && b.golpe)).map
 export const cam = (t: number): Cam & { dx: number } => {
   let s = SEGS[0];
   for (const g of SEGS) if (g.t0 <= t) s = g; else break;
-  const [dx, y, z] = valSeg(s, t);
+  const [dx, y, z] = valSegP(s, t);
   const golpe = GOLPES.reduce((a, g) => a + (t >= g && t < g + 1 ? 0.05 * Math.exp(-(t - g) * 6) : 0), 0);
   // deriva lenta para que la cámara nunca esté quieta (dolly suave)
   const deriva = Math.sin(t * 0.21) * 18 + Math.sin(t * 0.07) * 30;
