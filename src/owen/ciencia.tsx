@@ -15,9 +15,12 @@ export const Pizarra: React.FC<{ children: React.ReactNode; titulo?: string; fue
     <AbsoluteFill style={{ background: FONDO }}>
       <svg viewBox="0 0 1920 1080" width="100%" height="100%">
         <defs><radialGradient id="pzv" cx="0.5" cy="0.45" r="0.75"><stop offset="0.55" stopColor="#000" stopOpacity={0} /><stop offset="1" stopColor="#000" stopOpacity={0.45} /></radialGradient></defs>
-        {Array.from({ length: 25 }).map((_, i) => <rect key={`v${i}`} x={i * 80} y={0} width={2} height={1080} fill="#22325a" />)}
-        {Array.from({ length: 14 }).map((_, i) => <rect key={`h${i}`} x={0} y={i * 80} width={1920} height={2} fill="#22325a" />)}
-        <g transform={`translate(${Math.sin(f / 70) * 4},${Math.cos(f / 90) * 3})`}>{children}</g>
+        {/* la grilla deriva siempre (nunca un cuadro quieto: el QC del farm marca congelado a los 2 s) */}
+        <g transform={`translate(${-((f * 0.7) % 80)},${-((f * 0.35) % 80)})`}>
+          {Array.from({ length: 26 }).map((_, i) => <rect key={`v${i}`} x={i * 80} y={0} width={2} height={1160} fill="#22325a" />)}
+          {Array.from({ length: 15 }).map((_, i) => <rect key={`h${i}`} x={0} y={i * 80} width={2000} height={2} fill="#22325a" />)}
+        </g>
+        <g transform={`translate(${Math.sin(f / 40) * 7},${Math.cos(f / 52) * 5})`}>{children}</g>
         {titulo && <text x={960} y={178} fontFamily={F_HUD} fontWeight={600} fontSize={52} letterSpacing={4} fill={TINTA} textAnchor="middle" opacity={ease(f, 0, 10)}>{titulo}</text>}
         {fuente && <text x={60} y={1040} fontFamily={F_HUD} fontSize={24} fill="#8a9ac0" textAnchor="start" opacity={ease(f, 10, 25)}>{fuente}</text>}
         <rect width={1920} height={1080} fill="url(#pzv)" />
@@ -161,7 +164,7 @@ export const MensajeCel: React.FC<{ de: string; texto: string; extra?: string; d
   const e = ease(f, desde, desde + 14);
   const chars = Math.floor(Math.max(0, f - desde - 10) * 1.8);
   return (
-    <g transform={`translate(${x},${y + (1 - e) * 500}) scale(${s})`} opacity={e}>
+    <g transform={`translate(${x + Math.sin(f / 33) * 6},${y + (1 - e) * 500 + Math.sin(f / 24) * 9}) rotate(${Math.sin(f / 45) * 0.8}) scale(${s})`} opacity={e}>
       <rect x={-230} y={-430} width={460} height={860} rx={60} fill="#111317" />
       <rect x={-210} y={-400} width={420} height={800} rx={40} fill="#0f1a2c" />
       <rect x={-50} y={-418} width={100} height={18} rx={9} fill="#000" />
